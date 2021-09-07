@@ -15,18 +15,23 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7caabeaf92bbce63cc30b2fb76111b33455af1910c2ea822453c550c61e02dd9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1ea35ec40ddd459e1a9e7641557147e23fe45d3e
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740894"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343224"
 ---
 # <a name="set-up-lease-journal-names"></a>Konfigurera namn för leasingjournal
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Namn på leasingjournaler anger de journaler som transaktioner i Leasing av tillgångar bokförs till. Endast journalnamn som tilldelas journaltypen **Leasing av tillgångar** visas i fälten **Första redovisningstillfälle** och **Namn på månatlig journal** på sidan **Parametrar för tillgångsleasing**. Endast journaltypen **Registrering av leverantörsfaktura** kan tilldelas fältet **Namn på fakturajournal**.
+
+Systemet låser vissa ekonomiska fält från att redigeras i syfte att förhindra eventuella avvikelser mellan transaktioner och tidsplaner. Fält som är låsta inkluderar följande: **Kontro**, **Belopp**, **Ekonomiska dimensioner**, **Valuta** och **Transaktionstyp**. Du kan vidare inte lägga till eller ta bort journalpostrader från någon journalpost för tillgångsleasing eftersom detta kan orsaka avvikelser mellan tidsplanerna och transaktionerna.
+
 
 Konfigurera namn på leasingjournaler genom att följa stegen nedan.
 

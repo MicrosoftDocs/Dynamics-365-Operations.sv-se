@@ -1,8 +1,8 @@
 ---
 title: Administreringsöversikt
-description: Den här administratörsguiden hjälper dig att konfigurera, hantera och felsöka Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Detta avsnitt innehåller en lista med hjälpavsnitt och andra resurser med syfte att konfigurera, hantera och felsöka Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b2cefd0281abfc94df05a1ae929e0b65bc533b292a6c4779a4fbc7ba1134a0e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b4ceba9f071f73813eb9e79c5d8e2a00779c915
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765624"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393581"
 ---
 # <a name="administration-overview"></a>Administreringsöversikt
 
@@ -28,7 +28,7 @@ ms.locfileid: "6765624"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Den här administratörsguiden hjälper dig att konfigurera, hantera och felsöka Dynamics 365 Human Resources.
+Detta avsnitt innehåller en lista med hjälpavsnitt och andra resurser med syfte att konfigurera, hantera och felsöka Dynamics 365 Human Resources.
 
 - [Systemkrav](hr-admin-system-requirements.md)
 
@@ -41,14 +41,14 @@ Den här administratörsguiden hjälper dig att konfigurera, hantera och felsök
 - Ställa in dataintegrering
   - [Välj en dataintegreringsteknik](hr-admin-integration-choose-technology.md)
   - [Konfigurera Dataverse-integrering](hr-admin-integration-common-data-service.md)
-  - [Konfigurera integration med Finance](hr-admin-integration-finance.md)
-  - [Konfigurera integration med Dayforce](hr-admin-integration-dayforce.md)
-  - [Skapa en app för återkommande dataexport](hr-admin-integration-recurring-data-export.md)
-  - Integration med Office
-    - [Office-integration – självstudier](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+  - [Konfigurera integrering med Finance](hr-admin-integration-finance.md)
+  - [Konfigurera integrering med Dayforce](hr-admin-integration-dayforce.md)
+  - [Skapa ett program för återkommande dataexport](hr-admin-integration-recurring-data-export.md)
+  - Integrering med Office
+    - [Office-integrering – självstudier](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
     - [Uppdatera enhetsdata i Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
     - [Skapa Öppna i Excel-upplevelse](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Felsöka Office-integration](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Felsöka Office-integrering](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
 
 - [Hantera funktioner](hr-admin-manage-features.md)
 
@@ -92,13 +92,22 @@ Den här administratörsguiden hjälper dig att konfigurera, hantera och felsök
   - [Köra kompensationsprocessen](hr-admin-troubleshooting-compensation.md)
   - [Spara en uppgiftsguide i LCS](hr-admin-troubleshooting-task-guide.md)
   - [Få åtkomst till privata adresser efter säkerhetsroll](hr-admin-troubleshooting-private-addresses.md)
-  - [Personalresurser visas inte i Dynamics 365-appar](hr-admin-troubleshooting-not-in-apps.md)
+  - [Human Resources visas inte i Dynamics 365-appar](hr-admin-troubleshooting-not-in-apps.md)
   - [Rapporteringsalternativ](hr-admin-troubleshooting-reporting.md)
-  - [Integrering av frågeställningar och svar](hr-admin-troubleshooting-integration.md)
+  - [Vanliga frågor och svar om integrering](hr-admin-troubleshooting-integration.md)
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+### <a name="elearning-courses"></a>E-utbildningskurser
+Information om onlinekurser och utbildning finns [Dynamics 365 Human Resources i Microsoft Learn](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+
+### <a name="videos"></a>Videor
+
+Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen på YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 ## <a name="see-also"></a>Se även
 
-- [Nyheter och ändringar i Personal](hr-admin-whats-new.md)
+- [Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)
 - [Utvecklarguide](hr-developer-overview.md)
 - [Användarhandbok](hr-hrpro-overview.md)
 

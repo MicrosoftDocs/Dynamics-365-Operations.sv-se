@@ -1,8 +1,8 @@
 ---
 title: Ställa in förmånshantering och medarbetarnas självbetjäningsparametrar för alla företag
 description: Konfigurera parametrar för förmånshantering och medarbetarnas självbetjäning i Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 12/07/2020
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9c6761c549aaa38d16616f3e9e9084cbff7c93d9350f8adc50720d263efaff25
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cdda08ad2debe6ffe40f1f3fd2ac84ce9fc1d620
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732787"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423433"
 ---
 # <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>Ställa in förmånshantering och medarbetarnas självbetjäningsparametrar för alla företag
 
@@ -45,7 +45,7 @@ Innan du kan konfigurera förmånsplaner i Microsoft Dynamics 365 Human Resource
    | **Årlig inkomst av förmåner** | Gör att du kan ställa in ett belopp för **Årslön** för en medarbetare. Personal kommer att använda beloppet **Årslön** vid fastställande av täckningsbelopp, istället för det årliga beloppet för fast ersättning. |
    | **Berättigad till nyanställning** | Anger om nya anställningar är berättigade. |
    | **Period för ny anställningsanmälan** | Den tidsperiod då den nya anställningsanmälan är tillåten.</br></br>**Obs**! den här inställningen åsidosätter eventuella nya anställningsperioder för anställningsanmälan som du ställer in i berättiganderegler för planen. |
-   | **Standardvärde för lönefrekvens** | Standard lönefrekvensen som används när nya arbetare läggs till. |
+   | **Standardvärde för lönefrekvens** | Standard lönefrekvensen som används när nya medarbetare läggs till. |
    | **Livshändelser har aktiverats** | Aktiverar livshändelser. |
    | **Dölj formulären för tidigare förmåner** | Gör att du kan dölja äldre förmånsformulär. |
    | **Förmånsverifiering** | Den verifieringstext som ska användas i samband med självbetjäningsutcheckning av förmåner. |
@@ -61,7 +61,7 @@ Innan du kan konfigurera förmånsplaner i Microsoft Dynamics 365 Human Resource
 
    | Fält | beskrivning |
    | --- | --- |
-   | **Förmånsverifiering** | Den verifieringstext som ska användas i samband med självbetjäningsutcheckning av förmåner. |
+   | **Förmånsverifiering** | Den verifieringstext som ska användas i samband med utcheckning av självbetjäningsförmåner. |
    | **Välj befullmäktigade automatiskt** | Anger om man automatiskt ska välja beroende och stödmottagare baserat på deras berättigande till planalternativ. |
 
 3. Välj **Spara**.

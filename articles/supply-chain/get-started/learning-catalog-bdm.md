@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 41fceb9cb1b856e50f45620982be44cb98f691ec25a4628269e3031950fb83d7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 856a53c18c95aea4fdeee397f125be9f33f8fe38
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776906"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402259"
 ---
 # <a name="learning-catalog-for-business-decision-makers-considering-dynamics-365-supply-chain-management"></a>Utbildningskatalog för beslutsfattare inom företag om Dynamics 365 Supply Chain Management
 
@@ -27,19 +27,19 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 
 ## <a name="get-started"></a>Kom igång<a name="get-started"></a>
 
-| Innehåll   | beskrivning   | Format    | Längd    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
+| Innehåll | beskrivning | Format | Längd |
+|---------|-------------|--------|--------|
 | [Lär dig affärsvärdet av Microsoft Dynamics 365 och Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Vill du lära dig mer om affärsprogram? Kanske du inte vet var du ska börja med Microsoft Dynamics 365 och Power Platform-appar? Lär dig hur kraften hos affärsappar kan hjälpa dig att omvandla verksamheten. | Gratis, självstudier online utbildningsväg | 7 timmar |
 | [Dynamics 365 och Power Platform grunder](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Vill du lära dig mer om affärsprogram? Börja med den här utbildningsvägen för att se hur Dynamics 365-appar används. Lär dig mer om molnkoncept Power Platform och hur du kommer igång med Dynamics 365-appar. | Gratis, självstudier online utbildningsväg | 5.5 timmar |
 | [Kom igång med Finance and Operations-appar](/learn/paths/get-started-finance-operations/) | Lär dig hur Finance and Operations-appar ger stöd till företag för att hantera deras globala ekonomisystem, operativa affärsprocesser och effektiviserade leveranskedjor för att ge användarna möjlighet att fatta snabba, välgrundade beslut. Det första steget i arbetet med Finance and Operations-appar är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill ha. | Gratis, självstudier online utbildningsväg | 2 timmar |
 | [Kurs MB-900T01-A: Dynamics 365 - grunder](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Den här kursen kommer att bekanta dig med Dynamics 365-funktionalitet och affärsvärde. Kursen omfattar Dynamics 365-program, Power Platform, molnkoncepten, säkerhetsmodellen och licensieringsöverväganden. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag |
 | [Kom igång med tillgångshantering för Dynamics 365 Supply Chain Management](/learn/modules/get-started-asset-management/index) | Tillgångshantering är en modul för hantering av tillgångar och underhållsjobb i Dynamics 365 Supply Chain Management. Tillgångshantering gör det möjligt för dig att effektivt hantera och utföra uppgifter som rör hantering och service av många typer av utrustning i ditt företag, till exempel maskiner, produktionsutrustning och fordon. Tillgångshantering stödjer lösningar inom många branscher. | Gratis, självstudier online utbildningsmodul | 1 timma |
+| [Kom igång med tillägget Teknikändringshantering för Dynamics 365 Supply Chain Management](/learn/modules/get-started-engineering-change-management/) | Dynamics 365 Supply Chain Management gör det möjligt för medarbetare och organisationer att få en enhetlig vy över lager, lagerställe, tillverkning, service och logistik med förutsägbara analyser som möjliggör bättre strategiska beslut. | Gratis, självstudier online utbildningsmodul | 2 timmar |
 
 ## <a name="exam"></a>Prov<a name="exam"></a>
 
-| Innehåll  | beskrivning  | Format  |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| Innehåll | beskrivning | Format |
+|---------|-------------|--------|
 | [Dynamics 365 grunder](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Bevisa att du förstår Microsoft Dynamics 365: Power Platform; molnkoncept; licensieringsalternativ; och distribution- och publiceringsalternativ. | Prov; kostnaden varierar beroende på region |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

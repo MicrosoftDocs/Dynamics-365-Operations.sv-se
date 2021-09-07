@@ -2,7 +2,7 @@
 title: Bädda in tredjepartsprogram
 description: Det här avsnittet förklarar hur du bäddar in tredjepartsappar i syfte att utöka produktens funktionalitet.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f47fb6a2fdb586fbc9f25938c3b9c1cfc16ddc1af432b91621421bd829b23925
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b0471fd2ea9a5e8b07b9e8bc279da53f6a1539ca
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737809"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345420"
 ---
 # <a name="embed-third-party-apps"></a>Bädda in tredjepartsprogram
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Många kunder använder en mängd olika program för att driva sin verksamhet. Vissa av programmen är webbprogram från tredje part som fungerar tillsammans med Finance and Operations-program. Om du vill tillhandahålla en mer sömlös användarupplevelse kan du använda funktionen **(Förhandsgranska) Helsidesappar** för att bädda in dessa tredjepartsappar direkt i dina Finance and Operations-appar (förutsatt att tredjepartapparna medger detta). På det här sättet kan användarna komma åt de webbplatser och program som de behöver utan att behöva byta flikar eller fönster.
+Många kunder använder en mängd olika program för att driva sin verksamhet. Vissa av programmen är webbprogram från tredje part som fungerar tillsammans med Finance and Operations-program. Om du vill tillhandahålla en mer sömlös användarupplevelse kan du använda funktionen **Helsidesappar** för att bädda in dessa tredjepartsappar direkt i dina Finance and Operations-appar (förutsatt att tredjepartsapparna medger detta). På det här sättet kan användarna komma åt de webbplatser och program som de behöver utan att behöva byta flikar eller fönster.
 
-Innan du kan bädda in tredjepartappar i produkten måste du aktivera funktionen **(Förhandsgranska) Helsidesappar** i funktionsadministreringen. Du kan sedan använda någon av följande metoder för att bädda in en app eller webbplats från tredje part. Dessa metoder överensstämmer med de metoder som används för att bädda in arbetsyteappar från Microsoft Power Apps till Finance and Operations-program.
+Innan du kan bädda in tredjepartsappar i produkten måste du aktivera funktionen **Helsidesappar** i funktionshanteringen. Du kan sedan använda någon av följande metoder för att bädda in ett programeller webbplats från tredje part. Dessa metoder överensstämmer med de metoder som används för att bädda in arbetsyteappar från Microsoft Power Apps till Finance and Operations-program.
 
 - Bädda in appen eller webbplatsen på en befintlig sida som en ny fliksida (pivot-flik, snabbflik, blad eller arbetsyta).
 - Skapa en ny helsidesupplevelse för programmet eller webbplatsen från instrumentpanelen.
@@ -64,7 +64,7 @@ Använd denna procedur om du vill göra tillägg till en befintlig sida i system
 Använd den här proceduren om programmet som du vill bädda in inte är relaterat till en befintlig sida eller om du bara vill ha en helsidesupplevelse för appen inuti Finance and Operations-programmet.
 
 1. Öppna instrumentpanelen.
-2. Markera och håll ned (eller högerklicka) på sidan, välj **Anpassa** och välj sedan **Lägg till en sida**.
+2. Markera och håll ned (eller högerklicka) på instrumentpanelen, välj **Anpassa** och sedan **Lägg till en sida**.
 3. I fönstret **Lägg till en sida** väljer du **Webbplats**.
 4. Konfigurera inbäddade appen:
 
@@ -76,15 +76,15 @@ Använd den här proceduren om programmet som du vill bädda in inte är relater
     > - Programmet eller webbplatsen måste vara konfigurerat för att det ska vara tillåtet att bädda in det.
 
 5. Välj **Spara** om du vill lägga till programmet i instrumentpanelen som en ny panel.
-6. Markera den nya panelen på instrumentpanelen och bekräfta att programmet visas som förväntat. Om programmet inte återges hittar du mer information i avsnittet [Felsökning](#troubleshooting) senare i det här ämnet.
+6. Markera den nya panelen på instrumentpanelen och bekräfta att programmet visas som förväntat. Om programmet inte återges hittar du mer information i avsnittet [Felsökning](#troubleshooting) senare i detta ämne.
 
 ## <a name="sharing-embedded-apps"></a>Dela inbäddade appar
 
 När du har bäddat in ett program med en av metoderna som beskrivs i de föregående avsnitten, kanske du vill dela vyn med andra användare i systemet. Om du vill dela ett inbäddat program använder du någon av följande metoder:
 
-- **Publicera vyn (rekommenderas):** Om det inbäddade programmet har sparats i en vy bör du publicera den för användare med rätt säkerhetsroller. På så sätt kommer alla användare som innehar de säkerhetsroller som den publicerade vyn riktar in sig på att se appen i Finance and Operations-appar. Mer information om hur du publicerar en vy finns i [Publicera vyer](saved-views.md#publishing-views).
+- **Publicera vyn (rekommenderas):** Om det inbäddade programmet har sparats i en vy bör du publicera den för användare med rätt säkerhetsroller i de juridiska målenheterna om du vill dela den. I så fall är det bara de önskade användarna som kommer att se det inbäddade programmet på den sidan. Mer information om hur du publicerar en vy finns i [Publicera vyer](saved-views.md#publishing-views).
 
-    Du kan också publicera ett program som har bäddats in som en helsiderfarenhet från instrumentpanelen. Markera och håll (eller högerklicka) den panel som är kopplad till programmet på instrumentpanelen, välj **Anpassa** och sedan **Publicera sida**. Du kan för tillfället endast publicera i säkerhetsroller. Möjligheten att publicera till juridiska personer läggs emellertid till innan funktionen blir allmänt tillgänglig.
+    Du kan också publicera ett program som har bäddats in som en helsiderfarenhet från instrumentpanelen. Markera och håll (eller högerklicka) den panel som är kopplad till programmet på instrumentpanelen, välj **Anpassa** och sedan **Publicera sida**. En erfarenhet som liknar *publiceringsvyerna* visas, och du kan välja vilka säkerhetsroller du vill publicera på. Om funktionen **Förbättrat stöd för juridiska personer för sparade vyer** är aktivera kan du från och med version 10.0.21 även publicera appen i önskade juridiska personer.
 
 - **Kopiera anpassningen:** För sidor som inte har stöd för vyer (till exempel dialogrutor eller arbetsytor) eller för en helsides-apperfarenhet kan du kopiera anpassningen till lämpliga användare. Mer information finns i [Dela anpassningar](personalize-user-experience.md#sharing-personalizations).
 
@@ -94,7 +94,7 @@ Om du vill visa en inbäddad app på en sida i Finance and Operations-appar öpp
 
 ## <a name="editing-or-removing-embedded-apps"></a>Redigera eller ta bort inbäddade program
 
-När en app har bäddats in på en sida kanske du måste redigera dess konfiguration (till exempel genom att ändra avsnittsetiketten eller URL-adressen). Du kanske också måste ta bort den från sidan. Använd någon av följande procedurer när du vill redigera konfigurationen för ett inbäddat program eller ta bort det helt.
+När ett program har bäddats in på en sida kanske du måste redigera dess konfiguration (till exempel genom att ändra avsnittsetiketten eller URL-adressen). Du kanske också måste ta bort den från sidan. Använd någon av följande procedurer när du vill redigera konfigurationen för ett inbäddat program eller ta bort det helt.
 
 ### <a name="apps-that-are-embedded-on-existing-pages"></a>Program som bäddas in på befintliga sidor
 

@@ -1,8 +1,8 @@
 ---
 title: Undvika att texten trunkeras i befattningshierarkin och exportera till Visio
-description: Det här avsnittet beskriver hur du löser ett problem där namnen på personer och befattningar trunkeras när kunder visar befattningshierarkin i Microsoft Dynamics 365 Human Resources. Texttrunkering kan göra det svårt att ta en skärmbild eller skriva ut hierarkin.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Detta ämne förklarar hur du löser ett problem där namnen på personer och befattningar trunkeras i befattningshierarkin i Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,15 +11,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36fc7684cf0351a10ab5910d46f6d56d46d78921143c537269699c11a38ae12b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a9a8d22df0416ef417a6216c3131bfb6d40d200
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779336"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413545"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Undvika att texten trunkeras i befattningshierarkin och exportera till Visio
 
@@ -43,7 +43,7 @@ Gör så här för att exportera till Visio.
 
 1. I Personal, öppna listsidan **befattningar**.
 
-    För att inkludera mer information i organisationsstrukturdiagrammet, lägg till fält i listan **Positioner** så att de blir tillgängliga när du använder guiden senare i den här proceduren.
+    För att inkludera mer information i strukturdiagrammet för organisationen lägger du till fält i listan **Positioner** så att dessa blir tillgängliga när du använder **Guide för Organisationsschema** senare i den här proceduren.
 
 2. I åtgärdsfönstret, välj knappen **Öppen i Microsoft Office** och klicka sedan på **Exportera till Excel**, välj **Befattningar**. Du kan också trycka på Ctrl+T.
 

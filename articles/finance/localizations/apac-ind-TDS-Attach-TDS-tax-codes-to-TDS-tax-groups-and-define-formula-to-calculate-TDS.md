@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 81aac53cca91a75cde811c314bd6f7039852d32505fe6540921e17f3d1bbc7ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98d6ceb794716f39c6ae47b300bdb7618a8e688b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739320"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345238"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>Koppla TDS-momskoder till TDS-momsgrupper och definiera formeln för att beräkna TDS
 
@@ -55,7 +55,7 @@ Följ dessa steg om du vill ställa in en TDS-momsgrupp, koppla TDS-momskoder ti
     > [!NOTE]
     > Fältet **Momsunderlag** kan inte ställas in på **Exkl. bruttobelopp** för TDS-momskoden med prioritets-ID **1**.
 
-12. TDS-beräkningen baseras på formeln som definieras i fältet **Beräkningsuttryck** för varje momskod som är kopplad till TDS-momsgruppen. Välj plustecknet (**+**), minustecknet (**-**), multiplikationstecknet (**\**_) eller divisionstecknet (_*/**) för att ange beräkningsuttrycket för den valda TDS-momskoden i fältet **Beräkningsuttryck**.
+12. TDS-beräkningen baseras på formeln som definieras i fältet **Beräkningsuttryck** för varje momskod som är kopplad till TDS-momsgruppen. Välj plustecknet (+), minustecknet (-), multiplikationstecknet (\*) eller divisionstecknet (/) för att ange beräkningsuttrycket för den valda TDS-momskoden i fältet **Beräkningsuttryck**.
 
     > [!NOTE]
     > Inget beräkningsuttryck kan definieras för TDS-momskoden som har prioritets-ID **1**.

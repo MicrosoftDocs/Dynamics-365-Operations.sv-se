@@ -2,7 +2,7 @@
 title: Konfigurera hjälpfunktionen för Finance and Operations-appar
 description: I det här avsnittet finns information om komponenterna i hjälpsystemet för vissa Microsoft Dynamics 365-appar.
 author: margoc
-ms.date: 05/11/2020
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8481a2ba54b88f0911436f352b901cde55924e2ccc15a381b8742abe85d972
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f793068a5d4df6206229249c5b37bee0ef34da8d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714533"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343822"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurera hjälpfunktionen för Finance and Operations-appar
 
@@ -54,7 +54,7 @@ Om du vill konfigurera uppgiftsguider för en lösning följer du instruktionern
 > [!IMPORTANT]
 > Första gången du öppnar fliken **Hjälp** måste du ansluta till Lifecycle Services. Se till att välja länken i mitten av formuläret, vänta på anslutningen, stäng dialogrutan och välj sedan **OK** för att komma till sidan **Systemparametrar**.
 >
-> [![Anslut till LCS](./media/connect-to-lcs-crop-1024x365.png "Anslut till LCS."](./media/connect-to-lcs-crop.png)
+> [![Anslut till LCS](./media/connect-to-lcs-crop-1024x365.png "Anslut till LCS.")](./media/connect-to-lcs-crop.png)
 
 1. Välj Lifecycle Services-projektet att ansluta till.
 2. Välj BPM-biblioteken (inom det valda projektet) att hämta uppgiftsregistreringar från.

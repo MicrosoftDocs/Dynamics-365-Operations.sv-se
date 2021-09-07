@@ -1,8 +1,8 @@
 ---
 title: Alternativ för transaktion för anläggningstillgång
 description: Det här avsnittet innehåller en beskrivning av andra tillgängliga metoder för att skapa transaktioner för anläggningstillgångar.
-author: ShylaThompson
-ms.date: 02/07/2019
+author: moaamer
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1857d68a0dfaa25386f19344e4cb3ddc9ffd39b8a75860a1642773d6bd59cce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9e2d7f21d8c88185383e252f8f6324208493c81
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764273"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344700"
 ---
 # <a name="fixed-asset-transaction-options"></a>Alternativ för transaktion för anläggningstillgång
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Det här avsnittet innehåller en beskrivning av andra tillgängliga metoder för att skapa transaktioner för anläggningstillgångar.
 
@@ -58,14 +59,16 @@ Alla transaktionstyper för anläggningstillgångar kan bokföras på sidan Allm
 | Avskrivning                        | Anläggningstillgångar             | Anläggningstillgångar                              |
 |                                     | Huvudbok           | Allmän journal                           |
 | Avyttrande                            | Anläggningstillgångar             | Anläggningstillgångar                              |
-| ** **                               | Huvudbok           | Allmän journal                           |
-| ** **                               | Kundreskontra      | Fritextfaktura                         |
+|                                     | Huvudbok           | Allmän journal                           |
+|                                     | Kundreskontra      | Fritextfaktura                         |
 
-Avskrivningsperiodernas återstående värde av anläggningstillgången uppdateras inte när en journalrad för avskrivningstransaktionstyp skapas manuellt eller importeras via en datatabell. Detta värde uppdateras när avskrivningsförslagsprocessen används till att skapa journalraden.
+Avskrivningsperiodernas återstående värde för en anläggningstillgång uppdateras inte när en journalrad för avskrivningstransaktionstyp skapas manuellt eller importeras via en datatabell. Det återstående värdet uppdateras när processen för avskrivningsförslag används för att skapa journalraden.
 
 Mer information finns i [Integrering av anläggningstillgångar](fixed-asset-integration.md).
 
-### <a name="transactions-that-require-different-voucher-numbers"></a>Transaktioner som kräver olika verifikationsnummer
+Systemet förhindrar att avskrivningar bokförs till samma period två gånger. Om till exempel två användare skapar avskrivningsförslag separat för januari bokförs avskrivningen från den första användaren i den första journalen. När den andra användaren bokför avskrivning i den andra journalen kontrollerar systemet datumet då avskrivningen senast gjordes, och bokför inte avskrivning för samma period en andra gång.
+
+### <a name="transactions-that-require-a-different-voucher-number"></a>Transaktioner som kräver ett annat verifikationsnummer
 
 Följande transaktioner för anläggningstillgångar kommer att använda olika verifikationsnummer:
 

@@ -1,12 +1,12 @@
 ---
-title: Skatteberäkning (förhandsversion)
+title: Översikt över momsberäkning
 description: Detta ämne innehåller information om skatteberäkningsfunktionens övergripande omfattning och funktioner.
 author: wangchen
-ms.date: 06/03/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4e01247cddad4201760fd56e00e05a8373a1ca6ef7c26ae5e1f5cca63bd8a456
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 72895cc18368ebf38818f30510cec999391c7910
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775104"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394596"
 ---
-# <a name="tax-calculation-preview"></a>Skatteberäkning (förhandsversion)
+# <a name="tax-calculation-overview"></a>Översikt över momsberäkning
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,44 +33,59 @@ Skatteberäkningen är en hyperskalbar tjänst för flera innehavare som gör de
 Beräkningstjänsten för skatt går att integrera med Dynamics 365 Finance och Dynamics 365 Supply Chain Management. Så småningom kommer den också att integreras Dynamics 365 Project Operations, Dynamics 365 Commerce och andra applikationer från första och tredje part.
 
 > [!IMPORTANT]
-> När du aktiverar tjänsten Skatteberäkning kan vissa operationer på relaterade data utföras i ett annat datacenter än det datacenter som underhåller dina servicedata. Gå igenom [användarvillkoren](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) innan du aktiverar tjänsten för momsberäkning. Din sekretess är viktig för oss. Mer information finns i vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=521839).
+> När du aktiverar tjänsten Momsberäkning kan vissa åtgärder på relaterade data utföras i ett annat datacenter än det datacenter som underhåller dina tjänstedata. Granska [Användarvillkoren](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) innan du aktiverar Momsberäkning. Din sekretess är viktig för oss. Mer information finns i vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-Skatteberäkningstjänsten är en mikrotjänstbaserad skattemotor som erbjuder exponentiell skalbarhet. Det kan hjälpa dig att utföra följande uppgifter:
+Momsberäkning är en mikrotjänstbaserad momsmotor som erbjuder exponentiell skalbarhet och kan hjälpa dig att utföra följande uppgifter:
 
-- Konfigurera beräkningstjänsten för skatt via Regulatory Configuration Service (RCS). RCS är en förbättrad version av designern Elektronisk rapportering (ER) och är tillgänglig som en fristående tjänst.
-- Konfigurera skattematrisen om du automatiskt vill bestämma skattekoder och skattesatser.
-- Konfigurera skattematrisen om du automatiskt vill bestämma skatteregistreringsnummer.
-- Konfigurera designern för skatteberäkning om du vill definiera formler och villkor.
-- Dela lösningen för skattebestämning och beräkning mellan juridiska personer.
+- Automatiskt fastställa rätt momsgrupp, artikelskattegrupp och momskoder med hjälp av en förbättrad mekanism för bestämning.
+- Stöd för flera momsregistreringsnummer i en och samma juridiska person, och automatiskt fastställande av korrekt momsregistreringsnummer för beskattningsbara transaktioner.
+- Stöd för momsbestämning, beräkning, bokföring och kvittning för överföringsorder.
+- Definiera konfigurerbara formler och villkor för momsberäkning för dina specifika affärsbehov.
+- Dela lösningen för momsbestämning och beräkning mellan juridiska personer i syfte att spara underhållsarbete och undvika fel.
+- Stöd för bestämning av kund- och leverantörsskattenummer.
+- Bestämning av supportlistekoder.
+- Stödparametrar för momsberäkning på skattemyndighetsnivå.
 
-Om du vill använda beräkningstjänsten för skatte ska du installera tillägget för skatteberäkningstjänsten från projektet i Microsoft Dynamics Lifecycle Services (LCS). Slutför sedan inställningarna i RCS och aktivera skatteberäkningstjänsten i Finance och Supply Chain Management. För mer information, se [Kom igång med skattetjänsten](./global-get-started-with-tax-calculation-service.md).
+Om du vill använda beräkningstjänsten för moms ska du installera tillägget för momsberäkning från projektet i Microsoft Dynamics Lifecycle Services. Slutför sedan konfigurationen i [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/) och aktivera funktionen Momsberäkning i Finance and Supply Chain Management. För mer information, se [Kom igång med skattetjänsten](global-get-started-with-tax-calculation-service.md).
 
 ## <a name="availability"></a>Tillgänglighet
 
-Skatteberäkningstjänsten är bara tillgänglig i sandbox-miljöer och för utvalda kunder, detta via en allmänt tillgänglig förhandsversion. Så småningom blir den allmänt tillgänglig för alla kunder och i produktionsmiljöer.
+Momsberäkning är vanligtvis tillgängligt i produktionsmiljöer för alla kunder i version 10.0.21.
 
-Nya funktioner kommer att tillkomma - kontrollera därför den senaste dokumentationen ofta för att ta reda på omfattningen av de funktioner som stöds.
+Nya funktioner levereras även fortsättningsvis. Kontrollera den senaste versionsplanen ofta i syfte att ta reda på disponering och område för funktioner som stöds.
 
-Skatteberäkningstjänsten distribueras på följande Azure-områden: Den kommer även att distribueras till fler Azure-geologer, baserat på kundernas behov:
+Skatteberäkningstjänsten distribueras på följande Azure-områden: Fler Azure-geologer kommer att läggas till baserat på kundernas behov.
 
-- USA
+- Asien och Stillahavsområdet
+- Australien
+- Kanada
 - Europa
+- Japan
+- Storbritannien
+- USA
 
 > [!NOTE]
-> Skatteberäkningstjänsten har inte stöd för lokala distributioner av Dynamics 365. Den stöder inte heller tidigare versioner, till exempel Dynamics AX 2012.
+> Momsberäkning har inte stöd för tidigare version av Dynamics 365, exempelvis Dynamics AX 2012, eller en lokal distribution av Dynamics 365.
 
-## <a name="feature-highlights"></a>Funktionens höjdpunkter
+## <a name="data-flow"></a>Dataflöde
 
-- Konfigurera skattematrisen om du automatiskt vill bestämma och beräkna skatt
-- Stöd för flera skatteregistreringsnummer
-- Överföringsorderstöd för bestämning och beräkning av skatter
-- Stöd för överföringsorder med syfte att bestämma flera skatteregistreringsnummer
+Här finns en översikt över dataflödesprocessen för momsberäkning. 
+
+1. Visa och importera modellkonfigurationer för beskattningsbara dokument och modellmappningskonfigurationer. Om du måste utöka konfigurationer för ett avancerat scenario, se [Lägg till datafält i momskonfigurationer](tax-service-add-data-fields-tax-configurations.md).
+2. Skapa eller underhåll momsfunktioner i RCS. Du kan använda momsfunktioner när du vill hantera momssatser och tillämplighetsregler för moms.
+3. När konfigurationen av momsfunktionen är klar publicerar du momskonfigurationerna och momsfunktionerna från RCS till den globala databasen.
+4. I Finance väljer du vilken konfigurationsversion för momsfunktionen som ska användas för en specifik juridisk person.
+5. Du hanterar transaktioner i Finance och Supply Chain Management precis som vanligt. När momsberäkning behövs samlar klienten in information från transaktionen - till exempel försäljningsorder eller inköpsorder - och paketerar informationen som nyttolast. En begäran skickas sedan för beräkning av momsen.
+6. Momsberäkningsförfrågan tas emot från klienten och beräkningen slutförs. Momsresultatet returneras sedan till klienten.
+7. Dynamics 365-klienten får momsresultatet och visar resultatet av momsberäkningen på en momssida.
 
 ## <a name="supported-transactions"></a>Transaktioner som stöds
 
-Skatteberäkningstjänsten kan aktiveras av juridisk person och transaktion. Följande transaktioner stöds:
+Momsberäkning kan aktiveras av transaktioner. 
 
-- Försäljningsprocess
+Följande transaktioner stöds i version 10.0.21: 
+
+- Försäljning
 
     - Försäljningsoffert
     - Försäljningsorder
@@ -83,7 +98,7 @@ Skatteberäkningstjänsten kan aktiveras av juridisk person och transaktion. Fö
     - Övriga avgifter för rubrik
     - Övriga avgifter för rad
 
-- Inköpsprocess
+- Inköp
 
     - Inköpsorder
     - Bekräftelse
@@ -100,10 +115,36 @@ Skatteberäkningstjänsten kan aktiveras av juridisk person och transaktion. Fö
     - Övriga avgifter för anbudsförfråganrubriken
     - Övriga avgifter för anbudsförfråganraden
 
-- Lagerprocess
+- Lager
 
     - Överföringsorder - leverera
     - Överföringsorder - ta emot
+
+## <a name="supported-countriesregions"></a>Länder/regioner som stöds
+
+Momsberäkning kan aktiveras av juridisk person. 
+
+Följande länder/regioner för en juridisk persons primära adress stöds i version 10.0.21:
+
+- Österrike
+- Belgien
+- Danmark
+- Estland
+- Finland
+- Frankrike
+- Tyskland
+- Ungern
+- Island
+- Italien
+- Lettland
+- Litauen
+- Nederländerna
+- Norge
+- Polen
+- Sverige
+- Schweiz
+- Storbritannien
+- USA
 
 ## <a name="related-resources"></a>Relaterade resurser
 

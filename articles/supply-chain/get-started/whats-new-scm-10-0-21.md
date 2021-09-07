@@ -2,7 +2,7 @@
 title: Förhandsversion av Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.21.
 author: kamaybac
-ms.date: 08/02/2021
+ms.date: 08/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 517411512760374f1d1fd3b8ea3615563c47202c2e847569d00cb17a94657630
-ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
+ms.openlocfilehash: 42d296cb0402b5e96f23d628f08a28fb35683d5f
+ms.sourcegitcommit: 5a44eb4f555bf5ee0b1293f0ecdc37ee8b53aa24
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "7012047"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7391218"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10021-october-2021"></a>Förhandsversion av Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
@@ -29,17 +29,18 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 - **Allmän tillgänglighet för versionen (automatisk uppdatering):** Oktober 2021
 
 ## <a name="known-deployment-issue"></a>Känt distribueringsproblem
+
 När du distribuerar version 10.0.21 på IaaS kan du få följande distributionsvarning:
 
 **Varningskod:** 95017
 
-**Varningsmeddelande:** Körning av skript [SetupDiagnostics] mot VM misslyckades
+**varningsmeddelande:** Skriptet \[SetupDiagnostics\] kunder inte köras mot VM
 
-Distributionen fungerar trots varningen men följande kända problem kan uppstå i Lifecycle Services (LCS):
+Distributionen fungerar trots varningen. Följande kända problem kan dock uppstå i Lifecycle Services (LCS):
 
--   På sidan **Miljöövervakning** visas inte länken **Visa detaljerad versionsinformation**, så du kan inte se specifika versioner av de moduler som har installerats i miljön. Om du inte använder dessa data kan efterföljande snabbkorrigeringar misslyckas eftersom processen som använder snabbkorrigeringar använder dessa data för att verifiera att förutsättningarna för modulversionen är uppfyllda. Eftersom det inte går att använda PEAP/Preview-bygget i produktionen eller tillämpa snabbkorrigeringar bör påverkan bli minimal.
--   Flikarna **Prestandamått** och **Indexanalys** på sidan **Miljöövervakning** under SQL Insights visar inga data. Alla andra funktioner för **Miljöövervakning** fungerar som de ska.
--   Sidan **Fullständig systemdiagnostik** går inte att komma åt. Associerade data om status för nattliga insamlarkörningar och problem som upptäckts av dess regler visas inte heller.
+- På sidan **Miljöövervakning** visas inte länken **Visa detaljerad versionsinformation**, så du kan inte se specifika versioner av de moduler som har installerats i miljön. Om du inte använder dessa data kan efterföljande snabbkorrigeringar misslyckas eftersom processen som använder snabbkorrigeringar använder dessa data för att verifiera att förutsättningarna för modulversionen är uppfyllda. Eftersom det inte går att använda PEAP/Preview-bygget i produktionen eller tillämpa snabbkorrigeringar bör påverkan bli minimal.
+- Flikarna **Prestandamått** och **Indexanalys** på sidan **Miljöövervakning** under SQL Insights visar inga data. Alla andra funktioner för **Miljöövervakning** fungerar som de ska.
+- Sidan **Fullständig systemdiagnostik** går inte att komma åt. Associerade data om status för nattliga insamlarkörningar och problem som upptäckts av dess regler visas inte heller.
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
@@ -52,10 +53,10 @@ De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fi
 | Lager&nbsp;och&nbsp;logistik | [Tillägget Global lagerredovisning för Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Startsida för global lagerredovisning](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | Lager&nbsp;och&nbsp;logistik | [Bokför behållningsjusteringar med koder kopplade till motkonton](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Orsakskoder för lagerinventering](../warehousing/reason-codes-for-counting-journals.md) |
 | Lager&nbsp;och&nbsp;logistik | [Dataexportpolicy som refereras i försäljningsoffert](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Välj om ändringar av data som refereras av offerter ska göra att dessa offerter (eller rader) inkluderas i nästa stegvisa export. Din stegvisa export går snabbare om du väljer att inte ta med sådana offerter eller rader.<br><br>Funktionen lägger till en inställning som heter **Hoppa över offertrefererad data vid ändringsspårning** på sidan **Parametrar för kundreskontra**. |
-| Lager&nbsp;och&nbsp;logistik | [Skanna streckkoder på lagerstället med standarder för GS1-format](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | *Kommer snart*<!-- KFM: Add doc link when ready. --> |
-| Lager&nbsp;och&nbsp;logistik | Stängd budgivning <!-- KFM: Add RP link when available --> | *Kommer snart*<!-- KFM: Add doc link when ready. --> |
+| Lager&nbsp;och&nbsp;logistik | [Skanna streckkoder på lagerstället med standarder för GS1-format](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-streckkoder och QR-koder](../warehousing/gs1-barcodes.md) |
+| Lager&nbsp;och&nbsp;logistik | [Preliminär reservation för tillägget Lagersynlighet](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Reservationer för Lagersynlighet](../inventory/inventory-visibility-reservations.md) |
 | Lager&nbsp;och&nbsp;logistik | [Avdrag och ökningar av faktisk nominell vikt för Rabatthantering](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Hantera avdrag med workbench för avdrag](../rebate-management/deduction-workbench.md )<br><br>[Bearbeta, granska och bokföra rabatter](../rebate-management/process-review-post.md)<br><br>[Rabatthanteringsavtal](../rebate-management/rebate-management-deals.md) |
-| Lager&nbsp;och&nbsp;logistik | [Steginstruktioner för lagerställeapp](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | *Kommer snart*<!-- KFM: Add doc link when ready --> |
+| Lager&nbsp;och&nbsp;logistik | [Steginstruktioner för lagerställeapp](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Anpassa stegpaneler och instruktioner för mobilappen Warehouse Management](../warehousing/mobile-app-titles-instructions.md) |
 | Lager&nbsp;och&nbsp;logistik | [Arbetsraster och spårningsuppdateringar för hemtagningskostnad](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/work-breaks-tracking-updates-landed-cost) | [Uppdatera spårning för införsel](../landed-cost/update-tracking-putaway.md )<br><br>[Bearbetning av varor på väg](../landed-cost/in-transit-processing.md) |
 | Huvudplanering | [Negativa dagar för planeringsoptimering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/negative-days-support-planning-optimization) | [Fördröjningstolerans (negativa dagar)](../master-planning/planning-optimization/delay-tolerance.md) |
 
@@ -66,9 +67,9 @@ Följande register lista de funktionsförbättringar som ingår i denna version:
 | Funktionsområde | Funktionsnamn&nbsp;&nbsp;i&nbsp;funktionshantering | Mer information |
 |---|---|---|
 | Kostnadshantering | Information om lagerstängningsförlopp | Förhandsgranskningsfunktionen ger en detaljerad vy över förloppet för lagerstängning. |
-| Huvudplanering | (Förhandsversion) Prioritetsstyrt MRP-stöd för planeringsoptimering | Förhandsgranskningsfunktionen för Planeringsoptimering gör det möjligt att styra huvudplaneringen baserat på planeringsprioritet med beställningspunkt. Markerade ändringar inkluderar: Fältet **Planeringsprioritet** för försäljningsorderrader, inköpsorderrader, efterfrågeprognos och planerade order; ett nytt disponeringskodsalternativ. Fältet **Artikeldisponering** för beställningspunkt; Formulär för inställning av huvudplanering som styr inställningarna för planeringsprioritet; Beräkningslogik för Planeringsoptimering om du vill ange och följa planeringsprioritet. |
 | Anskaffning och källa | Förhindra överkonsumering av huvudbudgetreservationer när flera inköpsrekvisitioner finns i arbetsflöde | Förhandsgranskningsfunktionen förbättrar felkontrollen när användarna skickar och godkänner inköpsrekvisitioner som överskrider återstående saldo på en generell budgetreserveringsrad. Det förhindrar att generella budgetreserveringar överkonsumeras när flera inköpsrekvisitioner är i ett arbetsflöde. |
 | Produktionskontroll | Visa fullständiga serienummer, batch- och ID-nummer i gränssnittet för produktionsgolvkörning | Funktionen ger en förbättrad upplevelse av att visa listor med serie-, batch- och ID-nummer i gränssnittet för körning på produktionsgolv. Visningen ändras från en kortvy med begränsat antal tecken till en listvy som har tillräckligt utrymme för att visa de fullständiga värdena. Du kan också söka efter särskilda nummer i listan. |
+| Försäljning och marknadsföring | Begränsa antalet försäljningsorder som går att välja för bokföring | Med hjälp av den här funktionen kan du definiera det högsta antalet försäljningsorder som kan väljas när du bokför bekräftelser, plocklistor, följesedlar och fakturor från listsidan för försäljningsorder. Den aktiveras automatiskt. Funktionen lägger till en inställning med namnet **Max. antal försäljningsorder för bokföring** på sidan **Parametrar för kundreskontra**. Den nya inställningen får standardvärdet *100*. Funktionen hjälper till att förbättra prestandan för listsidan för försäljningsorder när ett visst antal försäljningsorder väljs. Den påverkar inte antalet försäljningsorder som kan bearbetas med en periodisk uppgift. |
 | Lagerstyrning | Avkoda platsarbete från ASN:er | Funktionen måste skicka och ta emot avancerade leveransmeddelanden (ASNs) när du kör en arbetsbelastning för lagerhantering på en skalningsenhet (som en del av en distribuerad topologi). Det lägger till ett nytt databasregister avsett att lagra information om införselarbete. Tidigare lagrades denna information i register som även används för ASNs. |
 | Lagerstyrning | Blandade enheter i fack | Gör att systemet kan placera artiklar på platser med blandade enheter (till exempel både rutor och lådor). För varje placeringsmallrad kan du med funktionen välja om raden ska placera artiklar på platser med mixade enheter eller platser med enstaka enhet. |
 | Lagerstyrning | Använd snabbare API för behållare som stängs/öppnas igen på förpackningsstationen | När förhandsgranskningsfunktionen är aktiverad skapas lagertransaktioner som är relaterade till behållare med hjälp av en ny lättviktsprocess som förbättrar prestandan när behållare stängs eller öppnas igen under manuell packningsbearbetning. |

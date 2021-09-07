@@ -1,8 +1,8 @@
 ---
 title: Definiera och hantera ett förmånsprogram
-description: Personal innehåller en uppsättning av verktyg som kan användas för att ställa in och underhålla förmåner, avdrag och arbetares kompensationsplaner som en organisation ger eller bearbetar för dess arbetare. Denna artikel innehåller information om hur du ställer in och hanterar förmåner.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Personal innehåller en uppsättning av verktyg som kan användas för att ställa in och underhålla förmåner, avdrag och medarbetares kompensationsplaner som en organisation ger eller bearbetar för dess medarbetare. Denna artikel innehåller information om hur du ställer in och hanterar förmåner.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,44 +12,44 @@ ms.search.scope: Human Resources
 ms.custom: 15681
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1e2a43b0c08cadebd6181991ddb3aa46ce63b4388768de400ab43ef77bf4ecd6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9f2cc35086e788e10543e54bb93909f8a4f50d47
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727100"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416513"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Definiera och hantera ett förmånsprogram
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Personal innehåller en uppsättning av verktyg som kan användas för att ställa in och underhålla förmåner, avdrag och arbetares kompensationsplaner som en organisation ger eller bearbetar för dess arbetare. Denna artikel innehåller information om hur du ställer in och hanterar förmåner.
+Personal innehåller en uppsättning av verktyg som kan användas för att ställa in och underhålla förmåner, avdrag och medarbetares kompensationsplaner som en organisation ger eller bearbetar för dess medarbetare. Denna artikel innehåller information om hur du ställer in och hanterar förmåner.
 
 ## <a name="benefit-setup"></a>Förmånsinställning
 
-Innan arbetare kan anmäla sig till förmåner, måste du skapa elementen för varje förmån. Dessa element kombinerar liknande förmånplaner och definierar standardinställningen, till exempel avdragspriser och redovisningsinformation. Många av de här inställningarna kan justeras när arbetare anmäler sig till förmånen vid ett senare tillfälle. För varje förmånplan kan en organisation erbjuda flera anmälningsalternativ, eller så kan en arbetare anmäla sig till planen. 
+Innan medarbetare kan anmäla sig till förmåner, måste du skapa elementen för varje förmån. Dessa element kombinerar liknande förmånplaner och definierar standardinställningen, till exempel avdragspriser och redovisningsinformation. Många av de här inställningarna kan justeras när medarbetare anmäler sig till förmånen vid ett senare tillfälle. För varje förmånplan kan en organisation erbjuda flera anmälningsalternativ, eller så kan en medarbetare anmäla sig till planen. 
 
 [![Processflöde för förmåner.](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
 ## <a name="benefit-elements"></a>Förmånselement
 
-Innan du börjar skapa förmåner och anmäla arbetare till dem, måste du definiera de element som utgör en förmån: typ, plan och alternativ.
+Innan du börjar skapa förmåner och anmäla medarbetare till dem, måste du definiera de element som utgör en förmån: typ, plan och alternativ.
 
 -   **Typ** – en samling planer för en viss förmån, till exempel medicin eller parkering.
 -   **Plan** – en viss förmån som avtalats från en leverantör.
 -   **Alternativ** – omfattningsnivån, exempelvis endast medarbetare eller endast medarbetare och make/maka/partner.
 
-För varje typ av förmån som till exempel syn- eller tandvård kan en organisation erbjuda en eller flera planer till dess arbetare. För varje plan kan organisationen erbjuda olika alternativ. T.ex. kan arbetare köpa ytterligare livförsäkringsplaner på ett, två eller tre gånger deras årliga lön. Varje kombination av en plan och alternativ blir en förmån som arbetare kan anmäla sig till. 
+För varje typ av förmån som till exempel syn- eller tandvård kan en organisation erbjuda en eller flera planer till dess medarbetare. För varje plan kan organisationen erbjuda olika alternativ. T.ex. kan medarbetare köpa ytterligare livförsäkringsplaner på ett, två eller tre gånger deras årliga lön. Varje kombination av en plan och alternativ blir en förmån som medarbetare kan anmäla sig till. 
 
 [![förmånsbild.](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## <a name="eligibility"></a>Berättigande
-Många faktorer bestämmer berättigande för arbetaren för olika typer av förmåner som en arbetsgivare erbjuder. När du skapar en förmån i Dynamics 365 Human Resources kan du ange den typ av berättigande som gäller för den förmånen. 
+Många faktorer bestämmer berättigande för medarbetaren för olika typer av förmåner som en arbetsgivare erbjuder. När du skapar en förmån i Dynamics 365 Human Resources kan du ange den typ av berättigande som gäller för den förmånen. 
 
-Du kan göra en förmån tillgänglig för alla arbetare. Vissa företag erbjuder till exempel parkeringstillstånd för alla medarbetare som en löneförmån. När du skapar den här förmånen, förmån du ställer in berättigande till **Alla arbetare är berättigade**. 
+Du kan göra en förmån tillgänglig för alla medarbetare. Vissa företag erbjuder till exempel parkeringstillstånd för alla medarbetare som en löneförmån. När du skapar den här förmånen, förmån du ställer in berättigande till **Alla medarbetare är berättigade**. 
 
 För andra förmåner, exempelvis införsel i lån och skatteavgifter, gäller inte behörigheten. När du skapar dessa typer av förmåner anger du berättigandet som **Kringgå berättigandeprocessen**. 
 

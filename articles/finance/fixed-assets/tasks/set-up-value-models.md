@@ -1,8 +1,8 @@
 ---
 title: Ställ in värdemodeller
 description: I den här proceduren visas hur du skapar en ny förteckning över anläggningstillgångar och kopplar den till en anläggningstillgångsgrupp.
-author: saraschi2
-ms.date: 08/29/2018
+author: moaamer
+ms.date: 08/12/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,19 +13,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 923c3d0c7a2d54f616452a8b927681603f4955c2d7e5ff306971561b73355743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 46c26e5fad3c5c60d87c2fea2b29043c69b82b5d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741546"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344668"
 ---
 # <a name="set-up-value-models"></a>Ställ in värdemodeller
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../../includes/preview-banner.md)]
+
 
 I den här proceduren visas hur du skapar en ny förteckning över anläggningstillgångar och kopplar den till en anläggningstillgångsgrupp. Här används revisorrollen och demonstrationsdata för den juridiska USMF-personen.
-
 
 ## <a name="create-a-book"></a>Skapa en räkenskapsbok
 1. Gå till Anläggningstillgångar > Inställningar > Böcker.
@@ -48,9 +49,10 @@ I den här proceduren visas hur du skapar en ny förteckning över anläggningst
 1. Klicka på Anläggningstillgångsgrupper.
 2. I fältet Anläggningstillgångsgrupp, ange eller välj ett värde.
 3. I fältet Tjänstelivstid, ange ett tal.
-    * Notera att avskrivningsperioderna beräknas efter det att du har angett tjänstelivslängden.  
-    * Du kan ange avskrivningspraxis efter vad som krävs i skattesyfte.  
 
+  - Avskrivningsperioder beräknas efter det att tillgångens tjänstelivslängd har angetts.  
+  - Avskrivningspraxis kan anges efter vad som krävs i skattesyfte.
+  - För anläggningstillgångar som är kopplade till leasingavtal åsidosätts värdet i fältet **Tjänstelivslängs** av det leasingvillkoret i tillgångsboken eller tillgångens livslängd (det av dem som är kortast). Om fältet **Överföring av ägarskap** anges som **Ja** för leasingboken kommer värdet i fältet **Tjänstelivslängd** alltid att vara tillgångens livslängd.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

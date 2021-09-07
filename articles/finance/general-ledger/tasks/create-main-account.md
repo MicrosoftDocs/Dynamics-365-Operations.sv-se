@@ -1,6 +1,6 @@
 ---
 title: Skapa ett huvudkonto
-description: Den här uppgiften vägleder dig genom stegen för att lägga till en huvudkonto till en befintlig kontoplan.
+description: I dessa procedurer går du igenom hur du lägger till ett huvudkonto i en befintlig kontoplan.
 author: aprilolson
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 66e248d029063d4a465ad789e5eb193706b8a2351bf659306050c7ac7d1c950d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cbc93e2d2aec1ffcfa755c46553022931bc24c5b
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729640"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394646"
 ---
 # <a name="create-a-main-account"></a>Skapa ett huvudkonto
 
 [!include [banner](../../includes/banner.md)]
 
-Den här uppgiften vägleder dig genom stegen för att lägga till en huvudkonto till en befintlig kontoplan. I den här registreringen används demonstrationsföretaget USMF.  
+I dessa procedurer går du igenom hur du lägger till ett huvudkonto i en befintlig kontoplan. I den här registreringen används demonstrationsföretaget USMF.  
 
 1. Gå till **Navigeringsfönster > Moduler > Redovisning > Kontoplan > Konton > Huvudkonton**.
 2. Klicka på **Ny**.

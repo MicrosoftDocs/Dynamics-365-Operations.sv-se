@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 844e54caa072eef3481e094ef296a82fa099a68bb806d763baa550b1a2226347
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2bf3d41e94e741b628002768f9d6825219666ed
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762708"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343904"
 ---
 # <a name="warehouse-management-overview"></a>Lagerstyrning – översikt
 
@@ -49,7 +49,7 @@ Du måste konfigurera komponenter för in- och utgående arbetsflöden för lage
 - Stöd för full batch och varor med serienummer
 - Diverse funktioner för varumottagning
 - Flera olika plockstrategier
-- Direkt support för nästa generations streckkodsläsare
+- Färdig support för nästa generations streckkodsläsare
 - Pall-/containertyper för lagerprocesser
 - Avancerade räkningsfunktioner
 - Etikettutskrifter och vidarebefordran av etiketter med stöd för Zebra ZPL

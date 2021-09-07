@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8386adc3f0e9c9a782e6cd5d4ba770f9650583b8ff3f32c3ac23478475d085ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 094d7f0f5642653c6e059952783041b1430e98d6
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753805"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384645"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Installera och ansluta distributionslagerappen
 
@@ -136,7 +136,7 @@ Du kan importera anslutningsinställningar från antingen en fil eller en QR-kod
 | Anslutningsnamn | Ange namnet på anslutningsinställningen. Du kan använda upp till 20 tecken. Eftersom detta värde är den unika identifieraren för en anslutningsinställning måste du se till att den är unik i listan. Om en anslutning med samma namn redan finns på enheten åsidosätts den av inställningarna från den importerade filen. |
 | ActiveDirectoryClientAppId | Ange det klient-ID som du har angivit under installationen av Azure AD i avsnittet [Skapa ett webbtjänstprogram i Azure Active Directory](#create-service). |
 | ActiveDirectoryResource | Ange rot-URL för Supply Chain Management. |
-| ActiveDirectoryTenant | Ange den Azure AD-klientorganisation som du använder med Supply Chain Management-servern. Detta värde har formuläret `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Här är ett exempel: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
+| ActiveDirectoryTenant | Ange det Azure AD-domännamn som du använder för Supply Chain Management-servern. Detta värde har formuläret `https://login.windows.net/<your-Azure-AD-domain-name>`. Här är ett exempel: `https://login.windows.net/contosooperations.onmicrosoft.com`. Mer information om hur du hittar Azure AD-domännamnet finns i [Leta reda på viktiga ID:n för en användare](/partner-center/find-ids-and-domain-names). |
 | Företag | Ange den juridiska person i Supply Chain Management som du vill att programmet ansluter till. |
 | ConnectionType | (Valfritt) Ange om anslutningsinställningen ska använda ett certifikat eller en klienthemlighet för att ansluta till en miljö. Giltiga värden är *"certificate"* och *"clientsecret"*. Standardvärdet är *"certificate"*.<p>**Obs!** Det går inte att importera klienthemligheter.</p> |
 | IsEditable | (Valfritt) Ange om programanvändaren ska kunna redigera anslutningsinställningen. Giltiga värden är *"true"* och *"false"*. Standardvärdet är *"true"*. |
@@ -248,7 +248,7 @@ Du kan konfigurera programmet manuellt på enheten så att den ansluter till Sup
         > [!NOTE]
         > Avsluta inte det här värdet med ett snedstreck (/).
 
-    - **Klientorganisation i Active-katalog** – Ange den Azure AD-klientorganisation som du använder med Supply Chain Management-servern. Detta värde har formuläret `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Här är ett exempel: `https://login.windows.net/contosooperations.onmicrosoft.com`.
+    - **Active Directory-klientorganisation** – Ange det Azure AD-domännamn som du använder för Supply Chain Management-servern. Detta värde har formuläret `https://login.windows.net/<your-Azure-AD-domain-name>`. Här är ett exempel: `https://login.windows.net/contosooperations.onmicrosoft.com`. Mer information om hur du hittar Azure AD-domännamnet finns i [Leta reda på viktiga ID:n för en användare](/partner-center/find-ids-and-domain-names).
 
         > [!NOTE]
         > Avsluta inte det här värdet med ett snedstreck (/).
@@ -270,7 +270,7 @@ Om en enhet går förlorad eller drabbas av fel, måste du ta bort åtkomsten ti
 
 1. Logga in på Azure-portalen på [https://portal.azure.com](https://portal.azure.com/).
 1. I det vänstra navigeringsfönstret väljer du **Active Directory** och ser till att du befinner dig i rätt katalog.
-1. I listan **Hantera** väljer du **App-registreringar** och sedan den app du vill konfigurera. Sidan **Inställningar** visas och anger konfigurationsinformation.
+1. I listan **Hantera** väljer du **App-registreringar** och sedan dett programdu vill konfigurera. Sidan **Inställningar** visas och anger konfigurationsinformation.
 1. Kontrollera att klient-ID:t för programmet matchar det klient-ID som du noterade i steg 2.
 1. Välj **Ta bort** i verktygsfältet.
 1. Markera **Ja** i bekräftelsemeddelandet som visas.

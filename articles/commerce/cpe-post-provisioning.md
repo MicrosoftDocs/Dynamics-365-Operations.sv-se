@@ -2,7 +2,7 @@
 title: Konfigurera en Dynamics 365 Commerce utvärderingsmiljö
 description: Detta ämne förklarar hur du konfigurerar bedömningsmiljö för Microsoft Dynamics 365 Commerce efter att den är etablerad.
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87933c57ee5f626b224b1edc92da13906e3edc2613f61c5b4a917d8cc5d1dcd3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742450"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416489"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera en Dynamics 365 Commerce utvärderingsmiljö
 
@@ -44,11 +44,11 @@ Under åtgärderna efter etablering i Commerce-administration, se till att den j
 
 ## <a name="configure-the-point-of-sale"></a>Konfigurera POS
 
-### <a name="associate-a-worker-with-your-identity"></a>Associera arbetare med din identitet
+### <a name="associate-a-worker-with-your-identity"></a>Associera medarbetare med din identitet
 
 Om du vill associera en anställd med din identitet, följ dessa steg i Commerce-administration.
 
-1. Använd menyn till vänster för att gå till **moduler \> Retail och Commerce \> anställda \> arbetare**.
+1. Använd menyn till vänster för att gå till **moduler \> Retail och Commerce \> anställda \> medarbetare**.
 1. Hitta och markera följande post: **000713 – Andrew Collette** i listan.
 1. I åtgärdsfönstret, välj **Commerce**.
 1. Välj **Associera befintlig identitet**.
@@ -128,7 +128,7 @@ Om du vill köra fullständig datasynkronisering i Commerce-administration följ
 För att kunna utföra testtransaktioner på webbplatsen kan du använda den här kreditkortsinformationen för testet:
 
 - **Kortnummer:** 4111-1111-1111-1111
-- **Utgångsdatum:** 10/20
+- **Utgångsdatum:** 10/30
 - **Kortverifieringsnummer (CVV) kod:** 737
 
 > [!IMPORTANT]
@@ -139,6 +139,9 @@ För att kunna utföra testtransaktioner på webbplatsen kan du använda den hä
 När etablerings- och konfigurationsstegen är slutförda kan du börja använda din bedömningsmiljö. Använd Commerce URL:en för webbplatsskaparen för att gå till redigeringsupplevelsen. Använd URL:en för Commerce webbplats för att gå till näthandelssajt för butikskunden.
 
 För att konfigurera valfria funktioner för Commerce bedömningsmiljö efter att du har konfigurerat den finns i [Konfigurera valfria funktioner för bedömningsmiljö för Commerce](cpe-optional-features.md).
+
+> [!NOTE]
+> Med utvärderingsmiljöer för Commerce följer en förinläst Azure Active Directory (Azure AD) B2C(business-to-consumer)-klientorganisation för demonstrationssyften. Konfigurering av en egen Azure AD B2C-klientorganisation krävs inte för utvärderingsmiljöer. Om du konfigurerar utvärderingsmiljön för att använda din egen Azure AD B2C-klientorganisation ska du emellertid se till att lägga till ``https://login.commerce.dynamics.com/_msdyn365/authresp`` som en svars-URL i Azure AD B2C-programmet via Azure Portal.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
@@ -159,6 +162,8 @@ För att konfigurera valfria funktioner för Commerce bedömningsmiljö efter at
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce webbplatsen](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Ställa in en B2C-klientorganisation i Commerce](set-up-B2C-tenant.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

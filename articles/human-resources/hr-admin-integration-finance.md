@@ -1,8 +1,8 @@
 ---
-title: Konfigurera integration med Finance
-description: I den här artikeln beskrivs vilka funktioner som är tillgängliga för integration från Dynamics 365 Human Resources och Dynamics 365 Finance.
-author: andreabichsel
-ms.date: 03/26/2020
+title: Konfigurera integrering med Finance
+description: I detta ämne beskrivs integreringen mellan Dynamics 365 Human Resources och Dynamics 365 Finance.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,32 +12,32 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8d4bbd0c95126bd869fafccc3e7c63f65f939d8c6b2a1afec8ff95f8519fe9af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ba984d26c5c0b1376c0ad85e5c0665da004a46a5
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756182"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414698"
 ---
-# <a name="configure-integration-with-finance"></a>Konfigurera integration med Finance
+# <a name="configure-integration-with-finance"></a>Konfigurera integrering med Finance
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-För att integrera Dynamics 365 Human Resources med Dynamics 365 Finance kan du använda mallen personal för finansiering i [Dataintegrerare](/powerapps/administrator/data-integrator). Med mallen personal till ekonomi kan dataflöden för jobb, befattningar och arbetare användas. Med hjälp av mallen kan dataflöda från personal till ekonomi, men tillåter inte att data flödar från ekonomi till personal.
+För att integrera Dynamics 365 Human Resources med Dynamics 365 Finance kan du använda mallen personal för finansiering i [Dataintegrerare](/powerapps/administrator/data-integrator). Med mallen personal till ekonomi kan dataflöden för jobb, befattningar och medarbetare användas. Med hjälp av mallen kan dataflöda från personal till ekonomi, men tillåter inte att data flödar från ekonomi till personal.
 
-![Integrationsflöde Personal till Ekonomi.](./media/hr-admin-integration-finance-flow.png)
+![Integreringsflöde Personal till Ekonomi.](./media/hr-admin-integration-finance-flow.png)
 
 Lösningen personal till ekonomi innehåller följande typer av datasynkronisering:
 
 - Underhåll jobb i personal och synkronisera dem från personal till ekonomi.
 - Underhåll positioner och positionstilldelningar i personal och synkronisera dem från personal till ekonomi
 - Underhåll anställningar i personal och synkronisera dem från personal till ekonomi
-- Underhåll arbetare och arbetaradresser i personal och synkronisera dem från personal till ekonomi
+- Underhåll medarbetare och arbetaradresser i personal och synkronisera dem från personal till ekonomi
 
 ## <a name="system-requirements-for-human-resources"></a>Systemkrav för personal
 
@@ -68,11 +68,11 @@ Mallen använder följande underliggande uppgifter för att synkronisera poster 
 - **Jobbefattningar till befattningsdetaljer**
 - **Jobbefattningar till befattningstidslängd**
 - **Jobbefattningar till befattningshierarkier**
-- **Arbetare till arbetare**
+- **Arbetare till medarbetare**
 - **Anställning till anställning**
 - **Anställning till anställningsdetalj**
-- **Befattningstilldelning för arbetare till Befattningstilldelningar för arbetare**
-- **Adress till arbetare till postadress V2 till arbetare**
+- **Befattningstilldelning för medarbetare till Befattningstilldelningar för medarbetare**
+- **Adress till medarbetare till postadress V2 till medarbetare**
 
 ## <a name="template-mappings"></a>Mallmappningar
 
@@ -170,7 +170,7 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 | HIERARCHYTYPENAME   (HIERARCHYTYPENAME)                                                       | HIERARCHYTYPENAME   (HIERARCHYTYPENAME)     |
 
 
-### <a name="workers-to-worker"></a>Arbetare till arbetare
+### <a name="workers-to-worker"></a>Arbetare till medarbetare
 | Dataverse-register (källa)           | Entiteten ekonomi (destination)       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm_birthdate   (cdm_birthdate)               | FÖDELSEDATUM (FÖDELSEDATUM)                           |
@@ -216,7 +216,7 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 | cdm_employernoticeamount   (cdm_employernoticeamount)           | EMPLOYERNOTICEAMOUNT   (EMPLOYERNOTICEAMOUNT) |
 | cdm_workernoticeamount   (cdm_workernoticeamount )              | WORKERNOTICEAMOUNT   (WORKERNOTICEAMOUNT)     |
 
-### <a name="position-worker-assignment-to-position-worker-assignments"></a>Befattningstilldelning för arbetare till Befattningstilldelningar för arbetare
+### <a name="position-worker-assignment-to-position-worker-assignments"></a>Befattningstilldelning för medarbetare till Befattningstilldelningar för medarbetare
 
 | Dataverse-register (källa)                             | Entiteten ekonomi (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
@@ -225,7 +225,7 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 | cdm_validfrom   (giltigt från)                                    | VALIDFROM   (VALIDFROM)                       |
 | cdm_validto (giltigt till)                                        | VALIDTO (VALIDTO)                             |
 
-### <a name="worker-addresses-to-worker-postal-address-v2"></a>Adress till arbetare till postadress V2 till arbetare
+### <a name="worker-addresses-to-worker-postal-address-v2"></a>Adress till medarbetare till postadress V2 till medarbetare
 
 | Dataverse-register (källa)                             | Entiteten ekonomi (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
@@ -241,9 +241,9 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 | cdm_county   (cdm_county)                                       | ADDRESSCOUNTYID(ADDRESSCOUNTYID)              |
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSDESCRIPTION(ADDRESSDESCRIPTION)        |
 
-## <a name="integration-considerations"></a>Hänsyn för integration
+## <a name="integration-considerations"></a>Hänsyn för integrering
 
-Integration från personal för ekonomi försöker matcha poster baserat på ID. Om posterna matchar kommer dataintegreraren att skriva över data i ekonomi över med värdena för personal. Det kan dock uppstå ett problem om logiskt är olika poster och samma ID genererades i personal eller ekonomi utifrån respektive nummerserie.
+Integrering från personal för ekonomi försöker matcha poster baserat på ID. Om posterna matchar kommer dataintegreraren att skriva över data i ekonomi över med värdena för personal. Det kan dock uppstå ett problem om logiskt är olika poster och samma ID genererades i personal eller ekonomi utifrån respektive nummerserie.
 
 Det här problemet kan uppstå med **arbetare** som använder **personalnummer** för att göra matchningen och **befattningar**. I jobb används inte nummerserier. Om samma jobb-ID finns i både personal och ekonomi kommer informationen i personal att skriva över Dynamics 365 Finance informationen. 
 

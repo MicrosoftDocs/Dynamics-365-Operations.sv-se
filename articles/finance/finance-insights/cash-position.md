@@ -1,5 +1,5 @@
 ---
-title: Kassaposition (förhandsversion)
+title: Kassaposition
 description: I det här ämnet beskrivs hur funktionen för kassaflödesprognoser förutsäger organisationens kassaposition för specifika tider. Här beskrivs också vilka alternativ som finns för att visa prognoser för olika perioder.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 457dd34a2ccddce0e94f956ba2b854c27a270f13341047e508ac702aa1281d25
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e54caee1e7d703bb134593412bdad77b3af5ab38
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717483"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386324"
 ---
-# <a name="cash-position-preview"></a>Kassaposition (förhandsversion)
+# <a name="cash-position"></a>Kassaposition
 
 [!include [banner](../includes/banner.md)]
 

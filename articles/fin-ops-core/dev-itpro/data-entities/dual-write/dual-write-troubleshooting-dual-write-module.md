@@ -2,26 +2,19 @@
 title: Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
 description: Det här avsnittet innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem med dubbelriktad skrivning i Finance and Operations-appar.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 08/10/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6689fae215937f58c93cce72df3fa0a1b5aecd3a5ac9913981b253344a1ba13f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 90ff55540c153ef4f3ac07bf5316a3abb4755f2c
+ms.sourcegitcommit: caa41c076f731f1e02586bc129b9bc15a278d280
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720746"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7380150"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
 
@@ -36,7 +29,7 @@ Det här avsnittet innehåller felsökningsinformation för integrering av dubbe
 
 ## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Du kan inte läsa in modulen för dubbelriktad skrivning i en Finance and Operations-app
 
-Om du inte kan öppna sidan **dubbelriktad skrivning** genom att välja panelen **dubbelriktad skrivning** i arbetsytan **datahantering** är dataintegrationstjänsten förmodligen nere. Skapa en supportbiljett för att begära en omstart av dataintegrationstjänsten.
+Om du inte kan öppna sidan **dubbelriktad skrivning** genom att välja panelen **dubbelriktad skrivning** i arbetsytan **datahantering** är dataintegreringstjänsten förmodligen nere. Skapa en supportbiljett för att begära en omstart av dataintegreringstjänsten.
 
 ## <a name="error-when-you-try-to-create-a-new-table-map"></a>Fel vid försök att skapa en ny tabellmappning
 
@@ -44,8 +37,7 @@ Om du inte kan öppna sidan **dubbelriktad skrivning** genom att välja panelen 
 
 Följande felmeddelande kan visas när du försöker konfigurera en ny tabell för dubbelriktad skrivning. Den enda användare som kan skapa en karta är den användare som ställer in anslutningen med dubbelriktad skrivning.
 
-*Svarsstatuskoden anger inte lyckad: 401 (otillåtet)*
-
+*Svarsstatuskoden anger inte slutförande: 401 (obehörig)*.
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Fel vid öppning av användargränssnittet med dubbelriktad skrivning
 
@@ -61,7 +53,11 @@ Om du vill åtgärda problemet loggar du in på ett InPrivate-fönster i Microso
 
 Du kan stöta på följande fel när du länkar eller skapar kartor:
 
-*Svarsstatuskoden anger inte lyckad: 403 (tokenexchange).<br> Session s-ID: \<your session id\><br> Rotaktivitets-ID: \<your root activity id\>*
+```dos
+Response status code does not indicate success: 403 (tokenexchange).
+Session ID: \<your session id\>
+Root activity ID: \<your root activity\> id
+```
 
 Det här felet kan uppstå om du inte har tillräcklig behörighet för att länka dubbelriktad skrivning eller skapa kartor. Det här felet kan också uppstå om Dataverse-miljön återställdes utan att dubbelriktig skrivning avlänkas. Alla användare med rollen systemadministratör i båda Finance and Operations-apparna och Dataverse kan länka dessa miljöer. Det är bara användaren som installerar anslutningen för dubbelriktad skrivning som kan lägga till nya tabellmappningar. Efter installationen kan alla användare med rollen systemadministratör övervaka status och redigera mappningarna.
 
@@ -73,18 +69,31 @@ Följande felmeddelande kan visas när du försöker att stoppa tabellmappningen
 
 Det här felet uppstår när den länkade Dataverse-miljön inte är tillgänglig.
 
-Lös problemet genom att skapa en biljett till dataintegrationsteamet. Koppla nätverksspårningen så att dataintegrationsteamet kan markera kartorna som **Inte körs** i servern.
+Lös problemet genom att skapa en biljett till dataintegreringsteamet. Koppla nätverksspårningen så att dataintegreringsteamet kan markera kartorna som **Inte körs** i servern.
 
-## <a name="error-while-trying-to-start-a-table-mapping"></a>Fel vid försök att starta en tabellmappning
+## <a name="errors-while-trying-to-start-a-table-mapping"></a>Fel vid försök att starta en tabellmappning
 
-Du kan få ett felmeddelande som följande när du försöker ange status för en mappning som ska **köras**:
+### <a name="unable-to-complete-initial-data-sync"></a>Det gick inte att slutföra den första datasynkroniseringen
+
+Följande felmeddelande kan komma att visas när du försöker köra den första datasynkroniseringen:
 
 *Det gick inte att slutföra inledande datasynkronisering. Fel: del i dubbelriktad skrivning - registrering av plugin-program misslyckades: Det gick inte att skapa metadata för sökning för dubbelriktad skrivning.*
 
-Korrigeringen för det här felet beror på orsaken till felet:
+Du kan komma att få detta felmeddelande när du försöker ange statusen för en mappning som **Körs**: Korrigeringen beror på orsaken till felet:
 
 + Om mappningen har beroende mappningar ska du se till att aktivera de beroende mappningarna för den här tabellmappningen.
 + Mappningen kanske saknar käll- eller målkolumner. Om en kolumn i Finance and Operations-appen saknas följer du stegen i avsnittet [Tabellkolumner som saknas problem i kartor](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Om en kolumn i Dataverse saknas klickar du på knappen **Uppdatera tabeller** på mappningen så att kolumnerna automatiskt fylls i igen i mappningen.
 
+### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Versionsmatchningsfel och uppgradering av lösningar med dubbelriktad skrivning
+
+Följande felmeddelanden kan komma att visas när du försöker köra tabellmappningarna:
+
++ *Kundgrupper (msdyn_customergroups) : Fel vid dubbelskrivning – Dynamics 365 for Sales-lösningen "Dynamics365Company" har versionsfel. Version: "2.0.2.10" Erforderlig version: "2.0.133"*
++ *Dynamics 365 for Sales-lösningen "Dynamics365FinanceExtended" har ett versionsfel. Version: "1.0.0.0" Erforderlig version: "2.0.227"*
++ *Dynamics 365 for Sales-lösningen "Dynamics365FinanceAndOperationsCommon" har ett versionsfel. Version: "1.0.0.0" Erforderlig version: "2.0.133"*
++ *Dynamics 365 for Sales-lösningen "CurrencyExchangeRates" har ett versionsfel. Version: "1.0.0.0" Erforderlig version: "2.0.133"*
++ *Dynamics 365 for Sales-lösningen "Dynamics365SupplyChainExtended" har ett versionsfel. Version: "1.0.0.0" Erforderlig version: "2.0.227"*
+
+Du korrigerar problemen genom att uppdatera lösningsar med dubbelskrivning i Dataverse. Se till att du uppgraderar till den senaste lösningen som matchar erforderlig lösningsversion.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

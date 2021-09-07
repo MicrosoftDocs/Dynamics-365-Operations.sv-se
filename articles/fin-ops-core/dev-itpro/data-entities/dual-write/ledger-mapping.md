@@ -8,12 +8,13 @@ audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: rhaertle
-ms.openlocfilehash: 18a95725af8014845d6fb39806917de7632ad56b92b75387cd916de927127b38
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: e5bdef8ef440bd5ef84060b61b4cf1d0088f204c
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723091"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416843"
 ---
 # <a name="integrated-ledger"></a>Integrerad redovisning
 
@@ -21,7 +22,7 @@ ms.locfileid: "6723091"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-I ett affärsprogram definierar redovisningsdata den kärna som är inställd för hur ett företag gör affärer. Redovisningsdata beskriver t.ex. räkenskapsåret som företaget följer, de valutor det använder och vilka konton det använder. I det här avsnittet beskrivs integrationen av dessa grundläggande ekonomiska data.
+I ett affärsprogram definierar redovisningsdata den kärna som är inställd för hur ett företag gör affärer. Redovisningsdata beskriver t.ex. räkenskapsåret som företaget följer, de valutor det använder och vilka konton det använder. I det här avsnittet beskrivs integreringen av dessa grundläggande ekonomiska data.
 
 ## <a name="templates"></a>Mallar
 
@@ -36,9 +37,9 @@ Finance and Operations-appar | Kundengagemangsappar     | beskrivning
 [Valutakurstyp](mapping-reference.md#129) | msdyn_exchangeratetypes |
 [Format för ekonomisk dimension](mapping-reference.md#130) | msdyn_financialdimensionformats |
 [Ekonomiska dimensioner](mapping-reference.md#128) | msdyn_dimensionattributes |
-[Integrationsenhet för räkenskapskalender](mapping-reference.md#132) | msdyn_fiscalcalendars |
+[Integreringsenhet för räkenskapskalender](mapping-reference.md#132) | msdyn_fiscalcalendars |
 [Period i räkenskapskalender](mapping-reference.md#131) | msdyn_fiscalcalendarperiods |
-[Integrationsenhet för räkenskapskalenderår](mapping-reference.md#133) | msdyn_fiscalcalendaryears |
+[Integreringsenhet för räkenskapskalenderår](mapping-reference.md#133) | msdyn_fiscalcalendaryears |
 [Ledger](mapping-reference.md#148) | msdyn_ledgers |
 [Huvudkonto](mapping-reference.md#152) | msdyn_mainaccounts |
 [Huvudkontokategorier](mapping-reference.md#151) | msdyn_mainaccountcategories |

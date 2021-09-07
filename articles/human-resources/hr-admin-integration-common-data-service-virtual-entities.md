@@ -1,8 +1,8 @@
 ---
 title: Konfigurera virtuella Dataverse-register
-description: I detta ämne beskrivs hur du konfigurerar virtuella register för Dynamics 365 Human Resources. Generera och uppdatera befintliga virtuella register, samt analysera genererade och tillgängliga register.
-author: andreabichsel
-ms.date: 01/25/2021
+description: I det här avsnittet visas hur du konfigurerar, genererar och uppdaterar befintliga virtuella tabeller samt analyserar genererade och tillgängliga tabeller för Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4461b072c12848220c48d3a711cc2d4991c98f068e1ba477becf6d0be068fca8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9e26a2fb65564cb4a1d2f9ba4b0d621177207545
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721617"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414674"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurera virtuella Dataverse-register
 
@@ -141,11 +141,14 @@ Nästa steg är att konfigurera datakällan för det virtuella registret i Power
      >[!NOTE]
      >Se till att du tar med "**/**"-tecknet i slutet av URL:en för att undvika att få ett fel.
 
+     >[!NOTE]
+     >URL-måladressen avgör vilken personalmiljö som virtuella tabeller refererar till för data. Om du skapar en sandbox-miljö genom att skapa en kopia av din produktionsmiljö ska du uppdatera detta värde till namnrymdens URL för den nya sandbox-miljön. På så sätt ser du till att de virtuella registren är anslutna till data i sandbox-miljön istället för att fortsätta referera till produktionsmiljön.
+
    - **Klientorganisations-ID**: Azure Active Directory (Azure AD) klientorganisations-ID.
 
-   - **AAD app-ID**: det app-ID (klient) som skapades för den app som är registrerat i Microsoft Azure-portalen. Du har fått den här informationen tidigare under steget [Registrera appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+   - **AAD app-ID**: det app-ID (klient) som skapades för dett programsom är registrerat i Microsoft Azure-portalen. Du har fått den här informationen tidigare under steget [Registrera appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
-   - **Hemlighet för AAD app-ID**: klienthemligheten som skapades för den app som är registrerat i Microsoft Azure-portalen. Du har fått den här informationen tidigare under steget [Registrera appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+   - **Hemlighet för AAD app-ID**: klienthemligheten som skapades för dett programsom är registrerat i Microsoft Azure-portalen. Du har fått den här informationen tidigare under steget [Registrera appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
    ![Microsoft HR-datakälla.](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
 

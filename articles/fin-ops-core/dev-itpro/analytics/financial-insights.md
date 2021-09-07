@@ -2,7 +2,7 @@
 title: Ekonomisk analys
 description: Ekonomiska analys använder Microsoft Power BI för att sammanföra bokslut, diagram och ekonomiska nyckeltal (KPI).
 author: kweekley
-ms.date: 04/22/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4937235dddaf5c1c8d6d504542f161fa232c86213eb6ac4274349e02d18fb8b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767837"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416315"
 ---
 # <a name="financial-analysis"></a>Ekonomisk analys
 
@@ -36,9 +36,9 @@ ms.locfileid: "6767837"
 > - **Sida** – en flik i en enda .pbix-fil. Varje sida kan innehålla en eller flera visuella element.
 > - **Visuellt element** – en enda datakälla, till exempel kort, KPI, diagram, matris eller bokslut. En sida som har ett bokslut som ett visuellt element kan inte ha andra visuella element, på grund av storleken på de data som rapporteras.
 
-För närvarande används **Ekonomisk analys** för att visa data för den aktiva juridiska personen eller alla juridiska personer. I framtida versioner kommer arbetsytan att utvecklas till den plats där du kan använda Power BI för att redigera och skapa visuella element.
+Arbetsytan **Ekonomisk analys** fokuserar på hur du visar och filtrerar data i befintliga rapporter. Du kan lägga till nytt visuellt innehåll i arbetsytan **Ekonomisk analys**. Arbetsytan **Ekonomisk analys** är tillgänglig för aktuellt företag samt alla företag för att visa data för alla juridiska personer, oavsett vilka juridiska personer som rollen har åtkomst till.
 
-Arbetsytan **Översikt över ekonomichef** visar samma visuella element som **Ekonomisk analys**, men fokuserar på att du kan visa och filtrera data i befintliga rapporter. I framtida versioner kommer du att kunna lägga till nya bilder till arbetsytan **Ekonomisk analys**. De nya visuella elementen kan också bli tillgängliga på arbetsytor som är särskilt avsedda för andra roller, till exempel projektledare eller ekonomichefer. Arbetsytan **Översikt över ekonomichef** visar fortsättningsvis data för alla juridiska personer, oavsett vilken roll de juridiska personerna har tillgång till.
+- [Lägg till eller redigera Power BI-visualiseringar på instrumentpanelen](/powerapps-docs/user/add-powerbi-dashboards.md)
 
 ## <a name="dynamics-365-finance-setup"></a>Dynamics 365 Finance-konfiguration
 **Redovisning**

@@ -2,7 +2,7 @@
 title: Konfigurera sökdatakällor att använda programspecifika parametrar för ER
 description: I detta ämne beskrivs hur du kan konfigurera sökdatakällor i elektronisk rapportering (ER) att använda parametrar specifika för ER-program.
 author: NickSelin
-ms.date: 04/02/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2849df85c37c4ed00754be91b9a9708db1bb16b7d0eb49d3a61d169037687196
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c028b01aa2889a517bee69de46411ada12d6fe25
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723199"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343439"
 ---
 # <a name="configure-lookup-data-sources-to-use-er-application-specific-parameters"></a>Konfigurera sökdatakällor att använda programspecifika parametrar för ER 
 
@@ -69,7 +69,7 @@ Du kan ställa in sökningsregler för det valda ER-formatet genom att använda 
 I följande bild visas hur datakällan `Model.Data.Summary.LevelByLookup` för typen **Beräknat fält** kan konfigureras att anropa den konfigurerade datakällan **Sökning** som tillhandahåller erforderliga parametrar. För att bearbeta detta anrop vid körning går ER igenom listan med konfigurerade regler i den definierade sekvensen i syfte att hitta den första regel som uppfyller de angivna villkoren. I detta exempel är det regeln som innehåller skattekoden som matchar den angivna. Det innebär att den lämpligaste regeln hittas och att uppräkningsvärdet som konfigureras för den hittade regeln returneras av denna datakälla.
 
 > [!NOTE]
-> Ett undantag utlöses när ingen tillämplig regel hittas. Om du vill förhindra dessa undantag kan du konfigurera ytterligare regler i slutet av regellistan som hanterar fall där ett icke-konfigurerat värde eller inget värde anges. Använd alternativen **\*Ej tom*** och **\*Tom*** i enlighet därmed.  
+> Ett undantag utlöses när ingen tillämplig regel hittas. Om du vill förhindra dessa undantag kan du konfigurera ytterligare regler i slutet av regellistan som hanterar fall där ett icke-konfigurerat värde eller inget värde anges. Använd alternativen **\*Ej tom**\* och **\*Tom**\* i enlighet därmed.  
 >
 > ![Lägg till en datakälla för att anropa den konfigurerade sökdatakällan.](./media/er-lookup-data-sources-img7.png)
 

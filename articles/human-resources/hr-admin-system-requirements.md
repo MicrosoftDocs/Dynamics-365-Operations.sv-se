@@ -1,8 +1,8 @@
 ---
 title: Systemkrav
-description: I den här artikeln beskrivs kraven för Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Detta avsnitt anger systemkraven för Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 52ef0176926fd6c5c5d2bc852080dde5273d05d0f2edd20e091d97c71e503dce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 15770595a0639c03df1138ec25010ca8168bd9a8
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761102"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393483"
 ---
 # <a name="system-requirements"></a>Systemkrav
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I den här artikeln beskrivs kraven för Microsoft Dynamics 365 Human Resources. Det visar också de länder och regioner där personal finns tillgänglig, plus information om språk och lokalisering av personaldata.
+Detta avsnitt anger systemkraven för Microsoft Dynamics 365 Human Resources. Det visar också de länder och regioner där personal finns tillgänglig, plus information om språk och lokalisering av personaldata.
 
 ## <a name="supported-web-browsers"></a>Webbläsare som stöds
 
-Personal går att köra i följande webbläsare som körs på de angivna operativsystemen: 
+Användare får åtkomst till Microsoft Dynamics 365 Human Resources via samtliga följande webbläsare som körs på angivna operativsystem: 
 
 *   Microsoft Edge (den senaste tillgängliga versionen) på Windows 10
 *   Internet Explorer 11 på Windows 10, Windows 8.1 eller Windows 7
@@ -39,14 +39,17 @@ Personal går att köra i följande webbläsare som körs på de angivna operati
 
 Gå till programtillverkarens startsida för att hitta den senaste versionen för varje webbläsare. 
 
-> [!NOTE]
-> * Om du vill hämta bilder som har skapats från uppgiftsregistrering och inkludera dem i Microsoft Word-dokument måste du ha installerat ett Chrome-tillägg. 
-> * Arbetsflödesredigeraren startas som ett ClickOnce-program. Endast Microsoft Edgeoch Internet Explorer (på en version som stöds av Microsoft Windows) stöder ClickOnce-program. Arbetsflödesredigeraren ClickOnce-programmet kräver 64-bitars kompatibelt operativsystem.
-> * Om du vill förhandsgranska PDF-filer, bör du använda moderna webbläsare som t.ex. Microsoft Edge (senaste tillgängliga versionen) på Windows 10 eller Google Chrome (senaste tillgängliga versionen) på Windows 10, Windows 8.1, Windows 7, Windows 8 eller 10 Google Nexus Tablet PC.
->   Nätverkskrav
-> * Personal har utformats för nätverk med svarstid på 250-300 millisekunder eller mindre. Denna svarstid är svarstiden från en webbläsarklient till Microsoft Azure datacenter som är värd för Personal. Vi rekommenderar att du testar nätverksfördröjning vid [www.azurespeed.com](https://www.azurespeed.com "Azure fördröjningstest").
-> * Bandbreddskrav för personal beror på ditt scenario. Mest typiska scenarier kräver en bandbredd på mer än 50 kB per sekund (KBps).
-> 
+## <a name="special-considerations"></a>Särskilda beaktanden
+
+* Du måste installera en förhandsversion av ett Chrome-tillägg för att göra det möjligt för Uppgiftsinspelaren för att ta skärmbilder och inkludera dem i genererade Microsoft Word-dokument
+* Arbetsflödesredigeraren startas som ett ClickOnce-program. Endast Microsoft Edgeoch Internet Explorer (på en version som stöds av Microsoft Windows) stöder ClickOnce-program. Arbetsflödesredigeraren ClickOnce-programmet kräver 64-bitars kompatibelt operativsystem.
+* Om du vill förhandsgranska PDF-filer, bör du använda moderna webbläsare som t.ex. Microsoft Edge (senaste tillgängliga versionen) på Windows 10 eller Google Chrome (senaste tillgängliga versionen) på Windows 10, Windows 8.1, Windows 7, Windows 8 eller 10 Google Nexus Tablet PC.
+
+## <a name="network-requirements"></a>Nätverkskrav
+
+* Personal har utformats för nätverk med svarstid på 250-300 millisekunder eller mindre. Denna svarstid är svarstiden från en webbläsarklient till Microsoft Azure datacenter som är värd för Personal. Vi rekommenderar att du testar nätverksfördröjning vid [www.azurespeed.com](https://www.azurespeed.com "Azure fördröjningstest").
+* Bandbreddskrav för personal beror på ditt scenario. Typiska scenarier kräver en bandbredd på mer än 50 kB per sekund (KBps).
+ 
 > [!WARNING]
 > Beräkna inte bandbreddskrav från en klientplats genom att multiplicera antalet användare med den minsta bandbredd som krävs. Det är mycket svårt att beräkna samtidiga användningen av en viss plats. Använd en testversion av Talent för kunder som är bekymrade över bandbreddskraven av personal.
 
@@ -63,6 +66,5 @@ Du kan hämta en PDF-fil för de länder, regioner och språk som personal stöd
 > När användargränssnittet har lokaliserats till andra språk lagras alla användardata på det språk som det har angetts i. Du kan skapa e-postmeddelanden och mallar på andra språk, men data som t.ex. schemaläggningsinformation är bara tillgänglig på engelska för närvarande.
 
 Om du är en utvecklare som vill skapa lands- eller regionsspecifika anpassningar eller skapa en lösning för ett land eller en region som inte stöds av Microsoft, se [globaliseringsfunktionen.](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

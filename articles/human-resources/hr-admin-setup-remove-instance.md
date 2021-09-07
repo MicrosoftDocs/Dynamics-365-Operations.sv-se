@@ -1,8 +1,8 @@
 ---
 title: Ta bort en instans
-description: I det här artikel får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 08/07/2020
+description: I det här avsnittet får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 978bbbe9ecd57c8a80cfc0c17f1a3e2d8422482fddc1c4f2ea0bc8ac91d6615c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e32058280d0cb1eab436bc25bd29bc3e39fabc92
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740825"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393507"
 ---
 # <a name="remove-an-instance"></a>Ta bort en instans
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I det här artikel får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
+I detta ämne förklaras hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
 
 ## <a name="remove-a-test-drive-environment"></a>Ta bort en testkörningsmiljö
 
@@ -41,9 +41,9 @@ Den befintliga testkörningsmiljön tas bort. Om det tas bort kan du skaffa en n
 
 ## <a name="remove-a-production-environment"></a>Ta bort en produktionsmiljö
 
-Den här artikeln förutsätter att du har köpt Personal via en molnbaserad lösningsleverantör (CSP) eller ett arkitekturavtal för företag (EA). 
+Detta ämne förutsätter att du har köpt Personal via en molnbaserad lösningsleverantör (CSP) eller ett arkitekturavtal för företag (EA). 
 
-Eftersom en enda Personal-miljö ”ingår” i en enda Power Apps-miljö, finns det två alternativ att välja mellan. Det första alternativet innebär att ta bort hela Power Apps-miljön. Det andra alternativet innebär att endast Personal tas bort. Det första alternativet är att föredra när du har skapat en Power Apps-miljö uttryckligen i syfte att etablera Personal och du har precis börjat genomförandet eller du har inte några fastställda integrationer. Det andra alternativet är lämpligt om du har en fastställd Power Apps-miljö fylld med rich-data som utnyttjas i Power Apps och Power Automate.
+Eftersom en enda Personal-miljö ”ingår” i en enda Power Apps-miljö, finns det två alternativ att välja mellan. Det första alternativet innebär att ta bort hela Power Apps-miljön. Det andra alternativet innebär att endast Personal tas bort. Det första alternativet är att föredra när du har skapat en Power Apps-miljö uttryckligen i syfte att etablera Personal och du har precis börjat genomförandet eller du har inte några fastställda integreringer. Det andra alternativet är lämpligt om du har en fastställd Power Apps-miljö fylld med rich-data som utnyttjas i Power Apps och Power Automate.
 
 > [!Important]
 > Innan du tar bort Power Apps-miljön, se till att den inte används för integrering av rich-data utanför Personal omfattning. Observera även att de standardinställda Power Apps-miljöerna inte kan tas bort. 

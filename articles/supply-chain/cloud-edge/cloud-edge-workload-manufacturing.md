@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 958c7a8853e5ef0d7fb211225796d7808e4e7ae1afaf861cc6746157225c0dbb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 77e0a0e0eb47c331b2b219dc523ecd2c706a4638
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721473"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345309"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för tillverkningskörning för moln- och kantskalningsenheter
 
@@ -36,7 +36,7 @@ Vid tillverkningskörningen har skalningsenheter följande funktioner:
 - Maskinoperatörer och arbetsledare kan komma åt den operationella produktionsplanen.
 - Maskinoperatörer kan hålla planen aktuell genom att köra separata jobb för bearbetning och processtillverkning.
 - Arbetsledaren kan justera driftsplanen.
-- Arbetare kan få åtkomst till tid och närvaro för in- och utstämpling "on the edge" - i utkanten av nätverket istället för som annars centralt - för att säkerställa korrekt löneberäkning för arbetare.
+- Arbetare kan få åtkomst till tid och närvaro för in- och utstämpling "on the edge" - i utkanten av nätverket istället för som annars centralt - för att säkerställa korrekt löneberäkning för medarbetare.
 
 I det här avsnittet beskrivs hur arbetsbelastningar för tillverkningskörning fungerar med moln och kantskalningsenheter.
 
@@ -44,17 +44,17 @@ I det här avsnittet beskrivs hur arbetsbelastningar för tillverkningskörning 
 
 Som visas i bilden nedan är tillverkningslivscykeln uppdelad i tre faser: *planera*, *utföra* och *slutföra*.
 
-[![Tillverkningskörningsfaser när en enda miljö används](media/mes-phases.png "Tillverkningskörningsfaser när en enda miljö används."](media/mes-phases-large.png)
+[![Tillverkningskörningsfaser när en enskild miljö används](media/mes-phases.png "Tillverkningskörningsfaser när en enskild miljö används.")](media/mes-phases-large.png)
 
 _Planeringsfasen_ omfattar produktdefinition, planering, skapande och tidsplanering av order och frisläppning. Frisläppningssteget visar över gången från _planeringsfasen_ till _körningsfasen_. När en tillverkningsorder frisläpps visas produktionsorderjobben på produktionsvåningen och är klara för körning.
 
-När ett produktionsjobb markeras som slutfört flyttas det från _körningsfasen_ till _avslutningsfasen_. I _Avslutningsfasen_ går registreringar från *Körningsfasen* går igenom ett godkännandearbetsflöde där de beräknas, godkänns och överförs. Vid den tidpunkten slutförs tillverkningsordern. Underlaget för arbetarens lön genereras därför.
+När ett produktionsjobb markeras som slutfört flyttas det från _körningsfasen_ till _avslutningsfasen_. I _Avslutningsfasen_ går registreringar från *Körningsfasen* går igenom ett godkännandearbetsflöde där de beräknas, godkänns och överförs. Vid den tidpunkten slutförs tillverkningsordern. Underlaget för medarbetarens lön genereras därför.
 
 ## <a name="splitting-the-execute-phase-into-a-separate-workload"></a>Dela körningsfasen i en separat arbetsbelastning
 
 Som följande bild visar, när skalenheter används delas _körningsfasen_ ut som separat arbetsbelastning.
 
-[![Tillverkningskörningsfaser när skalningsenheter används](media/mes-phases-workloads.png "Tillverkningskörningsfaser när skalningsenheter används."](media/mes-phases-workloads-large.png)
+[![Produktionskörningsfaser när skalenheter används](media/mes-phases-workloads.png "Tillverkningskörningsfaser när skalenheter används.")](media/mes-phases-workloads-large.png)
 
 Modellen hämtas nu från en installation med enkel instans till en modell som baseras på navet och skalenheten. _Planeringsfasen_ och _avslutningsfasen_ körs som backoffice-operationer på navet och arbetsbelastningen för tillverkningskörning körs på skalenheterna. Data överförs asynkront mellan nav och skalenhet.
 

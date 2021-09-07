@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4811c65a32e27668d1247086d962366eb8369d5e9fe28a105e1d6a020bca325d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd55d433b0961b8b210b9c28d7340ff880635a85
+ms.sourcegitcommit: 3af457fc216bd0020843291ca57fd379acb53c96
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737759"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7392484"
 ---
 # <a name="associate-fixed-assets-with-leases"></a>Associera anläggningstillgångar med leasingar
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ämnet förklarar hur du associerar en befintlig anläggningstillgång med en ny leasing. När du associerar en anläggningstillgång med en leasing blir ROU-tillgångsvärdet vid det första redovisningstillfället anskaffningskostnaden för anläggningstillgången.
 
@@ -49,8 +50,18 @@ När du har bokfört den första redovisningsjournalposten visas transaktionen s
 
 Anläggningstillgången kan nu skrivas av med hjälp av standardavskrivningsfunktionen i Anläggningstillgångar. Mer information finns om avskrivning finns i [Avskrivningsmetoder och avskrivningspraxis](../fixed-assets/depreciation-methods-conventions.md).
 
+När ett leasingavtal associeras med en anläggningstillgång uppdateras fältet **Tjänstelivslängd** i anläggningstillgångsboken så att det anpassas till det minsta värdet utifrån följande kriterier: 
+
+ - Tillgångens livslängd
+ - Leasingavtalet från den kopplade leasingboken
+
+Om fältet **Överföring av ägarskap** anges som **Ja** för leasingboken kommer värdet i fältet **Tjänstelivslängd** alltid att vara tillgångens livslängd. 
+ 
+Tjänstelivslängden uppdateras varje gång leasingavtalet justeras i syfte att säkerställa att tillgången med nyttjanderätt skrivs av över leasingavtalets varaktighet på samma sätt som om den hade avskrivits i Tillgångsleasing.
+
 > [!NOTE]
 > Om du associerar en anläggningstillgång med en leasing inaktiveras knapparna **Avskrivning av tillgång** och **Leasingnedskrivning** i Leasing av tillgångar. Du kan visa tillgångsavskrivningar och transaktioner för leasingnedskrivning från Anläggningstillgångar. Knappen **Transaktioner för tillgångar**, som öppnar ett frågeformulär inaktiveras också. Du kan också öppna föreformuläret **Transaktioner för tillgångar** i Anläggningstillgångar.  
 
+På sidorna **Anläggningstillgångar** och **Anläggningstillgångsbok** visas det leasing-ID som är associerat med en anläggningstillgång. Om en anläggningstillgång associeras med ett leasingavtal visas leasing-ID och leasingbeskrivning på snabbfliken **Leasinginformation** på sidan **Anläggningstillgångar**. För anläggningstillgångsböcker som är kopplade till leasingböcker visar fälten **Leasing- ID**, **Leasingbeskrivning** och **Boktyp** information om den valda anläggningstillgångsboken på snabbfliken **Leasinginformation** i syfte att ange att den är associerad med en leasingbok.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 3040406af731e2e35fff456804f893108e7eb896bfa0132082986c09ad128952
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b75dcb7d56648f3be291cb1c09ec57a53477ec0
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777681"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344184"
 ---
 # <a name="wave-label-printing"></a>Utskrift av påfyllnadsetikett
 
 [!include [banner](../includes/banner.md)]
 
-Utskrift av påfyllnadsetikett ger en alternativ metod för att skriva ut etiketter genom att introducera en ny påfyllnadsmetod som gör att du kan skapa och skriva ut etiketter direkt från påfyllnadsmallen under påfyllnadskörningen. Därför är etiketterna redan tillgängliga innan arbetare kör arbetsordern på en mobil enhet. Arbetare kan sedan koppla de begärda etiketterna under plockning i stället för efter plockning.
+Utskrift av påfyllnadsetikett ger en alternativ metod för att skriva ut etiketter genom att introducera en ny påfyllnadsmetod som gör att du kan skapa och skriva ut etiketter direkt från påfyllnadsmallen under påfyllnadskörningen. Därför är etiketterna redan tillgängliga innan medarbetare kör arbetsordern på en mobil enhet. Arbetare kan sedan koppla de begärda etiketterna under plockning i stället för efter plockning.
 
 Utskrift av påfyllnadsetikett använder zebraprogrammeringspråket (ZPL) när du skapar etikettlayout. En etikettlayout är uppdelad i tre avsnitt (rubrik, brödtext och sidfot) som tillåter etiketter som har en upprepande struktur. Mallar för etikettutskrift anger du vilket system som etikettexten ska använda. Användare kan ange vilken skrivare som ska användas. De kan också skriva ut etiketter på flera skrivare samtidigt, eftersom de kräver det. Sidan **påfyllnadsetiketthistoriken** visar en post över alla etiketter som har skapats med hjälp av den här inställningen.
 
@@ -506,7 +506,7 @@ Du kan skriva ut dessa påfyllnadsetiketter igen genom att gå till **Warehouse 
 
 ## <a name="scenario-3-wave-label-printing-for-multi-tiered-labels"></a>Scenario 3: utskrift av påfyllnadsetikett för etiketter med flera nivåer
 
-Det här scenariot visar hur du använder funktionen utskrift av påfyllnadsetikett när lagerprocesserna kräver flera nivåer för leveransetiketter. Till exempel kan separata etiketter behöva skrivas ut för kartonger och lastpallar, och en avbrottsetikett måste skrivas ut för en hel leverans. Avbrottsetiketter är en separat typ av etikett som kan användas som avgränsare mellan rullar och behållare, t.ex. etiketter för leverans-ID och en streckkod, så att etiketterna enkelt kan sorteras när de har skrivits ut.
+Det här scenariot visar hur du använder funktionen utskrift av påfyllnadsetikett när lagerprocesserna kräver flera nivåer för leveransetiketter. Till exempel kan separata etiketter behöva skrivas ut för kartonger och lastpallar, och en avbrottsetikett måste skrivas ut för en hel leverans. Avbrottsetiketter är en separat typ av etikett som kan användas som avgränsare mellan rullar och behållare, t. ex. etiketter för leverans-ID och en streckkod, så att etiketterna enkelt kan sorteras när de har skrivits ut.
 
 Den huvudsakliga skillnaden mellan konfigurationen av scenariot och konfigurationen av scenario 1, förutom att bryta etiketter är aktiverade, är att flera typer av påfyllnadetiketter måste associeras med påfyllnadsetikettmallen och enhetssekvensgruppraderna. För att kunna utföra den här konfigurationen ställer du in följande element för det här scenariot:
 

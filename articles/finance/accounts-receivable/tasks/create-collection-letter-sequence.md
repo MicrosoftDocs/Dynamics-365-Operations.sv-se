@@ -1,6 +1,6 @@
 ---
 title: Skapa in en kravbrevsserie
-description: Använd den här uppgifthandbok om du vill skapa ett kravbrev sekvens.
+description: Använd den här proceduren när du vill skapa en kravbrevsserie.
 author: mikefalkner
 ms.date: 07/22/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 64d23d0875c5bb93ebe54fd40367f89574da87c72e90daab25a8828ec2158abb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b3062390da10f344c354cd2cc5cd7fb73623570
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740084"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394692"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Skapa in en kravbrevsserie
 
 [!include [banner](../../includes/banner.md)]
 
-Använd den här uppgifthandbok om du vill skapa ett kravbrev sekvens. I den här uppgiften används demonstrationsföretaget USMF.
+Använd den här proceduren när du vill skapa en kravbrevsserie. I den här uppgiften används demonstrationsföretaget USMF.
 
 1. I navigeringsfönstret, gå till **Moduler > Kredit och inkasso > Inställningar > Ställ in kravbrevsserier**.
 2. Klicka på **Ny**.

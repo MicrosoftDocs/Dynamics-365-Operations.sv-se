@@ -2,7 +2,7 @@
 title: Sparade vyer
 description: I det här avsnittet beskrivs hur du använder funktionerna för sparade vyer.
 author: jasongre
-ms.date: 05/17/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: dd658aeb8964907fe9f950fe2a6474c5df7e80b74986ddf332286a2f89bc0aeb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9cca56a108177520f4aebea03f7f4d776f46fa3f
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752311"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344354"
 ---
 # <a name="saved-views"></a>Sparade vyer
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 ## <a name="introduction"></a>Introduktion
 
@@ -48,6 +48,8 @@ Det finns två storleksvariationer i vyväljaren:
  
 Om du väljer vyns namn öppnas vyväljaren och visar listan över tillgängliga vyer för den här sidan.
 
+**Version 10.0.21 eller senare:** Om funktionen **Förbättrat juridiskt personstöd för sparade vyer** aktiveras, visar visningsväljaren de tillgängliga vyerna i två avsnitt. I det första avsnittet visas alla vyer som är specifika för den aktuella juridiska personen, och det andra avsnittet innehåller vyer som är tillgängliga för alla juridiska personer. Det första avsnittet visas bara om det finns vyer specifika för juridiska personer för sidan.
+
 - **Standardvy** – Vyn **Standard** är sidans färdigkonfigurerade vy utan några uttryckliga anpassningar som används.
 - **Personliga vyer** – vyerna utan hänglås representerar dina personliga vyer. Detta är vyer som du har skapat eller som en administratör har gett dig.
 - **Låsta vyer** – vissa vyer (t.ex. vyn **Standard** och alla vyer som publiceras till din roll) har symbolen för hänglås intill dem i vyväljaren. Den här symbolen visar att du inte kan redigera dessa vyer. Ändringar som återspeglar sid användningen sparas dock automatiskt. Dessa ändringar inkluderar ändringar av bredden på en rutnätskolumn och ändringar i det expanderade eller komprimerade tillståndet för en snabbflik. Du kan dock använda åtgärden **Spara som** för att göra en personlig vy baserat på en låst vy om du har anpassningsprivilegier.
@@ -68,15 +70,18 @@ Om du vill spara ändringarna följer du stegen nedan.
 3. För att skapa en ny vy:
 
     1. Välj **Spara som**. 
-    2. Ange ett vynamn och en beskrivning (tillval).
-    3. Välj **Spara**.
+    2. I fönstret **Spara vy som** anger du ett namn och (valfritt) en beskrivning för vyn.
+    3. Om du vill att denna vy ska utgöra standardvyn väljer du **Fäst som standard**. Mer information om standardvyer finns i avsnittet [Ändra standardvy](#changing-the-default-view) som följer. 
+    4. **Version 10.0.21 eller senare:** Om funktionen **Förbättrad juridisk personsupport för sparade vyer** har aktiverats kan du välja huruvida du vill att denna vy ska bli tillgängliga för samtliga juridiska entiteter eller bara en del av dem.
+    5. Välj **Spara**.
 
 ## <a name="changing-the-default-view"></a>Ändra standardvyn
 
 Standardvyn är den vy som systemet kommer att försöka öppna första gången du öppnar sidan. Du bör ställa in standardvyn till den vy som du förväntar dig att använda oftast. 
 
 > [!NOTE]
-> Det finns en enkel, global standardvy över företag. Om du ändrar standardvyn kommer den här vyn att öppnas som standard, oavsett vilken juridisk enhet du befinner dig i. 
+> - I basfunktionen **Sparade vyer** finns en enda, global standardvy för juridiska personer. Om du ändrar standardvyn kommer den här vyn att öppnas som standard, oavsett vilken juridisk enhet du befinner dig i.
+> - **Version 10.0.21 eller senare:** När funktionen **Förbättrad juridisk personsupport för sparade vyer har aktiverats** kan varje juridisk person få en egen standardvy per sida.
 
 Om du vill ändra standardvyn för en sida ska du följa de här stegen:
 
@@ -86,20 +91,23 @@ Om du vill ändra standardvyn för en sida ska du följa de här stegen:
 
 När du skapar en ny vy (med hjälp av åtgärden **Spara som**), kan du också göra den nya vyn till standardvy genom att ange alternativet **fäst som standard** innan du sparar vyn.
 
-Observera att i vissa fall körs inte frågan som är kopplad till standardvyn första gången du öppnar en sida. Om du till exempel öppnarsidan genom en panel, körs panelens fråga oavsett vilken fråga som är kopplad till standardvyn. Dessutom, om du öppnar en sida vars **standard** vy redan har en definierad fråga kommer den ursprungliga frågan att köras i stället för standardvyfrågan. I det här fallet visas ett informationsmeddelande när vyn läses in. Om du byter vy när sidan har lästs in ska frågan kunna köras som förväntat. I version 10.0.10 och senare kommer informationsmeddelandet du får att innehålla en inbäddad åtgärd som tillåter att du läser in standardvisningens fråga direkt.
+> [!WARNING]
+> I vissa fall körs inte frågan som är kopplad till standardvyn första gången du öppnar en sida. Om du till exempel öppnarsidan genom en panel, körs panelens fråga oavsett vilken fråga som är kopplad till standardvyn. Om du öppnar en sida vars **standardvy** redan har en definierad fråga kommer den ursprungliga frågan dessutom att köras i stället för standardvyfrågan. I det här fallet visas ett informationsmeddelande när vyn läses in. Om du byter vy när sidan har lästs in ska frågan kunna köras som förväntat. I version 10.0.10 och senare kommer informationsmeddelandet du får att innehålla en inbäddad åtgärd som tillåter att du läser in standardvisningens fråga direkt.
 
 ## <a name="managing-personal-views"></a>Hantera personliga vyer
 
 I dialogrutan **Hantera mina vyer** får du grundläggande underhållsfunktioner för dina personliga vyer och ordningen på vyer i vyväljaren. Du öppnar den här sidan genom att klicka på vyns namn för att öppna vyväljarens listruta, välj **Mer** och välj sedan **hantera mina vyer**.
 
+**Version 10.0.21 eller senare:** Om funktionen **Förbättrat juridiskt personsupport för sparade vyer** är aktivera visar avsnittet **Mina vyer** i dialogrutan **Hantera mina vyer** tillgängliga vyer för sidan i avsnitt. Alla vyer som är specifika för den aktuella juridiska personen visas i egna avsnitt. Avsnittet **Globala vyer** visas alltid, så att du kan hantera de vyer som är tillgängliga för sidan i alla juridiska personer. 
+
 För en lista med tillgängliga vyer för sidan är följande åtgärder tillgängliga.
 
-- **Ändra standardvyn** – Använd åtgärden **Fäst som standard** för att göra den valda vyn till standardvy för den här sidan.
+- **Ändra standardvyn** – Använd åtgärden **Fäst som standard** för att göra den valda vyn till standardvy för den här sidan. Om funktionen **Importera juridisk personsupport för sparade vyer** är aktiverad låter avsnittet **Globala vyer** dig göra en vy till standardvy för antingen aktuell juridisk person eller alla juridiska personer.
 - **Ändra ordning på vyerna** – Använd åtgärderna **flytta upp** och **flytta ned** om du vill ordna om vyerna i en viss ordning.
 - **Byt namn på en vy** – Använd åtgärden **Byt namn** om du vill ändra namnet på den personliga vy som för närvarande är vald. Den här åtgärden är inaktiverad för låsta vyer. 
 - **Ta bort en vy** – Använd åtgärden **Ta bort** om du vill ta bort den valda vyn från sidan permanent. Det finns inget sätt att återställa en vy när du har tagit bort den.
 
-Ändringar som görs i den här dialogrutan börjar gälla när du har valt knappen **Spara**.
+Ändringar som görs i den här dialogrutan börjar gälla när du har valt knappen **Uppdatera**.
 
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Hantera anpassningar på organisationsnivå med vyer
 
@@ -128,24 +136,28 @@ Gör så här om du vill publicera en vy:
 6. Bestämmer om vyn ska publiceras som standardvy för de valda användarna. När en vy görs till standardvy kommer användarna kommer att se nästa gång de öppnar målsidan. Den enkla, globala standardvyn för varje målanvändare kommer att ändras. Användare kan dock fortfarande ändra standardvyn när publicering har skett.
 
     > [!NOTE]
-    > Tänk på följande när du publicerar en vy som standardvy: 
-    > -  Om du publicerar en vy som standardvy till alla eller vissa juridiska personer ändrar du den enkla, **globala** standardvyn för varje målanvändare. 
-    > -  Om en användare har roller där flera vyer publiceras som standardvy, används den senast publicerade vyn som användarens standardvy. 
+    > Tänk på följande när du publicerar en vy som standardvy:
+    >
+    > - Om du publicerar en vy som standardvy för vissa eller alla juridiska personer sker följande beteende:
+    >
+    >    - Om endast funktionen **Sparade vyer** är aktiverad ändras den enskilda globala standardvyn för alla målanvändare. 
+    >    - **Version 10.0.21 eller senare:** Om funktionen **Förbättrat juridiskt personstöd för sparade vyer** har aktiverats och du publicerar vyn till en delmängd av juridiska personer, ändras standardvyn för dessa juridiska personer för alla målanvändare.
+    >
+    > - Om en användare har roller där flera vyer publiceras som standardvy, används den senast publicerade vyn som användarens standardvy. 
 
 8. Lägg till de säkerhetsroller som motsvarar de användare som inriktas mot denna vy. 
 9. Bestäm om du vill publicera vyn till de underordnade rollerna för varje vald säkerhetsroll. Om du gör det, markerar du kryssrutan **Inkludera underordnade roller** i raden för lämpliga säkerhetsroller. Observera att den här kryssrutan inte är tillgänglig för roller som saknar underordnade roller.
 10. Lägg till de juridiska personer som den här vyn ska vara tillgänglig för. 
 
     > [!NOTE]
-    > Tänk på följande förväntningar när du publicerar en vy för en juridisk person.
-    > 
-    > Om du publicerar en vy till en juridisk person, men inte publicerar den som standardvy, visas användarna först i vyn väljaren för de juridiska personer som anges. När vyn har lästs in för första gången kommer den emellertid alltid att finnas i användarens visnings väljare för den sidan, oavsett vilken juridisk person de tillhör.
+    > Tänk på följande beteende om du publicerar en vy till en specifik juridisk person, men du publicerar inte den vyn som standardvy:
+    >
+    > - Om endast basfunktionen **Sparade vyer** har aktiverats visar användarens visningsväljare för sidan till en början vyn endast för angivna juridiska personer. När vyn har lästs in för första gången kommer visningsväljaren för sidan emellertid alltid att visa den, oavsett juridisk person.
+    > - **Version 10.0.21 eller senare:** Om funktionen **Förbättrat juridiskt personstöd för sparade vyer** aktiveras, visar visningsväljaren vyn enbart för angivna juridiska personer.
 
 11. Markera **Publicera**.
 
 Observera att i vissa miljöer kan det ta en stund (upp till en timme) innan användarna ser den publicerade vyn.
-
- 
 
 ## <a name="modifying-a-published-view"></a>Ändra en publicerad vy
 
@@ -193,6 +205,7 @@ För en lista med alla publicerade vyer för sidan är följande åtgärder till
 Användare som har åtkomst till sidan **anpassning** kan också importera personliga eller organisationsvyer genom att använda knappen **Importera vyer** i åtgärdsfönstret. För organisationsvyer kan du välja **Publicera omedelbart** om du vill göra vyerna tillgängliga för användarna utan att publicera fler explicit.
 
 ## <a name="known-issues"></a>Kända problem
+
 En lista med kända problem med sparade vyer finns i [skapa formulär som utnyttjar sparade vyer fullt ut](../../dev-itpro/user-interface/understanding-saved-views.md).
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor
@@ -232,5 +245,11 @@ För sidor med stora visningsväljare (anpassningar och frågor kan sparas i vyn
 - Om du navigerar från en panel till en sida, körs frågan oavsett vilken fråga som är kopplad till standardvyn. Om du har skapat den panelen efter att vyer har aktiverats öppnas sidan med den vy som är kopplad till den panelen.
 - Om du navigerar till en sida och den startpunkten inkluderar en fråga kommer den ursprungliga frågan att köras ursprungligen i stället för standardvyfrågan. Du bör varnas när detta sker via via ett informationsmeddelande visas när vyn läses in. Du kan också bekräfta genom att växla till den här vyn efter att sidan har lästs in, eftersom det gör att vyfrågan körs oavsett.
 
+### <a name="why-is-a-view-that-was-published-for-a-specific-legal-entity-visible-in-all-legal-entities"></a>Varför visas en vy som publiceras för en specifik juridisk person i alla juridiska personer?
+
+Om du publicerar en vy till en specifik juridisk person men inte publicerar den vyn som standardvy, sker följande:
+
+- Om endast basfunktionen **Sparade vyer** har aktiverats visar användarens visningsväljare för sidan till en början vyn endast för angivna juridiska personer. När vyn har lästs in för första gången kommer visningsväljaren för sidan emellertid alltid att visa den, oavsett juridisk person. Beteendet inträffar eftersom användarna får en egen kopia av den publicerade vyn när den läses in, och personliga vyer är globala.
+- **Version 10.0.21 eller senare:** Om funktionen **Förbättrat juridiskt personstöd för sparade vyer** aktiveras, visar visningsväljaren vyn enbart för angivna juridiska personer. Detta beteende inträffar eftersom funktionen gör det möjligt att länka vyer (inklusive personliga vyer) till specifika juridiska personer.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

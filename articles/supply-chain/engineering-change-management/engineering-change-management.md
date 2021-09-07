@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 55952a9b1c25b806ee4a21ef1982c5b15a41adeb9c9bfdf2fccb8c9da242ffdb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb6fd57f200b101cb2df396cb10417feaa9425c1
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714340"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384595"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Hantera ändringar av konstruktionsprodukter
 
@@ -113,16 +113,16 @@ Granska berörda transaktioner, blockera valda transaktioner och skicka relatera
     - **Visa transaktion** – Öppna den valda transaktionsposten.
     - **Spärra order** – Den här knappen är endast tillgänglig på fliken **Försäljningsorder**. Markera den om du vill spärra den valda försäljningsordern.
     - **Spärra rad** – Den här knappen är endast tillgänglig på fliken **Inköpsorder**. Markera den om du vill spärra den valda inköpsorderraden.
-    - **Meddela ansvarig** – Den här knappen är endast tillgänglig på fliken **Försäljningsorder**. Välj den om du vill skicka ett ändringsmeddelande till användaren som anges som ansvarig för den valda försäljningsordern.
-    - **Meddela beställare** – Den här knappen är endast tillgänglig på fliken **Inköpsorder**. Välj den om du vill skicka ett ändringsmeddelande till användaren som anges som beställare för den valda inköpsordern.
-    - **Meddela produktion** – Den här knappen är endast tillgänglig på fliken **Produktionsorder**. Till skillnad från försäljningsorder och inköpsorder har produktionsorder inte en enda användare som ställs som ansvarig för dem från fram och tillbaka. Istället tar olika arbetsledare eller planerare vanligtvis ansvar för en viss resursplats eller för en viss del av produktionen (till exempel för specifika resurser eller resursgrupper). När du väljer den här knappen får därför alla användare som ansvarar för alla resurser som är relaterade till den valda tillverkningsordern ett ändringsmeddelande.
-    - **Meddela förberedare** – Den här knappen är endast tillgänglig på fliken **inköpsrekvisition**. Välj den om du vill skicka ett ändringsmeddelande till användaren som anges som förberedare för den valda inköpsrekvisitionen.
-    - **Meddela försäljningsansvarig** – Den här knappen är endast tillgänglig på fliken **Offerter**. Välj den om du vill skicka ett ändringsmeddelande till användaren som anges som ansvarig för den valda offerten.
+    - **Meddela ansvarig** – Den här knappen är endast tillgänglig på fliken **Försäljningsorder**. Välj den om du vill skicka ett ändringsmeddelande till användaren som anges som ansvarig för den valda försäljningsordern. Mer information om vem som kan visa meddelanden och hur finns i [Granska och bearbeta ändringsmeddelanden för transaktioner](#review-notifications).
+    - **Meddela beställare** – Den här knappen är endast tillgänglig på fliken **Inköpsorder**. Välj den om du vill skicka ett ändringsmeddelande till användaren som anges som beställare för den valda inköpsordern. Mer information om vem som kan visa meddelanden och hur finns i [Granska och bearbeta ändringsmeddelanden för transaktioner](#review-notifications).
+    - **Meddela produktion** – Den här knappen är endast tillgänglig på fliken **Produktionsorder**. Till skillnad från försäljningsorder och inköpsorder har produktionsorder inte en enda användare som ställs som ansvarig för dem från fram och tillbaka. Istället tar olika arbetsledare eller planerare vanligtvis ansvar för en viss resursplats eller för en viss del av produktionen (till exempel för specifika resurser eller resursgrupper). När du väljer den här knappen får därför alla användare som ansvarar för alla resurser som är relaterade till den valda tillverkningsordern ett ändringsmeddelande. Mer information om vem som kan visa meddelanden och hur finns i [Granska och bearbeta ändringsmeddelanden för transaktioner](#review-notifications).
+    - **Meddela förberedare** – Den här knappen är endast tillgänglig på fliken **inköpsrekvisition**. Välj den om du vill skicka ett ändringsmeddelande till användaren som anges som förberedare för den valda inköpsrekvisitionen. Mer information om vem som kan visa meddelanden och hur finns i [Granska och bearbeta ändringsmeddelanden för transaktioner](#review-notifications).
+    - **Meddela försäljningsansvarig** – Den här knappen är endast tillgänglig på fliken **Offerter**. Välj den om du vill skicka ett ändringsmeddelande till användaren som anges som ansvarig för den valda offerten. Mer information om vem som kan visa meddelanden och hur finns i [Granska och bearbeta ändringsmeddelanden för transaktioner](#review-notifications).
     - **Kassation** – Den här knappen är endast tillgänglig på fliken **Lager**. Välj den om du vill kassera det valda lagret.
     - **Visa historik** – Öppna en historik över åtgärder som har genomförts på den valda transaktionen genom att använda dialogrutan **Affärspåverkan till öppna transaktioner**. (Historiken visar till exempel om meddelanden har skickats eller om transaktioner har spärrats.) 
     - **Visa alla transaktioner** – Öppna den fullständiga listan över alla transaktioner, inte bara de öppna transaktionerna.
 
-#### <a name="review-and-process-change-notifications-for-transactions"></a>Granska och bearbeta meddelanden för transaktioner
+#### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Granska och bearbeta meddelanden för transaktioner
 
 Du kan läsa och bearbeta de ändringsmeddelanden som du får på följande sätt:
 

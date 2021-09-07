@@ -1,5 +1,5 @@
 ---
-title: Stöd för kanban-överföringstavla för streckkodsskanner
+title: Stöd för kanban-överföringstavla för streckkodsskannrar
 description: Kanban-överföringstavlan stöder skannerindata från en widgetstreckkodsskanner för att välja, starta, slutföra och tömma ett kanban-jobb.
 author: ChristianRytt
 ms.date: 06/20/2017
@@ -16,14 +16,14 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 973c9f4c6960d5e263ee06bd665c94f770696d0dd5a7cdfad8471687054d57f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1316c4f77cabf0184ec01b64d0c6a86830e2675d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736026"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343952"
 ---
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Stöd för kanban-överföringstavla för streckkodsskanner
+# <a name="kanban-transfer-board-support-for-bar-code-scanners"></a>Stöd för kanban-överföringstavla för streckkodsskannrar
 
 [!include [banner](../includes/banner.md)]
 

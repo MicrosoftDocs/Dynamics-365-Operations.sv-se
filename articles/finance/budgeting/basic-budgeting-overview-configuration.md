@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f2144d2ca9b2f5e06f0a21f6f97b7ca6440ffe8ce300bdbf329279505059459
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 849b1202ea2c0080f5fc5bacba1f95180fc4008a
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720608"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343666"
 ---
 # <a name="budgeting-overview"></a>Budgetöversikt
 
@@ -38,7 +38,7 @@ Det finns flera metoder för att skapa budget registrera poster:
 
 -   Ange information om **budgeten registrera poster** sida.
 -   Använd Microsoft Excel mallen som du kan öppna genom att klicka på knappen **Öppna i Excel** på sidan **Budgetregisterposter**.
--   Använd **Budgetkonto poster** data i Data Management (Datahantering) för att importera poster i registret. Du bör överväga att använda denna metod och att aktivera parameterns **Uppsättningsbaserad** **bearbetningsparameter** när du måste importera budgetkontoposter i systemet.
+-   Använd **Budgetkonto poster** data i Data Management (Datahantering) för att importera poster i registret. Du bör överväga att använda denna metod och att aktivera parametern **Uppsättningsbaserad bearbetning** när du måste importera många budgetkontoposter i systemet.
 -   Om företaget använder Budget planeringsfunktionen för att förbereda budgeten data, kan du använda funktionen **Generera budget registret** regelbundet återkommande process.
 
 Budgetregisterposten anses slutförd när budgetsaldona har uppdaterats. På sidan **Budgetregisterposter** klickar du på **Uppdatera budgetsaldon** för en vald budgetregisterpost eller flera poster. När du uppdaterar budgetsaldon, budgetens status registret ändras till **Avslutad**. Klar budget registret kan inte öppnas för redigering. Därför, om budget data måste justeras, måste du skapa en ny budget registret i stället för att korrigera data i den färdiga budgeten registret.

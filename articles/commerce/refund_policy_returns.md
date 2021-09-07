@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 5c32156aea5f43d41b51f34b45b5b6dfedb5cad0f948924ecea9b3d89e6bb402
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4346f9eefa04688c80ce2512a7972bfd4627942c
+ms.sourcegitcommit: 53fad4d4b5fb67aa75550956ec205f456a5be01d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763703"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7388943"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Skapa och uppdatera en retur- och återbetalningspolicy för en kanal
 
@@ -42,15 +42,6 @@ För att aktivera funktionen returpolicy för kanal i Commerce-administration, f
 1. Sök efter funktionen **aktivera kanal returprinciper** i listan med funktionsnamn.
 1. Välj **Aktivera nu**.
 1. På sidan **Distributionsschema** kör du jobbet **1110** (global konfiguration) för att distribuera funktionsändringen.
-
-## <a name="initialize-the-commerce-scheduler"></a>Initiera schemaläggare för Commerce
-
-När du har aktiverar funktionen **aktivera kanal returprinciper** måste du initiera Commerce -schemaläggaren för att säkerställa att nya funktionsdatabasändringar läggs till via Commerce Data Exchange (CDX) synkronisering. 
-
-Följ dessa steg för att initiera Commerce-schemaläggare i Commerce-administrationen.
-
-- Gå till **Butik och handel \> Administrationsinställning \> Schemaläggare för handel \> Initiiera schemaläggare för handel**. Du kan också söka efter "initiera schemaläggare för Commerce".
-- I dialogrutan **Initiera schemaläggare för handel** se till att alternativet **ta bort befintligt konfiguration** anges till **nej** och klicka sedan på **OK**.
 
 ## <a name="configure-return-policy"></a>Konfigurera returpolicy
 

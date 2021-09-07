@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: c1930a47bc133c411a0e6054aa766322a261064a06ac4cec8dcdd12c126dc7cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 74720e387d5db7de841228e6573fb40c5d22588b
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773547"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384669"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.19 (juni 2021)
 
@@ -41,7 +41,7 @@ De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fi
 | Lager och logistik | [Sökfunktion för dokumentintroduktion och fält för dokumentsammanfattning på sidan dör försäljningsoffert](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Den här funktionen lägger till sökfunktionalitet för fälten **dokumentintroduktion** och **dokumentsammanfattning** på sidan **försäljningsoffert**.<br><br>Den här funktionen aktiveras som standard. |
 | Lager och logistik | [Lagerställekörning med kantskalningsenheter på din anpassade maskinvara](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [Distribuera kantskalningsenheter på anpassad maskinvara med HJÄLP LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
 | Tillverkning | [Tillverkningskörning med kantskalningsenheter på din anpassade maskinvara](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Distribuera kantskalenheter på anpassad maskinvara med hjälp av LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Planering | [Planering av oändlig kapacitet för planeringsoptimering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | Med denna funktion möjliggörs kapacitetsplanering med oändlig kapacitet för planeringsoptimering. Om den här funktionen inte har den här funktionen får planerade tillverkningsorder sin produktionstid från produktionstiden för de frisläppta produkterna, oavsett tidsgränsen för tidsplaneringen. |
+| Planering | [Planering av oändlig kapacitet för planeringsoptimering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Tidsplanering med obegränsad kapacitet](../master-planning/planning-optimization/infinite-capacity-planning.md) |
 | Planering | Frågebaserad planerad order som bekräftar | [Bekräfta planerade order](../master-planning/planning-optimization/planned-order-firming.md) |
 | Produktinformationshantering | [Förbättringar av sidan med variantförslag](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Skapa fördefinierade produktvarianter](../pim/tasks/create-predefined-product-variants.md) |
 

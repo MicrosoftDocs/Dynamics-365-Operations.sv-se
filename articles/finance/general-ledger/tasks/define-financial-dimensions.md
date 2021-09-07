@@ -1,6 +1,6 @@
 ---
 title: Definiera ekonomiska dimensioner
-description: Den här uppgiften vägleder dig genom stegen för att skapa en enhetsbaserad ekonomisk dimension och en anpassad ekonomisk dimension.
+description: Denna procedur visar hur du lägger till en enhetsbaserad ekonomisk dimension och en anpassad ekonomisk dimension.
 author: aprilolson
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1786bd141259f7c1ef273b6e9975a15d6e431da98ed3c891cefe5c0c4584f1bf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ed6dad64032c03e638c2090471af825dd18560a1
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729616"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394472"
 ---
 # <a name="define-financial-dimensions"></a>Definiera ekonomiska dimensioner
 
 [!include [banner](../../includes/banner.md)]
 
-Den här uppgiften vägleder dig genom stegen för att skapa en enhetsbaserad ekonomisk dimension och en anpassad ekonomisk dimension.  Guiden använder demoföretaget USMF.
+Denna procedur visar hur du lägger till en enhetsbaserad ekonomisk dimension och en anpassad ekonomisk dimension.  Guiden använder demoföretaget USMF.
 
 
 ## <a name="create-an-entity-backed-financial-dimension"></a>Skapa en enhetsbaserad ekonomisk dimension

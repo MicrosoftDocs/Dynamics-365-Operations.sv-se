@@ -1,6 +1,6 @@
 ---
 title: Produktberedskap
-description: I det här avsnittet beskrivs hur du kan använda beredskapskontroller för att säkerställa att nödvändiga huvuddata har slutförts för en produkt innan de används i transaktioner.
+description: I detta ämne beskrivs hur du kan använda beredskapskontroller för att säkerställa att nödvändiga huvuddata har slutförts för en produkt innan de används i transaktioner.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8cbeba336438d5ad6365e26500ca8c53edd9fb829a30c075c34674b49cdf1946
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 96e2cf45296d937db9b136f1472374ae7254e10e
+ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723561"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7415331"
 ---
 # <a name="product-readiness"></a>Produktberedskap
 
 [!include [banner](../includes/banner.md)]
 
-Du kan använda beredskapskontroller för att säkerställa att alla nödvändiga huvuddata har specificerats för en produkt innan de används i transaktioner. När beredskapskontroller används blir en användare eller ett team ansvarigt för att validera specifika fördefinierade produktspecifika data. Om det finns en öppen beredskapskontroll för en produkt kan produkten inte frisläppas eller användas i transaktioner.
+Du kan använda beredskapskontroller för att säkerställa att alla nödvändiga huvuddata har specificerats för en produkt innan de används i transaktioner. När beredskapskontroller används blir en användare eller ett team ansvarigt för att validera specifika fördefinierade produktspecifika data. Om det finns en öppen beredskapskontroll för en produkt kan produkten inte användas i transaktioner.
 
-Kryssrutan **Aktiv** för en teknisk produkt, variant eller version är endast tillgänglig efter att alla nödvändiga data har angetts och verifierats och efter att alla beredskapskontroller har bearbetats. Vid den tidpunkten kan produkten, versionen eller varianten frisläppas till andra företag och användas i transaktioner. Du kan skapa beredskapskontroller för nya produkter, nya varianter och nya konstruktionsversioner.
+Kryssrutan **Aktiv** för en teknisk produkt, variant eller version är endast tillgänglig efter att alla nödvändiga data har angetts och verifierats och efter att alla beredskapskontroller har bearbetats. Vid den tidpunkten kan produkten, versionen eller varianten användas i transaktioner. Du kan skapa beredskapskontroller för nya produkter, nya varianter och nya konstruktionsversioner.
 
 Du kan också utföra kontroller av beredskapskontroller på standardprodukter (icke-tekniska). Mer information finns i avsnittet [Beredskapskontroller för standardprodukter](#standard-products) längre fram i det här avsnittet.
 

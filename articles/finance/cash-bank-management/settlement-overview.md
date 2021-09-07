@@ -1,8 +1,8 @@
 ---
 title: Kvittningsöversikt
 description: Det här ämnet innehåller allmän information om kvittningsprocessen. Den beskriver vilka transaktionstyper som kan kvittas samt tid och process för kvittning av dem. Här beskrivs även resultat av kvittningsprocessen.
-author: kweekley
-ms.date: 04/10/2020
+author: panolte
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 30a96b377d70c74a29e9e90699ccb077c727b20758378b5336660c6c056c6022
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b4a4fd0756a4516b0c14e136730d21d062a106a
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755700"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344821"
 ---
 # <a name="settlement-overview"></a>Kvittningsöversikt
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Det här ämnet innehåller allmän information om kvittningsprocessen. Den beskriver vilka transaktionstyper som kan kvittas samt tid och process för kvittning av dem. Här beskrivs även resultat av kvittningsprocessen.
 
@@ -74,9 +76,25 @@ Kvittningar kan även generera transaktioner. Till exempel kan kvittning av en f
 
 När du försöker kvitta en transaktion kan det hända att en symbol visas som anger att transaktionen har markerats på en annan plats. I detta fall kan du välja transaktionen på sidan **Kvitta transaktioner** och sedan välja **Fråga \> Kvittning i fönstret kvittning**. Vyn för den här frågan visar journaler, försäljningsorder, fakturor, betalningsförslag och kundplatser som eventuellt blockerar transaktionen från kvittning. Du kan lösa problemet genom att välja länken för att gå direkt från frågan till den spärrade platsen. Du kan sedan uppdatera dokumentet med de justeringar som krävs för kvittning. Du kan också använda indikatorn **Märkt** för att identifiera andra dokument som finns på samma blockeringsplats.
 
+## <a name="resolve-issues-with-transactions-that-cant-be-settled"></a>Lös utsproblem med transaktioner som inte kan kvittas
+
+Ibland kan du inte kvitta transaktioner eftersom en annan aktivitet bearbetar dokumentet. Om du försöker kvitta transaktionerna uppstår ett fel eftersom dessa transaktioner används. För att lösa problemet kan du använda sidan **Markerade transaktionsdetaljer** för att hitta transaktioner som märkts för kvittning och identifiera eventuella ytterligare processer med åtkomst till dessa.
+
+Transaktioner markeras för kvittning antingen när leverantörsfakturor betalas eller när kunder betalar sina öppna fakturor. Då och då kan dessa fakturor redan ha markerats för kvittning. Användarna kan därför inte välja dem för betalning. Fakturorna kan markeras av en annan kundbetalningsjournal, försäljningsorder, leverantörsbetalningsjournal eller inköpsorder i den aktuella juridiska personen eller någon annan juridisk person.
+
+Om en transaktion är spärrad för kvittning när du för in en kundbetalning öppnar du sidan **Kundmärkta transaktionsdetaljer** (**Kundreskontra \> Periodiska uppgifter \> Kundmärkta transaktionsdetaljer**). Om du snabbt vill identifiera var en transaktion har spärrats kan du ställa in någon av följande urvalsparametrar: **Kundkonto**, **Verifikation**, **Datum** eller **Faktura**. Om du inte ställer in några urvalsparametrar visar systemet alla spärrade dokument från det aktuella företaget eller något annat företag som du väljer. När transaktionen som har spärrats för kvittning har identifierats kan du markera den och sedan välja **Avmarkera valda transaktioner**. Den valda transaktionen tas då bort från alla journaler som inkluderar den. Dokumentet tas dock inte bort från den andra platsen. Endast markeringsinformationen tas bort från journalen.
+
+Om en transaktion är spärrad för kvittning när du för in en leverantörsbetalning öppnar du sidan **Leverantörsmärkta transaktionsdetaljer** (**Leverantörsreskontra \> Periodiska uppgifter \> Leverantörsmärkta transaktionsdetaljer**). Om du snabbt vill identifiera var en transaktion har spärrats kan du ställa in någon av följande urvalsparametrar: **Leverantörskonto**, **Verifikation**, **Datum** eller **Faktura**. Om du inte ställer in några urvalsparametrar visar systemet alla spärrade dokument från det aktuella företaget eller något annat företag som du väljer. När transaktionen har identifierats kan du markera den och sedan välja **Avmarkera valda transaktioner** för att åtgärda blockeringsproblemet. Den valda transaktionen tas då bort från alla journaler där den har valts. Dokumentet tas dock inte bort från den andra platsen. Endast markeringsinformationen tas bort från journalen.
+
+Om du vill identifiera alla spärrade dokument öppnar du sidan **Alla markerade transaktionsdetaljer** (**Kundreskontra \> Periodiska uppgifter \> Alla markerade transaktionsdetaljer** eller **Leverantörsreskontra \> Periodiska uppgifter \> Alla markerade transaktionsdetaljer**). Om du snabbt vill identifiera var en transaktion har spärrats kan du ställa in någon av följande urvalsparametrar: **Kundkonto**, **LEverantörskonto**, **Verifikation**, **Datum** eller **Faktura**. Om du inte ställer in några urvalsparametrar visar systemet alla spärrade dokument från det aktuella företaget eller något annat företag som du väljer. När transaktionen har identifierats kan du markera den och sedan välja **Avmarkera valda transaktioner** för att åtgärda blockeringsproblemet. Den valda transaktionen tas då bort från alla journaler där den har valts. Dokumentet tas dock inte bort från den andra platsen. Endast markeringsinformationen tas bort från journalen.
+
+Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda arbetsytan **funktionshantering** för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
+
+- **Modul:** Kassa- och bankhantering
+- **Funktionsnamn:** Formuläret Markerade transaktionsdetaljer
+
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Kvitta rest](settle-remainder.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

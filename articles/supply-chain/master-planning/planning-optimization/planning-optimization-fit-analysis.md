@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 52048ea6cced6f670faf13ef07f1288183e6d9b67a016608030f9e192a98faa7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd0fdd677824db823f9bc42f0ad1bdd90cf3b16d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751108"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344988"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Bristanalys för planeringsoptimering
 
@@ -51,6 +51,9 @@ Om du vill se analysresultaten för planeringsoptimering går du till **Huvudpla
 ## <a name="overview-of-possible-results-from-the-fit-analysis"></a>Översikt över möjliga resultat från bristanalysen
 
 I följande tabell visas de olika resultat som kan visas efter en bristanalys. Nummertecken (_\#_) ersätts med ett tal som anger antalet poster som innehåller det listade problemet. Funktionerna som stöds eller förhandsgranskas är tillgängliga med version 10.0.9 eller senare (såvida inte ett högre versionsnummer visas i kolumnen "Förväntad tillgänglighet").
+
+> [!NOTE]
+> Vissa inkonsekvenser kan inte identifieras i analysen Planeringsoptimering. Mer information finns i [Skillnader mellan klassisk huvudplanering och Planeringsoptimering](planning-optimization-differences-with-built-in.md).
 
 | Funktion | Listat problem | Förklaring | Förväntad tillgänglighet |
 | --- | --- | --- | --- |
@@ -104,7 +107,11 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 
 [Planeringsoptimering – översikt](planning-optimization-overview.md)
 
-[Kom i gång med planeringsoptimering](get-started.md)
+[Kom igång med Planeringsoptimering](get-started.md)
+
+[Skillnader mellan klassisk huvudplanering och Planeringsoptimering](planning-optimization-differences-with-built-in.md)
+
+[Parametrar som inte används i Planeringsoptimering](not-used-parameters.md)
 
 [Visa planhistorik och planeringsloggar](plan-history-logs.md)
 

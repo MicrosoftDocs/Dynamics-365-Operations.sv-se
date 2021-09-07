@@ -1,8 +1,8 @@
 ---
 title: Hantering av förmåner – översikt
-description: Översikt över funktionen för förmånshantering i Dynamics 365 Human Resources. Erbjud dina medarbetare utökade förmånsalternativ med en lättanvänd onlineupplevelse.
-author: andreabichsel
-ms.date: 07/13/2021
+description: I detta ämne finns en översikt över funktionen för förmånshantering i Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a1e00bb3fa227eab62b6e530a32f0eae0bd871c1cfe5bb3d29e09a06a707ce17
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719153"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417419"
 ---
-# <a name="benefits-management-overview"></a>Förmånshantering – översikt
+# <a name="benefits-management-overview"></a>Hantering av förmåner – översikt
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -37,13 +37,13 @@ För att vara konkurrenskraftig måste du erbjuda en stor mängd fördelar för 
 Om du vill ha tillgång till demonstrationsdata måste du omdistribuera miljön i begränsat läge.
 
 > [!NOTE]
-> Du kan nu formulären för hantering av förmåner. Du kan nu lägga till anpassade fält som hör till disponeringssatser i formuläret **Disponeringsalternativ** för förmånsplaner. Mer information om arbete med anpassade fält finns i [Anpassade fält](hr-developer-custom-fields.md).
+> Du kan nu anpassa sidorna för förmånshantering. Anpassade fält relaterade till som hör till disponeringssatser kan läggas till på sidan **Disponeringsalternativ** för förmånsplaner. Mer information om arbete med anpassade fält finns i [Anpassade fält](hr-developer-custom-fields.md).
 >
 > ![Anpassade fält för förmånshantering](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Aktivera hantering av förmåner
 
-Det här ämnet beskriver hur du aktiverar funktionerna i personal. Den talar också om vilka befintliga funktioner i personal som ersätts av hantering av förmåner som inaktiveras när du har aktiverat hantering av förmåner.
+Det här ämnet beskriver hur du aktiverar funktionerna i personal. Det förklarar också vilka befintliga funktioner i Personal som ersätts av Förmånshantering och vilka som inaktiveras när du har aktiverat förmånshanteringen.
 
 > [!IMPORTANT]
 > När du har aktiverat hantering av förmåner i miljön **produktion** kan du inte inaktivera den. Vi rekommenderar att du aktiverar och testar förmånshantering i en miljö med **begränsat läge** innan du aktiverar den i en miljö för **produktion**. Det finns betydande skillnader mellan den tidigare förmånsfunktionen och nya fördelar för hanteringsfunktioner som kräver ytterligare inställningar och bör testas innan de kan placeras i produktionen.

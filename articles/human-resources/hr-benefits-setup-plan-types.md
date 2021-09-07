@@ -1,8 +1,8 @@
 ---
 title: Översikt över plantyper
-description: En plantyp i Microsoft Dynamics 365 Human Resources är en grupp på hög nivå med specifika typer av förmåner. Varje plantyp har en plantypkod som bestämmer regler för plantypen.
-author: andreabichsel
-ms.date: 06/25/2021
+description: En plantyp i Microsoft Dynamics 365 Human Resources är en grupp på hög nivå med specifika typer av förmåner.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8966b0aa01795ff00832e480a186c05fa129e7c728112f81cf4f78b6b0915463
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e5d66d205d2a987310cd592a00feb10ad0dcd90e
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732740"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423401"
 ---
-# <a name="plan-type-overview"></a>Översikt över plantyper
+# <a name="plan-type-overview"></a>Översikt över plantyp
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -32,10 +32,10 @@ Varje plantyp visar om en medarbetare kan registreras i en plan av dess typ elle
 
 Om en plantyp omfattar kontakter anger plantypen om kontakter är mottagare eller beroende. En t.ex. plantypen enkel liv har mottagare, medan en grundläggande sjukvårdsplantyp skulle ha beroenden. I vissa fall kanske en plan inte har några personliga kontakter. Till exempel ett flexibelt utgiftskonto eller parkeringsbidrag.
 
-En plantyp kan definiera täckningsalternativ. Alternativen för disponering är definierade i formuläret täckningsalternativ. Ett alternativ för disponering kan ange förmånsbeloppet eller de kontakter som är berättigade till plantypen. Om kontakttypen till exempel är mottagare, ska täckningsalternativet definiera villkoren för vad mottagaren är berättigad till när förmånen används. Om kontakttypen är beroende ska täckningsalternativet definiera relationen mellan beroende och medarbetaren. 
+En plantyp kan definiera täckningsalternativ. Alternativen för disponering definieras på sidan **Disponeringsalternativ**. Ett alternativ för disponering kan ange förmånsbeloppet eller de kontakter som är berättigade till plantypen. Om kontakttypen till exempel är mottagare, ska täckningsalternativet definiera villkoren för vad mottagaren är berättigad till när förmånen används. Om kontakttypen är beroende ska täckningsalternativet definiera relationen mellan beroende och medarbetaren. 
 
 > [!IMPORTANT]
-> Formuläret innehåller nyckeldata som påverkar vilka alternativ som är tillgängliga när en ny förmånsplan skapas:
+> Sidan innehåller nyckeldata som påverkar vilka alternativ som är tillgängliga när en ny förmånsplan skapas:
 >
 > - **Plantypkod** – Det här fältet påverkar vad som visas på fliken **Konfiguration** när den faktiska förmånen ställs in.  
 > - **Samtidig anmälan** – Det här fältet avgör om flera anmälningar är tillåtna. (För en medicinsk plan ställs det här fältet normalt in på **En anmälan**.)

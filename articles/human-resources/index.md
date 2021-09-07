@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 25b3a9271dd3a906c5077f2e509cacf37ce1eb9ccb37131bb7ea31fa72ddd57f
-ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
+ms.openlocfilehash: 18c0ea18ff8ec79501d39a93ad68aa8a706ad1fc
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "7011989"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394398"
 ---
 # <a name="human-resources-home-page"></a>Startsida för Personalresurser
 
@@ -70,8 +70,8 @@ Personal ansluter människor och driftdata som hjälper dig att optimera persona
 - [Ställa in dataintegrering](hr-admin-integration-choose-technology.md)</br>
 - [Felsöka utveckling med virtuella Dataverse-tabeller](hr-developer-optimize-virtual-table-queries.md)</br>
 - [Referens för enhets-API](hr-developer-api-authentication.md)</br>
-- [API för ATS-integration](hr-admin-integration-ats-api-introduction.md)</br>
-- [Löneintegration-API](hr-admin-integration-payroll-api-introduction.md)
+- [API för ATS-integrering](hr-admin-integration-ats-api-introduction.md)</br>
+- [Löneintegrering-API](hr-admin-integration-payroll-api-introduction.md)
 
 ## <a name="user-guide"></a>Användarhandbok
 
@@ -91,7 +91,7 @@ Personal ansluter människor och driftdata som hjälper dig att optimera persona
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 ### <a name="elearning-courses"></a>E-utbildningskurser
-Information om onlinekurser och utbildning finns [Dynamics 365 Human Resources i Microsoft Learn](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+Information om onlinekurser och utbildning finns [Dynamics 365 Human Resources i Microsoft Learn](//learn/browse/?products=dynamics-human-resources&expanded=dynamics-365).
 
 ### <a name="videos"></a>Videor
 

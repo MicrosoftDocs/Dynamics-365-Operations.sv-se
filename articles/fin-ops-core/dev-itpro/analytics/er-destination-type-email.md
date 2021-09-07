@@ -2,7 +2,7 @@
 title: ER-målstyp för e-post
 description: I det här avsnittet beskrivs hur du konfigurerar en e-post-destination för varje MAPP- eller FIL-komponent i ett elektroniskt rapporteringsformat (ER).
 author: NickSelin
-ms.date: 07/27/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 46817197f3b0938fb325b2b3ebefbee41b5e4583092e521e6a8dae70d78b0970
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769329"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343870"
 ---
 # <a name="email-er-destination-type"></a>ER-målstyp för e-post
 
@@ -53,9 +53,22 @@ Följ de här stegen om du vill skicka en eller flera utdatafiler med e-post.
 
 ## <a name="configure-an-email-destination"></a>Konfigurera en e-postdestination
 
-Du kan ange e -postavsändare och e -postmottagare och du kan redigera e-postmeddelandets ämne och brödtext. Du kan skapa konstanta texter mailets rubrik och brödtext, eller använda ER-[formler](er-formula-language.md) för att skapa e-posttexter dynamiskt.
+### <a name="email-content"></a>E-postinnehåll
 
-Som standard skickas ett e-postmeddelande på uppdrag av den aktuella användaren. Om du vill ange en annan e-postavsändare måste du konfigurera fältet **Från**.
+Du kan redigera ämnet och brödtexten i e-postmeddelandet.
+
+I fältet **Ämne** anger du texten i e-postmeddelandets ämne som ska visas i ämnesfältet för ett elektroniskt meddelande som genereras i samband med körning. I fältet **Brödtext** anger du texten i e-postmeddelandets brödtext som ska visas i brödtextfältet för ett elektroniskt meddelande. Du kan skapa konstanta texter för e-postmeddelandets rubrik och brödtext, eller också använda ER-[formler](er-formula-language.md) för att skapa e-posttexter dynamiskt i samband med körning. Den konfigurerade formeln måste returnera ett värde av typen [Sträng](er-formula-supported-data-types-primitive.md#string).
+
+E-postmeddelandets brödtext består av text- eller HTML-format, beroende på e-postklient. Du kan använda alla layouter, format och märken som HTML och infogade övergripande formatmallar (CSS) tillåter.
+
+> [!NOTE]
+> E-postklienterna har begränsningar för layout och stil som kan kräva justeringar av HTML-koden och den CSS som du använder för meddelandetexten. Vi rekommenderar att du bekantar dig med de bästa metoderna för att skapa HTML-kod som stöds av de vanligaste e-postklienterna.
+>
+> Använd rätt kodning när du vill implementera en transportretur, beroende på brödtextformatering. Mer information finns i definitionen för datatypen [Sträng](er-formula-supported-data-types-primitive.md#string).
+
+### <a name="email-addresses"></a>E-postadresser
+
+Du kan ange avsändare och mottagare för e-post. Som standard skickas e-postmeddelanden på uppdrag av den aktuella användaren. Om du vill ange en annan e-postavsändare måste du konfigurera fältet **Från**.
 
 > [!NOTE]
 > När en e-postdestination är konfigurerad visas fältet **Från** endast för användare som har säkerhetsbehörighet `ERFormatDestinationSenderEmailConfigure`, **Konfigurera avsändarens e -postadress för destinationer i ER-format**.

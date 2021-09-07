@@ -1,8 +1,8 @@
 ---
-title: Konfigurera integration med Dayforce
-description: Integreringen mellan Microsoft Dynamics 365 Human Resources och Ceridian Dayforce är beroende av flera konfigurationssteg som beskrivs i det här avsnittet. Du måste konfigurera integrationen i både Personal och Dayforce innan du kan bearbeta en betalning.
-author: andreabichsel
-ms.date: 02/03/2020
+title: Konfigurera integrering med Dayforce
+description: Detta ämne beskriver erforderliga konfigurationssteg för integreringen mellan Microsoft Dynamics 365 Human Resources och Ceridian Dayforce.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,59 +12,59 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 961d3bd61e85549f4124391389682bb24aceae3e16e52dc8111a44c365a8c081
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 255cc612ef727153be70b755745eed9ad679b839
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782741"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414594"
 ---
-# <a name="configure-integration-with-dayforce"></a>Konfigurera integration med Dayforce
+# <a name="configure-integration-with-dayforce"></a>Konfigurera integrering med Dayforce
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Integreringen mellan Microsoft Dynamics 365 Human Resources och Ceridian Dayforce är beroende av flera konfigurationssteg som beskrivs i det här avsnittet. Du måste konfigurera integrationen i både Personal och Dayforce innan du kan bearbeta en betalning.
+Integreringen mellan Microsoft Dynamics 365 Human Resources och Ceridian Dayforce är beroende av flera konfigurationssteg som beskrivs i det här avsnittet. Du måste konfigurera integreringen i både Personal och Dayforce innan du kan bearbeta en betalning.
 
-När du använder tjänster som exempelvis Dayforce för att utföra betalningar måste du aktivera integration i Personal. Integrationen kräver specifika data från Personal. Därför måste du kontrollera att data som är mappad till Dayforce konfigureras i Personal på ett sätt som stöder integrationen. Integrationen använder följande breda datakategorier:
+När du använder tjänster som exempelvis Dayforce för att utföra betalningar måste du aktivera integrering i Personal. Integreringen kräver specifika data från Personal. Därför måste du kontrollera att data som är mappad till Dayforce konfigureras i Personal på ett sätt som stöder integreringen. Integreringen använder följande breda datakategorier:
 
 - Personaldata
 - Kompensationsdata
 - Lönedata som till exempel lönecykler, betalningsperioder och inkomstkoder
 - Medarbetardata
 
-Det här avsnittet beskriver de steg som du måste följa för att aktivera integrationen. Här förklaras också de typer av data och den konfigurationsinformation som integrationen kräver.
+I detta ämne beskrivs vilka steg du måste följa för att aktivera integreringen. Här förklaras de datatyper och den konfigurationsinformation som krävs för integreringen.
 
-## <a name="enable-the-integration"></a>Aktivera integrationen
+## <a name="enable-the-integration"></a>Aktivera integreringen
 
-Du måste aktivera integrationen i Personal och ange konfigurationsinformation för att ansluta till Dayforce. Om du vill att den redovisningstransaktion som framställs ska importeras till Microsoft Dynamics 365 Finance måste du också skapa ett lagringskonto för Microsoft Azure och ange anslutningssträngen för Azure-lagring i Finance.
+Du måste aktivera integreringen i Personal och ange konfigurationsinformation för att ansluta till Dayforce. Om du vill att den redovisningstransaktion som framställs ska importeras till Microsoft Dynamics 365 Finance måste du också skapa ett lagringskonto för Microsoft Azure och ange anslutningssträngen för Azure-lagring i Finance.
 
-Följ dessa steg om du vill aktivera integration i Personal.
+Följ dessa steg om du vill aktivera integrering i Personal.
 
-1. På sidan **Systemadministration** väljer du **Integrationskonfiguration**.
+1. På sidan **Systemadministration** väljer du **Integreringskonfiguration**.
 2. Ange slutpunkten för filöverföringsprotokollet (FTP) och den säkra FTP-sökvägen.
 3. Ange användarnamn och lösenord för den användare som kommer att använda den säkra FTP-slutpunkten och mappsökvägen.
 4. Testa anslutningen efter behov samt ange alternativet **Aktivera integrering av löner** som **Ja**.
 
 När integreringen aktiveras skapas dataexportpaket och filer, och frekvensen anges. Du kan ändra frekvensen efter behov.
 
-Mer information om Azure-lagringskonton och anslutningssträngar för Azure-lagring, se följande Azure-artiklar:
+Mer information om Azure-lagringskonton och anslutningssträngar för Azure-lagring, se följande Azure-avsnitt:
 
 - [Om Azure-lagringskonton](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
 - [Konfigurera anslutningssträngar för Azure-lagring](/azure/storage/common/storage-configure-connection-string)
 
-### <a name="technical-details-when-payroll-integration-is-enabled"></a>Teknisk information när löneintegration har aktiverats
+### <a name="technical-details-when-payroll-integration-is-enabled"></a>Teknisk information när löneintegrering har aktiverats
 
-Att slå på löneintegration har två primära effekter:
+Att slå på löneintegrering har två primära effekter:
 
-- Ett dataexportprojekt med namnet "Löneintegrationexport" skapas. Det här projektet innehåller de entiteter och fält som krävs för löneintegration. För att undersöka projekt, gå till **Systemadministration**, välj **Datahantering** och öppna dataprojekt från lista över projekt.
-- Det här batchjobbet kör dataexportprojektet, krypterar det resulterande datapaketet och överför datapaketfilen till den SFTP-slutpunkt som konfigurerats på skärmen **integrationskonfiguration**.
+- Ett dataexportprojekt med namnet "Löneintegreringexport" skapas. Det här projektet innehåller de entiteter och fält som krävs för löneintegrering. För att undersöka projekt, gå till **Systemadministration**, välj **Datahantering** och öppna dataprojekt från lista över projekt.
+- Det här batchjobbet kör dataexportprojektet, krypterar det resulterande datapaketet och överför datapaketfilen till den SFTP-slutpunkt som konfigurerats på skärmen **integreringskonfiguration**.
 
 > [!NOTE]
-> Det datapaket som överförs till SFTP-slutpunkten krypteras med en nyckel som är unik för paketet. Nyckeln finns i ett Azure Key Vault som bara kan nås av Ceridian. Det går inte att dekryptera och undersöka innehållet i datapaketet. Om du behöver undersöka innehållet i datapaketet, måste du exportera dataprojektet "Löneintegrationexport" manuellt, hämta det och sedan öppna det. Manuell export använder inte kryptering eller överföring av paketet.
-> Om integrationsfilerna till exempel skickas från en UAT- eller sandbox-miljö för Dynamics 365 Human Resources till en Ceridian Dayforce-testmiljö kan du använda följande URL för nyckelvalv: https://payrollintegrationprod.vault.azure.net.
+> Det datapaket som överförs till SFTP-slutpunkten krypteras med en nyckel som är unik för paketet. Nyckeln finns i ett Azure Key Vault som bara kan nås av Ceridian. Det går inte att dekryptera och undersöka innehållet i datapaketet. Om du behöver undersöka innehållet i datapaketet, måste du exportera dataprojektet "Löneintegreringexport" manuellt, hämta det och sedan öppna det. Manuell export använder inte kryptering eller överföring av paketet.
+> Om integreringsfilerna till exempel skickas från en UAT- eller sandbox-miljö för Dynamics 365 Human Resources till en Ceridian Dayforce-testmiljö kan du använda följande URL för nyckelvalv: https://payrollintegrationprod.vault.azure.net.
 
 ## <a name="configure-your-data"></a>Konfigurera dina data 
 
@@ -122,12 +122,12 @@ Dayforce skapar följande avdrag baserat på den löneeffekt som definieras i f�
 | Endast lönetillägg          | Löneavdrag för en arbetsgivare skapas.             |
 | Avdrag och tillägg | Avdrag för medarbetare och arbetsgivare skapas. |
 
-Mer information om hur du definierar och hanterar ett förmånsprogram finns i följande artiklar:
+Mer information om hur du definierar och hanterar ett förmånsprogram finns i följande avsnitt:
 
 - [Utveckla ett förmånsprogram för medarbetare](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
 - [Skapa en ny förmån](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
 - [Definiera förmånsberättiganderegler och policyer](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Registrera och ta bort förmåner för arbetare](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Registrera och ta bort förmåner för medarbetare](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Kompensation 
 
@@ -135,7 +135,7 @@ Kompensationshantering används för att styra du utbetalningen av grundlön och
 
 Dayforce använder kompensationsinformation för att beräkna en medarbetares tim- eller årliga betalning. Fasta kompensationsplaner och lönekonverteringar är obligatoriska. Medarbetarna måste vara anslutna till en fast kompensationsplan.
 
-Mer information om att kompensationsplaner finns i följande artiklar:
+Mer information om att kompensationsplaner finns i följande avsnitt:
 
 - [Skapa planer för fast kompensation](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
 - [Skapa planer för variabel kompensation](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
@@ -147,7 +147,7 @@ Mer information om att kompensationsplaner finns i följande artiklar:
 
 #### <a name="jobs"></a>Jobb 
 
-Ett jobb är den samling uppgifter och ansvarsområden som avkrävs en person som utför ett jobb. Mer information finns i följande artiklar:
+Ett jobb är den samling uppgifter och ansvarsområden som avkrävs en person som utför ett jobb. Mer information finns i följande avsnitt:
 
 - [Installera komponenter för ett jobb](/dynamics365/unified-operations/talent/create-job)
 - [Definiera nya jobb](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
@@ -172,7 +172,7 @@ Tänk på följande uppgifter och konfigurationsinformation när du ställer in 
 
 Om flera befattningar på samma avdelning är associerade med samma jobb konsolideras de till en enda befattning i Dayforce.
 
-Mer information finns i följande artiklar:
+Mer information finns i följande avsnitt:
 
 - [Organisera arbetsstyrkan med avdelningar, jobb och befattningar](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
 - [Ställ in befattningar](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
@@ -181,14 +181,14 @@ Mer information finns i följande artiklar:
 
 En avdelning är en driftenhet som representerar en kategori eller verksamhetsområde inom en organisation. En avdelning är ansvarig för en viss del av organisationen, såsom försäljning, bokföring eller mänskliga resurser. Du kan använda avdelningar att rapportera om funktionella områden. Avdelningar kan ha vinst och förlust.
 
-Mer information finns i följande artiklar:
+Mer information finns i följande avsnitt:
 
 - [Skapa en avdelning och associera den med avdelningshierarkin](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
 - [Definiera nya avdelningar](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Lönecykler och löneperioder
 
-En lönecykel avgör hur ofta lönelistan körs, samt vilka specifika dagar som medarbetarna får betalt. En lönecykel kan exempelvis vara månadsvis och medarbetarna få sin lön den sista dagen i månaden. Alternativt kan en lönecykel vara veckovis och medarbetarna få sin lön på tisdagen efter betalningsperiodens utgång. Lönecykler tilldelas befattningar i syfte att styra när arbetare på dessa befattningar får sin lön.
+En lönecykel avgör hur ofta lönelistan körs, samt vilka specifika dagar som medarbetarna får betalt. En lönecykel kan exempelvis vara månadsvis och medarbetarna få sin lön den sista dagen i månaden. Alternativt kan en lönecykel vara veckovis och medarbetarna få sin lön på tisdagen efter betalningsperiodens utgång. Lönecykler tilldelas befattningar i syfte att styra när medarbetare på dessa befattningar får sin lön.
 
 När du har skapat lönecykler kan du generera betalningsperioder för respektive cykel. Varje betalningsperiod innehåller ett standardbetalningsdatum som baseras på den information du anger. Du kan emellertid ändra standarddatumet för betalning i en löneperiod i syfte att tillåta undantag, till exempel när betalningsdatumet infaller på en allmän helgdag.
 
@@ -199,7 +199,7 @@ Följande information används i Dayforce:
 - Periodens startdatum (första löneperiod obligatorisk)
 - Standarddatum för betalning (första löneperiod obligatorisk)
 
-Denna information är integrerad i Dayforce som lönegrupper och delas upp efter land eller region för respektive lönecykel. Minst en löneperiod måste genereras före integration. Dayforce genererar gruppkalendrar för lön och betalningsdatum utifrån startdatumet för den första löneperioden och det standarddatum för betalning som anges i Personal.
+Denna information är integrerad i Dayforce som lönegrupper och delas upp efter land eller region för respektive lönecykel. Minst en löneperiod måste genereras före integrering. Dayforce genererar gruppkalendrar för lön och betalningsdatum utifrån startdatumet för den första löneperioden och det standarddatum för betalning som anges i Personal.
 
 #### <a name="earning-codes"></a>Inkomstkoder
 
@@ -370,7 +370,7 @@ Om du genererar lön för medarbetare i USA och Kanada måste följande element 
 - Kostnadsställen måste ställas in som ekonomiska dimensioner och måste vara det första elementet i standardsträngen för ekonomisk dimension.
 
 > [!NOTE] 
-> Du kan konfigurera Personal att kräva att befattningar anger en avdelning. Gör detta genom att gå till **delade befattningar i Personal > befattningar > kräver avdelningar för befattningar**. Vi rekommenderar att den här inställningen tillämpas för integration.
+> Du kan konfigurera Personal att kräva att befattningar anger en avdelning. Gör detta genom att gå till **delade befattningar i Personal > befattningar > kräver avdelningar för befattningar**. Vi rekommenderar att den här inställningen tillämpas för integrering.
 
 ### <a name="job-types"></a>Jobbtyper
 
@@ -402,13 +402,13 @@ Följande orsakskoder och -beskrivningar krävs.
 
 | Orsakskod    | beskrivning      | Tillämpliga scenarier |
 |----------------|------------------|----------------------|
-| EGEN UPPSÄGNING    | Egen uppsägning      | Säg upp arbetare     |
-| UPPSÄGNING    | Uppsägning      | Säg upp arbetare     |
-| PENSION     | Pension       | Säg upp arbetare     |
-| ÖVRIGT          | Andra orsaker    | Säg upp arbetare     |
-| DÖDSFALL          | Dödsfall            | Säg upp arbetare     |
-| TJÄNSTLEDIGHET | Tjänstledighet | Säg upp arbetare     |
-| KONTRAKTSLUT    | Kontraktslut  | Säg upp arbetare     |
+| EGEN UPPSÄGNING    | Egen uppsägning      | Säg upp medarbetare     |
+| UPPSÄGNING    | Uppsägning      | Säg upp medarbetare     |
+| PENSION     | Pension       | Säg upp medarbetare     |
+| ÖVRIGT          | Andra orsaker    | Säg upp medarbetare     |
+| DÖDSFALL          | Dödsfall            | Säg upp medarbetare     |
+| TJÄNSTLEDIGHET | Tjänstledighet | Säg upp medarbetare     |
+| KONTRAKTSLUT    | Kontraktslut  | Säg upp medarbetare     |
 | LÖNEÄNDRING   | Löneändring | Kompensation         |
 
 ### <a name="marital-status"></a>Civilstånd
@@ -535,17 +535,17 @@ Följande orsakskoder och -beskrivningar krävs.
 
 | Orsakskod            | beskrivning                    | Tillämpliga scenarier |
 |------------------------|--------------------------------|----------------------|
-| DEPARTUREBEFOREPAYMENT | Avgick före första lön | Säg upp arbetare     |
-| EGEN UPPSÄGNING            | Egen uppsägning                    | Säg upp arbetare     |
-| PENSION                | Pension                        | Säg upp arbetare     |
-| UPPSÄGNING            | Uppsägning                    | Säg upp arbetare     |
-| PENSION             | Pension                     | Säg upp arbetare     |
-| FRÅNVARANDE               | Frånvarande                       | Säg upp arbetare     |
-| ÖVRIGT                  | Andra orsaker                  | Säg upp arbetare     |
-| AVSLUT                | Verksamheten nedlagd               | Säg upp arbetare     |
-| DÖDSFALL                  | Dödsfall                          | Säg upp arbetare     |
-| TJÄNSTLEDIGHET         | Tjänstledighet               | Säg upp arbetare     |
-| KONTRAKTSLUT            | Kontraktslut                | Säg upp arbetare     |
+| DEPARTUREBEFOREPAYMENT | Avgick före första lön | Säg upp medarbetare     |
+| EGEN UPPSÄGNING            | Egen uppsägning                    | Säg upp medarbetare     |
+| PENSION                | Pension                        | Säg upp medarbetare     |
+| UPPSÄGNING            | Uppsägning                    | Säg upp medarbetare     |
+| PENSION             | Pension                     | Säg upp medarbetare     |
+| FRÅNVARANDE               | Frånvarande                       | Säg upp medarbetare     |
+| ÖVRIGT                  | Andra orsaker                  | Säg upp medarbetare     |
+| AVSLUT                | Verksamheten nedlagd               | Säg upp medarbetare     |
+| DÖDSFALL                  | Dödsfall                          | Säg upp medarbetare     |
+| TJÄNSTLEDIGHET         | Tjänstledighet               | Säg upp medarbetare     |
+| KONTRAKTSLUT            | Kontraktslut                | Säg upp medarbetare     |
 | LÖNEÄNDRING           | Löneändring               | Kompensation         |
 
 ### <a name="terms-of-employment"></a>Anställningsvillkor

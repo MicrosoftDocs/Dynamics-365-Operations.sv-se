@@ -1,8 +1,8 @@
 ---
 title: Välja en dataintegreringsteknik
-description: Den här artikeln innehåller information om hur du integrerar med data som hanteras av personal. Här beskrivs olika integreringstekniker som hjälper dig att avgöra vilka tekniker som bäst passar dina behov.
-author: andreabichsel
-ms.date: 02/28/2020
+description: Detta ämne innehåller information om hur du integrerar med data som hanteras av Personal.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7942d08459455192f816b2a06251d0f756b8de521d958eb38a84fa2e5616d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d58a42236b07bf177e09aee50a207ffdf2ed1435
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720478"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414724"
 ---
 # <a name="choose-a-data-integration-technology"></a>Välja en dataintegreringsteknik
 
@@ -28,26 +28,25 @@ ms.locfileid: "6720478"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Den här artikeln innehåller information om hur du integrerar med data som hanteras av Dynamics 365 Human Resources. Här beskrivs olika integreringstekniker som hjälper dig att avgöra vilka tekniker som bäst passar dina behov.
+Detta ämne innehåller information om hur du integrerar med data som hanteras av Dynamics 365 Human Resources. Här beskrivs olika integreringstekniker som hjälper dig att avgöra vilka tekniker som bäst passar dina behov.
 
 ## <a name="data-integration-background"></a>Bakgrund för dataintegrering
 
 Affärsdata är en nyckeltillgång som gör ditt företag unikt. Ditt företags data är mycket värdefulla. Du kan använda relationerna mellan data som samlats in i ditt företag för att förbättra affärsprocesser och affärsstrategier i hela organisationen. Vi strävar efter att ge enkelt, säkert och stabil åtkomst till dina affärsdata oavsett vilket system de kommer från.
 
-Historiskt sett har det varit svårt att integrera data mellan flera system.
-Microsoft vidtar åtgärder för att underlätta dataintegrationen och ett stort steg mot det målet realiseras via [Dataverse](/powerapps/maker/common-data-service/data-platform-intro).
+Historiskt sett har det varit svårt att integrera data mellan flera system. Microsoft vidtar åtgärder för att underlätta dataintegreringen och ett stort steg mot det målet realiseras via [Dataverse](/powerapps/maker/common-data-service/data-platform-intro).
 
 Personal gör Dataverse till det föredragna offentliga gränssnittet för personaldata. Med tiden kan vi förvänta dig att alla de viktigaste data som hanteras av personalavdelningen kommer att visas i Dataverse. Vi rekommenderar Dataverse som den teknik som du väljer för de flesta integrerade program.
 
-Vi inser att Dataverse kanske inte redan innehåller alla data som programmet behöver. Vi kan även inse att ditt projekts tidslinje kanske kräver en alternativ teknik. Var noga med att tala om när Dataverse inte passar dina integrationsbehov.
+Vi inser att Dataverse kanske inte redan innehåller alla data som programmet behöver. Vi kan även inse att ditt projekts tidslinje kanske kräver en alternativ teknik. Var noga med att tala om när Dataverse inte passar dina integreringsbehov.
 
-## <a name="integration-technologies"></a>Integrationstekniker
+## <a name="integration-technologies"></a>Integreringstekniker
 
 I följande avsnitt beskrivs de olika tekniker för dataintegrering som kan användas med personal.
 
 ### <a name="dataverse-tables"></a>Dataverse-register
 
-Dataverse är det rekommenderade allmänna datagränssnittet för personal. Det sammanfaller med Dynamics 365 XRM-plattformen, som används av [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps)-lösningar.
+Dataverse är det rekommenderade allmänna datagränssnittet för personal. Det har sin grund i Dynamics 365 XRM-plattformen, som användas av [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps)-lösningar.
 
 Dataverse tillhandahåller en plattform och API för dataregister. När du distribuerar personal ansluts den till en Dataverse-instans. Enheterna för personaldata som ska användas i den Dataverse-instansen. Registren och deras data är tillgängliga för alla program som kan ansluta till Dataverse-instansen. Personal synkroniserar data till och från Dataverse-registren.
 
@@ -59,13 +58,13 @@ När de dataregister som krävs av de integrerande apparna finns i Dataverse, ka
 Dataverse-register och tillhörande API:er är det bästa alternativet för åtkomst till Personal-data från webbprogram, webbtjänster/API:er samt andra program som ansluter till OData-feeds.
 
 > [!NOTE]
-> Med beslutet att göra Dataverse till föredraget datagränssnittet för personal relativt nyligen kanske du upptäcker att de dataenheter för personal som du behöver för din integration ännu inte finns i Dataverse.
+> Med beslutet att göra Dataverse till föredraget datagränssnittet för personal relativt nyligen kanske du upptäcker att de dataenheter för personal som du behöver för din integrering ännu inte finns i Dataverse.
 > </br>
 > För en lista över personalenheter som är tillgängliga i Dataverse, se [personal och Dataverse](/dynamics365/unified-operations/talent/corehrentities).
 > </br>
-> Om de personalenheter som krävs för din integration ännu inte är tillgängliga, måste du vänta på att dataenheterna ska vara tillgängliga eller använda någon av de andra integrationstekniker som beskrivs nedan.
+> Om de personalenheter som krävs för din integrering ännu inte är tillgängliga, måste du vänta på att dataenheterna ska vara tillgängliga eller använda någon av de andra integreringstekniker som beskrivs nedan.
 > </br>
-> Som standard är Dataverse-integrationen inaktiverad i nya miljöer som inte innehåller de tillhandahållna demodata. Som standard är den aktiverad i nya miljöer där demodata och miljöerna börjar synkronisera data när de är avsedda. När din miljö är redo att synkronisera data kan du aktivera integrationen.
+> Som standard är Dataverse-integreringen inaktiverad i nya miljöer som inte innehåller de tillhandahållna demodata. Som standard är den aktiverad i nya miljöer där demodata och miljöerna börjar synkronisera data när de är avsedda. När din miljö är redo att synkronisera data kan du aktivera integreringen.
 
 ### <a name="dmfdixf-entities"></a>DMF/DIXF-enheter
 
@@ -73,14 +72,14 @@ Personal som huvudsakligen är baserade på samma plattform som Finance and Oper
 
 - Dataverse-register är ännu inte tillgängliga.
 
-- Integrationen kräver bulkdata av dataimport- och exportfunktioner för hög prestanda.
+- Integreringen kräver bulkdata av dataimport- och exportfunktioner för hög prestanda.
 
 > [!NOTE]
 > Personal-entiteter motsvarar Dataverse-register. Mer information om Dataverse (tidigare Common Data Service) och terminologiuppdateringar finns i [Vad är Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 DMF-entiteterna innehåller för närvarande den mest kompletta datatäckningen för Personal-data.
 
-DMF är inte lämplig för integration i realtid, t.ex. när du behöver omedelbar feedback från användare i ett användargränssnitt. Paketåtgärder är schemalagda batchjobb och har ofta minst en 1-2 minuter lång fördröjning innan batch-tjänsten hämtar jobbet för körning, plus vilken tid som krävs för att slutföra import- och exportåtgärden.
+DMF är inte lämplig för integrering i realtid, t.ex. när du behöver omedelbar feedback från användare i ett användargränssnitt. Paketåtgärder är schemalagda batchjobb och har ofta minst en 1-2 minuter lång fördröjning innan batch-tjänsten hämtar jobbet för körning, plus vilken tid som krävs för att slutföra import- och exportåtgärden.
 
 DMF kan vara det bästa alternativet när högt dataflöde krävs (t.ex. en planerad import/export på natten av många tusentals poster).
 
@@ -105,7 +104,7 @@ DMF har dessutom en kraftfull funktion (kallat [ta med din egen databas](/dynami
 
 BYOD är i huvudsak en skrivskyddad lösning. Även om du kan ändra och lagra alla data som du vill ha i Azure SQL-databasen (t.ex. för datamashup), kommer data som lagrats i Azure SQL-databasen inte att synkroniseras tillbaka till personal.
 
-BYOD passar för rapporteringslösningar, dataintegrationer, datamashup, som datakälla för en [Azure Data Factory](/azure/data-factory/)-pipeline.
+BYOD passar för rapporteringslösningar, dataintegreringer, datamashup, som datakälla för en [Azure Data Factory](/azure/data-factory/)-pipeline.
 
 > [!NOTE]
 > BYOD är inte tillgänglig för Attract och Onboard.
@@ -124,19 +123,19 @@ Excel-tillägget är lämpligt för import/export av ad hoc-data av företagsdom
 
 ### <a name="data-integrator"></a>Dataintegrerare
 
-Du kan använda [Dataintegrerartjänsten](/powerapps/administrator/data-integrator) för att integrera data till och från Dataverse. Dataintegreraren låter dig definiera integrationsprojekt som ofta baseras på fördefinierade mallar som programutvecklare har anpassat för specifika integrationer. Du kan schemalägga integrationsprojekten kan schemaläggas att köras automatiskt på ett återkommande schema eller köras manuellt.
+Du kan använda [Dataintegrerartjänsten](/powerapps/administrator/data-integrator) för att integrera data till och från Dataverse. Dataintegreraren låter dig definiera integreringsprojekt som ofta baseras på fördefinierade mallar som programutvecklare har anpassat för specifika integreringer. Du kan schemalägga integreringsprojekten kan schemaläggas att köras automatiskt på ett återkommande schema eller köras manuellt.
 
-Dataintegrerarprojekt är lämpliga för Dataverse batch-integration. De är ett bra val för integration mellan programfamiljen Dynamics 365. Microsoft tillhandahåller t.ex. en mall för Dataintegrerare för att integrera data från personal i Dynamics 365 Finance. Du kan lära dig mer om mallen i [integration från Dynamics 365 Human Resources till Dynamics 365 Finance](hr-admin-integration-finance.md).
+Dataintegrerarprojekt är lämpliga för Dataverse batch-integrering. De är ett bra val för integrering mellan program familjen Dynamics 365. Microsoft tillhandahåller t.ex. en mall för Dataintegrerare för att integrera data från personal i Dynamics 365 Finance. Du kan lära dig mer om mallen i [integrering från Dynamics 365 Human Resources till Dynamics 365 Finance](hr-admin-integration-finance.md).
 
 ### <a name="power-query"></a>Power Query
 
 Dataintegrerare stöder [Power Query](/power-query/power-query-what-is-power-query) via dess [avancerade frågefunktion](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query innehåller kraftfull, flexibel datafiltrering och transformering, inklusive det rika M-formelspråket. Power Query är förmodligen bekant om du har utvecklat Power BI-rapporter.
 
-## <a name="deciding-on-an-integration-technology"></a>Fatta beslut om integrationsteknik
+## <a name="deciding-on-an-integration-technology"></a>Fatta beslut om integreringsteknik
 
-Med så många olika integrationstekniker tillgängliga kan det vara överväldigande att välja vilken integrationsmetod som ska användas. När datatäckningen i Dataverse mognar, kommer beslutet att bli enklare där Dataverse är det föredragna datagränssnittet i de flesta fall. Till dess kan du emellertid hitta det som Dataverse ännu inte uppfyller dina behov. I följande tabell beskrivs några av nyckelegenskaperna i de olika alternativen för integrationsteknik.
+Med så många olika integreringstekniker tillgängliga kan det vara överväldigande att välja vilken integreringsmetod som ska användas. När datatäckningen i Dataverse mognar, kommer beslutet att bli enklare där Dataverse är det föredragna datagränssnittet i de flesta fall. Till dess kan du emellertid hitta det som Dataverse ännu inte uppfyller dina behov. I följande tabell beskrivs några av nyckelegenskaperna i de olika alternativen för integreringsteknik.
 
-| Teknik/verktyg/API    | Återkommande integrationer                   | Synkron/asynkron                    | Programmatisk åtkomst genom en API        | Lämpliga datavolymer                                   | Datatäckning                       |
+| Teknik/verktyg/API    | Återkommande integreringer                   | Synkron/asynkron                    | Programmatisk åtkomst genom en API        | Lämpliga datavolymer                                   | Datatäckning                       |
 |------------------------|------------------------------------------|---------------------------------------------|-------------------------------------------|------------------------------------------------------------|-------------------------------------|
 | Dataverse-register           | Ja, använda dataintegrerare eller mellanprogram | Sync Async, batch (via dataintegrerare) | Ja, via Dynamics 365 webb-API (OData) | Varierar med användningsfall (stöder sidindelning för interaktiv användning) | Förbättra<sup>2</sup>                       |
 | DMF-entiteter           | Ja, schemalagda via mellanprogram        | Async, batch                                | Ja, till DMF-paket REST API         | Hög (hundratusentals poster)                    | Högt                                |

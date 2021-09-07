@@ -2,7 +2,7 @@
 title: Frisläppningsprocess och frisläppningshistorik för Planeringsoptimering
 description: Avsnittet innehåller information om frisläppningsprocessen och frisläppninghistoriken för Planeringsoptimering.
 author: crytt
-ms.date: 7/28/2021
+ms.date: 8/17/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 64c8cd3ed6ff522a9ef90831ae502c5d50fbc05816aaa764d2a8e122934fc2bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fcd18341629afcf3092a457ae711e27b0bbfeb2a
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722401"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394427"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Frisläppningsprocess och frisläppningshistorik för Planeringsoptimering
 
@@ -33,7 +33,8 @@ Eftersom meddelanden inte visas när Planeringsoptimering uppdateras i din milj�
 
 | Ändringar | Information om funktionshantering | Frisläppningsdatum |
 |---|---|---|
-| <p>Resurstypskrav för planering med obegränsad kapacitet</p><p>Resurseffektivitet och kalendereffektivitet för planering med obegränsad kapacitet</p><p>Mer information finns i [Tidsplanering med obegränsad kapacite](infinite-capacity-planning.md). | <p>Tillgänglig i funktionshantering från version 10.0.20.</p><p>Funktionsnamn: *Planering med obegränsad kapacitet för Planeringsoptimering*</p> | 6 juli 2021 |
-| Allmänna förbättringar av kvalitet | Ingen funktionshantering krävs. | 6 juli 2021 |
+| <p>Lade till fältet **Ledtid** i planerade order.</p><p>Allmän prestanda, kvalitet och förbättringar i effektivitet.</p> | Ingen funktionshantering krävs. | 16 augusti 2021 |
+| <p>Lade till resurstypskrav för planering med obegränsad kapacitet.</p><p>Förbättrad resurs- och kalendereffektivitet för planering med obegränsad kapacitet.</p><p>Mer information finns i [Tidsplanering med obegränsad kapacite](infinite-capacity-planning.md). | <p>Tillgänglig i funktionshantering från version 10.0.20.</p><p>Funktionsnamn: *Planering med obegränsad kapacitet för Planeringsoptimering*</p> | 6 juli 2021 |
+| Allmänna kvalitetsförbättringar. | Ingen funktionshantering krävs. | 6 juli 2021 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

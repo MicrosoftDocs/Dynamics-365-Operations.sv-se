@@ -4,24 +4,17 @@ description: I det här avsnittet beskrivs hur du ställer in kolumnerna för f�
 author: dasani-madipalli
 ms.date: 06/25/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: damadipa
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 6eafd9b14d02dec3455b73aeee1264629331a57b8ce760b7db6f6ddbaa7406b8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb3e3e87f7615a289f019a5d47dbc596f0266aa5
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741664"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416586"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Ställa in mappning för kolumnerna för försäljningsorderns status
 
@@ -93,9 +86,9 @@ Följande tabell visar en mappning av **bearbetningsstatus** mellan Sales och Su
 
 ## <a name="setup"></a>Ställ in
 
-Om du vill ställa in mappningen för kolumner för försäljningsorderstatus måste du aktivera attributen **IsSOPIntegrationEnabled** och **isIntegrationUser**.
+Om du vill ställa in mappningen för kolumner för försäljningsorderstatus måste du aktivera attributen **IsSOPIntegreringEnabled** och **isIntegreringUser**.
 
-Så här aktiverar du attribut **IsSOPIntegrationEnabled** följ dessa steg.
+Så här aktiverar du attribut **IsSOPIntegreringEnabled** följ dessa steg.
 
 1. I en webbläsare går du till `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Ersätt **\<test-name\>** med företagets länk till Sales.
 2. På den sida som är öppnad, sök efter **organizationid** och anteckna värdet.
@@ -121,17 +114,17 @@ Så här aktiverar du attribut **IsSOPIntegrationEnabled** följ dessa steg.
 
     ![JavaScript-kod i webbläsarkonsolen.](media/sales-map-script.png)
 
-4. Kontrollera att **IsSOPIntegrationEnabled** är inställt på **true**. Använd URL från steg 1 för att kontrollera värdet.
+4. Kontrollera att **IsSOPIntegreringEnabled** är inställt på **true**. Använd URL från steg 1 för att kontrollera värdet.
 
-    ![Ange IsSOPIntegrationEnabled till "true".](media/sales-map-integration-enabled.png)
+    ![Ange IsSOPIntegreringEnabled till "true".](media/sales-map-integration-enabled.png)
 
-Så här aktiverar du attribut **isIntegrationUser** följ dessa steg.
+Så här aktiverar du attribut **isIntegreringUser** följ dessa steg.
 
 1. I Sales, gå till **Inställning \> Anpassning \> Anpassa systemet**, välj **Användartabell** och öppna sedan **Formulär \> Användare**.
 
     ![Öppna användarformuläret.](media/sales-map-user.png)
 
-2. I Tillgängliga fält, hitta **Användarläge för integration** och dubbelklicka på den för att lägga till den i formuläret. Spara ändringarna.
+2. I Tillgängliga fält, hitta **Användarläge för integrering** och dubbelklicka på den för att lägga till den i formuläret. Spara ändringarna.
 
     ![Lägga till kolumnen Användarläge för integrering i formuläret.](media/sales-map-field-explorer.png)
 
@@ -139,11 +132,11 @@ Så här aktiverar du attribut **isIntegrationUser** följ dessa steg.
 
     ![Ändra visningen från Aktiverade användare till Programanvändare.](media/sales-map-enabled-users.png)
 
-4. Välj de två posterna för **DualWrite IntegrationUser**.
+4. Välj de två posterna för **DualWrite IntegreringUser**.
 
     ![Lista över programanvändare.](media/sales-map-user-mode.png)
 
-5. Ändra värdet för kolumnen **användarläge för integration** till **Ja**.
+5. Ändra värdet för kolumnen **användarläge för integrering** till **Ja**.
 
     ![Ändra värdet för kolumnen Användarläge för integrering.](media/sales-map-user-mode-yes.png)
 

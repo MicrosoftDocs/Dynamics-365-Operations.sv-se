@@ -2,7 +2,7 @@
 title: Lagersökning i kassan
 description: I det här avsnittet beskrivs hur du använder lagersökningsfunktionen i kassan i Dynamics 365 Commerce för att visa lagerbehållning av produkter i butiker och lager.
 author: boycezhu
-ms.date: 05/11/2021
+ms.date: 08/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: b697583f2ebf9950ad805d4f415dafb2c891de8052d4a47563b048059475030f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ded7c0aa00d0806dfe4eb4e182abbbf66fd76d5b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745342"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343846"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Lagersökning i kassan
 
@@ -38,10 +38,10 @@ När lagersökningen startas från POS-programmet använder POS-kassören det nu
 
 För en enskild produkt innehåller lagersökningsfunktionen en vy över lagersöklistan som visar följande produktinformation för en lista över platser:
 
-- **Lager** - Refererar till den "tillgängliga fysiska" kvantiteten för en produkt.
-- **Reserverad** - Refererar till den "fysiska reserverade" kvantitet som hämtats från huvudkontoret.
-- **Beställd** - Refererar till den kvantitet som "beställts totalt" som hämtats från huvudkontoret.
-- **Enhet** - Refererar till den lagermåttenhet som konfigurerats i huvudkontoret.
+- **Lager** – Refererar till den "tillgängliga fysiska" kvanheten för en produkt.
+- **Reserverad** – Refererar till den "fysiska reserverade" kvanhet som hämtats från huvudkontoret.
+- **Beställd** – Refererar till den kvanhet som "beställts totalt" och som hämtats från huvudkontoret.
+- **Enhet** – Refererar till den lagermåttenhet som konfigurerats i huvudkontoret.
 
 I listvyn över platser ingår alla butiker och lagerställen som har konfigurerats i uppfyllelsegrupperna som den aktuella butiken är kopplad till, enligt bilden nedan.
 
@@ -52,25 +52,26 @@ I listvyn över platser ingår alla butiker och lagerställen som har konfigurer
 
 Följande åtgärder är tillgängliga i kassans appfält:
 
-- **Sortera** – Med denna åtgärd kan POS-användaren sortera data i listvyn baserat på olika kriterier. Platsbaserad sortering är standardsorteringsalternativet. 
-  - **Geografisk plats** (från närmaste plats till mest avlägsen plats, från den aktuella butiken)
-  - **Namn** (i stigande eller fallande ordning)
-  - **Butiksnummer** (i stigande eller fallande ordning)
-  - **Lager** (i fallande ordning)
-  - **Reserverad** (i fallande ordning)
-  - **Beställd** (i fallande ordning)
+- **Sortera** – Med denna åtgärd kan POS-användaren sortera datan i listvyn baserat på olika kriterier. Platsbaserad sortering är standardsorteringsalternativet.
+
+    - **Geografisk plats** (från närmaste till mest avlägsen plats, baserat på avståndet till den aktuella butiken)
+    - **Namn** (i stigande eller fallande ordning)
+    - **Butiksnummer** (i stigande eller fallande ordning)
+    - **Lager** (i fallande ordning)
+    - **Reserverad** (i fallande ordning)
+    - **Beställd** (i fallande ordning)
+
 - **Filter** – Med den här åtgärden kan POS-användaren visa filtrerade data för en viss plats.
-- **Visa butikstillgänglighet** - Med den här åtgärden kan POS-användaren visa ATP-kvantiteter (disponibelt att lova) för en produkt i den valda butiken.
-- **Visa butiksplats** – Med den här åtgärden öppnas en separat sida där mappningsvyn, adressen och butikstimmarna för den valda butiken visas.
-- **Hämta i butik** - Den här åtgärden skapar en kundorder för produkten som ska hämtas i den valda butiken, och dirigerar användaren till transaktionsskärmen.
-- **Skicka produkt** - Den här åtgärden skapar en kundorder för produkten som ska skickas från den valda butiken, och dirigerar användaren till transaktionsskärmen.
-- **Visa alla varianter** - För en produkt med varianter växlar den här åtgärden från en listvy till en matris som visar lagerinformation för alla varianter av produkten.
-- **Lägg till i transaktion** - Den här åtgärden lägger till produkten i varukorgen och dirigerar användaren till transaktionsskärmen.
+- **Visa butikstillgänglighet** – Med den här åtgärden kan POS-användaren visa ATP-kvanheter ("disponibelt att utlova") för en produkt i den valda butiken.
+- **Visa butiksplats** – Med den här åtgärden öppnas en separat sida där kartvyn, adressen och öppettiderna för den valda butiken visas.
+- **Hämta i butik** – Den här åtgärden skapar en kundorder för produkten som ska hämtas i den valda butiken, samt dirigerar användaren till transaktionsskärmen.
+- **Skicka produkt** – Den här åtgärden skapar en kundorder för produkten som ska skickas från den valda butiken, samt dirigerar användaren till transaktionsskärmen.
+- **Visa alla varianter** – För en produkt med varianter växlar den här åtgärden från en listvy till en matris som visar lagerinformation för alla varianter av produkten.
+- **Lägg till i transaktion** – Den här åtgärden lägger till produkten i kundvagnen och dirigerar användaren till transaktionsskärmen.
 
 > [!NOTE]
-> För en platsbaserad sortering bestäms avståndet mellan en plats och den aktuella butiken av de koordinater (latitud och longitud) som definierats i Commerce Headquarters. För en butik definieras platsinformationen i den primära adressen till den verksamhetsenhet som är kopplad till butiken. För ett lagerställe utan butik anges platsinformationen i lagerställesadressen. Om den aktuella butiken inte har definierade koordinaterna visas den aktuella butiken högst upp i listan och andra platser sorteras efter namn i det platsbaserade sorteringsalternativet.
-
-> [!NOTE]
+> Den platsbaserade sortering som lanserades i Commerce version 10.0.17 visar den aktuella butiken högst upp. För övriga platser bestäms avståndet mellan en plats och den aktuella butiken av de koordinater (latitud och longitud) som definieras i Commerce-administrationen. För en butik definieras platsinformationen i den primära adressen för den driftenhet som är kopplad till butiken. För ett lagerställe utan butik anges platsinformationen i lagerställesadressen. Före version 10.0.17 visar listvyn alltid den aktuella butiken högst upp och sorterar övriga platser i alfabetisk ordning.
+>
 > Åtgärderna **Visa butikstillgänglighet**, **Visa butiksplats**, **Hämta i butik** och **Skicka produkt** är inte tillgängliga för platser utan butik.
 
 ## <a name="inventory-lookup-matrix-view-for-variants"></a>Matrisvy av lagersökning efter varianter
@@ -93,12 +94,12 @@ Visningsordningen för dimensionsvärdena i matrisvyn baseras på konfiguratione
 
 Följande åtgärder finns tillgängliga i matriscellen:
 
-- **Sälj nu** - Den här åtgärden lägger till den valda varianten i varukorgen och dirigerar användaren till transaktionsskärmen.
-- **Hämta i butik** - Den här åtgärden skapar en kundorder för den valda varianten som ska hämtas i den valda butiken, och dirigerar användaren till transaktionsskärmen.
-- **Skicka produkt** - Den här åtgärden skapar en kundorder för den valda varianten som ska skickas från den valda butiken, och dirigerar användaren till transaktionsskärmen.
+- **Sälj nu** – Den här åtgärden lägger till den valda varianten i kundvagnen samt dirigerar användaren till transaktionsskärmen.
+- **Hämta i butik** – Den här åtgärden skapar en kundorder för den valda varianten som ska hämtas i den valda butiken, och dirigerar användaren till transaktionsskärmen.
+- **Skicka produkt** – Den här åtgärden skapar en kundorder för den valda varianten som ska skickas från den valda butiken, samt dirigerar användaren till transaktionsskärmen.
 - **Tillgänglighet** – Med denna åtgärd förs användaren till en separat sida som visar ATP-kvantiteter för den valda varianten i den valda butiken.
-- **Visa alla platser** - Den här åtgärden växlar till standardvyn för lagertillgänglighetslista som visar lagerinformation för den valda varianten.
-- **Visa produktdetaljer** - Den här åtgärden omdirigerar användaren till produktinformationssidan (PDP) för den valda varianten.
+- **Visa alla platser** – Den här åtgärden växlar till standardvyn för lagertillgänglighetslista som visar lagerinformation för den valda varianten.
+- **Visa produktdetaljer** – Den här åtgärden dirigerar om användaren till produktdetaljsidan (PDP) för den valda varianten.
 
 ## <a name="access-inventory-lookup-from-other-pages-in-pos"></a>Öppna lagersökning från andra sidor i kassan
 
@@ -124,7 +125,5 @@ I Commerce-utgåvan 10.0.9 och tidigare hämtas det **tillgängliga fysiska** v�
 [Visuella konfigurationer för kassaanvändargränssnitt](pos-screen-layouts.md)
 
 [Beräkna lagertillgänglighet för butikskanaler](calculated-inventory-retail-channels.md)
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

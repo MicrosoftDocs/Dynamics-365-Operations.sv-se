@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 223ad9b5a297a5bcdbb0314d406f64d5de2b239431c6df21299ddebd9e47b8a2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a37e3463273d1ffd35b267b36dfbd6fd92bb255
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738279"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343487"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Förbättra schemaläggningsmotorns prestanda
 
@@ -70,7 +70,7 @@ Det kan till exempel vara en väg som visas i följande tabell och bild, vilket 
 
 När du skickar detta till motorn delas det upp i åtta jobb, vilket visas i bilden nedan (markera bilden om du vill förstora den).
 
-[![Tidsplanering av motorjobb](media/scheduling-engine-jobs.png "Tidsplanering av motorjobb."](media/scheduling-engine-jobs-large.png)
+[![Planera motorjobb](media/scheduling-engine-jobs.png "Planera motorjobb.")](media/scheduling-engine-jobs-large.png)
 
 Standardlänken mellan två jobb är `FinishStart` vilket innebär att sluttiden för ett jobb måste infalla före starttiden för ett annat jobb. Eftersom inställningarna måste utföras av samma resurs som senare kommer att utföra processen, finns det `OnSameResource` begränsningar mellan dem. Mellan jobben för den primära och sekundära operationen för 10, finns `StartStart` och `FinishFinish` länkar, vilket innebär att jobben måste starta och sluta samtidigt och det finns `NotOnSameResource` begränsningar som förhindrar samma resurs för primär och sekundär.
 

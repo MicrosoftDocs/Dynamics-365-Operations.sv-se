@@ -1,8 +1,8 @@
 ---
-title: Vanliga frågeställningar integration med Finance
-description: Det här artikel beskriver vilken information som synkroniseras i en Personal- och Finance-integrering.
-author: andreabichsel
-ms.date: 02/03/2020
+title: Vanliga frågeställningar integrering med Finance
+description: Detta ämne förklarar vilken information som synkroniseras i en Personal- och Finance-integrering.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,17 +11,17 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3f6a3141f1c7f4e488af0318569118be10da106a035f29e1752f0a0da5a1637f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c368f916a199c7472f6f886d143048487a38ecc
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782154"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413421"
 ---
-# <a name="integration-with-finance-faq"></a>Vanliga frågeställningar integration med Finance
+# <a name="integration-with-finance-faq"></a>Vanliga frågeställningar integrering med Finance
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -45,11 +45,11 @@ E delmängd data synkroniseras. En lista över alla enheter finns i [integrering
 
 ## <a name="why-dont-i-see-any-data-synced-to-dataverse"></a>Varför visas inga data synkroniserade till Dataverse?
 
-Som standard är Dataverse-integrationen inaktiverad i nya miljöer som inte innehåller de tillhandahållna demodata. Som standard är den aktiverad i nya miljöer där demodata ingår och datasynkroniseringen börjar när miljön etableras. När din miljö är redo att synkronisera data kan du aktivera integrationen. Mer information finns i avsnittet [Konfigurera Dataverse-integration](hr-admin-integration-common-data-service.md).
+Som standard är Dataverse-integreringen inaktiverad i nya miljöer som inte innehåller de tillhandahållna demodata. Som standard är den aktiverad i nya miljöer där demodata ingår och datasynkroniseringen börjar när miljön etableras. När din miljö är redo att synkronisera data kan du aktivera integreringen. Mer information finns i avsnittet [Konfigurera Dataverse-integrering](hr-admin-integration-common-data-service.md).
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Kan jag skapa en ny mappning utan att använda mallarna?
 
-Mallar är startpunkten. Du kan skapa en egen mall, men det behövs alltid en mall när du skapar ett projekt för integration. Mer information om projekt, mallar och dataintegration (DI) finns i [integrera data i Microsoft Dataverse](/powerapps/administrator/data-integrator).
+Mallar är startpunkten. Du kan skapa en egen mall, men det behövs alltid en mall när du skapar ett projekt för integrering. Mer information om projekt, mallar och dataintegrering (DI) finns i [integrera data i Microsoft Dataverse](/powerapps/administrator/data-integrator).
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-human-resources-and-finance"></a>Kan jag mappa ekonomiska dimensioner för överföring mellan Personal och Finance?
 
@@ -59,7 +59,7 @@ För data som finns i Finance men inte finns i Personal, länkar ihop de två sy
 
 ![Mappa ekonomiska dimensioner.](media/MapFinancialDimensions.png)
 
-## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>Ibland när jag importerar anställda blir de inaktiva arbetare i Finance. Varför?
+## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>Ibland när jag importerar anställda blir de inaktiva medarbetare i Finance. Varför?
 
 Du får det här felet om medarbetaren inte har en aktiv informationspost i Personal. Du löser problemet genom att gå till **Personalhantering \> Medarbetare \> Anställningshistorik \> Datumhanterare** och kontrollera att det finns en aktiv informationspost för medarbetare.
 
@@ -75,36 +75,36 @@ Med hjälp av "Avancerad fråga" kan du filtrera och omforma källdata innan du 
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Kan jag ange vilka fält som ska skickas till Finance för en viss enhet?
 
-Fält kan läggas till eller tas bort från integrationsaktiviteten. Samtliga datafält i Dataverse-registret kommer inte att fyllas i från Personal.
+Fält kan läggas till eller tas bort från integreringsaktiviteten. Samtliga datafält i Dataverse-registret kommer inte att fyllas i från Personal.
 Ytterligare data kan fyllas i via Power Apps.
 
 ![Lägg till eller ta bort fält till och från en integreringsaktivitet.](media/SpecifyFieldsIncludedInIntegration.png)
 
-## <a name="i-set-up-integration-as-a-batch-job-but-human-resources-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Jag har ställt in integration som ett batchjobb, men Personal förlorade anslutningen till destinationssystemet. Hur kan jag skicka samma uppsättning ändringar till destinationssystemet
+## <a name="i-set-up-integration-as-a-batch-job-but-human-resources-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Jag har ställt in integrering som ett batchjobb, men Personal förlorade anslutningen till destinationssystemet. Hur kan jag skicka samma uppsättning ändringar till destinationssystemet
 
-Inga särskilda inställningar krävs för undantagshantering. Dataintegration kommer automatiskt att fånga och rapportera fel som uppstår vid källan och målet och tillåter manuella försök. Det tillåter emellertid inte manuell datakorrigering. Om datauppdateringar krävs som ska ske antingen på källan eller destinationen.
+Inga särskilda inställningar krävs för undantagshantering. Dataintegrering kommer automatiskt att fånga och rapportera fel som uppstår vid källan och målet och tillåter manuella försök. Det tillåter emellertid inte manuell datakorrigering. Om datauppdateringar krävs som ska ske antingen på källan eller destinationen.
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Kan jag ställa in dubbelriktad integrering?
 
-Nej, integrationen är för närvarande enkelriktad (Personal till Finance and Operations). Det finns en standardmall för att skicka data från Personal till Finance.
+Nej, integreringen är för närvarande enkelriktad (Personal till Finance and Operations). Det finns en standardmall för att skicka data från Personal till Finance.
 
-## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Kan jag tillåta postborttagning som en del av min integration?
+## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Kan jag tillåta postborttagning som en del av min integrering?
 
-Nej, dataintegration kommer inte att fånga borttagna poster för dataöverföring. Endast skapande av data och uppdateringar (UPSERT) ingår för närvarande.
+Nej, dataintegrering kommer inte att fånga borttagna poster för dataöverföring. Endast skapande av data och uppdateringar (UPSERT) ingår för närvarande.
 
 ## <a name="can-i-rerun-the-errored-execution-if-so-will-it-send-a-full-file-or-only-the-changes"></a>Kan jag köra om felaktig körning? I så fall skickar den en fullständig fil eller bara ändringarna?
 
-Den första körningen av dataintegration är alltid en fullständig körning. Efterföljande körningar baseras på ändringsspårning. När en felkörning utförs, extraherar den posterna i körningen och skickar ut de senaste ändringarna från Dataverse.
+Den första körningen av dataintegrering är alltid en fullständig körning. Efterföljande körningar baseras på ändringsspårning. När en felkörning utförs, extraherar den posterna i körningen och skickar ut de senaste ändringarna från Dataverse.
 
 ## <a name="when-i-save-the-project-i-get-the-error-project-has-mapping-errors-what-do-i-do"></a>När jag sparar projektet visas felmeddelandet: ”projektet har mappningsfel”. Vad ska jag göra?
 
-Kontrollera inställningarna för integrationsnycklarna, gör eventuella nödvändiga ändringar i inställningarna och uppdatera enheterna i projektet.
+Kontrollera inställningarna för integreringsnycklarna, gör eventuella nödvändiga ändringar i inställningarna och uppdatera enheterna i projektet.
 
-När du använder standardmallen importeras integrationsnycklar automatiskt. Det här problemet kan uppstå när nya uppgifter läggs till i den befintliga mallen.
+När du använder standardmallen importeras integreringsnycklar automatiskt. Det här problemet kan uppstå när nya uppgifter läggs till i den befintliga mallen.
 
 ## <a name="if-i-have-n-number-of-legal-entities-where-workers-have-employments-do-i-need-to-create-a-mapping-for-each-of-them"></a>Om jag har N antal juridiska personer där arbetstagarna har anställning måste jag skapa en mappning för var och en av dem?
 
-Ja, för varje juridisk person i Finance behöver du ett separat integrationsprojekt i dataintegration.
+Ja, för varje juridisk person i Finance behöver du ett separat integreringsprojekt i dataintegrering.
 
 ## <a name="i-need-to-transfer-data-that-is-not-part-of-the-default-template-provided-by-microsoft-can-i-do-this"></a>Behöver jag överföra data som inte ingår i standardmallen som tillhandahålls av Microsoft. Kan jag göra det?
 
@@ -142,7 +142,7 @@ Integrering med Finance är en tvåstegsprocess. Kontrollera först att Personal
 
 ![Data i Dataverse.](media/DataInCDS.png)
 
-Om data inte visas som förväntat i Dataverse, kontrollerar du att enheten stöds i integrationen. Om du vill inkludera ytterligare information i Dataverse krävs en ändring på Microsoft-sidan.
+Om data inte visas som förväntat i Dataverse, kontrollerar du att enheten stöds i integreringen. Om du vill inkludera ytterligare information i Dataverse krävs en ändring på Microsoft-sidan.
 
 Om enheten stöds och data som finns på Dataverse, verifiera att mappningen är korrekt i dataintegrerare. Om integratormappningen ser bra ut, verifiera att datahanteringsjobb har körts. Fel kan uppstå vid körning av batch-jobb. Mer information om hur du använder datahantering finns i [Datahantering](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json).
 
@@ -158,8 +158,7 @@ Se till att du väljer Dynamics 365 Finance och Dataverse när du skapar anslutn
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Vid synkronisering av anställningar får jag felet ”CompanyInfo_FK finns inte” eller ”värdet 12/31/2154 11:59:59 pm i fältet Slutdatum för anställning saknas i den relaterade tabellen Anställning. Vad ska jag göra?
 
-Se till att du mappar till rätt juridiska personer. Synkronisering av juridisk person ingår inte i standardmallen, så det är normalt att varje juridisk person som finns i Personal och Dataverse även finns i Finance.
-Se också till att du väljer rätt juridiska personer för associerad anslutningsinställning.
+Se till att du mappar till rätt juridiska personer. Synkronisering av juridisk person ingår inte i standardmallen, så det är normalt att varje juridisk person som finns i Personal och Dataverse även finns i Finance. Se också till att du väljer rätt juridiska personer för associerad anslutningsinställning.
 
 ## <a name="after-setting-up-my-project-the-field-mapping-for-finance-appears-to-be-empty-what-should-i-do"></a>Efter installationen av mitt projekt verkar fältmappningen för Finance vara tom. Vad ska jag göra?
 

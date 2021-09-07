@@ -2,7 +2,7 @@
 title: Ställa in en B2C-innehavare i Commerce
 description: I det här avsnittet beskrivs hur du ställer in din Azure Active Directory (Azure AD) B2C-innehavare (Business-to-Consumer) för autentisering av användarplats i Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/17/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 13dad5f3b82914514688bfa0c7e4f82b8b85b8dd73458618d2fcfddb169927c9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 107e06d44d159152b260897dfba456a525f19e27
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772262"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344508"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Ställa in en B2C-innehavare i Commerce
 
@@ -34,6 +34,9 @@ Dynamics 365 Commerce använder Azure AD B2C för att stödja autentiseringsuppg
  
  > [!NOTE]
  > Utvärderingsmiljöer för Commerce kommer med en förinläst Azure AD B2C-innehavare för demonstration. Inläsning av din egen Azure AD B2C-innehavare med hjälp av stegen nedan krävs inte för utvärderingsmiljöer.
+
+> [!TIP]
+> Du kan skydda dina webbplatsanvändare ytterligare och förbättra säkerheten för dina Azure ADB2C-klientorganisationer idenhetsskydd och villkorlig åtkomst för Azure AD. Information om hur du granskar funktionerna för Azure AD B2C Premium P1- och Premium P2-innehavare finns i [Idenhetsskydd och villkorlig åtkomst för Azure AD B2C ](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
 
 ## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Skapa eller länka till en befintlig AAD B2C-klientorganisation i Azure-portalen
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 31b1d9e26a5c21a6be5fd89992316e1d6e657c183a71d5155d8d76e83362c845
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e9f9504ec87fd58bbf685519108477a48055da93
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721161"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344160"
 ---
 # <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Konfigurera fält för mobilappen för distributionslagerhantering
 
@@ -50,7 +50,7 @@ När du använder Lagerstyrning på din mobila enhet kan du konfigurera hur meta
 <tbody>
 <tr class="odd">
 <td>Prioriterat indataläge</td>
-<td>Det här alternativet anger om ett skanningsfält eller ett fält för manuell inmatning bör visas för det valda fältnamnet. Detta är användbart för att skilja fälten åt, beroende på om du använder streckkoder för fältet. <strong>Obs!</strong> För fältnamn med önskat inmatningsläge angivet som <strong>Skanning</strong> kan du ange information manuellt om streckkoden är skadad eller oläsbar.</td>
+<td>Det här alternativet anger om ett skanningsfält eller ett fält för manuell inmatning bör visas för det valda fältnamnet. Detta är användbart för att skilja fälten åt om streckkoder används för fältet. <strong>Obs!</strong> För fältnamn med önskat inmatningsläge angivet som <strong>Skanning</strong> kan du ange information manuellt om streckkoden är skadad eller oläsbar.</td>
 </tr>
 <tr class="even">
 <td>Inmatningstyp</td>
@@ -65,7 +65,7 @@ När du använder Lagerstyrning på din mobila enhet kan du konfigurera hur meta
 </tbody>
 </table>
 
-## <a name="configure-warehouse-app-field-priority"></a>Konfigurera prioriteringsordningen för lagerställets programfält
+## <a name="configure-warehouse-app-field-priority"></a>Konfigurera prioriteringsordningen för lagerställets program fält
 
 På sidan **Fältprioritet för lagerställeprogram** kan du ange fältnamn i olika prioriteringsgrupper. Detta gör det möjligt att bestämma vilken information som ska visas på huvuduppgiftssidan när lagerarbetare utför åtgärder med programmet. Om du klickar på **Skapa standardinställning** skapas en standarduppsättning prioriterade grupper. Det går att skapa så många prioriteringsgrupper som krävs, men endast tre prioriteringsgrupper visas på uppgiftssidan. När systemet skickar metadata till programmet, kommer det att tilldela varje fält en relativ prioritet beroende på dess prioriteringsgrupp, och programmet kommer att visa de första tre prioriteringsgrupperna i metadatan på uppgiftssidan. Överflödig metadata visas på en ytterligare informationssida. Tabellen nedan visar ett exempel på fem prioriteringsgrupper.
 

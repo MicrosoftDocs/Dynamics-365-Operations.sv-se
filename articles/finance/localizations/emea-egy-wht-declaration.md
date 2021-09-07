@@ -10,20 +10,19 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 51f0ab8f76fe3bce91d6e4ed56bdfa8529c1aacbd326a8b4b3d80615f872f8c6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729561"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403901"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Källskattedeklaration för Egypten (EG-00005)
 
 [!include[banner](../includes/banner.md)]
-
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Översikt
@@ -113,7 +112,7 @@ Gör på följande sätt när du vill generera skattedeklarationsrapporten.
 1. Gå till **Skatt** > **Deklarationer** > **Källskatt** > **Betalning av källskatt*.
 2. Välj kvittningsperiod och sedan från-datum för rapporten. 
 3. Ange transaktionsdatum och klicka sedan på **OK**.
-4. I dialogrutan som öppnas väljer du en eller flera av formulärtyperna **Formulär nr. 41**, **Formulär nr. 11** eller **Ingen**. Om du väljer **Ingen** genereras standardrapporten. 
+4. I dialogrutan som öppnas väljer du en eller flera av formulärtyperna **Formulär nr 41**, **Formulär nr 11** eller **Ingen**. Om du väljer **Ingen** genereras standardrapporten. 
 5. Välj språk. Alla rapporter översätts i **en-us** och **ar-eg**.
 6. Ange filial och namn för den bank där skattebetalningen ska betalas.
 7. Välj affärstyp och ange sedan check- och dokumentnummer. 

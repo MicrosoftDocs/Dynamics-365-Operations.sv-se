@@ -2,7 +2,7 @@
 title: Borttagna och utfasade funktioner i Dynamics 365 Commerce
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 Commerce.
 author: josaw
-ms.date: 01/11/2021
+ms.date: 08/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: aa6030468259069cf031feb8df48d6710e1160f310a1d82c1034afe69249f00f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ac08a409284681ba9bcc4825b936c0330d14e04
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740417"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386751"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Borttagna och utfasade funktioner i Dynamics 365 Commerce
 
@@ -32,6 +32,55 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 > [!NOTE]
 > Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](/dynamics/s-e/). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Borttagna eller föråldrade funktioner i Commerce version 10.0.21
+
+[!include [banner](../includes/preview-banner.md)]
+
+### <a name="retail-sdk-distributed-by-using-lifecycle-services"></a>Retail SDK som distribueras med hjälp av Lifecycle Services
+
+Retail SDK levereras i Lifecycle Services (LCS). Detta distributionssätt är inaktuellt i version 10.0.21. Hädanefter kommer Retail SDK-referenspaket, -bibliotek och -exempel att publiceras i offentliga databaser på GitHub.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Retail SDK levereras i LCS. LCS-processen tar ett par timmar att slutföra, och processen måste upprepas för varje uppdatering. Hädanefter kommer Retail SDK-referenspaket, -bibliotek och -exempel att publiceras i offentliga databaser på GitHub. Tilläggsexempel och referenspaket kan enkelt förbrukas, och uppdateringarna slutförs på några få minuter. |
+| **Ersatt av en annan funktion?**   |  [Hämta Retail SDK-exempel och referenspaket från GitHub och NuGet](../dev-itpro/retail-sdk/sdk-github.md) |
+| **Produktområden som påverkas**         | Retail SDK |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell: Från och med version 10.0.21 kommer de SDK som levereras via LCS-VM:ar att tas bort i oktober 2022. |
+
+### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>Paket som kan distribueras i butik och kombinerade installationsprogram för kassa, maskinvarustation och molnbaserad skalningsenhet
+
+Paket som kan distribueras i Butik och som genereras med hjälp av Retail SDK MSBuild avskrivs i 10.0.21. Hädanefter använder du paketet CSU-paketet (Cloud Scale Unit, molnbaserad sakalningsenhet) för tillägg för molnbaserad skalningsenhet (Commerce Runtime, kanaldatabas, API:er för fjärrbaserad handel, betalningar och molnbaserad kassa (POS)). Använd rena tilläggsinstallationsprogram för kassa, maskinvarustation och självbetjäningsenhet för molnbaserad skalningsenhet.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Ett paket som kan distribueras inom Butik är ett kombinerat paket som innehåller en komplett uppsättning tilläggspaket och -installationsprogram. Detta kombinerade paket gör distributionen komplex när CSU-tillägg går till skalningsenhet för moln och installationsprogram distribueras i butiker. Installationsprogrammen omfattar filnamnstillägget och basprodukten, vilket försvårar uppdateringar. Vid varje uppgradering krävs en kodsammanslagning och en paketgenerering. För att förenkla denna process är tilläggspaketen nu uppdelade i komponenter för enkel distribution och hantering. Med denna nya metod separeras tillägg och installationsprogram för basprodukt och kan då uppgraderas utan kodsammanslagning eller generering av nytt paket.|
+| **Ersatt av en annan funktion?**   | CSU-tillägg, installationsprogram för kassatillägg, installationsprogram för maskinvarustationstillägg |
+| **Produktområden som påverkas**         | Dynamics 365 Commerce-tillägg och distribution |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuellt: Från och med version 10.0.21 kommer stöd för distribution av RetailDereleaseyablePackage i LCS att tas bort i oktober 2022. |
+
+Mer information finns i:
+
++ [Generera ett separat paket för molnbaserad skalningsenhet för Commerce (CSU)](../dev-itpro/retail-sdk/retail-sdk-packaging.md#generate-a-separate-package-for-commerce-cloud-scale-unit-csu)
++ [Skapa ett Modern POS-tilläggspaket](../dev-itpro/pos-extension/mpos-extension-packaging.md)
++ [Integrera kassan med ny maskinvaruenhet](../dev-itpro/hardware-device-extension.md)
++ Kodexempel
+    + [Molnskalningsenhet](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
+    + [Kassa, CSU och maskinvarustation](https://github.com/microsoft/Dynamics365Commerce.InStore)
+
+### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>ModernPos.Sln och CloudPOs.sln i SDK för Retail
+
+Kassatilläggsutveckling med hjälp av ModernPos.sln, CloudPOs.sln, POS. Extension.csproj och kassamappen blir inaktuell i version 10.0.21. I framtiden använder du kassaoberoende förpacknings-SDK för kassatillägg.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | I tidigare versioner av SDK för Retail måste kod sammanfogas och packas om för att uppdatera till den senaste kassaversionen (om kassatillägg finns). Kodsammanslagningen var en tidskrävande uppgraderingsprocess och man var tvungen att underhålla hela SDK för Retail i databasen. Man var också tvungen att kompilera kärnprojektet för POS.App. Genom att använda den oberoende förpackningsmodellen behöver du bara bibehålle ditt tillägg. Processen för uppdatering till den senaste versionen av kassatillägg är lika enkel som att uppdatera versionen av det NuGet-paket som ditt projekt använder. Tillägg kan distribueras oberoende, och tjänsterna använder installationsprogrammet för tillägg. Baskassan kan distribueras och hanteras separat, och ingen kodsammanfogning eller ompackning med basinstallationsprogram eller kod krävs. |
+| **Ersatt av en annan funktion?**   | [SDK för kassaoberoende packning](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
+| **Produktområden som påverkas**         | Kassatillägg och distribution för Dynamics 365 Commerce |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuellt: Från och med release 10.0.21 kommer stöd för kombinerade kassapaket och tilläggsmodeller som använder ModernPos.Sln, CloudPOs.sln och POS. Extenseb.csproj i Retail SDK att tas bort i oktober 2022. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Borttagna eller föråldrade funktioner i Commerce version 10.0.17
 

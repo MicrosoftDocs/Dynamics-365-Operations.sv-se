@@ -1,8 +1,8 @@
 ---
-title: Behandla prisändringar
-description: Bearbeta förmånens prisändringar i Microsoft Dynamics 365 Human Resources när en ny eller befintlig förmånsplan har en ändring i inställningarna för berättiganderegler.
-author: andreabichsel
-ms.date: 04/06/2020
+title: Bearbeta ändringar av sats
+description: I detta ämne förklaras hur du bearbetar ändringar av förmånspriset i Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: eb9206df990fa8980c4c641b565203828715ada9f1d2f2107a7bb707f545e225
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fa94584749e72cab7aa3466814ed8ea9d59665da
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718141"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417517"
 ---
-# <a name="process-rate-changes"></a>Behandla prisändringar
+# <a name="process-rate-changes"></a>Bearbeta ändringar av sats
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Bearbeta förmånens prisändringar i Microsoft Dynamics 365 Human Resources när en ny eller befintlig förmånsplan har en ändring i inställningarna för berättiganderegler. Om en ny berättiganderegel skapas och tilldelas till planen uppmanas systemet att köra om arbetarens berättigande för att kontrollera om medarbetaren kan bli berättigade till planen baserat på nya berättigandealternativ. 
+Detta ämne förkalrar hur du bearbetar ändringar i förmånspris i Microsoft Dynamics 365 Human Resources när en ny eller befintlig förmånsplan får en ändring i inställningarna för berättiganderegler. Om en ny berättiganderegel skapas och tilldelas till planen uppmanas systemet att köra om medarbetarens berättigande för att kontrollera om medarbetaren kan bli berättigade till planen baserat på nya berättigandealternativ. 
 
 1. I arbetsytan **Förmånshantering** under **bearbetar**, välj **bearbeta uppdateringar i prisändringar**.
 

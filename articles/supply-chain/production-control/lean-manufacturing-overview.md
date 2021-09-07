@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da812bcc7d31db25abc0ed7e6c1a7f9e5433f80bfdfc5421e4e18d6b8af68884
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1374a451c65b4bafdc6efeb10949d1f6eceb4758
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738925"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343928"
 ---
 # <a name="lean-manufacturing-overview"></a>Lean manufacturing – översikt
 
@@ -68,7 +68,7 @@ I listan nedan beskrivs de specialiserade kanban-tavlorna:
 -   Kanban-tavla för överföringsjobb – Den här tavlan ger en översikt över aktuella överföringsjobb. Du kan uppdatera och registrera plocklistor, starta och slutföra överföringsjobb och utföra andra uppgifter.
 -   Kanban-tavla för processjobb – Den här tavlan har utformats för att stödja det normala produktionsflödet och för att ge en översikt över den aktuella situationen i en eller flera arbetsgrupper. Från den här tavlan kan kanban prioriteras, väljas eller tillverkas. Tavlan har också utformats för att stödja skanning av streckkoder för rapporteringen av kanban.
 
-## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>Kanban-jobb och integration med processer för Supply Chain Management.
+## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>Kanban-jobb och integrering med processer för Supply Chain Management.
 Kanban-jobb är helt integrerade med aktuella processer för lagertransaktioner i Supply Chain Management.
 -   Du kan utföra plockningsaktiviteter för att fylla på material som används för att uppfylla behoven i kanban-jobb.
 -   Du kan skriva ut kanban-kort, cirkulerande kanban-kort och plocklistor för att stödja användningen av kanban. Dessa dokument används för att representera, spåra och registrera kanban-jobb på lagerstället och på produktionsgolvet.

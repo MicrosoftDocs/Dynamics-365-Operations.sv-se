@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 14d8ac93241d05245ad989bcb3cb35aaf8969164d6cfc6010a8e9d426987a1ca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9dfb0389b0ca4b2cf75ccc70f35824674e618055
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716310"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402161"
 ---
 # <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a>Konfigurera Azure Active Directory-autentisering för kassainloggning
 
@@ -53,7 +52,7 @@ Om du vill använda Azure AD som autentiseringsmetod för kassa måste du koppla
 
 Om du vill koppla Azure AD-konton till kassaanvändare i Commerce-administrationen följer du dessa steg.
     
-1. Gå till **Retail och Commerce > Medarbetare > Arbetare** och öppna en medarbetarpost.
+1. Gå till **Retail och Commerce > Medarbetare > medarbetare** och öppna en medarbetarpost.
 1. I åtgärdsfönstret väljer du fliken **Commerce** och sedan, under **Extern identitet**, markerar du **Associera befintlig identitet**. 
 1. I dialogrutan **Använd befintlig extern identitet**, välj **Sök med e-post**, ange en Azure AD e-postadress och välj **Sök**.
 1. Markera Azure AD-kontot som returneras och välj sedan **OK**.
@@ -90,7 +89,7 @@ Många återförsäljare ställer in sin butiksmiljö på ett sätt som gör att
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[ Konfigurera en arbetare](tasks/worker.md)
+[ Konfigurera en medarbetare](tasks/worker.md)
 
 [Skapa en Retail-funktionsprofil](retail-functionality-profile.md)
 

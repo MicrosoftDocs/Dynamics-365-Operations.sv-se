@@ -1,6 +1,6 @@
 ---
 title: Översikt över leverantörsbetalning
-description: Den här uppgiftsguiden går igenom vilka olika metoder som används för att skapa leverantörsbetalningar, till exempel hur du använder ett betalningsförslag eller manuellt anger en enstaka betalning.
+description: Denna procedur går igenom vilka olika metoder som används för att skapa leverantörsbetalningar, inklusive hur du använder ett betalningsförslag eller manuellt anger en enstaka betalning.
 author: kweekley
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -13,25 +13,25 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 997d505cc89eaa39b2bac273a5ae381c1c892a9537cbaa9b45156ecbb6fd237c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 73fd1b46bbf73bb3e65f381289e0b3efa12392b4
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721837"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394448"
 ---
 # <a name="vendor-payment-overview"></a>Översikt över leverantörsbetalning
 
 [!include [banner](../../includes/banner.md)]
 
-Den här uppgiftsguiden går igenom vilka olika metoder som används för att skapa leverantörsbetalningar, till exempel hur du använder ett betalningsförslag eller manuellt anger en enstaka betalning. I den här proceduren används demonstrationsföretaget USMF.
+Denna procedur går igenom vilka olika metoder som används för att skapa leverantörsbetalningar, inklusive hur du använder ett betalningsförslag eller manuellt anger en enstaka betalning. I den här proceduren används demonstrationsföretaget USMF.
 
 1. Gå till **navigeringsfönstret > Moduler > Leverantörsreskontra > Betalningar > Betalningsjournal**.
 2. Klicka på **Ny**.
 3. Välj den betalningsjournal där du kan spara leverantörsbetalningarna. 
 4. Välj journalen eller ange den manuellt.
 5. Klicka på **Rader**.
-6. I **åtgärdsfönstret**, klicka på **betalningsförslag**.
+6. I **åtgärdsfönstret** klickar du på **Betalningsförslag**.
 7. Klicka på **Skapa betalningsförslag**. Betalningsförslaget är en fråga som används för att välja fakturor för betalning. Du kan redigera listan över vilka fakturor som ska betalas innan du skapar eller genererar leverantörsbetalningarna.
 8. Välj fakturor för betalning efter förfallodatum, kassarabatt eller både och. 
 9. Ange datumet för att jämföra med förfallodatumet eller kassarabatten. 
@@ -56,7 +56,7 @@ Den här uppgiftsguiden går igenom vilka olika metoder som används för att sk
 28. Välj det betalsätt som du vill generera. Betalningsjournalen kan innehålla betalningar för båda checkar och elektroniska betalningar, men du kan bara generera en betalningstyp i taget.
 29. Välj bankkontot från vilket du vill generera betalningarna.
 30. Klicka på **OK**. Betalningar genereras endast för betalningar som matchar **betalsättet** och det **bankkonto** som du har valt.
-31. Om du genererar **checkar** väljer du **Dokument** för att säkerställa korrekt utskriftsmål för checkarna.
+31. Om du genererar **checkar** väljer du **Dokument** för att säkerställa korrekt utskriftsdestination för checkarna.
 32. Klicka på **OK**.
 33. Klicka på **OK** för att generera betalningarna.
 34. Klicka på **Bokför** om alla betalningar har godkänts och genererats. 

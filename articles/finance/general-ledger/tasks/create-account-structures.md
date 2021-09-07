@@ -1,6 +1,6 @@
 ---
 title: Skapa kontostrukturer
-description: Den här uppgiften leder dig genom stegen för att skapa en kontostruktur.
+description: Denna procedur vägleder dig genom stegen för att skapa en kontostruktur.
 author: aprilolson
 ms.date: 07/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 93cc2e9ceb15070491bb3d0a790367e6d5bf8c4a30cd7efa690fd825963165b6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e9ba43e243df4ba4b7c0eb6188629686206ff09b
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779551"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394549"
 ---
 # <a name="create-account-structures"></a>Skapa kontostrukturer
 
 [!include [banner](../../includes/banner.md)]
 
-Den här uppgiften leder dig genom stegen för att skapa en kontostruktur. Demoföretaget USMF används i stegen.
+Denna procedur vägleder dig genom stegen för att skapa en kontostruktur. Demoföretaget USMF används i stegen.
 
 1. Gå till **Navigeringsfönster > Moduler > Redovisning > Kontoplaner > Strukturer > Konfigurera kontostrukturer**.
 2. Klicka på **Ny** i **åtgärdsfönstret** för att öppna dialogrutan.

@@ -2,7 +2,7 @@
 title: Anpassa användarupplevelsen
 description: Det här avsnittet beskriver hur du kan anpassa appen.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f71a94a6a5780f8a59590008f6370cb6897fa644e7fd826bacd0fb6206d159c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3d126bf9ec5687d97dacc8763a221da656fdef1
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719311"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344384"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
@@ -125,7 +125,7 @@ Följande verktyg är tillgängliga i fältet verktygsfältet **anpassning**:
 - Använd verktyget **Visa i rubrik** när du vill att ett fält ska visas i sammanfattningen på snabbfliken. När du väljer knappen **Visa i rubrik** i verktygsfältet har alla fält som har valts som sammanfattningsfält visas i en skuggad behållare. Du kan interaktivt lägga till fält på snabbfliken sammanfattning och ta bort fält från sammanfattning genom att markera fälten.
 - Använd verktyget **Kräv** för att tilldela ett element som krävs för inmatning av data. När du väljer knappen **Kräv** på verktygsfältet kommer alla element som har anpassats för att krävas att visas i en skuggad behållare. Du kan sedan göra dem inte obligatoriska igen. Det här alternativet är tillgängligt version 10.0.12 och senare när funktionen **Tilldela fält enligt önskemål med anpassning** är aktiverade.
 - Använd verktyget **Låsa** för att markera ett element som antingen redigerbart eller inte redigerbart. När du väljer knappen **Låsa** på verktygsfältet kommer alla element som för närvarande icke är redigerbara att visas i en skuggad behållare. Du kan sedan göra dem redigerbara igen. Observera att vissa fält är obligatoriska och kan göras icke redigerbara. Ett hänglåssymbol visas bredvid dessa fält.
-- Använd verktyget **Lägg till en app från Power Apps** under infoga i ett program som har skapats med hjälp av Microsoft Power Apps på sidan. För detaljerad information om hur du bäddar in en app från Power Apps på en sida finns i [Bädda in appar från Power Apps](embed-power-apps.md). Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är inaktiverad.
+- Använd verktyget **Lägg till ett program från Power Apps** under infoga i ett program som har skapats med hjälp av Microsoft Power Apps på sidan. För detaljerad information om hur du bäddar in ett program från Power Apps på en sida finns i [Bädda in appar från Power Apps](embed-power-apps.md). Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är inaktiverad.
 - Använd knappen **Lägg till en app** för att bädda in en app, antingen en skapad från Microsoft Power Apps eller en tredje part på sidan. Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är aktiverad. 
 - Använd verktyget **Rensa** för att återställa sidan till dess installerade standardtillstånd. Alla anpassningar på den aktuella sidan kommer att rensas. Du kan inte ångra denna åtgärd. Använd därför endast detta verktyg om du är säker på att du vill återställa sidan. När funktionen **Sparade vyer** är aktiverad rensar det här verktyget anpassningarna för den aktuella vyn.
 - Använd verktyget **Importera** för att ladda en anpassning från en fil som du eller någon annan tidigare skapade. 
@@ -169,7 +169,7 @@ Instrumentpanelen är ofta den första sida som du ser när du öppnar appen. De
 En unik anpassningskapacitet som är tillgänglig på instrument panelen är möjligheten att lägga till paneler. 
 
 - Om funktionen **Helsideappar** är inaktiverad, lägger du till en ny panel genom att högerklicka på ett element på instrumentpanelen och sedan välja **Lägg till en arbetsyta**. En ny panel i arbetsytan skapas längst ned på instrumentpanelen. Du kan byta namn på denna nya arbetsytapanel som helst. Du kan också lägga till listor, rutor och länkar till arbetsytan enligt avsnittet [Lägga till paneler, listor och länkar till arbetsytor](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace) i det här ämnet.
-- Om funktionen **Helsideappar** är aktiverad, lägger du till en ny panel genom att högerklicka på ett element på instrumentpanelen och sedan välja **Lägg till en app**. I dialogrutan väljer du om du vill lägga till en panel för en ny arbetsyta eller en sida som har innehåll från Power Apps eller en webbplats. Följ sedan stegen för att konfigurera alternativet som du har valt. En ny panel skapas längst ned på instrumentpanelen. 
+- Om funktionen **Helsideappar** är aktiverad, lägger du till en ny panel genom att högerklicka på ett element på instrumentpanelen och sedan välja **Lägg till en app**. I dialogrutan väljer du om du vill lägga till en panel för en ny arbetsyta eller en sida som har innehåll från Power Apps eller en webbplats. Följ sedan stegen för att konfigurera alternativet som du har valt. En ny panel skapas längst ned på instrumentpanelen. Mer information om hur du lägger till, redigerar, tar bort och delar dessa inbäddade program finns i [Bädda in arbetsyteappar från Power Apps](embed-power-apps.md) och [Bädda in appar från tredje part](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Dela anpassningar
 

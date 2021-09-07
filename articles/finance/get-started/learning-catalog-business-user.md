@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 75fbf177cd74739b35e72f2cae56a6c46fe69540145f16c80766b3ec260e8d0b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc4067ff395042ec30bdb6a846d12509a1436256
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713766"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402554"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Utbildningskatalog för användare av Dynamics 365 Finance
 
@@ -32,13 +32,14 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | [Lär dig affärsvärdet av Microsoft Dynamics 365 och Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Vill du lära dig mer om affärsprogram? Kanske du inte vet var du ska börja med Microsoft Dynamics 365 och Power Platform-appar? Lär dig hur kraften hos affärsappar kan hjälpa dig att omvandla verksamheten. | Gratis, självstudier online utbildningsväg | 8 timmar |
 | [Dynamics 365 och Power Platform grunder](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Vill du lära dig mer om affärsprogram? Börja med den här utbildningsvägen för att se hur Dynamics 365-appar används. Lär dig mer om molnkoncept Power Platform och hur du kommer igång med Dynamics 365-appar. | Gratis, självstudier online utbildningsväg | 5.5 timmar   |
 | [Kom igång med Finance and Operations-appar](/learn/paths/get-started-finance-operations/) | Lär dig hur Finance and Operations-appar ger stöd till företag för att hantera deras globala ekonomisystem, operativa affärsprocesser och effektiviserade leveranskedjor för att ge användarna möjlighet att fatta snabba, välgrundade beslut.   Det första steget i arbetet med Finance and Operations-appar är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill ha. | Gratis, självstudier online utbildningsväg | 2 timmar |
+| [Kom igång med Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | Med Dynamics 365 Intelligent Order Management kan kunderna hantera orkestreringen av order ända fram till uppfyllelsen. Med dessa funktioner kan organisationer orkestrera orderflöden över olika plattformar och program. | Gratis, självstudier online utbildningsmodul | 30 minuter |
 | [Kurs MB-900T01-A: Dynamics 365 - grunder](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Den här kursen kommer att bekanta dig med Dynamics 365-funktionalitet och affärsvärde. Kursen omfattar Dynamics 365-program, Power Platform, molnkoncepten, säkerhetsmodellen och licensieringsöverväganden. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag |
 
 ## <a name="core-platform-knowledge"></a>Kunskap om huvudplattformen<a name="core-platform-knowledge"></a>
 
 | Innehåll | beskrivning | Format | Längd |
 |---------|-------------|--------|--------|
-| [Konfigurera organisationen i Finance and Operations-appar](/learn/paths/configure-your-organization-finance-ops/) | Som en funktionell konsult som arbetar med Finance and Operations-appar måste du förstå hur du skapar en organisation för kunden. Den här utbildningsvägen, bland andra uppgifter, hur du ställer in juridiska personer, implementerar säkerhetsinställningar, anpassar användargränssnittet för användare, utformar och skapar mobilappar, implementerar vanliga integrationer. | Gratis, självstudier online utbildningsväg | 12 timmar  |
+| [Konfigurera organisationen i Finance and Operations-appar](/learn/paths/configure-your-organization-finance-ops/) | Som en funktionell konsult som arbetar med Finance and Operations-appar måste du förstå hur du skapar en organisation för kunden. Den här utbildningsvägen, bland andra uppgifter, hur du ställer in juridiska personer, implementerar säkerhetsinställningar, anpassar användargränssnittet för användare, utformar och skapar mobilappar, implementerar vanliga integreringer. | Gratis, självstudier online utbildningsväg | 12 timmar  |
 | [Konfigurera och arbeta med analyser och rapporter i Finance and Operations-appar](/learn/paths/configure-analytics-reporting-finance-operations/) | Företagsledare kan fatta viktiga beslut i företaget om de har noggrann insikt i underliggande ekonomiska och operativa data. En affärsanvändare kan också konfigurera och använda verktyget elektroniskt rapportering utan en enskild kodrad för att införa nya regleringskrav och generera affärsdokument i det format som krävs för elektronisk utbyte av information med statliga organ, banker och andra parter. | Gratis, självstudier online utbildningsväg | 4 timmar   |
 
 ## <a name="financial-management"></a>Ekonomistyrning<a name="financial-management"></a>

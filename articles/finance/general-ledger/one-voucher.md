@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 08ece85c773538283fa31ed72e8af61e2da03845fbaa4e6b0507a65626bce803
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 978d0dc28f86860335a782bd2ddaa141ed639fe5
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720536"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344068"
 ---
 # <a name="one-voucher"></a>En verifikation
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 ## <a name="what-is-one-voucher"></a>Vad är en verifikation?
@@ -69,7 +70,7 @@ På grund av de problem som kan uppstå när En verifikation används, kommer de
 
 - **Senare versioner** – Ett flertal affärsbehov kan uppfyllas genom att använda En verifikation. Microsoft måste se till att alla identifierade affärsbehov fortfarande kan uppfyllas i systemet efter att funktionen har avskaffats. Därför måste nya funktioner troligen läggas till för att fylla i funktionella luckor. Microsoft kan inte skapa en specifik lösning eftersom varje funktionslucka är unik och måste utvärderas utifrån verksamhetens krav. Vissa funktionella luckor kommer troligen att ersättas med funktioner som hjälper till att uppfylla särskilda affärsbehov. Andra luckor kan emellertid fyllas genom att man fortsätter att tillåta bokföring i en journal - som när En verifikation används - men förbättrar systemet så att detta kan spåra mer detaljerat efter behov.
 
-När alla funktionella luckor har fyllts i meddelar Microsoft att funktionen kommer att avskaffas. Avskaffandet kommer dock inte att gälla under minst ett år efter det beskedet. Även om Microsoft inte kan ge en uppskattning av när funktionen En verifikation kommer att avskaffas, kommer det troligen att infalla minst två år innan avskrivningen sker. Microsofts policy är att ha minst 12 månaders marginal mellan meddelande av funktionsavskaffning och det faktiska avskaffandet, detta så att kunder och oberoende programvaruleverantörer har tid att reagera på ändringen. En organisation kanske t. ex. behöver uppdatera sina affärsprocesser, entiteter och integrationer.
+När alla funktionella luckor har fyllts i meddelar Microsoft att funktionen kommer att avskaffas. Avskaffandet kommer dock inte att gälla under minst ett år efter det beskedet. Även om Microsoft inte kan ge en uppskattning av när funktionen En verifikation kommer att avskaffas, kommer det troligen att infalla minst två år innan avskrivningen sker. Microsofts policy är att ha minst 12 månaders marginal mellan meddelande av funktionsavskaffning och det faktiska avskaffandet, detta så att kunder och oberoende programvaruleverantörer har tid att reagera på ändringen. En organisation kanske t. ex. behöver uppdatera sina affärsprocesser, entiteter och integreringer.
 
 Avskaffandet av En verifikation är en viktig ändring som kommuniceras allmänt. Som en del av kommunikationen uppdaterar Microsoft detta avsnitt, lägger upp ett bloggpost på Microsoft Dynamics 365 Finance-bloggen, uppdaterar avsnittet "Borttagna eller avskaffade funktioner", kommunicerar ändringen via lämpligt Microsoft-konto, och så vidare.
 
@@ -81,14 +82,14 @@ Utifrån samtal med våra kunder har Microsoft samlat följande lista med scenar
 
 Följande scenarier kan endast uppnås genom att använda funktionen för en verifikation. Om din organisation har något av dessa scenarier, måste du aktivera flera transaktioner som ska registreras på en verifikation genom att ändra inställningen av parametern **tillåta flera transaktioner i en verifikation** på sidan **allmänna redovisningsparametrar**. Dessa funktionella luckor fylls med andra funktioner i senare versioner.
 
-> [!Note]
+> [!NOTE]
 > [I följande scenarier måste fältet **Tillåt flera transaktioner inom en verifikation** anges till Ja på snabbfliken **Allmänt** på sidan **Allmänna huvudboksparametrar**.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Bokför kund- eller leverantörsbetalningar i sammanfattningsformulär till ett bankkonto
 
 **Scenario** En organisation kommunicerar en lista med leverantörer och belopp till dess bank och banken använder den här listan för att betala leverantörerna på organisationens vägnar. Banken skickar summan av betalningarna som ett enda uttag på bankkontot.
 
-Sammanfattning av leverantörsbetalningar stöds endast genom en verifikation. Varje leverantör anges som en separat rad för att underhålla informationen i redovisningsjournal för leverantörsreskontra. Det summerade beloppet för alla betalningar förskjuts dock till en enda linje för bankkontot. Därför visas uttaget som ett enda summerat belopp i bankredovisningen.
+Sammanfattning av leverantörsbetalningar stöds endast genom en verifikation. Varje leverantör anges som en separat rad för att underhålla informationen i redovisningsjournal för leverantörsreskontra. Det summerade beloppet för alla betalningar motbokas dock till en enda linje för bankkontot. Därför visas uttaget som ett enda summerat belopp i bankredovisningen.
 
 **Scenario** En organisation sätter in kundbetalningar, eller banken sätter in kundbetalningar på organisationens vägnar och insättningen visas som en klumpsumma på bankkontot.
 
@@ -115,15 +116,7 @@ I det här scenariot är kunder i en verifikation samma kund eftersom transaktio
 Om återbetalning av periodisk uppgift körs i kundreskontramodulen, skapas en transaktion för att flytta saldot från en kund till en leverantör. I det här scenariot måste en verifikation användas för att återbetala kunden.
 
 ### <a name="fixed-asset-maintenance-catch-up-depreciation-split-asset-calculate-depreciation-on-disposal"></a>Underhåll av anläggningstillgångar: Catch-up-avskrivning, dela tillgång, beräkna avskrivning vid avyttring
-Följande transaktioner för anläggningstillgångar kan också skapa flera transaktioner inom en verifikation:
-
-- Ett ytterligare förvärv görs på en tillgång och "catch-up”-avskrivning beräknas.
-- En tillgång delas upp.
-- En parameter för att beräkna avskrivning vid avyttring aktiveras och sedan avyttras tillgången.
-- En tillgångs servicedatum infaller före anskaffningsdatumet. Dörför bokförs en avskrivningsjustering.
-
-> [!Note]
-> När du registrerar transaktioner ska du se till att alla transaktionerna gäller för samma anläggningstillgång. Verifikationen bokförs inte om den innehåller fler än en anläggningstillgång, även om fältet **Ny verifikation** anges till bara Ett verifikationsnummer på sidan **Journalnamn** i redovisningen. Om du inkluderar fler än en anläggningstillgång i verifikationen kan meddelandet **Den kan bara finnas en transaktion för anläggningstillgång per verifikation** och du kan inte bokföra verifikationen.  
+I version 10.0.21 och senare skapas transaktioner för anläggningstillgångar för Catch Up-avskrivning, uppdelning av tillgång och beräkning av avskrivning för avyttrande av en tillgång med hjälp av olika verifikationsnummer.
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a> Växlar och skuldsedlar
 Växlar och skuldsedlar kräver att en verifikation används eftersom transaktionerna flyttar Kundreskontra/Leverantörsreskontra från ett redovisningskonto till ett annat baserat på betalningens status.
@@ -142,7 +135,7 @@ Sammanfattning av kundbetalningar stöds genom insättningsfunktionen när brygg
 
 I nettning kvittas saldon för en leverantör och kund mot varandra eftersom leverantören och kunden är samma part. Denna metod minimerar utbyte av pengar mellan företaget och kund-/leverantörsparten.
 
-Nettning kan åstadkommas genom att ange ökningen och minskningen i separata verifikationer och bokföra förskjutningen till ett clearingredovisningskonto.
+Nettning kan åstadkommas genom att ange ökningen och minskningen i separata verifikationer och bokföra motbokningen till ett clearingredovisningskonto.
 
 ### <a name="post-in-summary-to-the-general-ledger"></a>Bokföra i sammanfattning i redovisningen
 
@@ -169,11 +162,11 @@ Transaktioner kan grupperas genom att använda andra fält i journal, t.ex. sjä
 
 En organisation kan behöva överföra ett saldo från en leverantör till en annan leverantör, antingen på grund av fel eller för att en annan leverantör har tagit över ansvaret för skulden. Överföringar av denna typ inträffar även för kontotyper såsom **Kund** och **Bank**.
 
-Saldoöverföringar från ett konto (leverantör, kund, bank och så vidare) till ett annat konto bör göras via separata verifikationer och förskjutningen kan bokföras till clearingredovisningskonto.
+Saldoöverföringar från ett konto (leverantör, kund, bank och så vidare) till ett annat konto bör göras via separata verifikationer och motbokningen kan bokföras till clearingredovisningskonto.
 
 ### <a name="enter-beginning-balances"></a>Ange ingående saldon.
 
-Organisationer anger ofta ingående saldon för redovisningsjournalkonton (leverantörer, kunder, anläggningstillgångar och så vidare) som en verifikationstransaktion. Ingående saldon för varje redovisningskonto kan anges som separata verifikationer och förskjutningen kan bokföras till clearingredovisningskonto.
+Organisationer anger ofta ingående saldon för redovisningsjournalkonton (leverantörer, kunder, anläggningstillgångar och så vidare) som en verifikationstransaktion. Ingående saldon för varje redovisningskonto kan anges som separata verifikationer och motbokningen kan bokföras till clearingredovisningskonto.
 
 ### <a name="correct-the-accounting-entry-of-a-posted-customer-or-vendor-document"></a>Korrigera redovisningsposten för ett bokfört kund- eller leverantörsdokument
 

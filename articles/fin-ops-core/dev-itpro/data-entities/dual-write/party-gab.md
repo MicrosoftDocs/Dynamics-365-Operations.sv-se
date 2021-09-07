@@ -2,19 +2,19 @@
 title: Part och global adressbok
 description: I det här avsnittet beskrivs funktionerna för part och global adressbok för dubbelriktad skrivning.
 author: RamaKrishnamoorthy
-ms.date: 02/22/2021
+ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 3cb4cdaefe7bd82dec612a11d75aeedb77bce152a00ff90fb0095f75b23a4bbb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da5ca16ed87108f8046348c831d37085f6f780d7
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729786"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386695"
 ---
 # <a name="party-and-global-address-book"></a>Part och global adressbok
 
@@ -26,7 +26,7 @@ ms.locfileid: "6729786"
 
 ## <a name="party"></a>Part
 
-En part är en person eller en organisation som är involverad i en verksamhet. När konceptet med parter används kan en person eller en organisation ha mer än en roll inom en verksamhet (till exempel arbetare, kund, leverantör eller kontakt). Rollen baseras på sammanhanget och syftet. Här följer några exempel på roller från två fiktiva företag, Contoso och Fabrikam:
+En part är en person eller en organisation som är involverad i en verksamhet. När konceptet med parter används kan en person eller en organisation ha mer än en roll inom en verksamhet (till exempel medarbetare, kund, leverantör eller kontakt). Rollen baseras på sammanhanget och syftet. Här följer några exempel på roller från två fiktiva företag, Contoso och Fabrikam:
 
 + **Arbetare** – En medarbetare. Ett exempel är en medarbetare hos Contoso.
 + **Leverantör** – en leverantörsorganisation eller en egenföretagare som levererar varor eller tjänster till ett företag. Om Till exempel Fabrikam säljer varor till Contoso är Fabrikam en leverantör till Contoso.
@@ -139,7 +139,10 @@ Rutnätet innehåller följande kolumner:
 
 Du kan använda knappen **Ny elektronisk adress** ovanför rutnätet för att skapa så många postadresser du vill.
 
-Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande versioner tas alla fält för postadresser och elektroniska adresser bort från de andra flikarna (till exempel flikarna **Sammanfattning** och **Detaljer**).
+Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande versioner tas alla fält för postadresser och elektroniska adresser bort från de andra flikarna (till exempel flikarna **Sammanfattning** och **Detaljer**). Kontaktinformation som visas på fliken **Detaljer** är skrivskyddade kopior av den primära elektroniska adressen, till exempel primärt telefonnummer, primär e-postadress, primär fax och primärt Twitter-ID. Under kvalificeringsledprocessen kan du både ange ett företagtelefonnummer och ett mobiltelefonnummer. Företagstelefonnumret betraktas som primärt telefonnummer om **IsMobile=No**, och mobiltelefonnumret betraktas som sekundärt nummer om **IsMobile=Yes**.
+
+> [!TIP]
+> Använd flikarna **Adresser** och **Elektroniska adresser** i formulären **Konto** och **Kontakt** om du vill hantera postadresser och elektroniska adresser. På så sätt ser du till att adressdata synkroniseras till Finance and Operations-program.
 
 ## <a name="setup"></a>Ställ in
 
@@ -182,7 +185,7 @@ Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande ve
     `Salutations (msdyn_salutations)` | 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
 
-8. Innan du kör kartorna ovan måste du uppdatera integrationsnycklarna manuellt enligt beskrivningen i följande steg. Välj sedan **Spara**.
+8. Innan du kör kartorna ovan måste du uppdatera integreringsnycklarna manuellt enligt beskrivningen i följande steg. Välj sedan **Spara**.
 
     | Mappa | Nycklar |
     |-----|------|
@@ -249,13 +252,11 @@ Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande ve
     [CDS-försäljningsorderrubrik](mapping-reference.md#217) | salesorders
     [Försäljningsfakturahuvuden V2](mapping-reference.md#118) | fakturor
 
-> [!Note]
+> [!NOTE]
 > Kartan `CDS Contacts V2 (contacts)` är den karta som du stoppat i steg 1. När du försöker köra andra kartor visas dessa två kartor kanske i listan med underordnade kartor. Kör inte dessa kartor.
-
-> [!Note]
+>
 > Om parten och den globala adressboken är installerade måste du inaktivera insticksprogrammet `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. Om du avinstallerar lösningen för part och global adressbok måste du återaktivera insticksprogrammet.
-
-> [!Note]
+>
 > Fältet `msdyn_*partynumber` (ett textfält med en enda rad) som ingår i registren **Konto**, **Kontakt** och **Leverantör** ska inte användas i fortsättningen. Etikettnamnet har prefixet **(inaktuell)** i förtydligande syfte. Använd istället fältet **msdyn_partyid**. Fältet är en sökning för registret **msdyn_party**.
 
 > Registernamn | Gammalt fält | Nytt fält
@@ -296,7 +297,6 @@ Mer information finns i [Mappningsreferens för dubbel skrivning](mapping-refere
 
 + När du skapar en kund tillsammans med en adress och sparar deni Finance and Operations-program, kanske adressen inte synkroniseras med registret **Adress**. Detta beror på ett ordningsföljdsproblem med plattformar med dubbelskrivning. Som en lösning måste du skapa kunden först och spara den. Lägg sedan till adressen.
 + När en kundpost har en primär adress i programmen och du skapar en ny kontakt för kunden ärver kontaktposten en primär adress från den associerade kundposten i Finance and Operations-program. Detta inträffar även för leverantörskontakt. Dataverse stöder för närvarande inte detta beteende. Om dubbel skrivning är aktiverad synkroniseras en kundkontakt som ärvs med en primär adress från Finance and Operations-appen med Dataverse tillsammans med sin adress.
-+ Elektroniska adresser från registret `msdyn_partyelectronicaddress` flödar inte till de elektroniska adressfälten i registren **Konto** och **Kontakt**. Vi planerar att korrigera det här problemet i stegvisa versioner. Befintliga data i de elektroniska adressfälten i registren **Konto** och **Kontakt** skrivs inte över.
 + De elektroniska adresser som ställs in på fliken för elektronisk adress i formuläran **Konto**, **Kontakt** och **Leverantör** härrör från `msdyn_partyelectronicaddress`-registret. Denna information flödar inte till dess associerade transaktioner såsom försäljningsorder, offert och inköpsorder. Vi planerar att korrigera det här problemet i stegvisa versioner. Befintliga data i de elektroniska adressfälten i konto- och kontaktposterna fortsätter att arbeta med transaktioner såsom försäljningsorder, offert och inköpsorder.
 + I Finance and Operations-program kan du skapa en kontaktpost från formuläret **Läfgg till kontakt**. När du försöker skapa en ny kontakt från formuläret **Visa kontalt**, misslyckas åtgärden. Detta är ett känt problem.
 

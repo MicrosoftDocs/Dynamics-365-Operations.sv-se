@@ -1,6 +1,6 @@
 ---
 title: Skapa fakturor för försäljningsorder
-description: Den här uppgiftsguiden beskriver fakturering av en försäljningsorder, inklusive att sammanslå fakturor och batchbearbetning.
+description: Den tta ämne beskriver fakturering av en försäljningsorder, inklusive sammanslående av fakturor och batchbearbetning.
 author: ShivamPandey-msft
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8a6556838a2843f961e1538947a6eda090b94894ed4df8476ea60abeda8056b6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b6712779ca64f5934edd37730597541679b86e43
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771834"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394620"
 ---
 # <a name="create-sales-order-invoices"></a>Skapa fakturor för försäljningsorder
 
 [!include [banner](../../includes/banner.md)]
 
-Den här uppgiftsguiden beskriver fakturering av en försäljningsorder, inklusive att sammanslå fakturor och batchbearbetning. I den här proceduren används demonstrationsföretaget USMF.
+Den tta ämne beskriver fakturering av en försäljningsorder, inklusive sammanslående av fakturor och batchbearbetning. I den här proceduren används demonstrationsföretaget USMF.
 
 
 ## <a name="create-an-invoice-from-a-sales-order"></a>Skapa en faktura från en försäljningsorder.
 1. Gå till **Navigeringsfönstret > Moduler > Kundreskontra > Order > Levererade men inte fakturerade försäljningsorder**.
 2. Välj en försäljningsorder i listan. 
-3. I **åtgärdsrutan**, klicka på **Faktura > Generera > Faktura**. Observera att den här försäljningsordern har flera följesedlar som associeras med den. Här visas bara ordet <multiple> i stället för följesedelsnumret.  
+3. I **åtgärdsrutan**, klicka på **Faktura > Generera > Faktura**. Observera att den här försäljningsordern har flera följesedlar som associeras med den. Här visas bara ordet *multipel* i stället för följesedelsnumret.  
 4. Expandera avsnittet **Parametrar**.
     - Bokföring måste ställas in på Ja när du vill bokföra fakturan. Du kan även stänga av bokföring och bara skriva ut fakturan. Men du kan få samma resultat genom att skapa en proformafaktura i stället för en faktura.  
     - Detta alternativ används för batchjobb. Frågan körs när batchjobbet körs.

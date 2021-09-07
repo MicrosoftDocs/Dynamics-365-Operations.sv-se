@@ -4,24 +4,17 @@ description: I det här avsnittet beskrivs integreringen av anteckningsdata i du
 author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: cebab0635679fcb2c3e56c22aed1f33f8846c839ab9de694ae596c9366da96db
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: e850b44479d36c16db3c993e196cd6bfdbc52ee7
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744372"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416611"
 ---
 # <a name="note-integration"></a>Integrering av anteckning
 
@@ -53,7 +46,7 @@ Följ de här stegen om du vill skapa en notering i en kundengagemangsapp och sy
 
     ![Skapa en notering i en kundengagemangsapp.](media/notes-ce-1.png)
 
-3. Ange en titel och en beskrivning och välj sedan **Lägg till notering**.
+3. Ange en rubrik och en beskrivning och välj sedan **Lägg till notering**.
 
     ![Ange en rubrik och en beskrivning.](media/notes-ce-2.png)
 
@@ -98,7 +91,7 @@ Du kan klassificera en notering som intern eller extern.
 Du kan även skapa en URL.
 
 1. I Finance and Operations-appen, på sidan **Bilagor**, välj **Ny** \> **URL**.
-2. Ange en titel och en URL.
+2. Ange en rubrik och en URL.
 3. I fältet **Begränsning**, välj **Intern** eller **Extern**.
 
     ![Skapa en URL i en Finance and Operations-appen.](media/notes-fo-5.png)

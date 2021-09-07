@@ -1,8 +1,8 @@
 ---
-title: Konfigurera berättiganderegler och alternativ
-description: Ange berättiganderegler och optioner för hantering av förmåner i Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 06/25/2021
+title: Konfigurera regler och alternativ för berättigande
+description: I det här avsnittet beskrivs hur du ställer in berättiganderegler och -alternativ i Förmånshantering i Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3aae50b8f7fac6991f187ced44f7d122eb7ed40824bd2d53265fa06bfa87dd6a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 034957628580c468ed00b14afeb7e49af15c45cc
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756134"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423481"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurera regler och alternativ för berättigande 
 
@@ -54,7 +54,7 @@ Medarbetarna kan välja förmånsplaner under den öppna anmälan. Om de är ol�
    | **Giltig från datum och tid** | Startdatum för berättiganderegeln. | 
    | **Giltig till datum och tid** | Slutdatum för berättiganderegeln. |
    | **Användare medarbetartyp** | Anger om medarbetarens medarbetartyp av förmånsberättiganderegel. |
-   | **Typ av arbetare** | Typen av arbetare om växla för **Använd medarbetartyp** är inställd på **ja**. |
+   | **Typ av medarbetare** | Typen av medarbetare om växla för **Använd medarbetartyp** är inställd på **ja**. |
    | **Använd medarbetarstatus** | Anger om medarbetarens medarbetarens anställningsstatus i förmånsberättiganderegel. |
    | **Status** | Typen av medarbetarstatus om växla för **Använd medarbetarstatus** är inställd på **ja**. Om **Använd medarbetarstatus** är inställd på **Nej** används inte fältet. |
    | **Använd anställningskategori** | Anger om medarbetarens värde **Anställningskategori** som en del av förmånsberättiganderegeln. | 
@@ -105,7 +105,7 @@ Följande register har stöd för anpassade fält som kan användas vid berätti
 - Jobb (HcmJob)  
 - Befattning (HcmPosition)  
 - Befattningsdetaljer (HcmPositionDetail)  
-- Befattningstilldelning för arbetare  
+- Befattningstilldelning för medarbetare  
 - Anställning (HcmEmployment)  
 - EmploymentDetails (HcmEmploymentDetails)  
 - Jobbdetaljer (HcmJobDetails)  
@@ -155,7 +155,7 @@ Regler kan utvidgas ytterligare om du vill använda flera villkor inom ett enda 
 ### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Berättigandevillkor inom ett anpassat fältkriterium 
 På liknande sätt kan anpassade fält användas när du skapar berättiganderegler och arbetar på samma sätt. Du kanske till exempel vill erbjuda återbetalning på Internet till de Fargo- och Köpenhamn-medarbetare som arbetar hem, eftersom Internetkostnaderna är högre på dessa platser. Det gör du genom att skapa två anpassade fält: **Kontorsplats** (plocklista) och **Arbeta hemifrån** (kryssruta). Skapa sedan en regel som kallas **WFH-medarbetare**. Kriteriet för regeln är var **Kontorsplats = Fargo** eller **Köpenhamn** *och* där **Arbeta hemifrån = Ja**.
 
-De anpassade berättigandereglerna måste ställas in på det sätt som visas i bilden nedan. 
+De anpassade berättigandereglerna måste konfigureras på det sätt som visas i bilden nedan. 
 
 ![Berättigandevillkor inom ett anpassat fältkriterium.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
@@ -217,13 +217,13 @@ Du kan använda flexkreditprogram för att registrera anställda i förmåner en
 
    | Fält | beskrivning |
    | --- | --- |
-   | ID för förmånens kredit | Det unika ID:t för flexkreditprogrammet. |
-   | Beskrivning | En beskrivning av flexkreditprogrammet. | 
-   | Från-datum | Det datum då flexkreditprogrammet blir aktivt. |
-   | Till-datum | Slutdatumet för flexkreditprogrammet. Du kan lämna standardvärdet (12/31/2154) för att ange att flexkreditprogrammet inte har ett förfallet förfallodatum. |
-   | Totalt kreditvärde | Det antal tillgodohavanden som varje medarbetare måste använda för sina förmåner. |
-   | Regel för proportionell fördelning | Den regel som ska användas för att allokera flexkrediter när en medarbetare anställs i mitten av den flexkreditperioden. </br></br><ul><li>**Ingen** – medarbetaren får inga flexkrediter om de anställs efter att flexprogramperioden har inletts.</li><li>**Fullständig kredit** – medarbetaren får hela beloppet för flexsaldon, oavsett när de anställs.</li><li>**Proportionell fördelning** – medarbetaren får ett proportionellt antal flexsaldon baserat på startdatumet.</li></ul> |
-   | Formel för proportionell fördelning av flexkredit | Den regel som ska användas för att allokera flexkrediter för medarbetare som anställs i mitten av flexkreditperiodens förmånsperiod. Proportionell fördelning baseras på anställningens startdatum. Detta fält används endast om du väljer **Proportionell fördelning** i fältet **Regel för proportionell fördelning**. </br></br><ul><li>**Dagligen** – Proportionell fördelning av antalet flexsaldon som en medarbetare får på dagnivå. Det totala antalet flexsaldon divideras med antalet dagar i perioden. Om till exempel din förmånsperiod är 400 dagar delas det totala antalet flexsaldon med 400 för att beräkna antalet flexsaldon för medarbetare som får inlevereras per dag.</li><li>**Aktuell månad** – Proportionell fördelning av antalet flexsaldon som en medarbetare får från månadsnivån, avrundad till aktuell månad. Det totala antalet flexsaldon divideras med antalet månader i perioden. Om till exempel din förmånsperiod är 15 månader delas det totala antalet flexsaldon med 15 för att beräkna antalet flexsaldon för medarbetare som får inlevereras per månad.</li><li>**Följande månad** – Proportionell fördelning av antalet flexsaldon som en medarbetare får från månadsnivån, avrundad till nästa månad. Det totala antalet flexsaldon divideras med antalet månader i perioden. Om till exempel din förmånsperiod är 15 månader delas det totala antalet flexsaldon med 15 för att beräkna antalet flexsaldon för medarbetare som får inlevereras per månad.</li></ul> |
+   | **ID för förmånens kredit** | Det unika ID:t för flexkreditprogrammet. |
+   | **Beskrivning** | En beskrivning av flexkreditprogrammet. | 
+   | **Från-datum** | Det datum då flexkreditprogrammet blir aktivt. |
+   | **Till-datum** | Slutdatumet för flexkreditprogrammet. Du kan lämna standardvärdet (12/31/2154) för att ange att flexkreditprogrammet inte har ett förfallet förfallodatum. |
+   | **Totalt kreditvärde** | Det antal tillgodohavanden som varje medarbetare måste använda för sina förmåner. |
+   | **Regel för proportionell fördelning** | Den regel som ska användas för att allokera flexkrediter när en medarbetare anställs i mitten av den flexkreditperioden. </br></br><ul><li>**Ingen** – medarbetaren får inga flexkrediter om de anställs efter att flexprogramperioden har inletts.</li><li>**Fullständig kredit** – medarbetaren får hela beloppet för flexsaldon, oavsett när de anställs.</li><li>**Proportionell fördelning** – medarbetaren får ett proportionellt antal flexsaldon baserat på startdatumet.</li></ul> |
+   | **Formel för proportionell fördelning av flexkredit** | Den regel som ska användas för att allokera flexkrediter för medarbetare som anställs i mitten av flexkreditperiodens förmånsperiod. Proportionell fördelning baseras på anställningens startdatum. Detta fält används endast om du väljer **Proportionell fördelning** i fältet **Regel för proportionell fördelning**. </br></br><ul><li>**Dagligen** – Proportionell fördelning av antalet flexsaldon som en medarbetare får på dagnivå. Det totala antalet flexsaldon divideras med antalet dagar i perioden. Om till exempel din förmånsperiod är 400 dagar delas det totala antalet flexsaldon med 400 för att beräkna antalet flexsaldon för medarbetare som får inlevereras per dag.</li><li>**Aktuell månad** – Proportionell fördelning av antalet flexsaldon som en medarbetare får från månadsnivån, avrundad till aktuell månad. Det totala antalet flexsaldon divideras med antalet månader i perioden. Om till exempel din förmånsperiod är 15 månader delas det totala antalet flexsaldon med 15 för att beräkna antalet flexsaldon för medarbetare som får inlevereras per månad.</li><li>**Följande månad** – Proportionell fördelning av antalet flexsaldon som en medarbetare får från månadsnivån, avrundad till nästa månad. Det totala antalet flexsaldon divideras med antalet månader i perioden. Om till exempel din förmånsperiod är 15 månader delas det totala antalet flexsaldon med 15 för att beräkna antalet flexsaldon för medarbetare som får inlevereras per månad.</li></ul> |
    
    Kontrollera att varje förmånsplan endast är anmäld för ett flexkreditprogram per förmånsperiod. I annat fall vet inte systemet vilket flexkreditprogram som ska användas för att bevilja flexsaldon och du kommer att stöta på problem. 
 

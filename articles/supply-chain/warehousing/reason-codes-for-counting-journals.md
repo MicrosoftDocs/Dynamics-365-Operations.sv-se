@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4510ed7033e7c4e5187905906dcbef63f05a130bafcb7d9f19bbb360a7298119
-ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
+ms.openlocfilehash: 95f7ceb39d2afef1871f395ed562632865022b39
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "7012101"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345276"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Orsakskoder för lagerinventering
 
@@ -37,7 +37,7 @@ Innan du ställer in systemet rekommenderar vi att du definierar en strategi fö
 - Orsakskoder ska vara obligatoriska eller valfria över vissa objekt?
 - Hur många orsakskoder behöver du?
 - Måste du förvälja en begränsad lista med orsakskoder för justeringar?
-- Hur ska användarna av streckkodsskannrar använda orsakskoder? Orsakskoderna ska vara förvalda, obligatoriska eller inte redigerbara?
+- Hur ska användare av streckkodsskannrar använda orsakskoder? Orsakskoderna ska vara förvalda, obligatoriska eller inte redigerbara?
 - Behöver lagerarbetare olika orakskodbeteenden på mobila skannrar? Om svaret är Ja kan du skapa fler menyalternativ och tilldela dem till olika personer.
 - Ska orsakskoderna driva bokföring av ekonomiskt motkonto?
 
@@ -152,7 +152,7 @@ Följ dessa steg för att ställa in ett menyalternativ för mobila enheter för
     - *Rad* – Visa orsakskoden efter att varje avvikelse har registrerats.
     - *Dölj* – Visa inte orsakskoden.
 
-1. Ställ in **Redigera orsakskod för inventering** som *Ja* så att arbetaren kan redigera orsakskoden när det visas på den mobila enheten under inventering. Ställ in på *Nej* om du vill förhindra att arbetaren redigerar koden.
+1. Ställ in **Redigera orsakskod för inventering** som *Ja* så att medarbetaren kan redigera orsakskoden när det visas på den mobila enheten under inventering. Ställ in på *Nej* om du vill förhindra att medarbetaren redigerar koden.
 
 > [!NOTE]
 > Knappen **rullande inventering** kan aktiveras på alla menyalternativ för mobil enhet när inventering kan göras. Exemplen inkluderar menyalternativ för punktinventeringar, användarstyrt arbete och systemstyrt arbete.
@@ -163,7 +163,7 @@ Följ dessa steg för att ställa in ett menyalternativ för mobil enhet för ju
 
 1. Gå till **Lagerställehantering** \> **Inställningar** \> **Mobil enhet** \> **Menyalternativ för mobil enhet**.
 1. I åtgärdsrutan väljer du **Ny** för att skapa ett menyalternativ.
-1. Ställ in fälten för **Namn på mobilartikel** och **Titel** för det nya menyalternativet.
+1. Ställ in fälten för **Namn på mobilartikel** och **Rubrik** för det nya menyalternativet.
 1. Ställ in fältet **Läge** på *Arbete*.
 1. Ange alternativet **Använd befintligt arbete** till *Nej*.
 1. I fältet **Process för att skapa arbete** väljer du *Justering in* eller *Justering ut*.
@@ -176,17 +176,17 @@ Följ dessa steg för att ställa in ett menyalternativ för mobil enhet för ju
         - *Rad* – Visa orsakskoden efter att varje avvikelse har registrerats.
         - *Dölj* – Visa inte orsakskoden.
 
-    - **Redigera orsakskod för inventering** – Ställ in alternativet som *Ja* så att arbetaren kan redigera orsakskoden när det visas på den mobila enheten under inventering. Ställ in på *Nej* om du vill förhindra att arbetaren redigerar koden.
-    - **Orsakskodgrupp för inventering** – Välj en orsakskodgrupp för att begränsa listan med alternativ som visas för arbetare. Mer information om hur du ställer in orsakskodgrupper finns i avsnittet [Ställa in orsakskodgrupper för inventering](#reason-groups) tidigare i det här avsnittet. 
+    - **Redigera orsakskod för inventering** – Ställ in alternativet som *Ja* så att medarbetaren kan redigera orsakskoden när det visas på den mobila enheten under inventering. Ställ in på *Nej* om du vill förhindra att medarbetaren redigerar koden.
+    - **Orsakskodgrupp för inventering** – Välj en orsakskodgrupp för att begränsa listan med alternativ som visas för medarbetare. Mer information om hur du ställer in orsakskodgrupper finns i avsnittet [Ställa in orsakskodgrupper för inventering](#reason-groups) tidigare i det här avsnittet. 
 
 > [!NOTE]
 > När du tilldelar en orsakskodgrupp för inventering menyalternativen *Justering in* och *Justering ut* där alternativet **Använd processguide** är inställt på *Ja*, kan du få en begränsad lista över orsakskoderna för inventering som en del av bearbetningen i mobilappen Warehouse Management.
 >
-> Alternativet **Använd processguide** kan också förhindra att stora justeringskvantiteter sker av misstag. (Exempelvis kanske en arbetare kråkar skanna en streckkod med ett artikelnummer istället för ett kvantitetsvärde.) För att ställa in dessa funktioner ställer du in alternativet **Använd processguide** på *Ja* för varje relevant menyalternativ. Gå sedan till **Lagerställehantering \> Inställningar \> Arbetare** och ställ in fältet **Gräns för kvantitetsjustering** för varje relevant lagerställearbetare för att ange den maximala justeringskvantitet som arbetaren kan registrera.
+> Alternativet **Använd processguide** kan också förhindra att stora justeringskvantiteter sker av misstag. (Exempelvis kanske en medarbetare kråkar skanna en streckkod med ett artikelnummer istället för ett kvantitetsvärde.) För att ställa in dessa funktioner ställer du in alternativet **Använd processguide** på *Ja* för varje relevant menyalternativ. Gå sedan till **Lagerställehantering \> Inställningar \> medarbetare** och ställ in fältet **Gräns för kvantitetsjustering** för varje relevant lagerställearbetare för att ange den maximala justeringskvantitet som medarbetaren kan registrera.
 
 ## <a name="processing-that-uses-counting-reason-codes"></a>Bearbetning som använder orsakskoder för inventering
 
-När arbetare använder mobilappen Warehouse Management registreras orsakskoderna. Om inte en godkännandeprocess för inventering har definierats används omedelbart de registrerade orsakskoderna som en del av bokföring av inventeringsjournalen som följer.
+När medarbetare använder mobilappen Warehouse Management registreras orsakskoderna. Om inte en godkännandeprocess för inventering har definierats används omedelbart de registrerade orsakskoderna som en del av bokföring av inventeringsjournalen som följer.
 
 ### <a name="cycle-count-approvals"></a>Godkännande av rullande inventering
 
