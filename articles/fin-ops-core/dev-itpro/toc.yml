@@ -14,6 +14,8 @@
               items:
                 - name: Nyheter och ändringar på Platform updates startsida
                   href: get-started/whats-new-home-page.md
+                - name: Platform updates för version 10.0.22 (november 2021)
+                  href: get-started/whats-new-platform-updates-10-0-22.md
                 - name: Platform updates för version 10.0.21 (oktober 2021)
                   href: get-started/whats-new-platform-updates-10-0-21.md
                 - name: Platform updates för version 10.0.20 (augusti 2021)
@@ -590,24 +592,22 @@
                   href: dev-tools/update-development-tools.md
             - name: 'X++, programmeringsspråk'
               items:
-                - name: X++ och felsökningsfunktioner
-                  href: dev-tools/new-x-debugger-features.md
-                - name: Visual Studio 2017 krav för X++
-                  href: dev-tools/developer-tools-vs2017.md
-                - name: Felsöka kod av typen X++
-                  href: dev-tools/debug-xpp.md
-                - name: EventHandlerResult-klasser i scenarier med begäran eller svar
-                  href: dev-tools/event-handler-result-class.md
-                - name: Skriva affärslogik med källkod av typen C# och X++
-                  href: dev-tools/write-business-logic.md
-                - name: Ändringar i X++ och kompileraren för X++
-                  href: dev-tools/programming-language-support.md
-                - name: LINQ-provider för C#
-                  href: dev-tools/linq-provider-c.md
-                - name: Skriva regler för bästa praxis
-                  href: dev-tools/author-best-practice-rules.md
-                - name: Egenskaper för Programutforskaren
-                  href: dev-ref/application-explorer-aot-properties.md
+                - name: Språkstöd i X++
+                  items:
+                    - name: Visual Studio 2017 krav för X++
+                      href: dev-tools/developer-tools-vs2017.md
+                    - name: Felsöka kod av typen X++
+                      href: dev-tools/debug-xpp.md
+                    - name: EventHandlerResult-klasser i scenarier med begäran eller svar
+                      href: dev-tools/event-handler-result-class.md
+                    - name: Skriva affärslogik med källkod av typen C# och X++
+                      href: dev-tools/write-business-logic.md
+                    - name: LINQ-provider för C#
+                      href: dev-tools/linq-provider-c.md
+                    - name: Skriva regelverksregler
+                      href: dev-tools/author-best-practice-rules.md
+                    - name: Egenskaper för Programutforskaren
+                      href: dev-ref/application-explorer-aot-properties.md
                 - name: Språkreferens för X++
                   items:
                     - name: Språkreferens för X++ – översikt
@@ -652,11 +652,11 @@
                           href: dev-ref/xpp-interfaces.md
                         - name: Bibliotek
                           href: dev-ref/xpp-library-objects.md
-                        - name: Händelser
+                        - name: Händelser och ombud
                           href: dev-ref/xpp-events.md
-                    - name: Dataval och manipulering för X++
+                    - name: Dataval och manipulering i X++
                       items:
-                        - name: Översikt över dataval och manipulering för X++
+                        - name: Översikt över dataval och manipulering i X++
                           href: dev-ref/xpp-data/xpp-data-home-page.md
                         - name: Select-instruktion
                           href: dev-ref/xpp-data/xpp-select-statement.md
@@ -906,6 +906,8 @@
               href: dev-tools/date-effectivity.md
             - name: Utveckling för oberoende programvaruleverantörer
               items:
+                - name: Utveckling av ISV – startsida
+                  href: dev-tools/isv-dev-home-page.md
                 - name: Länka X++-moduler till paket med hjälp av ISV Studio
                   href: dev-tools/isv-studio-solutions.md
                 - name: ISV-licensiering
@@ -1018,6 +1020,8 @@
               href: lifecycle-services/performancetroubleshooting.md
             - name: Handbok för frågor
               href: lifecycle-services/querycookbook.md
+            - name: Utgångna prenumerationer och dataradering
+              href: lifecycle-services/expired-subscription-data-deletion.md
             - name: Microsoft Dynamics 365 Translation Service
               items:
                 - name: Dynamics 365 Translation Service – översikt
@@ -1044,10 +1048,12 @@
                   items:
                     - name: Systemkrav för dubbelriktad skrivning
                       href: data-entities/dual-write/dual-write-system-req.md
-                    - name: Riktlinjer för hur du ställer in dubbelriktad skrivning
+                    - name: Riktlinjer för att ställa in dubbelriktad skrivning
                       href: data-entities/dual-write/connection-setup.md
                     - name: Att tänka på vid första synkroniseringen
                       href: data-entities/dual-write/initial-sync-guidance.md
+                    - name: Gränser för livesynkronisering
+                      href: data-entities/dual-write/sync-limits.md
                     - name: Inställning av dubbelriktad skrivning från Lifecycle Services
                       href: data-entities/dual-write/lcs-setup.md
                     - name: Aktivera dubbelriktad skrivning för befintliga Finance and Operations-appar
