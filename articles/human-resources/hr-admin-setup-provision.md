@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5b0f04f27c95b2498ea2b5ad66c3df19bc8df0d9
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393533"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441175"
 ---
 # <a name="provision-human-resources"></a>Etablera Human Resources
 
@@ -43,6 +43,11 @@ Följande förutsättningar måste vara på plats innan du kan etablera en ny pr
 Innan du provisioner din första resurs eller produktionsmiljö kan du använda en [utvärderingsmiljö för Personal](https://go.microsoft.com/fwlink/p/?LinkId=2115962) för att validera personalfunktioner. Bedömningsmiljöer innehåller fiktiva data som kan användas för att utforska programmet på ett säkert sätt. Även om bedömningsmiljön ägs av den användare som har begärt den, kan andra användare bjudas in via systemets administrationserfarenhet för Personal. 
 
 Testmiljöer är inte avsedda att användas som produktionsmiljöer. De är begränsade till en 60-dagars försöksperiod. När utvärderingsperioden löper ut är miljön och all data inte raderas och kan inte återställas. Miljön kan inte konverteras till en produktions- eller tillverkningsmiljö. Du kan registrera dig för en ny bedömningsmiljö när den befintliga miljön har gått ut.
+
+När du skapar en Human Resources-utvärderingsmiljö skapas också en Power Apps-utvärderingsmiljö i klientorganisationen och kopplas till Human Resources-miljön. Power Apps-miljön, med namnet "TestDrive", har samma utvärderingsperiod som Human Resources-miljön.
+
+> [!NOTE]
+> Om den autentiserade användaren inte har behörighet att skapa Power Apps-utvärderingsmiljöer kommer det inte att gå att etablera en Human Resources-utvärderingsmiljö. Användaren måste inkluderas i den användargrupp som kan skapa utvärderingsmiljöer i Power Platform-administratörscenter. Mer information finns i [Kontrollera vem som kan skapa och hantera miljöer i Power Platform-administratörscenter](//power-platform/admin/control-environment-creation).
 
 ## <a name="plan-human-resources-environments"></a>Planera Personal-miljöer
 
@@ -69,7 +74,7 @@ För att hantera dina Personal-miljöer med LCS måste först skapa ett LCS-proj
 1. Logga in på [LCS](https://lcs.dynamics.com/Logon/Index) med det konto som du använder för din Personal-prenumeration.
 
    > [!NOTE]
-   > För att säkerställa ett lyckat tillhandahållande måste det konto som du använder för att tillhandahålla Personal-miljön tilldelas antingen rollen **Systemadministratör** eller rollen **Systemanpassare** i den Power Apps-miljö som är kopplad till Personal-miljön. Se [Konfigurera användarsäkerhet för resurser](/power-platform/admin/database-security) för mer information om hur du tilldelar säkerhetsroller till användare i Power Platform.
+   > För att säkerställa ett lyckat tillhandahållande måste det konto som du använder för att tillhandahålla Personal-miljön tilldelas antingen rollen **Systemadministratör** eller rollen **Systemanpassare** i den Power Apps-miljö som är kopplad till Personal-miljön. Mer information om att tilldela säkerhetsroller till användare i Power Platform finns i [Konfigurera användarsäkerhet för resurser](/power-platform/admin/database-security).
 
 2. Klicka på plustecknet (**+**) för att skapa ett projekt.
 

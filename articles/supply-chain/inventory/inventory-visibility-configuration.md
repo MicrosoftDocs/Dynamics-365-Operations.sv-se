@@ -1,5 +1,5 @@
 ---
-title: Konfigurera Lagersynlighet
+title: Konfigurera lagersynlighet
 description: I detta ämne beskrivs hur du konfigurerar Lagersynlighet.
 author: yufeihuang
 ms.date: 08/02/2021
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 92e42b22d424ab80303d771f760cfcf0599b9f4c
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345043"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474686"
 ---
-# <a name="inventory-visibility-configuration"></a>Konfigurera Lagersynlighet
+# <a name="configure-inventory-visibility"></a>Konfigurera lagersynlighet
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-I detta ämne beskrivs hur du konfigurerar Lagersynlighet.
+I det här avsnittet beskrivs hur du konfigurerar Lagersynlighet via Lagersynlighet-appen i Power Apps.
 
 ## <a name="introduction"></a><a name="introduction"></a>Introduktion
 
@@ -35,27 +35,58 @@ Innan du börjar arbeta med Lagersynlighet måste du utföra följande konfigura
 - [Reservationskonfiguration (valfritt)](#reservation-configuration)
 - [Exempel på standardkonfiguration](#default-configuration-sample)
 
-> [!NOTE]
-> Du kan visa och redigera konfigurationer av Lagersynlighet i [Microsoft Power Apps](./inventory-visibility-power-platform.md#configuration). När konfigurationen är slutförd väljer du **Uppdatera konfiguration** i programmet.
+## <a name="prerequisites"></a>Förutsättningar
 
-## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Konfiguration för datakälla
+Innan du börjar installerar och konfigurerar du tillägget Lagersynlighet enligt beskrivningen i [Installera och konfigurera Lagersynlighet](inventory-visibility-setup.md).
 
-Datakällan representerar det system som dina data kommer från. Bland exemplen finns `fno` (som betyder för "Dynamics 365 Finance and Operations-program") och `pos` (som betyder "försäljningsställe").
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Aktivera funktioner för lagersynlighet i Power Apps-funktionshantering
 
-Datakällskonfigurationen innehåller följande delar:
+Tillägget Lagersynlighet lägger till flera nya funktioner i Power Apps-installationen. Dessa funktioner är avstängda som standard. Om du vill använda dem öppnar du sidan **Konfiguration** i Power Apps och aktiverar följande funktioner på fliken **Funktionshantering**.
 
-- Dimension (dimensionsmappning)
-- Fysiskt mått
-- Beräknat mått
+- *OnHandReservation*
+- *OnHandMostSpecificBackgroundService*
+
+## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Hitta tjänstslutpunkten
+
+Om du inte känner till rätt tjänstslutpunkt för Lagersynlighet öppnar du sidan **Konfiguration** i Power Apps och sedan **Visa tjänstslutpunkt** i det övre högra hörnet. Sidan visar korrekt tjänstslutpunkt.
+
+## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Konfigurationssidan i appen Lagersynlighet
+
+I Power Apps, på sidan **Konfiguration** i [Lagersynlighet-appen](inventory-visibility-power-platform.md), kan du konfigurera behållningskonfigurationen och konfigurationen av preliminär reservation. När tillägget har installerats innehåller standardkonfigurationen värdet från Microsoft Dynamics 365 Supply Chain Management (datakällan `fno`). Du kan granska standardinställningarna. Baserat på dina affärsbehov och lagerbokföringskraven i det externa systemet kan du modifiera konfigurationen för att standardisera det sätt på vilket lagerändringar kan bokföras, ordnas och efterfrågas i flera olika system. I de återstående avsnitten i det här ämnet beskrivs hur du använder varje del av sidan **Konfiguration**.
+
+När konfigurationen är slutförd, se till att du väljer **Uppdatera konfiguration** i appen.
+
+## <a name="data-source-configuration"></a>Konfiguration för datakälla
+
+Varje datakälla representerar ett system som dina data kommer från. Namn på exempeldatakällor är bland annat `fno` (som betyder för "Dynamics 365 Finance and Operations-program") och `pos` (som betyder "försäljningsställe"). Standardinställningen är att Supply Chain Management konfigureras som standarddatakälla (`fno`) i Lagersynlighet.
 
 > [!NOTE]
 > Datakällan `fno` är reserverad för Dynamics 365 Supply Chain Management.
 
-### <a name="dimension-dimension-mapping"></a><a name="data-source-configuration-dimension"></a>Dimension (dimensionsmappning)
+Följ dessa steg för att lägga till en datakälla.
 
-Syftet med dimensionskonfigurationen är att standardisera integreringen av flera system för bokföring av händelser och frågor, baserat på dimensionskombinationer.
+1. Logga in i din Power Apps-miljö och öppna **Lagersynlighet**.
+1. Öppna sidan **Konfiguration**.
+1. På fliken **Datakälla** väljer du **Ny datakälla** om du vill lägga till en datakälla.
 
-Lagersynlighet stöder följande allmänna basdimensioner.
+> [!NOTE]
+> När du lägger till en datakälla måste du kontrollera namn, fysiska mått och dimensionsmappningar för datakällan innan du uppdaterar konfigurationen för tjänsten Lagersynlighet. Du kan inte ändra dessa inställningar efter det att du har valt **Uppdatera konfiguration**.
+
+Datakällskonfigurationen innehåller följande delar:
+
+- Dimensioner (dimensionsmappning)
+- Fysiska mått
+- Beräknade mått
+
+### <a name="dimensions-dimension-mapping"></a><a name="data-source-configuration-dimension"></a>Dimensioner (dimensionsmappning)
+
+Syftet med dimensionskonfigurationen är att standardisera integreringen av flera system för bokföring av händelser och frågor, baserat på dimensionskombinationer. Lagersynligheten innehåller en lista över basdimensioner som kan mappas från datakällans dimensioner. Det finns 33 dimensioner att tillgå för mappning.
+
+- Om du använder Supply Chain Management som en av dina datakällor mappas som standard 13 dimensioner till standarddimensionerna i Supply Chain Management. Tolv andra dimensioner (`inventDimension1` till `inventDimension12`) mappas till anpassade dimensioner i Supply Chain Management. Återstående åtta dimensioner är utökade dimensioner som du kan mappa till externa datakällor.
+- Om du inte använder Supply Chain Management som en av dina datakällor kan du mappa dimensionerna fritt. Följande tabell visar den fullständiga listan över tillgängliga dimensioner.
+
+> [!NOTE]
+> Om din dimension inte finns i standarddimensionslistan och du använder en extern datakälla rekommenderar vi att du använder `ExtendedDimension1` via `ExtendedDimension8` för att utföra mappningen.
 
 | Dimensionstyp | Basdimension |
 |---|---|
@@ -73,7 +104,8 @@ Lagersynlighet stöder följande allmänna basdimensioner.
 | Lagerställespecifik | `LicensePlateId` |
 | Annat | `VersionId` |
 | Lager (anpassat) | `InventDimension1` via `InventDimension12` |
-| Anknytning | `ExtendedDimension1` via `ExtendedDimension8` |
+| Tillägg | `ExtendedDimension1` via `ExtendedDimension8` |
+| System | `Empty` |
 
 > [!NOTE]
 > Dimensionstyper som anges i föregående tabell är endast avsedda som referens. Du behöver inte definiera dem i Lagersynlighet.
@@ -92,11 +124,24 @@ Externa system kan få åtkomst till Lagersynlighet genom sina RESTful-API:er. F
 
 Genom att konfigurera en dimensionsmappning kan du skicka de externa dimensionerna direkt till Lagersynlighet. Lagersynlighet konverterar då automatiskt externa dimensioner till basdimensioner.
 
+Om du vill lägga till dimensionsmappningar följer du dessa steg.
+
+1. Logga in i din Power Apps-miljö och öppna **Lagersynlighet**.
+1. Öppna sidan **Konfiguration**.
+1. På fliken **Datakälla**, i avsnittet **Dimensionsmappningar**, väljer du **Lägg till** om du vill lägga till dimensionsmappningar.
+    ![Lägga till dimensionsmappningar](media/inventory-visibility-dimension-mapping.png "Lägga till dimensionsmappningar")
+
+1. I fältet **Dimensionsnman** anger du källdimensionen.
+1. I fältet **Till basdimension** anger du den dimension i Lagersynlighet som du vill mappa.
+1. Välj **Spara**.
+
+Om datakällan till exempel innehåller en produktfärgsdimension kan du mappa den till basdimensionen `ColorId` för att lägga till en anpassad `ProductColor`- dimension i `exterchannel`-datakällan. Den mappas sedan till `ColorId`-basdimensionen.
+
 ### <a name="physical-measures"></a>Fysiska mått
 
-Fysiska mått ändrar kvanheten och återspeglar lagerstatusen. Du kan definiera dina egna fysiska mått, baserat på dina behov.
+När en datakälla bokför en lagerändring i Lagersynlighet bokför den denna ändring med hjälp av *fysiska mått*. Fysiska mått ändrar kvanheten och återspeglar lagerstatusen. Du kan definiera dina egna fysiska mått, baserat på dina behov. Frågor kan baseras på de fysiska måtten.
 
-Lagerstyrning innehåller en lista över fysiska standardmått som är kopplade till Supply Chain Management (`fno`-datakällan). Följande tabell innehåller ett exempel på fysiska mått.
+Lagerstyrning innehåller en lista över fysiska standardmått som är kopplade till Supply Chain Management (`fno`-datakällan). Dessa fysiska standardmått tas från lagertransaktionens status på sidan **Lagerbehållningslista** i Supply Chain Management (**Lagerstyrning \> Förfrågningar och rapporter \> Behållningslista**). Följande tabell innehåller ett exempel på fysiska mått.
 
 | Namn på fysiskt mått | beskrivning |
 |---|---|
@@ -117,11 +162,33 @@ Lagerstyrning innehåller en lista över fysiska standardmått som är kopplade 
 | `ReservOrdered` | Beställt reserverat |
 | `ReservPhysical` | Reserverat fysiskt |
 
-### <a name="calculated-measures"></a><a name="data-source-configuration-calculated-measure"></a>Beräknade mått
+Om datakällan är Supply Chain Management behöver du inte skapa de fysiska standardmåtten på nytt. För externa datakällor kan du emellertid skapa nya fysiska mått genom att följa dessa steg.
 
-Beräknade mått ger en anpassad beräkningsformel som består av en kombination av fysiska mått. Med hjälp av denna funktion kan du definiera en uppsättning fysiska mått som ska läggas till, och/eller en uppsättning fysiska mått som dras ifrån, för att generera det anpassade måttet.
+1. Logga in i din Power Apps-miljö och öppna **Lagersynlighet**.
+1. Öppna sidan **Konfiguration**.
+1. På fliken **Datakälla**, i avsnittet **Fysiska mått** väljer du **Lägg till**, anger ett källmåttnamn samt sparar dina ändringar.
 
-Du har exempelvis följande frågeresultat:
+### <a name="calculated-measures"></a>Beräknade mått
+
+Du kan använda Lagersynlighet när du vill söka efter både fysiska lagermått *och anpassade beräknade mått*. Beräknade mått ger en anpassad beräkningsformel som består av en kombination av fysiska mått. Med hjälp av denna funktion kan du definiera en uppsättning fysiska mått som ska läggas till, och/eller en uppsättning fysiska mått som dras ifrån, för att generera det anpassade måttet.
+
+Med konfigurationen kan du definiera en uppsättning modifierare som läggs till eller dras ifrån för att få den totala sammanlagda utleveranskvanheten.
+
+Följ stegen nedan för att konfigurera ett anpassat beräknat mått.
+
+1. Logga in i din Power Apps-miljö och öppna **Lagersynlighet**.
+1. Öppna sidan **Konfiguration**.
+1. På fliken **Beräknat mått** väljer du **Ny måttberäkning** om du vill lägga till ett beräknat mått. Ställ sedan in fälten enligt beskrivningen i följande tabell.
+
+    | Fält | Värde |
+    |---|---|
+    | Nytt beräknat måttnamn | Ange namnet på det beräknade måttet. |
+    | Datakälla | Frågesystemet är en datakälla. |
+    | Modifierarare för datakälla | Ange modifierarens datakälla. |
+    | Modifierare | Ange modifierarens namn. |
+    | Modifierartyp | Välj typ av modifierare (*Tillägg* eller *Avdrag*). |
+
+Du kan exempelvis ha följande frågeresultat.
 
 ```json
 [
@@ -202,7 +269,7 @@ När denna beräkningsformel används kommer det nya frågeresultatet att omfatt
 ]
 ```
 
-`MyCustomAvailableforReservation`-resultatet som baseras på beräkningsinställningen i de anpassade måtten är 100 + 50 + 80 + 90 + 30 – 10 – 20 – 60 – 40 = 220.
+`MyCustomAvailableforReservation`-resultatet som baseras på beräkningsinställningen i de anpassade måtten är 100 + 50 - 10 + 80 - 20 + 90 + 30 - 60 - 40 = 220.
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Patritionskonfiguration
 
@@ -230,11 +297,21 @@ Lagersynlighet ger större flexibilitet eftersom du då kan konfigurerar _index_
 | Dimension | De basdimensioner som frågeresultatet sammanställs på. |
 | Hierarki | Hierarkin används för att definiera de dimensionskombinationer som kan efterfrågas. Du kan till exempel konfigurera en dimensionsuppsättning som har en hierarkisekvens bestående av `(ColorId, SizeId, StyleId)`. I detta fall stöder systemet frågor i fyra dimensionskombinationer. Den första kombinationen är tom, den andra är `(ColorId)`, den tredje är `(ColorId, SizeId)`, och den fjärde är `(ColorId, SizeId, StyleId)`. Övriga kombinationer stöds inte. Mer information finns i följande exempel. |
 
+Följ dessa steg för att konfigurera ditt index för produkthierarki.
+
+1. Logga in i din Power Apps-miljö och öppna **Lagersynlighet**.
+1. Öppna sidan **Konfiguration**.
+1. På fliken **Index för produkthierarki**, i avsnittet **Dimensionsmappningar**, väljer du **Lägg till** om du vill lägga till dimensionsmappningar.
+1. En lista över index finns som standard. Om du vill ändra ett befintligt index väljer du **Redigera** eller **Lägg till** i avsnittet för relevant index. Välj **Ny indexuppsättning** om du vill skapa en ny indexuppsättning. I fältet **Dimension** väljer du i listan över basdimensioner för respektive rad i respektive indexuppsättning. Värden för följande fält genereras automatiskt:
+
+    - **Ange nummer** – Dimensioner som tillhör samma grupp (index) grupperas tillsammans och samma uppsättningsnummer tilldelas dem.
+    - **Hierarki** – Hierarkin används för att definiera de dimensionskombinationer som stöds och som kan efterfrågas i en dimensionsgrupp (index). Om du till exempel ställer in en dimensionsgrupp med hierarkisekvsekvensen *Format*, *Färg* och *Storlek* stöds resultatet av tre frågegrupper. Den första gruppen gäller endast formatet. Den andra gruppen är en kombination av format och färg. Den tredje gruppen är en kombination av format, färg och storlek. Övriga kombinationer stöds inte.
+
 ### <a name="example"></a>Exempel
 
 Detta avsnitt innehåller ett exempel som visar hur hierarkin fungerar.
 
-Du har följande artiklar på lager.
+Följande tabell innehåller en lista över tillgängligt lager för detta exempel.
 
 | Artikel | ColorId | SizeId | StyleId | Antal |
 |---|---|---|---|---|
@@ -246,7 +323,7 @@ Du har följande artiklar på lager.
 | T-shirt | Rött | Litet | Vanlig | 6 |
 | T-shirt | Rött | Stort | Vanlig | 7 |
 
-Detta är indexet.
+Följande tabell visar hur indexhierarkin ställs in.
 
 | Ange nummer | Dimension | Hierarki |
 |---|---|---|
@@ -284,6 +361,8 @@ Med indexet kan du fråga efter lagerbehållningen på följande sätt:
 
 > [!NOTE]
 > Basdimensioner som definieras i partitionskonfigurationen ska inte definieras i indexkonfigurationer.
+> 
+> Om du måste fråga endast lager som aggregeras av alla dimensionskombinationer kan du konfigurera ett enda index som innehåller basdimensionen `Empty`.
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Reservationskonfiguration (valfritt)
 
@@ -296,22 +375,37 @@ Reservationskonfiguration krävs om du vill använda funktionen för preliminär
 
 ### <a name="soft-reservation-mapping"></a>Preliminär reservationsmappning
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 När du gör en reservation kanske du vill veta om lagerbehållningen för närvarande är tillgänglig för reservation. Valideringen är kopplad till ett beräknat mått som representerar en beräkningsformel för en kombination av fysiska mått.
 
-Ett reservationsmått baseras till exempel på det fysiska måttet `SoftReservOrdered` från datakällan `iv` (Lagersynlighet). I det här fallet kan du konfigurera det beräknade måttet `AvailableToReserve` för datakällan `iv` som visas här.
+Genom att ställa in mappningen från det fysiska måttet till det beräknade måttet aktiverar du tjänsten Lagersynlighet för att automatiskt validera reservationstillgängligheten, baserat på det fysiska måttet.
 
-| Beräkningstyp | Datakälla | Fysiskt mått |
-|---|---|---|
-| Tillägg | `fno` | `AvailPhysical` |
-| Tillägg | `pos` | `Inbound` |
-| Subtraktion | `pos` | `Outbound` |
-| Subtraktion | `iv` | `SoftReservOrdered` |
+Innan du ställer in den här mappningen måste de fysiska måtten, de beräknade måtten och dessas datakällor definieras på flikarna **Datakälla** och **Beräknat mått** på sidan **Konfiguration** i Power Apps (enligt beskrivet i detta ämne).
 
-Skapa sedan en preliminär mappning i syfte att tillhandahålla en mappning från reservationsmåttet `SoftReservOrdered` till det beräknade måttet `AvailableToReserve`.
+Om du vill definiera mappningen för preliminär reservation följer du dessa steg.
 
-| Datakälla för fysiskt mått | Fysiskt mått | Tillgänglig för datakälla för reservation | Tillgänglig för beräknat reservationsmått |
-|---|---|---|---|
-| `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+1. Definiera det fysiska mått som fungerar som mått på preliminär reservation (till exempel `SoftReservOrdered`).
+1. På fliken **Beräknat mått** på fliken **Konfiguration** definierar du det *beräknade måttet för reservation* (AFR) som innehåller den AFR-beräkningsformel som du vill mappa till det fysiska måttet. Du kan till exempel konfigurera `AvailableToReserve` (tillgängligt för reservation) så att detta mappas till det tidigare definierade fysiska måttet `SoftReservOrdered`. På det här sättet kan du se vilka kvantiteter med lagerstatusen `SoftReservOrdered` som är tillgängliga för reservation. Följande tabell visar beräkningsformeln för AFR.
+
+    | Beräkningstyp | Datakälla | Fysiskt mått |
+    |---|---|---|
+    | Tillägg | `fno` | `AvailPhysical` |
+    | Tillägg | `pos` | `Inbound` |
+    | Subtraktion | `pos` | `Outbound` |
+    | Subtraktion | `iv` | `SoftReservOrdered` |
+
+    Vi rekommenderar att du konfigurerar det beräknade måttet så att det innehåller det fysiska mått som reservationsmåttet baseras på. På det här sättet påverkas den beräknade måttkvantiteten av reservationsmåttkvantiteten. I det här exemplet ska därför det beräknade måttet `AvailableToReserve` för datakällan `iv` innehålla det fysiska måttet `SoftReservOrdered` från `iv` som en komponent.
+
+1. Öppna sidan **Konfiguration**.
+1. På fliken **Preliminär reservationsmappning** konfigurerar du mappnignen från fysiskt mått till beräkna mått. I det föregående exemplet kan du använda följande inställningar för att mappa `AvailableToReserve`till det tidigare definierade fysiska `SoftReservOrdered`-måttet.
+
+    | Datakälla för fysiskt mått | Fysiskt mått | Tillgänglig för datakälla för reservation | Tillgänglig för beräknat reservationsmått |
+    |---|---|---|---|
+    | `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+
+    > [!NOTE]
+    > Om du inte kan redigera fliken **Preliminär reservationsmappning** kan du behöva du aktivera funktionen *OnHandReservation* på fliken **Funktionshantering**.
 
 När du gör reservationer i `SoftReservOrdered` hittar Lagersynlighet nu automatiskt `AvailableToReserve` och dess relaterade beräkningsformel för att utföra reservationsvalideringen.
 
@@ -348,11 +442,16 @@ I detta fall gäller följande beräkning:
 
 Om du därför försöker göra reservationer på `iv.SoftReservOrdered` och kvantiteten är mindre än eller lika med `AvailableToReserve` (10) kan du göra reservationen.
 
+> [!NOTE]
+> När du anropar reservations-API:t kan du kontrollera reservationsvalideringen genom att ange den booleska parametern `ifCheckAvailForReserv` i begärandetexten. Ett värde `True` betyder att valideringen krävs, medan ett värde av `False` betyder att valideringen inte krävs. Standardvärdet är `True`.
+
 ### <a name="soft-reservation-hierarchy"></a>Preliminär reservationshierarki
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Reservationshierarkin beskriver den dimensionssekvens som måste anges när reservationer görs. Detta fungerar på samma sätt som produktindexhierarkin fungerar för behållningsfrågor.
 
-Reservationshierarkin är oberoende av produktindexhierarkin. Tack vare detta oberoende kan du implementera kategorihantering där användare kan bryta ned dimensionerna i detaljer i syfte att specificera kraven för att göra mer exakta reservationer.
+Reservationshierarkin är oberoende av produktindexhierarkin. Tack vare detta oberoende kan du implementera kategorihantering där användare kan bryta ned dimensionerna i detaljer i syfte att specificera kraven för att göra mer exakta reservationer. Din preliminära reservationshierarki bör innehålla `SiteId` och `LocationId` som komponenter eftersom de skapar partitionskonfigurationen. När du gör reservationen måste du ange en partition för produkten.
 
 Här följer ett exempel på en preliminär reservationshierarki.
 
@@ -364,10 +463,8 @@ Här följer ett exempel på en preliminär reservationshierarki.
 | `SizeId` | 4 |
 | `StyleId` | 5 |
 
-I det här exemplet kan du göra reservationer i följande dimensionssekvenser:
+I det här exemplet kan du göra reservationer i följande dimensionssekvenser. Du måste ange en partition för produkten när du gör reservationen. Därför är `(SiteId, LocationId)` den grundläggande hierarki som du kan använda.
 
-- `()` – Ingen dimension har angetts.
-- `(SiteId)`
 - `(SiteId, LocationId)`
 - `(SiteId, LocationId, ColorId)`
 - `(SiteId, LocationId, ColorId, SizeId)`
@@ -375,9 +472,24 @@ I det här exemplet kan du göra reservationer i följande dimensionssekvenser:
 
 En giltig dimensionssekvens bör strikt följa reservationshierarkin, dimension för dimension. Hierarkisekvensen är till exempel `(SiteId, LocationId, SizeId)` inte giltig eftersom `ColorId` saknas.
 
+## <a name="complete-and-update-the-configuration"></a>Slutför och uppdatera konfigurationen
+
+När du har slutfört konfigurationen måste du utföra alla ändringar av lagersynligheten. Om du vill utföra ändringar väljer du **Uppdateringskonfiguration** i det övre högra hörnet på sidan **Konfiguration** i Power Apps.
+
+Första gången du väljer **Uppdateringskonfiguration** efterfrågar systemet dina autentiseringsuppgifter.
+
+- **Klient-ID** – Det Azure-program-ID som du har skapat för Lagersynlighet.
+- **Klientorganisations-ID** – Ditt ID för Azure-klientorganisation.
+- **Klienthemlighet** – Den hemlighet för Azure-program som du har skapat för Lagersynlighet.
+
+När du har loggat in uppdateras konfigurationen i tjänsten Lagersynlighet.
+
+> [!NOTE]
+> Se till att validera namn, fysiska mått och dimensionsmappningar för din datakälla innan du uppdaterar konfigurationen för tjänsten Lagersynlighet. Du kan inte ändra dessa inställningar efter det att du har valt **Uppdatera konfiguration**.
+
 ## <a name="default-configuration-sample"></a><a name="default-configuration-sample"></a>Exempel på standardkonfiguration
 
-Under dess initialiseringsfas skapar Lagersynlighet en standardkonfiguration. Du kan ändra konfigurationenvid behov.
+Under dess initieringsfas skapar Lagersynlighet en standardkonfiguration som beskrivs här. Du kan ändra denna konfiguration vid behov.
 
 ### <a name="data-source-configuration"></a>Konfiguration för datakälla
 

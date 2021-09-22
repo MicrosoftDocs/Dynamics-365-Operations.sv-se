@@ -2,7 +2,7 @@
 title: Konstruktionsändringshantering – översikt
 description: Det här ämnet innehåller en översikt över konstruktionsändringshantering som hjälper dig att planera och hantera produktversioner samt hantera ändringar av produktens livscykler och konstruktion.
 author: t-benebo
-ms.date: 11/11/2020
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.custom: intro-internal
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8f2d577d9e48ced9d4c516a66e4f53671417875cbfb51bd6bdc2cb0938d83c01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: Release 10.0.21
+ms.openlocfilehash: b4fe2d62bc8084cf8c0d10b7bcb94f08cc618900
+ms.sourcegitcommit: 07fada750de54e2907377df2a9f7dae497c3b66e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714966"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7467408"
 ---
 # <a name="engineering-change-management-overview"></a>Konstruktionsändringshantering – översikt
 
@@ -43,9 +43,11 @@ Konstruktionsändringshantering hjälper dig att planera och hantera produktvers
 
 Föregående video ([ändra hanteringsfunktioner i Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) finns med i [Finance and Operations spellistan](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som är tillgänglig på YouTube.
 
-## <a name="turn-on-the-engineering-change-management-and-version-dimension-features-for-your-system"></a>Aktivera funktionerna för konstruktionsändringshantering och versionsdimensioner för ditt system
+## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>Aktivera funktionerna för konstruktionsändringshantering för ditt system
 
-Innan du kan använda hantering av konstruktionsändringar måste du aktivera både funktionen *Konstruktionsändringshantering* och dess konfigurationsnyckel. Om du även vill spåra versionsdimensionen för produkter i transaktioner (valfritt), måste du också aktivera funktionen för *produktversionsdimension* och dess konfigurationsnyckel.
+Innan du kan använda hantering av konstruktionsändringar måste du aktivera både funktionen *Konstruktionsändringshantering* och dess konfigurationsnyckel. Om du även vill spåra versionsdimensionen för produkter i transaktioner (valfritt), måste du också aktivera både funktionen för *produktversionsdimension* och dess konfigurationsnyckel. När dessa förutsättningar har konfigurerats efter behov kan du aktivera ytterligare valfria funktioner för konstruktionsändringshantering.
+
+### <a name="turn-on-the-basic-engineering-change-management-features"></a>Aktivera de grundläggande funktionerna för konstruktionsändringshantering
 
 Sätt först på funktionerna genom att följa dessa steg.
 
@@ -53,6 +55,8 @@ Sätt först på funktionerna genom att följa dessa steg.
 1. Sök efter uppdateringar.
 1. Aktivera funktionen med namnet *Konstruktionsändringshantering*.
 1. Om du vill använda den, ska du även aktivera funktionen med namnet *Produktdimensionsversion*.
+
+### <a name="turn-on-the-required-configuration-keys"></a>Aktivera de konfigurationsnycklar som behövs
 
 Sätt sedan på konfigurationstangenterna genom att följa dessa steg.
 
@@ -70,5 +74,18 @@ Sätt sedan på konfigurationstangenterna genom att följa dessa steg.
 
 > [!IMPORTANT]
 > Från och med april 2022 aktiveras licensnycklarna för både **Konstruktionsändringshantering** och **Produktdimension – Version** som standard för alla nya installationer, men de kan fortfarande inaktiveras vid behov.
+
+### <a name="turn-on-additional-engineering-change-management-features"></a>Aktivera de ytterligare funktionerna för konstruktionsändringshantering
+
+När du har aktiverat de grundläggande funktionerna för konstruktionsändringshantering och aktiverar deras konfigurationsnycklar, läggs flera ytterligare och valfria funktioner för konstruktionsändringshantering till i funktionshanteringen. Var och en av dessa funktioner visas under modulen **Konstruktionsändringshantering**. I tabellen nedan beskrivs de olika valfria funktionerna och här finns länkar till mer information.
+
+| Funktionsnamn i funktionshantering | beskrivning |
+|---|---|
+| Aktivera ändringshantering för befintliga produkter | <p>Med hjälp av den här funktionen kan du konvertera befintliga produkter till konstruktionsprodukter så att du kan börja hantera dem genom att använda konstruktionsändringshantering.</p><p>För mer information, se [Aktivera ändringshantering för befintliga produkter](change-management-existing-products.md).</p> |
+| Konstruktionsmeddelanden för produktion | <p>När en produkt ändras inom konstruktion kan det vara viktigt att meddela produktionen om dessa ändringar. På det sättet kan produktionsarbetare vidta lämpliga åtgärder, till exempel ersättning av komponenter, strukturlisteersättning eller flödesersättning. Med hjälp av den här funktionen kan du meddela produktionen om förändringar av produkter som tillverkas.</p><p>För mer information, se [Hantera ändringar av konstruktionsprodukter](engineering-change-management.md).</p> |
+| Förbättrat attributarv för konstruktionsändringshantering | <p>Den här funktionen förenklar hanteringen av attribut för färdiga varor eller mellanliggande artiklar. När den här funktionen är aktiverad är det enklare att identifiera alla attribut som tillhör en artikel, och du kan välja de attribut som ska spridas från den artikeln till den överordnade artikeln. Den här funktionen är användbar när en del av en färdig vara, till exempel är ömtålig, giftig eller brandfarlig eftersom du lätt kan identifiera det ömtåliga, giftiga eller brandfarliga attributet och sprida det till det färdiga varan.</p><p>Mer information finns i [Konstruktionsattribut och sökning efter konstruktionsattribut](engineering-attributes-and-search.md).</p> |
+| Kontroller av produktberedskap | <p>Med funktionen kan du också konfigurera beredskapskontroller för standardprodukter (icke-konstruktions). Använd produktberedskapskontroller för att se till att varje produkt är fullständigt definierad och alla nödvändiga policyer har konfigurerats innan produkten görs tillgänglig och används i transaktioner. Om du inaktiverar den här funktionen efter att du har använt den under en tid, raderas alla befintliga beredskapskontroller för standardprodukter.</p><p>Mer information finns i [Produktberedskap](product-readiness.md).</p> |
+| Hantera formeländringar och deras ingredienser | <p>Med hjälp av den här funktionen kan du spåra ändringar av formelingredienser, samprodukter och biprodukter.</p><p>Mer information finns i [Hantera ändringar i formler och deras ingredienser](manage-formula-changes.md).</p> |
+| Variantgenerering för tekniska produkter | <p>Med hjälp av den här funktionen kan du skapa varianter för produktionsprodukter baserade på tillgängliga dimensionsvärden.</p><p>Mer information finns i [Generera varianter för tekniska produkter](engineering-variants.md).</p> |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

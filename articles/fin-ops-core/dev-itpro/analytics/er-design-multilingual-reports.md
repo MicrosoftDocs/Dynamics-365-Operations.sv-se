@@ -2,7 +2,7 @@
 title: Designa flerspråkiga rapporter i elektronisk rapportering
 description: I det här avsnittet beskrivs hur du kan använda elektronisk rapporteringsetiketter för att skapa flerspråkiga rapporter.
 author: NickSelin
-ms.date: 04/21/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86facc26f57b3ab166d6274689d774adbac50e46aa7759cfd079a0ef5a45456e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e199b350101e10ba3e424894f4dc9881d05c9558
+ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718439"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7473415"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Designa flerspråkiga rapporter i elektronisk rapportering
 
 [!include[banner](../includes/banner.md)]
+
+[!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Översikt
 
@@ -229,10 +231,14 @@ Som tidigare nämnts i det här avsnittet **Etikett** och **Beskrivning** för v
 - Värdet för en ER-etikett som är länkad till attributet **etikett** lagras i fältet **etikett** för den returnerade posten.
 - Värdet för en ER-etikett som är länkad till attributet **Beskrivning** lagras i fältet **Beskrivning** för den returnerade posten.
 
+## <a name="performance"></a><a name=performance></a>Resultat
+
+När du konfigurerar en ER-formatkomponent för att generera en rapport på det [språk](#language) du föredrar, eller för att importera ett inkommande dokument där innehållet analyseras efter önskat språk, rekommenderar vi att du aktiverar funktionen **Cachelagra önskat språk för aktuell användare för ER-körningar** i arbetsytan [Funktionshantering](../../fin-ops/get-started/feature-management/feature-management-overview.md). Den här funktionen förbättrar prestandan, särskilt för ER-formatkomponenter som innehåller flera referenser till etiketter i ER-formler och -bindningar och många [validerings](general-electronic-reporting-formula-designer.md#TestFormula)regler för att generera användarmeddelanden på önskat språk.
+
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Översikt över elektronisk rapportering](general-electronic-reporting.md)
-- [Funktioner för elektronisk rapportering](er-formula-language.md#functions)
+- [Funktioner för elektronisk rapportering](er-formula-language.md#Functions)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

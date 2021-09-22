@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c9f94ec35ebed5a14252377fb543de09cb994ffd
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: f84a81444e6d5ce9a0d2da4c9a60b1ae3478ee2f
+ms.sourcegitcommit: 2d8035f8bb75957c793c0d293c079a792595eeaf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416190"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7481325"
 ---
 # <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>Synkronisera på begäran med prissättningsmotorn Supply Chain Management
 
@@ -41,7 +41,7 @@ Microsoft Dynamics 365 Supply Chain Management inkluderar en prissättningsmotor
     + Summa moms
     + Totalt belopp
     
-5. För att säkerställa att systemet beaktar handels- och försäljningsavtal vid beräkningen av priset:
+5. För att säkerställa att systemet beaktar handelsavtal vid beräkningen av priset:
     1. Navigera till din miljö för Supply Chain Management.
     2. Gå till **Kundreskontra \> Inställningar \> Parametrar för kundreskontra**.
     3. Klicka på fliken **priser** i navigeringsfältet på sidan.
@@ -51,7 +51,7 @@ Microsoft Dynamics 365 Supply Chain Management inkluderar en prissättningsmotor
 
 När du väljer **prisorder** i Sales anropar funktionen **summor** på fliken **försäljningsorder \> vy** i Supply Chain Management anropas för tillhörande försäljningsorder. Värdena i ordersumman i Sales används för att fylla i motsvarande kolumner i Supply Chain Management.
 
-När försäljningsordersumman beräknas i Supply Chain Management., evaluerar beräkningen de befintliga handelsavtalen och försäljningsavtalen för kunden och de produkter som anges i försäljningsordern. Denna information används för att beräkna summorna. När **prisorder** har valts visar Sales automatiskt alla inställningar som har gjorts i hanteringen av Supply Chain Management.
+När försäljningsordersumman beräknas i Supply Chain Management, evaluerar beräkningen de befintliga handelsavtalen för kunden och de produkter som anges i försäljningsordern. Denna information används för att beräkna summorna. När **prisorder** har valts visar Sales automatiskt alla inställningar som har gjorts i hanteringen av Supply Chain Management.
 
 ## <a name="limitations"></a>Begränsningar
 

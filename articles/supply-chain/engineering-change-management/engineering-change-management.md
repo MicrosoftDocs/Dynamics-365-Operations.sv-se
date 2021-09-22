@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: bb6fd57f200b101cb2df396cb10417feaa9425c1
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 2fe94ea1afb74520ee97268f62d42832bad5c3df
+ms.sourcegitcommit: 07fada750de54e2907377df2a9f7dae497c3b66e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384595"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7467432"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Hantera ändringar av konstruktionsprodukter
 
@@ -122,6 +122,9 @@ Granska berörda transaktioner, blockera valda transaktioner och skicka relatera
     - **Visa historik** – Öppna en historik över åtgärder som har genomförts på den valda transaktionen genom att använda dialogrutan **Affärspåverkan till öppna transaktioner**. (Historiken visar till exempel om meddelanden har skickats eller om transaktioner har spärrats.) 
     - **Visa alla transaktioner** – Öppna den fullständiga listan över alla transaktioner, inte bara de öppna transaktionerna.
 
+> [!IMPORTANT]
+> Knappen **Meddela produktion** är bara tillgänglig om funktionen *Konstruktionsmeddelanden för produktion* är aktiverad i systemet. Instruktioner finns i [Konstruktionsändringshantering – översikt](product-engineering-overview.md).
+
 #### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Granska och bearbeta meddelanden för transaktioner
 
 Du kan läsa och bearbeta de ändringsmeddelanden som du får på följande sätt:
@@ -131,6 +134,9 @@ Du kan läsa och bearbeta de ändringsmeddelanden som du får på följande sät
 - För tillverkningsorder kan du välja att endast granska de ändringsmeddelanden som gäller för de produktionsresurser som du hanterar. I arbetsytan **Produktionsgolvsledning** i åtgärdsfönstret välj **Konfigurera min arbetsyta** för att filtrera sidan så att den bara visar information om de produktionsenheter, grupper och/eller resurser som du hanterar. I avsnittet **Sammanfattning** visar en panel som kallas **Produktionsorder med ändrade produkter** visar ett antal meddelanden som matchar dina filterinställningar. Markera den här panelen om du vill öppna sidan **Tekniska meddelanden**, där hela listan med transaktioner som uppfyller kriterierna i filtret visas.
 
 När du granskar tillverkningsordermeddelanden på sidan **Tekniska meddelanden**, kan du följa länkar till relaterade ändringsorder eller tillverkningsorder genom att välja kolumnvärden eller använda relaterade kommandon i åtgärdsfönstret. När du är klar med en utvärdering av en ändring, och efter att du har annullerat eller ändrat tillverkningsorder efter behov, kan du markera ett meddelande som löst. Välj aviseringen och välj sedan i åtgärdsfönstret **Lös**. Meddelandet tas bort från alla användares vyer.
+
+> [!IMPORTANT]
+> Om det ska gå att skicka meddelanden för produktionsorder måste funktionen *Konstruktionsmeddelanden för produktion* vara aktiverad i systemet. Instruktioner finns i [Konstruktionsändringshantering – översikt](product-engineering-overview.md).
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Skapa en ändringsorder från en ändringsbegäran
 

@@ -1,8 +1,8 @@
 ---
 title: Redigera personliga uppgifter
 description: I den här artikeln beskrivs hur du redigerar personuppgifter i självservice för medarbetare och chef.
-author: andreabichsel
-ms.date: 03/19/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80b4537601491c97c24cfa1fef5088cbf1ac276df76534034117161b0fe79dc2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb827e17dcfc63031d0edcb5f447e70f03e8ac3c
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715907"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431472"
 ---
 # <a name="edit-personal-information"></a>Redigera personliga uppgifter
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Du kan redigera dina personuppgifter i Dynamics 365 Human Resources i **arbetsytan Självbetjäning för medarbetare**.
+Du kan redigera dina personuppgifter i Dynamics 365 Human Resources i arbetsytan **Självbetjäning för medarbetare**.
 
 De personuppgifter du kan redigera innehåller:
 
@@ -40,7 +40,7 @@ De personuppgifter du kan redigera innehåller:
 >[!NOTE]
 >Du kanske inte kan redigera vissa typer av personlig information, till exempel affärskontaktinformation. Mer information finns i [Begränsa redigering av personlig information](hr-employee-self-service-restrict-editing.md).
 
-Parametrar som ställs in i den globala adressboken avgör vilka roller som kan se dina personuppgifter.
+Parametrar som ställs in på sidan **Parametrar för global adressbok** avgör vilka roller som kan se dina personuppgifter.
 
 1. I personal, väljer du **Självbetjäning för medarbetare**.
 

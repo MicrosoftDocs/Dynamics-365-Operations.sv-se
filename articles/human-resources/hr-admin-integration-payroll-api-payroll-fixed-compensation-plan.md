@@ -2,7 +2,7 @@
 title: Kompensationsplan med fast lön
 description: Detta ämne tillhandahåller information och en exempelfrågeställning för lönelistaentiteten för fast kompensationsplan i Dynamics 365 Human Resources.
 author: jcart
-ms.date: 04/07/2021
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f1e5345d9f27106bdf3a3a60cb0480a9b072e340c01236e4d48c5e2ae592ddbd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dcb253fabbb183003048119c7a627bf0ab960050
+ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738401"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7429249"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>Kompensationsplan med fast lön
 
@@ -34,18 +34,27 @@ Fysiskt namn: mshr_payrollfixedcompensationplanentity.
 
 ## <a name="properties"></a>Egenskaper
 
-| Egenskap<br>**Fysiskt namn**<br>**_Typ_** | Använd | beskrivning |
+| Egenskap</br>**Fysiskt namn**</br>**_Typ_** | Använd | beskrivning |
 | --- | --- | --- |
-| **Medarbetarens ID**<br>mshr_fk_employee_id_value<br>*GUID* | Skrivskydd<br>Obligatoriskt<br>Sekundärnyckel: mshr_Employee_id för entiteten mshr_payrollemployeeentity  | Medarbetarens ID |
-| **Lönesats**<br>mshr_payrate<br>*Decimal* | Skrivskydd<br>Obligatoriskt | Lönesats som definieras i den fasta kompensationsplanen. |
-| **Plan-ID**<br>mshr_planid<br>*Sträng* | Skrivskydd<br>Obligatoriskt |Anger kompensationsplanen.  |
-| **Giltig från**<br>mshr_validfrom<br>*Datum Tid Offset* |  Skrivskydd<br>Obligatoriskt |Det datum då medarbetarens fasta kompensation börjar gälla.  |
-| **Lönelisteentiteten för fast kompensation**<br>mshr_payrollfixedcompensationplanentityid<br>*GUID* | Obligatoriskt<br>Systemgenererad | Ett systemgenererat GUID-värde som ger kompensationsplanen ett unikt ID. |
-| **Lönefrekvens**<br>mshr_payfrequency<br>*Sträng* | Skrivskydd<br>Obligatoriskt |Den frekvens som medarbetaren ska betalas.  |
-| **Giltig till**<br>mshr_validto<br>*Datum Tid Offset* | Skrivskydd <br>Obligatoriskt | Det datum då medarbetarens fasta kompensation slutar gälla. |
-| **Befattnings-ID**<br>mshr_positionid<br>*Sträng* | Skrivskydd <br>Obligatoriskt | Positions-ID som är kopplat till medarbetaren samt registrering för fast kompensationsplan. |
-| **Valuta**<br>mshr_currency<br>*Sträng* | Skrivskydd <br>Obligatoriskt |Den valuta som har definierats för den fasta kompensationsplanen   |
-| **Personalnummer**<br>mshr_personnelnumber<br>*Sträng* | Skrivskydd<br>Obligatoriskt |Medarbetarens unika personalnummer.  |
+| **Plan-ID**</br>mshr_planid</br>*Sträng* | Skrivskydd | Anger kompensationsplanen.  |
+| **Personalnummer**</br>mshr_personnelnumber</br>*Sträng* | Skrivskydd | Medarbetarens unika personalnummer. |
+| **Lönesats**</br>mshr_payrate</br>*Decimal* | Skrivskydd | Lönesats som definieras i den fasta kompensationsplanen. |
+| **Befattnings-ID**</br>mshr_positionid</br>*Sträng* | Skrivskydd | Positions-ID som är kopplat till medarbetaren samt registrering för fast kompensationsplan. |
+| **Giltig från**</br>mshr_validfrom</br>*Datum Tid Offset* |  Skrivskydd | Det datum då medarbetarens fasta kompensation börjar gälla.  |
+| **Giltig till**</br>mshr_validto</br>*Datum Tid Offset* | Skrivskydd | Det datum då medarbetarens fasta kompensation slutar gälla. |
+| **Lönefrekvens**</br>mshr_payfrequency</br>*Sträng* | Skrivskydd | Den frekvens som medarbetaren ska betalas.  |
+| **Valuta**</br>mshr_currency</br>*Sträng* | Skrivskydd | Den valuta som har definierats för den fasta kompensationsplanen. |
+| **Lönelisteentiteten för fast kompensation**</br>mshr_payrollfixedcompensationplanentityid</br>*GUID* | Systemgenererad | Ett systemgenererat GUID-värde som ger kompensationsplanen ett unikt ID. |
+
+## <a name="relations"></a>Relationer
+
+|Egenskapsvärde | Relaterad entitet | Navigeringsegenskap | Samlingstyp |
+| --- | --- | --- | --- |
+| _mshr_fk_employee_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Employee_id | mshr_FK_PayrollEmployeeEntity_FixedCompPlan |
+| _mshr_fk_job_id_value | [mshr_payrollpositionjobentity](hr-admin-integration-payroll-api-payroll-position-job.md) | mshr_FK_Job_id | mshr_FK_PayrollPositionJobEntity_FixedCompPlan |
+| _mshr_fk_payrollposition_id_value | [mshr_payrollpositionentity](hr-admin-integration-payroll-api-payroll-position.md) | mshr_FK_PayrollPosition_id | mshr_FK_PayrollPositionEntity_FixedCompPlan |
+| _mshr_fk_plan_id_value | mshr_hcmcompfixedplantableentity | mshr_FK_Plan_id | - |
+| _mshr_fk_variablecompaward_id_value | [mshr_payrollvariablecompensationawardentity](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md) | mshr_FK_VariableCompAward_id | mshr_FK_PayrollVariableCompensationAwardEntity_FixedComp |
 
 ## <a name="example-query"></a>Exempelfrågeställning
 

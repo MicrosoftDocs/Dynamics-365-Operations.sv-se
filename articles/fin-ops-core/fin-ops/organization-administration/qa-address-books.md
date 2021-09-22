@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5809d4a29c4209d8fb42bdfd441a3a4fb201ca6c6318abc0315a02ead7c551de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d429639f52c745a737567419b6012884ab20d43d
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759171"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463642"
 ---
 # <a name="address-books-faq"></a>Vanliga frågeställningar och svar om adressböcker
 
@@ -66,10 +66,12 @@ Du kan ange partposter antingen i den globala adressboken eller på lämplig enh
 
 Du kan ställa in översättningar av adressinformation så att informationen visas i ditt användarspråk (systemspråk) i ditt program men på ett annat språk för dokument såsom försäljningsorder. Du kan ange översättningar för land/regionnamn, i adressyften och namnsekvenser. Ditt systemspråk är till exempel danska och du skapar en försäljningsorder för en kund i Frankrike. I detta fall kan du visa kundposten på danska i programmet, men visa adressinformation på franska på den utskrivna försäljningsordern. När du ställer in översättningar måste du ange en översättning för varje artikel på listan. Alla artiklar som du inte anger någon översättning för visas på systemspråket. Ditt systemspråk är till exempel danska och du skickar ett dokument till en kund i Spanien. Om du inte har angett spanska (ESP) översättningar för adressinformationen, visas den informationen på danska både i programmet och på det utskrivna dokumentet.
 
-## <a name="after-importing-addresses-when-i-access-the-records-why-am-i-unable-to-edit-imported-addresses"></a>Efter att importerat adresser, när jag får åtkomst till posterna varför jag inte kan redigera importerade adresser?
+## <a name="after-i-import-addresses-why-cant-i-edit-the-records"></a>Varför kan jag inte redigera posterna efter att jag importerat adresser?
 
-När du importerar adresser finns det ett fält märkt **IsLocationOwner**, vilket anger om den part som är associerad till platsen (adressen) är adressens ägare. Om parten är ägare till adressen kan adressen redigeras när den används med hjälp av parten i den globala adressboken eller från huvudpostformuläret (till exempel kund, leverantör eller arbetare). Om parten inte är ägare till adressen kan posten inte redigeras från de formulär som tidigare listats. När du importerar adresser ska **IsLocationOwner** ska du ställa in **Ja** om du vill att adressen ska kunna redigeras med den associerade parten. Det finns emellertid tidpunkter då det här fältet importeras felaktigt. Problemet kan åtgärdas genom att platsägaren uppdateras i den globala adressboken från partposten eller från sidan **Bekräfta platsägare**. Om du vill uppdatera en enskild part går du till den **Globala adressboken > Adress**. Välj **Redigera** om du vill starta sidan **Redigera adress** om du vill ändra platsens ägare. Välj **Ändra platsägare** för att se den tidigare platsägaren med den aktuella valda parten som den nya platsägaren. Om den föregående platsägaren inte är tom innebär det att en platsägare inte har upprättat något. Om du alternativet **Avancerat** öppnas sidan **Hantera adresser** där platsägaren också kan ställas in. Välj den plats som ska uppdateras och välj **Ange platsägare** på menyn. Om du vill uppdatera platsägaren för flera poster går du till **Global adressbok > Platser > Bekräfta platsägare**. Listan innehåller platser som är länkade till en part, men den parten inte är ägaren. Om du väljer **Bekräfta ägare** anges **Föreslagen ägarpartiets ID** som ägare till den länkade adressen. När parten har angetts som ägare kan den länkade adressen redigeras från partposten. Om du vill ändra platsens ägare måste du tilldela behörigheten **Ange platsägare** på sidan **Säkerhetskonfiguration**.  Systemadministratören har som standard den här behörigheten.
+När du importerar adresser finns det ett fält som kallas **IsLocationOwner**. Det här fältet anger om parten som är kopplad till platsen (adressen) är ägare till adressen. Om parten är ägare till adressen kan adressen redigeras när den parten används i den globala adressboken eller från huvudpostformuläret (till exempel kunden, leverantören eller arbetaren). Om parten inte är ägare till adressen går det inte att redigera posten. 
 
+När du importerar adresser ska fältet **IsLocationOwner** vara inställt på **Ja** om du vill att adressen ska kunna redigeras av den associerade parten. Om fältet importeras på fel sätt kan platsägaren uppdateras i den globala adressboken.
+
+Mer information om hur du ändrar platsägaren för en importerad adress finns i [Hantera platsägare](./global-address-book-location-owner.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

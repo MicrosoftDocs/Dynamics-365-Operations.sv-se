@@ -2,7 +2,7 @@
 title: Ställa in en B2C-innehavare i Commerce
 description: I det här avsnittet beskrivs hur du ställer in din Azure Active Directory (Azure AD) B2C-innehavare (Business-to-Consumer) för autentisering av användarplats i Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/11/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 107e06d44d159152b260897dfba456a525f19e27
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: d54de9025926d2c1908ce29d2b680a48172f46a4
+ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344508"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466278"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Ställa in en B2C-innehavare i Commerce
 
@@ -37,6 +37,26 @@ Dynamics 365 Commerce använder Azure AD B2C för att stödja autentiseringsuppg
 
 > [!TIP]
 > Du kan skydda dina webbplatsanvändare ytterligare och förbättra säkerheten för dina Azure ADB2C-klientorganisationer idenhetsskydd och villkorlig åtkomst för Azure AD. Information om hur du granskar funktionerna för Azure AD B2C Premium P1- och Premium P2-innehavare finns i [Idenhetsskydd och villkorlig åtkomst för Azure AD B2C ](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
+
+## <a name="dynamics-environment-prerequisites"></a>Förutsättningar för Dynamics-miljö
+
+Innan du börjar måste du se till att din Dynamics 365 Commerce-miljö och näthandelskanal är konfigurerad på rätt sätt genom att uppfylla följande förutsättningar.
+
+- Ställ in kassaåtgärders värde **AllowAnonymousAccess** till "1" i Commerce headquarters:
+    1. Gå till **Kassaåtgärder**.
+    1. I åtgärdsrutnätet, högerklicka och välj **Personanpassa**.
+    1. Välj **Lägg till ett fält**.
+    1. I listan över tillgängliga kolumner väljer du kolumnen **AllowAnonyousAccess** för att lägga till den.
+    1. Välj **Uppdatera**.
+    1. För åtgärden **612** "Lägga till kund" ändrar du **AllowAnonymousAccess** till "1."
+    1. Kör jobbet **1090 (register)**.
+- Ställ in nummerseriekundkontots attribut **Manuellt** till **Nej** i Commerce Headquarters:
+    1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> Parametrar för kundreskontra**.
+    1. Välj **Nummerserier**.
+    1. Dubbelklicka på värdet för **Nummerseriekod** på raden **Kundkonto**.
+    1. På snabbfliken **Allmänt** för nummerserien ställer du in **Manuellt** till **Nej**.
+
+När du har distribuerat din Dynamics 365 Commerce-miljö bör du också [initiera startdata](enable-configure-retail-functionality.md) i miljön.
 
 ## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Skapa eller länka till en befintlig AAD B2C-klientorganisation i Azure-portalen
 

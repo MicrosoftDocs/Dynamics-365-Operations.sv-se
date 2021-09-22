@@ -1,8 +1,8 @@
 ---
 title: Konfigurera vänteperioder
 description: I Microsoft Dynamics 365 Human Resources väntedagar på att få en milstolpe att använda för förmånsplaner.
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8e928987a8e25de9c0c5429af1a305ad20b9892d9d3617482ea209af181e3227
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 537ca48e819f047f2095bd5d9337ac7d80e49c5f
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732595"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431075"
 ---
 # <a name="configure-waiting-periods"></a>Konfigurera vänteperioder
 
@@ -38,7 +38,7 @@ I Microsoft Dynamics 365 Human Resources väntedagar på att få en milstolpe at
    | --- | --- |
    | **Väntekod** | En identifierare för vänteperioder. |
    | **Beskrivning** | En beskrivning av vänteperioden. |
-   | **Väntemetod** | Välj en lämplig väntemetod i listrutan med värden. Alternativ är netto, aktuell månad, aktuellt kvartal, aktuellt år och aktuell vecka. |
+   | **Väntemetod** | Välj en lämplig väntemetod i listrutan med värden. Alternativ är **Netto**, **Aktuell månad**, **Aktuellt kvartal**, **Aktuellt år** och **Aktuell vecka**. |
    | **Månader** | Ange antalet månader du vill lägga till i väntemetoden vid beräkning av väntedatumet. |
    | **Dagar** | Ange antalet dagar du vill lägga till i väntemetoden vid beräkning av väntedatumet. |
    | **En dags väntetid** | Välj en väntedag du vill använda vid beräkning av väntedatumet. |

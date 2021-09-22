@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6c87018cbfbe22fbbc441a1a23aee0ac44af9ddc
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: acc5d5f93f3f625892aac37780a44e221b6eb5ac
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345159"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475046"
 ---
 # <a name="inventory-visibility-reservations"></a>Lagersynlighetsreservationer
 
@@ -32,19 +32,20 @@ Om du vill kan du ställa in Microsoft Dynamics 365 Supply Chain Management (och
 
 När du aktiverar reservationsfunktionen blir Supply Chain Management automatiskt redo att motboka reservationer som görs med hjälp av Lagersynlighet.
 
-> [!NOTE]
-> Motfunktionen kräver version 10.0.22 av Supply Chain Management eller senare. Om du vill använda reservationer av Lagersynlighet rekommenderar vi att du väntar tills du har uppgraderat Supply Chain Management till version 10.0.22 eller senare.
-
-## <a name="turn-on-the-reservation-feature"></a>Aktivera reservationsfunktionen
+## <a name="turn-on-and-set-up-the-reservation-feature"></a><a name="turn-on"></a>Aktivera och konfigurera reservationsfunktionen
 
 Följ dessa steg för att aktivera reservationsfunktionen.
 
-1. I Power Apps öppnar du **Lagersynlighet**.
+1. Logga in i Power Apps och öppna **Lagersynlighet**.
 1. Öppna sidan **Konfiguration**.
 1. I fliken **Funktionshantering** aktiverar du funktionen *OnHandReservation*.
 1. Logga in på Supply Chain Management.
-1. Gå till **Lagerstyrning \> Inställningar \> Parametrar för integrering av lagersynlighet**.
-1. Under **Reservationsavvikelse** anger du alternativet **Aktivera reservationsavvikelse** som *Ja*.
+1. Gå till arbetsytan **[Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** och aktivera funktionen *Integrering av Lagersynlighet med reservationsmotbokning* (kräver version 10.0.22 eller senare).
+1. Gå till **Lagerhantering \> Konfigurera \> Parametrar för integrering av lagersynlighet**, öppna fliken **Reservationsmotbokning** och gör följande inställningar:
+    - **Aktivera reservationsmotbokning** – ställ in till *Ja* om du vill aktivera den här funktionen.
+    - **Modifierare för reservationsmotbokning** – välj det lagertransaktionsstatus som motbokar reservationer som gjorts i Lagersynlighet. Den här inställningen avgör vilken orderbearbetningsfas som utlöser motbokningar. Fasen spåras med hjälp av orderns lagertransaktionsstatus. Välj en av följande:
+        - *För order* – För statusen *vid transaktion* skickar en order en begäran om motbokning när den skapas. Motbokningskvantiteten är kvantiteten för den skapade ordern.
+        - *Reservera* – För statusen *Reservera beställd transaktion* skickar en order en begäran om motbokning när den reserveras, plockas, följesedelsbokförs eller faktureras. Denna begäran utlöses bara en gång - för det första steget när den omstämda processen inträffar. Motbokningskvantiteten är den kvantitet där lagertransaktionens status ändras från *Har beställts* till *Reserverat beställt* (eller senare status) på motsvarande orderrad.
 
 ## <a name="use-the-reservation-feature-in-inventory-visibility"></a>Använd reservationsfunktionen i Lagersynlighet
 
@@ -56,13 +57,21 @@ Reservationshierarkin beskriver den dimensionssekvens som måste anges när rese
 
 Reservationshierarkin kan skilja sig åt från indexhierarkin. Tack vare detta oberoende kan du implementera kategorihantering där användare kan bryta ned dimensionerna i detaljer i syfte att specificera kraven för att göra mer exakta reservationer.
 
-Om du vill konfigurera en hierarki för preliminär reservation i Power Apps öppnar du sidan **Konfiguration** innan du, på sidan **Mappning för preliminär reservation**, konfigurerar reservationshierarkin genom att lägga till och/eller modifiera dimensioner och dessas hierarkinivåer.
+Om du vill konfigurera en hierarki för preliminär reservation i Power Apps öppnar du sidan **Konfiguration** innan du, på sidan **Preliminär reservationshierarki**, konfigurerar reservationshierarkin genom att lägga till och/eller modifiera dimensioner och dessas hierarkinivåer.
+
+Din preliminära reservationshierarki bör innehålla `SiteId` och `LocationId` som komponenter eftersom de skapar partitionskonfigurationen.
+
+För mer information om hur du konfigurerar reservationer finns i [Reservationskonfiguration](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="call-the-reservation-api"></a>Anropa reservations-API
 
 Reservationer görs i tjänsten Lagersynlighet genom att skicka en POST-begäran till tjänstens URL, till exempel `/api/environment/{environment-ID}/onhand/reserve`.
 
 För en reservation måste begärandetexten innehålla ett organisations-ID, ett produkt-ID, reserverade kvantiteter och dimensioner. Förfrågningen genererar ett unikt reservations-ID för varje enskild reservationspost. Reservationsposten innehåller den unika kombinationen av produkt-ID och dimensioner.
+
+När du anropar reservations-API:t kan du kontrollera reservationsvalideringen genom att ange den booleska parametern `ifCheckAvailForReserv` i begärandetexten. Ett värde `True` betyder att valideringen krävs, medan ett värde av `False` betyder att valideringen inte krävs. Standardvärdet är `True`.
+
+Om du vill annullera en reservation eller ta bort reservationen av angivna lagerkvantiteter ställer du in kvantiteten på ett negativt värde och ställer in parametern `ifCheckAvailForReserv` på `False` för att hoppa över valideringen.
 
 Här är ett exempel på begärandetext (för referens).
 
@@ -108,18 +117,9 @@ För lagertransaktionsstatus som inkluderar en angiven reservmodifierare för mo
 
 Avbokningskvantiteten följer den lagerkvantitet som anges på lagertransaktioner. Motbokningen används inte om ingen reserverad kvantitet finns kvar i tjänsten Lagersynlighet.
 
-> [!NOTE]
-> Motbokningsfunktionen är tillgänglig från och med version 10.0.22
+### <a name="set-up-the-reservation-offset-modifier"></a>Konfigurera modifieraren för reservationsmotbokning
 
-### <a name="set-up-the-reserve-offset-modifier"></a>Konfigurera reservmodifierare för motbokning
-
-Reservmodifieraren för motbokning avgör vilken orderbearbetningsfas som utlöser motbokningar. Fasen spåras med hjälp av orderns lagertransaktionsstatus. Följ dessa steg för att ställa in reservmodifieraren för motbokning.
-
-1. Gå till **Lagerstyrning \> Inställningar \> Integreringsparametrar för Lagersynlighet \> Reservationsmotbokning**.
-1. Ange fältet **Reservmodifierare för motbokning** som ett av följande värden:
-
-    - *För order* – För statusen *vid transaktion* skickar en order en begäran om motbokning när den skapas.
-    - *Reservera* – För statusen *Reservera beställd transaktion* skickar en order en begäran om motbokning när den reserveras, plockas, följesedelsbokförs eller faktureras. Denna begäran utlöses bara en gång - för det första steget när den omstämda processen inträffar.
+Om du inte redan har gjort det konfigurerar du reservationsmodifieraren enligt beskrivningen i [Aktivera och konfigurera reservationsfunktionen](#turn-on).
 
 ### <a name="set-up-reservation-ids"></a>Konfigurera reservations-ID
 

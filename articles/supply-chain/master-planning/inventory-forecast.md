@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0919706ddcc70fecd15df6bf1cbdd58fe9a8e337b2d45cd61a4fb9d821e4114
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: b9c82f28dcc7ebd223b2483ca257ba934024d755
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757816"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475094"
 ---
 # <a name="inventory-forecasts"></a>Lagerprognoser
 
@@ -94,7 +94,7 @@ I följande tabell beskrivs de kommandon som är tillgängliga i verktygsfältet
 
 | Kommando | beskrivning |
 |---|---|
-| Allokera prognos | Om du använder en allokeringsmetod genererar du de enskilda tidsplaneringsraderna för prognostransaktionen. Radens kvantitet fördelas därefter per datum (enligt valda tidsintervall), kvantitet och belopp för hela tidshorisonten. |
+| Allokera prognos | Om du använder en allokeringsmetod genererar du de enskilda tidsplaneringsraderna för prognostransaktionen. Radens kvantitet fördelas därefter per datum (enligt valda tidsintervall), kvantitet och belopp för hela tidshorisonten. (Se avsnittet [Allokera prognos](#allocate-forecast) längre fram i detta ämne.) |
 | Massuppdatering | Öppna sidan **Redigera prognostransaktioner**. (Se avsnittet [Massuppdatering av prognostransaktioner](#bulk-update) längre fram i detta avsnitt.) |
 | Lagerprognos | Öppna en vy på sidan **Lagerprognos** som har filtrerats för den valda artikel-/modellkombinationen. (Se avsnittet [Lagerprognos](#inventory-forecast) längre fram i detta avsnitt.) |
 | Skapa artikelbehov | Öppna en dialogruta där du kan skapa artikelbehov och försäljningsorder- eller artikeljournalrader för projektrelaterade prognostransaktioner. Även om det här kommandot är tillgängligt för både rader för inflödesprognoser och rader för efterfrågeprognoser, kan det inte användas på sidan **Inflödesprognos**. |
@@ -201,7 +201,7 @@ I följande tabell beskrivs de kommandon som är tillgängliga i verktygsfältet
 
 | Kommando | beskrivning |
 |---|---|
-| Allokera prognos | Om du använder en allokeringsmetod genererar du de enskilda tidsplaneringsraderna för prognostransaktionen. Radens kvantitet fördelas därefter per datum (enligt valda tidsintervall), kvantitet och belopp för hela tidshorisonten. |
+| Allokera prognos | Om du använder en allokeringsmetod genererar du de enskilda tidsplaneringsraderna för prognostransaktionen. Radens kvantitet fördelas därefter per datum (enligt valda tidsintervall), kvantitet och belopp för hela tidshorisonten. (Se avsnittet [Allokera prognos](#allocate-forecast) längre fram i detta ämne.)|
 | Massuppdatering | Öppna sidan **Redigera prognostransaktioner**. (Se avsnittet [Massuppdatering av prognostransaktioner](#bulk-update) längre fram i detta avsnitt.) |
 | Lagerprognos | Öppna en vy på sidan **Lagerprognos** som har filtrerats för den valda artikel-/modellkombinationen. (Se avsnittet [Lagerprognos](#inventory-forecast) längre fram i detta avsnitt.) |
 | Skapa artikelbehov | Öppna en dialogruta där du kan skapa artikelbehov och försäljningsorder- eller artikeljournalrader för projektrelaterade prognostransaktioner. |
@@ -296,7 +296,7 @@ Fliken **lagerdimensioner** visar alla lagerdimensionsvärden för raden som fö
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Allokeringsrutnätet på sidan Efterfrågeprognos
 
-Om du använder en artikelallokeringsnyckel eller om du har angett en artikelprognos för en eller flera framtida perioder, kan du allokera prognosen genom att välja **Allokera prognos** i verktygsfältet på fliken **Översikt**. Kvantiteten fördelas sedan på det sätt som indikeras av raderna i rutnätet **Allokering**.
+Om du använder en artikelallokeringsnyckel eller om du har angett en artikelprognos för en eller flera framtida perioder, kan du allokera prognosen genom att välja **Allokera prognos** i verktygsfältet på fliken **Översikt**. Kvantiteten fördelas sedan på det sätt som indikeras av raderna i rutnätet **Allokering**. (Se avsnittet [Allokera prognos](#allocate-forecast) längre fram i detta ämne.)
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Lagerprognos
 
@@ -328,6 +328,25 @@ I följande tabell beskrivs fälten i rutnätet på sidan **Lagerprognos**.
 | **Understrukturlista** | Strukturlistenumret för en viss understrukturlista. |
 | **Delrutt** | Flödesnumret för ett visst delflöde. |
 | (Övriga dimensioner) | Ytterligare dimensioner kan visas som kolumner i rutnätet. Välj **Lagher \> Visa dimensioner** i åtgärdsfönstret om du vill välja de ytterligare dimensioner som visas. |
+
+## <a name="allocate-forecast"></a><a name="allocate-forecast"></a>Allokera prognos
+
+Använd följande procedur när du vill bearbeta valda prognostransaktionsrader. När du allokerar en prognos fördelas kvantiteten enligt indikerade rader i rutnätet **Allokering**.
+
+1. Beroende på vilken typ av enhet som du skapar en prognos för och den typ av prognos som du vill skapa, öppnar du en inflödes- eller efterfrågeprognossida på det sätt som beskrivs i [Visa och ange prognosrader manuellt](#manual-entry).
+1. På inflödes- eller efterfrågeprognossidan väljer du en prognosrad och väljer **Allokera prognos** på fliken **Översikt** i verktygsfältet.
+1. Ställ in fälten som beskrivs i följande tabell i dialogrutan **Allokera prognos**. (Värdet som du väljer i fältet **Metod** avgör vilka andra fält som är tillgängliga.)
+
+    | Fält | beskrivning |
+    |---|---|
+    | Metod | <p>Välj den metod som används för att allokera prognostransaktionen:</p><ul><li>**Ingen** – Ingen allokering sker.</li><li>**Period** – Prognosticera samma kvantitet för respektive period. Om du väljer det här värdet anger du en kvantitet i fältet **Per** samt en tidsenhet i fältet **Enhet**.</li><li>**Nyckel** – Allokera prognosen i enlighet med den periodallokeringsnyckel som du anger i fältet **Periodnyckel**. Den här metoden kan användas när hänsyn ska tas till säsongsvariationer.</li><ul>|
+    | Per | <p>Ange antalet framtida tidsintervaller som prognosen sträcker sig över. Detta fältet blir bara tillgängligt när du väljer *Period* i fältet **Metod**.</p><p>Du väljer exempelvis *Period* i fältet **Metod**, anger *1* i fältet **Per** och väljer *Månader* i fältet **Enhet**. I fältet **Slut** anger du ett slutdatum ett år in i framtiden. I detta fall skapas en prognosrad för respektive månad under det kommande året, baserat på den artikel och kvantitet som anges i rubrikraden. |
+    | Enhet | Välj enhet för tidsintervallet: *dagar*, *månader* eller *år*. Allokeringen motsvarar därefter antalet dagar, månader eller år som du anger i fältet **Per**.|
+    | Periodnyckel | Ange den periodallokeringsnyckel som används för att allokera prognosen. Mer information finns i [Datallokering för budgetplanering](../../finance/budgeting/budget-planning-data-allocation.md). |
+    | End | Ange slutdatumet som gäller för inställningarna i fälten **Per** och **Enhet**. |
+
+1. Välj **OK** för att bekräfta inställningarna.
+1. Du kan granska resultaten på fliken **Allokering** för samma rad.
 
 ## <a name="bulk-update-forecast-transactions"></a><a name="bulk-update"></a>Massuppdatera prognostransaktioner
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: defbcdc7ada4471345f8c728522e15f16a8bec8f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 644eb0d682c35bd604c188aa02e4a6c69b3ff209
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344298"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474998"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Översikt över tillägg för Lagersynlighet
 
@@ -31,13 +31,11 @@ I egenskap av en mikrotjänst som bygger på Microsoft Dataverse erbjuder Lagers
 
 Du kan integrera Lagersynlighet med flera olika tredjepartssystem genom att ange konfigurationsalternativ för standardiserade lagerdimensioner och konfigurera transaktionstyper. Lagersynlighet stöder också anpassningsbar utbyggbarhet genom konfigurerbara beräknade kvantiteter.
 
-## <a name="supported-features"></a>Funktioner som stöds
+## <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Integrera Lagersynlighet med Dynamics 365 Supply Chain Management
 
-### <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Integrera Lagersynlighet med Dynamics 365 Supply Chain Management
+Den integrerade lösningen hämtar lagerdata från Dynamics 365 Supply Chain Management och spårar lagerändringar kontinuerligt. Mer information finns i [Installera och konfigurera lagersynlighet](inventory-visibility-setup.md) och [Konfigurera lagersynlighet](inventory-visibility-configuration.md).
 
-Den integrerade lösningen hämtar lagerdata från Dynamics 365 Supply Chain Management och spårar lagerändringar kontinuerligt. Mer information finns i [Konfigurera Lagersynlighet](inventory-visibility-setup.md).
-
-### <a name="get-a-global-view-of-inventory"></a>Hämta en global vy över lager
+## <a name="get-a-global-view-of-inventory"></a>Hämta en global vy över lager
 
 Med den integrerade lösningen kan du definiera egna datakällor och centralisera lagerdata. Mer information finns i [Konfigurera Lagersynlighet](inventory-visibility-configuration.md).
 
@@ -46,7 +44,7 @@ Du kan visa ditt lager på två sätt:
 - Skicka en fråga via API:t för hög prestanda. Detta API kan returnera lagerdata i närapå realtid direkt från en cachelagrad instans. Du kan hitta avtal och exempel i [Allmänna API:er för lagersynlighet](inventory-visibility-api.md).
 - Visa den obearbetade behållningslistan. Listan synkroniseras regelbundet från en cachelagrad instans och visas i Dataverse. Mer information finns i [appen Lagersynlighet](inventory-visibility-power-platform.md).
 
-### <a name="soft-reservations"></a>Preliminära reservationer
+## <a name="soft-reservations"></a>Preliminära reservationer
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 

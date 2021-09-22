@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 71e651afc83e0c2ea147a4657c0f2ce1865ec50efcd932127b4918266d3d7cd8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0f322dd63cb2dee6a9048e6ed086dc075cc0e1b9
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778686"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474854"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Huvudplanering med efterfrågeprognoser
 
@@ -137,32 +137,85 @@ I det här fallet om du kör prognosplanering den 1 januari förbrukas kraven p�
 
 #### <a name="transactions--reduction-key"></a>Transaktioner - reduceringsnyckel
 
-Om du väljer **Transaktioner - reduceringsnyckel** prognosbehoven reduceras av de transaktioner som genomförs under de perioder som definieras av reduceringsnyckeln.
+Om du ställer in fältet **Metod som används för att minska prognosbehov** till *Transaktioner - reduceringsnyckel* reduceras prognosbehoven med de kvalificerade efterfrågetransaktioner som inträffar under de perioder som definieras av reduceringsnyckeln.
+
+Det kvalificerade behovet definieras i fältet **Minska prognos med** på sidan **Disponeringsgrupper**. Om du ställer in fältet **Minska prognos med** till *Order* beaktas endast försäljningsordertransaktioner som kvalificerade efterfrågan. Om du ställer in det till *Alla transaktioner* beaktas alla icke-koncerninterna lagertransaktioner som kvalificerade efterfrågan. Om koncerninterna order ska inkluderas när prognosen minskas ställer du in alternativet **Inkludera koncerninterna order** till *Ja*.
+
+Prognosreducering startar med den första (tidigaste) efterfrågeprognosposten i perioden för reduceringsnyckeln. Om kvantiteten för kvalificerade lagertransaktioner är större än kvantiteten på efterfrågeprognosraderna i samma reduceringsnyckelperiod, används saldot för lagertransaktionskvantiteten för att minska efterfrågeprognoskvantiteten under den föregående perioden (om det finns en oförbrukad prognos).
+
+Om ingen oförbrukad prognos finns kvar i den föregående perioden för reduceringsnyckeln används saldot för lagertransaktionerna för att minska prognoskvantiteten under nästa månad (om det finns en oförbrukad prognos).
+
+Värdet i fältet **Procent** på reduceringsnyckelns rader används inte när fältet **Metod som används för att minska prognosbehov** är inställt *Transaktioner - reduceringsnyckel*. Endast datumen används för att definiera perioden för reduceringsnyckeln.
+
+> [!NOTE]
+> Prognoser som bokförs på eller före dagens datum ignoreras och används inte för att skapa planerade order. Om till exempel din efterfrågeprognos för månaden genereras den 1 januari och du kör huvudplanering som inkluderar efterfrågeprognoser den 2 januari ignorerar beräkningen efterfrågeprognosraden som är daterad den 1 januari.
 
 ##### <a name="example-transactions--reduction-key"></a>Exempel: Transaktioner - reduceringsnyckel
 
 Detta exempel visar hur aktuella order som inträffar under de perioder som definieras av reduceringsnyckeln reducerar behoven av efterfrågeprognos.
 
-I det här exemplet väljer du **Transaktionsplaner - reduceringsnyckel** i fältet **Metod som används för att minska prognosbehov** på sidan **Huvudplaner**.
+[![Faktiska order och prognoser innan huvudplaneringen körs.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
 
-Följande försäljningsorder finns den 1 januari.
+I det här exemplet väljer du *Transaktionsplaner - reduceringsnyckel* i fältet **Metod som används för att minska prognosbehov** på sidan **Huvudplaner**.
 
-| Månad    | Beställt antal enheter |
-|----------|--------------------------|
-| Januari  | 956                      |
-| Februari | 1 176                    |
-| Mars    | 451                      |
-| april    | 119                      |
+Följande rader för efterfrågeprognoser finns den 1 april.
 
-Med samma försäljningsprognos på 1 000 enheter per månad som användes i det föregående exemplet överförs följande behovskvantiteter till huvudplanen:
+| Datum     | Prognostiserat antal enheter |
+|----------|-----------------------------|
+| 5 april  | 100                         |
+| 12 april | 100                         |
+| 19 april | 100                         |
+| 26 april | 100                         |
+| 3 maj    | 100                         |
+| 10 maj   | 100                         |
+| 17 maj   | 100                         |
 
-| Månad                | Obligatoriskt antal enheter |
-|----------------------|---------------------------|
-| Januari              | 44                        |
-| Februari             | 0                         |
-| Mars                | 549                       |
-| april                | 881                       |
-| Maj - december | 1 000                     |
+Följande försäljningsorderrader finns i april.
+
+| Datum     | Begärt antal enheter |
+|----------|----------------------------|
+| 27 april | 240                        |
+
+[![Planerad leverans genererad baserat på aprilorder.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
+
+Följande behovskvantiteter överförs till huvudplanen när huvudplaneringen körs den 1 april. Som du ser har prognostransaktionerna i april minskats med efterfrågekvantiteten 240 i en sekvens, med början från den första av dessa transaktioner.
+
+| Datum     | Obligatoriskt antal enheter |
+|----------|---------------------------|
+| 5 april  | 0                         |
+| 12 april | 0                         |
+| 19 april | 60                        |
+| 26 april | 100                       |
+| 27 april | 240                       |
+| 3 maj    | 100                       |
+| 10 maj   | 100                       |
+| 17 maj   | 100                       |
+
+Anta nu att nya order importerades för maj.
+
+Följande försäljningsorderrader finns i maj.
+
+| Datum   | Begärt antal enheter |
+|--------|----------------------------|
+| 4 maj  | 80                         |
+| 11 maj | 130                        |
+
+[![Planerad leverans genererad baserat på april- och majorder.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
+
+Följande behovskvantiteter överförs till huvudplanen när huvudplaneringen körs den 1 april. Som du ser har prognostransaktionerna i april minskats med efterfrågekvantiteten 240 i en sekvens, med början från den första av dessa transaktioner. Prognostransaktionerna för maj minskades med sammanlagt 210, från den första efterfrågeprognostransaktionen i maj. Summorna per period bevaras (400 i april och 300 i maj).
+
+| Datum     | Obligatoriskt antal enheter |
+|----------|---------------------------|
+| 5 april  | 0                         |
+| 12 april | 0                         |
+| 19 april | 60                        |
+| 26 april | 100                       |
+| 27 april | 240                       |
+| 3 maj    | 0                         |
+| 4 maj    | 80                        |
+| 10 maj   | 0                         |
+| 11 maj   | 130                       |
+| 17 maj   | 90                        |
 
 #### <a name="transactions--dynamic-period"></a>Transaktions - dynamisk period
 

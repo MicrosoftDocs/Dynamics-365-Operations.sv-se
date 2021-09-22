@@ -1,8 +1,8 @@
 ---
 title: Köpa och sälja tjänstledighet
-description: I Dynamics 365 Human Resources kan du skicka en begäran om att köpa och sälja på grund val av principerna köp och försäljning som ställs in av ditt företag.
-author: andreabichsel
-ms.date: 08/20/2020
+description: I det här ämnet beskrivs hur du skickar begäranden om att köpa och sälja ledighet i Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1225bcfd0c7c9dfecde2aec54983fca8a298f1cf92d2929d8b1fbe2bdf05e5f9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 716afdc4e52c3e4a0432b987cb82077012d4d0c2
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779744"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431520"
 ---
 # <a name="buy-and-sell-leave"></a>Köpa och sälja tjänstledighet
 
@@ -51,7 +51,7 @@ Dina saldon kommer antingen att uppdateras automatiskt eller gå igenom en godk�
 
 ## <a name="troubleshooting"></a>Felsökning 
 
-Om ett arbetsflöde för begäran om köp eller försäljning misslyckas misslyckas användare med **EssLeaveBuySellRequestApprover** privilegium kan granska meddelandeloggen för alla begäran om köp och försäljning. För att göra detta, gå till **Tjänstledighet > Länk > Köpa och sälja tjänstledighetsansökningar > Meddelandelogg** (upp till vänster). I **meddelandeloggen** visas hur transaktionerna bearbetas och vilken arbetsflödeshistorik som har associerats.
+Om ett arbetsflöde för begäran om köp eller försäljning misslyckas misslyckas användare med **EssLeaveBuySellRequestApprover** privilegium kan granska meddelandeloggen för alla begäran om köp och försäljning. För att göra detta, gå till **Ledighet och frånvaro > Länkar > Köpa och sälja ledighetsansökningar > Meddelandelogg** (högst upp till vänster). I **meddelandeloggen** visas hur transaktionerna bearbetas och vilken arbetsflödeshistorik som har associerats.
 
 
 ## <a name="see-also"></a>Se även

@@ -1,8 +1,8 @@
 ---
 title: Ändra namn på arbetsytan för självbetjäning för medarbetare
-description: I det här avsnittet beskrivs hur du ändrar visningsnamnet på Arbetsytan för medarbetarens självbetjäning i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 07/09/2020
+description: I det här ämnet beskrivs hur du ändrar visningsnamnet på arbetsytan för medarbetarens självbetjäning i Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 25b5b1d94dc6379516fa74819499fe6792ff90230222a398bebfa427ad7ee25c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 483b870dc73a9248d5c0c1c215533162f1314419
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763020"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431376"
 ---
-# <a name="change-employee-self-service-workspace-name"></a>Ändra namn på arbetsytan för självbetjäning för medarbetare
+# <a name="change-employee-self-service-workspace-name"></a>Ändra namn på arbetsytan Självbetjäning för medarbetare
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -33,7 +33,7 @@ Om du har frivilliga eller andra icke-anställda, kanske du vill ändra namnet p
 
 1. I personal, välj **personalhantering**, välj **länkar** och välj sedan **personalparametrar**.
 
-2. Välj fliken **medarbetarens självbetjäning**.
+2. Välj fliken **Självbetjäning för medarbetare**.
 
 3. Under **Displaynamn**, välj **Självbetjäning**.
 
@@ -43,7 +43,7 @@ Om du har frivilliga eller andra icke-anställda, kanske du vill ändra namnet p
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-- [Översikt över självbetjäning för medarbetare och chef](hr-employee-manager-self-service-overview.md)
+- [Ställa in självbetjäning för medarbetare och chef – översikt](hr-employee-manager-self-service-overview.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

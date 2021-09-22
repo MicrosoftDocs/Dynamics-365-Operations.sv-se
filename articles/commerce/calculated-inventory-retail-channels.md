@@ -2,7 +2,7 @@
 title: Beräkna lagertillgänglighet för butikskanaler
 description: I det här avsnittet beskrivs hur ett företag kan använda Microsoft Dynamics 365 Commerce för att visa uppskattade tillgängliga produkter i online- och butikskanaler.
 author: hhainesms
-ms.date: 04/23/2021
+ms.date: 09/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: da79aadace09ad480fa34bc03220831023e469645bb7d53af1647bd2d35af0ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3cfd8c2f0b88a4e634cee0398283a51eddf60b2
+ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741822"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7472181"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beräkna lagertillgänglighet för butikskanaler
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 I det här avsnittet beskrivs hur ett företag kan använda Microsoft Dynamics 365 Commerce för att visa uppskattade tillgängliga produkter i online- och butikskanaler.
 
@@ -43,6 +44,21 @@ Följande lagerändringar beaktas för närvarande i lagerberäkningslogiken på
 - Lager som säljs via kundorder i butik eller nätkanal
 - Lager som returnerats till butiken
 - Lager som är uppfyllt (plocka, packa, skeppa) från butikslagerställe
+
+Om du vill använda lagerberäkningen på kanalsidan måste du aktivera funktionen **Optimerad beräkning för produkttillgänglighet**.
+
+Följ stegen nedan om din Commerce-miljö har version **10.0.8 till 10.0.11**.
+
+1. I Commerce headquarters, gå till **Retail och Commerce** \> **Gemensamma Commerce-parametrar**.
+1. På fliken **Lager** i fältet **Produkttillgänglighetsjobb** välj **Använd optimerad process för produkttillgänglighetsjobb**.
+
+Följ stegen nedan om din Commerce-miljö har version **10.0.12 eller senare**.
+
+1. I Commerce headquarters, gå till **Arbetsytor \> Funktionshantering** och aktivera funktionen **Optimerad beräkning för produkttillgänglighet**.
+1. Om dina online- och butikskanaler använder samma lagerställen för uppfyllelse, måste du också aktivera funktionen **Utökad lagerberäkningslogik på kanalsidan för näthandel**. På så sätt kommer beräkningslogiken på kanalsidan att ta hänsyn till de icke bokförda transaktioner som har skapats i butikskanalen. (Dessa transaktioner kan vara hämtköpstransaktioner, kundorder och returer.)
+1. Kör jobbet **1070** (**jakanlkonfiguration**).
+
+Om din Commerce-miljö uppgraderades från en version som är tidigare än Commerce-version 10.0.8, efter att du har aktiverat funktionen **Optimerad beräkning för produkttillgänglighet** måste du också köra **Initiera schemaläggare för handel** för att funktionen ska aktiveras. Gå till **Retail och Commerce** \> **Administrationsinställning** \> **Schemaläggare för handel**.
 
 Om du vill använda lagerberäkningen på kanalsidan måste först en periodisk ögonblicksbild av lagerdata från administrationen som skapats av jobbet **Produkttillgänglighet** skickas till kanaldatabaserna. Ögonblicksbilden representerar den information som administration har om lagertillgänglighet för en specifik kombination av en produkt eller produktvariant och ett lagerställe. Den inkluderar bara de lagertransaktioner som bearbetats och bokförts i administrationen vid tidpunkten för ögonblicksbilden, och den kanske inte är 100 procent korrekt i realtid på grund av den konstanta försäljningsbearbetningen som sker på distribuerade servrar.
 
@@ -75,8 +91,6 @@ Båda API:er använder intern beräkningslogik på kanalsidan och returnerar upp
 
 Även om andra API:er som är tillgängliga i Commerce kan gå direkt till administrationen för att hämta kvantiteten för produkter, rekommenderar vi inte att de används i en näthandelsmiljö på grund av potentiella prestandaproblem och den påverkan som dessa frekventa förfrågningar kan ha på dina administrationsservrar. Med hjälp av beräkningen på kanalsidan kan de två API:erna som nämns ovan ge en mer exakt uppskattning av en produkts tillgänglighet, detta genom att ta hänsyn till de transaktioner som skapats i de kanaler som administrationen ännu inte känner till.
 
-Om du vill använda dessa två API:er måste du aktivera funktionen **Optimerad beräkning för produkttillgänglighet** via arbetsytan **Funktionshantering** i administrationen. Om dina näthandels- och butikskanaler använder samma uppfyllelselagerställen, måste du även aktivera funktionen för **Utökad lagerberäkningslogik på kanalsidan för näthandel** för att beräkningslogiken på kanalsidan ska användas i de två API:erna för att dela upp icke-bokförda transaktioner (hämtköp, kundorder, returer) som skapats i butikskanalen. Du måste köra jobbet **1070** (**Kanalkonfiguration**) efter det att du har aktiverat dessa funktioner.
-
 Om du vill definiera hur produktkvantiteten ska returneras i API-utleveransen följer du dessa steg.
 
 1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> Commerce-parametrar**.
@@ -85,17 +99,17 @@ Om du vill definiera hur produktkvantiteten ska returneras i API-utleveransen f�
 
 Inställningen **Kvantitet i API-utdata** innehåller tre alternativ:
 
-- **Returlagerkvantitet** – Fysiskt tillgänglig och totalt tillgänglig kvantitet för en begärd produkt returneras i API-utdatan.
-- **Returlagerkvantitet som subtraherar lagerbuffert** – Den kvantiteten som returneras i API-utdatan justeras genom att lagerbuffertvärdet subtraheras. Mer information om lagerbufferten finns i [Konfigurera lagerbuffertar och lagernivåer](inventory-buffers-levels.md).
-- **Ej returlagerkvantitet** – Endast lagernivån returneras i API-utdatan. Mer information om lagerbuffertens nivåer finns i [Konfigurera lagerbuffertar och lagernivåer](inventory-buffers-levels.md).
+- **Returlagerkvantitet** – Fysiskt tillgänglig och totalt tillgänglig kvantitet för en begärd produkt returneras i API-utdata.
+- **Returlagerkvantitet som subtraherar lagerbuffert** – Den kvantitet som returneras i API-utdata justeras genom att lagerbuffertvärdet subtraheras. Mer information om lagerbufferten finns i [Konfigurera lagerbuffertar och lagernivåer](inventory-buffers-levels.md).
+- **Ej returlagerkvantitet** – Endast lagernivån returneras i API-utdata. Mer information om lagerbuffertens nivåer finns i [Konfigurera lagerbuffertar och lagernivåer](inventory-buffers-levels.md).
 
 Du kan använda API-parametern `QuantityUnitTypeValue` om du vill ange den enhetstyp i vilken du vill att API:erna ska returnera kvantiteterna. Denna parametern stöder alternativen **Lagerenhet** (standard), **Inköpsenhet** och **Försäljningsenhet**. Den returnerade kvantiteten avrundas till den definierade precisionen för motsvarande måttenhet (UOM) i administrationen.
 
 I API:t **GetEstimatedAvailability** finns följande inmatningsparametrar som stöder olika frågescenarier:
 
 - `DefaultWarehouseOnly` – Använd den här parametern när du vill söka i lager efter en produkt i näthandelskanalens standardlagerställe. 
-- `FilterByChannelFulfillmentGroup` och `SearchArea` - Använd dessa två parametrar för att söka i lagret efter en produkt från alla upphämtningsställen inom ett specifikt sökområde, baserat på `longitude`, `latitude` och `radius`. 
-- `FilterByChannelFulfillmentGroup` och `DeliveryModeTypeFilterValue` - Använd dessa två parametrar för att söka lagerstället för en produkt från specifika lagerställen som är kopplade till en onlinekanals uppfyllelsegrupp och är konfigurerade för att stödja vissa leveranssätt. Parametern `DeliveryModeTypeFilterValue` stöder alternativen **alla** (standardalternativ), **leverans** samt **upphämtning**. I ett scenario där en onlineorder kan uppfyllas från flera leveranslagerställen kan du till exempel använda dessa två parametrar för att fråga efter en produkts lagertillgänglighet i alla dessa leveranslagerställen. API:t i det här fallet returnerar produktens lagerbehållningskvantitet och lagernivå i varje leveranslagerställe, plus en aggregerad kvantitet och en aggregerad lagernivå från alla leveranslagerställen i frågesomfång.
+- `FilterByChannelFulfillmentGroup` och `SearchArea` – Använd dessa två parametrar för att söka i lagret efter en produkt från alla upphämtningsställen inom ett specifikt sökområde, baserat på `longitude`, `latitude` och `radius`. 
+- `FilterByChannelFulfillmentGroup` och `DeliveryModeTypeFilterValue` – Använd dessa två parametrar för att söka lagerstället för en produkt från specifika lagerställen som är kopplade till en onlinekanals uppfyllelsegrupp och är konfigurerade för att stödja vissa leveranssätt. Parametern `DeliveryModeTypeFilterValue` stöder alternativen **alla** (standardalternativ), **leverans** samt **upphämtning**. I ett scenario där en onlineorder kan uppfyllas från flera leveranslagerställen kan du till exempel använda dessa två parametrar för att fråga efter en produkts lagertillgänglighet i alla dessa leveranslagerställen. API:t i det här fallet returnerar produktens lagerbehållningskvantitet och lagernivå i varje leveranslagerställe, plus en aggregerad kvantitet och en aggregerad lagernivå från alla leveranslagerställen i frågesomfång.
  
 Inköpsruta, butiksväljare, önskelista, kundvagn och kundvagnsikon för Commerce förbrukar de API:er och parametrar som omnämns ovan i syfte att visa meddelanden om lagernivåer på hela näthandelssajten. ommerce-webbplatsbyggaren innehåller olika lagerinställningar som styr marknadsföring och inköp. Mer information om [Använd lagerinställningar](inventory-settings.md).
 
@@ -136,6 +150,5 @@ För att säkerställa bästa möjliga uppskattning av lagret är det viktigt at
 > - När beräkningar för lagertillgänglighet på kanalsidan används för att skapa en begäran om lagertillgänglighet med hjälp av API:er för e-Commerce eller kassalagerlogik på kanalsidan, kommer beräkningen av prestandaskäl att använda en cache i syfte att avgöra huruvida tillräckligt med tid har passerat för att det ska vara berättigat att köra beräkningslogiken på nytt. Standardcache är inställd på 60 sekunder. Du har till exempel aktiverat en beräkning på kanalsidan för butiken och visat lagerbehållningen för en produkt på sidan **lagersökning**. Om en enhet av produkten sedan säljs kommer sidan **lagersökning** inte att visa det reducerade lagret förrän cachen har rensats. När användarna har bokfört transaktioner i POS ska de vänta 60 sekunder innan de kontrollerar att lagerbehållningen har reducerats.
 
 Om ditt affärsscenario kräver en mindre cachetid kan du kontakta din produktsupportrepresentant för att få hjälp.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

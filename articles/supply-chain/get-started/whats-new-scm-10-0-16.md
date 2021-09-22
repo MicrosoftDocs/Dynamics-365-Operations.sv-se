@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 58a69907bdd1b03ea2e025b736dbbf84eed73c76d54bd5c93386ba8a627f095f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4c5c8e1d13a58b5ebc68315c75e5245cb10377f3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712059"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474926"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.16 (februari 2021)
 
@@ -56,30 +56,6 @@ Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De
 - [Översikt över farligt material](../pim/hazmat-overview.md) (och närliggande information)
 - [Migrering till planeringsoptimering för huvudplanering](../master-planning/new-master-planning-engine.md)
 - [Förbättringar i inköps-cXML](../procurement/purchasing-cxml-enhancements.md)
-- [Felsöka kostnadshantering](../cost-management/troubleshoot-costmanagement.md)
-- [Felsöka åtgärder för mottagande distributionslager](../warehousing/troubleshoot-warehouse-inbound.md)
-- [Felsöka lastuppbyggnad och utleveranser](../warehousing/troubleshoot-warehouse-loads-shipments.md)
-- [Felsöka huvudplanering](../master-planning/troubleshoot-masterplanning.md)
-- [Felsöka åtgärder för utgående distributionslager](../warehousing/troubleshoot-warehouse-outbound.md)
-- [Felsöka delvis frisläppning och delleverans](../warehousing/troubleshoot-warehouse-partial-release-shipment.md)
-- [Felsöka produktkonfiguratorn](../pim/troubleshooting-productconfigurator.md)
-- [Felsöka produktinformation](../pim/troubleshooting-productinformation.md)
-- [Felsöka anskaffnings- och källarbetsflöden](../procurement/troubleshoot-procurementworkflows.md)
-- [Felsöka inköpsorder](../procurement/troubleshoot-purchaseorders.md)
-- [Felsöka priser, rabatter och avtal](../procurement/troubleshooting-pricediscountagreements.md)
-- [Felsöka produktinleveranser och fakturering](../procurement/troubleshooting-productreceiptinvoicing.md)
-- [Felsöka diskret tillverkning](../production-control/troubleshoot-discretemanufacturing.md)
-- [Felsöka plockning och packning](../warehousing/troubleshoot-warehouse-picking-packing.md)
-- [Felsöka processtillverkning](../production-control/troubleshoot-processmanufacturing.md)
-- [Felsöka reservationer i distributionslagerhantering](../warehousing/troubleshoot-warehouse-reservations.md)
-- [Felsöka försäljningsorder](../sales-marketing/troubleshooting-sales.md)
-- [Felsöka försäljningsofferter](../sales-marketing/troubleshooting-salesquotation.md)
-- [Felsöka uppgradering och migrering till avancerad distributionslagerhantering](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Felsöka anslutningsproblem med mobilappen för distributionslagerhantering](../warehousing/troubleshoot-warehouse-app-connection.md)
-- [Felsöka distributionslagerkonfiguration](../warehousing/troubleshoot-warehouse-configuration.md)
-- [Felsöka lagerpåfyllnad](../warehousing/troubleshoot-warehouse-replenishment.md)
-- [Felsöka distributionslagerinställningar](../warehousing/troubleshoot-warehouse-setup.md)
-- [Felsöka distributionslagerarbete](../warehousing/troubleshoot-warehouse-work.md)
 - [Kluster för artikelinförsel](../warehousing/putaway-clusters.md)
 - [Strategier för lagerpåfyllnad](../warehousing/replenishment-strategies.md)
 - [Arbetsdelning](../warehousing/work-split.md)

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 32beabd40aa62cce832505edd56d92a8a8f12192b821f075e9b1f058d52bf8d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0fe4b377ec80601f616f81f71222129256dfd448
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733454"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474950"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexibel reservationspolicy för dimension på distributionslagernivå
 
@@ -858,7 +858,5 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 - [Reservera samma batch för en försäljningsorder](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Plocka den äldsta batchen på en mobil enhet](pick-oldest-batch.md)
 - [Bekräftelse av batch och ID-nummer](batch-and-license-plate-confirmation.md)
-- [Felsöka reservationer i distributionslagerhantering](troubleshoot-warehouse-reservations.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

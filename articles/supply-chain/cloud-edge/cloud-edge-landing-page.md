@@ -1,5 +1,5 @@
 ---
-title: Moln- och kantskalningsenheter för arbetsbelastning i tillverknings och distributionslagerhantering
+title: Skalningsenheter i en distribuerad hybridtopologi
 description: Detta ämne ger information, se moln och kantskalningsenhet med arbetsbelastning för tillverkning och distributionslagerhantering.
 author: cabeln
 ms.date: 04/22/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780684"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471750"
 ---
-# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Moln- och kantskalningsenheter för arbetsbelastning i tillverknings och distributionslagerhantering
+# <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skalningsenheter i en distribuerad hybridtopologi
 
 [!include [banner](../includes/banner.md)]
 
@@ -26,11 +26,11 @@ ms.locfileid: "6780684"
 >
 > Genom att aktivera moln- och kantskalningsenheter bekräftar du att du förstår att vissa data som är relaterade till konfigurationen och bearbetningen av moln- och kantskalningsenheter kan lagras i ett datacenter som finns i USA. Mer information om databearbetning för molnbaserade enheter och kantskalningsenheter finns i avsnittet [Databehandling i samband med hantering av skalningsenheter](#data-processing-management) längre fram i det här avsnittet.
 
-## <a name="core-value-proposition-for-scale-units"></a>Grundläggande värdeförslag för skalningsenheter
+## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Grundvärdesförslag för en distribuerad hybridtopologi
 
-Företag som arbetar med tillverkning och distribution måste kunna köra viktiga affärsprocesser dygnet runt, utan avbrott och i skala. Moln- och kantskalningsenheter kan företag köra viktiga verksamhets kritiska tillverknings- och lagerprocesser utan avbrott, även om de är i drift med tillfälliga nätverksanslutnings- eller latensproblem.
+Företag som arbetar med tillverkning och distribution måste kunna köra viktiga affärsprocesser dygnet runt, utan avbrott och i skala. Med en distribuerad hybridtopologi kan företag köra viktiga verksamhetskritiska tillverknings- och lagerprocesser utan avbrott, även om de är i har tillfälliga nätverksanslutnings- eller latensproblem.
 
-Moln- och kantskalningsenheter möjliggör distribution av arbetsbelastning för arbetsstyrning och körning av lagerställen i olika miljöer. Med hjälp av den här funktionen kan du förbättra prestanda, förhindra avbrott i tjänsten och maximera drifttiden. Saklningsenheter tillhandahålls via följande tillägg för din Supply Chain Management-prenumeration:
+En distribuerad hybridtopologi introducerar begreppet *skalningsenehter*, som gör det möjligt att distribuera arbetsbelastningar för verkstad och lagerställe mellan olika miljöer. Med hjälp av den här funktionen kan du förbättra prestanda, förhindra avbrott i tjänsten och maximera drifttiden. Saklningsenheter tillhandahålls via följande tillägg för din Supply Chain Management-prenumeration:
 
 - Tillägg för molnbaserad skalningsenhet för Dynamics 365 Supply Chain Management (*från april 2021)*
 - Tillägg för kantskalningsenhet för Dynamics 365 Supply Chain Management (*kommer snart)*

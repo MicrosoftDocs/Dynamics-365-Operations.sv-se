@@ -1,8 +1,8 @@
 ---
 title: Skapa en stängd avslutad fråga
 description: Med stängda frågor kan du ange alternativ som den svarande kan välja mellan.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: KMAnswerCollection, KMAnswer, KMQuestion, HcmLearningWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b4daa277ba1b71238314de975c1e8a54f9ece408d6fc2a314828bc0592129af2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8758b74f9ce7c8687b7c2925ccd04cd512602db0
+ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731971"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465183"
 ---
 # <a name="create-a-closed-ended-question"></a>Skapa en stängd avslutad fråga
 
@@ -30,42 +30,42 @@ Med stängda frågor kan du ange alternativ som den svarande kan välja mellan. 
 
 
 ## <a name="create-an-answer-group"></a>Skapa en svarsgrupp
-1. Gå till Enkät > Design > Svarsgrupper.
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Svarsgrupp.
-4. Ange ett värde i fältet Beskrivning.
+1. Gå till **Enkät** > **Design** > **Svarsgrupper**.
+2. Klicka på **Ny**.
+3. Skriv ett värde i fältet **Svarsgrupp**.
+4. I fältet **Beskrivning** anger du ett värde.
     * Använd slumpfunktionen för att slumpmässigt placera svaren i en annan ordning varje gång svarsgruppen används för en fråga.  
-5. Klicka på Svar.
-6. Klicka på Ny.
+5. Klicka på **Svar**.
+6. Klicka på **Ny**.
     * Sekvensnummerkontrollerar ordern svaren som visas i, om inte Slumpmässigt har valts för svarsgruppen.  
     * Poäng kan tilldelas svar för att användas vid poängsättning av enkäten.  
-7. Välj ett nummer i fältet Poäng.
+7. Välj ett nummer i fältet **Poäng**.
     * Det korrekta svaret kan markeras för att visa att det valda svaret är korrekt. Detta kan användas för att poängsätta enkäten.  
-8. Skriv ett värde i fältet Svar.
+8. Skriv ett värde i fältet **Svar**.
     * Fortsätt att skapa svarsurvalsalternativ för svarsgruppen.  
-9. Klicka på Ny.
-10. Välj ett nummer i fältet Poäng.
-11. Skriv ett värde i fältet Svar.
-12. Klicka på Ny.
-13. Välj ett nummer i fältet Poäng.
-14. Skriv ett värde i fältet Svar.
-15. Klicka på Ny.
-16. Välj ett nummer i fältet Poäng.
-17. Skriv ett värde i fältet Svar.
-18. Klicka på Ny.
-19. Välj ett nummer i fältet Poäng.
-20. Skriv ett värde i fältet Svar.
+9. Klicka på **Ny**.
+10. Välj ett nummer i fältet **Poäng**.
+11. Skriv ett värde i fältet **Svar**.
+12. Klicka på **Ny**.
+13. Välj ett nummer i fältet **Poäng**.
+14. Skriv ett värde i fältet **Svar**.
+15. Klicka på **Ny**.
+16. Välj ett nummer i fältet **Poäng**.
+17. Skriv ett värde i fältet **Svar**.
+18. Klicka på **Ny**.
+19. Välj ett nummer i fältet **Poäng**.
+20. Skriv ett värde i fältet **Svar**.
 21. Stäng sidan.
 22. Stäng sidan.
 
 ## <a name="create-the-question"></a>Skapa frågan
-1. Gå till Enkät > Design > Frågor.
-2. Klicka på Ny.
+1. Gå till **Enkät** > **Design** > **Frågor**.
+2. Klicka på **Ny**.
 3. Använd fältet Typ för att gruppera relaterade frågor tillsammans.
     * Du kan använda ange indatatyper för kryssrutan, alternativsknappen eller kombinationsrutan för stängda frågor.  
-4. Välj ett alternativ i fältet Indatatyp.
-5. Ange eller välj ett värde i fältet Svarsgrupper.
-6. Skriv ett värde i fältet Text.
+4. Välj ett alternativ i fältet **Indatatyp**.
+5. Ange eller välj ett värde i fältet **Svarsgrupp**.
+6. Skriv ett värde i fältet **Text**.
 
 
 

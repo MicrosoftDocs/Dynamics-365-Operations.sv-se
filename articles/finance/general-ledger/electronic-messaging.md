@@ -2,7 +2,7 @@
 title: Elektroniska meddelanden
 description: Det här avsnittet innehåller information om översikt och inställningar för elektronisk post i Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 06/29/2021
+ms.date: 08/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 191abc37b7c349aaf3c9e871fe2f1885eec9fc896271d6fac27e5caa0b0fe3b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16b0e0fa74109f1c63ed47606bebe2fefc604fc5
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768349"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478734"
 ---
 # <a name="electronic-messaging"></a>Elektroniska meddelanden
 
@@ -57,6 +57,16 @@ EM-funktionen stöder följande scenarier:
 - Spara och granska alla rapporter som skapas.
 - Spara och granska all logginformation som är relaterad till åtgärder som körs för ett meddelande eller en meddelandeartikel.
 - Kontrollera bearbetning genom olika meddelandestatus och status för meddelandeartikel.
+
+## <a name="security-privileges"></a>Säkerhetsprivilegier
+
+Följande säkerhetsprivilegier är tillgängliga för elektroniska meddelanden.
+
+| Säkerhetsprivilegium           | Åtkomstnivå | Koppling |
+|------------------------------|--------------|-------------|
+| Underhåll elektroniska meddelanden | Det här privilegiet ger fullständig åtkomst till EM-funktionerna. Om du har det här privilegiet kan du konfigurera elektroniska meddelanden och köra all bearbetning. | Detta privilegium ingår i säkerhetsuppdraget **Underhålla momstransaktioner**. Detta uppdrag ingår i sin tur i säkerhetsrollen **Redovisare**. |
+| Visa elektroniska meddelanden     | Det här privilegiet ger skrivskyddad åtkomst till EM-funktionerna. Om du har det här privilegiet kan du visa inställningar för elektroniska meddelanden och själva meddelandena. Du kan däremot inte konfigurera eller köra något. | Detta privilegium ingår i säkerhetsuppdraget **Fråga om momstransaktionsstatus**. Detta uppdrag ingår i sin tur i följande säkerhetsroller:<ul><li>Inkassochef</li><li>Kundreskontraansvarig</li><li>Kundreskontrachef</li><li>Skatteredovisare</li><li>Redovisare</li><li>Redovisningschef</li><li>Redovisningsansvarig</li><li>Försäljningschef</li><li>Leverantörsreskontraansvarig</li></ul> |
+| Arbeta med elektroniska meddelanden  | Detta privilegium ger bara åtkomst till sidorna **Elektroniska meddelanden** och **Elektroniska meddelandeartiklar**. Om du har det här privilegiet kan du köra all bearbetning som anropas från dessa sidor. | Detta privilegium ingår i säkerhetsuppdraget **Hantera elektroniska meddelanden**. Detta uppdrag ingår i sin tur i säkerhetsrollen **Operatör för elektroniska meddelanden**. |
 
 ## <a name="country-specific-regulatory-features-supported-by-the-em-functionality"></a>Landsspecifika lagstadgade funktioner som stöds av EM-funktionerna
 

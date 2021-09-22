@@ -1,8 +1,8 @@
 ---
 title: Skapa ett teamkalender
 description: Visa och skapa teamkalendrar i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ccbf12d4dcc75e22fc62c356653a91b9a8a8d1761ccefb18c93e65f343250830
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eacf2dc460367ebefb7e9f4d9e301ec719cd2317
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744236"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431496"
 ---
 # <a name="view-team-and-company-calendars"></a>Visa team- och företagskalendrar
 
@@ -47,7 +47,7 @@ Chefer kan också komma åt teamkalendern från **Väntande ledighetsansökninga
 
 Användare med rollen Frånvaroansvarig kan visa ledighetsansökningar i sin kalender. Följ dessa steg för att komma till ledighetskalendern.
 
-1. I arbetsytan **Självbetjäning för medarbetare**, välj **tjänstledighetshantering** och sedan **Frånvaroansvarigkalendern**.
+1. I arbetsytan **Självbetjäning för medarbetare**, välj **Tjänstledighetshantering** och sedan **Frånvaroansvarigkalendern**.
 
 2. I fältet **Datum** anger du önskade datum.
 
@@ -75,7 +75,7 @@ Kalendrar innehåller nu ytterligare filter och alternativ. Alla kalendrar inklu
 - Ansökningar om ledighet 
 - Tjänstledighetsansökningar
 
-Kalenderkonfiguration i tjänstledighets- och frånvaroparametrar bestämmer tillgängliga visningsalternativ.
+Kalenderkonfiguration i på sidan **Tjänstledighets- och frånvaroparametrar** bestämmer tillgängliga visningsalternativ.
 
 Du kan även filtrera kalendern efter chef eller avdelning. Den primära befattningstilldelningen avgör vilka medarbetare som visas när dessa filter ställs in. 
 

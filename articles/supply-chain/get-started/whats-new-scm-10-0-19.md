@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 74720e387d5db7de841228e6573fb40c5d22588b
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: bd82ad9a0eb2f8f85bc7dad0ae174726234ad84f
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384669"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474902"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.19 (juni 2021)
 
@@ -67,7 +67,6 @@ Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De
 | Produktinformationshantering | [Hantera måttenhet](../pim/tasks/manage-unit-measure.md)<br><br>[Beräkningar för produktkonfigurationsmodell](../pim/config-model-calculations.md) |
 | Produktionskontroll | [Enhetlig nummerserie för jobb-ID:n](../production-control/unified-job-ids.md) |
 | Transporthantering | [LTL-klasser](../transportation/ltl-class.md)<br><br>[NMFC-koder](../transportation/nmfc-codes.md) |
-| Warehouse management | [Felsöka batch- och seriereservationshierarkier för distributionslager](../warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md) |
 | Lagerhantering, skapa och bearbeta cykel | [Skapa och bearbeta påfyllnad](../warehousing/wave-processing.md)<br><br>[Distributionslagerparametrar för påfyllnadsbearbetning](../warehousing/wave-warehouse-parameters.md)<br><br>[Påfyllnadsmallar](../warehousing/wave-templates.md)<br><br>[Påfyllnadsallokering](../warehousing/wave-allocation-method.md)<br><br>[Tidsplanera att skapa arbete under påfyllnad](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Skapande av behållare](../warehousing/wave-containerization.md)<br><br>[Meddelanden för påfyllnadskörning](../warehousing/wave-execution-notifications.md) |
 
 ## <a name="additional-resources"></a>Ytterligare resurser

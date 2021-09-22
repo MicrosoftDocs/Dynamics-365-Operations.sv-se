@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 052311e15aeb20b927cbed217a2bda600dad60a5
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 4102f8036c0aede7c8a2adcaa9b8799a71ac7ada
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345660"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441299"
 ---
 # <a name="maintain-bar-code-types"></a>Underhåll streckkodstyper
 
@@ -32,7 +32,8 @@ I den här proceduren visas hur du ställer in en ny streckkodsdefinition som se
 1. I fältet **Streckkodsinställningar** anger du ett värde.
 1. I fältet **Beskrivning** anger du ett värde.
 1. Välj ett alternativ i fältet **Streckkodstyp**.
-    * Om du använder USMF kan du välja Code 39.  
+    * Om du använder USMF kan du välja Code 39.
+1. I fältet **Mask-ID** anger du streckkodsmaskens ID. Streckkodsmasker används för att skapa streckkoder och snabbt identifiera streckkoder som skannas till kassasystemet. Mer information finns [i Ställa in streckkodsmasker](../../../commerce/set-up-bar-code-masks.md).
 1. Ange ett nummer i fältet **Storlek**.
 1. Ange ett värde i fältet **Maximal längd**.
 1. Välj **Spara**.

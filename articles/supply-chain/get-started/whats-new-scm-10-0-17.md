@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 67240491bba5a81455bff00be22908670880803c3e08091d76e037fa0b5f49ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ef6b7c619cfce70c2f0b3f676d3cae988674c858
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760524"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474613"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Vad är nytt och ändrat i Dynamics 365 Supply Chain Management (10.0.17 april 2021)
 
@@ -99,10 +99,6 @@ De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fi
 
 Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De är inte nödvändigtvis relaterade till de nya funktioner som har lagts till för den här versionen, vilket visas i föregående avsnitt, men de kan hjälpa dig att få ut mer av befintliga funktioner.
 
-### <a name="cost-management"></a>Kostnadshantering
-
-- [Felsöka kostnadshantering](../cost-management/troubleshoot-costmanagement.md)
-
 ### <a name="asset-management"></a>Tillgångshantering
 
 - [Konfigurera mobil arbetsyta för tillgångshantering](../asset-management/set-up-asset-management-mobile.md)
@@ -114,8 +110,6 @@ Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De
 - [Rullande inventering av del av platser](../warehousing/partial-location-cycle-counting.md)
 
 - [Plockradsgruppering](../warehousing/pick-line-grouping.md)
-
-- [Felsöka lageråtgärder](../inventory/troubleshoot-inventory-operations.md)
 
 - [Artikelplacering för lagerställe](../warehousing/warehouse-slotting.md)
 

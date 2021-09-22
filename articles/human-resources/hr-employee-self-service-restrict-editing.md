@@ -1,8 +1,8 @@
 ---
 title: Begränsa redigering av personlig information
 description: Hindra medarbetare från att redigera kontaktinformation i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 03/03/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 87977ff004e0785ec1d31fe3abac2728f87e7083348895b58e58f46cd3e79925
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c4a13818103434df5005ad2805ac2ea7495bb767
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748893"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431415"
 ---
 # <a name="restrict-editing-of-personal-information"></a>Begränsa redigering av personlig information
 
@@ -54,7 +54,7 @@ I det här avsnittet beskrivs hur du begränsar medarbetare från att redigera k
 
 När du har begränsat medarbetarna till att lägga till eller redigera kontaktdetaljer, kan de visa informationen, men det går inte att ändra den.
 
-I det här exemplet, där anställda är begränsade från redigering **affärskontaktinformation** kan de fortfarande se informationen i självbetjäning för anställda:
+I det här exemplet, där anställda är begränsade från redigering **företags** kontaktinformation kan de fortfarande se informationen i **Självbetjäning för medarbetare**:
 
 ![Visa affärskontaktinformation.](./media/hr-employee-self-service-restrict-view.png)
 

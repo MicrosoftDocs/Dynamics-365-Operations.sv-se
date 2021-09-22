@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da997af4c4cab7b99dfa14f185de6a7c057d6831b7ee576787c17b550fa60194
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 56c253d8ef2c8114edbd7098c29464d83086b2db
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748220"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441225"
 ---
 # <a name="get-started-with-financial-reporting"></a>Kom i gång med Financial reporting 
 
@@ -180,7 +180,7 @@ Nedan finns några steg du kan vidta för att göra dina samtal med Microsoft me
  
 I följande steg går du igenom processen för att aktivera meddelanden i Loggboken för ekonomisk rapportering. Loggarna som Loggboken genererar hjälper supporttekniker att snabbt identifiera källan till anslutningsproblemet. Skicka kopior av dessa loggar tillsammans med din lott när du kontaktar supporten.
 
-> 1.    Kopiera RegisterETW.zip-filen till klientens arbetsstation (helst Desktop) och extrahera [RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster).
+> 1.    Kopiera RegisterETW.zip-filen till klientens arbetsstation (helst Desktop) och extrahera [RegisterETW.zip](https://mbs2.microsoft.com/fileexchange/?fileID=60b1106b-d5f8-4e0f-8041-039102505122).
 
 > 2.    Kontrollera att Loggboken i Windows är stängd.
 

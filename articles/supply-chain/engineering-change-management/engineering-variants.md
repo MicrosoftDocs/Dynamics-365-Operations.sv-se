@@ -10,18 +10,29 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 57eda6a833df6ff8e91c006bbc5096554eff6c503a8b7ba2bd0b13e2f8e98f56
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4e2133263f4bee09a3365236601e0d2fdd08a7ae
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766171"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471846"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Generera varianter för tekniska produkter
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Avsnittet beskriver hur du genererar varianter för tekniska produkter.
+
+## <a name="turn-on-variant-generation-for-engineering-products"></a>Aktivera generering av varianter för konstruktionsprodukter
+
+Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+
+- **Modul:** *Konstruktionsändringshantering*
+- **Funktionsnamn:** *Generering av varianter för konstruktionsprodukter*
+
+> [!IMPORTANT]
+> Funktionen *Generering av varianter för konstruktionsprodukter* visas i systemet först när du har aktiverat konfigurationsnyckeln *Konstruktionsändringshantering*. Instruktioner finns i [Konstruktionsändringshantering – översikt](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Generera en eller flera nya varianter av en teknisk produkt
 
@@ -38,10 +49,15 @@ Följande procedur är ett exempel på hur du skapar flera varianter som innehå
 1. Lägg till en strukturlista och flöde till varianten vid behov.
 1. I åtgärdsfönstret öppnar du fliken **Produkt** och i gruppen **Produktmall** väljer du **Produktdimensioner**.
 1. Sidan **Produktdimensioner** öppnas. På den här sidan finns en flik för varje tillgänglig dimension. På varje flik lägger du till en rad för varje värde som du vill stödja för varje relevant dimension. (I det här exemplet kan du lägga till rader på fliken **Färg** för *Vit*, *Gul* och *Grön*).
-1. Stäng sidan och välj **Varianter av släppt produkt**. Observera att den första skapade varianten (vit V-1) visas.
-1. Välj **Variantförslag**.
-1. Systemet föreslår varianter med de skapade färgvärdena (till exempel vit V-1, gul V-1 och grön V-1).
-1. Välj föreslagna varianter och välj **OK** för att släppa varianterna till teknikföretaget. Observera att följande villkor gäller: 
+1. Stäng sidan och välj **Frisläppta produktvarianter**. Lägg märke till att den första varianten som du skapat (blå V-1) visas.
+1. I åtgärdsrutan, på fliken **Produktvariant**, välj **Variantförslag**.
+1. Följ något av följande steg i dialogrutan **Variantförslag**:
+
+    - Högst upp i dialogrutan finns ett avsnitt för varje tillgänglig dimension. För varje dimension markerar du kryssrutan för varje värde som du vill skapa ett variantförslag för och väljer sedan **Föreslå** i verktygsfältet. Relevanta förslag läggs till i avsnittet **Föreslagna varianter**.
+    - Välj **Föreslå alla** i verktygsfältet om du vill generera variantförslag för alla tillgängliga kombinationer av dimensionsvärden. Förslagen läggs till i avsnittet **Föreslagna varianter**.
+
+1. I avsnittet **Föreslagna varianter**, markera kryssrutan för varje variant som du vill skapa. Välj **Skapa** för att generera och släppa de valda varianterna till konstruktionsföretaget. Följande villkor gäller:
+
     - Ingen av de skapade varianterna kommer att ha en strukturlista eller ett flöde.
     - Attributen för dessa varianter kommer som standard från teknikkategorin och kopieras inte från föregående variant.
 

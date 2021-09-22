@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 0aca5838ff6d7c9c4d881698be1e2da2e0e1c02e
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 6dff54f54a495c2b4a7837f3a41f410d418cf12b
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343642"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474662"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentliga API:er för Lagersynlighet
 
@@ -46,6 +46,9 @@ I följande tabell finns de API:er som är tillgängliga i nuläget:
 
 Microsoft har tillhandahållit en färdig *brevbärar*-begärandesamling. Du kan importera denna samling till ditt *brevbärar* program genom att använda följande delade länk: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
+> [!NOTE]
+> Delen {environmentId} av sökvägen är miljö-ID:t i Microsoft Dynamics Lifecycle Services (LCS).
+
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Hitta slutpunkten enligt Lifecycle Services-miljön
 
 Den mikrotjänst som används för Lagersynlighet distribueras för Microsoft Azure Service Fabric, i flera geografiska områden och flera regioner. Det finns i nuläget ingen central slutpunkt som automatiskt kan omdirigera din begäran till motsvarande geografiskt område och region. Du måste därför skapa informationsdelarna i en URL genom att använda följande mönster:
@@ -54,22 +57,26 @@ Den mikrotjänst som används för Lagersynlighet distribueras för Microsoft Az
 
 Det korta namnet för regionen finns i Microsoft Dynamics Lifecycle Services-miljön (LCS). I följande tabell finns de regioner som är tillgängliga i nuläget:
 
-| Azure-region | Kortnamn för region |
-|---|---|
-| Östra Australien | eau |
-| Sydöstra Australien | seau |
-| Centrala Kanada | cca |
-| Östra Kanada | eca |
-| Nordeuropa | neu |
-| Västeuropa | weu |
-| Östra USA | eus |
-| Västra USA | wus |
-| Södra Storbritannien | suk |
-| Västra Storbritannien | wuk |
+| Azure-region        | Kortnamn för region |
+| ------------------- | ----------------- |
+| Östra Australien      | eau               |
+| Sydöstra Australien | seau              |
+| Centrala Kanada      | cca               |
+| Östra Kanada         | eca               |
+| Nordeuropa        | neu               |
+| Västeuropa         | weu               |
+| Östra USA             | eus               |
+| Västra USA             | wus               |
+| Södra Storbritannien            | suk               |
+| Västra Storbritannien             | wuk               |
+| Japan, östra          | ejp               |
+| Japan, västra          | wjp               |
+| Brasilien, södra        | sbr               |
+| Södra centrala USA    | scus              |
 
 Öns nummer är där din LCS-miljö finns distribuerad i Service Fabric. Det finns för närvarande inget sätt att få denna information från användarsidan.
 
-Microsoft har skapat ett användargränssnitt (UI) i Power Apps som gör att du kan få den fullständiga slutpunkten för mikrotjänsten. Mer information finns i [Hitta tjänsteslutpunkten](inventory-visibility-power-platform.md#get-service-endpoint).
+Microsoft har skapat ett användargränssnitt (UI) i Power Apps som gör att du kan få den fullständiga slutpunkten för mikrotjänsten. Mer information finns i [Hitta tjänsteslutpunkten](inventory-visibility-configuration.md#get-service-endpoint).
 
 ## <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Äkthetsbevisning
 
@@ -80,66 +87,66 @@ Gör så här om du vill hämta en säkerhetstjänsttoken:
 1. Logga in på Azure-portalen och använd den för att hitta värdena `clientId` och `clientSecret` för din Dynamics 365 Supply Chain Management-app.
 1. Hämta en Azure AD-token (`aadToken`) genom att skicka en HTTP-begäran med följande egenskaper:
 
-    - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
-    - **Metod:** `GET`
-    - **Brödtext (formulärdata):**
+   - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+   - **Metod:** `GET`
+   - **Brödtext (formulärdata):**
 
-        | Nyckel | Värde |
-        |---|---|
-        | klient-ID | ${aadAppId} |
-        | client_secret | ${aadAppSecret} |
-        | grant_type | client_credentials |
-        | resurs | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+     | Nyckel           | Värde                                |
+     | ------------- | ------------------------------------ |
+     | klient-ID     | ${aadAppId}                          |
+     | client_secret | ${aadAppSecret}                      |
+     | grant_type    | client_credentials                   |
+     | resurs      | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
 
-    Du bör få en Azure AD-token (`aadToken`) som svar. Det bör likna följande exempel:
+   Du bör få en Azure AD-token (`aadToken`) som svar. Det bör likna följande exempel:
 
-    ```json
-    {
-        "token_type": "Bearer",
-        "expires_in": "3599",
-        "ext_expires_in": "3599",
-        "expires_on": "1610466645",
-        "not_before": "1610462745",
-        "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
-        "access_token": "eyJ0eX...8WQ"
-    }
-    ```
+   ```json
+   {
+       "token_type": "Bearer",
+       "expires_in": "3599",
+       "ext_expires_in": "3599",
+       "expires_on": "1610466645",
+       "not_before": "1610462745",
+       "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+       "access_token": "eyJ0eX...8WQ"
+   }
+   ```
 
 1. Formulera en JSON-begäran (JavaScript Object Notation) som liknar följande exempel.
 
-    ```json
-    {
-        "grant_type": "client_credentials",
-        "client_assertion_type": "aad_app",
-        "client_assertion": "{Your_AADToken}",
-        "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-        "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
-        "context_type": "finops-env"
-    }
-    ```
+   ```json
+   {
+       "grant_type": "client_credentials",
+       "client_assertion_type": "aad_app",
+       "client_assertion": "{Your_AADToken}",
+       "scope": "https://inventoryservice.operations365.dynamics.com/.default",
+       "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
+       "context_type": "finops-env"
+   }
+   ```
 
-    Observera följande:
+   Observera följande:
 
-    - Värdet för `client_assertion` måste vara den Azure AD-token (`aadToken`) som du fick i föregående steg.
-    - Värdet `context` måste vara det miljö-ID där du vill distribuera tillägget.
-    - Ställ in de andra värdena enligt exemplet.
+   - Värdet för `client_assertion` måste vara den Azure AD-token (`aadToken`) som du fick i föregående steg.
+   - Värdet `context` måste vara det LCS-miljö-ID där du vill distribuera tillägget.
+   - Ställ in de andra värdena enligt exemplet.
 
 1. Skicka in en HTTP-begäran med följande egenskaper:
 
-    - **URL:** `https://securityservice.operations365.dynamics.com/token`
-    - **Metod:** `POST`
-    - **HTTP-sidhuvud:** Inkludera API-versionen. (Nyckeln är `Api-Version`, och värdet är `1.0`.)
-    - **Brödtext:** - Inkludera den JSON-begäran som du skapade i det föregående steget.
+   - **URL:** `https://securityservice.operations365.dynamics.com/token`
+   - **Metod:** `POST`
+   - **HTTP-sidhuvud:** Inkludera API-versionen. (Nyckeln är `Api-Version`, och värdet är `1.0`.)
+   - **Brödtext:** - Inkludera den JSON-begäran som du skapade i det föregående steget.
 
-    Du bör få en åtkomsttoken (`access_token`) som svar. Du måste använda denna token som en ägartoken för att anropa API för lagersynlighet. Här är ett exempel:
+   Du bör få en åtkomsttoken (`access_token`) som svar. Du måste använda denna token som en ägartoken för att anropa API för lagersynlighet. Här är ett exempel:
 
-    ```json
-    {
-        "access_token": "{Returned_Token}",
-        "token_type": "bearer",
-        "expires_in": 3600
-    }
-    ```
+   ```json
+   {
+       "access_token": "{Returned_Token}",
+       "token_type": "bearer",
+       "expires_in": 3600
+   }
+   ```
 
 I senare avsnitt används `$access_token` för att representera den token som hämtades i det sista steget.
 
@@ -160,6 +167,9 @@ I tabellen nedan sammanfattas vilket betydelse de olika fälten har i JSON-bröd
 | `quantities` | Kvantiteten som lagerbehållningen måste ändras med. Om till exempel 10 nya böcker läggs till på en hylla blir detta värde `quantities:{ shelf:{ received: 10 }}`. Om tre böcker tas bort från hyllan eller säljs kommer detta värde att bli `quantities:{ shelf:{ sold: 3 }}`. |
 | `dimensionDataSource` | Datakällan för de dimensioner som används vid ändring av bokföringshändelse och fråga. Om du anger datakällan kan du använda de anpassade dimensionerna från den angivna datakällan. Lagersynligheten kan använda dimensionskonfigurationen för att mappa de anpassade dimensionerna till de allmänna standarddimensionerna. Om inget värde för `dimensionDataSource` anges kan du endast använda alla [basdimensioner](inventory-visibility-configuration.md#data-source-configuration-dimension) i dina frågor. |
 | `dimensions` | Ett dynamiskt nyckel/värde-par. Värdena mappas till några av dimensionerna i Supply Chain Management. Du kan emellertid även lägga till anpassade dimensioner (till exempel _Källa_) för att ange om händelsen kommer från Supply Chain Management eller ett externt system. |
+
+> [!NOTE]
+> Parametrarna `SiteId` och `LocationId` skapar [partitionskonfigurationen](inventory-visibility-configuration.md#partition-configuration). Därför måste du ange dem i dimensioner när du skapar händelser för lagerbehållningsändring, ställer in eller åsidosätter lagerbehållningskvantiteter eller skapar reservationshändelser.
 
 ### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Skapa en ändringshändelse för behållning
 
@@ -201,6 +211,9 @@ Följande exempel visar brödtext. I det här exemplet bokför du en ändringsh�
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
+        "SiteId": "1",
+        "LocationId": "11",
+        "PosMachineId": "0001",
         "ColorId": "Red"
     },
     "quantities": {
@@ -211,7 +224,7 @@ Följande exempel visar brödtext. I det här exemplet bokför du en ändringsh�
 }
 ```
 
-Följande exempel visar brödtext utan `dimensionDataSource`.
+Följande exempel visar brödtext utan `dimensionDataSource`. I detta fall är `dimensions` [basdimensionerna](inventory-visibility-configuration.md#data-source-configuration-dimension). Om `dimensionDataSource` har ställts in kan `dimensions` vara antingen datakällsdimensionerna eller basdimensionerna.
 
 ```json
 {
@@ -219,9 +232,9 @@ Följande exempel visar brödtext utan `dimensionDataSource`.
     "organizationId": "usmf",
     "productId": "T-shirt",
     "dimensions": {
-        "ColorId": "Red",
         "SiteId": "1",
-        "LocationId": "11"
+        "LocationId": "11",
+        "ColorId": "Red"
     },
     "quantities": {
         "pos": {
@@ -275,6 +288,8 @@ Följande exempel visar brödtext.
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
+            "PosSiteId": "1",
+            "PosLocationId": "11",
             "PosMachineId&quot;: &quot;0001"
         },
         "quantities": {
@@ -284,10 +299,11 @@ Följande exempel visar brödtext.
     {
         "id": "654321",
         "organizationId": "usmf",
-        "productId": "@PRODUCT1",
-        "dimensionDataSource": "pos",
+        "productId": "Pants",
         "dimensions": {
-            "PosMachineId&quot;: &quot;0001"
+            "SiteId": "1",
+            "LocationId": "11",
+            "ColorId&quot;: &quot;black"
         },
         "quantities": {
             "pos": { "outbound": 3 }
@@ -341,6 +357,8 @@ Följande exempel visar brödtext. Beteendet för detta API skiljer sig från be
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
+             "PosSiteId": "1",
+            "PosLocationId": "11",
             "PosMachineId": "0001"
         },
         "quantities": {
@@ -359,6 +377,12 @@ Följande exempel visar brödtext. Beteendet för detta API skiljer sig från be
 Om du vill använda *reserv*-API:t måste du öppna reservationsfunktionen och slutföra reservationskonfigurationen. Mer information finns i [Konfigurera reservation (tillval)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a><a name="create-one-reservation-event"></a>Skapa en reservationshändelse
+
+Det går att göra en reservation mot olika datakällsinställningar. Om du vill konfigurera den här typen av reservation måste du först ange datakällan i `dimensionDataSource`-parametern. Sedan anger du i `dimensions`-parametern dimensioner enligt dimensionsinställningarna i måldatakällan.
+
+När du anropar reservations-API:t kan du kontrollera reservationsvalideringen genom att ange den booleska parametern `ifCheckAvailForReserv` i begärandetexten. Ett värde `True` betyder att valideringen krävs, medan ett värde av `False` betyder att valideringen inte krävs. Standardvärdet är `True`.
+
+Om du vill annullera en reservation eller ta bort reservationen av angivna lagerkvantiteter ställer du in kvantiteten på ett negativt värde och ställer in parametern `ifCheckAvailForReserv` på `False` för att hoppa över valideringen.
 
 ```txt
 Path:
@@ -467,14 +491,28 @@ ContentType:
     application/json
 Body:
     {
-        organizationId: string,
+        dimensionDataSource: string, # Optional
         filters: {
+            organizationId: string[],
+            productId: string[],
+            siteId: string[],
+            locationId: string[],
             [dimensionKey:string]: string[],
         },
         groupByValues: string[],
         returnNegative: boolean,
     }
 ```
+
+I brödtexten i denna begäran är `dimensionDataSource` fortfarande en valfri parameter. Om den inte är inställd behandlas `filters` som *basdimensioner*. Det finns fyra obligatoriska fält för `filters`: `organizationId`, `productId``siteId` och `locationId`.
+
+- `organizationId` bör bara innehålla ett värde, men det är fortfarande en matris.
+- `productId` kan innehålla ett eller flera värden. Om det är en tom matris kommer alla produkter att returneras.
+- `siteId` och `locationId` används i Lagersynlighet för partitionering.
+
+Parametern `groupByValues` bör följa din konfiguration för indexering. Mer information finns i [Hierarkikonfiguration för produktindex](./inventory-visibility-configuration.md#index-configuration).
+
+Parametern `returnNegative` styr om resultatet innehåller negativa poster.
 
 Följande exempel visar brödtext.
 
@@ -484,7 +522,24 @@ Följande exempel visar brödtext.
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["T-shirt"],
+        "siteId": ["1"],
+        "LocationId": ["11"],
         "ColorId": ["Red"]
+    },
+    "groupByValues": ["ColorId", "SizeId"],
+    "returnNegative": true
+}
+```
+
+Följande exempel visar hur du frågar efter alla produkter på en viss webbplats och plats.
+
+```json
+{
+    "filters": {
+        "organizationId": ["usmf"],
+        "productId": [],
+        "siteId": ["1"],
+        "LocationId": ["11"],
     },
     "groupByValues": ["ColorId", "SizeId"],
     "returnNegative": true
@@ -512,7 +567,7 @@ Query(Url Parameters):
 Här är ett exempel på URL-adressen. Denna hämtbegäran är exakt densamma som bokföringsexemplet som angavs tidigare.
 
 ```txt
-/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

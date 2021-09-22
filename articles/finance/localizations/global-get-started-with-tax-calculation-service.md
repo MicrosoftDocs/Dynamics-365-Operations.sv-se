@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1ddbb22d4f7c6108ca93b415276c53794b5450dd
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: b180a8cee1c5b7e9dda837915e6fdf94af30d06a
+ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394522"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465087"
 ---
 # <a name="get-started-with-tax-calculation"></a>Kom i gång med momsberäkning
 
@@ -49,13 +49,9 @@ För en produktionsmiljö måste följande förutsättningar uppfyllas:
 - Du måste skapa en RCS-miljö för organisationen och ha åtkomst till ditt konto. Mer information om hur du skapar en RCS-miljö finns i [Översikten över Regulatory Configuration Service](rcs-overview.md).
 - Följande funktioner måste aktiveras i arbetsytan **Funktionshantering** för din distribuerade Finance- eller Supply Chain Management-miljö, baserat på verksamhetens behov:
 
-    - Momsberäkning
+    - Skatteberäkningstjänst
     - Stöd för flera momsregistreringsnummer
     - Moms i överföringsorder
-    - Överföring av lista över försäljning inom EU baserat på momstransaktioner
-    - Intrastatrapportering genom flera moms-ID
-    - Rapportering via EU-försäljningslista genom flera moms-ID
-    - Momsdeklaration med flera moms-ID
 
 - Följande funktioner måste vara aktiverade i arbetsytan **Funktionshantering** i den distribuerade RCS-miljön.
 
@@ -65,18 +61,14 @@ För en produktionsmiljö måste följande förutsättningar uppfyllas:
 
 För en testmiljö måste följande förutsättningar uppfyllas:
 
-- Du måste ha tillgång till ditt LCS-konto samt ha distribuerat ett LCS-projekt med en nivå 2-miljö (eller högre) som kör Dynamics 365 version 10.0.18 (eller senare) med KB4616360.
+- Du måste ha tillgång till ditt LCS-konto samt ha distribuerat ett LCS-projekt med en nivå 2-miljö (eller högre) som kör Dynamics 365 version 10.0.21 eller senare version.
 - Du måste skapa en RCS-miljö för organisationen och ha åtkomst till ditt konto. Mer information om hur du skapar en RCS-miljö finns i [Översikten över Regulatory Configuration Service](rcs-overview.md).
 - Du måste kontakta Microsoft genom att e-posta <taxcalc@microsoft.com> för att aktivera lanseringen i din distribuerade Finance- eller Supply Chain Management-miljö.
 - Följande funktioner måste aktiveras i arbetsytan **Funktionshantering** för din distribuerade Finance- eller Supply Chain Management-miljö, baserat på verksamhetens behov:
 
-    - Momsberäkning
+    - Skatteberäkningstjänst
     - Stöd för flera momsregistreringsnummer
     - Moms i överföringsorder
-    - Överföring av lista över försäljning inom EU baserat på momstransaktioner
-    - Intrastatrapportering genom flera moms-ID
-    - Rapportering via EU-försäljningslista genom flera moms-ID
-    - Momsdeklaration med flera moms-ID
 
 - Följande funktioner måste vara aktiverade i arbetsytan **Funktionshantering** i den distribuerade RCS-miljön.
 
@@ -103,12 +95,12 @@ Stegen i det här avsnittet är inte relaterade till någon specifik juridisk pe
 7. Gå till **Skattedatamodell**, expandera filträdet och välj sedan **Skattekonfiguration**.
 8. Välj korrekt momskonfigurationsversion, baserat på din Finance-version, och välj sedan **Importera**.
 
-    | Slutversion | Momskonfiguration                       | Modellmappning                   |
-    | --------------- | --------------------------------------- | ------------------------------- |
-    | 10.0.18         | Momskonfiguration - Europa 30.12.82     |                                 |
-    | 10.0.19         | Momsberäkningskonfiguration 36.38.193 |                                 |
-    | 10.0.20         | Momsberäkningskonfiguration 40.43.208 |                                 |
-    | 10.0.21         | Momsberäkningskonfiguration 40.46.212 | Dataverse-modellmapping 40.46.9 |
+    | Slutversion | Momskonfiguration                       |
+    | --------------- | --------------------------------------- |
+    | 10.0.18         | Momskonfiguration - Europa 30.12.82     |
+    | 10.0.19         | Momsberäkningskonfiguration 36.38.193 |
+    | 10.0.20         | Momsberäkningskonfiguration 40.43.208 |
+    | 10.0.21         | Momsberäkningskonfiguration 40.46.212 |
 
 9. I arbetsytan **Globaliseringsfunktioner** väljer du **Funktioner** > panelen **Skatteberäkning** och sedan **Lägg till**.
 10. Välj en av följande funktionstyper:

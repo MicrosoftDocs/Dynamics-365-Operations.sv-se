@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae4e25874488890f0eeb601038e308fdc7e89485b5f6a8cf5d5fab713107dfcf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a4fd7c242fc2d857cb35f8ef8c08567c758b768
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753490"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463599"
 ---
 # <a name="reverse-journal-posting"></a>Återför journalbokföring
 
@@ -28,11 +28,15 @@ ms.locfileid: "6753490"
 
 I det här avsnittet beskrivs Microsoft Dynamics 365 Finance-funktioner som gör att du kan återföra en hel journal eller återföra en eller flera verifikationer från verifikationstransaktionslistan oavsett ursprung. 
 
+Innan du kan använda någon av funktionerna som beskrivs i det här ämnet måste den aktiveras i systemet. Administratörer kan använda arbetsytan **funktionshantering** för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
+ - Modul: Redovisning
+ - Funktionsnamn: **Massåterföringar för flera dokument**
+
 ## <a name="reversing-journals"></a>Återföra journaler
 
 Du kan återföra journalrader individuellt. Med en omvänd journalbokföring kan du även återföra en hel redovisningsjournal. För att återföra en journal: 
 
-- Öppna redovisningsjournalen och filtrera på bokförda journaler.
+- Filtrera efter bokförda journaler och öppna vyn **Rader** i journalen.
 - Klicka på menyn **Återför** högst upp på sidan.
 - Det totala antalet verifikationer och verifikationsrader samt det totala beloppet för raderna som återförts visas.
 - Välj **Ja** om du vill använda de befintliga transaktionsdatumen eller **Nej** om du vill ange ett nytt. I vissa fall kan perioden för den ursprungliga transaktionen stängas och du måste ange ett nytt transaktionsdatum för återföringen.
@@ -52,8 +56,8 @@ Du kan även återföra verifikationer från **transaktionslistan för verifikat
 
 Så här återför du en eller flera verifikationer: 
 
-- Klicka på menyn **Återför** högst upp på sidan.
-- Det totala antalet verifikationer och verifikationsrader samt det totala beloppet för raderna som återförts visas.
+- Klicka på den nedrullningsbara menyn **Återför hel journal** högst upp på sidan.
+- Det totala antalet verifikationer och verifikationsrader visas samt det totala beloppet för raderna som återförts.
 - Välj **Ja** om du vill använda de befintliga transaktionsdatumen eller **Nej** om du vill ange ett nytt. I vissa fall kan perioden för den ursprungliga transaktionen stängas och du måste ange ett nytt transaktionsdatum för att återföra den.
 - Om du har valt **nej** anger du ett transaktionsdatum för återföringen. 
 - Ange en kommentar som beskriver återföringstransaktionen.

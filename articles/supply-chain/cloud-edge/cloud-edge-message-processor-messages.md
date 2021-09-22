@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 76a3cc316da322c7997072c00780f2fc133bfd2a02274b1e53f5cd06cfb1277e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 685c8951b7c0d8524091cf06306388736d894f58
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748869"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471654"
 ---
 # <a name="message-processor-messages"></a>Meddelandeprocessormeddelanden
 
@@ -44,7 +44,7 @@ Med hjälp av fälten högst upp på sidan **Meddelanden i meddelandeprocessorn*
   - *Köad* – Meddelandet är klart att bearbetas av meddelandeprocessorn.
   - *Bearbetades* – Meddelandet har bearbetats av meddelandeprocessorn.
   - *Annullerat* – Meddelandet bearbetades men bearbetningen misslyckades.
-- **Meddelandeinnehåll** – Detta filter genomför en fulltextsökning av meddelandeinnehåll. (meddelandeinnehållet visas inte i rutnätet). Filtret behandlar de flesta specialtecken (exempelvis "-") som blanksteg, och behandlar alla blanksteg som booleska OR-operatorer. T=Till exempel betyder detta att om du söker efter ett specifikt värde som är lika med `journalid` "USMF-123456", så hittar systemet alla meddelanden som innehåller "USMF" eller "123456", vilket troligen lär bli en lång lista. Därför är det bättre att enbart ange "123456" eftersom detta returnerar mer specifika resultat.
+- **Meddelandeinnehåll** – Detta filter genomför en fulltextsökning av meddelandeinnehåll. (meddelandeinnehållet visas inte i rutnätet). Filtret behandlar de flesta specialtecken (exempelvis "-") som blanksteg, och behandlar alla blanksteg som booleska OR-operatorer. Till exempel betyder detta att om du söker efter ett specifikt värde som är lika med `journalid` "USMF-123456", så hittar systemet alla meddelanden som innehåller "USMF" eller "123456", vilket troligen lär bli en lång lista. Därför är det bättre att enbart ange "123456" eftersom detta returnerar mer specifika resultat.
 
 ## <a name="example-message-type-request-inventory-adjustment-financial-update"></a>Exempel på meddelandetyp: Begär ekonomisk uppdatering av lagerjustering
 
@@ -65,7 +65,7 @@ Verktygsfältet på fliken **Logg** innehåller följande knappar:
 
 ## <a name="message-processor-batch-job"></a>Batchjobb för meddelandeprocessor
 
-När du kör en molnbaserad distribution eller en edge-distribution hämtas batchjobbet för *Meddelandeprocessor* automatiskt när ett nytt meddelande skapas för bearbetning, varför du inte ska behöva schemalägga det här jobbet manuellt.
+När du kör en distribuerad hybridtopologi med skalningsenheter hämtas batchjobbet för *Meddelandeprocessor* automatiskt när ett nytt meddelande skapas för bearbetning, varför du inte ska behöva schemalägga det här jobbet manuellt.
 
 Om det behövs kan du öppna batchjobbet genom att gå till **Systemadministration > Meddelandeprocessor > Meddelandeprocessor**.
 

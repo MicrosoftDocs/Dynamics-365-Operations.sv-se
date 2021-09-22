@@ -15,20 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35a649463b853d4ff0ef158167e5a3e0bcc4ddc5e6e9007fddda82dd14a00851
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dce22b77862c41bc702f46735da8ce1100bb5e7d
+ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731603"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7473314"
 ---
 # <a name="manage-ratings-and-reviews"></a>Hantera omdömen och recensioner
 
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet innehåller information om hur du hanterar recensioner i Microsoft Dynamics 365 Commerce-webbplatsskaparen.
-
-## <a name="overview"></a>Översikt
 
 Dynamics 365 Commerce använder Microsoft Azure kognitiva tjänster för att automatiskt moderera granskningstext genom att ta bort redigering av svordomar. Dessutom kan moderatorer använda Dynamics 365 Commerce webbplatsskaparen för att implementera följande manuella uppgifter:
 

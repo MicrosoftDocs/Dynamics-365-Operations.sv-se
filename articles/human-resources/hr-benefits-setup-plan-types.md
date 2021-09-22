@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5d66d205d2a987310cd592a00feb10ad0dcd90e
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: 2eb8ecdd849aa2f583202ac2ec7c3e1bb06698a1
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423401"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431421"
 ---
 # <a name="plan-type-overview"></a>Översikt över plantyp
 
@@ -28,14 +28,15 @@ ms.locfileid: "7423401"
 
 En plantyp är en grupp på hög nivå med specifika typer av förmåner. Varje plantyp har en plantypkod som bestämmer regler för plantypen. Till exempel plantypen **Enkel liv** kommer att ha plantypkoden **Liv** eftersom det är en typ av livförsäkringsplan och måste överensstämma med regler som har fastställts för plantypkoden **Liv**. En annan plantyp kan vara **Tillägg liv**.  Den här plantypen innehåller också plantypkoden **Liv**.
 
-Varje plantyp visar om en medarbetare kan registreras i en plan av dess typ eller flera. En medarbetare skulle t.ex. kunna registrera både policyn enkel liv och den tillägg liv cykeln för plantypen liv. En medarbetare är sannolikt tillåten att registrera i endast en policy av typen sjukvård.
+Varje plantyp visar om en medarbetare kan registreras i en plan av dess typ eller flera. En medarbetare skulle t.ex. kunna registrera både policyn **Enkelt liv** och policyn **Tillägg liv** för plantypen Liv. En medarbetare är sannolikt tillåten att registrera i endast en policy av typen sjukvård.
 
-Om en plantyp omfattar kontakter anger plantypen om kontakter är mottagare eller beroende. En t.ex. plantypen enkel liv har mottagare, medan en grundläggande sjukvårdsplantyp skulle ha beroenden. I vissa fall kanske en plan inte har några personliga kontakter. Till exempel ett flexibelt utgiftskonto eller parkeringsbidrag.
+Om en plantyp omfattar kontakter anger plantypen om kontakter är mottagare eller beroende. Plantypen **Enkelt liv** kan exempelvis ha mottagare medn plantypen Enkel medicinsk har beroende. I vissa fall kanske en plan inte har några personliga kontakter. Till exempel ett flexibelt utgiftskonto eller parkeringsbidrag.
 
-En plantyp kan definiera täckningsalternativ. Alternativen för disponering definieras på sidan **Disponeringsalternativ**. Ett alternativ för disponering kan ange förmånsbeloppet eller de kontakter som är berättigade till plantypen. Om kontakttypen till exempel är mottagare, ska täckningsalternativet definiera villkoren för vad mottagaren är berättigad till när förmånen används. Om kontakttypen är beroende ska täckningsalternativet definiera relationen mellan beroende och medarbetaren. 
+
+En plantyp kan definiera täckningsalternativ. Täckningsalternativen definieras på sidan **Disponeringsalternativ**. Ett alternativ för disponering kan ange förmånsbeloppet eller de kontakter som är berättigade till plantypen. Om kontakttypen till exempel är **Mottagare**, ska täckningsalternativet definiera villkoren för vad mottagaren är berättigad till när förmånen används. Om kontakttypen är **Beroende** ska täckningsalternativet definiera relationen mellan beroende och medarbetaren. 
 
 > [!IMPORTANT]
-> Sidan innehåller nyckeldata som påverkar vilka alternativ som är tillgängliga när en ny förmånsplan skapas:
+> Sidan **Plantyper** innehåller nyckeldata som påverkar vilka alternativ som är tillgängliga när en ny förmånsplan skapas:
 >
 > - **Plantypkod** – Det här fältet påverkar vad som visas på fliken **Konfiguration** när den faktiska förmånen ställs in.  
 > - **Samtidig anmälan** – Det här fältet avgör om flera anmälningar är tillåtna. (För en medicinsk plan ställs det här fältet normalt in på **En anmälan**.)

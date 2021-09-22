@@ -15,20 +15,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3afce380f1fd6d83c7e05424079e9e4b9e72bdf9ef90ee8baaa26748aab9d4e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fb75c391809f1ce5c7d48728a735f347ef1784ed
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764990"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441275"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integration med LinkedIn Talent Hub
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [banner](includes/preview-feature.md)]
-
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+> [!IMPORTANT]
+> Integrationen mellan och Dynamics 365 Human Resources och LinkedIn Talent Hub som beskrivs i det här avsnittet dras tillbaka den 31 december 2021. Integrationstjänsten är inte längre tillgänglig efter det här datumet. Organisationer som inte redan använder integrationstjänsten kan inte implementera tjänsten innan den dras tillbaka.
 
 [LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) är en plattform för sökningsspårningssystem (ATS). Med den kan du anskaffa, hantera och anställa medarbetare på samma ställe. Genom att integrera Microsoft Dynamics 365 Human Resources med LinkedIn Talent Hub kan du enkelt skapa medarbetarposter i Personal för de sökande som har anställts för en befattning.
 

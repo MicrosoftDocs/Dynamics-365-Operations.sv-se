@@ -1,8 +1,8 @@
 ---
 title: Konfigurera utökad inloggning för MPOS och molnkassor
 description: Detta avsnitt täcker dina alternativ för att ställa in utökad inloggning för molnbaserad kassa och Retail Modern POS (MPOS).
-author: rubencdelgado
-ms.date: 06/20/2017
+author: boycezhu
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,15 +13,15 @@ ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 45284ddb3ec082e3bac8a95ed3ba7901cbce2bf303a8523b9c0a7af56938d560
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748556"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478681"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Ställa in utökad inloggningsfunktion för MPOS och molnbaserad kassa
 
@@ -58,6 +58,8 @@ Som standard är endast chefer kan tilldela utökade inloggning till arbetstagar
 Ta bort den utökade inloggning som är tilldelad till en arbetstagare, sökningen för arbetstagaren med **utökad logga på** . Välj anställd och klicka sedan på **Ta bort**. Alla utökade inloggningsbehörighet som associeras med att arbetstagaren är borttagen.
 
 ## <a name="extending-extended-logon"></a>Utvidga utökade inloggning
+
+Vid utökad inloggning tillåts endast fem tecken att vara den unika identifieraren från början. Om du till exempel konfigurerar två kort med ID:t "1234567" och "1234578" anses de båda vara "12345". Du kan skapa ett tillägg för att stödja fler tecken. Detaljerade instruktioner finns i [Utöka den utökade inloggningsfunktionen för MPOS och molnbaserad kassa](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
 
 Inloggning tjänsten kan utökas för att stödja ytterligare utökade inloggning enheter, t.ex. palm scannrar. För mer information, se POS extensibility dokumentation.
 
