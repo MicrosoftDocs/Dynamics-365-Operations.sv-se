@@ -2,7 +2,7 @@
 title: Omallokering vid intäktsredovisning
 description: Det här avsnittet innehåller information om omallokering, vilket gör det möjligt för organisationer att beräkna om intäktspriser när villkoren för en avyttring ändras. Det innehåller länkar till andra avsnitt som beskriver hur du redovisar intäkter i flera olika scenarier.
 author: kweekley
-ms.date: 12/21/2020
+ms.date: 09/09/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 50ae395c370947e348714ce5685123328849966f3a67903e9ddf8c27dee42f5f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53304842bdbe7dadb435ab3a0381f3835c2c443a
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745047"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7487028"
 ---
 # <a name="revenue-recognition-reallocation"></a>Omallokering vid intäktsredovisning
 
@@ -35,10 +35,22 @@ Din organisation måste själv ta reda på omallokering behövs. Att lägga till
 Det finns några viktiga begränsningar för omallokeringsprocessen:
 
 - Processen kan bara köras en gång. Därför är det viktigt att du bara kör den när alla ändringar har slutförts.
+
+    - Denna begränsning är borttagen i version 10.0.17 och senare.
+
 - Processen kan inte köras på projektförsäljningsorder.
+
+    - Denna begränsning är borttagen i version 10.0.17 och senare.
+
 - Om flera försäljningsorder är inblandade måste de gälla för samma kundkonto.
-- Alla försäljningsorder som omallokeras måste vara i samma transaktionsvaluta.
+- Alla försäljningsorder som allokeras om måste vara i samma transaktionsvaluta.
 - Processen kan inte återställas eller ångras när den har körts.
+
+    - Denna begränsning är borttagen i version 10.0.17 och senare.
+
+- Omallokering kan endast göras för försäljningsorder eller projektförsäljningsorder. Det kan inte göras för en kombination av försäljningsorder och projektförsäljningsorder.
+
+    - Denna begränsning är borttagen i version 10.0.17 och senare.
 
 ## <a name="set-up-reallocation"></a>Konfigurera omallokering
 
@@ -78,7 +90,7 @@ Du startar omallokeringsprocessen genom att välja **Allokera om pris med nya or
 
 [![Sidan Allokera om pris med nya orderrader.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-Det övre rutnätet på sidan **Allokera om pris med nya orderrader** har namnet **Försäljning**. Här visas försäljningsorder för kunden. Välj de försäljningsorder som ska allokeras om. Du kan inte välja projektförsäljningsorder eftersom projektförsäljningsorder inte kan allokeras om. Du kan heller inte välja försäljningsorder som redan har ett omallokerings-ID, eftersom andra typer av försäljningsorder än projektförsäljningsorder bara kan allokeras om en gång. Om en försäljningsorder har ett omallokerings-ID har den redan markerats för omallokering av en annan användare.
+Det övre rutnätet på sidan **Allokera om pris med nya orderrader** har namnet **Försäljning**. Här visas försäljningsorder för kunden. Välj de försäljningsorder som ska allokeras om. Om en försäljningsorder har ett omallokerings-ID har den redan markerats för omallokering av en annan användare. Om en eller flera försäljningsorder tidigare har allokerats om och måste inkluderas i en annan omallokering, måste omallokeringen av dessa försäljningsorder ångras först. De kan sedan inkluderas i en ny omallokering. Mer detaljerad information finns i avsnitten [Ångra en omallokering](#undo-a-reallocation) och [Allokera om flera gånger](#reallocate-multiple-times) senare i det här avsnittet.
 
 Det nedre rutnätet på sidan har namnet **Rader**. När du har valt en eller flera försäljningsorder i rutnätet **Försäljning** visar rutnätet **Rader** försäljningsorderraderna. Välj de försäljningsorderrader som ska allokeras om. Om du bara har valt en försäljningsorder måste raderna i samma försäljningsorder allokeras om. Denna situation kan uppstå när en av försäljningsorderraderna har fakturerats tidigare, och sedan har en ny rad lagts till, eller när en befintlig rad har tagits bort eller annullerats. Om en rad har tagits bort visas den inte i rutnätet. Därför kan den inte väljas. Den beaktas dock fortfarande när omallokeringsprocessen körs.
 
@@ -104,6 +116,26 @@ När du har valt försäljningsorderraderna använder du knapparna i åtgärdsru
 
 - **Återställ data för den valda kunden** – Om omallokeringsprocessen startats men inte slutförts kan du bara rensa data i omallokeringstabellen för den valda kunden. Du markerar till exempel flera försäljningsorderrader för omallokering, lämnar sidan öppen utan att välja **Bearbeta** och sedan uppnås sidans tidsgräns. I så fall förblir försäljningsorderraderna markerade och kan inte användas av en annan användare för att slutföra omallokeringsprocessen. Sidan kan till och med vara tom när den öppnas. I den här situationen kan knappen **Återställ data för den valda kunden** användas för att rensa obearbetade försäljningsorder så att en annan användare kan slutföra omallokeringsprocessen.
 
+## <a name="undo-a-reallocation"></a>Ångra en omallokering
+
+Det går att ångra en omallokering genom att göra en ny omallokering. Omallokeringen görs igen och användaren väljer andra försäljningsorderrader som ska inkluderas i den andra omallokeringen.
+
+Om en omallokering har gjorts för två eller flera separata försäljningsorder kan den ångras genom att du väljer **Allokera om pris med nya orderrader** på någon av de försäljningsorder som ingår i omallokeringen. Du kan inte gå till **Intäktsredovisning \> Periodiska uppgifter \> Allokera om pris med nya orderrader** för att ångra omallokeringen. Det beror på att sidan som öppnas på det här sättet endast visar försäljningsorder som inte har något omallokerings-ID. Omallokerings-ID tilldelas efter att dokumentet har allokerats om.
+
+På sidan **Allokera om pris med nya orderrader** avmarkerar du eventuella försäljningsorder som ska exkluderas från avtalet. Använd lämpliga knappar i åtgärdsrutan, till exempel **Uppdatera omallokering** och **Bearbeta** för att bearbeta omallokeringen. Om alla försäljningsorder utom den aktiva försäljningsordern är avmarkerade kommer omallokerings-ID:t att tas bort när ändringen bearbetas.
+
+Om en omallokering har gjorts genom att du lagt till en ny rad i en helt eller delvis fakturerad försäljningsorder, kan omallokeringen bara ångras genom att du tar bort den raden från försäljningsordern och sedan gör omallokeringen igen. Försäljningsorderraden måste tas bort eftersom alla rader på en försäljningsorder antas ingå i samma kontrakt. Du kan inte avmarkera en försäljningsorderrad när du är på sidan **Allokera om pris med nya orderrader**.
+
+## <a name="reallocate-multiple-times"></a>Allokera om flera gånger
+
+Flera omallokeringar kan göras mot samma försäljningsorder om flera ändringar har gjorts i kontraktet. Varje omallokering utlöser tilldelningen av ett omallokerings-ID till försäljningsordern eller gruppen med försäljningsorder för att gruppera ändringarna. Om flera omallokeringar görs använder varje ytterligare omallokering samma omallokerings-ID som den första omallokeringen.
+
+Exempel: försäljningsorder 00045 matas in och har flera rader. När försäljningsordern har fakturerats helt läggs en ny försäljningsorderrad till på den. Omallokeringen körs sedan genom att öppna sidan **Allokera om pris med nya orderrader**, antingen från försäljningsorder 00045 eller genom att gå till **Intäktsredovisning \> Periodiska uppgifter \> Allokera om pris med nya orderrader**. Omallokerings-ID **Reall000001** tilldelas försäljningsordern.
+
+En andra försäljningsorder, 00052, skapas för samma kontrakt. Omallokeringen kan köras igen genom att öppna sidan **Allokera om pris med nya orderrader** från försäljningsorder 00045, men inte från försäljningsorder 00052. Om du öppnar sidan **Allokera om pris med nya orderrader** från försäljningsorder 00052 visas inte försäljningsorder 00045 eftersom den har tilldelats ett omallokerings-ID. På sidan visas endast försäljningsorder som inte har något omallokerings-ID.
+
+Det finns två sätt att göra den andra omallokeringen. Du kan ångra omallokeringen av försäljningsorder 00045. I det fallet tas omallokerings-ID:t bort och du kan sedan göra omallokeringen från försäljningsorder 00045 eller försäljningsorder 00052. Du kan även öppna sidan **Allokera om pris med nya orderrader** från försäljningsorder 00045 och lägga till den andra försäljningsordern. När omallokeringen bearbetas tilldelas omallokerings-ID **Reall000001** både försäljningsorder 00045 och försäljningsorder 00052.
+
 ## <a name="scenarios-for-reallocation"></a>Scenarier för omallokering
 
 I följande avsnitt beskrivs olika scenarier för intäktsredovisning:
@@ -112,6 +144,5 @@ I följande avsnitt beskrivs olika scenarier för intäktsredovisning:
 - [Omallokering vid intäktsredovisning – Scenario 2](rev-rec-reallocation-scenario-2.md) – Två försäljningsorder registreras, och sedan lägger kunden till en artikel i kontraktet efter att den första försäljningsordern har fakturerats.
 - [Omallokering vid intäktsredovisning – Scenario 3](rev-rec-reallocation-scenario-3.md) – En ny rad läggs till i en befintlig, fakturerad försäljningsorder.
 - [Omallokering vid intäktsredovisning – Scenario 4](rev-rec-reallocation-scenario-4.md) – En rad tas bort från en befintlig, delvis fakturerad försäljningsorder.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

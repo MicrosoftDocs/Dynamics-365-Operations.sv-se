@@ -102,8 +102,6 @@
                       href: get-started/whats-new-commerce-10-0-21.md
                     - name: Commerce 10.0.20 (augusti 2021)
                       href: get-started/whats-new-commerce-10-0-20.md
-                    - name: Commerce 10.0.19 (juni 2021)
-                      href: get-started/whats-new-commerce-10-0-19.md
                 - name: Borttagna eller inaktuella funktioner
                   items:
                     - name: Borttagna eller inaktuella funktioner – startsida
@@ -668,6 +666,8 @@
                   href: tasks/base-price-trade-agreements.md
                 - name: Skapa handelsavtal med hjälp av kategoriprissättningsregler
                   href: tasks/category-pricing-rules-trade-agreements.md
+                - name: Fördröja beräkning av exakt pris och rabatt
+                  href: delayed-price-calculation.md
             - name: Rekommendationer
               items:
                 - name: Översikt av produktrekommendationer
@@ -1328,6 +1328,8 @@
                   href: localizations/latam-bra-nfce-contingency-mode.md
                 - name: Bokföra brasilianska skattedokument via butiksutdrag i Commerce-administration
                   href: localizations/latam-bra-retail-statements.md
+                - name: Dynamics 365 Payment Connector för Adyen i Commerce kassa för Brasilien
+                  href: localizations/latam-bra-adyen.md
             - name: Östeuropa
               items:
                 - name: Gemensamt
@@ -2436,7 +2438,7 @@
                       href: e-commerce-extensibility/event-based-data-actions.md
                     - name: Grundläggande dataåtgärder
                       href: e-commerce-extensibility/core-data-actions.md
-                    - name: 'Anrops API:er för Retail Server'
+                    - name: 'Anropa Commerce Scale Unit API:er'
                       href: e-commerce-extensibility/call-retail-server-apis.md
                     - name: 'Anropa tilläggs-API:er för Retail Server'
                       href: e-commerce-extensibility/call-retail-extension-api.md
@@ -2514,8 +2516,6 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Konfigurera en bygg-pipeline för oberoende förpacknings-SDK
                   href: dev-itpro/build-pipeline.md
-                - name: Slå samman versionssystemen för Commerce och Finance and Operations
-                  href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: Migrera SDK för Retail från Visual Studio 2015 till Visual Studio 2017
                   href: dev-itpro/retail-sdk/migrate-sdk.md
                 - name: 'Exempel på utbyggbarhet: SDK för Retail'
@@ -2628,8 +2628,6 @@
                               href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: Utbyggbarhet för Hardware Station
               items:
-                - name: Hardware Station och utbyggbarhet
-                  href: dev-itpro/hardware-station-extensibility.md
                 - name: Integrera kassa med ny maskinvaruenhet
                   href: dev-itpro/hardware-device-extension.md
             - name: Utbyggbarhet för Retail Server

@@ -1007,7 +1007,11 @@
                 - name: Vanliga frågor och svar om fönster för planerat underhåll
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Övervakning och diagnostik
-              href: lifecycle-services/monitoring-diagnostics.md
+              items:
+                - name: Övervaknings- och diagnostikverktyg
+                  href: lifecycle-services/monitoring-diagnostics.md
+                - name: Använda Azure Data Explorer för att göra förfrågningar i loggar med rå information
+                  href: lifecycle-services/azure-data-explorer.md
             - name: Starta om miljötjänster
               href: lifecycle-services/restart-environment-services.md
             - name: Rapportera ett produktionsavbrott

@@ -80,8 +80,6 @@
                       href: get-started/whats-new-changed-10-0-21.md
                     - name: Finance 10.0.20 (augusti 2021)
                       href: get-started/whats-new-changed-10-0-20.md
-                    - name: Finance 10.0.19 (juni 2021)
-                      href: get-started/whats-new-changed-10-0-19.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -450,6 +448,8 @@
                   href: accounts-receivable/tasks/review-collections-information.md
                 - name: Automatisering av inkassoprocess
                   href: accounts-receivable/collections-process-automate.md
+                - name: Konfigurera parametrar för automatisering av inkassoprocess
+                  href: accounts-receivable/config-paramtrs-collections-proc-automate.md
                 - name: Inställning för kredithantering
                   href: accounts-receivable/cm-credit-mgmt-setup.md
                 - name: Information om inställning för kredithantering
@@ -1635,7 +1635,9 @@
                 - name: Momsutdrag
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Rapport för gränsöverskridande tjänster
-                  href: localizations/emea-aut-cross-border-services-report.md
+                  href: localizations/emea-aut-vat-statement-details.md
+                - name: Intrastats-rapport
+                  href: localizations/emea-aut-intrastat.md
                 - name: Inköpsavgifter
                   href: localizations/emea-aut-purchase-duties.md
             - name: Bahrain
@@ -1668,6 +1670,8 @@
                   href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: Ställ in och underhåll PRODCOM
                   href: localizations/emea-bel-prodcom-report.md
+                - name: Årlig momslista över inrikes försäljning
+                  href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
             - name: Brasilien
               items:
                 - name: Brasilien – översikt
@@ -2974,6 +2978,8 @@
                   href: localizations/tasks/mx-00010-e-invoicing-cfdi.md
                 - name: Elektroniska fakturor
                   href: localizations/latam-mex-CFDI-electronic-invoices.md
+                - name: Komplement till Waybill (Carta de Porte) (version 1.0)
+                  href: localizations/latam-mex-carta-de-porte.md
                 - name: Elektroniska redovisningsutdrag
                   href: localizations/latam-mex-electronic-ledger-accounting-statements.md
                 - name: Ange momsregistrerings-ID för mexikanska juridiska personer
@@ -2994,12 +3000,6 @@
                   href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
                 - name: ID för leverantörsregistrering
                   href: localizations/tasks/mx-00008-vendor-registration-ids.md
-            - name: Oman
-              items:
-                - name: Oman – översikt
-                  href: localizations/oman.md
-                - name: Momsdeklaration för Oman (OM-00003)
-                  href: localizations/emea-oma-vat-declaration.md
             - name: Nederländerna
               items:
                 - name: Nederländerna – översikt
@@ -3016,6 +3016,10 @@
                   href: localizations/emea-nl-vat-declaration-netherlands.md
                 - name: Lista över försäljning inom EU
                   href: localizations/emea-nl-EU-sales-list.md
+            - name: Nya Zeeland
+              items:
+                - name: GST-deklarationsformulär GST101A för Nya Zeeland (NZ-00003)
+                  href: localizations/apac-nzl-gst-declaration.md
             - name: Norge
               items:
                 - name: Norge – översikt
@@ -3032,6 +3036,12 @@
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: Elektroniska kundfakturor i Norge
                   href: localizations/emea-nor-e-invoices.md
+            - name: Oman
+              items:
+                - name: Oman – översikt
+                  href: localizations/oman.md
+                - name: Momsdeklaration för Oman (OM-00003)
+                  href: localizations/emea-oma-vat-declaration.md
             - name: Polen
               items:
                 - name: Polen – översikt
@@ -3450,20 +3460,20 @@
                           href: localizations/emea-gbr-mtd-vat-integration.md
                         - name: 'Förbered miljön för samverkan med HMRC:s MTD momswebbtjänst'
                           href: localizations/emea-gbr-mtd-vat-integration-setup.md
-                        - name: 'Auktorisera Finance-miljön för samverkan med HMRC:s MTD-webbtjänst'
-                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                        - name: Testa samverkan med MTD sandbox-miljö för moms
-                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: 'Skicka in en momsretur till HMRC:s MTD-webbtjänst'
-                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
                         - name: Checklista för konfiguration av elektroniska meddelanden för MTD-moms
                           href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-                        - name: Skapa en momsdeklaration i pappersformat (VAT 100-rapport)
-                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
-                        - name: Konfigurationsinformation för momsdeklarationer i Storbritannien
-                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: Testa samverkan med MTD sandbox-miljö för moms
+                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                        - name: 'Auktorisera Finance-miljön för samverkan med HMRC:s MTD-webbtjänst'
+                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                        - name: 'Skicka in en momsretur till HMRC:s MTD-webbtjänst'
+                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
                         - name: Hämta information om momsbetalningar och momsskulder från HMRC
                           href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+                        - name: Konfigurationsinformation för momsdeklarationer i Storbritannien
+                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: Skapa en momsdeklaration i pappersformat (VAT 100-rapport)
+                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Rapport för statistik över betalningspraxis
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: USA
@@ -4119,6 +4129,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
                         - name: Köra format för att dynamiskt lägga till kolumner i Excel-rapporter
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+                    - name: Designa ett ER-format för att sidnumrera skapade dokument i Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Utforma konfigurationer för att generera rapporter i Word-format
                   items:
                     - name: Utforma en ny ER-konfiguration för att generera rapporter i Word-format

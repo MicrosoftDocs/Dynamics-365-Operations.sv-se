@@ -2,7 +2,7 @@
 title: Supply Chain Management – startsida
 description: Den här sidan innehåller en lista med hjälpavsnitt och andra resurser för funktionerna i Supply Chain Management.
 author: kamaybac
-ms.date: 01/08/2021
+ms.date: 09/15/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9ac5a8005851dc2894a0fbed74f47be6e1e14b58
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416561"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487874"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management – startsida
 
@@ -62,7 +62,6 @@ Den här korta videon sammanfattar de nya funktionerna för hantering av leveran
 
 Dessa korta videoklipp sammanfattar de nya funktionerna för hantering av leveranskedjan som har lagts till i Microsoft Dynamics 365 for Finance and Operations Enterprise edition 7.3 (december 2017).
 
-- [Integrering av potentiell kund till pengar](https://youtu.be/AVV9x5x-XCg) 
 - [Rådgivning om optimering](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Använd distributionslagermall för att kopiera konfiguration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
