@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 766e807ee9061f52b692cf3436ba393b334e67c4
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441175"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488093"
 ---
 # <a name="provision-human-resources"></a>Etablera Human Resources
 
@@ -41,6 +41,8 @@ Följande förutsättningar måste vara på plats innan du kan etablera en ny pr
 ## <a name="provision-a-human-resources-trial-environment"></a>Skapa en utvärderingsmiljö för Personal
 
 Innan du provisioner din första resurs eller produktionsmiljö kan du använda en [utvärderingsmiljö för Personal](https://go.microsoft.com/fwlink/p/?LinkId=2115962) för att validera personalfunktioner. Bedömningsmiljöer innehåller fiktiva data som kan användas för att utforska programmet på ett säkert sätt. Även om bedömningsmiljön ägs av den användare som har begärt den, kan andra användare bjudas in via systemets administrationserfarenhet för Personal. 
+
+Med utvärderingsmiljöer kan du utvärdera personalfunktioner för personer som inte redan har tillgång till en personalmiljö. Om du inför en utvärderingsmiljö och den autentiserade användaren redan har tillgång till en eller flera befintliga personalmiljöer, omdirigeras användaren till den befintliga miljön eller listan över miljöer.
 
 Testmiljöer är inte avsedda att användas som produktionsmiljöer. De är begränsade till en 60-dagars försöksperiod. När utvärderingsperioden löper ut är miljön och all data inte raderas och kan inte återställas. Miljön kan inte konverteras till en produktions- eller tillverkningsmiljö. Du kan registrera dig för en ny bedömningsmiljö när den befintliga miljön har gått ut.
 
@@ -135,7 +137,12 @@ Använd följande riktlinjer när du bestämmer vilka Power Apps-miljöer som sk
    
     - **Ej stödda områden** - Miljön måste finnas i ett geografiskt område som stöds. Mer information finns i [Områden som stöds](hr-admin-setup-provision.md#supported-geographies).
 
-6. När du har kontrollerat den korrekta miljön kan du fortsätta med etableringsprocessen. 
+6. Dubbla skrivfunktioner för att integrera Personal-data med miljön Power Apps kan bara användas om alternativet **Aktivera Dynamics 365-appar** har valts för miljön. Se [sidan Dubbelriktad skrivning](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) för mer information för dubbelriktad skrivning.
+
+    > [!NOTE]
+    > Alternativet **Aktivera Dynamics 365-appar** måste väljas när Power Apps skapas. Om alternativet inte är valt vid administreringstillfället kommer du inte att kunna använda dubbelriktad skrivning för att integrera data mellan Dynamics 365 Human Resources och Power Apps miljön eller installera Dynamics 365-appar som Dynamics 365 Sales och Field Service i miljön. Det här alternativet kan inte ångras. Mer information finns i [Några viktiga överväganden när du skapar en ny miljö](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) på Power Platform dokumentationssplatsen.
+
+7. När du har kontrollerat den korrekta miljön kan du fortsätta med etableringsprocessen. 
 
 ### <a name="supported-geographies"></a>Områden som stöds
 

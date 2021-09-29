@@ -1,8 +1,8 @@
 ---
 title: Momsfunktionens stöd för överföringsorder
 description: Det här ämnet innehåller information om det nya momsfunktionen som stöder överföringsorder genom att använda tjänsten för momsberäkning.
-author: kailiang
-ms.date: 04/20/2021
+author: Kai-Cloud
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: wangchen
+ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1c47c327841b8c712220e440e2aa6b4fe2b31b4a1ccd03dc0a200dbeb7394071
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01bf7c251fe57072f042c9187b9f5b6b6687ab0f
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721699"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500086"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Momsfunktionens stöd för överföringsorder
 
@@ -53,7 +53,7 @@ Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. 
         4. Välj **Lägg till** i tabellen **Kurs**.
         5. Växla **Är undantagen** till **Ja** i avsnittet **Allmänt**.
 
-        ![NL-undantagen momskod.](../media/tax-feature-support-02.png)
+           ![NL-undantagen momskod.](../media/tax-feature-support-02.png)
 
     - När en överföringsorder tas emot på ett belgiskt lagerställe används omvänd momsmekanism med hjälp av momskoderna **BE-RC-21** och **BE-RC+21**.
         
@@ -66,7 +66,7 @@ Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. 
         6. Växla **Är återförd avgift** till **Ja** i avsnittet **Allmänt**.
         7. Välj **Spara**.
 
-        ![BE-RC-21-momskod för omvänd moms.](../media/tax-feature-support-03.png)
+           ![BE-RC-21-momskod för omvänd moms.](../media/tax-feature-support-03.png)
         
         Skapa momskoden **BE-RC+21**.
         1. Välj **Lägg till**, ange **BE-RC-21** i fältet **Momskod**.
@@ -76,7 +76,7 @@ Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. 
         5. Ange **21** i fältet **Momssats**.
         6. Välj **Spara**.
 
-        ![BE-RC+21-momskod för omvänd moms.](../media/tax-feature-support-04.png)
+           ![BE-RC+21-momskod för omvänd moms.](../media/tax-feature-support-04.png)
 
 3. Definiera tillämplighet för momskoderna.
 
@@ -97,6 +97,7 @@ Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. 
         7. I fältet **Momsgrupp** och **Artikelmomsgrupp**, ange den relaterade momsgruppen och artikelns momsgrupp som definieras i ditt Finance-system.
         
         Lägg till en annan regel för inleverans av överföringsorder.
+        
         1. Välj **Lägg till** i tabellen **Tillämplighetsregler**.
         2. I fältet **Affärsprocess**, välj **Lager** för att göra regeln tillämplig för en överföringsorder.
         3. I fältet **Sänd från land/region**, ange **NLD**.
@@ -105,7 +106,7 @@ Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. 
         6. I fältet **Momskoder**, välj **BE-RC+21** och **BE-RC-21**.
         7. I fältet **Momsgrupp** och **Artikelmomsgrupp**, ange den relaterade momsgruppen och artikelns momsgrupp som definieras i ditt Finance-system.
 
-        ![Tillämplighetsregler.](../media/image5.png)
+           ![Tillämplighetsregler.](../media/image5.png)
 
 4. Slutför och publicera den nya versionen av skattefunktionen.
 
@@ -115,7 +116,7 @@ Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. 
 
 Följ dessa steg för att aktivera och ställa in skatter för överföringsorder.
 
-1. I Finance, gå till **Arbetsytor** \> **Funktionshantering**.
+1. I Finance, gå till **Arbetsytor** > **Funktionshantering**.
 2. I listan, hitta och välj funktionen **Moms i överföringsorder** och välj sedan **Aktivera nu** för att aktivera den.
 
     > [!IMPORTANT]
@@ -128,10 +129,10 @@ Följ dessa steg för att aktivera och ställa in skatter för överföringsorde
     > [!IMPORTANT]
     > Du måste genomföra det här steget för varje juridisk person i Finance där du vill att momstjänsten och momsfunktionerna i överföringsorder ska vara tillgängliga.
 
-    1. Gå till **Moms** \> **Inställningar** \> **Momskonfiguration** \> **Installation av momstjänst**.
+    1. Gå till **Moms** > **Inställningar** > **Momskonfiguration** > **Installation av momstjänst**.
     2. I fälten **Affärsprocess**, välj **Lager**.
 
-    ![Ställa in affärsprocessfältet.](../media/image8.png)
+      ![Ställa in affärsprocessfältet.](../media/image8.png)
 
 4. Kontrollera att omvänd avgiftsmekanism har ställts in. Gå till **Redovisning** \> **Inställning** \> **Parametrar** och sedan på **Omvänd debitering**, kontrollera att alternativet **Aktivera omvänd moms** anges **Ja**.
 
@@ -140,10 +141,10 @@ Följ dessa steg för att aktivera och ställa in skatter för överföringsorde
 5. Kontrollera att de relaterade momskoderna, momsgrupperna, artikelmomsgrupperna och momsregistreringsnumren har ställts in i Finance enligt momstjänstens riktlinjer.
 6. Ställ in ett mellanliggande transitkonto. Detta steg är endast nödvändigt när den skatt som tillämpas på en överföringsorder, inte gäller för en momsbefriad eller återförd avgiftsmekanism.
 
-    1. Gå till **Moms** \> **Inställningar** \> **Moms** \> **Redovisningsbokföringsgrupper**.
+    1. Gå till **Moms** > **Inställningar** > **Moms** \ **Redovisningsbokföringsgrupper**.
     2. I fältet **mellanliggande transit**, välj redovisningskonto.
 
-    ![Ställa in ett mellanliggande transitkonto.](../media/image10.png)
+       ![Ställa in ett mellanliggande transitkonto.](../media/image10.png)
 
 ## <a name="set-up-basic-inventory-for-transfer-order-transactions"></a>Ställ in grundläggande inventering för moms- och överföringsordertransaktioner
 
@@ -151,7 +152,7 @@ Följ dessa steg om du vill ställa in grundläggande lager för att aktivera ö
 
 1. Skapa från- och leveransplatser för dina lagerställen i olika länder eller regioner och lägg till den primära adressen för respektive webbplats.
 
-    1. Gå till **Lagerstyrning** \> **Inställningar** \> **Lagerställe** \> **Webbplats**.
+    1. Gå till **Lagerstyrning** > **Konfiguration** > **Distributionslager** > **Platser**.
     2. Välj **Ny** för att skapa den webbplats som du tilldelar till ett lager senare.
     3. Upprepa steg 2 för alla andra siter som du måste skapa.
 
@@ -162,11 +163,11 @@ Följ dessa steg om du vill ställa in grundläggande lager för att aktivera ö
 
 2. Skapa leverans-, transit- och leverans till lagerställen. All adressinformation som finns i ett lagerställe åsidosätter siteadressen vid momsberäkningen.
 
-    1. Gå till **Lagerstyrning** \> **Inställningar** \> **Lagerställe** \> **Lagerställen**.
+    1. Gå till **Lagerstyrning** > **Inställningar** > **Lagerställe** > **Lagerställen**.
     2. Välj **Ny** för att skapa ett lager och tilldela det till motsvarande webbplats.
     3. Upprepa steg 2 om du vill skapa ett lagerställe för respektive webbplats efter behov.
 
-    ![Konfigurera lagerställen.](../media/image12.png)
+       ![Konfigurera lagerställen.](../media/image12.png)
 
     > [!NOTE]
     > För ett lagerställe för leverans från måste ett transitlager väljas i fältet **Transitlagerställe** för överföringsordertransaktioner.
@@ -175,7 +176,7 @@ Följ dessa steg om du vill ställa in grundläggande lager för att aktivera ö
 
 3. Kontrollera att konfiguration av lagerbokföring har ställts in för överföringsordertransaktioner.
 
-    1. Gå till **Lagerhantering** \> **Inställningar** \> **Bokföring** \> **Bokföring**.
+    1. Gå till **Lagerhantering** > **Inställningar** > **Bokföring** > **Bokföring**.
     2. Kontrollera på fliken **Lager**, verifiera att ett huvudbokskonto är konfigurerat för båda bokföring av **lagerutleverans** och **lagerinleverans**.
 
         ![Konfigurera in bokföring av lagerutleverans och lagerinleverans.](../media/image14.png)
@@ -187,3 +188,6 @@ Följ dessa steg om du vill ställa in grundläggande lager för att aktivera ö
     4. Kontrollera att ett huvudkontokonfigureras för bokföring av **Enhetsintern fordran**.
 
         ![Ställa in bokföring av enhetsintern reskontra.](../media/image16.png)
+        
+        
+  [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

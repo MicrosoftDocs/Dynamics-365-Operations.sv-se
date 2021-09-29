@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 1aada0d3ebe80e1efb92815c6d429ed5638dabdbac165aa09be1ca281c51b255
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99e95a7fbdce3d040ab7bf01474921ae1f616468
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773523"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506841"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.20 augusti 2021
 
@@ -38,6 +38,7 @@ De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fi
 | Lager&nbsp;och&nbsp;logistik | [Prestandaförbättringar för försäljningsorderinformation](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-details-performance-enhancement) | Med den här funktionen blir användargränssnittet effektivare när försäljningsorder öppnas, särskilt för order som innehåller många rader. |
 | Tillverkning | [Starta processautomatiseringsflöden för att skapa kvalitetsorder](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/invoke-process-automation-flows-create-quality-orders) | [Starta processautomatiseringsflöden för att skapa kvalitetsorder](../production-control/process-automation-quality-orders.md ) |
 | Tillverkning | [Förbättrat gränssnitt för produktion av golv för tillverkning](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing) | [Konfigurera körningsgränssnittet för produktionsgolvet](../production-control/production-floor-execution-configure.md) |
+| Planering | [Planering av oändlig kapacitet för planeringsoptimering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Tidsplanering med obegränsad kapacitet](../master-planning/planning-optimization/infinite-capacity-planning.md) |
 | Produktinformationshantering | [Hantera ändringar i formler och deras ingredienser](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/engineering-change-management-support-process-manufacturing) | [Hantera ändringar i formler och deras ingredienser](../engineering-change-management/manage-formula-changes.md) |
 | Produktinformationshantering | [Produktberedskapskontroller](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/product-readiness-checks) | [Produktberedskap](../engineering-change-management/product-readiness.md) |
 

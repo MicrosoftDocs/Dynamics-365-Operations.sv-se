@@ -2,7 +2,7 @@
 title: Rutnätsmöjligheter
 description: I det här avsnittet beskrivs flera kraftfulla funktioner i rutnätskontrollen. Du måste aktivera den nya rutnätsfunktionen för att du ska kunna använda dessa funktioner.
 author: jasongre
-ms.date: 08/04/2021
+ms.date: 09/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775252"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483864"
 ---
 # <a name="grid-capabilities"></a>Rutnätsmöjligheter
 
@@ -30,7 +30,7 @@ Den nya rutnätskontrollen innehåller flera användbara och kraftfulla funktion
 -  Beräknar summor
 -  Skriva före systemet
 -  Utvärdera matematikuttryck 
--  Gruppera data i en tabell (aktiveras separat med hjälp av funktionen **(förhandsversion) gruppering i rutnät**)
+-  Gruppera data i en tabell (aktiveras separat med hjälp av funktionen **gruppering i rutnät**)
 -  Låsa kolumner
 
 ## <a name="calculating-totals"></a>Beräknar summor
@@ -93,7 +93,7 @@ Som en produktivitetsförstärkning kan användarna ange matematiska formler i n
 Om du vill att ett värde ska identifieras som ett uttryck i systemet startar du värdet med ett likhetstecken (**=**). Mer information om operatorer och syntax som stöds finns i [matematiska symboler som stöds](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Gruppera data i tabellform
-Företagsanvändare behöver ofta för att utföra ad hoc-analys av data. Det kan du göra genom att exportera data till Microsoft Excel och med hjälp av pivottabeller och funktionen **gruppering i rutnät** som är allmänt tillgänglig i version 10.0.16/Plattformsuppdatering 40 och är beroende av den nya nätkontrollfunktionen, tillåter användare att organisera sina tabelldata på intressanta sätt i Finance and Operations-appar. När funktionen utökas kommer funktionen **Summor**, **Gruppera** också få meningsfulla insikter i data genom att tillhandahålla delsummor på gruppnivån.
+Företagsanvändare behöver ofta för att utföra ad hoc-analys av data. Det kan du göra genom att exportera data till Microsoft Excel och med hjälp av pivottabeller och funktionen **gruppera i rutnät** som är beroende av den nya nätkontrollfunktionen, tillåter användare att organisera sina tabelldata på intressanta sätt i Finance and Operations-appar. När funktionen utökas kommer funktionen **Summor**, **Gruppera** också få meningsfulla insikter i data genom att tillhandahålla delsummor på gruppnivån.
 
 Om du vill använda den här funktionen högerklickar du på den kolumn som du vill gruppera efter och väljer **gruppera efter denna kolumn**. Den här åtgärden sorterar data efter den markerade kolumnen, lägger till en ny **Gruppera efter**-kolumn i början av rutnätet och infogar "rubrikrader" i början av varje grupp. Dessa rubrikrader innehåller följande information om varje grupp: 
 -  Datavärde för gruppen 
@@ -108,9 +108,6 @@ När du har grupperat data efter en enda kolumn kan du gruppera data efter en an
 
 Du kan när som helst ta bort grupperingen i valfri kolumn genom att högerklicka på kolumnen och välja **Dela upp**. Du kan också ta bort grupperingen från alla kolumner genom att välja **rutnätsalternativ** och sedan **Dela upp alla**.   
 
-Observera att före version 10.0.16/Plattformsuppdatering 40, fanns det enbart stöd för en nivå av gruppering. Om data är grupperade i dessa versioner och du väljer **Gruppera efter denna kolumn** för en annan kolumn, ersätts den ursprungliga grupperingen.  
-
-
 ### <a name="expanding-and-collapsing-groups"></a>Expandera och komprimera grupper
 Den första grupperingen av data kommer att ha alla grupper expanderade. Du kan skapa sammanfattade vyer över informationen genom att dölja enskilda grupper, eller så kan du använda expandera och komprimera grupp för att underlätta navigeringen mellan data. Om du vill expandera eller komprimera en grupp, markerar du knappen (>) i motsvarande grupprubrikrad. Observera att läget utöka/komprimera för enskilda grupper **inte** sparas i anpassning.
 
@@ -118,10 +115,10 @@ Den första grupperingen av data kommer att ha alla grupper expanderade. Du kan 
 På samma sätt som du kan markera (eller avmarkera) alla rader i rutnätet genom att markera kryssrutan högst upp i den första kolumnen i rutnätet kan du snabbt markera (eller avmarkera) alla raderna i en grupp genom att markera kryssrutan i motsvarande grupprubrikrad. Kryssrutan på raden i grupphuvudet visar alltid aktuell markeringsstatus för rader i den gruppen, oavsett om alla rader har markerats eller om alla rader är markerade, eller om bara vissa rader är markerade.
 
 ### <a name="hiding-column-names"></a>Dölja kolumnnamn
-När du grupperar data är standardfunktionen att visa kolumnnamnet i grupprubrikraden. Från och med version 10.0.14/plattformsuppdatering 38 kan du välja att utelämna kolumnnamnet i grupphuvud rader genom att välja **Rutnätsalternativ** > **Dölj gruppkolumnnamn**.
+När du grupperar data är standardfunktionen att visa kolumnnamnet i grupprubrikraden. Du kan välja att utelämna kolumnnamnet i grupphuvud rader genom att välja **Rutnätsalternativ** > **Dölj gruppkolumnnamn**.
 
 ## <a name="freezing-columns"></a>Låsa kolumner
-En del kolumner i ett rutnät kan vara så viktiga för sammanhanget att du inte vill att de ska rulla ut ur visningen. Istället vill du att värdena i dessa kolumner alltid ska vara synliga. I version 10.0.17 fer funktionen **Lås kolumner i rutnät** flexibiliteten för användarna. 
+En del kolumner i ett rutnät kan vara så viktiga för sammanhanget att du inte vill att de ska rulla ut ur visningen. Istället vill du att värdena i dessa kolumner alltid ska vara synliga. Funktionen **Lås kolumner i rutnät** flexibiliteten för användarna. 
 
 Om du vill låsa en kolumn högerklickar du i kolumnens rubrik och väljer sedan **Lås kolumn**. Första gången du slutför det här steget blir den valda kolumnen den första kolumnen och kan inte längre rulla ut ur visningen. Alla efterföljande kolumner som du fryser läggs till till höger om den sista låsta kolumnen. Du kan använda standardfunktionen Flytta om du vill beställa om låsta kolumner efter behov. Låsta kolumner kan emellertid inte flyttas så att de visas bland de olästa kolumnerna. Ej låsta kolumner kan emellertid inte flyttas så att de visas bland de låsta kolumnerna.
 
@@ -129,35 +126,19 @@ Om du vill låsa upp en kolumn högerklickar du i kolumnens rubrik och väljer s
 
 Observera att radurvalet och radstatuskolumnerna i det nya rutnätet alltid är låsta som de första två kolumnerna. När dessa kolumner tas med i ett rutnät visas de därför alltid för användaren, oavsett den vågräta rullningspositionen i rutnätet. Dessa två kolumner kan inte beställas om.
 
-## <a name="frequently-asked-questions"></a>Vanliga frågor
+## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hur aktiverar jag den nya rutnätskontrollen i min miljö? 
 
-**10.0.9 / plattformsuppdatering 33 och senare**
+Funktionen **Ny rutnätskontroll** är tillgänglig direkt i funktionshantering i alla miljöer. När funktionen har inaktiverats i funktionshanteringen kommer alla efterföljande användarsessioner att använda den nya rutnätskontrollen. 
 
-Funktionen **Ny rutnätskontroll** är tillgänglig direkt i funktionshantering i alla miljöer. Liksom andra offentliga förhandsgranskningsfunktioner är aktivering av den här funktionen i produktion är föremål för [Tilläggsavtal för användarvillkor](public-preview-terms.md).  
-
-**10.0.8/plattformsuppdatering 32 och 10.0.7/plattformsuppdatering 31**
-
-Funktionen **Ny rutnätskontroll** kan aktiveras nivå 1 (Utv/Test) och nivå 2 (Sandbox) miljö för att ge ytterligare tester och designändringar genom att följa stegen nedan.
-
-1.  **Aktivera flygningen**: kör följande SQL-uttryck: 
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
-
-2. **Återställ IIS** för att rensa den statiska förhandsversionscachen. 
-
-3.  **Hitta funktionen**: gå till arbetsytan **Funktionshantering**. Om **ny rutnätskontroll** inte visas i listan över alla funktioner väljer du **Sök efter uppdateringar**.   
-
-4.  **Aktivera funktionen**: Leta upp funktionen **Ny rutnätskontroll** i listan över funktioner och välj **Aktivera nu** i informationsfönstret. Observera att en uppdatering av webbläsaren krävs. 
-
-Alla efterföljande användarsessioner börjar med att aktivera nya rutnätskontrollen.
+Den här funktionen aktiveras som standard med start i version 10.0.21 och är avsedd att bli obligatorisk med version 10.0.25. 
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Utvecklare] Avanmäl individuella sidor från att använda det nya rutnätet 
-Om din organisation hittar en sida med vissa problem med att använda det nya rutnätet, finns det en API med start i version 10.0.13/plattformsuppdatering 37 som gör det möjligt för ett enskilt formulär att använda den gamla rutnätskontrollen samtidigt som resten av systemet tillåter att den nya rutnätskontrollen används. Om du vill välja en enskild sida från det nya rutnätet lägger du till följande samtalspost `super()` i formulärets `run()`-metod.
+Om din organisation hittar en sida med vissa problem med att använda det nya rutnätet, finns det en API som gör det möjligt för ett enskilt formulär att använda den gamla rutnätskontrollen samtidigt som resten av systemet tillåter att den nya rutnätskontrollen används. Om du vill välja en enskild sida från det nya rutnätet lägger du till följande samtalspost `super()` i formulärets `run()`-metod.
 
  ```this.forceLegacyGrid();```
 
-Denna API kommer att hedras tills oktober 2021 släpps när den nya nätkontrollen blir obligatorisk. Om något problem kräver att denna API används rapporterar du dem till Microsoft.
+Detta API sätts in tills den nya rutnätskontrollen blir obligatorisk, som är avsedd för april 2022. Om något problem kräver att denna API används rapporterar du dem till Microsoft.
 
 ### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Tvinga en sida att använda det nya rutnätet efter att tidigare valt ut rutnätet
 Om du har valt att inte använda det nya rutnätet för en enskild sida kanske du senare vill aktivera det nya rutnätet igen efter att de underliggande frågorna inte har lösts. Om du vill göra detta måste du bara ta bort samtalet `forceLegacyGrid()`. Ändringen börjar inte gälla förrän något av följande inträffar:

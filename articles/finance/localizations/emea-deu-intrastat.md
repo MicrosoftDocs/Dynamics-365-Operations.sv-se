@@ -1,24 +1,26 @@
 ---
 title: Tysk Intrastat
 description: Det här ämnet innehåller information om Intrastat-deklaration i Tyskland.
-author: andosip
-ms.date: 08/2/2021
+author: anasyash
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: e1dbf0997417f9f1ad313e6a7b3c2c9cfae41efc6b1cfda60a5500ae0af94709
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 50c412fdfd7118843d285cbb70e8e44847c9d4a5
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759853"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487935"
 ---
 # <a name="german-intrastat"></a>Tysk Intrastat
 
-Sidan **Intrastat** används för att generera och rapportera information om handel mellan länder i EU. Den tyska Intrastat-deklarationen innehåller information om handel med varor för rapportering.
+[!include [banner](../includes/banner.md)]
+
+Sidan **Intrastat** används för att generera och rapportera information om handel mellan länder i EU. Den tyska Intrastat-deklarationen innehåller information om handel med varor för rapportering. Rapporten formateras enligt de tyska myndigheternas riktlinjer som visas på formatsidan [6.2 för fildeklarationer i formatsidan INSTAT/XML](https://www-idev.destatis.de/idev/doc/intra_en/hilfe6_2.html). 
 
 I följande tabell visas fälten som ingår i den tyska Intrastat-deklarationen.
 
@@ -71,15 +73,16 @@ I följande tabell visas fälten som ingår i den tyska Intrastat-deklarationen.
     3. I fältet **Mappning av rapportformat**, välj **Intrastat-rapport**.
     4. På snabbfliken **Artikelkodhierarki** i fältet **Kategorihierarki**, välj **Intrastat**.
     5. I fältet **Transaktionskod** väljer du transaktionskod för egenskapsöverföringar. Du använder den här koden för transaktioner som producerar faktiska eller planerade överlåtelser av egendom mot ersättning (ekonomisk eller annan). Du använder det även för korrigeringar.
-    6. I fältet **Kreditfaktura** väljer du transaktionskod för retur av varor. Den här koden används vid retur av varor när den ursprungliga transaktionen har registrerats under transaktionskoden.
-    7. Välj Intrastat-utfärdare i fältet **utfärdare**.
-    8. Gå till **Skatt** > **Indirekt moms** > **Moms** > **Skattemyndigheter** och ange följande information för Intrastat-myndigheten som du valde i föregående steg:
+    6. I fältet **Kreditfaktura** väljer du transaktionskod för retur av varor.
+    7. Välj kontaktperson för Intrastat-rapporten i fältet **Arbetare**. Alternativt kan du på fliken **Kontakt** ange eller välja värden i fälten **Namn**, **Telefon**, **Fax**, **E-post**, och **Internet-adress**. Dessa fält är inkluderade i rapporten.
+    8. Välj Intrastat-utfärdare i fältet **utfärdare**.
+    9. Gå till **Skatt** > **Indirekt moms** > **Moms** > **Skattemyndigheter** och ange följande information för Intrastat-myndigheten som du valde i föregående steg:
 
        - Myndighets-ID
        - Adress
        - Kontaktinformation
 
-    9. På fliken **Egenskaper för land/region** i fältet **Land/region** anger alla länder eller regioner som ditt företag gör affärer med. För varje land eller region i fältet **Typ av land/region** väljer du **EU**, så att landet eller regionen visas i din Intrastat-rapport.
+    10. På fliken **Egenskaper för land/region** i fältet **Land/region** anger alla länder eller regioner som ditt företag gör affärer med. För varje land eller region i fältet **Typ av land/region** väljer du **EU**, så att landet eller regionen visas i din Intrastat-rapport.
 
 4. Ställa in regionskoder.
 

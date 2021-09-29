@@ -2,7 +2,7 @@
 title: Konfigurera rollen för frånvarochefen
 description: Det här avsnittet innehåller information om hur du ställer in rollen som frånvaroansvarig för hantering av tjänstledighet för medarbetare.
 author: hasrivas
-ms.date: 07/19/2021
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 050874628388629569751afae201ef346af020da09c81d24a69e1a4b5eb41b6f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7f2a2fd0a1ad1cca19625ff1029962f608251f1d
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732355"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485764"
 ---
 # <a name="configure-the-absence-manager-role"></a>Konfigurera rollen för frånvarochefen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-[!include [preview feature](./includes/preview-feature.md)]
 
 I vissa organisationer kanske chefer inte hanterar tjänstledigheten för teamet. I stället kan en frånvarochef hantera den här processen för gruppmedlemmar inom flera avdelningar och grupper. Frånvarochefer har följande funktioner för tjänstledighetshantering:
 
@@ -38,7 +36,7 @@ I vissa organisationer kanske chefer inte hanterar tjänstledigheten för teamet
 
 1. I arbetsytan **Systemadministration** välj **Funktionshantering**.
 
-2. På fliken **Funktionshantering** aktiverar du funktionen **(Förhandsgranska) Frånvarohanteraren för att hantera tjänstledighet**.
+2. På fliken **Funktionshantering** aktiverar du funktionen **Frånvarohanteraren för att hantera tjänstledighet**.
 
 ## <a name="define-a-custom-hierarchy"></a>Definiera en anpassad hierarki
 
@@ -129,7 +127,7 @@ Användare med rollen Frånvaroansvarig kan visa ledighetsansökningar i sin kal
 > [!IMPORTANT]
 > En systemadministratör måste konfigurera visningsalternativen för frånvaroansvarigkalendern. På sidan **Parametrar för tjänstledighet och frånvaro** på fliken **Kalender** finns det alternativ för att dölja eller visa födelsedagar, frånvaro utan detaljer, frånvaro och väntande ledighetsförfrågningar. Det finns också ett alternativ för att filtrera kalendervyalternativet efter arbetstyp.
 
-1. I arbetsytan **Självbetjäning för medarbetare**, välj **tjänstledighetshantering** och sedan **Frånvaroansvarigkalendern**.
+1. I arbetsytan **Självbetjäning för medarbetare**, välj **Tjänstledighetshantering** och sedan **Frånvaroansvarigkalendern**.
 
 2. I fältet **Datum** anger du önskade datum.
 

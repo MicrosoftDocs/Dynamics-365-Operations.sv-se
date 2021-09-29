@@ -1,8 +1,8 @@
 ---
 title: Kompensationsplaner
-description: Kompensations- och förmånschefer kan använda kompensationshantering för att underhålla och bearbeta fasta och variabla kompensationsplaner för organisationens medarbetare.
-author: andreabichsel
-ms.date: 06/20/2017
+description: I det här avsnittet beskrivs hur du använder kompensationshantering för att hantera och bearbeta kompensationsplaner.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: dafba542ec1421a6ef3437d9c2f22e0c363e557d7f5b6410af36fc7cb8d4be7d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64169ebc5bbd2f0a9b4be3d4ec076c8814e6eb97
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732451"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483839"
 ---
 # <a name="compensation-plans"></a>Kompensationsplaner
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Kompensations- och förmånschefer kan använda kompensationshantering för att underhålla och bearbeta fasta och variabla kompensationsplaner för organisationens medarbetare.
+Kompensations- och förmånschefer kan använda **kompensationshantering** för att underhålla och bearbeta fasta och variabla kompensationsplaner för organisationens medarbetare.
 
 ### <a name="introduction"></a>Introduktion
 
@@ -43,7 +43,7 @@ Följande register visar komponenter i kompensationsprocessen som kan vara väse
 <thead>
 <tr class="header">
 <th>Komponent</th>
-<th>Mer information …</th>
+<th>Mer information</th>
 </tr>
 </thead>
 <tbody>
@@ -89,7 +89,7 @@ Följande register visar komponenter i kompensationsprocessen som kan vara väse
 </tr>
 <tr class="even">
 <td>Kontrollpunkt</td>
-<td>Kontrollpunkten anger vad du anser vara den ideala lönesatsen för alla medarbetare på en viss kompensationsnivå. För gradplansstrukturer utgörs kontrollpunkterna vanligtvis av intervallernas mittpunkt. Bandstrukturer använder sällan kontrollpunkter. Du kan ange kontrollpunkten för en fast kompensationsplan i formuläret Planer för fast kompensation.</td>
+<td>Kontrollpunkten anger vad du anser vara den ideala lönesatsen för alla medarbetare på en viss kompensationsnivå. För gradplansstrukturer utgörs kontrollpunkterna vanligtvis av intervallernas mittpunkt. Bandstrukturer använder sällan kontrollpunkter. Du kan ange kontrollpunkten för en fast kompensationsplan på sidan **Planer för fast kompensation**.</td>
 </tr>
 <tr class="odd">
 <td>Jobbfunktioner</td>

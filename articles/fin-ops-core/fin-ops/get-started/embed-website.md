@@ -2,7 +2,7 @@
 title: Bädda in tredjepartsprogram
 description: Det här avsnittet förklarar hur du bäddar in tredjepartsappar i syfte att utöka produktens funktionalitet.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: b0471fd2ea9a5e8b07b9e8bc279da53f6a1539ca
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 89f101bcf33080f6a73664fe7c3fe6719de04a4e
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345420"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488244"
 ---
 # <a name="embed-third-party-apps"></a>Bädda in tredjepartsprogram
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Många kunder använder en mängd olika program för att driva sin verksamhet. Vissa av programmen är webbprogram från tredje part som fungerar tillsammans med Finance and Operations-program. Om du vill tillhandahålla en mer sömlös användarupplevelse kan du använda funktionen **Helsidesappar** för att bädda in dessa tredjepartsappar direkt i dina Finance and Operations-appar (förutsatt att tredjepartsapparna medger detta). På det här sättet kan användarna komma åt de webbplatser och program som de behöver utan att behöva byta flikar eller fönster.
 

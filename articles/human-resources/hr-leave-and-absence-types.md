@@ -1,8 +1,8 @@
 ---
 title: Konfigurera typer av tjänstledighet och frånvaro
 description: Ställ in tjänstledighetstyper som medarbetarna kan göra i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0ca474fe12867ae767db936ad0b2995c4437bdf0ee94831450fda825b9e075dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b616d1f2c8b0bc8131045424b01dbfaa82f41f84
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730428"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485821"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurera typer av tjänstledighet och frånvaro
 
@@ -65,9 +65,9 @@ Tjänstledighetstyper i Dynamics 365 Human Resources definierar olika typer av f
 
 1. Ange avrundningsalternativ för tjänstledighetstypen. Alternativen inkluderar **Ingen**, **Upp**, **Ned** och **Närmast**. Du kan också ställa in avrundningsprecision för tjänstledighetstypen.
 
-2. Ange **helgdagskorrigering** för tjänstledighetstypen. När du väljer det här alternativet använder personal antalet helgdagar som infaller en arbetsdag för att avgöra hur ledighetstypen ska skjutas upp. Om t.ex. juldagen infaller på en måndag kommer personalavdelningen att subtrahera en dag från tjänstledighetstypen när periodiseringen bearbetas.
+2. Ange **helgdagskorrigering** för tjänstledighetstypen. När du väljer det här alternativet används antalet helgdagar som infaller en arbetsdag för att avgöra hur ledighetstypen ska skjutas upp. Om t.ex. juldagen infaller på en måndag kommer personalavdelningen att subtrahera en dag från tjänstledighetstypen när periodiseringen bearbetas.
 
-   Du kan ange helgdagar arbetstidskalender. Mer information finns i [skapa en arbetstidskalender](hr-leave-and-absence-working-time-calendar.md)
+   Du kan ange helgdagar arbetstidskalender. Mer information finns i [skapa en arbetstidskalender](hr-leave-and-absence-working-time-calendar.md).
    
  3. Ange **Överför tjänstledighetstyp** för tjänstledighetstypen. När du väljer det här alternativet överförs alla överförda saldon till den angivna tjänstledighetstypen. Tjänstledighetstypen måste också inkluderas i planen för tjänstledighet och frånvaro. 
  
@@ -76,7 +76,7 @@ Tjänstledighetstyper i Dynamics 365 Human Resources definierar olika typer av f
 ## <a name="configure-the-required-attachment-per-leave-type"></a>Konfigurera kopplingsbehov per tjänstledighetstyp
 
 > [!NOTE]
-> Om du vill använda fältet **Bilaga som krävs** måste du först aktivera funktionen **(Förhandsgranskning) Konfigurera obligatorisk bilaga för ansökan om tjänstledighet** i funktionshantering. Mer information om hur du aktiverar funktionerna för förhandsgransknings finns i [hantera funktioner](hr-admin-manage-features.md).
+> Om du vill använda fältet **Bilaga som krävs** måste du först aktivera funktionen **Konfigurera obligatorisk bilaga för ansökan om tjänstledighet** i funktionshantering. Mer information om hur du aktiverar funktionerna finns i [hantera funktioner](hr-admin-manage-features.md).
 
 1. På sidan **Tjänstledighet och frånvaro** på fliken **Länkar**, under **Inställningar**, välj **Tjänstledighets- och frånvarotyper**.
 
@@ -87,7 +87,7 @@ Medarbetare måste föra över en bilaga när de skickar en ny tjänstledighetsb
 ## <a name="configure-leave-units-hoursdays-per-leave-type"></a>Konfigurera ledighetsenheter (timmar/dagar) per tjänstledighetstyp
 
 > [!NOTE]
-> Om du vill använda tjänstledighetsenheterna per tjänstledighetstyp måste du först aktivera **(förhandsgranskning) konfigurera tjänstledighetsenheter per tjänstledighetstyp** i funktionshanteringen. Mer information om hur du aktiverar funktionerna för förhandsgransknings finns i [hantera funktioner](hr-admin-manage-features.md).
+> Om du vill använda tjänstledighetsenheterna per tjänstledighetstyp måste du först aktivera **konfigurera tjänstledighetsenheter per tjänstledighetstyp** i funktionshanteringen. Mer information om hur du aktiverar funktionerna finns i [hantera funktioner](hr-admin-manage-features.md).
 
 > [!IMPORTANT]
 > Tjänstledighetstyperna i en juridisk person använder som standard tjänstledighetsenheterna från konfigurationen av tjänstledighetsparametrar på den juridiska personens nivå.

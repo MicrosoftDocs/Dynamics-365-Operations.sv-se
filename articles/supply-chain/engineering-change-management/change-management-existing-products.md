@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2fd3d2e4f4c3e53913bd811728b0950c63b38bc5afe6fe5282b4cfb05f414619
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 45c5774ac1f6db5845d6be6bf2f5d8f99063ea07
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744188"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488212"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Aktivera ändringshantering för befintliga produkter
 
@@ -47,7 +47,9 @@ Om du har en specifik produkt kan du därför endast ändra den till en teknisk 
 
 En *teknisk produktkategori* måste tilldelas varje teknisk produkt. Du gör den här tilldelningen när du kör guiden **Omvandla till teknisk produkt**. Teknikproduktkategorier måste finnas för alla relevanta standardprodukter *innan* du kan konvertera dessa produkter.
 
-Den tekniska produktkategorin utgör grunden för att skapa en teknisk produkt, och den förser en uppsättning standardvärden och principer. Den tekniska produktkategorin måste matcha den produkt som du tilldelar den. Produkttypen och dimensionsgruppen måste till exempel matcha både produkten och den tekniska produktkategorin. För mer information, se [Konstruktionsversioner och kategorier av konstruktionsprodukter](engineering-versions-product-category.md).
+Den tekniska produktkategorin utgör grunden för att skapa en teknisk produkt, och den förser en uppsättning standardvärden och principer. Tekniska attribut och deras standardvärden (som definierats för den tekniska kategorin) används också för den resulterande tekniska produkten. Du kan redigera attributvärdena och/eller lägga till fler tekniska attribut till den färdiga produkten efter behov.
+
+Den tekniska produktkategorin måste matcha den produkt som du tilldelar den. Produkttypen och dimensionsgruppen måste till exempel matcha både produkten och den tekniska produktkategorin. För mer information, se [Konstruktionsversioner och kategorier av konstruktionsprodukter](engineering-versions-product-category.md).
 
 > [!IMPORTANT]
 > Guiden **Omvandla till teknisk produkt** kan bara konvertera produkt till teknikprodukter där versionen inte spåras i transaktioner. Därför måste alternativet **Spåra version i transaktioner** ställas in *Nej* för att konstruera produktkategorier som du skapar för att konvertera befintliga produkter.

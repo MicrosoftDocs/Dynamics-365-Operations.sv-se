@@ -9,12 +9,12 @@ ms.reviewer: kfender
 ms.search.region: Global
 ms.author: v-aosipov
 ms.search.validFrom: ''
-ms.openlocfilehash: 404fb8dff1519aefb2f4af25eb95dfa6fce75b7c
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 152bfd24843867685b1d303484ed61ad98ec652a
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7417092"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7486956"
 ---
 # <a name="swedish-intrastat"></a>Svenskt Intrastat
 
@@ -48,7 +48,7 @@ Mer information finns i [Hämta ER-konfigurationer från den globala databasen m
 3. I fältet **Mappning av rapportformat**, välj **Intrastat-rapport**.
 4. På snabbfliken **Artikelkodhierarki** i fältet **Kategorihierarki**, välj **Intrastat**.
 5. I fältet **Transaktionskod** väljer du transaktionskod för egenskapsöverföringar. Du använder den här koden för transaktioner som genererar faktiska eller planerade överlåtelser av egendom mot ersättning (ekonomisk eller annan). Du använder det även för korrigeringar. Företag i Sverige använder ensiffriga transaktionskoder.
-6. I fältet **Kreditfaktura** väljer du transaktionskod för retur av varor. Den här koden används vid retur av varor när den ursprungliga transaktionen har registrerats under transaktionskoden. Företag i Sverige använder ensiffriga transaktionskoder.
+6. I fältet **Kreditfaktura** väljer du transaktionskod för retur av varor.
 7. På fliken **Egenskaper för land/region** i fältet **Land/region** anger alla länder eller regioner som ditt företag gör affärer med. I fältet **Typ av land/region** väljer du **EU** för samtliga länder som ingår i EU, detta så att landet visas i din Intrastatrapport.
 
 ## <a name="set-up-the-product-parameters-for-the-intrastat-declaration"></a>Konfigurera produktparametrarna för Intrastatdeklarationen

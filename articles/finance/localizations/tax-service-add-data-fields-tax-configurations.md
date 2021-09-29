@@ -1,8 +1,8 @@
 ---
 title: Lägga till datafält i momskonfigurationer
 description: I det här avsnittet beskrivs hur du anpassar momskonfigurationer genom att lägga till datafält.
-author: kailiang
-ms.date: 04/20/2021
+author: Kai-Cloud
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: wangchen
+ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 56b2eae37738ff6a12226671c386e2dd63c380bd4dca1554ef2d1cad0b75faaa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fb10fb5feb317dca5253eea6e5694a3960a58a7d
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725951"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500156"
 ---
 # <a name="add-data-fields-in-tax-configurations"></a>Lägga till datafält i momskonfigurationer
 
@@ -30,9 +30,9 @@ I det här avsnittet beskrivs hur du anpassar momskonfigurationer med hjälp av 
 
 ## <a name="customize-the-tax-data-model"></a>Anpassa momsdatamodellen
 
-1. I Microsoft Dynamics 365 Finance, gå till **Elektronisk rapportering** \> **Momskonfigurationer**.
+1. I Microsoft Dynamics 365 Finance, gå till **Elektronisk rapportering** > **Momskonfigurationer**.
 2. I konfigurationsträdet väljer du **Momsdatamodell – Europa**. Klicka på **Skapa konfiguration** i åtgärdsfönstret.
-3. I listrutan, välj alternativet **Beskattningsbar dokumentmodell härledd från Namn: Momsdatamodell – Europa, Microsoft**, ange ett namn för den nya momsdatamodellen och välj sedan **Skapa konfiguration**.
+3. I listrutan, välj **Beskattningsbar dokumentmodell härledd från Namn: Momsdatamodell – Europa, Microsoft**, ange ett namn för den nya momsdatamodellen och välj sedan **Skapa konfiguration**.
 4. Välj den momsdatamodell som du just skapat och markera sedan **Designer** i åtgärdsfönstret.
 5. Expandera datamodellträdet, välj **Rader** och välj sedan **Ny**.
 6. Ange ett namn i dialogrutan **Skapa nod**, ange artikeltypen och välj sedan **Lägg till**.
@@ -42,9 +42,9 @@ I det här avsnittet beskrivs hur du anpassar momskonfigurationer med hjälp av 
 
 ## <a name="customize-the-tax-configuration"></a>Anpassa momskonfiguration
 
-1. I Finance , gå till **Elektronisk rapportering** \> **Momskonfigurationer**.
+1. I Finance, gå till **Elektronisk rapportering** > **Momskonfigurationer**.
 2. I konfigurationsträdet väljer du **Momskonfiguration – Europa**. Klicka på **Skapa konfiguration** i åtgärdsfönstret.
-3. I listrutan, välj alternativet **Momstjänstkonfiguration härledd från Namn: Momskonfiguration – Europa, Microsoft** ange ett namn för den nya skattekonfigurationen och välj sedan **Skapa konfiguration**.
+3. I listrutan, välj **Momstjänstkonfiguration härledd från Namn: Momskonfiguration – Europa, Microsoft** ange ett namn för den nya skattekonfigurationen och välj sedan **Skapa konfiguration**.
 4. Välj den momskonfiguration som du just skapat och markera sedan **Designer** i åtgärdsfönstret.
 5. I avsnitt **Egenskaper** i fältet **Datamodell** välj den anpassade momsdatamodellen som du skapade tidigare.
 6. I fältet **Datamodellversion**,välj den färdiga versionen av momsdatamodellen.
@@ -54,8 +54,11 @@ I det här avsnittet beskrivs hur du anpassar momskonfigurationer med hjälp av 
 
 ## <a name="implement-tax-features-in-the-customized-tax-configuration"></a>Implementera momsfunktioner i den anpassade momskonfigurationen
 
-1. I Regulatory Configuration Services (RCS) , gå till **Globaliseringsfunktioner** \> **Moms**.
+1. I Regulatory Configuration Service (RCS) , gå till **Globaliseringsfunktioner** > **Moms**.
 2. Välj **Lägg till**, ange information om den nya funktionen och välj sedan **Skapa funktion**.
 3. På fliken **Versioner**, välj funktionen och välj sedan **Redigera**.
 4. På fliken **Allmänt** i fältet **Konfigurationsversion**, välj den anpassade momskonfigurationen och versionen.
 5. I dialogrutan **Hantera kolumner**, markera rubrik- och radkolumnerna som du vill inkludera i din anpassade momsmått och välj sedan högerpil för att lägga till dem i listan **Valda kolumner**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

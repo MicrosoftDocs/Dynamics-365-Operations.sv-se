@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: d4503b6939e3d01ae5bcf1d79c1f85d39348fbb6233cfb7a965f84f3a3b0699a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af7ac416053a90766138f999ce69d9993ee2ff6c
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744808"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500289"
 ---
 # <a name="goods-in-transit-processing"></a>Bearbetning av varor på väg
 
@@ -148,8 +148,6 @@ I avsnittet beskrivs funktioner som modulen **Hemtagningskostnad** lägger till 
 Hemtagningskostnad lägger till en ny arbetsordertyp som heter *Varor på väg* på sidan **Arbetsmallar**. Denna arbetsordertyp ska konfigureras på samma sätt som [arbetsordermallar för inköpsorder](/dynamicsax-2012/appuser-itpro/create-a-work-template).
 
 #### <a name="work-header-breaks"></a>Arbetsrubrikuppdelningar
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Arbetsmallar som har arbetsordertypen *Varor på väg* kan konfigureras att dela arbetsuppgiftsrubriker. På sidan **Arbetsmallar** följer du något av dessa steg:
 

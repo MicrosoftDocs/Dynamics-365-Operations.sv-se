@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 1a9603df8fd3b2c81c37ca95fd1b13d0b6f4004a38b0cf86846486e3b5d41bfa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db3c7561a7249930def2e519f3b6718c429fa3ba
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729420"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500485"
 ---
 # <a name="process-review-and-post-rebates"></a>Bearbeta, granska och bokföra rabatter
 
@@ -43,8 +43,6 @@ Den periodiska uppgiften **Beräkna FIFO-inköpspris** måste köras för att be
 Gå till **Rabatthantering \> Periodiska uppgifter \> Beräkna FIFO-inköpspris**. Välj **OK** för att köra beräkningen i dialogrutan som visas.
 
 ## <a name="create-source-transactions"></a>Skapa källtransaktioner
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Du kan skapa försäljnings- eller inköpsorder som har källtransaktioner, antingen före eller efter att du skapar ett tillämpligt rabatthanteringserbjudande.
 
@@ -158,8 +156,6 @@ Istället för att bearbeta specifika avtal eller rader kan du köra ett batchjo
 
 ### <a name="process-deals-by-using-the-rebate-workbench"></a>Bearbeta erbjudanden med workbench för rabatt
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Istället för att bearbeta specifika erbjudanden eller rader kan du använda *workbench för rabatt* för att bearbeta flera erbjudanden samtidigt. Om du vill kan du även använda postfilter och/eller ställa in ett återkommande schema. Du behöver inte markera några rader. Alla rader som uppfyller de datum- och filterkrav som du anger bearbetas av systemet.
 
 Om du vill bearbeta erbjudanden genom att använda workbench för rabatt följer du dessa steg.
@@ -213,8 +209,6 @@ Följ dessa steg för att visa och redigera transaktioner för rabatthantering g
 > Om du använder en anspråksprocess, när du behandlar nästa period kommer transaktionslistan att innehålla alla icke-begärda transaktioner från föregående bokföring, plus eventuella nya transaktioner för vald period.
 
 ### <a name="view-and-edit-rebate-management-transactions-by-using-the-rebate-workbench"></a>Visa och redigera transaktioner för rabatthantering genom att använda workbench för rabatt
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Följ dessa steg för att visa och redigera transaktioner för rabatthantering genom att använda workbench för rabatt.
 
@@ -295,8 +289,6 @@ Istället för att bokföra transaktioner för specifika avtal eller rader kan d
 
 ### <a name="post-transactions-by-using-the-rebate-workbench"></a>Bokför transaktioner med workbench för rabatt
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 När du har bearbetat reserverings-, rabatt- eller avskrivningstransaktioner följer du dessa steg och använder workbench för rabatt för att granska och bokföra de genererade transaktionerna för en eller flera specifika transaktionsrader för alla erbjudanden.
 
 1. Gå till **Rabatthantering \> Rabatthanteringserbjudanden \> Workbench för rabatt**.
@@ -332,8 +324,6 @@ Granska journalposterna som är kopplade till ett rabatthanteringserbjudande gen
 
 ### <a name="review-journals-by-using-the-rebate-workbench"></a>Granska journaler med workbench för rabatt
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 För att granska journaler med workbench för rabatt följer du dessa steg.
 
 1. Gå till **Rabatthantering \> Rabatthanteringserbjudanden \> Workbench för rabatt**.
@@ -342,8 +332,6 @@ För att granska journaler med workbench för rabatt följer du dessa steg.
 1. En lista över relevanta journaler, dokument eller artiklar visas. Om du vill visa mer information om en journal, ett dokument eller ett objekt väljer du dess rad och väljer sedan i åtgärdsfönstret **Visa information**.
 
 ## <a name="rebate-management-transactions-on-the-deduction-workbench"></a>Transaktioner för rabatthantering i workbench för avdrag
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 När du bokför en rabatthanteringstransaktion som har något av följande värden för **Betalningstyp** skapar systemet en kundavdragsjournal eller en fritextfaktura för det relevanta kundkontot:
 
@@ -358,8 +346,6 @@ Mer information finns i [Hantera avdrag med workbench för avdrag](deduction-wor
 
 ## <a name="purge-unposted-transactions"></a>Rensa ej bokförda transaktioner
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 När du har bearbetat reserverings-, rabatt- eller avskrivningstransaktioner följer du dessa steg för att rensa valda, ej bokförda transaktioner.
 
 1. Gå till **Rabatthantering \> Rabatthanteringserbjudanden \> Workbench för rabatt**.
@@ -368,8 +354,6 @@ När du har bearbetat reserverings-, rabatt- eller avskrivningstransaktioner fö
 4. Välj **OK** för att radera transaktionerna som inte bokförts.
 
 ## <a name="cancel-a-posted-provision"></a>Annullera en bokförd reservering
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 När du har bearbetat och bokfört en reservering följer du dessa steg för att annullera bokförda reserveringstransaktioner.
 

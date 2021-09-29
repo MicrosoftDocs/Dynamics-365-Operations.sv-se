@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 95f7ceb39d2afef1871f395ed562632865022b39
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345276"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500610"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Orsakskoder för lagerinventering
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Orsakskoder låter dig analysera resultatet från en inventeringsprocess och eventuella avvikelser som inträffar under den här processen. Du kan ange en orsak till att göra inventeringen, t.ex. en trasig lastpall eller en lagerjustering som baseras på lagerexempel. Samtidigt kan du använda justeringsfunktionerna för att bokföra värdet för lagerbehållningsjusteringar på korrekt motkonto baserat på orsaken till varje lagerjustering.
 
@@ -42,8 +41,6 @@ Innan du ställer in systemet rekommenderar vi att du definierar en strategi fö
 - Ska orsakskoderna driva bokföring av ekonomiskt motkonto?
 
 ## <a name="turn-on-reason-code-features-in-your-system"></a>Aktivera funktioner för orsakskoder i systemet
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Om du inte ser alla funktioner som beskrivs i det här avsnittet i systemet måste du troligen aktivera *Bokför lagerbehållningsjusteringar* med konfigurerbara orsakskoder relaterade till motkontofunktionen. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 

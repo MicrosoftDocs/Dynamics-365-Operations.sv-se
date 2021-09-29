@@ -2,7 +2,7 @@
 title: Tidsplanering med obegränsad kapacitet
 description: Detta ämne innehåller information om oändlig kapacitetsplanering för planeringsoptimering. Det beskriver även aktuella funktionsbegränsningar.
 author: crytt
-ms.date: 09/02/2021
+ms.date: 09/21/2021
 ms.topic: article
 ms.search.form: RouteInventProd
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 2e730340cddac107b04a6b5877e51b84f4dd7b21
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 9e1e423aaed06f6bb2b42e27d41c2aef46ffe104
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471678"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506817"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Tidsplanering med obegränsad kapacitet
 
@@ -27,7 +27,12 @@ Med funktionen *Oändlig kapacitetsplanering för planeringsoptimering* introduc
 
 ## <a name="turn-on-the-infinite-capacity-scheduling-feature"></a>Aktivera funktionen för tidsplanering av obegränsad kapacitet
 
-Om ditt system inte redan innehåller den funktion som beskrivs i det här avsnittet öppnar du arbetsytan [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen *Tidsplanering av obegränsad kapacitet för planeringsoptimering*.
+Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+
+- **Modul:** *huvudplanering*
+- **Funktionsnamn:** *Planering med obegränsad kapacitet för Planeringsoptimering*
+
+Mer information om den här funktionen finns i [Tidsplanering med resursurval som baseras på kapaciteten](capability-based-scheduling.md).
 
 ## <a name="added-functionality"></a>Tillagda funktioner
 
@@ -42,7 +47,7 @@ Under tidsplaneringsprocessen tar systemet även hänsyn till de *resursbehov* s
 - Resurstyp
 - Resurs
 - Resursgrupp
-- Funktion
+- Kapacitet (För mer information, se [Tidsplanering med resursurval som baseras på kapaciteten](capability-based-scheduling.md).)
 
 > [!NOTE]
 > Krav som rör personal, som kompetenser eller certifikatkrav, stöds ännu inte.
@@ -55,7 +60,6 @@ Sammanfattningsvis stöder tidsplaneringen för planeringsoptimering de vanligas
 
 Följande begränsningar gäller när du använder tidsplanering för planeringsoptimeringen:
 
-- Funktionen stöder endast tidsplanering för jobb. Inställningar som är relaterade till grovplanering beaktas inte under tidsplaneringen, oavsett planeringsmetod i huvudplaner.
 - Funktionen har bara stöd för obegränsad kapacitet.
 - Funktionen stöder inte funktionen för resursbelastning.
 - Funktionen tar inte hänsyn till flödeskassation.

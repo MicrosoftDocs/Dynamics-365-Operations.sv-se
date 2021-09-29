@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a57b51870d5738d906ca779474e0591dc16395cc992b3f79d37d1f45782bf66a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b240038a946a7f34a3c69df18329edbe1df6be0
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715344"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500313"
 ---
 # <a name="peripherals"></a>Kringutrustning
 
@@ -562,7 +562,7 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som delar m
 > Om enheter ofta använder olika maskinvarustationer rekommenderar vi att du konfigurerar Modern POS för att uppmana kassörer att välja en maskinvarustation när de börjar offertprocessen. Klicka på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassor**. Markera POS och ange alternativet **Välj i samband med offert** till **Ja**. Använd distributionsschema **1090** för att synkronisera ändringar i databasen för kanalen.
 
 ## <a name="extensibility"></a>Utbyggbarhet
-Information om tilläggsscenarier för maskinvarustationen finns i [maskinvarustationstillägg](dev-itpro/hardware-station-extensibility.md).
+För information om utökningsbarhet för hårdvarustationen, se [Integrera kassan med en ny hårdvaruenhet och generera tilläggsinstallationsprogrammet](dev-itpro/hardware-device-extension.md).
 
 ## <a name="security"></a>Säkerhet
 Enligt gällande säkerhetsstandarder ska följande inställningar användas i en produktionsmiljö: 

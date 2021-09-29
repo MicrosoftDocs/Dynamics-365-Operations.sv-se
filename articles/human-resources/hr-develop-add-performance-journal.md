@@ -1,8 +1,8 @@
 ---
 title: Lägg till i din resultatjournal och skicka beröm till någon
-description: Resultatjournalen innehåller information som är relaterad till hur du uppfyller dina mål eller hur du har presterat under en period.
-author: andreabichsel
-ms.date: 08/29/2018
+description: Prestationsjournalen innehåller information om hur anställda uppfyllde sina mål eller hur de presterade under en period.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPrai
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b147ee6cd2b674d6d251230420929dff948c6203ec015833396ab1ec468c0573
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fe20b5a5e30ff91f787cc6ac23781adc8cc35119
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732283"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483986"
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Lägg till i din resultatjournal och skicka beröm till någon
 
@@ -26,32 +26,31 @@ ms.locfileid: "6732283"
 
 Resultatjournalen innehåller information som är relaterad till hur du uppfyller dina mål eller hur du har presterat under en period. Du kan också lovorda en medarbetares åtgärder från journalen. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.
 
-1. Gå till All workspaces > Employee self service.
-2. Klicka på Performance journal.
-3. Klicka på Ny.
-4. Ange ett värde i fältet Titel.
-5. Ange ett värde i fältet Beskrivning.
+1. Gå till **Alla arbetsytor** > **Självbetjäning för medarbetare**.
+2. Klicka på **Prestationsjournal**.
+3. Klicka på **Ny**.
+4. Ange ett värde i fältet **Rubrik**.
+5. I fältet **Beskrivning** anger du ett värde.
     * Resultatjournalens datum är det datum då journalen skapades.  
-    * Källan representerar den plats resultatjournalen kom ifrån. När du skapar en, kommer den från My journal. Om din chef skapar en, kommer den från chefsjournalen (Manager journal).  
-    * Du kan dela denna journal med din chef eller göra det synlig endast för dig.  
-6. Ange ett datum i fältet Startdatum.
-7. Ange ett datum i fältet Date completed.
-8. Välj "Yes" i fältet Development plan.
-9. Ange ett värde i fältet Keywords.
-10. Klicka på Add external link.
-11. Ange "Envision" i fältet Description.
-12. Skriv in "https://www.microsoft.com/en/envision/default" i fältet för Internetadress.
-13. Klicka på bilden vid namn "Performance journal" under Save-knappen när du vill återgå till rutnätet.
-    * Du kan lägga till den valda journalen/de valda journalerna i ett mål så att den/de visas när du öppnar målet. En länk läggs till i snabbfliken för länkar. Om du lägger till en journal i ett mål och sedan lägger till målet i en granskning, kommer journalen att visas automatiskt i granskningen.  
-    * Du kan lägga till den valda journalen/de valda journalerna i en granskning så att den/de visas när du öppnar granskningen.    En länk läggs till i snabbfliken Links.  
-14. Klicka på Quick add.
-15. Ange ett värde i fältet Titel.
-16. Ange ett värde i fältet Beskrivning.
-17. Klicka på Spara.
-18. Klicka på Send praise.
+    * Källan representerar den plats resultatjournalen kom ifrån. När du skapar en, kommer den från My journal. Om din chef skapar en, kommer den från chefsjournalen (Manager journal).      * Du kan dela denna journal med din chef eller göra det synlig endast för dig.  
+6. Ange ett datum i fältet **Startdatum**.
+7. Ange ett datum i fältet **Slutfört den**.
+8. Välj **Ja** i fältet **Utvecklingsplan**.
+9. Ange ett värde i fältet **Nyckelord**.
+10. Klicka på **Lägg till extern länk**.
+11. I fältet **Beskrivning** anger du "Envision".
+12. I fältet **Internetadress** anger du 'https://www.microsoft.com/en/envision/default'.
+13. Klicka på bilden vid knappen **Spara** med namnet **Prestandajournal** när du vill återgå till rutnätet.
+    * Du kan lägga till den valda journalen/de valda journalerna i ett mål så att den/de visas när du öppnar målet. En länk läggs till i snabbfliken för **länkar**. Om du lägger till en journal i ett mål och sedan lägger till målet i en granskning, kommer journalen att visas automatiskt i granskningen.  
+    * Du kan lägga till den valda journalen/de valda journalerna i en granskning så att den/de visas när du öppnar granskningen. En länk läggs till i snabbfliken **Länkar**.  
+14. Klicka på **Snabbtillägg**.
+15. Ange ett värde i fältet **Rubrik**.
+16. I fältet **Beskrivning** anger du ett värde.
+17. Klicka på **Spara**.
+18. Klicka på **Skicka beröm**.
 19. Välj en person i listan över medarbetare på företaget.
-20. Ange "Thanks for all the help at the conference!" i fältet Description.
-21. Klicka på Skicka.
+20. I fältet **Beskrivning** ange **Tack för all hjälp på konferensen!**.
+21. Klicka på **Skicka**.
 
 
 

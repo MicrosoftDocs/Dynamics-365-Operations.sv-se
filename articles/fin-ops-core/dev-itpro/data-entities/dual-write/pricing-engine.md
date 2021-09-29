@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: f84a81444e6d5ce9a0d2da4c9a60b1ae3478ee2f
-ms.sourcegitcommit: 2d8035f8bb75957c793c0d293c079a792595eeaf
+ms.openlocfilehash: 4467d313aa2518b23434ec05989eb3e87cd35dfa
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7481325"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485768"
 ---
 # <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>Synkronisera på begäran med prissättningsmotorn Supply Chain Management
 
@@ -60,6 +60,7 @@ När kolumnerna i Sales fylls i gäller följande begränsningar:
 + Inställningarna för avgifter och debiteringar i Supply Chain Management replikeras inte i Sales.
 + Priserna anser inte vara särskilda detaljhandelspris som är angivna i kolumnen **butikskanal** på sidan försäljningsorderrad i Supply Chain Management.
 + Rabatter som definieras i avsnittet **Hantering av handelsavdrag** i Supply Chain Management beaktas inte.
++ Priser tar inte hänsyn till försäljningsavtal.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

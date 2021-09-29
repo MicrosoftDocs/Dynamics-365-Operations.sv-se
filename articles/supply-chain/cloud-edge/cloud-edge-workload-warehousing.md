@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3de160cb4e62f9b30c01c56fa6fe5a4dfad5229
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471726"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500438"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
 
@@ -157,6 +157,7 @@ Följande funktioner för lagerstyrning stöds för närvarande inte i arbetslas
 
 - Inkommande bearbetning av inköpsorderrader som tilldelats en last.
 - Inkommande bearbetning av inköpsorder för ett projekt.
+- Hantera landade kostnader, använda och spåra gods under transport.
 - Ingående och utgående bearbetning för artiklar som har aktiva spårningsdimensioner **Ägare** och/eller **Serienummer**.
 - Bearbetning av lagret som har statusvärdet spärr.
 - Ändra lagerstatus under en arbetsrörelseprocess.
@@ -187,7 +188,8 @@ I följande tabell visas vilka utgående funktioner som stöds och var de stöds
 |--------------------------------------------------------------|-----|------------------------------|
 | Bearbetning av källdokument                                   | Ja | Nr |
 | Last- och transporthanteringsprocesser                | Ja, men bara lastplaneringsprocesserna. Bearbetning av transporthantering stöds inte  | Nr |
-| Frisläpp till distributionslager                                         | Ja | Nr |
+| Hemtagningskostnad och varor på väg mottagande                                         | Ja | Nr |
+| Släpp till distributionslager                                         | Ja | Nr |
 | Planerad direktleverans                                        | Nr  | Nr |
 | Konsolidering av leverans                                       | Ja, när du använder lastplanering | Ja |
 | Påfyllnadsbearbetning för leverans                                     | Nr  |Ja, utom **Lastuppbyggnad och sortering** |

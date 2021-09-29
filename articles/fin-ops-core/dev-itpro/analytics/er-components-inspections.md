@@ -2,7 +2,7 @@
 title: Granska den konfigurerade ER-komponenten för att förhindra körningsproblem
 description: Det här avsnittet innehåller information om hur du granskar de konfigurerade komponenterna för elektroniska rapporter (ER) för att förhindra problem som kan uppstå vid körning.
 author: NickSelin
-ms.date: 03/04/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd4f2b00dd7634a44b75c76753f5d864b039391f4fcb29e750fb17e8a03e9b77
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718633"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488124"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Granska den konfigurerade ER-komponenten för att förhindra körningsproblem
 
@@ -229,6 +229,12 @@ Följande tabell ger en översikt över granskningar som ER tillhandahåller. Om
 <p>Sidhuvuden/sidfötter (&lt;komponenttyp: sidhuvud och sidfot&gt;) är inkonsekvent</p>
 <p><b>Körtid:</b> Den senast konfigurerade komponenten används vid körning om utkastversionen av det konfigurerade ER-formatet körs.</p>
 </td>
+</tr>
+<tr>
+<td><a href='#i17'>Inkonsekvent inställning av sidkomponent</a></td>
+<td>Dataintegritet</td>
+<td>Fel</td>
+<td>Det finns fler än två intervallkomponenter utan replikering. Ta bort onödiga komponenter.</td>
 </tr>
 </tbody>
 </table>
@@ -866,6 +872,26 @@ Det finns inget alternativ för automatisk korrigering av det här problemet.
 #### <a name="option-2"></a>Alternativ 2
 
 Ändra värdet på egenskapen för **Sidhuvud/Sidfot utseende** för någon av de inkonsekventa komponenterna **Excel\\Sidhuvud** eller **Excel\\Sidfot**.
+
+## <a name="inconsistent-setting-of-page-component"></a><a id="i17"></a>Inkonsekvent inställning av sidkomponent
+
+När du [konfigurerar](er-fillable-excel.md) en ER-formatkomponent för att använda en Excel-mall för att generera ett utgående dokument, kan du lägga till **Excel\\Sid**-komponent i sidnumrering av ett genererat dokument med hjälp av ER-formler. För varje **Excel\\sid**-komponent som du lägger till kan du lägga till många kapslade intervallkomponenter och fortfarande vara [intervall](er-fillable-excel.md#range-component)-komponenter och fortfarande vara kompatibel med följande [struktur](er-fillable-excel.md#page-component-structure):
+
+- Den första kapslade **intervall**-komponenten kan konfigureras så att egenskapen **Replikeringsriktning** ställs in på **Ingen replikering**. Detta intervall används för att skapa sidrubriker i genererade dokument.
+- Du kan lägga till många andra kapslade **intervall** komponenter där egenskapen **Replikeringsriktning** är inställd på **Lodrät**. De här intervallen används för att fylla i genererade dokument.
+- Den sista kapslade **intervall**-komponenten kan konfigureras så att egenskapen **Replikeringsriktning** ställs in på **Ingen replikering**. Det här intervallet används för att skapa sidfot i genererade dokument och för att lägga till sidbrytningar.
+
+Om du inte följer den här strukturen för ett ER-format i ER-formatdesignern vid designtid, inträffar ett valideringsfel och följande felmeddelande visas: "Det finns fler än två intervallkomponenter utan replikering. Ta bort onödiga komponenter.
+
+### <a name="automatic-resolution"></a>Automatisk lösning
+
+Det finns inget alternativ för automatisk korrigering av det här problemet.
+
+### <a name="manual-resolution"></a>Manuell lösning
+
+#### <a name="option-1"></a>Alternativ 1
+
+Ändra det konfigurerade formatet genom att ändra egenskapen för **Replikeringsriktning** för alla inkonsekventa **Excel\\intervall**-komponenter.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

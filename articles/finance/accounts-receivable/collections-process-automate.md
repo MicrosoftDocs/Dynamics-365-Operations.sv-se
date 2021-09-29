@@ -1,7 +1,7 @@
 ---
 title: Automatisering av inkassoprocess
 description: I det här avsnittet beskrivs hur du ställer in processtrategier för inkasso som automatiskt identifierar kundfakturor som kräver en e-postpåminnelse, inkassoaktivitet eller ett kravbrev som ska skickas till kunden.
-author: panolte
+author: JodiChristiansen
 ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0afc56ecea72e281d689930cc91cf6048426d3127ab10c8c284b2eea0f3933d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59db852024faf457db7ac145b67619b31555aaf2
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723905"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7486879"
 ---
 # <a name="collections-process-automation"></a>Automatisering av inkassoprocess
 
@@ -34,96 +34,34 @@ På sidan **Inställningar för insamlingsprocess** (**Kredit och inkasso > Inst
 Inkassoteam skickar vanligtvis ut ett tidigt meddelande om varje utestående faktura så att en kund meddelas när fakturan är på väg att förfalla. Valet för **förkrav** kan ställas in så att ett steg i varje processhierarki kan användas på varje faktura när fakturatidsinställningen når detta steg.
 
 ### <a name="process-hierarchy"></a>Processhierarki
-Varje kundpool kan bara tilldelas en processmall. Rankningen av hierarkin för det här steget identifierar vilken process som ska prioriteras om en kund ingår i fler än en pool som har tilldelats en processmall. Pool-ID bestämmer vilka kunder som ska tilldelas processen. 
+Varje kundpool kan bara tilldelas en processmall. Rankningen av hierarkin för det här steget identifierar vilken process som ska prioriteras om en kund ingår i fler än en pool som har tilldelats en processmall. Pool-ID bestämmer vilka kunder som ska tilldelas processen. Varje hierarki som konfigureras kan bara tilldelas en processautomatisering.
 
-Tysta dagar används för att säkerställa att kunden inte kontaktas för ofta via den automatiska processen.  Om t.ex. tysta dagar är inställt på två kontaktas inte en kund av den automatiserade processen under minst två dagar, även om den ursprungliga inköpsfakturan har kvittats helt. 
+Tysta dagar används för att säkerställa att kunden inte kontaktas för ofta via den automatiska processen. Om t.ex. tysta dagar är inställt på två kontaktas inte en kund av den automatiserade processen under minst två dagar, även om den ursprungliga inköpsfakturan har kvittats helt. 
 
-Om du vill exkludera kunder från automatisering av processer om kontosaldot eller saldo är mindre än ett definierat värde ställer du in fältet **Exkludera från process** till **Ja** och anger sedan värdet för belopp.
+Om du vill utesluta kunder från processautomatiseringen om kundens åldersbalans eller fakturabelopp är mindre än ett definierat värde väljer du **Åldersfördelade kunder mindre än** eller **Fakturabelopp mindre än** i fältet **Exkludera från process** och ange beloppets värde.
 
-## <a name="process-details"></a>Processdetaljer
-**Beskrivning** används för att identifiera syfte eller namn på steget i hierarkin.
-
-**Åtgärdstyp** definierar om steget ska skapa en aktivitet, skicka ett e-postmeddelande eller skapa ett kravbrev.
-
-**Affärsdokument** definieras den mall som används för att skapa åtgärdstypen.  Det kan vara en aktivitetsmall, en e-postmall eller ett kravbrev per kund. 
-
-Åtgärdstyperna kan skapas antingen före eller efter fakturans förfallodatum, baserat på den inställning som visas i **dagar i relation till kolumnen fakturans förfallodatum**.
-
-När du väljer en e-poståtgärdstyp, används mottagaren för att definiera om det är en kontakt för kund, säljgrupp eller inkassohandläggare. Värdet i fältet **kontakt för arbetssyfte** kommer sedan avgöra vilken kontakt från kundkontot som ska ta emot kommunikationen.
-
-## <a name="business-document-details"></a>Detaljer för affärsdokument
-Detaljer för affärsdokument varierar beroende på vilken åtgärdstyp som har valts i processdetaljerna.  När åtgärdstypen är en aktivitet visas aktivitetsmallen information.  Informationen omfattar mallnamnet, den typ av aktivitet som skapas, syftet med aktiviteten, antalet schemalagda dagar som aktiviteten ska slutföras till och information om aktiviteten.  Denna aktivitet kommer sedan att länka till den inledande fakturan som talar om för mottagaren om vilken åtgärd som krävs för att slutföra aktiviteten.
-
-Om åtgärdstypen är ett e-postmeddelande i processdetaljerna kommer det här avsnittet att innehålla två snabbflikar.  Den första används för att definiera mall-ID, e-postbeskrivning, standardspråk, användarnamnet som tilldelas e-postmeddelanden som skickas automatiskt och den associerade e-postadressen för avsändare. Det andra innebär att brödtexten i e-postmeddelandet skapas efter att värdena i fälten **språk** och **ämne** har sparats genom att välja **Redigera**.  Då öppnas ett fönster där HTML-innehållet kan överföras. Du kan också skriva det meddelande som skapas manuellt i den nedre vänstra rutan i fönstret.  
-
-> [!Note]
-> Ett e-postmeddelande i Outlook kan sparas med det önskade innehållet i kommunikationen i HTML-format. Detta kan sedan överföras för att implementera mallen. <br> <br> Om åtgärdstypen för kravbrev väljs, visas inte avsnittet affärsdokument information i inställningsformuläret.
-
-
-## <a name="fasttab-reference"></a>Snabbfliken referens
-I följande register visas de sidor och fält som de angivna snabbflikarna kan nås från, tillsammans med en beskrivning av informationen på fliken. 
-
-### <a name="process-hierarchy"></a>Processhierarki
-
-|     Sida                                                  |     Fält                         |     beskrivning                           |
-| --------------------------------------------------------  |-------------------------------    |---------------------------------------    |
-|     Inställningar för insamlingsprocess <br> Processautomatisering       |                                   |     Skapa och hantera inkassoprocesser baserat på tilldelningar av kundpooler.                                                                                                                             |
-|     Inställningar för insamlingsprocess <br> Processautomatisering       |     Hierarki                     |     Definierar prioriteten för automatisering av processer för att tilldela en kund om den tillhör flera pooler.                                                                                                   |
-|     Inställningar för insamlingsprocess <br> Processautomatisering       |     Pool-ID                       |     Frågor som definierar en grupp med kundposter.                                                                                                                                                        |
-|     Inställningar för insamlingsprocess <br> Processautomatisering       |     Tysta dagar                    |     Begränsa hur ofta ett processteg kan slutföras. Om till exempel två tysta dagar har ställts in, kommer nästa steg i processen inte att inträffa i minst två dagar om den inledande fakturan ändras.     |
-|     Inställningar för insamlingsprocess <br> Processautomatisering       |     Utelämna från process        |     Om du väljer antingen **balans mellan kundålder** eller **faktura beloppet mindre än** kommer att utesluta en kund från processautomatiseringen om värdekriterierna inte är uppfyllda.                                   |
+Markera **Använd förutsägelser** för att skapa insamlingsaktiviteter med hjälp av kundbetalningsprognoser. Aktiviteterna som skapas använder aktivitetsmallen från **Betalningsprognoser** på sidan **Parametrar för kundreskontra**, fliken, **Automatisering av inkassoprocess**. 
 
 ### <a name="process-details"></a>Processdetaljer
-|     Sida                                                  |     Fält                                         |      beskrivning                  |
-|--------------------------------------------------------   |-----------------------------------------------    |----------------------------   |
-|     Inställningar för insamlingsprocess <br> Processautomatisering       |                                                   |     Definiera de steg som vidtas utifrån den inledande fakturan.                                                                                                |
-|                                                           |     beskrivning                                   |     Fritext fält som används för att ange ett namn och/eller en beskrivning av steget.                                                                           |
-|                                                           |     Åtgärdstyp                                   |     Aktivitet, ett e-postmeddelande eller kravbrev som skapas av processteget.                                                                     |
-|                                                           |     Affärsdokument                           |     Definierar aktivitets eller e-postmallen som används under processteget.                                                                        |
-|                                                           |     När                                          |     Definierar om processteget ska inträffa före eller efter det inledande fakturans förfallodatum tillsammans med **dagarna i relation till fältet förfallodatum för faktura**.        |
-|                                                           |     Dagar i relation till fakturans förfallodatum        |     Tillsammans med fältet **när** anger tidssteget för processteget.                                                                          |
-|                                                           |     För-återkrav                                   |     Med det här urvalet kan ett steg per processhierarki ställas in och köras mot varje faktura när den når tidmätningskriteriet.                                                |
-|                                                           |     Mottagare                                     |     Anger om ett e-postmeddelande ska skickas till en kontaktperson för kund, säljgrupp eller inkasso.                                                   |
-|                                                           |     Kontakt för affärssyfte                    |     Avgör vilken mottagares e-postadress som används i e-postkommunikationer.                                                                                 |
+Klicka på **Ny** om du vill lägga till en ny processinformation i hierarkin. **Beskrivning** används för att identifiera syfte eller namn på steget i hierarkin. Välj **Åtgärdstyp** för att definiera steget som ska skapa en aktivitet, skicka ett e-postmeddelande eller skapa ett kravbrev. 
 
-### <a name="business-process-activity-template-details"></a>Information om mallen affärsprocessaktivitet 
-|     Sida                                                  |     Fält                     |      beskrivning                  |
-|--------------------------------------------------------   |----------------------------   |-------------------------  |
-|     Inställningar för insamlingsprocess <br> Processautomatisering       |                               |     Avsnitt i installationsprocessen som identifierar informationen i aktivitetsmallen.                                                                      |
-|     Inställningar för insamlingsprocess <br> Processautomatisering       |     Aktivitetsmall       |     Identifierar typen, syftet, antalet dagar som ska slutföras och ger information om aktiviteten som kommer att skapas under ett steg i en aktivitetsprocess.       |
+- **Affärsdokument** definieras den mall som används för att skapa åtgärdstypen. Detta dokument kan vara en aktivitetsmall, en e-postmall eller ett kravbrev som skickas till varje kund. Med inkassoprocessautomatisering skapas kravbrev per kund, oavsett hur andra inkassoparametrar är inställda.
+- **När** definierar processteget som kommer att inträffa före eller efter det ledande (äldsta) förfallodatumet för fakturan och används tillsammans med det nummer som visas i **Dagar i relation till kolumnen fakturaförfallodatum**.  
+- Markera alternativet **förkrav** om du vill skapa en åtgärd för varje faktura i ett steg i en processhierarki. Åtgärden förkrav är vanligtvis ut ett tidigt meddelande om utestående fakturor så att en kund meddelas när fakturan är på väg att förfalla. Förkrav kan bara markeras för en aktivitet per hierarki. När du väljer en e-poståtgärdstyp, används mottagaren för att definiera om e-postmeddelandet ska skickas till en kund, säljgrupp eller inkassohandläggare. 
+- Värdet i fältet **kontakt för arbetssyfte** kommer sedan avgöra vilken kontakt från kundkontot som ska ta emot kommunikationen.
 
-### <a name="business-document-email-template-details"></a>Information om e-postmallar för affärsdokument 
-|     Sida                                                  |     Fält     |      beskrivning                  |
-|--------------------------------------------------------   |-------------- |-----------------------------  |
-|     Inställningar för insamlingsprocess <br> Processautomatisering       |               |     Identifierar e-postbeskrivningen, standardspråket, avsändaren och e-postadressen som skapas under ett steg i en e-postprocess.        |
+### <a name="business-document-details"></a>Detaljer för affärsdokument
+Detaljer för affärsdokument varierar beroende på vilken åtgärdstyp som har valts i processdetaljerna. När åtgärdstypen är en aktivitet visas aktivitetsmallen information. Informationen omfattar mallnamnet, den typ av aktivitet som skapas, syftet med aktiviteten, antalet schemalagda dagar som aktiviteten ska slutföras till och information om aktiviteten. Denna aktivitet kommer sedan att länka till den inledande fakturan som talar om för mottagaren om vilken åtgärd som krävs för att slutföra aktiviteten.
 
+Om åtgärdstypen är ett e-postmeddelande i processdetaljerna kommer det här avsnittet att innehålla två snabbflikar. Den första används för att definiera mall-ID, e-postbeskrivning, standardspråk, användarnamnet som tilldelas e-postmeddelanden som skickas automatiskt och den associerade e-postadressen för avsändare. Det andra innebär att brödtexten i e-postmeddelandet skapas efter att värdena i fälten **språk** och **ämne** har sparats genom att välja **Redigera**. Då öppnas ett fönster där HTML-innehållet kan överföras. 
 
-### <a name="collections-history"></a>Inkassohistorik 
-|     Sida                              |     Fält     |      beskrivning                                                          |
-|------------------------------------   |-------------- |---------------------------------------------------------------------  |
-|     Inställningar för insamlingsprocess       |               |     Visa den senaste historiken för den valda processhierarkin.       |
+> [!Note]
+> Du kan spara ett e-postmeddelande i Outlook som innehåller brödtexten i kommunikationen i HTML-format. Du kan sedan överföra meddelandeinnehållet för att implementera mallen. <br> <br> Om åtgärdstypen för kravbrev väljs, visas inte avsnittet affärsdokument information på sidan inställningar.
 
-### <a name="collection-process-assignment"></a>Insamlingsprocessuppgift
-|     Sida                              |     Fält     |      beskrivning                                                  |
-|------------------------------------   |-------------- |-----------------------------------------------------------    |
-|     Inställningar för insamlingsprocess       |               |     Visa kunder som har tilldelats en inkassoprocess.  
-|     Manuell tilldelning               |               |     Visa kunder som har tilldelats en process manuellt eller välj vilka kunder som ska tilldelas en process. |
-|     Förhandsgranska processtilldelning      |               |     Förhandsgranska de kunder som ska tilldelas en strategi när den körs.   |
-|     Förhandsgranska kundtilldelning     |               |     Visa strategin som en viss kund är tilldelad.    |
- 
- ### <a name="process-simulation"></a>Processsimulering
-|     Sida                              |     Fält     |      beskrivning                                                  |
-|------------------------------------   |-------------- |-----------------------------------------------------------    |
-|    Processsimulering                 |               |     Förhandsgranska de åtgärder som kommer att skapas om den valda processautomatiseringsprocessen körs just nu. |
+Använd knappen **Historik för inkassoprocess** om du vill visa den senaste historiken för den valda processhierarkin. 
 
-### <a name="parameters"></a>Parameters
-|     Sida                                                                  |     Fält                                             |      beskrivning                              |
-|-------------------------------------------------------------------------- |------------------------------------------------------ |-------------------------------------  |
-|     Parametrar för kundreskontra > automatisering av inkassoprocessen     |     Procentandel kunder per batchuppgift          |     Inställning för att bestämma antalet batchjobb per automatiseringsprocess.                                          |
-|     Parametrar för kundreskontra > automatisering av inkassoprocessen     |     Bokför kravbrev automatiskt           |     För kravbrevs åtgärdstyper kommer brevet att bokföras under automationen.                                      |
-|     Parametrar för kundreskontra > automatisering av inkassoprocessen     |     Skapa aktiviteter automatisering                |     Skapa och stäng aktiviteter för åtgärdstyper som inte är aktiviteter för att visa alla automatiserade steg som har vidtagits för ett konto.        |
-|     Parametrar för kundreskontra > automatisering av inkassoprocessen     |     Antal dagar som insamling av inkassoprocesser ska fortsätta     |     Definierar antalet dagar som inkassohistoriken lagras.                                                       |
-|     Parametrar för kundreskontra > automatisering av inkassoprocessen     |     Exkludera faktura efter aktivering av senaste processsteg    |     En faktura som når det sista steget i inkassoprocessen används inte för att skapa åtgärdstyper för framtida processautomatisering. Den nästa äldsta fakturan fastställer nästa processautomatiseringssteg för att se till att insamlingsprocessens automationsåtgärder fortsätter.                                                        |
+Klicka på åtgärden **Insamlingsprocessuppgift** om du vill visa kunder som har tilldelats en inkassoprocess. Använd **Förhandsgranskning av kundtilldelning** när du vill visa hierarkin som en viss kund har tilldelats. Använd **Förhandsgranskning av processtilldelning** när du vill förhandsgranska kunderna som tilldelas en hierarki när de körs. Klicka på **Manuell tilldelning** för att visa kunder som har tilldelats en process manuellt eller välj vilka kunder som ska tilldelas en process.
 
+Klicka på åtgärden **Processsimulering** för att förhandsgranska de åtgärder som kommer att skapas om den valda processautomatiseringen körs just nu. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

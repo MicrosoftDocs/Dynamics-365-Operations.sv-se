@@ -2,7 +2,7 @@
 title: Skapa en konfiguration för att generera dokument i Excel-format
 description: Det här avsnittet beskriver hur du utformar ett elektroniskt rapporteringsformat (ER) för att fylla i en Excel-mall och sedan generera utgående dokument i Excelformat.
 author: NickSelin
-ms.date: 03/10/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d737c3a58bf94079b8b674238ed7dd651e238752a2bd992f57c9be4b95aedae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748482"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488148"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Skapa en konfiguration för att generera dokument i Excel-format
 
@@ -138,6 +138,55 @@ Mer information om hur du bäddar in bilder och former finns i [Bädda in bilder
 
 Komponenten **PageBreak** tvingar Excel att påbörja en ny sida. Den här komponenten behövs inte om du vill använda Excels standardsidindelning, men du bör använda den när du vill att Excel följer ditt ER-format för att strukturera sidindelning.
 
+## <a name="page-component"></a><a name="page-component"></a>Sidkomponent
+
+### <a name="overview"></a>Översikt
+
+Du kan använda **sidkomponenten** när du vill att Excel ska följa ditt ER-format och strukturera sidnumrering i ett genererat utgående dokument. När ett ER-format kör komponenter som finns under **sidkomponenten** läggs de sidbrytningar som krävs till automatiskt. Under den här processen beaktas storleken på det genererade innehållet, utskriftsformatet i Excel-mallen och pappersstorleken som valts i Excel-mallen.
+
+Om du måste dela upp ett genererat dokument i olika avsnitt, som har olika sidnumrering, kan du konfigurera flera **sidkomponenter** i varje [arkkomponent](er-fillable-excel.md#sheet-component).
+
+### <a name="structure"></a><a name="page-component-structure"></a>Struktur
+
+Om den första komponenten under **Sidkomponenten** är [Intervallkomponent](er-fillable-excel.md#range-component) där egenskapen **Replikeringsriktning** anges till **Ingen replikering**, detta område betraktas som sidhuvudet för sidnumreringen som är baserat på inställningarna för den aktuella **sidkomponenten**. Det Excel-intervall som är kopplat till den här formatkomponenten upprepas högst upp på varje sida som genereras med hjälp av inställningarna för den aktuella **sidkomponenten**.
+
+> [!NOTE]
+> För korrekt sidnumrering, om intervallet [Rader att upprepa överst](https://support.microsoft.com/office/repeat-specific-rows-or-columns-on-every-printed-page-0d6dac43-7ee7-4f34-8b08-ffcc8b022409) är konfigurerad i din Excel-mall måste adressen för detta Excel-intervall vara lika med adressen för Excel-intervallet som är associerat med det tidigare beskrivna **Intervallkomponenten**.
+
+Om den sista komponenten under **Sidkomponenten** är **Intervallkomponent** där egenskapen **Replikeringsriktning** anges till **Ingen replikering**, detta område betraktas som sidfoten för sidnumreringen som är baserat på inställningarna för den aktuella **sidkomponenten**. Det Excel-intervall som är kopplat till den här formatkomponenten upprepas längst ned på varje sida som genereras med hjälp av inställningarna för den aktuella **sidkomponenten**.
+
+> [!NOTE]
+> Vid korrekt sidnumrering bör de Excel-intervall som associeras med **intervallkomponenterna** inte ändras när de körs. Vi rekommenderar inte att du formaterar celler i detta intervall med hjälp av **Radbryt text i en cell** och **Autoanpassning radhöjd** Excel [alternativ](https://support.microsoft.com/office/wrap-text-in-a-cell-2a18cff5-ccc1-4bce-95e4-f0d4f3ff4e84).
+
+Du kan lägga till flera andra **intervallkomponenter** mellan de valfria **intervallkomponenterna** för att ange hur ett genererat dokument ska fyllas i.
+
+Om uppsättningen av kapslade **intervallkomponenter** under **sidkomponenten** inte följer den tidigare beskrivna strukturen, inträffar ett [valideringsfel](er-components-inspections.md#i17) vid designtiden i ER-formatdesignern. Felmeddelandet informerar om att problemet kan orsaka problem vid körning.
+
+> [!NOTE]
+> För att generera korrekt resultat, ange inte en bindning för någon **intervallkomponent** under **sidkomponenten** om egenskaper **Replikeringsriktning** för den **intervallkomponenten** anges till **Ingen replikering**, och om intervallet är konfigurerat för att generera sidhuvud eller sidfot.
+
+Om du vill att sidnumreringsrelaterad summering och inventering ska beräkna löpande summor och summor per sida rekommenderar vi att du konfigurerar de datakällor för [datainsamling](er-data-collection-data-sources.md) som krävs. Om du vill veta hur du använder **sidkomponenten** för att sidnumrera ett genererat Excel-dokument kan du gå tillbaka till procedurerna i [Designa ett ER-format för att sidnumrera ett genererat dokument i Excel-format](er-paginate-excel-reports.md).
+
+### <a name="limitations"></a><a name="page-component-limitations"></a>Begränsningar
+
+När du använder **sidkomponenten** för Excel-sidnumrering känner du inte av det slutliga antalet sidor i ett genererat dokument förrän sidnumreringen har slutförts. Därför kan du inte beräkna det totala antalet sidor med hjälp av ER-formler och skriva ut korrekt antal sidor i ett genererat dokument på alla sidor före den sista sidan.
+
+> [!TIP]
+> Detta kan du uppnå i ett Excel-sidhuvud eller en sidfot i Excel genom att använda särskild Excel-[formatering](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) för sidhuvud och sidfot.
+
+Konfigurerade **sidkomponenter** beaktas inte när du uppdaterar en Excel-mall i det redigerbara formatet i Dynamics 365 Finance version 10.0.22. Den här funktionen bör användas för ytterligare versioner av Finance.
+
+Om du konfigurerar Excel-mallen till att använda [villkorsformatering](/office/dev/add-ins/excel/excel-add-ins-conditional-formatting), fungerar det kanske inte som förväntats i vissa fall.
+
+### <a name="applicability"></a>Tillämplighet
+
+**Sidkomponenten** fungerar bara för formatkomponenten [Excel-fil](er-fillable-excel.md#excel-file-component) när denna komponent är konfigurerad att använda en mall i Excel. Om du [ersätter](tasks/er-design-configuration-word-2016-11.md) Excel-mallen med en Word-mall och sedan kör det redigerbara ER-formatet, ignoreras **sidkomponenten**.
+
+**Sidkomponenten** fungerar bara när funktionen **Aktivera användning av EPPlus-biblioteket i ramverksfunktionen Elektronisk rapportering** är aktiverad. Ett undantag är inaktiverat vid körning om ER försöker bearbeta **sidkomponenten** när den här funktionen är inaktiverad.
+
+> [!NOTE]
+> Ett undantag är ogiltigt vid körning om ett ER-format bearbetar **sidkomponenten** för en Excel-mall som innehåller minst en formel som refererar till en cell som inte är giltig. Du kan förhindra körtidsfel genom att korrigera Excel-mallen på det sätt som beskrivs i [Hur du korrigerar #REF! fel](https://support.microsoft.com/office/how-to-correct-a-ref-error-822c8e46-e610-4d02-bf29-ec4b8c5ff4be).
+
 ## <a name="footer-component"></a>Sidfotskomponent
 
 Komponenten **Sidfot** används för att fylla i sidfötter längst ned i ett genererat kalkylblad i en Excel-arbetsbok.
@@ -197,9 +246,12 @@ När du validerar ett ER-format som kan redigeras görs en konsekvenskontroll f�
 När ett utgående dokument i ett Microsoft Excel arbetsboksformat genereras, kan vissa celler i det här dokumentet innehålla Excel-formler. När funktionen **Aktivera användning av EPPlus bibliotek i ramverket för elektronisk rapportering** är aktiverad kan du styra när formlerna beräknas genom att ändra värdet för **Beräkningsalternativ**-[parametern](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) i Excel-mallen som används:
 
 - Välj **Automatisk** för att beräkna om alla beroende formler varje gång som ett genererat dokument läggs till av nya områden, celler osv.
+
     >[!NOTE]
     > Det kan orsaka ett prestandaproblem för Excel-mallar som innehåller många relaterade formler.
+
 - Välj **Manuell** för att undvika omberäkningar av formler när ett dokument genereras.
+
     >[!NOTE]
     > Omräkning av formel utförs påtvingat manuellt när ett genererat dokument öppnas för förhandsgranskning med Excel.
     > Använd inte det här alternativet om du konfigurerar en ER-destination som förutsätter användning av ett genererat dokument utan förhandsgranskning i Excel (PDF-konvertering, e-post osv.) eftersom det genererade dokumentet kanske inte innehåller värden i celler med formler.

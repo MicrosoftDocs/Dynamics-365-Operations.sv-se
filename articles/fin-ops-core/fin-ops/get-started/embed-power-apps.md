@@ -2,7 +2,7 @@
 title: Bädda in arbetsyteapp från Power Apps
 description: Det här avsnittet förklarar hur du bäddar in arbetsyteappar från Microsoft Power Apps till klienten för att utöka produktens funktionalitet.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 37ef6101a5a69e9c820347dd6f61c987467d40b3
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 32bf477bb42657b06f22f7677dcb580b38f0a55c
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344539"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488064"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Bädda in arbetsyteapp från Power Apps
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Microsoft Power Apps är en tjänst som gör det möjligt för både utvecklare och icke-tekniska användare att skapa anpassade företagsprogram för mobila enheter, surfplattor och webben utan att behöva skriva kod. Finance and Operations-appar stöder integrering med Power Apps. Arbetsyteappar som utvecklas av dig, ditt företag eller det bredare ekosystemet kan bäddas in i Finance and Operations-appar utöka produktens funktioner. Exempelvis kan du skapa en arbetsyteapp från Power Apps som kompletterar en Finance and Operations-app med information som hämtas från ett annat system.
 

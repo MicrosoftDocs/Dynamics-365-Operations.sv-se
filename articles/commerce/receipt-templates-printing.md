@@ -2,7 +2,7 @@
 title: Ställ in och designa inleveransformat
 description: Den här artikeln beskriver hur du ändrar formulärlayouter om du vill styra hur kvitton, fakturor och andra dokument skrivs ut. Dynamics 365 Commerce inkludera finns en layoutdesigner för formulär som du kan använda för att enkelt skapa och ändra olika typer av formulärlayouter.
 author: rubencdelgado
-ms.date: 06/20/2017
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7f70918e6fd274ac8e3476d6c309eac40744b0dd24a8b79f531d8627bb4a68e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2107670cb5dbac3b8f28c4e3caa357102932291
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715368"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500181"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Ställ in och designa inleveransformat
 
@@ -46,7 +46,12 @@ Den här artikeln beskriver hur du ändrar formulärlayouter om du vill styra hu
 
 ## <a name="print-images"></a>Skriv ut bilder
 
-Kvittodesignern innehåller en **Logotyp**-variabel som kan användas för att ange vilka bilder som ska skrivas ut på kvittot. Bilder som ingår i kvitton med hjälp av variabeln **Logotyp** ska vara monkroma bitmappsfiltyper (.bmp). Om en .bmp-bild anges i kvittodesignern men inte skrivs ut när den skickas till skrivaren, kan detta bero på att filstorleken är för stor eller på att bilddimensionerna inte är kompatibla med skrivaren. Försök att reducera bildfilslösningen om detta inträffar.   
+Kvittodesignern innehåller variabeln **Logotyp**. Du kan använda den här variabeln om du vill ange en bild som ska skrivas ut på kvitton. Bilder som är utskrivna på kvitton med hjälp av variabeln **Logotyp** ska vara monkroma bitmappsfiltyper (.bmp). Om en bitmappsbild anges i kvittodesignern men inte skrivs ut när kvittot skickas till skrivaren kan något av följande vara orsaken:
+
+- Filstorleken är för stor eller så är bilddimensionerna i bildens inte kompatibla med skrivaren. Försök i det här fallet att minska bildfilens upplösning eller dimensioner.
+- Vissa objektlänkar och inbäddning för försäljningsställen (OPOS) skrivardrivrutiner implementerar inte metoden **PrintMemoryBitmap** som maskinvarustationer använder för att skriva ut logotypbilder. I det här fallet ska du försöka lägga till följande flagga till filen **HardwareStation.Extension.config** för den dedikerade eller delade maskinvaran:
+
+    `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
 
 ## <a name="design-a-receipt-format"></a>Designa ett kvittoformat
 

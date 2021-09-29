@@ -2,7 +2,7 @@
 title: Borttagna eller avskrivna plattformsfunktioner
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning i plattformsuppdatering av Finance and Operations-appar.
 author: sericks007
-ms.date: 08/27/2021
+ms.date: 09/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 68114989ab96d175b534a31a7115420ee4adbcfb
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: 8910fc338f822e6b6b59acb0e6ee7a90db2b5007
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463643"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500119"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller avskrivna plattformsfunktioner
 
@@ -38,7 +38,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Vi fasar ut vissa SQL-rapporter i LCS. Du behöver inte längre övervaka rapporterna eftersom den här funktionen har ersatts av andra tjänster. |
+| **Orsak till inaktuell/borttagning** |   Alla aktiviteter och övervakning utförs internt, per plattform, via automation. Detta kräver inte någon manuell inblandning.|
 | **Ersatt av en annan funktion?**   | Nr |
 | **Produktområden som påverkas**         | SQL-rapporter: Aktuell DTU, Aktuell DTU-information, Hämta låsdetaljer, Lista över aktuell planguide, Hämta lista över fråge-ID:n, Hämta SQL-frågeplan för ett givet plan-ID, Hämta frågeplaner och körningsstatus, Hämta begränsningskonfiguration, Hämta väntestatistik, Lista de dyraste frågorna |
 | **Distribueringsalternativ**              | Molnbaserad distribution: Påverkar Microsoft-hanterade produktionsmiljöer och Nivå 2 till Nivå 5 sandbox-miljöer. |
@@ -181,7 +181,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Ersatt av en annan funktion?**   | Den [nya rutnätskontrollen](../..//fin-ops/get-started/grid-capabilities.md) |
 | **Produktområden som påverkas**         | Webbklient |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | I version 10.0.13 är den nya rutnätskontrollen allmänt tillgänglig och kunder kan välja att aktivera den här funktionen. Den nya rutnätskontrollen kommer att vara obligatorisk i versionen oktober 2021. När den nya rutnätskontrollen blir obligatorisk kommer **forceLegacyGrid()** API inte längre att användas. |
+| **Status**                         | I version 10.0.13 är den nya rutnätskontrollen allmänt tillgänglig och kunder kan välja att aktivera den här funktionen. Den nya rutnätskontrollen blir som standard på med versionen från oktober 2021 och är för närvarande obligatorisk i april 2022. När den nya rutnätskontrollen blir obligatorisk kommer **forceLegacyGrid()** API inte längre att användas. |
 
 ### <a name="personalization-without-saved-views"></a>Anpassning utan sparade vyer 
 

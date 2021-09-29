@@ -12,22 +12,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 96e2cf45296d937db9b136f1472374ae7254e10e
-ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
+ms.openlocfilehash: 12707774c780a0f805deed532af27c3705ea1f55
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7415331"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500617"
 ---
 # <a name="product-readiness"></a>Produktberedskap
 
 [!include [banner](../includes/banner.md)]
 
-Du kan använda beredskapskontroller för att säkerställa att alla nödvändiga huvuddata har specificerats för en produkt innan de används i transaktioner. När beredskapskontroller används blir en användare eller ett team ansvarigt för att validera specifika fördefinierade produktspecifika data. Om det finns en öppen beredskapskontroll för en produkt kan produkten inte användas i transaktioner.
+Du kan använda beredskapskontroller för att säkerställa att alla nödvändiga huvuddata har specificerats för en produkt innan de används i transaktioner. När beredskapskontroller används blir en användare eller ett team ansvarigt för att validera specifika fördefinierade produktspecifika data.
 
-Kryssrutan **Aktiv** för en teknisk produkt, variant eller version är endast tillgänglig efter att alla nödvändiga data har angetts och verifierats och efter att alla beredskapskontroller har bearbetats. Vid den tidpunkten kan produkten, versionen eller varianten användas i transaktioner. Du kan skapa beredskapskontroller för nya produkter, nya varianter och nya konstruktionsversioner.
+Du kan markera kryssrutan **Aktiv** för en teknisk produkt, variant eller version efter att alla nödvändiga data har angetts och verifierats och efter att alla beredskapskontroller har bearbetats. Om en eller flera kontroller inte har bearbetats för produkten, versionen eller varianten, när du försöker markera kryssrutan **Aktiv** du får en varning om att inte alla kontroller har slutförts.
 
-Du kan också utföra kontroller av beredskapskontroller på standardprodukter (icke-tekniska). Mer information finns i avsnittet [Beredskapskontroller för standardprodukter](#standard-products) längre fram i det här avsnittet.
+Du kan skapa beredskapskontroller för nya produkter, varianter och konstruktionsversioner. Du kan också utföra beredskapskontroller på standardprodukter (icke-tekniska) produkter (se också [Beredskapskontroller för standardprodukter](#standard-products)). 
+
+Du kan använda standardprodukter i transaktioner även om inte alla beredskapskontroller har slutförts. Om du behöver spärra en produkt från att användas i transaktioner, använd dess livscykelläge. Du kan tilldela en livscykelstat som spärrar en produkt från att användas i transaktioner och sedan, när alla beredskapskontroller har slutförts, tilldela en ny livscykelstat som tillåter nödvändiga transaktioner.
 
 ## <a name="types-of-readiness-checks"></a>Typer av beredskapskontroller
 
