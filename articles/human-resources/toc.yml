@@ -5,7 +5,9 @@
       items:
         - name: Nyheter och ändringar i Human Resources
           href: hr-admin-whats-new.md
-        - name: 06 september 2021
+        - name: 20 september 2021
+          href: hr-whats-new-2021-09-20.md
+        - name: 6 september 2021
           href: hr-whats-new-2021-09-06.md
         - name: 23 augusti 2021
           href: hr-whats-new-2021-08-23.md
@@ -289,8 +291,10 @@
               href: hr-admin-troubleshooting-batch-jobs.md
             - name: Optimera prestanda med automatiska rensningsuppgifter
               href: hr-admin-troubleshooting-batch-history.md
-            - name: Återställ batchjobb som fastnat
+            - name: Återställa batchjobb som fastnat
               href: hr-admin-troubleshooting-batch-execution.md
+            - name: Återställa Dataverse-synkronisering
+              href: hr-admin-troubleshooting-dataverse-sync.md
             - name: Analysrapporter uppdateras inte
               href: hr-admin-troubleshooting-analytic-reports.md
             - name: Det går inte att skapa en miljö i administrationscentret för Power Apps
@@ -481,10 +485,16 @@
                   href: hr-admin-integration-payroll-api-leave-type.md
                 - name: Begäran om tjänstledighet
                   href: hr-admin-integration-payroll-api-leave-request.md
-            - name: Förmånsrelaterade entiteter
+            - name: Förmånsrelaterade enheter
               items:
                 - name: Förmånsplan för lönearbetare
                   href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
+            - name: Andra enheter
+              items:
+                - name: Personens namnhistorik
+                  href: hr-admin-integration-payroll-api-person-name-history.md
+                - name: Konverteringsgrad
+                  href: hr-admin-integration-payroll-api-compensation-pay-frequency.md
             - name: Alternativuppsättningar
               items:
                 - name: Kön
@@ -543,6 +553,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurera den globala adressboken
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                - name: Adressinställning
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/human-resources/toc.json
                 - name: Vanliga frågor och svar om adressböcker
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurera adressböcker
@@ -781,6 +793,8 @@
                       href: hr-benefits-process-rate-changes.md
                 - name: ACA-rapportering
                   href: hr-benefits-management-aca-reports.md
+                - name: Förmånsutdrag
+                  href: hr-benefits-statement.md
             - name: Definiera och hantera ett förmånsprogram
               href: hr-benefits-manage-program.md
             - name: Policyer för förmånsberättigande

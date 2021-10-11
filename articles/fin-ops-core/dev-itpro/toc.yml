@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-21.md
                 - name: Platform updates för version 10.0.20 (augusti 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
-                - name: Platform updates för 10.0.19 (juni 2021)
-                  href: get-started/whats-new-platform-updates-10-0-19.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -1080,6 +1078,8 @@
                   items:
                     - name: Anpassa enhets- och fältmappningar
                       href: data-entities/dual-write/customizing-mappings.md
+                    - name: Anpassningsriktlinjer för dubbelriktad skrivning
+                      href: data-entities/dual-write/custom-best-practices.md
                     - name: Hantera flera enhetsmappningar
                       href: data-entities/dual-write/multiple-entity-maps.md
                     - name: Redigera en juridisk person efter konfiguration med dubbelriktad skrivning

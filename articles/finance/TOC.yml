@@ -284,6 +284,8 @@
               href: accounts-payable/broker-contract.md
             - name: Hantering av royaltykontrakt
               href: accounts-payable/royalty-contract.md
+            - name: Referens till ursprungliga fakturor i kreditfakturor (leverantörsfakturor)
+              href: accounts-payable/gbl-original-invoice-numbers-credit-notes-ap.md
             - name: Betalningar och kvittningar
               items:
                 - name: Centraliserade leverantörsreskontrabetalningar
@@ -1266,12 +1268,14 @@
                   href: finance-insights/cash-flow-forecast-intro.md
                 - name: Använd externa data i kassaflödesprognoser
                   href: finance-insights/external-data-in-cash-flow.md
-                - name: Förutsägelser för kundbetalning
+                - name: Kundbetalningsförutsägelser
                   href: finance-insights/payment-insights-overview.md
                 - name: Använda förutsägelser för kundbetalning
                   href: finance-insights/use-customer-payment-predictions.md
                 - name: Översikt över ögonblicksbilder
                   href: finance-insights/payment-snapshots.md
+            - name: Vanliga frågor och svar om felsökning av Finance Insights
+              href: finance-insights/finance-insights-troubleshooting-faq.md
         - name: Projekthantering och redovisning
           items:
             - name: Arbetsflöden för projekthantering och redovisning – översikt
@@ -1574,11 +1578,15 @@
                           href: localizations/emea-multiple-vat-registration-numbers.md
                         - name: Rapportering av flera momsregistreringar
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Rapportering för Österrike
+                          items:
+                            - name: Momsdeklaration
+                              href: localizations/emea-aut-vat-declaration-austria.md
                         - name: Rapportering för Frankrike
                           items:
                             - name: Momsdeklaration
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
-                        - name: Rapportering i Nederländerna
+                        - name: Rapportering för Nederländerna
                           items:
                             - name: Momsdeklaration
                               href: localizations/emea-nl-vat-declaration-netherlands.md
@@ -1636,10 +1644,12 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Rapport för gränsöverskridande tjänster
                   href: localizations/emea-aut-vat-statement-details.md
-                - name: Intrastats-rapport
+                - name: Österrikisk Intrastat
                   href: localizations/emea-aut-intrastat.md
                 - name: Inköpsavgifter
                   href: localizations/emea-aut-purchase-duties.md
+                - name: Momsdeklaration
+                  href: localizations/emea-aut-vat-declaration-austria.md
             - name: Bahrain
               items:
                 - name: Bahrain – översikt
@@ -2676,8 +2686,6 @@
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Kommunikationsrapport över kvartalsmoms
                   href: localizations/emea-ita-quarterly-vat-communication.md
-                - name: Rapport med svarta listan
-                  href: localizations/emea-ita-black-list-report.md
                 - name: Bokföringsdatum och skattejournal
                   href: localizations/emea-ita-competence-date.md
                 - name: Avskrivning av anläggningstillgångar
@@ -3801,6 +3809,8 @@
           items:
             - name: Översikt över elektronisk rapportering
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Komponenter för elektronisk rapportering
+              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/finance/toc.json
             - name: Konfigurationer
               items:
                 - name: Skapa konfigurationer
@@ -4509,6 +4519,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurera den globala adressboken
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/finance/toc.json
+                - name: Adressinställning
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/finance/toc.json
                 - name: Vanliga frågor och svar om adressböcker
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurera adressböcker

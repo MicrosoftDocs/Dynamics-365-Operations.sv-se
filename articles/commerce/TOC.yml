@@ -746,7 +746,7 @@
                       href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
                     - name: Produktinleverans mot inköpsorder
                       href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
-                    - name: Godkänn och bekräfta inköpsorder
+                    - name: Godkänna och bekräfta inköpsorder
                       href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/commerce/toc.json
                     - name: Mobil arbetsyta för inköpsordergodkännande
                       href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
@@ -1398,17 +1398,21 @@
               items:
                 - name: Commerce-lokalisering för Ryssland
                   href: localizations/rus-commerce-localization.md
-                - name: Förenklat kundadressformat i Commerce kassa för Ryssland
-                  href: localizations/rus-simplified-address.md
                 - name: Konfigurera Commerce-lokalisering för Ryssland
                   href: localizations/rus-commerce-setup.md
                 - name: Förskottsbetalningar i Commerce för Ryssland
                   href: localizations/rus-commerce-prepayments.md
+                - name: Förenklat kundadressformat i Commerce-kassa för Ryssland
+                  href: localizations/rus-simplified-address.md
+                - name: Exempel på integrering av kvittoskrivare för Ryssland
+                  href: localizations/rus-fpi-sample.md
+                - name: Hantering av kundinformation för Ryssland
+                  href: localizations/rus-customer-information.md
             - name: Sverige
               items:
                 - name: Funktioner för kassaapparat
                   href: localizations/emea-swe-cash-registers.md
-                - name: Exempel på integration av kontrollenhet för Sverige
+                - name: Exempel på integration av styrenhet för Sverige
                   href: localizations/emea-swe-fi-sample.md
                 - name: Exempel för Retail POS-integration med styrenheter (äldre)
                   href: localizations/retail-sdk-control-unit-sample.md
@@ -2220,6 +2224,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurera den globala adressboken
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/commerce/toc.json
+                - name: Adressinställning
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/commerce/toc.json
                 - name: Vanliga frågor och svar om adressböcker
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurera adressböcker
@@ -2329,7 +2335,11 @@
         - name: Utbyggbarhet
           items:
             - name: Utveckling och utbyggbarhet för Commerce
-              href: dev-itpro/dev-retail-home-page.md
+              items:
+                - name: Commerce för IT-personal och utvecklare
+                  href: dev-itpro/dev-retail-home-page.md
+                - name: Konfigurera en lokal utvecklingsmiljö
+                  href: dev-itpro/setup-local-dev-env.md
             - name: Utbyggbarhet för onlinekanal
               items:
                 - name: Utbyggbarhet för onlinekanal – översikt

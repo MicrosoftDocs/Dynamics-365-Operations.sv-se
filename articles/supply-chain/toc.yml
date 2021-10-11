@@ -1651,6 +1651,8 @@
                   href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: Parametrar som inte används i Planeringsoptimering
                   href: master-planning/planning-optimization/not-used-parameters.md
+                - name: Leveranstidsplan
+                  href: master-planning/supply-schedule.md
                 - name: Använda filter på en plan
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Huvudplanering med efterfrågeprognos
@@ -1759,8 +1761,6 @@
                   href: master-planning/tasks/create-intercompany-plan.md
                 - name: Visa utgående planerad koncernintern efterfrågan
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: Samarbeta med interna kunder i leveranskedjan
-                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
                 - name: Nettobehov och pegging-information med inbyggd masterplanering
                   href: master-planning/net-requirements-built-in-master-planning.md
             - name: Prognostisering
@@ -2033,13 +2033,17 @@
               items:
                 - name: Översikt av inköpsorder
                   href: procurement/purchase-order-overview.md
-                - name: Godkänn och bekräfta inköpsorder
+                - name: Godkänna och bekräfta inköpsorder
                   href: procurement/purchase-order-approval-confirmation.md
                 - name: Mobil arbetsyta för inköpsordergodkännande
                   href: procurement/purchase-order-mobile-workspace.md
+                - name: Skapa och fakturera en koncernintern inköpsorder för internt bruk
+                  href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                - name: Kontrollera avvikelser mellan koncerninterna orderpriser
+                  href: sales-marketing/intercompany-check-price-discrepancies.md
                 - name: Registrera inleverans av varor på en inköpsorder
-                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
-            - name: Skapande av inköpsorder
+                  href: procurement/tasks/record-receipt-goods-purchase-order.md
+            - name: Skapa inköpsorder
               items:
                 - name: Skapa inköpsorder manuellt
                   href: procurement/purchase-order-creation.md
@@ -2729,6 +2733,62 @@
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Skapa och redigera försäljningsofferter
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
+            - name: Koncernintern handel
+              items:
+                - name: Ställa in koncernintern handel
+                  items:
+                    - name: Ställa in koncernintern handel
+                      href: sales-marketing/intercompany-trade-set-up.md
+                    - name: Koncerninterna parametrar
+                      href: sales-marketing/intercompany-parameters.md
+                    - name: 'Ställa in leverantörer, kunder och artiklar för koncernintern handel'
+                      href: sales-marketing/intercompany-set-up-vendors-customers-items.md
+                    - name: Ställa in avgifter på koncerninterna order
+                      href: sales-marketing/intercompany-set-up-charges.md
+                    - name: Ställa in parametrar för bokföring av en koncernintern order
+                      href: sales-marketing/intercompany-set-up-parameters-to-post-order.md
+                - name: Synkronisera koncernintern information
+                  items:
+                    - name: Synkronisera koncerninterna priser och rabatter
+                      href: sales-marketing/intercompany-sync-prices-discounts.md
+                    - name: Synkronisera koncerninterna avgifter
+                      href: sales-marketing/intercompany-sync-charges.md
+                    - name: Synkronisera koncernintern kundinformation
+                      href: sales-marketing/intercompany-synch-customer-information.md
+                    - name: Synkronisera koncerninterna dispositionskoder
+                      href: sales-marketing/intercompany-synchronize-disposition-codes.md
+                - name: Koncerninterna försäljningsorder och fakturor
+                  items:
+                    - name: Skapa koncerninterna inköps- och försäljningsorder i flera företag
+                      href: sales-marketing/intercompany-orders-in-several-companies.md
+                    - name: Koncerninterna order och returorder
+                      href: sales-marketing/intercompany-orders-and-return-orders.md
+                    - name: Skapa en koncernintern försäljningsorder för internt bruk
+                      href: sales-marketing/intercompany-sales-order-for-internal-use.md
+                    - name: Skapa och fakturera en koncernintern försäljningsorder för en extern kund
+                      href: sales-marketing/intercompany-sales-order-for-external-customer.md
+                    - name: Koncerninterna reservationer
+                      href: sales-marketing/intercompany-reservations.md
+                    - name: Ändra eller ta bort en ursprunglig koncernintern försäljningsorder
+                      href: sales-marketing/intercompany-change-delete-original-sales-order.md
+                    - name: Ändra koncerninterna order
+                      href: sales-marketing/intercompany-change-orders.md
+                    - name: Koncerninterna batch- och serienummer
+                      href: sales-marketing/intercompany-batch-serial-numbers.md
+                    - name: Koncerninterna följesedlar
+                      href: sales-marketing/intercompany-packing-slips.md
+                    - name: Registrera betalningar automatiskt för koncerninterna kundfakturor
+                      href: sales-marketing/intercompany-register-customer-payments-automatically.md
+                - name: Koncerninterna inköpsorder
+                  items:
+                    - name: Skapa och fakturera en koncernintern inköpsorder för internt bruk
+                      href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                    - name: Kontrollera avvikelser mellan koncerninterna orderpriser
+                      href: sales-marketing/intercompany-check-price-discrepancies.md
+                - name: Konverteringar av koncernintern valuta
+                  href: sales-marketing/intercompany-currency-conversions.md
+                - name: Koncernintern huvudplanering
+                  href: sales-marketing/intercompany-master-scheduling.md
             - name: Returer
               items:
                 - name: Försäljningsreturer
@@ -3067,6 +3127,8 @@
               href: landed-cost/landed-cost-vs-tms.md
             - name: Ställa in och konfigurera modulen Hemtagningskostnad
               items:
+                - name: Aktivera modulen Hemtagningskostnad för ditt system
+                  href: landed-cost/landed-cost-enable.md
                 - name: Parametrar för hemtagningskostnad
                   href: landed-cost/landed-cost-parameters.md
                 - name: Anskaffnings- och inköpsparametrar för hemtagningskostnad
@@ -3181,10 +3243,12 @@
                       href: warehousing/system-directed-work-sequencing.md
                     - name: Plockradsgruppering
                       href: warehousing/pick-line-grouping.md
-                    - name: Artikelplacering för distributionslager
+                    - name: Artikelplacering för lagerställe
                       href: warehousing/warehouse-slotting.md
                     - name: Platsdirektiv för plockning i åldersfördelat lager
                       href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: Förankring
+                      href: warehousing/anchoring.md
                     - name: Utgående sortering
                       href: warehousing/outbound-sorting.md
                     - name: Placera på vägg – placera i butik
@@ -3341,6 +3405,8 @@
                       href: warehousing/display-older-batches-within-warehouses.md
                     - name: Plocka den äldsta batchen på en mobil enhet
                       href: warehousing/pick-oldest-batch.md
+                - name: Globala parametrar för mobilenheter
+                  href: warehousing/mobile-device-parameters.md
                 - name: Användarinställningar för mobil enhet
                   href: warehousing/mobile-device-user-settings.md
                 - name: Händelsebearbetning i distributionslagerappen
