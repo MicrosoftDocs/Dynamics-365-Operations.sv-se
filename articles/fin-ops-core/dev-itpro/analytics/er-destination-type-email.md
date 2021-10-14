@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: dc89e7ff43e5df358f6d41bd295e981c883085bc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343870"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595213"
 ---
 # <a name="email-er-destination-type"></a>ER-målstyp för e-post
 
@@ -75,7 +75,7 @@ Du kan ange avsändare och mottagare för e-post. Som standard skickas e-postmed
 >
 > När en e -postdestination erbjuds för ändring [körtid](electronic-reporting-destinations.md#security-considerations), visas endast fältet **Från** för användare som har `ERFormatDestinationSenderEmailMaintain` säkerhetsbehörighet, **Behåll avsändarens e -postadress för ER -formatmålet**.
 >
-> När fältet **Från** är konfigurerat för att använda en annan e-postadress än den nuvarande användarens, antingen behörigheten **Skicka som** eller **Skicka på uppdrag för** måste vara korrekt [ange](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) i förväg. Annars kastas följande undantag vid körning: "Det går inte att skicka e -post som \<from email account\> från \<current user account\> kontot, kontrollera "Skicka som"-behörigheten på \<from email account\>."
+> När fältet **Från** är konfigurerat för att använda en annan e-postadress än den nuvarande användarens, antingen behörigheten **Skicka som** eller **Skicka på uppdrag för** måste vara korrekt [ange](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group) i förväg. Annars kastas följande undantag vid körning: "Det går inte att skicka e -post som \<from email account\> från \<current user account\> kontot, kontrollera "Skicka som"-behörigheten på \<from email account\>."
 
 Du kan konfigurera fältet **Från** för att returnera mer än en e -postadress. I det här fallet används den första adressen i listan som avsändaradress i e-post.
 

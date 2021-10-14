@@ -1,7 +1,7 @@
 ---
-title: Installationsguide för huvudplanering
-description: Det här ämnet beskriver olika viktiga strategier och parametrar som används för att ställa in huvudplaneringen.
-author: t-benebo
+title: Inställningsguide för huvudplanering
+description: I det här avsnittet beskrivs hur du kör guiden Inställningar för huvudplanering för att ställa in huvudplaneringen.
+author: ChristianRytt
 ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
@@ -16,14 +16,14 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 26dea90a208eddc39b9a92d534fbc3a5242da29f4839a7f0e427b0efb03701b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b825858653599e8474a6fbd54b682c4fa0118053
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767470"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577514"
 ---
-# <a name="master-planning-setup-wizard"></a>Installationsguide för huvudplanering
+# <a name="master-planning-setup-wizard"></a>Inställningsguide för huvudplanering
 
 [!include [banner](../includes/banner.md)]
 
@@ -125,9 +125,9 @@ Slutligen, när du väljer **Slutför**, tillämpas den nya konfigurationen. Om 
 
 I det här avsnittet beskrivs hur du ställer in två fiktiva företag för att visa hur installationen kan ändras efter varje företags behov.
 
-### <a name="example-1-contoso-manufacturer"></a>Exempel 1: Contoso-tillverkare
+### <a name="example-1-contoso-manufacturer"></a>Exempel 1: Contoso tillverkare
 
-Contoso Manufacturing är ett tillverkningsföretag som tillverkar högtalare. Det köper de olika råmaterial och komponenter som används för slutliga högtalare från olika leverantörer. Här är några av de egenskaper som det är leverans och tillverkning:
+Contoso tillverkare är ett tillverkande företag som producerar högtalare. Det köper de olika råmaterial och komponenter som används för slutliga högtalare från olika leverantörer. Här är några av de egenskaper som det är leverans och tillverkning:
 
 - De slutgiltiga artiklar som företaget tillverkar har en strukturlistestruktur.
 - Alla slutgiltiga artiklar och komponenter planeras av huvudplaneringen. Manuell planering är inte klar.
@@ -135,14 +135,14 @@ Contoso Manufacturing är ett tillverkningsföretag som tillverkar högtalare. D
 - Tillverkningsanläggningen producerar slutgiltiga produkter. Den har ett definierat antal fräs- och borrmaskiner som används för att bearbeta komponenterna. De olika komponenterna måste bearbetas av dessa maskiner.
 - Det finns många leverantörer. Genomsnittlig ledtid för artiklar är en vecka. En grupp av artiklar från samma leverantör kommer att ha en ledtid på sju veckor.
 
-I guiden anges följande värden för Contoso Manufacturing:
+I guiden anges följande värden för Contoso tillverkare:
 
 - **Disponering:**
 
     - **Fråga:** "vill du ange antalet dagar i planeringshorisonten?"
     - **Svar:** "Ja, enligt definitionen i disponeringsgrupperna."
 
-    Eftersom ledtiden för artiklar är mycket olika behöver Contoso inte planera alla artiklar för samma period i framtiden. Disponeringsgrupper för artiklarna skapas. Artiklar som har en liknande ledtid tilldelas samma disponeringsgrupp. Planeringshorisonten för varje disponeringsgrupp (som är tidsgränsen för disponering) är ungefär ledtiden plus en marginal på en vecka. Huvudplaneringen ser sedan till att artiklarna planeras i förväg, baserat på deras produktionstid.
+    Eftersom ledtiden för artiklar är mycket olika, behöver Contoso inte planera alla artiklar för samma period i framtiden. Disponeringsgrupper för artiklarna skapas. Artiklar som har en liknande ledtid tilldelas samma disponeringsgrupp. Planeringshorisonten för varje disponeringsgrupp (som är tidsgränsen för disponering) är ungefär ledtiden plus en marginal på en vecka. Huvudplaneringen ser sedan till att artiklarna planeras i förväg, baserat på deras produktionstid.
 
     Därför kommer två disponeringsgrupper att skapas för det här exemplet. En disponeringsgrupp kommer att ha en disponeringstidsgräns på två veckor och den andra kommer att ha en disponeringstidsgräns på åtta veckor.
 
@@ -153,7 +153,7 @@ I guiden anges följande värden för Contoso Manufacturing:
     - **Fråga:** "behöver du schemalägga operationer uppdelade i enskilda jobb?"
     - **Svar:** "Ja".
 
-    Contoso Manufacturing måste planera och schemalägga de enskilda jobb som ska utföras på verkstadsgolvet. Därför kommer det att använda finplanering.
+    Contoso tillverkning måste planera och schemalägga enskilda jobb som ska utföras på verkstadsgolvet. Därför kommer det att använda finplanering.
 
 - **Kapacitet:**
 
@@ -176,36 +176,36 @@ I guiden anges följande värden för Contoso Manufacturing:
 
     Alla artiklar som används för produktionen måste planeras. Eftersom artiklarna har mycket olika ledtider, kommer huvudplaneringen att ha bättre prestanda när disponeringsgrupperna används. Återigen kan en marginal på en vecka anges, och explosion kan göras för samma tid som disponeringen.
 
-### <a name="example-2-contoso-retailer"></a>Exempel 2: Contoso Retailer
+### <a name="example-2-contoso-retailer"></a>Exempel 2: Contoso återförsäljare
 
-Contoso Retailer är ett distributionsföretag inom modebranschen. Den använder huvudplanering för att beräkna när inköpsorder ska placeras, baserat på den prognostiserade försäljningen. Här är några av dess egenskaper:
+Contoso återförsäljare är ett distributionsföretag inom modebranschen. Den använder huvudplanering för att beräkna när inköpsorder ska placeras, baserat på den prognostiserade försäljningen. Här är några av dess egenskaper:
 
-- Contoso Retailer använder en efterfrågeprognos för att förutsäga sin försäljning. Inköpsorder kommer att planeras enligt prognosen.
+- Contoso återförsäljare använder en efterfrågeprognos för att förutsäga försäljning. Inköpsorder kommer att planeras enligt prognosen.
 - Butiker används rekvisitioner för påfyllnad.
 - Produktionstiden från huvudlagerställe till varje butik är ungefär två veckor för alla artiklar.
 
-I guiden anges följande värden för Contoso Retailer:
+I guiden anges följande värden för Contoso återförsäljare:
 
 - **Efterfrågeprognos:**
 
     - **Fråga:** "vill du använda en prognosplan i huvudplaneringen så att planerade order kommer att föreslås för att uppfylla prognostiserade efterfrågan?"
     - **Svar:** "Ja, enligt definitionen i den här huvudplanen."
 
-    Contoso har inkluderat en efterfrågeprognos för att förutsäga sin försäljning. Därför måste huvudplaneringen rekommendera planerade order för att uppfylla prognosen.
+    Contoso har inkluderat en efterfrågeprognos för att förutsäga dess försäljning. Därför måste huvudplaneringen rekommendera planerade order för att uppfylla prognosen.
 
 - **Bekräftelse:**
 
     - **Fråga:** "vill du att huvudplaneringen automatiskt ska bekräfta planerade order i orderdokument, till exempel produktions- eller inköpsorder?"
     - **Svar:** "Ja, enligt definitionen i den här huvudplanen." **1 dag** anges.
 
-    Eftersom Contoso Retailer skapar inköpsorder direkt från planerade inköpsorder är det praktiskt om planerade inköpsorder bekräftas automatiskt. Eftersom företaget kör huvudplanering varje dag kommer en bekräftelsetidsgräns på en dag automatiskt bekräfta alla beställningar som krävs för nästa dag.
+    Eftersom Contoso återförsäljare skapar inköpsorder direkt från de planerade inköpsorder, är det användbart om de planerade inköpsorder bekräftas automatiskt. Eftersom företaget kör huvudplanering varje dag kommer en bekräftelsetidsgräns på en dag automatiskt bekräfta alla beställningar som krävs för nästa dag.
 
 - **Godkända rekvisitioner:**
 
     - **Fråga:** "vill du inkludera efterfrågan från godkända rekvisitioner för att fylla på butiker?"
     - **Svar:** "Ja, enligt definitionen i den här huvudplanen." **1 dag** anges.
 
-    Contoso använder godkända rekvisitioner från sina butiker för att skapa planerade inköpsorder i syfte att fylla på lagren i dessa butiker. Eftersom huvudplaneringen körs varje dag inkluderas rekvisitionerna från den sista dagen i planeringen.
+    Contoso använder godkända rekvisitioner från sina butiker för att skapa planerade inköpsorder för att fylla på dessa butiker. Eftersom huvudplaneringen körs varje dag inkluderas rekvisitionerna från den sista dagen i planeringen.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Varor med dubbla användningsområden
 description: I det här avsnittet beskrivs hur du håller reda på produkter som identifieras som produkter med dubbla användningsområden, lagrar certifikatnummer för varje relevant produkt och målland och skriver ut giltiga certifikatnummer på relevanta fakturor, följe sedlar och/eller försäljningsorder.
-author: dasani-madipalli
+author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: COODualUseCerts, COORules, COODualUseCountries
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: a5e7386c900ff8879cc90e311dfc098a47e10acc414d9a1c5f39ada381850167
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.9
+ms.openlocfilehash: 21910c61cc330e0c9292990b7b1914f56bac844c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767446"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570763"
 ---
 # <a name="dual-use-goods"></a>Varor med dubbla användningsområden
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 7040a74fbb08bed0b0c2808784d9c0b70f2adf96bef28783102c7eb117eeb851
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a351567e0ed61fac040a6209a221833ab73a242a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718367"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595272"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Utforma en ny ER-konfiguration för att generera rapporter i Word-format
 
@@ -46,7 +46,7 @@ Du kan lägga till **Excel\\Intervall** och **Excel\\Cell** kapslade element fö
 
 ![Lägga till kapslade element på sidan Formatdesigner.](./media/er-design-configuration-word-image4.gif)
 
-När du sparar ändringarna i ER-formatet vid tid för designen, lagras den hierarkiska formatstrukturen i den kopplade Word-mallen som en [anpassad XML-del](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) med namnet **Rapport**. Du måste komma åt den ändrade mallen, hämta den från Finance, lagra den lokalt och öppna den i Word-skrivbordsprogrammet. I följande bild visas den lokalt lagrade exempelmallen för kontrollrapporten som innehåller den **rapport** anpassade XML-delen.
+När du sparar ändringarna i ER-formatet vid tid för designen, lagras den hierarkiska formatstrukturen i den kopplade Word-mallen som en [anpassad XML-del](/visualstudio/vsto/custom-xml-parts-overview) med namnet **Rapport**. Du måste komma åt den ändrade mallen, hämta den från Finance, lagra den lokalt och öppna den i Word-skrivbordsprogrammet. I följande bild visas den lokalt lagrade exempelmallen för kontrollrapporten som innehåller den **rapport** anpassade XML-delen.
 
 ![Granska exempelrapportmallen i Word-skrivbordsprogrammet.](./media/er-design-configuration-word-image5.gif)
 

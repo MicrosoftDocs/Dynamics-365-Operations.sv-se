@@ -2,7 +2,7 @@
 title: Borttagna och utfasade funktioner i Dynamics 365 Commerce
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 Commerce.
 author: josaw
-ms.date: 08/16/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3ac08a409284681ba9bcc4825b936c0330d14e04
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386751"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559569"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Borttagna och utfasade funktioner i Dynamics 365 Commerce
 
@@ -36,6 +36,18 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Borttagna eller föråldrade funktioner i Commerce version 10.0.21
 
 [!include [banner](../includes/preview-banner.md)]
+
+### <a name="overlapping-discounts-handling-setting-in-commerce-parameters"></a>Inställning för överlappande rabatthantering i Commerce-parametrar
+
+Inställningen **överlappande rabatthantering** på sidan **Commerce-parametrar** är inaktuell i Commerce version 10.0.21. Framöver kommer Commerce-prissättningsmotorn att använda en enda algoritm för att bestämma den optimala kombinationen av överlappande rabatter.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | <p>Inställningen **Hantering av överlappande rabatter** i Commerce-parametrar styr hur Commerce-prissättningsmotorn söker och bestämmer den optimala kombinationen av rabatter. Det har för närvarande tre alternativ:<p><ul><li> **Bäst prestanda** – Det här alternativet använder en avancerad heuristics-algoritm och en metod för [marginalvärderankning](../optimal-combination-overlapping-discounts.md) för att prioritera, utvärdera och bestämma den bästa rabattkombinationen i tid.</li><li>**Balanserad beräkning** – I den aktuella kodbasen fungerar det här alternativet på samma sätt som alternativet **Bästa prestanda**. Därför är det i grund och botten ett duplicerat alternativ.</li><li>**Fullständig beräkning** – I det här alternativet används en gammal algoritm som går igenom alla möjliga rabattkombinationer under prisberäkningen. För order som har stora rader och kvantiteter kan det här alternativet orsaka prestandaproblem.</li></ul><p>För att förenkla konfigurationen, förbättra prestanda och minska incidenter som orsakas av den gamla algoritmen kommer vi att ta bort inställningen **överlappande rabatthantering** helt och uppdatera den interna logiken för Commerce-prissättningsmotorn så att den nu bara använder den avancerade algoritmen (det vill säga algoritmen bakom alternativet **Bästa prestanda**).</p> |
+| **Ersatt av en annan funktion?**   | Nej. Vi rekommenderar att organisationer som använder alternativet **Balanserad beräkning** eller **Fullständig beräkning** för att växla till alternativet **Bästa prestanda** innan den här funktionen tas bort. |
+| **Produktområden som påverkas**         | Prissättning och rabatter |
+| **Distribueringsalternativ**              | Alla |
+| **Status**                         | Vid version 10.0.21 kommer inställningen **överlappande rabatthantering** att tas bort från Commerce-parametrar i oktober 2022. |
 
 ### <a name="retail-sdk-distributed-by-using-lifecycle-services"></a>Retail SDK som distribueras med hjälp av Lifecycle Services
 
@@ -103,7 +115,7 @@ Kassatilläggsutveckling med hjälp av ModernPos.sln, CloudPOs.sln, POS. Extensi
 | **Orsak till inaktuell/borttagning** | Från och med december 2020 kommer Microsoft Internet Explorer 11-stöd för samtliga Dynamics 365-produkter att betraktas som inaktuellt, och Internet Explorer 11 kommer inte att stödjas efter augusti 2021.<br><br>Detta påverkar kunder som använder Dynamics 365-produkter som har utformats för användning med ett Internet Explorer 11-gränssnitt. Efter augusti 2021 stöds inte Internet Explorer 11 för sådana Dynamics 365-produkter. |
 | **Ersatt av en annan funktion?**   | Vi rekommenderar våra kunder att övergå till Microsoft Edge.|
 | **Produktområden som påverkas**         | Alla Dynamics 365-produkter |
-| **Distribueringsalternativ**              | Allt|
+| **Distribueringsalternativ**              | Alla|
 | **Status**                         | Inaktuell. Internet Explorer 11 kommer inte att stödjas efter augusti 2021.|
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Borttagna eller föråldrade funktioner i Commerce version 10.0.11

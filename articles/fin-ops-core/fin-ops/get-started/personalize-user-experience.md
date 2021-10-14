@@ -2,7 +2,7 @@
 title: Anpassa användarupplevelsen
 description: Det här avsnittet beskriver hur du kan anpassa appen.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d126bf9ec5687d97dacc8763a221da656fdef1
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: a1f24ff1a0730f13af6231510c8e6b3cb46fde48
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344384"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581075"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
@@ -119,7 +119,8 @@ Följande verktyg är tillgängliga i fältet verktygsfältet **anpassning**:
 
 - Använd verktyget **Välj** för att välja och öppna ett elements egenskaper. Om du vill använda det här verktyget väljer du knappen **Välj** i verktygsfältet och väljer sedan det önskade elementet. Elementets egenskapsfönster visas och du kan ändra egenskaperna för det elementet. Du kan upprepa processen för andra element som kan anpassas på den sidan. Observera att vissa anpassningsegenskaper kanske inte är tillgängliga i vissa fall. Exempelvis kan du inte låsa ett fält som krävs.
 - Använd verktyget **Dölj** verktyg för att dölja ett element på sidan. Om du vill använda det här verktyget väljer du knappen **Dölj** i verktygsfältet och väljer sedan det element som ska döljas. När du väljer verktyget **Dölj** kommer alla element som döljs för närvarande vara synliga och visas i en skuggad behållare. Du kan sedan göra ett element synligt genom att markera det. Om du vill se hur sidan ser ut när elementen är dolda, växlar du till ett annat anpassningsverktyg eller stäng verktygsfältet för anpassning.
-- Använd verktyget **Lägg till fält** för att lägga till ett fält till din sida. När du använder det här verktyget kan du bara lägga till fält som är en del av siddefinitionen. Information om hur du skapar nya fält som inte ingår i definitionen av sidan finns i [Skapa och arbeta med anpassade fält](user-defined-fields.md). När du har valt knappen **Lägg till fält** på verktygsfältet måste du först välja det rutnät eller avsnitt där du vill lägga till ett fält. En dialogruta visar en lista med fält som är relaterade till det valda rutnätet eller avsnittet. Välj ett eller flera fält i dialogrutan och välj sedan **Uppdatera**. Om du vill ta bort ett fält som du tidigare lade du upprepar hela processen och ta bort markeringen i fältet i dialogrutan.
+- Använd verktyget **Lägg till fält** för att lägga till ett fält till din sida. När du använder det här verktyget kan du bara lägga till fält som är en del av siddefinitionen. Information om hur du skapar nya fält som inte ingår i definitionen av sidan finns i [Skapa och arbeta med anpassade fält](user-defined-fields.md). När du har valt knappen **Lägg till fält** på verktygsfältet måste du först välja det rutnät eller avsnitt där du vill lägga till ett fält. En dialogruta visar en lista med fält som är relaterade till det valda rutnätet eller avsnittet. Välj ett eller flera fält som ska läggas till i listan **Rekommenderade fält** eller **Alla fält** i dialogrutan. När du har valt önskade fält väljer du **Uppdatera**. Om du vill ta bort ett fält som du tidigare lade du upprepar hela processen och ta bort markeringen i fältet i dialogrutan.
+    - Listan **Rekommenderade fält** visar fält som tidigare har lagts till av andra användare i organisationen. Den här listan med fält uppdateras baserat på upprepningsfrekvensen för **rekommendationsbatchjobbet**. Det finns en liknande erfarenhet när du lägger till nya filterfält med hjälp av fönstret Filter på en sida.
 - Använd verktyget **Flytta** för att flytta ett element till en annan plats inom aktuell grupp av element. Observera att du inte kan flytta ett element utanför dess överordnade grupp. Om du vill använda det här verktyget väljer du knappen **Flytta** i verktygsfältet och väljer sedan det element som ska flyttas. När du markerar ett element kommer appen att bestämma platser som elementet kan flyttas till. Dessa platser kallas *släppzoner*. När du drar runt elementet inom den aktuella gruppen visas varje ”släppzon” med färgade rader i fetstil bredvid området där elementet kan släppas.
 - Använd **Hoppa över** för att ta bort ett element från sidan tangentbordstabbsekvens. När du väljer knappen **Hoppa över** på verktygsfältet kommer alla element som för närvarande hoppas över att visas i en skuggad behållare. Du kan ta bort eller lägga till fält interaktivt i tabbsekvensen.
 - Använd verktyget **Visa i rubrik** när du vill att ett fält ska visas i sammanfattningen på snabbfliken. När du väljer knappen **Visa i rubrik** i verktygsfältet har alla fält som har valts som sammanfattningsfält visas i en skuggad behållare. Du kan interaktivt lägga till fält på snabbfliken sammanfattning och ta bort fält från sammanfattning genom att markera fälten.

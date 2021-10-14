@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: b9536a6e12b4037458910b7a2d27450ac175fd9d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483792"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559617"
 ---
 # <a name="ready-to-pay"></a>Klar att betalas
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-[!include [preview feature](./includes/preview-feature.md)]
 
 > [!NOTE]
 > Om du vill markera en medarbetare som redo att betala måste du först aktivera funktionen för **(Förhandsgranska) löneintegrering** i funktionshanteringen. Mer information om hur du aktiverar förhandsfunktioner finns i [Hantera funktioner](hr-admin-manage-features.md).
@@ -72,10 +70,9 @@ Om en av dessa valideringar misslyckas kan du inte markera medarbetaren som redo
 
 Om fältet **Klar att betala** är **Nej**, är detta är en indikation på att du måste utföra en åtgärd för att säkerställa att arbetarprofilen är fullständig. Detta stoppar inte de data som visas i någon dataenhet. 
 
-## <a name="known-issues"></a>Kända problem
+## <a name="process-automation"></a>Processautomatisering
 
-- Du måste inaktivera funktionen **Strömlinjeformad medarbetarpost** i funktionshanteringen. Det som gör att arbetsytan för kompensationshantering inte fungerar som den ska om du använder den här funktionen.
-- På sidan **Arbetare** är gruppen **fliken Lön**, **Klar att betala** tillgänglig för alla användarroller. 
+Du kan automatisera valideringen av alla medarbetare genom att använda [Processautomatisering](/dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation). I arbetsytan **Kompensationshantering**, gå till **Länkar** \> **Parametrar** \> **Processautomatisering**.
 
 ## <a name="see-also"></a>Se även
 

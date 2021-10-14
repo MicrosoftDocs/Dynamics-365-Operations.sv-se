@@ -1,7 +1,7 @@
 ---
 title: Skapa ett kreditlimitavtal för en remburs
-description: Denna uppgift är en genomgång av hur du skapar ett bankkreditlimitavtal om du vill bearbeta en remburs.
-author: ShylaThompson
+description: Denna uppgift är en genomgång av stegen för att skapa ett bankkreditlimitavtal om du vill bearbeta en remburs.
+author: panolte
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f978c02e269ca67f50af1d1588d765a9a986f66d7d76164d36f6aaece0e4b018
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 607d9688aebb6288735cc04f6b4d8e7b8f7362b9
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754915"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595023"
 ---
 # <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>Skapa ett kreditlimitavtal för en remburs
 
 [!include [banner](../../includes/banner.md)]
 
-Denna uppgift är en genomgång av hur du skapar ett bankkreditlimitavtal om du vill bearbeta en remburs. Du kanske vill ställa in bankkreditlimiter och bokföringsprofiler före detta.  I den här uppgiften används demonstrationsföretaget "USMF".  
+Denna uppgift är en genomgång av stegen för att skapa ett bankkreditlimitavtal om du vill bearbeta en remburs. Du kanske vill ställa in bankkreditlimiter och bokföringsprofiler före detta.  I den här uppgiften används demonstrationsföretaget "USMF".  
 
 
 ## <a name="create-bank-facility-agreement"></a>Skapa bankkreditlimitavtalet

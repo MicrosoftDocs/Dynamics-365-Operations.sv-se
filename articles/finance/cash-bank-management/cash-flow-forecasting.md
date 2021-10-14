@@ -1,8 +1,8 @@
 ---
 title: Kassaflödesprognoser
 description: Det här avsnittet innehåller en översikt över kassaflödeprognosprocess. Dessutom beskrivs hur kassaflödesprognos är integrerad med andra moduler i systemet.
-author: JodiChristiansen
-ms.date: 12/16/2020
+author: panolte
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b9455d132a928185bdfeb49c01c141b4c9b2c52e3b3beb9f8a3c96a38238f296
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779456"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7547965"
 ---
 # <a name="cash-flow-forecasting"></a>Kassaflödesprognoser
 
@@ -83,7 +83,10 @@ Du kan åsidosätta standardinställningen för fältet **Likviditetskonto** fö
 
 ### <a name="budgeting"></a>Budgetering
 
-Du kan ta med budgetar som skapas från budgetmodeller i kassaflödesprognoser. På fliken **budget** på sidan **kassaflödesprognosinställningar** markerar du budgetmodellerna som ska inkluderas i prognosen. Som standard ingår nya budgetregisterposter i prognoser när budgetmodellen har aktiverats för kassaflödesprognos. Inkludering i kassaflödesprognos kan åsidosättas på enskilda budgetregisterposter.
+Du kan ta med budgetar som skapas från budgetmodeller i kassaflödesprognoser. På sidan **kassaflödesprognosinställningar** på fliken **budget** markerar du budgetmodellerna som ska inkluderas i prognosen. Som standard ingår nya budgetregisterposter i prognoser när budgetmodellen har aktiverats för kassaflödesprognos.
+
+Registerposter för budget kan inkluderas i kassaflödesprognosen individuellt genom personanpassning. När du lägger till kolumnen "Inkludera i kassaflödesprognoser" på sidan **Budgetregisterpost** skriver systemet över inställningarna på sidan **kassaflödesprognosinställningar** för att inkludera en individuell budgetregistrering i prognosen.
+
 
 ### <a name="inventory-management"></a>Lagerhantering
 
@@ -144,7 +147,7 @@ Arbetsytan **kassaöversikt – alla företag** visar kassaflödesanalys i syste
 
 Arbetsytan **kassaöversikt – aktuellt företag** visar kassaflödesprognosanalyser i företagets definierade redovisningsvaluta. Redovisningsvalutan som används för analysen definieras på sidan **redovisning**. Den här arbetsytan visar en översikt över kassaflödesprognos och bankkontosaldon för det aktuella företaget. Ett diagram över kassainflöden och kassautflöden ger en översikt över framtida kassaflödesrörelser och saldon i redovisningsvalutan tillsammans med detaljerad information om de prognostiserade transaktionerna. Du kan också se prognostiserade valutasaldon.
 
-Mer information om kassaflödesprognosanalys finns i [kassaöversikt Power BI-innehåll](./cash-overview-power-bi-content.md) topic.
+Mer information om kassaflödesprognosanalys finns i [kassaöversikt Power BI-innehåll](Cash-Overview-Power-BI-content.md).
 
 Dessutom kan du visa kassaflödesprognoser för specifika konton, order och artiklar på följande sidor:
 

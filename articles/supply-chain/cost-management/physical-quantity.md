@@ -13,15 +13,15 @@ ms.custom: 19111
 ms.assetid: 56a7c8ba-bf4a-4b1d-918d-56bb96926c4f
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb0a7ede00b129638d42ef3feb1cb683e844b048bf212efc17cf28b2eb76240f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6564df5bd9c768f647138714875c60ddd6df3c85
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734365"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568961"
 ---
 # <a name="inventory-object-values"></a>Värden för lagerobjekt
 
@@ -44,7 +44,7 @@ Följande exempel visar hur värdena beräknas för ett objekt i lagret och en k
 
 Följande tabell visar beräkningsresultatet för ett kostnadsobjekt. Du kan visa resultaten på sidan **Kostnadsobjekt**.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="14%" />
 <col width="14%" />
@@ -80,7 +80,7 @@ Följande tabell visar beräkningsresultatet för ett kostnadsobjekt. Du kan vis
 
 Följande tabell visar beräkningsresultatet för ett lagerobjekt. Du kan visa resultaten genom att klicka på **Fysisk kvantitet** på sidan **Kostnadsobjekt**.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="11%" />
 <col width="11%" />

@@ -1,7 +1,7 @@
 ---
 title: Deadlines för orderregistrering
 description: Den här artikeln innehåller information om deadlines för orderregistrering. En deadline för orderregistrering är en sluttid som bestämmer om en kundorder behandlas (och genomförs) som om det togs emot den aktuella dagen eller nästa dag.
-author: omulvad
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 7151
 ms.assetid: bbc4f9a2-df4b-4d92-9f18-25282a85541f
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01390c48f7f2c7b32e8e1b1a7b1dde367c9c599568f44f687eb9d80eed284de3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 71748cb05346f7a31f51baebb86b9accc11c8478
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764798"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580538"
 ---
 # <a name="order-entry-deadlines"></a>Deadlines för orderregistrering
 

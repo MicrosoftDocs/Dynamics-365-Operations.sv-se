@@ -2,7 +2,7 @@
 title: Borttagna eller avskrivna plattformsfunktioner
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning i plattformsuppdatering av Finance and Operations-appar.
 author: sericks007
-ms.date: 09/17/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 8910fc338f822e6b6b59acb0e6ee7a90db2b5007
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 956ead503d426bb6cdfd136957c7f9dfa157bc08
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500119"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595155"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller avskrivna plattformsfunktioner
 
@@ -32,14 +32,26 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
 
+## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.21 för Finance and Operations-appar
+
+### <a name="skype-for-business-online-support"></a>Support för Skype för företag online
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Skype för företag online har tagits bort. Mer information finns i [Tjänsten Skype för företag online har tagits bort](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/the-skype-for-business-online-service-has-retired/ba-p/2596601). |
+| **Ersatt av en annan funktion?**   | Inte för närvarande, även om vi kan överväga att lägga till närvaro från Teams i framtiden.|
+| **Produktområden som påverkas**         | Webbklient |
+| **Distribueringsalternativ**              | Alla |
+| **Status**                         | Inaktuell. Inställningen **Skype aktiverat** har inaktiverats med start i version 10.0.21. Borttagningen av den här inställningen är avsedd för april 2022. Funktionen kommer dock att upphöra att fungera när Skype-teamet har stängt av tjänsten. |
+ 
 ## <a name="feature-deprecation-effective-august-2021"></a>Utfasning av funktioner från augusti 2021
 
 ### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL-rapporter i Lifecycle Services (LCS)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** |   Alla aktiviteter och övervakning utförs internt, per plattform, via automation. Detta kräver inte någon manuell inblandning.|
-| **Ersatt av en annan funktion?**   | Nr |
+| **Orsak till inaktuell/borttagning** | Alla aktiviteter och övervakning utförs internt, per plattform, via automation. Detta kräver inte någon manuell inblandning.|
+| **Ersatt av en annan funktion?**   | Ja, det finns nu ett automatiskt system, vilket gör att dessa funktioner inte är föråldrade. |
 | **Produktområden som påverkas**         | SQL-rapporter: Aktuell DTU, Aktuell DTU-information, Hämta låsdetaljer, Lista över aktuell planguide, Hämta lista över fråge-ID:n, Hämta SQL-frågeplan för ett givet plan-ID, Hämta frågeplaner och körningsstatus, Hämta begränsningskonfiguration, Hämta väntestatistik, Lista de dyraste frågorna |
 | **Distribueringsalternativ**              | Molnbaserad distribution: Påverkar Microsoft-hanterade produktionsmiljöer och Nivå 2 till Nivå 5 sandbox-miljöer. |
 | **Status**                         | Inaktuell: Planerat borttagningsdatum i oktober 2021. |
@@ -48,8 +60,8 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Vi fasar ut vissa SQL-åtgärder i LCS.  |
-| **Ersatt av en annan funktion?**   | Nr |
+| **Orsak till inaktuell/borttagning** | Vi fasar ut vissa SQL-åtgärder i LCS. Alla aktiviteter och övervakning utförs internt, per plattform, via automation. Detta kräver inte någon manuell inblandning. |
+| **Ersatt av en annan funktion?**   | Ja, det finns nu ett automatiskt system, vilket gör att dessa funktioner inte är föråldrade. |
 | **Produktområden som påverkas**         | SQL-åtgärder: Skapa en planguide för att tvinga plan-ID, Skapa en planguide för att lägga till tabelltips, Ta bort planguide, Inaktivera/aktivera sidlås och låseskalering, Uppdatera statistik i en tabell, Återskapa index, Skapa index |
 | **Distribueringsalternativ**              | Molnbaserad distribution: Påverkar Microsoft-hanterade produktionsmiljöer och Nivå 2 till Nivå 5 sandbox-miljöer. |
 | **Status**                         | Inaktuell: Planerat borttagningsdatum i oktober 2021. |
@@ -158,7 +170,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | I allmänhet erbjuder anpassad kod begränsade fördelar men kräver samtidigt avsevärd resurshantering och beräkning för stöd. Anpassad kod används främst av rapportförfattare för att anropa offentliga metoder från en anpassad kodsammansättning. Den molnbaserade tjänsten stöder dock inte referenser till anpassade sammansättningar för SSRS-rapporter. |
-| **Ersatt av en annan funktion?**   | Rapportförfattare kan välja att fortsätta att referera till offentliga .NET API:er för matematik-, konverterings- och formatåtgärder från valfritt textruteuttryck. Mer information finns i [Lägga till kod i en rapport (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Ersatt av en annan funktion?**   | Rapportförfattare kan välja att fortsätta att referera till offentliga .NET API:er för matematik-, konverterings- och formatåtgärder från valfritt textruteuttryck. Mer information finns i [Lägga till kod i en rapport (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs).  |
 | **Produktområden som påverkas**         | Delmängd av design för programrapport som definierats i RDL som innehåller anpassad kod. |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Med version 10.0.13 börjar kompileraren att utfärda en varning för instanser där anpassad kod identifieras i en rapportdefinition för SSRS. Lös problemet genom att öppna rapportdesignens definition och ta bort alla anpassade kodartefakter. Den här varningen kommer att ersättas med ett kompileringsfel i en framtida uppdatering.   |

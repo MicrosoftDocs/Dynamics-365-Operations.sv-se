@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: f3a5777196317b59c67b872822594f776782b3dde890581723cfb9c292e3495d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 15fcfd72027e081e633fe68209cf85f528ff02d7
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736002"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576938"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurera körningsgränssnittet för produktionsgolvet
 
@@ -84,7 +84,7 @@ Om du vill skapa och underhålla enhetskonfigurationen går du till **Produktion
 
 Konfigurera sedan de olika inställningarna för den valda enhetskonfigurationen. Följande fält är tillgängliga:
 
-- **Clock in and out only** - Ange det här alternativet *Ja* för att skapa ett förenklat gränssnitt som bara ger in- och urklockningsfunktionalitet. Då inaktiveras de flesta andra alternativ på den här sidan. Du måste ta bort alla rader från snabbflikarna **Flikmarkering** innan du kan aktivera det här alternativet.
+- **Endast för in- och utstämpling** - Ange det här alternativet *Ja* för att skapa ett förenklat gränssnitt som bara ger in- och urklockningsfunktionalitet. Då inaktiveras de flesta andra alternativ på den här sidan. Du måste ta bort alla rader från snabbflikarna **Flikmarkering** innan du kan aktivera det här alternativet.
 - **Aktivera sökning** - Ange detta alternativ till *Ja* om du vill inkludera ett sökfält i jobblistan. En arbetare kan hitta ett visst jobb genom att ange jobb-ID eller söka efter alla jobb för en viss order genom att ange order-ID:t. Arbetare kan ange ID:t med hjälp av ett tangentbord eller genom att skanna en streckkod.
 - **Rapportera kvantitet vid utstämpling** – Ange detta alternativ till *Ja* för att be arbetare att rapportera återrapportering om pågående jobb när han eller hon stämplar ut. Om detta alternativ anges till *Nej* kommer medarbetarna inte att uppmanas.
 - **Lås medarbetare** – när det här alternativet är inställt på *Nej* kommer arbetstagarna att loggas ut omedelbart efter att de har gjort en registrering (t.ex. ett nytt jobb). Enheten kommer sedan tillbaka till inloggningssidan. När det här alternativet är inställt på *Ja* kommer varje medarbetare att vara inloggad på jobbkortsenheten. En arbetare kan dock manuellt logga ut så att en annan arbetare kan logga in medan en jobbkortsenhet fortsätter att köras under samma systemanvändarkonto. Mer information om dessa typer av konton finns i [Tilldela användare](config-job-card-device.md#assigned-users).

@@ -1,7 +1,7 @@
 ---
 title: Skapa artikelbehov för serviceorder
-description: Om du behöver reservera specifika artiklar för en serviceorder kan du skapa lagerartikelkrav för den.
-author: ShylaThompson
+description: I det här avsnittet beskrivs hur du skapar artikelbehov för serviceorder.
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 800f8ec8c016f95fbbf88a89184ffc45d183969ef02df526bbc6b9b3b78be3ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 75a05147883f1592b3a09e02e238661f6c20cf27
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773992"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575301"
 ---
-# <a name="create-item-requirements-for-service-orders"></a>Skapa artikelbehov för serviceorder 
+# <a name="create-item-requirements-for-service-orders"></a>Skapa artikelbehov för serviceorder
 
 [!include [banner](../includes/banner.md)]
-
 
 Du kan du skapa en serviceorder för att följa och hantera tjänster som du tillhandahåller dina kunder. Om du behöver reservera specifika artiklar för en serviceorder kan du skapa lagerartikelkrav för den. Ett artikelbehov kan förbrukas omedelbart från lagret eller så kan det initiera en produktionsorder för artikeln.
 
@@ -35,40 +34,24 @@ Artikelbehov för serviceorder bearbetas via ett projekt. För att kunna skapa e
 
 ## <a name="create-an-item-requirement-for-a-service-order"></a>Skapa ett artikelbehov för en serviceorder
 
-1.  Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.
-
-2.  Välj den serviceorder som du vill skapa ett artikelbehov för.
-
-3.  På **Åtgärdsfönster**, på fliken **Varuutförsel**, klicka på **Artikelbehov**.
-
-4.  I formuläret **Artikelbehov** ange information för krävd artikel. Mer information om ett specifikt fält finns i [Artikelbehov (formulär)](https://technet.microsoft.com/library/aa552021\(v=ax.60\)).
+1. Klicka på **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.
+1. Välj den serviceorder som du vill skapa ett artikelbehov för.
+1. På **Åtgärdsfönster**, på fliken **Varuutförsel**, klicka på **Artikelbehov**.
+1. I formuläret **Artikelbehov** ange information för krävd artikel. Mer information om ett specifikt fält finns i [Artikelbehov (formulär)](https://technet.microsoft.com/library/aa552021\(v=ax.60\)).
 
 ## <a name="create-an-item-requirement-for-a-service-agreement"></a>Skapa ett artikelbehov för ett serviceavtal
 
-1.  Klicka på **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**.
-
-2.  Öppna serviceavtalet som du vill skapa ett artikelbehov för.
-
-3.  På snabbfliken **Rader**, klicka på **Lägg till** för att skapa en ny rad.
-
-4.  I fältet **Transaktionstyp**, välj **Artikel**.
-
-5.  I fältet **Artikelinställningar** välj **artikelbehov**.
-
-6.  I fältet **Artikelnummer**, välj den artikel som krävs för serviceavtalet i fältet.
-
-7.  På snabbfliken **raduppgifter** på fliken **produktdimensioner** i fältet **Plats** väljer du lagerplats för artikeln.
-
-8.  Om du vill skapa en serviceorder från avtalsraden, på snabbfliken **Rader** klickar du på **Skapa serviceorder**, och anger sedan relevant information i formuläret **Skapa serviceorder**. 
-
+1. Gå till **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**.
+1. Öppna serviceavtalet som du vill skapa ett artikelbehov för.
+1. På snabbfliken **Rader**, klicka på **Lägg till** för att skapa en ny rad.
+1. I fältet **Transaktionstyp**, välj **Artikel**.
+1. I fältet **Artikelinställningar** välj **artikelbehov**.
+1. I fältet **Artikelnummer**, välj den artikel som krävs för serviceavtalet i fältet.
+1. På snabbfliken **raduppgifter** på fliken **produktdimensioner** i fältet **Plats** väljer du lagerplats för artikeln.
+1. Om du vill skapa en serviceorder från avtalsraden, på snabbfliken **Rader** klickar du på **Skapa serviceorder**, och anger sedan relevant information i formuläret **Skapa serviceorder**.
 
 ## <a name="see-also"></a>Se även
 
 [Skapa serviceorder automatiskt](create-service-orders-automatically.md)
-
-  
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d5f84a1a6ff794cdc8b4b81e8518983789a0b33f1708719906f6ad094d9c4285
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0b70411e6535b22d698545438dcb0b16935e731
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722641"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559593"
 ---
 # <a name="payroll-position-job"></a>Lönebefattningsjobb
 
@@ -34,16 +34,22 @@ Fysiskt namn: mshr_payrollpositionjobentity.
 
 ## <a name="properties"></a>Egenskaper
 
-| Egenskap<br>**Fysiskt namn**<br>**_Typ_** | Använd | beskrivning |
+| Egenskap</br>**Fysiskt namn**</br>**_Typ_** | Använd | Beskrivning |
 | --- | --- | --- |
-| **Jobb-ID**<br>mshr_jobid<br>*Sträng* | Skrivskydd<br>Obligatoriskt |Jobbets ID. |
-| **Giltig från**<br>mshr_validto<br>*Datum Tid Offset* | Skrivskydd <br>Obligatoriskt | Datum från vilket befattningen och jobbrelationen gäller. |
-| **Giltig till**<br>mshr_validto<br>*Datum Tid Offset* | Skrivskydd <br>Obligatoriskt | Datum till och med vilket befattningen och jobbrelationen gäller.  |
-| **Befattnings-ID**<br>mshr_positionid<br>*Sträng* | Skrivskydd<br>Obligatoriskt | Befattningens ID. |
-| **Primärt fält**<br>mshr_primaryfield<br>*Sträng* | Obligatoriskt<br>Systemgenererad |  |
-| **ID-värde för befattningsjobb**<br>_mshr_fk_positionjob_id_value<br>*GUID* | Skrivskydd<br>Obligatoriskt<br>Sekundärnyckel:mshr_PayrollPositionJobEntity för mshr_payrollpositionjobentity |ID för det jobb som är kopplat till befattningen.|
-| **ID-värde för fast kompensationsplan**<br>_mshr_fk_fixedcompplan_id_value<br>*GUID* | Skrivskydd<br>Obligatoriskt<br>Sekundärnyckel: mshr_FixedCompPlan_id för mshr_payrollfixedcompensationplanentity  | ID för den fasta kompensationsplan som är kopplad till befattningen. |
-| **Entitets-ID för lönebefattningsjobb**<br>mshr_payrollpositionjobentityid<br>*Guid* | Obligatoriskt<br>Systemgenererat. | Ett systemgenererat GUID-värde som unikt identifierar jobbet.  |
+| **Befattnings-ID**</br>mshr_positionid</br>*Sträng* | Skrivskydd | Befattningens ID. |
+| **Giltig från**</br>mshr_validto</br>*Datum Tid Offset* | Skrivskydd | Datumet från vilket befattningen och jobbrelationen gäller. |
+| **Giltig till**</br>mshr_validto</br>*Datum Tid Offset* | Skrivskydd | Datumet till och med vilket befattningen och jobbrelationen gäller. |
+| **Jobb-ID**</br>mshr_jobid</br>*Sträng* | Skrivskydd | Jobbets ID. |
+| **Primärt fält**</br>mshr_primaryfield</br>*Sträng* | Systemgenererad | Primärt fält. |
+| **Entitets-ID för lönebefattningsjobb**</br>mshr_payrollpositionjobentityid</br>*Guid* | Systemgenererat. | Ett systemgenererat globalt unikt ID (GUID) som identifierar jobbet unikt. |
+
+## <a name="relations"></a>Relationer
+
+| Egenskapsvärde | Relaterad entitet | Navigeringsegenskap | Samlingstyp |
+| --- | --- | --- | --- |
+| _mshr_fk_fixedcompplan_id_value | mshr_payrollfixedcompensationplanentity | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_Job |
+| _mshr_fk_jobdetail_id_value | mshr_hcmjobdetailentity | mshr_FK_JobDetail_id | Inte tillämpligt |
+| _mshr_fk_payroll_id_value | mshr_payrollpositionentity | mshr_FK_Payroll_id | mshr_FK_PayrollPositionEntity_Job |
 
 ## <a name="example-query"></a>Exempelfrågeställning
 
