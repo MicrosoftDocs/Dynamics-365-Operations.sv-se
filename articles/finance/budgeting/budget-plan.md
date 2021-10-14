@@ -1,7 +1,7 @@
 ---
 title: Budgetplanering
 description: Målet med den här övningen är att ge en guidad visning av funktionen Microsoft Dynamics 365 Finance-uppdateringar inom området Budgetplanering. Syftet med övningen är att illustrera ett kort konfigureringsexempel av budgetplaneringsmodulen och visa hur budgetplaneringen kan utföras med hjälp av den här konfigurationen.
-author: ShylaThompson
+author: panolte
 ms.date: 06/25/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e995a3fb7f87db2aed676d12ca4b4732eb3e96c5e52b702890d53cd1840d7cb1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0420887c35bbb07aaf8cce05a68173ab6c534f92
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775204"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595344"
 ---
 # <a name="budget-planning"></a>Budgetplanering
 
@@ -39,7 +39,7 @@ Målet med den här övningen är att ge en guidad visning av funktionen Microso
 I den här självstudien måste du ha tillgång till Microsoft Dynamics 365 Finance-miljön med Contoso-demonstrationsdata och vara administratör för instansen. Använd inte i webbläsaren i privat läge i övningen – logga ut från alla andra konton på webbläsaren och logga in med administratörsautentiseringsuppgifter. När du loggar in **MÅSTE** du markera kryssrutan Håll mig inloggad. Då skapas en beständig cookie som Excel-appen behöver. Om du loggar in i appen med en annan webbläsare än IE, uppmanas du att logga in via Excel-appen. När du klickar på Logga in i Excel-appen visas ett IE-popup-fönster och när du loggar in **MÅSTE** du markera kryssrutan Håll mig inloggad. Om det inte händer något när du klickar på logga in i Excel-appen rensar du cookiecachen i IE.
 
 ## <a name="scenario-overview"></a>**Scenarioöversikt**
-Julia arbetar som ekonomichef för Contoso Entertainment Systems i Tyskland (DEMF). Eftersom FY2016 närmar sig, måste hon arbeta med företagets budget för det kommande året. Budgetförberedelserna ser ut så här:
+Julia arbetar som ekonomichef i Contoso Entertainment Systems i Tyskland (DEMF). Eftersom FY2016 närmar sig, måste hon arbeta med företagets budget för det kommande året. Budgetförberedelserna ser ut så här:
 
 1.  Julia använder föregående års faktiska belopp som utgångspunkt för att skapa budgeten.
 2.  Baserat på tidigare år skapar hon uppskattningar för tolv månader i det kommande året.

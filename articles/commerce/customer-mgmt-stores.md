@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 09caa7fa8f10d1afc44bb9343550bc633b8ec99a
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: 4fd6039843be09ec706e45746d5724faa99a95e6
+ms.sourcegitcommit: 3f59b15ba7b4c3050f95f2b32f5ae6d7b96e1392
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472235"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7563071"
 ---
 # <a name="customer-management-in-stores"></a>Kundhantering i butiker
 
@@ -45,7 +45,8 @@ Säljare kan fånga in flera adresser för en kund. Kundens namn och telefonnumm
 
 ## <a name="sync-customers-and-async-customers"></a>Synkrona och asynkrona kunder
 
-> [VIKTIGT] När kassan är offline växlar systemet automatiskt till läget för asynkron kundgenerering, även om läget för asynkron kundgenerering är inaktiverat. Oavsett om du väljer synkron eller asynkron kundgenerering måste Commerce headquarters-administratörer därför skapa och schemalägga ett återkommande batchjobb för **P-jobbet**, jobbet **Synkronisera kunder och affärspartner från asynkront läge** (kallades tidigare jobbet **Synkronisera kunder och affärspartner från asynkront läge**) och **1010**-jobbet, så att alla asynkrona kunder konverteras till synkrona kunder i Commerce headquarters.
+> [!IMPORTANT]
+> När kassan är offline växlar systemet automatiskt till läget för asynkron kundgenerering, även om läget för asynkron kundgenerering är inaktiverat. Oavsett om du väljer synkron eller asynkron kundgenerering måste Commerce headquarters-administratörer därför skapa och schemalägga ett återkommande batchjobb för **P-jobbet**, jobbet **Synkronisera kunder och affärspartner från asynkront läge** (kallades tidigare jobbet **Synkronisera kunder och affärspartner från asynkront läge**) och **1010**-jobbet, så att alla asynkrona kunder konverteras till synkrona kunder i Commerce headquarters.
 
 I Commerce finns det två sätt att skapa kunder: Synkron (eller Synk) och Asynkron (eller Asynk). Kunder skapas som standard synkront. Med andra ord skapas de i Commerce-administration i realtid. Synkroniseringsläget för kunder är fördelaktigt eftersom nya kunder kan sökas omedelbart över kanaler. Den har emellertid även ett problem. Eftersom det genererar [Commerce Data Exchange: realtidstjänst](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) anropar till Commerce-administration kan prestanda påverkas om många samtidiga kundsamtal görs.
 

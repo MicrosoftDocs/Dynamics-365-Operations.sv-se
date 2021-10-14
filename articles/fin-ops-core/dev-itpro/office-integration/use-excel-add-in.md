@@ -2,7 +2,7 @@
 title: Visa och uppdatera enhetsdata i Excel
 description: Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Excel-tillägget.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 10/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aefebe094a0429f22a1a7038a55ab2190e41da6348447850148b8b98e082e743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d1902e80313c5460ac38896bc2f46d83897e3a58
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761364"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592675"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Visa och uppdatera enhetsdata i Excel 
 
@@ -60,7 +60,7 @@ Excel-tillägget läser automatiskt data för enheten som du har valt. Lägg mä
 
 6. Klicka på **OK**, och sedan på **Ja** för att bekräfta ändringarna. Excel-tillägget startar om och hämtar metadata.
 
-    Knappen **Design** är nu tillgänglig. Om Excel-tillägget har knappen **Läs in appletar** är du troligen inte korrekt inloggad som användare. Mer information finns i "Knappen läs in appletar visas" i avsnittet [Felsökning](../office-integration/use-excel-add-in.md#troubleshooting) i det här avsnittet.
+    Knappen **Design** är nu tillgänglig. Om Excel-tillägget har länk **Läs in appletar** är du troligen inte korrekt inloggad som användare. Mer information om hur du tar upp det här problemet finns i avsnittet [Läs in appletar](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane) felsökningsposten.
 
 7. Välj **Design**. Excel-tillägget hämtar enhetsmetadata.
 8. Välj **Lägg till registrer**. En lista över enheter visas. Enheterna anges i formatet "Namn – etikett".
@@ -136,7 +136,7 @@ De data som läses in i arbetsboken från en miljö kan kopieras till en annan m
 ## <a name="troubleshooting"></a>Felsökning
 Det finns några problem som kan lösas genom några enkla steg.
 
-- **Knappen Läs in appletar visas** – Om Excel-tillägget har knappen **Läs in appletar** är du troligen inte korrekt inloggad som användare. Kontrollera att rätt användarnamn visas i det övre högra hörnet av Excel-tillägget för att lösa problemet. Om ett felaktigt användarnamn visas, klickar du på den, loggar ut och loggar sedan in igen.
+- **Länken "Läs in appletar" visas** – För mer information om detta problem se [Läs in appletar](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane) felsökningsposten. 
 - **Felmeddelandet "Förbjudet" visas** – Om felmeddelandet "Förbjudet" visas medan Excel-tillägget läser in metadata, har det konto som är inloggat i Excel-tillägget inte behörighet att använda den riktade tjänsten, instansen eller databasen. Kontrollera att rätt användarnamn visas i det övre högra hörnet av Excel-tillägget för att lösa problemet. Om ett felaktigt användarnamn visas, klickar du på den, loggar ut och loggar sedan in igen.
 - **En tom webbsida visas över Excel** – Om en tom webbsida öppnas när du loggar in, kräver kontot AD FS, men versionen av Excel som kör Excel-tillägget är inte tillräcklig nytt för att läsa in dialogrutan för inloggning. Uppdatera versionen av Excel som du använder för att lösa problemet. Uppdatera Excel-versionen när du arbetar i ett företag på den uppskjutna kanalen med [Office distributionsverktyg](/deployoffice/overview-office-deployment-tool) för att [flytta från uppskjuten kanal till den aktuella kanalen](/deployoffice/overview-update-channels).
 - **Du får en timeout medan du publicerar dataändringar** - Om du får timeout-meddelanden när du försöker publicera dataändringar till en enhet kan du överväga att minska publiceringsbatchstorleken för den berörda arbetsboken. Enheter som utlöser större mängder logik i poständringar kan kräva uppdateringar som skickas i mindre batchar för att förhindra timeout.

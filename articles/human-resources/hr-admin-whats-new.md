@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 874fa7a04d872b411716f57b121ab24458245fa2
-ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
+ms.openlocfilehash: 0ab7cfbb5591f68880354437cc4eebb666801a6b
+ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485891"
+ms.lasthandoff: 09/25/2021
+ms.locfileid: "7556801"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Nyheter och ändringar i Personal
 
@@ -40,6 +40,7 @@ Mer information om kommande funktioner eller uppdateringsprocessen för personal
 
 Information om vad som är nytt eller ändrat i respektive utgåva varannan vecka av Personal finns i följande ämnen:
 
+[20 september 2021](hr-whats-new-2021-09-20.md)</br>
 [6 september 2021](hr-whats-new-2021-09-06.md)</br>
 [23 augusti 2021](hr-whats-new-2021-08-23.md)</br>
 [9 augusti 2021](hr-whats-new-2021-08-09.md)</br>

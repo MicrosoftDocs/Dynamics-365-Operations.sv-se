@@ -1,6 +1,6 @@
 ---
 title: Visa lagerutdrag och KPI efter kostnadsobjekt
-description: Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
+description: Det här ämnet visar hur du visar lagerutdrag och KPI efter kostnadsobjekt.
 author: AndersGirke
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,13 +13,13 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f6bc60baa723cee91b219bc078f4486e971d2c99fc89b9c42e2d4472d161a163
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f813b0e04a2450cb64e92128d36495a483ad14e1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721356"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568169"
 ---
 # <a name="view-inventory-statement-and-kpi-by-cost-object"></a>Visa lagerutdrag och KPI efter kostnadsobjekt
 
@@ -27,14 +27,14 @@ ms.locfileid: "6721356"
 
 Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Den här proceduren är avsedd för kostnadscontrollern.
 
-1. Klicka på Kostnadsredovisning.
-2. Klicka på Frisläppta produkter.
-3. Använd snabbfiltret för att söka efter poster. Filtrera till exempel i fältet Artikelnummer med värdet d0005.
-4. Klicka på Hantera kostnader i åtgärdsfönstret.
-5. Klicka på Kostnadsobjekt
-6. Klicka på Lagerutdrag och KPI:er.
-7. Ange ett datum i fältet Från datum.
-8. Ange ett datum i fältet Till datum.
+1. Klicka på **Kostnadsredovisning**.
+2. Välj **frisläppta produkter**.
+3. Använd snabbfiltret för att söka efter poster. Filtrera till exempel i fältet **Artikelnummer** med värdet *d0005*.
+4. I åtgärdsfönstret klicka på **Hantera kostnader**.
+5. Skapa **kostnadsobjekt**.
+6. Välj **Lagerutdrag och KPI:er**.
+7. I fältet **Från datum** anger du ett datum.
+8. I fältet **Till-datum**, anger du ett datum.
 
 
 

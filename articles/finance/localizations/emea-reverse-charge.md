@@ -12,12 +12,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b9996b4d6ab84070cc3e9863a454c4fd8ed14091490273cde0eec1ea2bc508fc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756232"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594725"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mekanism för omvänd moms för moms/GST-schema
 
@@ -45,7 +45,6 @@ Du måste utföra följande inställningar om du vill använda omvänd moms.
 Vi rekommenderar att du använder olika momskoder för försäljning och inköp.
 
 <table>
-<body>
 <tr>
 <td><strong>Momskoder för försäljning</strong></td>
 <td>Skapa en momskod för försäljningsoperationer med omvänd moms (<strong>Skatt</strong> &gt; <strong>Indirekta skatter</strong> &gt; <strong>Moms</strong> &gt; <strong>Momskoder</strong>).
@@ -62,7 +61,6 @@ Den måste tilldela denna negativa momskod till en artikelmomsgrupp, och däreft
 <p>Mer information om &quot;Ange momsgrupper och artikelmomsgrupper&quot; finns i nästa avsnitt.</p>
 </td>
 </tr>
-</tbody>
 </table>
 
 ## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><a name="sales-tax-item-sales-tax-groups"></a>Ställ in momsgrupper och artikelmomsgrupper

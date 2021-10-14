@@ -1,7 +1,7 @@
 ---
 title: Bankutdrag och betalningsavstämning för EU
 description: Det här avsnittet innehåller en översikt över funktioner med vilka du kan stämma av betalningsinformation från banker i format som används av europeiska länder.
-author: neserovleo
+author: anasyash
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.custom: 267994
 ms.search.region: Belgium, Norway, Sweden, Switzerland
-ms.author: v-lenest
+ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fb2ee25d214454a89226e6dda0881c1832be6cf4335ea765ccd9b83ca6e50f06
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: afad3639836d8473ab420f68164c68772ca62db6
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712158"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592514"
 ---
 # <a name="bank-statement-and-payment-reconciliation-for-the-eu"></a>Bankutdrag och betalningsavstämning för EU
 

@@ -1,7 +1,7 @@
 ---
 title: Servicemallar
 description: Du kan definiera ett serviceavtal som en mall och senare kopiera raderna i mallen till ett annat serviceavtal eller till en serviceorder.
-author: ShylaThompson
+author: kamaybac
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5e2e1eb04811f063547622395e6ec9289e04b68c2ac8efadc70e61cbc87f77d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 82a19dbee91f13eb3ef56dfd67a775930170b8e7
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777825"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576314"
 ---
 # <a name="service-templates"></a>Servicemallar
 

@@ -2,7 +2,7 @@
 title: Offentliga API:er för Lagersynlighet
 description: Detta ämne beskriver de allmänna API:er som anges i Lagersynlighet.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 09/30/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6dff54f54a495c2b4a7837f3a41f410d418cf12b
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.dyn365.ops.version: 10.0.22
+ms.openlocfilehash: 43fa94118c4d76e021bb635d720208d5f971db19
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474662"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592498"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentliga API:er för Lagersynlighet
 
@@ -82,6 +82,8 @@ Microsoft har skapat ett användargränssnitt (UI) i Power Apps som gör att du 
 
 Säkerhetstoken för plattform används för att anropa det offentliga API:t Lagersynlighet. Därför måste du generera en _Azure Active Directory (Azure AD) token_ med hjälp av ditt Azure AD program. Du måste sedan använda Azure AD token för att få _åtkomsttoken_ från säkerhetstjänsten.
 
+Microsoft tillhandahåller en färdig samling för hämta token för *brevbärare*. Du kan importera denna samling till ditt *brevbärar* program genom att använda följande delade länk: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
+
 Gör så här om du vill hämta en säkerhetstjänsttoken:
 
 1. Logga in på Azure-portalen och använd den för att hitta värdena `clientId` och `clientSecret` för din Dynamics 365 Supply Chain Management-app.
@@ -131,7 +133,7 @@ Gör så här om du vill hämta en säkerhetstjänsttoken:
    - Värdet `context` måste vara det LCS-miljö-ID där du vill distribuera tillägget.
    - Ställ in de andra värdena enligt exemplet.
 
-1. Skicka in en HTTP-begäran med följande egenskaper:
+1. Hämta en åtkomsttoken (`access_token`) genom att skicka en HTTP-begäran med följande egenskaper:
 
    - **URL:** `https://securityservice.operations365.dynamics.com/token`
    - **Metod:** `POST`
@@ -148,7 +150,8 @@ Gör så här om du vill hämta en säkerhetstjänsttoken:
    }
    ```
 
-I senare avsnitt används `$access_token` för att representera den token som hämtades i det sista steget.
+> [!IMPORTANT]
+> När du använder *brevbärar*-begärandesamling för att anropa offentliga API:er för lagersynlighet måste du lägga till en ägartoken för varje begäran. Om du vill söka efter din ägartoken väljer du fliken **Auktorisering** under begäran-URL, väljer typ av **ägartoken** och kopierar åtkomsttoken som hämtades i det sista steget. I senare avsnitt av detta ämne används `$access_token` för att representera den token som hämtades i det sista steget.
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Skapa ändringshändelser för behållning
 
@@ -508,7 +511,7 @@ I brödtexten i denna begäran är `dimensionDataSource` fortfarande en valfri p
 
 - `organizationId` bör bara innehålla ett värde, men det är fortfarande en matris.
 - `productId` kan innehålla ett eller flera värden. Om det är en tom matris kommer alla produkter att returneras.
-- `siteId` och `locationId` används i Lagersynlighet för partitionering.
+- `siteId` och `locationId` används för partitionering i Lagersynlighet. Du kan ange mer än ett `siteId` och `locationId` värde i en förfrågan *Behållningsfråga*. I den aktuella versionen måste du ange både `siteId` och `locationId` värden.
 
 Parametern `groupByValues` bör följa din konfiguration för indexering. Mer information finns i [Hierarkikonfiguration för produktindex](./inventory-visibility-configuration.md#index-configuration).
 
