@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e29a5295cd3c334aef88dc7a2a36b2eb8a6f636b159c0f69874fc51298a1ab7c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772288"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581148"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Utgående lageråtgärder i kassan
 
@@ -116,7 +116,7 @@ I vyn **fullständig orderlista** kan du manuellt välja en rad i listan och sed
 
 ### <a name="over-delivery-shipping-validations"></a>Leveransvalideringar för överleverans
 
-Valideringar sker under mottagningsprocessen för dokumentraderna. De inkluderar valideringar för överleverans. Om en användare försöker ta emot mer lager än vad som beställts på en inköpsorder, men antingen överleverans eller den kvantitet som har inlevererats överskrider den överleveranstolerans som har konfigurerats för inköpsorderraden, får användaren ett felmeddelande och får inte ta emot överskjutande kvantitet.
+Valideringar sker under expedieringsprocessen för dokumentraderna. De inkluderar valideringar för överleverans. Om en användare försöker leverera mer lager än vad som beställts på en överföringsorder, men antingen överleverans eller den kvantitet som har levererats överskrider den överleveranstolerans som har konfigurerats för överföringsorderraden, får användaren ett felmeddelande och får inte leverera överskjutande kvantitet.
 
 ### <a name="underdelivery-close-lines"></a>Stäng rader för underleverans
 

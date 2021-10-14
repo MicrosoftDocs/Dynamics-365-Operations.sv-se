@@ -1,7 +1,7 @@
 ---
 title: Skapa planeringsegenskaper för arbetstider
 description: Planeringsegenskaper för arbetstider används när du kategoriserar arbetstidsintervall och definierar inställningar som operatörer måste ta med i beräkningen.
-author: sorenva
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: sorenand
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 679ea4557b959d45e03c6c3e454c0c3fd1398f8452db392c5257544e4efd0908
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: de9bb64c93a686ce8a6ea365267980ec737a9335
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747851"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566609"
 ---
 # <a name="create-working-time-scheduling-properties"></a>Skapa planeringsegenskaper för arbetstider
 

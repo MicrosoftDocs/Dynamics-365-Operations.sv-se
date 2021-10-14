@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2681f243c9f8c0c4dac65caeb55b76b37d1b262838c49696a2371a9c05cc7629
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ab360c259af37ce3995d3cd2560bc2e765e0bceb
+ms.sourcegitcommit: e3290eb58ae569a59d6ae2e6922e7d8be8f1980f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712650"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "7551786"
 ---
 # <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1---design-format"></a>ER Använd horisontellt expanderbara intervall för att dynamiskt lägga till kolumner i Excel-rapporter (Del 1 – Designformat)
 
@@ -26,7 +26,7 @@ ms.locfileid: "6712650"
 
 Följande steg beskriver hur en användare som är tilldelad rollen som systemadministratör eller elektronisk rapporteringutvecklare kan konfigurera ett elektroniskt rapporteringsformat (ER) för att skapa rapporter som OPENXML-kalkylblad (Excel), där erforderliga kolumner kan skapas dynamiskt som horisontellt expanderbara intervall. Dessa steg kan utföras på valfritt företag.
 
-För att slutföra dessa steg måste du först avsluta dessa tre uppgiftsguider: 
+För att slutföra dessa steg måste du först avsluta dessa tre uppgiftsguider:
 
 "ER Skapa en konfigurationsleverantör och välj den som aktiv"
 
@@ -38,23 +38,24 @@ Du måste också hämta och spara en lokal kopia av mallen med en exempelrapport
 
 Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.
 
-
 ## <a name="create-a-new-report-configuration"></a>Skapa en ny rapportkonfiguration
+
 1. Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.
-2. Välj "Financial dimensions sample model" i trädet.
+2. Välj `Financial dimensions sample model` i trädet.
 3. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
-4. Ange "Format based on data model Financial dimensions sample model" i fältet New.
+4. I fältet Nytt anger du `Format based on data model Financial dimensions sample model`.
     * Använd den modell som skapades i förväg som datakälla för den nya rapporten.  
-5. Ange "Sample report with horizontally expandable ranges" i namnfältet.
+5. I fältet Namn skriver du `Sample report with horizontally expandable ranges`.
     * Provrapport med horisontellt expanderbara intervall  
-6. Ange "To make Excel output with dynamically adding columns" i fältet Description.
+6. I fältet Beskrivning skriver du `To make Excel output with dynamically adding columns`.
     * Skapa Excel-utmatningar med dynamiskt tillagda kolumner  
 7. Välj Entry i fältet Data model definition.
 8. Klicka på Skapa konfiguration.
 
 ## <a name="design-the-report-format"></a>Designa rapportformatet
+
 1. Klicka på Designer.
-2. Aktivera knappen "Show details".
+2. Aktivera knappen `Show details`.
 3. Klicka på Importera i åtgärdsfönstret.
 4. Klicka på Importera från Excel.
 5. Klicka på Bilagor.
@@ -67,85 +68,84 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 10. Klicka på OK.
     * Lägg till ett nytt intervall för att dynamiskt skapa Excel-utmatning med det antal kolumner du valde (i användardialogformuläret) för ekonomiska dimensioner. Varje cell för respektive kolumn representerar namnet på en enskild ekonomisk dimension.  
 11. Klicka på Lägg till för att öppna dialogrutan.
-12. Välj "Excel\Range" i trädet.
-13. Ange "DimNames" i Excel-intervallsfältet.
+12. Välj `Excel\Range` i trädet.
+13. Ange `DimNames` i Excel-intervallsfältet.
     * DimNames  
-14. Ange "Horizontal" i fältet Replication direction.
+14. Ange `Horizontal` i fältet Replikeringsriktning.
 15. Klicka på OK.
-16. Välj "Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal" i trädet
+16. Välj `Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal` i trädet.
 17. Klicka på Flytta upp.
-18. Välj "Excel = "SampleFinDimWsReport"\Cell<DimNames>" i trädet.
+18. Välj `Excel = "SampleFinDimWsReport"\Cell<DimNames>` i trädet.
 19. Klicka på Cut.
-20. Välj "Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal" i trädet
+20. Välj `Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal` i trädet.
 21. Klicka på Paste.
-22. Visa "Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal" i trädet
-23. Visa "Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical" i trädet
-24. Expandera "Excel = "SampleFinDimWsReport"\Range<JournalLine>Vertical\Range<TransactionLine>: Vertical" i trädet.
-25. Välj "Excel = "SampleFinDimWsReport"\Range<JournalLine>Vertical\Range<TransactionLine>: Vertical" i trädet.
+22. Expandera `Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal` i trädet.
+23. Expandera `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical` i trädet.
+24. Expandera `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical` i trädet.
+25. Välj `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical` i trädet.
     * Lägg till ett nytt intervall för att dynamiskt skapa Excel-utmatning med det antal kolumner du valde (i användardialogformuläret) för ekonomiska dimensioner. Varje cell för respektive kolumn representerar värdet för respektive rapporterande transaktion i en enskild ekonomisk dimension.  
 26. Klicka på Add Range.
-27. Ange "DimValues" i fältet för Excel-intervall.
+27. Ange `DimValues` i Excel-intervallsfältet.
     * DimValues  
-28. Ange "Horizontal" i fältet Replication direction.
+28. Ange `Horizontal` i fältet Replikeringsriktning.
 29. Klicka på OK.
-30. Välj "Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<DimValues>" i trädet.
+30. Välj `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<DimValues>` i trädet.
 31. Klicka på Cut.
-32. Välj "Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal" i trädet.
+32. Välj `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal` i trädet.
 33. Klicka på Paste.
-34. Visa "Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal" i trädet.
+34. Expandera `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal` i trädet.
 
 ## <a name="map-format-elements-to-data-sources"></a>Mappa formatelement till datakällor
+
 1. Klicka på fliken Mappning.
-2. Expandera "model: Data model Financial dimensions sample model" i trädet.
-3. Expandera "model: Data model Financial dimensions sample model\Journal: Record list" i trädet.
-4. Expandera "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list" i trädet.
-5. Expandera "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list" i trädet.
-6. Välj "Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal\Cell<DimValues>" i trädet.
-7. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list\Code: String" i trädet.
+2. Expandera `model: Data model Financial dimensions sample model` i trädet.
+3. Expandera `model: Data model Financial dimensions sample model\Journal: Record list` i trädet.
+4. Expandera `model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list` i trädet.
+5. Expandera `model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list` i trädet.
+6. Välj `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal\Cell<DimValues>` i trädet.
+7. Välj `model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list\Code: String` i trädet.
 8. Klicka på Bind.
-9. Välj "Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal" i trädet.
-10. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list" i trädet.
+9. Välj `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal` i trädet.
+10. Välj `model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list` i trädet.
 11. Klicka på Bind.
-12. Välj "Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Credit>" i trädet.
-13. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Credit: Real" i trädet.
+12. Välj `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Credit>` i trädet.
+13. Välj `model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Credit: Real` i trädet.
 14. Klicka på Bind.
-15. Välj "Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Debit>" i trädet.
-16. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Debit: Real" i trädet.
+15. Välj `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Debit>` i trädet.
+16. Välj `model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Debit: Real` i trädet.
 17. Klicka på Bind.
-18. Välj "Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Currency>" i trädet.
-19. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Currency: String" i trädet.
+18. Välj `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Currency>` i trädet.
+19. Välj `model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Currency: String` i trädet.
 20. Klicka på Bind.
-21. Välj "Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransDate>" i trädet.
-22. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Date: Date" i trädet.
+21. Välj `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransDate>` i trädet.
+22. Välj `model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Date: Date` i trädet.
 23. Klicka på Bind.
-24. Välj "Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransVoucher>" i trädet.
-25. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Voucher: String" i trädet.
+24. Välj `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransVoucher>` i trädet.
+25. Välj `model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Voucher: String` i trädet.
 26. Klicka på Bind.
-27. Välj "Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransBatch>" i trädet.
-28. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Batch: String" i trädet.
+27. Välj `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransBatch>` i trädet.
+28. Välj `model: Data model Financial dimensions sample model\Journal: Record list\Batch: String` i trädet.
 29. Klicka på Bind.
-30. Välj "Excel = "SampleFinDimWsReport"\Range<JournalLine>Vertical\Range<TransactionLine>: Vertical" i trädet.
-31. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list" i trädet.
+30. Välj `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical` i trädet.
+31. Välj `model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list` i trädet.
 32. Klicka på Bind.
-33. Välj "Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Cell<Batch>" i trädet.
-34. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Batch: String" i trädet.
+33. Välj `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Cell<Batch>` i trädet.
+34. Välj `model: Data model Financial dimensions sample model\Journal: Record list\Batch: String` i trädet.
 35. Klicka på Bind.
-36. Välj "Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical" i trädet.
-37. Välj "model: Data model Financial dimensions sample model\Journal: Record list" i trädet.
+36. Välj `Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical` i trädet.
+37. Välj `model: Data model Financial dimensions sample model\Journal: Record list` i trädet.
 38. Klicka på Bind.
-39. Expandera "model: Data model Financial dimensions sample model\Dimensions setting: Record list" i trädet.
-40. Välj "model: Data model Financial dimensions sample model\Dimensions setting: Record list\Code: String" i trädet.
-41. Välj "Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal\Cell<DimNames>" i trädet.
+39. Expandera `model: Data model Financial dimensions sample model\Dimensions setting: Record list` i trädet.
+40. Välj `model: Data model Financial dimensions sample model\Dimensions setting: Record list\Code: String` i trädet.
+41. Välj `Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal\Cell<DimNames>` i trädet.
 42. Klicka på Bind.
-43. Välj "model: Data model Financial dimensions sample model\Dimensions setting: Record list" i trädet.
-44. Välj "Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal" i trädet
+43. Välj `model: Data model Financial dimensions sample model\Dimensions setting: Record list` i trädet.
+44. Välj `Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal` i trädet.
 45. Klicka på Bind.
-46. Välj "Excel = "SampleFinDimWsReport"\Cell<CompanyName>" i trädet.
-47. Välj "model: Data model Financial dimensions sample model\Company: String" i trädet.
+46. Välj `Excel = "SampleFinDimWsReport"\Cell<CompanyName>` i trädet.
+47. Välj `model: Data model Financial dimensions sample model\Company: String` i trädet.
 48. Klicka på Bind.
 49. Klicka på Spara.
 50. Stäng sidan.
-
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

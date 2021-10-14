@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 898ca7b33e39ec33990fecc4c3a7229620fbfddd5ce8ad14423af38047187e55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf3fc5f333333b9a832ecb9c185473e476ac231d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761984"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559519"
 ---
 # <a name="payroll-worker-address"></a>Lönearbetarens adress
 
@@ -34,22 +34,28 @@ Den här entiteten tillhandahåller löneplats och lönearbete för en viss meda
 
 ## <a name="properties"></a>Egenskaper
 
-| Egenskap</br>**Fysiskt namn**</br>**_Typ_** | Använd | beskrivning |
+| Egenskap</br>**Fysiskt namn**</br>**_Typ_** | Använd | Beskrivning |
 | --- | --- | --- |
-| **Ort**</br>mshr_city</br>*Sträng* | Skrivskydd</br>Obligatoriskt | Den ort som angetts för adressen.   |
-| **Personalnummer**</br>mshr_personnelnumber</br>*Sträng* | Skrivskydd</br>Obligatoriskt | Medarbetarens unika personalnummer.  |
-| **Land/region**</br>mshr_countryregionid</br>*Sträng* | Skrivskydd</br>Obligatoriskt | Land/region som angetts för adressen.  |
-| **Giltig från**</br>mshr_postaladdressvalidfrom</br>*Datum Tid Offset* | Skrivskydd </br>Obligatoriskt | Det datum då adressen börjar gälla. |
-| **Jobbadress** </br> mshr_isworkedinaddressbr </br>*[alternativuppsättningen mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Skrivskydd</br>Obligatoriskt | Anger om adressen anger platsen där medarbetaren arbetar. |
-| **Region**</br>mshr_county</br>*Sträng* | Skrivskydd</br>Obligatoriskt | Den region som angetts för adressen.  |
-| **ID för lönearbetarens adress**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Obligatoriskt</br>Systemgenererad | Ett systemgenererat GUID-värde som unikt identifierar adressen.  |
-| **Primärt fält**</br>mshr_primaryfield</br>*Sträng* | Skrivskydd</br>Obligatoriskt |  |
-| **Gata**</br>mshr_street</br>*Sträng* | Skrivskydd</br>Obligatoriskt | Den gata som angetts för adressen. |
-| **Giltig till**</br>mshr_postaladdressvalidto</br>*Datum Tid Offset* | Skrivskydd </br>Obligatoriskt | Det datum då adressen slutar gälla.  |
-| **Plats-id**</br>mshr_locationidbr>*Sträng* | Skrivskydd <br>Obligatoriskt | Adressens ID.  |
-| **Postnummer**</br>mshr_zipcode<br>*Sträng* | Skrivskydd <br>Obligatoriskt |Det identifieringsnummer som definierats för medarbetaren.  |
-| **Bostadsadress**</br>mshr_islivedinaddressbr </br> *[alternativuppsättningen mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Skrivskydd</br>Obligatoriskt | Anger om adressen anger platsen där medarbetaren bor. |
-| **Delstat**</br>mshr_state</br>*Sträng* | Skrivskydd</br>Obligatoriskt | Den delstat som angetts för adressen.  |
+| **Personalnummer**</br>mshr_personnelnumber</br>*Sträng* | Skrivskydd | Medarbetarens unika personalnummer. |
+| **Plats-id**</br>mshr_locationidbr>*Sträng* | Skrivskydd | Adressens ID. |
+| **Bostadsadress**</br>mshr_islivedinaddressbr </br> *[alternativuppsättningen mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Skrivskydd | Ett värde som anger om adressen är där medarbetaren bor. |
+| **Jobbadress** </br> mshr_isworkedinaddressbr </br>*[alternativuppsättningen mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Skrivskydd | Ett värde som anger om adressen är där medarbetaren arbetare. |
+| **Land/region**</br>mshr_countryregionid</br>*Sträng* | Skrivskydd</br>Obligatoriskt | Land/region som angetts för adressen. |
+| **Postnummer**</br>mshr_zipcode<br>*Sträng* | Skrivskydd | Det identifieringsnummer som definierats för medarbetaren. |
+| **Gata**</br>mshr_street</br>*Sträng* | Skrivskydd | Den gata som angetts för adressen. |
+| **Ort**</br>mshr_city</br>*Sträng* | Skrivskydd | Den ort som angetts för adressen. |
+| **Delstat**</br>mshr_state</br>*Sträng* | Skrivskydd | Delstat eller provins som angetts för adressen. |
+| **Län**</br>mshr_county</br>*Sträng* | Skrivskydd | Det land som angetts för adressen. |
+| **Giltig från**</br>mshr_postaladdressvalidfrom</br>*Datum Tid Offset* | Skrivskydd | Det datum då adressen börjar gälla. |
+| **Giltig till**</br>mshr_postaladdressvalidto</br>*Datum Tid Offset* | Skrivskydd | Det datum då adressen gäller till. |
+| **Primärt fält**</br>mshr_primaryfield</br>*Sträng* | Skrivskydd | Primärt fält. |
+| **ID för lönearbetarens adress**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Systemgenererad | Ett systemgenererat globalt unikt ID (GUID) som identifierar adressen unikt. |
+
+## <a name="relations"></a>Relationer
+
+| Egenskapsvärde | Relaterad entitet | Navigeringsegenskap | Samlingstyp |
+| --- | --- | --- | --- |
+| _mshr_fk_worker_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Worker_id | mshr_FK_PayrollEmployeeEntity_Address |
 
 ## <a name="example-query"></a>Exempelfrågeställning
 

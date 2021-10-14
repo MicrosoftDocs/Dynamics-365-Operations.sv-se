@@ -2,19 +2,19 @@
 title: Tjänstbeskrivning för Finance and Operations-appar
 description: Det här ämnet innehåller tjänstbeskrivning för Finance and Operations-appar.
 author: tomhig
-ms.date: 09/03/2021
+ms.date: 09/29/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 4df681641490fe3b43f4d927ad09e43007f83367
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472515"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581826"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Tjänstbeskrivning för Finance and Operations-appar
 
@@ -28,7 +28,7 @@ Finance and Operations-program är ERP(Enterprise Resource Planning) SaaS-produk
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
 - [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-Tillsammans med [Business Intelligence](/power-bi/fundamentals/power-bi-service-overview), [infrastruktur](https://azure.microsoft.com/global-infrastructure/), [beräkning](/azure/service-fabric/service-fabric-overview) och [databastjänster](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview) gör apparna att organisationer kan köra branschspecifika och operationella affärsprocesser. Med stöd av sin implementeringspartner bestämmer kunderna konfigurationen av affärsprogramlogiken som passar deras unika affärsprocesser bäst. Funktionalitet och affärsprocesser kan utökas eller förlängas via en eller en kombination av följande lösningar:
+Tillsammans med [Business Intelligence](/power-bi/fundamentals/power-bi-service-overview), [infrastruktur](https://azure.microsoft.com/global-infrastructure/), [beräkning](/azure/service-fabric/service-fabric-overview) och [databastjänster](https://devblogs.microsoft.com/azure-sql/running-1m-databases-on-azure-sql-for-a-large-saas-provider-microsoft-dynamics-365-and-power-platform/) gör apparna att organisationer kan köra branschspecifika och operationella affärsprocesser. Med stöd av sin implementeringspartner bestämmer kunderna konfigurationen av affärsprogramlogiken som passar deras unika affärsprocesser bäst. Funktionalitet och affärsprocesser kan utökas eller förlängas via en eller en kombination av följande lösningar:
 
 - Inbyggd [personanpassningsupplevelse](personalize-user-experience.md)
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md)-verktyg
@@ -197,17 +197,17 @@ I tabellen nedan beskrivs några typiska scenarier och aktiviteter för tjänste
 | Etablera alla produktionsinstanser och icke-produktionsinstanser. | X | |
 | Validera distribuerade produktionsinstanser och icke-produktionsinstanser. | | X |
 | **Tjänstuppdateringar** | |
-| Microsoft tillämpar tjänstuppdateringar på angivna icke-produktions- och produktionsinstanser. | X | X |
-| Ladda ner uppdateringen från LCS, definiera, utveckla och testa uppdateringen och tillhandahålla koduppdateringspaketet tillbaka till LCS. | | X |
-| Begär att tilläggsuppdateringar tillämpas på produktionsinstansen. | | X |
+| Tillämpa tjänstuppdateringar på angivna icke-produktions- och produktionsinstanser. | X | |
+| Använd tjänstuppdateringar manuellt från LCS på instansen. Definiera, utveckla, testa uppdateringen och för tillbaka koduppdateringspaketet till LCS. | | X |
+| Begär och schemalägg tilläggsuppdateringar tillämpas på produktionsinstansen. | | X |
 | Skapa en kod och säkerhetskopiering av data för produktionsinstansen innan några uppdateringar tillämpas. | X | |
 | Om fel uppstår, återta produktionsinstansen till kod- och datasäkerhetskopian. | X | |
 | **Datahantering (säkerhetskopiering, återställning och uppdatering)** | | |
 | Säkerhetskopiera databasen. | X | |
 | Fastställ hög tillgänglighet och en haveriberedskapsplan. | X | |
-| Övervaka prestanda i produktionsinstansdatabasen. | X | X |
-| Justera prestanda i produktionsinstansdatabasen. | X | X |
-| Initiera kopieringen av produktionsinstansdatabasen till en icke-produktionsinstans. | | X |
+| Övervaka prestanda i produktionsinstansdatabasen. | X | |
+| Justera prestanda i produktionsinstansdatabasen. | X | |
+| Uppdatera produktionsinstansdatabasen i tidpunktsuppdatering till en instans som inte är produktion. | | X |
 | **Uppdatera infrastruktur** | | |
 | Planera regelbundna uppdateringar av infrastruktur. | X | |
 | **Skalning upp och ned (användare, lagring och instanser)** | | |
@@ -215,7 +215,7 @@ I tabellen nedan beskrivs några typiska scenarier och aktiviteter för tjänste
 | Uppdatera användarändringar i verktyget LCS-prenumerationsberäkning. | | X |
 | Rapportera alla prestandaproblem som påverkar användningen av tjänsten. | | X |
 | Förebyggande hantering av resurser som krävs för tillämpliga tjänster. | X | |
-| Undersöka och felsöka problem. | X | X |
+| Undersöka och felsöka problem. | X | |
 | **Säkerhet (användaråtkomst)** | | |
 | Ge användaråtkomst till tjänsten. | | X |
 | Ge LCS-projektåtkomst till hanteringen och driften av instanser som har distribuerats via LCS. | | X |

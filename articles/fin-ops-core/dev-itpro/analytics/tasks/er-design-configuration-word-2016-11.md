@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 83e75eee54516539be939e9547a8b637bbf2ab107ae96c07c4bbefaad75f1022
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4d4eb4fd4ea32db5aa19e9d2b1300818b3aaf6fc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768451"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594994"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Återanvända ER-konfigurationer med Excel-mallar för att generera rapporter i Word-format
 
@@ -90,7 +90,7 @@ För närvarande används Excel-dokumentet som en mall för att skapa utdata i O
 
 Du kan nu mappa elementen i den anpassade **Rapport** XML-koden till innehållskontrollerna i Word-dokumentet.
 
-Om du känner till processen att utforma Word-dokument som formulär som innehåller [innehållskontroll](/office/client-developer/word/content-controls-in-word) som är mappade till delar av [anpassade XML-koder](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019), slutföra alla steg i nästa procedur för att skapa dokumentet. Mer information finns i [Skapa formulär som användare fyller i eller skriver ut i Word](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Hoppa annars över proceduren.
+Om du känner till processen att utforma Word-dokument som formulär som innehåller [innehållskontroll](/office/client-developer/word/content-controls-in-word) som är mappade till delar av [anpassade XML-koder](/visualstudio/vsto/custom-xml-parts-overview), slutföra alla steg i nästa procedur för att skapa dokumentet. Mer information finns i [Skapa formulär som användare fyller i eller skriver ut i Word](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Hoppa annars över proceduren.
 
 ## <a name="get-a-word-document-that-has-a-custom-xml-part-and-do-data-mapping"></a><a id='get-word-doc'></a>Hämta ett Word-dokument som har en anpassad XML-kod och mappa data
 

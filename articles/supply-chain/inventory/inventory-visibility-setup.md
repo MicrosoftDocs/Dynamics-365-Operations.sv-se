@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b2b85f533a3318701ed08857b899cf9bdd103863
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: d6f58eab38d1aee97a5d39704255bf06a168b36c
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474830"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581875"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Installera och konfigurera Lagersynlighet
 
@@ -35,63 +35,11 @@ Innan du installerar Lagersynlighet måste du slutföra följande upgifter:
 
 - Skaffa ett LCS implementeringsprojekt där minst en miljö har distribuerats.
 - Kontrollera att kraven för att ställa in tillägg har slutförts. Information om dessa förutsättningar finns i [Tilläggsöversikt](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Lagersynlighet kräver inte länkning av dubbelriktad skrivning.
-- Kontakta produktteamet för Lagersynlighet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) för att få följande erforderliga filer:
-
-    - `InventoryServiceApplication.PackageDeployer.zip`
-    - `Inventory Visibility Integration.zip` (om versionen av Supply Chain Management som du kör är tidigare än version 10.0.18)
 
 > [!NOTE]
 > Bland de länder och regioner som för närvarande stöds finns Kanada (CCA, ECA), USA (WUS, EUS), Europeiska unionen (NEU, WEU), Storbritannien (SUK, WUK) och Australien (EAU, SEAU), Japan (EJP, WJP) och Brasilien (SBR, SCUS).
 
-Om du har några frågor som rör dessa förutsättningar kontaktar du produktteamet för Lagersynlighet.
-
-## <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Ställ in Dataverse
-
-Om du vill konfigurera Dataverse så att det kan användas med Lagersynlighet använder du verktyget Package Deployer för att distribuera paketet för Lagersynlighet. Följande delgrupper beskriver hur du slutför respektive uppgift.
-
-> [!NOTE]
-> För närvarande stöds endast Dataverse-miljöer som har skapats med hjälp av LCS. Om din Dataverse-miljö har skapats på något annat sätt (till exempel genom att använda administratörscentret för Power Apps), och om den är länkad till din Supply Chain Management-miljö, måste du först kontakta produktteamet för Lagersynlighet om du vill åtgärda mappningsproblemet. Du kan sedan installera Lagersynlighet.
-
-### <a name="migrate-from-an-old-version-of-the-dataverse-solution"></a>Migrera från en gammal version av Dataverse-lösningen
-
-Om du har installerat en äldre version av lösningen Lagersynlighet för Dataverse ska du använda dessa anvisningar för att uppdatera din version. Det finns två fall:
-
-- **Fall 1:** Om du konfigurerar Dataverse genom att importera `Inventory Visibility Dataverse Solution_1_0_0_2_managed.zip`-lösningen följer du dessa steg:
-
-    1. Hämta följande tre filer:
-
-        - `Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip`
-        - `InventoryServiceBase_managed.cab`
-        - `InventoryServiceApplication.PackageDeployer.zip`
-
-    1. Importera `Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip` och `InventoryServiceBase_managed.cab` till Dataverse genom att följa dessa steg:
-
-        1. Öppna URL-adressen för din Dataverse miljö.
-        1. Öppna sidan **Lösningar**.
-        1. Välj **Importera**.
-
-    1. Använd verktyget Package Deployer för att distribuera `InventoryServiceApplication.PackageDeployer.zip`-paketet. Instruktioner finns i avsnittet [Använd verktyget Package Deployer för att distribuera paketet](#deploy-package) senare i det här avsnittet.
-
-- **Fall 2:** Om du konfigurerat Dataverse genom att använda verktyget Package Deployer innan du installerat det äldre `.*PackageDeployer.zip`-paketet, hämtar du `InventoryServiceApplication.PackageDeployer.zip` och uppdaterar. Instruktioner finns i avsnittet [Använd verktyget Package Deployer för att distribuera paketet](#deploy-package).
-
-### <a name="use-the-package-deployer-tool-to-deploy-the-package"></a><a name="deploy-package"></a>Använd verktyget Package Deployer för att distribuera paketet
-
-1. Installera utvecklarverktyget enligt beskrivningen i [Hämta verktyg från NuGet](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget).
-1. Ta bort spärren för den `InventoryServiceApplication.PackageDeployer.zip`-fil som du hämtade från Teams-gruppen genom att följa stegen nedan:
-
-    1. Markera och håll inne (eller högerklicka på) filen, och välj sedan **Egenskaper**.
-    1. I dialogrutan **Egenskaper**, på fliken **Allmänt**, letar du upp avsnittet **Säkerhet**, väljer **Ta bort spärr** och tillämpar ändringen. Om det inte finns något **Säkerhets** avsnitt på fliken **Allmänt** är filen inte spärrad. Gå i så fall vidare till nästa steg.
-
-    ![Ta bort spärren för den hämtade filen](media/unblock-file.png "Ta bort spärren för den hämtade filen")
-
-1. Packa upp `InventoryServiceApplication.PackageDeployer.zip` för att hitta följande artiklar:
-
-    - `InventoryServiceApplication`-mapp
-    - `[Content_Types].xml`-fil
-    - `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`-fil
-
-1. Kopiera var och en av dessa artiklar till `.\Tools\PackageDeployment`-katalogen. (Denna katalog skapades när du installerade utvecklingsverktygen.)
-1. Kör `.\Tools\PackageDeployment\PackageDeployer.exe` och följ anvisningarna på skärmen för att importera lösningarna.
+Om du har några frågeställningar om dessa förutsättningar kontaktar du produktteamet för lagersynlighet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>Installera tillägget för Lagersynlighet
 
@@ -102,7 +50,11 @@ När du har registrerat ett program och lagt till en klienthelighet i Azure AD f
 1. Logga in på [LCS](https://lcs.dynamics.com/Logon/Index).
 1. Välj det projekt där miljön har distribuerats på startsidan.
 1. Välj den miljö där du vill installera tillägget på projektsidan.
-1. Rulla ned på miljösidan tills du ser avsnittet **Miljö-tillägg** i avsnittet **Power Platform-integrering**. Där kan du hitta namnet på Dataverse-miljön.
+1. Rulla ned på miljösidan tills du ser avsnittet **Miljö-tillägg** i avsnittet **Power Platform-integrering**. Där kan du hitta namnet på Dataverse-miljön. Bekräfta att Dataverse miljönamnet är det som du vill använda för lagersynlighet.
+
+    > [!NOTE]
+    > För närvarande stöds endast Dataverse-miljöer som har skapats med hjälp av LCS. Om din Dataverse-miljö har skapats på något annat sätt (till exempel genom att använda Power Apps administratörscentret), och om den är länkad till din Supply Chain Management-miljö, måste du först kontakta produktteamet för Lagersynlighet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) om du vill åtgärda mappningsproblemet. Du kan sedan installera Lagersynlighet.
+
 1. I avsnittet **Miljötillägg**, välj **Installera ett nytt tillägg**.
 
     ![Sidan Miljö i LCS](media/inventory-visibility-environment.png "Sidan Miljö i LCS")
@@ -118,6 +70,7 @@ När du har registrerat ett program och lagt till en klienthelighet i Azure AD f
 
 1. Godkänn villkoren genom att markera kryssrutan **Villkor**.
 1. Välj **Installera**. Tilläggets status visas som **Installerar**. När installationen är slutförd uppdaterar du sidan. Statusvärdet ska ändras till **Installerad**.
+1. I avsnittet Dataverse, välj **Appar** i den vänstra navigeringen och kontrollera att **lagrets synlighet** Power Apps har installerats. Om avsnittet **Appar** inte finns kontaktar du produktteamet för Lagersynlighet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
 > [!IMPORTANT]
 > Om du har fler än en LCS-miljö kan du skapa olika Azure AD-program för varje miljö. Om du använder samma program-ID och klientorganisations-ID för att installera tillägget Lagersynligt för olika miljöer, uppstår ett tokenproblem för äldre miljöer. Endast det sista som installerades kommer att vara giltigt.
@@ -126,13 +79,13 @@ När du har registrerat ett program och lagt till en klienthelighet i Azure AD f
 
 För att avinstallera tillägget Lagersynlighet väljer du **Avinstallera** på LCS-sidan. Avinstallationen avslutar tillägget Lagersynlighet, tillägget avregistreras från LCS och eventuella tillfälliga data som lagras i datacachen för Lagersynlighet tas bort. Primära lagerdata som lagras i din Dataverse-prenumeration tas emellertid inte bort.
 
-Om du vill avinstallera lagerdata som lagras i din Dataverse-prenumeration öppnar du [Power Apps](https://make.powerapps.com), väljer **Miljö** i navigeringsfältet och väljer sedan den Dataverse-miljö som är kopplad till din LCS-miljö. Gå sedan till **Lösningar** och ta bort följande fem lösningar:
+Om du vill avinstallera lagerdata som lagras i din Dataverse-prenumeration öppnar du [Power Apps](https://make.powerapps.com), väljer **Miljö** i navigeringsfältet och väljer sedan den Dataverse-miljö som är kopplad till din LCS-miljö. Gå sedan till **Lösningar** och ta bort följande fem lösningar i denna order:
 
-- Ankarlösning för programmet Lagersynlighet i Dynamics 365-lösningar
-- Lösningen Lagersynlighet för Dynamics 365 FNO SCM
-- Konfiguration för lagertjänst
-- Fristående Lagersynlighet
-- Baslösningen Lagersynlighet för Dynamics 365 FNO SCM
+1. Ankarlösning för programmet Lagersynlighet i Dynamics 365-lösningar
+1. Lösningen Lagersynlighet för Dynamics 365 FNO SCM
+1. Konfiguration för lagertjänst
+1. Fristående Lagersynlighet
+1. Baslösningen Lagersynlighet för Dynamics 365 FNO SCM
 
 När du har raderat dessa lösningar kommer de data som lagras i tabeller också att raderas.
 

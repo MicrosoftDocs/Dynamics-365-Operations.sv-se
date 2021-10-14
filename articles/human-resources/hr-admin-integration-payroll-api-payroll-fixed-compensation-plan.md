@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dcb253fabbb183003048119c7a627bf0ab960050
-ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
+ms.openlocfilehash: a3cc431307d840d393a454e91f202c07c38d2512
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7429249"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559349"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>Kompensationsplan med fast lön
 
@@ -42,7 +42,7 @@ Fysiskt namn: mshr_payrollfixedcompensationplanentity.
 | **Befattnings-ID**</br>mshr_positionid</br>*Sträng* | Skrivskydd | Positions-ID som är kopplat till medarbetaren samt registrering för fast kompensationsplan. |
 | **Giltig från**</br>mshr_validfrom</br>*Datum Tid Offset* |  Skrivskydd | Det datum då medarbetarens fasta kompensation börjar gälla.  |
 | **Giltig till**</br>mshr_validto</br>*Datum Tid Offset* | Skrivskydd | Det datum då medarbetarens fasta kompensation slutar gälla. |
-| **Lönefrekvens**</br>mshr_payfrequency</br>*Sträng* | Skrivskydd | Den frekvens som medarbetaren ska betalas.  |
+| **Lönefrekvens**</br>mshr_payfrequency</br>*Sträng* | Skrivskydd | ID för [kompensationslönefrekvensen](hr-admin-integration-payroll-api-compensation-pay-frequency.md) för den angivna lönesatsen. |
 | **Valuta**</br>mshr_currency</br>*Sträng* | Skrivskydd | Den valuta som har definierats för den fasta kompensationsplanen. |
 | **Lönelisteentiteten för fast kompensation**</br>mshr_payrollfixedcompensationplanentityid</br>*GUID* | Systemgenererad | Ett systemgenererat GUID-värde som ger kompensationsplanen ett unikt ID. |
 

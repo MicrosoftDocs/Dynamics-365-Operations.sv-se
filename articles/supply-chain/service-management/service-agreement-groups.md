@@ -1,7 +1,7 @@
 ---
 title: Serviceavtal – översikt
-description: Serviceavtalsgrupper är användbara för att sortera och filtrera serviceavtal.
-author: ShylaThompson
+description: Det här ämnet innehåller en översikt över hur serviceavtal fungerar.
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a3baaccf490af8231ca4389fa409b71f6286ff8d37bdcde78d8af95916d55cf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 82cb77dbeb03a2d43ec5a6f797d11984a33b6698
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734101"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578714"
 ---
 # <a name="service-agreements-overview"></a>Serviceavtal – översikt
 
@@ -32,9 +32,9 @@ I fältet **serviceavtalsgrupp** på sidan **servicehanteringsparametrar** kan d
 
 ## <a name="example"></a>Exempel
 
--  Du kan gruppera serviceavtal efter vilken servicenivå som erbjuds i dem. 
--  Anta att du har ställt in tre avtalsgrupper i företaget, och kallat dem för Guld, Silver och Brons.
--  En ny servicekontochef har anställts i företaget. Servicechefen är ansvarig för alla klienter i avtalsgruppen Guld. Du kan filtrera avtalsposter efter avtalsgruppen Guld för att hitta alla avtal där den nya chefen ska anges som ansvarig.
+- Du kan gruppera serviceavtal efter vilken servicenivå som erbjuds i dem.
+- Anta att du har ställt in tre avtalsgrupper i företaget, och kallat dem för Guld, Silver och Brons.
+- En ny servicekontochef har anställts i företaget. Servicechefen är ansvarig för alla klienter i avtalsgruppen Guld. Du kan filtrera avtalsposter efter avtalsgruppen Guld för att hitta alla avtal där den nya chefen ska anges som ansvarig.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

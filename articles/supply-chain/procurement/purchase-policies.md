@@ -1,7 +1,7 @@
 ---
 title: Inköpspolicyer – översikt
 description: Det här avsnittet innehåller information om inköpspolicyer. En inköpspolicy är en grupp regler som styr processen för inköpsrekvisition. Administratörer som är hjälper till med inköpspolicyer för anskaffning implementerar sin anskaffningsstrategi genom att skapa en policystruktur som stämmer överens med organisationens strategiska inköpskrav.
-author: kamaybac
+author: Henrikan
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4fd090f6e8b91c6a75eced17fadd76f686c5441f1526736534ad1a947d80cea0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d3c35cabc9b5b8c69dbf4d597388192b4130d49
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761792"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575498"
 ---
 # <a name="purchasing-policies-overview"></a>Inköpspolicyer – översikt
 
@@ -63,7 +63,7 @@ Policy 123 definieras för organisationshierarkinAvdelning för Försäljning St
 
 Policy 456 definieras för organisationshierarkin Global inköpskontroll för försäljnings- och marknadsavdelningen. I policy 456 anger inköpsrekvisitionkontrollregeln inte de begränsningar som måste aktiveras för minsta orderkvantiteter. I denna regel avmarkeras alternativet **Framtvinga restriktioner för minsta orderkvantitet**.  
 
-Sam arbetar i Försäljning Storbritannien - försäljningavdelning på Contoso brittiska kontor. I principerna för båda organisationshierarkierna Avdelning och Global inköpskontroll gäller för hans avdelning. När han skapar en inköpsrekvisition, måste systemet fastställa vilken policy som ska användas. Systemadministratören ställer in inköpspolicyparametrarna för att ange att inköpspolicyer måste tillämpas i följande prioritetsordning:
+Sam arbetar i Försäljning Storbritannien - försäljningavdelning på Contosos brittiska kontor. I principerna för båda organisationshierarkierna Avdelning och Global inköpskontroll gäller för hans avdelning. När han skapar en inköpsrekvisition, måste systemet fastställa vilken policy som ska användas. Systemadministratören ställer in inköpspolicyparametrarna för att ange att inköpspolicyer måste tillämpas i följande prioritetsordning:
 
 1.  Global inköpskontroll
 2.  Avdelning

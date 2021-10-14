@@ -16,14 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f32c3fd523c3272665b4b45b6d3e136591d12cda191766970ebfaf74b81f0558
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32bf890d1ff74155a75862afd6b0e861fbfc10e2
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726876"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567329"
 ---
 # <a name="coverage-time-fences"></a>Tidsgräns för disponering
+
+[!include [banner](../../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du ställer in *Tidsgräns för disponering* när du använder Planeringsoptimering. Planerare kan definiera planeringshorisonten (täckningstidens stängsel i dagar) och utesluta tillgång och efterfrågan som faller bortom den horisonten. Därför hjälper tidsgräns för disponering till att förhindra "buller" som orsakas av leverans förslag som du inte behöver reagera på i månader. Exempel är nästa års prognos och kundorder som läggs långt utöver den normala ledtiden.
 

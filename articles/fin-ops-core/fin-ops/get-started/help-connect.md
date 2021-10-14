@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f793068a5d4df6206229249c5b37bee0ef34da8d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 3a6c37822e84ba08fa0720ed2b3912cbec1448e3
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343822"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594867"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurera hjälpfunktionen för Finance and Operations-appar
 
@@ -30,7 +30,7 @@ I det här avsnittet finns en översikt över komponenterna i hjälpsystemet fö
 
 ## <a name="help-architecture"></a>Hjälparkitektur
 
-Finance and Operations-appar innehåller begreppsmässiga översikter och andra ämnen som publiceras på [https://docs.microsoft.com/dynamics365](/dynamics365/)-webbplatsen. Du når detta innehåll från **Hjälp**-fönstret i produkten. Följande bild visar delarna i hjälpsystemet.
+Finance and Operations-appar innehåller begreppsmässiga översikter och andra ämnen som publiceras på [Microsoft Dynamics 365 dokumentation](/dynamics365/)-webbplatsen. Du når detta innehåll från **Hjälp**-fönstret i produkten. Följande bild visar delarna i hjälpsystemet.
 
 [![Hjälparkitektur.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -39,7 +39,7 @@ Hjälpsystemet i produkten hämtar artiklar från docs.microsoft.com och andra a
 ## <a name="adding-task-guides"></a>Lägga till uppgiftsguider
 
 > [!NOTE]
-> Fliken **Uppgiftsguider** finns för närvarande inte i Human Resources eller Commerce. <!--We are currently working to enable this functionality in a future release.--> Uppgiftsguiderna i Komma igång i Human Resources täcker emellertid fortsatt basfunktionerna. Procedurhjälp för såväl Human Resources som Commerce finns att tillgå på [https://docs.microsoft.com/dynamics365](/dynamics365/)-webbplatsen.
+> Fliken **Uppgiftsguider** finns för närvarande inte i Human Resources eller Commerce. <!--We are currently working to enable this functionality in a future release.--> Uppgiftsguiderna i Komma igång i Human Resources täcker emellertid fortsatt basfunktionerna. Procedurhjälp för såväl Human Resources som Commerce finns att tillgå på [Microsoft Dynamics 365 dokumentation](/dynamics365/)-webbplatsen.
 
 På sidan **Systemparametrar** kan systemadministratörer konfigurera åtkomst till relevanta bibliotek för uppgiftsguider för en implementering.
 

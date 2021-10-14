@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4b64863c668b71335b8935037cc1c2de1fcc620e0f3f91e97ca38614334e6cc9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3e1dbb97ba56b5910dda368b9ec15e27a683dde5
+ms.sourcegitcommit: 5c0a0adeb859cc1ade6f067444f3bf08a895b35a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774979"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7557402"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Startsida för Global lagerredovisning
 
@@ -46,8 +46,11 @@ Global lagerredovisning är just nu tillgänglig i följande geografiska område
 - Storbritannien
 - Australien
 - Kanada
+- Sydamerika
 
 Om du försöker installera tillägget från ett annat geografiskt område visar Microsoft Dynamics Lifecycle Services (LCS) visar ett meddelande om att detta geografiska område inte stöds. Global lagerredovisning har inte stöd för lokala distributioner av Supply Chain Management.
+
+Om du har några problem med att aktivera Global Lagerredovisning i någon av de geografiska regioner som stöds här kan du skicka ett e-postmeddelande med ditt miljö-ID till [globala lagerredovisningsteamet](mailto:GlobalInvAccount@microsoft.com) för validering.
 
 ## <a name="licensing"></a>Licensiering
 

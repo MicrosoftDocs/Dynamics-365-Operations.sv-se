@@ -4,18 +4,18 @@ description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 
 author: kamaybac
 ms.date: 08/09/2021
 ms.topic: article
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f586a00943e23b458ede1470b353d7c018ba923
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 894686446436a390ec2d019672e3a2b8b0e5f5ef
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500565"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579746"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
@@ -26,20 +26,6 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 - **Förhandsversion av versionen:** Augusti 2021
 - **Allmän tillgänglighet för versionen (självuppdatering):** September 2021
 - **Allmän tillgänglighet för versionen (automatisk uppdatering):** Oktober 2021
-
-## <a name="known-deployment-issue"></a>Känt distribueringsproblem
-
-När du distribuerar version 10.0.21 på IaaS kan du få följande distributionsvarning:
-
-**Varningskod:** 95017
-
-**varningsmeddelande:** Skriptet \[SetupDiagnostics\] kunder inte köras mot VM
-
-Distributionen fungerar trots varningen. Följande kända problem kan dock uppstå i Lifecycle Services (LCS):
-
-- På sidan **Miljöövervakning** visas inte länken **Visa detaljerad versionsinformation**, så du kan inte se specifika versioner av de moduler som har installerats i miljön. Om du inte använder dessa data kan efterföljande snabbkorrigeringar misslyckas eftersom processen som använder snabbkorrigeringar använder dessa data för att verifiera att förutsättningarna för modulversionen är uppfyllda. Eftersom det inte går att använda PEAP/Preview-bygget i produktionen eller tillämpa snabbkorrigeringar bör påverkan bli minimal.
-- Flikarna **Prestandamått** och **Indexanalys** på sidan **Miljöövervakning** under SQL Insights visar inga data. Alla andra funktioner för **Miljöövervakning** fungerar som de ska.
-- Sidan **Fullständig systemdiagnostik** går inte att komma åt. Associerade data om status för nattliga insamlarkörningar och problem som upptäckts av dess regler visas inte heller.
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 

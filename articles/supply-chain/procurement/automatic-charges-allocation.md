@@ -1,23 +1,23 @@
 ---
 title: Automatisk allokering av tillägg
 description: Med funktionen för tillägg i Microsoft Dynamics 365 Supply Chain Management kan du automatiskt fördela tillägg till inköpsorder eller försäljningsorder.
-author: dasani-madipalli
-ms.date: 10/01/2020
+author: Henrikan
+ms.date: 09/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-10-01
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 04e17947073fca63ab68f0b5d0d72eb8366a1600117f61851179e8b0ed2c8184
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 6032539e57961998e7130e9cb6578248aaa2843e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753949"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592550"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatisk allokering av tillägg
 
@@ -26,6 +26,16 @@ ms.locfileid: "6753949"
 Beroende på vilken kund du arbetar med, eller den artikel som du säljer, kanske du vill använda särskilda tilläggsavgifter. Med funktionen *tillägg* i Microsoft Dynamics 365 Supply Chain Management kan du automatiskt fördela tillägg till inköpsorder eller försäljningsorder.
 
 Automatiska tillägg eller automatiska tillägg tillämpas automatiskt när du skapar en försäljningsorder eller en inköpsorder. Du kan definiera automatiska tillägg för specifika leverantörer, kunder, grupper av leverantörer eller artiklar. Du kan också definiera auto tillägg som gäller för alla kunder eller leverantörer, artiklar.
+
+## <a name="set-up-parameters"></a>Konfigurera parametrar
+
+Sidan **Anskaffnings- och inköpsparametrar** har några inställningar som är särskilt relevanta när du vill fördela avgifter automatiskt. Om du vill slutföra denna inställning, följ dessa steg.
+
+1. Gå till **Anskaffning och källa \> Inställningar \> Anskaffnings- och källparametrar**.
+1. Öppna fliken **Priser**.
+1. På snabbfliken **Priser**, gör följande inställningar:
+    - **Sök efter automatiska tillägg för rubrik** – Anger om tillägg automatiskt ska fördelas för inköpsorderrubriker. Ställ in detta till *Ja* om du vill använda automatisk allokering av avgifter.
+    - **Sök efter automatiska tillägg för rad** – Anger om tillägg automatiskt ska fördelas för inköpsorderrader. Ställ in detta till *Ja* om du vill använda automatisk allokering av avgifter.
 
 ## <a name="set-up-charges-codes"></a>Ställa in en tilläggskoder
 

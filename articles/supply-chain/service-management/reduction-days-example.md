@@ -1,7 +1,7 @@
 ---
 title: Exempel på avdragsdagar
 description: Exempel på avdragsdagar.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,30 +15,29 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ba0cfde66476d052f0c9a048977026341a5295c21603385c5b3774a15be5232
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 97fb032d02df1dbedaeccec14496cb1d63e8cf70
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727808"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567953"
 ---
-# <a name="reduction-days-example"></a>Exempel på avdragsdagar 
+# <a name="reduction-days-example"></a>Exempel på avdragsdagar
 
 [!include [banner](../includes/banner.md)]
-
 
 Du har skapat en abonnemangstransaktion för en kunds underhållsabonnemang på det sätt som beskrivs i tabellen nedan.
 
 <table>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -66,21 +65,20 @@ Du har skapat en abonnemangstransaktion för en kunds underhållsabonnemang på 
 </tbody>
 </table>
 
-
 Kunden rapporterar att han eller hon inte behöver servicetäckning under två dagar (10 och 11 mars). Du går med på att minska abonnemanget med dessa två dagar.
 
 Du skapar en ny transaktion av typen **Reduceringsdagar** på det sätt som beskrivs i tabellen nedan.
 
 <table>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -108,16 +106,10 @@ Du skapar en ny transaktion av typen **Reduceringsdagar** på det sätt som besk
 </tbody>
 </table>
 
-
 När transaktioner för mars 2011 faktureras minskas försäljningspriset på 200 euro med 12,90 euro. Det debiterbara beloppet för abonnemangstransaktionen blir därför 187,10 euro, och två transaktioner på sammanlagt 187,10 euro faktureras.
 
 ## <a name="see-also"></a>Se även
 
 [Minska antalet dagar på abonnemangsavgifter](reduce-the-days-on-subscription-fees.md)
-
-  
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

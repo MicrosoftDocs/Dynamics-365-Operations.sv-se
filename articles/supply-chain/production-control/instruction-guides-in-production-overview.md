@@ -1,7 +1,7 @@
 ---
 title: Tillhandahålla guider för mixad verklighet för arbetare i produktion
 description: I det här avsnittet beskrivs hur du integrerar modulen för produktionshantering i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides.
-author: cabeln
+author: johanhoffmann
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
@@ -15,18 +15,19 @@ ms.custom:
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: cabeln
+ms.author: johanho
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 801d2671d238e2cd616bfc59448b2c91c7c1347de6066033a377a807a56bd633
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: edb4d1217617ee3bcb7f528da4aad42fb4fb6b82
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717134"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576914"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Tillhandahålla guider för mixad verklighet för arbetare i produktion
 
+[!include [banner](../includes/banner.md)]
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Arbetare i produktionsprocesser kommer att ha nytta av relevanta instruktioner som ges vid rätt tid inom ramen för deras arbete. *Instruktionerna* gäller i flera arbetsdomäner, t.ex. sammansättning, service, åtgärder, certifiering och säkerhet. I alla dessa grundläggande affärsfunktioner kan de pågående utbildningsinstruktionerna hjälpa medarbetarna att utföra mer och arbeta bättre.
