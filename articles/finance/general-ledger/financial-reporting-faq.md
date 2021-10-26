@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: dd493e855e45362c1681dc9cdfbbcb71f7627d64624cd093eadab32fd966c174
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3690a541b503281f204221a72bfb5a371984d9e4
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733621"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605289"
 ---
 # <a name="financial-reporting-faq"></a>Frågor och svar om ekonomisk rapportering
 
@@ -101,5 +101,28 @@ Vid historisk valutaomräkning kan förberäknade periodsaldon användas i stäl
 När data som visas i rapporterna uppdateras kan det bli en fördröjning eftersom beloppen måste räknas om genom kontroll av transaktionsuppgifter. Den här fördröjningen utlöses varje gång satserna uppdateras eller när ytterligare transaktioner bokförs. Om exempelvis tusentals konton ställs in för historisk omräkning ett par gånger om dagen kan det ta upp till en timme innan uppgifterna i rapporten uppdateras. Om det däremot finns ett mindre antal specifika konton kan bearbetningstiden för uppdateringar av rapportdata minska till minuter eller mindre.
 
 När rapporter genereras med hjälp av valutaomräkning för konton av historisk typ, blir det på samma sätt extra beräkningar per transaktion. Beroende på antal konton kan tiden för att generera rapporten mer än fördubblas.
+
+## <a name="what-are-the-estimated-data-mart-integration-intervals"></a>Vad är de uppskattade integrationsintervallen för data mart?
+
+I Financial Reporter används 16 uppgifter för att kopiera data från Dynamics 365 Finance till Financial Reporter-databasen. I följande tabell visas dessa 16 uppgifter och intervallen som anger hur ofta varje uppgift körs. Det går inte att ändra intervallen.
+
+| Namn                                                       | Intervall | Intervalltid |
+|------------------------------------------------------------|----------|-----------------|
+| Kontokategorier i AX 2012 till Kontokategori            | 41       | Minuter         |
+| Konton i AX 2012 till Konto                                | 7        | Minuter         |
+| Företag i AX 2012 till Företag                               | 300      | Sekunder         |
+| Företag i AX 2012 till Organisation                          | 23       | Minuter         |
+| Dimensionskombinationer i AX 2012 till Dimensionskombination    | 1        | Minuter         |
+| Dimensionsvärden i AX 2012 till Dimensionsvärde                | 11       | Minuter         |
+| Dimensioner i AX 2012 till Dimension                            | 31       | Minuter         |
+| Valutakurser i AX 2012 till Valutakurs                    | 17       | Minuter         |
+| Räkenskapsår i AX 2012 till Räkenskapsår                        | 13       | Minuter         |
+| Redovisningstransaktioner i AX 2012 till Fakta                | 1        | Minuter         |
+| Organisationshierarkier i AX 2012 till Träd                   | 3 600    | Sekunder         |
+| Scenarier i AX 2012 till Scenario                              | 29       | Minuter         |
+| Kvalificerare för transaktionstyp i AX 2012 till Kvalificerare för faktatyp | 19       | Minuter         |
+| Underhållsuppgift                                           | 1        | Minuter         |
+| MR-rapportdefinitioner till ekonomiska rapporter i AX7             | 45       | Sekunder         |
+| MR-rapportversioner till ekonomiska rapportversioner i AX         | 45       | Sekunder         |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

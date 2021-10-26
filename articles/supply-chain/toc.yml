@@ -2813,11 +2813,13 @@
               href: sales-marketing/trade-allowance.md
             - name: Skapa ett nytt handelsavtal
               href: sales-marketing/tasks/create-new-trade-agreement.md
+            - name: Förbättringar av prestanda för rensning av försäljningshistorik
+              href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
         - name: Servicehantering
           items:
-            - name: Tjänsthantering – översikt
+            - name: Sevicehantering – översikt
               href: service-management/service-management-home-page.md
-            - name: Ställ in kundtjänst
+            - name: Ställa in kundtjänst
               items:
                 - name: Ställ in serviceavtal
                   items:
@@ -3711,6 +3713,8 @@
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: Försäljning och marknadsföring
               items:
+                - name: Rensningen av försäljningsuppdateringshistorik misslyckas eller har prestandaproblem
+                  href: troubleshooting/sales/sales-update-history-cleanup-job-performance-issues.md
                 - name: En buntad artikel stöds inte i en koncernintern process
                   href: troubleshooting/sales/bundle-item-intercompany-process.md
                 - name: Det går inte att annullera en koncernintern inköpsorder som är kopplad till en försäljningsorder
