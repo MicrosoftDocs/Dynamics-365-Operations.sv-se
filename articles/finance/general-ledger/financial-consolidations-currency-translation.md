@@ -1,8 +1,8 @@
 ---
 title: Ekonomisk konsolidering och valutaregistrering – översikt
 description: Det här avsnittet beskriver online ekonomiska konsolideringar och valutaöversättningar i redovisning.
-author: aprilolson
-ms.date: 07/25/2019
+author: jiwo
+ms.date: 10/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0df16db842c159b4db469139a0b5463a82e3fe07b4e23f8f7cf0272caaf23602
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9ec8e6a371f08ad7eab0d133e1b71861943274e
+ms.sourcegitcommit: f76fecbc28c9a6048366e8ead70060b1f5d21a97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748990"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7615945"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Ekonomisk konsolidering och valutaregistrering – översikt
 
@@ -182,5 +182,17 @@ Nedan följer några konsolideringsscenarier som Ekonomisk rapportering stöder:
 ## <a name="generating-consolidated-financial-statements"></a>Generera konsoliderade bokslut
 För information om scenarier där du kan skapa konsoliderade bokslut, se [skapa konsoliderade bokslut](./generating-consolidated-financial-statements.md).
 
+## <a name="performance-enhancement-for-large-consolidations"></a>Prestandaförbättringar för stora konsolideringar
+
+Miljöer med många redovisningstransaktioner kan komma att köras långsammare än optimalt. Du löser detta problem genom att konfigurera parallell bearbetning av batchar som använder ett användardefinierat antal datum. Om du vill vara säker på att lösningen fungerar som avsett lägger du till en tilläggspunkt i konsolideringen för att returnera en behållare med datumintervall. Basimplementeringen bör innehålla ett (1) datumintervall för start- och slutdatum för konsolideringen. Datumintervall i basimplementeringen valideras för att säkerställa att de inte innehåller luckor eller överlappar varandra. Datumintervallen används för att skapa parallella batchpaket för respektive företag.
+
+Du kan anpassa antalet datumintervall för att uppfylla organisationens krav. Genom att anpassa antalet datumintervall kan du förenkla testningen och minimera effekten på befintlig kod, detta eftersom det inte finns någon allokeringslogik. De enda nya tester som krävs validerar genereringen av batchpaket, validerar datumintervall och testar en delmängd av datumintervallen i syfte att verifiera att batcharna kan samlas för den slutliga batchuppgiften. 
+
+Denna funktion ökar konsolideringsprocessen i redovisningen när processen körs i en batch. Förbättringen förbättrar prestandan i konsolideringsprocessen för redovisning genom att dela upp konsolideringen i flera uppgifter som kan bearbetas parallellt. I standardmetoden för att köra en konsolidering bearbetar respektive uppgift åtta dagar med redovisningsaktivitet. En anknytningspunkt som gör att du kan anpassa de nummeruppgifter som skapas har emellertid lagts till.
+
+Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda arbetsytan **funktionshantering** för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
+
+- **Modul:** Redovisning
+- **Funktionsnamn:** Prestandaförbättring för stora konsolideringar
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

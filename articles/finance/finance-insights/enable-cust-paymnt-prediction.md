@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 0b324891b38f851f8cce9210e3d09a26d567a291
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: b1a40db34d42c3f25e910309a9e5ef7b0e7e0361
+ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386597"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "7599386"
 ---
 # <a name="enable-customer-payment-predictions"></a>Aktivera förutsägelser för kundbetalning
 
@@ -41,7 +41,7 @@ I det här ämnet beskrivs hur du aktiverar och konfigurerar funktionen för kun
 2. Aktivera funktionen för kundbetalningsinsikter:
 
     1. Gå till **Systemadministration \> Arbetsytor \> Funktionshantering**.
-    2. Hitta funktionen med namnet **Kundbetalningsinsikter (förhandsversion)**.
+    2. Hitta funktionen **(Förhandsversion) Insikter om kundbetalning**.
     3. Välj **Aktivera nu**.
 
     Funktionen för kundbetalningsinsikter är nu aktiverad och kan konfigureras.

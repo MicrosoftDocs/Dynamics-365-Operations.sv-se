@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 562b56a85ad2f40cb673f8f2101bf92c39853d1f1a087d0498b6f7d19d1cca01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b00de29a4f12719e469c063861b52e0fc20c5f1
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773355"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641121"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>Aktivera Power BI för global lagerredovisning
 
@@ -49,7 +49,10 @@ För att ställa in Power BI-integrationen, följ dessa steg.
 1. Konfigurera rapporten **Global lagerredovisning** Power BI genom att följa stegen nedan:
 
     1. Gå till **Min arbetsyta**, hitta datauppsättningen för Global lagerredovisning och sedan i menyn **Alternativ** välj **Inställningar**.
-    1. I **Inställningar för global lagerredovisning** expanderar du **Parametrar** och uppdaterar alla parametrar efter behov.
+    1. Under **Inställningar för global lagerredovisning** expanderar du **Parametrar** och uppdaterar alla parametrar efter behov. Se i synnerhet till att kontrollera följande inställningar:
+        1. Skriv över standardvärdena för **Dataverse-Url** och **Miljö-ID** med hjälp av värdena som finns på sidan **Miljöinformation** i LCS (i avsnittet **Power Platform-integrering**).
+        1. Välj länken **Redigera autentiseringsuppgifter** bredvid etiketten **Cds** i avsnittet **Autentiseringsuppgifter för datakälla**. Logga sedan in på ditt Dataverse-konto med hjälp av autentiseringsmetoden **OAuth2**.
+    1. Kontrollera att de Power BI-rapporter som finns i **Min arbetsyta \> Rapporter \> Global lagerredovisning** nu fungerar som de ska och visar innehåll från systemet.
 
 1. Registrera ansökan enligt beskrivningen i [Konfigurera PowerBI.com-integration](../../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md#registration-process).
 1. Integrera rapportfilen **Global lagerredovisning** Power BI i Dynamics 365 Supply Chain Management genom att följa stegen nedan:

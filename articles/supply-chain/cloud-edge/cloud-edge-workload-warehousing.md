@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500438"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641171"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
 
@@ -171,7 +171,8 @@ Följande funktioner för lagerstyrning stöds för närvarande inte i arbetslas
 - Bearbetning av negativ lagerbehållning.
 - Bearbetning av lagerställe med leveransnoteringar.
 - Bearbetning av lagerställearbete med materialhantering/lagerautomatisering.
-- Användning av avbildning av produktmalldata (t.ex. på Warehouse Management-mobilappen).
+- Avbildning av produktmallsdata (t.ex. i mobilappen Warehouse Management).
+- Datadelning för produkter mellan företag.
 
 > [!WARNING]
 > Vissa lagerställefunktioner är inte tillgängliga för lagerställen som kör lagerstyrningsarbetsbelastningar på en skalningsenhet, och den har inte heller stöd för hantering av lagerställen eller på arbetsbelastningen vid lagerstyrning.
@@ -188,8 +189,7 @@ I följande tabell visas vilka utgående funktioner som stöds och var de stöds
 |--------------------------------------------------------------|-----|------------------------------|
 | Bearbetning av källdokument                                   | Ja | Nr |
 | Last- och transporthanteringsprocesser                | Ja, men bara lastplaneringsprocesserna. Bearbetning av transporthantering stöds inte  | Nr |
-| Hemtagningskostnad och varor på väg mottagande                                         | Ja | Nr |
-| Släpp till distributionslager                                         | Ja | Nr |
+| Frisläpp till distributionslager                                         | Ja | Nr |
 | Planerad direktleverans                                        | Nr  | Nr |
 | Konsolidering av leverans                                       | Ja, när du använder lastplanering | Ja |
 | Påfyllnadsbearbetning för leverans                                     | Nr  |Ja, utom **Lastuppbyggnad och sortering** |
@@ -222,9 +222,10 @@ I följande tabell visas vilka ingående funktioner som stöds och var de stöds
 
 | Process                                                          | Hubb | Arbetsbelastning för lagerkörning på en skalningsenhet<BR>*(Artiklar som markerats "Ja" gäller endast för lagerställeorder)* |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Käll&nbsp;dokument&nbsp;bearbetning                             | Ja | Nr |
-| Last- och transporthanteringsprocesser                    | Ja | Nr |
-| Inkommande försändelsebekräftelse                                    | Ja | Nr |
+| Käll&nbsp;dokument&nbsp;bearbetning                             | Ja | Nej |
+| Last- och transporthanteringsprocesser                    | Ja | Nej |
+| Hemtagningskostnad och varor på väg mottagande                       | Ja | Nej |
+| Inkommande försändelsebekräftelse                                    | Ja | Nej |
 | Frisläppning av inköpsorder till lagerställe (bearbetning av lagerorder) | Ja | Nr |
 | Annullering av orderrader för lagerställe<p>Observera att detta endast stöds om ingen registrering har skett mot raden</p> | Ja | Nr |
 | Inleverans och inlagring av inköpsorderartikel                       | <p>Ja,&nbsp;när&nbsp;det&nbsp;inte finns lagerorder</p><p>Nej, när det finns en lagerorder</p> | <p>Ja, när en inköpsorder inte ingår i en <i>last</i></p> |

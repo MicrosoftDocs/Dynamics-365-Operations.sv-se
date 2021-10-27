@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 28fea4a09d7c105096859495d9b4a43f4c86c834184809827fe77ce1bbff5b84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: baa3cab78574ac3779aaea000f0b2b88ff625c37
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749835"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605265"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Ställ in parametrarna för ett ER-format per juridisk person
 
@@ -58,8 +58,6 @@ Du kan använda ER-ramverket för att ställa in programspecifika parametrar fö
 1.  Välj den juridiska personen **DEMF**.
 2.  I konfigurationsträdet väljer du formatet **format för att lära dig hur du letar upp LE-data**.
 3.  I Åtgärdsfönstret, på fliken **Konfigurationer**, i gruppen **Appspecifika parametrar**, markerar du **Konfigurera**.
-
-    ![Sidan Importera ER-programspecifika parametrar.](./media/GER-AppSpecParms-LookupForm.PNG)
     
     På sidan **Programspecifika parametrar** kan du konfigurera reglerna för datakällan **väljare** för formatet **format för att lära dig hur du söker efter LE-data**.
     
@@ -75,14 +73,14 @@ Du kan använda ER-ramverket för att ställa in programspecifika parametrar fö
 
     Sökningen visar en lista över momskoder för urvalet. Den här listan returneras av datakällan **Model.Data.Tax** som har konfigurerats i ER-basformat. Eftersom datakällan innehåller fältet **namn** visas namnet på varje skattekod i sökningen.
 
-    ![Sidan Importera ER-programspecifika parametrar.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
+    ![Sidan Importera ER-programspecifika parametrar, kodfältsökning.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
     
 7.  Välj momskoden **VAT19**.
 8.  I fältet **Sökningsresultat** för den nya posten väljer du nedrullningsbara pilen för att öppna uppslaget. Sökningen visar en lista med värden för TaxationLevel formatuppräkning för urval.
 
     Observera att om tyska har valts som det prioriterade språket för den användare som du är inloggad på som, kommer etiketterna för värdena i sökningen att vara på tyska, förutsatt att de har översatts i ER-basformatet. Dessutom, om etiketten för en datakälla för sökning har översatts, kommer den etiketten att visas på användarens önskade språk på fliken **sökningar**.
 
-    ![Sidan Importera ER-programspecifika parametrar.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
+    ![ER-programspecifik parametersida, sökresultat som visas på det önskade språket tyska.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
 
 9.  Välj värdet **vanlig beskattning**.
 
@@ -120,7 +118,7 @@ Du kan använda ER-ramverket för att ställa in programspecifika parametrar fö
     
     Genom att lägga till den här posten definierar du följande regel: När datakällan för sökning skicka eftersom ett argument inte uppfyller någon av de tidigare reglerna, kommer uppslagning datakällan tillbaka **Övrig** som den begärda momsnivån.
 
-    ![Sidan Importera ER-programspecifika parametrar.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
+    ![ER-programspecifik parametersida, snabbfliken Villkor med den sista posten i Övrigt.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
     
 16. I fältet **Stat**, välj **Slutförd**.
 
@@ -160,7 +158,7 @@ Du kan använda ER-ramverket för att ställa in programspecifika parametrar fö
 
     Sökningen visar nu en lista över momskoder för **USMF** företagsmoms för urvalet.
 
-    ![Sidan Importera ER-programspecifika parametrar.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
+    ![ER-programspecifik parametersida, sökning i kodfält som visar lista över momskoder för USMF-företag.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
     
 8.  Välj momskoden **EXEMPT**.
 9.  I fältet **Sökningsresultat** för den nya posten, välj värdet **Ingen beskattning**.
@@ -225,13 +223,13 @@ I föregående exempel har du tillgång till programspecifika parametrar för et
 
 1.  Återanvänd antingen ett befintligt menyalternativ **ERSolutionAppSpecificParametersDesigner** eller implementera dina egna **ERSolutionAppSpecificParametersDesigner** menyalternativ.
 
-    ![Visual Studio-sida.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
+    ![Visual studio-spage, fönstret Egenskaper.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
     
 2.  Gör något av följande:
 
     1.  Skapa en ny knapp för meny objekt och länka den till motsvarande post från tabellen **ERSolutionTable** genom att ange egenskapen **Datakälla** till **ERSolutionTable**.
     
-        ![Visual Studio-sida.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
+        ![Visual studio-sida, designpaneler.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
         
     2.  Skapa en enkel knapp och åsidosätt den **klickade** metoden som den visas i följande exempel.
     

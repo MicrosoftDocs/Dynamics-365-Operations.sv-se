@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: ecca65508c048e2946d912f2bf0292d811fb4eabac9602a35f1ce26f4ebe1da6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9fabdef96b02747c84a76bf42997633842f185e9
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769934"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605215"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Spåra skapade rapportresultat och jämföra dem med baslinjevärden
 
@@ -76,7 +76,7 @@ För att slutföra stegen i detta exempel måste du i RCS först slutföra stege
 3. I listrutan i fältet **namn** anger du **modell för att lära dig ER-baslinjer**.
 4. Välj **skapa konfiguration** om du vill bekräfta att en ny post för ER-datamodell skapas.
 
-![Den nedrullningsbara dialogrutan Skapa konfiguration.](media/GER-BaselineSample-ModelAdd.PNG "Skärmbild av den nedrullningsbara dialogrutan skapa konfiguration")
+![Skapa konfigurationsdialogruta, lägg till en ny ER-modellkonfiguration.](media/GER-BaselineSample-ModelAdd.PNG "Skärmbild av den nedrullningsbara dialogrutan skapa konfiguration")
 
 ### <a name="design-a-data-model"></a>Designa en datamodell
 
@@ -99,7 +99,7 @@ För att slutföra stegen i detta exempel måste du i RCS först slutföra stege
 3. I fältet **namn** anger du **format för att lära dig ER-baslinjer**.
 4. Välj **skapa konfiguration** om du vill bekräfta att en ny post för ER-format skapas.
 
-![Den nedrullningsbara dialogrutan Skapa konfiguration.](media/GER-BaselineSample-FormatAdd.PNG "Skärmbild av den nedrullningsbara dialogrutan skapa konfiguration")
+![Skapa konfigurationsdialogruta, lägg till en ny ER-formatkonfiguration.](media/GER-BaselineSample-FormatAdd.PNG "Skärmbild av den nedrullningsbara dialogrutan skapa konfiguration")
 
 ### <a name="design-a-format"></a>Designa ett format
 
@@ -107,41 +107,41 @@ I det här exemplet ska du skapa ett enkelt ER-format för att generera XML-doku
 
 1. På sidan **Konfigurationer** på åtgärdspanelen väljer du **Designer**.
 2. Välj **Lägg till rot**.
-2. Gör följande i listrutan:
+3. Gör följande i listrutan:
 
     1. I trädet, välj **Allmänt\\Fil**.
     2. Skriv **Utdata** i fältet **Namn**.
     3. Välj **OK**.
 
-3. Markera **Lägg till**.
-4. Gör följande i listrutan:
+4. Markera **Lägg till**.
+5. Gör följande i listrutan:
 
     1. I trädet, välj **XML\\Element**.
     2. Skriv **Dokument** i fältet **Namn**.
     3. Välj **OK**.
 
-5. I trädet, välj **Utdata\\Dokument**.
-6. Markera **Lägg till**.
-7. Gör följande i listrutan:
+6. I trädet, välj **Utdata\\Dokument**.
+7. Markera **Lägg till**.
+8. Gör följande i listrutan:
 
     1. I trädet välj **XML\\Attribut**.
     2. I fältet **Namn**, ange **ID**.
     3. Välj **OK**.
 
-    ![Formatdesignersida.](media/GER-BaselineSample-FormatLayoutDesign.PNG "Skärmbild av sidan Formatdesigner")
+    ![Formatdesignersida, XML-attribut som valts i träd.](media/GER-BaselineSample-FormatLayoutDesign.PNG "Skärmbild av sidan Formatdesigner")
 
-8. Välj **ta bort** på fliken **mappning**.
-9. Välj **Lägg till rot**.
-10. I listrutan i trädet väljer du **allmän\\parameter för användarindata** och följer sedan de här stegen:
+9. Välj **ta bort** på fliken **mappning**.
+10. Välj **Lägg till rot**.
+11. I listrutan i trädet väljer du **allmän\\parameter för användarindata** och följer sedan de här stegen:
 
     1. I fältet **Namn**, ange **ID**.
     2. I fältet **Etikett** anger du **Ange ID**.
     3. Välj **OK**.
 
-11. I trädet, välj **Output\\Document\\Id**.
-12. Välj **Bind** och välj sedan **Spara**.
+12. I trädet, välj **Output\\Document\\Id**.
+13. Välj **Bind** och välj sedan **Spara**.
 
-![Formatdesignersida.](media/GER-BaselineSample-FormatMappingDesign.PNG "Skärmbild av sidan Formatdesigner")
+![Formatdesignersida, fliken Mappa.](media/GER-BaselineSample-FormatMappingDesign.PNG "Skärmbild av sidan Formatdesigner")
 
 Baserat på den designade strukturen kommer det konfigurerade formatet att generera en XML-fil. Denna XML-kod innehåller elementet **Rot** som har attributet **ID** som är angivet med värdet som användaren anger i dialogrutan ER-körtid.
 
@@ -201,7 +201,7 @@ Baslinjen läggs till i formatet **format för att lära dig ER-baslinjer**.
 10. I fältet **baslinje** anger eller väljer du bilagan **out.Admin**.
 11. Välj **Spara**.
 
-![Sidan Baslinjer för elektroniskt rapporteringsformat.](media/GER-BaselineSample-SetupBaselineLine.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
+![Sidan för baslinjer för elektroniskt rapporteringsformat, snabbfliken Baslinjer med en baslinje vald.](media/GER-BaselineSample-SetupBaselineLine.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Kör det utformade ER-formatet och granska loggen för att analysera resultaten
 
@@ -212,7 +212,7 @@ Baslinjen läggs till i formatet **format för att lära dig ER-baslinjer**.
 5. Välj **OK**.
 6. Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfiguration av felsökningsloggar**.
 
-    ![Sidan körningsloggar för elektronisk rapportering.](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Skärmbild av sidan körningsloggar för elektronisk rapportering")
+    ![Sidan Loggar för elektronisk rapporteringskörning, med lika baslinjeer.](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Skärmbild av sidan körningsloggar för elektronisk rapportering")
 
     > [!NOTE]
     > Körningsloggen innehåller information om resultaten av jämförelsen mellan den genererade filen och den konfigurerade baslinjen. I det här exemplet anger loggen att den genererade filen och baslinjen är lika.
@@ -228,7 +228,7 @@ Baslinjen läggs till i formatet **format för att lära dig ER-baslinjer**.
 5. Välj **OK**.
 6. Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfiguration av felsökningsloggar**.
 
-    ![Sidan körningsloggar för elektronisk rapportering.](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Skärmbild av sidan körningsloggar för elektronisk rapportering")
+    ![Sidan Loggar för elektronisk rapporteringskörning, med olika baslinjeer.](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Skärmbild av sidan körningsloggar för elektronisk rapportering")
 
     > [!NOTE]
     > Körningsloggen innehåller information om resultaten av jämförelsen mellan den genererade filen och den konfigurerade baslinjen. I det här exemplet anger loggen att den genererade filen och baslinjen är olika.

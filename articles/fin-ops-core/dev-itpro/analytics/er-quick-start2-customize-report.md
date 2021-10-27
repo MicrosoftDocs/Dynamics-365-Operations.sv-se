@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ec7f5bcf9f01512d22f502a4b512f2919b3caf348eb1f5c4365238d6fd3f476
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47d8091e9199597857791f58f14587e2dea027e0
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770030"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605241"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Justera ett ER-format för att skapa ett anpassat elektroniskt dokument
 
@@ -160,7 +160,7 @@ Om du vill lägga till standard-ER-konfigurationer i din aktuella instans av Mic
     - **Mappning av betalningsmodell 1611** – Den här konfigurationen innehåller [modellmappningen](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-komponent som beskriver hur datamodellen fylls i med appdata under körning.
     - **BACS (UK)** – Den här konfigurationen innehåller [format](general-electronic-reporting.md#FormatComponentOutbound) och formatmappning för ER-komponenter. Formatkomponenten anger rapportlayouten. Komponenten för formatmappning innehåller modelldatakällan och anger hur rapportlayouten fylls i med hjälp av den här datakällan vid körning.
 
-![Sidan Konfigurationer.](./media/er-quick-start2-imported-solution1.png)
+![Konfigurationssida med angivna ER-konfigurationer som är tillgängliga i trädet.](./media/er-quick-start2-imported-solution1.png)
 
 ## <a name="prepare-a-vendor-payment-for-processing"></a><a id="PrepareVendorPayment"></a>Förbered en leverantörsbetalning för bearbetning
 
@@ -222,7 +222,7 @@ Du måste konfigurera den elektroniska betalningsmetoden så att den använder d
 4. På snabbfliken **filformat** ställer du in alternativet **Allmänt elektroniskt exportformat** till **Ja**.
 5. I fältet **Exportformatkonfiguration** väljer du formatkonfigurationen **BACS (UK)**.
 
-    ![Sidan Betalningsmetoder - leverantörer.](./media/er-quick-start2-method-of-payment1.png)
+    ![Betalningsmetoder - leverantörssida för att konfigurera elektronisk betalningsmetod för bearbetning av leverantörsbetalningar med hjälp av ett standardformat.](./media/er-quick-start2-method-of-payment1.png)
 
 6. Välj **Spara**.
 
@@ -273,7 +273,7 @@ I det här fallet, som representant för Litware, Inc. måste du skapa (härledd
 
 Version 1.1.1 av **BACS (kund från Storbritannien)** ER-formatkonfiguration har skapats. Den här versionen har [status](general-electronic-reporting.md#component-versioning) av **utkast** och kan redigeras. Det aktuella innehållet i det anpassade ER-formatet matchar innehållet i det format som tillhandahålls av Microsoft.
 
-![Sidan Konfigurationer.](./media/er-quick-start2-derived-format-configuration1.png)
+![Konfigurationssida med version 1.1.1 av BACS (brittisk anpassad) ER-formatkonfiguration.](./media/er-quick-start2-derived-format-configuration1.png)
 
 ### <a name="edit-a-custom-format"></a><a id="ConfigureDerivedFormat"></a>Redigera ett anpassat format
 
@@ -349,7 +349,7 @@ Du måste konfigurera den elektroniska betalningsmetoden så att ditt eget ER-fo
 4. På snabbfliken **filformat** ställer du in alternativet **Allmänt elektroniskt exportformat** till **Ja**.
 5. I fältet **Exportformatkonfiguration** väljer du formatkonfigurationen **BACS (kund från Storbritannien)**.
 
-    ![Sidan Betalningsmetoder - leverantörer.](./media/er-quick-start2-method-of-payment2.png)
+    ![Betalningsmetoder - leverantörssida för att konfigurera elektronisk betalningsmetod för bearbetning av leverantörsbetalningar med hjälp av ett anpassat format.](./media/er-quick-start2-method-of-payment2.png)
 
 6. Välj **Spara**.
 
@@ -378,7 +378,7 @@ Du måste konfigurera den elektroniska betalningsmetoden så att ditt eget ER-fo
 
         Lägg märke till att betalningsraden i den genererade filen, i enlighet med strukturen i ditt anpassade ER-format, nu [startar](#PositionSWIFTCode) med SWIFT-kod som var [angav](#DefineSWIFTCode) för bankkontot för leverantören vars betalning har behandlats.
 
-        ![Betalningsfil i TXT-format.](./media/er-quick-start2-payment-file2.png)
+        ![Betalningsfilen i TXT-format som används vid bearbetningen av leverantörsbetalningen.](./media/er-quick-start2-payment-file2.png)
 
 ## <a name="import-new-versions-of-the-standard-er-format-configurations"></a><a id="ImportERSolution2"></a>Importera nya versioner av standardkonfiguration av ER-format
 
@@ -395,7 +395,7 @@ Om du vill lägga till nya versioner av ER-konfigurationer i din aktuella Financ
 5. På snabbfliken **Versioner** välj version **3.3** av den valda ER-formatkonfigurationen.
 6. Välj **Importera** för att hämta den valda versionen från den globala databasen till den aktuella Finance-instansen.
 
-![Sidan Konfigurationsdatabas.](./media/er-quick-start2-import-solution2.png)
+![Konfigurationsdatabassida, snabbfliken Versioner, knappen Importera.](./media/er-quick-start2-import-solution2.png)
 
 > [!TIP]
 > Om du har problem med att komma åt den [Global databasen](er-download-configurations-global-repo.md), kan du [hämta konfigurationer](download-electronic-reporting-configuration-lcs.md) från LCS istället.
@@ -507,7 +507,7 @@ Om du vill börja använda den nya funktionen i version 3.3 av **BACS (UK)** for
 
         Lägg märke till att betalningsraden i den genererade filen börjar med SWIFT-koden som anges för bankkontot för en leverantör vars betalning har behandlats.
 
-        ![Betalningsfil i TXT-format.](./media/er-quick-start2-payment-file3.png)
+        ![Betalningsfilen i TXT-format som används vid bearbetningen av leverantörsbetalningen med hjälp av ett ombaserat ER-format.](./media/er-quick-start2-payment-file3.png)
 
 ## <a name="additional-resources"></a><a id="References"></a>Ytterligare resurser
 

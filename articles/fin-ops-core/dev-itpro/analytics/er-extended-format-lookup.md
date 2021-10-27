@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 59b2cc1dae5774322d47f76e1213f0e8c8a0b8b244a68c113e34484c1e59b209
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 395282eb267e7e356fca6087f99c6f193741ac9d
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767228"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605167"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Tillåt användare att ställa in en ER-formatreferens som frågar ett format från den globala databasen
 
@@ -34,27 +34,27 @@ När du till exempel konfigurerar [parametrar för utländsk handel](../../../fi
 
 Om den aktuella Finance-instansen inte innehåller några affärsprocessrelaterade ER-format för Intrastat, är det här uppslagsfältet tomt.
 
-[![Sidan Utländska handelsparametrar.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
+[![Parametersida för utländsk handel, tomt fält för mappning av rapportformat.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
 
 Om den aktuella Finance-instansen inte innehåller några affärsprocessrelaterade ER-format för Intrastat, erbjuder det här uppslagsfältet ER-formaten.
 
-[![Sidan Utländska handelsparametrar.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
+[![Parametersida för utländsk handel, tomt fält för mappning av rapportformat med alternativ.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
 
 Det här uppslaget erbjuder bara de ER-format som redan har importerats till den aktuella Finance-instansen. Om du vill [importera](./tasks/er-import-configuration-lifecycle-services.md) ER-lösningar till den aktuella Finance-instansen måste du ha behörighet att köra rätt funktion i ER-ramverket [livscykel](general-electronic-reporting-manage-configuration-lifecycle.md) av ER-lösningar som innehåller ER-format.
 
 Från Finance versionen 10.0.9 (april 2020 version) har användargränssnittet i uppslaget för ER-format implementerats med hjälp av ER-ramverkets API utökats. Du kan fortfarande välja de befintliga ER-formaten, som på snabbfliken **Välj formatkonfiguration**. Dessutom erbjuder det utökade uppslaget det nya alternativet att söka i den globala databasen (GR) efter specifika ER-format. Alla ER-format i GR erbjuds på snabbfliken **importera från den globala databasen**.
 
-[![Sidan Utländska handelsparametrar.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
+[![Sidan Utländska handelsparametrar, snabbflik för import från den globala databasen.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
 På samma sätt som snabbfliken **Välj formatkonfiguration** visar snabbfliken **Importera från global databas** visar endast de ER-format som är tillämpliga på affärsprocessen för vilken ett ER-format är valt i detta sökfält. I det här exemplet genereras Intrastat-deklaration. ER-formatet kan användas för det företag som användaren för närvarande är inloggad på, beroende på företagets landssammanhang.
 
 När du väljer ett ER-format på snabbfliken **importera från den globala databasen** importeras det valda ER-formatet [konfiguration](general-electronic-reporting.md#Configuration) importeras från GR till den aktuella Finance-instansen.
 
-[![Sidan Utländska handelsparametrar.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
+[![Parametersida för utländsk handel, Bearbetning av verksamhetssedel.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
 Om importen sedan har slutförts lagras referensen till det importerade ER-formatet i sökfältet. När du öppnar GR för första gången måste du följa länken som anges för att registrera dig för [Regulatory Configuration Service](https://aka.ms/rcs) (RCS) som används för att hantera åtkomsten till GR.
 
-[![Sidan Utländska handelsparametrar.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
+[![Parametersida för utländsk handel, Länk för registrering för RCS.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Som standard innehåller snabbfliken **importera från global databas** listan med ER-format från den tillfälliga lagring som skapas automatiskt, baserat på innehållet i GR för prestandaförbättringar. Detta inträffar när snabbfliken **importera från global databas** öppnas första gången, vilket kan ta flera sekunder.
 

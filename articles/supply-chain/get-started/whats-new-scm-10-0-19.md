@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 7c8994a11c9d1d90fd8b66b17900248f941e307b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0b39c3eee84a66082f1785f7f4d8a6d7dd96b63d
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579794"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7638480"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.19 (juni 2021)
 
@@ -50,7 +50,7 @@ Följande register lista de funktionsförbättringar som ingår i denna version:
 
 | Funktionsområde | Funktionsnamn&nbsp;&nbsp;i&nbsp;funktionshantering | Mer information |
 |---|---|---|
-| Försäljning och marknadsföring | Förbättringar i försäljningshistorik | Rensningen av försäljningshistorik kan ta lång tid om den körs sällan i miljöer med stora försäljningsuppdateringar. Om du vill minska tidslängden och förbättra tillförlitligheten, delar den här funktionen upp rensningen i batchar som körs under en begränsad tid. Om det är möjligt kommer databaskapaciteter att användas för att minimera låsning och undvika att transaktionsregister sammanfogas under rensningen. |
+| Försäljning och marknadsföring | Förbättringar i försäljningshistorik | Rensningen av försäljningshistorik kan ta lång tid om den körs sällan i miljöer med stora försäljningsuppdateringar. Om du vill minska tidslängden och förbättra tillförlitligheten, delar den här funktionen upp rensningen i batchar som körs under en begränsad tid. Om det är möjligt kommer databaskapaciteter att användas för att minimera låsning och undvika att transaktionsregister sammanfogas under rensningen. Mer information finns i [Förbättringar i rensningsprestandan för försäljningshistorik](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Försäljning och marknadsföring | Uppdatera begärt inleveransdatum med bekräftat datum för koncerninterna order | Med denna funktion kan du kontrollera vad som ska hända med fältvärden för försäljning och inköpsdatum vid koncernintern direktleverans. Du kan välja om systemet ska uppdatera de begärda datumen eller hoppa över att uppdatera dem. Om du hoppar över uppdateringen representerar de begärda datumen det som kunden har begärt. Om du aktiverar uppdatering representerar de begärda datumen (vid användning av leveransdatumkontroll) endast det som kunden begärt. Leveransdatumkontrollen, som skiljer sig från *Ingen*, går före det som ursprungligen begärdes. Du kan ställa in detta alternativ med hjälp av den nya inställningen **Uppdatera begärt inleveransdatum med bekräftat datum** i inställningarna för koncernintern leverantör eller kund.<br><br>Om funktionen inaktiveras skriver systemet över begärt inleveransdatum på ursprungliga försäljningsorder baserat på kontrollregeln för leveransdatum, men det begärda leveransdatumet förblir som det är. |
 | Warehouse management | Avrunda kvantiteter neråt till närmaste försäljningsenhet vid frisläpp till lagerställe | Med den här funktionen läggs ett alternativ till som kan begränsa orderkvantiteter vid frisläppning till lagerställe. När den här aktiveras avrundas orderkvantiteter nedåt till närmaste hela försäljningsenhet, och order som inkluderar kvantiteter för mindre än en försäljningsenhet avvisas för frisläppning. |
 | Warehouse management | Påfyllnadsmetoden "Schemalägg skapande av arbete" för hela organisationen | När du aktiverar den här funktionen, *Skapa tidsplan för arbete* läggs till och konfigureras att köra parallellt över alla juridiska enheter. Flera ytterligare inställningar påverkas också. Mer information finns i [Planera skapande av arbete under påfyllnad](../warehousing/configure-wave-schedule-work-creation.md). |

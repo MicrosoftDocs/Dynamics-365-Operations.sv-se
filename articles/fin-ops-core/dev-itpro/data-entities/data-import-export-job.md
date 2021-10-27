@@ -2,7 +2,7 @@
 title: Översikt över jobb för import och export av data
 description: Använda arbetsytan Datahantering för att skapa och hantera dataimport- och dataexportjobb.
 author: peakerbl
-ms.date: 04/22/2021
+ms.date: 10/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f9ae06893a8247828fa4d3c2cb40b9155043c87
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: dec8270417cb7237081aa49203ca93d76c0d02ed
+ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404044"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "7612374"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Översikt över jobb för import och export av data
 
@@ -198,18 +198,12 @@ När du schemalägger rensningsprocessen måste följande parametrar anges för 
 > [!NOTE]
 > Om posterna i mellanlagringsplatserna inte rensas fullständigt bör du kontrollera att rensningsjobbet är schemalagt att köra i upprepning. Som förklaras ovan kommer jobbet att bara rensa så många körnings-ID som möjligt inom de maximalt angivna timmarna i alla rensningskörningar. Jobbet måste vara schemalagt för att kunna köras regelbundet för att alla återstående uppsamlingsfiler ska kunna rensas.
 
-## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Rensning och arkivering av jobbhistorik (finns för förhandsgranskning i plattformsuppdatering 39 eller version 10.0.15)
-Funktionen rensning och arkivering av jobbhistorik ersätter de tidigare versionerna av rensningsfunktion. Det här avsnittet innehåller en beskrivning av de nya funktionerna.
+## <a name="job-history-clean-up-and-archival"></a>Rensning och arkivering för jobbhistorik 
+Funktionen för rensning och arkivering av jobbhistorik ersätter de tidigare versionerna av rensningsfunktionen. Det här avsnittet innehåller en beskrivning av de nya funktionerna.
 
-En av de viktigaste ändringarna i rensningsfunktionen är användning av systembatchjobb för att rensa historiken. Med systembatchjobb kan Finance and Operations-appar automatiskt schemaläggas och köras så snart systemet är klart. Du behöver inte längre tidsplanera batchjobbet manuellt. I det här standardkörnings läget körs batchjobbet varje timme med början vid 12 midnatt och behåller körningshistoriken för de senaste sju dagarna. Den rensade historiken arkiveras för framtida hämtning.
+En av de viktigaste ändringarna i rensningsfunktionen är användningen av systembatchjobbet för att rensa historiken. Med systembatchjobbet kan Finance and Operations-appar automatiskt schemaläggas att köra batchjobbet så snart systemet är redo. Du behöver inte längre tidsplanera batchjobbet manuellt. I detta standardkörningsläge körs batchjobbet varje timme med början vid midnatt, och bibehåller sedan körningshistoriken för de senaste sju dagarna. Den rensade historiken arkiveras för framtida hämtning. Från och med version 10.0.20 är den här funktionen alltid på.
 
-> [!NOTE]
-> Eftersom den här funktionen är i förhandsversion kommer inte systembatchjobb att radera någon körningshistorik innan den aktiveras via DMFEnableExecutionHistoryCleanupSystemJob. När funktionen är allmänt tillgänglig i en senare version, krävs inte den här förhandsversionen och systembatchjobbet startar och arkiveras när systemet är klart, baserat på det definierade schemat enligt beskrivningen ovan. 
-
-> [!NOTE]
-> I en senare version kommer tidigare versioner av rensningsfunktionen att tas bort från Finance and Operations-appar.
-
-Den andra ändringen i rensningsprocessen är arkiveringen av den rensade körningshistoriken. Rensningsjobbet kommer att arkivera de raderade posterna till den blob-lagring som DIXF använder för vanliga integreringer. Den arkiverade filen kommer att vara i DIXF-paketformat och den kommer att vara tillgänglig i blobben för hämtning i sju dagar. Standardlivslängden på sju dagar för den arkiverade filen kan ändras i parametrarna till maximalt 90 dagar.
+Den andra ändringen i rensningsprocessen är arkiveringen av den rensade körningshistoriken. Rensningsjobbet kommer att arkivera de raderade posterna till den blob-lagring som DIXF använder för vanliga integreringar. Den arkiverade filen kommer att vara i DIXF-paketformat och den kommer att vara tillgänglig i blobben för hämtning i sju dagar. Standardlivslängden på sju dagar för den arkiverade filen kan ändras i parametrarna till maximalt 90 dagar.
 
 ### <a name="changing-the-default-settings"></a>Ändra standardinställningarna
 Den här funktionen är för närvarande i förhandsversion och måste uttryckligen aktiveras på ett sätt som aktiverar DMFEnableExecutionHistoryCleanupSystemJob. Funktionen för rensning av mellanlagring måste också aktiveras i funktionshanteringen.

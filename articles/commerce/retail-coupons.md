@@ -1,8 +1,8 @@
 ---
 title: Ställa in kuponger för butiksförsäljning
-description: Det här avsnittet innehåller en översikt över kuponger och hur du ställer in dem.
-author: scott-tucker
-ms.date: 06/04/2020
+description: Detta ämne innehåller en översikt över kuponger och hur du konfigurerar dem i Dynamics 365 Commerce.
+author: josaw1
+ms.date: 10/05/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: josaw
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: scotttuc
+ms.author: josaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bc79970528e23397b756fa15a715fba834edcc06e4522c6c35b64aede4976300
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
+ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745318"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7603133"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Ställa in kuponger för butiksförsäljning
 
@@ -40,6 +40,8 @@ Om du vill skapa en kupong skapar du rabatten och kupongen separat. Sedan länka
 > När du har länkat en kupong till en rabatt blir flera fält på rabattsidan i Commerce skrivskyddade, eftersom de hanteras av inställningarna för kupongen. Fälten inkluderar fält för status och standarddatumintervall.
 > 
 > När du använder verifikationen i kundtjänstkanalen måste du välja knappen **Omberäkna** **(fliken Sälj > Beräkna > Omberäkna)** för att till verifikationen hörande rabatt ska tillämpas. Detta ytterligare steg kommer att tas bort i en kommande version.
+
+Om du vill använda en kupong för en försäljningstransaktion i kassan (POS) kan du använda **Kupongkod** eller **Kupongstreckkod**. Om du vill använda **Kupongkod** måste åtgärden **Lägg til kupongkod** konfigureras i [skärmlayouten](pos-screen-layouts.md) **Transaktion** för kassa. Välj **Lägg till kupongkod** och ange kupongkoden. Alternativt kan du använda **Kupongstreckkod**, scanna streckkoden eller ange streckkoden med hjälp av den numeriska knappsatsen på skärmen **Transaktion**.
 
 ### <a name="limited-use-coupons"></a>Kuponger med begränsad användning
 
