@@ -1,7 +1,7 @@
 ---
 title: Startsidan Anläggningstillgångar
-description: Anläggningstillgångar är artiklar av värde som ägs av en person eller en organisation. Artiklarna omfattar byggnader, fordon, mark och utrustning.
-author: ShylaThompson
+description: Det här avsnittet ger tillgång till resurser som kan hjälpa dig använda anläggningstillgångar för Microsoft Dynamics 365 Finance.
+author: moaamer
 ms.date: 08/31/2017
 ms.topic: index-page
 ms.prod: ''
@@ -14,21 +14,21 @@ ms.custom:
 - intro-internal
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
-ms.author: roschlom
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c483073c924a9a881a3d2668d41614703046f718746f5f439accc3646f6f822
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c1a31273e16275750594ef8d9b99f9a4cd2222ef
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753562"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674861"
 ---
 # <a name="fixed-assets-home-page"></a>Startsidan Anläggningstillgångar
 
 [!include [banner](../includes/banner.md)]
 
-Anläggningstillgångar är artiklar av värde som ägs av en person eller en organisation. Artiklarna omfattar byggnader, fordon, mark och utrustning. 
+Det här avsnittet ger tillgång till resurser som kan hjälpa dig använda anläggningstillgångar för Microsoft Dynamics 365 Finance. Anläggningstillgångar är artiklar av värde som ägs av en person eller en organisation. Artiklarna omfattar byggnader, fordon, mark och utrustning. 
 
 Det går att ställa in och ange anskaffningsinformation för anläggningstillgångar och sedan hantera tillgångarna genom att skriva av dem och ställa in en kapitaliseringströskel för att bestämma avskrivningen. Det går att beräkna justeringar för anläggningstillgångarna och även avyttra dem. När du använder Redovisning tillsammans med Anläggningstillgångar går det att visa anläggningstillgångarnas aktuella värde. Sättet på vilket anläggningstillgångar hanteras måste motsvara både internationella redovisningsstandarder och redovisningslagarna i varje land/region. Kraven kan omfatta regler för att registrera anskaffnings- och avyttringstransaktioner, avskrivningar, livstid samt uppskrivningar och nedskrivningar av anläggningstillgångar. Funktionen Anläggningstillgångar införlivar flera av dessa standarder och regler.
 

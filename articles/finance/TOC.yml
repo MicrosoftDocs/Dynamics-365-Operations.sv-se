@@ -74,12 +74,12 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.23
+                      href: get-started/whats-new-changed-10-0-23.md
                     - name: Finance 10.0.22 (november 2021)
                       href: get-started/whats-new-changed-10-0-22.md
                     - name: Finance 10.0.21 (oktober 2021)
                       href: get-started/whats-new-changed-10-0-21.md
-                    - name: Finance 10.0.20 (augusti 2021)
-                      href: get-started/whats-new-changed-10-0-20.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -240,6 +240,10 @@
                   href: accounts-payable/auto-vendr-invc-process.md
                 - name: Konfigurera alternativ för automatisering av leverantörsfakturor
                   href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: Använd förskottsbetalningar automatiskt för leverantörsfakturor – översikt
+                  href: accounts-payable/apply-prepymnts-overview.md
+                - name: Generera fakturarader vid import av leverantörsfakturor
+                  href: accounts-payable/auto-create-invc-lines-at-import.md
                 - name: Skicka fakturor till arbetsflödessystemet och matcha produktinleveransrader
                   href: accounts-payable/submit-invoice-workflow-automatically.md
                 - name: Visa resultat från automatisering av leverantörsfakturor
@@ -272,6 +276,8 @@
                   href: accounts-payable/tasks/research-resolve-exceptions.md
             - name: Bokföringsprofiler för leverantörer
               href: accounts-payable/vendor-posting-profiles.md
+            - name: Leverantörsfakturadatum
+              href: accounts-payable/vendor-invoice-dates.md
             - name: Omräkning i utländsk valuta för leverantörsreskontra och kundreskontra
               href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
             - name: Mobila fakturagodkännanden
@@ -990,7 +996,9 @@
                   href: general-ledger/tasks/create-main-account.md
                 - name: Planera kontoplanen
                   href: general-ledger/plan-chart-of-accounts.md
-                - name: Kvitta transaktioner mellan huvudbokskonton
+                - name: Planera din lokala kontoplan
+                  href: general-ledger/plan-local-chart-of-accounts.md
+                - name: Kvitta transaktioner mellan redovisningskonton
                   href: general-ledger/tasks/settle-transactions-between-ledger-accounts.md
                 - name: Ställ in alias för huvudbokskonto
                   href: general-ledger/tasks/set-up-ledger-account-alias.md
@@ -1104,6 +1112,8 @@
                   href: general-ledger/enable-delayed-tax-calculation.md
                 - name: Skapa en momsbetalning
                   href: general-ledger/tasks/create-sales-tax-payment.md
+                - name: Avrundning av momskvittning baserat på anpassat antal decimaler för valuta
+                  href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
                 - name: Skapa momstransaktioner i dokument
                   href: general-ledger/tasks/create-sales-tax-transactions-documents.md
                 - name: Ställ in redovisningsbokföringsgrupper för moms
@@ -1546,7 +1556,9 @@
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Kom i gång med elektronisk fakturering för Mexiko
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
-                        - name: Använd tjänsten elektroniska fakturering för att importera leverantörsfakturor
+                        - name: Kom i gång med elektronisk fakturering för Saudiarabien
+                          href: localizations/e-invoicing-sa-get-started.md
+                        - name: Använd tjänsten för elektronisk fakturering för att importera leverantörsfakturor
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Ställ in elektronisk fakturering
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
@@ -1568,6 +1580,8 @@
                           href: localizations/tax-calculation-data-model-overview.md
                         - name: Tillämplighet för moms och bestämningslogik för momsgrupp
                           href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+                        - name: Använda skattemyndighetsparametrar för konfiguration av kassarabattsberäkning
+                          href: localizations/global-tax-jurisdiction-cash-discount-setup.md?toc=/dynamics365/finance/toc.json
                     - name: Beräkning
                       items:
                         - name: Beräkna moms på priser när Priser inkl. moms är aktiverat
@@ -1594,28 +1608,38 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Lista över försäljning inom EU
                               href: localizations/emea-nl-eu-sales-list.md
-                        - name: Rapportering i Sverige
+                        - name: Rapportering för Spanien
+                          items:
+                            - name: 'Omedelbar leverans av information om moms (Suministro Inmediato de Información del IVA, SII)'
+                              href: localizations/emea-esp-sii-spain.md
+                        - name: Rapportering för Sverige
                           items:
                             - name: Momsdeklaration
                               href: localizations/emea-swe-VAT-declaration-Sweden.md
-                        - name: Rapportering i Schweiz
+                        - name: Rapportering för Schweiz
                           items:
                             - name: Momsdeklaration
                               href: localizations/emea-che-vat-declaration-switzerland.md
-                        - name: Rapportering i Storbritannien
+                        - name: Rapportering för Storbritannien
                           items:
-                            - name: Förbered för integration med MTD för moms
-                              href: localizations/emea-gbr-mtd-vat-integration.md
+                            - name: Momsdeklaration
+                              href: localizations/emea-gbr-vat-declaration.md
                     - name: Aktivera momsberäkning för överföringsorder
                       items:
                         - name: Momsfunktionstöd för överföringsorder
                           href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                        - name: Skriva ut momsinformation på överföringsorderdokument
+                          href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?toc=/dynamics365/finance/toc.json
                     - name: Tillägg
                       items:
                         - name: Lägga till datafält i momskonfigurationer
                           href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Lägga till datafält i momsintegreringen genom att använda tillägg
                           href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
+                        - name: Anpassa momskonfigurationer för sökning efter huvuddata
+                          href: localizations/customize-tax-configurations-master-data-lookup.md
+                    - name: Momsberäkning – vanliga frågor
+                      href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
             - name: Regeluppdateringar
               href: localizations/regulatory-updates.md
             - name: Australien
@@ -1684,6 +1708,8 @@
                   href: localizations/emea-bel-prodcom-report.md
                 - name: Årlig momslista över inrikes försäljning
                   href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
+                - name: Intrastat för Belgien
+                  href: localizations/emea-bel-intrastat.md
             - name: Brasilien
               items:
                 - name: Brasilien – översikt
@@ -2312,6 +2338,8 @@
                   href: localizations/apac-ind-scope.md
                 - name: Nyheter eller ändringar för lokalisering för Indien
                   items:
+                    - name: Nyheter och ändringar i 10.0.20 – 10.0.22
+                      href: localizations/ind-news-letter-10-0-20-22.md
                     - name: Nyheter och ändringar i 10.0.15 – 10.0.19
                       href: localizations/ind-news-letter-10-0-15-19.md
                     - name: Nyheter och ändringar i 10.0.14
@@ -2586,7 +2614,7 @@
                               items:
                                 - name: Ställ in TDS-parametrar
                                   href: localizations/apac-ind-TDS-TDS-parameter-activation.md
-                                - name: Ställa in huvudbokskonton för TDS
+                                - name: Ställa in redovisningskonton för TDS
                                   href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
                                 - name: Ställ in TDS-registreringsnummer för juridiska personer
                                   href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
@@ -2680,6 +2708,12 @@
                           href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
                         - name: Uppdatera certifikatnummer och datum för TDS-transaktioner
                           href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+            - name: Indonesien
+              items:
+                - name: Indonesien – översikt
+                  href: localizations/indonesia.md
+                - name: Momsdeklaration för Indonesien
+                  href: localizations/apac-idn-ppn-declaration.md
             - name: Italien
               items:
                 - name: Italien – översikt
@@ -3024,6 +3058,8 @@
                   href: localizations/emea-nl-audit-file.md
                 - name: Momsdeklaration (Nederländerna)
                   href: localizations/emea-nl-vat-declaration-netherlands.md
+                - name: Intrastat för Nederländerna
+                  href: localizations/emea-nl-intrastat.md
                 - name: Lista över försäljning inom EU
                   href: localizations/emea-nl-EU-sales-list.md
             - name: Nya Zeeland
@@ -3352,11 +3388,13 @@
                   href: localizations/emea-sau-zakat-reporting.md
                 - name: Allokera bankdokumenttillägg till en försändelse
                   href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
+                - name: Elektroniska kundfakturor i Saudiarabien
+                  href: localizations/emea-sau-e-invoices.md
             - name: Singapore
               items:
                 - name: Singapore – översikt
                   href: localizations/singapore.md
-                - name: Skapa GST-05-rapport
+                - name: Generera GST-05-rapport
                   href: localizations/apac-sgp-generate-gst-05-report.md
             - name: Spanien
               items:
@@ -3374,10 +3412,12 @@
                   href: localizations/tasks/emea-esp-credit-invoicing.md
                 - name: Räkenskapsdata från fakturakontot
                   href: localizations/emea-esp-fiscal-data-invoice-account.md
-                - name: Omvärderingsgrupp för anläggningstillgångar
+                - name: Omvärdering av grupp med anläggningstillgångar
                   href: localizations/emea-esp-fixed-asset-group-revaluation.md
                 - name: Inomeuropeisk moms
                   href: localizations/emea-esp-intra-community-vat.md
+                - name: Intrastat för Spanien
+                  href: localizations/emea-esp-intrastat.md
                 - name: Engångskunder
                   href: localizations/emea-esp-no-one-time-customer-for-project-contracts.md
                 - name: Skriv ut checkar med spansk layout
@@ -3458,32 +3498,30 @@
                       href: localizations/tasks/gb-00002-sales-order.md
                     - name: Ställa in artikelmomsgrupper för återfört tillägg
                       href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-                    - name: 'Konfigurera artikelgrupper, regler och parametrar för återfört tillägg'
+                    - name: 'Ställa in artikelgrupper, regler och parametrar för återfört tillägg'
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-                    - name: Konfigurera momsgrupper för återfört tillägg
+                    - name: Konfigurera momsgrupper för återfört momstillägg
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: Rapportering i Storbritannien
+                - name: 'Gör skatt digital (MTD, Making Tax Digital) för moms'
                   items:
-                    - name: Making Tax Digital (MTD) för moms
-                      items:
-                        - name: Skicka in Making Tax Digital (MTD) momsretur i Storbritannien
-                          href: localizations/emea-gbr-mtd-vat-integration.md
-                        - name: 'Förbered miljön för samverkan med HMRC:s MTD momswebbtjänst'
-                          href: localizations/emea-gbr-mtd-vat-integration-setup.md
-                        - name: Checklista för konfiguration av elektroniska meddelanden för MTD-moms
-                          href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-                        - name: Testa samverkan med MTD sandbox-miljö för moms
-                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: 'Auktorisera Finance-miljön för samverkan med HMRC:s MTD-webbtjänst'
-                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                        - name: 'Skicka in en momsretur till HMRC:s MTD-webbtjänst'
-                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
-                        - name: Hämta information om momsbetalningar och momsskulder från HMRC
-                          href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
-                        - name: Konfigurationsinformation för momsdeklarationer i Storbritannien
-                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
-                        - name: Skapa en momsdeklaration i pappersformat (VAT 100-rapport)
-                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
+                    - name: Skicka in MTD-momsretur (Making Tax Digital) i Storbritannien
+                      href: localizations/emea-gbr-mtd-vat-integration.md
+                    - name: 'Förbered miljön för samverkan med HMRC:s MTD momswebbtjänst'
+                      href: localizations/emea-gbr-mtd-vat-integration-setup.md
+                    - name: Checklista för konfiguration av elektroniska meddelanden för MTD-moms
+                      href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
+                    - name: Testa samverkan med MTD sandbox-miljö för moms
+                      href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                    - name: 'Auktorisera Finance-miljön för samverkan med HMRC:s MTD-webbtjänst'
+                      href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                    - name: 'Skicka in en momsretur till HMRC:s MTD-webbtjänst'
+                      href: localizations/emea-gbr-mtd-vat-integration-submission.md
+                    - name: Hämta information om momsbetalningar och momsskulder från HMRC
+                      href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+                    - name: Konfigurationsinformation för momsdeklarationer i Storbritannien
+                      href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                    - name: Skapa en momsdeklaration i pappersformat (VAT 100-rapport)
+                      href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Rapport för statistik över betalningspraxis
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: USA
@@ -3877,6 +3915,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/finance/toc.json
                         - name: AddDays
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/finance/toc.json
+                        - name: ChangeTimeZone
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/finance/toc.json
                         - name: DateFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/finance/toc.json
                         - name: DateTimeFormat
@@ -4021,6 +4061,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/finance/toc.json
                         - name: Mid
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/finance/toc.json
+                        - name: NewGUID
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/finance/toc.json
                         - name: NumberFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
                         - name: NumeralsToText
@@ -4411,16 +4453,18 @@
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
                 - name: API-ändringar
                   items:
-                    - name: Application update 7.3
+                    - name: Programuppdatering 7.3
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
-                    - name: Application update 10.0.11
+                    - name: Programuppdatering 10.0.11
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
-                    - name: Application update 10.0.17
+                    - name: Programuppdatering 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
-                    - name: Application update 10.0.19
+                    - name: Programuppdatering 10.0.19
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
-                    - name: Application update 10.0.21
+                    - name: Programuppdatering 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
+                    - name: Programuppdatering 10.0.23
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/finance/toc.json
                 - name: Ange anpassad lagringsplats för skapade dokument
                   items:
                     - name: Prenumerera på en händelse för att begära ett svar från en prenumerationshanterare
@@ -4433,6 +4477,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
                 - name: Ändra kod för att möjliggöra för användare att konfigurera och använda namngivna ER-destinationer
                   href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
+                - name: Implementera en anpassad ER-källa för inkommande dokument
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/finance/toc.json
         - name: Mobilapp
           items:
             - name: Startsida för mobilapp

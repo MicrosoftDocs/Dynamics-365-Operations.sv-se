@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: c395aabfc8705b4713cf1041b5644ac478d8c1a4c4c211334aea3572f1618b84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5ffd86d736cb7b6b5c270663c2b774e14556a6b
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759027"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675211"
 ---
 # <a name="revenue-recognition-setup"></a>Inställning för intäktsredovisning
 [!include [banner](../includes/banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "6759027"
 En ny modul för **intäktsredovisning** har lagts till, inklusive menyartiklar för alla inställningar som krävs. I det här avsnittet beskrivs inställningsalternativen och deras konsekvenser.
 
 > [!NOTE]
-> Intäktsredovisningsfunktionen kan inte aktiveras via funktionshantering. För närvarande måste du använda konfigurationsnycklar för att aktivera den.
-
-> Intäktsredovisning, inklusive buntfunktionen, stöds inte för användning i Commerce-kanaler (e-handel, kassa, callcenter). Artiklar som konfigurerats med intäktsredovisning ska inte läggas till på order eller transaktioner som skapas i Commerce-kanaler.
+> Intäktsredovisningsfunktionen är nu aktiverad som standard via Funktionshantering. Om din organisation inte använder den här funktionen kan du stänga av den i arbetsytan **Funktionshantering**.
+>
+> Intäktsredovisning, inklusive buntfunktionen, stöds inte i Commerce-kanaler (e-handel, kassa och callcenter). Artiklar som konfigureras för intäktsredovisning ska inte läggas till på order eller transaktioner som skapades i Commerce-kanaler.
 
 Modulen för **intäktsredovisning** har följande inställningsalternativ:
 
@@ -40,12 +40,16 @@ Modulen för **intäktsredovisning** har följande inställningsalternativ:
     - Artikelgrupper och frisläppta produkter
     - Definiera intäktsschema
     - Definiera intäktspris
+    - Lagerinställning
 
-        - Bokföringsprofiler
-        - Buntar
+        - Definiera intäktsschema
+        - Definiera intäktspris
 
-    - Bunta ihop komponenter
-    - Bunta artikel
+    - Bokföringsprofiler
+    - Buntar
+
+        - Bunta ihop komponenter
+        - Bunta artikel
 
 - Projektinställningar
 
@@ -91,20 +95,27 @@ Ange beskrivande värden i fälten **Intäktsplan** och **Beskrivning**. Följan
 - **Automatiska kontraktsvillkor** – markera den här kryssrutan om kontraktets start- och slutdatum ska anges automatiskt. Dessa datum ställs automatiskt in för frisläppta produkter i intäktstypen **stöd för kontraktsartikel**. Kontraktets startdatum ställs automatiskt in på försäljningsorderradens begärda transportdatum och slutdatumet för kontraktet ställs automatiskt in på startdatumet plus antalet månader eller händelser som har definierats i inställningarna för intäktsplanen. Till exempel är produkten på försäljningsorderraden ett års garanti. Standardintäktsplanen **är** 12 M (12 månader) och rutan **Automatiska avtalsvillkor** markeras för denna intäktsplan. Om försäljningsorderraden har ett begärt transportdatum på 16 december 2019 är standarddatumet för kontraktets start den 16 december 2019 och standardslutdatumet för kontraktet är 15 december 2020.
 - **Redovisningsvillkor** – redovisningsvillkoret avgör hur intäktspriset fördelas över förekomsterna.
 
-    - **Månadsvis efter datum** – beloppet fördelas baserat på de faktiska dagarna i varje månad.
+    - **Månadsvis efter dagar** – beloppet fördelas baserat på de faktiska dagarna i varje kalendermånad.
     - **Varje månad** – beloppet fördelas jämnt över det antal månader som har definierats i förekomsterna.
-    - **Förekomster** – beloppet allokeras jämnt över förekomsterna, men kan inkludera en extra period om du väljer **Verkligt startdatum** som tolkningsregel.
+    - **Förekomster** – beloppet fördelas jämnt mellan förekomsterna, men kan inkludera en extra period om du väljer **Faktiskt startdatum** som redovisningsregel.
+    - **Räkenskapsperiod efter dagar** – beloppet fördelas baserat på de faktiska dagarna i varje räkenskapsperiod. 
 
-- **Igenkänningspraxis** – tolkningsregeln fastställer det standarddatumen som anges i intäktsplanen för fakturan.
+    **Månadsvis efter dagar** och **Räkenskapsperiod efter dagar** ger samma resultat när räkenskapsperioderna följer kalendermånaderna. Det enda undantaget är när redovisningsregeln är inställd som **Månadens/periodens slut** och fälten **Startdatum för kontrakt** och **Slutdatum** är tomma på en försäljningsorderrad.
 
-    - **Verkligt startdatum** – schemat skapas med hjälp av antingen kontraktets startdatum (för bokföring av artiklar som stöder \[kontraktsartiklar\]) eller fakturadatumet (för viktiga och icke-viktiga artiklar).
-    - **Första i månaden** – datumet på den första planraden är kontraktets startdatum (eller fakturadatum). Alla efterföljande planrader skapas emellertid för den första dagen i månaden.
-    - **Delning mitt i månaden** – datumet på den första planraden beror på fakturadatumet. Om fakturan bokförs från den första till den femtonde i månaden skapas intäktsplanen med hjälp av den första dagen i månaden. Om fakturan bokförs från den sextonde i månaden eller senare skapas intäktsplanen med hjälp av den första dagen i nästa månad.
-    - **Första dagen i nästa månad** – datumet enligt planen är den första dagen i nästa månad.
+- **Redovisningsregel** – redovisningsregeln fastställer datumen som anges i intäktsplanen för fakturan.
 
-Välj knappen **Information om intäktsplan** om du vill visa de allmänna perioderna och de procentsatser som är bokförda i varje period. Som standard är värdet **redovisa procentsats** jämt fördelad över antalet perioder. Om du anger redovisningsvillkoret **Varje månad** eller **Förekomst** kan redovisningsprocentsatsen ändras. När du ändrar redovisningsprocentsatsen visas ett varningsmeddelande om att totalsumman inte är lika med 100 procent. När du får meddelandet kan du fortsätta att redigera rader. Den totala procentsatsen måste dock vara lika med 100 innan du stänger sidan.
+    - **Faktiskt startdatum** – schemat skapas med hjälp av antingen kontraktets startdatum (för bokföring av artiklar som stöder \[PCS-artiklar\]) eller fakturadatumet (för grundläggande och icke grundläggande artiklar).
+    - **Första i månaden/perioden** – datumet på den första planraden är kontraktets startdatum (eller fakturadatum). Alla efterföljande planrader skapas emellertid för den första dagen i månaden eller räkenskapsperioden.
+    - **Delning mitt i månaden** – datumet på den första planraden beror på fakturadatumet. Om fakturan bokförs från den första till den femtonde i månaden skapas intäktsplanen med hjälp av den första dagen i månaden. Om fakturan bokförs den sextonde i månaden eller senare skapas intäktsplanen med hjälp av den första dagen i nästa månad.
 
-[![Information om intäktsplan.](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
+        **Delning mitt i månaden** kan inte väljas om redovisningsvillkoret har inställningen **Räkenskapsperiod efter dagar**.
+
+    - **Första dagen i nästa månad/period** – det datum som planen börjar är den första dagen i nästa månad eller räkenskapsperiod.
+    - **Månadens/periodens slut** – datumet på den första planraden är kontraktets startdatum (eller fakturadatum). Alla efterföljande planrader skapas emellertid för den sista dagen i månaden eller räkenskapsperioden. 
+
+Välj knappen **Information om intäktsplan** om du vill visa de allmänna perioderna och de procentsatser som är bokförda i varje period. Som standard är värdet **Redovisa procentsats** jämt fördelat mellan antalet perioder. Om du anger redovisningsvillkoret **Varje månad** kan redovisningsprocentsatsen ändras. När du ändrar redovisningsprocentsatsen visas ett varningsmeddelande om att totalsumman inte är lika med 100 procent. När du får det meddelandet kan du fortsätta att redigera rader. Den totala procentsatsen måste dock vara lika med 100 innan du stänger sidan.
+
+[![Information om intäktsplan.](./media/revenue-schedule-details-2nd-scrn.png)](./media/revenue-schedule-details-2nd-scrn.png)
 
 ## <a name="inventory-setup"></a>Lagerinställning
 
