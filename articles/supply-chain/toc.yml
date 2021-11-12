@@ -72,14 +72,14 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nyheter eller ändringar i Supply Chain Management
                   items:
-                    - name: Nyheter eller ändringar på Supply Chain Managements startsida
+                    - name: Nyheter och ändringar på Supply Chain Managements startsida
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.23
+                      href: get-started/whats-new-scm-10-0-23.md
                     - name: Supply Chain Management 10.0.22 (november 2021)
                       href: get-started/whats-new-scm-10-0-22.md
                     - name: Supply Chain Management 10.0.21 (oktober 2021)
                       href: get-started/whats-new-scm-10-0-21.md
-                    - name: Supply Chain Management 10.0.20 (augusti 2021)
-                      href: get-started/whats-new-scm-10-0-20.md
                 - name: Borttagna eller inaktuella funktioner
                   items:
                     - name: Borttagna eller inaktuella funktioner – startsida
@@ -1453,15 +1453,15 @@
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
                 - name: API-ändringar
                   items:
-                    - name: Application update 7.3
+                    - name: Programuppdatering 7.3
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Application update 10.0.11
+                    - name: Programuppdatering 10.0.11
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Application update 10.0.17
+                    - name: Programuppdatering 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Application update 10.0.19
+                    - name: Programuppdatering 10.0.19
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Application update 10.0.21
+                    - name: Programuppdatering 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Ange anpassad lagringsplats för skapade dokument
                   items:
@@ -1659,6 +1659,8 @@
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: Huvudplanering med inköpshandelsavtal
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
+                - name: Parametrar för datum och tid som används i Planeringsoptimering
+                  href: master-planning/planning-optimization/date-time-used.md
                 - name: Säkerhetsmarginaler
                   href: master-planning/planning-optimization/safety-margins.md
                 - name: Fördröjningstolerans (negativa dagar)
@@ -1885,6 +1887,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurera den globala adressboken
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Adressinställning
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Vanliga frågor och svar om adressböcker
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurera adressböcker
@@ -2427,18 +2431,6 @@
                       href: production-control/release-production-orders.md
                     - name: Rapportera produktionsorder som slutförda
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Konfigurera och använda körningsgränssnittet för produktionsgolvet
-                      items:
-                        - name: Konfigurera körningsgränssnittet för produktionsgolvet
-                          href: production-control/production-floor-execution-configure.md
-                        - name: Designa körningsgränssnittet för produktionsgolvet
-                          href: production-control/production-floor-execution-tabs.md
-                        - name: Konfigurera en enhet för att köra körningsgränssnittet för produktionsgolvet
-                          href: production-control/production-floor-execution-setup.md
-                        - name: Hur arbetare använder körningsgränssnittet för produktionsgolvet
-                          href: production-control/production-floor-execution-use.md
-                        - name: Välj stil på körningsgränssnittet för produktionsgolvet
-                          href: production-control/production-floor-execution-styles.md
                     - name: Konfigurera jobbkort för enheter
                       href: production-control/config-job-card-device.md
                     - name: Rapportera som färdig från jobbkortenhet
@@ -2645,6 +2637,18 @@
                       href: production-control/consumption.md
                     - name: Produktionsbokföring
                       href: cost-management/production-posting.md
+            - name: Konfigurera och använda körningsgränssnittet för produktionsgolvet
+              items:
+                - name: Konfigurera körningsgränssnittet för produktionsgolvet
+                  href: production-control/production-floor-execution-configure.md
+                - name: Designa körningsgränssnittet för produktionsgolvet
+                  href: production-control/production-floor-execution-tabs.md
+                - name: Konfigurera en enhet för att köra körningsgränssnittet för produktionsgolvet
+                  href: production-control/production-floor-execution-setup.md
+                - name: Hur arbetare använder körningsgränssnittet för produktionsgolvet
+                  href: production-control/production-floor-execution-use.md
+                - name: Välj stil på körningsgränssnittet för produktionsgolvet
+                  href: production-control/production-floor-execution-styles.md
         - name: Rabatthantering
           items:
             - name: Rabatthanteringsmodul – översikt
@@ -3173,9 +3177,9 @@
               href: landed-cost/landed-cost-inquiries.md
             - name: Rapporter om hemtagningskostnader
               href: landed-cost/landed-cost-reports.md
-        - name: Hantering av distributionslager
+        - name: Lagerstyrning
           items:
-            - name: Hantering av distributionslager – översikt
+            - name: Lagerstyrning – översikt
               href: warehousing/warehouse-management-overview.md
             - name: Åtgärder för mottagande distributionslager
               items:
@@ -3391,6 +3395,10 @@
                       href: warehousing/configure-mobile-devices-warehouse.md
                     - name: Anpassa stegtitlar och instruktioner för Warehouse Management-mobilappen
                       href: warehousing/mobile-app-titles-instructions.md
+                    - name: Konfigurera framhävda fält för steg i den mobila enheten
+                      href: warehousing/warehouse-app-promoted-fields.md
+                    - name: Konfigurera omvägar för steg i menyalternativ för mobila enheter
+                      href: warehousing/warehouse-app-detours.md
                     - name: Inleverans av ID-nummer via Warehouse Management-mobilappen
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Ställa in ett menyalternativ för mobil enhet för att slutföra arbete i en inköpsorder
@@ -3409,6 +3417,8 @@
                       href: warehousing/pick-oldest-batch.md
                 - name: Globala parametrar för mobilenheter
                   href: warehousing/mobile-device-parameters.md
+                - name: Användarkonton för mobil enhet
+                  href: warehousing/mobile-device-work-users.md
                 - name: Användarinställningar för mobil enhet
                   href: warehousing/mobile-device-user-settings.md
                 - name: Händelsebearbetning i distributionslagerappen
@@ -3735,8 +3745,14 @@
               items:
                 - name: Det går endast att lägga till huvudkontot som kreditkonto av avstämningsorsaker
                   href: troubleshooting/transportation/reconciliation-reaso.md
-            - name: Hantering av distributionslager
+            - name: Lagerstyrning
               items:
+                - name: Warehouse Mobile App
+                  items:
+                    - name: Förtroendeankare för certifieringssökväg hittas inte när du ställer in appanslutning
+                      href: troubleshooting/warehousing/certification-path-app-connection-error.md
+                    - name: Förtroendeankare för certifieringssökväg hittas inte när du uppdaterar och migrerar till WMS
+                      href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
                 - name: Uppmaning om automatisk reservation av batchnummer visas även med tillgängligt lager
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: Plockningsarbete går inte att ta bort från arbetet på grund av oavslutat påfyllnadsarbete
@@ -3747,8 +3763,6 @@
                   href: troubleshooting/warehousing/cant-move-license-plate.md
                 - name: Det går inte att flytta lagret till en plats kontrollerad av ID-nummer
                   href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
-                - name: Förtroendeankare för certifieringssökväg hittas inte när du ställer in appanslutning
-                  href: troubleshooting/warehousing/certification-path-app-connection-error.md
                 - name: Det går inte att hitta klusterprofil
                   href: troubleshooting/warehousing/cluster-profile-not-found-error.md
                 - name: Det går inte att bearbeta korrigering av följesedel
@@ -3819,8 +3833,6 @@
                   href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
                 - name: Det går inte att avreservera lager på en försäljningsorderrad
                   href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-                - name: Förtroendeankare för certifieringssökväg hittas inte när du uppdaterar och migrerar till WMS
-                  href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
                 - name: Du kan inte bekräfta en leverans eftersom kunden är spärrad
                   href: troubleshooting/warehousing/customer-is-on-hold.md
                 - name: Du kan inte bekräfta en leverans eftersom inläsningsrader har noll kvantitet
