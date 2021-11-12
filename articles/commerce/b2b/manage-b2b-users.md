@@ -2,7 +2,7 @@
 title: Hantera affärspartnersanvändare på B2B-näthandelssajter
 description: I detta ämne beskrivs hur administratörer kan lägga till, redigera och ta bort affärspartners på B2B-näthandelssajter.
 author: josaw1
-ms.date: 07/22/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6cc1d5dfeb48fd00216fc1908e9e8be24f07131b3e5f1eaeefb10396efbebc3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 090dc9af49840e559b4c1ad1500718fde9764aa2
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734953"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713703"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Hantera affärspartnersanvändare på B2B-näthandelssajter
 
@@ -68,6 +68,18 @@ Om du vill godkänna och ställa in en administratörsanvändare för en affärs
 1. Gå till **IT för Retail and Commerce \> Distributionsschema** och kör jobbet **1010** (**Kunder**) för att förflytta de nya kund- och kundhierarkiposterna till kanaldatabasen.
 
 När en begäran har godkänts och kund- och kundhierarkiposterna har synkroniserats med kanaldatabasen kan begäranden logga in på B2B-näthandelssajten med den e-postadress som han eller hon angav när han/hon skickade begäran. Användarna kan använda inloggningsflödet för att definiera lösenordet för sitt konto. Om du vill aktivera identitetsprovider (Azure AD B2C) post som ska länkas till B2B-kundposten som skapades vid registrering eller inloggning, följ instruktionerna i [Aktivera automatisk länkning av identitetsposter till kundkonton](../identity-record-linking.md).
+
+## <a name="notify-b2b-prospects-when-they-are-approved-or-rejected"></a>Meddela potentiella B2B-kunder när de godkänns eller avvisas
+
+När du godkänner eller avvisar en begäran om registrering av potentiell B2B-kund, kan du automatiskt skicka ett e-postmeddelande till potentiell kund. 
+
+Om du vill ställa in e-postmeddelanden i Commerce-administration för händelser av typen godkänd potentiell B2B-kund eller avvisad potentiell B2B-kund följer du dessa steg.
+
+1. Skapa e-postmallar för e-postmeddelanden som kommer att skickas till potentiella kunder när aviseringstypen godkänd potentiell B2B-kund eller avvisad potentiell B2B-kund utlöses. 
+
+    För information om de platshållare som meddelandetyper godkänd potentiell B2B-kund och avvisad potentiell B2B-kund stöder, se [Meddelandetyper](../email-templates-transactions.md#notification-types). Information om hur du skapar e-postmeddelanden finns i [Skapa ett postmeddelanden](../email-templates-transactions.md#create-an-email-template). 
+
+1. Lägg till meddelandetyper för godkänd potentiell B2B-kund och avvisad potentiell B2B-kund i e-postprofilen och mappa dem till de e-postmallar som du har skapat. Mer information om meddelandeprofiler finns i [Konfigurera profil för e-postmeddelande](../email-notification-profiles.md). 
 
 ## <a name="onboard-additional-business-partner-users"></a>Registrera fler affärspartneranvändare
 

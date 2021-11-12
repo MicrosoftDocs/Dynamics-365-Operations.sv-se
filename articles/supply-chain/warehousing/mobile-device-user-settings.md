@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mafoge
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e20367f4261d0112855f36c69c25cd732c78be7bb23d7c6333aea84db437d735
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 51c530fd0043a4ec5a82660af72c001be25b7e62
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769429"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647495"
 ---
 # <a name="mobile-device-user-settings"></a>Användarinställningar för mobil enhet
 
@@ -54,7 +54,7 @@ Du kan också definiera en inställningsprofil som gäller alla enhetsmärken, e
 
 Följ dessa steg om du vill skapa och hantera användarinställningar för dina mobila enheter.
 
-1. Gå till **Lagerstyrning \> Mobil enhet \> Användarinställningar för mobil enhet**.
+1. Gå till **Lagerstyrning \> Inställningar \> Mobil enhet \> Användarinställningar för mobil enhet**.
 1. Välj en befintlig användarinställningsprofil i listfönstret för att öppna posten. Du kan också välja **Ny** i åtgärdsfönstret om du vill skapa en ny profil.
 
     Varje profil i listfönstret har en etikett som anger det märke, den modell och/eller det användar-ID som profilen gäller för. Mer allmänna profiler har värdet *Alla* för vissa eller alla av dessa egenskaper.
@@ -83,7 +83,7 @@ Använd sidan **Märken för mobila enheter** om du vill visa, skapa och hantera
 
 Följ dessa steg för att skapa och hantera dina varumärken och modeller för mobila enheter.
 
-1. Gå till **Lagerstyrning \> Mobil enhet \> Märken för mobila enheter**.
+1. Gå till **Lagerstyrning \> Inställningar \> Mobil enhet \> Märken för mobila enheter**.
 1. I listfönstret väljer du ett varumärke för mobilenheter för att öppna posten. Du kan också välja **Ny** i åtgärdsfönstret om du vill skapa ett nytt märke.
 1. Ställ in följande fält i rubrikavsnittet för posten för den nya eller valda enhetens märke:
 

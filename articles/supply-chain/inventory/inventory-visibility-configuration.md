@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474686"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678481"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurera lagersynlighet
 
@@ -366,16 +366,12 @@ Med indexet kan du fråga efter lagerbehållningen på följande sätt:
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Reservationskonfiguration (valfritt)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Reservationskonfiguration krävs om du vill använda funktionen för preliminär reservation. Konfigurationen består av två grundläggande delar:
 
 - Preliminär reservationsmappning
 - Preliminär reservationshierarki
 
 ### <a name="soft-reservation-mapping"></a>Preliminär reservationsmappning
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 När du gör en reservation kanske du vill veta om lagerbehållningen för närvarande är tillgänglig för reservation. Valideringen är kopplad till ett beräknat mått som representerar en beräkningsformel för en kombination av fysiska mått.
 
@@ -446,8 +442,6 @@ Om du därför försöker göra reservationer på `iv.SoftReservOrdered` och kva
 > När du anropar reservations-API:t kan du kontrollera reservationsvalideringen genom att ange den booleska parametern `ifCheckAvailForReserv` i begärandetexten. Ett värde `True` betyder att valideringen krävs, medan ett värde av `False` betyder att valideringen inte krävs. Standardvärdet är `True`.
 
 ### <a name="soft-reservation-hierarchy"></a>Preliminär reservationshierarki
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Reservationshierarkin beskriver den dimensionssekvens som måste anges när reservationer görs. Detta fungerar på samma sätt som produktindexhierarkin fungerar för behållningsfrågor.
 
@@ -747,8 +741,6 @@ Följande tabell visar konfigurationen för standardindex.
 Detta avsnitt beskriver standardreservationskonfigurationen.
 
 #### <a name="reservation-mapping"></a>Reservationsmappning
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Följande tabell visar standardmappningen för reservation.
 

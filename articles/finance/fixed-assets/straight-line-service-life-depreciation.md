@@ -1,7 +1,7 @@
 ---
 title: Linjär avskrivning av tjänstelivstid
 description: Det här avsnittet ger en översikt över metoden för linjär tjänstelivstid för avskrivning.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 3341
 ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 985a1a23510a2cc698eb496cf9f3db2427d21119c1586ed69cf7e5ffd3d08867
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b34cdf9485d38cdbf1362bd605841201a4295f26
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752209"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675281"
 ---
 # <a name="straight-line-service-life-depreciation"></a>Linjär avskrivning av tjänstelivstid
 
@@ -44,11 +44,11 @@ När du väljer Kalender blir kalenderåret 1 januari till 31 december, även om
 Med alternativet Kalender uppdaterar du avskrivningsbasen som vanligtvis är bokfört nettovärde minus skrotvärde, den 1 januari varje år. I exemplen senare i det här ämnet utgör avskrivningsbasen täljaren i det första uttrycket i beräkningskolumnen. 
 
 Om du väljer Kalender är följande alternativ tillgängliga i fältet Periodfrekvens, som definierar bokföringsdatumen för periodisering av avskrivningen och beloppen under kalenderåret:
--   Årlig bokför ett belopp den 31 december.
--   Månadsvis bokför ett månatligt belopp i slutet av varje månad.
--   Kvartalvis bokför ett kvartalsbelopp i slutet av varje kvartal (31 mars, 30 juni, 30 september och 31 december).
--   Halvårsvis bokför ett halvårsbelopp i slutet av varje halvår (30 juni och 31 december).
--   Dagligen bokför avskrivningsbeloppet för den dagliga avskrivningsmetoden genom att använda en transaktion för varje dag.
+- Årlig bokför ett belopp den 31 december.
+- Månadsvis bokför ett månatligt belopp i slutet av varje månad.
+- Kvartalvis bokför ett kvartalsbelopp i slutet av varje kvartal (31 mars, 30 juni, 30 september och 31 december).
+- Halvårsvis bokför ett halvårsbelopp i slutet av varje halvår (30 juni och 31 december).
+- Dagligen bokför avskrivningsbeloppet för den dagliga avskrivningsmetoden genom att använda en transaktion för varje dag.
 
 Om du till exempel väljer Årligen, bokförs årets avskrivning alltså bara en gång, den 31 december varje år. Om du väljer Månadsvis, bokförs månadens avskrivning som 1/12 av det årliga avskrivningsbeloppet.
 
@@ -59,14 +59,14 @@ Om du väljer Räkenskapsår i fältet Avskrivningsår används linjär avskrivn
 Exempelvis för räkenskapsåret 1 juli – 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras automatiskt för varje räkenskapsperiod. Längden på nästa räkenskapsår baseras på de räkenskapsperioder som du ställer in när du skapar ett nytt räkenskapsår i formuläret Räkenskapskalendrar. 
 
 Om du väljer Räkenskapsår har du följande alternativ i fältet Räkenskapsår.
--   Årligen bokför det totala avskrivningsbeloppet som beräknas för räkenskapsåret som ett belopp på räkenskapsårets sista dag.
--   Räkenskapsperiod beräknar det totala avskrivningsbeloppet för räkenskapsåret, som periodiseras till de räkenskapsperioder som har definierats i formuläret Räkenskapsperiod för räkenskapskalendern.
+- Årligen bokför det totala avskrivningsbeloppet som beräknas för räkenskapsåret som ett belopp på räkenskapsårets sista dag.
+- Räkenskapsperiod beräknar det totala avskrivningsbeloppet för räkenskapsåret, som periodiseras till de räkenskapsperioder som har definierats i formuläret Räkenskapsperiod för räkenskapskalendern.
 
 ## <a name="example-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Exempel: Linjär avskrivning av en oförändrad anläggningstillgång
 Anta att anläggningstillgången har följande egenskaper.
 
 | Egenskap      | Värde  |
-|---------------------|--------|
+|:---------------------|--------:|
 | Anskaffningskostnad    | 11,000 |
 | Skrotvärde       | 1 000  |
 | Avskrivningsbas   | 10 000 |
@@ -76,7 +76,7 @@ Anta att anläggningstillgången har följande egenskaper.
 Samma avskrivningsbelopp varje år. (Anskaffningskostnad – skrotvärde)/tjänstelivstidsår
 
 | Period | Beräkning av årligt avskrivningsbelopp | Bokfört nettovärde i slutet av året |
-|--------|-------------------------------------------|---------------------------------------|
+|:--------:|:-------------------------------------------|---------------------------------------:|
 | År 1 | (11 000 – 1 000) / 5 = 2 000              | 9 000                                 |
 | År 2 | (11 000 – 1 000) / 5 = 2 000              | 7 000                                 |
 | År 3 | (11 000 – 1 000) / 5 = 2 000              | 5 000                                 |
@@ -90,7 +90,7 @@ Antag att du lägger till en anskaffningsjustering på 4 000 under år 2 till sa
 Anskaffningsjusteringens tjänstelivstid är samma som anläggningstillgångens och påbörjas vid anskaffning. Vid slutet av år 5 återstår ett bokfört nettovärde som motsvarar anskaffningsjusteringens bokförda nettovärde. Följande tabell visar hur avskrivning per period beräknas.
 
 | Period | Beräkning av årligt avskrivningsbelopp | Bokfört nettovärde i slutet av året |
-|--------|-------------------------------------------|---------------------------------------|
+|:--------:|:-------------------------------------------|---------------------------------------:|
 | År 1 | 10 000 / 5 = 2 000                        | 11 000 – 2 000 = 9 000                |
 | År 2 | 4 000 (anskaffningsjustering)            | 9 000 + 4 000 =13 000                 |
 | År 2 | 14 000 / 5 = 2 800                        | 13 000 – 2 800 = 10 200               |

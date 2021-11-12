@@ -2,7 +2,7 @@
 title: Momsfunktionens stöd för överföringsorder
 description: Det här ämnet innehåller information om det nya momsfunktionen som stöder överföringsorder genom att använda tjänsten för momsberäkning.
 author: Kai-Cloud
-ms.date: 09/15/2021
+ms.date: 10/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 01bf7c251fe57072f042c9187b9f5b6b6687ab0f
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 2f68a3d7ed4384fe5a97f1e59903e3191df6b741
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500086"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647723"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Momsfunktionens stöd för överföringsorder
 
@@ -31,7 +31,7 @@ Det här ämnet ger information om momsberäkning och bokföringsintegrering i �
 Om du vill konfigurera och använda denna funktion måste du utföra tre huvudsteg:
 
 1. **RCS-inställning:** I Regulatory Configuration Service, ställ in momsfunktionen, momskoder och tillämplighet för momskoder för bestämning av momskod i överföringsorder.
-2. **Ekonomiska inställningar:** I Microsoft Dynamics 365 Finance, aktivera funktionen **Moms i överföringsordning**, ställa in skattetjänstparametrar för lager och ställa in huvudsakliga momsparametrar.
+2. **Dynamics 365 Finance inställningar:** I Finance, aktivera funktionen **Moms i överföringsordning** ställ in parametrarna för momsberäkningstjänsten för inventering och ställ in grundläggande momsparametrar.
 3. **Lagerinställningar:** Ställ in lagerkonfigurationen för överföringsordertransaktioner.
 
 ## <a name="set-up-rcs-for-tax-and-transfer-order-transactions"></a>Ställa in RCS för moms- och överföringsordertransaktioner
@@ -39,8 +39,6 @@ Om du vill konfigurera och använda denna funktion måste du utföra tre huvudst
 Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. I exemplet som visas här är överföringsordern från Nederländerna till Belgien.
 
 1. På sidan **Momsfunktioner**, på fliken **Versioner**, välj versionen av utkastfunktionen och välj sedan **Redigera**.
-
-    ![Välja Redigera.](../media/tax-feature-support-01.png)
 
 2. På sidan **Inställning av momsfunktioner** på fliken **Momskoder**, välj **Lägg till** för att skapa nya momskoder. I det här exemplet skapas tre momskoder: **NL-undantagen**, **BE-RC-21** och **BE-RC+21**.
 
@@ -51,9 +49,8 @@ Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. 
         2. Välj **Efter nettobelopp** i fältet **Momskomponent**.
         3. Välj **Spara**.
         4. Välj **Lägg till** i tabellen **Kurs**.
-        5. Växla **Är undantagen** till **Ja** i avsnittet **Allmänt**.
-
-           ![NL-undantagen momskod.](../media/tax-feature-support-02.png)
+        5. Ange **Är undantagen** till **Ja** i avsnittet **Allmänt**.
+        6. I fältet **Momsbefrielsekod** ange **EC**.
 
     - När en överföringsorder tas emot på ett belgiskt lagerställe används omvänd momsmekanism med hjälp av momskoderna **BE-RC-21** och **BE-RC+21**.
         
@@ -63,10 +60,8 @@ Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. 
         3. Välj **Spara**.
         4. Välj **Lägg till** i tabellen **Kurs**.
         5. Ange **-21** i fältet **Momssats**.
-        6. Växla **Är återförd avgift** till **Ja** i avsnittet **Allmänt**.
+        6. Ange **Är återförd avgift** till **Ja** i avsnittet **Allmänt**.
         7. Välj **Spara**.
-
-           ![BE-RC-21-momskod för omvänd moms.](../media/tax-feature-support-03.png)
         
         Skapa momskoden **BE-RC+21**.
         1. Välj **Lägg till**, ange **BE-RC-21** i fältet **Momskod**.
@@ -76,16 +71,26 @@ Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. 
         5. Ange **21** i fältet **Momssats**.
         6. Välj **Spara**.
 
-           ![BE-RC+21-momskod för omvänd moms.](../media/tax-feature-support-04.png)
-
-3. Definiera tillämplighet för momskoderna.
+3. Definiera momsgrupp.
+    1. Markera **Hantera kolumner** och markera sedan radfältet **Momsgrupp**.
+    2. Välj **->** och välj sedan **OK**.
+    3. Välj **Lägg till** för att lägga till en momsgrupp.
+    4. I kolumnen **Momsgrupp** anger du **AR-EU** och väljer sedan momskoden **NL-Momsbefrielse**.
+    5. Välj **Lägg till** för att lägga till en momsgrupp.
+    6. I kolumnen **Momsgrupp**, ange **RC-VAT** och välj sedan **BE-RC-21** och **BE-RC+21** momskoderna.
+4. Definiera artikelmomsgrupp.
+    1. Markera **Hantera kolumner** och markera sedan radfältet **Artikelmomsgrupp**.
+    2. Välj **->** och välj sedan **OK**.
+    3. Välj **Lägg till** för att lägga till en artikelmomsgrupp.
+    4. Ange **FULL** kolumnen **Artikelmomsgrupp**. Välj momskoderna **BE-RC-21**, **BE-RC+21** och **NL-Momsbefrielse**.
+5. Definiera tillämplighet för momsgruppen.
 
     1. Markera **Hantera kolumner** och välj sedan kolumner som ska användas för att bygga tillämplighetsregler.
 
         > [!NOTE]
         > Se till att du lägger till kolumnerna **Affärsprocess** och **Momsriktningar**. Båda kolumnerna är nödvändiga för funktionen för moms i överföringsorder.
 
-    2. Lägg tillämplighetsregler. Lämna inte fälten **Momskoder**, **Momsgrupp** och **Artikelmomsgrupp** tomma.
+    2. Lägg tillämplighetsregler. Lämna inte fältet **Momsgrupp** tomt.
         
         Lägg till en ny regel för överföringsorderförsändelse.
         1. Välj **Lägg till** i tabellen **Tillämplighetsregler**.
@@ -93,8 +98,7 @@ Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. 
         3. I fältet **Sänd från land/region**, ange **NLD**.
         4. I fältet **Sänd till land/region**, ange **BEL**.
         5. I fältet **Momsriktning**, välj **Utgång** för att göra regeln tillämplig för överföring av orderförsändelse.
-        6. I fältet **Momskoder**, välj **NL-undantag**.
-        7. I fältet **Momsgrupp** och **Artikelmomsgrupp**, ange den relaterade momsgruppen och artikelns momsgrupp som definieras i ditt Finance-system.
+        6. I fältet **Momsgrupp**, välj **AR-EU**.
         
         Lägg till en annan regel för inleverans av överföringsorder.
         
@@ -103,14 +107,19 @@ Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. 
         3. I fältet **Sänd från land/region**, ange **NLD**.
         4. I fältet **Sänd till land/region**, ange **BEL**.
         5. I fältet **Momsriktning**, välj **Ingång** för att göra regeln tillämplig för inleverans av överföringsorder.
-        6. I fältet **Momskoder**, välj **BE-RC+21** och **BE-RC-21**.
-        7. I fältet **Momsgrupp** och **Artikelmomsgrupp**, ange den relaterade momsgruppen och artikelns momsgrupp som definieras i ditt Finance-system.
+        6. I fältet **Momsgrupp**, välj **RC-VAT**.
 
-           ![Tillämplighetsregler.](../media/image5.png)
+6. Definiera tillämplighet för artikelmomsgruppen.
 
-4. Slutför och publicera den nya versionen av skattefunktionen.
+    1. Markera **Hantera kolumner** och välj sedan kolumner som ska användas för att bygga tillämplighetsregler.
+    2. Lägg tillämplighetsregler. Lämna inte fältet **Artikelmomsgrupp** tomt.
+        
+        Lägg till en ny regel för överföringsorderförsändelse och kvitto.
+        1. På sidan **Lägg till**, välj **Lägg till**.
+        2. I fältet **Affärsprocess**, välj **Lager** för att göra regeln tillämplig för en överföringsorder.
+        3. I fältet **Artikelmomsgrupp**, välj **FULL**.
+7. Slutför och publicera den nya versionen av skattefunktionen.
 
-    [![Ändra status för den nya versionen.](../media/image6.png)](../media/image6.png)
 
 ## <a name="set-up-finance-for-transfer-order-transactions"></a>Ställa in Finance för moms- och överföringsordertransaktioner
 
@@ -120,28 +129,26 @@ Följ dessa steg för att aktivera och ställa in skatter för överföringsorde
 2. I listan, hitta och välj funktionen **Moms i överföringsorder** och välj sedan **Aktivera nu** för att aktivera den.
 
     > [!IMPORTANT]
-    > Funktionen **Moms i överföringsorder** är helt beroende av momstjänst. Det kan därför endast aktiveras när du har installerat skattetjänsten.
+    > Funktionen **Moms i överföringsorder** är helt beroende av momberäkningstjänst. Det kan därför endast aktiveras när du har installerat momberäkningstjänst.
 
     ![Moms i överföringsfunktionen.](../media/image7.png)
 
-3. Aktivera skattetjänsten och välj affärsprocessen **Lager**.
+3. Aktivera momberäkningstjänst och välj affärsprocessen **Lager**.
 
     > [!IMPORTANT]
-    > Du måste genomföra det här steget för varje juridisk person i Finance där du vill att momstjänsten och momsfunktionerna i överföringsorder ska vara tillgängliga.
+    > Du måste genomföra det här steget för varje juridisk person i Finance där du vill att momberäkningstjänsten och momsfunktionerna i överföringsorder ska vara tillgängliga.
 
-    1. Gå till **Moms** > **Inställningar** > **Momskonfiguration** > **Installation av momstjänst**.
+    1. Gå till **Moms** > **Inställningar** > **Momsinställning** > **Parametrar för momsberäkning**.
     2. I fälten **Affärsprocess**, välj **Lager**.
-
-      ![Ställa in affärsprocessfältet.](../media/image8.png)
 
 4. Kontrollera att omvänd avgiftsmekanism har ställts in. Gå till **Redovisning** \> **Inställning** \> **Parametrar** och sedan på **Omvänd debitering**, kontrollera att alternativet **Aktivera omvänd moms** anges **Ja**.
 
     ![Aktivera alternativet för återfört tillägg.](../media/image9.png)
 
-5. Kontrollera att de relaterade momskoderna, momsgrupperna, artikelmomsgrupperna och momsregistreringsnumren har ställts in i Finance enligt momstjänstens riktlinjer.
+5. Kontrollera att de relaterade momskoderna, momsgrupperna, artikelmomsgrupperna och momsregistreringsnumren har ställts in i Finance enligt momsberäkningstjänstens riktlinjer.
 6. Ställ in ett mellanliggande transitkonto. Detta steg är endast nödvändigt när den skatt som tillämpas på en överföringsorder, inte gäller för en momsbefriad eller återförd avgiftsmekanism.
 
-    1. Gå till **Moms** > **Inställningar** > **Moms** \ **Redovisningsbokföringsgrupper**.
+    1. Gå till **Moms** > **Inställningar** > **Moms** > **Redovisningsbokföringsgrupper**.
     2. I fältet **mellanliggande transit**, välj redovisningskonto.
 
        ![Ställa in ett mellanliggande transitkonto.](../media/image10.png)

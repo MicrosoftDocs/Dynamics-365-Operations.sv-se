@@ -2,7 +2,7 @@
 title: Momsdeklaration (Sverige)
 description: I detta ämne beskrivs hur du konfigurerar in och genererar en momsdeklaration för Sverige.
 author: anasyash
-ms.date: 08/23/2021
+ms.date: 09/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Sweden
 ms.author: anasyash
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 04f12c2e912a3a861313ffbd8ee1178a590328f4
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 3f24f810c310ff2ccc2c30c9ca098edb15e2f432
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413623"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647079"
 ---
 # <a name="vat-declaration-sweden"></a>Momsdeklaration (Sverige)
 
@@ -139,6 +139,9 @@ Mer information om hur du importerar ER-format finns i [Hämta ER-konfiguratione
 ### <a name="set-up-application-specific-parameters-for-vat-declaration-boxes"></a><a name="set-up-application-specific-parameters-for-vat-declaration-boxes"></a>Konfigurera programspecifika parametrar för momsdeklarationsrutor
 
 Om du vill generera en momsdeklaration automatiskt, associerar du momskoder i programmet och sökningsresultaten i ER-konfigurationen.
+
+> [!NOTE]
+> Vi rekommenderar att du aktiverar funktionen genom att **Använd appspecifika parametrar från tidigare versioner av ER-format** i arbetsytan **Funktionshantering**. När den här funktionen är aktiverad blir parametrar som är konfigurerade för den tidigare versionen av ett ER-format automatiskt tillämpliga för den senare versionen av samma format. Om den här funktionen inte är aktiverad måste du konfigurera programspecifika parametrar explicit för varje formatversion. Funktionen **Använd appspecifika parametrar från tidigare versioner av ER-format** är tillgänglig i arbetsytan **Funktionshantering** med början i Finance version 10.0.23. Mer information om hur du ställer in parametrarna för ett ER-format för varje juridisk person finns i [Ställa in parametrarna för ett ER-format per juridisk enhet](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 1. Gå till **Arbetsytor** > **Elektronisk rapportering** och välj **Rapporteringskonfiguration**.
 2. Välj **Momsdeklaration XML (SE)** och välj sedan **Konfigurationer** > **Programspecifika parameterinställningar**.

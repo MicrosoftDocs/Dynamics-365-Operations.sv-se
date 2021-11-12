@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3fac6a0232f7e51e859fcc5b23244be092ce8d76123ec42f586063a02abab603
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e846cde14fe078d6675ec31d1a3271f751dd6468
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722801"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647150"
 ---
 # <a name="vendor-invoices-overview"></a>Översikt över leverantörsfakturor
 
@@ -72,12 +72,9 @@ Organisationen kan använda arbetsflöden för att hantera granskningen för lev
 Nedan kan du på flera sätt förhindra att en faktura skickas till ett arbetsflöde.
 
 - **Fakturatotal och den registrerade totalen är inte lika.** Den person som har skickat fakturan får en notifiering om att summorna inte är identiska. Notifieringen ger dig möjlighet att korrigera saldona innan du skickar fakturan till arbetsflödet på nytt. Den här funktionen är tillgänglig om parametern **förbjuden överföring till arbetsflödet när faktura summan och den registrerade faktura summan inte lika** på sidan **funktionshantering** är aktiverad. 
-
 - **Fakturan innehåller icke-allokerade tillägg.** Den person som skickade fakturan får en notifiering om att fakturan innehåller icke-allokerade tillägg så att de kan korrigera fakturan innan den skickas vidare till arbetsflödet. Den här funktionen är tillgänglig om parametern **förbjuden överföring där det finns icke-allokerade tillägg på en leverantörsfaktura** på sidan **funktionshantering** är aktiverad.
-
 - **Fakturan innehåller samma fakturanummer som en annan bokförd faktura.** Den person som har skickat fakturan får ett meddelande om att en faktura med ett dubblettnummer har hittats. Dubblettnumret kan korrigeras innan fakturan skickas till arbetsflödet på nytt. Denna notifiering visas när parametern **Kontrollera använt fakturanummer** under Leverantörsreskontra anges som **Avvisa dubblett**. Den här funktionen är tillgänglig om parametern **Förbud att skicka till arbetsflöde när fakturanumret redan finns på en bokförd faktura och ditt system inte är inställt för att acceptera duplicerade fakturanummer** på sidan **funktionshantering** aktiveras.
-
-- **Fakturan innehåller en rad där fakturakvantiteten är mindre än den matchade produktinleveranskvantiteten.** Den person som skickar fakturan eller försöker att bokföra får ett meddelande om att kvantiteterna inte är lika. Detta meddelande ger dig möjlighet att korrigera värdena innan du skickar fakturan till arbetsflödet på nytt. Den här funktionen är tillgänglig om parametern **Blockera bokföring och inlämning av leverantörsfakturor till arbetsflödet** på sidan **Funktionshantering** aktiveras och parametern **Blockera publicering och inlämning till arbetsflöde** på sidan **Parametrar för leverantörsreskontra** aktiveras.  
+- **Fakturan innehåller en rad där fakturakvantiteten är mindre än den matchade produktinleveranskvantiteten.** Den person som skickar fakturan eller försöker att bokföra får ett meddelande om att kvantiteterna inte är lika. Detta meddelande ger dig möjlighet att korrigera värdena innan du skickar fakturan till arbetsflödet på nytt. Den här funktionen är tillgänglig om parametern **Blockera bokföring och inlämning av leverantörsfakturor till arbetsflödet** på sidan **Funktionshantering** aktiveras och parametern **Blockera publicering och inlämning till arbetsflöde** på sidan **Parametrar för leverantörsreskontra** aktiveras.
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Matcha leverantörsfakturor mot produktinleveranser
 
@@ -122,9 +119,32 @@ En arbetsflödesinstans som har stoppats på grund av ett oåterkalleligt fel f�
 På sidan **Arbetsflödeshistorik** för leverantörsfakturor kan du återställa arbetsflödesstatusen till **utkast**. Du kan öppna den här sidan från **leverantörsfakturan** eller från navigeringen **Allmänt > Förfrågningar > Arbetsflöde**. Om du vill återställa arbetsflödesstatus **utkast**, välj **återkalla**. Du kan också återställa arbetsflödesstatus till utkast genom att välja åtgärden **återkalla** på sidan **leverantörsfaktura** eller **väntande leverantörsfakturor**. När arbetsflödesstatusen har återställts till **Utkast** blir den tillgänglig för redigering på sidan **leverantörsfaktura**.
 
 ## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>Visa fakturasumman på sidan Väntande leverantörsfakturor
+
 Du kan visa fakturasumman på sidan **Väntande leverantörsfakturor** genom att aktivera parametern **Visa fakturasumma i listan med pågående leverantörsfakturor** på sidan **Parametrar för leverantörsreskontra**. 
 
+## <a name="vendor-open-transactions-report"></a>Rapport med öppna leverantörstransaktioner
 
+Rapporten **Öppna leverantörstransaktioner** innehåller detaljerad information om de öppna transaktionerna för varje leverantör per det datum som du anger. Den här rapporten används ofta under granskningsproceduren för att verifiera saldon mellan leverantörsbokstransaktioner och redovisningskontotransaktioner.
+
+För varje transaktion innehåller rapporten följande information:
+
+- Fakturanummer
+- Transaktionsdatum
+- Verifikationsnummer
+- Transaktionsbelopp i transaktionsvalutan och i redovisningsvalutan
+- Kreditsaldo i transaktionsvalutan och i redovisningsvalutan
+- Debetsaldo i transaktionsvalutan och i redovisningsvalutan
+- Delsummabelopp i redovisningsvaluta
+- Betalningens förfallodatum
+
+### <a name="filter-the-data-on-the-report"></a>Filtrera data i rapporten
+
+När du genererar rapporten **Öppna leverantörstransaktioner** visas följande standardparametrar. Du kan använda dem om du vill filtrera vilka data som ska ingå i rapporten.
+
+- **Exkludera framtida kvittning** – Markera den här kryssrutan om du vill exkludera transaktioner som kvittas efter det datum som har angetts i **öppna transaktioner per** fält.
+- **Öppna transaktioner per** – Ange ett datum om du vill inkludera transaktioner som är öppna från och med detta datum. Om du inte anger något datum används maximalt datum i det här fältet. (Det högsta datumet är det senaste datumet som systemet accepterar, 31 december 2154.) Nästa gång rapporten körs ställs det här fältet som standard in det senaste datumet som angavs i den.
+
+Du kan använda filtren under fältet **Post att inkluderas** om du vill ta med fält om du ytterligare vill begränsa transaktionsdata som inkluderas i rapporten.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

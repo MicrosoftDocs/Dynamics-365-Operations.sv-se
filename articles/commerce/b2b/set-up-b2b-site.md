@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d77e1f3b5f8d558643b078dbe8e829e62f85120e4931d60224116a33f171fab3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721017"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713758"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Konfigurera en näthandelsplats för B2B
 
@@ -37,7 +37,7 @@ näthandelssajter mellan företag (B2B) innehåller ett antal viktiga funktioner
 
 Du får åtkomst till inställningar på webbplatsnivå i webbplatsbyggaren på **Webbplatsinställningar \> Tillägg**. Följande två inställningar på webbplatsnivå gäller för B2B-scenarier:
 
-- **Aktivera kundkontobetalningar** – Med denna egenskap kan användarna betala för order med hjälp av kundkonton. Tillgängliga värden är **Aktiverat för B2B-kunder**, **Aktiverat för B2C-kunder**, **Aktiverat för alla kunder** samt **Inaktiverat för alla kunder**. Om B2B-webbplatsen har stöd för kundkonton bör du välja **Aktiverat för B2C-kunder**.
+- **Aktivera kundkontobetalningar** – Med denna egenskap kan användarna betala för order med hjälp av kundkonton. Tillgängliga värden är **Aktiverat för B2B-kunder**, **Aktiverat för B2C-kunder**, **Aktiverat för alla kunder** samt **Inaktiverat för alla kunder**. Om B2B-webbplatsen har stöd för kundkonton bör du välja **Aktiverat för B2B-kunder**.
 - **Aktivera orderkvantitetsgränser** – Med den här egenskapen kan du ange gränser för antalet artiklar som kan beställas för respektive produkt eller kategori. Tillgängliga värden är **Aktiverat för B2B-kunder**, **Aktiverat för B2C-kunder**, **Aktiverat för alla kunder** samt **Inaktiverat för alla kunder**.
 
 > [!NOTE]

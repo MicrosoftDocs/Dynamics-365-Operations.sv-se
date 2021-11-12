@@ -2,7 +2,7 @@
 title: Översikt över jobb för import och export av data
 description: Använda arbetsytan Datahantering för att skapa och hantera dataimport- och dataexportjobb.
 author: peakerbl
-ms.date: 10/07/2021
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dec8270417cb7237081aa49203ca93d76c0d02ed
-ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
+ms.openlocfilehash: 51c7d678017bdd9388767500735e21e5374c9f29
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "7612374"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675379"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Översikt över jobb för import och export av data
 
@@ -68,6 +68,9 @@ När du väljer en enhet markerar du format för de data som ska exporteras elle
 | Excel                  | Excel                                      | \-Inte tillämpligt                     |
 | XML                    | \-Inte tillämpligt                                      | XML-element XML-attribut |
 | Avgränsad, fast bredd | Komma, semikolon, flik, lodrätt streck, kolon | \-Inte tillämpligt                     |
+
+> [!NOTE]
+> Det är viktigt att välja rätt värde för **Radavgränsare**, **Kolumnavgränsare** och **Textkvalifierare**, om alternativet **Filformat** anges till **Avgränsat**. Kontrollera att dina data inte innehåller det tecken som används som avgränsare eller kvalificerare, eftersom detta kan leda till fel under import och export.
 
 ### <a name="sequence-the-entities"></a>Ordna enheterna
 Enheter kan ordnas i en datamall eller i import- och exportjobb. När du kör ett jobb som innehåller mer än en datatabell måste du kontrollera att datatabellerna har ordnats korrekt. Du ordnar entiteter i första hand så att du kan lösa eventuella funktionella samband mellan olika enheter. Om enheterna inte har några funktionella samband kan de schemaläggas parallell import eller export.

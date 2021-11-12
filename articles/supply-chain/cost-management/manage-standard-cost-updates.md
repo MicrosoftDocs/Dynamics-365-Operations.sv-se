@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 942b144c78176e9a00cdc12101e2948e8aa4685e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3485f0722b8b99d7dc2d6dab470fdcc465b1da3d
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579770"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678676"
 ---
 # <a name="manage-standard-cost-updates"></a>Hantera standardkostnadsuppdateringar
 
@@ -43,8 +43,6 @@ Följande exempel visas hur enversionssättet och tvåversionssättet kan använ
 Detta exempel använde en extra kostnadsversion för hantering av uppdateringar under hela år 2020. Mer än en extra kostnadsversion kan användas, till exempel en separat version för varje uppdateringsbatch. När fler än en ytterligare kostnadsredovisning används, måste reserven uttryckas som de aktiva kostnaderna, eftersom de aktiva kostnaderna fördelas över flera kostnadsversioner.
 
 ## <a name="financial-dimensions-for-the-standard-cost-revaluation"></a>Ekonomiska dimensioner för omvärdering av standardkostnad
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Att aktivera ett nytt standardpris omvärderar vanligtvis det aktuella lagervärdet genom transaktioner för omvärdering av standardkostnad. Vanligtvis bokförs de ekonomiska dimensionerna för artikeln sedan på transaktionerna. Om du däremot skulle vilja styra om och hur de ekonomiska dimensionerna bokförs använder du [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera funktionen med namnet *Alternativ som används som standard i ekonomiska dimensioner för omvärdering av standardkostnad för lager*. När du har aktiverat den här funktionen går du till **Kostnadshantering > Policyinställningar för lagerredovisning > Parametrar** och anger den nya listrutan **Ursprunget till den ekonomiska dimensionen** till ett av följande värden:
 

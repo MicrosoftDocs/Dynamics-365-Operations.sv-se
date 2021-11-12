@@ -2,7 +2,7 @@
 title: Kortkommandon
 description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med Finance and Operations-appar.
 author: jasongre
-ms.date: 10/05/2020
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 749fc3655b1ad41fbe7dd4794fc4ca907f1c86b9ee4e92e2415e924058191ffa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e700b841014e1e12560bf0ce9e5e012361ec397
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743181"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647546"
 ---
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Du kan använda följande kortkommandon för att snabbt och effektivt mata in data i Finance and Operations-appar.
 
@@ -148,14 +149,15 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Växla fokus mellan den markerade raden och rubrikraden                                                               | Alt+Skift+H                     |
 | Gör den aktuella kolumnen större/mindre (med fokus i rubrikraden)                                                  | Högerpil/vänsterpil        |
 | Öppna rutnätsfiltrering för den aktuella kolumnen (med fokus i rubrikraden)                                              | Ange                           |
+| Ändra storlek på den aktuella kolumnen så att den passar innehållet (med fokus i rubrikraden)                                           | A                               |
 
 ## <a name="input-control-shortcuts"></a>Mata in kontrollgenvägar
 
-| Om du vill göra detta                                                                   | Tryck                         |
+| Om du vill göra detta                                                                   | Tryck på                          |
 |------------------------------------------------------------------------------|-------------------------------|
 | Öppna hyperlänk                                                           | Ctrl+Return                    |
-| Ange aktuellt sessionsdatum i ett datumfält                                       | D                         |
-| Ange aktuellt datum i ett datumfält                                       | V                         |
+| Ange aktuellt sessionsdatum i ett datumfält                                       | D                             |
+| Ange aktuellt datum i ett datumfält                                       | V                             |
 | Öppna sökning, kombinationsruta, datumväljare, dialogruta                         | Alt+nedåtpil                |
 | Stäng sökning, kombinationsruta, datumväljare, dialogruta                        | Esc                           |
 | Flytta fokus till en uppslagning (när uppslagningen redan är öppen,)                   | Alt + nedåtpil                |
@@ -202,8 +204,8 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Använd verktyget Flytta (i anpassningsläge)                                                                       | M                                   |
 | Välj aktuell kontroll som ska flyttas (när du använder verktyget Flytta och ingen kontroll ännu har valts ut för flytt)  | Blanksteg eller Retur                      |
 | Ta bort kontrollen för att flytta (om du använder verktyget Flytta)                                                                   | Esc                                 |
-| Flytta till nästa position för den markerade kontrollen (när du använder verktyget Flytta)                                          | Tabb eller högerpil eller nedåtpil    |
-| Flytta till föregående position för den markerade kontrollen (när du använder verktyget Flytta)                                      | Shift+Tab eller vänsterpil eller uppåtpil |
+| Flytta till nästa position för den markerade kontrollen (när du använder verktyget Flytta)                                              | Tabb eller högerpil eller nedåtpil    |
+| Flytta till föregående position för den markerade kontrollen (när du använder verktyget Flytta)                                          | Shift+Tab eller vänsterpil eller uppåtpil |
 | Använd verktyget Dölj (i anpassningsläge)                                                                       | H                                   |
 | Växla mellan huruvida den aktuella kontrollen är synlig eller dold (när du använder verktyget Dölj)                                     | Blanksteg eller Retur                      |
 | Använd verktyget Hoppa över (i anpassningsläge)                                                                       | k                                   |

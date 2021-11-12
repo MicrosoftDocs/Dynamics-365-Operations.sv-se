@@ -1,5 +1,5 @@
 ---
-title: Förhandsversion av Dynamics 365 Supply Chain Management 10.0.22 (november 2021)
+title: Nyheter och ändringar i Dynamics 365 Supply Chain Management (10.0.22 november 2021)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management 10.0.22.
 author: kamaybac
 ms.date: 08/09/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 3f5166338aebe784fe7f95372a437d4ed660de77
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a4f9e5a4a318ceaa45b6919e394e1ff335bfb193
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579722"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678845"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10022-november-2021"></a>Förhandsversion av Dynamics 365 Supply Chain Management 10.0.22 (november 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management (10.0.22 november 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management förhandsversion 10.0.22. Den här versionen har ett versionsnummer för 10.0.995 och är tillgänglig enligt följande:
+Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management version 10.0.22. Den här versionen har ett versionsnummer för 10.0.995 och är tillgänglig enligt följande:
 
 - **Förhandsversion:** september 2021
 - **Allmän tillgänglighet för versionen (självuppdatering):** oktober 2021
@@ -40,13 +39,12 @@ Följande tabeller listar de funktioner som ingår i denna version. Kolumnen *Fu
 
 Följande tabeller listar de funktionsförbättringar som ingår i denna version. Var och en av dessa förbättringar tillhandahåller en stegvis förbättring av en befintlig funktion. Eftersom de bara är förbättringar visas de inte i [utgivningsplanen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). För att säkerställa att dessa förbättringar inte står i konflikt med dina befintliga anpassningar eller inställningar stängs var och en av dem av som standard (om inget annat anges). Om du vill använda någon av dessa funktioner måste du explicit aktivera dem i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Funktionsområde | Funktionsnamn i funktionshantering | Mer information |
+| Modul | Funktionsnamn i funktionshantering | Mer information |
 |---|---|---|
 | Kostnadshantering | Skapa relaterade verifikationer för omvärderingar av standardkostnadsavrundningar | <p>När en ekonomisk lagerbokföring (till exempel en försäljningsorderfaktura eller lagertransaktion) görs, skapar den här funktionen en separat verifikation för alla relaterade omvärderingar av standardkostnadsavrundningar och kopplar den till den ekonomiska bokföringsverifikationen som en relaterad verifikation.</p><p>Utan den här funktionen registrerar systemet omvärderingar av standardkostnadsavrundningar på samma verifikationsbokföring. Detta beteende kan ibland skapa motstridig datuminformation eftersom omvärderingarna använder sessionen eller systemdatumet, medan ekonomiska bokföringar använder bokföringsdatumet.</p> |
 | Distribuerad hybridtopologi | *(Ingen funktionshantering krävs.)* | <p>Den här versionen utökar de utgående lastplaneringsfunktionerna för lagerstyrningsarbetsbelastningen för moln- och kantskalningsenheter.</p><p>För mer information, se [Arbetsbelastningar för hantering av distributionslager för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
 | Konstruktionsändringshantering | Variantgenerering för tekniska produkter | <p>Med hjälp av den här funktionen kan du skapa flera varianter för en konstruktionsprodukt baserat på dess färg, storlek, utförande eller konfigurationsdimensioner.</p><p>Mer information finns i [Generera varianter för konstruktionsprodukter](../engineering-change-management/engineering-variants.md).</p> |
 | Hantering av lager och lagerstyrning | Integrering av lagersynlighet med reservationsförskjutning | <p>Den här funktionen kan bara aktiveras efter att funktionen *Integrering av Lagersynlighet* har aktiverats. Här finns funktioner för att motboka reservationer som görs i Lagersynlighet.</p><p>Mer information finns i [Reservationer för Lagersynlighet](../inventory/inventory-visibility-reservations.md).</p> |
-| Försäljning och marknadsföring | Begränsa antalet försäljningsorder som går att välja för bokföring | <p>Den här funktionen aktiveras automatiskt. Den lägger till fältet **Max. antal försäljningsorder för bokföring** på sidan **Parametrar för kundreskontra**. Med hjälp av det här fältet kan du definiera det högsta antalet försäljningsorder som kan väljas när bekräftelser, plocklistor, följesedlar och fakturor bokförs från listsidan för försäljningsorder. Standardvärdet är *100*.</p><p>Funktionen hjälper till att förbättra prestandan för listsidan för försäljningsorder när ett visst antal försäljningsorder väljs. Den påverkar inte antalet försäljningsorder som kan bearbetas med en periodisk uppgift.</p> |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
 
@@ -63,7 +61,7 @@ Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdateringar för Finance and Operations-appar
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.22 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.22 av Finance and Operations-appar (november 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.22 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.22 av Finance and Operations-appar (november 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md).
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 

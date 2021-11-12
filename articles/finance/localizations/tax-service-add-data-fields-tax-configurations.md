@@ -2,7 +2,7 @@
 title: Lägga till datafält i momskonfigurationer
 description: I det här avsnittet beskrivs hur du anpassar momskonfigurationer genom att lägga till datafält.
 author: Kai-Cloud
-ms.date: 09/15/2021
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fb10fb5feb317dca5253eea6e5694a3960a58a7d
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 590c2d62995f260ba4277e1031349b0dc43f1417
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500156"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674910"
 ---
 # <a name="add-data-fields-in-tax-configurations"></a>Lägga till datafält i momskonfigurationer
 
@@ -31,8 +31,12 @@ I det här avsnittet beskrivs hur du anpassar momskonfigurationer med hjälp av 
 ## <a name="customize-the-tax-data-model"></a>Anpassa momsdatamodellen
 
 1. I Microsoft Dynamics 365 Finance, gå till **Elektronisk rapportering** > **Momskonfigurationer**.
-2. I konfigurationsträdet väljer du **Momsdatamodell – Europa**. Klicka på **Skapa konfiguration** i åtgärdsfönstret.
-3. I listrutan, välj **Beskattningsbar dokumentmodell härledd från Namn: Momsdatamodell – Europa, Microsoft**, ange ett namn för den nya momsdatamodellen och välj sedan **Skapa konfiguration**.
+2. I konfigurationsträdet väljer du **Datamodell för momsberäkning**. Klicka på **Skapa konfiguration** i åtgärdsfönstret. 
+
+  > [!NOTE] 
+  > Om det inte finns någon konfigurationsleverantör tillgänglig, skapar du en och gör den aktiv för din momskonfiguration. Mer information finns i [Skapa konfigurationsleverantörer och markera dem som aktiva](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+  
+3. I listrutan, välj **Beskattningsbar dokumentmodell härledd från Namn: Datamodell för momsberäkning, Microsoft**, ange ett namn för den nya momsdatamodellen och välj sedan **Skapa konfiguration**.
 4. Välj den momsdatamodell som du just skapat och markera sedan **Designer** i åtgärdsfönstret.
 5. Expandera datamodellträdet, välj **Rader** och välj sedan **Ny**.
 6. Ange ett namn i dialogrutan **Skapa nod**, ange artikeltypen och välj sedan **Lägg till**.
@@ -43,8 +47,8 @@ I det här avsnittet beskrivs hur du anpassar momskonfigurationer med hjälp av 
 ## <a name="customize-the-tax-configuration"></a>Anpassa momskonfiguration
 
 1. I Finance, gå till **Elektronisk rapportering** > **Momskonfigurationer**.
-2. I konfigurationsträdet väljer du **Momskonfiguration – Europa**. Klicka på **Skapa konfiguration** i åtgärdsfönstret.
-3. I listrutan, välj **Momstjänstkonfiguration härledd från Namn: Momskonfiguration – Europa, Microsoft** ange ett namn för den nya skattekonfigurationen och välj sedan **Skapa konfiguration**.
+2. I konfigurationsträdet väljer du **Konfiguration av momsberäkning**. Klicka på **Skapa konfiguration** i åtgärdsfönstret.
+3. I listrutan, välj **Momstjänstkonfiguration härledd från Namn: Momsberäkningskonfiguration, Microsoft** ange ett namn för den nya skattekonfigurationen och välj sedan **Skapa konfiguration**.
 4. Välj den momskonfiguration som du just skapat och markera sedan **Designer** i åtgärdsfönstret.
 5. I avsnitt **Egenskaper** i fältet **Datamodell** välj den anpassade momsdatamodellen som du skapade tidigare.
 6. I fältet **Datamodellversion**,välj den färdiga versionen av momsdatamodellen.

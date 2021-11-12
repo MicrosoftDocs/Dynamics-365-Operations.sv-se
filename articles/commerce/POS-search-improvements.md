@@ -2,7 +2,7 @@
 title: Produkt- och kundsökning i POS
 description: Det här avsnittet innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 03/10/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 043a630408d6b03e528f0afd5443de73ad5f3802c968b9d9bd7a5c51bfe1fb03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716405"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700099"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- och kundsökning i POS
 
@@ -47,7 +47,7 @@ En lokal produktsökning söker inom följande produktegenskaper:
 - Streckkod
 - Söknamn
 
-### <a name="additional-local-product-search-capabilities"></a>Ytterligare sökfunktioner för lokal produkt
+### <a name="additional-local-product-search-capabilities-conventional-sql-full-text-search"></a>Ytterligare lokala produktsökningsfunktioner (konventionell SQL-fulltextsökning) 
 
 - För flera nyckelordssökningar (det vill säga, för sökningar med sökvillkor) kan återförsäljare ange om sökresultatet ska innehåll resultat som matchar *alla* sökord eller endast resultat som matchar *alla* sökord. inställningen för denna funktion finns i kassafunktionens profil, i en ny grupp som heter **Produktsökning**. Standardinställningen är **Matcha alla sökord**. Detta är också den rekommenderade inställningen. När inställningen **Matcha alla sökord** används returneras alla produkter som helt eller delvis matchar ett eller flera sökord som resultat. Resultaten sorteras automatiskt i stigande ordning efter produkter som har de flesta nyckelordsträffarna (helt eller delvis).
 
@@ -55,6 +55,8 @@ En lokal produktsökning söker inom följande produktegenskaper:
 
     - Sökningen utförs på individuella produktegenskaper. Exempelvis returneras bara produkter som har de sökta nyckelorden i minst en produktegenskap.
     - Dimensioner genomsöks inte.
+> [!NOTE]
+> Följande konfigurationer av **Matcha alla sökord**/**Matcha alla sökvillkor** i funktionsprofiler för kassa kan endast användas för **lokala** produktsökningar (konventionell SQL-fulltextsökning). Den här konfigurationen påverkar inte molnbaserade sökerfarenheter. Den nya sökmotorn har sin egen avancerade algoritm som söker efter relevans för produktssökresultat. 
 
 - Återförsäljare kan konfigurera produktsökningen så att denna visar sökförslag när användarna skriver produktnamn. En ny inställning för denna funktion finns i kassafunktionens profil, i en grupp som heter **Produktsökning**. Inställningen kallas **Visa sökförslag medan du skriver**. Denna funktion hjälper anställda att snabbt hitta den produkt som de söker efter, detta eftersom de inte behöver skriva hela namnet manuellt.
 - Sökalgoritmen för produkten söker nu också efter de sökta villkoren i produktens **Söknamn**-egenskap.
@@ -147,7 +149,5 @@ Följande lista visar hur den molnbaserade kundsökningsfunktionen skiljer sig f
 > Sökfunktionen för kunder med hjälp av tjänsten Azure Cognitive Search finns tillgänglig i begränsade regioner för förhandsgranskning. Sökfunktionen för kunder är *inte* tillgänglig i följande regioner:
 > - Brasilien
 > - Indien
-> - Kanada
-> - Storbritannien
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Skapa e-postmallar för transaktionshändelser
 description: I det här avsnittet beskrivs hur du skapar, överför och konfigurerar e-postmallar för transaktionshändelser i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 05/28/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,20 +14,139 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 2da1044cd332d841a8c18f7139d0d8c09bad95f446494034060e59416b4018b8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 69ba8821cde6788d6e0accb37288f92acdfc776c
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718717"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713807"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Skapa e-postmallar för transaktionshändelser
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 I det här avsnittet beskrivs hur du skapar, överför och konfigurerar e-postmallar för transaktionshändelser i Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce tillhandahåller en färdig lösning för utskick av e-postmeddelanden som meddelar kunder om transaktionshändelser (t.ex. när en order har lagts, är klar för upphämtning eller har levererats). Det här avsnittet beskriver hur du skapar, överför och konfigurerar e-postmallar som används för att skicka transaktionsmeddelanden.
+Dynamics 365 Commerce tillhandahåller en färdig lösning för att skicka e-postmeddelanden som varnar kunder om transaktionshändelser. E-postmeddelanden kan till exempel skickas när en order läggs, är klar för upphämtning eller har levererats. Det här avsnittet beskriver hur du skapar, överför och konfigurerar e-postmallar som används för att skicka transaktionsmeddelanden.
+
+## <a name="notification-types"></a>Meddelandetyper
+
+Meddelanden kan konfigureras för att informera kunderna via e-post när specifika händelser inträffar som en del av orderns och kundens livscykel. Om du vill konfigurera meddelanden måste du mappa en e-postmall till en aviseringstyp genom att skapa en e-postnotifieringsprofil för Commerce. Mer information om hur du ställer in meddelandeprofiler för e-post finns i [Konfigurera profil för e-postmeddelande](email-notification-profiles.md).
+
+Dynamics 365 Commerce har stöd för följande meddelandetyper.
+
+### <a name="order-created"></a>Order skapad
+
+Meddelandetypen *order som skapas* utlöses när en ny försäljningsorder skapas i Commerce-administration.
+
+> [!NOTE]
+> Ordern skapade meddelandetypen som inte utlöses för hämtköpstransaktioner som sker vid en kassaterminal (POS). I det här fallet genereras ett e-postmeddelande och/eller ett utskrivet kvitto istället. Mer information finns i [Skicka e-postkvitton från Modern POS (MPOS)](email-receipts.md).
+
+### <a name="order-confirmed"></a>Ordern är bekräftad
+
+Meddelandetypen *order bekräftad* utlöses när ett orderbekräftelsedokument genereras för en försäljningsorder från Commerce-administration.
+
+### <a name="picking-completed"></a>Plockningen är slutförd
+
+Meddelandetypen *plockning slutförd* utlöses när en plocklista för en order markeras som slutförd i Commerce-administration.
+
+> [!NOTE]
+> Meddelandetypen slutförd plockning som utlöses när en artikel markeras som plockad i en kassaterminal.
+
+### <a name="packing-completed"></a>Försändelsen har packats klart
+
+Meddelandetypen *packning slutförd* utlöses när ett följesedeldokument genereras fören order markeras som slutförd i Commerce-kassaterminal.
+
+Meddelandetypen förpackning klar stöder följande ytterligare e-postplatshållare för att underlätta "order klar för upphämtning" och sökning efter order från transaktionella e-postmeddelanden.
+
+| Namn på platshållare    | Syfte |
+| ------------------- | ------- |
+| `pickupstorename`     | Namnet på butiken där ordern är tillgänglig för upphämtning. |
+| `pickupstoreaddress`  | Adressen på butiken där ordern är tillgänglig för upphämtning. |
+| `pickupstorehourfrom` | Upphämtningsbutikens öppettider. |
+| `pickupstorehourto`   | Upphämtningsbutikens stängningstider. |
+| `pickupchannelid`     | Butikskanal-ID för upphämtningsbutiken. |
+| `packingslipid`      | ID för följesedeln för den order som kommer att hämtas. |
+| `confirmationid`      | Orderbekräftelse-ID för den order som kommer att hämtas. (Detta ID kallas ibland för kanalreferens-ID.) |
+
+För mer information om kundens incheckning och sökfunktioner, se [Ställa in geoidentifiering och omdirigering](geo-detection-redirection.md) och [Aktivera ordersökning för gästkassa](order-lookup-guest.md).
+
+### <a name="order-ready-for-pickup"></a>Order klar för hämtning
+
+Meddelandetypen *order klar för upphämtning* utlöses när en order markeras som packad och leveranssättet ställs in på **Upphämtning av kund** på en eller flera orderrader.
+
+> [!NOTE]
+> Ordern som är klar för upphämtning har avaktiverats i den packade notifieringstypen. Meddelandetypen anpassas efter leveranssätt.
+
+### <a name="order-shipped"></a>Order levererad
+
+Meddelandetypen *ordern levereras* utlöses när en order som har ett leveranssätt som inte finns i butiken faktureras.
+
+> [!NOTE]
+> Meddelandetypen ordern som levereras klar för upphämtning har avaktiverats i meddelandetypen kundorder. Meddelandetypen anpassas efter leveranssätt.
+
+### <a name="order-invoiced"></a>Order fakturerad
+
+Meddelandetypen *order som faktureras* utlöses när en order faktureras i kassa eller Commerce-administration.
+
+### <a name="issue-gift-card"></a>Utfärda presentkort
+
+Meddelandetypen *Utfärda presentkort* utlöses när en försäljningsorder som innehåller en produkt av presentkortstyp faktureras.
+
+> [!NOTE]
+> E-postmeddelandet med presentkortet skickas till presentkortsmottagaren. Presentkortsmottagaren anges i Commerce-administration på en enskild försäljningsorderrad på fliken **Förpackning** under **Raddetaljer**. Den kan anges antingen manuellt eller programmässigt.
+
+Utbetalningsmeddelandetypen har stöd för följande ytterligare platshållare.
+
+| Namn på platshållare      | Syfte |
+| --------------------- | ------- |
+| `giftcardnumber`        | Presentkortsnummer för produkter av typen presentkort. |
+| `giftcardbalance`       | Presentkortssaldo för produkter av typen presentkort. |
+| `giftcardmessage`       | Presentkortsmeddelande för produkter av typen presentkort. |
+| `giftcardpin`         | PIN-kod för presentkort, för produkter av typen presentkort. (Denna platshållare är specifik för externa presentkort.) |
+| `giftcardexpiration`    | Utgångsdatum för presentkort, för produkter av typen presentkort. (Denna platshållare är specifik för externa presentkort.) |
+| `giftcardrecipientname` | Namnet på mottagare av presentkort, för produkter av typen presentkort. |
+| `giftcardbuyername`     | Namnet på inköpare av presentkort, för produkter av typen presentkort. |
+
+Mer information om presentkort finns i [digitala presentkort för e-handel](digital-gift-cards.md) och [stöd för externa för presentkort](dev-itpro/gift-card.md).
+
+### <a name="order-cancellation"></a>Orderannullering
+
+Meddelandetypen *orderannullering* utlöses när en order avbryts i Commerce-administration.
+
+### <a name="customer-created"></a>Kunden har skapats
+
+Meddelandetypen *kund som skapas* utlöses när en ny kundentitet i Commerce-administration.
+
+### <a name="b2b-prospect-approved"></a>Potentiell B2B-kund godkänd
+
+Meddelandetypen *godkänd potentiell B2B-kund* utlöses när en potentiell kunds introduktionsbegäran godkänns i Commerces-administration. Mer information om hur du godkänner eller avvisar potentiella B2B-kunder finns i [Ställa in administratörsanvändare för en ny affärspartner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
+
+Meddelandetypen godkänd potentiell B2B-kund har stöd för följande ytterligare platshållare.
+
+| Namn på platshållare | Syfte                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| `firstname`       | Förnamnet på potentiell B2B-kund enligt angivet i programmet. |
+| `lastname`         | Efternamnet på potentiell B2B-kund enligt angivet i programmet. |
+| `company`          | Namnet på sökandes företag enligt angivet i programmet. |
+| `email`            | E-postadressen för potentiell kund enligt angivet i programmet.   |
+| `zipcode`          | Postnumret för potentiella kundens primära adress. |
+| `comments`         | Kommentaren som den potentiella kunden har angett i appen. |
+| `storename`        | Namnet på kanalen där potentiella kunden skapades. |
+| `storeurl`         | Tomt som standard. Ett anpassat filnamnstillägg måste skapas för att platshållaren ska kunna användas. |
+
+### <a name="b2b-prospect-approved"></a>Potentiell B2B-kund godkänd
+
+Meddelandetypen *avvisad potentiell B2B-kund* utlöses när en potentiell kunds introduktionsbegäran avvisad i Commerce-administration. Mer information om hur du godkänner eller avvisar potentiella B2B-kunder finns i [Ställa in administratörsanvändare för en ny affärspartner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
+
+Meddelandetypen avvisad potentiell B2B-kund har stöd för följande ytterligare platshållare.
+
+| Namn på platshållare | Syfte                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| `firstname`        | Förnamnet på potentiell B2B-kund enligt angivet i programmet. |
+| `lastname`         | Efternamnet på potentiell B2B-kund enligt angivet i programmet. |
+| `company`          | Namnet på sökandes företag enligt angivet i programmet. |
 
 ## <a name="create-an-email-template"></a>Skapa en e-postmall
 
@@ -39,11 +158,11 @@ Gör så här om du vill skapa en e-postmall.
 1. Välj **Ny**.
 1. Under **Allmänt** anger du följande fält:
 
-    - **ID för e-post** – ID för e-post är den unika identifieraren för en mall och är det värde som visas när du väljer en mall som ska mappas till en händelse.
+    - **E-post-ID** – E-post-ID är den unika identifieraren för en mall. Det är det värde som visas när du väljer en mall som ska mappa till en händelse.
     - **E-postbeskrivning** – Du kan använda det här valfria fältet för att ange en beskrivning av mallen. Värdet som du anger visas bara i Commerce Headquarters.
     - **Avsändarens namn** – Det namn som du anger visas i fältet "från" i de flesta e-postklienter.
     - **Avsändarens e-postadress** – Ange den e-postadress som ska användas för e-postmeddelanden som skickas med hjälp av den här mallen.
-    - **Standardspråkkod** – Detta fält innehåller den lokaliserade versionen av det e-postmeddelande som skickas som standard om det inte finns något språk i kanalen som anropar den här mallen.
+    - **Standardspråkkod** – Detta fält innehåller den lokaliserade versionen av det e-postmeddelande som skickas som standard om kanalen som anropar inte anger ett språk.
 
 1. Under **Innehåll i e-postmeddelande** väljer du **Nytt**.
 1. I fältet **Språk** anger du språket för e-postmallen. Du kan lägga till fler språk och lokaliserade mallar senare.
@@ -74,34 +193,34 @@ Här är ett exempel:
 
 Följande platshållare hämtar och visar data som definieras på försäljningsordernivå (i motsats till försäljningsradnivå).
 
-| Namn på platshållare     | Platshållarens värde                                            |
+| Namn på platshållare     | Syfte                                                      |
 | -------------------- | ------------------------------------------------------------ |
-| customername         | Namnet på den kund som lade beställningen.               |
-| customeraddress      | Kundens adress.                                 |
-| customeremailaddress | E-postadressen som kunden angav i kassan.     |
-| salesid              | Försäljningsorderns ID.                                   |
-| orderconfirmationid  | Det korskanals-ID som genererades när en order skapades. |
-| channelid            | ID:t för detaljhandels- eller onlinekanal som ordern gjordes via. |
-| deliveryname         | Namnet som anges för leveransadressen.        |
-| deliveryaddress      | Leveransadressen för levererade order.                     |
-| deliverydate         | Leveransdatum.                                           |
-| shipdate             | Transportdatum.                                               |
-| modeofdelivery       | Leveranssätt för ordern.                              |
-| ordernetamount       | Det totala beloppet för ordern, minus total moms.         |
-| rabatt             | Orderns totala rabatt.                            |
-| avgifter              | Orderns totala kostnader.                             |
-| moms                  | Orderns totala moms.                                 |
-| summa                | Orderns totala belopp.                              |
-| storename            | Namnet på den butik som lade beställningen.            |
-| storeaddress         | Adressen till den butik som lade beställningen.              |
-| storeopenfrom        | Öppningstiden för den butik som lade beställningen.         |
-| storeopento          | Stängningstiden för den butik som lade beställningen.         |
-| pickupstorename      | Namnet på den butik där ordern kommer att hämtas upp.\* |
-| pickupstoreaddress   | Adressen till den butik där ordern kommer att hämtas upp.\* |
-| pickupopenstorefrom  | Öppningstiden för den butik där ordern kommer att hämtas upp.\* |
-| pickupopenstoreto    | Stängningstiden för den butik där ordern kommer att hämtas upp.\* |
-| pickupchannelid      | Kanal-ID för butiken som har angetts för upphämtningssättet.\* |
-| packingslipid        | ID:t för följesedeln som genererades när rader i en order packades.\* |
+| `customername`         | Namnet på den kund som lade beställningen.               |
+| `customeraddress`      | Kundens adress.                                 |
+| `customeremailaddress` | E-postadressen som kunden angav i kassan.     |
+| `salesid`              | Försäljningsorderns ID.                                   |
+| `orderconfirmationid`  | Det korskanals-ID som genererades när en order skapades.   |
+| `channelid`            | ID:t för detaljhandels- eller onlinekanal som ordern gjordes via. |
+| `deliveryname`         | Namnet som anges för leveransadressen.         |
+| `deliveryaddress`      | Leveransadressen för levererade order.                     |
+| `deliverydate`         | Leveransdatum.                                           |
+| `shipdate`             | Transportdatum.                                               |
+| `modeofdelivery`       | Leveranssätt för ordern.                              |
+| `ordernetamount`       | Det totala beloppet för ordern, minus total moms.         |
+| `discount`            | Orderns totala rabatt.                            |
+| `charges`              | Orderns totala kostnader.                             |
+| `tax`                  | Orderns totala moms.                                 |
+| `total`                | Orderns totala belopp.                              |
+| `storename`            | Namnet på den butik som lade beställningen.            |
+| `storeaddress`         | Adressen till den butik som lade beställningen.              |
+| `storeopenfrom`        | Öppningstiden för den butik som lade beställningen.         |
+| `storeopento`          | Stängningstiden för den butik som lade beställningen.         |
+| `pickupstorename`      | Namnet på den butik där ordern kommer att hämtas upp.\*   |
+| `pickupstoreaddress`   | Adressen till den butik där ordern kommer att hämtas upp.\* |
+| `pickupopenstorefrom`  | Öppningstiden för den butik där ordern kommer att hämtas upp.\* |
+| `pickupopenstoreto`    | Stängningstiden för den butik där ordern kommer att hämtas upp.\* |
+| `pickupchannelid`     | Kanal-ID för butiken som har angetts för upphämtningssättet.\* |
+| `packingslipid`        | ID:t för följesedeln som genererades när rader i en order packades.\* |
 
 \*Dessa platshållare returnerar endast data när de används för **ordern klar för upphämtning** av meddelandetyp. 
 
@@ -109,43 +228,43 @@ Följande platshållare hämtar och visar data som definieras på försäljnings
 
 Följande platshållare hämtar och visar data för enskilda produkter (rader) i försäljningsordern.
 
-| Namn på platshållare               | Platshållarens värde |
+| Namn på platshållare               | Syfte |
 |--------------------------------|-------------------|
-| productid                      | <p>Produktens ID. Detta ID-konto för varianter.</p><p><strong>Observera:</strong> Denna platshållare har avaktiverats i syfte att använda **lineproductrecid**.</p> |
-| lineproductrecid               | Produktens ID. Detta ID-konto för varianter. Den identifierar unikt en artikel på variantnivå. |
-| lineitemid                     | Produkt-nivå-ID på produkten. (Det här ID:t tar inte hänsyn till varianter.) |
-| lineproductvariantid           | Produktvariantens ID. |
-| lineproductname                | Namnet på produkten. |
-| lineproductdescription         | Produktbeskrivningen. |
-| linequantity                   | Antalet enheter som beställts för raden, plus måttenheten (t.ex. **ea** eller **par**). |
-| lineunit                       | Måttenheten för raden. |
-| linequantity_withoutunit       | Antalet enheter som beställts för raden, utan måttenheten. |
-| linequantitypicked             | När händelsen **PickOrder** används innebär detta det antal enheter som valts ut. I annat fall **0** (noll). |
-| linequantitypicked_withoutunit | När händelsen **PickOrder** används innebär detta antalet enheter som valts ut, utan måttenhet. I annat fall **0** (noll). |
-| linequantitypacked             | När händelserna **PackOrder** och **Order klar för upphämtning** används, innebär detta det antal enheter som har förpackats. I annat fall **0** (noll). |
-| linequantitypacked_withoutuom  | När händelserna **PackOrder** och **Order klar för upphämtning** används, innebär detta det antal enheter som har förpackats, utan måttenhet. I annat fall **0** (noll). |
-| linequantityshipped            | Alltid **0**, förutom när specifika händelser används, enligt beskrivningen på nästa rad. |
-| linequantityshipped_withoutuom | När händelsen **ShipOrder** används innebär detta antalet enheter som valts ut, utan måttenhet. I annat fall **0** (noll). |
-| lineprice                      | Priset för en enda enhet. |
-| linenetamount                  | Priset för raden efter det att antalet enheter samt rabatten har tillämpats. |
-| linediscount                   | Rabatten för en enskild enhet. |
-| lineshipdate                   | Transportdatumet för raden. |
-| linedeliverydate               | Leveransdatumet för raden. |
-| linedeliverymode               | Leveranssättet för raden. |
-| linedeliveryaddress            | Leveransadressen för raden. |
-| linepickupdate                 | Upphämtningsdatum som kunden har angett för order där upphämtningssätt används. |
-| linepickuptimeslot             | Tidsintervallet för upphämtning som kunden har angett för order där upphämtningssätt används. |
-| giftcardnumber                 | Presentkortsnummer för produkter av typen presentkort. |
-| giftcardbalance                | Presentkortssaldo för produkter av typen presentkort. |
-| giftcardmessage                | Presentkortsmeddelande för produkter av typen presentkort. |
-| giftcardpin                    | PIN-kod för presentkort, för produkter av typen presentkort. (Denna platshållare är specifik för externa presentkort.) |
-| giftcardexpiration             | Utgångsdatum för presentkort, för produkter av typen presentkort. (Denna platshållare är specifik för externa presentkort.) |
-| giftcardrecipientname          | Namnet på mottagare av presentkort, för produkter av typen presentkort. |
-| giftcardbuyername              | Namnet på inköpare av presentkort, för produkter av typen presentkort. |
+| `productid`                      | <p>Produktens ID. Detta ID-konto för varianter.</p><p><strong>Obs!</strong> Denna platshållare har avaktiverats i syfte att använda `lineproductrecid`.</p> |
+| `lineproductrecid`               | Produktens ID. Detta ID-konto för varianter. Den identifierar unikt en artikel på variantnivå. |
+| `lineitemid`                     | Produkt-nivå-ID på produkten. (Det här ID:t tar inte hänsyn till varianter.) |
+| `lineproductvariantid`           | Produktvariantens ID. |
+| `lineproductname`                | Namnet på produkten. |
+| `lineproductdescription`         | Produktbeskrivningen. |
+| `linequantity`                   | Antalet enheter som beställts för raden, plus måttenheten (t.ex. **ea** eller **par**). |
+| `lineunit`                       | Måttenheten för raden. |
+| `linequantity_withoutunit`       | Antalet enheter som beställts för raden, utan måttenheten. |
+| `linequantitypicked`             | När händelsen **PickOrder** används innebär detta det antal enheter som valts ut. I annat fall **0** (noll). |
+| `linequantitypicked_withoutunit` | När händelsen **PickOrder** används innebär detta antalet enheter som valts ut, utan måttenhet. I annat fall **0** (noll). |
+| `linequantitypacked`             | När händelserna **PackOrder** och **Order klar för upphämtning** används, innebär detta det antal enheter som har förpackats. I annat fall **0** (noll). |
+| `linequantitypacked_withoutuom`  | När händelserna **PackOrder** och **Order klar för upphämtning** används, innebär detta det antal enheter som har förpackats, utan måttenhet. I annat fall **0** (noll). |
+| `linequantityshipped`            | Alltid **0**, förutom när specifika händelser används, enligt beskrivningen på nästa rad. |
+| `linequantityshipped_withoutuom` | När händelsen **ShipOrder** används innebär detta antalet enheter som valts ut, utan måttenhet. I annat fall **0** (noll). |
+| `lineprice`                      | Priset för en enda enhet. |
+| `linenetamount`                  | Priset för raden efter det att antalet enheter samt rabatten har tillämpats. |
+| `linediscount`                   | Rabatten för en enskild enhet. |
+| `lineshipdate`                   | Transportdatumet för raden. |
+| `linedeliverydate`               | Leveransdatumet för raden. |
+| `linedeliverymode`               | Leveranssättet för raden. |
+| `linedeliveryaddress`            | Leveransadressen för raden. |
+| `linepickupdate`                 | Upphämtningsdatum som kunden har angett för order där upphämtningssätt används. |
+| `linepickuptimeslot`             | Tidsintervallet för upphämtning som kunden har angett för order där upphämtningssätt används. |
+| `giftcardnumber`                 | Presentkortsnummer för produkter av typen presentkort. |
+| `giftcardbalance`                | Presentkortssaldo för produkter av typen presentkort. |
+| `giftcardmessage`                | Presentkortsmeddelande för produkter av typen presentkort. |
+| `giftcardpin`                    | Presentkortets PIN-kod för produkter av typen presentkort. (Denna platshållare är specifik för externa presentkort.) |
+| `giftcardexpiration`             | Utgångsdatum för presentkort, för produkter av typen presentkort. (Denna platshållare är specifik för externa presentkort.) |
+| `giftcardrecipientname`          | Namnet på mottagare av presentkort, för produkter av typen presentkort. |
+| `giftcardbuyername`              | Namnet på inköpare av presentkort, för produkter av typen presentkort. |
 
 ### <a name="format-of-order-line-placeholders-in-the-email-message-body"></a>Format för platshållare för orderrader i e-postmeddelandets text
 
-När du skapar HTML för enskilda orderrader i e-postmeddelandets text omger du det upprepade blocket med HTML och platshållare för raderna med följande platshållare, som placeras i HTML-kommentartaggar.
+När du skapar HTML för enskilda orderrader i e-postmeddelandets text omger du det upprepade blocket med HTML och platshållare för raderna med följande platshållare. Lägg märke till att platshållare finns i HTML-kommentarstaggar.
 
 ```html
 <!--%tablebegin.salesline%-->
@@ -178,7 +297,7 @@ Här är ett exempel:
 
 Kvitton kan skickas via e-post till kunder som köper in i detaljhandelsbutik (POS). I allmänhet är stegen för att skapa mallen för e-post densamma som stegen för att skapa mallar för andra transaktionshändelser. Följande ändringar måste dock utföras:
 
-- Kvittotexten infogas i e-postmeddelandet med hjälp av platshållaren **%message%**. Om du vill vara säker på att kvittoinnehållet återges korrekt omger du platshållaren **%message%** med HTML-taggarna **&lt;pre&gt;** och **&lt;/pre&gt;**.
+- **%message%** platshållare används för att infoga texten på kvittot i e-postmeddelandet. Om du vill vara säker på att kvittoinnehållet återges korrekt omger du platshållaren **%message%** med HTML-taggarna **&lt;pre&gt;** och **&lt;/pre&gt;**.
 - Platshållaren **%receiptid%** kan användas för att visa en QR-kod eller en streckkod som representerar inleverans-ID:t. (QR-koder och streckkoder genereras dynamiskt och serveras av en tredje parts tjänst.) Mer information om hur du visar en QR-kod eller streckkod i ett e-postkvitto finns i [Lägg till en QR-kod eller streckkod i transaktions- och mottagnings-e-postmeddelanden](add-qr-code-barcode-email.md).
 
 ## <a name="upload-the-email-html"></a>Överför HTML-koden för e-post

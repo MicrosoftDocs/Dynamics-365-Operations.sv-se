@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e93aff4914314ea99798415a0bacc7b844169bc2
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 3a0a8555ac7c523af03401ab84af30f577777995
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384621"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647635"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installera och ansluta mobilappen Hantering av distributionslager
 
@@ -109,7 +109,7 @@ Mer information om hur du ställer in webbtjänstprogram i Azure AD finns i föl
     - [Snabbstart: Registrera ett program med Microsofts identitetsplattform](/azure/active-directory/develop/quickstart-register-app)
     - [Så här använder du portalen för att skapa ett Azure AD-program och ett tjänstekonto som har åtkomst till resurser](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Skapa och konfigurera ett användarkonto i Supply Chain Management
+## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a><a name="user-azure-ad"></a>Skapa och konfigurera ett användarkonto i Supply Chain Management
 
 Gör så här om du vill låta Supply Chain Management använda ditt Azure AD-program.
 
@@ -117,17 +117,24 @@ Gör så här om du vill låta Supply Chain Management använda ditt Azure AD-pr
 
     1. I Supply Chain Management går du till **Systemadministration \> Användare \> Användare**.
     1. Skapa en användare.
-    1. Tilldela användaren av den mobila enheten för lagerstyrningsenheten.
+    1. Tilldela rollen *Användare av en mobil enhet för lager* till användaren.
 
     ![Tilldela användaren av den mobila enheten för lagerstyrningsenheten.](media/app-connect-app-users.png "Tilldela användaren av den mobila enheten för lagerstyrningsenheten")
 
 1. Koppla ditt Azure AD-program till användaren av mobilappen Hantering av distributionslager:
 
     1. Gå till **Systemadministration \> Konfiguration \> Azure Active Directory-program**.
-    1. Skapa en rad.
-    1. Ange det klient-ID som du noterade i föregående avsnitt, ge det ett namn och välj sedan den användare du just skapat. Vi rekommenderar att du taggar alla enheter. Om en enhet går förlorad kan du enkelt ta bort åtkomsten till Supply Chain Management från den här sidan.
+    1. Välj **Ny** i åtgärdsfönstret för att skapa en rad.
+    1. I fältet **Klient-ID** anger du klient-ID som du noterade i föregående avsnitt.
+    1. Ange sedan ett namn i fältet **Namn**.
+    1. I fältet **Användar-ID**, välj det användar-ID som du nyss skapat.
 
     ![Azure Active Directory-program.](media/app-connect-aad-apps.png "Azure Active Directory-program")
+
+> [!TIP]
+> Ett sätt att använda dessa inställningar är att skapa ett klient-ID i Azure för var och en av dina fysiska enheter och sedan lägga till varje klient-ID till sidan **Azure Active Directory appar**. Om en enhet går förlorad kan du enkelt ta bort åtkomsten till Supply Chain Management genom att ta bort dess klient-ID från den sidan. (Det här fungerar eftersom de anslutningsreferenser som sparas på varje enhet också anger ett klient-ID enligt beskrivningen senare i det här avsnittet.)
+>
+> Dessutom fastställs standardspråk, nummerformat och tidszoninställningar för varje klient-ID genom de inställningar som har angetts för värdet för **användar-ID** som mappas här. Därför kan du använda dessa inställningar när du skapar standardinställningar för varje enhet eller samling enheter, baserat på klient-ID:t. Dessa standardinställningar åsidosätts dock om de även har definierats för *användarkonto för distributionslagerappen* som en arbetare använder när han eller hon loggar in på enheten. (Mer information finns i [användarkonton för mobil enhet](mobile-device-work-users.md).)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Autentisera med hjälp av ett certifikat eller en klienthemlighet
 

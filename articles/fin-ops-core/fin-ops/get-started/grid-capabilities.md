@@ -2,7 +2,7 @@
 title: Rutnätsmöjligheter
 description: I det här avsnittet beskrivs flera kraftfulla funktioner i rutnätskontrollen. Du måste aktivera den nya rutnätsfunktionen för att du ska kunna använda dessa funktioner.
 author: jasongre
-ms.date: 09/08/2021
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483864"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700147"
 ---
 # <a name="grid-capabilities"></a>Rutnätsmöjligheter
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 Den nya rutnätskontrollen innehåller flera användbara och kraftfulla funktioner som kan användas för att förbättra användarproduktiviteten, skapa mer intressanta vyer av dina data och få meningsfulla insikter om dina data. Den här artikeln kommer att omfatta följande funktioner: 
@@ -32,6 +33,8 @@ Den nya rutnätskontrollen innehåller flera användbara och kraftfulla funktion
 -  Utvärdera matematikuttryck 
 -  Gruppera data i en tabell (aktiveras separat med hjälp av funktionen **gruppering i rutnät**)
 -  Låsa kolumner
+-  Autoanpassning av kolumnbredd
+-  Sträckbara kolumner
 
 ## <a name="calculating-totals"></a>Beräknar summor
 I Finance and Operations-appar har användare möjlighet att visa summor längst ned på numeriska kolumner i rutnät. Dessa summor visas i ett sidfotsavsnitt längst ned i rutnätet. 
@@ -43,7 +46,7 @@ Det finns ett sidfotsområde längst ned i alla tabell rutnät i Finance and Ope
 - Total summor längst ned i konfigurerade numeriska kolumner
 - Antalet rader i datauppsättning 
 
-Den här sidfoten är som standard dold, men den är lätt att aktivera. Om du vill visa sidfoten för ett rutnät högerklickar du på en kolumn rubrik i rutnätet och väljer alternativet **Visa sidfot**. När du har slå på sidfoten för ett visst rutnät kommer den inställningen att föra in en dag tills användaren väljer att dölja sidfoten. Du döljer sidfoten genom att högerklicka på en kolumnrubrik och välja **Dölj sidfot**.  Placeringen av åtgärden **Visa sidfot/Dölja sidfot** kan flytta till en ny plats i en senare uppdatering. 
+Den här sidfoten är som standard dold, men den är lätt att aktivera. Om du vill visa sidfoten för ett rutnät, välj knappen **rutnätsalternativet** i rutnätsrubriken och välj alternativet **Visa sidfot**. När du har slå på sidfoten för ett visst rutnät kommer den inställningen att föra in en dag tills användaren väljer att dölja sidfoten. Du döljer sidfoten genom att välja **Dölj sidfot** på menyn **Rutnätsalternativ**.  
 
 ### <a name="specifying-columns-with-totals"></a>Ange kolumner med summor
 I nuläget visas för närvarande inga kolumner summor som standard. I stället betraktas detta som en enstaka inställningsaktivitet, på samma sätt som du justerar bredden på kolumner i rutnät. När du har angett att du vill visa summorna för en kolumn kommer den inställningen att komma ihåg nästa gång du besöker sidan.  
@@ -82,7 +85,7 @@ För att det nya beteendet ska fungera har en ny kolumn för radstatus lagts til
 När användarna skriver in data i förväg på den plats där servern bearbetas, kan de förvänta sig en del graderingar i data inmatningsupplevelsen, t.ex. brist på sökningar, validering på kontrollnivå och registrering av standardvärden. Användare som behöver en nedrullningsbar lista för att hitta ett värde bör vänta på att servern ska fånga upp den aktuella raden. Verifiering och inmatning av standardvärden på kontrollnivå görs också när servern bearbetar raden.   
 
 ### <a name="pasting-from-excel"></a>Klistra in från Excel
-Användare har alltid kunnat exportera data från rutnät i Finance and Operations-appar till Excel med hjälp av funktionen **exportera till Excel**. Möjligheten att föra in data i förväg av systemet gör dock att det nya rutnätet kan användas för att kopiera tabeller från Excel och klistra in dem direkt i rutnät Finance and Operations-appar. Rutnätscellen som Inklistringsåtgärden initieras från avgör var den kopierade tabellen börjar klistras in. Innehållet i rutnätet skrivs över av innehållet i den kopierade tabellen, utom i två fall:
+Användare har alltid kunnat exportera data från rutnät i Finance and Operations-appar till Microsoft Excel med hjälp av funktionen **exportera till Excel**. Möjligheten att föra in data i förväg av systemet gör dock att det nya rutnätet kan användas för att kopiera tabeller från Excel och klistra in dem direkt i rutnät Finance and Operations-appar. Rutnätscellen som Inklistringsåtgärden initieras från avgör var den kopierade tabellen börjar klistras in. Innehållet i rutnätet skrivs över av innehållet i den kopierade tabellen, utom i två fall:
 
 - Om antalet kolumner i den kopierade tabellen överstiger antalet kolumner som finns kvar i rutnätet, från inklistringsplatsen meddelas användaren att de extra kolumnerna har ignorerats. 
 - Om antalet rader i den kopierade tabellen överstiger antalet rader i rutnätet, med början från inklistringsområdet, skrivs de befintliga cellerna över av det inklistrade innehållet och eventuella extra rader från den kopierade tabellen infogas som nya rader längst ned i rutnätet. 
@@ -125,6 +128,9 @@ Om du vill låsa en kolumn högerklickar du i kolumnens rubrik och väljer sedan
 Om du vill låsa upp en kolumn högerklickar du i kolumnens rubrik och väljer sedan **Lås upp kolumn**. 
 
 Observera att radurvalet och radstatuskolumnerna i det nya rutnätet alltid är låsta som de första två kolumnerna. När dessa kolumner tas med i ett rutnät visas de därför alltid för användaren, oavsett den vågräta rullningspositionen i rutnätet. Dessa två kolumner kan inte beställas om.
+
+## <a name="autofit-column-width"></a>Autoanpassning av kolumnbredd
+Användare i Excel kan automatiskt tvinga en kolumn att ändra storlek baserat på det innehåll som visas i kolumnen. Det gör du genom att dubbelklicka på storlekshanterarna i kolumnen eller genom att sätta fokus i kolumnrubriken och trycka på **A** (för autoanpassning). Den här funktionen är tillgänglig från och med version 10.0.23.  
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hur aktiverar jag den nya rutnätskontrollen i min miljö? 

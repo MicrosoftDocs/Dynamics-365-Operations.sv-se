@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 63e26004b28f1ff6c760476933e1d524c0b40451
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 72fe7f8a6b05bd7c6fa242ef599e506a1178d913
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569347"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678699"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hur arbetare använder körningsgränssnittet för produktionsgolvet
 
@@ -93,7 +93,6 @@ Fliken **Min maskin** har följande kolumner. Siffrorna motsvarar siffrorna i f�
 1. **Registrera drifttid** - Välj den här knappen om du vill öppna en dialogruta där du kan registrera maskiners drifttid. Du kan välja en orsakskod och ange ett datum/tidsintervall för nedtiden. Registreringen av maskinens drifttid används för att beräkna maskintillgångens effektivitet.
 1. **Visa eller redigera** - Välj den här knappen om du vill öppna en dialogruta där du kan redigera eller visa befintliga nedtidsposter.
 
-
 ## <a name="starting-and-completing-production-jobs"></a>Starta och slutföra produktionsjobb
 
 Arbetare startar ett produktionsjobb genom att välja ett jobb på fliken **Alla jobb** och sedan välja **Starta jobb** för att öppna dialogrutan **Starta jobb**.
@@ -109,6 +108,32 @@ Arbetare kan starta ett jobb som har status. När en arbetare startar ett jobb m
 När en arbetare slutför eller delvis slutför ett jobb kan de rapportera bra kvantiteter som producerats genom att välja ett jobb på fliken **Aktiva jobb** och flik **Rapportera progress**. Sedan i dialogrutan **Rapportera framsteg** anger arbetaren den goda kvantiteten med hjälp av det numeriska tangentbordet. Kvantiteten är tom som standard. När en kvantitet har angivits kan han eller hon uppdatera status för jobbet till *pågår*, *stoppad* eller *slutfört*.
 
 ![Dialogrutan Rapportera framsteg.](media/pfei-report-progress-dialog.png "Dialogrutan rapportera framsteg")
+
+## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>Rapportering av bra kvantiteter på batchorder som har samprodukter och biprodukter
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)] <!--KFM: GA with 10.0.23 -->
+
+Arbetare kan använda gränssnittet för exekvering av produktionsgolvet för att rapportera framsteg på batchorder. Denna rapportering inkluderar rapportering om biprodukter och biprodukter.
+
+Vissa tillverkare, särskilt i processindustrier, använder batchorder för att hantera sina produktionsprocesser. Batchorder skapas från recept och dessa recept kan definieras så att de har samprodukter och biprodukter som utleverans. När återrapportering om dessa batchorder rapporteras måste utleveransbeloppet registreras för receptartikeln, och även på samprodukterna och biprodukterna.
+
+När en arbetare slutför eller delvis slutför ett jobb på en batchorder kan han eller hon rapportera kvantiteter av bra kvalitet eller kassation för varje produkt som har definierats som utleverans för ordern. Produkter som definieras som utleverans för en batchorder kan vara av typen *Formel*, *Samprodukt* eller *Biprodukter*.
+
+Om du vill rapportera bra kvantiteter för produkterna väljer arbetaren ett jobb på fliken **Aktiva jobb** och väljer sedan **Rapportera förlopp**.
+
+Sedan kan arbetaren i dialogrutan **Rapportera förlopp** välja bland de produkter som definieras som utdata för batchordern som ska rapporters. Arbetaren kan välja en eller flera produkter i listan och sedan välja **Rapportprocess**. För varje produkt är kvantiteten tom som standard och arbetaren kan använda det numeriska tangentbordet för att ange kvantiteten. Arbetaren kan använda knapparna **Föregående** och **Nästa** för att förflytta sig mellan de valda produkterna. Efter att kvantiteten har angetts för varje produkt kan han eller hon uppdatera status för jobbet till *pågår*, *stoppad* eller *slutfört*.
+
+![Rapportera samprodukter och biprodukter.](media/report-co-by-products.png "Rapportera samprodukter och biprodukter")
+
+### <a name="reporting-on-batch-orders-for-planning-items"></a>Rapportering av batchorder för planering av artiklar
+
+När en arbetare slutför ett jobb i en batchorder för en planeringsartikel rapporterar de bara kvantiteter för samprodukter och biprodukter, eftersom planering av artiklar inte innehåller en artikel av typen *Formel*.
+
+### <a name="reporting-co-product-variation"></a>Rapportering av variation för samprodukt
+
+Om en batchorder skapas från en receptversion där alternativet **variation av samprodukter** har ställts in som *Ja*, kan arbetaren rapportera om samprodukter som inte ingår i definitionen för batchorder. Den här funktionen används i scenarier där oväntade produktutdata kan inträffa i produktionsprocessen.
+
+I det här fallet kan arbetaren ange samprodukten och kvantiteten som ska rapporters genom att välja **variationer av samprodukter** i dialogrutan för rapportförloppet. Arbetaren kan sedan välja bland alla frisläppta produkter som definieras som samprodukter.
 
 ## <a name="reporting-scrap"></a>Rapportera kassation
 

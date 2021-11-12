@@ -2,7 +2,7 @@
 title: Modulen navigeringsmeny
 description: Det här avsnittet handlar om modul för navigeringsmenyn och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 486f20c26f97c236dfde2cbaedd8df434fe762947a6caa1c7cc03e4d244f4d47
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5379aa4496c1c448d147bb260689ebe38aaf903f
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761596"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713862"
 ---
 # <a name="navigation-menu-module"></a>Modul för navigeringsmeny
 
@@ -41,8 +41,8 @@ Följande illustration visar ett exempel på en navigeringsmeny för Fabrikam-we
 |---------------------------|-----------------------|-------------|
 | Källa                  | **Detaljhandel**, **Manuell redigering**, **Återförsäljning och manuell redigering** | Med värdet **Detaljhandel** kan kanalnavigeringshierarkin från Commerce-administration visas på navigeringsmenyn. Med hjälp av värdet **Manuellt redigering** kan statiska menyalternativ granskas. Värdet **Återförsäljning och manuell redigering** tillåter en blandning av båda. |
 | Visa kategoribilder | **Sant** eller **falskt**    | När den här egenskapen är aktiverad visas kategoribilder på navigeringsmenyn som har definierats i Commerce-administration för varje kategori. Lades till i Commerce version 10.0.14. |
-| Visa erbjudanden | **Sant** eller **falskt** | När den här egenskapen har aktiverats kan erbjudanden konfigureras med hjälp av bilder, länkar och text. Den här egenskapen har lagts till i version 10.0.17 av Commerce. |
-| Lägg till erbjudanden | Text, bild eller länk | När egenskapen **Visa kampanjer** har aktiverats kan du lägga till text, en bild eller en länk som erbjudandeinnehåll i navigeringsmenyn. |
+| Visa kampanjbilder | **Sant** eller **falskt** | När den här egenskapen har aktiverats kan erbjudanden konfigureras med hjälp av bilder, länkar och text. Den här egenskapen har lagts till i version 10.0.17 av Commerce. |
+|Lägg till kategori reklaminnehåll | Text, bild eller länk | När egenskapen **Visa kampanjbilder** har aktiverats kan du lägga till text, en bild eller en länk som erbjudandeinnehåll i navigeringsmenyn. |
 | Aktivera navigeringsmeny med flera nivåer | **Sant** eller **falskt** | När den här egenskapen är aktiverad kan navigeringsmenyn visa flera nivåer i navigeringsvyn. Den här funktionen är tillgänglig i Commerce version 10.0.15. |
 | Antal nivåer | heltal | Den här egenskapen definierar antalet nivåer som ska visas om egenskapen **Aktivera navigering i flera nivåer** är inställd på **True**. |
 | Statiskt menyalternativ| Matris med värden| Statiska menyalternativ som associerar ett menyalternativnamn med en länk till en statisk webbplatssida. Du kan skapa menyalternativ under andra menyalternativ. Statiska menyer visas som standard på rotnivå och kommer att läggas till i kanalens navigeringshierarki om den finns. |

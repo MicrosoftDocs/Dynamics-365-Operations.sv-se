@@ -2,7 +2,7 @@
 title: Regulatory Configuration Service (RCS) – Lagringsavskrivning för Lifecycle Services (LCS)
 description: I detta ämne finns information om den avskrivning av Microsoft Dynamics Lifecycle Services (LCS)-lagring som planerats som en del av sammanslagningen av den globala databasen för Regulatory Configuration Service (RCS).
 author: JaneA07
-ms.date: 05/25/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 7a738af04da4425e76bd3b224400f91bc4eb8364d323da67ea457eaba9e65643
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68f1ed6a6d6bb0d15a81539da7f483ad71a4d696
+ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782208"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7715240"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – Lagringsavskrivning för Lifecycle Services (LCS)
 
@@ -38,8 +38,9 @@ Avskrivning av användning av LCS som lagring har kommunicerats i [Borttagna ell
 
 ## <a name="key-features"></a>Nyckelfunktioner
 
-- Du kan använda RCS om du vill skapa och redigera konfigurationer. Du kan sedan push-överföra dessa konfigurationer direkt från designern till ett anslutet program. Därför kan du snabbt ändra och testa dina konfigurationer.
-- Den globala databasen är den centraliserade lagringen för alla ER-konfigurationer.
+- Använd RCS om du vill skapa och redigera ER-konfigurationer och globaliseringsfunktioner.
+- Push-konfigurationer direkt från RCS-designern till ett anslutet program, t.ex. en Dynamics 365 Finance miljö, så att du snabbt kan göra och testa ändringar i dina konfigurationer.
+- Centraliserad lagring, delning och hantering av livscykeln för både ER-konfigurationer och globaliseringsfunktioner via den globala databasens centraliserade lagring.
 
 ## <a name="guidance-for-one-time-and-ongoing-actions"></a>Riktlinjer för engångs- och pågående åtgärder
 
@@ -53,11 +54,20 @@ Importera alla erforderliga konfigurationer från LCS till RCS och publicera dem
 2. I den tillhandahållna RCS-instansen registrerar du lämplig LCS-databas för alla LCS-projekt i tillgångsbiblioteket som innehåller härledda ER-konfigurationer.
 3. Importera ER-konfigurationerna från LCS-databaserna till RCS. Mer information finns i [Importera konfigurationer från LCS](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md).
 4. Om den globala databasen inte tillhandahålls automatiskt registrerar du den i RCS.
-5. Överför alla härledda konfigurationer från den aktuella RCS-instansen till den globala databasen. Använd de **konfigurationspaket som gör det möjligt för användaren att överföra alla konfigurationer till GR i en enda funktion** som hjälp vid överföringen. Mer information finns i [global lagringsplattsuppladdning för RCS](rcs-global-repo-upload.md).
+5. Överför alla härledda konfigurationer från den aktuella RCS-instansen till den globala databasen. Använd funktionen **Konfigurationspaket** som hjälp vid överföringen. Mer information finns i [global lagringsplattsuppladdning för RCS](rcs-global-repo-upload.md).
 
 ### <a name="going-forward"></a>Framöver
 
-Använd de visuella designers som finns i RCS för att skapa alla nya konfigurationer. Ladda sedan upp konfigurationerna till den globala databasen för lagring. Mer information finns i [Skapa ER-konfiguration i RCS och ladda upp till global lagringsplats](rcs-global-repo-upload.md).
+Använd de visuella designersna i RCS i följande syften:
+
+- Utöka mallarna som tillhandahålls av Microsoft.
+- Skapa nya konfigurationer som din organisation behöver.
+- Anpassa globaliseringsfunktioner för elektronisk fakturering och beräkningstjänsten för moms.
+
+Använd globaliseringsdatabasen i följande syften:
+
+- Få åtkomst till Microsoft-producerade konfigurationer och globaliseringsfunktioner.
+- Överför konfigurationer som du har skapat eller utvidgat till den globala lagringsdatabasen, och dela dem i hela organisationens Dynamics 365-programmiljöer eller med externa organisationer. Mer information finns i [Skapa ER-konfiguration i RCS och ladda upp till global lagringsplats](rcs-global-repo-upload.md).
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor
 
@@ -76,3 +86,22 @@ RCS använder ett koncept med ett *anslutet program*. Ett anslutet program bilda
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Finns det några exempel som visar inställningar och hantering?
 
 Det finns inga exempel, men du kan utföra stegen tidigare i det här avsnittet i syfte att flytta dina konfigurationer till den globala RCS-databasen.
+
+### <a name="is-rcs-a-prerequisite-to-configure-electronic-reporting"></a>Är RCS en förutsättning för att konfigurera elektronisk rapportering?
+
+Ja. RCS innehåller funktioner som stöder installationen av globaliseringsfunktioner som används av globaliseringstjänster som elektronisk fakturering och skatteberäkningstjänsten. Tjänsten har dock samma visuella designerfunktion som låter dig utöka eller skapa nya ER-konfigurationer. RCS innehåller även livscykelhantering för både ER-konfigurationer och globaliseringsfunktioner.
+
+### <a name="which-regions-can-rcs-be-deployed-in"></a>Vilka regioner kan RCS distribueras i?
+
+RCS är tillgängligt i följande Azure-regioner:
+
+- USA
+- Indien
+- Frankrike
+- Europa
+
+Mer information om produktsupport finns i [översikten över Globaliseringstjänster för Dynamics](globalization-services-overview.md). För information om geografiskt stöd, se [Dynamics 365 och Power Platform: Tillgänglighet, dataplats, språk och lokalisering](https://aka.ms/rcs/D365Productavailabilityguide).
+
+### <a name="whats-the-cost-of-using-rcs"></a>Vad är kostnaden för att använda RCS?
+
+RCS och globaliseringsdatabasen tillhandahålls gratis som en del av befintliga Finance and Operations applicenser. Inga separata kostnader är förknippade med att använda RCS-designtjänsten eller att lagra konfigurationer i det globala arkivet. Det finns för närvarande ingen gräns för antalet konfigurationer eller anslutna program.

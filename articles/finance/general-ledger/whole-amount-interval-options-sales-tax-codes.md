@@ -1,7 +1,7 @@
 ---
-title: Alternativ för hela belopp och intervallberäkning för momskoder
+title: Beräkningsalternativ för hela beloppet och intervall för momskoder
 description: Den här artikeln beskriver alternativen för fältet Beräkningsmetod för momskoder och hur moms beräknas för intervall och hela belopp.
-author: ShylaThompson
+author: kailiang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,23 +12,23 @@ ms.reviewer: roschlom
 ms.custom: 5624
 ms.assetid: 96166db4-b7ca-470b-aeb7-0a66fe0554c4
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb3d622f8a81c0eabc84fb165203aa193f5e7dd6ad148ff50a9f55c87453be9c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 44c4ce480de470b623f6faeff5a763bfcb05aecc
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731486"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726856"
 ---
-# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Alternativ för hela belopp och intervallberäkning för momskoder
+# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Beräkningsalternativ för hela beloppet och intervall för momskoder
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln beskriver alternativen för fältet Beräkningsmetod för momskoder och hur moms beräknas för intervall och hela belopp.
+Den här artikeln beskriver alternativen för fältet **Beräkningsmetod** för momskoder och hur moms beräknas för intervall och hela belopp.
 
-Du kan ställa in en momskod som ska beräknas baserat på ett helt belopp eller ett intervallbelopp. På sidan Momskoder använder du fältet Beräkningsmetod på snabbfliken Beräkning för att välja hur du beräknar en momskod.
+Du kan ställa in en momskod som ska beräknas baserat på ett helt belopp eller ett intervallbelopp. På sidan **Momskoder** använder du fältet **Beräkningsmetod** på snabbfliken **Beräkning** för att välja hur du beräknar en momskod.
 - Hela belopp – Momssatsen tillämpas för hela det momspliktiga beloppet.
 - Intervall – Det momspliktiga beloppet delas upp i delar, och varje del ligger inom ett intervall som har en specifik momssats. Den del av beloppet som ligger inom ett angivet intervall beläggs med moms i enlighet med momssatsen för intervallet. Momsen är summan av de momsbelopp som beräknas för varje beloppsintervall.
   > [!NOTE]                                                                                                                              

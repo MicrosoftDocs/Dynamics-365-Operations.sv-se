@@ -2,7 +2,7 @@
 title: Kom i gång med skatteberäkning
 description: Detta ämne förklarar hur du ställer in skatteberäkningen.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a849343cda54745f5ba3afc53e2082e79f71a29a
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 2f26f8e5eafe29e88c26d3fb6cfa950466ec6be9
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562136"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647444"
 ---
 # <a name="get-started-with-tax-calculation"></a>Kom i gång med momsberäkning
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Detta ämne innehåller information om hur du kommer igång med skatteberäkningen. Det guidar dig genom konfigurationsstegen i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance och Dynamics 365 Supply Chain Management. Därefter granskas den gemensamma processen för att använda funktionerna för skatteberäkning i transaktioner för Finance och Supply Chain Management.
 
@@ -41,29 +39,10 @@ Inställningen består av fyra huvudsteg:
 
 Innan du kan slutföra procedurerna i detta ämne måste följande förutsättningar finnas på plats för respektive miljötyp:
 
-### <a name="for-a-production-environment"></a>För en produktionsmiljö
-
-För en produktionsmiljö måste följande förutsättningar uppfyllas:
+Följande förutsättningar måste uppfyllas:
 
 - Du måste ha tillgång till ditt LCS-konto samt ha distribuerat ett LCS-projekt med en nivå 2-miljö (eller högre) som kör Dynamics 365 version 10.0.21 eller senare.
 - Du måste skapa en RCS-miljö för organisationen och ha åtkomst till ditt konto. Mer information om hur du skapar en RCS-miljö finns i [Översikten över Regulatory Configuration Service](rcs-overview.md).
-- Följande funktioner måste aktiveras i arbetsytan **Funktionshantering** för din distribuerade Finance- eller Supply Chain Management-miljö, baserat på verksamhetens behov:
-
-    - Skatteberäkningstjänst
-    - Stöd för flera momsregistreringsnummer
-    - Moms i överföringsorder
-
-- Följande funktioner måste vara aktiverade i arbetsytan **Funktionshantering** i den distribuerade RCS-miljön.
-
-    - Globaliseringsfunktioner
-
-### <a name="for-a-test-environment-public-preview"></a>För en testmiljö (allmänt tillgänglig förhandsversion)
-
-För en testmiljö måste följande förutsättningar uppfyllas:
-
-- Du måste ha tillgång till ditt LCS-konto samt ha distribuerat ett LCS-projekt med en nivå 2-miljö (eller högre) som kör Dynamics 365 version 10.0.21 eller senare version.
-- Du måste skapa en RCS-miljö för organisationen och ha åtkomst till ditt konto. Mer information om hur du skapar en RCS-miljö finns i [Översikten över Regulatory Configuration Service](rcs-overview.md).
-- Du måste kontakta Microsoft genom att e-posta <taxcalc@microsoft.com> för att aktivera lanseringen i din distribuerade Finance- eller Supply Chain Management-miljö.
 - Följande funktioner måste aktiveras i arbetsytan **Funktionshantering** för din distribuerade Finance- eller Supply Chain Management-miljö, baserat på verksamhetens behov:
 
     - Skatteberäkningstjänst

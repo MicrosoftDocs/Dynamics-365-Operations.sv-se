@@ -2,7 +2,7 @@
 title: Destinationer för elektronisk rapportering (ER)
 description: I det här avsnittet finns information om hantering av mål för elektroniska rapportering, vilka typer av destinationer som stöds samt säkerhetsaspekter.
 author: nselin
-ms.date: 05/19/2021
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: df617ad476d8210c658f60569656292df22670df44cc094bf0d61b4ee6a19775
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743321"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647103"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer för elektronisk rapportering (ER)
 
@@ -164,12 +164,12 @@ För att göra PDF-konverteringsalternativet tillgängligt i den aktuella Financ
 
 ### <a name="applicability"></a>Tillämplighet
 
-Alternativet PDF-konvertering kan bara aktiveras för filkomponenter som används för att generera utdata i Office (Excel eller Word) format (**Excel-fil**). När det här alternativet är aktiverat konverteras utdata som har genererats i Office-format automatiskt till PDF-format. I versioner av Finance **före version 10.0.18**, kan du bara aktivera det här alternativet för komponenter av typen **Excel\\Fil** som används för att generera utdata i [Excel](er-fillable-excel.md) eller [Word](er-design-configuration-word.md) format. Emellertid kan du i **version 10.0.18 och senare** också aktivera det här alternativet för komponenter i typen **Vanlig\\Fil**.
+I versioner av Finance **före version 10.0.18**, kan PDF-konverteringsalternativet endast aktiveras för **Excel\\File** komponenter av typen som används för att generera utdata i Office-format (Excel eller Word). När det här alternativet är aktiverat konverteras utdata som har genererats i Office-format automatiskt till PDF-format. Emellertid kan du i **version 10.0.18 och senare** också aktivera det här alternativet för komponenter i typen **Vanlig\\Fil**.
 
 > [!NOTE]
 > Var uppmärksam på varningsmeddelandet som du får när du aktiverar PDF-konverteringsalternativet för en ER-komponent av typen **Vanlig\\Fil**. Detta meddelande informerar dig om att det inte finns något sätt att vid designtid garantera att den valda filkomponenten visar innehållet i PDF-format eller innehållet av PDF-kvalitet när det körs. Därför ska du endast aktivera alternativet om du är säker på att den valda filkomponenten har konfigurerats för att exponera innehållet i PDF-format eller det PDF-innehåll som finns under körning.
 > 
-> Om du aktiverar PDF-konverteringsalternativet för en komponent av typen **Excel\\Fil**,om den komponenten exponerar innehåll i ett annat format än PDF, och om det exponerade innehållet inte kan konverteras till PDF-format, kommer ett undantag att inträffa vid körning. Det meddelande du får informerar dig om att det genererade innehållet inte kan konverteras till PDF-format.
+> Om du aktiverar PDF-konverteringsalternativet för en formatkomponent om den komponenten exponerar innehåll i ett annat format än PDF, och om det exponerade innehållet inte kan konverteras till PDF-format, kommer ett undantag att inträffa vid körning. Det meddelande du får informerar dig om att det genererade innehållet inte kan konverteras till PDF-format.
 
 ### <a name="limitations"></a>Begränsningar
 
@@ -189,16 +189,26 @@ Om du vill aktivera PDF-konvertering för ett filmål markerar du kryssrutan **k
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Välj en sidorientering för PDF-konvertering</a>
 
-Om du skapar en ER-konfiguration i Excel-format och vill konvertera den till PDF-format kan du ange sidorienteringen för PDF-dokument. När du markerar kryssrutan **Konvertera till PDF** för att aktivera PDF-konvertering för en fildestination som producerar en utdatafil i Excel-format, den **sidorientering** blir tillänglig **PDF-inställningar för konverteringar**. Välj önskad **sidorientering** i fältet prioriterad orientering.
+Om du skapar en ER-konfiguration i Excel-format och vill konvertera den till PDF-format kan du uttryckligen ange sidorienteringen för PDF-dokument. När du markerar kryssrutan **Konvertera till PDF** för att aktivera PDF-konvertering för en fildestination som producerar en utdatafil i Excel-format, den **sidorientering** blir tillänglig **PDF-inställningar för konverteringar**. Välj önskad **sidorientering** i fältet prioriterad orientering.
 
 [![Välj en sidorientering för PDF-konvertering.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
-> [!NOTE]
-> Om du vill välja PDF-sidans orientering måste du installera Finance version 10.0.10 eller senare.
->
-> Den valda sidorienteringen tillämpas på alla ER-konfigurationer som genereras i Excel-format och sedan konverteras till PDF-format.
->
-> Om en ER-konfiguration i Word-format konverteras till PDF-format, tas sidorientering för PDF-dokument från Word-dokumentet.
+Om du vill välja PDF-sidans orientering installerar du Finance version 10.0.10 eller senare. I versioner av Finance **före version 10.0.23** innehåller det här alternativet följande sidorienteringsalternativ:
+
+- Stående
+- Liggande
+
+Den valda sidorienteringen tillämpas på alla sidor i ett utgående dokument som genereras i Excel-format och sedan konverteras till PDF-format.
+
+Emellertid i **version 10.0.23 och senare** har listan med sidorienteringsalternativ utvidgats enligt följande:
+
+- Stående
+- Liggande
+- Kalkylbladsspecifikt
+
+När du väljer alternativet **kalkylbladsspecifik** konverteras alla kalkylblad i en genererad Excel-arbetsbok till PDF-format genom att använda sidorientering som har konfigurerats för det här kalkylbladet i den använda Excel-mallen. Du kan ha ett slutligt PDF-dokument som innehåller stående och liggande sidor. 
+
+Om en ER-konfiguration i Word-format konverteras till PDF-format, tas sidorientering för PDF-dokument från Word-dokumentet.
 
 ## <a name="output-unfolding"></a>Utdata som viks ut
 

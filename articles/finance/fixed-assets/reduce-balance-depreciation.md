@@ -1,7 +1,7 @@
 ---
-title: Degressiv avskrivning
-description: Den här avsnittet ger en översikt över metoden för degressiv avskrivning.
-author: ShylaThompson
+title: Minska balans för avskrivning
+description: Det här ämnet ger en översikt över metoden för degressiv avskrivning.
+author: moaamer
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: ''
@@ -12,56 +12,56 @@ ms.reviewer: roschlom
 ms.custom: 3281
 ms.assetid: 1b86763d-d47c-4a6a-a9a6-d97a736750da
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 30e7d135e927867272176b492a536819cafafd23fdc3da234ed1aac265a4d0c5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f734a0cedf6d9ee7967c3bbed0dfcf95cf33f1cd
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758883"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674635"
 ---
-# <a name="reduce-balance-depreciation"></a>Degressiv avskrivning
+# <a name="reduce-balance-depreciation"></a>Minska balans för avskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Den här avsnittet ger en översikt över metoden för degressiv avskrivning.
+Det här ämnet ger en översikt över metoden för degressiv avskrivning.
 
-När du ställer in en avskrivningsprofil för anläggningstillgångar och väljer Degressiv avskrivning i fältet Metod på sidan Avskrivningsprofiler skrivs tillgångarna som har tilldelats den här avskrivningsprofilen av med samma procentsats under varje avskrivningsperiod.
+När du ställer in en avskrivningsprofil för anläggningstillgångar och väljer Degressiv avskrivning i fältet **Metod** på sidan **Avskrivningsprofiler** skrivs tillgångarna som har tilldelats den här avskrivningsprofilen av med samma procentsats under varje avskrivningsperiod.
 
-Om du vill ställa in degressiv avskrivning måste du också göra val i fält på Allmänt snabbfliken på sidan Avskrivningsprofiler. Först väljer du ett år i fältet Avskrivningsår. Beroende på valet visas olika alternativ i fältet Periodfrekvens, vilket beskrivs i följande avsnitt. 
+Om du vill ställa in degressiv avskrivning måste du också göra val i fält på **Allmänt** snabbfliken på sidan **Avskrivningsprofiler**. Först väljer du ett år i fältet **Avskrivningsår**. Beroende på valet visas olika alternativ i fältet **Periodfrekvens**, vilket beskrivs i följande avsnitt. 
 
-Du måste också ange ett värde i fältet Procent för avskrivningsprofilen. Om du väljer alternativet Full avskrivning tas kvarstående avskrivningsunderlag i den sista avskrivningsperioden och kan vara ett stort belopp. Vissa länder/regioner använder inte en omställning till en linjär metod. Omställning sker när den alternativa avskrivningsmetodens mängd är större än eller lika med den primära avskrivningsprofilens mängd och den alternativa metodens mängd väljs som avskrivningsmängd. 
+Du måste också ange ett värde i fältet **Procent** för avskrivningsprofilen. Om du väljer alternativet **Full avskrivning** tas kvarstående avskrivningsunderlag i den sista avskrivningsperioden och kan vara ett stort belopp. Vissa länder/regioner använder inte en omställning till en linjär metod. Omställning sker när den alternativa avskrivningsmetodens mängd är större än eller lika med den primära avskrivningsprofilens mängd och den alternativa metodens mängd väljs som avskrivningsmängd. 
 
-Eftersom en tillgång aldrig skrivs av helt med en procentberäkning måste du välja det alternativet Full avskrivning för att skriva av en tillgång helt.
+Eftersom en tillgång aldrig skrivs av helt med en procentberäkning måste du välja det alternativet **Full avskrivning** för att skriva av en tillgång helt.
 
 ## <a name="select-a-depreciation-year"></a>Välj ett avskrivningsår
-Du kan välja Kalender eller Räkenskapsår i fältet Avskrivningår på sidan Avskrivningsprofiler. Valet avgör vilka alternativ som är tillgängliga i fältet Periodfrekvens. Standardalternativet är Kalender.
+Du kan välja **Kalender** eller **Räkenskapsår** i fältet **Avskrivningsår** på sidan **Avskrivningsprofiler**. Valet avgör vilka alternativ som är tillgängliga i fältet **Periodfrekvens**. Standardalternativet är **Kalender**.
 
 ### <a name="calendar"></a>Kalender
 
-Med alternativet Kalender uppdaterar du avskrivningsbasen som vanligtvis är bokfört nettovärde minus skrotvärde, den 1 januari varje år. I exemplet på degressiv avskrivning senare i det här avsnittet utgör avskrivningsbasen täljaren i det första uttrycket i beräkningen som görs i kolumnen Beräkning. 
+Med **alternativet Kalender** uppdaterar du avskrivningsbasen som vanligtvis är bokfört nettovärde minus skrotvärde, den 1 januari varje år. I exemplet på degressiv avskrivning senare i det här avsnittet utgör avskrivningsbasen täljaren i det första uttrycket i beräkningen som görs i kolumnen Beräkning. 
 
-Om du väljer Kalender är följande alternativ tillgängliga i fältet Periodfrekvens, som definierar bokföringsdatumen för periodisering av avskrivningen och beloppen under kalenderåret:
+Om du väljer **Kalender** är följande alternativ tillgängliga i fältet **Periodfrekvens**, som definierar bokföringsdatumen för periodisering av avskrivningen och beloppen under kalenderåret:
 
--   Årligen bokför den 31 december.
--   Månadsvis bokför ett månatligt belopp i slutet av varje månad.
--   Kvartalvis bokför ett kvartalsbelopp i slutet av varje kvartal (31 mars, 30 juni, 30 september och 31 december).
--   Halvårsvis bokför ett halvårsbelopp i slutet av varje halvår (30 juni och 31 december).
--   Dagligen bokför avskrivningsbeloppet för den dagliga avskrivningsmetoden genom att använda en transaktion för varje dag.
+- Årligen bokför den 31 december.
+- Månadsvis bokför ett månatligt belopp i slutet av varje månad.
+- Kvartalvis bokför ett kvartalsbelopp i slutet av varje kvartal (31 mars, 30 juni, 30 september och 31 december).
+- Halvårsvis bokför ett halvårsbelopp i slutet av varje halvår (30 juni och 31 december).
+- Dagligen bokför avskrivningsbeloppet för den dagliga avskrivningsmetoden genom att använda en transaktion för varje dag.
 
-Om du till exempel väljer Årligen, bokförs årets avskrivning alltså bara en gång, den 31 december varje år. Om du väljer Månadsvis, bokförs månadens avskrivning som 1/12 av det årliga avskrivningsbeloppet.
+Om du till exempel **Årligen** bokförs årets avskrivning alltså bara en gång, den 31 december varje år. Om du väljer **Månadsvis**, bokförs månadens avskrivning som 1/12 av det årliga avskrivningsbeloppet.
 
 ### <a name="fiscal"></a>Skatt
 
-Om du väljer Räkenskapsår i fältet Avskrivning används den linjära avskrivningsmetoden. Det beräknas utifrån räkenskapsåret, som ställs in på sidan Räkenskapskalendrar som väljs på sidan Redovisning. Exempelvis för räkenskapsåret 1 juli – 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje räkenskapsperiod. Längden på nästa räkenskapsår baseras på de räkenskapsperioder som du ställer in när du skapar ett nytt räkenskapsår på sidan Räkenskapskalendrar.
+Om du väljer **räkenskaper** i fältet **Avskrivningsår** används den linjära avskrivningsmetoden. Det beräknas utifrån räkenskapsåret, som ställs in på sidan **Räkenskapskalendrar** som väljs på sidan **Redovisning**. Exempelvis för räkenskapsåret 1 juli – 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje räkenskapsperiod. Längden på nästa räkenskapsår baseras på de räkenskapsperioder som du ställer in när du skapar ett nytt räkenskapsår på sidan **Räkenskapskalendrar**.
 
 
-Om du väljer Räkenskapsår har du följande alternativ i fältet Räkenskapsår.
+Om du väljer **Räkenskapsår** har du följande alternativ i fältet **Periodfrekvens**.
 
--   Årligen bokför det totala avskrivningsbeloppet som beräknas för räkenskapsåret som ett belopp på räkenskapsårets sista dag.
--   Räkenskapsperioden bokför det totala avskrivningsbeloppet som beräknas för räkenskapsåret. Beloppet periodiseras till de räkenskapsperioder som definierats för räkenskapskalendern som väljs på redovisningssidan, eller för den räkenskapskalender som väljs för boken för en anläggningstillgång.
+- Årligen bokför det totala avskrivningsbeloppet som beräknas för räkenskapsåret som ett belopp på räkenskapsårets sista dag.
+- Räkenskapsperioden bokför det totala avskrivningsbeloppet som beräknas för räkenskapsåret. Beloppet periodiseras till de räkenskapsperioder som definierats för räkenskapskalendern som väljs på sidan **redovisning**, eller för den räkenskapskalender som väljs för boken för en anläggningstillgång.
 
 ## <a name="example-of-reducing-balance-depreciation"></a>Exempel på en degressiv avskrivning
 
@@ -76,7 +76,7 @@ Med metoden för degressiv avskrivning beräknas 30 procent av avskrivningsbasen
 | År 3 | (5 200 – 1 000) \* 30% = 1 260            | (5 200 – 1 260) = 3 940               |
 
 
--
+
 
 
 

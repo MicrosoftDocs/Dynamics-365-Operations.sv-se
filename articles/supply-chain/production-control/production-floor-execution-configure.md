@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 15fcfd72027e081e633fe68209cf85f528ff02d7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fa5a618527ce5a20b59902e7397000bf0796cbbb
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576938"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647199"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurera körningsgränssnittet för produktionsgolvet
 
@@ -74,6 +74,12 @@ Den här funktionen lägger till en flik för tillgångshantering i produktionss
 Med denna funktion går det att lägga till ett sökfält i jobblistan. En arbetare kan hitta ett visst jobb genom att ange jobb-ID eller söka efter alla jobb för en viss order genom att ange order-ID:t. Arbetare kan ange ID:t med hjälp av ett tangentbord eller genom att skanna en streckkod. Om du vill använda den aktiverar du följande funktion i för att aktivera den [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Jobbsökning för produktionsgolvets körningsgränssnitt
+
+### <a name="enable-reporting-on-co-products-and-by-products"></a>Aktivera rapportering av samprodukter och biprodukter
+
+Den här funktionen låter arbetare använda gränssnittet för exekvering av produktionsgolvet för att rapportera framsteg på batchorder. Denna rapportering inkluderar rapportering om biprodukter och biprodukter. För att använda den här funktionen, aktivera följande funktion i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Rapport om sam- och biprodukter från produktionsgolvets körningsgränssnitt
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeta med konfigurationer av körningsgränssnittet för produktionsgolvet
 

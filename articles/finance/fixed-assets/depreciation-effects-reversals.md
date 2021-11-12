@@ -1,7 +1,7 @@
 ---
 title: Avskrivningseffekter med återföringar
 description: Det här avsnittet behandlar potentiella konsekvenser vid återföring av en Anläggningstillgångstransaktion.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 2961
 ms.assetid: 63a3ac92-c321-4379-a86a-b1b14915f340
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37f0412166404e6903819840debcdd0ab0630115dcdb68297e0072723adacb53
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a8e5b1b7d468dbc37b295087815937fb49ad44f
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760672"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674560"
 ---
 # <a name="depreciation-effects-with-reversals"></a>Avskrivningseffekter med återföringar
 
@@ -30,7 +30,7 @@ Det här avsnittet behandlar potentiella konsekvenser vid återföring av en Anl
 
 Du kan återföra transaktioner för anläggningstillgångar och transaktionerna som är kopplade till en anläggningstillgång. Du kan även återkalla en återförd transaktion. 
 
-Du kan återställa eller återkalla en transaktion som inte är den senaste transaktionen som bokfördes i tillgångsboken. Du bör först fastställa om några avskrivningstransaktioner bokfördes efter den transaktion som du återför. Detta eftersom avskrivning inte räknas om när du återför en transaktion. Därför blir avskrivningen ofta för hög eller för låg efter återföringen, vilket exemplen visar. 
+Du kan återställa eller återkalla en transaktion som inte är den senaste transaktionen som bokfördes i tillgångsboken. Du bör först fastställa om några avskrivningstransaktioner bokfördes efter den transaktion som du återför. Detta steg är nödvändigt eftersom avskrivning inte räknas om när du återför en transaktion. Därför blir avskrivningen ofta för hög eller för låg efter återföringen, vilket exemplen visar. 
 
 Om du vill vara säker på att avskrivningen är korrekt när du återför en transaktion, gå inte vidare med återföringen om du får ett meddelande om att avskrivningen inte räknas om. Återför istället först avskrivningstransaktionen som bokfördes efter att den transaktion som du försökte du återföra och fortsätt sedan med återföringen. Du varnas inte om omberäkningar av avskrivning och du kan gå vidare med återföringen. 
 

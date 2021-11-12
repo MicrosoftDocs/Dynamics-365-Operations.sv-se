@@ -2,7 +2,7 @@
 title: Översikt över momsberäkning
 description: Detta ämne innehåller information om skatteberäkningsfunktionens övergripande omfattning och funktioner.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 72895cc18368ebf38818f30510cec999391c7910
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394596"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647067"
 ---
 # <a name="tax-calculation-overview"></a>Översikt över momsberäkning
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Skatteberäkningen är en hyperskalbar tjänst för flera innehavare som gör det möjligt för den globala skattemotorn (Global Tax Engine) att automatisera och förenkla bestämmandet och beräkningsprocessen för skatt. Skattemotorn är helt konfigurerbar. Elementen som kan konfigureras är inklusive, men inte begränsat till, den beskattningsbara datamodellen, skattekoden, tillämplighetsmatrisen för skatt och beräkningsformeln för skatt. Skattemotorn körs på Microsoft Azure kärntjänsters plattform och erbjuder modern teknik och exponentiell skalbarhet.
 
@@ -120,6 +118,10 @@ Följande transaktioner stöds i version 10.0.21:
     - Överföringsorder - leverera
     - Överföringsorder - ta emot
 
+Följande transaktioner stöds i version 10.0.23: 
+
+- Fritextfaktura
+
 ## <a name="supported-countriesregions"></a>Länder/regioner som stöds
 
 Momsberäkning kan aktiveras av juridisk person. 
@@ -145,6 +147,28 @@ Följande länder/regioner för en juridisk persons primära adress stöds i ver
 - Schweiz
 - Storbritannien
 - USA
+
+Följande länder/regioner för en juridisk persons primära adress stöds i version 10.0.22:
+
+- Australien
+- Bahrain
+- Kanada
+- Egypten
+- Hongkong SAR
+- Kuwait
+- Nya Zeeland
+- Oman
+- Qatar
+- Saudiarabien
+- Sydafrika
+- Förenade Arabemiraten
+
+Följande länder/regioner för en juridisk persons primära adress stöds i version 10.0.23:
+
+- Thailand
+- Japan
+- Malaysia
+- Singapore
 
 ## <a name="related-resources"></a>Relaterade resurser
 

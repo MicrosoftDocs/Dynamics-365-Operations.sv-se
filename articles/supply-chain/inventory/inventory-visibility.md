@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: dfc1bc0d457d0b0b2632aa2e2e5ba6a3c2f3fae7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1ea1d8c1b0e8c996ead8461005960fa756ce6ca7
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575181"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678919"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Översikt över tillägg för Lagersynlighet
 
@@ -45,8 +45,6 @@ Du kan visa ditt lager på två sätt:
 - Visa den obearbetade behållningslistan. Listan synkroniseras regelbundet från en cachelagrad instans och visas i Dataverse. Mer information finns i [appen Lagersynlighet](inventory-visibility-power-platform.md).
 
 ## <a name="soft-reservations"></a>Preliminära reservationer
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Preliminär reservation gäller när ett företag måste reservera en viss kvantitet produkter för att till exempel stödja uppfyllelse av försäljningsorder som undviker överförsäljning. När en försäljningsorder skapas och bekräftas i Supply Chain Management eller andra orderhanteringssystem skickas en begäran om att reservera kvantiteten till Lagersynlighet. Med Lagersynlighet kan du reservera produkter med dimensionsdetaljer och specifika lagertransaktionstyper. (Mer information finns i [appen Lagersynlighet](inventory-visibility-power-platform.md).) När kvantiteten har reserverats returneras ett reservations-ID. Du kan använda detta reservations-ID för att länka tillbaka till den ursprungliga ordern i Supply Chain Management eller andra orderhanteringssystem.
 
