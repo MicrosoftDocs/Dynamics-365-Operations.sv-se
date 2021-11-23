@@ -2,7 +2,7 @@
 title: Finance – startsida
 description: Det här avsnittet innehåller en lista med hjälpavsnitt och andra resurser för de ekonomiska styrningsfunktionerna i Microsoft Dynamics 365 Finance.
 author: roschlom
-ms.date: 08/18/2021
+ms.date: 11/04/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad6c671dd48ff482caf1b24a3842d8db0064dc18
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 13a5e12c7ea45ff343a5c7ae14b8ed5a030aabf5
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394573"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753731"
 ---
 # <a name="finance-home-page"></a>Finance – startsida
 
@@ -41,12 +41,10 @@ Välj ett funktionsområde för att läsa mer om det.
         - [Kostnadsredovisning](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Utläggshantering](/dynamics365/project-operations/prod-exp/expense-management)
         - [Ekonomisk rapportering](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
         - [Anläggningstillgångar](fixed-assets/fixed-assets.md)
         - [Finance Insights](finance-insights/finance-insights-home-page.md)
         - [Redovisning och ekonomisk rapportering](general-ledger/general-ledger.md) 
-        - [Projekthantering och redovisning](/dynamics365/project-operations/prod-pma/overview-project-management-accounting)
         - [Offentlig sektor](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
@@ -66,11 +64,19 @@ Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen 
 
 ### <a name="countryregion-functionality"></a>Funktionsland/-region
 
-Regleringar för land/region påverkar momsinställningarna och andra områden inom ekonomisk styrning. Mer information om lands- och regionspecifika funktioner finns i avsnittet [Lokaliserings- och regelfunktioner](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json) i hjälpinnehållet.
+Regleringar för land/region påverkar momsinställningarna och andra områden inom ekonomisk styrning. Mer information om lands-/regionspecifika funktioner finns i [Lokaliserings- och regelfunktioner](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json).
 
 ### <a name="additional-content"></a>Ytterligare innehåll
 
-Funktionerna för hantering av leveranskedjan omfattar delar av procure-to-pay-processen som inkluderar rekvisition, beställning, mottagning, fakturering och betalning för de varor och tjänster som dina organisation köper. Se [startsidan för Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) för information om möjligheterna att hantera inköp, lager och tillverkning.
+Funktionerna för hantering av leveranskedjan omfattar delar av procure-to-pay-processen som innefattar:
+
+   - Rekvirering
+   - Beställning 
+   - Mottagning
+   - Fakturera
+   - Betala för de varor och tjänster som organisationen köper 
+    
+Information om funktioner för att hantera inköp, lager och tillverkning finns på [startsidan för Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md).
 
 ## <a name="elearning-courses"></a>E-utbildningskurser
 

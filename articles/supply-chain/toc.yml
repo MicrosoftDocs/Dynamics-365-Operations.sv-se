@@ -713,8 +713,10 @@
                   href: cost-management/inventory-close.md
                 - name: Justera kostnadsvärden för lagerbehållning
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Lagringsrapport för lagervärde
+                - name: Lagervärderapporter
                   href: cost-management/inventory-value-report-storage.md
+                - name: Exempel på lagervärderapport och logik
+                  href: cost-management/inventory-value-report-examples.md
                 - name: Lagring av lagerföråldringsrapport
                   href: cost-management/inventory-aging-report-storage.md
                 - name: Exempel på lagerföråldringsrapport och logik
@@ -837,7 +839,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Lägga till ekonomiska dimensioner i aggregerade mått
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Skapa analytiska rapporter med Power BI Desktop
+                - name: Skapa analytiska rapporter med PowerBI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Lägg till analyser i arbetsytor genom att använda Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -1673,6 +1675,8 @@
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: Tidsplanering med resursurval baserat på kapacitet
                   href: master-planning/planning-optimization/capability-based-scheduling.md
+                - name: Prioritetsbaserad planering
+                  href: master-planning/planning-optimization/priority-based-planning.md
                 - name: Lagermarkeringen med Planeringsoptimering
                   href: master-planning/planning-optimization/marking.md
                 - name: Koncernintern planering
@@ -1719,6 +1723,8 @@
                   href: master-planning/maintain-planned-orders.md
                 - name: Säkerhet för artiklar i lageruppfyllelse
                   href: master-planning/safety-stock-replenishment.md
+                - name: Använd säkerhetslagerjournalen för att uppdatera minimumdisponering för artiklar
+                  href: master-planning/safety-stock-journal.md
                 - name: Fördröjningar
                   href: master-planning/delays.md
                 - name: Avbryta ett huvudplaneringsjobb
@@ -2351,6 +2357,8 @@
               href: production-control/unified-job-ids.md
             - name: Anropa processautomatiseringsflöden för att skapa kvalitetsorder
               href: production-control/process-automation-quality-orders.md
+            - name: Integrera med tillverkningskörningssystem från tredje part
+              href: production-control/mes-integration.md
             - name: Diskret tillverkning
               items:
                 - name: Underhåll produktionshuvuddata
@@ -2649,6 +2657,8 @@
                   href: production-control/production-floor-execution-use.md
                 - name: Välj stil på körningsgränssnittet för produktionsgolvet
                   href: production-control/production-floor-execution-styles.md
+                - name: Anpassa körningsgränssnittet för produktionsgolvet
+                  href: production-control/production-floor-execution-customize.md
         - name: Rabatthantering
           items:
             - name: Rabatthanteringsmodul – översikt

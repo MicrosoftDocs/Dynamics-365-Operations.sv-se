@@ -708,48 +708,6 @@
               href: general-ledger/electronic-messaging-work-with-em.md
             - name: Anropa ett enkelt ER-exportformat för att generera en Excel-rapport
               href: general-ledger/electronic-messaging-example.md
-        - name: Utgiftshantering
-          items:
-            - name: Utgiftshantering – översikt
-              href: /dynamics365/project-operations/prod-exp/expense-management
-            - name: Utgiftsrapporter på nytt sätt
-              href: /dynamics365/project-operations/prod-exp/ExpenseWorkspaceNew
-            - name: Planera utgiftshantering
-              href: /dynamics365/project-operations/prod-exp/plan-expense-management
-            - name: Parametrar för utgiftshantering
-              href: /dynamics365/project-operations/prod-exp/Expense-Management-Parameters
-            - name: Mobil arbetsyta för utgiftshantering
-              href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace
-            - name: Ställ in arbetsflöden för utgiftshantering
-              href: /dynamics365/project-operations/prod-exp/expense-workflows
-            - name: Arbetsflöde för utgiftshantering
-              href: /dynamics365/project-operations/prod-exp/expense-workflow
-            - name: Hantera delegering av utgifter
-              href: /dynamics365/project-operations/prod-exp/manage-expense-delegation
-            - name: Bearbetning av utgiftskvitto
-              href: /dynamics365/project-operations/prod-exp/expense-receipt-processing
-            - name: Importera och underhålla kreditkortstransaktioner
-              href: /dynamics365/project-operations/prod-exp/import-credit-card
-            - name: Fördelningar på en utgiftsrapport
-              href: /dynamics365/project-operations/prod-exp/expense-report-distributions
-            - name: Koncerninterna utgifter
-              href: /dynamics365/project-operations/prod-exp/intercompany-expense
-            - name: Definiera utgiftspolicyer
-              href: /dynamics365/project-operations/prod-exp/travel-expense-policies
-            - name: Visa en utgiftsrapport
-              href: /dynamics365/project-operations/prod-exp/view-expense-report
-            - name: Bokföra en utgiftsrapport
-              href: /dynamics365/project-operations/prod-exp/post-expense
-            - name: Utgiftsrapporter och flera granskare
-              href: /dynamics365/project-operations/prod-exp/expense-report-multiple-approvers
-            - name: Momsåtervinning i Utgiftshantering
-              href: /dynamics365/project-operations/prod-exp/VAT-expense-report
-            - name: Traktamentsregler
-              href: /dynamics365/project-operations/prod-exp/per-diem
-            - name: Reserekvisitioner
-              href: /dynamics365/project-operations/prod-exp/travel-req
-            - name: Privata utgifter i en utgiftsrapport
-              href: /dynamics365/project-operations/prod-exp/personal-expenses
         - name: Anläggningstillgångar
           items:
             - name: Startsidan Anläggningstillgångar
@@ -1248,9 +1206,7 @@
               href: finance-insights/finance-insights-home-page.md
             - name: Inställning och administration
               items:
-                - name: Konfigurera Finance insights för allmänt tillgänglig förhandsversion
-                  href: finance-insights/configure-for-fin-insites-PubPrvw.md
-                - name: Konfigurera Finance Insights för privat förhandsversion
+                - name: Konfigurera Finance Insights
                   href: finance-insights/configure-for-fin-insites.md
                 - name: Aktivera förutsägelser för kundbetalning
                   href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1288,88 +1244,6 @@
                   href: finance-insights/payment-snapshots.md
             - name: Vanliga frågor och svar om felsökning av Finance Insights
               href: finance-insights/finance-insights-troubleshooting-faq.md
-        - name: Projekthantering och redovisning
-          items:
-            - name: Arbetsflöden för projekthantering och redovisning – översikt
-              href: /dynamics365/project-operations/prod-pma/overview-project-management-accounting
-            - name: Koncernintern fakturering
-              href: /dynamics365/project-operations/prod-pma/intercompany-invoicing
-            - name: Konfigurera koncernintern projektfakturering
-              href: /dynamics365/project-operations/prod-pma/configure-intercompany-project-invoicing
-            - name: Konfigurera standardkostnader för arbetskraft och utgifter
-              href: /dynamics365/project-operations/prod-pma/configure-standard-costs-labor-expenses
-            - name: Skapa och tillämpa villkor för kvarhållande av leverantörsbetalning
-              href: /dynamics365/project-operations/prod-pma/create-and-apply-vendor-payment-retention-terms
-            - name: Ställa in och använda leverantörsbetalningar av typen Betala vid betalning
-              href: /dynamics365/project-operations/prod-pma/setup-manage-vendor-payments
-            - name: Periodisering av projektkostnader på inköpskvitton
-              href: accounts-payable/project-cost-accrual-purchase-receipts.md
-            - name: Projektfakturering
-              href: accounts-payable/project-invoicing.md
-            - name: Projektkontrakt
-              href: /dynamics365/project-operations/prod-pma/project-contracts
-            - name: Skapa avancerade kontrakt för fakturering baserat på status
-              href: /dynamics365/project-operations/prod-pma/project-create-advanced-contracts-for-billing-based-progress
-            - name: Projektprognoser och projektbudgetar
-              href: /dynamics365/project-operations/prod-pma/project-forecasts-budgets
-            - name: Skapa prognosmodeller för projektbudgetar
-              href: /dynamics365/project-operations/prod-pma/create-forecast-models-project-budgets
-            - name: Överför projektbudgetar vid räkenskapsårets slut
-              href: /dynamics365/project-operations/prod-pma/process-project-budgets-for-fiscal-year-end
-            - name: Projektförsäljningsorder
-              href: /dynamics365/project-operations/prod-pma/project-sales-orders
-            - name: Inköpsorder för ett projekt
-              href: /dynamics365/project-operations/prod-pma/project-purchase-orders
-            - name: Projektofferter
-              href: /dynamics365/project-operations/prod-pma/project-quotations
-            - name: 'Bekräfta, uppdatera och skicka en projektoffert'
-              href: /dynamics365/project-operations/prod-pma/confirm-update-send-project-quotation
-            - name: Överföra en offert till ett projekt
-              href: /dynamics365/project-operations/prod-pma/transfer-quote-new-existing-project
-            - name: Projektresurshantering
-              items:
-                - name: Projektresurshantering – översikt
-                  href: /dynamics365/project-operations/prod-pma/project-resourcing
-                - name: Ställa in projektresurser
-                  href: /dynamics365/project-operations/prod-pma/set-up-project-resources
-                - name: Hantera resurskompetenser
-                  href: /dynamics365/project-operations/prod-pma/manage-resource-competencies
-                - name: Skapa ett nytt projekt
-                  href: /dynamics365/project-operations/prod-pma/create-new-project
-                - name: Ställa in rollbaserad prissättning
-                  href: /dynamics365/project-operations/prod-pma/set-up-role-based-pricing
-                - name: Skapa ett projektteam
-                  href: /dynamics365/project-operations/prod-pma/create-project-team
-                - name: Synkronisera resurskapacitet
-                  href: /dynamics365/project-operations/prod-pma/synchronize-resource-capacity
-                - name: Tidsplaneringsprestanda för projektresurser
-                  href: /dynamics365/project-operations/prod-pma/project-scheduling-performance
-                - name: Ställa in roller i mallarna för uppdelad arbetsstruktur
-                  href: /dynamics365/project-operations/prod-pma/set-up-roles-wbs-template
-                - name: Resursuppfyllelse för planerade resurser
-                  href: /dynamics365/project-operations/prod-pma/resource-fulfillment-planned-resources
-            - name: Ta emot artiklar i inköpsorder från artikelbehov
-              href: /dynamics365/project-operations/prod-pma/receive-items-purchase-order-item-requirement
-            - name: Uppdelade arbetsstrukturer
-              items:
-                - name: Uppdelade arbetsstrukturer – översikt
-                  href: /dynamics365/project-operations/prod-pma/work-breakdown-structures
-                - name: Integrering av Microsoft Project Client
-                  href: /dynamics365/project-operations/prod-pma/project-integration
-                - name: Project för mobila appar – Översikt
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview
-                - name: Mobil arbetsyta för registrering av projekttid
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace
-                - name: Mobil app för Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet
-                - name: Projekttidrapporter på mobil enhet
-                  href: /dynamics365/project-operations/prod-pma/Mobile-timesheets
-                - name: Implementera anpassade fält för mobilappen för Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/custom-fields-mobile
-            - name: Projektanslag
-              href: /dynamics365/project-operations/prod-pma/project-grants
-            - name: Eliminera en projektuppskattning
-              href: /dynamics365/project-operations/prod-pma/eliminate-project-estimate
         - name: Offentlig sektor
           items:
             - name: Startsida för offentlig sektor
@@ -1804,6 +1678,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: Ställa in NF-e-parametrar för skattemyndighet
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: Flytta NF-e XML-filer som bilagor
+                      href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
                     - name: NT2020.005 – Uppdatering av layout och validering i det elektroniska skattedokumentet (NF-e)
                       href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 – digital plattform för mellanliggande försäljning för NF-e
@@ -2190,6 +2066,8 @@
                       href: localizations/tasks/create-submit-vat-report.md
                 - name: Visa transaktioner på kvittning
                   href: localizations/emea-transactions-settlement-form.md
+                - name: Ekonomisk orsak
+                  href: localizations/emea-financial-reason.md
             - name: Finland
               items:
                 - name: Finland – översikt
@@ -2750,10 +2628,14 @@
                   href: localizations/emea-ita-exil-zero-invoice-posting.md
                 - name: Förbättrad användbarhet för bankdata
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
-                - name: Italiensk Intrastat
-                  href: localizations/emea-ita-intrastat.md
-                - name: Bokföra införsel och utförsel för Intrastat
-                  href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                - name: Intrastat
+                  items:
+                    - name: Italiensk Intrastat
+                      href: localizations/emea-ita-intrastat.md
+                    - name: Bokföra införsel och utförsel för Intrastat
+                      href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                    - name: Filformat för Intrastat (IT)
+                      href: /dynamics/s-e/365business/dynamices365finance_itintrastatfile
                 - name: Diverse tillägg per kilogram i en Intrastat-deklaration
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Avsiktsbrev – fakturera vanliga exportörer
@@ -3110,6 +2992,8 @@
                   href: localizations/emea-pol-returnable-packages.md
                 - name: Momsrapporter
                   href: localizations/emea-pol-sales-tax-reports.md
+                - name: Intrastat för Polen
+                  href: localizations/emea-pol-intrastat.md
                 - name: Ställ in nummerserier efter lagerställe
                   href: localizations/emea-pol-number-sequence-warehouses.md
                 - name: Standardverifieringsfil
@@ -4375,6 +4259,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/finance/toc.json
                 - name: Relativ sökväg i databindningar
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/finance/toc.json
+                - name: Skapa uttryck för att anropa programklassmetoder
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/design-expressions-app-class-er.md?toc=/dynamics365/finance/toc.json
             - name: Använda ER-lösningar i Finance
               items:
                 - name: Konfigurera ramverket

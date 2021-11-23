@@ -1272,7 +1272,7 @@
               href: store-performance-information.md
             - name: 'Ställa in Recency-, frekvens- och penninganalys (RFM)'
               href: set-up-rfm-analysis.md
-            - name: Ställa in Microsoft Clarity i Dynamics 365 Commerce
+            - name: Ställa in Microsoft Clarity i Dynamics 36 Commerce
               href: set-up-clarity.md
         - name: Globalisering
           items:
@@ -2538,6 +2538,8 @@
                       href: e-commerce-extensibility/debugging-best-practices.md
             - name: SDK för Retail
               items:
+                - name: Flytta till SDK för Commerce
+                  href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
                 - name: SDK för Retail-arkitektur
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Konfigurera en bygg-pipeline för oberoende förpacknings-SDK
@@ -2588,7 +2590,7 @@
                   href: dev-itpro/pos-handler.md
                 - name: Visa information om tilläggspaket för kassa
                   href: dev-itpro/view-pos-extension-package-details.md
-                - name: Testinspelare och Regression Suite Automation Tool för Cloud POS
+                - name: Testinspelare och Regression suite automation tool för Cloud POS
                   href: dev-itpro/pos-rsat.md
                 - name: Lägga till anpassade fält i summapanel för kassa
                   href: dev-itpro/custom-field-pos-totals.md
