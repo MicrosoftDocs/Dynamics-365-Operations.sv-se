@@ -47,7 +47,7 @@ IFRS 16-boken har ställts in så att den överensstämmer med IFRS 16-redovisni
 | Inställning av aktuellt värde/tillgångens verkliga värde | 0,00           |
 | Korttidströskel                    | 12             |
 | Lågvärdeströskel                     | 5,000.00       |
-| Betala till leverantör                           | Nr             |
+| Betala till leverantör                           | Nej             |
 
 **Lagstadgad räkenskapsbok**
 
@@ -64,7 +64,7 @@ Den lagstadgade räkenskapsboken är kontantmetodsbok där företaget redovisar 
 | Inställning av aktuellt värde/tillgångens verkliga värde | 0,00        |
 | Korttidströskel                    | 0           |
 | Lågvärdeströskel                     | 0           |
-| Betala till leverantör                           | Nr          |
+| Betala till leverantör                           | Nej          |
 
 **Lagstadgad återföringsbok**
 
@@ -81,7 +81,7 @@ Den lagstadgade återföringsboken ställs in på samma sätt som den lagstadgad
 | Inställning av aktuellt värde/tillgångens verkliga värde | 0,00                           |
 | Korttidströskel                    | 0                              |
 | Lågvärdeströskel                     | 0                              |
-| Betala till leverantör                           | Nr                             |
+| Betala till leverantör                           | Nej                             |
 
 I det här exemplet har en leasing skapats med följande inställningar på flikarna **Allmänt** och **Betalningsplanrader**.
 

@@ -201,7 +201,7 @@ Inställningarna i det här avsnittet görs av en juridisk person. Du måste kon
 3. På fliken **Beräkning**, definiera den förväntade avrundningsregeln för den juridiska enheten. Mer information om avrundningslogiken finns i [Avrundningsregler för momsberäkning](https://go.microsoft.com/fwlink/?linkid=2166988).
 4. På fliken **Felhantering**, definiera den förväntade felhanteringsmetoden för den juridiska enheten. Tre alternativ är möjliga:
 
-    - Nr
+    - Nej
     - Varning
     - Fel
 

@@ -40,7 +40,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 | &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Exkluderad från bearbetning av elektroniska meddelanden rörande driftskompatibilitet med ungerskt online-faktureringssystem |
-| **Ersatt av en annan funktion?**   | Nr |
+| **Ersatt av en annan funktion?**   | Nej |
 | **Produktområden som påverkas**         | Ansökning |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell: Från och med den 15 april 2022 planerar vi att inte längre stödja formatkonfigurationen "RTFV Query Invoice Data Request (HU)." |

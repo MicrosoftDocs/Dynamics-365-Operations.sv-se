@@ -75,14 +75,14 @@ I följande tabell finns exempel som visar hur olika inställningar för en fris
 
 | Frisläppt produkt: Leverantör | Standardorderinställningar: Ledtid | Artikeldisponering: åsidosätta leverantör | Artikeldisponering: åsidosätta ledtid | Handelsavtal: Leverantör | Handelsavtal: ledtid | Handelsavtal: ignorera ledtid | Resulterande leverantör | Resulterande ledtid |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001** _ | _*_1_*_ | Nr | Nr | US003 | 3 | Nr | _ *US001** | **1** |
-| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Nr | _ *US002** | **2** |
-| *(Tom)* | 1 | Nr | Nr | ***US003** _ | _*_3_*_ | Nr | _ *US003** | **3** |
-| *(Tom)* | ***1** _ | Nr | Nr | _*_US003_*_ | 3 | Ja | _ *US003** | **1** |
-| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Nr | US003 | 3 | Nr | _ *US002** | **1** |
-| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Nr | US003 | 3 | Nr | _ *US002** | **1** |
-| *(Tom)* | 1 | Nr | Ja: 2 | ***US003** _ | _*_3_*_ | Nr | _ *US003** | **3** |
-| *(Tom)* | 1 | Nr | ***Ja: 2** _ | _*_US003_*_ | 3 | Ja | _ *US003** | **2** |
+| ***US001** _ | _*_1_*_ | Nej | Nej | US003 | 3 | Nej | _ *US001** | **1** |
+| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Nej | _ *US002** | **2** |
+| *(Tom)* | 1 | Nej | Nej | ***US003** _ | _*_3_*_ | Nej | _ *US003** | **3** |
+| *(Tom)* | ***1** _ | Nej | Nej | _*_US003_*_ | 3 | Ja | _ *US003** | **1** |
+| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Nej | US003 | 3 | Nej | _ *US002** | **1** |
+| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Nej | US003 | 3 | Nej | _ *US002** | **1** |
+| *(Tom)* | 1 | Nej | Ja: 2 | ***US003** _ | _*_3_*_ | Nej | _ *US003** | **3** |
+| *(Tom)* | 1 | Nej | ***Ja: 2** _ | _*_US003_*_ | 3 | Ja | _ *US003** | **2** |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

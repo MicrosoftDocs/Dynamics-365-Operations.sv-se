@@ -143,7 +143,7 @@ Med så många olika integreringstekniker tillgängliga kan det vara överväldi
 | BYOD                   | Ja, schemalagt av administratör i personal        | Async, batch                                | Nej<sup>3</sup>                                    | Hög (hundratusentals poster)                    | Stöder alla DMF-enheter           |
 | OData-aktiverade enheter | Ja, använda mellanprogram                    | Synkronisering                                        | Ja, via datatjänst för personal (OData)  | Varierar med användningsfall (stöder sidindelning för interaktiv användning) | Högt                                |
 | Excel-tillägg           | Nej                                       | Synkronisering                                        | Nej                                        | Mellan (tiotusentals poster)                      | Stöder alla OData-aktiverade enheter |
-| Dataintegrerare        | Ja, schemalagd i dataintegrerare        | Async, batch                                | Nr                                        | Varierar med användningsfall                                       | Stöder alla Dataverse-register           |
+| Dataintegrerare        | Ja, schemalagd i dataintegrerare        | Async, batch                                | Nej                                        | Varierar med användningsfall                                       | Stöder alla Dataverse-register           |
 
 <sup>2</sup>Microsoft investerar mycket i att öka datatäckningen för Dataverse-register. Vi rekommenderar att du använder Dataverse när täckning är tillgängligt. För närvarande är Dataverse datatäckning låg jämfört med DMF- och OData-aktiverade entiteter.
 

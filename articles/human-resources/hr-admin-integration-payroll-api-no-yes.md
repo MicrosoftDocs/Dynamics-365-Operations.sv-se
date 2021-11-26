@@ -34,7 +34,7 @@ Denna uppräkning ger en alternativuppsättning för typiska booleska egenskaper
 
 | Värde | Etikett | beskrivning |
 | --- | --- | --- |
-| 200000000 | Nr | Nej. |
+| 200000000 | Nej | Nej. |
 | 200000001 | Ja | Ja. |
 
 ## <a name="see-also"></a>Se även

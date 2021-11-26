@@ -69,7 +69,7 @@ En dimensionshierarki som uppfyller rapporteringskraven för organisationen kan 
 
 | Dimensionshierarkins namn | Dimension    | Namn på typ av dimensionshierarki      | Hierarki för åtkomstlista |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organisation             | Kostnadsställen | Hierarki för dimensionsklassificering | Nr                    |
+| Organisation             | Kostnadsställen | Hierarki för dimensionsklassificering | Nej                    |
 
 **Dimensionshierarki**
 

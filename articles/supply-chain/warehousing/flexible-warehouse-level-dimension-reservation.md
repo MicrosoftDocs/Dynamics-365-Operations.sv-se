@@ -421,7 +421,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Inte aktuellt</td>
 </tr>
 <tr>
-<td>Nr</td>
+<td>Nej</td>
 <td>
 <ol>
 <li>Välj menyalternativ <strong>Åsidosätt plats</strong> i mobilappen för distributionslagerhantering när du startar plockningsarbete.</li>
@@ -719,7 +719,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 </tr>
 <tr>
 <td>Ett arbetsundantag från typen <strong>Kort plockning</strong> konfigureras där <strong>Omallokering av artikel</strong> = <strong>Manuell</strong>, <strong>Justera lager</strong> = <strong>Ja</strong> och <strong>Ta bort reservationer</strong> = <strong>Nej</strong>. Dessutom är alternativet <strong>Tillåt omfördelning av artikel</strong> aktiverat för arbetaren.</td>
-<td>Nr</td>
+<td>Nej</td>
 <td>
 <ol>
 <li>Välj menyalternativet <strong>Kort plockning</strong> i mobilappen för distributionslagerhantering när du kör plockningsarbete.</li>
@@ -732,7 +732,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 </tr>
 <tr>
 <td>Ett arbetsundantag från typen <strong>Kort plockning</strong> konfigureras där <strong>Omallokering av artikel</strong> = <strong>Manuell</strong>, <strong>Justera lager</strong> = <strong>Ja</strong> och <strong>Ta bort reservationer</strong> = <strong>Ja</strong>. Dessutom är alternativet <strong>Tillåt omfördelning av artikel</strong> aktiverat för arbetaren.</td>
-<td>Nr</td>
+<td>Nej</td>
 <td>
 <ol>
 <li>Välj menyalternativet <strong>Kort plockning</strong> i mobilappen för distributionslagerhantering när du kör plockningsarbete.</li>

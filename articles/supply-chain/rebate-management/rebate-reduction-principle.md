@@ -47,11 +47,11 @@ Följande tabell innehåller några typiska exempel på inställningar för raba
 
 | Princip för rabattreducering | beskrivning | Använd reducering | Reduceringsunderlag | Exkludera från reducering |
 |---|---|---|---|---|
-| Uppskjutet | Minska rabatten | Ja | Båda | Nr |
+| Uppskjutet | Minska rabatten | Ja | Båda | Nej |
 | Exclreb | Exkludera rabatt | Ja | Rabatt | Ja |
 | Flera | Flera rabatter | Ja | Båda | Ja |
-| None | Endast prov och rabatt | Nr | Båda | Ja |
-| Reservera | Endast provision | Ja | Reservera | Nr |
+| None | Endast prov och rabatt | Nej | Båda | Ja |
+| Reservera | Endast provision | Ja | Reservera | Nej |
 | Rabatt | Endast rabatt | Ja | Rabatt | Ja |
 
 ## <a name="examples-of-rebate-reduction-principle-calculations"></a>Exempel på inställningar för rabattreduceringsberäkningar

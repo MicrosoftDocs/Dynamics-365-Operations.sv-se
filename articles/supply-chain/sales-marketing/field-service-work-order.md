@@ -88,21 +88,21 @@ Följande tabell ger en översikt över de olika kombinationerna för produktrad
 | Systemstatus <br>(Field Service) | Radstatus <br>(Field Service) | Fördelat <br>(Field Service) |Synkroniserat värde <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Öppen - Schemalagd   | Uppskattad   | Ja       | Uppskattad                       |
-| Öppen - Schemalagd   | Uppskattat   | Nr        | Används                            |
+| Öppen - Schemalagd   | Uppskattat   | Nej        | Används                            |
 | Öppen - Schemalagd   | Används        | Ja       | Används                            |
-| Öppen - Schemalagd   | Används        | Nr        | Används                            |
+| Öppen - Schemalagd   | Används        | Nej        | Används                            |
 | Öppen - Pågår | Uppskattat   | Ja       | Uppskattat                       |
-| Öppen - Pågår | Uppskattat   | Nr        | Används                            |
+| Öppen - Pågår | Uppskattat   | Nej        | Används                            |
 | Öppen - Pågår | Används        | Ja       | Används                            |
-| Öppen - Pågår | Används        | Nr        | Används                            |
+| Öppen - Pågår | Används        | Nej        | Används                            |
 | Öppen - Slutförd   | Uppskattat   | Ja       | Uppskattat                       |
-| Öppen - Slutförd   | Uppskattat   | Nr        | Används                            |
+| Öppen - Slutförd   | Uppskattat   | Nej        | Används                            |
 | Öppen - Slutförd   | Används        | Ja       | Används                            |
-| Öppen - Slutförd   | Används        | Nr        | Används                            |
+| Öppen - Slutförd   | Används        | Nej        | Används                            |
 | Stängd - Bokförd    | Uppskattat   | Ja       | Används                            |
-| Stängd - Bokförd    | Uppskattat   | Nr        | Används                            |
+| Stängd - Bokförd    | Uppskattat   | Nej        | Används                            |
 | Stängd - Bokförd    | Används        | Ja       | Används                            |
-| Stängd - Bokförd    | Används        | Nr        | Används                            |
+| Stängd - Bokförd    | Används        | Nej        | Används                            |
 
 Följande tabell ger en översikt över de olika kombinationerna för tjänstrader.
 

@@ -170,7 +170,7 @@ På sidan **Beräkningsparametrar**, välj **Övertid** som profilspecifikations
 
 | Reg.specifikation | Typ av profilspecifikation | Beräkning   | Inställning | Betald         | Inställning |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
-| Arbetstid       | Övertid                   | Standardtid | Ja | Betald tid     | Nr  |
+| Arbetstid       | Övertid                   | Standardtid | Ja | Betald tid     | Nej  |
 |                    |                            | Betald tid      | Ja | Betald övertid | Ja |
 
 När du har justerat beräkningsparametrarna genereras följande löneposter.

@@ -128,7 +128,7 @@ De flesta källsystem kan innehålla data som matchar en eller flera datakällor
 |---|---|---|---|
 | Dimensionsmedlemmar för kostnadselement  |  Ja | Ja  | Ja  |
 |  Dimensionsmedlemmar för kostnadsobjekt |  Ja | Ja  | Ja  |
-|  Statistikdimensionsmedlemmar | Ja  | Nr  | Nr  |
+|  Statistikdimensionsmedlemmar | Ja  | Nej  | Nej  |
 |  Huvudbok | Ja  | Ja  | Ja  |
 |  Budgetposter  | Ja  | Ja  | Ja  |
 |  Statistiska mätningar | Ja  | Ja  | Ja  |

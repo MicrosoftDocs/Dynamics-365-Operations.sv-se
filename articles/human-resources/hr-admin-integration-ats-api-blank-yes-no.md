@@ -34,7 +34,7 @@ Denna uppräkning ger en alternativuppsättning för Ja/Nej-egenskaper som även
 | --- | --- | --- |
 | 200000000 | Tom | Inget värde har valts. |
 | 200000001 | Ja | Ja. |
-| 200000002 | Nr | Nr |
+| 200000002 | Nej | Nej |
 
 ## <a name="see-also"></a>Se även
 

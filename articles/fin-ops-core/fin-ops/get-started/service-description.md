@@ -333,9 +333,9 @@ Microsoft erbjuder Finance and Operations-kunderna tre supportplaner: Premier, P
 | Obegränsad sändning av avbrott/korrigera incident | Ja | Ja | Ja |
 | 24/7 åtkomst via LCS | Ja | Ja | Ja |
 | Incidentsvarstid | Mindre än en timme | Mindre än en timme | Nästa arbetsdag |
-| Rådgivningstimmar | Pooler anskaffas per avtal. | Nr | Nr |
-| Dedikerad supportkontohanterare | Ja | Nr | Nr |
-| Dedikerad supporttekniker | Engageras enligt separat avtal | Nr | Nr |
+| Rådgivningstimmar | Pooler anskaffas per avtal. | Nej | Nej |
+| Dedikerad supportkontohanterare | Ja | Nej | Nej |
+| Dedikerad supporttekniker | Engageras enligt separat avtal | Nej | Nej |
 
 Mer information finns i [Supportöversikt](/power-platform/admin/support-overview).
 

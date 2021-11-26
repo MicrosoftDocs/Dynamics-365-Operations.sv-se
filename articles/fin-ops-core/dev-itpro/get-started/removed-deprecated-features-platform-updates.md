@@ -178,7 +178,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Metadata som är associerade med Dynamics AX 2012 Enterprise Portal (EP) är utfasad, eftersom EP aldrig har stöds i Finance and Operations-appar. |
-| **Ersatt av en annan funktion?**   | Nr |
+| **Ersatt av en annan funktion?**   | Nej |
 | **Produktområden som påverkas**         | Webbklient |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell: All EP-kod ska tas bort i versionen för oktober 2021. |
@@ -335,7 +335,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Navigerings-URL:er som är inbäddade i dokument som tillhandahålls av tjänsten kan innehålla känsliga affärsdata. Vi tar bort stöd för inbäddade detaljgranskningslänkar i dokument som en säkerhetsåtgärd för att skydda kundens data ytterligare. Användarna får också nytta av förbättrad prestanda samtidigt som de skapar dokument som ett resultat av ändringen.  |
-| **Ersatt av en annan funktion?**   | Nr |
+| **Ersatt av en annan funktion?**   | Nej |
 | **Produktområden som påverkas**         | Rapportering |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Den här funktionen tas aktivt bort från tjänsten.<br><br>Den moderna klienten erbjuder flera alternativ för att producera vyer som innehåller automatiskt genererade länkar som hjälper dig att navigera i programmet. Sidbrytningsdokument som renderas av tjänsten rekommenderas för extern kommunikation som har e-post, arkiverats och skrivits ut för mottagare. Vi har förbättrat upplevelsen att förhandsgranska dokument direkt i webbläsaren, som ger direkt åtkomst till lokala skrivare. Mer information finns i [Förhandsgranska PDF-dokument med ett inbäddat visningsprogram](../analytics/preview-pdf-documents.md). |

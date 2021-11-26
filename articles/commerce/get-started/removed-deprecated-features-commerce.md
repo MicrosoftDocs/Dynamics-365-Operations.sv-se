@@ -101,7 +101,7 @@ Kassatilläggsutveckling med hjälp av ModernPos.sln, CloudPOs.sln, POS. Extensi
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | I formuläret **Parametrar för handelsschema** i Dynamics 365-administationen kommer från och med denna version fältet **Intervall för komplett datauppsättningsgenerering** att bli inaktuellt. Från och med denna version tas fältet även bort visuellt så att värdet inte kan redigeras. Detta förblir värdet **0**. |
-| **Ersatt av en annan funktion?**   | Nr |
+| **Ersatt av en annan funktion?**   | Nej |
 | **Produktområden som påverkas**         | Dynamics 365 Commerce |
 | **Distribueringsalternativ**              | Allt|
 | **Status**                         | Inaktuell. Använd inte detta fält, och ändra heller inte värdet i det.|

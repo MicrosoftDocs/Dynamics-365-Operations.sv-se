@@ -344,7 +344,7 @@ I produktion, om du ställer in fältet **händelsetyp** till *Rapportera som sl
 </tr>
 <tr>
 <td>Fast kvantitet: 1</td>
-<td>Nr</td>
+<td>Nej</td>
 <td>
 <p>Batchnummer: Nej</p>
 <p>Serienummer: Nej</p>
@@ -399,7 +399,7 @@ I produktion, om du ställer in fältet **händelsetyp** till *Rapportera som sl
 </tr>
 <tr>
 <td>Fast kvantitet: 2</td>
-<td>Nr</td>
+<td>Nej</td>
 <td>
 <p>Batch-nummer: Ja</p>
 <p>Serienummer: Ja</p>

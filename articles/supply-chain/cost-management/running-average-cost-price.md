@@ -38,9 +38,9 @@ Följande tabell visar när systemet bokför lagertransaktioner med den löpande
 
 | Villkor                                               | Systemet använder den uppskattade löpande genomsnittliga självkostnaden | Systemet använder självkostnaden som definieras i artikelns huvudpost |
 |---------------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------|
-| Både täljaren\* och nämnaren\*\* är positiva.  | Ja                                                      | Ingen                                                                |
-| Täljaren\*, nämnaren\*\* eller båda är negativa. | Ingen                                                       | Ja                                                               |
-| Nämnaren\*\* är 0 (noll).                        | Ingen                                                       | Ja                                                               |
+| Både täljaren\* och nämnaren\*\* är positiva.  | Ja                                                      | Nej                                                                |
+| Täljaren\*, nämnaren\*\* eller båda är negativa. | Nej                                                       | Ja                                                               |
+| Nämnaren\*\* är 0 (noll).                        | Nej                                                       | Ja                                                               |
 
 \* Täljare = (fysiskt belopp + ekonomiskt belopp) \*\* nämnare = (fysisk kvantitet + ekonomisk kvantitet) 
 

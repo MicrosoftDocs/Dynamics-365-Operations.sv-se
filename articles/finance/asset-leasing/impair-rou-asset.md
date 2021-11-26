@@ -92,8 +92,8 @@ I följande tabeller visas de värden som är inställda på flikarna **Allmänt
     | Transaktionsdatum       | 2022-01-01 |
     | Resterande perioder      | 84       |
     | Bokför                   | Ja      |
-    | Förhandsgranska före bokföring | Nr       |
-    | Stäng bok             | Nr       |
+    | Förhandsgranska före bokföring | Nej       |
+    | Stäng bok             | Nej       |
 
 6. En journalpost för nedskrivningsutgift har skapats och bokförts. Om du vill visa den går du till tillgångens leasingjournal i leasingboken. Observera att beloppet för nedskrivningen debiterades bokföringskontot för nedskrivningsutgift, och bokföringskontot för ROU-tillgången krediterades.
 7. Om du vill visa nettoeffekten av nedskrivningen går du till tabellerna skuld- och tillgångstransaktioner. Observera att nedskrivningsutgifterna har minskat ROU-tillgången, men det bokförda värdet för leasingskulden inte har ändrats.

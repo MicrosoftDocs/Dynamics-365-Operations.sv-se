@@ -187,34 +187,34 @@ I följande tabell visas vilka utgående funktioner som stöds och var de stöds
 
 | Process                                                      | Hubb | Arbetsbelastning för lagerkörning på en skalningsenhet |
 |--------------------------------------------------------------|-----|------------------------------|
-| Bearbetning av källdokument                                   | Ja | Nr |
-| Last- och transporthanteringsprocesser                | Ja, men bara lastplaneringsprocesserna. Bearbetning av transporthantering stöds inte  | Nr |
-| Frisläpp till distributionslager                                         | Ja | Nr |
-| Planerad direktleverans                                        | Nr  | Nr |
+| Bearbetning av källdokument                                   | Ja | Nej |
+| Last- och transporthanteringsprocesser                | Ja, men bara lastplaneringsprocesserna. Bearbetning av transporthantering stöds inte  | Nej |
+| Frisläpp till distributionslager                                         | Ja | Nej |
+| Planerad direktleverans                                        | Nej  | Nej |
 | Konsolidering av leverans                                       | Ja, när du använder lastplanering | Ja |
-| Påfyllnadsbearbetning för leverans                                     | Nr  |Ja, utom **Lastuppbyggnad och sortering** |
-| Underhålla försändelser för cykel                                  | Nr  | Ja|
-| Arbetsprocess för lager (inkl. tryck på ID-nummer)        | Nr  | Ja, men endast för de tidigare nämnda funktionerna |
-| Klusterplockning                                              | Nr  | Ja|
-| Manuell förpackningsbearbetning, inklusive bearbetning av "Plockning för packad behållare" | Nr <P>Viss bearbetning kan utföras efter en ursprunglig plockningsprocess som hanteras av en vågenhet, men du rekommenderas inte på grund av följande spärrade operationer.</p>  | Nr |
-| Ta bort behållare från grupp                                  | Nr  | Nr |
-| Utgående sorteringsbearbetning                                  | Nr  | Nr |
+| Påfyllnadsbearbetning för leverans                                     | Nej  |Ja, utom **Lastuppbyggnad och sortering** |
+| Underhålla försändelser för cykel                                  | Nej  | Ja|
+| Arbetsprocess för lager (inkl. tryck på ID-nummer)        | Nej  | Ja, men endast för de tidigare nämnda funktionerna |
+| Klusterplockning                                              | Nej  | Ja|
+| Manuell förpackningsbearbetning, inklusive bearbetning av "Plockning för packad behållare" | Nej <P>Viss bearbetning kan utföras efter en ursprunglig plockningsprocess som hanteras av en vågenhet, men du rekommenderas inte på grund av följande spärrade operationer.</p>  | Nej |
+| Ta bort behållare från grupp                                  | Nej  | Nej |
+| Utgående sorteringsbearbetning                                  | Nej  | Nej |
 | Utskrift av läsrelaterade dokument                           | Ja | Ja|
-| Fraktsedel och ASN-generering                            | Nr  | Ja|
-| Försändelsebekräftelse                                             | Nr  | Ja|
-| Försändelsebekräftelse med "Bekräfta och överför"            | Nr  | Nr |
-| Följesedel- och faktureringsbearbetning                        | Ja | Nr |
-| Kort plockning (försäljnings- och överföringsorder)                    | Nr  | Ja, utan att ta bort reservationer för källdokument|
-| Överplockning (försäljnings- och överföringsorder)                     | Nr  | Ja|
-| Ändring av arbetsplatser (försäljnings- och överföringsorder)         | Nr  | Ja|
-| Slutföra arbete (försäljnings- och överföringsorder)                    | Nr  | Ja|
+| Fraktsedel och ASN-generering                            | Nej  | Ja|
+| Försändelsebekräftelse                                             | Nej  | Ja|
+| Försändelsebekräftelse med "Bekräfta och överför"            | Nej  | Nej |
+| Följesedel- och faktureringsbearbetning                        | Ja | Nej |
+| Kort plockning (försäljnings- och överföringsorder)                    | Nej  | Ja, utan att ta bort reservationer för källdokument|
+| Överplockning (försäljnings- och överföringsorder)                     | Nej  | Ja|
+| Ändring av arbetsplatser (försäljnings- och överföringsorder)         | Nej  | Ja|
+| Slutföra arbete (försäljnings- och överföringsorder)                    | Nej  | Ja|
 | Skriv ut arbetsrapport                                            | Ja | Ja|
-| Påfyllnadsetikett                                                   | Nr  | Ja|
-| Arbetsdelning                                                   | Nr  | Ja|
-| Bearbetning av arbete – Styrt av "Transportlastning"            | Nr  | Nr |
-| Minska plockad kvantitet                                       | Nr  | Nr |
-| Återför arbete                                                 | Nr  | Nr |
-| Återför leveransbekräftelse                                | Nr  | Ja|
+| Påfyllnadsetikett                                                   | Nej  | Ja|
+| Arbetsdelning                                                   | Nej  | Ja|
+| Bearbetning av arbete – Styrt av "Transportlastning"            | Nej  | Nej |
+| Minska plockad kvantitet                                       | Nej  | Nej |
+| Återför arbete                                                 | Nej  | Nej |
+| Återför leveransbekräftelse                                | Nej  | Ja|
 
 ### <a name="inbound"></a>Inkommande
 
@@ -226,27 +226,27 @@ I följande tabell visas vilka ingående funktioner som stöds och var de stöds
 | Last- och transporthanteringsprocesser                    | Ja | Nej |
 | Hemtagningskostnad och varor på väg mottagande                       | Ja | Nej |
 | Inkommande försändelsebekräftelse                                    | Ja | Nej |
-| Frisläppning av inköpsorder till lagerställe (bearbetning av lagerorder) | Ja | Nr |
-| Annullering av orderrader för lagerställe<p>Observera att detta endast stöds om ingen registrering har skett mot raden</p> | Ja | Nr |
+| Frisläppning av inköpsorder till lagerställe (bearbetning av lagerorder) | Ja | Nej |
+| Annullering av orderrader för lagerställe<p>Observera att detta endast stöds om ingen registrering har skett mot raden</p> | Ja | Nej |
 | Inleverans och inlagring av inköpsorderartikel                       | <p>Ja,&nbsp;när&nbsp;det&nbsp;inte finns lagerorder</p><p>Nej, när det finns en lagerorder</p> | <p>Ja, när en inköpsorder inte ingår i en <i>last</i></p> |
 | Inköpsorderrad har inlevererats och inlagrats                       | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | <p>Ja, när en inköpsorder inte ingår i en <i>last</i></p></p> |
-| Returorder mottagning och inleverans                              | Ja | Nr |
+| Returorder mottagning och inleverans                              | Ja | Nej |
 | Plats och mottagning för blandat ID-nummer                       | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Ja |
-| Mottagande av lastartikel                                              | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
-| Plats och mottagning av registreringsskylt                             | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
-| Inleverans och inlagring av överföringsorderartikel                       | Ja | Nr |
-| Överför orderrad inleverans och inlagring                       | Ja | Nr |
+| Mottagande av lastartikel                                              | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nej |
+| Plats och mottagning av registreringsskylt                             | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nej |
+| Inleverans och inlagring av överföringsorderartikel                       | Ja | Nej |
+| Överför orderrad inleverans och inlagring                       | Ja | Nej |
 | Avbryt arbete (inkommande)                                            | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | <p>Ja men endast när alternativet <b>Avregistreringskvitto vid annullering av arbete</b> (på sidan <b>parametrar för lagerstyrning</b>) är avmarkerat.</p> |
-| Inköpsorder, bearbetning av produktinleverans                        | Ja | Nr |
+| Inköpsorder, bearbetning av produktinleverans                        | Ja | Nej |
 | Inköpsorder som tas emot med underleverans                      | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Ja, men bara genom att göra en annulleringsbegäran från navet |
 | Inköpsorder som tas emot med överleverans                       | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Ja  |
-| Ta emot med skapande av *Direktleveransarbete*                 | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
-| Ta emot med skapande av *Kvalitetsorder*                  | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
-| Ta emot med skapande av *Sampling av kvalitetsartikel*          | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
-| Ta emot med skapande av *Kvalitet på kvalitetskontroll*       | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
-| Ta emot med skapande av kvalitetsorder                            | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
-| Bearbetning av arbete – Dirigerad av *kluster för artikelinförsel*                 | Ja | Nr |
-| Bearbetning av arbete med *kort plockning*                               | Ja | Nr |
+| Ta emot med skapande av *Direktleveransarbete*                 | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nej |
+| Ta emot med skapande av *Kvalitetsorder*                  | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nej |
+| Ta emot med skapande av *Sampling av kvalitetsartikel*          | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nej |
+| Ta emot med skapande av *Kvalitet på kvalitetskontroll*       | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nej |
+| Ta emot med skapande av kvalitetsorder                            | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nej |
+| Bearbetning av arbete – Dirigerad av *kluster för artikelinförsel*                 | Ja | Nej |
+| Bearbetning av arbete med *kort plockning*                               | Ja | Nej |
 | Läs in registreringsskylt                                           | Ja | Ja |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Lageroperationer och hantering av undantag
@@ -261,20 +261,20 @@ I följande tabell visas vilka funktioner för lagerställeåtgärder och hanter
 | Byt lagerställe                                   | Ja | Ja                          |
 | Rörelse                                           | Ja | Ja                          |
 | Förflyttning efter registreringsskylt                               | Ja | Ja                          |
-| Överföring lagerställe                                 | Ja | Nr                           |
-| Skapa överföringsorder från distributionslagerappen           | Ja | Nr                           |
+| Överföring lagerställe                                 | Ja | Nej                           |
+| Skapa överföringsorder från distributionslagerappen           | Ja | Nej                           |
 | Justering (in/ut)                                | Ja | Ja, men inte för justeringsscenariot där lagerreservation måste tas bort med hjälp av inställningen **Ta bort reservationer** för lagerjusteringstyperna</p>                           |
-| Ändring av lagerstatus                            | Ja | Nr                           |
+| Ändring av lagerstatus                            | Ja | Nej                           |
 | Rullande inventering och inventering av avvikelsebearbetning | Ja | Ja                           |
 | Skriv ut etikett igen (utskrift av ID-nummer)             | Ja | Ja                          |
-| Skapa registreringsskylt                                | Ja | Nr                           |
-| Avbrott för registreringsskylt                                | Ja | Nr                           |
-| Packa till kapslade ID-nummer                                | Ja | Nr                           |
-| Förarens incheckning                                    | Ja | Nr                           |
-| Förarens utcheckning                                   | Ja | Nr                           |
+| Skapa registreringsskylt                                | Ja | Nej                           |
+| Avbrott för registreringsskylt                                | Ja | Nej                           |
+| Packa till kapslade ID-nummer                                | Ja | Nej                           |
+| Förarens incheckning                                    | Ja | Nej                           |
+| Förarens utcheckning                                   | Ja | Nej                           |
 | Ändra batchdispositionskod                      | Ja | Ja                          |
 | Visa lista över öppet arbete                             | Ja | Ja                          |
-| Konsolidera ID-nummer                         | Ja | Nr                           |
+| Konsolidera ID-nummer                         | Ja | Nej                           |
 | Bearbetning av minimi-/max- och zontröskeln| Ja <p>Rekommendationen ska inte inkludera samma platser som en del av frågeställningarna</p>| Ja                          |
 | Bearbetning av artikelplacering för lagerpåfyllnad                  | Ja  | Ja<p>Observera att inställningen måste göras på skalningsenhet.</p>                           |
 | Blockera och låsa upp arbete                             | Ja | Ja                          |
@@ -290,8 +290,8 @@ Följande tabell sammanfattar vilka produktionsscenarier för lagerstyrning som 
 |---------|-----|------------------------------|
 | Rapportera som färdigt gods och stuvat gods | Ja | Ja |
 | Plats för samprodukt och biprodukt | Ja | Ja |
-| <p>Alla andra lagerstyrningsprocesser som är relaterade till produktion, inklusive:</p><li>Frisläpp till distributionslager</li><li>Bearbetning av produktionspåfyllnader</li><li>Råmaterialhämtning</li><li>Kanban-plats</li><li>Kanban-plockning</li><li>Starta produktionsorder</li><li>Produktionskassation</li><li>Sista produktionspall</li><li>Registrera materialförbrukning</li><li>Töm kanban</li></ul> | Ja | Nr |
-| Lagerpåfyllnad av råmaterial | Nr | Nr |
+| <p>Alla andra lagerstyrningsprocesser som är relaterade till produktion, inklusive:</p><li>Frisläpp till distributionslager</li><li>Bearbetning av produktionspåfyllnader</li><li>Råmaterialhämtning</li><li>Kanban-plats</li><li>Kanban-plockning</li><li>Starta produktionsorder</li><li>Produktionskassation</li><li>Sista produktionspall</li><li>Registrera materialförbrukning</li><li>Töm kanban</li></ul> | Ja | Nej |
+| Lagerpåfyllnad av råmaterial | Nej | Nej |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Underhålla skalningsenheter för lagerställekörning
 

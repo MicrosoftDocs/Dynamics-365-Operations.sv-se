@@ -43,7 +43,7 @@ En normal TV-produkt kan till exempel ha följande attribut.
 |            | Kompositingångar         | 0–10                        | 2             |
 |            | Komponentingångar         | 0–10                        | 1             |
 | LCD        | 3D Ready                 | Ja eller Nej                   | Ja           |
-|            | 3D aktiverat               | Ja eller Nej                   | Nr            |
+|            | 3D aktiverat               | Ja eller Nej                   | Nej            |
 | Plasma     | Drifttemperatur från      | 32–110 grader              | 32            |
 |            | Drifttemperatur till        | 32–110 grader              | 100           |
 | Projektion | Projektionrörgaranti | 6, 12, eller 18 månader         | 12            |

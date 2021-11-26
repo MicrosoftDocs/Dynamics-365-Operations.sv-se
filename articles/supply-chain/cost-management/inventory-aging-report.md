@@ -42,7 +42,7 @@ Exempelsystemet innehåller följande inställning av lagringsdimensioner.
 | Namn      | Aktiva | Fysiskt lager | Ekonomiskt lager |
 |-----------|--------|--------------------|---------------------|
 | Webbplats      | Ja    | Ja                | Ja                 |
-| Lagerställe | Ja    | Ja                | Nr                  |
+| Lagerställe | Ja    | Ja                | Nej                  |
 
 ### <a name="inventory-model"></a>Lagermodell
 

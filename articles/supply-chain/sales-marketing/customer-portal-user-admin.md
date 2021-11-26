@@ -88,9 +88,9 @@ Följande tabell visar vilka försäljningsorder som användarna i respektive we
 
 | Försäljningsorder | Administratör | Kundrepresentant för kund&nbsp;X | Behöriga användare: Jane | Behöriga användare: Sam | Behöriga användare: May |
 |---|---|---|---|---|---|
-| Kund&nbsp;X-beställare:&nbsp;Jane | Ja | Ja | Ja | Nr | Nr |
-| Kund&nbsp;X-beställare:&nbsp;Sam | Ja | Ja | Nr | Ja | Nr |
-| Kund&nbsp;Y-beställare:&nbsp;May | Ja | Nr | Nr | Nr | Nr |
+| Kund&nbsp;X-beställare:&nbsp;Jane | Ja | Ja | Ja | Nej | Nej |
+| Kund&nbsp;X-beställare:&nbsp;Sam | Ja | Ja | Nej | Ja | Nej |
+| Kund&nbsp;Y-beställare:&nbsp;May | Ja | Nej | Nej | Nej | Nej |
 
 > [!NOTE]
 > Även om både Sam och Jane är kontakter som arbetar för kund X, kan de bara se de order som de själva har placerat och inget annat. Även om May kan ha en order i systemet, kan hon inte se ordningen i kundportalen eftersom hon är en obehörig användare. (Dessutom måste hon ha placerat ordern via en annan kanal än kundportalen.)

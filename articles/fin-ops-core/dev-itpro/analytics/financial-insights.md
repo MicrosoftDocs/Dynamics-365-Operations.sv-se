@@ -89,16 +89,16 @@ Jämförelsediagrammet nedan hjälper dig att skilja de två alternativen:
 
 | Funktion                                                   | Financial Reporting                                               | Ekonomisk analys |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
-| **Redigera standardrapporter**                                 | Ja                                                               | Nr |
-| **Skapa nya rapporter**                                   | Ja                                                               | Nr |
-| **Skriv ut rapporter**                                        | Ja                                                               | Nr |
+| **Redigera standardrapporter**                                 | Ja                                                               | Nej |
+| **Skapa nya rapporter**                                   | Ja                                                               | Nej |
+| **Skriv ut rapporter**                                        | Ja                                                               | Nej |
 | **Exportera till Excel**                                      | Ja                                                               | Begränsade exporter av rådata till Excel, inte en formaterad rapport |
-| **Stöd för rapportering av hierarki/organisationshierarki**   | Ja                                                               | Nr |
+| **Stöd för rapportering av hierarki/organisationshierarki**   | Ja                                                               | Nej |
 | **Rapport för redovisningsjournal**                             | Ja Begränsat till en enda leverantör, kund                              | Ja Leverantör, kund, leverantör/kundgrupper, adresser för leverantör/kundgrupp osv. |
 | **Rapporteringsvaluta**                                   | Ja Redovisningsvaluta och översätt till rapporteringsvaluta       | Nej Endast redovisningsvaluta |
 | **Säkerhet**                                             | Ja Ansluter sig till Finance och rapportträdsäkerhet | Begränsad Visa rapporter för alla företag (oavsett Finance and Operations-säkerhet) eller endast aktiva företag |
-| **Stöd för olika kontoplaner och räkenskapsår** | Ja                                                               | Nr |
-| **rapport för externa data**                              | Nr                                                                | Nr |
+| **Stöd för olika kontoplaner och räkenskapsår** | Ja                                                               | Nej |
+| **rapport för externa data**                              | Nej                                                                | Nej |
 | **Ge stöd till konsolideringar**                               | Ja                                                               | Begränsad Kan rapportera om flera företag men endast använda redovisningsvalutan |
 
 Följande bokslut är tillgängliga:
