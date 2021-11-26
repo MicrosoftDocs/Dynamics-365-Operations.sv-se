@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 08/10/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 90ff55540c153ef4f3ac07bf5316a3abb4755f2c
-ms.sourcegitcommit: caa41c076f731f1e02586bc129b9bc15a278d280
+ms.openlocfilehash: 3caf3f18718fd6bee20232a0200d421b9c9ef22c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7380150"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781208"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
 
@@ -77,7 +77,7 @@ Lös problemet genom att skapa en biljett till dataintegreringsteamet. Koppla n�
 
 Följande felmeddelande kan komma att visas när du försöker köra den första datasynkroniseringen:
 
-*Det gick inte att slutföra inledande datasynkronisering. Fel: del i dubbelriktad skrivning - registrering av plugin-program misslyckades: Det gick inte att skapa metadata för sökning för dubbelriktad skrivning.*
+*Det gick inte att slutföra inledande datasynkronisering. Fel: del i dubbelriktad skrivning – registrering av plugin-program misslyckades: Det gick inte att skapa metadata för sökning för dubbelriktad skrivning.*
 
 Du kan komma att få detta felmeddelande när du försöker ange statusen för en mappning som **Körs**: Korrigeringen beror på orsaken till felet:
 

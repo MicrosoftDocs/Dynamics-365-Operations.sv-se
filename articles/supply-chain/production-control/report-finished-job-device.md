@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 19c4e3c6ad682f3814d334f88c0653c4e7a51d23
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2fa82c721316fb21442e1cfc00ba00ff8cb2b750
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569297"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778241"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Rapportera som färdigt från jobbkortsenheten
 
@@ -218,7 +218,7 @@ Avancerade lagerprocesser kan använda dimensionen ID-nummer för att spåra lag
 
 Om du vill använda funktionerna som beskrivs i det här avsnittet måste du använda [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera följande funktioner (i den här ordningen):
 
-1. ID-nummer för rapportering som färdig har lagts till på jobbkortenheten
+1. ID-nummer för rapportering som slutförd har lagts till i jobbkortenheten (från och med Supply Chain Management.version 10.0.21 är denna funktion aktiverad som standard.)
 1. Aktivera automatisk generering av ID-nummer när rapportering slutförts i jobbkortenheten
 1. Skriv ut etikett från jobbkortenhet
 

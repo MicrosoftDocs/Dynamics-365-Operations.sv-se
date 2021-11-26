@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 2544591773bea7d54b4da4ac25ed3fed3f9e3594c5f791a0975c0349583b695c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 943eee819c08704212ceb5e02921c36e7f1032dc
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728637"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777849"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standardvyer för Supply Chain Management
 
@@ -47,15 +47,15 @@ I följande tabell beskrivs de sparade vyerna som är tillgängliga för modulen
 
 | Sida | Vynamn | Visa beskrivningen | Funktionsnamn |
 |---|---|---|---|
-| Lista med behållning | Ekonomi | Med denna förenklade vy kan du fokusera på ekonomisk information medan du hanterar lagerbehållning. | Sparade vyer för lagerhantering |
-| Lista med behållning | Kvalitetskontroll | Med denna förenklade vy kan du fokusera på kvalitetskontroll medan du hanterar lagerbehållning. | Sparade vyer för lagerhantering |
-| Lista med behållning | Mottagning | Med denna förenklade vy kan du fokusera på mottagningsåtgärder medan du hanterar lagerbehållning. | Sparade vyer för lagerhantering |
-| Lista med behållning | Transport | Med denna förenklade vy kan du fokusera på leveransåtgärderna medan du hanterar lagerbehållning. | Sparade vyer för lagerhantering |
-| Transaktioner | Förenklad | Med den här förenklade vyn kan du granska lagerstatusen utan att bli distrakterad av ekonomisk information och andra fält som används mindre ofta. | Sparade vyer för lagerhantering |
-| Överföringsorder | Transport | Med denna förenklade vy kan du fokusera på leveransåtgärderna medan du hanterar överföringsorder. | Sparade vyer för lagerhantering |
-| Överföringsorder | Mottagning | Med denna förenklade vy kan du fokusera på mottagningsåtgärder medan du hanterar överföringsorder. | Sparade vyer för lagerhantering |
-| Överföringsorder | Kvalitetskontroll | Med denna förenklade vy kan du fokusera på kvalitetskontroll medan du hanterar överföringsorder. | Sparade vyer för lagerhantering |
-| Överföringsorder | Ekonomi | Med denna förenklade vy kan du fokusera på ekonomisk information medan du hanterar överföringsorder. | Sparade vyer för lagerhantering |
+| Lista med behållning | Ekonomi | Med denna förenklade vy kan du fokusera på ekonomisk information medan du hanterar lagerbehållning. | Sparade vyer för Lagerhantering (aktiveras som standard med version 10.0.21.) |
+| Lista med behållning | Kvalitetskontroll | Med denna förenklade vy kan du fokusera på kvalitetskontroll medan du hanterar lagerbehållning. | Sparade vyer för Lagerhantering (aktiveras som standard med version 10.0.21.) |
+| Lista med behållning | Mottagning | Med denna förenklade vy kan du fokusera på mottagningsåtgärder medan du hanterar lagerbehållning. | Sparade vyer för Lagerhantering (aktiveras som standard med version 10.0.21.) |
+| Lista med behållning | Frakt | Med denna förenklade vy kan du fokusera på leveransåtgärderna medan du hanterar lagerbehållning. | Sparade vyer för Lagerhantering (aktiveras som standard med version 10.0.21.) |
+| Transaktioner | Förenklad | Med den här förenklade vyn kan du granska lagerstatusen utan att bli distrakterad av ekonomisk information och andra fält som används mindre ofta. | Sparade vyer för Lagerhantering (aktiveras som standard med version 10.0.21.) |
+| Överföringsorder | Frakt | Med denna förenklade vy kan du fokusera på leveransåtgärderna medan du hanterar överföringsorder. | Sparade vyer för Lagerhantering (aktiveras som standard med version 10.0.21.) |
+| Överföringsorder | Mottagning | Med denna förenklade vy kan du fokusera på mottagningsåtgärder medan du hanterar överföringsorder. | Sparade vyer för Lagerhantering (aktiveras som standard med version 10.0.21.) |
+| Överföringsorder | Kvalitetskontroll | Med denna förenklade vy kan du fokusera på kvalitetskontroll medan du hanterar överföringsorder. | Sparade vyer för Lagerhantering (aktiveras som standard med version 10.0.21.) |
+| Överföringsorder | Ekonomi | Med denna förenklade vy kan du fokusera på ekonomisk information medan du hanterar överföringsorder. | Sparade vyer för Lagerhantering (aktiveras som standard med version 10.0.21.) |
 
 ## <a name="saved-views-for-the-master-planning-module"></a>Sparade vyer för modulen Huvudplanering
 
@@ -83,11 +83,11 @@ I följande tabell beskrivs de sparade vyerna som är tillgängliga för modulen
 
 | Sida | Vynamn | Visa beskrivningen | Funktionsnamn |
 |---|---|---|---|
-| Lista med frisläppta produkter | Produktgenerering | En förenklad sidvy som endast innehåller fälten som oftast används vid skapande av produkter. | Sparade vyer för frisläppta produkter |
-| Information om frisläppt produkt | Produktgenerering | En förenklad sidvy som endast innehåller fälten som oftast används vid skapande av produkter. | Sparade vyer för frisläppta produkter |
-| Information om frisläppt produkt | Hantering av logistisk information | En förenklad sidvy som endast innehåller fälten som oftast används vid hantering av logistisk information för produkter. | Sparade vyer för frisläppta produkter |
-| Information om frisläppt produkt | Hantering av inköpsinformation | En förenklad sidvy som endast innehåller fälten som oftast används vid hantering av inköpsinformation för produkter. | Sparade vyer för frisläppta produkter |
-| Information om frisläppt produkt | Hantering av försäljningsinformation | En förenklad sidvy som endast innehåller fälten som oftast används vid hantering av försäljningsrelaterad information för produkter. | Sparade vyer för frisläppta produkter |
+| Lista med frisläppta produkter | Produktgenerering | En förenklad sidvy som endast innehåller fälten som oftast används vid skapande av produkter. | Sparade vyer för frisläppta produkter (aktiveras som standard från version 10.0.21.) |
+| Information om frisläppt produkt | Produktgenerering | En förenklad sidvy som endast innehåller fälten som oftast används vid skapande av produkter. | Sparade vyer för frisläppta produkter (aktiveras som standard från version 10.0.21.) |
+| Information om frisläppt produkt | Hantering av logistisk information | En förenklad sidvy som endast innehåller fälten som oftast används vid hantering av logistisk information för produkter. | Sparade vyer för frisläppta produkter (aktiveras som standard från version 10.0.21.) |
+| Information om frisläppt produkt | Hantering av inköpsinformation | En förenklad sidvy som endast innehåller fälten som oftast används vid hantering av inköpsinformation för produkter. | Sparade vyer för frisläppta produkter (aktiveras som standard från version 10.0.21.) |
+| Information om frisläppt produkt | Hantering av försäljningsinformation | En förenklad sidvy som endast innehåller fälten som oftast används vid hantering av försäljningsrelaterad information för produkter. | Sparade vyer för frisläppta produkter (aktiveras som standard från version 10.0.21.) |
 
 ## <a name="saved-views-for-the-production-control-module"></a>Sparade vyer för modulen Produktionskontroll
 
@@ -95,10 +95,10 @@ I följande tabell beskrivs de sparade vyerna som är tillgängliga för modulen
 
 | Sida | Vynamn | Visa beskrivningen | Funktionsnamn |
 |---|---|---|---|
-| Strukturlistesidan för produktionsorder | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparade vyer för produktionskontroll |
-| Sidan Produktionsorderdetaljer | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparade vyer för produktionskontroll |
-| Plocklistesida för tillverkningsorder | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparade vyer för produktionskontroll |
-| Listsidan för produktionsorder | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparade vyer för produktionskontroll |
+| Strukturlistesidan för produktionsorder | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparade vyer för produktstyrning (aktiveras som standard från version 10.0.21.) |
+| Sidan Produktionsorderdetaljer | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparade vyer för produktstyrning (aktiveras som standard från version 10.0.21.) |
+| Plocklistesida för tillverkningsorder | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparade vyer för produktstyrning (aktiveras som standard från version 10.0.21.) |
+| Listsidan för produktionsorder | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparade vyer för produktstyrning (aktiveras som standard från version 10.0.21.) |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Sparade vyer för modulen Försäljning och marknadsföring
 

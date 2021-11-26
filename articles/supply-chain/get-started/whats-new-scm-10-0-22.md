@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: a4f9e5a4a318ceaa45b6919e394e1ff335bfb193
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: a795f88aed78582ad4a2faa90ab1c2529017850f
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678845"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778167"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management (10.0.22 november 2021)
 
@@ -41,7 +41,6 @@ Följande tabeller listar de funktionsförbättringar som ingår i denna version
 
 | Modul | Funktionsnamn i funktionshantering | Mer information |
 |---|---|---|
-| Kostnadshantering | Skapa relaterade verifikationer för omvärderingar av standardkostnadsavrundningar | <p>När en ekonomisk lagerbokföring (till exempel en försäljningsorderfaktura eller lagertransaktion) görs, skapar den här funktionen en separat verifikation för alla relaterade omvärderingar av standardkostnadsavrundningar och kopplar den till den ekonomiska bokföringsverifikationen som en relaterad verifikation.</p><p>Utan den här funktionen registrerar systemet omvärderingar av standardkostnadsavrundningar på samma verifikationsbokföring. Detta beteende kan ibland skapa motstridig datuminformation eftersom omvärderingarna använder sessionen eller systemdatumet, medan ekonomiska bokföringar använder bokföringsdatumet.</p> |
 | Distribuerad hybridtopologi | *(Ingen funktionshantering krävs.)* | <p>Den här versionen utökar de utgående lastplaneringsfunktionerna för lagerstyrningsarbetsbelastningen för moln- och kantskalningsenheter.</p><p>För mer information, se [Arbetsbelastningar för hantering av distributionslager för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
 | Konstruktionsändringshantering | Variantgenerering för tekniska produkter | <p>Med hjälp av den här funktionen kan du skapa flera varianter för en konstruktionsprodukt baserat på dess färg, storlek, utförande eller konfigurationsdimensioner.</p><p>Mer information finns i [Generera varianter för konstruktionsprodukter](../engineering-change-management/engineering-variants.md).</p> |
 | Hantering av lager och lagerstyrning | Integrering av lagersynlighet med reservationsförskjutning | <p>Den här funktionen kan bara aktiveras efter att funktionen *Integrering av Lagersynlighet* har aktiverats. Här finns funktioner för att motboka reservationer som görs i Lagersynlighet.</p><p>Mer information finns i [Reservationer för Lagersynlighet](../inventory/inventory-visibility-reservations.md).</p> |

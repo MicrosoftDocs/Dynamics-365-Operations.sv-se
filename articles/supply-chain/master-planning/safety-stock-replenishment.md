@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-oldolg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 28f902c589cd80f1c34dc2758232548309db9aca
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 937341e17688959e5721153c61af904a88608b17
+ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474638"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7790948"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Säkerhet för artiklar i lageruppfyllelse
 
@@ -189,5 +189,9 @@ Fullgörande av transaktionen för säkerhetslagret aktier prioriteras ned om sy
 Under huvudplaneringens täckningfas prioriteras lagerpåfyllnad av säkerhetslager inte längre ned. Lagerbehållning kan användas före alla andra typer av efterfrågan. Under fördröjningsberäkningen läggs ny logik till som överskrider fördröjda försäljningsrader, strukturlisteradbehov och alla andra behovstyper, för att fastställa om de kan levereras i tid, förutsatt att säkerhetslagret används. Om systemet identifierar att det kan minimera fördröjningar genom att använda säkerhetslagret, ersätter sedan försäljningsrader eller strukturlisterader den ursprungliga täckningen med säkerhetslagret och systemet utlöser lagerpåfyllnad för säkerhetslagret i stället.
 
 Om planen eller artikeln inte har ställts in för försenad beräkning har säkerhetslagerbegränsningen samma prioritet som övrig efterfrågan. Detta innebär att en reserv av lagerbehållning och annat tillgängligt lager före andra typer av efterfrågan.
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+- [Använd säkerhetslagerjournalen för att uppdatera minimumdisponering för artiklar](safety-stock-journal.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 259ed49b9bdfb70ea357a7d20ea7ae8b141978cd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0382e34664f20389c43e8dec4437f0078fa1f60a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576962"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777750"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurera jobbkort för enheter
 
@@ -34,19 +34,19 @@ Några av de inställningar som beskrivs i det här avsnittet måste vara aktive
 
 Om du vill göra den här funktionen tillgänglig aktiverar du följande funktioner i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i ordning):
 
-1. ID-nummer för rapportering som färdig har lagts till på jobbkortenheten
+1. ID-nummer för rapportering som slutförd har lagts till i jobbkortenheten (från och med Supply Chain Management.version 10.0.21 är denna funktion aktiverad som standard.)
 1. Aktivera automatisk generering av ID-nummer när rapportering slutförts i jobbkortenheten
 
 ### <a name="print-label"></a>Skriv ut etikett
 
 Om du vill göra den här funktionen tillgänglig aktiverar du följande funktioner i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i ordning):
 
-1. ID-nummer för rapportering som färdig har lagts till på jobbkortenheten
+1. ID-nummer för rapportering som slutförd har lagts till i jobbkortenheten (från och med Supply Chain Management.version 10.0.21 är denna funktion aktiverad som standard.)
 1. Skriv ut etikett från jobbkortenhet
 
 ### <a name="allow-locking-of-touch-screen"></a>Tillåt låsning av pekskärm
 
-Om du vill göra den här funktionen tillgänglig aktiverar du följande funktioner i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Om du vill använda denna funktion ser du till att följande funktion är aktiverad i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Funktion för att låsa jobbkortsenhet och jobbkortsterminal för att anpassas till språk
 

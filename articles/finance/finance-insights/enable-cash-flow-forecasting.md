@@ -2,7 +2,7 @@
 title: Aktivera kassaflödesprognoser
 description: I det här ämnet beskrivs hur du aktiverar funktionen för kassaflödesprognoser i Finance-insikter.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,45 +15,37 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b5e54772b132b4098df8259e954a484a0838ee38
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: d968f28126cf205a487d84301aa28f1251713386
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386721"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752698"
 ---
 # <a name="enable-cash-flow-forecasting"></a>Aktivera kassaflödesprognoser
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-I det här ämnet beskrivs hur du aktiverar funktionen för kassaflödesprognoser i Finance-insikter.
+I detta ämne beskrivs hur du aktiverar funktionen för kassaflödesprognoser i Finance Insights.
 
 > [!NOTE]
 > Om du vill använda betalningsförutsägelser i kassaflödet måste du ställa in funktionen Prediktioner av kundbetalning enligt beskrivningen i [Aktivera prediktioner av kundbetalning](enable-cust-paymnt-prediction.md).
-
-1. Använd information från miljösidan i Microsoft Dynamics Lifecycle Services (LCS) för att ansluta till den primära instansen av Azure SQL för den miljön. Kör följande Transact-SQL-kommando (T-SQL) för att aktivera förhandsversioner för sandbox-miljön. (Du kanske måste aktivera åtkomst för din IP-adress i LCS innan du kan fjärransluta till Application Object Server \[AOS\].)
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)`
-
-    > [!NOTE]
-    > Hoppa över det här steget om du använder version 10.0.20 eller senare, eller om du använder en Service Fabric-distribution. Teamet för ekonomiinsikter ska redan ha aktiverat förhandsversionen för dig. Om funktionen inte visas på arbetsytan **Funktionshantering**, eller om det uppstår problem när du försöker att aktivera den, kontaktar du <fiap@microsoft.com>.
   
-2. Öppna arbetsytan **Funktionshantering** och gör så här:
+1. Öppna arbetsytan **Funktionshantering** och gör så här:
 
     1. Välj **Sök efter uppdateringar**.
-    2. Aktivera följande funktioner:
+    2. På fliken **Alla** söker du efter **Kassaflödesprognoser**. Om du inte hittar funktionen söker du efter **(förhandsversion) Kassaflödesprognoser**. 
+    3. Aktivera funktionen.
 
-        - Ny rutnätskontroll
-        - Gruppering i rutnät (förhandsversion) 
-        - Kundbetalningsförutsägelser (förhandsversion)
-        - Kassaflödesprognoser (förhandsversion)
-
-3. Gå till **Kassa- och bankhantering \> Kassaflödesprognosinställningar** och lägg till likviditetskontona som ska inkluderas i prognoserna.
+2. Gå till **Kassa- och bankhantering \> Kassaflödesprognosinställningar** och lägg till likviditetskontona som ska inkluderas i prognoserna. Ställ också in likviditetskontot för betalningar på flikarna **Kundreskontra** och **Leverantörsreskontra**. Se till att beräkna om kassaflödesprognosen.
 
     > [!NOTE]
     > Om likviditetskonton inte har konfigurerats kan kassaflödet inte genereras.
+    >
+    > Mer information om hur du ställer in prognoser för kassaflöden finns i [Kassaflödesprognoser](../cash-bank-management/cash-flow-forecasting.md).
 
-4. Gå till **Kassa- och bankhantering \> Konfigurera \> Finance-insikter (förhandsversion) \> Kassaflödesprognoser (förhandsversion)** och gör så här:
+3. Gå till **Kassa- och bankhantering \> Konfigurera \> Finance-insikter (förhandsversion) \> Kassaflödesprognoser (förhandsversion)** och gör så här:
 
     1. På fliken **Kassaflödesprognos** väljer du **Aktivera funktion**.
     2. Välj **Skapa förutsägelsemodell**.

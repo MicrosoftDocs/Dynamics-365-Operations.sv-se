@@ -1,8 +1,8 @@
 ---
 title: Personal-app i Teams
 description: Detta avsnitt introducerar Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams.
-author: andreabichsel
-ms.date: 02/23/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f3b717cf2fb8663ed8e4981981d563672c9e645c4f9b592ee1896cfef4236396
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e44b9fa40971710d8316c055c4d2ac51f9ab266
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772727"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771517"
 ---
 # <a name="human-resources-app-in-teams"></a>Personal-app i Teams
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Med hjälp av Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan personalen snabbt begära ledighet och visa information om sitt ledighetssaldo i Microsoft Teams. Personalen kan interagera med en robot för att begära information. Fliken **Ledighet** visar mer detaljerad information. Dessutom kan de skicka personuppgifter om kommande ledighet i team och chattar utanför Personal-appen.
+Med hjälp av Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan personalen snabbt och enkelt begära ledighet och visa information om sitt ledighetssaldo i Microsoft Teams. Personalen kan interagera med en robot för att begära information. Fliken **Ledighet** visar mer detaljerad information. Dessutom kan de skicka personuppgifter om kommande ledighet i team och chattar utanför Personal-appen.
 
 ![Personalteam efterlämnar app-robot.](./media/hr-teams-leave-app-bot.png)
 
@@ -106,7 +106,7 @@ Följande arbetsobjekt planeras för kommande versioner:
 | --- | --- |
 | Saldot är felaktigt när ledighet skickas in för ett framtida datum. | Prognosticering är ännu ej tillgänglig. Saldot visas för det aktuella datumet. |
 | Det går inte att avbryta en **Granskas**-begäran. | Den här funktionen stöds för närvarande inte, men kommer att läggas till i en framtida version. |
-| Information om saldo beräknas från och med idag. | Systemet visar för närvarande inte saldon per periodiseringsperioden, även om det har konfigurerats bland parametrarna för Tjänstledighet. |
+| Information om saldo beräknas från och med idag. | Systemet visar för närvarande inte saldon per periodiseringsperiod, även om detta har konfigurerats på parametersidan för **Tjänstledighet**. |
 
 ## <a name="troubleshooting"></a>Felsökning
 
@@ -130,15 +130,15 @@ Om en användare får ett fel när han eller hon försöker godkänna tjänstled
 
 2. Se till att användarna är inloggade på fliken **Chattar** med samma autentiseringsuppgifter som när de godkänner tjänstledighetsansökningar. Använd meddelandena "logga ut" och sedan "logga in" för att logga in med rätt autentiseringsuppgifter.
 
-3. Om problemet kvarstår kontrollerar du statusen för batchjobbet i Business Events-systemet som systemadministratör. Om denna befinner sig i en väntande eller en utförande fast försöker du igen om några minuter. Om statusen inte ändras skapar du en supportbegäran så att vårt team kan hjälpa till att lösa problemet.
+3. Om problemet kvarstår kontrollerar du statusen för batchjobbet i **Business Events-systemet** som systemadministratör. Om denna befinner sig i **Väntande** eller **Utförande** fas ber vi dig att återkomma om några minuter. Om statusen inte ändras skapar du en supportbegäran så att vårt team kan hjälpa till att lösa problemet.
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
 
 ### <a name="microsoft-language-understanding-intelligent-service-luis"></a>Microsoft Language Understanding Intelligent Service (LUIS)
 
-Med Dynamics 365 Human Resources-roboten i Microsoft Teams analyseras användarens textinmatningar i syfte att förstå den underliggande frågeställningen eller avsikten. Användarens indata, t.ex. "Sök konto Contoso", vidarebefordras till en av Microsofts kognitiva tjänster som kallas LUIS (Language Understanding Intelligent Service). Läs mer om LUIS [här](https://www.luis.ai/). LUIS-tjänsten disambiguerar eller förstår syftet med användarindata (i det här fallet, avsikten att hitta information) och målentiteten (i det här fallet är den avsedda entiteten ett konto med namnet Contoso). Denna information överförs sedan till [Azure-robotramverk](https://azure.microsoft.com/services/bot-service/)  som samverkar med data från Dynamics 365 Human Resources och hämtar den önskade informationen för användarfrågan.
+Med Dynamics 365 Human Resources-roboten i Microsoft Teams analyseras användarens textinmatningar i syfte att förstå den underliggande frågeställningen eller avsikten. Användarens indata, t.ex. "Sök konto Contoso", vidarebefordras till en av Microsofts kognitiva tjänster som kallas LUIS (Language Understanding Intelligent Service). Läs mer om LUIS [här](https://www.luis.ai/). LUIS-tjänsten disambiguerar eller förstår syftet med användarindata (i det här fallet är avsikten att hitta information) och målentiteten (i det här fallet är den avsedda entiteten ett konto med namnet Contoso). Denna information överförs sedan till Microsofts [Azure Bot Framework](https://azure.microsoft.com/services/bot-service/)  som samverkar med data från Dynamics 365 Human Resources och hämtar den önskade informationen för användarfrågan.
 
-Genom att installera och tillåta åtkomst till robotprogrammet godkänner du att LUIS-tjänsten och Azure-robotramverket kan bearbeta avsikten bakom inmatningen, vilket leder till en förbättrad användarupplevelse i konversationen. LUIS-tjänsten och Azure-robotramverket kan ha varierande nivåer av kompatibilitet jämfört med Dynamics 365 Human Resources. LUIS-tjänsten har endast åtkomst till användarfrågeställningarna och är inte utformad för att vara ansluten till användarens Dynamics 365 Human Resources-data eller -konto, och en användare av Dynamics 365 Human Resources-roboten kan frivilligt ange en frågeställning som innehåller kunddata, personliga data eller andra data, och detta frågeinnehåll kan komma att skickas till LUIS-tjänsten och Azure-robotramverket. 
+Genom att installera och tillåta åtkomst till robotprogrammet godkänner du att LUIS-tjänsten och Azure Bot Framework kan bearbeta avsikten bakom inmatningen, vilket leder till en förbättrad användarupplevelse i konversationen. LUIS-tjänsten och Azure Bot Framework kan ha varierande nivåer av kompatibilitet jämfört med Dynamics 365 Human Resources. Även om LUIS-tjänsten endast har åtkomst till användarfrågorna och inte utformats för att vara ansluten till användarens Dynamics 365 Human Resources-data eller -konto, kan en en användare av Dynamics 365 Human Resources-roboten frivilligt ange en fråga som innehåller kunddata, personliga data eller andra data, och detta frågeinnehåll kan komma att skickas till LUIS-tjänsten och Azure Bot Framework. 
 
 Innehållet i användarens frågeställningar och meddelanden behålls i LUIS-systemet under högst 30 dagar, är krypterat i vila och används inte för utbildning eller serviceförbättring. Läs mer om kognitiva tjänster [här](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
 
@@ -146,9 +146,9 @@ Om du vill hantera administrationsinställningar för appar i Microsoft Teams g�
 
 ### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams, Azure Event Grid och Azure Cosmos DB
 
-När du använder meddelandefunktionen för Dynamics 365 Human Resources-appen i Microsoft Teams kan vissa kunddata flöda utanför det geografiska område där medarbetarens Personal har distribuerats.
+När du använder Dynamics 365 Human Resources-appen i Microsoft Teams  kan vissa kunddata komma flöda utanför det geografiska område där din klientorganisations personaltjänst har distribuerats.
 
-Dynamics 365 Human Resources överför medarbetarens information om tjänstledighet och arbetsflödes uppgifter till Microsoft Azure Event Grid och Microsoft Teams . Dessa data kan lagras i Microsoft Azure Event Grid i upp till 24 timmar och bearbetas i USA, krypteras i transit och vila och används inte av Microsoft eller dess under processer för utbildning eller serviceförbättringar. Mer information om var dina data lagras i Teams finns i: [plats för data i Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
+Dynamics 365 Human Resources överför medarbetarens begäran om tjänstledighet och arbetsflödesuppgifter till Microsoft Azure Event Grid och Microsoft Teams . Dessa data kan lagras i Microsoft Azure Event Grid i upp till 24 timmar och bearbetas i USA, krypteras i transit och vila och används inte av Microsoft eller dess under processer för utbildning eller serviceförbättringar. Mer information om var dina data lagras i Teams finns i: [plats för data i Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
 
 Medan du samtalar med chattroboten i Personal-appen kan konversationsinnehållet lagras i Azure Cosmos DB och skickas till Microsoft Teams. Denna data kan lagras i Azure i Cosmos DB i upp till 24 timmar och kan bearbetas utanför det geografiska område där klientorganisationens Personal har distribuerats, krypteras i transit och vila och används inte av Microsoft eller dess under processer för utbildning eller serviceförbättringar. Mer information om var dina data lagras i Teams finns i: [plats för data i Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
  

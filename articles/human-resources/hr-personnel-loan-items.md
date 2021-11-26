@@ -1,8 +1,8 @@
 ---
 title: Hantera artiklar som lånas ut till medarbetare
 description: Låneartiklar är poster som gör det enklare för chefer att spåra fysiska artiklar som företaget lånar ut till arbetare.
-author: andreabichsel
-ms.date: 06/20/2017
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 3581
 ms.assetid: b14bdddb-f10e-4619-9f91-8c88439da862
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 2399cd1c00f2c1f301b2d514c20cca00017465c90436cd01d44eb584f1b66ce6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff9f9404ebbcbc7359ee9927d7a92e31808a478a
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760596"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728769"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>Hantera artiklar som lånas ut till medarbetare
 
@@ -28,7 +28,8 @@ ms.locfileid: "6760596"
 
 Låneartiklar är poster som gör det enklare för chefer att spåra fysiska artiklar som företaget lånar ut till arbetare. 
 
-Följande exempel anger exempel på artiklar som ett företag kan låna till anställda:
+Här följer några exempel på artiklar som ett företag kan låna till anställda:
+
 -   Mobiltelefoner
 -   Bilar
 -   Datorutrustning
@@ -37,7 +38,7 @@ Varje fysisk artikel måste ha en motsvarande låneartikel. Varje låneartikelpo
 
 När en artikel lånas registrerar du datumet då artikeln lånades samt planerat återlämningsdatum. När artikeln lämnas tillbaka anger du det faktiska återlämningsdatumet.
 
-Medarbetare kan se posterna för de artiklar som har lånats ut till dem via arbetsytan Självbetjäning för medarbetare. De kan också redigera befintliga poster eller ange nya låneartiklar, om de har fått ytterligare fysiska artiklar.  Arbetsflödet kan ställas in att dirigera vägändringar till nya eller befintliga låneartiklar via en godkännandeprocess. 
+Medarbetare kan använda arbetsytan **Självbetjäning för medarbetare** för att visa posterna för de artiklar som har lånats ut till dem. De kan också redigera befintliga poster eller ange nya låneartiklar om de har fått ytterligare fysiska artiklar. Ett arbetsflöde kan ställas in i syfte att skapa flödesändringar till nya eller befintliga låneartiklar via en godkännandeprocess. 
 
 Chefer kan visa lånade artiklar för deras underställda. De kan också beviljas behörighet att lägga till nya låneartiklar åt deras medarbetare.
 

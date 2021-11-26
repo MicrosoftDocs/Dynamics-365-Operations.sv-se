@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: c2d7f140c0199b4b81a7b42220d5800d427be680
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577850"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778069"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhantering av inkommande laster för inköpsorder
 
@@ -48,11 +48,11 @@ Följande bild visar det typiska flödet för hantering av inkommande laster som
 
 1. **Lasten inkommer till lagret och arbetare registrerar kvantiteter.**
 
-    När en lastbilslast inkommer till den mottagande dockningsplatsen, registrerar lagerarbetarna lastens kvantiteter. När modulen **lagerstyrning** gör arbetare registreringen med hjälp av mobila enheter. Mer information finns i avsnittet [produktinleverans mot inköpsorder - registrering](../procurement/product-receipt-against-purchase-orders.md#registration) och [registrera artikelkvantiteter som inkommer i en inkommande last](#register-item-quantities-arriving).
+    När en lastbilslast inkommer till den mottagande dockningsplatsen, registrerar lagerarbetarna lastens kvantiteter. När modulen **lagerstyrning** gör arbetare registreringen med hjälp av mobila enheter. Mer information finns i avsnittet [produktinleverans mot inköpsorder – registrering](../procurement/product-receipt-against-purchase-orders.md#registration) och [registrera artikelkvantiteter som inkommer i en inkommande last](#register-item-quantities-arriving).
 
 1. **Registrerade lastkvantiteter bokförs mot inköpsorder.**
 
-    När lastkvantiteterna har registrerats som införda, måste dessa kvantiteter vara produktinleveranser – bokföras i företagets lagerredovisning för att registrera den fysiska lagerökningen. Mer information finns i [Produktinleverans mot inköpsorder - produktinleverans](../procurement/product-receipt-against-purchase-orders.md#product-receipt) och [bokföra registrerade produktkvantiteter mot inköpsorder](#post-registered-quantities).
+    När lastkvantiteterna har registrerats som införda, måste dessa kvantiteter vara produktinleveranser – bokföras i företagets lagerredovisning för att registrera den fysiska lagerökningen. Mer information finns i [Produktinleverans mot inköpsorder – produktinleverans](../procurement/product-receipt-against-purchase-orders.md#product-receipt) och [bokföra registrerade produktkvantiteter mot inköpsorder](#post-registered-quantities).
 
 ## <a name="register-item-quantities-that-arrive-on-an-inbound-load"></a><a name="register-item-quantities-arriving"></a>Registrera artikelkvantiteter som ankommer på en inkommande last
 
@@ -267,7 +267,7 @@ Dessa scenarier kräver funktionen _flera produktinleveranser per last_ och dess
 
 1. Öppna arbetsytan **Funktionshantering**. (Mer information om hur du hittar och använder den här arbetsytan finns [Översikt över funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 
-1. Aktivera funktionen _Associera lagertransaktioner för inköpsorder med last_ som visas på följande sätt:
+1. Se till att funktionen _Associera lagertransaktioner för inköpsorder med beläggning_ är aktiverad. Från och med version 10.0.21 av Supply Chain Management är den här funktionen obligatorisk, varför den är aktiverad som standard och inte kan stängas av igen. Funktionen anges emellertid fortfarande i [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) på följande sätt:
 
     - **Modul:** _Lagerstyrning_
     - **Funktionsnamn:** _Associera lagertransaktioner för inköpsorder med last_
@@ -363,7 +363,7 @@ Uppgiften för lastmottagning har nu slutförts och inleveransansvarig kan gå v
     - Transaktionen som har en inleverans _registrerad_ status representerar den registrerings kvantitet på _9_ som kördes mot en specifik last med hjälp av den mobila enheten. **Last-ID** är kopplat till den aktuella transaktionen.
     - Transaktionen som har en inleverans i _beställd_ status representerar den återstående ej registrerade kvantitet orderraden _1_.
 
-#### <a name="product-receiptpost-the-registered-load-quantities-against-purchase-orders"></a>Produktinleverans - post de registrerade lastkvantiteterna mot inköpsorder
+#### <a name="product-receiptpost-the-registered-load-quantities-against-purchase-orders"></a>Produktinleverans – post de registrerade lastkvantiteterna mot inköpsorder
 
 I den här proceduren kommer du att bli produktinleverans – bokför det lager som du har registrerat för en last. Som ett resultat av detta kommer det mottagna lagret och dess relaterade kostnader att läggas till i företagets redovisning.
 

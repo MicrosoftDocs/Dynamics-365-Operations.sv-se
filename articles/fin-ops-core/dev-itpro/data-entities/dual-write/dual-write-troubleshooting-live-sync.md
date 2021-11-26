@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 08/19/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 73a226d10c951179fd9f3bc2aed4a70efcc7f020
-ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
+ms.openlocfilehash: 69667f8b64c048f5957168d1af21a6c858bc0bad
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466254"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782589"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Felsöka problem med direkt synkronisering
 
@@ -83,7 +83,7 @@ Följande felmeddelande kan visas när du skapar data i en Finance and Operation
 
 Så här ser felet ut i Customer Engagement-appen:
 
-> Ett oväntat fel har inträffat från ISV-kod. (ErrorType = ClientError) Ett oväntat fel uppstod från ISV-koden. Oväntat undantag från plugin-programmet (kör): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: misslyckades att bearbeta ett entitetskonto - (Ett anslutningsförsök misslyckades eftersom den anslutna parten inte svarade ordentligt efter en tidsperiod, eller upprättad anslutning misslyckades eftersom ansluten värd inte har svarat.
+> Ett oväntat fel har inträffat från ISV-kod. (ErrorType = ClientError) Ett oväntat fel uppstod från ISV-koden. Oväntat undantag från plugin-programmet (kör): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: misslyckades att bearbeta ett entitetskonto – (Ett anslutningsförsök misslyckades eftersom den anslutna parten inte svarade ordentligt efter en tidsperiod, eller upprättad anslutning misslyckades eftersom ansluten värd inte har svarat.
 
 Det här felet uppstår om Dataverse-miljön återställs felaktigt när du försöker skapa data i Finance and Operations-appen.
 
@@ -288,7 +288,7 @@ Du rättar till problemet genom att installera orkestreringsversion (2.2.2.60) f
 
 Följande felmeddelande kan visas när du försöker lägga till en kund i en Dataverse:
 
-*"RecordError0":"Skrivning misslyckades för entitetskunder V3 med okänt undantag - part-posten hittades inte för parttypen Organisation"} .*
+*"RecordError0":"Skrivning misslyckades för entitetskunder V3 med okänt undantag – part-posten hittades inte för parttypen Organisation"} .*
 
 När en kund skapas i Dataverse genereras ett nytt partsnummer. Felmeddelandet visas när kundposten, tillsammans med parten, synkroniseras med Finance and Operations-appar, men det redan finns en kundpost som har ett annat partsnummer.
 

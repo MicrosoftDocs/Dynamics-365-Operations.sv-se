@@ -2,7 +2,7 @@
 title: Kundbetalningsförutsägelser
 description: I det här ämnet beskrivs funktioner för betalningsförutsägelse som kan hjälpa dig att bättre förstå en kunds typiska betalningspraxis. Den här funktionen kan också hjälpa till att identifiera omständigheter som gör att du kan starta inkassoprocesser tidigare än vad du annars skulle kunna starta.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 21a773b37020aeff969469e29be68e7f7ef44d93
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 300c835c835a5c653b75b9e151462337dfbe49a5
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386671"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752747"
 ---
 # <a name="customer-payment-predictions"></a>Kundbetalningsförutsägelser
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 I det här ämnet beskrivs funktioner för betalningsförutsägelse som kan hjälpa dig att bättre förstå en kunds typiska betalningspraxis. Den här funktionen kan också hjälpa till att identifiera omständigheter som gör att du kan starta inkassoprocesser tidigare än vad du annars skulle kunna starta.
 
@@ -67,11 +68,5 @@ I många företag har inkassoprocessen varit en reaktiv aktivitet. Det innebär 
 ## <a name="methodology"></a>Metod
 
 Tidigare har det vanligtvis varit svårt att utveckla och distribuera en AI-lösning (artificiell intelligens). Processen krävde ett team med dataforskare, ämnesexperter (SME:er) och tekniker som arbetar under en längre tid för att formulera, utveckla, distribuera och underhålla en användbar AI-lösning. Prediktioner av kundbetalning gör det enkelt att distribuera och använda en AI-lösning i Microsoft Dynamics 365 Finance. Microsoft förförpackar AI-lösningar som byggts ovanpå Microsoft AI Builder. Därför kan användarna distribuera AI-lösningen med en enda musklickning för att dra nytta av fördelarna med intelligenta förutsägelser. Om du inte är nöjd med noggrannheten i förutsägelser kan en priviligierad användare (återigen med ett enda musklick) gå in i AI Builder-tilläggsupplevelsen och sedan markera eller avmarkera fälten som används för att generera förutsägelser. När du är klar kan du "träna" modellen och publicera ändringarna. Den nyligen tränade modellen hämtas automatiskt för att generera förutsägelser i Dynamics 365 Finance.
-
-## <a name="release-details"></a>Frisläppningsinformation
-
-Den allmänt tillgängliga förhandsversionen av Finance-insikter finns tillgänglig för distribution i USA, Europa och Storbritannien. Microsoft lägger stegvis till support för ytterligare regioner.
-
-Funktionerna för allmänt tillgänglig förhandsversion kan och ska bara aktiveras i nivå-2-sandbox-miljöer. Konfiguration och AI-modeller som skapas i en sandbox-miljö kanske inte migreras till produktionsmiljön. Mer information finns i [Tilläggsavtal för Microsoft Dynamics 365 förhandsversioner](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

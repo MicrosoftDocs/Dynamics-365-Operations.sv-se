@@ -1,26 +1,26 @@
 ---
 title: Ställ in komponenter för ett jobb
 description: Det här avsnittet beskriver begreppsmässiga element som ett projekt kan innehålla och ger exempel på hur du kan använda dessa objekt inom din organisation.
-author: andreabichsel
-ms.date: 06/24/2021
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
 audience: Application User
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 55f3edb53236734045e94ddd71461c739d3b5a8e0a2ac07a804dc2dfafabda57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b3d56b3d19bd671d0015e87eefdf8ae62f4cee0
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754786"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731575"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Ställ in komponenter för ett jobb
 
@@ -60,7 +60,7 @@ Jobbkopplingar beskriver funktionella kategorier på hög nivå och relaterar up
 Du underhåller jobbtyper med hjälp av sidan **Jobbfunktioner**. På sidan **Jobbfunktioner** anger du en identifieringskod och en kort beskrivning för jobbfunktionen.
 
 ## <a name="compensation"></a>Kompensation
-Om du vill tilldela en fast kompensationsplan till en medarbetare med en viss befattning i ett visst jobb måste du ställa in kompensationsnivåer för jobbet. Kompensationsnivån används när minimi-, mittpunkts- och maximibelopp ställs in i en kompensationsstruktur (ett kompensationsrutnät). När en fast kompensationsplan skapas väljs kompensationsstrukturen. Kompensationsstrukturen omfattar också kompensationsnivån. När du väljer en fast kompensationsplan för en medarbetare kommer de kompensationsnivåer som går att välja att baseras på det jobb som medarbetarens befattning är associerad med. Mer information om hur du konfigurerar kompensation finns i [Kompensationsplaner](hr-compensation-overview.md).
+Om du vill tilldela en fast kompensationsplan till en medarbetare med en viss befattning i ett visst jobb måste du ställa in kompensationsnivåer för jobbet. **Kompensationsnivån** används när minimi-, medel- och maximibelopp ställs in i en kompensationsstruktur (ett kompensationsrutnät). När en fast kompensationsplan skapas väljs kompensationsstrukturen. Kompensationsstrukturen omfattar också kompensationsnivån. När du väljer en fast kompensationsplan för en medarbetare kommer de kompensationsnivåer som går att välja att baseras på det jobb som medarbetarens befattning är associerad med. Mer information om hur du konfigurerar kompensation finns i [Kompensationsplaner](hr-compensation-overview.md).
 
 ## <a name="job-skills"></a>Jobbkompetenser
 I jobbkompetenserna beskrivs de färdigheter som krävs för att utföra ett jobb. En färdighetsnivå måste associeras med respektive jobbfärdighet. Färdighetsnivåerna definieras av användaren. De anger vilken kunskapsnivå eller effektivitet som krävs för färdigheten. Företag kan till exempel ställa in numeriska nivåer, till exempel 1 till 5, där **1** anger en nybörjare och **5** anger en expert. Företag kan också ställa in nivåer som bär etiketterna **Nybörjare**, **Erfaren** eller **Expert**. När färdighetsnivån har ställts in kan du också ange hur viktig färdigheten är. Om till exempel en revisor avkrävs omfattande kunskaper i Microsoft Excel du skapa en färdighet med namnet **Excel-kunskaper**. Färdighetsnivån kan sedan ställas in som **Erfaren** och viktighetsgraden som **Ytterst**.

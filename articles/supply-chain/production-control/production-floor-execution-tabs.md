@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6752d79a71a673fedb0caff7b6ad1023093269c0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6207627c1e901ce969e39d960adb5ab50f13e17d
+ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570187"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7790876"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Designa körningsgränssnittet för produktionsgolvet
 
@@ -53,13 +53,13 @@ Följ stegen nedan om du vill skapa och konfigurera en ny flik:
 
 1. Gör följande inställningar i sidans rubrik:
 
-    - **Fliknamn** - Ange ett namn på fliken.
-    - **Huvudvisning** - Välj mellan de två fördefinierade jobblistorna (*aktiva jobb*, *alla jobb* eller *min maskin*).
-    - **Detaljvy** - Välj mellan ett tomt värde eller **jobbinformation**. Om du väljer det tomma värdet visas ingen detaljerad vy på fliken. Om du väljer **jobbdetaljer** kommer den detaljerade vyn att innehålla en detaljerad beskrivning av det jobb som valts i jobblistan i huvudvyn.
+    - **Fliknamn** – Ange ett namn på fliken.
+    - **Huvudvy** – Välj mellan de fördefinierade jobblistorna (*Aktiva jobb*, *Alla jobb* och *Min maskin*).
+    - **Detaljvy** – Välj mellan ett tomt värde eller **Jobbinformation**. Om du väljer det tomma värdet visas ingen detaljerad vy på fliken. Om du väljer **jobbdetaljer** kommer den detaljerade vyn att innehålla en detaljerad beskrivning av det jobb som valts i jobblistan i huvudvyn.
 
 1. I avsnittet för det **primära verktygsfältet** väljer du vilka knappar som ska vara tillgängliga i det primära verktygsfältet. I kolumnen **tillgängliga åtgärder** visas en lista över alla knappar som kan läggas till. I kolumnerna **Valda åtgärderna** visas en lista över alla knappar som ingår i den aktuella konfigurationen. Använd knapparna mellan kolumnerna för att flytta de markerade objekten mellan de kolumner som behövs. Använd knapparna upp och ned bredvid kolumnen **Valda åtgärder** om du vill styra i vilken ordning knapparna visas i användargränssnittet.
 
-1. I avsnittet för det **sekundära** **verktygsfältet** väljer du vilka knappar som ska vara tillgängliga i det sekundära verktygsfältet. I kolumnen **tillgängliga åtgärder** visas en lista över alla knappar som kan läggas till. I kolumnerna **Valda åtgärderna** visas en lista över alla knappar som ingår i den aktuella konfigurationen. Använd knapparna mellan kolumnerna för att flytta de markerade objekten mellan de kolumner som behövs. Använd knapparna upp och ned bredvid kolumnen **Valda åtgärder** om du vill styra i vilken ordning knapparna visas i användargränssnittet.
+1. I avsnittet **Sekundärt verktygsfält** väljer du vilka knappar som ska vara tillgängliga i det sekundära verktygsfältet. I kolumnen **tillgängliga åtgärder** visas en lista över alla knappar som kan läggas till. I kolumnerna **Valda åtgärderna** visas en lista över alla knappar som ingår i den aktuella konfigurationen. Använd knapparna mellan kolumnerna för att flytta de markerade objekten mellan de kolumner som behövs. Använd knapparna upp och ned bredvid kolumnen **Valda åtgärder** om du vill styra i vilken ordning knapparna visas i användargränssnittet.
 
 ## <a name="associate-a-tab-with-a-configuration"></a>Associera en flik med en konfiguration
 

@@ -1,8 +1,8 @@
 ---
 title: Konfigurera delade parametrar
-description: Du måste ställa in delade parametrar för poster som delas av flera företag, till exempel befattningsposter. Den här artikeln innehåller information om hur du ställer in personalparametrar för juridiska personer.
-author: andreabichsel
-ms.date: 06/24/2021
+description: Detta ämne innehåller information om hur du konfigurerar personalparametrar för juridiska personer.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,30 +12,30 @@ ms.search.scope: Human Resources
 ms.custom: 51891
 ms.assetid: c7d8f58c-d78a-4035-abbf-2b0ce16109fe
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 66f57c9613ba04ebb3748699105469586c27d66131c062d1af286b24199c4be7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 039d8e2100824921d568c013fe3e113e1b091979
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723657"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729109"
 ---
 # <a name="configure-shared-parameters"></a>Konfigurera delade parametrar
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Du måste ställa in delade parametrar för poster som delas av flera företag, till exempel befattningsposter. Den här artikeln innehåller information om hur du ställer in personalparametrar för juridiska personer.
+Du måste konfigurera delade parametrar för poster som delas av flera företag, till exempel poster för **Befattning**. Detta ämne innehåller information om hur du konfigurerar personalparametrar för juridiska personer.
 
-Vissa typer av poster, såsom läge, delas mellan företag. För dessa poster måste du ställa in delad parametrar. Du kan till exempel använda **mänskliga resurser delade parametrar** för att ställa in mänskliga resurser parametrar över juridiska personer. 
+Vissa typer av poster, exempelvis poster gällande **befattning**, delas mellan företag. För dessa poster måste du ställa in delad parametrar. Du kan till exempel använda sidan **Delade parametrar för personal** för att konfigurerar personalparametrar för flera olika juridiska personer. 
 
 På **mänskliga resurser delade parametrar sidan** , parametrar är indelade i områden, baserade på deras funktionsduglighet. 
 
 ### <a name="settings"></a>Inställningar
-På **fliken identifiering** , måste du välja id typer som representerar ID-nummer som finns på sidan. Du måste ställa in identifieringtyper innan du kan ange identifieringsinformation för anställd. Information om personnummer, försäkringsnummer, Alien-ID-nummer och personliga ID-kod bibehålls på **identifiering typ** page. För att definiera en ny typ av identifiering eller granska listan över befintliga typer, klicka på **Mänskliga resurser** &gt; **Länkflik** &gt; **Inställningar** &gt; **Identifieringstyper**. Du kan ange en enkel kod och beskrivning. 
+På **fliken identifiering** , måste du välja id typer som representerar ID-nummer som finns på sidan. Du måste ställa in identifieringtyper innan du kan ange identifieringsinformation för anställd. Information om personnummer, försäkringsnummer, Alien-ID-nummer och personliga ID-kod bibehålls på **identifiering typ** page. För att definiera en ny typ av identifiering eller granska listan över befintliga typer, gå till **Personalhantering** &gt; **Länkar** &gt; **Inställningar** &gt; **Identifieringstyper**. Du kan ange en enkel kod och beskrivning. 
 
-På fliken **Nummersekvenser** kan du välja antalet sekvenser som används för följande poster: Anställningsnummer, befattning, användarens begärande-ID, 1-9 dokument, sökande, diskussion, förmåns-ID och personalåtgärd (om detta är aktiverat). För att bibehålla nummersekvens referenser och koder, använd **nummersekvens** listsidan. För att hitta denna sida, använd sidan sökfunktionen. 
+På fliken **Nummersekvenser** kan du välja de nummersekvenser som används för följande poster: **Personalnummer**, **Befattning**, **ID för användarbegäran**, **I-9-dokument**, **Sökande**, **Diskussion**, **Förmåns-ID** samt **Personalåtgärd** (om denna posttyp aktiverats). För att bibehålla nummersekvens referenser och koder, använd **nummersekvens** listsidan. För att hitta denna sida, använd sidan sökfunktionen. 
 
 På **fliken positioner** , ange om nya positioner som är tillgängliga för tilldelning som standard:
 
@@ -44,19 +44,19 @@ På **fliken positioner** , ange om nya positioner som är tillgängliga för ti
 
 På fliken **Avancerad åtkomst** kan du begränsa åtkomsten till viss information eller vissa länkar:
 
-- **Begränsa åtkomsten till medarbetarinformation** – Aktivera den här funktionen om användarna bara ska kunna visa medarbetarinformation för de juridiska personer som de har tillgång till, och för medarbetare som har anställning hos dessa juridiska personer.
+- **Begränsa åtkomsten till medarbetarinformation** – Välj den här funktionen om användarna bara ska kunna visa medarbetarinformation för de juridiska personer som de har tillgång till, samt för medarbetare som har anställning hos dessa juridiska personer.
 
-    När denna funktion har aktiverats måste du följa dessa steg för att ställa in lämpliga behörigheter för varje användare vars vy måste begränsas:
+    När denna funktion har valts måste du följa dessa steg för att ställa in lämpliga behörigheter för varje enskild användare vars vy måste begränsas:
 
     1. Markera en användare på sidan **Användare**.
     1. Välj en roll för användaren. Alternativet **Tilldela organisationer** blir tillgängligt.
     1. Markera **Tilldela organisationer**.
     1. På den nya sidan väljer du **Bevilja åtkomst till specifika organisationer enskilt** och välj sedan de organisationer som användaren ska få åtkomst till.
-    1. Upprepa steg 2 till 4 för alla andra roller som användaren har, inklusive systemanvändarrollen.
+    1. Upprepa steg 2 till 4 för alla ytterlgiare roller som användaren har, inklusive systemanvändarrollen.
 
     > [!NOTE]
     > De företag som en användare har åtkomst till måste matcha alla användarens roller.
 
-- **Aktivera kompensationsvy mellan företag** – Kompensation för medarbetare tilldelas per juridisk person för anställning. Ibland kan en medarbetare vara anställd hos flera juridiska personer samtidigt. När den här funktionen aktiveras visas kompensationen för varje juridisk person i självbetjäningen för medarbetare respektive chef utan att du måste ändra juridiska personer. 
+- **Aktivera kompensationsvy mellan företag** – Kompensation för medarbetare tilldelas per juridisk person för anställning. Ibland kan en medarbetare vara anställd hos flera juridiska personer samtidigt. När den här funktionen har valts visas kompensationen för varje juridisk person **Självbetjäning för medarbetare** och **Självbetjäning för chef** utan att du behöver ändra juridiska personer. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Konfigurera E-fakturering i Regulatory Configuration Services (RCS)
 description: I detta ämne beskrivs hur du konfigurerar E-fakturering i Dynamics 365 Regulatory Configuration Services (RCS).
 author: gionoder
-ms.date: 07/29/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 98ba40da7b365e46e1c624ba70c7dc048144e2c7137e8fd8eb5abe348028ce35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 640244612a2a553ec09661635787cb7f8694283b
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757984"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779680"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurera E-fakturering i Regulatory Configuration Services (RCS)
 
@@ -73,6 +73,7 @@ Följande tabell visar de elektroniska faktureringsfunktioner som är allmänt t
 | Spanien          | Spansk elektronisk faktura (ES)      | Försäljnings- och projektfakturor |
 | Europa         | PEPPOL-elektronisk faktura            | PEPPOL-försäljnings- och -projektfakturor |
 | Europa         | PEPPOL-leverantörsfaktura                | PEPPOL importerar leverantörsfakturor |
+| Saudiarabien   | Elektronisk faktura för Saudiarabien (SA)| Försäljnings- och projektfakturor |
 
 ### <a name="preview-features"></a>Förhandsfunktioner
 
@@ -197,6 +198,11 @@ Följande listor visar de ER-formatkonfigurationer som är tillgängliga för de
 - Försäljningsfaktura (ES)
 - Projektfaktura (ES)
 
+#### <a name="saudi-arabian-sa-electronic-invoice-sales-and-project-invoices-for-saudi-arabia"></a>Elektronisk faktura för Saudiarabien (SA): Försäljnings- och projektfakturor för Saudiarabien
+
+- e-faktura för försäljning (SA)
+- e-faktura för projekt (SA)
+
 Förutom de ER-formatkonfigurationer som är tillgängliga utanför rutan för användning med den elektroniska faktureringstjänsten kan du också skapa dina egna ER-formatkonfigurationer. De formatkonfigurationer som skapas för användning med funktioner för elektronisk fakturering stöder emellertid inte direkt referens till Finance eller Supply Chain Management register eller någon av motsvarande metadata. Det är bara referenser till ER-modellmappningen som stöds.
 
 ### <a name="actions"></a>Åtgärder
@@ -274,7 +280,7 @@ Logikoperatorer:
 - Och
 - Eller
 
-Operatortyper:
+Operatorstyper:
 - Equal
 - Not equal
 - Greater than

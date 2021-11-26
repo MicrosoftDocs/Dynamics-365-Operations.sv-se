@@ -2,7 +2,7 @@
 title: Financial Insights – startsida
 description: Finance insights ger konfigurerbara och utökningsbara modeller för att hjälpa dig att noggrant och effektivt förutsäga företagets kassaflöde, när du ska få betalning för utestående kundfordringar och skapa ett budgetförslag som kan påskynda budgetprocessen. Alla dessa funktioner baseras på intelligenta maskininlärningsmodeller.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,24 +17,22 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4b77b7872ed163a94ab57e4efea8fe0fbca22156
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 3c6320043000dc07eea3128a10c16cfd54b13334
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386396"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752866"
 ---
 # <a name="finance-insights-home-page"></a>Financial Insights – startsida
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Finance insights ger konfigurerbara och utökningsbara modeller för att hjälpa dig att noggrant och effektivt förutsäga företagets kassaflöde, när du ska få betalning för utestående kundfordringar och skapa ett budgetförslag som kan påskynda budgetprocessen. Alla dessa funktioner baseras på intelligenta maskininlärningsmodeller. När dessa nya funktioner kombineras med automatisering i leverantörsbetalningar och -samlingar, tillhandahåller de ett omfattande och intelligent system som driver beslutsfattande och hjälper dig att vidta åtgärder för att effektivt svara på aktuella och förväntade affärsutmaningar.
-
-> [!NOTE]
-> Förhandsversionen av Finance Insights finns tillgänglig för distribution i USA, Kanada, Storbritannien, Europa, Asien och stillahavsområdet, Australien och Nya Zeeland. Microsoft lägger stegvis till support för fler regioner. Om du vill aktivera Finance Insights för produktionsmiljöer måste du först aktivera funktionerna för [Exportera till Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) i produktionsmiljön.
+Finance Insights ger konfigurerbara och utökningsbara modeller för att hjälpa dig att på ett smart sätt förutsäga företagets kassaflöde, förutsäga när du får betalning för utestående kundfordringar samt skapa ett budgetförslag som kan påskynda budgetprocessen. Alla dessa funktioner baseras på intelligenta maskininlärningsmodeller. När dessa nya funktioner kombineras med automatisering i leverantörsbetalningar och -samlingar, tillhandahåller de ett omfattande och intelligent system som driver beslutsfattande och hjälper dig att vidta åtgärder för att effektivt svara på aktuella och förväntade affärsutmaningar.
 
 > [!NOTE]
-> Den här funktionen ges som en uppsättning förhandsgranskningsfunktioner. Som en förhandsgranskning bör du inte använda de resulterande maskininlärningsmodellerna för att påverka dina affärsbeslut eller budgeteringsförslag. Din användning av den här funktionen regleras [extra användningsvillkor](https://go.microsoft.com/fwlink/?linkid=2105274).
+> Förhandsversionen av Finance Insights finns tillgänglig för distribution i USA, Kanada, Storbritannien, Europa, Asien och Stillahavsområdet, Australien samt Nya Zeeland. Microsoft lägger stegvis till support för fler regioner.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -50,28 +48,15 @@ En nivå-2-miljö (multibox) krävs för att förhandsgranska Finance insights. 
 
 ### <a name="version-requirements"></a>Versionskrav
 
-Det här dokumentet gäller för version 10.0.11 av Finance and Operations-appar (Platform update 35) och senare versioner.
+Detta ämne gäller Microsoft Dynamics 365 Finance-version 10.0.21 och senare.
 
 ### <a name="historical-data-requirements"></a>Historiska datakrav
 
-Minst ett års kundfakturor krävs för att korrekt träna den maskininlärningsmodell som används för funktionen Prediktioner av kundbetalning.
-
-### <a name="role-and-permission-requirements"></a>Roll- och behörighetskrav
-
-Ändringar görs i Microsoft Dynamics 365 Finance, Microsoft Dynamics Lifecycle Services (LCS), Power Apps och Azure. Korrekta behörigheter krävs i alla dessa miljöer. Nedan följer några exempel på de ändringar som görs:
-
-- En ny miljö kommer att skapas i Microsoft Power Platform.
-- Ett lagringskonto, nyckelvalv och program kommer att skapas i Azure.
-- Administratören av Active Directory-klientorganisationen måste auktorisera AI Builder-programmet för åtkomst till datasjön.
-- Funktionen aktiveras i Dynamics 365.
-
-Om du är bekant med processen för att skapa och hantera resurser i Azure, Microsoft Dataverse och LCS kommer det vara till hjälp när du slutför processen.
+Minst ett års kundfakturor krävs för att korrekt träna den maskininlärningsmodell som används för funktionen Prediktioner av kundbetalning. Tre år av historiska data rekommenderas för kassaflödesprognoser. Tre år av historisk budget och/eller faktiska värden rekommenderas för smarta budgetförslag.
 
 ## <a name="configure-finance-insights"></a>Konfigurera Finance insights
 
-Du måste slutföra vissa konfigurationssteg innan du kan använda Finance insights. Mer information om hur du konfigurerar Finance insights finns i:
-  - För versioner upp till 10.0.19: [Konfiguration för Finance insights (förhandsversion) – versioner upp till 10.0.19](configure-for-fin-insites.md).
-  - För version 10.0.20 och senare: [Konfiguration för Finance insights (förhandsversion) – versioner 10.0.20 och senare](configure-for-fin-insites-PubPrvw.md).
+Du måste slutföra konfigurationssteg innan du kan använda Finance Insights. Mer information om hur du konfigurerar Finance-insikter finns i [Konfiguration för Finance-insikter](configure-for-fin-insites.md).
 
 ## <a name="create-a-data-integrator-project"></a>Skapa ett projekt för dataintegrerare
 
@@ -84,7 +69,7 @@ När du har slutfört konfigurationsstegen och konfigurerat demodata måste du a
 ### <a name="enable-customer-payment-predictions"></a>Aktivera prediktioner av kundbetalning
 Om du använder demodata för att testa kundbetalningsförutsägelser måste du kanske importera ytterligare demodata för att kunna skapa din AI-modell. 
 
-Om du vill aktivera kundbetalningsförutsägelser måste du utföra en uppsättning steg för att bygga en maskininlärningsmodell som använder organisationens data för att generera förutsägelser om när det är sannolikt att kunder betalar utestående fakturor, och när specifika fakturor sannolikt kommer att betalas. Mer information och de olika stegen finns i [Aktivera prediktioner av kundbetalning](enable-cust-paymnt-prediction.md). 
+Om du vill aktivera kundbetalningsförutsägelser måste du utföra en uppsättning steg för att bygga en maskininlärningsmodell som använder organisationens data för att generera förutsägelser om när det är sannolikt att kunder betalar utestående fakturor, samt när specifika fakturor sannolikt kommer att betalas. Mer information och de olika stegen finns i [Aktivera prediktioner av kundbetalning](enable-cust-paymnt-prediction.md). 
 
 ### <a name="enable-cash-flow-forecasting"></a>Aktivera kassaflödesprognoser
 Om du vill aktivera kassaflödesprognoser måste du utföra en uppsättning steg för att bygga en maskininlärningsmodell som använder organisationens data för att generera kassaflödesprognoser. Mer information och de olika stegen finns i [Aktivera kassaflödesprognoser](enable-cash-flow-forecasting.md).
@@ -97,17 +82,14 @@ I funktionen Budgetförslag används en maskininlärningsmodell tillsammans med 
 
 ### <a name="using-customer-payment-predictions"></a>Använda prediktioner av kundbetalning
 
-Den intelligenta kassaflödesprognosen skapas ovanpå den befintliga funktionen för kassaflödesprognos i Dynamics 365 Finance. Information om hur du granskar den befintliga funktionen finns i [Kassaflödesprognoser](../cash-bank-management/cash-flow-forecasting.md).
-
-- Mer information om hur kundbetalningsförutsägelser kan tillhandahålla den information som behövs för att proaktivt vara inkassoaktiviteter finns i [Använda prediktioner av kundbetalning](use-customer-payment-predictions.md).
+- Mer information om hur kundbetalningsförutsägelser kan tillhandahålla den information som krävs för att proaktivt inleda inkassoaktiviteter finns i [Använda förutsägelser för kundbetalningar](use-customer-payment-predictions.md).
 - Mer information som kan hjälpa dig att utvärdera förutsägelsemodellens effektivitet när du har börjat använda funktionen finns i [Utvärdera den första förutsägelsemodellen för kundbetalning](evaluate-payment-prediction.md).
 - Mer information som kan hjälpa dig att justera de data som används för att bygga förutsägelsen och därigenom förbättra dess effektivitet finns i [Förbättra prediktionsmodellen](improve-model.md).
-
-Mer information om resultaten av AI-förutsägelsemodeller finns i [Resultat av maskininlärningsmodeller](confusion-matrix.md).
+- Mer information om resultaten av AI-förutsägelsemodeller finns i [Resultat av maskininlärningsmodeller](confusion-matrix.md).
 
 ### <a name="using-cash-flow-forecasts"></a>Använda kassaflödesprognoser
 
-Med hjälp av funktionen för kassaflödesprognos kan du få en mer exakt uppskattning av din kassaposition. 
+Med hjälp av funktionen för kassaflödesprognos kan du få en mer exakt uppskattning av din kassaposition. Den smarta kassaflödesprognosen skapas ovanpå den befintliga funktionen för kassaflödesprognos i Dynamics 365 Finance. Information om hur du granskar den befintliga funktionen finns i [Kassaflödesprognoser](../cash-bank-management/cash-flow-forecasting.md).
 
 - Mer information om de nya funktionerna i kassaflödesprognoser finns i [Kassaflödesprognos](cash-flow-forecast-intro.md).
 - Mer information om hur du importerar externa data som ska inkluderas i kassaflödesprognosen finns i [Använda externa data i kassaflödesprognoser](external-data-in-cash-flow.md). 
@@ -120,6 +102,6 @@ Information om hur du påskyndar skapandet av en budget finns i [Budgetförslag]
 
 ## <a name="feedback-and-support"></a>Feedback och support
 
-Skicka ett e-postmeddelande till [Kundbetalningsinsikter (förhandsversion)](mailto:fiap@microsoft.com) om du är intresserad av att ge feedback eller behöver support.
+Om du är intresserad av att ge feedback, eller om du behöver support, skicka då ett e-postmeddelande till [Finance Insights](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 986abfaef81474571de7db179253c4d76f65d4bec180fa9f355f3218ddbb96ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ceedd8b42383dc1334f472ba754ac3e18261b9d
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746829"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777825"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Skapa överföringsorder från distributionslagerappen
 
@@ -32,13 +32,13 @@ Innan du kan använda den här funktionen måste både den och dess förutsättn
 
 1. Aktivera först funktionen [bearbeta händelser i lagerställeapp](warehouse-app-events.md), som visas i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) som:
     - **Modul** – Lagerstyrning
-    - **Funktionsnamn** - Bearbeta händelser för lagerställeapp
+    - **Funktionsnamn** – Bearbeta händelser för lagerställeapp
 1. Aktivera sedan formuläret *skapa överföringsorder från funktionen lagerställeapp*, som visas som:
     - **Modul** – Lagerstyrning
-    - **Funktionsnamn** - Skapa och bearbeta överföringsorder från lagerställeappen
-1. Om du vill automatisera bearbetningen av utgående leveranser måste du också aktivera funktionen [Bekräfta utgående leveranser från batch-jobb](confirm-outbound-shipments-from-batch-jobs.md). Funktionen visas som:
+    - **Funktionsnamn** – Skapa och bearbeta överföringsorder från lagerställeappen
+1. Om du vill automatisera bearbetningen av utgående leveranser måste du också aktivera funktionen [Bekräfta utgående leveranser från batch-jobb](confirm-outbound-shipments-from-batch-jobs.md). Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan använda sidan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera/inaktivera den vid behov. Här visas funktionen i listan:
     - **Modul** – Lagerstyrning
-    - **Funktionens namn** - Bekräfta utgående leveranser från batchjobb
+    - **Funktionens namn** – Bekräfta utgående leveranser från batchjobb
 
 ## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a>Ställa in ett menyalternativ för mobila enheter för att skapa överföringsorder
 
@@ -47,22 +47,22 @@ Här följer allmänna riktlinjer för hur du skapar ett menyalternativ för mob
 1. Gå till **Lagerstyrning \> Inställningar \> Mobil enhet \> Menyalternativ på mobil enhet**.
 1. Välj **Nytt** för att lägga till ett nytt menyalternativ. Gör följande inställningar för att komma igång:
 
-    - **Menyalternativnamn** - tilldela ett namn som det ska visas i Supply Chain Management.
-    - **Titel** - tilldela ett menynamn som det ska visas för arbetare i mobilappen för distributionslagerhantering.
-    - **Läge** - inställt på *indirekt* (den här menyartikeln kommer inte att skapa arbete).
-    - **Aktivitetskod** - Ställ in *Skapa överföringsorder från registreringsskyltar* för att göra det möjligt för lagerarbetarna att skapa en överföringsorder baserat på en eller flera skannade registreringsskyltar.
+    - **Menyalternativnamn** – tilldela ett namn som det ska visas i Supply Chain Management.
+    - **Titel** – tilldela ett menynamn som det ska visas för arbetare i mobilappen för distributionslagerhantering.
+    - **Läge** – inställt på *indirekt* (den här menyartikeln kommer inte att skapa arbete).
+    - **Aktivitetskod** – Ställ in *Skapa överföringsorder från registreringsskyltar* för att göra det möjligt för lagerarbetarna att skapa en överföringsorder baserat på en eller flera skannade registreringsskyltar.
 
 1. Använd inställningen **Policy för skapande av överföringsrader** för att styra hur överföringsorderrader skapas av detta menyalternativ. Raderna skapas/uppdateras baserat på den registrerade lagerbehållningen för skannade registreringsskyltar. Välj ett av följande värden:
 
-    - **Ingen reservation** - överföringsorderraderna kommer inte att reserveras.
+    - **Ingen reservation** – överföringsorderraderna kommer inte att reserveras.
     - **ID-nummer guidad med radreservation** – överföringsorderraderna kommer att reserveras och använda alternativet för interaktiv strategi för ID-nummer som lagrar relevanta ID-nummer som är kopplade till orderraderna. Värden för "Lokaliserat ID-nummer" kan därför användas som en del av arbetsprocessen för att skapa överföringar för överföringsorderraderna.
 
 1. Använd inställningen **utgående leveransprincip** för att lägga till mer automatisering i den utgående leveransprocessen efter behov. När en arbetare väljer **Slutför beställning**-knappen skapar programmet den programhändelse för *Slutför beställning* som kommer att spara värdet som du väljer här i fältet **utgående leveransprincip** för varje rad i den aktuella överföringsordern. Senare, när händelsekön bearbetas av ett batchjobb för att skapa överföringsordern, kan värdet som lagras i det här fältet läsas av batch-jobbet och kan därför styra hur det här jobbet bearbetar varje rad. Välj en av följande:
 
-    - **Ingen** - ingen automatisk bearbetning utförs.
-    - **Släpp till lagerställe** - automatiserar utleveransen till lagerställeprocess.
-    - **Leveransbekräftelse** - automatiserar leverans av bekräftelsen.
-    - **Släpp- och levereransbekräftelse** - Automatisk automatiserar både frisläppningen till lagerställe och leveransbekräftelse processer.
+    - **Ingen** – ingen automatisk bearbetning utförs.
+    - **Släpp till lagerställe** – automatiserar utleveransen till lagerställeprocess.
+    - **Leveransbekräftelse** – automatiserar leverans av bekräftelsen.
+    - **Släpp- och levereransbekräftelse** – Automatisk automatiserar både frisläppningen till lagerställe och leveransbekräftelse processer.
 
 ## <a name="add-the-mobile-device-menu-item-to-a-menu"></a>Lägg till menykommandot för menyalternativ för mobila enheter
 
@@ -212,7 +212,7 @@ I det här avsnittet beskrivs hur du ställer in ett tidsplanerat batchjobb för
 1. I listan med registerrelationer filtrerar eller söker du i kolumnen **Relation** för *Överför ytterligare fält för uppfinningar (post-ID)*.
 1. Fokusera på register relationen i listan och klicka på knappen **Välj**.
 1. Välj fliken **Intervall**.
-1. I frågetabellen **område** kommer du att ställa in tre kriterier för frågevillkor. Välj knappen **Lägg till** för att lägga till en rad.
+1. I frågetabellen **Intervall** kommer du att ställa in tre kriterier för frågevillkor. Välj knappen **Lägg till** för att lägga till en rad.
 1. Lägg till ett intervall för registret som **Laster**. Ange **Fält** till *Last status* och ange **Villkor** till *Lastad*.
 1. Lägg till ett annat intervall för tabellen **Överför ytterligare fält för överföring**. Ange **Fält** till *Utgående leveransprincip* och ange **Kriterier** till *Släpp- och levereransbekräftelse*.
 1. Lägg till ett annat intervall för tabellen **Lastinformation**. Ange **Fält** till *Referens* och **Kriterier** till *Överföringsorderförsändelse*.

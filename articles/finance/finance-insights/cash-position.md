@@ -2,7 +2,7 @@
 title: Kassaposition
 description: I det här ämnet beskrivs hur funktionen för kassaflödesprognoser förutsäger organisationens kassaposition för specifika tider. Här beskrivs också vilka alternativ som finns för att visa prognoser för olika perioder.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: e54caee1e7d703bb134593412bdad77b3af5ab38
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386324"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752890"
 ---
 # <a name="cash-position"></a>Kassaposition
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Kassaposition är projektionen av kassaflödet som prognosticeras på kort sikt. Den baseras på projektionen av inbetalningar från kunder som betalar utestående fakturor och order, samt även de kontantutbetalningar som betalas till leverantörer för inköpsfakturor och order.
 
@@ -44,8 +45,5 @@ I den nedre delen av fliken **Kassaposition** visas information om positionen, k
 - I rutnätet **Bankkonto** visas inverkan av förväntade kassainflöden och kassautflöden på banksaldot.
 
 Skapa en ögonblicksbild om du vill spara och redigera kassapositionen. Mer information om hur du arbetar med ögonblicksbilder finns i [Översikt över ögonblicksbilder](payment-snapshots.md).
-
-#### <a name="privacy-notice"></a>Sekretesspolicy
-Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

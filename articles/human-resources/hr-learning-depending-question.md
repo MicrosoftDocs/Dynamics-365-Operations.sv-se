@@ -1,8 +1,8 @@
 ---
 title: Skapa en fråga beroende av svaret på den föregående frågan
 description: Med villkorsstyrda frågor kan du ange vilken uppföljningsfråga som ska visas för en svarande, baserat på svaret på föregående fråga.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: KMCollection, KMCollectionQuestion, KMCollectionQuestionTree, Hc
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b9397b3dfa353398a5d326ae68ec8269369ebf85b7b2e61c73013db76c5dd475
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 11787aa0b32c0d7493e4528b00304e51f01a655f
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745704"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728916"
 ---
 # <a name="make-a-question-dependent-on-the-answer-of-the-previous-question"></a>Skapa en fråga beroende av svaret på den föregående frågan
 
@@ -30,28 +30,28 @@ Med villkorsstyrda frågor kan du ange vilken uppföljningsfråga som ska visas 
 
 
 ## <a name="find-the-existing-questionnaire"></a>Hitta den befintliga enkäten
-1. Gå till Enkät > Design > Enkäter.
+1. Gå till **Enkät** > **Design** > **Enkäter**.
 2. Välj enkäten WorkFH i listan.
 
 ## <a name="add-all-questions-and-sub-questions-to-the-questionnaire"></a>Lägg till alla frågor och underfrågor till enkäten
-1. Klicka på Frågor.
-2. Klicka på Ny.
-3. Välj fråga nummer 00016 i fältet Fråga.
+1. Klicka på **Frågor**.
+2. Klicka på **Ny**.
+3. I fältet **Fråga** väljer du fråga nummer 00016.
 4. Hitta och markera önskad post i listan.
 5. Klicka på länken på den valda raden i listan.
-6. Klicka på Spara.
+6. Klicka på **Spara**.
 7. Stäng sidan.
 
 ## <a name="set-the-questionnaire-sequence-to-conditional-and-make-the-question-dependent-on-the-appropriate-question"></a>Ange enkätsekvensen till villkorsstyrd och gör frågan beroende av lämplig fråga
-1. Klicka på Redigera.
-2. Expandera avsnittet Inställningar.
-3. Välj "Villkor" i fältet Frågeordning.
-4. Klicka på Villkorsfråga.
+1. Klicka på **Redigera**.
+2. Expandera avsnittet **Inställningar**.
+3. I fältet **Frågeordning** väljer du "Villkor".
+4. Klicka på frågan **Villkor**.
 5. Välj ”Frågor\varför du besvarade föregående fråga sätt som du gjorde?" i trädet.
-6. Välj fråga 00009 i fältet Primär fråga
+6. I fältet **Primär fråga** väljer du fråga 00009.
 7. Klicka på länken på den valda raden i listan.
-8. Ange svarssekvens-ID för det svarsalternativ som du vill göra frågan beroende av i fältet Svar. Ange till exempel 1 för det första svarsalternativet.
-9. Klicka på Spara.
+8. I fätlet **Svar** anger du ID för svarsserie för det svarsalternativ som du vill göra frågan beroende av. Ange till exempel 1 för det första svarsalternativet.
+9. Klicka på **Spara**.
 10. Välj "Frågor\Jag betalas rättvist för det arbete jag gör” i trädet.
     * Observera att frågeträdet har uppdateras för att visa beroendet.  
 

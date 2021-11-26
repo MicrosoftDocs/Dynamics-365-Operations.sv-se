@@ -1,8 +1,8 @@
 ---
 title: Skapa och öppna jobbrekvisition
 description: Med rekryteringsprojekt kan du hantera din rekryteringsprocess.
-author: andreabichsel
-ms.date: 02/03/2021
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruiting
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: df60f6461c52e45849d3de89fde4ae53f915dbc3cce417a30790acf443c5fecc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d59ccb88b8a76de6e2f00453f185fec2f149873
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778782"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731571"
 ---
 # <a name="create-and-open-job-requisition"></a>Skapa och öppna jobbrekvisition
 
@@ -39,7 +39,7 @@ Med rekryteringsprojekt kan du hantera din rekryteringsprocess. När du har skap
 6. Hitta och markera önskad post i listan.
 7. Klicka på länken på önskad rad i valda listan.
 8. Välj **Välj**.
-9. Öppna sökningen genom att välja knappen för listruta i fältet Avdelning.
+9. Öppna sökningen genom att välja listruteknappen i fältet **Avdelning**.
 10. Klicka på länken på önskad rad i valda listan.
 11. I fältet **Jobb** klickar du på knappen för listruta för att öppna sökningen.
 12. Hitta och markera önskad post i listan.
@@ -58,10 +58,10 @@ Med rekryteringsprojekt kan du hantera din rekryteringsprocess. När du har skap
 25. Ange ett datum i fältet **Slutdatum**.
 26. Välj **Spara**.
 27. Stäng sidan.
-28. Välj Platsannonser.
+28. Välj **Platsannonser**.
 29. Välj **Spara**.
 30. Stäng sidan.
-31. Markera eller avmarkera kryssrutan **Visa i självbetjäningen för medarbetare**. Markera kryssrutan **Visa i självbetjäningen för medarbetare**. Det här valet gör rekryteringsprojektet synligt för medarbetarna på deras självbetjäningssidor.
+31. Markera eller avmarkera kryssrutan **Visa i självbetjäningen för medarbetare**. Markera kryssrutan **Visa i självbetjäningen för medarbetare**. Det här valet gör rekryteringsprojektet synligt för medarbetarna på deras sida **Självbetjäning för medarbetare**.
 32. Markera **Rekryteringsprojektets status**.
 33. Välj **start**. Statusen **Startad** innebär att projektet är redo att ta emot ansökningar.  
 34. Välj **OK**.

@@ -1,8 +1,8 @@
 ---
-title: Ställa in en miljö för att söka efter huvuddata
-description: I det här avsnittet beskrivs hur du ställer in din miljön att använda sökfunktionen huvuddata för skatteberäkning.
+title: Aktivera huvuddatauppslag för momsberäkningskonfiguration
+description: I det här avsnittet beskrivs hur du konfigurerar och aktiverar sökfunktionen huvuddata för momsberäkning.
 author: kai-cloud
-ms.date: 10/26/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 901f8bcb0220355866952b68e92bc2dd906bb430
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: dafeac01aaff62cbbd5ce6ecb0af0ef111f513b2
+ms.sourcegitcommit: 76fe020f9c5f4e5cc2e93f5ccb3b040f12b0363e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7700414"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "7749520"
 ---
-# <a name="set-up-an-environment-for-master-data-lookup"></a>Ställa in en miljö för att söka efter huvuddata
+# <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Aktivera huvuddatauppslag för momsberäkningskonfiguration 
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in din miljön att använda sökfunktionen huvuddata för skatteberäkning.
+I det här avsnittet beskrivs hur du konfigurerar och aktiverar sökfunktionen huvuddata för momsberäkning. En listruta är tillgänglig för att välja värden i momsberäkningskonfigurationen för fält såsom **Leverantörskonto**, **Artikelkod** och **Leveransvillkor**. Dessa värden kommer från den anslutna Microsoft Dynamics 365 Finance-miljön med hjälp av Microsoft Dataverse.datakällan.
 
 1. Konfigurera Microsoft Power Platform-integrering i Microsoft Dynamics Lifecycle Services (LCS). Mer information finns i [Microsoft Power Platform-integrering – tilläggsöversikt](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). När du har slutfört det här steget visas namnet på Microsoft Power Platform-miljön i avsnittet **Power Platform-integration**.
 2. Gå till [Microsoft Power Platform administrationscenter](https://admin.powerplatform.microsoft.com/environments) och välj miljönamnet. Miljöns URL är inte angiven.

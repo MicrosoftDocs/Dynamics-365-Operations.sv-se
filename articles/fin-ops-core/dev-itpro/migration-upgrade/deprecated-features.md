@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76ac50ba2606ffff5a5a90d29ca99c8d67e5f14cce2127f5de6225d1cd8224ef
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e03becf2572aeaf213e8c3a0e874405ed0d5613
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745186"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753036"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Borttagna eller utfasade funktioner i tidigare versioner
 
@@ -84,7 +84,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell: 1 oktober 2020, men vi planerar inte längre att använda metoden **setUtcString()**. Utvecklare bör använda metoden **setUtcDateTime()** i stället. |
 
-### <a name="blacklist-report-it--feature-reference-it-00001"></a>Rapport för svarta listan (IT) – funktionsreferens IT-00001
+### <a name="blocklist-report-it--feature-reference-it-00001"></a>Rapport för spärrlista (IT) – funktionsreferens IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -360,7 +360,7 @@ Funktion för att skapa mallar för nya vinstskattregister. Den här funktionen 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Funktionen är inte kompatibel med Finance and Operations utvidgningsmodell. |
-| **Ersatt av en annan funktion?**   | Nr |
+| **Ersatt av en annan funktion?**   | Nej |
 | **Produktområden som påverkas**         | Skatt |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Tas bort från Finance and Operations 8.1 med plattformsuppdatering 20. |
@@ -371,7 +371,7 @@ Rysk landsspecifik modul för hantering av personaladministrationsinformation, t
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Lön ingår inte i det globala strategiska fokuset i Dynamics 365-portföljen. Partners och ISV:er är bäst placerade för att tillhandahålla lönefunktioner som överensstämmer med lokala regler och skatteuppdateringar.|
-| **Ersatt av en annan funktion?**   | Nr|
+| **Ersatt av en annan funktion?**   | Nej|
 | **Produktområden som påverkas**         | Hantering av Löner och Personal för Ryssland |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell: Måltidsramen för funktionen som ska tas bort är en av de framtida uppdateringarna av version 10.0. |
@@ -455,7 +455,7 @@ Dessa skatter har infogats till indiska GST.
 |              &nbsp;                               |      &nbsp;                                                                   |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Orsak till inaktuell eller borttagning**       | Brist på kundanvändning                                                  |
-| **Ersatt av en annan funktion?**            | Nr                                                                      |
+| **Ersatt av en annan funktion?**            | Nej                                                                      |
 | **Produktområden som påverkas**                  | Indisk källskatt                                                  |
 | **Distribueringsalternativ**                       | Alla moduler                                                                    |
 | **Status**                                  | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.   |        
@@ -467,7 +467,7 @@ Användare kan hämta denna från myndighetsportalen.
 |             &nbsp;                                |    &nbsp;                                                                     |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Orsak till inaktuell eller borttagning**       | Brist på kundanvändning                                                  |
-| **Ersatt av en annan funktion?**            | Nr                                                                      |
+| **Ersatt av en annan funktion?**            | Nej                                                                      |
 | **Produktområden som påverkas**                  | Indisk källskatt                                                  |
 | **Distribueringsalternativ**                       | Alla moduler                                                                   |
 | **Status**                                  | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.     |    
@@ -478,7 +478,7 @@ Användare kan hämta denna från myndighetsportalen.
 |              &nbsp;                               |        &nbsp;                                                                 |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Orsak till inaktuell eller borttagning**       | Brist på kundanvändning                                                  |
-| **Ersatt av en annan funktion?**            | Nr                                                                      |
+| **Ersatt av en annan funktion?**            | Nej                                                                      |
 | **Produktområden som påverkas**                  | Import och export                                                       |
 | **Distribueringsalternativ**                       | Alla moduler                                                                    |
 | **Status**                                  | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.  |    
@@ -578,7 +578,7 @@ Det här verktyget används när en kontoplan i Spanien kräver stora ändringar
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Begränsad användning                                                  |
-| **Ersatt av en annan funktion?**   | Nr                                                             |
+| **Ersatt av en annan funktion?**   | Nej                                                             |
 | **Produktområden som påverkas**         | Huvudbok                                                 |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
 
@@ -622,7 +622,7 @@ EDIVAT är en inaktuell belgisk standard för elektronisk deklaration säker via
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Funktionen används inte längre.                           |
-| **Ersatt av en annan funktion?**   | Nr                                                             |
+| **Ersatt av en annan funktion?**   | Nej                                                             |
 | **Produktområden som påverkas**         | Huvudbok                                                 |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
 
@@ -699,7 +699,7 @@ Den här funktionen används för ändringar i kontoplanen och redovisningsregle
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Begränsad användning                                                  |
-| **Ersatt av en annan funktion?**   | Nr                                                             |
+| **Ersatt av en annan funktion?**   | Nej                                                             |
 | **Produktområden som påverkas**         | Huvudbok                                                 |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
 
@@ -787,7 +787,7 @@ Radiofrekvensidentifiering (RFID) är en datainsamlingsteknik som använder elek
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Låg kundanvändning och en begränsad uppsättning funktioner.   |
-| **Ersatt av en annan funktion?**   | Nr                                              |
+| **Ersatt av en annan funktion?**   | Nej                                              |
 | **Produktområden som påverkas**         | Lagerhantering                            |
 | **Status**                         | Borttagen Dynamics 365 for Operations 1611. |
 
@@ -798,7 +798,7 @@ Lettisk lagstiftning innehåller särskilda regler om hur försäljningsfakturor
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Numrering av statliga fakturor måste inte längre underhållas. Rapporten om använda fakturanummer är inte längre obligatorisk. |
-| **Ersatt av en annan funktion?**   | Nr       |
+| **Ersatt av en annan funktion?**   | Nej       |
 | **Produktområden som påverkas**         | Kundreskontra    |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.  |
 
@@ -860,7 +860,7 @@ Löneinformation i HR
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Låg användning                                                           |
-| **Ersatt av en annan funktion?**   | Nr                                                                  |
+| **Ersatt av en annan funktion?**   | Nej                                                                  |
 | **Produktområden som påverkas**         | Personal                                                     |
 | **Status**                         | Borttagen från Dynamics 365 for Operations version 1611. |
 
@@ -883,7 +883,7 @@ Ett arbetsflöde för hantering av genereringen av medarbetare är en av flera a
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Prestandaförbättring        |
-| **Ersatt av en annan funktion?**   | Nr                             |
+| **Ersatt av en annan funktion?**   | Nej                             |
 | **Produktområden som påverkas**         | Leverantörsreskontra               |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0. |
 
@@ -916,7 +916,7 @@ När konfigurationsnyckeln för **strukturlisteversioner** inaktiverades doldes 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Användningen av en konfigurationsnyckel för att kontrollera strukturlisteversioner kan inte skalas till en molnmiljö. |
-| **Ersatt av en annan funktion?**   | Nr                                                                                      |
+| **Ersatt av en annan funktion?**   | Nej                                                                                      |
 | **Produktområden som påverkas**         | Produktinformationshantering, Lagerhantering                                    |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.                                                          |
 
@@ -927,7 +927,7 @@ Specifik betalningsmetod för brasilianska företag
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Stöd för den brasilianska Bordero-betalningsmetoden har annullerats från brasiliansk lokalisering |
-| **Ersatt av en annan funktion?**   | Nr   |
+| **Ersatt av en annan funktion?**   | Nej   |
 | **Produktområden som påverkas**         | Leverantörsreskontra   |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
 
@@ -949,7 +949,7 @@ Federala skatteutdrag för ICMS-skatt
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Den här eventualitetsmetoden används inte längre i alla brasilianska stater |
-| **Ersatt av en annan funktion?**   | Nr                                                                          |
+| **Ersatt av en annan funktion?**   | Nej                                                                          |
 | **Produktområden som påverkas**         | Kundreskontra                                                         |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.              |
 
@@ -1000,7 +1000,7 @@ Regelefterlevnadscentret var en Enterprise Portal-webbplats för att hantera dok
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Brist på kundanvändning. Microsoft SharePoint innehåller samma kapacitet som var tillgänglig i regelefterlevnadscentret. |
-| **Ersatt av en annan funktion?**   | Nr   |
+| **Ersatt av en annan funktion?**   | Nej   |
 | **Produktområden som påverkas**         | Regelefterlevnad och interna kontroller  |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.    |
 
@@ -1029,7 +1029,7 @@ Verktyget användes för att integrerar viktiga data från Microsoft Dynamics CR
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Stackikongrupper användes för att visa en eller flera stackikoner i faktaboxområdet. Upptaget var begränsat och det fanns även prestandaproblem eftersom en poständring i ett överordnat formulär orsakade en fråga per stackikon i stackikongruppen. |
-| **Ersatt av en annan funktion?**   | Nr      |
+| **Ersatt av en annan funktion?**   | Nej      |
 | **Produktområden som påverkas**         | Alla moduler    |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.  |
 
@@ -1047,7 +1047,7 @@ Verktyget användes för att integrerar viktiga data från Microsoft Dynamics CR
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Stöd för den danska checkformatlayouten har tagits bort, och rapporten har tagits bort från lokalisering för danska. |
-| **Ersatt av en annan funktion?**   | Nr    |
+| **Ersatt av en annan funktion?**   | Nej    |
 | **Produktområden som påverkas**         | Alla moduler    |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.  |
 
@@ -1079,7 +1079,7 @@ Dynamics AX 2012 tillåter lagring av bifogade filer i databasen och i delade fi
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Ingen användning av funktionen påträffades. |
-| **Ersatt av en annan funktion?**   | Nr                                     |
+| **Ersatt av en annan funktion?**   | Nej                                     |
 | **Produktområden som påverkas**         | Tid och närvaro                    |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.         |
 
@@ -1137,7 +1137,7 @@ Den här funktionen ger eXtensible Business Reporting Language (XBRL)-utdata som
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Låg kundanvändning och en begränsad uppsättning funktioner.  |
-| **Ersatt av en annan funktion?**   | Nr              |
+| **Ersatt av en annan funktion?**   | Nej              |
 | **Produktområden som påverkas**         | Efterlevnad och interna kontroller, Leverantörsreskontra  |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0. |
 
@@ -1193,7 +1193,7 @@ Genereringen av förauktoriseringar kan inte utföras med hjälp av en batch men
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | XML-formatet för tyska listrapporten över försäljning inom EU stöds inte längre. Det går enbart att använda textfilformatet ELMA5 för att skicka in listrapporten över försäljning inom EU till den tyska skattemyndigheten. |
-| **Ersatt av en annan funktion?**   | Nr         |
+| **Ersatt av en annan funktion?**   | Nej         |
 | **Produktområden som påverkas**         | Skatt        |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.   |
 
@@ -1246,7 +1246,7 @@ Den här funktionen möjliggjorde genereringen av mexikanska e-fakturor med hjä
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Metoden är inte längre tillämplig. Genereringen av elektroniska fakturor genom att använda CFD-metoden drogs tillbaka av skattemyndigheterna och ersattes av CFDI-metoden (Comprobante Fiscal Digital a través de Internet), där signeringen delegeras till tredjepartsleverantören (PAC). Den månatliga rapporten har tagits bort och ett förfrågningsalternativ gör det möjligt för användare att fråga om historiska transaktioner. |
-| **Ersatt av en annan funktion?**   | Nr    |
+| **Ersatt av en annan funktion?**   | Nej    |
 | **Produktområden som påverkas**         | Kundfordringar, Projekt   |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
 
@@ -1278,7 +1278,7 @@ Inventerings- och lagerställejournalerna stöder inte längre möjligheten att 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Ingen användning av funktionen påträffades. |
-| **Ersatt av en annan funktion?**   | Nr                                     |
+| **Ersatt av en annan funktion?**   | Nej                                     |
 | **Produktområden som påverkas**         | Lagerhantering                   |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.         |
 
@@ -1311,7 +1311,7 @@ Den här funktionen låter dig ändra namnet på en av de tre standardproduktdim
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Den aktuella versionen av Dynamics AX stöder inte etikettändringar under körning. |
-| **Ersatt av en annan funktion?**   | Nr                                                                            |
+| **Ersatt av en annan funktion?**   | Nej                                                                            |
 | **Produktområden som påverkas**         | Produktinformationshantering                                                |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.                                                |
 
@@ -1340,7 +1340,7 @@ I Dynamics AX 2012 R3 kan Retail Server med hjälp av HTTP-kommunikation (icke-s
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Låg kundanvändning och en begränsad uppsättning funktioner. |
-| **Ersatt av en annan funktion?**   | Nr                                           |
+| **Ersatt av en annan funktion?**   | Nej                                           |
 | **Produktområden som påverkas**         | USA-moms                                 |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.               |
 
@@ -1351,7 +1351,7 @@ Med hjälp av webbplatstjänster kan du utöka dina affärsprocesser till Intern
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Microsoft Azure-infrastrukturen, som användes av Dynamics AX, har nya kapaciteter som kan användas i stället (exempelvis, Azure-webbplatser). |
-| **Ersatt av en annan funktion?**   | Nr   |
+| **Ersatt av en annan funktion?**   | Nej   |
 | **Produktområden som påverkas**         | Rekrytering av personal, ärendehantering, begäran om offerter, registrering av leverantör, samarbetsplatser för affärsmöjligheter och kampanjer  |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.    |
 

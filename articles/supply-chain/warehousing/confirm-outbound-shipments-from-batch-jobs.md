@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d47b88fcc5e25fc85377b52fa9832916a4bb2217
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4af84383fe1d214849d5d05463bd0cbfad7d0536
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572395"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778483"
 ---
 # <a name="confirm-outbound-shipments-from-batch-jobs"></a>Bekräfta utgående leveranser från batchjobb
 
@@ -27,7 +27,7 @@ I det här avsnittet beskrivs hur du ställer in ett batchjobb som automatiskt b
 
 ## <a name="enable-the-confirm-outbound-shipments-from-batch-jobs-feature"></a>Aktivera funktionen Bekräfta utgående leveranser från batchjobb
 
-Innan du kan använda den här funktionen måste du aktivera den i ditt system. Administratörer kan använda sidan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas som:
+Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan använda sidan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera/inaktivera den vid behov. Här visas funktionen i listan:
 
 - **Modul** - *Lagerstyrning*
 - **Funktionens namn** - *Bekräfta utgående leveranser från batchjobb*

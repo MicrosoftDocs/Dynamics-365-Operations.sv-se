@@ -1,8 +1,8 @@
 ---
 title: Betalsätt
 description: Varje betalningstyp som en återförsäljare godtar, måste konfigureras när systemet installeras. Det här avsnittet ger en beskrivning av betalningstyperna som du kan ställa in och processen för hur du ställer in dem.
-author: rubencdelgado
-ms.date: 06/17/2020
+author: BrianShook
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c174dd136cecedc9b23bdaa778885f75e51c9aa556a9e2709bc7da171faa8617
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0450dbaa37365705ca59fd2223c9d3866054c12a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713976"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779580"
 ---
 # <a name="payment-methods"></a>Betalsätt
 
@@ -47,5 +47,10 @@ Om du vill ställa in betalsätten måste du göra följande.
 3. Ställ in betalningsmetod för butiken. Associera betalsätten med varje butiker och ange sedan de butiksspecifika inställningarna för varje betalningsmetod.
 4. Ställ in kortbetalsätt för butiker. Slutför kortinställningarna för alla kortbetalsätt som butiken godtar.
 
+## <a name="handle-change-tendering-for-payment-methods"></a>Hantera ändringsofferter för betalningsmetoder
+
+Vissa betalningsmetoder stöder inte direkta ändringsofferter om medel förs tillbaka till kunder vid kassan. Endast betalningsmetoderna **Kontant** och **Valuta** kan användas för ändringa ri betalningsmedel. 
+
+Om du vill hantera de fall där betalningsmedel för växel krävs under en transaktion, men där betalningsmetoden inte stöder detta, kan du definiera en betalningsmetod för **betalningsmedel för växel**. När du ställer in betalningsmetoder för butiken väljer du den betalningsmetod som ska användas. I avsnittet **Växel**, i fältet **Betalningsmedel för växel**, anger du ett betalningsalternativ för betalningsmedel för växel. Du kan till exempel ange **1** om du vill ange att kontanter kan användas som ett alternativ för betalningsmedel för växel.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

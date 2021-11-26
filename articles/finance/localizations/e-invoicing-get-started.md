@@ -2,7 +2,7 @@
 title: Kom i gång med elektronisk fakturering
 description: Det här avsnittet innehåller information som hjälper dig att komma igång med elektronisk fakturering i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 08/17/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d0550228dc77ed255a0033bc3b0a4ec21d48a497
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: ebef9cf97f7a91e0a2fd45f5e0e0fc620070b42a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7700389"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779704"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Kom i gång med elektronisk fakturering
 
@@ -57,7 +57,12 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 
 Beroende på land eller region kan den elektroniska faktureringsfunktionen kräva specifik konfiguration. 
 
-Specifika steg finns i dokumentationen "Kom igång" som är tillgänglig för ditt land eller din region.
+> [!NOTE]
+> När du aktiverar funktionen Elektronisk fakturering för Finland stöds innte applikationsspecifika parametrar i sökningar. För att komma runt detta problem granskar du konfigurationerna för format för försäljningsfaktura och projektfaktura i modulen **Elektronisk rapportering**. Konfigurera beräknat fält för **$PaymentMethodSubstitution**-mappningen manuellt och bind sedan det fältet till fältet **EpiPaymentMeansCode** från formaten för försäljningsfaktura och projektfaktura.
+>
+> När du aktiverar funktionen Elektronisk fakturering för Italien stöds inte applikationsspecifika parametrar i sökningar. För att komma runt detta problem öppnar du modulen **Elektronisk rapportering** och konfigurerar beräknat fät för mappningen **$NaturaReverseCharge** manuellt.
+>
+> Specifika steg relaterade till andra platser finns i dokumentationen "Kom igång" som är tillgänglig för ditt land eller din region.
 
 ## <a name="import-the-model-mapping-configurations-from-electronic-reporting"></a>Importera modellmappningskonfigurationer från elektronisk rapportering
 
@@ -241,10 +246,18 @@ Specifika steg finns i dokumentationen "Kom igång" som är tillgänglig för di
 
 3. Välj en faktura u rutnätet och välj sedan **Sök** \> **Sändningsinformation**.
 
+## <a name="download-an-electronic-document-file"></a>Ladda ned en elektronisk dokumentfil
+
+1. Gå till **Organisationsadministration** \> **Periodisk** \> **Elektroniska dokument** \> **Inlämningslogg för elektroniska dokument**.
+2. I fältet **Dokumenttyp** anger du et register som innehåller fakturorna.
+3. Välj ett dokument i rutnätet och välj sedan **Elektroniskt dokument** \> **Ladda ned fil**. Ett arkiv som innehåller den elektroniska dokumentfilen kommer att föreslås för hämtning.
+
+> [!NOTE]
+> Innan du kan hämta filer måste alternativet **Exportera resultat** vara aktiverat för den relaterade åtgärden i inställningarna för elektronisk fakturering i RCS.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Elektronisk fakturering – översikt](e-invoicing-service-overview.md)
+- [E-fakturering – översikt](e-invoicing-service-overview.md)
 - [Kom i gång med tjänstadministration för elektronisk fakturering](e-invoicing-get-started-service-administration.md)
 - [Kom i gång med elektronisk fakturering för Brasilien](e-invoicing-bra-get-started.md)
 - [Kom i gång med elektronisk fakturering för Mexiko](e-invoicing-mex-get-started.md)

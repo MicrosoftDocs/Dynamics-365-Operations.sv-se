@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37d78e97a6c7f9152ab0b893a35a3ae70d5adabc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d8a29e93b252c5d4ec68dfcd9ffe2f63ac1b6af2
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579650"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778043"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Gör manuella justeringar på baslinjeprognosen
 
@@ -67,7 +67,7 @@ Du kan öppna **Demand forecast sidan detaljer för** att se mer information om 
 
 **Anteckningar:**
 
--   Om du aktiverar **Val av prognosmodell på detaljer för efterfrågeprognos** från funktionshantering kan du välja vilka prognosmodeller som ska inkluderas, för den historiska prognosen på sidan **Detaljer för efterfrågeprognos**.
+-   Om du aktiverar **Val av prognosmodell på detaljer för efterfrågeprognos** från funktionshantering kan du välja vilka prognosmodeller som ska inkluderas, för den historiska prognosen på sidan **Detaljer för efterfrågeprognos**. (Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard.)
 -   De konfidensintervall som visas i **Prognosdelen** av sidan representerar skillnaden mellan konfidensintervall övre gräns och konfidensintervallet undre gräns. För att se värdena för de övre och nedre gränserna, hovra över diagrammet i den **historiska efterfrågan och prognos grafiskt** .
 -   Om du använder Microsoft Azure Machine Learning-efterfrågeprognoser, kan du ange vilken förtroendenivå som den genererade prognosen ska ha. Ett konfidensintervall består av ett antal värden som fungerar som goda prognoser för efterfrågan. En 95-procentig konfidensnivå procenttal indikerar att det finns en 5-procentig risk att efterfrågan faller utanför konfidensintervallet.
 

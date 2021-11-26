@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78be9c67eeac1307d67d70ef75751adebbc246ee69e093b1b9dbc8f408d63258
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9fbdc6addc820aadc1f5469cb059a62724cfe905
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726343"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752650"
 ---
 # <a name="cost-management-power-bi-content"></a>Kostnadshantering Power BI-innehåll
 
@@ -30,11 +30,6 @@ ms.locfileid: "6726343"
 ## <a name="overview"></a>Översikt
 
 Microsoft Power BI-innehållet **Kostnadshantering** riktar sig till lagerredovisare eller personer i organisationen som är ansvarig för eller i intresserad av status för lager eller resurser i arbete (PIA) eller som är ansvarig för eller vill analysera standardkostnadsavvikelser.
-
-> [!NOTE]
-> **Kostnadshantering** Power BI-iinehåll som beskrivs i detta avsnitt gäller Dynamics 365 Finance and Operations 8.0.
-> 
-> Power BI-innehållspaketet **Kostnadshantering** som finns tillgänglig på webbplatsen för AppSource har tagits bort. Mer information om avskrivningen finns i [Borttagna eller utfasade funktioner för Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Detta Power BI-innehållet ger ett kategoriserat format som hjälper dig att övervaka prestanda för lager och visualisera hur kostnadsflödet går mellan dem. Du kan få ledarskapsinsikt som t.ex. omsättningshastighet, antalet dagar som lager finns, exakthet och ”ABC-klassificeringen” på din föredragna aggregerade nivå (företag, artikel, artikelgrupp eller site) Informationen som görs tillgänglig kan också användas som ett detaljerat komplement till bokslutet.
 
@@ -193,7 +188,7 @@ Nedan visas de viktigaste beräknade måtten i Power BI-innehållet.
 | Lageromsättningshastighet per belopp | Lageromsättningshastighet per belopp = if(OR(\[Genomsnittligt lagersaldo\] \<= 0, \[Inventory sold or consumed issues\] \>= 0), 0, ABS(\[Sålt lager eller förbrukad utleverans\])/\[Genomsnittligt lagersaldo\]) |
 | Genomsnittligt lagersaldo          | Genomsnittligt lagersaldo = ((\[Utgående saldo\] + \[Ingående saldo\]) / 2) |
 | Lagerbehållning räknat i dagar             | Lagerbehållning räknat i dagar = 365 / CostObjectStatementEntries\[Lageromsättningshastighet per belopp\] |
-| Lagerprecision                 | Lagerexakthet efter belopp = IF(\[Slutsaldo\] \<= 0, IF(OR(\[Inventory counted amount\] \<\> 0, \[Slutsaldo\] \< 0), 0, 1), MAX(0, (\[Slutsaldo\] - ABS(\[Inventerat lagerbelopp\]))/\[Slutsaldo\])) |
+| Lagerprecision                 | Lagerexakthet efter belopp = IF(\[Slutsaldo\] \<= 0, IF(OR(\[Inventory counted amount\] \<\> 0, \[Slutsaldo\] \< 0), 0, 1), MAX(0, (\[Slutsaldo\] – ABS(\[Inventerat lagerbelopp\]))/\[Slutsaldo\])) |
 
 Följande tabell visar nyckeldimensionerna används som filter för att dela upp de sammanlagda måtten så att du kan uppnå bättre nivåer och få djupare analysinsikter.
 

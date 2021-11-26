@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f4a7ee091d73e2104571ac9134a9de9bab0a7074
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 210d92b9fd962708b141b79f3634f142cca9787a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575474"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777777"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Förbättringar i inköps-cXML
 
@@ -28,7 +28,7 @@ Funktionen _Förbättringar i inköps-cXML_ bygger på [den befintliga funktione
 
 ## <a name="turn-on-the-purchasing-cxml-enhancements-feature"></a>Aktivera funktionen förbättringar i inköps-cXML
 
-Om du vill aktivera funktionen öppnar du sidan **[funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** och söker efter funktionen med namnet *Förbättringar i inköps-cXML*. Välj funktionen och välj sedan **aktivera nu** för att aktivera den.
+Om du vill aktivera funktionen öppnar du sidan **[funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** och söker efter funktionen med namnet *Förbättringar i inköps-cXML*. Välj funktionen och välj sedan **aktivera nu** för att aktivera den. (Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard.)
 
 När du har aktiverat funktionen bör du konfigurera inställningar i följande tre områden:
 

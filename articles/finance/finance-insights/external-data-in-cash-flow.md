@@ -1,8 +1,8 @@
 ---
 title: Använd externa data i kassaflödesprognoser
-description: I det här ämnes beskrivs de konfigurationssteg som du måste utföra så att externa data kan anges i eller importeras till kassaflödesprognoser.
+description: I detta ämne beskrivs de konfigurationssteg som måste utföras för att externa data ska kunna anges i eller importeras till kassaflödesprognoser.
 author: rcarlson
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,30 +15,35 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 855f428ae8ce79f2b7ce9a6f3347cd454bad9566
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: dbfa04228cf63c0874a7d69af4e2b932544c0d7f
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386472"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753012"
 ---
 # <a name="use-external-data-in-cash-flow-forecasts"></a>Använd externa data i kassaflödesprognoser
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Externa data kan anges i eller importeras till kassaflödesprognoser. I det här avsnittet beskrivs de konfigurationssteg som är specifika för användningen av externa data och som gör att externa data kan inkluderas i en kassaflödesprognos.
 
 ## <a name="external-data-setup"></a>Konfigurera externa data
 
-Använd fliken **Extern källa** på sidan **Kassaflödesprognosinställningar** (**Kassa- och bankhantering \> Kassaflödeprognoser**) om du vill ange inställningar som stöder användning av externa data i kassaflödesprognoser.
+Använd fliken **Extern källa** på sidan **Konfiguration för kassaflödesprognos** (**Hantering av kontanter och bankärenden\> Kassaflödesprognos \> Konfiguration för kassaflödesprognos**) för att ange inställningar som stöder användning av externa data i kassaflödesprognoser.
 
-Mer information om konfigurationen finns i [Kassaflödesprognoser](../cash-bank-management/cash-flow-forecasting.md).
+Externa data kan anges i eller importeras till kassaflödesprognoser. Innan externa data anges eller importeras måste externa källor konfigureras. På fliken **Extern källa** konfigurerar du externa kassaflödeskategorier. En kategori kan vara antingen **Utgående** eller **Inkommande**. **Likviditet** bör väljas som bokföringstyp. I rutnätet **Inställningar för juridisk person** väljer du de juridiska personer och motsvarande huvudkonton som kategorierna för externt kassaflöde gäller för.
 
-Om du vill ange externa data för kassaflödesprognoser kan du använda Öppna i Excel-upplevelsen för att ange och ändra externa data. Välj knappen **Externa data** och välj sedan antingen **Lägg till externa data** eller **Redigera befintliga externa data**. När Microsoft Excel-filen öppnas kan du ange information i följande fält:
+Mer information om hur du ställer in prognoser för kassaflöden finns i [Kassaflödesprognoser](../cash-bank-management/cash-flow-forecasting.md).
 
-- **Åtkomst-ID**
+## <a name="enter-external-data"></a>Ange externa data
+
+Du kan använda funktionen **Öppna i Excel** för att ange och ändra externa data för kassaflödesprognoser. Välj knappen **Externa data** på sidan **Konfiguration för kassaflödesprognos** och välj sedan antingen **Lägg til externa data** eller **Redigera befintliga externa data**. När Microsoft Excel-filen öppnas kan du ange information i följande fält:
+
+- **Åtkomst-ID** (unikt)
 - **Beskrivning** (valfritt)
-- **Namn på extern källa** – Välj ett av de värden i listan som du definierade när du konfigurerade Finance-insikter.
+- **Namn på extern källa** – Välj ett av de värden i listan som du definierade när du konfigurerade Finance Insights.
 - **Juridisk person**
 - **Datum**
 - **Belopp i transaktionsvaluta**

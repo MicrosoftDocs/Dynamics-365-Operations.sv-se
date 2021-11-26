@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: e3f14dd25a60f8d185f0e58a0612a322c5175ab2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579890"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778267"
 ---
 # <a name="work-split"></a>Arbetsdelning
 
@@ -33,9 +33,9 @@ Med funktion för arbetsdelning kan du dela stora arbets-ID (det vill säga arbe
 
 Innan du kan använda funktionen för delning av resurser måste du aktivera funktionen och dess nödvändiga funktion i systemet. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs.
 
-Börja med att aktivera funktionen *Arbetsspärr för hela organisationen* om den inte redan är aktiverad. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+Börja med att aktivera funktionen *Arbetsspärr för hela organisationen* om den inte redan är aktiverad. Från och med version 10.0.21 av Supply Chain Management är den här funktionen obligatorisk, varför den är aktiverad som standard och inte kan stängas av igen. Funktionen anges emellertid fortfarande i [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) på följande sätt:
 
-- **Modul:** *Lagerstyrning*
+- **Modul:** *Warehouse management*
 - **Funktionsnamn:** *Arbetsspärr för hela organisationen*
 
 > [!NOTE]
@@ -125,7 +125,7 @@ Om du vill dela arbete följer du stegen nedan.
 
 1. Klicka på **Dela arbete** i åtgärdsfönstret.
 
-När arbetet delas upp visas följande meddelande: "bearbetningsåtgärd - dela arbete". Även om det här meddelandet visas kan du avbryta åtgärden genom att välja **Avbryt** i meddelanderutan.
+När arbetet delas upp visas följande meddelande: "bearbetningsåtgärd – dela arbete". Även om det här meddelandet visas kan du avbryta åtgärden genom att välja **Avbryt** i meddelanderutan.
 
 Om kryssrutan **Visa alla rader** är avmarkerad visas inte längre den rad som delades och annullerades i rutnätet. Om kryssrutan är markerad bör du se att värdet i fältet **Arbetsstatus** för den raden har ändrats till *Annullerat*.
 

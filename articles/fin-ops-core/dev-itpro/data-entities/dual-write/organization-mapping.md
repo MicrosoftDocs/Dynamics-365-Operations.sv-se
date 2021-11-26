@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 30826bf69525a85bede6ec0b64ec1a579aea26a0a6c487583739ad3fcb787a28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c7ef3a11817d60343503c80d89493262711524b1
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769256"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782318"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisationshierarki i Dataverse
 
@@ -43,7 +43,7 @@ Finance and Operations-appar | Kundengagemangsappar     | beskrivning
 [Juridiska personer](mapping-reference.md#102) | cdm_companies | Tillhandahåller dubbelriktad synkronisering av information om den juridiska personen (företag).
 [Juridiska personer](mapping-reference.md#142) | msdyn_internalorganizations |
 [Driftenhet](mapping-reference.md#143) | msdyn_internalorganizations |
-[Organisationshierarki - publicerad](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | Den här mallen innehåller en enkelriktad synkronisering av tabellen publicerad för organisationshierarki.
+[Organisationshierarki – publicerad](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | Den här mallen innehåller en enkelriktad synkronisering av tabellen publicerad för organisationshierarki.
 [Syften för organisationshierarki](mapping-reference.md#140) | msdyn_internalorganizationhierarchypurposes | Den här mallen innehåller en enkelriktad synkronisering av tabellen syfte för organisationshierarki.
 [Typ av organisationshierarki](mapping-reference.md#141) | msdyn_internalorganizationhierarchytypes | Den här mallen innehåller en enkelriktad synkronisering av tabellen typ för organisationshierarki.
 

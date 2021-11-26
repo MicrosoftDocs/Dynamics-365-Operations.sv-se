@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37017a082c33b83b78569b748e3d266da4f0df3bc03402ff4cf4a53e415d4f2c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3c5e57bb115e27880c2fee888be4ab02c51462a
+ms.sourcegitcommit: 4946b7f250f8b5cd3d09098b08e74bc5763d1c86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750289"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "7792619"
 ---
 # <a name="europe-overview"></a>Europa – översikt
 
@@ -66,7 +66,7 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
 - [Standarder för e-fakturering som stöds](emea-oioubl-standards-electronic-invoicing.md)
 - [Tvingad generering av elektroniska fakturor](emea-eur-forced-einvoices.md)
 - [Ursprunglig fakturareferens (Östeuropa)](tasks/ee-00004-original-invoice-reference.md)
-- [Partsökning via moms-ID](tasks/eur-00015-party-search-vat-id.md)
+- [Partsökning via momsregistreringsnummer](tasks/eur-00015-party-search-vat-id.md)
 - [Verktyg för generering av betalningsreferens](tasks/ee-00015-payment-reference-generation-tool.md)
 - [Betalningskvittorapport](emea-eur-payment-slip-report-giro.md)
 - [Handkassan för Östeuropa och Ryssland](emea-petty-cash.md)
@@ -85,8 +85,8 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
 - [Skattedirektiv](emea-tax-directives.md)
 - [Uppdatera hur belopp visas i rapporter och dokument](emea-amount-printing-forms.md)
 - Mervärdesskatt (moms)
-  - [Skapa moms-ID](tasks/eur-00015-vat-id.md)
-  - [Registrering av moms-ID för leverantör](tasks/eur-00015-registration-vendor-vat-id.md)
+  - [Skapa momsregistreringsnummer](tasks/eur-00015-vat-id.md)
+  - [Registrering av momsregistreringsnummer för leverantör](tasks/eur-00015-registration-vendor-vat-id.md)
   - [Momsvalutakurs – översikt](emea-vat-exchange-rate.md)
   - [Momsavstämningsrapport](tasks/eur-00018-vat-reconciliation-report.md)
   - [Momsregistrera transaktioner för Östeuropa](emea-vat-register-transactions.md)
@@ -94,6 +94,7 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
   - [Skapa och skicka en momsrapport](tasks/create-submit-vat-report.md)
   - [Visa transaktioner för kvittning för Östeuropa](emea-transactions-settlement-form.md)
   - [Bokföringsdatum (datum för momsregistering)](emea-tax-point-date.md)
+- [Funktionstillägg för ekonomiska orsaker](emea-financial-reason.md)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

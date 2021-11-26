@@ -1,7 +1,7 @@
 ---
 title: Kringutrustning
 description: Det här avsnittet förklarar koncepten som är relaterade till kringutrustning i handel.
-author: rubencdelgado
+author: BrianShook
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7b240038a946a7f34a3c69df18329edbe1df6be0
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: dbf78eec6c1b25056342f9709f3b047a8bb822ff
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500313"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779856"
 ---
 # <a name="peripherals"></a>Kringutrustning
 
@@ -146,7 +146,7 @@ UWP, när det gäller kringutrustning är relaterat till Windows stöd för Plug
 Tangentbords-wedgeenheter skickar data till datorn som om informationen har skrivits på ett tangentbord. Därför kommer som standard fältet som är aktiverat i POS att ta emot data som skannas eller dras. I vissa fall kan detta orsaka att fel typ av data skannas till fel fält. Exempelvis kan en streckkod läsas in i ett fält som är avsett för inmatning av data för kreditkort. I de flesta fall finns en logik i POS som avgör om data som skannas eller dras är en streckkod eller ett gortdragning. Därför hanteras data på rätt sätt. Men när enheterna ställs in som OPOS i stället för tangentbord-wedge-enheter finns det mer kontroll över hur data från dessa enheter kan förbrukas, eftersom man "känner till" mer om enheten som informationen kommer från. Exempelvis data från en streckkodsskanner identifieras automatiskt som en streckkod och den associerade posten i databasen hittas enklare och snabbare än om en generisk söksträng användes, vilket gäller för tangentbord-wedge-enheter.
 
 > [!NOTE]
-> När wedge-skannrar med tangentbord används i kassan måste de vara programmerade att skicka en transportretur - eller en **Ange**-händelse - efter det senast skannade tecknet. Om denna konfiguration inte slutförs kan inte wedge-skannrar för tangentbord fungera som de ska. Läs igenom dokumentationen från din enhetstillverkare om du vill ha mer information om hur du bifogar returhändelsen.  
+> När wedge-skannrar med tangentbord används i kassan måste de vara programmerade att skicka en transportretur – eller en **Ange**-händelse – efter det senast skannade tecknet. Om denna konfiguration inte slutförs kan inte wedge-skannrar för tangentbord fungera som de ska. Läs igenom dokumentationen från din enhetstillverkare om du vill ha mer information om hur du bifogar returhändelsen.  
 
 ### <a name="native-printer"></a>Inbyggd skrivare
 

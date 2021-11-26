@@ -5,16 +5,16 @@ author: laneswenka
 ms.date: 08/03/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 9f461837c65c30eace3358c231618aedf428f487
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 1fd15b5d664fead10949750678a2d3eab967af22
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675307"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781402"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Inställning av dubbelriktad skrivning från Lifecycle Services
 
@@ -28,8 +28,8 @@ I det här avsnittet beskrivs hur du aktiverar en dubbelriktad skrivning från M
 
 Du måste slutföra Power Platform-integreringen enligt beskrivningen i följande avsnitt:
 
-+ [Power Platform-integrering - Aktivera under utveckling av miljön](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
-+ [Power Platform-integrering - Aktivera efter utveckling av miljön](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
++ [Power Platform-integrering – Aktivera under utveckling av miljön](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
++ [Power Platform-integrering – Aktivera efter utveckling av miljön](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
 
 ## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Ställ in dubbelriktad skrivning för nya Dataverse-miljöer
 

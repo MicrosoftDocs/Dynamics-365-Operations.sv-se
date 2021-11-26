@@ -1,8 +1,8 @@
 ---
 title: Konfigurera Personal-parametrar
 description: Det här ämnet innehåller information om hur du ställer in företagsspecifika parametrar i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 06/23/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 476f44c665adb2918e7cd882d4ea873b4b4f94fa33a74dc96d3eccc74b676ce5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739261"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771445"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurera Personal-parametrar
 
@@ -65,7 +65,7 @@ Inställningar på **fliken Allmänt** definierar utseendet av information om fr
 
 Inställningarna på fliken **Rekrytering** definierar de dokumenttyper som används för korrespondens automatiskt till sökande. Du kan även ange vilket rekryteringsprojekt som används för oombedda ansökningar.
 
-Den period som definieras för rekrytering projektet åldrande avgör rekrytering projekt som ingår i den **åldrande projekt** panel i **rekryteringen av** arbetsytan. Den period som definieras för deadline varning används för att visa rekrytering projekt som närmar sig deras sista ansökningsdag på **sista ansökningsdag närmar sig** panelen i **rekryteringen** arbetsyta.
+Den period som anges i **Åldersfördelning för rekryteringsprojekt** avgör vilka rekryteringsprojekt som inkluderas i panelen **Åldersfördelningsprojekt** i arbetsytan **Rekryteringshantering**. Den period som definieras för deadlinevarning för ansöka används för att visa rekryteringsprojekt som närmar sig sista ansökningsdag på panelen **Sista ansökningsdag närmar sig** i arbetsytan **Rekrytering**.
 
 Mer information om rekrytering finns i [Rekrytera jobbsökande](hr-personnel-recruit.md).
 
@@ -107,20 +107,20 @@ På fliken FMLA ställer du in kraven på FMLA-berättigande och FMLA-berättiga
 
 ## <a name="employee-self-service"></a>Självbetjäning för medarbetare
 
-Inställningarna på fliken **Självbetjäning för medarbetare** påverkar hur medarbetarnas självbetjäning visas. På den här fliken kan du:
+Inställningarna på fliken **Självbetjäning för medarbetare** påverkar hur **Självbetjäning för medarbetare** visas för medarbetarna. På denna flik kan du utföra följande uppgifter:
 
-- Ange ett namn för arbetsytan Självbetjäning för medarbetare
+- Ange ett namn för arbetsytan **Självbetjäning för medarbetare**
 - Välja vilken information en chef kan ange för medarbetare
 - Lägga till användbara länkar för medarbetare
 - Hindra medarbetare från att lägga till eller redigera affärskontaktinformation. Mer information finns i [Begränsa redigering av personlig information](hr-employee-self-service-restrict-editing.md).
 
-Mer information om hur du ställer in självbetjäning för medarbetare finns [översikt över självbetjäning för medarbetare och chef](hr-employee-manager-self-service-overview.md).
+Mer information om hur du konfigurerar **Självbetjäning för medarbetare** finns i [Självbetjäningsöversikt för medarbetare och chefer](hr-employee-manager-self-service-overview.md).
 
 ![Fliken Självbetjäning för medarbetare.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Självbetjäning för chef
 
-Inställningarna på fliken **Självbetjäning för chef** påverkar vad chefer ser i Självbetjäning för chef. På den här fliken kan du konfigurera följande alternativ:
+Inställningarna på fliken **Självbetjäning för chef** påverkar det som cheferna ser i **Självbetjäning för chef**. På den här fliken kan du konfigurera följande alternativ:
 
 - Intervallet för utgående poster
 - Informationschefer kan visa i utgångsposter
@@ -128,13 +128,13 @@ Inställningarna på fliken **Självbetjäning för chef** påverkar vad chefer 
 - Vyer av medarbetare
 - Användbara länkar för chefer
 
-Mer information om hur du ställer in självbetjäning för chefer finns [översikt över självbetjäning för medarbetare och chef](hr-employee-manager-self-service-overview.md).
+Mer information om hur du konfigurerar **Självbetjäning för chef** finns i [Självbetjäningsöversikt för medarbetare och chefer](hr-employee-manager-self-service-overview.md).
 
 ![Fliken Självbetjäning för chef.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>Hantering av förmåner
 
-På fliken Förmånshantering kan du konfigurera e-postalternativ för förmånshantering. Mer information om hur du konfigurerar och använder en förmånshantering finns i [Översikt över förmånshantering](hr-benefits-management-overview.md).
+På fliken **Förmånshantering** kan du konfigurera e-postalternativ för förmånshantering. Mer information om hur du konfigurerar och använder förmånshanteringar finns i [Översikt över förmånshantering](hr-benefits-management-overview.md).
 
 ![Fliken Hantering av förmåner.](./media/hr-setup-parameters-benefits-management.png)
 

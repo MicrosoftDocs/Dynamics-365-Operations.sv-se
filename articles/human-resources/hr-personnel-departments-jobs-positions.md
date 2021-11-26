@@ -1,8 +1,8 @@
 ---
-title: Organisera arbetsstyrkan med hjälp av avdelningar, jobb och befattningar
-description: Avdelningar, jobb och befattningar är organisationselement som underhålls i Personal. Det här avsnittet beskriver begreppsmässig information om dessa element.
-author: andreabichsel
-ms.date: 06/20/2017
+title: Organisera personalen efter avdelningar, jobb och befattningar
+description: Detta ämne beskriver konceptuell information som berör avdelningar, jobb och befattningar som utgör organisationselement som underhålls i Personal.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: cd50bf7e8e03d72d6d0e1e2b0b065a5d9c7a3ef44e96f92a5fc342a0d820d8e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 51335cba0e0dce755ce36fbe13c6294fca58d797
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778806"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731818"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisera personalen efter avdelningar, jobb och befattningar
 
@@ -49,7 +49,6 @@ En avdelning är en driftenhet som representerar en kategori eller ett funktione
 ## <a name="jobs-and-positions"></a> Jobb och befattningar
 Ett jobb är en samling uppgifter och ansvarsområden som krävs av en person, som utför ett jobb. En befattning är ett exempel på ett enskilt jobb. Ansvarsområden, jobbuppgifter, jobbfunktioner, information om färdigheter, intyg och utbildning som är obligatoriska för ett jobb, är också obligatoriska för befattningar som är kopplade till ett jobb.
 ### <a name="job-tasks"></a>Jobbuppgifter
-
 Du kan skapa jobbuppgifter som beskriver grundläggande uppgifter, som en anställd i en befattning för det jobbet måste utföra. Samma jobbuppgift kan läggas till flera jobb och befattningar eftersom dessa jobb ärver jobbuppgifterna. Exempel på jobbuppgifter finns i följande tabell.
 
 <table>
@@ -106,24 +105,21 @@ Befattningar är ett viktigt element i den lägre nivån i en organisationshiera
 -   Du kan ställa in arbetsflöden, så att befattningtillägg och ändringar kan kräva godkännande.
 
 ### <a name="position-duration"></a>Befattningstidslängd
-
 Varje befattning har en tidslängd som befattningen ska gälla. Den tidslängden kallas för varaktighet. Du kan till exempel ha sommarbefattningar med varaktighet 1 maj 2015 till 31 augusti 2015.
 
 ### <a name="worker-assignments"></a>Tilldelningar för arbetare
-
 När du tilldelar en anställd till en befattning, fyller du den befattningen. Du kan tilldela flera anställda till befattningar, men bara en anställd kan tilldelas en befattning samtidigt.
 
 ### <a name="reporting-relationships"></a>Relationer till överordnad
+Befattningar är ett viktigt element i den lägre nivån i en organisationshierarki. På sidan **Befattning** kan du ange den befattning som en befattning rapporterar till. När du tilldelar en anställd till en befattning som rapporterar till en annan befattning, skapar du en rapporteringrelation mellan arbetarna som tilldelas de två befattningarna. Till exempel rapporterar befattningen ”revisor-A” till befattning ”Redovisningschef". Anna Boman tilldelas befattningen ”Redovisningschef" och Felix Henriksson befattningen "Revisor-A”. Detta betyder att Felix Henriksson rapporter till Ana Enerman. 
 
-Befattningar är ett viktigt element i den lägre nivån i en organisationshierarki. I formuläret Befattning kan du ange var en befattning som rapporterar till. När du tilldelar en anställd till en befattning som rapporterar till en annan befattning, skapar du en rapporteringrelation mellan arbetarna som tilldelas de två befattningarna. Till exempel rapporterar befattningen ”revisor-A” till befattning ”Redovisningschef". Kim Akers tilldelas befattningen ”Redovisningschef" och Sanjay Patel tilldelas befattningen "revisor-A”. Det innebär att Sanjay Patel rapporterar till Kim Akers. 
+Om din organisation använder en matrishierarki eller en annan anpassad hierarki, kan du ställa in befattninghierarkityper, och sedan lägga till rapporteringrelationer till befattningar för varje hierarkityp som du ställer in. Exempelvis är Olivia Nilsson chef på Adventure Works och tilldelas befattningen "Chef". Olivia leder utvecklingen av en produkt som används för att rena gränssnittskomponenter. Olivia kräver att en revisor hjälper henne med finanserna för att utveckla produkten. Därför har hon rekryterat Felix Henriksson som sin revisor. Felix rapporterar direkt till Anna Boman, men arbetar också tillsammans med Olivia Nilsson i sitt arbete som är relaterat till finanserna för att utveckla rengöringsmedlet för gränssnittskomponenter. 
 
-Om din organisation använder en matrishierarki eller en annan anpassad hierarki, kan du ställa in befattninghierarkityper, och sedan lägga till rapporteringrelationer till befattningar för varje hierarkityp som du ställer in. Exempelvis är Lori Penor chef på Adventure Works och tilldelas befattningen "Chef". Lori hanterar utvecklingen av en produkt som används för att rena gränssnittskomponenter. Lori kräver att en revisor hjälper henne med finanserna för att utveckla produkten. Därför hon har rekryterat Sanjay Patel för att vara hennes revisor. Sanjay rapporterar direkt till Kim Akers, men arbetar också med Lori Penor i dennes arbete som är relaterat till finanserna för att utveckla gränssnittskomponentrengöringsmedlet. 
-
-För det tidigare exemplet ska du utföra följande uppgifter om du vill ange arbetsrelationen mellan Sanjay Patel och Lori Penor:
+För föregående exempel ska du utföra följande uppgifter om du vill ange arbetsrelationen mellan Felix Hendersson och Anna Boman:
 1.  Skapa en anpassad befattningshierarkityp kallad Gränssnittskomponent” för att skapa en hierarki som inkluderar befattningar som ansvarar för arbete med gränssnittskomponentrengöringsmedelprodukten.
 2.  Tilldela rbefattningen Chef att vara den befattning där befattningen Revisor-A rapporterar till i gränssnittskomponenthierarkin.
 
-Använd befattninghierarkin om du vill visa rapporteringstrukturen av befattningar. Om du har flera befattninghierarkier, kan du visa hierarkin för varje hierarki i befattninghierarkin. Du kan även söka efter en befattning efter befattnings-ID eller efter namnet på den arbetare som hör till befattningen. Befattninghierarkin är en organisationshierarki.
+Använd sidan **Befattningshierarki** om du vill visa befattningarna rapporteringsstruktur. Om du har flera befattninghierarkier kan du visa hierarkin för varje enskild hierarki i **befattninghierarkin**. Du kan även söka efter en befattning efter befattnings-ID eller efter namnet på den arbetare som hör till befattningen. **Befattningshierarkin** är en organisationshierarki.
 
 ## <a name="date-effective-records"></a>Poster för giltighetsdatum
 För alla poster kan du ange framtida ändringar i posten. Följande information är giltighetsdatum.
@@ -155,13 +151,5 @@ För alla poster kan du ange framtida ändringar i posten. Följande information
 </tr>
 </tbody>
 </table>
-
-Du kan ändra informationen som nämns i tabellen ovan för en befattning eller ett jobb och ange ett datum, när ändringarna till befattningen eller jobbet ska genomföras. Till exempel kan en befattning endast tilldelas till en anställd, men Sanjay Patel, som är tilldelad befattningen Revisor-A lämnar den om två veckor. Joe Healy ska ersätta Sanjay Patel, när Sanjay lämnar. Även om Sanjay fortfarande tilldelas hans befattning, kan du tilldela Joe Healy till samma befattning så att tilldelningen är bara gäller efter Sanjays sista dag.
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

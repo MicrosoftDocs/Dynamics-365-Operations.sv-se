@@ -1,8 +1,8 @@
 ---
 title: Begär ledig tid
 description: Begär ledig tid i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f8fead1105412e5fe967a19632e1875058f4026c722140eaed056c5412c6558f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e12ac21e80c46f5cb5f231aadab7272fc279194
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756110"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771422"
 ---
 # <a name="request-time-off"></a>Begär ledig tid
 
@@ -42,11 +42,11 @@ Du kan skicka in en begäran om ledighet, visa semestern och lämna saldon och s
 
 6. Välj **skicka** när du är redo att skicka din begäran. Annars väljer du **Spara utkast**.
 
-Medarbetare som skickar en ny tjänstledighetsbegäran kan välja olika typer av tjänstledighet när de vill skapa sin tjänstledighetsbegäran. Alla tjänstledighetstyper som väljs som en del av en enda tjänstledighetsbegäran ska dock ha samma tjänstledighetsenhet. Medarbetare kan visa tjänstledighetsenheten för varje tjänstledighetstyp i formuläret **Ledighetsbegäran**. 
+Medarbetare som skickar en ny tjänstledighetsbegäran kan välja olika typer av tjänstledighet när de vill skapa sin tjänstledighetsbegäran. Alla tjänstledighetstyper som väljs som en del av en enda tjänstledighetsbegäran ska dock ha samma tjänstledighetsenhet. Medarbetare kan visa tjänstledighetsenheten för respektive tjänstledighetstyp på sidan **Ledighetsbegäran**.
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Lägg till en bilaga i en befintlig begäran
 
-När du uppdaterar en befintlig ledighetsansökan kan du lägga till en bilaga. Du kan också se alla relaterade begäran för ett visst datum.
+När du uppdaterar en befintlig ledighetsansökan kan du lägga till en bilaga. Du kan också se alla relaterade begäranden för ett visst datum.
 
 ## <a name="view-leave-balances"></a>Visa ledighetssaldon
 
@@ -60,11 +60,11 @@ När du uppdaterar en befintlig ledighetsansökan kan du lägga till en bilaga. 
 
 2. Om du vill visa godkända ledighetsansökningar väljer du **Godkänd ledighet**. Om du vill visa väntande ledighetsansökningar väljer du **Ledighetsansökningar**.
 
-## <a name="cancel-time-off-requests"></a>Avbryt ansökningar om ledighet
+## <a name="cancel-time-off-requests"></a>Annullera ansökningar om ledighet
 
 1. I arbetsytan **Självbetjäning för medarbetare** väljer du **Visa ledig tid** i panelen **Ledighetssaldon**.
 
-2. I formuläret **Ledighet** väljer du en eller flera förfrågningar om ledighet att avbryta.
+2. På sidan **Ledighet** väljer du en eller flera begäranden om ledighet som du vill annullera.
 
 3. Välj knappen **Avbryt**.
 

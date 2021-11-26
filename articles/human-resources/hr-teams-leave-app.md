@@ -1,8 +1,8 @@
 ---
 title: Hantera ansökningar om ledighet i Teams
 description: I det här avsnittet beskrivs hur du begär ledighet i Dynamics 365 Human Resources-appen i Microsoft Teams.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 94fa4dca7ff8372d4cf1aeee225e821574f4104048db5ad8a816be2bce496de8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10538c96a7637a95c60beef40a02fdb5432959ec
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725876"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771541"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Hantera begäranden om ledighet i Teams
 
@@ -41,7 +41,7 @@ Du hittar appen Dynamics 365 Human Resources i Teams-butiken.
 Om appen inte logga in dig automatiskt väljer du fliken **Inställningar** för att logga in.
 
 > [!NOTE]
-> Om du inte ser någon dialogruta för inloggning kontrollerar du att webbläsarinställningarna tillåter popup-fönster. 
+> Om du inte ser någon dialogruta för inloggning uppdaterar du dina webbläsarinställningar så att dessa tillåter popup-fönster. 
 
 Om du har till gång till mer än en instans av Personal kan du välja vilken miljö du vill ansluta till på fliken **Inställningar**.
 
@@ -53,13 +53,13 @@ Om du har till gång till mer än en instans av Personal kan du välja vilken mi
 När appen har installerats visas ett välkomstmeddelande som anger vilka typer av åtgärder roboten kan vidta för din räkning.
 
 > [!NOTE]
-> När du interagerar med roboten för första gången måste du kanske logga in. Om du inte ser någon dialogruta för inloggning kontrollerar du att webbläsarinställningarna tillåter popup-fönster.
+> När du först interagerar med roboten måste du kanske logga in. Om du inte ser någon dialogruta för inloggning uppdaterar du dina webbläsarinställningar så att dessa tillåter popup-fönster.
 
 Du kan be roboten att:
 
 - Visa aktuella tjänstledighetssaldon. Skicka till exempel ett meddelande där det står "Visa tjänstledighetssaldon".
 
-- Påbörja en ledighetsbegäran åt dig. Skicka till exempel ett meddelande där det står: "Ta ledigt" eller "Jag vill ta semester nästa torsdag och fredag" som är mer specifik för att begära tjänstledighet för semestertypen. 
+- Påbörja en ledighetsbegäran åt dig. Skicka till exempel ett meddelande där det står "Ta ledigt" eller "Jag vill ta semester nästa torsdag och fredag" för att vara mer specifik när du begär tjänstledighet av semestertyp. 
 
   ![Starta en tjänstledighetsbegäran i Teams-chatten.](./media/hr-teams-leave-app-initiate.png)
 
@@ -83,7 +83,7 @@ På fliken **Ledighet** kan du visa:
 
 - Kommande ansökningar om tjänstledighet
 
-- Ansökningar om ledighet
+- Ansökningar om ledig tid
 
 - Utkast till ansökan om tjänstledighet
  
@@ -113,7 +113,7 @@ På fliken **Ledighet** kan du visa:
    
 ### <a name="respond-to-teams-notifications"></a>Svara på Teams-meddelanden
 
-När du eller en arbetare är godkännare för att skicka en begäran om ledighet får du ett meddelande i Personal-appen i Teams. Du kan välja meddelandet om du vill visa det. Meddelanden visas också i området **Chatt** .
+När du eller en medarbetare som du är godkännare för skickar in en begäran om ledighet får du ett meddelande i Personal-appen i Teams. Du kan välja meddelandet om du vill visa begäran om ledighet. Meddelanden visas också i området **Chatt** .
 
 Om du är en godkännare kan du välja **Godkänn** eller **Neka** i meddelandet. Du kan också ange ett valfritt meddelande.
 
@@ -167,7 +167,7 @@ Om du har problem med att logga in på eller använda Teams-appen Dynamics 365 H
 
 Om du inte kan logga in i appen är det möjligt att det konto du använder för att logga in i Microsoft Teams inte är associerat med en medarbetarpost i Dynamics 365 Human Resources. Kontakta systemadministratören för att se till att din medarbetarpost är korrekt associerad.
 
-### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>Det går inte att hitta Dynamics 365 Human Resources-miljön i Inställningar
+### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>Det går inte att hitta Dynamics 365 Human Resources-miljön bland inställningarna
 
 Om du inte kan välja korrekt Dynamics 365-miljö kanske användarposten inte har synkroniserats korrekt. Kontakta systemadministratören om du vill skapa användarposten på nytt och koppla den till användarreferenserna. Försök sedan att logga in på Personal-programmet Microsoft Teams under några minuter.
 
@@ -199,7 +199,7 @@ Om du får ett fel när du försöker godkänna tjänstledighetsbegäranden i Te
 
 2. Se till att användarna är inloggade på fliken **Chattar** med samma autentiseringsuppgifter som när de godkänner tjänstledighetsansökningar. Använd meddelandena "logga ut" och sedan "logga in" för att logga in med rätt autentiseringsuppgifter.
 
-3. Om problemet kvarstår kontrollerar du statusen för batchjobbet i Business Events-systemet som systemadministratör. Om denna befinner sig i en väntande eller en utförande fast försöker du igen om några minuter. Om statusen inte ändras skapar du en supportbegäran så att vårt team kan hjälpa till att lösa problemet.
+3. Om problemet kvarstår kontrollerar du statusen för batchjobbet i **Business Events-systemet** som systemadministratör. Om denna befinner sig i **Väntande** eller **Utförande** fas ber vi dig att återkomma om några minuter. Om statusen inte ändras skapar du en supportbegäran så att vårt team kan hjälpa till att lösa problemet.
 
 ## <a name="known-accessibility-issues"></a>Kända tillgänglighetsproblem
 
@@ -208,7 +208,7 @@ Appen Personal i Team har följande tillgänglighetsproblem som vi arbetar med a
 | Utleverans | Lösning eller förklaring |
 | --- | --- |
 | Om du zoomar till 400 % på skrivbordet döljs vissa av åtgärdsknapparna i vyn. | Vi rekommenderar att du använder en skärmförstorare istället för att använda den här zoomningsnivån. |
-| Under fliken **Ledighet** tillkännager VoiceOver en knappåtgärd samtidigt som rubriken för ledighetsrutnätet läses upp. | Rubriken och elementen i rutnätet är grupperade efter år och de är döljbara. Med VoiceOver tolkas detta som en åtgärdsbar artikel, men det är inte det. |
+| På fliken **Ledighet** tillkännager VoiceOver en knappåtgärd samtidigt som den avläser sidhuvudet för ledighetsrutnätet. | Sidhuvudet och elementen i rutnätet är grupperade efter år och kan döljas. VoiceOver tolkar denna presentation som en åtgärdsbar artikel, men det är den inte. |
 | Under fliken **Ledighet** finns en extra svepgest när du navigerar till **Orsakskod** i en ny begäran. | Det finns ingen dold kontroll som svepnavigeringen försöker nå. |
 | Under fliken **Ledighet**, om du sveper när kalendern är öppen, hamnar du utanför kontrollen istället för längst upp i en ny begäran eller när du redigerar en begäran. | När du kommer till **Gå till idag**, se det som slutet på kontrollen och svep i motsatt riktning för att komma tillbaka till toppen. |
 | Under fliken **Chatt** hoppar fokus tillbaka till toppen när du anger ett datum samtidigt som du använder hjälpverktyget eller tangentbordsnavigeringen. | TABB tills du kommer till inmatningsområdet igen. |
@@ -217,9 +217,9 @@ Appen Personal i Team har följande tillgänglighetsproblem som vi arbetar med a
 
 ### <a name="microsoft-language-understanding-intelligent-service-luis"></a>Microsoft Language Understanding Intelligent Service (LUIS)
 
-Med Dynamics 365 Human Resources-roboten i Microsoft Teams analyseras användarens textinmatningar i syfte att förstå den underliggande frågeställningen eller avsikten. Användarens indata, t.ex. "Sök konto Contoso", vidarebefordras till en av Microsofts kognitiva tjänster som kallas LUIS (Language Understanding Intelligent Service). Läs mer om LUIS [här](https://www.luis.ai/). LUIS-tjänsten disambiguerar eller förstår syftet med användarindata (i det här fallet, avsikten att hitta information) och målentiteten (i det här fallet är den avsedda entiteten ett konto med namnet Contoso). Denna information överförs sedan till [Azure-robotramverk](https://azure.microsoft.com/services/bot-service/)  som samverkar med data från Dynamics 365 Human Resources och hämtar den önskade informationen för användarfrågan. 
+Med Dynamics 365 Human Resources-roboten i Microsoft Teams analyseras användarens textinmatningar i syfte att förstå den underliggande frågeställningen eller avsikten. Användarens indata, t.ex. "Sök konto Contoso", vidarebefordras till en av Microsofts kognitiva tjänster som kallas LUIS (Language Understanding Intelligent Service). Läs mer om LUIS [här](https://www.luis.ai/). LUIS-tjänsten disambiguerar eller förstår syftet med användarindata (i det här fallet är avsikten att hitta information) och målentiteten (i det här fallet är den avsedda entiteten ett konto med namnet Contoso). Denna information överförs sedan till Microsofts [Azure Bot Framework](https://azure.microsoft.com/services/bot-service/)  som samverkar med data från Dynamics 365 Human Resources och hämtar den önskade informationen för användarfrågan. 
 
-Genom att installera och tillåta åtkomst till robotprogrammet godkänner du att LUIS-tjänsten och Azure-robotramverket kan bearbeta avsikten bakom inmatningen, vilket leder till en förbättrad användarupplevelse i konversationen. LUIS-tjänsten och Azure-robotramverket kan ha varierande nivåer av kompatibilitet jämfört med Dynamics 365 Human Resources. LUIS-tjänsten har endast åtkomst till användarfrågeställningarna och är inte utformad för att vara ansluten till användarens Dynamics 365 Human Resources-data eller -konto, och en användare av Dynamics 365 Human Resources-roboten kan frivilligt ange en frågeställning som innehåller kunddata, personliga data eller andra data, och detta frågeinnehåll kan komma att skickas till LUIS-tjänsten och Azure-robotramverket. 
+Genom att installera och tillåta åtkomst till robotprogrammet godkänner du att LUIS-tjänsten och Azure Bot Framework kan bearbeta avsikten bakom inmatningen, vilket leder till en förbättrad användarupplevelse i konversationen. LUIS-tjänsten och Azure Bot Framework kan ha varierande nivåer av kompatibilitet jämfört med Dynamics 365 Human Resources. Även om LUIS-tjänsten endast har åtkomst till användarfrågorna och inte utformats för att vara ansluten till användarens Dynamics 365 Human Resources-data eller -konto, kan en en användare av Dynamics 365 Human Resources-roboten frivilligt ange en fråga som innehåller kunddata, personliga data eller andra data, och detta frågeinnehåll kan komma att skickas till LUIS-tjänsten och Azure Bot Framework. 
 
 Innehållet i användarens frågeställningar och meddelanden behålls i LUIS-systemet under högst 30 dagar, är krypterat i vila och används inte för utbildning eller serviceförbättring. Läs mer om kognitiva tjänster [här](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
 
@@ -227,9 +227,9 @@ Om du vill hantera administrationsinställningar för appar i Microsoft Teams g�
 
 ### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams, Azure Event Grid och Azure Cosmos DB
 
-När du använder meddelandefunktionen för Dynamics 365 Human Resources-appen i Microsoft Teams kan vissa kunddata flöda utanför det geografiska område där medarbetarens Personal har distribuerats.
+När du använder Dynamics 365 Human Resources-appen i Microsoft Teams  kan vissa kunddata komma flöda utanför det geografiska område där din klientorganisations personaltjänst har distribuerats.
 
-Dynamics 365 Human Resources överför medarbetarens information om tjänstledighet och arbetsflödes uppgifter till Microsoft Azure Event Grid och Microsoft Teams . Dessa data kan lagras i Microsoft Azure Event Grid i upp till 24 timmar och bearbetas i USA, krypteras i transit och vila och används inte av Microsoft eller dess under processer för utbildning eller serviceförbättringar. Mer information om var dina data lagras i Teams finns i: [plats för data i Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
+Dynamics 365 Human Resources överför medarbetarens begäran om tjänstledighet och arbetsflödesuppgifter till Microsoft Azure Event Grid och Microsoft Teams . Dessa data kan lagras i Microsoft Azure Event Grid i upp till 24 timmar och bearbetas i USA, krypteras i transit och vila och används inte av Microsoft eller dess under processer för utbildning eller serviceförbättringar. Mer information om var dina data lagras i Teams finns i: [plats för data i Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
 
 Medan du samtalar med chattroboten i Personal-appen kan konversationsinnehållet lagras i Azure Cosmos DB och skickas till Microsoft Teams. Denna data kan lagras i Azure i Cosmos DB i upp till 24 timmar och kan bearbetas utanför det geografiska område där klientorganisationens Personal har distribuerats, krypteras i transit och vila och används inte av Microsoft eller dess under processer för utbildning eller serviceförbättringar. Mer information om var dina data lagras i Teams finns i: [plats för data i Microsoft Teams](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
  

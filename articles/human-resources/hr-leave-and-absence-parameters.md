@@ -1,8 +1,8 @@
 ---
 title: Konfigurera tjänstledighets- och frånvaroparametrar
-description: Definiera personalparametrar för tjänstledighet och frånvaro i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 11/02/2020
+description: I detta ämne beskrivs hur du definierar personalparametrar för tjänstledighet och frånvaro i Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab4b2b3adefa388acfadc77c7b25a6b47d01571f0e58f6ab81101e25d1b548e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d89c4b22d71057fd3b398c91e1fbf04112e4a9
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777969"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728867"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurera tjänstledighets- och frånvaroparametrar
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Innan du ställer in tjänstledighets- och frånvaroplan i Dynamics 365 Human Resources kan det vara en bra idé att kontrollera inställningarna för alla relaterade personalparametrar, t.ex.:
+Innan du konfigurerar tjänstledighets- och frånvaroplaner i Dynamics 365 Human Resources kan det vara en bra idé att kontrollera inställningarna för alla relaterade **personalparametrar**, t.ex.:
 
 - Nummerserie för tjänstledighetsansökan
 - Inställning av Family Medical and Leave Act (FMLA)
@@ -74,7 +74,7 @@ Innan du ställer in tjänstledighets- och frånvaroplan i Dynamics 365 Human Re
 
     - Välj **saldoberäkning** om du vill visa saldon som visas från och med den period som ska periodiseras. Om du väljer **saldo från idag** visar saldot summan av alla periodiseringar, justeringar och begäranden från och med idag. Om du väljer **saldo för en periodiseringsperiod**, visar saldot summan av alla periodiseringar, justeringar och förfrågningar per den periodiseringsperiod som definieras av frekvensen i planen för tjänstledighet. 
 
-    - Ange starttiden för batchjobbet för förfallet av överföringsdatumet.  
+    - Ange **Starttiden** fö batchjobbet **Förfallodatum för överföring**.  
     
     - Välj **Ja** om **låt medarbetare köpa tjänstledighet** och **låta medarbetare sälja sina tjänstledighet**. Om du väljer **Ja** för dessa alternativ kan du skapa inköps- och försäljningsprincip för tjänstledighet och göra det möjligt för medarbetare att skicka in begäran inköps- och försäljningsprincip.
 

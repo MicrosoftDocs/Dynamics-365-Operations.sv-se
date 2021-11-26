@@ -2,7 +2,7 @@
 title: Skapa en konfiguration för att generera dokument i Excel-format
 description: Det här avsnittet beskriver hur du utformar ett elektroniskt rapporteringsformat (ER) för att fylla i en Excel-mall och sedan generera utgående dokument i Excelformat.
 author: NickSelin
-ms.date: 09/14/2021
+ms.date: 10/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: cfacc2232201b85a49068ee724b55e71b60eb2be
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488148"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731648"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Skapa en konfiguration för att generera dokument i Excel-format
 
@@ -85,6 +85,8 @@ På fliken **Mappning** i ER-åtgärdsdesignern kan du konfigurera egenskapen **
 
 **Intervall**-komponenten anger ett Excel-intervall som måste kontrolleras av denna ER-komponent. Namnet på intervallet definieras i egenskapen **Excel-intervall** för den här komponenten.
 
+### <a name="replication"></a>Replikering
+
 Egenskapen **Replikeringsriktning** anger om och hur intervallet ska upprepas i ett genererat dokument:
 
 - Om egenskapen **Replikeringsriktning** anges som **Ingen replikering** upprepas inte det aktuella Excel-intervallet i det genererade dokumentet.
@@ -92,6 +94,8 @@ Egenskapen **Replikeringsriktning** anger om och hur intervallet ska upprepas i 
 - Om egenskapen **Replikeringsriktning** anges som **Horisontell** upprepas lämpligt Excel-intervall i det genererade dokumentet. Varje replikerat intervall placeras till höger om det ursprungliga intervallet i en Excel-mall. Antalet upprepningar definieras av antalet poster i en data källa för den typ av **Postlista** som är bunden till den här ER-komponenten.
 
 Om du vill veta mer om vågrät replikering följer du stegen i [Använd vågrätt expanderbara intervall för att dynamiskt lägga till kolumner i Excel-rapporter](tasks/er-horizontal-1.md).
+
+### <a name="nested-components"></a>Kapslade komponenter
 
 **Intervall**-komponenten kan ha andra kapslade ER-komponenter som används för att ange värden i lämpliga Excel-namngivna intervall.
 
@@ -105,11 +109,40 @@ Om du vill veta mer om vågrät replikering följer du stegen i [Använd vågrä
     > [!NOTE]
     > Använd det här mönstret om du vill göra det möjligt för Excel-programmet att formatera angivna värden baserat på språkinställningen för den lokala dator som öppnar det utgående dokumentet.
 
+### <a name="enabling"></a>Aktiverar
+
 På fliken **Mappning** i ER-åtgärdsdesignern kan du konfigurera egenskapen **Aktiverad** för en **Intervall**-komponent i syfte att ange om komponenten ska placeras i ett genererat dokument:
 
 - Om ett uttryck för egenskapen **Aktiverad** har konfigurerats att returnera **True** vid körning, eller om inget uttryck har konfigurerats alls, ifylles lämpligt intervall i det genererade dokumentet.
 - Om ett uttryck för egenskapen **Aktiverad** har konfigurerats att returnera **False** vid körning, och om detta intervall inte representerar hela raderna eller kolumnerna, kommer lämpligt intervall inte att ifyllas i det genererade dokumentet.
 - Om ett uttryck för egenskapen **Aktiverad** har konfigurerats att returnera **False** vid körning, och om detta intervall representerar hela raderna eller kolumnerna, kommer det genererade dokumentet att omfatta dessa rader och kolumner som dolda radera och kolumner.
+
+### <a name="resizing"></a>Ändra storlek
+
+Du kan konfigurera din Excel-mall till att använda celler för att presentera textdata. Om du vill vara säker på att hela texten i en cell blir synlig i ett genererat dokument kan du konfigurera den cellen att automatiskt radbryta texten i den. Du kan även konfigurera raden som innehåller cellen att automatiskt justera dess höjd om den radbrutna texten inte är fullt synlig. Mer information finns i avsnittet "Radbryt text i en cell" i [Korrigera data som är avklippt i celler](https://support.microsoft.com/office/fix-data-that-is-cut-off-in-cells-e996e213-6514-49d8-b82a-2721cef6144e).
+
+> [!NOTE]
+> En känd [Excel-begränsning](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353) gör att du – även om du konfigurerar celler att radbryta text, samt konfigurerar de rader som innehåller dessa celler att automatiskt höjdjusteras i syfte att rymma den radbrutna texten – kanske inte kan använda Excel-funktionerna **Autopassa** och **Radbrytning** för sammanfogade celler och de rader som innehåller dem. 
+
+Från och med Dynamics 365 Finance-version 10.0.23 kan du tvinga ER att i ett genererat dokument beräkna höjden för varje enskild rad som konfigurerats att automatiskt höjdanpassas efter innehållet i kapslade celler närhelst den raden innehåller minst en sammanfogad cell som konfigurerats att radbryta den text som finns i densamma. Den beräknade höjden används sedan för att ändra storleken på raden för att säkerställa att alla celler i raden är synliga i det genererade dokumentet. Följ dessa steg om du vill börja använda den här funktionen när du kör eventuella ER-format som konfigurerats för att använda Excel-mallar för att generera utgående dokument.
+
+1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
+2. På sidan **lokaliseringskonfiguration** i avsnittet **Relaterade länkar** väljer du **parametrar för elektronisk rapportering**.
+3. På sidan **Parametrar för elektronisk rapportering**, på fliken **Körning**, anger du alternativet **Anpassa radhöjd automatiskt** som **Ja**.
+
+När du vill ändra den här regeln för ett enda ER-format uppdaterar du utkastversionen av det formatet genom att följa stegen nedan.
+
+1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
+2. På sidan **Lokaliseringskonfiguration** i avsnittet **Konfigurationer** väljer du **Rapporteringskonfiguration**.
+3. Ppå sidan **Konfigurationer**, i konfigurationsträdet i vänstra fönstret, väljer du en ER_konfiguration som utformats för att använda en Excel-mall i syfte att generera utgående dokument.
+4. På snabbfliken **Versioner** väljer du den konfigurationsversion som har statusen **Utkast**.
+5. Klicka på **Designer** i åtgärdsfönstret.
+6. I formatträdet i vänstra fönstret på sidan **Formatdesigner** väljer du den Excel-komponent som kopplats till en Excel-mall.
+7. På fliken **Format**, i fältet **Justera radhöjd**, väljer du ett värde för att ange huruvida ER ska framtvingas vid körning i syfte att ändra höjden på rader i ett utgående dokument som genererats av det redigerade ER-formatet:
+
+    - **Standard** – Använd den allmänna inställningen som är konfigurerad i fältet **Automatisk anpassning av radhöjd** på sidan **Parametrar för elektronisk rapportering**.
+    - **Ja** – Åsidosätt den allmänna inställningen och ändra radhöjden vid körning.
+    - **Nej** – Åsidosätt den allmänna inställningen och ändra inte radhöjden vid körning.
 
 ## <a name="cell-component"></a>Cellkomponent
 
@@ -130,7 +163,7 @@ När en **cell**-komponent konfigureras för att ange ett värde i en Excel-figu
 När en **Cell**-komponent konfigureras för att ange ett värde i Excel-bild kan den bindas till en datakälla som returnerar ett värde av datatypen **Behållare** som representerar en bild i ett binärt format. I det här fallet anges värdet i Excel-bilden som en bild.
 
 > [!NOTE]
-> Alla Excel-bilder och -former betraktas som förankrade med sitt övre vänstra hörn till en viss Excel-cell eller ett visst Excel-intervall. Om du vill replikera en Excel-bild eller -form måste du konfigurera cellen eller intervallet som den är fäst till som en replikerad cell eller ett cellområde.
+> Alla Excel-bilder och -former betraktas som förankrade med sitt övre vänstra hörn till en viss Excel-cell eller ett visst Excel-intervall. Om du vill replikera en Excel-bild eller -form måste du konfigurera cellen eller intervallet som den är fäst till som en replikerad cell eller ett intervall.
 
 Mer information om hur du bäddar in bilder och former finns i [Bädda in bilder och former i dokument som du skapar med hjälp av ER](electronic-reporting-embed-images-shapes.md).
 
@@ -148,12 +181,12 @@ Om du måste dela upp ett genererat dokument i olika avsnitt, som har olika sidn
 
 ### <a name="structure"></a><a name="page-component-structure"></a>Struktur
 
-Om den första komponenten under **Sidkomponenten** är [Intervallkomponent](er-fillable-excel.md#range-component) där egenskapen **Replikeringsriktning** anges till **Ingen replikering**, detta område betraktas som sidhuvudet för sidnumreringen som är baserat på inställningarna för den aktuella **sidkomponenten**. Det Excel-intervall som är kopplat till den här formatkomponenten upprepas högst upp på varje sida som genereras med hjälp av inställningarna för den aktuella **sidkomponenten**.
+Om den första komponenten under **Sidkomponenten** är [Intervallkomponent](er-fillable-excel.md#range-component) där egenskapen **Replikeringsriktning** anges till **Ingen replikering**, detta intervall betraktas som sidhuvudet för sidnumreringen som är baserat på inställningarna för den aktuella **sidkomponenten**. Det Excel-intervall som är kopplat till den här formatkomponenten upprepas högst upp på varje sida som genereras med hjälp av inställningarna för den aktuella **sidkomponenten**.
 
 > [!NOTE]
 > För korrekt sidnumrering, om intervallet [Rader att upprepa överst](https://support.microsoft.com/office/repeat-specific-rows-or-columns-on-every-printed-page-0d6dac43-7ee7-4f34-8b08-ffcc8b022409) är konfigurerad i din Excel-mall måste adressen för detta Excel-intervall vara lika med adressen för Excel-intervallet som är associerat med det tidigare beskrivna **Intervallkomponenten**.
 
-Om den sista komponenten under **Sidkomponenten** är **Intervallkomponent** där egenskapen **Replikeringsriktning** anges till **Ingen replikering**, detta område betraktas som sidfoten för sidnumreringen som är baserat på inställningarna för den aktuella **sidkomponenten**. Det Excel-intervall som är kopplat till den här formatkomponenten upprepas längst ned på varje sida som genereras med hjälp av inställningarna för den aktuella **sidkomponenten**.
+Om den sista komponenten under **Sidkomponenten** är **Intervallkomponent** där egenskapen **Replikeringsriktning** anges till **Ingen replikering**, detta intervall betraktas som sidfoten för sidnumreringen som är baserat på inställningarna för den aktuella **sidkomponenten**. Det Excel-intervall som är kopplat till den här formatkomponenten upprepas längst ned på varje sida som genereras med hjälp av inställningarna för den aktuella **sidkomponenten**.
 
 > [!NOTE]
 > Vid korrekt sidnumrering bör de Excel-intervall som associeras med **intervallkomponenterna** inte ändras när de körs. Vi rekommenderar inte att du formaterar celler i detta intervall med hjälp av **Radbryt text i en cell** och **Autoanpassning radhöjd** Excel [alternativ](https://support.microsoft.com/office/wrap-text-in-a-cell-2a18cff5-ccc1-4bce-95e4-f0d4f3ff4e84).
@@ -245,7 +278,7 @@ När du validerar ett ER-format som kan redigeras görs en konsekvenskontroll f�
 
 När ett utgående dokument i ett Microsoft Excel arbetsboksformat genereras, kan vissa celler i det här dokumentet innehålla Excel-formler. När funktionen **Aktivera användning av EPPlus bibliotek i ramverket för elektronisk rapportering** är aktiverad kan du styra när formlerna beräknas genom att ändra värdet för **Beräkningsalternativ**-[parametern](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) i Excel-mallen som används:
 
-- Välj **Automatisk** för att beräkna om alla beroende formler varje gång som ett genererat dokument läggs till av nya områden, celler osv.
+- Välj **Automatisk** för att beräkna om alla beroende formler varje gång som ett genererat dokument läggs till av nya intervaller, celler osv.
 
     >[!NOTE]
     > Det kan orsaka ett prestandaproblem för Excel-mallar som innehåller många relaterade formler.

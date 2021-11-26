@@ -1,25 +1,25 @@
 ---
 title: Självstudie för att ställa in och installera Regression Suite Automation Tool
 description: Det här avsnittet innehåller en vägledning om hur du ställer in och installerar RSAT (Regression Suite Automation Tool).
-author: robinarh
+author: tonyafehr
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 21761, NotInToc
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9cab5d9c9daf80fe5d2a510d189e71993265aa278342d5a99666615303158f61
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5dcdd14f54b9c0ad39794ff98ede29332c246513
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742286"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782001"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Självstudie för att ställa in och installera Regression Suite Automation Tool
 
@@ -480,7 +480,7 @@ I tidigare versioner av RSAT var du tvungen att installera drivrutiner för Sele
 
     ![Knappen Kör sökning.](./media/setup_rsa_tool_58.png)
 
-    Testfall som läggs till i testfallet **T01 - Tillverka mot lager**.
+    Testfall som läggs till i testfallet **T01 – Tillverka mot lager**.
 
     ![Testfall tillagt i testpaketet.](./media/setup_rsa_tool_59.png)
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 78bea4ee2429323a6e087c6433a8e496b08f4cea
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6ff9f133010ec4370a99c585259aece4e279f801
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576122"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778217"
 ---
 # <a name="replenishment-over-location-capacity"></a>Lagerpåfyllnad över platskapacitet
 
@@ -32,7 +32,7 @@ Funktionen gör det möjligt att skapa mer återanskaffningsarbete än vad som f
 
 Om du vill göra den här funktionen tillgänglig aktiverar du följande funktioner i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i denna ordning:
 
-1. Arbetsspärr för hela organisationen
+1. Organisationsomfattande arbetsspärr (från och med version 10.0.21 av Supply Chain Management är den här funktionen obligatorisk, varför den är aktiverad som standard och inte kan stängas av igen.)
 1. Lagerpåfyllnad över platskapacitet
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Ställ in funktionen för det här exempelscenariot

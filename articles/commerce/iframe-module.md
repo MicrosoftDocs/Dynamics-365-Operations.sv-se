@@ -2,7 +2,7 @@
 title: Iframe-modul
 description: Det här avsnittet handlar om iframe-modulen och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 570901e3afca82abd21172df4c0b6fc575b57262f2b5d1decad11cabc00db31d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767300"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754024"
 ---
 # <a name="iframe-module"></a>Iframe-modul
 
@@ -66,10 +66,13 @@ Om du vill lägga till en iframe-modul på en sida för att visa en extern video
 1. Ange andra egenskaper **rubrik** och **höjd**, efter behov.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 1. Gå till marknadsföringssidan på din webbplats. Du bör se att videon återges i iframe-modulen.
- 
+
+> [!NOTE]
+> Eftersom iframe-modulen är värd för externt innehåll måste webbplatsförfattare se till att det innehåll som finns i en iframe-modul inte bryter mot begränsningsprinciper för innehåll på respektive marknad. Om innehållsbrott finns på en sida där iframe-modulen används kan webbplatsens författare ta bort iframe-modulen genom att öppna sidan i Site Builder, välja **Ta bort modul** i iframe-modulen och sedan spara och publicera sidan på nytt.
+
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över modulbibliotek](starter-kit-overview.md)
+[Modulbibliotek – översikt](starter-kit-overview.md)
 
 [Hantera säkerhetspolicy för innehåll (CSP)](manage-csp.md)
 

@@ -1,8 +1,8 @@
 ---
 title: Skapa enkäter
-description: Den här artikeln beskriver processen för att skapa en enkät. Det första steget är att utforma enkäten. Om du utformar en enkät skapar du inte bara frågorna och svaren, utan även strukturen som gör det möjligt att registrera och ordna svar i tabeller.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Det här avsnittet beskriver processen för att skapa en enkät.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c2a8c156aa75b02b69da3ee70a1ee60ea9d73a8aa67c70babdaaad88d6eb81f4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08c8015e8729a4ca33f3fb3c48f654e489f32f3f
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755574"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729061"
 ---
 # <a name="create-questionnaires"></a>Skapa enkäter
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Den här artikeln beskriver processen för att skapa en enkät. Det första steget är att utforma enkäten. Om du utformar en enkät skapar du inte bara frågorna och svaren, utan även strukturen som gör det möjligt att registrera och ordna svar i tabeller. 
+Det här avsnittet beskriver processen för att skapa en enkät. Det första steget är att utforma enkäten. Om du utformar en enkät skapar du inte bara frågorna och svaren, utan även strukturen som gör det möjligt att registrera och ordna svar i tabeller. 
 
 En noggrant utformad enkät ökar kvaliteten på informationen som du samlar in. Med noggrann utformning är det lättare att du välja lämpliga alternativ vid en lämplig tidpunkt för en enkät. Följande punkter kan hjälpa dig att planera en effektiv enkät:
 
@@ -63,7 +63,7 @@ Vissa förutsättningar måste vara finnas innan du kan skapa enkäter, frågor 
 
 ### <a name="questionnaire-types"></a>Enkättyper
 
-Enkättyper krävs och måste ha tilldelats när du skapar en enkät. Enkättyper hjälpa dig att hantera och klassificera enkäter enklare. Använd enkättyper för att klassificera enkäter och skilja dem från varandra. Om du till exempel har flera enkäter att välja bland, kan du filtrera dem efter typ för att göra det enklare att hitta en viss enkät. Här följer några exempel på enkättyper:
+**Enkättyper** krävs och måste ha tilldelats när du skapar en enkät. **Enkättyper** hjälpa dig att hantera och klassificera enkäter enklare. Använd enkättyper för att klassificera enkäter och skilja dem från varandra. Om du till exempel har flera enkäter att välja bland, kan du filtrera dem efter typ för att göra det enklare att hitta en viss enkät. Här följer några exempel på enkättyper:
 
 -   Personalutveckling
 -   Kundenkäter
@@ -71,9 +71,9 @@ Enkättyper krävs och måste ha tilldelats när du skapar en enkät. Enkättype
 
 ### <a name="question-types"></a>Frågetyper
 
-Frågetyper krävs och måste ha tilldelats när du skapar en fråga. 
+**Frågetyper** krävs och måste ha tilldelats när du skapar en fråga. 
 
-Använd frågetyper om du vill kategorisera frågor för rapportering. Frågetyper gör det även enklare att hitta frågor, eftersom du kan använda typer som filter på sidan **Frågor**. Här följer några exempel på frågetyper:
+Använd **Frågetyper** om du vill kategorisera frågor för rapportering. **Frågetyper** gör det även enklare att hitta frågor, detta eftersom du kan använda typer som filter på sidan **Frågor**. Här följer några exempel på frågetyper:
 
 -   Personal
 -   Hantera affärer
@@ -105,7 +105,7 @@ Om du vill ge en lista med svar på stängda frågor kan du skapa svar på sidan
 
 Svarsgrupper och svar är komponenter som utgör det huvudsakliga informationsmaterialet som frågor skapas från. När du har skapat en svarsgrupp kan du koppla svarsgruppen till en fråga i fältet **Svarsgrupp** på sidan **Frågor**. 
 
-Samma svarsgrupp kan användas för flera frågor i samma enkät och kan också användas i flera enkäter. 
+En **svarsgrupp** kan användas för flera frågor i samma enkät och kan också användas i flera enkäter. 
 
 > [!NOTE]
 > Om du ändrar svarstext i svarsgrupper som redan har använts i ifyllda enkäter, kan data bli svåra att utvärdera och enkätresultaten kanske inte gäller längre. Om du måste ändra en svarsgrupp bör du överväga att skapa en ny svarsgrupp i stället för att ändra en befintlig. Du kan inte radera svarsgrupper som har kopplats till en fråga eller ett svar eller som har besvarats.
@@ -171,7 +171,7 @@ I en enkät kan du inte ta bort följande typer av frågor:
 
 ### <a name="result-groups"></a>Resultatgrupper
 
-Resultatgrupper är valfria när du kopplar frågor till en enkät. 
+**Resultatgrupper** är valfria när du kopplar frågor till en enkät. 
 
 En resultatgrupp används för att beräkna poäng och kategorisera resultaten för en enkät. Om du använder resultatgrupper kan du utföra följande uppgifter:
 

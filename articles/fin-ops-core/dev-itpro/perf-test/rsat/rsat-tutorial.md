@@ -5,17 +5,17 @@ author: FrankDahl
 ms.date: 09/23/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f1d818944ed2779cdad15d84673369e31243285f
-ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
+ms.openlocfilehash: 2f31009424629221a8e4f130b0ec1879c6c6e3d4
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2021
-ms.locfileid: "7556775"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781973"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Självstudie för Regression Suite Automation Tool
 
@@ -64,7 +64,7 @@ Med RSAT kan du använda samma uppgiftsinspelning med flera testärenden, vilket
 
 Den här funktionen kan användas för att validera om en åtgärd utförts. När till exempel en tillverkningsorder skapas, uppskattas och sedan startas, visar appen meddelandet "produktion – start" för att meddela dig att tillverkningsordern har startats.
 
-![Produktion - Startameddelande.](./media/use_rsa_tool_05.png)
+![Produktion – Startameddelande.](./media/use_rsa_tool_05.png)
 
 Du kan validera det här meddelandet genom RSAT genom att ange meddelande texten på fliken **MessageValidation** i Excel-parameterfilen för lämplig inspelning.
 

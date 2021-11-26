@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0df6aee6a5ec1ecc751713c19c659c5471cc4146
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 872a08241f3d0156d0ccf1f89443e3a894656404
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576050"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777635"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>ID-nummer tar emot via mobilappen för distributionslagerhantering
 
@@ -77,7 +77,7 @@ När den här funktionen är aktiverad visas ett menyalternativ för mobila enhe
 - **Visa en detaljerad sammanfattning** – under inleverans av ID-nummer ser arbetarna en extra sida med den fullständiga ASN-informationen.
 - **Hoppa över sammanfattningen** – arbetarna ser inte hela ASN-informationen. Lagerarbetarna inte heller ange en dispositionskod eller lägga till undantag under inleveransprocessen.
 
-Om du vill göra den här funktionen tillgänglig i systemet måste du aktivera funktionen *kontrollera om du vill visa en sida för sammanfattning av inleveranser på mobila enheter* i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Om du vill göra den här funktionen tillgänglig i systemet måste du aktivera funktionen *Kontrollera om du vill visa en sida för sammanfattning av inleveranser på mobila enheter* i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard.)
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Förhindra överföringsorder – de levererade ID-numren används inte på andra lagerställen än lagerstället vid destinationen
 

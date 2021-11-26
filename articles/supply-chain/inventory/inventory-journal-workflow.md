@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 7d1bd846dae767b47280310fc8d9ca5ee82337ad
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568865"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778315"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Godkännandearbetsflöden för lagerjournal
 
@@ -31,7 +31,7 @@ I det här ämnet beskrivs hur man ställer in och använder arbetsflöden för 
 
 ## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Aktivera funktionen godkännandearbetsflöden för lagerjournal
 
-Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan använda sidan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera/inaktivera den vid behov. Här visas funktionen i listan:
 
 - **Modul:** *Hantering av lager och lagerstyrning*
 - **Funktionsnamn:** *journal arbetsflödet för lagerjournal*
@@ -57,7 +57,7 @@ För att skapa ditt godkännandearbetsflöde för lagerjournal:
 
     ![Dialogrutan skapa arbetsflöde.](media/journal-workflow-create-workflow.png "Dialogrutan skapa arbetsflöde")
 
-1. Arbetsflödesredigerarens app startas på din dator. (Du kan bli ombedd att godkänna den här åtgärden.) Använd den för att utforma arbetsflödet efter behov. Mer information om hur du använder arbetsflödes redigeraren finns i [arbetsflödessystem - översikt](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
+1. Arbetsflödesredigerarens app startas på din dator. (Du kan bli ombedd att godkänna den här åtgärden.) Använd den för att utforma arbetsflödet efter behov. Mer information om hur du använder arbetsflödes redigeraren finns i [arbetsflödessystem – översikt](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 1. När du har sparat och stängt appen i arbetsflödes redigeraren måste du välja om du vill aktivera arbetsflödesversionen eller behålla den som inaktiv.
 
 > [!NOTE]

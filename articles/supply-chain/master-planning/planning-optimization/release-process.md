@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ec1683554e389948a64aee68e4d069be1e93cc1a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b2e0145c28b40f4fbfb54ad7e7ed32fbc130c569
+ms.sourcegitcommit: 8afd0cdb39ec443fb7631c39401967cce0fac34e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567353"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7727442"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Frisläppningsprocess och frisläppningshistorik för Planeringsoptimering
 
@@ -33,6 +33,9 @@ Eftersom meddelanden inte visas när Planeringsoptimering uppdateras i din milj�
 
 | Ändringar | Information om funktionshantering | Frisläppningsdatum |
 |---|---|---|
+| <p>Lade till stöd för processtidsberäkningsformler, produktionsflöde med överlappning och produktionsdriftsnummer för behovstransaktioner.</p><p>Förbättrade felmeddelanden för produktionsplanering tillhörande tidsgränsen, kapaciteten går inte att hitta, samt cykliskt flöde.</p><p>Förbättrad överensstämmelse vid beräkning av inleverans- och utleveransdatum på både planerade order och bekräftade order.</p><p>Allmän prestanda, kvalitet och förbättringar i effektivitet. | Funktionsnamn: *Planering med obegränsad kapacitet för Planeringsoptimering* | 22-27 oktober 2021 |
+| <p>Lade till stöd för att ta hänsyn till kassationsprocent vid beräkning av bearbetningstid.</p><p>Lade till stöd för driftsnummer och materialanvändning under tidsplanering. | Funktionsnamn: *Planering med obegränsad kapacitet för Planeringsoptimering* | 5-7 oktober 2021 |
+| <p>Lade till stöd för jobbtyper för produktionsflöde: **Kö före**, **Kö efter** och **Transporttid**.</p><p>Allmän prestanda, kvalitet och förbättringar i effektivitet. | Funktionsnamn: *Planering med obegränsad kapacitet för Planeringsoptimering* | 25-30 september 2021 |
 | <p>Lagt till stöd för masterplaner med **Planeringsmetod** ange *Grovplanering*.</p><p>På sidan **Flödesgrupper** markerar du inställningarna för kryssrutorna **Aktivering**, **Arbetstid** och **Kapacitet** för rader med **Flödes-/jobbtyp** för *Inställningar* eller *Process*. </p><p>Allmän prestanda, kvalitet och förbättringar i effektivitet. | <p>Grovplanering finns för funktionshantering från version 10.0.20.</p><p>Funktionsnamn: *Planering med obegränsad kapacitet för Planeringsoptimering*</p>  | 9-17 september 2021 |
 | Allmän prestanda, kvalitet och förbättringar i effektivitet. | Ingen funktionshantering krävs. | 25–30 augusti 2021 |
 | <p>Lade till fältet **Ledtid** i planerade order.</p><p>Allmän prestanda, kvalitet och förbättringar i effektivitet.</p> | Ingen funktionshantering krävs. | 12–17 augusti 2021 |

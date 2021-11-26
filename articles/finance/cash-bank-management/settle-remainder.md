@@ -1,7 +1,7 @@
 ---
 title: Kvitta rest
 description: Du kan kvitta det belopp som återstår från kvittningsaktiviteten genom att använda detta belopp på ett redovisningskonto.
-author: mikefalkner
+author: roschlom
 ms.date: 10/16/2018
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 1eb82c1f5982b30052acb2cb7659f6c07f2a4da54b68f602a2afb4e499fbcc73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 216c5c1d7db72e5f5071f2cd03656df538a64e72
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719798"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754106"
 ---
 # <a name="settle-remainder"></a>Kvitta rest
 
@@ -33,7 +33,7 @@ Du måste aktivera funktionen Kvitta rest och ställa in standardinställningarn
 2)  Välj fliken **Kvittning** och klicka sedan på **Aktivera kvittning av rest**
 3)  I **standardorsakskod** väljer du en standardorsakskod. Orsakskoderna måste redan ha ställts in i **Kundreskontra > Inställningar > Orsakskoder för kundavskrivning** eller **Leverantörsreskontra > Inställningar > Orsakskoder för kundavskrivning**. **Standardkonto för kvittning av rest** ska anpassas till kontot som tilldelats orsakskoden för avskrivning.
 3)  Uppdatera **Standardkonto för kvittning av rest** efter behov.
-4)  I **Standardjournalnamn**, välj en betalningsjournal som ska användas om du vill skapa en betalningsjournal när du bara kvittar öppna transaktioner. Om du aktiverar funktionen kvittning av rest måste du lägga till ett standardjournalnamn.
+4)  Under **Standardjournalnamn** väljer du en betalningsjournal som ska användas om du vill skapa en betalningsjournal när du bara kvittar öppna transaktioner. Om du aktiverar funktionen kvittning av rest måste du lägga till ett standardjournalnamn.
 
 ## <a name="settle-remainder-from-a-journal"></a>Kvitta rest från en journal
 Om du inte aktiverar funktionen **Kvitta rest** kan du fortfarande ange en transaktion i en journal och sedan kvitta transaktioner mot dem som du har gjort tidigare. När du klickar på knappen **OK** kommer det ingående saldot på fakturan minskas med kontantbeloppet. Om kontanterna inte helt kvittar fakturan, lämnas fakturan öppen med ett återstående belopp som ska kvittas vid ett senare tillfälle.

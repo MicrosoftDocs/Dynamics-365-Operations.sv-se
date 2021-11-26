@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: c2fbaa6945cf46b7ef09232e6004f09b487ea7c822e72225dc00d3d28ecb008e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3612dd45a3f4b8c3597c81962a66c21ed14fb206
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780208"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729037"
 ---
 # <a name="apply-filters-to-a-plan"></a>Använda filter på en plan
 
@@ -43,7 +43,7 @@ Ett planfilter är en inställning som omfattar artiklarna A, B och C. Huvudplan
 - **Körningsfilter som innehåller alla poster (tomt filter)** : artiklarna A, B och C inkluderas i planeringskörningen och föregående planeringsresultat för artiklarna A och B skrivs över.
 
 > [!NOTE]
-> Du bör inte ange ett planfilter för planen som har valts som **Aktuell dynamisk huvudplan** på sidan för **huvudplaneringsparametrar**. Annars kommer funktionen för dynamisk huvudplan att begränsas till de filtrerade artiklarna. Om till exempel nettobehoven uppdateras för en artikel som inte ingår i planfiltret, genereras inget resultat.
+> Om du anger ett planfilter för den plan som är vald som **aktuell dynamisk huvudplan** på **parametersidan för huvudplanering** begränsas den dynamiska huvudplansfunktionen till filtrerade artiklarna. Om till exempel nettobehoven uppdateras för en artikel som inte ingår i planfiltret, genereras inget resultat.
 
 ## <a name="related-resources"></a>Relaterade resurser
 

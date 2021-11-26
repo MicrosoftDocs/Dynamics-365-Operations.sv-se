@@ -1,8 +1,8 @@
 ---
-title: Skicka ut och schemalägg enkäter
-description: Den här artikeln beskrivs hur du fördelar de enkäter som du utformar så att de blir tillgängliga för personen eller gruppen med personer som ska fylla i dem.
-author: andreabichsel
-ms.date: 04/04/2017
+title: Schemalägg och skicka ut enkäter
+description: Den här artikeln beskriver hur du fördelar de enkäter som du utformar så att de blir tillgängliga för den person eller grupp som ska fylla i dem.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,25 +12,25 @@ ms.search.scope: Human Resources
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60354a3e7fed5403321d5ec4440cece84b13233bef80fcd5c5f61d72e5e3aa85
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a13f699c8c0951b32f7826e8cfe8d7dcf02a7f55
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755525"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729013"
 ---
-# <a name="distribute-and-schedule-questionnaires"></a>Skicka ut och schemalägg enkäter
+# <a name="distribute-and-schedule-questionnaires"></a>Schemalägg och skicka ut enkäter
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Den här artikeln beskrivs hur du fördelar de enkäter som du utformar så att de blir tillgängliga för personen eller gruppen med personer som ska fylla i dem. 
+Den här artikeln beskriver hur du fördelar de enkäter som du utformar så att de blir tillgängliga för den person eller grupp som ska fylla i dem. 
 
 Det finns flera sätt att distribuera en enkät:
 
--   Markera enkäten som aktiv. Enkäten är då tillgänglig för alla medarbetare, om inte en enkätgrupp har ställts in för att begränsa åtkomst till den.
+-   Markera enkäten som **Aktiv**. Enkäten är då tillgänglig för alla medarbetare, om inte en enkätgrupp har ställts in för att begränsa åtkomst till den.
 -   Tilldela rättigheter till en enkätgrupp. Enkäten är då tillgänglig för alla medlemmar i den valda gruppen.
 -   Skapa planerade svarsomgångar. Enkäten är då endast tillgänglig för en viss person.
 -   Skapa en tidsplan. Enkäten kan sedan vara tillgänglig för flera personer.

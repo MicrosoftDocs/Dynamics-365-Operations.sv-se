@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 985825d3a205f566a94ac7532e45895e7060edf5
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 241277ada768cc6497035cc377d0e158646a42d6
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416991"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781124"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Felsöka problem under första synkroniseringen
 
@@ -227,9 +227,9 @@ Du kan komma att få följande felmeddelande när du försöker köra den inleda
 
 *Det gick inte att hitta partnumret i Dataverse.*
 
-Det finns en områdesuppsättning för **DirPartyCDSEntity** i Finance and Operations-program som filtrerar parter av typen **Person** och **Organisation**. Det innebär att en första synkronisering av mappningen **CDS-parter – msdyn_parties** inte kommer att synkronisera andra typer av parter, omklusive **Juridisk person** och **Driftenhet**. När den första synkroniseringen körs för **Postadresser för CDS-part (msdyn_partypostaladdresses)** eller **Partkontakter V3 (msdyn_partyelectronicaddresses)** kan du komma att få felmeddelandet.
+Det finns en intervalluppsättning för **DirPartyCDSEntity** i Finance and Operations-program som filtrerar parter av typen **Person** och **Organisation**. Det innebär att en första synkronisering av mappningen **CDS-parter – msdyn_parties** inte kommer att synkronisera andra typer av parter, omklusive **Juridisk person** och **Driftenhet**. När den första synkroniseringen körs för **Postadresser för CDS-part (msdyn_partypostaladdresses)** eller **Partkontakter V3 (msdyn_partyelectronicaddresses)** kan du komma att få felmeddelandet.
 
-Vi arbetar med en korrigering för att ta bort parttypsområdet för Finance and Operations-enheten så att parter av alla typer kan synkroniseras med Dataverse.
+Vi arbetar med en korrigering för att ta bort parttypsintervallet för Finance and Operations-enheten så att parter av alla typer kan synkroniseras med Dataverse.
 
 ## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>Finns det några prestandaproblem när man kör den första synkroniseringen av kunder eller kontaktdata?
 

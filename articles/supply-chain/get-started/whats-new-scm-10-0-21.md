@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 64abe953f42519d508f547f22f1f2b94a7fa16ab
-ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
+ms.openlocfilehash: 3b5f0c6947944ec875c30fa912f830f245b5a48e
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7715264"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777947"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
@@ -70,10 +70,10 @@ Följande tabeller listar de funktioner som aktiveras som standard i 10.0.21. De
 | Annullering av överföringsorder | 9/1/2021 | 7/13/2020 | På som standard | Hantering av lager och lagerstyrning |
 | Lås upp lagerjournal | 9/1/2021 | 8/17/2020 | På som standard | Hantering av lager och lagerstyrning |
 | Sparade vyer för lagerhantering | 9/1/2021 | 2020-09-30 | På som standard | Hantering av lager och lagerstyrning |
-| Navigera till strukturlisteversion från strukturlisterader. | 9/1/2021 | 11/11/2019 | På som standard | Hantering av lager och lagerstyrning |
-| Med måttenhet och enhetskvantitet i lagerjournaler. | 9/1/2021 | 11/11/2019 | På som standard | Hantering av lager och lagerstyrning |
+| Navigera till strukturlisteversion från strukturlisterader | 9/1/2021 | 11/11/2019 | På som standard | Hantering av lager och lagerstyrning |
+| Med måttenhet och enhetskvantitet i lagerjournaler | 9/1/2021 | 11/11/2019 | På som standard | Hantering av lager och lagerstyrning |
 | Tillåt tomma batchattributvärden | 9/1/2021 | 11/11/2019 | På som standard | Hantering av lager och lagerstyrning |
-| Öka automatiskt radnummer för orderrader i lageröverföring. | 9/1/2021 | 10/11/2019 | På som standard | Hantering av lager och lagerstyrning |
+| Öka radnummer för orderrader i lageröverföring automatiskt | 9/1/2021 | 10/11/2019 | På som standard | Hantering av lager och lagerstyrning |
 | Godkännandearbetsflöde för lagerjournal | 9/1/2021 | 1/6/2020 | På som standard | Hantering av lager och lagerstyrning |
 | Aktivera varningsfunktionen för parametrar för lagerkvalitetshantering | 9/1/2021 | 10/7/2019 | På som standard | Hantering av lager och lagerstyrning |
 | Skapa överföringsorder från försäljningsrad | 9/1/2021 | 8/31/2019 | På som standard | Hantering av lager och lagerstyrning |
@@ -93,12 +93,12 @@ Följande tabeller listar de funktioner som aktiveras som standard i 10.0.21. De
 | Sparade vyer för frisläppta produkter | 9/1/2021 | 2020-09-30 | På som standard | Produktinformationshantering |
 | Förbättringar av dialogrutorna Godkänn jobb och Överför jobb | 9/1/2021 | 10/11/2019 | På som standard | Produktionskontroll |
 | ID-nummer för rapportering som färdig har lagts till på jobbkortenheten | 9/1/2021 | 8/31/2019 | På som standard | Produktionskontroll |
-| Den nya knappen Stoppa rast har lagts till på sidan Jobbkortterminal. | 9/1/2021 | 2/19/2020 | På som standard | Produktionskontroll |
+| Den nya knappen Stoppa rast har lagts till på sidan Jobbkortterminal | 9/1/2021 | 2/19/2020 | På som standard | Produktionskontroll |
 | Aktivera delvis inleverans av underleverantörsartiklar och korrigera ett problem med beräkning av kassation för strukturlisterader av typen Leverantör. | 9/1/2021 | 11/11/2019 | På som standard | Produktionskontroll |
 | Sparade vyer för produktionskontroll | 9/1/2021 | 8/17/2020 | På som standard | Produktionskontroll |
 | Dynamics 365 Guides för tillverkning | 9/1/2021 | 7/13/2020 | På som standard | Produktionskontroll |
 | Produktionsgolvskörning | 9/1/2021 | 2020-09-30 | På som standard | Produktionskontroll |
-| Funktion för att låsa jobbkortsenhet och jobbkortsterminal så att de kan rensas. | 9/1/2021 | 5/10/2020 | På som standard | Produktionskontroll |
+| Funktion för att låsa jobbkortsenhet och jobbkortsterminal för att anpassas till språk | 9/1/2021 | 5/10/2020 | På som standard | Produktionskontroll |
 | Allokering av avgifter på en försäljningsorder | 9/1/2021 | 2020-09-30 | På som standard | Försäljning och marknadsföring |
 | Begränsa antalet försäljningsorder som går att välja för bokföring | 9/1/2021 | 9/1/2021 | På som standard | Försäljning och marknadsföring |
 | Rensa försäljningsorderns uppdateringshistorik | 9/1/2021 | 9/1/2021 | På som standard | Försäljning och marknadsföring |

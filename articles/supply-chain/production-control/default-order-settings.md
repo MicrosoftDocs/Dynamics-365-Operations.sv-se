@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 2681a2a13754e240dcc4c99792dc47ae734f6e9e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 419e2b3b6bc5636aa75cf3ecc26e32ad22260a7e
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579434"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778117"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardorderinställningar för dimensioner och produktvarianter
 
@@ -119,14 +119,14 @@ Beakta följande exempelprodukt.
 |-----------------------------------------------------|-----------------------------------------|
 | **Produktnamn**                                    | Fotoelektrisk sensor                    |
 | **Artikelnummer**                                     | XW56                                    |
-| **Konfiguration** (används till att forma typ av belysning) | C1 - synligt rött ljus, C2 - infrarött ljus |
+| **Konfiguration** (används till att forma typ av belysning) | C1 – synligt rött ljus, C2 – infrarött ljus |
 | **Version** | V1, V2, V3                              |
 
 Anta för detta exempel att produkten anskaffas med inte tillverkas. Anta också att konfigurationen C1 används mer allmänt, så den har kortare ledtider. 
 
 Skapa följande standardorderinställningar för att forma det här scenariot.
 
-| Rangordning | Site | Inställningar | Version | Inköp - Åsidosätt standardinställningar | Ledtid för inköp | Inköp - Stoppat | Försäljning - Åsidosätt standardinställningar | Försäljning - Stoppad |
+| Rangordning | Site | Inställningar | Version | Inköp – Åsidosätt standardinställningar | Ledtid för inköp | Inköp – Stoppat | Försäljning – Åsidosätt standardinställningar | Försäljning – Stoppad |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
 | 10   |      | C1            |       | Ja                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
@@ -135,7 +135,7 @@ När en inköpsorderrad eller en planerad inköpsorder skapas för artikel XW56,
 
 Du kan skapa följande regler för standardorderinställningar.
 
-| Rangordning | Site | Inställningar | Version | Inköp - Åsidosätt standardinställningar | Ledtid för inköp | Inköp - Stoppat | Försäljning - Åsidosätt standardinställningar | Försäljning - Stoppad |
+| Rangordning | Site | Inställningar | Version | Inköp – Åsidosätt standardinställningar | Ledtid för inköp | Inköp – Stoppat | Försäljning – Åsidosätt standardinställningar | Försäljning – Stoppad |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
 | 20   |      |               | V2    | Ja                                  |                    | Ja                | Ja                               | Ja             |
 | 20   |      |               | V1    | Ja                                  |                    | Ja                | Ja                               | Ja             |
@@ -148,7 +148,7 @@ I det här exemplet förklaras behovet av rangordningen. Om rangordningen inte a
 
 Beakta följande regler för standardorderinställningar.
 
-| Rangordning | Site | Inställningar | Version | Standardplats | Standardlagerställe | Inköp - Åsidosätt standardlagringsdimensioner | Inköpslagerställe |
+| Rangordning | Site | Inställningar | Version | Standardplats | Standardlagerställe | Inköp – Åsidosätt standardlagringsdimensioner | Inköpslagerställe |
 |------|------|---------------|-------|--------------|-------------------|------------------------------------------------|--------------------|
 | 20   | 2    |               |       |              |                   | Ja                                            | 22                 |
 | 10   |      | C1            |  V2   |  2           |  21               |                                                |                    |
@@ -168,7 +168,7 @@ Antalet regler som har skapats för en frisläppt produkt kan vara många. För 
 
 Om regelsystemet för standardorderinställningar är för besvärligt finns alternativet att definiera standardorderinställningar för varje produktvariant. Följande exempel visar hur detta ser ut för produkten och de fall som beskrivs nedan.
 
-| Rangordning | Site | Inställningar | Version | Inköp - Åsidosätt standardinställningar | Ledtid för inköp | Inköp - Stoppat | Försäljning - Åsidosätt standardinställningar | Försäljning - Stoppad |
+| Rangordning | Site | Inställningar | Version | Inköp – Åsidosätt standardinställningar | Ledtid för inköp | Inköp – Stoppat | Försäljning – Åsidosätt standardinställningar | Försäljning – Stoppad |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
 | 10   |      | C2            | V3    | Ja                                  | 5                  |                    |                                   |                 |
 | 10   |      | C2            | V2    | Ja                                  | 5                  | Ja                | Ja                               | Ja             |
@@ -188,7 +188,7 @@ Strikt validering gäller de värden för **Standardorderkvantitet** som anges p
 
 ### <a name="enable-the-strict-validation-option"></a>Aktivera strikt valideringsalternativ
 
-Innan du kan använda alternativet strikt validering måste den aktiveras i ditt system. Administratörer kan använda sidan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Här visas funktionen i listan:
+Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan använda sidan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera/inaktivera den vid behov. Här visas funktionen i listan:
 
 - **Modul** - *Produktinformationshantering*
 - **Funktionsnamn** - *Strikt validering för standardorderkvantitet*

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 6b75dcb7d56648f3be291cb1c09ec57a53477ec0
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 59c4c100275917f3f9bf489c7d64b276275f1872
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344184"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778093"
 ---
 # <a name="wave-label-printing"></a>Utskrift av påfyllnadsetikett
 
@@ -53,7 +53,7 @@ Dessa förbättringar gör det effektivare att märka kartonger före palleterin
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>Aktivera funktionen utskrift av påfyllnadsetiketter
 
-Innan du kan använda funktionen *utskrift av påfyllnadsmall* den aktiveras i ditt system. Administratörer kan använda arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
+Från och med version 10.0.21 av Supply Chain Management är den här funktionen obligatorisk, varför den är aktiverad som standard och inte kan stängas av igen. Funktionen anges emellertid fortfarande i [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) på följande sätt:
 
 - **Modul:** *Warehouse management*
 - **Funktionsnamn:** *utskrift av påfyllnadsetiketter*

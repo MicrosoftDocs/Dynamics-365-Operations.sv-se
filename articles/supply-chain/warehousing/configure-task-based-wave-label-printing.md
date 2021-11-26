@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-obaranov
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 652e6fb3f586fc873ffabf2c741e5c99216931461f159a42f08f9922e756280f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4883f8a548645436e17b933d87d4ee6330570d48
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735906"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777875"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Tidsplanera påfyllnadsetikett utskrift under påfyllnad
 
@@ -33,8 +33,8 @@ När du använder *utskriftsfunktionen för påfyllnadsetiketter* som baseras p�
 De funktioner som beskrivs i det här avsnittet måste vara inaktiverade för ditt system. Använda [utgiftshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiverar du följande funktioner i ordning:
 
 1. *Påfyllnadsetikettsutskrift* – Den här funktionen krävs för att aktivera påfyllnadsprocessmetoden för utskrift av påfyllnadsetikett.
-1. *Arbetsspärr för hela organisationen* - Denna funktion krävs för både manuell och automatisk konfiguration av planerat arbete.
-1. *Uppgiftsbaserad påfyllnadsetikettsutskrift* – Den här funktionen behövs för att dela upp påfyllnadsetikettsutskrift i ett separat transaktionssområde.
+1. *Arbetsspärr för hela organisationen* – Denna funktion krävs för både manuell och automatisk konfiguration av planerat arbete. (Från och med version 10.0.21 av Supply Chain Management är den här funktionen obligatorisk, varför den är aktiverad som standard och inte kan stängas av igen.)
+1. *Uppgiftsbaserad påfyllnadsetikettsutskrift* – Den här funktionen behövs för att dela upp påfyllnadsetikettsutskrift i ett separat transaktionsintervall.
 
 ## <a name="manually-enable-the-new-wave-step-method"></a>Aktivera den nya påfyllnadsstegmetoden manuellt
 
@@ -45,9 +45,9 @@ Börja med att skapa den nya påfyllnadsstegmetoden och aktivera den för parall
 1. Välj den post där fältet **Metodnamn** är inställt på *waveLabelPrinting* och välj sedan **Uppgiftskonfiguration** i åtgärdsfönstret.
 1. I åtgärdsfönstret, välj **Ny** du vill lägga till en rad i rutnätet. Ange sedan följande fält för den nya raden:
 
-    - **Lagerställe** - Välj det lager du ska använda för att schemalägga bearbetning av arbete. (Om du använder demodata för testsyften kan du välja lagerställe *24*.)
-    - **Maximalt antal batchuppgifter** - Ange ett maximalt antal batchuppgifter. I de flesta fall bör värdet vara från *8* till *16*. Vi rekommenderar dock att du hittar den optimala inställningen för dina scenarier.
-    - **Batchgrupp för påfyllnadsbearbetning** - Välj en särskild batchgrupp för påfyllnadsbearbetning för att optimera bearbetning av batchkö.
+    - **Lagerställe** – Välj det lager du ska använda för att schemalägga bearbetning av arbete. (Om du använder demodata för testsyften kan du välja lagerställe *24*.)
+    - **Maximalt antal batchuppgifter** – Ange ett maximalt antal batchuppgifter. I de flesta fall bör värdet vara från *8* till *16*. Vi rekommenderar dock att du hittar den optimala inställningen för dina scenarier.
+    - **Batchgrupp för påfyllnadsbearbetning** – Välj en särskild batchgrupp för påfyllnadsbearbetning för att optimera bearbetning av batchkö.
 
 Du kan nu uppdatera en befintlig påfyllnadsmall så att den använder påfyllnadsbearbetningsmetoden för *Utskrift av påfyllnadsetikett*. Du kan också skapa en ny påfyllnadsmall där den används.
 

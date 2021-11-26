@@ -2,7 +2,7 @@
 title: Kortkommandon
 description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med Finance and Operations-appar.
 author: jasongre
-ms.date: 10/12/2021
+ms.date: 11/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e700b841014e1e12560bf0ce9e5e012361ec397
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
+ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647546"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7800203"
 ---
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
@@ -128,8 +128,10 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 
 ## <a name="grid-shortcuts"></a>Genvägar för rutnät
 
-| Om du vill göra detta                                                                                                             | Tryck                           |
+| Om du vill göra detta                                                                                                             | Tryck på                            |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Lodrät rullning                                                                                                     | Mushjul                     |
+| Vågrät rullning                                                                                                   | Skift + Mushjul             |
 | Flytta till nästa/föregående kolumn                                                                                       | Tab/Skift+Tab                 |
 | Flytta till nästa/föregående rad                                                                                          | Uppåtil/nedåtpil           |
 | Flytta till nästa/föregående rad utan att markera<blockquote>[!NOTE] Den här genvägen gäller endast flervalsscenarier.</blockquote> | Ctrl+uppåtpil / Ctrl+nedåtpil |
@@ -141,15 +143,15 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Flytta till första posten                                                                                               | Ctrl+start                       |
 | Flytta till den sista posten                                                                                                | Ctrl+End                        |
 | Markera eller rensa alla rader                                                                                               | Ctrl+Skift+M                    |
-| Flytta till den första markerade raden                                                                                           | Alt+Shift+M, F                    |
-| Flytta till nästa markerade rad                                                                                            | Alt+Shift+M, L                    |
-| Flytta till föregående markerad rad                                                                                        | Alt+Shift+M, P                    |
-| Flytta till den sista markerade raden                                                                                           | Alt+Shift+M, N                    |
+| Flytta till den första markerade raden                                                                                           | Alt+Shift+M, F                  |
+| Flytta till nästa markerade rad                                                                                            | Alt+Shift+M, L                  |
+| Flytta till föregående markerad rad                                                                                        | Alt+Shift+M, P                  |
+| Flytta till den sista markerade raden                                                                                           | Alt+Shift+M, N                  |
 | Utför standardåtgärd i ett rutnät<blockquote>[!NOTE] Denna genväg aktiveras när fokus ligger på en cell som innehåller en hyperlänk och samtliga celler i den kolumnen har hyperlänkar.</blockquote> | Ange                           |
 | Växla fokus mellan den markerade raden och rubrikraden                                                               | Alt+Skift+H                     |
 | Gör den aktuella kolumnen större/mindre (med fokus i rubrikraden)                                                  | Högerpil/vänsterpil        |
 | Öppna rutnätsfiltrering för den aktuella kolumnen (med fokus i rubrikraden)                                              | Ange                           |
-| Ändra storlek på den aktuella kolumnen så att den passar innehållet (med fokus i rubrikraden)                                           | A                               |
+| Ändra storlek på den aktuella kolumnen så att den passar innehållet (med fokus i rubrikraden)                                           | A (eller dubbelklicka på reglaget för kolumnstorlek) |
 
 ## <a name="input-control-shortcuts"></a>Mata in kontrollgenvägar
 

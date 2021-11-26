@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e3b4a9dc25dc8130df7fa4799430c8358edcfe8e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a2740f6b1ccb52073b013e613d8ab779cc088180
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567137"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777648"
 ---
 # <a name="country-of-origin"></a>Ursprungsland
 
@@ -28,7 +28,7 @@ Många organisationer utfärdar certifikat till sina leverantörer för att säk
 
 ## <a name="turn-on-the-country-of-origin-feature"></a>Aktivera funktionen för ursprungsland
 
-Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan använda sidan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera/inaktivera den vid behov. Här visas funktionen i listan:
 
 - **Modul:** *Produktinformationshantering*
 - **Funktionsnamn:** *funktionen hantering av ursprungsland*

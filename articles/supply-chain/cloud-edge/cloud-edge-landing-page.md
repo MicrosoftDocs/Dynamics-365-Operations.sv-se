@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 3111de1f9862cbf926e763f963c86059f4121fc0
+ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471750"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7733449"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skalningsenheter i en distribuerad hybridtopologi
 
@@ -32,8 +32,8 @@ Företag som arbetar med tillverkning och distribution måste kunna köra viktig
 
 En distribuerad hybridtopologi introducerar begreppet *skalningsenehter*, som gör det möjligt att distribuera arbetsbelastningar för verkstad och lagerställe mellan olika miljöer. Med hjälp av den här funktionen kan du förbättra prestanda, förhindra avbrott i tjänsten och maximera drifttiden. Saklningsenheter tillhandahålls via följande tillägg för din Supply Chain Management-prenumeration:
 
-- Tillägg för molnbaserad skalningsenhet för Dynamics 365 Supply Chain Management (*från april 2021)*
-- Tillägg för kantskalningsenhet för Dynamics 365 Supply Chain Management (*kommer snart)*
+- Tillägg för molnskalningsenhet för Dynamics 365 Supply Chain Management
+- Tillägg för kantskalningsenhet för Dynamics 365 Supply Chain Management
 
 Arbetsbelastningsfunktionerna frisläpps kontinuerligt genom stegvisa förbättringar.
 
@@ -51,21 +51,12 @@ Du kan använda [portalen för skalningsenhetsansvarig](https://sum.dynamics.com
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Särskilda arbetsbelastningsmöjligheter för distributionslagerhantering i en skalningsenhet
 
-Arbetsbelastningen fär Warehouse management är den första distribuerade arbetsbelastningen för skalningsenheter som har frisläppts för allmän tillgänglighet.
-
-För Warehouse management tillför skalningsenheter följande funktioner:
-
-- Systemet kan bearbeta utvalda påfyllningsmetoder för försäljningsorder och lagerpåfyllnad baserad på efterfrågan.
-- Lagerarbetare kan köra lagerställearbete för försäljnings- och efterfrågepåfyllning genom att använda mobilappen Hantering av distributionslager.
-- Lagerarbetare kan fråga om lagerbehållning genom att använda mobilappen Hantering av distributionslager.
-- Lagerarbetare kan skapa och köra lagerrörelser genom att använda mobilappen Hantering av distributionslager.
-- Lagerarbetare kan registrera inköpsorder och utföra inlagringsarbete med hjälp av mobilappen Hantering av distributionslager.
-
+Med hjälp av lagerstyrningsarbetsbelastningen kan du köra lagerstyrningsprocesser för en enskild distribution.
 För mer information, se [Arbetsbelastningar för hantering av distributionslager för moln- och kantskalningsenheter](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Särskilda arbetsbelastningsmöjligheter för tillverkningskörning i en skalningsenhet
 
-Den första versionen av tillverkningsarbetsbelastningen befinner sig för närvarande i förhandsgranskningsstatus och erbjuder följande funktioner:
+Tillverkningsarbetsbelastningen har följande funktioner:
 
 - Maskinoperatörer och arbetsledare kan komma åt den operationella produktionsplanen.
 - Maskinoperatörer kan hålla planen aktuell genom att köra separata jobb för bearbetning och processtillverkning.
@@ -191,17 +182,33 @@ Microsoft kommer att granska din begäran och informera dig om nästa steg genom
 
 När registreringen är slutförd kan du använda porten för att konfigurera skalningsenheter och arbetsbelastningar.
 
-### <a name="manage-cloud-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Hantera molnskalningsenheter och arbetsbelastningar med hjälp av portalen för skalningsenhetsansvarig
+### <a name="manage-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Hantera skalningsenheter och arbetsbelastningar med hjälp av portalen för skalningsenhetsansvarig
 
 Gå till [portalen för skalningsenhetsansvarig](https://aka.ms/SCMSUM) och logga in med ditt klientkonto. På sidan **Konfigurera skalningsenheter** kan du lägga till en navmiljö om den inte redan finns med i listan. Du kan sedan välja det nav som du vill konfigurera med enheter och arbetsbelastningar.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Skalningsenhet och arbetsbelastningshantering.":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Portal för skalningsenhetsansvarig, sidan Konfigurera skalningsenheter.":::
 
 Om du vill lägga till en eller flera skalningsenheter som är tillgängliga i dina prenumerationer väljer du **Lägg till skalningsenheter**.
 
 På fliken **Definierade arbetsbelastningar** använder du knappen **Skapa arbetsbelastning** för att lägga till en arbetsbelastning för lagerhantering i en av dina skalningsenheter. För varje arbetsbelastning måste du ange kontexten för de processer som ska ägas av arbetsbelastningen. För distributionslagerhantering arbetsbelastningar är sammanhanget ett specifikt lagerställe på en specifik webbplats och juridisk person.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Skapa arbetsbelastning.":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Definiera dialogrutan för arbetsbelastning.":::
+
+#### <a name="manage-workloads"></a>Hantera arbetsbelastningar
+
+När en eller flera arbetsbelastningar har aktiverats kan du använda alternativet **Hantera arbetsbelastningar** för att initiera och hantera processer, till exempel processer som beskrivs i följande tabell.
+
+| Process | Beskrivning |
+|---|---|
+| Pausa skalningsenhetskommunikation | Pausa pipelinemeddelanden mellan hubb och skalningsenhet. Den process stoppar kommunikationen och tömmer datapipelinen mellan hubb och skaningsenheter. Du måste köra den här processen innan du kör en serviceoperation i Supply Chain Management på antingen hubben eller skaningsenheten, men du kan även använda den i andra situationer. |
+| Återuppta skalningsenhetskommunikation | Återuppta pipelinemeddelanden mellan hubb och skalningsenhet. Du kanske måste använda den här processen efter att du har kört en serviceoperation i Supply Chain Management på antingen hubb eller skalningsenhet. |
+| Uppgradera arbetsbelastningar | Synkronisera nya funktioner mellan arbetsbelastningar för hubb och skalningsenheter. Du kanske måste använda den här processen till exempel när servicen har medfört att datautbytesfrågorna har ändrats och/eller har lagt till nya register eller fält i arbetsbelastningen. |
+| Överföra arbetsbelastningar till en skalningsenhet | Planera en arbetsbelastning som i nuläget körs på den hubb som ska flyttas till en skalningsenhet. När denna process körs flödar synkroniseringen av data, och både hubben och saklningsenheten ställs in för att ändra ägarskapet för arbetsbelastningen. |
+| Överföra skalningsenhet till hubben | Planera en arbetsbelastning som i nuläget körs på en skalningsenhet som ska flyttas till hubben. När denna process körs flödar synkroniseringen av data, och både hubben och saklningsenheten ställs in för att ändra ägarskapet för arbetsbelastningen.
+| Nödövergång till hubb | <p>Överför omedelbart en befintlig arbetsbelastning till hubben. *Denna process ändrar ägarskapet för enbart de data som för tillfället finns tillgängliga i hubben.*</p><p><strong>Varning:</strong> Denna process kan orsaka dataförlust vid icke-synkroniserade data och affärsbearbetningsfel. Därför ska den bara användas vid nödsituationer där affärsprocesser måste bearbetas i hubben eftersom skalningsenheten har ett avbrott som inte kan åtgärdas inom rimlig tid.</p> |
+| Distribuerad avvecklingstopologi | Ta bort en distribuering för skalningsenhet och kör bara på hubben, utan bearbetning av arbetsbelastningen. |
+
+:::image type="content" source="media/sum-manage-workloads.png" alt-text="Skalningsenhet och arbetsbelastningshantering.":::
 
 > [!TIP]
 > Med tiden läggs stegvisa förbättringar till i upplevelsen för skalningsenhetsansvarig i syfte att förenkla hanteringen av livscykler. De specifika möjligheterna för den aktuella versionen dokumenteras i en registreringshandbok som är tillgänglig för kunder som håller på att registrera sig för den distribuerade hybridtopologin för Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->

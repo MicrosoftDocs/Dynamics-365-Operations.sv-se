@@ -1,8 +1,8 @@
 ---
 title: Utveckla en successionsplan
 description: Allt eftersom organisationen växer måste du börja följdplanera.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmSkillMapping, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ca1d9dda75038d937e2a3dad4582feefa617aac9f7f3f1a75ffd274c69c68ae9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ed10813c30b9a49b84a7e8e333fbac3d1e26720a
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768225"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731526"
 ---
 # <a name="develop-a-succession-plan"></a>Utveckla en successionsplan
 
@@ -35,8 +35,8 @@ Allt eftersom organisationen växer måste du börja följdplanera. Vid följdpl
 7. Välj **Person**.
 8. I fältet **Person** anger du ett namn eller väljer listrutan.
 9. Välj **OK**.
-10. Expandera snabbfliken **Certifikat** om du vill visa eller redigera de certifikat som ingår i färdighetsmappningen.
-11. Expandera snabbfliken **Färdigheter** för att visa eller redigera de färdigheter som ska inkluderas.
+10. Visa snabbfliken **Certifikat** om du vill visa eller redigera de certifikat som ingår i färdighetsmappningen.
+11. Visa snabbfliken **Färdigheter** för att visa eller redigera de färdigheter som ska inkluderas.
 12. Markera den första raden i listan. Exempel: Redovisning.
 13. Markera kryssrutan **Tillval**.
 14. Välj ett alternativ i fältet **Betydelse**. När du markerar en färdighet som valfri, måste du att välja betydelsenivå för färdigheten.  
@@ -48,8 +48,8 @@ Allt eftersom organisationen växer måste du börja följdplanera. Vid följdpl
 20. Välj ett alternativ i fältet **Betydelse**.
 21. Väl rad 4 i listan.
 22. Markera kryssrutan **Tillval**.
-23. Markera ett alternativ i fältet Betydelse.
-24. Expandera snabbfliken **Utbildning** om du vill visa eller redigera de utbildningskompetenser som ska inkluderas i färdighetsmappningen.
+23. Välj ett alternativ i fältet **Betydelse**.
+24. Visa snabbfliken **Utbildning** om du vill visa eller redigera de utbildningskompetenser som ska inkluderas i färdighetsmappningen.
 25. Välj **Kör**.
 26. Välj **OK**.
 27. Välj **Resultat**.

@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: da5ca16ed87108f8046348c831d37085f6f780d7
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 127b4092ad3c5e8737aff43f503e0a8f36ff1ec8
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386695"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781354"
 ---
 # <a name="party-and-global-address-book"></a>Part och global adressbok
 
@@ -28,14 +28,14 @@ ms.locfileid: "7386695"
 
 En part är en person eller en organisation som är involverad i en verksamhet. När konceptet med parter används kan en person eller en organisation ha mer än en roll inom en verksamhet (till exempel medarbetare, kund, leverantör eller kontakt). Rollen baseras på sammanhanget och syftet. Här följer några exempel på roller från två fiktiva företag, Contoso och Fabrikam:
 
-+ **Arbetare** – En medarbetare. Ett exempel är en medarbetare hos Contoso.
-+ **Leverantör** – en leverantörsorganisation eller en egenföretagare som levererar varor eller tjänster till ett företag. Om Till exempel Fabrikam säljer varor till Contoso är Fabrikam en leverantör till Contoso.
-+ **Kontakt** – En person som ska kontaktas. Om Contoso till exempel köper varor från Fabrikam kan medarbetare hos Contoso kontakta kontaktpersonen på Fabrikam.
++ **Arbetare** – En medarbetare. Ett exempel är en medarbetare på Contoso.
++ **Leverantör** – en leverantörsorganisation eller en egenföretagare som levererar varor eller tjänster till ett företag. Om till exempel Fabrikam säljer varor till Contoso är Fabrikam en leverantör till Contoso.
++ **Kontakt** – En person som ska kontaktas. Om Contoso till exempel köper varor från Fabrikam kommer medarbetare på Contoso att kontakta kontakten på Fabrikam.
 + **Kund** – En kund är en person eller ett företag som köper saker från ett företag. Om Contoso till exempel köper varor från Fabrikam är Contoso Fabrikams kund.
 
 Part-modellen används ofta för att representera medelkomplexa till komplexa relationer mellan organisationer och personer, i synnerhet när en part innehar mer än en roll. Nedan följer några vanliga exempel:
 
-+ En part kan vara både kund och leverantör. I till exempel Nordamerika säljer Fabrikam matvaror till Contoso och köper monterade högtalare från Contoso. I Europa säljer Fabrikam delar till Contoso, men köper inget från Contoso.
++ En part kan vara både kund och leverantör. I till exempel Nordamerika säljer Fabrikam enlektriska kablar till Contoso, samt köper monterade högtalare från Contoso. I Europa säljer Fabrikam delar till Contoso, men köper ingenting från Contoso.
 + En part kan vara både en anställd och en kund. En medarbetare på Contoso köper till exempel elektronik från Contoso för eget bruk.
 + Det kan finnas ett "flera-till-många"-förhållande (N:N) mellan en person och en organisation. Fabrikam tillhandahåller till exempel tjänstespecialister och anställer en placeringskoordinator. Placeringskoordinatorn matchar tjänstespecialisterna efter arbetsförfrågningar från flera av Fabrikams kunder. Contoso är en av Fabrikams kunder. När Contoso behöver en tjänstespecialist kontaktar man placeringskoordinatorn som sedan uppfyller begäran. Eftersom placeringskoordinatorn hanterar förfrågningar för alla kunder ingår en N:N-relation.
 
@@ -303,7 +303,7 @@ Mer information finns i [Mappningsreferens för dubbel skrivning](mapping-refere
     ![Känt problem med Lägg till kontakt.](media/party-gab-contact-issue.png)
 
 + **Initial synkronisering** stöder inte tidsfälten **Tillgänglig från** och **Tillgänglig till** i **ContactForParty**, detta eftersom DIXF omvandlar värdet till en heltalssträng. Konverteringen utlöser felet `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
-+ När en postadress används av mer än en orsak - till exempel affärskommunikationsadress och faktureringsadress - bör den visas som `Business;Invoice` enligt bilden nedan. Om du lägger till ett blanksteg mellan värdena visas ett felmeddelande.
++ När en postadress används av mer än en orsak – till exempel affärskommunikationsadress och faktureringsadress – bör den visas som `Business;Invoice` enligt bilden nedan. Om du lägger till ett blanksteg mellan värdena visas ett felmeddelande.
 
     ![Känt problem med adress.](media/party-gab-address-issue.png)
 

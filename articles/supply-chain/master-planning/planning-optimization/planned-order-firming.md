@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 966a878a7e5b0a92d6d53e67bea19c50274087a4416980859175b12c6fdfbcdc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec4265f0433fbbce1e00eda206c297b54f9b8df8
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764846"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778531"
 ---
 # <a name="firm-planned-orders"></a>Bekräfta planerade order
 
@@ -39,7 +39,7 @@ De flesta planerade orderfunktioner är tillgängliga i alla standardinstallatio
 
 Parallelliserat bekräftande gör det snabbare att bekräfta processen genom att parallellisera den i flera trådar. Det här arbetssättet kan vara användbart när många planerade order ska bekräftas.
 
-Om du vill göra de här funktionerna tillgängliga i systemet går du till [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen *Parallell bekräftelse av planerade order*.
+Om du vill göra de här funktionerna tillgängliga i systemet går du till [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen *Parallell bekräftelse av planerade order*. (Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard.)
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Aktivera planerad orderbekräftelse med filtrering
 
@@ -51,7 +51,7 @@ Om du vill göra de här funktionerna tillgängliga i systemet går du till [Fun
 
 Med auto-bekräftande kan du bekräfta planerade order som en del av huvudplaneringsprocessen inom tidsgränsramarna för bekräftelse. Auto-bekräftande stöds alltid för planeringsmotorn som är inbyggd i Supply Chain Management. Om du vill använda den tillsammans med Planeringsoptimering måste du även aktivera funktionen.
 
-Om du vill göra dessa funktioner tillgängliga i systemet går du till [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen *Auto-bekräftande för planeringsoptimering*.
+Om du vill göra dessa funktioner tillgängliga i systemet går du till [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen *Auto-bekräftande för planeringsoptimering*. (Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard.)
 
 ## <a name="manually-firm-planned-orders"></a>Bekräfta planerade order manuellt
 

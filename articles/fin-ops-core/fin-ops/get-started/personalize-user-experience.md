@@ -2,7 +2,7 @@
 title: Anpassa användarupplevelsen
 description: Det här avsnittet beskriver hur du kan anpassa appen.
 author: jasongre
-ms.date: 09/27/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1f24ff1a0730f13af6231510c8e6b3cb46fde48
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: 6256765c41ff128b067cda9107c790691c5b376a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581075"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777995"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
@@ -219,6 +219,9 @@ Om sparade vyer har aktiverats följer du dessa steg för att kopiera en anpassn
 ### <a name="export-and-import-views-or-personalizations"></a>Exportera och importera vyer eller anpassningar
 
 Ett annat sätt att dela anpassningar är genom export och import. Enskilda användare, eller en administratör som agerar för deras räkning, kan använda den här metoden för att exportera sina anpassningar eller vyer och sedan ge den exporterade filen till andra användare som ska importeras. Alternativt kan användare ge sina exporterade personanpassningar till en användare som har administratörsbehörighet, och den användaren kan sedan använda administrationssidan **Anpassning** för att tillämpa personanpassningsfilen på många användare samtidigt.
+
+> [!IMPORTANT]
+> Eftersom anpassningarna fortgår även över uppdateringarna är det både onödigt och inte rekommenterat att importera alla anpassningar på nytt efter en serviceuppdatering eller vid någon annan tidpunkt.   
 
 #### <a name="export"></a>Export
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 358f5a87cdb42f0ff646948da8d38475cf49e3f2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5e9dc9b7cf33f9393f408d8f8a458e9b0ea47639
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577922"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778387"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Schemalägga arbetsskapande under cykel
 
@@ -33,9 +33,9 @@ När funktionaliteten är aktiverad kommer planerat arbete automatiskt att få s
 
 De funktioner som beskrivs i det här avsnittet måste vara inaktiverade för ditt system. Använda [utgiftshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiverar du följande funktioner i följande ordning:
 
-1. **Arbetsspärr för hela organisationen** - Krävs för både manuell och automatisk konfiguration av planerat arbete.
-1. **Schemalägga arbetsskapande** - Krävs för både manuell och automatisk konfiguration av planerat arbete.
-1. **Organisationsomfattande påfyllnadsmetod "Schemalägg arbetet"** - Krävs för både manuell och automatisk konfiguration av planerat arbete. Du behöver inte den här funktionen om du bara vill använda manuell konfiguration.
+1. **Arbetsspärr för hela organisationen** – Krävs för både manuell och automatisk konfiguration av planerat arbete. (Från och med version 10.0.21 av Supply Chain Management är den här funktionen obligatorisk, varför den är aktiverad som standard och inte kan stängas av igen.)
+1. **Schemalägga arbetsskapande** – Krävs för både manuell och automatisk konfiguration av planerat arbete.
+1. **Organisationsomfattande påfyllnadsmetod "Schemalägg arbetet"** – Krävs för både manuell och automatisk konfiguration av planerat arbete. Du behöver inte den här funktionen om du bara vill använda manuell konfiguration.
 
 <a name="Auto-enable-schedule-work-creation"></a>
 
@@ -78,9 +78,9 @@ Börja med att skapa den nya påfyllnadsstegmetoden och aktivera den för parall
 1. Välj posten med **metodnamnet** *WHSScheduleWorkCreationWaveStepMethod* och välj **Konfiguration av uppgift**.
 1. Välj om du vill lägga till en ny rad i rutnätet **Ny** i åtgärdsfönstret och använd följande inställningar:
 
-    - **Lagerställe** - Välj det lager du ska använda för att schemalägga bearbetning av arbete.
-    - **Maximalt antal batchuppgifter** - Ange ett maximalt antal batchuppgifter. I de flesta fall bör detta värde vara i intervallet från 8-16, men vi rekommenderar att du experimenterar med den optimala inställningen baserat på dina scenarier.
-    - **Batchgrupp för påfyllnadsbearbetning** - Välj en särskild batchgrupp för påfyllnadsbearbetning för att optimera bearbetning av batchkö.
+    - **Lagerställe** – Välj det lager du ska använda för att schemalägga bearbetning av arbete.
+    - **Maximalt antal batchuppgifter** – Ange ett maximalt antal batchuppgifter. I de flesta fall bör detta värde vara i intervallet från 8-16, men vi rekommenderar att du experimenterar med den optimala inställningen baserat på dina scenarier.
+    - **Batchgrupp för påfyllnadsbearbetning** – Välj en särskild batchgrupp för påfyllnadsbearbetning för att optimera bearbetning av batchkö.
 
 Nu är du redo att uppdatera en befintlig påfyllnadsmall (eller skapa en ny) för att använda metoden för påfyllnadsbearbetning *Schemalägga arbetsskapande*.
 
