@@ -458,6 +458,16 @@
                   href: help/language-locale.md
                 - name: 'Utöka, anpassa och samarbeta om hjälpen'
                   href: help/contributor-guide.md
+            - name: Att tänka på vid distribuering
+              items:
+                - name: Distribuering av lokala molnbaserade distributionsalternativ Dynamics 365 Finance för och Dynamics 365 Supply Chain Management
+                  href: deployment/deployment-options-geo.md
+                - name: Finance och Supply Chain Management i GCC (US Government Community Cloud)
+                  href: deployment/us-gcc-deployment.md
+                - name: Finance och Supply Chain Management som drivs av 21Vianet i Kina
+                  href: deployment/china-local-deployment.md
+                - name: Finance and Operations-appar i Frankrike
+                  href: deployment/france-local-deployment.md
         - name: Ta fram och anpassa
           items:
             - name: Ta fram och anpassa – startsida
@@ -1118,6 +1128,8 @@
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: Uppgradera till part- och globala adressboksmodellen
                       href: data-entities/dual-write/upgrade-party-gab.md
+                    - name: Visa data för part
+                      href: data-entities/dual-write/view-party.md
                     - name: Note-integration
                       href: data-entities/dual-write/notes-integration.md
                     - name: Mappningsreferens
@@ -1584,7 +1596,7 @@
                   href: sysadmin/batch-server-overview.md
                 - name: Skapa batchjobb
                   href: sysadmin/tasks/create-batch-job.md
-                - name: Aktivera automatiska nya försök på batchjobb
+                - name: Aktivera batchförsök
                   href: sysadmin/retryable-batch.md
                 - name: Kopiera ett batchjobb
                   href: sysadmin/copy-batch-job.md

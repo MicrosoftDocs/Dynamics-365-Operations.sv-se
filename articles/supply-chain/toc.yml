@@ -62,10 +62,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurera lagerhållning för lokala distributioner
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations-appar som drivs av 21Vianet i Kina
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations-appar i Frankrike
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Nyheter och ändringar
               items:
                 - name: Nyheter och ändringar i Finance and Operations-appar
@@ -2147,9 +2143,9 @@
               items:
                 - name: Ställ in information om projektresurs
                   href: procurement/tasks/set-up-project-resource-information.md
-                - name: Skicka och godkänn projektbudgetar
+                - name: Skapa och skicka in ett arbetsflöde för projektbudget
                   href: procurement/tasks/submit-approve-project-budget.md
-                - name: Skicka och godkänn projektbudgetändringar
+                - name: Skicka in och godkänn ändringar av projektbudget
                   href: procurement/tasks/submit-approve-project-budget-revision.md
             - name: Vanliga frågor och svar om anskaffning
               href: procurement/procurement-faq.md

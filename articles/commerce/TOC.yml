@@ -74,10 +74,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Commerce Data Exchange – riktlinjer för implementering
                   href: dev-itpro/implementation-considerations-cdx.md
-                - name: Finance and Operations-appar som drivs av 21Vianet i Kina
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and Operations-appar i Frankrike
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Få support
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Uppgraderings- och N-1-stöd
@@ -1272,8 +1268,10 @@
               href: store-performance-information.md
             - name: 'Ställa in Recency-, frekvens- och penninganalys (RFM)'
               href: set-up-rfm-analysis.md
-            - name: Ställa in Microsoft Clarity i Dynamics 36 Commerce
+            - name: Ställa in Microsoft Clarity i Dynamics 365 Commerce
               href: set-up-clarity.md
+            - name: Commerce-analyser (förhandsversion)
+              href: commerce-analytics.md
         - name: Globalisering
           items:
             - name: Översikt över räkenskapsintegration för Commerce-kanal
@@ -1412,6 +1410,10 @@
                   href: localizations/rus-fpi-sample.md
                 - name: Hantering av kundinformation för Ryssland
                   href: localizations/rus-customer-information.md
+            - name: Saudiarabien
+              items:
+                - name: Generera QR-koder och skriv ut dem på kvitton för Saudiarabien
+                  href: localizations/emea-sau-qr-code.md
             - name: Sverige
               items:
                 - name: Funktioner för kassaapparat
@@ -2536,6 +2538,8 @@
                       href: e-commerce-extensibility/sdk-faq.md
                     - name: Metodtips för felsökning under Dynamics 365 Commerce-utveckling
                       href: e-commerce-extensibility/debugging-best-practices.md
+                    - name: Testa e-handelssidor för minnesläckor
+                      href: e-commerce-extensibility/memory-leak-detection.md
             - name: SDK för Retail
               items:
                 - name: Flytta till SDK för Commerce

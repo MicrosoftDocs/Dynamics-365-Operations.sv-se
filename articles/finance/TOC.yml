@@ -62,10 +62,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurera lagerhållning för lokala distributioner
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations-appar som drivs av 21Vianet i Kina
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations-appar i Frankrike
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
             - name: Nyheter och ändringar
               items:
                 - name: Nyheter och ändringar i Finance and Operations-appar
@@ -500,6 +496,8 @@
               href: accounts-receivable/customer-aging-snapshot.md
             - name: Åldersfördelningsrapport för kunder
               href: accounts-receivable/customer-aging.md
+            - name: Datalagring för kunders åldersfördelning
+              href: accounts-receivable/customer-aging-data-storage.md
             - name: Skapa en avskrivningsjournal för en kund
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Avancerad noteringshantering
@@ -1476,6 +1474,10 @@
                           items:
                             - name: Momsdeklaration
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
+                        - name: Rapportering för Tyskland
+                          items:
+                            - name: Momsdeklaration
+                              href: /localizations/emea-deu-vat-declaration-germany.md
                         - name: Rapportering för Nederländerna
                           items:
                             - name: Momsdeklaration
@@ -2160,11 +2162,13 @@
                       href: localizations/emea-deu-gdpdu-data-filtering.md
                 - name: Avskrivningsjusteringar för ytterligare anskaffning under det andra året
                   href: localizations/tasks/de-00002-depreciation.md
+                - name: Momsdeklaration
+                  href: localizations/emea-deu-vat-declaration-germany.md
                 - name: Överföring av elektronisk momsdeklaration (ELSTER)
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Tysk Intrastat
                   href: localizations/emea-deu-intrastat.md
-                - name: Momsdeklaration för Tyskland
+                - name: Momsutdrag
                   href: localizations/emea-de-vat-declaration.md
                 - name: Rapport över elektroniska kundfakturor
                   href: localizations/emea-deu-e-invoices.md
