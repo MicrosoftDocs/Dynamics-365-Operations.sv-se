@@ -2,7 +2,7 @@
 title: Konfigurera elektroniska meddelanden
 description: I detta ämne finns information om hur du konfigurerar in funktioner för elektroniska meddelanden (EM).
 author: liza-golub
-ms.date: 07/07/2021
+ms.date: 11/18/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 2b62efabfae26a6cc004604e687a49bce992d78a30f0d441aa74fa5cde70e063
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9d623c712de34afd1b38dbc6a8738ebf9613d49
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752185"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860568"
 ---
 # <a name="set-up-electronic-messages"></a>Konfigurera elektroniska meddelanden
 
@@ -34,6 +34,7 @@ Om du inte importerar ett paket för datatabeller kan du konfigurera funktionen 
 - [Ytterligare fält](#additional)
 - [Körbara klassinställningar](#executable)
 - [Fyll i poster, åtgärder](#populate)
+- [Fylla i poster från flera företag](#multiple-companies-populate)
 - [Webbprogram](#applications)
 - [Inställningar för webbtjänst](#settings)
 - [Åtgärder för meddelandebearbetning](#actions)
@@ -139,6 +140,38 @@ På snabbfliken **Inställningar för datakällor**, lägg till en rad för varj
 | Företag                | Detta fält blir tillgängligt när funktionen **Frågor mellan företag för åtgärder för ifyllande av poster** aktiveras i arbetsytan **Funktionshantering**. Använd den här funktionen när du vill ställa in datakällor mellan företag för åtgärder för postifyllande. Data kan hämtas från flera olika företag. |
 | Användarfråga             | <p>Om du ställer in en sökning genom att välja **Redigera sökning** ovanför rutnätet och du anger de kriterier som måste tillämpas på den valda huvudtabell som data fylls i ifrån, markeras denna kryssruta automatiskt. I annat fall fylls alla poster i från den valda huvudtabellkällan.</p><p>När funktionen **Frågor mellan företag för åtgärder för postifyllnad** har aktiverats i arbetsytan **Funktionshantering** och poster måste samlas in från flera olika företag, lägger du till en rad för varje ytterligare juridisk person som måste inkluderas i rapporteringen. För varje ny rad väljer du **Redigera sökning** och anger sedan ett relaterat kriterium som är specifikt för den juridiska personen som angetts i fältet **Företag** på raden. När du är klar innehåller rutnätet **Konfiguration av datakällor** rader för alla juridiska personer som måste inkluderas i rapporten.</p> |
 
+## <a name="populate-records-from-multiple-companies"></a><a id="multiple-companies-populate"></a>Fylla i poster från flera företag
+
+Om ditt företag måste rapportera från flera juridiska personer i samma Finance-databas ställer du in [ifyllda poståtgärder](#populate) för alla juridiska personer som data måste inkluderas från i rapporteringen.
+
+Följ dessa steg för att aktivera denna funktion i din Finance-miljö. 
+
+1. Gå till **Arbetsytor** \> **Funktionshantering**.
+2. Sök efter och välj funktionen **Frågor mellan företag för åtgärd för postifyllande** i listan.
+3. Välj **Aktivera nu**. 
+
+Om du vill ställa [åtgärder för ifyllande av poster](#populate) för flera företag som data måste inkluderas i rapporteringen från följer du dessa steg.
+
+1. Gå till **Moms** \> **Inställningar** \> **Elektroniska meddelanden** \> **Fyll i poståtgärder**.
+
+    När funktionen **Frågor mellan företag för åtgärd för postifyllande** är aktiverad, rutnätet **Konfiguration av datakällor** på sidan **Fyll i poster, åtgärd** inkluderar fältet **företag**. För befintliga poster som skapades under de allmänna inställningarna för [åtgärderna för ifyllda poster](#populate) visar det här fältet identifieraren för den aktuella juridiska personen.
+
+2. I rutnätet **Konfiguration för datakällor** lägger du till en rad för varje dotterbolag som juridisk person som måste inkluderas i rapporten .
+
+    | Fältnamn             | Värde |
+    |------------------------|-------|
+    | Namn                   | Ange ett textvärde som hjälper dig att förstå varifrån den här posten kommer. För exempel, ange **Datakällans namn - dotterbolag 1**. |
+    | Meddelandets artikeltyp      | Välj den meddelandeartikeltyp som krävs för din EM-bearbetning. |
+    | Kontotyp           | Ange kontotyp som krävs för din EM-bearbetning. Om din EM-bearbetning inte har några specifika kontotyper väljer du **Alla**. |
+    | Namn på huvudregister      | Ange namnet på huvudregistret som krävs för din EM-bearbetning. |
+    | Dokumentnummerfält  | Ange fältet som innehåller dokumentnumret i posterna för din EM-bearbetning. |
+    | Dokumentdatumfält    | Ange fältet som innehåller dokumentdatum i posterna för din EM-bearbetning. |
+    | Dokumentkontofält | Ange fältet som innehåller dokumentkonto i posterna för din EM-bearbetning. |
+    | Företag                | Välj ID för dotterbolag för juridiska personen. |
+    | Användarfråga             | Kryssrutan väljs automatiskt när du definierar kriterier genom att välja **Redigera fråga**. |
+
+3. För varje ny rad väljer du **Redigera sökning** och anger sedan en kriterier för den juridiska person som angetts i fältet **Företag** på raden.
+
 ## <a name="web-applications"></a><a id="applications"></a>Webbprogram
 
 Använd inställningar för webbprogram för att ställa in ett webbprogram så att detta stöder öppen auktorisering (OAuth) 2.0. OAuth är en öppen standard som ger användarna ”säker delegerad åtkomst” till programmet för deras räkning, utan att dela sina autentiseringsuppgifter. Du kan också gå igenom auktoriseringsprocessen genom att få en auktoriseringsskod och åtkomsttoken. Du kan konfigurera inställningar för webbappar genom att gå till **Skatt** \> **Konfiguration** \> **Elektroniska meddelanden** \> **Webbappar**.
@@ -214,6 +247,7 @@ I följande tabell beskrivs fälten på sidan **Åtgärder för meddelandebearbe
 | Körbar klass                          | Välj en befintlig körbar klassinställning. Det här fältet är bara tillgängligt för åtgärder av typerna **Körningsnivå för meddelandeartikel** och **Körningsnivå för meddelandeartikel**. |
 | Fyll i poster, åtgärd                   | Välj en befintlig åtgärd för postifyllande. Det här fältet är endast tillgängligt för åtgärder av typen **fylla i poster**. |
 | Webbtjänst                               | Välj en befintlig webbtjänst. Det här fältet är endast tillgängligt för åtgärder av typen **Webbtjänst**. |
+| Filnamn att skicka                         | Ange namnet på bilagan till ett elektroniskt meddelande som måste skickas med den här åtgärden. Om flera bilagor har samma ursprungliga filnamn skickas den senaste. Om det inte finns någon bilaga med det angivna ursprungliga filnamnet skickas begäran utan innehåll. Det här fältet är endast tillgängligt för åtgärder av typen **Webbtjänst**. |
 | Filnamn                                 | Ange namnet på den fil som blir resultatet av åtgärden. Den här filen kan vara svaret från webbservern eller den rapport som genereras. Det här fältet är endast tillgängligt för åtgärder av typerna **webbtjänst** och **meddelande om export av elektronisk rapportering**. |
 | Bifoga filer till källdokument          | Markera den här kryssrutan om du vill koppla genererade filer till poster i ett refererat huvudregister för EM-artiklar. Det här fältet är endast tillgängligt för åtgärder av typerna **Elektronisk rapporteringsexport** och **Webbtjänst**. |
 | Bifoga filer från utdataarkiv till artiklar | Markera den här kryssrutan om du vill ta fram separata XML-filer från utdataarkivfilen och koppla dessa till motsvarande objekt i det elektroniska meddelandet. Detta fält är endast tillgängligt för åtgärder av typen **Meddelande om export av elektronisk rapportering**. |

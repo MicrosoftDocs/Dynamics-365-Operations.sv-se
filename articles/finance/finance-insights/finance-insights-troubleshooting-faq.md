@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 68115d484abcdc3c37357ae441e9f9ccb5212659
+ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752627"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "7827063"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Felsöka problem med Finance Insights
 
@@ -70,3 +70,26 @@ Kassaflödesprognosfunktionen i kassa- och bankhantering och funktionen Kassafl�
 Först ställer du in och aktiverar kontona för kassaflödesprognos och likviditet. Mer information finns i [Kassaflödesprognoser](../cash-bank-management/cash-flow-forecasting.md). Om inställningen har slutförts men du inte ser de förväntade resultaten, kan du läsa mer i [Felsöka inställningar för kassaflödesprognoser](../cash-bank-management/cash-flow-forecasting-tsg.md).
 
 Bekräfta sedan att funktionen Kassaflödesprognoser i Finance insights (**Hantering av kassa och bank \> Inställningar \> Finance Insights \> Kassaflödesprognoser**) har aktiverats och att utbildningen av AI-modellen har slutförts. Om utbildningen inte har slutförts väljer du **Prognos nu** för att starta modellutbildningsprocessen.
+
+## <a name="symptom-why-isnt-the-install-a-new-add-in-button-visible-in-microsoft-dynamics-lifecycle-services"></a>Symptom: Varför visas inte knappen Installera ett nytt tillägg i Microsoft Dynamics Lifecycle Services?
+
+### <a name="resolution"></a>Lösning
+
+Kontrollera att rollen **Miljöchefen** eller **Projektägare** tilldelas den inloggade användaren i fältet **Projektsäkerhetsroll** i Microsoft Dynamics Lifecycle Services (LCS). Installationen av de nya tilläggen kräver en av dessa projektsäkerhetsroller.
+
+Om du har tilldelats rätt projektsäkerhetsroll kanske du måste uppdatera webbläsaren för att kunna visa knappen **Installera nytt tillägg**.
+
+## <a name="symptom-the-finance-insights-add-in-doesnt-seem-to-be-installing-why-is-that"></a>Symptom: tillägget Finance Insights verkar inte vara installerat. Varför är det?
+
+### <a name="resolution"></a>Lösning
+
+Följande steg bör ha genomförts.
+
+- Verifiera att du har åtkomst **systemadministratörer** och **Systemanpassare** i administrationscentret för Power Portal.
+- Verifiera att en Dynamics 365 Finance eller motsvarande licens tillämpas på den användare som installerar tillägget.
+- Kontrollera att följande Azure AD app är registrerat i Azure AD: 
+
+  | Ansökning                  | App-ID           |
+  | ---------------------------- | ---------------- |
+  | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
+  

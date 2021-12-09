@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 2c53de92df1ece80f69daf0cc7a4473a2dafd0c9
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: 9e0529367a761b79530f40e2853b6f4a6faac3cf
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678773"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860856"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurera omvägar för steg i menyalternativ för mobila enheter
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: GA with 10.0.23 -->
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until GA with 10.0.23 -->
 
 > [!IMPORTANT]
 > Funktionerna som beskrivs i detta ämne gäller bara den nya mobilappen Warehouse Management. De påverkar inte den gamla lagerställeappen, som nu har blivit inaktuell.

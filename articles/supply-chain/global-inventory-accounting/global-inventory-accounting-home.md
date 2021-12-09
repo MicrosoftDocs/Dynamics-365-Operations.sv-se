@@ -10,17 +10,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 954a3bcdf6ad163afd2596227ce2c8548fe37027
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: 268ee58583306bdd99e5d5cd5bb436a328a5648b
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678505"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860493"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Startsida för Global lagerredovisning
 
 [!INCLUDE [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 Internationella organisationer är under ökat tryck från myndigheter för att följa lokala och globala redovisningsstandarder. Värderingen av lager gör att det blir en viktig roll för att se till att lagret efterlevs. Tillägget Global lagerredovisning för Microsoft Dynamics 365 Supply Chain Management ger en heltäckande lösning som gör det möjligt för organisationer (särskilt internationella organisationer) att använda flera kostnadsredovisningar för att göra lagerbokföring. Dessa organisationer kan därför efterleva flera redovisningsstandarder och redovisning inom den interna hanteringen samtidigt.
 

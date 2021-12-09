@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
+ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641171"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813736"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
 
@@ -290,7 +290,8 @@ Följande tabell sammanfattar vilka produktionsscenarier för lagerstyrning som 
 |---------|-----|------------------------------|
 | Rapportera som färdigt gods och stuvat gods | Ja | Ja |
 | Plats för samprodukt och biprodukt | Ja | Ja |
-| <p>Alla andra lagerstyrningsprocesser som är relaterade till produktion, inklusive:</p><li>Frisläpp till distributionslager</li><li>Bearbetning av produktionspåfyllnader</li><li>Råmaterialhämtning</li><li>Kanban-plats</li><li>Kanban-plockning</li><li>Starta produktionsorder</li><li>Produktionskassation</li><li>Sista produktionspall</li><li>Registrera materialförbrukning</li><li>Töm kanban</li></ul> | Ja | Nej |
+| Starta produktionsorder | Ja | Ja |
+| <p>Alla andra lagerstyrningsprocesser som är relaterade till produktion, inklusive:</p><li>Frisläpp till distributionslager</li><li>Bearbetning av produktionspåfyllnader</li><li>Råmaterialhämtning</li><li>Kanban-plats</li><li>Kanban-plockning</li><li>Produktionskassation</li><li>Sista produktionspall</li><li>Registrera materialförbrukning</li><li>Töm kanban</li></ul> | Ja | Nej |
 | Lagerpåfyllnad av råmaterial | Nej | Nej |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Underhålla skalningsenheter för lagerställekörning

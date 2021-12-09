@@ -2,7 +2,7 @@
 title: Financial Insights – startsida
 description: Finance insights ger konfigurerbara och utökningsbara modeller för att hjälpa dig att noggrant och effektivt förutsäga företagets kassaflöde, när du ska få betalning för utestående kundfordringar och skapa ett budgetförslag som kan påskynda budgetprocessen. Alla dessa funktioner baseras på intelligenta maskininlärningsmodeller.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 11/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3c6320043000dc07eea3128a10c16cfd54b13334
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: dfc4d9cb5be4d8d287122fd33bf09b0570498169
+ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752866"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813757"
 ---
 # <a name="finance-insights-home-page"></a>Financial Insights – startsida
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights ger konfigurerbara och utökningsbara modeller för att hjälpa dig att på ett smart sätt förutsäga företagets kassaflöde, förutsäga när du får betalning för utestående kundfordringar samt skapa ett budgetförslag som kan påskynda budgetprocessen. Alla dessa funktioner baseras på intelligenta maskininlärningsmodeller. När dessa nya funktioner kombineras med automatisering i leverantörsbetalningar och -samlingar, tillhandahåller de ett omfattande och intelligent system som driver beslutsfattande och hjälper dig att vidta åtgärder för att effektivt svara på aktuella och förväntade affärsutmaningar.
+Finance Insights ger konfigurerbara och utökningsbara lösningar för att hjälpa dig att på ett smart sätt förutsäga företagets kassaflöde, förutsäga när du får betalning för utestående kundfordringar samt skapa ett budgetförslag som kan påskynda budgetprocessen. Dessa funktioner använder intelligenta maskininlärningsmodeller för att skapa modeller med hjälp av data du tillhandahåller (inklusive data från en tredje part som t.ex. information om kundrapport från en servicebyrån). Dessa kompetenser informerar om beslutsprocessen och hjälper dig att vidta åtgärder för att effektivt reagera på aktuella och förväntade affärsrelationer. Du ansvarar för alla data som används med eller utdata från Finance Insights.
 
 > [!NOTE]
 > Förhandsversionen av Finance Insights finns tillgänglig för distribution i USA, Kanada, Storbritannien, Europa, Asien och Stillahavsområdet, Australien samt Nya Zeeland. Microsoft lägger stegvis till support för fler regioner.
