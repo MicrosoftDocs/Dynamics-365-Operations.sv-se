@@ -70,12 +70,12 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Finance
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.23
+                    - name: Finance 10.0.24 (februari)
+                      href: get-started/whats-new-changed-10-0-24.md
+                    - name: Finance 10.0.23 (januari)
                       href: get-started/whats-new-changed-10-0-23.md
                     - name: Finance 10.0.22 (november 2021)
                       href: get-started/whats-new-changed-10-0-22.md
-                    - name: Finance 10.0.21 (oktober 2021)
-                      href: get-started/whats-new-changed-10-0-21.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -518,6 +518,8 @@
               href: budgeting/budget-control-overview-configuration.md
             - name: Budgetöversikt
               href: budgeting/basic-budgeting-overview-configuration.md
+            - name: Budgetmedel är tillgängliga
+              href: budgeting/budget-funds-available.md
             - name: Befattningsprognos
               href: budgeting/position-forecasting.md
             - name: Motiveringsdokument för budgetplanering
@@ -1434,16 +1436,26 @@
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Ställ in elektronisk fakturering
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
+                        - name: Tillägget Power Platform för administratörsreferens
+                          href: localizations/e-invoicing-power-platform-plug-in.md
                     - name: Vanliga frågor och svar om elektronisk fakturering
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Momsberäkning
                   items:
                     - name: Översikt över momsberäkning
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
-                    - name: Ställ in
+                    - name: Inställningar
                       items:
                         - name: Kom i gång med momsberäkning
                           href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                        - name: Ställ in momskoder
+                          href: localizations/set-up-tax-codes.md
+                        - name: Ställ in momsgrupper
+                          href: localizations/set-up-tax-groups.md
+                        - name: Ställ in artikelmomsgrupper
+                          href: localizations/set-up-item-tax-groups.md
+                        - name: Beräkningar av import- och exportskatt
+                          href: localizations/tax-calculation-import-export-feature.md
                         - name: Konfigurera en miljö för att söka efter huvuddata
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
                     - name: Bestämning
@@ -2594,6 +2606,8 @@
               items:
                 - name: Indonesien – översikt
                   href: localizations/indonesia.md
+                - name: Momsfakturanumrering och fakturering
+                  href: localizations/apac-idn-invoicing.md
                 - name: Momsdeklaration för Indonesien
                   href: localizations/apac-idn-ppn-declaration.md
             - name: Italien
@@ -2662,6 +2676,8 @@
                   href: localizations/emea-ita-exil-tax-plafond.md
                 - name: Elektroniska kundfakturor
                   href: localizations/emea-ita-e-invoices.md
+                - name: Elektroniska leverantörsfakturor
+                  href: localizations/emea-ita-vend-e-invoices.md
                 - name: Årlig momsredovisning
                   href: localizations/emea-ita-yearly-tax-communication.md
                 - name: Spårbarhet för betalning
@@ -2964,6 +2980,20 @@
                   href: localizations/emea-nor-nets-import-format.md
                 - name: Momsutdrag
                   href: localizations/emea-nor-sales-tax-payment-report.md
+                - name: Momsretur med direkt överföring till Altinn
+                  items:
+                    - name: Översikt över momsretur med direkt överföring till Altinn
+                      href: localizations/emea-nor-vat-return.md
+                    - name: Registrera en integrationspunkt i webbportalen ID-porten
+                      href: localizations/emea-nor-vat-return-integration-point.md
+                    - name: Förbered din miljö för samverkan med ID-porten och Altinn-webbtjänster
+                      href: localizations/emea-nor-vat-return-setup.md
+                    - name: Checklista för konfiguration av elektroniska meddelanden för momsretur
+                      href: localizations/emea-nor-vat-return-checklist.md
+                    - name: Auktorisera din Finance-miljö för samverkan med ID-porten och Altinn-webbtjänster
+                      href: localizations/emea-nor-vat-return-authorization.md
+                    - name: Skicka in en momsretur till Altinn-webbtjänst
+                      href: localizations/emea-nor-vat-return-submission.md
                 - name: Standardverifieringsfil för skatt (SAF-T) för Norge
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: Elektroniska kundfakturor i Norge
@@ -3831,6 +3861,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/finance/toc.json
                     - name: List
                       items:
                         - name: Lista över funktioner
