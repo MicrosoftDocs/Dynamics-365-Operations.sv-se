@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 210d92b9fd962708b141b79f3634f142cca9787a
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 2942b141eb3a5b83fb39b0de721bae60c074e01c
+ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777777"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900720"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Förbättringar i inköps-cXML
 
@@ -141,7 +141,7 @@ När du är klar med att konfigurera alla egenskaper och konfigurera andra inst�
 
 Som nämnts i avsnittet [Ange orderegenskaper](#set-order-properties) om du vill att de levererade cXML för att inkludera text från noteringar som är kopplade till relevanta inköpsorder och/eller leverantörsposter, kan du ställa in värdet **POCOMMENTS** och/eller egenskapen **VENDCOMMENTS** till _TRUE_ i den externa katalogen. Det här avsnittet innehåller mer information om hur de här bilagorna markeras och bearbetas i systemet om du använder dem.
 
-Om du vill ange vilka typer av anteckningar som systemet ska söka efter går du till **Anskaffning och källa \> Inställningar \> Formulär \> Från inställning**. Sedan på fliken **Inköpsorder** anger du fältet **Inkludera dokument av typen** den typ av notering som du vill kunna ta med. Endast textanteckningar kommer att inkluderas, inte bifogade dokument.
+Om du vill ange vilka typer av anteckningar som systemet ska söka efter går du till **Anskaffning och källa \> Inställningar \> Formulär \> Formulärinställning**. Sedan på fliken **Inköpsorder** anger du fältet **Inkludera dokument av typen** den typ av notering som du vill kunna ta med. Endast textanteckningar kommer att inkluderas, inte bifogade dokument.
 
 ![Inställningssida för formulär.](media/cxml-form-setup.png "Formulär inställningssida")
 

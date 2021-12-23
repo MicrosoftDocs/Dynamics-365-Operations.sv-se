@@ -2,7 +2,7 @@
 title: Översikt över elektronisk rapportering (ER)
 description: Det här ämnet ger en översikt till verktyget Elektronisk rapportering. Det beskriver viktiga begrepp, scenarier som stöds och format som är en del av lösningen.
 author: NickSelin
-ms.date: 09/20/2021
+ms.date: 11/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0fd83c787be4d9de151d2727384d07bc209e33f
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 0b772acd4a8d0849803cefa8fc14ae3dd6e18831
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562186"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867307"
 ---
 # <a name="electronic-reporting-er-overview"></a>Översikt över elektronisk rapportering (ER)
 
@@ -30,11 +30,37 @@ ms.locfileid: "7562186"
 
 Det här ämnet ger en översikt till verktyget Elektronisk rapportering (ER). Den innehåller information om huvudkoncepten, scenarier som ER stöder och en lista över format som har utformats och lanserats som en del av lösningen.
 
+ER är ett konfigurerbart verktyg som hjälper dig att skapa och underhålla elektronisk rapportering och betalningar. Det baseras på följande tre koncept:
+
+- Konfiguration i stället för kodning:
+
+    - Konfiguration kan utföras av en företagsanvändare och ingen utvecklare krävs.
+    - Datamodellen definieras i affärsvillkor.
+    - Visuella redigerare används för att skapa alla komponenter i ER-konfigurationen.
+    - Det språk som används vid datatransformeringen liknar det språk som används Microsoft Excel.
+
+- En konfiguration för flera Dynamics 365 Finance versioner:
+
+    - Hantera en domänspecifik datamodell som är definierad i affärsvillkor.
+    - Frisläppningsdetaljer för tillämpad program i frisläppningsberoende datamodellmappningar.
+    - Underhåll en formatkonfiguration för flera versioner av den aktuella versionen, baserat på datamodellen.
+
+- Enkel eller automatisk uppgradering:
+
+    - Versioner och ER-konfigurationer stöds.
+    - Microsoft Dynamics Lifecycle Services-biblioteket (LCS) resursbiblioteket kan användas som databas för ER-konfigurationer för versionutbyte.
+    - Lokaliseringar som baseras på ursprungliga ER-konfigurationer kan införas som underordnade versioner.
+    - Ett ER-konfigurationsträd finns som ett verktyg för att kontrollera versioners beroenden.
+    - Skillnader i localization, eller deltakonfigurationen, registreras för att aktivera automatisk uppgradering till en ny version av den ursprungliga ER-konfigurationen.
+    - Det är enkelt att lösa konflikter som upptäcks vid automatisk uppgradering av lokaliseringsversioner.
+
+ER låter dig definiera elektroniska formatstrukturer och sedan beskriva hur strukturerna ska fyllas i genom att använda data och algoritmer. Du kan använda ett receptspråk som liknar Excel-språket för datatransformeringen. För att göra mappningen i databasen till format mer hanterbar, återanvändningsbar och oberoende av formatändringar, införas ett mellanliggande datamodellbegrepp. Med detta begrepp kan implementeringsdetaljer döljas från formatmappningen och en enskild datamodell kan återanvändas för flera formatmappningar.
+
 ER är ett verktyg du kan använda för att konfigurera format för såväl inkommande som utgående elektroniska dokument i enlighet med de rättsliga kraven i olika länder/regioner. Med hjälp av ER kan du hantera dessa format under deras livscykel. Du kan exempelvis tillämpa nya lagkrav och skapa affärsdokument i de format som krävs för elektroniskt informationsutbyte med myndigheter, banker och andra parter.
 
 ER-motorn riktar sig till företagsanvändare, i stället för till utvecklare. Eftersom du kan konfigurera formaten istället för koden blir processerna för att skapa och ändra format på elektroniska dokument snabbare och enklare.
 
-ER stöder för närvarande formaten TEXT, XML, Microsoft Word-dokument och OPENXML-kalkylblad. Ett tilläggsgränssnitt kan dock ge stöd för ytterligare format.
+ER stöder för närvarande formaten TEXT, XML, JSON, PDF, Microsoft Word, Microsoft Excel och OPENXML kalkylblad.
 
 ## <a name="capabilities"></a>Funktioner
 
@@ -48,6 +74,10 @@ ER-motorn har följande funktioner:
 
 ## <a name="key-concepts"></a>Viktiga begrepp
 
+### <a name="main-data-flow"></a>Huvuddataflöde
+
+[![ER-huvuddataflöde.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
+
 ### <a name="components"></a>Komponenter
 
 ER stöder följande typer av komponenter:
@@ -59,74 +89,6 @@ ER stöder följande typer av komponenter:
 
 Mer information finns i [Komponenter för elektronisk rapportering](er-overview-components.md).
 
-#### <a name="data-model-and-model-mapping-components"></a>Komponenter för datamodell och datamodellmappning
-
-En datamodellskomponent är en abstrakt representation av en datastruktur. Den används för att beskriva domänen för ett visst affärsområde tillräckligt detaljerat för att uppfylla rapporteringskraven för domänen. En datamodellkomponent för omfattar följande delar:
-
-- <a name="DataModelComponent"></a>En datamodell som en uppsättning domänspecifika affärsenheter och en hierarkiskt strukturerad definition av relationer mellan dem.
-- <a name="ModelMappingComponent"></a>En modellmappning som länkar valda programdatakällor till enskilda element i en datamodell som vid körning specificerar dataflödet och reglerna för population av affärsdata till datamodellkomponenten.
-
-En affärsenhet av datamodellen representeras som en behållare (post). Affärsenhetsegenskaper återges som dataobjekt (fält). Varje dataobjekt har ett unikt namn, en unik etikett, en unik beskrivning och ett unikt värde. Värdet på respektive dataobjekt kan vara utformat så att det tolkas som en sträng, ett heltal, ett realtal, ett datum, en uppräkning, ett booleskt värde och så vidare. Dessutom kan det vara en annan post eller lista över poster.
-
-En enskild datamodellskomponent kan innehålla flera hierarkier av domänspecifika affärsenheter. Den kan också innehålla modellmappningar som har stöd för ett rapportspecifikt dataflöde vid körning. Hierarkierna särskiljs av en enda post som har valts som rot för modellmappningen. Datamodellen för betalningsdomänområdet kan exempelvis stödja följande mappningar:
-
-- Företag \> Leverantör -\> Betalningstransaktioner i AP-domänen
-- Kund \> Företag -\> Betalningstransaktioner i AR-domänen
-
-Observera att affärsenheter såsom företags- och betalningstransaktioner skapas en gång. Olika mappningar återanvänder sedan dem.
-
-En modellmappning som har stöd för utgående elektroniska dokument har följande funktioner:
-
-- Den kan använda olika datatyper som datakällor för en datamodell. Den kan exempelvis använda tabeller, datatabeller, metoder eller fasttext.
-- Den har stöd för användardefinierade indataparametrar som kan definieras som datakällor för datamodeller när vissa data måste specificeras vid körning.
-- Den stöder transformeringen av data till erforderliga grupper. Dessutom kan du filtrera, sortera och summera data, samt lägga till logiska, beräknade fält som utformas via formler som liknar Microsoft Excel-formler. Mer information finns i [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md).
-
-En modellmappning som har stöd för inkommande elektroniska dokument har följande funktioner:
-
-- Olika uppdateringsbara dataelement används som mål. Dessa dataelement inkluderar tabeller, dataenheter och vyer. Datan kan uppdateras med data från inkommande elektroniska dokument. Flera mål kan användas i en enda modellmappning.
-- Den har stöd för användardefinierade indataparametrar som kan definieras som datakällor för datamodeller när vissa data måste specificeras vid körning.
-
-En datamodellskomponent har utformats för respektive företagsdomän som ska användas som en enhetlig datakälla för rapportering som isolerar rapporterna från den fysiska implementeringen av datakällor för Finance and Operations. Den representerar domänspecifika affärsbegrepp och -funktioner i ett formulär som utgör ett rapporteringsformulärs ursprungliga konstruktion och vidare underhåll effektivare.
-
-#### <a name="format-components-for-outgoing-electronic-documents"></a><a name="FormatComponentOutbound"></a>Formatkomponenter för utgående elektroniska dokument
-
-En formatkomponent är schemat för de rapporteringsutdata som skapas vid körning. Ett schema består av följande element:
-
-- Ett format som definierar strukturen och innehållet i det utgående elektroniska dokument som skapas vid körning.
-- Datakällor som en uppsättning parametrar för användarindata och en domänspecifik datamodell som använder en vald modellmappning.
-- En formatmappning som en uppsättning bindningar av formatdatakällor som har vissa element i ett format som vid körning specificerar dataflödet och reglerna för formatets utdatagenerering.
-- En formatvalidering som en uppsättning konfigurerbara regler som kontrollerar rapportgenereringen vid körning beroende på löpande kontext. Det kan exempelvis finnas en regel som stoppar utgående generering av en viss leverantörs betalningar, och som skapar ett undantag när specifika attribut för den valda leverantören saknas, till exempel bankkontonummer.
-
-En formatkomponent har stöd för följande funktioner:
-
-- Skapa rapporteringsutdata som enskilda filer i olika format, till exempel text, XML Microsoft Word-dokument eller kalkylblad.
-- Skapa flera filer separat och även packa filerna i zip-filer.
-
-En formatkomponent låter dig bifoga vissa filer som kan användas i rapporteringsutdatan:
-
-- Excel-arbetsböcker som innehåller ett kalkylblad som kan användas som en mall för utdata i OPENXML-kalkylbladsformat
-- Word-filer som innehåller ett dokument som kan användas som en mall för utdata i Microsoft Word-dokumentformat
-- Andra filer som kan ingå i formatets utdata som fördefinierade filer.
-
-Följande bild visar hur datan flödar för dessa format.
-
-[![Dataflöde för utgående formatkomponenter.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
-
-Du måste identifiera mappningen av formatkonfigurationen för att kunna köra en enskild ER formatkonfiguration och skapa utgående elektroniska dokument.
-
-#### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Formatkomponenter för inkommande elektroniska dokument
-
-En formatkomponent är schemat för de inkommande dokument som importeras vid körning. Ett schema består av följande element:
-
-- Ett format som definierar strukturen och innehållet i de inkommande elektroniska dokument som innehåller data som importeras vid körning. En formatkomponent används för att tolka ett inkommande dokument i olika format, till exempel text och XML.
-- En formatmappning som binder enskilda formatelement till element i en domänspecifik datamodell. Vid körning anger elementen i datamodellen dataflödet och reglerna för import av data från ett inkommande dokument, och spara sedan datan i en datamodell.
-- En formatvalidering som en uppsättning konfigurerbara regler som kontrollerar dataimporten vid körning, beroende på körningskontexten. Det kan exempelvis finnas en regel som stoppar dataimporten av ett bankutdrag med en viss leverantörs betalningar, och som skapar ett undantag när attributen för en specifik leverantör saknas, till exempel ID-koden för leverantören.
-
-Följande bild visar hur datan flödar för dessa format.
-
-[![Dataflöde för inkommande formatkomponenter.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
-
-Om du vill köra en enskild ER formatkonfiguration för att importera data från ett inkommande elektroniskt dokument måste du identifiera önskad mappning för en formatkonfiguration, samt även integreringspunkten för en modellmappning. Du kan använda samma modellmappning och mål tillsammans med olika format för olika typer av inkommande dokument.
 
 #### <a name="component-versioning"></a>Komponentversionsnumrering
 

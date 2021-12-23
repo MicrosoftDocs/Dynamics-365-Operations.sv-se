@@ -1,8 +1,8 @@
 ---
 title: Förbättringar av funktionen för bokföring av utdrag
 description: Det här avsnittet beskriver de förbättringar som har gjorts till funktionen för bokföring av utdrag.
-author: josaw1
-ms.date: 05/14/2019
+author: analpert
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -10,19 +10,20 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: anpurush
+ms.author: analpert
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 49fc9003eae562a155fd8e30345ba4590d36e15b61f9f6a3f0b5896cb720f414
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7e88511ac3d0044c7e590f43f4486929f691ce9
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772214"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891453"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Förbättringar av funktionen för bokföring av utdrag
 
 [!include [banner](includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Det här avsnittet beskriver den första uppsättningen förbättringar som har gjorts till funktionen för bokföring av utdrag. Dessa förbättringar är tillgängliga i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
@@ -116,9 +117,17 @@ Ett utdrag genomgår olika operationer (till exempel skapa, beräkna, radera och
 
 ### <a name="aggregated-transactions"></a>Sammansatta transaktioner
 
-Under bokföringsprocessen sammanställs försäljningstransaktionerna baserat på konfigurationen. Dessa sammanlagda transaktioner lagras i systemet och används till att skapa försäljningsorder. Varje sammanlagd transaktion skapar en motsvarande försäljningsorder i systemet. Du kan visa sammanlagd transaktion med knappen **sammanlagda transaktioner** i gruppen **Information om körning** för utdraget.
+Under bokföringsprocessen aggregeras hämtköpstransaktioner per kund och produkt. Därför minskas antalet försäljningsorder och rader som skapas. Dessa sammanlagda transaktioner lagras i systemet och används till att skapa försäljningsorder. Varje sammanlagd transaktion skapar en motsvarande försäljningsorder i systemet. 
 
-Fliken **detaljer för försäljningsorder** för en sammanlagd transaktionen visar följande information:
+Om utdraget inte är helt bokfört kan du visa aggregerade transaktioner i utdraget. I åtgärdsrutan på fliken **Utdrag** i gruppen **Information om körning** väljer du **Sammansatta transaktioner**.
+
+![Knappen aggregerade transaktioner för ett utdrag som inte är helt bokfört.](media/aggregated-transactions.png)
+
+För bokförda kontoutdrag kan du se aggregerade transaktioner på **Bokförda utdrag**. I åtgärdsfönstret, välj **Förfrågningar** och välj sedan **Sammansatta transaktioner**.
+
+![Sammansatta transaktionskommandon för bokförda utdrag.](media/aggregated-transactions-posted-statements.png)
+
+Snabbfliken **detaljer för försäljningsorder** för en sammanlagd transaktionen visar följande information:
 
 - **Post-ID** – ID för sammanlagda transaktionen.
 - **Utdragsnummer** – utdraget som den sammanlagda transaktionen tillhör.
@@ -127,10 +136,26 @@ Fliken **detaljer för försäljningsorder** för en sammanlagd transaktionen vi
 - **Antal sammanlagda rader** – det totala antalet rader för försäljningsordern och sammanlagda transaktionen.
 - **Status** – sista status för sammanlagda transaktionen.
 - **Faktura-ID** – när försäljningsordern för sammanlagda transaktionen faktureras, försäljningsfaktura ID. Om fältet är tomt kommer har fakturan för försäljningsorder inte bokförts.
+- **Felkod** – Det här fältet ställs in om aggregeringen är i felläge.
+- **Felmeddelande** – Det här fältet ställs in om aggregeringen är i felläge. Här visas information om vad som orsakade att processen misslyckades. Du kan använda informationen i felkoden för att åtgärda problemet och sedan starta om processen manuellt. Beroende på typen av lösning kan aggregerad försäljning behöva tas bort och bearbetas på ett nytt utdrag.
 
-Fliken **transaktionsdetaljer** på en sammanlagd transaktion visar alla transaktioner som tagits emot i sammanlagda transaktionen. De sammanlagda raderna på den sammanlagda transaktionen visar alla sammanlagda posterna från transaktioner. De sammanlagda raderna visar också information om artikel, variant, kvantitet, pris, nettobelopp, enhet och lagerställe. I princip motsvarar varje sammanlagd rad en försäljningsorderrad.
+![Fält på snabbflikarna Försäljningsorderdetaljer för en aggregerad transaktion.](media/aggregated-transactions-error-message-view.png)
 
-Från sidan **sammanlagda transaktioner** kan du hämta XML för en viss sammanlagd transaktion med knappen **exportera försäljningsorder-XLM**. Du kan använda XML för att felsöka problem som rör upprättande av försäljningsorder och bokföring. Bara hämta XML, överför den till en testmiljö och felsök problem i testmiljön. Funktionen för att hämta XML för sammanlagda transaktioner är inte tillgänglig för utdrag som har bokförts.
+Snabbfliken **transaktionsdetaljer** på en sammanlagd transaktion visar alla transaktioner som tagits emot i sammanlagda transaktionen. De sammanlagda raderna på den sammanlagda transaktionen visar alla sammanlagda posterna från transaktioner. De sammanlagda raderna visar också information om artikel, variant, kvantitet, pris, nettobelopp, enhet och lagerställe. I princip motsvarar varje sammanlagd rad en försäljningsorderrad.
+
+![Snabbflik för transaktionsdetaljer för en aggregerad transaktion.](media/aggregated-transactions-sales-details.png)
+
+I vissa fall kanske aggregerade transaktioner inte kan bokföra sin konsoliderade försäljningsorder. I dessa situationer kopplas en felkod till utdragsstatusen. Om du bara vill visa aggregerade transaktioner som har fel kan du aktivera filtret **Visa endast misslyckade** i den aggregerade transaktionen genom att markera kryssrutan. Genom att aktivera det här filtret begränsar du resultatet till aggregerade transaktioner som har fel som kräver lösning. För information om hur du åtgärdar dessa fel, se [redigerar och granskar transaktioner för onlineorder och asynkrona kundordertransaktioner](edit-order-trans.md).
+
+![Kryssrutan Visa endast misslyckade transaktioner i den aggregerade transaktionsvyn.](media/aggregated-transactions-failure-view.png)
+
+Från sidan **sammanlagda transaktioner** kan du hämta XML för en viss sammanlagd transaktion med knappen **exportera aggregationsdata**. Du kan granska XML i valfri XML-formatmall om du vill visa detaljerad information om den som handlar om att skapa försäljningsorder och bokföra dem. Funktionen för att hämta XML för sammanlagda transaktioner är inte tillgänglig för utdrag som har bokförts.
+
+![Knappen Exportera aggregeringsdata på sidan Aggregerade transaktioner.](media/aggregated-transactions-export.png)
+
+I händelse av att du inte kan korrigera felet genom att korrigera data på försäljningsordern eller data som har stöd för försäljningsordern, finns knappen **Ta bort kundorder** tillgänglig. Om du vill ta bort en order väljer du den aggregerade transaktionen som misslyckades och väljer **Ta bort kundordern**. Både sammanlagd transaktion och motsvarande försäljningsorder tas bort. Du kan nu granska transaktionerna med hjälp av redigerings- och verifieringsfunktionen. De kan också bearbetas på nytt med ett nytt utdrag. När alla fel har åtgärdats kan du återuppta utdragsbokföringen genom att köra inläggsutdragsfunktionen för det relevanta utdraget.
+
+![Ta bort kundorderknappen i vyn Aggregerade transaktioner.](media/aggregated-transactions-delete-cust-order.png)
 
 Vyn sammanlagd transaktion ger följande fördelar:
 

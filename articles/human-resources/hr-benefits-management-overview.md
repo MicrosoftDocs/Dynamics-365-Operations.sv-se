@@ -2,7 +2,7 @@
 title: Hantering av förmåner – översikt
 description: I detta ämne finns en översikt över funktionen för förmånshantering i Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
-ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
+ms.openlocfilehash: dc06fd2ef4992b4ef2e20ace4f5c6bcc0bffb9d2
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "7417419"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892512"
 ---
 # <a name="benefits-management-overview"></a>Hantering av förmåner – översikt
 
@@ -109,21 +109,29 @@ Du kan använda flexkreditprogram för att registrera anställda i förmåner en
 
 ## <a name="configure-required-employee-information"></a>Konfigurera obligatorisk medarbetarinformation
 
-Innan du kan registrera medarbetare i förmåner måste du ange den information som krävs för dem. Alla medarbetare måste ha en befattning. Du måste anmäla medarbetare till en fast kompensationsplan på startdatumet eller också måste de ha ett lönebelopp för årslönen. Dessutom, i avsnittet **Anställningsinformation** på sidan **Arbetare** måste du välja ett värde i fältet **Förmånslönefrekvens**.
+Innan du kan registrera medarbetare i förmåner måste du ange den information som krävs för dem. 
 
-Om du har en medarbetare som tar emot kompletterande kompensation som provisioner kan du lägga till ett belopp för **årslön** från medarbetarposten. Personal kommer att använda beloppet **Årslön** vid fastställande av täckningsbelopp, istället för det årliga beloppet för fast ersättning. Den **Årslönen** måste vara giltig för medarbetarens startdatum eller början av förmånsperioden, beroende på vilket som är senaste. Om både en fast kompensation och bestämda årslönsbelopp registreras för en medarbetare, kommer den bestämda årslönen att användas vid fast ställande av täckningsbelopp.
+Medarbetaren måste ha en **Befattning** tilldelad. En **befattning** kan tilldelas medarbetaren på sidorna **arbetare** eller **befattning** genom att uppdatera **arbetstilldelningen**.  
+
+Sedan måste medarbetaren anmälas till en fast kompensationsplan på startdatumet eller också måste de ha ett **lönebelopp för årslönen.** Innan en medarbetare tilldelas **fast kompensation** måste en **befattning** tilldelas. 
+
+> [!NOTE] 
+> **Startdatumet för den fasta kompensationen** kan inte in vara före **tilldelningsdatumet för befattningen**.
+
+Om du har en medarbetare som tar emot kompletterande kompensation som provisioner kan du lägga till ett belopp för **årslön** från medarbetarposten. Personal kommer att använda beloppet **Årslön vid fastställande av täckningsbelopp**, istället för det **årliga beloppet för fast ersättning**. Den **Årslönen** måste vara giltig för medarbetarens startdatum eller början av förmånsperioden, beroende på vilket som är senaste. En befattning krävs dock inte för att tilldela **Årlig inkomst av förmåner**. Aktivera funktionen **Årlig inkomst** av förmåner genom att gå till sidan **delade Human Resources-parametrar** på fliken **Förmåner**. Funktionen är som standard avstängd.
+
+> [!IMPORTANT]
+> Om både en **fast kompensation** och **bestämda årslönsbelopp** registreras för en medarbetare, kommer den **bestämda årslönen** att användas vid fast ställande av täckningsbelopp. Dessutom, i avsnittet **Anställningsinformation** på sidan **Arbetare** måste du välja ett värde i fältet **Förmånslönefrekvens**.
 
 ## <a name="configure-optional-employee-information"></a>Konfigurera valfri medarbetarinformation
-
 När du skapar en förmånsplan som bygger på kön eller ålder måste du ange ett födelsedatum och kön för medarbetaren för att beräkna förmånskostnaden.
 
 ## <a name="process-employees-to-determine-eligibility"></a>Bearbeta medarbetare för att fastställa kvalifikationer
+Innan medarbetare kan anmälas till planer körs bearbetning av berättigande för att fastställa vilka planer de är berättigade till. Du kan visa resultatet av berättigandeprocessen i **visningsprogrammet för processresultat**. Mer information finns i [Bearbeta anmälningsberättigande](hr-benefits-process-enrollment-eligibility.md).
 
-Innan medarbetare kan anmälas till planer körs bearbetning av berättigande för att fastställa vilka planer de är berättigade till. Du kan visa resultatet av berättigandeprocessen i visningsprogrammet för processresultat. Mer information finns i [Bearbeta anmälningsberättigande](hr-benefits-process-enrollment-eligibility.md).
+## <a name="employees-select-plans-using-employee-self-service-optional"></a>Medarbetare väljer planer via **medarbetarnas självbetjäning** (valfritt)
 
-## <a name="employees-select-plans-via-employee-self-service-optional"></a>Medarbetare väljer planer via medarbetarnas självbetjäning (valfritt)
-
-När öppen anmälan inträffar är medarbetare nyanställen, eller så uppstår en livstidshändelse, kan medarbetarna välja eller uppdatera sina förmåner via medarbetarnas självbetjäning. Mer information finns i [Konfigurera självbetjäning för medarbetare](hr-benefits-setup-employee-self-service.md).
+När öppen anmälan inträffar är medarbetare nyanställen, eller så uppstår en livstidshändelse, kan medarbetarna välja eller uppdatera sina förmåner via **medarbetarnas självbetjäning**. Mer information finns i [Konfigurera självbetjäning för medarbetare](hr-benefits-setup-employee-self-service.md).
 
 ## <a name="confirm-employee-plan-selections"></a>Bekräfta val av medarbetarplan
 

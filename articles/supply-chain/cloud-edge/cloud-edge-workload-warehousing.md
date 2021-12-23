@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
-ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
+ms.openlocfilehash: ae8e9791b590a32581b66853f55ea11bc389bb19
+ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813736"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "7891781"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
 
@@ -50,6 +50,11 @@ Beroende på vilka affärsprocesser som används kan samma datapost byta ägarsk
 > Vissa data kan skapas i både hubben och skalningsenheten. Exempel är **ID-nummer** och **Batchnummer**. Dedikerad konflikthantering tillhandahålls i händelse av ett scenario där samma unika post skapas både i hubben och i en skalningsenhet under samma synkroniseringscykel. När detta inträffar misslyckas nästa synkronisering och du måste gå till **Systemadministration > Förfrågningar > Arbetsbelastningsförfrågningar > Dubblettposter**, där du kan visa och slå samman data.
 
 ## <a name="outbound-process-flow"></a>Utgående processflöde
+
+Innan du distribuerar en arbetsbelastning för lagerhantering på en moln- eller kantskalningsenhet, se till att du har funktionen *Skalningsenhetsstöd för frisläppning till lagerställe för utgående order* aktiverad på ditt företagshubb. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+
+- **Modul:** *Warehouse management*
+- **Funktionsnamn:** *Skalningsenhetsstöd för frisläppning till lagerställe för utgående order*
 
 Den utgående processen för dataägande beror på om du använder lastplaneringsprocessen. I alla fal äger hubben *källdokumenten*, till exempel försäljningsorder och överföringsorder, samt orderallokeringen och relaterade data för ordertransaktioner. Men när du använder lastplaneringsprocessen skapas lasterna i hubben och ägs därför initialt av hubben. Som en del av processen *Frisläpp till lagerställe* överförs ägarskapet för lastdata till den dedikerade skalningsenhetsdistributionen, som blir ägare till den efterföljande *påfyllnadsbearbetningen för leverans* (t.ex. allokering, lagerpåfyllnad och skapande av efterfrågearbete). Därför kan lagerarbetare bara bearbeta utgående försäljnings- och överföringsorderarbete med hjälp av en Warehouse Management-mobilapp som är ansluten till distributionen som kör den specifika arbetsbelastningen för skalningsenheten.
 
@@ -202,7 +207,7 @@ I följande tabell visas vilka utgående funktioner som stöds och var de stöds
 | Utskrift av läsrelaterade dokument                           | Ja | Ja|
 | Fraktsedel och ASN-generering                            | Nej  | Ja|
 | Försändelsebekräftelse                                             | Nej  | Ja|
-| Försändelsebekräftelse med "Bekräfta och överför"            | Nej  | Nej |
+| Försändelsebekräftelse med "Bekräfta och överför"            | Nej  | Ja|
 | Följesedel- och faktureringsbearbetning                        | Ja | Nej |
 | Kort plockning (försäljnings- och överföringsorder)                    | Nej  | Ja, utan att ta bort reservationer för källdokument|
 | Överplockning (försäljnings- och överföringsorder)                     | Nej  | Ja|
@@ -212,8 +217,8 @@ I följande tabell visas vilka utgående funktioner som stöds och var de stöds
 | Påfyllnadsetikett                                                   | Nej  | Ja|
 | Arbetsdelning                                                   | Nej  | Ja|
 | Bearbetning av arbete – Styrt av "Transportlastning"            | Nej  | Nej |
-| Minska plockad kvantitet                                       | Nej  | Nej |
-| Återför arbete                                                 | Nej  | Nej |
+| Minska plockad kvantitet                                       | Nej  | Ja|
+| Återför arbete                                                 | Nej  | Ja|
 | Återför leveransbekräftelse                                | Nej  | Ja|
 
 ### <a name="inbound"></a>Inkommande
@@ -227,7 +232,7 @@ I följande tabell visas vilka ingående funktioner som stöds och var de stöds
 | Hemtagningskostnad och varor på väg mottagande                       | Ja | Nej |
 | Inkommande försändelsebekräftelse                                    | Ja | Nej |
 | Frisläppning av inköpsorder till lagerställe (bearbetning av lagerorder) | Ja | Nej |
-| Annullering av orderrader för lagerställe<p>Observera att detta endast stöds om ingen registrering har skett mot raden</p> | Ja | Nej |
+| Annullering av orderrader för lagerställe<p>Observera att detta endast stöds om ingen registrering har skett mot raden när du bearbetar *begäran om att annullera*</p> | Ja | Nej |
 | Inleverans och inlagring av inköpsorderartikel                       | <p>Ja,&nbsp;när&nbsp;det&nbsp;inte finns lagerorder</p><p>Nej, när det finns en lagerorder</p> | <p>Ja, när en inköpsorder inte ingår i en <i>last</i></p> |
 | Inköpsorderrad har inlevererats och inlagrats                       | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | <p>Ja, när en inköpsorder inte ingår i en <i>last</i></p></p> |
 | Returorder mottagning och inleverans                              | Ja | Nej |
@@ -246,7 +251,7 @@ I följande tabell visas vilka ingående funktioner som stöds och var de stöds
 | Ta emot med skapande av *Kvalitet på kvalitetskontroll*       | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nej |
 | Ta emot med skapande av kvalitetsorder                            | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nej |
 | Bearbetning av arbete – Dirigerad av *kluster för artikelinförsel*                 | Ja | Nej |
-| Bearbetning av arbete med *kort plockning*                               | Ja | Nej |
+| Bearbetning av arbete med *kort plockning*                               | Ja | Ja |
 | Läs in registreringsskylt                                           | Ja | Ja |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Lageroperationer och hantering av undantag

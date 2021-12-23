@@ -2,7 +2,7 @@
 title: Kortkommandon
 description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med Finance and Operations-appar.
 author: jasongre
-ms.date: 11/12/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
-ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
+ms.openlocfilehash: 6e6f6faf75bb9dc2b11b3a27a886b1674cc7b339
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "7800203"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913528"
 ---
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Du kan använda följande kortkommandon för att snabbt och effektivt mata in data i Finance and Operations-appar.
 
@@ -150,6 +149,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Utför standardåtgärd i ett rutnät<blockquote>[!NOTE] Denna genväg aktiveras när fokus ligger på en cell som innehåller en hyperlänk och samtliga celler i den kolumnen har hyperlänkar.</blockquote> | Ange                           |
 | Växla fokus mellan den markerade raden och rubrikraden                                                               | Alt+Skift+H                     |
 | Gör den aktuella kolumnen större/mindre (med fokus i rubrikraden)                                                  | Högerpil/vänsterpil        |
+| Ändra storlek på den aktuella kolumnen till nästa/föregående läge (med fokus i rubrikraden)                                   | Ctrl+Shift+högerpil / Ctrl+Shift+vänsterpil |
 | Öppna rutnätsfiltrering för den aktuella kolumnen (med fokus i rubrikraden)                                              | Ange                           |
 | Ändra storlek på den aktuella kolumnen så att den passar innehållet (med fokus i rubrikraden)                                           | A (eller dubbelklicka på reglaget för kolumnstorlek) |
 

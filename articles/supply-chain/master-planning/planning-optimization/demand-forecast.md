@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 0f322dd63cb2dee6a9048e6ed086dc075cc0e1b9
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: cbac68b79b2a10f05e0e442d4f0aa716e5a04634
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474854"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867257"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Huvudplanering med efterfrågeprognoser
 
@@ -86,9 +86,9 @@ När du inkluderar en prognos i en huvudplan kan du välja hur prognosbehoven re
 
 Om du vill ta med en prognos i en huvudplan och välja den metod som används för att minska prognosbehoven, gå till **huvudplanering \> inställningar \> planer \> huvudplaner**. I fältet **prognosmodell** väljer du en prognosmodell. I fältet **Metod som används för att minska prognosbehov** väljer du en metod. Följande alternativ är tillgängliga:
 
-- None
+- Ingen
 - Procent - reduceringsnyckel
-- Transaktioner – reduceringsnyckel (ännu ej stöd för planeringsoptimering)
+- Transaktioner - reduceringsnyckel
 - Transaktions - dynamisk period
 
 Följande avsnitt innehåller mer information om varje alternativ.

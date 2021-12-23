@@ -2,19 +2,19 @@
 title: Tjänstbeskrivning för Finance and Operations-appar
 description: Det här ämnet innehåller tjänstbeskrivning för Finance and Operations-appar.
 author: tomhig
-ms.date: 11/17/2021
+ms.date: 12/07/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
-ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
+ms.openlocfilehash: f7ce73018fda79156cc7ef3d4e1faa3fedf966f8
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "7825410"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898399"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Tjänstbeskrivning för Finance and Operations-appar
 
@@ -314,7 +314,7 @@ Microsofts haveriberedskapsplaner och procedurer undersöks regelbundet genom SO
 | Microsoft tillhandahåller en sekundär miljö i Azure-kopplade datacenter när den primära produktionsinstansen distribueras. Mer information finns i [Affärskontinuitet och haveriberedskap (BCDR): Azure-kopplade regioner](/azure/best-practices-availability-paired-regions). | None |
 | Microsoft aktiverar georedundans av Azure SQL och Azure Blob Storage när den primära produktionsinstansen distribueras. | None |
 | Microsoft aktiverar automatisk säkerhetskopiering av Azure SQL-databaser. | None |
-| <p>När ett avbrott inträffar bestämmer Microsoft om en redundans måste utföras för kunden och om data går förlorade. Dataförlust kan vara upp till fem sekunder. Mer information finns i [Geoåterställning av Azure SQL-databas](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>I händelse av dataförlust begär Microsoft kundens godkännande för en redundans.</p> | I händelse av dataförlust måste kunden eventuellt tillhandahålla skriftligt godkännande för att utlösa redundansen. |
+| <p>När ett avbrott inträffar bestämmer Microsoft om en redundans måste utföras för kunden och om data går förlorade. Kunder kan förlora data på upp till 15 minuter beroende på typen av och tidpunkten för avbrottet. | I händelse av dataförlust måste kunden eventuellt tillhandahålla skriftligt godkännande för att utlösa redundansen. |
 | När en redundans inträffar fungerar tjänsten i begränsat läge. Uppdateringsunderhåll kan inte utlösas i redundansläge. | Kunden kan inte begära paketdistributioner eller andra regelbundna underhållsbegäranden i redundansläge. |
 | När datacentret tas i drift Microsoft återställer tillbaka till produktionsinstansen i den primära Azure-regionen. Normal verksamhet återupptas. | Kunden kanske måste godkänna återställning till produktionsinstansen i den primära Azure-regionen. |
 

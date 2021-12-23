@@ -2,7 +2,7 @@
 title: Konfigurera en B2B-näthandelssajt
 description: I detta ämne beskrivs hur du ställer in en B2B-näthandelssajt ("business-to-business") i Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 171e518258e9600bd7526cf52e3e456d272e6bce
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713758"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891395"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Konfigurera en näthandelsplats för B2B
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 näthandelssajter mellan företag (B2B) innehåller ett antal viktiga funktioner som optimerar arbetsflödet för en B2B-användare. I detta ämne beskrivs hur du ställer in en B2B-näthandelssajt ("business-to-business") i Microsoft Dynamics 365 Commerce. Ämnet avhandlar de moduler och webbplatsinställningar som måste konfigureras för att B2B-specifika scenarier ska kunna aktiveras.
 
@@ -306,6 +307,30 @@ Om du vill lägga till en snabbtilläggsmodul på en kundvagnssida i Commerce-we
 
 > [!NOTE] 
 > Snabbtilläggsmodulen är tillgänglig i från och med Commerce-version 10.0.17. Om du uppdaterar från en äldre version av Commerce måste du uppdatera filen appsettings.json manuellt. För instruktioner, se [SDK- och modulbiblioteksuppdateringar](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+## <a name="add-a-bulk-purchase-module-to-a-product-details-page"></a>Lägg till en modul för inköp i bulk på sidan produktdetaljer
+
+Bulkinköpsmodulen på en produktinformationssida (PDP) innehåller en matrisbaserad erfarenhet som gör att en köpare snabbt kan lägga till flera varianter av en produkt i vagnen. När en webbplatsanvändare måste beställa flera varianter av samma produkt, eliminerar denna erfarenhet behovet av att välja kombinationen av produktdimensioner, definiera kvantitet, lägga till varianten i vagnen och sedan upprepa processen för andra kombinationer av produktdimensioner.
+
+För att lägga till en modul för inköp i bulk till en PDP i Commerce webbplatsskaparen.
+
+1. Gå till **Mallar** och välj webbplatsens mall för PDP.
+1. Välj **Redigera**.
+1. I platsen **Huvud** i modulen **Standardsida** markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
+1. I facket **behållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Bulkinköp** och klicka sedan på **OK**.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
+1. Gå till **Sidor** och välj webbplatsens PDP.
+1. I platsen **Huvud** i modulen **Standardsida** markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
+1. I egenskapsfönstret för modulen **Behållare**, under **Bredd**, väljer du **Fyll behållare**.
+1. I facket **behållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Bulkinköp** och klicka sedan på **OK**.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
+
+> [!NOTE] 
+> Modulen bulkinköp är tillgänglig i från och med Commerce-version 10.0.24. Om du uppdaterar från en äldre version av Commerce måste du uppdatera filen appsettings.json manuellt. För instruktioner, se [SDK- och modulbiblioteksuppdateringar](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

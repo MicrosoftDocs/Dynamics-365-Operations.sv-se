@@ -1,7 +1,7 @@
 ---
 title: 125 procent degressiv avskrivning
-description: Den här avsnittet ger en översikt över 125-procentsmetoden för degressiv avskrivning.
-author: saraschi2
+description: Det här ämnet ger en översikt över 125-procentsmetoden för degressiv avskrivning.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13871
 ms.assetid: 3abc263e-59d6-4f1a-986d-1be388948bd3
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68afee1840707a74ca3a0ac9643c2a23761da8da6d2e85e6b79d48bee4aad27c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 605f9fd3dea02e01c2c49b8e1a6cc52310132304
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744999"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883528"
 ---
 # <a name="125-percent-reducing-balance-depreciation"></a>125 procent degressiv avskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Den här avsnittet ger en översikt över 125-procentsmetoden för degressiv avskrivning.
+Det här ämnet ger en översikt över 125-procentsmetoden för degressiv avskrivning.
 
 När du ställer in en avskrivningsprofil för anläggningstillgångar och väljer **125 % degressiv avskrivning** i fältet **Metod** på sidan **Avskrivningsprofiler** skrivs tillgångarna som tilldelas den här avskrivningsprofilen av med samma procentsats under varje avskrivningsperiod. Denna procentsats beräknas baserat på tillgångens tjänstelivstid. Om till exempel en tillgång har en tjänstelivstid på fem år, beräknas procentsatsen som 25 procent (125 % ÷ 5).
 

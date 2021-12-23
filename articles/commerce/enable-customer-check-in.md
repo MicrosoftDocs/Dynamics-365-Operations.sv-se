@@ -2,7 +2,7 @@
 title: Aktivera incheckningsmeddelanden för kunder i kassan (POS)
 description: I det här ämnet beskrivs hur du aktiverar incheckningsmeddelanden för kunder Microsoft Dynamics 365 Commerce i kassan (POS).
 author: bicyclingfool
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: cf9331e1da54520787686a3f190e2ef6d150c0c10bd521919407f5e6c74551d1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 320e9d73ca98bf4ed22ac9bdff2fc34ae83223ec
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774593"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891422"
 ---
 # <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>Aktivera incheckningsmeddelanden för kunder i kassan (POS)
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 I det här ämnet beskrivs hur du aktiverar incheckningsmeddelanden för kunder Microsoft Dynamics 365 Commerce i kassan (POS).
 
@@ -50,17 +51,48 @@ På din näthandelsplats måste du skapa en ny sida som fungerar som upplevelse 
 
 Du måste lägga till en **Jag är här**-länk eller -knapp till mallen för det transaktionsmeddelande via e-post som kunderna erhåller när deras order är redo för hämtning. Kunderna använder den här länken eller knappen när de meddelar butiken om att de har anlänt för att hämta sin order. 
 
-Lägg till länken eller knappen i mallen som är mappad till meddelandetypen **Packning slutförd** samt det leveransläge som du använder för drive in-leverans. Skapa en HTML-länk eller -knapp i mallen som pekar på URL-adressen till den incheckningsbekräftelsesida som du skapat. Här är ett exempel:
+Lägg till länken eller knappen i mallen som är mappad till meddelandetypen **Packning slutförd** samt det leveransläge som du använder för drive in-leverans. Skapa en HTML-länk eller -knapp i mallen som pekar på URL:en för den incheckningsbekräftelsesida du skapat och som innehåller parameternamnen och parametervärdena, enligt följande exempel.
 
-```
-<a href="https://[YOUR_SITE_DOMAIN]/[CHECK-IN_CONFIRMATION_PAGE]?channelReferenceId=%channelreferenceid%&channelId=%channelid%&packingSlipId=%packingslipid%" target="_blank">I am here!</a>
-```
+`<a href="https://[YOUR_SITE_DOMAIN]/[CHECK-IN_CONFIRMATION_PAGE]?channelReferenceId=%confirmationid%&channelId=%channelid%&packingSlipId=%packingslipid%" target="_blank">I am here!</a>`
+
 Mer information om hur du konfigurerar e-postmallar finns i [Anpassa transaktionella e-postmeddelanden per leveranssätt](customize-email-delivery-mode.md). 
 
 ## <a name="a-check-in-confirmation-task-is-created-in-pos"></a>En incheckningsbekräftelseuppgift skapas i kassan (POS)
 
-När en kund har meddelat butiken att de har anlänt för en avhämtning får han eller hon ett meddelande om incheckningsbekräftelse, och en uppgift skapas i uppgiftslistan i kassan (POS) för butiken där kunden hämtar ordern. Uppgiften innehåller all kund- och orderinformation som krävs för att ordern ska kunna uppfyllas. I uppgiften visar instruktionerna i fältet all information som har samlats in från kunden via formuläret för ytterligare information. 
+När en kund har meddelat butiken att de finns för upphämtning visar incheckningssidan ett bekräftelsemeddelande och en valfri QR-kod som innehåller kundens orderbekräftelse-ID. Samtidigt skapas en uppgift i uppgiftslistan i kassan för butiken där kunden plockar upp ordern. Uppgiften innehåller all kund- och orderinformation som krävs för att ordern ska kunna uppfyllas. Uppgiftens instruktionsfält visar all information som har samlats in från kunden via formuläret för ytterligare information.
+
+## <a name="end-to-end-testing"></a>Komplett testning
+
+Vid kundincheckning måste specifika parametrar och värden skickas till incheckningssidan och sedan till kundens inchecknings-API. Därför är det enklaste sättet att testa funktionen i en miljö där en testorder kan skapas och packas. På så sätt kan ett e-postmeddelande med "order redo för upphämtning" genereras med en URL som innehåller de parameternamn och värden som krävs.
+
+Om du vill testa incheckningsfunktionen för kunder följer du dessa steg.
+
+1. Skapa incheckningssidan för kunden och lägg sedan till och konfigurera modulen för kundincheckning. Mer information finns i [Incheckning för upphämtningsmodul](check-in-pickup-module.md). 
+1. Checka in sidan och publicera den inte.
+1. Lägg till följande länk till en e-postmall som startas av den packade meddelandetypen för ett upphämtningsläge för leverans. För mer information, se [Skapa e-postmallar för transaktionshändelser](email-templates-transactions.md).
+
+    - **För förproduktionsmiljöer (UAT):** Lägg till kodfragmentet från avsnittet [Konfigurera mallen för transaktionsmeddelande via e-post](#configure-the-transactional-email-template) tidigare i detta ämne.
+    - **För produktionsmiljöer:** Lägg till följande kommentarskod så att befintliga kunder inte påverkas.
+
+        `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`
+
+1. Skapa en order där leveranssättet för upphämtning har angetts.
+1. När du får e-postmeddelandet som utlöstes av den fullständiga meddelandetypen, ska du testa incheckningsflödet genom att öppna incheckningssidan där URL:en du lade till tidigare. Eftersom URL-adressen innehåller `&preview=inprogress` flagga uppmanas du att autentisera innan du kan visa sidan.
+1. Ange eventuell ytterligare information som krävs för att konfigurera modulen.
+1. Kontrollera att incheckningsbekräftelsevyn visas på rätt sätt.
+1. Öppna kassaterminalen för den butik där ordern kommer att hämtas upp.
+1. Markera panelen **Order som du vill hämta** och kontrollera att ordern visas.
+1. Kontrollera att all ytterligare information som konfigurerats i incheckningsmodulen visas i informationsfönstret.
+
+När du har verifierat att incheckningsfunktionen för kunder fungerar från slut till slut följer du dessa steg.
+
+1. Publicera incheckningssidan.
+1. Om du testar i en produktionsmiljö bör du avmarkera webbadressen i e-postmallen "order klar för upphämtning" så att länken eller knappen **Jag är här** visas. Ladda sedan upp mallen på nytt.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Incheckning för upphämtningsmodul](check-in-pickup-module.md)
+
+[Anpassa transaktionsmeddelanden via e-post efter leveranssätt](customize-email-delivery-mode.md)
+
+[Skapa e-postmallar för transaktionshändelser](email-templates-transactions.md)

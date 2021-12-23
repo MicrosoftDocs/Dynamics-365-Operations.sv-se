@@ -2,7 +2,7 @@
 title: Lägga till och kopiera leasing (förhandsversion)
 description: I det här ämnet beskrivs hur du skapar en ny leasing genom att ange information om den i Leasing av tillgångar, eller genom att kopiera information från en befintlig leasing.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2f2e6837819158688f3fd6bc28909a106a05a098ca917cab9032a2d0044042fc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee4803c4653b8c2df2cb731652456b1ce2796cd0
+ms.sourcegitcommit: e77d72fde17a43bd1780c265702254011af7407c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761336"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7893655"
 ---
 # <a name="add-or-copy-leases-preview"></a>Lägga till och kopiera leasing (förhandsversion)
 
@@ -35,6 +35,8 @@ Följ dessa steg för att skapa en leasing i Leasing av tillgångar.
 1. På sidan **Sammanfattning av leasing** i åtgärdsfönstret väljer du **Ny**.
 2. Ange information om leasingen. Obligatoriska fält har röda kantlinjer.
 
+> Startdatumet för leasingbetalningen får inte vara tidigare än leasingavtalets startdatum. Om du anger ett startdatum för leasingbetalningen som är tidigare än startdatumet för leasingavtalet får du ett felmeddelande.
+  
 ## <a name="create-a-lease-schedule"></a>Skapa en leasingplan
 
 När du har angett all information för leasingen skapar du leasingplanen genom att följa stegen nedan.

@@ -1,7 +1,7 @@
 ---
 title: Översikt över konsolidering och eliminering
-description: Det här avsnittet innehåller allmän information om konsoliderings- och kvittningsprocessen. Avsnittet innehåller alla svar på vanliga frågor och svar.
-author: aprilolson
+description: Det här ämnet innehåller allmän information om konsoliderings- och kvittningsprocessen. Avsnittet innehåller alla svar på vanliga frågor och svar.
+author: panolte
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: ''
@@ -14,21 +14,21 @@ ms.custom:
 - intro-internal
 ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ms.search.region: Global
-ms.author: aolson
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b983b8b5f90d00d0c115c57942a2b8be56dce21756cc55fbd405a563348a69d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a3134c55458d09e2f9ec3aca3ce5c20afdbdf1d3
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777154"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883449"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Översikt över konsolidering och eliminering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller allmän information om konsoliderings- och kvittningsprocessen. Avsnittet innehåller alla svar på vanliga frågor och svar.
+Det här ämnet innehåller allmän information om konsoliderings- och kvittningsprocessen. Avsnittet innehåller alla svar på vanliga frågor och svar.
 
 När du konsoliderar data kombineras de ekonomiska resultaten för flera dotterbolag till resultat för ett enda, konsoliderat företag. Dotterbolag kan finnas på andra versioner eller system, de kanske inte är helägda och de kan använda andra valutor. Det finns flera alternativ för konsolidering av data:
 
@@ -39,14 +39,14 @@ När du konsoliderar data kombineras de ekonomiska resultaten för flera dotterb
 
 Elimineringar kan rapporteras på flera sätt:
 
--   Elimineringsregler kan ställas in i systemet och sedan bearbetas under konsolideringen eller via ett elimineringsförslag. Reglerna kan bokföras till alla företag som har alternativet **Använd för ekonomisk elimineringsprocess** markerat i inställningarna av juridisk enhet.
+-  Elimineringsregler kan ställas in i systemet och sedan bearbetas under konsolideringen eller via ett elimineringsförslag. Reglerna kan bokföras till alla företag som har alternativet **Använd för ekonomisk elimineringsprocess** markerat i inställningarna av juridisk enhet.
 -   Ett separat företag kan skapas och användas för att bestämma manuellt och bokföra elimineringstransaktioner. Företaget kan användas i konsolideringen eller i ekonomisk rapportering.
--   Kontona och ekonomiska dimensioner som används för att fastställa koncernintern aktivitet kan filtreras på en raddefinition eller kolumndefinition i ekonomisk rapportering och fullständiga vidaresökningsfunktioner går att använda. En beräknad kolumn eller rad sedan kan användas för att ta bort konton och ekonomiska dimensioner från den konsoliderade summan.
+-  Kontona och ekonomiska dimensioner som används för att fastställa koncernintern aktivitet kan filtreras på en raddefinition eller kolumndefinition i ekonomisk rapportering och fullständiga vidaresökningsfunktioner går att använda. En beräknad kolumn eller rad sedan kan användas för att ta bort konton och ekonomiska dimensioner från den konsoliderade summan.
 
 Det finns många konsolideringsscenarier, och varje metod hanterar scenarierna på olika sätt.
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor
-1.  Jag vill bokföra elimineringar i en databas. Vilka är alternativen?
+1. Jag vill bokföra elimineringar i en databas. Vilka är alternativen?
 
 Du har flera alternativ. Du kan använda alternativet **Konsolidera online** och inkluderar elimineringar under processen eller som ett förslag. Transaktionerna bokförs i konsolideringsföretaget. Alternativt kan du ha ett separat företag som du skapar manuellt skapar elimineringarna i, och sedan använder i ekonomisk rapportering eller i konsolideringen.
 
@@ -54,31 +54,31 @@ Du har flera alternativ. Du kan använda alternativet **Konsolidera online** och
 
 Alternativet **Ekonomisk rapportering** har obegränsade rapporteringsvalutor. Data översätts under rapportgenereringen baserat på valutakurstypen och valutaomräkningsmetoden som anges på huvudkontot. Eftersom **Konsolidera online** bara har en rapportvaluta, krävs ett konsoliderat företag för varje rapportvaluta om du använder detta alternativ. Alternativet **Ekonomisk rapportering** är den rekommenderade metoden.
 
-3.  Jag vill visa detaljer på transaktionsnivån för varje företag.
+3. Jag vill visa detaljer på transaktionsnivån för varje företag.
 
 Alternativet **Ekonomisk rapportering** är lösningen, eftersom detaljer på transaktionsnivån kan visas för så många företag som ingår i rapportträddefinitionen.
 
-4.  Vi använder budgetplanering eller budgetkontroll, och den måste konsolideras.
+4. Vi använder budgetplanering eller budgetkontroll, och den måste konsolideras.
 
 **Ekonomisk rapportering** är lösningen som konsoliderar alla data i budgetplaneringen eller budgetkontrollen.
 
-5.  Våra dotterbolag finns över hela världen, och därför har vi flera kontoplaner. Vilken är den bästa metoden för konsolidering?
+5. Våra dotterbolag finns över hela världen, och därför har vi flera kontoplaner. Vilken är den bästa metoden för konsolidering?
 
 Du har flera alternativ när du måste hantera flera kontoplaner. Du kan använda alternativet **Konsolidera online** och välja antingen konsolideringskontot som definieras på huvudkontot eller en konsolideringskontogrupp. Du kan också använda alternativet **Ekonomisk rapportering**, inkludera flera länkar till ekonomiska dimensioner i raddefinitionen och mappa kontona.
 
-6.  Vi vill ha flera nivåer av konsolidering. Med andra ord, först konsoliderar vi alla våra europeiska dotterbolag till det brittiska pundet (GBP). Sedan tar vi uppgifterna och översätter det konsoliderade beloppet till USD. Hur kan du göra detta?
+6. Vi vill ha flera nivåer av konsolidering. Med andra ord, först konsoliderar vi alla våra europeiska dotterbolag till det brittiska pundet (GBP). Sedan tar vi uppgifterna och översätter det konsoliderade beloppet till USD. Hur kan du göra detta?
 
 När det behövs flera nivåer av konsolidering och olika valutor används vid varje nivå, måste du använda **Konsolidera online**. Flera konsolideringsföretag måste skapas som har olika redovisningar och rapporteringsvalutor. Konsolideringen måste sedan köras flera gånger. Alternativet **Ekonomisk rapportering** översätter alltid från varje källföretags redovisningsvaluta till den valda valutan.
 
-7.  Vi har dotterbolag på ett annat system. Hur kan vi konsolidera dem?
+7. Vi har dotterbolag på ett annat system. Hur kan vi konsolidera dem?
 
 Använd alternativet **Konsolidera med import** för att hämta saldona till ett konsolideringsföretag.
 
-8.  Vissa av våra dotterbolag är inte helägda. Vilken är den bästa metoden för konsolidering?
+8. Vissa av våra dotterbolag är inte helägda. Vilken är den bästa metoden för konsolidering?
 
 Du har flera alternativ för delägda dotterbolag. Genom att använda alternativet **Ekonomisk rapportering** kan du definiera en rapportträddefinition och ägare. Du kan också använda en beräknad rad eller kolumner som motsvarar det delägda beloppet. Du kan även visa minoritetsintresset som en egen rad i en rapport. Du kan också använda alternativet **Konsolidera online**. Fliken **Juridiska personer** har kolumnen **Äganderätt** där du kan definiera procentandelen som ägs av moderbolaget.
 
-9.  Vår organisation måste visa konsolideringar efter affärsenheten eller kan använda organisationshierarkierna.
+9. Vår organisation måste visa konsolideringar efter affärsenheten eller kan använda organisationshierarkierna.
 
 Alternativet **Ekonomisk rapportering** är lösningen. Organisationshierarkier som har juridiska personer eller ekonomiska dimensioner kan rapporteras i ekonomisk rapportering. Du kan även skapa egna hierarkier med flera nivåer med hjälp av en rapportträddefinition som har en kombination av juridiska personer och dimensionsvärden.
 

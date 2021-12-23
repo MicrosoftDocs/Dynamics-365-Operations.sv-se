@@ -2,7 +2,7 @@
 title: Skapa en konfiguration för att generera dokument i Excel-format
 description: Det här avsnittet beskriver hur du utformar ett elektroniskt rapporteringsformat (ER) för att fylla i en Excel-mall och sedan generera utgående dokument i Excelformat.
 author: NickSelin
-ms.date: 10/29/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cfacc2232201b85a49068ee724b55e71b60eb2be
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: ebe2647bb382421921aa6ffc733953f379a8af10
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731648"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890883"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Skapa en konfiguration för att generera dokument i Excel-format
 
 [!include[banner](../includes/banner.md)]
 
-Du kan utforma en konfiguration för [elektroniskt rapporteringsformat (ER)](general-electronic-reporting.md) som har en ER-[formatkomponent](general-electronic-reporting.md#FormatComponentOutbound) som du kan konfigurera för att generera ett utgående dokument i ett Microsoft Excel-arbetsboksformat. Specifika komponenter i ER-format måste användas för detta syfte.
+Du kan utforma en formatkonfiguration [elektronisk rapportering (ER)](general-electronic-reporting.md) som har en ER-formatkomponent som du kan konfigurera för att generera ett utgående dokument i ett Microsoft Excel arbetsboksformat. Specifika komponenter i ER-format måste användas för detta syfte.
 
 Om du vill veta mer om den här funktionen följer du stegen i avsnittet [utforma en konfiguration för generering av rapporter i OpenXML-format](tasks/er-design-reports-openxml-2016-11.md).
 
@@ -330,6 +330,40 @@ När ett utgående dokument i ett Microsoft Excel arbetsboksformat genereras, ka
 6. Generera ett utskrivbart FTI-dokument och granska sidfoten för det genererade dokumentet.
 
     ![Granska sidfoten för ett genererat dokument i Excel-format.](./media/er-fillable-excel-footer-4.gif)
+
+## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Exempel 2: Korrigering av de sammanfogade cellerna EPPlus-problem
+
+Du kan köra ett ER-format för att generera ett utgående dokument i ett Excel-arbetsbokformat. När funktionen **Aktivera användning av EPPlus-biblioteket i ramverket för elektronisk rapportering** är aktiverad i arbetsytan **Funktionshantering** används [EPPlus bibliotek](https://www.nuget.org/packages/epplus/4.5.2.1) för att göra Excel-utdata. På grund av kända [Excel-beteenden](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) och begränsningar vad gäller EPPlus-biblioteket kan du dock stöta på följande undantag: "Det går inte att ta bort/skriva över kopplade celler. Ett intervall sammanfogas delvis med ett annat kopplat intervall." Slutför följande exempel om du vill veta vilka typer av Excel-mallar som kan orsaka det här undantaget och hur du löser problemet.
+
+1. Skapa en ny Excel-arbetsbok i Excel-programmet.
+2. På kalkylbladet **Sheet1**, lägg till **ReportTitle** namn för cell **A2**.
+3. Sammanfoga celler **A1** och **A2**.
+
+    ![Granska resultaten av de sammanslagningar av celler A1 och A2 som har utformats i Excel-arbetsboken i Excel-programmet.](./media/er-fillable-excel-example2-1.png)
+
+3. På sidan **Konfigurationer**, [lägg till ER-format](er-fillable-excel.md#add-a-new-er-format) för att kunna generera ett utgående dokument i Excel-format.
+4. På sidan **Formatdesigner**, [importera](er-fillable-excel.md#template-import) den designade Excel-arbetsboken till det tillagda ER-formatet som en ny mall för utgående dokument.
+5. På fliken **Mappning** konfigurerar du bindande för komponenten **ReportTitle** för typen [Cell](er-fillable-excel.md#cell-component).
+6. Kör det konfigurerade ER-formatet. Lägg märke till att följande undantag är olåst: "Kan inte ta bort/skriva över kopplade celler. Ett intervall sammanfogas delvis med ett annat kopplat intervall."
+
+    ![Granska resultaten av det konfigurerade ER-formatet på sidan Formatdesigner.](./media/er-fillable-excel-example2-2.png)
+
+Du kan korrigera problemet på något av följande sätt:
+
+- **Enklare men ej rekommenderad:** I arbetsytan **Funktionshantering**, inaktivera **Aktivera användning av EPPlus-biblioteket i ramverket för elektronisk rapportering**. Även om det här är enklare kan du få andra problem om du använder den, eftersom vissa ER-funktioner bara stöds när funktionen **Aktivera användning av EPPlus-biblioteket i ramverksfunktionen Elektronisk rapportering är aktiverad**.
+- **Rekommenderad:** Följ dessa steg:
+
+    1. Ändra Excel-arbetsboken på något av följande sätt i Excel-programmet:
+
+        - I kalkylbladet **Sheet1**, separera celler **A1** och **A2**.
+        - Ändra referensen för **ReportTitle**-namnet från **=Sheet1!$A$2** till **=Sheet1!$A$1**. 
+
+        ![Granska resultaten av att ändra referensen i Excel-arbetsboken som utformats i Excel-programmet.](./media/er-fillable-excel-example2-3.png)
+
+    2. På sidan **Formatdesigner** [importerar](er-fillable-excel.md#template-import) du den ändrade Excel-arbetsboken till det redigerbara ER-formatet för att uppdatera den befintliga mallen.
+    3. Kör det ändrade ER-formatet.
+
+        ![Granska det genererade Excel-dokument i Excel skrivbordsprogrammet.](./media/er-fillable-excel-example2-4.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

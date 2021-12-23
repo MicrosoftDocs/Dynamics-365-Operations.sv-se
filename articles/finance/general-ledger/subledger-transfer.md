@@ -2,7 +2,7 @@
 title: Överför delredovisning till redovisningen
 description: Det här ämnet beskriver funktionerna som rör överföringsprocessen för delredovisningen i redovisningen.
 author: rcarlson
-ms.date: 07/20/2021
+ms.date: 12/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 03c04a5eb8b544b582019ddd204382900b162d952842c901f69ed4a853bd8183
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 213bbc2541c614aa26b0c830431818fb99c7682d
+ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716655"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900740"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Överför delredovisning till redovisningen
 
@@ -39,7 +39,7 @@ I version 10.0.8 har förbättringar gjorts för att förbättra prestanda för 
 
 Funktionerna för asynkron överföring av redovisningsbatchar underlättar överföringen av data från redovisningen till redovisningen. Genom att gruppera uppsättningar med mindre transaktioner och överföra transaktioner i grupper, bearbetar funktionerna transaktionerna på ett mer effektivt sätt. När transaktioner grupperas används batchserverns resurser på ett effektivare sätt.
 
-Asynkron överföring av underbearbetningsbatchar kräver att batchservern ställs in, är online och arbetar. Annars fungerar inte **Asynkrona** överföringsalternativet.
+Asynkron överföring av delredovisningsbatchar kräver att batchservern ställs in, online och fungerar eftersom batchuppgifter skapas för omedelbar körning på batchservern. När funktionen **Prestandaoptimering för överföring av delredovisning till redovisning** aktiveras, måste systembatchjobbet **Processautomatisering** med namnet **Systemjobb för processautomatiseringssökning** också vara aktiverat. Mer information finns i [Processautomatisering](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 Effektivitetsändringen på batchnivå använder ett enda återkommande batchjobb för alla juridiska personer i systemet. Vid körning skapas ett nytt batchjobb för bearbetning av de obligatoriska poster som ännu inte har överförts. Fler inställningar kan kontrolleras från sidan **Processautomatisering** i systemadministration. På den sidan kan du ändra bakgrundsprocessen, ändra frekvensen och definiera en period.
 

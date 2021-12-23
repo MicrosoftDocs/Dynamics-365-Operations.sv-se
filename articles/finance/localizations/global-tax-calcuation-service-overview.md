@@ -2,7 +2,7 @@
 title: Översikt över momsberäkning
 description: Detta ämne innehåller information om skatteberäkningsfunktionens övergripande omfattning och funktioner.
 author: wangchen
-ms.date: 10/15/2021
+ms.date: 11/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 28b14eba7dd870e80a83f8d31671525b593a09c9
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647067"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892434"
 ---
 # <a name="tax-calculation-overview"></a>Översikt över momsberäkning
 
@@ -64,6 +64,20 @@ Skatteberäkningstjänsten distribueras på följande Azure-områden: Fler Azure
 
 > [!NOTE]
 > Momsberäkning har inte stöd för tidigare version av Dynamics 365, exempelvis Dynamics AX 2012, eller en lokal distribution av Dynamics 365.
+
+## <a name="versions"></a>Versioner
+Vi rekommenderar att du importerar och ställer in din momsberäkningskonfiguration med den version som matchar din version av Finance eller Supply Chain Management.
+
+| Finance eller Supply Chain Management version | Skattekonfigurationsversion               |
+| --------------- | --------------------------------------- |
+| 10.0.18         | Momskonfiguration - Europa 30.12.82     |
+| 10.0.19         | Momsberäkningskonfiguration 36.38.193 |
+| 10.0.20         | Momsberäkningskonfiguration 40.43.208 |
+| 10.0.21         | Momsberäkningskonfiguration 40.48.215 |
+| 10.0.22         | Momsberäkningskonfiguration 40.48.215 |
+| 10.0.23         | Momsberäkningskonfiguration 40.50.221 |
+| 10.0.24         | Momsberäkningskonfiguration 40.50.225 |
+
 
 ## <a name="data-flow"></a>Dataflöde
 
@@ -169,6 +183,10 @@ Följande länder/regioner för en juridisk persons primära adress stöds i ver
 - Japan
 - Malaysia
 - Singapore
+
+Följande länder/regioner för en juridisk persons primära adress stöds i version 10.0.24:
+
+- Mexiko
 
 ## <a name="related-resources"></a>Relaterade resurser
 

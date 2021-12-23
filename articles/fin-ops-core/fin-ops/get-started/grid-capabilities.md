@@ -2,7 +2,7 @@
 title: Rutnätsmöjligheter
 description: I det här avsnittet beskrivs flera kraftfulla funktioner i rutnätskontrollen. Du måste aktivera den nya rutnätsfunktionen för att du ska kunna använda dessa funktioner.
 author: jasongre
-ms.date: 10/25/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: ba3640cf13fecc54f4cc58cd8996e434cd16cf60
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700147"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890890"
 ---
 # <a name="grid-capabilities"></a>Rutnätsmöjligheter
 
@@ -119,6 +119,9 @@ På samma sätt som du kan markera (eller avmarkera) alla rader i rutnätet geno
 
 ### <a name="hiding-column-names"></a>Dölja kolumnnamn
 När du grupperar data är standardfunktionen att visa kolumnnamnet i grupprubrikraden. Du kan välja att utelämna kolumnnamnet i grupphuvud rader genom att välja **Rutnätsalternativ** > **Dölj gruppkolumnnamn**.
+
+### <a name="grouping-on-date-and-time-columns"></a>Gruppering efter datum- och tidskolumner
+Från och med version 10.0.24 för fälten Datum eller DateTime har alternativet lagts till i gruppering efter år, månad eller dag. Gruppen "värde" på motsvarande rubrikrad matchar formatet från det fältet. I fälten DateTime och Time kan du dessutom gruppera efter timme, minut eller andra.    
 
 ## <a name="freezing-columns"></a>Låsa kolumner
 En del kolumner i ett rutnät kan vara så viktiga för sammanhanget att du inte vill att de ska rulla ut ur visningen. Istället vill du att värdena i dessa kolumner alltid ska vara synliga. Funktionen **Lås kolumner i rutnät** flexibiliteten för användarna. 

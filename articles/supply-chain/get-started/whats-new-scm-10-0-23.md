@@ -1,5 +1,5 @@
 ---
-title: Förhandsversion av Dynamics 365 Supply Chain Management 10.0.23
+title: Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.23 (2022 januari)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management 10.0.23.
 author: kamaybac
 ms.date: 10/15/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 7950d225bd528c05c14df108f4d44cef3e348ebb
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: fd6483c86b34d355e3727a95794b7876dc54ec32
+ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777801"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "7891809"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10023"></a>Förhandsversion av Dynamics 365 Supply Chain Management 10.0.23
+# <a name="preview-of-dynamics-365-supply-chain-management-10023-january-2022"></a>Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.23 (2022 januari)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -26,6 +26,7 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 - **Förhandsversion:** oktober 2021
 - **Allmän tillgänglighet för frisläppning (självuppdatering):** 2021 december
+- **Allmän tillgänglighet för frisläppning (automatisk uppdatering):** 2022 januari
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
@@ -53,6 +54,7 @@ Om du vill aktivera eller inaktivera någon av dessa funktioner måste du göra 
 | Hantering av lager och lagerstyrning | \[Ryssland\] Bokför ekonomiska lagertransaktioner för Storno enligt korrigeringsflaggan i den ekonomiska verifikationen för försäljningsorder | Den här funktionen påverkar funktionen för korrigering av kreditnotor i Ryssland. Det gör att lagertransaktioner kan bokföras för försäljningsfakturor i enlighet med korrigeringsalternativet i redovisningen. När den här funktionen är aktiverad finns det inga fler avvikelser mellan flaggan **korrigering** på den ekonomiska verifikationen för lagertransaktionen och flaggan **Storno** i lagertransaktioner. |
 | Hantering av lager och lagerstyrning | (Ryssland) Kör beräkning av rapporten Omsättning för lagerbalans i batch | För ryska lokaliseringar av Supply Chain Management ger denna funktion möjlighet att köra rapporten *Omsättning för lagerbalans* i batch, lagra den och visa tidigare genererade rapporter. |
 | Hantering av lager och lagerstyrning | (Ryssland) Använd översättning till lokalt språk i lands- eller regionsspecifika primära formulär i Lagerhantering | För ryska lokaliseringar av Supply Chain Management gör denna funktion det möjligt att använda ryska översättningar av produkt-/artikelnamn och måttenheter i följande specifika ryska lagerutskrifter:Inventeringslista (INV-3),Inventeringslista (INV-5),Inventeringslista (INV-6). |
+| Huvudplanering | Azure Machine Learning Service för efterfrågeprognosticering | Med denna funktion kan Azure Machine Learning Service generera efterfrågeprognoser baserade på historiska data. Mer information finns i [Inställning av efterfrågeprognosticering](../master-planning/demand-forecasting-setup.md). |
 | Anskaffning och källa | Rensa inköpsorderns uppdateringshistorik | Med hjälp av den här funktionen kan du rensa tillfälliga historiska poster som är relaterade till inköpsorderuppdateringar. Den lägger till en ny knapp med namnet **Rensa inköpsuppdateringshistorik** i åtgärdsfönstret på sidan **Alla inköpsorder**. Den här funktionen aktiveras som standard. |
 | Produktionskontroll | (Förhandsversion) Automatisk plockning av lagerställeaktiverade material för automatiskt bokförda plocklistor | Den här funktionen gör det möjligt att välja och lösa lagerdimensioner för automatiskt bokförda, härledda/bakåtavräknade plocklistejournaler. |
 | Produktionskontroll | Validera råmaterialets utgång mot planerat förbrukningsdatum | Den här funktionen ändrar hur utgångsdatum för batchar valideras när en batch med råmaterial reserveras för användning under produktionen. När den här funktionen är aktiverad valideras batchutgångsdatumet mot det planerade förbrukningsdatumet (råmaterialdatumet), enligt vad som är upprättat på produktionsstrukturlisteraden eller batchorderformelraden. När den här funktionen inaktiveras valideras batchens utgångsdatum mot det planerade leveransdatumet för tillverknings- eller batchordern (som tidigare). |

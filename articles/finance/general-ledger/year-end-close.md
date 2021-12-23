@@ -2,7 +2,7 @@
 title: Årsbokslut
 description: I det här avsnittet beskrivs den nödvändiga inställningen och stegen för att köra årsslutsprocessen i redovisningen.
 author: kweekley
-ms.date: 07/10/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5677ebeee6b8260280d4c9c7c8a7a0e18e7bd78f68a42d23967948a2e75120cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04eeb8886d74fa8c633d2ac4e9e47aa28a12ee30
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778276"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892487"
 ---
 # <a name="year-end-close"></a>Årsbokslut
 
@@ -44,7 +44,7 @@ På sidan **Huvudkonto**:
 På sidan **Redovisningsparametrar** under **Stängning av räkenskapsår**:
 
 - Alternativet **Ta bort befintliga bokslut vid årets slut när du stänger året igen** används för att ange om den systemgenererade IB-transaktionen från föregående årsbokslut ska tas bort när årsbokslutet körs igen. Om det här alternativet ställs in på **Ja**, de tidigare öppnings- och valfria stängningstransaktionerna raderas och en ny öppnings- eller stängningstransaktion skapas baserat på de aktuella saldona. Om det här alternativet ställs in på **Nej**, föregående öppnings- och valfria avslutande transaktioner kvarstår, och en ytterligare öppnings- eller avslutande transaktion skapas för att flytta saldona framåt från att justera transaktioner som bokförs efter föregående årsbokslut.
-- Alternativet **Skapa UB-transaktioner vid överföring** används för att skapa UB-transaktioner i räkenskapsåret som avslutas för att visa saldon på vinst-och förlustkonton till noll. Om det här alternativet ställs in på **Ja**, skapas både IB-transaktion och UB-transaktioner. Om det här alternativet ställs in på **nej**, skapas IB-transaktion i nästa räkenskapsår för att överföra saldona. Saldon på vinst- och förlustkonton ligger kvar i slutet av räkenskapsåret.
+- Alternativet **Skapa UB-transaktioner vid överföring** används för att skapa UB-transaktioner i räkenskapsåret som avslutas för att visa saldon på alla huvudkonton till noll. Om det här alternativet ställs in på **Ja**, skapas både IB-transaktion och UB-transaktioner. Om det här alternativet ställs in på **nej**, skapas IB-transaktion i nästa räkenskapsår för att överföra saldona. Saldon på huvudkonton ligger kvar i slutet av räkenskapsåret.
 - Alternativet **ange räkenskapsårets status till stängd permanent** används för att ställa in räkenskapsåret till permanent avslutad status. Använd det här alternativet med försiktighet, eftersom perioder med statusvärdet Permanent stängda inte kan öppnas igen. Därför kan justeringar inte bokföras på räkenskapsåret. Det bästa är att ange detta som **Nej**.
 - **Verifikationsnumret måste vara ifyllt** om det har tagits bort. En verifikation krävs nu när processen årsslut körs. Då anges verifikationsnumret manuellt.
 

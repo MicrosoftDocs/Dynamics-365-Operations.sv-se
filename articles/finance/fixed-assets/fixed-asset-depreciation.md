@@ -2,7 +2,7 @@
 title: Avskrivning av anläggningstillgång
 description: Den här ämnet ger en översikt över avskrivning för anläggningstillgångar.
 author: moaamer
-ms.date: 10/30/2017
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,23 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54da35a39791a9e528896f3decd10476ad5af2d9
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 2442830766ef1dccc109db5569bfbbbc8182f027
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675010"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890990"
 ---
 # <a name="fixed-asset-depreciation"></a>Avskrivning av anläggningstillgång
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Den här ämnet ger en översikt över avskrivning för anläggningstillgångar.
 
 Avskrivning är en periodisk transaktion som normalt minskar anläggningstillgångens värde i balansräkningen och debiteras som en utgift på ett resultatkonto. Därför används vanligtvis ett huvudkonto för att kreditera den periodiska avskrivningen i balansräkningen. Ett motkonto är ett konto i kontoplanens resultatdel.
+
+Från och med version 10.0.24 aktiverar **Beräkna positiv avskrivning** alternativet konfiguration av tillgångsboken sidan **Böcker** avskrivning för att debitera en fast anläggningstillgång som har anskaffats med negativt bokfört värde (kredit).
 
 ## <a name="depreciation-adjustment"></a>Avskrivningsjustering
 Vanligtvis bokförs bara en korrigering av en redan bokförd avskrivningstransaktion som en avskrivningsjustering. Därför ställs både huvudkontot och motkontot in på samma sätt som kontona för avskrivning. En avskrivningsjustering kan vara antingen ett positivt eller negativt belopp, men funktionen för huvudkontot (som balansräkningskonto) och motkontot (vanligtvis som ett resultatkonto) förblir oförändrad.

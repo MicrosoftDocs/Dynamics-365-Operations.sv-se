@@ -2,7 +2,7 @@
 title: Personal-app i Teams
 description: Detta avsnitt introducerar Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5e44b9fa40971710d8316c055c4d2ac51f9ab266
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: 8eebe154a19dd8476f6e9d75ebfd69fdc5b9e2b7
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771517"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913499"
 ---
 # <a name="human-resources-app-in-teams"></a>Personal-app i Teams
 
@@ -111,6 +111,9 @@ Följande arbetsobjekt planeras för kommande versioner:
 ## <a name="troubleshooting"></a>Felsökning
 
 Om en användare har problem med att logga in på eller använda appen Personal Teams kan du försöka följa dessa instruktioner för felsökning. Om du fortfarande har problem efter felsökningen kontaktar du supporten. För mer information, se [Få support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+
+### <a name="ensure-the-teams-human-resources-application-is-up-to-date"></a>Se till att Teams personal-app är uppdaterad
+Om du stöter på problem med Teams personal-app måste du bekräfta att du kör den senaste versionen. Den version som stöds minst är 1.1.5. Instruktioner om hur du uppdaterar ett Teams-app finns i [Teams-dokumentationen](/MicrosoftTeams/apps-update-experience).
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Det går inte att logga in på Personal-appen i Teams
 

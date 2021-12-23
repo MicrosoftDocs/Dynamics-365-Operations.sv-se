@@ -2,7 +2,7 @@
 title: Översikt över budgetkontroll
 description: Det här ämnet presenterar budgetkontrollfunktionen och innehåller information som hjälper dig att konfigurera budgetkontroll för att optimera hanteringen av organisationens ekonomiska resurser.
 author: panolte
-ms.date: 06/25/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0c8e7a08796a7f1c537978e406f53531e0f0682e6b5a769ced9d771063c30d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 21277361a3d05c57be7aeaa05348723e23873ef6
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772889"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890735"
 ---
 # <a name="budget-control-overview"></a>Översikt över budgetkontroll
 
@@ -78,9 +78,7 @@ På fliken **Behörighet för överskriden budget** kan du därefter specificera
 På fliken **Tillgängliga budgetmedel** kan du sedan definiera formeln som används för att beräkna tillgängliga budgetmedel. Beroende på hur konservativt en organisation hanterar sina ekonomiska resurser eller beroende på regler eller branschkrav kan beräkningen inkludera utkast eller ej bokförda dokument. 
 
 > [!NOTE]
-> Om beräkningen ändras under en budgetcykel kommer ändringarna inte att påverka dokument som tidigare har godkänts i budgetkontroller och som har bokförts eller slutförts. I versionen 10.0.17, en ny funktion för **Spåra endast belopp i beräkningen av tillgängliga budgetmedel** blev tillgänglig för begränsade kunder. Med hjälp av den här funktionen kan du ändra vilka data som spåras i BudgetSourceSourceSourceing-registren. När funktionen aktiveras lagras belopp endast om de har valts för att användas i beräkningen av de tillgängliga budgetmedlen. Om du vill begära att funktionen **Spåra endast belopp i beräkningen av tillgängliga budgetmedel** aktiveras kontaktar du Support. 
-
-### <a name="documents-and-journals"></a>Dokument och journaler
+> Om beräkningen ändras under en budgetcykel kommer ändringarna inte att påverka dokument som tidigare har godkänts i budgetkontroller och som har bokförts eller slutförts. En funktion som kallas **Endast spårade belopp i de tillgängliga budgetmedelsberäkningarna** gör att du kan ändra vilka data som spåras i BudgetSourceTracking-registren. När funktionen aktiveras lagras belopp endast om de har valts för att användas i beräkningen av de tillgängliga budgetmedlen. Mer information finns i [Budgetmedel är tillgängliga](budget-funds-available.md).
 
 På fliken **Dokument och journaler** kan du välja källdokument och journaler som ska vara föremål för budgetkontroller och om kontrollerna ska utföras på radpostnivån eller på dokumentet som helhet. 
 

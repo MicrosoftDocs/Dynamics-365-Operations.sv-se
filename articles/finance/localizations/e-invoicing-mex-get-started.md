@@ -2,7 +2,7 @@
 title: Kom i gång med e-fakturering för Mexiko
 description: Det här avsnittet innehåller information som hjälper dig att komma igång med e-fakturering för Mexiko.
 author: gionoder
-ms.date: 09/22/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 4266d7bca163b1d6aa1261e086f10a4f0f5d7e360051db169fbcab34363c81c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
+ms.sourcegitcommit: 385fc4e9c641b43734ddb030893904489361af7d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742163"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881601"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Kom i gång med e-fakturering för Mexiko
 
@@ -35,7 +35,15 @@ Det här avsnittet innehåller information som hjälper dig att komma igång med
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Innan du slutför stegen i det här avsnittet måste du slutföra stegen i [komma igång med e-fakturering](e-invoicing-get-started.md).
+Innan du slutför stegen i det här avsnittet måste du slutföra stegen i [komma igång med tjänstadministration för elektronisk fakturering](e-invoicing-get-started-service-administration.md) och [komma igång med elektronisk fakturering](e-invoicing-get-started.md).
+
+## <a name="set-up-the-cadena-xslt"></a>Konfigurera Cadena XSLT
+
+Lägg till Cadena XSLT-schemat till globaliseringsfunktionen för CFDI-bearbetning genom att utföra följande steg.
+
+1. Hämta schema från [SAT-webbplatsen](http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_3/cadenaoriginal_3_3.xslt).
+2. Komprimera schemat till en ZIP-fil.
+3. Spara xslt-filen i ditt Azure Storage-konto som ställts in i din tjänstemiljö för den nya behållaren.
 
 ## <a name="rcs-setup"></a>Inställning av RCS
 
@@ -127,6 +135,17 @@ Om du vill skicka annullering av CFDI-faktura krävs funktionsinställningarna *
 
 > [!NOTE]
 > Använd samma steg för att uppdatera URL:en för åtgärden **Anropa mexikanska PAC-tjänsten** för funktionsinställningarna **Annullera** och **Annulleringsbegäran**.
+
+### <a name="set-up-the-path-for-the-cadena-xlst-schema"></a>Ställa in sökvägen för Cadena XLST-schemat
+
+1. På sidan **inställning av funktionsversion** på fliken **variabler**, välj variabelnamn **DigitalSignatureXSLT**.
+2. I fältet **Värden** ange: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
+   
+    där: <RelativePath> = mapp\\mapp\\filnamn med två omvända snedstreck, ContainerName måste ange den behållare som används för tjänsten.
+   
+    Exempel på variabeln är:
+    
+    {"path":"xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\\dev\\cadena_xslt","containerUrl":https://yyyyyyyyyy.blob.core.windows.net/containername}
 
 ## <a name="assign-the-draft-version-to-an-e-invoicing-environment"></a>Tilldela utkastversionen till en e-faktureringsmiljö
 

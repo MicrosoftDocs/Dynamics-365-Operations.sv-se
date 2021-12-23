@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 14e86a49777eefefae711bfe0d756361b09d69c2
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 43814023474d44b8c95bae087c7b6a4d52d21471
+ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778459"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7891936"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrera med tillverkningsutförandesystem från tredje part
 
@@ -191,7 +191,7 @@ Följande tabell visar de fält som varje rad i `RouteCardLines`-avsnittet av `P
 
 | Fältnamn | Status | Typ |
 |---|---|---|
-| `OperationNumber` | Obligatoriskt | Obligatoriskt, heltal |
+| `OperationNumber` | Obligatoriskt | Heltal |
 | `OperationPriority` | Valfritt | Uppräkning (Primär \| Sekundär1 \| Sekundär2 \| ... \| Sekundär20) |
 | `OperationId` | Valfritt | Sträng |
 | `OperationsResourceId` | Valfritt | Sträng |

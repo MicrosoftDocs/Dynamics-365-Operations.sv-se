@@ -2,7 +2,7 @@
 title: Aktivera ordersökning för gästutcheckningar
 description: I det här avsnittet beskrivs hur du aktiverar ordersökning för gästutcheckningar i Microsoft Dynamics 365 Commerce.
 author: stuharg
-ms.date: 09/01/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 639ee670b83198423425d03dad308306c9eed25c
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: a2a10b122faae354b0ea002e43a9bd60157f6216
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674986"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891510"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Aktivera ordersökning för gästutcheckningar
 
@@ -63,6 +63,16 @@ När du har ändrat värdet i fältet **Inkludera personuppgifter i gästs order
 ## <a name="configure-the-order-lookup-module"></a>Konfigurera modulen för ordersökning
 
 Modulen för ordersökning i Commerce-modulbibliotek används för att återge det formulär som gästanvändare använder för att söka efter order. Sökmodulen för order kan inkluderas i brödtexten på alla sidor där kundens inloggning inte krävs. Information om hur du konfigurerar modulen finns i [Modul för ordersökning](order-lookup-module.md).
+
+## <a name="configure-the-order-details-page"></a>Konfigurera sidan orderinformation
+
+Innan gästanvändare kan visa sina orderuppgifter måste orderinformationssidan på din e-handelsplats konfigureras så att den inte kräver inloggning. Om du vill inaktivera inloggningsbehovet för din orderinformationssida öppnar du sidan i Commerce webbplatsskaparen, väljer **standardsidan (obligatoriskt)** i trädvyn och avmarkerar kryssrutan **Kräver inloggning?** längst ned i egenskapsfönstret till höger.
+
+## <a name="add-a-link-to-order-details-in-transactional-emails"></a>Lägga till en länk till orderinformation i transaktionsmeddelanden
+
+I orderrelaterade e-postmeddelanden kan du ange en länk eller knapp som tar kunderna till orderinformationssidan för beställningen. Om du vill lägga till den här länken eller knappen skapar du en HTML-hyperlänk som pekar på orderinformationssidan på din e-handelsplats och skickar orderbekräftelse-ID:t och kundens e-postadress som URL-parametrar, enligt följande exempel.
+
+`<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

@@ -1,7 +1,7 @@
 ---
 title: Konfigurera ett menyalternativ för mobila enheter för att visa en översikt över plockrader
 description: I det här avsnittet beskrivs hur du definierar när en lista med alla arbetsrader ska visas för lagerarbetare som bearbetar lagerarbetet på en mobil enhet. Den här funktionen kan vara användbar för lagerarbetare som ofta kräver en översikt över plockningsraderna i en arbetsorder så att de kan optimera sina plockserier.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: intro-internal
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8bb5a7851987b71d5a1df1d37054547f28ecf9a4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7d3a8972c5d2f4c52dddef458ebd6079118cadfe
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580058"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7901932"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Konfigurera ett menyalternativ för mobila enheter för att visa en översikt över plockrader
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 706331eaadf602aba46463fdcfc0d38f1fc94e08
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 0a0322e5490474e21ad91076ecc486f38a776e32
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647273"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890787"
 ---
 # <a name="list-of-er-functions-in-the-date-and-time-category"></a>Lista över ER-funktioner i kategorin datum och tid
 
@@ -37,8 +37,8 @@ Funktionerna för elektronisk rapportering (ER) för datum och tid kan användas
 | [DateTimeFormat](er-functions-datetime-datetimeformat.md) | Den funktionen returnerar ett värde för *Sträng* som visar ett givet datum/tidsvärde som text i angivet format och i en valfri angiven kultur. |
 | [DateTimeValue](er-functions-datetime-datetimevalue.md) | Den här funktionen returnerar ett värde för *DateTime* som konverteras från ett givet textvärde i angivet format och i en valfri angiven kultur. |
 | [DateToDateTime](er-functions-datetime-datetodatetime.md) | Den här funktionen returnerar värdet *DateTime* som konverteras från ett givet datumvärde till ett datum/tid-värde i Coordinated Universal Time (Greenwich Mean Time \[GMT\]). |
-| [DateValue](er-functions-datetime-datevalue.md) | Den här funktionen returnerar ett värde för *Datum* som konverteras från ett givet textvärde i angivet format och i en valfri angiven kultur till ett datumvärde. |
-| [DayOfYear](er-functions-datetime-dayofyear.md) | Funktionen returnerar värdet *heltal* som representerar antalet dagar mellan 1 januari och det angivna datumet. |
+| [DateValue](er-functions-datetime-datevalue.md) | Den här funktionen returnerar ett värde för *[Datum](er-formula-supported-data-types-primitive.md#date)* som konverteras från ett givet textvärde i angivet format och i en valfri angiven kultur till ett datumvärde. |
+| [DayOfYear](er-functions-datetime-dayofyear.md) | Funktionen returnerar värdet *[heltal](er-formula-supported-data-types-primitive.md#integer)* som representerar antalet dagar mellan 1 januari och det angivna datumet. |
 | [Dagar](er-functions-datetime-days.md) | Funktionen returnerar värdet *heltal* som representerar antalet dagar mellan ett angivet datum och ett andra angivet datum. |
 | [Now](er-functions-datetime-now.md) | Den här funktionen returnerar ett *DateTime*-värde som representerar aktuella programmets serverdatum och -tid. |
 | [NullDate](er-functions-datetime-nulldate.md) | Den här funktionen returnerar ett *Datum*-värde som representerar **null**-datumet (1 januari 1900). |
@@ -46,6 +46,7 @@ Funktionerna för elektronisk rapportering (ER) för datum och tid kan användas
 | [SessionNow](er-functions-datetime-sessionnow.md) | Den här funktionen returnerar ett *DateTime*-värde som representerar aktuella programmets sessionsdatum och -tid. |
 | [SessionToday](er-functions-datetime-sessiontoday.md) | Den här funktionen returnerar ett *Datum*-värde som representerar aktuella programmets sessionsdatum. |
 | [I dag](er-functions-datetime-today.md) | Den här funktionen returnerar ett *Datum*-värde som representerar aktuella programmets serverdatum. |
+| [WeekNum](er-functions-datetime-weeknum.md) | Den här funktionen returnerar ett *heltal*-värde som representerar den veckan på året. |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

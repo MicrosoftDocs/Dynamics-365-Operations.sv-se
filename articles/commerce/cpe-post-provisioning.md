@@ -2,7 +2,7 @@
 title: Konfigurera en Dynamics 365 Commerce utvärderingsmiljö
 description: Detta ämne förklarar hur du konfigurerar bedömningsmiljö för Microsoft Dynamics 365 Commerce efter att den är etablerad.
 author: psimolin
-ms.date: 08/24/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416489"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913737"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera en Dynamics 365 Commerce utvärderingsmiljö
 
@@ -39,6 +39,7 @@ När din bedömningsmiljö för Commerce har etablerats måste ytterligare konfi
 1. Välj din miljö i listan.
 1. Välj i miljöinformation till höger **Logga in i miljön**. Du kommer att skickas till Commerce-administration.
 1. Kontrollera att **USRT** juridisk person har valts i övre högra hörnet.
+2. Gå till **Commerce-parametrar > Konfigurationsparametrar** och se till att det finns en post för **ProductSearch.UseAzureSearch** inställd på **true**. Om den här posten saknas kan du lägga till den här posten och köra **Kanaldatabas > Full synkronisering** för Commerce Scale Unit som kopplas till din näthandelsplats.
 
 Under åtgärderna efter etablering i Commerce-administration, se till att den juridiska personen **USRT** alltid är vald.
 
@@ -105,6 +106,12 @@ Gör så här om du vill aktivera jobb i Commerce.
     1. Välj posten.
     1. I Åtgärdsfönstret på fliken **Batchjobb** välj **Ändra status**.
     1. Välj **Avbryt** och klicka sedan på **OK**.
+
+1. Utför följande steg om status för jobbet är **Undandragen**:
+
+    1. Välj posten.
+    1. I Åtgärdsfönstret på fliken **Batchjobb** välj **Ändra status**.
+    1. Välj **Väntar** och välj sedan **OK**.
 
 Om du vill kan du också ställa in upprepningsintervallet till en (1) minut för följande jobb:
 

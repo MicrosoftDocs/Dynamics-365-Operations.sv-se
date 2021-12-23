@@ -2,7 +2,7 @@
 title: Aktivera huvuddatauppslag för momsberäkningskonfiguration
 description: I det här avsnittet beskrivs hur du konfigurerar och aktiverar sökfunktionen huvuddata för momsberäkning.
 author: kai-cloud
-ms.date: 11/03/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dafeac01aaff62cbbd5ce6ecb0af0ef111f513b2
-ms.sourcegitcommit: 76fe020f9c5f4e5cc2e93f5ccb3b040f12b0363e
+ms.openlocfilehash: 455e8becfdfa910a3733719653e1a91557b2f59a
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "7749520"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867362"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Aktivera huvuddatauppslag för momsberäkningskonfiguration 
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du konfigurerar och aktiverar sökfunktionen huvuddata för momsberäkning. En listruta är tillgänglig för att välja värden i momsberäkningskonfigurationen för fält såsom **Leverantörskonto**, **Artikelkod** och **Leveransvillkor**. Dessa värden kommer från den anslutna Microsoft Dynamics 365 Finance-miljön med hjälp av Microsoft Dataverse.datakällan.
+I det här avsnittet beskrivs hur du konfigurerar och aktiverar sökfunktionen huvuddata för momsberäkning. En listruta är tillgänglig för att välja värden i momsberäkningskonfigurationen för fält såsom **Juridisk person**, **Leverantörskonto**, **Artikelkod** och **Leveransvillkor**. Dessa värden kommer från den anslutna Microsoft Dynamics 365 Finance-miljön med hjälp av Microsoft Dataverse.datakällan.
+
+> [!NOTE] 
+> Funktionen för sökning efter huvuddata för momsberäkning är valfri funktion. Du kan hoppa över följande steg om du inaktiverar funktionen **Momstjänst Dataverse datakälla support** i Regulatory Configuration Service (RCS). I det fallet är dock listrutan inte tillgänglig i momsberäkningskonfigurationen.
 
 1. Konfigurera Microsoft Power Platform-integrering i Microsoft Dynamics Lifecycle Services (LCS). Mer information finns i [Microsoft Power Platform-integrering – tilläggsöversikt](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). När du har slutfört det här steget visas namnet på Microsoft Power Platform-miljön i avsnittet **Power Platform-integration**.
 2. Gå till [Microsoft Power Platform administrationscenter](https://admin.powerplatform.microsoft.com/environments) och välj miljönamnet. Miljöns URL är inte angiven.

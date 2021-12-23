@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b31f949304dfc9cf8723c29c1354c35ff41dbe17
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
+ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566705"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7891963"
 ---
 # <a name="routes-and-operations"></a>Flöden och operationer
 
@@ -223,7 +223,7 @@ När du använder den här metoden blir sidan **operationsrelationer** det prim�
 Om du inte anger en operationsresurs eller resursgrupp som en del av resurskraven för en operation, kan resurser arbeta med olika hastigheter. Den tid som behövs för att bearbeta en operation varierar. För att lösa problemet kan du använda fältet **formel** på operationsrelationenför att ange hur processtiden beräknas. Följande alternativ är tillgängliga:
 
 - **Standard** – (standardalternativet) beräkningen använder endast fälten från operationsrelationen och angiven körtid multipliceras med orderantalet.
-- **Kapacitet** – beräkningen innefattar fältet **kapacitet** från operationsresursen. Därför är tiden resursenberoende. Värdet som anges för operationsresursen är kapacitet per timme. **Processtiden** beräknas som **Orderkvantitet** delad av **Kapacitet**.
+- **Kapacitet** – beräkningen innefattar fältet **kapacitet** från operationsresursen. Därför är tiden resursenberoende. Värdet som anges för operationsresursen är kapacitet per timme. **Processtiden** beräknas som **Orderkvantitet** delad av **Kapacitet**. Kapacitetsvärde inte specifikt för en viss måttenhet och konverteras därför inte baserat på fältet **Kapacitetsenhet**, vilket bara är ett beskrivande fält som inte används i beräkningar.
 - **Batch** – Batchkapacitet beräknas utifrån informationen från operationsrelationen. Antal batchar och därmed bearbetningstiden kan beräknas baserat på orderkvantiteten.
 - **Resursbatch** – det här alternativet är ungefär densamma som alternativet **Batch**. Men innefattar fältet **Batchkapacitet** från operationsresursen. Därför är tiden resursberoende.
 

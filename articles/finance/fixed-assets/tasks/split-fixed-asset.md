@@ -1,7 +1,7 @@
 ---
 title: Dela en anläggningstillgång
 description: Det här avsnittet förklarar hur du delar en procentsats för en tillgångsförteckning till en ny tillgångsförteckning.
-author: saraschi2
+author: moaamer
 ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,21 +10,21 @@ ms.search.form: AssetTable, AssetBook, AssetSplit, AssetBookLookup, LedgerJourna
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1ac7bc9ae9040f9668c36c570be795ebeb7c6970049ff911b1caeadd06f31d0a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2fbca50342196dd9f5acb53027fb9c0052a81de
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779000"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883553"
 ---
 # <a name="split-a-fixed-asset"></a>Dela en anläggningstillgång
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet förklarar hur du delar en procentsats för en tillgångsförteckning till en ny tillgångsförteckning. Här används revisorrollen och USMF-demonstrationdata.
+Det här avsnittet förklarar hur du delar en procentsats för en tillgångsförteckning till en ny tillgångsförteckning. 
 
 ## <a name="create-a-new-fixed-asset"></a>Skapa en ny anläggningstillgång
 

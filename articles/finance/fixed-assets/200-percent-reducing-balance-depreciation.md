@@ -1,7 +1,7 @@
 ---
 title: 200 procent degressiv avskrivning
-description: Den här artikeln ger en översikt över 200-procentsmetoden för degressiv avskrivning.
-author: saraschi2
+description: Det här ämnet ger en översikt över 200-procentsmetoden för degressiv avskrivning.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13951
 ms.assetid: 69b4e010-7683-4dc2-8a06-6d572f37e903
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f7d821dbd6603eba7a228e5caa6def6d783e4774c72687839bd198f4e228633
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52a199489ffe42bc7b2d21e85b18dcd0bf35c165
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767015"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883503"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>200 procent degressiv avskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln ger en översikt över 200-procentsmetoden för degressiv avskrivning.
+Det här ämnet ger en översikt över 200-procentsmetoden för degressiv avskrivning.
 
 När du ställer in en avskrivningsprofil för anläggningstillgångar och väljer **200 % degressiv avskrivning** i fältet **Metod** på sidan **Avskrivningsprofiler** skrivs tillgångarna som tilldelas den här avskrivningsprofilen av med samma procentsats under varje avskrivningsperiod. Denna procentsats beräknas baserat på tillgångens tjänstelivstid. Om till exempel en tillgång har en tjänstelivstid på fem år, beräknas procentsatsen som 40 procent (200% ÷ 5). 
 

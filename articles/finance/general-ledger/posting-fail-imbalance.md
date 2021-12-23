@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-8-03
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fc413f8230849653aef8c2951f1749823edded6e
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 0f1f49a7da2f015d90987587fc251a36cfe82d49
+ms.sourcegitcommit: cd7f1c63f48542a8ebcace7b3d512eb810d4b56e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605439"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7903260"
 ---
 # <a name="journal-posting-failure-because-of-imbalance"></a>Journalbokföringsfel på grund av obalans
 
@@ -52,13 +52,13 @@ I ett scenario som stöds kan en verifikation ha mer än en transaktionsvaluta. 
 
 Om alla rader i en verifikation har samma transaktionsvaluta, och om beloppen i transaktionsvalutan är balanserade, verifierar systemet att beloppen i redovisningsvalutan har balanserats. Om verifikationen anges i en utländsk valuta används valutakursen på verifikationsraderna för att översätta transaktionsvalutabeloppen till redovisningsvalutan. Först översätts varje rad i verifikationen och avrundas till två decimaler. Raderna summeras sedan för att bestämma debet- och kreditsummorna. Eftersom varje rad översätts kanske debet- och kreditsummorna inte balanseras. Om skillnadens absoluta värde ändå ligger inom värdet för **Maximal öresdifferens** som definierats på sidan **Redovisningsparametrar** bokförs verifikationen, och skillnaden bokförs automatiskt på kontot för öresdifferens.
 
-Om verifikationen har mer än en transaktionsvaluta omsätts varje rad i verifikationen till redovisningsvalutan och avrundas till två decimaler, och raderna summeras för att bestämma debet- och kreditsummorna. För att kunna anses balanserade måste debet och kredit balanseras, antingen i omräknad form eller när redovisningsvalutans öresavrundningsdifferens inkluderas.
+Om verifikationen har mer än en transaktionsvaluta omsätts varje rad i verifikationen till redovisningsvalutan och avrundas till två decimaler, och raderna summeras för att bestämma debet- och kreditsummorna. För att vara balanserat måste debet och kredit balanseras i redovisningsvaluta.  Ett öresdifferenskonto läggs aldrig till i verifikationen i redovisningsvalutan för att få debet och kredit i balans. 
 
 ### <a name="reporting-currency"></a>Rapporteringsvaluta
 
 Om alla rader i en verifikation har samma transaktionsvaluta, och om beloppen i transaktionsvalutan är balanserade, verifierar systemet att beloppen i rapporteringsvalutan har balanserats. Om verifikationen anges i en utländsk valuta används valutakursen på verifikationsraderna för att översätta transaktionsvalutabeloppen till rapporteringsvalutan. Först översätts varje rad i verifikationen och avrundas till två decimaler. Raderna summeras sedan för att bestämma debet- och kreditsummorna. Eftersom varje rad översätts kanske debet- och kreditsummorna inte balanseras. Om skillnaden ändå ligger inom värdet för **Maximal öresavrundning i rapporteringsvalutan** som definierats på sidan **Redovisningsparametrar** bokförs verifikationen, och skillnaden bokförs automatiskt på kontot för öresdifferens.
 
-Om verifikationen har mer än en transaktionsvaluta omsätts varje rad i verifikationen till rapporteringsvalutan och avrundas till två decimaler, och raderna summeras sedan för att bestämma debet- och kreditsummorna. För att kunna anses balanserade måste debet och kredit balanseras, antingen i omräknad form eller när rapporteringsvalutans öresavrundningsdifferens inkluderas.
+Om verifikationen har mer än en transaktionsvaluta omsätts varje rad i verifikationen till rapporteringsvalutan och avrundas till två decimaler, och raderna summeras sedan för att bestämma debet- och kreditsummorna. För att vara balanserat måste debet och kredit balanseras i rapporteringsvaluta.  Ett öresdifferenskonto läggs aldrig till i verifikationen i rapporteringsvaluta för att få debet och kredit i balans.
 
 ### <a name="example-for-an-accounting-currency-imbalance"></a>Exempel på en obalans i redovisningsvaluta
 
