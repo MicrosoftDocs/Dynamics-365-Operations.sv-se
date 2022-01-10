@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 130487c41d8021692968141eca1a16d298a809e1
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: cb600c55cb2d40129d1b29ab989bc8f7cf3f4686
+ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913661"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927464"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Ställ in parametrarna för ett ER-format per juridisk person
 
@@ -224,6 +224,16 @@ Du kan också använda den här export-import-metoden om du vill överföra ER-f
 Om du konfigurerar programspecifika parametrar för en version av ett ER-format och sedan importerar en senare version av samma format till den aktuella ekonomiinstansen, tillämpas inte de befintliga programspecifika parametrarna på den importerade versionen såvida du inte använder den använd programspecifika parametrarna från tidigare versioner av funktionen **ER-format**. Mer information finns i avsnittet [Återanvänd befintliga parametrar](#reuse-existing-parameters) senare i det här avsnittet.
 
 När du väljer en fil för import, jämförs även programspecifika parametrar i den filen med strukturen för motsvarande datakälla av typen **uppslag** för det återställningsformat som valts för import. Som standard är importen är slutförd endast om strukturen för varje programspecifik parameter matchar strukturen för motsvarande datakälla i det återställningsformat som har valts för import. Om strukturlistorna inte matchar får du ett varningsmeddelande om att importen inte kan slutföras. Om du tvingar importen rensas de befintliga programspecifika parametrarna för det valda återställningsformatet och du måste ställa in dem från början.
+
+
+Från och med Dynamics 365 Finance version 10.0.24, du kan ändra standardbeteendet och undvika att få ett varningsmeddelande genom att aktivera funktionen **Justera ER-appspecifika parametrar under import** i arbetsytan **Funktionshantering**. När den här funktionen är aktiverad, om strukturen för programspecifika parametrar som du importerar skiljer sig från strukturen för motsvarande datakällor i mål-ER-formatet som har valts för import, kommer importen att lyckas i följande fall:
+
+- Strukturen för mål-ER-formatet har ändrats genom att nya villkorskolumner läggs till i alla befintliga datakällor för **söktypen**. När importen är klar uppdateras de programspecifika parametrarna. I alla importerade poster med applikationsspecifika parametrar initieras värdena i varje tillagd villkorskolumn med standardvärdet för [datatyp](er-formula-supported-data-types-primitive.md) i den kolumnen.
+- Strukturen för mål-ER-formatet har ändrats genom att ta bort vissa villkorskolumner från alla befintliga datakällor för **söktypen**. När importen är klar uppdateras de programspecifika parametrarna. I alla importerade poster för programspecifika parametrar raderas värdena i alla borttagna villkorskolumner.
+- Strukturen för mål-ER-formatet har ändrats genom att lägga till nya datakällor för **söktypen**. När importen är klar läggs de tillagda uppslagningarna till de programspecifika parametrarna.
+- Strukturen för mål-ER-formatet har ändrats genom att ta bort vissa av befintliga datakällor för **söktypen**. När importen är klar tas alla artefakter som är relaterade till datakällorna för **söktypen** som tagits bort från mål-ER-formatet från de importerade programspecifika parametrarna.
+
+När importen är klar, utöver de ändringar som just beskrevs, ändras tillståndet för de importerade programspecifika parametrarna till **Pågår**. Ett varningsmeddelande informerar om att de automatiskt justerade programspecifika parametrarna måste redigeras manuellt.
 
 ### <a name="reuse-existing-parameters"></a>Använd befintliga parametrar igen
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae02846c0ec937ebaff440dc5272a135e16c8aa7355ecc303929e760a54b6627
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7cdc22eeabda6cf9f08484d698e5096f66af4a12
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760308"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920708"
 ---
 # <a name="quantity-exceeds-under-delivery-percentage-during-packing-slip-generation"></a>Kvantiteten underskrider procentsatsen för överleverans under genereringen av följesedeln
 
@@ -49,8 +49,8 @@ Använd följande procedur för att justera procentsats för underleverans.
 
 1. Gå till **Kundreskontra \> Order \> Alla order**.
 1. Välj den försäljningsorder som du inte kan bokföra en följesedel för.
-1. På fliken  **Försäljningsorderrader** markerar du försäljningsorderraden för den artikel som överskrider underleveransens procentsats.
-1. På fliken  **Radinformation** väljer du **Leverans**.
+1. På fliken **Försäljningsorderrader** markerar du försäljningsorderraden för den artikel som överskrider underleveransens procentsats.
+1. På fliken **Radinformation** väljer du **Leverans**.
 1. I fältet **Underleverans** anger du värdet som en större procentsats som rymmer den kvantitet som har plockats mot generering av följesedel kan fortsätta.
 
 ### <a name="reverse-and-make-adjustments"></a>Återför och gör justeringar
@@ -60,14 +60,14 @@ Använd följande procedur för att justera procentsats för underleverans.
 Använd följande procedur när du annullerar en följesedel.
 
 1. Gå till **Warehouse management \> Laster \> Alla laster**.
-1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Annullera följesedel**.
+1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Annullera följesedel**.
 
 Använd följande procedur när du återför en försändelsebekräftelse.
 
 1. Gå till **Warehouse management \> Laster \> Alla laster**.
-1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Återför leveransbekräftelse**.
+1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Återför leveransbekräftelse**.
 
 Gör på följande sätt för att återföra arbete.
 
 1. Gå till **Warehouse management \> Laster \> Alla laster**.
-1. I åtgärdsfönstret, på fliken  **Laster**, i gruppen  **Arbete**, väljer du  **återför arbete**.
+1. I åtgärdsfönstret, på fliken **Laster**, i gruppen **Arbete**, väljer du **återför arbete**.

@@ -2,7 +2,7 @@
 title: Konfigurera lagersynlighet
 description: I detta ämne beskrivs hur du konfigurerar Lagersynlighet.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: fcbace2bd28a843fca8aa2f4f998c08f238c29d6
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678481"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920308"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurera lagersynlighet
 
@@ -61,7 +61,7 @@ När konfigurationen är slutförd, se till att du väljer **Uppdatera konfigura
 Varje datakälla representerar ett system som dina data kommer från. Namn på exempeldatakällor är bland annat `fno` (som betyder för "Dynamics 365 Finance and Operations-program") och `pos` (som betyder "försäljningsställe"). Standardinställningen är att Supply Chain Management konfigureras som standarddatakälla (`fno`) i Lagersynlighet.
 
 > [!NOTE]
-> Datakällan `fno` är reserverad för Dynamics 365 Supply Chain Management.
+> Datakällan `fno` är reserverad för Supply Chain Management. Om tillägget Lagerhantering är integrerat i en miljö för Supply Chain Management rekommenderar vi att du inte tar bort konfigurationer som är relaterade till `fno` datakällan.
 
 Följ dessa steg för att lägga till en datakälla.
 
@@ -273,17 +273,17 @@ När denna beräkningsformel används kommer det nya frågeresultatet att omfatt
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Patritionskonfiguration
 
-Partitionskonfigurationen består av en kombination av basdimensioner. Denna definierar datadistributionsmönstret. Dataoperationer i samma partition har stöd för hög prestanda och kostar inte så mycket. Därför kan bra partitionsmönster ge stora fördelar.
-
-Lagerstyrningen innehåller följande standardkonfiguration för partitioner.
+För närvarande består partitionskonfigurationen av två grunddimensioner (`SiteId` och `LocationId`) som anger hur data distribueras. Operationer under samma partition kan leverera högre prestanda till lägre kostnad. Följande tabell visar standardpartitionskonfigurationen som Tillägg för lagersynlighet tillhandahåller.
 
 | Basdimension | Hierarki |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
-> [!NOTE]
-> Konfigurationen av standardpartitionen är endast avsedd som referens. Du behöver inte definiera den i Lagersynlighet. För närvarande stöds inte uppgradering av partitionskonfiguration.
+Lösningen innehåller som standard den här partitionskonfigurationen. Därför *måste du inte definiera själv*.
+
+> [!IMPORTANT]
+> Anpassa inte standardkonfigurationen för partitionen. Om du tar bort eller ändrar den kan det leda till oväntade fel.
 
 ## <a name="product-index-hierarchy-configuration"></a><a name="index-configuration"></a>Konfiguration av produktindexhierarki
 

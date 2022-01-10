@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 93eff7a54f9d3851c59b83a28d3aa61a8de7bc41f2a845be21c8bf4d1c6401d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d5bcf3a0d36e323ee96c1f37829a95b60f529bc
+ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731041"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7944723"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Bearbetning av återbetalningar i kundcenter
 
@@ -33,11 +33,14 @@ Kundtjänstlogiken bestämmer betalsättet för återbetalningsraden, baserat p�
 
 Kundtjänsten använder betalningsättet för den ursprungliga ordern för att bestämma vilket betalsätt som ska användas för en returorder. Här följer hur den här processen fungerar för följande ursprungliga betalsätt:
 
-- **Normal** (kontant) eller **Check** – När en returorder som skapas hänvisar till en originalorder som betalats med hjälp av den normala (kontant) eller checkbetalningstypen hänvisar kundtjänstprogrammet till konfigurationer på sidan **Återbetalningsmetoder för kundtjänst**. På den här sidan kan organisationer definiera, efter ordervaluta, hur återbetalningar utfärdas till kunder för order som ursprungligen betalades med hjälp av det normala betalsättet eller checkbetalsättet. På sidan **Återbetalningsmetoder för kundtjänst** kan även organisationer välja om en systemgenererad återbetalningscheck ska skickas till kunden, eller om en kundkontokredit ska skapas mot det interna kundkontosaldot. I dessa scenarier hänvisar kundtjänstlogiken till valutan för returordern och använder sedan värdet för **Betalsätt för butik** för valutan för att skapa en återbetalningsrad på returförsäljningsordern. Senare kopplas en kundreskontrabetalningsjournal (AR) som använder det mappade betalsättet AR till valutan.
+- **Normal** (kontant) eller **Check** – När en returorder som skapas hänvisar till en originalorder som betalats med hjälp av den normala (kontant) eller checkbetalningstypen hänvisar kundtjänstprogrammet till konfigurationer på sidan **Återbetalningsmetoder för kundtjänst**. På den här sidan kan organisationer definiera, efter ordervaluta, hur återbetalningar utfärdas till kunder för order som ursprungligen betalades med hjälp av det normala betalsättet eller checkbetalsättet. På sidan **Återbetalningsmetoder** för kundtjänst kan även organisationer välja om en systemgenererad återbetalningscheck ska skickas till kunden. I dessa scenarier hänvisar kundtjänstlogiken till valutan för returordern och använder sedan värdet för **Betalsätt för butik** för valutan för att skapa en återbetalningsrad på returförsäljningsordern. Senare kopplas en kundreskontrabetalningsjournal (AR) som använder det mappade betalsättet AR till valutan.
 
     I följande bild visas konfigurationen för ett scenario där en kund returnerar produkter från en försäljningsorder som är kopplad till valutan USD och som ursprungligen betalades med det normala betalsättet eller checkbetalsättet. I detta scenario utfärdas en återbetalning till kunden via en systemgenererad återbetalningscheck. AR-betalsättet **REF-CHK** har konfigurerats som ett betalsätt för återbetalningscheck.
 
     ![Konfigurera återbetalningsmetoder för kundtjänst för normala betalningar och ursprungliga checkbetalningar.](media/callcenterrefundmethods.png)
+
+    > [!NOTE]
+    > Kundkontot stöds inte av en återbetalningsmetod för kontanter eller checkbetalningar.
 
 - **Kreditkort** – När en skapad returorder hänvisar till en ursprunglig order som har betalats med kreditkort använder kundtjänstlogiken för återbetalningar samma ursprungliga kreditkort för returordern.
 - **Förmånskort** – När en skapad returorder hänvisar till en ursprunglig order som har betalats med ett förmånskort använder kundtjänstlogiken för återbetalningar samma ursprungliga förmånskort för återbetalningen.

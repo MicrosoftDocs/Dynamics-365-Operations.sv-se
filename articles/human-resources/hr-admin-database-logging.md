@@ -1,8 +1,8 @@
 ---
 title: Konfigurera och hantera databasloggning
 description: Du kan spåra ändringar i register och fält i Dynamics 365 Human Resources med databasloggning.
-author: andreabichsel
-ms.date: 06/10/2020
+author: twheeloc
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4fd0f69df4a141e509c8c250f767cbbc3a20ef4ab7ac3dcec2bc6faa15eababb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10591abee7890d54d721c9324101a4b4bd0a74d2
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781667"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924830"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurera och hantera databasloggning
 
@@ -93,14 +93,14 @@ Du kan ta bort alla eller en del av databasloggarna med följande alternativ:
 Följ dessa steg för att ställa in rensning av databaslogg: 
 
 1. Gå till **Systemadministration > Länkar > Databasen > Databaslogg**. Välj **Rensa logg**.
-
-2. Välj en metod för att välja loggar att ta bort genom att ange något av följande alternativ:
+2. Under **Poster som ska ingår** välj **Filter**.
+3. Välj den metod som ska användas för att välja vilka loggar som ska tas bort. Ange ett av följande alternativ:
 
    - Register-ID
    - Typ av logg
-   - Skapat datum och klockslag
+   - Skapades datum och klockslag
 
-3. Använd fliken **Rensning i databasloggen** för att bestämma när loggrensningsuppgiften ska köras. Som standard är databasloggar tillgängliga i 30 dagar.
+4. Använd fliken **Rensning i databasloggen** för att bestämma när loggrensningsuppgiften ska köras. Som standard är databasloggar tillgängliga i 30 dagar.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

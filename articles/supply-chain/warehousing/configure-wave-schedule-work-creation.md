@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e9dc9b7cf33f9393f408d8f8a458e9b0ea47639
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 5b1e798ac0558e7c5b0bbe4b6a732cbdcf5729a1
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778387"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920134"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Schemalägga arbetsskapande under cykel
 
@@ -54,7 +54,7 @@ De befintliga konfigurationerna av uppgift och påfyllnadsbehandling kommer ocks
 Om det behövs kan du manuellt återställa någon eller alla inställningar som görs automatiskt när du aktiverar funktionen *Metoden för organisationsomfattande schemaläggning av skapande av arbete* genom att göra följande:
 
 - För påfyllnadsmallar, gå till **Lagerstyrning \> Inställningar \> Påfyllnader \> Påfyllnadsmallar**. Ersätt metoden *Schemalägga arbetsskapande* med *Skapa arbete*.
-- För lagerparametrar, gå till **Lagerstyrning \> Inställningar \> Parametrar för lagerstyrning**. På fliken **Påfyllnadsbearbetning** använder du de prioriterade värdena för **Bearbeta påfyllnader i batch** och **Vänta på lås (ms)**.
+- För lagerparametrar, gå till **Warehouse management \> Inställningar \> Parametrar för lagerstyrning**. På fliken **Påfyllnadsbearbetning** använder du de prioriterade värdena för **Bearbeta påfyllnader i batch** och **Vänta på lås (ms)**.
 - För påfyllnadsmetoder, gå till **Lagerstyrning \> Inställningar \> Påfyllnader \> Metoder för påfyllnadsprocess**. Välj `WHSScheduleWorkCreationWaveStepMethod` och i åtgärdsfönstret, välj **Uppgiftskonfiguration**. Ändra eller radera antalet batchuppgifter och den tilldelade påfyllnadsgruppen för respektive lagerställe i listan efter behov.
 
 ## <a name="manually-configure-scheduled-work-creation"></a>Konfigurera tidsplanerat arbete manuellt
@@ -65,7 +65,7 @@ Om du inte har aktiverat funktionen [*Organisationsomfattande påfyllnadsmetod "
 
 För att dra nytta av en parallell asynkron metod för att skapa lagerarbete, måste din påfyllnadsprocess köras i batch. Så här ställer du in det:
 
-1. Gå till  **Lagerstyrning\>Inställningar\>Parametrar för lagerstyrning**.
+1. Gå till **Warehouse management \> Inställningar \> Parametrar för Warehouse management**.
 1. På sidan **Allmänt**, ange **Behandla påfyllnader i batch** till *Ja*. Eventuellt kan du också välja en dedikerad **Batchgrupp för påfyllnadsbearbetning** för att förhindra att din batch-kö bearbetning körs samtidigt som andra processer.
 1. Ange **Vänta på lås (ms) tid**, som gäller när systemet bearbetar flera påfyllningar samtidigt. För de flesta större påfyllningsprocesser rekommenderar vi ett värde på *60000*.
 
@@ -73,8 +73,8 @@ För att dra nytta av en parallell asynkron metod för att skapa lagerarbete, m�
 
 Börja med att skapa den nya påfyllnadsstegmetoden och aktivera den för parallell asynkron uppgiftsbearbetning.
 
-1. Gå till  **Lagerstyrning \> Inställningar \> Påfyllnader \> Metoder för påfyllnadsprocess**.
-1. Välj  **återskapa metoder** och observera att *WHSScheduleWorkCreationWaveStepMethod* har lagts till i listan över metoder för påfyllnadsprocess kan du använda i påfyllnadsmallar för leverans.
+1. Gå till **Warehouse management \> Inställningar \> Påfyllnader \> Metoder för påfyllnadsprocess**.
+1. Välj **återskapa metoder** och observera att *WHSScheduleWorkCreationWaveStepMethod* har lagts till i listan över metoder för påfyllnadsprocess kan du använda i påfyllnadsmallar för leverans.
 1. Välj posten med **metodnamnet** *WHSScheduleWorkCreationWaveStepMethod* och välj **Konfiguration av uppgift**.
 1. Välj om du vill lägga till en ny rad i rutnätet **Ny** i åtgärdsfönstret och använd följande inställningar:
 
@@ -84,7 +84,7 @@ Börja med att skapa den nya påfyllnadsstegmetoden och aktivera den för parall
 
 Nu är du redo att uppdatera en befintlig påfyllnadsmall (eller skapa en ny) för att använda metoden för påfyllnadsbearbetning *Schemalägga arbetsskapande*.
 
-1. Gå till  **Lagerstyrning \> Inställningar \> Påfyllnader \> Påfyllnadsmallar**.
+1. Gå till **Warehouse management \> Inställningar \> Påfyllnader \> Påfyllnadsmallar**.
 1. I åtgärdsfönstret väljer du **Redigera**.
 1. I listfönstret väljer du den påfyllnadsmall som du vill uppdatera (om du testar med demodata kan du använda *standardvärdet för leverans 24*).
 1. Expandera snabbflikarna **Metoder** och markera raden med hjälp av **Namn** *Schemalägga arbetsskapande* i rutnätet **Resterande metoder**.

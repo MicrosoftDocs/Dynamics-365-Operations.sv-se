@@ -2,7 +2,7 @@
 title: Inställningar för parametrar för kredithantering
 description: I det här avsnittet beskrivs alternativen som du kan använda för att konfigurera kredithantering efter företagets behov.
 author: JodiChristiansen
-ms.date: 08/03/2020
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 768fb5121ae6be513c4a533a20027cf784640b2a
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 745a51617f8c87c0f757aee0304ec3efb55d0f98
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753475"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921225"
 ---
 # <a name="credit-management-parameters-setup"></a>Inställningar för parametrar för kredithantering
 
@@ -31,7 +31,7 @@ Det finns fyra snabbflikar i avsnittet **Kredit** där du kan ändra parametrarn
 
 ### <a name="credit-holds"></a>Kreditspärrar
 
-- Ange alternativet **Tillåt redigering av försäljningsordervärden efter att orderspärren frisläppts** till **Nej** om du vill att bokföringsreglerna ska kontrolleras igen om försäljningsorderns värde (utökat pris) har ökat sedan försäljningsordern släpptes från den spärrade listan. .
+- Ange alternativet **Tillåt redigering av försäljningsordervärden efter att orderspärren frisläppts** till **Nej** om du vill att bokföringsreglerna ska kontrolleras igen om försäljningsorderns värde (utökat pris) har ökat sedan försäljningsordern släpptes från den spärrade listan.
 - I fältet **orsaker till annullerade order** väljer du den frisläppningsorsak som kommer att användas som standard när en försäljningsorder som hade kredithanteringsspärr annulleras.
 - Ange alternativet **Kontrollera kundkreditgruppernas kreditgräns** till **JA** för att kontrollera kreditgränsen för en kundkreditgrupp när kunden på en försäljningsorder tillhör en kundkreditgrupp. Kreditgränsen för gruppen kommer att kontrolleras och om det behövs, kontrolleras kreditgränsen för kunden.
 - Ange alternativet **Kontrollera kreditgräns när betalningsvillkoren ökas** till **Ja** för att kontrollera betalningsvillkoren rankning för att avgöra om betalningsvillkoren i försäljningsordern skiljer sig från standardbetalningsvillkoren för kunden. Om de nya betalningsvillkoren har en högre rangordning än de ursprungliga betalningsvillkoren placeras ordern i en kredithanteringsspärr.
@@ -72,6 +72,10 @@ Flera statistik för kredithantering inkluderas i faktarutan **Statistik över k
 
 - I kredithantering visas kundkreditgränsen i kundens valuta. Du måste ange valutakurstypen för kreditgränsen i kundens valuta. I fältet **kreditgränsens valutakurstyp** väljer du den typ av valutakurs som ska användas för att konvertera den primära kreditgränsen till kundens kreditgräns.
 - Ange alternativet **Tillåt manuell redigering av kreditgränser** till **Nej** om du vill förhindra att användare redigerar kreditgränser på sidan **kund**. Om det här alternativet är inställt på **Nej** kan ändringar av kundens kreditgräns endast göras genom att transaktioner för kreditgränsjusteringar bokförs.
+- Ställ in alternativet **Hoppa över lagerreservationer** till **Ja**, om du vill ignorera lagerreservationer när spärregler för kredithantering kontrolleras. I det här fallet görs en kontroll av att alla radkvantiteter har slutförts och att respitperioder kontrolleras oberoende av kvantiteten för lagerreservationen.
+- När Kredithantering är aktiverad används inställningen av **meddelandet när kreditgränsen** överskrids för att endast bearbeta fritextfakturor. Även om meddelanden fortfarande läggs till försäljningsorder när kunderna har överskridit sin kreditgräns, blockeras inte bekräftelse, utskrift av plocklistor och följesedlar eller bokföring av fakturor.
+
+    Kredithantering aktiveras som standard, men du kan inaktivera det. Om den är aktiverad använder du spärrreglerna och checkpointsen för kredithantering för att identifiera när kunderna har överskridit sin kreditgräns. Om det är inaktiverat läggs meddelandena till i försäljningsorder baserat på inställningen av **Meddelande när kreditgränsen överskrids** kan hjälpa dig att identifiera när kunder har överskridit sin kreditgräns.
 
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Nummerserier och delade parametrar för nummerserier
 

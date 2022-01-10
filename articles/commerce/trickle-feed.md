@@ -1,8 +1,8 @@
 ---
 title: Indroppningsbaserat orderskapande för butikstransaktioner
 description: Det här ämnet beskriver det indroppningsbaserade orderskapandet för butikstransaktioner i Microsoft Dynamics 365 Commerce.
-author: josaw1
-ms.date: 09/04/2020
+author: analpert
+ms.date: 12/14/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,43 +15,49 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 900480c926df58cc1eaca052903384ceeadcccbdc3a0ede8a35f4b2a8ff87556
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a7fd8698d7123403cf9092a4a4bf810595d795b
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719451"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921255"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Indroppningsbaserat orderskapande för butikstransaktioner
 
 [!include [banner](includes/banner.md)]
 
-I Dynamics 365 Retail version 10.0.4 och tidigare utförs bokföring av utdrag i slutet av dagen och alla transaktioner bokförs i slutet av dagen. Stora transaktioner måste sedan bearbetas i ett begränsat tidsfönster, som ibland leder till låsningar och transaktionsbokföringsfel. Återförsäljare kan heller inte identifiera intäkter och betalningar i sin bokföring under dagen.
+I Microsoft Dynamics 365 Commerce version 10.0.5 och senare rekommenderar vi att du överför alla bokföringsprocesser för utdrag till indroppningsbaserade bokföringsprocesser för utdrag. Användning av indroppningsfunktionen ger avsevärda prestanda- och affärsfördelar. Försäljningstransaktioner bearbetas under dagen. Transaktioner för betalningsmedels- och kontanthantering bearbetas i bokslutet vid dagens slut. Indroppningsfunktionen gör det möjligt att kontinuerligt bearbeta försäljningsorder, fakturor och betalningar. Därför kan lager, intäkter och betalningar uppdateras och redovisas i nästan realtid.
 
-Med indroppningsbaserat orderskapande som introducerades i Retail version 10.0.5 bearbetas transaktioner under dagen, och endast den ekonomiska avstämningen av anbud och andra transaktioner för likviditetshantering bearbetas vid slutet av dagen. Den här funktionen delar upp belastningen av att skapa försäljningsorder, fakturor och betalningar under dagen, vilket ger bättre uppfattad prestanda och större möjlighet att känna igen intäkter och betalningar i bokföringen nära realtid. 
+## <a name="use-trickle-feed-based-posting"></a>Använd indroppningsbaserad bokföring
 
+> [!IMPORTANT]
+> Innan du aktiverar indroppningsbaserad bokföring måste du säkerställa att det inte finns beräknade och ej bokförda utdrag. Bokför alla utdrag innan du aktiverar funktionen. Det går att söka efter öppna utdrag i arbetsytan **Butiksekonomi**.
 
-## <a name="how-to-use-trickle-feed-based-posting"></a>Så här använder du indroppningsbaserad bokföring
-  
-1. Om du vill aktivera indroppningsbaserad bokföring av butikstransaktioner aktiverar du funktionen **Butiksutdrag – Indroppning** med hjälp av Funktionshantering.
+Aktivera indroppningsbaserad bokföring av butikstransaktioner genom att aktivera funktionen **Butiksutdrag – Indroppning** i arbetsytan **Funktionshantering**. Utdrag delas upp i två typer: transaktionsutdrag och bokslut.
 
-    > [!IMPORTANT]
-    > Innan du aktiverar den här funktionen måste du se till att det inte finns några utdrag som väntar på att bokföras.
+### <a name="transactional-statements"></a>Transaktionsutdrag
 
-2. Det aktuella utdragsdokumentet delas upp i två typer: transaktionsutdrag och bokslut.
+Bearbetning av transaktionsutdrag är avsedd att köras med hög frekvens under dagen så att dokument skapas när transaktionerna överförs till Commerce-administration. Transaktioner läses in från butikerna till Commerce-administration när du kör **P-Jobbet**. Du måste även köra jobbet **Validera butikstransaktioner** om du vill validera transaktioner så att transaktionsutdraget hämtar dem.
 
-      - Transaktionsutdraget hämtar alla ej bokförda och validerade transaktioner och skapa försäljningsorder, försäljningsfakturor, betalnings- och rabattjournaler samt intäkts-utgiftstransaktioner i den takt du konfigurerar. Du bör konfigurera den här processen så att den körs med hög frekvens så att dokument skapas när butikstransaktionerna överförs till Headquarters via P-jobbet. När du använder utdragsdokumentet som redan skapar försäljningsorder och försäljningsfakturor behöver du inte konfigurera batchjobbet **Bokföring av lager**. Du kan dock fortfarande använda det för att uppfylla specifika affärsbehov som du kan ha.  
-      
-     - Bokslutet är utformat för att skapas i slutet av dagen och stöder bara stängningsmetoden **Skift.** Detta utdrag begränsas till den ekonomiska avstämningen och skapar endast journaler för avvikelsebeloppen mellan det räknade beloppet och transaktionsbeloppet för de olika anbuden, tillsammans med journaler för andra likviditetshanteringstransaktioner.   
+Schemalägg följande jobb att köras med hög frekvens:
 
-3. Om du vill beräkna transaktionsutdraget går du till **Retail och Commerce > Retail och Commerce IT > Kassabokföring > Beräkna transaktionsutdrag i batch**. Om du vill bokföra transaktionsutdrag i batch går du till **Retail och Commerce > Retail och Commerce IT > Kassabokföring > Bokför transaktionsutdrag i batch**.
+- Beräkna ett transaktionsutdrag genom att köra jobbet **Beräkna transaktionsutdrag i batch** (**Retail och Commerce \> Retail och Commerce IT \> Kassabokföring \> Beräkna transaktionsutdrag i batch**). Det här jobbet hämtar alla ej bokförda och validerade transaktioner och lägger till dem i ett nytt transaktionsutdrag.
+- Bokför transaktionsutdrag i en batch genom att köra jobbet **Bokför transaktionsutdrag i batch** (**Retail och Commerce \> Retail och Commerce IT \> Kassabokföring \> Bokför transaktionsutdrag i batch**). Det här jobbet kör bokföringsprocessen och skapar försäljningsorder, försäljningsfakturor, betalningsjournaler, rabattjournaler och intäkts-utgiftstransaktioner för ej bokförda utdrag som inte innehåller fel. 
 
-4. Om du vill beräkna bokslutet går du till **Retail och Commerce > Retail och Commerce IT > Kassabokföring > Beräkna bokslutet i batch**. Om du vill bokföra bokslutet i batch går du till **Retail och Commerce > Retail och Commerce IT > Kassabokföring > Bokför bokslutet i batch**.
+### <a name="financial-statements"></a>Bokslut
 
-> [!NOTE]
-> Menyalternativen **Retail och Commerce > Retail och Commerce IT > Kassabokföring > Beräkna utdrag i batch** och **Retail och Commerce >Retail och Commerce IT > Kassabokföring > Bokför utdrag i batch** tas bort i den nya funktionen.
+Bokslutsbearbetning är avsedd att vara en dagsavstämningsprocess. Den här typen av utdragsbearbetning stöder endast stängningsmetoden **Skift** och hämtar bara stängda skift. Utdrag begränsas till ekonomisk avstämning. De skapar endast journaler för avvikelsebeloppen mellan det räknade beloppet och transaktionsbeloppet för betalningsmedlen och journaler för andra kontanthanteringstransaktioner.
 
-Alternativt kan transaktions- och bokslutstyper skapas manuellt. Gå till **Retail och Commerce > Kanaler > Butiker** och klicka på **Utdrag**. Klicka på **Ny** och välj sedan den typ av utdrag som du vill skapa. Fält på sidan **Utdrag** och åtgärder under **Utdragsgrupper** på sidan visar relevanta data och åtgärder baserade på den valda utdragstypen.
+Planera start- och sluttiderna för följande bokslutsjobb baserat på förväntad dagsavstämning:
 
+- Beräkna ett bokslut genom att köra jobbet **Beräkna bokslut i batch** (**Retail och Commerce \> Retail och Commerce IT \> Kassabokföring \> Beräkna bokslut i batch**). Det här jobbet samlar in alla ej bokförda ekonomiska transaktioner och lägger till dem i ett nytt bokslut.
+- Bokför bokslut i en batch genom att köra jobbet **Bokför bokslut i batch** (**Retail och Commerce \> Retail och Commerce IT \> Kassabokföring \> Bokför bokslut i batch**).
+
+### <a name="manually-create-statements"></a>Skapa utdrag manuellt
+
+Det går även att skapa transaktions- och bokslutstyper manuellt. 
+
+1. Öppna **Retail och Commerce \> Kanaler \> Butiker** och välj **Utdrag**. 
+2. Välj **Ny** och välj sedan utdragstypen som du vill skapa. Fält på sidan **Utdrag** och visar data som är relevanta för den valda utdragstypen och åtgärder under **Utdragsgrupper** visar relevanta åtgärder.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

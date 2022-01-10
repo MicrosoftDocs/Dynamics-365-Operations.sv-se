@@ -1,81 +1,119 @@
 ---
-title: Konsekvenskontroll av butikstransaktion
-description: Det här ämnet beskriver funktionen för konsekvenskontroll av transaktioner i Dynamics 365 Commerce.
-author: josaw1
-ms.date: 10/07/2020
+title: Validera butikstransaktioner för utdragsberäkning
+description: Det här ämnet beskriver funktionerna för att validera butikstransaktioner i Microsoft Dynamics 365 Commerce.
+author: analpert
+ms.date: 12/15/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chgriffin
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: josaw
+ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c8ba0f99743984860119deb96c889f5d62e1728c8772b9e6786d371690b61489
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 008368ae32aa92682d578b75b148e0587fcc94e0
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741742"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924781"
 ---
-# <a name="retail-transaction-consistency-checker"></a>Konsekvenskontroll av butikstransaktion
+# <a name="validate-store-transactions-for-statement-calculation"></a>Validera butikstransaktioner för utdragsberäkning
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet beskriver funktionen för konsekvenskontroll av transaktioner i Microsoft Dynamics 365 Commerce. Konsekvenskontrollen identifierar och isolerar inkonsekventa transaktioner innan de används i bokföringsprocessen för utdrag.
+Det här ämnet beskriver funktionerna för att validera butikstransaktioner i Microsoft Dynamics 365 Commerce. Valideringsprocessen identifierar och markerar transaktioner som orsakar bokföringsfel innan de hämtas av bokföringsprocessen för utdrag.
 
-Det går inte att bokföra utdrag om det finns inkonsekventa data i handelstransaktionsregistren. Dataproblemet kan bero på oförutsedda problem i kassaprogrammet, eller om transaktioner har importerats felaktigt från kassasystem från tredje part. Dessa inkonsekvenser kan till exempel uppenbara sig på följande sätt: 
+När du försöker bokföra ett utdrag kan valideringsprocessen misslyckas på grund av inkonsekvent data i handelstransaktionsregistren. Här följer några exempel på faktorer som kan orsaka sådana inkonsekvenser:
 
 - Transaktionssumman i huvudtabellen stämmer inte överens med transaktionssumman på raderna.
-- Radantalet i huvudtabellen stämmer inte överens med antalet rader i transaktionstabellen.
-- Momsen i huvudtabellen stämmer inte överens med momsbeloppet på raderna. 
+- Antalet artiklar som anges i huvudtabellen matchar inte antalet artiklar i transaktionstabellen.
+- Moms i huvudtabellen stämmer inte överens med momsbeloppet på raderna. 
 
-När inkonsekventa transaktioner fångas upp i bokföringsprocessen för utdrag, skapas inkonsekventa försäljningsfakturor och betalningsjournaler, och bokföringsprocessen för utdrag går inte att utföra. När utdragen ska återställas från ett sådant tillstånd krävs komplexa datakorrigeringar av flera transaktionsregister. Konsekvenskontrollen av transaktioner förhindrar sådana problem.
+Om inkonsekventa transaktioner hämtas i bokföringsprocessen för utdrag, skapas inkonsekventa försäljningsfakturor och betalningsjournaler som skapas kan orsaka att det inte går att bokföra. Processen **Validera butikstransaktioner** förhindrar dessa problem genom att säkerställa att endast transaktioner som passerar transaktionsvalideringsreglerna skickas till beräkningsprocessen för transaktionsutdrag.
 
-I följande diagram visas bokföringsprocessen där konsekvenskontroll av transaktioner tillämpas.
+Följande illustration visar de återkommande dagtidsprocesserna för transaktionsuppladdning, transaktionsvalidering och beräkning och bokföring av transaktionsutdrag samt dagsavstämningsprocesserna för beräkning och bokföring av bokslut.
 
-![Bokföringsprocess för utdrag med konsekvenskontroll av transaktioner.](./media/validchecker.png "Bokföringsprocess för utdrag med konsekvenskontroll av butikstransaktioner")
+![Illustration som visar de återkommande dagtidsprocesserna för transaktionsuppladdning, transaktionsvalidering och beräkning och bokföring av transaktionsutdrag samt dagsavstämningsprocesserna för beräkning och bokföring av bokslut.](./media/valid-checker-statement-posting-flow.png)
 
-Batchprocessen **Validera butikstransaktioner** kontrollerar att butikens handelstransaktionsregister är konsekventa i följande scenarier.
+## <a name="store-transaction-validation-rules"></a>Valideringsregler för butikstransaktioner
 
-- **Kundkonto** – Validerar att kundkontot i transaktionsregistren finns i huvudkontorets kundmall.
-- **Radräkning** – Validerar att antalet rader, som anges i transaktionshuvudregistret, motsvarar antalet rader i försäljningstransaktionsregistren.
-- **Pris inklusive moms** – Validerar att parametern **Pris inklusive moms** är konsekvent på alla transaktionsrader och att priset på försäljningsraden är förenligt med konfigurationen av pris inklusive moms och momsbefrielse.
-- **Betalningsbelopp** – Validerar att betalningsposterna stämmer överens med betalningsbeloppet i huvudet, men tar även hänsyn till konfigurationen för öresavrundning i redovisningen.
-- **Bruttobelopp** – Validerar att bruttobeloppet i huvudet är summan av nettobeloppen på raderna plus momsbeloppet, men tar också hänsyn till konfigurationen för öresavrundning i redovisningen.
-- **Nettobelopp** – Validerar att nettobeloppet i huvudet är summan av nettobeloppen på raderna, men tar också hänsyn till konfigurationen för öresavrundning i redovisningen.
-- **Under-/överbetalning** – Validerar att skillnaden mellan bruttobeloppet i huvudet och betalningsbeloppet inte överskrider den maximala konfigurationen av underbetalning/överbetalning, men tar också hänsyn till konfigurationen för öresavrundning i redovisningen.
-- **Rabattbelopp** – Validerar att rabattbeloppet för rabattregistren och rabattbeloppet i registren för butikstransaktionsrader är konsekventa och att rabattbeloppet i huvudet är lika med summan av rabattbeloppen på raderna, men tar också hänsyn till konfigurationen för öresavrundning i redovisningen.
-- **Radrabatt** – Validerar att radrabatten på transaktionsraden är lika med summan av alla rader i rabattregistren som motsvarar transaktionsraden.
-- **Presentkortsartikel** – Det går inte att returnera presentkortsartiklar i Commerce. Saldot på ett presentkort kan dock betalas ut kontant. En presentkortsartikel som bearbetas som en returrad i stället för en utbetalningsrad gör att utdragsbokföringsprocessen misslyckas. Valideringsprocessen för presentkortsartiklar garanterar att de enda returraderna för presentkortsartiklar i transaktionsregistren utgörs av rader för kontantutbetalning av presentkort.
-- **Negativt pris** – Validerar att det inte finns några negativa pristransaktionsrader.
-- **Artikel och variant** – Validerar att artiklar och varianter på transaktionsraderna finns i artikel- och varianthuvudfilen.
-- **Momsbelopp** – Validerar att skatteposterna stämmer med skattebeloppen på raderna.
-- **Serienummer** – Validerar att serienumret finns på transaktionsraderna för artiklar som kontrolleras med serienummer.
-- **Förtecken** – Validerar att förtecknet på kvantiteten och nettobeloppet är detsamma i alla transaktionsrader.
-- **Affärsdatum** – Validerar att de finansiella perioderna för alla affärsdatum för transaktionerna är öppna.
-- **Avgifter** – Validerar att avgiftsbeloppen i huvudet och på raderna överensstämmer med konfigurationen av pris, inklusive moms och momsbefrielse.
-
-## <a name="set-up-the-consistency-checker"></a>Ställa in konsekvenskontrollen
-
-Konfigurera batchprocessen "Validera butikstransaktioner" i **Retail och Commerce \> Retail och Commerce IT \> Kassabokföring** för periodiska körningar. Batchjobbet kan schemaläggas utifrån butikens organisationshierarki, vilket påminner om hur processerna "Beräkna utdrag i batch" och "Bokför utdrag i batch" konfigureras. Vi rekommenderar att du konfigurerar den här batchprocessen så att den körs flera gånger under en dag och schemalägga den så att den körs i slutet av varje P-jobbskörning.
-
-## <a name="results-of-validation-process"></a>Resultat av valideringsprocessen
-
-Resultaten av batchprocessens valideringskontroll märks i motsvarande transaktion. Fältet **Valideringsstatus** i transaktionsposten anges antingen till **Slutförd** eller **Fel**, och datumet för den senaste valideringskörningen visas i fältet **Senaste valideringstid**.
-
-Om du vill visa en mer beskrivande feltext som berör ett valideringsfel markerar du aktuell butikstransaktionspost och klickar på **Valideringsfel**.
-
-Transaktionerna som inte klarar valideringskontrollen och de transaktioner som ännu inte validerats används inte i utdragen. Under processen "Beräkna utdrag" meddelas användarna om det finns transaktioner som kan ha inkluderats i uttrycket men inte som inte har det.
-
-Om ett valideringsfel inträffar går det bara att korrigera felet genom att kontakta Microsoft Support. I en framtida version kommer en funktion att läggas till som gör att användarna kan korrigera posterna via användargränssnittet. Funktioner för loggning och granskning kommer också att införas, vilka gör det möjligt att spåra ändringshistoriken.
+Batchprocessen **Validera butikstransaktioner** kontrollerar att handelstransaktionsregistren är konsekventa grundat på följande valideringsregler.
 
 > [!NOTE]
-> Ytterligare valideringsregler för andra scenarier kommer i framtida versioner.
+> Valideringsregler läggs även fortsättningsvis till i efterföljande versioner.
 
+### <a name="transaction-header-validation-rules"></a>Valideringsregler för transaktionshuvud
+
+Följande tabell visar valideringsregler för transaktionshuvud som kontrolleras mot butikstransaktionshuvudet innan dessa transaktioner skickas till utdragsbokföring.
+
+| Rubrik | Beskrivning |
+|-------|-------------|
+| Affärsdatum | Den här regeln validerar att transaktionens affärsdatum är associerat med en öppen räkenskapsperiod i redovisningen. |
+| Valutaavrundning | Den här regeln validerar att transaktionsbeloppen avrundas enligt valutaavrundningsregeln. |
+| Kundkonto | Den här regeln validerar att kunden som används i transaktionen finns i databasen. |
+| Rabattbelopp | Den här regeln validerar att rabattbeloppet i huvudet är lika med summan av radernas rabattbelopp. |
+| Bokföringsstatus för skattedokument (Brasilien) | Den här regeln validerar att skattedokumentet går att bokföra. |
+| Bruttobelopp | Den här regeln validerar att bruttobeloppet i transaktionshuvudet motsvarar transaktionsradernas nettobelopp, inklusive moms, plus avgifter. |
+| Netto | Den här regeln validerar att nettobeloppet i transaktionshuvudet motsvarar transaktionsradernas nettobelopp, exklusive moms, plus avgifter. |
+| Netto + moms | Den här regeln validerar att bruttobeloppet i transaktionshuvudet motsvarar transaktionsradernas nettobelopp, exklusive moms, plus alla skatter och avgifter. |
+| Antal artiklar | Den här regeln validerar att antalet artiklar som anges i transaktionshuvudet motsvarar kvantiteternas summa på transaktionsraderna. |
+| Betalningsbelopp | Den här regeln validerar att betalningsbeloppet i transaktionshuvudet motsvarar summan av alla betalningstransaktioner. |
+| Beräkning av momsbefrielse | Den här regeln validerar att summan av det beräknade beloppet och avgiftsradernas momsbefrielsebelopp är lika med det ursprungliga beräknade beloppet. |
+| Pris inklusive moms | Den här regeln validerar att flaggan **Moms inkluderad i priset** är konsekvent i transaktionshuvudet och momstransaktionerna. |
+| Transaktion inte tom | Den här regeln validerar att transaktionen innehåller rader och att minst en rad inte är annullerad. |
+| Under-/överbetalning | Den här regeln validerar att skillnaden mellan bruttobeloppet och betalningsbeloppet inte överskrider konfigurationen för maximal underbetalning/överbetalning. |
+
+### <a name="transaction-line-validation-rules"></a>Valideringsregler för transaktionsrader
+
+Följande tabell visar valideringsregler för transaktionsrader som kontrolleras mot butikstransaktionernas radinformation innan dessa transaktioner skickas till utdragsbokföring.
+
+| Rubrik | Beskrivning |
+|-------|-------------|
+| Streckkod | Den här regeln validerar att alla artikelstreckkoder som används på transaktionsraderna finns i databasen. |
+| Avgiftsrader | Den här regeln validerar att summan av det beräknade beloppet och avgiftsradernas momsbefrielsebelopp är lika med det ursprungliga beräknade beloppet. |
+| Presentkortsreturer | Den här regeln validerar att det inte finns presentkortsreturer i transaktionen. |
+| Artikelvariant | Den här regeln validerar att alla artiklar och varianter som används på transaktionsraderna finns i databasen. |
+| Radrabatt | Den här regeln validerar att radrabattbeloppet motsvarar rabattransaktionernas summa. |
+| Radmoms | Den här regeln validerar att radmomsbeloppet motsvarar momstransaktionernas summa. |
+| Negativt pris | Den här regeln validerar att negativa priser inte används på transaktionsraderna. |
+| Serienummer kontrollerat | Den här regeln validerar att serienumret finns på transaktionsraden för artiklar som kontrolleras med serienummer. |
+| Serienummerdimension | Den här regeln validerar att inget serienummer anges om artikelns serienummerdimension är inaktiv. |
+| Inkonsekvent förtecken | Den här regeln validerar att kvantitetens och nettobeloppets förtecken är samma på alla transaktionsrader. |
+| Momsbefrielse | Den här regeln validerar att radartikelprisets summa och momsbefrielsebeloppet är lika med det ursprungliga priset. |
+| Momsgruppstilldelning | Den här regeln validerar att kombinationen momsgrupp och artikelskattegrupp ger en giltig skatteskärningspunkt. |
+| Måttkonverteringar | Den här regeln validerar att måttenheten för alla rader har en giltig konvertering till lagermåttet. |
+
+## <a name="enable-the-store-transaction-validation-process"></a>Aktivera valideringsprocessen för butikstransaktioner
+
+Konfigurera jobbet **Validera butikstransaktioner** för periodiska körningar i Commerce-administration (**Retail och Commerce \> Retail och Commerce IT \> Kassabokföring**). Batchjobbet tidsplaneras grundat på butikens organisationshierarki. Vi rekommenderar att du konfigurerar den här batchprocessen att köra med samma frekvens som batchjobben **P-jobb** och **Beräkning av transaktionsutdrag**.
+
+## <a name="results-of-the-validation-process"></a>Valideringsprocessens resultat
+
+Det går att visa resultatet av batchprocessen **Validera butikstransaktioner** för varje butikstransaktion. Fältet **Valideringsstatus** för transaktionsposten är inställd på **Slutförd**, **Fel** eller **Ingen**. Fältet **Senaste valideringstid** visar datumet för den senaste valideringskörningen.
+
+Följande tabell beskriver varje valideringsstatus.
+
+| Valideringsstatus | Beskrivning |
+|-------------------|-------------|
+| Slutförd | Alla aktiverade valideringsregler godkända. |
+| Fel | En aktiverad valideringsregel har identifierat ett fel. Det går att visa mer information om felet genom att välja **Valideringsfel** i åtgärdsfönstret. |
+| Ingen | Transaktionstypen kräver inte att valideringsregler används. |
+
+![Sidan Butikstransaktioner visar fältet Valideringsstatus och knappen Valideringsfel.](./media/valid-checker-validation-status-errors.png)
+
+Endast transaktioner som har valideringsstatus **Slutförd** hämtas till transaktionsutdragen. Visa transaktioner med statusen **Fel** genom att granska panelen **Valideringsfel för hämtköp** på arbetsytan **Butiksekonomi**.
+
+![Paneler på arbetsytan Butiksekonomi.](./media/valid-checker-cash-carry-validation-failures.png)
+
+Mer information om att korrigera valideringsfel för hämtköp finns i [Redigera och granska hämtköpstransaktioner och transaktioner för kassahantering](edit-cash-trans.md).
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+[Redigera och granska hämtköpstransaktioner och transaktioner för kassahantering](edit-cash-trans.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
