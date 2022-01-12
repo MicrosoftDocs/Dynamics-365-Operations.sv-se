@@ -2,7 +2,7 @@
 title: Skapa en konfiguration för att generera dokument i Excel-format
 description: Det här avsnittet beskriver hur du utformar ett elektroniskt rapporteringsformat (ER) för att fylla i en Excel-mall och sedan generera utgående dokument i Excelformat.
 author: NickSelin
-ms.date: 12/03/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ebe2647bb382421921aa6ffc733953f379a8af10
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 87d5929557e5120a5339ee46eac655fd399679d1
+ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890883"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7943622"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Skapa en konfiguration för att generera dokument i Excel-format
 
@@ -364,6 +364,22 @@ Du kan korrigera problemet på något av följande sätt:
     3. Kör det ändrade ER-formatet.
 
         ![Granska det genererade Excel-dokument i Excel skrivbordsprogrammet.](./media/er-fillable-excel-example2-4.png)
+
+## <a name="limitations"></a>Begränsningar
+
+### <a name="known-epplus-library-limitations"></a>Kända begränsningar i EPPlus-biblioteket
+
+#### <a name="external-data-sources"></a>Externa datakällor
+
+Om en av mallarna innehåller ett PivotTable som baseras på en PowerPivot modell som hänvisar till en [extern datakälla](https://support.microsoft.com/office/create-a-pivottable-with-an-external-data-source-db50d01d-2e1c-43bd-bfb5-b76a818a927b) och funktionen **Aktivera användning av EPPlus-biblioteket i ramverket för elektronisk rapportering** är aktiverat får du följande felmeddelande när du kör ett ER-format som använder den mallen för att generera ett utgående dokument i Excel-format: "Cachekällan är inte ett kalkylblad." Du har följande alternativ för att åtgärda detta problem:
+
+- **Rekommenderad:** Gör om den Excel-lösning du använder:
+
+    1. Skapa den del som innehåller pivots i en separat Excel-arbetsbok (arbetsbok A). 
+    2. Använd ER för att generera en andra Excel-arbetsbok (arbetsbok B) från Finance som innehåller de uppgifter som krävs. 
+    3. Läs arbetsbok B i arbetsbok A så snart arbetsbok B har genererats.
+
+- Använd ett annat alternativ än EPPlus om du vill stänga av funktionen. 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

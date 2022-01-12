@@ -1,22 +1,22 @@
 ---
 title: Tidsplanera påfyllnadsetikett utskrift under påfyllnad
 description: I det här avsnittet beskrivs hur du ställer in och använder funktionerna för uppgiftsbaserad utskrift av påfyllnadsetikett.
-author: MSFTGarm
+author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-obaranov
+ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 4883f8a548645436e17b933d87d4ee6330570d48
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777875"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920159"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Tidsplanera påfyllnadsetikett utskrift under påfyllnad
 
@@ -40,7 +40,7 @@ De funktioner som beskrivs i det här avsnittet måste vara inaktiverade för di
 
 Börja med att skapa den nya påfyllnadsstegmetoden och aktivera den för parallell asynkron uppgiftsbearbetning.
 
-1. Gå till  **Warehouse management \> Inställningar \> Påfyllnader \> Metoder för påfyllnadsprocess**.
+1. Gå till **Warehouse management \> Inställningar \> Påfyllnader \> Metoder för påfyllnadsprocess**.
 1. Klicka på **återskapa metod** i åtgärdsfönstret. Lägg märke till att *waveLabelPrinting* läggs till i listan över de påfyllnadsprocessmetoder som du kan använda i mallarna för påfyllnad.
 1. Välj den post där fältet **Metodnamn** är inställt på *waveLabelPrinting* och välj sedan **Uppgiftskonfiguration** i åtgärdsfönstret.
 1. I åtgärdsfönstret, välj **Ny** du vill lägga till en rad i rutnätet. Ange sedan följande fält för den nya raden:
@@ -51,7 +51,7 @@ Börja med att skapa den nya påfyllnadsstegmetoden och aktivera den för parall
 
 Du kan nu uppdatera en befintlig påfyllnadsmall så att den använder påfyllnadsbearbetningsmetoden för *Utskrift av påfyllnadsetikett*. Du kan också skapa en ny påfyllnadsmall där den används.
 
-1. Gå till  **Warehouse management \> Inställningar \> Påfyllnader \> Påfyllnadsmallar**.
+1. Gå till **Warehouse management \> Inställningar \> Påfyllnader \> Påfyllnadsmallar**.
 1. I åtgärdsfönstret väljer du **Redigera**.
 1. Välj den påfyllnadsmall som ska uppdateras i listfönstret. (Om du använder demodata för testsyften kan du välja lagerställe *24 leveransstandard*.)
 1. På snabbfliken **Metoder**, i kolumnen **Återstående metoder**, markerar du den rad där fältet **Namn** är inställt på *waveLabelPrinting*.

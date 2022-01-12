@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 25507a482b2db7c01f56679bf3e8454249de3a6b9965f9c359a2ebe2cc8445ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec5e0ac8dd097e5ebf016683fc5c17df7ecb2305
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6711697"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920408"
 ---
 # <a name="quantity-that-youre-trying-to-update-exceeds-the-receiveddelivered-quantity"></a>Kvantiteten som du försöker uppdatera överstiger den mottagna/levererade kvantiteten
 
@@ -62,8 +62,8 @@ Använd följande procedur för att justera lastradkvantiteten.
 
 1. Gå till **Warehouse management \> Laster \> Alla laster**.
 1. Välj den beläggning som följesedel inte kan genereras för.
-1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Återför leveransbekräftelse**.
-1. På fliken  **Lastrader** väljer du lastraden för den artikel som orsakar ett problem.
+1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Återför leveransbekräftelse**.
+1. På fliken **Lastrader** väljer du lastraden för den artikel som orsakar ett problem.
 1. Välj **Minska plockad kvantitet** om du vill justera den plockade kvantiteten.
 1. Ställ in fältet **Minska lastrad** om du vill återspegla justeringar på lastraden.
 
@@ -75,5 +75,5 @@ Använd följande procedur när du återför plockregistreringen.
 
 1. Gå till **Kundreskontra \> Order \> Alla order**.
 1. Välj den försäljningsorder som du inte kan bokföra en följesedel för.
-1. På fliken  **Försäljningsorderrader** väljer du den försäljningsorderrad för vilken plockningsregistreringen har gjorts.
+1. På fliken **Försäljningsorderrader** väljer du den försäljningsorderrad för vilken plockningsregistreringen har gjorts.
 1. Välj **Uppdatera rad \> Plockning** om du vill häva plockningen av artiklarna.

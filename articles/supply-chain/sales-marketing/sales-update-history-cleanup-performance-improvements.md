@@ -1,5 +1,5 @@
 ---
-title: Förbättringar i prestanda för rensning av försäljningshistorik
+title: Förbättringar av prestanda för rensning av försäljningshistorik
 description: I detta ämne beskrivs funktionen för prestandaförbättringar i rensningen av försäljningshistorik och hur du aktiverar den.
 author: myvakalo
 ms.date: 10/05/2021
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 1b2de9d6a7b1b7793b6bb753dd580d052d3c2841
-ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
+ms.openlocfilehash: 610f0d4e0448dd21d10765400f25cd89e3c7a84b
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "7891804"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920283"
 ---
-# <a name="saleshistorycleanupperformanceimprovements"></a>Förbättringar i prestanda för rensning av försäljningshistorik
+# <a name="sales-history-cleanup-performance-improvements"></a>Förbättringar av prestanda för rensning av försäljningshistorik
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -34,7 +34,7 @@ Funktionen förbättrar det befintliga rensningsjobbet på följande sätt:
 
 När funktionen har aktiverats kommer batchjobbet **Rensning av försäljningsuppdateringshistorik** (**Försäljning och marknadsföring \> Periodiska uppgifter \> Rensning \> Rensning av försäljningsuppdateringshistorik**) att köras som tidigare, men nu med bättre prestanda samt i maximalt 2 timmar. Detta innebär att det kanske måste köras flera gånger om du vill rensa alla data för en specifik kvarhållningstidsram.
 
-## <a name="turn-on-the-saleshistorycleanupperformanceimprovements-feature"></a>Aktivera funktionen för förbättringar i rensningsprestandan för försäljningshistorik
+## <a name="turn-on-the-sales-history-cleanup-performance-improvements-feature"></a>Aktivera funktionen för förbättringar i rensningsprestandan för försäljningshistorik
 
 Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 

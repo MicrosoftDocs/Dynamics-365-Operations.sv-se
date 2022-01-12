@@ -1008,10 +1008,12 @@
                   href: lifecycle-services/translation-service-overview.md
                 - name: Översätt användargränssnittsfiler
                   href: lifecycle-services/use-translation-service.md
-                - name: Översätta dokumentationsfiler
+                - name: Översätt dokumentationsfiler
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Filer för översättningsminne
                   href: lifecycle-services/use-translation-service-tm.md
+                - name: Azure DevOps-tillägg (allmänt tillgänglig förhandsversion)
+                  href: lifecycle-services/dts-devops-extension.md
         - name: Microsoft Power Platform-integration
           items:
             - name: Översikt
@@ -1602,6 +1604,8 @@
                   href: sysadmin/retryable-batch.md
                 - name: Kopiera ett batchjobb
                   href: sysadmin/copy-batch-job.md
+                - name: Prioritetsbaserad batchplanering
+                  href: sysadmin/priority-based-batch-scheduling.md
                 - name: Aktiva batchperioder
                   href: sysadmin/activeperiod.md
                 - name: Sommartidsstöd för aktiva batchperioder

@@ -2,19 +2,19 @@
 title: Migrering av valutatyp för dubbelriktad skrivning
 description: I det här avsnittet beskrivs hur du ändrar antalet decimaler som stöds av dubbelriktad skrivning för valuta.
 author: RamaKrishnamoorthy
-ms.date: 04/06/2020
+ms.date: 12/08/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: eaf0cd931e763f31faa334d5353ae6950ed7ee4f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bce58631ecd54bb90993bd552d529d3b379de1b1
+ms.sourcegitcommit: 6762a674a552353d9f53587923c9acba9b43cb56
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782817"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "7917740"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering av valutatyp för dubbelriktad skrivning
 
@@ -83,9 +83,20 @@ Om du kräver att valutaprecisionen för en viss valuta avviker från den valuta
 
 ![Valutainställningar för en specifik plats.](media/specific-currency.png)
 
-### <a name="tables-currency-column"></a>tabeller: valutakolumn
+### <a name="tables-currency-column"></a>Tabeller: valutakolumn
 
 Antalet decimaler som kan konfigureras för särskilda valutakolumner är begränsat till fyra.
 
+### <a name="default-currency-decimal-precision"></a>Standardvalutan decimalprecision
+Information om förväntat beteende för decimalprecision i standardvalutan under migrering och icke-migreringsscenarier finns i tabellen nedan. 
+
+| Skapades den  | tabeller: decimalfält    | Befintlig organisation (valutafältet har inte migrerats) | Befintlig organisation (valutafältet har migrerats) | Ny org skapad post build 9.2.21062.00134 |
+|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
+| Valutafält som skapades innan 9.2.21111.00146  |     |  |       |
+|    | Maximal precision som visas i användargränssnitt   | 4 siffror    | 10 siffror    | Inte tillämpligt    |
+| | Maximal precision synlig i databas- och DB-frågeresultat-UI         | 4 siffror   | 10 siffror   | Inte tillämpligt    |
+| Valutafält som skapades efter 9.2.21111.00146 |    |  |     |   |
+|   | Maximal decimal precision som visas i användargränssnitt     | 4 siffror   | 10 siffror   | 10 siffror     |
+|          | Maximal decimalprecision synlig i databas- och DB-frågeresultat-UI | 10 siffror. Endast 4 är signifikanta med alla nollor utöver de 4 decimalsiffrorna. På så sätt blir det enklare och snabbare att migrera en org, om det behövs. | 10 siffror      | 10 siffror     |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 00e3da7767b80e16f9351f59b109765bffc0128fe149cefafc1edda3a6cbcb96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc74c5748950b1f0f001fd89acb2e023640065ee
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781355"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920060"
 ---
 # <a name="quantity-exceeds-over-delivery-percentage-during-packing-slip-generation"></a>Kvantiteten överskrider procentsatsen för överleverans under genereringen av följesedeln
 
@@ -50,10 +50,10 @@ Använd följande procedur för att justera lastradkvantiteten.
 
 1. Gå till **Warehouse management \> Laster \> Alla laster**.
 1. Välj den beläggning som följesedel inte kan genereras för.
-1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Återför leveransbekräftelse**.
-1. På fliken  **Läs in rader** markerar du inläsningsraden för den artikel som överskrider överleveransens procentsats.
+1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Återför leveransbekräftelse**.
+1. På fliken **Läs in rader** markerar du inläsningsraden för den artikel som överskrider överleveransens procentsats.
 1. Välj **Minska plockad kvantitet** om du vill justera den plockade kvantiteten.
-1. På fliken  **Radinformation** väljer du **Order**.
+1. På fliken **Radinformation** väljer du **Order**.
 1. I fältet **Kvantitet** anger du värdet för den plockade kvantiteten (det vill säga värdet för **Arbetsskapad kvantitet**), så att generering av följesedel kan fortsätta.
 
 ### <a name="adjust-the-over-delivery-percentage"></a>Justera procentsats för överleverans
@@ -62,8 +62,8 @@ Använd följande procedur för att justera procentsats för överleverans.
 
 1. Gå till **Kundreskontra \> Order \> Alla order**.
 1. Välj den försäljningsorder som du inte kan bokföra en följesedel för.
-1. På fliken  **Försäljningsorderrader** markerar du försäljningsorderraden för den artikel som överskrider överleveransens procentsats.
-1. På fliken  **Radinformation** väljer du **Leverans**.
+1. På fliken **Försäljningsorderrader** markerar du försäljningsorderraden för den artikel som överskrider överleveransens procentsats.
+1. På fliken **Radinformation** väljer du **Leverans**.
 1. I fältet **Överleverans** anger du värdet som en större procentsats som rymmer den kvantitet som har plockats mot generering av följesedel kan fortsätta.
 
 ### <a name="reverse-and-make-adjustments"></a>Återför och gör justeringar
@@ -73,14 +73,14 @@ Använd följande procedur för att justera procentsats för överleverans.
 Använd följande procedur när du annullerar en följesedel.
 
 1. Gå till **Warehouse management \> Laster \> Alla laster**.
-1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Annullera följesedel**.
+1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Annullera följesedel**.
 
 Använd följande procedur när du återför en försändelsebekräftelse.
 
 1. Gå till **Warehouse management \> Laster \> Alla laster**.
-1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Återför leveransbekräftelse**.
+1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Återför leveransbekräftelse**.
 
 Gör på följande sätt för att återföra arbete.
 
 1. Gå till **Warehouse management \> Laster \> Alla laster**.
-1. I åtgärdsfönstret, på fliken  **Laster**, i gruppen  **Arbete**, väljer du  **återför arbete**.
+1. I åtgärdsfönstret, på fliken **Laster**, i gruppen **Arbete**, väljer du **återför arbete**.

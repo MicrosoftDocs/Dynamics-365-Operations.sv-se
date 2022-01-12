@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 00beaba2d3ddb3672d335d4176723b77a8dc263650cae343a3bbcdfd52601d45
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a642114d6fee90b084e2d7c3cb432d2b8fb29a95
+ms.sourcegitcommit: 3f77e0b988f6dd0c9edfdec1dbd9815380501dbb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763396"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "7916952"
 ---
 # <a name="removed-or-deprecated-features-home-page"></a>Borttagna eller utfasade funktioner på startsidan
 
@@ -30,6 +30,7 @@ Följande avsnitt innehåller information om borttagna eller inaktuella funktion
 - [Borttagna eller inaktuella funktioner i Dynamics 365 Commerce](../../../commerce/get-started/removed-deprecated-features-commerce.md)
 - [Borttagna eller inaktuella funktioner i Dynamics 365 Finance](../../../finance/get-started/removed-deprecated-features-finance.md)
 - [Borttagna eller inaktuella funktioner i Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md)
+- [Borttagna eller inaktuella funktioner i Dynamics 365 Project Operations](/project-operations/whats-new/removed-depreciated-features-project)
 - [Borttagna eller utfasade plattformsfunktioner](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md)
 - [Borttagna eller inaktuella funktioner i tidigare versioner](../../dev-itpro/migration-upgrade/deprecated-features.md)
 

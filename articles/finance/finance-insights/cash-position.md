@@ -2,7 +2,7 @@
 title: Kassaposition
 description: I det här ämnet beskrivs hur funktionen för kassaflödesprognoser förutsäger organisationens kassaposition för specifika tider. Här beskrivs också vilka alternativ som finns för att visa prognoser för olika perioder.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6bb99084a2ffef067dd0d7158ecb5e57d6d97d75
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752890"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945811"
 ---
 # <a name="cash-position"></a>Kassaposition
 
@@ -45,5 +45,17 @@ I den nedre delen av fliken **Kassaposition** visas information om positionen, k
 - I rutnätet **Bankkonto** visas inverkan av förväntade kassainflöden och kassautflöden på banksaldot.
 
 Skapa en ögonblicksbild om du vill spara och redigera kassapositionen. Mer information om hur du arbetar med ögonblicksbilder finns i [Översikt över ögonblicksbilder](payment-snapshots.md).
+
+## <a name="details-of-the-cash-position-capability"></a>Detaljer om kassapositionskapaciteten 
+
+Funktionen Kassaposition omfattar följande funktioner: 
+
+- Funktionen för kassaposition visar kassaflödet som baseras på befintliga dokument i systemet och kassainflödet och kassautflödesraderna som importeras från externa system.
+- Gör det enkelt att integrera kassaflödesdata från externa system till Dynamics 365 Finance. Kassaposition kan också använda ramverket för import-export av data. Detta ramverk gör det enkelt att integrera med Excel OData. Du kan också kombinera data från flera källor för att skapa en omfattande kassapositionslösning.
+- Introducerar intelligent kassaposition. Kassapositionen skapas utifrån kundens betalningsbeteende för att förutsäga när ett företag kan förvänta sig kontanter att anlända till sina konton.
+- För kundorder och fakturor används funktionen för kundbetalningsprognoser för att ta reda på hur kundbetalningsbeteendet ser ut när en order eller faktura betalas.
+- För leverantörsorder och fakturor använder vi genomsnittlig tid mellan leverans och faktura och betalning av en faktura per leverantör för att fastställa när en leverantörsorder eller faktura ska betalas, vilket gör kassautflödena mer korrekta.
+
+Då skapas en mer exakt vy av kassaflödet som bygger på tidigare betalningsbeteenden för han eller hon. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

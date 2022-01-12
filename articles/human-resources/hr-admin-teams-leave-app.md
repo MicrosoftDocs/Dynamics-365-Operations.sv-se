@@ -2,7 +2,7 @@
 title: Personal-app i Teams
 description: Detta avsnitt introducerar Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: twheeloc
-ms.date: 12/09/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8eebe154a19dd8476f6e9d75ebfd69fdc5b9e2b7
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 9274ab345616561deddd322ebad0d6e0b834d1d4
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913499"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924732"
 ---
 # <a name="human-resources-app-in-teams"></a>Personal-app i Teams
 
@@ -41,6 +41,21 @@ Du hittar appen Dynamics 365 Human Resources i Teams-butiken. Mer information om
 Information om hur du hanterar appbehörigheter i Teams finns i [Hantera policyer för appbehörigheter i Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies).
 
 Om du vill att användarna ska visa tjänstledighets- och frånvarokalendern i programmet måste du aktivera **tjänstledighets- och frånvarokalendern i Teams** i funktionshanteringen. Mer information om hur du aktiverar funktioner finns i [Hantera funktioner](hr-admin-manage-features.md).
+
+## <a name="update-app"></a>Uppdateringsapp
+>[!NOTE]
+> Från och med 20 december 2021 kommer Personal-app för robottjänster som finns i Microsofts innehavare att inaktiveras. Det påverkar inte något aktuellt filnamnstillägg (version 1.1.5) som är tillgängligt för installation. Huvudpåverkan kommer att få på det inaktuella filnamnstillägget (version 1.1.4). Chattroboten i den här versionen slutar att fungera. Fliken **ledighet** fortsätter att fungera i båda tilläggen.
+
+För version 1.1.4 slutar chattroboten med att besvara ett meddelande. Till exempel, **Logga in**, **Visa saldon** och **Visa ledighet**. Programmet måste uppdateras manuellt till den senaste versionen. Mer information finns i [Uppdatera appar i Microsoft Teams](/MicrosoftTeams/apps-update-experience).
+
+Uppdatera till version 1.1.5 genom att utföra följande steg:
+1. I Microsoft Teams, gå till **Appar**.
+2. Hitta appen **Human Resources**.
+3. Välj **Uppgradering**.
+
+Du kan kontrollera versionen av programmet Personal genom att antingen gå till fliken **Om** eller genom att gå till avsnittet **Privat app**. 
+
+![Personal fliken **Om**.](./media/HR-teams-about.png)
 
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Aktivera meddelanden för Personal-appen i Teams
 

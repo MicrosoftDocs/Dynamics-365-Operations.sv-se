@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ddfac7106eb0e8b934516ca10e3950891d10910a2ccdef1868faf25812243159
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9e0475aab452daa9e1a6f012e17a59e611010da
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726571"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920483"
 ---
 # <a name="decimal-rounding-of-the-physical-updating-quantity-is-incorrect"></a>Decimalavrundning för den fysiska uppdateringskvantiteten blir fel
 
@@ -49,10 +49,10 @@ Använd följande procedurer för att granska dina lastrader och gör justeringa
 
 1. Gå till **Warehouse management \> Laster \> Alla laster**.
 1. Välj den beläggning som följesedel inte kan genereras för.
-1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Återför leveransbekräftelse**.
-1. På fliken  **Lastrader** väljer du lastraden för den artikel som orsakar ett problem.
+1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Återför leveransbekräftelse**.
+1. På fliken **Lastrader** väljer du lastraden för den artikel som orsakar ett problem.
 1. Välj **Minska plockad kvantitet** om du vill justera den plockade kvantiteten.
-1. På fliken  **Radinformation** väljer du **Order**.
+1. På fliken **Radinformation** väljer du **Order**.
 1. I fältet **Kvantitet** anger du värdet för den plockade kvantiteten (det vill säga värdet för **Arbetsskapad kvantitet**), så att generering av följesedel kan fortsätta.
 
 ### <a name="review-your-load-lines-and-make-adjustments-to-ensure-that-the-unit-and-quantity-are-aligned-with-the-decimal-precision-of-the-unit"></a>Granska beläggningsraderna och gör justeringar för att se till att enheten och kvantiteten stämmer överens med antalet decimaler för enheten.

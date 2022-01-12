@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 187363db3030ee0741f0c7e7746295b88320162c156120112332bb78593bb673
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d767fdce861ccb481a3fe289480a51a7534dc207
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744664"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920234"
 ---
 # <a name="physical-remaining-quantity-in-the-unit-must-not-be-zero"></a>Fysisk resterande kvantitet i enheten får inte vara noll
 
@@ -63,10 +63,10 @@ Använd följande procedurer för att granska dina lastrader och gör justeringa
 
 1. Gå till **Warehouse management \> Laster \> Alla laster**.
 1. Välj den beläggning som följesedel inte kan genereras för.
-1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Återför leveransbekräftelse**.
-1. På fliken  **Läs in rader** markerar du inläsningsraden för den artikel som överskrider överleverans.
+1. I åtgärdsfönstret, på fliken **Leverera och ta emot** i gruppen **Återför** välj **Återför leveransbekräftelse**.
+1. På fliken **Läs in rader** markerar du inläsningsraden för den artikel som överskrider överleverans.
 1. Välj **Minska plockad kvantitet** om du vill justera den plockade kvantiteten.
-1. På fliken  **Radinformation** väljer du **Order**.
+1. På fliken **Radinformation** väljer du **Order**.
 1. I fältet **Kvantitet** anger du värdet för den plockade kvantiteten (det vill säga värdet för **Arbetsskapad kvantitet**), så att generering av följesedel kan fortsätta.
 
 ### <a name="review-your-load-lines-and-make-adjustments-to-ensure-that-the-unit-and-quantity-are-aligned-with-the-decimal-precision-of-the-unit"></a>Granska beläggningsraderna och gör justeringar för att se till att enheten och kvantiteten stämmer överens med antalet decimaler för enheten.

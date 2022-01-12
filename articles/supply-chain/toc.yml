@@ -4,6 +4,34 @@
       items:
         - name: Dynamics 365 Supply Chain Management startsida
           href: index.md
+        - name: Nyheter och ändringar
+          items:
+            - name: Nyheter och ändringar i Finance and Operations-appar
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Nyheter eller ändringar i Supply Chain Management
+              items:
+                - name: Nyheter och ändringar på Supply Chain Managements startsida
+                  href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.24 (februari 2022)
+                  href: get-started/whats-new-scm-10-0-24.md
+                - name: Supply Chain Management 10.0.23 (januari 2022)
+                  href: get-started/whats-new-scm-10-0-23.md
+                - name: Supply Chain Management 10.0.22 (november 2021)
+                  href: get-started/whats-new-scm-10-0-22.md
+                - name: Supply Chain Management 10.0.21 (oktober 2021)
+                  href: get-started/whats-new-scm-10-0-21.md
+            - name: Borttagna eller inaktuella funktioner
+              items:
+                - name: Borttagna eller inaktuella funktioner – startsida
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Borttagna eller inaktuella funktioner i Dynamics 365 Supply Chain Management
+                  href: get-started/removed-deprecated-features-scm-updates.md
+                - name: Borttagna eller inaktuella funktioner i tidigare versioner
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+            - name: AX 2012-funktioner som har senarelagts
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
         - name: Kom i gång
           items:
             - name: Tjänstbeskrivning
@@ -60,36 +88,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Köp Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurera lagerhållning för lokala distributioner
+                - name: Konfigurera Lagerhållning för lokala distributioner
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Nyheter och ändringar
-              items:
-                - name: Nyheter och ändringar i Finance and Operations-appar
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Nyheter eller ändringar i Supply Chain Management
-                  items:
-                    - name: Nyheter och ändringar på Supply Chain Managements startsida
-                      href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.24 (februari 2022)
-                      href: get-started/whats-new-scm-10-0-24.md
-                    - name: Supply Chain Management 10.0.23 (januari 2022)
-                      href: get-started/whats-new-scm-10-0-23.md
-                    - name: Supply Chain Management 10.0.22 (november 2021)
-                      href: get-started/whats-new-scm-10-0-22.md
-                    - name: Supply Chain Management 10.0.21 (oktober 2021)
-                      href: get-started/whats-new-scm-10-0-21.md
-                - name: Borttagna eller inaktuella funktioner
-                  items:
-                    - name: Borttagna eller inaktuella funktioner – startsida
-                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Borttagna eller inaktuella funktioner i Dynamics 365 Supply Chain Management
-                      href: get-started/removed-deprecated-features-scm-updates.md
-                    - name: Borttagna eller inaktuella funktioner i tidigare versioner
-                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
-                - name: AX 2012-funktioner som har senarelagts
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dokumentationsresurser
               items:
                 - name: Hjälpsystem
@@ -1617,6 +1617,8 @@
                   href: inventory/inventory-visibility-reservations.md
                 - name: 'Offentliga API:er för lagersynlighet'
                   href: inventory/inventory-visibility-api.md
+                - name: Lagersynlighetstips
+                  href: inventory/inventory-visibility-tips.md
         - name: IoT-intelligens
           items:
             - name: IoT-intelligens – startsida
@@ -2829,9 +2831,9 @@
               href: sales-marketing/tasks/create-new-trade-agreement.md
             - name: Förbättringar av prestanda för rensning av försäljningshistorik
               href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
-        - name: Servicehantering
+        - name: Tjänsthantering
           items:
-            - name: Sevicehantering – översikt
+            - name: Tjänsthantering – översikt
               href: service-management/service-management-home-page.md
             - name: Ställa in kundtjänst
               items:
@@ -3573,7 +3575,9 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Huvudplanering
               items:
-                - name: Strukturlistenedbrytning fungerar på olika sätt för bekräftad och uppskattad tillverkningsorder
+                - name: Systemet kan inte hitta en planerad order vid arbete på flera order
+                  href: troubleshooting/planning/planned-order-not-exist.md
+                - name: Strukturlistenedbrytning fungerar på olika sätt för bekräftad och uppskattad produktionsorder
                   href: troubleshooting/planning/bom-explosion-works-differently.md
                 - name: Fördröjningsvärdet uppdateras inte när du omplanerar en planerad order
                   href: troubleshooting/planning/delay-value-not-updated.md

@@ -1,8 +1,8 @@
 ---
 title: Skapa in en kravbrevsserie
 description: Använd den här proceduren när du vill skapa en kravbrevsserie.
-author: abruer
-ms.date: 07/22/2019
+author: JodiChristiansen
+ms.date: 12/07/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfc5bd0b1228ef28631da8746b2eb60e4cf488c1
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753596"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921235"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Skapa in en kravbrevsserie
 
@@ -31,10 +31,10 @@ Använd den här proceduren när du vill skapa en kravbrevsserie. I den här upp
 3. Ange sekvens-ID för att representera sekvensen i fältet **Kravbrevsserie**. Detta kan användas, när du ställer in en bokföringsprofil.
 4. I fältet **Beskrivning** anger du ett värde.  Betalningsvillkoren är valfri. Om du anger ett värde här, ska kravbrevsavgift fakturan använda dessa betalningsvillkor istället för de betalningsvillkor som lagras med kunden.  
 5. I fältet **kravbrevskod** väljer du koden för det första kravbrev som du vill skicka. Det första kravbrevet skapas med hjälp av förfallodatumet på fakturan, det värde som du anger för respitperioden i fältet och den information som du anger på denna rad.  
-6. I fältet **Beskrivning** anger du ett värde. Valutan för avgiften anpassas till kundens valuta. Denna valutakod kan skilja sig från fakturavalutan.  
-7. Klicka på **Lägg till** om du vill lägga till nästa kravbrev som ska skickas i sekvensen I många fall är det första kravbrevet bara en varning. Du kan lägga till tillägg, om det behövs.  
-8. Välj kod för nästa kravbrev som du vill skicka i sekvensen.
-9. I fältet **Beskrivning** anger du ett värde.
+6. I fältet **Beskrivning** anger du ett värde. 
+7. Valutan för avgiften anpassas till kundens valuta för juridisk person. Denna valutakod kan skilja sig från fakturavalutan.   
+8. Klicka på **Lägg till** om du vill lägga till nästa kravbrev som ska skickas i sekvensen I många fall är det första kravbrevet bara en varning. Du kan lägga till tillägg, om det behövs.  
+9. I fältet **kravbrevskod** väljer du nästa kravbrev som du vill skicka i sekvensen.
 10. Välj intäktskontot som ska användas för tillägg i fältet **huvudkonto**.
 11. Ange den avgift som debiteras kravbrev, när den bokförs.
 12. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Artikelmomsgrupp**. Ange en artikelmomsgrupp, om moms måste beräknas på avgiften.  

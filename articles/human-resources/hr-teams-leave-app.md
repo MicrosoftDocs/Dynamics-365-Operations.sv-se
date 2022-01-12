@@ -2,7 +2,7 @@
 title: Hantera ansökningar om ledighet i Teams
 description: I det här avsnittet beskrivs hur du begär ledighet i Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 10538c96a7637a95c60beef40a02fdb5432959ec
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: d004e33d01dbd171626d7e23f93df081bc0210a9
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771541"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924757"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Hantera begäranden om ledighet i Teams
 
@@ -35,6 +35,9 @@ Du hittar appen Dynamics 365 Human Resources i Teams-butiken.
 1. I Microsoft Teams, navigera till listan med appar.
  
 2. Sök efter Dynamics 365 Human Resources och välj sedan panelen **Personal**.
+
+> [!NOTE]
+> Från och med 20 december 2021 kommer Personal-app för robottjänster (version 1.1.4) som finns i Microsofts innehavare att inaktiveras. Det senaste filnamnstillägget (version 1.1.5) är tillgängligt för installation. Mer information finns i [Hantera ansökan om tjänstledighet i Teams](hr-admin-teams-leave-app.md#update-app).
 
 3. Välj knappen **Lägg till** om du vill installera appen.
 

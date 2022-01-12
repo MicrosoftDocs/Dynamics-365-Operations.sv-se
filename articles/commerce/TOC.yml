@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (november 2021)
                       href: get-started/whats-new-commerce-10-0-22.md
-                    - name: Commerce 10.0.21 (oktober 2021)
-                      href: get-started/whats-new-commerce-10-0-21.md
                 - name: Borttagna eller inaktuella funktioner
                   items:
                     - name: Borttagna eller inaktuella funktioner – startsida
@@ -836,13 +834,13 @@
                   href: tasks/define-loyalty-reward-points.md
                 - name: Definiera bonusscheman
                   href: tasks/define-loyalty-schemes.md
-                - name: Bearbeta justeringar av bonusbelöningspoäng
+                - name: Bearbeta justeringar av förmånsbelöningspoäng
                   href: tasks/process-loyalty-reward-point-adjustments.md
         - name: Hantera din ekonomi
           items:
             - name: Översikt över utdrag
               href: retail-statements.md
-            - name: Konsekvenskontroll av transaktion
+            - name: Validera butikstransaktioner för utdragsberäkning
               href: valid-checker.md
             - name: Inaktivera regler i konsekvenskontrollen för butikstransaktioner
               href: disable-consistency-check-rule.md
@@ -1286,6 +1284,8 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Ställa in räkenskapsintegration för Commerce-kanal
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: Ställ in bygg-pipeline för exempel på räkenskapsintegration
+              href: localizations/fiscal-integration-sample-build-pipeline.md
             - name: Användardefinierade certifikatprofiler för butiker
               href: localizations/certificate-profiles-for-retail-stores.md
             - name: Regulatory Configuration Service (RCS)
@@ -1322,6 +1322,8 @@
               items:
                 - name: Exempel på skatteregistreringstjänst för Österrike
                   href: localizations/emea-aut-fi-sample.md
+                - name: Distributionsriktlinjer för exempel på räkenskapsintegration för Österrike (äldre)
+                  href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brasilien
               items:
                 - name: Commerce-lokalisering för Brasilien
@@ -1358,12 +1360,16 @@
                   items:
                     - name: Exempel på skatteregistreringstjänsten för Tjeckien
                       href: localizations/emea-cze-fi-sample.md
+                    - name: Distributionsriktlinjer för exempel på räkenskapsintegration för Republiken Tjeckien (äldre)
+                      href: localizations/emea-cze-fi-sample-sdk.md
                 - name: Polen
                   items:
                     - name: Exempel på integrering av kvittoskrivare för Polen
                       href: localizations/emea-pol-fpi-sample.md
                     - name: Hantering av kundinformation för Polen
                       href: localizations/emea-pol-customer-information.md
+                    - name: Distributionsriktlinjer för exempel på räkenskapsintegration för Polen (äldre)
+                      href: localizations/emea-pol-fpi-sample-sdk.md
             - name: Frankrike
               items:
                 - name: Funktioner för kassaapparat
@@ -1378,8 +1384,10 @@
                   href: localizations/emea-fra-deployment.md
             - name: Tyskland
               items:
-                - name: Exempel på skatteregistreringstjänsten för Tyskland
+                - name: Exempel på integration av skatteregistreringstjänst för Tyskland
                   href: localizations/emea-deu-fi-sample.md
+                - name: Distributionsriktlinjer för exempel på räkenskapsintegration för Tyskland (äldre)
+                  href: localizations/emea-deu-fi-sample-sdk.md
             - name: Indien
               items:
                 - name: Integrering av moms (GST) för varor och tjänster för kassaapparater
@@ -1398,6 +1406,8 @@
                   href: localizations/emea-ita-fpi-sample.md
                 - name: Hantering av kundinformation för Italien
                   href: localizations/emea-ita-customer-information.md
+                - name: Distributionsriktlinjer för exempel på räkenskapsintegration för Italien (äldre)
+                  href: localizations/emea-ita-fpi-sample-sdk.md
             - name: Mexiko
               items:
                 - name: Globala CFDI e-fakturor för Mexiko
@@ -1407,6 +1417,8 @@
                 - name: Funktioner för kassaapparat
                   href: localizations/emea-nor-cash-registers.md
                 - name: Riktlinjer för distribution av kassaapparater
+                  href: localizations/emea-nor-fi-deployment.md
+                - name: Riktlinjer för distribution av kassaapparater (äldre)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Ryssland
               items:
@@ -1432,6 +1444,8 @@
                   href: localizations/emea-swe-cash-registers.md
                 - name: Exempel på integration av styrenhet för Sverige
                   href: localizations/emea-swe-fi-sample.md
+                - name: Distributionsriktlinjer för exempel på integration av styrenhet för Sverige (äldre)
+                  href: localizations/emea-swe-fi-sample-sdk.md
                 - name: Exempel för Retail POS-integration med styrenheter (äldre)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Rapportering och Power BI-integrationer
@@ -2464,8 +2478,10 @@
                       href: e-commerce-extensibility/globalize-modules.md
                     - name: Konfigurera Azure Key Vault för säker nyckelhantering
                       href: e-commerce-extensibility/set-up-key-vault.md
-                    - name: Skapa en begärandehook för plugin-program för försäljningsförlopp
+                    - name: Skapa en insticksfil för hook till begäran-pipeline
                       href: e-commerce-extensibility/request-pipeline-hook.md
+                    - name: Bildkomponent
+                      href: e-commerce-extensibility/image-component.md
                 - name: Utveckla dataåtgärder
                   items:
                     - name: Översikt över dataåtgärder
@@ -2570,10 +2586,12 @@
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
                 - name: Utveckling i molnstyrda miljöer utan administratörsåtkomst
                   href: dev-itpro/cloud-dev-box.md
-                - name: Konfigurera versionspipeline för SDK för Commerce
+                - name: Konfigurera bygg-pipeline till SDK för Commerce
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
                 - name: Hämta exempel och paket från GitHub och NuGet
                   href: dev-itpro/retail-sdk/sdk-github.md
+                - name: Konfigurera en Visual Studio 2017 versionsagent för att skapa Modern POS
+                  href: dev-itpro/retail-sdk/mpos-build-agent.md
                 - name: Vanliga frågor och svar om SDK för Retail
                   href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Utbyggbarhet för kassa
