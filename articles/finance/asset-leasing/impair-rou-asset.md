@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fd79880dc8aa77eea8c16f350c0853013c6ad17b
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: b104cec399a368ada64a73688c42476e6fbd9e52
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890840"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947350"
 ---
 # <a name="impair-right-of-use-assets"></a>Skriva ner tillgångar med nyttjanderätt
 
@@ -44,6 +44,8 @@ Det återstående saldot för ROU-tillgången kommer att amorteras på ett linj�
 
     > [!NOTE]
     > När nedskrivningstransaktionen har bokförts skapas en ny bokversion.
+
+    > Om leasingavtalet är klassificerat som ett rörelseleasing kommer den månatliga avskrivningen efter nedskrivningen att beräknas med hjälp av beräknad linjär avskrivning.
 
 9. Om du vill visa avskrivningsplanen för den nedskrivna tillgången öppnar du avskrivningsplanen för tillgången för den leasingboken. Tillgången avskrivs nu på linjär basis över det antal månader som du har angett i fältet **Återstående perioder**.
 10. Om du vill visa journalposten för nedskrivningsutgift väljer du **Journal för leasing av tillgång** i åtgärdsfönstret för den nedskrivna leasingboken. Systemet skapar en post i redovisningsjournalen som debiterar bokföringskontot för nedskrivningsutgiften och krediterar bokföringskontot för leasingtillgången. 
@@ -100,6 +102,7 @@ I följande tabeller visas de värden som är inställda på flikarna **Allmänt
     | Stäng bok             | Nej       |
 
 6. En journalpost för nedskrivningsutgift har skapats och bokförts. Om du vill visa den går du till tillgångens leasingjournal i leasingboken. Observera att beloppet för nedskrivningen debiterades bokföringskontot för nedskrivningsutgift, och bokföringskontot för ROU-tillgången krediterades.
+
 7. Om du vill visa nettoeffekten av nedskrivningen går du till tabellerna skuld- och tillgångstransaktioner. Observera att nedskrivningsutgifterna har minskat ROU-tillgången, men det bokförda värdet för leasingskulden inte har ändrats.
 
 Nedskrivningen har en annan effekt som du bör tänka på. Eftersom ROU-tillgångsbeloppet nu är mycket mindre än leasingskulden, måste beloppet avskrivas på ett annat sätt än tidigare. Tillgången avskrivs nu på linjärt sätt under de återstående 84 månaderna av leasingen, med början på transaktionsdatumet.

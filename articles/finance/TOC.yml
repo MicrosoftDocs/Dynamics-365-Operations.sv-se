@@ -1048,7 +1048,7 @@
                   href: general-ledger/tasks/close-fiscal-year.md
                 - name: Masstäng räkenskapsperiod
                   href: general-ledger/tasks/mass-financial-period-close.md
-                - name: Vanliga frågor och svar om aktiviteter för årsavslut
+                - name: Vanliga frågor och svar om aktiviteter för årsbokslut
                   href: general-ledger/faq-year-end-activities.md
             - name: Moms
               items:
@@ -1208,10 +1208,12 @@
               items:
                 - name: Konfigurera Finance Insights
                   href: finance-insights/configure-for-fin-insites.md
-                - name: Aktivera förutsägelser för kundbetalning
+                - name: Aktivera kundbetalningsförutsägelser
                   href: finance-insights/enable-cust-paymnt-prediction.md
                 - name: Aktivera kassaflödesprognoser
                   href: finance-insights/enable-cash-flow-forecasting.md
+                - name: Externa data i kassaflödesprognoser
+                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Aktivera budgetförslag
                   href: finance-insights/enable-budget-proposal.md
                 - name: Skapa projekt för dataintegrerare
@@ -1232,13 +1234,11 @@
                   href: finance-insights/budget-proposals.md
                 - name: Kassaposition
                   href: finance-insights/cash-position.md
-                - name: Kassaflödesprognos
+                - name: Kassaprognos
                   href: finance-insights/cash-flow-forecast-intro.md
-                - name: Använd externa data i kassaflödesprognoser
-                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Kundbetalningsförutsägelser
                   href: finance-insights/payment-insights-overview.md
-                - name: Använda förutsägelser för kundbetalning
+                - name: Använd kundbetalningsförutsägelser
                   href: finance-insights/use-customer-payment-predictions.md
                 - name: Översikt över ögonblicksbilder
                   href: finance-insights/payment-snapshots.md
@@ -1432,6 +1432,8 @@
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Kom i gång med elektronisk fakturering för Saudiarabien
                           href: localizations/e-invoicing-sa-get-started.md
+                        - name: Inställningar för direkt integration av italiensk FatturaPA med SDI
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: Använd tjänsten för elektronisk fakturering för att importera leverantörsfakturor
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Ställ in elektronisk fakturering
@@ -1512,6 +1514,10 @@
                           items:
                             - name: Momsdeklaration
                               href: localizations/emea-gbr-vat-declaration.md
+                        - name: Rapportering för Norge
+                          items:
+                            - name: Momsdeklaration
+                              href: localizations/emea-nor-vat-declaration.md
                     - name: Aktivera momsberäkning för överföringsorder
                       items:
                         - name: Momsfunktionstöd för överföringsorder
@@ -1557,7 +1563,7 @@
                 - name: Momsutdrag
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Rapport för gränsöverskridande tjänster
-                  href: localizations/emea-aut-vat-statement-details.md
+                  href: localizations/emea-aut-cross-border-services-report.md
                 - name: Österrikisk Intrastat
                   href: localizations/emea-aut-intrastat.md
                 - name: Inköpsavgifter
@@ -1824,7 +1830,7 @@
                   href: localizations/tasks/golden-tax-integration-export-setup.md
                 - name: Avskrivningsmetoder för anläggningstillgångar
                   href: localizations/apac-chn-depreciation-methods-fixed-assets.md
-                - name: Importera datatabellen Chinese Golden Tax
+                - name: Importera kinesiska mervärdesskattefiler
                   href: localizations/apac-chn-import-golden-tax-data-entity.md
                 - name: 'Månatlig, genomsnittlig kostnadsmodell'
                   href: localizations/apac-chn-monthly-average-cost-model.md
@@ -2088,6 +2094,8 @@
                   href: localizations/finland.md
                 - name: Momsbetalningsrapport för Finland
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
+                - name: Finsk Intrastat
+                  href: localizations/emea-fin-intrastat.md
             - name: Frankrike
               items:
                 - name: Frankrike – översikt
@@ -2610,6 +2618,8 @@
                   href: localizations/apac-idn-invoicing.md
                 - name: Momsdeklaration för Indonesien
                   href: localizations/apac-idn-ppn-declaration.md
+                - name: Källskatterapport för Indonesien
+                  href: localizations/apac-idn-wht-declaration.md
             - name: Italien
               items:
                 - name: Italien – översikt

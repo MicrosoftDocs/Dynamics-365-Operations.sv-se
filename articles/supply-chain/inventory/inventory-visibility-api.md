@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: d676191f921d74a5a0ced934f3692dacbe7cd7b4
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 92c427d3063c34f263d5bc449be6fac695b5912d
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920128"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952637"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentliga API:er för Lagersynlighet
 
@@ -48,6 +48,8 @@ Microsoft har tillhandahållit en färdig *brevbärar*-begärandesamling. Du kan
 
 > [!NOTE]
 > Delen {environmentId} av sökvägen är miljö-ID:t i Microsoft Dynamics Lifecycle Services (LCS).
+> 
+> Bulk-API:t kan returnera maximalt 512 poster för varje begäran.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Hitta slutpunkten enligt Lifecycle Services-miljön
 
@@ -249,7 +251,7 @@ Följande exempel visar brödtext utan `dimensionDataSource`. I detta fall är `
 
 ### <a name="create-multiple-change-events"></a><a name="create-multiple-onhand-change-events"></a>Skapa flera ändringshändelser
 
-Detta API kan skapa flera poster samtidigt. De enda skillnaderna mellan denna API och [en API med enskild](#create-one-onhand-change-event) är värden `Path` och `Body`. För detta API tillhandahåller `Body` en matris av poster.
+Detta API kan skapa flera poster samtidigt. De enda skillnaderna mellan denna API och [en API med enskild](#create-one-onhand-change-event) är värden `Path` och `Body`. För detta API tillhandahåller `Body` en matris av poster. Det maximala antalet poster är 512, vilket innebär att bulk-API:t för behållningsändring kan stödja upp till 512 ändringshändelser åt gången.
 
 ```txt
 Path:

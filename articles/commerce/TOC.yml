@@ -2478,8 +2478,6 @@
                       href: e-commerce-extensibility/globalize-modules.md
                     - name: Konfigurera Azure Key Vault för säker nyckelhantering
                       href: e-commerce-extensibility/set-up-key-vault.md
-                    - name: Skapa en insticksfil för hook till begäran-pipeline
-                      href: e-commerce-extensibility/request-pipeline-hook.md
                     - name: Bildkomponent
                       href: e-commerce-extensibility/image-component.md
                 - name: Utveckla dataåtgärder

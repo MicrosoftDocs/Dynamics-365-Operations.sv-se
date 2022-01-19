@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d6f58eab38d1aee97a5d39704255bf06a168b36c
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 26f8820fe707b8a2dff0dcc1a24884ef02e5616f
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581875"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952506"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Installera och konfigurera Lagersynlighet
 
@@ -71,6 +71,9 @@ När du har registrerat ett program och lagt till en klienthelighet i Azure AD f
 1. Godkänn villkoren genom att markera kryssrutan **Villkor**.
 1. Välj **Installera**. Tilläggets status visas som **Installerar**. När installationen är slutförd uppdaterar du sidan. Statusvärdet ska ändras till **Installerad**.
 1. I avsnittet Dataverse, välj **Appar** i den vänstra navigeringen och kontrollera att **lagrets synlighet** Power Apps har installerats. Om avsnittet **Appar** inte finns kontaktar du produktteamet för Lagersynlighet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
+
+> [!TIP]
+> Vi rekommenderar att du deltar i användargruppen Lagersynlighet information, där du kan hitta användbara guider, få tillgång till de senaste uppdateringarna och besvara eventuella frågor som du kan ha om hur du använder lagersynlighet. För att gå med, skicka e-post till produktteamet för lagersynlighet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) och inkludera Supply Chain Management miljö-ID.
 
 > [!IMPORTANT]
 > Om du har fler än en LCS-miljö kan du skapa olika Azure AD-program för varje miljö. Om du använder samma program-ID och klientorganisations-ID för att installera tillägget Lagersynligt för olika miljöer, uppstår ett tokenproblem för äldre miljöer. Endast det sista som installerades kommer att vara giltigt.

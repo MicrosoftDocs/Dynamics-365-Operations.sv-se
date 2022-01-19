@@ -2,7 +2,7 @@
 title: Kom i gång med skatteberäkning
 description: Detta ämne förklarar hur du ställer in skatteberäkningen.
 author: wangchen
-ms.date: 10/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,31 +15,74 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2f26f8e5eafe29e88c26d3fb6cfa950466ec6be9
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647444"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952531"
 ---
 # <a name="get-started-with-tax-calculation"></a>Kom i gång med momsberäkning
 
 [!include [banner](../includes/banner.md)]
 
-Detta ämne innehåller information om hur du kommer igång med skatteberäkningen. Det guidar dig genom konfigurationsstegen i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance och Dynamics 365 Supply Chain Management. Därefter granskas den gemensamma processen för att använda funktionerna för skatteberäkning i transaktioner för Finance och Supply Chain Management.
+Detta ämne innehåller information om hur du kommer igång med skatteberäkningen. Avsnitten i det här ämnet guidar dig genom design- och konfigurationsstegen på hög nivå i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) och Dynamics 365 Finance och Dynamics 365 Supply Chain Management. 
 
-Inställningen består av fyra huvudsteg:
+Inställningen består av tre huvudsteg.
 
 1. I LCS installerar du tillägget för momsberäkning.
 2. Ställ in funktionen för skatteberäkning i RCS. Denna inställning är inte specifika för en juridisk person. Det kan delas av juridiska personer i Finance och Supply Chain Management.
 3. I Finance och Supply Chain Management ställer du in parametrar för skatteberäkningar per juridisk person.
-4. I Finance och Supply Chain Management skapar du transaktioner som exempelvis försäljningsorder och använder skatteberäkningen för att bestämma och beräkna skatter.
+
+## <a name="high-level-design"></a>Design på hög nivå
+
+### <a name="runtime-design"></a>Körtidsdesign
+
+Följande illustration visar körtidsdesignen på hög nivå för skatteberäkning. Eftersom momsberäkning kan integreras med flera Dynamics 365-program, används integrationen med Finance som ett exempel i illustrationen.
+
+1. En transaktion, till exempel en försäljningsorder eller inköpsorder, skapas i Finance.
+2. I Ekonomi används automatiskt standardvärdena för momsgruppen och artikelmomsgruppen.
+3. När knappen **Moms** väljs i transaktionen, utlöses momsberäkningen. Ekonomi skickar sedan nyttolast till beräkningstjänsten.
+4. Beräkningstjänsten för moms matchar nyttolasten med fördefinierade regler i momsfunktionen för att hitta en mer korrekt momsgrupp och artikelskattegrupp samtidigt.
+
+    - Om nyttolasten kan matchas med matrisen **Tillämplighet för momsgrupp** åsidosätter den värdet för momsgruppen med det matchade momsgruppsvärdet i tillämplighetsregeln. Annars fortsätter programmet att använda momsgruppsvärdet från Finance.
+    - Om nyttolasten kan matchas med matrisen **Tillämplighet för artikelmomsgrupp** åsidosätter den värdet för artikelmomsgrupp med det matchade artikelmomsgruppvärdet i tillämplighetsregeln. Annars fortsätter programmet att använda artikelmomsgruppsvärdet från Finance.
+
+5. Skatteberäkningstjänsten bestämmer de slutliga momskoderna genom att använda skärningspunkten mellan momsgruppen och artikelmomsgruppen.
+6. Beräkningstjänsten beräknar moms baserat på de slutgiltiga momskoderna som den har bestämt.
+7. Momsberäkningstjänsten returnerar momsberäkningsresultatet till Finance.
+
+![Design för körningstid för momsberäkning.](media/tax-calculation-runtime-logic.png)
+
+### <a name="high-level-configuration"></a>Konfiguration på hög nivå
+
+Följande steg ger en överblick över konfigurationsprocessen för Skatteberäkningstjänst.
+
+1. I LCS installerar du tillägget för **momsberäkning** i LCS-projekt.
+2. Ställ in funktionen för **skatteberäkning** i RCS.
+3. Ställ in funktionen för **skatteberäkning** i RCS:
+
+    1. Välj skattekonfigurationsversionen.
+    2. Skapa taxkoder.
+    3. Skapa en skattegrupp.
+    4. Skapa en artikelmomsgrupp.
+    5. Valfritt: Tillämplighet för momsgrupp om du vill åsidosätta standard momsgruppen som anges från huvuddata för kunder eller leverantörer.
+    6. Valfritt: Tillämplighet för artikelgrupp om du vill åsidosätta standard artikelmomsgruppen som anges från artikelns huvuddata.
+
+4. I RCS, fyll i och publicera **Momsberäkning**.
+5. I Finans, välj den publicerade **Momsberäkning**.
+
+När du har slutfört de här stegen synkroniseras följande inställningar automatiskt från RCS till Finance.
+
+- Momskoder
+- Momsgrupper
+- Artikelmomsgrupper
+
+De återstående avsnitten i det här ämnet innehåller mer detaljerade konfigurationssteg.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Innan du kan slutföra procedurerna i detta ämne måste följande förutsättningar finnas på plats för respektive miljötyp:
-
-Följande förutsättningar måste uppfyllas:
+Innan du kan slutföra de återstående procedurerna i det här ämnet måste följande förutsättningar vara uppfyllda:<!--TO HERE-->
 
 - Du måste ha tillgång till ditt LCS-konto samt ha distribuerat ett LCS-projekt med en nivå 2-miljö (eller högre) som kör Dynamics 365 version 10.0.21 eller senare.
 - Du måste skapa en RCS-miljö för organisationen och ha åtkomst till ditt konto. Mer information om hur du skapar en RCS-miljö finns i [Översikten över Regulatory Configuration Service](rcs-overview.md).
@@ -72,15 +115,7 @@ Stegen i det här avsnittet är inte relaterade till någon specifik juridisk pe
 5. Välj **Typ** i fältet **Global**.
 6. Välj **Öppen**.
 7. Gå till **Skattedatamodell**, expandera filträdet och välj sedan **Skattekonfiguration**.
-8. Välj korrekt momskonfigurationsversion, baserat på din Finance-version, och välj sedan **Importera**.
-
-    | Slutversion | Momskonfiguration                       |
-    | --------------- | --------------------------------------- |
-    | 10.0.18         | Momskonfiguration - Europa 30.12.82     |
-    | 10.0.19         | Momsberäkningskonfiguration 36.38.193 |
-    | 10.0.20         | Momsberäkningskonfiguration 40.43.208 |
-    | 10.0.21         | Momsberäkningskonfiguration 40.48.215 |
-
+8. Välj korrekt [momskonfigurationsversion](global-tax-calcuation-service-overview.md#versions), baserat på din Finance-version, och välj sedan **Importera**.
 9. I arbetsytan **Globaliseringsfunktioner** väljer du **Funktioner** > panelen **Skatteberäkning** och sedan **Lägg till**.
 10. Välj en av följande funktionstyper:
 
@@ -209,42 +244,3 @@ Inställningarna i det här avsnittet görs av en juridisk person. Du måste kon
 
 5. På fliken **Multipel momsregistrering** kan du aktivera momsdeklarering, EU-försäljningslista samt Intrastat separat så att dessa används i ett scenario med flera olika momsregistreringar. Mer information om momsrapportering för flera momsregistreringar finns i [Rapportering för flera momsregistreringar](emea-reporting-for-multiple-vat-registrations.md).
 6. Spara inställningarna och upprepa föregående steg för respektive ytterligare juridisk person. När en ny version publiceras och du vill tillämpa den ställer du in fältet **Funktionsinställningar** på fliken **Allmänt** på sidan **Parametrar för momsberäkning** (se steg 2).
-
-## <a name="transaction-processing"></a>Bearbetning av transaktion
-
-När du har slutfört alla inställningsprocedurer kan du använda momsberäkningen för att bestämma och beräkna moms i Finance. Stegen för att bearbeta transaktioner förblir desamma. Följande transaktioner stöds i Finance-version 10.0.21:
-
-- Försäljningsprocess
-
-    - Försäljningsoffert
-    - Försäljningsorder
-    - Bekräftelse
-    - Plocklista
-    - Följesedel
-    - Försäljningsfaktura
-    - Kreditfaktura
-    - Returorder
-    - Huvudtillägg
-    - Radtillägg
-
-- Inköpsprocess
-
-    - Inköpsorder
-    - Bekräftelse
-    - Inleveranslista
-    - Produktinleverans
-    - Inköpsfaktura
-    - Huvudtillägg
-    - Radtillägg
-    - Kreditfaktura
-    - Returorder
-    - Inköpsrekvisition
-    - Avgift för inköpsrekvisitionsrad
-    - Anbudsförfrågan
-    - Avgift för anbudsförfråganhuvudet
-    - Avgift för rader i anbudsförfrågan
-
-- Lagerprocess
-
-    - Överföringsorder - leverera
-    - Överföringsorder - ta emot
