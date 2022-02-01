@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ba489358ef2d74e816186f29956aea5538a2432825c7d949e7c9cc23d947b997
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dee16f9d6f8ea583f221a7f6eb466675c8c622d0
+ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714388"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8007617"
 ---
 # <a name="engineering-change-management-faq"></a>Vanliga frågor och svar om konstruktionsändringshantering
 
@@ -63,6 +63,11 @@ I följande register visas de fält som kopieras under de här processerna.
 | **Produktvarianter** | Alla fält i avsnittet **Standardproduktvariant** | Samma fält som kopieras för konstruktionsföretaget |
 
 Förutom de fält som visas i föregående register kopieras alla standardorderinställningar från den frisläppta artikelmallen, både när produkten skapas i konstruktionsföretaget och när den frisläpps till ett operativt företag. (Om du vill visa standardorderinställningarna för en frisläppt artikelmall öppnar du relevant **Frisläppt produktinformation**-sida och väljer sedan i åtgärdsfönstret fliken **Hantera lager** och **Standardorderinställningar**.)
+
+> [!NOTE]
+>
+> - Enheten öppnas som standard från mallen.
+> - För återförsäljare som använder funktionen Dynamics 365 Commerce tillämpar butikskategorin standardvärden i många av fälten på den frisläppta produktnivån när en butikskategori tilldelas en produkt. Dessa standardvärden skriver över standardvärden som redan har ställts in av mallen eller kopierats från teknik.
 
 ## <a name="should-i-create-a-separate-legal-entity-for-engineering-products-or-use-an-existing-legal-entity"></a>Ska jag skapa en separat juridisk person för att skapa konstruktionsprodukter eller använda en befintlig juridisk person?
 

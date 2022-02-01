@@ -2,7 +2,7 @@
 title: Skapa ER-konfigurationer i RCS och överföra dem till den globala databasen
 description: Det här förklarar hur du skapar en elektronisk rapporteringskonfiguration (ER) i Microsoft Regulatory Configuration Services (RCS) och laddar upp den till den globala databasen.
 author: JaneA07
-ms.date: 09/21/2020
+ms.date: 01/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b8be53c415d3b0c0fd057bb0d9c51b391d1c0c7471610c861909344059803441
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb04362d6d7261af56d2940b085fbc8d43c9d662
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727231"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7965099"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Skapa ER-konfigurationer i RCS och överför dem till den globala databasen
 
@@ -32,24 +32,29 @@ Följande procedurer förklarar hur en användare med rollen Systemadministratö
 
 Innan du kan slutföra dessa procedurer måste du först uppfylla följande förutsättningar:
 
-- Öppna en RCS-instans.
-- Skapa en aktiv konfigurationsleverantör. Mer information finns i [Skapa konfigurationsleverantörer och markera dem som aktiva](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+- Har åtkomst till en RCS-miljö för din organisation.
+- Skapa en aktiv konfigurationsleverantör och gör den aktiv. Mer information finns i [Skapa konfigurationsleverantörer och markera dem som aktiva](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-Du måste också säkerställa att en RCS-miljö har etablerats för ditt företag.
+Du måste också säkerställa att en RCS-miljö har etablerats för ditt företag. Om du inte har någon RCS-instans har reserverats för din organisation, kan du göra det med följande steg:
 
-1. I en Finance and Operations-app går du till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
-2. Om ingen RCS-miljö har etablerats för ditt företag väljer du **Regulatory services – extern konfiguration** och följer sedan instruktionerna för att etablera en.
+1. I appen för ekonomi och drift, gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
+2. I **relaterade länkar/externa länkar**, välj **Regulatory services – Konfiguration** och följer sedan instruktionerna för **registrera** för att tillhandahålla en.
 
-Om en RCS-miljö redan har etablerats för ditt företag kan du använda sidans URL för att komma åt den genom att välja alternativet för inloggning.
+Om en RCS-miljö redan har etablerats för ditt företag kan du använda sidans URL för att komma åt den genom att välja alternativet för **inloggning**.
 
 ## <a name="create-a-derived-version-of-a-configuration-in-rcs"></a>Skapa en härledd version av en konfiguration i RCS
 
-1. I arbetsytan **Elektronisk rapportering** bekräftar du att du har en aktiv konfigurationsleverantör för din organisation. 
-2. Välj **rapporteringskonfigurationer**.
-3. Välj den konfiguration som du vill härleda en ny version från. Du kan använda filterfältet ovanför trädet för att begränsa sökresultatet.
-4. Välj **Skapa konfiguration** \> **Härled från namn**.
-5. Ange ett namn och en beskrivning och välj sedan **Skapa konfiguration** för att skapa en ny härledd version.
-6. Välj den nya härledda konfigurationen, lägg till en beskrivning av versionen och välj sedan **OK**. Status för konfigurationen ändras till **Slutförd**.
+> [!NOTE]
+> Om du använder RCS för första gången kommer du inte att ha någon konfiguration tillgänglig som du kan härleda från. Du måste importera en konfiguration från den globala databasen. Mer information finns i [Hämta ER-konfigurationer från den globala databasen med konfigurationstjänster](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+
+1. **Logga in** till RCS och välj arbetsyta **Elektronisk rapportering**.
+2. Kontrollera att du har en aktiv konfigurationsleverantör för din organisation som är inställd på aktiv (se förutsättningar). 
+3. Välj **rapporteringskonfigurationer**.
+4. Välj den konfiguration som du vill härleda en ny version från. Du kan använda filterfältet ovanför trädet för att begränsa sökresultatet.
+5. Välj **Skapa konfiguration** \> **Härled från namn**.
+6. Ange ett namn och en beskrivning och välj sedan **Skapa konfiguration** för att skapa en ny härledd version med status Utkast.
+7. Markera den nya konfiguration som är härledd och gör ytterligare ändringar i konfigurationsformatet om det behövs. 
+8. När ändringarna är slutförda måste du ställa in **Ändra status** för konfigurationen till **Slutförd** för att kunna publicera den i databasen. Välj **OK**.
 
 ![Ny konfigurationsversion i RCS.](media/RCS_CompleteConfig.JPG)
 
@@ -58,7 +63,7 @@ Om en RCS-miljö redan har etablerats för ditt företag kan du använda sidans 
 
 ## <a name="upload-a-configuration-to-the-global-repository"></a>Överför en konfiguration till den globala databasen
 
-Om du vill dela en ny eller härledd konfiguration med din organisation kan du överföra den till den globala databasen.
+Om du vill dela en ny eller härledd konfiguration med din organisation kan du överföra den till den globala databasen genom följande steg:
 
 1. Markera den slutförda versionen av konfigurationen och välj sedan **Överför till databas**.
 2. Markera alternativet **Global (Microsoft)** och välj sedan **Överför**.
@@ -66,9 +71,11 @@ Om du vill dela en ny eller härledd konfiguration med din organisation kan du �
     ![Alternativ för Uppladdning till databas.](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. Markera **Ja** i bekräftelserutan som visas. 
-4. Uppdatera beskrivningen av versionen efter behov och välj sedan **OK**. 
+4. Uppdatera beskrivningen av versionen efter behov och välj sedan **OK**. Om du vill kan du även överföra versionen till ett anslutet program eller till en GIT-databas.  
 
-Konfigurationens status uppdateras till **Delas**, och konfigurationen överförs till den globala databasen. Därifrån kan du arbeta med den på följande sätt:
+Konfigurationens status uppdateras till **Delas**, och konfigurationen överförs till den globala databasen. En utkastversion av konfigurationen som du överfört skapas också och kan användas om efterföljande ändringar krävs.
+
+När konfigurationen har överförts till den globala databasen kan du arbeta med den där på följande sätt:
 
 - Importera den till din Dynamics 365-instans. Mer information finns i [Importera konfigurationer för elektronisk rapportering (ER) från RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
 - För att dela den med en tredje part eller en extern organisation, se [RCS Dela konfigurationer för elektronisk rapportering (ER) med externa organisationer](rcs-global-repo-share-configuration.md)

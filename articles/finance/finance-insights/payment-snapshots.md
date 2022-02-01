@@ -3,7 +3,7 @@ title: Översikt över ögonblicksbilder
 description: Det här ämnet beskriver funktionen för ögonblicksbilder, där du kan spara en kassaflödesprognos för analys eller jämförelse med verkliga värden senare. När du genererar en kassaflödesprognos kan du spara den som en "ögonblicksbild". Du kan sedan använda ögonblicksbilderna för att redigera de konton som inkluderades i prognosen, eller jämföra prognosen i ögonblicksbilden med verkliga värden.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a91300ac17b36d890840e6c0c3104fad5fce68f0
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: f9b6d44b7381817a40b86c17ee4eaf3dbfc46b67
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752777"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983527"
 ---
 # <a name="snapshots-overview"></a>Översikt över ögonblicksbilder
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ögonblicksbilder låter organisationer redigera och spara information om sina kassapositioner och kassaprognoser vid en viss tidpunkt. Du kan jämföra ögonblicksbilden med faktiska ekonomiska värden, undersöka avvikelsen och använda den informationen för att förbättra kassaflödesprognoserna över tiden. Mer specifikt kan ögonblicksbilder kan användas på följande sätt:
 

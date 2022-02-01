@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 25ae7074fcf39bf4408ea1fa0acfc334281bb254
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 443ebaa13d7ac29df66ffe77a2ed938e44a0c488
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675059"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968213"
 ---
 # <a name="enable-manual-publishing-of-ratings-and-reviews-by-a-moderator"></a>Aktivera manuell publicering av omdömen och recensioner genom en moderator
 
@@ -68,3 +68,17 @@ I följande bild visas ett exempel där tre opublicerade omdömen och recensione
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över omdömen och recensioner](ratings-reviews-overview.md)
+
+[Välj att använda omdömen och recensioner](opt-in-ratings-reviews.md)
+
+[Hantera omdömen och recensioner](manage-reviews.md)
+
+[Konfigurera omdömen och recensioner](configure-ratings-reviews.md)
+
+[Synkronisera produktklassificeringar](sync-product-ratings.md)
+
+[Importera och exportera värderingar och granskningar](import-export-reviews.md)
+
+[Konfigurera tjänst-till-tjänst-autentisering](service-to-service-auth.md)
+
+[Vanliga frågor och svar om omdömen och recensioner](ratings-reviews-faq.md)

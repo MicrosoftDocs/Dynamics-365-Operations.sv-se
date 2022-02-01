@@ -3,7 +3,7 @@ title: Datamodell för momsberäkning
 description: Det här ämnet innehåller information om momsdatamodellen och hur fältvärdena i varje datamodell bestäms av sammanhanget för momsberäkningstransaktioner.
 author: kailiang
 ms.date: 10/15/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4b9b3e28b9435e9614b06d4fa2855b31d0e38b41
-ms.sourcegitcommit: 93cc9823016c9f2fd568ada0b670a52c8c3bfa33
+ms.openlocfilehash: 2773efaed9ee30ccb27b35f5aa00515ebba1c84a
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "7864270"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985976"
 ---
 # <a name="tax-calculation-data-model"></a>Datamodell för momsberäkning
 

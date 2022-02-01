@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 89f1716cd71d191f419dfd1fb1db887af62335504724b4f08ead701d7f57efc6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4a9a7fed4393f9c35b0bdc765fe7d0723c193f89
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715466"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964766"
 ---
 # <a name="add-a-copyright-notice"></a>Lägg till copyrightmeddelande
 
@@ -60,13 +60,11 @@ Sidfoten som innehåller copyrightinformationen visas automatiskt längst ner p�
 
 [Lägg till en logotyp](add-logo.md)
 
-[Välj ett tema för webbplatsen](select-site-theme.md)
+[Välja ett tema för webbplatsen](select-site-theme.md)
 
 [Arbeta med CSS åsidosättningsfiler](css-override-files.md)
 
-[Lägg till en favoritikon](add-favicon.md)
-
-[Lägg till ett välkomstmeddelande](add-welcome-message.md)
+[Lägga till en favoritikon](add-favicon.md)
 
 [Lägg till språk på din webbplats](add-languages-to-site.md)
 

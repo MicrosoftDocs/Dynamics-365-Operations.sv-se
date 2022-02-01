@@ -1,68 +1,73 @@
 ---
 title: Utveckla och öppna jobbrekvisition
 description: Med rekryteringsprojekt kan du hantera rekryteringsprocessen.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 01/10/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ae2e42627d7d3dbbc0bde2740e7c017c5858eab8cd825b77a1bc4611a3a4ab7b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a97c2a8bb6c334a5a060fcbfc9527a41ba592750
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738490"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964665"
 ---
 # <a name="develop-and-open-job-requisition"></a>Utveckla och öppna jobbrekvisition
 
 [!include [banner](../../includes/banner.md)]
 
-Med rekryteringsprojekt kan du hantera rekryteringsprocessen. För varje rekryteringsprojekt kan du konfigurera information, till exempel jobbet som rekryteringen gäller, namnet på rekryteraren, projektets status och den avdelning som jobbet ska finns på. När du har skapat ett rekryteringsprojekt, kan du skriva en jobbannons för projektet, publicera annonsen på medarbetarnas självbetjäningssidor, koppla jobbansökningar till projektet och spåra aktiviteter för det här projekt. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Börja proceduren genom att gå till Personal > Rekrytering > Rekryteringsprojekt > Rekryteringsprojekt
+Med rekryteringsprojekt kan du hantera rekryteringsprocessen. För varje rekryteringsprojekt kan du konfigurera information, till exempel jobbet som rekryteringen gäller, namnet på rekryteraren, projektets status och den avdelning som jobbet ska finns på. När du har skapat ett rekryteringsprojekt, kan du skriva en jobbannons för projektet, publicera annonsen på sidan **medarbetarnas självbetjäning,** koppla jobbansökningar till projektet och spåra aktiviteter för det här projekt. Demonstrationsdataföretaget **USMF** har använts för att skapa denna procedur.
 
-1. Klicka på Ny.
-2. Skriv ett värde i fältet Rekryteringsprojekt.
-3. Ange ett värde i fältet Beskrivning.
-4. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Rekryterare.
-5. Hitta och markera önskad post i listan.
-6. Klicka på länken på den valda raden i listan.
-7. Klicka på Välj.
-8. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Avdelning.
-9. Klicka på länken på den valda raden i listan.
-10. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Jobb.
-11. Hitta och markera önskad post i listan.
-12. Klicka på länken på den valda raden i listan.
-13. Ange ett antal i fältet Antal lediga jobb.
-14. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Anställande chef.
-15. Hitta och markera önskad post i listan.
-16. Klicka på länken på den valda raden i listan.
-17. Klicka på Välj.
-18. Ange ett datum i fältet Deadline för ansökning.
-19. Klicka på Media.
-    * Rekryteringsprojekt har alternativ för att ange mediakanaler som ska användas för att annonsera vakanta befattningar.  
-20. Klicka på Ny.
-21. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Media.
-22. Klicka på länken på den valda raden i listan.
-23. Ange ett datum i fältet Startdatum.
-24. Ange ett datum i fältet Slutdatum.
-25. Klicka på Spara.
-26. Stäng sidan.
-27. Klicka på Platsannonser.
-28. Klicka på Spara.
-29. Stäng sidan.
-30. Markera eller avmarkera kryssrutan Visa i självbetjäningen för medarbetare.
-    * Markera kryssrutan Visa i självbetjäningen för medarbetare om du vill göra rekryteringsprojektet synligt för medarbetare på deras medarbetarsjälvbetjäningssidor.  
-31. Klicka på Rekryteringsprojektets status.
-32. Klicka på Start.
-    * Statusen Startad innebär att projektet är redo att ta emot ansökningar.  
-33. Klicka på OK.
+1. Gå till **Personal \> Rekrytering \> Rekryteringsprojekt \> Rekryteringsprojekt**.
+2. Välj **Ny**.
+3. I fältet **Rekryteringsprojekt** anger du ett värde.
+4. I fältet **Beskrivning** anger du ett värde.
+5. I fältet **Rekryterare** väljer du pilen för rullgardinsmenyn för att öppna sökningen.
+6. Hitta och markera önskad post i listan.
+7. Klicka på länken på önskad rad i valda listan.
+8. Välj **Välj**.
+9. Öppna sökningen genom att välja listrutepilen i fältet **Avdelning**.
+10. Klicka på länken på önskad rad i valda listan.
+11. I fältet **Jobb** klickar du på pilen för listruta för att öppna sökningen.
+12. Hitta och markera önskad post i listan.
+13. Klicka på länken på önskad rad i valda listan.
+14. I fältet **Antal lediga jobb** anger du ett värde.
+15. I fältet **Anställande chef** väljer du pilen för listruta för att öppna sökningen.
+16. Hitta och markera önskad post i listan.
+17. Klicka på länken på önskad rad i valda listan.
+18. Välj **Välj**.
+19. Ange ett datum i fältet **Tidsgräns för ansökan**.
+20. Välj **Media**.
 
+    Rekryteringsprojekt har alternativ för att ange mediakanaler som ska användas för att annonsera vakanta befattningar.
 
+21. Välj **Ny**.
+22. I fältet **Media** väljer du pilen för listruta för att öppna sökningen.
+23. Klicka på länken på önskad rad i valda listan.
+24. Ange ett datum i fältet **Startdatum**.
+25. Ange ett datum i fältet **Slutdatum**.
+26. Välj **Spara**.
+27. Stäng sidan.
+28. Välj **Platsannonser**.
+29. Välj **Spara**.
+30. Stäng sidan.
+31. Markera eller avmarkera kryssrutan **Visa i självbetjäningen för medarbetare**.
+
+    Markera kryssrutan för att göra rekryteringsprojektet synligt för medarbetarna på deras sida **Självbetjäning för medarbetare**.
+
+32. Markera status **Rekryteringsprojektet**.
+33. Välj **start**.
+
+    Statusen **Startad** innebär att projektet är redo att ta emot ansökningar.
+
+34. Välj **OK**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

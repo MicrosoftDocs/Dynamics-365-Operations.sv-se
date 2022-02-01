@@ -2,25 +2,25 @@
 title: Lägga till och kopiera leasing (förhandsversion)
 description: I det här ämnet beskrivs hur du skapar en ny leasing genom att ange information om den i Leasing av tillgångar, eller genom att kopiera information från en befintlig leasing.
 author: moaamer
-ms.date: 12/06/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e6f47e7bccdfa5205209a290b2ce0d37f2e5a534
-ms.sourcegitcommit: c42d047cb866f7988f1879ac84cd45284a03abf8
+ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7931991"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967936"
 ---
 # <a name="add-or-copy-leases-preview"></a>Lägga till och kopiera leasing (förhandsversion)
 
@@ -35,8 +35,19 @@ Följ dessa steg för att skapa en leasing i Leasing av tillgångar.
 1. På sidan **Sammanfattning av leasing** i åtgärdsfönstret väljer du **Ny**.
 2. Ange information om leasingen. Obligatoriska fält har röda kantlinjer.
 
-> Startdatumet för leasingbetalningen får inte vara tidigare än leasingavtalets startdatum. Om du anger ett startdatum för leasingbetalningen som är tidigare än startdatumet för leasingavtalet får du ett felmeddelande.
-  
+Startdatumet för leasingbetalningen får inte vara tidigare än leasingavtalets startdatum. Om du anger ett startdatum för leasingbetalningen som är tidigare än startdatumet för leasingavtalet får du ett felmeddelande.
+
+Alternativet **Fördelningsbelopp** på snabbfliken **Allmänt** på sidan **Leasingdetaljer** anges till **Nej** om alternativet **Tillåt betalningsuppdelning** på sidan **Parametrar för tillgångsleasing** anges till **Ja**. 
+
+Om alternativet **Uppdelning av betalningsbelopp** anges till **Ja** kommer fältet **Betalningsbelopp** på snabbfliken **Betalningsplanrader** att låsas. Det ställs in på summan av betalningsbeloppen som registreras senare i katalogen för **Uppdelning av betalningsbelopp**. 
+
+Välj **Uppdelning av betalningsbelopp** om du vill öppna en sida där du kan lägga till de specificerade betalningstyperna. Knappen **Lägg till summor i betalningsbelopp** flyttar summorna till fältet **Betalningsbelopp**.
+
+> [!NOTE]
+> Om du lägger till ett specificerat betalningsbelopp och sedan väljer **Esc** läggs de angivna beloppen inte till i fältet **Betalningsbelopp** på snabbfliken **Betalningsplanrader**. De lagras i stället i dialogrutan **Uppdelning av betalningsbelopp**. Om du vill att dialogrutan ska visa totalsumman markerar du kolumnen **Belopp**, markerar och håller ned (eller högerklickar) och väljer sedan **Summa den här kolumnen**. 
+
+Knappen **Kopiera rad** kopierar den specificerade betalningsuppdelningen.
+
 ## <a name="create-a-lease-schedule"></a>Skapa en leasingplan
 
 När du har angett all information för leasingen skapar du leasingplanen genom att följa stegen nedan.
@@ -50,9 +61,9 @@ När du har angett all information för leasingen skapar du leasingplanen genom 
     På sidan **Information om bok** visas hur leasingen redovisas av de böcker som har tilldelats till den. Härifrån kan du visa leasingplaner.
 
     Betalningsplanen innehåller inmatningar från fliken **Betalningsplanrader** på sidan **Lägg till leasing**. Du kan fortfarande ändra varje betalningsbelopp och variabel betalning. Leasingskulden beräknas utifrån det ändrade betalningsplanen.
-    
-> [!NOTE]
-> Startdatumet för leasingbetalningen måste vara detsamma eller ett senare datum än leasingavtalets startdatum. Du får ett felmeddelande om startdatumet för betalningen är tidigare än startdatumet för leasingen. 
+
+    > [!NOTE]
+    > Startdatumet för leasingbetalningen måste vara detsamma eller ett senare datum än leasingavtalets startdatum. Du får ett felmeddelande om startdatumet för betalningen är tidigare än startdatumet för leasingen. 
 
 4. När du är klar med granskningen av betalningsplanen väljer du **Bekräfta plan**. När planen har bekräftats går det inte längre att redigera leasingen.
 

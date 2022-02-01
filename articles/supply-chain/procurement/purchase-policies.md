@@ -3,7 +3,7 @@ title: Inköpspolicyer – översikt
 description: Det här avsnittet innehåller information om inköpspolicyer. En inköpspolicy är en grupp regler som styr processen för inköpsrekvisition. Administratörer som är hjälper till med inköpspolicyer för anskaffning implementerar sin anskaffningsstrategi genom att skapa en policystruktur som stämmer överens med organisationens strategiska inköpskrav.
 author: Henrikan
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d3c35cabc9b5b8c69dbf4d597388192b4130d49
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3cc150ae1a912fbfb4daf505e4240786c2f380a3
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575498"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982287"
 ---
 # <a name="purchasing-policies-overview"></a>Inköpspolicyer – översikt
 

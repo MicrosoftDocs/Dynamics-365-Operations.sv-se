@@ -1,8 +1,8 @@
 ---
 title: Ange sökanden och ansökningsdata manuellt
 description: I den här proceduren visas hur du manuellt hanterar information om sökanden och hans/hennes ansökning.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 01/10/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,52 +13,61 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 52805c56ed5be13c9e940cf887ece55487060539c0cae97ae5a1bcecd491fbcb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5305ded440dce0cf057e5fbe4df72635ce0e7b6b
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712519"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964716"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Ange sökanden och ansökningsdata manuellt
 
 [!include [banner](../../includes/banner.md)]
 
-I den här proceduren visas hur du manuellt hanterar information om sökanden och hans/hennes ansökning.   Du kan ange och hantera personuppgifter, intervjudata och tider, referenser, kompetenser och logiförfrågningar för sökande. Du kan även uppdatera statusen för sökandens platsansökningar och skapa brev eller e-postmeddelande för att kommunicera med sökanden. När du skapar en sökandepost, skapas en personpost för den sökanden i den globala adressboken.       Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
-
+I den här proceduren visas hur du manuellt hanterar information om sökanden och hans/hennes ansökning. Du kan ange och hantera personuppgifter, intervjudata och tider, referenser, kompetenser och logiförfrågningar för sökande. Du kan även uppdatera statusen för sökandens platsansökningar och skapa brev eller e-postmeddelande för att kommunicera med sökanden. När du skapar en sökandepost, skapas en personpost för den sökanden i den globala adressboken. Demonstrationsdataföretaget **USMF** har använts för att skapa denna procedur.
 
 ## <a name="create-a-new-applicant-record"></a>Skapa en ny sökandepost
-1. Gå till Personal > Rekrytering > Sökanden > Sökanden.
-2. Klicka på Ny.
-3. I fältet Förnamn, skriv ett värde.
-4. I fältet Efternamn, skriv ett värde.
-    * Du kan ange ytterligare information om sökande, om det finns tillgängligt. Du kan till exempel inkludera information om sökandens högsta examen, aktuell jobbtitel eller föregående arbetsgivare.  
-5. Växla expansionen av avsnittet Kontaktinformation.
-6. Klicka på Lägg till.
-7. Skriv "E-post för kommunikation" i fältet Beskrivning.
-8. Välj ett alternativ i fältet Typ.
-9. Skriv ett värde i fältet Kontaktens nummer/adress.
-    * Den här e-postadressen används för att skapa e-postkommunikation med den sökande.  
-10. Klicka på Lägg till.
-11. Ange ett värde i fältet Beskrivning.
-12. Skriv ett värde i fältet Kontaktens nummer/adress.
-    * Personliga uppgifter om den sökande.  
-    * Du kan ange ytterligare personliga uppgifter för den sökande, om det behövs. Detta kan till exempel inkludera födelsedatum, etniskt ursprung eller civilstånd.  
-13. Klicka på Kompetenser i åtgärdsfönstret.
-    * Du kan ange sökandens kompetensprofil, inklusive hans/hennes kompetenser, yrkeserfarenhet, utbildning, tester eller intyg.  
-    * Den här informationen kan användas för att mappa sökandens kompetenser till de kompetenser som är associerade med de jobb som har definierats i företagets data.   
+
+1. Gå till **Personal \> Rekrytering \> Sökanden \> Sökanden**.
+2. Välj **Ny**.
+3. Ange ett värde i fältet **Förnamn**.
+4. I fältet **Efternamn** anger du ett värde.
+
+    Du kan ange ytterligare information om sökande, om det finns tillgängligt. Du kan till exempel inkludera information om sökandens högsta examen, aktuell jobbtitel eller föregående arbetsgivare.
+
+5. Expandera avsnittet **Kontaktinformation.**
+6. Markera **Lägg till**.
+7. I fältet **Beskrivning** ange **E-post för kommunikation**.
+8. Välj ett alternativ i fältet **Typ**.
+9. Skriv ett värde i fältet **Kontaktens nummer/adress**.
+
+    Den här e-postadressen används för att skapa e-postkommunikation med den sökande.
+
+10. Markera **Lägg till**.
+11. I fältet **Beskrivning** anger du ett värde.
+12. Skriv ett värde i fältet **Kontaktens nummer/adress**.
+
+    Använd det här fältet om du vill ange ytterligare personlig information om den sökande, vid behov. Denna information kan till exempel inkludera ansökandens födelsedatum, etniskt ursprung eller civilstånd.
+
+13. I åtgärdsfönstret väljer du **Kompetenser**.
+
+    Du kan ange sökandens kompetensprofil, inklusive hans/hennes kompetenser, yrkeserfarenhet, utbildning, tester eller intyg. Den här informationen kan användas för att mappa sökandens kompetenser till de kompetenser som är associerade med de jobb som har definierats i företagets data.
 
 ## <a name="create-an-application-for-the-applicant"></a>Skapa en ansökning för den sökande
-1. Klicka på Ansökningar.
-2. Klicka på Ny.
-3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Rekryteringsprojekt.
-    * Genom att välja ett rekryteringsprojekt kommer den sökande att associeras med det specifika jobberbjudande som inkluderas i det rekryteringsprojektet.  
+
+1. Välj **ansökning**.
+2. Välj **Ny**.
+3. I fältet **Rekryteringsprojekt** väljer du listrutepilen för att öppna sökningen.
+
+    Genom att välja ett rekryteringsprojekt kommer den sökande att associeras med det specifika jobberbjudande som inkluderas i det rekryteringsprojektet.
+
 4. Hitta och markera önskad post i listan.
-5. Klicka på länken på den valda raden i listan.
-    * Som standard baseras jobbet och avdelningen på det valda rekryteringsprojektet.  
-6. Klicka på Spara.
-    * När du har sparat ansökningen kan du koppla dokument till den, inklusive sökandens erfarenhet, belöningar och följebrevet.  
+5. Klicka på länken på önskad rad i valda listan.
 
+    Som standard baseras jobbet och avdelningen på det valda rekryteringsprojektet.
 
+6. Välj **Spara**.
+
+    När du har sparat ansökan kan du bifoga dokument till den. Dessa dokument kan omfatta den sökandes erfarenhet, belöningar och cover letter.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

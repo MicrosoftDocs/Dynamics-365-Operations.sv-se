@@ -2,7 +2,7 @@
 title: Vad är nytt eller ändrat i mobilappen Warehouse Management
 description: Det här ämnet visar en lista med nya och ändrade funktioner för varje frisläppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 09/09/2021
+ms.date: 01/18/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,51 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9d50c1380418365f7c51d6b96051e9ea68a5f104
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 6f45cacd7f43c8caf836fd1ea24d354e4bcf5853
+ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901898"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8007584"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Vad är nytt eller ändrat i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Detta ämne listar nya funktioner, korrigeringar, förbättringar och kända problem för varje släppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20140"></a>Version 2.0.14.0
+
+I den här versionen ingår följande nya funktioner, korrigeringar och förbättringar:
+
+- Har åtgärdat en utfråga som inaktiverade knappen Skicka.
+
+## <a name="version-20130"></a>Version 2.0.13.0
+
+I den här versionen ingår följande nya funktioner, korrigeringar och förbättringar:
+ 
+- Förbättrad bläddring mellan sidor med smidigare animering.
+- Fasta ologiska svar på sveprörelser och enstaka skärmfrysningar.
+- Förbättrad kombination av mörklägestext och bakgrundsfärg för bättre läsbarhet.
+- Korrigerat ett problem där viss text kan bli mycket liten när du ändra storlek på appfönstret.
+- Fast ett problem som kan göra att programmet kraschar när streckkoder skannas.
+- Har lagt till möjligheten att ersätta ett skjutreglage med en knapp.
+- Åtgärdat ett problem som kan göra att programmet visar felmeddelandet, "AADSTS7000215: Ogiltig klienthemlighet anges."
+- Har fast tipsanimeringen som visar hur du stänger en sida med ett svepa nedåt-gest.
+- Lade till möjligheten att stänga en sida med hjälp av en snärt nedåt.
+- Har åtgärdat ett problem där listruterubriker inte visas på sidan **Användarinställningar**.
+- Korrigerat ett lokaliseringsproblem där programmet inte identifierar ett komma (,) som en decimalavgränsare.
+- Förbättrad tillgänglighet.
+- Har fast navigeringen på sidan **Ny anslutning** för att ge förbättrad åtkomst.
+- Har åtgärdat ett problem där det mjuka tangentbordet (på skärmen) inte visas när du väljer ett inmatningsfält.
+- Fast ett problem som kan kraschar programmet om användarna snabbt ändrar storlek på dess fönster.
+- Fast en fråga där en snabbtangent ibland tolkas som ett långt tryck.
+- Har åtgärdat ett problem där applayouten kan bli skadad på grund av fältanpassningar som gjorts i Supply Chain Management.
+- Fast ett problem där artikelplatserna inte visas korrekt.
+- Har åtgärdat ett problem vid kort plockning av produktvariantarbetsflödet.
+- Den onödiga valideringen av fält som innehåller förinställda standardvärden har tagits bort.
+- Förbättrad prestanda.
+- En ny inställning har lagts till där användarna kan välja hur fält filtreras och beställs på kortsidan.
 
 ## <a name="version-20110"></a>Version 2.0.11.0
 

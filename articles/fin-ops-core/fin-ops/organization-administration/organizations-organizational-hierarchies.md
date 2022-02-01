@@ -2,8 +2,8 @@
 title: Organisationer och organisationshierarkier – översikt
 description: Organisationshierarkier representerar relationerna mellan de organisationer som finns i företaget.
 author: sericks007
-ms.date: 11/10/2021
-ms.topic: article
+ms.date: 01/03/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f0388b6e7c22c339d26b82c35f1bbb1ef54cdb5
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: c8e8f2c2004582f42c3f464fedf9f3d049b5278f
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798356"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7992087"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Organisationer och organisationshierarkier – översikt
 
@@ -54,7 +54,7 @@ Typerna av driftenheter innehåller kostnadsställen, affärsenheter, värdestr�
 | Affärsenhet       | En halvautonom driftenhet som skapas för att uppfylla strategiska affärsmål. | Används för den ekonomiska rapporteringen som baseras på de branscher eller produktserier som organisationen använder oberoende av juridiska personer. |
 | Värdeström        | En driftenhet som kontrollerar ett eller flera produktionsflöden. | Används vanligtvis i lean manufacturing för att kontrollera de aktiviteter och flöden som krävs för att tillhandahålla en produkt eller tjänst till kunderna. |
 | Avdelning          | En driftenhet som representerar en kategori eller en funktionell del av en organisation som utför en viss uppgift, till exempel försäljning eller redovisning. | Används för att rapportera om funktionsområden. En avdelning kan ha ansvar för vinster och förluster och kan bestå av en grupp av kostnadsställen. |
-| Handelskanal      | En driftenhet som representerar en fysisk butik, en onlinebutik eller en onlinemarknadsplats. | Används för hantering och den driftskontrollen av en eller flera butiker inom eller mellan juridiska personer. |
+| Butikskanal      | En driftenhet som representerar en fysisk butik, en onlinebutik eller en kundtjänst. | Används för hantering och den driftskontrollen av en eller flera butiker inom eller mellan juridiska personer. |
 
 ### <a name="teams"></a>Team
 

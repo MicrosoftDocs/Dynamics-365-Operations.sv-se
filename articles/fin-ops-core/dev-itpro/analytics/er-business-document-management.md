@@ -3,24 +3,23 @@ title: Översikt över hantering av affärsdokument
 description: Det här avsnittet innehåller information om hur du använder funktionen för hantering av affärsdokument i ER-ramverket.
 author: NickSelin
 ms.date: 04/23/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b59f535e01de2ae30e6bbeb6d5ab97a415df6043233694d4feb1c48140a110f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: faea9d4d9b3fc8f3f1474b6bb2a8dc31cdc22511
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753086"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986261"
 ---
 # <a name="business-document-management-overview"></a>Översikt över hantering av affärsdokument
 
@@ -408,7 +407,7 @@ När du redigerar mallen från ett ER-format som ägs av den aktuella aktiva lev
 
 Detta är ett känt problem som omfattar Microsoft 365 omdirigeringen. Detta inträffar när du loggar in på Microsoft 365 första gången. Du löser det här problemet genom att välja **Bakåt** i webbläsaren för att gå tillbaka till föregående sida.
 
-### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-and-adjust-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-use-the-office-desktop-application-in-the-same-way"></a>Jag förstår hur man redigerar en mall med hjälp av Microsoft 365 den första programsessionen och hur man använder mallen i den andra programsessionen för att justera mallen för att se hur ändringarna påverkar det genererade affärsdokumentet. Kan jag använda Office-skrivbordsprogrammet på samma sätt?
+### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-and-adjust-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-use-the-office-desktop-application-in-the-same-way"></a>Jag förstår hur man redigerar en mall med hjälp Microsoft 365 i den första programsessionen och hur man använder mallen i den andra programsessionen för att justera mallen för att se hur ändringarna påverkar det genererade affärsdokumentet. Kan jag använda Office-skrivbordsprogrammet på samma sätt?
 
 Ja, det kan du. I den första programsessionen, välj **Öppna i skrivbordsprogram**. Din mall lagras i den temporära fillagringen och öppnas i Office-skrivbordsprogrammet. Utför sedan följande steg för att förhandsgranska malländringarna i det genererade affärsdokumentet:
 

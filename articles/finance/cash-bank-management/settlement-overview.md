@@ -3,7 +3,7 @@ title: Kvittningsöversikt
 description: Det här ämnet innehåller allmän information om kvittningsprocessen. Den beskriver vilka transaktionstyper som kan kvittas samt tid och process för kvittning av dem. Här beskrivs även resultat av kvittningsprocessen.
 author: panolte
 ms.date: 07/30/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 6b4a4fd0756a4516b0c14e136730d21d062a106a
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 57f2b209a852bb9513218fab3df118c7d7a2a1e7
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344821"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986393"
 ---
 # <a name="settlement-overview"></a>Kvittningsöversikt
 

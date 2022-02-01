@@ -2,25 +2,25 @@
 title: Omvärdera leasingbetalningar som är kopplade till en indexränta
 description: I det här ämnet beskrivs den justering som görs i leasingskulden för en ROU-tillgång när variabla leasingbetalningar ändras på grund av en ändring i indexräntan.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetLeaseIndexRevaluation
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1b3eed28ba6fc5af02c1bbf430cc9779426084f0eaf4e027141bbdd18a70dde4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734596"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968066"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Omvärdera leasingbetalningar som är kopplade till en indexränta
 
@@ -43,7 +43,7 @@ Följ de här stegen för att omvärdera leasingbetalningar som är kopplade til
 4. Välj filter för att välja leasingar som ska inkluderas i bakgrundsbearbetningen och välj sedan **OK**.
 
     Dialogrutan **Omvärdering av indexränta, förhandsversion** visas och visar de leasingar som kommer att omvärderas. Det visar även justeringar av tillgångar och skulder eller justeringar av variabla betalningar.
-    
+
 5. Om du vill förhindra att leasingar omvärderas väljer du de leasingar som **ska** omvärderas. Om du inte väljer några leasingar kommer alla leasingar att omvärderas. När du är klar klickar du på **OK** för att omvärdera leasingbetalningarna.
 6. Om du vill visa de transaktioner som har skapats för en viss indexombedömningsprocess väljer du process-ID och väljer sedan **Transaktioner**.
 
@@ -66,5 +66,7 @@ Du kan visa den nyligen genererade betalningsplanen som startar på ombedömning
 
 Journalposten har automatiskt bokfört justeringsjournalposten på kontot för ändringen av leasingbetalningar som hör till indexomvärderingen.
 
+> [!NOTE]
+> Om alternativet **Uppdelning av betalningsbelopp** är aktiverat på snabbfliken **Allmänt** på sidan **Leasingdetaljer** och den kopplade boken är IFRS 16, lägger omvärderingsprocessen för index automatiskt till en post i dialogrutan **Uppdelning av betalningsbelopp**. Beloppet återspeglar den ändring som gjordes i betalningen på grund av indexomvärdering. Posten markeras som **Använd för omvärdering av IRFS 16-index**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

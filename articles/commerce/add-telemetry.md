@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e3916b18c797222c300957fb25cabad78c4fcb9744a29d611a81b0bda3e9834d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f796a3e10345da41ff461b656d88affb3adbdf9e
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724614"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964539"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Lägga till skriptkod på webbsidor för att stödja telemetri
 
@@ -110,11 +110,9 @@ Om du vill lägga till ett extern skript direkt på en mall i webbplatsskaparen 
 
 [Arbeta med CSS åsidosättningsfiler](css-override-files.md)
 
-[Lägg till en favoritikon](add-favicon.md)
+[Lägga till en favoritikon](add-favicon.md)
 
-[Lägg till ett välkomstmeddelande](add-welcome-message.md)
-
-[Lägg till copyrightmeddelande](add-copyright-notice.md)
+[Lägga till ett copyrightmeddelande](add-copyright-notice.md)
 
 [Lägg till språk på din webbplats](add-languages-to-site.md)
 

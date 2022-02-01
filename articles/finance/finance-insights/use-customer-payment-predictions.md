@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 0606118007c01fc21c2c61d2128a7ec014617fcc
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: ed70e133b93c783542d4669b679fc5b6d2d20240
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752794"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968922"
 ---
 # <a name="use-customer-payment-predictions"></a>Använda förutsägelser för kundbetalning
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 I det här ämnet beskrivs hur du använder förutsägelser om kundbetalning. Innan du använder den här funktionen måste du kontrollera att du har slutfört inställningsstegen för den. Mer information finns i [Aktivera prediktioner av kundbetalning](enable-cust-paymnt-prediction.md).
 
@@ -91,6 +90,6 @@ Du kan visa noggrannheten hos betalningsförutsägelser genom att gå till **Kre
 
 Om du inte är nöjd med noggrannheten väljer du länken **Förbättra modellens noggrannhet** för att öppna AI Builder-tilläggets upplevelse. I AI Builder-tilläggets upplevelse kan du välja eller avbryta urvalet av fält tills du har valt de fält som du tror är viktigast för en korrekt förutsägelse av betalningssannolikhet. När du är klar kan du enkelt återträna förutsägelsemodellen och publicera dina ändringar. Den nyligen tränade förutsägelsemodellen hämtas automatiskt för förutsägelser i Dynamics 365 Finance.
 
-[![AI Builder-tilläggsupplevelse.](./media/ai-builder.png)](./media/ai-builder.png)
+[![AI Builder erfarenhet av filnamnstillägg.](./media/ai-builder.png)](./media/ai-builder.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

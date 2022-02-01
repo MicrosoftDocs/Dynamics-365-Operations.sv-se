@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 66b097b2936e61c619d45ad103440eddbb983feb
-ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
+ms.openlocfilehash: 8284ccd7ac383c53960f7fd6a1333aeb0e7e6f3c
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "7945801"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969022"
 ---
 # <a name="external-data-in-cash-flow-forecasts"></a>Externa data i kassaflödesprognoser
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Externa data kan anges i eller importeras till kassaflödesprognoser. I det här avsnittet beskrivs de konfigurationssteg som är specifika för användningen av externa data och som gör att externa data kan inkluderas i en kassaflödesprognos.
 

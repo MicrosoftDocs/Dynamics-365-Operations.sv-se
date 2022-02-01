@@ -3,7 +3,7 @@ title: Redovisning och ekonomisk rapportering – översikt
 description: Använd redovisningen när du vill definiera och hantera den juridiska personens ekonomiska poster.
 author: ShylaThompson
 ms.date: 08/14/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b143807b6076d2b798de26d2ebd2cf7a40a8fdf89fdc8387acfbb79cecb44e3b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 639d77e43fc9a55e43ebb030f8fc292ce8fb7fce
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715128"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985272"
 ---
 # <a name="general-ledger-home-page"></a>Startsida för redovisning
 
@@ -61,7 +61,7 @@ Gå till avsnittet [översikt över Financial reporting](../../fin-ops-core/dev-
 
 #### <a name="blogs"></a>Bloggar
 
-Det finns åsikter, nyheter och annan information i [bloggen om Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [bloggen om Microsoft Dynamics 365 Finance and Operations – Finance](https://community.dynamics.com/365/financeandoperations/b/financials).
+Det finns åsikter, nyheter och annan information om [Microsoft Dynamics 365 bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [Microsoft Dynamics 365 Finance and Operations - Financials bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i Dynamics 365.
 

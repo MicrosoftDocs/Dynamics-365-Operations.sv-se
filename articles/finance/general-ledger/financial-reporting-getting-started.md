@@ -9,20 +9,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "10444"
-- intro-internal
+ms.custom: intro-internal
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 464092ae2fdcdfd8a0ada254e88f4418c825c1f9
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 1fbdab1f4f81bbdb8b0b5cb3e6a5237196d7dc76
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486980"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983987"
 ---
 # <a name="get-started-with-financial-reporting"></a>Kom i gång med ekonomisk rapportering 
 
@@ -148,7 +146,7 @@ Du kan skapa ett obegränsat antal rapportträd för att visa ditt företags dat
 
 ## <a name="update-the-financial-reporting-version-through-slipstreaming"></a>Uppdatera den ekonomiska rapporteringsversionen via slipstreaming
 
-Finance and Operations-program uppdateras varje månad. Ekonomisk rapportering behöver emellertid inte nödvändigtvis uppdateras på den cadencen. Kunder kan dessutom ha fler alternativ om när de implementerar uppdateringar för Finance and Operations-program. Uppdateringar av ekonomiska rapporter installeras automatiskt. Ekonomisk rapportering har en särskild version som förbrukas i en kundmiljö när en serviceuppdatering implementeras, när drifttid har initierats eller när en kunds miljö är i underhållsläge. Den här processen kallas *slipstreaming* eller *stämmer*, eftersom alla kundimplementeringar är inställda på samma version av finansiell rapportering.
+Finance and Operations-appar uppdateras varje månad. Ekonomisk rapportering behöver emellertid inte nödvändigtvis uppdateras på den cadencen. Kunder kan dessutom ha fler alternativ om när de implementerar uppdateringar för Finance and Operations-program. Uppdateringar av ekonomiska rapporter installeras automatiskt. Ekonomisk rapportering har en särskild version som förbrukas i en kundmiljö när en serviceuppdatering implementeras, när drifttid har initierats eller när en kunds miljö är i underhållsläge. Den här processen kallas *slipstreaming* eller *stämmer*, eftersom alla kundimplementeringar är inställda på samma version av finansiell rapportering.
 
 Ändringar som frisläpps i varje version finns i [Vad är nytt eller ändrat i Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Uppdateringar av plattformar och uppdateringskorrigeringar finns i avsnittet "Ytterligare resurser" längst ned på sidan för varje version.
 

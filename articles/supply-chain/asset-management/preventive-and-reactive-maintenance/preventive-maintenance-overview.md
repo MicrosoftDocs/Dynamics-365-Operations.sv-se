@@ -3,24 +3,23 @@ title: Översikt över förebyggande underhåll
 description: I det här avsnittet beskrivs förebyggande underhåll i Tillgångshantering.
 author: johanhoffmann
 ms.date: 08/27/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3803bcbb8ea4213cd01dfcb96277bfec6f048355a37f8ea6bee2b9fb10a21324
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c313a7873ae63b5bb85665067160fdcd6dc15a5
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753406"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985065"
 ---
 # <a name="preventive-maintenance-overview"></a>Översikt över förebyggande underhåll
 

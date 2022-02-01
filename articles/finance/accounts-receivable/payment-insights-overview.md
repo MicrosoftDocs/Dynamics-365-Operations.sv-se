@@ -3,7 +3,7 @@ title: Customer payment insights (förhandsversion)
 description: I det här ämnet beskrivs funktioner för betalningsinsikter som hjälper dig att bättre förstå en enskild kunds typiska betalningspraxis. Funktionen kan också hjälpa dig att identifiera omständigheter gör att du bör starta inkassoprocesser tidigare än vad du annars skulle ha gjort.
 author: ShivamPandey-msft
 ms.date: 11/06/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: ecd368237f949b6cbfbbb7293f6ddc5b1199d6fc0aef7e0bf44f4a2a808a6ccb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d359e3ceef0fb7213d52aeb265da2e75120ae223
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737783"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984012"
 ---
 # <a name="customer-payment-insights-preview"></a>Customer payment insights (förhandsversion)
 
@@ -69,7 +69,7 @@ Skicka e-post till [Kundbetalningsinsikter (förhandsversion)](mailto:fiap@micro
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
 
-Förhandsversioner (1) kan dessutom använda mindre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations de (2) ingår inte i servicenivåavtalet för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterföljande krav, samt (4) har begränsad support.
+Förhandsgranskningar (1) kan dessutom använda mindre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations (2) ingår inte i servicenivåavtalet för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterföljande krav, samt (4) har begränsad support.
 
 
 

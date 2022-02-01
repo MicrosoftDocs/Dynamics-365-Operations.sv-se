@@ -1,5 +1,5 @@
 ---
-title: Korrigera planeringsmotorfelet "Det finns inte tillräcklig kapacitet"
+title: Korrigera planeringsmotorfelet "Det finns inte tillräcklig kapacitet" och begränsad kapacitet
 description: Det här avsnittet innehåller information om orsakerna och lösningarna för planeringsmotorfelet "Produktionsorder %1 kunde inte tidsplaneras. Det finns inte tillräcklig kapacitet".
 author: ChristianRytt
 ms.date: 7/29/2021
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 16626a7ee74e89bd129d8435a17d16b41a5e0387
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: becd537d37a8ba8931f2598dccbae8554a4d168e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565769"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985040"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Korrigera planeringsmotorfelet "Det finns inte tillräcklig kapacitet".
 
@@ -105,5 +105,11 @@ Följ stegen nedan för att granska den tillgängliga kapaciteten för resursgru
 
 1. Gå till **Organisationsadministration \> Resurser \> Resursgrupper** och välj en resursgrupp som kan användas för ordern som inte kan tidsplaneras.
 1. I åtgärdsrutan på fliken **Resursgrupp**, i gruppen **Visa**, väljer du **Kapacitetsbeläggning** eller **Kapacitetsbeläggning, grafiskt** och kontrollerar att det finns tillgänglig kapacitet.
+
+## <a name="master-planning-books-a-resource-when-the-resource-calendar-is-closed"></a>Huvudplaneringsregler för en resurs när resurskalendern är stängd
+
+När du använder grovplanering kommer huvudplaneringen att planerar kapacitet enligt kalendern för den primära resursgruppen. Den bokar den sekundära operationen samtidigt som den primära operationen och tar inte hänsyn till kalendrarna eller kapaciteten för den sekundära operationen. Detta kan leda till att tillverkningsordern planeras på en stängd kalender eller vid en tidpunkt när den sekundära operationen är tillgänglig (kalender stängd, ingen kapacitet).
+
+Vid finplanering tar huvudplaneringen hänsyn till kapacitet och kalender för både den primära och sekundära operationen vid planering av ordern. Kalendrar för båda operationerna måste vara öppna och ha tillgänglig kapacitet för att ordern ska kunna planeras.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

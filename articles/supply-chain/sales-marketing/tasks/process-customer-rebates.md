@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 355ca6b8a06b15b68e0fd6236999b4e64a83bf2a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a85c027571a6d77ed61cd874bb9d97221b099967
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573355"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969097"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generera och bearbeta kundrabatter
 
@@ -69,7 +69,7 @@ Den här proceduren visar hur du vill bearbeta kunden rabatter från krav genera
 2. Klicka på **Slå samman**.
 3. Ange eller välj ett värde i fältet **Kund**.
 4. I fältet **startdatum** väljer du dagens datum.
-5. Klicka på **OK**. Som ett resultat av att funktionen **Ackumulera** har körts har det beräknade anspråksbeloppet nu justerats till konto på grund av att kundens totala försäljningsvolym i den relevanta perioden är högre än när den första rabatten genererades. Mer specifikt, eftersom den totala inköpta kvantiteten har nått 100 enheter, kunden nu kvalificerar sig för 40 USD per enhet (enligt överenskommelse andra kvantiteten rast) eller 400 USD av den totala rabatten. Skillnaden är registrerat som ett nytt krav "justering" för ytterligare 800 USD. Statusen för de rabattanspråk som är inkluderade i den ackumulerade uppdateringen anges nu till Beräknad. 
+5. Klicka på **OK**. Som ett resultat av att funktionen **Ackumulera** har körts har det beräknade anspråksbeloppet nu justerats till konto på grund av att kundens totala försäljningsvolym i den relevanta perioden är högre än när den första rabatten genererades. Mer specifikt, eftersom den totala inköpta kvantiteten har nått 100 enheter, kunden nu kvalificerar sig för 40 USD per enhet (enligt överenskommelse andra kvantiteten rast) eller 4,000 USD av den totala rabatten. Skillnaden är registrerat som ett nytt krav "justering" för ytterligare 800 USD. Statusen för de rabattanspråk som är inkluderade i den ackumulerade uppdateringen anges nu till Beräknad. 
 6. Markera alla rader i listan.
 7. Klicka på **Godkänn**.
 8. Klicka på **Bearbeta**.

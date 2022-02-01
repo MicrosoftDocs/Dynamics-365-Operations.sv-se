@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 71d1ddd8e6641cdc57c5b83e12f4b3cf68516c611691a7e7199d5b633bdf17d7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 583462755838e51b4c988b8da057dbeeee773e0b
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725420"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964589"
 ---
 # <a name="add-a-logo"></a>Lägga till en logotyp
 
@@ -55,15 +55,13 @@ När du har publicerat det uppdaterade rubrikavsnitt visas din logotyp på alla 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Välj ett tema för webbplatsen](select-site-theme.md)
+[Välja ett tema för webbplatsen](select-site-theme.md)
 
 [Arbeta med CSS åsidosättningsfiler](css-override-files.md)
 
-[Lägg till en favoritikon](add-favicon.md)
+[Lägga till en favoritikon](add-favicon.md)
 
-[Lägg till ett välkomstmeddelande](add-welcome-message.md)
-
-[Lägg till copyrightmeddelande](add-copyright-notice.md)
+[Lägga till ett copyrightmeddelande](add-copyright-notice.md)
 
 [Lägg till språk på din webbplats](add-languages-to-site.md)
 

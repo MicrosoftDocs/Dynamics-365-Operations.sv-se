@@ -2,23 +2,22 @@
 title: Översikt över teknisk förändringshantering (innehåller video)
 description: Det här ämnet innehåller en översikt över konstruktionsändringshantering som hjälper dig att planera och hantera produktversioner samt hantera ändringar av produktens livscykler och konstruktion.
 author: t-benebo
-ms.date: 08/26/2021
-ms.topic: article
+ms.date: 01/11/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d667aef827addcf7c34075b08afffffe3fd71935
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 8c200796d587d77c0f4d2344524a890ba964ab39
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952608"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985222"
 ---
 # <a name="engineering-change-management-overview"></a>Konstruktionsändringshantering – översikt
 
@@ -39,7 +38,7 @@ Konstruktionsändringshantering hjälper dig att planera och hantera produktvers
 - Begäran om konstruktionsändring som stöds av arbetsflöden
 - Konstruktionsändringsorder som stöds av arbetsflöden
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HE6B]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
 
 Föregående video ([ändra hanteringsfunktioner i Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) finns med i [Finance and Operations spellistan](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som är tillgänglig på YouTube.
 
@@ -71,7 +70,9 @@ Sätt sedan på konfigurationstangenterna genom att följa dessa steg.
 
 1. Om du även vill använda versionsdimensionen ska du välja kryssrutan **Produktdimension – Version**. (Denna kryssruta finns längre ned i listan, inte inkapslad under noden **Konstruktionsändringshantering**.)
 1. Inaktivera underhållsläge enligt beskrivningen i [underhållsläge](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-1. Kör en databassynkronisering för att säkerställa att konfigurationsnycklarna är aktiverade på rätt sätt.
+1. Databasen måste synkroniseras för att säkerställa att konfigurationsnycklarna är aktiverade på rätt sätt. Gör något av följande steg beroende på vilken typ av miljö du arbetar i:
+    - **För nivå 1 (utveckling) miljöer**: Öppna ditt projekt i Microsoft Visual Studio och välj sedan **Dynamics 365 \> Synkronisera databasen \> Synkronisera**.
+    - **För nivå 2 (och högre) miljöer**: Databasen synkroniseras automatiskt när du sätter miljön in och ut ur underhållsläge, så du kan hoppa över det här steget.
 
 > [!IMPORTANT]
 > Från och med april 2022 aktiveras licensnycklarna för både **Konstruktionsändringshantering** och **Produktdimension – Version** som standard för alla nya installationer, men de kan fortfarande inaktiveras vid behov.

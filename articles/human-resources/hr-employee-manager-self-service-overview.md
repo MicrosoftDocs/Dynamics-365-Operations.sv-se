@@ -3,7 +3,7 @@ title: Ställa in självbetjäning för medarbetare och chef – översikt
 description: Den här artikeln innehåller en översikt över arbetsytan för självbetjäning för medarbetare och chef.
 author: twheeloc
 ms.date: 08/26/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMParameters, EssWorkspace
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cea92092701f960f12aa74efe4c82c379a2b2c6d
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 2a356aae6590c2bce289c8d180324027efc76983
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431221"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7992051"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Ställa in självbetjäning för medarbetare och chef – översikt
 
@@ -93,7 +93,7 @@ Visa och hantera dokument med panelen **Bifogade filer**. Du kan hantera alla **
 
 Det här avsnittet innehåller länkar till andra områden i **Självbetjäning för medarbetare** liknande avsnittet **Min karriärinformation**.
 
-Anmäl dig till förmåner via länken **förmåner**. Mer information om förmånshantering finns i [Översikt över förmåner](hr-benefits-management-overview.md)
+Anmäl dig till förmåner via länken **förmåner**. Mer information om förmånshantering finns i [Översikt över förmåner](hr-benefits-management-overview.md).
 
 Under **Resultat** kan du välja **Resultatjournal** för att skapa poster i resultatjournaler som kan användas på både resultatmål och recensioner. Du kan välja **skicka feedback** om du vill ge feedback för andra medarbetare inom organisationen. Beroende på inställningarna för din organisation kan e-postmeddelanden skickas till mottagaren, avsändaren och cheferna. Du kan skicka feedback till alla medarbetare inom organisationen. Sändning av feedback begränsas inte av företaget.
 

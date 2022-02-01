@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0a2bd50ef11e92fb427a61a1e8624fcd7d15e163
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 6ea27f4e38697d517b1520176eb5dfeee651a598
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920184"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982160"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Tidsplanering med obegränsad kapacitet
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!--KFM: Preview until 1/14/2022 -->
 
 Med funktionen *Oändlig kapacitetsplanering för planeringsoptimering* introduceras tidsplanering som baseras på flödesinformation. Med den kan du tidsplanera jobb utifrån ett stort antal flödeskonfigurationer. Tidsplanering för planeringsoptimering omfattar ofta använda flödesinställningar, inklusive flödesdriftsordning eller krav för flödesdriftsresurser.
 
@@ -51,7 +49,9 @@ Under tidsplaneringsprocessen tar systemet även hänsyn till de *resursbehov* s
 - Kapacitet (För mer information, se [Tidsplanering med resursurval som baseras på kapaciteten](capability-based-scheduling.md).)
 
 > [!NOTE]
-> Krav som rör personal, som kompetenser eller certifikatkrav, stöds ännu inte.
+>
+> - Om resursen och/eller resursgruppen är inställda på obegränsad kapacitet kommer dessa att betrakta som obegränsad kapacitet i huvudplaneringen.
+> - Krav som rör personal, som kompetenser eller certifikatkrav, stöds ännu inte.
 
 Funktionen stöder även åtgärdsegenskaper för **Inställning av tid** och **Körningstid**. När du anger dessa egenskaper för en flödesoperation skapar tidsplaneringsprocessen lämpliga inställnings- och processjobb.
 

@@ -3,7 +3,7 @@ title: Dokumentetutskrift – översikt
 description: Du kan skriva ut dokument genom att använda en lokal skrivare eller en nätverksansluten enhet. Den här artikeln innehåller en översikt över hur dokument skrivs ut.
 author: RichdiMSFT
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro, Application User
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5a0d26836043ea225b9a6d3e62980ada2dc49b0a01a6dacec739b50f28e17bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b9105ef39e411ac33043f1941d4e1dd32b758e5
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728248"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984918"
 ---
 # <a name="document-printing-overview"></a>Dokumentetutskrift – översikt
 
@@ -54,7 +54,7 @@ Eftersom lösningen varierar beroende på scenariet, innehåller appar inbyggda 
 - **Scenario 2** använder klientprogram och Microsoft 365-tjänster.
 - **Scenario 3** kräver stöd från klientprogram och från tjänster som finns i Microsoft Azure.
 
-Förutom den plattform som distribueras på Azure-abonnemanget ger Finance and Operations-program ger kunderna en integrerad, första part Azure-program som kan användas för att enkelt använda domänhanterade enheter för att skriva ut dokument.
+Förutom den plattform som distribueras på Azure-abonnemanget ger Finance and Operations-.program kunderna en integrerad, första part Azure-program som kan användas för att enkelt använda domänhanterade enheter för att skriva ut dokument.
 
 ## <a name="service-overview"></a>Översikt över tjänsten
 När dokument som har skapats av värdprogram som väntar på att skrivas ut på en nätverksansluten enhet, förvaras de i Azure blobblagring. [Installera dokumentflödesagenten för att aktivera nätverksutskrift](install-document-routing-agent.md) använder Azure-autentisering för att upprätta en säker kanal till Azure-tjänsterna.
