@@ -2,7 +2,7 @@
 title: Indroppningsbaserat orderskapande för butikstransaktioner
 description: Det här ämnet beskriver det indroppningsbaserade orderskapandet för butikstransaktioner i Microsoft Dynamics 365 Commerce.
 author: analpert
-ms.date: 12/14/2021
+ms.date: 01/11/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3a7fd8698d7123403cf9092a4a4bf810595d795b
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: 67b66cd4bf2a77f3ab7f33f691156e38cc13770a
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921255"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964639"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Indroppningsbaserat orderskapande för butikstransaktioner
 
 [!include [banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 Commerce version 10.0.5 och senare rekommenderar vi att du överför alla bokföringsprocesser för utdrag till indroppningsbaserade bokföringsprocesser för utdrag. Användning av indroppningsfunktionen ger avsevärda prestanda- och affärsfördelar. Försäljningstransaktioner bearbetas under dagen. Transaktioner för betalningsmedels- och kontanthantering bearbetas i bokslutet vid dagens slut. Indroppningsfunktionen gör det möjligt att kontinuerligt bearbeta försäljningsorder, fakturor och betalningar. Därför kan lager, intäkter och betalningar uppdateras och redovisas i nästan realtid.
+I Microsoft Dynamics 365 Commerce version 10.0.5 och senare rekommenderar vi att du överför alla bokföringsprocesser för utdrag till indroppningsbaserade bokföringsprocesser för utdrag. Användning av indroppningsfunktionen ger avsevärda prestanda- och affärsfördelar. Försäljningstransaktioner bearbetas under dagen. Transaktioner för betalningsmedels- och kontanthantering bearbetas i bokslutet vid dagens slut. Indroppningsfunktionen gör det möjligt att kontinuerligt bearbeta försäljningsorder, fakturor och betalningar. Därför uppdateras och redovisas lager, intäkter och betalningar i nästan realtid.
 
 ## <a name="use-trickle-feed-based-posting"></a>Använd indroppningsbaserad bokföring
 
@@ -47,6 +47,10 @@ Schemalägg följande jobb att köras med hög frekvens:
 ### <a name="financial-statements"></a>Bokslut
 
 Bokslutsbearbetning är avsedd att vara en dagsavstämningsprocess. Den här typen av utdragsbearbetning stöder endast stängningsmetoden **Skift** och hämtar bara stängda skift. Utdrag begränsas till ekonomisk avstämning. De skapar endast journaler för avvikelsebeloppen mellan det räknade beloppet och transaktionsbeloppet för betalningsmedlen och journaler för andra kontanthanteringstransaktioner.
+
+Bokslut gör det också möjligt att granska följande transaktioner: kassaavstämningstransaktioner, betalningstransaktioner, bankinsättningstransaktioner och betalningsmedeltransaktioner (kassaskåp). Informationssidan för betalningsmedel visas bara när ett bokslut väljs.
+
+![En bild som visar avsnittet betalningsmedelsinformation i det bokförda utdragsformuläret enbart när ett bokslut har valts.](./media/Trickle-feed-posted-statements-transaction-view.png)
 
 Planera start- och sluttiderna för följande bokslutsjobb baserat på förväntad dagsavstämning:
 
