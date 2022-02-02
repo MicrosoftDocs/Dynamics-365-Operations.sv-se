@@ -1,8 +1,8 @@
-- name: Utveckling och administration för Finance and Operations-appar
+- name: Utveckling och administration för Finance and Operations‑appar
   items:
-    - name: Utveckling och administration för Finance and Operations-appar
+    - name: Utveckling och administration för Finance and Operations‑appar
       items:
-        - name: Finance and Operations-programdokumentation
+        - name: Dokumentation för appen Finance and Operations
           href: ../fin-ops/index.md
         - name: Utveckling och administration för Finance and Operations-appar
           href: index.md
@@ -12,14 +12,12 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Nyheter och ändringar i Platform updates
               items:
-                - name: Nyheter och ändringar på Platform updates startsida
+                - name: Nyheter och ändringar på startsidan för Platform updates
                   href: get-started/whats-new-home-page.md
                 - name: Platform updates för version 10.0.24 (februari 2022)
                   href: get-started/whats-new-platform-updates-10-0-24.md
                 - name: Platform updates för version 10.0.23 (januari 2022)
                   href: get-started/whats-new-platform-updates-10-0-23.md
-                - name: Platform updates för version 10.0.22 (november 2021)
-                  href: get-started/whats-new-platform-updates-10-0-22.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -48,7 +46,7 @@
               href: dev-tools/version-models-build.md
         - name: Dataintegration
           items:
-            - name: Integrering mellan appar och tjänster för Finance and Operations från tredje part
+            - name: Integrering mellan Finance and Operations-appar och tjänster från tredje part
               href: data-entities/integration-overview.md
             - name: Prioritetsbaserad begränsning
               hreF: data-entities/priority-based-throttling.md
@@ -72,7 +70,7 @@
                   href: data-entities/recurring-integrations.md
                 - name: Testtjänster som använder verktyg från tredje part
                   href: data-entities/third-party-service-test.md
-            - name: Finance and Operations-koppling
+            - name: Koppling till Finance and Operations
               href: data-entities/fin-ops-connector.md
             - name: Utveckling för integration
               items:
@@ -100,7 +98,7 @@
                           href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
                         - name: Synkronisera produkter direkt från Finance and Operations till produkter i Sales
                           href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                        - name: Synkronisera kontakter direkt från Sales till kontakter eller kunder i Finance and Operations
+                        - name: Synkronisera kontakter direkt från Sales till kontakter i Finance and Operations
                           href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
                         - name: Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till Finance and Operations
                           href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
@@ -336,7 +334,7 @@
                   href: deployment/arm-onbarding-us-goverment.md
                 - name: Azure ExpressRoute och Finance and Operations
                   href: deployment/expressroute.md
-                - name: Finance and Operations-arkitektur
+                - name: Arkitektur för Finance and Operations
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Tillämpa uppdateringar i molnmiljöer
                   href: deployment/apply-deployable-package-system.md
@@ -360,7 +358,7 @@
                       href: deployment/on-premises-overview.md
                     - name: Planera och förbereda för lokala distributioner
                       href: deployment/plan-onprem-deployment.md
-                    - name: Programvara som stöds av Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Program som stöds i Microsoft Dynamics 365 Finance + Operations (on-premises)
                       href: deployment/onprem-compatibility.md
                     - name: Storlekskrav för maskinvara
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
@@ -404,9 +402,9 @@
                       href: deployment/redeploy-on-prem.md
                     - name: 'Ta bort och installera om, eller lägga till en AOS-nod'
                       href: deployment/onprem-remove-reinstall-AOS-node.md
-                    - name: Återanvända samma AD FS-instans för flera miljöer
+                    - name: Återanvända samma AD FS-instans i flera miljöer
                       href: deployment/onprem-reuseadfs.md
-                    - name: Uppgradera SQL Server-instansen av miljöerna Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Uppgradera SQL Server-instansen för Microsoft Dynamics 365 Finance + Operations (on-premises)-miljöer
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Lokal agent
                   items:
@@ -560,7 +558,7 @@
                   href: dev-tools/metadata-search-visual-studio.md
                 - name: Modeller och paket
                   href: dev-tools/models.md
-                - name: Finance and Operations-projekttyp
+                - name: Projekttypen Finance and Operations
                   href: dev-tools/projects.md
                 - name: Verktygstillägg för Visual Studio
                   href: dev-tools/developer-tools-add-ins.md
@@ -1054,6 +1052,8 @@
                           href: data-entities/dual-write/link-your-environment.md
                         - name: Aktivera enhetsmappning för dubbelriktad skrivning
                           href: data-entities/dual-write/enable-entity-map.md
+                    - name: Paket för separat dubbelriktad skrivning för programorkestrering
+                      href: data-entities/dual-write/separated-solutions.md
                     - name: Migrering av valutadatatyp för dubbelriktad skrivning
                       href: data-entities/dual-write/currrency-decimal-places.md
                     - name: Ställa in mappning för fälten för försäljningsorderns status
@@ -1164,7 +1164,7 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
                         - name: Felsöka problem från uppgraderingar av Finance and Operations-appar
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Kontrollera konfiguration för dubbelriktad skrivning i Finance and Operations-appar och Dataverse
+                        - name: Verifiera konfiguration av dubbelriktad skrivning i Finance and Operations-appar och Dataverse
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                         - name: Felkoder för hälsokontrollen av tabellmappning
                           href: data-entities/dual-write/table-map-health-check.md
@@ -1184,7 +1184,7 @@
                   href: power-platform/enable-virtual-entities.md
                 - name: Power Apps-portaler med Finance and Operations
                   href: power-platform/power-portal-reference.md
-                - name: Vanliga frågor om virtuella Finance and Operations-entiteter
+                - name: Vanliga frågor om Finance and Operations virtuella enheter
                   href: power-platform/faq.md
             - name: Affärshändelser
               items:
@@ -1526,15 +1526,15 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Support
           items:
-            - name: Få support för Finance and Operations och Lifecycle Services
+            - name: Få hjälp med Finance and Operations och Lifecycle Services
               href: lifecycle-services/lcs-support.md
             - name: Översikt över Dynamics 365-support
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
             - name: Få support för Finance and Operations som drivs av 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
-            - name: Ställa in teknisk support för Finance and Operations-appar
+            - name: Konfigurera teknisk support för Finance and Operations-appar
               href: lifecycle-services/support-experience.md
-            - name: Hantera supportupplevelser för Finance and Operations-appar
+            - name: Hantera upplevelser av support för Finance and Operations-appar
               href: lifecycle-services/cloud-powered-support-lcs.md
             - name: Produktionssupport och övervakning
               href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
@@ -1650,9 +1650,9 @@
               items:
                 - name: Uppgradera från AX 2012 till Finance and Operations
                   href: migration-upgrade/upgrade-overview-2012.md
-                - name: AX 2012-uppgradering – planera med verktyget Uppgraderingsanalys
+                - name: AX 2012-uppgradering – Planera med verktyget Uppgraderingsanalys
                   href: migration-upgrade/upgrade-analyzer-tool.md
-                - name: AX 2012-uppgradering – beräkna insatsen med tjänsten Koduppgradering
+                - name: AX 2012-uppgradering – Beräkna insatsen med tjänsten Koduppgradering
                   href: migration-upgrade/analyze-code-upgrade.md
                 - name: AX 2012-uppgradering – Distribuera en demonstrationsmiljö för analys
                   href: migration-upgrade/analysis-sandbox.md
@@ -1694,11 +1694,11 @@
                       href: migration-upgrade/upgrade-budget-planning.md
             - name: Flytta data från AX 2009
               items:
-                - name: Flytta data från AX 2009 till Finance and Operations
+                - name: Migrera data från AX 2009 till Finance and Operations
                   href: migration-upgrade/data-migration-tool.md
                 - name: AX 2009-migrering – installera verktyg för datamigrering
                   href: migration-upgrade/install-dmt.md
-                - name: AX 2009-migrering – generera kartor
+                - name: AX 2009-migrering – Generera kartor
                   href: migration-upgrade/generate-maps.md
                 - name: AX 2009-migrering – skapa mallar
                   href: migration-upgrade/create-package-templates-dmt.md
