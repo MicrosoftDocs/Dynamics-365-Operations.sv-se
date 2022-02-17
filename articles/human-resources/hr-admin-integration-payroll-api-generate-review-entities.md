@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a90daf02862b9c6e5415999a491d54d841d8f5f9a236b9cc472112145c50e6d2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e1249b29031c3c7b7eb8bcbeee91895d1085b9bd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739285"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066128"
 ---
 # <a name="generate-payroll-entities"></a>Generera lönelisteentiteter
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 Använd denna OData-funktion för att generera de entiteter som behövs för löneintegrering. Om några ändringar görs i dessa entiteter i Personal, t.ex. att lägga till anpassade fält, kan denna funktion anropas igen för att uppdatera metadatan för respektive entitet. Svaret innehåller ett åtgärds-ID som du kan övervaka så att du vet när genereringen har slutförts.
 

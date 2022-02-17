@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9ad7f116f979d571a5e34eee67beb7218a271522
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: f699b00ab7ea2d043e12824015c54439caf8e63c
+ms.sourcegitcommit: d58a891d9fe0aa0e6b2c20329250c8d74ffbee90
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777631"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "8022984"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Leverantörssamarbete med kunder
 
@@ -78,7 +78,7 @@ Om du använder försändelselager kan du använda gränssnittet för leverantö
 
 ## <a name="working-with-rfqs-in-the-vendor-bidding-workspace"></a>Arbeta med anbudsförfrågningar i arbetsytan Budgivning av leverantör
 
-I arbetsytan **Budgivning av leverantör** kan du visa anbudsförfrågningar som företaget har bjudits in att svara på. Du kan också svara på anbudsförfrågningarna. 
+I arbetsytan **Budgivning av leverantör** kan du visa anbudsförfrågningar som företaget har bjudits in att svara på. Du kan också svara på anbudsförfrågningarna.
 
 I arbetsytan visas också alla anbudsförfrågningar som du har vunnit eller förlorat. Om systemet är konfigurerat för den offentliga sektorn, visar arbetsytan dessutom anbudsförfrågningar som är offentligt tillgängliga.
 
@@ -100,9 +100,17 @@ Personer som arbetar inom den offentliga sektorn kan visa öppna och utgångna a
 
 - Välj länken **Öppna publicerade anbudsförfrågningar** för att visa en lista över öppna anbudsförfrågningar som är tillgängliga för allmänheten. En öppen anbudsförfrågan är en anbudsförfrågan som ännu inte har gått ut. Utgångsdatum och -tid finns i huvudet till anbudsförfrågan.
 
-    Om du har blivit inbjuden att buda hittar du samma anbudsförfrågan på sidan **Nya budinbjudningar**. Ibland kanske du vill lämna bud på en öppen anbudsförfrågan, men du har inte blivit inbjuden att buda. I detta fall måste du kanske bjuda in dig själv, förutsatt att kunden har aktiverat självinbjudan för denna anbudsförfrågan.
+    Om du har blivit inbjuden att buda hittar du samma anbudsförfrågan på sidan **Nya budinbjudningar**. Ibland kanske du vill lämna bud på en öppen anbudsförfrågan, men du har inte blivit inbjuden att buda. I detta fall måste du kanske bjuda in dig själv, förutsatt att kunden har aktiverat självinbjudan för denna anbudsförfrågan. 
 
-    Förbättra tillgängligheten för länken **Öppna publicerade begäran om offert** genom att aktivera funktionen **Visa "Öppna publicerade begäran om offert" som en panel** feature. Med den här funktionen konverteras länken till en panel och flyttas till en väl synlig plats, så att det går lätt att hitta den. (Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard.)
+    Sidan **Nya budinbjudningar** kan innehålla ett filter där du kan visa de öppna anbudsförfrågan och identifiera dem som innehåller rader som matchar dina godkända anskaffningskategorier. Om du vill göra det här filtret tillgängligt måste du aktivera funktionen *Låt leverantörer söka efter anbudsförfrågningar efter upphandlingskategori* i ditt system. Administratörer kan använda arbetsytan **funktionshantering** för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
+
+    - **Modul:** *Leverantörsreskontra*
+    - **Funktionsnamn:** *Låt leverantörer söka efter anbudsförfrågningar efter upphandlingskategori* <!-- KFM: I don't see this here, is this right? -->
+
+    Du kan förbättra tillgängligheten för länken **Öppna publicerade begäran om offert** genom att aktivera funktionen *Visa "Öppna publicerade begäran om offert" som en panel* feature. Med den här funktionen konverteras länken till en panel och flyttas till en väl synlig plats, så att det går lätt att hitta den. Administratörer kan använda arbetsytan **funktionshantering** för att kontrollera funktionens status och aktivera den om det behövs. (Från och med Supply Chain Management version 10.0.21 är funktionen aktiverad som standard.) Där visas funktionen på följande sätt:
+
+    - **Modul:** *anskaffning och källa*
+    - **Funktionsnamn:** *Visa länken "Öppna publicerade anbudsförfrågningar" som en panel*
 
 - Välj länken **Stängda publicerade anbudsförfrågningar** för att visa en lista över stängda anbudsförfrågningar som är tillgängliga för allmänheten. En stängd anbudsförfrågan är en anbudsförfrågan har utgått. Utgångsdatum och -tid finns i huvudet till anbudsförfrågan.
 

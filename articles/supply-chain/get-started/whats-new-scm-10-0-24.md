@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: d7dd3bbb0d1aa701757ad7fa525aba04fe9419c9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a254e20dd7fcc29ca520282b4bf9fcd903e4de58
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986313"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087560"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.24 (februari 2022)
 
@@ -34,6 +34,7 @@ Följande tabeller listar de funktioner som ingår i denna version. Vi kan komma
 | Funktionsområde | Funktion | Mer information | Har aktiverats av   |
 |---|---|---|---|
 | Distribuerad hybridtopologi | [Förbättrade arbetsbelastningar för lagerkörning på skalningsenheter](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-warehouse-execution-workloads-scale-units) | [Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-warehousing.md) | Aktiverad som standard. |
+| Distribuerad hybridtopologi | [Starta produktionsorder på arbetsbelastningen för lagerhantering för moln- och kantskalningsenhet](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-manufacturing-execution-workloads-scale-units) | [Arbetsbelastningar för tillverkningskörning för moln- och kantskalenheter](../cloud-edge/cloud-edge-workload-manufacturing.md) | Funktionshantering (*Starta produktionsorder på arbetsbelastningen för lagerhantering för moln- och kantskalningsenhet*)  |
 | Planering | [Planeringsoptimeringssupport för beställningsmarginal och ut ärendemarginal](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-reorder-margin-issue-margin) | [Säkerhetsmarginaler](../master-planning/planning-optimization/safety-margins.md) | Aktiverad som standard. |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funktionsförbättringar som ingår i den här versionen
@@ -47,7 +48,6 @@ Om du vill slå på eller stänga av någon av dessa funktioner måste du göra 
 | Produktionskontroll | Kontroll av materialtillgänglighet på begäran för produktionsorder | Denna funktion gör det snabbare att öppna sidan **Produktionsorder som ska frisläppas** som är tillgänglig från arbetsytan **Hantering av produktionsgolvskörning**. Om den här funktionen inte har den här funktionen kontrollerar systemet automatiskt om material är tillgängliga för alla listade tillverkningsorder så snart du öppnar sidan, vilket kan ta lång tid om du har ett stort antal order. När den här funktionen har aktiverats används i stället en verktygsfältsknapp som du kan använda för att initiera materialkontrollen enbart för valda order och vid behov. |
 | Produktionskontroll | (Förhandsversion) Registrera materialförbrukning i körningsgränssnittet för produktionsgolv (inte WMS) | Med denna funktion kan arbetare använda gränssnittet för produktionsgolvkörning för att registrera materialförbrukning, batchnummer och serienummer. Den här funktionen stöder bara artiklar som inte är aktiverade för att använda avancerade lagerställeprocesser (WMS). Stöd för WMS-aktiverade artiklar planeras för en framtida version.<p>Vissa tillverkare, särskilt de som finns i processindustrier, måste explicit registrera hur mycket material som förbrukas för varje batch eller tillverkningsorder. En arbetare kan till exempel använda en våg för att väga hur mycket material som förbrukats medan de arbetar. För att garantera fullständig spårning av material måste dessa organisationer också registrera vilka batchnummer som förbrukades när varje produkt produceras. |
 | Produktionskontroll | Rapportera som klar om arbetsbelastningen för lagerhantering för moln- och kantskalningsenhet | Med den här funktionen kan personalen använda mobilappen Warehouse Management för att rapportera en tillverknings- eller batchorder som färdig när programmet körs mot en arbetsbörda för lagerstyrning i en enhet för molnbaserad eller kantskala. Mer information finns i [Rapportera som färdig och inlagrad på en skalningsenhet](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
-| Produktionskontroll | Starta produktionsorder på arbetsbelastningen för lagerhantering för moln- och kantskalningsenhet | Med den här funktionen kan personalen använda mobilappen Warehouse Management för att starta en tillverknings- eller batchorder som färdig när programmet körs mot en arbetsbörda för lagerstyrning i en enhet för molnbaserad eller kantskala. |
 | Warehouse management | Nya sidor för lastplaneringsworkbench | Aktiverar två nya workbench-sidorna för lastplanering: **Workbench för inkommande lastplanering** och **Workbench för utgående lastplanering**. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
@@ -70,7 +70,7 @@ Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Finance and Operations-appar
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.24 av Finance and Operations-appar (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.24 av Ekonomi och Drift-appar (februari 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 

@@ -13,18 +13,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 32bf477bb42657b06f22f7677dcb580b38f0a55c
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c2f7b660d364be6e62d484e67908201027190a8a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488064"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065129"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Bädda in arbetsyteapp från Power Apps
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Power Apps är en tjänst som gör det möjligt för både utvecklare och icke-tekniska användare att skapa anpassade företagsprogram för mobila enheter, surfplattor och webben utan att behöva skriva kod. Finance and Operations-appar stöder integrering med Power Apps. Arbetsyteappar som utvecklas av dig, ditt företag eller det bredare ekosystemet kan bäddas in i Finance and Operations-appar utöka produktens funktioner. Exempelvis kan du skapa en arbetsyteapp från Power Apps som kompletterar en Finance and Operations-app med information som hämtas från ett annat system.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Microsoft Power Apps är en tjänst som gör det möjligt för både utvecklare och icke-tekniska användare att skapa anpassade företagsprogram för mobila enheter, surfplattor och webben utan att behöva skriva kod. Ekonomi och Drift-appar stöder integrering med Power Apps. Arbetsyteappar som utvecklas av dig, ditt företag eller det bredare ekosystemet kan bäddas in i Ekonomi och Drift-appar utöka produktens funktioner. Exempelvis kan du skapa en arbetsyteapp från Power Apps som kompletterar en Ekonomi och Drift-app med information som hämtas från ett annat system.
 
 Om du vill veta mer om inbäddning av arbetsyteappar kan du titta på den korta videon [Så här bäddar du in arbetsyteappar](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
@@ -32,7 +35,7 @@ Om du vill veta mer om inbäddning av arbetsyteappar kan du titta på den korta 
 
 När du bäddar in en arbetsyteapp från Power Apps till klienten måste du först hitta eller skapa ett programmed önskade bilder eller funktioner. Det här avsnittet innehåller ingen detaljerad beskrivning av processen för att bygga appar. Om Power Apps är nytt för dig, se [Power Apps-dokumentationen](/powerapps/).
 
-Det finns tre sätt att bädda in en arbetsyteapp i en Finance and Operations-app. Du kan använda den metod som passar just ditt scenario bäst. 
+Det finns tre sätt att bädda in en arbetsyteapp i en Ekonomi och Drift-app. Du kan använda den metod som passar just ditt scenario bäst. 
 
 - Bädda in arbetsyteappen i **Power Apps**-knappen i standardåtgärdsfönstret på en sida. Program som du lägger till på det här sättet visas som artiklar i **Power Apps**-menyknappen, och programmen öppnas i sidofönster. 
 - Bädda in arbetsyteappen direkt på en befintlig sida som en ny fliksida (pivot-flik, snabbflik, blad eller arbetsyta).
@@ -65,7 +68,7 @@ Följande procedur visar hur du bäddar in en arbetsyteapp på en befintlig sida
 
 ### <a name="embedding-a-canvas-app-as-a-full-page-experience-from-the-dashboard"></a>Bädda in en arbetsyteapp som en helsidesupplevelse från instrumentpanelen
 
-Om programmet inte är relaterat till en befintlig sida, eller om du bara vill ha en helsidesupplevelse för appen inuti Finance and Operations-programmet, bör du bädda in en arbetsyteapp från instrumentpanelen.
+Om programmet inte är relaterat till en befintlig sida, eller om du bara vill ha en helsidesupplevelse för appen inuti Ekonomi och Drift-appen, bör du bädda in en arbetsyteapp från instrumentpanelen.
 
 > [!NOTE]
 > Om du vill göra denna funktion tillgänglig måste du aktivera funktionen **Helsidesappar** i funktionshanteringen. 
@@ -83,7 +86,7 @@ När du bäddar in en arbetsyteapp måste du ställa in följande parametrar:
 
 - **Namn** – Ange den text som ska visas för den knapp eller flik som ska innehålla den inbäddade appen. Ofta kan det vara en bra idé att upprepa namnet på appen i det här fältet.
 - **App-ID** – Anger den globala unika identifieraren (GUID) för den arbetsyteapp som du vill bädda in. För att hämta det här värdet hittar du appen på [make.powerapps.com](https://make.powerapps.com) och letar sedan upp den i fältet **Program-ID** under **Detaljer**.
-- **Mata in kontext för appen** – Om du vill kan du välja fältet som innehåller de data som du vill skicka till appen som indata. Om du vill veta mer om hur appen får åtkomst till de data som skickas från Finance and Operations-appar går du till avsnittet [Bygga en app som använder data skickad från Finance and Operations-appar](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) längre fram i detta ämne.
+- **Mata in kontext för appen** – Om du vill kan du välja fältet som innehåller de data som du vill skicka till appen som indata. För information om hur appen kan komma åt data som skickas från Ekonomi och Drift-appar, se avsnittet [Bygga en app som utnyttjar data som skickas från Ekonomi och Drift-appar](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) senare i detta ämne.
 
     Från och med version 10.0.19 kommer den aktuella juridiska personen också att skickas som kontext till arbetsyteappen med hjälp av URL-parametern **cmp**. Detta beteende påverkar inte målarbetsyteappen förrän den appen använder den informationen.
 
@@ -104,15 +107,15 @@ När du har bäddat in en arbetsyteapp på en sida och bekräftat att den funger
     - Om funktionen **Sparade vyer** är avstängd kan systemadministratören tillhandahålla en anpassning som inkluderar arbetsyteappen till en lämplig uppsättning arbetare via sidan **Anpassning**. Du kan också exportera sidans anpassningar och sedan skicka dem till en eller flera användare. Var och en av dessa användare kan sedan importera anpassningen. Verktygsfältet för anpassning har knappar som gör att du kan exportera och importera anpassningar.
 
 > [!NOTE]
-> Om arbetsyteapp har delats med externa användare kan dessa användare inte använda den inbäddade appen i Finance and Operations-appar. De kan emellertid komma åt appen direkt i Power Apps. Externa användare inkluderar gäster och användare som inte tillhör den Microsoft 365 Azure-katalog där Finance and Operations-appen distribueras.
+> Om arbetsyteapp har delats med externa användare kan dessa användare inte använda den inbäddade appen i Ekonomi och Drift-appar. De kan emellertid komma åt appen direkt i Power Apps. Externa användare inkluderar gäster och användare som inte tillhör den Microsoft 365 Azure-katalog där Ekonomi och Drift-appen distribueras.
 
 Se [Anpassa användarupplevelsen](personalize-user-experience.md) för mer information om anpassningsfunktionerna i produkten och hur de används.
 
-## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Skapa en arbetsyteappen som använder data som skickas från Finance and Operations-appar
+## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Skapa en arbetsyteappen som använder data som skickas från Ekonomi och Drift-appar
 
-När du skapar en arbetsyteappen som ska bäddas in i en Finance and Operations-app, är en viktig del av processen att använda indata från den Finance and Operations-appen. Från Power Apps utvecklingsmiljön kan du få åtkomst till indata från en Finance and Operations-app med hjälp av variabeln **Param("EntityId")**. Från och med version 10.0.19 kommer den aktuella juridiska personen dessutom även att skickas arbetsyteappen med hjälp av variabeln **Param("cmp")**. 
+När du skapar en arbetsyteappen som ska bäddas in i en Ekonomi och Drift-app, är en viktig del av processen att använda indata från den Ekonomi och Drift-appen. Från Power Apps utvecklingsmiljön kan du få åtkomst till indata från en Ekonomi och Drift-app med hjälp av variabeln **Param("EntityId")**. Från och med version 10.0.19 kommer den aktuella juridiska personen dessutom även att skickas arbetsyteappen med hjälp av variabeln **Param("cmp")**. 
 
-Exempelvis i appens OnStart-funktion kan du ange indata från Finance and Operations-appar till en variabel så här:
+Exempelvis i OnStart-funktionen för appen kan du ange indata från Ekonomi och Drift-appar till en variabel så här:
 
 ``` Power Apps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
@@ -122,7 +125,7 @@ If(!IsBlank(Param("cmp")), Set(FinOpsLegalEntity, Param("cmp")), Set(FinOpsLegal
 
 ## <a name="viewing-a-canvas-app"></a>Visa en arbetsyteapp
 
-Om du vill visa en inbäddad arbetsyteapp på en sida i Finance and Operations-appar, gå till en sida med en inbäddad app. Kom ihåg att appar kan nås genom att använda **Power Apps**-knappen i standard åtgärdsfönstret. Alternativt kan de visas direkt på sidan som en ny flik, snabbflik, blad eller ett nytt avsnitt på en arbetsyta. När användarna först försöker läsa in ett programpå en sida uppmanas han eller hon att logga in. Det här steget ser till att användarna har rätt behörighet för att använda appen.
+Om du vill visa en inbäddad arbetsyteapp på en sida i Ekonomi och Drift-appar, gå till en sida med en inbäddad app. Kom ihåg att appar kan nås genom att använda **Power Apps**-knappen i standard åtgärdsfönstret. Alternativt kan de visas direkt på sidan som en ny flik, snabbflik, blad eller ett nytt avsnitt på en arbetsyta. När användarna först försöker läsa in ett programpå en sida uppmanas han eller hon att logga in. Det här steget ser till att användarna har rätt behörighet för att använda appen.
 
 ## <a name="editing-an-embedded-app"></a>Redigera en inbäddad app
 

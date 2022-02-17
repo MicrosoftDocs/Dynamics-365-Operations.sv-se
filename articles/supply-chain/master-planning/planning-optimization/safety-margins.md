@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 52740246f745272f238ec3dcf8e53f7310e4b24271da4a5d6388a1b9c4706521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7eb5128f3a337bd728cfe8e6d8d3deb0b6b5ef88
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774859"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074977"
 ---
 # <a name="safety-margins"></a>Säkerhetsmarginaler
 
@@ -61,9 +61,6 @@ Observera att en inleveransmarginal inte används när lagerbehållning används
 
 ### <a name="reorder-margin"></a>Beställningsmarginal
 
-> [!NOTE]
-> **Kommer snart:** den här funktionen stöds inte ännu för planeringsoptimering. Alla värden som anges för **Ändra ordning på marginal som lagts till i artikelledtiden** kommer att behandlas som *0* (noll) tills den stöds.
-
 På bilden nedan beskrivs beställningsmarginalen.
 
 ![Marginal förombeställning.](media/safety-margins-3.png)
@@ -71,9 +68,6 @@ På bilden nedan beskrivs beställningsmarginalen.
 Beställningsmarginalen läggs till före artikelns produktionstid för alla planerade order vid huvudplaneringen. Därför gör det det enklare att placera en leveransorder. Den här marginalen används vanligtvis som buffert för att säkerställa tiden för godkännandeprocesser eller andra interna processer som krävs när leveransorder skapas. Beställningsmarginalen placeras mellan leverans *orderdatum* och *startdatum*.
 
 ### <a name="issue-margin"></a>Utleveransmarginal
-
-> [!NOTE]
-> **Kommer snart:** den här funktionen stöds inte ännu för planeringsoptimering. Alla värden som anges för **Utleveransmarginal som dragits av från behovsdatum** kommer att behandlas som *0* (noll).
 
 På bilden nedan beskrivs utleveransmarginal.
 

@@ -18,17 +18,17 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: edb4d1217617ee3bcb7f528da4aad42fb4fb6b82
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 703f2cb9a1ea8691420765a8598d59f3e6cc6488
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576914"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062962"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Tillhandahålla guider för mixad verklighet för arbetare i produktion
 
 [!include [banner](../includes/banner.md)]
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Arbetare i produktionsprocesser kommer att ha nytta av relevanta instruktioner som ges vid rätt tid inom ramen för deras arbete. *Instruktionerna* gäller i flera arbetsdomäner, t.ex. sammansättning, service, åtgärder, certifiering och säkerhet. I alla dessa grundläggande affärsfunktioner kan de pågående utbildningsinstruktionerna hjälpa medarbetarna att utföra mer och arbeta bättre.
 

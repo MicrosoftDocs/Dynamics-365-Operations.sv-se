@@ -16,20 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 77e0a0e0eb47c331b2b219dc523ecd2c706a4638
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 633740ee1e26d2e4ed2ea7031ef298fb11c2ab58
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345309"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068854"
 ---
-# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för tillverkningskörning för moln- och kantskalningsenheter
+# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för tillverkningskörning för moln- och kantskalenheter
 
 [!include [banner](../includes/banner.md)]
 
-> [!WARNING]
-> Arbetsbelastningen för tillverkningskörningen är vid den här tidpunkten tillgänglig i förhandsgranskning.
+> [!IMPORTANT]
+> Arbetsbelastningen för tillverkningskörningen är för närvarande endast tillgänglig i förhandsvisning.
+>
 > Vissa företagsfunktioner stöds inte fullt ut i den allmänna förhandsgranskningen när enheter för belastningsenheter används.
+>
+> Du kan inte köra förhandsversion av arbetsbelastning för tillverkningskörningen på en skalningsenhet där arbetsbelastningen för lagerkörning också är installerad.
 
 Vid tillverkningskörningen har skalningsenheter följande funktioner:
 
@@ -128,6 +131,22 @@ I den aktuella versionen stöds funktionerna "rapportera som färdig" och "artik
 ### Customize report as finished and putaway functionality
 
  -->
+
+## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>Aktivera och använda startåtgärd på en skalningsenhet
+
+I den aktuella versionen stöds startoperationen för produktions- och batchorder av [körningsarbetsbelastningen för lagerställe](cloud-edge-workload-warehousing.md) (inte av körningsarbetsbelastningen för tillverkning). Om du vill använda den här funktionen vid anslutning till en skalningsenhet måste du slutföra dessa uppgifter:
+
+- Installera både körningsarbetsbelastningen för lagerstället och körningsarbetsbelastningen för tillverkning på din skalningsenhet.
+- Aktivera funktionen *Starta produktionsorder på arbetsbelastningen för lagerhantering för moln- och kantskalningsenhet* i [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Använd mobilappen Warehouse Management om du vill starta tillverknings- eller batchordern.
+
+## <a name="enable-and-use-material-consumption-on-a-scale-unit"></a>Aktivera och använda materialförbrukning på en skalningsenhet
+
+I den aktuella versionen stöds flödet i mobilappen Warehouse Management för registrering av materialförbrukning av [arbetsbelastningar för lagerkörning](cloud-edge-workload-warehousing.md) (inte arbetsbelastning för tillverkningskörning). Om du vill använda den här funktionen vid anslutning till en skalningsenhet måste du slutföra dessa uppgifter:
+
+- Installera både körningsarbetsbelastningen för lagerstället och körningsarbetsbelastningen för tillverkning på din skalningsenhet.
+- Aktivera funktionen *Registrera materialförbrukning i mobilappen på en skalningsenhet* i [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Använd mobilappen Warehouse Management för att registrera materialförbrukning.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

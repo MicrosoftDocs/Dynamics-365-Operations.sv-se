@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8e56688aac445b84d5a9c0df289d48ffefd5767f673f2329f69582e820c27820
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 830e05db47e2e2d3bb5970869bc395cfa73ad603
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738159"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087380"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
 
@@ -138,7 +138,6 @@ Alla arbetsflöden stöder inte bearbetning av produkt i faktisk/nominell vikt m
 - Produkter med faktisk/nominell vikt som är variantaktiverade kan inte användas tillsammans med funktionen för att konvertera en variant av måttenhet.
 - En produkt med faktisk/nominell vikt kan inte markeras som produktpaket i handel.
 - Produkt med faktisk/nominell vikt kan bara användas med en enhetssekvensgrupp med faktisk/nominell vikthanteringsenheter och som har som lägst sekvens av faktisk/nominell viktenhet.
-- För produkter med faktisk/nominell vikt får lagerenheten endast omvandlas till faktisk/nominell viktenhet om konvertering ger en nominell kvantitet som är mer än 1.
 - Inställningen av streckkoder för produkter med faktisk/nominell vikt stöder inte en variabel inställning.
 
 ### <a name="order-processing"></a>Orderbehandling

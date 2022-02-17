@@ -12,14 +12,17 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c2c50fadb38f3c6e20c72288b2c1e23278c10119250a0d0fcde643307cbaf7f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 60e85841ec940ed65d73dc052848168be70301d6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745074"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069333"
 ---
 # <a name="user-interface-elements"></a>Användargränssnittselement
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I det här avsnittet beskrivs de användargränssnittselement som används i appen. Innan användarna kan navigera i gränssnittet är det viktigt att känna till namn och funktioner för de element som utgör gränssnittet.
 

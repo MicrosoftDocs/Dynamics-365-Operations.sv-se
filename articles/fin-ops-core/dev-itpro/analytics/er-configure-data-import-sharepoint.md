@@ -2,7 +2,7 @@
 title: Konfigurera dataimport från SharePoint
 description: Det här avsnittet beskriver hur du importerar data från Microsoft SharePoint.
 author: NickSelin
-ms.date: 11/19/2020
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 6cd717c0c599d68574a5a064761c8d6777418515
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675355"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074776"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurera dataimport från SharePoint
 
@@ -192,11 +192,11 @@ Du kan också öppna sidan **Filtillstånd för källorna** genom att välja **O
 
 ## <a name=""></a><a name="limitations">Begränsningar</a>
 
-ER-ramverket erbjuder inte möjlighet att initiera ett nytt batchjobb som kör en modellmappning i obevakat läge för dataimport. För att göra detta måste du utveckla ny logik så att den konfigurerade ER-modellmappningen kan anropas från programmets användargränssnitt för att importera data från inkommande filer. Därför krävs en del konstruktionsarbete. 
+I versioner av Dynamics 365 Finance före version 10.0.25, erbjuder användargränssnittet (UI) i ER-ramverket inte möjligheten att initiera ett nytt batchjobb som kommer att köra en modellmappning för dataimport i obevakat läge. Istället måste du utveckla ny logik så att den konfigurerade ER-modellmappningen kan anropas från programmets användargränssnitt för att importera data från inkommande filer. För att den här logiken ska kunna utvecklas krävs vissa tekniska åtgärder. 
 
-Mer information om relevant ER-API finns i [Kod för att köra formatmappning för dataimport](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) i avsnittet om [API-ändringar i ER-ramverk för Application update 7.3](er-apis-app73.md).
+Mer information om relevant ER-API finns i [Kod för att köra formatmappning för dataimport](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) i avsnittet om [API-ändringar i ER-ramverk för Application update 7.3](er-apis-app73.md). Granska koden i klassen `BankImport_RU` för modellen `Application Suite` för att se hur din anpassade logik kan implementeras. Klassen `BankImport_RU` utökar `RunBaseBatch`-klassen. Granska i synnerhet metoden `runER()` där `ERIModelMappingDestinationRun`-objektet skapas som körning av en ER-modellmappning.
 
-Granska koden i klassen `BankImport_RU` för modellen `Application Suite` för att se hur din anpassade logik kan implementeras. Klassen utökar `RunBaseBatch`-klassen. Granska i synnerhet metoden `runER()` där `ERIModelMappingDestinationRun`-objektet skapas som körning av en ER-modellmappning.
+I Ekonomi version 10.0.25 och senare erbjuder ER-ramverkets gränssnitt möjligheten att initiera ett nytt batchjobb som kommer att köra en modellmappning för dataimport i obevakat läge. Mer information om den här processen finns i [Importera data i batchläge från manuellt valda filer](er-configure-data-import-batch.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
@@ -205,6 +205,8 @@ Granska koden i klassen `BankImport_RU` för modellen `Application Suite` för a
 [Ändringar av API för ER-ramverk i Application update 7.3](er-apis-app73.md)
 
 [Ändringar av API för ER-ramverk i Application update 10.0.23](er-apis-app10-0-23.md)
+
+[Ändringar av API för ER-ramverk i Application update 10.0.25](er-apis-app10-0-25.md)
 
 
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec6d47c44136f7a105a702358370dd676d9339c1
-ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
+ms.openlocfilehash: a80bedd0224f1e31dfec4e9f4c39ad1ed75d7f2f
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8018358"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024577"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge---release-10025-update"></a>Dynamics 365 Human Resources infrastrukturkoppling – version 10.0.25 uppdatering
 
@@ -53,7 +53,7 @@ Kopplingen blir konsekvent för Personal-användare på följande sätt:
     | Skriv ut prestationsgranskningar | Du kan skriva ut prestandagranskningar i PDF-format. | Allmänt tillgängligt | 
     | Anpassade länkar i **Självbetjäning för chef** | Du kan skapa anpassade länkar som visas i avsnittet **Relaterade länkar** i **Självbetjäning för chef**. | Allmänt tillgängligt | 
     | Kompensationsvy för korsföretag | Användarna kan visa kompensationsplaner i **självbetjäning för chef** för alla juridiska personer, utan att behöva byta företag. | Allmänt tillgängligt | 
-    | Konfigurera flera kompensationsnivåer efter jobb\*&dagger; | Jobb har nu stöd för flera kompensationsnivåer. | Allmänt tillgängligt | 
+    | Konfigurera flera kompensationsnivåer efter jobb\*&dagger; | Jobb har nu stöd för flera kompensationsnivåer. | Förhandsgranska | 
     | Uppgiftshantering\* | Du kan skapa checklistor och uppgifter för registrering, avregistrering och övergångsperiod. | Förhandsgranska | 
     | Strömlinjeformad medarbetarinmatning | Med den här funktionen får du uppdaterad användarupplevelse på den befintliga sidan **arbetare**. | Förhandsgranska | 
     | Förbättringar av personalavdelningens användarupplevelse | Se registret i nästa avsnitt.  | Förhandsgranska | 

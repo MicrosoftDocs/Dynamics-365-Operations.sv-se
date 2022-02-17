@@ -2,7 +2,7 @@
 title: Organisera personalen efter avdelningar, jobb och befattningar
 description: Detta ämne beskriver konceptuell information som berör avdelningar, jobb och befattningar som utgör organisationselement som underhålls i Personal.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 51335cba0e0dce755ce36fbe13c6294fca58d797
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: 2b4c1efac249b315de25348a104f00a613c32df9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731818"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071546"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisera personalen efter avdelningar, jobb och befattningar
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -48,30 +51,16 @@ En avdelning är en driftenhet som representerar en kategori eller ett funktione
 
 ## <a name="jobs-and-positions"></a> Jobb och befattningar
 Ett jobb är en samling uppgifter och ansvarsområden som krävs av en person, som utför ett jobb. En befattning är ett exempel på ett enskilt jobb. Ansvarsområden, jobbuppgifter, jobbfunktioner, information om färdigheter, intyg och utbildning som är obligatoriska för ett jobb, är också obligatoriska för befattningar som är kopplade till ett jobb.
+
 ### <a name="job-tasks"></a>Jobbuppgifter
+
 Du kan skapa jobbuppgifter som beskriver grundläggande uppgifter, som en anställd i en befattning för det jobbet måste utföra. Samma jobbuppgift kan läggas till flera jobb och befattningar eftersom dessa jobb ärver jobbuppgifterna. Exempel på jobbuppgifter finns i följande tabell.
 
-<table>
-<thead>
-<tr class="header">
-<th>Jobb</th>
-<th>Jobbuppgift</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Försäljningschef</td>
-<td><ul>
-<li><span class="input">Perf-granskning</span> – Granska varje säljares jobbprestanda.</li>
-<li><span class="input">Abs-granskning</span> – Godkänna eller avvisa varje säljares frånvaroförfrågningar eller registreringar.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Redovisare</td>
-<td><span class="input">FIN-rapport</span> – Aktuella veckovisa ekonomiska rapporter till ekonomichef.</td>
-</tr>
-</tbody>
-</table>
+| Jobb           | Jobbuppgift                                                |
+|---------------|-------------------------------------------------------------|
+| Försäljningschef | Perf-granskning – Granska varje säljares jobbprestanda.    |
+| Redovisare    | Abs-granskning – Godkänna eller avvisa varje säljares frånvaroförfrågningar eller registreringar. |
+
 
 ### <a name="job-functions"></a>Jobbfunktioner
 

@@ -4,18 +4,19 @@ description: Detta ämne ger information, se moln och kantskalningsenhet med arb
 author: cabeln
 ms.date: 04/22/2021
 ms.topic: article
+ms.search.form: ScaleUnitWorkloadsWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3111de1f9862cbf926e763f963c86059f4121fc0
-ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
+ms.openlocfilehash: 593331a3f1073edb6a50c9bfc66e0723d222832a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7733449"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065774"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skalningsenheter i en distribuerad hybridtopologi
 
@@ -51,8 +52,7 @@ Du kan använda [portalen för skalningsenhetsansvarig](https://sum.dynamics.com
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Särskilda arbetsbelastningsmöjligheter för distributionslagerhantering i en skalningsenhet
 
-Med hjälp av lagerstyrningsarbetsbelastningen kan du köra lagerstyrningsprocesser för en enskild distribution.
-För mer information, se [Arbetsbelastningar för hantering av distributionslager för moln- och kantskalningsenheter](cloud-edge-workload-warehousing.md).
+Arbetsbelastningen fär Warehouse management är den första distribuerade arbetsbelastningen för skalningsenheter som har frisläppts för allmän tillgänglighet. Det gör det möjligt för dina lagerställeåtgärder att anpassa och köra i en miljö med underhåll som inte är underhåll, genom att använda enstaka underhållsfönster. Arbetsbelastningen för lagerstyrning har stöd för de flesta hanteringsprocesserna för lagerställen i företag. För mer information, se [Arbetsbelastningar för hantering av distributionslager för moln- och kantskalningsenheter](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Särskilda arbetsbelastningsmöjligheter för tillverkningskörning i en skalningsenhet
 

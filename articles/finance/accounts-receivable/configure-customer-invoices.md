@@ -1,26 +1,26 @@
 ---
 title: Skapa en kundfaktura
-description: En **kundfaktura för en försäljningsorder** är en faktura som är relaterad till en försäljning och som en organisation skickar till en kund.
+description: En kundfaktura för en försäljningsorder är en faktura som är relaterad till en försäljning och som en organisation skickar till en kund.
 author: ShivamPandey-msft
-ms.date: 01/12/2018
+ms.date: 02/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 369f0737ee4026c32ffbae6b11b5815c5548d83d564aebf2eae4b1c246e73508
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723881"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087433"
 ---
 # <a name="create-a-customer-invoice"></a>Skapa en kundfaktura
 
@@ -42,6 +42,23 @@ Mer information finns i
 
 
 En **proformafaktura** är en faktura som förbereds som en uppskattning av de faktiska fakturabeloppen innan fakturan bokförs. Du kan skriva ut en proformafaktura för antingen en kundfaktura för en försäljningsfaktura eller för en fritextfaktura.
+
+## <a name="using-sales-order-customer-invoice-data-entities"></a>Använda försäljningsorder kundfaktura dataenheter
+Du kan använda dataenheter när du vill importera och exportera information om en kundfaktura för en försäljningsorder. Det finns olika enheter för informationen i försäljningsfakturahuvudet och på raderna på försäljningsfakturan.
+
+Följande enheter är tillgängliga för informationen i försäljningsfakturahuvudet:
+
+- Entiteten **Försäljningsfaktura journalhuvud** (SalesInvoiceJournalHeaderEntity)
+- **Försäljningsfakturahuvuden för V2** entitet (SalesInvoiceHeaderV2Entity)
+
+Vi rekommenderar att du använder entiteten **Försäljningsfaktura journalhuvud**, eftersom den ger en mer resultaterfarenhet vid import och export av försäljningshuvud. Den här enheten innehåller inte kolumnen **Momsbelopp** (INVOICEHEADERTAXAMOUNT), som representerar momsvärdet i försäljningsfakturans rubrik. Om ditt affärsscenario kräver den informationen använder du enheten **Försäljningsfakturahuvuden V2** för att importera och exportera informationen i försäljningsfakturahuvudet.
+
+Följande enheter är tillgängliga för informationen i försäljningsfakturarader:
+
+- Entiteten **Rader på kundfaktura** (BusinessDocumentSalesInvoiceLineItemEntity)
+- Entiteter **Försäljningsfakturarader V3** (SalesInvoiceLineV3Entity)
+
+När du bestämmer vilken radenhet som ska användas för exporter ska du överväga om en fullständig push eller en stegvis push ska användas. Titta även på datasammansättningen. Entiteten **Försäljningsfakturarader V3** har stöd för mer komplexa scenarier (till exempel mappning till lagerfält). Det stöder också exportscenarier med fullständiga push-överföring. För stegvisa push-överföringar rekommenderar vi att du använder enheten för **kundfakturarader**. Den här enheten innehåller en mycket enklare datasammansättning än entiteten **Försäljningsfakturaraderna V3**. Den föredras, särskilt om lagerfältintegrationen inte behövs. På grund av skillnader i mappningsstöd mellan radentiteterna har entiteten **kundfakturarader** vanligtvis snabbare prestanda än entiteten **Försäljningsfakturarader V3**.
 
 ## <a name="post-and-print-individual-customer-invoices-that-are-based-on-sales-orders"></a>Bokför och skriv ut enskilda kundfakturor baserade på försäljningsorder
 Använd den här processen för att skapa en faktura baserat på en försäljningsorder. Du kan göra detta om du väljer att fakturera kunden innan du levererar varor eller tjänster. 
