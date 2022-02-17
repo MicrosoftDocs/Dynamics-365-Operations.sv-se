@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f4b9f09db8465cc55c9b0c4dc403c2c7a3647d7e
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: 67682b6ea949183c2697b658bb77925a791e7da1
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7728728"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071609"
 ---
 # <a name="set-up-positions"></a>Ställ in befattningar
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -35,48 +38,47 @@ Befattningar är ett viktigt element i den lägre nivån i en organisationshiera
 
     Fälten **Jobbeskrivning**, **Rubrik** och **Heltidsmotsvarande anställningsfaktor** kopieras automatiskt fårn valt jobb till befattningen.
 
-5. ResolveChanges jobbet.
-6. Välj **Skapa befattning**.
-7. I fältet **Avdelning** anger eller väljer du ett värde.
-8. I fältet **Befattningstyp** anger eller väljer du ett värde.
-9. I fältet **Kompensationsregion** anger eller väljer du ett värde.
+5. Välj **Skapa befattning**.
+6. I fältet **Avdelning** anger eller väljer du ett värde.
+7. I fältet **Befattningstyp** anger eller väljer du ett värde.
+8. I fältet **Kompensationsregion** anger eller väljer du ett värde.
 
     Fältet **Kompensationsregion** bestämmer reglerna för kompensationberättigande och de fasta ökningsbudgeterna som gäller för en medarbetare i den befattningen.
 
-10. I fältet **Tillgänglig för tilldelning** anger du datum och tid.
-11. Visa avsnittet **Befattningens varaktighet**.
+9. I fältet **Tillgänglig för tilldelning** anger du datum och tid.
+10. Visa avsnittet **Befattningens varaktighet**.
 
     Befattningens varaktighet anges som standard utifrån aktivering och avyttringsdatum som angetts tidigare.
 
-12. Visa avsnittet **Rapporter till befattning**.
+11. Visa avsnittet **Rapporter till befattning**.
 
     När du tilldelar en anställd till en befattning som rapporterar till en annan befattning, skapar du en direktrapporteringsrelation mellan arbetarna som tilldelas de två befattningarna.
 
-13. Välj **Ny** för att öppna dialogrutan i listrutan.
-14. I fältet **Rapporter till** anger eller väljer du ett värde.
-15. Markera **Skapa**.
-16. Visa avsnittet **Medarbetartilldelning**.
-17. Visa avsnittet **Relationer**.
+12. Välj **Ny** för att öppna dialogrutan i listrutan.
+13. I fältet **Rapporter till** anger eller väljer du ett värde.
+14. Markera **Skapa**.
+15. Visa avsnittet **Medarbetartilldelning**.
+16. Visa avsnittet **Relationer**.
 
     Om din organisation använder en matrishierarki eller en annan anpassad hierarki, kan du ställa in befattninghierarkityper, och sedan lägga till rapporteringrelationer till befattningar för varje hierarkityp som du ställer in.
 
-18. Markera **Lägg till**.
-19. Markera vald rad i listan.
-20. I fältet **Hierarkinamn** anger eller väljer du ett värde.
-21. i fältet **Rapporter till befattning** anger eller väljer du ett värde.
-22. Visa avsnittet **Löner**.
-23. I fältet **Lönecykel** anger eller väljer du ett värde.
-24. I fältet **Betalas senast** anger elelr väljer du ett värde.
-25. I fältet **Ordinarie timmar per år** anger du ett nummer.
+17. Markera **Lägg till**.
+18. Markera vald rad i listan.
+19. I fältet **Hierarkinamn** anger eller väljer du ett värde.
+20. i fältet **Rapporter till befattning** anger eller väljer du ett värde.
+21. Visa avsnittet **Löner**.
+22. I fältet **Lönecykel** anger eller väljer du ett värde.
+23. I fältet **Betalas senast** anger elelr väljer du ett värde.
+24. I fältet **Ordinarie timmar per år** anger du ett nummer.
 
     Det värde som du anger är antalet regelbundet betalda timmar som medarbetare med den här befattningen förväntas arbeta varje år.
 
-26. Visa avsnittet **Fackförening**.
-27. Dölj avsnittet **Fackförening**.
-28. Visa avsnittet **Ekonomisk dimension**.
-29. I fältet **Fördelningsmall** anger eller väljer du ett värde.
-30. I fältet **Avdelning** anger eller väljer du ett värde.
-31. Välj **Spara**.
+25. Visa avsnittet **Fackförening**.
+26. Dölj avsnittet **Fackförening**.
+27. Visa avsnittet **Ekonomisk dimension**.
+28. I fältet **Fördelningsmall** anger eller väljer du ett värde.
+29. I fältet **Avdelning** anger eller väljer du ett värde.
+30. Välj **Spara**.
 
 
 

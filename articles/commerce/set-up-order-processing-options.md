@@ -2,7 +2,7 @@
 title: Ställ in kanaler för kundtjänst
 description: Det här avsnittet innehåller information om hur du bearbetar order till kundtjänst med Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/06/2020
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5f9afd1b67d6b164facc4dd15a8680866fe8c5b4e4b491d969cda6554eebb1de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64669c5bf71a4f1673f5ad2c46db7d3a2eaf2a97
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750658"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092442"
 ---
 # <a name="set-up-call-center-channels"></a>Ställa in kundtjänstkanaler
 
@@ -56,6 +56,9 @@ Om inställningen **aktivera slutförande av order** är aktiv för kundtjänstk
 Dessutom om inställningen **aktivera slutförande av order** är aktiv när användare skapar försäljningsorder och arbetar i läget för registrering av radartikel kommer fältet **källa** att vara tillgängligt på den huvudsakliga försäljningsorderrubriken. Fältet **källa** används för att hämta en [katalogkällkod](/dynamics365/unified-operations/retail/call-center-catalogs) i ett försäljningsscenario med direkt marknadsföring. Den här koden kan sedan ge särskilda priser och kampanjer.
 
 Även om inställningen **aktiverar slutförande av order** är inaktiverad, kan användare fortfarande tillämpa en källkod till en försäljningsorder. Men de måste öppna rubriken för försäljningsorderinformation för åtkomst till fältet **källa**. Med andra ord krävs vissa ytterligare klick. Samma sak gäller för funktioner som slutför transport och expedierade order. Dessa funktioner är tillgängliga för alla order som har skapats i till en kundtjänst. Men när inställningen **aktivera slutförande av order** aktiveras kan användare visa konfigurationen av funktionerna i försäljningsrubriken medan de finns i radpostvyn. De behöver inte gå ner till rubrikinformationen för försäljningsorder för att hitta lämpliga inställningar och fält.
+
+> [!NOTE]
+> När funktionen **Flerkanals orderbetalningar för Commerce** är aktiverad kommer knappen callcenter **Aktivera slutförande av order** kommer att döljas i huvudkontoret på snabbfliken **Allmänt** för din kanal på **Retail och Commerce \> Kanaler \> Callcenter**.
 
 ### <a name="enable-direct-selling"></a>Aktivera direkt försäljning
 

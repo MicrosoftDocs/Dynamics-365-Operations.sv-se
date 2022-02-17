@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e03becf2572aeaf213e8c3a0e874405ed0d5613
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7753036"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063247"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Borttagna eller utfasade funktioner i tidigare versioner
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 > [!IMPORTANT]
-> Det här avsnittet uppdateras inte längre. Om du vill visa en aktuell lista över funktioner som har tagits bort från Finance and Operations-appar kan du söka efter innehållet **"borttagna eller gamla funktioner"** som hör till det program du använder.
+> Det här avsnittet uppdateras inte längre. Om du vill visa en aktuell lista över funktioner som har tagits bort från Ekonomi och Drift-appar kan du söka efter innehållet **borttagna eller gamla funktioner** som hör till det program du använder.
 
 I det här ämnet beskrivs funktioner som har tagits bort eller utfasat från Dynamics 365 for Finance and Operations och tidigare versioner av produkten.
 
@@ -37,7 +37,7 @@ I det här ämnet beskrivs funktioner som har tagits bort eller utfasat från Dy
 
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
-Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
+Detaljerad information om objekt i Ekonomi och Drift-appar finns i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Ekonomi och Drift-appar.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finans 10.0.7 med plattformsuppdatering 31
 
@@ -254,7 +254,7 @@ Stöd för att skapa projektbaserade försäljningsorder där projektkontraktet 
 | **Ersatt av en annan funktion?**   | Denna varning ersätts av ett kompileringsfel i plattformsuppdatering 26. Ändringen är bakåtkompatibel vid körning, vilket innebär att om du kör plattformsuppdatering 25 eller senare kan detta distribueras i begränsad eller produktionsmiljö utan att behöva ändra anpassad kod. Denna ändring påverkar endast utveckling och kompileringstid. |
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell – Varningen blir ett kompileringsfel i en kommande plattformsuppdatering 26. |
+| **Status**                         | Inaktuell - Varningen blir ett kompileringsfel i en kommande plattformsuppdatering 26. |
 
 ## <a name="finance-and-operations-1000-with-platform-update-24"></a>Finance and Operations 10.0.0 med plattformsuppdatering 24
 
@@ -265,7 +265,7 @@ Stöd för att skapa projektbaserade försäljningsorder där projektkontraktet 
 | **Ersatt av en annan funktion?**   | Nr. |
 | **Produktområden som påverkas**         | Produktinformationshantering |
 | **Distribueringsalternativ**              | Allt  |
-| **Status**                         | Tas bort från Finance and Operations 10.0.0 med plattformsuppdatering 24.|
+| **Status**                         | Borttagen med Finance and Operations 10.0.0 med plattformsuppdatering 24.|
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 med plattformsuppdatering 23
@@ -302,7 +302,7 @@ Inbäddade KPI:er (Key Performance Indicators) kan utformas i Visual Studio av e
 | **Ersatt av en annan funktion?**   | Denna varning ersätts av ett kompileringsfel i framtiden. |
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell: varningen är ett kompileringstidsfel med plattformsuppdateringar för version 10.0.11 av Finance and Operations-appar. |
+| **Status**                         | Inaktuell: varningen är ett kompileringstidsfel med plattformsuppdateringar för version 10.0.11 av Ekonomi och Drift-appar. |
 
 #### <a name="complete-list"></a>Fullständig lista
 Du hittar en fullständig lista över API:er som är inaktuella i [Avskrivning av metoder och metadataelement](deprecation-deletion-apis.md).
@@ -329,7 +329,7 @@ Funktionen för att konfigurera .txt och .xml-format för deklarationer.
 | **Ersatt av en annan funktion?**   | Ja. |
 | **Produktområden som påverkas**         | Redovisning |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Tas bort från Finance and Operations 8.1 med plattformsuppdatering 20. |
+| **Status**                         | Borttagen med Finance and Operations 8.1 med plattformsuppdatering 20. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Ekonomisk rapportgenerator för Ryssland
 Ett verktyg för inställning av datainsamling för redovisning och momsrapporter behövs och exportera data till XLS och DOC-rapportmallar Funktionella delar: exportera data till XLS och DOC rapportmallar, frågor, fasta krav tas bort. 
@@ -340,7 +340,7 @@ Ett verktyg för inställning av datainsamling för redovisning och momsrapporte
 | **Ersatt av en annan funktion?**   | Ja. Användargränssnittet för installationen av ekonomirapporter ska användas för att förbereda datainsamlingsregler av huvudbokskonton eller skatteregister. Exportera data till olika filtyper, fasta krav och frågeliknande datainsamlingsregler ska konfigureras i elektronisk rapportering. |
 | **Produktområden som påverkas**         | Huvudbok. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Tas bort från Finance and Operations 8.1 med plattformsuppdatering 20. |
+| **Status**                         | Borttagen med Finance and Operations 8.1 med plattformsuppdatering 20. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integration med externa leverantörer för att skicka elektronisk rapportering via kommunikationskanaler för Ryssland
 Funktionen exporterar genererade elektroniska filer av deklarationer till mapp för vidare sändning till officiella leverantörer av elektronisk rapportering samt importera tillstånd tillbaka.
@@ -351,7 +351,7 @@ Funktionen exporterar genererade elektroniska filer av deklarationer till mapp f
 | **Ersatt av en annan funktion?**   | Ja.  |
 | **Produktområden som påverkas**         | Redovisningsuppgifter, skatt |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Tas bort från Finance and Operations 8.1 med plattformsuppdatering 20. |
+| **Status**                         | Borttagen med Finance and Operations 8.1 med plattformsuppdatering 20. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Guiden för vinstskattregister
@@ -363,7 +363,7 @@ Funktion för att skapa mallar för nya vinstskattregister. Den här funktionen 
 | **Ersatt av en annan funktion?**   | Nej |
 | **Produktområden som påverkas**         | Skatt |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Tas bort från Finance and Operations 8.1 med plattformsuppdatering 20. |
+| **Status**                         | Borttagen med Finance and Operations 8.1 med plattformsuppdatering 20. |
 
 ### <a name="payroll-and-human-resources-for-russia"></a>Löner och Personal för Ryssland
 Rysk landsspecifik modul för hantering av personaladministrationsinformation, tidrapportinformation för anställda, löneredovisning och skapande av löneutdrag. 
@@ -379,7 +379,7 @@ Rysk landsspecifik modul för hantering av personaladministrationsinformation, t
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 med plattformsuppdatering 15
 Inga funktioner har tagit bort eller ersatts med den här versionen. Plattformsuppdatering 15 är kumulativ och innehåller nya eller ändrade funktioner från plattformsuppdatering 13, plattformsuppdatering 14 och plattformsuppdatering 15.
 
-## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise edition 7.3 med plattformsuppdatering 12
+## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise edition 7.3 med plattformsuppdatering 12.
 
 ### <a name="personalized-product-recommendations"></a>Anpassade produktrekommendationer 
 Med start den 15 februari 2018 kommer återförsäljare inte längre kunna visa anpassade produktrekommendationer på en butikskassa (POS). Mer information finns i [Översikt över produktrekommendationer](../../../commerce/product-recommendations.md).  
@@ -401,7 +401,7 @@ Möjligheten att införa anpassade funktioner som ska användas i ER uttrycksver
 | **Ersatt av en annan funktion?**   | Ingen. När den nya inbyggda funktionen krävs måste en ny tilläggsbegäran sändas till ER-ramverkets team.<br><br>Som en tillfällig lösning medan den begärda funktionen är under utveckling av ER-teamet kan logiken som krävs programmeras som en metod för en anpassad programklass. Den här metoden kan användas i ER-uttryck som en egenskap för den tillagda ER-datakällan i typen **Application\Class** som refererar till den anpassade programklassen.  |
 | **Produktområden som påverkas**         | Elektroniskt rapporteringsramverk                                                      |
 | **Distribueringsalternativ**              | Allt                                                                                      |
-| **Status**                         | Tas bort från Finance and Operations, Enterprise edition 7.3.    |
+| **Status**                         | Borttagen med Finance and Operations, Enterprise edition 7.3.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Lager per artikelgrupp och Lager per åldersfördelningsrapport för lagerdimension 
 
@@ -416,7 +416,7 @@ Dessa två rapporter stöds inte längre i Finance and Operations. I stället ka
 | **Status**                       | Inaktuell: Menyalternativen för de två rapporterna har tagits bort i version 7.3. Koden för rapporterna finns emellertid kvar i produkten Planen är att ta bort koden i framtida versioner. |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-innehållspaket finns på AppSource
-Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat** och **Retail Channel Performance** som publicerades på webbplatsen [Microsoft AppSource](https://appsource.microsoft.com), är inaktuella till följd av produktuppdateringar i Microsoft Power BI. Systemadministrationsformulär som brukade användas för att distribuera dessa innehållspaket till PowerBI.com används även i Finance and Operations.
+Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat** och **Retail Channel Performance** som publicerades på webbplatsen [Microsoft AppSource](https://appsource.microsoft.com), är inaktuella till följd av produktuppdateringar i Microsoft Power BI. Systemadministrationformulär som brukade användas för att distribuera dessa innehållspaket till PowerBI.com används även i Finance and Operations.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -498,7 +498,7 @@ Med start den 15 februari 2018 kommer återförsäljare inte längre kunna visa 
 | **Status**                         |Borttagen från den 15 februari 2018. Detta påverkar kunder som kör Dynamics 365 for Retail 7.2 och senare. |
 
 
-## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise edition juli 2017 med plattformsuppdatering 8
+## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise edition juli 2017 med plattformsuppdatering 8.
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Valutakonvertering för redovisnings- och rapporteringsvalutor
 
@@ -514,12 +514,12 @@ Valutakonvertering för redovisnings- och rapporteringsvalutor infördes när eu
 
 ### <a name="warehouse-mobile-devices-portal"></a>Warehouse Mobile Devices-portalen
 
-Warehouse mobile devices portalen (WMDP) är en fristående komponent som är avsedd för eget lokal distribution. Den här komponenten stöds inte längre i Finance and Operations. Ett enhetligt program som förbättrar användarupplevelsen har ersatt funktionen i WMDP.
+Warehouse mobile devices portalen (WMDP) är en fristående komponent som är avsedd för eget lokal distribution. Denna komponent stöds inte längre i Finance and Operations. Ett enhetligt program som förbättrar användarupplevelsen har ersatt funktionen i WMDP.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Dubblettfunktion.       |
-| **Ersatt av en annan funktion?**   | Ja. Funktionen har ersatts med Finance and Operations – lagerhållning. Mer information om inställningar, och förutsättningar finns i [Installera och konfigurera lagerstyrningsappen – översikt](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Ersatt av en annan funktion?**   | Ja. Den här funktionen har ersatts av Finance and Operations - lagring. Mer information om inställningar, och förutsättningar finns i [Installera och konfigurera lagerstyrningsappen - översikt](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Produktområden som påverkas**         | Lager- och transporthantering     |
 | **Distribueringsalternativ**              | Warehouse mobile devices portalen (WMDP) är en fristående komponent som är avsedd för eget lokal distribution.               |
 | **Status**                         | Inaktuell: Måltidsramen för att ta bort funktioner är Q4 2019.   |
@@ -870,7 +870,7 @@ Ett arbetsflöde för hantering av genereringen av medarbetare är en av flera a
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Prestandahantering har gjorts om helt i Finance and Operations.     |
+| **Orsak till inaktuell/borttagning** | Prestandahantering har helt formats om i Finance and Operations.     |
 | **Ersatt av en annan funktion?**   | Den omformade prestandahanteringsfunktionen innehåller mer kontroll över innehållet av mål, måtten som används för att spåra framsteg och bilaga med förklarande dokumentation. Mål kan lagras som mallar och sedan återanvändas. Den här funktionen kan hjälpa dig att snabbare ställa in ytterligare mål för medarbetarna. |
 | **Produktområden som påverkas**         | Administration av humankapital                 |
 | **Status**                         | Borttagen från Dynamics 365 for Operations version 1611. |

@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: bce58631ecd54bb90993bd552d529d3b379de1b1
-ms.sourcegitcommit: 6762a674a552353d9f53587923c9acba9b43cb56
+ms.openlocfilehash: e9dc3e6c5fbec9636370b64a9bbdcf8a5834d332
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "7917740"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061846"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering av valutatyp för dubbelriktad skrivning
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Du kan öka antalet decimaler som stöds för valutavärden till maximalt 10. Standardgränsen är fyra decimaler. Genom att öka antalet decimaler bidrar du till att undvika dataförlust när du använder dubbelriktad skrivning för att synkronisera data. Ökningen av antalet decimaler är att välja en ändring. Om du vill implementera den måste du begära hjälp från Microsoft.
 
@@ -29,7 +29,7 @@ Det finns två steg i processen att ändra antalet decimaler:
 1. Begär migrering från Microsoft.
 2. Ange antalet decimalplatser i Dataverse.
 
-Finance and Operations-appen och Dataverse måste stödja samma antal decimaler i valutavärden. I annat fall kan det hända att data går förlorade när den här informationen synkroniseras mellan appar. Vid migreringsprocessen omkonfigureras det sätt på vilket valuta- och växelkursvärden lagras, men inga data ändras. När migreringen är slutförd kan antalet decimaler för valutakoder och priser ökas och de data som användarna anger och visar kan ha mer decimal precision.
+Ekonomi och Drift-appen och Dataverse måste stödja samma antal decimaler i valutavärden. I annat fall kan det hända att data går förlorade när den här informationen synkroniseras mellan appar. Vid migreringsprocessen omkonfigureras det sätt på vilket valuta- och växelkursvärden lagras, men inga data ändras. När migreringen är slutförd kan antalet decimaler för valutakoder och priser ökas och de data som användarna anger och visar kan ha mer decimal precision.
 
 Migrering är valfritt. Om du kan ha nytta av stödet för fler decimaler rekommenderar vi att du tar över migreringen. Organisationer som inte kräver värden med fler än fyra decimalplatser behöver inte migreras.
 
@@ -37,7 +37,7 @@ Migrering är valfritt. Om du kan ha nytta av stödet för fler decimaler rekomm
 
 Lagring för befintliga valuta kolumner i Dataverse kan inte hantera fler än fyra decimaler. Under migreringsprocessen kopieras därför valutavärden till nya interna kolumner i databasen. Den här processen sker kontinuerligt tills alla data har migrerats. Vid slutet av migreringen ersätter de nya lagringstyperna de gamla lagringstyperna, men datavärdena ändras inte. Valutakolumner kan sedan stödja upp till 10 decimaler. Under migreringsprocessen kan Dataverse fortfarande användas utan avbrott.
 
-På samma gång ändras valutakurserna så att de stöder upp till 12 decimaler i stället för den aktuella gränsen på 10. Den här ändringen krävs för att antalet decimaler ska vara samma i både Finance and Operations-appen och Dataverse.
+På samma gång ändras valutakurserna så att de stöder upp till 12 decimaler i stället för den aktuella gränsen på 10. Den här ändringen krävs för att antalet decimaler ska vara samma i både Ekonomi och Drift-appen och Dataverse.
 
 Migreringen ändrar inte några data. När du har konverterat kolumnerna valuta och valutakurs kan administratörer konfigurera systemet att använda upp till 10 decimaler för valutakolumner genom att ange antalet decimaler för varje transaktionsvaluta och för prissättning.
 

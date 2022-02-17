@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: c7ef3a11817d60343503c80d89493262711524b1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: afc1b5996667835c460f467526493380aa2d6403
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782318"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062096"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisationshierarki i Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Eftersom Dynamics 365 Finance är ett finansiellt system är *organisation* ett grundläggande begrepp och systeminställningarna börjar med konfigurationen av en organisationshierarki. Affärsekonomi kan sedan spåras på organisationsnivå och även på alla nivåer i organisationshierarkin.
 
@@ -32,7 +32,7 @@ Ett affärsekosystem som består av Finance and Operations-appar och Dataverse k
 
 ![Arkitekturbild.](media/dual-write-data-flow.png)
 
-Organisationshierarkins tabellmappningar är tillgängliga för enkelriktad synkronisering av data från Finance and Operations-appar till Dataverse.
+Organisationshierarkin tabellkartor är tillgängliga för enkelriktad synkronisering av data från Ekonomi och Drift-appar till Dataverse.
 
 ## <a name="templates"></a>Mallar
 

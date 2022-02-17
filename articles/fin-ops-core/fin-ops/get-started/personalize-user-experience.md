@@ -2,7 +2,7 @@
 title: Anpassa användarupplevelsen
 description: Det här avsnittet beskriver hur du kan anpassa appen.
 author: jasongre
-ms.date: 11/08/2021
+ms.date: 01/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6256765c41ff128b067cda9107c790691c5b376a
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777995"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075432"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I det här avsnittet beskrivs hur du kan anpassa appen och omfattar följande ämnen: 
 
@@ -120,7 +124,9 @@ Följande verktyg är tillgängliga i fältet verktygsfältet **anpassning**:
 - Använd verktyget **Välj** för att välja och öppna ett elements egenskaper. Om du vill använda det här verktyget väljer du knappen **Välj** i verktygsfältet och väljer sedan det önskade elementet. Elementets egenskapsfönster visas och du kan ändra egenskaperna för det elementet. Du kan upprepa processen för andra element som kan anpassas på den sidan. Observera att vissa anpassningsegenskaper kanske inte är tillgängliga i vissa fall. Exempelvis kan du inte låsa ett fält som krävs.
 - Använd verktyget **Dölj** verktyg för att dölja ett element på sidan. Om du vill använda det här verktyget väljer du knappen **Dölj** i verktygsfältet och väljer sedan det element som ska döljas. När du väljer verktyget **Dölj** kommer alla element som döljs för närvarande vara synliga och visas i en skuggad behållare. Du kan sedan göra ett element synligt genom att markera det. Om du vill se hur sidan ser ut när elementen är dolda, växlar du till ett annat anpassningsverktyg eller stäng verktygsfältet för anpassning.
 - Använd verktyget **Lägg till fält** för att lägga till ett fält till din sida. När du använder det här verktyget kan du bara lägga till fält som är en del av siddefinitionen. Information om hur du skapar nya fält som inte ingår i definitionen av sidan finns i [Skapa och arbeta med anpassade fält](user-defined-fields.md). När du har valt knappen **Lägg till fält** på verktygsfältet måste du först välja det rutnät eller avsnitt där du vill lägga till ett fält. En dialogruta visar en lista med fält som är relaterade till det valda rutnätet eller avsnittet. Välj ett eller flera fält som ska läggas till i listan **Rekommenderade fält** eller **Alla fält** i dialogrutan. När du har valt önskade fält väljer du **Uppdatera**. Om du vill ta bort ett fält som du tidigare lade du upprepar hela processen och ta bort markeringen i fältet i dialogrutan.
-    - Listan **Rekommenderade fält** visar fält som tidigare har lagts till av andra användare i organisationen. Den här listan med fält uppdateras baserat på upprepningsfrekvensen för **rekommendationsbatchjobbet**. Det finns en liknande erfarenhet när du lägger till nya filterfält med hjälp av fönstret Filter på en sida.
+
+    Listan **Rekommenderade fält** visar fält som tidigare har lagts till av andra användare i organisationen. Den här listan med fält uppdateras baserat på upprepningsfrekvensen för **rekommendationsbatchjobbet**. Det finns en liknande erfarenhet när du lägger till nya filterfält med hjälp av fönstret Filter på en sida.
+
 - Använd verktyget **Flytta** för att flytta ett element till en annan plats inom aktuell grupp av element. Observera att du inte kan flytta ett element utanför dess överordnade grupp. Om du vill använda det här verktyget väljer du knappen **Flytta** i verktygsfältet och väljer sedan det element som ska flyttas. När du markerar ett element kommer appen att bestämma platser som elementet kan flyttas till. Dessa platser kallas *släppzoner*. När du drar runt elementet inom den aktuella gruppen visas varje ”släppzon” med färgade rader i fetstil bredvid området där elementet kan släppas.
 - Använd **Hoppa över** för att ta bort ett element från sidan tangentbordstabbsekvens. När du väljer knappen **Hoppa över** på verktygsfältet kommer alla element som för närvarande hoppas över att visas i en skuggad behållare. Du kan ta bort eller lägga till fält interaktivt i tabbsekvensen.
 - Använd verktyget **Visa i rubrik** när du vill att ett fält ska visas i sammanfattningen på snabbfliken. När du väljer knappen **Visa i rubrik** i verktygsfältet har alla fält som har valts som sammanfattningsfält visas i en skuggad behållare. Du kan interaktivt lägga till fält på snabbfliken sammanfattning och ta bort fält från sammanfattning genom att markera fälten.
@@ -152,7 +158,10 @@ För vissa sidor som innehåller listor är anpassningsfunktionen **Lägg till p
 
 - Lägg till en lista i en arbetsyta, sortera först eller filtrera listan på sidan så att den visar information som du vill ska visas på arbetsytan. (Om funktionen **Sparade vyer** är aktiverad kan du inte fortsätta förrän du har sparat en vy som har dessa villkor.) Välj sedan **Lägg till i arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Lista**. När du har valt **konfigurera**, visas en dialogruta, där du kan välja vilka kolumner som ska visas i listan i arbetsytan. Du kan också ange etiketten som ska användas för i listan i arbetsytan.
 - För att lägga till en panel till en arbetsyta, filtrera först listan på sidan så att den visar de data som du vill sammanfatta eller som vill ha snabb tillgång till. (Om funktionen **Sparade vyer** är aktiverad kan du inte fortsätta förrän du har sparat en vy som har dessa villkor.) Välj sedan **Lägg till i arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Panel**. När du har valt **konfigurera**, visas en dialogruta där du kan ange etiketten som ska användas för panelen på arbetsytan. Du kan också ange om panelen ska visa ett antal. När du har lagt till en panel i arbetsytan kan du välja den för att öppna den aktuella sidan från arbetsytan. Du kan sedan visa den filtrerade listan som är kopplad till panelen.
-- Om du vill lägga till en länk till en arbetsyta filtrerar du först listan så att den visar de data du är intresserad av. (Om funktionen **Sparade vyer** är aktiverad kan du inte fortsätta förrän du har sparat en vy som har dessa villkor.) Välj sedan **Lägg till i arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Länk**. När du har valt **konfigurera**, visas en dialogruta där du kan ange etiketten som ska användas för länken. Du kan också ange en etikett för ett nytt avsnitt som innehåller länken.
+- Om du vill lägga till en länk till en arbetsyta filtrerar du först listan så att den visar de data du är intresserad av. (Om funktionen **Sparade vyer** är aktiverad kan du inte fortsätta förrän du har sparat en vy som har dessa villkor.) Välj sedan **Lägg till i arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Länk**. När du har valt **konfigurera**, visas en dialogruta där du kan ange etiketten som ska användas för länken. Du kan också valfritt ange en etikett för avsnittet där denna länk kan placeras. Om det avsnittet inte finns kommer ett nytt avsnitt att skapas.
+
+> [!NOTE]
+> Från och med version 10.0.25, när du konfigurerar din lista, bricka eller länk, kan du också behöva välja de arbetsytor som du vill lägga till elementet i om funktionen **(Förhandsgranska) Stöd för sparade vyer i arbetsytor** är aktiverad. Tillgängliga arbetsytasvyer visas i avsnittet **Alternativ för arbetsytan** i respektive dialogruta **Konfigurera**. 
 
 När du har lagt till en lista, panel eller länk har lagts till en arbetsyta kan du öppna den arbetsytan och ordna om elementen i den som du vill.
 
@@ -221,7 +230,7 @@ Om sparade vyer har aktiverats följer du dessa steg för att kopiera en anpassn
 Ett annat sätt att dela anpassningar är genom export och import. Enskilda användare, eller en administratör som agerar för deras räkning, kan använda den här metoden för att exportera sina anpassningar eller vyer och sedan ge den exporterade filen till andra användare som ska importeras. Alternativt kan användare ge sina exporterade personanpassningar till en användare som har administratörsbehörighet, och den användaren kan sedan använda administrationssidan **Anpassning** för att tillämpa personanpassningsfilen på många användare samtidigt.
 
 > [!IMPORTANT]
-> Eftersom anpassningarna fortgår även över uppdateringarna är det både onödigt och inte rekommenterat att importera alla anpassningar på nytt efter en serviceuppdatering eller vid någon annan tidpunkt.   
+> Eftersom anpassningarna fortgår även över uppdateringarna är det både onödigt och inte rekommenterat att importera alla anpassningar på nytt efter en serviceuppdatering eller vid någon annan tidpunkt.
 
 #### <a name="export"></a>Export
 
@@ -271,11 +280,8 @@ Information om kunder som har aktiverat funktionen **Sparade vyer** finns i avsn
 För kunder som inte har aktiverat funktionen [sparade vyer](saved-views.md) har den här sidan fyra flikar:
 
 - **Tillämpa** – Du kan importera eller välja en anpassning för en eller flera användare. Om du vill använda en anpassning till en eller flera användare, markerar du först en roll och användare som har rollen. Välj sedan en befintlig anpassning som gäller för de valda användare eller importera en anpassningsfil. Anpassningen valideras och gäller för de alla valda användare nästa gång de öppnar den markerade sidan.
-
 - **Rensa** – Du kan rensa alla anpassningar för arbetsyta för en eller flera användare. Välj först en sida eller arbetsyta för att se en lista över de användare som har anpassat den. Sedan väljer du de användare vars anpassningar för den aktuella sidan eller arbetsytan ska avmarkeras och välj **Rensa**. Alla anpassningar som de valda användarna har kopplat till den valda sidan eller arbetsytan tas bort. Denna åtgärd kan inte ångras. Om en anpassning sparades för sidan eller arbetsytan, kan den anpassningen emellertid återimporteras.
-
 - **Användare** – Välj en användare för att visa listan över sidor som användaren har anpassat. Du kan sedan aktivera eller inaktivera den valda användarens förmåga att använda anpassningar för specifika sidor eller för hela systemet. D kan också importera, exportera eller rensa anpassningar för denna användare. Du kan dessutom återställa en användares bildtexter för funktioner. I detta fall, om användaren tidigare stängde alla popup-fönster som introducerar nya funktioner visas det i detta fall igen nästa gång användaren påträffar dessa funktioner.
-
 - **System** – Du kan temporärt inaktivera alla anpassningar för samtliga användare i systemet. I det här fallet tas alla anpassningar bort för alla användare, och alla sidor återställs till standardtillståndet. Om du senare aktiverar anpassningen igen kommer alla anpassningar att återappliceras. Du kan också ta bort alla anpassningar permanent för samtliga användare i systemet. Det går inte att återställa anpassningar som har tagits bort. Se därför till att du har exporterat den här uppgiften för att exportera alla anpassningar som du kanske vill ha senare.
 
 ## <a name="personalizing-inventory-dimensions"></a>Anpassning av lagerdimensioner

@@ -2,7 +2,7 @@
 title: Financial Insights – startsida
 description: Finance insights ger konfigurerbara och utökningsbara modeller för att hjälpa dig att noggrant och effektivt förutsäga företagets kassaflöde, när du ska få betalning för utestående kundfordringar och skapa ett budgetförslag som kan påskynda budgetprocessen. Alla dessa funktioner baseras på intelligenta maskininlärningsmodeller.
 author: ShivamPandey-msft
-ms.date: 11/15/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8cc7b2d733cdcf1adef2885b7900ea312a10d98c
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: 05b0de8b0104238a33f006234d4a0e8ba9fcdb2a
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968821"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087303"
 ---
 # <a name="finance-insights-home-page"></a>Financial Insights – startsida
 
@@ -37,10 +37,6 @@ Finance Insights ger konfigurerbara och utökningsbara lösningar för att hjäl
 
 I det här avsnittet beskrivs kraven för att använda Finance insights. När det är möjligt tillhandahålls länkar till källor med ytterligare information.
 
-### <a name="legal-requirements"></a>Lagkrav
-
-Om du vill ansöka om att använda förhandsversionen av programmet fyller du i [Avtal för förhandsversion av Finance insights för Dynamics 365 Finance](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u).
-
 ### <a name="system-requirements"></a>Systemkrav
 
 En nivå-2-miljö (multibox) krävs för att förhandsgranska Finance insights. Mer bakgrundsinformation om miljöer finns i [Miljöplanering](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
@@ -48,6 +44,10 @@ En nivå-2-miljö (multibox) krävs för att förhandsgranska Finance insights. 
 ### <a name="version-requirements"></a>Versionskrav
 
 Detta ämne gäller Microsoft Dynamics 365 Finance-version 10.0.21 och senare.
+
+### <a name="license-requirements"></a>Licensieringskrav
+
+Finance insights används AI Builder krediter för att skapa ekonomiska förutsägelser. Alla nödvändiga licenser för detta ingår i innehavares licens. Varje Dynamics 365 Finance innehavare får 20 000 AI Builder krediter varje månad. Om ytterligare krediter krävs för verksamhetens behov kan de köpas in direkt från AI Builder.
 
 ### <a name="historical-data-requirements"></a>Historiska datakrav
 

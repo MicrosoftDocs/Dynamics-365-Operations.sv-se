@@ -2,7 +2,7 @@
 title: Arbeta med förinställda layouter
 description: I det här avsnittet beskrivs hur du arbetar med förinställda layouter i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0f6effd4dda669041a269d568bd39beda607a2bcc05c65e40bb76c6f1d02cd5e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 56ad992b6a9fd6fce09cadad70b8098acdc74ac0
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775322"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090855"
 ---
 # <a name="work-with-preset-layouts"></a>Arbeta med förinställda layouter
 
@@ -91,12 +91,24 @@ Om du vill förhandsgranska ändringarna öppnar du en befintlig sida som använ
 
 När du har förhandsgranskat ändringarna i din förinställda layout gör du följande för att publicera layouten på din aktiva webbplats:
 
-* Gå till **layouter**, markera layouten och välj sedan **publicera**.
-* Välj layoutnamn för att öppna layoutredigeraren och välj sedan **Publicera**.
-* Publicera en sida som refererar till den opublicerade layouten. Layouten kommer att publiceras automatiskt.
+1. Gå till **layouter**, markera layouten och välj sedan **publicera**.
+1. Välj layoutnamn för att öppna layoutredigeraren och välj sedan **Publicera**.
+1. Publicera en sida som refererar till den opublicerade layouten. Layouten kommer att publiceras automatiskt.
 
 > [!WARNING]
 > Du kan referera till förinställda layouter av flera sidor. När du publicerar en förinställd layout måste du vara medveten om att du kan påverka layouten på flera sidor.
+
+## <a name="rename-a-preset-layout"></a>Byt namn på en fördefinierad layout
+
+Följ dessa steg för att byta namn på fördefinierad layout i webbplatsskaparen.
+
+1. I navigeringsfönstret till vänster välj er du **Layouter**.
+1. Välj layoutnamnet på den layout som du vill byta namn på.
+1. Välj **Redigera** för att börja redigera layout.
+1. I rutan för layoutegenskaper väljer du pennsymbolen bredvid layoutnamnet.
+1. Redigera layoutnamnet efter behov.
+1. Markera kryssrutan om du vill bekräfta namnändringen.
+1. Välj **Slutför redigering**.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

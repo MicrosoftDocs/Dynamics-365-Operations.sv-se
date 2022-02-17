@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 883948c6e3f7b205d7e0f1f2b6adef1173616dc1
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 188a87f580c274e073710601ef306139f723c797
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431135"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071530"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definiera kompensationsprocessen och beräkna resultat
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -40,13 +43,13 @@ Kompensationsprocesser används för att bestämma nya kompensationsbelopp och b
     * Det aktiva transaktionsdatumet är det datum då de nya kompensationstarifferna börjar gälla. Många företag inkluderar några månader innan slutet på en cykel och tiden när de nya kompensationstarifferna börjar gälla. Den extra tiden används för att bearbeta och granska den nya kompensationen.  
 8. Ange ett datum i fältet **Aktivt transaktionsdatum**.
     * Tidpunktsdatumet används för variabla kompensationsplaner som bestämmer medarbetarens belöningsbelopp som baseras på deras kompensationssats vid den här tidpunkten.  
-    * Den fasta lönen proportionellt från anställningsdatumet används tillsammans med fasta kompensationsplaner med en anställningsregel i procent.  Medarbetare som anställs mellan cykelstarten och den fasta lönen proportionellt från anställningsdatumet får 100 % av den beräknade kompensationsökningen, i stället för dem proportionella procentandelen.  
+    * Den fasta lönen proportionellt från anställningsdatumet används tillsammans med fasta kompensationsplaner med en anställningsregel i **procent**. Medarbetare som anställs mellan cykelstarten och den fasta lönen proportionellt från anställningsdatumet får 100 % av den beräknade kompensationsökningen, i stället för dem proportionella procentandelen.  
 9. Ange ett datum i fältet **Fast lön proportionellt från anställningsdatumet**.
     * Deadline för granskning är det datum då alla processresultat ska granskas så att de kan läsas in i medarbetarens post för kompensation före det aktiva transaktionsdatumet. Det här fältet är endast till för information.  
 10. Ange ett datum i fältet **Granska deadline**.
 11. Klicka på **Spara**.
 
-## <a name="setup-the-compensation-plans-and-actions-for-a-compensation-process"></a>Ställ in kompensationsplanerna och åtgärderna för en kompensationsprocess
+## <a name="set-up-the-compensation-plans-and-actions-for-a-compensation-process"></a>Ställ in kompensationsplanerna och åtgärderna för en kompensationsprocess
 1. Klicka på **Inställningar**.
     * Sidan **Konfigurera** används för att välja vilka planer som ska behandlas som en del av den här kompensationsprocessen samt vilka åtgärder ska utföras för varje plan.  
 2. I fältet **Plan**, ange eller välj ett värde.
@@ -56,7 +59,7 @@ Kompensationsprocesser används för att bestämma nya kompensationsbelopp och b
 6. Klicka på **Lägg till**.
 7. Välj en åtgärd av typen **Merit** i fältet **Åtgärd**.
     * Kompensationsåtgärder kan ”kedjas fast” tillsammans med fältet **Använd tidigare resultat** för att ange om den valda åtgärden ska använda medarbetarens grundlön eller resultatet för den föregående åtgärden som startpunkt för beräkningen av den här åtgärden.  
-8. Välj **Ja** i fältet Använd tidigare resultat.
+8. Välj **Ja** i fältet **Använd tidigare resultat**.
 9. Klicka på **Lägg till**.
 10. Välj en åtgärd av typen **Allmänt** i fältet **Åtgärd**.
     * Olika kompensationsåtgärdstyper aktiverar olika fält. För en allmän kompensationsåtgärdstyp kan en ökningsprocent eller ett ökningsbelopp anges.  
@@ -85,7 +88,7 @@ Kompensationsprocesser används för att bestämma nya kompensationsbelopp och b
 1. Klicka på **Processresultat**.
 2. Klicka på **Medarbetarresultat**.
 3. Hitta och markera önskad post i listan.
-4. Expandera avsnittet Fast kompensation.
+4. Expandera avsnittet **Fast kompensation**.
     * Expandera snabbflikarna om du vill visa resultaten av processen. Om **Aktivera rekommendationer** var markerat för en kompensationsåtgärd aktiveras fälten **Rekommendation** för den åtgärden.  
 5. Hitta och markera önskad post i listan.
     * Resultaten för en enskild medarbetare kan visas genom att klicka på knappen **Visa resultat**.  

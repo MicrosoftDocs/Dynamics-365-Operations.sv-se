@@ -1,6 +1,6 @@
 ---
 title: Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
-description: Det här avsnittet innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem med dubbelriktad skrivning i Finance and Operations-appar.
+description: Det här avsnittet innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem med dubbelriktad skrivning i Ekonomi och Drift-appar.
 author: RamaKrishnamoorthy
 ms.date: 08/10/2021
 ms.topic: article
@@ -9,25 +9,25 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 3caf3f18718fd6bee20232a0200d421b9c9ef22c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781208"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061820"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Finance and Operations-appar och Dataverse. Det ger särskilt information som kan hjälpa dig att åtgärda problem med **dubbelriktad skrivning** i Finance and Operations-appar.
+
+Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Dataverse. Det ger särskilt information som kan hjälpa dig att åtgärda problem med **dubbelriktad skrivning** i Ekonomi och Drift-appar.
 
 > [!IMPORTANT]
 > Vissa av de problem som det här ämnet behandlar kan kräva antingen systemadministratörsrollen eller Microsoft Azure Active Directory (Azure AD) autentiseringsuppgifter för administratör för klientorganisationen. I avsnittet för varje problem förklaras om en viss roll eller autentiseringsuppgifter krävs.
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Du kan inte läsa in modulen för dubbelriktad skrivning i en Finance and Operations-app
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Du kan inte läsa in modulen för dubbelriktad skrivning i en Ekonomi och Drift-app
 
 Om du inte kan öppna sidan **dubbelriktad skrivning** genom att välja panelen **dubbelriktad skrivning** i arbetsytan **datahantering** är dataintegreringstjänsten förmodligen nere. Skapa en supportbiljett för att begära en omstart av dataintegreringstjänsten.
 
@@ -49,7 +49,7 @@ Om du vill åtgärda problemet loggar du in på ett InPrivate-fönster i Microso
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-table-mapping"></a>Fel vid länkning av miljön för dubbelriktad skrivning eller tillägg av en ny tabellmappning
 
-**Den roll som krävs för att åtgärda problemet:** Systemadministratören i båda Finance and Operations-appar och Dataverse.
+**Den roll som krävs för att åtgärda problemet:** Systemadministratör i både Ekonomi och Drift-appar och Dataverse.
 
 Du kan stöta på följande fel när du länkar eller skapar kartor:
 
@@ -59,7 +59,7 @@ Session ID: \<your session id\>
 Root activity ID: \<your root activity\> id
 ```
 
-Det här felet kan uppstå om du inte har tillräcklig behörighet för att länka dubbelriktad skrivning eller skapa kartor. Det här felet kan också uppstå om Dataverse-miljön återställdes utan att dubbelriktig skrivning avlänkas. Alla användare med rollen systemadministratör i båda Finance and Operations-apparna och Dataverse kan länka dessa miljöer. Det är bara användaren som installerar anslutningen för dubbelriktad skrivning som kan lägga till nya tabellmappningar. Efter installationen kan alla användare med rollen systemadministratör övervaka status och redigera mappningarna.
+Det här felet kan uppstå om du inte har tillräcklig behörighet för att länka dubbelriktad skrivning eller skapa kartor. Det här felet kan också uppstå om Dataverse-miljön återställdes utan att dubbelriktig skrivning avlänkas. Alla användare med rollen systemadministratör i båda Ekonomi och Drift-apparna och Dataverse kan länka dessa miljöer. Det är bara användaren som installerar anslutningen för dubbelriktad skrivning som kan lägga till nya tabellmappningar. Efter installationen kan alla användare med rollen systemadministratör övervaka status och redigera mappningarna.
 
 ## <a name="error-when-you-stop-the-table-mapping"></a>Fel när du stoppar tabellmappningen
 
@@ -82,7 +82,7 @@ Följande felmeddelande kan komma att visas när du försöker köra den första
 Du kan komma att få detta felmeddelande när du försöker ange statusen för en mappning som **Körs**: Korrigeringen beror på orsaken till felet:
 
 + Om mappningen har beroende mappningar ska du se till att aktivera de beroende mappningarna för den här tabellmappningen.
-+ Mappningen kanske saknar käll- eller målkolumner. Om en kolumn i Finance and Operations-appen saknas följer du stegen i avsnittet [Tabellkolumner som saknas problem i kartor](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Om en kolumn i Dataverse saknas klickar du på knappen **Uppdatera tabeller** på mappningen så att kolumnerna automatiskt fylls i igen i mappningen.
++ Mappningen kanske saknar käll- eller målkolumner. Om en kolumn i Ekonomi och Drift-appen saknas följer du stegen i avsnittet [Tabellkolumner som saknas problem i kartor](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Om en kolumn i Dataverse saknas klickar du på knappen **Uppdatera tabeller** på mappningen så att kolumnerna automatiskt fylls i igen i mappningen.
 
 ### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Versionsmatchningsfel och uppgradering av lösningar med dubbelriktad skrivning
 

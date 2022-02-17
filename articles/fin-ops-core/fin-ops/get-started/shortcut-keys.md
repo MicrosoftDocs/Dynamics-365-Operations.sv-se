@@ -1,6 +1,6 @@
 ---
 title: Kortkommandon
-description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med Finance and Operations-appar.
+description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med Ekonomi och Drift-appar.
 author: jasongre
 ms.date: 12/10/2021
 ms.topic: article
@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e6f6faf75bb9dc2b11b3a27a886b1674cc7b339
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 0ecf745337c15270290f02496cc6ce4ccac86861
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913528"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070993"
 ---
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
 [!include [banner](../includes/banner.md)]
 
-Du kan använda följande kortkommandon för att snabbt och effektivt mata in data i Finance and Operations-appar.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Du kan använda följande kortkommandon för att snabbt och effektivt mata in data i Ekonomi och Drift-appar.
 
 > [!NOTE]
 > Tangentbordsgenvägarna som beskrivs här hänvisar till en amerikansk tangentbordslayout. Knappar på andra tangentbordslayouter kan kanske inte exakt motsvarar tangenterna på ett tangentbord i USA.

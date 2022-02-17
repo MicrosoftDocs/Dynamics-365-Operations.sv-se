@@ -2,27 +2,24 @@
 title: Förbättringar av funktionen för bokföring av utdrag
 description: Det här avsnittet beskriver de förbättringar som har gjorts till funktionen för bokföring av utdrag.
 author: analpert
-ms.date: 12/03/2021
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9a5a7d6394a87eccde8e1c364caaaabdb0297fd2
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6ee0cea76be05634aa21643acef5b341f19d75ef
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982213"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087613"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Förbättringar av funktionen för bokföring av utdrag
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Det här avsnittet beskriver den första uppsättningen förbättringar som har gjorts till funktionen för bokföring av utdrag. Dessa förbättringar är tillgängliga i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
@@ -53,12 +50,24 @@ Som del av förbättringarna av funktionerna för bokföring av utdrag har tre n
 
 - **Inaktivera att inventering krävs** – när det här alternativet ställs in på **Ja**, fortsätter bokföringsprocessen för ett utdrag, även om skillnaden mellan det beräknade beloppet och transaktionsbeloppet för utdraget är utanför det tröskelvärde som är definieras på snabbfliken **Utdrag** för butiker.
 
+> [!NOTE]
+> Från och med Commerce version 10.0.14, när funktionen **Butiksutdrag – Indroppning** är aktiverad är batch-jobbet **Bokföring av lager** inte längre är tillämplig och kan inte köras.
+
 Dessutom har följande parametrar införts på snabbfliken **gruppbearbetning** på fliken **bokföring** på sidan för **Commerce-parametrar**: 
 
 - **Maximalt antal parallella utdragsbokföringar** – det här fältet definierar antalet batchjobb som ska användas för att bokföra flera utdrag. 
 - **Max. tråd för orderbearbetning per utdrag** – det här fältet representerar det högsta antalet trådar som används av batch-jobbet utdragsbokföring för att skapa och fakturera försäljningsorder för ett enda utdrag. Det totala antalet trådar som kommer att användas av utdragsbokföringsprocessen beräknas utifrån värdet i den här parametern multiplicerat med värdet i parametern **Maximalt antal parallella utdragsbokföringar**. Om du anger värdet för den här parametern för högt kan prestandan i bokföringsprocessen för utdraget påverkas negativt.
 - **Max. transaktionsrader inkluderade i sammansättning** – det här fältet definierar antalet transaktionsrader som ska inkluderas i en samlad transaktion innan en ny skapas. Aggregerade transaktioner skapas utifrån olika sammansättningskriterier, t.ex. kund, affärsdatum eller ekonomiska dimensioner. Det är viktigt att notera att raderna från en enda transaktion inte delas mellan olika sammansättningstransaktioner. Detta innebär att det finns en risk för att antalet rader i en sammansättningstransaktion är något högre eller lägre baserat på faktorer som antal specifika produkter.
 - **Maximalt antal trådar för validering av butikstransaktioner** – det här fältet definierar antalet trådar som ska användas för att validera transaktioner. Validering av transaktioner är ett obligatoriskt steg som måste inträffa innan transaktionerna kan hämtas till kontoutdrag. Du måste definiera en **Presentkortsprodukt** på snabbfliken **presentkort** på fliken **bokföring** på sidan **Commerce-parametrar**. Detta måste definieras även om inga presentkort används i organisationen.
+
+I följande tabell visas de rekommenderade värdena för föregående parametrar. Dessa värden bör testas och skräddarsys efter användningskonfiguration och tillgänglig infrastruktur. All ökning av de rekommenderade värdena kan påverka annan batchbearbetning negativt och bör valideras.
+
+| Parameter | Rekommenderat värde | Detaljer |
+|-----------|-------------------|---------|
+| Maximalt antal parallella utdragsbokföringar | <p>Ange den här parametern till antalet batchuppgifter som är tillgängliga för batchgruppen som kör jobbet **utdrag**.</p><p>**Allmän regel:** Multiplicera antalet virtuella servrar för programobjektservern (AOS) med antalet batchuppgifter som är tillgängliga per AOS-virtuell server.</p> | Den här parametern kan inte tillämpas när funktionen **Butiksutdrag – Indroppning** är aktiverad. |
+| Maximalt antal trådar för orderbehandling per utdrag | Börja på testvärdena vid **4**. Normalt bör värdet inte överstiga **8**. | Den här parametern anger antalet trådar som används för att skapa och bokföra försäljningsorder. Det representerar antalet trådar som är tillgängliga för bokföring per utdrag. |
+| Max antal transaktionsrader som ingår i en sammansättning | Börja på testvärdena vid **1000**. Beroende på huvudkontorets konfiguration kan mindre beställningar vara mer fördelaktiga för prestanda. | Den här parametern avgör hur många rader som tas med i varje försäljningsorder när utdraget bokförs. När detta nummer har nåtts delas raderna upp i en ny order. Antalet försäljningsrader är inte exakt eftersom uppdelningen sker på försäljningsordernivå, men kommer att stängas av från det inställda numret. Den här parametern används för att generera försäljningsorder för butikstransaktioner som inte har en namngiven kund. |
+| Maximalt antal trådar för att validera butikstransaktioner | Vi rekommenderar att du ställer in den här parametern på **4** och att du bara ökar den om du inte uppnår godtagbara prestanda. Antalet trådar som används i den här processen får inte överstiga antalet processorer som är tillgängliga i batchservern. Om du tilldelar alltför många trådar här kan du påverka annan batchbearbetning. | Den här parametern styr antalet transaktioner som kan valideras samtidigt för en given butik. |
 
 > [!NOTE]
 > Alla inställningar och parametrar som relateras till bokföring av utdrag och som definieras i butiker och på sidan **Commerce-parametrar**, gäller för den förbättrade funktionen för bokföring av utdrag.

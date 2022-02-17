@@ -9,33 +9,33 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c9bf5d9017579b4207e09769cff38361442e3938
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9a70de253eff2a3273be4a31ab32757bb014328f
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781450"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061477"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Felsöka problem under första installationen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Finance and Operations-appar och Dataverse. Särskilt innehåller det information som kan hjälpa dig att åtgärda problem som kan uppstå under den första installationen av integrering av dubbelriktad skrivning.
+
+Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Dataverse. Särskilt innehåller det information som kan hjälpa dig att åtgärda problem som kan uppstå under den första installationen av integrering av dubbelriktad skrivning.
 
 > [!IMPORTANT]
 > Vissa av de problem som det här ämnet behandlar kan kräva antingen systemadministratörsrollen eller Microsoft Azure Active Directory (Azure AD) autentiseringsuppgifter för administratör för klientorganisationen. I avsnittet för varje problem förklaras om en viss roll eller autentiseringsuppgifter krävs.
 
-## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Du kan inte länka en Finance and Operations-app till Dataverse
+## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Du kan inte koppla ett Ekonomi och Drift-app till Dataverse
 
-**Obligatoriska autentiseringsuppgifter för att konfigurera dubbelriktad skrivning:** Systemadministratören i Finance and Operations-appar och Dataverse.
+**Obligatoriska autentiseringsuppgifter för att konfigurera dubbelriktad skrivning**: Systemadministratören i Ekonomi och Drift-appar och Dataverse.
 
 Fel på sidan **Konfigurera länk till Dataverse** orsakas vanligtvis av ofullständiga installations- eller behörighetsproblem. Kontrollera att hela hälsokontrollen passerar **Konfigurera länk till Dataverse** som visas i följande illustration. Du kan inte länka dubbelriktad skrivning om inte hela hälsokontrollen passerar.
 
 ![Lyckad hälsokontroll.](media/health_check.png)
 
-Du måste ha Azure AD autentiseringsuppgifter för klientadministratör för att länka Finance and Operations och Dataverse-miljöer. När du har länkat miljöerna kan användare logga in med hjälp av sina kontouppgifter och uppdatera en befintlig tabellmappning.
+Du måste ha Azure AD autentiseringsuppgifter för klientadministratör för att länka Ekonomi och Drift och Dataverse-miljöer. När du har länkat miljöerna kan användare logga in med hjälp av sina kontouppgifter och uppdatera en befintlig tabellmappning.
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Hitta gränsen för antal juridiska tabeller eller företag som kan länkas för dubbelriktad skrivning
 
@@ -55,7 +55,7 @@ Det finns inget stöd för flera juridiska personer/företag med samma namn. Om 
 
 Du tar bort kundspärren genom att ta bort bubblettposter från kundens **cdm_company**-tabell i Dataverse. Om tabellen **cdm_company** har poster med tomt namn tar du bort eller korrigerar dessa poster.
 
-## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Fel när sidan för dubbel skrivning i Finance and Operations-program öppnas
+## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Fel vid öppning av sidan för dubbelriktad skrivning i Ekonomi och Drift-appar
 
 Följande felmeddelande kan komma att visas när du försöker koppla en Dataverse-miljö för dubbel skrivning:
 
@@ -70,22 +70,22 @@ Detta fel uppstår när programmets medgivandesteg inte har slutförts. Du kan v
     `https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent`
 
 + Välj **Godkänn** för att ge ditt medgivande. Du ger ditt medgivande till att installera programmet (med `id=33976c19-1db5-4c02-810e-c243db79efde`) i din klientorganisation.
-+ Detta program krävs för att Dataverse ska kunna kommunicera med Finance and Operations-appar.
++ Detta program krävs för att Dataverse ska kunna kommunicera med Ekonomi och Drift-appar.
 
     ![Felsöka problem under första synkroniseringen.](media/Initial-sync-setup-troubleshooting-1.png)
 
 > [!NOTE]
 > Om detta inte fungerar startar du URL:en i privat läge i Microsoft Edge eller i osynligt läge i Chrome.
 
-## <a name="finance-and-operations-environment-is-not-discoverable"></a>Finance and Operations-miljön kan inte upptäckas
+## <a name="finance-and-operations-environment-is-not-discoverable"></a>Ekonomi och Drift-miljön kan inte upptäckas
 
 Följande felmeddelande kan komma att visas:
 
-*Finance and Operations-programmiljön \*\*\*.cloudax.dynamics.com går inte att upptäcka.*
+*Ekonomi och Drift-appmiljö \*\*\*.cloudax.dynamics.com går inte att upptäcka.*
 
 Det finns två saker som kan orsaka att ett problem med miljön inte kan upptäckas:
 
-+ Användaren som används för inloggning finns inte med i samma klientorganisation som Finance and Operations-instansen.
-+ Det finns vissa äldre Finance and Operations-instanser som haft Microsoft som värd och som har haft problem med att upptäckas. Korrigera detta genom att uppdatera Finance and Operations-instansen. Alla uppdateringar gör miljön möjlig att upptäcka.
++ Användaren som används för inloggning finns inte med i samma klientorganisation som Ekonomi och Drift-instansen.
++ Det finns vissa äldre Ekonomi och Drift-instanser som haft Microsoft som värd och som har haft problem med att upptäckas. Korrigera detta genom att uppdatera Ekonomi och Drift-instansen. Alla uppdateringar gör miljön möjlig att upptäcka.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -9,27 +9,27 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 25bd2cc0df4940f02313b3a61f69b2273e835639
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3657e41363ca6c1ce8eabfeaf3ba6da9b93f5e2a
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782095"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061036"
 ---
 # <a name="company-concept-in-dataverse"></a>Företagskoncept i Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-I Finance and Operations, är begreppet av ett *företag* både en laglig konstruktion och en affärskonstruktion. Det är också en säkerhets- och synlighetsgräns för data. Användare arbetar alltid inom ramen för ett enda företag, och de flesta av uppgifterna är sorterade efter företag.
+
+I Finance and Operations är begreppet av ett *företag* både en laglig konstruktion och en affärskonstruktion. Det är också en säkerhets- och synlighetsgräns för data. Användare arbetar alltid inom ramen för ett enda företag, och de flesta av uppgifterna är sorterade efter företag.
 
 Dataverse har inte ett likvärdigt koncept. Det närmaste konceptet är *affärsenhet*, som i första hand är en säkerhets- och synlighetsgräns för användardata. Det här konceptet har inte samma juridiska eller affärsmässiga betydelse som företagskonceptet.
 
 Eftersom affärsenhet och företag inte är likvärdiga begrepp, är det inte möjligt att tvinga en en-till-en-mappning (1:1) mellan dem i syfte integrera Dataverse. Men eftersom användare måste som standard kunna se samma rader i appen och Dataverse har Microsoft infört en ny tabell i Dataverse som heter CDM\_Företag. Den här tabellen motsvarar företagstabellen i appen. För att garantera att synligheten för rader är likvärdig mellan appen och färdiga Dataverse rekommenderar vi följande inställningar för data i Dataverse:
 
-+ För varje Finance and Operations-företagsrad som är aktiverad för dubbelriktad skrivning skapas en associerad cdm\_Företag-rad.
++ För varje Ekonomi och Drift-företagsrad som är aktiverad för dubbelriktad skrivning skapas en associerad CDM \_-företagsrad.
 + När en cdm\_Företag-rad skapas och aktiveras för dubbelriktad skrivning skapas en standardaffärsenhet som har samma namn. Även om ett standardteam skapas automatiskt för den affärsenheten används inte affärsenheten.
 + Ett separat ägarteam skapas med samma namn. Det är också förknippat med affärsenheten.
 + Som standard anges ägaren av en rad som skapas och dubbelriktad skrivning till Dataverse anges till teamet "DW ägare" som är länkat till den associerade affärsenheten.
@@ -43,7 +43,7 @@ På grund av den här konfigurationen kommer alla rader som är relaterade till 
 + Rollen "Säljchef" tilldelas medlemmar i teamet "USMF försäljning".
 + Användare som har rollen "Säljchef" kan komma åt alla rader i konton som är medlemmar i samma affärsenhet som de är medlemmar i.
 + "USMF försäljning"-teamet är länkat till den USMF-affärsenhet som nämndes tidigare.
-+ Medlemmar i teamet "USMF försäljning" kan därför se alla konton som ägs av "USMF DW"-användaren, som skulle ha kommit från USMF-företagstabellen i Finance and Operations.
++ Medlemmar i teamet "USMF försäljning" kan därför se alla konton som ägs av "USMF DW"-användaren, som skulle ha kommit från USMF-företagstabellen i Ekonomi och Drift.
 
 ![Så här kan du använda team.](media/dual-write-company-2.png)
 

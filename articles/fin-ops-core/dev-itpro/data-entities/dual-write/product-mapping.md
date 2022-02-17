@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 81f49cf08dcd1b4b1c3d71ff286a1f070e65e914
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1b3dc1d16fc34992df0c9478b8b4d163c310b67b
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782342"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062608"
 ---
 # <a name="unified-product-experience"></a>Enhetlig produktupplevelse
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 När ett affärsekosystem utgörs av Dynamics 365-program, t.ex. Finance, Supply Chain Management och Sales använder verksamheter ofta dessa program för att ange produktdata. Detta beror på att dessa appar ger en robust produktinfrastruktur som kompletteras med sofistikerade prissättningsbegrepp och korrekta lagerbehållningsdata. Verksamheter som använder ett externt PLM-system (Product Lifecycle Management) för inköp kan produktdata kanalisera produkter från Finance and Operations-appar till andra Dynamics 365-appar. Den enhetliga produktupplevelsen ger den integrerade produktens datamodell till Dataverse, så att alla programanvändare inklusive Power Platform-användare kan dra nytta av de omfattande produktdata som kommer från Finance and Operations-appar.
 
@@ -28,23 +28,23 @@ Här är produktdatamodellen från Sales.
 
 ![Datamodell för produkter i CE.](media/dual-write-product-4.jpg)
 
-Här är produktdatamodellen från Finance and Operations-appar.
+Här visas produktdatamodellen från Finance and Operations-appar.
 
-![Datamodell för produkter i Finance and Operations.](media/dual-write-products-5.jpg)
+![Datamodell för produkter i Ekonomi och Drift.](media/dual-write-products-5.jpg)
 
 Dessa två produktdatamodeller har integrerats i Dataverse som visas nedan.
 
 ![Datamodell för produkter i Dynamics 365-appar.](media/dual-write-products-6.jpg)
 
-Dubbelriktade tabellmappningar för produkter har utformats så att data endast kan flödas i en riktning nästan i realtid från Finance and Operations-appar till Dataverse. Produktinfrastrukturen har dock gjorts öppen så att den är dubbelriktad vid behov. Även om du kan anpassa den på din egen risk eftersom Microsoft inte rekommenderar det här tillvägagångssättet.
+Dubbelriktade tabellmappningar för produkter har utformats så att data endast kan flödas på ett sätt nästan i realtid från Ekonomi och Drift-appar till Dataverse. Produktinfrastrukturen har dock gjorts öppen så att den är dubbelriktad vid behov. Även om du kan anpassa den på din egen risk eftersom Microsoft inte rekommenderar det här tillvägagångssättet.
 
 ## <a name="templates"></a>Mallar
 
 Produktinformationen innehåller all information som är relaterad till produkten och dess definition, t.ex. produktdimensioner eller spårnings- och lagringsdimensioner. Som framgår av följande tabell skapas en samling med tabellmappningar för synkronisering av produkter och relaterad information.
 
-Finance and Operations-appar | Andra Dynamics 365-appar | beskrivning
+Finance and Operations-appar | Andra Dynamics 365-appar | Beskrivning
 -----------------------|--------------------------------|---
-[Alla produkter](mapping-reference.md#138) | msdyn_globalproducts | Tabellen alla produkter innehåller alla produkter tillgängliga i Finance and Operations-appar, både frisläppta produkter och produkter som inte frisläppts.
+[Alla produkter](mapping-reference.md#138) | msdyn_globalproducts | Tabellen alla produkter innehåller alla produkter tillgängliga i Ekonomi och Drift-appar, både frisläppta produkter och produkter som inte frisläppts.
 [CDS‑frisläppta specifika produkter](mapping-reference.md#213) | Produkt | Tabellen **Produkt** innehåller de kolumner som definierar produkten. Den omfattar enskilda produkter (produkter med undertypprodukt) och produktvarianter. Tabellen nedan visar mappningarna.
 [Färger](mapping-reference.md#170) | msdyn\_productcolors
 [Konfigurationer](mapping-reference.md#171) | msdyn\_productconfigurations
@@ -61,7 +61,7 @@ Finance and Operations-appar | Andra Dynamics 365-appar | beskrivning
 [Produktmallutföranden](mapping-reference.md#191) | msdyn_sharedproductstyles | Tabellen **Delad produktstil** anger vilka stilar en viss produktmall kan ha. Det här konceptet migreras till Dataverse för att hålla data konsekventa.
 [Produktnummer med identifierad streckkod](mapping-reference.md#164) | msdyn\_productbarcodes | Produktstreckkoder används för att identifiera produkter på ett unikt vis.
 [Produktspecifika enhetskonverteringar](mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
-[Frisläppta produkter V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | Tabellen **msdyn\_sharedproductdetails** innehåller kolumnerna från Finance and Operations-appar som definierar produkten och som innehåller produktens ekonomi- och hanteringsinformation.
+[Frisläppta produkter V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | Tabellen **msdyn\_sharedproductdetails** innehåller kolumnerna från Ekonomi och Drift-appar som definierar produkten och som innehåller produktens ekonomi- och hanteringsinformation.
 [Storlekar](mapping-reference.md#174) | msdyn\_productsizes
 [Lagringsdimensionsgrupper](mapping-reference.md#177) | msdyn_productstoragedimensiongroups | Lagringsdimensionsgrupp för produkter representerar den metod som används för att definiera placeringen av produkten i lagerstället.
 [Utföranden](mapping-reference.md#178) | msdyn\_productsytles
@@ -81,17 +81,17 @@ Eftersom produkten representeras som SKU kan begreppen distinkta produkter, prod
 
 ![Datamodell för produkter.](media/dual-write-product.png)
 
-Om funktionen för dubbelriktad skrivning är aktiverad kommer produkterna från Finance and Operations att synkroniseras i andra Dynamics 365-produkter i tillståndet **utkast**. De läggs till i den första prislistan med samma valuta som används i kundinteraktionsappen och använder alfabetisk sortering på prislistans namn. Med andra ord läggs de till den första prislistan i en Dynamics 365-app som matchar valutan för den juridiska tabell där produkten släpps i en Finance and Operations-app. Om det inte finns någon prislista för den angivna valutan skapas en prislista automatiskt och produkten tilldelas den.
+Om funktionen för dubbelriktad skrivning är aktiverad kommer produkterna från Ekonomi och Drift att synkroniseras i andra Dynamics 365-produkter i tillståndet **Utkast**. De läggs till i den första prislistan med samma valuta som används i kundinteraktionsappen och använder alfabetisk sortering på prislistans namn. Med andra ord läggs de till den första prislistan i en Dynamics 365-app som matchar valutan för den juridiska tabell där produkten släpps i en Ekonomi och Drift-app. Om det inte finns någon prislista för den angivna valutan skapas en prislista automatiskt och produkten tilldelas den.
 
-Den aktuella implementeringen av det plugin-program med dubbelriktad skrivning som kopplar standardprislistan till enheten söker efter den valuta som är kopplad till Finance and Operations-appen och hittar den första prislistan i kundengagemangsappen med alfabetisk sortering på prislistans namn. Om du vill ställa in en standardprislista för en specifik valuta när du har flera prislistor för valutan måste du uppdatera prislistans namn till ett namn som är tidigare i alfabetisk ordning än någon annan prislista för samma valuta. Om den inte har någon prislista för den angivna valutan skapas en ny.
+Den aktuella implementeringen av det plugin-program med dubbelriktad skrivning som kopplar standardprislistan till enheten söker efter den valuta som är kopplad till Ekonomi och Drift-appen och hittar den första prislistan i kundengagemangsappen med alfabetisk sortering på prislistans namn. Om du vill ställa in en standardprislista för en specifik valuta när du har flera prislistor för valutan måste du uppdatera prislistans namn till ett namn som är tidigare i alfabetisk ordning än någon annan prislista för samma valuta. Om den inte har någon prislista för den angivna valutan skapas en ny.
 
 Som standard synkroniseras produkter från Finance and Operations-appar till andra Dynamics 365-appar i tillståndet **utkast**. Om du vill synkronisera produkten med tillståndet **Aktiv** så att du kan använda den direkt på försäljningsorderofferter, till exempel, måste du välja följande inställning: under **System> Adminstration > Systemadministration > Systeminställningar > Försäljning**, välj **skapa produkter i aktivt tillstånd = ja**.
 
-När produkter synkroniseras måste du ange ett värde för fältet **Försäljningsenhet** i Finance and Operations-appen eftersom det är ett obligatoriskt fält i Sales.
+När produkter synkroniseras måste du ange ett värde för fältet **Försäljningsenhet** i Ekonomi och Drift-appen eftersom det är ett obligatoriskt fält i Sales.
 
 Skapandet av produktfamiljer från Dynamics 365 Sales stöds inte med synkronisering av dubbelriktad skrivning av produkter.
 
-Synkroniseringen av produkter sker från Finance and Operations-appen till Dataverse. Det innebär att värdena i kolumnerna för produkttabellen kan ändras i Dataverse, men när synkroniseringen utlöses (när en produktkolumn ändras i en Finance and Operations-appar) skrivs värdena över i Dataverse.
+Synkroniseringen av produkter sker från Ekonomi och Drift-appar till Dataverse. Det innebär att värdena i tabellkolumnen för produkten kan ändras i Dataverse, men när synkroniseringen utlöses (när en produktkolumnen ändras i en Ekonomi och Drift-app) skrivs värdena över i Dataverse.
 
 Finance and Operations-appar | Kundengagemangsappar |
 ---|---
@@ -151,24 +151,24 @@ Finance and Operations-appar | Kundengagemangsappar |
 
 ### <a name="initial-synchronization-of-units"></a>Initial synkronisering av enheter
 
-När dubbelriktat är aktiverat synkroniseras enheter från Finance and Operations-appar till andra Dynamics 365-appar. Enhetsgrupperna som synkroniseras från Finance and Operations-appar i Dataverse har en flagguppsättning som anger att de är "externt underhåll".
+När dubbelriktat är aktiverat synkroniseras enheter från Finance and Operations-appar till andra Dynamics 365-appar. Enhetsgrupperna som synkroniseras från Ekonomi och Drift-appar i Dataverse har en flagguppsättning som anger att de är "externt underhåll".
 
 ### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Matchande enheter och enhetsklasser/gruppers data från Finance and Operations och andra Dynamics 365-appar
 
-För det första är det viktigt att notera att integreringsnyckeln för enheten är msdyn_symbol. Därför måste värdet vara unikt i Dataverse eller andra Dynamics 365-appar. Eftersom i andra Dynamics 365-appar är det paret "enhetsgrupp-ID" och "namn" som definierar unikheten av en enhet, men du måste ta hänsyn till olika scenarier för matchande enhetsdata mellan Finance and Operations-appar och Dataverse.
+För det första är det viktigt att notera att integreringsnyckeln för enheten är msdyn_symbol. Därför måste värdet vara unikt i Dataverse eller andra Dynamics 365-appar. Eftersom i andra Dynamics 365-appar är det paret "enhetsgrupp-ID" och "namn" som definierar unikheten av en enhet, men du måste ta hänsyn till olika scenarier för matchande enhetsdata mellan Ekonomi och Drift-appar och Dataverse.
 
 För enhetsmatchning/överlappning i Finance and Operations-appar och andra Dynamics 365-appar:
 
-+ **Enheten tillhör en enhetsgrupp i andra Dynamics 365-appar som motsvarar den associerade enhetsklassen i Finance and Operations-appar**. I det här fallet måste kolumnen msdyn_symbol i andra Dynamics 365-appar fyllas i med enhetssymbolen från Finance and Operations-appar. Därför kommer data att matchas och enhetsgruppen ställs in som "externt underhåll" i andra Dynamics 365-appar.
++ **Enheten tillhör en enhetsgrupp i andra Dynamics 365-appar som motsvarar den associerade enhetsklassen i Finance and Operations-appar**. I det här fallet måste kolumnen msdyn_symbol i andra Dynamics 365-appar fyllas i med enhetssymbolen från Ekonomi och Drift-appar. Därför kommer data att matchas och enhetsgruppen ställs in som "externt underhåll" i andra Dynamics 365-appar.
 + **Enheten tillhör en enhetsgrupp i andra Dynamics 365-appar som inte motsvarar den associerade enhetsklassen i Finance and Operations-appar (ingen befintlig enhetsklass i Finance and Operations-appar för enhetsklassen i andra Dynamics 365-appar).** I det här fallet måste msdyn_symbol fyllas i med en slumpmässig sträng. Observera att detta värde måste vara unikt i andra Dynamics 365-appar.
 
 För enheter och enhetsklasser i Finance and Operations-appar som inte finns i andra Dynamics 365-appar:
 
-Som en del av dubbelriktad skapas och synkroniseras enhetsgrupperna från Finance and Operations-appar och de tillhörande enheterna i andra Dynamics 365-appar och Dataverse och enhetsgruppen anges som "externt underhåll". Ingen extra initiering krävs.
+Som en del av dubbelriktad skapas och synkroniseras enhetsgrupperna från Ekonomi och Drift-appar och de tillhörande enheterna i andra Dynamics 365-appar och Dataverse och enhetsgruppen anges som "externt underhåll". Ingen extra initiering krävs.
 
 För enheter i andra Dynamics 365-appar som inte existerar i Finance and Operations-appar:
 
-Kolumnen msdyn_symbol måste fyllas i för alla enheter. Enheterna kan alltid skapas i Finance and Operations-appar i motsvarande enhetsklass (om det finns). Om enhetsklassen inte finns måste du först skapa en enhetsklass (observera att du inte kan skapa en enhetsklass i Finance and Operations-appar utom via tillägg om du utökar uppräkningen) som matchar den andra Dynamics 365-appenhetsgruppen. Sedan kan du skapa enheten. Observera att enhetssymbolen i Finance and Operations-appar måste vara msdyn_symbol som tidigare anges i andra Dynamics 365-appar för enheten.
+Kolumnen msdyn_symbol måste fyllas i för alla enheter. Enheterna kan alltid skapas i Finance and Operations-appar i motsvarande enhetsklass (om det finns). Om enhetsklassen inte finns måste du först skapa en enhetsklass (observera att du inte kan skapa en enhetsklass i Ekonomi och Drift-appar utom via tillägg om du utökar uppräkningen) som matchar den andra Dynamics 365-appenhetsgruppen. Sedan kan du skapa enheten. Observera att enhetssymbolen i Finance and Operations-appar måste vara msdyn_symbol som tidigare anges i andra Dynamics 365-appar för enheten.
 
 ## <a name="product-policies-dimension-tracking-and-storage-groups"></a>Produktpolicyer: dimension, spårning och lagringsgrupper
 
@@ -201,17 +201,17 @@ Om du skapar appar i Dataverse ska du vara uppmärksam på att använda **produc
 
 ### <a name="initial-synchronization-of-products"></a>Initial synkronisering av produkter
 
-När dubbelriktat är aktiverat synkroniseras produkter från Finance and Operations-aooar till Dataverse och kundengagemangsappar. Produkter som skapats i Dataverse och andra Dynamics 365-appar före dubbelriktning frisläpptes kommer inte att uppdateras eller matchas med produktdata från Finance and Operations.
+När dubbelriktat är aktiverat synkroniseras produkter från Ekonomi och Drift-appar till Dataverse och kundengagemangsappar. Produkter som skapats i Dataverse och andra Dynamics 365-appar före dubbelriktning inte kommer att uppdateras eller matchas med produktdata från Ekonomi och Drift-appar.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Matchande produktdata från Finance and Operations och andra Dynamics 365-appar
 
-Om samma produkter hålls (överlappande/matchande) i Finance and Operations och i Dataverse och i andra Dynamics 365-appar, när du aktiverar dubbelriktning sker synkroniseringen av produkter från Finance and Operations och dubbla rader visas i Dataverse för samma produkt.
-För att undvika den tidigare situationen, om andra Dynamics 365-appar har produkter som överlappar/matchar med Finance and Operations, måste administratören som aktiverar dubbelriktning initiera kolumnerna **företag** (exempel: "USMF") och **msdyn_productnumber** (exempel: "1234:Black:S") innan synkroniseringen av produkterna äger rum. Med andra ord måste dessa två kolumner i produkten i Dataverse fyllas i med respektive företag Finance and Operations som produkten måste matchas mot och med dess produktnummer.
+Om samma produkter hålls (överlappande/matchande) i Ekonomi och Drift och i Dataverse och i andra Dynamics 365-appar, när du aktiverar dubbelriktning sker synkroniseringen av produkter från Ekonomi och Drift och dubbla rader visas i Dataverse för samma produkt.
+För att undvika den tidigare situationen, om andra Dynamics 365-appar har produkter som överlappar/matchar med Ekonomi och Drift, måste administratören som aktiverar dubbelriktning initiera kolumnerna **företag** (exempel: "USMF") och **msdyn_productnumber** (exempel: "1234:svart:S") innan synkroniseringen av produkterna äger rum. Med andra ord måste dessa två kolumner i produkten i Dataverse fyllas i med respektive företag Ekonomi och Drift som produkten måste matchas mot och med dess produktnummer.
 
 När synkroniseringen aktiveras och genomförs synkroniseras produkter från Finance and Operations med de matchade produkterna i Dataverse och andra Dynamics 365-appar. Detta gäller för både separata produkter och produktvarianter.
 
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Migrering av produktdata från och andra Dynamics 365-appar till Finance and Operations
 
-Om andra Dynamics 365-appar har produkter som inte finns i Finance and Operations Operations, kan administratören först använda **EcoResReleasedProductCreationV2Entity** för att importera produkterna i Finance and Operations. För det andra, matcha produktdata från Finance and Operations och andra Dynamics 365-appar enligt beskrivningen ovan.
+Om andra Dynamics 365-appar har produkter som inte finns i Ekonomi och Drift kan administratören först använda **EcoResReleasedProductCreationV2Entity** för att importera produkterna i Ekonomi och Drift. För det andra, matcha produktdata från Finance and Operations och andra Dynamics 365-appar enligt beskrivningen ovan.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

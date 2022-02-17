@@ -9,19 +9,23 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 49bb7bea167674eb81fd6d1144c6c302a7c29391
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 9e7343a485ae4779b075eeb48dabc39467e1a176
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964918"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074923"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Anställ befintliga medarbetare genom att rekrytera
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> Funktionerna som anges i det här avsnittet är för närvarande tillgängliga för Personal-kunder i ekonomiinfrastrukturen.  
+
 
 Ibland kan lediga befattningar fyllas av kandidater som redan är medarbetare i organisationen. Den här proceduren går igenom stegen för att anställa en befintlig medarbetare via rekryteringsprocessen. I den här proceduren har ett rekryteringsprojekt redan ställts in och en befintlig medarbetare har redan skickat in en ansökning för rekryteringsprojektet. Demonstrationsdataföretaget **USMF** har använts för att skapa denna procedur.
 

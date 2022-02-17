@@ -2,7 +2,7 @@
 title: Arbeta med fragment
 description: I det här avsnittet beskrivs varför, när och hur du ska använda fragment i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 10/16/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35a19f064b63ce476252064253032d35697bd69c84c4c93db1d0349a57527c2a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776204"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090754"
 ---
 # <a name="work-with-fragments"></a>Arbeta med fragment 
 
@@ -121,6 +121,20 @@ För att redigera ett fragment i Commerce webbplatsskaparen.
 1. Redigera fragmentets modulegenskaper och struktur efter behov. Processen ser ut som om du redigerar modulerna i vyn sidredigerare.
 
 Du kan också redigera ett fragment genom att markera det på en sida, i en mall eller i ett överordnat fragment, och sedan välja **redigera fragment** i egenskapsrutan till höger.
+
+### <a name="rename-a-fragment"></a>Byt namn ett fragment
+
+Följ dessa steg för att byta namn på ett befintligt fragment i webbplatsskaparen.
+
+1. I navigeringsfönstret till vänster välj er du **Fragment**.
+1. Välj fragmentnamnet för fragmentet som du vill byta namn på.
+1. Välj **Redigera** för att börja redigera fragmentet. Observera att du inte kan redigera ett fragment om någon annan redan redigerar ett fragment.
+1. I rutan för fragmentegenskaper väljer du pennsymbolen bredvid fragmentnamnet.
+1. Redigera fragmentnamnet efter behov.
+1. Markera kryssrutan om du vill bekräfta namnändringen.
+1. Välj **Slutför redigering**.
+
+Du kan byta namn på ett fragment efter att det har skapats genom att redigera det och sedan välja pennsymbolen bredvid fragmentnamnet i egenskapsrutan.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

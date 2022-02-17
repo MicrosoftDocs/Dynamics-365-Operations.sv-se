@@ -15,16 +15,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8bbecf85a13056225b0d35023d759456cade40fe10ca1978058abd8e47693ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740918"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070019"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Avancerad filtrerings- och frågesyntax
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Detta avsnitt beskriver filterings- och frågealternativ som är tillgängliga, när du använder operatorn **matchar** i den avancerade filtrerings-/sorteringsdialogen.
 
@@ -119,9 +122,9 @@ Detta avsnitt beskriver filterings- och frågealternativ som är tillgängliga, 
 <td>Två raka dubbla citationstecken (<strong>""</strong>) hittar rader utan värde för den aktuella kolumnen.</td>
 </tr>
 <tr>
-<td>(<span class="code">Finance and Operations fråga</span>) (Finance and Operations fråga mellan parenteser)</td>
+<td>(<span class="code">Frågan Ekonomi och Drift</span>) (Ekonomi och Drift-fråga inom parentes)</td>
 <td>Matchar en definierad fråga</td>
-<td>Skriv en fråga som ett SQL-uttryck inom parenteser med hjälp av Finance and Operations frågespråk.</td>
+<td>Skriv en fråga som ett SQL-uttryck inom parenteser med hjälp av Ekonomi och Drift frågespråk.</td>
   <td><strong><span class="code">((AccountNum SOM "US *") && (DirPartyTable.Name SOM "Cont*"))</span></strong><br><br> 
        Exempel på syntax för ett filtervillkor för ett fält från rotdatakällan och ett fält från en annan datakälla (för sidan Alla kunder)</td>
 </tr>

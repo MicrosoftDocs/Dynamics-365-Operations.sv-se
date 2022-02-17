@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 51107731090b77e75a0e5a8c91b052d494b452e4
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 98641f9989322feb77ab683df66c2c1f9ad50a0d
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944925"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8077075"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-germany-legacy"></a>Implementeringsriktlinjer för integrationsprovet för skatteregistreringstjänsten för Tyskland (äldre)
 
@@ -156,13 +156,13 @@ Föregående procedur aktiverar tilläggen som är komponenter i exemplet på sk
 
 ## <a name="design-of-extensions"></a>Design av tilläggen
 
-Exemplet på integrering av räkenskapsregistreringstjänsten för Tyskland baseras på [räkenskapsintegrationsfunktionen](fiscal-integration-for-retail-channel.md). Mer information om design för räkenskapsintegreringslösning finns i [översikt över räkenskapsintegrering för exempeldesign](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Exemplet på integrering av räkenskapsregistreringstjänsten för Tyskland baseras på [räkenskapsintegrationsfunktionen](fiscal-integration-for-retail-channel.md). Mer information om design för räkenskapsintegreringslösning finns i [översikt över räkenskapsintegrering för exempeldesign](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 ### <a name="commerce-runtime-extension-design"></a>Utbyggbarhetdesign för Commerce Runtime
 
 Syftet med tillägget som är en skattedokument leverantör är att generera tjänstspecifika dokument och hantera svar från räkenskapsregistreringstjänsten.
 
-CRT-tillägget är **Runtime.Extensions.DocumentProvider.EFRSample**. Mer information om design för räkenskapsintegreringslösning finns i [översikt över räkenskapsintegrering för handelskanaler](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+CRT-tillägget är **Runtime.Extensions.DocumentProvider.EFRSample**. Mer information om design för räkenskapsintegreringslösning finns i [översikt över räkenskapsintegrering för handelskanaler](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### <a name="request-handler"></a>Begärandehanterare
 

@@ -14,14 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 413143afb578aed29ce0836aaa3ac98ffc0c6cc3
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 7c72f866886f320d8a7fa22d6ccfa7e43284b5bf
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7484106"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071578"
 ---
 # <a name="process-compensation"></a>Bearbeta kompensation
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,10 +44,10 @@ När parametrarna för processhändelsen har sparats kan du klicka på knappen *
 
 Klicka på knappen **Lägg till** i fliken **Planer** om du vill lägga till en kompensationsplan i processhändelsen. Kolumnerna **Använd annan påverkan**, **Påverkansfaktor** och **Påverkansbeskrivning** används bara för variabla kompensationsplaner och omfattas inte av det här avsnittet.
 
-Spara posten och klicka sedan på knappen **Lägg till** i fliken **Åtgärder** för att lägga till fasta kompensationsåtgärder för den markerade planen. Använd alternativet **Aktivera rekommendationer** om du vill ange ett annat belopp än den beräknade riktlinjeökningen för åtgärden. Om du vill beräkna en åtgärd som baseras på resultatet av den föregående åtgärden för att koppla flera kompensationsåtgärder markerar du alternativet **Använd tidigare resultat**. Fasta kompensationsåtgärder är typer av kompensationslogik som du kan ge beskrivande namn till. För Klass- och Band-planer kan du bara lägga till fasta kompensationsåtgärder som är av följande typer:
+Spara posten och klicka sedan på knappen **Lägg till** i fliken **Åtgärder** för att lägga till fasta kompensationsåtgärder för den markerade planen. Använd alternativet **Aktivera rekommendationer** om du vill ange ett annat belopp än den beräknade riktlinjeökningen för åtgärden. Om du vill beräkna en åtgärd som baseras på resultatet av den föregående åtgärden för att koppla flera kompensationsåtgärder markerar du alternativet **Använd tidigare resultat**. Fasta kompensationsåtgärder är typer av kompensationslogik som du kan ge beskrivande namn till. För **Klass**- och **Band**-planer kan du bara lägga till fasta kompensationsåtgärder som är av följande typer:
 
-| Åtgärdstypen Fast kompensation | Funktionalitet                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Åtgärdstypen Fast kompensation | Funktionalitet                  |
+|-------------------------------|-------------------------------------------------------------------------|
 | Eget kapital                        | Eget kapital-åtgärder jämför medarbetarens lönesats per cykelns slutdatum med lägsta referenspunkten för de nivåer som anges för medarbetarens jobb. Om medarbetarens lönesats är lägre än den minsta referenspunkten beräknas ökningen som krävs för att få medarbetaren till den lägsta punkten i listan.                                                                                |
 | Merit                         | Meritåtgärder beräknar en ökning baserad på medarbetarens lönesats per cykelns slutdatum och ökningen i procent som finns i den fasta ökningsbudgeten för medarbetarens avdelning, fackförening och plats.                                                                                                                                                                                         |
 | Allmänt                       | Allmänna åtgärder beräknar en ökning på grundval av antingen en procentsats eller ger de anställda ett fast belopp. Detta avgörs utifrån inställningarna för **Fast kompensation** på fliken **Allmänt**.                                                                                                                                                                                                                        |
@@ -53,12 +56,12 @@ Spara posten och klicka sedan på knappen **Lägg till** i fliken **Åtgärder**
 
 Du kan bara lägga till **Fasta kompensationsåtgärder** ill typen Steg för steg-plan.
 
-| Åtgärdstypen Fast kompensation | Funktionalitet                                                                                                                                                                                           |
-|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Åtgärdstypen Fast kompensation | Funktionalitet                |
+|--------------------------------|------------------------------|
 | Steg                           | Ange om stegåtgärden ska flytta medarbetaren framåt 0 steg, 1 steg eller två steg på fliken **Allmänt**.                                                                                  |
 |                                | **0 steg** – Medarbetaren får lönesatsen för det aktuella steg som han/hon befinner sig på.                                                                                                                      |
 |                                | **1 steg** – Systemet kontrollerar om medarbetaren redan är på sista referenspunkten för nivån.                                                                                             |
-|                                | **2 steg** – Systemet flyttar fram medarbetaren två steg i den aktuella nivån. Systemet kanske bara flyttar en medarbetare ett eller noll steg om de uppnår den sista referensenspunkten för nivån. |
+|                                | **2 steg** – Medarbetaren flyttar fram två steg i den aktuella nivån. Medarbetaren kanske bara flyttar ett eller noll steg om de uppnår den sista referensenspunkten för nivån. |
 
 ## <a name="run-the-compensation-process"></a>Kör kompensationsprocessen
 När processhändelsen har ställts in med nödvändiga datumfält, planer och åtgärder kan du klicka på **Kör process** på sidan **Processhändelse**, detta öppnar dialogrutan **Kör kompensationsprocess**. Klicka på alternativet **Visa processresultat** för att se hur kompensationsbeloppen beräknades för varje medarbetare. Om du klickar på **OK** körs kompensationsprocessen för alla medarbetare som ingår i de valda kompensationsplanerna för cykelns slutdatum.

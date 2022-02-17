@@ -1,6 +1,6 @@
 ---
 title: Felsöka problem från uppgraderingar av Finance and Operations-appar
-description: Det här avsnittet innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem som är relaterade till uppgradering av Finance and Operations-appar.
+description: Det här avsnittet innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem som är relaterade till uppgradering av Ekonomi och Drift-appar.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: db1602c2edaa2e6b6310cce04639ef7a8e43df15
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c7c036ef44b0470c9b3f8087e7b5b1e16dde1b34
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782791"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062835"
 ---
 # <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Felsöka problem från uppgraderingar av Finance and Operations-appar
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
-Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Finance and Operations-appar och Dataverse. Särskilt ger de information som kan hjälpa dig att åtgärda problem som är relaterade till uppgradering av Finance and Operations-appar.
+
+Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Dataverse. Särskilt ger de information som kan hjälpa dig att åtgärda problem som är relaterade till uppgradering av Ekonomi och Drift-appar.
 
 > [!IMPORTANT]
 > Vissa av de problem som det här ämnet behandlar kan kräva antingen systemadministratörsrollen eller Microsoft Azure Active Directory (Azure AD) autentiseringsuppgifter för administratör för klientorganisationen. I avsnittet för varje problem förklaras om en viss roll eller autentiseringsuppgifter krävs.
@@ -33,7 +33,7 @@ Det här avsnittet innehåller felsökningsinformation för integrering av dubbe
 
 **Den roll som krävs för att åtgärda problemet:** systemadministratör
 
-Ett felmeddelande av följande slag kan visas när du försöker använda tabellen **DualWriteProjectConfiguration** för att uppdatera en Finance and Operations-app till plattformsuppdatering 30.
+Du kan få ett felmeddelande som liknar följande exempel när du försöker använda tabellen **DualWriteProjectConfiguration** för att uppdatera en Ekonomi och Drift-app till plattformsuppdatering 30.
 
 ```console
 Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
@@ -43,7 +43,7 @@ Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw
 
 Gör så här om du vill åtgärda problemet.
 
-1. Logga in på den virtuella datorn (VM) för Finance and Operations-appen.
+1. Logga in på den virtuella datorn (VM) för Ekonomi och Drift-appen.
 2. Öppna Visual Studio som administratör och öppna programobjektträd (AOT).
 3. Sök efter **DualWriteProjectConfiguration**.
 4. I programobjektträdet högerklickar du på **DualWriteProjectConfiguration** och väljer **Lägg till i nytt projekt**. Välj **OK** om du vill skapa det nya projekt som använder standardalternativ.
@@ -65,10 +65,10 @@ På sidan **dubbelriktad skrivning** kan du få ett felmeddelande som liknar fö
 
 Lös problemet genom att först följa de här stegen för att kontrollera att kolumnerna finns i tabellen.
 
-1. Logga in på den virtuella datorn för Finance and Operations-appen.
+1. Logga in på den virtuella datorn för Ekonomi och Drift-appen.
 2. Gå till **Arbetsytor \> Datahantering**, välj panelen **Ramverksparametrar** och sedan på fliken **Tabellinställningar** välj **Uppdatera tabellistan** för att uppdatera tabellerna.
-3. Gå till **Arbetsytor \> Datahantering**, välj fliken **Datatabeller** och kontrollera att tabellen finns med i listan. Om tabellen inte finns med loggar du in på den virtuella datorn för Finance and Operations-appen och ser till att tabellen är tillgänglig.
-4. Öppna sidan **Tabellmappning** från sidan **Dubbelriktad skrivning** i Finance and Operations-appen.
+3. Gå till **Arbetsytor \> Datahantering**, välj fliken **Datatabeller** och kontrollera att tabellen finns med i listan. Om tabellen inte finns med loggar du in på den virtuella datorn för Ekonomi och Drift-appen och ser till att tabellen är tillgänglig.
+4. Öppna sidan **Tabellmappning** från sidan **Dubbelriktad skrivning** Ekonomi och Drift-app.
 5. Markera **Uppdatera tabellista** om du vill fylla i kolumnerna i tabellmappningarna automatiskt.
 
 Om problemet fortfarande inte är åtgärdat följer du stegen nedan.
@@ -76,10 +76,10 @@ Om problemet fortfarande inte är åtgärdat följer du stegen nedan.
 > [!IMPORTANT]
 > De här stegen vägleder dig genom processen att ta bort en tabell och sedan lägga till den igen. Se till att du följer stegen exakt om du vill undvika problem.
 
-1. I Finance and Operations-appen, gå till **Arbetsytor \> Datahantering** och välj panelen **Datatabeller**.
+1. I Ekonomi och Drift-appen, gå till **Arbetsytor \> Datahantering** och välj panelen **Datatabeller**.
 2. Sök efter den tabell som saknar attributet. Klicka på **Ändra målmappning** i verktygsfältet.
 3. I fönstret **Mappa mellanlagring till mål**, klicka på **Generera källmappning**.
-4. Öppna sidan **Tabellmappning** från sidan **Dubbelriktad skrivning** i Finance and Operations-appen.
+4. Öppna sidan **Tabellmappning** från sidan **Dubbelriktad skrivning** Ekonomi och Drift-app.
 5. Om attributet inte fylls i automatiskt på kartan lägger du till det manuellt genom att klicka på knappen **Lägg till attribut** och sedan på **Spara**. 
 6. Markera mappningen och klicka på **Kör**.
 

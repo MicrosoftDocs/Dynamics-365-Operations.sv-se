@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 17702ada5bf75a44652e194c2555a83e76e7a36b
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.openlocfilehash: 0c8b88e5d190f6dc9beb9342909d1e489d4af10b
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817450"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062296"
 ---
 # <a name="dynamics-365-finance-and-dynamics-365-supply-chain-management-in-us-government-community-cloud-gcc"></a>Dynamics 365 Finance och Dynamics 365 Supply Chain Management i US Government Community Cloud (GCC)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Välj Microsoft Dynamics 365 US Government-produkter är tillgängliga för kvalificerade myndigheter och privata enheter. Dessa enheter är begränsade till följande typer:
 
@@ -38,9 +38,9 @@ När den initiala introduktionen är slutförd följer du instruktionerna i [Pro
 
 ## <a name="environment-deployment"></a>Distribuera miljö
 
-När du har slutfört introduktionen till projekt kan du granska den ytterligare kapaciteten hos LCS som beskrivs i [Lifecycle Services (LCS) för Finance and Operations programkunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Gå sedan vidare till miljödistributionen.
+När du har slutfört introduktionen till projekt kan du granska den ytterligare kapaciteten hos LCS som beskrivs i [Lifecycle Services (LCS) för Ekonomi och Drift-programkunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Gå sedan vidare till miljödistributionen.
 
-- Om du vill distribuera Microsoft-hanterade miljöer via LCS följer du instruktionerna i [Lifecycle Services (LCS) för Finance and Operations programkunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
+- Om du vill distribuera Microsoft-hanterade miljöer via LCS följer du instruktionerna i [Lifecycle Services (LCS) för Ekonomi och Drift-programkunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
 - För molnstyrda miljöer , se [Distribuera och få tillgång till utvecklingsmiljöer](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). Du måste också slutföra resurshanterarens onboardingprocess för dina anslutningar, enligt beskrivningen i [Slutför Azure Resource Manager integreringsprocess för US government Lifecycle Services-projekt](arm-onbarding-us-goverment.md).
 
 > [!NOTE]

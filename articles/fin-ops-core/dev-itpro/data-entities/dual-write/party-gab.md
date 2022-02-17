@@ -9,20 +9,20 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 127b4092ad3c5e8737aff43f503e0a8f36ff1ec8
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 601c49e21c3a97d2da225705ddbb386e491d4d25
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781354"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060342"
 ---
 # <a name="party-and-global-address-book"></a>Part och global adressbok
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-*Part* och *global adressbok* är koncept i Finance and Operations-program. En part kan vara en organisation eller en person. Det är praktiskt att globalt lagra och hantera egenskaper för en part, till exempel namn, språk, kontakter och adresser. När ett egenskapsvärde sedan ändras på ett ställe återspeglas ändringen på alla ställen där parten är involverad.
+
+*Part* och *global adressbok* är koncept i Ekonomi och Drift-appar. En part kan vara en organisation eller en person. Det är praktiskt att globalt lagra och hantera egenskaper för en part, till exempel namn, språk, kontakter och adresser. När ett egenskapsvärde sedan ändras på ett ställe återspeglas ändringen på alla ställen där parten är involverad.
 
 ## <a name="party"></a>Part
 
@@ -46,7 +46,7 @@ Följande illustration visar datamodellen för part.
 > [!TIP]
 > När du försöker skapa en ny kontopost använder du fältet **Part** för att söka efter posten med hjälp av namnet. Om du hittar posten behöver du därför helt enkelt bara markera den. Systemet fyller sedan automatiskt i alla data från den parten. Du behöver inte ange alla fält som behövs manuellt. Detta beteende kan du hitta på de färdiga medföljande sidorna **Konto**, **Kontakt** och **Leverantör**.
 
-Dubbelriktad skrivning stöder inte alla partroller i Finance and Operations-program. En fullständig lista över partroller finns i [översikten över den globala adressboken](../../../fin-ops/organization-administration/overview-global-address-book.md).
+Dubbelriktad skrivning stöder inte alla partroller i Ekonomi och Drift-program. En fullständig lista över partroller finns i [översikten över den globala adressboken](../../../fin-ops/organization-administration/overview-global-address-book.md).
 
 ### <a name="global-address-book"></a>Global adressbok
 
@@ -75,7 +75,7 @@ Registret **Kontakt** kan lagra följande radtyper:
 |----------|-------------|
 | En person som är kund (t.ex. en säljbar kontakt eller B2C-kund) | En sorterad kontaktpost där fältet **Företag** är inte är tomt och fältet **Är kund** anges som **Ja**. |
 | En person som är leverantör (till exempel en enskild firma som är leverantör). | En sorterad kontaktpost där fältet **Företag** är inte är tomt och fältet **Är leverantör** anges som **Ja**. |
-| En person som är både kund och leverantör | En sorterad kontaktpost där fältet **Företag** är inte är tomt och fältet **Är kund** anges som **Ja** och fältet **Är leverantör** anges som **Ja**. En person kan vara både producent och kund för en annan produkt. Både Finance and Operations program och support för den här relationen. |
+| En person som är både kund och leverantör | En sorterad kontaktpost där fältet **Företag** är inte är tomt och fältet **Är kund** anges som **Ja** och fältet **Är leverantör** anges som **Ja**. En person kan vara både producent och kund för en annan produkt. Både Ekonomi och Drift-program och support för den här relationen. |
 | En person som är kontaktperson för en organisation men inte är kund eller leverantör. | En ej sorterad kontaktpost där fältet **Företag** är tomt och fältet **Är kund** anges som **Nej** och fältet **Är leverantör** anges som **Nej**. |
 
 ## <a name="contact-for-party-table"></a>Kontakt för partregister
@@ -142,9 +142,9 @@ Du kan använda knappen **Ny elektronisk adress** ovanför rutnätet för att sk
 Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande versioner tas alla fält för postadresser och elektroniska adresser bort från de andra flikarna (till exempel flikarna **Sammanfattning** och **Detaljer**). Kontaktinformation som visas på fliken **Detaljer** är skrivskyddade kopior av den primära elektroniska adressen, till exempel primärt telefonnummer, primär e-postadress, primär fax och primärt Twitter-ID. Under kvalificeringsledprocessen kan du både ange ett företagtelefonnummer och ett mobiltelefonnummer. Företagstelefonnumret betraktas som primärt telefonnummer om **IsMobile=No**, och mobiltelefonnumret betraktas som sekundärt nummer om **IsMobile=Yes**.
 
 > [!TIP]
-> Använd flikarna **Adresser** och **Elektroniska adresser** i formulären **Konto** och **Kontakt** om du vill hantera postadresser och elektroniska adresser. På så sätt ser du till att adressdata synkroniseras till Finance and Operations-program.
+> Använd flikarna **Adresser** och **Elektroniska adresser** i formulären **Konto** och **Kontakt** om du vill hantera postadresser och elektroniska adresser. På så sätt ser du till att adressdata synkroniseras till Ekonomi och Drift-program.
 
-## <a name="setup"></a>Ställ in
+## <a name="setup"></a>Inställningar
 
 1. Öppna din appmiljö för kundengagemang.
 
@@ -230,7 +230,7 @@ Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande ve
 
 12. Kör kartorna i följande ordning: Om du får ett fel där det står "Projektvalideringen misslyckades. Målfält saknas..." öppnar du kartan och väljer **Uppdatera register**. Kör sedan kartan.
 
-    Finance and Operations-app | Kundengagemangsapp  
+    Ekonomi och Drift-appar | Kundengagemangsapp  
     ----------------------------|------------------------
     [CDS-parter](mapping-reference.md#220) | msdyn_parties
     [Platser för postadressen för CDS](mapping-reference.md#234) | msdyn_postaladdresscollections
@@ -269,7 +269,7 @@ Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande ve
 
 En samling tabellkartor fungerar tillsammans för interaktion mellan part och global adressbok, som visas i följande tabell.
 
-| Finance and Operations-app | Kundengagemangsapp | beskrivning |
+| Ekonomi och Drift-appar | Kundengagemangsapp | Beskrivning |
 |----------------------------|-------------------------|-------------|
 | [Kontaktpersonens titlar](mapping-reference.md#223) | msdyn\_salescontactpersontitles |
 | [Kunder V3](mapping-reference.md#101) | konton |
@@ -295,10 +295,10 @@ Mer information finns i [Mappningsreferens för dubbel skrivning](mapping-refere
 
 ## <a name="known-issues-and-limitations"></a>Kända problem och begränsningar
 
-+ När du skapar en kund tillsammans med en adress och sparar deni Finance and Operations-program, kanske adressen inte synkroniseras med registret **Adress**. Detta beror på ett ordningsföljdsproblem med plattformar med dubbelskrivning. Som en lösning måste du skapa kunden först och spara den. Lägg sedan till adressen.
-+ När en kundpost har en primär adress i programmen och du skapar en ny kontakt för kunden ärver kontaktposten en primär adress från den associerade kundposten i Finance and Operations-program. Detta inträffar även för leverantörskontakt. Dataverse stöder för närvarande inte detta beteende. Om dubbel skrivning är aktiverad synkroniseras en kundkontakt som ärvs med en primär adress från Finance and Operations-appen med Dataverse tillsammans med sin adress.
++ I Ekonomi och Drift-appar, när du skapar en kund tillsammans med en adress och sparar den kanske adressen inte synkroniseras med registret **Adress**. Detta beror på ett ordningsföljdsproblem med plattformar med dubbelskrivning. Som en lösning måste du skapa kunden först och spara den. Lägg sedan till adressen.
++ När en kundpost har en primär adress i programmen och du skapar en ny kontakt för kunden ärver kontaktposten en primär adress från den associerade kundposten i Ekonomi och Drift-program. Detta inträffar även för leverantörskontakt. Dataverse stöder för närvarande inte detta beteende. Om dubbel skrivning är aktiverad synkroniseras en kundkontakt som ärvs med en primär adress från Ekonomi och Drift-appen med Dataverse tillsammans med sin adress.
 + De elektroniska adresser som ställs in på fliken för elektronisk adress i formuläran **Konto**, **Kontakt** och **Leverantör** härrör från `msdyn_partyelectronicaddress`-registret. Denna information flödar inte till dess associerade transaktioner såsom försäljningsorder, offert och inköpsorder. Vi planerar att korrigera det här problemet i stegvisa versioner. Befintliga data i de elektroniska adressfälten i konto- och kontaktposterna fortsätter att arbeta med transaktioner såsom försäljningsorder, offert och inköpsorder.
-+ I Finance and Operations-program kan du skapa en kontaktpost från formuläret **Läfgg till kontakt**. När du försöker skapa en ny kontakt från formuläret **Visa kontalt**, misslyckas åtgärden. Detta är ett känt problem.
++ I Ekonomi och Drift-program kan du skapa en kontaktpost från formuläret **Lägg till kontakt**. När du försöker skapa en ny kontakt från formuläret **Visa kontalt**, misslyckas åtgärden. Detta är ett känt problem.
 
     ![Känt problem med Lägg till kontakt.](media/party-gab-contact-issue.png)
 
@@ -307,4 +307,4 @@ Mer information finns i [Mappningsreferens för dubbel skrivning](mapping-refere
 
     ![Känt problem med adress.](media/party-gab-address-issue.png)
 
-+ Du kan inte ange en framåtdaterad postadress med hjälp av en Finance and Operations-app med dubbelskrivning, detta eftersom Dataverse inte stöder giltighetsdatum. Om du anger en framtida daterad postadress med hjälp av en Finance and Operations-app, synkroniserar denna helt och hållet med Dataverse och du får omedelbart se adressen i användargränssnittet. Eventuella uppdateringar av den här posten resulterar i ett fel eftersom dent är daterat i framtiden och inte i nutid i Finance and Operations-programmet.
++ Du kan inte ange en framåtdaterad postadress med hjälp av en Ekonomi och Drift-app med dubbelskrivning, detta eftersom Dataverse inte stöder giltighetsdatum. Om du anger en framtida daterad postadress med hjälp av en Ekonomi och Drift-app, synkroniserar denna helt och hållet med Dataverse och du får omedelbart se adressen i användargränssnittet. Eventuella uppdateringar av den här posten resulterar i ett fel eftersom den är daterad i framtiden och inte i nutid i Ekonomi och Drift-programmet.

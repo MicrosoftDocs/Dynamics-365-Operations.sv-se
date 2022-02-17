@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bd9c39bb3b5e221694fe20a8085c9099040cb422
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: b7c2423faa4a0c50d9d319a9e6f489e2946c36a7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431140"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071596"
 ---
 # <a name="enroll-an-employee-in-a-fixed-compensation-plan"></a>Registrera en medarbetare i en fast kompensationsplan
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -31,8 +34,8 @@ Chefen över kompensationer och förmåner kan tilldela medarbetare till fasta k
 3. Klicka på länken på den valda raden i listan.
 4. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Befattning**.
 5. Klicka på länken på den valda raden i listan.
-    * Nivån som visas kommer från kompensationsnivån för jobbet på befattningen. Nivån måste anges för jobbet innan kompensation kan tilldelas till medarbetaren.  
-6. Välj den fasta kompensationsplanen för medarbetaren i fältet **Plan**. Planuppslagningen filtreras för att visa endast de planer som medarbetaren är berättigad till baserat på berättiganderegler.
+    * Nivån som visas kommer från fältet **Kompensation** Snabbflik > **Nivå** från **Jobb** som tilldelats **Befattningen**. Nivån måste anges för jobbet innan kompensation kan tilldelas till medarbetaren.  
+6. Välj den fasta kompensationsplanen för medarbetaren i fältet **Plan**. **Plan**-uppslagningen filtreras för att visa endast de planer som medarbetaren är berättigad till baserat på **berättiganderegler**.
 7. Hitta och markera önskad post i listan.
     * **Giltighetsdatum** och **Utgångsdatum** för kompensationen hämtas som standard från start- och slutdatum för arbetarens befattningstilldelning. Du kan justera dessa datum efter behov.  
     * Om den fasta kompensationsplanen är en stegplan, väljer du det steg som innehåller korrekt lönesats för medarbetaren. Om den fasta kompensationsplanen är en gradplan eller bandplan, anger du lönesatsen för medarbetaren. Lönesatsen ska valideras mot toleransinställningarna för planen, och de lägsta och högsta referenspunkterna för jobbets kompensationsnivå.  

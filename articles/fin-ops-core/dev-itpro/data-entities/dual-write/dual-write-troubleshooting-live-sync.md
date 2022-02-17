@@ -9,27 +9,27 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 69667f8b64c048f5957168d1af21a6c858bc0bad
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: df184decdfa900ccb5c2070575e55052b9dfc547
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782589"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062373"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Felsöka problem med direkt synkronisering
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Finance and Operations-appar och Microsoft Dataverse. Särskilt ger den information som kan hjälpa dig att åtgärda problem med direkt synkronisering.
+
+Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Microsoft Dataverse. Särskilt ger den information som kan hjälpa dig att åtgärda problem med direkt synkronisering.
 
 > [!IMPORTANT]
 > Vissa av de problem som det här ämnet behandlar kan kräva antingen systemadministratörsrollen eller Azure Active Directory (Azure AD) autentiseringsuppgifter för administratör för klientorganisationen. Varje avsnitt förklarar om en viss roll eller vissa autentiseringsuppgifter krävs.
 
 ## <a name="live-synchronization-shows-an-error-when-you-create-a-row"></a>Live-synkroniseringen visar ett fel när du skapar en rad
 
-Följande felmeddelande kan visas när du skapar i en rad i en Finance and Operations-app:
+Följande felmeddelande kan visas när du skapar i en rad i en Ekonomi och Drift-app:
 
 *\[{\\"fel\\":{\\"kod\\":\\"0x80072560\\",\\"meddelande\\":\\"Användaren är inte en medlem av organisationen.\\"}}\], Fjärrservern returnerade ett fel: (403) förbjudet."}}".*
 
@@ -39,27 +39,27 @@ Om du vill åtgärda problemet följer du stegen i [Systemkrav och förutsättni
 
 **Den roll som krävs för att åtgärda problemet:** systemadministratör
 
-Följande felmeddelande kan visas när du försöker spara tabelldata i en Finance and Operations-app:
+Följande felmeddelande kan visas när du försöker spara tabelldata i en Ekonomi och Drift-app:
 
 *Det går inte att spara ändringarna i databasen. Arbetsenheten kan inte genomföra transaktionen. Det gick inte att skriva data till entitets-uoms. Skrivningar till UnitOfMeasureEntity misslyckades med felmeddelandet Det gick inte att synkronisera med entitets-uoms.*
 
-För att lösa problemet ser du till att förutsatta referensdata finns i både Finance and Operations-appen och Dataverse. Till exempel om en kundpost tillhör en viss kundgrupp, se till att den kundgruppens post finns i Dataverse.
+För att lösa problemet måste du se till att de förutsatta referensdata finns i både Ekonomi och Drift-appen och Dataverse. Till exempel om en kundpost tillhör en viss kundgrupp, se till att den kundgruppens post finns i Dataverse.
 
 Om det finns data på båda ställena och du har bekräftat att problemet inte är datarelaterat följer du dessa steg.
 
-1. Öppna entiteten **DualWriteProjectConfigurationEntity** genom att använda Excel-tillägget. Aktivera designläget i Excel-tillägget för Finance and Operations och lägg till **DualWriteProjectConfigurationEntity** i arket om du vill använda tillägget. Mer information finns i [Visa och uppdatera enhetsdata med Excel](../../office-integration/use-excel-add-in.md).
+1. Öppna entiteten **DualWriteProjectConfigurationEntity** genom att använda Excel-tillägget. För att använda tillägget, aktivera designläge i Ekonomi och Drift Excel-tillägget och lägg till **DualWriteProjectConfigurationEntity** till ett kalkylblad. Mer information finns i [Visa och uppdatera enhetsdata med Excel](../../office-integration/use-excel-add-in.md).
 2. Välj och ta bort posterna som har problem i mappningen och projektet för dubbelriktad skrivning. Det kommer att finnas två poster för varje mappning för dubbelriktad skrivning.
 3. Publicera ändringarna med hjälp av Excel-tillägget. Det här steget är viktigt eftersom det tar bort posterna från entiteten och de underliggande tabellerna.
 
-## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Hantera läs- eller skrivbehörighetsfel när du skapar data i en Finance and Operations-app
+## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Hantera läs- eller skrivbehörighetsfel när du skapar data i en Ekonomi och Drift-app
 
-Felmeddelande Felaktig begäran kan visas när du skapar data i en Finance and Operations-app.
+Felmeddelande Felaktig begäran kan visas när du skapar data i en Ekonomi och Drift-app.
 
 ![Exempel på felmeddelandet Felaktig begäran.](media/error_record_id_source.png)
 
 För att åtgärda problemet måste du aktivera det saknade privilegiet genom att tilldela rätt säkerhetsroll till teamet för den mappade Dynamics 365 Sales- eller Dynamics 365 Customer Service-affärsenheten.
 
-1. I Finance and Operations-appen, leta reda på den affärsenhet som är mappad till anslutningsuppsättningen för dataintegrering.
+1. I Ekonomi och Drift-appen, leta reda på den affärsenhet som är mappad till anslutningsuppsättningen för dataintegrering.
 
     ![Organisationsmappning.](media/mapped_business_unit.png)
 
@@ -77,7 +77,7 @@ För att åtgärda problemet måste du aktivera det saknade privilegiet genom at
 
 **Den roll som krävs för att åtgärda problemet:** systemadministratör
 
-Följande felmeddelande kan visas när du skapar data i en Finance and Operations-app:
+Följande felmeddelande kan visas när du skapar data i en Ekonomi och Drift-app:
 
 *{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Det gick inte att generera nyttolast för entiteten CustCustomerV3Entity**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Skapande av nyttolast misslyckades med fel URI: URI är tom."}\],"isErrorCountUpdated":true}*
 
@@ -85,19 +85,19 @@ Så här ser felet ut i Customer Engagement-appen:
 
 > Ett oväntat fel har inträffat från ISV-kod. (ErrorType = ClientError) Ett oväntat fel uppstod från ISV-koden. Oväntat undantag från plugin-programmet (kör): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: misslyckades att bearbeta ett entitetskonto – (Ett anslutningsförsök misslyckades eftersom den anslutna parten inte svarade ordentligt efter en tidsperiod, eller upprättad anslutning misslyckades eftersom ansluten värd inte har svarat.
 
-Det här felet uppstår om Dataverse-miljön återställs felaktigt när du försöker skapa data i Finance and Operations-appen.
+Det här felet uppstår om Dataverse-miljön återställs felaktigt när du försöker skapa data i Ekonomi och Drift-appen.
 
 > [!IMPORTANT]
 > Om du har länkat om miljöerna måste du stoppa alla entitetsmappningar innan du fortsätter med de begränsande stegen.
 
-Om du vill åtgärda problemet måste du utföra stegen både i Dataverse och Finance and Operations-appen.
+Om du vill åtgärda problemet måste du utföra stegen både i Dataverse och Ekonomi och Drift-appen.
 
-1. Följ dessa steg i Finance and Operations-appen:
+1. I Ekonomi och Drift-appen, följ dessa steg:
 
-    1. Öppna entiteten **DualWriteProjectConfigurationEntity** genom att använda Excel-tillägget. Aktivera designläget i Excel-tillägget för Finance and Operations och lägg till **DualWriteProjectConfigurationEntity** i arket om du vill använda tillägget. Mer information finns i [Visa och uppdatera enhetsdata med Excel](../../office-integration/use-excel-add-in.md).
+    1. Öppna entiteten **DualWriteProjectConfigurationEntity** genom att använda Excel-tillägget. För att använda tillägget, aktivera designläge i Ekonomi och Drift Excel-tillägget och lägg till **DualWriteProjectConfigurationEntity** till ett kalkylblad. Mer information finns i [Visa och uppdatera enhetsdata med Excel](../../office-integration/use-excel-add-in.md).
     2. Välj och ta bort posterna som har problem i mappningen och projektet för dubbelriktad skrivning. Det kommer att finnas två poster för varje mappning för dubbelriktad skrivning.
     3. Publicera ändringarna med hjälp av Excel-tillägget. Det här steget är viktigt eftersom det tar bort posterna från entiteten och de underliggande tabellerna.
-    4. Bidra till att förhindra fel när du länkar om Finance and Operations- eller Dataverse-miljön genom att se till att inga konfigurationer för dubbelriktad skrivning finns kvar.
+    4. Bidra till att förhindra fel när du länkar om Ekonomi och Drift- eller Dataverse-miljön genom att se till att inga konfigurationer för dubbelriktad skrivning finns kvar.
 
 2. Följ dessa steg i Dataverse:
 
@@ -108,12 +108,12 @@ Om du vill åtgärda problemet måste du utföra stegen både i Dataverse och Fi
     5. Välj **Resultat** för att visa konfigurationerna.
     6. Ta bort alla instanser.
 
-3. Följ dessa steg i Finance and Operations-appen:
+3. I Ekonomi och Drift-appen, följ dessa steg:
 
-    1. Öppna entiteten **DualWriteProjectConfigurationEntity** genom att använda Excel-tillägget. Aktivera designläget i Excel-tillägget för Finance and Operations och lägg till **DualWriteProjectConfigurationEntity** i arket om du vill använda tillägget. Mer information finns i [Visa och uppdatera enhetsdata med Excel](../../office-integration/use-excel-add-in.md).
+    1. Öppna entiteten **DualWriteProjectConfigurationEntity** genom att använda Excel-tillägget. För att använda tillägget, aktivera designläge i Ekonomi och Drift Excel-tillägget och lägg till **DualWriteProjectConfigurationEntity** till ett kalkylblad. Mer information finns i [Visa och uppdatera enhetsdata med Excel](../../office-integration/use-excel-add-in.md).
     2. Välj och ta bort posterna som har problem i mappningen och projektet för dubbelriktad skrivning. Det kommer att finnas två poster för varje mappning för dubbelriktad skrivning.
     3. Publicera ändringarna med hjälp av Excel-tillägget. Det här steget är viktigt eftersom det tar bort posterna från entiteten och de underliggande tabellerna.
-    4. Bidra till att förhindra fel när du länkar om Finance and Operations- eller Dataverse-miljön genom att se till att inga konfigurationer för dubbelriktad skrivning finns kvar.
+    4. Bidra till att förhindra fel när du länkar om Ekonomi och Drift- eller Dataverse-miljön genom att se till att inga konfigurationer för dubbelriktad skrivning finns kvar.
 
 ## <a name="live-synchronization-error-after-you-do-a-full-database-copy"></a>Live-synkroniseringsfel när du har kopierat en fullständig databas
 
@@ -189,9 +189,9 @@ while(qRun.next())
 }
 ```
 
-## <a name="data-from-finance-and-operations-apps-isnt-synced-to-dataverse"></a>Data från Finance and Operations-appar synkroniserade inte med Dataverse
+## <a name="data-from-finance-and-operations-apps-isnt-synced-to-dataverse"></a>Data från Ekonomi och Drift-appar som inte är synkroniserade till Dataverse
 
-Vid live-synkronisering kanske du stöter på ett problem där bara en del av data synkroniseras från Finance and Operations-appar till Dataverse, eller att data inte synkroniseras alls.
+Vid live-synkronisering kanske du stöter på ett problem där bara en del av data synkroniseras från Ekonomi och Drift-appar till Dataverse, eller att data inte synkroniseras alls.
 
 > [!NOTE]
 > Du måste åtgärda det här problemet under utvecklingen.
@@ -200,13 +200,13 @@ Innan du börjar åtgärda problemet måste du kontrollera följande förutsätt
 
 + Kontrollera att dina anpassade ändringar skrivs in i ett enda transaktionsdefinitionsområde.
 + Affärshändelser och ramverket för dubbelriktad skrivning hanterar inte åtgärderna `doinsert()`, `doUpdate()` och `recordset()`, eller poster där `skipBusinessEvents(true)` har markerats. Om din kod finns i de här funktionerna kommer dubbelriktad skrivning inte att utlösas.
-+ Affärshändelser måste registreras för den datakälla som mappas. En del datakällor kan använda en yttre koppling och kan markeras som skrivskyddade i Finance and Operations-appar. Dessa datakällor spåras inte.
++ Affärshändelser måste registreras för den datakälla som mappas. En del datakällor kan använda en yttre koppling och kan markeras som skrivskyddade i Ekonomi och Drift-appar. Dessa datakällor spåras inte.
 + Ändringar initieras endast om ändringarna gäller de mappade fälten. Omappade fältändringar utlöser inte dubbelriktad skrivning.
 + Se till att filterutvärderingarna ger ett giltigt resultat.
 
 ### <a name="troubleshooting-steps"></a>Felsökningssteg
 
-1. Granska fältmappningar på administratörssidan för dubbelriktad skrivning. Om ett fält inte mappas från Finance and Operations-appar till Dataverse spåras det inte. På följande bild spåras till exempel fältet **Beskrivning** från Dataverse, men inte från Finance and Operations-appar. Inga ändringar i detta fält i Finance and Operations-appar kommer att spåras.
+1. Granska fältmappningar på administratörssidan för dubbelriktad skrivning. Om ett fält inte mappas från Ekonomi och Drift-appar till Dataverse spåras det inte. På följande bild spåras till exempel fältet **Beskrivning** från Dataverse, men inte från Ekonomi och Drift-appar. Inga ändringar i detta fält i Ekonomi och Drift-appar kommer att spåras.
 
     ![Spårat fält.](media/live-sync-troubleshooting-1.png)
 
@@ -220,9 +220,9 @@ Innan du börjar åtgärda problemet måste du kontrollera följande förutsätt
 
 ### <a name="sample-scenario"></a>Exempelscenario
 
-I Finance and Operations-appar finns det en uppdatering av adressen för en kontaktpost, men adressändringen synkroniseras inte till Dataverse. Detta scenario inträffar eftersom ingen post i tabellen **BusinessEventsDefinition** har kombinationen av den berörda tabellen och entiteten. Tabellen **LogisticsPostalAddress** är inte den direkta datakällan för entiteten **smmContactpersonCDSV2Entity**. Entiteten **smmContactpersonCDSV2Entity** har **smmContactPersonV2Entity** som datakälla, och **smmContactPersonV2Entity** har i sin tur **LogisticsPostalAddressBaseEntity** som datakälla. Tabellen **LogisticsPostalAddress** är datakällan för **LogisticsPostalAddressBaseEntity**.
+I Ekonomi och Drift-appar finns det en uppdatering av adressen för en kontaktpost, men adressändringen synkroniseras inte till Dataverse. Detta scenario inträffar eftersom ingen post i tabellen **BusinessEventsDefinition** har kombinationen av den berörda tabellen och entiteten. Tabellen **LogisticsPostalAddress** är inte den direkta datakällan för entiteten **smmContactpersonCDSV2Entity**. Entiteten **smmContactpersonCDSV2Entity** har **smmContactPersonV2Entity** som datakälla, och **smmContactPersonV2Entity** har i sin tur **LogisticsPostalAddressBaseEntity** som datakälla. Tabellen **LogisticsPostalAddress** är datakällan för **LogisticsPostalAddressBaseEntity**.
 
-En liknande situation kan uppstå i vissa icke-standardmönster, t.ex. i fall där tabellen som ändras i Finance and Operations-appar inte är uppenbart länkad till den entitet som innehåller den. Primära adressdata beräknas till exempel på entiteten **smmContactPersonCDSV2Entity**. Ramverket för dubbelriktad skrivning försöker fastställa hur en ändring i en underliggande tabell mappas tillbaka till entiteter. Vanligtvis räcker det med att använda det här sättet. I vissa fall är dock länken så komplex att du måste vara specifik. Du måste se till att **RecId** för den relaterade tabellen är direkt tillgänglig för entiteten. Lägg sedan till en statisk metod för att övervaka tabellen för ändringar.
+En liknande situation kan uppstå i vissa icke-standardmönster, t.ex. i fall där tabellen som ändras i Ekonomi och Drift-appar inte är uppenbart länkad till den entitet som innehåller den. Primära adressdata beräknas till exempel på entiteten **smmContactPersonCDSV2Entity**. Ramverket för dubbelriktad skrivning försöker fastställa hur en ändring i en underliggande tabell mappas tillbaka till entiteter. Vanligtvis räcker det med att använda det här sättet. I vissa fall är dock länken så komplex att du måste vara specifik. Du måste se till att **RecId** för den relaterade tabellen är direkt tillgänglig för entiteten. Lägg sedan till en statisk metod för att övervaka tabellen för ändringar.
 
 Se till exempel metoden **smmContactPersonCDSV2Entity::getEntityDataSourceToFieldMapping()**. **CustCustomerV3entity** och **VendVendorV2Entity** ändrats för att hantera den här situationen.
 
@@ -250,19 +250,19 @@ Gör så här om du vill åtgärda problemet.
 5. Stoppa alla mappningar för dubbelriktad skrivning som har skapats i entiteten **smmContactPersonCDSV2Entity**.
 6. Starta mappningen. Du bör se den nya tabellen (**LogisticsPostalAddress** i det här exemplet) som du har börjat spåra med hjälp av kolumnen **RefTableName** för den rad där värdet **refentityname** är lika med **smmContactPersonCDSV2Entity** i tabellen **BusinessEventsDefinition**.
 
-## <a name="error-when-you-create-a-record-where-multiple-records-are-sent-from-a-finance-and-operations-app-to-dataverse-in-the-same-batch"></a>Fel när du skapar en post där flera poster skickas från en Finance and Operations-app till Dataverse i samma batch
+## <a name="error-when-you-create-a-record-where-multiple-records-are-sent-from-a-finance-and-operations-app-to-dataverse-in-the-same-batch"></a>Fel när du skapar en post där flera poster skickas från en Ekonomi och Drift-app till Dataverse i samma batch
 
-För alla transaktioner skapar en Finance and Operations-app data i en batch och skickar dem som ett batchjobb till Dataverse. Om två poster skapas som en del av samma transaktion, och de refererar till varandra, kan du få ett felmeddelande som liknar följande exempel i Finance and Operations-appen:
+För alla transaktioner skapar en Ekonomi och Drift-app data i en batch och skickar dem som ett batchjobb till Dataverse. Om två poster skapas som en del av samma transaktion, och de refererar till varandra, kan du få ett felmeddelande som liknar följande exempel i Ekonomi och Drift-appen:
 
 *Det gick inte att skriva data till aaa_fundingsources. Det gick inte att slå upp ebecsfs_contracts med värden {PC00...}. Det gick inte att slå upp aaa_fundingsources med värden {PC00...}. Skrivningar till aaa_fundingsources misslyckades med felmeddelandet Undantagsmeddelande: Fjärrservern returnerade ett fel: (400) Felaktig begäran.*
 
-Du rättar till problemet genom att skapa entitetsrelationer i Finance and Operations-appen för att visa att de två entiteterna är relaterade till varandra och att de relaterade posterna hanteras i samma transaktion.
+Du rättar till problemet genom att skapa entitetsrelationer i Ekonomi och Drift-appen för att visa att de två entiteterna är relaterade till varandra och att de relaterade posterna hanteras i samma transaktion.
 
 ## <a name="enable-verbose-logging-of-error-messages"></a>Aktivera utförlig loggning av felmeddelanden
 
-I en Finance and Operations-app kan du stöta på fel som hör till Dataverse-miljön. Felmeddelandet kanske inte innehåller den fullständiga texten i meddelandet eller andra relevanta data. Om du vill få mer information kan du aktivera utförlig loggning genom att ställa in flaggan **IsDebugMode** som finns i entiteten **DualWriteProjectConfigurationEntity** i alla projektkonfigurationer i Finance and Operations-appar.
+I en Ekonomi och Drift-app kan du stöta på fel som hör till Dataverse-miljön. Felmeddelandet kanske inte innehåller den fullständiga texten i meddelandet eller andra relevanta data. Om du vill få mer information kan du aktivera utförlig loggning genom att ställa in flaggan **IsDebugMode** som finns i entiteten **DualWriteProjectConfigurationEntity** i alla projektkonfigurationer i Ekonomi och Drift-appar.
 
-1. Öppna entiteten **DualWriteProjectConfigurationEntity** genom att använda Excel-tillägget. Aktivera designläget i Excel-tillägget för Finance and Operations och lägg till **DualWriteProjectConfigurationEntity** i arket om du vill använda tillägget. Mer information finns i [Visa och uppdatera enhetsdata med Excel](../../office-integration/use-excel-add-in.md).
+1. Öppna entiteten **DualWriteProjectConfigurationEntity** genom att använda Excel-tillägget. För att använda tillägget, aktivera designläge i Ekonomi och Drift Excel-tillägget och lägg till **DualWriteProjectConfigurationEntity** till ett kalkylblad. Mer information finns i [Visa och uppdatera enhetsdata med Excel](../../office-integration/use-excel-add-in.md).
 2. Ställ in flaggan **IsDebugMode** på **Ja** i projektet.
 3. Kör scenariot.
 4. De utförliga loggarna finns i tabellen **DualWriteErrorLog**. Om du vill söka efter data med hjälp av tabellwebbläsaren använder du följande URL: `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`.
@@ -270,7 +270,7 @@ I en Finance and Operations-app kan du stöta på fel som hör till Dataverse-mi
 
 ## <a name="error-when-you-add-an-address-for-a-customer-or-contact"></a>Fel när du lägger till en adress till en kund eller kontakt
 
-Du kanske får följande felmeddelande när du försöker lägga till en adress för en kund eller kontakt i Finance and Operations-appar eller Dataverse:
+Du kanske får följande felmeddelande när du försöker lägga till en adress för en kund eller kontakt i Ekonomi och Drift-appar eller Dataverse:
 
 *Det gick inte att skriva data till msdyn_partypostaladdresses. Skrivningar till DirPartyPostalAddressLocationCDSEntity misslyckades med felmeddelande Begäran misslyckades med statuskoden BadRequest och CDS-felkod: 0x80040265-svarsmeddelande: Ett fel uppstod i plugin-programmet. En post med attributvärdena Plats-ID finns redan. För entitetsnyckeln Plats-ID krävs det att denna uppsättning attribut innehåller unika värden. Välj unika värden och försök igen.*
 
@@ -290,7 +290,7 @@ Följande felmeddelande kan visas när du försöker lägga till en kund i en Da
 
 *"RecordError0":"Skrivning misslyckades för entitetskunder V3 med okänt undantag – part-posten hittades inte för parttypen Organisation"} .*
 
-När en kund skapas i Dataverse genereras ett nytt partsnummer. Felmeddelandet visas när kundposten, tillsammans med parten, synkroniseras med Finance and Operations-appar, men det redan finns en kundpost som har ett annat partsnummer.
+När en kund skapas i Dataverse genereras ett nytt partsnummer. Felmeddelandet visas när kundposten, tillsammans med parten, synkroniseras med Ekonomi och Drift-appar, men det redan finns en kundpost som har ett annat partsnummer.
 
 Du rättar till problemet genom att hitta efter kunden via sökning efter part. Skapa en ny kundpost om det inte finns någon post. Om kunden redan finns använder du den befintliga parten för att skapa den nya kundposten.
 
@@ -300,7 +300,7 @@ Du kanske får följande felmeddelande när du försöker skapa en ny kund, leve
 
 *Det går inte att uppdatera en parts typ från "DirOrganization" till "DirPerson". En borttagning av den befintliga parten följt av en infogning med den nya typen ska utföras i stället.*
 
-I Dataverse finns det en nummerserie i tabellen **msdyn_party**. När ett konto skapas i Dataverse skapas en ny part (till exempel **Part-001** av typen **Organisation**). Dessa data skickas till Finance and Operations-appen. Om Dataverse-miljön återställs eller om Finance and Operations-miljön är kopplad till en annan Dataverse-miljö, och sedan skapas en ny kontaktpost i Dataverse, skapas ett nytt partvärde som börjar med **Part-001**. Den här gången blir partposten som skapas **Part-001** för typen **Person**. När dessa data synkroniseras visas föregående felmeddelande i Finance and Operations-apparna eftersom partposten **Part-001** för typen **Organisation** redan finns.
+I Dataverse finns det en nummerserie i tabellen **msdyn_party**. När ett konto skapas i Dataverse skapas en ny part (till exempel **Part-001** av typen **Organisation**). De här data skickas till Ekonomi och Drift-appen. Om Dataverse-miljön återställs eller om Ekonomi och Drift-miljön är kopplad till en annan Dataverse-miljö, och sedan skapas en ny kontaktpost i Dataverse, skapas ett nytt partvärde som börjar med **Part-001**. Den här gången blir partposten som skapas **Part-001** för typen **Person**. När dessa data synkroniseras visas föregående felmeddelande i Ekonomi och Drift-apparna eftersom partposten **Part-001** för typen **Organisation** redan finns.
 
 Du rättar till problemet genom att ändra den automatiska nummerserien för fältet **msdyn_partynumber** för tabellen **msdyn_party** i Dataverse till en annan automatisk nummerserie.
 

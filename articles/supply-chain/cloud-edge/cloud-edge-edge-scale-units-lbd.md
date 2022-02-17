@@ -2,7 +2,7 @@
 title: Distribuera kantskalenheter på anpassad maskinvara med hjälp av LBD
 description: I det här avsnittet beskrivs hur du provision på lokal kantskalningsenheter genom att använda anpassad maskinvara och distribution som baseras på lokala företagsdata (LBD).
 author: cabeln
-ms.date: 11/29/2021
+ms.date: 01/24/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2407d4e3c6adaf5df2e8f5440ee8336f86012caf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 1204b65e76c107c29a94a61c321064a87c7571fb
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920683"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024552"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Distribuera kantskalenheter på anpassad maskinvara med hjälp av LBD
 
@@ -26,6 +26,13 @@ Kantskalningsenheter har en viktig roll i den distribuerade topologin för Suppl
 Kantskalningsenheter kan distribueras genom att du skapar en lokal miljö för affärsdata (LBD) [lokal miljö](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) och sedan konfigurerar den till att fungera som skalningsenhet i din distribuerade hybrida topologi för Supply Chain Management. Detta uppnås genom att associera den lokala LBD-miljön med en Supply Chain Management-miljö i molnet, som har konfigurerats för att fungera som ett nav.  
 
 I det här avsnittet beskrivs hur du ställer in en lokal LBD-miljö som en kantskalningsenhet och kopplar den till ett nav.
+
+## <a name="infrastructure-considerations"></a>Att tänka på i infrastruktur
+
+Kantskalningsenheter körs i lokala miljöer, så infrastrukturkraven liknar varandra. Det finns dock vissa skillnader som bör noteras:
+
+- Kantskalningsenheter använder inte Financial Reporting, så de kräver inte Financial Reporting-noder.
+- Tillverknings- och lagringsarbetsbelastningarna är inte resurskrävande, så du bör överväga att beräkna datorkraften för AOS-noder på samma sätt.
 
 ## <a name="deployment-overview"></a>Distributionsöversikt
 

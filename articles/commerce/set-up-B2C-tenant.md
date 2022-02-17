@@ -2,7 +2,7 @@
 title: Ställa in en B2C-innehavare i Commerce
 description: I det här avsnittet beskrivs hur du ställer in din Azure Active Directory (Azure AD) B2C-innehavare (Business-to-Consumer) för autentisering av användarplats i Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 01/05/2022
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8e0fa2c4f22a1854a449a14aac3552313e808cf3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: dcd5c022c00070922e287a6b8750810ff76bc26f
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952454"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092469"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Ställa in en B2C-innehavare i Commerce
 
@@ -109,7 +109,7 @@ Gör så här om du vill skapa ett B2C-applikation.
 1. För **Omdirigerings-URI** anger du de dedikerade svars-URL av typen **Webb**. För information på svar-URL och hur du formaterar dem, se [Svars-URL](#reply-urls) nedan. En URL för omdirigerad URI/svar måste anges för att det ska gå att omdirigera från Azure AD B2C tillbaka till webbplatsen när en användare autentiserar. Svars-URL kan läggas till under registreringsprocessen eller läggas till senare genom att du väljer länken **Lägg till en omdirigerad URI** från menyn **Översikt** i avsnittet **Översikt** för B2C-programmets översikt.
 1. För **Behörigheter**, välj **Bevilja administratörens samtycke till openid och offline_access behörigheter**.
 1. Välj **Registrera**.
-1. Välj det nyskapade programmet och navigera till menyn **API-API permissions**. 
+1. Välj det nyskapade programmet och navigera till menyn **Autentisering**. 
 1. Om en svars-URL anges, under **Implicita bidrag och hybridflöden** välj både alternativet **Åtkomsttoken** och **ID-token** för att aktivera dem för programmet och välj sedan **Spara**. Om ingen svars-URL har angetts under registreringen kan den också läggas till på den här sidan genom att välja **Lägg till en plattform**, välja **webb** och sedan ange program- och omdirigerar-URI. Avsnitten **Implicita bidrag och hybridflöden** är tillgänglig för att välja både **Åtkomsttoken** och **ID-token**.
 1. Gå till menyn **Översikt** i Azure-portal och kopiera **Program-ID (klient)**. Notera detta ID för senare installationssteg (refereras senare till som **Klient GUID**).
 
@@ -309,19 +309,15 @@ När installationen av din Azure AD B2C-innehavare har slutförts måste du konf
 
 Gör så här för att samla in den nödvändiga programinformationen.
 
-1. I Azure-portal, gå till **Start \> Azure AD B2C – program**.
-1. Markera programmet och välj sedan i vänstra navigeringsfönstret **Egenskaper** för att hämta programinformationen.
-1. Från rutan **program-ID**, samla in program-ID för B2C-programmet som har skapats i B2C-innehavaren. Detta kommer senare att anges som **klient-GUID** i webbplatsskaparen.
-1. Under **Svars-URL**, samla svars-URL.
-1. Gå till **Start \> Azure AD B2C – användarflöden (policyer)** och samla sedan in namnen på varje användarflödespolicy.
+1. I Azure-portal, gå till **Start \> Azure AD B2C – programregistrering**.
+1. Markera programmet och välj sedan i vänstra navigeringsfönstret **Översikt** för att hämta programinformationen.
+1. Från **program-ID (klient)**, samla in program-ID för B2C-programmet som har skapats i B2C-innehavaren. Detta kommer senare att anges som **klient-GUID** i webbplatsskaparen.
+1. Välj **Omdirigera URI** och samla in den svars-URL som visas för din webbplats (svars-URL:en som angavs vid inställningen).
+1. Gå till **Start \> Azure AD B2C – användarflöden** och samla sedan in full namnen på varje användarflödespolicy.
 
-Följande bild visar ett exempel på sidan **Azure AD B2C-program**.
+Följande bild visar ett exempel på översiktssidan **Azure AD B2C-program - App-registreringar**.
 
-![Navigera till B2C-programmet inom din klientorganisation.](./media/B2CImage_19.png)
-
-Följande bild visar ett exempel på en programsida **egenskaper** i Azure AD B2C. 
-
-![Kopiera program-ID från B2C-programegenskaperna.](./media/B2CImage_21.png)
+![Azure AD B2C – Översiktssida för programregistreringar, där program-ID (klient) markerats](./media/ClientGUID_Application_AzurePortal.png)
 
 Följande bild visar ett exempel på användarflödespolicyer på sidan **Azure AD B2C – användarflöden (policy)**.
 

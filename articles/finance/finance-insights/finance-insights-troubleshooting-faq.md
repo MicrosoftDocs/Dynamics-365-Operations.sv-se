@@ -2,7 +2,7 @@
 title: Felsöka problem med Finance Insights
 description: Det här ämnet visar en lista med problem som kan inträffa när du använder Finance Insights. Här förklaras också hur du löser dessa problem.
 author: panolte
-ms.date: 11/03/2021
+ms.date: 01/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: c1bbdbec2bc0273a73ffc13a4cce024543af5a13
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968846"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8064876"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Felsöka problem med Finance Insights
 
@@ -92,3 +92,25 @@ Följande steg bör ha genomförts.
   | ---------------------------- | ---------------- |
   | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+## <a name="symptom-error-we-didnt-find-any-data-for-the-selected-filter-range-please-select-a-different-filter-range-and-try-again"></a>Symptom: Fel, "Vi hittade inga data för det valda filterintervallet. Välj ett annat filterintervall och försök igen." 
+
+### <a name="resolution"></a>Lösning
+
+Kontrollera inställningarna för dataintegrerare för att validera att det fungerar som förväntat och ställa in data från AI Builder tillbaka till Ekonomi.  
+Mer information finns i [Skapa ett dataintegrationsprojekt](../finance-insights/create-data-integrate-project.md).
+
+## <a name="symptom-customer-payment-prediction-training-failed-and-the-ai-builder-error-states-prediction-should-have-only-2-distinct-outcome-values-to-train-the-model-map-to-two-outcomes-and-retrain-training-report-issue-isnotminrequireddistinctnonnullvalues"></a>Symptom: Utbildning av kundbetalningsförutsägelser misslyckades och AI Builder felvärdena, "Förutsägelse ska bara ha 2 olika resultatvärden för att utbilda modellen. Mappa till två resultat och redisponera", "Utbildningsrapportproblem: IsNotMinRequiredDistinctNonNullValues".
+
+### <a name="resolution"></a>Lösning
+
+Det här felet indikerar att det inte finns tillräckligt många historiska transaktioner under det senaste året som representerar varje kategori som beskrivs i kategorierna **I tid**, **Sent** och **Mycket sent**. Du löser det här felet genom att justera transaktionsperioden **Mycket sent**. Om justering av transaktionsperioden **Mycket sent** korrigerar inte felet, **Kundbetalningsförutsägelser** är inte den bästa lösningen att använda eftersom den behöver data i varje kategori för utbildningsändamål.
+
+Mer information om hur du justerar kategorierna **I tid**, **Sent** och **Mycket sent**, se [Aktivera förutsägelser för kundbetalning](../finance-insights/enable-cust-paymnt-prediction.md).
+
+## <a name="symptom-model-training-failed"></a>Symptom: Modellutbildningen misslyckades
+
+### <a name="resolution"></a>Lösning
+
+Modellutbildning för **kassaflödesprognos** kräver data som sträcker sig över mer än ett år och innehåller mer än 100 transaktioner. Dessa transaktioner måste påverka likviditetskonton som är inkluderade i inställningen av kassaflödesprognosen.
+
+**Kundbetalningsförutsägelser** kräver minst 100 kundfaktura- och betalningstransaktioner de senaste sex till nio månaderna för att det ska gå att skapa förutsägelser.  

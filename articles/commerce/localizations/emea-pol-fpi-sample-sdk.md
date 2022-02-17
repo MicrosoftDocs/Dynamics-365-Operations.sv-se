@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: bff3a6ad74d50e7b706d4df92b17a4a3af36521b
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 45cae498df8157b9561c54e9859daadcaedd7823
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944825"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8076998"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-poland-legacy"></a>Implementeringsriktlinjer för integrationsexempel för kvittoskrivare för Polen (äldre)
 
@@ -116,7 +116,7 @@ Föregående procedur aktiverar tilläggen som är komponenter i exemplet på sk
 
 ## <a name="design-of-extensions"></a>Design av tilläggen
 
-Exemplet på integrering av kvittoskrivare för Polen baseras på [räkenskapsintegrationsfunktionen](fiscal-integration-for-retail-channel.md). Mer information om design för räkenskapsintegreringslösning finns i [översikt över räkenskapsintegrering för exempeldesign](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Exemplet på integrering av kvittoskrivare för Polen baseras på [räkenskapsintegrationsfunktionen](fiscal-integration-for-retail-channel.md). Mer information om design för räkenskapsintegreringslösning finns i [översikt över räkenskapsintegrering för exempeldesign](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 ### <a name="commerce-runtime-extension-design"></a>Utbyggbarhetdesign för Commerce Runtime
 
@@ -124,7 +124,7 @@ Syftet med tillägget som är en skattedokument leverantör är att generera uts
 
 CRT-tillägget är **Runtime.Extensions.DocumentProvider.PosnetSample**. Det här filnamnstillägget genererar en uppsättning skrivarspecifika kommandon i JSON-format (JavaScript Object Notation) som definieras i POSNET-specifikation 19-3678.
 
-Mer information om design av lösningen av räkenskapsintegration finns i [Process för räkenskapsregistrering och exempel på räkenskapsintegration för kvittoskrivarenheter](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Mer information om design av lösningen av räkenskapsintegration finns i [Process för räkenskapsregistrering och exempel på räkenskapsintegration för kvittoskrivarenheter och tjänster](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### <a name="request-handler"></a>Begärandehanterare
 

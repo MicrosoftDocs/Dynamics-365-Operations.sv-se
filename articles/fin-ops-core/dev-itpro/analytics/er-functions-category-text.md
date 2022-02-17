@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b69b16e4a40b5370c3a73f2aee40a8a86b952d9e
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647570"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075510"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Lista över ER-funktioner i textkategorin
 
@@ -35,6 +35,7 @@ Textfunktioner för elektronisk rapportering (ER) kan användas för att utföra
 | [Sammanfoga](er-functions-text-concatenate.md) | Den här funktionen returnerar alla angivna textsträngar som ett *sträng*-värde när de har sammanfogas till en sträng. |
 | [Format](er-functions-text-format.md) | Den här funktionen returnerar den angivna strängen som ett *Sträng* efter att den har formaterats genom att byta ut alla förekomster av **%N** med argumentet *N* th. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | Den här funktionen söker efter ett specifikt värde för *uppräkning* i angiven uppräkningsdatakälla med hjälp av det uppräkningsnamn som anges som ett *sträng*-värde. Om *Enum*-värdet hittas returnerar funktionen den. |
+| [GetLabelText](er-functions-text-getlabeltext.md) | Med denna funktion söker du efter en specifik etikett för att returnera ett *[sträng](er-formula-supported-data-types-primitive.md#string)* värde som representerar översättningen av den angivna etiketten på det angivna språket. |
 | [GuidValue](er-functions-text-guidvalue.md) | Den här funktionen konverterar det angivna indata för typen *Sträng* till ett dataobjekt i typen *GUID*. |
 | [JsonValue](er-functions-text-jsonvalue.md) | Den här funktionen analyserar data i JSON-format (JavaScript Object Notation) som används av den angivna sökvägen och som extraherar ett skalärvärde som baseras på angivet-ID. Den returnerar sedan det extraherade skalärvärdet som ett *sträng* värde. |
 | [Vänster](er-functions-text-left.md) | Den här funktionen returnerar ett *sträng*-värde som visar angivet antal tecken från början av den angivna strängen. |

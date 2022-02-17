@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8758b74f9ce7c8687b7c2925ccd04cd512602db0
-ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
+ms.openlocfilehash: b3b90bb2a4981f32feb10ee1192e9c4d2e604e7a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7465183"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071562"
 ---
 # <a name="create-a-closed-ended-question"></a>Skapa en stängd avslutad fråga
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -34,10 +37,10 @@ Med stängda frågor kan du ange alternativ som den svarande kan välja mellan. 
 2. Klicka på **Ny**.
 3. Skriv ett värde i fältet **Svarsgrupp**.
 4. I fältet **Beskrivning** anger du ett värde.
-    * Använd slumpfunktionen för att slumpmässigt placera svaren i en annan ordning varje gång svarsgruppen används för en fråga.  
+    * Använd **slump**-funktionen för att slumpmässigt placera svaren i en annan ordning varje gång svarsgruppen används för en fråga.  
 5. Klicka på **Svar**.
 6. Klicka på **Ny**.
-    * Sekvensnummerkontrollerar ordern svaren som visas i, om inte Slumpmässigt har valts för svarsgruppen.  
+    * Sekvensnummer kontrollerar ordern svaren som visas i, om inte **Slumpmässigt** har valts för **svarsgruppen**.  
     * Poäng kan tilldelas svar för att användas vid poängsättning av enkäten.  
 7. Välj ett nummer i fältet **Poäng**.
     * Det korrekta svaret kan markeras för att visa att det valda svaret är korrekt. Detta kan användas för att poängsätta enkäten.  
@@ -61,8 +64,8 @@ Med stängda frågor kan du ange alternativ som den svarande kan välja mellan. 
 ## <a name="create-the-question"></a>Skapa frågan
 1. Gå till **Enkät** > **Design** > **Frågor**.
 2. Klicka på **Ny**.
-3. Använd fältet Typ för att gruppera relaterade frågor tillsammans.
-    * Du kan använda ange indatatyper för kryssrutan, alternativsknappen eller kombinationsrutan för stängda frågor.  
+3. Använd fältet **Typ** för att gruppera relaterade frågor tillsammans.
+    * Du kan använda ange indatatyper för **kryssrutan**, **alternativsknappen** eller **kombinationsrutan** för stängda frågor.  
 4. Välj ett alternativ i fältet **Indatatyp**.
 5. Ange eller välj ett värde i fältet **Svarsgrupp**.
 6. Skriv ett värde i fältet **Text**.

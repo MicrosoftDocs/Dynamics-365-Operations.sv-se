@@ -9,15 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ceb0a60ccf3d1c989d8663e933faaa5e430d314695e20990c9086cd1b8325ff1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773737"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070156"
 ---
 # <a name="configure-expenditure-reviewers"></a>Konfigurera utgiftsgranskare
 [!include[banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Du kan ställa in dynamiska omkostnadgranskare att skicka utgifter till granskning baserat på antingen den användare som tilldelats en projektroll eller den ekonomisk dimension där omkostnaden debiteras. Arbetsflödeprocessen använder den angivna ägaren av projektrollen eller ekonomiska dimensionen för att bestämma vem skicka omkostnaden till.
 
@@ -62,7 +65,7 @@ När inköpsrekvisitionen skapas tilldelas avdelningen och kostnadsställets eko
 
 ## <a name="example-2-expenditure-reviewers-based-on-project-distributions"></a>Exempel 2: Utgiftsgranskare baserat på projektfördelningar
 
-Du arbetar för tjänsteavdelningen på Contoso Hushållsmaskiner. Organisationen kräver att projektledaren för respektive inköpsorder måste godkänna utgiften. Dessutom måste kostnadsställechefen för projektet godkänna den. Godkännandena kan utföras samtidigt. Båda användare måste hur som helst godkänna inköpsordern innan arbetsflödet kan fortsätta.
+Du arbetar för tjänsteavdelningen på Contoso hushållsmaskiner. Organisationen kräver att projektledaren för respektive inköpsorder måste godkänna utgiften. Dessutom måste kostnadsställechefen för projektet godkänna den. Godkännandena kan utföras samtidigt. Båda användare måste hur som helst godkänna inköpsordern innan arbetsflödet kan fortsätta.
 
 För detta exempel skapar du en *utgiftsgranskare för inköpsorder* som får namnet **PM och kostnadsställe**. Du markerar kryssrutan **Projektledare** och anger alternativet **Kostnadsställedimension** som **Ja** på fliken **Projektfördelningar** på sidan **Omkostnadsgranskare för inköpsorder**. Som en del av konfigurationen måste du se till att fältet **Projektledare** är inställt för alla projekt och att en ägare anges för alla kostnadsställen på sidan **Värden för ekonomisk dimension**.
 

@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d58a42236b07bf177e09aee50a207ffdf2ed1435
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: 24ddd242185d736287f61ec250c631ab65e08c95
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414724"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065051"
 ---
 # <a name="choose-a-data-integration-technology"></a>Välja en dataintegreringsteknik
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Detta ämne innehåller information om hur du integrerar med data som hanteras av Dynamics 365 Human Resources. Här beskrivs olika integreringstekniker som hjälper dig att avgöra vilka tekniker som bäst passar dina behov.
 
@@ -68,7 +71,7 @@ Dataverse-register och tillhörande API:er är det bästa alternativet för åtk
 
 ### <a name="dmfdixf-entities"></a>DMF/DIXF-enheter
 
-Personal som huvudsakligen är baserade på samma plattform som Finance and Operations-program, tillhandahåller en [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF kallas också för Data Import Export Framework (DIXF). Personal innehåller en uppsättning dataentiteter som du kan använda för att importera och exportera information om personaldata. Medan Dataverse-register är det föredragna dataintegreringsgränssnittet för Personal, är DMF-entiteterna fortfarande användbara i vissa fall, t. ex.:
+Personal som huvudsakligen är baserade på samma plattform som Ekonomi och Drift-program, tillhandahåller en [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF kallas också för Data Import Export Framework (DIXF). Personal innehåller en uppsättning dataentiteter som du kan använda för att importera och exportera information om personaldata. Medan Dataverse-register är det föredragna dataintegreringsgränssnittet för Personal, är DMF-entiteterna fortfarande användbara i vissa fall, t. ex.:
 
 - Dataverse-register är ännu inte tillgängliga.
 
@@ -111,7 +114,7 @@ BYOD passar för rapporteringslösningar, dataintegreringer, datamashup, som dat
 
 ### <a name="odata-enabled-entities"></a>OData-aktiverade enheter
 
-De flesta DMF-enheterna är också aktiverade för åtkomst via datatjänsten för pesonal (OData). Dokumentationen för [Finance and Operations OData-tjänsten](/dynamics365/unified-operations/dev-itpro/data-entities/odata) gäller för personal, förutom för att skapa egna OData-exponerade enheter.
+De flesta DMF-enheterna är också aktiverade för åtkomst via datatjänsten för pesonal (OData). Dokumentationen för [Ekonomi och Drift OData-tjänsten](/dynamics365/unified-operations/dev-itpro/data-entities/odata) gäller för Personal, förutom att skapa dina egna OData-exponerade enheter.
 
 Medan implementeringen av Dataverse och OData som ges av Dataverse (via [Dynamics 365 webb-API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))) är föredraget framför datatjänsten för personal, har datatjänsten för personal för närvarande mer fullständig enhetstäckning för personaldata.
 

@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9e26a2fb65564cb4a1d2f9ba4b0d621177207545
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: f7ffe522f0f17a21280e53728c6efc2823743733
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414674"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069156"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurera virtuella Dataverse-register
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dynamics 365 Human Resources är en virtuell datakälla i Microsoft Dataverse. Det ger fullständiga åtgärder för att skapa, läsa, uppdatera och ta bort (CRUD) från Dataverse och Microsoft Power Platform. Data för virtuella register lagras inte i Dataverse utan i programdatabasen.
 
@@ -119,10 +122,10 @@ Nästa steg är att konfigurera datakällan för det virtuella registret i Power
 
 4. I **Lösning hälsocenter**, välj ikonen **Avancerad sökning** längst upp till höger på appsidan.
 
-5. På sidan **Avancerad sökning** i listrutan **Sök efter** välj **Konfiguration av virtuella enhetens datakälla i Finance and Operations**.
+5. På sidan **Avancerad sökning** i listrutan **Sök efter** välj **Konfiguration av virtuella enhetens datakälla i Ekonomi och Drift**.
 
    > [!NOTE]
-   > Installationen av det virtuella registerprogrammet från föregående inställningssteg kan ta några minuter. Om **Källkonfigurationer för virtuella Finance and Operations-data** inte är tillgängligt i listan ska du vänta en minut och sedan uppdatera listan.
+   > Installationen av det virtuella registerprogrammet från föregående inställningssteg kan ta några minuter. Om **Konfiguration av virtuella enhetens datakälla i Ekonomi och Drift** inte är tillgängligt i listan ska du vänta en minut och sedan uppdatera listan.
 
 6. Välj **resultat**.
 

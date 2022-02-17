@@ -10,30 +10,30 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 3fe1b7707df72927fba78ee9659502cc62471799
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924876"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063272"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Separat dubbelriktad skrivning programorkestrering-paket
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Tidigare var dubbelriktad skrivning programorkestrering-paketet ett enda paket som innehöll följande lösningar:
 
 - Dynamics 365 Anteckningar
-- Dynamics 365 Finance and Operations Gemensamt ankare
-- Dynamics 365 Finance and Operations Skriva entitetsmappningar
+- Dynamics 365 Finance och Drift gemensamma ankare
+- Dynamics 365 Finance och Drift för entitetsmappningar för dubbelriktade appar
 - Dynamics 365 tillgångshanteringsapp
 - Dynamics 365 tillgångshantering
 - Gemensamt för HCM
 - Dynamics 365 Supply Chain utökad
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance and Operations Gemensamt
+- Dynamics 365 Finance och Drift gemensamma
 - Dynamics 365 företag
 - Valutakurser
 - Field Service Common
@@ -51,7 +51,7 @@ Paketet med applikationskärna med dubbelriktad skrivning låter användare inst
 | Unikt namn                           | Visa namn                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 företag                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations Gemensamt |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance och Drift gemensamma |
 | CurrencyExchangeRates                 | Valutakurser                    |
 | msdyn_DualWriteAppCoreMaps            | Entitetsmappningar för dubbelriktade appar   |
 | msdyn_DualWriteAppCoreAnchor          | Appkärna ankare med dubbla skrivningar        |

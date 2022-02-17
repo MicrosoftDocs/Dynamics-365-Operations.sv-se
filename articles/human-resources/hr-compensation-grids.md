@@ -2,7 +2,7 @@
 title: Ställ in kompensationsrutnät
 description: Kompensationsrutnät används för att definiera och underhålla lönstrukturerna för fasta kompensationsplaner.
 author: twheeloc
-ms.date: 08/25/2021
+ms.date: 01/03/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e6aabf5c05b2a7a5d2b37b43c9a7e93ea6e9bbb
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 51b98320eac539e49787d352f32683efadc11f41
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483827"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071514"
 ---
 # <a name="set-up-compensation-grids"></a>Ställ in kompensationsrutnät
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -67,28 +70,16 @@ Kompensationsrutnät används för att definiera och underhålla lönstrukturern
 7. Välj ett alternativ i fältet **Modifieringstyp**.
 8. Ange ett tal i fältet **Justeringsbelopp**.
 9. Hitta och markera önskad post i listan.
-10. Hitta och markera önskad post i listan.
-11. Hitta och markera önskad post i listan.
-12. Hitta och markera önskad post i listan.
-13. Klicka på **Använd i rutnät**.
-14. Hitta och markera önskad post i listan.
-15. Hitta och markera önskad post i listan.
-16. Hitta och markera önskad post i listan.
-17. Klicka på **Använd i rutnät**.
-18. Hitta och markera önskad post i listan.
-19. Hitta och markera önskad post i listan.
-20. Klicka på **Använd i rutnät**.
-21. Hitta och markera önskad post i listan.
-22. Klicka på Använd i rutnät.
+10. Klicka på **Använd i rutnät**.
     * Nu använder vi massändringsfunktionen för att de lägsta och högsta referenspunkterna för varje nivå. I det här exemplet använder vi en spridning på 50 %, så den lägsta referenspunkten justeras med -20 %, och den högsta med +20 %.  
-23. Ange ett tal i fältet **Justeringsbelopp**.
-24. Ange eller välj ett värde i fältet **Referenspunkt**.
-25. Markera eller avmarkera alla rader i listan.
-26. Klicka på **Använd i rutnät**.
-27. Ange ett tal i fältet **Justeringsbelopp**.
-28. Ange eller välj ett värde i fältet **Referenspunkt**.
-29. Markera eller avmarkera alla rader i listan.
-30. Klicka på **Använd i rutnät**.
+11. Ange ett tal i fältet **Justeringsbelopp**.
+12. Ange eller välj ett värde i fältet **Referenspunkt**.
+13. Markera eller avmarkera alla rader i listan.
+14. Klicka på **Använd i rutnät**.
+15. Ange ett tal i fältet **Justeringsbelopp**.
+16. Ange eller välj ett värde i fältet **Referenspunkt**.
+17. Markera eller avmarkera alla rader i listan.
+18. Klicka på **Använd i rutnät**.
 
 
 

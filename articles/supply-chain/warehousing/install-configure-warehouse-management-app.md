@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b1687b24f499f4d226406a0035f8ea70b6046167
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 54962b48dee05b2cd62fd3ea8814e4c965ba7818
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902006"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069389"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installera och ansluta mobilappen Hantering av distributionslager
 
@@ -143,6 +143,10 @@ Autentisering med Azure AD är ett säkert sätt att ansluta en mobil enhet till
 Certifikat kan användas som hemligheter för att bevisa programmets identitet när en token begärs. Den offentliga delen av certifikatet överförs till app-registreringen i Azure-portalen, medan det fullständiga certifikatet måste distribueras på varje enskild enhet där mobilappen Hantering av distributionslager installeras. Organisationen ansvarar för att hantera certifikatet i fråga om rotation osv.. Du kan använda självsignerade certifikat, men du bör alltid använda icke-exporterbara certifikat.
 
 Du måste göra certifikatet tillgängligt lokalt på varje enskild enhet där du kör mobilappen Hantering av distributionslager. Information om hur du hanterar certifikat för Intune-styrda enheter om du använder Intune finns i [Använda certifikat för autentisering i Microsoft Intune](/mem/intune/protect/certificates-configure).
+
+## <a name="configure-the-warehouse-management-mobile-app-for-cloud-and-edge-scale-units"></a>Konfigurera mobilappen Warehouse Management för moln- och kantskalningsenheter
+
+Några extra steg krävs om du planerar att köra mobilappen Warehouse Management mot en enhet för molnbaserad eller kantskalningsenhet. För anvisningar, se [Konfigurera mobilappen Warehouse Management för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurera programmet genom att importera anslutningsinställningar
 
@@ -306,5 +310,6 @@ Om en enhet går förlorad eller drabbas av fel, måste du ta bort åtkomsten ti
 
 - [Användarinställningar för mobil enhet](mobile-device-user-settings.md)
 - [Tilldela stegikoner och titlar för mobilappen för Warehouse Management](step-icons-titles.md)
+- [Konfigurera mobilappen Warehouse Management för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

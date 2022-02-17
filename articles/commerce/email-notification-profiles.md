@@ -2,7 +2,7 @@
 title: Ange en meddelandeprofil för e-post
 description: I det här avsnittet beskrivs hur du skapar en meddelandeprofil för e-post i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 02/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a92c21a93766e6583882f50222837366ed4c9a24c2bbfd93933763bd4ffa46bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7a7d796a173a6f9dfcd62e1f73e078cac614145e
+ms.sourcegitcommit: 2aca3a95d42403c7f5d80dcd5e3ee958dca5c894
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771041"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8087877"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Ställa in en meddelandeprofil för e-post
 
@@ -27,7 +27,7 @@ ms.locfileid: "6771041"
 
 I det här avsnittet beskrivs hur du skapar en meddelandeprofil för e-post i Microsoft Dynamics 365 Commerce.
 
-När du skapar kanaler kan du ställa in en e-postmeddelandeprofil. På så sätt kan e-postmeddelanden skickas till kunderna för olika transaktionshändelser, till exempel skapa order, leveransstatus för order och betalningsfel.
+När du skapar kanaler kan du ställa in en e-postmeddelandeprofil. E-postnotifieringsprofilen definierar händelserna i en försäljningstransaktion (t.ex. skapade order, packade order och fakturerade händelser) som du vill skicka meddelanden till dina kunder för. 
 
 För ytterligare information om e-postkonfiguration, se [konfigurera och skicka e-post](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -43,7 +43,7 @@ Skapa en meddelandeprofil för e-post enligt följande instruktioner.
 
 ### <a name="create-an-email-template"></a>Skapa en e-postmall
 
-Innan en e-postmeddelandetyp kan aktiveras måste du skapa en e-postmall för organisationen i Commerce-administration. I den här mallen definieras ämnes-, avsändar-, standardspråk och e-posttext för alla språk som du vill stödja.
+Innan en e-postmeddelandetyp kan aktiveras måste du skapa en e-postmall för organisationen i Commerce-administration för varje aviseringstyp du vill stödja. I den här mallen definieras ämnes-, avsändar-, standardspråk och e-posttext för alla språk som stöds.
 
 Gör så här om du vill skapa en e-postmall.
 
@@ -61,6 +61,8 @@ I bilden nedan visas några exempel på Inställningar för e-postmallar.
 
 ![Inställningar för e-postmall.](media/email-template.png)
 
+Mer information om hur du skapar e-postmallar finns i [Skapa e-postmallar för transaktionshändelser](email-templates-transactions.md). 
+
 ### <a name="create-an-email-event"></a>Skapa en e-posthändelse
 
 Gör så här om du vill skapa en e-posthändelse.
@@ -76,10 +78,12 @@ I bilden nedan visas några exempel på Inställningar för meddelande för hän
 
 ![Inställningar för händelsemeddelande.](media/email-notification-profile.png)
 
+> [!NOTE]
+> Den kund som har skapat notifieringstypen kräver att en anpassning måste implementeras innan ett e-postmeddelande kan skickas.
+
 ### <a name="next-steps"></a>Nästa steg
 
 Innan du kan skicka e-post måste du konfigurera den utgående e-posttjänsten och ställa in ett batchjobb. Om du vill ha mer information, se [Konfigurera och skicka e-post](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
-
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

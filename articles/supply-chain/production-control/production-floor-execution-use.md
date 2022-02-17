@@ -2,7 +2,7 @@
 title: Hur arbetare använder körningsgränssnittet för produktionsgolvet
 description: I det här avsnittet beskrivs hur du använder körningsgränssnittet för produktionsgolvet från en arbetares synvinkel.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e872600222ad23bf3de62c0f2d6cda74942d5b55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.dyn365.ops.version: 10.0.24
+ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920658"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075029"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hur arbetare använder körningsgränssnittet för produktionsgolvet
 
@@ -138,6 +138,65 @@ I det här fallet kan arbetaren ange samprodukten och kvantiteten som ska rappor
 När en arbetare slutför eller delvis slutför ett jobb kan de rapportera kassation genom att välja ett jobb på **Aktiva jobb** och flik **Rapportera kassation**. Sedan i dialogrutan **Rapportera kassation** anger arbetaren kassationskvantiteten med hjälp av det numeriska tangentbordet. Arbetaren väljer också en orsak (*ingen*, *maskin*, *operatör* eller *material*).
 
 ![Dialogrutan rapportera kassation.](media/pfei-report-scrap-dialog.png "Dialogrutan rapportera kassation")
+
+## <a name="adjust-material-consumption-and-make-material-reservations"></a>Justera materialförbrukning och gör materialreservationer
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Arbetare kan justera materialförbrukning för varje produktionsjobb. Denna funktion används i scenarier där den faktiska kvantiteten av material som förbrukades av ett produktionsjobb var mer eller mindre än den planerade kvantiteten. Därför måste den justeras för att hålla lagernivåerna aktuella.
+
+Arbetare kan även göra reservationer på parti- och serienummer för material. Den här funktionen används i scenarier där en arbetare manuellt måste ange vilka materialbatch- eller serienummer som förbrukats för att uppfylla kraven på materialspårning.
+
+Arbetare kan ange kvantiteten som ska justeras genom att välja **Justera material**. Denna knapp är tillgänglig på följande platser:
+
+- I Dialogrutan **rapportera kassation**
+- I dialogrutan **Rapportera framsteg**
+- I verktygsfältet till höger
+
+### <a name="adjust-material-consumption-from-the-report-scrap-and-report-progress-dialog-boxes"></a>Justera materialförbrukning från dialogrutan Rapportera kassation och rapportförlopp
+
+När en arbetare har anger den kvantitet som ska rapporters i dialogrutan **Rapportera förlopp** eller **Rapport kassation** blir knappen **Justera material** tillgänglig. När användaren väljer den här knappen visas dialogrutan **Justera material**. Den här dialogrutan visar de artiklar som har planerats att förbrukas när den vara eller kasserade kvantiteten rapporteras för jobbet.
+
+Listan i dialogrutan visar följande information:
+
+- **Produktnummer** – produktmall och produktvariant.
+- **Produktnamn** – Produktens namn.
+- **Förslag** – Den uppskattade materialkvantiteten som kommer att förbrukas när förlopp eller kassation rapporteras för den angivna kvantiteten för jobbet.
+- **Förbrukning** – Den faktiska materialkvantiteten som kommer att förbrukas när förlopp eller kassation rapporteras för den angivna kvantiteten för jobbet.
+- **Reserverad** – Den materialkvantitet som fysiskt reserverats i lagret.
+- **Enhet** – Strukturlisteenheten.
+
+Höger sida av dialogrutan visar följande information:
+
+- **Produktnummer** – produktmall och produktvariant.
+- **Uppskattad** – Uppskattad kvantitet som ska förbrukas.
+- **Startad** – Den kvantitet som har startats för produktionsjobbet.
+- **Resterande kvantitet** – Av den uppskattade kvantiteten, den kvantitet som återstår att förbruka.
+- **Frisläppt kvantitet** – Den kvantitet som har förbrukats.
+
+Följande åtgärder kan utföras:
+
+- Arbetaren kan ange kvantiteten som ska justeras för ett material genom att välja **Justera förbrukning**. När kvantiteten har bekräftats uppdateras kvantiteten i kolumnen **Förbrukning** med den justerade kvantiteten.
+- När arbetaren väljer **Justera material** skapas en journal för produktionsplockningslista. Den här journalen innehåller samma artiklar och kvantiteter som listan **Justera material**.
+- När arbetaren justerar en kvantitet i dialogrutan **Justera material**, uppdateras fältet **Förslag** på motsvarande journalrad med samma kvantitet. Om arbetaren väljer **Avbryt** i dialogrutan **Justera material**, tas plocklistan bort.
+- Om arbetaren väljer **OK** tas inte plocklistan bort. Det bokförs när jobbet rapporteras i dialogrutan **Rapportera kassation** eller **Rapport förlopp**.
+- Om arbetaren väljer **Avbryt** i dialogrutan **Rapportera framsteg** eller **Rapportera kassation** tas plocklistan bort.
+
+### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Justera material från verktygsfältet till höger
+
+Knappen **Justera material** kan konfigureras så att den visas i verktygsfältet till höger. (Mer information finns i [Designa körningsgränssnittet för produktionsgolvet](production-floor-execution-tabs.md).) En arbetare kan välja **Justera material** för ett produktionsjobb som pågår. I det här fallet visas dialogrutan **Justera material**, där arbetaren kan göra de önskade justeringarna. När dialogrutan är öppen skapas en produktionsplockningslista som innehåller rader för de justerade kvantiteterna för tillverkningsordern. Om arbetaren väljer **Bokför nu**, bekräftas justeringen och plocklistan bokförs. Om arbetaren väljer **Avbryt**, plocklistan raderas och ingen justering görs.
+
+### <a name="reserve-materials"></a>Reservera material
+
+I dialogrutan **Justera material** kan en arbetare göra och justera materialreservationer genom att välja **Reservera material**. I dialogrutan **Reservera material** som visas det fysiskt tillgängliga lagret för artikeln för varje lagrings- och spårningsdimension.
+
+Om material har aktiverats för de avancerade lagerställeprocesserna visar listan bara det fysiskt tillgängliga lagret för platsen för produktionsinleverans för materialet. Platsen för produktionsindata definieras på resursen där produktionsjobbet planeras. Om artikelnumret är batch- eller serienummerkontrollerat visas den fullständiga listan över fysiskt tillgängliga batch- och serienummer. Om du vill ange en kvantitet som ska reserveras kan arbetaren välja **Reservera material**. Om du vill ta bort en befintlig reservation kan arbetaren välja **Ta bort reservation**.
+
+Mer information om hur du ställer in platsen för produktionsindata finns i följande inlägg: [Ställa in platsen för produktionsindata](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
+
+> [!NOTE]
+> Reservationer som en arbetare gör dialogrutan **Reservera material** finns kvar när arbetaren väljer **Avbryt** i dialogrutan **Rapportera framsteg** eller **Rapport kassation**.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Slutföra ett jobb och starta ett nytt jobb
 

@@ -13,24 +13,27 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67b3cd95276b9e59e794583fa51ddbcec4c43b1e
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 49a64407778fba5669ad13f239363bffd4b0c7d6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431324"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071573"
 ---
 # <a name="enroll-an-employee-in-a-variable-compensation-plan"></a>Registrera en medarbetare i en variabel kompensationsplan
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Chefen över kompensationer och förmåner kan anmäla medarbetare till variabla kompensationsplaner att beräkna kontanta eller icke-kontanta ersättningar för medarbetare. I den här proceduren förutsätts att en variabel kompensationsplan har skapats med fältet **Aktivera anmälan** inställt på Ja, och att berättiganderegler har skapats för den variabla kompensationsplanen. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Gå till **Personal** > **Arbetare** > **Medarbetare** > **Kompensation** > **Registrering i variabel plan**.
+Chefen över kompensationer och förmåner kan anmäla medarbetare till variabla kompensationsplaner att beräkna kontanta eller icke-kontanta ersättningar för medarbetare. I den här proceduren förutsätts att en variabel kompensationsplan har skapats med fältet **Aktivera anmälan** inställt på **Ja**, och att berättiganderegler har skapats för den variabla kompensationsplanen. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Gå till **Personal** > **Arbetare** > **Medarbetare** > **Kompensation** > **Registrering i variabel plan**.
 
 1. Klicka på **Ny**.
 2. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Plan**.
     * Planuppslagningen filtreras för att visa endast de variabla kompensationsplaner som medarbetaren är berättigad till baserat på berättiganderegler.  
 3. Klicka på länken på den valda raden i listan.
-4. Växla utökningen av avsnittet Allmänt.
+4. Växla utökningen av avsnittet **Allmänt**.
 5. Ange ett datum i fältet **Giltighetsdatum**.
 6. Klicka på **Spara**.
 7. Växla visningen av avsnittet **Åsidosättningar**.

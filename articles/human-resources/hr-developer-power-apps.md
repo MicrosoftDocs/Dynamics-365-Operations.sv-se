@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a466ef2d2002ebc9d35b33571009727626cd5c678e995d42a00dbe64a2806729
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fedf9b35e5dc8372fd82c6308ec5b1452eab7e8f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778065"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070310"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Utöka med Power Apps och Power Automate
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Den här artikeln beskriver några exempel på tilläggsscenarier för Microsoft Dynamics 365 Human Resources som använder Microsoft Power Apps och Microsoft Power Automate. Du kan importera lösningspaketet som associeras med varje exempel i din Power Apps-miljö. Du kan sedan använda paketen antingen som vägledning eller som utgångspunkt för att implementera scenarier som gäller för din organisation.
 
@@ -36,15 +39,15 @@ Den här artikeln beskriver några exempel på tilläggsscenarier för Microsoft
 ## <a name="prerequisites"></a>Förutsättningar
 
 - Om du vill importera paket måste användarna ha behörighet **Environment Maker**.
-- Användare måste ha en Power Apps Plan 2-licens eller en Power Apps Plan 2 bedömningslicens för att exportera eller importera appar.
+- Användare måste ha en Power Apps Plan 2-licens eller en Power Apps Plan 2 utvärderingslicens för att exportera eller importera appar.
 
-## <a name="integration-with-microsoft-365-power-automate"></a>Integrering med Microsoft 365, Power Automate
+## <a name="integration-with-microsoft-365-power-automate"></a>Integration med Microsoft 365, Power Automate
 
 Appen **Integrering med Microsoft 365** kan användas för att hämta teaminformation för inloggade användare från Microsoft 365. Den refererar medarbetare i personal för att extrahera identifieringstyper för medarbetare. Chefer kan kontrollera utgångsdatum för medarbetar-ID-typer. De kan också skicka en e-postpåminnelse om medarbetar-ID-typen förfaller. Power Automate kan integreras med Power Apps för att skicka påminnelsen. Bekräftelse kommer att skickas tillbaka till Power Apps från Power Automate när påminnelsen skickas. Identifieringstyper inkluderar körkort, pass och andra godtagbara former av ID.
 
 Du kan utöka den här appen för andra scenarier. Exempelvis användas den för att visa semesterinformation för team, kalenderhändelser och alla teamspecifika händelser.
 
-För att hämta appen **Integrering med Microsoft 365, Power Automate** gå till [Integrering med Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2081787) på Microsoft Download Center.
+För att hämta mallen **Integration med Microsoft 365, Power Automate**-appen, gå till [Integration med Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2081787) på Microsoft Download Center.
 
 ## <a name="power-automate--sql-connect-and-execute"></a>Power Automate – anslut och kör SQL
 

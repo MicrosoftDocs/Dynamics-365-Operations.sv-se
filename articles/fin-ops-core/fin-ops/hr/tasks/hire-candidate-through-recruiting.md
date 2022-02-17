@@ -10,19 +10,23 @@ ms.search.form: HRMApplication, HcmWorkerNewWorker, HcmPositionLookup, HcmWorker
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 07f89a41cca7b3ff66404305d31cf1b8a67bfe47
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 2a6ecee078b18b12769a14cadc7e0182bf03d704
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964971"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075383"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>Anställa kandidat genom rekrytering
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> Funktionerna som anges i det här avsnittet är för närvarande tillgängliga för Personal-kunder i ekonomiinfrastrukturen.  
+
 
 I den här proceduren aktiveras en rekryterare när du anställer en sökande som har skickat in en ansökning via ett visst rekryteringsprojekt. När du anställer en sökande via ett rekryteringsprojekt skapas en ny arbetarpost och sökandens post har statusen **Anställd**. Demonstrationsdataföretaget **USMF** har använts för att skapa denna procedur.
 

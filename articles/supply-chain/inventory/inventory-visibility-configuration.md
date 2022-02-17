@@ -11,17 +11,17 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fcbace2bd28a843fca8aa2f4f998c08f238c29d6
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 8ba478fef424a6c4688191ed4e5375bbce52de0c
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920308"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061011"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurera lagersynlighet
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 
 I det här avsnittet beskrivs hur du konfigurerar Lagersynlighet via Lagersynlighet-appen i Power Apps.
 
@@ -58,7 +58,7 @@ När konfigurationen är slutförd, se till att du väljer **Uppdatera konfigura
 
 ## <a name="data-source-configuration"></a>Konfiguration för datakälla
 
-Varje datakälla representerar ett system som dina data kommer från. Namn på exempeldatakällor är bland annat `fno` (som betyder för "Dynamics 365 Finance and Operations-program") och `pos` (som betyder "försäljningsställe"). Standardinställningen är att Supply Chain Management konfigureras som standarddatakälla (`fno`) i Lagersynlighet.
+Varje datakälla representerar ett system som dina data kommer från. Namn på exempeldatakällor är bland annat `fno` (som betyder för "Dynamics 365 Finance och drift-program") och `pos` (som betyder "försäljningsställe"). Standardinställningen är att Supply Chain Management konfigureras som standarddatakälla (`fno`) i Lagersynlighet.
 
 > [!NOTE]
 > Datakällan `fno` är reserverad för Supply Chain Management. Om tillägget Lagerhantering är integrerat i en miljö för Supply Chain Management rekommenderar vi att du inte tar bort konfigurationer som är relaterade till `fno` datakällan.
