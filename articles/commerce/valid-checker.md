@@ -2,7 +2,7 @@
 title: Validera butikstransaktioner för utdragsberäkning
 description: Det här ämnet beskriver funktionerna för att validera butikstransaktioner i Microsoft Dynamics 365 Commerce.
 author: analpert
-ms.date: 12/15/2021
+ms.date: 01/31/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 008368ae32aa92682d578b75b148e0587fcc94e0
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924781"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087459"
 ---
 # <a name="validate-store-transactions-for-statement-calculation"></a>Validera butikstransaktioner för utdragsberäkning
 
@@ -51,7 +51,7 @@ Batchprocessen **Validera butikstransaktioner** kontrollerar att handelstransakt
 
 Följande tabell visar valideringsregler för transaktionshuvud som kontrolleras mot butikstransaktionshuvudet innan dessa transaktioner skickas till utdragsbokföring.
 
-| Rubrik | Beskrivning |
+| Regel | Beskrivning |
 |-------|-------------|
 | Affärsdatum | Den här regeln validerar att transaktionens affärsdatum är associerat med en öppen räkenskapsperiod i redovisningen. |
 | Valutaavrundning | Den här regeln validerar att transaktionsbeloppen avrundas enligt valutaavrundningsregeln. |
@@ -72,7 +72,7 @@ Följande tabell visar valideringsregler för transaktionshuvud som kontrolleras
 
 Följande tabell visar valideringsregler för transaktionsrader som kontrolleras mot butikstransaktionernas radinformation innan dessa transaktioner skickas till utdragsbokföring.
 
-| Rubrik | Beskrivning |
+| Regel | Beskrivning |
 |-------|-------------|
 | Streckkod | Den här regeln validerar att alla artikelstreckkoder som används på transaktionsraderna finns i databasen. |
 | Avgiftsrader | Den här regeln validerar att summan av det beräknade beloppet och avgiftsradernas momsbefrielsebelopp är lika med det ursprungliga beräknade beloppet. |

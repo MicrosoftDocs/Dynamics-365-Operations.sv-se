@@ -1,9 +1,11 @@
-- name: Dynamics 365 for Talent
-  href: ./index.md
+- name: Dynamics 365 Talent pension
+  href: ../human-resources/hr-talent-retire.md?toc=/dynamics365/talent/toc.json
   items:
-    - name: Kom i gång
+    - name: Dynamics 365 Talent startsida
+      href: ./index.md
+    - name: Kom igång
       items:
-        - name: Kom i gång med Talent
+        - name: Kom igång med Talent
           href: talent-get-started.md
         - name: Nyheter och ändringar i Talent
           href: whats-new.md

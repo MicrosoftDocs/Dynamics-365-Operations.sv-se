@@ -92,6 +92,8 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.25 (april 2022)
+                      href: get-started/whats-new-commerce-10-0-25.md
                     - name: Commerce 10.0.24 (februari 2022)
                       href: get-started/whats-new-commerce-10-0-24.md
                     - name: Commerce 10.0.23 (januari 2022)
@@ -122,10 +124,8 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/commerce/toc.json
                 - name: Skapa dokumentation eller utbildning med Uppgiftsinspelare
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/commerce/toc.json
-                - name: Videoklipp
+                - name: Videor
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/commerce/toc.json
-                - name: Ordlista
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/commerce/toc.json
             - name: Utbildningskatalog
               items:
                 - name: Hemsida för utbildningskatalog
@@ -1936,6 +1936,8 @@
                   items:
                     - name: Skapa konfigurationer för att importera data från en extern XML‑fil
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importera data från manuellt markerade filer i batchläge
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurera dataimport i batchläge från filer i SharePoint
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/commerce/toc.json
                 - name: Importera filer i XML‑format
@@ -2166,6 +2168,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.json
                     - name: Programuppdatering 10.0.23
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/commerce/toc.json
+                    - name: Programuppdatering 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/commerce/toc.json
                 - name: Ange anpassad lagringsplats för skapade dokument
                   items:
                     - name: Prenumerera på en händelse för att begära ett svar från en prenumerationshanterare
@@ -2384,6 +2388,8 @@
               items:
                 - name: Commerce för IT-personal och utvecklare
                   href: dev-itpro/dev-retail-home-page.md
+                - name: Modernisera butiksteknikstacken för Commerce (white paper)
+                  href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: Konfigurera en lokal utvecklingsmiljö
                   href: dev-itpro/setup-local-dev-env.md
             - name: Utbyggbarhet för onlinekanal

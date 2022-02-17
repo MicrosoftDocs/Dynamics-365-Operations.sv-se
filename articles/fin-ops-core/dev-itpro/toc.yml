@@ -12,11 +12,13 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Nyheter och ändringar i Platform updates
               items:
-                - name: Nyheter och ändringar på startsidan för Platform updates
+                - name: Nyheter och ändringar på startsidan för plattformsuppdateringar
                   href: get-started/whats-new-home-page.md
-                - name: Platform updates för version 10.0.24 (februari 2022)
+                - name: Plattformsuppdateringar för version 10.0.25 (april 2022)
+                  href: get-started/whats-new-platform-updates-10-0-25.md
+                - name: Plattformsuppdateringar för version 10.0.24 (februari 2022)
                   href: get-started/whats-new-platform-updates-10-0-24.md
-                - name: Platform updates för version 10.0.23 (januari 2022)
+                - name: Plattformsuppdateringar för version 10.0.23 (januari 2022)
                   href: get-started/whats-new-platform-updates-10-0-23.md
             - name: Borttagna eller inaktuella funktioner
               items:
@@ -430,6 +432,8 @@
                   href: deployment/install-deployable-package.md
                 - name: Avinstallera ett paket
                   href: deployment/uninstall-deployable-package.md
+                - name: Köra anpassade X++-skript med noll drifttid
+                  href: deployment/run-custom-scripts.md
                 - name: Felsöka problem med paketprogram
                   href: deployment/deployable-package-troubleshooting.md
             - name: Distribuera anpassad hjälp
@@ -854,6 +858,8 @@
                   href: perf-test/continuous-build-test-automation.md
                 - name: SysTest-filtrering med hjälp av klass- och metodattribut
                   href: perf-test/systest-filtering.md
+                - name: SysTestRow-attribut för testning av flera värden
+                  href: perf-test/systest-row.md
                 - name: Bibliotek för acceptanstest
                   items:
                     - name: Resurser i biblioteket för acceptanstester

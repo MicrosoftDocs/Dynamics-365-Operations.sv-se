@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations-programdokumentation
-description: Dokumentation för Finance and Operations-appar.
+title: Dokumentation för appen Finance and Operations
+description: Dokumentation för Finance and Operations-apparna.
 author: tonyafehr
 ms.date: 04/13/2021
 ms.topic: index-page
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe029d6a3eb2555e0d77035b089c7cb3e710ee85
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: cf2278cbf47c5fd2937e7da55c8777709ab7d356
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782142"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075407"
 ---
-# <a name="finance-and-operations-application-documentation"></a>Finance and Operations-programdokumentation
+# <a name="finance-and-operations-application-documentation"></a>Dokumentation för appen Finance and Operations
 
 [!include [banner](includes/banner.md)]
 
@@ -39,7 +39,7 @@ Mycket av innehållet gäller även relaterade produkter: Dynamics 365 Commerce 
 <tr class="odd">
 <td>
 <h3><a href="get-started/before-you-buy.md">Innan du köper</a></h3>
-<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Registrera ett abonnemang på förhandsversionen</a></p>
+<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Registrera prenumeration på förhandsversionen</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Välj ett distributionsalternativ</a></p>
  <p><a href="get-started/purchase-on-premises.md">Köp Finance and Operations (on-premises)</a></p>
 
@@ -81,15 +81,17 @@ Mycket av innehållet gäller även relaterade produkter: Dynamics 365 Commerce 
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Funktioner för nationella föreskrifter</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Human Resources</a></h3>
+<p><a href="../../human-resources/hr-employee-manager-self-service-overview.md">Självbetjäning för medarbetare</a></p>
+<p><a href="../../human-resources/hr-personnel-departments-jobs-positions.md">Personalhantering</a></p>
+<p><a href="../../human-resources/hr-leave-and-absence-overview.md">Tjänstledighet och frånvaro</a></p>
 <p><a href="../../human-resources/hr-benefits-manage-program.md">Förmåner</a></p>
-<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Medarbetares utveckling och utbildning</a></p>
-<p><a href="../../human-resources/hr-learning-questionnaires.md">Enkäter</a></p>
-<p><a href="hr/manage-recruiting-process.md">Rekrytering</a></p>
-<p><a href="hr/localizations/noam-usa-payroll.md">Lön, USA</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Medarbetarutveckling</a></p>
+<p><a href="../../human-resources/hr-learning-courses.md">Utbildning</a></p>
+ <p><a href="hr/localizations/noam-usa-payroll.md">Lön, USA</a></p>
 
 </td>
 <td>
-<h3><a href="../../supply-chain/index.md">Hantering av underleverantörer</a></h3>
+<h3><a href="../../supply-chain/index.md">Leveranskedjehantering</a></h3>
 <p><a href="../../supply-chain/cost-management/costing-sheets.md">Kostnadshantering</a></p>
 <p><a href="../../supply-chain/inventory/inventory-home-page.md">Lagerhantering</a></p>
 <p><a href="../../supply-chain/master-planning/master-plans.md">Huvudplanering</a></p>
@@ -129,13 +131,8 @@ Mycket av innehållet gäller även relaterade produkter: Dynamics 365 Commerce 
 <h4><a href="/dynamics365/commerce/">Dynamics 365 Commerce</a></h4>
 <p><a href="../../commerce/call-center-functionality.md">Kundtjänst</p>
 <p><a href="../../commerce/define-maintain-retail-channels.md">Inställning och hantering av kanaler</p>
-<p><a href="../../commerce/retail-peripherals-overview.md">MPOS och molnbaserad kassa</p>
+<p><a href="../../commerce/retail-peripherals-overview.md">MPOS och Cloud POS</p>
 <p><a href="../../commerce/dev-itpro/dev-retail-home-page.md">Utveckling och administration av Commerce</p>
-
-<h4><a href="/dynamics365/human-resources/">Dynamics 365 Human Resources</a></h4>
-<p><a href="../../human-resources/hr-admin-overview.md">Administratörsguide</a></p>
-<p><a href="../../human-resources/hr-developer-overview.md">Utvecklarguide</a></p>
-<p><a href="../../human-resources/hr-hrpro-overview.md">Användarhandbok</a></p>
 
 
 </td>
