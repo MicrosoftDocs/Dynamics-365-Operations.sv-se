@@ -2,9 +2,11 @@
 title: Användardefinierade certifikatprofiler för butiker
 description: Det här ämnet ger en översikt över hur certifikat används i butiker.
 author: josaw
+manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFormLayout, RetailParameters
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9cb82a6d6336bb69fe818fb33e04ad621382b383055b24a4e79eee5ddff217ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 81fa3770a137471e3d7f8cab3c7d7f37febe64fa
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719940"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018878"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Användardefinierade certifikatprofiler för butiker
 
@@ -79,7 +81,7 @@ När du lägger till en ny rad på sidan **Inställningar för certifikatprofil*
 - **Nyckelvalv certifikat** – det här fältet är obligatoriskt om du ställer in fältet **platstyp** på **nyckelvalv**. Använd den för att ange hemlighet för nyckelvalv certifikat.
 
     > [!NOTE]
-    > Innan du använder ett nyckelvalv i certifikatprofiler måste du ladda upp ett certifikat till nyckelvalvlagret och följa instruktionerna i [Konfigurera Azure Key Vault-klienten](../../finance/localizations/setting-up-azure-key-vault-client.md).
+    > Innan du använder ett nyckelvalv i certifikatprofiler måste du ladda upp ett certifikat till nyckelvalvlagret och följa instruktionerna i [Konfigurera Azure Key Vault-klienten](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client).
 
 - **Butiksnamn** – det här fältet är valfritt och det är bara tillgängligt om du anger fältet **platstyp** till **lokalt certifikat**. Använd den för att ange ett standardnamn för butiken som ska användas för att söka efter lokala certifikat.
 - **Butiksplats** – det här fältet är valfritt och det är bara tillgängligt om du anger fältet **platstyp** till **lokalt certifikat**. Använd den för att ange ett standardplats för butiken som ska användas för att söka efter lokala certifikat.
@@ -119,6 +121,3 @@ Om en ny version av certifikatet introduceras, men det inte kan uppdateras i all
 
 > [!NOTE]
 > I Commerce Runtime kommer den nya versionen av certifikatet att anropas först. Om certifikatet ännu inte har uppdaterats i en specifik butik eller på en specifik terminal kommer den föregående versionen att anropas.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

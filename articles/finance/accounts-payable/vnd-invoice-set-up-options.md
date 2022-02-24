@@ -1,25 +1,28 @@
 ---
 title: Konfigurera alternativ för automatisering av leverantörsfakturor (förhandsversion)
 description: I det här avsnittet beskrivs de alternativ som är tillgängliga när du ställer in och konfigurerar automatisering av leverantörsfakturor.
-author: sunfzam
-ms.date: 10/19/2021
+author: abruer
+manager: AnnBe
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 8e5aac8f108cf9a46c80c61891b057b8dc2b4672
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: ebab41d8b7697f20095d6d4654718b88c8b08a82
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675479"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665208"
 ---
 # <a name="setup-options-for-vendor-invoice-automation"></a>Konfigurera alternativ för automatisering av leverantörsfakturor
 
@@ -27,18 +30,12 @@ ms.locfileid: "7675479"
 
 I det här avsnittet beskrivs de alternativ som är tillgängliga när du ställer in och konfigurerar automatisering av leverantörsfakturor. I funktionerna för fakturaautomatisering används följande typer av installationsparametrar:
 
-- Parametrar för automatisk tillämpande av förskottsbetalningar på importerade fakturor.
 - Parameter för att skicka importerade leverantörsfakturor till arbetsflödessystemet och matcha bokförda inleveransrader till pågående leverantörs fakturarader
 - Parametrar för bakgrundsuppgifter för processautomatisering. Ramverket för processautomatiseringen används för att skicka importerade leverantörsfakturor till arbetsflödessystemet. Den används också för att automatiskt matcha bokförda produktinleveranserrader mot pågående leverantörsfakturarader och utföra fakturamatchningsvalidering för manuella fakturor som har matchats automatiskt mot produktinleveransrader. Olika affärsprocesser använder det här ramverket för att definiera hur ofta den valda processen körs. De tillgängliga frekvenserna för **matcha produktinleverans till fakturarader** och bakgrundsprocesser **skicka in leverantörsfakturor till arbetsflödet** omfattar **timmar** och **dagar**.
 
 Om du vill ställa in eller visa information om en bakgrundsaktivitet går du till **Systemadministration \> Installation \> Processautomatisering** och fliken **Bakgrundsaktivitet**.
 
 Om du vill ha en nedrullad automatisering från importprocessen genom bokföringen av leverantörsfakturan måste du skapa ett arbetsflöde för leverantörsfakturan. För att ställa in ett arbetsflöden, gå till **Leverantörsreskontra > Inställningar > Arbetsflöden för leverantörsreskontra**. Om du vill vara säker på att fakturan kan bearbetas från början till slut utan manuell ingrepp, måste du inkludera en automatisk bokföringsuppgift i arbetsflödeskonfigurationen.
-
-## <a name="parameters-for-automatically-applying-prepayments-in-imported-invoices"></a>Parametrar för automatisk tillämpande av förskottsbetalningar på importerade fakturor
-
-- **Tillämpa automatiskt förskottsbetalning för importerade fakturor** – När det här alternativet ställs in på **Ja**, söker systemet automatiskt efter befintliga förskottsbetalningar för en motsvarande inköpsorder när leverantörsfakturor importeras. Om det finns förskottsbetalningar som kan användas läggs en extra rad till för att tillämpa förskottsbetalningarna på de leverantörsfakturor som importeras.
-- **Blockera uppföljande automationsprocess om ansökningen om förskottsbetalning inte kan användas** – När det här alternativet ställs in på **Ja**, spärras fakturor om en förskottsbetalning inte kan användas. Liksom andra automatiserade processer, såsom kvittomatchningsprocessen och inlämning till en arbetsflödesprocess, kommer faktura automatiseringsprocessen inte att ta upp blockerade fakturor förrän förskottsbetalningen tillämpas manuellt. 
 
 ## <a name="parameters-for-submitting-imported-vendor-invoices-to-the-workflow-system"></a>Parametrar för att skicka importerade leverantörsfakturor till arbetsflödessystemet
 
@@ -66,6 +63,3 @@ Följande parametrar är tillgängliga:
 
 - **Antal gånger för att försöka med automatisk matchning** – Välj det antal gånger som systemet ska försöka matcha produktinleveranser mot en fakturarad innan det finner att processen misslyckades. När det angivna antalet försök har nåtts tas fakturan bort från automatiseringsbearbetningen.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

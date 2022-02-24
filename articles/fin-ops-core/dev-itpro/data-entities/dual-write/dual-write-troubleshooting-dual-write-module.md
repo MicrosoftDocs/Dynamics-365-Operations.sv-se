@@ -1,43 +1,53 @@
 ---
-title: Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
-description: Det här avsnittet innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem med dubbelriktad skrivning i Ekonomi och Drift-appar.
+title: Felsöka problem med modulen för dubbelriktad skrivning i Finance and Operations-appar
+description: Det här avsnittet innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem med dubbelriktad skrivning i Finance and Operations-appar.
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
+manager: AnnBe
+ms.date: 03/16/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2241e7e6219f95115f55bc45a4d94550276e1e21
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061820"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683633"
 ---
-# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
+# <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Felsöka problem med modulen för dubbelriktad skrivning i Finance and Operations-appar
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Dataverse. Det ger särskilt information som kan hjälpa dig att åtgärda problem med **dubbelriktad skrivning** i Ekonomi och Drift-appar.
+Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Finance and Operations-appar och Dataverse. Det ger särskilt information som kan hjälpa dig att åtgärda problem med **dubbelriktad skrivning** i Finance and Operations-appar.
 
 > [!IMPORTANT]
 > Vissa av de problem som det här ämnet behandlar kan kräva antingen systemadministratörsrollen eller Microsoft Azure Active Directory (Azure AD) autentiseringsuppgifter för administratör för klientorganisationen. I avsnittet för varje problem förklaras om en viss roll eller autentiseringsuppgifter krävs.
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Du kan inte läsa in modulen för dubbelriktad skrivning i en Ekonomi och Drift-app
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Du kan inte läsa in modulen för dubbelriktad skrivning i en Finance and Operations-app
 
-Om du inte kan öppna sidan **dubbelriktad skrivning** genom att välja panelen **dubbelriktad skrivning** i arbetsytan **datahantering** är dataintegreringstjänsten förmodligen nere. Skapa en supportbiljett för att begära en omstart av dataintegreringstjänsten.
+Om du inte kan öppna sidan **dubbelriktad skrivning** genom att välja panelen **dubbelriktad skrivning** i arbetsytan **datahantering** är dataintegrationstjänsten förmodligen nere. Skapa en supportbiljett för att begära en omstart av dataintegrationstjänsten.
 
 ## <a name="error-when-you-try-to-create-a-new-table-map"></a>Fel vid försök att skapa en ny tabellmappning
 
 **Nödvändiga autentiseringsuppgifter för att åtgärda problemet:** Samma användare som ställer in dubbelriktad skrivning.
 
-Följande felmeddelande kan visas när du försöker konfigurera en ny tabell för dubbelriktad skrivning. Den enda användare som kan skapa en karta är den användare som ställer in anslutningen med dubbelriktad skrivning.
+Följande felmeddelande kan visas när du försöker konfigurera en ny entitet för dubbelriktad skrivning. Den enda användare som kan skapa en karta är den användare som ställer in anslutningen med dubbelriktad skrivning.
 
-*Svarsstatuskoden anger inte slutförande: 401 (obehörig)*.
+*Svarsstatuskoden anger inte lyckad: 401 (otillåtet)*
+
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Fel vid öppning av användargränssnittet med dubbelriktad skrivning
 
@@ -49,17 +59,13 @@ Om du vill åtgärda problemet loggar du in på ett InPrivate-fönster i Microso
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-table-mapping"></a>Fel vid länkning av miljön för dubbelriktad skrivning eller tillägg av en ny tabellmappning
 
-**Den roll som krävs för att åtgärda problemet:** Systemadministratör i både Ekonomi och Drift-appar och Dataverse.
+**Den roll som krävs för att åtgärda problemet:** Systemadministratören i båda Finance and Operations-appar och Dataverse.
 
 Du kan stöta på följande fel när du länkar eller skapar kartor:
 
-```dos
-Response status code does not indicate success: 403 (tokenexchange).
-Session ID: \<your session id\>
-Root activity ID: \<your root activity\> id
-```
+*Svarsstatuskoden anger inte lyckad: 403 (tokenexchange).<br> Session s-ID: \<your session id\><br> Rotaktivitets-ID: \<your root activity id\>*
 
-Det här felet kan uppstå om du inte har tillräcklig behörighet för att länka dubbelriktad skrivning eller skapa kartor. Det här felet kan också uppstå om Dataverse-miljön återställdes utan att dubbelriktig skrivning avlänkas. Alla användare med rollen systemadministratör i båda Ekonomi och Drift-apparna och Dataverse kan länka dessa miljöer. Det är bara användaren som installerar anslutningen för dubbelriktad skrivning som kan lägga till nya tabellmappningar. Efter installationen kan alla användare med rollen systemadministratör övervaka status och redigera mappningarna.
+Det här felet kan uppstå om du inte har tillräcklig behörighet för att länka dubbelriktad skrivning eller skapa kartor. Det här felet kan också uppstå om Dataverse-miljön återställdes utan att dubbelriktig skrivning avlänkas. Alla användare med rollen systemadministratör i båda Finance and Operations-apparna och Dataverse kan länka dessa miljöer. Det är bara användaren som installerar anslutningen för dubbelriktad skrivning som kan lägga till nya tabellmappningar. Efter installationen kan alla användare med rollen systemadministratör övervaka status och redigera mappningarna.
 
 ## <a name="error-when-you-stop-the-table-mapping"></a>Fel när du stoppar tabellmappningen
 
@@ -69,31 +75,15 @@ Följande felmeddelande kan visas när du försöker att stoppa tabellmappningen
 
 Det här felet uppstår när den länkade Dataverse-miljön inte är tillgänglig.
 
-Lös problemet genom att skapa en biljett till dataintegreringsteamet. Koppla nätverksspårningen så att dataintegreringsteamet kan markera kartorna som **Inte körs** i servern.
+Lös problemet genom att skapa en biljett till dataintegrationsteamet. Koppla nätverksspårningen så att dataintegrationsteamet kan markera kartorna som **Inte körs** i servern.
 
-## <a name="errors-while-trying-to-start-a-table-mapping"></a>Fel vid försök att starta en tabellmappning
+## <a name="error-while-trying-to-start-an-table-mapping"></a>Fel vid försök att starta en tabellmappning
 
-### <a name="unable-to-complete-initial-data-sync"></a>Det gick inte att slutföra den första datasynkroniseringen
+Du kan få ett felmeddelande som följande när du försöker ange status för en mappning som ska **köras**:
 
-Följande felmeddelande kan komma att visas när du försöker köra den första datasynkroniseringen:
+*Det gick inte att slutföra inledande datasynkronisering. Fel: del i dubbelriktad skrivning - registrering av plugin-program misslyckades: Det gick inte att skapa metadata för sökning för dubbelriktad skrivning.*
 
-*Det gick inte att slutföra inledande datasynkronisering. Fel: del i dubbelriktad skrivning – registrering av plugin-program misslyckades: Det gick inte att skapa metadata för sökning för dubbelriktad skrivning.*
-
-Du kan komma att få detta felmeddelande när du försöker ange statusen för en mappning som **Körs**: Korrigeringen beror på orsaken till felet:
+Korrigeringen för det här felet beror på orsaken till felet:
 
 + Om mappningen har beroende mappningar ska du se till att aktivera de beroende mappningarna för den här tabellmappningen.
-+ Mappningen kanske saknar käll- eller målkolumner. Om en kolumn i Ekonomi och Drift-appen saknas följer du stegen i avsnittet [Tabellkolumner som saknas problem i kartor](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Om en kolumn i Dataverse saknas klickar du på knappen **Uppdatera tabeller** på mappningen så att kolumnerna automatiskt fylls i igen i mappningen.
-
-### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Versionsmatchningsfel och uppgradering av lösningar med dubbelriktad skrivning
-
-Följande felmeddelanden kan komma att visas när du försöker köra tabellmappningarna:
-
-+ *Kundgrupper (msdyn_customergroups) : Fel vid dubbelskrivning – Dynamics 365 for Sales-lösningen "Dynamics365Company" har versionsfel. Version: "2.0.2.10" Erforderlig version: "2.0.133"*
-+ *Dynamics 365 for Sales-lösningen "Dynamics365FinanceExtended" har ett versionsfel. Version: "1.0.0.0" Erforderlig version: "2.0.227"*
-+ *Dynamics 365 for Sales-lösningen "Dynamics365FinanceAndOperationsCommon" har ett versionsfel. Version: "1.0.0.0" Erforderlig version: "2.0.133"*
-+ *Dynamics 365 for Sales-lösningen "CurrencyExchangeRates" har ett versionsfel. Version: "1.0.0.0" Erforderlig version: "2.0.133"*
-+ *Dynamics 365 for Sales-lösningen "Dynamics365SupplyChainExtended" har ett versionsfel. Version: "1.0.0.0" Erforderlig version: "2.0.227"*
-
-Du korrigerar problemen genom att uppdatera lösningsar med dubbelskrivning i Dataverse. Se till att du uppgraderar till den senaste lösningen som matchar erforderlig lösningsversion.
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
++ Mappningen kanske saknar käll- eller målfält. Om ett fält i Finance and Operations-appen saknas följer du stegen i avsnittet [Entitetsfält som saknas problem i kartor](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Om ett fält i Dataverse saknas klickar du på knappen **Uppdatera tabeller** på mappningen så att fälten automatiskt fylls i igen i mappningen.

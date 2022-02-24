@@ -71,6 +71,3 @@ Följ dessa steg om du vill skapa en mall för anställningsprocesser.
     - Om du vill ta bort en aktivitet, expandera den och välj sedan knappen för papperskorgen i aktivitetshuvudet.
 
 8. Välj **Spara**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

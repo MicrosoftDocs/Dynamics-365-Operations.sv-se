@@ -1,13 +1,16 @@
 ---
-title: Inaktivera regler som används i transaktionsvalideringsprocessen
-description: Det här ämnet beskriver funktionen som inaktiverar transaktionsvalideringsregler i Microsoft Dynamics 365 Commerce.
-author: analpert
-ms.date: 12/11/2021
+title: Inaktivera regler i konsekvenskontrollen för butikstransaktioner
+description: I det här avsnittet beskrivs funktionen för att avaktivera regler för konsekvenskontroll av transaktioner i Microsoft Dynamics 365 Commerce.
+author: josaw1
+manager: AnnBe
+ms.date: 10/15/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -15,21 +18,21 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cdaea51b4c84e6a62f0eb9412315ae77b4c11503
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 37209f1c1de19335f5f9fa6636ab55dd8b2fccc1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919537"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459956"
 ---
-# <a name="disable-rules-used-in-the-transaction-validation-process"></a>Inaktivera regler som används i transaktionsvalideringsprocessen
+# <a name="disable-rules-in-the-retail-transaction-consistency-checker"></a>Inaktivera regler i konsekvenskontrollen för butikstransaktioner 
 
 [!include [banner](../includes/banner.md)]
 
-Återförsäljare kan ha affärsscenarier och processer som är unika för dem. Därför gäller inte alla regler som ingår i valideringsprocessen för handelstransaktioner för alla återförsäljare. För att hantera skillnader innehåller Microsoft Dynamics 365 Commerce funktioner som kan användas för att inaktivera regler som inte är tillämpliga.
+Återförsäljare kan ha affärsscenarier och processer som är unika för dem. Därför gäller inte alla regler som ingår som standard i konsekvenskontrollen av handelstransaktioner för alla detaljhandlare. För att hantera skillnader innehåller Microsoft Dynamics 365 Commerce funktioner som kan användas för att inaktivera regler som inte är tillämpliga.
 
-Visa en lista med regler som finns tillgängliga i miljöns transaktionsvalideringsprocess och visa status för varje regel genom att öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> Commerce-parametrar** och välja fliken **Transaktionsvalidering**. Alla aktiverade regler används till att validera transaktioner under processen **Validera butikstransaktioner** och måste passera för att samla in och bokföra transaktioner på ett transaktionsutdrag.
+Om du vill visa en lista över regler som är tillgängliga i konsekvenskontrollen av butikstransaktioner i din miljö, och se status för varje regel, gå till **Retail och Commerce \> Administrationsinställningar \> Parametrar \> Commerce-parametrar**, och välj fliken **Transaktionsvalidering**.
 
-Som standard är status för varje regel inställd på **Aktiverad**. Därför används alla regler för att validera butikstransaktioner innan de går att hämta till handelstransaktionsutdragen. Om du vill inaktivera en regel ändrar du dess status till **Inaktiverad**. Inaktiverade regler beaktas inte när transaktioner valideras under processen **Validera butikstransaktioner**.
+Som standard är status för varje regel inställd på **Aktiverad**. Därför används alla regler för att validera butikstransaktioner innan de hämtas till butiksutdragen. Om du vill inaktivera en regel ändrar du dess status till **Inaktiverad**. Inaktiverade regler beaktas inte när transaktioner valideras under utdragsberäkningsprocessen.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Om du vill kringgå hela valideringsprocessen, oavsett vilka regler som aktiveras, går du till **Retail och Commerce \> Administrationsinställningar \> Parametrar \> Commerce-parametrar**, och sedan, på fliken **Transaktionsvalidering** ställer du in valet för **Inaktivera konsekvenskontroll för Commerce-transaktioner** på **Ja**. När alternativet är inställt på **Nej** kan det inte ställas tillbaka till **Ja** från användargränssnittet (UI).

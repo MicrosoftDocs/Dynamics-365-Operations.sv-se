@@ -1,35 +1,33 @@
 ---
 title: Konfigurera berättigandealternativ för personlig kontakt
-description: Detta ämne förklarar hur du konfigurerar berättigande alternativ för personliga kontakter i Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/24/2021
+description: Konfigurera berättigande alternativ för personliga kontakter i Microsoft Dynamics 365 Human Resources. Personliga kontakter kan vara mottagare eller beroende.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ad9dc9d12bcc419c3925b0f78566d9f3eb0a1e35
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 68364b0cc1c579a3ee9813474c9d3f6e4df1c05d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070360"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420611"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>Konfigurera berättigandealternativ för personlig kontakt
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Det här ämnet förklarar hur du konfigurerar de typer av personliga kontakter som kan användas i förmåner i Microsoft Dynamics 365 Human Resources. Personliga kontakter är de personer som omfattas av dina planer (beroende) eller som kan dra fördel av dina planer (förmåner). Beroende är vanligtvis make/maka eller barn. Det kan vara make/maka, barn, förtroenden eller underhålls.
+I den här artikeln beskrivs hur du konfigurerar olika typer av personliga kontakter att använda i förmåner i Microsoft Dynamics 365 Human Resources. Personliga kontakter kan vara mottagare eller beroende. 
 
 1. I arbetsytan **olämplig** under **inställningar**, välj **Berättigandealternativ för personlig kontakt**.
 
@@ -47,6 +45,3 @@ Det här ämnet förklarar hur du konfigurerar de typer av personliga kontakter 
    | **Ålder** | Maximal ålder för en berättigad personlig kontakt för förmånsplanen. Det här fältet är bara aktivt om du väljer en relation. Denna ålder jämförs med den beräknade åldern för den personliga kontakten. Beräknad ålder är: (täckningsdatum – personliga kontaktens födelsedatum/365). Det här talet är alltid ett heltal. |
 
 4. Välj **Spara**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

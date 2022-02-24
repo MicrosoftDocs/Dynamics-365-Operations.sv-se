@@ -1,10 +1,12 @@
 ---
 title: Hantera rekryteringsprocesser
-description: Det här avsnittet beskriver ett begrepp som rekryterare kan använda när de spårar stegen i en rekryteringsprocess.
+description: Denna artikel beskriver ett begrepp som rekryterare kan använda för att följa stegen i en rekryteringsprocess, inklusive försök att annonsera lediga jobberbjudanden och att rekrytera sökande, spåra sökande och ansökningsinformation, intervjua sökande och välja en eller flera kandidater till de lediga befattningarna i din organisation.
 author: andreabichsel
-ms.date: 01/10/2022
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMApplication, HRMRecruitingTable
 audience: Application User
@@ -15,18 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fa1d5201fcc52d49b9d954356f1ca39b7619cd2
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 71e30a30aee5edcea2e24b326b0f263612b6b897
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075485"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798053"
 ---
 # <a name="manage-recruiting-processes"></a>Hantera rekryteringsprocesser
 
-> [!IMPORTANT]
-> Funktionerna som anges i det här avsnittet är för närvarande tillgängliga för Personal-kunder i ekonomiinfrastrukturen.  
-
+[!include [banner](../includes/banner.md)]
 
 Denna artikel beskriver ett begrepp som rekryterare kan använda för att följa stegen i en rekryteringsprocess, inklusive försök att annonsera lediga jobberbjudanden och att rekrytera sökande, spåra sökande och ansökningsinformation, intervjua sökande och välja en eller flera kandidater till lediga befattningar i din organisation.
 
@@ -44,7 +44,7 @@ Rekryteringsprojekt låter rekryterarna spåra förloppet när de försöker bem
 - Deadline för ansökning
 - Uppskattat startdatum
 
-Rekryteringsprojektet innehåller det värde för **Jobbannons** som används på sidan **Självbetjäning för medarbetare** för att annonsera den öppna befattningen. Öppningen kan visas för anställda endast om rekryteringsprojektet har ett värde på **Jobbannons**, fältet **Visa i självbetjäningen för medarbetare** anges till **Ja**, fältet **Deadline för ansökning** måste ställas in på ett framtida datum, och rekryteringsprojektet måste ha **Projektstatus** på **Startad**. Följande tabell visar möjlig status för flera rekryteringsprojekt och deras beskrivningar.
+Rekryteringsprojektet innehåller den **Jobbannons** som används på **Självbetjäning för medarbetare** för att annonsera den öppna befattningen. Om du vill visa jobberbjudandet för medarbetare måste rekryteringsprojektet ha en **Jopbbannons**, fältet **Visa i självbetjäningen för medarbetare** måste anges till Ja, **Deadline för ansökning**  måste ställas in på ett framtida datum, och rekryteringsprojektet måste ha **Projektstatus** Startad. Följande tabell visar möjlig status för flera rekryteringsprojekt och deras beskrivningar.
 
 | Status    | Anger att...                                                                         |
 |-----------|-----------------------------------------------------------------------------------------|
@@ -57,7 +57,7 @@ Rekryterare kan också registrera de **Medier** som används att annonsera jobbe
 
 ## <a name="applicants"></a>Sökanden
 
-En sökande är en person som söker ett jobb inom ditt företag. Sökande delas bland alla juridiska personer i organisationen. Därför har du en stor talangpool att söka i. Du kan underhålla kompetenser, referenser, logibegäran och personuppgifter för sökande. När du skapar en sökandepost, skapas en personpost för den sökanden i den globala adressboken. På sidan **Sökande** kan du uppdatera följande information om globala adressboken för kontakter som är sökande:
+En sökande är en person som söker ett jobb inom ditt företag. Sökande delas mellan alla juridiska personer i din organisation vilket ger dig ett stort antal användare att söka bland. Du kan underhålla kompetenser, referenser, logibegäran och personuppgifter för sökande. När du skapar en sökandepost, skapas en personpost för den sökanden i den globala adressboken. På sidan **Sökande** kan du uppdatera följande information om globala adressboken för kontakter som är sökande:
 
 - Adressinformation
 - Kontaktinformation
@@ -86,7 +86,7 @@ Ansökningstatusen anger var en ansökan är i rekryteringsprocessen. Följande 
 
 ### <a name="correspondence-actions"></a>Korrespondensåtgärder
 
-En ansöknings korrespondensåtgärd bestämmer det dokument eller den e-postmall som du använder för att kommunicera med den sökande, som skickade in ansökan. Du kan associera **Ansökningsbokmärken** med korrespondensåtgärder, vilket låter dig använda värden från projektsidorna, **Ansökan**, **Sökande**, **intervju** och **Rekryteringsprojektsidor** i din kommunikation med de sökande. Genom att skapa **E-postmallar för ansökningar** för korrespondensåtgärder kan du snabbt skicka e-post till sökande som har en ansökan med en specifik kombination av status och korrespondensåtgärd. Du kan exempelvis skicka ett bekräftelsemail till alla sökande med **Status** för **inlevererad** och **Korrespondensåtgärd** **inlevererad**. När du har skickat e-postmeddelandet kan du automatiskt uppdatera statusen för ansökningarna.
+En **Ansöknings** korrespondensåtgärd bestämmer det dokument eller den e-postmall som du använder för att kommunicera med den sökande, som skickade in ansökan. Du kan associera **Ansökningsbokmärken** med korrespondensåtgärder, vilket låter dig använda värden från projektsidorna, Ansökan, Sökande, intervju och Rekryteringsprojektsidor i din kommunikation med de sökande. **E-postmallar för ansökningar** kan skapas för korrespondensåtgärder du vill skicka e-post till sökande som har en ansökan med en viss status och korrespondensåtgärdskombination. Du kan exempelvis skicka ett bekräftelsemail till alla sökande med **Status** inlevererad och **Korrespondensåtgärd** inlevererad. När du har skickat e-postmeddelandet kan du automatiskt uppdatera statusen för ansökningarna.
 
 ## <a name="application-routing"></a>Ansökningsflöde
 
@@ -103,5 +103,3 @@ Om en ansökning måste granskas av flera medarbetare kan du använda sidan **An
 ## <a name="hiring-applicants"></a>Anställa sökande
 
 Använd sidna **Ansökningar** när du anställer en sökande. När du anställer en sökande, kommer ansökningsposten har statusvärdet **Anställd** och sökandens globala adressbokspost är kopplad till den nya medarbetarposten. Ändringar av informationen om den globala adressboken för den nya medarbetarposten visas även i ansökningsposten. Detta kan hjälpa till att minska registreringen av information om den nya arbetaren någonsin skulle ansöka om ett annat jobb inom ditt företag. Om du vill anställa en befintlig arbetare på en ny befattning klickar du på **Byt befattning** i listrutan **Ansökningsstatus** för att initiera flytten.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

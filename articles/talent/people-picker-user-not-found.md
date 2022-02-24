@@ -60,6 +60,3 @@ Observera egenskapen **UserType** för användaren. Om **UserType** är tom, til
 ```
 PS C:\>Set-AzureADUser -ObjectId "testUpn@tenant.com" -UserType Member
 ```
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

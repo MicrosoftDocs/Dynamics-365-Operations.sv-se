@@ -51,6 +51,3 @@ Du vill få dina lediga befattningar framför så många kvalificerade kandidate
 
 > [!NOTE]
 > Microsoft och Attract är inte involverade i att skapa och underhålla dessa värden. Det är ditt ansvar att hålla dem uppdaterade i Attract och arbeta med Broadbean för att åtgärda problem som rör dina autentiseringsuppgifter.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

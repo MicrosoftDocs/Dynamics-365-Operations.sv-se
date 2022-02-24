@@ -1,28 +1,28 @@
 ---
 title: Översikt över inköpsrekvisition
 description: Det här ämnet beskriver arbetsflödet för inköpsrekvisition och olika statusar en inköpsrekvisition kan ha.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 11/02/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "2174"
-- intro-internal
+ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: acd0deebe79e29bd1beb32ea21cd179f5bf12c43
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 189debe46ea28808cf3081a7d8f49686298e8c8e
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982912"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020089"
 ---
 # <a name="purchase-requisition-overview"></a>Översikt över inköpsrekvisition
 
@@ -49,7 +49,7 @@ Du kan konfigurera arbetsflödesprocessen för inköpsrekvisitionen att flöda e
 
 Följande diagram visar status som har tilldelats en inköpsrekvisition och en inköpsrekvisitionsrad allt eftersom de går igenom arbetsflödesprocessen.  
 
-[![Status för rubrik och rad för inköpsrekvisition.](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Status för rubrik och rad för inköpsrekvisition](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Statusrelation för rubrik och rad för inköpsrekvisition
 
@@ -181,7 +181,7 @@ Om du vill skapa en inköpsorder för inköpsrekvisitionsrader som inte är valb
 
 Processen för efterfråganskonsolidering börjar när en inköpsrekvisition har godkänts i arbetsflödet och budgetreservationer och förinteckningar har registrerats, om budgetkontroll har konfigurerats för din organisation. Följande diagram visar processflödet för begärandekonsolidering.  
 
-[![Processflöde för efterfråganskonsolidering.](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Processflöde för efterfråganskonsolidering](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 Om du vill konsolidera godkända inköpsrekvisitionsrader, följ dessa steg:
 
@@ -192,7 +192,8 @@ Om du vill konsolidera godkända inköpsrekvisitionsrader, följ dessa steg:
 5.  Skapa inköpsorder för konsoliderade rekvisitionrader eller för inköpsrekvisitionsrader i en konsolideringsmöjlighet.
 
 
-## <a name="additional-resources"></a>Ytterligare resurser
+<a name="additional-resources"></a>Ytterligare resurser
+--------
 
 [Skapa en rekvisition för förbrukning](tasks/create-requisition-consumption.md)
 
@@ -200,6 +201,3 @@ Om du vill konsolidera godkända inköpsrekvisitionsrader, följ dessa steg:
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

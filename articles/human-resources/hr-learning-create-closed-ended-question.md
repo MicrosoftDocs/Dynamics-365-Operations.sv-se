@@ -1,31 +1,29 @@
 ---
 title: Skapa en stängd avslutad fråga
 description: Med stängda frågor kan du ange alternativ som den svarande kan välja mellan.
-author: twheeloc
-ms.date: 08/26/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMAnswerCollection, KMAnswer, KMQuestion, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b3b90bb2a4981f32feb10ee1192e9c4d2e604e7a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a2eb53290d39fef0bf439a199dfd774138823ec2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071562"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420654"
 ---
 # <a name="create-a-closed-ended-question"></a>Skapa en stängd avslutad fråga
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -33,43 +31,40 @@ Med stängda frågor kan du ange alternativ som den svarande kan välja mellan. 
 
 
 ## <a name="create-an-answer-group"></a>Skapa en svarsgrupp
-1. Gå till **Enkät** > **Design** > **Svarsgrupper**.
-2. Klicka på **Ny**.
-3. Skriv ett värde i fältet **Svarsgrupp**.
-4. I fältet **Beskrivning** anger du ett värde.
-    * Använd **slump**-funktionen för att slumpmässigt placera svaren i en annan ordning varje gång svarsgruppen används för en fråga.  
-5. Klicka på **Svar**.
-6. Klicka på **Ny**.
-    * Sekvensnummer kontrollerar ordern svaren som visas i, om inte **Slumpmässigt** har valts för **svarsgruppen**.  
+1. Gå till Enkät > Design > Svarsgrupper.
+2. Klicka på Ny.
+3. Skriv ett värde i fältet Svarsgrupp.
+4. Ange ett värde i fältet Beskrivning.
+    * Använd slumpfunktionen för att slumpmässigt placera svaren i en annan ordning varje gång svarsgruppen används för en fråga.  
+5. Klicka på Svar.
+6. Klicka på Ny.
+    * Sekvensnummerkontrollerar ordern svaren som visas i, om inte Slumpmässigt har valts för svarsgruppen.  
     * Poäng kan tilldelas svar för att användas vid poängsättning av enkäten.  
-7. Välj ett nummer i fältet **Poäng**.
+7. Välj ett nummer i fältet Poäng.
     * Det korrekta svaret kan markeras för att visa att det valda svaret är korrekt. Detta kan användas för att poängsätta enkäten.  
-8. Skriv ett värde i fältet **Svar**.
+8. Skriv ett värde i fältet Svar.
     * Fortsätt att skapa svarsurvalsalternativ för svarsgruppen.  
-9. Klicka på **Ny**.
-10. Välj ett nummer i fältet **Poäng**.
-11. Skriv ett värde i fältet **Svar**.
-12. Klicka på **Ny**.
-13. Välj ett nummer i fältet **Poäng**.
-14. Skriv ett värde i fältet **Svar**.
-15. Klicka på **Ny**.
-16. Välj ett nummer i fältet **Poäng**.
-17. Skriv ett värde i fältet **Svar**.
-18. Klicka på **Ny**.
-19. Välj ett nummer i fältet **Poäng**.
-20. Skriv ett värde i fältet **Svar**.
+9. Klicka på Ny.
+10. Välj ett nummer i fältet Poäng.
+11. Skriv ett värde i fältet Svar.
+12. Klicka på Ny.
+13. Välj ett nummer i fältet Poäng.
+14. Skriv ett värde i fältet Svar.
+15. Klicka på Ny.
+16. Välj ett nummer i fältet Poäng.
+17. Skriv ett värde i fältet Svar.
+18. Klicka på Ny.
+19. Välj ett nummer i fältet Poäng.
+20. Skriv ett värde i fältet Svar.
 21. Stäng sidan.
 22. Stäng sidan.
 
 ## <a name="create-the-question"></a>Skapa frågan
-1. Gå till **Enkät** > **Design** > **Frågor**.
-2. Klicka på **Ny**.
-3. Använd fältet **Typ** för att gruppera relaterade frågor tillsammans.
-    * Du kan använda ange indatatyper för **kryssrutan**, **alternativsknappen** eller **kombinationsrutan** för stängda frågor.  
-4. Välj ett alternativ i fältet **Indatatyp**.
-5. Ange eller välj ett värde i fältet **Svarsgrupp**.
-6. Skriv ett värde i fältet **Text**.
+1. Gå till Enkät > Design > Frågor.
+2. Klicka på Ny.
+3. Använd fältet Typ för att gruppera relaterade frågor tillsammans.
+    * Du kan använda ange indatatyper för kryssrutan, alternativsknappen eller kombinationsrutan för stängda frågor.  
+4. Välj ett alternativ i fältet Indatatyp.
+5. Ange eller välj ett värde i fältet Svarsgrupper.
+6. Skriv ett värde i fältet Text.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

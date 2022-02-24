@@ -53,6 +53,3 @@ Förutom denna skillnad fält **provanställning** och **kalender** har lagts ti
 
 ### <a name="platform-update-23-for-finance-and-operations"></a>Plattformsuppdatering 23 för Finance and Operations
 Mindre felkorrigeringar ingår i plattformsuppdatering 23 för Finance and Operations. Mer information finns i [vad är nya eller ändrade i Dynamics 365 Finance and Operations plattformsuppdatering 23 (januari 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,106 +1,73 @@
 ---
 title: Skapa fördefinierade produktvarianter
 description: Den här proceduren går igenom hur du skapar produktvarianter för en produktmall med kombinationer av produktdimensioner.
-author: t-benebo
-ms.date: 04/22/2021
+author: ShylaThompson
+manager: tfehr
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart, EcoResProductVariantSuggestionsEnhanced
+ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a90e0eb469b823368c1140421fc9c92ccfe69a3b7bac73f762170c0da43e3eee
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d07a090dbd41eb17e8d604887435bbb8b07e8d9e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747899"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966940"
 ---
-# <a name="predefined-product-variants"></a>Fördefinierade produktvarianter
+# <a name="create-predefined-product-variants"></a>Skapa fördefinierade produktvarianter
 
 [!include [banner](../../includes/banner.md)]
 
-## <a name="example-scenario-create-predefined-product-variants"></a>Exempelscenario: Skapa fördefinierade produktvarianter
+Den här proceduren går igenom hur du skapar produktvarianter för en produktmall med kombinationer av produktdimensioner. Demonstrationsdataföretaget som används för att skapa den här proceduren är USMF.
 
-Detta exempelscenario visar hur du skapar produktvarianter för en produktmall med hjälp av kombinationer av produktdimensioner.
 
-### <a name="make-demo-data-available"></a>Gör demodata tillgängliga
+## <a name="create-a-product-master"></a>Skapa en produktmall
+1. Gå till Produktinformationshantering > Produkter > Produktmallar.
+2. Klicka på Ny.
+3. Skriv ett värde i fältet Produktnummer.
+    * Att ange ett produktnummer manuellt krävs endast om ingen nummerserie har ställts in för produktnummerfältet. Hoppa över steget om nummerserien har angetts för fältet.  
+4. Skriv ett värde i fältet Produktnamn.
+5. Ange eller välj ett värde i fältet Produktdimensionsgrupp.
+    * Välj produktdimensiongruppen SizeCol (storlek och färg).  
+6. Klicka på OK.
 
-För att följa detta scenario med hjälp av här föreslagna värden måste du ha demonstrationsdata installerade samt välja den juridiska personen *USMF*.
+## <a name="add-product-dimensions"></a>Lägg till Produktdimensioner
+1. Klicka på produktdimensioner
+    * Det här exemplet visar hur du manuellt anger produktdimensioner. Du kan också välja att markera en Storlek, Färg eller utförandegrupp som innehåller produktdimensionvärdena, som du vill använda.  
+2. Klicka på Ny.
+3. Markera vald rad i listan.
+4. Ange eller välj ett värde i fältet Storlek.
+5. Skriv ett värde i fältet Namn.
+6. Klicka på Ny.
+7. Markera vald rad i listan.
+8. Ange eller välj ett värde i fältet Storlek.
+9. Skriv ett värde i fältet Namn.
+10. Klicka på fliken Färger.
+11. Klicka på Ny.
+12. Markera vald rad i listan.
+13. Ange eller välj ett värde i fältet Färg.
+14. Skriv ett värde i fältet Namn.
+15. Klicka på Ny.
+16. Markera vald rad i listan.
+17. Ange eller välj ett värde i fältet Färg.
+18. Skriv ett värde i fältet Namn.
+19. Klicka på Spara.
+20. Stäng sidan.
 
-### <a name="step-1-create-a-product-master"></a>Steg 1: Skapa en produktmall
+## <a name="generate-product-variants"></a>Skapa produktvarianter
+1. Klicka på Produktvarianter
+2. Klicka på Variantförslag
+3. Klicka på Markera alla.
+    * I det här exemplet väljs alla möjliga varianter. Om bara en delmängd av de möjliga produktdimensionkombinationerna ska användas för att skapa varianter, kan du välja de enskilda posterna.  
+4. Klicka på Skapa.
+    * Du kan generera beskrivningar av alla dina varianter baserat på kombinationen av produktdimensionvärden. Beskrivningar är valfria.  
+5. Klicka på Spara.
 
-För att skapa en produktmall:
-
-1. Gå till **Produktinformationshantering > Produkter > Produktmallar**.
-1. Välj **Ny**.
-1. Om fältet **Produktnummer** inte redan visar ett nummer anger du ett värde. Detta krävs endast om ingen nummerserie har ställts in för detta fält.
-1. Ange ett namn i fältet **Produktnamn**.
-1. I fältet **Produktdimensionsgrupp** väljer du produktdimensionsgruppen *SizeCol* (storlek och färg).
-1. Välj **OK** om du vill skapa och öppna den nya produktmallen.
-
-### <a name="step-2-add-product-dimensions"></a>Steg 2: Lägg till produktdimensioner
-
-Det här exemplet visar hur du manuellt anger produktdimensioner. Du kan också välja att markera en storlek, färg eller utförandegrupp som innehåller de produktdimensionsvärden som du vill använda.
-
-För att lägga till produktdimensioner:
-
-1. Med din nya produktmall fortfarande öppen väljer du **Produktdimensioner** i åtgärdsfönstret.
-1. Öppna fliken **Storlek** och välj sedan **Ny** i verktygsfältet för att lägga till en rad i rutnätet. Gör följande inställningar för den nya raden:
-    - **Storlek:** Välj ett storleksvärde.
-    - **Namn:** Ange ett namn för storleken.
-1. Välj **Ny** i verktygsfältet och lägg till en andra storlek i rutnätet med ny **Storlek** och **Namn**.
-1. Öppna fliken **Färger** och välj sedan **Ny** i verktygsfältet för att lägga till en rad i rutnätet. Gör följande inställningar för den nya raden:
-    - **Färg:** Välj ett färgvärde.
-    - **Namn:** Ange ett namn för färgen.
-1. Välj **Ny** i verktygsfältet och lägg till en andra storlek i rutnätet med en ny **Färg** och ett nytt **Namn**.
-1. Välj **Spara**.
-1. Stäng sidan när du vill återgå till din nya produktmall.
-
-### <a name="step-3-generate-product-variants"></a>Steg 3: Skapa produktvarianter
-
-> [!NOTE]
-> I det här avsnittet beskrivs hur du skapar produktvarianter när funktionen *Förbättringar av variantförslagssida* inte är aktiverad. I nästa avsnitt finns mer information om hur du skapar produktvarianter när den funktionen är tillgänglig.
-
-Så här skapar du produktvarianter:
-
-1. Med din nya produktmall fortfarande öppen väljer du **Produktvarianter** i åtgärdsfönstret.
-1. Markera **Variantförslag** i åtgärdsfönstret.
-1. Systemet skapar en lista med alla möjliga kombinationer av de storlekar och färger du definierat för produkten. Välj **Markera alla** i verktygsfältet.
-    - I det här exemplet väljer du alla möjliga varianter. Om du bara vill använda en deluppsättning av de möjliga kombinationerna av produktdimensioner markerar du endast de kryssrutor som behövs.  
-1. Markera **Skapa**.
-1. Välj **Spara**.
-
-## <a name="improved-variant-suggestions"></a>Förbättrade variantförslag
-
-Funktionen *Förbättringar av förslagssida för varianter* förbättrar sidan **Variantförslag** i syfte att åtgärda problem med prestanda och användbarhet för företag med ett stort antal produktdimensionskombinationer. Den förbättrade processen för val av produktdimensionsvärden för vilken variantförslag skapas gör det snabbare och enklare att identifiera och frisläppa relevanta produktvarianter.
-
-Följande förbättringar läggs till av den här funktionen:
-
-- **Uppskjuten generering av variantförslag:** Sidan **Variantförslag** visar inte längre förslag när du öppnar den första gången. Du måste istället explicit välja vilka värden du behöver och sedan välja knappen **Föreslå** för att generera kombinationerna. Detta gör processen mer synlig och interaktiv.
-- **Val av dimensionsvärden:** När du har många dimensionsvärden är du vanligtvis intresserad av att generera variantförslag som omfattar endast några av dem (till exempel när du inför en ny uppsättning färger eller utföranden). Med den förbättrade designen kan du välja de dimensionsvärden för vilka du vill skapa förslag på produktvarianter. Detta ökar relevansen för de föreslagna varianterna avsevärt och förbättrar både systemprestanda och användarproduktivitet.
-
-### <a name="turn-on-the-variant-suggestions-page-improvements-feature"></a>Aktivera funktionen för förbättrad variantförslagssida
-
-Innan du kan använda funktionen *Förbättrad variantförslagssida* måste den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
-
-- **Modul:** *Produktinformationshantering*
-- **Funktionsnamn:** *Förbättrad variantförslagssida*
-
-### <a name="work-with-the-improved-variant-suggestions"></a>Arbeta med förbättrade variantförslag
-
-Så här skapar du förslag på produktvarianter när funktionen *Förbättringar av variantförslagssida* är aktiverad:
-
-1. Öppna eller skapa en produktmall och lägg till de produktdimensioner som krävs för den, enligt beskrivningen i föregående avsnitt.
-1. Med den nya produktmallen öppen väljer du **Produktvarianter** i åtgärdsfönstret.
-1. Markera **Variantförslag** i åtgärdsfönstret.
-1. Välj de värden som du vill använda för respektive dimension.
-1. Välj **Föreslå** i det övre verktygsfältet.
-1. Systemet skapar en lista med alla möjliga kombinationer av de storlekar och färger du har valt. Markera kryssrutan för varje kombination av produktdimensioner som du vill använda på snabbfliken **Föreslagna varianter** eller välj **Markera alla** i verktygsfältet för att välja samtliga.  
-1. Välj **Skapa** om du vill lägga till varianterna i den aktuella produktmallen.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

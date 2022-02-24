@@ -98,6 +98,3 @@ Den här versionen innehåller flera ytterligare felkorrigeringar:
 - När en entreprenör anställs bör fliken **kompensation** inte vara tillgänglig på sidan förfrågan/åtgärd.
 - Under processen om begäran om uppsägning kan du inte fortsätta förrän alla obligatoriska fält innehåller data.
 - Problem med sorteringsordning och datumvisning i analysen för Personalhantering har hanterats.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Skapa en postmall för att förenkla datainmatning
 description: Det här avsnittet visar hur du skapar en postmall så att fältvärden som ofta används inte uttryckligen behöver anges för varje ny post.
 author: margoc
+manager: AnnBe
 ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, SysRecordInfo, SysRecordTemplatePromptOnCreate
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72ffb6458ca3b10415d75fc835677ed2fa03e4197978ab648f2b244248f45058
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68d3c7dd2f042617a7e2fcc8bee05fae6a82bde9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767735"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685228"
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>Skapa en postmall för att förenkla datainmatning
 
@@ -41,6 +43,3 @@ Det här avsnittet visar hur du skapar en postmall så att fältvärden som ofta
 13. Välj **OK**.
 14. Välj **Nära**.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,34 +1,35 @@
 ---
-title: Skapa förmånsplaner för medarbetare
-description: I dettta ämne beskrivs hur du skapar, väljer och bekräftar förmånsplaner för medarbetare i Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/23/2021
+title: Skapa förmånsplaner för arbetare
+description: Du kan skapa pensionsplaner för arbetare i Microsoft Dynamics 365 Human Resources för att välja förmånsplaner för medarbetare och för att bekräfta förmånsplanens val.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanEmployee, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 701bc6f1bb3ef684b163c32032e1094c8ae4deb0
-ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
+ms.openlocfilehash: 0ebd19cba8dd7cac8ccf6d17d4206731be87a225
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "7417503"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420541"
 ---
-# <a name="create-worker-benefit-plans"></a>Skapa förmånsplaner för medarbetare
+# <a name="create-worker-benefit-plans"></a>Skapa förmånsplaner för arbetare
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+Du kan skapa pensionsplaner för arbetare i Microsoft Dynamics 365 Human Resources för att välja förmånsplaner för medarbetare och för att bekräfta förmånsplanens val. Vanligtvis väljer medarbetare själv förmånsplaner med hjälp av medarbetarens självbetjäning och en förmånsadministratör bekräftar valen. 
 
-Du kan skapa pensionsplaner för medarbetare i Microsoft Dynamics 365 Human Resources för att välja förmånsplaner för medarbetare och för att bekräfta förmånsplanens val. Vanligtvis väljer medarbetare själv förmånsplaner med hjälp av medarbetarens självbetjäning och en förmånsadministratör bekräftar valen. 
-
-1. I arbetsytan **Hantering av förmåner** under **Planer**, välj **Förmånsplaner för medarbetare**.
+1. I arbetsytan **Hantering av förmåner** under **Planer**, välj **Förmånsplaner för arbetare**.
 
 2. Välj **Ny**.
 
@@ -37,7 +38,7 @@ Du kan skapa pensionsplaner för medarbetare i Microsoft Dynamics 365 Human Reso
    | Fält | Beskrivning |
    | --- | --- |
    | Period | Anger en förmånsperiod som ska användas för att filtrera planerna på snabbfliken planer. Filtrera planerna så att du kan välja en delmängd av alla planposter så att du kan bekräfta delmängden. Välj till exempel en period som du skapat med namnet 2015 för att bekräfta alla förmånsanmälningsval för 2015. |
-   | Arbetare | Anger en medarbetare som ska användas för att filtrera planerna på snabbfliken planer. Filtrera planerna så att du kan välja en delmängd av alla planposter så att du kan bekräfta delmängden. |
+   | Arbetare | Anger en arbetare som ska användas för att filtrera planerna på snabbfliken planer. Filtrera planerna så att du kan välja en delmängd av alla planposter så att du kan bekräfta delmängden. |
    | Juridisk person | Anger en juridisk person som ska användas för att filtrera planerna på snabbfliken planer. Filtrera planerna så att du kan välja en delmängd av alla planposter så att du kan bekräfta delmängden. |
    | Omfattningsalternativ | Anger en omfattningsalternativ som ska användas för att filtrera planerna på snabbfliken planer. Filtrera planerna så att du kan välja en delmängd av alla planposter så att du kan bekräfta delmängden. |
    | Standardvärde | Filtrerar förmånsplanerna baserat på om de är en standardplan. Filtrera planerna för att hjälpa dig att välja en delmängd av alla planposter så att du kan bekräfta delmängden. |
@@ -48,6 +49,3 @@ Du kan skapa pensionsplaner för medarbetare i Microsoft Dynamics 365 Human Reso
    | Planer | Fliken Planer innehåller de planer som uppfyller angivna filterkriterier. De relevanta konfigurationsalternativen som har ställts in av personalen och de registreringar som valts av medarbetare tas med på varje rad. I det kvalificerade fältet anges om det finns en valideringskonflikt med planurvalet. |
 
 4. Välj **Spara**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Komprimera stora dokument som genereras i elektronisk rapportering
 description: Det här avsnittet innehåller information om hur du komprimerar stora dokument som genereras av ett format för elektronisk rapportering (ER).
 author: NickSelin
+manager: kfend
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERFormatDestinationTable
 audience: Application User, IT Pro
@@ -15,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7ef8f730f2e207a8fd28c2bf5167d14f57d6c607314bfc48d4358a59d3ef5c43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 30de55f9e55911290750c148621fd3d4531686c2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718609"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680865"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Komprimera stora dokument som genereras i elektronisk rapportering 
 
 [!include [banner](../includes/banner.md)]
 
-Du kan använda det [ramverket för elektronisk rapportering (ER)](general-electronic-reporting.md) för att konfigurera en lösning som hämtar transaktionsdata för att generera ett utgående dokument. Det genererade dokumentet kan vara ganska stort. När den här typen av dokument genereras [används AOS-minnet (programobjektservern)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) för att förvara det. Vid något tillfälle måste dokumentet hämtas från din Microsoft Dynamics 365 Finance-app. För närvarande är den maximala storleken för ett enstaka dokument som genereras i ER till 2 gigabyte (GB). Dessutom [begränsar](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) Finance för närvarande storleken på en hämtad fil till 1 GB. Därför måste du konfigurera en ER-lösning som minskar sannolikheten för att dessa begränsningar överskrids och att du får undantaget **Strömmen var för lång**, eller som **Överfyllnad eller underfyllnad i den aritmetiska operationen**.
+Du kan använda det [ramverket för elektronisk rapportering (ER)](general-electronic-reporting.md) för att konfigurera en lösning som hämtar transaktionsdata för att generera ett utgående dokument. Det genererade dokumentet kan vara ganska stort. När den här typen av dokument genereras [används AOS-minnet (programobjektservern)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations) för att förvara det. Vid något tillfälle måste dokumentet hämtas från din Microsoft Dynamics 365 Finance-app. För närvarande är den maximala storleken för ett enstaka dokument som genereras i ER till 2 gigabyte (GB). Dessutom [begränsar](https://fix.lcs.dynamics.com/Issue/Details?bugId=489291) Finance för närvarande storleken på en hämtad fil till 1 GB. Därför måste du konfigurera en ER-lösning som minskar sannolikheten för att dessa begränsningar överskrids och att du får undantaget **Strömmen var för lång**, eller som **Överfyllnad eller underfyllnad i den aritmetiska operationen**.
 
 När du konfigurerar en lösning kan du justera ditt ER-format i operationsdesigner genom att lägga till ett rotelement i typen **Mapp** för att komprimera innehållet som genereras av något av dess kapslade element. Komprimeringen fungerar "i rätt tid", så att högsta minnesanvändning och storleken på den fil som ska hämtas kan minskas.
 
@@ -55,7 +57,7 @@ Innan du slutför procedurerna i detta ämne måste följande steg vara slutför
 1. [Kör det importerade formatet](er-defer-xml-element.md#run-the-imported-format).
 2. Observera att storleken på det genererade dokumentet i XML-format är 3 kilobyte (KB).
 
-    ![Förhandsversion av det okomprimerade utgående dokumentet.](./media/er-compress-outbound-files1.png)
+    ![Förhandsversion av det okomprimerade utgående dokumentet](./media/er-compress-outbound-files1.png)
 
 ### <a name="modify-the-format-to-compress-the-generated-output"></a>Ändra formatet för att komprimera genererade utdata
 
@@ -80,7 +82,7 @@ Innan du slutför procedurerna i detta ämne måste följande steg vara slutför
     > [!NOTE] 
     > Komprimeringsförhållandet för XML-filen som den här zip-filen innehåller är 87 procent. Komprimeringsförhållandet beror på vilka data som komprimeras.
 
-    ![Förhandsversion av det komprimerade utgående dokumentet.](./media/er-compress-outbound-files2.png)
+    ![Förhandsversion av det komprimerade utgående dokumentet](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
 > Om ER [destinationen](electronic-reporting-destinations.md) har konfigurerats för det formatelement som genererar utdata (elementet **rapport** i det här exemplet), kommer komprimeringen av utdata att kringgås.
@@ -92,6 +94,3 @@ Innan du slutför procedurerna i detta ämne måste följande steg vara slutför
 [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 
 [Skjuta upp körningen av XML-element i ER-format](er-defer-xml-element.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

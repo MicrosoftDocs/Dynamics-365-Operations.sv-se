@@ -1,32 +1,30 @@
 ---
 title: Spara uppgiftsguider i LCS och spela upp dem igen
 description: Det här avsnittet beskriver hur du sparar uppgiftsguider till Microsoft Dynamics Lifecycle Services (LCS) och sedan spelar upp dem igen.
-author: twheeloc
-ms.date: 08/23/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 54251aed1a54f626e5cd6cbd983e3eb4589a02e8
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b55937c0867117809471f50f1987f7bf12a4b25d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068369"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420597"
 ---
 # <a name="save-task-guides-to-lcs-and-replay-them"></a>Spara uppgiftsguider i LCS och spela upp dem igen
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Miljöinformation** 
 
@@ -34,7 +32,7 @@ Microsoft Dynamics 365 Human Resources som distribuerades via Microsoft Dynamics
 
 **Utleverans**
 
-Kunden vill spara nya uppgiftsinspelningar till LCS-projektet och sedan spela upp de sparade uppgiftsguiderna.
+Kunden vill spara nya uppgiftsinspelningar till hans eller hennes LCS-projekt och sedan spela upp de sparade uppgiftsguiderna.
 
 **Upplösning**
 
@@ -55,7 +53,7 @@ Följ dessa steg om du vill spara en uppgiftsinspelning till LCS.
 10. Skapa en uppgiftsinspelning.
 11. När du är klar, välj **Spara till Lifecycle Services**.
 
-    ![Spara till Lifecycle Services.](media/task-guides.png)
+    ![Spara till Lifecycle Services](media/task-guides.png)
 
 12. Välj BPM-bibliotek och nod att spara uppgiftsinspelningen till.
 
@@ -65,6 +63,3 @@ Följ dessa steg för att spela upp en uppgiftsguide från LCS.
 2. Välj **Öppna från LCS**.
 3. Markera biblioteket och BPM-noden som har den sparade uppgiftsguiden.
 4. Öppna uppgiftsguiden.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Automatisera testning med elektronisk rapportering
 description: I det här avsnittet beskrivs hur du kan använda baslinjefunktionen för elektronik rapportering (ER) för att automatisera testning av funktioner.
 author: NickSelin
+manager: AnnBe
 ms.date: 07/02/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERFormatBaselineTable, ERFormatMappingRunLogTable, ERParameters
 audience: Application User, Developer, IT Pro
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: da69cc903197dbfae536c8494f126074c51aa77f9522d57f2673c97b1e682d9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a2586afd56eef0f953454ad246ff3647a5b09d1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749810"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681458"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatisera testning med elektronisk rapportering
 
@@ -59,7 +61,7 @@ Innan du kan slutföra uppgifterna i detta ämne måste du slutföra följande f
 - Distribuera en topologi som stöder testautomatisering. Du måste ha tillgång till instansen av denna topologi för rollen **systemadministratör**. Den här topologin måste innehålla de demodata som ska användas i det här exemplet. Mer information finns i [distribuera och använd en miljö som stöder kontinuerlig automatisering av bygga och testa](../perf-test/continuous-build-test-automation.md).
 - Om du vill köra acceptans- och integrationstest automatiskt måste du installera RSAT i den topologi som du använder och konfigurera det på lämpligt sätt. Information om hur du installerar och konfigurerar RSAT och konfigurerar den för att fungera med Finance and Operations och Azure DevOps finns i [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Var uppmärksam på förutsättningarna för att använda verktyget. Följande illustration visar ett exempel på RSAT-inställningar. Den blå rektangeln innesluter parametrarna som anger åtkomsten till Azure DevOps. Den gröna rektangeln innesluter parametrarna som anger åtkomsten till instansen.
 
-    ![RSAT-inställningar.](media/GER-Configure.png "Skärmbild av dialogrutan RSAT-inställningar")
+    ![RSAT-inställningar](media/GER-Configure.png "Skärmbild av dialogrutan RSAT-inställningar")
 
 - Om du vill ordna testfall i paket som hjälper till att garantera korrekt körningsordning så att du kan samla in loggar över testkörningar för vidare rapportering och utredning måste du ha åtkomst till Azure DevOps från den distribuerade topologin.
 - Om du vill slutföra exemplet i det här avsnittet rekommenderar vi att du hämtar [ER-användning för test av RSAT](https://go.microsoft.com/fwlink/?linkid=874684). Zip-filen innehåller följande uppgiftsguider:
@@ -78,7 +80,7 @@ Innan du kan slutföra uppgifterna i detta ämne måste du slutföra följande f
     - **Betalningsmodellmappnning 1611** Mappningskonfiguration för ER-modell
     - **BACS (UK)** ER-formatkonfiguration
 
-    ![Konfigurationer för elektronisk rapportering.](media/GER-Configurations.png "Skärmbild av sidan Konfigurationer i elektroniskt rapportering")
+    ![Konfigurationer för elektronisk rapportering](media/GER-Configurations.png "Skärmbild av sidan Konfigurationer i elektroniskt rapportering")
 
 3. Välj demoföretaget **GBSI** som har kontexten land/region i Storbritannien.
 4. Konfigurera parametrar för leverantörsreskontra:
@@ -90,7 +92,7 @@ Innan du kan slutföra uppgifterna i detta ämne måste du slutföra följande f
         1. På snabbfliken **filformat** ställer du in alternativet **Allmänt elektroniskt exportformat** till **Ja**.
         2. I fältet **Exportera formatkonfiguration** väljer du **BACS (UK)**.
 
-    ![Sidan Betalningsmetoder.](media/GER-APParameters.png "Skärmbild av sidan betalningsmetoder")
+    ![Sidan Betalningsmetoder](media/GER-APParameters.png "Skärmbild av sidan betalningsmetoder")
 
     > [!NOTE]
     > Om du har den härledda versionen av det här ER-formatet som har skapats för anpassningar kan du välja den här konfigurationen i betalningsmetoden **elektronisk**.
@@ -100,7 +102,7 @@ Innan du kan slutföra uppgifterna i detta ämne måste du slutföra följande f
     1. Gå till **Leverantörsreskontra \> Betalningar \> Betalningsjournal**.
     2. Kontrollera att du inte har bokfört betalningsjournalen.
 
-        ![Sidan betalningsjournal.](media/GER-APJournal.png "Skärmbild av sidan betalningsjournal")
+        ![Sidan betalningsjournal](media/GER-APJournal.png "Skärmbild av sidan betalningsjournal")
 
     3. Välj **rader** och ange en rad med följande information.
 
@@ -113,7 +115,7 @@ Innan du kan slutföra uppgifterna i detta ämne måste du slutföra följande f
         | Motkonto      | GBSI-OPERATION       |
         | Betalningsmetod   | Elektronisk      |
 
-    ![Sidan Leverantörsbetalningar.](media/GER-APJournalLines.png "Skärmbild av sidan leverantörsbetalningar")
+    ![Sidan Leverantörsbetalningar](media/GER-APJournalLines.png "Skärmbild av sidan leverantörsbetalningar")
 
 ## <a name="prepare-the-er-framework-to-test-vendor-payment-processing"></a>Förbered ER-ramverket för att testa bearbetning av leverantörsbetalning
 
@@ -122,7 +124,7 @@ Innan du kan slutföra uppgifterna i detta ämne måste du slutföra följande f
 1. Gå till **Organisationsadministration \> Elektronisk rapportering \> Parametrar för elektronisk rapportering**.
 2. På fliken **Bilagor** i fältet **Baslinje**, välj **Fil** som dokumenttyp som ramverket dokumenthantering (DM) använder för att behålla dokument som är relaterade till baslinjefunktioner som DM-bilagor.
 
-    ![Sida för parametrar för elektronisk rapportering.](media/GER-ERParameters.png "Skärmbild av sidan parametrar för elektronisk rapportering")
+    ![Sida för parametrar för elektronisk rapportering](media/GER-ERParameters.png "Skärmbild av sidan parametrar för elektronisk rapportering")
 
 ### <a name="generate-baseline-copies-of-vendor-paymentrelated-documents"></a>Generera baslinjekopior av dokument relaterade till leverantörsbetalningar
 
@@ -139,7 +141,7 @@ Innan du kan slutföra uppgifterna i detta ämne måste du slutföra följande f
     - **Fil** betalningsfil i textformat
     - **ERVendOutPaymControlReport** kontrollrapportfil i XLSX-format
 
-    ![Extraherade filer.](media/GER-APJournalProcessed.png "Skärmbild av extraherade filnamn i Utforskaren i Windows")
+    ![Extraherade filer](media/GER-APJournalProcessed.png "Skärmbild av extraherade filnamn i Utforskaren i Windows")
 
 ### <a name="turn-on-the-er-baseline-feature"></a>Aktivera funktionen för ER-baslinje
 
@@ -177,7 +179,7 @@ Genom att aktivera parametern **kör i felsökningsläge** tvingar du ER-ramverk
     3. Bläddra för att välja den lokalt sparade kontrollrapportfilen **ERVendOutPaymControlReport** i XLSX-format.
     4. I fältet **Beskrivning**, ange **XLSX-kontrollrapport för betalning**.
 
-    ![Baslinjer för leverantörsbetalningsfilen och kontrollrapporten.](media/GER-BaselineAttachments.png "Skärmbild av sidan konfigurationer med rapporten XLSX-kontroll för betalning vald")
+    ![Baslinjer för leverantörsbetalningsfilen och kontrollrapporten:](media/GER-BaselineAttachments.png "Skärmbild av sidan konfigurationer med rapporten XLSX-kontroll för betalning vald")
 
 8. Stäng sidan.
 9. På snabbfliken **Baslinjer** väljer du **Ny** för att konfigurera en baslinje för betalningsfilen:
@@ -196,7 +198,7 @@ Genom att aktivera parametern **kör i felsökningsläge** tvingar du ER-ramverk
     4. I fältet **Filnamnsmask** anger du **\*.XLSX** för att endast använda den här baslinjen till utdata för den **ERVendOutPaymControlReport** formatkomponent som har filnamnstillägget **.xslx**.
     5. I fältet **baslinje** väljer du **XLSX-kontrollrapport för betalning** så att denna baslinje används för jämförelse med den genererade utdata.
 
-    ![Snabbfliken Baslinjer på sidan Konfigurationer.](media/GER-BaselineRules.png "Skärmbild av snabbfliken Baslinjer på sidan Konfigurationer")
+    ![Snabbfliken Baslinjer på sidan Konfigurationer](media/GER-BaselineRules.png "Skärmbild av snabbfliken Baslinjer på sidan Konfigurationer")
 
 ## <a name="record-tests-to-validate-vendor-payment-processing"></a>Registrera tester för att validera bearbetning av leverantörsbetalning
 
@@ -226,15 +228,15 @@ Den här uppgiftsinspelningen utför följande åtgärder:
 
 1. Ställ in status för den bearbetade betalningsraden till **ingen**.
 
-    ![Uppgiftsinspelning av steg 3 till 4.](media/GER-Recording1Review1.png "Skärmbild av uppgiftsinspelning steg 3 till 4")
+    ![Uppgiftsinspelning av steg 3 till 4](media/GER-Recording1Review1.png "Skärmbild av uppgiftsinspelning steg 3 till 4")
 
 2. Aktivera ER-användarparametern **kör i felsökningsläge**.
 
-    ![Uppgiftsinspelning av steg 9 till 10.](media/GER-Recording1Review2.png "Skärmbild av uppgiftsinspelning steg 9 till 10")
+    ![Uppgiftsinspelning av steg 9 till 10](media/GER-Recording1Review2.png "Skärmbild av uppgiftsinspelning steg 9 till 10")
 
 3. Rensa upp ER-felsökningsloggen som innehåller resultaten av jämförelsen mellan skapade filer till baslinjer.
 
-    ![Uppgiftsinspelning av steg 13 till 15.](media/GER-Recording1Review3.png "Skärmbild av uppgiftsinspelning steg 13 till 15")
+    ![Uppgiftsinspelning av steg 13 till 15](media/GER-Recording1Review3.png "Skärmbild av uppgiftsinspelning steg 13 till 15")
 
 ### <a name="record-the-steps-to-test-vendor-payment-processing"></a>Registrera stegen för att testa bearbetning av leverantörsbetalning
 
@@ -253,21 +255,21 @@ Den här uppgiftsinspelningen utför följande åtgärder:
 1. Starta bearbetning av leverantörsbetalningar
 2. Välj korrekta körningsparametrar och aktivera genereringen av en kontrollrapport.
 
-    ![Uppgiftsinspelning av steg 3 till 8.](media/GER-Recording2Review1.png "Skärmbild av uppgiftsinspelning steg 3 till 8")
+    ![Uppgiftsinspelning av steg 3 till 8](media/GER-Recording2Review1.png "Skärmbild av uppgiftsinspelning steg 3 till 8")
 
 3. Få åtkomst till ER-felsökningsloggen för att spela in av jämförelsen mellan skapade utdata till motsvarande baslinjer.
 
     I ER-felsökningsloggen visas resultatet av jämförelsen i fältet **Genererad text**. Fälten **Formatkomponent** och **Formatsökväg som orsakade en loggpost** refererar till den filkomponent för vilken den genererade utdata har jämförts med baslinjen.
 
-    ![Poster på sidan för körningsloggar för elektronisk rapportering.](media/GER-ERDebugLog.png "Skärmbild av poster i körningsloggar för elektronisk rapportering")
+    ![Poster på sidan elektronisk rapportering körningsloggarna](media/GER-ERDebugLog.png "Skärmbild av poster i körningsloggar för elektronisk rapportering")
 
 4. Jämförelsen mellan aktuella utdata för baslinjen registreras genom att du **validerar** alternativet uppgiftsinspelaren och väljer **aktuellt värde**.
 
-    ![Använda alternativet Validera för jämförelse med det aktuella värdet.](media/GER-TRRecordValidation.png "Skärmbild för användning av alternativet Validera för jämförelse med det aktuella värdet")
+    ![Använda alternativet Validera för jämförelse med det aktuella värdet](media/GER-TRRecordValidation.png "Skärmbild för användning av alternativet Validera för jämförelse med det aktuella värdet")
 
     Följande illustration visar hur de inspelade valideringsstegen ser ut i uppgiftsinspelningen.
 
-    ![Uppgiftsinspelning av steg 13 till 15.](media/GER-Recording2Review2.png "Skärmbild av uppgiftsinspelning steg 13 till 15")
+    ![Uppgiftsinspelning av steg 13 till 15](media/GER-Recording2Review2.png "Skärmbild av uppgiftsinspelning steg 13 till 15")
 
 ## <a name="add-the-recorded-tests-to-azure-devops"></a>Lägg till de registrerade testerna i Azure DevOps
 
@@ -284,7 +286,7 @@ Den här uppgiftsinspelningen utför följande åtgärder:
     1. Namnge testfallet **Testa bearbetning av leverantörsbetalningar genom att använda ER-formatet BACS (UK)**.
     2. Bifoga filen **Inspelning.xml** från mappen **Bearbeta** som du hämtade tidigare.
 
-    ![Nytt testärende för den valda testplanen.](media/GER-RSAT-DevOps-Tests-Passed.png "Skärmbild av nya testärenden för den valda testplanen")
+    ![Nytt testärende för den valda testplanen](media/GER-RSAT-DevOps-Tests-Passed.png "Skärmbild av nya testärenden för den valda testplanen")
 
 > [!NOTE]
 > Var uppmärksam på korrekt körningsordning för de tester som läggs till.
@@ -296,14 +298,14 @@ Den här uppgiftsinspelningen utför följande åtgärder:
 1. Öppna det lokala programmet för RSAT i den aktuella topologin.
 2. Välj **Läs in** för att läsa in testerna som för närvarande finns i Azure DevOps i RSAT.
 
-    ![Tester som lästs in i RSAT.](media/GER-RSAT-RSAT-Tests-Loaded.png "Skärmbild av de tester som har lästs in i RSAT")
+    ![Tester som lästs in i RSAT](media/GER-RSAT-RSAT-Tests-Loaded.png "Skärmbild av de tester som har lästs in i RSAT")
 
 ### <a name="create-automation-and-parameters-files"></a>Skapa automatisering och parameterfiler
 
 1. Välj testerna som du har läst in från Azure DevOps i RSAT.
 2. Välj **Ny** för att skapa RSAT automatisering och parameterfiler.
 
-    ![RSAT-automatisering och parameterfiler som skapats i RSAT.](media/GER-RSAT-RSAT-Tests-Initiated.png "Skärmbild av RSAT automatisering och parameterfiler som skapats i RSAT")
+    ![RSAT automatisering och parameterfiler som skapats i RSAT](media/GER-RSAT-RSAT-Tests-Initiated.png "Skärmbild av RSAT automatisering och parameterfiler som skapats i RSAT")
 
 ### <a name="modify-the-parameters-files"></a>Ändra parameterfilerna
 
@@ -315,7 +317,7 @@ Den här uppgiftsinspelningen utför följande åtgärder:
 6. I den Excel-arbetsbok som är öppen, i kalkylbladet **allmänt** ändrar du företagskoden till **GBSI**.
 7. I kalkylbladet **ERFormatMappingRunLogTable** ska du notera att celler A:3 och C:3 innehåller texten i fälten i ER-felsökningsloggtabellen som används för att validera resultaten av jämförelsen av utdata till baslinjen. Dessa texter används för att utvärdera ER-felsökningsloggposter som skapas under testkörningen.
 
-    ![Kalkylbladet ERFormatMappingRunLogTable.](media/GER-RSAT-RSAT-ExcelParameters.png "Skärmbild av kalkylbladet ERFormatMappingRunLogTable")
+    ![ERFormatMappingRunLogTable kalkylblad](media/GER-RSAT-RSAT-ExcelParameters.png "Skärmbild av kalkylbladet ERFormatMappingRunLogTable")
 
 ## <a name="run-the-tests-and-analyze-the-results"></a>Kör testerna och analysera resultaten
 
@@ -330,11 +332,11 @@ Observera att testfall körs automatiskt i appen med hjälp av en webbläsare.
 
 Resultaten från testkörningen lagras i RSAT. Observera att båda testerna godkändes.
 
-![Tester som har godkänts i RSAT.](media/GER-RSAT-RSAT-Tests-Passed.png "Skärmbild av tester som har godkänts i RSAT")
+![Test som har godkänts i RSAT](media/GER-RSAT-RSAT-Tests-Passed.png "Skärmbild av tester som har godkänts i RSAT")
 
 Observera att resultaten av testkörningen också skickas till Azure DevOps så att du kan analysera ytterligare.
 
-![Resultat från testkörningen i Azure DevOps.](media/GER-RSAT-DevOps-Tests-Added.png "Skärmbild av resultaten från testkörningen i Azure DevOps")
+![Resultat från testkörningen i Azure DevOps](media/GER-RSAT-DevOps-Tests-Added.png "Skärmbild av resultaten från testkörningen i Azure DevOps")
 
 ### <a name="simulate-a-situation-where-tests-fail"></a>Simulera en situation där testerna misslyckas
 
@@ -357,15 +359,15 @@ Observera att testfall körs automatiskt i appen med hjälp av en webbläsare.
 
 Resultaten från testkörningen lagras i RSAT. Observera att det andra testet misslyckades under det andra körningsförsöket.
 
-![Misslyckade testresultat i RSAT.](media/GER-RSAT-RSAT-Tests-Failed.png "Skärmbild av misslyckade testresultaten i RSAT")
+![Misslyckade testresultat i RSAT](media/GER-RSAT-RSAT-Tests-Failed.png "Skärmbild av misslyckade testresultaten i RSAT")
 
 Observera att resultaten av testkörningen också skickas till Azure DevOps så att du kan analysera ytterligare.
 
-![Misslyckade testresultat i Azure DevOps.](media/GER-RSAT-DevOps-Tests-Failed.png "Skärmbild av misslyckade testresultaten i Azure DevOps")
+![Misslyckade testresultat i Azure DevOps](media/GER-RSAT-DevOps-Tests-Failed.png "Skärmbild av misslyckade testresultaten i Azure DevOps")
 
 Du får tillgång till status för varje test. Du kan också komma åt körningsloggen så att du analyserar orsakerna till eventuella fel. I följande bild visar körningsloggen att felet uppstod på grund av skillnaden mellan den genererade betalningsfilen och dess baslinje.
 
-![Körningslogg för analys av fel i Azure DevOps.](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Skärmbild av körningsloggen för att analysera fel i Azure DevOps")
+![Körningslogg för analys av fel i Azure DevOps](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Skärmbild av körningsloggen för att analysera fel i Azure DevOps")
 
 Som du har sett kan funktionen för ett ER-format utvärderas automatiskt med hjälp av RSAT som testplattform och med hjälp av testfall som baseras på uppgiftsinspelare som använder funktionen för ER-baslinje.
 
@@ -378,6 +380,3 @@ Som du har sett kan funktionen för ett ER-format utvärderas automatiskt med hj
 - [Spåra genererade rapportresultat och jämför dem med baslinjevärden](er-trace-reports-compare-baseline.md)
 - [ER Uppgradera ditt format genom att implementera en ny basversion för det formatet](tasks/er-upgrade-format.md)
 - [ER importera en konfiguration från Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

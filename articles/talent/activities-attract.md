@@ -91,6 +91,3 @@ Anställningsprocessmallen kräver erbjudandeaktiviten. Om du vill använda appe
 > Appen för integrerad erbjudandehantering är endast tillgänglig med tillägget för omfattande anställning. Mer information finns i [vilken version av Microsoft Dynamics 365 Talent - Attract](./attract-comprehensive-hiring.md).
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

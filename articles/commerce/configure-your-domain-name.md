@@ -1,14 +1,17 @@
 ---
 title: Konfigurera ditt domännamn
-description: I det här avsnittet beskrivs hur du konfigurerar ett domännamn för Microsoft Dynamics 365 näthandelssajt.
+description: I det här avsnittet beskrivs hur du konfigurerar ett domännamn för Microsoft Dynamics 365 näthandelsplats.
 author: psimolin
+manager: AnnBe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,19 +19,19 @@ ms.search.industry: Retail
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9718effc776c64b2912a01972ad986eb332196a4477a952672fb147eaaf400c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ac1b0c8baaddd6ca62cc49657fff364df21c14f2
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719511"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517142"
 ---
 # <a name="configure-your-domain-name"></a>Konfigurera ditt domännamn
 
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du konfigurerar ett domännamn för Microsoft Dynamics 365 näthandelssajt. 
+I det här avsnittet beskrivs hur du konfigurerar ett domännamn för Microsoft Dynamics 365 näthandelsplats. 
 
 ## <a name="add-domains-during-e-commerce-initialization"></a>Lägg till domäner vid näthandelsinitiering
 
@@ -42,7 +45,7 @@ Om du vill koppla nya domäner till din näthandelsmiljö efter näthandelsiniti
 
 [Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md)
 
-[Skapa en näthandelssajt](create-ecommerce-site.md)
+[Skapa en näthandelsplats](create-ecommerce-site.md)
 
 [Associera en Dynamics 365 Commerce-webbplats med en onlinekanal](associate-site-online-store.md)
 
@@ -59,6 +62,3 @@ Om du vill koppla nya domäner till din näthandelsmiljö efter näthandelsiniti
 [Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)
 
 [Aktivera platsbaserad butiksdetektering](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

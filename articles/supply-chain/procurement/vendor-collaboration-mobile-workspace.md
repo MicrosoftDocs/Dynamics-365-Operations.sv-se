@@ -1,25 +1,27 @@
 ---
 title: Mobil arbetsyta för leverantörssamarbete
 description: Det här avsnittet innehåller information om den mobila arbetsytan för leverantörssamarbete. Den här arbetsytan hjälper till att hålla dina leverantörer uppdaterade om de inköpsorder som har skickats till dem för godkännande. De kan också visa information om nya och uppdaterade inköpsorder och kontakter.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
-ms.author: henrikan
+ms.author: riluan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: efbd0afb0d84f76058b75126af200a9b10197559
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5cd8a2b2db7147aca6bdc29ba15d99a619ddb4f8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577034"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020846"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobil arbetsyta för leverantörssamarbete
 
@@ -57,7 +59,7 @@ Med hjälp av den mobila arbetsytan **Leverantörssamarbete** kan en leverantör
 Kraven varierar beroende på versionen av Microsoft Dynamics 365 som har distribuerats i organisationen.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Förutsättningar om du använder Supply Chain Management
-Om Supply Chain Management används inom din organisation måste systemadministratören publicera den mobila arbetsytan **Leverantörssamarbete**. Instruktioner finns i [Publicera en mobil arbetsyta](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Om Supply Chain Management används inom din organisation måste systemadministratören publicera den mobila arbetsytan **Leverantörssamarbete**. Instruktioner finns i [Publicera en mobil arbetsyta](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdateringen 3 eller senare
 Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 
@@ -77,7 +79,7 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 <td>KB 3216943 är en binär uppdatering som krävs om du använder plattformsuppdatering 3. Om du vill implementera denna KB måste systemadministratören göra följande:
 <ol>
 <li>Ladda ned KB 3216943 från Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li>Installera den binära uppdateringen som levereras som ett distribuerbart paket. Information om hur du installerar ett distribuerbart paket hittar du under <a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Tillämpa ett distribuerbart paket</a>.</li>
+<li>Installera den binära uppdateringen som levereras som ett distribuerbart paket. Information om hur du installerar ett distribuerbart paket hittar du under <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Tillämpa ett distribuerbart paket</a>.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -85,14 +87,14 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 <td>Systemadministratör</td>
 <td>KB 4013633 är en X++ -uppdatering eller snabbkorrigering av metadata som innehåller den mobila arbetsytan för <strong>lagerbehållning</strong>. Om du vill implementera KB 4013633 måste systemadministratören göra följande.
 <ol>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Hämta snabbkorrigeringen för metadata från LCS</a>.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Snabbkorrigering av metadata</a>.</li><li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Skapa ett driftfärdigt paket </a> som innehåller modellerna <strong>SCMMobile</strong> och modellen och överför sedan det driftfärdiga paketet till LCS. </li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Tillämpa ett distribuerbart paket</a></li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Hämta snabbkorrigeringen för metadata från LCS</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Snabbkorrigering av metadata</a>.</li><li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Skapa ett driftfärdigt paket </a> som innehåller modellerna <strong>SCMMobile</strong> och modellen och överför sedan det driftfärdiga paketet till LCS. </li>
+<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Tillämpa ett distribuerbart paket</a></li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Den mobila arbetsytan <strong>Leverantörssamarbete</strong> måste publiceras.</td><td>Systemadministratör</td>
-<td>Se <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Publicera en mobil arbetsyta</a>.</td>
+<td>Se <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publicera en mobil arbetsyta</a>.</td>
 </tr>
 <tr class="even">
 <td>Leverantörsanvändaren måste har tillgång till webbgränssnittet för leverantörssamarbete webbklienten och måste ställa in en leverantörssamarbetesanvändare.</td><td>Inköpsansvariga och systemadministratör</td>
@@ -120,12 +122,12 @@ Hämta och installera mobilappen Finance and Operations.
 4.  Första gången du loggar in uppmanas du att ange användarnamn och lösenord. Ange dina autentiseringsuppgifter.
 5.  När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.
 
-    [![Dra nedåt för att uppdatera.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Använda den mobila arbetsytan för leverantörssamarbete
 När du väljer den mobila arbetsytan **Leverantörssamarbete** visas följande alternativ:
 
-![Mobil arbetsyta för leverantörssamarbete.](./media/vendor-collaboration-mobile-app.png)
+![Mobil arbetsyta för leverantörssamarbete](./media/vendor-collaboration-mobile-app.png)
 
 Arbetsytan **Leverantörssamarbete** omfattar följande sidor:
 
@@ -167,6 +169,3 @@ All ändringar som har gjorts av responsen på orderraden visas. Dock visas inte
 
 ### <a name="open-confirmed-orders"></a>Öppna bekräftade order
 När inköpsordern har bekräftats av kunden (dvs. när statusen för inköpsordern har ändrats till **Bekräftad**) visas den i den öppna bekräftade ordern. Den finns kvar i listan tills den registreras som mottagen av kunden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

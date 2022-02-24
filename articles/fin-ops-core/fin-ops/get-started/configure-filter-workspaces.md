@@ -2,9 +2,11 @@
 title: Konfigurera och filtrera arbetsytor
 description: Det här avsnittet innehåller en översikt över hur du konfigurerar och filtrerar arbetsytor.
 author: jasongre
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace, HcmBenefitWorkspace, BudgetPlanningWorkspace, BusinessProcessGenericWorkspace, RetailCatalogManagementWorkspace, RetailCategoryAndProductWorkspace, RetailChannelManagementWorkspace, HcmCompensationWorkspace, CAMCostAccountingLedgerAdminWorkspace, CostAdminWorkspace, CostAnalysisWorkspace, CAMCostControlWorkspace, CustomerCollectionManagerWorkspace, CustomerInvoiceWorkspace, CustPaymentWorkspace, DataManagementWorkspace, DataValidationWorkspace, ERWorkspace, LedgerPeriodCloseProjectWorkspace, AssetWorkspace, GeneralJournalEntryWorkspace, VendVendorPortalInvoiceWorkspace, BudgetTrackingWorkspace, ReqCreatePlanWorkspace, BusinessProcessGenericOwnerWorkspace, SelfHealingWorkspace, WHSOutboundWorkMonitoringWorkspace, WHSWavePlanningWorkspace, PayrollWorkspace, HcmWorkforceWorkspace, RetailDiscountPricingWorkspace, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, EcoResProductVariantMaintainWorkspace, JmgShopSupervisorWorkspace, ProjProjectManagementWorkspace, VendVendorPortalWorkspace, PurchOrderMaintainWorkspace, PurchOrderProcessReceiptsWorkspace, HcmRecruitmentWorkspace, EcoResProductMaintainWorkspace, FMClerkWorkspace, OpResLifecycleManagementWorkspace, RetailITWorkspace, RetailChannelOperationsWorkspace, RetailStoreManagementWorkspace, SalesOrderProcessingWorkspace, SalesReturnWorkspace, SystemAdministrationWorkspaceForm, VendVendorRequestForQuotationsWorkspace, VendVendorProfileManagementWorkspace, VendInvoiceWorkspace, VendPaymentWorkspace
 audience: Application User
@@ -15,19 +17,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e96b61457f222836d50a75ed15305c3c1267600c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 10f7e790fdab3866958af1fa131d25735f69a58c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068744"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798461"
 ---
 # <a name="configure-and-filter-workspaces"></a>Konfigurera och filtrera arbetsytor
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Det här avsnittet innehåller en översikt över hur du konfigurerar och filtrerar arbetsytor.
 
@@ -35,11 +34,11 @@ Det här avsnittet innehåller en översikt över hur du konfigurerar och filtre
 
 Du kan ändra utseende och beteende för vissa arbetsyto r genom att uppdatera inställningar som gäller för hela arbetsytan. När en arbetsyta kan konfigureras innehåller åtgärdsfönstret en knapp med en uppmaning till dig om att klicka på det för att göra konfigurationsändringar. I exemplet i illustrationen nedan heter knappen **Konfigurera min arbetsyta**.
 
-[![konfigurera-och-filtrera-arbetsytor.](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
+[![konfigurera-och-filtrera-arbetsytor](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
 
 När du klickar på knappen visas en dialogruta där du kan ändra de fördefinierade inställningarna för arbetsytan. De specifika inställningarna som du ser i den här dialogrutan varierar efter arbetsytan och beror på vilka specifika kontroller och affärsdata som är tillgängliga på arbetsytan.
 
-[![konfigurera-min-arbetsyta.](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
+[![konfigurera-min-arbetsyta](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
 
 ## <a name="filtering-a-workspace"></a>Filtrera en arbetsyta
 
@@ -49,11 +48,11 @@ Många arbetsytor möjliggör filtrering av innehållet som visas i dem. Kontrol
 
 Du kan filtrera hela arbetsytan genom att använda ett filter för hela arbetsytan. Ett filter för hela arbetsytan visas i det övre vänstra hörnet på arbetsytan. När du väljer ett visst värde i filtrets listruta filtreras innehållet på arbetsytan baserat på det valet.
 
-[![filter-för-arbetsyta.](./media/workspace-filter.png)](./media/workspace-filter.png)
+[![filter-för-arbetsyta](./media/workspace-filter.png)](./media/workspace-filter.png)
 
 När du klickar för att öppna filtret visas flera alternativ.
 
-[![expanderat-filter-för-arbetsyta.](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
+[![expanderat-filter-för-arbetsyta](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
 
 Välj ett alternativ för att filtrera arbetsytan utifrån det alternativet.
 
@@ -61,9 +60,6 @@ Välj ett alternativ för att filtrera arbetsytan utifrån det alternativet.
 
 Om enskilda avsnitt i arbetsytan har filter kan du filtrera varje avsnitt separat. I följande illustration är filtret (fältet som innehåller texten Filter) ett exempel på ett filter för fritextfält.
 
-[![avsnittsfilter-för-arbetsyta.](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
+[![avsnittsfilter-för-arbetsyta](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Välj eller ange ett värde i fältet för att filtrera innehållet i avsnittet på samma sätt som med filtret för hela arbetsytan.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

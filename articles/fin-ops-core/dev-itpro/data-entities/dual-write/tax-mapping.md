@@ -1,24 +1,35 @@
 ---
 title: Integrerad moms
-description: I det här avsnittet beskrivs integreringen av momsdata mellan Finance and Operations och Dataverse.
-author: tonyafehr
+description: I det här avsnittet beskrivs integreringen av skattedata mellan Finance and Operations och Dataverse.
+author: robinarh
+manager: AnnBe
 ms.date: 09/06/2019
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.author: tfehr
+ms.search.industry: ''
+ms.author: rhaertle
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 532e6603b74ad0293d65684d2d6858ef31fbc496
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 14c22dd6602b5fbf866c8dc6b057f6c8acb1f48f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063197"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679306"
 ---
 # <a name="integrated-tax"></a>Integrerad moms
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -28,14 +39,30 @@ Momsinställningsdata definierar inställningen för både indirekta skatter (GS
 
 Momsdata inkluderar en samling tabellmappningar som fungerar tillsammans under kunddatainteraktion, som visas i följande tabell.
 
-| Finance and Operations-appar | Kundengagemangsappar | Beskrivning |
-|-----------------------------|-----------------------------------|-------------|
-[Artikelmomsgrupp](mapping-reference.md#196) | msdyn_taxitemgroups | |
-[Skattemyndigheter](mapping-reference.md#193) | msdyn_taxauthorities | |
-[Momsbefrielsekod CDS](mapping-reference.md#194) | msdyn_taxexemptcodes | |
-[Momsgrupper](mapping-reference.md#195) | msdyn_taxgroups | |
-[Bokföringsgrupper V2 för momsredovisning](mapping-reference.md#197) | msdyn_taxpostinggroups | |
-[Källskattekoder](mapping-reference.md#210) | msdyn_withholdingtaxcodes | |
-[Källskattegrupper](mapping-reference.md#211) | msdyn_withholdingtaxgroups | |
+Finance and Operations-appar | Modellstyrda appar i Dynamics 365 | beskrivning |
+-------------------------|---------------------------------|----|
+Artikelmomsgrupp | msdyn_taxitemgroups |
+Skattemyndigheter | msdyn_taxauthorities |
+Momsbefrielsekod CDS | msdyn_taxexemptcodes |
+Momsgrupper | msdyn_taxgroups |
+Bokföringsgrupper V2 för momsredovisning | msdyn_taxpostinggroups |
+Källskattekoder | msdyn_withholdingtaxcodes |
+Källskattegrupper | msdyn_withholdingtaxgroups | 
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+
+[!include [banner](../../includes/dual-write-symbols.md)]
+
+[!include [Tax item groups](includes/TaxItemGroupHeadings-msdyn-taxitemgroups.md)]
+
+[!include [Tax Authorities](includes/SalesTaxAuthorities-msdyn-taxauthorities.md)]
+
+[!include [Tax Exemptions](includes/CdsTaxExemptCodes-msdyn-taxexemptcodes.md)]
+
+[!include [Tax groups](includes/TaxGroupEntity-msdyn-taxgroups.md)]
+
+[!include [Tax Ledger Account Group](includes/TaxPostingGroupsV2--msdyn-taxpostinggroups.md)]
+
+[!include [Withholding tax codes](includes/WithholdingCode-msdyn-withholdingtaxcodes.md)]
+
+[!include [Withholding tax groups](includes/WithholdingGroups-msdyn-withholdingtaxgroups.md)]
+

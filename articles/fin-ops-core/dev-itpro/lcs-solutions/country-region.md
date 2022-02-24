@@ -1,32 +1,34 @@
 ---
 title: Globaliseringsresurser
 description: Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika funktioner och erbjudanden.
-author: kfend
-ms.date: 02/19/2021
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: sericks
 ms.custom: 104173
 ms.search.region: Global
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8ee422b2bdc8b94c2a465d0e48f5da983a410674
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747525"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685063"
 ---
 # <a name="globalization-resources"></a>Globaliseringsresurser
 
 ## <a name="local-and-regional-deployments"></a>Lokala och regionala distributioner
 Om dina myndighetsregleringar kräver att data lagras på ett annat sätt eller att de underhålls på ett annat sätt vad som krävs för andra länder/regioner, kan det finnas lands-/regionspecifika krav som du måste ta hänsyn till under distributionen. Följande resurser kan vara relevanta för dig:
 
-[Finance and Operations-apparna av 21Vianet i Kina](../deployment/china-local-deployment.md)
+[Finance and Operations-appar som drivs av 21Vianet i Kina](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## <a name="localization-and-regulatory-features"></a>Lokaliserings- och regelfunktioner
 
@@ -53,6 +55,7 @@ Följande resurser innehåller information om planerade och nya lokaliseringsfun
 
 #### <a name="regulatory-updates"></a>Regeluppdateringar
 -   [Regeluppdateringar](../../../finance/localizations/regulatory-updates.md)
+-   [Lokaliseringsportal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (uppdateras en gång i veckan)
 -   [Problemsökning i Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (uppdateras dagligen)
 
 #### <a name="communication-and-alerts"></a>Kommunikation och notifieringar
@@ -60,7 +63,7 @@ Följande resurser innehåller information om planerade och nya lokaliseringsfun
 -   [Skicka notifieringar om lands-/regionspecifika regelfunktioner](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Utgivningsplaner för Dynamics 365
-[Utgivningsplaner för Dynamics 365](/business-applications-release-notes/) innehåller beskrivningar av förbättrade funktioner som planeras för affärsapparna och applattformen för Dynamics 365. 
+[Utgivningsplaner för Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) innehåller beskrivningar av förbättrade funktioner som planeras för affärsapparna och applattformen för Dynamics 365. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations-appar – Nyheter
 [Nyheter och ändringar på startsidan för Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) innehåller de funktioner som ingår i olika versioner av Finance and Operations-apparna.
@@ -130,6 +133,3 @@ Mer information finns i [hjälpsystemet](../../fin-ops/get-started/help-overview
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -142,6 +142,3 @@ När kandidater ansöker om ett eller flera jobb, kan de välja **Ansökningar**
 ## <a name="internal-jobs"></a>Interna jobb
 
 För närvarande visas jobb som markerats som interna och publicerade på Attract karriärwebbplatsen inte på karriärwebbplatsen. De är endast tillgängliga via den direkta **Ansöknings**-URL:en som kan kopieras från Attract-programmet.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

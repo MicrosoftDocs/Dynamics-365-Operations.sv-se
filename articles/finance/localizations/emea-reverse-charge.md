@@ -2,22 +2,25 @@
 title: Mekanism för omvänd moms för moms/GST-schema
 description: Det här avsnittet beskriver hur du ställer in omvänd moms (VAT) för europeiska länder, Saudiarabien och Singapore.
 author: epodkolz
+manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 247bc64bf0b90a641ead8a21971a6043691762fa
+ms.sourcegitcommit: f12ce34cc08cf1fa205c67f48669ea9a6566b526
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594725"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4515057"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mekanism för omvänd moms för moms/GST-schema
 
@@ -45,6 +48,7 @@ Du måste utföra följande inställningar om du vill använda omvänd moms.
 Vi rekommenderar att du använder olika momskoder för försäljning och inköp.
 
 <table>
+<body>
 <tr>
 <td><strong>Momskoder för försäljning</strong></td>
 <td>Skapa en momskod för försäljningsoperationer med omvänd moms (<strong>Skatt</strong> &gt; <strong>Indirekta skatter</strong> &gt; <strong>Moms</strong> &gt; <strong>Momskoder</strong>).
@@ -61,6 +65,7 @@ Den måste tilldela denna negativa momskod till en artikelmomsgrupp, och däreft
 <p>Mer information om &quot;Ange momsgrupper och artikelmomsgrupper&quot; finns i nästa avsnitt.</p>
 </td>
 </tr>
+</tbody>
 </table>
 
 ## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><a name="sales-tax-item-sales-tax-groups"></a>Ställ in momsgrupper och artikelmomsgrupper
@@ -119,7 +124,7 @@ När en inköpsfaktura med omvänd moms bokförs, skapas två momstransaktioner.
 
 I följande skärmbild har en transaktion riktningen **Momsfordran** och den andra transaktionen har riktningen **Momsskuld**. 
 
-![Bokförd moms.](media/apac-sau-posted-sales-tax.png)
+![Bokförd moms](media/apac-sau-posted-sales-tax.png)
 
 ## <a name="enable-reverse-charge-mechanism-for-vatgst-scheme-feature"></a><a name="enable-reverse-charge"></a>Aktivera funktionen mekanism för omvänd moms för moms/GST-schema
 På arbetsytan **Funktionshantering** söker du reda på funktionen och väljer **Aktivera**.
@@ -132,6 +137,3 @@ Följande sidor och menyobjekt som är relaterade till funktionsinställningar �
  - **Utländska handelsparametrar** (**Skatt** > **Inställning** > **Moms** > **Utlandshandel** > **Utländska handelsparametrar**). Se [Ställa in egenskaper för land/region](#Set-up-Country/region-properties).
 
 Kryssrutan **Omvänd moms** finns på sidorna **Momsgrupp** och **Bokförd moms**. Mer information finns i avsnitten [Ställ in momsgrupper och artikelmomsgrupper](#sales-tax-item-sales-tax-groups), [Omvänd moms på en försäljningsfaktura](#reverse-charge-sale) och [Omvänd moms på en inköpsfaktura](#reverse-charge-purchase).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

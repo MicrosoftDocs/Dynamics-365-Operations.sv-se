@@ -2,9 +2,11 @@
 title: LIFO-datum med fysiskt värde och markering
 description: Sist in, först ut-datum (LIFO-datum) är en lagermodell baserat på LIFO-principen. Utleveranser från lagret kvittas mot de senaste inleveranserna till lagret, baserat på datumet för lagertransaktionen. Genom att använda LIFO-datum, om det inte finns någon inleverans före utleveransen, kvittas utleveransen mot alla eventuella inleveranser som sker efter utleveransen. Flera utleveranser på samma datum kan kvittas i ordningen senaste utleverans - senaste inleverans.
 author: AndersGirke
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 51592
 ms.assetid: d9f13274-3268-444f-85c8-b686fd39286d
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: aevengir
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72e1dab8bbbb830619629d1fb62a89413d388a7f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c2c06443532519ad5d6c36a6f4ed1f1c4d136664
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567569"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967643"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-datum med fysiskt värde och markering
 
@@ -55,9 +57,7 @@ I det här exemplet markeras inte artikelmodellgruppen till att inkludera fysisk
 
 Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet för de ekonomiskt uppdaterade transaktionerna på 150,00 kronor. 
 
-I illustrationen visas effekten av lagermodellen LIFO-data på serien med transaktioner, när alternativet **Inkludera fysiskt värde** inte används. 
-
-![LIFO-datum utan alternativet Inkludera fysiskt värde.](./media/lifodatewithoutincludephysicalvalue.gif) 
+I illustrationen visas effekten av lagermodellen LIFO-data på serien med transaktioner, när alternativet **Inkludera fysiskt värde** inte används. ![LIFO-datum med Inkludera fysiskt värde](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
 
@@ -92,9 +92,7 @@ Illustrationen som följer visar dessa transaktioner:
 
 Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet för de ekonomiskt uppdaterade transaktionerna på 200,00 kronor. 
 
-I illustrationen visas effekten av lagermodellen LIFO på serien med transaktioner, när alternativet **Inkludera fysiskt värde** används. 
-
-![LIFO-datum med alternativet Inkludera fysiskt värde.](./media/lifodatewithincludephysicalvalue.gif) 
+I illustrationen visas effekten av lagermodellen LIFO på serien med transaktioner, när alternativet **Inkludera fysiskt värde** används. ![LIFO-datum med Inkludera fysiskt värde](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
 
@@ -140,7 +138,7 @@ Illustrationen som följer visar dessa transaktioner:
 
 Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 275,00 kronor. 
 
-I illustrationen visas effekten av lagermodellen LIFO på serien med transaktioner, när markering mellan inleveranser och utleveranser används. ![LIFO-datum med markering.](./media/lifodatewithmarking.gif) 
+I illustrationen visas effekten av lagermodellen LIFO på serien med transaktioner, när markering mellan inleveranser och utleveranser används. ![LIFO-datum med Markering](./media/lifodatewithmarking.gif) 
 
 **Förklaringar till bilden**
 
@@ -158,6 +156,3 @@ I illustrationen visas effekten av lagermodellen LIFO på serien med transaktion
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

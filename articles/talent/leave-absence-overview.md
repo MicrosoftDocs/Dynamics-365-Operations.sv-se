@@ -66,6 +66,3 @@ Tjänstledighets- och frånvarohantering innehåller följande funktioner:
 - **Skicka ledighetsansökningar.**
 
     Medarbetare kan skicka ledighetsansökningar mot sina tillgängliga timmar. Ansökningar kan vara enkla endagsansökningar eller flera dagar ansökningar som omfattar flera typer av tjänstledighet och frånvaro. Om ett arbetsflöde inte är aktiverat kommer ansökan att godkännas automatiskt. Om ett arbetsflöde aktiverats kan godkännandet ske automatiskt eller kräva signering, beroende på hur arbetsflödet är inställt.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

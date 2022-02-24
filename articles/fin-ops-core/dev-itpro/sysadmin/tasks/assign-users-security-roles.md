@@ -2,9 +2,11 @@
 title: Tilldela användare till säkerhetsroller
 description: För att öppna Finance and Operations-appar måste användaren tilldelas säkerhetsroller.
 author: Peakerbl
+manager: AnnBe
 ms.date: 05/06/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6d65c4dafda63b7a54dd343652b0f4b498e064f4aee0fba43c34d40d73ac5062
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f78c24e8c2ffe5418ce119e19b7c0193f01f64b8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748346"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679874"
 ---
 # <a name="assign-users-to-security-roles"></a>Tilldela användare till säkerhetsroller
 
@@ -55,6 +57,3 @@ Användare som tilldelas säkerhetsroller manuellt måste också tas bort manuel
 2. I trädet väljer du roll och i menyn **Användare tilldelade till rollen**, väljer du **Tilldela/exkludera användare manuellt**.
 4. I **Tilldela användare till eller exkludera användare från rollen** visas användare som inte har tilldelats roll med **Tilldelningsläge** med inställningen **Ingen**. Välj en eller flera användare som ska tilldelas rollen.
 5. I **Åtgärdsfönstret**, välj **Tilldela till roll**. **Tilldelningsläget** uppdateras till **Manuellt** och användarna har nu fått en ny roll tilldelad.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

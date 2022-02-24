@@ -2,9 +2,11 @@
 title: Importera konfigurationer för att skapa dokument som omfattar programdata
 description: För att slutföra stegen i den här proceduren måste du först slutföra stegen i proceduren "ER Skapa en konfigurationsleverantör och markera den som aktiv".
 author: NickSelin
+manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08ab90d6f53dbb9eabeea3c2cf020792e8957c7b71ed27fc491008fcad114c72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f919d953c3aa0c8d16366167a12e52d35f32cdf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727495"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684629"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Importera konfigurationer för att skapa dokument som omfattar programdata
 
@@ -73,6 +75,3 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
     * Granska strukturen i det format som användes för att skapa Intrastat-rapporten. Observera att det är till för att skapa en XML-fil genom att fylla i data från datamodellen, som baseras på rotobjektet "For outgoing document". Kontrollera att namnet på den skapade filen har definierats i dialogruteformuläret (datakällan "fn" används för det).   
 30. Stäng sidan.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

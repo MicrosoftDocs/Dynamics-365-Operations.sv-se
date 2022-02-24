@@ -2,9 +2,11 @@
 title: Använda filter på en plan
 description: I det här avsnittet beskrivs hur använder filter på en plan när funktionerna för planeringsoptimering används.
 author: ChristianRytt
+manager: tfehr
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 3612dd45a3f4b8c3597c81962a66c21ed14fb206
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: 0e65d04b7b5261ffe72e67ef5321967f7af0ca20
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7729037"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970391"
 ---
 # <a name="apply-filters-to-a-plan"></a>Använda filter på en plan
 
@@ -43,7 +45,7 @@ Ett planfilter är en inställning som omfattar artiklarna A, B och C. Huvudplan
 - **Körningsfilter som innehåller alla poster (tomt filter)** : artiklarna A, B och C inkluderas i planeringskörningen och föregående planeringsresultat för artiklarna A och B skrivs över.
 
 > [!NOTE]
-> Om du anger ett planfilter för den plan som är vald som **aktuell dynamisk huvudplan** på **parametersidan för huvudplanering** begränsas den dynamiska huvudplansfunktionen till filtrerade artiklarna. Om till exempel nettobehoven uppdateras för en artikel som inte ingår i planfiltret, genereras inget resultat.
+> Du bör inte ange ett planfilter för planen som har valts som **Aktuell dynamisk huvudplan** på sidan för **huvudplaneringsparametrar**. Annars kommer funktionen för dynamisk huvudplan att begränsas till de filtrerade artiklarna. Om till exempel nettobehoven uppdateras för en artikel som inte ingår i planfiltret, genereras inget resultat.
 
 ## <a name="related-resources"></a>Relaterade resurser
 
@@ -56,6 +58,3 @@ Ett planfilter är en inställning som omfattar artiklarna A, B och C. Huvudplan
 [Visa planhistorik och planeringsloggar](plan-history-logs.md)
 
 [Annullera ett planeringsjobb](cancel-planning-job.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

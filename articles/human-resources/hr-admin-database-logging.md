@@ -1,33 +1,31 @@
 ---
 title: Konfigurera och hantera databasloggning
 description: Du kan spåra ändringar i register och fält i Dynamics 365 Human Resources med databasloggning.
-author: twheeloc
-ms.date: 12/15/2021
+author: Darinkramer
+manager: AnnBe
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3cbe4c105b14935db6803e4bded0d891c564fb81
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3dc4658a0a13af95978c66f5aab882902f754a2d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066453"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420588"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurera och hantera databasloggning
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan spåra ändringar i register och fält i Dynamics 365 Human Resources med databasloggning. I det här avsnittet beskrivs hur du:
 
@@ -68,22 +66,7 @@ För att förbättra prestanda begränsar du loggposter genom att välja specifi
 Du kan använda guiden **Loggar databasändringar** när du vill konfigurera databasloggning. Med hjälp av guiden kan du på ett flexibelt sätt ställa in loggning för register eller fält.
 
 1. Gå till **Systemadministration > Länkar > Databasen > Inställningar för databaslogg**. Välj **Ny** om du vill starta guiden **Loggar databasändringar**.
-2. Välj **Nästa**. 
-3. På sidan **Tabeller och fälten**, markera de tabeller och fält som du vill aktivera databasloggning på och välj **Nästa**.
-
-   > [!Note]
-   > Databasloggning är inte tillgänglig för alla register i Personal-databasen. Välj **Visa alla tabeller** nedanför listan utvidgas listan med tabeller och fält för att visa alla databastabeller för vilka databasloggning är tillgänglig, men detta kommer att vara en delmängd av den fullständiga listan över databastabeller.
-
-4. På sidan **Typer av ändringar** på sidan för guiden, välj de datafunktioner som du vill spåra ändringar för varje tabell och fält och välj **Nästa**. I tabellen nedan finns en beskrivning av de dataoperationer som är tillgängliga för loggning.
-5. På sidan **Slutför**, granska ändringarna som kommer att göras och välj **Slutför**.
-
-| Operation | beskrivning |
-| -- | -- |
-| Spåra nya transaktioner | Skapa en logg för nya poster som skapas i registret. |
-| Uppdatera | Skapa en logg för uppdateringar av registerposter eller uppdateringar av individuellt valda fält i registret. Om du väljer att logga uppdateringar av registret skapas en loggpost varje gång en uppdatering görs i något av posterna i registret. Om du väljer att logga uppdateringar för specifika fält, skapas en loggpost bara när uppdateringar görs av dessa fält i registerposterna. |
-| Delete | Skapa en logg för poster som raderats från registret. |
-| Ändra namn på nyckel | Skapa en loggpost när du byter namn på en registernyckel. |
-
+2. Slutför guiden.
 
 ## <a name="clean-up-database-logs"></a>Rensa databasloggar
 
@@ -96,14 +79,11 @@ Du kan ta bort alla eller en del av databasloggarna med följande alternativ:
 Följ dessa steg för att ställa in rensning av databaslogg: 
 
 1. Gå till **Systemadministration > Länkar > Databasen > Databaslogg**. Välj **Rensa logg**.
-2. Under **Poster som ska ingår** välj **Filter**.
-3. Välj den metod som ska användas för att välja vilka loggar som ska tas bort. Ange ett av följande alternativ:
+
+2. Välj en metod för att välja loggar att ta bort genom att ange något av följande alternativ:
 
    - Register-ID
    - Typ av logg
-   - Skapades datum och klockslag
+   - Skapat datum och klockslag
 
-4. Använd fliken **Rensning i databasloggen** för att bestämma när loggrensningsuppgiften ska köras. Som standard är databasloggar tillgängliga i 30 dagar.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+3. Använd fliken **Rensning i databasloggen** för att bestämma när loggrensningsuppgiften ska köras. Som standard är databasloggar tillgängliga i 30 dagar.

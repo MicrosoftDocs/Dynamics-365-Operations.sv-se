@@ -2,9 +2,11 @@
 title: Regler för granskningspolicy
 description: Du kan använda granskningsprinciper för att utvärdera utgiftsrapporter, leverantörsfakturor och inköpsorder för att säkerställa att de överensstämmer med policyregler som du skapar. Alla regler som är associerade med en granskningspolicy körs i batchläge enligt en tidsplan som du anger.  Varje policyregel är en instans av en policyregeltyp. Endast en policyregel i taget kan gälla för en policyregeltyp.
 author: panolte
+manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbf93f5b8b2f8d95102a52178b096d7e334894483c0ac0bacc62653aea845022
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 998d4dbabec74528b4acb9e797faef0c449e7c28
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744316"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021251"
 ---
 # <a name="audit-policy-rules"></a>Regler för granskningspolicy
 
@@ -28,7 +30,8 @@ ms.locfileid: "6744316"
 
 Du kan använda granskningsprinciper för att utvärdera utgiftsrapporter, leverantörsfakturor och inköpsorder för att säkerställa att de överensstämmer med policyregler som du skapar. Alla regler som är associerade med en granskningspolicy körs i batchläge enligt en tidsplan som du anger.  Varje policyregel är en instans av en policyregeltyp. Endast en policyregel i taget kan gälla för en policyregeltyp. 
 
-## <a name="queries-and-query-types"></a>Frågor och frågetyper
+<a name="queries-and-query-types"></a>Frågor och frågetyper
+-----------------------
 
 När du skapar en granskningspolicyregel, väljer du först en policyregeltyp. Policyregeltypen anger vilken programobjektträdfråga som ska användas som utgångspunkt för att skapa policyregeln. Den kan också ange den frågetyp som ska användas för policyregeln. Frågan bestämmer vilket källdokument som policyregeln utvärderar. Den visar även fälten i källdokumentet som identifierar både den juridiska personen och det datum som ska användas när dokument har valts för granskning. Frågetypen styr standardfälten på frågesidan och sidan för granskningspolicyregler. Följande tabell visar de frågetyper som finns tillgängliga för granskningspolicyregler.
 
@@ -90,12 +93,10 @@ Alla policyregler för en viss granskningspolicy delar samma batchparametrar och
 
 
 
-## <a name="additional-resources"></a>Ytterligare resurser
+<a name="additional-resources"></a>Ytterligare resurser
+--------
 
 [Överträdelser av granskningspolicyn och ärenden](audit-policy-violations-cases.md)
 [Definiera granskningspolicyer för källdokument](tasks/define-audit-policies-source-documents.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

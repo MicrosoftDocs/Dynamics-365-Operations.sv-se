@@ -1,10 +1,12 @@
 ---
 title: Skapa serviceavtal
 description: I det här avsnittet beskrivs hur du använder funktioner i modulerna servicehantering och projekthantering och redovisning för att skapa serviceavtal.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9a5d580b0bb146bf5d445823b37f607e507f7eb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ef5ca8cc9c80581b9f7ef69bd8c4403d3d0296e8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569153"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965986"
 ---
 # <a name="create-service-agreements"></a>Skapa serviceavtal
 
@@ -32,7 +34,7 @@ I det här avsnittet beskrivs hur du använder funktioner i modulerna servicehan
 
 1. Gå till **servicehantering**.
 2. Klicka på **serviceavtal** om du vill skapa en ny serviceavtalsrad i sidhuvudet. 
-3. Välj **Ny**. Ange en beskrivning, välj en referens till ett projekt i fältet **projekt-ID** och fyll i resten av fälten och raderna för serviceavtalet. Välj **Spara**.
+3. Klicka på **Ny**. Ange en beskrivning, välj en referens till ett projekt i fältet **projekt-ID** och fyll i resten av fälten och raderna för serviceavtalet. Klicka på **Spara**.
 4. I fliken **relationer** välj **serviceobjekt** eller **serviceuppgifter** när du vill skapa relationer för serviceobjekt eller serviceuppgifter i serviceavtalet. Serviceobjekten och uppgifterna som du har skapat relationer för, kan kopplas till rader för serviceavtalet.
 5. Skapa serviceavtalsrader på den nedre halvan av sidan genom att kopiera rader från en servicemall, ett annat serviceavtal eller genom att skapa serviceavtalsraderna manuellt.
 
@@ -43,14 +45,14 @@ I det här avsnittet beskrivs hur du använder funktioner i modulerna servicehan
 
 1. Från sidan för **serviceavtal** kan du lägga till en serviceavtalsrad i rutnätet. 
 2. Ange önskad information för serviceavtalsraden. 
-3. Tryck på **Spara** för att spara raden och stäng sedan sidan.
+3. Tryck på **CTRL+S** för att spara raden och stäng sedan sidan.
 
 ## <a name="create-a-service-agreement-from-project"></a>Skapa ett serviceavtal från Projekt
 
-1. Välj **Projekthantering och redovisning**.
-2. Markera **Alla projekt**.
+1. Klicka på **projekthantering och redovisning**.
+2. Klicka på **alla projekt**.
 3. Välj projekt i listan.
-4. I **åtgärdsfönstret** klicka på **Hantera**. I den **nya** åtgärdsgruppen, klickar du på **service** och markerar **serviceavtal**.
+4. Klicka på **Hantera** i **åtgärdsfönstret**. I den **nya** åtgärdsgruppen, klickar du på **service** och markerar **serviceavtal**.
 5. Följ anvisningarna i avsnittet **skapa ett serviceavtal** som beskrevs tidigare i det här avsnittet om du vill ange projektreferensen.
 
 
@@ -59,6 +61,3 @@ I det här avsnittet beskrivs hur du använder funktioner i modulerna servicehan
 [Ta fram och upprätta avtal – översikt](service-agreements.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

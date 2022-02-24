@@ -2,26 +2,28 @@
 title: Startsida för kostnadshantering
 description: Med kostnadshantering kan du hantera värdering och redovisning av råmaterial, färdiga varor, delvis färdiga varor och tillgångar i pågående arbete.
 author: AndersGirke
+manager: tfehr
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83881e6b3bb588dad61fd14aa4db28aa76305925aab3ee08e2ebe7e001f2aff2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dc146f8a3707e830ff574964c5a8865271e69b50
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739117"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967693"
 ---
 # <a name="cost-management-home-page"></a>Startsida för kostnadshantering
 
@@ -43,7 +45,7 @@ Du når lagerredovisning och tillverkningsredovisning från arbetsytorna **kostn
 
 Tillverkningsredovisning låter dig hantera [kostnadsberäkning för jobborder](production-order-cost-analysis.md) i tillverkningsorder och batchorder samt [kostnadskalkylering med automatisk lageravräkning](backflush-costing.md) i lean manufacturing.
 
-[Innehållet i Power BI kostnadshantering](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) ger ledare inblick i lager och PIA-lager (projekt i arbete), samt hur kostnader flödar genom dem per kategori och över tid. Informationen kan också användas som ett detaljerat komplement till bokslutet.
+[Innehållet i Power BI kostnadshantering](../../dev-itpro/analytics/cost-management-content-pack.md) ger ledare inblick i lager och PIA-lager (projekt i arbete), samt hur kostnader flödar genom dem per kategori och över tid. Informationen kan också användas som ett detaljerat komplement till bokslutet.
 
 ### <a name="additional-resources"></a>Ytterligare resurser
 
@@ -57,10 +59,8 @@ Tillverkningsredovisning låter dig hantera [kostnadsberäkning för jobborder](
 
 #### <a name="blogs"></a>Bloggar
 
-Du hittar åsikter, nyheter och annan information om kostnadshantering i [teambloggen Dynamics AX Manufacturing R&D](/archive/blogs/axmfg/) och [teambloggen Supply Chain Management in Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm). En del av inläggen skrevs för den föregående versionen av kostnadshantering, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
+Du hittar åsikter, nyheter och annan information om kostnadshantering i [teambloggen Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg) och [teambloggen Supply Chain Management in Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm). En del av inläggen skrevs för den föregående versionen av kostnadshantering, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
 
 #### <a name="task-guides"></a>Uppgiftsguider
 
 Mer hjälp är tillgänglig som uppgiftsguider. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

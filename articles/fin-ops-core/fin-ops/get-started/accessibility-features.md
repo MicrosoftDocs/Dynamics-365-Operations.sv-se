@@ -2,9 +2,11 @@
 title: Hjälpmedelsfunktioner
 description: Det här avsnittet beskriver de funktioner som hjälper användare med olika handikapp.
 author: TLeforMicrosoft
+manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,19 +14,16 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 022c51f7050d11caf5ce67c5df8f9f9040a54b98
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2d0dd3ebf4b50f43f9fb1893081ede2a93428c72
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071068"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798705"
 ---
 # <a name="accessibility-features"></a>Hjälpmedelsfunktioner
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Det här avsnittet beskriver de funktioner som hjälper användare med olika handikapp att använda denna app. Till exempel finns funktioner för användare som använder synhjälpmedel som skärmläsaren i Microsoft Windows.
 
@@ -55,13 +54,13 @@ Varje åtgärd som finns på en sida kan nås från tangentbordet via fliksekven
 
 Du ska köra åtgärden **Meddelandelogg för e-post** som visas i gruppen **E-postmeddelande** på fliken **Försäljningsorder** i åtgärdsfönstret.
 
-![Loggåtgärd för e-postmeddelande i åtgärdsfönstret.](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "&quot;Meddelandeloggåtgärd&quot; för e-post i åtgärdsfönstret")
+![Meddelandeloggåtgärd för e-post i åtgärdsfönstret](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "&quot;Meddelandeloggåtgärd&quot; för e-post i åtgärdsfönstret")
 
 Ett alternativ är att använda tangentbordet. Tryck på Ctrl+F6 för att flytta fokus till åtgärdsfönstret och tryck sedan på Tabb flera gånger för att bläddra igenom alla flikar och åtgärder tills åtgärden **Meddelandelogg för e-post** är i fokus.
 
 Du kan emellertid också köra åtgärden mer direkt. Tryck på Ctrl + apostrof (') att visa sökrutan för åtgärder.
 
-![Sökruta för åtgärder.](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Sökruta för åtgärder")
+![Sökruta för åtgärder](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Sökruta för åtgärder")
 
 I sökrutan skriver du ord som beskriver åtgärden. Åtgärden görs tillgänglig för dig och du kan köra den direkt. Genom att exempelvis skriva **e-post**, **medde** (en del av ett ord) eller **logg** kan du ”hoppa” till funktionen för meddelandelogg för e-post.
 
@@ -98,6 +97,3 @@ På smartphones och andra små skärmar, kontrollerna och formulärlayouten komm
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Riktlinjer för att hjälpa utvecklare och kunder att inkorporera tillgänglighetstänk i sina anpassningar
 
 Mer information om Microsofts bästa praxis för att aktivera hjälpmedel finns [Hjälpmedel i formulär, produkter och kontroller](../../dev-itpro/user-interface/enable-accessibility.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

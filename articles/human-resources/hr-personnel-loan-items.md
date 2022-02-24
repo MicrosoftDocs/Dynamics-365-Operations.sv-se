@@ -1,38 +1,35 @@
 ---
 title: Hantera artiklar som lånas ut till medarbetare
 description: Låneartiklar är poster som gör det enklare för chefer att spåra fysiska artiklar som företaget lånar ut till arbetare.
-author: twheeloc
-ms.date: 10/28/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmLoanItem, HcmLoanType, HcmPersonLoan, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 3581
 ms.assetid: b14bdddb-f10e-4619-9f91-8c88439da862
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 9093944a2e225565fc8fdba8f9a487303369c251
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 5915df388da7ce8b90cdcb0e859268c00003110c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067286"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420577"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>Hantera artiklar som lånas ut till medarbetare
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
 Låneartiklar är poster som gör det enklare för chefer att spåra fysiska artiklar som företaget lånar ut till arbetare. 
 
-Här följer några exempel på artiklar som ett företag kan låna till anställda:
-
+Följande exempel anger exempel på artiklar som ett företag kan låna till anställda:
 -   Mobiltelefoner
 -   Bilar
 -   Datorutrustning
@@ -41,21 +38,20 @@ Varje fysisk artikel måste ha en motsvarande låneartikel. Varje låneartikelpo
 
 När en artikel lånas registrerar du datumet då artikeln lånades samt planerat återlämningsdatum. När artikeln lämnas tillbaka anger du det faktiska återlämningsdatumet.
 
-Medarbetare kan använda arbetsytan **Självbetjäning för medarbetare** för att visa posterna för de artiklar som har lånats ut till dem. De kan också redigera befintliga poster eller ange nya låneartiklar om de har fått ytterligare fysiska artiklar. Ett arbetsflöde kan ställas in i syfte att skapa flödesändringar till nya eller befintliga låneartiklar via en godkännandeprocess. 
+Medarbetare kan se posterna för de artiklar som har lånats ut till dem via arbetsytan Självbetjäning för medarbetare. De kan också redigera befintliga poster eller ange nya låneartiklar, om de har fått ytterligare fysiska artiklar.  Arbetsflödet kan ställas in att dirigera vägändringar till nya eller befintliga låneartiklar via en godkännandeprocess. 
 
 Chefer kan visa lånade artiklar för deras underställda. De kan också beviljas behörighet att lägga till nya låneartiklar åt deras medarbetare.
 
-##  <a name="account-for-lost-or-misplaced-loan-items"></a> Konto för förlorade eller borttappade låneartiklar
+ <a name="account-for-lost-or-misplaced-loan-items"></a> Konto för förlorade eller borttappade låneartiklar
+-----------------------------------------
 
 Om en artikel skadas eller tappas bort anger du ett fiktivt återlämnande. Sedan raderar du artikeln eller behåller den i översikten och ändrar beskrivningen så att det framgår att den inte är tillgänglig.
 
 
-## <a name="additional-resources"></a>Ytterligare resurser
+<a name="additional-resources"></a>Ytterligare resurser
+--------
 
 [Personal](index.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

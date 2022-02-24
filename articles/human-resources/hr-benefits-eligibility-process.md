@@ -1,59 +1,56 @@
 ---
 title: Bearbeta förmånsberättigande
 description: Den här proceduren visar hur förmånsberättigandeprocessen fungerar.
-author: twheeloc
-ms.date: 11/03/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, HcmBenefitEligibilityPolicy, HcmBenefit, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 16a866cb35aacb3b6bece0d6adde6bb5978bd4fc
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d23dcf4a16979b14ddf58b54e812f21e6698dfc7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066028"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420509"
 ---
 # <a name="benefit-eligibility-process"></a>Bearbeta förmånsberättigande
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
 Den här proceduren visar hur förmånsberättigandeprocessen fungerar. När processen är klar kan du visa resultaten. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 
-1. Gå till **Personal \> Förmåner \> Förmåner**.
+1. Gå till Personal > Förmåner > Förmåner.
 2. Hitta och markera önskad post i listan.
-3. Klicka på länken på önskad rad i valda listan.
-4. Välj **Redigera**.
-5. I fältet **Berättigande** väljer du **Regelbaserat**.
-6. I fältet **Regeltyp** väljer du den policyregel för förmån som du vill tillämpa på förmånen.
-7. I åtgärdsfönstret väljer du **Förmån**.
-8. Välj **Skapa berättigandehändelse**.
-9. I listrutan anger du ett värde i fältet **Händelse**.
-10. I fältet **Beskrivning** anger du ett värde.
-11. I fältet **Händelsetyp** väljer du **Öppna registering**.
-12. I fältet **Startdatum för disponering** anger du datum och tid.
-13. I fältet **Startdatum för registreringsperiod** anger du datum och tid.
-14. I fältet **Dagar till registrering** anger du ett nummer.
-15. Välj **Skapa händelse**.
-16. På snabbfliken **Medarbetare** väljer du **Lägg till**.
-17. I fältet **Visa efter typ** väljer du **Anställda**.
-18. I fältet **Visa efter juridisk person** väljer du **Aktuell juridisk person**.
+3. Klicka på länken på den valda raden i listan.
+4. Klicka på Redigera.
+5. Välj Regelbaserad i fältet Berättigande.
+6. I fältet Regeltyp, välj förmånpolicyregeln du vill tillämpa för förmånen.
+7. Klicka på Förmån i åtgärdsfönstret.
+8. Klicka på Skapa berättigandehändelse om du vill öppna dialogrutan.
+9. I fältet Händelse, ange ett värde.
+10. Skriv ett värde i fältet Beskrivning.
+11. I fältet Händelsetyp, välj Öppna anmälan.
+12. Ange datum och tid i fältet Giltighetsstartdatum.
+13. I fältet Startdatum för anmälningsperiod, ange datum och tid.
+14. I fältet Dagar till anmälan, ange ett nummer.
+15. Klicka på Skapa händelse.
+16. Klicka på Lägg till på snabbfliken Arbetare.
+17. I fältet Visa per typ, välj Medarbetare.
+18. I fältet Visa per juridisk person, välj Aktuell juridisk person.
 19. Markera eller avmarkera alla rader i listan.
-20. Välj **OK**.
-21. Välj **Process**.
-22. Välj **OK**.
+20. Klicka på OK.
+21. Klicka på Process.
+22. Klicka på OK.
 23. Uppdatera sidan.
-24. Välj **Visa resultat**.
-25. Öppna kolumnfiltret **Status**.
-26. Sortera kolumnen från A till Z.
+24. Klicka på Visa resultat.
+25. Öppna kolumnfiltret Status.
+26. Sortera A till Z
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

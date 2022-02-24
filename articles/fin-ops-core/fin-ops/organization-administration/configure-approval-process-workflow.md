@@ -2,9 +2,11 @@
 title: Konfigurera godkännandeprocesser i ett arbetsflöde
 description: Använd följande procedur när du vill konfigurera egenskaperna för godkännandeprocessen.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 01/24/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99a4e131b2afa65152d8e9d41b8405895d997250
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a7dc365bc2a317b67235f1ad01a4157089e0079d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070812"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798939"
 ---
 # <a name="configure-approval-processes-in-a-workflow"></a>Konfigurera godkännandeprocesser i ett arbetsflöde
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Använd följande procedur när du vill konfigurera egenskaperna för godkännandeprocessen.
 
@@ -184,6 +183,3 @@ En godkännandeprocess består av godkännandesteg. Slutför följande procedur 
 1. Dubbelklicka på godkännandeprocessen i arbetsflödesredigeraren. Arbetsflödesredigeraren visar stegen för godkännandeprocessen.
 2. Dra steget från området **Arbetsflödeselement** till arbetsytan för att lägga till ett godkännandesteg.
 3. Se [Konfigurera godkännandesteg i ett arbetsflöde](configure-approval-step-workflow.md) för att konfigurera ett godkännandesteg.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

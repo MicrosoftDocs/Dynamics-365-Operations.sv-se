@@ -1,26 +1,29 @@
 ---
 title: Lagerstatus
 description: Det här avsnittet innehåller en beskrivning av hur du kan använda lagerstatusar för att kategorisera och spåra lagret.
-author: yufeihuang
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 21331
 ms.assetid: b35f495f-de4f-48a0-9d09-4d06781d7650
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5b38ab4674c80da496e09e5179a412d6dcd85a7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eca9d3e4e15d11d2a9a1b531028de230ffc43913
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577682"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594612"
 ---
 # <a name="inventory-statuses"></a>Lagerstatus
 
@@ -43,14 +46,7 @@ En lagerstatus är en av dimensionerna i lagringsdimensionsgruppen. Lagerstatusa
 
 Du kan använda lagerställeartiklar med tillgänglig eller inte tillgänglig lagerstatus för inkommande arbete. Till exempel skapar du en tillgänglig status med namnet *Klart*, en otillgänglig status med namnet *Skadat* och en blockerad status med namnet *Spärrad*. När du skapar en inköpsorder för inlevererade eller returnerade artiklar och om sådana artiklar skadas, kan du ändra lagerstatus på de artiklarna till *Skadat* på inköpsorderraden. När artiklarna har kommit, anges statusen automatiskt till *Spärrad*. Om du skanna de skadade artiklarna med hjälp av en mobil enhet, kan Supply Chain Management använda platsdirektiv och arbetsmallar för att visa information om en lämplig plats eller intervall av platser där du kan placera artiklarna. För returnerade artiklar skapas utleveranstypen *Reservation* på sidan **Lagertransaktioner**.
 
-Du kan ange vilka sorters lagerstatus som är spärrar genom att använda kryssrutan **Lagerspärr** på sidan **Lagerstatus**. Du kan inte använda lagerstatus som blockeringsstatus för försäljningsorder, överföringsorder eller projektintegrationer.
-
-För utgående arbete kan du använda olika icke-blockerande lagerstatus för att styra vilket lager du ska reservera mot. Om det finns artiklar med statusen *Blockera* och huvudplaneringen körs på dessa artiklar, betraktas artiklarna som saknade och lagret fylls automatiskt på. Vidare är det inte möjligt att uppdatera den för kvalitetsorder i samband med utgående arbete **lagerstatusen** som en del av valideringen av kvalitetsorder.
-
-> [!NOTE]
-> Du kan inte ändra statusen för lager på platser där det finns öppet arbete. Om du till exempel gjorde ett inköp för en artikel, men inte gjorde det, skulle öppna arbetet finnas för inleveransplatsen och du får ett felmeddelande om du försöker ändra status på lagret på den platsen. Om du slutför eller annullerar det relaterade arbetet kan du ändra status.
->
-> Statusen för lagerbehållning som är relaterad till öppet lagerställesarbete ändras vanligtvis bara av arbetare som använder det mobilappen för distributionslagerhantering, till exempel vid körning av en flyttningsprocess.
+För utgående arbete, använd artiklar med tillgänglig lagerstatus. Om det finns artiklar med statusen *Trasig* och huvudplaneringen körs på dessa artiklar, betraktas artiklarna som saknade och lagret fylls automatiskt på.
 
 När du har ställt in lagerstatusarna kan du ange standardlagerstatus för en plats, en artikel och ett lagerställe. Du kan även ange en standardstatus för försäljningsorder, överföring och inköpsorder. Standardstatusen för försäljningsorder och utgående överföringsorder kan inte ha alternativet **Lagerspärr** med värdet *Ja*. Lagerstatusen, som ärvs från standardinställningarna för en plats, ett lagerställe, en artikel, en inköpsorder, överföringsorder eller försäljningsorder, kan ändras genom att använda den mobila enheten eller på försäljningsorderraden, inköpsorderraden eller överföringsorderraden.
 
@@ -69,6 +65,3 @@ Du kan ändra lagerstatus antingen med hjälp av sidan **Behållning efter plats
 > - På sidan **behållning per plats** kan du gruppera rader baserat på visade dimensioner med hjälp av knappen **Visa dimensioner** och ändra status för de valda raderna.
 > - På sidan **behållning per plats** kan du välja flera poster och sedan använda knappen **Ändra lager status** för att ändra alla på en gång.
 > - I den periodiska uppgiften **Ändring av lagerstatus** kan du filtrera efter spårningsdimensioner.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

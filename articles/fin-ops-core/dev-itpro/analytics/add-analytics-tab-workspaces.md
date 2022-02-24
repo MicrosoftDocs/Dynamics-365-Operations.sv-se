@@ -1,23 +1,25 @@
 ---
 title: Lägg till analyser i arbetsytor genom att använda Power BI Embedded
 description: Det här avsnittet beskriver hur du bäddar in en Power BI-rapport på fliken analys i en arbetsyta.
-author: RichdiMSFT
+author: tjvass
+manager: AnnBe
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ed562dca621acea24efa3f157f695257cb919cdda577cf9ae6dd0b0c942e1b70
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53c9d6343422f64aed74ce436bafd2c8b2ce1c3e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760162"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680946"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Lägg till analyser i arbetsytor genom att använda Power BI Embedded
 
@@ -54,11 +56,11 @@ Följ dessa steg om du vill lägga till en .pbix-fil som en projektartefakt för
 3. I dialogrutan **Lägg till nytt objekt** under **Operations artefakter** markerar du mallen **resurs**.
 4. Ange ett namn som används för att referera till rapporten i X++-metadata och klicka sedan på **Lägg till**.
 
-    ![Dialogrutan Lägg till ny artikel.](media/analytical-workspace-add.png)
+    ![Lägg till dialogruta nytt objekt](media/analytical-workspace-add.png)
 
 5. Leta upp filen .pbix som innehåller definitionen av analytisk rapport och klicka sedan på **öppna**.
 
-    ![Välj en dialogruta för Resursfil.](media/analytical-workspace-select-resource.png)
+    ![Välj dialogrutan Resursfil](media/analytical-workspace-select-resource.png)
 
 Nu när du har lagt till .pbix-filen som en resurs i Dynamics 365, kan du bädda in rapporter i arbetsytor och lägga till direkta länkar med hjälp av menyalternativ.
 
@@ -67,7 +69,7 @@ I det här exemplet ska vi utöka arbetsytan **Hantering av reservationer** i mo
 
 Följande bild visar hur formuläret **FMClerkWorkspace** ser ut i designern i Microsoft Visual Studio.
 
-![FMClerkWorkspace-formuläret före ändringar.](media/analytical-workspace-definition-before.png)
+![FMClerkWorkspace-formuläret innan ändringar](media/analytical-workspace-definition-before.png)
 
 Följ dessa steg för att utöka formulärets definition för arbetsytan **Reservationshantering**.
 
@@ -92,7 +94,7 @@ Följ dessa steg för att utöka formulärets definition för arbetsytan **Reser
 
 Följande illustration visar hur designen ser ut efter ändringarna har tillämpats.
 
-![FMClerkWorkspace efter ändringar.](media/analytical-workspace-definition-after.png)
+![FMClerkWorkspace efter ändringar](media/analytical-workspace-definition-after.png)
 
 Nu när du har lagt till formulärkontroller som används för att bädda in arbetsytrapporten måste du ange storleken på den överordnade kontrollen så att layouten sparas. Som standard visas både sidan **filterruta** och **flik** i rapporten. Du kan dock ändra synligheten för dessa kontroller efter målkonsumenten för rapporten.
 
@@ -142,7 +144,7 @@ Så här lägger du till affärslogik som initierar rapportvisningskontrollen so
 
 Du har nu slutfört uppgiften att lägga till inbäddad affärslogik för att initiera rapportvisningskontrollen. Följande illustration visar hur arbetsytan ser ut efter ändringarna har tillämpats.
 
-![Rapport som är inbäddad i arbetsytan.](media/analytical-workspace-final.png)
+![Rapport som är inbäddad i arbetsytan](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > Du kommer åt den befintliga vyn med hjälp av flikarna för arbetsyta under en rubrik.
@@ -173,6 +175,3 @@ public static void initializeReportControl(
 | showFilterPane   | Ett booleskt värde som anger om filterrutan ska visas (**sant**) eller döljas (**falsk**).     |
 | showNavPane      | Ett booleskt värde som anger om navigeringsrutan ska visas (**sant**) eller döljas (**falsk**). |
 | defaultFilters   | Standardfilter för Power BI-rapporten.                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

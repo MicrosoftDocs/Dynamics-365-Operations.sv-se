@@ -1,10 +1,12 @@
 ---
 title: Parametrar för tillgångshantering
 description: I tillgångshantering måste allmänna parametrar som hänför sig till tillgångar, arbetsorder och schemaläggning av arbetsorder ställas in.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1deef00f01d83bc809a004265c386ba9d300df5fa4a1be245812ed5632059f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751971"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020664"
 ---
 # <a name="asset-management-parameters"></a>Parametrar för tillgångshantering
 
@@ -99,11 +101,8 @@ Fälten som beskrivs i följande lista relaterar till beräknade bedömningspoä
 
 ## <a name="the-document-types-tab"></a>Fliken Dokumenttyper
 
-Välj de dokumenttyper som ska vara tillgängliga för utskrift av bilagor relaterade till en arbetsorderrapport. Detta görs genom att välja en dokumenttyp i avsnittet **tillgängliga** och välja ![framåtpilknappen.](media/15-setup-for-objects.png). Om du vill ta bort en vald dokumenttyp väljer du dokumenttypen i avsnittet **Markerade** och klickar på ![bakåtpilknappen](media/16-setup-for-objects.png).
+Välj de dokumenttyper som ska vara tillgängliga för utskrift av bilagor relaterade till en arbetsorderrapport. Detta görs genom att välja en dokumenttyp i avsnittet **tillgängliga** och välja ![framåtpilknappen](media/15-setup-for-objects.png). Om du vill ta bort en vald dokumenttyp väljer du dokumenttypen i avsnittet **Markerade** och klickar på ![bakåtpilknappen](media/16-setup-for-objects.png).
 
 ## <a name="the-number-sequences-tab"></a>Fliken Nummerserie
 
 Välj de nummerserier som krävs i det här avsnittet. Det finns två nummerserier för tillgångar: en för manuellt skapade tillgångar och en för tillgångar som skapats via väntande tillgångar.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Schemalägg arbetsorder
 description: Det här avsnittet innehåller förklaringar av hur du tidsplanerar arbetsorder i Tillgångshantering.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderSchdulePreviewPart, EntAssetWorkOrderScheduleExclusively, EntAssetWorkOrderSchduleInfoPart, EntAssetWorkOrderScheduleListPage, EntAssetWorkOrderSchedule, EntAssetWorkOrderScheduleDelete
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e7751e3e2f216abf46f02ee0644909c6894c5b2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718069"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020239"
 ---
 # <a name="schedule-work-orders"></a>Schemalägg arbetsorder
 
@@ -56,7 +58,7 @@ Endast arbetsorder med ett livscykeltillstånd för arbetsorder som tillåter pl
 
 *Exempel:* På bilden nedan genererar formeln som infogas i fältet **Förväntad start** tidsplanering av arbetsorder för alla arbetsorder med förväntat startdatum en vecka från och med nu och senare. Den här formeln kan vara användbar när du kör tidsplanering av arbetsorder löpande, men du vill vara säker på att de schemalagda arbetsorderna under de kommande 5-6 dagarna inte har tidsplanerats.
 
-![Figur 1.](media/03-work-order-scheduling.png)
+![Figur 1](media/03-work-order-scheduling.png)
 
 Arbetsordertypen som är relaterad till arbetsorder kan ställa in tidsplanering för en underhållsarbetare (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Arbetsordertyper** >  växlingsknappen **En underhållsarbetare** inställd på "Ja"). Detta innebär att om arbetsordertypen används på en arbetsorder, sätts växlingsknappen **En underhållsarbetare** automatiskt till "Ja" på informationssidan **Alla arbetsorder** > vyn **Sidhuvud** > snabbfliken **Tidsplanera**. Under tidsplaneringen av arbetsordern planeras sedan alla arbetsorderjobb som skapats på arbetsordern till samma underhållsarbetare. Om det behövs kan du redigera valet för växlingsknappen **En underhållsarbetare** i **Alla arbetsorder** för att möjliggöra planering av flera arbetare eller en arbetare för arbetsorderjobben.
 
@@ -135,6 +137,3 @@ Så här visar och arbetar du med Gantt-diagrammet:
     - Om du vill omplanera en visad arbetsorder väljer du och drar den till lämpligt nytt datum och aktuell tid.
 
 1. Om du har gjort några ändringar väljer du **Spara** i åtgärdsfönstret för att spara dem.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

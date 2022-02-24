@@ -2,27 +2,28 @@
 title: Policyer för leveranskonsolidering
 description: Det här ämnet ger en översikt över de funktioner som ger en flexibel konfiguration av policyer för leveranskonsolidering.
 author: GarmMSFT
+manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate, WHSShipConsolidationTemplateApply, WHSShipConsolidationTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 11ee4beefed02425d4650de3e896e608d3d00ef5
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f895b13b2e11d4cb341f80b3cfeb40ed998ccfc4
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577970"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654230"
 ---
 # <a name="shipment-consolidation-policies"></a>Policyer för leveranskonsolidering
-
-[!include [banner](../includes/banner.md)]
 
 Konsolideringsprocessen för leveranser som använder konsolideringspolicyer för leveranser möjliggör automatisk leveranskonsolidering vid automatisk och manuell frisläppning till lagerstället. Den automatiska konsolideringen som var tillgänglig innan den här funktionen introducerades hade hårdkodade fält och baserades på fältet **Konsolidera leverans vid frisläpp till lagerställe** som var inställd för ett lagerställe.
 
@@ -134,6 +135,3 @@ I följande tabell sammanfattas hur leveranskonsolideringen fungerar när du int
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Konfigurera policyer för leveranskonsolidering](configure-shipment-consolidation-policies.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

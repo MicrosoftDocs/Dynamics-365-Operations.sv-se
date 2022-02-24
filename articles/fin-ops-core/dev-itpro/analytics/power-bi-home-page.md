@@ -2,27 +2,27 @@
 title: Power BI-innehåll – startsida
 description: Det här avsnittet listar PowerBI.com-lösningar som är tillgängliga och hänvisar till resurser där du kan lära dig mer om lösningen.
 author: sericks007
+manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: PowerBIPbixDeployForm
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "265694"
-- intro-internal
+ms.custom: 265694
 ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5c56b6d8ae3c641aab86261f844ed60bd8579969ba6583bb90098436d84b2859
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ea5b4e6a4a82845bb973ffd6b16b3f83e8c7b0d8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753632"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685743"
 ---
 # <a name="power-bi-content-home-page"></a>Power BI-innehåll – startsida
 
@@ -65,6 +65,3 @@ Följande PowerBI.com-lösningar är tillgängliga från [Microsoft AppSource](h
 - Kostnadshantering
 - [Finansiellt resultat](financial-performance-power-bi-content-pack.md)
 - [Resultat för butikskanal ](retail-channel-performance-dashboard-power-bi-data.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

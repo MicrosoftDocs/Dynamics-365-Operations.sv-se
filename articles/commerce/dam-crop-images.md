@@ -1,13 +1,16 @@
 ---
-title: Beskära bilder
+title: Beskär bilder
 description: I det här avsnittet beskrivs hur du beskär bilder i Microsoft Dynamics 365 Commerce webbplatsskapare.
 author: psimolin
+manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cb6049a1d98b7286658403b15a071f6f1389f725a9a7a146aab55d43796be60b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a8f52c22a57d465ce1c2bedac6e8f13db3e856c0
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744520"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594488"
 ---
-# <a name="crop-images"></a>Beskära bilder
+# <a name="crop-images"></a>Beskär bilder
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du beskär bilder i Microsoft Dynamics 365 Commerce webbplatsskapare.
+
+## <a name="overview"></a>Översikt
 
 Med mediebiblioteket i Commerce webbplatsskaparen kan du beskära bilder för att optimera dem för olika typer av moduler och visningsformat.
 
@@ -61,6 +66,3 @@ När den anpassade beskärningen har slutförts kommer bildändringarna att bör
 [Anpassa bildens fokuspunkter](dam-custom-focal-point.md)
 
 [Ladda upp och betjäna statiska filer](upload-serve-static-files.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

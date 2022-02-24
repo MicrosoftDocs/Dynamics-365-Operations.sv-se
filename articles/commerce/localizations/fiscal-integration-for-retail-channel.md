@@ -1,120 +1,92 @@
 ---
-title: Översikt över räkenskapsintegrering för handelskanaler
-description: Det här avsnittet innehåller en översikt över funktioner för räkenskapsintegrering som är tillgängliga i Dynamics 365 Commerce.
-author: EvgenyPopovMBS
-ms.date: 01/31/2022
+title: Översikt över räkenskapsintegration för handelskanaler
+description: Det här avsnittet innehåller en översikt över funktioner för räkenskapsintegration som är tillgängliga i Dynamics 365 Commerce.
+author: josaw
+manager: annbe
+ms.date: 02/01/2019
 ms.topic: article
-audience: Application User, Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
+audience: Application User
+ms.reviewer: josaw
 ms.search.region: Global
+ms.search.industry: Retail
 ms.author: epopov
-ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 82913eaca1d56a5b0609480d8825717278eca132
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.search.validFrom: 2019-1-16
+ms.dyn365.ops.version: 10
+ms.openlocfilehash: 2f1abf29058e773f1645301fcd7a960df488d92b
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077202"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017477"
 ---
-# <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Översikt över räkenskapsintegrering för handelskanaler
+# <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Översikt över räkenskapsintegration för handelskanaler
 
 [!include [banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
-Det här avsnittet innehåller en översikt över funktioner för räkenskapsintegrering som är tillgängliga i Dynamics 365 Commerce. 
+## <a name="introduction"></a>Introduktion
 
-Räkenskapsintegrering omfattar integrering med olika räkenskapsenheter och tjänster som underlättar för räkenskapsregistrering av försäljning i enlighet med lokala skattelagar som syftar till förhindrande av skattebedrägeri inom detaljhandel. Typiska scenarier som kan omfatta räkenskapsintegrering är:
+Det här avsnittet innehåller en översikt över funktioner för räkenskapsintegration som är tillgängliga i Dynamics 365 Commerce. Räkenskapsintegration omfattar integration med olika räkenskapsenheter och tjänster som underlättar för räkenskapsregistrering av försäljning i enlighet med lokala skattelagar som syftar till förhindrande av skattebedrägeri inom detaljhandel. Typiska scenarier som kan omfatta räkenskapsintegration är:
 
 - Registrera en räkenskapsenhet som är ansluten till kassa (POS), till exempel en kvittoskrivare och skriva ut en kvittoskrivare för kunden.
 - Skicka säkert information som är relaterad till försäljning och returer som slutförs i Retail POS till en extern webbtjänst som drivs av skattemyndigheten.
 - Hjälpa till att garantera oföränderlighet av försäljningstransaktionsdata via digitala signaturer.
 
-Räkenskapsintegreringen är ett ramverk som utgör en gemensam lösning för ytterligare utveckling och anpassning av integrering mellan Retail POS och räkenskapsenheter och tjänster. Funktionen innehåller också exempel på räkenskapsintegrering som stöder grundläggande scenarier för vissa länder eller regioner, och som arbetar med specifika räkenskapsenheter och tjänster. Exempel på räkenskapsintegrering består av flera tillägg av Commerce-komponenter och ingår i programutvecklingskit (SDK). Mer information om exemplen på räkenskapsintegrering finns i [Exempel på räkenskapsintegrering i Commerce SDK](#fiscal-integration-samples-in-the-commerce-sdk). Information om hur du installerar och använder Commerce SDK finns i [Arkitektur i utvecklingspaket (SDK) för programutveckling](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Räkenskapsintegreringen är ett ramverk som utgör en gemensam lösning för ytterligare utveckling och anpassning av integration mellan Retail POS och räkenskapsenheter och tjänster. Funktionen innehåller också exempel på räkenskapsintegration som stöder grundläggande scenarier för vissa länder eller regioner, och som arbetar med specifika räkenskapsenheter och tjänster. Exempel på räkenskapsintegration består av flera tillägg av Commerce-komponenter och ingår i programutvecklingskit (SDK). Mer information om exempel på räkenskapsintegration finns i [Exempel på räkenskapsintegration i Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Information om hur du installerar och använder Retail SDK finns i [Retail programutvecklingskit (SDK) arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-Stöd för andra scenarier som inte stöds av exempel på räkenskapsintegrering, för att integrera Retail POS med andra räkenskapsprodukter eller tjänster och täcka kraven i andra länder eller regioner, måste du utöka ett befintligt exempel på räkenskapsintegrering eller skapa ett nytt prov med ett befintligt prov som exempel.
+Stöd för andra scenarier som inte stöds av exempel på räkenskapsintegration, för att integrera Retail POS med andra räkenskapsprodukter eller tjänster och täcka kraven i andra länder eller regioner, måste du utöka ett befintligt exempel på räkenskapsintegration eller skapa ett nytt prov med ett befintligt prov som exempel.
 
-## <a name="fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services"></a>Process för räkenskapsregistrering och exempel på räkenskapsintegrering och tjänster
+## <a name="fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices"></a>Process för räkenskapsregistrering och exempel på räkenskapsintegration för räkenskapsenheter
 
-En process för räkenskapsregistrering i Retail POS kan bestå av ett eller flera steg. Varje steg omfattar räkenskapsregistrering av specifika transaktioner och händelser i en räkenskapsenhet eller tjänst. Följande komponenter ingår i räkenskapsregistrering i en räkenskapsenhet eller tjänst:
+En process för räkenskapsregistrering i Retail POS kan bestå av ett eller flera steg. Varje steg omfattar räkenskapsregistrering av specifika transaktioner och händelser i en räkenskapsenhet eller tjänst. Följande komponenter ingår i räkenskapsregistrering i en räkenskapsenhet som är ansluten till en maskinvarustation:
 
-- **Räkenskapsdokumentprovider** – Den här komponenten serialiserar transaktionshändelsen/data i det format som också används i samband med räkenskapsårets analyserar svaren från räkenskapsenhet eller tjänst och lagrar svaren i kanaldatabasen. Tillägget definierar även specifika transaktioner och händelser som ska registreras.
-- **Räkenskapskoppling** – denna komponent initierar kommunikationen med räkenskapsenheten eller tjänsten, skickar begärande och kommandon direkt till räkenskapsenheten eller tjänsten baserat på transaktionshändelse/data som extraheras från skattedokument och tar emot svar från räkenskapsenheten eller tjänsten
+- **Tillägget Commerce Runtime (CRT)** – den här komponenten serialiserar transaktionshändelsen/data i det format som också används i samband med räkenskapsårets analyserar svaren från räkenskapsenhet och lagrar svaren i kanaldatabasen. Tillägget definierar även specifika transaktioner och händelser som ska registreras. Den här komponenten kalla ofta en *leverantör av skattedokument*.
+- **Tillägg för maskinvarustation** – denna komponent initierar kommunikationen med räkenskapsenheten, skickar begärande och kommandon direkt till räkenskapsenheten baserat på transaktionshändelse/data som extraheras från skattedokument och tar emot svar från räkenskapsenheten. Den här komponenten kalla ofta en *räkenskapskoppling*.
 
-Ett exempel på räkenskapsintegrering kan innehålla Commerce Runtime (CRT), Hardware station och kassatillägg för en finansiell dokumentleverantör och en finansiell anslutning. Den innehåller även följande komponentkonfigurationer:
+Ett exempel på räkenskapsintegration för räkenskapsenheter innehåller respektive tillägg för CRT och maskinvarustation för en leverantör av skattedokument och en räkenskapskoppling Den innehåller även följande komponentkonfigurationer:
 
-- **Konfiguration av leverantör av skattedokument** – den här konfigurationen definierar en utmatningsmetod och ett format för skattedokument. Den innehåller även en datamappning för skatter och betalsätt som gör data från Retail POS kompatibel med de värden som ska fördefinieras i räkenskapsenhetens eller tjänst inbyggda programvara.
-- **Konfiguration av räkenskapskopplare** – definierar den fysiska kommunikationen med räkenskapsenheten eller tjänsten.
+- **Konfiguration av leverantör av skattedokument** – den här konfigurationen definierar en utmatningsmetod och ett format för skattedokument. Den innehåller även en datamappning för skatter och betalsätt som gör data från Retail POS kompatibel med de värden som ska fördefinieras i räkenskapsenhetens inbyggda programvara.
+- **Konfiguration av räkenskapskopplare** – definierar den fysiska kommunikationen med räkenskapsenheten.
 
-En process för räkenskapsregistrering för ett visst kassaregister definieras av en motsvarande inställning i kassans funktionsprofil. Mer information om hur du konfigurerar processen för räkenskapsregistrering, laddar upp konfiguration av leverantör av skattedokument och räkenskapskopplare och ändra konfigurationsparametrar finns i [skapa en process för räkenskapsregistrering](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+En process för räkenskapsregistrering för ett visst kassaregister definieras av en motsvarande inställning i kassans funktionsprofil. Mer information om hur du konfigurerar processen för räkenskapsregistrering, laddar upp konfiguration av leverantör av skattedokument och räkenskapskopplare och ändra deras parametrar finns i [skapa en process för räkenskapsregistrering](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-Följande typiska flöde för räkenskapsregistrering startar med en händelse i kassan (t.ex. slutförande av en försäljningstransaktion) och implementerar en fördefinierad sekvens med steg som omfattar andra Commerce-komponenter (till exempel CRT och maskinvarustationen ).
+I följande exempel visas en typisk flöde för räkenskapsregistreringskörning för räkenskapsenheter. Flödet börjar med en händelse i POS (exempelvis slutförandet av en försäljningstransaktion) och implementerar följande sekvens med steg:
 
-1. Kassan begär ett skattedokument från ramverket för räkenskapsintegrering (FIF).
-1. FIF avgör om händelsen kräver räkenskapsregistrering.
-1. Baserat på processen för räkenskapsregistrering identifierar FIF en skattekoppling och motsvarande leverantör av skattedokument för räkenskapsregistreringen.
-1. FIF kör leverantören av skattedokument som genererar skattedokument (till exempel ett XML-dokument) som motsvarar transaktionen eller händelse.
-1. FIF returnerar det genererade skattedokumentet till kassan.
-1. Kassan begär att FIF ska skicka skattedokumentet till räkenskapsenheten eller tjänsten.
-1. FIF kör räkenskapskopplingen som bearbetar skattedokumentet och skickar den till räkenskapsenheten eller tjänsten.
-1. FIF returnerar räkenskapssvaret (d.v.s. svaret från räkenskapsenheten eller tjänsten) till kassan.
-1. Kassan analyserar skattesvaret för att avgöra om skatteregistreringen lyckades. Kassan kräver att FIF ska hantera eventuella fel. 
-1. Kassan begär att FIF-processen ska bearbetas och räkenskapssvaret sparas.
-1. Leverantören för skattedokument bearbetar räkenskapssvaret. Under den här bearbetningen hämtar räkenskapsdokumentprovidern svaret och hämtar utökade data från den.
-1. FIF sparar svaret och de utökade data till kanaldatabasen.
-1. Vid behov skriver kassan ut ett kvitto via en vanlig kvittoskrivare som är kopplad till Maskinvarustation. Inleveransen kan innehålla obligatoriska data från räkenskapssvaret.
- 
-I följande exempel visas ett flöde för räkenskapsregistreringskörning för vanliga räkenskapsenheter eller tjänster.
- 
-### <a name="fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station"></a>Skatteregistrering utförs via en enhet som är ansluten till maskinvarustationen
+1. POS begär ett skattedokumentet från CRT.
+2. CRT avgör om händelsen kräver räkenskapsregistrering.
+3. Baserat på processen för räkenskapsregistrering identifierar CRT en skattekoppling och motsvarande leverantör av skattedokument för räkenskapsregistreringen.
+4. CRT kör leverantören av skattedokument som genererar skattedokument (till exempel ett XML-dokument) som motsvarar transaktionen eller händelse.
+5. POS skickar skattedokumentet som CRT förbereder till en maskinvarustation.
+6. Maskinvarustationen kör räkenskapskopplingen som bearbetar skattedokumentet och vidarebefordrar informationen till räkenskapsenheten eller tjänsten.
+7. POS analyserar svaret från räkenskapsenheten eller tjänsten för att avgöra om räkenskapsregistreringen har lyckats.
+8. CRT sparar svaret i kanaldatabasen.
 
-Den här konfigurationen används när en fysisk räkenskapsenhet, till exempel en kvittoskrivare, är ansluten till maskinvarustationen. Den gäller även när kommunikationen med en räkenskapsenhet eller tjänst sker via programvara som är installerad på maskinvarustation. I det här fallet finns leverantören av skattedokument på och CRT, kvittoskrivaren finns på maskinvarustationen.
-
-![Skatteregistrering utförs via en enhet som är ansluten till maskinvarustationen.](media/FIF-CRT-HWS.png)
-
-### <a name="fiscal-registration-is-done-via-an-external-service"></a>Skatteregistrering utförs via en extern tjänst
-
-Denna konfiguration används när räkenskapsregistreringen utförs via en extern tjänst, t.ex. en webbtjänst som skattemyndigheten förser med. II det här fallet finns både leverantören av skattedokument och skatteanslutningen på CRT.
-
-![Skatteregistrering utförs via en extern tjänst.](media/FIF-CRT-CRT.png)
- 
-### <a name="fiscal-registration-is-done-internally-in-the-crt"></a>Skatteregistreringen görs internt i CRT
-
-Den här konfigurationen används när det inte krävs någon extern räkenskapsenhet eller tjänst för skatteregistrering. Den används till exempel när skatteregistrering görs genom digital signering av försäljningstransaktioner. II det här fallet finns både leverantören av skattedokument och skatteanslutningen på CRT.
-
-![Skatteregistreringen görs internt i CRT.](media/FIF-CRT-CRT-SGN.png)
-
-### <a name="fiscal-registration-is-done-via-a-device-or-service-in-the-local-network"></a>Skatteregistrering utförs via en enhet eller tjänst i det lokala nätverket
-
-Denna konfiguration används när en fysisk skatteanordning eller skattetjänst finns i butikens lokala nätverk och tillhandahåller ett HTTPS-approgrammeringsgränssnitt (API). I det här fallet finns leverantören av skattedokument på och CRT, kvittoskrivaren finns i kassan.
-
-![Skatteregistrering utförs via en enhet eller tjänst i det lokala nätverket.](media/FIF-CRT-POS.png)
+![Lösningsschema](media/emea-fiscal-integration-solution.png "Lösningsschema")
 
 ## <a name="error-handling"></a>Felhantering
 
-Ramverket för räkenskapsintegrering ger följande alternativ för att hantera misslyckanden under räkenskapsregistreringen:
+Ramverket för räkenskapsintegration ger följande alternativ för att hantera misslyckanden under räkenskapsregistreringen:
 
 - **Försök igen** – Operatörer kan använda det här alternativet när felet kan lösas snabbt och räkenskapsregistreringen kan köras igen. Det här alternativet kan till exempel användas när räkenskapsenheten inte är ansluten, kvittoskrivaren har slut på papper eller så finns det ett papper har fastnat i kvittoskrivaren.
 - **Avbryt** – inställningen låter operatörer senarelägga räkenskapsregistreringen av den aktuella transaktionen eller händelsen om det uppstår ett fel. När registreringen senareläggs kan operatören fortsätta att arbeta med POS kan utföra alla åtgärder som räkenskapsregistrering inte är obligatoriskt för När en händelse som kräver räkenskapsregistrering sker i POS (till exempel en ny transaktion öppnas), kommer dialogrutan för felhantering automatisk att visas för att meddela operatören att föregående transaktion inte registrerades korrekt och att ge alternativ för felhantering.
 - **Hoppa över** – operatörer kan använda det här alternativet när räkenskapsregistreringen kan utelämnas, under vissa förhållanden och vanliga operationer kan fortsätta i POS. Det här alternativet kan exempelvis användas när en försäljningstransaktion som räkenskapsregistreringen misslyckades för kan registreras i en speciell pappersjournal.
 - **Markera som registrerad** – operatörer kan använda detta alternativ när transaktionen faktiskt registrerades i räkenskapsenhet (exempelvis ett skattekvitto skrevs ut), men ett fel uppstod vid räkenskapssvaret sparades i kanaldatabasen.
-- **Senarelägg** – Operatörer kan använda det här alternativet när transaktionen inte registreras eftersom registreringstjänsten inte var tillgänglig. 
 
 > [!NOTE]
-> Alternativen **Hoppa över**, **Markera som registrerad** och **Senarelägg** som registrerad måste vara aktiverade på processen för räkenskapsregistrering innan de används. Dessutom måste motsvarande behörigheter tilldelas operatörer.
+> Alternativen **Hoppa över** och **Markera som registrerad** måste vara aktiverade på processen för räkenskapsregistrering innan de används. Dessutom måste motsvarande behörigheter tilldelas operatörer.
 
-Alternativen **Hoppa över**, **Markera som registrerad** och **Senarelägg** tillåter informationskoder att samla in viss information om felet, till exempel orsaken till felet eller en justering för att hoppa över räkenskapsregistreringen eller märka transaktionen som registrerad. Mer information om hur du ställer in parametrar för felhantering finns i [ange inställningar för felhantering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+Alternativen **Hoppa över** och **Markera som registrerade** tillåter informationskoder att samla in viss information om felet, till exempel orsaken till felet eller en justering för att hoppa över räkenskapsregistreringen eller märka transaktionen som registrerad. Mer information om hur du ställer in parametrar för felhantering finns i [ange inställningar för felhantering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### <a name="optional-fiscal-registration"></a>Valfri skatteregistrering
 
 Räkenskapsregistrering kan vara obligatorisk för vissa åtgärder och valfri för andra. Exempelvis kan räkenskapsregistrering av vanlig försäljning och returer kan vara obligatorisk men räkenskapsregistrering av åtgärder som är relaterade till kundinsättningar kan vara valfria. I detta fall blockerar misslyckande att slutföra räkenskapsregistreringen av en försäljning ytterligare försäljning, men misslyckande att slutföra räkenskapsregistreringen av en kundinsättning bör inte blockera ytterligare försäljning. Om du vill skilja mellan obligatoriska och frivilliga åtgärder, rekommenderas det att du hanterar dem via olika dokumentleverantörer och att du ställer in separata steg i räkenskapsregistreringsprocessen för leverantörerna. Parametern **Fortsätt vid fel** ska aktiveras för varje steg som hör till valfri räkenskapsregistrering. Mer information om hur du ställer in parametrar för felhantering finns i [ange inställningar för felhantering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
-### <a name="manually-rerun-fiscal-registration"></a>Manuellt köra räkenskapsregistrering igen
+### <a name="manually-running-fiscal-registration"></a>Manuellt köra räkenskapsregistrering
 
 Om räkenskapsregistrering av transaktioner eller händelser har skjutits upp efter ett fel (till exempel om operatören valde **Avbryt** i dialogrutan för felhantering), kan du manuellt köra räkenskapsregistreringen genom att åberopa en motsvarande åtgärd. För mer information, se [Aktivera manuell körning av uppskjutna räkenskapsregistreringar](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-
-### <a name="postpone-option"></a>Senarelägg alternativ
-
-Med alternativet **Senarelägg** kan du fortsätta räkenskapsregistreringsprocessen om det aktuella steget misslyckas. Det kan användas när det finns ett alternativ för säkerhetskopiering av skatteregistrering.
 
 ### <a name="fiscal-registration-health-check"></a>Hälsokontroll av räkenskapsregistrering
 
@@ -143,46 +115,37 @@ Räkenskapstransaktioner överförs till Administration av *P-jobb* tillsammans 
 En räkenskapstransaktion innehåller följande information:
 
 - Information om processen för räkenskapsregistrering (process, kopplingsgrupp, koppling och så vidare). Serienumret för räkenskapsenheten sparas också i fältet **registreringsnummer** om informationen ingår i räkenskapssvaret.
-- Status för räkenskapsregistreringen: **slutförd** för att registreringen har lyckats, **överhoppad** om operatören har valt alternativet **Hoppa över** för en misslyckad registrering eller, **Markerad som registrerad** om operatören har valt alternativet **Markerad som registrerad** eller **senarelagd** om operatören valde alternativet **Senarelägga**.
-- Informationskodtransaktioner som är relaterade till den valda skattetransaktionen. Visa informationskodtransaktionerna, på snabbfliken **räkenskapstransaktioner** väljer du en räkenskapstransaktion som har statusen **överhoppad** eller **markeras som registrerats** eller **senarelagd** och väljer sedan **informationskodtransaktioner**.
-
-Genom att välja **Utökade data** kan du även visa egenskaperna för räkenskapstransaktionen. Listan över egenskaper som kan visas är specifik för den funktion för räkenskapsregistrering som genererat räkenskapstransaktionen. Du kan till exempel visa digital signatur, serienummer, certifikatets tumavtryck och andra skattetransaktionsegenskaper för den digitala signeringsfunktionen för Frankrike.
+- Status för räkenskapsregistreringen: **slutförd** för att registreringen har lyckats, **överhoppad** om operatören har valt alternativet **hoppa över** för en misslyckad registrering eller **markera som registrerad** om operatören har valt alternativ **Markera som registrerad**.
+- Informationskodtransaktioner som är relaterade till den valda skattetransaktionen. Visa informationskodtransaktionerna, på snabbfliken **räkenskapstransaktioner** väljer du en räkenskapstransaktion som har statusen **överhoppad** eller **markeras som registrerats** och väljer sedan **informationskodtransaktioner**.
 
 ## <a name="fiscal-texts-for-discounts"></a>Räkenskapstexter för rabatter
 
-Vissa länder eller regioner har särskilda önskemål om ytterligare texter som måste skrivas ut på skattekvitton när olika sorters rabatter tillämpas. Räkenskapsintegrering kan du ställa in en särskild text för en rabatt som skrivs ut efter en rabattrad på en kvittoskrivare. För manuella rabatter kan du konfigurera en räkenskapstext för den informationskod som anges som **produktrabatt**-informationskod i funktionsprofil för kassa. För mer information om hur man sätter upp räkenskapstexter för rabatter, se [skriva in räkenskapstexter för rabatter](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
+Vissa länder eller regioner har särskilda önskemål om ytterligare texter som måste skrivas ut på skattekvitton när olika sorters rabatter tillämpas. Räkenskapsintegration kan du ställa in en särskild text för en rabatt som skrivs ut efter en rabattrad på en kvittoskrivare. För manuella rabatter kan du konfigurera en räkenskapstext för den informationskod som anges som **produktrabatt**-informationskod i funktionsprofil för kassa. För mer information om hur man sätter upp räkenskapstexter för rabatter, se [skriva in räkenskapstexter för rabatter](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
 
 ## <a name="printing-fiscal-x-and-fiscal-z-reports"></a>Skriva ut skatterapporter X och Z
 
-Funktionen räkenskapsintegrering stöder generering av rapporter vid dagens slut som är specifika för integrerad räkenskapsenhet eller tjänst:
+Funktionen räkenskapsintegration stöder generering av rapporter vid dagens slut som är specifika för integrerad räkenskapsenhet eller tjänst:
 
 - Nya knappar som kör motsvarande operationer ska läggas till kassaskärmlayout. Mer information finns i [skapa skatterapporter X/Z från POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
-- I exemplet på räkenskapsintegrering bör dessa transaktioner anpassas till motsvarande verksamhet i räkenskapsenheten.
+- I exemplet på räkenskapsintegration bör dessa transaktioner anpassas till motsvarande verksamhet i räkenskapsenheten.
 
-## <a name="fiscal-integration-samples-in-the-commerce-sdk"></a>Exempel på räkenskapsintegrering i Commercer SDK
+## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Exempel på räkenskapsintegration i Retail SDK
 
-Följande exempel på räkenskapsintegrering är för tillfället tillgängliga i Commerce SDK:
+Följande exempel på räkenskapsintegration är tillgängliga i Retail SDK:
 
-- [Exempel på integrering av kvittoskrivare för Italien](./emea-ita-fpi-sample.md)
-- [Exempel på integrering av kvittoskrivare för Polen](./emea-pol-fpi-sample.md)
-- [Exempel på skatteregistreringstjänsten för Österrike](./emea-aut-fi-sample.md)
-- [Exempel på skatteregistreringstjänsten för Tjeckien](./emea-cze-fi-sample.md)
-- [Exempel på integrering av kontrollenhet för Sverige](./emea-swe-fi-sample.md)
+- [Exempel på integrering av kvittoskrivare för Italien](emea-ita-fpi-sample.md)
+- [Exempel på integrering av kvittoskrivare för Polen](emea-pol-fpi-sample.md)
+- [Exempel på skatteregistreringstjänsten för Österrike](emea-aut-fi-sample.md)
+- [Exempel på skatteregistreringstjänsten för Tjeckien](emea-cze-fi-sample.md)
+- [Exempel på integration av kontrollenhet för Sverige](./emea-swe-fi-sample.md)
 - [Exempel på skatteregistreringstjänsten för Tyskland](./emea-deu-fi-sample.md)
-- [Exempel på integrering av kvittoskrivare för Ryssland](./rus-fpi-sample.md)
 
-Följande skatteintegreringsfunktion har också implementerats med hjälp av ramverket för skatteintegrering, men är tillgängligt vid leverans och ingår inte i Commerce SDK:
+Följande funktioner för räkenskapsintegration finns också i Retail SDK men för närvarande utnyttjar inte i ramverket för räkenskapsintegration. Migrering av den här funktionen till ramverket för räkenskapsintegration planeras för senare uppdateringar.
 
-- [Skatteregistrering för Brasilien](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
-- [Digital signatur i Frankrike](./emea-fra-cash-registers.md)
 
-Följande funktion för räkenskapsintegrering finns också i Commerce SDK, men för närvarande utnyttjar den inte i ramverket för räkenskapsintegrering. Migrering av den här funktionen till ramverket för räkenskapsintegrering planeras för senare uppdateringar.
+- [Digital signatur i Frankrike](emea-fra-cash-registers.md)
+- [Digital signatur för Norge](emea-nor-cash-registers.md)
 
-- [Digital signatur för Norge](./emea-nor-cash-registers.md)
+Följande tidigare funktioner för räkenskapsintegrering som är tillgängliga i Retail SDK använder inte ramverket för räkenskapsintegration och kommer att föråldras i senare uppdateringar:
 
-Följande äldre funktioner för räkenskapsintegrering som är tillgängliga i Commerce SDK använder inte ramverket för räkenskapsintegrering och kommer att göras inaktuella i senare uppdateringar:
-
-- [Exempel på integrering av kontrollenhet för Sverige (äldre)](./retail-sdk-control-unit-sample.md)
-- [Digital signatur i Frankrike (äldre)](./emea-fra-deployment.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Exempel på integration av kontrollenhet för Sverige (äldre)](./retail-sdk-control-unit-sample.md)

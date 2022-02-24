@@ -78,6 +78,3 @@ Med ett nytt alternativ kan cheferna visa prestandan för både deras direktrapp
 Vi är glada att kunna tillkännage att regionerna Kanada och Sydostasien kommer att vara tillgängliga för Talent den 1 augusti 2019. Med den här ändringen kan du skapa miljöer i de kanadensiska och asiatiska regionerna, och all Talent-data kommer att enbart behållas inom dessa platser. Du kan skapa en miljö i dessa nya regioner genom att markera platsen i dialogrutan Ny miljö och använda den miljön för att konfigurera Talent i LCS enligt beskrivningen i [Konfigurera Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 Datamigrering av befintliga projekt från andra områden till kanadensiska och asiatiska regioner stöds inte. Endast nya projekt kan etableras för de nya regioner som stöds.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

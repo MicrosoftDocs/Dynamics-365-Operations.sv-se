@@ -1,10 +1,12 @@
 ---
 title: Manuell uppdatering av tillgångsräknare
 description: Det här avsnittet beskriver manuell uppdatering av tillgångsräknare i Tillgångshantering.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetCounter
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 74d840cbb064018560a6abc2823f520c2f3179ac42b149c0507c9421a4e73391
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5318bac961682f88e192ac70c4993c62b69b399c
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776444"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020895"
 ---
 # <a name="manual-update-of-asset-counters"></a>Manuell uppdatering av tillgångsräknare
 
@@ -54,13 +56,10 @@ Observera följande:
 
 Bilden nedan visar ett exempel på sidan **Tillgångsräknare**.
 
-![Figur 1.](media/11-work-orders.png)
+![Figur 1](media/11-work-orders.png)
 
 På sidan **Tillgångsräknare** (**Tillgångshantering** > **Förfrågningar** > **Tillgångar** > **Tillgångsräknare**) kan du göra räknarregistreringar på flera tillgångar samtidigt, efter behov.
 
 >[!NOTE]
 >Du kan ställa in ett intervall för att definiera avvikelser i manuella räknarregistreringar. Du kan även ange vilken typ av meddelande som visas om registreringarna ligger utanför det definierade intervallet. Mer information om hur du ställer in räknare finns i [räknare](../setup-for-objects/counters.md).
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

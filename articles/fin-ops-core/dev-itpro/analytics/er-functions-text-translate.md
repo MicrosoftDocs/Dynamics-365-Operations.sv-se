@@ -2,8 +2,11 @@
 title: Funktionen TRANSLATE ER
 description: Det h채r avsnittet inneh책ller information om hur funktionen TRANSLATE elektronisk rapportering (ER) anv채nds.
 author: NickSelin
+manager: kfend
 ms.date: 04/02/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b43c1edb2a26ebe01e8d5cf69e1ff377c6c8bf84e889b6bb3d1828d3dc84b53
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c5d192b8679d6df2c44a0038fe4ffc181a6a54df
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721938"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685313"
 ---
 # <a name="translate-er-function"></a>Funktionen TRANSLATE ER
 
@@ -74,6 +77,3 @@ Funktionen `TRANSLATE` ers채tter ett tecken i taget. Funktionen ers채tter det f�
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Textfunktioner](er-functions-category-text.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,34 +2,40 @@
 title: Lägga till stöd för ett innehållsleveransnätverk (CDN)
 description: I det här avsnittet beskrivs hur du lägger till ett innehållsleveransnätverk (CDN) på Microsoft Dynamics 365 Commerce-miljön.
 author: brianshook
-ms.date: 03/17/2021
+manager: annbe
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: caed13c37c9043a2acea751c8a8b15261f26ecb2e10b6e64c0ce50f6ce9a68de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0e888fca4a5401f1df6e61b10358489846ad4b0e
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722064"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517218"
 ---
-# <a name="add-support-for-a-content-delivery-network-cdn"></a>Lägga till stöd för nätverk för innehållsleverans
+# <a name="add-support-for-a-content-delivery-network-cdn"></a>Lägga till stöd för ett innehållsleveransnätverk (CDN)
+
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du lägger till ett innehållsleveransnätverk (CDN) på Microsoft Dynamics 365 Commerce-miljön.
 
+## <a name="overview"></a>Översikt
+
 När du konfigurerar en näthandelsmiljö i Dynamics 365 Commerce kan du konfigurera den så att den fungerar med ditt CDN-tjänst. 
 
-Din anpassade domän kan aktiveras under etableringsprocessen för näthandelsmiljön. Du kan också använda en servicebegäran för att ställa in den när etableringen har slutförts. Etableringsprocessen för näthandelsmiljön genererar ett värdnamn som associeras med miljön. Det här värdnamnet har följande format, där \<*e-commerce-tenant-name*\> är namnet på din miljö:
+Din anpassade domän kan aktiveras under etableringsprocessen för näthandelsmiljön. Du kan också använda en serviceförfrågan för att ställa in den när etableringen har slutförts. Etableringsprocessen för näthandelsmiljön genererar ett värdnamn som associeras med miljön. Det här värdnamnet har följande format, där \<*e-commerce-tenant-name*\> är namnet på din miljö:
 
 &lt;näthandelsinnehavarens-namn&gt;.commerce.dynamics.com
 
@@ -37,9 +43,13 @@ Värdnamnet eller slutpunkten som genereras under etableringsprocessen har stöd
 
 Dessutom behandlas *statik* (JavaScript eller övergripande formatmallar \[CSS\]-filer) från handel från den slutpunkt som genereras av handel (\*.commerce.dynamics.com). Statisk kan endast cachelagras om värdnamnet eller slutpunkten som genereras av handel placeras bakom CDN.
 
-## <a name="set-up-ssl"></a>Ställ in SSL
+## <a name="set-up-ssl"></a>Ställa in SSL
 
-När du har etablerat din handelsmiljö med den anpassade domänen som tillhandahålls, eller när du har angett den anpassade domänen för din miljö med hjälp av en servicebegäran, du måste arbeta med Commerce-registreringsteamet för att planera DNS-ändringarna.
+För att garantera att SSL konfigureras och att statisk cachelagras måste du konfigurera ditt CDN så att det är associerat med det värdnamn som skapas i handel för miljön. Du måste också cachelagra följande mönster för statisk: 
+
+/\_msdyn365/\_scnr/\*
+
+När du har etablerat din handelsmiljö med den anpassade domänen som tillhandahålls, eller när du har angett den anpassade domänen för din miljö med hjälp av en serviceförfrågan, pekar du på den anpassade domänen efter det värdnamn eller den slut punkt som skapas av handel.
 
 Som tidigare nämnts har det genererade värdnamnet eller slutpunkten endast stöd för ett SSL-certifikat för \*.commerce.dynamics.com. Det stöder inte SSL för anpassade domäner.
 
@@ -47,7 +57,7 @@ Som tidigare nämnts har det genererade värdnamnet eller slutpunkten endast st�
 
 Alla CDN-tjänster kan användas med en handelsmiljö. Nedan följer två exempel:
 
-- **Microsoft Azure Front Door Service** – Azure CDN-lösningen. Mer information om Azure Front Door Service finns i [dokumentationen för Azure Front Door Service](/azure/frontdoor/).
+- **Microsoft Azure Front Door Service** – Azure CDN-lösningen. Mer information om Azure Front Door Service finns i [dokumentationen för Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor/).
 - **Akamai Dynamic Site Accelerator** – mer information finns i [Dynamic Site Accelerator](https://www.akamai.com/us/en/products/performance/dynamic-site-accelerator.jsp)
 
 ## <a name="cdn-setup"></a>Inställning av CDN
@@ -56,33 +66,28 @@ Inställningen av CDN består av följande allmänna steg:
 
 1. Lägg till en klientvärd.
 1. Konfigurera en serverpool.
-1. Ställ in regler för dirigering.
+1. Ställ in regler för flöde och cachelagring.
 
 ### <a name="add-a-front-end-host"></a>Lägg till en klientvärd
 
 Alla CDN-tjänster kan användas, men i det här avsnittet används Azure Front Door Service. 
 
-Information om hur du ställer in Azure Front Door Service finns i [snabbstart: skapa en Front Door för ett mycket tillgängligt globalt webbprogram](/azure/frontdoor/quickstart-create-front-door).
+Information om hur du ställer in Azure Front Door Service finns i [snabbstart: skapa en Front Door för ett mycket tillgängligt globalt webbprogram](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
 
 ### <a name="configure-a-backend-pool-in-azure-front-door-service"></a>Konfigurera en serverpool i Azure Front Door Service
 
 För att konfigurera en serverpool i Azure Front Door Service, följ dessa steg.
 
-1. Lägg till **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** till en serverpool som en anpassad värd som har en servervärdrubrik som är densamma som **&lt;ecom-tenant-name&gt;.commerce.dynamics.com**.
+1. Lägg till **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** till en serverpool som en anpassad värd som har en tom servervärdrubrik.
 1. Under **belastningsutjämning** lämna standardvärdena.
-1. Inaktivera hälsokontroller för serverpool.
 
 I följande bild visas dialogrutan **Lägg till en serverpool** i Azure Front Door Service med serverpoolens värdnamn angivet.
 
-![Lägga till en dialogruta för en serverpool.](./media/CDN_BackendPool.png)
+![Lägga till en dialogruta för en serverpool](./media/CDN_BackendPool.png)
 
 I följande bild visar dialogrutan **Lägg till en serverpool** i Azure Front Door Service med standardvärden för belastningsutjämning.
 
-![Lägga till en dialogruta för en serverpool (forts.)](./media/CDN_BackendPool_2.png)
-
-> [!NOTE]
-> Se till att du inaktiverar **hälsosonder** när du ställer in din egen Azure Front Door-tjänst för Commerce.
-
+![Lägga till en dialogruta för en serverpool fortsatt](./media/CDN_BackendPool_2.png)
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Ställ in regler i Azure Front Door Service
 
@@ -92,13 +97,31 @@ Så här skapar du en flödesregel i Azure Front Door Service:
 1. Skriv **Dokument** i fältet **Standard**.
 1. I fältet **accepterat protokoll**, välj **HTTP och HTTPS**.
 1. I fältet **Klientvärd** ange **dynamics-ecom-tenant-name.azurefd.net**.
-1. Under **Mönster att matcha**, i det övre fältet anger du **/\***.
-1. Under **Flödesdetaljer**, ange alternativet **Flödestyp** till **Framåt**.
+1. Under **Mönster att matcha** i det övre fältet anger du **/\** _.
+1. Under **Flödesdetaljer** anger du alternativet **Flödestyp** som **Framåt**.
 1. I fältet **Serverpool** välj **ecom-backend**.
 1. I fältgruppen **Vidarebefordringsprotokoll** välj alternativet **Matcha begäran**. 
 1. Ange alternativet **URL-omskrivning** till **inaktiverad**.
 1. Ange alternativet **cachelagring** till **inaktiverad**.
 
+Så här skapar du en cachelagringsregel i Azure Front Door Service:
+
+1. Lägg till en cachelagringsregel.
+1. Skriv **statisk** i fältet **namn**.
+1. I fältet **accepterat protokoll**, välj **HTTP och HTTPS**.
+1. I fältet **Klientvärd** ange **dynamics-ecom-tenant-name.azurefd.net**.
+1. Under **Mönster att matcha** i det övre fältet, ange **/\_msdyn365/\_scnr/\** _.
+1. Under **Flödesdetaljer** anger du alternativet **Flödestyp** som **Framåt**.
+1. I fältet **Serverpool** välj **ecom-backend**.
+1. I fältgruppen **Vidarebefordringsprotokoll** välj alternativet **Matcha begäran**.
+1. Ange alternativet **URL-omskrivning** till **inaktiverad**.
+1. Ange alternativet **cachelagring** till **inaktiverad**.
+1. I fältet **Fråga strängcachelagring** välj **cachelagra varje unik URL**.
+1. I fältgruppen **dynamisk komprimering** välj alternativet **aktiverad**.
+
+I följande bild visas dialogrutan **Lägg till en regel** i Azure Front Door Service.
+
+![Dialogrutan Lägg till en regel](./media/CDN_CachingRule.png)
 
 > [!WARNING]
 > Om den domän som du ska använda redan är aktiv och publicerad, skapar du ett supportärende från panelen **Support** i [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) för att få hjälp med nästa steg. Mer information finns i [Få support för Finance and Operations-appar eller Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
@@ -107,21 +130,36 @@ Om din domän är ny och inte är en befintlig aktiv domän kan du lägga till d
 
 I följande bild visas dialogrutan **CNAME-konfiguration** i Azure Front Door Service.
 
-![Dialogrutan CNAME-konfiguration.](./media/CNAME_Configuration.png)
+![Dialogrutan CNAME-konfiguration](./media/CNAME_Configuration.png)
 
 Du kan använda Azure Front Door Service för att hantera certifikatet, eller så kan du använda ditt eget certifikat för den anpassade domänen.
 
 I följande bild visas dialogrutan **anpassade domän-HTTPS** i Azure Front Door Service.
 
-![Dialogrutan HTTPS för anpassad domän.](./media/Custom_Domain_HTTPS.png)
+![Dialogrutan anpassad domän-HTTPS](./media/Custom_Domain_HTTPS.png)
 
-Detaljerad information om hur du lägger till en anpassad domän i din Azure Front Door Service finns i [lägga till en anpassad domän i din Front Door](/azure/frontdoor/front-door-custom-domain).
+Detaljerad information om hur du lägger till en anpassad domän i din Azure Front Door Service finns i [lägga till en anpassad domän i din Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
 
-Din CDN ska nu vara korrekt konfigurerad så att den kan användas med din näthandelssajt.
+Din CDN ska nu vara korrekt konfigurerad så att den kan användas med din näthandelsplats.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Implementeringsalternativ för Content Delivery Network](cdn-options.md)
+[Konfigurera ditt domännamn](configure-your-domain-name.md)
 
+[Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Skapa en näthandelsplats](create-ecommerce-site.md)
+
+[Associera en Dynamics 365 Commerce-webbplats med en onlinekanal](associate-site-online-store.md)
+
+[Hantera robots.txt-filer](manage-robots-txt-files.md)
+
+[Överför URL-omdirigeringar i bulk](upload-bulk-redirects.md)
+
+[Ställa in en B2C-innehavare i Commerce](set-up-B2C-tenant.md)
+
+[Ställa in anpassade sidor för användarinloggningar](custom-pages-user-logins.md)
+
+[Konfigurera flera B2C-innehavare i en Commerce-miljö](configure-multi-B2C-tenants.md)
+
+[Aktivera platsbaserad butiksdetektering](enable-store-detection.md)

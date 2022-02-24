@@ -2,9 +2,11 @@
 title: Planera en organisationshierarki
 description: Innan du konfigurerar organisationer och organiationshierarkier, se till att du förstår hur du utformar din verksamhet på bästa sätt.
 author: sericks007
-ms.date: 02/19/2021
+manager: AnnBe
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef906c0d60639da763f2a9c1e1adf508b0849b8978dff17cd0e7b3936fc4779e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771882"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694699"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planera en organisationshierarki
 
@@ -164,7 +166,7 @@ Driftenheter använder landssammanhanget för den överordnade juridiska persone
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Om organisationen modelleras som en juridisk person
 
-I länder/regioner som stöds kan de flesta lagstadgade rapporter skapas. 
+I länder/regioner som stöds kan de flesta lagstadgade rapporter skapas. Information om vilka rapporter som är tillgängliga för varje land/region finns i [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (En CustomerSource-logo ett obligatoriskt fält.)
 
 > [!NOTE]
 > Ett bokföringsskikt i redovisningen att du kan göra justeringar poster för ett moderbolag som använder en annan redovisningsstandard än det underordnade företaget. För ett företag som använder allmänt accepterad boföringspraxis i Storbritannien (UK GAAP) kan du göra justeringar i bokföringsskiktet, till exempel. Dessa poster kan konsolideras i ett moderbolag som använder allmänt accepterade redovisningsprinciper (GAAP) i USA. Justeringsposterna påverkar inte UK GAAP-rapporteringen.
@@ -239,6 +241,3 @@ Tänk på följande när du implementerar en organisationshierarki:
 - Innan du utformar stora omstruktureringsscenarier använder du hierarkins giltighetsdatum för att utföra en följdanalys och ett valideringstest.
 - Använd utkastläge för att ändra en hierarki innan du publicerar en ny version i en produktionsmiljö.
 - Begränsa antalet personer som har behörighet att lägga till eller ta bort organisationer från en hierarki i en produktionsmiljö. Ett lägre antal minskar risken för kostsamma misstag och behovet av korrigeringar.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

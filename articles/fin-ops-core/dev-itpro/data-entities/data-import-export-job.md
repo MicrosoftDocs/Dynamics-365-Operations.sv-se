@@ -1,30 +1,29 @@
 ---
 title: Översikt över jobb för import och export av data
 description: Använda arbetsytan Datahantering för att skapa och hantera dataimport- och dataexportjobb.
-author: peakerbl
-ms.date: 10/21/2021
-ms.topic: overview
+author: Sunil-Garg
+manager: AnnBe
+ms.date: 11/02/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3af49d9355f37e0016f491ed37050f75bbc65d72
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071095"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684070"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Översikt över jobb för import och export av data
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 För att skapa och hantera dataimport- och dataexportjobb kan du använda arbetsytan **Datahantering**. Som standard skapar processen för dataimport och -export ett mellanlagringsregister för varje enhet i måldatabasen. Med tillfälliga register kan du kontrollera, rensa eller konvertera data innan du flyttar den.
 
@@ -71,9 +70,6 @@ När du väljer en enhet markerar du format för de data som ska exporteras elle
 | XML                    | \-Inte tillämpligt                                      | XML-element XML-attribut |
 | Avgränsad, fast bredd | Komma, semikolon, flik, lodrätt streck, kolon | \-Inte tillämpligt                     |
 
-> [!NOTE]
-> Det är viktigt att välja rätt värde för **Radavgränsare**, **Kolumnavgränsare** och **Textkvalifierare**, om alternativet **Filformat** anges till **Avgränsat**. Kontrollera att dina data inte innehåller det tecken som används som avgränsare eller kvalificerare, eftersom detta kan leda till fel under import och export.
-
 ### <a name="sequence-the-entities"></a>Ordna enheterna
 Enheter kan ordnas i en datamall eller i import- och exportjobb. När du kör ett jobb som innehåller mer än en datatabell måste du kontrollera att datatabellerna har ordnats korrekt. Du ordnar entiteter i första hand så att du kan lösa eventuella funktionella samband mellan olika enheter. Om enheterna inte har några funktionella samband kan de schemaläggas parallell import eller export.
 
@@ -112,7 +108,7 @@ Det finns två vyer för mappning: **Mappningsvisualisering**, som är standard,
 
 Du kan skapa en mappning på sidan genom att markera **Skapa källmappning**. En skapad mappning fungerar som en automatisk mappning. Därför måste du mappa de omappade fälten manuellt.
 
-![Datamappning.](./media/dixf-map.png)
+![Datamappning](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Kontrollera säkerheten för import- eller exportjobbet
 Åtkomsten till arbetsytan **Datahantering** kan begränsas så att icke-administratörer endast kan få åtkomst till specifika datajobb. Åtkomsten till data-jobbet innebär fullständig åtkomst till jobbets körningshistorik samt till mellanlagringsregistren. Därför måste du se till att en lämplig åtkomstkontroll finns på plats när du skapar ett datajobb.
@@ -138,7 +134,7 @@ Du kan köra ett jobb en gång genom att välja knappen **Importera** eller **Ex
 ## <a name="validate-that-the-job-ran-as-expected"></a>Validera att jobbet har körts som förväntat
 Jobbhistoriken blir tillgänglig för felsökning och undersökning för såväl import- som exportjobb. Historiska jobbkörningar ordnas efter tidsintervall.
 
-![Intervall för jobbhistorik.](./media/dixf-job-history.md.png)
+![Intervall för jobbhistorik](./media/dixf-job-history.md.png)
 
 Varje gång du kör jobbet erhåller du följande information:
 
@@ -167,7 +163,19 @@ För att påskynda importen av data kan parallell bearbetning av import av en fi
     - I fältet **Importera antal för tröskelvärdepost** anger du antal för tröskelvärdepost för import. Detta bestämmer antalet poster som ska bearbetas av en tråd. Om en fil har 10 000 poster innebär detta att antalet poster på 2 500 med antalet uppgifter är 4 och varje tråd bearbetar 2 500 poster.
     - I fältet **Import uppgiftsantal** anger du antalet importerade uppgifter. Detta får inte överskrida de maximalt antal trådar som allokerats för batchbearbetning i **Systemadministration \>Serverkonfiguration**.
 
-## <a name="job-history-clean-up"></a>Rensa jobbhistorik 
+## <a name="clean-up-the-staging-tables"></a>Rensa mellanlagringsregister
+Från och med plattformsuppdatering 29 har den här funktionen ersatts. Detta ersätts av en ny version av funktionen för jobbhistorikrensning som förklaras nedan.
+
+Du kan rensa mellanlagringstabeller genom att använda funktionen **Mellanlagringsrensning** i arbetsytan **Datahantering**. Du kan använda följande alternativ för att välja vilka poster som ska tas bort från vilka mellanlagringsregister:
+
+- **Enhet** – Om bara en enhet är tillgänglig kommer samtliga poster i den enhetens mellanlagringstabell att raderas. Välj detta alternativ om du vill rensa alla data för enheten mellan alla dataprojekt och alla jobb.
+- **Jobb-ID** – Om bara ett jobb-ID tillhandahålls, kommer alla poster för alla enheter i det valda jobbet att tas bort från tillhörande mellanlagringstabeller.
+- **Dataprojekt** – Om bara ett dataprojekt har markerats kommer alla poster för alla entiteter och över alla jobb för det valda dataprojektet att tas bort.
+
+Du kan också kombinera alternativen för att ytterligare begränsa den postuppsättning som raderas.
+
+## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Rensa jobbhistoriken (tillgänglig i plattformsuppdatering 29 och senare)
+
 Rensningsfunktionen för jobbhistoriken i datahantering måste användas för att schemalägga en periodisk rensning av körningshistoriken. Den här funktionen ersätter den tidigare mellanlagringsfunktionen, som nu är inaktuell. Följande tabeller kommer att rensas upp av rensningsprocessen.
 
 -   Alla mellanlagringsregister
@@ -203,12 +211,18 @@ När du schemalägger rensningsprocessen måste följande parametrar anges för 
 > [!NOTE]
 > Om posterna i mellanlagringsplatserna inte rensas fullständigt bör du kontrollera att rensningsjobbet är schemalagt att köra i upprepning. Som förklaras ovan kommer jobbet att bara rensa så många körnings-ID som möjligt inom de maximalt angivna timmarna i alla rensningskörningar. Jobbet måste vara schemalagt för att kunna köras regelbundet för att alla återstående uppsamlingsfiler ska kunna rensas.
 
-## <a name="job-history-clean-up-and-archival"></a>Rensning och arkivering för jobbhistorik 
-Funktionen för rensning och arkivering av jobbhistorik ersätter de tidigare versionerna av rensningsfunktionen. Det här avsnittet innehåller en beskrivning av de nya funktionerna.
+## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Rensning och arkivering av jobbhistorik (finns för förhandsgranskning i plattformsuppdatering 39 eller version 10.0.15)
+Funktionen rensning och arkivering av jobbhistorik ersätter de tidigare versionerna av rensningsfunktion. Det här avsnittet innehåller en beskrivning av de nya funktionerna.
 
-En av de viktigaste ändringarna i rensningsfunktionen är användningen av systembatchjobbet för att rensa historiken. Med systembatchjobbet kan Finance and Operations-appar automatiskt schemaläggas att köra batchjobbet så snart systemet är redo. Du behöver inte längre tidsplanera batchjobbet manuellt. I detta standardkörningsläge körs batchjobbet varje timme med början vid midnatt, och bibehåller sedan körningshistoriken för de senaste sju dagarna. Den rensade historiken arkiveras för framtida hämtning. Från och med version 10.0.20 är den här funktionen alltid på.
+En av de viktigaste ändringarna i rensningsfunktionen är användning av systembatchjobb för att rensa historiken. Med systembatchjobb kan Finance and Operations-appar automatiskt schemaläggas och köras så snart systemet är klart. Du behöver inte längre tidsplanera batchjobbet manuellt. I det här standardkörnings läget körs batchjobbet varje timme med början vid 12 midnatt och behåller körningshistoriken för de senaste sju dagarna. Den rensade historiken arkiveras för framtida hämtning.
 
-Den andra ändringen i rensningsprocessen är arkiveringen av den rensade körningshistoriken. Rensningsjobbet kommer att arkivera de raderade posterna till den blob-lagring som DIXF använder för vanliga integreringar. Den arkiverade filen kommer att vara i DIXF-paketformat och den kommer att vara tillgänglig i blobben för hämtning i sju dagar. Standardlivslängden på sju dagar för den arkiverade filen kan ändras i parametrarna till maximalt 90 dagar.
+> [!NOTE]
+> Eftersom den här funktionen är i förhandsversion kommer inte systembatchjobb att radera någon körningshistorik innan den aktiveras via DMFEnableExecutionHistoryCleanupSystemJob. När funktionen är allmänt tillgänglig i en senare version, krävs inte den här förhandsversionen och systembatchjobbet startar och arkiveras när systemet är klart, baserat på det definierade schemat enligt beskrivningen ovan. 
+
+> [!NOTE]
+> I en senare version kommer tidigare versioner av rensningsfunktionen att tas bort från Finance and Operations-appar.
+
+Den andra ändringen i rensningsprocessen är arkiveringen av den rensade körningshistoriken. Rensningsjobbet kommer att arkivera de raderade posterna till den blob-lagring som DIXF använder för vanliga integrationer. Den arkiverade filen kommer att vara i DIXF-paketformat och den kommer att vara tillgänglig i blobben för hämtning i sju dagar. Standardlivslängden på sju dagar för den arkiverade filen kan ändras i parametrarna till maximalt 90 dagar.
 
 ### <a name="changing-the-default-settings"></a>Ändra standardinställningarna
 Den här funktionen är för närvarande i förhandsversion och måste uttryckligen aktiveras på ett sätt som aktiverar DMFEnableExecutionHistoryCleanupSystemJob. Funktionen för rensning av mellanlagring måste också aktiveras i funktionshanteringen.
@@ -229,6 +243,3 @@ För att hämta den arkiverade körningshistoriken ska du gå till arbetsytan f�
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

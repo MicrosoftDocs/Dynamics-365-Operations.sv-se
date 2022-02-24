@@ -1,39 +1,37 @@
 ---
 title: Skapa ett teamkalender
 description: Visa och skapa teamkalendrar i Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/26/2021
+author: andreabichsel
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8ee39f35f9d81f47c5438ddf48451d24ab0c0ed3
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2ec767a868d5c76b57465c451b8cc893b8b0a56b
+ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065263"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "4962275"
 ---
 # <a name="view-team-and-company-calendars"></a>Visa team- och företagskalendrar
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan visa team- och företagskalendrar i Dynamics 365 Human Resources. Endast teamkalendrar visar direktrapporter, enligt definitionen i den här radstrukturen.
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>Visa teamkalendern som en medarbetare
 
-- I arbetsytan **Självbetjäning för medarbetare** väljer du **Frånvarokalender för team** under **Sammanfattning**.
+1. I arbetsytan **Självbetjäning för medarbetare** väljer du **Frånvarokalender för team** under **Sammanfattning**.
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>Visa teamkalendern som en chef
 
@@ -42,21 +40,6 @@ Du kan visa team- och företagskalendrar i Dynamics 365 Human Resources. Endast 
 2. Välj **Tjänstledighet och frånvaro** och välj sedan **Visa frånvarokalender för chef**.
 
 Chefer kan också komma åt teamkalendern från **Väntande ledighetsansökningar för mitt team**, **Godkänd ledighet** och **Ledighetsansökningar**. 
-
-## <a name="view-your-absence-manager-calendar-as-the-absence-manager"></a>Visa din kalender för frånvaroansvarig som frånvaroansvarig
-
-> [!NOTE]
-> Om du vill visa kalendern för frånvaroansvarig måste du först aktivera funktionen **(förhandsgranska) Frånvarohanteraren för att hantera tjänstledighet** i Funktionshantering. Mer information om hur du aktiverar funktionerna för förhandsgransknings finns i [hantera funktioner](hr-admin-manage-features.md).
-
-Användare med rollen Frånvaroansvarig kan visa ledighetsansökningar i sin kalender. Följ dessa steg för att komma till ledighetskalendern.
-
-1. I arbetsytan **Självbetjäning för medarbetare**, välj **Tjänstledighetshantering** och sedan **Frånvaroansvarigkalendern**.
-
-2. I fältet **Datum** anger du önskade datum.
-
-3. Uppdatera visningsalternativen efter behov.
-
-I frånvaroansvarigkalendern visas alla poster för medarbetarna som rapporterar till frånvarochefen i tjänstledighetshierarki.
 
 ## <a name="view-a-company-calendar"></a>Visa en företagskalender
 
@@ -78,15 +61,14 @@ Kalendrar innehåller nu ytterligare filter och alternativ. Alla kalendrar inklu
 - Ansökningar om ledighet 
 - Tjänstledighetsansökningar
 
-Kalenderkonfiguration i på sidan **Tjänstledighets- och frånvaroparametrar** bestämmer tillgängliga visningsalternativ.
+Kalenderkonfiguration i tjänstledighets- och frånvaroparametrar bestämmer tillgängliga visningsalternativ.
 
 Du kan även filtrera kalendern efter chef eller avdelning. Den primära befattningstilldelningen avgör vilka medarbetare som visas när dessa filter ställs in. 
 
-> [!IMPORTANT]
-> Du kan aktivera funktionen **företagsövergripande tjänstledighet** i funktionshanteringen. Sedan måste du aktivera funktionen på sidan **delade personalparametrar** för att visa filtret för juridisk person i kalendrar. Mer information finns i [Konfigurera parametrar för tjänstledighet och frånvaro](hr-leave-and-absence-parameters.md).
-> 
-> Du kan filtrera kalendern per juridisk person. Om du vill visa alla medarbetare oavsett juridisk person avmarkerar du filterrutan och trycker på **Retur**. 
+>[!IMPORTANT]
+>Att visa tjänstledighet och frånvaro för alla företag är för närvarande i förhandsgranskning. Du måste aktivera den i **sandbox-miljön**. Mer information om att aktivera förhandsfunktioner finns i [Hantera funktioner](hr-admin-manage-features.md).<br><br>
+>Sedan måste du aktivera funktionen i **delade personalparametrar** för att visa filtret för juridisk person i kalendrar. Mer information finns i [Konfigurera parametrar för tjänstledighet och frånvaro](hr-leave-and-absence-parameters.md).<br><br>
+>Du kan filtrera kalendern per juridisk person. Om du vill visa alla medarbetare oavsett juridisk person avmarkerar du filterrutan och trycker på RETUR. 
 
 Information om kalenderinställningar finns i [konfigurera kalenderparametrar](hr-leave-and-absence-parameters.md?configure-calendar-parameters)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -72,5 +72,3 @@ Tilldela användarrollen Talang till talangrelationsgruppen.
 
    1. Logga in på karriärportalen från ett nytt webbläsarfönster.
    2. Sök jobbet från karriärportalen. 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: ER Använd dokumenthanteringsfiler i formatutmatningar (Del 4 - Kör format)
-description: I det här avsnittet beskrivs hur du konfigurerar ett elektroniskt rapporteringsformat för användning av dokumenthanteringsfiler i ER-utdata. (Del 4)
+description: I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering för att använda dokumenthanteringsfiler i ER-utmatningar.
 author: NickSelin
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenInvoicesListPage, CustInvoiceJournal, SalesTable, ERSolutionTable
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 11b446d21a7ae57ffa2cccf983777beb882bf77de6b54c2d1aef810028a6d343
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 89e09d79389dc2c883c429cfee3164632e0cdc0f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727471"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681791"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-4---run-format"></a>ER Använd dokumenthanteringsfiler i formatutmatningar (Del 4 - Kör format)
 
@@ -67,6 +69,3 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 11. Klicka på OK.
     * Granska den genererade utleveransen. Notera att en enda XML-nod skapas för respektive bilaga. Bilagans innehåll fylls i textformatet för XML-utleverans i MIME (base64).  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

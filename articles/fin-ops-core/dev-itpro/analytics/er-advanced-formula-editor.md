@@ -2,9 +2,11 @@
 title: Avancerad formelredigerare för elektronisk rapportering
 description: I det här avsnittet beskrivs hur avancerad formelredigerare kan användas för att konfigurera uttryck i ER-modellmappning och formatkomponenter.
 author: NickSelin
-ms.date: 06/17/2021
+manager: AnnBe
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERExpressionDesignerFormula
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 58d7a936f94e1cd453c904ef6404e0db65083c54235c8420b9cfa561bcde1584
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 14eb8a59b64a49649768f93befdf8e6e8dcf8105
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714669"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685393"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Avancerad formelredigerare för elektronisk rapportering
 
@@ -45,29 +47,16 @@ Gör på följande sätt när du vill börja använda den avancerade formelredig
 2.  På sidan **Konfigurationer** i åtgärdsfönstret, på fliken **Konfigurationer** i gruppen **Avancerad inställningar** markerar du **Använd parametrar**.
 3.  I dialogrutan **Användarparametrar** i avsnittet **Körningsspårning** ska du ange parametern **Aktivera avancerad formelredigerare** till **Ja**.
 
-[![Dialogrutan Användarparametrar, med parametern Aktivera avancerad formelredigerare markerad.](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
+[![Sidan ER-konfigurationer](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
 
 > [!NOTE]
 > Tänk på att den här parametern är specifik för användaren och för företagsspecifika.
-
-Från och med Microsoft Dynamics 365 Finance version 10.0.19 kan du styra vilken ER-formelredigerare som erbjuds som standard. Gör på följande sätt om du vill aktivera den avancerade receptredigeraren för alla användare och företag i den aktuella ekonomiinstansen.
-
-1.  Öppna arbetsytan **Funktionshantering**.
-2.  Sök efter och välj funktionen **Ställ in ER avancerade formelredigerare som standard för alla användare** i listan och välj **Aktivera nu**.
-3.  Gå till **Organisationsadministration** > **Elektronisk rapportering** > **Konfigurationer**.
-4.  På sidan **Konfigurationer** i åtgärdsfönstret, på fliken **Konfigurationer** i gruppen **Avancerad inställningar** markerar du **Använd parametrar**.
-5.  I dialogrutan **Användarparametrar** hitta parametern **Inaktivera avancerad formelredigerare** och kontrollera att den anges till **Nej**.
-
-[![Dialogrutan Användarparametrar, med parametern Inaktivera avancerad formelredigerare markerad.](./media/ER-AdvEditor-Activate2.png)](./media/ER-AdvEditor-Activate2.png)
-
-> [!NOTE]
-> Värdena i parametrarna **Aktivera avancerad formelredigerare** och **Inaktivera avancerad formelredigerare** hålls separerade för varje användare och erbjuds i dialogrutan **Användarparametrar** beroende på statusen för funktionen **Ställ in ER-avancerad formelredigerare som standard för alla användare**.
 
 ## <a name=""></a><a name="Autoformatting">Automatisk kodformatering</a>
 
 När du skriver ett komplext uttryck som består av flera kodrader, kommer indraget för en ny rad automatiskt att baseras på indraget för föregående rad. Du kan markera rader och ändra deras indrag genom att skriva **tabb** eller **Skift + tabb**.
 
-[![ER-formelredigerar-gif som visar hur man markerar rader och ändrar indrag.](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
+[![ER-formelredigeraren](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
 
 Med automatisk formatering kan du behålla hela uttrycket väl formaterat så att det blir enklare att underhålla och förenkla förståelsen av den konfigurerade logiken.
 
@@ -75,7 +64,7 @@ Med automatisk formatering kan du behålla hela uttrycket väl formaterat så at
 
 Med hjälp av redigeraren för ordkomplettering kan du skriva uttryck snabbare och undvika skrivfel. När du börjar lägga till ny text innehåller redigeraren automatiskt en lista med funktioner som kan användas i ER-funktioner som innehåller de tecken du har angett. Du kan även utlösa IntelliSense på valfri plats i ett konfigurerat uttryck genom att skriva **Ctrl+Blanksteg**.
 
-[![ER-formelredigerar-gif som visar utlösande IntelliSense.](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
+[![ER-formelredigeraren](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
 
 ## <a name=""></a><a name="CodeCompletion">Kodslutförande</a>
 
@@ -85,7 +74,7 @@ I redigeraren skapas automatiskt kodslutförande av:
 - Infoga det andra citattecknet när det första anges och behåll markören inuti citattecken.
 - Infoga det andra dubla citattecknet när det första anges och behåll markören inuti citattecken.
 
-[![ER-formelredigerar-gif som visar hur redigeraren automatiskt tillhandahåller kodslutförande.](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
+[![ER-formelredigeraren](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
 
 När du pekar på den skrivna hakparentesen markeras automatiskt den andra hakparentesen för att visa den konstruktion som de stöder.
 
@@ -101,7 +90,7 @@ Om du till exempel vill hoppa till rad **8** gör du så här:
 
 - Tryck på **F1**, skriv **G**, välj **Gå till rad**, ange värdet **8** och tryck på **retur**.
 
-[![ER-formelredigerar-gif som visar hur du hittar delar av ett uttryck med hjälp av kommandopaletten.](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
+[![ER-formelredigeraren](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
 
 ## <a name=""></a><a name="CodeStructuring">Kodstrukturering</a>
 
@@ -123,7 +112,7 @@ Om du till exempel vill vika upp alla områden gör du så här:
   
 - Tryck **F1**, skriv **UN**, välj **Vik upp alla** och tryck på **retur**
 
-[![ER-formelredigerar-gif som visar kod.](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
+[![ER-formelredigeraren](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
 
 ## <a name=""></a><a name="FindAndReplace">Sök och Ersätt</a>
 
@@ -151,13 +140,13 @@ Om du vill ändra alla förekomster av viss text, markerar du texten i uttrycket
   
 - Tryck på **F1**, skriv **C** och välj sedan det alternativ som krävs för att ändra den markerade texten. Ange alternativ text.
 
-[![ER-formelredigerar-gif som visar "hitta och ersätt".](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
+[![ER-formelredigeraren](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
 
 ## <a name=""></a><a name="DataPasting">Datakällor och funktioner klistra in</a>
 
 Du kan välja **Lägg till data källa** som klistras in i det aktuella uttrycket en datakälla som är markerad på den vänstra panelen i **datakällan**. Du kan välja **Lägg till funktion** på liknande sätt som klistras in i det aktuella uttrycket en funktion som är markerad på den högra panelen i **funktioner**. Om du använder ER-formelredigeraren klistras en markerad funktion eller en markerad datakälla alltid in i slutet av det konfigurerade uttrycket. Om du använder avancerad ER-formelredigeraren klistras en markerad funktion eller en markerad datakälla in i någon del av det konfigurerade uttrycket. Du måste då använda markören för att ange var du vill klistra in informationen.
 
-[![ER-formelredigerar-gif som visar hur du lägger till en datakälla och klistrar in en funktion.](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
+[![ER-formelredigeraren](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
 
 ## <a name=""></a><a name="SyntaxColorization">Syntaxfärgning</a>
 
@@ -165,7 +154,7 @@ För närvarande används olika färger för att belysa följande delar av uttry
 
 - Texten inom dubbla hakparenteser som kan representera ett etikett-ID för en textkonstant.
 
-[![ER-formelredigerare.](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
+[![ER-formelredigeraren](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
 
 ## <a name="limitations"></a>Begränsningar
 
@@ -182,6 +171,3 @@ Redigeraren stöds för närvarande i följande webbläsare:
 - [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 - [Monaco-redigerare](https://microsoft.github.io/monaco-editor)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

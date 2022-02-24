@@ -2,9 +2,11 @@
 title: Produktägare
 description: Det här avsnittet innehåller information om produktägare. En produktägare är en grupp användare som är ansvariga för vissa produkter. Endast gruppens medlemmar kan frisläppa dessa produkter. Produktägaren kan också användas i arbetsflödet för godkännande.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductOwner
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a29ab169e9b24826fbe69fbc316040d4618750ee
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 90f5596f9b5fc45e78cc49a3309c45864e07e70b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567521"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967343"
 ---
 # <a name="product-owners"></a>Produktägare
 
@@ -58,6 +60,3 @@ Produktens X tilldelas till exempel produktens ägargruppen *Designa skåp*. Pro
 ## <a name="product-owners-and-approvals"></a>Produktägare och godkännanden
 
 Eftersom produktägaren vet om vissa tekniska förändringar kommer att gynna sina produkter, är det ofta klokt att ta med dem som en del av godkännande processen i konstruktionsändringshantering. Du kan implementera den här metoden genom att ställa in produktägarna som deltagarleverantörer i de arbetsflöden som används för konstruktionsändringshantering. Systemet tilldelar sedan godkännandeuppgifter i arbetsflödena, baserat på produkter som finns i konstruktionsändringshantering och teknisk ändringsorder. För mer information, se [Hantera ändringar av konstruktionsprodukter](engineering-change-management.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

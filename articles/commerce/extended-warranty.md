@@ -2,9 +2,11 @@
 title: Skapa och konfigurera utökade garantier
 description: Det här avsnittet omfattar utökade garantier och beskriver hur du skapar och konfigurerar dem i Microsoft Dynamics 365 Commerce.
 author: sijoshi
+manager: annbe
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +17,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 772dc1fdda7c34448ffa946237f717e657df6d83d8fda9336049e79d19ed1af0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 411895763cc282766b5a668208f20c72496059cd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745390"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965131"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Skapa och konfigurera utökade garantier
 
@@ -81,7 +83,7 @@ Följ de här stegen om du vill skapa en garantiartikel i Commerce.
 
     Om du till exempel vill ha en två års garanti ställer du in fältet **tidsenhet** på **År** och fältet **tidslängd** på **2**. Du kan också ställa in värdet för fältet **Tidsenhet** till **Månader** och fältet **Tidslängd** till **24**, som visas i bilden nedan.
 
-    ![Produktinformationssida för en garantiartikel.](./media/ew-time-properties.png)
+    ![Produktinformationssida för en garantiartikel](./media/ew-time-properties.png)
 
 1. Välj **Spara** för att spara garantiartikeln.
 1. Frisläpp garantiprodukten till företaget så att den kan säljas. För mer information, se [Ställ in butiksprodukter](set-up-retail-products.md).
@@ -94,7 +96,7 @@ Följ de här stegen om du vill skapa en garantiartikel i Commerce.
 
     I följande bild visas till exempel fältet **Bas för prisintervall** som anges till **Grundpris**, fältet **nedre gräns** anges till 500 $ och fältet **övre gräns** anges till 1 000 $.
     
-    ![Informationssida för frisläppt produkt för en garantiartikel.](./media/ew-release-product-details.png)
+    ![Informationssida för frisläppt produkt för en garantiartikel](./media/ew-release-product-details.png)
 
 1. Sortera garantiartikeln till den kanal där den ska säljas. Mer information finns i [Ställ in sortiment](set-up-assortments.md).
 
@@ -161,11 +163,11 @@ Två kassaåtgärder gör det möjligt för säljare att sälja garantiartiklar 
 
 I följande illustration visas ett exempel på ett kassaterminalfönster med en uppmaning att lägga till en garantiartikel för det aktuella inköpet av en artikel som kan vara berättigad.
 
-![Exempel på en uppmaning att vill lägga till en garantiartikel för det aktuella inköpet.](./media/ew-sell-warranty.png)
+![Exempel på en fråga om du vill lägga till en garantiartikel för det aktuella inköpet](./media/ew-sell-warranty.png)
 
 I följande illustration visas ett exempel på funktionen för att lägga till en garantiartikel för en motiverad artikel som tidigare har sålts.
 
-![Exempel på funktionen för att lägga till en garantiartikel för en tidigare såld och garantiberättigad artikel.](./media/ew-add-warranty-existing.png)
+![Exempel på funktionen för att lägga till en garantiartikel för en tidigare såld artikel](./media/ew-add-warranty-existing.png)
 
 ## <a name="process-warranty-transactions"></a>Bearbeta garantitransaktioner
 
@@ -236,6 +238,3 @@ En garanti är en tjänst som tillhandahålls för en specifik, unik produkt. I 
 [Ställa in sortiment](set-up-assortments.md)
 
 [Nummerserier – översikt](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

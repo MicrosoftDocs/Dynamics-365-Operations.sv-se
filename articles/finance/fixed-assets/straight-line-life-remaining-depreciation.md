@@ -1,10 +1,12 @@
 ---
 title: Linjär avskrivning kvarstående livstid
 description: Det här avsnittet ger en översikt över metoden för linjär återstående livstid för avskrivning.
-author: moaamer
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: roschlom
 ms.custom: 13851
 ms.assetid: 0fa2f71a-596c-414c-a6e6-8f7405a0bf81
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d3372fe5d77f54c68570314e8ba6db8bae28a60
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: d2414ea97fefbec1e975498e171496e33057541c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675205"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969014"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Linjär avskrivning kvarstående livstid
 
@@ -37,11 +39,11 @@ Du kan välja **Kalender** eller **Räkenskapsår** i fältet **Avskrivningsår*
 
 Om du väljer **Kalender** i fältet **_Avskrivningsår_*_ blir kalenderåret 1 januari till och med 31 december, även om du har definierat räkenskapskalendern annorlunda. Alternativet _* Kalender** uppdaterar avskrivningsbasen den 1 januari varje år. Generellt är avskrivningsbasen bokfört nettovärde minus skrotvärdet. I exemplen senare i det här ämnet utgör avskrivningsbasen täljaren i det första uttrycket i beräkningskolumnen. Om du väljer **Kalender** som avskrivningsår finns följande alternativ i fältet **Periodfrekvens**.
 
-- **Årlig** bokför ett belopp den 31 december.
-- **Månatlig** bokför ett månatligt belopp i slutet av varje kalendermånad.
-- **Kvartalsvis** bokför ett kvartalsbelopp i slutet av varje kvartal (31 mars, 30 juni, 30 september och 31 december).
-- **Halvårsvis** bokför ett halvårsbelopp i slutet av varje halvår (30 juni och 31 december).
-- **Dagligen** bokför avskrivningsbeloppet för den dagliga avskrivningsmetoden genom att använda en transaktion för varje dag.
+-   **Årlig** bokför ett belopp den 31 december.
+-   **Månatlig** bokför ett månatligt belopp i slutet av varje kalendermånad.
+-   **Kvartalsvis** bokför ett kvartalsbelopp i slutet av varje kvartal (31 mars, 30 juni, 30 september och 31 december).
+-   **Halvårsvis** bokför ett halvårsbelopp i slutet av varje halvår (30 juni och 31 december).
+-   **Dagligen** bokför avskrivningsbeloppet för den dagliga avskrivningsmetoden genom att använda en transaktion för varje dag.
 
 Om du till exempel **Årligen** bokförs årets avskrivning alltså bara en gång, den 31 december varje år. Om du väljer **Månadsvis** bokförs månadens avskrivning som 1/12 av det årliga avskrivningsbeloppet.
 
@@ -49,15 +51,15 @@ Om du till exempel **Årligen** bokförs årets avskrivning alltså bara en gån
 
 Om du väljer **Räkenskapsår** i fältet **Avskrivningsår** används linjär avskrivning kvarstående livstid. Avskrivningen beräknas utifrån vad som är kvar av räkenskapsåret. För räkenskapsåret 1 juli 2015 – 30 juni 2016 startar alltså avskrivningsberäkningen alltså den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje räkenskapsperiod. Längden på nästa räkenskapsår bestäms av de räkenskapsperioder som är inställda på sidan **Räkenskapskalendrar**. Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ i fältet **Periodfrekvens**:
 
-- **Årligen** bokför det totala avskrivningsbeloppet som beräknas för räkenskapsåret som ett belopp på räkenskapsårets sista dag.
-- **Räkenskapsperiod** beräknar det totala avskrivningsbeloppet för räkenskapsåret. Detta belopp periodiseras sedan till de räkenskapsperioder som har definierats på sidan **Räkenskapskalendrar** för den räkenskapskalender som angetts för boken.
+-   **Årligen** bokför det totala avskrivningsbeloppet som beräknas för räkenskapsåret som ett belopp på räkenskapsårets sista dag.
+-   **Räkenskapsperiod** beräknar det totala avskrivningsbeloppet för räkenskapsåret. Detta belopp periodiseras sedan till de räkenskapsperioder som har definierats på sidan **Räkenskapskalendrar** för den räkenskapskalender som angetts för boken.
 
 ## <a name="example-of-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Exempel på linjär avskrivning av en oförändrad anläggningstillgång
 En anläggningstillgång har följande egenskaper.
 
-| Fält               | Värde  |
-|:---------------------|--------:|
-| Anskaffningskostnad    | 11,000 |
+|                     |        |
+|---------------------|--------|
+| Anskaffningskostnad    | 11 000 |
 | Skrotvärde       | 1 000  |
 | Avskrivningsbas   | 10 000 |
 | Antal tjänsteår  | 5      |
@@ -66,7 +68,7 @@ En anläggningstillgång har följande egenskaper.
 Avskrivningsbeloppet är samma varje år: Innan ÷tjänstelivstid (om anskaffning kostnadsberäknad – skrotvärde år)
 
 | Period | Beräkning av årligt avskrivningsbelopp | Bokfört nettovärde i slutet av året |
-|:--------:|:-----------------------------------------------|---------------------------------------:|
+|--------|-----------------------------------------------|---------------------------------------|
 | År 1 | (11 000 – 1 000) ÷ 5 = 2 000                  | 9 000                                 |
 | År 2 | (9 000 – 1 000) ÷ 4 = 2 000                   | 7 000                                 |
 | År 3 | (7 000 – 1 000) ÷ 3 = 2 000                   | 5 000                                 |
@@ -77,6 +79,3 @@ Avskrivningsbeloppet är samma varje år: Innan ÷tjänstelivstid (om anskaffnin
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

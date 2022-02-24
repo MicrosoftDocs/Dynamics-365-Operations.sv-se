@@ -1,10 +1,12 @@
 ---
-title: Konfigurera fält för mobilappen för distributionslagerhantering
-description: Det här avsnittet beskriver hur du definierar och konfigurerar namn och prioriteringar av fälten som visas i mobilappen Hantering av distributionslager.
-author: Mirzaab
+title: Konfigurera programfältnamn i lagerställeapp
+description: Det här avsnittet beskriver hur du definierar och konfigurerar fältnamnen i lagerställets program samt prioriteringar i Dynamics 365 Supply Chain Management.
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
@@ -13,24 +15,24 @@ ms.custom: 269434
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8c9c1d921f68538d5b84db16b1e88e28147e6b41
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: ac31b3d2b3b1d9ca51919fe75e06f0de1cda0c63
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902306"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963445"
 ---
-# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Konfigurera fält för mobilappen för distributionslagerhantering
+# <a name="configure-app-field-names-in-the-warehouse-app"></a>Konfigurera programfältnamn i lagerställeappen
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du definierar och konfigurerar namn och prioriteringar av fälten som visas i mobilappen Hantering av distributionslager.
+Det här avsnittet beskriver hur du definierar och konfigurerar fältnamnen i lagerställets program samt prioriteringar i Dynamics 365 Supply Chain Management. 
 
 > [!NOTE]
-> Denna artikel gäller funktioner i lagerstyrningshanteringen. Den gäller inte funktioner i lagerhanteringshanteringen. Mobilappen Hantering av distributionslager är ett program som du kan använda för att utföra uppgifter på lagerstället. Du kan definiera och konfigurera de fältnamn som används i programmet, samt konfigurera prioriteringen bland de fältnamn som ska tilldelas. Det här avsnittet förklarar hur du definierar och konfigurerar fältnamn och prioriteringar i mobilappen Hantering av distributionslager, samt hur dessa används.
+> Denna artikel gäller funktioner i lagerstyrningshanteringen. Den gäller inte funktioner i lagerhanteringshanteringen. Lagerstyrning är ett program som du kan använda för att utföra uppgifter på lagerstället. Du kan definiera och konfigurera de fältnamn som används i programmet, samt konfigurera prioriteringen bland de fältnamn som ska tilldelas. Det här avsnittet förklarar hur du definierar och konfigurerar fältnamn och prioriteringar i lagerställets program, samt hur dessa används i Lagerstyrning. Detaljerad information om hur du konfigurerar anslutningen till Lagerstyrning, finns i kursen [Installera och konfigurera lagerställeappen - översikt](install-configure-warehousing-app.md).
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurera fältnamn i lagerställets program
 
@@ -50,7 +52,7 @@ När du använder Lagerstyrning på din mobila enhet kan du konfigurera hur meta
 <tbody>
 <tr class="odd">
 <td>Prioriterat indataläge</td>
-<td>Det här alternativet anger om ett skanningsfält eller ett fält för manuell inmatning bör visas för det valda fältnamnet. Detta är användbart för att skilja fälten åt om streckkoder används för fältet. <strong>Obs!</strong> För fältnamn med önskat inmatningsläge angivet som <strong>Skanning</strong> kan du ange information manuellt om streckkoden är skadad eller oläsbar.</td>
+<td>Det här alternativet anger om ett skanningsfält eller ett fält för manuell inmatning bör visas för det valda fältnamnet. Detta är användbart för att skilja fälten åt, beroende på om du använder streckkoder för fältet. <strong>Obs!</strong> För fältnamn med önskat inmatningsläge angivet som <strong>Skanning</strong> kan du ange information manuellt om streckkoden är skadad eller oläsbar.</td>
 </tr>
 <tr class="even">
 <td>Inmatningstyp</td>
@@ -65,7 +67,7 @@ När du använder Lagerstyrning på din mobila enhet kan du konfigurera hur meta
 </tbody>
 </table>
 
-## <a name="configure-warehouse-app-field-priority"></a>Konfigurera prioriteringsordningen för lagerställets program fält
+## <a name="configure-warehouse-app-field-priority"></a>Konfigurera prioriteringsordningen för lagerställets programfält
 
 På sidan **Fältprioritet för lagerställeprogram** kan du ange fältnamn i olika prioriteringsgrupper. Detta gör det möjligt att bestämma vilken information som ska visas på huvuduppgiftssidan när lagerarbetare utför åtgärder med programmet. Om du klickar på **Skapa standardinställning** skapas en standarduppsättning prioriterade grupper. Det går att skapa så många prioriteringsgrupper som krävs, men endast tre prioriteringsgrupper visas på uppgiftssidan. När systemet skickar metadata till programmet, kommer det att tilldela varje fält en relativ prioritet beroende på dess prioriteringsgrupp, och programmet kommer att visa de första tre prioriteringsgrupperna i metadatan på uppgiftssidan. Överflödig metadata visas på en ytterligare informationssida. Tabellen nedan visar ett exempel på fem prioriteringsgrupper.
 
@@ -137,9 +139,7 @@ Baserat på fältprioriteringen i lagerställets program som anges i tabellen ov
 
 Återstående metadata, till exempel plats, visas inte på uppgiftssidan men däremot på en informationssida. Om du vill veta mer och visa exempel på användargränssnittet, se blogginlägget [Vi presenterar Finance and Operations - Lagerstyrning](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
-## <a name="additional-resources"></a>Ytterligare resurser
+<a name="additional-resources"></a>Ytterligare resurser
+--------
 
-[Installera och ansluta mobilappen för distributionslagerhantering](../warehousing/install-configure-warehouse-management-app.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Installera och konfigurera lagerställeappen - översikt](install-configure-warehousing-app.md)

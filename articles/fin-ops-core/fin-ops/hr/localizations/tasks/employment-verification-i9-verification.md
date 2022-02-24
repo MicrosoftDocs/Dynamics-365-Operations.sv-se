@@ -2,61 +2,55 @@
 title: Anställningverifiering av i9-verifiering
 description: Immigration Reform and Control Act kräver att amerikanska arbetsgivare verifierar nyanställdas anställningskvalifikationer.
 author: ShielaSogge
-ms.date: 01/10/2022
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b76102111a8506882f2301d76856ae1a34a7c704
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ab03e28b3e42d02395da01024bc3bcf4dbcd5abf
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065691"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798104"
 ---
 # <a name="employment-verification-i9-verification"></a>Anställningverifiering av i9-verifiering
 
 [!include [banner](../../../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../../../includes/peap-1.md)]
-
 Immigration Reform and Control Act kräver att amerikanska arbetsgivare verifierar nyanställdas anställningskvalifikationer. I den här proceduren går du igenom stegen för att registrera nödvändiga dokument för verifiering av I-9. Använd företaget USMF för den här proceduren.
 
-1. Gå till **Personal \> Arbetare \> Medarbetare**.
-2. Använd snabbfiltret för att söka efter poster. Filtrera till exempel med värdet **Vince** för fältet **Namn**.
-3. Välj medarbetare. Välj till exempel **Vince Prado**. 
-4. Välj snabbfliken **Personuppgifter**.
-5. Välj **Identifieringsnummer**.
-6. Välj **Ny**.
-7. Välj den identifieringstyp som du registrerar. Välj till exempel **Pass**.
-8. I fältet **Antal**, skriv ett värde.
-9. I fältet **Primär**, välj **Ja**.
-10. Ange en kort beskrivning av identifieringsposten i fältet **Beskrivning**.
-11. I fältet **utfärdande organet** väljer du det organ som har utfärdat identifieringsformuläret för arbetaren. Välj till exempel **Myndighet**.
-12. Ange det datum då det utfärdande organet har utfärdat identifieringsformuläret för arbetaren. Ange till exempel **02/15/2011** (15 februari 2011).
-13. Ange det datum då identifieringsformuläret upphör att gälla. Ange till exempel **2/15/2021** (15 februari 2021).
-14. Välj **Spara**.
+1. Gå till Personal > Arbetare > Medarbetare.
+2. Använd snabbfiltret för att söka efter poster. Filtrera till exempel i fältet Namn med värdet "Vince".
+3. Välj medarbetare. Exempel: Vince Prado
+4. Expandera snabbfliken Personlig information.
+5. Klicka på Identifieringsnummer.
+6. Klicka på Ny.
+7. Välj den identifieringstyp som du registrerar. Exempel: Pass
+8. Ange ett värde i fältet Antal.
+9. Välj Ja i fältet Primär.
+10. Ange en kort beskrivning av identifieringsposten i fältet Beskrivning.
+11. I det utfärdande organet väljer du det organ som har utfärdat identifieringsformuläret för arbetaren. Exempel: Myndighet
+12. Ange det datum då det utfärdande organet har utfärdat identifieringsformuläret för arbetaren. Exempel: 15/02/2011
+13. Ange det datum då identifieringsformuläret upphör att gälla. Exempel: 15/02/2021
+14. Klicka på Spara.
 15. Stäng sidan.
-16. Välj fliken **Anställning**.
-17. Välj **I-9**.
-18. Välj **Ny**.
-19. Välj ett alternativ i fältet **Kvalifikation**.
+16. Klicka på fliken Anställning.
+17. Klicka på I-9.
+18. Klicka på Ny.
+19. Välj ett alternativ i fältet Kvalifikation.
+    * Om medarbetaren inte är amerikansk medborgare måste du ange arbetarens inresenummer eller nummer för utländska medborgare med uppehållstillstånd.  
+20. Välj alternativet GroupListA.
+    * Vilken lista du väljer är beroende av vilken form av identifiering som arbetaren har angett. En arbetare måste ange ett dokument från lista A eller ett dokument från lista B och C. Om arbetaren till exempel anger ett pass, ska lista A väljas. Men om arbetaren bara har tillhandahållit sitt körkort och ett amerikanskt socialförsäkringskort så måste lista B och C väljas.  
+21. Välj den typ av dokument som arbetaren har angett i fältet I-9-dokumenttyp.
+22. Ange eller välj ett värde i fältet Dokumentnummer.
+23. Klicka på Spara.
 
-    Om medarbetaren inte är amerikansk medborgare måste du ange arbetarens inresenummer eller nummer för utländska medborgare med uppehållstillstånd.
-
-20. Välj alternativet **GroupListA**.
-
-    Vilken lista du väljer är beroende av vilken form av identifiering som arbetaren har angett. En arbetare måste tillhandahålla antingen ett dokument från Lista A eller ett dokument från både Lista B och Lista C. Om arbetaren till exempel har ett pass kan du välja Lista A. Om arbetaren bara har ett körkort och ett personkort måste du dock välja Lista B och Lista C.
-
-21. Välj den typ av dokument som arbetaren har angett i fältet **I-9-dokumenttyp**.
-22. Ange eller välj ett värde i fältet **Dokumentnummer**.
-23. Välj **Spara**.
-
-[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

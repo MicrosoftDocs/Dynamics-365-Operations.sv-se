@@ -1,32 +1,33 @@
 ---
 title: Vad är nytt och ändrat i Dynamics 365 Human Resources (13 april 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 13 april 2020.
-author: andreabichsel
-ms.date: 04/13/2020
+author: Darinkramer
+manager: AnnBe
+ms.date: 4/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b5af74329fa741a443932a1007a6c2ef6abd3445
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a7ea8348cfe1c66d6d0cfa39b46c8e69111fe185
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062221"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528531"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-13-2020"></a>Vad är nytt och ändrat i Dynamics 365 Human Resources (13 april 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Dynamics 365 Human Resources. Ändringarna tillämpas på versionsnummer 8.1.3136. Siffror inom parenteser i vissa rubriker refererar till LCS-supportnummer för referens.
 
@@ -42,9 +43,9 @@ Med den här ändringen är fältet **avrundningsprecision** nu tillgängligt n�
 
 Du kan nu redigera slutdatum för anmälan utan att ta emot felet "Fältet för datumbasen för periodiseringen måste fyllas i."
 
-## <a name="employment-entity-doesnt-sync-to-dataverse-430834"></a>Arbetsenheten synkroniseras inte till Dataverse (430834)
+## <a name="employment-entity-doesnt-sync-to-common-data-service-430834"></a>Arbetsenheten synkroniseras inte till Common Data Service (430834)
 
-Den här ändringen åtgärdar ett problem där anställningsdata inte synkroniseras till Dataverse efter tillägg av ekonomiska dimensioner. 
+Den här ändringen åtgärdar ett problem där anställningsdata inte synkroniseras till Common Data Service efter tillägg av ekonomiska dimensioner. 
 
 ## <a name="remove-multi-parenting-for-work-calendar-time-interval-entity-431775"></a>Ta bort flera överordnade för entiteten tidsintervall för arbetskalender (431775)
 
@@ -92,9 +93,7 @@ Om förhandsgranska dokument för dokument som lagras i SharePoint inte fungerar
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
-[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

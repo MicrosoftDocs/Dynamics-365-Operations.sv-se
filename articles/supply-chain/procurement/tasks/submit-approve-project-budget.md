@@ -1,45 +1,58 @@
 ---
-title: Skapa och skicka in en projektbudget arbetsflöde
+title: Skicka och godkänn projektbudget
 description: Den här proceduren visar hur du skapar och skickar in en budget för ett projekt.
-author: Henrikan
-ms.date: 11/22/2021
-ms.topic: article
+author: RichardLuan
+manager: tfehr
+ms.date: 08/13/2019
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 ms.search.form: ProjProjectsListPage, ProjTable, ProjBudget, WorkflowSubmitDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.search.industry: Service industries
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f410d824be717537e6dfb5dbd8b71ff7d992e0a
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b871a3fef3515d3a79fb4b55406a93fc16d02faa
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860435"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018738"
 ---
-# <a name="create-and-submit-a-project-budget-workflow"></a>Skapa och skicka in en projektbudget arbetsflöde
+# <a name="submit-and-approve-project-budget"></a>Skicka och godkänn projektbudget
 
 [!include [banner](../../includes/banner.md)]
 
-När du skapar en projektbudget kan du ange uppskattade intäkter och kostnader för ett projekt, och sedan använda värden för att styra faktiska projekttransaktioner. Projektbudgetering kräver måste alla ursprungliga budgetar och ändringar skickas till ett projektarbetsflöde för godkännande. Arbetsflödet ökar din kontroll över budgeteringen och skapar en post för ändringshistorik. Efter att du har [skapa ett projekt](/dynamicsax-2012/appuser-itpro/create-a-project), använd denna procedur för att skapa och skicka in budgeten.
+Den här proceduren visar hur du skapar och skickar in en budget för ett projekt. 
 
-1. Gå till **Moduler** > **Projekthantering och redovisning** > **Projekt** > **Alla projekt**.
-1. Välj projektet från projektlistan.
-1. I projektets detaljsida, välj **Plan**.
-1. Under gruppen **Budget**, välj **Projektbudget**.
-1. På snabbfliken **Allmänt** anger du följande information:
-   - I rutan **Beskrivning** anger du ett värde.
-   - Välj alternativ för **ursprunglig budget**.
-   - Välj alternativ för **Resterande budget**.
-1. Expandera snabbflikarna **Kostnader** och välj **Ny**. Gör följande inställningar:
-   - Välj ett alternativ i fältet **Transaktionstyp**.
-   - Välj en lämplig **kategori**.
-   - Ange ett värde i **ursprunglig budget**.
-1. Expandera snabbflikarna **Intäkter** och välj **Ny**. Gör följande inställningar:
-   - Välj ett alternativ i fältet **Transaktionstyp**.
-   - Välj en **kategori**.
-   - Ange ett värde för **ursprunglig budget**.
-1. Välj **Spara**.
-1. Välj **Arbetsflöde \> Skicka in**.
-1. På sidan **Granska det ursprungliga budgetarbetsflödet - Skicka** ange en **Kommentar** och välj **Skicka**.
+När du skapar en projektbudget kan du ange uppskattade intäkter och kostnader för ett projekt, och sedan använda dem för att styra faktiska projekttransaktioner. Inom projektbudgetering måste alla ursprungliga budgetar och ändringar skickas till ett projektarbetsflöde för godkännande. Arbetsflöden ger dig ökad kontroll över processerna och skapar en post för ändringshistorik.
+
+Denna uppgift har skapats med USSI-datauppsättningen.
+
+1. I **navigeringsfönstret**, gå till  **Moduler > Projekthantering och redovisning > Projekt > Alla projekt**.
+2. Hitta och markera önskad post i listan.
+3. Klicka på länken på den valda raden i listan.
+4. Klicka på **Plan** i **åtgärdsfönstret**.
+5. Klicka på **Projektbudget**.
+6. I fältet **Beskrivning** anger du ett värde.
+7. Expandera snabbfliken **Kostnad**.
+8. Klicka på **Ny**.
+9. Välj ett alternativ i fältet **Transaktionstyp**.
+10. I fältet **Kategori**, ange eller välj ett värde.
+11. Ange ett nummer i fältet **Ursprunglig budget**.
+12. Expandera snabbfliken **Intäkter**.
+13. Klicka på **Ny**.
+14. Markera vald rad i listan.
+15. Välj ett alternativ i fältet **Transaktionstyp**.
+16. I fältet **Kategori**, ange eller välj ett värde.
+17. Ange ett nummer i fältet **Ursprunglig budget**.
+18. Klicka på **Spara**.
+19. Klicka på **Arbetsflöde**.
+20. Klicka på **Skicka**.
+21. Ange ett värde i fältet **Kommentar**.
+22. Klicka på **Skicka**.
+

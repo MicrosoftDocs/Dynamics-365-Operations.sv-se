@@ -1,35 +1,33 @@
 ---
 title: Skapa en förmånsplan
-description: I detta ämne beskrivs hur du konfigurerar förmånsplaner i Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/23/2021
+description: Ställ in förmånsplaner i Dynamics 365 Human Resources.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanListPage, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7d3163bf30af9ed0eac2c753ed4aabb15d568ff4
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: bcbf4c1a7f136e5563bf1210b6c09228dad95dea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065336"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420544"
 ---
-# <a name="create-a-benefit-plan"></a>Skapa en förmånsplan
+# <a name="create-a-benefits-plan"></a>Skapa en förmånsplan
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-I detta ämne beskrivs hur du konfigurerar förmånsplaner i Dynamics 365 Human Resources.
+I den här artikeln beskrivs hur du ställer in förmånsplaner i Dynamics 365 Human Resources.
 
 1. I arbetsytan **Hantering av förmåner** under **Planer**, välj **förmånsplaner**.
 
@@ -46,8 +44,9 @@ I detta ämne beskrivs hur du konfigurerar förmånsplaner i Dynamics 365 Human 
    | **Program** | Anger ett program som du vill tilldela planen till. |
    | **Bunt** | Anger en bunt som du vill tilldela planen till. |
    | **Rubrik** | Anger om planen är huvudplan i den bunt den är tilldelad till. |
+   | **Status** | Visar aktuell status för förmånsplanen. Standardvärdet är Aktiv. Om du ändrar status till inaktiv kommer planen inte att vara tillgänglig som en markering vid registreringen. |
    | **Giltig från datum och tid** | Datum och tid som planen startar. Standardvärdet är det aktuella systemdatumet. |
-   | **Giltig till datum och tid** | Datum och tid som planen slutar. Standardvärdet är 12/31/2154, vilket betyder aldrig. |
+   | **Giltig till datum och tid** | Det datum och den tidpunkt då planen slutar (status är inaktiverad). Standardvärdet är 12/31/2154, vilket betyder aldrig. |
 
 4. På fliken **Konfiguration**, ange värden för följande fält, beroende på vilken typ av plan du skapar:
 
@@ -55,18 +54,18 @@ I detta ämne beskrivs hur du konfigurerar förmånsplaner i Dynamics 365 Human 
    | --- | --- | --- |
    | Medicinsk (medicinsk, tandvård, syn, HMO) | COBRA | Anger om planen är COBRA-berättigad (Consolidated Omnibus Budget Reconciliation Act). |
    | Medicinsk (medicinsk, tandvård, syn, HMO) | HIPAA | Anger om planen är HIPAA-berättigat (Health Insurance Portability and Accountability Act). |
-   | Medicinsk (medicinsk, tandvård, syn, HMO)<br><br>Annat (PTO, lämplighet)<br><br>Annat<br><br>Långvarig funktionsnedsättning<br><br>Lägg till (enkel liv, frivillig liv)<br><br>Besparingar (t.ex. 401(k))<br><br>FSA | Berättigat före skatt | Anger om avgifter kan göras till planen innan moms tillämpas. |
-   | Medicinsk (medicinsk, tandvård, syn, HMO)<br><br>Annat (PTO, lämplighet)<br><br>Långvarig funktionsnedsättning<br><br>Lägg till (enkel liv, frivillig liv)<br><br>Besparingar (t.ex. 401(k))<br><br>FSA | Berättigat efter skatt | Anger om avgifter kan göras till planen efter moms tillämpas. |
-   | Medicinsk (medicinsk, tandvård, syn, HMO)<br><br>Annat (PTO, lämplighet)<br><br>Långvarig funktionsnedsättning<br><br>Lägg till (enkel liv, frivillig liv)<br><br>Besparingar (t.ex. 401(k))<br><br>FSA | Deltagare | Anger vem som bidrar till planen – medarbetaren, arbetsgivaren eller båda. |
-   | Långvarig funktionsnedsättning<br><br>Lägg till (enkel liv, frivillig liv) | Minimal omfattning | Minsta belopp för försäkringsskydd som krävs för planen. |
-   | Långvarig funktionsnedsättning<br><br>Lägg till (enkel liv, frivillig liv) | Maximal omfattning | Högsta belopp för försäkringsskydd som krävs för planen. |
-   | Långvarig funktionsnedsättning<br><br>Lägg till (enkel liv, frivillig liv) | Använd ökningar av försäkringsbeloppet | Anger om du vill validera att försäkringsbeloppet matchar ett giltigt stegvist belopp. |
-   | Långvarig funktionsnedsättning<br><br>Lägg till (enkel liv, frivillig liv) | Stegvist belopp | Det stegvisa beloppet för försäkringsskydd för planen. Om till exempel det stegvisa beloppet är 1 000 kan en medarbetare inte ha en försäkring på 200 500 $, men de måste avrunda upp till 201 000 $ eller ned till 200 000 $. |
-   | Långvarig funktionsnedsättning<br><br>Lägg till (enkel liv, frivillig liv) | Stegvis riktning | Anger riktningen för avrundning – antingen uppåt eller nedåt – när försäkringsbeloppet inte uppfyller värdet för stegvist belopp. |
+   | <ul><li>Medicinsk (medicinsk, tandvård, syn, HMO)</li><li>Annat (PTO, lämplighet)</li><li>Annat</li><li>Långvarig funktionsnedsättning</li><li>Lägg till (enkel liv, frivillig liv)</li><li>Besparingar (t.ex. 401(k))</li><li>FSA</li></ul> | Berättigat före skatt | Anger om avgifter kan göras till planen innan moms tillämpas. |
+   | <ul><li>Medicinsk (medicinsk, tandvård, syn, HMO)</li><li>Annat (PTO, lämplighet)</li><li>Långvarig funktionsnedsättning</li><li>Lägg till (enkel liv, frivillig liv)</li><li>Besparingar (t.ex. 401(k))</li><li>FSA</li></ul> | Berättigat efter skatt | Anger om avgifter kan göras till planen efter moms tillämpas. |
+   | <ul><li>Medicinsk (medicinsk, tandvård, syn, HMO)</li><li>Annat (PTO, lämplighet)</li><li>Långvarig funktionsnedsättning</li><li>Lägg till (enkel liv, frivillig liv)</li><li>Besparingar (t.ex. 401(k))</li><li>FSA</li></ul> | Deltagare | Anger vem som bidrar till planen – medarbetaren, arbetsgivaren eller båda. |
+   | <ul><li>Långvarig funktionsnedsättning</li><li>Lägg till (enkel liv, frivillig liv)</li></ul> | Minimal omfattning | Minsta belopp för försäkringsskydd som krävs för planen. |
+   | <ul><li>Långvarig funktionsnedsättning</li><li>Lägg till (enkel liv, frivillig liv)</li></ul> | Maximal omfattning | Högsta belopp för försäkringsskydd som krävs för planen. |
+   | <ul><li>Långvarig funktionsnedsättning</li><li>Lägg till (enkel liv, frivillig liv)</li></ul> | Använd ökningar av försäkringsbeloppet | Anger om du vill validera att försäkringsbeloppet matchar ett giltigt stegvist belopp. |
+   | <ul><li>Långvarig funktionsnedsättning</li><li>Lägg till (enkel liv, frivillig liv)</li></ul> | Stegvist belopp | Det stegvisa beloppet för försäkringsskydd för planen. Om till exempel det stegvisa beloppet är 1 000 kan en medarbetare inte ha en försäkring på 200 500 $, men de måste avrunda upp till 201 000 $ eller ned till 200 000 $. |
+   | <ul><li>Långvarig funktionsnedsättning</li><li>Lägg till (enkel liv, frivillig liv)</li></ul> | Stegvis riktning | Anger riktningen för avrundning – antingen uppåt eller nedåt – när försäkringsbeloppet inte uppfyller värdet för stegvist belopp. |
    | Lägg till (enkel liv, frivillig liv) | Bevis på försäkringsbarhet | Anger om en medarbetare måste tillhandahålla bevis på försäkringsbarhet. |
    | Lägg till (enkel liv, frivillig liv) | Tid | Belopp i redovisningsvaluta. Detta fält är endast aktivt om kryssrutan Bevis på försäkringsbarhet är markerad. |
-   | Besparingar (t.ex. 401(k))<br><br>FSA | Lägsta årliga tillägg | Minsta tilläggsbelopp som krävs för planen. |
-   | Besparingar (t.ex. 401(k))<br><br>FSA | Högsta årliga tillägg | Högsta tilläggsbelopp som krävs för planen. |
+   | <ul><li>Besparingar (t.ex. 401(k))</li><li>FSA</li></ul> | Lägsta årliga tillägg | Minsta tilläggsbelopp som krävs för planen. |
+   | <ul><li>Besparingar (t.ex. 401(k))</li><li>FSA</li></ul> | Högsta årliga tillägg | Högsta tilläggsbelopp som krävs för planen. |
    | Besparingar (t.ex. 401(k)) | Arbetsgivarens maximala årliga belopp | Det högsta belopp som en arbetsgivare får delta i mot en plan för medarbetarens besparingar under en förmånsperiod. Du måste markera kryssrutan för arbetsgivarens matchning för att kunna använda det här fältet. |
    | Besparingar (t.ex. 401(k)) | Arbetsgivarmatchning | Anger om arbetsgivaren bidrar till en anställds besparingsplan. |
    | Besparingar (t.ex. 401(k)) | Arbetsgivarens matchningsprocent | Den procentandel av en medarbetares bidrag som arbetsgivaren kommer att matcha. |
@@ -115,29 +114,29 @@ I detta ämne beskrivs hur du konfigurerar förmånsplaner i Dynamics 365 Human 
 
 8. Välj **Spara**.
 
-## <a name="view-enrolled-workers"></a>Visa anmälda medarbetare
+## <a name="view-enrolled-workers"></a>Visa anmälda arbetare
 
-DU kan visa de medarbetare som är anmälda i den valda förmånsplanen.
+DU kan visa de arbetare som är anmälda i den valda förmånsplanen.
 
 1. I arbetsytan **Hantering av förmåner** under **Planer**, välj **förmånsplaner**.
 
-2. På fliken **Förmåner** i navigeringsfältet väljer du **Anmälda medarbetare**.
+2. Välj **Anmälda arbetare**.
 
-## <a name="attach-coverage-options"></a>Bifoga täckningsalternativ
+## <a name="attach-coverage-options"></a>Bifoga omfattningsalternativ
 
 Du kan lägga till omfattningsalternativ för den valda förmånsplanen. Om du kopplar omfattningsalternativ får du inställningarna för tariff och avdrag för omfattningsalternativ.  Exempel: för en medicinsk plan skulle användaren välja ett alternativ för familjeomfattning.  De måste sedan välja familjetariffen för den associerade planen (anges i tariffinställning) och avdraget för den associerade planen (anges i tariffinställning). Detta ger kostnaden för arbetsgivaren och medarbetaren för en vald omfattning. Sedan upprepar du processen för en medarbetare+1 omfattning eller medarbetaromfattning.
 
 1. I arbetsytan **Hantering av förmåner** under **Planer**, välj **förmånsplaner**.
 
-2. På fliken **Förmåner** i navigeringsfältet väljer du **Bifoga omfattningsalternativ**.
+2. Välj **Bifoga omfattningsalternativ**.
 
 ## <a name="override-eligibility-rules"></a>Åsidosätt berättiganderegler
 
-Du kan lägga till medarbetare till en plan som undantag till reglerna för berättigande. Varje arbetstagare som du lägger till är berättigad till förmånsplanen.
+Du kan lägga till arbetare till en plan som undantag till reglerna för berättigande. Varje arbetstagare som du lägger till är berättigad till förmånsplanen.
 
 1. I arbetsytan **Hantering av förmåner** under **Planer**, välj **förmånsplaner**.
 
-2. På fliken **Förmåner** i navigeringsfältet väljer du **Åsidosätt berättiganderegel**.
+2. Välj **Åsidosätt berättiganderegel**.
 
 ## <a name="view-attached-periods"></a>Visa kopplade perioder
 
@@ -145,21 +144,18 @@ Du kan se en lista över tillgängliga förmånsperioder.
 
 1. I arbetsytan **Hantering av förmåner** under **Planer**, välj **förmånsplaner**.
 
-2. Klicka på fliken **Perioder** i navigeringsfältet.
+2. Välj **Perioder**.
 
-## <a name="view-plan-description"></a>Visa planbeskrivningen
+## <a name="view-plan-information"></a>Visa planinformation
 
-Du kan ge en beskrivning av planen för att hjälpa de medarbetare som har urval av deras förmåner. Den planbeskrivning som du anger här visas i Självbetjäning för medarbetare när du hovrar över planen i listan med omfattningsalternativ.
+Du kan ge en beskrivning av planen för att hjälpa de medarbetare som har urval av deras förmåner. Den planinformation som du anger här visas i Självbetjäning för medarbetare när du hovrar över planen i listan med omfattningsalternativ.
 
 1. I arbetsytan **Hantering av förmåner** under **Planer**, välj **förmånsplaner**.
 
-2. På fliken **Förmåner** i navigeringsfältet väljer du **Planbeskrivning**.
+2. Välj **Planinformation**.
 
 ## <a name="view-flex-credit-programs"></a>Visa flexkreditprogram
 
 1. I arbetsytan **Hantering av förmåner** under **Planer**, välj **förmånsplaner**.
 
-2. På fliken **Förmåner** i navigeringsfältet väljer du **Flexkreditprogram**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+2. Välj **Flexkreditprogram**.

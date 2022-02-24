@@ -1,10 +1,12 @@
 ---
 title: Grovplanering
 description: Det här avsnittet innehåller information om grovplanering. Du kan använda grovplaneringen för att ange en allmän uppskattning av produktionsprocessen över en viss tid.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 198073
 ms.assetid: 12c28b11-80aa-4668-b15b-724cb24890bd
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3c380297b56f615a6b285ef7daf1ecbd7bb420f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eb4e1a38c675a3c8d102741a027d54294e335ac1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574579"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966415"
 ---
 # <a name="operations-scheduling"></a>Grovplanering
 
@@ -74,12 +76,10 @@ När du kör grovplanering kan du avbryta specifika delar av rutten. Dessa inklu
 ## <a name="finite-materials"></a>Begränsat material
 Om du arbetar med begränsade material vilar planeringen dessutom på tillgängligheten för de material som krävs för produktionen. Om det inte finns tillräckligt med tillgängliga komponenter för tillverkning, kan produktionen senareläggas. Du kan basera tidsplaneringen på användning av material genom att ange de material som måste vara tillgängliga för produktion. När optimeringen sker både för resurskapaciteten och materialtillgängligheten, beräknas produktionen efter dessa begränsningar. En produktionsorder kan inte planeras att inledas förrän kapacitet och material är tillgängliga samtidigt och i erforderliga kvantiteter.
 
-## <a name="additional-resources"></a>Ytterligare resurser
+<a name="additional-resources"></a>Ytterligare resurser
+--------
 
 [Alternativ för grovplanering](operation-scheduling-options.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

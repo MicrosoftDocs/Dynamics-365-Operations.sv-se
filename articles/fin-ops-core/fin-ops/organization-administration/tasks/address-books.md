@@ -1,10 +1,12 @@
 ---
 title: Konfigurera adressböcker
-description: Använd den här proceduren när du vill ställa in fler adressböcker för din organisation.
+description: Använd den här proceduren och besluten, som du har gjort i planeringen av konfigurationen för den globala adressboken och det ytterligare adressbokavsnittet för att ställa in ytterligare adressböcker för din organisation.
 author: msftbrking
+manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirAddressBook, DirAddressBookTeam
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1e9edd384cf8cc1373481fd47c040cdaeae7d050d2cdba5e0a9afb7c1d361362
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 286bc7a8811543cd6a969dc7450782285c77b6fc
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759123"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796836"
 ---
 # <a name="configure-address-books"></a>Konfigurera adressböcker
 
@@ -39,6 +41,3 @@ Det demonstrationsdataföretag som används för att skapa den här uppgiften ä
 7. Klicka på pilen om du vill lägga till de valda tillgängliga teamen till adressboken.
 8. Klicka på **Spara**.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Borttagna eller utfasade funktioner i tidigare versioner
-description: I det här ämnet beskrivs funktioner som har tagits bort, eller som planerats för borttagning från Dynamics 365 for Finance and Operations och tidigare versioner.
+description: I det här ämnet beskrivs funktioner som har tagits bort, eller som planerats för borttagning från Dynamics 365 for Finance and Operations och tidigare versioner av produkten.
 author: sericks007
-ms.date: 02/16/2021
+manager: AnnBe
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -14,21 +16,21 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063247"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679966"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Borttagna eller utfasade funktioner i tidigare versioner
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> Det här avsnittet uppdateras inte längre. Om du vill visa en aktuell lista över funktioner som har tagits bort från Ekonomi och Drift-appar kan du söka efter innehållet **borttagna eller gamla funktioner** som hör till det program du använder.
+> Det här avsnittet uppdateras inte längre. Om du vill visa en aktuell lista över funktioner som har tagits bort från Finance and Operations-appar kan du söka efter innehållet **"borttagna eller gamla funktioner"** som hör till det program du använder.
 
 I det här ämnet beskrivs funktioner som har tagits bort eller utfasat från Dynamics 365 for Finance and Operations och tidigare versioner av produkten.
 
@@ -37,7 +39,7 @@ I det här ämnet beskrivs funktioner som har tagits bort eller utfasat från Dy
 
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
-Detaljerad information om objekt i Ekonomi och Drift-appar finns i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Ekonomi och Drift-appar.
+Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finans 10.0.7 med plattformsuppdatering 31
 
@@ -84,7 +86,7 @@ Detaljerad information om objekt i Ekonomi och Drift-appar finns i [Tekniska ref
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell: 1 oktober 2020, men vi planerar inte längre att använda metoden **setUtcString()**. Utvecklare bör använda metoden **setUtcDateTime()** i stället. |
 
-### <a name="blocklist-report-it--feature-reference-it-00001"></a>Rapport för spärrlista (IT) – funktionsreferens IT-00001
+### <a name="blacklist-report-it--feature-reference-it-00001"></a>Rapport för svarta listan (IT) – funktionsreferens IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -92,7 +94,7 @@ Detaljerad information om objekt i Ekonomi och Drift-appar finns i [Tekniska ref
 | **Ersatt av en annan funktion?**   | Nej |
 | **Produktområden som påverkas**         | Italiensk lokalisering |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell: Från och med den 1 oktober 2020 planerar vi att inte längre ge support för denna rapport. |
+| **Status**                         | Inaktuell: 1 oktober 2020, men vi planerar inte längre att stödja **Rapport för svarta listan (IT) – funktionsreferens IT-00001**. |
 
 ### <a name="domestic-tax-report--feature-reference-it-00003"></a>Inhemsk momsrapport – funktionsreferens IT-00003
 
@@ -104,39 +106,6 @@ Detaljerad information om objekt i Ekonomi och Drift-appar finns i [Tekniska ref
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell: 1 oktober 2020, men vi planerar inte längre att stödja **Inhemsk momsrapport – funktionsreferens IT-00003**. |
 
-## <a name="october-2019-deprecation-announcement"></a>Oktober 2019 avskrivningsmeddelande
-
-### <a name="flowchart-diagrams-in-business-process-modeler"></a>Flödesschemadiagram i affärsprocessmodelleraren
-
-<table>
-<tbody>
-<tr>
-<td><strong>Orsak till inaktuell/borttagning</strong></td>
-<td>Vi använder inte komponenten flödesschema i Affärsprocessmodelleraren (BPM), eftersom äldre designen orsakade låg användning.</td>
-</tr>
-<tr>
-<td><strong>Ersatt av en annan funktion?</strong></td>
-<td>Nej</td>
-</tr>
-<tr>
-<td><strong>Områden som påverkas</strong></td>
-<td>Affärsprocessmodelleraren</td>
-</tr>
-<tr>
-<td><strong>Status</strong></td>
-<td>Inaktuell: komponenten flödesschema i BPM förväntas tas bort år 2020. Följande funktion kommer att bli otillgänglig:
-<ul>
-<li>Alla flödesscheman blir skrivskyddade och kan inte redigeras. Formegenskaperna som är kopplade till flödesscheman kommer heller inte att vara tillgängliga. Dessa flödesscheman innehåller både standardflödesscheman som genereras automatiskt och anpassade flödesscheman som ändras baserat på dessa standard flödesscheman.</li>
-<li>Processteg blir skrivskyddade och kan inte redigeras.</li>     
-<li>Den inaktuella funktionen Bristanalys kommer inte att vara tillgänglig. Därför skapas ingen lista över luckor automatiskt eller tillgänglig för export.
-<p><strong>Obs!</strong> Den här funktionen hade tidigare ersatts av Microsoft Azure DevOps-integreringar.</p>
-</li>
-<li>Versionshistoriken för flödesschemat kommer inte att vara tillgänglig.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
 
 ## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 med plattformsuppdatering 29
 
@@ -180,7 +149,7 @@ Detaljerad information om objekt i Ekonomi och Drift-appar finns i [Tekniska ref
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Justering av rubrik med andra Dynamics- och Office-produkter. Mer information finns i [uppdaterat navigeringsfält som justeras mot Office-rubriken.](/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar)
+| **Orsak till inaktuell/borttagning** | Justering av rubrik med andra Dynamics- och Office-produkter. Mer information finns i [uppdaterat navigeringsfält som justeras mot Office-rubriken.](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar)
 | **Ersatt av en annan funktion?**   | Från och med plattformsuppdatering 24, ett omformaterat navigeringsfält med sökfunktionen införd. |
 | **Produktområden som påverkas**         | Webbklient |
 | **Distribueringsalternativ**              | Allt |
@@ -194,7 +163,7 @@ Detaljerad information om objekt i Ekonomi och Drift-appar finns i [Tekniska ref
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Äldre standardbeteende för åtgärd i rutnät resulterar i en oväntad kolumn med standardåtgärdslänken efter att rutnätskolumner har beställts om via anpassning. Den nya tröga standardåtgärdsfunktionen korrigerar detta. Mer information finns i [Tröga standardåtgärder i rutnät](/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Orsak till inaktuell/borttagning** | Äldre standardbeteende för åtgärd i rutnät resulterar i en oväntad kolumn med standardåtgärdslänken efter att rutnätskolumner har beställts om via anpassning. Den nya tröga standardåtgärdsfunktionen korrigerar detta. Mer information finns i [Tröga standardåtgärder i rutnät](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
 | **Ersatt av en annan funktion?**   | Med start i plattformsuppdatering 21 infördes en funktion för ”tröga standardåtgärder”. Den här funktionen kan aktiveras på sidan **Prestandaalternativ för klient**. |
 | **Produktområden som påverkas**         | Rutnät i webbklienten |
 | **Distribueringsalternativ**              | Allt |
@@ -205,7 +174,7 @@ Detaljerad information om objekt i Ekonomi och Drift-appar finns i [Tekniska ref
 |&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Filtreringsupplevelsen ”är någon av” har gått igenom en ny utformning av plattformsuppdatering 22, med planen att så småningom blir den enda ”är någon av”-filtreringsupplevelsen. |
-| **Ersatt av en annan funktion?**   | Med start i plattformsuppdatering 22, är en förbättrad ”är någon av”-filtreringserfarenhet tillgänglig på sidan **Prestandaalternativ för klient**. För mer information, se [Optimerad "är någon av" filtreringsupplevelse](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Ersatt av en annan funktion?**   | Med start i plattformsuppdatering 22, är en förbättrad ”är någon av”-filtreringserfarenhet tillgänglig på sidan **Prestandaalternativ för klient**. För mer information, se [Optimerad "är någon av" filtreringsupplevelse](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
 | **Produktområden som påverkas**         | Webbklient |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell: Från och med april 2020 blir den förbättrade "är någon av"-upplevelsen standardbeteendet, utan en mekanism för att återgå till äldre funktion. |
@@ -244,7 +213,7 @@ Stöd för att skapa projektbaserade försäljningsorder där projektkontraktet 
 | **Ersatt av en annan funktion?**   | Kompilerarens varning ersätts av ett fel i plattformsuppdatering 26. Ändringen är bakåtkompatibel vid körning, vilket innebär att om du kör plattformsuppdatering 25 eller senare kan detta distribueras i begränsad eller produktionsmiljö utan att behöva ändra anpassad kod. Denna ändring påverkar endast utveckling och kompileringstid.|
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell – Varningen blir ett kompileringsfel i en kommande plattformsuppdatering 26. |
+| **Status**                         | Inaktuell - Varningen blir ett kompileringsfel i en kommande plattformsuppdatering 26. |
 
 #### <a name="overriding-internal-methods-is-deprecated"></a>Åsidosätta interna metoder är inaktuellt
 
@@ -265,7 +234,7 @@ Stöd för att skapa projektbaserade försäljningsorder där projektkontraktet 
 | **Ersatt av en annan funktion?**   | Nr. |
 | **Produktområden som påverkas**         | Produktinformationshantering |
 | **Distribueringsalternativ**              | Allt  |
-| **Status**                         | Borttagen med Finance and Operations 10.0.0 med plattformsuppdatering 24.|
+| **Status**                         | Tas bort från Finance and Operations 10.0.0 med plattformsuppdatering 24.|
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 med plattformsuppdatering 23
@@ -302,7 +271,7 @@ Inbäddade KPI:er (Key Performance Indicators) kan utformas i Visual Studio av e
 | **Ersatt av en annan funktion?**   | Denna varning ersätts av ett kompileringsfel i framtiden. |
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell: varningen är ett kompileringstidsfel med plattformsuppdateringar för version 10.0.11 av Ekonomi och Drift-appar. |
+| **Status**                         | Inaktuell: varningen är ett kompileringstidsfel med plattformsuppdateringar för version 10.0.11 av Finance and Operations-appar. |
 
 #### <a name="complete-list"></a>Fullständig lista
 Du hittar en fullständig lista över API:er som är inaktuella i [Avskrivning av metoder och metadataelement](deprecation-deletion-apis.md).
@@ -329,7 +298,7 @@ Funktionen för att konfigurera .txt och .xml-format för deklarationer.
 | **Ersatt av en annan funktion?**   | Ja. |
 | **Produktområden som påverkas**         | Redovisning |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Borttagen med Finance and Operations 8.1 med plattformsuppdatering 20. |
+| **Status**                         | Tas bort från Finance and Operations 8.1 med plattformsuppdatering 20. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Ekonomisk rapportgenerator för Ryssland
 Ett verktyg för inställning av datainsamling för redovisning och momsrapporter behövs och exportera data till XLS och DOC-rapportmallar Funktionella delar: exportera data till XLS och DOC rapportmallar, frågor, fasta krav tas bort. 
@@ -340,7 +309,7 @@ Ett verktyg för inställning av datainsamling för redovisning och momsrapporte
 | **Ersatt av en annan funktion?**   | Ja. Användargränssnittet för installationen av ekonomirapporter ska användas för att förbereda datainsamlingsregler av huvudbokskonton eller skatteregister. Exportera data till olika filtyper, fasta krav och frågeliknande datainsamlingsregler ska konfigureras i elektronisk rapportering. |
 | **Produktområden som påverkas**         | Huvudbok. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Borttagen med Finance and Operations 8.1 med plattformsuppdatering 20. |
+| **Status**                         | Tas bort från Finance and Operations 8.1 med plattformsuppdatering 20. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integration med externa leverantörer för att skicka elektronisk rapportering via kommunikationskanaler för Ryssland
 Funktionen exporterar genererade elektroniska filer av deklarationer till mapp för vidare sändning till officiella leverantörer av elektronisk rapportering samt importera tillstånd tillbaka.
@@ -351,7 +320,7 @@ Funktionen exporterar genererade elektroniska filer av deklarationer till mapp f
 | **Ersatt av en annan funktion?**   | Ja.  |
 | **Produktområden som påverkas**         | Redovisningsuppgifter, skatt |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Borttagen med Finance and Operations 8.1 med plattformsuppdatering 20. |
+| **Status**                         | Tas bort från Finance and Operations 8.1 med plattformsuppdatering 20. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Guiden för vinstskattregister
@@ -360,26 +329,16 @@ Funktion för att skapa mallar för nya vinstskattregister. Den här funktionen 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Funktionen är inte kompatibel med Finance and Operations utvidgningsmodell. |
-| **Ersatt av en annan funktion?**   | Nej |
+| **Ersatt av en annan funktion?**   | Nr |
 | **Produktområden som påverkas**         | Skatt |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Borttagen med Finance and Operations 8.1 med plattformsuppdatering 20. |
+| **Status**                         | Tas bort från Finance and Operations 8.1 med plattformsuppdatering 20. |
 
-### <a name="payroll-and-human-resources-for-russia"></a>Löner och Personal för Ryssland
-Rysk landsspecifik modul för hantering av personaladministrationsinformation, tidrapportinformation för anställda, löneredovisning och skapande av löneutdrag. 
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Lön ingår inte i det globala strategiska fokuset i Dynamics 365-portföljen. Partners och ISV:er är bäst placerade för att tillhandahålla lönefunktioner som överensstämmer med lokala regler och skatteuppdateringar.|
-| **Ersatt av en annan funktion?**   | Nej|
-| **Produktområden som påverkas**         | Hantering av Löner och Personal för Ryssland |
-| **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell: Måltidsramen för funktionen som ska tas bort är en av de framtida uppdateringarna av version 10.0. |
 
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 med plattformsuppdatering 15
 Inga funktioner har tagit bort eller ersatts med den här versionen. Plattformsuppdatering 15 är kumulativ och innehåller nya eller ändrade funktioner från plattformsuppdatering 13, plattformsuppdatering 14 och plattformsuppdatering 15.
 
-## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise edition 7.3 med plattformsuppdatering 12.
+## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise edition 7.3 med plattformsuppdatering 12
 
 ### <a name="personalized-product-recommendations"></a>Anpassade produktrekommendationer 
 Med start den 15 februari 2018 kommer återförsäljare inte längre kunna visa anpassade produktrekommendationer på en butikskassa (POS). Mer information finns i [Översikt över produktrekommendationer](../../../commerce/product-recommendations.md).  
@@ -401,7 +360,7 @@ Möjligheten att införa anpassade funktioner som ska användas i ER uttrycksver
 | **Ersatt av en annan funktion?**   | Ingen. När den nya inbyggda funktionen krävs måste en ny tilläggsbegäran sändas till ER-ramverkets team.<br><br>Som en tillfällig lösning medan den begärda funktionen är under utveckling av ER-teamet kan logiken som krävs programmeras som en metod för en anpassad programklass. Den här metoden kan användas i ER-uttryck som en egenskap för den tillagda ER-datakällan i typen **Application\Class** som refererar till den anpassade programklassen.  |
 | **Produktområden som påverkas**         | Elektroniskt rapporteringsramverk                                                      |
 | **Distribueringsalternativ**              | Allt                                                                                      |
-| **Status**                         | Borttagen med Finance and Operations, Enterprise edition 7.3.    |
+| **Status**                         | Tas bort från Finance and Operations, Enterprise edition 7.3.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Lager per artikelgrupp och Lager per åldersfördelningsrapport för lagerdimension 
 
@@ -416,7 +375,7 @@ Dessa två rapporter stöds inte längre i Finance and Operations. I stället ka
 | **Status**                       | Inaktuell: Menyalternativen för de två rapporterna har tagits bort i version 7.3. Koden för rapporterna finns emellertid kvar i produkten Planen är att ta bort koden i framtida versioner. |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-innehållspaket finns på AppSource
-Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat** och **Retail Channel Performance** som publicerades på webbplatsen [Microsoft AppSource](https://appsource.microsoft.com), är inaktuella till följd av produktuppdateringar i Microsoft Power BI. Systemadministrationformulär som brukade användas för att distribuera dessa innehållspaket till PowerBI.com används även i Finance and Operations.
+Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat** och **Butikskanalresultat** som publicerades på webbplatsen [Microsoft AppSource](https://appsource.microsoft.com), är inaktuella till följd av produktuppdateringar i Microsoft Power BI. Systemadministrationsformulär som brukade användas för att distribuera dessa innehållspaket till PowerBI.com används även i Finance and Operations.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -455,7 +414,7 @@ Dessa skatter har infogats till indiska GST.
 |              &nbsp;                               |      &nbsp;                                                                   |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Orsak till inaktuell eller borttagning**       | Brist på kundanvändning                                                  |
-| **Ersatt av en annan funktion?**            | Nej                                                                      |
+| **Ersatt av en annan funktion?**            | Nr                                                                      |
 | **Produktområden som påverkas**                  | Indisk källskatt                                                  |
 | **Distribueringsalternativ**                       | Alla moduler                                                                    |
 | **Status**                                  | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.   |        
@@ -467,7 +426,7 @@ Användare kan hämta denna från myndighetsportalen.
 |             &nbsp;                                |    &nbsp;                                                                     |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Orsak till inaktuell eller borttagning**       | Brist på kundanvändning                                                  |
-| **Ersatt av en annan funktion?**            | Nej                                                                      |
+| **Ersatt av en annan funktion?**            | Nr                                                                      |
 | **Produktområden som påverkas**                  | Indisk källskatt                                                  |
 | **Distribueringsalternativ**                       | Alla moduler                                                                   |
 | **Status**                                  | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.     |    
@@ -478,7 +437,7 @@ Användare kan hämta denna från myndighetsportalen.
 |              &nbsp;                               |        &nbsp;                                                                 |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Orsak till inaktuell eller borttagning**       | Brist på kundanvändning                                                  |
-| **Ersatt av en annan funktion?**            | Nej                                                                      |
+| **Ersatt av en annan funktion?**            | Nr                                                                      |
 | **Produktområden som påverkas**                  | Import och export                                                       |
 | **Distribueringsalternativ**                       | Alla moduler                                                                    |
 | **Status**                                  | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.  |    
@@ -498,7 +457,7 @@ Med start den 15 februari 2018 kommer återförsäljare inte längre kunna visa 
 | **Status**                         |Borttagen från den 15 februari 2018. Detta påverkar kunder som kör Dynamics 365 for Retail 7.2 och senare. |
 
 
-## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise edition juli 2017 med plattformsuppdatering 8.
+## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise edition juli 2017 med plattformsuppdatering 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Valutakonvertering för redovisnings- och rapporteringsvalutor
 
@@ -514,12 +473,12 @@ Valutakonvertering för redovisnings- och rapporteringsvalutor infördes när eu
 
 ### <a name="warehouse-mobile-devices-portal"></a>Warehouse Mobile Devices-portalen
 
-Warehouse mobile devices portalen (WMDP) är en fristående komponent som är avsedd för eget lokal distribution. Denna komponent stöds inte längre i Finance and Operations. Ett enhetligt program som förbättrar användarupplevelsen har ersatt funktionen i WMDP.
+Warehouse mobile devices portalen (WMDP) är en fristående komponent som är avsedd för eget lokal distribution. Den här komponenten stöds inte längre i Finance and Operations. Ett enhetligt program som förbättrar användarupplevelsen har ersatt funktionen i WMDP.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Dubblettfunktion.       |
-| **Ersatt av en annan funktion?**   | Ja. Den här funktionen har ersatts av Finance and Operations - lagring. Mer information om inställningar, och förutsättningar finns i [Installera och konfigurera lagerstyrningsappen - översikt](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Ersatt av en annan funktion?**   | Ja. Funktionen har ersatts med Finance and Operations - lagerhållning. Mer information om inställningar, och förutsättningar finns i [Installera och konfigurera lagerstyrningsappen - översikt](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Produktområden som påverkas**         | Lager- och transporthantering     |
 | **Distribueringsalternativ**              | Warehouse mobile devices portalen (WMDP) är en fristående komponent som är avsedd för eget lokal distribution.               |
 | **Status**                         | Inaktuell: Måltidsramen för att ta bort funktioner är Q4 2019.   |
@@ -578,7 +537,7 @@ Det här verktyget används när en kontoplan i Spanien kräver stora ändringar
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Begränsad användning                                                  |
-| **Ersatt av en annan funktion?**   | Nej                                                             |
+| **Ersatt av en annan funktion?**   | Nr                                                             |
 | **Produktområden som påverkas**         | Huvudbok                                                 |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
 
@@ -604,7 +563,7 @@ DTA-/EZAG-format integreras i ESR-systemet, eftersom de kan ha ett referensnumme
 | **Produktområden som påverkas**         | Leverantörsreskontra                                               |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
 
-### <a name="edifact-dirdeb-payment-format-for-austria"></a>EDIFACT – DIRDEB-betalningformat för Österrike
+### <a name="edifact-dirdeb-payment-format-for-austria"></a>EDIFACT - DIRDEB-betalningformat för Österrike
 
 EDIFACT-DIRDEB-betalningsformat för betalningsinsamling (autogiro).
 
@@ -622,7 +581,7 @@ EDIVAT är en inaktuell belgisk standard för elektronisk deklaration säker via
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Funktionen används inte längre.                           |
-| **Ersatt av en annan funktion?**   | Nej                                                             |
+| **Ersatt av en annan funktion?**   | Nr                                                             |
 | **Produktområden som påverkas**         | Huvudbok                                                 |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
 
@@ -699,7 +658,7 @@ Den här funktionen används för ändringar i kontoplanen och redovisningsregle
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Begränsad användning                                                  |
-| **Ersatt av en annan funktion?**   | Nej                                                             |
+| **Ersatt av en annan funktion?**   | Nr                                                             |
 | **Produktområden som påverkas**         | Huvudbok                                                 |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
 
@@ -787,7 +746,7 @@ Radiofrekvensidentifiering (RFID) är en datainsamlingsteknik som använder elek
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Låg kundanvändning och en begränsad uppsättning funktioner.   |
-| **Ersatt av en annan funktion?**   | Nej                                              |
+| **Ersatt av en annan funktion?**   | Nr                                              |
 | **Produktområden som påverkas**         | Lagerhantering                            |
 | **Status**                         | Borttagen Dynamics 365 for Operations 1611. |
 
@@ -798,7 +757,7 @@ Lettisk lagstiftning innehåller särskilda regler om hur försäljningsfakturor
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Numrering av statliga fakturor måste inte längre underhållas. Rapporten om använda fakturanummer är inte längre obligatorisk. |
-| **Ersatt av en annan funktion?**   | Nej       |
+| **Ersatt av en annan funktion?**   | Nr       |
 | **Produktområden som påverkas**         | Kundreskontra    |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.  |
 
@@ -860,7 +819,7 @@ Löneinformation i HR
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Låg användning                                                           |
-| **Ersatt av en annan funktion?**   | Nej                                                                  |
+| **Ersatt av en annan funktion?**   | Nr                                                                  |
 | **Produktområden som påverkas**         | Personal                                                     |
 | **Status**                         | Borttagen från Dynamics 365 for Operations version 1611. |
 
@@ -870,7 +829,7 @@ Ett arbetsflöde för hantering av genereringen av medarbetare är en av flera a
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Prestandahantering har helt formats om i Finance and Operations.     |
+| **Orsak till inaktuell/borttagning** | Prestandahantering har gjorts om helt i Finance and Operations.     |
 | **Ersatt av en annan funktion?**   | Den omformade prestandahanteringsfunktionen innehåller mer kontroll över innehållet av mål, måtten som används för att spåra framsteg och bilaga med förklarande dokumentation. Mål kan lagras som mallar och sedan återanvändas. Den här funktionen kan hjälpa dig att snabbare ställa in ytterligare mål för medarbetarna. |
 | **Produktområden som påverkas**         | Administration av humankapital                 |
 | **Status**                         | Borttagen från Dynamics 365 for Operations version 1611. |
@@ -883,7 +842,7 @@ Ett arbetsflöde för hantering av genereringen av medarbetare är en av flera a
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Prestandaförbättring        |
-| **Ersatt av en annan funktion?**   | Nej                             |
+| **Ersatt av en annan funktion?**   | Nr                             |
 | **Produktområden som påverkas**         | Leverantörsreskontra               |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0. |
 
@@ -916,7 +875,7 @@ När konfigurationsnyckeln för **strukturlisteversioner** inaktiverades doldes 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Användningen av en konfigurationsnyckel för att kontrollera strukturlisteversioner kan inte skalas till en molnmiljö. |
-| **Ersatt av en annan funktion?**   | Nej                                                                                      |
+| **Ersatt av en annan funktion?**   | Nr                                                                                      |
 | **Produktområden som påverkas**         | Produktinformationshantering, Lagerhantering                                    |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.                                                          |
 
@@ -927,7 +886,7 @@ Specifik betalningsmetod för brasilianska företag
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Stöd för den brasilianska Bordero-betalningsmetoden har annullerats från brasiliansk lokalisering |
-| **Ersatt av en annan funktion?**   | Nej   |
+| **Ersatt av en annan funktion?**   | Nr   |
 | **Produktområden som påverkas**         | Leverantörsreskontra   |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
 
@@ -949,7 +908,7 @@ Federala skatteutdrag för ICMS-skatt
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Den här eventualitetsmetoden används inte längre i alla brasilianska stater |
-| **Ersatt av en annan funktion?**   | Nej                                                                          |
+| **Ersatt av en annan funktion?**   | Nr                                                                          |
 | **Produktområden som påverkas**         | Kundreskontra                                                         |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.              |
 
@@ -1000,7 +959,7 @@ Regelefterlevnadscentret var en Enterprise Portal-webbplats för att hantera dok
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Brist på kundanvändning. Microsoft SharePoint innehåller samma kapacitet som var tillgänglig i regelefterlevnadscentret. |
-| **Ersatt av en annan funktion?**   | Nej   |
+| **Ersatt av en annan funktion?**   | Nr   |
 | **Produktområden som påverkas**         | Regelefterlevnad och interna kontroller  |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.    |
 
@@ -1011,7 +970,7 @@ Verktyget användes för att integrerar viktiga data från Microsoft Dynamics CR
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Funktionen har ersatts med en annan funktion. |
-| **Ersatt av en annan funktion?**   | Dataverse                                      |
+| **Ersatt av en annan funktion?**   | Common Data Service                                      |
 | **Produktområden som påverkas**         | Koppling för Dynamics                         |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.                           |
 
@@ -1029,7 +988,7 @@ Verktyget användes för att integrerar viktiga data från Microsoft Dynamics CR
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Stackikongrupper användes för att visa en eller flera stackikoner i faktaboxområdet. Upptaget var begränsat och det fanns även prestandaproblem eftersom en poständring i ett överordnat formulär orsakade en fråga per stackikon i stackikongruppen. |
-| **Ersatt av en annan funktion?**   | Nej      |
+| **Ersatt av en annan funktion?**   | Nr      |
 | **Produktområden som påverkas**         | Alla moduler    |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.  |
 
@@ -1047,7 +1006,7 @@ Verktyget användes för att integrerar viktiga data från Microsoft Dynamics CR
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Stöd för den danska checkformatlayouten har tagits bort, och rapporten har tagits bort från lokalisering för danska. |
-| **Ersatt av en annan funktion?**   | Nej    |
+| **Ersatt av en annan funktion?**   | Nr    |
 | **Produktområden som påverkas**         | Alla moduler    |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.  |
 
@@ -1079,7 +1038,7 @@ Dynamics AX 2012 tillåter lagring av bifogade filer i databasen och i delade fi
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Ingen användning av funktionen påträffades. |
-| **Ersatt av en annan funktion?**   | Nej                                     |
+| **Ersatt av en annan funktion?**   | Nr                                     |
 | **Produktområden som påverkas**         | Tid och närvaro                    |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.         |
 
@@ -1137,7 +1096,7 @@ Den här funktionen ger eXtensible Business Reporting Language (XBRL)-utdata som
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Låg kundanvändning och en begränsad uppsättning funktioner.  |
-| **Ersatt av en annan funktion?**   | Nej              |
+| **Ersatt av en annan funktion?**   | Nr              |
 | **Produktområden som påverkas**         | Efterlevnad och interna kontroller, Leverantörsreskontra  |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0. |
 
@@ -1193,7 +1152,7 @@ Genereringen av förauktoriseringar kan inte utföras med hjälp av en batch men
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | XML-formatet för tyska listrapporten över försäljning inom EU stöds inte längre. Det går enbart att använda textfilformatet ELMA5 för att skicka in listrapporten över försäljning inom EU till den tyska skattemyndigheten. |
-| **Ersatt av en annan funktion?**   | Nej         |
+| **Ersatt av en annan funktion?**   | Nr         |
 | **Produktområden som påverkas**         | Skatt        |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.   |
 
@@ -1246,7 +1205,7 @@ Den här funktionen möjliggjorde genereringen av mexikanska e-fakturor med hjä
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Metoden är inte längre tillämplig. Genereringen av elektroniska fakturor genom att använda CFD-metoden drogs tillbaka av skattemyndigheterna och ersattes av CFDI-metoden (Comprobante Fiscal Digital a través de Internet), där signeringen delegeras till tredjepartsleverantören (PAC). Den månatliga rapporten har tagits bort och ett förfrågningsalternativ gör det möjligt för användare att fråga om historiska transaktioner. |
-| **Ersatt av en annan funktion?**   | Nej    |
+| **Ersatt av en annan funktion?**   | Nr    |
 | **Produktområden som påverkas**         | Kundfordringar, Projekt   |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
 
@@ -1278,7 +1237,7 @@ Inventerings- och lagerställejournalerna stöder inte längre möjligheten att 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Ingen användning av funktionen påträffades. |
-| **Ersatt av en annan funktion?**   | Nej                                     |
+| **Ersatt av en annan funktion?**   | Nr                                     |
 | **Produktområden som påverkas**         | Lagerhantering                   |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.         |
 
@@ -1289,7 +1248,7 @@ Product Builder användes för att dynamiskt konfigurera artiklar från en förs
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Product Builder exponerade X++-kod till slutanvändare och stöds inte i den aktuella versionen av Dynamics AX. Den har tagits bort för att undvika dubbelt underhållsarbete med överlappande, ansenliga kodbaser.  |
-| **Ersatt av en annan funktion?**   | Ja. Begränsningsbaserad konfiguration infördes i Dynamics AX 2012 där avskrivningen av Product Builder i kommande versioner har tillkännagivits. Den begränsningsbaserade konfigurationstekniken väljs på produktmallarna för att möjliggöra konfigurationen. Mer information finns i [Produktkonfiguration – översikt](../../../supply-chain/pim/build-product-configuration-model.md). |
+| **Ersatt av en annan funktion?**   | Ja. Begränsningsbaserad konfiguration infördes i Dynamics AX 2012 där avskrivningen av Product Builder i kommande versioner har tillkännagivits. Den begränsningsbaserade konfigurationstekniken väljs på produktmallarna för att möjliggöra konfigurationen. Mer information finns i [Produktkonfiguration - översikt](../../../supply-chain/pim/build-product-configuration-model.md). |
 | **Produktområden som påverkas**         | Produktinformationshantering, Försäljning och marknadsföring  |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.      |
 
@@ -1311,7 +1270,7 @@ Den här funktionen låter dig ändra namnet på en av de tre standardproduktdim
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Den aktuella versionen av Dynamics AX stöder inte etikettändringar under körning. |
-| **Ersatt av en annan funktion?**   | Nej                                                                            |
+| **Ersatt av en annan funktion?**   | Nr                                                                            |
 | **Produktområden som påverkas**         | Produktinformationshantering                                                |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.                                                |
 
@@ -1340,7 +1299,7 @@ I Dynamics AX 2012 R3 kan Retail Server med hjälp av HTTP-kommunikation (icke-s
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Låg kundanvändning och en begränsad uppsättning funktioner. |
-| **Ersatt av en annan funktion?**   | Nej                                           |
+| **Ersatt av en annan funktion?**   | Nr                                           |
 | **Produktområden som påverkas**         | USA-moms                                 |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.               |
 
@@ -1351,7 +1310,7 @@ Med hjälp av webbplatstjänster kan du utöka dina affärsprocesser till Intern
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Microsoft Azure-infrastrukturen, som användes av Dynamics AX, har nya kapaciteter som kan användas i stället (exempelvis, Azure-webbplatser). |
-| **Ersatt av en annan funktion?**   | Nej   |
+| **Ersatt av en annan funktion?**   | Nr   |
 | **Produktområden som påverkas**         | Rekrytering av personal, ärendehantering, begäran om offerter, registrering av leverantör, samarbetsplatser för affärsmöjligheter och kampanjer  |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.    |
 
@@ -1376,7 +1335,7 @@ Med hjälp av webbplatstjänster kan du utöka dina affärsprocesser till Intern
 
 ### <a name="virtual-company-accounts"></a>Virtuella företagskonton
 
-Funktionen för virtuella företag stöds inte längre i Dynamics AX. Funktionen för virtuella företag gjorde att användarna kunde ställa in register som kunde delas av en uppsättning företag. Du kan hitta en beskrivning av funktionen här: [Företagskonton och konton för virtuella företag](../../fin-ops/get-started/ax4-content-retired.md). Funktionen fungerar genom att gruppera register i samlingar som tilldelas till virtuella företag, som är grupper med befintliga ”verkliga” företag. Frågor skapas så att alla företag i det virtuella företaget kan komma åt data i registren för de associerade registersamlingarna.
+Funktionen för virtuella företag stöds inte längre i Dynamics AX. Funktionen för virtuella företag gjorde att användarna kunde ställa in register som kunde delas av en uppsättning företag. Du kan hitta en beskrivning av funktionen här: [Företagskonton och konton för virtuella företag](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Funktionen fungerar genom att gruppera register i samlingar som tilldelas till virtuella företag, som är grupper med befintliga ”verkliga” företag. Frågor skapas så att alla företag i det virtuella företaget kan komma åt data i registren för de associerade registersamlingarna.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -1414,6 +1373,3 @@ Windows 8 surfplatteapp gav funktion för utgiftsregistrering och godkännande.
 |     <strong>Produktområden som påverkas</strong>     |                                              Huvudbok                                              |
 |             <strong>Status</strong>             |                                      Borttagen från och med Dynamics AX 2012.                                      |
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

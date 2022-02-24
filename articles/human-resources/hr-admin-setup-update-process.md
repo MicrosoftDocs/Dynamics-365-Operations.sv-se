@@ -2,12 +2,15 @@
 title: Uppdatera process
 description: Microsoft Dynamics 365 Human Resources är en äkta programvara som en tjänst (SaaS) som tillhandahåller kontinuerliga, beröringsfria tjänstuppdateringar för app- och plattformsändringar.
 author: andreabichsel
+manager: AnnBe
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,18 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2af1f710ca010041bd684bca8ecfa6f20ac30d46
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d841a026f589d774ec5ada3ac9adcc84dde9aee1
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063120"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527822"
 ---
 # <a name="update-process"></a>Uppdatera process
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Microsoft Dynamics 365 Human Resources är en äkta programvara som en tjänst (SaaS) som tillhandahåller kontinuerliga, beröringsfria tjänstuppdateringar. Uppdateringarna innehåller både program- och plattformsändringar som ofta ger viktiga förbättringar av tjänsten, inklusive regler för uppdatering av regler.
 
@@ -38,11 +39,11 @@ Uppdateringar släpps regelbundet för alla miljöer. Personal stöds enligt [Mi
 
 Personaluppdateringar tillämpas automatiskt på alla miljöer. I personal finns två typer av utgåvor:
 
-- **Tjänstuppdateringar**: uppdateringar sker varannan vecka som innehåller felkorrigeringar och nya funktioner. Tjänstuppdateringar inkluderar även tillämpliga plattformsuppdateringar när de släpps. För att få en uppfattning om hur plattformsuppdateringar frisläpps, se [Tabell 3: frisläppning av plattformsuppdateringar](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md#table-3-platform-releases). Uppdateringar varannan vecka har en stegvis global introduktion över regioner. Mer information om uppdateringar varannan vecka finns i [Nyheter eller ändringar i Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Tjänstuppdateringar**: uppdateringar sker varannan vecka som innehåller felkorrigeringar och nya funktioner. Tjänstuppdateringar inkluderar även tillämpliga plattformsuppdateringar när de släpps. För att få en uppfattning om hur plattformsuppdateringar frisläpps, se [Tabell 3: frisläppning av plattformsuppdateringar](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Uppdateringar varannan vecka har en stegvis global introduktion över regioner. Mer information om uppdateringar varannan vecka finns i [Nyheter eller ändringar i Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
     Alla datacenter som stöds uppdateras varannan vecka, om inget annat anges. Regionerna USA, Australien, Europa, Storbritannien, Asien och Kanada ingår i uppdateringar varannan vecka. 
 
-- **Uppdateringar av Dataverse-lösning**: dessa uppdateringar sker var sjätte vecka, efter behov. De innehåller nya entiteter och ändringar i befintliga entiteter i Dataverse. Dessa uppdateringar frisläpps på samma områden som uppdateringar varannan vecka och de tar ungefär sex veckor att replikera genom alla datacenter. Uppdateringar av lösningen kan eventuellt justeras med tjänstuppdateringar varannan vecka.
+- **Uppdateringar av Common Data Service-lösning**: dessa uppdateringar sker var sjätte vecka, efter behov. De innehåller nya entiteter och ändringar i befintliga entiteter i Common Data Service. Dessa uppdateringar frisläpps på samma områden som uppdateringar varannan vecka och de tar ungefär sex veckor att replikera genom alla datacenter. Uppdateringar av lösningen kan eventuellt justeras med tjänstuppdateringar varannan vecka.
 
 > [!NOTE]
 > Lösningsuppdateringar är tillgängliga på alla datacenter när de har frisläppts. Om du inte vill vänta på att uppdateringarna ska replikeras automatiskt kan du installera dessa uppdateringar manuellt på alla miljöer i datacentret.
@@ -55,14 +56,14 @@ Vid behov innehåller personal även följande typer av korrigeringar:
 
 Versioner granskas, testas och valideras i en intern miljö. När versioner har signerats distribueras de till produktion.
 
-## <a name="release-cadence-exceptions-in-2021"></a>Frisläppningstakt undantag i 2021
+## <a name="release-cadence-exceptions-in-2020"></a>Frisläppningstakt undantag i 2020
 
-För att kunna redovisa helgdagar är publicering av version för november och december 2021 följande:
+För att kunna redovisa helgdagar är publicering av version för november och december 2020 följande:
 
-- November version: 1 november – 14 november
-- December version: 29 november – 12 december
+- November version: 2 november - 13 november
+- December version: 30 november - 11 december
  
-Frisläppningstakten på två veckor kommer att återupptas som vanligt den 10 januari, 2022.
+Frisläppningstakten på två veckor kommer att återupptas som vanligt den 11 januari, 2021.
 
 ## <a name="communications"></a>Kommunikationer
 
@@ -70,11 +71,11 @@ Du kan ta reda på vad som finns i arbetet för personal och vad vi har publicer
 
 - [Dynamics 365 Human Resources översikt](https://dynamics.microsoft.com/roadmap/human-resources/)
 
-- [Utgivningsplaner för Dynamics 365](/dynamics365/release-plans/)
+- [Utgivningsplaner för Dynamics 365](https://docs.microsoft.com/dynamics365/release-plans/)
 
 - [Nyheter och ändringar i Dynamics 365 Human Resources](hr-admin-whats-new.md)
 
-- [Problemsökning i Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs.md) (endast för plattformsspecifika programfel)
+- [Problemsökning i Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) (endast för plattformsspecifika programfel)
 
 - [Personalblogg](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
@@ -82,7 +83,7 @@ Du kan ta reda på vad som finns i arbetet för personal och vad vi har publicer
 
 ## <a name="preview-features-in-a-sandbox-environment"></a>Förhandsgranskningsfunktioner i en miljö med begränsat läge
 
-Du kan validera förhandsgranskningsfunktionerna i en miljö med begränsat läge innan du gör dem i produktionsmiljön. Mer information om hur du aktiverar funktioner finns i [Översikt över funktionshantering](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Du kan validera förhandsgranskningsfunktionerna i en miljö med begränsat läge innan du gör dem i produktionsmiljön. Mer information om hur du aktiverar funktioner finns i [Översikt över funktionshantering](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 Alla nya funktioner förblir i förhandsgranskning i minst 30 dagar, vanligtvis 30-60 dagar. Huvudfunktionerna är vanligtvis tillgängliga i oktober och april varje år efter förhandsgranskningsperioden. Så snart du ser nya funktioner på arbetsytan Funktionshantering kan du aktivera dem. Vissa funktioner kan vara aktiverade som standard.
 
@@ -100,10 +101,7 @@ När du testar förhandsgranskningsfunktioner eller försöker med nya funktione
 
 ## <a name="see-also"></a>Se även
 
-[Utgivningsplaner för Dynamics 365 och Power Platform](/dynamics365/release-plans)</br>
+[Utgivningsplaner för Dynamics 365 och Power Platform](https://docs.microsoft.com/dynamics365/release-plans)</br>
 [Nyheter och ändringar i Dynamics 365 Personal](hr-admin-whats-new.md)</br>
-[Livscykelpolicy för programmet](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
+[Livscykelpolicy för programmet](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

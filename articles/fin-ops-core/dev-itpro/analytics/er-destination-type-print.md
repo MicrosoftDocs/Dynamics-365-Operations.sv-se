@@ -1,10 +1,12 @@
 ---
 title: ER-målstyp för skrivare
-description: I det här avsnittet beskrivs hur du konfigurerar en skrivare för varje MAPP- eller FIL-komponent i ett elektroniskt rapporteringsformat (ER).
+description: Det här ämnet förklarar hur du konfigurerar en skrivardestination för varje MAPP- eller FIL-komponent i ett ER-format (elektronisk rapportering) som har konfigurerats för att generera utgående dokument i antingen PDF eller Microsoft Office-format (Excel\Word).
 author: NickSelin
-ms.date: 02/24/2021
+manager: AnnBe
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -15,14 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 672b1d70607a32d30c703ce39573d7480462fec45739b6e1e49ef27166a50e2c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b7a279dcb30e7681ae654ab17d898a5364391d57
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712722"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679616"
 ---
-# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Skrivardestination
+# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Utskriftsmål
 
 [!include [banner](../includes/banner.md)]
 
@@ -30,7 +32,7 @@ Du kan skicka ett genererat dokument direkt till en nätverksskrivare för direk
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Innan du börjar måste du installera och konfigurera dokumentflödesagenten och sedan registrera nätverksskrivarna. Mer information finns i [Installera dokumentflödesagenten för att aktivera nätverksutskrift](./install-document-routing-agent.md).
+Innan du börjar måste du installera och konfigurera dokumentflödesagenten och sedan registrera nätverksskrivarna. Mer information finns i [Installera dokumentflödesagenten för att aktivera nätverksutskrift](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent).
 
 ## <a name="make-the-printer-destination-available"></a>Göra skrivarmålet tillgängligt
 
@@ -39,13 +41,15 @@ Om du vill göra **skrivarmålet** tillgängligt i den aktuella instansen av Mic
 1. Konvertera utgående dokument för elektronisk rapportering från Microsoft Office-format till PDF.
 2. Dokumentflödesagenten som mål för utgående dokument vid elektronisk rapportering
 
-[![Aktivera funktionen för ER-skrivarmål i funktionshanteringen.](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
+[![Aktivera funktionen för ER-skrivarmål i funktionshantering](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
 ### <a name="applicability"></a>Tillämplighet
 
 **Skrivarmålet** kan bara konfigureras för de fil komponenter som används för att generera utdata i antingen utskrivbara PDF-format (PDF-sammanslagning eller PDF-filformat) eller Microsoft Office Excel/Word-format (Excel-fil). När utdata genereras i PDF-format skickas det till en skrivare. När utdata genereras i Microsoft Office-format konverteras det automatiskt till PDF-format och skickas sedan till en skrivare.
 
 ### <a name="limitations"></a>Begränsningar
+
+Den här funktionen är en förhandsgranskningsfunktion och används för användningsvillkoren som [Extra användningsvillkor för Microsoft Dynamics 365 förhandsgranskningar](https://go.microsoft.com/fwlink/?linkid=2105274).
 
 **Skrivarmålet** implementeras endast för molndistributioner.
 
@@ -55,7 +59,7 @@ Om du vill göra **skrivarmålet** tillgängligt i den aktuella instansen av Mic
 2. I fältet **Skrivarnamn** välj önskad nätverksskrivare.
 3. Ange alternativet **Spara i utskriftsarkivet?** till **Ja** att de genererade utdata ska sparas i utskriftsarkivet så att de blir tillgängliga för utskriften. Om du vill komma åt arkiverade utdata senare **Organisationsadministration** \> **Förfrågningar och rapporter** \> **Rapportarkiv**.
 
-[![Använda skrivarmål.](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
+[![Använd skrivarmål](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
 
 > [!NOTE]
 > Alternativet **konvertera till PDF** måste inte vara aktiverat när du konfigurerar **skrivarmålet**. PDF-konverteringen för utskrift sker även om alternativet är inaktiverat.
@@ -66,6 +70,3 @@ För att använda en specifik [sidorientering](electronic-reporting-destinations
 
 - [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

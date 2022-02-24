@@ -1,32 +1,33 @@
 ---
 title: Ta bort en instans
-description: I det här avsnittet får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/11/2021
+description: I det här artikel får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e32058280d0cb1eab436bc25bd29bc3e39fabc92
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393507"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420625"
 ---
 # <a name="remove-an-instance"></a>Ta bort en instans
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-I detta ämne förklaras hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
+I det här artikel får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
 
 ## <a name="remove-a-test-drive-environment"></a>Ta bort en testkörningsmiljö
 
@@ -34,16 +35,16 @@ Personal testkörning etableras med en 60 dagars giltighetspolicy. Ägare av te
 
 1. Gå till [Power Apps administrationscenter](https://admin.businessplatform.microsoft.com/).
 2. Välj **Miljö**.
-3. Välj testkörningsmiljö som har ett namnmönster ungefär så här: TestDrive – alias@domain
+3. Välj testkörningsmiljö som har ett namnmönster ungefär så här: TestDrive - alias@domain
 4. Välj **Ta bort** och bekräfta beslutet. 
 
 Den befintliga testkörningsmiljön tas bort. Om det tas bort kan du skaffa en ny testkörningmiljö. 
 
 ## <a name="remove-a-production-environment"></a>Ta bort en produktionsmiljö
 
-Detta ämne förutsätter att du har köpt Personal via en molnbaserad lösningsleverantör (CSP) eller ett arkitekturavtal för företag (EA). 
+Den här artikeln förutsätter att du har köpt Personal via en molnbaserad lösningsleverantör (CSP) eller ett arkitekturavtal för företag (EA). 
 
-Eftersom en enda Personal-miljö ”ingår” i en enda Power Apps-miljö, finns det två alternativ att välja mellan. Det första alternativet innebär att ta bort hela Power Apps-miljön. Det andra alternativet innebär att endast Personal tas bort. Det första alternativet är att föredra när du har skapat en Power Apps-miljö uttryckligen i syfte att etablera Personal och du har precis börjat genomförandet eller du har inte några fastställda integreringer. Det andra alternativet är lämpligt om du har en fastställd Power Apps-miljö fylld med rich-data som utnyttjas i Power Apps och Power Automate.
+Eftersom en enda Personal-miljö ”ingår” i en enda Power Apps-miljö, finns det två alternativ att välja mellan. Det första alternativet innebär att ta bort hela Power Apps-miljön. Det andra alternativet innebär att endast Personal tas bort. Det första alternativet är att föredra när du har skapat en Power Apps-miljö uttryckligen i syfte att etablera Personal och du har precis börjat genomförandet eller du har inte några fastställda integrationer. Det andra alternativet är lämpligt om du har en fastställd Power Apps-miljö fylld med rich-data som utnyttjas i Power Apps och Power Automate.
 
 > [!Important]
 > Innan du tar bort Power Apps-miljön, se till att den inte används för integrering av rich-data utanför Personal omfattning. Observera även att de standardinställda Power Apps-miljöerna inte kan tas bort. 
@@ -80,10 +81,7 @@ Så här återställer du miljön:
 
 1. Följ anvisningarna i [Återställ Power Apps-miljön](/power-platform/admin/recover-environment.md).
 
-2. Kontakta support för att återställa personalmiljön. För mer information, se [Få support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+2. Kontakta support för att återställa personalmiljön. För mer information, se [Få support](hr-admin-troubleshooting-support.md).
 
 > [!Warning]
 > Power Apps-miljöer sparas bara i sju dagar efter borttagning. Du måste återställa miljön inom sju dagar.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

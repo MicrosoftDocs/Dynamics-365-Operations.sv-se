@@ -1,10 +1,12 @@
 ---
 title: Utforma konfigurationer för att skapa dokument som omfattar programdata
-description: Det här ämnet beskriver hur du utformar elektroniska rapporteringskonfigurationer (ER) för att skapa ett elektroniskt dokument. (Del 1 - Importera konfigurationer).
+description: 'Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren ER Skapa dokument med uppdatering av programdata (Del 1: Importera konfigurationer).'
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f335721ee97919af20e73fc9da6c9bf07dcae50aca8f8904d144d75c2f4d7b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d099836ba00ffa1d4fd002af4ac3e6045b41c6a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726271"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684605"
 ---
 # <a name="design-configurations-to-generate-documents-that-have-application-data"></a>Utforma konfigurationer för att skapa dokument som omfattar programdata
 
@@ -56,6 +58,3 @@ Innan du börjar ska du ändra land för DEMF-företaget från DEU (Tyskland) ti
 10. Stäng sidan.
 11. Stäng sidan.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

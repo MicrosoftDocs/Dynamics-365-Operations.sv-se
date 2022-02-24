@@ -1,25 +1,27 @@
 ---
 title: Orderuppfyllelse i butik
 description: Det här ämnet ger en översikt över orderuppfyllelse i butik.
-author: BrianShook
+author: rubencdelgado
+manager: AnnBe
 ms.date: 10/30/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 36ce908e81639fbb836d33ff3e84976c395b1473
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: fa568926ccdde4620294915679cd094adbd1e833
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983352"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965412"
 ---
 # <a name="store-order-fulfillment"></a>Orderuppfyllelse i butik
 
@@ -33,7 +35,7 @@ Utförande av orderuppfyllelse i butiken ger en enskild arbetsyta i POS som kan 
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Komma åt enhetligt orderuppfyllande i POS
 
-Orderuppfyllande [Operations-ID 928](pos-operations.md), kan användas för åtkomst till butikens orderuppfyllelsearbete i POS.
+Orderuppfyllande [Operations-ID 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations), kan användas för åtkomst till butikens orderuppfyllelsearbete i POS.
 
 Utförande av orderuppfyllelsen har inte sin egen inte har sin egen färdiga behörighet, men användare kommer i framtiden att kunna använda behörigheten **Tillåt hämta order** för att starta en åtgärd från POS.
 
@@ -93,7 +95,7 @@ När en order har tagits emot kan rader väljas och markeras som **plockning**. 
 
 Plocklistor kan skrivas ut vid POS för att hjälpa medarbetare att utföra plockningsprocessen. En utskriven plocklista kan köras medan medarbetaren utför plockningen och när produkterna plockas kan medarbetaren manuellt markera dem som plockade på plocklistan.
 
-Plocklistformatet konfigurerats i Commerce och läggs till i kvittoprofilen. Mer information om hur du ställer in kvittoprofiler finns i [Kvittomallar och utskrift](receipt-templates-printing.md).
+Plocklistformatet konfigurerats i Commerce och läggs till i kvittoprofilen. Mer information om hur du ställer in kvittoprofiler finns i [Kvittomallar och utskrift](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 Om raderna markeras och en plocklista skrivs ut för dessa rader uppdateras de automatiskt med statusen **plockning**.
 
@@ -119,7 +121,7 @@ Orderrader kan packas när som helst efter det att orderraden har accepterats.
 - **Resulterande status:** Packad eller delvis packad
 - **Resulterande backoffice-status:** levererad eller delvis levererad
 
-Den här åtgärden markerar rader som packade eller delvis packade och skriver ut en följesedel. En följesedel kan skrivas ut för att validera de produkter som har packats ihop. Följesedelformatet konfigureras i Commerce och läggs till i kvittoprofilen. Mer information om hur du ställer in kvittoprofiler finns i [Kvittomallar och utskrift](receipt-templates-printing.md).
+Den här åtgärden markerar rader som packade eller delvis packade och skriver ut en följesedel. En följesedel kan skrivas ut för att validera de produkter som har packats ihop. Följesedelformatet konfigureras i Commerce och läggs till i kvittoprofilen. Mer information om hur du ställer in kvittoprofiler finns i [Kvittomallar och utskrift](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Åtgärd: Markera som packad**
 
@@ -215,6 +217,3 @@ Orderuppfyllelse i POS innehåller filter för att hjälpa användaren att enkel
 - Skapades den
 - Leveransdatum
 - Inleveransdatum
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

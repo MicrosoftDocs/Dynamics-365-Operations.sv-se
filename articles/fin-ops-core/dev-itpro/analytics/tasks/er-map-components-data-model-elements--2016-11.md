@@ -1,10 +1,12 @@
 ---
 title: ER Mappa komponenter för det skapade till datamodellelement (november 2016)
-description: I det här avsnittet beskrivs hur du mappar datamodellelement till komponenter i den elektroniska rapporteringskonfigurationen (ER).
+description: I följande procedur beskrivs hur en användare med roll som systemadministratör eller utvecklare elektronisk rapportering kan mappa datamodellelement med komponenter i den skapade elektroniska rapporteringskonfigurationen (ER), som definierar ett elektroniskt dokumentformat för affärsdomänen för betalningar.
 author: NickSelin
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7ae4b3123660d123fc5c06cbe0a69d5c66d306252ec2a117a1e6045505022f5a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 109a6736196b6ed3d1445a9f1a70c5f2b9d5af58
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776010"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684341"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>ER Mappa komponenter för det skapade till datamodellelement (november 2016)
 
@@ -111,6 +113,3 @@ Varje formatversion kan konfigureras som tillgänglig för användning med start
 1. Visa eller dölj avsnittet om ISO-koder för land/region.
     * Varje formatåtkomst kan begränsas genom att identifiera särskilda länder/regioner som ett format kan tillämpas på. När listan över länder/regioner för ett visst format är tomt, kan formatet användas i alla företag. När vissa ISO-koder för land/region infogas i listan över länder/regioner kan formatet endast användas i företag vars primära adress ligger i landet/regionen.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

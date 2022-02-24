@@ -2,9 +2,11 @@
 title: Skapa och exportera leverantörbetalningar med ett ISO20022-betalningsformat
 description: Den här proceduren visar hur du kan skapa betalningsrader i leverantörbetalningsjournalen och generera en leverantörbetalningsfil med ett ISO2022-kreditöverföringsexempel.
 author: mrolecki
+manager: AnnBe
 ms.date: 01/17/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, VendPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c7bd5308e7589cb280244ea85e184422cbe2aa09f1cb548a81445defbd082e42
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1df738e3925dc23e7723d93f33acf6a9d811b113
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752108"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964551"
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a>Skapa och exportera leverantörsbetalningar med ett ISO20022-betalningsformat
 
@@ -47,6 +49,3 @@ Detta är den femte proceduren av fem som illustrerar leverantörbetalningsproce
     3.    I fältet **Filnamn** anger du eller väljer ett värde. I det här exemplet på grund av betalningar i EUR blir den genererade filen SEPA-kompatibel. ISO20022 kreditöverföring samt andra leverantörsbetalningsformat kan också användas för att generera betalningar i andra valutor.
     4.    I fältet **Bankkonto** anger du eller väljer ett värde.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

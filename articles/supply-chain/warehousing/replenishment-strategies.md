@@ -2,22 +2,25 @@
 title: Strategier för lagerpåfyllnad
 description: Det här avsnittet innehåller information om strategier för påfyllning och förklarar hur du kan använda fältet återanskaffningsstrategi på rader för återanskaffning av en påfyllning för att välja hur påfyllning ska göras.
 author: mirzaab
+manager: tfehr
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
-ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: bd2ddbfeef454f2759ca09d8d763bada36a1fc83
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.16
+ms.openlocfilehash: 45b3b1a4d2e92a52ee69c17865634a6578181ac7
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574171"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646143"
 ---
 # <a name="replenishment-strategies"></a>Strategier för lagerpåfyllnad
 
@@ -45,7 +48,7 @@ Innan du kan använda den här funktionen den aktiveras i ditt system. Administr
 
 För åtkomst till mallarna, gå till **Lagerstyrning \> Inställningar \> Lagerpåfyllnad \> Mallar för lagerpåfyllnad**. I avsnittet **Översikt** väljer eller skapar du en mall för lagerpåfyllnadsbegäran där fältet **Lagerpåfyllnadstyp** är inställt på *Lagerpåfyllnad*. Skapa sedan raderna för påfyllningsmallen i avsnittet **Information om mall för lagerpåfyllnad**. För varje rad väljer du den **lagerpåfyllnadsstrategi** som du vill använda i fältet lagerpåfyllnadsstrategi.
 
-![Sidan Mallar för lagerpåfyllnad.](media/ReplenTempWaveDmdMaxLocCap.png "Sidan Mallar för lagerpåfyllnad")
+![Sidan Mallar för lagerpåfyllnad](media/ReplenTempWaveDmdMaxLocCap.png "Sidan Mallar för lagerpåfyllnad")
 
 Om kolumnen **påfyllningsstrategin** inte visas i rutnätet i avsnittet **Information om mall för lagerpåfyllnad** kontrollerar du att funktionen har aktiverats och att den valda påfyllnadsgrupp har en påfyllningstyp för en *Lagerpåfyllnad*.
 
@@ -85,7 +88,7 @@ Om du ställer in återanskaffningsstrategin till *maximal platskapacitet* i st�
 - **Påfyllnadsarbete 1:** Välj 4 lådor från bulkplatser och placera dem i plats-001-plock.
 - **Påfyllnadsarbete 2:** Välj 5 lådor från bulkplatser och placera dem i plats-002-plock.
 
-[![Exempel 1.](media/ReplenTemp_example_1.png "Exempel 1")](media/ReplenTemp_example_1_large.png)
+[![Exempel 1](media/ReplenTemp_example_1.png "Exempel 1")](media/ReplenTemp_example_1_large.png)
 
 ### <a name="example-2"></a>Exempel 2
 
@@ -109,9 +112,6 @@ Beroende på inställningen av alternativet **Tillåt delning** i platsdirektiv 
 
 Resultaten skiljer sig på grund av den information som är tillgänglig när du skapar arbetet. När alternativet **Tillåt delning** har ställts in på *Ja* i platsdirektiv för påfyllnadsplockning vet du att du har hanterat att hitta 160 st. Därför kan du skapa arbete för kvantiteten. Om alternativet **Tillåt delning** är inställt på *Nej*, vet du dock inte om det finns några 160 st. Eftersom den extra kvantitet som du har valt att fylla på var 3 lådor, släpper du den extra kvantiteten och prova den ursprungliga kvantiteten på nytt.
 
-[![Exempel 2.](media/ReplenTemp_example_2.png "Exempel 2")](media/ReplenTemp_example_2_large.png)
+[![Exempel 2](media/ReplenTemp_example_2.png "Exempel 2")](media/ReplenTemp_example_2_large.png)
 
 Om du vill hämta den maximala kvantiteten till de påfyllningsbara platserna bör du ställa in alternativet **Tillåt delning** på *Ja* i platsdirektiv för påfyllningsplockning.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

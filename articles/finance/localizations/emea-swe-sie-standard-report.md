@@ -2,22 +2,25 @@
 title: Exportera ekonomisk information för revisorer i Sverige
 description: Det här avsnittet innehåller information om SIE standardrapporten för Sverige.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 04/05/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Operations
 ms.search.region: Sweden
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2581a1658890dd13354627cc5e4052a58e531e411c2a2cd73f10783307612264
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3389b536bb14aac310a7605291ce579ddcda92ab
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781685"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408622"
 ---
 # <a name="export-financial-information-for-auditors-in-sweden"></a>Exportera ekonomisk information för revisorer i Sverige
 
@@ -34,6 +37,3 @@ Du kan exportera ekonomiska data i de format som specificerats av SIE-gruppen, d
   - Typ 4I – Transaktioner exporteras. 
   - Type 4E – Periodsaldon och -transaktioner exporteras. 
 8. Klicka på **OK**. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

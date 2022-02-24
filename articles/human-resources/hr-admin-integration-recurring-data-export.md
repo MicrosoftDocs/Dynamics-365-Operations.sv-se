@@ -1,39 +1,37 @@
 ---
-title: Skapa ett program för återkommande dataexport
-description: I detta ämne beskrivs hur du skapar en logisk Microsoft Azure-app som exporterar data från Microsoft Dynamics 365 Human Resources i ett återkommande schema.
-author: twheeloc
-ms.date: 08/19/2021
+title: Skapa en app för återkommande dataexport
+description: I den här artikeln beskrivs hur du skapar en Microsoft Azure logisk app som exporterar data från Microsoft Dynamics 365 Human Resources på ett återkommande schema.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 368eee6bb182f363f47467a5c5ad8208a57db7ec
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: edd4b999624a845fc145ed9ff348ae9cba782719
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069792"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420630"
 ---
-# <a name="create-a-recurring-data-export-app"></a>Skapa ett program för återkommande dataexport
+# <a name="create-a-recurring-data-export-app"></a>Skapa en app för återkommande dataexport
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-I detta ämne beskrivs hur du skapar en logisk Microsoft Azure-app som exporterar data från Microsoft Dynamics 365 Human Resources i ett återkommande schema. Självstudierna drar fördel av personalens DMF-paket REST API (Application Programming Interface) för att exportera data. När data har exporterats sparar logikprogrammet det exporterade datapaketet i en Microsoft OneDrive för företag-mapp.
+I den här artikeln beskrivs hur du skapar en Microsoft Azure logisk app som exporterar data från Microsoft Dynamics 365 Human Resources på ett återkommande schema. Självstudierna drar fördel av personalens DMF-paket REST API (Application Programming Interface) för att exportera data. När data har exporterats sparar logikprogrammet det exporterade datapaketet i en Microsoft OneDrive för företag-mapp.
 
 ## <a name="business-scenario"></a>Affärsscenario
 
-I ett typiskt affärsscenario för Microsoft Dynamics 365-integreringer måste data exporteras till ett underordnat system i ett återkommande schema. I den här självstudien visas hur du exporterar alla Microsoft Dynamics 365 Human Resources och spara listan över medarbetare i OneDrive för företag-mapp.
+I ett typiskt affärsscenario för Microsoft Dynamics 365-integrationer måste data exporteras till ett underordnat system i ett återkommande schema. I den här självstudien visas hur du exporterar alla Microsoft Dynamics 365 Human Resources och spara listan över arbetare i OneDrive för företag-mapp.
 
 > [!TIP]
 > De specifika data som exporteras i den här självstudien och de exporterade data är bara exempel. Du kan enkelt ändra dem för att uppfylla affärskrav.
@@ -42,15 +40,15 @@ I ett typiskt affärsscenario för Microsoft Dynamics 365-integreringer måste d
 
 I den här självstudien används följande tekniker:
 
-- **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)**– Huvuddatakällan för medarbetare som ska exporteras.
+- **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)**– Huvuddatakällan för arbetare som ska exporteras.
 - **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – tekniken som tillhandahåller dirigering och schemaläggning av den återkommande exporten.
 
-    - **[Kopplingar](/azure/connectors/apis-list)** – tekniken som används för att ansluta logikappen till de obligatoriska slutpunkterna.
+    - **[Kopplingar](https://docs.microsoft.com/azure/connectors/apis-list)** – tekniken som används för att ansluta logikappen till de obligatoriska slutpunkterna.
 
-        - [HTTP med Azure AD](/connectors/webcontents/)koppling
-        - [OneDrive för företag](/azure/connectors/connectors-create-api-onedriveforbusiness) koppling
+        - [HTTP med Azure AD](https://docs.microsoft.com/connectors/webcontents/)koppling
+        - [OneDrive för företag](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) koppling
 
-- **[DMF-paket REST API](../fin-ops-core/dev-itpro/data-entities/data-management-api.md)** – den teknik som används för att utlösa exporten och övervakningen av dess förlopp.
+- **[DMF-paket REST API](../dev-itpro/data-entities/data-management-api.md)** – den teknik som används för att utlösa exporten och övervakningen av dess förlopp.
 - **[OneDrive för företag](https://onedrive.live.com/about/business/)** – målet för de exporterade arbetarna.
 
 ## <a name="prerequisites"></a>Förutsättningar
@@ -66,13 +64,13 @@ I slutet av övningen har du en logiskapp som är ansluten till personalmiljön 
 
 Den slutförda logikappen kommer att likna följande bild.
 
-![Översikt över logikappar.](media/integration-logic-app-overview.png)
+![Översikt över logikappar](media/integration-logic-app-overview.png)
 
 ### <a name="step-1-create-a-data-export-project-in-human-resources"></a>Steg 1: skapa ett projekt för dataexport i personal
 
-Skapa ett dataexportprojekt i personal som exporterar medarbetare. Namnge projektets **exportarbetare** och se till att alternativet **Generera datapaket** är inställt på **ja**. Lägg till en enskild enhet **(** arbetare) i projektet och välj det format du vill exportera i. (Microsoft Excel-formatet används i den här självstudien.)
+Skapa ett dataexportprojekt i personal som exporterar arbetare. Namnge projektets **exportarbetare** och se till att alternativet **Generera datapaket** är inställt på **ja**. Lägg till en enskild enhet **(** arbetare) i projektet och välj det format du vill exportera i. (Microsoft Excel-formatet används i den här självstudien.)
 
-![Exportera dataprojekt för medarbetare.](media/integration-logic-app-export-workers-project.png)
+![Exportera dataprojekt för medarbetare](media/integration-logic-app-export-workers-project.png)
 
 > [!IMPORTANT]
 > Kom ihåg namnet på dataexportprojektet. Du kommer att behöva det när du skapar logikappen i nästa steg.
@@ -83,14 +81,14 @@ Den stora delen av övningen innebär att skapa logikappen.
 
 1. Skapa en logikapp i Azure-portalen.
 
-    ![Sida för att skapa logikapp.](media/integration-logic-app-creation-1.png)
+    ![Sidan för att skapa logikapp](media/integration-logic-app-creation-1.png)
 
 2. Starta med en tom logikapp i modulen Logic Apps Designer.
-3. Lägg till en [utlösare för upprepningsschema](/azure/connectors/connectors-native-recurrence) om du vill köra logikappen var 24:e timme (eller enligt ett schema som du väljer).
+3. Lägg till en [utlösare för upprepningsschema](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) om du vill köra logikappen var 24:e timme (eller enligt ett schema som du väljer).
 
-    ![Dialogrutan Upprepning.](media/integration-logic-app-recurrence-step.png)
+    ![Dialogrutan Upprepning](media/integration-logic-app-recurrence-step.png)
 
-4. Anropa [ExportToPackage](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API för att schemalägga exporten av ditt datapaket.
+4. Anropa [ExportToPackage](../dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API för att schemalägga exporten av ditt datapaket.
 
     1. Använd åtgärden **anropa en HTTP-begäran** från HTTP med Azure AD-koppling.
 
@@ -100,7 +98,7 @@ Den stora delen av övningen innebär att skapa logikappen.
         > [!NOTE]
         > Personaltjänsten tillhandahåller inte ännu en anslutning som visar alla API:er som utgör DMF-paketets REST API, t.ex. **ExportToPackage**. I stället måste du anropa API:erna genom att använda råa HTTPS-begäran via HTTP med Azure AD-kopplingen. Den här kopplingen använder Azure Active Directory (Azure AD) för autentisering och auktorisering till personal.
 
-        ![HTTP med Azure AD-anslutningsprogram.](media/integration-logic-app-http-aad-connector-step.png)
+        ![HTTP med Azure AD-koppling](media/integration-logic-app-http-aad-connector-step.png)
 
     2. Logga in på din personalmiljön via HTTP med Azure AD-koppling.
     3. Ställ in en HTTP **POST**-begäran för att anropa **ExportToPackage** DMF REST API.
@@ -119,28 +117,28 @@ Den stora delen av övningen innebär att skapa logikappen.
             }
             ```
 
-        ![Åtgärden Anropa en HTTP-begäran.](media/integration-logic-app-export-to-package-step.png)
+        ![Åtgärden anropa en HTTP-begäran](media/integration-logic-app-export-to-package-step.png)
 
     > [!TIP]
     > Du kanske vill byta namn på varje steg så att det blir mer meningsfullt än standardnamnet **Anropa en HTTP-begäran**. Du kan till exempel byta namn på det här steget **ExportToPackage**.
 
-5. [Initiera en variabel](/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) för att lagra körningsstatusen för **ExportToPackage**-begäran.
+5. [Initiera en variabel](https://docs.microsoft.com/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) för att lagra körningsstatusen för **ExportToPackage**-begäran.
 
-    ![Åtgärden Initiera variabel.](media/integration-logic-app-initialize-variable-step.png)
+    ![Åtgärden Initiera variabel](media/integration-logic-app-initialize-variable-step.png)
 
 6. Vänta tills körningsstatusen för dataexporten har **slutförts**.
 
-    1. Lägg till en [Till slinga](/azure/logic-apps/logic-apps-control-flow-loops#until-loop) som upprepas tills värdet av **ExecutionStatus**-variabeln är **slutförd**.
+    1. Lägg till en [Till slinga](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop) som upprepas tills värdet av **ExecutionStatus**-variabeln är **slutförd**.
     2. Lägg till åtgärden **fördröjning** som väntar fem sekunder innan den avsöker den aktuella körningsstatusen för exporten.
 
-        ![Fram till slinga-behållare.](media/integration-logic-app-until-loop-step.png)
+        ![Fram till slinga-behållare](media/integration-logic-app-until-loop-step.png)
 
         > [!NOTE]
         > Ställ in gränsvärdet till **15** om du vill vänta i högst 75 sekunder (15 iterationer × 5 sekunder) för att exporten ska kunna slutföras. Om exporten tar längre tid, kan du justera antalet så att det blir lämpligt.        
 
-    3. Lägg till åtgärden **Anropa HTTP-begäran** för att anropa [GetExecutionSummaryStatus](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API, och ange **ExecutionStatus**-variabeln till resultatet av **GetExecutionSummaryStatus**-svar.
+    3. Lägg till åtgärden **Anropa HTTP-begäran** för att anropa [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API, och ange **ExecutionStatus**-variabeln till resultatet av **GetExecutionSummaryStatus**-svar.
 
-        > Det här exemplet utför ingen felkontroll. **GetExecutionSummaryStatus** API:n kan returnera terminaltillstånd som har misslyckats (dvs. andra lägen än **slutförd**). Mer information finns i [API-dokumentationen](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus).
+        > Det här exemplet utför ingen felkontroll. **GetExecutionSummaryStatus** API:n kan returnera terminaltillstånd som har misslyckats (dvs. andra lägen än **slutförd**). Mer information finns i [API-dokumentationen](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus).
 
         - **Metod:** POST
         - **Url för begäran:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
@@ -149,26 +147,26 @@ Den stora delen av övningen innebär att skapa logikappen.
             > [!NOTE]
             > Du kan behöva ange värdet för **brödtext för begäran** antingen i kodvyn eller i funktionsredigeraren i designern.
 
-        ![Åtgärden Anropa en HTTP-begäran 2.](media/integration-logic-app-get-execution-status-step.png)
+        ![Åtgärden anropa en HTTP-begäran 2](media/integration-logic-app-get-execution-status-step.png)
 
-        ![Åtgärden Ange variabel.](media/integration-logic-app-set-variable-step.png)
+        ![Åtgärden Ange variabel](media/integration-logic-app-set-variable-step.png)
 
         > [!IMPORTANT]
         > Värdet för åtgärden **Ange variabel** (**body('Invoke\_an\_HTTP\_request\_2')?['value']**) skiljer sig från värdet för **Invoke an HTTP request 2** brödtextvärde, även om designern visar värdena på samma sätt.
 
 7. Skaffa hämtnings-URL för det exporterade paketet.
 
-    - Lägg till åtgärden **Anropa HTTP-begäran** för att anropa [GetExportedPackageUrl](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST API.
+    - Lägg till åtgärden **Anropa HTTP-begäran** för att anropa [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST API.
 
         - **Metod:** POST
         - **Url för begäran:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
         - **Begärans brödtext:** {"executionId": body('GetExportedPackageURL')?['value']}
 
-        ![Åtgärden GetExportedPackageURL.](media/integration-logic-app-get-exported-package-step.png)
+        ![Åtgärden GetExportedPackageURL](media/integration-logic-app-get-exported-package-step.png)
 
 8. Hämta det exporterade paketet.
 
-    - Lägg till en HTTP **GET**-begäran (en inbyggd [åtgärd för HTTP-koppling](/azure/connectors/connectors-native-http)) för att hämta paketet från den URL som returnerades i föregående steg.
+    - Lägg till en HTTP **GET**-begäran (en inbyggd [åtgärd för HTTP-koppling](https://docs.microsoft.com/azure/connectors/connectors-native-http)) för att hämta paketet från den URL som returnerades i föregående steg.
 
         - **Metod:** GET
         - **URI:** body('Invoke\_an\_HTTP\_request\_3').value
@@ -176,21 +174,21 @@ Den stora delen av övningen innebär att skapa logikappen.
             > [!NOTE]
             > Du kan behöva ange värdet för **URI** antingen i kodvyn eller i funktionsredigeraren i designern.
 
-        ![Åtgärden HTTP GET.](media/integration-logic-app-download-file-step.png)
+        ![Åtgärden HTTP GET](media/integration-logic-app-download-file-step.png)
 
         > [!NOTE]
         > Denna begäran kräver ingen ytterligare autentisering eftersom den URL som **GetExportedPackageUrl** API:n returnerar innehåller en token för delad åtkomst för signaturer som beviljar åtkomst för att hämta filen.
 
-9. Spara det hämtade paketet med hjälp av [OneDrive för företag](/azure/connectors/connectors-create-api-onedriveforbusiness)-kopplingen.
+9. Spara det hämtade paketet med hjälp av [OneDrive för företag](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness)-kopplingen.
 
-    - Lägg till en åtgärd för OneDrive för företag [Skapa fil](/connectors/onedriveforbusinessconnector/#create-file).
+    - Lägg till en åtgärd för OneDrive för företag [Skapa fil](https://docs.microsoft.com/connectors/onedriveforbusinessconnector/#create-file).
     - Anslut till ditt OneDrive för företag-konto efter behov.
 
         - **Mappsökväg:** en mapp som du väljer
         - **Filnamn:** worker\_package.zip
         - **Filinnehåll:** brödtexten från föregående steg (dynamiskt innehåll)
 
-        ![Åtgärden Skapa fil.](media/integration-logic-app-create-file-step.png)
+        ![Åtgärden Skapa fil](media/integration-logic-app-create-file-step.png)
 
 ### <a name="step-3-test-the-logic-app"></a>Steg 3: testa logikappen
 
@@ -200,13 +198,10 @@ Om ett fel rapporteras för något steg väljer du det misslyckade steget i desi
 
 Följande bild visar hur Logic Apps Designer ser ut när alla steg i logikappen körs korrekt.
 
-![Lyckad körning av logikappar.](media/integration-logic-app-successful-run.png)
+![Körning av lyckade logikappar](media/integration-logic-app-successful-run.png)
 
 ## <a name="summary"></a>Sammanfattning
 
 I den här självstudien lärde du dig att använda en logikapp för att exportera data från personal och spara exporterade data till en OneDrive för företag-mapp. Du kan ändra stegen i den här självstudien så att de passar dina affärsbehov.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

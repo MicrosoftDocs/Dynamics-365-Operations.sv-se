@@ -2,8 +2,11 @@
 title: DATEVALUE ER-funktion
 description: Det här avsnittet innehåller information om hur funktionen DATEVALUE elektronisk rapportering (ER) används.
 author: NickSelin
-ms.date: 09/08/2021
+manager: kfend
+ms.date: 12/04/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 446f1357e54342073e73f86ef36e6467e029ebc4
-ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
+ms.openlocfilehash: 43e65055b0803ed330a19568f9565c3fae488ab2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485584"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682423"
 ---
 # <a name="datevalue-er-function"></a>DATEVALUE ER-funktion
 
 [!include [banner](../includes/banner.md)]
 
-Funktionen `DATEVALUE` returnerar ett värde för *[Datum](er-formula-supported-data-types-primitive.md#date)* som konverteras från ett givet textvärde i angivet format och i en valfri angiven [kultur](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) till ett datumvärde. Om du vill ha mer information om format som stöds, se [Standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) och [Anpassat](/dotnet/standard/base-types/custom-date-and-time-format-strings).
+`DATEVALUE`-funktionen returnerar ett värde för *Datum* som konverteras från ett givet textvärde i angivet format och i en valfri angiven [kultur](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) till ett datumvärde. Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).
 
 ## <a name="syntax-1"></a>Syntax 1
 
@@ -41,17 +44,17 @@ DATEVALUE (text, format, culture)
 
 ## <a name="arguments"></a>Argument
 
-`text`: *[Sträng](er-formula-supported-data-types-primitive.md#string)*
+`text`: *Sträng*
 
 Text som representerar värdet till format.
 
 `format`: *Sträng*
 
-Formatet för en given text. Om du vill ha mer information om format som stöds, se [Standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) och [Anpassat](/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Formatet för en given text.
 
 `culture`: *Sträng*
 
-Den kultur som används för att formatera den givna texten. För information om de kulturer som stöds, se [kultur](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).
+Den kultur som används för att formatera den givna texten.
 
 ## <a name="return-values"></a>Returvärden
 
@@ -76,6 +79,3 @@ Men `DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")` ska utlösa ett undantag
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Datum- och tidsfunktioner](er-functions-category-datetime.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

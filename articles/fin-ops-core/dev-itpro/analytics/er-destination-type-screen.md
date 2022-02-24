@@ -1,10 +1,12 @@
 ---
 title: Skärmen ER-målstyp
-description: Det här ämnet innehåller information om hur du konfigurerar en skärmdestination för varje mapp eller filkomponent i ett ER-format (elektronisk rapportering).
+description: Det här ämnet ger information om hur du konfigurerar en skärmdestination för varje mapp- eller filkomponent i ett ER-format (elektronisk rapportering) som har konfigurerats för att generera utgående dokument.
 author: NickSelin
+manager: AnnBe
 ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -15,14 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2855ac9eb0248a65973898b107d33fc86ac9c1324dafaaf1606b76d8e82f3a8f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08bbde23cde6dcecea398b84bb3d7f78e2204a71
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721962"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679544"
 ---
-# <a name="screen-destination"></a>Skärmdestination
+# <a name="screen-destination"></a>Skärmmål
 
 [!include [banner](../includes/banner.md)]
 
@@ -30,12 +32,9 @@ Du kan konfigurera en skärmdestination för varje mapp- eller fil-komponent i e
 
 Om du ställer in **Aktiverad** som **Ja** skapas en förhandsgranskning av resultatet. Du kan visa vissa filtyper, till exempel XML, TXT eller PDF, direkt i ett webbläsarfönster. För andra filtyper som exempelvis Microsoft Excel eller Word, används tjänsten Microsoft Office.
 
-[![Sidan Destinationsinställningar.](./media/ER_Destinations-EnableScreenDestination.png)](./media/ER_Destinations-EnableScreenDestination.png)
+[![Sidan Destinationsinställningar](./media/ER_Destinations-EnableScreenDestination.png)](./media/ER_Destinations-EnableScreenDestination.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

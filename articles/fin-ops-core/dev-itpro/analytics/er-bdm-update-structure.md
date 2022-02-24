@@ -2,9 +2,11 @@
 title: Uppdatera strukturen för en affärsdokumentmall
 description: I det här ämnet beskrivs hur du uppdaterar strukturen för en affärsdokumentmall med hjälp av funktionen för hantering av affärsdokument.
 author: NickSelin
+manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 2f57e3f3a84a6e767755c69074bc194e90793e6edd79d0e07ae7449d45ec7539
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cb0188e372b5f6275472cf040d10bb796eed1858
+ms.sourcegitcommit: 95d2fc0fa7d17d3a96f7969f12c985b018b4ff94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775296"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "4728099"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Uppdatera strukturen för en affärsdokumentmall 
 
@@ -58,7 +60,7 @@ Slutför följande procedurer i [Översikt över hantering av affärsdokument](e
 
     Den nya mallen öppnas för redigering i den inbäddade kontrollen i Excel Online på sidan för att redigera mall.
 
-[![Börja redigera en affärsdokumentmall med arbetsytan för hantering av affärsdokument.](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
+[![Börja redigera en affärsdokumentmall med arbetsytan för hantering av affärsdokument](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
 
 ### <a name="review-the-current-structure-of-the-editable-template"></a>Granska den redigerbara mallens aktuella struktur
 
@@ -68,7 +70,7 @@ Slutför följande procedurer i [Översikt över hantering av affärsdokument](e
 4. I fönstret **Mallstruktur** expanderar du **Rapport \> Faktura \> rptHeader \> rptHeaderPart1**.
 5. Observera att posten **rptHeaderCompLogo** i mallstrukturen i Finance, presenteras underordnad post till **Rapport \> Faktura \> rptHeader \> rptHeaderPart1**.
 
-[![Granska den aktuella strukturen för en redigerbar mall med arbetsytan för hantering av affärsdokument.](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
+[![Granska den aktuella strukturen för en redigerbar mall med arbetsytan för hantering av affärsdokument](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-deleting-a-picture"></a>Uppdatera strukturen för en affärsdokumentmall genom att radera en bild
 
@@ -85,7 +87,7 @@ Slutför följande procedurer i [Översikt över hantering av affärsdokument](e
 4. I fönstret **Mallstruktur** expanderar du **Rapport \> Faktura \> rptHeader \> rptHeaderPart1**.
 5. Observera att posten **rptHeaderCompLogo** inte längre ingår i mallstrukturen i Finance.
 
-[![Radera en bild från en affärsdokumentmall med arbetsytan för hantering av affärsdokument.](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
+[![Radera en bild från en affärsdokumentmall med arbetsytan för hantering av affärsdokument](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-adding-a-picture"></a>Uppdatera strukturen för en affärsdokumentmall genom att lägga till en bild
 
@@ -97,13 +99,10 @@ Slutför följande procedurer i [Översikt över hantering av affärsdokument](e
 6. I fönstret **Mallstruktur** expanderar du **Rapport \> Faktura \> rptHeader \> rptHeaderPart1**.
 7. Observera att den nya bilden nu ingår som en post i mallstrukturen i Finance.
 
-[![Lägg till en bild i en affärsdokumentmall med arbetsytan för hantering av affärsdokument.](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
+[![Lägg till en bild i en affärsdokumentmall med arbetsytan för hantering av affärsdokument](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
 
 ## <a name="related-links"></a>Relaterade länkar
 
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Hantering av affärsdokument – översikt](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

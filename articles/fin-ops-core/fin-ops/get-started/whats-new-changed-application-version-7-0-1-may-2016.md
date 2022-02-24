@@ -2,9 +2,11 @@
 title: Nyheter och ändringar i Dynamics AX programvaruversion 7.0.1 (maj 2016)
 description: Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Microsoft Dynamics AX programvaruversion 7.0.1. Den här versionen släpptes i maj 2016 och har en versionsnummer 7.0.1265.23014.
 author: sericks007
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 9a455ffbc4396ea4bf0e3df12e7acdcbfeaa5f5269dbe772848341ac0d22a5e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 17067ff534e0e3f4636d7a307563128db55cf2ba
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748274"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797175"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Nyheter och ändringar i AX programvaruversion 7.0.1 (maj 2016)
 
@@ -76,7 +78,7 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 </tr>
 <tr>
 <td>Stöd för strukturer som innehåller artiklar med olika dimensioner av samma artikel.</td>
-<td>När du använder en eller flera av produktdimensionerna i produktionen kan situationer uppstå då du vill producera en artikel utifrån en annan variant av samma artikel. Mer information finns i <a href="/archive/blogs/axmfg/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item">den här bloggen</a>.</td>
+<td>När du använder en eller flera av produktdimensionerna i produktionen kan situationer uppstå då du vill producera en artikel utifrån en annan variant av samma artikel. Mer information finns i <a href="https://blogs.msdn.microsoft.com/axmfg/2015/12/22/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item/">den här bloggen</a>.</td>
 </tr>
 <tr>
 <td>Produktionsorder med cirkulära strukturer på den första nivån av deras strukturer är undantagna från strukturlistenivåberäkning för materialresursplanering.</td>
@@ -104,6 +106,3 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 [Nyheter och ändringar på hemsidan för Finance and Operations](whats-new-changed.md)
 
 [Nya eller uppdaterade uppgiftsguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

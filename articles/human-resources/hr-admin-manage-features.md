@@ -1,39 +1,37 @@
 ---
-title: Hantera funktioner i Personal
-description: I det här avsnittet beskrivs funktionen funktionshantering och hur du kan använda den.
-author: twheeloc
-ms.date: 08/19/2021
+title: Hantera funktioner
+description: Läs mer om hur du aktiverar och inaktiverar nya funktioner i Dynamics 365 Human Resources.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2d5a27c02df841dfbb17a9375aaf75f93d05cd8e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069717"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420629"
 ---
-# <a name="manage-features-in-human-resources"></a>Hantera funktioner i Personal
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="manage-features"></a>Hantera funktioner
 
 Som en del av vår kontinuerliga distribution av ny funktioner för Microsoft Dynamics 365 Human Resources, vill vi att kunder får nya funktioner så snart som möjligt. Vi tillhandahåller förhandsfunktioner som snart är allmänt tillgänglig och har genomgått omfattande testning. Vi söker bara en slutlig runda av feedback från kunder och validering innan vi gör dem allmänt tillgångliga.
 
-Mer information om nya funktioner i Personal, se [Nyheter och ändringar i Personal](hr-admin-whats-new.md) och [Viktig information om Dynamics 365 och Power Platform](/dynamics365/release-plans/?panel=products1#pivot=products).
+Mer information om nya funktioner i Personal, se [Nyheter och ändringar i Personal](hr-admin-whats-new.md) och [Viktig information om Dynamics 365 och Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
 
-Arbetsytan **Funktionshantering** ger en lista med funktioner som levereras i varje utgåva. Nya funktionen är avstängda som standard. Du kan använda arbetsytan för att aktivera dem och visa dokumentationen för dem. Mer information om hur du aktiverar Funktionshantering finns i [Översikt över funktionshantering](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Arbetsytan **Funktionshantering** ger en lista med funktioner som levereras i varje utgåva. Nya funktionen är avstängda som standard. Du kan använda arbetsytan för att aktivera dem och visa dokumentationen för dem. Mer information om hur du aktiverar Funktionshantering finns i [Översikt över funktionshantering](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 Alla nya funktioner förblir i förhandsgranskning i minst 30 dagar, vanligtvis 30-60 dagar. Huvudfunktionerna är vanligtvis tillgängliga i oktober och april varje år efter förhandsgranskningsperioden. Så snart du ser nya funktioner på arbetsytan **Funktionshantering** kan du aktivera dem. Vissa funktioner kan vara aktiverade som standard.
 
@@ -72,7 +70,7 @@ Förmånshantering ersätter funktioner i arbetsytan **förmåner**. När du akt
 - **Policyer för förmånsberättigande**
 - **Berättigandehändelser**
 
-Du kan visa informationen på dessa sidor i skrivskyddat läge. Om du vill redigera informationen måste du först inaktivera förmånshantering (gäller endast miljöer i **begränsat läge**).
+Du kan visa informationen i dessa formulär i skrivskyddat läge. Om du vill redigera informationen måste du först inaktivera förmånshantering (gäller endast miljöer i **begränsat läge**).
 
 ## <a name="enable-or-disable-leave-and-absence"></a>Aktivera eller inaktivera tjänstledighet och frånvaro
 
@@ -87,14 +85,12 @@ För mer information om förhandsgranskningsfunktioner för tjänstledighet och 
 
 Vi vill gärna höra om din erfarenhet av dessa förhandsfunktioner. Vi rekommenderar att du regelbundet publicerar feedback på följande webbplatser när du använder dessa eller andra funktioner.
 
-- [Gemenskap](https://community.dynamics.com/enterprise/f/759?pi53869=0&category=Talent) – webbplatsen är ett utmärkt verktyg där användare kan diskutera fall, ställa frågeställningar och få hjälp från andra användare.
+- [Gemenskap](https://community.dynamics.com/enterprise/f/759?pi53869=0&category=Talent) – webbplatsen är ett utmärkt verktyg där användare kan diskutera fall, ställa frågor och få hjälp från andra användare.
 - Meddela oss om funktioner som du vill ska visas i produkten och även de ändringar som du tycker att vi ska göra av befintliga funktioner. Föreslå produktidéer om [personalidéer](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources).
     
-Inkludera inte personuppgifter (all information som kan identifiera dig) i feedback eller produktomdömen. Insamlad information kan analyseras ytterligare och den används inte för att besvara frågeställningar under tillämplig sekretesslagstiftning. Personuppgifter som samlas in separat under programmen som ingår i den [sekretesspolicyn för Microsoft ](https://privacy.microsoft.com/privacystatement).
+Inkludera inte personuppgifter (all information som kan identifiera dig) i feedback eller produktomdömen. Insamlad information kan analyseras ytterligare och den används inte för att besvara frågor under tillämplig sekretesslagstiftning. Personuppgifter som samlas in separat under programmen som ingår i den [sekretesspolicyn för Microsoft ](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="see-also"></a>Se även
 
 - [Nyheter i Personal](hr-admin-whats-new.md)
-- [Utgivningsplan för Dynamics 365 och Power Platform](/dynamics365/release-plans/?panel=products1#pivot=products)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+- [Utgivningsplan för Dynamics 365 och Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)

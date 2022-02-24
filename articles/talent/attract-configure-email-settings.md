@@ -89,6 +89,3 @@ Du kan överföra en bild av företagets logotyp och annan information som ett a
     ![Lägga till länkar till företagets sekretesspolicy och användningsvillkor för e-postsidfoten](./media/attract-admin-email-footer.png)
 
 4. Välj **Spara** om du vill spara dina inställningar för e-postmall.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

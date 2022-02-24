@@ -1,10 +1,12 @@
 ---
 title: Kortkommandon
-description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med Ekonomi och Drift-appar.
+description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med Finance and Operations-appar.
 author: jasongre
-ms.date: 12/10/2021
+manager: AnnBe
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,21 +16,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ecf745337c15270290f02496cc6ce4ccac86861
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d2dee0b1eb911764ea68f9b6df5516bf2cb81d07
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070993"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798236"
 ---
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
-Du kan använda följande kortkommandon för att snabbt och effektivt mata in data i Ekonomi och Drift-appar.
+Du kan använda följande kortkommandon för att snabbt och effektivt mata in data i Finance and Operations-appar.
 
 > [!NOTE]
 > Tangentbordsgenvägarna som beskrivs här hänvisar till en amerikansk tangentbordslayout. Knappar på andra tangentbordslayouter kan kanske inte exakt motsvarar tangenterna på ett tangentbord i USA.
@@ -130,10 +129,8 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 
 ## <a name="grid-shortcuts"></a>Genvägar för rutnät
 
-| Om du vill göra detta                                                                                                             | Tryck på                            |
+| Om du vill göra detta                                                                                                             | Tryck                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| Lodrät rullning                                                                                                     | Mushjul                     |
-| Vågrät rullning                                                                                                   | Skift + Mushjul             |
 | Flytta till nästa/föregående kolumn                                                                                       | Tab/Skift+Tab                 |
 | Flytta till nästa/föregående rad                                                                                          | Uppåtil/nedåtpil           |
 | Flytta till nästa/föregående rad utan att markera<blockquote>[!NOTE] Den här genvägen gäller endast flervalsscenarier.</blockquote> | Ctrl+uppåtpil / Ctrl+nedåtpil |
@@ -145,24 +142,22 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Flytta till första posten                                                                                               | Ctrl+start                       |
 | Flytta till den sista posten                                                                                                | Ctrl+End                        |
 | Markera eller rensa alla rader                                                                                               | Ctrl+Skift+M                    |
-| Flytta till den första markerade raden                                                                                           | Alt+Shift+M, F                  |
-| Flytta till nästa markerade rad                                                                                            | Alt+Shift+M, L                  |
-| Flytta till föregående markerad rad                                                                                        | Alt+Shift+M, P                  |
-| Flytta till den sista markerade raden                                                                                           | Alt+Shift+M, N                  |
+| Flytta till den första markerade raden                                                                                           | Alt+Shift+M, F                    |
+| Flytta till nästa markerade rad                                                                                            | Alt+Shift+M, L                    |
+| Flytta till föregående markerad rad                                                                                        | Alt+Shift+M, P                    |
+| Flytta till den sista markerade raden                                                                                           | Alt+Shift+M, N                    |
 | Utför standardåtgärd i ett rutnät<blockquote>[!NOTE] Denna genväg aktiveras när fokus ligger på en cell som innehåller en hyperlänk och samtliga celler i den kolumnen har hyperlänkar.</blockquote> | Ange                           |
 | Växla fokus mellan den markerade raden och rubrikraden                                                               | Alt+Skift+H                     |
 | Gör den aktuella kolumnen större/mindre (med fokus i rubrikraden)                                                  | Högerpil/vänsterpil        |
-| Ändra storlek på den aktuella kolumnen till nästa/föregående läge (med fokus i rubrikraden)                                   | Ctrl+Shift+högerpil / Ctrl+Shift+vänsterpil |
 | Öppna rutnätsfiltrering för den aktuella kolumnen (med fokus i rubrikraden)                                              | Ange                           |
-| Ändra storlek på den aktuella kolumnen så att den passar innehållet (med fokus i rubrikraden)                                           | A (eller dubbelklicka på reglaget för kolumnstorlek) |
 
 ## <a name="input-control-shortcuts"></a>Mata in kontrollgenvägar
 
-| Om du vill göra detta                                                                   | Tryck på                          |
+| Om du vill göra detta                                                                   | Tryck                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Öppna hyperlänk                                                           | Ctrl+Return                    |
-| Ange aktuellt sessionsdatum i ett datumfält                                       | D                             |
-| Ange aktuellt datum i ett datumfält                                       | V                             |
+| Ange aktuellt sessionsdatum i ett datumfält                                       | D                         |
+| Ange aktuellt datum i ett datumfält                                       | V                         |
 | Öppna sökning, kombinationsruta, datumväljare, dialogruta                         | Alt+nedåtpil                |
 | Stäng sökning, kombinationsruta, datumväljare, dialogruta                        | Esc                           |
 | Flytta fokus till en uppslagning (när uppslagningen redan är öppen,)                   | Alt + nedåtpil                |
@@ -209,8 +204,8 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Använd verktyget Flytta (i anpassningsläge)                                                                       | M                                   |
 | Välj aktuell kontroll som ska flyttas (när du använder verktyget Flytta och ingen kontroll ännu har valts ut för flytt)  | Blanksteg eller Retur                      |
 | Ta bort kontrollen för att flytta (om du använder verktyget Flytta)                                                                   | Esc                                 |
-| Flytta till nästa position för den markerade kontrollen (när du använder verktyget Flytta)                                              | Tabb eller högerpil eller nedåtpil    |
-| Flytta till föregående position för den markerade kontrollen (när du använder verktyget Flytta)                                          | Shift+Tab eller vänsterpil eller uppåtpil |
+| Flytta till nästa position för den markerade kontrollen (när du använder verktyget Flytta)                                          | Tabb eller högerpil eller nedåtpil    |
+| Flytta till föregående position för den markerade kontrollen (när du använder verktyget Flytta)                                      | Shift+Tab eller vänsterpil eller uppåtpil |
 | Använd verktyget Dölj (i anpassningsläge)                                                                       | H                                   |
 | Växla mellan huruvida den aktuella kontrollen är synlig eller dold (när du använder verktyget Dölj)                                     | Blanksteg eller Retur                      |
 | Använd verktyget Hoppa över (i anpassningsläge)                                                                       | k                                   |
@@ -260,6 +255,3 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 
 [Tangentbordsgenvägar för analys av saknade konton](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

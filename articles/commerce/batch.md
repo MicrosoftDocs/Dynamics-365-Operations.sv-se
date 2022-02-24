@@ -1,13 +1,16 @@
 ---
 title: Förbättrad hantering av batchspårade artiklar
-description: I det här avsnittet beskrivs den förbättrade hanteringen av batchspårade artiklar under bokföringsprocessen av utdrag i Microsoft Dynamics 365 Commerce.
+description: I det här avsnittet beskrivs de förbättringar som gjorts av hanteringen av batchar för batchspårade artiklar under bokföringsprocessen av utdrag.
 author: josaw1
-ms.date: 09/09/2021
+manager: AnnBe
+ms.date: 11/04/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -15,41 +18,31 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 513b6ca84fa71e851a5a3e4275e0b6572789e1eb
-ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
+ms.openlocfilehash: ecff18f0a34d22ef359f473fa6aaaff16c811bb6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485793"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459945"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>Förbättrad hantering av batchspårade artiklar
 
+
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs den förbättrade hanteringen av batchspårade artiklar under bokföringsprocessen av utdrag i Microsoft Dynamics 365 Commerce.
 
-I Dynamics 365 Commerce-kassan kan batchnummer inte registreras för batchspårade artiklar vid försäljningstillfället. För specifika konfigurationer, när försäljning bokförs vid Commerce-administration genom kundorder- eller utdragsbokföring, förväntar sig Commerce-systemet att det finns giltiga batchnummer för batchspårade artiklar och att de används under faktureringen.
+I kassan (POS) kan batchnummer inte registreras för batchspårade artiklar vid försäljningstillfället. För specifika konfigurationer, när försäljning bokförs vid huvudkontoret genom kundorder- eller utdragsbokföring, förväntar sig Microsoft Dynamics-systemet att det finns giltiga batchnummer för batchspårade artiklar och att de ska användas under faktureringen.
 
-Om det finns giltiga batchnummer för produkter används de vid faktureringsprocessen för både kundorder och försäljningsorder från utdragsbokföringen. Om det inte finns giltiga batchnummer för produkter kan faktureringen av kundorder inte bokföras och kassaanvändaren får ett felmeddelande. Utdragsbokföringen går sedan in i ett feltillstånd även om ett negativt lager har aktiverats för produkterna.
+Om det finns giltiga batchnummer för produkter används de vid faktureringsprocessen för kundorder och försäljningsorder från utdragsbokföringen. Annars kan faktureringen av kundorder inte bokföras och kassaanvändaren får ett felmeddelande. Utdragsbokföringen går sedan in i ett feltillstånd. Det här feltillståndet inträffar även när ett negativt lager har aktiverats för produkterna.
 
-När negativt lager har aktiverats för batchspårade artiklar innebär de förbättringar som gjorts av Commerce att faktureringen av kund- och försäljningsorder som görs via utdragsbokföring inte blockeras för dessa artiklar om lagret är 0 (noll) eller om det inte finns något batchnummer. Den förbättrade funktionen använder ett standardiserat batch-ID för försäljningsrader när det inte finns batchnummer.
+När negativt lager har aktiverats för batchspårade artiklar innebär de förbättringar som gjorts i Retail version 10.0.4 och senare att faktureringen av kund- och försäljningsorder som görs via utdragsbokföring inte blockeras för dessa artiklar om lagret är 0 (noll) eller om det inte finns något batchnummer. Den nya funktionen använder ett standardiserat batch-ID för försäljningsrader när det inte finns batchnummer.
 
-## <a name="define-the-default-batch-id-that-is-used-for-customer-orders"></a>Definiera standardvärdet för det batch-ID som används för kundorder
+Du definierar standardvärdet för det batch-ID som används för kundorder i fältet **Standard-batch-ID**, på snabbfliken **Order**, på fliken **Kundorder** på sidan **Commerce-parametrar**.
 
-Gör på följande sätt för att definiera standardvärdet för det batch-ID som används för kundorder.
-
-1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> Commerce-parametrar** i Commerce-administration.
-1. På fliken **Kundorder**, på snabbfliken **Order** anger du ett värde i fältet för **standardvärde för batch-ID**.
-
-## <a name="define-the-default-batch-id-that-is-used-for-sales-order-invoicing-through-statement-posting"></a>Definiera standardvärdet för det batch-ID som används för försäljningsorder via utdragsbokföring
-
-Gör på följande sätt för att definiera standardvärdet för det batch-ID som används för försäljningsorder via utdragsbokföring.
-
-1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> Commerce-parametrar** i Commerce-administration.
-1. På fliken **Bokföra**, på snabbfliken **Lageruppdatering** anger du ett värde i fältet för **standardvärde för batch-ID**.
+Du definierar standardvärdet för det batch-ID som används för försäljningsorder via utdragsbokföring i fältet **Standard-batch-ID**, på snabbfliken **Lageruppdatering**, på fliken **Bokföring** på sidan **Commerce-parametrar**.
 
 > [!NOTE]
-> - Funktionen för standardvärde för batch-ID är bara tillgänglig när avancerad distributionslagerhantering har aktiverats för det specifika butikslagret och artiklarna. I en framtida version kommer funktionen för standardvärde för batch-ID också att fungera för tillfällen då avancerad distributionslagerhantering inte är aktiverad.
-> - Stöd för den förbättrade hanteringen av batchspårade artiklar under bokföringen av icke-avancerade scenarier för distributionslagerhantering infördes i Commerce-version 10.0.5.
+> Den här funktionen är bara tillgänglig när avancerad lagerstyrning har aktiverats för det specifika butikslagret och artiklarna. I en senare version kommer funktionen också att fungera för tillfällen då avancerad lagerstyrning inte används.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+> [!NOTE]
+> Stöd för förbättrad hantering av batchspårade artiklar under bokföringen av icke-avancerade lagerstyrningsscenarier infördes i Retail version 10.0.5.

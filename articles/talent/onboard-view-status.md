@@ -57,6 +57,3 @@ Microsoft Dynamics 365 Talent: Onboard låter dig visa de framsteg som dina nyan
 - [Nyheter och ändringar i Dynamics 365 Talent](./whats-new.md)
 - [Utgivningsplaner](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Få support för Microsoft Dynamics 365 Talent](./talent-support.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

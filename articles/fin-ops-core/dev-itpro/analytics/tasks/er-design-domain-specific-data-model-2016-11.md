@@ -1,10 +1,12 @@
 ---
 title: ER designar domänspecifika datamodeller
-description: I det här avsnittet beskrivs hur du skapar en ny konfiguration av elektronisk rapportering (ER) som innehåller en datamodell för elektroniska betalningsdokument.
+description: I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en ny konfiguration för Elektronisk rapportering (ER) som innehåller en datamodell för elektroniska betalningsdokument.
 author: NickSelin
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERDataContainerDescriptorReferenceSwitchDialog
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16d76d243779f83646f14418a12c9c895fdf043451d82bd7062289be6cd8014a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 268f661079b80551b36ad2e1877615d878350051
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728732"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681959"
 ---
 # <a name="er-design-domain-specific-data-model"></a>ER designar domänspecifika datamodeller
 
@@ -185,6 +187,3 @@ Du skapar en ny datamodell för den valda konfigurationen. Den här konfiguratio
 65. Klicka på Spara.
 66. Stäng sidan.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,13 +1,16 @@
 ---
-title: Dataverse-register
-description: Microsoft Dynamics 365 Human Resources använder Dataverse för att aktivera scenarier för utökning och integration.
+title: Common Data Service-entiteter
+description: Microsoft Dynamics 365 Human Resources använder Common Data Service för att aktivera scenarier för utökning och integration.
 author: andreabichsel
-ms.date: 01/25/2021
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,30 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6774fad3543d80d04faacf5960c8037f1734f084
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 988fa0b6d39a49b973626a8a0abe83c546f42297
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066835"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4530016"
 ---
-# <a name="dataverse-tables"></a>Dataverse-register
+# <a name="common-data-service-entities"></a>Common Data Service-entiteter
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
+Microsoft Dynamics 365 Human Resources använder Common Data Service för att aktivera scenarier för utökning och integration.
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+Mer information om Common Data Service, se [Vad är Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
 
-Microsoft Dynamics 365 Human Resources använder Dataverse för att aktivera scenarier för utökning och integration.
+Följande personalentiteter är tillgängliga i Common Data Service.
 
-> [!NOTE]
-> Personal-entiteter motsvarar Dataverse-register. Mer information om Dataverse (tidigare Common Data Service) och terminologiuppdateringar finns i [Vad är Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
+## <a name="benefit-entities"></a>Förmånsentiteter
 
-Följande Dataverse-register baseras på Personal-entiteter.
-
-## <a name="benefit-tables"></a>Förmånsregister
-
-| Namn | Register |
+| Namn | Enhet |
 | --- | --- |
 | Frekvens i förmånsberäkning | cdm_benefitcalculationfrequency |
 | Löneperiod med frekvens i förmånsberäkning | cdm_benefitcalculationfrequencypayperiod |
@@ -48,9 +47,9 @@ Följande Dataverse-register baseras på Personal-entiteter.
 | Förmånsplan | cdm_benefitplan (inte aktiverat för stöd för anpassade fält) |
 | Förmånstyp | cdm_benefittype |
 
-## <a name="business-process-tasks-tables"></a>Uppgiftsentiteter för affärsprocesser
+## <a name="business-process-tasks-entities"></a>Entiteter för affärsprocessuppgifter
 
-| Namn | Register |
+| Namn | Enhet |
 | --- | --- |
 | Affärsprocesskalender | cdm_businessprocesscalendar |
 | Tilldelning av affärsprocessgrupp | cdm_businessprocessgroupassignment |
@@ -59,11 +58,11 @@ Följande Dataverse-register baseras på Personal-entiteter.
 | Checklistemallens rubrik | cdm_businessprocesstemplateheader |
 | Checklistemallens uppgift | cdm_businessprocesstemplatetask |
 
-## <a name="compensation-tables"></a>Kompensationsregister
+## <a name="compensation-entities"></a>Enheter för kompensation
 
-| Namn | Register |
+| Namn | Enhet |
 | --- | --- |
-| Fast kompensationsplan | cdm_compensationfixedplan |
+| Plan för fast kompensation | cdm_compensationfixedplan |
 | Kompensationsrutnät | cdm_compensationgrid |
 | Kompensationsnivå | cdm_compensationlevel |
 | Lönefrekvens för kompensation | cdm_compensationpayfrequency |
@@ -76,11 +75,11 @@ Följande Dataverse-register baseras på Personal-entiteter.
 | Typ av variabel kompensationsplan | cdm_compensationvariableplantype |
 | Händelse för fast kompensation | cdm_fixedcompensationevent |
 | Överlåtelseregel | cdm_vestingrule |
-| Arbetarens fasta kompensation | cdm_workerfixedcompensation |
+| Fast arbetarkompensation | cdm_workerfixedcompensation |
 
-## <a name="organization-tables"></a>Organisationsregister
+## <a name="organization-entities"></a>Organisationsenheter
 
-| Namn | Register |
+| Namn | Enhet |
 | --- | --- |
 | Avdelning | cdm_department |
 | Anställning | cdm_employment |
@@ -96,36 +95,36 @@ Följande Dataverse-register baseras på Personal-entiteter.
 | Namn | cdm_title |
 
 > [!NOTE]
-> Ekonomiska dimensioner för **Befattningstyp**, **Befattningstilldelning för arbetare** och **Anställning** ger integration med Dataverse i en riktning. Uppdateringar av ekonomiska dimensioner kan för närvarande inte synkroniseras från Dataverse till personal. 
+> Ekonomiska dimensioner för **Befattningstyp**, **Befattningstilldelning för arbetare** och **Anställning** ger integration med Common Data Service i en riktning. Uppdateringar av ekonomiska dimensioner kan för närvarande inte synkroniseras från Common Data Service till personal. 
 
-## <a name="leave-and-absence-tables"></a>Tjänstledighets- och frånvaroregister
+## <a name="leave-and-absence-entities"></a>Enheter för tjänstledighet och frånvaro
 
-| Namn | Register |
+| Namn | Enhet |
 | --- | --- |
 | Transaktion för tjänstledighetsbank | cdm_leavebanktransaction |
-| Anmälning om tjänstledighet | cdm_leaveenrollment |
+| Lämna anmälan | cdm_leaveenrollment |
 | Tjänstledighetsplan | cdm_leaveplan |
 | Begäran om tjänstledighet | cdm_leaverequest |
 | Information om att lämna begäran | cdm_leaverequestdetail |
 | Tjänstledighetstyp | cdm_leavetype |
 | Ledighetstypens orsakskod | cdm_leavetypereasoncode |
 
-## <a name="payroll-tables"></a>Löneregister
+## <a name="payroll-entities"></a>Löneenheter
 
-| Namn | Register |
+| Namn | Enhet |
 | --- | --- |
 | Lönecykel | cdm_paycycle |
 | Löneperiod | cdm_payperiod |
-| Inkomstkod | cdm_payrollearningcode |
+| Inkomstkod för lön | cdm_payrollearningcode |
 | Bankkontoutbetalningar | cdm_bankaccountdisbursement |
 | Skatteregion | cdm_taxregion |
 
-## <a name="worker-tables"></a>Medarbetarregister
+## <a name="worker-entities"></a>Entiteter för arbetare
 
-| Namn | Register |
+| Namn | Enhet |
 | --- | --- |
 | Arbetare | cdm_worker |
-| Adress för arbetare | cdm_workeraddress |
+| Arbetarens adress | cdm_workeraddress |
 | Arbetarens personuppgift | cdm_workerpersonaldetail |
 | Arbetsidentifieringsnummer | cdm_workerpersonidentificationnumber |
 | Arbetsidentifieringstyp | cdm_workerpersonidentificationtype |
@@ -136,55 +135,48 @@ Följande Dataverse-register baseras på Personal-entiteter.
 | Tidsintervall till arbetskalendern | cdm_workcalendartimeinterval (inte aktiverat för stöd för anpassade fält) |
 | Bankkonto för arbetare | cdm_workerbankaccount |
 
-## <a name="worker-setup-tables"></a>Inställningsregister för medarbetare
+## <a name="worker-setup-entities"></a>Enheter för arbetarkonfiguration
 
-| Namn | Register |
+| Namn | Enhet |
 | --- | --- |
 | Veteranstatus | cdm_veteranstatus |
 | Etniskt ursprung | cdm_ethnicorigin |
 | Orsakskod | cdm_reasoncode |
-| Utfärdande organ för personidentifiering | cdm_personidentificationissuingagency |
+| Utfärdande organ personidentifiering | cdm_personidentificationissuingagency |
 
-## <a name="competency-tables"></a>Kompetensregister
+## <a name="competency-entities"></a>Kompetensenheter
 
-| Namn | Register |
+| Namn | Enhet |
 | --- | --- |
 | Kompetenstyp | cdm_skilltype |
 
-## <a name="table-relationship-models"></a>Relationsmodeller för register
+## <a name="entity-relationship-models"></a>Modeller för enhetsrelation
 
 ### <a name="worker"></a>Arbetare
 
-![Arbetare.](./media/HCMCommon-worker-entity-diagram.png)
+![Arbetare](./media/HCMCommon-worker-entity-diagram.png)
 
 ### <a name="job-and-job-position"></a>Jobb och jobbefattning
 
-![Jobb och jobbefattning.](./media/HCMCommon-job-and-job-position-entity-diagram.png)
+![Jobb och jobbefattning](./media/HCMCommon-job-and-job-position-entity-diagram.png)
 
-### <a name="benefits"></a>Förmåner
+### <a name="benefits"></a>Fördelar
 
-![Förmåner.](./media/HCMCommon-benefits-entity-diagram.png)
+![Fördelar](./media/HCMCommon-benefits-entity-diagram.png)
 
 ### <a name="compensation"></a>Kompensation
 
-![Kompensation.](./media/HCMCommon-compensation-entity-diagram.png)
+![Kompensation](./media/HCMCommon-compensation-entity-diagram.png)
 
-### <a name="leave"></a>Tjänstledighet
+### <a name="leave"></a>Lämna
 
-![Tjänstledighet.](./media/HCMCommon-leave-entity-diagram.png)
+![Lämna](./media/HCMCommon-leave-entity-diagram.png)
 
 ### <a name="work-calendar"></a>Arbetskalender
 
-![Arbetskalender.](./media/HCMCommon-work-calendar-entity-diagram.png)
+![Arbetskalender](./media/HCMCommon-work-calendar-entity-diagram.png)
 
 ## <a name="see-also"></a>Se även
 
-[Välja en dataintegreringsteknik](hr-admin-integration-choose-technology.md)<br>
-[Konfigurera Dataverse-integrering](hr-admin-integration-common-data-service.md)<br>
-[Konfigurera virtuella Dataverse-register](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Vanliga frågeställningar och svar om virtuella register i Personal](hr-admin-virtual-entity-faq.md)<br>
-[Vad är Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
-[Terminologiuppdateringar](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Välja en dataintegreringsteknik](hr-admin-integration-choose-technology.md)</br>
+[Konfigurera Common Data Service-integrering](hr-admin-integration-common-data-service.md)

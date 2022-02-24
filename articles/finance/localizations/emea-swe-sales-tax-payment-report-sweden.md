@@ -2,9 +2,11 @@
 title: Momsrapport för Sverige
 description: I det här avsnittet beskrivs hur du ställer in och genererar momsrapporten för juridiska personer i Sverige.
 author: anasyash
+manager: AnnBe
 ms.date: 03/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Sweden
 ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 83d396b82962d11f9166d1f302359c393e85325e8a286a7fc48483e4581abdd8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf7f88a411f498fec8b1b7f03c2994658b8d59aa
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715007"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017174"
 ---
 # <a name="sales-tax-report-for-sweden"></a>Momsrapport för Sverige
 
@@ -182,7 +184,7 @@ Följande exempel visar hur du kan ställa in momskoder och momsrapporteringskod
 4. Gå till **Moms** \> **Deklarationer** \> **Moms** \> **Kvitta och bokför moms**. I dialogrutan **Rapportera moms för kvittningsperiod** i fältet **Momsbetalningsversion** välj **Original**.
 5. Skriv ut rapporten och granska alla data.
 
-    ![Ursprunglig lista över momsrapportering.](media/1_Sales_tax_reporting.png)
+    ![Ursprunglig lista över momsrapportering](media/1_Sales_tax_reporting.png)
 
 6. Bokför den nya transaktionen. Gå till exempel till **Kundreskontra** \> **Fakturor** \> **Alla fritextfakturor**.
 
@@ -193,17 +195,14 @@ Följande exempel visar hur du kan ställa in momskoder och momsrapporteringskod
 7. Gå till **Moms** \> **Deklarationer** \> **Moms** \> **Kvitta och bokför moms**. I dialogrutan **Rapportera moms för kvittningsperiod** i fältet **Momsbetalningsversion** välj **Senaste korrigeringar**.
 8. Gå till **Moms** \> **Deklarationer** \> **Moms** \> **Rapportera moms för kvittningsperiod**. I dialogrutan **Rapportera moms för kvittningsperiod** i fältet **Momsbetalningsversion** välj **korrigeringar**. På bilden nedan visas resultatet.
 
-    ![Rapportlista över momskorrigeringar.](media/2_Sales_tax_reporting.png)
+    ![Rapportlista över momskorrigeringar](media/2_Sales_tax_reporting.png)
 
 9. Gå till **Moms** \> **Deklarationer** \> **Moms** \> **Rapportera moms för kvittningsperiod**. I dialogrutan **Rapportera moms för kvittningsperiod** i fältet **Momsbetalningsversion** välj **total lista**. På bilden nedan visas resultatet.
 
-    ![Komplett lista över momsrapportering.](media/3_Sales_tax_reporting.png)
+    ![Total lista över momsrapportering](media/3_Sales_tax_reporting.png)
 
 ## <a name="report-vat-declaration-to-the-tax-authority"></a>Rapportera momsdeklaration till skattemyndigheten
 
 När du har genererat svenska momsrapporten använder du informationen på den för att fylla i momsdeklarationen för den svenska momsmyndigheten i det officiella formatet. Följande illustration visar vad den svenska momsdeklarationen har sett ut sedan 2016.
 
-![Svensk momsdeklarationsrapport.](media/4_Swedish_VAT_declaration.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+![Svensk momsdeklarationsrapport](media/4_Swedish_VAT_declaration.png)

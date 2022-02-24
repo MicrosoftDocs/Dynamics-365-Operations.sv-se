@@ -153,6 +153,3 @@ Ett erbjudanden kan återkallas från en kandidat när som helst efter olika sk�
 ## <a name="closing-an-offer"></a>Stänga ett erbjudande 
 
 När ett erbjudande har godkänts, avvisats eller återkallats och inga ytterligare åtgärder krävs, kan du stänga erbjudandet så att inga fler ändringar kan göras i erbjudandepaketet.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

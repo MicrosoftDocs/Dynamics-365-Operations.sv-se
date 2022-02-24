@@ -2,24 +2,27 @@
 title: Betalningsmodul
 description: Det här avsnittet handlar om betalningsmodul för leveransadressmodulen förklarar hur du konfigurera i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/07/2022
+manager: annbe
+ms.date: 11/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 27b73f7a05605e4e3ee8f8b72400172b7a8bfc33
+ms.sourcegitcommit: ec78608eb96478b7a57928b60aece129d6799c5b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952479"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4581922"
 ---
 # <a name="payment-module"></a>Betalningsmodul
 
@@ -39,16 +42,16 @@ I betalningsmodulen kan också kunder som är inloggade spara sina betalningsupp
 
 Betalningsmodulen täcker alla orderavgifter som inte redan omfattas av förmånspoäng eller presentkort. Om summan för en order helt täcks av förmånspoäng eller presentkortskrediter, döljs betalningsmodulen och kunden kan placera ordern utan den.
 
-Adyen betalningskontakt stöder också stark kundautentisering (SCA). En del av den Europeiska Unionens (EU) reviderade direktiv om betalningstjänster (PSD2) kräver att online-shoppare autentiseras utanför sin online-upplevelse när de använder en elektronisk betalningsmetod. I samband med kassaflödet omdirigeras kunderna till sin bankwebbplats – efter autentisering omdirigeras de tillbaka till kassaflödet för Commerce. I samband med denna omdirigering behålls den information som en kund har angett i samband med kassaflödet (t.ex. leveransadress, leveransalternativ, presentkortsinformation och lojalitetsinformation). Innan du kan aktivera funktionen för Adyen-betalningsanslutning måste betalningsanslutningen konfigureras för SCA i Commerce-administrationen. Mer information finns i [grundlig kundautentisering med hjälp av Adyen](adyen_redirect.md). Denna funktion aktiverades i Commerce version 10.0.12.
+Adyen betalningskontakt stöder också stark kundautentisering (SCA). En del av den Europeiska Unionens (EU) reviderade direktiv om betalningstjänster (PSD2) kräver att online-shoppare autentiseras utanför sin online-upplevelse när de använder en elektronisk betalningsmetod. I samband med kassautcheckningsflödet omdirigeras kunderna till sin bankwebbplats - efter autentisering omdirigeras de tillbaka till kassautcheckningsflödet för Commerce. I samband med denna omdirigering behålls den information som en kund har angett i samband med kassautcheckningsflödet (t.ex. leveransadress, leveransalternativ, presentkortsinformation och lojalitetsinformation). Innan du kan aktivera funktionen för Adyen-betalningsanslutning måste betalningsanslutningen konfigureras för SCA i Commerce-administrationen. Mer information finns i [grundlig kundautentisering med hjälp av Adyen](adyen_redirect.md). Denna funktion aktiverades i Commerce version 10.0.12.
 
 > [!NOTE]
 > För Adyen -betalningskoppling kan modulen iFrame i modulen betalning bara återges om du lägger till Adyen-URL i din webbplatslista över tillåtna. Du slutför det här steget genom att lägga till direktiven **\*.adyen.com** till **child-src**, **connect-src**, **img-src**, **script-src** och **style-src** för säkerhetspolicyn för din webbplats. Mer information finns i [hantera säkerhetsprinciper för innehåll](manage-csp.md). 
 
 Följande bild visar ett exempel på moduler för presentkort, lojalitet och Adyen-betalning på en kassasida.
 
-![Exempel på moduler för presentkort, lojalitet och Adyen-betalningsmoduler på en kassasida.](./media/ecommerce-payments.PNG)
+![Exempel på moduler för presentkort, lojalitet och Adyen-betalningsmoduler på en kassasida](./media/ecommerce-payments.PNG)
 
-## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365 Payment Connector för PayPal
+## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365-betalningsanslutning för PayPal
 
 Från och med Commerce version 10.0.14 är betalningsmodulen även integrerad i Dynamics 365-betalningsanslutningen för PayPal. För mer information om hur du konfigurerar denna betalningsanslutning, se [Dynamics 365-betalningsanslutning för PayPal](paypal.md).
  
@@ -59,10 +62,10 @@ När betalningsmodulen är konfigurerad för att använda PayPal-betalningsanslu
 PayPal-betalningsanslutningen kräver ingen faktureringsadressmodul eftersom all faktureringsrelaterad information hanteras av PayPal inom dess iframe. Modulerna för leveransadress och -alternativ krävs dock.
 
 I bilden nedan visas ett exempel på två betalningsmoduler på en kassasida, en konfigurerad med Adyen-betalningsanslutningen och den andra med PayPal-betalningsanslutningen.
-![Exempel på moduler för Adyen- respektive PayPal-betalning på en kassasida.](./media/ecommerce-paypal.png)
+![Exempel på moduler för Adyen- respektive PayPal-betalning på en kassasida](./media/ecommerce-paypal.png)
 
 I bilden nedan visas ett exempel på den PayPal-iframe som åberopas med hjälp av PayPal-knappen. 
-![Exempel på Paypal-iframe på en kassasida.](./media/ecommerce-paypal-iframe.png)
+![Exempel på Paypal-iframe på en kassasida](./media/ecommerce-paypal-iframe.png)
 
 ## <a name="payment-module-properties"></a>Egenskaper för betalningsmodul
 
@@ -72,11 +75,11 @@ I bilden nedan visas ett exempel på den PayPal-iframe som åberopas med hjälp 
 | Höjd på iframe. | Pixlar | Höjdpunkter iframe i bildpunkter. Höjden kan dock justeras efter behov. |
 | Visa faktureringsadress | **Sant** eller **falskt** | Om den här egenskapen har värdet **True** kommer faktureringsadressen att betjänas av Adyen inuti den inbäddade modulen för iframe. Om denna har värdet **False** kommer faktureringsadressen inte att betjänas av Adyen, och en Commerce-användare måste konfigurera en modul för att visa faktureringsadressen på kassasidan. Detta fält påverkar inte PayPal-betalningsanslutningen, detta eftersom faktureringsadressen hanteras helt inom PayPal. |
 | Åsidosättning av betalningsformat | Kod för överlappande formatmallar (CSS) | Eftersom betalningsmodulen finns i en iframe finns det en begränsad format kapacitet. Du kan formatera formateringen genom att använda den här egenskapen. Om du vill åsidosätta webbplatsformat måste du klistra in CSS-koden som egenskapensvärde. Webbplatsskaparen CSS åsidosätter och stilar gäller inte för den här modulen. |
-|Betalningsmedelstyper som stöds| Sträng| Om flera betalningsanslutningar har konfigurerats bör du tillhandahålla den sträng för betalningsmedel som stöds enligt definitionen i konfigurationen för Payment Connector för Commerce-administration (se följande bild). Om denna är tom kommer den att återställas till Adyen-betalningsanslutningen. Lades till i Commerce version 10.0.14.|
+|Betalningsmedelstyper som stöds| Sträng| Om flera betalningsanslutningar har konfigurerats bör du tillhandahålla den sträng för betalningsmedel som stöds enligt definitionen i konfigurationen för betalningsanslutning för Commerce-administration (se följande bild). Om denna är tom kommer den att återställas till Adyen-betalningsanslutningen. Lades till i Commerce version 10.0.14.|
 |Är primär betalning|  **Sant** eller **falskt** | Om **True** kommer eventuella felmeddelanden att genereras via den primära betalningsanslutningen på kassasidan. Om både Adyen- och PayPal-betalningsanslutningarna har konfigurerats anger du Adyen som **True**, som lades till i Commerce version 10.0.14.|
 
 I bilden nedan visas ett exempel på värdet **Offerttyper som stöds** angivet som "PayPal" i konfigurationen av betalningsanslutning i Commerce-administrationen.
-![Exempel på offerttyper som stöds i Commerce-administrationen.](./media/ecommerce-paymenttendertypes.png)
+![Exempel på offerttyper som stöds i Commerces-administrationen](./media/ecommerce-paymenttendertypes.png)
 
 ## <a name="billing-address"></a>Faktureringsadress
 
@@ -90,28 +93,11 @@ På samma sätt som hos betalningsmodulerna har en egenskap för **Offerttyper s
 
 En betalningsmodul kan bara läggas till i en betalningsmodul. Mer information om hur du konfigurera en betalningsmodul för en kassasida, se [kassamodul](add-checkout-module.md).
 
-## <a name="configure-the-adyen-and-paypal-payment-connectors-when-both-are-used"></a>Konfigurera betalningsanslutningarna Adyen och PayPal när båda används
-
-Om både Adyen- och PayPal-betalningsanslutningarna kommer att användas för din webbplats, följ dessa steg i Commerce webbplatsskaparen för att lägga till betalningsmoduler för varje anslutning till kassamodulen och konfigurera sedan egenskaperna för varje modul.
-
-1. Gör på följande sätt i egenskapsfönstret för betalningsmodulen PayPal:
-
-    1. I fältet för egenskapen **Betalningsmedelstyper som stöds** ange **PayPal**.
-    1. Avmarkera kryssrutan för egenskapen **Är primär betalning**.
-    1. Markera kryssrutan för egenskapen **Använd anslutnings-ID**.
-
-1. Gör på följande sätt i egenskapsfönstret för betalningsmodulen Adyen:
-
-    1. Lämna fältet för egenskapen **Betalningsmedelstyper som stöds** tomt.
-    1. Markera kryssrutan för egenskapen **Är primär betalning**.
-    1. Markera kryssrutan för egenskapen **Använd anslutnings-ID**.
-
-> [!NOTE]
-> När du konfigurerar Adyen- och PayPal-anslutningarna för att användas tillsammans, kommer konfigurationen **Dynamics 365 Payment Connector för Adyen** konfigurationen måste vara i första positionen i onlinekanalens **Betalningskonto** i Commerce-administration. För att bekräfta eller ändra anslutningsordningen, gå till **Online-butiker** och väljer kanal för din webbplats. Sedan på fliken **Ställ in** på snabbflikarna **Betalningskonton** under **Anslutningsprogram**, se till att konfigurationen **Dynamics 365 Payment Connector för Adyen** är i den första positionen (det vill säga på den översta raden) och att konfigurationen **Dynamics 365 Payment Connector för PayPal** är i den andra raden. Lägg till eller ta bort kontakter om du vill beställa om dem.
+Om både Adyen- och PayPal-betalningsanslutningar behövs lägger du till båda modulerna i betalningsavsnittet. Se till att egenskapsvärdet **Offerttyper som stöds** är konfigurerat för PayPal, och lämna det tomt för Adyen. Ställ också in egenskapen **Är primär betalning** som **True** för Adyen.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Vagnmodul](add-cart-module.md)
+[Kundvagnsmodul](add-cart-module.md)
 
 [Ikon för kundvagnsmodul](cart-icon-module.md)
 
@@ -132,6 +118,3 @@ Om både Adyen- och PayPal-betalningsanslutningarna kommer att användas för di
 [Dynamics 365-betalningsanslutning för PayPal](paypal.md)
 
 [Stark kundautentisering med Adyen](adyen_redirect.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

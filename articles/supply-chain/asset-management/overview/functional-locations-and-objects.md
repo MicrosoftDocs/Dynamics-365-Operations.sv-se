@@ -1,10 +1,12 @@
 ---
 title: Funktionsplatser och tillgångar
 description: Det här avsnittet beskriver funktionsplats och tillgångar i tillgångshantering. Tillgångshantering är en avancerad modul för hantering av tillgångar och underhållsjobb i Dynamics 365 Supply Chain Management.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0bf90d99a8bd093817f9e804e8075e779428f1fadb3128c5a455ca839dece55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2f93a68f19b0b952eb2964b404bb957865c625cd
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750158"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018056"
 ---
 # <a name="functional-locations-and-assets"></a>Funktionsplatser och tillgångar
 
@@ -34,13 +36,13 @@ Det här avsnittet beskriver funktionsplats och tillgångar i tillgångshanterin
 
 Tillgångshantering integreras sömlöst med flera moduler med andra Finance and Operations-appar. Följande illustration visar gränssnitten med andra moduler.
 
-![Diagram som visar hur tillgångshantering samarbetar med andra moduler.](media/01-overview-image.png)
+![Diagram som visar tillgångshanterings gränssnitt med andra moduler](media/01-overview-image.png)
 
 Med tillgångshantering kan du effektivt hantera och utföra alla uppgifter som är relaterade till hantering och underhåll av många typer av utrustning i företaget. Denna utrustning omfattar maskiner, produktionsutrustning och fordon. Tillgångshantering stödjer även lösningar inom många branscher.
 
 Följande illustration visar en översikt över de viktigaste funktionerna som täcks av tillgångshantering.
 
-![Diagram som visar huvudfunktionerna i tillgångshanteringen.](media/02-overview-image.png)
+![Diagram som visar huvudfunktionerna i tillgångshantering](media/02-overview-image.png)
 
 ## <a name="functional-locations-and-assets"></a>Funktionsplatser och tillgångar
 
@@ -50,11 +52,8 @@ Tillgångskostnader följer alltid placeringen av tillgången. Med andra ord, om
 
 Hur du bygger din hierarki av funktionsplatser beror på ditt företags krav på underhåll av intern utrustning eller service av kundutrustning. Följande bild visar ett exempel på funktionsplatser som är baserade på geografiska platser.
 
-![Diagram som visar funktionella platser baserat på geografiska platser.](media/03-overview-image.png)
+![Diagram som visar funktionella platser baserat på geografiska platser](media/03-overview-image.png)
 
 Följande bild visar ett exempel på funktionsplatser som är baserade på kunder.
 
-![Diagram som visar funktionella platser baserat på kunder.](media/04-overview-image.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Diagram som visar funktionella platser baserat på kunder](media/04-overview-image.png)

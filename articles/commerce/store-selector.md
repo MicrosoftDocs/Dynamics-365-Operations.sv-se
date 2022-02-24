@@ -3,12 +3,14 @@ title: Modul för butiksväljare
 description: Det här avsnittet handlar om modulen för butiksväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/08/2021
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0ee9d3cec9c524f73472929052d46d87f8270ba67568314eceb462b1803cf149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5400a2e743a78124dca4bf9be3ccaf7870ea8b7d
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772166"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665282"
 ---
 # <a name="store-selector-module"></a>Modul för butiksväljare
 
@@ -29,40 +31,21 @@ ms.locfileid: "6772166"
 
 Det här avsnittet handlar om modulen för butiksväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 
+## <a name="overview"></a>Översikt
+
 Kunder kan använda modulen butiksväljare för att hämta en produkt i en vald butik efter ett onlineinköp. I Commerce version 10.0.13 inkluderar modulen butiksväljare ytterligare funktioner som kan visa sidan **Visa en butik** som visar närliggande butiker.
 
 Med modulen butiksväljare kan användarna ange en plats (ort, delstat, adress och så vidare) för att söka efter butiker inom en sökradie. När modulen öppnas använder den kundens webbläsare och söker efter butiker (om medgivande finns).
 
-## <a name="store-selector-module-usage"></a>Användning av modul för butiksväljare
+## <a name="store-selector-module-usage-in-e-commerce"></a>Användning av modul för butiksväljare i näthandel
 
 - En modul för butiksväljare kan användas på en produktinformationssida (PDP) för att välja en butik för upphämtning.
 - En modul för butiksväljare kan användas på en kundvagnssida för att välja en butik för upphämtning.
 - En modul för butiksväljare kan användas på en fristående sida där alla tillgängliga butiker visas.
 
-## <a name="fulfillment-group-setup-in-commerce-headquarters"></a>Konfigurera uppfyllelsegrupper i Commerce-administrationen
-
-För att butiksväljaren ska visa tillgängliga butiker måste uppfyllelsegruppen ha ställts in i Commerce-administrationen. För mer information, se [Konfigurera uppfyllelsegrupper](customer-orders-overview.md#set-up-fulfillment-groups).
-
-Dessutom måste, för varje butik i uppfyllelsegruppen, butiksplatsens latitud och longitud definieras i administrationen.
-
-Följ dessa steg för att ange värden för latitud och longitud för en butiksplats i Commerce-administrationen.
-
-1. Gå till **Lagerhantering \> Inställningar \> Lageruppdelning**.
-1. Välj lagrets plats i vänster ruta.
-1. På snabbfliken **Adresser** väljer du **Avancerat**.
-
-    ![Exempel på butiksinformation i administrationen.](./media/Store-address.png)
-
-1. I åtgärdsfönstret väljer du **Redigera**.
-1. På snabbfliken **Allmänt** anger du värden för **Latitud** och **Longitud**.
-
-    ![Exempel på konfiguration av latitud och longitud i administrationen.](./media/Store-latitude-longitude.png)
-
-1. Klicka på **Spara** i åtgärdsfönstret. 
-
 ## <a name="bing-maps-integration"></a>Bing Maps-integrering
 
-Modulen butiks väljare är integrerad med [Bing Maps REST-API:er (Application Programming Interfaces)](/bingmaps/rest-services/) för att använda funktionerna Bing geokodning och automatiska förslag. En Bing Maps API-nyckel krävs och måste läggas till på sidan för delade Commerce-administration. Geokodnings-API används för att konvertera en plats till latitud- och longitudvärden. Integrationen med API för automatiska förslag används för att visa sökförslag när användare anger platser i sökfältet.
+Modulen butiks väljare är integrerad med [Bing Maps REST-API:er (Application Programming Interfaces)](https://docs.microsoft.com/bingmaps/rest-services/) för att använda funktionerna Bing geokodning och automatiska förslag. En Bing Maps API-nyckel krävs och måste läggas till på sidan för delade Commerce-administration. Geokodnings-API används för att konvertera en plats till latitud- och longitudvärden. Integrationen med API för automatiska förslag används för att visa sökförslag när användare anger platser i sökfältet.
 
 För REST API för automatiska förslag måste du se till att följande URL:er tillåts per din webbplats säkerhetsprinciper för innehåll (CSP). Den här inställningen görs i Commerce webbplatsskapare genom att lägga till tillåtna URL:er för webbplatsens CSP-direktiv (till exempel **img-src**). Mer information finns i [säkerhetsprinciper för innehåll](manage-csp.md). 
 
@@ -70,21 +53,21 @@ För REST API för automatiska förslag måste du se till att följande URL:er t
 - Till direktivet **img-src** lägger du till **&#42;.virtualearth.net**.
 - Till direktivet **script-src** **lägg till &#42;.bing.com, &#42;.virtualearth.net**.
 - Till direktivet **script style-src** lägger du till **&#42;.bing.com**.
-
+ 
 ## <a name="pickup-in-store-mode"></a>upphämta i butiksläge
 
 Modulen för butiksväljare stöder läget **Hämta i butik** som visar en lista över butiker där en produkt är tillgänglig för hämtning. Den visar även butikstider och produktlager för varje butik i listan. Modulen butiksväljare kräver en produktskontext för att återge produkttillgänglighet och för att användaren ska kunna lägga till produkten i vagnen, om produktens leveranssätt är inställt på **hämta** vid den valda butiken. Mer information om [lagerinställning](inventory-settings.md). 
 
 Modulen butiksväljare kan läggas till i en modul för inköpsruta på en PDP för att visa butiker där en produkt är tillgänglig för upphämtning. Den kan också läggas till i en vagnmodul. I det här fallet visar modulen butiksväljare upphämtningsalternativ för varje radartikel i vagnen. Modulen butiksväljare kan också läggas till andra sidor eller moduler via tillägg och anpassningar.
 
-För att detta scenario ska fungera bör produkter konfigureras så att leveranssättet **hämta** används. Annars visas modulen inte på respektive produktsidor. Mer information om hur du konfigurerar leveranssättet finns i [ställa in leveransmetod](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+För att detta scenario ska fungera bör produkter konfigureras så att leveranssättet **hämta** används. Annars visas modulen inte på respektive produktsidor. Mer information om hur du konfigurerar leveranssättet finns i [ställa in leveransmetod](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Följande bild visar ett exempel på en modul för butiksväljare som används på ett PDP.
 
-![Exempel på en modul för butiksväljare som används på PDP.](./media/BOPIS.PNG)
+![Exempel på en modul för butiksväljare som används på PDP](./media/BOPIS.PNG)
 
 > [!NOTE]
-> I version 10.0.16 och senare kan en ny funktion aktiveras, detta så att en organisation kan definiera flera olika hämtningslägen för kunder.  Om den här funktionen aktiveras kommer butiksväljaren och andra näthandelsmoduler att förbättras så att konsumenten eventuellt kan välja mellan olika leveransalternativ.  Mer information om den här funktionen finns i [den här dokumentationen](./multiple-pickup-modes.md). 
+> I version 10.0.16 och senare kan en ny funktion aktiveras, detta så att en organisation kan definiera flera olika hämtningslägen för kunder.  Om den här funktionen aktiveras kommer butiksväljaren och andra näthandelsmoduler att förbättras så att konsumenten eventuellt kan välja mellan olika leveransalternativ.  Mer information om den här funktionen finns i [den här dokumentationen](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
 
 ## <a name="find-stores-mode"></a>Sök efter butiksläge
 
@@ -92,7 +75,7 @@ Modulen butiksväljare stöder också ett läge för **sök butiker**. Detta lä
 
 I bilden nedan visas ett exempel på en modul i butiksväljaren som används tillsammans med en kartmodul på en butiksplatssida.
 
-![Exempel på en modul för butiksväljare och en kartmodul på sidan för butiksplatser.](./media/ecommerce-Storelocator.PNG)
+![Exempel på en modul för butiksväljare och en kartmodul på sidan lagringsplatser](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>Återge en karta
 
@@ -110,10 +93,6 @@ Modulen butiksväljare kan användas tillsammans med kartmodulen för att visa b
 | Alternativ för automatiska förslag: Max resultat | Antal | Den här egenskapen anger det högsta antalet resultat för automatiska förslag som kan visas via Bing automatiska förslag-API. |
 | Sök radie | Antal | Den här egenskapen definierar sökradien för butiker, i mil. Om inget värde anges används standardsökradien 50 mil. |
 | Användarvillkor | URL |  Den här egenskapen anger den användarvillkor-URL som krävs för att använda Bing Maps-tjänsten. |
-
-## <a name="site-settings"></a>Platsinställningar
-
-Butiksväljarmodulen följer [inställningarna för Lägg till produkt i kundvagnen](add-cart-settings.md). När en artikel har lagts till i kundvagnen från butiksväljarmodulen ser webbplatsanvändarna lämpliga konfigurerade arbetsflöden.
 
 ## <a name="add-a-store-selector-module-to-a-page"></a>Lägg till modulen för butiksväljare till en sida
 
@@ -160,13 +139,10 @@ Om du vill konfigurera modulen för butiksväljaren att visa tillgängliga butik
 
 [Guidad visning av kundvagn och kassa](quick-tour-cart-checkout.md)
 
-[Ställ in leveranssätt](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Ställ in leveranssätt](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 [Hantera Bing-kartor för din organisation](dev-itpro/manage-bing-maps.md)
 
-[Bing Maps REST API:er](/bingmaps/rest-services/)
+[Bing Maps REST API:er](https://docs.microsoft.com/bingmaps/rest-services/)
 
 [Kartmodul](map-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

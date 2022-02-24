@@ -63,6 +63,3 @@ Organisationer kan kräva orsakskoder för specifika tjänstledighetstyper när 
 ### <a name="provide-a-leave-and-absence-transaction-list-for-hr"></a>Ange transaktionslista för ledighet och frånvaro för personalavdelningen
 
 Möjligheten att spåra arbetstiden och förstå hur tiden är beräknad hjälper inte bara HR till att svara på anställdas frågor, utan hjälper också till att säkerställa korrekt beviljande av ledighet för anställda. Personalavdelningen har nu en ny vy i transaktioner (anslag, periodiseringar, justeringar och begäranden) för att se skälen bakom ledighetssaldon.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -52,6 +52,3 @@ Onboard kommer automatiskt att skicka den nyanställde ett e-postmeddelande som 
     ![[Skicka ändringarna i en registreringsmall till alla guider som skapades av den](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
 Ändringarna blir synliga för nyanställda som öppnar integrationsguiderna. Onboard skickar dock inte e-postaviseringar till nyanställda så att de vet att deras integrationsguide har ändrats. För enkel identifiering visas en röd tagg **ny** bredvid varje ändring. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

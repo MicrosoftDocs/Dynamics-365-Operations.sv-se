@@ -2,9 +2,11 @@
 title: Kassering av avyttrade anläggningstillgångar
 description: Ämnet beskriver hur du eliminerar transaktioner för en anläggningstillgång som avsatts som kassation.
 author: moaamer
+manager: Ann Beebe
 ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 90eb791bae2bbe70cf9fe7127a98962305449e1d0b370cfa001afbd3654046ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4dee4468079a9ad500f513900cec090acf6026ce
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752928"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969138"
 ---
 # <a name="dispose-of-a-fixed-asset-as-scrap"></a>Kassering av avyttrade anläggningstillgångar
 
@@ -43,7 +45,7 @@ ms.locfileid: "6752928"
 Innan du avyttrar en anläggningstillgång som kassation måste du skapa redovisningskonton som är kopplade till tillgångens anskaffningsvärde, avskrivning för aktuellt år, avskrivning för föregående år och till gångens NBV. Transaktionstyperna för anläggningstillgången visas på sidan **Bokföringsprofil för anläggningstillgångar**. Gå till **anläggningstillgångar \> inställningar \> bokföringsprofiler för anläggningstillgångar** och på snabbfliken **avyttrande** väljer du **kassation** i fältet ovanför rutnätet. Följande bild visar listan över transaktionstyper för anläggningstillgångar på sidan **bokförings profiler för anläggningstillgångar**.
 
 
-[![Avyttrande av en tillgång som kassation, figur 1.](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
+[![Avyttrande av en tillgång som kassation, figur 1](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
 
 För följande exempel förvärvades en anläggningstillgång 1 januari 2018 och den kommer att kasseras den 31 mars 2019.
 
@@ -58,27 +60,24 @@ Bokfört nettovärde = anskaffningspris – avskrivning
 
 I det här exemplet har anläggningstillgången förvärvats och avskrivits i 15 månader, från 2018 till mars 2019. Därför är tillgångens NBV 9 000,00 USD (24 000,00 USD – 15 000,00 USD).
 
-[![Exempel på avskrivning för anläggningstillgångar.](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
+[![Exempel på avskrivning för anläggningstillgångar](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
 
 
 Om du vill skapa en avskrivningsjournal, gå till **Anläggningstillgångar \> Journalposter \> Journal för anläggningstillgångar** och välj sedan **Rader** i åtgärdsfönstret. Välj **avyttrande – kassation** och välj sedan ett anläggningstillgångs-ID. Ange inte ett värde antingen i fältet **Debet** eller i fältet **Kredit** för att helt avyttra tillgången.
 
-[![Journal för anläggningstillgångar.](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
+[![Journal för anläggningstillgångar](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
 
 Kassationstransaktionen för avyttrande av anläggningstillgångar ändrar fältvärdena i anläggningstillgångens förteckning på följande sätt:
 
 - I avsnittet **saldo** uppdateras fältet **status** till **kasserat**.
 - I avsnittet **Utleverans** är fältet **avyttringsdatum** inställt på det datum då tillgången kasserades.
 
-[![Detaljer om journal för anläggningstillgångar.](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
+[![Detaljer om journal för anläggningstillgångar](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
 
 Följande illustration visar saldot för anläggningstillgångar.
 
-[![Saldo för anläggningstillgångar.](./media/Fixed_asset_Disposal_scrap_scenario_5.png)](./media/Fixed_asset_Disposal_scrap_scenario_5.png)
+[![Saldo för anläggningstillgångar](./media/Fixed_asset_Disposal_scrap_scenario_5.png)](./media/Fixed_asset_Disposal_scrap_scenario_5.png)
 
 Följande illustration visar den verifikation som bokförs.
 
-[![Bokfört nettovärde.](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[![Bokfört nettovärde](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)

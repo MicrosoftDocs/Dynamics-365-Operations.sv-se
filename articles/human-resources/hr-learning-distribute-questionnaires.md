@@ -1,39 +1,37 @@
 ---
-title: Schemalägg och skicka ut enkäter
-description: Den här artikeln beskriver hur du fördelar de enkäter som du utformar så att de blir tillgängliga för den person eller grupp som ska fylla i dem.
-author: twheeloc
-ms.date: 10/28/2021
+title: Skicka ut och schemalägg enkäter
+description: Den här artikeln beskrivs hur du fördelar de enkäter som du utformar så att de blir tillgängliga för personen eller gruppen med personer som ska fylla i dem.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dbb069110b46c38a994a7be6276137360b14397a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0329b80615eed6efcc22bb0b140970988f5c306a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069539"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420651"
 ---
-# <a name="distribute-and-schedule-questionnaires"></a>Schemalägg och skicka ut enkäter
+# <a name="distribute-and-schedule-questionnaires"></a>Skicka ut och schemalägg enkäter
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Den här artikeln beskriver hur du fördelar de enkäter som du utformar så att de blir tillgängliga för den person eller grupp som ska fylla i dem. 
+Den här artikeln beskrivs hur du fördelar de enkäter som du utformar så att de blir tillgängliga för personen eller gruppen med personer som ska fylla i dem. 
 
 Det finns flera sätt att distribuera en enkät:
 
--   Markera enkäten som **Aktiv**. Enkäten är då tillgänglig för alla medarbetare, om inte en enkätgrupp har ställts in för att begränsa åtkomst till den.
+-   Markera enkäten som aktiv. Enkäten är då tillgänglig för alla medarbetare, om inte en enkätgrupp har ställts in för att begränsa åtkomst till den.
 -   Tilldela rättigheter till en enkätgrupp. Enkäten är då tillgänglig för alla medlemmar i den valda gruppen.
 -   Skapa planerade svarsomgångar. Enkäten är då endast tillgänglig för en viss person.
 -   Skapa en tidsplan. Enkäten kan sedan vara tillgänglig för flera personer.
@@ -133,6 +131,3 @@ När du har utformat och har fördelat en enkät kan den besvaras av valda svara
 Enkäter kan göras tillgängliga för vissa användare eller grupper av användare eller för alla användare i ett nätverk.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

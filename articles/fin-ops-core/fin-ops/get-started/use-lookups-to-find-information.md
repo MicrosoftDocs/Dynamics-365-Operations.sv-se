@@ -1,10 +1,12 @@
 ---
 title: Hitta information med hjälp av sökningar
-description: I det här avsnittet lär du dig om sökningsfunktionerna och du får några användbara tips för att få optimal användning av sökningar i systemet.
+description: Många fält har sökningar som hjälper dig att enkelt hitta rätt eller önskat värde. Flera förbättringar har lagts till sökningar för att göra dessa kontroller mer användbara och göra användarna mer produktiva. I det här avsnittet lär du dig om dessa nya sökningsfunktionerna och du får några användbara tips för att få optimal användning av sökningar i systemet.
 author: jasongre
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7135487e5d87564163c643d1315c51231fa66de
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d75e66e8fb9f1a227c9dd15f92ca5db433c0db4a
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069308"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798153"
 ---
 # <a name="find-information-by-using-lookups"></a>Hitta information med hjälp av sökningar
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Många fält har sökningar som hjälper dig att enkelt hitta rätt eller önskat värde. Flera förbättringar har lagts till sökningar för att göra dessa kontroller mer användbara och göra användarna mer produktiva. I det här avsnittet lär du dig om dessa nya sökningsfunktionerna och du får några användbara tips för att få optimal användning av sökningar i systemet.
 
@@ -47,15 +46,15 @@ Tänk dig exempelvis ett sökfält som kallas **Ort**.
 
 Om fokus är i fältet **Ort** kan du börja leta efter orten genom att skriva ett par bokstäver som "kol". Efter du slutat skriva öppnas sökningen automatiskt, filtrerad på de orter som börjar med "kol".
 
-[![typeaheadLookupExample.](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
+[![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
 
 Nu är markören kvar i sökfältet. Om du fortsätter att skriva så att värdet är "kolumn" justeras sökinnehållet automatiskt så att det avspeglar det senaste värdet i kontrollen.
 
-![updateFilterLookupExample.](./media/updatefilterlookupexample.png)
+![updateFilterLookupExample](./media/updatefilterlookupexample.png)
 
 Även om fokus fortfarande är i sökningskontrollen, kan du också använda knapparna **UPPIL** eller **NEDPIL** för att markera den rad som du vill välja. Om du trycker på **Retur** väljs den markerade raden från sökningen och kontrollens värde uppdateras.
 
-![changingSelectionLookup.](./media/changingselectionlookup.png)
+![changingSelectionLookup](./media/changingselectionlookup.png)
 
 ## <a name="typing-in-more-than-ids"></a>Skriva i mer än ett ID-nummer
 
@@ -65,25 +64,22 @@ Beakta till exempel fältet **Kundkonto** när du skapar en försäljningsorder.
 
 Om användaren har börjat att ange ett **konto-ID** i sökningskontrollen kommer den nedrullningsbara menyn att öppnas automatiskt enligt beskrivningen i föregående avsnitt så att användaren ser sökningen enligt nedan.
 
-[![Sammanhangsbaserad sökning när ett kundkonto-ID har angetts.](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
+[![Sammanhangsbaserad sökning när ett kundkonto-ID har angetts](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
 
 Användaren kan emellertid också ange början på ett **kontonamn**. Om detta inträffar kommer användaren att se följande sökning. Observera hur kolumnen **Namn** flyttas till den första kolumnen i sökningen och hur sökningen sorteras och filtreras utifrån kolumnen **Namn**.
 
-[![Sammanhangsbaserad sökning när ett kundnamn har angetts.](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
+[![Sammanhangsbaserad sökning när ett kundnamn har angetts](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
 ## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Med hjälp av rutnätets kolumnrubriker för mer avancerad filtrering och sortering
 
 Sökningsförbättringarna som beskrivs i de föregående punkterna förbättrar avsevärt användarnas möjlighet att navigera raderna i en sökning baserat på en "börjar med"-sökning i fältet **ID** eller **Namn**. Det finns dock situationer då mer avancerad filtrering (eller sortering) behövs för att hitta rätt rad. I sådana fall måste användaren använda alternativen för filtrering och sortering i rutnätets kolumnrubriker i sökningen. Anta exempelvis att en medarbetare registrerar en försäljningsorderrad som behöver hitta rätt "kabel" som produkt. Att skriva "kabel" i kontrollen **artikelnummer** hjälper inte eftersom det inte finns några produktnamn som börjar med "kabel".
 
-![emptyitemlookup.](./media/emptyitemlookup.png)
+![emptyitemlookup](./media/emptyitemlookup.png)
 
 Användaren måste istället radera värdet i sökningskontrollen, öppna den nedrullningsbara sökmenyn och filtrera den nedrullningsbara menyn med hjälp av rutnätets kolumnrubrik som visas nedan. En musanvändare (eller pekskärm) kan bara klicka (eller trycka) på någon kolumnrubrik för att komma åt kolumnens filtrerings- och sorteringsalternativ. För en tangentbordsanvändare behöver användaren bara trycka på **Alt**+**Ned** **pil** en gång för att flytta fokus till listrutan då användaren kan använda flikknappen till korrekt kolumn och trycka på **Ctrl**+**G** för att öppna rutnätets nedrullningsbara kolumnrubrikmeny.
 
-[![gridfilteritemlookup.](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
+[![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
 
 När filtret har använts (se bilden nedan) kan användaren hitta och markera raden som vanligt.
 
-![filtereditemlookup.](./media/filtereditemlookup.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![filtereditemlookup](./media/filtereditemlookup.png)

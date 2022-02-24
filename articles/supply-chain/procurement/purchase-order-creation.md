@@ -1,10 +1,12 @@
 ---
 title: Skapa inköpsorder
 description: Den här artikeln innehåller en beskrivning av processen och alternativen för att skapa en inköpsorder manuellt.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20b8e00316b45126b028b6d9812a455ef0e53f19
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 105d4022e1867f553fcae5e4ae9c0ed7ce4e912d
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575522"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022291"
 ---
 # <a name="create-purchase-orders"></a>Skapa inköpsorder
 
@@ -62,10 +64,10 @@ En inköpsorderrad som används för att returnera en produkt till leverantören
 
 Ibland kanske du vill dela upp kvantiteten du har beställt så att olika delar av den levereras vid olika tidpunkter. Du kan ställa in dessa leveranser med hjälp av åtgärden **Leveransplan** som finns i menyn **Inköpsorderrad** i vyn **Rader**.  
 
-Avgifter kan läggas till på inköpsorderrader automatiskt om automatiska avgifter har ställts in för leverantören eller avgiftsgruppen för leverantören och för artikeln eller avgiftsgruppen för artikeln. Kostnader läggs dock oftast till manuellt på orderradnivå. Om du vill lägga till en avgift kan du öppna sidan **Underhåll avgifter** med hjälp av åtgärden **Underhåll avgifter** i menyn **Finance** i vyn **Rader**. Fördelen med att lägga till avgifter direkt på orderradnivå är att avgiften kan allokeras som en lagerkostnad. Använd debetalternativet **Artikel** för att ställa in avgiftskoder för kontoproduktkostnader. Dessa typer av avgifter ska allokeras från inköpsorderhuvudet till raderna innan ordern kan bekräftas. Du kanske vill allokera tillägg baserat på kvantiteten på varje rad. Avgiftskategorin påverkar även hur avgifter redovisas. Fasta avgifter till exempel anger ett fast belopp och avgifter i procent beräknas som en procentsats av nettobeloppet för orderraden. Inköpsorder kan tilldelas till en last och lasten kan innehålla en uppskattning av den förväntade utgiften för transportkostnader. Du kan allokera den här kostnaden från lasten tillbaka till inköpsorderraderna.
+Avgifter kan läggas till på inköpsorderrader automatiskt om automatiska avgifter har ställts in för leverantören eller avgiftsgruppen för leverantören och för artikeln eller avgiftsgruppen för artikeln. Kostnader läggs dock oftast till manuellt på orderradnivå. Om du vill lägga till en avgift kan du öppna sidan **Underhåll avgifter** med hjälp av åtgärden **Underhåll avgifter** i menyn **Ekonomi** i vyn **Rader**. Fördelen med att lägga till avgifter direkt på orderradnivå är att avgiften kan allokeras som en lagerkostnad. Använd debetalternativet **Artikel** för att ställa in avgiftskoder för kontoproduktkostnader. Dessa typer av avgifter ska allokeras från inköpsorderhuvudet till raderna innan ordern kan bekräftas. Du kanske vill allokera tillägg baserat på kvantiteten på varje rad. Avgiftskategorin påverkar även hur avgifter redovisas. Fasta avgifter till exempel anger ett fast belopp och avgifter i procent beräknas som en procentsats av nettobeloppet för orderraden. Inköpsorder kan tilldelas till en last och lasten kan innehålla en uppskattning av den förväntade utgiften för transportkostnader. Du kan allokera den här kostnaden från lasten tillbaka till inköpsorderraderna.
 
 ## <a name="purchase-order-actions"></a>Inköpsorderåtgärder
-När du har lagt till huvudet och raderna i inköpsordern måste du ofta utföra ytterligare steg innan ordern är klar att bekräftas. Eftersom det finns så många alternativ kan det vara praktiskt att använda [Åtgärdssökning](../../fin-ops-core/fin-ops/get-started/action-search.md) för att hitta relevant menyalternativ.  
+När du har lagt till huvudet och raderna i inköpsordern måste du ofta utföra ytterligare steg innan ordern är klar att bekräftas. Eftersom det finns så många alternativ kan det vara praktiskt att använda [Åtgärdssökning](../../fin-and-ops/get-started/action-search.md) för att hitta relevant menyalternativ.  
 
 Du kan konfigurera produkter på ordern så att de har tilläggsartiklar. Tilläggsartiklar är produkter som måste eller kan köpas tillsammans med andra produkter. Tilläggsprodukter kan läggas till kostnadsfritt som medföljande produkter. Du kan även själv bestämma om du vill lägga till dem i ordern eller inte. Du kan granska tilläggsartiklarna efter att varje orderrad har lagts till. Du kommer dock troligtvis att tycka att det är enklare att granska och lägga till relevanta tilläggsartiklar för alla orderrader med hjälp av sidan **Tilläggsartiklar** som du kan öppna från åtgärdsfönstret.  
 
@@ -80,7 +82,8 @@ Inköpsorder kan konfigureras till att kräva att budgetmedel allokeras till ord
 
 Du kan behöva skjuta upp slutförandet av en inköpsorder. Du kan till exempel behöva ytterligare information om produkter eller tjänster eller så kanske du behöver få utgiften godkänd. Det finns flera sätt att hålla tillbaka en order. Till exempel kan du vänta med att bekräfta ordern. Om ett arbetsflöde för ändringshantering används ska du inte skicka ordern för godkännande. Om du måste blockera alla order för en viss leverantör kan du även markera leverantören som **Spärrad** för bearbetning i leverantörshuvudet. Det finns omständigheter som kan förhindra att ordern bearbetas. Bearbetning kan exempelvis förhindras om kreditgränser har överskridits eller om de budgetmedel som krävs inte är tillgängliga.
 
-## <a name="additional-resources"></a>Ytterligare resurser
+<a name="additional-resources"></a>Ytterligare resurser
+--------
 
 [Översikt av inköpsorder](purchase-order-overview.md)
 
@@ -92,6 +95,3 @@ Du kan behöva skjuta upp slutförandet av en inköpsorder. Du kan till exempel 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

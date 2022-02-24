@@ -1,10 +1,12 @@
 ---
 title: Periodisera abonnemang
 description: Med serviceabonnemang periodiserar du manuellt intäkt i perioderna efter det datum då du fakturerat en avgiftstransaktion.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionGroup
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d17737c415f6204359dae3ea4b2a0cb4ebb5d65
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f6d0d6c25cc8a19f5ebea3477cd2c957876752fd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580490"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966090"
 ---
 # <a name="accruing-subscriptions"></a>Periodisera abonnemang 
 
@@ -41,7 +43,7 @@ Om du krediterar fakturerade abonnemangsbelopp kan du använda två olika metode
 
   - Du kan låta de periodiserade summorna återföras på det datum då kreditfakturan bokförs eller på det ursprungliga bokföringsdatumet för periodiseringen.
 
-Mer information finns i [Abonnemangsparametrar (formulär)](/dynamicsax-2012//subscription-parameters-form).
+Mer information finns i [Abonnemangsparametrar (formulär)](https://technet.microsoft.com/library/aa619615.aspx).
 
 ## <a name="setup-requirements"></a>Installationskrav
 
@@ -65,7 +67,7 @@ För att kunna periodisera intäkter för abonnemang, måste kryssrutan **Period
 
 ## <a name="enable-revenue-accrual-on-a-subscription-group"></a>Aktivera intäktsperiodisering för en abonnemangsgrupp
 
-Klicka på **Servicehantering** \> **Inställning** \> **Serviceabonnemang** \> **Abonnemangsgrupper**.
+1.  Klicka på **Servicehantering** \> **Inställning** \> **Serviceabonnemang** \> **Abonnemangsgrupper**.
 
 ## <a name="periods"></a>Perioder
 
@@ -75,8 +77,8 @@ I följande tabell får du en översikt över vilka periodiseringsperioder du ka
 
 <table>
 <colgroup>
-<col />
-<col />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -139,7 +141,7 @@ Du kan kontrollera antalet redovisningstransaktioner som skapas när du bokför 
 
 1.  Klicka på **Projekthantering och redovisning** \> **Inställningar** \> **Parametrar för projekthantering och redovisning**.
 
-2.  På fliken **Finance** i fältet **Faktura**, välj **Total** eller **Rad**.
+2.  På fliken **Ekonomi** i fältet **Faktura**, välj **Total** eller **Rad**.
 
 
 ## <a name="see-also"></a>Se även
@@ -149,6 +151,3 @@ Du kan kontrollera antalet redovisningstransaktioner som skapas när du bokför 
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,40 +1,41 @@
 ---
 title: Vad är nytt och ändrat i Dynamics 365 Human Resources (3 april 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 3 april 2020.
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0f5f52b2e6bf646f6dd53acfd2928682e84e78fb
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8f5d7ab996e0d27f763cd4c3c51e9a2c923d909b
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063578"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4526796"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-3-2020"></a>Vad är nytt och ändrat i Dynamics 365 Human Resources (3 april 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Dynamics 365 Human Resources. Ändringarna tillämpas på versionsnummer 8.1.3111. Siffror inom parenteser i vissa rubriker refererar till supportnummer i Lifecycle Services (LCS) för referens.
 
 ## <a name="features-that-are-generally-available-the-week-of-april-6"></a>Funktioner som generellt är tillgängliga i veckan för 6 april
 
-- **Funktioner för tjänstledighet och frånvaro** – För mer information, se [Översikt av tjänstledighet och frånvaro](hr-leave-and-absence-overview.md).
+- **Funktioner för tjänstledighet och frånvaro** - För mer information, se [Översikt av tjänstledighet och frånvaro](hr-leave-and-absence-overview.md).
 
-- **Funktioner för förmånshantering** – För mer information, se [Översikt över förmånshantering](hr-benefits-management-overview.md).
+- **Funktioner för förmånshantering** - För mer information, se [Översikt över förmånshantering](hr-benefits-management-overview.md).
 
 ## <a name="human-resources-environment-limits-are-now-based-on-updated-licensing-394595"></a>Miljögränser för personal är nu baserade på uppdaterad licensiering (394595)
 
@@ -63,7 +64,7 @@ Följande entiteter är nu tillgängliga. Om dessa entiteter inte visas i listan
  - Plannivå för tjänstledighet och frånvaro V2
  - Plan för tjänstledighet och frånvaro V2
 
-## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>Dataverse-lösningen finns nu med följande ändringar:
+## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>Common Data Service-lösningen finns nu med följande ändringar:
 
 | beskrivning | Växel |
 | --- | --- |
@@ -75,18 +76,18 @@ Följande entiteter är nu tillgängliga. Om dessa entiteter inte visas i listan
 | Inställningsenheter för ny variabelkompensation | <ul><li>**Typ av variabel kompensationsplan**</li><li>**Variabel kompensationsplan**</li><li>**Överlåtelseregler**</li><li>**Variabel kompensationsplannivå**</li></ul> |
 | Ny enhet för **Arbetarkalender anställning** | <ul><li>**Enheten arbetskalender** tillagd</li></ul> |
 | Ny enhet för **lönepositionsuppgift** | <ul><li>**Lönepositionsuppgift** tillagd</li></ul> |
-| Ny enhet för **Rubrik** | <ul><li>**Rubrik** tillagd</li></ul>Den nya entiteten **Rubrik** är inkluderad i Dataverse men refereras inte från entiteterna **Jobbposition** eller **Jobb** för tillfället. |
+| Ny enhet för **Rubrik** | <ul><li>**Rubrik** tillagd</li></ul>Den nya entiteten **Rubrik** är inkluderad i Common Data Service men refereras inte från entiteterna **Jobbposition** eller **Jobb** för tillfället. |
 
 > [!NOTE]
-> Ekonomiska dimensioner för både befattningar och sysselsättning ger en enkelriktad integration för uppdateringar Personal till Dataverse. Uppdateringar av ekonomiska dimensioner synkroniseras från Dataverse till personal.
+> Ekonomiska dimensioner för både befattningar och sysselsättning ger en enkelriktad integration för uppdateringar Personal till Common Data Service. Uppdateringar av ekonomiska dimensioner synkroniseras från Common Data Service till personal.
 
-Under de närmaste veckorna kommer dessa enhetsändringar att vara tillgängliga i alla miljöer. Så här installerar du den senaste Dataverse-lösningen för personal manuellt:
+Under de närmaste veckorna kommer dessa enhetsändringar att vara tillgängliga i alla miljöer. Så här installerar du den senaste Common Data Service-lösningen för personal manuellt:
 
 1.  Gå till [Power Platform administrationscenter](https://admin.powerplatform.microsoft.com).
 
 2.  Välj **Miljö**.
 
-3.  Leta upp den miljö som du vill uppgradera. Miljön bör motsvara **Miljönamn** i avsnittet **Dataverse-information** i formuläret **Om** i Personal.
+3.  Leta upp den miljö som du vill uppgradera. Miljön bör motsvara **Miljönamn** i avsnittet **Common Data Service-information** i formuläret **Om** i Personal.
 
 4.  Välj miljö om du vill visa information om miljön.
 
@@ -132,9 +133,7 @@ Om förhandsgranska dokument för dokument som lagras i SharePoint inte fungerar
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
-[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Konfigurera leveranssätt och avgifter för kundtjänst
 description: Det här avsnittet beskriver hur du ställer in leveranssätten och avgifter för en kundtjänstorder i Dynamics 365 Commerce.
 author: josaw1
+manager: AnnBe
 ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bce2dac680871e14220d3bb94afacea0a617c707
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748581"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963120"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurera leveranssätt och avgifter för kundtjänst
 
@@ -65,11 +67,11 @@ I avsnittet **rader** kan du definiera en eller flera avgifter med valuta, enlig
 
 Företag konfigurerar ofta skiftindelade avgifter. I detta fall baseras det belopp som kunden ska betala för leveransen på ordervärdet. Om du vill konfigurera skiftindelade avgifter fyller du i fältet **Från belopp** och **Till belopp** förutom att definiera själva avgiften i fältet **Avgiftsvärde**. Exempelvis för order som har ett värde som är mindre än 50 $ debiterar en återförsäljare avgifter på 5,95 $ för markleverans. Order som har ett värde som är lika med eller större än 50 $, men mindre än 100 $, återförsäljaren debiterar 7,95 $. Order som har ett värde som är lika med eller större än 100 $, ger återförsäljaren gratis leverans. Följande bild visar konfigurationen av dessa avgifter.
 
-![Exempel på fasta skiftindelade avgifter.](media/fixedtieredcharges.png)
+![Exempel på fasta skiftindelade avgifter](media/fixedtieredcharges.png)
 
 Du kan använda en blandning av kategorier för avgifter, beroende på företagets behov. Exempelvis för alla order som har ett värde som är mindre än 100 $ finns en fast avgift på 9,95 $ för leverans. För order som har ett värde som är lika med eller överstiger 100 $ beräknas leveransavgifter till 5 procent av värdet för ordern. Följande bild visar konfigurationen av dessa avgifter.
 
-![Exempel på blandade skiftindelade avgifter.](media/mixedtieredcharges.png)
+![Exempel på blandade skiftindelade avgifter](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Använd leveranssätt under orderregistreringen i en kundtjänst
 
@@ -92,6 +94,3 @@ Du kan även länka en expedieringskod till varje leveranssätt som du konfigure
 Exempelvis för order som ska levereras med flyg, nästa dag måste plockning göras på ett lagerställe kl 13 varje dag. I det här fallet kan du skapa en expedieringskod och koden kan länkas till leverans nästa arbetsdagsläge som har konfigurerats i systemet. När lagerstället skapar dess påfyllnadsplockning och lämplig expedieringskod i fältet **expediering** kan användas som ett filter så att plockning utförs endast för order som har de leveranssätt som är kopplade till koden.
 
 Dessutom när en kundtjänstorder anges kan en expedieringskod användas manuellt till försäljningsorderrubriken eller till enskilda försäljningsorderraden. Igen kan koden användas för sorterings- eller rapporteringsändamål. Ibland kan måste en order hanteras försiktigt på grund av ett problem med kundtjänst. Då kan en viss expedieringskod tillämpas på orderrubriken eller rader för att identifiera och prioritera ordern under utförandeprocessen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

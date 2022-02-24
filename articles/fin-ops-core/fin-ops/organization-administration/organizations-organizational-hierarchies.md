@@ -1,28 +1,28 @@
 ---
 title: Organisationer och organisationshierarkier – översikt
-description: Organisationshierarkier representerar relationerna mellan de organisationer som finns i företaget.
+description: En organisation är en grupp personer som arbetar tillsammans för att utföra ett arbete eller uppnå ett mål. Organisationshierarkier representerar relationerna mellan de organisationer som finns i företaget.
 author: sericks007
-ms.date: 01/03/2022
-ms.topic: overview
+manager: AnnBe
+ms.date: 07/25/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
 audience: Application User
 ms.reviewer: sericks
-ms.custom:
-- "17291"
-- intro-internal
+ms.custom: 17291
 ms.assetid: 76b7ca45-93d4-45cc-b191-66ee63afa1fd
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8e8f2c2004582f42c3f464fedf9f3d049b5278f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 368569f2cdd389b6fc99ddcf05f35cc9a750ec9e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7992087"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797056"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Organisationer och organisationshierarkier – översikt
 
@@ -34,7 +34,7 @@ En organisation är en grupp personer som arbetar tillsammans för att utföra e
 
 Du kan definiera följande typer av interna organisationer: juridiska personer, driftenheter och team.
 
-Alla interna organisationer är typer av enheten **Part**. Därför använder dessa organisationer adressboken för att lagra adress – och kontaktinformation. En part, som kan vara antingen en person eller en organisation, kan tillhöra en eller flera adressböcker.
+Alla interna organisationer är typer av enheten **Part**. Därför använder dessa organisationer adressboken för att lagra adress - och kontaktinformation. En part, som kan vara antingen en person eller en organisation, kan tillhöra en eller flera adressböcker.
 
 ### <a name="legal-entities"></a>Juridiska personer
 
@@ -54,7 +54,7 @@ Typerna av driftenheter innehåller kostnadsställen, affärsenheter, värdestr�
 | Affärsenhet       | En halvautonom driftenhet som skapas för att uppfylla strategiska affärsmål. | Används för den ekonomiska rapporteringen som baseras på de branscher eller produktserier som organisationen använder oberoende av juridiska personer. |
 | Värdeström        | En driftenhet som kontrollerar ett eller flera produktionsflöden. | Används vanligtvis i lean manufacturing för att kontrollera de aktiviteter och flöden som krävs för att tillhandahålla en produkt eller tjänst till kunderna. |
 | Avdelning          | En driftenhet som representerar en kategori eller en funktionell del av en organisation som utför en viss uppgift, till exempel försäljning eller redovisning. | Används för att rapportera om funktionsområden. En avdelning kan ha ansvar för vinster och förluster och kan bestå av en grupp av kostnadsställen. |
-| Butikskanal      | En driftenhet som representerar en fysisk butik, en onlinebutik eller en kundtjänst. | Används för hantering och den driftskontrollen av en eller flera butiker inom eller mellan juridiska personer. |
+| Handelskanal      | En driftenhet som representerar en fysisk butik, en onlinebutik eller en onlinemarknadsplats. | Används för hantering och den driftskontrollen av en eller flera butiker inom eller mellan juridiska personer. |
 
 ### <a name="teams"></a>Team
 
@@ -64,19 +64,6 @@ Ett team är en organisation i vilken medlemmarna delar ett gemensamt ansvarsomr
 
 Ställa in organisatoriska hierarkier för att visa och rapportera utifrån olika perspektiv av verksamheten. Du kan till exempel skapa en hierarki av juridiska personer för momsrapportering, juridisk rapportering eller lagstadgad rapportering. Ställa in en hierarki som baseras på driftenheter för att rapportera ekonomisk information som inte krävs enligt lag, men som används för intern kontroll. Du kan till exempel skapa en inköpshierarki för att kontrollera inköpspolicyer, regler och arbetsprocesser.
 
-> [!NOTE]
-> När en driftenhet har lagts till i en hierarki kan den inte tas bort. 
-
 Varje hierarki tilldelas ett syfte. Syftet med en hierarki bestämmer vilka typer av organisationer som kan inkluderas i hierarkin. Syftet avgör också de programscenarier som en hierarki kan användas i.
 
 Organisationer i en hierarki kan dela parametrar, policyer och transaktioner. En organisation kan ärva eller åsidosätta parametrarna för dess överordnade organisation. Delade huvuddata, till exempel produkter och adressböcker, gäller däremot för hela organisationen och kan inte åsidosättas för enskilda organisationer. När du skapar organisationer och hierarkier krävs det noga planering. Mer information om hierarkidesignern finns i [Planera organisationshierarkin](plan-organizational-hierarchy.md).
-
-## <a name="additional-resources"></a>Ytterligare resurser
-- [Planera en organisationshierarki](plan-organizational-hierarchy.md)
-- [Skapa en organisationshierarki](tasks/create-organization-hierarchy.md)
-- [Skapa en juridisk person](tasks/create-legal-entity.md)
-- [Skapa en driftenhet](tasks/create-operating-unit.md)
-
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

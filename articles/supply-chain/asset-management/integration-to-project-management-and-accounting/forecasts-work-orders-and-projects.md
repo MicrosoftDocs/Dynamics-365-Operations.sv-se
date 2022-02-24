@@ -1,10 +1,12 @@
 ---
 title: Prognoser, arbetsorder och projekt
 description: Det här avsnittet innehåller information om prognoser och arbetsorderintegration med modulen Projekthantering och redovisning i Tillgångshantering.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/29/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjCostInfoPart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b53dcf4e8796f808283b7bd5ea92b869ee0e59aac5359d74bcdc5de37ea7352
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f062b5463b54e9bcf32ed6f17263811c4bb24138
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770346"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021044"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Prognoser, arbetsorder och projekt
 
@@ -58,13 +60,13 @@ En del av den här informationen kanske inte finns på en arbetsorder. Därför 
 
 Till exempel i följande illustration på grund av det sätt som tillgångstypen **lastbilsmotor** är inställd på kommer varje arbetsorderjobb som skapas med tillgångstypen **lastbilsmotor** att vara ett delprojekt för projekt ID 000186.
 
-![Figur 1.](media/01-integration-to-pma.png)
+![Figur 1](media/01-integration-to-pma.png)
 
 Syftet med projekt-ID på arbetsorderjobbet och det relaterade aktivitetsnumret är att spåra kostnader som är relaterade till arbetsorderjobbet och tillgången som är vald i modulen **Projekthantering och redovisning**. (Om du vill visa projekt-ID och aktivitetsnummer väljer du **tillgångshantering** > **vanliga** > **arbetsorder** > **alla arbetsorder** och väljer sedan arbetsordern. På snabbfliken **Raddetaljer** visar fältet **Projekt-ID** projekt-ID och fältet **aktivitetsnummer** visar aktivitetsnummer.) Mer information om kostnadskontroll i tillgångs hantering finns [Kostnad- och datumkontroll](../controlling-and-reporting/cost-and-date-control.md).
 
 Följande bild visar en grafisk översikt över arbetsorderprojekt och relaterade projektaktiviteter.
 
-![Figur 2.](media/02-integration-to-pma.png)
+![Figur 2](media/02-integration-to-pma.png)
 
 När ett nytt arbetsorderjobb skapas på en arbetsorder skapas ett arbetsorderprojekt automatiskt för jobbet. De ekonomiska dimensionerna för tillgången relaterad till arbetsorderjobbet överförs automatiskt till arbetsorderprojektet.
 
@@ -86,18 +88,15 @@ För att säkerställa korrekt användning av livscykeltillstånd för arbetsord
 
 Följande bild visar kopplingar mellan projektgrupper i arbetsorder, relaterade projekttyper, projektfaser och livscykeltillstånd för arbetsorder.
 
-![Figur 3.](media/03-integration-to-pma.png)
+![Figur 3](media/03-integration-to-pma.png)
 
-![Figur 4.](media/04-integration-to-pma.png)
+![Figur 4](media/04-integration-to-pma.png)
 
-![Figur 5.](media/05-integration-to-pma.png)
+![Figur 5](media/05-integration-to-pma.png)
 
 För mer information om hur du ställer in arbetsorderprojekt, se [Inställningar av arbetsorderprojekt](../setup-for-work-orders/work-order-project-setup.md). Mer information om hur du skapar livscykeltillstånd för arbetsorder finns i [Livscykeltillstånd för arbetsorder](../setup-for-work-orders/work-order-lifecycle-states.md).
 
 Följande illustration visar en grafisk översikt över de olika projekt som skapas i modulen **tillgångshantering** för att aktivera integrering med modulen **Projekthantering och redovisning**. Det visar även de arbetsprocesser som projekten är relaterade till.
 
-![Figur 6.](media/06-integration-to-pma.png)
+![Figur 6](media/06-integration-to-pma.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

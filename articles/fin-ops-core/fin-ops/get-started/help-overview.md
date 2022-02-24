@@ -1,82 +1,68 @@
 ---
-title: Hjälpsystem (innehåller video)
+title: Hjälpsystem
 description: Det här ämnet innehåller en översikt över hjälpsystemet för Finance and Operations-appar.
 author: edupont04
-ms.date: 07/20/2021
-ms.topic: overview
+manager: AnnBe
+ms.date: 05/11/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom:
-- "16381"
-- intro-internal
+ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd34addc2ffa5e437691cb1e3e8b33246053ccc7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2c84a5f346bae440fb7a0ec6b2c3b813a30e8edd
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070511"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695149"
 ---
 # <a name="help-system"></a>Hjälpsystem
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
 Användare av följande appar kan komma åt sammanhangsberoende hjälp- och annat innehåll baserat på samma hjälpsystem:
 
-- Dynamics 365 Commerce
+- Microsoft Dynamics 365 Commerce
 - Dynamics 365 Finance
 - Dynamics 365 Human Resources
 - Dynamics 365 Supply Chain Management
 
 I samtliga dessa appar kommer du åt produktspecifik hjälp via panelen **Hjälp**.
 
-![Hjälpfönster.](./media/help-pane-ops-help.png)
+![Hjälpfönster](./media/help-pane-ops-help.png)
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjälp om docs.microsoft.com
 
-Webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365](/dynamics365/)) utgör standardkälla för produktdokumentation för tidigare angivna appar. Denna webbplatsen erbjuder följande funktioner:
+Webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365](https://docs.microsoft.com/dynamics365/)) utgör standardkälla för produktdokumentation för tidigare angivna appar. Denna webbplatsen erbjuder följande funktioner:
 
-- **Åtkomst till det senaste innehållet**– Webbplatsen ger Microsoft ett snabbare och mer flexibelt sätt att skapa, leverera och uppdatera produktdokumentation. Du får därmed enkel tillgång till den senaste konstruktionsinformationen.
+- **Åtkomst till det senaste innehållet**– Webbplatsen ger Microsoft ett snabbare och mer flexibelt sätt att skapa, leverera och uppdatera produktdokumentation. Du får därmed enkel tillgång till den senaste tekniska informationen.
 - **Innehåll som har skrivits av experter** – Innehållet på webbplatsen är öppet för bidrag från community-medlemmar både inom och utanför Microsoft.
 
 Du kan söka efter innehåll på docs.microsoft.com med hjälp av valfri sökmotor. För bästa resultat rekommenderar vi att du använder en webbplatssökning, exempelvis **site:docs.microsoft.com dynamics 365 "sökterm"**.
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Få reda på ändringar via en RSS-feed
 
-Att prenumerera på ett RSS -flöde med alla uppdateringar som gjorts av innehållet på docs.microsoft.com i hela Finance and Operations använder du följande länk:
+Om du vill prenumerera på en RSS-feed (Really Simple Syndication) för alla uppdateringar av innehållet på docs.microsoft.com använder du följande länk:
 
-[RSS-feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
-
-> [!NOTE]
-> RSS-flödet returnerar en lista med de 100 avsnitt som senast uppdaterades. Listan sorteras inte efter datum.  
-
-Du kan också abonnera på en RSS-flöde per app:
-
-- [Commerce](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&locale=en-us)  
-- [Finance](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&locale=en-us)  
-- [Human Resources](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
-- [Försörjningskedja](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
-- [Talang](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
+[RSS-feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### <a name="leave-us-feedback"></a>Skicka feedback till oss
 
-Om du har kommentarer eller frågeställningar om ett ämne lämna kommentarer längst ned på sidan.
+Om du har kommentarer eller frågor om ett ämne lämna kommentarer längst ned på sidan.
 
 1. Välj **Feedback** för att komma till kommentarerna längst ned på sidan. Välj sedan antingen **Produktfeedback** eller **Logga in för att ge feedback på dokumentationen**.
 
 2. Skriv dina kommentarer och välj sedan **Skicka in feedback**.
 
-    ![Publicera kommentar.](./media/feedback.png)
+    ![Publicera kommentar](./media/feedback.png)
 
 > [!NOTE]
 > Om du vill skicka in dokumentationsfeedback måste du logga in med ett GitHub-konto. Mer information finns i [Ställa in och hantera din GitHub-profil](https://help.github.com/github/setting-up-and-managing-your-github-profile).
@@ -89,7 +75,7 @@ Du kan delta i och redigera den dokumentation. För att komma igång väljer du 
 
 Videon [Hur du bidrar till dokumentationen för Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) video (som visas ovan) ingår i kanalen Microsoft Dynamics 365 på YouTube.
 
-Mer information finns i [Dokumentguiden för medarbetare](/contribute), som publiceras av teamet som skapade docs.microsoft.com-webbplatsen.
+Mer information finns i [Dokumentguiden för medarbetare](https://docs.microsoft.com/contribute), som publiceras av teamet som skapade docs.microsoft.com-webbplatsen.
 
 > [!NOTE]
 > Vi godkänner endast bidrag till vår engelska hjälpdel just nu.
@@ -100,11 +86,11 @@ Uppgiftsguider är en kontrollerad, guidad, interaktiv upplevelse som leder dig 
 
 Microsoft har släppt uppgiftsguidebibliotek för produktversioner fram till och med Dynamics 365 for Finance and Operations-versionen för december 2017. Avsnittet [Komma åt uppgiftsguider från hjälpfönstret](#accessing-task-guides-from-the-help-pane) för detta ämne förklarar hur du hittar rätt uppgiftsguider för just din produkt.
 
-![Läsvy för uppgiftsguide.](./media/task-guide-ops.png)
+![Läsvy för uppgiftsguide](./media/task-guide-ops.png)
 
 Om du vill starta en guidad, interaktiv upplevelse väljer du **Starta uppgiftsguide** längst ner i fönstret **Hjälp**. En svart pekare visar var du ska börja. Följ instruktionerna som anges i användargränssnittet (UI) och ange data enligt anvisningarna.
 
-![Steginstruktion för uppgiftsguide.](./media/task-guide-step-1-ops.png)
+![Steginstruktion för uppgiftsguide](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT]
 > De data som du anger när du spelar upp en uppgiftsguide är verkliga. Om du arbetar i en produktionsmiljö anges data i företaget som du för närvarande använder.
@@ -117,14 +103,14 @@ Vissa fält har fältbeskrivningar som gör det enklare för användarna att kom
 
 Om du vill öppna hjälpinnehållet väljer du knappen **Hjälp** (**?**) och väljer sedan **Hjälp**. Du kan också trycka på **Ctrl+Shift+?**. I båda fall visas fönstret **Hjälp**. I fönstret **Hjälp** kan du komma åt begreppsmässiga avsnitt eller uppgiftsguider som är relevanta för det område av produkten du befinner dig i.
 
-![Hjälpfönster.](./media/help-pane-ops-help.png)
+![Hjälpfönster](./media/help-pane-ops-help.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Öppna hjälpavsnitt via hjälpfönstret
 
 Via **Hjälp**-fönstret får du åtkomst till ämnen som avser klienten. När du först öppnar **Hjälp**-fönstret visar fliken **Hjälp** de ämnen som gäller den sida du för tillfället befinner dig på. Om inga ämnen hittas kan du ange nyckelord för att begränsa sökningen. När du markerar ett avsnitt i **Hjälp**-fönstret öppnas det på en ny flik i din webbläsare.
 
 > [!IMPORTANT]
-> Det här avsnittet gäller inte för Dynamics 365 Human Resources. Hjälpsystemet för Personal ansluts automatiskt till uppgiftsguider för produkten. Du kan heller inte skapa anpassade uppgiftsguider för Personal.
+> Det här avsnittet gäller inte för Dynamics 365 Human Resources. Hjälpsystemet för Human Resources ansluts automatiskt till uppgiftsguider för produkten. Du kan heller inte skapa anpassade uppgiftsguider för Human Resources.
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Öppna uppgiftsguider i hjälpfönstret
 
@@ -134,13 +120,13 @@ Innan du kan få åtkomst till uppgiftsguider från fönstret **Hjälp** måste 
 > - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
 > - It is not possible to connect to an LCS library from an instance of the app running in a local virtual hard drive (VHD).
 
-![System Parameters form with Help settings.](./media/system-parameters_ops-1024x437.png)
+![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
 
 On the **System parameters** page, follow these steps:
 
 1. **Important:** The first time that you open the Help tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the parameters form.
 
-    ![Connect to LCS.](./media/connect-to-lcs-crop-1024x365.png)
+    ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
 
 2. Select the Lifecycle Services project to connect to.
 3. Select BPM libraries (within the selected project) to retrieve task recordings from.
@@ -148,7 +134,7 @@ On the **System parameters** page, follow these steps:
 
 När en systemadministratör har slutfört dessa steg kan du öppna fönstret **Hjälp** och välja fliken **Uppgiftsguider**. Du får nu se de uppgiftsguider som gäller för sidan du för närvarande befinner dig på. Om inga uppgiftsguider hittas kan du ange nyckelord för att begränsa sökningen. När du har valt en uppgiftsguide i fönstret **Hjälp** visar fönstret **Hjälp** stegvisa instruktioner, och du kan också spela upp uppgiftsguiden.
 
-![Läsvy för uppgiftsguide.](./media/task-guide-ops.png)
+![Läsvy för uppgiftsguide](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Var finns de översatta uppgiftsguiderna för Microsoft-bibliotek?
 
@@ -171,14 +157,10 @@ I följande register visas våra webbplatser. Webbplatser som har en asterisk (\
 | Site | beskrivning |
 |------|-------------|
 | [Docs.microsoft.com](/dynamics365/) | Denna webbplats är värd för eller länkar till all produktdokumentation för Dynamics 365. |
-| [Microsoft Learn](/learn/) | Den här webbplatsen är den kostnadsfria Microsoft eLearning-webbplatsen. |
+| [Microsoft Learn](https://docs.microsoft.com/learn/) | Den här webbplatsen är den kostnadsfria Microsoft eLearning-webbplatsen. |
 | [Microsoft DynamicsLifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Denna webbplats ger en molnbaserad samarbetsarbetsyta som kunder och deras partners kan använda för att hantera projekt från förförsäljning till genomförande och drift. Den är användbar för alla implementeringsfaser. |
 | [Supportblogg](https://aka.ms/AXSupportBlog) | Denna webbplats ger tips som har lagts in av supportteamet. |
 | [Docs.microsoft.com/tidigare versioner](/previous-versions/dynamics/) | Denna webbplats är värd för innehåll från tidigare versioner. |
 | [Dynamics Community](https://community.dynamics.com/) | Denna webbplats är värd för bloggar, forum och videor. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Denna webbplats ger information om utvärdering och försäljning. |
-
-
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+| [CustomerSource](https://mbs.microsoft.com/customersource/)\* | Denna webbplats är värd för utbildningsresurser, nedladdningsbara rapporter och dokument, och är den primära supportsidan för serviceplaninnehavare. Åtkomst till vissa resurser kan kräva en serviceplan. |

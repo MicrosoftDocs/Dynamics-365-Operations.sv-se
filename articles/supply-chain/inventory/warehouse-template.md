@@ -1,10 +1,12 @@
 ---
 title: Konfigurera ett lagerställe med hjälp av en konfigurationsmall
 description: Det här avsnittet innehåller information om hur du konfigurera ett lagerställe med hjälp av en konfigurationsmall.
-author: yufeihuang
+author: perlynne
+manager: tfehr
 ms.date: 11/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
@@ -13,21 +15,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 6698d615826a1555426824bb76db654fde539360
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d533eed984c188c5b6520232f2b875bddd1f57bf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571099"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967140"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Konfigurera ett lagerställe med hjälp av en konfigurationsmall
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller information om hur du konfigurera ett lagerställe med hjälp av en konfigurationsmall. Det finns flera fördefinierade konfigurationsmallar som du kan använda. Information om hur du använder dessa mallar finns i [Konfigurationsdatamallar](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
+Det här avsnittet innehåller information om hur du konfigurera ett lagerställe med hjälp av en konfigurationsmall. Det finns flera fördefinierade konfigurationsmallar som du kan använda. Information om hur du använder dessa mallar finns i [Konfigurationsdatamallar](../../dev-itpro/data-entities/configuration-data-templates.md).
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>Scenarier där konfigurationsmallar kan vara till hjälp
 
@@ -70,7 +72,7 @@ För det här scenariot existerar redan konfigurationsinställningarna för ett 
 7. Välj **+ Lägg till mall** och hitta **400 - Lagerstyrningssystem** standardmall för lagerstället. Den här mallen lägger till datatabeller för lagerkonfiguration.
 
     > [!NOTE]
-    > Om den data du vill exportera måste filtreras (om du till exempel vill exportera data som hör till ett visst lagerställe), måste du utvärdera varje datatabell och lägga till filtrering via en frågeställning. Alternativt kan du exportera alla data och ta bort de poster som inte krävs i målfilerna.
+    > Om den data du vill exportera måste filtreras (om du till exempel vill exportera data som hör till ett visst lagerställe), måste du utvärdera varje datatabell och lägga till filtrering via en fråga. Alternativt kan du exportera alla data och ta bort de poster som inte krävs i målfilerna.
 
 8. Välj **Exportera**. Data som är relaterad till alla datatabellerna i projektet exporteras.
 
@@ -88,13 +90,10 @@ Du kan hämta en zip-fil för datapaketet. Den här filen innehåller alla data 
 4. Välj **+ Lägg till fil** och överför zip-filen för datapaketet.
 5. Välj **Importera**. I vyn **utökat** kan du använda alternativet **Filter** för att snabbt få en översikt över problem som kan uppstå under importen.
 
-Loggen **Visa körning** ger detaljerad information om varje dataenhet som importeras. Du kan använda mellanlagringsdatavyn för att snabbt komma till måldata. På så sätt visas hur de importerade data ser ut på tillhörande sidor i programmet. När du använder standarddatamallar fungerar importsekvensen för varje datatabell på fördefinierade sätt, för att garantera att alla beroende data importeras först. Om anpassade datatabeller ingår i projektet, måste du kontrollera att du angett rätt sekvens. Mer information finns i [Konfigurationsdatamallar](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
+Loggen **Visa körning** ger detaljerad information om varje dataenhet som importeras. Du kan använda mellanlagringsdatavyn för att snabbt komma till måldata. På så sätt visas hur de importerade data ser ut på tillhörande sidor i programmet. När du använder standarddatamallar fungerar importsekvensen för varje datatabell på fördefinierade sätt, för att garantera att alla beroende data importeras först. Om anpassade datatabeller ingår i projektet, måste du kontrollera att du angett rätt sekvens. Mer information finns i [Konfigurationsdatamallar](../../dev-itpro/data-entities/configuration-data-templates.md).
 
 Om du vill veta mer om hur du använder lagermallar för att kopiera konfigurationen för ett lagerställe från ett företag till ett nytt företag inom samma instans kan du titta på den här 3-minuters videon på YouTube: [Använd lagermall för att kopiera konfigurationen i Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-topic"></a>Relaterat ämne
 
-[Konfigurationsdatamallar](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Konfigurationsdatamallar](../../dev-itpro/data-entities/configuration-data-templates.md)

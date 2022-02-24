@@ -1,10 +1,12 @@
 ---
 title: ER Skapa en konfiguration för rapportgenerering i OPENXML-format (november 2016)
-description: I det här avsnittet beskrivs hur du skapar en ny konfiguration av elektronisk rapportering som innehåller en mall för att generera elektroniska dokument i OPENXML-format.
+description: I detta avsnitt beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en ny konfiguration för Elektronisk rapportering (ER) som innehåller en mall för att skapa elektroniska betalningsdokument i OPENXML-format.
 author: NickSelin
-ms.date: 04/23/2021
+manager: AnnBe
+ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport,  ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERDataSourceAddDropDialog, ERModelGroupByFunctionEditor, VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c3dfe6ce9c918b5fccbd7097096fa359facdf41bbf6fd0fab6c61153171484cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf909efbac5dce8e22d9713ad2e694ce624ffeb0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753038"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681911"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER Skapa en konfiguration för rapportgenerering i OPENXML-format (november 2016)
 
@@ -28,7 +30,7 @@ I detta avsnitt beskrivs hur en användare som har rollen Systemadministratör e
 
 I det här exemplet ska du skapa en konfigurering för bildpunktföretaget, Litware, Inc. Dessa steg kan utföras i GBSI-företag.
 
-För att slutföra dessa steg måste du först slutföra stegen i proceduren "Create a configuration provider and mark it as active”. Du måste även ha en Excel-fil som ska importeras, när du skapar mallen. Den här filen kan nås från [Mall för betalningsrapport](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx).
+För att slutföra dessa steg måste du först slutföra stegen i proceduren "Create a configuration provider and mark it as active”. Du måste även ha en Excel-fil som ska importeras, när du skapar mallen. Den här filen kan nås från [Mall för betalningsrapport](https://go.microsoft.com/fwlink/?linkid=862266).
 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Överför konfigurationen för betalningdatamodellen
@@ -148,6 +150,3 @@ För att slutföra dessa steg måste du först slutföra stegen i proceduren "Cr
 17. Skriv `GBSI OPER` i fältet **Bankkonto**.
 18. Välj **OK** och välj sedan **OK** igen. Granska det skapade kalkylbladet, inklusive information om betalningsrader samt summan för varje valutakod som används i detta betalningmeddelande.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

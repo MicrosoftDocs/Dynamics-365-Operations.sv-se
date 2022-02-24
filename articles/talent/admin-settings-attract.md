@@ -69,6 +69,3 @@ Du kan också konfigurera alternativ som är relaterade till kandidatens erfaren
 Du kan också ställa in och tillämpa utgångsdatum för erbjudanden. Om du ställer in alternativet **Kräv ett förfallodatum för alla erbjudanden** till **Ja**, kommer erbjudandet att upphöra att gälla efter det antal timmar eller dagar som du anger.
 
 Mer information om hantering av erbjudandet finns i [Ställ in erbjudandehantering](./offer-setup.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

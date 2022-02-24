@@ -115,6 +115,3 @@ Följande entiteter kommer att aktiveras för anpassade fält i Common Data Serv
 - **Tjänstledighetstyp**
 - **Bankkonto för arbetare**
 - **Arbetskalender**
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

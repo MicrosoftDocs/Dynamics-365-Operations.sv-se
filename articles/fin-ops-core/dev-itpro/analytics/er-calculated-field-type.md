@@ -2,9 +2,11 @@
 title: Stödparameteranrop till ER-datakällor för typen beräknat fält
 description: Det här avsnittet innehåller information om hur du använder typen beräknat fält för ER-datakällor.
 author: NickSelin
+manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fbe06f2f4f0b9e738f27e87ae3ed5d10998ce949b854d088520837cef3ed9a9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f21b323ddbf653bf8ca8dd1f879a6bdbddcdefc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740369"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681266"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Stödparameteranrop till ER-datakällor för typen beräknat fält
 
@@ -86,7 +88,7 @@ I det här exemplet skapar du en konfiguration för exempelföretaget, Litware, 
 
     Modellmappningen i den här konfigurationen implementerar basdatamodellen för alla ER-format som skapas för den här modellen och körs i Finance and Operations. Detta innebär att innehållet i datakällorna **Moms** och **Gr** visas för ER-format, t.ex. abstrakta datakällor.
 
-    ![Sidan Modellmappningsdesigner med datakällorna Moms och Gr.](media/er-calculated-field-type-01.png)
+    ![Sidan modellmappningsdesigner med datakällorna Moms och Gr](media/er-calculated-field-type-01.png)
 
 5.  Stäng sidan **modellmappningsdesigner**.
 6.  Stäng sidan **modellmappning**.
@@ -101,21 +103,21 @@ I det här exemplet skapar du en konfiguration för exempelföretaget, Litware, 
     - Lägga fram följande beskattningsnivåer i momsrapporten: vanlig, reducerad och ingen.
     - Presentera flera detaljer för varje beskattningsnivå, med olika antal detaljer på varje nivå.
 
-    ![Sidan Formatdesigner.](media/er-calculated-field-type-02.png)
+    ![Formatdesignersida](media/er-calculated-field-type-02.png)
 
 4. Välj **mappning**.
 5. Expandera artiklarna **Modell**, **Data** och **Sammanfattning**. 
 
     Den beräknade fältet **Model.Data.Summary.Level** innehåller det uttryck som returnerar koden för beskattningsnivån (**normal**, **reducerad**, **ingen,** eller **annan**) som ett textvärde för alla momskoder som kan hämtas från datakällan **Model.Data.Summary** vid körningstillfället.
 
-    ![Sidan Formatdesigner med information om datamodellen Modell för att lära sig parameteranrop.](media/er-calculated-field-type-03.png)
+    ![Sidan Formatera designer med information om datamodellen Modell för att lära sig parameteranrop](media/er-calculated-field-type-03.png)
 
 6. Expandera **Modell**. **Data2**-objektet.
 7. Expandera **Modell**. **Data2.Summary2**-objektet.
    
     Datakällan **Modell**.**Data2.Summary2** har konfigurerats för att gruppera datakällan **Model.Data.Summary**  transaktionsdetaljer per beskattningsnivå (returneras av **Model.Data.Summary.Level** beräknat fält) och beräkna aggregeringar.
 
-    ![Sidan Formatdesigner med information om datakällan Model.Data2.Summary2.](media/er-calculated-field-type-04.png)
+    ![Sidan Formatera designer med information om datakällan Model.Data2.Summary2 data source](media/er-calculated-field-type-04.png)
 
 8. Granska beräknade fält **Modell**.**Data2.Level1**, **Modell**.**Data2.Level2** och **Modell**.**Data2.Level3.** De här beräknade fälten används för att filtrera **Modell**. **Data2. Summary2**-postlista och returnerar endast poster som representerar en viss beskattningsnivå.
 9. Stäng sidan **Formatdesigner**.
@@ -155,7 +157,7 @@ Du kan förbättra det angivna formatet genom att lägga till ett beräknat fäl
 
     Det maximala antalet parametrar som kan anges för ett enskilt beräknat fält är 8.
 
-    ![Lista över parameterdatakällor.](media/er-calculated-field-type-05.png)
+    ![Lista över parameterdatakällor](media/er-calculated-field-type-05.png)
 
 5. Välj **OK**.
 
@@ -165,7 +167,7 @@ Genom att lägga till den här parametern anger du det villkor som måste finnas
 
    Den konfigurerade parametern finns i listan över datakällor för det här beräknade fältet. Du kan lägga till parametern i det konfigurerade uttrycket genom att välja **Lägg till datakälla**.
 
-   ![Datakällfält.](media/er-calculated-field-type-06.png)
+   ![Datakällfält](media/er-calculated-field-type-06.png)
 
 ### <a name="define-an-expression-for-adding-a-calculated-field"></a>Definiera ett uttryck för att lägga till ett beräknat fält
 
@@ -181,7 +183,7 @@ Genom att lägga till den här parametern anger du det villkor som måste finnas
 
 5. Välj **Spara**.
 
-    ![Fältinformation för datakälla.](media/er-calculated-field-type-07.png)
+    ![Information om datakälla](media/er-calculated-field-type-07.png)
 
 6. Stäng sidan **Formeldesigner**.
 
@@ -191,9 +193,9 @@ Genom att lägga till den här parametern anger du det villkor som måste finnas
 
 På sidan **formatdesigner** kräver det konfigurerade parametriserade beräknade fältet **nivåer** argumentet **sträng**.
 
-![Utökad lista över beräknade fältnivåer.](media/er-calculated-field-type-08.png)
+![Utökad lista över beräknade fältnivåer](media/er-calculated-field-type-08.png)
 
-### <a name="use-the-configured-calculated-field-for-binding-format-elements&quot;></a>Använd det konfigurerade beräknade fältet för bindningsformatelement
+### <a name="use-the-configured-calculated-field-for-binding-format-elements"></a>Använd det konfigurerade beräknade fältet för bindningsformatelement
 
 1. Välj **Model.Data2.Levels** för att välja det konfigurerade beräknade fältet.
 2. Välj formatelementet **Statement.Taxation.Regular**.
@@ -214,18 +216,18 @@ På sidan **formatdesigner** kräver det konfigurerade parametriserade beräknad
 9. Välj **bind**.
 10. Välj **ja** om du vill ersätta den för tillfället använda datakällan, **level3**, med den nya datakällan, **nivåer** i alla kapslade formatelement under det valda formatelementet.
 
-   Om du anger argumentet för det parametriserade beräknade fältet för XML-elementet som representerar beskattningsnivån (t.ex. **Model.Data2.Levels(&quot;Reduced")** som ett textvärde), behöver du inte göra samma sak för kapslade XML-attribut, dvs. bindningar ärver automatiskt värdet för argumentet som definieras på den överordnade nivån (**Model.Data2.Levels.aggregated.Base**, inte **Model.Data2.Levels("Reduced").aggregated.Base**).
+   Om du anger argumentet för det parametriserade beräknade fältet för XML-elementet som representerar beskattningsnivån (t.ex. **Model.Data2.Levels("Reduced")** som ett textvärde), behöver du inte göra samma sak för kapslade XML-attribut, dvs. bindningar ärver automatiskt värdet för argumentet som definieras på den överordnade nivån (**Model.Data2.Levels.aggregated.Base**, inte **Model.Data2.Levels("Reduced").aggregated.Base**).
 
 Återkommande anrop av valfritt parametriserat beräknat fält stöds inte.
 
 Du kan välja **Redigera formel** och ändra det argument som används som standard det parametiserade beräknade fältet i den valda bindningen. Om detta argument saknas kan det orsaka fel under körningen och användarna informeras om en sådan situation när det aktuella formatet valideras.
 
-![Varningsmeddelande för validering.](media/er-calculated-field-type-10.png)
+![Varningsmeddelande för validering](media/er-calculated-field-type-10.png)
 
-## <a name="configure-a-parameterized-calculated-field-to-return-a-record&quot;></a>Konfigurera ett parameter beräknat fält som returnera en post
+## <a name="configure-a-parameterized-calculated-field-to-return-a-record"></a>Konfigurera ett parameter beräknat fält som returnera en post
 När ett parametiserat beräknat fält returnerar en post måste du stödja bindningar av enskilda fält i den här posten för att kunna formatera element. I sådana fall kommer det inte att finnas någon överordnad bindning som innehåller värdet för ett argument för anrop av ett parameteriserat beräknat fält, det här värdet måste definieras i bindningen av en enskild posts fält.
 
-### <a name=&quot;start-adding-a-new-calculated-field&quot;></a>Börja lägga till ett nytt beräknat fält
+### <a name="start-adding-a-new-calculated-field"></a>Börja lägga till ett nytt beräknat fält
 
 1. Välj objektet **Model.Data2**.
 2. Markera **Lägg till**.
@@ -233,7 +235,7 @@ När ett parametiserat beräknat fält returnerar en post måste du stödja bind
 4. Skriv **Dokument** i fältet **LevelRecord**.
 5. Välj **Redigera recept**.
 
-### <a name=&quot;define-a-parameter-for-adding-a-calculated-field&quot;></a>Definiera en parameter för att lägga till ett beräknat fält
+### <a name="define-a-parameter-for-adding-a-calculated-field"></a>Definiera en parameter för att lägga till ett beräknat fält
 
 1. Välj **parametrar**.
 2. Välj **Ny**.
@@ -241,7 +243,7 @@ När ett parametiserat beräknat fält returnerar en post måste du stödja bind
 4. Välj **Typ** i fältet **Artikeltyp**.
 5. Välj **OK**.
 
-### <a name=&quot;define-an-expression-for-adding-a-calculated-field&quot;></a>Definiera ett uttryck för att lägga till ett beräknat fält
+### <a name="define-an-expression-for-adding-a-calculated-field"></a>Definiera ett uttryck för att lägga till ett beräknat fält
 
 1. I fältet **formel** anger du följande:  
     
@@ -249,7 +251,7 @@ När ett parametiserat beräknat fält returnerar en post måste du stödja bind
 
 2. Välj parametern **skattenivå**.
 3. Välj **Lägg till datakälla**.
-4. I fältet **formel** lägger du till **&quot;momsnivå"))** till det som du angav i steg 1 för att färdigställa uttrycket till:  
+4. I fältet **formel** lägger du till **"momsnivå"))** till det som du angav i steg 1 för att färdigställa uttrycket till:  
     
     **FIRSTORNULL(\@.Levels('Taxation Level'))**
 
@@ -272,7 +274,7 @@ När ett parametiserat beräknat fält returnerar en post måste du stödja bind
 8. Välj **Redigera recept**.
 9. Ändra uttrycket till **Model.Data2.LevelRecord("None").aggregated.Base**.
 
-![Uppdaterat uttryck.](media/er-calculated-field-type-11.png)
+![Uppdaterat uttryck](media/er-calculated-field-type-11.png)
 
 ## <a name="remove-calculated-fields-that-are-not-used"></a>Ta bort beräknade fält som inte används
 
@@ -340,6 +342,3 @@ Du kan importera granskade konfigurationer från RCS med hjälp av ER-databasen 
 - [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)
 - [Förbättra prestanda för ER-lösningar genom att lägga till parametriserade datakällor för BERÄKNADE FÄLT](er-calculated-field-ds-performance.md)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

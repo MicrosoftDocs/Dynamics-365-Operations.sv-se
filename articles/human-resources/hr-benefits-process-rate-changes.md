@@ -1,35 +1,33 @@
 ---
-title: Bearbeta ändringar av sats
-description: I detta ämne förklaras hur du bearbetar ändringar av förmånspriset i Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/23/2021
+title: Behandla prisändringar
+description: Bearbeta förmånens prisändringar i Microsoft Dynamics 365 Human Resources när en ny eller befintlig förmånsplan har en ändring i inställningarna för berättiganderegler.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitRate, BenefitEligibilityProcessResultViewer
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5e0dfbdde8ee950a0341fffb1e268fff05434953
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: da42ef6ea91b95903316e35b551b222b8ff3b946
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070385"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420564"
 ---
-# <a name="process-rate-changes"></a>Bearbeta ändringar av sats
+# <a name="process-rate-changes"></a>Behandla prisändringar
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Detta ämne förkalrar hur du bearbetar ändringar i förmånspris i Microsoft Dynamics 365 Human Resources när en ny eller befintlig förmånsplan får en ändring i inställningarna för berättiganderegler. Om en ny berättiganderegel skapas och tilldelas till planen uppmanas systemet att köra om medarbetarens berättigande för att kontrollera om medarbetaren kan bli berättigade till planen baserat på nya berättigandealternativ. 
+Bearbeta förmånens prisändringar i Microsoft Dynamics 365 Human Resources när en ny eller befintlig förmånsplan har en ändring i inställningarna för berättiganderegler. Om en ny berättiganderegel skapas och tilldelas till planen uppmanas systemet att köra om arbetarens berättigande för att kontrollera om medarbetaren kan bli berättigade till planen baserat på nya berättigandealternativ. 
 
 1. I arbetsytan **Förmånshantering** under **bearbetar**, välj **bearbeta uppdateringar i prisändringar**.
 
@@ -50,6 +48,3 @@ Detta ämne förkalrar hur du bearbetar ändringar i förmånspris i Microsoft D
    4. Välj **OK**. Processen kommer att köras med de parametrar du angett.
 
 4. Välj **OK**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

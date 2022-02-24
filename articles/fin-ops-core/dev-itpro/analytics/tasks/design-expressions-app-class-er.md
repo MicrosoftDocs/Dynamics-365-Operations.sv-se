@@ -1,10 +1,12 @@
 ---
 title: Skapa ER-uttryck för att anropa programklassmetoder
-description: Det här ämnet beskriver hur du återanvänder befintlig programlogik i konfigurationer för elektronisk rapportering genom att anropa metoder för programklasser i ER-uttryck.
+description: Denna guide ger information om hur du återanvänder befintlig programlogik i konfigurationer för elektronisk rapportering (ER) genom att anropa metoder för programklasser i ER-uttryck.
 author: NickSelin
-ms.date: 11/02/2021
+manager: AnnBe
+ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,180 +14,146 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 81fae8d3603677afd7dd4b09b9073805f73582b4
-ms.sourcegitcommit: e6b4844a71fbb9faa826852196197c65c5a0396f
+ms.openlocfilehash: 3d79d1a4e86731a62de4896a489a13f624ce159f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7751716"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682031"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Skapa ER-uttryck för att anropa programklassmetoder
 
 [!include [banner](../../includes/banner.md)]
 
-Detta ämne beskriver hur du återanvänder befintlig programlogik i konfigurationer för [elektronisk rapportering (ER)](../general-electronic-reporting.md) genom att anropa erforderliga metoder för programklasser i ER-uttryck. Värden på argument för att anropa klasser kan definieras dynamiskt vid körning. Värden kan till exempel baseras på information i parsingdokumentet för att säkerställa att detta är korrekt.
+Denna guide ger information om hur du återanvänder befintlig programlogik i konfigurationer för elektronisk rapportering (ER) genom att anropa metoder för programklasser i ER-uttryck. Argument för att anropa klasser kan definieras dynamiskt vid körning: exempelvis utifrån information i parsningdokumentet för att säkerställa att de är korrekta. I den här handboken skapas de ER-konfigurationer som krävs för exempelföretaget Litware, Inc. Proceduren är till för användare med rollen systemadministratör eller utvecklare av elektronisk rapportering. 
 
-För exemplet i detta ämne ska du utforma en process som parsar inkommande bankutdrag för en uppdatering av programdata. Du erhåller inkommande bankutdrag som textfiler (.txt) som innehåller IBAN-koder (International Bank Account Number). Som en del av processen för import av bankutdrag måste du bekräfta riktigheten i IBAN-koden med hjälp av befintlig logik.
+Stegen kan utföras med hjälp av valfri datauppsättning. Måste du också hämta och spara följande fil lokalt: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
 
-## <a name="prerequisites"></a>Förutsättningar
+För att slutföra dessa steg måste du först slutföra stegen i proceduren "ER Skapa en konfigurationsleverantör och markera den som aktiv”.
 
-Procedurerna i detta ämne är avsedda för användare som har tilldelats rollen som **Systemadministratör** eller **Elektronisk rapporteringsutvecklare**.
-
-Procedurerna kan slutföras med hjälp av valfri datauppsättning.
-
-Om du vill slutföra dem måste du ladda ned och spara följande fil: [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
-
-I detta ämne ska du skapa erforderliga ER-konfigurationer för exempelföretaget Litware, Inc. Innan du slutför procedurerna i detta ämne måste du därför följa dessa steg.
-
-1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
-2. På sidan **Lokaliseringskonfigurationer** bekräftar du att konfigurationsleverantören för exempelföretaget **Litware, Inc.** är tillgängligt och har markerats som aktivt. Om du inte kan se denna konfigurationsleverantör måste du först slutföra stegen i [Skapa konfigurationsleverantörer och markera dem som aktiva](er-configuration-provider-mark-it-active-2016-11.md).
+1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
+    * Kontrollera att konfigurationsleverantören för provföretaget Litware, Inc. är markerad som aktiv och tillgänglig. Om du inte ser den här konfigurationsleverantören måste du först slutföra stegen i proceduren "Skapa en konfigurationsleverantör och välj den som aktiv”.   
+    * Du du skapar en process för att parsa inkommande bankutdrag för en uppdatering av programdata. Inkommande bankutdrag visas som TXT-filer som innehåller IBAN koder. Som en del av bankutdragets importprocess behöver du kontrollera riktigheten i dessa IBAN-koder med logik som finns.   
 
 ## <a name="import-a-new-er-model-configuration"></a>Importera en ny konfiguration för ER-modell
-
-1. På sidan **Lokaliseringskonfigurationer**, i avsnittet **Konfigurationsleverantörer**, väljer du fönstret för konfigurationsleverantören **Microsoft**.
-2. Välj **Databaser**.
-3. På sidan **Lokaliseringsdatabaser** väljer du **Visa filter**.
-4. Om du vill välja den globala databasposten lägger du till ett filterfält för **Namn**.
-5. I fältet **Namn** anger du **Global**. Markera sedan filteroperatorn **innehåller**.
-6. Välj **Tillämpa**.
-7. Välj **[Öppna](../er-download-configurations-global-repo.md#open-configurations-repository)** för att granska listan över ER-konfigurationer i vald databas.
-8. På sidan **Konfigurationsdatabas** i konfigurationsträdet väljer du **Betalningsmodell**.
-9. I snabbfliken **Versioner**, om knappen **Importera** är tillgänglig, väljer du den och sedan **Ja**.
-
-    Om knappen **Importera** inte är tillgänglig har du redan importerat vald version av ER-konfigurationen för **Betalningsmodell**.
-
-10. Stäng sidan **Konfigurationsdatabas** och stäng sedan ner sidan **Lokaliseringsdatabaser**.
+1. Hitta och markera önskad post i listan.
+    * Välj panelen Microsoft provider.  
+2. Klicka på Databaser.
+3. Klicka på Visa filter.
+4. Lägg till ett filterfält "Typnamn". I fältet Namn anger du värdet "resurser", välj filtreringsoperatören "innehåller" och klickar sedan på Tillämpa.
+5. Klicka på Öppna.
+6. Välj "Betalningsmodell" i trädet.
+    * Om knappen Importera på snabbfliken Versioner inte aktiveras har du redan importerat version 1 i någon av ER-konfigurationen ”betalningsmodell". Du kan hoppa över resten av stegen i den här underaktivitet.   
+7. Klicka på Importera.
+8. Klicka på Ja.
+9. Stäng sidan.
+10. Stäng sidan.
 
 ## <a name="add-a-new-er-format-configuration"></a>Lägg till en ny konfiguration för ER-format
+1. Klicka på Reporting configurations.
+    * Lägg till ett nytt ER-format som du vill dela upp inkommande bankutdrag i TXT-format.  
+2. Välj "Betalningsmodell" i trädet.
+3. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
+4. Ange "Format som baseras på datamodellen PaymentModel" i fältet Ny.
+5. I namnfältet anger du "bankutdragsformat för import" (exempel)
+    * Importformat för bankutdrag (exempel)  
+6. Välj Ja i fältet Stöder dataimport.
+7. Klicka på Skapa konfiguration.
 
-Lägg till ett nytt ER-format som du vill dela upp inkommande bankutdrag i TXT-format.
+## <a name="design-the-er-format-configuration---format"></a>Designa en konfiguration för ER-format
+1. Klicka på Designer.
+    * Det utformade formatet representerar den externa filens förväntade struktur i TXT-format.  
+2. Klicka på Lägg till rot för att öppna dialogrutan.
+3. Välj "Text\Sequence" i trädet.
+4. Ange "Root" i namnfältet.
+    * Rot  
+5. Välj "New line - Windows (CR LF)" i fältet för specialtecken.
+    * Alternativet "Ny rad – Windows (CR LF)" har valts i fältet för specialtecken. Utifrån den här inställningen beaktas varje rad i parsingfilen som en separat post.  
+6. Klicka på OK.
+7. Klicka på Lägg till för att öppna dialogrutan.
+8. Välj "Text\Sequence" i trädet.
+9. Skriv "Rader" i fältet Namn.
+    * Rader  
+10. Välj Ett många i fältet Sammansatt.
+    * Alternativet ”Ett många” har valts i fältet "Sammansatt". Baserat på denna inställning förväntas att minst en rad presenteras i parsningfilen.  
+11. Klicka på OK.
+12. Välj "Root\Rows" i trädet.
+13. Klicka på Lägg till sekvens.
+14. Skriv "Fält" i fältet Namn.
+    * Fält  
+15. Välj Exakt ett i fältet Sammansatt.
+16. Klicka på OK.
+17. Markera "Root\Rows\Fields" i trädet.
+18. Klicka på Lägg till för att öppna dialogrutan.
+19. Välj "Text\Sträng" i trädet.
+20. Skriv "IBAN" i fältet Namn.
+    * IBAN  
+21. Klicka på OK.
+    * Den har konfigurerats att varje rad i parsningfilen innehåller den enda IBAN-koden.  
+22. Klicka på Spara.
 
-1. På sidan **Lokaliseringskonfigurationer** väljer du fönstret **Rapporteringskonfigurationer**.
-2. På sidan **Konfigurationer** i konfigurationsträdet i vänster panel, väljer du **Betalningsmodell**.
-3. Välj **Skapa konfiguration**. 
-4. Gör följande i listrutan:
-
-    1. I fältet **Nytt** anger du **Format som baseras på datamodellen PaymentModel**.
-    2. I fältet **Namn** anger du **Importformat för bankutdrag (exempel)**.
-    3. I fältet **Stöder dataimport** väljer du **Ja**.
-    4. Välj **Skapa konfiguration** för att slutföra skapandet av konfigurationen.
-
-## <a name="design-the-er-format-configuration--format"></a>Designa konfiguration för ER-format – Format
-
-Designa ett ER-format som representerar den externa filens förväntade struktur i TXT-format.
-
-1. För den formatkonfiguration för **Importformat för bankutdrag (exempel)** som du har lagt till väljer du **Designer**.
-2. På sidan **Formatdesigner**, i formatstrukturen i det vänstra fönstret, väljer du **Lägg till rot**.
-3. Gör följande i dialogrutan som visas:
-
-    1. I trädet väljer du **Text\\Sekvens** om du vill lägga till en formatkomponent för **Sekvens**.
-    2. I fältet **Namn** anger du **Rot**.
-    3. I fältet **Specialtecken** väljer du **Ny rad – Windows (CR LF)**. Utifrån den här inställningen beaktas varje rad i parsingfilen som en separat post.
-    4. Välj **OK**.
-
-4. Markera **Lägg till**.
-5. Gör följande i dialogrutan som visas:
-
-    1. I trädet väljer du **Text\\Sekvens**.
-    2. I fältet **Namn** anger du **Rader**.
-    3. Välj **Ett många** i fältet **Sammansatt**. Baserat på denna inställning förväntas minst en rad finnas med i parsningfilen.
-    4. Välj **OK**.
-
-6. I trädet väljer du **Rot\\Rader** och sedan **Lägg till sekvens**.
-7. Gör följande i dialogrutan som visas:
-
-    1. I fältet **Namn** anger du **Fält**.
-    2. I fältet **Sammansatt** väljer du **Exakt ett**.
-    3. Välj **OK**.
-
-8. I trädet väljer du **Rot\\Rader\\Fält** och sedan **Lägg till**.
-9. Gör följande i dialogrutan som visas:
-
-    1. I trädet väljer du **Text\\Sträng**.
-    2. I fältet **Namn** anger du **IBAN**.
-    3.. Välj **OK**.
-
-10. Välj **Spara**.
-
-Konfigurationen har nu ställts in så att varje enskild rad i parsningfilen endast innehåller IBAN-koden.
-
-![Formatkonfiguration för importformat för bankutdrag (exempel) på sidan Formatdesigner.](../media/design-expressions-app-class-er-01.png)
-
-## <a name="design-the-er-format-configuration--mapping-to-a-data-model"></a>Designa ER-formatkonfigurationen – mappa till en datamodell
-
-Designa en ER-formatmappning där information från parsingfilen används för att fylla i en datamodell.
-
-1. På sidan **Formatdesigner** väljer du **Mappa format till model** i åtgärdsfönstret.
-2. På sidan **Modell för mappning av datakälla** väljer du **Ny** i åtgärdsfönstret.
-3. I fältet **Definition** väljer du **BankToCustomerDebitCreditNotificationInitiation**.
-4. I fältet **Namn** anger du **Mappning till datamodell**.
-5. Välj **Spara**.
-6. Välj **Designer**.
-7. På sidan **Modellmappingsdesigner**, i trädet **Datakälltyper**, väljer du **Dynamics 365 for Operations\\Klass**.
-8. I avsnittet **Datakällor** väljer du **Lägg till rot** för att lägga till en datakälla som anropar befintlig programlogik för validering av IBAN-koder.
-9. Gör följande i dialogrutan som visas:
-
-    1. I fältet **Namn** anger du **Kontrollera\_koder**.
-    2. I fältet **Klass** anger eller väljer du **ISO7064**.
-    3. Välj **OK**.
-
-10. I fältet **Typer av datakälla** följer du dessa steg:
-
-    1. Expandera datakällan för **format**.
-    2. Visa **format\\Root: Sequence(Root)**.
-    3. Visa **format\\Root: Sequence(Root)\\Rows: Sequence 1..\* (rader)**.
-    4. Visa **format\\Root: Sequence(Root)\\Rows: Sequence 1..\* (rader)\\Fields: Sequence 1..1 (fält)**.
-
-11. I trädet **Datamodell** följer du dessa steg:
-
-    1. Visa fältet **Betalningar** för datamodellen.
-    2. Visa **Betalningar\\Fordringsägarkonto(CreditorAccount)**.
-    3. Visa **Betalningar\\Fordringsägarkonto(CreditorAccount)\\Identifiering**.
-    4. Visa **Betalningar\\Fordringsägarkonto(CreditorAccount)\\Identifiering\\IBAN**.
-
-12. Följ dessa steg när du vill binda komponenter för konfigurerat format till datamodellfält:
-
-    1. Välj **format\\Root: Sequence(Root)\\Rows: Sequence 1..\* (rader)**.
-    2. Välj **Betalningar**.
-    3. Välj **bind**. Utifrån den här inställningen beaktas varje rad i parsingfilen som en enskild betalning.
-    4. Välj **format\\Root: Sequence(Root)\\Rows: Sequence 1..\* (rader)\\Fields: Sequence 1..1 (fält)\\IBAN: sträng(IBAN)**.
-    5. Välj **Betalningar\\Fordringsägarkonto(CreditorAccount)\\Identifiering\\IBAN**.
-    6. Välj **bind**. Baserat på den här inställningen fylls fältet **IBAN** i datamodellen i med värdet från parsingfilen.
-
-    ![Bindande av formatkomponenter till datamodellfält på sidan Modellmappningsdesigner.](../media/design-expressions-app-class-er-02.png)
-
-13. På fliken **Valideringar** följer du dessa steg för att lägga till en regel för [validering](../general-electronic-reporting-formula-designer.md#Validation) som visar ett felmeddelande för samtliga rader i parsingfilen som innehåller en ogiltig IBAN-kod:
-
-    1. Välj **Ny** och sedan **Redigera villkor**.
-    2. På sidan **Formeldesigner**, i trädet **Datakälla**, visar du den datakälla för **Kontrollera\_koder** som representerar programklassen **ISO7064** för att visa klassens tillgängliga metoder.
-    3. Välj **Kontrollera\_koder\\verifyMOD1271\_36**.
-    4. Välj **Lägg till datakälla**.
-    5. I fältet **Formel** anger du följande [uttryck](../general-electronic-reporting-formula-designer.md#Binding): **Kontrollera\_koder.verifyMOD1271\_36(format.Root.Rows.Fields.IBAN)**.
-    6. Markera **Spara** och stäng sedan sidan.
-    7. Välj **Redigera meddelande**.
-    8. På sidan **Formeldesigner**, i fältet **Formel**, anger du **CONCATENATE("Ogiltig IBAN-kod hittades:&nbsp;", format.Root.Rows.Fields.IBAN)**.
-    9. Markera **Spara** och stäng sedan sidan.
-
-    Baserat på dessa inställningar kommer valideringsvillkoret att returnera *[FALSE](../er-formula-supported-data-types-primitive.md#boolean)* för alla ogiltiga IBAN-koder genom att anropa befintlig **verifyMOD1271\_36**-metod för programklass **ISO7064**. Observera att värdet för IBAN-koden definieras dynamiskt vid körning som argument för anropsmetod, baserat på innehållet i TXT-parsingfilen.
-
-    ![Valideringsregel på sidan för modellmappningsdesigner.](../media/design-expressions-app-class-er-03.png)
-
-14. Välj **Spara**.
-15. Stäng sidan **Modellmappningsdesigner** och stäng sedan sidan **Modell för mappning av datakälla**.
+## <a name="design-the-er-format-configuration--mapping-to-data-model"></a>Designa ER-formatkonfigurationen – mappa till datamodellen
+1. Klicka på Mappa format till modell.
+2. Klicka på Ny.
+3. I fältet Definition anger du "BankToCustomerDebitCreditNotificationInitiation".
+    * BankToCustomerDebitCreditNotificationInitiation  
+4. ResolveChanges the Definition.
+5. Skriv "Mappning till datamodell" i namnfältet.
+    * Datamodellmappning  
+6. Klicka på Spara.
+7. Klicka på Designer.
+8. I trädet väljer du 'Dynamics 365 for Operations\Class'.
+9. Klicka på Lägg till rot.
+    * Lägg till en ny datakälla för att öppna befintliga programlogik för validering av IBAN koder.  
+10. Ange "Checkkoder" i namnfältet.
+    * checkkoder  
+11. I fältet Klass skriver du "ISO7064".
+    * ISO7064  
+12. Klicka på OK.
+13. Expandera format i trädet.
+14. Expandera "format\Root: Sequence(Root)" i trädet.
+15. Välj "format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)" i trädet.
+16. Klicka på Bind.
+17. Expandera "format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)" i trädet.
+18. Expandera "format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields)" i trädet.
+19. Välj "format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields)\IBAN: String(IBAN)" i trädet.
+20. Expandera "Payments = format.Root.Rows" i trädet.
+21. Expandera "Payments = format.Root.Rows\Creditor Account(CreditorAccount)" i trädet.
+22. Expandera "Payments = format.Root.Rows\Creditor Account(CreditorAccount)\Identification" i trädet.
+23. Välj "Payments = format.Root.Rows\Creditor Account(CreditorAccount)\Identification\IBAN" i trädet.
+24. Klicka på Bind.
+25. Klicka på fliken Valideringar.
+26. Klicka på Ny.
+    * Lägg till en ny valideringsregel som visar ett felmeddelande för varje rad i filen som innehåller ogiltig IBAN-kod.  
+27. Klicka på Edit condition.
+28. Expandera "checkkoder" i trädet.
+29. Välj "check_codes\verifyMOD1271_36" i trädet.
+30. Klicka på Lägg till datakälla.
+31. I formelfältet anger du "check_codes.verifyMOD1271_36(".
+    * check_codes.verifyMOD1271_36(  
+32. Expandera format i trädet.
+33. Expandera "format\Root: Sequence(Root)" i trädet.
+34. Expandera "format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)" i trädet.
+35. Expandera "format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields)" i trädet.
+36. Välj "format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields)\IBAN: String(IBAN)" i trädet.
+37. Klicka på Lägg till datakälla.
+38. I formelfältet anger du "check_codes.verifyMOD1271_36(format.Root.Rows.Fields.IBAN)".
+    * check_codes.verifyMOD1271_36(format.Root.Rows.Fields.IBAN)  
+39. Klicka på Spara.
+40. Stäng sidan.
+    * Valideringsvillkoren har konfigurerats för att returnera FALSE för någon ogiltig IBAN-kod genom att kalla den befintliga metoden "verifyMOD1271_36" av programklassen "ISO7064". Observera att värdet i IBAN-koden definieras dynamiskt vid körning som argument för att anropa metoden baserat på innehållet i parsning TXT-fil.   
+41. Klicka på Redigera meddelande.
+42. I formelfältet anger du "'CONCATENATE("Invalid IBAN code has been found:  ", format.Root.Rows.Fields.IBAN)".
+    * CONCATENATE("Invalid IBAN code has been found:  ", format.Root.Rows.Fields.IBAN)  
+43. Klicka på Spara.
+44. Stäng sidan.
+45. Klicka på Spara.
+46. Stäng sidan.
 
 ## <a name="run-the-format-mapping"></a>Kör mappning av filformat
+För testningsändamål, utför formatmappning med den SampleIncomingMessage.txt-fil som du tidigare hämtade. Skapade utdata kommer att inkludera data som importeras från den valda TXT-filen och fyller i den anpassade datamodellen när den verkliga importen sker.   
+1. Klicka på Kör.
+    * Klicka på Bläddra och navigera till filen SampleIncomingMessage.txt som du hämtade tidigare.  
+2. Klicka på OK.
+    * Granska utdata i XML-format, vilket representerar de data som har importerats från den valda filen och integrerats i datamodellen. Observera att endast 3 raderna i importerade TXT-filen har bearbetats. IBAN-kod på rad 4 som inte gäller hoppades över och ett felmeddelande ges i informationsloggen.  
 
-För testningsändamål kör du formatmappningen med hjälp av samm SampleIncomingMessage.txt-fil som du tidigare laddade ned. Genererade utdata kommer att inkludera data som importeras från den valda textfilen och överförs till anpassad datamodell när den verkliga importen sker.
-
-1. Ppå sidan **Modell för mappning av datakälla** välkjer du **Kör**.
-2. På sidan **Parametrar för elektronisk rapport** väljer du **Bläddra**, letar upp filen **SampleIncomingMessage.txt** som du tidigare laddade ned, och väljer denna.
-3. Välj **OK**.
-4. Notera att **Modell för mappning av datakälla** visar ett felmeddelande om en ogiltig IBAN-kod.
-
-    ![Resultatet av att köra formatmappningne på sidan Modell för mappning av datakälla.](../media/design-expressions-app-class-er-04.png)
-
-5. Granska utdata i XML-format, vilket representerar de data som har importerats från den valda filen och integrerats i datamodellen. Observera att endast tre rader i den importerade textfilen bearbetades utan fel. IBAN-koden på rad 4 är ogiltig och har hoppats över.
-
-    ![XML-utmatning.](../media/design-expressions-app-class-er-05.png)
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

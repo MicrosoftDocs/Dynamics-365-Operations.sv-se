@@ -1,13 +1,16 @@
 ---
 title: Överför videor
-description: I det här avsnittet beskrivs hur du laddar upp videor i Microsoft Dynamics 365 Commerce webbplatsskapare.
+description: I det här avsnittet beskrivs hur du överför videor i Microsoft Dynamics 365 Commerce webbplatsskapare.
 author: psimolin
-ms.date: 06/09/2021
+manager: annbe
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f481e5d3f323b0c86d637b67c119d13b956d5714dc0d990004834e2be05b370e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8dd9e710f9a6ea593a0673e7902fadf84ca05cff
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735640"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594318"
 ---
 # <a name="upload-videos"></a>Överför videor
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du laddar upp videor i Microsoft Dynamics 365 Commerce webbplatsskapare.
+I det här avsnittet beskrivs hur du överför videor i Microsoft Dynamics 365 Commerce webbplatsskapare.
+
+## <a name="overview"></a>Översikt
 
 Med mediabiblioteket för Commerce webbplatsskapare kan du överföra videor. Du bör alltid överföra versionen av en video med högsta bithastighet och upplösning, eftersom videon omvandlas automatiskt för att vara lämplig för olika visningsportar och deras brytpunkter.
 
@@ -35,7 +40,7 @@ Med mediabiblioteket för Commerce webbplatsskapare kan du överföra videor. Du
 När du överför en video kan du ange följande information.
 
 - **Rubrik, beskrivning, nyckelord**: metadata för videon.
-- **Generera underterxter automatiskt**: Anger om undertexter ska genereras automatiskt för videon (stöd finns endast för engelska). 
+- **Generera automatiskt stängda bildtexter**: anger om dolda bildtexter ska genereras automatiskt för videon.
 - **Dold textning**: anger den dolda textning som ska användas.
 - **Vanligt ljud**: anger det vanliga ljudspår som ska användas.
 - **Miniatyr**: anger miniatyrbilden för videon. Om den inte anges kommer den att genereras automatiskt.
@@ -68,6 +73,3 @@ Om du överför flera typer av tillgångar samtidigt (t.ex. bilder och videor) i
 [Anpassa bildens fokuspunkter](dam-custom-focal-point.md)
 
 [Ladda upp och betjäna statiska filer](upload-serve-static-files.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,44 +1,47 @@
 ---
 title: Synkronisera försäljningsoffertrubriker och rader direkt från Sales till Supply Chain Management
 description: I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningsoffertrubriker och rader direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 362b6c290b1784d05e42ecb650911cc51aa8478a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c7d4cacbf56243830633f4d0fd3c57071b08ab56
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061994"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527348"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Synkronisera försäljningsoffertrubriker och rader direkt från Sales till Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningsoffertrubriker och rader direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
 
 > [!NOTE]
-> Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Microsoft Dataverse för appar](/powerapps/administrator/data-integrator).
+> Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Common Data Service för appar](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflöden i Potentiell kund till kontanter
 
 Lösningen Potentiell kund till kontanter använder funktionen Dataintegrering för att synkronisera data mellan instanser av Supply Chain Management och Sales. Potentiell kund till kontanter-mallarna med funktionen för dataintegrering möjliggör ett flöde av konto-, produkt-, försäljningskvots-, försäljningsorder- samt försäljningsfakturadata mellan Supply Chain Management och Sales. Följande bild visar hur data synkroniseras mellan Supply Chain Management och Sales.
 
-[![Dataflöden i Potentiell kund-till-pengar.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Dataflöden i Potentiell kund till kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="template-and-tasks"></a>Mall och uppgifter
 
@@ -60,8 +63,8 @@ Följande synkroniseringsuppgifter krävs före synkronisering av huvuden och ra
 
 | Försäljning        | Hantering av underleverantörer     |
 |--------------|----------------------------|
-| Citat       | Dataverse-försäljningsofferrubrik |
-| QuoteDetails | Dataverse-försäljningsoffertrader  |
+| Citat       | CDS-försäljningsofferrubrik |
+| QuoteDetails | Försäljningsoffertrader för CDS  |
 
 ## <a name="entity-flow"></a>Flöde för entitet
 
@@ -78,12 +81,12 @@ Fältet **Har endast externt hanterade produkter** har lagts till entiteten **Of
 
 Alla offertprodukter på försäljningsofferten uppdateras med informationen **Har endast externt hanterade produkter** från försäljningsofferthuvudet. Den här informationen finns i fältet **Offerten har endast externt hanterade produkter** på entiteten **Offertdetaljer**.
 
-En rabatt kan läggas till i offertprodukten och synkroniseras med Supply Chain Management. Fälten **rabatt**, **tillägg**, och **Skatt** på rubriken styrs av en inställning i Supply Chain Management. För närvarande stöder inte den här inställningen integreringsmappning. I den aktuella designen underhålls fälten **pris**, **rabatt**, **tillägg**, och **skatt** i Supply Chain Management.
+En rabatt kan läggas till i offertprodukten och synkroniseras med Supply Chain Management. Fälten **rabatt**, **tillägg**, och **moms** på rubriken styrs av en inställning i Supply Chain Management. För närvarande stöder inte den här inställningen integreringsmappning. I den aktuella designen underhålls fälten **pris**, **rabatt**, **tillägg**, och **moms** i Supply Chain Management.
 
 I Sales gör lösningen följande fält skrivskyddade, eftersom värdena inte ska synkroniseras till Supply Chain Management.
 
 - Skrivskyddade fält på försäljningsoffertens huvud: **Rabatt %**, **Rabatt** och **Fraktbelopp**
-- Skrivskyddade fält på offertprodukter: **Skatt**
+- Skrivskyddade fält på offertprodukter: **moms**
 
 ## <a name="preconditions-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 
@@ -123,23 +126,20 @@ Innan försäljningsofferter synkroniseras är det viktigt att du uppdaterar fö
 ## <a name="template-mapping-in-data-integrator"></a>Mallmappning i dataintegratör
 
 > [!NOTE]
-> - Fälten **rabatt**, **tillägg**, och **Skatt** styrs av en komplex inställning i Supply Chain Management. För närvarande stöder inte den här inställningen integreringsmappning. I den aktuella designen hanteras fälten **pris**, **rabatt**, **tillägg**, och **skatt** av Supply Chain Management.
+> - Fälten **rabatt**, **tillägg**, och **moms** styrs av en komplex inställning i Supply Chain Management. För närvarande stöder inte den här inställningen integreringsmappning. I den aktuella designen hanteras fälten **pris**, **rabatt**, **tillägg**, och **moms** av Supply Chain Management.
 > - Fälten **betalningsvillkor**, **fraktvillkor**, **leveransvillkor**, **leveranssätt** och **leveransläge** tillhör inte standardmappningarna. Om du vill mappa dessa fält måste du konfigurera en värdemappning som är specifik för data i organisationer som enheten synkroniseras mellan.
 
 I följande illustrationer visas ett exempel på en mallmappning i dataintegratör.
 
 ### <a name="quoteheader"></a>QuoteHeader
 
-![Mallmappning i dataintegrator, QuoteHeader.](./media/sales-quotation-direct-template-mapping-data-integrator-1.png)
+![Mallmappning i dataintegratör](./media/sales-quotation-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="quoteline"></a>QuoteLine
 
-![Mallmappning i dataintegrator, QuoteLine.](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
+![Mallmappning i dataintegratör](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Potentiell kund till pengar](prospect-to-cash.md)
+[Potentiell kund till kontanter](prospect-to-cash.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

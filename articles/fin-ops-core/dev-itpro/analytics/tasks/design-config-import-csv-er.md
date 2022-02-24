@@ -1,10 +1,12 @@
 ---
 title: Utforma ER-konfigurationer för att importera data från externa CSV-filer
-description: Använd den här guiden för att designa konfigurationer för elektronisk rapportering som importerar data till Finance and Operations-appen från en extern fil i CSV-format.
+description: Använd den här guiden för att designa ER-konfigurationer för elektronisk rapportering som importerar data till programmet Finance and Operations från en extern fil i CSV-format.
 author: NickSelin
+manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b42f0cf8c7260c85d405a5dfdcd50323ffee4d4528b982997a802b859ab8327b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b542b6250bcc72334659e050f7ab6d5bd87d3508
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747281"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682055"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>Utforma ER-konfigurationer för att importera data från externa CSV-filer
 
@@ -122,6 +124,3 @@ För testningsändamål, utför formatmappning med den 1099entriescsv.csv-fil so
     * Granska utdata i XML-format, vilket representerar de data som har importerats från den valda filen och integrerats i datamodellen. Observera att alla 7 raderna i importerade CSV-filen har bearbetats. Det innehållande fältets rubrikrad 1 hoppades över, 4 transaktioner analyserades korrekt och 2 transaktioner erkändes som otillåtna.
 3. Stäng sidan.
 4. Stäng sidan.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

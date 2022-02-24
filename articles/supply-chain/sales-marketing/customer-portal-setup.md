@@ -1,49 +1,51 @@
 ---
 title: Installera, ställ in och uppdatera kundportalen
 description: Det här avsnittet innehåller licensieringsinformation och installationsinstruktioner för kundportalen.
-author: Henrikan
+author: dasani-madipalli
+manager: tfehr
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: damadipa
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 187efe1372bf2400241f3d65751189247c001447
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: e61fc5f7151a0bb61d496d47f4ad4e727a2a1d65
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060623"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529540"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Installera, ställ in och uppdatera kundportalen
 
-[!include [banner](../includes/banner.md)]
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## <a name="licensing-requirements"></a>Licensieringskrav
 
 Om du vill implementera kundportalen måste du ha följande licenser:
 
-- **Power Apps-portaler** – den här licensen krävs för att vara värd för kundportalen. Portaler är licensierade utifrån användning. Mer information finns i avsnittet om [Power Apps licenskrav för portaler](/power-platform/admin/powerapps-flow-licensing-faq#portals).
-- **Dubbelriktad skrivning** – du måste ha de licenser som krävs för att möjliggöra dubbelriktad skrivning för tabeller för Supply Chain Management. För mer information, se [systemkrav för dubbelriktad skrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
+- **Power Apps-portaler** – den här licensen krävs för att vara värd för kundportalen. Portaler är licensierade utifrån användning. Mer information finns i avsnittet om [Power Apps licenskrav för portaler](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals).
+- **Dubbelriktad skrivning** – du måste ha de licenser som krävs för att möjliggöra dubbelriktad skrivning för enheter för Supply Chain Management. För mer information, se [systemkrav för dubbelriktad skrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## <a name="dependencies-on-dual-write-and-power-apps-portals"></a>Beroenden på dubbelriktad skrivning och Power Apps-portaler
 
 Kundportalen beror på Power Apps-portaler och dubbelskrivning, vilket visas i bilden nedan.
 
-![Kundportalberoenden.](media/customer-portal-elements.png "Kundportalberoenden")
+![Kundportalberoenden](media/customer-portal-elements.png "Kundportalberoenden")
 
-Till skillnad från andra funktioner från Supply Chain Management, kundportalmallen finns i Power Apps-portaler. Därför begränsas kundportalen av de funktioner som tillhandahålls av Power Apps-portaler och tabellerna i dubbelriktad skrivning.
+Till skillnad från andra funktioner från Supply Chain Management, kundportalmallen finns i Power Apps-portaler. Därför begränsas kundportalen av de funktioner som tillhandahålls av Power Apps-portaler och enheterna i dubbelriktad skrivning.
 
 ## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>Obligatorisk inställning för att aktivera kundportalen
 
-När du har installerat de nödvändiga licenserna kan du ställa in dubbelriktad skrivning enligt beskrivningen i [inledande synkroniseringsinställningarna för dubbelriktad skrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map.md).
+När du har installerat de nödvändiga licenserna kan du ställa in dubbelriktad skrivning enligt beskrivningen i [inledande synkroniseringsinställningarna för dubbelriktad skrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md).
 
-Se till att aktivera följande tabellmappningar i dubbelriktad skrivning:
+Se till att aktivera följande enhetsmappningar i dubbelriktad skrivning:
 
 - Försäljningsorderhuvud
 - Försäljningsorderinformation
@@ -75,15 +77,12 @@ Fler funktioner kan läggas till kundportalen senare. Alla ändringar som Micros
 
 Om du vill veta hur du kan ställa in och anpassa kundportalen bör du börja med att granska följande dokumentation för den underliggande tekniken:
 
-- [Power Apps-portaldokumentation](/powerapps/maker/portals/overview)
+- [Power Apps-portaldokumentation](https://docs.microsoft.com/powerapps/maker/portals/overview)
 - [Dokumentation för dubbelriktad skrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
-Om du vill hantera portalerna effektivt måste du känna till Power Apps-portalerna och Microsoft Dataverse livscykeln. Mer information finns i följande resurser:
+Om du vill hantera portalerna effektivt måste du känna till Power Apps-portalerna och Common Data Service livscykeln. Mer information finns i följande resurser:
 
-- [Om portalens livscykel](/powerapps/maker/portals/admin/portal-lifecycle)
-- [Uppgradera en portal](/powerapps/maker/portals/admin/upgrade-portal)
-- [Migrera portalkonfiguration](/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [Om portalens livscykel](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
+- [Uppgradera en portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
+- [Migrera portalkonfiguration](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Hantering av lösningens livscykel: Dynamics 365 for Customer Engagement-appar](https://www.microsoft.com/download/details.aspx?id=57777)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

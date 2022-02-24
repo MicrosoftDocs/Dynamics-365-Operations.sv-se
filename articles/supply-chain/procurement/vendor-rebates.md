@@ -1,24 +1,26 @@
 ---
 title: Leverantörsrabatter
 description: Detta avsnitt innehåller en översikt över de vanligaste åtgärderna när du arbetar med leverantörsrabatter. Leverantörsrabatter hjälper förgöra anspråk på intjänade rabatter.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TAMVendRebateAgreement
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: ec8d054d023b7e3f6611199e60f661c480d44d57
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 46d6beb287f7d034c6fde09999f7854695a4987c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566873"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966665"
 ---
 # <a name="vendor-rebates"></a>Leverantörsrabatter
 
@@ -53,7 +55,7 @@ Ett rabattavtal för leverantörer är ett kontrakt med en leverantör som anger
 
 För att öppna sidan **Rabattavtal för leverantörer** markerar du **Anskaffning och inköp** &gt; **Leverantörsrabatter** &gt; **Rabattavtal**.
 
-![Inköpsavtal.](media/purchase-agreement.PNG)
+![Inköpsavtal](media/purchase-agreement.PNG)
 
 På sidan **Rabattavtal för leverantörer** på sidan kan du visa information om de förhandlade villkoren i ett leverantörsavtal.
 
@@ -129,7 +131,7 @@ När ett anspråk har godkänts kan det bearbetas av Leverantörsreskontra (A/P)
 
     En periodiseringsjournal för rabatt bokförs för anspråksbeloppet. Denna bokföringspost debiterar kontot för ackumulerad kundreskontrarabatt för den förväntade leverantörskrediten, och krediterar den förväntade intäkten till det preliminära kontot för mottagna, ackumulerade leverantörsrabatter.
 
-    ![Meddelande.](media/message.png)
+    ![Meddelande](media/message.png)
 
 5. Markera raden i rabattlistan och markera sedan **Rabattransaktioner** i åtgärdsfönstret för att visa och navigera till journalbatchnumret för bokföringen av rabattperiodiseringen.
 
@@ -164,6 +166,3 @@ Processen för att hantera leverantörsrabatter omfattar flera manuella spårnin
 - Generera korrekta rabattanspråk
 - Periodisering av förväntad fordran och interimintäkt i redovisningen
 - Uppdatering av leverantörssaldot och intäktsutdraget med de avdrag som förfaller
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

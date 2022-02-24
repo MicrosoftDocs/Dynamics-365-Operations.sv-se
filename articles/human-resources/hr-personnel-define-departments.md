@@ -1,59 +1,54 @@
 ---
 title: Definiera nya avdelningar
 description: Avdelningar är driftenheter som motsvarar ett funktionellt område i ett företag, till exempel försäljning eller redovisning.
-author: twheeloc
-ms.date: 10/28/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMOperatingUnit, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e34c885a570da90ffe440c40b05fede6e989f2f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e35d3744661c3f94745803ba698449e6cb917875
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070612"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420610"
 ---
 # <a name="define-new-departments"></a>Definiera nya avdelningar
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
 Avdelningar är driftenheter som motsvarar ett funktionellt område i ett företag, till exempel försäljning eller redovisning. Många företag har organisationshierarkier som visar de olika avdelningarna inom ett företag. Den här proceduren går igenom processen med att skapa avdelningar och att lägga till dessa avdelningar i avdelningshierarkin för en organisation. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 
-1. Gå till **Personal** > **Avdelningar** > **Avdelningar**.
-2. Klicka på **Nytt** om du vill öppna dialogrutan.
-3. Skriv ett värde i fältet **Namn**.
+1. Gå till Personal > Avdelningar > Avdelningar.
+2. Klicka på Nytt om du vill öppna dialogrutan.
+3. Skriv ett värde i fältet Namn.
     * Exempel: fakturering av projekt  
-4. I fältet **Anteckning** anger du ett värde.
+4. I fältet Anteckning, ange ett värde.
     * Exempel: fakturering av projekt  
-5. I fältet **Chef** anger eller väljer du ett värde.
-    * Example: Anna Boman  
-6. Klicka på **Spara**.
+5. I fältet Chef, ange eller välj ett värde.
+    * Exempel: Jodi Christiansen  
+6. Klicka på Spara.
 7. Stäng sidan.
-8. Gå till **Personal** > **Avdelningar** > **Avdelningshierarki**.
-9. Klicka på **Redigera**.
-10. Klicka på **Infoga**.
-11. Klicka på **Avdelning**.
+8. Gå till Personal > Avdelningar > Avdelningshierarki.
+9. Klicka på Redigera.
+10. Klicka på Infoga.
+11. Klicka på Avdelning.
 12. Hitta och markera önskad post i listan.
     * Exempel: fakturering av projekt  
-13. Klicka på **OK**.
-14. Klicka på **Publicera** för att öppna dialogrutan.
-15. I fältet **Gäller från** anger du datum och tid.
+13. Klicka på OK.
+14. Klicka på Publicera om du vill öppna formuläret med listrutan för att öppna dialogrutan.
+15. Ange datum och tid i fältet Giltighetsdatum.
     * När du publicerar avdelningshierarkin kan du välja när ändringarna ska börja gälla. Ändringar kan ha ett framtida datum. Du kan till exempel att veta i början av ditt räkenskapsår du vill lägga till ytterligare en avdelning. Du kan ange ditt giltighetsdatum för räkenskapsårets början och ändringarna i hierarkin ska vara giltiga på detta datum.  
-16. Ange ett värde i fältet **Beskriv ändringar**.
-17. Klicka på **Publicera**.
+16. Skriv ett värde i fältet Beskriv ändringar.
+17. Klicka på Publicera.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

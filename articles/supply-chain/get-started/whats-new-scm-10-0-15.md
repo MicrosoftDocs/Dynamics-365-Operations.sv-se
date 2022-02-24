@@ -2,9 +2,11 @@
 title: Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.15 (januari 2021)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.15.
 author: kamaybac
+manager: tfehr
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 18408e64bd06db2e05038d14f284b799b6c19e68
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 9b84aaef5348d2cb6bdd6d35e7e26bca9a4e0f6b
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471822"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014543"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.15 (januari 2021)
 
@@ -33,23 +35,23 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
-Den här versionen innehåller följande nya funktioner: Följ länkarna till [Utgivningsplan](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) för att se de officiella datumen för varje funktion.
+Den här versionen innehåller följande nya funktioner: Vissa av funktionerna visas fortfarande i en förhandsversion, men andra användare kan redan vara tillgängliga i allmänhet. Följ länkarna till [Utgivningsplan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) för att se de officiella datumen för varje funktion.
 
-- Enhetshantering av moln och Edge-skalningsenhet med arbetsbelastning för tillverkning och lagerställe<br> - Mer information finns i [Skalningsenheter i en distribuerad hybridtopologi](../cloud-edge/cloud-edge-landing-page.md)
+- Enhetshantering av moln och Edge-skalningsenhet med arbetsbelastning för tillverkning och lagerställe<br> - För mer information, se [moln och kantskalningsenhet med arbetsbelastning för tillverkning och distributionslagerhantering](../cloud-edge/cloud-edge-landing-page.md).
 
-- [Skapa och bearbeta överföringsorder från lagerställeappen](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Mer information finns i [skapa överföringsorder från lagerställeapp](../warehousing/create-transfer-order-from-warehouse-app.md).
+- [Skapa och bearbeta överföringsorder från lagerställeappen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Mer information finns i [skapa överföringsorder från lagerställeapp](../warehousing/create-transfer-order-from-warehouse-app.md).
 
-- [Standard svarsfält för anbudsförfrågan för leverantörsbudgivning](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - För mer information, se [översikt över begära offert (anbudsförfrågan)](../procurement/request-quotations.md).
+- [Standard svarsfält för anbudsförfrågan för leverantörsbudgivning](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - För mer information, se [översikt över begära offert (anbudsförfrågan)](../procurement/request-quotations.md).
 
-- [Tillägg för teknik för ändringshantering för Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<br> - Mer information finns i [översikt över teknik för ändringshantering](../engineering-change-management/product-engineering-overview.md).
+- [Tillägg för teknik för ändringshantering för Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<br> - Mer information finns i [översikt över teknik för ändringshantering](../engineering-change-management/product-engineering-overview.md).
 
-- [Guider med mixad verklighet för tillverkning](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - För mer information, se [Tillhandahålla guider för mixad verklighet för arbetare i produktion](../production-control/instruction-guides-in-production-overview.md).
+- [Guider med mixad verklighet för tillverkning](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - För mer information, se [Tillhandahålla guider för mixad verklighet för arbetare i produktion](../production-control/instruction-guides-in-production-overview.md).
 
-- [Ny användarupplevelse för körning av produktionsplan](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - Mer information finns i [så här använder du gränssnittet för körning av produktionsstyrning](../production-control/production-floor-execution-use.md).
+- [Ny användarupplevelse för körning av produktionsplan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - Mer information finns i [så här använder du gränssnittet för körning av produktionsstyrning](../production-control/production-floor-execution-use.md).
 
-- [Bearbeta lagerställeapphändelser](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - Mer information finns i [händelsebearbetning för lagerställe](../warehousing/warehouse-app-events.md).
+- [Bearbeta lagerställeapphändelser](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - Mer information finns i [händelsebearbetning för lagerställe](../warehousing/warehouse-app-events.md).
 
-- [Sparade vyer för sidan frisläppta produkter](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/saved-views-released-products-page)<br> - För mer information, se [Sparade vyer](../../fin-ops-core/fin-ops/get-started/saved-views.md).
+- [Sparade vyer för sidan frisläppta produkter](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/saved-views-released-products-page)<br> - För mer information, se [Sparade vyer](../../fin-ops-core/fin-ops/get-started/saved-views.md).
 
 - Dokument för USMCA-ursprungsintyg<br> - Mer information finns i [USMCA ursprungsbevis](../transportation/usmca-certification-of-origin.md).
 
@@ -67,9 +69,9 @@ Om du vill ha information om felkorrigeringar som ingår i varje uppdatering som
 
 ### <a name="dynamics-365-2020-release-wave-2-plan"></a>Dynamics 365: 2020 utgivningsvåg 2 plan
 
-Har du frågeställningar om nya och kommande funktioner i våra affärsappar eller plattformen?
+Har du frågor om nya och kommande funktioner i våra affärsappar eller plattformen?
 
-Se [Dynamics 365: 2020 utgivningsvåg 2 plan](/dynamics365-release-plan/2020wave2/index). Vi har sammanställt all information som du kan tänkas behöva på ett enskilt dokument som du kan använda för din planering.
+Se [Dynamics 365: 2020 utgivningsvåg 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Vi har sammanställt all information som du kan tänkas behöva på ett enskilt dokument som du kan använda för din planering.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Borttagna och inaktuella funktioner för Supply Chain Management
 
@@ -81,6 +83,3 @@ De [borttagna eller föråldrade funktionerna i Dynamics 365 Supply Chain Manage
 Innan någon funktion tas bort från produkten visas understrykningsmeddelandet i ämnet [borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före avhämtningen.
 
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

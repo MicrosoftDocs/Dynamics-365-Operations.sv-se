@@ -1,28 +1,29 @@
 ---
 title: Startsidan för kassa- och bankhantering
 description: Använd Kassa- och bankhantering till att underhålla den juridiska personens bankkonton och de finansiella instrument som är associerade med dessa bankkonton.
-author: roschlom
+author: panolte
+manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "21941"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: roschlom
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de37cc3df673a672a091ffe90ca543fae77bc9d5
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 88d7f70084d035354d199be95b5c55ce7afff7b7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883704"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459977"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Startsidan för kassa- och bankhantering
 
@@ -34,7 +35,7 @@ Dessa instrument inkluderar insättningskvitton, checkar, växlar och skuldsedla
 
 **Affärsprocesser**
 
-[![Affärsprocess.](./media/Cash-process.PNG)](./media/Cash-process.PNG)
+[![Affärsprocess](./media/Cash-process.PNG)](./media/Cash-process.PNG)
 
 -   [Kassarabatter](cash-discounts.md)
 -   [Kvittningöversikt](settlement-overview.md)
@@ -85,7 +86,7 @@ Dessa instrument inkluderar insättningskvitton, checkar, växlar och skuldsedla
 
 #### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
-Gå till [Utgivningsplaner för Microsoft Dynamics 365](/dynamics365/release-plans/) för att se vilka nya funktioner har planerats. 
+Gå till [Utgivningsplaner för Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner har planerats. 
 
 #### <a name="blogs"></a>Bloggar
 
@@ -99,6 +100,3 @@ Mer hjälp är tillgänglig som uppgiftsguider i Finance. Klicka på knappen Hj�
 #### <a name="videos"></a>Videoklipp
 
 Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen på YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

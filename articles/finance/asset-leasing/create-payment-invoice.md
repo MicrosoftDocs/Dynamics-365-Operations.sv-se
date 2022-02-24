@@ -2,11 +2,13 @@
 title: Skapa betalningsfakturor
 description: Det här avsnittet innehåller information om hur du skapar månatliga leasingfakturor. Du kan skapa fakturor för enskilda leasingar eller använda en batchprocess för att skapa dem för flera leasingar.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeasePaymentSchedule
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,18 +17,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: bc87c329f6f5dd9532b1319f8d88fbc41dcd4d14
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 303fb0e70530fdc29cb129736b01c0e0e8d02075
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344330"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969588"
 ---
 # <a name="create-payment-invoices"></a>Skapa betalningsfakturor
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 Du kan skapa månatliga fakturor för enskilda leasingar eller använda en batchprocess för att skapa dem för flera leasingar. Följande procedur visar hur du skapar en enskild leasingbetalningspost när parametern **Betala till leverantör** på sidan **Konfiguration av leasingbok** aktiveras.
 
@@ -41,8 +41,6 @@ Du kan skapa månatliga fakturor för enskilda leasingar eller använda en batch
 5. Välj rätt journal och välj sedan den faktura som måste betalas.
 
     I det här exemplet aktiveras parametern **Betala till leverantör** i leasingboken. Därför kommer fakturan att finnas i fakturajournalen. I avsnittet **Översikt** visas en sammanfattning av journalposten och i avsnittet **Rader** visas information om de faktiska journalraderna.
-    
-   Systemet låser vissa ekonomiska fält från att redigeras i syfte att förhindra eventuella avvikelser mellan transaktioner och tidsplaner. Fält som är låsta inkluderar följande: **Kontro**, **Belopp**, **Ekonomiska dimensioner**, **Valuta** och **Transaktionstyp**. Du kan vidare inte lägga till eller ta bort journalpostrader från någon journalpost för tillgångsleasing eftersom detta kan orsaka avvikelser mellan tidsplanerna och transaktionerna.
 
     > [!NOTE]
     > Om parametern **Betala till leverantör** är inaktiverad kommer betalningsjournalposter att visas på sidan **Leasing av tillgångar** för leasingboken, och systemet skapar en post för leasingtillgångar i stället för en faktura. Leasingbetalningsposten kommer att bokföras till det journalnamn som anges i fältet **Månatlig leasingjournal**.
@@ -50,6 +48,3 @@ Du kan skapa månatliga fakturor för enskilda leasingar eller använda en batch
 6. När transaktionen har bokförts kan du visa transaktionsinformation och det bokförda värdet för leasingskulden genom att välja **Skuldtransaktioner** i leasingboken.
 
     I betalningsplanen markeras kryssrutan **Journal bokförd** och raden visar fakturajournalnumret. När en betalningsjournal och en post för journalen har skapats, måste du återföra posten innan den kan skapas på nytt.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

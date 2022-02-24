@@ -2,25 +2,28 @@
 title: Supply Chain Management – startsida
 description: Den här sidan innehåller en lista med hjälpavsnitt och andra resurser för funktionerna i Supply Chain Management.
 author: kamaybac
-ms.date: 09/15/2021
+manager: tfehr
+ms.date: 06/30/2020
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 9255640240ae07c3857c0b6f55a7ee27ba3bf85b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487874"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459980"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management – startsida
 
@@ -62,6 +65,7 @@ Den här korta videon sammanfattar de nya funktionerna för hantering av leveran
 
 Dessa korta videoklipp sammanfattar de nya funktionerna för hantering av leveranskedjan som har lagts till i Microsoft Dynamics 365 for Finance and Operations Enterprise edition 7.3 (december 2017).
 
+- [Integrering av potentiell kund till pengar](https://youtu.be/AVV9x5x-XCg) 
 - [Rådgivning om optimering](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Använd distributionslagermall för att kopiera konfiguration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
@@ -79,12 +83,13 @@ I följande inspelningar från en teknisk konferens diskuteras funktionaliteten 
   - [Översikt över kostnadshantering](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
 - **Huvudplanering:**
   - [Utöka funktionen för efterfrågeprognosticering](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-  - [Huvudplanering – tips och råd för felsökning av prestandaproblem](https://youtu.be/7v8BPmEs9Dg)
-  - [MRP-prestandajustering](https://youtu.be/RLXybx20B5o)
+  - [Huvudplanering – tips och trick för felsökning av prestandaproblem](https://youtu.be/7v8BPmEs9Dg)
+  - [Hjälp! Huvudplaneringen går långsamt!](https://youtu.be/RLXybx20B5o)
 - **Produktinformationshantering:**
   - [Produktkonfigurerare i Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 - **Hantering av distributionslager:**
   - [Få ut mesta möjliga av systemet för distributionslagerhantering](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+  - [Etiketter i nya lagerstyrningssystemet i Microsoft Dynamics AX 2012 R3](https://youtu.be/5w1MngVchBA)
   - [Dynamics AX 2012 R3: Avancerad distributionslagerhantering – en arbetsdag med processtillverkning](https://www.youtube.com/embed/QUxXUrN-7n4)
 - **Videoklipp om produktionskontroll:**
   - [Legotillverkningsåtgärder och aktiviteter inom tillverkning](https://youtu.be/y1jrd3A_k70)
@@ -93,16 +98,13 @@ I följande inspelningar från en teknisk konferens diskuteras funktionaliteten 
 
 ## <a name="blogs"></a>Bloggar
 
-Det finns många avsnitt om tillverkning och hantering av underleverantörer i [teambloggen Dynamics AX Manufacturing R&D](/archive/blogs/axmfg/) och [teambloggen Supply Chain Management i Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De flesta av inläggen skrevs för den föregående versionen, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
+Det finns många avsnitt om tillverkning och hantering av underleverantörer i [teambloggen Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg/) och [teambloggen Supply Chain Management i Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De flesta av inläggen skrevs för den föregående versionen, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
 
 ## <a name="white-papers"></a>White paper
 
-- [Lean Manufacturing: CTP (Capable To Promise) och tidsplanering av kanban-jobb](/dynamics/s-e/)
+- [Lean Manufacturing: CTP (Capable To Promise) och tidsplanering av kanban-jobb](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
 - [Strukturlisteberäkning med hjälp av kostnadsredovisningsblad](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## <a name="elearning-courses"></a>E-utbildningskurser
 
-Information om onlinekurser och utbildning finns [Dynamics 365 Supply Chain Management i Microsoft Learn](/learn/browse/?products=dynamics-scm&resource_type=learning+path).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Information om onlinekurser och utbildning finns [Dynamics 365 Supply Chain Management i Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).

@@ -1,10 +1,12 @@
 ---
 title: Produktinleverans mot inköpsorder
 description: Detta avsnitt innehåller en beskrivning av olika alternativ för att registrera produkter som mottagna.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 11/15/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, VendPackingSlipJournal
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c22b4f914dc7eba34f2f9a2657d21d66f38c019
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a07b6b05b8eb25b8c41a5eecbb71fb765a3e9d5f
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570524"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019689"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Produktinleverans mot inköpsorder
 
@@ -53,7 +55,8 @@ När produktinleveransen har bearbetats på inköpsordern ändras inköpsorderns
 
 Du kan komma åt den här sidan från åtgärdsgruppen **Inleverans** på sidan **Inköpsorder**. Informationen i journalerna omfattar uppgifter om kvantiteter, datum och dimensioner.
 
-## <a name="additional-resources"></a>Ytterligare resurser
+<a name="additional-resources"></a>Ytterligare resurser
+--------
 
 [Översikt av inköpsorder](purchase-order-overview.md)
 
@@ -61,10 +64,7 @@ Du kan komma åt den här sidan från åtgärdsgruppen **Inleverans** på sidan 
 
 [Godkänn och bekräfta inköpsorder](purchase-order-approval-confirmation.md)
 
-[Översikt över leverantörsfakturor](../../finance/accounts-payable/vendor-invoices-overview.md)
+[Översikt över leverantörsfakturor](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

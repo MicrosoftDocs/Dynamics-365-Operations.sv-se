@@ -1,10 +1,12 @@
 ---
 title: Servicenivå och beskrivning
 description: I det här avsnittet beskrivs servicenivå och beskrivning i Tillgångshantering.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectServiceLevel, EntAssetWorkOrderStandardDescription, EntAssetWorkOrderServiceLevel, EntAssetServiceLevelLookup
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 32e6dd6ba7291e8ea1cb78eeed2d8e2fcec0f6dd3cbd039336be0169730101ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8bb56e5103bd9e18e88c164cd308e55d48e64823
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758698"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019389"
 ---
 # <a name="service-level-and-description"></a>Servicenivå och beskrivning
 
@@ -45,7 +47,7 @@ När du skapar en arbetsorder kanske du vill definiera servicenivåerna för den
 8. Om du vill ange en sluttid för arbetsordern, utöver slutdatumet, ställer du in alternativet **Ange sluttid** till **Ja**. Ange sluttiden i fältet **Sluttid**. Om du ställer in alternativet till **Nej**, används den aktuella tiden på dagen.
 9. Välj **Spara**.
 
-![Sidan Servicenivå för arbetsorder.](media/19-setup-for-work-orders.png)
+![Sidan Servicenivå för arbetsorder](media/19-setup-for-work-orders.png)
 
 ## <a name="create-a-description"></a>Skapa en beskrivning
 
@@ -53,6 +55,3 @@ När du skapar en arbetsorder kanske du vill definiera servicenivåerna för den
 2. Välj **Ny**.
 3. Ange en beskrivning i fältet **Beskrivning**.
 4. Välj **Spara**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

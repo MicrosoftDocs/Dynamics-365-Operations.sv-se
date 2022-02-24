@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9e235ba4ef2412c50101bc69f467836dd9a9d11e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 397945991917bf766dfed8498694be3f04b23cbe
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061969"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459927"
 ---
 > [!IMPORTANT]
-> Apparna Dynamics 365 Talent: Attract och Onboard tas ur bruk från den 1 februari 2022. Läs mer på [apparna Dynamics 365 Talent: Attract och Onboard tas ur bruk](../../human-resources/hr-talent-retire.md).
+> Dynamics 365 Talent: Attract- och Onboard-appar dras tillbaka. Läs mer på [Ta Dynamics 365 Talent: Attract- och Onboard-appar ur bruk](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps).

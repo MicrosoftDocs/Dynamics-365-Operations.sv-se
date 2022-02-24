@@ -1,10 +1,12 @@
 ---
 title: Underhållsstatus
 description: I det här avsnittet beskrivs hur du beräknar underhållsstatus i Tillgångshantering.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetStatusCalculate, EntAssetStatus
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 138e2e72fbf761d209d288c2bd778c08519b9c69b0715f4466d4838255a2a31e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5bac42d5cdc62361ee9a562e59bafa09ca7a215
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752019"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018506"
 ---
 # <a name="maintenance-status"></a>Underhållsstatus
 
@@ -57,14 +59,11 @@ I Tillgångshantering kan du göra en översiktsberäkning för en viss period f
 
 I bildskärmen nedan har knapparna **År** och **Månad** aktiverats. Med dessa val för **Gruppera efter** markerade får du en allmän översikt på basis av månadsvis arbetsbelastning och genomflöde som är relaterat till underhållsbegäranden och arbetsorder. 
 
-![Exempel på månatlig arbetsbelastning.](media/13-controlling-and-reporting.png)
+![Exempel på månatlig arbetsbelastning](media/13-controlling-and-reporting.png)
 
 ## <a name="example-2"></a>Exempel 2
 
 I bildskärmen nedan har information om funktionsplatser lagts till. Nu är det möjligt att jämföra arbetsbelastning och genomflöde på funktionsplatser, vilket kan representera geografiska platser, fabriker eller arbetsområden. 
 
-![Exempel på en månatlig arbetsbörda med funktionsplatser.](media/14-controlling-and-reporting.png)
+![Exempel på en månatlig arbetsbörda med funktionella platser](media/14-controlling-and-reporting.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

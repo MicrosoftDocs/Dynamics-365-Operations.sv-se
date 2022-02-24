@@ -1,10 +1,12 @@
 ---
 title: Manuell avskrivning
 description: Det här avsnittet innehåller en översikt över den manuella avskrivningsmetoden.
-author: moaamer
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: roschlom
 ms.custom: 13811
 ms.assetid: b0e837c9-515a-4aed-9060-5ec94f37edeb
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5b62bbdd5d745bc9d0745cc6fa6d6e8034a61e3
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 228e6c94042942a26793eb0bebc1186dd4767e7f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674837"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969039"
 ---
 # <a name="manual-depreciation"></a>Manuell avskrivning
 
@@ -30,11 +32,11 @@ Det här avsnittet innehåller en översikt över den manuella avskrivningsmetod
 
 När du ställer in en avskrivningsprofil för anläggningstillgångar och väljer **Manuellt** i fältet **Metod** på sidan **Avskrivningsprofiler** avgörs avskrivningen av anläggningstillgångar som är tilldelade till den här avskrivningsprofilen av procenten som du anger för varje intervall under kalenderåret. Intervallen som du ställer in procenttal för bokförs enligt det värde du valt i fältet **Periodfrekvens** på snabbfliken **Allmänt** på sidan **Avskrivningsprofiler**. Du kan välja följande värden:
 
-- Årligen
-- Varje månad
-- Varje kvartal
-- Halvårsvis
-- Dagligen
+-   Årligen
+-   Varje månad
+-   Varje kvartal
+-   Halvårsvis
+-   Dagligen
 
 När du har valt periodfrekvens klickar du på **Manuella tidsplaner** och ställer in procenttal frö varje bokföringsintervall. Tillsammans definierar de manuella tidsplanerna och bokföringsintervallen avskrivningsbeloppet, enligt exemplen senare i den här artikeln. Manuell avskrivning beräknas alltid i procent av anskaffningspriset. För manuell avskrivning behöver de avskrivningsintervall du anger inte utgöra 100 procent. Manuell avskrivning är en flexibel avskrivningsmetod som ofta används för att definiera en extraordinär avskrivningsprofil på sidan **Böcker**, till exempel en icke-periodisk avskrivning av speciella skäl (kanske skatteskäl).
 
@@ -73,6 +75,3 @@ Den sammanlagda procentsatsen för alla intervall behöver inte vara 100. Du kom
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

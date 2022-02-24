@@ -1,24 +1,26 @@
 ---
 title: Ange och jämför anbudsförfråganbud och tilldela kontrakt
 description: Det här ämnet förklarar hur du anger svar på en anbudsförfrågan (RFQ), poäng och jämför bud, och sedan tilldelar kontraktet till en av leverantörerna.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8378a491e528c1e1166f0688e29f923a25f23eed
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3f14b95a71397bf5879c97654620e1d4c22a1149
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579482"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016688"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Ange och jämför anbudsförfråganbud och tilldela kontrakt
 
@@ -32,7 +34,7 @@ Du kan ange budet som antingen leverantör eller anskaffningsproffs. Mer informa
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Ange ett svar som leverantör
 
-1. Gå till **Leverantörssamarbete \> Arbetsytor \> Leverantörsbudgivning**.
+1. På instrumentpanelen väljer du **Budgivning av leverantör**.
 2. I listan **Nya budinbjudningar**, hitta en anbudsförfrågan som precis skickades. Välj anbudsförfrågan som ska granskas efter önskemål.
 3. Markera **bifogade anbudsförfrågan** för att granska bilagor som har lagts till.
 4. Välj **bud** om du vill göra fälten redigerbara. Observera att fältet **budförlopp** är inställt **leverantören uppdaterar**.
@@ -74,7 +76,7 @@ Du kan ange budet som antingen leverantör eller anskaffningsproffs. Mer informa
 1. Välj **Jämför svar** på fliken **Allmänt** i åtgärdsfönstret.
 2. I fältet **Rangordning** anger du ett nummer.  
     - På den här sidan visas buden med rubriken och radinformationen och den totala på poängen på rubriknivån. Du kan jämföra raderna genom att sortera i rutnätet så att jämförbara rader finns bredvid varandra. I det här avsnittet ingår även följande information:
-    - **Kvantitet** – Kvantiteten som leverantören angav. Denna kvantitet kanske inte är lika med kvantiteten som specificerats i anbudsförfrågan.
+    - **Kvantitet** - Kvantiteten som leverantören angav. Denna kvantitet kanske inte är lika med kvantiteten som specificerats i anbudsförfrågan.
     - **Nettobelopp**: priset som anges av en leverantör för artiklarna på raden minus eventuella rabatter.
     - **Avvikelse**: Antal dagar som leveransdatumet i budhuvud eller raden avviker från det begärda leveransdatumet i huvudet för anbudsförfrågan eller anbudsförfråganraden. Du kan ange en ranking för varje bud.  
 3. Välj rubrikrad för det andra budet som du vill rangordna.
@@ -104,6 +106,3 @@ Du kan ange budet som antingen leverantör eller anskaffningsproffs. Mer informa
 ## <a name="view-the-purchase-order-that-is-generated"></a>Visa den inköpsorder som har genererats
 
 Välj **Inköpsorder** på fliken **Allmänt** i åtgärdsfönstret. Sidan som visas visar inköpsordern som genererades, när du godkände budet.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

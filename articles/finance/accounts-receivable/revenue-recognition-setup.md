@@ -2,23 +2,26 @@
 title: Inställning för intäktsredovisning
 description: I det här avsnittet beskrivs inställningsalternativen för intäktsredovisning och deras konsekvenser.
 author: kweekley
-ms.date: 11/24/2021
+manager: aolson
+ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867230"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459944"
 ---
 # <a name="revenue-recognition-setup"></a>Inställning för intäktsredovisning
 [!include [banner](../includes/banner.md)]
@@ -26,9 +29,7 @@ ms.locfileid: "7867230"
 En ny modul för **intäktsredovisning** har lagts till, inklusive menyartiklar för alla inställningar som krävs. I det här avsnittet beskrivs inställningsalternativen och deras konsekvenser.
 
 > [!NOTE]
-> Intäktsredovisningsfunktionen är nu aktiverad som standard via Funktionshantering. Om din organisation inte använder den här funktionen kan du stänga av den i arbetsytan **Funktionshantering**.
->
-> Intäktsredovisning, inklusive buntfunktionen, stöds inte i Commerce-kanaler (e-handel, kassa och callcenter). Artiklar som konfigureras för intäktsredovisning ska inte läggas till på order eller transaktioner som skapades i Commerce-kanaler.
+> Intäktsredovisningsfunktionen kan inte slås på via funktionshantering. För närvarande måste du använda konfigurationsnycklar för att slå på den.
 
 Modulen för **intäktsredovisning** har följande inställningsalternativ:
 
@@ -40,16 +41,12 @@ Modulen för **intäktsredovisning** har följande inställningsalternativ:
     - Artikelgrupper och frisläppta produkter
     - Definiera intäktsschema
     - Definiera intäktspris
-    - Lagerinställning
 
-        - Definiera intäktsschema
-        - Definiera intäktspris
+        - Bokföringsprofiler
+        - Buntar
 
-    - Bokföringsprofiler
-    - Buntar
-
-        - Bunta ihop komponenter
-        - Bunta artikel
+    - Bunta ihop komponenter
+    - Bunta artikel
 
 - Projektinställningar
 
@@ -61,7 +58,7 @@ Det första scenariot inträffar när alla avtalade förpliktelser har uppfyllts
 
 Det andra scenariot inträffar när en journal skapas efter omallokeringen. Omallokering sker när en försäljningsorderrad läggs till i en tidigare fakturerad försäljningsorder, eller när en ny försäljningsorder skapas som innehåller en rad som ingår i det ursprungliga kontraktet. Om en faktura har bokförts innan den nya försäljningsorderraden har lagts till måste en korrigerande redovisningstransaktion skapas för den bokförda kundfakturan.
 
-Journalen ställs in på sidan **Journalnamn** (**Intäktsredovisning \> Inställningar \> Journalnamn**). Journaltypen måste ställas in på **Intäktsredovisning**. 
+Journalen ställs in på sidan **Journalnamn** (**Intäktsredovisning \> Inställningar \> Journalnamn**). Journaltypen måste ställas in på **Intäktsredovisning**. Med hjälp av journalen för intäktsredovisning väljer du vilket bokföringsskikt som ska bokföras.
 
 ## <a name="parameters-for-revenue-recognition"></a>Parametrar för intäktsredovisning
 
@@ -74,9 +71,9 @@ Inställningarna för intäktsredovisning konfigureras på fliken **Intäktsredo
 - **Bokför fakturakorrigeringar i kundreskontra vid omallokering** – när du omallokerar fakturor som redan har bokförts måste redovisningsposten för den bokförda fakturan korrigeras. Använd det här alternativet för att ange hur korrigeringen ska göras.
 
     - Ställ in detta alternativ på **Nej** om du vill begränsa bokföringen av korrigeringstransaktionen till redovisningen. När alternativet är inställt på **Nej**, skapas inga ytterligare dokument i kundreskontra för den interna redovisningskorrigeringen. När fakturan betalas använder kvittningsprocessen den gamla redovisningsposten för att bokföra eventuella kassarabatter eller eventuella realiserade vinster eller förluster.
-    - Ställ in det här alternativet på **Ja** om du automatiskt vill skapa ett återföringsdokument och en ny faktura för korrigeringstransaktionen i kundreskontra. Eftersom den här korrigeringen är en intern redovisningskorrigering, skickas eller överförs inte de nya dokumenten till kunden. Återföringsdokumentet kvittas mot originalfakturan och den nya korrigerade fakturan betalas av kunden. Observera att alla tre dokumenten visas i rapporter, t. ex. kundutdraget.
+    - Ställ in det här alternativet på **Ja** om du automatiskt vill skapa ett återföringsdokument och en ny faktura för korrigeringstransaktionen i kundreskontra. Eftersom den här korrigeringen är en intern redovisningskorrigering, skickas eller överförs inte de nya dokumenten till kunden. Återföringsdokumentet kvittas mot originalfakturan och den nya korrigerade fakturan betalas av kunden. Observera att alla tre dokument visas i rapporter, t. ex. kundutdraget.
 
-[![Inställningsinformation.](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
+[![Inställningsinformation](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
 
 ## <a name="revenue-schedules"></a>Intäktsplaner
 
@@ -86,7 +83,7 @@ Om du identifierar intäkter efter milstolpe, rekommenderar vi att du skapar en 
 
 Intäktsplaner skapas på sidan **Intäktsplaner** (**Intäktsredovisning \> Inställningar \> Intäktsplaner**).
 
-[![Intäktsplaner.](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
+[![Intäktsplaner](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
 
 Ange beskrivande värden i fälten **Intäktsplan** och **Beskrivning**. Följande inställningar används för att skapa intäktsplanen när fakturan bokförs.
 
@@ -95,27 +92,20 @@ Ange beskrivande värden i fälten **Intäktsplan** och **Beskrivning**. Följan
 - **Automatiska kontraktsvillkor** – markera den här kryssrutan om kontraktets start- och slutdatum ska anges automatiskt. Dessa datum ställs automatiskt in för frisläppta produkter i intäktstypen **stöd för kontraktsartikel**. Kontraktets startdatum ställs automatiskt in på försäljningsorderradens begärda transportdatum och slutdatumet för kontraktet ställs automatiskt in på startdatumet plus antalet månader eller händelser som har definierats i inställningarna för intäktsplanen. Till exempel är produkten på försäljningsorderraden ett års garanti. Standardintäktsplanen **är** 12 M (12 månader) och rutan **Automatiska avtalsvillkor** markeras för denna intäktsplan. Om försäljningsorderraden har ett begärt transportdatum på 16 december 2019 är standarddatumet för kontraktets start den 16 december 2019 och standardslutdatumet för kontraktet är 15 december 2020.
 - **Redovisningsvillkor** – redovisningsvillkoret avgör hur intäktspriset fördelas över förekomsterna.
 
-    - **Månadsvis efter dagar** – beloppet fördelas baserat på de faktiska dagarna i varje kalendermånad.
+    - **Månadsvis efter datum** – beloppet fördelas baserat på de faktiska dagarna i varje månad.
     - **Varje månad** – beloppet fördelas jämnt över det antal månader som har definierats i förekomsterna.
-    - **Förekomster** – beloppet fördelas jämnt mellan förekomsterna, men kan inkludera en extra period om du väljer **Faktiskt startdatum** som redovisningsregel.
-    - **Räkenskapsperiod efter dagar** – beloppet fördelas baserat på de faktiska dagarna i varje räkenskapsperiod. 
+    - **Förekomster** – beloppet allokeras jämnt över förekomsterna, men kan inkludera en extra period om du väljer **Verkligt startdatum** som tolkningsregel.
 
-    **Månadsvis efter dagar** och **Räkenskapsperiod efter dagar** ger samma resultat när räkenskapsperioderna följer kalendermånaderna. Det enda undantaget är när redovisningsregeln är inställd som **Månadens/periodens slut** och fälten **Startdatum för kontrakt** och **Slutdatum** är tomma på en försäljningsorderrad.
+- **Igenkänningspraxis** – tolkningsregeln fastställer det standarddatumen som anges i intäktsplanen för fakturan.
 
-- **Redovisningsregel** – redovisningsregeln fastställer datumen som anges i intäktsplanen för fakturan.
+    - **Verkligt startdatum** – schemat skapas med hjälp av antingen kontraktets startdatum (för bokföring av artiklar som stöder \[kontraktsartiklar\]) eller fakturadatumet (för viktiga och icke-viktiga artiklar).
+    - **Första i månaden** – datumet på den första planraden är kontraktets startdatum (eller fakturadatum). Alla efterföljande planrader skapas emellertid för den första dagen i månaden.
+    - **Delning mitt i månaden** – datumet på den första planraden beror på fakturadatumet. Om fakturan bokförs från den första till den femtonde i månaden skapas intäktsplanen med hjälp av den första dagen i månaden. Om fakturan bokförs från den sextonde i månaden eller senare skapas intäktsplanen med hjälp av den första dagen i nästa månad.
+    - **Första dagen i nästa månad** – datumet enligt planen är den första dagen i nästa månad.
 
-    - **Faktiskt startdatum** – schemat skapas med hjälp av antingen kontraktets startdatum (för bokföring av artiklar som stöder \[PCS-artiklar\]) eller fakturadatumet (för grundläggande och icke grundläggande artiklar).
-    - **Första i månaden/perioden** – datumet på den första planraden är kontraktets startdatum (eller fakturadatum). Alla efterföljande planrader skapas emellertid för den första dagen i månaden eller räkenskapsperioden.
-    - **Delning mitt i månaden** – datumet på den första planraden beror på fakturadatumet. Om fakturan bokförs från den första till den femtonde i månaden skapas intäktsplanen med hjälp av den första dagen i månaden. Om fakturan bokförs den sextonde i månaden eller senare skapas intäktsplanen med hjälp av den första dagen i nästa månad.
+Välj knappen **Information om intäktsplan** om du vill visa de allmänna perioderna och de procentsatser som är bokförda i varje period. Som standard är värdet **redovisa procentsats** jämt fördelad över antalet perioder. Om du anger redovisningsvillkoret **Varje månad** eller **Förekomst** kan redovisningsprocentsatsen ändras. När du ändrar redovisningsprocentsatsen visas ett varningsmeddelande om att totalsumman inte är lika med 100 procent. När du får meddelandet kan du fortsätta att redigera rader. Den totala procentsatsen måste dock vara lika med 100 innan du stänger sidan.
 
-        **Delning mitt i månaden** kan inte väljas om redovisningsvillkoret har inställningen **Räkenskapsperiod efter dagar**.
-
-    - **Första dagen i nästa månad/period** – det datum som planen börjar är den första dagen i nästa månad eller räkenskapsperiod.
-    - **Månadens/periodens slut** – datumet på den första planraden är kontraktets startdatum (eller fakturadatum). Alla efterföljande planrader skapas emellertid för den sista dagen i månaden eller räkenskapsperioden. 
-
-Välj knappen **Information om intäktsplan** om du vill visa de allmänna perioderna och de procentsatser som är bokförda i varje period. Som standard är värdet **Redovisa procentsats** jämt fördelat mellan antalet perioder. Om du anger redovisningsvillkoret **Varje månad** kan redovisningsprocentsatsen ändras. När du ändrar redovisningsprocentsatsen visas ett varningsmeddelande om att totalsumman inte är lika med 100 procent. När du får det meddelandet kan du fortsätta att redigera rader. Den totala procentsatsen måste dock vara lika med 100 innan du stänger sidan.
-
-[![Information om intäktsplan.](./media/revenue-schedule-details-2nd-scrn.png)](./media/revenue-schedule-details-2nd-scrn.png)
+[![Information om intäktsplan](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
 
 ## <a name="inventory-setup"></a>Lagerinställning
 
@@ -148,9 +138,9 @@ Artikelgrupper och frisläppta produkter kan ställas in antingen med hjälp av 
     - **Maximal tolerans** – ange procentsatsen för det medianpris som tillåts.
     - **Minimal tolerans** – ange procentsatsen under det medianpris som tillåts.
 
-När du har konfigurerat inställningarna för den frisläppta produkten måste du manuellt definiera intäktspriset genom att ange det verkliga värdepriset eller medianpriset (om du använder medianprismetoden) på sidan **Intäktspriser** (gå till **Intäktsredovisning \> Inställningar \> Inställningar för lager \> Frisläppta produkter** och sedan till åtgärdsrutan där du på fliken **Sälj** går till gruppen **Intäktsredovisning** och väljer **Intäktspriser**).
+När du har konfigurerat inställningarna för den frisläppta produkten måste du manuellt definiera intäktspriset genom att ange det verkliga värdepriset eller medianpriset (om du använder medianprismetoden) på sidan **Intäktspriser** (gå till **Intäktsredovisning \> Inställningar \> Inställningar för lager \> Frisläppta produkter** och sedan till Åtgärdsfönstret där du på fliken **Sälj** går till gruppen **Intäktsredovisning** och väljer **Intäktspriser**).
 
-[![Intäktspriser.](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
+[![Intäktspriser](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
 
 Det intäktspris som definieras manuellt på den här sidan används för att bestämma allokeringen av intäktspris för varje försäljningsorder, baserat på de kriterier som definierats. Varje kriterium matchas mot försäljningsorderraden för att bestämma det intäktspris som ska användas i allokeringsprocessen.
 
@@ -161,7 +151,7 @@ Det intäktspris som definieras manuellt på den här sidan används för att be
 - **Intäktsallokeringspris** – beroende på vilket värde du har valt i fältet **Belopp eller procent av lista** anger du antingen ett belopp eller en procentsats som representerar intäktspriset som används för att fördela intäkten över elementen på försäljningsordern.
 - **Från datum** och **Till datum** – ange det datumintervall som intäktspriset är aktivt för. Dessa fält är valfria.
 
-Om alternativet **Aktivera rabattfördelningsmetod** på fliken **Redovisningsparametrar** är inställt på **Ja** och om fältet **Intäktstyp** för den frisläppta produkten är inställt på **Stöd för kontraktsartikel** måste du också ange de artiklar som stöds av den frisläppta produkten. Den här inställningen görs på sidan **Inställningsbas** (gå till **Intäktsredovisning \> Inställningar \> Lagerinställningar \> Frisläppta produkter** och i åtgärdsrutan på fliken **Sälj** i gruppen **Intäktsredovisning** välj **Inställningsbas**).
+Om alternativet **Aktivera rabattfördelningsmetod** på fliken **Redovisningsparametrar** är inställt på **Ja** och om fältet **Intäktstyp** för den frisläppta produkten är inställt på **Stöd för kontraktsartikel** måste du också ange de artiklar som stöds av den frisläppta produkten. Den här inställningen görs på sidan **Inställningsbas** (gå till **Intäktsredovisning \> Inställningar \> Lagerinställningar \> Frisläppta produkter** och på Åtgärdsfönstret på fliken **Sälj** i gruppen **Intäktsredovisning** välj **Inställningsbas**).
 
 På sidan **Inställningsbas** lägger du till en post för varje artikelgrupp som artikeln tillhör. När intäktsallokeringen sker fördelas intäktspriset på de grundläggande och icke-viktigaste delarna för kontraktsartikeln.
 
@@ -190,9 +180,9 @@ När du ställer in en buntad artikel måste du ställa in två fält på sidan 
 - På snabbfliken **Konstruera** i fältet **Produktionstyp** måste artikeln ställas in som en strukturlisteartikel.
 - På snabbfliken **Allmänt** i fältet **Bunt** måste artikeln markeras som en buntad artikel.
 
-Komponenterna måste tilldelas den överordnade bunten/strukturlisteartikeln på sidan **BOM-versioner** (gå till **Intäktsredovisning \> Inställningar \> Inställningar för lager och produkt \> Frisläppta artiklar** och i åtgärdsrutan, på fliken **Konstruera**, väljer du sedan **BOM‑versioner** i gruppen för **strukturlistor**). Mer information finns i inställningsdokumentationen för strukturlistor.
+Komponenterna måste tilldelas till den överordnade bunten/strukturlisteartikeln på sidan **BOM-versioner** (gå till **Intäktsredovisning \> Inställningar \> Inställningar för lager och produkt \> Frisläppta artiklar** och i Åtgärdsfönstret, på fliken **Konstruera**, väljer du sedan **BOM‑versioner** i gruppen för **strukturlistor**). Mer information finns i inställningsdokumentationen för strukturlistor.
 
-[![Frisläppta produkter, planer för strukturlistor.](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
+[![Frisläppta produkter, planer för strukturlistor](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 
 Om buntens överordnade artikel och buntkomponenter är inställda på allokering, fördelas buntens intäktspris på komponenterna baserat på deras procentsatser för intäktsbidrag.
 
@@ -202,6 +192,3 @@ Intäktsredovisning kan också användas för försäljningsorder som skapas gen
 
 - **Periodiserad fakturaintäkt** (under **Intäktskonton**) – ange huvudkontot för intäktspriset som bokförs för periodiserad intäkt (istället för intäkt). Intäktspriset periodiseras om försäljningsorderraden har en intäktsplan.
 - **Periodiserad kostnad** (under **Kostnadskonton**) – ange huvudkontot för kostnaden för det sålda beloppet för varor som bokförs till periodiserad kostnad för sålda varor om intäkten också periodiseras.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

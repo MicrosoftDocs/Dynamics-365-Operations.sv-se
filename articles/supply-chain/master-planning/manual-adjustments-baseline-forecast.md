@@ -1,10 +1,12 @@
 ---
 title: Gör manuella justeringar på baslinjeprognosen
 description: Detta ämne beskriver hur du kan göra manuella justeringar till en baslinje prognos och visa information om prognosen.
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8a29e93b252c5d4ec68dfcd9ffe2f63ac1b6af2
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: afdcbb98c96b2a685f64a16886b9a064ed13c2c0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778043"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967040"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Gör manuella justeringar på baslinjeprognosen
 
@@ -67,13 +69,14 @@ Du kan öppna **Demand forecast sidan detaljer för** att se mer information om 
 
 **Anteckningar:**
 
--   Om du aktiverar **Val av prognosmodell på detaljer för efterfrågeprognos** från funktionshantering kan du välja vilka prognosmodeller som ska inkluderas, för den historiska prognosen på sidan **Detaljer för efterfrågeprognos**. (Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard.)
+-   Om du aktiverar **Val av prognosmodell på detaljer för efterfrågeprognos** från funktionshantering kan du välja vilka prognosmodeller som ska inkluderas, för den historiska prognosen på sidan **Detaljer för efterfrågeprognos**.
 -   De konfidensintervall som visas i **Prognosdelen** av sidan representerar skillnaden mellan konfidensintervall övre gräns och konfidensintervallet undre gräns. För att se värdena för de övre och nedre gränserna, hovra över diagrammet i den **historiska efterfrågan och prognos grafiskt** .
 -   Om du använder Microsoft Azure Machine Learning-efterfrågeprognoser, kan du ange vilken förtroendenivå som den genererade prognosen ska ha. Ett konfidensintervall består av ett antal värden som fungerar som goda prognoser för efterfrågan. En 95-procentig konfidensnivå procenttal indikerar att det finns en 5-procentig risk att efterfrågan faller utanför konfidensintervallet.
 
 Du kan också göra manuella justeringar av prognosen på **efterfrågan sidan detaljer** genom att ändra värdena i **prognosen** raden i **prognos** .
 
-## <a name="additional-resources"></a>Ytterligare resurser
+<a name="additional-resources"></a>Ytterligare resurser
+--------
 
 [Övervaka prognosens exakthet](monitor-forecast-accuracy.md)
 
@@ -81,6 +84,3 @@ Du kan också göra manuella justeringar av prognosen på **efterfrågan sidan d
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

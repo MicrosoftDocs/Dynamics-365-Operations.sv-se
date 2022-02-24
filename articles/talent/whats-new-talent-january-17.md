@@ -45,6 +45,3 @@ Med denna ändring kommer standard för fältet **Åtgärd begärd av** nu vara 
 ### <a name="ideas-portal-updated"></a>Idéportal uppdaterad
 I app länkar för att skicka in en idé till Talent har uppdaterats till den nya idéportalen. Alla idéer som anges i gamla portalen har flyttats så alla dina bra idéer finns fortfarande där och tillgängliga att röstas av andra.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

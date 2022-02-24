@@ -141,6 +141,3 @@ Följ dessa steg om du vill uppdatera den befintliga mallen.
     9. På sidan **mappningsuppgift** väljer du den nya kolumnen som källa för att skapa en annan mappning för HIERARCHYTYPENAME.
 
         [![Mappning](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

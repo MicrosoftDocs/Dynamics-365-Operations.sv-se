@@ -1,25 +1,27 @@
 ---
 title: " Skapa och associera register"
 description: I den här proceduren visas hur du skapar ett kassaregister (POS).
-author: BrianShook
+author: rubencdelgado
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 48ad1891955b15d22f3cecac128a831adabdac87
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 2415945c5a8f73e095627d638fcc572c50ffe8ca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779437"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964905"
 ---
 # <a name="create-and-associate-registers"></a> Skapa och associera register
 
@@ -41,6 +43,3 @@ I den här proceduren visas hur du skapar ett kassaregister (POS). I den här pr
     * EFT-kassanumret används för att informera betalningsprocessorn vilken betalningterminal som skickar auktoriseringförfrågningar. Det här värdet kallas ofta ”Terminal-ID ”eller ”Organisationsnummer”. Organisationsnumret hittas på klistermärke på betalningsenheten.  
 9. Klicka på Spara.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

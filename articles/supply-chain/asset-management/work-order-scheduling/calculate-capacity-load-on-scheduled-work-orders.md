@@ -1,10 +1,12 @@
 ---
 title: Beräkna kapacitetsbeläggning på schemalagda arbetsorder
 description: I det här avsnittet beskrivs hur du beräknar kapacitetsbeläggning på planerade arbetsorder i Tillgångshantering.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ff244e51151a1cc0485cae25873566fa97253171516d48449fed75f070146431
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b7e4a20ed56b1eac29d16d527693d6e455cdc37
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766228"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021664"
 ---
 # <a name="calculate-capacity-load-on-scheduled-work-orders"></a>Beräkna kapacitetsbeläggning på schemalagda arbetsorder
 
@@ -48,13 +50,10 @@ Du kan beräkna kapacitetsbeläggning på schemalagda arbetsorder för att få e
 
 I bilden nedan visas resultatet av en beräkning som täcker tre veckor för beläggningstypen **reserverad**.
 
-![Figur 1.](media/08-work-order-scheduling.png)
+![Figur 1](media/08-work-order-scheduling.png)
 
 [!NOTE]
 Om du väljer beläggningstyperna **kapacitet** eller **rest** för beräkningen kommer samma resultat att visas om inga reservationer gjorts för resurserna under den valda perioden.
 
 För information om hur du beräknar kapacitetsbelastning på underhållsscheman och inte schemalagda arbetsordrar, se [Beräkna kapacitetsbeläggning](../capacity-planning/calculate-capacity-load.md).
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: ER Använd ekonomiska dimensioner som en datakälla (Del 3 - Designa rapporten)
-description: I det här avsnittet beskrivs hur du konfigurerar en elektronisk rapporteringsmodell (ER) för användning av ekonomiska dimensioner som datakälla för ER-rapporter. (Del 3)
+description: I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera en modell för elektronisk rapportering (ER) för att använda ekonomiska dimensioner som datakällor för ER-rapporter.
 author: NickSelin
+manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c854e9d30006dfa2deed63983a3a6b67f6ae9717
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: a12f88f1e8b5e451bc8a5c5486d820da61bf3ad0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605195"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684797"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER Använd ekonomiska dimensioner som en datakälla (Del 3 - Designa rapporten)
 
@@ -92,7 +94,7 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 59. Klicka på Add Attribute.
 60. Ange "Desc" i namnfältet.
 61. Klicka på OK.
-![Formatdesignersidans träd.](../media/er-financial-dimensions-guides-format1.png)
+![ER-åtgärdsdesignersida](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Mappa rapportelement till datakällor
 1. Klicka på fliken Mappning.
@@ -141,8 +143,5 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 44. Klicka på Bind.
 45. Klicka på Spara.
 46. Stäng sidan.
-![Formatdesignersidan, rapportelement som mappas till datakällor.](../media/er-financial-dimensions-guides-format2.png)
+![ER-åtgärdsdesignersida](../media/er-financial-dimensions-guides-format2.png)
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

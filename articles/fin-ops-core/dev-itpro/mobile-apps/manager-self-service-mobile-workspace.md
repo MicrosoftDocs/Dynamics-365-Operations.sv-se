@@ -1,10 +1,12 @@
 ---
 title: Mobil arbetsyta för mitt team
-description: Detta avsnitt innehåller information om den mobila arbetsytan för mitt team, som låter chefer se sina underställda och utökad personal.
+description: Detta avsnitt innehåller information om den mobila arbetsytan för mitt team, som låter chefer se sina underställda och utökad personal. Användare kan också skicka beröm till enskilda personer i sin rapporteringskedja.
 author: ShielaSogge
+manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 74abb4ce77b4fc13c614e8e1b734e1b9f5f24e0a728a10b79508e6be4faf3dca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6ac3bf0a6ce20866f749b0c14030b70770e5589c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767122"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680980"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobil arbetsyta för mitt team
 
@@ -78,7 +80,7 @@ Hämta och installera mobilappen Finance and Operations.
 3.  Första gången du loggar in uppmanas du ange användarnamn och lösenord. Ange dina autentiseringsuppgifter.
 4.  När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.
 
-[![Dra nedåt för att uppdatera.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>Visa team-medlemmar via arbetsytan för Mitt team
 1.  I mobilappen väljer du arbetsytan **Mitt team**. En lista över team-medlemmar visas. Listan visar också varje enskild teammedlems titel, samt alla eventuella underställda som medlemmen har.
@@ -95,6 +97,3 @@ Hämta och installera mobilappen Finance and Operations.
 1.  Välj **Skicka beröm**. 
 1. Ange den berömtext som du vill skicka. 
 1. Välj **Klar**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Navigeringsökning
 description: Det här avsnittet beskriver hur du använder sökfunktionen för att navigera till sidor.
 author: aneesmsft
-ms.date: 08/11/2021
+manager: AnnBe
+ms.date: 04/27/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e689bef43930dbe364baefaa9f4d0231394ff4f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 43fa263bcbb6f5a6465af59ffb744aa865d66239
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069994"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4799119"
 ---
 # <a name="navigation-search"></a>Navigeringsökning
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Det här avsnittet beskriver hur du använder sökfunktionen för att navigera till sidor.
 
@@ -37,7 +36,7 @@ Använd funktionen genom att klicka på ikonen **Sök** för att öppna rutan **
 > [!NOTE]
 > Rutan **Sök** hjälper dig att hitta och navigera till sidor. Den hjälper dig inte att hitta specifika data eller åtgärder.
 
-![sökruta.](media/navigation-search.png "Sökruta")
+[![sökruta](media/navigation-search.png "Sökruta")
 
 ## <a name="quickly-navigate-to-a-particular-page"></a>Navigera snabbt till en viss sida
 
@@ -63,6 +62,3 @@ Listan med sökresultat begränsas till tio objekt. Om du inte hittar vad du sö
 ## <a name="development"></a>Utveckling
 
 Från ett utvecklingsperspektiv är navigeringssökfunktionen mycket lätt att utnyttja, eftersom det inte finns någon faktiskt fördröjning mellan distributionen av menyalternativ och deras förmåga att visas i sökresultat. Så länge som menyalternativen länkas till från antingen navigeringsfönstret eller instrumentpanelen kommer dessa automatiskt att bli sökbara.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

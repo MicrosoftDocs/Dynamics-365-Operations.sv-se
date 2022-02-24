@@ -1,10 +1,12 @@
 ---
 title: Registrera förbrukning
 description: Det här avsnittet innehåller förklaringar av hur du registrerar förbrukning i Tillgångshantering.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderJournal, EntAssetWorkOrderAddSparePart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 619da584ea37e80b1803ae5983e52e8ee4053f3751a8df75a8f5bc1ddf7e65d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ea1522f8a8e4867d8d70fea59b493d139a1b01ef
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765595"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020791"
 ---
 # <a name="register-consumption"></a>Registrera förbrukning
 
@@ -54,7 +56,7 @@ I vissa fall kanske kan lägga till eller ta bort prognosrader på en arbetsorde
 
 På bilden nedan visas ett exempel på tim- och artikelregistreringar i en arbetsorder i **Arbetsorderjournaler**.
 
-![Figur 1.](media/01-consumption.png)
+![Figur 1](media/01-consumption.png)
 
 
 ## <a name="split-hours-on-work-orders-with-several-work-order-jobs"></a>Dela timmar på arbetsorder med flera arbetsorderjobb
@@ -73,13 +75,13 @@ Om en arbetsorder innehåller flera jobb för arbetsorder kan du registrera arbe
 
 6. Infoga antal arbetstimmar som ska delas i fältet **Timmar**.
 
-    ![Figur 2.](media/02-consumption.png)
+    ![Figur 2](media/02-consumption.png)
 
 7. Klicka på **OK**.
 
 *Exempel:* På bilden nedan visas journalrader för en arbetsorder som innehåller tre arbetsorderjobb. Den första raden, som innehåller tre arbetstimmar, har delats upp och en arbetstimme har registrerats för varje arbetsorderjobb. När de tre timregistreringsraderna har skapats, bestämmer du vad du ska göra med den ursprungliga timregistreringsraden (den första raden i exemplet). Du kan behålla den som den är eller ta bort den. 
 
-![Figur 3.](media/03-consumption.png)
+![Figur 3](media/03-consumption.png)
 
 ## <a name="financial-dimensions-on-consumption-registrations"></a>Ekonomiska dimensioner för förbrukningsregistreringar
 
@@ -92,6 +94,3 @@ När du gör förbrukningsregistreringar läggs ekonomiska dimensioner som hör 
 >[!NOTE]
 >För alla tre registreringstyperna valideras kombinationen av ekonomisk dimension, och ogiltiga kombinationer görs tomma. Detta är standardinställningen för andra Finance and Operations-appar.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

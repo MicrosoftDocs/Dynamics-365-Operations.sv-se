@@ -2,9 +2,11 @@
 title: Power BI ER-målstyper
 description: Det här avsnittet innehåller information om hur du konfigurerar Power BI ER-måltyp för utgående dokument.
 author: NickSelin
+manager: AnnBe
 ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 10.0.09
-ms.openlocfilehash: 499447b05ef6360cde95049e592d7c9ffe2da1c4ff26937482033b9f705c3acd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3355c3bced950f65964b124fee553d8c5b53c6b0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777438"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679592"
 ---
 # <a name="power-bi-destination"></a>Power BI-destination
 
@@ -30,12 +32,9 @@ Du kan konfigurera ett Microsoft Power BI-destination för varje mapp- eller fil
 
 Ange **Aktiverad** till **Ja** om du vill använda din ER-konfiguration för att ordna överföringen av data från din Dynamics 365 Finance-instans till Microsoft Power BI-tjänster. De överförda filerna lagras i en Microsoft SharePoint-serverinstans som måste ha konfigurerats för det syftet. Mer information finns i [Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
-[![Sidan Destinationsinställningar.](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)
+[![Sidan Destinationsinställningar](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

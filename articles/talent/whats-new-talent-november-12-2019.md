@@ -60,6 +60,3 @@ Alla nya funktioner förblir i förhandsgranskning i minst 30 dagar, vanligtvis
 I vissa situationer är en integrerad funktion som standard och kan inte inaktiveras (t.ex. arbetsytan **funktionshantering**).
  
 När en funktion är allmänt är tillgänglig kan den aktiveras eller inaktiveras i produktionsmiljöer. Arbetsytan **funktionshantering** anger när en förhandsgranskningsfunktion blir obligatorisk. Detta datum är vanligtvis den 1 oktober eller 1 april för anpassning till halvårs frisläppningsplanerna. De kan inte inaktivera obligatoriska funktioner. Du kan aktivera och inaktivera en funktion i alla miljöer tills den blir obligatorisk.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,133 +1,120 @@
 ---
-title: Konfigurera Dataverse-integrering
-description: I detta ämne beskrivs integreringen mellan Microsoft Dataverse och Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/19/2021
+title: Konfigurera Common Data Service-integrering
+description: Du kan aktivera eller inaktivera integration mellan Common Data Service och Dynamics 365 Human Resources. Du kan också visa synkroniseringsinformation, ta bort uppföljningsdata och synkronisera om en enhet för att hjälpa till att felsöka data från de två miljöerna.
+author: andreabichsel
+manager: AnnBe
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: CDSIntegrationAdministration
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c4e68142045b72b139bdda8be707a73e21e568fd
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d9ee4715526e18b33ae4b7e90b081ed5868bb19c
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065461"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527942"
 ---
-# <a name="configure-dataverse-integration"></a>Konfigurera Dataverse-integrering
+# <a name="configure-common-data-service-integration"></a>Konfigurera Common Data Service-integrering
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+Du kan aktivera eller inaktivera integration mellan Common Data Service och Dynamics 365 Human Resources. Du kan också visa synkroniseringsinformation, ta bort uppföljningsdata och synkronisera om en enhet för att hjälpa till att felsöka data från de två miljöerna.
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+När du stänger av integrationen kan användarna göra ändringar i personal eller Common Data Service, men dessa ändringar synkroniseras inte mellan de två miljöerna.
 
-Du kan aktivera eller inaktivera integrering mellan Microsoft Dataverse och Dynamics 365 Human Resources. Du kan också visa synkroniseringsinformationen, rensa spårningsdata och synkronisera om ett register för att hjälpa till att felsöka dataproblem från de två miljöerna.
+Som standard inaktiveras dataintegrering mellan personal och Common Data Service.
 
-> [!NOTE]
-> Mer information om Dataverse (tidigare Common Data Service) och terminologiuppdateringar finns i [Vad är Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
-
-När du stänger av integreringen kan användarna göra ändringar i personal eller Dataverse, men dessa ändringar synkroniseras inte mellan de två miljöerna.
-
-Som standard inaktiveras dataintegrering mellan personal och Dataverse.
-
-Du kanske vill inaktivera integrering i följande situationer:
+Du kanske vill inaktivera integration i följande situationer:
 
 - Du fyller i data via datahanteringsramverket och måste importera data flera gånger för att de ska få rätt status.
 
-- Det finns problem med data i personal eller Dataverse. Om du inaktiverar integrering kan du ta bort en post i en miljö utan att ta bort den i den andra. När du aktiverar integreringen igen kommer posten i miljön där den inte togs bort att synkroniseras till den miljö där den togs bort. Synkroniseringen påbörjas nästa gång batchjobbet **Dataverse-integrering missade begärd synkronisering** körs.
+- Det finns problem med data i personal eller Common Data Service. Om du inaktiverar integration kan du ta bort en post i en miljö utan att ta bort den i den andra. När du aktiverar integreringen igen kommer posten i miljön där den inte togs bort att synkroniseras till den miljö där den togs bort. Synkroniseringen påbörjas nästa gång batchjobbet **Common Data Service-integrering missade begärd synkronisering** körs.
 
 > [!WARNING]
-> När du stänger av dataintegreringen måste du se till att du inte redigerar samma post i båda miljöerna. När du slår på integreringen igen synkroniseras posten som du senast redigerade. Om du inte gör samma ändringar i den här posten i båda miljöerna kan det därför hända att data går förlorade.
+> När du stänger av dataintegreringen måste du se till att du inte redigerar samma post i båda miljöerna. När du slår på integrationen igen synkroniseras posten som du senast redigerade. Om du inte gör samma ändringar i den här posten i båda miljöerna kan det därför hända att data går förlorade.
 
-## <a name="access-the-dataverse-integration-page"></a>Öppna sidan Dataverse-integrering
+## <a name="access-the-common-data-service-integration-page"></a>Öppna sidan Common Data Service-integration
 
-1. I personalinstansen där du vill visa eller konfigurera inställningar för integrering med Dataverse väljer du panelen **systemadministration**.
+1. I personalinstansen där du vill visa eller konfigurera inställningar för integrering med Common Data Service väljer du panelen **systemadministration**.
 
-    [![Panelen Systemadministration.](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
+    [![Panelen Systemadministration](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
 2. Välj fliken **Länkar**.
 
-    [![Fliken Länkar.](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
+    [![Fliken Länkar](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
-3. Under **Integreringer**, välj **Dataverse konfiguration**.
+3. Under **Integrationer**, välj **Common Data Service konfiguration**.
 
-    [![Dataverse-konfigurationslänk.](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
+    [![Common Data Service konfigurationslänk](./media/hr-select-common-data-service-configuration.png)](./media/hr-select-common-data-service-configuration.png)
 
-## <a name="turn-data-integration-between-human-resources-and-dataverse-on-or-off"></a>Aktivera och inaktivera dataintegrering mellan personal och Dataverse
+## <a name="turn-data-integration-between-human-resources-and-common-data-service-on-or-off"></a>Aktivera och inaktivera dataintegrering mellan personal och Common Data Service
 
-- Ställ in alternativet **Aktivera Dataverse-integrering** som **Ja** på sidan **Microsoft Dataverse-integrering** för att aktivera integrering.
+- Aktivera integration genom att ställa in alternativet **Aktivera integration till Common Data Service** till **Ja**.
 
     > [!NOTE]
-    > När du aktiverar integreringen kommer data att synkroniseras nästa gång som batchjobbet **Dataverse-integrering missade begärd synkronisering** körs. Alla data måste vara tillgängliga när batch-jobbet har slutförts.
+    > När du aktiverar integrationen kommer data att synkroniseras nästa gång som batchjobbet **Common Data Service-integrering missade begärd synkronisering** körs. Alla data måste vara tillgängliga när batch-jobbet har slutförts.
 
-- Om du vill stänga av integreringen ställer du in alternativet på **Nej**.
+- Om du vill stänga av integrationen ställer du in alternativet på **Nej**.
 
-[![Aktivera eller inaktivera Dataverse-integreringen.](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
+[![Aktivera eller inaktivera Common Data Service-integreringen](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
 
 > [!WARNING]
-> Vi rekommenderar att du inaktiverar Dataverse integrering när du utför dataflyttningsuppgifter. Stora dataöverföringar kan påverka prestanda betydligt. Exempelvis kan överföringar av 2 000 medarbetare ta flera timmar när integreringen är aktiverad och mindre än en timme när den är inaktiverad. Siffrorna i det här exemplet är endast avsedda som demonstrationer. Hur lång tid det tar att importera poster kan variera kraftigt baserat på många faktorer.
+> Vi rekommenderar att du inaktiverar Common Data Service integration när du utför dataflyttningsuppgifter. Stora dataöverföringar kan påverka prestanda betydligt. Exempelvis kan överföringar av 2 000 arbetare ta flera timmar när integreringen är aktiverad och mindre än en timme när den är inaktiverad. Siffrorna i det här exemplet är endast avsedda som demonstrationer. Hur lång tid det tar att importera poster kan variera kraftigt baserat på många faktorer.
 
 ## <a name="view-data-integration-details"></a>Visa information om dataintegrering
 
-På snabbfliken **Administration** på sidan **Microsoft Dataverse-integrering** kan du se hur raderna är kopplade till varandra mellan Personal och Dataverse.
+På snabbfliken **administration** på sidan **Common Data Service-integration** kan du se hur posterna är kopplade till varandra mellan personal och Common Data Service.
 
-- Om du vill visa raderna för ett register markerar du registret i fältet **Dataverse-register**. I rutnätet visas alla rader som är länkade till det valda registret.
+- Om du vill visa posterna för en entitet markerar du enheten i fältet **CDS-enhetsnamn**. I rutnätet visas alla poster som är länkade till den valda enheten.
+
+[![Visa posterna för en enhet](./media/hr-common-data-service-configuration-view-entity.png)](./media/hr-common-data-service-configuration-view-entity.png)
 
 > [!NOTE]
-> Alla Dataverse-register visas inte för närvarande i listan. Endast register som stöder användning av anpassade fält visas i rutnätet. Nya register blir tillgängliga genom kontinuerliga uppdateringar av Personal.
+> Alla Common Data Service-entiteter visas inte för närvarande i listan. Endast enheter som stöder användning av anpassade fält visas i rutnätet. Nya enheter blir tillgängliga genom kontinuerliga uppdateringar av personal.
 
 Rutnätet innehåller följande fält:
 
-- **Dataverse-register** – Namnet på registret i Dataverse.
-- **Registerreferens för Dataverse** – Den identifierare som Dataverse använder för att identifiera en post. Detta värde är detsamma som ett värde för personalvärdet **RecId**. Du kan hitta identifieraren när du öppnar Dataverse-registret i Microsoft Excel.
-- **Namn på Personal-entitet** – den Personal-enhet som senast synkroniserade data till Dataverse. Entiteten kan antingen ha Dataverse prefixet eller ett annat prefix.
+- **CDS-enhetsnamn** – namnet på enheten i Common Data Service.
+- **CD-enhetsreferens** – identifieraren aom Common Data Service använder för att identifiera en post. Detta värde är detsamma som ett värde för personalvärdet **RecId**. Du kan hitta identifieraren när du öppnar Common Data Service entiteten i Microsoft Excel.
+- **Namn på personalenhet** – den enhet som senast synkroniserade data till Common Data Service. Entiteten kan antingen ha Common Data Service prefixet eller ett annat prefix.
 - **Personalreferens** – **RecId**-värdet som är kopplat till posten i personal.
-- **Borttaget från Dataverse** – Ett värde som anger huruvida raden tagits bort från Dataverse.
+- **Togs bort från CDS** – ett värde som anger om posten togs bort från Common Data Service.
 
-> [!NOTE]
-> Poster i Personal motsvarar rader i Dataverse.
+## <a name="remove-the-association-of-a-record-in-human-resources-from-common-data-service"></a>Ta bort kopplingen för en post i personal från Common Data Service
 
-## <a name="remove-the-association-of-a-human-resources-record-from-a-dataverse-row"></a>Ta bort kopplingen för en Personal-post från en Dataverse-rad
+Om du får problem under synkroniseringen mellan personal och Common Data Service kan du kanske lösa dem genom att avmarkera spårningen och låta spårningstabellen synkroniseras igen. Om du tar bort kopplingen och sedan ändrar eller tar bort en post i Common Data Service synkroniseras inte ändringarna med personal. Om du ändrar i personal skapas en ny spårningspost och posten uppdateras i Common Data Service.
 
-Om du får problem under synkroniseringen mellan personal och Dataverse kan du kanske lösa dem genom att avmarkera spårningen och låta spårningstabellen synkroniseras igen. Om du tar bort kopplingen och sedan ändrar eller tar bort en rad i Dataverse synkroniseras inte ändringarna med Personal. Om du utför ändringar i Personal skapas en ny spårningspost och raden uppdateras i Dataverse.
+- Om du vill ta bort en posts koppling mellan personal och Common Data Service, markera enheten i fältet **CDS-enhetsnamn** och väljer sedan **Rensa uppföljningsinformation**.
 
-- Om du vill ta bort kopplingen mellan en Personal-post och en Dataverse-rad väljer du registret i fältet **Dataverse-register** och sedan **Rensa spårningsinformation**.
+[![Rensa uppföljningsinformation](./media/hr-common-data-service-configuration-clear-tracking.png)](./media/hr-common-data-service-configuration-clear-tracking.png)
 
-[![Rensa spårningsinformation.](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
+Information om hur du kör en fullständig synkronisering på entiteten efter att du har rensat spårningen finns i nästa procedur.
 
-Se nästa procedur för att köra en fullständig synkronisering på registret efter det att du har rensat spårningen.
-
-## <a name="sync-a-table-between-human-resources-and-dataverse"></a>Synkronisera ett register mellan Personal och Dataverse
+## <a name="sync-an-entity-between-human-resources-and-common-data-service"></a>Synkronisera en enhet mellan personal och Common Data Service
 
 Gör på följande sätt när:
 
-- Ändringar från Dataverse tar för lång tid att visas i personal.
+- Ändringar från Common Data Service tar för lång tid att visas i personal.
 
 - Du måste uppdatera spårningstabellen när du har avmarkerat spårningen.
 
-Så här kör du en fullständig synkronisering på ett register mellan Personal och Dataverse:
+Så här kör du en fullständig synkronisering på en enhet mellan personal och Common Data Service:
 
-1. Välj registret i fältet **Dataverse-register**.
+1. Välj entitet i fältet **CDS entitetsnamn**.
 
 2. Välj **Synkronisera nu**.
 
-[![Köra en fullständig synkronisering.](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
-
-## <a name="see-also"></a>Se även
-
-[Dataverse-register](hr-developer-entities.md)<br>
-[Konfigurera virtuella Dataverse-register](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Vanliga frågor och svar om virtuella register i Human Resources](hr-admin-virtual-entity-faq.md)<br>
-[Vad är Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
-[Terminologiuppdateringar](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+[![Köra en fullständig synkronisering](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

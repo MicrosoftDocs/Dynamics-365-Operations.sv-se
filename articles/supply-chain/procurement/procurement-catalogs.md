@@ -1,28 +1,28 @@
 ---
 title: Översikt över anskaffningskataloger
 description: Den här artikeln beskriver, på en hög nivå, hur professionella inköpare kan ställa in och underhålla anskaffningskataloger. Anskaffningskataloger definierar de artiklar och tjänster som anställda i företaget kan beställa för intern användning.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, CatDisplayProductRelationAdd
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "2214"
-- intro-internal
+ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efe0541859822b4c6404f2833ae38e07b79dd634
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: fcbe55adfc834b6170ca4c2a242d6bff5264ac8a
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984305"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019789"
 ---
 # <a name="procurement-catalogs-overview"></a>Översikt över anskaffningskataloger
 
@@ -68,12 +68,10 @@ Uppdateringar publiceras automatiskt eller fylls i manuellt, beroende på det al
 -   **Båda** – Om katalogen som inkluderar produktkategorier har standarduppdateringtypen **Statisk** måste den uppdateras manuellt när dessa kategorier uppdateras. Om katalogen inkluderar produktkategorier har standarduppdateringstypen **Dynamiskt**, uppdateras den automatiskt när som helst den har ändrats.
 
 
-## <a name="additional-resources"></a>Ytterligare resurser
+<a name="additional-resources"></a>Ytterligare resurser
+--------
 
 [Ställ in en anskaffningskategorihierarki](tasks/set-up-procurement-category-hierarchy.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,6 +41,3 @@ Nya alternativ har lagts till ledighet och frånvaro (**personal** parametrar) f
 
 ### <a name="worker-hire-actions-are-stuck-in-workflow-complete-state"></a>Arbetarens anställningåtgärder ligger kvar i tillståndet ”Arbetsflöde slutfört”
 Ändringar har gjorts som korrigerar ett problem där ett litet antal arbetsflöden slutförs med status ”arbetsflöde slutfört”. Nya arbetsflöden ska gå till läget ”slutfört” när arbetsflödet har slutförts. Alla arbetsflöden i en slutförd arbetsflödesstatus kommer övergå till felstatus för att uppdatera eller ta bort om det behövs. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

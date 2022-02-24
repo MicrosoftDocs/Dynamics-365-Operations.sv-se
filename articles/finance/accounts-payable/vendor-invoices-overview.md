@@ -1,42 +1,41 @@
 ---
 title: Översikt över leverantörsfakturor
-description: Det här ämnet innehåller allmän information om leverantörsfakturor.
+description: Det här ämnet innehåller allmän information om leverantörsfakturor. Leverantörsfakturor är förfrågningar för betalning av varor och tjänster som togs emot. Leverantörsfakturor kan representera en faktura för pågående tjänster eller baseras på inköpsorder för vissa varor och tjänster.
 author: abruer
-ms.date: 06/03/2021
-ms.topic: overview
+manager: AnnBe
+ms.date: 07/17/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "13971"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22535f4bc320bde096214e2044cfeb00d4e9fbbc
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d51a5ff2dca764a534ea4bf92c30bcf0bf0a5dad
+ms.sourcegitcommit: 51cd470ee885d12f7d51c66201b092aaa16dfaa6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985347"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4701686"
 ---
 # <a name="vendor-invoices-overview"></a>Översikt över leverantörsfakturor
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-
-Det här ämnet innehåller allmän information om leverantörsfakturor. Leverantörsfakturor är förfrågningar gällande betalning av varor och tjänster. Leverantörsfakturor kan komma att representera en faktura för pågående tjänster eller också baseras på inköpsorder för specifika varor och tjänster.
+Det här ämnet innehåller allmän information om leverantörsfakturor. Leverantörsfakturor är förfrågningar för betalning av varor och tjänster som togs emot. Leverantörsfakturor kan representera en faktura för pågående tjänster eller baseras på inköpsorder för vissa varor och tjänster.
 
 ## <a name="vendor-invoices"></a>Leverantörsfakturor
 
-En leverantörsfaktura från en inköpsorder skapas när produkter eller tjänster tas emot enligt en inköpsorder som skickats till en leverantör. Leverantörsfakturor innehåller en rubrik och en eller flera rader för artiklar eller tjänster. En leverantörsfaktura slutför cykeln från inköpsordern till produktinleveransen till leverantörsfakturan.
+En leverantörsfaktura från en inköpsorder är en faktura som skapas när produkter eller tjänster tas emot enligt en inköpsorder som skickades till en leverantör. Leverantörsfakturor innehåller en rubrik och en eller flera rader för artiklar eller tjänster. En leverantörsfaktura slutför cykeln från inköpsordern till produktinleveransen till leverantörsfakturan.
 
-Även om vissa leverantörsfakturor är kopplade till en inköpsorder kan leverantörsfakturor också innehålla rader som inte motsvarar inköpsorderrader. Du kan också skapa leverantörsfakturor som inte är kopplade till en inköpsorder. Dessa leverantörsfakturor kan representera pågående tjänster, till exempel en elräkning. Du behöver inte referera till en inköpsorder när du lägger till en pågående tjänst.
+Även om en del leverantörsfakturor är kopplade till en inköpsorder, kan leverantörsfakturor också innehålla rader som inte motsvarar inköpsorderrader. Du kan också skapa leverantörsfakturor som inte är kopplade till en inköpsorder. Dessa leverantörsfakturor kan representera pågående tjänster, såsom en elräkning, och du måste inte referera till en inköpsorder när du lägger till dem.
 
 Det finns flera sätt att ange en leverantörsfaktura:
 
@@ -49,12 +48,12 @@ Följande diskussion innehåller mer information om hur du använder sidorna **�
 
 ## <a name="understanding-invoice-line-quantities"></a>Förstå fakturaradkvantiteter
 
-När du öppnar en leverantörsfaktura från en relaterad inköpsorder skapar systemet fakturarader från inköpsordern. Som standard tar systemet kvantiteterna från produktinleveransen. Du kan dock använda en av följande standardinställningar:
+När du öppnar en leverantörsfaktura från en relaterad inköpsorder skapas fakturarader från inköpsordern. Som standard tas kvantiteterna från produktinleveranskvantiteten. Du kan dock använda en av följande standardinställningar:
 
-- **Kvantitet för Inleverera nu** – Använd det här alternativet för delförsändelser. Systemet anger standardvärdet i fältet **Kvantitet** från den kvantitet som anges i fältet **Inleverera nu** på inköpsordern.
-- **Beställd kvantitet** – Använd det här alternativet för fullständiga försändelser. Systemet anger standardvärdet i fältet **Kvantitet** från den kvantitet som anges i fältet **Beställt** på inköpsordern.
+- **Kvantitet för Inleverera nu** – Använd det här alternativet för delförsändelser. Standardvärdet i fältet **Kvantitet** hämtas från kvantiteten som anges i fältet **Inleverera nu** på inköpsordern.
+- **Beställd kvantitet** – Använd det här alternativet för fullständiga försändelser. Standardvärdet i fältet **Kvantitet** hämtas från kvantiteten som anges i fältet **Betälld** på inköpsordern.
 - **Registrerad kvantitet** – Använd det här alternativet om artikeln måste registreras på sättet som anges på sidan **Artikelmodellgrupper**. Standardvärdet i fältet **Kvantitet** är den fysiska uppdaterade kvantiteten som har registrerats.
-- **Kvantitet för produktinleverans** – Använd det här alternativet om en produktinleverans redan har inlevererats för ordern. Systemet hämtar standardvärdet i fältet **Kvantitet** från den totala kvantiteten tillgängliga produktinleveranser.
+- **Kvantitet för produktinleverans** – Använd det här alternativet om en produktinleverans redan har inlevererats för ordern. Standardvärdet i fältet **Kvantitet** hämtas från den totala kvantiteten i tillgängliga produktinleveranser.
 - **Registrerade kvantitet och tjänster** – Använd det här alternativet om kvantiteter har registrerats i införseljournaler för artiklar i lager eller artiklar som inte lagras. Det här alternativet inkluderar tjänster, oavsett om de registreras inte.
 
 Om din juridiska person använder fakturamatchning kan du visa resultaten på kvantiteten som matchar i kolumnen **Matchning av kvantitet för produktinleverans**. Du kan också använda knappen **Matcha detaljer** på fliken **Granska** på åtgärdsfönstret om du vill visa resultatet av kvantitetsmatchningen.
@@ -65,24 +64,23 @@ Du kan lägga till en rad som inte fanns i inköpsordern till leverantörsfaktur
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Skicka in en leverantörsfaktura för granskning
 
-Organisationen kan använda arbetsflöden för att hantera granskningen för leverantörsfakturor. Arbetsflödesgranskningen kan krävas för fakturahuvudet, fakturaraden eller båda. Arbetsflödeskontrollerna används för sidhuvudet eller raden beroende på var fokus ligger innan du väljer kontrollen. Istället för knappen **Bokför** visas knappen **Skicka** som skickar leverantörsfakturan genom granskningsprocessen.
+Organisationen kan använda arbetsflöden för att hantera granskningen för leverantörsfakturor. Arbetsflödesgranskningen kan krävas för fakturahuvudet, fakturaraden eller båda. Arbetsflödeskontrollerna används för sidhuvudet eller raden beroende på var fokus ligger innan du väljer kontrollen. Istället för knappen **Bokför** ser du knappen **Skicka** som skickar leverantörsfakturan över granskningen.
 
 ### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Förhindra att faktura skickas till arbetsflödet 
 
 Nedan kan du på flera sätt förhindra att en faktura skickas till ett arbetsflöde.
 
-- **Fakturatotal och den registrerade totalen är inte lika.** Den person som har skickat fakturan får en notifiering om att summorna inte är identiska. Notifieringen ger dig möjlighet att korrigera saldona innan du skickar fakturan till arbetsflödet på nytt. Den här funktionen är tillgänglig om parametern **förbjuden överföring till arbetsflödet när faktura summan och den registrerade faktura summan inte lika** på sidan **funktionshantering** är aktiverad. 
+- **Fakturatotal och den registrerade totalen är inte lika.** Den person som skickade fakturan får en notifiering om att summorna inte är lika utformade så att de kan korrigera saldona innan fakturan skickas vidare till arbetsflödet. Den här funktionen är tillgänglig om parametern **förbjuden överföring till arbetsflödet när faktura summan och den registrerade faktura summan inte lika** på sidan **funktionshantering** är aktiverad. 
+
 - **Fakturan innehåller icke-allokerade tillägg.** Den person som skickade fakturan får en notifiering om att fakturan innehåller icke-allokerade tillägg så att de kan korrigera fakturan innan den skickas vidare till arbetsflödet. Den här funktionen är tillgänglig om parametern **förbjuden överföring där det finns icke-allokerade tillägg på en leverantörsfaktura** på sidan **funktionshantering** är aktiverad.
-- **Fakturan innehåller samma fakturanummer som en annan bokförd faktura.** Den person som har skickat fakturan får ett meddelande om att en faktura med ett dubblettnummer har hittats. Dubblettnumret kan korrigeras innan fakturan skickas till arbetsflödet på nytt. Denna notifiering visas när parametern **Kontrollera använt fakturanummer** under Leverantörsreskontra anges som **Avvisa dubblett**. Den här funktionen är tillgänglig om parametern **Förbud att skicka till arbetsflöde när fakturanumret redan finns på en bokförd faktura och ditt system inte är inställt för att acceptera duplicerade fakturanummer** på sidan **funktionshantering** aktiveras.
-- **Fakturan innehåller en rad där fakturakvantiteten är mindre än den matchade produktinleveranskvantiteten.** Den person som skickar fakturan eller försöker att bokföra får ett meddelande om att kvantiteterna inte är lika. Detta meddelande ger dig möjlighet att korrigera värdena innan du skickar fakturan till arbetsflödet på nytt. Den här funktionen är tillgänglig om parametern **Blockera bokföring och inlämning av leverantörsfakturor till arbetsflödet** på sidan **Funktionshantering** aktiveras och parametern **Blockera publicering och inlämning till arbetsflöde** på sidan **Parametrar för leverantörsreskontra** aktiveras.
+
+- **Fakturan innehåller samma fakturanummer som en annan bokförd faktura.** Den person som skickade fakturan får en notifiering om att fakturan med ett duplicerat nummer hittades och de kan korrigera den innan den skickas vidare till arbetsflödet. Den här notifieringen visas när parametern Leverantörsreskontra med etiketten **Kontrollera använt fakturanummer** anges till **Avvisa dubblett**. Den här funktionen är tillgänglig om parametern **Förbud att skicka till arbetsflöde när fakturanumret redan finns på en bokförd faktura och ditt system inte är inställt för att acceptera duplicerade fakturanummer** på sidan **funktionshantering** aktiveras.  
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Matcha leverantörsfakturor mot produktinleveranser
 
 Du kan ange och spara information för leverantörsfakturor, och du kan matcha fakturarader mot produktinleveransrader. Det går även att matcha delkvantiteter på en rad.
 
 Du kan skapa en leverantörsfaktura som baseras på de radartiklar i produktinleveransen som har inlevererats till nuvarande datum, även om alla artiklar för en viss inköpsorder ännu inte har inlevererats. Använd det här alternativet om till exempel leverantören skickar en faktura per månad som täcker alla leveranser som skickas den månaden. Varje produktinleverans representerar en del av eller hela leveransen av artiklarna på inköpsordern.
-
-När en faktura är i arbetsflödet kan godkännaren uppdatera fakturakvantiteter så att dessa matchar värdet i fältet **Produktinleveranskvantitet-att-matcha**. Detta gör du genom att välja funktionen **Uppdatera fakturakvantiteter så att dessa matchar produktinleveranskvantiteterna i arbetsflödet** i arbetsytan **Funktionshantering** och sedan **Aktivera**. Om en godkännare i arbetsflödesprocessen har tagit bort alla träffar från alla produktinleveranser från fakturaraden, tas fakturaraden bort. Om den här funktionen inte är aktiverad, uppdateras inte fakturakvantiteter för fakturor i arbetsflödet.
 
 När du bokför fakturan uppdateras kvantiteten **Fakturarest** för varje artikel med summan av de inlevererade kvantiteterna från de valda produktinleveranserna. Om både kvantiteten **Fakturarest** och kvantiteten **Leveransrest** för alla artiklar på inköpsordern är noll, ändras statusen för inköpsordern till **Fakturerad**. Om kvantiteten **Fakturarest** inte är noll, ändras inte inköpsorderns status och ytterligare fakturor kan registreras för den.
 
@@ -119,32 +117,9 @@ En arbetsflödesinstans som har stoppats på grund av ett oåterkalleligt fel f�
 På sidan **Arbetsflödeshistorik** för leverantörsfakturor kan du återställa arbetsflödesstatusen till **utkast**. Du kan öppna den här sidan från **leverantörsfakturan** eller från navigeringen **Allmänt > Förfrågningar > Arbetsflöde**. Om du vill återställa arbetsflödesstatus **utkast**, välj **återkalla**. Du kan också återställa arbetsflödesstatus till utkast genom att välja åtgärden **återkalla** på sidan **leverantörsfaktura** eller **väntande leverantörsfakturor**. När arbetsflödesstatusen har återställts till **Utkast** blir den tillgänglig för redigering på sidan **leverantörsfaktura**.
 
 ## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>Visa fakturasumman på sidan Väntande leverantörsfakturor
-
 Du kan visa fakturasumman på sidan **Väntande leverantörsfakturor** genom att aktivera parametern **Visa fakturasumma i listan med pågående leverantörsfakturor** på sidan **Parametrar för leverantörsreskontra**. 
 
-## <a name="vendor-open-transactions-report"></a>Rapport med öppna leverantörstransaktioner
 
-Rapporten **Öppna leverantörstransaktioner** innehåller detaljerad information om de öppna transaktionerna för varje leverantör per det datum som du anger. Den här rapporten används ofta under granskningsproceduren för att verifiera saldon mellan leverantörsbokstransaktioner och redovisningskontotransaktioner.
-
-För varje transaktion innehåller rapporten följande information:
-
-- Fakturanummer
-- Transaktionsdatum
-- Verifikationsnummer
-- Transaktionsbelopp i transaktionsvalutan och i redovisningsvalutan
-- Kreditsaldo i transaktionsvalutan och i redovisningsvalutan
-- Debetsaldo i transaktionsvalutan och i redovisningsvalutan
-- Delsummabelopp i redovisningsvaluta
-- Betalningens förfallodatum
-
-### <a name="filter-the-data-on-the-report"></a>Filtrera data i rapporten
-
-När du genererar rapporten **Öppna leverantörstransaktioner** visas följande standardparametrar. Du kan använda dem om du vill filtrera vilka data som ska ingå i rapporten.
-
-- **Exkludera framtida kvittning** – Markera den här kryssrutan om du vill exkludera transaktioner som kvittas efter det datum som har angetts i **öppna transaktioner per** fält.
-- **Öppna transaktioner per** – Ange ett datum om du vill inkludera transaktioner som är öppna från och med detta datum. Om du inte anger något datum används maximalt datum i det här fältet. (Det högsta datumet är det senaste datumet som systemet accepterar, 31 december 2154.) Nästa gång rapporten körs ställs det här fältet som standard in det senaste datumet som angavs i den.
-
-Du kan använda filtren under fältet **Post att inkluderas** om du vill ta med fält om du ytterligare vill begränsa transaktionsdata som inkluderas i rapporten.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
@@ -153,6 +128,3 @@ Du kan använda filtren under fältet **Post att inkluderas** om du vill ta med 
 - [Mata in fakturadata i leverantörsreskontra genom att använda en godkänd journal](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Mata in fakturadata i LR-systemet genom att använda fakturapool](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Registrera en leverantörsfaktura i fakturajournalen](tasks/record-vendor-invoice-invoice-journal.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

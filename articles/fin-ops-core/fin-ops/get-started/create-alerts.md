@@ -1,24 +1,26 @@
 ---
 title: Skapa notifieringsregler
-description: Det här avsnittet innehåller information om notifieringar och förklarar hur du skapar en notifieringsregel.
-author: RichdiMSFT
+description: Det här avsnittet innehåller information om notifieringar och förklarar hur du skapar en notifieringsregel så att du meddelas om händelser, t.ex. ett datum som anländer eller en viss händelse som inträffar.
+author: tjvass
+manager: AnnBe
 ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 597785e65f127794ca84fe3053a664f717b056bd7374e0396732d4bcf59a743c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3721416ce720167a6f78e26583de84af9c8d086b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736208"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798437"
 ---
 # <a name="create-alert-rules"></a>Skapa notifieringsregler
 
@@ -100,8 +102,3 @@ Du kan inte ta bort notifieringar för vissa sekundära datakällor i formulär.
     ```
 2. Skapa en notifiering från formuläret SysTableBrowser.
 
-### <a name="change-based-alerts-do-not-work-for-batch-status-changes"></a>Ändringsbaserade notifieringar fungerar inte för batchstatusändringar
-Ändringsbaserade notifieringar fungerar inte med batchstatusändringar eftersom den är inaktiverad av prestandaskäl. Du bör istället ställa in funktionen för **batchaviseringar**. Mer information finns i [Ställa in notifieringar för batchförbättrade formulär](../../dev-itpro/sysadmin/alerts.md#set-up-alerts-for-batch-enhanced-forms).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,22 +2,26 @@
 title: Sverige – översikt
 description: Det här avsnittet innehåller länkar till dokumentationsresurser för Sverige.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.search.region: Sweden
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b076e691ac884a20a0b75e5051d6890633db23a4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 8933568a1131cc7751150ee33d7d20a06f0d388c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984363"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408613"
 ---
 # <a name="sweden-overview"></a>Sverige – översikt
 
@@ -27,10 +31,5 @@ Det här avsnittet innehåller länkar till dokumentationsresurser för Sverige.
 
 - [Exportera ekonomisk information för revisorer i Sverige](emea-swe-sie-standard-report.md)
 - [Importera betalningsformat](emea-swe-payment-formats-import.md)
-- [Funktioner för kassaapparat](../../commerce/localizations/emea-swe-cash-registers.md)
+- [Funktioner för kassaapparat](../../retail/localizations/emea-swe-cash-registers.md)
 - [Momsbetalningsrapport för Sverige](emea-swe-sales-tax-payment-report-sweden.md)
-- [Momsdeklaration för Sverige](emea-swe-VAT-declaration-Sweden.md)
-- [Svensk Intrastat](emea-swe-intrastat.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

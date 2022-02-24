@@ -1,45 +1,78 @@
 ---
 title: Interna tillgångar för service
-description: Detta ämne beskriver hur du kan använda Microsoft Dynamics 365 Field Service för att betjäna såväl kundtillgångar som interna tillgångar.
+description: I det här avsnittet beskrivs hur du kan använda Microsoft Dynamics 365 Field Service för att serva både kundtillgångar och interna tillgångar.
 author: RamaKrishnamoorthy
+manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 8048a99951eea3fbae34e56c1b444c75ad3d199d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ebc9c1fbb7c0738af13b2a16aafeeb03fa6aaed0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781426"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684015"
 ---
 # <a name="in-house-assets-for-servicing"></a>Interna tillgångar för service
 
 [!include [banner](../../includes/banner.md)]
 
+
+
 Microsoft Dynamics 365 Field Service har utformats för att betjäna kundtillgångar. Tillgångshantering för Dynamics 365 Supply Chain Management har utformats för att upprätthålla anläggningstillgångar. Genom att integrera dessa två appar kan du använda Field Service för att betjäna både kundtillgångar och interna tillgångar. Du kan också klassificera tillgångarna, baserat på en funktionell plats eller hierarki och spåra underhållet på en detaljerad nivå.
 
-Mer information finns i [integrera Dynamics 365 Field Service och Supply Chain Management](/dynamics365/field-service/supply-chain-field-service-integration).
+Mer information finns i [integrera Dynamics 365 Field Service och Supply Chain Management](https://docs.microsoft.com/dynamics365/field-service/supply-chain-field-service-integration).
 
 ## <a name="templates"></a>Mallar
 
 Interna tillgångar inkluderar en samling tabellmappningar som fungerar tillsammans under kunddatainteraktion, enligt följande tabell.
 
-| Finance and Operations-appar | Kundengagemangsappar | beskrivning |
+| Finance and Operations-appar | Modellstyrda appar i Dynamics 365 | beskrivning |
 |-----------------------------|-----------------------------------|-------------|
-[Tillgångshantering för livscykelmodeller av tillgångar](mapping-reference.md#119) | msdyn_assetlifecyclemodels | |
-[Tillgångshantering för livscykeltillstånd av tillgångar](mapping-reference.md#120) | msdyn_assetlifecyclestates | |
-[Tillgångstyper för hantering av tillgångar](mapping-reference.md#124) | msdyn_customerassetcategories | |
-[Tillgångar för hantering av tillgångar](mapping-reference.md#125) | msdyn_customerassets | |
-[Livscykelmodeller för funktionsplatsens tillgångshantering](mapping-reference.md#134) | msdyn_functionallocationlifecyclemodels | |
-[Livscykeltillstånd för funktionsplatsens tillgångshantering](mapping-reference.md#135) | msdyn_functionallocationlifecyclestates | |
-[Funktionsplatstyper för tillgångshantering](mapping-reference.md#137) | msdyn_functionallocationtypes | |
-[Funktionsplatser för tillgångshantering](mapping-reference.md#136) | msdyn_functionallocations | |
-[Tillverkare för tillgångshantering](mapping-reference.md#153) | msdyn_manufacturers | |
-[Tillgångshanteringsmodeller](mapping-reference.md#154) | msdyn_models | |
-[Garanti över tillgångshantering](mapping-reference.md#209) | msdyn_warranties | |
+| Tillgångshantering för livscykelmodeller av tillgångar | msdyn\_assetlifecyclemodels | |
+| Tillgångshantering för livscykeltillstånd av tillgångar | msdyn\_assetlifecyclestates | |
+| Tillgångar för hantering av tillgångar | msdyn\_customerassets | |
+| Tillgångstyper för hantering av tillgångar | msdyn\_customerassetcategories | |
+| Livscykelmodeller för funktionsplatsens tillgångshantering | msdyn\_functionallocationlifecyclemodels | |
+| Livscykeltillstånd för funktionsplatsens tillgångshantering | msdyn\_functionallocationlifecyclestates | |
+| Funktionsplatser för tillgångshantering | msdyn\_functionallocations | |
+| Funktionsplatstyper för tillgångshantering | msdyn\_functionallocationtypes | |
+| Tillverkare för tillgångshantering | msdyn\_manufacturers | |
+| Tillgångshanteringsmodeller | msdyn\_models | |
+| Garanti över tillgångshantering | msdyn\_warranties | |
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+[!include [symbols](../../includes/dual-write-symbols.md)]
+
+[!include [lifecycle models](includes/AssetManagementAssetLifecycleModels-msdyn-assetlifecyclemodels.md)]
+
+[!include [lifecycle states](includes/AssetManagementAssetLifecycleStates-msdyn-assetlifecyclestates.md)]
+
+[!include [assets](includes/AssetManagementAssets-msdyn-customerassets.md)]
+
+[!include [asset types](includes/AssetManagementAssetTypes-msdyn-customerassetcategories.md)]
+
+[!include [functional location lifecycle models](includes/AssetManagementFunctionalLocationLifecycleModels-msdyn-functionallocationlifecyclemodels.md)]
+
+[!include [functional location lifecycle states](includes/AssetManagementFunctionalLocationLifecycleStates-msdyn-functionallocationlifecyclestates.md)]
+
+[!include [functional locations](includes/AssetManagementFunctionalLocations-msdyn-functionallocations.md)]
+
+[!include [functional location types](includes/AssetManagementFunctionalLocationTypes-msdyn-functionallocationtypes.md)]
+
+[!include [manufacturers](includes/AssetManagementManufacturers-msdyn-manufacturers.md)]
+
+[!include [models](includes/AssetManagementModels-msdyn-models.md)]
+
+[!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]

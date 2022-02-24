@@ -1,10 +1,12 @@
 ---
-title: Vanliga frågeställningar om arbetsflöde
-description: Detta avsnitt besvarar några vanliga frågeställningar om arbetsflödessystemet.
+title: Vanliga frågor om arbetsflöde
+description: Detta avsnitt besvarar några vanliga frågor om arbetsflödessystemet.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -12,21 +14,18 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe11942ca41dd8c0ca23d94006569c50a4501a52
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 58aa4a6d313a78e88c2858637d6de167895ec534
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065590"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797401"
 ---
-# <a name="workflow-faq"></a>Vanliga frågeställningar om arbetsflöde
+# <a name="workflow-faq"></a>Vanliga frågor om arbetsflöde
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
-Detta avsnitt besvarar några vanliga frågeställningar om arbetsflödessystemet.
+Detta avsnitt besvarar några vanliga frågor om arbetsflödessystemet.
 
 ## <a name="why-are-multiple-notifications-received-when-a-work-item-is-rejected"></a>Varför tas flera meddelanden emot när en arbetsuppgift avvisas?
 När en arbetsuppgift har avvisats kommer detta arbetsobjekt slutföras som avvisat. En annan arbetsuppgift skapas och tilldelas till upphovsmannen. Detta innebär att det finns ett meddelande till upphovsmannen för den avvisade arbetsuppgiften och ett separat meddelande till användaren som är tilldelad till den nya ”ändringsbegärda” arbetsuppgiften. 
@@ -48,9 +47,9 @@ Här följer några viktiga områden som du kan använda för att lägga till no
     - I en framtida uppdatering kommer vi att lägga till ett meddelande från åtgärdscenter så att en användare tilldelas en arbetsflödesuppgift. 
 - Lägga till meddelanden till arbetsflöden
     - Meddelanden i åtgärdscentret kan skapas för specifika användare, t.ex. ett meddelande som skapats från ett arbets flöde i X++.
-    - [Arbetsflöden har affärshändelser](../../dev-itpro/business-events/business-events-workflow.md) som kunden kan använda för att utlösa flöden med de aviseringar som de letar efter.   
+    - [Arbetsflöden har affärshändelser](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) som kunden kan använda för att utlösa flöden med de aviseringar som de letar efter.   
 
-Sammanfattningsvis, om en användare inte får rätt meddelanden från åtgärdscentret när de tilldelas en arbetsflödesuppgift, och sedan använder [affärshändelser för arbetsflöden](../../dev-itpro/business-events/business-events-workflow.md) med Microsoft Power Automate för att ge ytterligare eller andra meddelanden.
+Sammanfattningsvis, om en användare inte får rätt meddelanden från åtgärdscentret när de tilldelas en arbetsflödesuppgift, och sedan använder [affärshändelser för arbetsflöden](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) med Microsoft Power Automate för att ge ytterligare eller andra meddelanden.
 
 ## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>Varför kan inte arbetsflödesredigeraren starta under AD FS?
 När du kör under Active Directory Federation Services (AD FS) i en uppgraderad miljö kan arbetsflödesredigeraren ha problem med att starta. Om den gör det, kontrollera att URL "https://dynamicsaxworkfloweditor/" läggs till egenskapen **Microsoft Dynamics 365 for Operations lokalt - arbetsflöde - internt program** i ADFS-inställningar.
@@ -60,6 +59,3 @@ Standardfältvärdet för **Antal arbetsflödesobjekt per batch** på sidan **Ar
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Vad är funktionen utökat fel i arbetsflödet?
 Den utökade felfunktionen i arbetsflödet i version 10.0.13 lägger till felkoder för att skilja mellan olika klasser av arbetsflödesfel. De felmeddelanden som rapporteras är mest likvärdiga med mindre skillnader för att göra dem tydligare.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

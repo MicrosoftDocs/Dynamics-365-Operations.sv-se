@@ -2,9 +2,11 @@
 title: " Skapa ekonomiska dimensioner för kassaregister och konfigurera dimensionsvärden för register"
 description: Den här proceduren går igenom hur du skapar ekonomiska dimensioner för kassaregister (POS) och visar hur du konfigurerar värden för ekonomiska dimension i kassor.
 author: jashanno
+manager: AnnBe
 ms.date: 11/14/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -13,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12206661c20c3029ca61c75f728fbd915706477be6f6ebf7abe8366ebda8980b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c51c77f4b9f411ae45fb955032aa40cb34738e9a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759271"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964782"
 ---
 # <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a> Skapa ekonomiska dimensioner för kassaregister och konfigurera dimensionsvärden för register
 
@@ -45,6 +47,3 @@ Den här proceduren går igenom hur du skapar ekonomiska dimensioner för kassar
 17. I listan du söker efter och väljer dimensionsvärdet för registret som uppdateras.
 18. Klicka på Spara.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

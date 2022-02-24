@@ -90,6 +90,3 @@ Mer information finns i [strömlinjeformad medarbetarinmatning och navigering](.
 ### <a name="platform-update-29"></a>Plattform update 29
 
 Ytterligare information om plattformsuppdatering 29 finns i [Förhandsgranskningsfunktioner i Dynamics 365 for Finance and Operations plattformsuppdatering 29 (oktober 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

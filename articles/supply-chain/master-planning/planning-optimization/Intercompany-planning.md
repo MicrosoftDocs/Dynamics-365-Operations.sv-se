@@ -2,13 +2,16 @@
 title: Koncernintern planering
 description: Det här ämnet beskriver koncernintern planering och förklarar hur du konfigurerar koncernintern planering med planeringsoptimering i Microsoft Dynamics 365 Supply Chain Management.
 author: ChristianRytt
+manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2bf69a5d0d6e070374277e2d82d5fbf6eb4b8704895ffe31aa7e2d2d3546bb16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 25c80ce27498131c6eb92174ab14a592bfa9915a
+ms.sourcegitcommit: fe21a3a98dcf6fe4eb9351941493f2c0443d8696
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777921"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "4672208"
 ---
 # <a name="intercompany-planning"></a>Koncernintern planering
 
@@ -35,9 +38,9 @@ I det här avsnittet används följande viktiga koncerninterna termer:
 
 - **Uppström** – en relativ referens i en firma eller leveranskedja. Den visar rörelsen i råvaruleverantörens riktning.
 - **Nedström** – en relativ referens i en firma eller leveranskedja. Den visar rörelsen i kundens riktning.
-- **Planerad koncernintern efterfrågan** – planerad efterfrågan för en produkt i ett företag, baserat på planerad efter frågeställningen för produkten från ett underordnat företag.
+- **Planerad koncernintern efterfrågan** – planerad efterfrågan för en produkt i ett företag, baserat på planerad efter frågan för produkten från ett underordnat företag.
 
-Vid huvudplanering kan en plan i ett företag inkludera planerad koncernintern efter frågeställningen som är relaterad till planerade order från en plan i ett annat företag. Den här funktionen är användbar eftersom den ger full insyn i planerade order mellan företag. Det säkerställer också att alla begärda planerade leveransorder skapas, utan att kräva att planerade order måste bekräftas för det koncerninterna behovet.
+Vid huvudplanering kan en plan i ett företag inkludera planerad koncernintern efter frågan som är relaterad till planerade order från en plan i ett annat företag. Den här funktionen är användbar eftersom den ger full insyn i planerade order mellan företag. Det säkerställer också att alla begärda planerade leveransorder skapas, utan att kräva att planerade order måste bekräftas för det koncerninterna behovet.
 
 Om du kör huvudplaneringen från en huvudplan som inkluderar planerad efterföljande efterfrågan, tas planerade inköpsorder från de relaterade koncerninterna leverantörerna med i planen som efterfrågan.
 
@@ -45,8 +48,8 @@ Om du kör huvudplaneringen från en huvudplan som inkluderar planerad efterföl
 
 Om du vill använda koncernintern planering måste du förbereda systemet på följande sätt:
 
-1. De relevanta produkterna måste frisläppas på alla berörda företag. Mer information finns i [Konfigurera och använd koncernintern handel i Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
-1. Efterföljande efterfrågan måste täckas av inköp från en leverantör som har en koncernintern relation till det överordnade företaget och relevanta standard lagerdimensioner (webbplats och lagerställe) för kunden. Mer information finns i [Konfigurera och använd koncernintern handel i Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
+1. De relevanta produkterna måste frisläppas på alla berörda företag. Mer information finns i [Konfigurera och använd koncernintern handel i Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
+1. Efterföljande efterfrågan måste täckas av inköp från en leverantör som har en koncernintern relation till det överordnade företaget och relevanta standard lagerdimensioner (webbplats och lagerställe) för kunden. Mer information finns i [Konfigurera och använd koncernintern handel i Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
 1. Huvudplanen i det överordnade företaget måste inkludera planerad efterföljande efterfrågan och det relevanta företaget och huvudplanen måste anges i de efterföljande planerna.
 
 ## <a name="include-planned-downstream-demand"></a>Inkludera underordnad planerad efterfrågan
@@ -76,7 +79,7 @@ I det här exemplet skapas en planerad tillverkningsorder i USMF-företaget för
 
 Följande illustration visar hur det här exemplet kan visas på sidan **Pegging på flera nivåer** för den planerade tillverkningsordern.
 
-![Koncerninternt exempel som inbegriper två företag.](media/IntercompanyPlanning1.png)
+![Koncerninternt exempel som inbegriper två företag](media/IntercompanyPlanning1.png)
 
 ### <a name="intercompany-example-that-involves-three-companies"></a>Koncerninternt exempel som inbegriper tre företag
 
@@ -84,7 +87,4 @@ I det här exemplet skapas en planerad inköpsorder i USMF-företaget för att t
 
 Följande illustration visar hur det här exemplet kan visas på sidan **Pegging på flera nivåer** för den planerade tillverkningsordern.
 
-![Koncerninternt exempel som inbegriper tre företag.](media/IntercompanyPlanning2.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Koncerninternt exempel som inbegriper tre företag](media/IntercompanyPlanning2.png)

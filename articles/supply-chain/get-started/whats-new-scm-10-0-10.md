@@ -2,9 +2,11 @@
 title: Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.10 (maj 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.10.
 author: kamaybac
+manager: tfehr
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: a1454e3d9045810f20460610124c04cfff92171960e3b01962a1332b78191d71
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 63e8214608d5c8c4b1bcc805fdf1d307fc381db7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720382"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967215"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.10 (maj 2020)
 
@@ -33,19 +35,19 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
-Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
+Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](https://docs.microsoft.com/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
 
-- [Förbättring för användning av befintliga faktisk/nominell vikt taggar med lagerhantering](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
+- [Förbättring för användning av befintliga faktisk/nominell vikt taggar med lagerhantering](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
 
-- [Förbättringar av inkommande belastningshantering för lagerstyrning](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Mer information finns i [Lagerhantering av inkommande laster för inköpsorder](../warehousing/inbound-load-handling.md).
+- [Förbättringar av inkommande belastningshantering för lagerstyrning](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Mer information finns i [Lagerhantering av inkommande laster för inköpsorder](../warehousing/inbound-load-handling.md).
 
-- [Förbättringar av etikettutskrift för lagerstyrning](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - Mer information finns i [Layout för dokumentflöde för ID-nummeretiketter](../warehousing/document-routing-layout-for-license-plates.md).
+- [Förbättringar av etikettutskrift för lagerstyrning](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - Mer information finns i [Layout för dokumentflöde för ID-nummeretiketter](../warehousing/document-routing-layout-for-license-plates.md).
 
-- [Huvudplanering inkluderar artiklar med lager behållning när för bearbetnings filter aktiveras](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
+- [Huvudplanering inkluderar artiklar med lager behållning när för bearbetnings filter aktiveras](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
 
-- [Nya dataenheter för tillverkningsområdet](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+- [Nya dataenheter för tillverkningsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 
-- [Kvalitetsstyrning för lagerprocesser](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - Mer information finns i [Kvalitetshantering för lagerprocesser](../inventory/quality-management-for-warehouses-processes.md).
+- [Kvalitetsstyrning för lagerprocesser](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - Mer information finns i [Kvalitetshantering för lagerprocesser](../inventory/quality-management-for-warehouses-processes.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
@@ -59,9 +61,9 @@ Om du vill ha information om felkorrigeringar som ingår i denna uppdatering log
 
 ### <a name="dynamics-365-2020-release-wave-1-plan"></a>Dynamics 365: 2020 utgivningsvåg 1 plan
 
-Har du frågeställningar om nya och kommande funktioner i våra affärsappar eller plattformen?
+Har du frågor om nya och kommande funktioner i våra affärsappar eller plattformen?
 
-Se [Dynamics 365: 2020 utgivningsvåg 1 plan](/dynamics365-release-plan/2020wave1/index). Vi har sammanställt all information som du kan tänkas behöva på ett enskilt dokument som du kan använda för din planering.
+Se [Dynamics 365: 2020 utgivningsvåg 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). Vi har sammanställt all information som du kan tänkas behöva på ett enskilt dokument som du kan använda för din planering.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Borttagna och inaktuella funktioner för Supply Chain Management
 
@@ -73,6 +75,3 @@ De [borttagna eller föråldrade funktionerna i Dynamics 365 Supply Chain Manage
 Innan någon funktion tas bort från produkten visas understrykningsmeddelandet i ämnet [borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före avhämtningen.
 
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

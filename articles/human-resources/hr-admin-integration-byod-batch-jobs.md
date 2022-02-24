@@ -2,37 +2,35 @@
 title: Optimera planerade BYOD batchjobb
 description: I det här avsnittet beskrivs hur du optimerar prestanda när du använder funktionen ta med din egen databas (BYOD) med Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
+manager: AnnBe
 ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: a2f110d105b8c04f07f219f7f11a57d24e00ce4a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d08762ff40b4da8264bd5bc4a1c16fd2afc4d610
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067789"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420571"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>Optimera planerade BYOD batchjobb
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-I det här avsnittet beskrivs hur du optimerar prestanda när du använder funktionen ta med din egen databas (BYOD). Mer information om BYOD finns i [ta din egen databas (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+I det här avsnittet beskrivs hur du optimerar prestanda när du använder funktionen ta med din egen databas (BYOD). Mer information om BYOD finns i [ta din egen databas (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json).
 
 ## <a name="performance-considerations-for-data-export"></a>Prestandaöverväganden för dataexport
 
-Efter att entiteter har publicerats till destinationsdatabasen kan du använda funktionen Export i arbetsytan **Datahantering** för att flytta data. Med hjälp av funktionen Export kan du definiera ett jobb för datarörelse som innehåller en eller flera enheter. Mer information om dataexportera finns i [översikt över dataimport- och exportjobb](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+Efter att entiteter har publicerats till destinationsdatabasen kan du använda funktionen Export i arbetsytan **Datahantering** för att flytta data. Med hjälp av funktionen Export kan du definiera ett jobb för datarörelse som innehåller en eller flera enheter. Mer information om dataexportera finns i [översikt över dataimport- och exportjobb](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json).
 
 Du kan använda sidan **Export** för att exportera data till olika måldataformat, till exempel en CSV-fil (kommaseparerade värden). Den här sidan stöder också SQL-databaser som ett annat mål.
 
@@ -63,7 +61,7 @@ För bästa prestanda bör du alltid använda alternativet **Exportera i batch**
 
 När du lägger till en enhet för dataexport kan du göra antingen en stegvis push-överföring (export) eller en fullständig push-överföring. En fullständig push-överföring tar bort alla befintliga poster från en enhet i BYOD-databasen. Sedan infogas den aktuella uppsättningen poster från entiteten personal.
 
-Om du vill utföra en stegvis push-överföring måste du aktivera ändringsspårning för varje entitet på sidan **entiteter**. Mer information finns i [Aktivera ändringsspårning för entiteter](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+Om du vill utföra en stegvis push-överföring måste du aktivera ändringsspårning för varje entitet på sidan **entiteter**. Mer information finns i [Aktivera ändringsspårning för entiteter](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
 
 Om du väljer en stegvis push-överföring är den första push-tiden alltid en fullständig push-överföring. SQL spårar ändringar från den första fullständiga push-överföringen. När en ny post infogas, eller när en post uppdateras eller tas bort återspeglas ändringen i målentiteten.
 
@@ -90,20 +88,11 @@ BYOD-funktionen har följande begränsningar:
 
 **Utfärda:** när en fullständig push-överföring görs för en entitet visas en stor uppsättning poster i BYOD när du använder uttrycket **Select**. När du gör en stegvis push-överföring ser du dock bara några få poster i BYOD. Det verkar som om den stegvisa push-överföringen tog bort alla posterna och bara lagt till de ändrade posterna i BYOD.
 
-**Lösning:** Tabellen SQL ändringsspårning kanske inte är i förväntat tillstånd. I fall av den här typen rekommenderar vi att du inaktiverar spårning av ändringar för enheten och sedan slår på den igen. Mer information finns i [Aktivera ändringsspårning för entiteter](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
-
-### <a name="staging-tables-arent-clearing"></a>Mellanlagringsregister rensas inte
-
-**Problem:** När du använder mellanlagring för projektet rensas inte mellanlagringsregistren på rätt sätt. Datan i registren fortsätter sedan att växa, vilket leder till prestandaproblem.
-
-**Lösning:** Sju dagars historik bibehålls i mellanlagringsregistren. Historiska data som är äldre än sju dagar tas automatiskt bort från mellanlagringsregistren av batchjobbet **Importera/exportera rensning av mellanlagring**. Om detta jobb fastnar kommer registren inte att rensas korrekt. Om du startar om batchjobbet fortsätter processen så att mellanlagringsregistren rensas automatiskt.
+**Lösning:** Tabellen SQL ändringsspårning kanske inte är i förväntat tillstånd. I fall av den här typen rekommenderar vi att du inaktiverar spårning av ändringar för enheten och sedan slår på den igen. Mer information finns i [Aktivera ändringsspårning för entiteter](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
 
 ## <a name="see-also"></a>Se även
 
-[Översikt över datahantering](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
-[Ta med din egen databas (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
-[Översikt över jobb för import och export av data](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
-[Aktivera ändringsspårning för enheter](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Översikt över datahantering](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/human-resources/toc.json)<br>
+[Ta med din egen databas (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json)<br>
+[Översikt över jobb för import och export av data](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json)<br>
+[Aktivera ändringsspårning för enheter](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json)

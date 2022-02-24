@@ -1,10 +1,12 @@
 ---
 title: Inköpsavtal
 description: Det här avsnittet innehåller information om inköpsavtal. Ett inköpsavtal är ett kontrakt som ålägger en organisation att köpa en angiven kvantitet eller ett visst belopp via flera framtida inköpsorder. I utbyte mot detta åtagande får köparen särskilda priser och rabatter.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4911bd891c081892e52bda4bcc87984b3fb189b2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9cd3c18129724cc67560aee7bf9fc0e5dcd2ebc3
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570509"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017197"
 ---
 # <a name="purchase-agreements"></a>Inköpsavtal
 
@@ -102,13 +104,12 @@ Om du skapar en koncernintern inköpsorder med det koncerninterna inköpsavtalet
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Ekonomiska dimensioner på inköpsavtal
 Du kan kopiera ekonomiska dimensioner till dokumenthuvuden eller till enskilda rader i ett inköpsavtal. Om du ändrar dimensionerna i avtalshuvudet eller på avtalsraden påverkar inte ändringen frisläppta order, men den återspeglas i alla nya order.
 
-## <a name="additional-resources"></a>Ytterligare resurser
+<a name="additional-resources"></a>Ytterligare resurser
+--------
 
-- [Skapa ett inköpsavtal](tasks/create-purchase-agreement.md)
-- [Tillämpa ett köpeavtal när du skapar en inköpsorder](tasks/create-purchase-release-order-purchase-agreement.md)
+[Skapa ett nytt inköpsavtal](tasks/create-purchase-agreement.md)
+
+[Skapa en inköpsfrisläppningsorder från ett inköpsavtal](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,12 +2,15 @@
 title: Anpassa bildens fokuspunkter
 description: I det här avsnittet beskrivs hur du anpassar bildens fokuspunkter i Microsoft Dynamics 365 Commerce webbplatsskapare.
 author: psimolin
+manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9c8a1b6de774a4d89c0ebcf46847c1b2c5b62374b3e5ac25a0bea2ff30b47510
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b20fbc20f18243c712595795a0b16ae417e755e6
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727616"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594342"
 ---
 # <a name="customize-image-focal-points"></a>Anpassa bildens fokuspunkter
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du anpassar bildens fokuspunkter i Microsoft Dynamics 365 Commerce webbplatsskapare.
+
+## <a name="overview"></a>Översikt
 
 När en bild överförs till mediebiblioteket för Commerce-webbplatsskapare försöker systemet fastställa bildens fokuspunkt. Om bilden till exempel har en person på den, ställer systemet in fokuspunkten på personen som standard. I de flesta fall fungerar fokuspunkten automatiskt bra för alla visningslägen, men ibland kan du behöva justera fokuspunkten för att se till att en viss del av bilden alltid är synlig.
 
@@ -55,6 +60,3 @@ Om du vill definiera en egen fokuspunkt för en bild följer du stegen nedan.
 [Beskär bilder](dam-crop-images.md)
 
 [Ladda upp och betjäna statiska filer](upload-serve-static-files.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Konfigurera kontantbenämningar för POS
 description: Kontantbenämningar för sedlar och mynt kan definieras i back office för kassörer, affärskontakter och butikschefer iifrån POS.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreCashDeclarationTable
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0ff4eb5bc7c5e2c0192a5349219301b26e479ac6be978eb05063b68f348b4e55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3a5f9a73bdee50e3e7c68125144c3b43305efa8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743468"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961569"
 ---
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>Konfigurera kontantbenämningar för POS
 
@@ -33,7 +35,7 @@ Kontantbenämningar för sedlar och mynt kan definieras i back office för kass�
 
 Benämningar ställs in per butik på alternativet **Ställ in** \> **kontantavstämning** från sidan butiksegenskaper.
 
-![Alternativ för kontantavstämning.](./media/image1-denomination.png)
+![Alternativ för kontantavstämning](./media/image1-denomination.png)
 
 För att definiera en benämning:
 
@@ -41,7 +43,7 @@ För att definiera en benämning:
 1. Ange typen (mynt eller sedel).
 1. Ange beloppet (värde).
 
-![Sida för valörer vid kontantavstämning.](./media/image2-denomination.png)
+![Sida för valörer vid kontantavstämning](./media/image2-denomination.png)
 
 ## <a name="configure-the-functionality-profile"></a>Konfigurera funktionsprofilen
 
@@ -49,6 +51,3 @@ Vid betalning av kontanter i POS kan användaren använda sedelbenämningar för
 
 - **Större eller lika med det förfallna beloppet** – som standard visar POS endast de sedelbenämningar som är större än beloppet som förfaller till betalning, vilket gör det möjligt för snabb genomföring av transaktionen. Om till exempel det förfallna beloppet är 7,50 visar POS följande benämningar: 10, 20, 50 och 100. Om du rör något av dessa belopp kommer försäljningaen att genomföras automatiskt för detta belopp. Sedlarna 1 och 5 visas inte eftersom dessa belopp är mindre än beloppet som förfaller.
 - **Alla benämningar** – Markera det här alternativet för att alltid visa alla sedelbenämningar i POS, oavsett hur mycket förfaller. Detta innebär att användaren kan använda en kombination av sedlar till det förfallna beloppet. Om till exempel det förfallna beloppet är 25,00 kan användaren välja 20 och 5 för att slutföra försäljningen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -93,6 +93,3 @@ Med ett nytt alternativ kan cheferna visa prestandan för både deras direktrapp
 ### <a name="print-performance-reviews"></a>Skriv ut resultatöversyner
 
 Medarbetare, chefer och personal kan skriva ut en medarbetares resultatöversyn.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

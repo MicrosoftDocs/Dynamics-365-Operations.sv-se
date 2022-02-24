@@ -1,31 +1,29 @@
 ---
 title: Skapa låneartiklar
 description: Låneartiklar är poster som gör det enklare att spåra fysiska artiklar, till exempel telefoner eller datorer, som ditt företag lånar ut till arbetare.
-author: twheeloc
-ms.date: 10/28/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmLoanType, DefaultDashboard, HcmLoanItem, HcmWorkerLookUp, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 21127c46615015c30e06465b390f67b835e746cb
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8317a2fbe9d857ed3824631241b99c333b6dc4e8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068144"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420585"
 ---
 # <a name="create-loan-items"></a>Skapa låneartiklar
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -33,34 +31,31 @@ Låneartiklar är poster som gör det enklare att spåra fysiska artiklar, till 
 
 
 ## <a name="create-loan-types"></a>Skapa lånetyper
-1. Gå till **Personal** > **Medarbetare** > **Låneartiklar** > **Lånetyper**.
-2. Klicka på **Ny**.
-3. Ange ett ävrde i fältet **Lånetyp**.
-4. I fältet **Beskrivning** anger du ett värde.
+1. Gå till Personal > Arbetare > Låneartiklar > Lånetyper.
+2. Klicka på Ny.
+3. Ange ett värde i fältet Lånetyp.
+4. Ange ett värde i fältet Beskrivning.
 5. Ange det antal dagar med vilket artiklar som tilldelats till den här lånetypen får ha förfallit. 
-6. Klicka på **Spara**.
+6. Klicka på Spara.
 7. Stäng sidan.
 8. Uppdatera sidan.
 
 ## <a name="create-loan-items"></a>Skapa låneartiklar
-1. Gå till **Personal** > **Medarbetare** > **Låneartiklar** > **Låneartiklar**.
-2. Klicka på **Skapa låneartiklar**.
-3. I fältet **Kvant.** anger du ett nummer.
-4. I fältet **Beskrivning** anger du ett värde.
-5. I fältet **Lånetyp** klickar du på knappen i listrutan för att öppna sökningen.
+1. Gå till Personal > Arbetare > Låneartiklar > Låneartiklar.
+2. Klicka på Skapa flera låneartiklar.
+3. I kvant. fältet anger du ett tal.
+4. Ange ett värde i fältet Beskrivning.
+5. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Lånetyp.
 6. Hitta och markera önskad post i listan.
 7. Klicka på länken på den valda raden i listan.
 8. Ange det antal dagar som artikeln kan lånas ut.
     * Standardvärdet i fältet Planerad retur på sidan Lånad utrustning beräknas som dagens datum plus det här numret.  
-9. I fältet **Ansvarig person** klickar du på knappen i listrutan för att öppna sökningen.
-10. Klicka på **Välj**.
-11. Ange ett värd ei fältet **Startvärde**.
-12. Ange ett värde i fältet **Intervall**.
-13. Ange ett värde i fältet **Format**.
-    * Om det högsta startnumret för en låneartikel är 10 anger du till exempel två nummersymboler i fältet **Format**.  
-14. Klicka på **OK**.
+9. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Ansvarig person.
+10. Klicka på Välj.
+11. Du måste ange ett nummer i fältet Startvärde.
+12. Ange ett nummer i fältet Intervall.
+13. Ange ett värde i fältet Format.
+    * Om det högsta startnumret för en låneartikel är 10 anger du till exempel två nummersymboler i fältet Format.  
+14. Klicka på OK.
 15. Uppdatera sidan.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

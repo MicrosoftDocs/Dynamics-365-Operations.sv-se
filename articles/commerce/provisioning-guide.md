@@ -1,10 +1,12 @@
 ---
-title: Tillhandahåll en Dynamics 365 Commerce utvärderingsmiljö
+title: Etablera en bedömningsmiljön för Dynamics 365 Commerce
 description: Det här avsnittet förklarar hur du etablerar en bedömningsmiljö för Microsoft Dynamics 365 Commerce.
 author: psimolin
+manager: annbe
 ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,14 +17,14 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c8241c31e82d124398189666c3a1709d25884b8acd9c8f3b1068529cbd216684
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777510"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969911"
 ---
-# <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Tillhandahåll en Dynamics 365 Commerce utvärderingsmiljö
+# <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Etablera en bedömningsmiljön för Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
@@ -32,6 +34,8 @@ Innan du börjar rekommenderar vi att du tar en snabbgenomgång genom det här a
 
 > [!NOTE]
 > Commerce bedömningsmiljöer är i allmänhet inte tillgängliga och ges till partners och kunder för varje enskild begäran. För mer information, kontakta din Microsoft-partnerkontakt.
+
+## <a name="overview"></a>Översikt
 
 För att kunna etablera din bedömningsmiljö för Commerce måste du skapa ett projekt som har ett specifikt produktnamn och en viss typ. Miljön och Commerce Scale Unit (CSU) har även del specifika parametrar som du måste använda för att kunna förvänta dig att etablera näthandel senare. Instruktionerna i det här avsnittet beskriver alla nödvändiga steg för att slutföra etablering och de parametrar som du måste använda.
 
@@ -76,7 +80,7 @@ Om du vill skapa ett nytt projekt i LCS, följ dessa steg:
 
 ### <a name="add-the-azure-connector"></a>Lägg till Azure-koppling
 
-Om du vill lägga till Azure-anslutaren i LCS-projektet följer du stegen i [slutföra registreringsprocessen för Azure Resource Manager (ARM)](../fin-ops-core/dev-itpro/deployment/arm-onboarding.md).
+Om du vill lägga till Azure-anslutaren i LCS-projektet följer du stegen i [slutföra registreringsprocessen för Azure Resource Manager (ARM)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding).
 
 ### <a name="deploy-the-environment"></a>Distribuera miljö
 
@@ -90,16 +94,16 @@ Följ dessa steg för att distribuera miljön.
 1. I fältet **Programversion** väljer du den mest aktuella versionen. Om du har ett specifikt behov av att välja en annan programversion än den senaste versionen ska du inte välja en version före **10.0.14**.
 1. I fältet **plattformsversion** använder du den plattformsversion som väljs automatiskt för den valda programversionen. 
 
-    ![Välj program- och plattformsversioner.](./media/project1.png)
+    ![Välj program- och plattformsversioner](./media/project1.png)
 
 1. Välj **Nästa**.
 1. Välj **Demo** som miljötopologi.
 
-    ![Välja miljötopologi 1.](./media/project2.png)
+    ![Välja miljötopologi 1](./media/project2.png)
 
 1. Ange ett **miljönamn** på sidan distribuera miljö. Lämna Avancerade inställningar som de är.
 
-    ![Sidan Distribuera miljö.](./media/project4.png)
+    ![Sidan Distribuera miljö](./media/project4.png)
 
 1. Justera VM-storlek som krävs. (Vi rekommenderar VM lagerhållningsenhet \[SKU\]**D13 v2**.)
 1. Granska prissättnings- och licensvillkoren och markera sedan kryssrutan för att ange att du godkänner dem.
@@ -180,13 +184,10 @@ För att fortsätta processen med att tillhandahålla och konfigurera din bedöm
 
 [Dynamics 365 Commerce bedömningsmiljö – vanliga frågor](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Commerce Scale Unit (moln)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (moln)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce webbplatsen](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

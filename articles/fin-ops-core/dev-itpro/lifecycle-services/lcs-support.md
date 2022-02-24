@@ -1,10 +1,12 @@
 ---
-title: Få hjälp med Finance and Operations-appar eller Lifecycle Services (LCS)
-description: I den här artikeln beskrivs hur du kan få hjälp med Finance and Operations-appar eller Microsoft Dynamics Lifecycle Services (LCS).
+title: Få support för Finance and Operations-appar eller Lifecycle Services (LCS)
+description: Den här artikeln beskrivs hur du får hjälp med Finance and Operations-appar eller Microsoft Dynamics Lifecycle Services (LCS).
 author: EricMoos
-ms.date: 08/02/2021
+manager: AnnBe
+ms.date: 09/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro, Developer, Application user
 ms.reviewer: sericks
@@ -14,21 +16,18 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e697c574efb0b04db6cb04d01c41066a0ac3974
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2ec326f2df53ee465b5a75b4f3c24ed914b28551
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068044"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680002"
 ---
-# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Få hjälp med Finance and Operations-appar eller Lifecycle Services (LCS)
+# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Få support för Finance and Operations-appar eller Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-2.md)]
-
-I den här artikeln beskrivs hur du kan få hjälp med Finance and Operations-appar eller Microsoft Dynamics Lifecycle Services (LCS). 
+Den här artikeln beskrivs hur du får hjälp med Finance and Operations-appar eller Microsoft Dynamics Lifecycle Services (LCS). 
 
 <table>
 <thead>
@@ -51,7 +50,7 @@ I den här artikeln beskrivs hur du kan få hjälp med Finance and Operations-ap
 <td>I <a href="https://lcs.dynamics.com/">LCS</a> använder du verktyget <strong>Problemsökning</strong> för att snabbt söka Microsoft Knowledge Base-artiklar, snabbkorrigeringar och lösningar på problem som rapporterats. Du kan se vilka rapporterade problem som håller på att lösas eller för ett visst funktionsområde och vilka problem som redan har åtgärdats. Mer information finns i <a href="issue-search-lcs.md">problemsökning (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
-<td>Få support inom programmet Ekonomi och Drift.</td>
+<td>Få support iappen.</td>
 <td>Markera knappen <strong>hjälp</strong> (<strong>?</strong>) i det övre högra hörnet på appen och välj <strong>Support</strong>. Problem rapporteras på fliken <strong>aktiva problem</strong> i LCS. Där kan administratörerna avgöra om de ska ge support inom företaget eller skicka in problemen till Microsoft.</td>
 </tr>
 <tr>
@@ -69,6 +68,3 @@ I den här artikeln beskrivs hur du kan få hjälp med Finance and Operations-ap
 </tr>
 </tbody>
 </table>
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

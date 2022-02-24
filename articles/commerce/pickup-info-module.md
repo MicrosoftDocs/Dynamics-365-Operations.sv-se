@@ -2,26 +2,29 @@
 title: Informationsmodul för upphämtning
 description: Det här avsnittet handlar om informationsmodulen för upphämtning och beskriver hur du lägger till den på kassasidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 11/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 52015fb973642bfc6f45901e7c1a265f0ccfc415b1324bc62ef77a5fc72550bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 61b97d72b6a397737c10476cd6c02764e60f10b1
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764571"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665358"
 ---
-# <a name="pickup-information-module"></a>Modul för upphämtningsinformation
+# <a name="pickup-information-module"></a>Informationsmodul för upphämtning
 
 [!include [banner](includes/banner.md)]
 
@@ -40,7 +43,7 @@ Om flera artiklar har valts för upphämtning över flera butiker, kommer module
 
 I bilden nedan visas ett exempel på hur val av tidpunkter via informationsmodulen för upphämtning på en kassasida.
 
-![Exempel på en modul för upphämtningsinformation på en kassasida.](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Exempel på en modul för upphämtningsinformation på en kassasida](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="module-properties"></a>Modulegenskaper
 
@@ -56,17 +59,14 @@ Instruktioner om hur du lägger till en informationsmodul om upphämtning på en
 
 I bilden nedan visas ett exempel på en kassasida för näthandel som innehåller tidpunkter för artiklar på upphämtningsrader.
 
-![Exempel på en kassasida för näthandel som innehåller tidpunkter för artiklar på upphämtningsrader.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Exempel på en kassasida för näthandel som innehåller tidpunkter för artiklar på upphämtningsrader](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Skapa och uppdatera tider för hämtning av kund](dev-itpro/pickup-timeslots.md)
+[Skapa och uppdatera tidpunkter för kundavhämtning](dev-itpro/pickup-timeslots.md)
 
 [Kassamodul](add-checkout-module.md)
 
 [Modul för orderbekräftelse](order-confirmation-module.md)
 
 [Orderinformationsmodul](account-management.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

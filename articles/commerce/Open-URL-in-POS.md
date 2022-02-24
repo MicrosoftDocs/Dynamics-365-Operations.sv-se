@@ -2,9 +2,11 @@
 title: Öppna URL i POS
 description: Det här avsnittet innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Dynamics 365 Commerce.
 author: AamirAllaq
+manager: AnnBe
 ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -15,18 +17,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 0e02a08e5afd15fd9622495fd77f4dc01b85786bcffc222b5c979c82a59a6aab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e4ccb8e03d63a7bd1ab2d118d86633a8c6324d43
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714124"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965462"
 ---
-# <a name="open-url-in-pos"></a>Öppna URL i kassa
+# <a name="open-url-in-pos"></a>Öppna webbadressen i POS
 
 [!include [banner](includes/banner.md)]
 
-Detta ämne avsnitt beskriver hur du konfigurerar en knapp i kassa (POS) i Dynamics 365 Commerce för att öppna en URL. Den här funktionen kräver inte en kodanpassning och kan konfigureras av en person i en roll som inte är utvecklare. 
+Det här avsnittet beskriver hur du konfigurerar en knapp i Butikskassa (PO) för att öppna en URL. Den här funktionen kräver inte en kodanpassning och kan konfigureras av en person i en roll som inte är utvecklare. 
 
 Den här funktionen används för att konfigurera en knapp i POS med hjälp av knappen rutnätsdesigner för att öppna en URL. För närvarande stöds detta följande konfigurationer:
 
@@ -46,15 +48,15 @@ Den här konfigurationen definierar om du vill öppna URL i ett nytt fönster el
 
 Den här funktionen låter dig också ange icke-URL om du vill öppna en inbyggd app. Du kan till exempel ange URL-protokoll såsom MailTo, SIP, IM eller MSTEAMS som sedan kan hanteras av respektive inbyggda appar på värdenheten. Om du vill aktivera detta måste du konfigurera URL med alternativet **Öppna i nytt fönster** markerat.
 
-- Windows-datorer finns i [Exportera eller importera standardassociationer för applikationer](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) för att ange standardassociationer för protokollet om du ställer in datorn med Deployment Image Servicing and Management (DISM).
-- Om du använder Mobile Device Manager, till exempel Intune för att hantera Windows-datorer, se [Policy CSP – ApplicationDefaults](/windows/client-management/mdm/policy-csp-applicationdefaults).
-- Om du utvecklar en egen webbserver, se [Starta standardappen för en URI](/windows/uwp/launch-resume/launch-default-app).
+- Windows-datorer finns i [Exportera eller importera standardassociationer för applikationer](https://docs.microsoft.com/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) för att ange standardassociationer för protokollet om du ställer in datorn med Deployment Image Servicing and Management (DISM).
+- Om du använder Mobile Device Manager, till exempel Intune för att hantera Windows-datorer, se [Policy CSP – ApplicationDefaults](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults).
+- Om du utvecklar en egen webbserver, se [Starta standardappen för en URI](https://docs.microsoft.com/windows/uwp/launch-resume/launch-default-app).
 
 ## <a name="open-a-native-app-seamlessly"></a>Öppna en inbyggd app sömlöst
 
 Windows, iOS och Android tillåter också öppning av appar mer sömlöst utifrån association av approtokoll. Om din app inte redan är konfigurerad för att hantera att öppnas från en webbläsare kanske du behöver en utvecklare för att konfigurera detta.
 
-- For Windows, se [Aktivera appar för webbplatser som använder app-URL-hanterare](/windows/uwp/launch-resume/web-to-app-linking).
+- For Windows, se [Aktivera appar för webbplatser som använder app-URL-hanterare](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking).
 - För iOS, se [Universella länkar för utvecklare](https://developer.apple.com/ios/universal-links/).
 - För Android, se [Handling Android applänkar](https://developer.android.com/training/app-links/).
 
@@ -80,6 +82,3 @@ Gör följande om du vill konfigurera en URL-adress att öppnas i POS.
 5. Välj **Öppna URL** som åtgärd.
 6. Ange den URL som du vill använda.
 7. Konfigurera om du vill öppna URL i ett nytt fönster.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

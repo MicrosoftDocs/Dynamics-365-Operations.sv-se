@@ -1,11 +1,9 @@
-- name: Dynamics 365 Talent pension
-  href: ../human-resources/hr-talent-retire.md?toc=/dynamics365/talent/toc.json
+- name: Dynamics 365 for Talent
+  href: talent-welcome.md
   items:
-    - name: Dynamics 365 Talent startsida
-      href: ./index.md
-    - name: Kom igång
+    - name: Kom i gång
       items:
-        - name: Kom igång med Talent
+        - name: Kom i gång med Talent
           href: talent-get-started.md
         - name: Nyheter och ändringar i Talent
           href: whats-new.md
@@ -153,7 +151,7 @@
         - name: Exportera data från Attract och Onboard
           href: attract-onboard-export-data.md
         - name: Bädda in arbetsyteappar från Power Apps
-          href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Få support för Talent
           href: talent-support.md
     - name: Bemanna organisationen med Attract

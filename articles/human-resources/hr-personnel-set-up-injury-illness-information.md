@@ -1,66 +1,67 @@
 ---
 title: Ställ in information om skador och sjukdomar
 description: Arbetsgivare behöver veta när deras medarbetare skadas eller blir sjuka på grund av faror på arbetsplatsen.
-author: twheeloc
-ms.date: 10/28/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMInjurySetup, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 680f4cc529b6818d763730f253811a6edbe0dd76
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 117ae1d690221dbbe0cf4287a3f986cdb3606623
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070587"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420604"
 ---
 # <a name="set-up-injury-and-illness-information"></a>Ställ in information om skador och sjukdomar
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+Arbetsgivare behöver veta när deras medarbetare skadas eller blir sjuka på grund av faror på arbetsplatsen. Du kan använda sidan för skador och sjukdom för att ställa in information som underlättar rapporteringen av skador eller sjukdom på arbetsplatsen. Du kan ställa in typer av skador och sjukdom, inklusive typer av behandlingar, kostnader och resultat. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 
+1. Gå till Personal > Arbetare > Skador och sjukdomar > Ställ in skador och sjukdomar.
+2. Klicka på Ny.
+3. I fältet Typ av skada eller sjukdom, ange ett värde.
+    * Exempel: fraktur  
+4. Ange ett värde i fältet Beskrivning.
+    * Exempel: benfraktur  
+5. Klicka på fliken Kroppsdelar.
+6. Klicka på Ny.
+7. Ange ett värde i fältet Kroppsdelar.
+    * Exempel: handled  
+8. Ange ett värde i fältet Beskrivning.
+    * Exempel: handled  
+9. Klicka på fliken Behandlingstyper.
+10. Klicka på Ny.
+11. I fältet Behandlingstyp, ange ett värde.
+    * Exempel: Spjälka  
+12. Ange ett värde i fältet Beskrivning.
+    * Exempel: spjälka  
+13. Klicka på fliken Kostnadstyper.
+14. Klicka på Ny.
+15. Skriv ett värde i fältet Kostnadstyp.
+    * Exempel: röntgenundersökning  
+16. Ange ett värde i fältet Beskrivning.
+    * Exempel: röntgenundersökning  
+17. Klicka på fliken Resultattyper.
+18. Klicka på Ny.
+19. I fältet Resultattyp, ange ett värde.
+    * Exempel: terapi  
+20. Ange ett värde i fältet Beskrivning.
+    * Exempel: sjukgymnastik  
+21. Klicka på fliken Allvarlighetsnivåer.
+    * Anpassningsbara allvarlighetsnivåer kan skapas. Exempel: allvarlighetsgrad 1 kan ange en mindre skada medan allvarlighetsgrad 3 kan ange en allvarlig skada.  
+22. Klicka på fliken Arbetsmiljöbyrå.
+    * Arbetsmiljöbyråer är byråer som incidenten måste rapporteras till. Markera standardkryssrutan för byrån som är standardbyrån för att rapportera sjukdom och skador till.  
+23. Klicka på Spara.
 
-
-Arbetsgivare behöver veta när deras anställda skadas eller blir sjuka på grund av faror på arbetsplatsen. Du kan använda sidan för **skador och sjukdom** för att konfigurera information som underlättar rapporteringen av skador eller sjukdom på arbetsplatsen. Du kan ställa in typer av skador och sjukdom, inklusive typer av behandlingar, kostnader och resultat. Demonstrationsdataföretaget **USMF** har använts för att skapa denna procedur.
-
-1. Gå till **Personal** \> **Medarbetare** \> **Skador och sjukdomar** \> **Konfiguration för skador och sjukdomar**.
-2. Välj **Ny**.
-3. I fältet **Typ av skada eller sjukdom** anger du ett värde (till exempel **Fraktur**).
-4. I fältet **Beskrivning** anger du en värde (till exempel, **Benfraktur**).
-5. Välj fliken **Kroppsdelar**.
-6. Välj **Ny**.
-7. I fältett **Kroppsdel** anger du ett värde (till exempel **Handled**).
-8. I fältet **Beskrivning** anger du en värde (till exempel, **Handled**).
-9. Välj fliken **Behandlingstyper**.
-10. Välj **Ny**.
-11. I fältet **Behandlingstyp** anger du ett värde (till exempel **Skena**).
-12. I fältet **Beskrivning** anger du en värde (till exempel **Applicera skena**).
-13. Välj fliken **Kostnadstyper**.
-14. Välj **Ny**.
-15. I fältet **Kostnadstyp** anger du ett värde (till exempel **Röntgen**).
-16. I fältet **Beskrivning** anger du ett värde (till exempel **Röntgen**).
-17. Välj fliken **Resultattyper**.
-18. Välj **Ny**.
-19. I fältet **Resultattyp** anger du ett värde (till exempel **Behandling**).
-20. I fältet **Beskrivning** anger du en värde (till exempel **Fysioterapi**).
-21. Välj fliken **Allvarlighetsnivåer**.
-
-    Anpassningsbara allvarlighetsnivåer kan skapas. Allvarlighetsgrad 1 kan exempelvis indikera en mindre skada, medan allvarlighetsgrad 3 kan indikera en allvarlig skada.
-
-22. Välj fliken **Arbetsmiljöbyrå**.
-
-    Arbetsmiljöbyråer är byråer som incidenten måste rapporteras till. Välj kryssrutan **Standard** för den byrå som är standardbyrån som skador och sjukdomar måste inrapporteras till.
-
-23. Välj **Spara**.
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

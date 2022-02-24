@@ -1,8 +1,8 @@
-- name: Utveckling och administration för Finance and Operations‑appar
+- name: Utveckling och administration för Finance and Operations-appar
   items:
-    - name: Utveckling och administration för Finance and Operations‑appar
+    - name: Utveckling och administration för Finance and Operations-appar
       items:
-        - name: Dokumentation för appen Finance and Operations
+        - name: Finance and Operations-programdokumentation
           href: ../fin-ops/index.md
         - name: Utveckling och administration för Finance and Operations-appar
           href: index.md
@@ -12,31 +12,63 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Nyheter och ändringar i Platform updates
               items:
-                - name: Nyheter och ändringar på startsidan för plattformsuppdateringar
+                - name: Nyheter och ändringar på startsidan för Platform updates
                   href: get-started/whats-new-home-page.md
-                - name: Plattformsuppdateringar för version 10.0.25 (april 2022)
-                  href: get-started/whats-new-platform-updates-10-0-25.md
-                - name: Plattformsuppdateringar för version 10.0.24 (februari 2022)
-                  href: get-started/whats-new-platform-updates-10-0-24.md
-                - name: Plattformsuppdateringar för version 10.0.23 (januari 2022)
-                  href: get-started/whats-new-platform-updates-10-0-23.md
-            - name: Borttagna eller inaktuella funktioner
+                - name: Platform updates för 10.0.16 (februari 2021)
+                  href: get-started/whats-new-platform-updates-10-0-16.md
+                - name: Platform updates för 10.0.15 (januari 2021)
+                  href: get-started/whats-new-platform-updates-10-0-15.md
+                - name: Platform updates för 10.0.14 (november 2020)
+                  href: get-started/whats-new-platform-updates-10-0-14.md
+            - name: Borttagna eller utfasade funktioner
               items:
-                - name: Borttagna eller inaktuella funktioner – startsida
-                  href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
                 - name: Borttagna eller utfasade plattformsfunktioner
                   href: get-started/removed-deprecated-features-platform-updates.md
-                - name: Borttagna eller inaktuella funktioner i tidigare versioner
+                - name: Borttagna eller utfasade funktioner i tidigare versioner
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: AX 2012-funktioner som har senarelagts
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+        - name: Affärshändelser
+          items:
+            - name: Översikt över affärshändelser
+              href: business-events/home-page.md
+            - name: Affärshändelser i program
+              href: business-events/app-business-events.md
+            - name: Affärshändelser i arbetsflöde
+              href: business-events/business-events-workflow.md
+            - name: Notifierar som affärshändelser
+              href: business-events/alerts-business-events.md
+            - name: Affärshändelser i Microsoft Flow
+              href: business-events/business-events-flow.md
+            - name: Utvecklardokumentationen för affärshändelser
+              href: business-events/business-events-dev-doc.md
+            - name: Felsöka affärshändelser
+              href: business-events/troubleshooting.md
+            - name: Använd ärenden för affärshändelser
+              href: business-events/potential-use-cases.md
+            - name: Självstudier
+              items:
+                - name: Affärshändelser och Microsoft Flow
+                  href: business-events/how-to/how-to-flow.md
+                - name: Affärshändelser och Azure Event Grid
+                  href: business-events/how-to/how-to-eventgrid.md
+                - name: Affärshändelser och Azure Service Bus
+                  href: business-events/how-to/how-to-servicebus.md
+                - name: Affärshändelser och arbetsflödesgodkännanden
+                  href: business-events/how-to/how-to-workflow.md
+                - name: Affärshändelser och Microsoft Forms Pro
+                  href: business-events/how-to/FormsPro.md
+                - name: Affärshändelser och Azure Event Hubs
+                  href: business-events/how-to/event-hub.md
+                - name: Affärshändelser i räkenskapsperiodens stängning
+                  href: business-events/how-to/period-close.md
         - name: Kontinuerlig leverans
           items:
             - name: Kontinuerlig leverans – startsida
               href: dev-tools/continuous-delivery-home-page.md
-            - name: Vanliga frågor och svar om utveckling och kontinuerlig leverans
+            - name: Frågor och svar om utveckling och kontinuerlig leverans
               href: dev-tools/continuous-delivery-faq.md
             - name: Exkludera testpaket från skapandet
               href: dev-tools/exclude-test-packages.md
@@ -46,9 +78,9 @@
               href: dev-tools/aio-deployable-packages.md
             - name: Uppdatera modellversioner i automatiskt skapande
               href: dev-tools/version-models-build.md
-        - name: Dataintegration
+        - name: Dataintegrering
           items:
-            - name: Integrering mellan Finance and Operations-appar och tjänster från tredje part
+            - name: Välja en strategi för dataintegrering (importera/exportera)
               href: data-entities/integration-overview.md
             - name: Prioritetsbaserad begränsning
               hreF: data-entities/priority-based-throttling.md
@@ -72,7 +104,7 @@
                   href: data-entities/recurring-integrations.md
                 - name: Testtjänster som använder verktyg från tredje part
                   href: data-entities/third-party-service-test.md
-            - name: Koppling till Finance and Operations
+            - name: Finance and Operations-koppling
               href: data-entities/fin-ops-connector.md
             - name: Utveckling för integration
               items:
@@ -90,62 +122,182 @@
                       href: data-entities/tasks/create-record-template-facilitate-data-entry.md
                     - name: Skapa poster med postmallar
                       href: data-entities/tasks/use-record-template-new-record.md
-                - name: Dataintegrerare
+                - name: Dataintegrering med Common Data Service
                   items:
-                    - name: Konfigurera ett scenario för potentiell kund till pengar
+                    - name: Översikt över dataintegrering med Common Data Service
+                      href: data-entities/data-integration-cds.md
+                    - name: Integration med dubbelriktad skrivning
                       items:
-                        - name: Potentiell kund till pengar
-                          href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                        - name: Synkronisera konton direkt från Sales till kunder i Finance and Operations
-                          href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                        - name: Synkronisera produkter direkt från Finance and Operations till produkter i Sales
-                          href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                        - name: Synkronisera kontakter direkt från Sales till kontakter i Finance and Operations
-                          href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                        - name: Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till Finance and Operations
-                          href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                        - name: Synkronisering av försäljningsorder direkt mellan Sales och Finance and Operations
-                          href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                        - name: Synkronisera huvuden och rader i försäljningsfakturor direkt från Finance and Operations till Sales
-                          href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                    - name: Konfigurera integration med Field Service
+                        - name: Startsida för dubbelriktad skrivning
+                          href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Nyheter och ändringar för dubbelriktad skrivning
+                          href: data-entities/dual-write/whats-new-dual-write.md
+                        - name: Översikt över dubbelriktad skrivning
+                          href: data-entities/dual-write/dual-write-overview.md
+                        - name: Inställning av dubbelriktad skrivning
+                          items:
+                            - name: Systemkrav för dubbelriktad skrivning
+                              href: data-entities/dual-write/dual-write-system-req.md
+                            - name: Riktlinjer för hur du ställer in dubbelriktad skrivning
+                              href: data-entities/dual-write/connection-setup.md
+                            - name: Att tänka på vid första synkroniseringen
+                              href: data-entities/dual-write/initial-sync-guidance.md
+                            - name: Inställning av dubbelriktad skrivning från Lifecycle Services
+                              href: data-entities/dual-write/lcs-setup.md
+                            - name: Aktivera dubbelriktad skrivning för befintliga Finance and Operations-appar
+                              items:
+                                - name: Aktivera dubbelriktad skrivning för befintliga Finance and Operations-appar
+                                  href: data-entities/dual-write/enable-dual-write.md
+                                - name: Systemkrav och förutsättningar
+                                  href: data-entities/dual-write/requirements-and-prerequisites.md
+                                - name: Använda guiden för dubbelriktad skrivning för att länka dina miljöer
+                                  href: data-entities/dual-write/link-your-environment.md
+                                - name: Aktivera enhetsmappning för dubbelriktad skrivning
+                                  href: data-entities/dual-write/enable-entity-map.md
+                            - name: Migrering av valutadatatyp för dubbelriktad skrivning
+                              href: data-entities/dual-write/currrency-decimal-places.md
+                            - name: Ställa in mappning för fälten för försäljningsorderns status
+                              href: data-entities/dual-write/sales-status-map.md
+                            - name: Filtrera koncerninterna order för att undvika synkronisering av order och orderrader
+                              href: data-entities/dual-write/filtering-intercompany-orders.md
+                        - name: Hantera dubbelriktad skrivning
+                          items:
+                            - name: Anpassa enhets- och fältmappningar
+                              href: data-entities/dual-write/customizing-mappings.md
+                            - name: Hantera flera enhetsmappningar
+                              href: data-entities/dual-write/multiple-entity-maps.md
+                            - name: Redigera en juridisk person efter konfiguration med dubbelriktad skrivning
+                              href: data-entities/dual-write/edit-legal-entity.md
+                            - name: Felhantering och varningsaviseringar
+                              href: data-entities/dual-write/errors-and-alerts.md
+                            - name: Livscykelhantering för program
+                              href: data-entities/dual-write/app-lifecycle-management.md
+                        - name: Mappa koncept mellan appar
+                          items:
+                            - name: Integrerad kundmaster
+                              href: data-entities/dual-write/customer-mapping.md
+                            - name: Leverantörsintegration
+                              items:
+                                - name: Integrerat leverantörshuvud
+                                  href: data-entities/dual-write/vendor-mapping.md
+                                - name: Växla mellan leverantörsdesigner
+                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: Kundförmånskort och belöningspoäng
+                              href: data-entities/dual-write/loyalty-mapping.md
+                            - name: Produktintegration
+                              items:
+                                - name: Enhetlig produktupplevelse
+                                  href: data-entities/dual-write/product-mapping.md
+                                - name: Integrerade platser och lagerställen
+                                  href: data-entities/dual-write/sites-warehouses-mapping.md
+                            - name: Företagsintegrering
+                              items:
+                                - name: Företagskoncept i Common Data Services
+                                  href: data-entities/dual-write/company-data.md
+                                - name: Starta med företagsdata
+                                  href: data-entities/dual-write/bootstrap-company-data.md
+                            - name: Organisationshierarki för Common Data Service
+                              href: data-entities/dual-write/organization-mapping.md
+                            - name: Ekonomi- och momsdata
+                              items:
+                                - name: Åtkomst till ekonomi- och momsreferensdata
+                                  href: data-entities/dual-write/finance-tax-reference.md
+                                - name: Integrerad redovisning
+                                  href: data-entities/dual-write/ledger-mapping.md
+                                - name: Integrerat skattehuvud
+                                  href: data-entities/dual-write/tax-mapping.md
+                            - name: Potentiell kund till kontanter med dubbelriktad skrivning
+                              href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Synkronisera med prissättningsmotorn för Dynamics 365 Supply Chain Management på begäran
+                              href: data-entities/dual-write/pricing-engine.md
+                            - name: Använda prissättningsmotorn för Dynamics 365 Commerce med Dynamics 365 Sales
+                              href: data-entities/dual-write/commerce-pricing.md
+                            - name: Interna tillgångar för service
+                              href: data-entities/dual-write/in-house-assets.md
+                            - name: 'Integrerad arbetare, jobb och befattning'
+                              href: data-entities/dual-write/integrated-hr.md
+                            - name: Lagertillgänglighet
+                              href: data-entities/dual-write/inventory-availability.md
+                        - name: Stöd för dubbelriktad skrivning
+                          items:
+                            - name: Stöd för Field Service- och Project Service Automation-lösningar
+                              href: data-entities/dual-write/field-service-project-service-automation.md
+                            - name: Felsökning
+                              items:
+                                - name: Kontrollera att dubbelriktad skrivning är konfigurerat i Finance and Operations-appar och Common Data Service
+                                  href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                                - name: Felsöka problem under första installationen
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                                - name: Felsöka problem under första synkroniseringen
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                                - name: Felsöka problem med modulen för dubbelriktad skrivning i Finance and Operations-appar
+                                  href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                                - name: Felsöka problem med livesynkronisering
+                                  href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                                - name: Felsöka problem som rör lösningsmedvetande
+                                  href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                                - name: Felsöka problem som rör uppgraderingar av Finance and Operations-appar
+                                  href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                                - name: Allmän felsökning
+                                  href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Vanliga frågor om dubbelriktad skrivning
+                          href: data-entities/dual-write/dual-write-faq.md
+                    - name: Integration med Power Platform
                       items:
-                        - name: Konfigurera integration med Field Service – översikt
-                          href: ../../supply-chain/sales-marketing/field-service.md
-                        - name: Synkronisera produkter i Finance and Operations till produkter i Field Service
-                          href: ../../supply-chain/sales-marketing/field-service-product.md
-                        - name: Synkronisera arbetsorder i Field Service till försäljningsorder i Finance and Operations
-                          href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                        - name: Synkronisera avtalsfakturor i Field Service till fritextfakturor i Finance and Operations
-                          href: ../../supply-chain/sales-marketing/field-service-invoice.md
-                        - name: Synkronisera lageröverföringar och justeringar från Field Service till Finance and Operations
-                          href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                        - name: Synkronisera information om lagernivåer från Finance and Operations till Field Service
-                          href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                        - name: Synkronisera produkter med lagerenhet från Finance and Operations till Field Service
-                          href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                        - name: Synkronisera projektlista från Finance and Operations till Field Service
-                          href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                        - name: Synkronisera lagerställen från Finance and Operations till Field Service
-                          href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                        - name: Synkronisera arbetsorder med projekt från Field Service till Finance and Operations
-                          href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
-                    - name: Konfigurera Project Service Automation-integration
-                      items:
-                        - name: Översikt över Project Service Automation
-                          href: /dynamics365/project-operations/prod-pma/PSA-integration
-                        - name: Parametrar för Project Service Automation-integration
-                          href: /dynamics365/project-operations/prod-pma/PSA-parameters
-                        - name: Synkronisera projektkontrakt och projekt
-                          href: /dynamics365/project-operations/prod-pma/project-contracts-templates
-                        - name: Synkronisera projektuppgifter
-                          href: /dynamics365/project-operations/prod-pma/project-tasks-template
-                        - name: Synkronisera utgiftskategorier för projekt
-                          href: /dynamics365/project-operations/prod-pma/project-categories-templates
-                        - name: Synkronisera projektuppskattningar med projektprognoser
-                          href: /dynamics365/project-operations/prod-pma/project-estimates-templates
-                        - name: Synkronisera projektutfall med projektets integrationsjournal
-                          href: /dynamics365/project-operations/prod-pma/project-actuals-templates
+                        - name: Konfigurera ett scenario för potentiell kund till pengar
+                          items:
+                            - name: Potentiell kund till pengar
+                              href: ../../supply-chain/sales-marketing/prospect-to-cash.md
+                            - name: Synkronisera konton direkt från Sales till kunder i Finance and Operations
+                              href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
+                            - name: Synkronisera produkter direkt från Finance and Operations till produkter i Sales
+                              href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
+                            - name: Synkronisera kontakter direkt från Sales till kontakter eller kunder i Finance and Operations
+                              href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
+                            - name: Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till Finance and Operations
+                              href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
+                            - name: Synkronisering av försäljningsorder direkt mellan Sales och Finance and Operations
+                              href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
+                            - name: Synkronisera huvuden och rader i försäljningsfakturor direkt från Finance and Operations till Sales
+                              href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
+                        - name: Konfigurera integration med Field Service
+                          items:
+                            - name: Konfigurera integration med Field Service – översikt
+                              href: ../../supply-chain/sales-marketing/field-service.md
+                            - name: Synkronisera produkter i Finance and Operations till produkter i Field Service
+                              href: ../../supply-chain/sales-marketing/field-service-product.md
+                            - name: Synkronisera arbetsorder i Field Service till försäljningsorder i Finance and Operations
+                              href: ../../supply-chain/sales-marketing/field-service-work-order.md
+                            - name: Synkronisera avtalsfakturor i Field Service till fritextfakturor i Finance and Operations
+                              href: ../../supply-chain/sales-marketing/field-service-invoice.md
+                            - name: Synkronisera lageröverföringar och justeringar från Field Service till Finance and Operations
+                              href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+                            - name: Synkronisera information om lagernivåer från Finance and Operations till Field Service
+                              href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+                            - name: Synkronisera produkter med lagerenhet från Finance and Operations till Field Service
+                              href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+                            - name: Synkronisera projektlista från Finance and Operations till Field Service
+                              href: ../../supply-chain/sales-marketing/synchronize-project-list.md
+                            - name: Synkronisera lagerställen från Finance and Operations till Field Service
+                              href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
+                            - name: Synkronisera arbetsorder med projekt från Field Service till Finance and Operations
+                              href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
+                        - name: Konfigurera Project Service Automation-integration
+                          items:
+                            - name: Översikt över Project Service Automation
+                              href: ../../finance/project-management/PSA-integration.md
+                            - name: Parametrar för Project Service Automation-integration
+                              href: ../../finance/project-management/PSA-parameters.md
+                            - name: Synkronisera projektkontrakt och projekt
+                              href: ../../finance/project-management/project-contracts-templates.md
+                            - name: Synkronisera projektuppgifter
+                              href: ../../finance/project-management/project-tasks-template.md
+                            - name: Synkronisera utgiftskategorier för projekt
+                              href: ../../finance/project-management/project-categories-templates.md
+                            - name: Synkronisera projektuppskattningar med projektprognoser
+                              href: ../../finance/project-management/project-estimates-templates.md
+                            - name: Synkronisera projektutfall med projektets integrationsjournal
+                              href: ../../finance/project-management/project-actuals-templates.md
             - name: Konsumera externa webbtjänster
               href: data-entities/consume-external-web-service.md
             - name: Elektroniska meddelanden
@@ -186,12 +338,8 @@
               items:
                 - name: Översikt över jobb för import och export av data
                   href: data-entities/data-import-export-job.md
-                - name: Synkronisera datum och tid i importjobb
-                  href: data-entities/data-synchronize-date-and-time.md
-                - name: Importera verifikationer med hjälp av enheten Allmän journal
+                - name: Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal
                   href: data-entities/tips-tricks-import-general-journal-entity.md
-                - name: Optimera datamigrering för Finance and Operations-appar
-                  href: sysadmin/optimize-data-migration.md
             - name: Utveckling för datatabeller
               items:
                 - name: Designprinciper och metodtips för datatabeller
@@ -232,16 +380,14 @@
               href: data-entities/dm-error-descriptions.md
         - name: Azure Data Lake
           items:
-            - name: Exportera till Azure Data Lake – översikt
-              href: data-entities/Azure-Data-Lake-GA-version-overview.md
-            - name: Installera tillägget för export till Azure Data Lake
+            - name: Azure Data Lake – översikt
+              href: data-entities/azure-data-lake-overview.md
+            - name: Konfigurera export till Azure Data Lake
               href: data-entities/configure-export-data-lake.md
             - name: Finance and Operations-appar i Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
             - name: Gör enhetslagring tillgängligt som en Data Lake
               href: data-entities/entity-store-data-lake.md
-            - name: Ändra data i Azure Data Lake
-              href: data-entities/Azure-data-lake-Change-feeds.md
         - name: Åtgärder för databasflytt
           items:
             - name: Översikt
@@ -316,7 +462,7 @@
                       href: deployment/infrastructure-stack.md
                     - name: Distribuera en ny miljö
                       href: deployment/deployenvironment-newinfrastructure.md
-                    - name: Vanliga frågor och svar om distribution
+                    - name: Frågor och svar om distribution
                       href: deployment/deploymentFAQ.md
                     - name: Kända problem med självbetjäningsdistribution
                       href: deployment/known-issues-new-deployment-experience.md
@@ -324,26 +470,18 @@
                       href: deployment/maintenanceoperationsguide-newinfrastructure.md
                     - name: Uppdatera en miljö
                       href: deployment/updateenvironment-newinfrastructure.md
-                    - name: Felsöka miljöer distribuerade med självbetjäningsdistribution
+                    - name: Felsöka miljöer som distribuerats med självbetjäningsdistribution
                       href: deployment/troubleshoot-newinfrastructure.md
-                    - name: Vanliga frågor och svar om planerat underhåll i självbetjäningsmiljöer
-                      href: deployment/plannedmaintenance-selfservice.md
-                    - name: Affärskontinuitet och haveriberedskap
-                      href: sysadmin/business-continuity-disaster-recovery.md
-                - name: Slutför registreringen av Azure Resource Manager
+                - name: Slutför integration av Azure Resource Manager
                   href: deployment/arm-onboarding.md
-                - name: Slutför den pågående registreringen av Azure Resource Manager för LCS-projekt för amerikanska myndigheter
-                  href: deployment/arm-onbarding-us-goverment.md
                 - name: Azure ExpressRoute och Finance and Operations
                   href: deployment/expressroute.md
-                - name: Arkitektur för Finance and Operations
+                - name: Finance and Operations-arkitektur
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Tillämpa uppdateringar i molnmiljöer
                   href: deployment/apply-deployable-package-system.md
                 - name: Tillämpa uppdateringar och tillägg för Commerce Scale Unit (moln)
                   href: deployment/Update-retail-channel.md
-                - name: Autouppdatering för Commerce Scale Unit (moln)
-                  href: deployment/Auto-Update-Commerce-Scale-Unit.md
                 - name: Initiera Commerce Scale Unit (moln)
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Migrera kanaler till en annan Commerce Scale Unit
@@ -360,8 +498,6 @@
                       href: deployment/on-premises-overview.md
                     - name: Planera och förbereda för lokala distributioner
                       href: deployment/plan-onprem-deployment.md
-                    - name: Program som stöds i Microsoft Dynamics 365 Finance + Operations (on-premises)
-                      href: deployment/onprem-compatibility.md
                     - name: Storlekskrav för maskinvara
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                     - name: Autentisering i Dynamics 365 Finance + Operations (on-premises)
@@ -370,15 +506,13 @@
                   items:
                     - name: Konfigurera lokala projekt i LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Ställa in och distribuera lokala miljöer (Platform update 41 och senare)
-                      href: deployment/setup-deploy-on-premises-pu41.md
-                    - name: Ställa in och distribuera lokala miljöer (Platform update 12 till och med 40)
+                    - name: Konfigurera och distribuera lokala miljöer
                       href: deployment/setup-deploy-on-premises-pu12.md
-                    - name: Installationssteg för kanalkomponenter i Retail i en lokal miljö
+                    - name: Installationsanvisningar för kanalkomponenter i Retail i en lokal miljö
                       href: deployment/deploy-retail-onprem.md
                     - name: Utveckla och distribuera anpassade modeller i lokala miljöer
                       href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: Miljöåtgärder
+                - name: Miljöunderhåll
                   items:
                     - name: Uppdatera en lokal distribution
                       href: deployment/apply-updates-on-premises.md
@@ -388,8 +522,6 @@
                       href: user-interface/client-disconnected.md
                     - name: Konfigurera endast batchvisa och interaktiva AOS-noder i lokala distributioner
                       href: deployment/onprem-batchonly.md
-                    - name: Konfigurera hög tillgänglighet för SSRS-noder (SQL Server Reporting Services)
-                      href: deployment/onprem-SSRSHA.md
                     - name: Konfigurera proxyservrar för lokala miljöer
                       href: deployment/onprem-reverseproxy.md
                     - name: Lokal diagnostik
@@ -404,18 +536,14 @@
                       href: deployment/redeploy-on-prem.md
                     - name: 'Ta bort och installera om, eller lägga till en AOS-nod'
                       href: deployment/onprem-remove-reinstall-AOS-node.md
-                    - name: Återanvända samma AD FS-instans i flera miljöer
+                    - name: Återanvända samma AD FS-instans för flera miljöer
                       href: deployment/onprem-reuseadfs.md
-                    - name: Uppgradera SQL Server-instansen för Microsoft Dynamics 365 Finance + Operations (on-premises)-miljöer
-                      href: deployment/onprem-upgrade-sqlserver.md
                 - name: Lokal agent
                   items:
                     - name: AD FS Microsoft 365-kompatibilitet
                       href: deployment/onprem-adfscompatibility.md
                     - name: Skripts för lokal agent för fördistribution och efterdistribution
                       href: lifecycle-services/pre-post-scripts.md
-                    - name: Distributionskonfigurationer för den lokala agenten
-                      href: deployment/onprem-localagent-options.md
                     - name: Uppdatera den lokala agenten
                       href: lifecycle-services/update-local-agent.md
                 - name: Felsökning
@@ -432,8 +560,6 @@
                   href: deployment/install-deployable-package.md
                 - name: Avinstallera ett paket
                   href: deployment/uninstall-deployable-package.md
-                - name: Köra anpassade X++-skript med noll drifttid
-                  href: deployment/run-custom-scripts.md
                 - name: Felsöka problem med paketprogram
                   href: deployment/deployable-package-troubleshooting.md
             - name: Distribuera anpassad hjälp
@@ -462,16 +588,6 @@
                   href: help/language-locale.md
                 - name: 'Utöka, anpassa och samarbeta om hjälpen'
                   href: help/contributor-guide.md
-            - name: Att tänka på vid distribuering
-              items:
-                - name: Distribuering av lokala molnbaserade distributionsalternativ Dynamics 365 Finance för och Dynamics 365 Supply Chain Management
-                  href: deployment/deployment-options-geo.md
-                - name: Finance och Supply Chain Management i GCC (US Government Community Cloud)
-                  href: deployment/us-gcc-deployment.md
-                - name: Finance och Supply Chain Management som drivs av 21Vianet i Kina
-                  href: deployment/china-local-deployment.md
-                - name: Finance and Operations-appar i Frankrike
-                  href: deployment/france-local-deployment.md
         - name: Ta fram och anpassa
           items:
             - name: Ta fram och anpassa – startsida
@@ -488,7 +604,9 @@
                   href: dev-tools/access-instances.md
                 - name: Konfigurera enskilda utvecklingsmiljöer
                   href: dev-tools/configure-developer-vm.md
-                - name: Vanliga frågor och svar om hur du utvecklar och skapar virtuella datorer som inte tillåter administratörsåtkomst
+                - name: Skapa nya användare på utvecklingsdatorer
+                  href: dev-tools/enable-development-machine.md
+                - name: Frågor och svar om hur du utvecklar och skapar virtuella maskiner som inte tillåter administratörsåtkomst
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Byta namn på lokala miljöer för att komma åt Azure DevOps
                   href: migration-upgrade/vso-machine-renaming.md
@@ -514,10 +632,6 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Skapa en anslutning till Lifecycle Services (LCS) i Azure Pipelines
                   href: dev-tools/pipeline-lcs-connection.md
-                - name: Uppdatera autentiseringsuppgifter för LCS-anslutning till MSAL i Azure Pipelines
-                  href: dev-tools/pipeline-lcs-connection-update.md
-                - name: Uppdatera värdbaserat Azure Pipeline för nya NuGet-paket
-                  href: dev-tools/pipeline-nuget-split.md
                 - name: Uppdatera en äldre pipeline i Azure Pipelines
                   href: dev-tools/pipeline-msbuild-update.md
             - name: Hantering av vagnpark – exempelprogram
@@ -547,7 +661,7 @@
                     - name: Skapa modeller och datamodellelement – översikt
                       href: dev-tools/create-data-model-elements.md
                     - name: Riktlinjer för namngivning av tillägg
-                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
+                      href: extensibility/NamingGuidelines.md
                     - name: Inaktivera modellanpassning och avskrivningsfunktioner
                       href: dev-tools/lock-models.md
                 - name: Rapport med anpassningsanalys
@@ -562,7 +676,7 @@
                   href: dev-tools/metadata-search-visual-studio.md
                 - name: Modeller och paket
                   href: dev-tools/models.md
-                - name: Projekttypen Finance and Operations
+                - name: Finance and Operations-projekttyp
                   href: dev-tools/projects.md
                 - name: Verktygstillägg för Visual Studio
                   href: dev-tools/developer-tools-add-ins.md
@@ -570,24 +684,22 @@
                   href: dev-tools/update-development-tools.md
             - name: 'X++, programmeringsspråk'
               items:
-                - name: Språkstöd i X++
-                  items:
-                    - name: Visual Studio-krav för X++
-                      href: dev-tools/developer-tools-vs2017.md
-                    - name: Felsöka kod av typen X++
-                      href: dev-tools/debug-xpp.md
-                    - name: EventHandlerResult-klasser i scenarier med begäran eller svar
-                      href: dev-tools/event-handler-result-class.md
-                    - name: Skriva affärslogik med källkod av typen C# och X++
-                      href: dev-tools/write-business-logic.md
-                    - name: LINQ-provider för C#
-                      href: dev-tools/linq-provider-c.md
-                    - name: Skriva regelverksregler
-                      href: dev-tools/author-best-practice-rules.md
-                    - name: Egenskaper för Programutforskaren
-                      href: dev-ref/application-explorer-aot-properties.md
-                    - name: SysSetupConfigAttribute-attribut
-                      href: dev-tools/syssetupconfigattribute.md
+                - name: X++ och felsökningsfunktioner
+                  href: dev-tools/new-x-debugger-features.md
+                - name: Felsöka kod av typen X++
+                  href: dev-tools/debug-xpp.md
+                - name: EventHandlerResult-klasser i scenarier med begäran eller svar
+                  href: dev-tools/event-handler-result-class.md
+                - name: Skriva affärslogik med källkod av typen C# och X++
+                  href: dev-tools/write-business-logic.md
+                - name: Ändringar i X++ och kompileraren för X++
+                  href: dev-tools/programming-language-support.md
+                - name: LINQ-provider för C#
+                  href: dev-tools/linq-provider-c.md
+                - name: Skriva regler för bästa praxis
+                  href: dev-tools/author-best-practice-rules.md
+                - name: Egenskaper för Programutforskaren
+                  href: dev-ref/application-explorer-aot-properties.md
                 - name: Språkreferens för X++
                   items:
                     - name: Språkreferens för X++ – översikt
@@ -632,11 +744,11 @@
                           href: dev-ref/xpp-interfaces.md
                         - name: Bibliotek
                           href: dev-ref/xpp-library-objects.md
-                        - name: Händelser och ombud
+                        - name: Händelser
                           href: dev-ref/xpp-events.md
-                    - name: Dataval och manipulering i X++
+                    - name: Dataval och manipulering för X++
                       items:
-                        - name: Översikt över dataval och manipulering i X++
+                        - name: Översikt över dataval och manipulering för X++
                           href: dev-ref/xpp-data/xpp-data-home-page.md
                         - name: Select-instruktion
                           href: dev-ref/xpp-data/xpp-select-statement.md
@@ -696,17 +808,71 @@
                       href: dev-ref/xpp-string-run-time-functions.md
                 - name: Systemtabeller
                   href: dev-ref/system-tables.md
+                - name: Systemklasser
+                  items:
+                    - name: Lista med systemklasser
+                      href: dev-ref/system-classes/toc.yml
+                    - name: Systemklasser grupperade alfabetiskt
+                      items:
+                        - name: A-klasser
+                          href: dev-ref/a-classes.md
+                        - name: B-klasser
+                          href: dev-ref/b-classes.md
+                        - name: C-klasser
+                          href: dev-ref/c-classes.md
+                        - name: D-klasser
+                          href: dev-ref/d-classes.md
+                        - name: E-klasser
+                          href: dev-ref/e-classes.md
+                        - name: F-klasser
+                          href: dev-ref/f-classes.md
+                        - name: G-klasser
+                          href: dev-ref/g-classes.md
+                        - name: H-klasser
+                          href: dev-ref/h-classes.md
+                        - name: I-klasser
+                          href: dev-ref/i-classes.md
+                        - name: J-klasser
+                          href: dev-ref/j-classes.md
+                        - name: K-klasser
+                          href: dev-ref/k-classes.md
+                        - name: L-klasser
+                          href: dev-ref/l-classes.md
+                        - name: M-klasser
+                          href: dev-ref/m-classes.md
+                        - name: N-klasser
+                          href: dev-ref/n-classes.md
+                        - name: O-klasser
+                          href: dev-ref/o-classes.md
+                        - name: P-klasser
+                          href: dev-ref/p-classes.md
+                        - name: Q-klasser
+                          href: dev-ref/q-classes.md
+                        - name: R-klasser
+                          href: dev-ref/r-classes.md
+                        - name: S-klasser
+                          href: dev-ref/s-classes.md
+                        - name: T-klasser
+                          href: dev-ref/t-classes.md
+                        - name: U-klasser
+                          href: dev-ref/u-classes.md
+                        - name: V-klasser
+                          href: dev-ref/v-classes.md
+                        - name: W-klasser
+                          href: dev-ref/w-classes.md
+                        - name: X-klasser
+                          href: dev-ref/x-classes.md
             - name: Utbyggbarhet
               items:
                 - name: Startsida för utbyggbarhet
                   href: extensibility/extensibility-home-page.md
-                - name: Introduktion och komma i gång
+                - name: Introduktion och komma igång
                   items:
                     - name: Plan för programs utbyggbarhet
                       href: extensibility/extensibility-roadmap.md
                     - name: Begäranden om utbyggbarhet
                       href: extensibility/extensibility-requests.md
-                    - name: Vanliga frågor och svar om utbyggbarhet
+                    - name: Frågor och svar om utbyggbarhet
                       href: extensibility/app-sealing-faq.md
                     - name: Migrera från överlägg till tillägg
                       href: extensibility/migrate-overlayer-extension.md
@@ -836,11 +1002,13 @@
               items:
                 - name: Börja spåra med Trace parser
                   href: perf-test/trace-trace-tutorial.md
-                - name: Enanvändartester med Performance SDK och Uppgiftsinspelaren
+                - name: Enanvändartestning med Uppgiftsinspelaren och Performance SDK
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: Fleranvändartester med Performance SDK
-                  href: perf-test/perfsdk-multi-user-testing.md
-                - name: Felsökningsguide för tester med Performance SDK
+                - name: Fleranvändartestning med Performance SDK och en lokal testkontrollant
+                  href: perf-test/multi-user-testing-local-test-controller.md
+                - name: Fleranvändartestning med Performance SDK och Azure DevOps
+                  href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+                - name: Felsökningsguide för enanvändartestning eller fleranvändartestning med Performance SDK
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
                 - name: Performance SDK och fleranvändartestning i lokala miljöer
                   href: perf-test/perfsdk-tutorial-lbd.md
@@ -854,12 +1022,10 @@
                   href: perf-test/testing-validation.md
                 - name: Testa projekt i Visual Studio
                   href: perf-test/testing-support.md
-                - name: Distribuera och använda miljön för kontinuerlig bygg- och testautomatisering
+                - name: Distribuera miljöer som har stöd för kontinuerlig bygg- och testautomatisering
                   href: perf-test/continuous-build-test-automation.md
                 - name: SysTest-filtrering med hjälp av klass- och metodattribut
                   href: perf-test/systest-filtering.md
-                - name: SysTestRow-attribut för testning av flera värden
-                  href: perf-test/systest-row.md
                 - name: Bibliotek för acceptanstest
                   items:
                     - name: Resurser i biblioteket för acceptanstester
@@ -886,16 +1052,10 @@
                       href: perf-test/atl-faq.md
             - name: Gäller från
               href: dev-tools/date-effectivity.md
-            - name: Utveckling för oberoende programvaruleverantörer
-              items:
-                - name: Utveckling av ISV – startsida
-                  href: dev-tools/isv-dev-home-page.md
-                - name: Länka X++-moduler till paket med hjälp av ISV Studio
-                  href: dev-tools/isv-studio-solutions.md
-                - name: ISV-licensiering
-                  href: dev-tools/isv-licensing.md
-                - name: Lokal ISV-licensiering
-                  href: dev-tools/isv-licensing-on-prem.md
+            - name: ISV-licensiering
+              href: dev-tools/isv-licensing.md
+            - name: Lokal ISV-licensiering
+              href: dev-tools/isv-licensing-on-prem.md
         - name: Allmänna dataskyddsförordningen (GDPR)
           items:
             - name: Allmänna dataskyddsförordningen – översikt
@@ -928,18 +1088,12 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: LCS för partner
                   href: lifecycle-services/getting-started-lcs.md
-                - name: 'RESTful API:er'
-                  items:
-                    - name: Starta och stoppa miljöer
-                      href: lifecycle-services/api/v1/reference-start-stop-environments.md
-                    - name: Hämta miljömetadata
-                      href: lifecycle-services/api/v1/reference-environment-metadata.md
-                    - name: Hämta miljöhistorik
-                      href: lifecycle-services/api/v1/reference-environment-history.md
-                    - name: Hämta certifikat-ZIP för miljö RSAT
-                      href: lifecycle-services/api/v1/reference-download-rsat-certificate.md
                 - name: Nyheter och ändringar i Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
+                - name: Kända problem
+                  href: lifecycle-services/known-issues.md
+                - name: Borttagna eller utfasade funktioner i Lifecycle Services (LCS)
+                  href: lifecycle-services/removed-deprecated-features.md
             - name: Användarhandbok för Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
             - name: Projektregistrering
@@ -989,11 +1143,9 @@
                 - name: Vanliga frågor och svar om fönster för planerat underhåll
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Övervakning och diagnostik
-              items:
-                - name: Övervaknings- och diagnostikverktyg
-                  href: lifecycle-services/monitoring-diagnostics.md
-                - name: Använda Azure Data Explorer för att göra förfrågningar i loggar med rå information
-                  href: lifecycle-services/azure-data-explorer.md
+              href: lifecycle-services/monitoring-diagnostics.md
+            - name: Effektanalysrapport
+              href: lifecycle-services/impact-analysis-report.md
             - name: Starta om miljötjänster
               href: lifecycle-services/restart-environment-services.md
             - name: Rapportera ett produktionsavbrott
@@ -1006,249 +1158,37 @@
               href: lifecycle-services/performancetroubleshooting.md
             - name: Handbok för frågor
               href: lifecycle-services/querycookbook.md
-            - name: Utgångna prenumerationer och dataradering
-              href: lifecycle-services/expired-subscription-data-deletion.md
             - name: Microsoft Dynamics 365 Translation Service
               items:
                 - name: Dynamics 365 Translation Service – översikt
                   href: lifecycle-services/translation-service-overview.md
                 - name: Översätt användargränssnittsfiler
                   href: lifecycle-services/use-translation-service.md
-                - name: Översätt dokumentationsfiler
+                - name: Översätta dokumentationsfiler
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Filer för översättningsminne
                   href: lifecycle-services/use-translation-service-tm.md
-                - name: Azure DevOps-tillägg (allmänt tillgänglig förhandsversion)
-                  href: lifecycle-services/dts-devops-extension.md
         - name: Microsoft Power Platform-integration
           items:
-            - name: Översikt
+            - name: Microsoft Power Platform-integration med Finance and Operations
               href: power-platform/overview.md
-            - name: Aktivera Power Platform-integrationen
-              href: power-platform/enable-power-platform-integration.md
-            - name: Autentisering och auktorisering
-              href: power-platform/authentication-and-authorization.md
-            - name: Dubbelriktad skrivning
-              items:
-                - name: Startsida för dubbelriktad skrivning
-                  href: data-entities/dual-write/dual-write-home-page.md
-                - name: Nyheter och ändringar för dubbelriktad skrivning
-                  href: data-entities/dual-write/whats-new-dual-write.md
-                - name: Översikt över dubbelriktad skrivning
-                  href: data-entities/dual-write/dual-write-overview.md
-                - name: Inställning av dubbelriktad skrivning
-                  items:
-                    - name: Systemkrav för dubbelriktad skrivning
-                      href: data-entities/dual-write/dual-write-system-req.md
-                    - name: Riktlinjer för att ställa in dubbelriktad skrivning
-                      href: data-entities/dual-write/connection-setup.md
-                    - name: Att tänka på vid första synkroniseringen
-                      href: data-entities/dual-write/initial-sync-guidance.md
-                    - name: Gränser för livesynkronisering
-                      href: data-entities/dual-write/sync-limits.md
-                    - name: Inställning av dubbelriktad skrivning från Lifecycle Services
-                      href: data-entities/dual-write/lcs-setup.md
-                    - name: Aktivera dubbelriktad skrivning för befintliga Finance and Operations-appar
-                      items:
-                        - name: Aktivera dubbelriktad skrivning för befintliga Finance and Operations-appar
-                          href: data-entities/dual-write/enable-dual-write.md
-                        - name: Systemkrav och förutsättningar
-                          href: data-entities/dual-write/requirements-and-prerequisites.md
-                        - name: Använda guiden för dubbelriktad skrivning för att länka dina miljöer
-                          href: data-entities/dual-write/link-your-environment.md
-                        - name: Aktivera enhetsmappning för dubbelriktad skrivning
-                          href: data-entities/dual-write/enable-entity-map.md
-                    - name: Paket för separat dubbelriktad skrivning för programorkestrering
-                      href: data-entities/dual-write/separated-solutions.md
-                    - name: Migrering av valutadatatyp för dubbelriktad skrivning
-                      href: data-entities/dual-write/currrency-decimal-places.md
-                    - name: Ställa in mappning för fälten för försäljningsorderns status
-                      href: data-entities/dual-write/sales-status-map.md
-                    - name: Filtrera koncerninterna order för att undvika synkronisering av order och orderrader
-                      href: data-entities/dual-write/filtering-intercompany-orders.md
-                - name: Hantera dubbelriktad skrivning
-                  items:
-                    - name: Anpassa enhets- och fältmappningar
-                      href: data-entities/dual-write/customizing-mappings.md
-                    - name: Anpassningsriktlinjer för dubbelriktad skrivning
-                      href: data-entities/dual-write/custom-best-practices.md
-                    - name: Hantera flera entitetsmappningar
-                      href: data-entities/dual-write/multiple-entity-maps.md
-                    - name: Redigera en juridisk person efter konfiguration med dubbelriktad skrivning
-                      href: data-entities/dual-write/edit-legal-entity.md
-                    - name: Pausa dubbelriktad skrivning för underhåll
-                      href: data-entities/dual-write/pause-for-maintenance.md
-                    - name: Felhantering och varningsaviseringar
-                      href: data-entities/dual-write/errors-and-alerts.md
-                    - name: Livscykelhantering för program
-                      href: data-entities/dual-write/app-lifecycle-management.md
-                    - name: Användarspecificerad teamägare
-                      href: data-entities/dual-write/user-specified-team-owner.md
-                    - name: Ta bort länkning och omlänkning av miljöer med dubbelriktad skrivning
-                      href: data-entities/dual-write/relink-environments.md
-                - name: Mappa koncept mellan appar
-                  items:
-                    - name: Integrerad kundmaster
-                      href: data-entities/dual-write/customer-mapping.md
-                    - name: Leverantörsintegration
-                      items:
-                        - name: Integrerat leverantörshuvud
-                          href: data-entities/dual-write/vendor-mapping.md
-                        - name: Växla mellan leverantörsdesigner
-                          href: data-entities/dual-write/vendor-switch.md
-                    - name: Kundförmånskort och belöningspoäng
-                      href: data-entities/dual-write/loyalty-mapping.md
-                    - name: Produktintegration
-                      items:
-                        - name: Enhetlig produktupplevelse
-                          href: data-entities/dual-write/product-mapping.md
-                        - name: Integrerade platser och lagerställen
-                          href: data-entities/dual-write/sites-warehouses-mapping.md
-                    - name: Företagsintegrering
-                      items:
-                        - name: Företagskoncept i Dataverse
-                          href: data-entities/dual-write/company-data.md
-                        - name: Initiera företagsdata
-                          href: data-entities/dual-write/bootstrap-company-data.md
-                    - name: Organisationshierarki för Dataverse
-                      href: data-entities/dual-write/organization-mapping.md
-                    - name: Ekonomi- och momsdata
-                      items:
-                        - name: Åtkomst till ekonomi- och momsreferensdata
-                          href: data-entities/dual-write/finance-tax-reference.md
-                        - name: Integrerad redovisning
-                          href: data-entities/dual-write/ledger-mapping.md
-                        - name: Integrerad momsmall
-                          href: data-entities/dual-write/tax-mapping.md
-                    - name: Integrera anskaffning i Supply Chain Management med Field Service
-                      href: data-entities/dual-write/scm-field-service-procurement.md
-                    - name: Synkronisera på begäran med prissättningsmotorn för Supply Chain Management
-                      href: data-entities/dual-write/pricing-engine.md
-                    - name: Potentiell kund till kontanter med dubbelriktad skrivning
-                      href: data-entities/dual-write/dual-write-prospect-to-cash.md
-                    - name: Använda prissättningsmotorn för Dynamics 365 Commerce med Dynamics 365 Sales
-                      href: data-entities/dual-write/commerce-pricing.md
-                    - name: Interna tillgångar för service
-                      href: data-entities/dual-write/in-house-assets.md
-                    - name: Lagertillgänglighet
-                      href: data-entities/dual-write/inventory-availability.md
-                    - name: 'Integrerad arbetare, jobb och befattning'
-                      href: data-entities/dual-write/integrated-hr.md
-                    - name: Part och global adressbok
-                      href: data-entities/dual-write/party-gab.md
-                    - name: Använda Microsoft Power Apps-portaler med datamodellen för part
-                      href: data-entities/dual-write/party-gab-portal.md
-                    - name: Uppgradera till part- och globala adressboksmodellen
-                      href: data-entities/dual-write/upgrade-party-gab.md
-                    - name: Visa data för part
-                      href: data-entities/dual-write/view-party.md
-                    - name: Note-integration
-                      href: data-entities/dual-write/notes-integration.md
-                    - name: Mappningsreferens
-                      href: data-entities/dual-write/mapping-reference.md
-                - name: Stöd för dubbelriktad skrivning
-                  items:
-                    - name: Stöd för Field Service- och Project Service Automation-lösningar
-                      href: data-entities/dual-write/field-service-project-service-automation.md
-                    - name: Migrera Potentiell kund till kontanter från dataintegreraren till dubbelriktad skrivning
-                      href: data-entities/dual-write/migrate-prospect-to-cash.md
-                    - name: Felsökning
-                      items:
-                        - name: Allmän felsökning
-                          href: data-entities/dual-write/dual-write-troubleshooting.md
-                        - name: Felsöka problem under första installationen
-                          href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
-                        - name: Felsöka problem under första synkroniseringen
-                          href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                        - name: Felsöka problem med livesynkronisering
-                          href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                        - name: Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
-                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
-                        - name: Felsök problem i part- och global adressboksmodell
-                          href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
-                        - name: Felsöka problem som rör lösningsmedvetande
-                          href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                        - name: Felsöka problem från uppgraderingar av Finance and Operations-appar
-                          href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Verifiera konfiguration av dubbelriktad skrivning i Finance and Operations-appar och Dataverse
-                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
-                        - name: Felkoder för hälsokontrollen av tabellmappning
-                          href: data-entities/dual-write/table-map-health-check.md
-                - name: Vanliga frågor om dubbelriktad skrivning
-                  href: data-entities/dual-write/dual-write-faq.md
-            - name: Virtuella entiteter
-              items:
-                - name: Översikt över virtuella entiteter
-                  href: power-platform/virtual-entities-overview.md
-                - name: Entitetsmodellering
-                  href: power-platform/entity-modeling.md
-                - name: Livscykelhantering för program
-                  href: power-platform/application-lifecycle-management.md
-                - name: Konfigurera virtuella Dataverse-entiteter
-                  href: power-platform/admin-reference.md
-                - name: Aktivera virtuella Dataverse-entiteter
-                  href: power-platform/enable-virtual-entities.md
-                - name: Power Apps-portaler med Finance and Operations
-                  href: power-platform/power-portal-reference.md
-                - name: Vanliga frågor om Finance and Operations virtuella enheter
-                  href: power-platform/faq.md
-            - name: Affärshändelser
-              items:
-                - name: Översikt över affärshändelser
-                  href: business-events/home-page.md
-                - name: Hantera slutpunkter för affärshändelse
-                  href: business-events/managing-business-event-endpoints.md
-                - name: Affärshändelser i program
-                  href: business-events/app-business-events.md
-                - name: Affärshändelser i arbetsflöde
-                  href: business-events/business-events-workflow.md
-                - name: Affärshändelser i batch
-                  href: business-events/system-business-events.md
-                - name: Aviseringar som affärshändelser
-                  href: business-events/alerts-business-events.md
-                - name: Datahändelser
-                  href: business-events/data-events.md
-                - name: Affärshändelser i Power Automate
-                  href: business-events/business-events-flow.md
-                - name: Utvecklardokumentationen för affärshändelser
-                  href: business-events/business-events-dev-doc.md
-                - name: Felsöka affärshändelser
-                  href: business-events/troubleshooting.md
-                - name: Använd ärenden för affärshändelser
-                  href: business-events/potential-use-cases.md
-                - name: Självstudier
-                  items:
-                    - name: Affärshändelser och Power Automate
-                      href: business-events/how-to/how-to-flow.md
-                    - name: Affärshändelser och Azure Event Grid
-                      href: business-events/how-to/how-to-eventgrid.md
-                    - name: Affärshändelser och Azure Service Bus
-                      href: business-events/how-to/how-to-servicebus.md
-                    - name: Affärshändelser och Azure Service Bus-kö
-                      href: business-events/how-to/how-to-servicebus-queue.md
-                    - name: Affärshändelser och arbetsflödesgodkännanden
-                      href: business-events/how-to/how-to-workflow.md
-                    - name: Affärshändelser och Microsoft Forms Pro
-                      href: business-events/how-to/FormsPro.md
-                    - name: Affärshändelser och Azure Event Hubs
-                      href: business-events/how-to/event-hub.md
-                    - name: Prenumerera på händelser i Dataverse
-                      href: business-events/how-to/how-to-dataverse-events.md
-                    - name: Affärshändelser i räkenskapsperiodens stängning
-                      href: business-events/how-to/period-close.md
-            - name: Tillägg
-              items:
-                - name: Översikt över tillägg
-                  href: power-platform/add-ins-overview.md
-            - name: Policyer och kommunikation
-              href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
-        - name: Mobil plattform
+            - name: Enhetsmodellering
+              href: power-platform/entity-modeling.md
+            - name: Livscykelhantering för program
+              href: power-platform/application-lifecycle-management.md
+            - name: Finance and Operations- och Common Data Service-administratörsreferens
+              href: power-platform/admin-reference.md
+            - name: Power Apps-portaler med Finance and Operations
+              href: power-platform/power-portal-reference.md
+            - name: Vanliga frågor om virtuella Finance and Operations-enheter
+              href: power-platform/faq.md
+        - name: Mobilplattform
           items:
-            - name: Resurser för mobil plattform
+            - name: Mobila plattformsresurser
               href: mobile-apps/platform/mobile-platform-home-page.md
             - name: Kom i gång
               items:
-                - name: Kom i gång med mobila plattformen
+                - name: Kom i gång med mobilplattformen
                   href: mobile-apps/platform/mobile-platform-getting-started.md
                 - name: Överväganden vid arkitektur och design
                   href: mobile-apps/platform/mobile-platform-architecture.md
@@ -1466,34 +1406,26 @@
               href: process-automation/log-results.md
             - name: Anpassa användargränssnittet
               href: process-automation/ui-customization.md
-        - name: Regression suite automation tool
+        - name: Regression Suite Automation Tool
           items:
-            - name: Regression suite automation tool – översikt
+            - name: Regression Suite Automation Tool – översikt
               href: perf-test/rsat/rsat-overview.md
             - name: Installation och konfiguration
               href: perf-test/rsat/rsat-install-configure.md
-            - name: Använda Regression suite automation tool
+            - name: Använda Regression Suite Automation Tool
               href: perf-test/rsat/rsat-run.md
-            - name: Underhålla testfall i Regression suite automation tool
-              href: perf-test/rsat/rsat-maintain-test-cases.md
             - name: Validera förväntade värden
               href: perf-test/rsat/rsat-validate-expected.md
             - name: Kedja testfall
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Härledda testfall
               href: perf-test/rsat/rsat-derived-test-cases.md
-            - name: Uppgradera parameterfilerna
-              href: perf-test/rsat/rsat-upgrade-parameter-files.md
-            - name: Självstudier för Regression suite automation tool
-              href: perf-test/rsat/rsat-tutorial.md
-            - name: Konfigurera icke-administratörsanvändare
-              href: perf-test/rsat/rsat-configure-nonadmin.md
+            - name: Regression Suite Automation Tool-självstudier och andra funktioner
+              href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
             - name: Bästa praxis
               href: perf-test/rsat/rsat-best-practices.md
             - name: Dataagnostiska tester med hjälp av Regression Suite Automation Tool
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
-            - name: Kör Regression Suite Automation Tool (RSAT) med parallell körning
-              href: perf-test/rsat/rsat-parallel-execution.md
             - name: Felsökning
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Släpp lösningar med hjälp av Lifecycle Services
@@ -1532,23 +1464,21 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Support
           items:
-            - name: Få hjälp med Finance and Operations och Lifecycle Services
+            - name: Få support för Finance and Operations och Lifecycle Services
               href: lifecycle-services/lcs-support.md
             - name: Översikt över Dynamics 365-support
-              href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
+              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: Få support för Finance and Operations som drivs av 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
-            - name: Konfigurera teknisk support för Finance and Operations-appar
+            - name: Ställa in teknisk support för Finance and Operations-appar
               href: lifecycle-services/support-experience.md
-            - name: Hantera upplevelser av support för Finance and Operations-appar
+            - name: Hantera supportupplevelser för Finance and Operations-appar
               href: lifecycle-services/cloud-powered-support-lcs.md
-            - name: Produktionssupport och övervakning
-              href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
         - name: Systemadministration
           items:
             - name: Systemadministration – startsida
               href: sysadmin/system-administration-home-page.md
-            - name: Lägg till länkar till formella villkor och sekretesspolicy
+            - name: Lägga till länkar till juridiska villkor och sekretesspolicy
               href: sysadmin/legal-terms-privacy-statement.md
             - name: Rapport med licenskoder och konfigurationsnycklar
               href: sysadmin/license-codes-configuration-keys-report.md
@@ -1560,8 +1490,6 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: Exportera B2B-användare till Azure AD
               href: sysadmin/implement-b2b.md
-            - name: Dataunderhåll
-              href: sysadmin/DataMaintenancePortal.md
             - name: Säkerhet
               items:
                 - name: Rollbaserad säkerhet
@@ -1578,8 +1506,6 @@
                   href: sysadmin/tasks/create-new-users.md
                 - name: Hantering av användarsession
                   href: sysadmin/user-session-management.md
-                - name: Spärra åtkomst efter plats med villkorsstyrd åtkomst i Azure AD
-                  href: /power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
                 - name: Massimportera användare
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: Ställa in ansvarsfördelning
@@ -1598,8 +1524,6 @@
                   href: sysadmin/create-simple-security-policy.md
             - name: Följ standard för användarlicensieringskrav
               href: sysadmin/stay-compliant-user-license-requirement.md
-            - name: Visa licensstatus för oberoende programvaruleverantör
-              href: sysadmin/view-isv-license-status.md
             - name: Processautomatisering
               href: sysadmin/process-automation.md
             - name: Batchbearbetning
@@ -1610,28 +1534,24 @@
                   href: sysadmin/batch-server-overview.md
                 - name: Skapa batchjobb
                   href: sysadmin/tasks/create-batch-job.md
-                - name: Aktivera batchförsök
-                  href: sysadmin/retryable-batch.md
                 - name: Kopiera ett batchjobb
                   href: sysadmin/copy-batch-job.md
-                - name: Prioritetsbaserad batchplanering
-                  href: sysadmin/priority-based-batch-scheduling.md
                 - name: Aktiva batchperioder
                   href: sysadmin/activeperiod.md
                 - name: Sommartidsstöd för aktiva batchperioder
                   href: sysadmin/batch-active-period-dst.md
                 - name: Säkerhetsroll för batchhanterare
                   href: sysadmin/runby.md
+                - name: Batchjobbet ska hantera defragmentering av SQL-index
+                  href: sysadmin/batch-job-SQL-defragmentation.md
                 - name: Konfigurera batchnotifieringar
                   href: sysadmin/alerts.md
                 - name: Utökade batchformulär
                   href: sysadmin/enhanced-forms.md
                 - name: Rensa batchhistorik
                   href: sysadmin/batch-history-cleanup.md
-                - name: Avbryta körning av batchjobb
+                - name: Avbryt körning av batchjobb
                   href: sysadmin/batch-abort.md
-                - name: Batch-OData-API
-                  href: sysadmin/batch-odata-api.md
             - name: Rådgivning om optimering
               items:
                 - name: Rådgivning om optimering – översikt
@@ -1656,9 +1576,9 @@
               items:
                 - name: Uppgradera från AX 2012 till Finance and Operations
                   href: migration-upgrade/upgrade-overview-2012.md
-                - name: AX 2012-uppgradering – Planera med verktyget Uppgraderingsanalys
+                - name: AX 2012-uppgradering – planera med verktyget Uppgraderingsanalys
                   href: migration-upgrade/upgrade-analyzer-tool.md
-                - name: AX 2012-uppgradering – Beräkna insatsen med tjänsten Koduppgradering
+                - name: AX 2012-uppgradering – beräkna insatsen med tjänsten Koduppgradering
                   href: migration-upgrade/analyze-code-upgrade.md
                 - name: AX 2012-uppgradering – Distribuera en demonstrationsmiljö för analys
                   href: migration-upgrade/analysis-sandbox.md
@@ -1666,10 +1586,10 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012-uppgradering – Checklista för föruppgradering för datauppgradering
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: Uppgradera från AX 2012 – SQL Transactional Replication
-                  href: database/replication-setup.md
-                - name: Uppgradera från AX 2012 – Datauppgradering i självbetjäningsmiljöer
-                  href: migration-upgrade/data-upgrade-self-service.md
+                - name: AX 2012-uppgradering – Datauppgradering i sandbox-miljöer med dacpac-process
+                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
+                - name: AX 2012-uppgradering – Datauppgradering i sandbox-miljöer
+                  href: migration-upgrade/upgrade-data-sandbox.md
                 - name: AX 2012-uppgradering – Lokala miljöer
                   href: migration-upgrade/on-prem-upgrade-2012.md
                 - name: AX 2012-uppgradering – Övergångstest
@@ -1682,12 +1602,12 @@
                   href: migration-upgrade/upgrade-go-live-prep.md
                 - name: AX 2012-uppgradering – Publicera
                   href: migration-upgrade/2012-upgrade-cutover.md
-                - name: Uppgradera från AX 2012 – Vanliga frågor och svar gällande datauppgradering
-                  href: migration-upgrade/upgrade-faq.md
                 - name: Ändringar som påverkar uppgradering från AX 2012
                   items:
                     - name: Gör kontoplansavgränsare unika
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
+                    - name: Uppgradera journaler med enstaka verifikationer och valutaomvärderingar
+                      href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
                     - name: Datamodell för tidsplanering av projektresurser
                       href: migration-upgrade/data-model-changes-resource-management.md
                     - name: Ändringar av arbetsflödets delsystem
@@ -1700,11 +1620,11 @@
                       href: migration-upgrade/upgrade-budget-planning.md
             - name: Flytta data från AX 2009
               items:
-                - name: Migrera data från AX 2009 till Finance and Operations
+                - name: Flytta data från AX 2009 till Finance and Operations
                   href: migration-upgrade/data-migration-tool.md
                 - name: AX 2009-migrering – installera verktyg för datamigrering
                   href: migration-upgrade/install-dmt.md
-                - name: AX 2009-migrering – Generera kartor
+                - name: AX 2009-migrering – generera kartor
                   href: migration-upgrade/generate-maps.md
                 - name: AX 2009-migrering – skapa mallar
                   href: migration-upgrade/create-package-templates-dmt.md
@@ -1768,7 +1688,7 @@
                   href: dev-tools/update-development-tools.md
             - name: Utfasningar
               items:
-                - name: Borttagna eller inaktuella funktioner
+                - name: Borttagna eller utfasade funktioner
                   href: migration-upgrade/deprecated-features.md
                 - name: Avskrivning av metoder och metadataelement
                   href: migration-upgrade/deprecation-deletion-apis.md

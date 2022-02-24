@@ -2,9 +2,11 @@
 title: Exportera data för dotterbolag till filer
 description: I detta ämne beskrivs hur du förbereder export av data från Microsoft Dynamics 365 Finance och sedan importerar den till en konsoliderad juridisk person.
 author: jinniew
+manager: AnnBe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 02ae9945f7b67fb64be78a024910d7e1151c7446fd54b71034c5ba448c00b081
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 179a401178935b8a76d6718a7fb1f63e08344f50
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768781"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968689"
 ---
 # <a name="export-subsidiary-data-to-files"></a>Exportera data för dotterbolag till filer
 
@@ -68,6 +70,3 @@ Använd sidan **Export** (**Systemadministration \> Arbetsytor \> Import/Export*
 5. Klicka på **OK** om du vill köra exporten.
 
 När exporten är slutförd får du ett meddelande som visar antalet poster som sparats i respektive fil. Du kan sedan importera filerna till den konsoliderade juridiska personen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

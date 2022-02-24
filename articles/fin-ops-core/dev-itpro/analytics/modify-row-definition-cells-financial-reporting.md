@@ -2,9 +2,11 @@
 title: Ändra raddefinitionsceller
 description: Det här ämnet innehåller en beskrivning av den information som krävs för varje cell i en raddefinition för en ekonomisk rapport och av hur du anger den informationen.
 author: ShylaThompson
-ms.date: 08/11/2021
+manager: AnnBe
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 80df992ce14577ba78587648f8af2c35b382a589
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 92d03f08fc5e34402f10068ed770b1f724cfd3a8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344895"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685869"
 ---
 # <a name="modify-row-definition-cells"></a>Ändra raddefinitionsceller
 
@@ -174,7 +176,7 @@ I kolumnen **Formatkod** i en raddefinition använder formatkoderna **DES**, **L
 
 I följande exempel vill en användare förhindra att rubriken och understrecken i raden **Totala kontanter** i rapporten skrivs ut, eftersom det inte finns någon aktivitet på något av kassakontona. Därför, på rad 220 (som, vilket formatkoden **---** anger, är en formateringsrad), i cellen **Relaterade formler/rader/enheter**, anger användaren **250** som är radkoden för beloppsraden som ska utelämnas.
 
-[![RelatedRowsRowDefinition.](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
+[![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
 ## <a name="select-the-base-row-for-a-column-calculation"></a>Välj basraden för en kolumnberäkning
 I relationsrapportering tilldelar du en eller flera basrader i raddefinitionen, med hjälp av formatkoden **CBR** (ändra basrad). En basrad refereras sedan av en beräkning i kolumndefinitionen. Här följer några typiska exempel på CBR-beräkning:
@@ -399,7 +401,7 @@ Cellen **Länka till ekonomiska dimensioner** innehåller länkar till de ekonom
 2. Dubbelklicka på en cell i en kolumn av typen **Länk till ekonomiska dimensioner**.
 3. I dialogrutan **Dimensioner** dubbelklickar du på en cell under dimensionsnamnet.
 4. I dialogrutan för dimensionen, välj **Individuella eller intervall**.
-5. I fältet **Från** anger du startdimensionen eller klicka på ![Bläddra.](media/browse.gif "Bläddra") för att söka efter tillgängliga dimensioner. Om du vill ange ett intervall med dimensioner, anger du den avslutande dimensionen i fältet **Till** .
+5. I fältet **Från** anger du startdimensionen eller klickar på ![Bläddra](media/browse.gif "Bläddra") för att söka efter tillgängliga dimensioner. Om du vill ange ett intervall med dimensioner, anger du den avslutande dimensionen i fältet **Till** .
 6. Klicka på **OK** för att stänga dialogrutan för dimensionen. Dialogrutan **Dimensioner** visar den uppdaterade dimensionen eller intervallet.
 7. Klicka på **OK** för att stänga dialogrutan **Dimensioner**.
 
@@ -476,7 +478,7 @@ I tabellen nedan beskrivs fälten i dialogrutan **Dimensioner**.
 
 | Artikel                | Beskrivning |
 |---------------------|-------------|
-| Individuella eller Intervall | I fältet **Från** anger du namnet på ett konto eller klickar på knappen **Bläddra** ![Bläddra.](media/browse.gif "Bläddra") om du vill bläddra efter kontot. För att välja ett intervall anger du eller bläddrar efter ett värde i fältet **Till**. |
+| Individuella eller Intervall | I fältet **Från** anger du namnet på ett konto eller klickar på knappen **Bläddra** ![Bläddra](media/browse.gif "Bläddra") för att bläddra till kontot. För att välja ett intervall anger du eller bläddrar efter ett värde i fältet **Till**. |
 | Dimensionsvärdeuppsättning | Ange namnet på en dimensionsvärdeuppsättning i fältet **Namn**. Om du vill skapa, ändra, kopiera eller ta bort en uppsättning, klickar du på **Hantera dimensionsvärdeuppsättningar**. Fältet **Formel** fylls i med formeln från cellen **Länka till ekonomiska dimensioner** för denna dimensionsvärdeuppsättning som anges i raddefinitionen. |
 | SUmmeringskonton   | I fältet **Namn** anger du eller bläddrar efter en dimension av summeringskonton. Fältet **Formel** fylls i med formeln i cellen **Länka till ekonomiska dimensioner** för detta summeringskonto i rapportdefinitionen. |
 
@@ -527,6 +529,3 @@ En dimensionsvärdeuppsättning är en namngiven grupp av dimensionsvärden. En 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

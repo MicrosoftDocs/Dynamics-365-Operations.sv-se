@@ -1,10 +1,12 @@
 ---
 title: Tillgångar och arbetsorder
 description: Det här avsnittet beskriver tillgångar och arbetsorder i tillgångshantering.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2872dc84ec11ae7fad9fd5b225b9207f13280db334cc0d010a3d6749a591ee2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0cddb0a25286c8ce9d72aef0b835809705ad577a
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718117"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020949"
 ---
 # <a name="assets-and-work-orders"></a>Tillgångar och arbetsorder
 
@@ -32,26 +34,23 @@ Det här avsnittet beskriver tillgångar och arbetsorder i tillgångshantering. 
 
 Olika data, till exempel produktinformation och tillgångsspecifikation och nödvändiga underhållsplaner ställs in för varje tillgång. Följande illustration visar en översikt över tillgångsdata och anslutning av tillgångar till jobbtyper. Röd text används för exempel som visar arv och beroenden.
 
-![Diagram som visar tillgångsdata relaterade till jobbtyper.](media/05-overview-image.png)
+![Diagram som visar tillgångsdata relaterade till jobbtyper](media/05-overview-image.png)
 
 Varje arbetsorder har en arbetsordertyp, sådant förebyggande underhåll, avhjälpande underhåll eller inspektion. Arbetsordern innehåller ett eller flera arbetsorderjobb. Varje arbetsorderjobb definierar ett jobb som måste utföras på en tillgång och en relaterad jobbtyp. Exempel på relaterade jobbtyper är 10 000 km, 50 000 km, 1-års översyn och säkerhetsinspektion. En arbetsorder kan relateras till flera tillgångar.
 
 Följande illustration visar en översikt över nyckeldata i en arbetsorder.
 
-![Diagram som visar nyckeldata i en arbetsorder.](media/06-overview-image.png)
+![Diagram som visar nyckeldata i en arbetsorder](media/06-overview-image.png)
 
 En arbetsorder kan relateras till en annan arbetsorder och jobbtyper kan innehålla efterföljande jobb som skapar en arbetsorder. I allmänhet finns det inga beroenden mellan arbetsorder. Därför kan de ändra sitt livscykeltillstånd för arbetsorder och kan schemaläggas oberoende av varandra.
 
 Arbetsorder kan skapas på olika sätt som är relaterade till korrigerande, förebyggande eller reaktivt underhåll. Du kan också skapa arbetsorder manuellt. Följande illustration visar en översikt över processen för automatisk eller manuell generering av arbetsorder.
 
-![Diagram som visar automatisk eller manuell generering av arbetsorder.](media/07-overview-image.png)
+![Diagram som visar automatisk eller manuell generering av arbetsorder](media/07-overview-image.png)
 
 Flera steg måste slutföras när du vill schemalägga och köra ett underhållsjobb på en arbetsorder. Följande illustration visar en översikt över bearbetning för en arbetsorder.
 
-![Diagram som visar översikt över bearbetning av en arbetsorder.](media/08-overview-image.png)
+![Diagram som visar översikt över bearbetning av en arbetsorder](media/08-overview-image.png)
 
 > [!NOTE]
 > I allmänhet när du arbetar i Dynamics 365 Supply Chain Management och modulen **tillgångshantering** väljer du **Ny** för att skapa en ny post, väljer **redigera** för att uppdatera en befintlig post och väljer **Spara** för att spara nya eller redigerade data.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

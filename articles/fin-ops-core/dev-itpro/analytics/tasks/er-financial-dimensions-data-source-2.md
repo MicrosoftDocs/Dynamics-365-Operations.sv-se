@@ -1,10 +1,12 @@
 ---
 title: "\"ER Använd ekonomiska dimensioner som en datakälla (Del 2 - Modellmappning)\""
-description: I det här avsnittet beskrivs hur du konfigurerar en elektronisk rapporteringsmodell (ER) för användning av ekonomiska dimensioner som datakälla för ER-rapporter. (Del 2)
+description: I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera en modell för elektronisk rapportering (ER) för att använda ekonomiska dimensioner som datakällor för ER-rapporter.
 author: NickSelin
+manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc7c6bc299dd0af83db3b09b06276a210ecfada5
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 3214ddb1e077d889fb7b785bee2554b96c3907ed
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605415"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681695"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>"ER Använd ekonomiska dimensioner som en datakälla (Del 2 - Modellmappning)"
 
@@ -56,14 +58,14 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 21. Välj Yes i fältet Ask for main account.
     * Ange "Ask for main account" som Yes om du vill låta användare välja huvudkontot som en del i listan över dimensioner.   Om No kommer huvudkontot inte att inkluderas i listan över dimensioner, och alternativet "Is main account mandatory" aktiveras. Om ”Is main account mandatory" anges som Yes, inkludera då huvudkontot i dimensionslistan oavsett användarens urval.  
 22. Klicka på OK.
-![Egenskaper för datakälla för ekonomiska dimensionsdetaljer fälls ut.](../media/er-financial-dimensions-guides-model-mapping1.png)
+![Sidan ER-modellmappningsdesigner](../media/er-financial-dimensions-guides-model-mapping1.png)
 23. Välj "Dynamics 365 for Operations\Table records" i trädet.
 24. Klicka på Lägg till rot.
 25. Välj "LedgerJournal" i namnfältet.
 26. Välj Ja i fältet Fråga efter fråga.
 27. Ange "LedgerJournalTable" i tabellfältet.
 28. Klicka på OK.
-![Designersida för modellmappning, Datakällstyp för tabellposter.](../media/er-financial-dimensions-guides-model-mapping2.png)
+![Sidan ER-modellmappningsdesigner](../media/er-financial-dimensions-guides-model-mapping2.png)
 
 ## <a name="map-data-model-elements-to-added-data-sources"></a>Mappa datamodellelement till tillagda datakällor
 1. Expandera "Journal" i trädet.
@@ -94,7 +96,7 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 25. Välj "LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions" i trädet.
 26. Välj "Journal\Transaction\Dimensions data" i trädet.
 27. Klicka på Bind.
-!Designersida för modellmappning, fliken Mappning, trädet Datakällor.](../media/er-financial-dimensions-guides-model-mapping3.png)
+![Sidan ER-modellmappningsdesigner](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. Välj "LedgerJournal\<Relations\LedgerJournalTrans\Debit(AmountCurDebit)" i trädet.
 29. Välj "Journal\Transaction\Debit" i trädet.
 30. Klicka på Bind.
@@ -133,7 +135,7 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 63. I fältet expressionAsStringText anger du "Company.'find()'.'name()''.
     * Company.'find()'.'name()'  
 64. Klicka på Spara.
-![Sidan ER-modellmappningsdesigner.](../media/er-financial-dimensions-guides-model-mapping4.png)
+![Sidan ER-modellmappningsdesigner](../media/er-financial-dimensions-guides-model-mapping4.png)
 65. Stäng sidan.
 66. Klicka på Spara.
 67. Stäng sidan.
@@ -144,7 +146,4 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 3. Klicka på Ändra status.
 4. Klicka på Slutför.
 5. Klicka på OK.
-![Sidan ER-konfigurationer.](../media/er-financial-dimensions-guides-model-mapping5.png)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+![Sidan ER-modellmappningsdesigner](../media/er-financial-dimensions-guides-model-mapping5.png)

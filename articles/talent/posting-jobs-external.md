@@ -102,6 +102,3 @@ Om du har problem med att publicera ett jobb i Broadbean kan du försöka med f�
 [Skapa, godkänna och bokföra jobb i Attract](./creating-jobs-attract.md)
 
 [Aktivera Broadbean-integrering i Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

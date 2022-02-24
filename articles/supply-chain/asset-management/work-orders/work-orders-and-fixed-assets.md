@@ -1,10 +1,12 @@
 ---
 title: Arbetsorder och anläggningstillgångar
 description: Det här avsnittet innehåller förklaringar av arbetsorder och anläggningstillgångar i Tillgångshantering.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ad4af6bb0df557314f844d3e7a6c5fb84a6331d86f16e1bc76150f78ce3039e4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4eadbdc452a5b7d28adfa0f102a9a727faad3c07
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752812"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016713"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Arbetsorder och anläggningstillgångar
 
@@ -34,34 +36,31 @@ I Tillgångshantering kan tillgångar relateras till anläggningstillgångar och
 
 I bilden nedan visas relationen mellan ett investeringsprojekt i **projektlednings- och redovisningsmodulen** och ett jobbprojekt för arbetsorder.
 
-![Figur 1.](media/24-work-orders.png)
+![Figur 1](media/24-work-orders.png)
 
 Följande procedur beskriver relationen mellan tillgångar, arbetsorder, jobbprojekt för arbetsorder och anläggningstillgångar.
 
 1. Du skapar en tillgång som du kopplar till en anläggningstillgång.
 
-![Figur 2.](media/25-work-orders.png)
+![Figur 2](media/25-work-orders.png)
 
 2. När du ställer in arbetsordertyper på sidan **Arbetsorderordertyper** (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Arbetsordertyper**) skapar du en arbetsordertyp för hantering av investeringar. Se även [Arbetsordertyper](../setup-for-work-orders/work-order-types.md).
 
-![Figur 3.](media/26-work-orders.png)
+![Figur 3](media/26-work-orders.png)
 
 3. När du ställer in projektgrupper för arbetsorder i fliken **Projektgrupp** på sidan **Projektinställningar för arbetsorder** (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Projktinställningar**) skapas en relation mellan arbetsordertypen som används för investeringar och projektgruppen som skapas för investeringar på sidan **Projektgrupper** i modulen **Projekthantering och redovisning** (**Projekthantering och redovisning** > **Inställningar** > **Bokföring** > **Projektgrupper**).
 
-![Figur 4.](media/27-work-orders.png)
+![Figur 4](media/27-work-orders.png)
 
 4. När du skapar en arbetsorder som är relaterad till en anläggningstillgång väljer du den arbetsordertyp som brukar användas för att hantera investeringar, t.ex. **investeringar**.
 
 5. När arbetsordern skapas visas den relaterade arbetsordertypen på sidan **Alla arbetsorder.**
 
-![Figur 5.](media/28-work-orders.png)
+![Figur 5](media/28-work-orders.png)
 
 6. När arbetsordern skapas kommer projektet som är relaterat till arbetsordern på sidan **Alla projekt** skapas i modulen **Projekthantering och redovisning** (**Projekthantering och redovisning** > **Projekt** > **Alla projekt**). För att visa projektrelaterad information, välj länken i fältet **Projekt-ID** på fliken **Allmänt** på snabbfliken **Raddetaljer** i detaljvyn för sidan **Alla arbetsorder** i modulen **Tillgångshantering** (**Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder**).
 
-![Figur 6.](media/29-work-orders.png)
+![Figur 6](media/29-work-orders.png)
 
 7. Om du vill visa en översikt över de projekt som är kopplade till en anläggningstillgång **anläggningstillgångar** > **anläggningstillgångar** > **anläggningstillgångar** och sedan i fältet **anläggningstillgångsnummer**, välj länken för anläggningstillgången för att öppna detaljvyn. Expandera fönstret **relaterad information** till höger på sidan och välj snabbfliken **associerade projekt**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

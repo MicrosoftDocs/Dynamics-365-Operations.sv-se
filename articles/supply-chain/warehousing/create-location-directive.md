@@ -2,9 +2,11 @@
 title: Arbeta med platsdirektiv
 description: I det här avsnittet beskrivs hur du arbetar med platsdirektiv. Platsdirektiv är användardefinierade regler som hjälper till att identifiera plockning och inlagringsplatser för lagerrörelse.
 author: Mirzaab
+manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 77e3139f62ca73f461ff4a4b5114f5e7ba181d3b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575253"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963320"
 ---
 # <a name="work-with-location-directives"></a>Arbeta med platsdirektiv
 
@@ -44,14 +46,14 @@ Innan du kan skapa ett platsdirektiv måste du följa dessa steg för att se til
 1. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Lagerställen**.
 1. Skapa ett lagerställe.
 1. På snabbfliken **Lagerställe** ange alternativet **Använd lagerstyrningsprocesser** till *Ja*.
-1. Skapa platser, platstyper, platsprofiler och platsformat. Mer information finns i [Konfigurera platser i ett WMS-aktiverat lagerställe](./tasks/configure-locations-wms-enabled-warehouse.md).
-1. Skapa platser, zoner och zongrupper. Mer information finns i [Konfigurera lagerställe](../../commerce/channels-setup-warehouse.md) och [Konfigurera platser i ett WMS-aktiverat lagerställe](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Skapa platser, platstyper, platsprofiler och platsformat. Mer information finns i [Konfigurera platser i ett WMS-aktiverat lagerställe](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Skapa platser, zoner och zongrupper. Mer information finns i [Konfigurera lagerställe](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) och [Konfigurera platser i ett WMS-aktiverat lagerställe](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
 
 ## <a name="work-order-types-for-location-directives"></a>Arbetsordertyper för platsdirektiv
 
 Många av fälten som kan ställas in för platsdirektiv är gemensamma för alla arbetsordertyper. Andra fält är dock specifika för särskilda arbetsordertyper.
 
-![Arbetsordertyper för platsdirektiv.](media/Location_Directives_Work_Order_Types.png "Arbetsordertyper för platsdirektiv")
+![Arbetsordertyper för platsdirektiv](media/Location_Directives_Work_Order_Types.png "Arbetsordertyper för platsdirektiv")
 
 > [!NOTE]
 > Två arbetsordertyper, *annullerade arbeten* och *rullande inventering*, används endast i systemet. Platsdirektiv kan inte skapas för dessa arbetsordertyper.
@@ -113,7 +115,7 @@ Därifrån kan du visa, skapa och redigera dina platsdirektiv med hjälp av komm
 
 ## <a name="action-pane"></a>Åtgärdsfönster
 
-Åtgärdsfönstret på sidan **Platsdirektiv** innehåller knappar som du kan använda när du vill skapa, redigera och ta bort direktiv (**Redigera**, **Ny**, och **Ta bort**). Den innehåller också följande knappar som du kan använda för att justera sekvensen som platsdirektivet bearbetas i och konfigurera en frågeställning som definierar kriterierna för tillämpning av platsdirektivet:
+Åtgärdsfönstret på sidan **Platsdirektiv** innehåller knappar som du kan använda när du vill skapa, redigera och ta bort direktiv (**Redigera**, **Ny**, och **Ta bort**). Den innehåller också följande knappar som du kan använda för att justera sekvensen som platsdirektivet bearbetas i och konfigurera en fråga som definierar kriterierna för tillämpning av platsdirektivet:
 
 - **Flytta upp** – flytta det valda platsdirektivet uppåt i sekvensen. Du kan t.ex. flytta den från serienummer 4 till serienummer 3.
 - **Flytta ned** – flytta det valda platsdirektivet nedåt i sekvensen. Du kan t.ex. flytta den från serienummer 4 till serienummer 5.
@@ -143,19 +145,19 @@ Fälten på snabbfliken **platsdirektiv** är specifika för arbetsordertypen so
 - **Direktivkod** – Välj direktivkod som ska associeras till en arbetsmall eller lagerpåfyllnadsmall. På sidan **direktivkod** kan du skapa nya koder som kan användas för att koppla arbetsmallar eller påfyllnadsmallar till ett platsdirektiv. Direktivkoder kan också användas för att fastställa sambandet mellan alla arbetsmallrader och platsdirektiv (t.ex. vikdörr eller fasplats).
 
     > [!TIP]
-    > Om en direktivkod ställs in kommer systemet inte att söka efter platsdirektiv med sekvensnummer när arbete måste genereras. I stället sker sökningen efter en direktivkod. På detta sätt kan du vara mer specifik om det platsdirektiv som används för ett visst steg i en arbetsmall, till exempel steget för att iscensätta materialen.
+    > Om en direktivkod ställs in kommer systemet inte att söka efter platsdirektiv med sekvensnummer när arbete måste genereras. I stället sker sökningen efter en direktivkod. På detta sätt kan du vara mer specifik om platsmallen som används för ett visst steg i en arbetsmall, till exempel steget för att iscensätta materialen.
 
 - **Flera SKU-enheter** – Ange det här alternativet till *Ja* för att möjliggöra att flera lagerhållningsenheter (SKU) kan användas på en plats. Till exempel måste flera SKU-enheter vara aktiverade för vikdörrens plats. Om du aktiverar flera SKU-enheter anges din plats i arbete, som förväntat. Platsen kan dock bara hantera en placering av flera artiklar (om arbete inkluderar olika SKU-enheter som måste plockas och placeras). Det går inte att hantera en placering med en SKU. Om du ställer in detta alternativ till *Nej*, anges din plats bara om din placering har en enda typ av SKU.
 
     > [!IMPORTANT]
     > Om du vill kunna utföra placeringar av flera artiklar och placeringar av en SKU måste du ange två rader som har samma struktur och inställning, men du måste ställa in alternativet **Flera SKU-enheter** till *Ja* för en rad och *Nej* för den andra. För placeringsoperationer måste du därför ha två identiska platsdirektiv, även om du inte behöver skilja enskilda SKU:er och flera SKU:er på ett arbets-ID. Om du inte ställer in båda dessa platsdirektiv kommer oväntade platser för affärsprocesser från det tillämpliga platsdirektivet. Du måste använda en liknande inställning för plats direktiv som har **arbetstypen** *plocka* om du behöver bearbeta order som innehåller flera SKU:er.
 
-    Använd alternativet **Flera SKU-enheter** för arbetsrader som hanterar fler än ett artikelnummer. (Artikelnumret kommer att vara tomt i arbetsuppgifterna och visas som **Flera** på bearbetningssidorna i mobilappen för distributionslagerhantering.)
+    Använd alternativet **Flera SKU-enheter** för arbetsrader som hanterar fler än ett artikelnummer. (Artikelnumret kommer att vara tomt i arbetsuppgifterna och visas som **Flera** på bearbetningssidorna i distributionslagerappen.)
 
     I ett typiskt exempelscenario har en arbetsmall ställts in så att den har fler än ett plocknings-/placeringspar. I det här fallet vill du kanske söka efter en viss mellanlagringsplats att använda för rader med **arbetstypen** *placera*.
 
     > [!NOTE]
-    > Om alternativet **Flera SKU-enheter** anges till *Ja* kan du välja **Redigera fråga** i åtgärdsfönstret eftersom frågeställningen inte kan utvärderas på artikelnivå när det finns flera artiklar. Om du vill vara säker på att det önskade platsdirektivet har valts använder du fältet **direktivkod** för att vägleda urvalet av platsdirektivet som är relaterat till de artikelrader där den här direktiv koden tilldelas i arbetsmallen.
+    > Om alternativet **Flera SKU-enheter** anges till *Ja* kan du välja **Redigera fråga** i åtgärdsfönstret eftersom frågan inte kan utvärderas på artikelnivå när det finns flera artiklar. Om du vill vara säker på att det önskade platsdirektivet har valts använder du fältet **direktivkod** för att vägleda urvalet av platsdirektivet som är relaterat till de artikelrader där den här direktiv koden tilldelas i arbetsmallen.
 
     Om du inte alltid arbetar med antingen en artikel eller med blandad artikel, är det viktigt att du definierar två plats direktiv för arbetstypen *placera*: ett där alternativet **flera SKU-enheter** ställs in på *Ja* och ett där det har värdet *Nej*.
 
@@ -169,7 +171,7 @@ Fälten på snabbfliken **platsdirektiv** är specifika för arbetsordertypen so
     > [!NOTE]
     > Det här fältet är endast tillgängligt för de valda arbetsordertyperna där lagerpåfyllnad är tillåtet. En fullständig lista finns i [fält som är specifika för avsnittet arbetsordertyper](#fields-specific-types).
 
-- **Dispositionskod** – Det här fältet används för platsdirektiv som har en arbetsordertyp *Inköpsorder orders*, *Plats för slutförda varor* eller *Returorders* och arbetstypen *Placera*. Använd den för att vägleda flödet att använda ett visst platsdirektiv, beroende på dispositionskoden som en arbetare har valts i mobilappen för distributionslagerhantering. Du kan till exempel dirigera returnerade varor till en inspektionsplats innan de returneras till lagret. En dispositionskod kan kopplas till en lagerstatus. På så sätt kan den användas för att ändra lagerstatus som en del i en inleveransprocess. Du har till exempel en dispositionskod, *kvalitetskontroll* svar, som anger lagerstatus till *kvalitetskontroll*. Du kan sedan ha ett separat platsdirektiv för att flytta det lagret till en karantänplats.
+- **Dispositionskod** – Det här fältet används för platsdirektiv som har en arbetsordertyp *Inköpsorder orders*, *Plats för slutförda varor* eller *Returorders* och arbetstypen *Placera*. Använd den för att vägleda flödet att använda ett visst platsdirektiv, beroende på dispositionskoden som en arbetare har valts i distributionslagerappen. Du kan till exempel dirigera returnerade varor till en inspektionsplats innan de returneras till lagret. En dispositionskod kan kopplas till en lagerstatus. På så sätt kan den användas för att ändra lagerstatus som en del i en inleveransprocess. Du har till exempel en dispositionskod, *kvalitetskontroll* svar, som anger lagerstatus till *kvalitetskontroll*. Du kan sedan ha ett separat platsdirektiv för att flytta det lagret till en karantänplats.
 
     > [!NOTE]
     > Det här fältet är endast tillgängligt för de valda arbetsordertyperna där lagerpåfyllnad är tillåtet. En fullständig lista finns i [fält som är specifika för avsnittet arbetsordertyper](#fields-specific-types).
@@ -216,7 +218,7 @@ Använd snabbfliken **Rader** om du vill skapa villkor för att tillämpa de rel
 
 ## <a name="location-directive-actions-fasttab"></a>Snabbfliken platsdirektivåtgärder
 
-Du kan definiera flera plats direktiv åtgärder för varje linje. Återigen används ett ordningsnummer för att avgöra i vilken ordning åtgärderna bedöms. På den här nivån kan du skapa en frågeställning för att definiera hur du hittar den bästa platsen i lagerstället. Du kan också använda fördefinierade värden för **Strategi** för att finna en optimal placering.
+Du kan definiera flera plats direktiv åtgärder för varje linje. Återigen används ett ordningsnummer för att avgöra i vilken ordning åtgärderna bedöms. På den här nivån kan du skapa en fråga för att definiera hur du hittar den bästa platsen i lagerstället. Du kan också använda fördefinierade värden för **Strategi** för att finna en optimal placering.
 
 - **Sekvensnummer** – Detta fält visar i vilken ordning som åtgärderna kommer att bearbetas i för den valda arbetstypen. Du kan ändra ordningsföljden genom att använda knapparna **Flytta upp** och **Flytta ned** i verktygsfältet.
 - **Namn** – Ange namnet för platsdirektivsåtgärden. Var specifik så att åtgärden som utförs tas bort från namnet.
@@ -237,7 +239,7 @@ Du kan definiera flera plats direktiv åtgärder för varje linje. Återigen anv
     - **Avrunda till fullständigt LP och FEFO-batch** – den här strategin kombinerar elementen i *FEFO-batchreservation* och *avrundar upp till en fullständig LP* strategi. Det är bara giltigt för grupperade artiklar och platsdirektiv med jobbtypen *plocka*. Raden måste vara aktiverad för att använda strategin *FEFO-batchreservation* och strategin *avrundning till fullständig LP* kan bara användas för påfyllnad. Om den här strategin har konfigurerats tillsammans med en platsgräns för lager, kan det medföra att den valda arbetsplatsen för placering överbelastas och att gränsvärdena för lagring ignoreras.
     - **Avrunda uppåt till full LP** - Denna strategi avrundar lagerkvantiteten för att matcha den registreringsskyltskvantitet som tilldelas artiklarna som ska plockas. Du kan bara använda den här strategin för påfyllningsdirektiv av typen *Plocka*. Om den här strategin har konfigurerats tillsammans med en platsgräns för lager, kan det medföra att den valda arbetsplatsen för placering överbelastas och att gränsvärdena för lagring ignoreras.
     - **Guidat ID-nummer** – Använd denna strategi när du släpper ordern till lagret för att skapa plocka och inlagra arbete. Du kan använda denna metod för flera ID-nummer. Denna strategi kommer att försöka reservera och skapa plockningsarbete mot de platser som innehåller de begärda registreringsskylt som har associerats med överföringsorderraderna. Om dessa åtgärder inte kan slutföras men du ändå vill skapa plockningsarbete, bör du gå tillbaka till en annan strategi för platsdirektivåtgärder. Beroende på vilka affärsprocess behov du har kan du även söka efter lager i ett annat område i lagerstället.
-    - **Tom plats utan inkommande arbetsuppgifter** – Använd denna strategi för att söka tomma platser. Platsen anses vara tom om den inte har något fysiskt lager och inget förväntat inkommande arbete. Du kan bara använda denna strategi för platsdirektiv som har en arbetstyp av *Placera*.
+    - **Tom plats utan inkommande arbetsuppgifter** – Använd denna strategi för att söka tomma platser. Platsen anses vara tom om den inte har något fysiskt lager och inget förväntat inkommande arbete. Du kan bara använda denna strategi för platsdirektiv som har en arbetstyp av *Plocka*.
     - **Platsåldrande FIFO** – Använd strategin först in, först ut (FIFO) för att skicka både batchspårade artiklar och icke batchspårade artiklar, baserat på datumet då lagret kom in i distributionslagret. Den här funktionen kan vara särskilt användbar vid icke-spårade lager, där inget utgångsdatum kan användas för sortering. FIFO-strategin söker efter platsen som innehåller det äldsta åldersdatumet och allokerar plockning utifrån detta åldersdatum.
     - **Platsåldrande LIFO** – Använd strategin sist in, sist ut (LIFO) för att skicka både batchspårade artiklar och icke batchspårade artiklar, baserat på datumet då lagret kom in i distributionslagret. Den här funktionen kan vara särskilt användbar vid icke-spårade lager, där inget utgångsdatum kan användas för sortering. LIFO-strategin söker efter platsen som innehåller det nyaste åldersdatumet och allokerar plockning utifrån detta åldersdatum.
 
@@ -249,12 +251,9 @@ För detta scenario, måste du definiera två platsdirektivåtgärder. Den förs
 
 ## <a name="next-step"></a>Gå vidare
 
-När du har skapat platsdirektiv kan du associera varje direktivkod med en arbetsmallkod för att skapa arbete. Mer information finns i [Lagerpåfyllnad och Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv](./control-warehouse-location-directives.md).
+När du har skapat platsdirektiv kan du associera varje direktivkod med en arbetsmallkod för att skapa arbete. Mer information finns i [Lagerpåfyllnad och Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - Video: [konfiguration för lagerstyrning djupdykning](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Hjälpavsnitt: [Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv](control-warehouse-location-directives.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

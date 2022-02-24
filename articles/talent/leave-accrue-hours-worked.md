@@ -102,6 +102,3 @@ Ett enstaka datum kan bara ha en av varje typ associerad med uppgiften.
 | 000337                | 8/8/2018             | Vanligt               | 8                    |
 | 000337                | 8/7/2018             | Vanligt               | 8                    |
 | 000337                | 8/9/2018             | Vanligt               | 8                    |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

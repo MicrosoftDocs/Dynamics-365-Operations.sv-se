@@ -104,6 +104,3 @@ I den här versionen kan du nu tillämpa checklistor för medarbetare som är an
 Den här funktionen är nu tillgänglig i miljöer med begränsat läge. Om du vill aktivera den här funktionen navigerar du till **Systemadministration > Länkar > Inställningar > Systemparametrar > Förhandsfunktioner**. Välj **Förbättrade arbetarformulär och navigering**. Detta aktiverar dessa ändringar för alla användare. Du kan stänga av det här alternativet när du vill.
 
 Mer information finns i [strömlinjeformad medarbetarinmatning och navigering](./streamlined-employee-entry.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

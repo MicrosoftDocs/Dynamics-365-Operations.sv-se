@@ -2,13 +2,16 @@
 title: Rullande inventering av del av platser
 description: Planer för rullande inventering guidar de faktiska räkningsoperationerna. Du kan begära att bara specifika produkter och produktvarianter räknas i stället för alla tillgängliga lager på en plats.
 author: perlynne
+manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f06b39f3c2d2f5a0bdfef1da9395c71686ed46968a1143305b5a10787f7e85f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a541818a72f5c24db8784071f447c83a2aa4edfd
+ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778444"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4666756"
 ---
 # <a name="partial-location-cycle-counting"></a>Rullande inventering av del av platser
 
@@ -46,7 +49,7 @@ Innan arbetet för partiell rullande inventering kan bearbetas, måste du välja
 För den partiella rullande inventeringsprocessen kommer datum/tid för **Senaste rullande inventering** inte att uppdateras för platsen även om alla artiklarnas lagerbehållning på en given plats räknas. Den partiella rullande inventeringen tar inte hänsyn till parametern **dagar mellan rullande inventering** på sidan **Planer för rullande inventering** . Partiell rullande inventering stöder inte samtidig räkning av flera artiklar på samma plats. Funktionen för partiell rullande inventering kan leda till att samma lagerställe räknas flera gånger för en artikel när **Bearbetning av plan för rullande inventering** körs. Undvik det scenariot genom att ange filter i fältet **Välj platser**.
 
 > [!NOTE]
-> Mobilappen för distributionslagerhantering tillhandahåller inte knappen **Lägg till LP eller artikel** när du använder processen för partiell cykelinventering.
+> Distributionslagerappen tillhandahåller inte knappen **Lägg till LP eller artikel** när du använder processen för partiell cykelinventering.
 
 ## <a name="example"></a>Exempel
 
@@ -59,6 +62,3 @@ I det här exemplet måste bara artikelnumret A0001 räknas i lagerställe 61.
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Rullande inventering](cycle-counting.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

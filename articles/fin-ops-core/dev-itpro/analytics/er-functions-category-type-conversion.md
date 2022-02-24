@@ -2,8 +2,11 @@
 title: Lista över ER-funktioner i kategorin typkonvertering
 description: Det här ämnet ger information om konverteringsfunktionerna som stöds i elektronisk rapportering (ER).
 author: NickSelin
+manager: kfend
 ms.date: 12/05/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6d678c2a38039285bd835abcbbaf13ec00298c0660c62e7496a5d7405db8f61
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb2d4ab3434a563e907f6540809888cd3f671c1a
+ms.sourcegitcommit: fcc4596eeadac5dfe9a3242afa49b9b1c0c96575
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766419"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740818"
 ---
 # <a name="list-of-er-functions-in-the-type-conversion-category"></a>Lista över ER-funktioner i kategorin typkonvertering
 
@@ -84,6 +87,3 @@ I följande tabell beskrivs funktioner för typkonvertering i [textkategorin](er
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 
 [Formelspråk i elektronisk rapportering](er-formula-language.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

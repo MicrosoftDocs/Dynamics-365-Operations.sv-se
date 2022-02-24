@@ -209,6 +209,3 @@ Det finns flera olika delar av erbjudandets skapandeprocess som kan konfigureras
 
 
 Mer information om processen att skapa erbjudanden finns i [skapa, godkänna och signera erbjudanden](./creating-offers.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

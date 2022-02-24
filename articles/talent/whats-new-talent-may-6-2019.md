@@ -93,6 +93,3 @@ Möjligheten att spåra arbetstiden och förstå hur tiden är beräknad hjälpe
 ### <a name="indicate-instance-type-when-provisioning-talent"></a>Ange instanstyp vid etablering av Talent
 
 När du etablerar en ny instans av Talent kan du ange om instanstypen är **Produktion** eller **Begränsat läge**, vilket gör det möjligt att testa nya funktioner tidigt. Alla befintliga Talent-instanser kommer att uppdateras till produktionsinstanstypen. Om du vill uppdatera en av dina befintliga förekomster till instanstypen begränsat läge kontaktar du supporten för att initiera ändringsbegäran.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

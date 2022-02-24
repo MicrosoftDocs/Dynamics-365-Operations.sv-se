@@ -2,12 +2,15 @@
 title: Iframe-modul
 description: Det här avsnittet handlar om iframe-modulen och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 11/04/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754024"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665406"
 ---
 # <a name="iframe-module"></a>Iframe-modul
 
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet handlar om iframe-modulen och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Översikt
 
 En iframe-modul innehåller en iframe (infogad ram) som är värd för det externa innehållet på en webbplats. Det kan till exempel användas för att vara värd för ett YouTube-video eller PDF-filgranskare på valfri webbplatssida. 
 
@@ -37,7 +42,7 @@ En iframe-modul kräver en mål-URL. Sedan lagras innehållet på målsidan i et
 
 I följande bild visas exempel på iframe-moduler som visar externa videoklipp på webbplatssidor.
 
-![Exempel på iframe-moduler som visar externa videoklipp.](./media/ecommerce-iframe.PNG)
+![Exempel på iframe-moduler som visar externa videoklipp](./media/ecommerce-iframe.PNG)
 
 ## <a name="iframe-module-properties"></a>Egenskaper för iframe-modul
 
@@ -66,15 +71,9 @@ Om du vill lägga till en iframe-modul på en sida för att visa en extern video
 1. Ange andra egenskaper **rubrik** och **höjd**, efter behov.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 1. Gå till marknadsföringssidan på din webbplats. Du bör se att videon återges i iframe-modulen.
-
-> [!NOTE]
-> Eftersom iframe-modulen är värd för externt innehåll måste webbplatsförfattare se till att det innehåll som finns i en iframe-modul inte bryter mot begränsningsprinciper för innehåll på respektive marknad. Om innehållsbrott finns på en sida där iframe-modulen används kan webbplatsens författare ta bort iframe-modulen genom att öppna sidan i Site Builder, välja **Ta bort modul** i iframe-modulen och sedan spara och publicera sidan på nytt.
-
+ 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Modulbibliotek – översikt](starter-kit-overview.md)
+[Översikt över modulbibliotek](starter-kit-overview.md)
 
 [Hantera säkerhetspolicy för innehåll (CSP)](manage-csp.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

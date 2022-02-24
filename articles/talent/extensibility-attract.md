@@ -91,6 +91,3 @@ Webbinnehållsaktiviteten (iframe) låter dig bädda in en anpassat webblösning
 
 > [!NOTE]
 > Webbinnehållsaktiviteten är endast tillgänglig med tillägget för omfattande anställning.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

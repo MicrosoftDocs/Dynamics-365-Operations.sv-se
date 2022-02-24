@@ -1,24 +1,26 @@
 ---
 title: Underhåll flöde för produktkonfigurationsmodellen
 description: När du kör den här proceduren krävs det att det finns en modell för produktkonfiguration.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCRouteOperationDetails, WrkCtrCapabilityLookUp
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88df8b867ac7f354417add0462e7999747333451
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 90ea3f65284cc97906002015c715d9f071202bdb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577274"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966840"
 ---
 # <a name="maintain-route-for-a-product-model"></a>Underhåll flöde för produktkonfigurationsmodellen
 
@@ -26,44 +28,41 @@ ms.locfileid: "7577274"
 
 När du kör den här proceduren krävs det att det finns en modell för produktkonfiguration. I den här proceduren använder högtalarmodellen i demonstrationsföretaget USMF.
 
-## <a name="add-a-route-operation"></a>Lägga till en flödesoperation
 
-1. Gå till **Produktinformationshantering \> Produkter \> Produktkonfigurationsmodeller**.
-1. Hitta och markera önskad post i listan.
+## <a name="add-a-route-operation"></a>Lägga till en flödesoperation
+1. Klicka på Definition av produktvariantmodell.
+2. Klicka på Modeller för produktkonfiguration.
+3. Hitta och markera önskad post i listan.
     * Välj högtalarmodellen till den här övningen.  
-1. Klicka på länken på önskad rad i valda listan.
-1. Expandera avsnittet **Flödesfunktioner**.
-1. Markera **Lägg till**.
-1. Skriv ett värde i fältet **Namn**.
-1. I fältet **Beskrivning** anger du ett värde.
-1. Välj **Spara**.
+4. Klicka på länken på den valda raden i listan.
+5. Expandera avsnittet Flödesoperationer.
+6. Klicka på Lägg till.
+7. Skriv ett värde i fältet Namn.
+8. Ange ett värde i fältet Beskrivning.
+9. Klicka på Spara.
 
 ## <a name="enter-route-operation-details"></a>Ange flödesoperationsinformation
-
-1. Välj **Information om flödesfunktioner**.
-1. Ange eller välj ett värde i fältet **Funktion**.
-1. I fältet **Funktionsnr.** fältet anger du ett tal.
+1. Klicka på Flödesoperationsinformation.
+2. Ange eller välj ett värde i fältet Operation.
+3. I oper. Nr. fältet anger du ett tal.
     * Operationsnummer bestämmer ordningsföljden.  
     * Varje egenskap i en flödesoperation kan få ett statiskt värde eller mappas till ett attribut. Mappning till ett attribut leder till att värdet ställs in dom en del av konfigurationen.  
-1. Ange eller välj ett värde i fältet **Flödesgrupp**.
+4. Ange eller välj ett värde i fältet Flödesgrupp.
     * Flödesgruppen bestämmer beteendet för kostnadsredovisning, förbrukning och inställning.  
-1. Välj fliken **Inställningar**.
-1. Välj fliken **Tider**.
-1. I fältet **Processkvantitet** anger du ett värde.
+5. Klicka på fliken Inställningar.
+6. Klicka på fliken Tider.
+7. I Processkvantitets- fältet anger du ett tal.
     * Bestäm hur många som ska bearbetas under en operation.  
-1. I fältet **Timmar/tid** anger du ett värde.
+8. Ange ett värde i fältet Timmar/tid.
     * Ange en tid.  
-1. Markera kryssrutan **Ställ in**.
-1. I fältet **Körningstid** anger du ett värde.
+9. Markera kryssrutan Uppsättning.
+10. Ange ett värde i fältet Körtid.
     * Bestäm bearbetningstiden för den kvantitet som du har angett.  
-1. Välj fliken **Resurskrav**.
-1. Markera **Lägg till**.
-1. Markera vald rad i listan.
-1. I fältet **Kravtyp** väljer du ett alternativ.
+11. Klicka på fliken Resurskrav.
+12. Klicka på Lägg till.
+13. Markera vald rad i listan.
+14. Välj ett alternativ i fältet Kravtyp.
     * Bestäm om du vill ange specifika resurser eller kvalifikationer som de måste ha.  
-1. I fältet **Krav** anger eller väljer du ett värde.
-1. Välj **OK**.
+15. Ange eller välj ett värde i fältet Behov.
+16. Klicka på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

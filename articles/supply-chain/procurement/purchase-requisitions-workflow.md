@@ -1,10 +1,12 @@
 ---
 title: Arbetsflöde för inköpsrekvisitioner
 description: Arbetsflödesprocessen flyttar inköpsrekvisitionerna genom granskningsprocessen, från en ursprunglig status för Utkast till statusen Godkänd. När en inköpsrekvisition skickas in för granskning, startas arbetsflödesprocessen. När en inköpsrekvisition har godkänts, kan en inköpsorder skapas för inköpsrekvisitionsraderna och skickas till leverantören för uppfyllelse av ordern.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 66305688d1613b9882d3778a81886728df934931
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f6069e2ab93e1ce4299669850bdae37e82b17428
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569467"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021990"
 ---
 # <a name="purchase-requisition-workflow"></a>Arbetsflöde för inköpsrekvisitioner
 
@@ -51,7 +53,7 @@ I bilden nedan visas hur en inköpsrekvisition kan flöda genom arbetsflödesgra
 -   **Inköpsagent** – Användaren som genomför en anskaffningsgranskning och kan godkänna dokumentet.
 -   **Beställarens chef** – Användaren som genomför en chefsgranskning och kan godkänna dokumentet.
 
-![Granskningsprocess för arbetsflödet för inköpsrekvisitioner.](./media/purchreqworkflowoverview_submission.gif)  
+![Process för granskning av arbetsflödet för inköpsrekvisitioner](./media/purchreqworkflowoverview_submission.gif)  
 I det här exemplet innehåller arbetsflödesprocessen för inköpsrekvisitionen följande steg:
 
 1.  Förberedaren skickar inköpsrekvisitionen för granskning.
@@ -74,7 +76,7 @@ Följande roller ingår i arbetsflödesprocessen för det här exemplet:
 -   **Avdelningschef** – Användaren som genomför en omkostnadsgranskning och kan godkänna dokumentet.
 -   **Gruppchef** – Användaren som utför en auktoriserad signeringsgranskning och kan godkänna dokumentet.
 
-![Granskningsprocess av arbetsflödet för inköpsrekvisitionsrader.](./media/purchreqlineworkflowoverview.gif)  
+![Process för granskning av arbetsflödet för inköpsrekvisitionsrader](./media/purchreqlineworkflowoverview.gif)  
 I det här exemplet innehåller arbetsflödesprocessen för inköpsrekvisitionsraderna följande steg:
 
 1.  Förberedaren skickar inköpsrekvisitionen för granskning. Varje rad skickas till granskaren som är konfigurerad att få den i arbetsflödesprocessen.
@@ -105,7 +107,8 @@ Du kan ställa in omkostnadgranskarna på sidan **Inköpsrekvisitionomkostnadgra
 
 Om du vill använda en av omkostnadgranskarna, som ställs in i ett arbetsflöde måste du ange alternativet **Typ av deltagare** till **Deltagare vid omkostnad** i egenskaperna **Tilldelning** för det relevanta arbetsflödeselementet.
 
-## <a name="additional-resources"></a>Ytterligare resurser
+<a name="additional-resources"></a>Ytterligare resurser
+--------
 
 [Skapa en rekvisition för förbrukning](tasks/create-requisition-consumption.md)
 
@@ -117,6 +120,3 @@ Om du vill använda en av omkostnadgranskarna, som ställs in i ett arbetsflöde
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

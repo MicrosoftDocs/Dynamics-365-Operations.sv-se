@@ -1,10 +1,12 @@
 ---
 title: tillgångstyper
 description: Det här avsnittet beskriver hur du skapar tillgångstyper i tillgångshantering. Det beskriver också de element som är relaterade till tillgångstyper.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectJobType, EntAssetObjectType, EntAssetObjectTypeDefaultSparePart, EntAssetObjectTypeDefaultSparePartApprove, EntAssetObjectTypeDefaultCreateCombinations, EntAssetObjectTypeDefault, EntAssetObjectTypeDefaultCopy
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc1a8d98e9a8853e2e72bfcc7415ddb9a0a3b7758504621d6fccff00a08a36be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 295840c12f89bc6c6a4d53023985259ac761d6b2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730386"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017427"
 ---
 # <a name="asset-types"></a>tillgångstyper
 
@@ -45,9 +47,9 @@ Först ställer du in de nödvändiga tillgångstyperna. Därefter skapar du de 
 7. Välj **Spara**.
 8. På snabbfliken **Underhållsjobbtyper** väljer du de underhållsjobbtyper som ska relateras till tillgångstypen.
 
-    - Om du vill välja en typ av underhållsjobb väljer du denna i fältet **Återstående underhållsjobbtyper** och sedan höger pilknapp ![Höger pilknapp.](media/29-setup-for-objects.png) för att flytta den till avsnittet **Valda typer för underhållsjobb**.
-    - Om du vill välja alla tillgängliga underhållsjobbtyper väljer du ![pilen Vidarebefordra alla](media/30-setup-for-objects.png) . Alla underhållsjobbtyper överförs från fältet **återstående underhållsjobbtyper** till fältet **valda underhållsjobbtyper**.
-    - Om du vill annullera valet av en underhållsjobbtyp väljer du denna i fältet **Valda underhållsjobbtyper** och sedan vänster pilknapp ![Vänster pilknapp.](media/31-setup-for-objects.png) för att flytta den till avsnittet **Återstående underhållsjobbtyper**.
+    - Om du vill välja en underhållsjobbtyp väljer du den i fältet **återstående underhållsjobbtyper** och väljer sedan högerpilen ![högerpilen](media/29-setup-for-objects.png) för att flytta den till avsnittet **valda underhållsjobbtyper**.
+    - Om du vill välja alla tillgängliga underhållsjobbtyper väljer du ![pilen vidarebefordra alla](media/30-setup-for-objects.png). Alla underhållsjobbtyper överförs från fältet **återstående underhållsjobbtyper** till fältet **valda underhållsjobbtyper**.
+    - Om du vill avbryta valet av underhållsjobbtyp markerar du fältet **Valda underhållsjobbtyper** och väljer sedan vänsterpil knappen ![vänsterpil knappen](media/31-setup-for-objects.png) för att flytta den till fältet **Återstående underhållsjobbtyper**.
 
 9. Du kan också välja räknare som ska vara relaterade till tillgångstypen. På snabbfliken **räknare** gör du dina val med hjälp av metoderna som beskrivs för underhållsjobbtyper i steg 8. Mer information om hur du ställer in räknare finns i [räknare](counters.md).
 10. Du kan också välja attributtyper som ska vara relaterade till tillgångstypen. På snabbfliken **attributtyper** gör du dina val med hjälp av metoderna som beskrivs för underhållsjobbtyper i steg 8. Om du vill skapa den önskade sekvensen av attributtyper väljer du en attributtyp de **valda attributtyper** och använder sedan uppåtpil och nedåtpil för att flytta den. Sekvensen av attributtyper visas på tillgångar som använder den här tillgångstypen. Mer information om tillgångsattribut finns i [underhåll attributtyper](../setup-for-functional-locations/specification-types.md).
@@ -94,6 +96,3 @@ På sidan **reservdelar** kan du också skapa nya reservdelar för befintliga ko
 
 Om du vill se om en reservdel på den valda raden används någon annanstans i tillgångshantering (till exempel i relation till tillgångar och arbetsorder), markerar du **artikel där den används** för att öppna sidan **artikel där den används**. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
