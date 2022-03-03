@@ -2,22 +2,22 @@
 title: Inställning för kredithantering
 description: I det här avsnittet beskrivs de inställningar som krävs för kredithantering.
 author: JodiChristiansen
-ms.date: 09/04/2019
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9b9e756b678786d2c5a8c5bb9e890ce988090c09
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 6977789b039c3e77e6d697e32bf4cac69c35a901
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753678"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182464"
 ---
 # <a name="credit-management-setup"></a>Inställning för kredithantering 
 
@@ -39,7 +39,7 @@ Du kan spärra en försäljningsorder om betalningsvillkoren på ordern inte mat
 
 Om rangordningarna för betalningsvillkor är aktiva och om betalningsvillkoren för ordern har en högre rangordning än standard betalningsvillkoren för kunden kommer försäljningsordern att spärras.
 
-För att ställa in rangordning av betalningsvillkoren gå till **Kredit och inkasso \> Inställningar \> Inställningar för kredithantering \>Rangordna betalningsvillkoren**  
+För att ställa in rangordning av betalningsvillkoren gå till **Kredit och inkasso \> Inställningar \> Inställningar för kredithantering \>Rangordna betalningsvillkoren**.  
 
 ### <a name="ranking-settlement-discounts"></a>Rangordna kvittningsrabatter
 
@@ -86,7 +86,7 @@ Du kan skapa kontostatus på sidan **kontostatus** (**kredit och inkasso \> inst
 
 ## <a name="scoring-groups"></a>Bedömningsgrupper
 
-Du kan ställa in poänggrupper för att definiera riskfaktorer och kriterier som används för att mäta dem. När information om en kund tillämpas på en resultatgrupp beräknas en poäng för varje riskfaktor och används för att placera kunden i en riskgrupp. Riskgruppen kan användas för att identifiera kreditvärdighet och för att beräkna automatiska kreditgränser.
+Du kan ställa in **poänggrupper** för att definiera riskfaktorer och kriterier som används för att mäta dem. När information om en kund tillämpas på en resultatgrupp beräknas en poäng för varje riskfaktor och används för att placera kunden i en riskgrupp. Riskgruppen kan användas för att identifiera kreditvärdighet och för att beräkna automatiska kreditgränser.
 
 Du kan skapa poänggrupper på sidan **poänggrupper** (**kredit och inkasso \> inställningar \> inställning för kredithantering \> risk \> poänggrupper**).
 

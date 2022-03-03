@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 2fa82c721316fb21442e1cfc00ba00ff8cb2b750
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 67fa97c938f091c23a41ddd5aaf34a32c5a13c93
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778241"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102836"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Rapportera som färdigt från jobbkortsenheten
 
@@ -218,9 +218,9 @@ Avancerade lagerprocesser kan använda dimensionen ID-nummer för att spåra lag
 
 Om du vill använda funktionerna som beskrivs i det här avsnittet måste du använda [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera följande funktioner (i den här ordningen):
 
-1. ID-nummer för rapportering som slutförd har lagts till i jobbkortenheten (från och med Supply Chain Management.version 10.0.21 är denna funktion aktiverad som standard.)
-1. Aktivera automatisk generering av ID-nummer när rapportering slutförts i jobbkortenheten
-1. Skriv ut etikett från jobbkortenhet
+1. *ID-nummer för rapportering som färdig har lagts till på jobbkortenheten*<br>(Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk.)
+1. *Aktivera automatisk generering av ID-nummer när rapportering slutförts i jobbkortenheten*<br>(Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk.)
+1. *Skriv ut etikett från jobbkortenhet*<br>(Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk.)
 
 ### <a name="set-up-reporting-as-finished-to-a-license-plate"></a>Konfigurera rapportering som färdig till ett ID-nummer
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 54962b48dee05b2cd62fd3ea8814e4c965ba7818
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 812dd30e0e444bc310fc81edd16958e0c0747885
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069389"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103423"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installera och ansluta mobilappen Hantering av distributionslager
 
@@ -39,12 +39,9 @@ Mobilappen Hantering av distributionslager är tillgänglig för både operativs
 - Windows 10 (Universal Windows Platform \[UWP\]) oktober 2018 uppdatering 1809 (version 10.0.17763) eller senare
 - Android 4.4 eller senare
 
-## <a name="turn-on-the-feature"></a>Aktivera en funktion
+## <a name="turn-warehouse-management-mobile-app-features-or-or-off-in-supply-chain-management"></a>Stänga av funktioner för Warehouse Management Mobile-appen eller inaktivera dem i Supply Chain Management
 
-Innan du kan använda appen måste relaterad funktion aktiveras i ditt system. Administratörer kan använda arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
-
-- **Modul:** *Lagerstyrning*
-- **Funktionsnamn:** *användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen*
+För att använda Warehouse Management Mobile-appen måste funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* måste vara inaktiverade för systemet. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version äldre än 10.0.25 kan administratörer aktivera eller inaktivera denna funktion genom att söka efter funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Skaffa mobilappen Hantering av distributionslager
 

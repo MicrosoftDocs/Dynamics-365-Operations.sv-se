@@ -1,50 +1,42 @@
 ---
-title: Aktivera budgetförslag (förhandsversion)
-description: I det här ämnet beskrivs hur du aktiverar funktionen för Budgetförslag i Ekonomiinsikter.
+title: Aktivera budgetförslag
+description: I det här ämnet beskrivs hur du aktiverar funktionen för Budgetförslag i Finance-insikter.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 07/24/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: d8443c4e3e6f3d3a90acedc7c05b2846d6b68369
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: cd0ba4307f93148c241810759df9a95578592ba9
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646215"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109564"
 ---
-# <a name="enable-budget-proposals-preview"></a>Aktivera budgetförslag (förhandsversion)
+# <a name="enable-budget-proposal"></a>Aktivera budgetförslag
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-I det här ämnet beskrivs hur du aktiverar funktionen för Budgetförslag i Ekonomiinsikter.
+I det här ämnet beskrivs hur du aktiverar funktionen för Budgetförslag i Finance-insikter.
 
-1. Använd information från miljösidan i Microsoft Dynamics Lifecycle Services (LCS) för att ansluta till den primära instansen av Azure SQL för den miljön. Kör följande Transact-SQL-kommando (T-SQL) för att aktivera förhandsversioner för sandbox-miljön. (Du kanske måste aktivera åtkomst för din IP-adress i LCS innan du kan fjärransluta till Application Object Server \[AOS\].)
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BudgetIntelligentBudgetRegisterProposalFeature', 1)`
-
-    > [!NOTE]
-    > Om din distribution av Microsoft Dynamics 365 Finance är en Service Fabric-distribution kan du hoppa över det här steget. Teamet för Ekonomiinsikter ska redan ha aktiverat förhandsversionen för dig. Om funktionen inte visas i arbetsytan **Funktionshantering**, eller om det uppstår problem när du försöker att aktivera den, skickar du e-post till [teamet för förhandsversionen av Ekonomiinsikts-appen](mailto:fiap@microsoft.com).
-
-2. Öppna arbetsytan **Funktionshantering** och gör så här:
+1. Öppna arbetsytan **Funktionshantering** och gör så här:
 
     1. Välj **Sök efter uppdateringar**.
-    2. Sök efter **Budgetförslag** och aktivera den funktionen.
+    2. På fliken **Alla** söker du efter **Budgetförslag**. Om du inte hittar funktionen söker du efter **(förhandsversion) Budgetförslag**. 
+    3. Aktivera funktionen.
 
-3. Gå till **Budgetering \> Konfigurera \> Grundläggande budgetering \> Budgetförslag (förhandsversion)** och välj **Aktivera funktion**.
+2. Gå till **Budgetering \> Konfigurera \> Grundläggande budgetering \> Budgetförslag** och välj **Aktivera funktion**.
 
-#### <a name="privacy-notice"></a>Sekretesspolicy
-Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
+> [!NOTE]
+> Funktionen för **budgetförslag** kräver minst tre års budget eller faktiska data. Funktionen använder tre till tio år data i prognoser. Mer än tre års data ger bättre resultat. Själva data fungerar bäst när det finns variation i värdena. Om uppgifterna innehåller alla konstanta data, till exempel en leasingkostnad, kan utbildningen misslyckas eftersom bristen på variation inte kräver AI för att projicera beloppen.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

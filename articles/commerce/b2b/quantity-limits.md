@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4c83b96673fa717b034207a41c921a1b197e17ef3588e77b2304ec9e27fa93a6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2c8adaad2afee3b735c69a501d7949a807f4e770
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738781"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323390"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>Konfigurera produktkvantitetsgränser på nätandelsplatser för B2B
 
@@ -75,9 +75,9 @@ Följ dessa steg om du vill aktivera funktionen för B2B-orderkvantiteter i Comm
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Konfigurera en B2B-näthandelssajt](set-up-b2b-site.md)
+[Konfigurera en näthandelsplats för B2B](set-up-b2b-site.md)
 
-[Skapa org-modellhierarkier för B2B-organisationer](org-model.md)
+[Hantera B2B-affärspartners med hjälp av kundhierarkier](partners-customer-hierarchies.md)
 
 [Hantera affärspartneranvändare på näthandelsplatser för B2B](manage-b2b-users.md)
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f362aef527272781464d5c1a17f0a382cfb8cacc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 93f5c3e4951784a6c4925b8f9026816bfaf551ee
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568145"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102923"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Hantera ändringar av konstruktionsprodukter
 
@@ -123,7 +123,7 @@ Granska berörda transaktioner, blockera valda transaktioner och skicka relatera
     - **Visa alla transaktioner** – Öppna den fullständiga listan över alla transaktioner, inte bara de öppna transaktionerna.
 
 > [!IMPORTANT]
-> Knappen **Meddela produktion** är bara tillgänglig om funktionen *Konstruktionsmeddelanden för produktion* är aktiverad i systemet. Instruktioner finns i [Konstruktionsändringshantering – översikt](product-engineering-overview.md).
+> Knappen **Meddela produktion** är bara tillgänglig om funktionen *Konstruktionsmeddelanden för produktion* är aktiverad i systemet. Instruktioner om hur du aktiverar och inaktiverar funktionen finns i [översikten över hantering av tekniska ändringar](product-engineering-overview.md).
 
 #### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Granska och bearbeta meddelanden för transaktioner
 
@@ -136,7 +136,7 @@ Du kan läsa och bearbeta de ändringsmeddelanden som du får på följande sät
 När du granskar tillverkningsordermeddelanden på sidan **Tekniska meddelanden**, kan du följa länkar till relaterade ändringsorder eller tillverkningsorder genom att välja kolumnvärden eller använda relaterade kommandon i åtgärdsfönstret. När du är klar med en utvärdering av en ändring, och efter att du har annullerat eller ändrat tillverkningsorder efter behov, kan du markera ett meddelande som löst. Välj aviseringen och välj sedan i åtgärdsfönstret **Lös**. Meddelandet tas bort från alla användares vyer.
 
 > [!IMPORTANT]
-> Om det ska gå att skicka meddelanden för produktionsorder måste funktionen *Konstruktionsmeddelanden för produktion* vara aktiverad i systemet. Instruktioner finns i [Konstruktionsändringshantering – översikt](product-engineering-overview.md).
+> Om det ska gå att skicka meddelanden för produktionsorder måste funktionen *Konstruktionsmeddelanden för produktion* vara aktiverad i systemet. Instruktioner om hur du aktiverar och inaktiverar funktionen finns i [översikten över hantering av tekniska ändringar](product-engineering-overview.md).
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Skapa en ändringsorder från en ändringsbegäran
 

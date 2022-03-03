@@ -2,24 +2,24 @@
 title: Skicka fakturor till arbetsflödessystemet och matcha produktinleveransrader
 description: I det här avsnittet förklaras hur du skickar leverantörsfakturor till arbetsflödessystemet och automatiskt matchar bokförda produktinleveranser på leverantörsfakturor.
 author: abruer
-ms.date: 09/08/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fd7ec9f4f30c444fd6442c9a2f1333fcaba4246520de3997f3bb9064a8ee16e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0962ea2bfa28deb3e86620c364feffd209cfc38e
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736986"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109953"
 ---
 # <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Skicka fakturor till arbetsflödessystemet och matcha produktinleveransrader
 
@@ -29,7 +29,7 @@ I det här avsnittet förklaras hur du skickar leverantörsfakturor till arbetsf
 
 ## <a name="submitting-imported-vendor-invoices-to-the-workflow-system-and-matching-posted-product-receipt-lines-to-pending-vendor-invoice-lines"></a>Skicka importerade leverantörsfakturor till arbetsflödessystemet och matcha bokförda inleveransrader till pågående leverantörs fakturarader
 
-Som en del av en uppdelad faktureringsprocess för leverantörsreskontra kan du låta systemet automatiskt skicka in en importerad faktura till arbetsflödessystemet. Du kan konfigurera processen för att skicka importerade fakturor till arbetsflödessystemet på fliken **Automation av leverantörsfaktura** på sidan **Parametrar för leverantörsreskontra** (**Leverantörsreskontra \> Inställningar \> Parametrar för leverantörsreskontra**). Sändning till arbetsflödesprocess körs i bakgrunden med en frekvens som du anger (antingen per timme eller per dag).
+Som en del av en uppdelad faktureringsprocess för leverantörsreskontra en importerad faktura kan skickas automatiskt till arbetsflödessystemet. Du kan konfigurera processen för att skicka importerade fakturor till arbetsflödessystemet på fliken **Automation av leverantörsfaktura** på sidan **Parametrar för leverantörsreskontra** (**Leverantörsreskontra \> Inställningar \> Parametrar för leverantörsreskontra**). Sändning till arbetsflödesprocess körs i bakgrunden med en frekvens som du anger (antingen per timme eller per dag).
 
 När du skickar fakturor automatiskt till arbetsflödessystemet måste du börja med en importerad faktura. Om du vill vara säker på att fakturan kan bearbetas från början till slut utan manuell ingrepp, måste du inkludera en automatisk bokföringsuppgift i arbetsflödeskonfigurationen. Fakturor som är relaterade till inköpsorder och fakturor som innehåller en anskaffningskategori som inte ingår i inköpsordern och som inte finns i lager, kan automatiskt skickas till arbetsflödessystemet. Fakturor som anges manuellt måste skickas manuellt till arbetsflödessystemet.
 
@@ -37,7 +37,7 @@ Värdet **Skickade av** i arbetsflödet är det användar-ID som angavs för bak
 
 ## <a name="matching-posted-product-receipts-to-invoice-lines-that-have-a-three-way-matching-policy"></a>Matcha bokförda produktinleveranser mot fakturarader som har en policy för trevägsmatchning
 
-Som en del av en beröringsfri faktureringsprocess för leverantörsreskontra kan systemet automatiskt matcha bokförda produktinleveranser mot fakturarader. En policy för trevägsmatchning princip måste definieras för den här uppgiften. Den här funktionen är tillgänglig om funktionen **Automatisering av leverantörsfakturor** har aktiverats på sidan **Funktionshantering**.
+Som en del av en beröringsfri faktureringsprocess för leverantörsreskontra kan bokförda produktkvitton automatiskt matchas mot fakturarader. En policy för trevägsmatchning princip måste definieras för den här uppgiften. Den här funktionen är tillgänglig om funktionen **Automatisering av leverantörsfakturor** har aktiverats på sidan **Funktionshantering**.
 
 Matchningsprocessen kommer att köras tills den matchade kvantiteten för produktinleverans är lika med faktura antalet. Om det däremot finns flera produktinleveranser för en enda fakturarad måste du köra processen flera gånger för att få hela kvantiteten att matcha. Du kan ange det maximala antalet gånger för att försöka med automatisk matchning – Välj det antal gånger som systemet ska försöka matcha produktinleveranser mot en fakturarad innan det finner att processen misslyckades. Processen kommer att köras i bakgrunden, antingen varje timme eller per dag. 
 

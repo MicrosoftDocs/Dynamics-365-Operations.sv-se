@@ -2,7 +2,7 @@
 title: Momsberäkning för allmänna journalrader
 description: Det här ämnet förklarar hur moms beräknas för olika typer av konton (leverantör, kund, redovisning och projekt) på allmänna journalrader.
 author: EricWangChen
-ms.date: 04/22/2021
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 654917705400e0aecc7240e12f68d578827f6ad2
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 684b38a4940ff00978201334d1db0cef87b79b35
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488321"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8311964"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Momsberäkning för allmänna journalrader
 [!include [banner](../includes/banner.md)]
@@ -77,19 +77,9 @@ Följande diagram visar regeln grafiskt.
 
 ### <a name="account-type-is-customer"></a>Kontotyp är kund
 
-Om en verifikation har en journalrad där kontotypen är **kund**, använder alla journalrader i verifikationen samma momsriktning. Följande poäng visar de möjliga momsriktningarna för kundkonton.
+Om en verifikation har en journalrad där kontotypen är **kund**, använder alla journalrader i verifikationen samma momsriktning. 
 
-•   Om momskoden är momsbefriad är momsriktningen är skattefritt inköp.
-
-•   Om momskoden är Inomeuropeisk moms är momsriktningen Ingående moms.
-
-•   Om momskoden är återfört tillägg moms är momsriktningen Ingående moms.
-
-Annars är momsriktningen Utgående moms.
-
-Följande diagram visar regeln grafiskt.
-
-![Momsriktningsmöjligheter för kundkonton.](media/Sales-Tax-Direction-Customer.jpg)
+Om momskoden är momsbefriad är momsriktningen är skattefritt Sale. Annars är momsriktningen Utgående moms.
 
 ### <a name="account-type-is-ledger"></a>Kontotypen är Redovisning
 

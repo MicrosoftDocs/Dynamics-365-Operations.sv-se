@@ -2,7 +2,7 @@
 title: Skapa ekonomiska rapporter
 description: Det här avsnittet innehåller allmän information om att skapa en ekonomisk rapport.
 author: jinniew
-ms.date: 03/08/2021
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 101cf2b29bb6f91cec5a3dac0be30b53388905c96ecf481f5b7b3e90cda3f804
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 00a860089265800ca1a0058f222d5e85c360501c
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740273"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119537"
 ---
 # <a name="generate-financial-reports"></a>Skapa ekonomiska rapporter
 
@@ -28,9 +28,22 @@ ms.locfileid: "6740273"
 
 Det här avsnittet innehåller allmän information om att skapa en ekonomisk rapport.
 
-Öppna rapportdefinitionen och klicka sedan på knappen **Generera** i verktygsfältet om du vill skapa en rapport. Sidan **Rapportköstatus** öppnas och visar platsen för rapporten i kön. Som standard öppnas rapporten i Web Viewer.
+Öppna rapportdefinitionen och klicka sedan på **Generera** i verktygsfältet. Sidan **Rapportköstatus** öppnas och visar platsen för rapporten i kön.
 
-Följande alternativ är tillgängliga för rapportgenerering:
+Allt eftersom rapportgenereringen fortskrider kan följande indikatorer för rapportköstatus vara synliga på sidan **Rapportköstatus**.
+
+| Status          | Delstat | Beskrivning|
+|-----------------|--------|--------------------|
+| Köar        | Mellanliggande |Rapportdefinitionen valideras innan rapporten läggs i genereringskön.                    |
+| I kö          | Mellanliggande | Rapporten anger rapportens genereringskö och väntar på att bearbetas.                      |
+| Bearbetas      | Mellanliggande | Den här statusen följer vanligtvis statusen **Köad** och går vanligtvis över till statusen **slut** när bearbetningen är klar.       |
+| Efterbearbetning | Mellanliggande | Den här statusen följer statusen **Bearbetning** och visar att alla rapportdata har samlats in, men att det inte utförs några åtgärder, som beräkning och sammanslagning.            |
+| Avbryter      | Mellanliggande | Rapporteringen avbryts på användarens begäran. Det här statusresultatet från en användarbegärd annullering för en rapport i läget **Köad** eller **Bearbetning**. Systemet försöker placera rapporten i läget **Annullerat** om inte systemet är för långt fram och måste slutföra den i ett annat läge. |
+| Avbrutet        | Slutgiltigt | Rapporten slutförs men slutförs inte på grund av att användaren har begärt stopp.            |
+| Slutförda       | Slutgiltigt | Rapporten är klar att användas.                      |
+| Misslyckat          | Slutgiltigt | Bearbetningen av rapporten har slutförts men den bör inte användas. |
+
+Som standard öppnas rapporten i Web Viewer. Följande alternativ är tillgängliga för rapportgenerering:
 
 - Ställa in ett schema för att skapa en rapport eller en grupp av rapporter automatiskt
 - Kontrollera om det saknas konton eller data i en rapport och validera riktigheten i en rapport
@@ -134,7 +147,7 @@ Risken för saknade konton är lägre om du använder rapporter som innehåller 
 4. Välj ett alternativ för sortering av resultatet i fältet **Gruppera efter**. Du kan sortera resultatet efter det byggblock som påverkas eller efter dimension och värdemängder.
 5. Granska det resultat som visas. Om du markerar ett objekt i det övre fönstret visas ytterligare information om undantaget i det nedre fönstret. Den omfattar relaterade dimensioner, värden och rapporter.
 6. Du öppnar det objekt som påverkas genom att klicka på dess ikon i listfönstret eller genom att högerklicka på objektet och sedan välja **Öppna**. Om du vill markera flera objekt håller du ned **Ctrl**-tangenten samtidigt markerar objekten i det nedre fönstret.
-7. Om resultatet innehåller värden, byggblock eller rapporter som inte ska ingå i analysen högerklickar du på dessa och väljer **Ta inte med**. Du kan även markera kryssrutan **Ta inte med** intill objektet så att det tas bort ur listan. Undantagna objekt tas bort när listan uppdateras. Om du vill markera flera objekt håller du ned **Ctrl**-tangenten samtidigt markerar objekten i det nedre fönstret. Om du vill visa alla objekt, inklusive resultat som du tidigare har valt att inte ta med i analysen markerar du kryssrutan **Visa byggblock och värden som har exkluderats** och klickar sedan på **Uppdatera**.
+7. Om resultatet innehåller värden, byggblock eller rapporter som inte ska ingå i analysen högerklickar du på dessa och väljer **Ta inte med**. Du kan även markera kryssrutan **Ta inte med** intill objektet så att det tas bort ur listan. Undantagna objekt inkluderas inte när listan uppdateras. Om du vill markera flera objekt håller du ned **Ctrl**-tangenten samtidigt markerar objekten i det nedre fönstret. Om du vill visa alla objekt, inklusive resultat som du tidigare har valt att inte ta med i analysen markerar du kryssrutan **Visa byggblock och värden som har exkluderats** och klickar sedan på **Uppdatera**.
 8. Klicka på **Uppdatera** för att uppdatera undantag som du har markerat. Klicka på **Ja** om du vill uppdatera hela resultatet eller klicka på **Nej** om du bara vill uppdatera markerade objekt.
 
     > [!NOTE]

@@ -2,25 +2,25 @@
 title: Redovisningsfördelningar och journalposter för leverantörsfakturor
 description: Redovisningsfördelningar används för att definiera hur ett belopp ska redovisas, till exempel hur utgiften, momsen eller avgifterna ska redovisas på en leverantörsfaktura. Varje belopp som måste redovisas när leverantörsfakturan journalförs ska ha en eller flera redovisningsfördelningar.
 author: sunfzam
-ms.date: 08/20/2017
+ms.date: 02/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendEditInvoice
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 26891
 ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7296b1e00bfd49bceb40a0e8b859d46c6517450a
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: fecdafe8765121d6d54389a70e6c2e497a03611a
+ms.sourcegitcommit: 43d0555c17a0643c9e5ba3bc2da3ce5f80754642
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594701"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "8325978"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Redovisningsfördelningar och journalposter för leverantörsfakturor
 
@@ -62,7 +62,7 @@ När du registrerar en leverantörsfaktura, kommer varje belopp fördelas på f�
 <td>Produkt i lager</td>
 <td><ol>
 <li>Redovisningsfördelningen för inköpsorderraden.</li>
-<li>Huvudkontofältet när inköpomkostnad för produkt har valts i bokföringsidan.</li>
+<li>Fältet **Huvudkonto** när inköpomkostnad för produkt har valts på sidan **bokföring**.</li>
 </ol></td>
 <td><ol>
 <li>Använd kontofördelningen för inköpsorderraden, om fakturaraden refererar till en inköpsorderrad.</li>
@@ -73,35 +73,35 @@ När du registrerar en leverantörsfaktura, kommer varje belopp fördelas på f�
 <td>En anskaffningskategori eller en produkt som inte finns i lager</td>
 <td><ol>
 <li>Redovisningsfördelningen för inköpsorderraden, om leverantörsfakturaraden refererar till en inköpsorderrad.</li>
-<li>Huvudkontofältet när inköpomkostnad för utgift har valts i bokföringsidan.</li>
+<li>Fältet **Huvudkonto** när inköpomkostnad för utgift har valts på sidan **bokföring**.</li>
 </ol></td>
 <td><ol>
 <li>Använd kontofördelningen för inköpsorderraden, om fakturaraden refererar till en inköpsorderrad.</li>
 <li>Om huvudkontot är ett allokeringskonto ska du använda standardvärdet från allokeringskontodefinitionen.</li>
 <li>Använd standardvärdena för ekonomiska dimensionen på leverantörsfakturan.</li>
 <li>Använd värdena för den ekonomiska dimensionen från leverantörsfakturaraden.</li>
-<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan Kontoplan.</li>
+<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan **Kontoplan**.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Anläggningstillgång</td>
 <td><ol>
 <li>Redovisningsfördelningen för inköpsorderraden, om leverantörsfakturaraden refererar till en inköpsorderrad.</li>
-<li>Om anskaffning har valts i fältet Transaktionstyp i formuläret Leverantörsfaktura, väljs fältet Huvudkonto när Anskaffning har markerats i formuläret Bokföringsprofiler för anläggningstillgångar.</li>
-<li>Om Anskaffningsjustering har valts i fältet Transaktionstyp i formuläret Leverantörsfaktura, väljs fältet Huvudkonto när Anskaffningsjustering har markerats i formuläret Bokföringsprofiler för anläggningstillgångar.</li>
+<li>Om **anskaffning** har valts i fältet **Transaktionstyp** på sidan **Leverantörsfaktura**, väljs fältet **Huvudkonto** när **Anskaffning** har markerats på sidan **Bokföringsprofiler för anläggningstillgångar**.</li>
+<li>Om **Anskaffningsjustering** har valts i fältet **Transaktionstyp** väljs fältet **Huvudkonto** när **Anskaffningsjustering** har markerats i formuläret **Bokföringsprofiler för anläggningstillgångar**.</li>
 </ol></td>
 <td><ol>
 <li>Använd redovisningsfördelningen för inköpsorderraden, om fakturaraden refererar till en inköpsorderrad.</li>
 <li>Använd värdena för den ekonomiska dimensionen från leverantörsfakturaraden.</li>
-<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan Kontoplan.</li>
+<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan **Kontoplan**.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Projektet har definierats på leverantörsfakturaraden</td>
 <td><ol>
 <li>Redovisningsfördelningen för inköpsorderraden, om fakturaraden refererar till en inköpsorderrad.</li>
-<li>Om Saldo väljs i fältet Bokföringskostnader – artikel på sidan Projektgrupp i fältet Huvudkonto när Kostnad har markerats på sidan Inställning av redovisningsbokföring.</li>
-<li>Om Vinst och förlust väljs i fältet Bokföringskostnader – artikel på sidan Projektgrupp i fältet Huvudkonto när Kostnad – artikel har markerats på sidan Inställning av redovisningsbokföring.</li>
+<li>Om **Saldo** väljs i fältet **Bokföringskostnader – artikel** på sidan **Projektgrupp** i fältet **Huvudkonto** när **Kostnad** har markerats på sidan **Inställning av redovisningsbokföring**.</li>
+<li>Om **Vinst och förlust** väljs i fältet **Bokföringskostnader – artikel** på sidan **Projektgrupp** i fältet **Huvudkonto** när **Kostnad – artikel** har markerats på sidan **Inställning av redovisningsbokföring**.</li>
 </ol></td>
 <td><ol>
 <li>Använd kontofördelningen för inköpsorderraden, om fakturaraden refererar till en inköpsorderrad.</li>
@@ -111,18 +111,18 @@ När du registrerar en leverantörsfaktura, kommer varje belopp fördelas på f�
 <td>Radrabatt</td>
 <td><ol>
 <li>Redovisningsfördelningen för inköpsorderraden, om fakturaraden refererar till en inköpsorderrad.</li>
-<li>Fältet Huvudkonto, när Rabatt är markerat på sidan Bokföring.</li>
+<li>Fältet **Huvudkonto**, när **Rabatt** är markerat på sidan **Bokföring**.</li>
 <li>Om ett huvudkonto för en rabatt inte har definierats på bokföringsprofilen, redovisningsfördelningen för det slutliga priset på inköpsorderraden.</li>
 </ol></td>
 <td><ol>
 <li>Använd redovisningsfördelningen för inköpsorderraden, om fakturaraden refererar till en inköpsorderrad.</li>
 <li>Använd värdena för de ekonomiska dimensionerna från redovisningsfördelningarna för det slutliga priset för leverantörsorderraden.</li>
 <li>Använd värdena för den ekonomiska dimensionen på leverantörsfakturaraden.</li>
-<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan Kontoplan.</li>
+<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan **Kontoplan**.</li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Avgift på inköp som anges på fliken Pris och rabatt för inköpsorderraden</td>
+<td>Avgift på inköp som anges på fliken **Pris och rabatt** för inköpsorderraden</td>
 <td><ol>
 <li>Redovisningsfördelningen för inköpsorderraden, om fakturaraden refererar till en inköpsorderrad.</li>
 <li>Redovisningsfördelningen av det slutliga priset på inköpsorderraden.</li>
@@ -136,21 +136,21 @@ När du registrerar en leverantörsfaktura, kommer varje belopp fördelas på f�
 <td>Radavgift</td>
 <td><ol>
 <li>Redovisningsfördelningen för inköpsorderraden, om fakturaraden refererar till en inköpsorderrad.</li>
-<li>Om Redovisningskonto har valts i debettypfältet i formuläret Avgiftskod väljs debetkontotypen på sidan Avgiftskod.</li>
-<li>Om Artikel har valts i debetfältet i formuläret Avgiftskod, är redovisningsfördelningen för det slutliga priset på inköpsorderraden.</li>
-<li>Om Kund/leverantör har valts i debettypfältet i formuläret Avgiftskod väljs kreditkontotypen på sidan Avgiftskod.</li>
+<li>Om **Redovisningskonto** har valts i **debettyp** fältet på sidan **Avgiftskod** väljs **debetkonto** på sidan **Avgiftskod**.</li>
+<li>Om **Artikel** har valts i fältet **Debettyp** på sidan **Avgiftskod**, är redovisningsfördelningen för det slutliga priset på inköpsorderraden.</li>
+<li>Om **Kund/leverantör** har valts i **debettyp** fältet på sidan **Avgiftskod** väljs **kreditkonto** typen på sidan **Avgiftskod**.</li>
 </ol></td>
 <td><ol>
 <li>Använd kontofördelningen för inköpsorderraden, om fakturaraden refererar till en inköpsorderrad.</li>
 <li>Använd värdena för de ekonomiska dimensionerna från redovisningsfördelningarna för det slutliga priset för leverantörsorderraden.</li>
 <li>Använd värdena för den ekonomiska dimensionen från leverantörsfakturaraden.</li>
-<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan Kontoplan.</li>
+<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan **Kontoplan**.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Moms, med följande villkor:
 <ul>
-<li>Alternativet Tillämpa amerikanska skatteregler har valts på sidan Allmänna redovisningparametrar.</li>
+<li>Alternativet Tillämpa amerikanska skatteregler har valts på sidan **Allmänna redovisningparametrar**.</li>
 </ul></td>
 <td><ol>
 <li>Redovisningsfördelningen för inköpsorderraden, om fakturaraden refererar till en inköpsorderrad.</li>
@@ -165,61 +165,61 @@ När du registrerar en leverantörsfaktura, kommer varje belopp fördelas på f�
 <tr class="odd">
 <td>Moms, med följande villkor:
 <ul>
-<li>Alternativet Tillämpa amerikanska skatteregler har avmarkerats på sidan Allmänna redovisningparametrar.</li>
-<li>Fältet Importavgift för momsgruppen är avmarkerat i momsgruppsidan.</li>
+<li>Alternativet Tillämpa amerikanska skatteregler har avmarkerats på sidan **Allmänna redovisningparametrar**.</li>
+<li>Fältet **Importavgift** för momsgruppen är avmarkerat i **momsgruppsidan**.</li>
 </ul></td>
 <td><ol>
-<li>Om momsbeloppet är återbetalningsbart, fältet Momsfordran på sidan Redovisningsbokföringsgrupper.</li>
+<li>Om momsbeloppet är återbetalningsbart, fältet **Momsfordran** på sidan **Redovisningsbokföringsgrupper**.</li>
 <li>Om momsbeloppet inte är återvinningsbart, det slutliga priset eller redovisningsfördelningen för avgiften.</li>
 </ol></td>
 <td><ol>
 <li>Använd kontofördelningen för inköpsorderraden, om fakturaraden refererar till en inköpsorderrad.</li>
 <li>Använd värdena för de ekonomiska dimensionerna från det slutliga priset eller från redovisningsfördelningarna för avgiften på leverantörsorderraden.</li>
 <li>Använd värdena för den ekonomiska dimensionen från leverantörsfakturaraden.</li>
-<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan Kontoplan.</li>
+<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan **Kontoplan**.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Moms, med följande villkor:
 <ul>
-<li>Alternativet Tillämpa amerikanska skatteregler har avmarkerats på sidan Allmänna redovisningparametrar.</li>
-<li>Fältet Importavgift för momsgruppen är markerat i momsgruppsidan.</li>
+<li>Alternativet Tillämpa amerikanska skatteregler har avmarkerats på sidan **Allmänna redovisningparametrar**.</li>
+<li>Fältet **Importavgift** för momsgruppen är markerat på sidan **momsgrupper**.</li>
 </ul></td>
 <td><ol>
-<li>Om momsbeloppet är återbetalningsbart, fältet Momsfordran på sidan Redovisningsbokföringsgrupper.</li>
-<li>Om momsbeloppet inte är återbetalningsbart, fältet Importavgift, utgift på sidan Redovisningsbokföringsgrupper.</li>
+<li>Om momsbeloppet är återbetalningsbart, fältet **Momsfordran** på sidan **Redovisningsbokföringsgrupper**.</li>
+<li>Om momsbeloppet inte är återbetalningsbart, fältet **Importavgift**, utgift på sidan **Redovisningsbokföringsgrupper**.</li>
 </ol></td>
 <td><ol>
 <li>Använd kontofördelningen för inköpsorderraden, om fakturaraden refererar till en inköpsorderrad.</li>
 <li>Använd värdena för de ekonomiska dimensionerna från det slutliga priset eller från redovisningsfördelningarna för avgiften på leverantörsorderraden.</li>
 <li>Använd värdena för den ekonomiska dimensionen från leverantörsfakturaraden.</li>
-<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan Kontoplan.</li>
+<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan **Kontoplan**.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Huvudtillägg</td>
 <td><ol>
-<li>Om Redovisningskonto har valts i debettypfältet i formuläret Avgiftskod väljs debetkontotypen på sidan Avgiftskod.</li>
-<li>Om Kund/leverantör har valts i debettypfältet i formuläret Avgiftskod väljs kreditkontotypen på sidan Avgiftskod.</li>
+<li>Om **Redovisningskonto** har valts i **debettyp** fältet på sidan **Avgiftskod** väljs **debetkonto** på sidan **Avgiftskod**.</li>
+<li>Om **Kund/leverantör** har valts i **debettyp** fältet på sidan **Avgiftskod** väljs **kreditkonto** typen på sidan **Avgiftskod**.</li>
 </ol></td>
 <td><ol>
 <li>Använd kontofördelningen för inköpsorderraden, om fakturaraden refererar till en inköpsorderrad.</li>
 <li>Om huvudkontot är ett allokeringskonto ska du använda standardvärdet från allokeringskontodefinitionen.</li>
 <li>Använd värdena i standardmallen för ekonomiska dimensionen från leverantörsfakturarubriken.</li>
 <li>Använd värdena för den ekonomiska dimensionen från leverantörsfakturaraden.</li>
-<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan Kontoplan.</li>
+<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan **Kontoplan**.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Rubrikrabatt</td>
 <td><ol>
-<li>Fältet Huvudkonto för bokföringstypen Leverantörsfakturarabatt på sidan Konton för automatiska transaktioner.</li>
+<li>Fältet **Huvudkonto** för **bokföringstypen Leverantörsfakturarabatt** på sidan **Konton för automatiska transaktioner**.</li>
 </ol></td>
 <td><ol>
 <li>Använd kontofördelningen för inköpsorderraden, om fakturaraden refererar till en inköpsorderrad.</li>
 <li>Använd värdena för de ekonomiska dimensionerna från redovisningsfördelningarna för det slutliga priset för leverantörsorderraden.</li>
 <li>Använd värdena för den ekonomiska dimensionen från leverantörsfakturaraden.</li>
-<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan Kontoplan.</li>
+<li>Använd de förvalda värdena för ekonomiska dimensioner från huvudkontot på sidan **Kontoplan**.</li>
 </ol></td>
 </tr>
 </tbody>

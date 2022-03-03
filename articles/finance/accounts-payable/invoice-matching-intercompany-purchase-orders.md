@@ -2,31 +2,31 @@
 title: Fakturamatchning och koncerninterna inköpsorder
 description: Den juridiska personen för inköp som ingår i en koncernintern handelstransaktion kan ställas in för att använda fakturamatchning i leverantörsreskontra. I det här fallet måste bokföringskraven för både koncernintern handel och fakturamatchning i leverantörsreskontra uppfyllas innan koncerninterna leverantörsfakturor kan bokföras.
 author: abruer
-ms.date: 10/26/2017
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 3101
 ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afa7021278d5dc8ba307ae1cf72504d08660f7ce34dea86ce2e8ca2a709366b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e884e96e1275f9162b642bbe48c2d891c6434002
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737392"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109978"
 ---
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Fakturamatchning och koncerninterna inköpsorder
 
 [!include [banner](../includes/banner.md)]
 
-Den juridiska personen för inköp som ingår i en koncernintern handelstransaktion kan ställas in för att använda fakturamatchning i leverantörsreskontra. När fältet **Bokför faktura med avvikelser** i formuläret **Parametrar för leverantörsreskontra** är inställt på **Kräv godkännande**, kommer fakturamatchningsvalidering att utföras. I det här fallet måste bokföringskraven för både koncernintern handel och fakturamatchning i leverantörsreskontra uppfyllas innan koncerninterna leverantörsfakturor kan bokföras.
+Den juridiska personen för inköp som ingår i en koncernintern handelstransaktion kan ställas in för att använda fakturamatchning i leverantörsreskontra. När fältet **Bokför faktura med avvikelser** på sidan **Parametrar för leverantörsreskontra** är inställt på **Kräv godkännande**, kommer fakturamatchningsvalidering att utföras. I det här fallet måste bokföringskraven för både koncernintern handel och fakturamatchning i leverantörsreskontra uppfyllas innan koncerninterna leverantörsfakturor kan bokföras.
 
 I exemplen i det här avsnittet används följande inställningar för koncernintern handel:
 -   Fabrikam Purchase är den juridiska personen som köper.
@@ -37,24 +37,24 @@ I exemplen i det här avsnittet används följande inställningar för koncernin
 -   Koncernintern information anges i Fabrikam Purchase för kund 4020. Fabrikam Purchase anges som leverantörsföretag, och leverantör 3024 anges som det leverantörskonto som motsvarar den juridiska personen för Fabrikam Sales.
 
 I dessa exempel används följande inställningar för fakturamatchning i leverantörsreskontra för Fabrikam Purchase:
--   Alternativet Aktivera fakturamatchningsvalidering är valt på sidan Parametrar för leverantörsreskontra.
--   Fältet Bokför faktura med avvikelser är inställt på Kräv godkännande på sidan Parametrar för leverantörsreskontra.
+-   Alternativet **Aktivera fakturamatchningsvalidering** är valt på sidan **Parametrar för leverantörsreskontra**.
+-   Fältet **Bokför faktura med avvikelser är inställt** på **Kräv godkännande** på sidan **Parametrar för leverantörsreskontra**.
 -   Pristoleransprocentsatsen för den juridiska personen är 2 procent.
 
 ## <a name="example-price-matching-and-intercompany-trade"></a> Exempel: Prismatchning och koncernintern handel
 Nettobeloppen för den koncerninterna leverantörsfakturan och den koncerninterna kundfakturan måste vara samma. Detta krav åsidosätter eventuella fakturamatchningsgodkännanden och pristoleransprocent. Exempelvis följer du dessa steg.
 1.  Skapa försäljningsorder SO888 för kund 4020 i Fabrikam Purchase. Den koncerninterna inköpsordern ICPO222 skapas automatiskt i Fabrikam Purchase för leverantör 3024, och försäljningsorder ICSO888 skapas automatiskt i Fabrikam Sales.
 2.  Registrera att artiklar har inlevererats och bokför en följesedel i Fabrikam Sales. Statusvärdet för KIFO888 ändras till Levererat. Statusvärdet för KIIO222 ändras till Inlevererat.
-3.  Utför en fakturauppdatering för KIFO888 i Fabrikam Sales. Enhetspriset är 0,45 och 100 artiklar uppdateras.
+3.  Uppdatera en faktura för ICSO888 i Fabrikam Sales. Enhetspriset är 0,45 och 100 artiklar uppdateras.
 4.  Skapa en faktura för KIIO222 i Fabrikam Purchase. Du råkade ändra nettopriset från 45,00 till 54,00. En ikon visas som anger att priset överskrider den tillåtna pristoleransen på 2 procent.
-5.  På sidan Fakturamatchningsdetaljer väljer du alternativet för att godkänna bokföring med matchningsavvikelser. Klicka på OK på sidan Leverantörsfaktura. Om leverantörsfakturan inte är en koncernintern leverantörsfaktura lyckas bokföringen. Men eftersom du arbetar med en koncernintern leverantörsfaktura misslyckas bokföringen. För koncernintern handel måste fakturasumman för den koncerninterna försäljningsordern vara samma som fakturasumman för motsvarande koncerninterna inköpsorder. För att lösa detta måste du korrigera nettopriset på fakturan genom att ändra tillbaka nettopriset till standardbeloppet 45,00.
+5.  På sidan **Fakturamatchningsdetaljer** väljer du alternativet för att godkänna bokföring med matchningsavvikelser. På sidan **Leverantörsfaktura** klicka på **OK**. Om leverantörsfakturan inte är en koncernintern leverantörsfaktura lyckas bokföringen. Men eftersom du arbetar med en koncernintern leverantörsfaktura misslyckas bokföringen. För koncernintern handel måste fakturasumman för den koncerninterna försäljningsordern vara samma som fakturasumman för motsvarande koncerninterna inköpsorder. För att lösa detta måste du korrigera nettopriset på fakturan genom att ändra tillbaka nettopriset till standardbeloppet 45,00.
 
 ## <a name="example-quantity-matching-with-intercompany-trade"></a> Exempel: Kvantitetsmatchning med koncernintern handel
 Kvantiteten på den koncerninterna inköpsordern och den koncerninterna försäljningsordern måste vara samma. Detta krav åsidosätter eventuella godkännanden av fakturamatchning. I detta exempel används följande ytterligare inställningar för koncernintern handel:
 -   I Fabrikam Purchase har åtgärdspolicyn för inköpsorder för leverantör 3024 ställts in att automatiskt bokföra både den ursprungliga kundfakturan och den koncerninterna leverantörsfakturan.
 
 I det här exemplet används följande ytterligare inställningar för fakturamatchning i leverantörsreskontra för Fabrikam Purchase:
--   På sidan Artikelmodellgrupper för modellgruppen som används av artikel B-R14 är alternativet Inleveransbehov valt.
+-   På sidan **Artikelmodellgrupper** för modellgruppen som används av artikel B-R14 är alternativet **Inleveransbehov** valt.
 -   Lagerbehållningen för artikel B-R14 är 0 (noll).
 
 Exempelvis följer du dessa steg.

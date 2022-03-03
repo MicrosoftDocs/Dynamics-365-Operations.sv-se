@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f5c9ba7079895feeb0c171f2021479587aa13cc9
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 21dd01448fcf6c2b3ca90a5476fad061bb0f55e4
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777676"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102749"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Uppskjuten bearbetning av manuell lagerrörelse
 
@@ -32,10 +32,10 @@ Bakgrundsbearbetning uppnås genom att du använder [funktionen för att bearbet
 
 Om du vill göra denna funktion tillgänglig aktiverar du följande funktioner i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md): Du måste aktivera dem i följande ordning:
 
-1. Organisationsomfattande arbetsspärr (från och med version 10.0.21 av Supply Chain Management är den här funktionen obligatorisk, varför den är aktiverad som standard och inte kan stängas av igen.)
-1. Bearbeta lagerställeapphändelser
-1. Uppskjutna put-åtgärder
-1. Uppskjuten bearbetning av manuell åtgärd för lagerrörelse
+1. *Arbetsspärr för hela organisationen*<br>(Från och med version 10.0.21 av Supply Chain Management är den här funktionen obligatorisk, varför den är aktiverad som standard och inte kan stängas av igen.)
+1. *Bearbeta lagerställeapphändelser*<br>(Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard.)
+1. *Uppskjutna put-åtgärder*
+1. *Uppskjuten bearbetning av manuell åtgärd för lagerrörelse*<br>(Från och med version 10.0.25 av Supply Chain Management är den här funktionen obligatorisk, varför den är aktiverad som standard och inte kan stängas av igen.)
 
 ## <a name="configure-the-work-processing-policies"></a>Konfigurera arbetsbearbetningspolicyer
 

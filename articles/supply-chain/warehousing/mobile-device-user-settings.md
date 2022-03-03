@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 13c99854224a6d220e73a43636d85ec1951f8149
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 4ea0fcfa7a165587567968f95549799859edaa60
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901906"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103723"
 ---
 # <a name="mobile-device-user-settings"></a>Användarinställningar för mobil enhet
 
@@ -39,12 +39,9 @@ Den här funktionen kan hjälpa arbetare att komma igång snabbare när de börj
 > [!IMPORTANT]
 > Funktionen för *användarinställningar för mobila enheter* gäller endast det nya mobilappen för distributionslagerhantering. Det fungerar inte med det gamla lagerställeprogrammet.
 
-## <a name="turn-on-the-mobile-device-user-settings-feature"></a>Aktivera funktionen för användarinställningar för mobila enheter
+## <a name="turn-the-mobile-device-user-settings-feature-on-or-off"></a>Aktivera eller inaktivera funktionen för användarinställningar för mobila enheter
 
-Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
-
-- **Modul:** *Warehouse management*
-- **Funktionsnamn:** *användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen*
+För att använda funktionen som beskrivs i det här avsnittet måste funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* måste vara inaktiverade för systemet. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version äldre än 10.0.25 kan administratörer aktivera eller inaktivera denna funktion genom att söka efter funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="create-and-manage-user-settings"></a>Skapa och hantera användarinställningar
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: c02273adf90afc67b7c0ae1b82c19d489bfbd3b1
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 371a8c7178cd7c5091d6dd9a91d0ee03b943a269
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920084"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103198"
 ---
 # <a name="sales-update-history-cleanup-job-fails-or-has-performance-issues"></a>Rensningjobbet för försäljningsuppdateringshistorik misslyckas eller har prestandaproblem
 
@@ -30,5 +30,5 @@ Detta kan inträffa när ditt system omfattar ett stort antal försäljningsuppd
 
 ## <a name="resolution"></a>Lösning
 
-En ny version av batchjobbet **Rensning av försäljningsuppdateringshistorik** finns för Supply Chain Management version 10.0.19 och högre. Denna funktion är inte aktiverad som standard. Mer information om hur funktionen fungerar och hur du aktiverar den i funktionshanteringen finns i [Förbättringar i rensningsprestanda för försäljningshistorik](../../sales-marketing/sales-update-history-cleanup-performance-improvements.md).
+En ny version av batchjobbet **Rensning av försäljningsuppdateringshistorik** finns för Supply Chain Management version 10.0.19 och högre. Den här funktionen är inte aktiverad som standard. Mer information om hur funktionen fungerar och hur du aktiverar den i funktionshanteringen finns i [Förbättringar i rensningsprestanda för försäljningshistorik](../../sales-marketing/sales-update-history-cleanup-performance-improvements.md).
 

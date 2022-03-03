@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c19f8dcdb7d84b752e0eec56afdb1a1865cfe00b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f87723ebd6684efba8464a7d64c7e1ea99f194eb
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567617"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102799"
 ---
 # <a name="location-license-plate-positioning"></a>Placering för plats-ID-nummer
 
@@ -30,12 +30,9 @@ Funktionen lägger till ett löpnummer för varje ID-nummer som placeras på en 
 
 Det här ämnet innehåller en sammanfattning av hur du ställer in och använder funktionen.
 
-## <a name="turn-on-the-location-license-plate-positioning-feature"></a>Aktivera funktionen för placering av ID-nummer
+## <a name="turn-the-location-license-plate-positioning-feature-on-or-off"></a>Aktivera eller inaktivera funktionen för placering av ID-nummer
 
-Innan du kan använda positionering av ID-nummer måste funktionen aktiveras i ditt system. Administratörer kan använda arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
-
-- **Modul:** *Lagerstyrning*
-- **Funktionens namn:** *Plats för positionering av ID-nummer*
+De funktioner som beskrivs i det här avsnittet måste funktionen *Placering för plats-ID-nummer* vara inaktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Placering för plats-ID-nummer* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="example-scenario"></a>Exempelscenario
 

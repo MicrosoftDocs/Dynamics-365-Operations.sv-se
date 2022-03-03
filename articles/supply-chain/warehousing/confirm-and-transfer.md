@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 4c366d2f9091ee46ac3b1b6eff72e178932da18e
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: 7b487684980f60112d9af6bea02672f7e919c834
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592638"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103599"
 ---
 # <a name="confirm-and-transfer"></a>Bekräfta och överför
 
@@ -53,12 +53,9 @@ Du kan bara dela upp laster som uppfyller följande kriterier:
 >
 > Använd funktionen *bekräfta och överför* i situationer där laster vanligtvis planeras och skapas i förväg, men där undantag ibland uppstår där lasten inte passar den tillgängliga transporten (t.ex. lastbil).
 
-## <a name="turn-on-confirm-and-transfer"></a>Aktivera bekräfta och överför
+## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>Aktivera och inaktivera funktionen för bekräftelse och överföring
 
-Innan du kan använda funktionen *bekräfta och överför* måste den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
-
-- **Modul:** *Lagerstyrning*
-- **Funktionens namn:** *Bekräfta och överför*
+De funktioner som beskrivs i det här avsnittet måste funktionen *Bekräfta och överföra* vara inaktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Bekräfta och överföra* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-confirm-and-transfer"></a>Ställ in bekräfta och överför
 

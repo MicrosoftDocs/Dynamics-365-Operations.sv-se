@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 959b8b85fe55ed5e0a93b5b614c3f6166bbd2bb6ef07e9d0f0f4c2b1ea3c4659
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b12740e58b2bf8667bee8a2c51917d69771779f2
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721329"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103373"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Åsidosätt standardreservationsprincipen för material i produktionen.
 
@@ -31,12 +31,9 @@ När du skapar en ny tillverkningsorder eller batchorder uppmanas du att välja 
 
 Om du till exempel har råmaterial eller ingredienser som kräver plockarbete, strukturlista eller receptrader som skapas för dessa produkter måste reserveras fysiskt, eftersom fysisk reservation är en förutsättning för att lagerställe ska kunna skapas. Typically, ifOm du vill att reservationen ska ske automatiskt väljer du vanligtvis en av följande reservationsprinciper: *uppskattning*, *tidsplanering*, *frisläppning* eller *start*. Å andra sidan, om du har material eller ingredienser som inte kräver plockarbete, eftersom de konsumeras direkt från en plats, väljer du vanligtvis *manuell* reservationsprincip som inte gör några fysiska reservationer eller genererar plockarbete.
 
-## <a name="turn-on-the-feature"></a>Aktivera en funktion
+## <a name="turn-the-override-default-production-reservation-feature-on-or-off"></a>Aktivera eller funktionen åsidosätt standardproduktionsreservation
 
-Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
-
-- **Modul:** *produktionskontroll*
-- **Funktionsnamn:** *Åsidosätt standardproduktionsreservation*
+Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Åsidosätta standardproduktionsreservation* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Tilldela en policy för produktionsreservation till en artikelmodellgrupp
 

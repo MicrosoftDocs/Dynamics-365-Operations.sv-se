@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 745a51617f8c87c0f757aee0304ec3efb55d0f98
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: d8bc4f0a981b75c1b65d51aa1d8fada9c2187e22
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921225"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323420"
 ---
 # <a name="credit-management-parameters-setup"></a>Inställningar för parametrar för kredithantering
 
@@ -50,7 +50,8 @@ Du kan även definiera antalet respitdagar innan kreditreglerna kontrolleras ige
 
 Om du inte anger antalet respitdagar kontrolleras kreditreglerna vid varje bokföringssteg som har ställts in för att köra kredithanteringsregler. Om du släpper försäljningsordern utan att bokföra och sedan kör samma orderbearbetningssteg igen kontrolleras kreditreglerna igen. En order spärras till exempel efter en bekräftelse och du frisläpper den antingen med eller utan bokföring. I det här fallet kommer ordern att spärras igen om du bekräftar den igen. Använd respitdagar om ordern ska flyttas vidare till nästa bearbetningssteg utan att spärras igen.
 
-Du kan inte ange respitdagar för vissa kontrollpunkter för bokföring men inte för andra. Du måste ställa in alla kontrollpunkter för bokföring så att de har respitdagar, eller så måste de ställas in så att de inte har några respitdagar.
+> [!Note]
+> Om en bokföringskontrollpunkt har en respitdag angivet, måste alla checkpunkter som markeras för bokföring ha respitdagar.
 
 - Markera kryssrutan **bokföring** om du vill köra kredithanteringsreglerna när kontrollpunkt för bokföring som visas på raden körs. Om du inte markerar kryssrutan kommer reglerna endast att kontrolleras en gång under hela bokföringsprocessen.
 - Om du markerar kryssrutan **bokföring** ska du ange antalet respitdagar som ska gå innan spärrningsreglerna kontrolleras igen. Du kan inte lägga till respitdagar om kryssrutan **bokföring** är avmarkerad.

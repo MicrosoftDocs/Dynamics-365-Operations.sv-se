@@ -2,7 +2,7 @@
 title: Moms på online-order beräknas felaktigt
 description: Det här ämnet ger felsökningsvägledning som kan hjälpa till när moms på onlineorder beräknas felaktigt, eller när momsgruppen på försäljningsraden inte stämmer.
 author: Reza-Assadi
-ms.date: 03/11/2021
+ms.date: 02/16/2022
 ms.topic: Troubleshooting
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e51ae789dad2c7b5118be2cf8a88f4e4090a8c74c8259b4eaaddad1a134af80a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0e4361b436cc78eccaff29dfa2927d342e26072d
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715270"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8312041"
 ---
 # <a name="taxes-on-online-orders-are-incorrectly-calculated"></a>Moms på online-order beräknas felaktigt
 
@@ -32,7 +32,18 @@ Det här ämnet ger felsökningsvägledning som kan hjälpa till när moms på o
 
 När en e-handelsorder läggs beräknas momsen på fel sätt, eller också ställs momsgruppen på försäljningsraden in på fel sätt.
 
-## <a name="resolution"></a>Upplösning
+## <a name="resolution"></a>Lösning
+
+### <a name="configure-general-sales-tax-groups-in-commerce-headquarters"></a>Konfigurera allmänna momsgrupper i Commerce-administration
+
+För att konfigurera allmänna momsgrupper i Commerce-administration, följ dessa steg.
+
+1. Gå till **Skatt \> Indirekta skatter \> Moms \> Momsgrupper**.
+1. Välj den fönster momsgrupp du vill konfigurera i den vänstra navigeringen.
+1. På snabbfliken **Destinationsbaserad skatt för detaljhandel** konfigurera skatterna för momsgruppen.
+
+> [!NOTE]
+> För frakt som inte inkluderar moms som bestäms av kundens adress bestämmer leveransadressen för raden och målbaserad moms som är konfigurerad för momsgruppen. Mer information finns i [Konfigurera moms för onlinebutiker baserat på destination](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ### <a name="configure-the-sales-tax-for-a-retail-store-in-commerce-headquarters"></a>Konfigurera momsen för en butiksbutik i Commerce -administration
 
@@ -57,17 +68,6 @@ Konfigurera momsen för en kundens adress i Commerce-administrationmed dessa ste
 
 > [!NOTE]
 > För leverans som omfattar moms på kundens adress bestämmer leveransadressen för raden momsgruppen för raden. Om kunden levererar till en befintlig adress som har en momsgrupp som redan konfigurerats, används den befintliga skattegruppen. Som standard har adresserna ingen momsgrupp när de skapas.
-
-### <a name="configure-general-sales-tax-groups-in-commerce-headquarters"></a>Konfigurera allmänna momsgrupper i Commerce-administration
-
-För att konfigurera allmänna momsgrupper i Commerce-administration, följ dessa steg.
-
-1. Gå till **Skatt \> Indirekta skatter \> Moms \> Momsgrupper**.
-1. Välj den momsgrupp du vill konfigurera i den vänstra navigeringen.
-1. På snabbfliken **Destinationsbaserad skatt för detaljhandel** konfigurera skatterna för momsgruppen.
-
-> [!NOTE]
-> För leverans som inte innefattar moms på kundens adress bestämmer leveransadressen för raden och målbaserad moms som är konfigurerad för momsgruppen. Mer information finns i [Konfigurera moms för onlinebutiker baserat på destination](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

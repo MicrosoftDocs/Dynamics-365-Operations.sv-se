@@ -1,8 +1,8 @@
 ---
 title: Hantera affärspartnersanvändare på B2B-näthandelssajter
-description: I detta ämne beskrivs hur administratörer kan lägga till, redigera och ta bort affärspartners på B2B-näthandelssajter.
+description: I detta ämne beskrivs hur du lägger till, redigerar och tar bort affärspartners i Microsoft Dynamics 365 Commerce B2B-näthandelssajter och i Commerce.
 author: josaw1
-ms.date: 10/26/2021
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,72 +14,56 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 090dc9af49840e559b4c1ad1500718fde9764aa2
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: def8d4de082ceb4be77ed7e8898cbef82d52b749
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713703"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323465"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Hantera affärspartnersanvändare på B2B-näthandelssajter
 
 [!include [banner](../../includes/banner.md)]
 
-I detta ämne beskrivs hur administratörer kan lägga till, redigera och ta bort affärspartners på B2B-näthandelssajter.
+I detta ämne beskrivs hur du lägger till, redigerar och tar bort affärspartners i Microsoft Dynamics 365 Commerce B2B-näthandelssajter och i Commerce.
 
-B2B-näthandeswebbplatser kräver att organisationerna registrerar sig som affärspartners. När en organisation har skickat registreringsinformation till en B2B-näthandelssajt går den igenom en kvalifikationsprocess. Om organisationen har kvalificerats installeras den som affärspartner.
+> [!NOTE]
+> Ämnet [Hantera B2B affärspartners med hjälp av kundhierarkier](partners-customer-hierarchies.md) är en förutsättning för detta dokument. 
+
+B2B-näthandeswebbplatser kräver att organisationerna registrerar sig som affärspartners. När en organisation har skickat registreringsinformation till en B2B-näthandelssajt, registreringsbegäran går den igenom en kvalifikationsprocess. Om organisationen har kvalificerats installeras den som affärspartner.
 
 När en organisation har godkänts som affärspartner identifieras den organisationsanvändare som initierat begäran om att bli affärspartner som administratörsanvändare, och får då behörighet att registrera ytterligare behöriga användare av B2B-näthandelssajten. Dessa behöriga användare kan sedan göra beställningar å affärspartnerns vägnar.
 
-## <a name="turn-on-the-b2b-e-commerce-capabilities-feature-in-commerce-headquarters"></a>Aktivera funktionen för b2B-näthandel i Commerce-administrationen
-
-Med funktionen för B2B-näthandel i Commerce-administrationen kan organisationer registrera affärspartners och definiera administratörsanvändare. Med den här funktionen kan administratörer också skapa och hantera affärspartners och team, och tilldela dessa specifika roller. Slutligen blir det möjligt för affärspartner-användare att skapa ordermallar och använda befintliga order för att beställa om produkter.
-
-Följ dessa steg om du vill aktivera funktionen för B2B-näthandel i Commerce-administrationen.
-
-1. Gå till **Arbetsytor \> Funktionshantering**.
-1. I fliken **Alla** filtrerar du fältet **Modul** genom att använda villkoret **Retail and Commerce**.
-1. Sök efter och markera funktionen **Aktivera användning av B2B-funktioner för näthandel** och välj sedan **Aktivera nu**.
-
-## <a name="create-a-number-sequence-and-add-it-to-commerce-shared-parameters"></a>Skapa en nummerserie och lägga till den i gemensamma parametrar för handel
-
-Nummerserier används för att generera läsliga unika identifierare för huvuddataposter och transaktionsposter och som kräver identifierare. Mer information om nummerserier, se [Översikt över nummerserier](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
-
-Om du vill skapa en nummerserie och lägga till den i gemensamma parametrar för Commerce i Commerce-administrationen följer du dessa steg.
-
-1. Gå till **Retail and Commerce \> Administrationsinställningar \> Nummerserier \> Nummerserier** och skapar sedan en nummerserie.
-1. Gå till **Retail and Commerce \> Administrationsinställningar \> Parametrar \> Delade parametrar för handel** och lägger till den nya nummerserien i referensen **ID för kundhierarki**.
-
 ## <a name="set-up-the-administrator-user-for-a-new-business-partner"></a>Ställ in administratörsanvändare för en ny affärspartner
 
-Potentiella affärspartner kan initiera registreringsprocessen till en B2B-näthandelssajt genom att skicka in registreringsbegäran via en länk på webbplatsen. När en potentiell affärspartner väljer länken kan han eller hon ange de uppgifter som krävs för att registrera sig. När en begäran har skickats visas en bekräftelsesida. Om sändningen godkänns blir begäranden (d.v.s. användaren som initierade registreringsbegäran) affärspartnerns administratörsanvändare.
+Potentiella affärspartner kan initiera registreringsprocessen till en B2B-näthandelssajt genom att skicka in registreringsbegäran via en länk på B2B-webbplatsen. De kan sedan använda det anpassningsbara formuläret för att tillhandahålla de detaljer som krävs för introduktion och registrering. När en begäran har skickats visas en bekräftelsesida. Om inlämningen godkänns blir företaget som begäran skickades till affärspartner och begäranden (användaren som initierade introduktionsbegäran) blir administratörsanvändare för affärspartnern.
 
-Om du vill godkänna och ställa in en administratörsanvändare för en affärspartner i Commerce-administreringen följer du dessa steg.
+Följ dessa steg om du vill godkänna begäran om affärspartner i Commerce-administrationen.
 
 1. Gå till **IT för Retail and Commerce \> Distributionsschema**.
 1. Kör jobbet **P-0001** om du vill hämta alla begäranden om affärspartnerregistrering i Commerce-administreringen.
-1. När **P-0001**-jobbet har körts går du till **IT för Retail and Commerce \> Kund** och kör jobbet **Synkronisera kunder och affärspartner från asynkront läge**. När det här jobbet har körts skapas de inbyggda förfrågningarna som potentiella poster i Commerce-administrationen. Fältet **Typ-ID** för dessa poster ställs in som **Potentiell B2B-kund**.
-1. Gå till **Kunder \> Alla potentiella** och öppna sidan för potentiella kunder.
-1. Välj posten för potentiell kund för den nya affärspartnern om du vill öppna detaljsidan för potentiell kund.
-1. På fliken **Allmänt** väljer du **Konvertera \> Godkänn/Avvisa** om du vill godkänna eller avvisa registreringsbegäran. När ett bekräftelsemeddelande visas bekräftar du att du vill fortsätta med processen samt godkänner begäran. Ett e-postmeddelande skickas sedan till den begärandes e-postadress för att bekräfta att deras organisation har godkänts som affärspartner.
+1. När **P-0001**-jobbet har körts går du till **IT för Butik och handel \> Kund** och kör jobbet **Synkronisera kunder och kanalbegäran**. När det här jobbet har körts skapas de inbyggda förfrågningarna som potentiella kunder i typen **B2B-potentiell kund** i Commerce-administrationen. 
+1. Gå till **Kunder \> Alla potentiella kunder** och välj den nya affärspartnerns prospektpost för att öppna sidan för prospektinformation.
+1. På fliken **Allmänt** väljer du **Konvertera \> Godkänn/Avvisa** om du vill godkänna registreringsbegäran. När ett bekräftelsemeddelande visas bekräftar du att du vill fortsätta med processen samt godkänner begäran. Godkännande ändrar fältet **Status** för potentiell kund anges till **Godkänd**. Ett e-postmeddelande skickas sedan till den begärandes e-postadress för att bekräfta att deras organisation har godkänts som affärspartner. En kundhierarki skapas också där begäraren läggs till som administratör för affärspartnern.
 
-    När du har godkänt ansökan får fältet **Status** för potentiell kund statusen **Godkänd**. Två nya kundposter skapas dessutom i systemet: en kundpost av **typen Organisation** för affärspartnerorganisationen, samt en kundpost av **typen Person** för begäranden. En kundhierarkipost för affärspartnern skapas också. <!--(Please refer to the Org modeling of B2B customer section in this document for more information)-->
+    > [!NOTE]
+    > För närvarande skickas bekräftelsemeddelandet omedelbart vid godkännande. Framtida Commerce-funktionalitet kommer dock att låta administratören utlösa e-postmeddelanden manuellt.
 
-1. Gå till **IT för Retail and Commerce \> Distributionsschema** och kör jobbet **1010** (**Kunder**) för att förflytta de nya kund- och kundhierarkiposterna till kanaldatabasen.
+1. Gå till **IT för Butik och handel \> Distributionsschema** och kör jobbet **1010 (Kunder)** för att förflytta de nya kund- och kundhierarkiposterna till kanaldatabasen.
 
-När en begäran har godkänts och kund- och kundhierarkiposterna har synkroniserats med kanaldatabasen kan begäranden logga in på B2B-näthandelssajten med den e-postadress som han eller hon angav när han/hon skickade begäran. Användarna kan använda inloggningsflödet för att definiera lösenordet för sitt konto. Om du vill aktivera identitetsprovider (Azure AD B2C) post som ska länkas till B2B-kundposten som skapades vid registrering eller inloggning, följ instruktionerna i [Aktivera automatisk länkning av identitetsposter till kundkonton](../identity-record-linking.md).
+> [!NOTE]
+> Om du vill vara säker på att de nya kundposterna skickas till kanaldatabasen måste minst en av adressböckerna som associeras med kunden inkluderas i kundadressboken som är kopplad till onlinebutiken. Du kan automatisera den här processen genom att konfigurera adressboken som standardkund för onlinebutiken så att systemet kopierar adressboksvärdet till alla nya kunder.
+
+Efter kundhierarkin synkroniseras poster till med kanaldatabasen kan begäranden logga in på B2B-näthandelssajten med den e-postadress som han eller hon angav när han/hon skickade begäran. Användarna kan använda inloggningsflödet för att definiera lösenordet för sitt konto. För information om hur du aktiverar Azure Active Directory (Azure AD) B2C-identitetsleverantörspost som ska kopplas till B2B-kundposten som skapades vid prospektgodkännande, se [Aktivera automatisk länkning](../identity-record-linking.md).
 
 ## <a name="notify-b2b-prospects-when-they-are-approved-or-rejected"></a>Meddela potentiella B2B-kunder när de godkänns eller avvisas
 
-När du godkänner eller avvisar en begäran om registrering av potentiell B2B-kund, kan du automatiskt skicka ett e-postmeddelande till potentiell kund. 
+När du godkänner eller avvisar en begäran om registrering av potentiell B2B-kund, kan du automatiskt skicka ett e-postmeddelande till potentiell kund.
 
-Om du vill ställa in e-postmeddelanden i Commerce-administration för händelser av typen godkänd potentiell B2B-kund eller avvisad potentiell B2B-kund följer du dessa steg.
+Om du vill ställa in e-postmeddelanden i Commerce-administration för händelser av typen **godkänd potentiell B2B-kund** eller **avvisad potentiell B2B-kund** följer du dessa steg.
 
-1. Skapa e-postmallar för e-postmeddelanden som kommer att skickas till potentiella kunder när aviseringstypen godkänd potentiell B2B-kund eller avvisad potentiell B2B-kund utlöses. 
-
-    För information om de platshållare som meddelandetyper godkänd potentiell B2B-kund och avvisad potentiell B2B-kund stöder, se [Meddelandetyper](../email-templates-transactions.md#notification-types). Information om hur du skapar e-postmeddelanden finns i [Skapa ett postmeddelanden](../email-templates-transactions.md#create-an-email-template). 
-
-1. Lägg till meddelandetyper för godkänd potentiell B2B-kund och avvisad potentiell B2B-kund i e-postprofilen och mappa dem till de e-postmallar som du har skapat. Mer information om meddelandeprofiler finns i [Konfigurera profil för e-postmeddelande](../email-notification-profiles.md). 
+1. Skapa e-postmallar för e-postmeddelanden som kommer att skickas till potentiella kunder när aviseringstypen **godkänd potentiell B2B-kund** eller **avvisad potentiell B2B-kund** utlöses.  För information om de platshållare som meddelandetyper stöder, se [Meddelandetyper](../email-templates-transactions.md#notification-types). Information om hur du skapar e-postmeddelanden finns i [Skapa ett postmeddelanden](../email-templates-transactions.md#create-an-email-template).
+1. Lägg till meddelandetyper för **godkänd potentiell B2B-kund** och **avvisad potentiell B2B-kund** i e-postprofilen och mappa dem till de e-postmallar som du har skapat. Mer information om meddelandeprofiler finns i [Konfigurera profil för e-postmeddelande](../email-notification-profiles.md).
 
 ## <a name="onboard-additional-business-partner-users"></a>Registrera fler affärspartneranvändare
 
@@ -91,58 +75,61 @@ Följ de här stegen om du vill registrera fler affärspartneranvändare till en
 1. Gå till **Mitt konto \> Organisationsanvändare \> Visa information** och välj **Lägg till en användare**.
 1. Ange erforderlig information som behövs och välj sedan **Spara**. Statusen för den nye användaren blir **Väntande**.
 
-    När jobben **P-0001** och **Synkronisera kunder och affärspartners från asynkront läge** körs, kommer en kundpost av typen **Persontyp** att skapas i Commerce-administrationen. Denna kundpost associeras även med den relevanta affärspartnerns kundhierarkipost. Dessutom skickas ett e-postmeddelande till den nya användarens e-postadress, där denne meddelas att han/hon har lagts till som användare i affärspartnerorganisationen och nu kan logga in på B2B-näthandelssajten.
+När jobben **P-0001** och **Synkronisera kunder och kanalbegäran** har körts kommer en kundpost av typen **Person** att skapas i Commerce-administrationen. Denna kundpost associeras även med den relevanta affärspartnerns kundhierarkipost. Dessutom skickas ett e-postmeddelande till den nya användarens e-postadress, där denne meddelas att han/hon har lagts till som användare i affärspartnerorganisationen och nu kan logga in på B2B-näthandelssajten.
 
-1. Kör jobbey **1010** (**Kunder**) om du vill synkronisera den nye affärspartneranvändaren med kanaldatabasen.
+Kör jobbet **1010 (Kunder)** om du vill synkronisera den nye affärspartneranvändaren med kanaldatabasen.
 
-När kundposten synkroniseras får statusvärdet för användaren på B2B-näthandelssajten värdet **Aktiv**, och den nye användaren kan sedan logga in på B2B-näthandelssajten med sin e-postadress. Användarna kan använda inloggningsflödet för att definiera lösenordet för sitt konto. Om du vill aktivera identitetsprovider (Azure AD B2C) post som ska länkas till B2B-kundposten som skapades vid registrering eller inloggning, följ instruktionerna i [Aktivera automatisk länkning av identitetsposter till kundkonton](../identity-record-linking.md).
+När kundposten synkroniseras får statusvärdet för användaren på B2B-näthandelssajten värdet **Aktiv**, och den nye användaren kan sedan logga in på B2B-näthandelssajten med sin e-postadress. Användarna kan använda inloggningsflödet för att definiera lösenordet för sitt konto. För information om hur du aktiverar Azure AD B2C-identitetsleverantörspost som ska kopplas till B2B-kundposten som skapades i Commerce-administration, se [Aktivera automatisk länkning](/dynamics365/commerce/identity-record-linking.md).
 
 ## <a name="edit-business-partner-user-details"></a>Redigera användarinformation för affärspartner
 
 Om du vill redigera information om affärspartnersanvändare följer du dessa steg.
 
 1. Logga in som administratör på B2B-näthandelssajten.
-1. Gå till **Mina konton \> Organisationsanvändare \> Visa information**, välj knappen **Redigera** (pennsymbol), utför erforderliga ändringar och välj sedan **Spare**. Ändringarna aktiveras först när jobben **P-0001**, **Synkronisera kunder och affärspartner från asynkront läge** och **1010** (**Kunder**) har körts.
+1. Gå till **Mina konton \> Organisationsanvändare \> Visa information**, välj knappen **Redigera** (pennsymbol), utför erforderliga ändringar och välj sedan **Spare**. Ändringarna aktiveras först när jobben **P-0001**, **Synkronisera kunder och kanalbegäran** och **1010 (Kunder)** har körts.
 
 ## <a name="remove-a-business-partner-user"></a>Ta bort en affärspartneranvändare
 
 En administratör kan vid behov ta bort befintliga användare från en affärspartnerorganisation från listan över användare som har åtkomst till B2B-näthandelssajten.
-
 Följ de här stegen om du vill ta bort en affärspartnersanvändare.
-
-1. Logga in som administratör på B2B-näthandelssajten.
-1. Gå till **Mitt konto \> Organisationsanvändare \> Visa information** och välj knappen **Ta bort** ("X-symbol"). När ett bekräftelsemeddelande visas bekräftar du att du vill ta bort användaren. Ändringen aktiveras först när jobben **P-0001**, **Synkronisera kunder och affärspartner från asynkront läge** och **1010** (**Kunder**) har körts.
+- Logga in som administratör på B2B-näthandelssajten.
+- Gå till **Mitt konto > Organisationsanvändare \> Visa information** och välj knappen **Ta bort** ("X"-symbol). När ett bekräftelsemeddelande visas bekräftar du att du vill ta bort användaren. Ändringarna aktiveras först när jobben **P-0001**, **Synkronisera kunder och kanalbegäran** och **1010 (Kunder)** har körts.
 
 > [!NOTE]
 > När du tar bort en användare från listan över användare som har åtkomst till B2B-näthandelssajten, tas motsvarande kundpost bort från affärspartnerns kundhierarkipost. Kundposten själv kommer dock inte att tas bort från Commerce-administrationen.
 
-## <a name="onboard-business-partner-and-users-in-commerce-headquarters"></a>Registrera affärspartner och användare i Commerce-administrationen
+## <a name="onboard-existing-customers-as-business-partners-on-the-b2b-e-commerce-website"></a>Integrera befintliga kunder som affärspartner på B2B-näthandelssajten
 
-Administratörer kan registrera affärspartners och användare direkt i Commerce-administrationen.
+Administratörer kan registrera affärspartners och användare direkt i Commerce-administrationen. Den här kapaciteten kan användas för att registrera dina befintliga affärspartners på B2B-näthandelssajten.
 
 Följ dessa steg om du vill registrera affärspartner och användare i Commerce-administrationen.
 
-1. Skapa en kundpost av **typen Organisation** för affärspartnerorganisationen.
-1. Skapa kundposter av **typen Person** för affärspartneranvändare. Se till att en primär e-postadress anges för respektive kund.
-1. För respektive kundpost av **typen Person** som måste betecknas som en administratörsanvändare för affärspartnerorganisationen anger du, på snabbfliken **Butik**, alternativet **B2B-administratör** som **Ja**.
-1. Skapa ett kundhierarki-ID. Ange sedan ett namn i fältet **Namn**.
+1. Skapa eller välj en kund av typen **Organisation** för att lägga till som affärspartner.
+1. Skapa eller välj en kund av typen **Person** som du vill lägga till som administratör eller användare för affärspartnern. Se till att primära e-postadresser är kopplade till kunderna. Dessa e-postadresser används för att logga in på webbplatsen. 
+
+    > [!NOTE]
+    > Systemet måste kunna hitta en unik kundpost för användare som ska kunna logga in på webbplatsen. Om systemet hittar fler än en kund som har samma primära e-postadress hos den juridiska personen, kan användaren inte logga in på webbplatsen.
+
+1. Skapa ett kundhierarki-ID.
+1. Ange sedan ett namn i fältet **Namn**.
 1. I fältet **Organisation** anger du kunden för affärspartnerorganisationen.
-1. Välj **Lägg till** och sedan en kund i fältet **Namn**.
+1. På snabbfliken **Hierarki** väljer du **Lägg till**.
+1. I fältet **Namn** välj en kund från typen **Person**.
+1. Välj rollen **Admin** för kunden som ska anges som administratör.
 1. Upprepa den här processen om du vill lägga till fler kunder i hierarkin.
 
 ## <a name="additional-information"></a>Ytterligare information
 
 - Alla jobb som nämns i detta ämne kan konfigureras till att köras enligt ett schema i ett batchformat. Affärspartners förväntas konfigurera batchjobb vid behov.
 - För närvarande kan endast en användare/kundpost väljas som administratörsanvändare, och den rollen kan bara ändras i Commerce-administrationen. Det finns inget stöd för självbetjäningsfunktioner som gör att affärspartners kan utse flera administratörer eller byta administratörer från B2B-näthandelssajter.
-<!--- The modules and labels of the different fields referenced in the screenshots for e-commerce are only for illustration purposes. Customers have complete control on the placement of the B2B related modules and the labels.-->
 - Även om utgiftsgränser kan definieras för användare har tvingande utgiftsgränser under orderpostprocessen ännu inte implementerats.
 - All affärslogik och validering för en användares upplevelse på en B2B-näthandelssajt baseras på konfigurationen av den kundpost som mappas till användaren i Commerce-administrationen.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Konfigurera en B2B-näthandelssajt](set-up-b2b-site.md)
+[Konfigurera en näthandelsplats för B2B](set-up-b2b-site.md)
 
-[Skapa org-modellhierarkier för B2B-organisationer](org-model.md)
+[Hantera B2B-affärspartners med hjälp av kundhierarkier](partners-customer-hierarchies.md)
 
 [Konfigurera betalsätt för kundkonto för B2B-näthandelssajter](payment-method.md)
 

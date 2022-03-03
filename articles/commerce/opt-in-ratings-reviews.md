@@ -2,7 +2,7 @@
 title: Välj att använda omdömen och recensioner
 description: Det här avsnittet innehåller information om hur du väljer att använda värderingar och recensioner på din Microsoft Dynamics 365 Commerce-webbplats.
 author: gvrmohanreddy
-ms.date: 01/30/2020
+ms.date: 02/16/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fd6715539693389f25800a40c0beffcdc1b0de72
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 19c3e8b32654f7c4b7803c547e9d5692f9fc461b
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968013"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8311939"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Välj att använda omdömen och recensioner
 
@@ -39,9 +39,9 @@ Om du vill använda värderingar och recensioner på webbplatsen följer du steg
 1. Följ stegen i [distribuera en ny näthandelssajt](deploy-ecommerce-site.md).
 1. När du fortfarande är i LCS går du till **Inställning av butiksdistribution \> Övriga inställningar**.
 1. Ange alternativet **tjänsten aktivera klassificering och granska** till **Ja**.
-1. I fältet **AAD-säkerhetsgruppen för moderator för omdömen och recensioner (ojekt-ID för säkerhetsgrupp)** ange ID för den Microsoft Azure Active Directory (Azure AD) äkerhetsgrupp som inkluderar moderatorer för omdömen och recensioner.
+1. I fältet **AAD-säkerhetsgruppen för moderator för omdömen och recensioner** ange ID för den Microsoft Azure Active Directory (Azure AD) äkerhetsgrupp som inkluderar moderatorer för omdömen och recensioner.
 
-    ![Välj för att använda omdömen och recensioner.](media/LCS_RnR_Preference.png)
+    ![Välj för att använda omdömen och recensioner.](media/LCS_RnR_Preference_2.png)
 
 1. Slutför initieringsprocessen för näthandel.
 

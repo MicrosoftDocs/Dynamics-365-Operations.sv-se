@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 09ca57d6a3654e56e12240af73d6793002eb1794e4b41d25e182b9b1d3b66df5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff67198980765f288b5394d91927ae1826266841
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746805"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103348"
 ---
 # <a name="cycle-counting-example-scenarios"></a>Exempel på scenarier med rullande inventering
 
@@ -32,10 +32,7 @@ Varje scenario i detta ämne innehåller värdet och poster som ingår i den sta
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>Aktivera support för Warehouse Management-mobilappen
 
-Innan du kan använda den nya mobilappen Warehouse Management måste du lägga till stöd för det i systemet. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
-
-- **Modul:** *Warehouse management*
-- **Funktionsnamn:** *användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen*
+För att använda Warehouse Management Mobile-appen måste funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* måste vara inaktiverade för systemet. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version äldre än 10.0.25 kan administratörer aktivera eller inaktivera denna funktion genom att söka efter funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="prepare-demo-data-for-the-scenarios"></a><a name= "prepare-demo-data"></a>Förbered demodata för scenarierna
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e24bceac9457212ecaafda876d19ba62df049371
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: 7921983a965af5557f54f608418c8ec922256ba6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7471846"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103648"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Generera varianter för tekniska produkter
 
@@ -23,15 +23,9 @@ ms.locfileid: "7471846"
 
 Avsnittet beskriver hur du genererar varianter för tekniska produkter.
 
-## <a name="turn-on-variant-generation-for-engineering-products"></a>Aktivera generering av varianter för konstruktionsprodukter
+## <a name="turn-variant-generation-for-engineering-products-on-or-off"></a>Aktivera eller inaktivera generering av varianter för konstruktionsprodukter
 
-Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
-
-- **Modul:** *Konstruktionsändringshantering*
-- **Funktionsnamn:** *Generering av varianter för konstruktionsprodukter*
-
-> [!IMPORTANT]
-> Funktionen *Generering av varianter för konstruktionsprodukter* visas i systemet först när du har aktiverat konfigurationsnyckeln *Konstruktionsändringshantering*. Instruktioner finns i [Konstruktionsändringshantering – översikt](product-engineering-overview.md).
+Funktionen som beskrivs i detta ämne kräver att både funktionen *Konstruktionsändringshantering* och *Variantgenerering för tekniska produkter* är aktiverad för systemet. Information om hur du aktiverar och inaktiverar funktionerna finns i [Översikt över hantering av tekniska ändringar](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Generera en eller flera nya varianter av en teknisk produkt
 

@@ -2,23 +2,23 @@
 title: Ställ in validering av Fakturamatchning för leverantörsreskontra
 description: Det här avsnittet innehåller information om hur du ställer in validering av Fakturamatchning för leverantörsreskontra.
 author: abruer
-ms.date: 06/26/2019
+ms.date: 02/14/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendParameters
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 017b0197563b9d7fd03f5fc927353be8d16586090f467cff792016431e0fafad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 602666df4cf015791398939a3067a2cae85a12eb
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722873"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182565"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Ställ in validering av Fakturamatchning för leverantörsreskontra
 
@@ -54,7 +54,7 @@ Fyra olika typer av matchningsvalideringar är tillgängliga.
 12. I fältet **Tolerans för inköpsprissumma**, ange ett belopp i redovisningsvalutan. Det här fältet är bara tillgängligt om **Matcha prissummor** anges **Belopp** eller **Procentandel och belopp**.
 13. I fältet **Visa matchningsikon för prissumma**, välj om en ikon visas, om avvikelser för fakturamatchning överskrider toleransen för nettopriset per enhet i fältet . Ikonen kan visas när en positiv diskrepans överskrider toleransen, eller när antingen en positiv eller negativ diskrepans överskrider toleransen.
 Toleransen är till exempel 5 procent och radprissumman på inköpsordern är 10,00. Därför visas en prismatchningsikon om summan på fakturans prisrad överstiger 10.50. Om du väljer **Om större eller mindre än tolerans**, visas också en ikon om det totala radprist på fakturan är mindre än 9,50.
-13. Ange avgiftsmatchning
+13. Ange **avgiftsmatchning**.
 14. Markera kryssrutan **Matcha avgifter** om du vill matcha verkliga transaktioner mot förväntade kostnader.
 
 ## <a name="set-up-unit-price-tolerance-percentages"></a>Ställ in toleransprocentsatser för enhet
@@ -75,7 +75,7 @@ Som standard tillåts negativa prisavvikelser. Du kan dock inte ange ett negativ
 
 ## <a name="set-up-matching-policy-override"></a>Ange åsidosättning av matchningspolicy
 
-Gå till **Leverantörsreskontra > Inställningar > Fakturamatchningsinställningar > matchningspolicy** för att definiera standardvärdet för fältet matchningspolicy för rader i inköpsorderformuläret. Detta är en valfri inställning. Använd det här formuläret om du vill ställa in en dubbelriktad matchning eller en tresiffrig matchning för artiklar, leverantörer eller artikel- och leverantörskombinationer. Med dessa poster kan du definiera mer detaljerade matchningsprinciper än vad som matchar den juridiska enhetsmatchningspolicyn som du har definierat på sidan **parametrar för leverantörsreskontra**. Standardinställda matchningspolicyn för en juridisk person gäller för alla artiklar och leverantörer förutom de för vilka en annan radmatchningspolicy har angetts på den här sidan.
+Gå till **Leverantörsreskontra > Inställningar > Fakturamatchningsinställningar > matchningspolicy** för att definiera standardvärdet för fältet **matchningspolicy** för rader på sidan **inköpsorder**. Detta är en valfri inställning. Använd den här sidan om du vill ställa in en dubbelriktad matchning eller en tresiffrig matchning för artiklar, leverantörer eller artikel- och leverantörskombinationer. Med dessa poster kan du definiera mer detaljerade matchningsprinciper än vad som matchar den juridiska enhetsmatchningspolicyn som du har definierat på sidan **parametrar för leverantörsreskontra**. Standardinställda matchningspolicyn för en juridisk person gäller för alla artiklar och leverantörer förutom de för vilka en annan radmatchningspolicy har angetts på den här sidan.
 
 På denna sida välj **Matchningspolicynivå**. Välj nivå i matchningspolicyhierarkin för att ställa in radmatchningspolicyer för.
 

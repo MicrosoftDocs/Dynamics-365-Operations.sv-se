@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f0fba0a9234e5b7cb055f7b97578bff72f1d06ac
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571987"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103623"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Aktivera ändringshantering för befintliga produkter
 
@@ -27,12 +27,9 @@ I det här avsnittet beskrivs hur du aktiverar ändringshantering för befintlig
 
 När du aktiverar ändringshantering för en befintlig produkt, kan du skapa versioner av produkten och spåra ändringar som gjorts i den under hela dess livslängd. Därför kan du spåra dessa ändringar genom att använda ändringsorder. Om du vill aktivera ändringshantering måste du konvertera relevanta produkter till *tekniska artiklar* (även kallade tekniska produkter). Teknikprodukter är produkter som versioneras och hanteras med hjälp av ändringshantering. Här finns en guide som vägleder dig genom konverteringsprocessen.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Aktivera funktionen i systemet
+## <a name="turn-this-feature-on-or-off"></a>Aktivera eller inaktivera funktionen
 
-Om du vill använda denna funktion måste du utföra följande uppgifter:
-
-1. Aktivera konstruktionsändringshantering-funktionen och dess konfigurationsnyckel som beskrivs i [Översikt över konstruktionsändringshantering](product-engineering-overview.md).
-1. Aktivera funktionen *Aktivera ändringshantering av befintliga produkter* i funktionshantering. Mer information finns i [Översikt för funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Funktionen som beskrivs i detta ämne kräver att både funktionen *Konstruktionsändringshantering* och *Aktivera ändringshantering för befintliga produkter* är aktiverad för systemet. Information om hur du aktiverar och inaktiverar funktionerna finns i [Översikt över hantering av tekniska ändringar](product-engineering-overview.md).
 
 ## <a name="restrictions-and-limitations"></a>Begränsningar
 

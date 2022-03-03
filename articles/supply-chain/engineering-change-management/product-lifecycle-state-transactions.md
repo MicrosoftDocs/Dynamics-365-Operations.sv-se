@@ -2,7 +2,7 @@
 title: Produktens livscykeltillstånd och transaktioner
 description: Det här avsnittet förklarar hur du kan kontrollera vilka transaktioner som är tillåtna för varje livscykeltillstånd när en teknisk produkt går igenom dess livscykel.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 12f95feda887b5f1284624e5f072b498a78d00e1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1e9b8a9f25edfa654a57e0ab4071cd93c8033d85
+ms.sourcegitcommit: d375ef4138e898621416754c40770d8ccca4d271
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574651"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8322754"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Produktens livscykeltillstånd och transaktioner
 
@@ -93,5 +93,13 @@ Anta till exempel att du bara vill sälja en variant (röd) av en viss produkt (
 - Tilldela produkten ett livscykeltillstånd som tillåter processen. Tilldela till exempel t-shirtprodukten ett livscykeltillstånd *Säljbar*, vilket möjliggör affärsprocessen *Försäljningsorder*.
 - Tilldela den säljbara varianten ett livscykeltillstånd som tillåter processen. Tilldela till exempel också den röda varianten ett livscykeltillstånd *Säljbar*.
 - Alla andra varianter tilldelas ett annat livscykeltillstånd där processen blockeras. Tilldela till exempel den vita varianten (och alla andra varianter) ett livscykeltillstånd *Inte säljbar*, vilket blockerar affärsprocessen *Försäljningsorder*.
+
+## <a name="default-product-lifecycle-states"></a>Standard produktens livscykeltillstånd
+
+Standardlivscykeln för en teknisk version anges i den tekniska kategorin. Tillståndet kommer att vara standard när du skapar en ny teknisk version, inklusive den första versionen av en ny produkt.
+
+När du skapar en ny produkt eller konstruktionsprodukt kan du också ställa in standardlivscykeln genom att ange den i den mall som frisläppts i den frisläppningspolicy som har tilldelats produkten.
+
+I så fall kan produkten ha en annan livscykelläge än versionen när du skapar en ny teknikprodukt.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 560b62183f9c0c45c872998373a90dc9dc0ebbb3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5d06f05ca27ed8fe58a9a24fcde8c0082662b866
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571723"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103122"
 ---
 # <a name="category-requests-from-vendors"></a>Kategoribegäranden från leverantörer
 
@@ -26,11 +26,11 @@ Med denna process för kategoribegäran kan våra leverantörer begära att nya 
 
 Kategoribegäranden initieras av leverantörer i arbetsytan **Leverantörsinformation**. De skickas sedan till din myndighet för granskning och godkännande. Godkända kategorier läggs till i listan över anskaffningskategorier för leverantörens konto.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Aktivera funktionen i systemet
+## <a name="turn-the-category-requests-from-vendors-feature-on-or-off"></a>Aktivera eller inaktivera kategoribegäranden från leverantörsfunktionen
 
-Om systemet inte redan omfattar den funktion som beskrivs i detta ämne går du till [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen *Tillåt att leverantörer kan ansöka om anskaffningskategorier genom leverantörssamarbete*.
+Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera funktionen genom att söka efter funktionen *Tillåt leverantörer att ansöka om anskaffningskategorier via leverantörssamarbete* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-När funktionen har aktiverats kan du fortfarande lägga till anskaffningskategorier på leverantörskonton manuellt. Mer information finns i [Godkänn leverantörer för specifika anskaffningskategorier](tasks/approve-vendors-specific-procurement-categories.md).
+Om funktionen har aktiverats kan du fortfarande lägga till anskaffningskategorier på leverantörskonton manuellt. Mer information finns i [Godkänn leverantörer för specifika anskaffningskategorier](tasks/approve-vendors-specific-procurement-categories.md).
 
 ## <a name="vendor-collaboration-requirements"></a>Krav för leverantörssamarbete
 

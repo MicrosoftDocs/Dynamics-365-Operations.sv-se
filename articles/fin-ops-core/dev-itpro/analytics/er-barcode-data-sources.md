@@ -2,11 +2,9 @@
 title: Använd streckkodsdatakällor för att generera streckkodsbilder
 description: I det här avsnittet beskrivs hur du använder streckkodsdatakällor för att generera streckkodsbilder.
 author: NickSelin
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: 3fb754267de1120bc3c086d49cb7c63028183bda
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a5a396080d8b5dd4c2ed9a0eb15c1286e8799ebf
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681434"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323962"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Använd streckkodsdatakällor för att generera streckkodsbilder
 
 [!include[banner](../includes/banner.md)]
 
-Du kan använda ramverket [Elektronisk rapportering (ER)](general-electronic-reporting.md) för att utforma [ER-formatkomponenter](general-electronic-reporting.md#FormatComponentOutbound) som du kan köra för att generera elektroniska och utskrivbara utgående dokument som du behöver. Om du vill generera ett utgående dokument i Microsoft Office format måste du ange rapportens layout genom att använda antingen ett Microsoft Excel-dokument eller ett Microsoft Word-dokument som rapportmall. Med [ER Operations designer](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) kan du bifoga ett Excel- eller Word-dokument som en mall för ett ER-format. Följande namngivna element i den kopplade mallen associeras med elementen i den konfigurerade formatkomponenten:
+Du kan använda ramverket [Elektronisk rapportering (ER)](general-electronic-reporting.md) för att utforma ER-formatkomponenter som du kan köra för att generera elektroniska och utskrivbara utgående dokument som du behöver. Om du vill generera ett utgående dokument i Microsoft Office format måste du ange rapportens layout genom att använda antingen ett Microsoft Excel-dokument eller ett Microsoft Word-dokument som rapportmall. Med [ER Operations designer](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) kan du bifoga ett Excel- eller Word-dokument som en mall för ett ER-format. Följande namngivna element i den kopplade mallen associeras med elementen i den konfigurerade formatkomponenten:
 
 - Innehållskontroller i Word
 - Namngivna blad, områden, celler, former och bilder i Excel
@@ -39,7 +37,7 @@ ER har nu stöd för **streckkod** datakällans typ. Därför kan du nu generera
 
 Följande platshållare kan användas i rapportmallar för att ange bilder av streckkoder:
 
-- [Bild](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) innehållskontroll för Word
+- [Bild](/office/client-developer/word/content-controls-in-word) innehållskontroll för Word
 - [Bild](https://support.office.com/article/insert-pictures-3c51edf4-22e1-460a-b372-9329a8724344) objekt i Excel
 
 Genom att använda en datakälla för typen **streckkod** kan du generera streckkoder i följande format:
@@ -118,21 +116,21 @@ Om du inte redan har fyllt i exemplet i avsnittet om [Bädda in bilder och forme
 
 | Beskrivning av innehåll         | Filnamn                   |
 |-----------------------------|-----------------------------|
-| Exempel på konfiguration av ER-datamodell. | Modell för checkar.xml       |
-| Konfiguration för ER-fomat     | Checkar utskriftsformat.xml |
+| Exempel på konfiguration av ER-datamodell. | [Modell för checkar.xml](https://download.microsoft.com/download/6/e/a/6ea166fd-1382-4fdb-8dcb-0f13379f9c8e/Modelforcheques.xml)      |
+| Konfiguration för ER-fomat     | [Checkar utskriftsformat.xml](https://download.microsoft.com/download/1/7/c/17c301e3-c4ee-4886-ae75-440fcc002c8c/Chequesprintingformat.xml) |
 
 Hämta dessutom följande Excel-fil som innehåller den ändrade mallen för den angivna ER-lösningen.
 
 | Beskrivning av innehåll | Filnamn                 |
 |---------------------|---------------------------|
-| Rapportmall     | Kontrollera mall Excel.xlsx |
+| Rapportmall     | [Kontrollera mall Excel.xlsx](https://download.microsoft.com/download/3/b/d/3bd3b944-da8f-43b4-8533-3c1292a4c3ef/CheckTemplateExcel.xlsx) |
 
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>Aktivera en konfigurationsprovider
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. På sidan **lokaliseringskonfiguration** i avsnittet **konfigurationsleverantörer** kontrollerar du att [konfigurationsprovidern](general-electronic-reporting.md#Provider) för **Litware, Inc.** exempelföretaget är listat och att det är markerat som aktivt. Om den inte finns i listan eller är markerad som aktiv, följer du [Skapa en konfigurationsleverantör och markera den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md) markerar den som ett aktivt ämne.
 
-![Konfigurera exempelföretaget att aktiveras på sidan lokaliseringskonfiguration](./media/er-barcode-data-source-active-provider.png)
+![Konfigurera exempelföretaget att aktiveras på sidan Lokaliseringskonfigurationer.](./media/er-barcode-data-source-active-provider.png)
 
 ### <a name="import-the-provided-er-solution"></a><a name="ExampleImportSolution"></a>Importera den medföljande ER-lösningen
 
@@ -162,14 +160,14 @@ Hämta dessutom följande Excel-fil som innehåller den ändrade mallen för den
 7. Välj **Testutskrift** i åtgärdsfönstret.
 8. I dialogrutan ställer du in alternativet **Överlåtbart checkformat** till **Ja** och väljer sedan **OK**.
 
-    ![Checklayout – dialogrutan skriv ut test](./media/er-barcode-data-source-check-layout.png)
+    ![Kontrollayout – dialogrutan Skriv ut test.](./media/er-barcode-data-source-check-layout.png)
 
 ### <a name="review-the-generated-payment-check"></a><a name="ExampleReviewGeneratedCheque"></a>Granska den genererade betalningschecken
 
 - Öppna den genererade checken i Excel.
 2. Granska den genererade checken.
 
-    ![Genererad betalningscheck i Excel](./media/er-barcode-data-source-cheque1.png)
+    ![Genererad betalningskontroll i Excel.](./media/er-barcode-data-source-cheque1.png)
 
 ### <a name="modify-the-format-of-the-provided-er-solution"></a><a name="ExampleModifyFormat"></a>Ändra formatet för den angivna ER-lösningen
 
@@ -177,7 +175,7 @@ Hämta dessutom följande Excel-fil som innehåller den ändrade mallen för den
 
 Du kan använda Excel-skrivbordsprogrammet för att öppna filen **Check mallen Excel.xlsx** som du importerade tidigare. Observera att den här mallen skiljer sig från mallen som du använde för att generera en betalningscheck i den angivna ER-lösningen. Dessutom innehåller ett element för **AmountBarcode** för streckkodsbilden.
 
-![AmountBarcode-element i Excel-mallen](./media/er-barcode-data-source-cheque2.png)
+![AmountBarcode-element i Excel-mallen.](./media/er-barcode-data-source-cheque2.png)
 
 Du måste nu ändra ER-lösningen och sedan [använda](modify-electronic-reporting-format-reapply-excel-template.md) den modifierade mallen igen.
 
@@ -188,7 +186,7 @@ Du måste nu ändra ER-lösningen och sedan [använda](modify-electronic-reporti
 5. I ER Operations designer väljer du fliken **Mappning** till höger på sidan och väljer sedan **Visa/Dölj** i formatträdrutan till vänster.
 6. Observera att alla cellformatelement är bundna till lämpliga datakällor.
 
-    ![Bindning av cellformatelement till datakällor i ER Operations designer](./media/er-barcode-data-source-cells-bound.png)
+    ![Bindning av cellformatelement till datakällor i ER-åtgärdsdesignern.](./media/er-barcode-data-source-cells-bound.png)
 
 7. Välj fliken **Format** på sidans högra sida.
 8. I åtgärdsfönstret, välj ellipsen (**...**) och sedan **Importera**.
@@ -197,7 +195,7 @@ Du måste nu ändra ER-lösningen och sedan [använda](modify-electronic-reporti
 11. Välj fliken **Mappning** till höger på sidan och väljer sedan **Visa/Dölj** i formatträdrutan till vänster.
 12. Observera att cellelementet **AmountBarcode** har lagts till i formatet. Det här elementet är associerat med elementet **AmountBarcode** som har lagts till i den ändrade Excel-mallen som en platshållare för en streckkodsbild.
 
-    ![AmountBarcode cellelement tillagt i formatet i ER Operations designer](./media/er-barcode-data-source-cell-added.png)
+    ![AmountBarcode-cellelement tillagt i formatet i ER-åtgärdsdesignern.](./media/er-barcode-data-source-cell-added.png)
 
 #### <a name="add-a-new-barcode-data-source"></a><a name="ExampleModifyFormatAddDataSource"></a>Lägg till en ny streckkoddatakälla
 
@@ -206,14 +204,14 @@ Sedan måste du lägga till en ny datakälla för typen **streckkod**.
 1. I ER Operations designer på fliken **Mappning** till höger om sidan, välj datakällan **skriv ut**.
 2. Välj **Lägg till** och sedan i gruppen **Funktioner** väljer du datakälltypen **streckkod**.
 
-    ![Välja typ av streckkodsdatakälla](./media/er-barcode-data-source-add.png)
+    ![Välja typ av streckkodsdatakälla.](./media/er-barcode-data-source-add.png)
 
 3. I dialogrutan i fältet **Namn**, ange **streckkod**.
 4. I **Streckkodsformat**, välj **Kod 128**.
 5. I fältet **Bredd**, ange **500**.
 6. Välj **OK**.
 
-    ![Dialogrutan databasegenskaper](./media/er-barcode-data-source-add2.png)
+    ![Dialogrutan datakällegenskaper.](./media/er-barcode-data-source-add2.png)
 
 #### <a name="bind-a-new-format-element"></a><a name="ExampleModifyFormatBindFormatElement"></a>Binda ett nytt formatelement
 
@@ -224,7 +222,7 @@ Därefter måste du binda det nya formatelementet till den datakälla som du jus
 3. Klicka på **Visa detaljer** i åtgärdsfönstret.
 4. Observera att eftersom datakällan **streckkod** representeras i bindningen som en funktion som innehåller en enda parameter, har namnet på det bundna formatelementet automatiskt ett argument för den parametern.
 
-    ![Information om streckkods datakällan i ER Operations designer](./media/er-barcode-data-source-bind1.png)
+    ![Information om streckkodsdatakällan i ER-åtgärdsdesignern.](./media/er-barcode-data-source-bind1.png)
 
 5. Välj **Redigera formel** om du vill justera bindningen.
 
@@ -234,7 +232,7 @@ Därefter måste du binda det nya formatelementet till den datakälla som du jus
 7. Välj **Spara** och stäng sedan [ER formeldesigner](general-electronic-reporting-formula-designer.md).
 8. Observera att bindningen har justerats.
 
-    ![Justerad bindning i ER Operations designer](./media/er-barcode-data-source-bind2.png)
+    ![Justerad bindning i ER-åtgärdsdesignern.](./media/er-barcode-data-source-bind2.png)
 
 9. Välj **Spara** och stäng sedan ER Operations designer.
 
@@ -279,7 +277,7 @@ Utkastversionen av det valda formatet markeras som tillgänglig för användning
 6. Välj **OK**.
 7. Granska den genererade checken. Observera att en streckkod har genererats för att koda skuldbeloppet för checken.
 
-    ![Genererad betalningscheck med streckkoder i Excel](./media/er-barcode-data-source-cheque3.png)
+    ![Genererad betalningskontroll med streckkoder i Excel.](./media/er-barcode-data-source-cheque3.png)
 
 > [!IMPORTANT]
 > Ett undantag erhålls om argumentet för en **streckkod** datakälla inte uppfyller de tillämpliga kraven som är specifika för streckkodsformatet. Om till exempel datakällan **streckkod** anropas för att generera en streckkod [EAN-8](https://wikipedia.org/wiki/EAN-8) för den angivna texten, genereras ett undantag om textlängden överstiger sju tecken.
@@ -290,7 +288,7 @@ Enligt beskrivningen i avsnittet [generera utskrivbara FTI-formulär](er-generat
 
 När datakällan **streckkod** används för att producera streckkoder beror det dock på något teckensnitt för återgivningen av streckkoderna. Därför kan du enkelt konvertera dokument som innehåller streckkoderna till PDF-format. Följande bild visar förhandsgranskningen av en genererad betalningscheck som har [konverterats](electronic-reporting-destinations.md#OutputConversionToPDF) till ett PDF-dokument, baserat på inställningen för det konfigurerade ER [målet](electronic-reporting-destinations.md).
 
-![Förhandsgranskning av PDF-filen för en betalningscheck](./media/er-barcode-data-source-cheque4.png)
+![Förhandsgranskning av PDF-filen för en betalningskontroll.](./media/er-barcode-data-source-cheque4.png)
 
 ## <a name="limitations"></a>Begränsningar
 
@@ -303,3 +301,6 @@ När datakällan **streckkod** används för att producera streckkoder beror det
 - [Destinationer för elektronisk rapportering](electronic-reporting-destinations.md)
 - [Formelspråk i elektronisk rapportering](er-formula-language.md)
 - [Funktionen NUMBERFORMAT](er-functions-text-numberformat.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

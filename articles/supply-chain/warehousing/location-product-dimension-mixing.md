@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 20085c51230d3ceca46c5119fecbc3cf3291ecd4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578570"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103498"
 ---
 # <a name="location-product-dimension-mixing"></a>Blandning av produktstorlekar på plats
 
@@ -26,14 +26,11 @@ ms.locfileid: "7578570"
 
 Blandning av produktdimension för plats är en platsprofilfunktion som hjälper till att förbättra platshanteringen när produktvarianter eller produkter som har dimensioner används, t.ex. inom modebranschen. Med den kan du bestämma om konfigurationer, färger, utföranden och storlekar kan blandas för en viss platsprofil, eller om bara en av dessa dimensioner eller en kombination av dem kan placeras på samma plats.
 
-## <a name="turn-on-the-location-product-dimension-mixing-feature"></a>Aktivera funktionen för blandning av produktdimension för plats
+## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>Aktivera eller inaktivera funktionen för blandning av produktdimension för plats
 
-Innan du kan använda funktionen blandning av produktdimension för plats måste den aktiveras i ditt system. Administratörer kan använda arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
+De funktioner som beskrivs i det här avsnittet måste funktionen *Blandning av produktstorlekar på plats* vara inaktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Blandning av produktstorlekar på plats* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- **Modul:** *Lagerstyrning*
-- **Funktionens namn:** *blandning av produktdimension för plats*
-
-## <a name="setup"></a>Konfigurera
+## <a name="setup"></a>Inställningar
 
 Varje plats på lagerstället måste ha en platsprofil associerad som beskriver egenskaperna för platsen. Därför kan alla platser som använder samma platsprofil tillåta blandning av produktdimensioner när den har ställts in.
 

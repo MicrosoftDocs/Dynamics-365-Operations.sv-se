@@ -2,7 +2,7 @@
 title: Felsöka problem med Finance Insights
 description: Det här ämnet visar en lista med problem som kan inträffa när du använder Finance Insights. Här förklaras också hur du löser dessa problem.
 author: panolte
-ms.date: 01/29/2022
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fc616e5fce6bbfeaa3b36ccc35f1b1cf407af4a6
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064876"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109870"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Felsöka problem med Finance Insights
 
@@ -111,6 +111,14 @@ Mer information om hur du justerar kategorierna **I tid**, **Sent** och **Mycket
 
 ### <a name="resolution"></a>Lösning
 
-Modellutbildning för **kassaflödesprognos** kräver data som sträcker sig över mer än ett år och innehåller mer än 100 transaktioner. Dessa transaktioner måste påverka likviditetskonton som är inkluderade i inställningen av kassaflödesprognosen.
+Modellutbildning för **kassaflödesprognos** kräver data som sträcker sig över mer än ett år och innehåller mer än 100 transaktioner. Vi rekommenderar att du har minst två års data med mer än 1 000 transaktioner.
 
-**Kundbetalningsförutsägelser** kräver minst 100 kundfaktura- och betalningstransaktioner de senaste sex till nio månaderna för att det ska gå att skapa förutsägelser.  
+Funktionen **Kundbetalningsförutsägelser** kräver mer än 100 transaktioner under de föregående sex till nio månaderna. Transaktionerna kan omfatta fritextfakturor, försäljningsorder och kundbetalningar. Dessa data måste sprids över inställningarna **I tid**, **Sent** och **Mycket sent** som har definierats på sidan **Konfiguration**.    
+
+Funktionen för **budgetförslag** kräver minst tre års budget eller faktiska data. Lösningen använder tre till tio år data i prognoser. Mer än tre år ger bättre resultat. Själva data fungerar bäst när det finns variation i värdena. Om uppgifterna innehåller alla konstanta data, till exempel en leasingkostnad, kan utbildningen misslyckas eftersom bristen på variation inte kräver AI för att projicera beloppen.
+
+## <a name="symptom-error-message-states-that-the-table-with-name-msdyn_paypredpredictionresultentities-does-not-exist-the-remote-server-returned-an-error-404-not-found"></a>Symptom: Felmeddelandet "Register med namn, msdyn_paypredpredictionresultentities" inte finns. Fjärrservern returnerade ett fel: (404) Hittade inte.
+
+### <a name="resolution"></a>Lösning
+
+Miljön har nått högsta registergräns för Data Lake Services. Mer information om gränsen finns i avsnittet **Aktivera ändringar av data i närtid i realtid** i avsnittet, översikten [Exportera översikt över Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

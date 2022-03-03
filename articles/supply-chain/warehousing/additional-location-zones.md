@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 4801077ac498699972244f3f86216790b517b47247fc7fb288614ec143c3c5cb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dd9e97cabe5e3d3bdc261a7280930b73eb8e1419
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762780"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103848"
 ---
 # <a name="additional-location-zones"></a>Ytterligare platszoner
 
@@ -30,12 +30,9 @@ Tre nya zonfält finns tillgängliga i Microsoft Dynamics 365 Supply Chain Manag
 
 Det krävs inga ytterligare inställningar för att använda zonfälten.
 
-## <a name="turn-on-the-additional-location-zone-feature"></a>Aktivera funktionen ytterligare platszoner
+## <a name="turn-the-additional-location-zone-feature-on-or-off"></a>Aktivera eller inaktivera funktionen ytterligare platszoner
 
-Innan du kan använda funktionen *Ytterligare platszon* den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
-
-- **Modul:** *Lagerstyrning*
-- **Funktionsnamn:** *Ytterligare platszon*
+Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Ytterligare platszoner* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="use-location-zones"></a>Använda platszoner
 

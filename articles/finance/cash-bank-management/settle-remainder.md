@@ -1,24 +1,24 @@
 ---
 title: Kvitta rest
 description: Du kan kvitta det belopp som återstår från kvittningsaktiviteten genom att använda detta belopp på ett redovisningskonto.
-author: roschlom
-ms.date: 10/16/2018
+author: twheeloc
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 216c5c1d7db72e5f5071f2cd03656df538a64e72
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 881b46774d3ca6a9b91d4dc06babb30c8677183a
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754106"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182414"
 ---
 # <a name="settle-remainder"></a>Kvitta rest
 
@@ -27,10 +27,10 @@ ms.locfileid: "7754106"
 Du kan kvitta det belopp som återstår från kvittningsaktiviteten genom att använda detta belopp på ett redovisningskonto eller en annan kund. Du kan kvitta återstoden när du kvittar betalning av belopp som förts in i en journal eller när du bara kvittar öppna transaktioner.
 
 ## <a name="setting-up-defaults"></a>Ställa in standarder 
-Du måste aktivera funktionen Kvitta rest och ställa in standardinställningarna innan du använder Kvitta rest
+Du måste aktivera funktionen **Kvitta rest** och ställa in standardinställningarna innan du använder **Kvitta rest**.
 
 1)  Klicka på **Kundreskontra > Parametrar > Kvittningar** eller **Leverantörsreskontra > Parametrar > Kvittningar**
-2)  Välj fliken **Kvittning** och klicka sedan på **Aktivera kvittning av rest**
+2)  Välj fliken **Kvittning** och klicka sedan på **Aktivera kvittning av rest**.
 3)  I **standardorsakskod** väljer du en standardorsakskod. Orsakskoderna måste redan ha ställts in i **Kundreskontra > Inställningar > Orsakskoder för kundavskrivning** eller **Leverantörsreskontra > Inställningar > Orsakskoder för kundavskrivning**. **Standardkonto för kvittning av rest** ska anpassas till kontot som tilldelats orsakskoden för avskrivning.
 3)  Uppdatera **Standardkonto för kvittning av rest** efter behov.
 4)  Under **Standardjournalnamn** väljer du en betalningsjournal som ska användas om du vill skapa en betalningsjournal när du bara kvittar öppna transaktioner. Om du aktiverar funktionen kvittning av rest måste du lägga till ett standardjournalnamn.

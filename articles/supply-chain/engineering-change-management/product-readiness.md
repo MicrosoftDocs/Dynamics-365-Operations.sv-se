@@ -1,33 +1,35 @@
 ---
 title: Produktberedskap
-description: I det här avsnittet beskrivs hur du kan använda beredskapskontroller för att säkerställa att nödvändiga huvuddata har slutförts för en produkt innan de används i transaktioner.
+description: I detta ämne beskrivs hur du kan använda beredskapskontroller för att säkerställa att nödvändiga huvuddata har slutförts för en produkt innan de används i transaktioner.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8321a0d8516a6c2c085ce9c1236f70af1cca98da
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: f7ab6165e85cd2b1165292b74cd036f1233b22b4
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967268"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103023"
 ---
 # <a name="product-readiness"></a>Produktberedskap
 
 [!include [banner](../includes/banner.md)]
 
-Du kan använda beredskapskontroller för att säkerställa att alla nödvändiga huvuddata har specificerats för en produkt innan de används i transaktioner. När beredskapskontroller används blir en användare eller ett team ansvarigt för att validera specifika fördefinierade produktspecifika data. Om det finns en öppen beredskapskontroll för en produkt kan produkten inte frisläppas eller användas i transaktioner.
+Du kan använda beredskapskontroller för att säkerställa att alla nödvändiga huvuddata har specificerats för en produkt innan de används i transaktioner. När beredskapskontroller används blir en användare eller ett team ansvarigt för att validera specifika fördefinierade produktspecifika data.
 
-Kryssrutan **Aktiv** för en teknisk produkt, variant eller version är endast tillgänglig efter att alla nödvändiga data har angetts och verifierats och efter att alla beredskapskontroller har bearbetats. Vid den tidpunkten kan produkten, versionen eller varianten frisläppas till andra företag och användas i transaktioner. Du kan skapa beredskapskontroller för nya produkter, nya varianter och nya konstruktionsversioner.
+Du kan markera kryssrutan **Aktiv** för en teknisk produkt, variant eller version efter att alla nödvändiga data har angetts och verifierats och efter att alla beredskapskontroller har bearbetats. Om en eller flera kontroller inte har bearbetats för produkten, versionen eller varianten, när du försöker markera kryssrutan **Aktiv** du får en varning om att inte alla kontroller har slutförts.
+
+Du kan skapa beredskapskontroller för nya produkter, varianter och konstruktionsversioner. Du kan också utföra beredskapskontroller på standardprodukter (icke-tekniska) produkter (se också [Beredskapskontroller för standardprodukter](#standard-products)). 
+
+Du kan använda standardprodukter i transaktioner även om inte alla beredskapskontroller har slutförts. Om du behöver spärra en produkt från att användas i transaktioner, använd dess livscykelläge. Du kan tilldela en livscykelstat som spärrar en produkt från att användas i transaktioner och sedan, när alla beredskapskontroller har slutförts, tilldela en ny livscykelstat som tillåter nödvändiga transaktioner.
 
 ## <a name="types-of-readiness-checks"></a>Typer av beredskapskontroller
 
@@ -35,24 +37,31 @@ Det finns tre typer av beredskapskontroller:
 
 - **Systemkontroll** – systemet kontrollerar om det finns en giltig post. Posten kan till exempel vara en aktiv strukturlista.
 - **Manuell kontroll** – en användare verifierar om posten är giltig. En beredskapskontroll kan till exempel kräva validering av standard orderinställningarna. I vissa fall, t.ex. när produkten fortfarande är konstruerad och därför inte kommer att placeras i lager, krävs inga standard orderinställningar. Standard orderinställningar kan dock krävas för en annan produkt av samma typ, eftersom produkten kan hållas i lager. Användaren är ansvarig för att veta hur man korrekt fattar beslut om en beredskapskontroll krävs.
-- **Kontrollista** – användaren svarar på en serie frågor från en kontrollista och systemet avgör om svaren möter förväntningarna. Kontrollistan kan ha vilket ämne som helst. Det kan till exempel användas för att avgöra om marknadsföringsmaterial eller produktdokumentation är slutförd.
+- **Kontrollista** – användaren svarar på en serie frågeställningar från en kontrollista och systemet avgör om svaren möter förväntningarna. Kontrollistan kan ha vilket ämne som helst. Det kan till exempel användas för att avgöra om marknadsföringsmaterial eller produktdokumentation är slutförd.
 
-## <a name="how-readiness-checks-are-created-for-a-new-product-variant-or-version"></a>Hur beredskapskontroller skapas för en ny produkt, variant eller version
+<a name="checks-engineering"></a>
 
-När du skapar en ny teknisk **produkt** fastställer systemet om en policy för beredskapskontroll har ställts in för den tekniska produktkategorin. (Policyer för beredskapskontroll kan användas på den frisläppta produktnivån, den släppta variantnivån och teknisk versionsnivån). Om en princip har ställts in inträffar följande händelser:
+## <a name="how-readiness-checks-are-created-for-a-new-engineering-product-variant-or-version"></a>Hur beredskapskontroller skapas för en ny teknisk produkt, variant eller version
+
+(Policyer för beredskapskontroll kan användas på den frisläppta produktnivån, den släppta variantnivån och teknisk versionsnivån).
+
+När du skapar en ny *teknikprodukt* bestämmer systemet om en [beredskapskontrollpolicy gäller](#assign-policy) för den. Om en policy för beredskapskontroll används inträffar följande händelser:
 
 - Beredskapskontroller skapas för produkten enligt tillämplig policy.
-- Tekniska versionen är inaktiverad för att blockera produkten från att användas. Alla versioner för den specifika produkten som ingår är inställda på inaktiv.
+- Tekniska versionen är inaktiverad för att blockera produkten från att användas. Alla tekniska versioner för produkten är inställda på inaktiv.
 
-Om en ny **variant** skapas för en produkt kontrollerar systemet om beredskapskontrollerna har ställts in för teknisk produktkategori. (Beredskapskontroller kan användas på den frisläppta variantnivån och teknisk versionsnivån). Om en beredskapskontroll har ställts in inträffar följande händelser:
+Om en ny *variant* skapas för en produkt kontrollerar systemet om en kontrollpolicy för beredskap gäller för den. (Beredskapskontroller kan användas på den frisläppta variantnivån och teknisk versionsnivån). Om en policy gäller inträffar följande händelser:
 
-- Beredskapskontroller skapas för produkten.
+- Beredskapskontroller skapas för produkten enligt tillämplig policy.
+- Tekniska versionen och variant är inaktiverad för att blockera produkten från att användas.
+
+Om en ny teknisk *version* skapas för en produkt kontrollerar systemet om en kontrollpolicy för beredskap gäller för den. (Beredskapskontroller kan användas på den tekniska versionsnivån). Om en policy gäller inträffar följande händelser:
+
+- Beredskapskontroller skapas för produkten enligt tillämplig policy.
 - Tekniska versionen är inaktiverad för att blockera produkten från att användas.
 
-Om en ny teknisk **version** skapas för en produkt kontrollerar systemet om beredskapskontrollerna har ställts in för teknisk produktkategori. (Beredskapskontroller kan användas på teknisk versionsnivån). Om en beredskapskontroll har ställts in inträffar följande händelser:
-
-- Beredskapskontroller skapas för produkten.
-- Tekniska versionen är inaktiverad för att blockera produkten från att användas.
+> [!NOTE]
+> Du kan också konfigurera policyer för beredskapskontroller på standardprodukter (icke-tekniska). Mer information finns i avsnittet [Beredskapskontroller för standardprodukter](#standard-products) längre fram i det här avsnittet.
 
 ## <a name="view-readiness-checks"></a>Visa beredskapskontroller
 
@@ -69,7 +78,7 @@ Följ de här stegen om du vill visa de öppna beredskapskontroller som har till
 - Gå till **Konstruktionsändringshantering \> Gemensamt \> Produktberedskap \> Mina öppna beredskapskontroller**.
 - Gå till **Produktinformationshantering \> Arbetsytor \> Produktberedskap för diskret tillverkning**.
 
-Den inställning som anger vem en beredskapskontroll är tilldelad för den konstruktionsproduktkategori. Beredskapskontroller kan tilldelas en person eller ett team. Om en beredskapskontroll tilldelas till ett team finns det en person i teamet som måste bearbeta beredskapskontrollen. För mer information, se [Konstruktionsversioner och kategorier av konstruktionsprodukter](engineering-versions-product-category.md).
+Den inställning som anger vem en beredskapskontroll är tilldelad för den beredskapspolicyn. Beredskapskontroller kan tilldelas en person eller ett team. Om en beredskapskontroll tilldelas till ett team finns det en person i teamet som måste bearbeta beredskapskontrollen.
 
 ## <a name="process-open-readiness-checks"></a>Bearbeta öppna beredskapskontroller
 
@@ -94,9 +103,7 @@ När alla öppna beredskapskontroller för en ny produkt, variant eller version 
 
 ## <a name="create-and-manage-product-readiness-policies"></a>Skapa och hantera principer för produktberedskap
 
-Använd principer för produktberedskap när du vill hantera beredskapskontroller som gäller en produkt. Eftersom en beredskapspolicy tilldelas teknisk kategori gäller alla kontroller i beredskapspolicyn för alla teknik produkter som baseras på tekniska kategorin. För mer information, se [Konstruktionsversioner och kategorier av konstruktionsprodukter](engineering-versions-product-category.md).
-
-Varje beredskapspolicy innehåller en uppsättning beredskapskontroller. När en beredskapspolicy tilldelas en teknisk produktkategori kommer alla produkter som skapas från den tekniska produktkategorin att ha beredskapskontroller som anges i beredskapspolicyn.
+Använd principer för produktberedskap när du vill hantera beredskapskontroller som gäller en produkt. Varje beredskapspolicy innehåller en uppsättning beredskapskontroller. När en beredskapspolicy tilldelas en teknisk produktkategori eller en delad produkt kommer alla produkter som är relaterade till den kategorin eller delade produkten ha beredskapskontroller som ingår i beredskapspolicyn.
 
 För att arbeta med policyer för produktberedskap, gå till **Konstruktionsändringshantering \> Inställning \> Principer för produktberedskap**. Gör sedan något av följande.
 
@@ -120,7 +127,7 @@ Ange följande fält i snabbfliken **Allmänt** i en produktberedskapspolicy.
 | Fält | beskrivning |
 |---|---|
 | Produkttyp | Välj om policyn gäller för produkter av typen *artikel* eller *tjänst*. Du kan inte ändra den här inställningen när du har sparat posten. |
-| Aktiva | Använd det här alternativet för att upprätthålla dina beredskapsprinciper. Ange värdet *Ja* för alla beredskapsprinciper som du använder. Ställ in den på *Nej* för att markera att en beredskapsprincip är inaktiv när den inte används. Observera att du inte kan inaktivera en beredskapsprincip som är tilldelad en teknisk produktkategori, och du bara kan ta bort inaktiva frisläppningsprinciper. |
+| Aktiva | Använd det här alternativet för att upprätthålla dina beredskapsprinciper. Ange värdet *Ja* för alla beredskapsprinciper som du använder. Ställ in den på *Nej* för att markera att en beredskapsprincip är inaktiv när den inte används. Observera att du inte kan inaktivera en beredskapsprincip som är tilldelad en teknisk produktkategori eller en delad produkt, och du bara kan ta bort inaktiva frisläppningsprinciper. |
 
 ### <a name="readiness-control-fasttab"></a>Snabbfliken beredskapskontroll
 
@@ -144,6 +151,51 @@ Ange följande fält för varje rad du lägger till.
 | Företag | Om du ställer in fältet **Köra i** till *Enskilt företag* väljer du företaget. |
 | Ägartyp | Välj om beredskapskontroller som rad genereras ska tilldelas till en person eller ett team. |
 | Ägare | Välj om beredskapskontroller som rad genereras ska tilldelas till en person eller ett team. |
-| Enkät | Välj den enkät som ska användas för kontrollista. Check listan är en lokal kontrollista i företaget där beredskapskontrollen är klar. Systemet måste kunna bedöma om kontrollistan är korrekt besvarad. Därför måste kontrollistan ställas in så att en utvärdering görs baserat på korrekta svar. Mer information om hur du skapar enkäter finns i [använda enkäter](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) och den närliggande informationen. |
+| Enkät | Välj den enkät som ska användas för kontrollista. Check listan är en lokal kontrollista i företaget där beredskapskontrollen är klar. Systemet måste kunna bedöma om kontrollistan är korrekt besvarad. Därför måste kontrollistan ställas in så att en utvärdering görs baserat på korrekta svar. Mer information om hur du skapar enkäter finns i [använda enkäter](/dynamicsax-2012/appuser-itpro/using-questionnaires) och den närliggande informationen. |
 | Automatiskt godkännande | Beredskapskontroll poster inkluderar en kryssruta **godkänd** som visar godkännandestatus. Markera kryssrutan **automatiskt godkännande** för kontroller som ska ställas in på godkänd omedelbart efter att den tilldelade användaren har slutfört dem. Avmarkera den här kryssrutan om du vill att explicit godkännande ska krävas som ett ytterligare steg. |
 | Obligatoriskt | Markera den här kryssrutan för kontroller som måste slutföras av den tilldelade användaren. Obligatoriska kontroller kan inte hoppas över. |
+
+<a name="assign-policy"></a>
+
+## <a name="assign-readiness-policies-to-standard-and-engineering-products"></a>Tilldela en beredskapspolicy till standardprodukter och konstruktionprodukter
+
+När du skapar en ny produkt baserad på en teknisk kategori, skapar du både en *frisläppt produkt* och en relaterad delad *produkt*. Hur beredskapspolicyer löses för en släppt produkt beror på om funktionen *Kontroller av produktberedskap* är aktiverad för ditt system (se avsnittet [Kontroller av beredskap för standardprodukter](#standard-products) senare i det här ämnet för mer information om den här funktionen och hur du slår på eller av den).
+
+- När funktionen *Produkt beredskapskontroller* är inaktiverad *av* på ditt system är beredskapspolicyn inställd och visas endast på poster [tekniska kategori](engineering-versions-product-category.md). För att lära sig vilken policy som gäller för en släppt produkt kontrollerar systemet fält **produktberedskapspolicy** för den relaterade ingenjörskategorin. Du kan ändra beredskapspolicyn för en befintlig produkt genom att redigera den relaterade tekniska kategorin (inte den delade produkten).
+- När funktionen *Produkt beredskapskontroller* slås *på*, lägger det till ett fält för **Produktberedskapspolicy** till sidan **Produkt** page (där delade produkter ställs in) och till **Frisläppt produkt** (där värdet är skrivskyddat och hämtas från den relaterade delade produkten). Systemet hittar beredskapspolicyn för en frisläppt produkt genom att kontrollera den relaterade delade produkten. När du använder en teknisk kategori för att skapa en ny teknikprodukt skapas både en delad produkt och en frisläppt produkt av systemet och eventuella inställningar för **produktberedskapspolicy** för den tekniska kategorin kopieras till den nya delade produkten. Du kan ändra beredskapspolicyn för en befintlig produkt genom att redigera den relaterade delade produkten (inte den släppta ingenjörskategorin).
+
+Följ dessa steg för att tilldela en beredskapspolicy till en delad produkt.
+
+1. Gå till **Produktinformation \> Produkter \> Produkter**.
+1. Öppna eller skapa en produkt som du vill tilldela en beredskapspolicy till.
+1. På snabbfliken **Allmänt** ange fältet **Produktberedskapspolicy** till namnet på den policy som ska gälla för produkten.
+
+Följ dessa steg för att tilldela en tekniska kategorin till en delad produkt.
+
+1. Gå till **konstruktionsändringshantering \> inställning \> information om konstruktionsproduktkategori**.
+1. Öppna eller skapa en tekniska kategori som du vill tilldela en beredskapspolicy till.
+1. På snabbfliken **Produktberedskapspolicy** ange fältet **Produktberedskapspolicy** till namnet på den policy som ska gälla för den tekniska kategorin.
+
+<a name="standard-products"></a>
+
+## <a name="readiness-checks-on-standard-products"></a>Kontroller av beredskap för standardprodukter
+
+Du kan aktivera kontroller i produktberedskap för standardprodukter (icke-konstruktion) genom att aktivera funktionen *Produkt beredskapskontroller* i funktionshanteringen. Den här funktionen gör några små ändringar i beredskapskontrollsystemet så att den stöder standardprodukter.
+
+### <a name="enable-or-disable-readiness-checks-on-standard-products"></a>Aktivera eller inaktivera beredskapskontroller av standardprodukter
+
+Den här funktionen kräver att både kontrollfunktionerna för *Konstruktionsändringshantering* och *Kontroller av produktberedskap* är aktiverad för systemet. Information om hur du aktiverar och inaktiverar funktionerna finns i [Översikt över hantering av tekniska ändringar](product-engineering-overview.md).
+
+### <a name="create-readiness-policies-for-standard-products"></a>Skapa en beredskapspolicy för standardprodukter
+
+Du skapar en beredskapspolicy för standardprodukter på samma sätt som för tekniska produkter. Se informationen tidigare i det här avsnittet.
+
+### <a name="assign-readiness-policies-to-standard-products"></a>Tilldela beredskapspolicy för standardprodukter
+
+Om du vill tilldela en beredskapspolicy till en standardprodukt öppnar du den relaterade delade produkten och ställer in fältet för **Produktberedskapspolicy** på namnet för den policy som ska användas. Mer information finns i avsnittet [Tilldela beredskapsprinciper för standardprodukter och tekniska produkter](#assign-policy) tidigare i det här avsnittet.
+
+### <a name="view-and-process-readiness-checks-on-standard-products"></a>Visa och behandla beredskapskontroller av standardprodukter
+
+När den här funktionen aktiveras kan du visa och bearbeta beredskapskontroller för standardprodukter på samma sätt som för tekniska produkter. Se informationen tidigare i det här avsnittet.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

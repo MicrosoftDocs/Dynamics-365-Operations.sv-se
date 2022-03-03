@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 419e2b3b6bc5636aa75cf3ecc26e32ad22260a7e
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: dca0aba081321dff5ae061ebe4bddcae0e42bc54
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778117"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102774"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardorderinställningar för dimensioner och produktvarianter
 
@@ -186,12 +186,9 @@ Du kan välja hur strikt systemet ska vara när de validerar de kvantiteter som 
 
 Strikt validering gäller de värden för **Standardorderkvantitet** som anges på snabbflikarna **Inköpsorder**, **Lager** och **Försäljningsorder** på sidan **Standardorderinställningar**. Varje snabbflik har en egen inställning för **Flera** som används för att validera värdet **Standardorderkvantitet** som angetts för den valda snabbfliken.
 
-### <a name="enable-the-strict-validation-option"></a>Aktivera strikt valideringsalternativ
+### <a name="turn-the-strict-validation-option-on-or-off"></a>Aktivera eller inaktivera strikt valideringsalternativ
 
-Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan använda sidan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera/inaktivera den vid behov. Här visas funktionen i listan:
-
-- **Modul** - *Produktinformationshantering*
-- **Funktionsnamn** - *Strikt validering för standardorderkvantitet*
+Om du vill använda strikt validering måste funktionen *Strikt validering för standardorderkvantiteter* vara aktiverad för ditt system. Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan du slå på eller av denna funktion genom att gå till [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)och söka efter funktionen *Strikt validering av standardkvantiteter för order*.
 
 ### <a name="set-the-validation-option"></a>Ange valideringsalternativ
 

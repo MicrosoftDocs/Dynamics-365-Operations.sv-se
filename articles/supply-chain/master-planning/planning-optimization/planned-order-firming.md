@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a709528b04e82c32f644073f79513b7ef11bb6bf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 7e3a86e2aa0e7182f7f9e853b9e8667e677a8ad6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920733"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102723"
 ---
 # <a name="firm-planned-orders"></a>Bekräfta planerade order
 
@@ -35,17 +35,15 @@ I det här ämnet beskrivs de olika metoderna i detalj.
 
 De flesta planerade orderfunktioner är tillgängliga i alla standardinstallationer av Microsoft Dynamics 365 Supply Chain Management som använder Planeringsoptimering. Några av funktionerna som beskrivs i det här avsnittet måste dock inaktiveras i Funktionshantering innan du kan använda dem.
 
-### <a name="enable-parallelized-firming-of-planned-orders"></a>Aktivera parallell bekräftelse av planerade order
+### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Aktivera eller inaktivera parallell bekräftelse av planerade order
 
-Parallelliserat bekräftande gör det snabbare att bekräfta processen genom att parallellisera den i flera trådar. Det här arbetssättet kan vara användbart när många planerade order ska bekräftas.
-
-Om du vill göra de här funktionerna tillgängliga i systemet går du till [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen *Parallell bekräftelse av planerade order*. (Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard.)
+Parallelliserat bekräftande gör det snabbare att bekräfta processen genom att parallellisera den i flera trådar. Det här arbetssättet kan vara användbart när många planerade order ska bekräftas. Om du vill använda den här funktionen måste funktionen *Parallell bekräftad planerade order* vara aktiverad för ditt system. Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan du slå på eller av denna funktion genom att gå till [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)och söka efter funktionen *Parallell bekräftelse av planerade order*.
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Aktivera planerad orderbekräftelse med filtrering
 
 Med bekräftad order med filtrering kan du definiera logiska kriterier för val av vilka planerade order som ska bekräftas. Du kan också förhandsgranska vilka planerade order som valts, köra processen i bakgrunden och/eller schemalägga den som ett batchjobb.
 
-Om du vill göra de här funktionerna tillgängliga i systemet går du till [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen *Bekräftelse av planerade order med filtrering*.
+Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Bekräfta planerad order med filtrering* i arbetsytan [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="enable-auto-firming-for-planning-optimization"></a>Aktivera auto-bekräftande för planeringsoptimering
 

@@ -1,12 +1,10 @@
 ---
 title: Inköpsavtal
 description: Det här avsnittet innehåller information om inköpsavtal. Ett inköpsavtal är ett kontrakt som ålägger en organisation att köpa en angiven kvantitet eller ett visst belopp via flera framtida inköpsorder. I utbyte mot detta åtagande får köparen särskilda priser och rabatter.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cd3c18129724cc67560aee7bf9fc0e5dcd2ebc3
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d8084ebed80a509d543053867bb1f4d483b3f8eb
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017197"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103748"
 ---
 # <a name="purchase-agreements"></a>Inköpsavtal
 
@@ -43,10 +41,7 @@ Om du vill förhindra att ditt inköpsavtal används och bekräftas markerar du 
 Du kan identifiera en primär ansvarig arbetstagare och sekundär ansvarig arbetare på inköpsavtal klassificering. Dessa värden kommer att ärvas av det resulterande inköpsavtalet. Du behöver inte lägga till ansvariga arbetstagare till inköpsavtalet och de kan ändras direkt på basis av varje ärende på själva inköpsavtalet. Du kan inte ange en sekundär ansvarig arbetare utan en primär ansvarig arbetare, även om du inte behöver ha en sekundär ansvarig arbetare. Du kan inte ange samma arbetsprocesser som både den primära och sekundära ansvariga arbetaren.
 
 > [!IMPORTANT]
-> Innan du kan använda funktionen ansvariga part måste den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
-> 
-> - **Modul:** *anskaffning och källa*
-> - **Funktionsnamn:** *Ansvarig part för inköpsavtal*
+> För att använda funktionen ansvariga part måste den aktiveras i ditt system. Från och med 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Ansvarig part för inköpsavtal* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="commitment-types"></a>Utfästelsetyper
 Varje rad i ett inköpsavtal är en utfästelse att köpa något. Du kan använda rader från flera inköpsorder för att uppfylla utfästelsen. Det finns fyra typer av utfästelser:
@@ -104,12 +99,13 @@ Om du skapar en koncernintern inköpsorder med det koncerninterna inköpsavtalet
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Ekonomiska dimensioner på inköpsavtal
 Du kan kopiera ekonomiska dimensioner till dokumenthuvuden eller till enskilda rader i ett inköpsavtal. Om du ändrar dimensionerna i avtalshuvudet eller på avtalsraden påverkar inte ändringen frisläppta order, men den återspeglas i alla nya order.
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
-[Skapa ett nytt inköpsavtal](tasks/create-purchase-agreement.md)
-
-[Skapa en inköpsfrisläppningsorder från ett inköpsavtal](tasks/create-purchase-release-order-purchase-agreement.md)
+- [Skapa ett inköpsavtal](tasks/create-purchase-agreement.md)
+- [Tillämpa ett köpeavtal när du skapar en inköpsorder](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

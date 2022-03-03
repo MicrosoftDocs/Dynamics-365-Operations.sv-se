@@ -2,25 +2,25 @@
 title: Trevägsmatchningspolicyer
 description: Den här ämnet innehåller exempel på trevägsmatchning.
 author: abruer
-ms.date: 10/26/2017
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d33a8cb001f1cd2f79c2a174710af90af423b9b3abc66eb80aa4811953ea4a14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cffdc06216ce8ab1bfb79265f265bec1aee334c5
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722849"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8110003"
 ---
 # <a name="three-way-matching-policies"></a>Trevägsmatchningspolicyer
 
@@ -42,21 +42,21 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 
 ### <a name="prerequisites"></a>Förutsättningar
 
--   Ken anger matchningspolicyn på juridisk personnivån till trevägsmatchning.
--   Ken anger Automatiskt uppdatering av växling av huvudmatchningsstatus för den juridiska personen till Ja.
--   Ken anger fältet Matchprissummor för den juridiska personen till Procentsats och anger 15 % som toleransprocent.
--   Ken anger matchningspolicyn på artikelnivån för artikel 1500 – CNC Milicron-datorn till trevägsmatchning. Denna artikel är en tillgångsartikel som används för tillverkning på Fabrikam. Fakturor för artikeln matchas med inköpsorderrader för priser och med produktinleveranser för kvantiteter.
--   Tony anger en rekvisition för fem CNC Milicron-datorer. Alicia, en inköpsorderansvarig på Fabrikam, utfärdar en inköpsorder till en juridisk person som heter Contoso för att leverera artiklarna.
+-   Ken anger **matchningspolicyn** på juridisk personnivån till **trevägsmatchning**.
+-   Ken anger **Automatiskt uppdatering av växling av huvudmatchningsstatus** för den juridiska personen till **Ja**.
+-   Ken anger fältet **Matchprissummor** för den juridiska personen till **Procentsats** och anger 15 % som **toleransprocent**.
+-   Ken anger matchningspolicyn på artikelnivån för artikel 1500 – CNC Milicron-datorn till **trevägsmatchning**. Denna artikel är en tillgångsartikel som används för tillverkning på Fabrikam. Fakturor för artikeln matchas med inköpsorderrader för priser och med produktinleveranser för kvantiteter.
+-   Tony anger en rekvisition för fem CNC Milicron-datorer. Alicia, en inköpsorderansvarig på Fabrikam, visar en inköpsorder för en juridisk person som heter Contoso för att leverera artiklarna.
 
-    | Artikelnummer                 | Antal | Enhetspris | Nettobelopp | Kod för avgifter        | Avgiftsvärde |
+    | Artikelnummer                 | Kvantitet | Enhetspris | Nettobelopp | Kod för avgifter        | Avgiftsvärde |
     |-----------------------------|----------|------------|------------|---------------------|---------------|
-    | 1500 – CNC Milicron-dator | 5        | 8 000,00   | 40 000,00  | Transport och hantering | 3,000.00      |
+    | 1500 – CNC Milicron-dator | 5        | 8 000,00   | 40 000,00  | Transport och hantering | 3 000,00      |
 
 -   Arnie, en kundreskontraansvarig på Contoso, granskar veckans försändelser. Arnie väljer försändelsetransaktioner för att fakturera Fabrikam för leverans av CNC Milicron-datorerna. Arnie inkluderar en avgift för distribution och hantering. Fabrikam ska beakta om avgiften ska ingå i kostnaden för tillgången.
 
 ### <a name="scenario"></a>Scenario
 
-1.  Sammy, en anställd på inleveransavdelninen på Fabrikam, tar emot den totala kvantiteten av maskiner som levereras från Contoso. Sammy anger en kvantitet på 5 på en produktinleverans. Eftersom inköpsordern har inlevererats helt, ändras statusen för inköpsordern till Inlevererad.
+1.  Sammy, en anställd på inleveransavdelninen på Fabrikam, tar emot den totala kvantiteten av datorer som levereras från Contoso. Sammy anger en kvantitet på 5 på en produktinleverans. Eftersom inköpsordern har inlevererats helt, ändras statusen för inköpsordern till Inlevererad.
 2.  April, leverantörsreskontrakoordinatorn på Fabrikam, matar in och verifierar fakturan som skickas in av Contoso. Hon verifierar följande information:
     -   För artiklar, som kräver trevägsmatchning, matchar kvantiteten på fakturaraden den kvantitet som har tagits emot. Den mottagna kvantiteten anges på produktinleveransen som är matchad till fakturan.
     -   För artiklar som kräver tvåvägs- eller trevägsmatchning ligger priserna på fakturaraden inom toleranserna som definieras i Microsoft Dynamics 365 Finance. Detta omfattar följande typer av prismatchning:
@@ -65,7 +65,7 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 
 Pappersfakturan från Contoso innehåller följande information.
 
-| Artikel                        | Antal | Enhetspris | Nettobelopp |
+| Artikel                        | Kvantitet | Enhetspris | Nettobelopp |
 |-----------------------------|----------|------------|------------|
 | 1500 – CNC Milicron-dator | 5        | 8 100,00   | 40,500.00  |
 | Transport och hantering       |          |            | 4,000.00   |
@@ -91,11 +91,11 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 
 ### <a name="prerequisites"></a>Förutsättningar
 
--   Ken anger matchningspolicyn på juridisk personnivån till tvåmatchning.
--   Ken anger fältet Matchprissummor för den juridiska personen till Procentsats och anger 10 % som toleransprocent.
+-   Ken anger **matchningspolicyn** på juridisk personnivån till **tvåmatchning**.
+-   Ken anger fältet **Matchprissummor** för den juridiska personen till **Procentsats** och anger **10 %** som **toleransprocent**.
 -   Ken kan ange pristoleransinformation för alla artiklar 2 %.
--   Cassie anger matchningspolicyn på artikeln och leverantörkombinationsnivån för artikeln PH2500 – dator och leverantör Contoso till trevägsmatchning.
--   Alicia, en inköpsorderansvarig på Fabrikams malaysiska avdelning, utfärdar inköpsorder till Contoso för att leverera tre artiklar som visas i följande tabell. När hon skapar inköpsordern åsidosätter hon matchningspolicyn för att den trådlösa musen ska vara trevägsmatchning i stället för tvåvägsmatchning.
+-   Cassie anger **matchningspolicyn** på artikeln och leverantörkombinationsnivån för artikeln PH2500 – dator och leverantör Contoso till **trevägsmatchning**.
+-   Alicia, en inköpsordeansvarig på Fabrikams malaysiska avdelning, utfärdar inköpsorder till Contoso för att leverera tre artiklar som visas i följande tabell. När hon skapar inköpsordern åsidosätter hon **matchningspolicyn** för att den trådlösa musen ska vara trevägsmatchning i stället för tvåvägsmatchning.
 
     | Artikelnummer           | Kvantitet | Enhetspris | Nettobelopp | Matchningspolicy (standardvärde) | Matchningspolicy (på inköpsorderraden) |
     |-----------------------|----------|------------|------------|---------------------------------|----------------------------------------------|
@@ -114,7 +114,7 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 
 Pappersfakturan från Contoso innehåller följande information.
 
-| Artikel                  | Antal | Enhetspris | Nettobelopp |
+| Artikel                  | Kvantitet | Enhetspris | Nettobelopp |
 |-----------------------|----------|------------|------------|
 | PH2500 – dator     | 2        | 2 500,00   | 5 000,00   |
 | MM01 – Trådlös mus | 2        | 41.00      | 82.00      |
@@ -134,7 +134,7 @@ Observera följande artiklar:
 -   För MM01 – trådlös mus, har kolumnen för produktinleveransmatchning en varningsikon, eftersom fakturarraden inte matchas till en produktinleverans. Kolumnen Matchning av enhetspris har en varningsikon, eftersom nettopristoleransen på 2 % överskrids.
 -   För USB-enhetsraden är kolumnen Matchning av kvantitet för produktinleverans tom eftersom tvåvägsmatchning inte matchar fakturarad och kvantiteter för produktinleveransrad.
 
-Om godkännande krävs för att fakturorna ska bokföras med fakturamatchningsavvikelser, måste Godkänn bokföring med växling av matchningsdiskrepans på sidan Fakturamatchningsdetaljer väljas innan fakturan kan bokföras med prismatchningsfel och kvantitetmatchningsfel. Om godkännande inte krävs kan fakturabearbetning fortsätta om det inte finns några andra bokföringsfel.
+Om godkännande krävs för att fakturorna ska bokföras med fakturamatchningsavvikelser, måste **Godkänn bokföring med växling av matchningsdiskrepans** på sidan **Fakturamatchningsdetaljer** väljas innan fakturan kan bokföras med prismatchningsfel och kvantitetmatchningsfel. Om godkännande inte krävs kan fakturabearbetning fortsätta om det inte finns några andra bokföringsfel.
 
 
 Mer information finns i [Översikt över fakturamatchning för leverantörsreskontra](accounts-payable-invoice-matching.md).

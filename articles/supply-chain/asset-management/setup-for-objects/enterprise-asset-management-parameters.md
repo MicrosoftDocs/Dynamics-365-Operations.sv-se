@@ -1,12 +1,10 @@
 ---
 title: Parametrar för tillgångshantering
 description: I tillgångshantering måste allmänna parametrar som hänför sig till tillgångar, arbetsorder och schemaläggning av arbetsorder ställas in.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1659fd3b4c173ffe09f245631309d329bba5b1bd
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020664"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105499"
 ---
 # <a name="asset-management-parameters"></a>Parametrar för tillgångshantering
 
@@ -51,7 +49,7 @@ På fliken **Arbetsorder** finns följande inställningar:
 - **Standardarbetsordertyp** definierar standardinställningar när du skapar en arbetsorder.  
 - **Förebyggande arbetsordertyp** definierar den arbetsordertyp som används när du skapar arbetsorder från underhållsplaner. Om fältet lämnas tomt används arbetsordertypen i fältet **standardarbetsordertyp**.  
 - I fältet **relaterad arbetsordermask** definierar du det maximala antalet arbetsorder som kan relateras till en arbetsorder. Till exempel ## låter dig ha upp till 99 relaterade arbetsorder. Om du definierar en mask enligt beskrivningen här kommer relaterade arbetsorder att numreras [arbetsorder-ID för arbetsordern som en arbetsorder är relaterad till]-01, -02, -03 och så vidare. Om du inte definierar en mask i det här fältet kommer en relaterad arbetsorder att få nästa sekventiella arbetsorder-ID.  
-- Välj **Ja** för **Kopieringsfel** som du automatiskt vill kopiera fel som registrerats på arbetsorder till relaterade underhållsbegäran. 
+- Välj **Ja** för **Kopieringsfel** som du automatiskt vill kopiera fel som registrerade på underhållsförfrågningar till relaterade arbetsorder. 
 - I fältet **nivå** definierar du den funktionsplatsnivå som infogas automatiskt på en arbetsorder om alla relaterade arbetsorderjobb refererar till samma funktionsplats. Om inte alla arbetsorderjobb relaterar till samma funktionsplats på den definierade nivån, lämnas fältet **funktionsplats** tomt på arbetsordern. Om du till exempel infogar siffran "1" i det här fältet är det den översta nivån i en funktionsplatsstruktur. Om du infogar siffran "0" i det här fältet har du inte definierat en specifik funktionsplatsnivå, endast att alla arbetsorderjobb på en arbetsorder måste relateras till samma funktionsplats för att funktionsplatsen ska läggas till i arbetsordern.  
 - Journaler som används vid bokföring av förbrukning på en arbetsorder kan väljas på snabbfliken **allmänt** i fälten **timme**, **artikel** och **utgift**.  
 - I fältet **produktensspråkkälla** väljer du vilket språk som ska användas för produktnamn i tillgångshanteringsrapporter. Du kan välja det språk som ställts in på företagskontot eller det språk som ställts in för den inloggade användaren.  
@@ -101,8 +99,11 @@ Fälten som beskrivs i följande lista relaterar till beräknade bedömningspoä
 
 ## <a name="the-document-types-tab"></a>Fliken Dokumenttyper
 
-Välj de dokumenttyper som ska vara tillgängliga för utskrift av bilagor relaterade till en arbetsorderrapport. Detta görs genom att välja en dokumenttyp i avsnittet **tillgängliga** och välja ![framåtpilknappen](media/15-setup-for-objects.png). Om du vill ta bort en vald dokumenttyp väljer du dokumenttypen i avsnittet **Markerade** och klickar på ![bakåtpilknappen](media/16-setup-for-objects.png).
+Välj de dokumenttyper som ska vara tillgängliga för utskrift av bilagor relaterade till en arbetsorderrapport. Detta görs genom att välja en dokumenttyp i avsnittet **tillgängliga** och välja ![framåtpilknappen.](media/15-setup-for-objects.png). Om du vill ta bort en vald dokumenttyp väljer du dokumenttypen i avsnittet **Markerade** och klickar på ![bakåtpilknappen](media/16-setup-for-objects.png).
 
 ## <a name="the-number-sequences-tab"></a>Fliken Nummerserie
 
 Välj de nummerserier som krävs i det här avsnittet. Det finns två nummerserier för tillgångar: en för manuellt skapade tillgångar och en för tillgångar som skapats via väntande tillgångar.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

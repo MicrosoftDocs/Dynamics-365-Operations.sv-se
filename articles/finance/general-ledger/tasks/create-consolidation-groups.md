@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerConsolidateAccountGroup, MainAccountConsolidateAccount
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0f146eca39ef3aa690eb69283371d40c5c6d439bd868f1aa4763ffa76c8f682
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eaf48306607b27c70359e0d0faee4c92f4b82cac
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757059"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182614"
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a>Skapa konsolideringsgrupper och ytterligare konsolideringskonton
 
@@ -28,21 +28,20 @@ I den här proceduren ser du hur du skapar en konsolideringskontogrupp och sedan
 
 
 ## <a name="create-a-consolidation-account-group"></a>Skapa en konsolideringskontogrupp
-1. Gå till Redovisning > Kontoplan > Konton > Konsolideringskontogrupper.
-2. Klicka på Ny.
-3. I fältet Konsolideringskontogrupp anger du en unik identifierare för konsolideringskontogruppen.
-4. Skriv ett värde i fältet Namn.
+1. Gå till **Redovisning > Kontoplan > Konton > Konsolideringskontogrupper**.
+2. Klicka på **Ny**.
+3. I fältet **Konsolideringskontogrupp** anger du en unik identifierare för konsolideringskontogruppen.
+4. Skriv ett värde i fältet **Namn**.
 
 ## <a name="add-accounts-to-consolidation-account-group"></a>Lägg till konton i konsolideringskontogrupp
-1. Stäng sidan.
-2. Gå till Redovisning > Kontoplan > Konton > Ytterligare konsolideringskonton.
-3. Klicka på Ny.
-4. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Huvudkonto.
-5. Klicka på huvudkontot som du vill mappa i listan.
-6. I fältet Konsolideringskontogrupp öppnar du sökningen genom att klicka på den nedrullningsbara knappen.
-7. Klicka på konsolideringskontogruppen i listan.
-8. Skriv ett värde i fältet Konsolideringskonto.
-9. Skriv ett värde i fältet Konsolideringskontonamn.
+1. Gå till Redovisning > Kontoplan > Konton > Ytterligare konsolideringskonton.
+2. Klicka på Ny.
+3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Huvudkonto.
+4. Klicka på huvudkontot som du vill mappa i listan.
+5. I fältet Konsolideringskontogrupp öppnar du sökningen genom att klicka på den nedrullningsbara knappen.
+6. Klicka på konsolideringskontogruppen i listan.
+7. Skriv ett värde i fältet Konsolideringskonto.
+8. Skriv ett värde i fältet Konsolideringskontonamn.
 
 
 

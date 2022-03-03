@@ -2,23 +2,23 @@
 title: Registrera leverantörsfakturan och matcha mot mottagen kvantitet
 description: När du får en faktura från en leverantör för varor eller tjänster på en inköpsorder kanske affärsprocesserna kräver att varorna eller tjänsterna inlevereras innan fakturan godkänns för betalning.
 author: ShivamPandey-msft
-ms.date: 08/29/2018
+ms.date: 02/11/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 352e188dcd25b486a1284be6958f44a5543f222c358153557366f9bdcc209f05
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a3f1463821a43af0d8d5f15225944b080414e4c
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722921"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109928"
 ---
 # <a name="record-vendor-invoice-and-match-against-received-quantity"></a>Registrera leverantörsfakturan och matcha mot mottagen kvantitet
 
@@ -26,41 +26,41 @@ ms.locfileid: "6722921"
 
 När du får en faktura från en leverantör för varor eller tjänster på en inköpsorder kanske affärsprocesserna kräver att varorna eller tjänsterna inlevereras innan fakturan godkänns för betalning. Innan du börjar kontrollerar du att konfigurationsnyckeln för fakturamatchning har valts. 
 
-På sidan med leverantörsreskontraparametrarna kontrollerar du att alternativet Aktivera fakturamatchningsvalidering har valts, fältet Bokför faktura med avvikelser har ställts in som Begär godkännande och fältet Radmatchningspolicy har ställts in som Trevägsmatchning.
+På sidan med **leverantörsreskontraparametrarna** kontrollerar du att alternativet **Aktivera fakturamatchningsvalidering** har valts, fältet **Bokför faktura med avvikelser** har ställts in som **Begär godkännande** och fältet **Radmatchningspolicy** har ställts in som **Trevägsmatchning**.
 
 I den här proceduren används demonstrationsföretaget USMF. Leverantörsreskontrachefsrollen eller redovisningschefsrollen ska utföra stegen nedan.
 
 
 ## <a name="create-a-purchase-order"></a>Skapa en inköpsorder
 1. Gå till Alla inköpsorder.
-2. Klicka på Ny.
-3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Leverantörskonto.
-4. Ange ett värde i fältet Leverantörskonto.
-5. Klicka på OK.
-6. Klicka på Lägg till rad.
-7. Skriv ett värde i fältet Artikelnummer.
-8. Klicka på Inköp i åtgärdsfönstret.
-9. Klicka på Bekräfta.
+2. Klicka på **Ny**.
+3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Leverantörskonto**.
+4. I fältet **Leverantörskonto**, skriv ett värde.
+5. Klicka på **OK**.
+6. Klicka på **Lägg till rad**.
+7. I fältet **Artikelnummer**, skriv ett värde.
+8. I åtgärdsrutan, klicka på **Köp**.
+9. Klicka på **Bekräfta**.
 
 ## <a name="post-a-product-receipt"></a>Bokför en produktinleverans
-1. Klicka på Ta emot i åtgärdsfönstret.
-2. Klicka på Produktinleverans.
+1. I åtgärdsrutan, klicka på **Ta emot**.
+2. Klicka på **Produktinleverans**.
 3. Markera vald rad i listan.
-4. Skriv ett värde i fältet Produktinleverans.
-5. Klicka på OK.
+4. I fältet **Produktinleverans**, skriv ett värde.
+5. Klicka på **OK**.
 
 ## <a name="record-and-match-a-vendor-invoice-to-a-product-receipt"></a>Registrera och matcha en leverantörsfaktura mot en produktinleverans
-1. Klicka på Faktura i åtgärdsfönstret.
-2. Klicka på Faktura.
-3. Ange ett värde i fältet Antal.
-4. Klicka på Standard från: Beställd kvantitet för att öppna dialogrutan.
-5. I fältet Standardkvantitet för rader, välj ett alternativ.
-6. Klicka på OK.
-7. Klicka på Ja.
-8. Klicka på Matcha produktinleveranser.
-9. Klicka på OK.
-10. Klicka på Granska i åtgärdsfönstret.
-11. Klicka på Matcha detaljer.
+1. I åtgärdsrutan, klicka på **Faktura**.
+2. Klicka på **faktura**.
+3. I fältet **Antal**, skriv ett värde.
+4. Klicka på **Standard från: Beställd kvantitet** för att öppna dialogrutan.
+5. I fältet **Standardkvantitet för rader**, välj ett alternativ.
+6. Klicka på **OK**.
+7. Klicka på **Ja**.
+8. Klicka på **Matcha produktinleveranser**.
+9. Klicka på **OK**.
+10. Klicka på **Granska** i åtgärdsrutan.
+11. Klicka på **Matcha detaljer**.
 
 
 

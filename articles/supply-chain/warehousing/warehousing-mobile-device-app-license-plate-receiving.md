@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 872a08241f3d0156d0ccf1f89443e3a894656404
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 6663188334c70035906f924c7850a0dc5002f306
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777635"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103073"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>ID-nummer tar emot via mobilappen för distributionslagerhantering
 
@@ -77,15 +77,13 @@ När den här funktionen är aktiverad visas ett menyalternativ för mobila enhe
 - **Visa en detaljerad sammanfattning** – under inleverans av ID-nummer ser arbetarna en extra sida med den fullständiga ASN-informationen.
 - **Hoppa över sammanfattningen** – arbetarna ser inte hela ASN-informationen. Lagerarbetarna inte heller ange en dispositionskod eller lägga till undantag under inleveransprocessen.
 
-Om du vill göra den här funktionen tillgänglig i systemet måste du aktivera funktionen *Kontrollera om du vill visa en sida för sammanfattning av inleveranser på mobila enheter* i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard.)
+Om du vill göra den här funktionen tillgänglig i systemet måste du aktivera funktionen K *ontrollera om du vill visa en sida för sammanfattning av inleveranser på mobila enheter* i funktionshanteringen. Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version äldre än 10.0.25 kan administratörer aktivera eller inaktivera denna funktion genom att söka efter funktionen *Kontrollera om en sammanfattningssida för inleverans ska visas på mobila enheter* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Förhindra överföringsorder – de levererade ID-numren används inte på andra lagerställen än lagerstället vid destinationen
 
 En inleveransprocess av ID-nummer kan inte användas om ett ASN innehåller ett ID-nummer som redan finns och som har fysiska behållningsdata på ett annat lagerställe än det där registrering av ID-numret.
 
-För scenarion för överföringsorder där transportlager inte spårar ID-nummer (och därför inte heller spårar fysisk lagerbehållning per ID-nummer) kan du använda funktionen *Förhindra överföringsorder för de levererade ID-numren att användas på andra lagerställen än lagerstället vid destinationen* för att förhindra att fysiska lageruppdateringar av ID-nummer som är under transport.
-
-Om du vill göra den här funktionen tillgänglig på ditt system måste du aktivera funktionen *Förhindra överföringsorder för de levererade ID-numren att användas på andra lagerställen än lagerstället vid destinationen* i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+För scenarion för överföringsorder där transportlager inte spårar ID-nummer (och därför inte heller spårar fysisk lagerbehållning per ID-nummer) kan du använda funktionen *Förhindra överföringsorder för de levererade ID-numren att användas på andra lagerställen än lagerstället vid destinationen* för att förhindra att fysiska lageruppdateringar av ID-nummer som är under transport. Om du vill göra den här funktionen tillgänglig på ditt system måste du aktivera funktionen *Förhindra överföringsorder för de levererade ID-numren att användas på andra lagerställen än lagerstället vid destinationen* i funktionshantering. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter den i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Om du vill hantera funktionerna när den här funktionen är tillgänglig följer du stegen nedan.
 

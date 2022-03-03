@@ -2,15 +2,12 @@
 title: Modulen för navigeringssökväg
 description: Det här avsnittet handlar om moduler för navigeringssökväg och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ec9f5c72b03d9fd76055369e24491db5c7633cdf
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: f387b6353e58ebb454b74568ddc17ae6d25d7e36
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517170"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109742"
 ---
-# <a name="breadcrumb-module"></a>Modulen för navigeringssökväg
+# <a name="breadcrumb-module"></a>Modul för navigeringssökväg
 
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet handlar om moduler för navigeringssökväg och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 Med hjälp av moduler för navigeringssökväg navigering kan du navigera på webbplatssidorna. De visas vanligtvis längst upp på sidan, under rubriken. Även om det går att lägga till moduler för navigeringssökväg på en sida, används de oftast på produktinformationssidor (PDP), för att visa produktkategorihierarki och ett snabbt sätt att flytta runt på en webbplats. En modul för navigeringssökväg kan också användas för att visa länken "tillbaka till resultat" när användaren öppnar ett PDP från en sökning eller en listsida. På så sätt kan användarna snabbt gå tillbaka till deras filtrerade listsidor och fortsätta handla.
 
@@ -42,7 +37,7 @@ På sidor som har produktkategorikontext, t.ex. PDP och kategorisidor, visar mod
 
 Följande bild visar ett exempel på en modul för navigeringssökväg som visar kategorihierarkin på ett PDP.
 
-![Exempel på en modulen för navigeringssökväg](./media/ecommerce-breadcrumb.PNG)
+![Exempel på en modul för navigeringssökväg.](./media/ecommerce-breadcrumb.PNG)
 
 ## <a name="breadcrumb-module-settings"></a>Inställningar för moduler för navigeringssökväg
 
@@ -86,7 +81,7 @@ Om du vill lägga till en modul för navigeringssökväg till en PDP och ställa
 
 [Modul för navigeringsmeny](nav-menu-module.md)
 
-[Modul för webbplatsväljare](site-selector.md)
+[Webbplatsväljarmodul](site-selector.md)
 
 [Översikt över standardkategorilandningssida och sida för sökresultat](category-search-page-overview.md)
 
@@ -95,3 +90,6 @@ Om du vill lägga till en modul för navigeringssökväg till en PDP och ställa
 [Modul för inköpsruta](add-buy-box.md)
 
 [Uppdateringar av SDK och modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

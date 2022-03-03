@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 5311c13154baafdc7225ee869b3ef524eecc0d00
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 9055e4c6e35099b7769faa6fc83f71523f2e64fd
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778363"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103900"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Layout för dokumentflöde för ID-nummeretiketter
 
@@ -53,7 +53,7 @@ Många av de vanligaste verktygen för att skapa etiketter kan användas för at
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Aktivera funktionen i systemet
 
-Om ditt system inte redan innehåller funktionerna som beskrivs i det här avsnittet, gå till [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktivera funktionen *Förbättrade etikettlayouter på registreringsskyltar*. (Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard.)
+Om ditt system inte redan innehåller funktionerna som beskrivs i det här avsnittet, gå till [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktivera funktionen *Förbättrade etikettlayouter på registreringsskyltar*. (Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras.)
 
 ## <a name="custom-number-formats"></a>Anpassade nummerformat
 

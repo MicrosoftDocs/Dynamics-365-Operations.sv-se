@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c65f929120d2501fa3873880179a9b53ab79c60c73fd4d597fb6151b1c5bb2b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 31953fd29c471e52bd63dbb02c20f5f224c3cae2
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720406"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103054"
 ---
 # <a name="manage-changes-in-formulas-and-their-ingredients"></a>Hantera ändringar i formler och deras ingredienser
 
@@ -27,12 +27,9 @@ Om du använder processtillverkningsfunktionerna för Microsoft Dynamics 365 Sup
 - **Samprodukter och biprodukter:** Redigera kvantiteter och annan information om samprodukterna och biprodukterna i en formel.
 - **Faktisk/nominell vikt:** Hantera ändringar av faktisk/nominell vikt.
 
-## <a name="turn-on-this-feature-in-your-system"></a>Aktivera funktionen i systemet
+## <a name="turn-this-feature-on-or-off"></a>Aktivera eller inaktivera funktionen
 
-Om du vill använda denna funktion måste du utföra följande uppgifter:
-
-1. Aktivera *konstruktionsändringshantering*-funktionen och dess konfigurationsnyckel som beskrivs i [Översikt över konstruktionsändringshantering](product-engineering-overview.md). Som nämns i det ämnet, se till att du också aktiverar licensnyckeln **Ändringshantering för processtillverkning** som finns kapslad under huvudlicensnyckeln **Teknikändringshantering**.
-1. Aktivera funktionen *Hantera ändringar av formler och deras ingredienser* i [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Funktionen som beskrivs i detta ämne kräver att både funktionen *Konstruktionsändringshantering* och *Hantera formeländringar och deras ingredienser* är aktiverad för systemet. Information om hur du aktiverar och inaktiverar funktionerna finns i [Översikt över hantering av tekniska ändringar](product-engineering-overview.md).
 
 ## <a name="feature-naming-conventions"></a>Namnkonventioner för funktioner
 

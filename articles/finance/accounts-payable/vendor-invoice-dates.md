@@ -2,25 +2,25 @@
 title: Datum för leverantörsfaktura
 description: I det här avsnittet beskrivs de datum som visas på leverantörsfakturor. Det förklarar även hur du ställer in systemet så att bokföringsdatumet justeras automatiskt.
 author: sunfzam
-ms.date: 08/30/2021
+ms.date: 2/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: a066f828b47f297b8ad520b9eb0f4f311d49b111
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647912"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105474"
 ---
 # <a name="vendor-invoice-dates"></a>Datum för leverantörsfaktura
 
@@ -50,6 +50,9 @@ Följ dessa steg om du vill att systemet automatiskt ska justera bokföringsdatu
     - **Ändra alltid bokföringsdatum till systemdatum** – Systemet ändrar automatiskt bokföringsdatumet till systemdatumet vid bokföring.
     - **Ändra bokföringsdatum till systemdatum när bokföringens datumperiod är stängd eller spärrad** – Systemet ändrar bokföringsdatum till systemdatum under bokföring, men endast om motsvarande period för bokföringsdatum har statusen **Stängd** eller **Spärrad**.
     - **Ändra bokföringsdatum till första dagen av den nya perioden när bokföringens datumperiod är stängd eller spärrad** – Systemet ändrar bokföringsdatum till den första dagen av den nya öppna perioden, men endast om motsvarande period för bokföringsdatum har statusen **Stängd** eller **Spärrad**.
+
+> [!NOTE]
+> Om det nya bokföringsdatumet som justerades automatiskt är i ett nytt räkenskapsår, uppdateras inte bokföringsdatumet för fakturan. Användaren får ett felmeddelande "Räkenskapsåret har ändrats. Kontrollera och ange bokföringsdatumet på samma sätt." Datumet för fakturans bokföring måste uppdateras till det nya räkenskapsåret för att det ska gå att bokföra.
 
 ## <a name="impact-of-posting-date-changes"></a>Inverkan på ändringar av bokföringsdatum
 

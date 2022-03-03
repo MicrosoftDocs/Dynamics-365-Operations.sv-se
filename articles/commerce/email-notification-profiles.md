@@ -2,7 +2,7 @@
 title: Ange en meddelandeprofil för e-post
 description: I det här avsnittet beskrivs hur du skapar en meddelandeprofil för e-post i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 02/02/2022
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 7a7d796a173a6f9dfcd62e1f73e078cac614145e
-ms.sourcegitcommit: 2aca3a95d42403c7f5d80dcd5e3ee958dca5c894
+ms.openlocfilehash: 9f7adffd67e8198d16e4f7ed4fc4aadf59071b1d
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8087877"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109641"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Ställa in en meddelandeprofil för e-post
 
@@ -80,6 +80,19 @@ I bilden nedan visas några exempel på Inställningar för meddelande för hän
 
 > [!NOTE]
 > Den kund som har skapat notifieringstypen kräver att en anpassning måste implementeras innan ett e-postmeddelande kan skickas.
+
+### <a name="schedule-a-recurring-email-notification-process-job"></a>Tidsplana ett återkommande jobb med e-postaviseringar
+
+Om du vill skicka ut e-postmeddelanden måste du köra jobbet **Bearbeta butikorders e-postmeddelande**.
+
+Om du vill ställa in fliken **Bearbeta butikorders e-postmeddelande** i Commerce-administration om du inte redan har gjort det, följer du dessa steg.
+
+1. Gå till **Butik och handel \> Butik och handel IT \> E-post och meddelanden \> Skicka e-postmeddelanden**.
+1. I dialogrutan **Bearbeta butikorders e-postmeddelande** välj **Återkommande**.
+1. I dialogrutan **Definiera upprepning** välj **Inget slutdatum**.
+1. Under **Upprepningsmönster**, välj **Minuter**, och ställ sedan in fältet **Antal** till **1**. Via de här inställningarna kan e-postmeddelandena bearbetas så snabbt som möjligt.
+1. Välj **OK** för att återgå till dialogrutan **Bearbeta butikorders e-postmeddelande**.
+1. Välj **OK** för att slutföra konfigurationen av jobbet.
 
 ### <a name="next-steps"></a>Nästa steg
 

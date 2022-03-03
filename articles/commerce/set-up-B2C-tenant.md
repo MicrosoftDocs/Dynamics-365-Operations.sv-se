@@ -2,27 +2,24 @@
 title: Ställa in en B2C-innehavare i Commerce
 description: I det här avsnittet beskrivs hur du ställer in din Azure Active Directory (Azure AD) B2C-innehavare (Business-to-Consumer) för autentisering av användarplats i Dynamics 365 Commerce.
 author: BrianShook
-manager: annbe
-ms.date: 06/22/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af2ec75328b6377c5d92656d011d21576417a63f
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: d4cbb117e47940491266134fb1e2dbe87374d4a3
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517390"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109899"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Ställa in en B2C-innehavare i Commerce
 
@@ -30,66 +27,99 @@ ms.locfileid: "4517390"
 
 I det här avsnittet beskrivs hur du ställer in din Azure Active Directory (Azure AD) B2C-innehavare (Business-to-Consumer) för autentisering av användarplats i Dynamics 365 Commerce.
 
-## <a name="overview"></a>Översikt
-
 Dynamics 365 Commerce använder Azure AD B2C för att stödja autentiseringsuppgifter för användare och verifikationsflöden. En användare kan registrera sig, logga in och återställa sitt lösenord genom dessa flöden. Azure AD B2C lagrar känslig information om användarautentisering, t.ex. användarnamn och lösenord. Användarposten i B2C-innehavaren kommer att lagra antingen en B2C lokal kontopost eller en post för en B2C social identitetsleverantör. Dessa B2C-poster kommer att länkas tillbaka till kundposten i Commerce-miljön.
 
-## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Skapa eller länka till en befintlig AAD B2C-klientorganisation i Azure-portalen
+> [!WARNING] 
+> Azure AD B2C drar tillbaka gamla (äldre) användarflöden senast den 1 augusti 2021. Därför bör du planera att flytta dina användarflöden till den nya rekommenderade versionen. Den nya versionen innehåller funktionen paritet och nya funktioner. Modulbiblioteket för Commerce version 10.0.15 eller högre ska användas med de rekommenderade B2C-användarflödena. Mer information finns i [Arbetsflöden i Azure Active Directory B2C](/azure/active-directory-b2c/user-flow-overview).
+ 
+ > [!NOTE]
+ > Utvärderingsmiljöer för Commerce kommer med en förinläst Azure AD B2C-innehavare för demonstration. Inläsning av din egen Azure AD B2C-innehavare med hjälp av stegen nedan krävs inte för utvärderingsmiljöer.
+
+> [!TIP]
+> Du kan skydda dina webbplatsanvändare ytterligare och förbättra säkerheten för dina Azure ADB2C-klientorganisationer idenhetsskydd och villkorlig åtkomst för Azure AD. Information om hur du granskar funktionerna för Azure AD B2C Premium P1- och Premium P2-innehavare finns i [Idenhetsskydd och villkorlig åtkomst för Azure AD B2C ](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
+
+## <a name="dynamics-environment-prerequisites"></a>Förutsättningar för Dynamics-miljö
+
+Innan du börjar måste du se till att din Dynamics 365 Commerce-miljö och näthandelskanal är konfigurerad på rätt sätt genom att uppfylla följande förutsättningar.
+
+- Ställ in kassaåtgärders värde **AllowAnonymousAccess** till "1" i Commerce headquarters:
+    1. Gå till **Kassaåtgärder**.
+    1. I åtgärdsrutnätet, högerklicka och välj **Personanpassa**.
+    1. Välj **Lägg till ett fält**.
+    1. I listan över tillgängliga kolumner väljer du kolumnen **AllowAnonyousAccess** för att lägga till den.
+    1. Välj **Uppdatera**.
+    1. För åtgärden **612** "Lägga till kund" ändrar du **AllowAnonymousAccess** till "1."
+    1. Kör jobbet **1090 (register)**.
+- Ställ in nummerseriekundkontots attribut **Manuellt** till **Nej** i Commerce Headquarters:
+    1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> Parametrar för kundreskontra**.
+    1. Välj **Nummerserier**.
+    1. Dubbelklicka på värdet för **Nummerseriekod** på raden **Kundkonto**.
+    1. På snabbfliken **Allmänt** för nummerserien ställer du in **Manuellt** till **Nej**.
+
+När du har distribuerat din Dynamics 365 Commerce-miljö bör du också [initiera startdata](enable-configure-retail-functionality.md) i miljön.
+
+## <a name="create-or-link-to-an-existing-azure-ad-b2c-tenant-in-the-azure-portal"></a>Skapa eller länka till en befintlig Azure AD B2C-klientorganisation i Azure-portalen
+
+Det här avsnittet innehåller information om hur du skapar eller länkar en Azure AD B2C-innehavare som ska användas på din handelsplats. Mer information finns i [Självstudie: Skapa en Azure Active Directory B2C klientorganisation](/azure/active-directory-b2c/tutorial-create-tenant).
 
 1. Logga in på [Azure-portal](https://portal.azure.com/).
 1. Från Azure-portal menyn, välj **skapa en resurs**. Se till att använda den prenumeration och katalog som kommer att vara ansluten till din Commerce-miljö.
 
-    ![Skapa en resurs i Azure-portalen](./media/B2CImage_1.png)
+    ![Skapa en resurs i Azure-portalen.](./media/B2CImage_1.png)
 
 1. Gå till **identitet \>Azure Active Directory B2C**.
 1. På sidan **Skapa ny B2C-klient eller länk till befintlig klient** använder du ett av alternativen nedan som bäst passar ditt företags behov:
 
-    - **Skapa en ny Azure AD B2C-innehavare**: Använd det här alternativet om du vill skapa en ny AAD B2C-innehavare.
+    - **Skapa en ny Azure AD B2C innehavare**: Använd det här alternativet om du vill skapa en ny Azure AD B2C innehavare.
         1. Välj **Skapa ett nytt Azure AD B2C-innehavare**.
         1. Ange **organisationsnamnet** under organisationsnamn.
         1. Under **Initialt domännamn**, ange initialt domännamn.
         1. För **land eller region** välj land eller region.
         1. Välj **skapa** om du vill skapa innehavaren.
 
-     ![Skapa en ny Azure AD innehavare](./media/B2CImage_2.png)
+     ![Skapa en ny Azure AD-klientorganisation.](./media/B2CImage_2.png)
 
      - **Länka en befintlig Azure AD B2C-innehavare till min Azure-prenumeration**: Använd det här alternativet om du redan har en Azure AD B2C innehavare som du vill länka till.
         1. Välj **länka en befintlig Azure AD B2C-klient till mitt Azure-abonnemang**.
         1. Välj **Azure AD B2C innehavare** välj för B2C-innehavaren. Om meddelandet "inga bidragsberättigande B2C-innehavare hittades" visas i urvalsrutan har du inte en giltig B2C klientorganisation och behöver skapa en ny.
         1. För **Resursgrupp**, välj **Skapa nya**. Ange ett **namn** på den resursgrupp som ska innehålla innehavaren, välj **Välj resursgruppens plats** och välj **sedan skapa**.
 
-    ![Länka en befintlig Azure AD B2C innehavare till Azure abonnemang](./media/B2CImage_3.png)
+    ![Länka en befintlig Azure AD B2C-klientorganisation till ett Azure-abonnemang.](./media/B2CImage_3.png)
 
 1. När den nya Azure AD B2C skapas (detta kan ta en stund) visas en länk till den nya katalogen på instrumentpanelen. Länken leder till sidan "Välkommen till Azure Active Directory B2C".
 
-    ![Länk till ny AAD-katalog](./media/B2CImage_4.png)
+    ![Länk till ny Azure AD-katalog](./media/B2CImage_4.png)
 
 > [!NOTE]
 > Om du har flera prenumerationer inom ditt Azure-konto eller har ställt in B2C-klienten utan att länka till en aktiv **prenumeration**, kommer en felsökningsannons att leda till att du kopplar klienten till en prenumeration. Markera felsökningsmeddelandet och följ instruktionerna för att lösa prenumerationsproblemet.
 
 Följande bild visar ett exempel på en Azure AD B2C **felsökning** banderoll.
 
-![Varnings visar av katalog har ingen aktiv prenumeration](./media/B2CImage_5.png)
+![Varnings som anger att katalogen inte har någon aktiv prenumeration.](./media/B2CImage_5.png)
 
 ## <a name="create-the-b2c-application"></a>Skapa B2C-applikationen
 
-När B2C-innehavaren har skapats kommer du att skapa ett B2C-program inom innehavaren för att samverka med Commerce-åtgärderna.
+När B2C-innehavaren har skapats kommer du att skapa ett B2C-program inom din nya Azure AD B2C-innehavare för att samverka med Commerce.
 
 Gör så här om du vill skapa ett B2C-applikation.
 
-1. Markera **Program (äldre)** och välj **Lägg till** i Azure-portalen.
-1. Under **namn** anger du namnet på det önskade AAD B2C-programmet.
-1. Under **Webbapp/Webb-API**, för **Inkludera webbapp/webb-API**, välj **Ja**.
-1. För **Tillåt implicit flöde**, välj **Ja** (standardvärde).
-1. Ange **Svars-URL** för svar under svars-URL. Se [besvara URL](#reply-urls) nedan för information om svars-URL:er och hur du formaterar dem.
-1. För **Inkludera inhemsk klient**, välj **Nej** (standardvärdet).
-1. Markera **Skapa**.
+1. I Azure-portalen, gå till **Appregistreringar** och välj **Ny registrering**.
+1. Under **Namn** anger du det namn som ska ge den här Azure AD B2C-applikationen.
+1. Under **Kontotyper som stöds**, välj **Konton i valfri identitetsleverantör eller organisationskatalog (för autentisering av användare med användarflöden)**.
+1. För **Omdirigerings-URI** anger du de dedikerade svars-URL av typen **Webb**. För information på svar-URL och hur du formaterar dem, se [Svars-URL](#reply-urls) nedan. En URL för omdirigerad URI/svar måste anges för att det ska gå att omdirigera från Azure AD B2C tillbaka till webbplatsen när en användare autentiserar. Svars-URL kan läggas till under registreringsprocessen eller läggas till senare genom att du väljer länken **Lägg till en omdirigerad URI** från menyn **Översikt** i avsnittet **Översikt** för B2C-programmets översikt.
+1. För **Behörigheter**, välj **Bevilja administratörens samtycke till openid och offline_access behörigheter**.
+1. Välj **Registrera**.
+1. Välj det nyskapade programmet och navigera till menyn **Autentisering**. 
+1. Om en svars-URL anges, under **Implicita bidrag och hybridflöden** välj både alternativet **Åtkomsttoken** och **ID-token** för att aktivera dem för programmet och välj sedan **Spara**. Om ingen svars-URL har angetts under registreringen kan den också läggas till på den här sidan genom att välja **Lägg till en plattform**, välja **webb** och sedan ange program- och omdirigerar-URI. Avsnitten **Implicita bidrag och hybridflöden** är tillgänglig för att välja både **Åtkomsttoken** och **ID-token**.
+1. Gå till menyn **Översikt** i Azure-portal och kopiera **Program-ID (klient)**. Notera detta ID för senare installationssteg (refereras senare till som **Klient GUID**).
+
+För ytterligare referens om appregistreringar i Azure AD B2C, se [Den nya appregistreringsupplevelsen för Azure Active Directory B2C](/azure/active-directory-b2c/app-registrations-training-guide)
 
 ### <a name="reply-urls"></a>Svars-URL
 
 Svars-URL är viktiga eftersom de ger en tillåten-lista med returdomänerna när platsen anropar Azure AD B2C för autentisering av en användare. På så sätt tillåts den autentiserade användaren returnera tillbaka till den domän som de loggar in på (din webbplatsdomän). 
 
-I rutan **Svars-URL** på skärmen **Azure AD B2C - program \> Ny program** måste du lägga till separata rader för både din webbplatsdomän och (när din miljö har etablerats) den URL som genereras av Commerce. URL-adresserna får alltid använda ett giltigt URL-format och måste bara vara bas-URL:er (inga snedstreck eller sökvägar kan avslutas). Strängen ``/_msdyn365/authresp`` måste läggas till i bas-URL:erna, som i följande exempel.
+I rutan **Svars-URL** på skärmen **Azure AD B2C – program \> Ny program** måste du lägga till separata rader för både din webbplatsdomän och (när din miljö har etablerats) den URL som genereras av Commerce. URL-adresserna får alltid använda ett giltigt URL-format och måste bara vara bas-URL:er (inga snedstreck eller sökvägar kan avslutas). Strängen ``/_msdyn365/authresp`` måste läggas till i bas-URL:erna, som i följande exempel.
 
 - ``https://www.fabrikam.com/_msdyn365/authresp`` (Domänen ska matcha näthandelsdomänen helt. Om du har flera domäner måste du lägga till denna URL för varje domän.)
 - ``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
@@ -103,9 +133,9 @@ Azure AD B2C har tre grundläggande användarflödestyper:
 - Profilredigering
 - Återställ lösenord
 
-Du kan välja att använda standard användarflöden som tillhandahålls av Azure AD, vilket visar en sida som finns i AAD B2C. Du kan också skapa en HTML-sida för att kontrollera hur dessa användarflödesupplevelser ser ut och fungerar. 
+Du kan välja att använda standard användarflöden som tillhandahålls av Azure AD, vilket visar en sida som finns i Azure AD B2C. Du kan också skapa en HTML-sida för att kontrollera hur dessa användarflödesupplevelser ser ut och fungerar. 
 
-Information om hur du anpassar sidorna för Dynamics 365 Commerce finns i [Konfigurera användarsidor för användarinloggningar](custom-pages-user-logins.md). Mer information finns i [Anpassa gränssnittet för användarupplevelser i Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-customize-ui).
+Information om hur du anpassar sidorna med sidorna inbyggda i Dynamics 365 Commerce finns i [Konfigurera användarsidor för användarinloggningar](custom-pages-user-logins.md). Mer information finns i [Anpassa gränssnittet för användarupplevelser i Azure Active Directory B2C](/azure/active-directory-b2c/tutorial-customize-ui).
 
 ### <a name="create-a-sign-up-and-sign-in-user-flow-policy"></a>Skapa en policy för användarflöde för registrering och inloggning
 
@@ -113,11 +143,11 @@ För att skapa en inloggning och policy för användarflöde följ stegen nedan.
 
 1. I Azure-portalen väljer du **Användarflöden (policyer)** i det vänstra navigeringsfönstret.
 1. På sidan **Azure AD B2C – användarflöden (policyer)** väljer du **Nytt användarflöde**.
-1. På fliken **Rekommenderad** välj **registrera dig och logga in**.
+1. Välj policyn **Registrera och logga in** och välj sedan versionen **Rekommenderad**.
 1. Under **Namn**, ange ett policynamn. Det här namnet visas efteråt med ett prefix som portalen tilldelar (t.ex. "B2C_1_").
-1. Under **identitetsleverantörer**, välj lämplig kryssruta.
+1. Under **Identitetsleverantörer**, i avsnittet **Lokala konton**, välj **E-postregistrering**. E-postautentisering används i de vanligaste scenarierna för Commerce. Om du även använder autentisering för personidentitetsprovider, kan du även välja dessa vid den här tidpunkten.
 1. Under **Flerfaktorautentisering** väljer du lämpligt val för ditt företag. 
-1. Under **användarattribut och anspråk** väljer du alternativ för att samla in attribut eller returnera anspråk efter behov. Commerce kräver följande standardalternativ:
+1. Under **användarattribut och anspråk** väljer du alternativ för att samla in attribut eller returnera anspråk efter behov. Välj **Visa mer...** om du vill få den fullständiga listan över attribut- och anspråksalternativ. Commerce kräver följande standardalternativ:
 
     | **Samla in attribut** | **Returnera anspråk** |
     | ---------------------- | ----------------- |
@@ -131,11 +161,8 @@ För att skapa en inloggning och policy för användarflöde följ stegen nedan.
 
 Följande bild är ett exempel på Azure AD B2C registrering och inloggning i användarflödet.
 
-![Inställningar av policyn Registrera och logga in](./media/B2CImage_11.png)
+![Policyinställningar för Registrera och Logga in.](./media/B2CImage_11.png)
 
-I bilden nedan visas alternativet **kör användarflöde** i Azure AD B2C för att registrera och logga in i användarflödet.
-
-![Kör användarflödesalternativ i policyflöde](./media/B2CImage_23.png)
    
 ### <a name="create-a-profile-editing-user-flow-policy"></a>Skapa en profil genom att redigera användarflödespolicy
 
@@ -143,20 +170,24 @@ För att en profilredigering för policy för användarflöde följ stegen nedan
 
 1. I Azure-portalen väljer du **Användarflöden (policyer)** i det vänstra navigeringsfönstret.
 1. På sidan **Azure AD B2C – användarflöden (policyer)** väljer du **Nytt användarflöde**.
-1. På fliken **Rekommenderad**, välj **Profilredigering**.
+1. Välj **Profilredigering** och välj sedan den **rekommenderade** versionen.
 1. Under **namn** anger du användarflödet för profilredigering. Det här namnet visas efteråt med ett prefix som portalen tilldelar (t.ex. "B2C_1_").
-1. Under **identitetsleverantörer**, välj **Inloggning på lokalt konto**.
+1. Under **Identitetsleverantörer**, i avsnittet **Lokala konton**, välj **E-post SignIn**.
 1. Markera en eller flera av följande kryssrutor under **Användarattribut**:
-    - **E-postadresser** (endast **returanspråk**)
-    - **Angivet namn** (**Samla in attribut** och **returanspråk**)
-    - **Identitetsleverantör** (endast **returanspråk**)
-    - **Efternamn** (**Samla in attribut** och **returanspråk**)
-    - **Användarens objekt-ID** (endast **returanspråk**)
+    
+    | **Samla in attribut** | **Returnera anspråk** |
+    | ---------------------- | ----------------- |
+    |                        | E-postadresser   |
+    | Angivet namn             | Angivet namn        |
+    |                        | Identitetsprovider |
+    | Efternamn                | Efternamn           |
+    |                        | Användarens objekt-ID  |
+    
 1. Markera **Skapa**.
 
 Följande bild visar ett exempel på Azure AD B2C-profil som redigerar användarflödet.
 
-![Skapa en användarflödet profilredigering](./media/B2CImage_12.png)
+![Exempel på användarflödet Azure AD B2C profilredigering](./media/B2CImage_12.png)
 
 ### <a name="create-a-password-reset-user-flow-policy"></a>Skapa en lösenordsåterställning för användarflödespolicy
 
@@ -164,7 +195,7 @@ För att en lösenordsåterställning för policy för användarflöde följ ste
 
 1. I Azure-portalen väljer du **Användarflöden (policyer)** i det vänstra navigeringsfönstret.
 1. På sidan **Azure AD B2C – användarflöden (policyer)** väljer du **Nytt användarflöde**.
-1. På fliken **Rekommenderad**, välj **lösenordsåterställning**.
+1. Välj **Lösenordsåterställning** och välj sedan den **rekommenderade** versionen.
 1. Under **namn** anger du ett namn på användarflödet för återställning av lösenord.
 1. Under **identitetsleverantörer** väljer du **Återställ lösenord med e-postadress**.
 1. Markera **Skapa**.
@@ -192,15 +223,15 @@ Om autentisering av sociala identitetsleverantörer läggs till och en användar
 
 Innan du kan lägga till en social identitetsleverantör för autentisering måste du gå till identitetsleverantörens portal och ställa in ett program för identitetsleverantör enligt anvisningarna i Azure AD B2C-dokumentationen. Nedan finns en lista med länkar till dokumentationen.
 
-- [Amazon](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
-- [Azure AD (En innehavare)](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
-- [Microsoft-konto](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
-- [Facebook](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
-- [GitHub](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
-- [Google](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
-- [LinkedIn](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
-- [OpenID Connect](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
-- [Twitter](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
+- [Amazon](/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
+- [Azure AD (En innehavare)](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
+- [Microsoft-konto](/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
+- [Facebook](/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
+- [GitHub](/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
+- [Google](/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
+- [LinkedIn](/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
+- [OpenID Connect](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
+- [Twitter](/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
 
 ### <a name="add-and-set-up-a-social-identity-provider"></a>Lägga till och ställa in en leverantör av sociala identiteter
 
@@ -220,15 +251,18 @@ Lägg till och ställ in en leverantör av sociala identiteter enligt följande 
 
 Följande bild illustrerar exempel på skärmarna **lägga till identitetsleverantören** och **ställer in social identitetsleverantören** i Azure AD B2C.
 
-![Lägga till en social identitetsleverantör i ditt program](./media/B2CImage_14.png)
+![Lägga till en social identitetsleverantör i ditt program.](./media/B2CImage_14.png)
 
 I följande bild visas ett exempel på hur du väljer identitetsleverantörer på sidan Azure AD B2C **identitetsleverantörer**.
 
-![Välj varje social identitetsleverantör som ska aktiveras för din policy](./media/B2CImage_16.png)
+![Välj varje social identitetsleverantör som ska aktiveras för din policy.](./media/B2CImage_16.png)
 
 I bilden nedan visas ett exempel på en standard inloggningsskärm med knappen för inloggning med sociala identitetsleverantörer som visas.
 
-![Exempel på standard inloggningsskärm när inloggningsknappen för sociala identitetsleverantörer visas](./media/B2CImage_17.png)
+> [!NOTE]
+> Om du använder de anpassade sidorna som är inbyggda i Commerce för dina användarflöden måste knapparna för sociala identitetsleverantörer läggas till med hjälp av utökningsfunktionerna i Commerce-modulbiblioteket. När du ställer in program med en viss leverantör av social identitet, kan URL-adressen eller konfigurationssträngen i vissa fall vara ärendekänslig. Mer information finns i anslutningsinstruktioner för din personidentitetsprovider.
+ 
+![Exempel på standardinloggningsskärm när inloggningsknappen för sociala identitetsleverantörer visas.](./media/B2CImage_17.png)
 
 ## <a name="update-commerce-headquarters-with-the-new-azure-ad-b2c-information"></a>Uppdatera Commerce-administration med den nya Azure AD B2C-informationen
 
@@ -238,7 +272,7 @@ Om du vill uppdatera huvud kontoret med den nya Azure AD B2C-informationen följ
 
 1. I Commerce går du till **delade Commerce-parametrar** och väljer **identitetsleverantörer** på den vänstra menyn.
 1. Under **identitetsleverantörer** gör du följande:
-    1. I rutan **utfärdare** anger du URL för identitetsleverantörens utfärdare. Information om hur du hittar din utfärdar-URL, se [Hämta utfärdar-URL](#obtain-issuer-url) nedan.
+    1. I rutan **utfärdare** anger du sträng för identitetsleverantörens utfärdare. För att hitta din utfärdarsträng, se [Skaffa utfärdarsträng för inställning av huvudkontoret](#obtain-issuer-string-for-headquarters-setup) nedan.
     1. I rutan **Namn**, ange ett namn för din utfärdarpost.
     1. I rutan **Typ**, ange **Azure AD B2C (id_token)**.
 1. Under **Förlitande parter**, med ovanstående B2C för identitetsleverantör:
@@ -250,15 +284,23 @@ Om du vill uppdatera huvud kontoret med den nya Azure AD B2C-informationen följ
 1. I den vänstra navigeringsmenyn på sidan **distributionsscheman** väljer du **1110 Global konfiguration**.
 1. I åtgärdsfönstret, klicka på **Kör nu**.
 
-### <a name="obtain-issuer-url"></a>Hämta utfärdar-URL
+### <a name="obtain-issuer-string-for-headquarters-setup"></a>Hämta utfärdarsträng för inställning av huvudkontor
 
-Om du vill ha en utfärdar-URL för identitetsleverantören följer du stegen nedan.
+Om du vill ha en utfärdar-sträng för identitetsleverantören följer du stegen nedan.
+
+1. På Azure AD B2C-sidan i Azure-portal navigerar du till ditt användarflöde **Registrera dig och logga in**.
+1. Välj **Sidlayouter** i den vänstra navigeringsmenyn, under **Layoutnamn** välj **Enhetlig registrering eller inloggning på sidan** och välj sedan **Kör användarflöde**.
+1. Kontrollera att ditt program är inställt på din avsedda Azure AD B2C-app som skapats ovan och välj sedan användarflödeslänken som visas under rubriken **Kör användarflöde** som innehåller ``.../.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``. (Välj inte **Kör användarflöde**.) En ny flik öppnas med metadata för policyn som utfärdarsträngen ska samlas in för.
+1. På den metadatasida som visas i webbläsaren kopierar du utfärdarsträngen för ID-utfärdaren (värdet för **utfärdaren** som börjar med "https://" och slutar med "/v2.0/" ) som liknar följande exempel.
+   - ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
+ 
+**ELLER**: Om du vill skapa samma metadata-URL manuellt gör du på följande sätt.
 
 1. Skapa en URL för en metadataadress i följande format med hjälp av din B2C-klient och policy: ``https://<B2CTENANTNAME>.b2clogin.com/<B2CTENANTNAME>.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``
     - Exempel: ``https://d365plc.b2clogin.com/d365plc.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_signinup``.
 1. Ange URL-adressen för metadata i webbläsarens adressfält.
 1. I metadata kopierar du URL:en för identitetsleverantören (värdet för **"utfärdare"**).
-    - Exempel: ``https://login.fabrikam.com/073405c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
+    - Exempel: ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
 
 ## <a name="configure-your-b2c-tenant-in-commerce-site-builder"></a>Konfigurera din B2C-innehavare i Commerce webbplatsskaparen
 
@@ -268,29 +310,25 @@ När installationen av din Azure AD B2C-innehavare har slutförts måste du konf
 
 Gör så här för att samla in den nödvändiga programinformationen.
 
-1. I Azure-portal, gå till **Start \> Azure AD B2C - program**.
-1. Markera programmet och välj sedan i vänstra navigeringsfönstret **Egenskaper** för att hämta programinformationen.
-1. Från rutan **program-ID**, samla in program-ID för B2C-programmet som har skapats i B2C-innehavaren. Detta kommer senare att anges som **klient-GUID** i webbplatsskaparen.
-1. Under **Svars-URL**, samla svars-URL.
-1. Gå till **Start \> Azure AD B2C – användarflöden (policyer)** och samla sedan in namnen på varje användarflödespolicy.
+1. I Azure-portal, gå till **Start \> Azure AD B2C – programregistrering**.
+1. Markera programmet och välj sedan i vänstra navigeringsfönstret **Översikt** för att hämta programinformationen.
+1. Från **program-ID (klient)**, samla in program-ID för B2C-programmet som har skapats i B2C-innehavaren. Detta kommer senare att anges som **klient-GUID** i webbplatsskaparen.
+1. Välj **Omdirigera URI** och samla in den svars-URL som visas för din webbplats (svars-URL:en som angavs vid inställningen).
+1. Gå till **Start \> Azure AD B2C – användarflöden** och samla sedan in full namnen på varje användarflödespolicy.
 
-Följande bild visar ett exempel på sidan **Azure AD B2C-program**.
+Följande bild visar ett exempel på översiktssidan **Azure AD B2C-program - App-registreringar**.
 
-![Navigera till B2C-programmet inom din klientorganisation](./media/B2CImage_19.png)
-
-Följande bild visar ett exempel på en programsida **egenskaper** i Azure AD B2C. 
-
-![Kopiera program-ID från B2C programegenskaper](./media/B2CImage_21.png)
+![Azure AD B2C – Översiktssida för programregistreringar, där program-ID (klient) markerats](./media/ClientGUID_Application_AzurePortal.png)
 
 Följande bild visar ett exempel på användarflödespolicyer på sidan **Azure AD B2C – användarflöden (policy)**.
 
-![Samla in namnen på varje B2C policyflöde](./media/B2CImage_22.png)
+![Samla in namnen på respektive B2C-policyflöde.](./media/B2CImage_22.png)
 
-### <a name="enter-your-aad-b2c-tenant-application-information-into-commerce"></a>Ange din AAD B2C-information för klientprogram i Commerce
+### <a name="enter-your-azure-ad-b2c-tenant-application-information-into-commerce"></a>Ange din Azure AD B2C-information för klientprogram i Commerce
 
 Du måste ange information om Azure AD B2C-innehavaren i Commerce webbplatsskaparen innan du kopplar B2C-innehavaren till dina webbplatser.
 
-Följ stegen nedan om du vill lägga till din AAD B2C-information till Commerce.
+Följ stegen nedan om du vill lägga till din Azure AD B2C-information till Commerce.
 
 1. Logga in som administratör på Commerce webbplatsskaparen för din miljö.
 1. I det vänstra navigeringsfönstret väljer du **innehavarinställningar** för att expandera den.
@@ -331,11 +369,11 @@ För att associera B2C-program till din webbplats och kanal, följ dessa steg.
 
 Om du funderar på att flytta kundposter från en tidigare plattform för identitetsleverantörer, arbeta med Dynamics 365 Commerce för att granska behovet av kundmigrering.
 
-För ytterligare Azure AD B2C-dokumentation om kundmigrering, se [Migrera användare till Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-user-migration).
+För ytterligare Azure AD B2C-dokumentation om kundmigrering, se [Migrera användare till Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-user-migration).
 
 ### <a name="custom-policies"></a>Anpassade principer
 
-Mer information om hur du anpassar Azure AD-interaktioner och policyflöden utöver vad som erbjuds av B2C, se [Anpassa policyer i Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
+Mer information om hur du anpassar Azure AD-interaktioner och policyflöden utöver vad som erbjuds av B2C, se [Anpassa policyer i Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
 
 ### <a name="secondary-admin"></a>Sekundär administration
 
@@ -347,18 +385,21 @@ Ett valfritt, sekundärt administratörskonto kan läggas till i avsnittet **anv
 
 [Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md)
 
-[Skapa en näthandelsplats](create-ecommerce-site.md)
+[Skapa en näthandelssajt](create-ecommerce-site.md)
 
 [Associera en Dynamics 365 Commerce-webbplats med en onlinekanal](associate-site-online-store.md)
 
 [Hantera robots.txt-filer](manage-robots-txt-files.md)
 
-[Ladda upp URL-omdirigeringar i bulk](upload-bulk-redirects.md)Associera en Dynamics 365 Commerce-webbplats med en onlinekanal
+[Massöverföra URL-omdirigeringar](upload-bulk-redirects.md)
 
 [Ställa in anpassade sidor för användarinloggningar](custom-pages-user-logins.md)
 
-[Konfigurera flera B2C-klientorganisationer i en Commerce-miljö](configure-multi-B2C-tenants.md)
+[Konfigurera flera B2C-innehavare i en Commerce-miljö](configure-multi-B2C-tenants.md)
 
 [Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)
 
 [Aktivera platsbaserad butiksdetektering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
