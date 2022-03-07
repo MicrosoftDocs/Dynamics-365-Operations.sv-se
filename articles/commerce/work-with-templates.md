@@ -2,9 +2,11 @@
 title: Arbeta med mallar
 description: I det här avsnittet beskrivs hur du arbetar med mallar i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 02/03/2022
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,18 +16,21 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ab6ccfac96249b39cb007d9a9fce10475f0c7149
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: f4ed3b6797127113450949aa957437125f37394f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090804"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995726"
 ---
 # <a name="work-with-templates"></a>Arbeta med mallar
+
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du arbetar med mallar i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Översikt
 
 Som vi har diskuterat i [Översikt över mallar och layouter](templates-layouts-overview.md), mallar definierar vilka alternativ som är tillgängliga för författare av underordnade. Mallar är användbara för företagets webbredigeringsteam av många skäl och välstrukturerade mallar kan hjälpa dig med följande mål:
 
@@ -49,7 +54,7 @@ Som vi har diskuterat i [Översikt över mallar och layouter](templates-layouts-
 
 Mallarna ändras med hjälp av mallredigeraren.
 
-Öppna mallredigeraren i Commerce-webbplatsbyggaren genom att följa något av följande steg:
+Gör något av följande för att öppna mallredigeraren:
 
 - I navigeringsfönstret på din webbplats, välj **Mallar** och välj sedan den mall som du vill ändra.
 - Markera den översta noden i dispositionsträdet till vänster i sidredigeraren för en befintlig sida. Välj sedan **Redigera mall** i egenskapsrutan till höger.
@@ -66,7 +71,7 @@ I dispositionsträdets vy till vänster visas de moduler och strukturer som är 
 
 ## <a name="create-a-new-template"></a>Skapa en ny mall
 
-För att skapa en ny mall i Commerce-webbplatsskaparen.
+Gör så här om du vill skapa en ny arbetsmall.
 
 1. I navigeringsfönstret på din webbplats, välj **Mallar** för att öppna mallinspektörvyn.
 1. Välj **Ny mall**.
@@ -85,7 +90,7 @@ Mallen är nu tekniskt giltig och kan sparas, checkas in och användas för att 
 
 ## <a name="add-a-header-and-a-footer"></a>Lägg till sidhuvud och sidfot
 
-Om det redan finns ett rubrik avsnitt för webbplatsen följer du dessa steg i webbplatsskaparen för att ett sidhuvud och en sidfot i en mall.
+Om det redan finns ett rubrik avsnitt för webbplatsen lägger du till ett sidhuvud och en sidfot i en mall.
 
 1. I dispositionsträdet expanderar du platsen **Brödtext** och den underordnade sidmodulen.
 1. Markera platsen **rubrik**.
@@ -98,7 +103,7 @@ Om din webbplats ännu inte har ett rubrikavsnitt se [Skapa ett fragment](work-w
 
 ## <a name="change-the-template-theme"></a>Ändra malltemat.
 
-Om du vill ange standardtemat för alla sidor som använder en mall följer du stegen i webbplatsskaparen.
+Om du vill ange standardtemat för alla sidor som använder en mall följer du stegen nedan.
 
 1. I dispositionsträdet till vänster expanderar du platsen **Brödstext**.
 1. I platsen **Brödtext** väljer du sidan för sidbehållare (t.ex **standardsida**).
@@ -110,7 +115,7 @@ Alla nya sidor använder nu det valda temat som standard. Om du vill förhindra 
 
 Du kan lägga till HTML **&lt;skript&gt;** element som innehåller JavaScript i din mall. På det här sättet kan du ange standardskriptbeteenden för HTML-rubrik, brödtextens början och brödtextens slut och avsnitt på sidorna.
 
-Om du vill lägga till ett skript på en mall i webbplatsskaparen följer du stegen nedan.
+Om du vill lägga till ett skript i mall gör du följande.
 
 1. I dispositionsträdet till vänster väljer du den plats där du vill lägga till **&lt;skript&gt;** elementet (t.ex. HTML-rubrik, brödtextens början eller brödtextens slut).
 1. Markera knappen med punkter för platsen och välj sedan **Lägg till modul**.
@@ -123,7 +128,7 @@ Om du vill lägga till ett skript på en mall i webbplatsskaparen följer du ste
 
 ## <a name="save-check-in-preview-and-publish-a-template"></a>Spara, checka in, förhandsgranska och publicera en mall
 
-Om du vill spara och checka in en mall i webbplatsskaparen, följ dessa steg.
+Om du vill spara och checka in en mall, följ dessa steg.
 
 1. Välj **spara** längst upp i mallredigeraren. Sparade ändringar påverkar inte underordnade sidor förrän de checkas in.
 1. Välj **Slutför redigering**. Dina ändringar kan nu upptäckas för efterföljande arbetsflöden.
@@ -139,23 +144,8 @@ När du har förhandsgranskat ändringarna i din mall gör du följande för att
 > [!WARNING]
 > När en mall, eller något annat CMS-objekt (innehållshanteringssystem), publiceras, kan den upptäckas på Internet. Publicera inte dokument eller resurser förrän du är redo att göra dem offentlig. Dokumentversioner som har sparats och checkats in, men som inte har publicerats, är endast synliga för autentiserade systemanvändare.
 
-## <a name="rename-a-template"></a>Byt namn på en mall
-
-Följ dessa steg för att byta namn på en befintlig mall i webbplatsskaparen.
-
-1. I navigeringsfönstret till vänster välj er du **Mallar**.
-1. Välj mallnamnet för mallen som du vill byta namn på.
-1. Välj **Redigera** för att börja redigera mallen. Observera att du inte kan redigera en mall om någon annan redan redigerar en mall.
-1. I rutan för mallegenskaper väljer du pennsymbolen bredvid mallnamnet.
-1. Redigera mallnamnet efter behov.
-1. Markera kryssrutan om du vill bekräfta namnändringen.
-1. Välj **Slutför redigering**.
-
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över mallar och layouter](templates-layouts-overview.md)
 
 [Arbeta med förinställda layouter](work-with-layouts.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

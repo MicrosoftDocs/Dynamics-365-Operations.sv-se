@@ -2,30 +2,30 @@
 title: Organisera arbetsstyrkan med hjälp av avdelningar, jobb och befattningar
 description: Avdelningar, jobb och befattningar är organisationselement som underhålls i Personal. Det här avsnittet beskriver begreppsmässig information om dessa element.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources, Retail
+ms.search.scope: Human Resources
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 826de9e1e5d70ba1ec088b44254c871726b5c38e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 31b9532eea82fd5b88fe59718af7be4d242dc885
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420573"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027900"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisera personalen efter avdelningar, jobb och befattningar
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Avdelningar, jobb och befattningar är organisationselement som underhålls i Personal. Det här avsnittet beskriver begreppsmässig information om dessa element. 
 
@@ -38,9 +38,9 @@ Följande exempel används för att illustrera koncepten som beskrivs i det här
 |**Försäljning**|Försäljningschef (central)|Försäljningschef|
 |**Redovisning**|Redovisningsansvarig|Redovisningschef|
 |**Redovisning**|Redovisning-A|Redovisare|
-|**Personal**|Personalchef (öst)|Personalchef|
-|**Personal**|Personalchef (väst)|Personalchef|
-|**Personal**|Personalchef (central)|Personalchef|
+|**Personal**|Anställande chef (öst)|Anställande chef|
+|**Personal**|Anställande chef (väst)|Anställande chef|
+|**Personal**|Anställande chef (central)|Anställande chef|
 
 
  <a name="departments"></a>Avdelningar
@@ -159,9 +159,12 @@ För alla poster kan du ange framtida ändringar i posten. Följande information
 </tbody>
 </table>
 
-Du kan ändra informationen som nämns i tabellen ovan för en befattning eller ett jobb och ange ett datum, när ändringarna till befattningen eller jobbet ska genomföras. Till exempel kan en befattning endast tilldelas till en anställd, men Sanjay Patel, som är tilldelad befattningen Revisor-A lämnar den om två veckor. Joe Healy ska ersätta Sanjay Patel, när han lämnar. Även om Sanjay fortfarande tilldelas hans befattning, kan du tilldela Joe Healy till samma befattning så att tilldelningen är bara gäller efter Sanjays sista dag.
+Du kan ändra informationen som nämns i tabellen ovan för en befattning eller ett jobb och ange ett datum, när ändringarna till befattningen eller jobbet ska genomföras. Till exempel kan en befattning endast tilldelas till en anställd, men Sanjay Patel, som är tilldelad befattningen Revisor-A lämnar den om två veckor. Joe Healy ska ersätta Sanjay Patel, när Sanjay lämnar. Även om Sanjay fortfarande tilldelas hans befattning, kan du tilldela Joe Healy till samma befattning så att tilldelningen är bara gäller efter Sanjays sista dag.
 
 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

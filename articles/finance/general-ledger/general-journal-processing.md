@@ -1,7 +1,7 @@
 ---
 title: Hantering av allmänna journaler
 description: Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics 365 Finance som kan underlätta processen för allmänna journaler och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas.
-author: kweekley
+author: ShylaThompson
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
-ms.author: kweekley
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f9f4019618891909e674c6b936f79778ac84744
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 76dbf5f8f2fc3b33077d559ffcef580a5295adb2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726787"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815582"
 ---
 # <a name="general-journal-processing"></a>Hantering av allmänna journaler
 
@@ -42,14 +42,14 @@ På **Journalnamn** sidan kan du ställa in följande element:
 
 Journalnamn kan endast användas för justeringar. I det här fallet kan du ange att endast **huvudbokskonton** är giltiga för alla företag. 
 
-[![Kontotyper för journalkontroll.](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![Kontotyper för journalkontroll](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 Journalnamn kan användas endast för en viss sektor eller ett datumintervall för huvudbokskonton. 
 
-[![Journalkontrollsegment.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Journalkontrollsegment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 **Automatisk återföring** alternativet finns tillgängligt i allmänna journaler. Du kan till exempel ha en periodiserad justering där det aktuella dokumentet har inte bearbetats, som visas i följande illustration.
-[![Allmän journalåterföring.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Allmän journalåterföring](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 Microsoft Excel-tillägget för poster i redovisningsjournal ger en extra nivå av automatisering och gör dataregistreringen lättare. **Öppna rader i Excel** åtgärden är tillgänglig i **Allmän journal** och **Journalverifikat** sidor. 
 

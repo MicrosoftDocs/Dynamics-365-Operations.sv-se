@@ -2,11 +2,9 @@
 title: Intrastat – översikt
 description: Det här ämnet ger information om Intrastat-rapportering för handel av varor och, i vissa fall, tjänster mellan länder/regioner i den Europeiska unionen (EU). Det ger en översikt över rapporteringsprocessen och beskriver nödvändiga inställningar och förutsättningar.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Intrastat
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9396637c27707f1732d06ec704c7e609aa6c170b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: db97d05d79a100ebdcfb5b4931b37243b77bd352
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962732"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815001"
 ---
 # <a name="intrastat-overview"></a>Intrastat – översikt
 
@@ -239,3 +237,6 @@ Använd sidan **Utländska handelsparametrar** för att ställa in parametrarna 
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Avgöra strukturlisteversionen
 description: Om en artikel har Tillverkning som förvald ordertyp söker planeringsmotorn under en efterfrågenedbrytning efter en giltig strukturlisteversion baserat på siten.
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMConsistOf, BOMDesigner, InventItemOrderSetup
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 2534
 ms.assetid: a5b64301-a011-4469-afaf-e4c9164ef9c6
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a90a257debe8f24e149ddca1738d8376b2124012
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 370091eed4ee050031d5d135aa7b1d8d0fe82491
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966990"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570979"
 ---
 # <a name="determine-the-bom-version"></a>Avgöra strukturlisteversionen
 
@@ -43,3 +41,6 @@ En giltig strukturlisteversion, oavsett om den är sitespecifik eller allmän, m
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

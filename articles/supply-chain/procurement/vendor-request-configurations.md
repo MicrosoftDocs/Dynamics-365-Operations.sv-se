@@ -1,26 +1,24 @@
 ---
 title: Konfigurationer för leverantörsförfrågan
 description: Det här avsnittet beskriver de fält som behöver ifyllas i en ny leverantörsförfrågan.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationConfig
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 987b9cefef395b3bf3e915f41232fe0daba213b9
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 98b759e5c5c918f14ca36bec93908d2f5eeb35044de77e3f450d79ead0993c16
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021175"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6725708"
 ---
 # <a name="vendor-request-configurations"></a>Konfigurationer för leverantörsförfrågan
 [!include [banner](../includes/banner.md)]
@@ -53,3 +51,6 @@ Du kan även ange ett bekräftelsemeddelande som visas när guiden har slutfört
 4.  Öppna fliken **Länder/regioner** för att välja det land/den region som konfigurationen ska användas för.
 5.  Slutför konfigurationen genom att följa riktlinjerna för standardkonfigurationen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

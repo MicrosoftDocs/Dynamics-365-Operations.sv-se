@@ -1,8 +1,8 @@
 ---
 title: Kreditspärrar för försäljningsorder
 description: I det här avsnittet beskrivs inställningen av regler som används för att placera en försäljningsorder vid kreditspärr.
-author: JodiChristiansen
-ms.date: 07/20/2021
+author: mikefalkner
+ms.date: 01/25/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,16 +12,15 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 14cafa69e75d7e8a0f08fb385a8c364c0162da1ec609a4e0b3cad6178ec3f716
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d94b19061838f9bb2552c3c91c6b3591040ccf52
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723977"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827660"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Kreditspärrar för försäljningsorder
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 I det här avsnittet beskrivs inställningen av regler som används för att placera en försäljningsorder vid kreditspärr. Spärrningsreglerna för kredithantering kan gälla för en enskild kund eller en grupp med kunder. Spärrningsregler definierar svar vid följande omständigheter:
 
@@ -42,11 +41,6 @@ Det finns dessutom två parametrar som kontrollerar ytterligare scenarier som bl
 
 När en kund initierar en försäljningstransaktion granskas informationen på försäljningsordern mot en uppsättning regler för spärrning som vägleder beslutet om huruvida kredit ska utökas till kunden och tillåta att försäljningen går framåt. Du kan även definiera undantag som åsidosätter spärrreglerna och tillåter att en försäljningsorder att bearbetas. Du kan ställa in spärrningsregler och undantagsregler på sidan **Kredithantering > Inställningar > Inställningar för kredithantering > Spärrningsregler**.
 
-Från och med version 10.0.21 har spärrreglerna i kredithanteringen omreglerats på följande sätt för att ge mer flexibilitet:
-
-- Utökningsbegäranden har aktiverats så att du kan skapa egna spärrregler.
-- Kryssrutan **Frisläpp försäljningsorder** är nu tillgänglig för alla spärregler. Tidigare var det bara tillgängligt för spärregeln för försäljningsorder. När den här kryssrutan är markerad frisläpper undantagsregeln försäljningsordern utan att andra regler som kan spärra försäljningsorder övervägs. Den här kryssrutan är bara tillgänglig för typen **Undantagsregel**.
-
 ### <a name="days-overdue"></a>Dagar försenad
 
 Öppna fliken **förfallna dagar** om spärregeln gäller för kunden med en eller flera fakturor som har förfallit ett visst antal dagar.
@@ -63,7 +57,7 @@ Från och med version 10.0.21 har spärrreglerna i kredithanteringen omreglerats
 5. Välj en **värdetyp**. Standardvärdet är ett fast antal dagar. Om du skapar ett undantag kan du ange ett fast antal dagar eller ett belopp istället. 
 6. Ange det antal dagar som är **Förfallna** och som kan tillåtas för den valda spärrningsregeln innan en order placeras i kredithanteringsspärr för granskning. Antalet förfallna dagar motsvarar ett ytterligare antal respitdagar som har lagts till efter det förfallodatum som fakturan kan ha innan den anses ha förfallit. Om du har angett typen **värde** som ett belopp för ett undantag anger du ett belopp och en valuta för beloppet.
 
-### <a name="account-status"></a>Kontostatus
+### <a name="accounts-status"></a>Kontostatus
 
 Öppna fliken **kontostatus** om spärregeln gäller för en kund med den valda kontostatusen.
 1. Välj vilken typ av regel som du ställer in.  **Spärr** kommer att skapa en regel som blockerar en order. **Exkludera** skapas en regel som utesluter en regel från att blockera en order. 
@@ -108,7 +102,7 @@ Välj **betalningsvillkor** om spärregeln gäller för det valda betalningsvill
    - Välj **Spärr** kommer att skapa en regel som blockerar en order. 
    - Välj **exkludera** skapas en regel som utesluter en annan regel från att blockera en order. 
 5. Ange den **Förfallet belopp** för dagar för den valda spärrningsregeln innan en orderplaceras i en kredithanteringsspärr för granskning. 
-6. Välj den **värdetyp** som definierar den typ av värde som ska användas när du också vill testa hur stor del av kreditgränsen som har använts. Spärregler och undantagsregler tillåter bara ett procenttal för **förfallna belopp**. Tröskeln är relaterad till kreditgränsen.
+6. Välj den **värdetyp** som definierar den typ av värde som ska användas när du också vill testa hur stor del av kreditgränsen som har använts. Spärrningsregler kräver en procent andel men ett undantag kan ha ett fast belopp eller en procentsats. Tröskeln är relaterad till kreditgränsen.
 7. Ange **tröskelvärdet för kreditgräns** för den valda regeln innan en kund övergår till kredithanteringsspärr. Det kan vara ett belopp eller en procentsats som baseras på värdetypen som väljs i värdetypen.
 8. Regeln kontrollerar att **Förfallet belopp** överskrids och **Tröskelvärdet för kreditgräns** överskrids. 
 
@@ -128,6 +122,8 @@ Välj **försäljningsorder** om spärregeln gäller för försäljningsorderns 
    - Välj **Spärr** kommer att skapa en regel som blockerar en order. 
    - Välj **exkludera** skapas en regel som utesluter en annan regel från att blockera en order. 
 5. Ange den **Försäljningsorderbelopp** för dagar för den valda spärrningsregeln innan en orderplaceras i en kredithanteringsspärr. 
+
+Försäljningsorderregeln innehåller en ytterligare inställning som åsidosätter alla andra regler. Om du vill skapa ett undantag som släpper försäljningsordern utan att ta med andra regler markerar du kryssrutan **Frisläpp av försäljningsorder** på undantagsraden.
 
 ### <a name="credit-limit-used"></a>Kreditgräns som används
 

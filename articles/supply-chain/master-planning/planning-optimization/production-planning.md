@@ -2,33 +2,35 @@
 title: Produktionsplanering
 description: Det här ämnet beskriver planering för produktion och förklarar hur du ändrar planerade tillverkningsorder genom att använda Planeringsoptimering.
 author: ChristianRytt
-ms.date: 06/01/2021
+manager: tfehr
+ms.date: 12/15/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 85167e3de5f586c341143a43412501377a6c689e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eda22aa6f1e8d665d8ef390f24b247a76d4c2956
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570907"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992405"
 ---
 # <a name="production-planning"></a>Produktionsplanering
 
-[!include [banner](../../includes/banner.md)]
+Planeringsoptimering stöder flera produktionsscenarier. Om du migrerar från den befintliga, inbyggda huvudplaneringsmotorn, är det viktigt att du känner till vissa ändrade beteende.
 
-Planeringsoptimering stöder flera produktionsscenarier. Om du migrerar från den befintliga, inbyggda huvudplaneringsmotorn är det viktigt att du känner till vissa ändrade beteenden.
-
-Följande video ger en kort introduktion till några av de begrepp som diskuteras i detta ämne: [Dynamics 365 Supply Chain Management: Förbättringar av planeringsoptimering](https://youtu.be/u1pcmZuZBTw).
-
-## <a name="turn-on-this-feature-for-your-system"></a>Aktivera funktionen i systemet
-
-Om ditt system inte redan innehåller de funktioner som beskrivs i det här avsnittet, gå till [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktivera funktionen *Planerade produktionsorder för planeringsoptimering*.
+<!-- The following video gives a short introduction to some of the current capabilities. 
+KFM: Link to video for production functionality, coming soon... -->
 
 ## <a name="planned-production-orders"></a>Planerade produktionsorder
 
@@ -76,44 +78,8 @@ På sidan **Nedbrytning** kan du analysera behovet av en viss tillverkningsorder
 
 ## <a name="filters"></a><a name="filters"></a>Filter
 
-Om du vill vara säker på att Planeringsoptimeringen har den information som den behöver för att beräkna rätt resultat, måste du inkludera alla produkter som har någon som helst relation till produkter i hela strukturlistestrukturen för den planerade ordern. Vid planering av scenarier där produktion ingår rekommenderar vi därför att du undviker filtrerade huvudplaneringskörningar.
+Vid planering av scenarier där produktion ingår bör du undvika filtrerade huvudplaneringskörningar. Om du vill vara säker på att Planeringsoptimering har den information som krävs för att beräkna rätt resultat, måste du inkludera alla produkter som har alla relationer till produkter i hela strukturlistestrukturen för den planerade ordern.
 
-Även om underordnade artiklar hittas automatiskt och inkluderas i huvudplaneringskörningar när den inbyggda huvudplaneringsmotorn används, utför i nuläget Planeringsoptimeringen inte denna åtgärd.
+Underordnade artiklar som är beroende hittas automatiskt och inkluderas i huvudplaneringskörningar när den inbyggda huvudplaneringsmotorn används, men den här åtgärden utförs inte under Planeringsoptimering.
 
-Om till exempel en enda blixt från strukturlistestrukturen för produkt A även används för att tillverka produkt B, måste alla produkter i strukturlistestrukturen för produkter A och B inkluderas i filtret. Eftersom det kan vara komplicerat att säkerställa att alla produkter ingår i filtret, rekommenderar vi att du undviker filtrerade huvudplaneringskörningar när produktionsorder används. I annat fall kommer huvudplaneringen att ge oönskade resultat.
-
-### <a name="reasons-to-avoid-filtered-master-planning-runs"></a>Orsaker att undvika filtrerade huvudplaneringskörningar
-
-När du kör filtrerad huvudplanering för en produkt detekterar Planeringsoptimeringen (till skillnad från den inbyggda huvudplaneringsmotorn) inte alla delprodukter och råmaterial i strukturlistestrukturen för den produkten och tar därför inte med dem i huvudplaneringskörningen. Även om Planeringsoptimering identifierar den första nivån i strukturlistestrukturen för produkten läses inga produktinställningar (till exempel standardordertyp eller artikeldisponering) in från databasen.
-
-I Planeringsoptimeringen läses data in för körningen i förväg och filtret används. Detta innebär att om en delproduktion eller råmaterial som ingår i en viss produkt inte ingår i filtret, kommer inte information att registreras under körningen. Om delprodukten eller råmaterialet dessutom ingår i en annan produkt kommer en filtrerad körning som endast innehåller den ursprungliga produkten och dess komponenter ta bort befintlig planerad efterfrågan som skapats för den andra produkten.
-
-Denna logik kan leda till att filtrerade huvudplaneringskörningar leder till oväntade resultat. Följande avsnitt innehåller exempel som illustrerar de oväntade resultat som kan inträffa.
-
-### <a name="example-1"></a>Exempel 1
-
-Färdig vara *FG* består av följande komponenter:
-
-- Råmaterial *R*
-- Delprodukt *S1*, som består av delprodukt *S2*
-
-Det finns lagerbehållning för råmaterial *R*, medan delprodukt *S1* inte finns i lagret.
-
-När du gör en filtrerad huvudplaneringskörning för färdig vara *FG* får du en planerad produktionsorder för färdig vara *FG*, en planerad inköpsorder för råmaterial *R*, samt en planerade inköpsorder för underprodukt *S1*. Detta är ett oönskat resultat eftersom Planeringsoptimeringen har ignorerat att befintliga lager råmaterial *R* och delprodukt *S1* skulle framställas med hjälp av *S2* snarare än beställas direkt. Detta händer eftersom planeringsoptimering bara har listat komponenter för det färdiga varan *FG* utan relaterad information, till exempel den befintliga tillförseln av komponenter eller dessas standardorderinställningar.
-
-### <a name="example-2"></a>Exempel 2
-
-Baserat på det tidigare exemplet använder en extra färdig vara, *FG2*, också delproduktion *S1*. En planerad order finns för färdig vara *FG2*, och planerat behov finns för samtliga dess komponenter, inklusive *S1*.
-
-Du bestämmer dig för att kringgå oönskade resultat av den filtrerade huvudplaneringskörningen från det föregående exemplet genom att lägga till samtliga delprodukter och råmaterial från strukturlistan för färdig vara *FG* i filtret och sedan köra hela omgenereringen.
-
-När du kör hela omgenereringen raderar systemet alla befintliga resultat för alla inkluderade produkter och återskapar sedan resultat baserat på de nya beräkningarna. Detta innebär att befintlig planerad efterfrågan för *S1* tas bort och sedan återskapas i beaktande av endast krav för färdig vara *FG*, medan kraven för färdig vara *FG2* ignoreras. Detta sker eftersom körd Planeringsoptimering inte omfattar den planerade efterfrågan för andra planerade produktionsorder &mdash; endast den planerade efterfrågan som genererats under körning används.
-
-> [!NOTE]
-> Om den befintliga planerade ordern för färdig vara *FG2* har statusen *Godkänd* inkluderas den godkända planerade efterfrågan även om den överordnade produkten inte läggs till i filtret.
-
-Om du inte lägger till alla komponenter för den färdiga varan *FG*, färdig vara *FG2* och alla andra produkter som dessa komponenter ingår i (tillsammans med dessas komponenter), kommer den filtrerade huvudplaneringskörningen därför att generera oönskade resultat.
-
-Eftersom det kan vara komplicerat att säkerställa att alla produkter ingår i filtret, rekommenderar vi att du undviker filtrerade huvudplaneringskörningar när produktionsorder används.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+Om till exempel en enda blixt från strukturlistestrukturen för produkt A även används för att tillverka produkt B, måste alla produkter i strukturlistestrukturen för produkter A och B inkluderas i filtret. Eftersom det kan vara mycket komplicerat att säkerställa att alla produkter ingår i filtret rekommenderar vi att du undviker filtrerade huvudplaneringskörningar när tillverkningsorder används.

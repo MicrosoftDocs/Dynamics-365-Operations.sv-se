@@ -2,7 +2,7 @@
 title: Utöka Talent med Power Apps och Power Automate
 description: Den här artikeln beskriver några exempel på tilläggsscenarier för Microsoft Dynamics 365 Human Resources som använder Microsoft Power Apps och Microsoft Power Automate.
 author: negudava
-manager: Annbe
+manager: tfehr
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core;Experience Apps;Human Resources
+ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2e89347829ccd6569d568db42c79b5fea2316ba3
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: e6885c67f42ead34b5e10cc1b1a80a88fd2d59b9
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527036"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115376"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Utöka med Power Apps och Power Automate
 
@@ -37,7 +37,7 @@ Den här artikeln beskriver några exempel på tilläggsscenarier för Microsoft
 ## <a name="prerequisites"></a>Förutsättningar
 
 - Om du vill importera paket måste användarna ha behörighet **Environment Maker**.
-- Användare måste ha en Power Apps Plan 2-licens eller en Power Apps Plan 2 utvärderingslicens för att exportera eller importera appar.
+- Användare måste ha en Power Apps Plan 2-licens eller en Power Apps Plan 2 bedömningslicens för att exportera eller importera appar.
 
 ## <a name="integration-with-microsoft-365-power-automate"></a>Integrering med Microsoft 365, Power Automate
 
@@ -51,7 +51,7 @@ För att hämta appen **Integrering med Microsoft 365, Power Automate** gå till
 
 Mallen **Power Automate – anslut och kör SQL** ansluter till Microsoft SQL Server och gör att SQL-frågor kan köras.
 
-Även om den här mallen läser och uppdaterar SQL-register kan du utöka den och använda den för andra scenarier. Den kan exempelvis användas för att fylla på ett mellanlagringsregister i Common Data Service med poster från SQL Server och regelbundet synkronisera mellanlagringsregister med hjälp av en stegvis distribution från SQL Server.
+Även om den här mallen läser och uppdaterar SQL-register kan du utöka den och använda den för andra scenarier. Den kan exempelvis användas för att fylla på ett mellanlagringsregister i Dataverse med poster från SQL Server och regelbundet synkronisera mellanlagringsregister med hjälp av en stegvis distribution från SQL Server.
 
 Den avancerade frågan är integrerad med flödet för att aktivera datatransformation och stegvis distribution.
 

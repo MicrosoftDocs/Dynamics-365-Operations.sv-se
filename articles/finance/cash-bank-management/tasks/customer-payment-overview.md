@@ -1,31 +1,32 @@
 ---
 title: Översikt över kundbetalning
-description: Denna procedur går igenom olika metoder som används för att ange kundbetalningar.
+description: Den här guiden går igenom olika metoder som används för att ange kundbetalningar.
 author: kweekley
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, CustPaymEntry, CustTableLookup, LedgerJournalTransCustPaym, CustOpenTrans, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3782c1dd5e326bfc8ae5c005b58d4039f32b021
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 3e93703815d899baa7045f2c5f1e0323944e91c6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394499"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225427"
 ---
 # <a name="customer-payment-overview"></a>Översikt över kundbetalning
 
 [!include [banner](../../includes/banner.md)]
 
-Denna procedur går igenom olika metoder som används för att ange kundbetalningar. I den här uppgiften används demonstrationsföretaget USMF.
+Den här guiden går igenom olika metoder som används för att ange kundbetalningar. I den här uppgiften används demonstrationsföretaget USMF.
 
 1. Gå till **navigeringsfönstret > Moduler > Kundreskontra > Betalningar > Betalningsjournal**.
 2. Klicka på **Ny**.

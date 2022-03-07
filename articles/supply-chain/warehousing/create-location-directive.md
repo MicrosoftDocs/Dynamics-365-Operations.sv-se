@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 84ff0a466c037db05aecaff14aa2e17990ce8799
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: f46d55bf7a670e983fb65a9ca303bc02568247ed
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103148"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911306"
 ---
 # <a name="work-with-location-directives"></a>Arbeta med platsdirektiv
 
@@ -51,7 +51,7 @@ Innan du kan skapa ett platsdirektiv måste du följa dessa steg för att se til
 
 Många av fälten som kan ställas in för platsdirektiv är gemensamma för alla arbetsordertyper. Andra fält är dock specifika för särskilda arbetsordertyper.
 
-![Arbetsordertyper för platsdirektiv.](media/Location_Directives_Work_Order_Types.png "Arbetsordertyper för platsdirektiv")
+![Arbetsordertyper för platsdirektiv](media/Location_Directives_Work_Order_Types.png "Arbetsordertyper för platsdirektiv")
 
 > [!NOTE]
 > Två arbetsordertyper, *annullerade arbeten* och *rullande inventering*, används endast i systemet. Platsdirektiv kan inte skapas för dessa arbetsordertyper.
@@ -164,7 +164,7 @@ Fälten på snabbfliken **platsdirektiv** är specifika för arbetsordertypen so
     > [!NOTE]
     > Det här fältet är endast tillgängligt för de valda arbetsordertyperna där lagerpåfyllnad är tillåtet. En fullständig lista finns i [fält som är specifika för avsnittet arbetsordertyper](#fields-specific-types) tidigare i det här avsnittet.
 
-- **Placera efter** – Ange om inleveranskvantitet ska vara hela kvantiteten på ID-numret, eller om den ska vara artikel efter artikel. Använd det här fältet för att se till att allt innehåll på ett ID-nummer placeras på en plats, och att systemet inte föreslår att du delar upp innehållet på flera platser för **ASN** (inleverans av ID-nummer), inleverans av **Blandade ID-nummer** och **Kluster** inleveransprocesser. (**Kluster** inleveransprocess kräver att funktionen [klusterinlagring](putaway-clusters.md) aktiveras). Uppförandet av platsdirektivfrågan, raderna och platsdirektivets åtgärder kommer att variera beroende på vilket värde du väljer. Snabbfliken **Rader** används bara när alternativet **Placera efter** är inställt på *Artikel*.
+- **Placera efter** – Ange om inleveranskvantitet ska vara hela kvantiteten på ID-numret, eller om den ska vara artikel efter artikel. Använd det här fältet för att se till att allt innehåll på ett ID-nummer placeras på en plats, och att systemet inte föreslår att du delar upp innehållet på flera platser för **ASN** (inleverans av ID-nummer), inleverans av **Blandade ID-nummer** och **Kluster** inleveransprocesser. (**Kluster** inleveransprocess kräver att funktionen *klusterinlagring* aktiveras). Uppförandet av platsdirektivfrågan, raderna och platsdirektivets åtgärder kommer att variera beroende på vilket värde du väljer. Snabbfliken **Rader** används bara när alternativet **Placera efter** är inställt på *Artikel*.
 
     > [!NOTE]
     > Det här fältet är endast tillgängligt för de valda arbetsordertyperna där lagerpåfyllnad är tillåtet. En fullständig lista finns i [fält som är specifika för avsnittet arbetsordertyper](#fields-specific-types).

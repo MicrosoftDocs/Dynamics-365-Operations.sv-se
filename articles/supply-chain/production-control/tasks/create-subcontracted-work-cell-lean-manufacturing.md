@@ -1,23 +1,25 @@
 ---
 title: Skapa en arbetsgrupp för legotillverkning för lean manufacturing
 description: Om du vill modellera legotillverkningsarbete för lean manufacturing måste du skapa en arbetsgrupp som är kopplad till den leverantör som tillhandahåller arbetet.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 06/23/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f37a38227ef57e6e66a77e90883bf157792e7f81
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 86838eb81f42b0f930f3989f7edfa5ee724bd05e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576842"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006901"
 ---
 # <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a>Skapa en arbetsgrupp för legotillverkning för lean manufacturing
 
@@ -68,6 +70,3 @@ Om du vill modellera legotillverkningsarbete för lean manufacturing måste du s
 24. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Enhet.
 25. ResolveChanges enheten.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

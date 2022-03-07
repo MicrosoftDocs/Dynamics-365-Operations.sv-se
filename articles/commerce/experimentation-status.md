@@ -2,11 +2,9 @@
 title: Granska status för ett experiment
 description: Det här ämnet förklarar vilken status ett experiment har i testcykeln i Dynamics 365 Commerce.
 author: sushma-rao
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 5ae29fe5ac49d92c261c59d115664b50e87880a0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bb9d0e96f8bbdb49408b232eb0405a22d6f478bb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965135"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349218"
 ---
 # <a name="review-the-status-of-an-experiment"></a>Granska status för ett experiment
 Det finns många steg när du ställer in och kör ett experiment i Dynamics 365 Commerce. Mer information om livscykeln för experiment finns i avsnittet [Experiment i Dynamics 365 Commerce](experimentation-overview.md).
@@ -43,4 +41,7 @@ På liknande sätt i kolumnen **tredje parts status** kan följande värden visa
 
 I diagrammet nedan visas båda uppsättningarna med status och hur de relaterar till varandra.
 
-[ ![Experimentstatus](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+[ ![Experimentstatus.](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

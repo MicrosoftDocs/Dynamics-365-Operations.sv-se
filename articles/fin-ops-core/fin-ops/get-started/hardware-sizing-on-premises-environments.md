@@ -2,11 +2,9 @@
 title: Krav för beräkning av maskinvara för lokala miljöer
 description: Detta ämne listar krav för beräkning av maskinvara för lokala miljöer
 author: sericks007
-manager: AnnBe
-ms.date: 11/27/2019
+ms.date: 06/02/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 9d4f2e59d4dd78d15d561ff0da47e4b9b1a2fce3
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 443b80e44a90a68610fbb2bb5a5f4b6b7d545fa7ad772edb3672972fa82f8cbd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798314"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763444"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav för beräkning av maskinvara för lokala miljöer
 
@@ -38,13 +36,13 @@ När du har granskat dokumentationen startar du processen för uppskattning av t
 
 De faktorer som visas i följande illustration bidrar till beräkning. Ju mer detaljerad information som samlas in, desto mer exakt kan du bestämma beräkning. Maskinvaruberäknning utan stöddata blir sannorlikt felaktig. Absolut minimikravet för nödvändiga data är topptransaktionslinjens belastning per timme.
 
-[![Beräkna maskinvara för lokala miljöer](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![Beräkna maskinvara för lokala miljöer.](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 Sett från vänster till höger, är den första och viktigaste faktorn som krävs för att uppskatta beräkning en transaktionsprofil eller transaktionsbeskrivning. Det är viktigt att alltid hitta den högsta transaktionella volymen per timme. Om det finns flera topperioder, måste dessa perioder fastställas noggrant.
 
 När du förstår den belastning som påverkar din infrastruktur måste du också ta reda mer om dessa faktorer:
 
-- **Transaktioner** - Transaktioner har normalt vissa toppar under dagen/veckan. Detta beror oftast på transaktionstypen. Tids- och kostnadsposterna visar vanligtvis toppar en gång i veckan och försäljningsorderposter levereras ofta i bulk via integrering eller droppar in under dagen.
+- **Transaktioner** – Transaktioner har normalt vissa toppar under dagen/veckan. Detta beror oftast på transaktionstypen. Tids- och kostnadsposterna visar vanligtvis toppar en gång i veckan och försäljningsorderposter levereras ofta i bulk via integrering eller droppar in under dagen.
 - **Antalet samtidiga användare** – Antalet samtidiga användare är den näst viktigaste beräkningsfaktorn. Du kan inte tillförlitligt få beräkningsuppskattningar utifrån antalet samtidiga användare, så om detta är de enda data som finns, beräknar du ett ungefärligt nummer och ångrar detta om det finns mer data. En exakt samtidig användardefinition innebär:
 
     - Namngivna användare är inte samtidiga användare.
@@ -134,10 +132,15 @@ I de flesta fall, om de inte används mycket, ska de rekommenderade minimikraven
 
 En SSRS-nod kan användas för normal tillgänglighet. Övervaka din SSRS-nod medan du testar och ökar antalet kärnor tillgängliga för SSRS på grundval av behov. Kontrollera att du har en tillgänglig förkonfigurerad sekundär nod på en virtuell värd som är en annan än SSRS VM. Detta är viktigt om det finns ett problem med den virtuella datorn som är värd för SSRS eller den virtuella värden. Om så är fallet behöver du byta ut dem.
 
+Från och med version 10.0.17 är det möjligt att konfigurera ytterligare SSRS-noder för att uppnå en hög tillgänglighet. Mer information finns i [Konfigurera hög tillgänglighet för SSRS-noder (SQL Server Reporting Services)](../../dev-itpro/deployment/onprem-ssrsha.md).
+
 ## <a name="environment-orchestrator"></a>Orchestrator-miljö
 
-Orchestrator-tjänsten är en tjänst som hanterar distributionen och relaterad kommunikation med LCS. Denna tjänst används som primär Service Fabric-tjänst och kräver minst tre virtuella maskiner. Denna tjänst är samlokaliserad med Service Fabric-orchestrationtjänsterna. Detta bör beräknas till toppbelastning för klustret. För mer information, se [planera och förbereda ditt fristående kluster med Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Orchestrator-tjänsten är en tjänst som hanterar distributionen och relaterad kommunikation med LCS. Denna tjänst används som primär Service Fabric-tjänst och kräver minst tre virtuella maskiner. Denna tjänst är samlokaliserad med Service Fabric-orchestrationtjänsterna. Detta bör beräknas till toppbelastning för klustret. För mer information, se [planera och förbereda ditt fristående kluster med Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisering och överabonnemang
 
-Missionskritiska tjänster som AOS bör finnas på virtuella värdar som har dedikerade resurser - kärnor, minne och disk.
+Missionskritiska tjänster som AOS bör finnas på virtuella värdar som har dedikerade resurser – kärnor, minne och disk.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

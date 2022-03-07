@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 074be71d7b6ec1acab6307a79e397c2a2a045c39
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 39f462ae325aa1104a25a8290daed70388e624ec
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778435"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7477613"
 ---
 # <a name="the-unit-and-unit-quantity-arent-working-correctly-in-the-inventory-journal"></a>Enheten och enhetskvantiteten fungerar inte korrekt i lagerjournalen
 
@@ -31,7 +31,7 @@ Du kanske stöter på ett eller båda av följande problem när du arbetar med e
 
 Gör så här om du vill åtgärda problemet.
 
-1. I arbetsytan **Funktionshantering** se till att funktionen *Använda måttenhet och kvantitet i lagerjournaler* är aktiverad. Den här funktionen lägger till fälten **Enhet** och **Enhetskvantitet** i journalen. (Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard.)
+1. I arbetsytan **Funktionshantering** se till att funktionen *Använda måttenhet och kvantitet i lagerjournaler* är aktiverad. Den här funktionen lägger till fälten **Enhet** och **Enhetskvantitet** i journalen.
 1. När funktionen har aktiverats använder du fälten **Antal**, **Enhetskvantitet** och **Enhet** på följande sätt:
 
     - **Antal** – Ange kvantiteten med hjälp av standardenheten som har definierats för den frisläppta produkten. Standardenheten i sig visas dock inte här. Om en konvertering ställs in mellan standardenheten och den enhet som är markerad i fältet **Enhet** uppdateras fältet **Antal** automatiskt, baserat på valen i fälten **Enhetskvantitet** och **Enhet**.

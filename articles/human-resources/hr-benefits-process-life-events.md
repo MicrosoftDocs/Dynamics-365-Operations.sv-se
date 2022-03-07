@@ -1,39 +1,41 @@
 ---
 title: Bearbeta livshändelse
 description: Under medarbetarens livscykel i Microsoft Dynamics 365 Human Resources kan varje medarbetare stöta på olika ändringar av livshändelser.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ada986888a22afe83885985a694cd00ff94c9217
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9155795edf657d6589539e58d4c1536f7e9d64c3
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420539"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069665"
 ---
 # <a name="process-life-events"></a>Bearbeta livshändelse
 
-Under medarbetarens livscykel i Microsoft Dynamics 365 Human Resources kan varje medarbetare stöta på olika ändringar av livshändelser. Till exempel, äktenskap, nytt jobb eller beroendeändringar. Om du vill använda livshändelser måste du aktivera livshändelser i formuläret förmånsparametrar, ställa in livhändelsetyper och ställa in livshändelsealternativ för plantyper.
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Under medarbetarens livscykel i Microsoft Dynamics 365 Human Resources kan varje medarbetare stöta på olika ändringar av livshändelser. Till exempel, äktenskap, nytt jobb eller beroendeändringar. Om du vill använda livshändelser måste du aktivera livshändelser på sidan **Förmånsparametrar**, ställa in livhändelsetyper samt ställa in livshändelsealternativ för plantyper.
 
 Innan du kan bearbeta livshändelser måste du redan ha kört öppna registreringar minst en gång under en anställningstidsram. I USA är det vanligt att öppna anmälningen en gång per år. Utanför USA kan öppen registrering utföras vid anställningstiden. En arbetstagare behöver inte välja en förmånsplan för att livshändelser ska bearbetas, men de måste ha inkluderats i öppen registreringsbearbetning. 
 
-Använd bearbetning av livhändelse när du har arbetare med livhändelser som inträffar på ett framtida datum. Den här händelsen bearbetar alla livshändelser som inte har bearbetats (som framtida livshändelser eller livshändelser som inte är specifika för någon arbetstagare – ett exempel är en ny förmån). Livshändelser i realtid döljs.
+Använd bearbetning av livhändelse när du har medarbetare med livhändelser som inträffar på ett framtida datum. Den här händelsen bearbetar alla livshändelser som inte har bearbetats (som framtida livshändelser eller livshändelser som inte är specifika för någon arbetstagare – ett exempel är en ny förmån). Livshändelser i realtid döljs.
 
-Om till exempel dagens datum är 1 februari och den 14 februari är arbetare Johan Svensson schemalagd att ändra juridiska personer, bearbetas alla livshändelser fram till 15 februari i systemet. 
+Om till exempel dagens datum är 1 februari och den 14 februari är medarbetare Johan Svensson schemalagd att ändra juridiska personer, bearbetas alla livshändelser fram till 15 februari i systemet. 
 
 1. I arbetsytan **Förmånshantering** under **bearbetar**, välj **bearbeta livshändelser**.
 
@@ -44,7 +46,7 @@ Om till exempel dagens datum är 1 februari och den 14 februari är arbetare Joh
    | **Anmälningsperiod** | Anmälningsperiod för bearbeta livshändelse. |
    | **Juridisk person** | Juridisk person för bearbeta livshändelse. |
    | **Datum för livshändelse** | Systemet bearbetar alla händelser under anmälningsperioden som inträffar fram till detta datum. |
-   | **Arbetare** | Arbetare för bearbeta livshändelse. Om du lämnar det här fältet livshändelser bearbetas för alla arbetare. |
+   | **Arbetare** | Arbetare för bearbeta livshändelse. Om du lämnar det här fältet livshändelser bearbetas för alla medarbetare. |
 
 3. Om du vill köra processen i bakgrunden väljer du **Kör i bakgrunden** och utför följande uppgifter:
 
@@ -57,3 +59,6 @@ Om till exempel dagens datum är 1 februari och den 14 februari är arbetare Joh
    4. Välj **OK**. Processen kommer att köras med de parametrar du angett.
 
 4. Välj **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Korrigera en fritextfaktura
 description: Det här avsnittet innehåller information om hur du korrigerar en fritextfaktura som har bokförts och hur du återutfärdar den som en korrigerad faktura.
-author: abruer
+author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf4503e3d4b200219d6b444b69c866871d21787d
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 71b94e6fa4faafdc5fbe68e89635ec79616164bb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753812"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5217540"
 ---
 # <a name="correct-a-free-text-invoice"></a>Korrigera en fritextfaktura
 

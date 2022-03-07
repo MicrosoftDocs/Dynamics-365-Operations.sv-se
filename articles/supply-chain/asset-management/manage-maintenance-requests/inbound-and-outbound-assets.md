@@ -1,12 +1,10 @@
 ---
 title: Inkommande och avgående tillgångar
 description: Det här avsnittet förklarar hur du registrerar inkommande och avgående tillgångar i tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e6dfadf6824c6a3df7be9b3b6f3d9f5dd2749e34
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 0bd3127df1b583acc6841c3e115d3beceabcab2756098e567b2269c1dcc94004
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759633"
 ---
 # <a name="inbound-and-outbound-assets"></a>Inkommande och avgående tillgångar
 
@@ -44,7 +42,7 @@ Inställningen av tillgångshantering avgör om du kan arbeta med inkommande och
 3. Välj **uppdatera underhållsbegärantillstånd**.
 4. Välj **inkommande** (eller ett annat livscykeltillstånd som du har skapat för inkommande tillgångar) och välj **OK**.
 
-![Registrera tillgångar som inkommande](media/07-manage-maintenance-requests.png)
+![Registrera tillgångar som inkommande.](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Registrera inkommande tillgångar som inlevererade
 
@@ -53,7 +51,7 @@ Inställningen av tillgångshantering avgör om du kan arbeta med inkommande och
 3. Ta emot **anläggningstillgångar**
 4. I fältet **Inlevererad** ställer du in datum och tid. Välj sedan **OK**. Posten tas bort från listsidan **inkommande tillgångar**.
 
-![Registrera inkommande tillgångar som inlevererade](media/08-manage-maintenance-requests.png)
+![Registrera inkommande tillgångar som inlevererade.](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Registrera tillgångar som utgående
 
@@ -70,3 +68,6 @@ När du har slutfört underhålls- eller reparationsjobbet kan du registrera til
 2. Markera tillgången eller underhållsbegäran.
 3. Välj **leverera tillgångar**.
 4. I fältet **Levererad** ställer du in datum och tid. Välj sedan **OK**. Posten tas bort från listsidan **utgående tillgångar**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

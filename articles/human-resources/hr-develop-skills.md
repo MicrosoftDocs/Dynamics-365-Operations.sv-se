@@ -1,44 +1,44 @@
 ---
 title: Justera personalfärdigheter med verksamhetens behov
-description: Du kan spåra de färdigheter som anställda, sökanden eller kontaktpersoner har eller bör ha för att genomföra deras roller på ett effektivt sätt. Du kan även ange de färdigheter som krävs för ett visst jobb.
+description: Du kan spåra de färdigheter som anställda, kandidater eller kontaktpersoner har eller bör ha för att genomföra deras roller på ett effektivt sätt. Du kan även ange de färdigheter som krävs för ett visst jobb.
 author: andreabichsel
-manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType, HcmEmployeeDevelopmentWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 3361
 ms.assetid: c2ce94c0-933d-4edb-822c-7f0e7b49e4ee
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 7abaa99bdec5fcf20a63bfeb716ebb63dd3712df
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fc9996c31c3575ccf942907a66e59b00a344f3d1
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420598"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793715"
 ---
 # <a name="align-workforce-skills-with-business-needs"></a>Justera personalfärdigheter med verksamhetens behov
 
-Du kan spåra de färdigheter som anställda, sökanden eller kontaktpersoner har eller bör ha för att genomföra deras roller på ett effektivt sätt. Du kan även ange de färdigheter som krävs för ett visst jobb.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Du kan spåra de färdigheter som anställda, kandidater eller kontaktpersoner har eller bör ha för att genomföra deras roller på ett effektivt sätt. Du kan även ange de färdigheter som krävs för ett visst jobb.
 
 Exempel på färdigheter som du kan följa inkluderar följande:
--   Handledning - förmåga att handleda andra i arbetet.
+-   Handledning – förmåga att handleda andra i arbetet.
 -   Ledarskap – förmåga att leda medarbetare och affärsdomäner.
 -   Planering – Förmåga att se framåt, att formulera visioner och att se till att de genomförs.
 -   HTML – Förmågan att skriva HTML-kod.
 
-Innan du kan tilldela en färdighet till en person eller ett jobb, skapa en färdighetsmappningssökning eller skapa en kompetensprofil, måste du ange information om färdigheterna på sidan **Färdigheter**. För varje kompetens kan du välja en kompetenstyp och en värderingsmodell.
+Innan du kan tilldela en färdighet till en person eller ett jobb, skapa en färdighetsmappningssökning eller skapa en kompetensprofil, måste du ange information om färdigheterna på sidan **Färdigheter**. För varje kompetens kan du välja en kompetenstyp och en bedömningsmodell.
 
 ## <a name="rating-models"></a>Bedömningsmodeller
-Bedömningsmodeller gör det enklare att utvärdera en persons faktiska färdighetsnivå, den nivå de ska arbeta för att uppnå eller den färdighetsnivå som krävs för ett jobb. Du kan ange upp till 10 nivåer för en värderingsmodell.  Varje nivå i en värderingsmodell tilldelas en faktor.  Faktorvärdet ska användas för att normaliserar förfrågningar om partier av färdighetsluckor som använder olika värderingsmodeller.  Faktorn måste vara ett nummer mellan 0-9, och varje nivå måste ha en unik faktor.  Nivåer med högre faktorvärden innehåller mer vikt i en värderingsmodell.
+Bedömningsmodeller gör det enklare att utvärdera en persons faktiska färdighetsnivå, den nivå de ska arbeta för att uppnå eller den färdighetsnivå som krävs för ett jobb. Du kan ange upp till 10 nivåer för en bedömningsmodell.  Varje nivå i en bedömningsmodell tilldelas en faktor.  Faktorvärdet ska användas för att normaliserar förfrågningar om partier av färdighetsluckor som använder olika bedömningsmodeller.  Faktorn måste vara ett nummer mellan 0-9, och varje nivå måste ha en unik faktor.  Nivåer med högre faktorvärden innehåller mer vikt i en bedömningsmodell.
 
 ## <a name="specify-job-skills"></a>Ange jobbfärdigheter
 När du anger information om ett jobb, kan du ange de färdigheter som en person måste ha för att arbeta med jobbet.  Dessutom kan du ange önskad nivå för varje färdighet samt hur viktig färdigheten är. Olika jobb kan kräva olika nivåer av betydelse för samma färdighet.
@@ -62,3 +62,6 @@ Färdighetsmappningsprofiler låter dig hitta nuvarande anställda eller kandida
 Du kan skapa en analys till färdighetsmappning profil som du vill visa en lista med kompetenserna för en anställd, sökande eller kontaktperson för ett visst datum. Du kan skapa en analys för luckor i kompetens om du vill jämföra en persons kompetenser med de kompetenser som krävs för ett visst jobb.  
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

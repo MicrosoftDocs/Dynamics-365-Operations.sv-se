@@ -1,29 +1,31 @@
 ---
 title: Fullfölja serviceavtal – översikt
 description: Det här avsnittet innehåller en översikt över aktiviteter att uppfylla serviceavtal.
-author: kamaybac
+author: ShylaThompson
 ms.date: 05/03/2018
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39fe65638c413f5fbc1ea6ad4922e97f6e8fb35e
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b23ab70ea06daf2b2b91fc93ac1d77d73649693c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985896"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824520"
 ---
-# <a name="fulfill-service-agreements-overview"></a>Fullfölja serviceavtal – översikt
+# <a name="fulfill-service-agreements-overview"></a>Fullfölja serviceavtal – översikt 
 
 [!include [banner](../includes/banner.md)]
+
 
 Det här avsnittet innehåller en översikt över aktiviteter att uppfylla serviceavtal. Ämnet listar även formulär som är kopplade till respektive affärsprocesskomponent och beskriver de uppgifter som är associerande med de olika affärsprocesskomponenterna.
 
@@ -39,9 +41,9 @@ I följande register visas de formulär som stöder affärsprocesskomponenten f�
 
 <table>
 <colgroup>
-<col />
-<col />
-<col />
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
 </colgroup>
 <thead>
 <tr class="header">

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 8c92bf179006d668f8673e9abc3419a10e644184
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: d63cdea8917bed762bf8d970a408e5931aec48b7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103273"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837403"
 ---
 # <a name="warehouse-app-event-processing"></a>Händelsebearbetning i distributionslagerappen
 
@@ -26,9 +26,12 @@ ms.locfileid: "8103273"
 
 Batchjobb som körs i Supply Chain Management kan använda data från en kö för bearbetning av händelser som utfärdats av mobilappen för distributionslagerhantering för att vid behov reagera på signalerade händelser. Den här funktionen lägger till relevanta händelser i kön som svar på vissa typer av åtgärder som utförs av medarbetarna som använder appen. Ett exempel: när du använder funktionen *Skapa och bearbeta överföringsorder från lagerställeappen* skapas och uppdateras överföringsorderrubriken och -raderna i servern när du kör batchjobbet **Bearbeta händelser för lagerställeapp**.
 
-## <a name="turn-the-process-warehouse-app-events-feature-on-or-off"></a>Aktivera eller inaktivera bearbeta händelser för lagerställeapp
+## <a name="enable-the-process-warehouse-app-events-feature"></a>Aktivera funktionen bearbeta händelser för lagerställeapp
 
-Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Bearbeta lagerställeapphändelser* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Innan du kan använda den här funktionen måste du aktivera den i ditt system. Administratörer kan använda sidan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Funktionen bearbeta händelser för lagerställeapp anges som:
+
+- **Modul** – Lagerstyrning
+- **Funktionsnamn** - Bearbeta händelser för lagerställeapp
 
 ## <a name="set-up-a-batch-job-to-process-warehouse-app-events"></a>Ställ in ett batchjobb för att bearbeta händelser för lagerställeapp
 

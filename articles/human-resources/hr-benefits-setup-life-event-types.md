@@ -2,7 +2,7 @@
 title: Konfigurera livshändelsetyper
 description: Microsoft Dynamics 365 Human Resources använder livshändelsetyper för att definiera händelser där det är tillåtet att uppdatera medarbetarnas förmånsanmälan.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5286bcd940f4068531bae624876c8a35e64db4c3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7b1f2fd953c1678a5099f4f3b5cf08fa6674f4db
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420576"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466048"
 ---
 # <a name="configure-life-event-types"></a>Konfigurera livshändelsetyper
 
-Microsoft Dynamics 365 Human Resources använder livshändelsetyper för att definiera händelser där det är tillåtet att uppdatera medarbetarnas förmånsanmälan. Du kan till exempel gifta dig eller få barn. Varje livshändelsetyp-ID kan bara associeras med en livshändelsetyp. Om du till exempel skapar ett livshändelse-ID som kallas Adressändring som är associerat med livshändelsetyp Ändring av anställdas adress kan du inte skapa ett annat ID märkt Medarbetaradressändring och associera det med livshändelsetyp Ändring av anställdas adress. 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Dynamics 365 Human Resources använder livshändelsetyper för att definiera händelser där det är tillåtet att uppdatera medarbetarnas förmånsanmälan. Du kan till exempel gifta dig eller få barn. Varje livshändelsetyp-ID kan bara associeras med en livshändelsetyp. Om du till exempel skapar ett livshändelse-ID som kallas Adressändring som är associerat med livshändelsetyp Ändring av anställdas adress kan du inte skapa ett annat ID märkt Medarbetaradressändring och associera det med livshändelsetyp Ändring av anställdas adress. 
 
 När du har skapat livhändelsetyper måste du koppla dem till plantyper. Mer information finns i [Skapa plantyper](hr-benefits-setup-plan-types.md).
 
@@ -88,3 +90,6 @@ Du kan välja mellan följande livshändelser när du skapar en livshändelsetyp
 | **Åsidosätt utgång av berättiganderegel (inte USA-specifik)** | Personal avancerade > Förmåner > Planer > Förmåner > Åsidosätt berättiganderegel | Använda bearbetningar av ändring i livshändelse. Om du t.ex. redigerar en plans berättiganderegel, åsidosätt utgångsdatum till 17:00, valfri tid efter 17:00 eller följande dagar och sedan kör bearbetning av livshändelse vid ändring, visas ett meddelande om att åsidosättning av berättiganderegler har upphört att gälla. |
 | **Ny förmånsplan (ej USA-specifik)** | Personal avancerade > Förmåner > Planer > Förmåner > Ny | <ul><li>Alternativ för berättigande läggs till i en aktuell plan</li><li>En ny plan med bifogade berättigandealternativ läggs till</li></ul></br></br>Personal ska köra bearbetning av berättigande för livshändelse i denna instans. |
 | **Åsidosätt regeländring (inte USA-specifik)** | Personal avancerade > Förmåner > Regler/alternativ > Berättiganderegel | Med hjälp av bearbetning av berättigande för livshändelse. Loggas när **EhrBenefitEligibilityRule** poster har ändrats följande värden: **UseEmplCategory**, **UseEmplStatus** eller **UseEmplType**. Uppdaterar endast transaktion för livshändelse som redan finns för en ändrad regel eller ett villkor för berättigande. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

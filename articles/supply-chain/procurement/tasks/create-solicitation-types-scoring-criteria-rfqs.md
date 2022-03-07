@@ -1,26 +1,24 @@
 ---
 title: Skapa begäranstyper och göra poängvillkor för anbudsförfrågan
 description: I den här handboken visas hur du skapar en typ av begäran och associerar med en poängmetod.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 40625152a579bb269411d026d77d449902c8d4bc
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d55b91def8b8edf8310cfa0bfe9d2bcc321ee6a6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016816"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569323"
 ---
 # <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a>Skapa begäranstyper och göra poängvillkor för anbudsförfrågan
 
@@ -51,3 +49,6 @@ I den här handboken visas hur du skapar en typ av begäran och associerar med e
 8. Klicka på OK.
 9. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

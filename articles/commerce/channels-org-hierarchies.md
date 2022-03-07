@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ce0732f32a9a80fc5b0ede7ae9f1c1ab9a68a89b2fb0b1821cb5df123ca5ca4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4238d1aa277bf2f1df30825ef20dbf3095d13ebc
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746026"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800577"
 ---
 # <a name="set-up-organization-hierarchies"></a>Ställa in organisationshierarkier
 
@@ -54,7 +54,7 @@ Följ stegen nedan om du vill skapa en organisationshierarki för kanaler.
 
 Följande bild visar ett exempel på en organisationshierarki som skapats för en fiktiv "Adventure Works"-uppsättning butiker.
 
-![Exempel på organisationshierarki.](media/organizational-hierarchies.png)
+![Exempel på organisationshierarki](media/organizational-hierarchies.png)
 
 ### <a name="add-organizations-to-a-hierarchy"></a>Lägg till organisationer i hierarkin
 
@@ -67,7 +67,7 @@ Om du vill lägga till organisationer till en hierarki gör du följande.
 
 Följande bild visar en juridisk person som lagts till i hierarkistrukturen med fyra kostnadsställen som har lagts till för kanalerna "köpcentrum", "outlet", "online" och "kundtjänst". Olika butiks-, kundtjänst- och onlinekanaler kan sedan läggas till i var och en.
 
-![Exempel på hierarkidesigner.](media/hierarchy-designer.png)
+![Exempel på hierarkidesigner](media/hierarchy-designer.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

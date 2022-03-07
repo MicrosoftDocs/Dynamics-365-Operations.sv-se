@@ -2,16 +2,13 @@
 title: Synkronisera avtalsfakturor i Field Service till fritextfakturor i Supply Chain Management
 description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera avtalsfakturor i Dynamics 365 Field Service till fritextfakturor i Dynamics 365 Supply Chain Management.
 author: ChristianRytt
-manager: tfehr
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c2d0f671d4b824cb5d38a5d11c4b06b2e97bd0c8
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 21a77a0289055285f47323803a484c012e662e3a
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528255"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102744"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Synkronisera avtalsfakturor i Field Service till fritextfakturor i Supply Chain Management
 
@@ -55,23 +52,23 @@ Följande synkroniseringsuppgifter krävs före synkronisering av avtalsfakturor
 
 | Field Service  | Hantering av underleverantörer                 |
 |----------------|----------------------------------------|
-| fakturor       | Fakturahuvuden i fritext för CDS-kund |
-| fakturainformation | Fakturarader i fritext för CDS-kund   |
+| fakturor       | Dataverse fakturahuvuden i fritext för kund |
+| fakturainformation | Dataverse fakturarader i fritext för kund   |
 
 ## <a name="entity-flow"></a>Flöde för entitet
 
-Fakturor som har skapats från ett avtal i Field Service kan synkroniseras till Supply Chain Management via ett Common Data Service dataintegreringsprojekt. Uppdateringar till dessa fakturor synkroniseras till fritextfakturor i Supply Chain Management om redovisningsstatus för fritextfakturor är **pågående**. Efter fritextfakturorna bokförs i Supply Chain Management och redovisningsstatus uppdateras till **slutförd**, kan du inte längre synkronisera uppdateringar från Field Service.
+Fakturor som har skapats från ett avtal i Field Service kan synkroniseras till Supply Chain Management via ett Microsoft Dataverse dataintegreringsprojekt. Uppdateringar till dessa fakturor synkroniseras till fritextfakturor i Supply Chain Management om redovisningsstatus för fritextfakturor är **pågående**. Efter fritextfakturorna bokförs i Supply Chain Management och redovisningsstatus uppdateras till **slutförd**, kan du inte längre synkronisera uppdateringar från Field Service.
 
 ## <a name="field-service-crm-solution"></a>CRM-lösning för Field Service
 
-Fältet **Har rader med avtalsursprung** har lagts till i entiteten **Faktura**. Det här fältet hjälper till att garantera att endast de fakturor som skapas från ett avtal är synkroniserade. Värdet är **sant** om fakturan innehåller minst en fakturarad som härrör från ett avtal.
+Kolumnen **Har rader med avtalsursprung** har lagts till i tabellen **Faktura**. Den här kolumnen hjälper till att garantera att endast de fakturor som skapas från ett avtal är synkroniserade. Värdet är **sant** om fakturan innehåller minst en fakturarad som härrör från ett avtal.
 
-Fältet **Har rader med avtalsursprung** har lagts till i entiteten **Fakturarad**. Det här fältet hjälper till att garantera att endast de fakturarader som skapas från ett avtal är synkroniserade. Värdet är **sant** om fakturaraden kommer från ett avtal.
+Kolumnen **Har avtalsursprung** har lagts till i tabellen **Fakturarad**. Den här kolumnen hjälper till att garantera att endast de fakturarader som skapas från ett avtal är synkroniserade. Värdet är **sant** om fakturaraden kommer från ett avtal.
 
-**Fakturadatum** är ett obligatoriskt fält i Supply Chain Management. Därför måste fältet ha ett värde i Field Service innan synkroniseringen sker. Följande logik måste läggas till för att uppfylla detta krav:
+**Fakturadatum** är ett obligatoriskt fält i Supply Chain Management. Därför måste kolumnen ha ett värde i Field Service innan synkroniseringen sker. Följande logik måste läggas till för att uppfylla detta krav:
 
-- Om fältet **Fakturadatum** är tomt på entiteten **Faktura** (om den inte har något värde), anges det aktuella datumet när en fakturarad som härrör från en överenskommelse läggs till.
-- Användaren kan ändra fältet **Fakturadatum**. Men när användaren försöker spara en faktura som härrör från ett avtal får han eller hon ett affärsprocessfel om fältet **Fakturadatum** är tomt på fakturan.
+- Om kolumnen **Fakturadatum** är tomt på tabellen **Faktura** (om den inte har något värde), anges det aktuella datumet när en fakturarad som härrör från en överenskommelse läggs till.
+- Användaren kan ändra kolumnen **Fakturadatum**. Men när användaren försöker spara en faktura som härrör från ett avtal får han eller hon ett affärsprocessfel om kolumnen **Fakturadatum** är tomt på fakturan.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 
@@ -103,8 +100,11 @@ I följande illustrationer visas en mallmappning i dataintegrering.
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-headers"></a>Avtalsfakturor (Field Service till Supply Chain Management): Fakturarubriker
 
-[![Mallmappning i dataintegrering](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+[![Mallmappning i Dataintegration för fakturahuvuden](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Avtalsfakturor (Field Service till Supply Chain Management): Fakturarader
 
-[![Mallmappning i dataintegrering](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+[![Mallmappning i Dataintegration för fakturarader](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

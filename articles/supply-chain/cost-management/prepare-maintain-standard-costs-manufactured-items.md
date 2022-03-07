@@ -2,11 +2,9 @@
 title: Förbereda underhåll av standardkostnader för tillverkade artiklar
 description: Det här avsnittet beskriver hur du förbereder för underhåll av kostnader för tillverkade artiklar.
 author: AndersGirke
-manager: tfehr
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
@@ -18,12 +16,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b35e424c582c173e3fa1f4d0a335106e413b6660
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ec68e1efc261920dc8f08ed602836b1939511dfce01008c093af7916ecd71618
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967418"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734341"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Förbereda underhåll av standardkostnader för tillverkade artiklar
 
@@ -65,10 +63,12 @@ De principer som tilldelas tillverkade artiklar kan påverka kostnadsberäkninga
 
 Om du vill använda flödesinformation i kostnadssyfte krävs ytterligare förberedelser. Till exempel måste de kostnadskategorier som tilldelas flödesoperationer vara korrekta och fullständiga.
 
-<a name="related-topics"></a>Relaterade ämnen
---------
+## <a name="related-topics"></a>Relaterade ämnen
 
 [Periodisera konstanta kostnader för en tillverkad artikel](amortize-constant-costs-manufactured-item.md)
 
 [Ställ in produkter som antingen kan produceras eller anskaffas](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

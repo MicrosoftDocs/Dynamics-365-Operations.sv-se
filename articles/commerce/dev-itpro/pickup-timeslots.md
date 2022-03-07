@@ -2,11 +2,9 @@
 title: Skapa och uppdatera tidpunkt för kundupphämtning
 description: I det här avsnittet beskrivs hur du skapar, konfigurerar och uppdaterar tidpunkt för kundupphämtning i Commerce-administrationen.
 author: anupamar-ms
-manager: AnnBe
 ms.date: 01/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: 125696e8f32c2452a572a2316f512779f399f5c4
-ms.sourcegitcommit: 8b4cb7b6ad4aab37566bcc91e426bd56db771416
+ms.openlocfilehash: a9ee1356bfcaeee881c28cf0361b34b2c65acbc7a3b57347fa2581a8a935da42
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "4828221"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713431"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Skapa och uppdatera tidpunkt för kundupphämtning
 
@@ -36,7 +34,7 @@ Funktionen för tidpunkt ger återförsäljarna ett sätt att definiera en tidpu
 
 I bilden nedan visas ett exempel på valet av tidpunkt ser ut vid näthandelskassan.
 
-![Exempel på val av tidpunkt vid näthandelskassan](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Exempel på val av tidpunkt vid näthandelskassan.](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="time-slot-properties"></a>Egenskaper för tidpunkt
 
@@ -62,7 +60,7 @@ En tidpunkt definieras med hjälp av följande egenskaper:
 - **Aktiva dagar** – Ange de veckodagar som ska vara aktiva när upphämtningstiden är aktiv. Med den här egenskapen kan återförsäljaren definiera de dagar då man vill ha stöd för upphämtningsorder.
 - **Butikskanaler** – Ange butikskanalerna. Varje tidpunkt kan associeras med en eller flera butiker. Beroende på respektive butiks öppettider kan en eller flera tidpunkt skapas och associeras med en kanal. 
 
-<!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+<!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 Endast en tidpunkt kan konfigureras per kanal. Dessa kanaler är bland annat fysiska butiker, kundtjänster, mobila enheter och näthandelssajter.
 
@@ -87,14 +85,14 @@ Följ dessa steg för att konfigurera funktionen för tidpunkt i Commerce-admini
     > [!NOTE]
     > Du kan skapa flera mallar, men endast en mall kan associeras med en enda kanal eller butik.
 
-    ![Orderupphämtning – Dialogruta för tidsinställningar](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
+    ![Orderupphämtning – Dialogruta för tidsinställningar.](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
 
 1. Välj **OK** när du är klar.
 1. Om tidpunkterna varierar under en dag skapar du ytterligare poster på snabbfliken **Orderupphämtning – Tidsinställningar** för att se till att datum och tider inte överlappar varandra.
 1. På snabbfliken **Butikskanaler** väljer du **Lägg till** för att associera mallen för tidpunkt med de butiker eller kanaler där den ska användas.
 1. I dialogrutan **Välj organisationsnoder** använder du pilknapparna för att välja (eller rensa urvalet av) de butiker, regioner och organisationer som mallen ska associeras med.
 
-    <!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+    <!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 1. Välj **OK** när du är klar.
 1. På sidan **Distributionsschema** kör du jobben **1070** och **1135** för att synkronisera data till kanalerna.
@@ -105,7 +103,7 @@ När en order eller orderrad identifieras för upphämtning i POS kan kassören 
 
 I bilden nedan visas ett exempel på val av tidpunkt för en kassaorder.
 
-![Ett exempel på tidpunktsval för en kassaorder](../dev-itpro/media/Curbside_timeslot_POS.png)
+![Ett exempel på tidpunktsval för en kassaorder.](../dev-itpro/media/Curbside_timeslot_POS.png)
 
 ## <a name="time-slot-selection-for-e-commerce-orders"></a>Tidpunktsval för näthandelsorder
 
@@ -116,14 +114,17 @@ Mer information om hur du gör tidpunktsvalet tillgängligt för näthandelsorde
 
 Följande illustration visar ett exempel på en näthandelsorder där en tidpunkt har valts.
 
-![Exempel på en näthandelsorder där en tidpunkt för upphämtning har valts](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Exempel på en näthandelsorder där en tidpunkt för upphämtning har valts.](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="time-slot-selection-for-call-center-orders"></a>Tidpunktsval för kundtjänstorder
 
 I kundtjänstprogrammet kan kundtjänstmedarbetare välja upphämtningsbutik eller -plats, samt datum och tidpunkt, enligt illustrationen nedan.
 
-![Exempel på en kundtjänstorder där en tidpunkt för upphämtning har valts](../dev-itpro/media/Curbside_timeslot_callcenter.png)
+![Exempel på en kundtjänstorder där en tidpunkt för upphämtning har valts.](../dev-itpro/media/Curbside_timeslot_callcenter.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Informationsmodul för upphämtning](../pickup-info-module.md)
+[Modul för upphämtningsinformation](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

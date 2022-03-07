@@ -2,11 +2,11 @@
 title: Bekräfta betalningsplaner för tillgångsleasing i en batch
 description: I det här ämnet beskrivs hur du bekräftar flera betalningsplaner i en batch.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetLeasePaymConfirmationDetails
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 82e985d3b1518a287fbf0916ab3afc71d4bd6466f93992b587942053af44cf59
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a3bd7293fed4b8df5d7bd76edacbcae253aa1f5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767090"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816086"
 ---
 # <a name="confirm-asset-leasing-payment-schedules-in-a-batch"></a>Bekräfta betalningsplaner för tillgångsleasing i en batch
 

@@ -1,10 +1,12 @@
 ---
 title: Tilldela användare till säkerhetsroller
-description: Om du vill komma åt Finance and Operations-appar måste användarna ha tilldelats säkerhetsroller.
+description: För att öppna Finance and Operations-appar måste användaren tilldelas säkerhetsroller.
 author: Peakerbl
-ms.date: 02/09/2022
+manager: AnnBe
+ms.date: 05/06/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
@@ -13,18 +15,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36874b996cc5708f6fd7fbc45251f3066b5b1c97
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: f78c24e8c2ffe5418ce119e19b7c0193f01f64b8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105548"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679874"
 ---
-# <a name="manage-users-and-security-roles"></a>Hantera användare och säkerhetsroller
+# <a name="assign-users-to-security-roles"></a>Tilldela användare till säkerhetsroller
 
 [!include [banner](../../includes/banner.md)]
 
-För att kunna använda något annat än vanliga funktioner i appar för ekonomi och drift måste användarna tilldelas säkerhetsroller. Du kan tilldela användare roller automatiskt, baserat på regler och affärsdata, utesluta användare från den automatiska rolltilldelningen eller lägga till användare i roller manuellt.
+För att kunna använda något annat än vanliga funktioner i Finance and Operations måste användarna tilldelas säkerhetsroller. Du kan tilldela användare roller automatiskt, baserat på regler och affärsdata, utesluta användare från den automatiska rolltilldelningen eller lägga till användare i roller manuellt.
 
 ## <a name="automatically-assign-users-to-roles"></a>Tilldela användare automatiskt till roller
 I den här proceduren förklaras hur systemadministratörer kan tilldela användarna roller automatiskt, baserat på affärsdata. 
@@ -40,8 +42,6 @@ I den här proceduren förklaras hur systemadministratörer kan tilldela använd
 10. Granska roller tilldelade olika användare för att bekräfta att rolltilldelningsfrågan var korrekt. Justera och kör om om det behövs.
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>Exkludera användare från automatisk rolltilldelning
-I den här proceduren förklaras hur du exkluderar användare från automatiska rolltilldelningar.
-
 1. Stäng sidan.
 2. Gå till **Navigeringsfönster > Moduler > Systemadministration > Säkerhet > Tilldela användare till roller**.
 3. Välj "Redovisningsansvarig" i trädet. Välj en roll. Välj Redovisningsansvarig för det här exemplet.  
@@ -57,19 +57,3 @@ Användare som tilldelas säkerhetsroller manuellt måste också tas bort manuel
 2. I trädet väljer du roll och i menyn **Användare tilldelade till rollen**, väljer du **Tilldela/exkludera användare manuellt**.
 4. I **Tilldela användare till eller exkludera användare från rollen** visas användare som inte har tilldelats roll med **Tilldelningsläge** med inställningen **Ingen**. Välj en eller flera användare som ska tilldelas rollen.
 5. I **Åtgärdsfönstret**, välj **Tilldela till roll**. **Tilldelningsläget** uppdateras till **Manuellt** och användarna har nu fått en ny roll tilldelad.
-
-## <a name="manually-remove-users-from-roles"></a>Ta bort användare manuellt från roller
-Användare som tilldelas säkerhetsroller manuellt måste också tas bort manuellt av administratören. Dessa användare tas inte bort från roller enligt regler för automatisk rolltilldelning.
-
-1. Gå till **Navigeringsfönster > Moduler > Systemadministration > Säkerhet > Tilldela användare till roller**.
-2. Så här tar du bort en användare:
-   1. Välj en roll i trädet. 
-   2. I området **Användare som tilldelats roll**, välj den användare som ska tas bort.
-   3. Välj **Ta bort** och användaren tas bort från rollen.
-3. Så här tar du bort flera användare:
-   1. Välj en roll i trädet. 
-   2. I området **Användare som är tilldelade till rollen**, välj **Tilldela/exkludera användare manuellt**.
-   3. På sidan **Tilldela användare till eller exkludera användare från rollen** har användare inte tilldelats roll **Ingen** i kolumnen **Tilldelningsläge**. Välj de användare som ska uteslutas från rollen. 
-   4. På **Åtgärdsfönstret**, välj **Exkludera från roll**. Kolumnen **Tilldelningsläget** uppdateras nu till **Manuellt** och användarna exkluderas från rollen.
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

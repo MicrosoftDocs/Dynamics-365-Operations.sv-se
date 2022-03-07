@@ -1,12 +1,10 @@
 ---
 title: Mobil arbetsyta för fakturagodkännanden
-description: Det här avsnittet innehåller information om den mobila arbetsytan för fakturagodkännanden. Denna arbetsyta tillhandahåller en lista med fakturor som har tilldelats till dig via arbetsflödet för leverantörsfakturahuvud.
+description: Det här avsnittet innehåller information om den mobila arbetsytan för fakturagodkännanden.
 author: abruer
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8d4b40c7ce8939248e85b6b6f3d359bd16e35b0d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0d19e99776f04eab28eb7371bc0ac90ac046b62af0ad785fd3ab28309cae43ab
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683418"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759990"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Mobil arbetsyta för fakturagodkännanden
 
@@ -74,7 +72,7 @@ Hämta och installera mobilappen Finance and Operations.
 3.  Första gången du loggar in uppmanas du ange användarnamn och lösenord. Ange dina autentiseringsuppgifter.
 4.  När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.
 
-    [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Dra nedåt för att uppdatera.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="approve-invoices-by-using-the-invoice-approvals-mobile-workspace"></a>Godkänn fakturor genom att använda den mobila arbetsytan för fakturagodkännanden
 1.  På din mobila enhet väljer du arbetsytan **Fakturagodkännanden**.
@@ -86,3 +84,6 @@ Hämta och installera mobilappen Finance and Operations.
 7.  Välj **Bilagor** för att visa noteringar eller filer som är kopplade till fakturan.
 8.  På sidan **Fakturainformation** väljer du lämplig arbetsflödesåtgärd för att slutföra din granskningsprocess.
 9.  Välj **Klar**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

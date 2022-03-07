@@ -2,29 +2,35 @@
 title: Översikt över molnbaserade sökningar
 description: Det här ämnet ger en översikt över den molnbaserade sökningen i Microsoft Dynamics 365 Commerce.
 author: ashishmsft
+manager: annbe
 ms.date: 06/29/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb34780d5bdd41a128fff543fe0f1ef73cfead8b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5a9cb82053640b7abdba420e087d0707208979de
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983679"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997660"
 ---
 # <a name="cloud-powered-search-overview"></a>Översikt över molnbaserade sökningar
+
 
 [!include [banner](includes/banner.md)]
 
 Det här ämnet ger en översikt över den molnbaserade sökningen i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Översikt
 
 Produktidentifiering garanterar att kunder snabbt och enkelt kan hitta produkter genom att bläddra bland kategorier, söka och filtrera. Återförsäljare betraktar produktidentifiering som ett primärt verktyg för kundinteraktion i alla kanaler.
 
@@ -40,7 +46,7 @@ Sökrelevans och prestanda är viktiga faktorer i flerkanalsupplevelse, eftersom
 
 I bilden nedan visas ett exempel på vanliga funktioner för bläddring och sökning.
 
-![Landningssida för sökning.](./media/SearchLanding.png)
+![Landningssida för sökning](./media/SearchLanding.png)
 
 ## <a name="faceted-navigation-and-choice-summary"></a>Facetterad navigering och valöversikt 
 
@@ -50,7 +56,7 @@ Genom att använda facetterad navigering kan du konfigurera olika förfinare fö
 
 I bilden nedan visas ett exempel där uppblandning av navigering används vid en sökning.
 
-![Valöversikt.](./media/ChoiceSummary.png)
+![Valöversikt](./media/ChoiceSummary.png)
 
 ## <a name="immersive-autosuggest"></a>Integrerade automatiska förslag
 
@@ -60,7 +66,7 @@ Dynamics 365 Commerce stöder också funktioner för nyckelordsmatchningar i oli
 
 Följande illustration visar ett exempel där integrerade automatiska förslag används.
 
-![integrerade automatiska förslag.](./media/ImmersiveAutoSuggestUX.png)
+![integrerade automatiska förslag](./media/ImmersiveAutoSuggestUX.png)
 
 ## <a name="sort"></a>Sortera
 
@@ -68,13 +74,10 @@ Förbättrad sortering i Dynamics 365 Commerce låter kunderna sortera, söka oc
 
 >[!NOTE]
 >De här molndrivna sökfunktionerna är tillgängliga från och med version 10.0.8. Se till att under **Handelsparametrar > Konfigurationsparametrar** finns en post för "ProductSearch.UseAzureSearch inställd på true". 
-![Konfigurationsparametrar för molndriven sökning.](./media/CloudPoweredSearchConfigurationParameters.png)
+![Konfigurationsparametrar för med molndriven sökning](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över standardkategorilandningssida och sida för sökresultat](category-search-page-overview.md)
 
 [Hantera SEO-metadata](manage-seo-metadata.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

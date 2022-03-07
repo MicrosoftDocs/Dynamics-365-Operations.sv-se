@@ -1,43 +1,82 @@
 ---
-title: Reservera Human Resources
-description: I det här avsnittet får du veta hur du skapar en ny produktionsmiljö för Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/23/2020
+title: Etablera Human Resources
+description: I detta ämne får du veta hur du skapar en ny produktionsmiljö för Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 106976edfa2bd7efba41887d5e8f4243b56e7b2f
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 766e807ee9061f52b692cf3436ba393b334e67c4
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527812"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488093"
 ---
-# <a name="provision-human-resources"></a>Reservera Human Resources
+# <a name="provision-human-resources"></a>Etablera Human Resources
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-I det här avsnittet får du veta hur du skapar en ny produktionsmiljö för Microsoft Dynamics 365 Human Resources. Den här artikeln förutsätter att du har köpt Personal via en molnbaserad lösningsleverantör (CSP) eller ett arkitekturavtal för företag (EA). Om du har en befintlig Microsoft Dynamics 365-licens som redan innehåller tjänsteplanen for Personal och du inte kan utföra stegen i det här avsnittet, kontakta då supporten.
+I detta ämne får du veta hur du skapar en ny produktionsmiljö för Microsoft Dynamics 365 Human Resources. 
 
-För att komma igång måste en global administratör logga in på [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) och skapa ett nytt projekt for Personal. Såvida inte ett licensieringsproblem hindrar dig från att tillhandahålla Personal krävs ingen hjälp från supporten eller Dynamics Service Engineering (DSE)-representanter.
+## <a name="prerequisites"></a>Förutsättningar
+
+Följande förutsättningar måste vara på plats innan du kan etablera en ny produktionsmiljö:
+
+- Du har köpt Personal via en molnbaserad lösningsleverantör (CSP) eller ett arkitekturavtal för företag (EA). Om du har en befintlig Microsoft Dynamics 365-licens som redan innehåller tjänsteplanen for Personal och du inte kan utföra stegen i detta ämne kontaktar du supporten.
+
+- Den globala administratören har loggat in på [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) och skapat ett nytt projekt for Personal. 
+
+## <a name="provision-a-human-resources-trial-environment"></a>Skapa en utvärderingsmiljö för Personal
+
+Innan du provisioner din första resurs eller produktionsmiljö kan du använda en [utvärderingsmiljö för Personal](https://go.microsoft.com/fwlink/p/?LinkId=2115962) för att validera personalfunktioner. Bedömningsmiljöer innehåller fiktiva data som kan användas för att utforska programmet på ett säkert sätt. Även om bedömningsmiljön ägs av den användare som har begärt den, kan andra användare bjudas in via systemets administrationserfarenhet för Personal. 
+
+Med utvärderingsmiljöer kan du utvärdera personalfunktioner för personer som inte redan har tillgång till en personalmiljö. Om du inför en utvärderingsmiljö och den autentiserade användaren redan har tillgång till en eller flera befintliga personalmiljöer, omdirigeras användaren till den befintliga miljön eller listan över miljöer.
+
+Testmiljöer är inte avsedda att användas som produktionsmiljöer. De är begränsade till en 60-dagars försöksperiod. När utvärderingsperioden löper ut är miljön och all data inte raderas och kan inte återställas. Miljön kan inte konverteras till en produktions- eller tillverkningsmiljö. Du kan registrera dig för en ny bedömningsmiljö när den befintliga miljön har gått ut.
+
+När du skapar en Human Resources-utvärderingsmiljö skapas också en Power Apps-utvärderingsmiljö i klientorganisationen och kopplas till Human Resources-miljön. Power Apps-miljön, med namnet "TestDrive", har samma utvärderingsperiod som Human Resources-miljön.
+
+> [!NOTE]
+> Om den autentiserade användaren inte har behörighet att skapa Power Apps-utvärderingsmiljöer kommer det inte att gå att etablera en Human Resources-utvärderingsmiljö. Användaren måste inkluderas i den användargrupp som kan skapa utvärderingsmiljöer i Power Platform-administratörscenter. Mer information finns i [Kontrollera vem som kan skapa och hantera miljöer i Power Platform-administratörscenter](//power-platform/admin/control-environment-creation).
+
+## <a name="plan-human-resources-environments"></a>Planera Personal-miljöer
+
+Innan du skapar din första Personal-miljö bör du noggrant planera miljöbehoven för ditt projekt. Ett basabonnemang på Personal innehåller två miljöer: en produktionsmiljö och en sandbox-miljö. Beroende på hur komplext ditt projekt är, kanske du måste köpa in ytterligare sandbox-miljöer för att kunna stödja projektaktiviteter. 
+
+Att tänka på vid ytterligare miljöer:
+
+- **Datamigrering**: Du kan komma att behöva överväga en ytterligare miljö för datamigreringsaktiviteter så att din sandbox-miljö kan användas i testsyfte under hela projektets gångf. Om det finns ytterligare en miljö kan datamigreringsaktiviteter fortsätta samtidigt som tester och konfigurationsaktiviteter sker i en annan miljö.
+- **Integrering**: Du kanske måste överväga att skapa ytterligare en miljö för att konfigurera och testa integreringer. Detta kan innefatta inbyggda integreringer som Ceridian Dayforce LinkedIn Talent Hub-integreringar eller anpassade integreringar som exempelvis för löne-, sökandespårningssystem eller förmånssystem och leverantörer.
+- **Utbildning**: Du kan behöva en separat miljö som är konfigurerad med en uppsättning utbildningsdata för att utbilda dina medarbetare i användningen av det nya systemet. 
+- **Flerprojektfas**: Du kan behöva ytterligare en miljö för att stödja konfiguration, datamigrering, testning eller andra aktiviteter i en projektfas som planeras efter projektets ursprungliga start.
+
+ > [!IMPORTANT]
+ > När det gäller din miljö rekommenderar vi följande:
+ > - Använd din produktionsmiljö i hela projektet som din konfigurationsmiljö GULD. Detta är viktigt eftersom du inte kan kopiera en sandbox-miljö till en produktionsmiljö. När du går live nu är därför GULD-miljö din produktionsmiljö, och du utför dina övergångsaktiviteter i den här miljön.</br></br>
+ > - Använd din sandbox- eller någon annan miljö för att utföra en testomställning innan du lanserar. Detta gör du genom att uppdatera produktionsmiljön med din GULD-konfiguration i din sandbox-miljö.</br></br>
+ > - Upprätta en detaljerad övergångschecklista som inkluderar varje datapaket som krävs för att migrera den slutgiltiga datan till produktionsmiljön i samband med lanseringsövergången.</br></br>
+ > - Använd din produktionsmiljö i hela projektet som din konfigurationsmiljö TEST. Om du behöver fler miljöer kan organisationen köpa dem för en extra kostnad.</br></br>
 
 ## <a name="create-an-lcs-project"></a>Skapa ett LCS-projekt
 
 För att hantera dina Personal-miljöer med LCS måste först skapa ett LCS-projekt.
 
 1. Logga in på [LCS](https://lcs.dynamics.com/Logon/Index) med det konto som du använder för din Personal-prenumeration.
+
+   > [!NOTE]
+   > För att säkerställa ett lyckat tillhandahållande måste det konto som du använder för att tillhandahålla Personal-miljön tilldelas antingen rollen **Systemadministratör** eller rollen **Systemanpassare** i den Power Apps-miljö som är kopplad till Personal-miljön. Mer information om att tilldela säkerhetsroller till användare i Power Platform finns i [Konfigurera användarsäkerhet för resurser](/power-platform/admin/database-security).
 
 2. Klicka på plustecknet (**+**) för att skapa ett projekt.
 
@@ -58,12 +97,12 @@ När du har skapat ett LCS-projekt kan du införa Personal i en miljö.
 2. Ange om denna miljö är ett begränsat läge eller produktionsinstans av Personal. Funktionerna för förhandsgranskning kan finnas tillgängliga i begränsade instanser för att möjliggöra tidig återrapportering och testning.
    
     > [!NOTE]
-    > Det går inte att ändra Human Resources-instanstypen när den har angetts. Kontrollera att rätt instanstyp har valts innan du fortsätter.</br></br>
+    > Det går inte att ändra Personal-instanstypen när den har angetts. Kontrollera att rätt instanstyp har valts innan du fortsätter.</br></br>
     > Instanstypen Personal är separat från instanstypen för Microsoft Power Apps-miljön, som du anger i Power Apps-administrationscentret.
     
-3. Markera alternativet **Inkludera demodata** om du vill att din miljö med samma demodatauppsättning används i Personal testkörning. Demodata är praktiskt för långsiktig demonstrations- och utbildningsmiljöer och ska aldrig användas i produktionsmiljöer. Du måste välja det här alternativet vid den första implementeringen. Du kan inte uppdatera en befintlig distribution senare.
+3. Markera alternativet **Inkludera demodata** om du vill att din miljö med samma demodatauppsättning används i utvärderingsmiljön för Personal. Demodata är praktiskt för långsiktig demonstrations- och utbildningsmiljöer och ska aldrig användas i produktionsmiljöer. Du måste välja det här alternativet vid den första implementeringen. Du kan inte uppdatera en befintlig distribution senare.
 
-4. Personal etableras alltid i en Microsoft Power Apps-miljö, detta i syfte att möjliggöra Power Apps-integrering och utbyggnad. Läs avsnittet ”Välja en Power Apps-miljö” i det här ämnet innan du fortsätter. Om du inte redan har en Power Apps-miljö, välj hantera miljöer i LCS eller gå till Power Apps administrationscenter. Följ stegen för att [skapa en Power Apps-miljö](https://docs.microsoft.com/powerapps/administrator/create-environment).
+4. Personal etableras alltid i en Microsoft Power Apps-miljö, detta i syfte att möjliggöra Power Apps-integrering och utbyggnad. Läs avsnittet ”Välja en Power Apps-miljö” i det här ämnet innan du fortsätter. Om du inte redan har en Power Apps-miljö, välj hantera miljöer i LCS eller gå till Power Apps administrationscenter. Följ stegen för att [skapa en Power Apps-miljö](/powerapps/administrator/create-environment).
 
 5. Välj den miljö som du vill konfigurera Personal på.
 
@@ -76,8 +115,6 @@ När du har skapat ett LCS-projekt kan du införa Personal i en miljö.
     > [!NOTE]
     > Om du ännu inte har uppfyllt de slutgiltiga kraven kan du implementera en testinstans av Personal i projektet. Du kan sedan använda den här instansen för att testa din lösning tills du loggar ut. Om du använder den nya miljön för testning måste du upprepa denna procedur för att skapa en produktionsmiljö.
 
-    > Du kan överväga att använda en kostnadsfri 60 dagar [utvärderingsmiljön för Personal](https://go.microsoft.com/fwlink/p/?LinkId=2115962). Även om utvärderingsmiljön ägs av den användare som har begärt den, kan andra användare bjudas in via systemets administrationserfarenhet för Personal. Utvärderingsmiljöer innehåller fiktiva data som kan användas för att utforska programmet på ett säkert sätt. De är inte avsedda att användas som produktionsmiljöer. Observera att alla data i miljön tas bort och kan inte återställas när utvärderingstiden upphör att gälla efter 60 dagar. Du kan registrera dig för en ny utvärderingsmiljö när den befintliga miljön har gått ut.
-
 ## <a name="select-a-power-apps-environment"></a>Välj en Power Apps-miljö
 
 Du kan integrera och utöka användningen av personaldata med hjälp Power Apps-verktyg. Mer information om Power Apps-miljöer, såsom omfattning, åtkomst och att skapa och välja miljö finns i [Vi presenterar Power Apps-miljöer](https://powerapps.microsoft.com/blog/powerapps-environments/). 
@@ -88,23 +125,48 @@ Använd följande riktlinjer när du bestämmer vilka Power Apps-miljöer som sk
 
 2. En enskild Personal-miljö mappas till en enda Power Apps-miljö.
 
-3. En Power Apps-miljö "innehåller" Personal-programmet tillsammans med motsvarande Power Apps, Power Automate och Common Data Service-program. Om Power Apps-miljön tas bort tas även apparna bort. Vid tillhandahållande av en Personal-miljö kan du tillhandahålla antingen en **Utvärderingsversion**- eller **Produktion**-miljö. Välj typ av miljö baserat på hur miljön kommer att användas. 
+3. En Power Apps-miljö "innehåller" Personal-programmet tillsammans med motsvarande Power Apps, Power Automate och Dataverse-program. Om Power Apps-miljön tas bort tas även apparna bort. Vid tillhandahållande av en Personal-miljö kan du tillhandahålla antingen en **Bedömningsversion**- eller **Produktion**-miljö. Välj typ av miljö baserat på hur miljön kommer att användas. 
 
-4. Dataintegration och teststrategier ska beaktas, till exempel: begränsat läge, UAT, produktion. Överväg noggrant de olika konsekvenserna för distribution, eftersom det inte är lätt att ändra vilken Personal-miljö som är mappad till en Power Apps-miljö.
+4. Dataintegrering och teststrategier ska beaktas, till exempel: begränsat läge, UAT, produktion. Överväg noggrant de olika konsekvenserna för distribution, eftersom det inte är lätt att ändra vilken Personal-miljö som är mappad till en Power Apps-miljö.
 
-5. Du kan inte använda följande Power Apps-miljöer för personal. De filtreras från urvalslistan i LCS:
+5. Följande Power Apps-miljöer kan inte användas för Personal. De filtreras från urvalslistan i LCS:
  
-    - **Standard Power Apps-miljöer** - Medan varje klientorganisation automatiskt etableras med en standard Power Apps-miljö rekommenderar vi inte att du använder dem med personal. Alla användare av klientorganisation kan komma åt Power Apps-miljön och oavsiktligt skada produktionsdata när de testar och utforskar med Power Apps eller Power Automate integreras.
+    - **Standard Power Apps-miljöer** – Medan varje klientorganisation automatiskt etableras med en standard Power Apps-miljö rekommenderar vi inte att du använder dem med personal. Alla användare av klientorganisation kan komma åt Power Apps-miljön och oavsiktligt skada produktionsdata när de testar och utforskar med Power Apps eller Power Automate integreras.
    
     - **Testmiljöer** – dessa miljöer skapas med ett utgångsdatum. Efter förfallodatum kommer din miljö och alla personalinstanser som finns i den att tas bort automatiskt.
    
-    - **Regioner som inte stöds** För närvarande stöds bara Personal i följande regioner: USA, Europa, Storbritannien, Australien, Kanada och Asien.
+    - **Ej stödda områden** - Miljön måste finnas i ett geografiskt område som stöds. Mer information finns i [Områden som stöds](hr-admin-setup-provision.md#supported-geographies).
+
+6. Dubbla skrivfunktioner för att integrera Personal-data med miljön Power Apps kan bara användas om alternativet **Aktivera Dynamics 365-appar** har valts för miljön. Se [sidan Dubbelriktad skrivning](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) för mer information för dubbelriktad skrivning.
 
     > [!NOTE]
-    > Personal är etablerad i samma region där Power Apps-miljön har etablerats. Migrering av personalmiljöer till en annan region stöds inte.
+    > Alternativet **Aktivera Dynamics 365-appar** måste väljas när Power Apps skapas. Om alternativet inte är valt vid administreringstillfället kommer du inte att kunna använda dubbelriktad skrivning för att integrera data mellan Dynamics 365 Human Resources och Power Apps miljön eller installera Dynamics 365-appar som Dynamics 365 Sales och Field Service i miljön. Det här alternativet kan inte ångras. Mer information finns i [Några viktiga överväganden när du skapar en ny miljö](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) på Power Platform dokumentationssplatsen.
 
-6. När du har kontrollerat den korrekta miljön kan du fortsätta med etableringsprocessen. 
- 
+7. När du har kontrollerat den korrekta miljön kan du fortsätta med etableringsprocessen. 
+
+### <a name="supported-geographies"></a>Områden som stöds
+
+Personal har för närvarande stöd för följande områden:
+
+- USA
+- Europa
+- Storbritannien
+- Australien
+- Kanada
+- Asien 
+
+När du skapar en Personal-miljö väljer du en Power Apps-miljö att koppla till Personal-miljön. Personal-miljön tillhandahålls sedan i samma Azure-område som den valda Power Apps-miljön. Du kan välja var Personal-miljön och -databasen finns rent fysiskt genom att välja område när du skapar den Power Apps-miljö som ska associeras med Personal-miljön.
+
+Du kan välja det Azure-*område* där miljön tillhandahålls, men du kan inte välja den specifika Azure-*-regionen*. Vid automation fastställs den specifika region inom den område där miljön skapas i syfte att optimera belastningsutjämning och prestanda. Du hittar information om Azure-områden och -regioner i dokumentationen om [Azure-områden](https://azure.microsoft.com/global-infrastructure/geographies).
+
+Datan för Personal-miljön finns alltid i det Azure-område som den skapas i. Den finns dock inte alltid inom samma Azure-region. I haveriberedskapssyfte replikeras datan både i den primära Azure-regionen och i en sekundär redundansregion inom området.
+
+ > [!NOTE]
+ > Migrering av Personal-miljöer från en Azure-region till en annan stöds inte.
+
 ## <a name="grant-access-to-the-environment"></a>Bevilja åtkomst till miljön.
 
-Som standard har den globala administratör som skapade miljön åtkomst till den. Du måste uttryckligen bevilja åtkomst till ytterligare appanvändare. Du måste lägga till användare och tilldela dem lämpliga roller i Personal-miljön. Global administratör som har distribuerat Personal måste också starta både Attract och Onboard för att slutföra initieringen och aktivera åtkomst för andra innehavare. Tills detta inträffar kan andra användare inte komma åt Onboard och Attract och får åtkomstfel. Mer information finns i [skapa nya användare](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) och [tilldela användare till säkerhetsroller](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+Som standard har den globala administratör som skapade miljön åtkomst till den. Du måste uttryckligen bevilja åtkomst till ytterligare appanvändare. Du måste lägga till användare och tilldela dem lämpliga roller i Personal-miljön. Mer information finns i [skapa nya användare](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) och [tilldela användare till säkerhetsroller](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

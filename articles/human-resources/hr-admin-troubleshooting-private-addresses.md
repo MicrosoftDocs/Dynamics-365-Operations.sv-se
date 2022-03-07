@@ -2,11 +2,9 @@
 title: Åtkomst till privata adresser per säkerhetsroll
 description: Det här avsnittet beskriver hur du löser problemet när en kund kan inte komma åt privata adresser.
 author: andreabichsel
-manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -17,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fbe0e8acc1b879e4d7982b33413236432f25f630
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8daee1b645836e96a4bf3057cb317d5409d4583a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420566"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803931"
 ---
 # <a name="access-to-private-addresses-by-security-role"></a>Åtkomst till privata adresser efter säkerhetsroll
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Utleverans**
 
@@ -39,3 +39,6 @@ För att lösa problemet måste kunden följa instruktionerna på den dubblerade
 3. Välj **Spara**.
 
 ![Sidan Parametrar för global adressbok](media/GAD-parameters.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

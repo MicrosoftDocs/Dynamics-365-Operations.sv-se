@@ -1,8 +1,8 @@
 ---
-title: Översikt
+title: Administreringsöversikt
 description: Den här administratörsguiden hjälper dig att konfigurera, hantera och felsöka Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 38a8845ec4ae4c61ea969efdee60a12cfb644a3b
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527871"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114356"
 ---
-# <a name="overview"></a>Översikt
+# <a name="administration-overview"></a>Administreringsöversikt
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -41,7 +41,7 @@ Den här administratörsguiden hjälper dig att konfigurera, hantera och felsök
 
 - Ställa in dataintegrering
   - [Välj en dataintegreringsteknik](hr-admin-integration-choose-technology.md)
-  - [Konfigurera Common Data Service-integrering](hr-admin-integration-common-data-service.md)
+  - [Konfigurera Dataverse-integrering](hr-admin-integration-common-data-service.md)
   - [Konfigurera integration med Finance](hr-admin-integration-finance.md)
   - [Konfigurera integration med Dayforce](hr-admin-integration-dayforce.md)
   - [Skapa en app för återkommande dataexport](hr-admin-integration-recurring-data-export.md)
@@ -83,7 +83,7 @@ Den här administratörsguiden hjälper dig att konfigurera, hantera och felsök
   - [Uppgiftsinspelare](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
   - [Skapa dokumentation eller utbildning med Uppgiftsinspelare](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
-- Felsöka Human Resources
+- Felsöka Personal
   - [Få support](hr-admin-troubleshooting-support.md)
   - [Optimera prestanda med automatiska rensningsuppgifter](hr-admin-troubleshooting-batch-history.md)
   - [Analysrapporter uppdateras inte](hr-admin-troubleshooting-analytic-reports.md)

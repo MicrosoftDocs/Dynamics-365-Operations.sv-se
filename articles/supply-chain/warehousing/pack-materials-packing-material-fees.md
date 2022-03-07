@@ -1,7 +1,7 @@
 ---
 title: Förpackningsmaterial och avgifter
 description: I det här avsnittet finns information om avgifter för förpackningsmaterial som betalas till återvinningsföretag med specifika intervall.
-author: Mirzaab
+author: MarkusFogelberg
 ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 2194
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72d07365a5022a67b8868232fbbb04f610701009
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: b37e61a3c48d646dce9007229fcb7fa4ecde45a8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902031"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816350"
 ---
 # <a name="packing-materials-and-fees"></a>Förpackningsmaterial och avgifter
 

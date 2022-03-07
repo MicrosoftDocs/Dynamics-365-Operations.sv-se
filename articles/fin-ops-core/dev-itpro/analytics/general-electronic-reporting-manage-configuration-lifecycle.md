@@ -1,12 +1,10 @@
 ---
 title: Hantera livscykeln för konfiguration av elektronisk rapportering (ER)
-description: Den här avsnittet beskriver hur du hanterar livscykeln för elektronisk rapportering (ER) konfigurationer för Microsoft Dynamics 365 Finance-lösningen.
+description: Detta ämne beskriver hur du hanterar konfigurationer för elektronisk rapportering (ER) konfigurationer för Dynamics 365 Finance.
 author: NickSelin
-manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a4741784103817c270c4c7f730753ba59a327d1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b8b61082cf17707c952b6e07613769a671c349bb8fa92c21e3fe8524ef62dcb2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682633"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767789"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Hantera livscykeln för konfiguration av elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
 
-Den här avsnittet beskriver hur du hanterar livscykeln för elektronisk rapportering (ER) konfigurationer för Microsoft Dynamics 365 Finance.
+Detta ämne beskriver hur du hanterar konfigurationer för elektronisk rapportering (ER) konfigurationer för Dynamics 365 Finance.
 
 ## <a name="overview"></a>Översikt
 
@@ -47,7 +45,7 @@ Elektronisk rapportering (ER) är en motor som stöder lagstadgade behov och lan
 
 - Gör en mall tillgänglig så att den kan användas i andra instanser:
 
-    - Omforma en dokumentmall som har skapats till en ER-konfiguration och exportera konfigurationen från den aktuella appinstansen som ett XML-paket som antingen kan lagras lokalt eller i LCS.
+    - Omforma en dokumentmall som har skapats till en ER-konfiguration, och exportera konfigurationen från den aktuella programinstansen som ett XML-paket som antingen kan lagras lokalt eller i Lifecycle Services (LCS).
     - Omforma en ER-konfiguration till en dokumentmall för appar.
     - Importera ett XML-paket som lagras lokalt antingen eller i LCS till den aktuella instansen.
 
@@ -80,10 +78,38 @@ För följande ER-relaterade orsaker rekommenderas att du designar ER-konfigurat
 - Användare i antingen rollen **elektronisk rapportering utvecklare** eller **elektronisk rapportering funktionella konsult** kan redigera konfigurationer och köra dem för teständamål. Det här scenariot kan orsaka anrop av metoder för klasser och tabeller som kan vara skadliga för affärsdata och instansens prestanda.
 - Anrop av metoder för klasser och tabeller som ER-datakällor eller ER-konfigurationer är inte begränsade av startpunkter och loggat företagsinnehåll. Därför känslig affärsinformation kan nås av användarna i antingen **elektronisk rapportering utvecklare** eller **elektronisk rapportering funktionella konsult**.
 
-ER-konfigurationer som utformas i utvecklingsmiljön kan överföras till testmiljön för utvärdering av konfigurationen (rätt process integration, korrekta resultat, prestanda) och kvalitetssäkring, till exempel korrektheten i rollen som drivs av åtkomsträttigheter och uppdelning av uppgifter. Funktionerna som aktiverar ER-konfigurationsutbyte kan användas i detta syfte. Slutligen kan beprövade ER-konfigurationer överföras antingen till LCS där de kan delas med abonnenter eller till produktionsmiljön för intern användning, som visas i följande bild.
+ER-konfigurationer som utformas i utvecklingsmiljön kan [laddas upp](#data-persistence-consideration) till testmiljön för utvärdering av konfigurationen (korrekt processintegrering, korrekta resultat samt prestanda) och kvalitetssäkring, till exempel korrektheten i rollbaserad åtkomsträttigheter och ansvarsfördelning. Funktionerna som aktiverar ER-konfigurationsutbyte kan användas i detta syfte. Beprövade ER-konfigurationer kan laddas upp till LCS i syfte att dela dem med tjänsteprenumeranter, eller också kan de [importeras](#data-persistence-consideration) till produktionsmiljön för internt bruk.
 
-![Livscykel för ER-konfiguration](./media/ger-configuration-lifecycle.png)
+![Livscykel för ER-konfiguration.](./media/ger-configuration-lifecycle.png)
+
+## <a name="data-persistence-consideration"></a>Beaktande av databeständighet
+
+Du kan [importera](tasks/er-import-configuration-lifecycle-services.md) olika [versioner](general-electronic-reporting.md#component-versioning) av en ER-[konfiguration](general-electronic-reporting.md#Configuration) individuellt till din Finance-instans. När en ny version av en ER-konfiguration importeras, kontrollerar systemet innehållet i utkastversionen av denna konfiguration:
+
+- När den importerade versionen är lägre än den högsta versionen av denna konfiguration i den aktuella Finance-instansen, förblir innehållet i utkastversionen för denna konfiguration oförändrat.
+- När den importerade versionen är högre än någon annan version av den här konfigurationen i den aktuella Finance-instansen kopieras innehållet i den importerade versionen till utkastversionen av den här konfigurationen så att du kan fortsätta att redigera den senast ifyllda versionen.
+
+Om den här konfigurationen ägs av konfigurations [leverantören](general-electronic-reporting.md#Provider) som för tillfället är aktiverad, visas utkastversionen för den här konfigurationen för dig på snabbfliken **Versioner** på sidan **Konfigurationer** (**Organisationsadministrering** > **Elektronisk rapportering** > **Konfigurationer**). Du kan välja utkastversionen av konfigurationen och [ändra](er-quick-start2-customize-report.md#ConfigureDerivedFormat) ess innehåll genom att använda relevant ER-designer. När du har redigerat utkastversionen av en ER-konfiguration matchar denna inte längre innehållet i den högsta versionen av denna konfiguration i aktuell Finance-instans. För att förhindra att dina ändringar går förlorade visas ett felmeddelande om att importen inte kan fortsätta, detta eftersom versionen av denna konfiguration är högre än den högsta versionen av konfigurationen i den aktuella Finance-instansen. När detta inträffar, till exempel med formatkonfiguration **X**, visas felet **Versionen Format "X" har ej slutförts**.
+
+Om du vill ångra de ändringar som du infört i utkastversionen väljer du den högsta slutförda eller delade versionen av ER-konfigurationen i Finance på snabbfliken **Versioner** och sedan alternativet **Hämta denna version**. Innehållet i den valda versionen kopieras till utkastversionen.
+
+## <a name="applicability-consideration"></a>Tillämplighet, beaktande
+
+När du designar en ny version av en ER-konfiguration kan du definiera dess [beroende](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md) på andra programvarukomponenter. Det här steget anses vara en förutsättning för att styra hämtningen av den här konfigurationens version från en ER-databas eller en extern XML-fil och för ytterligare användning av versionen. När du försöker importera en ny version av en ER-konfiguration använder systemet de konfigurerade förutsättningarna för att kontrollera om versionen kan importeras.
+
+I vissa fall kanske du kräver att systemet ignorerar de konfigurerade förutsättningarna när du importerar nya versioner av ER-konfigurationer. Följ de här stegen om du vill att systemet ska ignorera kraven under importen.
+
+1. Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
+2. På sidan **Konfigurationer** i åtgärdsfönstret, på fliken **Konfigurationer** i gruppen **Avancerad inställningar** markerar du **Använd parametrar**.
+3. Ställ in **Hoppa över produktuppdateringar och versionskontroll under importen** alternativet **Ja**.
+
+    > [!NOTE]
+    > Den här parametern är specifik för användaren och företaget.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
+
+[Definiera ER‑konfigurationers beroende av andra komponenter](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

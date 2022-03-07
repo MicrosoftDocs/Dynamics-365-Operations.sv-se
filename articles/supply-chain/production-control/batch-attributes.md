@@ -2,11 +2,9 @@
 title: Batchattribut
 description: Den här ämnet innehåller information om batchattribut. Batchattribut är egenskaper för råmaterial och färdiga produkter som utgör lagerbatchar. Ämnet innehåller även information om hur du tilldelar batchattribut och hur du kan söka i dem när du reserverar batchar.
 author: ShylaThompson
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PdsBatchAttrib, PdsBatchAttribAssociate, PdsBatchAttribByAttribGroup, PdsBatchAttribByItem, PdsBatchAttribByitemCustomer, PdsBatchAttribGroup, WHSBatchAttribReserve
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5e2a27fe73ddd9fcd7cafc0ded05fd8a15841fd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8d4a62b54b6b12c6bc69d9d1ec09ecac1aedb180ea81babac8d9be146d6e2825
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966515"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6739764"
 ---
 # <a name="batch-attributes"></a>Batchattribut
 
@@ -52,3 +50,6 @@ Du kan söka i batchattribut när du gör batchreservationer för en försäljni
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

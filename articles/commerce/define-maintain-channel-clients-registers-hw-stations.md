@@ -1,7 +1,7 @@
 ---
 title: Ansluta kringutrustning till POS
 description: Detta avsnitt innehåller information om hur du ansluter kringutrustning till Retail POS.
-author: BrianShook
+author: rubencdelgado
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 66912443c25adfae6fa11e6a25c4a97f63a438ba
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 64b228954c040050f605d60cd416c112f3b12e25
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779528"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802055"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Ansluta kringutrustning till POS
 
@@ -78,7 +78,7 @@ Medan maskinvarustationen som anges på kanalnivå innehåller instansspecifik i
 
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS med ansluten kringutrustning
 
-[![Traditionell, fast kassa.](./media/traditional-300x279.png)](./media/traditional.png)
+[![Traditionell, fast kassa](./media/traditional-300x279.png)](./media/traditional.png)
 
 Anslut MPOS till kassans kringutrustning i ett traditionellt, fast kassascenario genom att först navigera till själva POS och tilldela en maskinvaruprofil. Du hittar kassaregister om du går till **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassor**. 
 
@@ -97,7 +97,7 @@ Gå sedan till MPOS och använd åtgärden **Välj maskinvarustation** och marke
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS eller Cloud POS med en fristående maskinvarustation
 
-[![Delad kringutrustning.](./media/shared-300x254.png)](./media/shared.png)
+[![Delad kringutrustning](./media/shared-300x254.png)](./media/shared.png)
 
 I det här scenariot delas en fristående maskinvarustation mellan MPOS- och Cloud POS-klienter. Det här scenariot kräver att du skapar en maskinvarustationsprofil för att du ska kunna specificera vilket hämtningsbart paket, vilken port och vilken maskinvaruprofil maskinvarustationen använder. Du hittar maskinvarustationsprofilen genom att gå till **Butik och handel** &gt; **Kanalinställning** &gt; **Kassainställning** &gt; **Kassaprofiler** &gt; **Maskinvarustationens profiler**. 
 

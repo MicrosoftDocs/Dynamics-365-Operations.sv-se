@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c2a35079f43b92b5ff6d68aa7068f3e1f68ce8c2c32d23cdd22798f95c9a0ff4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5a65f1884ea87bbf2519cc94e4c52a40ac1a91bd
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732235"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193987"
 ---
 # <a name="enter-skills"></a>Ange färdigheter
 
@@ -45,17 +45,17 @@ Om du vill registrera färdigheter utan att kräva godkännande måste du skapa 
 
 4. I fönstret **Skapa arbetsflöde**, välj **Kompetens för arbetare**.
 
-   [![Välja arbetsflöde för medarbetarfärdigheter.](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
+   [![Välja arbetsflöde för arbetsfärdigheter](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
 
 5. I dialogrutan **Öppna denna fil**, välj **Öppna**. Ange din inloggningsuppgifter när du uppmanas.
 
 6. I arbetsflödesredigeraren, välj arbetsflödeselementet **Godkänn färdigheter** och dra det till arbetsflödesredigeraren.
 
-   [![Välj Godkänn arbetsflödeselement för färdigheter.](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
+   [![Välj Godkänn arbetsflödeselement för färdigheter](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
 
 7. Anslut elementet **Start** till elementet **Godkänn färdigheter 1** och anslut till elementet **Godkänn färdigheter 1** till elementet **Avsluta**. Du kanske måste rulla nedåt för att se elementet **Slut**. Du kan dra den närmare de andra elementen.
 
-   [![Anslut arbetsflödeselement.](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
+   [![Anslut arbetsflödeselement](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
 
 8. Dubbelklicka på arbetsflödeselementet **Godkänn färdigheter 1** och högerklicka sedan på elementet **Steg 1**. Högerklicka på elementet **Steg 1** och välj **Egenskaper**.
 
@@ -65,7 +65,7 @@ Om du vill registrera färdigheter utan att kräva godkännande måste du skapa 
 
 11. Välj **Lägg till villkor**. Efter **Var**, välj **Anställdas självbetjäningsförmåga** och välj sedan **Anställdas självbetjäningsförmåga.Person**. Efter **är**, välj **fält** och välj **Förhållande mellan användare och person.Person**.
 
-    [![Ange villkor.](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
+    [![Ange villkor](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
 
 12. Välj **Tilldelning** i det vänstra stapeln.
 
@@ -73,7 +73,7 @@ Om du vill registrera färdigheter utan att kräva godkännande måste du skapa 
 
 14. På fliken **Hierarkival** i fältet **Hierarkityp:**, välj **Chefshierarki**.
 
-    [![Ange en chefshierarki.](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
+    [![Ange en chefshierarki](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
 
 15. Välj **Stäng**, välj **Arbetsflöde** i arbetsflödet och välj sedan **Spara och stäng**.
 

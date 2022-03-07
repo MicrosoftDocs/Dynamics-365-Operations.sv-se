@@ -1,12 +1,10 @@
 ---
 title: Utforma konfigurationer för att generera rapporter i Office-format med inbäddade bilder
-description: I detta avsnitt finns information steg för steg om hur du skapar konfigurationer för elektronisk rapportering (ER) som skapar elektroniska dokument i Microsoft Office-format (Excel och Word) och som innehåller inbäddade bilder.
+description: Det här ämnet beskriver hur du skapar konfigurationer som genererar elektroniska dokument i Excel- och Word-format som innehåller inbäddade bilder.
 author: NickSelin
-manager: AnnBe
-ms.date: 01/23/2018
+ms.date: 04/23/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,18 +12,27 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0145565ba060308162620f29a42499b0bffe6496
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 03a514c5b616d761ef3eb6347e67e645b23eaa1794911775835e77cded4500ac
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684413"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719355"
 ---
 # <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Utforma konfigurationer för att generera rapporter i Office-format med inbäddade bilder
 
 [!include [banner](../../includes/banner.md)]
 
-För att slutföra stegen i den här proceduren ska du först slutföra stegen i proceduren "ER Skapa en konfigurationsleverantör och markera den som aktiv". Den här proceduren förklarar hur du skapar konfigurationer för elektronisk rapportering (ER) för att skapa elektroniska dokument som innehåller inbäddade bilder i Microsoft Excel eller Word-dokument. I den här proceduren skapar du de nödvändiga ER-konfigurationerna för exempelföretaget Litware, Inc. Dessa steg kan slutföras med hjälp av USMF-datauppsättning. Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Innan du börjar ska du hämta och spara filerna i hjälpavsnittet [bädda in bilder och former i dokument som du skapar med ER](../electronic-reporting-embed-images-shapes.md). Filerna är: modell för checkar.xml, utskriftsformat för checkar.xml, företagslogotyp.png, signatur.png, signaturbild 2.png och checkmall för Word.docx.
+För att slutföra stegen i den här proceduren ska du först slutföra stegen i proceduren "ER Skapa en konfigurationsleverantör och markera den som aktiv". Den här proceduren förklarar hur du skapar konfigurationer för elektronisk rapportering (ER) för att skapa elektroniska dokument som innehåller inbäddade bilder i Microsoft Excel eller Word-dokument. I den här proceduren skapar du de nödvändiga ER-konfigurationerna för exempelföretaget Litware, Inc. Dessa steg kan slutföras med hjälp av USMF-datauppsättning. Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Hämta och spara följande filer innan du börjar: 
+
+| beskrivning                                          | Filnamn                   |
+|------------------------------------------------------|-----------------------------|
+| Exempel på konfiguration av ER-datamodell.                          | [Modell för checkar.xml](https://download.microsoft.com/download/6/e/a/6ea166fd-1382-4fdb-8dcb-0f13379f9c8e/Modelforcheques.xml)       |
+| Konfiguration för ER-fomat                              | [Checkar utskriftsformat.xml](https://download.microsoft.com/download/1/7/c/17c301e3-c4ee-4886-ae75-440fcc002c8c/Chequesprintingformat.xml) |
+| Bild av företagslogotypen                                   | [Företagslogotyp.png](https://download.microsoft.com/download/8/2/e/82e6bd81-caac-4e9a-bfce-1392ce7c8616/Companylogo.png)            |
+| Signaturbild                                      | [Signaturbild.png](https://download.microsoft.com/download/5/0/9/509151b3-06fc-4870-9408-7c9a43b72771/Signatureimage.png)         |
+| Alternativ signaturbild                          | [Signaturbild 2.png](https://download.microsoft.com/download/3/0/0/30045bf1-0ff6-4215-9162-b77c2f5dcc7c/Signatureimage2.png)       |
+| Microsoft Word-mall för utskrift av betalningscheckar  | [Checkmall Word.docx](https://download.microsoft.com/download/4/4/d/44d9d255-9ad1-42fe-87db-23f319fd8e89/ChequetemplateWord.docx)   |
 
 ## <a name="verify-prerequisites"></a>Verifiera förutsättningar  
  1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.  
@@ -90,3 +97,6 @@ För att slutföra stegen i den här proceduren ska du först slutföra stegen i
  30. Välj Ja i fältet Tillåt att reservationer skapas för inaktiva bankkonton:  
  31. Klicka på Spara.  
  32. Stäng sidan.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

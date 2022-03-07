@@ -1,12 +1,10 @@
 ---
 title: Arbetstidskontroll
 description: I det här avsnittet förklaras arbetstidskontroll i Tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetHourControl
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cc4382d72e032fdfad05f2077ffe8e41e64c6a55
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 90c4f649cc9ea45341ede923294a7c5a892cd68714db356c3799430d18f5de60
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018481"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742786"
 ---
 # <a name="work-hour-control"></a>Arbetstidskontroll
 
@@ -68,8 +66,11 @@ I skärmbilden nedan visas ett exempel på ett beräkningsresultat i **Timkontro
 - I fältet **Faktiska timmar** visas bokförda timmar på arbetsorder. 
 - I fältet **Utfäst tid** visas det totala antalet timmar som ditt företag är förpliktigat att utföra i relation till arbetsorder.
 
-![Exempel på beräkning av timkontroll för tillgång](media/04-controlling-and-reporting.png)
+![Exempel på beräkning av timkontroll för tillgång.](media/04-controlling-and-reporting.png)
 
 Ett annat sätt att göra en timberäkning är att använda flera tillgångar i **Alla tillgångar** eller **Aktiva tillgångar**. Klicka sedan på knappen **Timkontroll** på snabbfliken **Allmänt**. De valda tillgångarna infogas automatiskt i fältet **Tillgång** på snabbfliken **Poster som ska ingå**. Klicka på **OK** i dialogrutan **Timkontroll för tillgång** och beräkningen för de valda tillgångarna visas. Samma procedur kan utföras för funktionsplatser i **Alla funktionsplatser** eller **Aktiva funktionsplatser**, och för arbetsorder i **Alla arbetsorder** eller **Aktiva arbetsorder**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

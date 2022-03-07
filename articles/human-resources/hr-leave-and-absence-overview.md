@@ -1,31 +1,32 @@
 ---
 title: Översikt över tjänstledighet och frånvaro
-description: I Dynamics 365 Human Resources är arbetsytan tjänstledighet och frånvaro en flexibel struktur för att skapa nya tjänstledighetsplaner. Den innehåller också arbetsflöden för hantering av förfrågningar och en intuitiv sida för självbetjäningstjänster för medarbetare som ber om ledighet.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/01/2020
-ms.topic: article
+description: I Dynamics 365 Human Resources är arbetsytan tjänstledighet och frånvaro en flexibel struktur för att skapa nya tjänstledighetsplaner.
+author: twheeloc
+ms.date: 10/28/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
-ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ea58c3a08e74eea1ab51aa19a5a28445a9bcbb04
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 344b4bba144a311530ce7be3b4bc230ce9cf8d1a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420646"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069031"
 ---
 # <a name="leave-and-absence-overview"></a>Översikt över tjänstledighet och frånvaro
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources hjälper dig att ge dina arbetare bra fördelar. Arbetsytan **tjänstledighet** och frånvaro en flexibel struktur för att skapa nya tjänstledighetsplaner. Den innehåller också arbetsflöden för hantering av förfrågningar och en intuitiv sida för självbetjäningstjänster för medarbetare som ber om ledighet. Analyser hjälper ditt företag att mäta och övervaka ledighetssaldon och förbrukning för dina tjänstledighetsplaner.
 
@@ -35,7 +36,8 @@ Innan du kan skapa tjänstledighetsplaner för dina medarbetare måste du göra 
 
 - [Konfigurera tjänstledighets- och frånvaroparametrar](hr-leave-and-absence-parameters.md)
 - [Skapa en arbetstidskalender](hr-leave-and-absence-working-time-calendar.md)
-- [Skapa en ledighetsansökan till arbetsflödet](hr-leave-and-absence-workflow.md)
+- [Skapa ett arbetsflöde för ledighetsansökan](hr-leave-and-absence-workflow.md)
+- [Konfigurera rollen för frånvarochefen](hr-configure-absence-manager.md)
 
 ## <a name="create-and-manage-leave-plans"></a>Skapa och hantera tjänstledighetsplaner
 
@@ -51,6 +53,10 @@ Innan du skapar tjänstledighetsplaner för dina arbetare måste du skapa tjäns
 
 Dina medarbetare kan skicka ledighetsansökningar och du kan hantera dem på arbetsytan **medarbetarens självbetjäning**.
 
-[Begär ledig tid](hr-employee-self-service-request-time-off.md)
-[Hantera begäranden om ledighet och frånvaro](hr-employee-self-service-manage-requests.md)
+- [Begära ledig tid](hr-employee-self-service-request-time-off.md)
+- [Hantera begäranden om ledighet och frånvaro](hr-employee-self-service-manage-requests.md)
+- [Konfigurera rollen för frånvarochefen](hr-configure-absence-manager.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

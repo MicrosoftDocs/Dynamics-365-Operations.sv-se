@@ -1,26 +1,24 @@
 ---
 title: Skapa en anskaffningskatalog
 description: Det här ämnet förklarar hur du skapar en anskaffningskatalog.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProcCategoryHierarchyManagement, CatProcureCatalogListPage, CatProcureCatalogCreate, CatProcureCatalogEdit, SysPolicyListPage, SysPolicy, CatCatalogPolicyRule, PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqAddItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: eaf8b8d8b369aa704344d6984a0f111af6e4285b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: a9bec131798a67695bc3ea27cbbdea404d4494382e25e97b2931508ec7d52fca
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016487"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746925"
 ---
 # <a name="create-a-procurement-catalog"></a>Skapa en anskaffningskatalog
 
@@ -65,3 +63,6 @@ Det här ämnet förklarar hur du skapar en anskaffningskatalog. Den här uppgif
 7. Välj **Lägg till på rader**.
 8. Välj **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

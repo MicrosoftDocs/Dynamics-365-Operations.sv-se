@@ -1,26 +1,29 @@
 ---
 title: Beräkna kapacitetsbeläggning
 description: I det här avsnittet beskrivs hur du beräknar kapacitetsbeläggning i Tillgångshantering.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetCapacityLoad, EntAssetWorkOrderCapacityLoadCalculate, EntAssetWorkOrderCapacityLoad
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eed75cd5268b19d819d42e764bdbb5e6f4c79a0a732c5023b3fc40da798e2ca1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5015955338a4cbc2b51585d6297756f20dccee8b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757888"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437786"
 ---
 # <a name="calculate-capacity-load"></a>Beräkna kapacitetsbeläggning
 
@@ -53,11 +56,8 @@ Detta är användbart om du vill få en översikt över förväntad kapacitetsbe
 
 7. I **Gruppera efter...**-grupper klickar du på de relevanta knapparna för att visa den obligatoriska detaljnivån för beräkningen. I bildrutan nedan markeras de valda knapparna **Gruppera efter** med blå färg. Klicka på en knapp för att aktivera och inaktivera den.
 
-    ![Figur 1.](media/01-capacity-planning.png)
+    ![Figur 1](media/01-capacity-planning.png)
 
 >[!NOTE]
 >Om du bara vill fokusera på kapacitetsplanering för schemalagda arbetsorder läser du i [Beräkna kapacitetsbeläggning på schemalagda arbetsorder](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

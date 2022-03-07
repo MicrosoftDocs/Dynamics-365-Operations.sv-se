@@ -1,30 +1,34 @@
 ---
 title: Ange hur returnerade artiklar ska avyttras
 description: Ange hur returnerade artiklar ska avyttras
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventQuarantineOrder
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e609c1c285b34a5416a2058809b2fc4fafb73fca
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b2b1468328433a67253bafc21ac9c9b3a2398872
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571339"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437337"
 ---
-# <a name="specify-how-to-dispose-of-returned-items"></a>Ange hur returnerade artiklar ska avyttras
+# <a name="specify-how-to-dispose-of-returned-items"></a>Ange hur returnerade artiklar ska avyttras 
 
 [!include [banner](../includes/banner.md)]
+
 
 När du hanterar en returorder måste du ange en orsakskod som visar varför produkten returneras identifiera. Du måste även ange en dispositionskod och dispositionsåtgärden om vad som ska göras med den returnerade produkten.
 
@@ -34,9 +38,9 @@ Du kan definiera alla de dispostionskoder du behöver som stöd för affärsproc
 
 <table>
 <colgroup>
-<col />
-<col />
-<col />
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -124,8 +128,8 @@ För varje dispositionskod, som du definierar, måste du välja dispositionsåtg
 
 <table>
 <colgroup>
-<col />
-<col />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -161,15 +165,21 @@ För varje dispositionskod, som du definierar, måste du välja dispositionsåtg
 </tbody>
 </table>
 
+
 ## <a name="select-a-disposition-code-for-a-quarantine-order"></a>Välja en dispositionskod för en karantänorder
 
-1. Klicka på **Lagerhantering** \> **Periodisk** \> **Kvalitetshantering** \> **Karantänorder**.
-1. För en befintlig karantänorder väljer du en åtgärd i fältet **Dispositionskod** på fliken **Översikt**.
+1.  Klicka på **Lagerhantering** \> **Periodisk** \> **Kvalitetshantering** \> **Karantänorder**.
+
+2.  För en befintlig karantänorder väljer du en åtgärd i fältet **Dispositionskod** på fliken **Översikt**.
+
+
 
 ## <a name="see-also"></a>Se även
 
-[Karantänorder (formulär)](/dynamicsax-2012//quarantine-order-form)
+[Karantänorder (formulär)](https://technet.microsoft.com/library/aa554073(v=ax.60))
 
 [Dispositionskoder (formulär)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+  
+
+

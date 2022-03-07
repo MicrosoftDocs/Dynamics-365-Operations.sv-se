@@ -2,15 +2,12 @@
 title: Kartmodul
 description: Det här avsnittet mappar kartmoduler och beskriver hur du konfigurerar dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: af6aedb6c0112822155c6d855909578a927d1c2c
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: bc5962d6bedba1f5abf423c396382e5c8a901c81797ae95132833e23c46cfd57
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665430"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747403"
 ---
 # <a name="map-module"></a>Kartmodul
 
@@ -32,9 +29,7 @@ ms.locfileid: "4665430"
 
 Det här avsnittet mappar kartmoduler och beskriver hur du konfigurerar dem i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Översikt
-
-En kartmodul visar platserna för butikerna i en interaktiv karta som återges med hjälp av [Bing Maps-V8 webbkontroll](https://docs.microsoft.com/bingmaps/v8-web-control/). En Bing Maps API-nyckel krävs och måste läggas till på sidan för delade Commerce-administration. I kartmoduler finns olika vyer, till exempel väg, flyg och gata som användarna kan välja för att visa kartplatser. De tillåter också interaktioner som att zooma in och använda användarens plats.
+En kartmodul visar platserna för butikerna i en interaktiv karta som återges med hjälp av [Bing Maps-V8 webbkontroll](/bingmaps/v8-web-control/). En Bing Maps API-nyckel krävs och måste läggas till på sidan för delade Commerce-administration. I kartmoduler finns olika vyer, till exempel väg, flyg och gata som användarna kan välja för att visa kartplatser. De tillåter också interaktioner som att zooma in och använda användarens plats.
 
 En kartmodul arbetar tillsammans med modulen butiksväljare för att fastställa geografiska platser för butiker som måste återges på en karta. Butiksväljare och kartmoduler interagerar när en användare väljer en butik i en av dessa moduler på en webbplatssida. Kartmoduler kan utökas för andra scenarier, förutom interaktion med modulerna för butiksväljare. Det krävs emellertid att modulen anpassas.
 
@@ -43,7 +38,7 @@ En kartmodul arbetar tillsammans med modulen butiksväljare för att fastställa
 
 Följande bild visar ett exempel på en kartmodul som används på en sida för butiksväljare.
 
-![Exempel på en modul för butiksväljare](./media/ecommerce-Storelocator.PNG)
+![Exempel på en modul för butiksväljare.](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="module-properties"></a>Modulegenskaper
 
@@ -81,4 +76,7 @@ Mer information om hur du konfigurerar en kartmodul på en sida finns i [modulen
 
 [Hantera Bing-kartor för din organisation](./dev-itpro/manage-bing-maps.md)
 
-[Bing Maps V8 webbkontroll](https://docs.microsoft.com/bingmaps/v8-web-control/)
+[Bing Maps V8 webbkontroll](/bingmaps/v8-web-control/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

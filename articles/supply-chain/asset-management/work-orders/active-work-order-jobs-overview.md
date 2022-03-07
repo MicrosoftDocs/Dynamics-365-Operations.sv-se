@@ -1,28 +1,25 @@
 ---
 title: Översikt över underhållsjobb för aktiva arbetsorder
 description: I det här avsnittet beskrivs översikt över aktiva arbetsorder för underhållsjobb i Tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 81e5611cd1491ee0c119f049e992afb4b6299991
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: fdfbce3315d98fdb2bd7b980a3281f69fc821376
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019489"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982571"
 ---
 # <a name="active-work-order-maintenance-jobs-overview"></a>Översikt över underhållsjobb för aktiva arbetsorder
 
@@ -38,7 +35,10 @@ I kolumnen **%** visar ett nummer slutförandet av arbetsordern i procent. Slutf
 
 I bilden nedan visas ett exempel på listsidan **Aktiva arbetsorder för underhållsjobb**.
 
-![Figur 1](media/23-work-orders.png)
+![Figur 1.](media/23-work-orders.png)
 
 En kort beskrivning av knapparna på listsidan **Underhållsjobb för aktiva arbetsorder** finns i [Introduktion till arbetsorder](../work-orders/introduction-to-work-orders.md) där identiska knappar beskrivs.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

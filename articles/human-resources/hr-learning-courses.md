@@ -2,30 +2,30 @@
 title: Ställa in utbildningskurser
 description: Personalresursadministratörer och chefer kan använda kursfunktionerna för att underhålla information om utbildningen som ges till arbetare.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 253f0d07679b6327a0ed1e3cc20ede66249750b8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0718987583d02a76acc2420e5a371c418757e384
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420656"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793547"
 ---
 # <a name="set-up-training-courses"></a>Ställa in utbildningskurser
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Personalresursadministratörer och chefer kan använda kursfunktionerna för att underhålla information om utbildningen som ges till arbetare.
 
@@ -137,3 +137,6 @@ Medarbetare som registrerar sig för en kurs via sidan **Självbetjäning för m
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources (08 juli 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 8 juli 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,17 +13,19 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba0bb54b44f66aa73056667a93a3f8e6f7f618ee
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: c0762c86842db32127ac1da97a92ec05d434707d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528483"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794431"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-8-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (8 juli 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -71,9 +71,9 @@ Skapade och ändrade systemfält har nu aktiverats i registret **WorkCalendarEmp
 
 Den här versionen korrigerar ett fel (null-referens) i strömlinjeformad medarbetartransaktion när du anställer en medarbetare med alternativet att **anställa och lägga till detaljer**.
 
-## <a name="changes-made-in-the-common-data-service-worker-entity-dont-reflect-in-human-resources-455652"></a>Ändringar gjorda i Common Data Service arbetsenheten visas inte i personal (455652)
+## <a name="changes-made-in-the-dataverse-worker-entity-dont-reflect-in-human-resources-455652"></a>Ändringar gjorda i Dataverse arbetsenheten visas inte i personal (455652)
 
-Ändringar som görs i följande fält i entiteten **Arbetare** i Common Data Service kommer nu att visas i personal:
+Ändringar som görs i följande fält i entiteten **Arbetare** i Dataverse kommer nu att visas i personal:
 
 - **Arbetar hemifrån**
 - **Datum för tjänsteålder**
@@ -131,13 +131,16 @@ Nu är en DMF-enhet tillgänglig för periodiserade avstängningar.
 
 ## <a name="coming-soon"></a>Kommer snart
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Entiteter för checklista inkluderade i Common Data Service
+## <a name="checklist-entities-included-in-dataverse"></a>Entiteter för checklista inkluderade i Dataverse
 
-Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga i Common Data Service.
+Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga i Dataverse.
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
 [Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

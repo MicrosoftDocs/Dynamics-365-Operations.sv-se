@@ -2,9 +2,11 @@
 title: Ställ in standardbeskrivningar för automatisk bokföring
 description: Det här avsnittet förklarar hur du kan ställa in standardtext som används för att beskriva redovisningsposter som bokförs automatiskt i redovisningen. Du kan ställa in standardbeskrivningstext genom att använda fritext eller välja fasta variabler.
 author: aprilolson
+manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -14,12 +16,12 @@ ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 89ea19753abdc4e5d4219a123a832bb3606515a43b439d5f94a9619857b6c7d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d1b73b104ed8a8a015cb97dcf3055a648cfb083d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722705"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994750"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Ställ in standardbeskrivningar för automatisk bokföring
 
@@ -84,6 +86,3 @@ När du har slutfört stegen i avsnittet [Ange standardbeskrivningar](#set-up-de
 2. Välj databasregistret från vilket du vill lägga till parameterdata i beskrivningen i fältet **Referenstabell**.
 3. Välj fältet från vilket du vill lägga till parameterdata i beskrivningen i fältet **Referensfält**.
 4. Upprepa steg 1 till och med 3 om du vill lägga till fler parametrar.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

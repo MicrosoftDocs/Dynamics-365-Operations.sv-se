@@ -1,10 +1,11 @@
 ---
 title: Inställningar av parametrar för hemtagningskostnad
-description: I detta ämne beskrivs hur du ställer in allmän information och konfigurationsinställningar som används i modulen Hemtagningskostnad för bokföring, statusuppdateringar, nummerserier och beteende.
+description: I det här avsnittet beskrivs hur du ställer in allmän information och konfigurationsinställningar som används i modulen hemtagningskostnad för bokföring, statusuppdateringar, nummerserier och beteende.
 author: sherry-zheng
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ITMParameters
 audience: Application User
@@ -13,13 +14,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 834a8cc5b50e02afb1ecf7f53d2c4fa661764219
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: 973f23a18166abeb05bdea660ef69230d9a8c4c0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571795"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833915"
 ---
 # <a name="landed-cost-parameters-setup"></a>Inställningar av parametrar för hemtagningskostnad
 
@@ -31,7 +32,7 @@ Du använder sidan **parametrar för hemtagningskostnad** för att ställa in al
 
 Om du vill arbeta med parametrarna går du till **hemtagningskostnad \> inställningar \> parametrar för hemtagningskostnad** och ställ sedan in fälten som beskrivs i följande underavsnitt.
 
-![Sidan Parametrar för hemtagningskostnad.](media/landed-cost-parameters.png "Sidan parametrar för hemtagningskostnad")
+![Sidan parametrar för hemtagningskostnad](media/landed-cost-parameters.png "Sidan parametrar för hemtagningskostnad")
 
 ## <a name="general-tab"></a>Fliken Allmänt
 

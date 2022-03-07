@@ -1,12 +1,10 @@
 ---
 title: Överför en konfiguration till Lifecycle Services
-description: Detta ämne förklarar hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en ny en konfiguration för elektronisk rapportering (ER) och ladda upp den i Microsoft Dynamics Lifecycle Services (LCS).
+description: Detta avsnitt förklarar hur du skapar en ny elektronisk rapportkonfiguration (ER) och laddar upp den till Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
-manager: AnnBe
 ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ebafb52882fd33f4f0ef140c5d23d3288af97a2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0211fea7af303fe1dd7dce26f887bed4ed3b0f1e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684173"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744925"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>Överför en konfiguration till Lifecycle Services
 
@@ -145,3 +143,6 @@ I det här exemplet ska du skapa en konfigurering för bildpunktföretaget, Litw
     Den ER-konfiguration som du överförde ska visas i listan.
 
     Observera att den överförda LCS-konfigurationen kan importeras till en annan instans om leverantörerna har tillgång till det här LCS-projektet.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Praxischef Power BI-innehåll
-description: Det här avsnittet beskriver vad som ingår i innehållet för praxischef för Power BI. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
-author: KimANelson
-manager: AnnBe
+description: Det här avsnittet beskriver vad som ingår i innehållet för praxischef för Power BI.
+author: kfend
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
@@ -16,18 +14,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 17a68e5aedb8b085c85d1ed7b6ad87f3eaecfc25
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4acef3c595f25fa0be16945a9f41611832cfcea9
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685715"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500231"
 ---
 # <a name="practice-manager-power-bi-content"></a>Praxischef Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vad som ingår i **praxischef** Microsoft Power BI-innehåll. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
+Det här avsnittet beskriver vad som ingår i innehållet för **praxischef** för Microsoft Power BI. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
 
 ## <a name="overview"></a>Översikt
 
@@ -117,3 +115,6 @@ Nedanstående avsnitt beskriver de sammanlagda mått som används i respektive e
 | Sammanlagda huvudmått       | Fält               | beskrivning |
 |---------------------------------|---------------------|-------------|
 | Planerad kostnad för slutförd aktivitet | Sum(TotalCostPrice) | Uppskattad total självkostnad för alla projekttransaktionstyper som har slutförda uppgifter. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

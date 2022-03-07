@@ -2,28 +2,28 @@
 title: Kreditbas för Education
 description: I detta ämne beskrivs alternativuppsättningen Kreditbas för Education för Dynamics 365 Human Resources.
 author: jaredha
+manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 65a0be8753a101b23707c4d0e086cf6c5ad57944
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d82cf1aacc805b2149c66640a700e53085260aac
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067889"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464090"
 ---
 # <a name="education-credit-basis"></a>Kreditbas för Education
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

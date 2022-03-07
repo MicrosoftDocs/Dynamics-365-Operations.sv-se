@@ -1,27 +1,30 @@
 ---
 title: Formler och formelversioner
 description: Det här avsnittet innehåller information om formler och formelversioner. En formel definierar material, komponenter och resultat för en viss process i processtillverkning. Formler används för att planera och framställa produkter i processtillverkning.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule, EcoResProductProdTypeFormulaNoActiveFormulaFormPart
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca7111811d14aaf0f6c8b814877897884e4cd76f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c7fb37483412fdd09fe3734ddb148b050ec02951
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570283"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437602"
 ---
 # <a name="formulas-and-formula-versions"></a>Formler och formelversioner
 
@@ -68,6 +71,3 @@ Funktionen Skalbar finns bara om samtliga formelns varukomponenter har angetts s
 
 ## <a name="use-step-consumption"></a>Använd stegförbrukning
 Stegförbrukning eliminerar kravet att ange en kvantitet för en ingrediens på fliken **Formelrad**. Stegförbrukning har istället konfigurerats att ha ett **Från serie**-värde och ett **Kvantitet**-värde. Informationen från den Stegförbrukning per serie-post som uppfyller kvantiteten i batch-ordern väljs. Stegförbrukningen är användbar när förbrukningstakten inte är linjär med avseende på batchorderns storlek, och ökar behovet endast när en viss kvantitetströskel uppnås. Du aktiverar funktionen för en ny formel i gruppen **Förbrukningsberäkning** och ändra formelinställningen för tillämpbar ingrediens från **Standard** till **Steg**. Du anger denna förbrukningsmetod på fliken **Inställningar** på sidan **Formelrad**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

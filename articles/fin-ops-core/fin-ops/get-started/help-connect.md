@@ -1,12 +1,10 @@
 ---
 title: Konfigurera hjälpfunktionen för Finance and Operations-appar
-description: I det här avsnittet finns information om komponenterna i hjälpsystemet för vissa Microsoft Dynamics 365-appar. Det innehåller även information om hur du ansluter dessa appar och en sammanfattning av processen för att skapa egen hjälp.
+description: I det här avsnittet finns information om komponenterna i hjälpsystemet för vissa Microsoft Dynamics 365-appar.
 author: margoc
-manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d000c3f801d382921a027c8ee259fd44ac5cdc80
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: f793068a5d4df6206229249c5b37bee0ef34da8d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798290"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343822"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurera hjälpfunktionen för Finance and Operations-appar
 
@@ -34,7 +32,7 @@ I det här avsnittet finns en översikt över komponenterna i hjälpsystemet fö
 
 Finance and Operations-appar innehåller begreppsmässiga översikter och andra ämnen som publiceras på [https://docs.microsoft.com/dynamics365](/dynamics365/)-webbplatsen. Du når detta innehåll från **Hjälp**-fönstret i produkten. Följande bild visar delarna i hjälpsystemet.
 
-[![Hjälparkitektur](./media/help-architecture.png)](./media/help-architecture.png)
+[![Hjälparkitektur.](./media/help-architecture.png)](./media/help-architecture.png)
 
 Hjälpsystemet i produkten hämtar artiklar från docs.microsoft.com och andra anslutna webbplatser. Det tar också med uppgiftsguider som lagras i BPM (affärsprocessmodelleraren) i Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -49,14 +47,14 @@ På sidan **Systemparametrar** kan systemadministratörer konfigurera åtkomst t
 > - Om du vill konfigurera Hjälp måste du vara inloggad på ett konto i samma klientorganisation där appen distribueras.
 > - Det går inte att ansluta till ett LCS-bibliotek från en instans av appen som körs på en virtuell hårddisk (VHD).
 
-[![Formulär för systemparametrar med hjälpinställningar](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![Formulär för systemparametrar med hjälpinställningar.](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 Om du vill konfigurera uppgiftsguider för en lösning följer du instruktionerna på sidan **Systemparametrar**.
 
 > [!IMPORTANT]
 > Första gången du öppnar fliken **Hjälp** måste du ansluta till Lifecycle Services. Se till att välja länken i mitten av formuläret, vänta på anslutningen, stäng dialogrutan och välj sedan **OK** för att komma till sidan **Systemparametrar**.
 >
-> [![Anslut till LCS](./media/connect-to-lcs-crop-1024x365.png "Anslut till LCS")](./media/connect-to-lcs-crop.png)
+> [![Anslut till LCS](./media/connect-to-lcs-crop-1024x365.png "Anslut till LCS.")](./media/connect-to-lcs-crop.png)
 
 1. Välj Lifecycle Services-projektet att ansluta till.
 2. Välj BPM-biblioteken (inom det valda projektet) att hämta uppgiftsregistreringar från.
@@ -99,3 +97,6 @@ Om du vill samarbeta med Microsoft angående verktyg och processer för att anpa
 [Uppgiftsinspelarresurser](../../dev-itpro/user-interface/task-recorder.md)  
 [Skapa dokumentation eller utbildning med Uppgiftsinspelare](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Anpassad GitHub-databas för Hjälp](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Schemalagda underhållsjobb för arbetsorder
 description: I det här avsnittet beskrivs schemalagda arbetsorder för underhållsjobb i Tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 432dfffffb5e8bbf6da42b3a79bd9ea4330640b3
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: b826d7a47a4e6eff927552e292dd64a89fbe99ba
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017602"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359207"
 ---
 # <a name="scheduled-work-order-maintenance-jobs"></a>Schemalagda underhållsjobb för arbetsorder
 
@@ -49,5 +47,8 @@ Sidan **Schemalagda arbetsorder för underhållsjobb** visar en översikt över 
 
 I bilden nedan visas ett exempel på sidan **Schemalagda arbetsorder för underhållsjobb**.
 
-![Figur 1](media/07-work-order-scheduling.png)
+![Figur 1.](media/07-work-order-scheduling.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

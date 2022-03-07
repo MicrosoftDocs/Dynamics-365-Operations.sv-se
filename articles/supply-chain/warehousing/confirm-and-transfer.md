@@ -2,23 +2,26 @@
 title: Bekräfta och överför
 description: I det här avsnittet beskrivs hur du använder funktionen bekräfta och överför, som gör att användarna kan leverera från lagret innan de slutför allt arbete som är kopplat till dessa laster.
 author: mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 7b487684980f60112d9af6bea02672f7e919c834
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103599"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437435"
 ---
 # <a name="confirm-and-transfer"></a>Bekräfta och överför
 
@@ -45,17 +48,20 @@ Du kan bara dela upp laster som uppfyller följande kriterier:
 
 - En eller flera lastrader har plockade kvantiteter.
 - Laststatusen är mindre än den lastade.
-- Det finns ingen lastraddata. (Denna data skapas via konsolideringen av ID-nummer på mellanlagringsplatsen och funktionen bekräfta och överför stöder inte konsolidering av ID-nummer.)
-- Inget lager väntar på paketering på en förpackningsplats. (Funktionen *Bekräfta och överföring* har inte stöd för lager som har plockats till paketet, men har ännu inte packats om inte behållare som packas placeras på mellanlagringsplatser där lastning har skapats.)
+- Det finns ingen lastraddata. (Denna data skapas via konsolideringen av ID-nummer på mellanlagringsplatsen och funktionen *bekräfta och överför* stöder inte konsolidering av ID-nummer.)
+- Inget lager väntar på paketering på en förpackningsplats. (Funktionen *bekräfta och överför* saknar stöd för lager som har plockats till förpackningsstationen men ännu inte förpackats.)
 
 > [!NOTE]
 > Den här funktionen skiljer sig från funktionerna för transportlast, som bör användas i lagerställen som aldrig kan planera och skapa laster innan de plockas, utan att i stället lastas tillgängligt transportutrymme efter att plockningen har slutförts.
 >
 > Använd funktionen *bekräfta och överför* i situationer där laster vanligtvis planeras och skapas i förväg, men där undantag ibland uppstår där lasten inte passar den tillgängliga transporten (t.ex. lastbil).
 
-## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>Aktivera och inaktivera funktionen för bekräftelse och överföring
+## <a name="turn-on-confirm-and-transfer"></a>Aktivera bekräfta och överför
 
-De funktioner som beskrivs i det här avsnittet måste funktionen *Bekräfta och överföra* vara inaktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Bekräfta och överföra* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Innan du kan använda funktionen *bekräfta och överför* måste den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+
+- **Modul:** *Lagerstyrning*
+- **Funktionens namn:** *Bekräfta och överför*
 
 ## <a name="set-up-confirm-and-transfer"></a>Ställ in bekräfta och överför
 
@@ -224,6 +230,3 @@ Du kan också bekräfta att transaktionsrelationerna har uppdaterats på följan
 - Alternativet **Dela kvantitet till ny last** fungerar även när vissa av de återstående arbetsrubrikerna har statusen *Pågår*. Därför kan du fortfarande använda funktionen även om arbetarna redan kör plockningsorder.
 - Om du väljer **Avbryt ej uppfylld kvantitet** när det finns återstående arbete med statusen *Öppen* eller *Pågår* visas följande fel meddelande: "det går inte att avbryta resterande kvantitet för last. Det finns arbete för last."
 - Om du väljer **Avbryt ej uppfylld kvantitet** när det inte finns något återstående arbete men det finns lastrader på ingången, visas följande felmeddelande: "Det gick inte att bekräfta inleveransen eftersom kvantiteten för artikeln överskrider procentsatsen som är definierad för under leveransen." Du undviker felet genom att ange procentsatsen **Under leverans** ej frisläppta raderna till 100 procent. Det går inte att flytta frisläppta rader till en ny last, men den aktuella last bekräftas med under leverans. I det här fallet kommer du inte att kunna frisläppa den ursprungliga ordern igen. Därför måste du hantera den på något annat sätt.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

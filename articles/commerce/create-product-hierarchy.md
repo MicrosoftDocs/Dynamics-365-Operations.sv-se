@@ -2,11 +2,9 @@
 title: Skapa en ny produkthierarki
 description: I det här avsnittet beskrivs hur du skapar en ny produkthierarki i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c7d0c792a8590be474b05dea262ae11d15e0ada3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8aef33a501f43105730eaa21a9159eb1398a1b36
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965231"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799575"
 ---
 # <a name="create-a-new-product-hierarchy"></a>Skapa en ny produkthierarki
 
@@ -79,3 +77,6 @@ Grupper av kategoriattribut kan också tilldelas till varje grupp efter behov.
 [Hantera produktkategorier och produkter](category-management-product-creation.md)
 
 [Ändra sorteringsordning för marknadsföringsentiteter](custom-order-categories-nav-retail-prod-hierarchy.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

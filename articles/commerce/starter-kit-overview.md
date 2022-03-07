@@ -3,23 +3,24 @@ title: Modulbibliotek – översikt
 description: Det här ämnet innehåller en översikt över Microsoft Dynamics 365 Commerce modulbibliotek.
 author: anupamar-ms
 ms.date: 09/15/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 94ff18fc34fbfbaee434db12f0d0bc8bb7042c2f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 76fd75c2ed9a3ba4728129b77a43b50267be3bf3
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985769"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795343"
 ---
 # <a name="module-library-overview"></a>Modulbibliotek – översikt
 

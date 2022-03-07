@@ -2,28 +2,25 @@
 title: Degressiv avskrivning efter en delning
 description: I det här avsnittet beskrivs den metod som används i Anläggningstillgångar för att beräkna avskrivning efter att en tillgång har delats med metoden Degressiv avskrivning.
 author: moaamer
-manager: Ann Beebe
 ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 615d17c71b904d426081d4c57492ba7e95c2c749
-ms.sourcegitcommit: 65f9e2584c0530b1a71655aae09101691726b47f
+ms.openlocfilehash: 8e59ff1ef2b06a7203c1023bade7f06019479f3929dfbd582860f102c46b49f0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4650685"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737711"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Degressiv avskrivning efter en delning
 
@@ -40,8 +37,11 @@ Följande villkor gäller till exempel:
 - Avskrivningen för det första räkenskapsåret är lika med 18 000 USD, månadsavskrivningen är lika med 150 USD och tillgången avskrivs sedan tills 2019 november, till beloppet 738,75 USD.
 - I november 2019 delas 80 procent av tillgången till en annan anläggningstillgång.
 
-[![Degressiv avskrivning efter en delning](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
+[![Degressiv avskrivning efter en delning.](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
 
 Det belopp som ska skrivas av för den ursprungliga till gången är 1 822,25 USD. Det här beloppet är lika med BNV innan delningstransaktionen bokförs (9 111,25 USD) plus den anskaffningsjustering som genereras vid bokföringen av den uppdelade transaktionen (-8 000 USD) plus den avskrivningsjustering som genererades under delningstransaktionen (711 USD). Därför är avskrivningen för det andra året (1 822,25 × 18 procent) ÷ 12 = 27,33 USD.
 
 Beloppet som ska skrivas av för den nya anläggningstillgången under det första året är (8 000 × 18 procent) ÷ 12 = 120 USD.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

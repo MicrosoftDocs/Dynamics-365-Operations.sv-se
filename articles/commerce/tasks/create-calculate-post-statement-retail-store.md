@@ -2,11 +2,9 @@
 title: Skapa, beräkna och bokföra utdrag för en butik
 description: Det här avsnittet beskriver de manuella stegen för att skapa, beräkna och bokföra ett utdrag för en butik.
 author: jashanno
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailStatementTable
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0ef31bc02fe1761a587ff6bcbecf4a0f34daea9b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 58900ca4d3f6893689822a8cc5657d8c91772f65
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964880"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798547"
 ---
 # <a name="create-calculate-and-post-statements-for-a-retail-store"></a>Skapa, beräkna och bokföra utdrag för en butik
 
@@ -47,3 +45,6 @@ Det här avsnittet beskriver de manuella stegen för att skapa, beräkna och bok
 12. På startsidan väljer du **butiksekonomi**.
 13. Välj fliken **Bokförda utdrag**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Serviceorder
-description: Det här ämnet innehåller en översikt över hur du arbetar med serviceorder.
-author: kamaybac
+description: En serviceorder representerar ett besök av en servicetekniker hos en kund ett specifikt datum.
+author: ShylaThompson
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8dc88d445e1331e1532cb3b7385cda39c4f22e80
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e47c3f998b563c775da77c48edcb7b8abcba4a04
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566129"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824496"
 ---
-# <a name="service-orders"></a>Serviceorder
+# <a name="service-orders"></a>Serviceorder   
 
 [!include [banner](../includes/banner.md)]
+
 
 En serviceorder representerar ett besök av en servicetekniker hos en kund ett specifikt datum. Varje serviceorder består av en eller flera serviceorderrader. Serviceorderrader representerar de arbetstimmar som måste utföras av serviceteknikern samt artiklar, utgifter och avgifter.
 
@@ -38,19 +39,19 @@ Du kan skapa serviceorder individuellt utan att associera dem till ett avtal. De
 
 
 > [!NOTE]
-> Om du vill skapa serviceorder som inte är associerade med ett serviceavtal måste du välja kryssrutan **Tillåt utan serviceavtal** på sidan **Serviceparametrar**.
+> <P>Om du vill skapa serviceorder som inte är associerade med ett serviceavtal måste du välja kryssrutan <STRONG>Tillåt utan serviceavtal</STRONG> i formuläret <STRONG>Serviceparametrar</STRONG>.</P>
 
-### <a name="scenario"></a>Scenario
+**Scenario**
 
 I följande scenario beskrivs en annan situation där det är praktiskt att skapa en serviceorder som inte är kopplad till ett serviceavtal.
 
-Företagets klarerare tar mot ett samtal med en begäran om akut service på en hiss. Det finns ingen tid att skapa ett serviceavtal och ett projekt. Därför skapar klareraren en serviceorder direkt på sidan **serviceorder** och kopplar serviceordern till ett befintligt projekt och skapar serviceorderraderna. Klareraren skapa också en uppgift eller objektrelation för en befintlig serviceorder om du behöver registrera arbete som inte hör till serviceavtalet. Mer information finns i [skapa serviceorder manuellt](create-service-orders-manually.md) och [Skapa serviceuppgiftsrelationer](create-service-task-relations.md).
+Företagets klarerare tar mot ett samtal med en begäran om akut service på en hiss. Det finns ingen tid att skapa ett serviceavtal och ett projekt. Därför skapar klareraren en serviceorder direkt i formuläret **serviceorder** och kopplar serviceordern till ett befintligt projekt och skapar serviceorderraderna. Klareraren skapa också en uppgift eller objektrelation för en befintlig serviceorder om du behöver registrera arbete som inte hör till serviceavtalet. Mer information finns i [skapa serviceorder manuellt](create-service-orders-manually.md) och [Skapa serviceuppgiftsrelationer](create-service-task-relations.md).
 
 ## <a name="monitor-the-progress-of-service-orders"></a>Övervaka förlopp för serviceorder
 
 För att övervaka förloppet hos serviceorder genom olika grupper och arbetsprocesser kan du ställa in ett system med faser och orsakskoder för serviceorder. För varje fas kan du ange tillåtna åtgärder. Mer information finns i [Skapa orsakskoder](create-reason-codes.md).
 
-### <a name="example"></a>Exempel
+**Exempel**
 
 En serviceorder godkänns av klareraren. Klareraren uppdaterar fasen för serviceordern och anger en orsakskod som visar att serviceordern har frisläppts till teknikern. Serviceteknikern besöker kunden och utför serviceordern.
 
@@ -58,7 +59,7 @@ En serviceorder godkänns av klareraren. Klareraren uppdaterar fasen för servic
 
 Du kan ange lagerartiklar som krävs för serviceorder. Dock måste serviceordern vara kopplad till ett projekt. Artikelbehov för serviceorder bearbetas via ett projekt. 
 
-### <a name="example"></a>Exempel
+**Exempel**
 
 Serviceorder som skapas från serviceavtalet behandlas sedan av klareraren. På den första serviceordern ser klareraren att teknikern behöver en viktig reservdel som inte finns i lager. Därför skapar klareraren ett artikelkrav för reservdelen direkt från serviceordern.
 
@@ -72,7 +73,7 @@ En annan serviceorder som hade genererats för januari blir föråldrad eftersom
 
 ## <a name="post-from-projects"></a>Bokföra från Projekt
 
-I slutet av varje vecka vill klareraren bokföra alla serviceorder som är knutna till ett visst projekt. Därför letar klareraren reda på det relevanta projektet på sidan **projekt** och bokför serviceorder som har slutförts. Mer information finns i [Bokföra serviceorder automatiskt (klassformulär)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
+I slutet av varje vecka vill klareraren bokföra alla serviceorder som är knutna till ett visst projekt. Därför letar klareraren reda på det relevanta projektet i formuläret **projekt** och bokför serviceorder som har slutförts. Mer information finns i [Bokföra serviceorder automatiskt (klassformulär)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Ta bort serviceorder
 

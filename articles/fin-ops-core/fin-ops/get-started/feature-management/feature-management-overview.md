@@ -1,63 +1,97 @@
 ---
 title: Översikt över funktionshantering
-description: I det här avsnittet beskrivs funktionen funktionshantering och hur du kan använda den.
-author: ChrisGarty
-manager: AnnBe
-ms.date: 10/05/2020
-ms.topic: article
+description: I det här avsnittet beskrivs funktionshantering och hur du kan använda den.
+author: Peakerbl
+ms.date: 01/10/2022
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: IT Pro, Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: cgarty
+ms.author: peakerbl
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: a0f7391273e2374bdd136c5db47bcb65487e2a9c
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c98bdbd64ee5488da20de3f5b23ae18ebce8c23f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798363"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068019"
 ---
 # <a name="feature-management-overview"></a>Översikt över funktionshantering
 
 [!include [banner](../../includes/banner.md)]
 
-Funktioner läggs till och uppdateras i alla versioner. Funktionshanteringen är en arbetsyta där du kan visa en lista med funktioner som har levererats i varje utgåva. Nya funktionen är avstängda som standard. Du kan använda arbetsytan för att aktivera dem och visa dokumentationen för dem.
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
+
+Funktioner läggs till och uppdateras i alla versioner. Funktionshanteringen är en arbetsyta där du kan visa en lista med funktioner som har levererats i varje utgåva. Du kan sedan använda arbetsytan för att visa funktionsdokumentation, och aktivera eller inaktivera funktioner.
 
 ## <a name="the-feature-management-workspace"></a>Använd arbetsytan funktionshantering.
 
-Du kan öppna arbetsytan **funktionshantering** genom att välja lämplig panel på instrumentpanelen. En sida visas med en lista över funktioner för alla utgåvor som stöds av funktionshanteringsupplevelsen. Med tiden kommer Microsoft att förbättra funktionerna i funktionshantering så att de omfattar ytterligare funktioner som hjälper dig att hantera funktioner.
+Du kan öppna arbetsytan **funktionshantering** genom att välja lämplig panel på instrumentpanelen. En sida visas med en lista över funktioner för alla utgåvor som stöds av funktionshanteringsupplevelsen. 
 
 Funktionslistan inkluderar följande information:
 
 - **Funktionens namn** – en beskrivning av funktionen som har lagts till.
-- **Aktiverad status** – en symbol anger om en funktion har aktiverats (bockmarkering), inte aktiveras (tom), har tidsplanerats för att aktiveras (klocka) eller är obligatorisk aktiverad (lås) kräver uppmärksamhet innan du aktiverar den (varning) eller så kan den inte aktiveras (X). Inställningen som visas används för alla juridiska personer. Observera att även om en funktion har aktiverats, styrs den fortfarande av säkerhet. Funktionen är därför bara tillgänglig för användare som har åtkomst till den, baserat på deras säkerhetsroll. Det är också bara tillgängligt för juridiska personer som användaren har till gång till.
+- **Status** – en symbol anger om en funktion har aktiverats (bockmarkering), inte aktiveras (tom), har tidsplanerats för att aktiveras (klocka) eller är obligatorisk aktiverad (lås) kräver uppmärksamhet innan du aktiverar den (varningssymbol) eller så kan den inte aktiveras obligatoriska (X). Inställningen som visas används för alla juridiska personer. Observera att även om en funktion har aktiverats, styrs den fortfarande av säkerhet. Funktionen är därför bara tillgänglig för användare som har åtkomst till den, baserat på deras säkerhetsroll. Det är också bara tillgängligt för juridiska personer som användaren har till gång till.
 - **Aktivera datum** – det datum då funktionen aktiverades eller är tidsplanerad att aktiveras.
 - **Funktionen tillagd** – det datum då funktionen lades till i din miljö. Detta datum anges automatiskt när du uppdaterar miljön under de månatliga versionscyklerna.
+- **Funktionsläge** – Aktuell livscykelläge för funktionen: **Förhandsgranskning**, **Frisläppt** (visas som tom), **På som standard** och **Obligatorisk**. Delstater omfattas av mer information senare i det här avsnittet. 
 - **Modul** – den modul som påverkas av den nya funktionen.
+
+> [!NOTE]
+> Kolumnen **Funktionsstat** ingår i version 10.0.21.
 
 När du väljer en funktion visas ytterligare information i informations fönstret till höger om funktionslistan. Längst upp i fönstret visas funktionsnamnet, det datum då funktionen lades till, den modul som påverkas av funktionen och länken **Läs mer**. Välj den här länken om du vill visa dokumentationen för funktionen. Om dokumentationen inte är tillgänglig kommer du till en tillfällig sida. Informationsfönstret innehåller också fältet **kommentarer** där du kan lägga till egna kommentarer om funktionen.
 
 Arbetsytan **Funktionshantering** funktionshantering innehåller också flera flikar som var och en visar en lista med funktioner.
 
 - **Ny** – denna flik visar alla funktioner som har lagts till sedan den senaste månadsuppdateringen. Om du har hoppat över några månatliga uppdateringar visas alla nya funktioner som har lagts till sedan senaste gången du uppdaterade på fliken. De nyaste funktionerna visas högst upp i listan. Det totala antalet nya funktioner visas också på en sida högst upp på sidan.
-- **Inte aktiverad** – på den här fliken visas alla funktioner som inte har aktiverats. De nyaste funktionerna visas högst upp i listan. Det totala antalet nya funktioner som inte har aktiverats visas också på en sida högst upp på sidan.
-- **Tidsplanerad** - denna flik visar alla funktioner som har tidsplanerats att aktiveras för framtida datum. De funktioner som har det tidigaste tidsplanerade datumet visas överst i listan. Det totala antalet tidsplaneringar av nya funktioner visas också på en sida högst upp på sidan.
+- **Inte aktiverad** – på den här fliken visas alla funktioner som inte har aktiverats. De nyaste funktionerna visas högst upp i listan. Dessutom visar en panel högst upp på sidan det totala antalet nya funktioner som är inaktiverade.
+- **Tidsplanerad** – denna flik visar alla funktioner som har tidsplanerats att aktiveras för framtida datum. De funktioner som har det tidigaste tidsplanerade datumet visas överst i listan. Dessutom visar en kakel högst upp på sidan det totala antalet schemalagda funktioner.
 - **Alla** – på den här fliken visas alla funktioner. De nyaste funktionerna visas högst upp i listan.
 
-## <a name="turn-on-a-feature"></a>Aktivera en funktion
+## <a name="feature-states"></a>Funktionsstater
+Funktioner kan växla mellan flera stater, från det att de finns i Funktionshantering till att bli obligatoriska i produkten. Det här avsnittet beskriver de giltiga funktions tillstånden.
+
+### <a name="preview-features-optional"></a>Förhandsfunktioner (valfritt)
+
+Produktteam kan välja att starta en ny funktion som en förhandsgranskningsfunktion från början. Förhandsgranskningsfunktioner är inte aktiverade som standard och de är valfria. Produktgruppen för eget företag uppdaterar funktionerna till frisläppt när en förhandsgranskningsperiod har slutförts.
+
+> [!NOTE]
+> Förhandsgranskning av funktionerna gäller för vissa [förhandsgranskningsvillkor](https://go.microsoft.com/fwlink/?linkid=2105274). 
+
+### <a name="released-features-optional"></a>Frisläppta funktioner (valfritt)
+
+Kolumnen med **funktionsläge** för dessa funktioner är tom. Funktioner som läggs till som frisläppta aktiveras som standard inte och de är valfria att aktivera dem. Funktioner som uppdateras från förhandsgranskning behåller sin aktiverande status.
+
+### <a name="on-by-default-features-optional"></a>På standardfunktioner (valfritt)
+
+Funktioner som uppdateras till **På som standard** aktiveras som standard, men de kan inaktiveras. När funktioner som kan inaktiveras har varit i läget **Frisläppt** i minst sex månader förväntas de gå till det här läget i nästa större version. Funktioner som förts över till **På som standard** förväntas vara tillgängliga i avsnittet [Nyheter](../whats-new-changed.md) för frisläppningen. Uppdateringen initieras av det egna produktteamet.
+
+> [!NOTE]
+> Eftersom dessa funktioner aktiveras automatiskt är det viktigt att du vet om organisationen är redo att lägga upp funktionerna eller om det behövs mer tid. Om det tar längre tid kan det bli nödvändigt att tillfälligt inaktivera dessa funktioner. Observera att övergången för en funktion till **På som standard** normalt sker i den större versionen innan funktionen är avsedd att bli **obligatorisk**. Då har du inte alternativet att inaktivera funktionen. 
+
+### <a name="mandatory"></a>Obligatoriskt
+
+**Obligatoriskt** är det förväntade slutliga tillståndet för funktioner. Det anger att funktionerna är påslagna och att du inte kan inaktivera dem utan att kontakta Microsoft. Tillvalsfunktioner förväntas bli obligatoriska efter två stora versioner. Kritiska funktioner kan, med undantag, införas som obligatoriska.
+
+## <a name="example-of-expected-feature-lifecycles"></a>Exempel på förväntade livscykeln för funktioner
+
+Funktioner som kan inaktiveras och som har lagts till som frisläppta och valfria före eller som en del av aprilversionen, förväntas som standard gå över till **På som standard** i den följande versionen av oktober. De förväntas sedan bli **obligatoriska** i april följande år.
+
+Funktioner som kan inaktiveras och som har lagts till som frisläppta och valfria före eller som en del av aprilversionen, förväntas som standard gå över till **Obligatorisk** i april versionen följande år.
+
+## <a name="enable-a-feature"></a>Aktivera en funktion
 
 Om en funktion inte har aktiverats visas knappen **Aktivera nu** i informationsfönstret. Du kan använda den här knappen om du vill aktivera funktionen.
 
-- Välj den funktion som du vill aktivera och välj sedan **aktivera nu** i informationsfönstret. Funktionen är aktiverad.
-
-Vissa funktioner kan inte inaktiveras när du har aktiverat dem. Om funktionen som du försöker aktivera inte kan inaktiveras får du en varning. I det här läget kan du välja **Avbryt** om du vill avbryta åtgärden och lämna funktionen inaktiverad. Om du däremot väljer **aktivera** och aktiverar funktionen kommer du inte att kunna inaktivera den senare.
+Vissa funktioner kan inte inaktiveras när du har aktiverat dem. Om funktionen som du försöker aktivera inte kan aktiveras får du en varning. I det här läget kan du välja **Avbryt** om du vill avbryta åtgärden och lämna funktionen inaktiverad. Om du däremot väljer **aktivera** och aktiverar funktionen kommer du inte att kunna inaktivera den senare.
 
 Vissa funktioner visar ett meddelande som ger ytterligare information innan du aktiverar dem. Dessa funktioner indikeras med en gul varningssymbol. Du bör läsa ytterligare information noggrant för att bättre förstå vad som kommer att hända när funktionen är aktiverad. Du kan dock fortfarande välja **aktivera** för att aktivera funktionen.
 
@@ -75,35 +109,33 @@ Om en funktion har tidsplanerats att aktiverats i framtiden visas knappen **tids
 2. I dialogrutan som visas i fältet **aktivera datum** anger du det nya datum då funktionen ska aktiveras.
 3. Välj **aktivera** om du vill tidsplanera om funktionen eller **inaktivera** om du vill avbryta schemat.
 
-## <a name="turn-off-a-feature"></a>Inaktivera en funktion
+## <a name="disable-a-feature"></a>Inaktivera en funktion
 
-Om en funktion redan har aktiverats visas knappen **Inaktivera** i informationsfönstret. Du kan använda den här knappen om du vill inaktivera funktionen. Knappen **inaktivera** är inte tillgänglig om funktionen inte kan inaktiveras när den har aktiverats.
-
-- Välj den funktion som du vill stänga av och välj sedan **inaktivera** i informationsfönstret. Funktionen är inaktiverad och fältet **aktivera datum** avmarkeras.
+Om en funktion redan har aktiverats visas knappen **Inaktivera** i informationsfönstret. Du kan använda den här knappen om du vill inaktivera funktionen. Knappen **inaktivera** är inte tillgänglig om funktionen inte kan inaktiveras. 
 
 När funktionen är inaktiverad visas ett meddelande under länken **Mer information** i informationsfönstret. Meddelandet anger att funktionen inte har aktiverats ännu. Det visas varje gång du väljer funktionen i funktionslistan. Funktioner som int hr aktiverats visas på fliken **Inte aktiverad**.
 
-## <a name="features-that-must-be-turned-on"></a>Funktioner som måste aktiveras
+## <a name="features-that-must-be-enabled"></a>Funktioner som måste aktiveras
 
-Ibland levereras en kritisk funktion som måste aktiveras automatiskt när du gör en uppdatering. De här funktionerna aktiveras automatiskt på det datum som anges i fältet **aktivera datum**. För dessa funktioner visas ett meddelande under länken **Mer information** i informationsfönstret. Det här meddelandet anger att funktionen har aktiverats eller anger det framtida datum när funktionen kommer att aktiveras. Det visas varje gång du väljer funktionen i funktionslistan.
+Ibland levereras en kritisk funktion som måste aktiveras automatiskt när du gör en uppdatering. De här funktionerna aktiveras automatiskt på det datum som anges i fältet **aktivera datum**. För dessa funktioner visas ett meddelande under länken **Mer information** i informationsfönstret. Det här meddelandet anger att funktionen har aktiverats eller anger när funktionen ska aktiveras i framtiden. Det visas varje gång du väljer funktionen i funktionslistan.
 
 ## <a name="enable-all-features"></a>Aktivera alla funktioner
 
-Som standard är alla funktioner som läggs till i miljön inaktiverade. Du kan aktivera alla funktioner genom att välja knappen **Aktivera alla**. 
+Du kan aktivera alla funktioner genom att välja knappen **Aktivera alla**. 
 
 När du väljer **aktivera alla** visas ett alternativ där du behöver ange följande information:
+
 - En lista över alla funktioner som kräver bekräftelse innan de kan aktiveras. Om du vill aktivera funktionerna i listan väljer du **Ja** för knappen **Aktivera funktioner som kräver bekräftelse**.
 - En lista över alla funktioner som inte kan aktiveras visas. Dessa funktioner kommer inte att aktiveras.
 
 Alla funktioner som kan aktiveras kommer att aktiveras. Om en funktion redan är schemalagd för att aktiveras i framtiden kommer schemat inte att ändras. 
 
-## <a name="turn-on-all-features-automatically"></a>Aktivera alla funktioner automatiskt
+## <a name="enable-all-features-automatically"></a>Aktivera alla funktioner automatiskt
 
-Som standard är alla funktioner som läggs till i miljön inaktiverade, såvida de inte är obligatoriska funktioner. Om du vill aktivera alla nya funktioner automatiskt kan du dock ändra vad som händer när nya funktioner läggs till genom att använda listrutan under arbetsytans rubrik.
+Om du vill aktivera alla nya funktioner automatiskt kan du dock ändra vad som händer när nya funktioner läggs till genom att använda listrutan under arbetsytans rubrik.
 
-- Välj `Enable new features automatically` för att automatiskt aktivera alla nya funktioner när de läggs till i miljön.
-- Välj `Do not enable new features automatically` för att standardinställa alla nya funktioner av när de läggs till i din miljö.
-
+- Välj **Alla nya funktioner aktiveras som standard** för att automatiskt aktivera alla nya funktioner när de läggs till i miljön.
+- Välj **Aktivera inte nya funktioner som standard** för att stänga av alla tillämpliga nya funktioner när de läggs till i miljön.
 
 När du aktiverar alla funktioner automatiskt, kommer det att aktivera alla funktioner som skulle vara aktiverade när du klickar på knappen **aktivera alla**. Det kommer inte att aktivera funktioner som kräver bekräftelse eller funktioner som inte kan aktiveras förrän en åtgärd vidtas.
 
@@ -134,15 +166,11 @@ I följande exempel beskrivs vad som händer när du använder entiteten **funkt
 - Om du ändrar värdet i fältet **EnableDate** till ett framtida datum, tidsplaneras funktionen för det datumet.
 - Om du ändrar värdet i fältet **Aktiverad** till **Ja** och ändrar värdet i fältet **EnableDate** till ett framtida datum tidsplaneras funktionen för det datumet. 
 - Om du ändrar värdet i fältet **Aktiverad** till **Nej** och ändrar också värdet i fältet **EnableDate** till ett framtida datum tidsplaneras funktionen för det datumet.
-- Om en funktion är aktiverad och du lägger till fältet **EnableDate** som är inställt på ett framtida datum, förblir funktionen aktiverad. Om du vill tidsplanera om funktionen måste du ändra fältet **aktiv** till **Nej**.
+- Om en funktion är aktiverad och du lägger till fältet **EnableDate** som är inställt på ett framtida datum, förblir funktionen aktiverad. Om du vill tidsplanera om funktionen måste du ändra värdet i fältet **aktiv** till **Nej**.
 
 ## <a name="feature-management-and-flighting"></a>Funktionshantering och flygning
 
 Med funktionshantering kan du styra de funktioner som levereras i varje utgåva. Förhandsversioner låter Microsoft Teams frisläppa funktioner till ett begränsat antal kunder så att funktionerna kan testas och valideras utan att alla kunder påverkas. Funktionshanteringen styr inte förhandsversioner av funktioner.
-
-## <a name="new-features-are-optional-for-12-months"></a>Nya funktioner är valfria i 12 månader
-
-När en ny icke-kritisk funktion installeras, är den valfri under en 12-månaders period. Detta gör att du och din organisations tid planerar framåt för att kunna utsätta en funktion och låta den testas mot dina dagliga operationer. Mer information i [Frågor och svar om tjänstuppdateringar för en version](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Använda funktionshantering för att aktivera ISV-funktioner eller anpassade funktioner
 
@@ -151,25 +179,24 @@ Funktionshantering är för närvarande inte tillgängligt för funktioner från
 ## <a name="frequently-asked-questions-faq"></a>Vanliga frågor
 
 ### <a name="when-are-features-added-removed-or-changed"></a>När är funktioner tillagda, borttagna eller ändrade? 
-Funktionerna läggs till, tas bort och ändras genom kodändringar. Miljöer måste uppdateras för att de ska få ändringarna.
+Funktionerna läggs till, tas bort och ändras genom kodändringar av de ägande produktteamen. Miljöer måste uppdateras för att de ska få ändringarna.
 
 ### <a name="does-a-feature-become-mandatory-automatically"></a>Blir en funktion automatiskt obligatorisk? 
-Nej, en funktion som blir obligatorisk är inte en automatisk åtgärd. Produktgrupperna måste göra en kodändring.
-
-### <a name="when-do-features-become-mandatory"></a>När ska funktioner vara obligatoriska? 
-Policyn är att alla nya funktioner kommer att ingå i en 12-månaders period och inte kräver någon ändringshantering förrän funktionen aktiveras. Produktgrupperna kan välja om en funktion ska vara obligatorisk efter att perioden har upphört. 
+Nej, en funktion blir inte automatiskt obligatorisk. Det ägande produktteamet måste göra en kodändring.
 
 ### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Varför finns det inget specifikt "obligatoriskt aktiverat datum"? 
 Tidpunkten för uppdateringsfrisläppning är variabel, tidsinställning för miljön är variabel och kunderna kan välja att hoppa över vissa uppdateringar. Därför är det svårt att fastställa särskilda datum. 
 
-### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Var är dokumentationen till de funktioner som görs obligatoriska? 
-Denna dokumentation hämtas från programteamen. Dessa nämns ofta i [borttagna eller inaktuella funktioner](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
+### <a name="wheres-the-documentation-for-features-that-are-mandatory"></a>Var är dokumentationen till de funktioner som görs obligatoriska? 
+Denna dokumentation kommer från varje Dynamics 365-appteam. Ofta nämns dessa funktioner i [uppdateringar av klientfunktionstillstånd](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) eller [borttagna eller inaktuella funktioner](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Finns det ett produkt- eller signalmeddelande om att en funktion ska vara obligatorisk aktiverad? 
 En meddelandefunktion som är relaterad till att utföra en funktion som är obligatorisk finns inte idag.
 
 ### <a name="do-features-ever-get-enabled-without-the-customer-knowing-about-it"></a>Kan funktionerna någonsin aktiveras utan att kunden vet om det? 
-Ja, om funktioner inte har en funktionell effekt kan de aktiveras som standard.
+Ja, funktioner kan aktiveras utan kundens vetskap i följande situationer:
+- En funktion flyttas som **På som standard**. I det här läget kan funktionen fortfarande inaktiveras. 
+- En funktion uppdateras till **Obligatorisk**. Denna ändring sker endast i kombination med en viktig frisläppning. Kritiska funktioner kan, med undantag, flyttas till **Obligatorisk** vid varje uppdatering.
 
 ### <a name="what-is-feature-flighting-and-how-does-it-relate-to-feature-management"></a>Vad är funktionsflygning och hur fungerar det med funktionshantering? 
 Funktionsflygningar är i realtid på/av-brytare som Microsoft kontrollerar. De är åtskilda från kundkontrollen som ingår i funktionshantering. 
@@ -199,7 +226,10 @@ internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMet
 
 ### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Vad är IFeatureLifecycle implementerad av vissa funktionsklasser?
 IFeatureLifecycle är en Microsoft-intern mekanism för att indikera livscykelfasen för funktionen. Funktioner kan vara:
-- `PrivatePreview` - en förhandsversion måste vara synlig.
-- `PublicPreview` - visas som standard men med en varning om att funktionen är i förhandsversion.
+- `PrivatePreview` – en förhandsversion måste vara synlig.
+- `PublicPreview` – visas som standard men med en varning om att funktionen är i förhandsversion.
 - `Released`- Helt släppt.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: Skapa en anläggningstillgång
 description: I det här avsnittet beskrivs hur du skapar en ny anläggningstillgångspost från listsidan för anläggningstillgångar.
 author: moaamer
+manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7bf6e74253d2cf4150914fcb8bcc51aa2f32c0435c563b677def40115e0163fa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 481bdb55b813dad5366f382ae35d8345b0e67d9f
+ms.sourcegitcommit: a9efbd69f2670fd6ba0ad0babf304fc206d01249
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758135"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4448236"
 ---
 # <a name="create-a-fixed-asset"></a>Skapa en anläggningstillgång
 
@@ -52,6 +55,3 @@ Om du inte har definierat numret för anläggningstillgången i mallen för Exce
 
 > [!WARNING]
 > Anläggningstillgångsposten tas inte bort om transaktionerna bokfördes i den associerade boken, eller om den nya anläggningstillgången anges på en journalrad men inte bokförts. 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

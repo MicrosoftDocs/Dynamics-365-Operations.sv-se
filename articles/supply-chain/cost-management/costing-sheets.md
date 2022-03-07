@@ -2,22 +2,29 @@
 title: Kostnadsredovisningar
 description: När du ställer in kostnadsredovisning har du två mål. För det första ska du definiera visningsformatet för information om kostnader för sålda varor för en tillverkad artikel eller tillverkningsorder. Den formaterade visningen kallas för kostnadsredovisning. För det andra ska du definiera grunden för hur indirekta kostnader beräknas. Inställningarna för kostnadsredovisningen bygger på kostnadsgruppsfunktionen för visningsinformation och på beräkningsformler för indirekta kostnader. De två målen med inställningarna för kostnadsredovisning beskrivs i den här artikeln.
 author: AndersGirke
-ms.date: 11/18/2021
+manager: tfehr
+ms.date: 06/20/2017
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 ms.search.form: CostSheetDesigner, CostSheetCalculationFactor
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 53201
-ms.search.region: Global
-ms.author: aevengir
+ms.assetid: e7d72b43-3892-49ae-8821-9eede3f4d24a
+ms.search.region: global
+ms.search.industry: Manufacturing
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64b8a9b8b29193f25e706e52424de2af3454aec8
-ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
+ms.openlocfilehash: 0f83c18bb8700e274bcf8cb369a7436a17450bf7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "7825368"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437954"
 ---
 # <a name="costing-sheets"></a>Kostnadsredovisningar
 
@@ -25,18 +32,9 @@ ms.locfileid: "7825368"
 
 När du ställer in kostnadsredovisning har du två mål. För det första ska du definiera visningsformatet för information om kostnader för sålda varor för en tillverkad artikel eller tillverkningsorder. Den formaterade visningen kallas för kostnadsredovisning. För det andra ska du definiera grunden för hur indirekta kostnader beräknas. Inställningarna för kostnadsredovisningen bygger på kostnadsgruppsfunktionen för visningsinformation och på beräkningsformler för indirekta kostnader. De två målen med inställningarna för kostnadsredovisning beskrivs i den här artikeln. 
 
-I följande register visas en lista över de medföljande säkerhetsroller som har åtkomst till kostnadsredovisning, inklusive vilken åtkomstnivå som beviljats för varje roll via standardinställningarna.
-
-| Roll | Åtkomst
-|---|---|
-| Redovisningschef | Redigera |
-| Lagerredovisningsansvarig | Vy |
-| Lagerredovisare | Vy |
-
 En kostnadsredovisning är en formaterad visning av information om kostnaden för varor som är sålda för en tillverkad artikel eller tillverkningsorder. När du ställer in en kostnadsredovisning definierar du formatet för informationen och även basen för beräkning av indirekta kostnader. Inställningarna för kostnadsredovisningen bygger på kostnadsgruppsfunktionerna för visningsinformation och de formler som används för att beräkna indirekta kostnader. Här följer mer information om de två målen för inställningar för kostnadsredovisning:
-
-- **Definiera formatet för kostnadsredovisningen.** Det användardefinierade formatet för en kostnadsredovisning identifierar segmenteringen av kostnaderna som innehåller en tillverkad artikels kostnad för sålda varor. T.ex. informationen om kostnader för sålda varor kan segmenteras till material, arbete och omkostnader som baseras på kostnadsgrupper. Dessa kostnadsgrupper har tilldelats artiklar, kostnadskategorier för flödesoperationer och formler för indirekt kostnadsberäkning. Formatet för kostnadsredovisningen kräver normalt mellanliggande summor när flera kostnadsgrupper har definierats. Du kan till exempel lägga till flera kostnadsgrupper som är relaterade till material. Definitionen av en kostnadsredovisning är valfri, men kostnadsredovisningsformatet måste definieras om indirekta kostnader ska beräknas.
-- **Definiera grunden för beräkning av indirekta kostnader.** Indirekta kostnader återspeglar tillverkningsomkostnader som associeras med produktionen av en tillverkad artikel. En beräkningsformel för indirekta kostnader kan uttryckas som ett tillägg eller en tariff. Ett tillägg representerar ett procentvärde, medan en tariff representerar ett belopp per timme för en flödesoperation. En kostnadsgrupp definierar grunden för beräkningsformeln, till exempel 100 procents tillägg för en arbetskostnadsgrupp eller 500 kronors timtaxa för en maskinkostnadsgrupp. Om du vill definiera en beräkningsformel och dess kostnadsgruppsgrunder, kräver inställningarna för kostnadsredovisningen att du identifierar kostnadsgruppen som representerar omkostnaden och att du väljer att använda tillägg eller tariff.
+-   **Definiera formatet för kostnadsredovisningen.** Det användardefinierade formatet för en kostnadsredovisning identifierar segmenteringen av kostnaderna som innehåller en tillverkad artikels kostnad för sålda varor. T.ex. informationen om kostnader för sålda varor kan segmenteras till material, arbete och omkostnader som baseras på kostnadsgrupper. Dessa kostnadsgrupper har tilldelats artiklar, kostnadskategorier för flödesoperationer och formler för indirekt kostnadsberäkning. Formatet för kostnadsredovisningen kräver normalt mellanliggande summor när flera kostnadsgrupper har definierats. Du kan till exempel lägga till flera kostnadsgrupper som är relaterade till material. Definitionen av en kostnadsredovisning är valfri, men kostnadsredovisningsformatet måste definieras om indirekta kostnader ska beräknas.
+-   **Definiera grunden för beräkning av indirekta kostnader.** Indirekta kostnader återspeglar tillverkningsomkostnader som associeras med produktionen av en tillverkad artikel. En beräkningsformel för indirekta kostnader kan uttryckas som ett tillägg eller en tariff. Ett tillägg representerar ett procentvärde, medan en tariff representerar ett belopp per timme för en flödesoperation. En kostnadsgrupp definierar grunden för beräkningsformeln, till exempel 100 procents tillägg för en arbetskostnadsgrupp eller 500 kronors timtaxa för en maskinkostnadsgrupp. Om du vill definiera en beräkningsformel och dess kostnadsgruppsgrunder, kräver inställningarna för kostnadsredovisningen att du identifierar kostnadsgruppen som representerar omkostnaden och att du väljer att använda tillägg eller tariff.
 
 Varje beräkningsformel måste anges som en kostnadspost. Kostnadsposten består av en angiven kostnadsredovisningsversion, en tilläggsprocent eller ett tariffbelopp, kostnadsgruppsgrunden, ett statusvärde och ett giltighetsdatum. När en artikelkostnadspost först registreras har den status **Väntande** och ett giltighetsdatum. När kostnadsposten aktiveras uppdateras status så att posten är den aktuella aktiva posten och giltighetsdatumet uppdateras till aktiveringsdatumet. Kostnadsposten kan även ange en site för en sitespecifik beräkningsformel. Alternativt kan du lämna fältet **Plats** tomt om du vill ange att beräkningsformeln är en företagsomfattande formel. Kostnadsposten kan också bestå av en angiven artikel eller en artikelgrupp när beräkningsformeln har markerats som en formel per artikel. 
 
@@ -48,4 +46,7 @@ När du har definierat kostnadsredovisningsformatet och beräkningar för indire
 
 Kostnadsredovisningen visas på sidan **Beräkna artikelkostnad**. Kostnadsredovisningen kan visas för en tillverkad artikels beräknade kostnadspost på sidan **artikelpris** eller för en orderspecifik beräkningspost på sidan **Resultat från strukturlisteberäkningar**. Den kan också visas som en del av sidan **Prisberäkningen** för en produktionsorder.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+

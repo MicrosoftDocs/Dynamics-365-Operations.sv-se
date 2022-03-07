@@ -2,11 +2,9 @@
 title: Skapa ett batchjobb
 description: Ett batchjobb är en grupp med uppgifter som skickas till en AOS-instans (Application Object Server) för automatisk bearbetning.
 author: maertenm
-manager: AnnBe
-ms.date: 06/21/2019
+ms.date: 11/22/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BatchJob, SysRecurrence, BatchAlerts
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e4360cd7068658a170f5b44c2ce7c71c39c44fa8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 76c6c68f7effad0c40282b22ea2a6bf991862cf5
+ms.sourcegitcommit: d7d997ad84623ad952672411c0eb6740972ae0b1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679898"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "7864183"
 ---
 # <a name="create-a-batch-job"></a>Skapa ett batchjobb
 
@@ -31,20 +29,44 @@ Ett batchjobb är en grupp med uppgifter som skickas till en AOS-instans (Applic
 
 ## <a name="create-the-batch-job"></a>Skapa batchjobbet
 1. Gå till **Navigeringsfönster > Moduler > Systemadministration > Frågor > Batchjobb**.
-2. Klicka på **Ny**.
-3. Skriv ett värde i fältet **Jobbbeskrivning**.
-4. I fältet **Tidsplanerat startdatum/-tid** anger du datum och tid.
-5. Klicka på **Spara**.
+2. Välj **Ny**.
+3. I fältet **Jobbeskrivning** ange en beskrivning av batch-jobbet.
+4. I fältet **Tidsplanerat startdatum/-tid**, ange datum och tid när batchjobbet ska köras.
+5. Välj **Spara**.
 
 ## <a name="create-a-recurrence"></a>Skapa en upprepning
 1. Klicka på **Batchjobb** i Åtgärdsfönstret.
-2. Klicka på **Upprepning.** Använd dessa alternativ om du vill ange ett intervall och mönster för upprepningen.  
-3. Klicka på **OK**.
+2. Ange **upprepning**. Använd dessa alternativ om du vill ange ett intervall och mönster för upprepningen.  
+3. Välj **OK**.
 
 ## <a name="add-alerts"></a>Lägg till notifieringar
 1. Klicka på **Batchjobb** i Åtgärdsfönstret.
-2. Klicka på **Notifieringar**. Ange om du vill att notifieringar ska skickas när batchjobbet avslutas, innehåller ett fel eller annulleras. Sedan anger du om du vill att notifieringarna ska visas som popup-meddelanden.   
-3. Klicka på **OK**.
+2. Välj **notifieringar**. Ange om du vill att notifieringar ska skickas när batchjobbet avslutas, innehåller ett fel eller annulleras. Sedan anger du om du vill att notifieringarna ska visas som popup-meddelanden.   
+3. Välj **OK**.
+
+## <a name="add-a-task-to-a-batch-job"></a>Lägga till en uppgift i ett batchjobb
+1.  På sidan **batchjobb**, välj **visa uppgifter**.
+2.  Välj **Ctrl+N** för att skapa en uppgift.
+3.  Ange en beskrivning av batch-uppgift.
+4.  I fältet **Företagskonton**, välj den företagsdatabas som uppgiften ska köras i.
+5.  I fältet **Klassnamn**, välj den process som uppgiften ska köras i. 
+6.  Välj en batchgrupp för uppgiften om det behövs.
+
+    Klientuppgifter måste tilldelas en batchgrupp. De tilldelas automatiskt till standardbatchgruppen (även kallad tom batchgrupp).
+
+7.  Välj **Ctrl+S** för att spara uppgiften.
+8.  Om du vill göra den valda uppgiften beroende av en annan uppgift i jobbet väljer du rutnätet **Har villkor** och följer sedan dessa steg för varje villkor som du vill ange:
+
+    1. Välj **Ctrl+N** för att skapa ett villkor.
+    2. Välj uppgifts-ID för den överordnade uppgiften.
+    3. Välj status som den överordnade uppgiften måste ha innan den beroende uppgiften kan köras.
+    4. Välj **Ctrl+S** för att spara villkoret.
+
+    Om du definierar mer än ett villkor och om *alla* villkor måste uppfyllas innan den beroende uppgiften kan köras, väljer du villkorstypen **Alla**. Välj villkorstypen *någon* om villkoren har uppfyllts välj en villkorstyp av **någon**.
+
+9.  Välj hur misslyckade uppgifter ska hanteras. För att ignorera misslyckandet med en specifik uppgift, på fliken **Allmänt**, välj alternativet **Ignorera uppgiftsfel** för den uppgiften. Om du markerar det här alternativet misslyckas inte jobbet om uppgiften misslyckas. Du kan också använda fältet **Maximalt antal försök igen** om du vill ange antalet gånger som en uppgift måste försöka köras igen innan den betraktas som misslyckad. Vi rekommenderar att du inte anger fältet **Maximalt antal försök igen** till ett värde som är högre än **5**.
+
+    Mer information om nya batchförsök finns i [Aktivera nya batchförsök](../retryable-batch.md).
 
 ## <a name="adjust-batch-job-status"></a>Justera batchjobbstatus
 1. Gå till **Systemadministration > Förfrågninger > Batchjobb**.
@@ -53,4 +75,7 @@ Ett batchjobb är en grupp med uppgifter som skickas till en AOS-instans (Applic
 4. Välj lämplig status.
     - **Källskatte**: Ställ in batchjobbet som **källskatt** så att det inte dras från batchjobbets tidsplan. Motsvarar *stopp*.
     - **Väntar**: Ställ in batchjobbet som **väntar** så att det väntar på att få hämtas av batchjobbets tidsplan. Motsvarar *gå*.
-5. Klicka på **OK**.
+5. Välj **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

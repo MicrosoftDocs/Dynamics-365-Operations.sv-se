@@ -2,28 +2,28 @@
 title: Analysera enkätresultat
 description: Enkätstatistiken kan användas för att beräkna medelvärde, summor och procentsatser som baseras på en uppsättning demografiska data.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMQuestionnaireStatistics, KMQuestionnaireStatisticsLine, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0b8e4fd5d9fabd35de067ab61c1e64156ce4f0ec
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7c7f6767b900ede0112e972149c271d53c36296f
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420658"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794767"
 ---
 # <a name="analyzing-questionnaire-results"></a>Analysera enkätresultat
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -69,3 +69,6 @@ Enkätstatistiken kan användas för att beräkna medelvärde, summor och procen
 2. Klicka på Resultat.
 3. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

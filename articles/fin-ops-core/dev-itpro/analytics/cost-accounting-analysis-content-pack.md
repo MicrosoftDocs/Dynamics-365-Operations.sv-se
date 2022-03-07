@@ -1,12 +1,10 @@
 ---
 title: Power BI-innehåll för kostnadsredovisningsanalys
-description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadsredovisning. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
+description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadsredovisning.
 author: AndersGirke
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,18 +14,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d3b8832e5a5612fd0311811f43454689d5b274c36404b4fb92b710411d45e573
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683881"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747379"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-innehåll för kostnadsredovisningsanalys
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vad som ingår i Power BI-innehållet för **kostnadsredovisning**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
+Det här avsnittet beskriver vad som ingår i **Kostnadsredovisningsanalys** Microsoft Power BI-innehållet. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
 ## <a name="overview"></a>Översikt
 
@@ -42,7 +40,7 @@ Mer information om kostnadsredovisning finns [Startsida för kostnadsredovisning
 Genom att definiera säkerhetsnivån för åtkomst inom kostnadsredovisningen och kombinera den med säkerheten på radnivå i Power BI, beviljar du alla ägare av kostnadsobjekt åtkomst till Power BI-innehållet för **Kostnadsredovisningsanalys**. Alla data i de visuella effekterna filtreras sedan baserat på den åtkomstnivå som kontrolleras i kostnadsredovisningen. Mer information om säkerhetsnivån för åtkomst och säkerhet på radnivå, se [Ange säkerhetsinställningar för kostnadsredovisningsanalyser i Power BI-innehåll](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
-Du kan hitta Power BI-innehållet **Kostnadsredovisningsanalys** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+Du kan hitta Power BI-innehållet **Kostnadsredovisningsanalys** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 
 Hämta innehållet **Kostnadsredovisningsanalys** innehåll som avser versionen av Microsoft Dynamics 365 som du använder.
 
@@ -123,3 +121,6 @@ Följande huvuddimensioner används som filter för att dela upp de sammanlagda 
 | Räkenskapskalendrar                   | Kalender, kalenderbeskrivning                                                                                       |
 | Räkenskapsår                       | Kalenderår                                                                                                        |
 | Räkenskapsperioder                     | Kalenderårsperioder                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

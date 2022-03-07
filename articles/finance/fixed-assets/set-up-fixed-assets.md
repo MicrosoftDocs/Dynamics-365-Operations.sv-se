@@ -1,8 +1,8 @@
 ---
 title: Ställ in anläggningstillgångar
 description: Detta avsnitt ger en översikt över inställningen av modulen för anläggningstillgångar.
-author: moaamer
-ms.date: 06/08/2021
+author: ShylaThompson
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,28 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 572d104bbc7024da1ea4b219fd3f544f36a88ccddcf1aa5d18065e2e08b93bfa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff025984307f979ce98947f2225971041ebbdbae
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754228"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818546"
 ---
 # <a name="set-up-fixed-assets"></a>Ställ in anläggningstillgångar
 
 [!include [banner](../includes/banner.md)]
 
-Detta avsnitt ger en översikt över inställningen av modulen för **anläggningstillgångar**. 
+Detta avsnitt ger en översikt över inställningen av modulen för **anläggningstillgångar**.
 
-Parametrar styr det allmänna beteendet bland anläggningstillgångar. Anläggningstillgångsgrupper låter dig gruppera dina tillgångar och ange standardinställningsattribut för varje tillgång som har tilldelats till en grupp. Böcker tilldelas till Anläggningstillgångsgrupper. Böcker följer det ekonomiska värdet för en anläggningstillgång över tid genom att använda avskrivningkonfigurationen som definieras i avskrivningsprofilen.
+## <a name="overview"></a>Översikt
+
+Parametrar styr det allmänna beteendet bland anläggningstillgångar.
+
+Anläggningstillgångsgrupper låter dig gruppera dina tillgångar och ange standardinställningsattribut för varje tillgång som har tilldelats till en grupp. Böcker tilldelas till Anläggningstillgångsgrupper. Böcker följer det ekonomiska värdet för en anläggningstillgång över tid genom att använda avskrivningkonfigurationen som definieras i avskrivningsprofilen.
 
 Anläggningstillgångar tilldelas en grupp när de skapas. Som standard kommer de böcker som har tilldelats Anläggningstillgångsgruppen sedan att tilldelas till anläggningstillgången. Böcker som har konfigurerats för bokföring i redovisningen associeras med en bokföringsprofil. Redovisningskonton definieras för varje bok i bokföringsprofilen, och används när transaktioner för anläggningstillgångar bokförs.
 
-![Komponenter för anläggningstillgångar.](./media/FAComponents_Updated.png)
+![Villkor för komponenter](./media/FAComponents_Updated.png)
 
 ## <a name="depreciation-profiles"></a>Avskrivningsprofiler
 
@@ -45,8 +49,6 @@ När du har ställt in avskrivningsprofiler måste du skapa de nödvändiga böc
 En primär avskrivningsprofil tilldelas varje bok. Böcker har också en alternativ eller profil för avskrivningsomställning, om denna profiltyp kan användas. För att automatiskt inkludera förteckningar över anläggningstillgångar i avskrivningskörningar måste du aktivera alternativet **Beräkna avskrivning** . Om detta alternativ inte aktiveras för en tillgång, hoppar avskrivningsförslaget över tillgången.
 
 Du kan också ställa in härledda böcker. De angivna härledda transaktionerna bokförs som en exakt kopia av den primära transaktionen mot de härledda böckerna. Därför ställs härledda transaktioner vanligtvis in för anskaffningar och avyttringar, inte för avskrivningstransaktioner. Mer information finns i [Ställ in värdemodeller](tasks/set-up-value-models.md).
-
-Ett alternativ på sidan **Parametrar för anläggningstillgångar** gör att du kan aktivera eller inaktivera låsningsfunktionen. Denna funktion aktiveras i **Arbetsytan för funktionshantering**.
 
 ## <a name="fixed-asset-posting-profiles"></a>Bokföringsprofiler för anläggningstillgångar
 
@@ -71,8 +73,6 @@ Det sista steget är att uppdatera parametrarna för anläggningstillgångar.
 Fältet **Kapitaliseringströskel** bestämmer de tillgångar som skrivs av. Om en inköpsrad markeras som en anläggningstillgång men inte uppfyller den angivna kapitaliseringströskeln, kommer en anläggningstillgång ändå att skapas eller uppdateras, men alternativet **Beräkna avskrivning** anges som **Nej**. Därför kommer tillgången inte automatiskt att skrivas av som en del av avskrivningsförslagen.
 
 Ett viktigt alternativ kallas **Skapa avskrivningsjusteringsbelopp med avyttring automatiskt**. När du ställer in detta alternativ som **Yes** kommer tillgångsavskrivningen att justeras automatiskt, baserat på avskrivningsinställningarna vid tidpunkten då anläggningstillgången avyttras. Ett annat alternativ låter dig dra av kassarabatter från anskaffningsbeloppet när du införskaffar anläggningstillgångar genom en leverantörsfaktura.
-
-Med parametern **Lås tillgångsböcker i en avskrivningsjournal** kan du låsa tillgångsböcker i en avskrivningsjournal. När avskrivningstransaktioner bokförs kontrollerar systemet att samma tillgångsbok inte har lagts till i mer än en avskrivningsjournal. Om så är fallet spärras den tillgångsboken och bokföringen stoppas. Om ett ID för en tillgångsbok finns i en låst journal kommer det att låsas upp automatiskt när bokföringen är slutförd för den ursprungliga journalen. Du kan även låsa upp journalen manuellt. 
 
 I snabbfliken **Purchase orders** kan du konfigurera hur dina tillgångar ska skapas som en del av inköpsprocessen. Det första alternativet kallas **Tillåt förvärv av tillgångar från inköp**. Om du ställer in detta alternativ som **Yes**, sker anskaffning när fakturan bokförs. Om du ställer in detta alternativ som **No**, kan du fortfarande infoga en anläggningstillgång på en inköpsorder (PO) och faktura, men anskaffningen bokförs inte. Bokföring måste utföras som ett separat steg från journalen för anläggningstillgångar. Alternativet **Skapa tillgång under bokföring av produktinleverans eller faktura** låter dig skapa en ny tillgång ”i farten” under bokföring. Därför behöver inte tillgången ställas in som en anläggningstillgång innan transaktionen. Det sista alternativet, **Sökning efter anläggningstillgångar som skapats vid radregistreringen** gäller endast för inköpsrekvisitioner.
 

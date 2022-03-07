@@ -2,33 +2,33 @@
 title: Ställ in leverantörsfakturapolicyer
 description: Det här avsnittet innehåller information om hur du ställer in leverantörsfakturapolicyer.
 author: ShivamPandey-msft
-ms.date: 02/11/2022
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f9707c7b283f42729126efa57e890e0df65ca8b
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 339f52727b6f5a680f711cf4e6e0b8b0bc290853316fc2f2ff63164c8292d2d8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109766"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728851"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Ställ in leverantörsfakturapolicyer
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet innehåller information om hur du ställer in leverantörsfakturapolicyer. Leverantörsfakturapolicyer körs när du bokför en leverantörsfaktura genom att använda sidan **leverantörsfaktura** sida och när du öppnar leverantörsfakturasidan **Regelöverträdelser**. Du kan även konfigurera leverantörsfakturaarbetsflödet om du vill köra leverantörsfakturapolicyer varje gång som du skickar in en faktura till arbetsflödet. 
+Det här avsnittet innehåller information om hur du ställer in leverantörsfakturapolicyer. Leverantörsfakturapolicyer körs när du bokför en leverantörsfaktur genom att använda leverantörsfakturasidan, och när du öppnar sidan för brott mot leverantörsfakturapolicyn. Du kan även konfigurera leverantörsfakturaarbetsflödet om du vill köra leverantörsfakturapolicyer varje gång som du skickar in en faktura till arbetsflödet. 
 
 - Leverantörsfakturapolicyer gäller inte för fakturor som har skapats i ankomstregistreringen eller fakturajournalen.  
-- Fakturamatchningsvalidering använder inte leverantörsfakturapolicyer, utan ställs in på sidan med **leverantörsreskontraparametrar**.  
-- I den här registreringen används demonstrationsföretaget USMF. Leverantörsreskontrachefsrollen eller redovisningschefsrollen ska utföra stegen nedan. Innan du börjar kontrollerar du att konfigurationsnyckeln för **fakturamatchning** har valts.
+- Fakturamatchningsvalidering använder inte leverantörsfakturapolicyer, utan ställs in på sidan med leverantörsreskontraparametrar.  
+- I den här registreringen används demonstrationsföretaget USMF. Leverantörsreskontrachefsrollen eller redovisningschefsrollen ska utföra stegen nedan. Innan du börjar kontrollerar du att konfigurationsnyckeln för fakturamatchning har valts.
 
 
 ## <a name="prepare-to-create-vendor-invoice-policies"></a>Förbered för att skapa leverantörsfakturapolicyer
@@ -56,7 +56,7 @@ Det här avsnittet innehåller information om hur du ställer in leverantörsfak
 2. Välj **Ny**.
 3. Ange värden i fälten **Namn** och **Beskrivning**.
 4. Expandera eller komprimera avsnittet **Policyorganisationer**.
-5. I trädet, välj **Contoso Entertainment System USA**.
+5. Välj i trädet **Contoso Entertainment System USA**.
 6. Markera **Lägg till**.
 7. Expandera eller komprimera avsnittet **Policyregler**.
 8. Välj **Skapa policyregel**.

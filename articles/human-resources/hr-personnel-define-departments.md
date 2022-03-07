@@ -2,28 +2,28 @@
 title: Definiera nya avdelningar
 description: Avdelningar är driftenheter som motsvarar ett funktionellt område i ett företag, till exempel försäljning eller redovisning.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMOperatingUnit, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e35d3744661c3f94745803ba698449e6cb917875
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fd2e0465230d40c95c1bc115a34a2ce3369ccb81
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420610"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793523"
 ---
 # <a name="define-new-departments"></a>Definiera nya avdelningar
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -52,3 +52,6 @@ Avdelningar är driftenheter som motsvarar ett funktionellt område i ett föret
 16. Skriv ett värde i fältet Beskriv ändringar.
 17. Klicka på Publicera.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

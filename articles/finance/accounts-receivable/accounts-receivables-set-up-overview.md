@@ -3,26 +3,24 @@ title: Konfigurera kundreskontra och kredit och inkasso
 description: Konfigurera Kundreskontra och Kredit och inkasso för att följa fakturor och inkommande betalningar från kunder.
 author: ShivamPandey-msft
 ms.date: 08/22/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CashDisc, CollectionLetterCourse, CreditCardProcessors, CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsAgent, CustCollectionsPool, CustGroup, CustParameters, CustPaymMode, CustPosting, CustVendReportInterval, Interest, PaymTerm, Reasons
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "24631"
-- intro-internal
+ms.custom: 24631
 ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 744170988351bf2c0ecb04e419045056965398c0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a6eb2f89a11a9195783e838f33321f34021a288c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983553"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827684"
 ---
 # <a name="configure-accounts-receivable-and-credit-and-collections"></a>Konfigurera kundreskontra och kredit och inkasso
 

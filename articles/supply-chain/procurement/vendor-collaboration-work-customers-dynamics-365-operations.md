@@ -2,40 +2,36 @@
 title: Leverantörssamarbete med kunder
 description: I det här avsnittet beskrivs hur du kan använda leverantörssamarbete för att arbeta med inköpsorder och övervaka försändelselager.
 author: TaylorVH
-manager: tfehr
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: dc97b230f23056db90e654b4aea3272bb8f1ba13
-ms.sourcegitcommit: 0c33864efdd66c6ac11a4f35d971c0bb4efb15db
+ms.openlocfilehash: f699b00ab7ea2d043e12824015c54439caf8e63c
+ms.sourcegitcommit: d58a891d9fe0aa0e6b2c20329250c8d74ffbee90
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654350"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "8022984"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Leverantörssamarbete med kunder
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 I det här avsnittet beskrivs hur du kan använda leverantörssamarbete när du arbetar med kunder i Microsoft Dynamics 365 Supply Chain Management. Leverantörer kan utföra en rad olika affärsprocesser från följande arbetsytor:
 
 - **Bekräftelse av inköpsorder** – Övervaka och svara på inköpsorder.
 - **Budgivning av leverantör** – Visa anbudsförfrågningar och svara på dem genom att lämna anbud.
 - **Leverantörsinformation** – Visa och uppdatera huvuddata för leverantör.
-- **Fakturera** – Arbeta med fakturor. Det här avsnittet omfattar inte arbetsytan **Fakturering**. Mer information om den här arbetsytan finns i [Arbetsyta för leverantörssamarbetesfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Fakturera** – Arbeta med fakturor. Det här avsnittet omfattar inte arbetsytan **Fakturering**. Mer information om den här arbetsytan finns i [Arbetsyta för leverantörssamarbetesfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Leverantörer kan också övervaka information om försändelsen.
 
@@ -82,7 +78,7 @@ Om du använder försändelselager kan du använda gränssnittet för leverantö
 
 ## <a name="working-with-rfqs-in-the-vendor-bidding-workspace"></a>Arbeta med anbudsförfrågningar i arbetsytan Budgivning av leverantör
 
-I arbetsytan **Budgivning av leverantör** kan du visa anbudsförfrågningar som företaget har bjudits in att svara på. Du kan också svara på anbudsförfrågningarna. 
+I arbetsytan **Budgivning av leverantör** kan du visa anbudsförfrågningar som företaget har bjudits in att svara på. Du kan också svara på anbudsförfrågningarna.
 
 I arbetsytan visas också alla anbudsförfrågningar som du har vunnit eller förlorat. Om systemet är konfigurerat för den offentliga sektorn, visar arbetsytan dessutom anbudsförfrågningar som är offentligt tillgängliga.
 
@@ -104,9 +100,17 @@ Personer som arbetar inom den offentliga sektorn kan visa öppna och utgångna a
 
 - Välj länken **Öppna publicerade anbudsförfrågningar** för att visa en lista över öppna anbudsförfrågningar som är tillgängliga för allmänheten. En öppen anbudsförfrågan är en anbudsförfrågan som ännu inte har gått ut. Utgångsdatum och -tid finns i huvudet till anbudsförfrågan.
 
-    Om du har blivit inbjuden att buda hittar du samma anbudsförfrågan på sidan **Nya budinbjudningar**. Ibland kanske du vill lämna bud på en öppen anbudsförfrågan, men du har inte blivit inbjuden att buda. I detta fall måste du kanske bjuda in dig själv, förutsatt att kunden har aktiverat självinbjudan för denna anbudsförfrågan.
+    Om du har blivit inbjuden att buda hittar du samma anbudsförfrågan på sidan **Nya budinbjudningar**. Ibland kanske du vill lämna bud på en öppen anbudsförfrågan, men du har inte blivit inbjuden att buda. I detta fall måste du kanske bjuda in dig själv, förutsatt att kunden har aktiverat självinbjudan för denna anbudsförfrågan. 
 
-    Förbättra tillgängligheten för länken **Öppna publicerade begäran om offert** genom att aktivera funktionen **Visa "Öppna publicerade begäran om offert" som en panel** feature. Med den här funktionen konverteras länken till en panel och flyttas till en väl synlig plats, så att det går lätt att hitta den.
+    Sidan **Nya budinbjudningar** kan innehålla ett filter där du kan visa de öppna anbudsförfrågan och identifiera dem som innehåller rader som matchar dina godkända anskaffningskategorier. Om du vill göra det här filtret tillgängligt måste du aktivera funktionen *Låt leverantörer söka efter anbudsförfrågningar efter upphandlingskategori* i ditt system. Administratörer kan använda arbetsytan **funktionshantering** för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
+
+    - **Modul:** *Leverantörsreskontra*
+    - **Funktionsnamn:** *Låt leverantörer söka efter anbudsförfrågningar efter upphandlingskategori* <!-- KFM: I don't see this here, is this right? -->
+
+    Du kan förbättra tillgängligheten för länken **Öppna publicerade begäran om offert** genom att aktivera funktionen *Visa "Öppna publicerade begäran om offert" som en panel* feature. Med den här funktionen konverteras länken till en panel och flyttas till en väl synlig plats, så att det går lätt att hitta den. Administratörer kan använda arbetsytan **funktionshantering** för att kontrollera funktionens status och aktivera den om det behövs. (Från och med Supply Chain Management version 10.0.21 är funktionen aktiverad som standard.) Där visas funktionen på följande sätt:
+
+    - **Modul:** *anskaffning och källa*
+    - **Funktionsnamn:** *Visa länken "Öppna publicerade anbudsförfrågningar" som en panel*
 
 - Välj länken **Stängda publicerade anbudsförfrågningar** för att visa en lista över stängda anbudsförfrågningar som är tillgängliga för allmänheten. En stängd anbudsförfrågan är en anbudsförfrågan har utgått. Utgångsdatum och -tid finns i huvudet till anbudsförfrågan.
 
@@ -142,8 +146,11 @@ Du måste lämna ett nytt bud om en anbudsförfrågan ändras. Du hittar informa
 
 Som leverantör kan du komma åt en del av den information som kunden underhåller i leverantörens huvudpost. Därför kan du hålla informationen uppdaterad. Om du vill uppdatera informationen måste du ha rollen Leverantörsadmin (extern).
 
-De tillgängliga uppgifterna är leverantörens namn, adress, kontaktinformation, kontaktpersoner och deras kontaktinformation, ID-nummer, momsregistreringsnummer, anskaffningskategorier som leverantören har godkänts för att sälja till kunden samt och information om certifikat.
+De tillgängliga uppgifterna är leverantörens namn, adress, kontaktinformation, kontaktpersoner och deras kontaktinformation, ID-nummer, skatteregistreringsnummer, anskaffningskategorier som leverantören har godkänts för att sälja till kunden samt och information om certifikat.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,26 +1,24 @@
 ---
 title: Ställ in behörigheter för att beställa produkter för någon annans räkning
 description: I det här avsnittet visas hur du beviljar arbetare behörighet att förbereda inköpsrekvisitioner på uppdrag av andra arbetare.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqAuthorization, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 585f5c6cf83ad93b649e3f36e0d486a037915cd4
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a29b7ebece8009f29f4313b380889635a87473b5
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017302"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577130"
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>Ställ in behörigheter för att beställa produkter för någon annans räkning
 
@@ -44,3 +42,6 @@ I det här avsnittet visas hur du beviljar arbetare behörighet att förbereda i
 2. Använd snabbfiltret för att hitta den arbetare som du just lade till som beställaren.
 3. Välj beställare. Förberedarelistan visar personer som har behörighet att beställa artiklar på uppdrag av beställaren som är vald i vänstra fönstret.  Du kan lägga till ytterligare förberedare här. Denna vy låter dig också bevilja beställarebehörighet att skapa rekvisitioner i juridiska personer och driftenheter som inte är den personens primära juridiska person eller driftenhet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,20 +1,20 @@
 ---
 title: Italiensk Intrastat
 description: Det här ämnet innehåller information om Intrastat-rapportering i Italien.
-author: anasyash
-ms.date: 09/09/2021
+author: andosip
+ms.date: 7/9/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: kfender
 ms.search.region: Global
-ms.author: anasyash
+ms.author: v-aosipov
 ms.search.validFrom: ''
-ms.openlocfilehash: 3b676ba754cded03fdc6d566ffbfbb35c204b03a
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: f80a82f4c3c00ee263cc0bf31b0dc5fc69a05dea324fe96e3e0db9a13a488fac
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488269"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6779378"
 ---
 # <a name="italian-intrastat"></a>Italiensk Intrastat
 
@@ -597,10 +597,13 @@ Du måste skicka två rapporter till myndigheten. En rapport gäller för inomeu
 
 - **Försättssida**
 
-- **Avsnitt 1. varor**: Detta avsnitt innehåller information om normala transaktioner och kreditnoter som är relaterade till fakturor för varor under samma rapporteringsperiod som Intrastat-deklarationsperioden.
-- **Avsnitt 2. Rättelser för varor**: Detta avsnitt innehåller information om rättelser och kreditnoter som är relaterade till fakturor för varor föregående Intrastat-rapporteringsperiod.
-- **Avsnitt 3. Tjänster**: Detta avsnitt innehåller information om normala transaktioner och kreditnoter som är relaterade till fakturor för tjänster under samma rapporteringsperiod som Intrastat-deklarationsperioden.
-- **Avsnitt 4. Rättelser för tjänster**: Detta avsnitt innehåller information om rättelser och kreditnoter som är relaterade till fakturor för tjänster föregående Intrastat-rapporteringsperiod.
+- **Avsnitt 1. varor** – Detta avsnitt innehåller information om normala transaktioner och kreditnoter som är relaterade till fakturor för varor under samma rapporteringsperiod som Intrastat-deklarationsperioden.
+
+- **Avsnitt 2. Rättelser för varor** – Detta avsnitt innehåller information om rättelser och kreditnoter som är relaterade till fakturor för varor föregående Intrastat-rapporteringsperiod.
+
+- **Avsnitt 3. Tjänster** – Detta avsnitt innehåller information om normala transaktioner och kreditnoter som är relaterade till fakturor för tjänster under samma rapporteringsperiod som Intrastat-deklarationsperioden.
+
+- **Avsnitt 4. Rättelser för tjänster** – Detta avsnitt innehåller information om rättelser och kreditnoter som är relaterade till fakturor för tjänster föregående Intrastat-rapporteringsperiod.
 
 ## <a name="set-up-intrastat"></a>Ställa in Intrastat
 
@@ -608,14 +611,21 @@ Du måste skicka två rapporter till myndigheten. En rapport gäller för inomeu
 
 Följande allmänna information bör ställas in innan du börjar arbeta med Intrastat:
 
-   - Artikelkoder. För tjänster bör du definiera sexsiffriga artikelkoder.
-   - Transaktionskoder. Observera att Italien använder ensiffriga transaktionskoder.
-   - Transportmetoder.
-   - Statistikprocedurer.
-   - Utländska handelsparametrar.
-   - Lagerförvaring.
-   - Information om frisläppt produkt.
-   - Kontaktinformation för agent.
+-   Artikelkoder. För tjänster bör du definiera sexsiffriga artikelkoder.
+
+-   Transaktionskoder. Observera att Italien använder ensiffriga transaktionskoder.
+
+-   Transportmetoder.
+
+-   Statistikprocedurer.
+
+-   Utländska handelsparametrar.
+
+-   Lagerförvaring.
+
+-   Information om frisläppt produkt.
+
+-   Kontaktinformation för agent.
 
 Mer information finns i [Intrastat, översikt](emea-intrastat.md).
 
@@ -623,68 +633,97 @@ Mer information finns i [Intrastat, översikt](emea-intrastat.md).
 
 Följ dessa steg om du vill ställa in italiensk specifika alternativ så att du kan arbeta med Intrastat.
 
-1. I [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), i det delade tillgångsbiblioteket, ladda ner den senaste versionen av följande konfigurationer för elektronisk rapportering (ER) för Intrastat-deklarationen:
+1.  I [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), i det delade tillgångsbiblioteket, ladda ner den senaste versionen av följande konfigurationer för elektronisk rapportering (ER) för Intrastat-deklarationen:
 
-    - Intrastat-modell
-    - Intrastat-rapport
-    - Intrastat (IT)
+    -   Intrastat-modell
 
-    Mer information finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    -   Intrastat-rapport
 
-2. I Dynamics 365 Finance, gå till **Moms** > **Inställningar** > **Utländska handelsparametrar**.
-3. På fliken **Intrastat** på snabbfliken **Allmänt** ange följande fält:
+    -   Intrastat (IT)
 
-    - **Region för ursprung/destination**: Välj ditt företags region. Denna region används vid utförsel.
-    - **Transaktionskod**: Välj transaktionskod för egenskapsöverföringar. Denna kod används för transaktioner som orsakar en faktisk eller planerad överföring av egendom mot kompensation, och även för korrigeringar.
+Mer information finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-    - **Kreditfaktura**: Välj transaktionskod för retur av varor.
-    - **Försäljningsrapporteringsperiod**: Välj rapporteringsperiod för exportdeklarationen: **Månad** eller **Kvartal**. Kvartalsdeklarationer exporteras i förenklat format.
-    - **Inköpsrapporteringsperiod**: Välj rapporteringsperiod för importdeklarationen: **Månad** eller **Kvartal**. Kvartalsdeklarationer exporteras i förenklat format.
+2.  I Dynamics 365 Finance, gå till **Moms** &gt; **Inställningar** &gt; **Utländska handelsparametrar**.
 
-4. På snabbfliken **Elektronisk rapportering** anger du följande fält:
+3.  På fliken **Intrastat** på snabbfliken **Allmänt** ange följande fält:
 
-    - **Mappning av filformat**: Välj **Intrastat (IT)**.
-    - **Mappning av rapportformat**: Välj **Intrastat-rapport**.
+    - **Region för ursprung/destination** – Välj ditt företags region. Denna region används vid utförsel.
 
-5. På snabbfliken **Artikelkodhierarki** i fältet **Kategorihierarki**, välj **Intrastat**.
-6. På snabbflikarna **Statistiskt värde**, ange alternativet **Skriv ut och exportera statistiska data** till **Ja** om nödvändigt. Den här inställningen aktiverar överföring av statistikavsnittet. Det statistiska avsnittet innehåller data om vikter, ytterligare enheter, statistiska värden, leveransvillkor, leveransscheman, transportlägen och ursprungsområden.
+    <!-- -->
 
-    > [!NOTE]
-    > För en kvartalsdeklaration inkluderas inte statistiskt avsnitt i Intrastat-rapporten, eller information om leveransvillkor och transportsätt. Mer information finns i tabellen i avsnittet [Översikt](#overview) i det här avsnittet.
+    - **Transaktionskod** – Välj transaktionskod för egenskapsöverföringar. Denna kod används för transaktioner som orsakar en faktisk eller planerad överföring av egendom mot kompensation, och även för korrigeringar.
 
-7. På fliken **Egenskaper för land/region** ange alla länder eller regioner som din organisation gör affärer med. För varje land eller region anger du följande fält:
+    - **Kreditfaktura** – Välj transaktionskod för retur av varor. Den här koden används vid retur av varor när den ursprungliga transaktionen har registrerats under transaktionskoden.
 
-    - **Partens land/region**: Välj kod för land/region.
-    - **Intrastat-kod**: Ange den tvåsiffriga Intrastat-koden.
-    - **Valuta**: Ange den nationella valutan i landet eller regionen. Om leverantören är baserad i ett EU-land som inte använder euro, rapporteras fakturabelopp i både leverantörens valuta och euro. Om leverantören till exempel är baserad i Danmark kommer de rapporterade beloppen för importdeklarationen att finnas i både danska kronor (DKK) och euro (EUR).
-    - **Lands-/regiontyp**: Välj typ av land eller region i förhållande till organisationen. För Intrastat-journalen överförs endast länder eller regioner inom **EU** och typen **Särskild inrikes**.
+    - **Försäljningsrapporteringsperiod** – Välj rapporteringsperiod för exportdeklarationen: **Månad** eller **Kvartal**. Kvartalsdeklarationer exporteras i förenklat format.
 
-    > [!NOTE]
-    > För länder eller regioner av typen **Speciell inrikes** utelämnas följande fält från Intrastat-rapportfilen: **Vikt**, **Ytterligare enheter**, **Statistisk värde**, **Leveransvillkor**, **Transportkod**, **Ursprungsland/-region/destination** och **Ursprungsregion/destination**. Till exempel, i fält **Partens land/region**, välj **SMR (San Marino)** och sedan, i fältet **Lands-/regiontyp**, välj **Speciell inrikes**.
+    - **Inköpsrapporteringsperiod** – Välj rapporteringsperiod för importdeklarationen: **Månad** eller **Kvartal**. Kvartalsdeklarationer exporteras i förenklat format.
 
-8. Gå till **Leverantörsreskontra** > **Inställningar** > **Leveransvillkor**.
-9. Välj leveransvillkor i rutnätet.
+4.  På snabbfliken **Elektronisk rapportering** anger du följande fält:
+
+    - **Mappning av filformat** Välj – **Intrastat (IT)**.
+
+    <!-- -->
+
+    - **Mappning av rapportformat** Välj – **Intrastat-rapport**.
+
+5.  På snabbfliken **Artikelkodhierarki** i fältet **Kategorihierarki**, välj **Intrastat**.
+
+6.  På snabbflikarna **Statistiskt värde**, ange alternativet **Skriv ut och exportera statistiska data** till **Ja** om nödvändigt. Den här inställningen aktiverar överföring av statistikavsnittet. Det statistiska avsnittet innehåller data om vikter, ytterligare enheter, statistiska värden, leveransvillkor, leveransscheman, transportlägen och ursprungsområden.
+
+>[!NOTE]
+>
+>För en kvartalsdeklaration inkluderas inte statistiskt avsnitt i Intrastat-rapporten, eller information om leveransvillkor och transportsätt. Mer information finns i tabellen i avsnittet [Översikt](#overview) i det här avsnittet.
+
+7.  På fliken **Egenskaper för land/region** ange alla länder eller regioner som din organisation gör affärer med. För varje land eller region anger du följande fält:
+
+- **Partens land/region** – Välj kod för land/region.
+
+- **Intrastat-kod** – Ange den tvåsiffriga Intrastat-koden.
+
+- **Valuta** – Ange den nationella valutan i landet eller regionen. Om leverantören är baserad i ett EU-land som inte använder euro, rapporteras fakturabelopp i både leverantörens valuta och euro. Om leverantören till exempel är baserad i Danmark kommer de rapporterade beloppen för importdeklarationen att finnas i både danska kronor (DKK) och euro (EUR).
+
+- **Lands-/regiontyp** – Välj typ av land eller region i förhållande till organisationen. För Intrastat-journalen överförs endast länder eller regioner inom **EU** och typen **Särskild inrikes**.
+
+>[!NOTE]
+>
+>För länder eller regioner av typen **Speciell inrikes** utelämnas följande fält från Intrastat-rapportfilen: **Vikt**, **Ytterligare enheter**, **Statistisk värde**, **Leveransvillkor**, **Transportkod**, **Ursprungsland/-region/destination** och **Ursprungsregion/destination**. Till exempel, i fält **Partens land/region**, välj **SMR (San Marino)** och sedan, i fältet **Lands-/regiontyp**, välj **Speciell inrikes**.
+
+8.  Gå till **Leverantörsreskontra** &gt; **Inställning** &gt; **Leveransvillkor**.
+
+9.  Välj leveransvillkor i rutnätet.
+
 10. På snabbfliken **Allmänt** i fältet **Intrastat-kod**, ange den ensiffriga koden som ska användas i Intrastat-rapporten.
+
 11. Tilldela momsregistreringsnummer till kunder och leverantörer genom att följa stegen nedan. Dessa siffror visas på Intrastat-rapporten.
-12. Gå till **Skatt** > **Inställningar** > **Moms** > **Momsregistreringsnummer** och ange alla skattefria nummer för dina kunder och leverantörer. För varje partner anger du följande fält:
 
-    - **Land/region**: Välj land/region för partnern.
-    - **Momsregistreringsnummer**: Ange momsregistreringsnummer för partnern.
-    - **Företagsnamn**: Ange partnerns namn.
+-   Gå till **Skatt** &gt; **Inställningar** &gt; **Moms** &gt; **Momsregistreringsnummer** och ange alla skattefria nummer för dina kunder och leverantörer. För varje partner anger du följande fält:
 
-13. Gå till **Kundreskontra** > **Kunder** > **Alla kunder** och följ dessa steg för varje kund:
+    - **Land/region** – Välj land/region för partnern.
 
-    1. Välj en kund.
-    2. På snabbfliken **Faktura och leverans** i avsnittet **Moms** i fältet **Momsregistreringsnummer**, välj **Alla**.
-    3. Välj kundens momsregistreringsnummer.
+    - **Momsregistreringsnummer** – Ange momsregistreringsnummer för partnern.
 
-14. Gå till **Leverantörsreskontra** > **Leverantör** > **Alla leverantörer** och följ dessa steg för varje leverantör:
+    - **Företagsnamn** – Ange partnerns namn.
 
-    1. Välj en leverantör.
-    2. På snabbfliken **Faktura och leverans** i avsnittet **Moms** i fältet **Momsregistreringsnummer**, välj **Alla**.
-    3. Välj leverantörer momsregistreringsnummer.
+<!-- -->
 
-15. Gå till **Tax** > **Inställningar** > **Utländsk handel** > **Komprimering av Intrastat** och välj de fält som ska jämföras när Intrastat-information sammanfattas. För Italien, välj **Momsregistreringsnummer**, **Transaktionskod**, **Vara**, **Leveransvillkor**, **Transport**, **Land/region**, **Ursprungsland/-region**, **Ursprungsregion**, **Ursprungsregion/destination**, **Valuta**, **Månad**, **Kvartal** och **Korrigeringsår**.
+-   Gå till **Kundreskontra** &gt; **Kunder** &gt; **Alla kunder** och följ dessa steg för varje kund:
+
+    1.  Välj en kund.
+
+    2.  På snabbfliken **Faktura och leverans** i avsnittet **Moms** i fältet **Momsregistreringsnummer**, välj **Alla**.
+
+    3.  Välj kundens momsregistreringsnummer.
+
+-   Gå till **Leverantörsreskontra** &gt; **Leverantör** &gt; **Alla leverantörer** och följ dessa steg för varje leverantör:
+
+    1.  Välj en leverantör.
+
+    2.  På snabbfliken **Faktura och leverans** i avsnittet **Moms** i fältet **Momsregistreringsnummer**, välj **Alla**.
+
+    3.  Välj leverantörer momsregistreringsnummer.
+
+12. Gå till **Skatt** &gt; **Inställningar** &gt; **Utländsk handel** &gt; **Komprimering av Intrastat** och välj de fält som ska jämföras när Intrastat-information sammanfattas. För Italien, välj **Momsregistreringsnummer**, **Transaktionskod**, **Vara**, **Leveransvillkor**, **Transport**, **Land/region**, **Ursprungsland/-region**, **Ursprungsregion**, **Ursprungsregion/destination**, **Valuta**, **Månad**, **Kvartal** och **Korrigeringsår**.
 
 ## <a name="italian-vendor-invoice-journal-for-foreign-trade"></a>Italiensk leverantörsfakturajournal för utländsk handel
 
@@ -723,10 +762,10 @@ Om du vill öppna Intrastat-journal, gå till **Skatt** &gt; **Deklarationer** &
 >
 >Om du får en negativ korrigering (kreditfaktura) under samma period som rapporteringsperioden måste du manuellt ändra Intrastat-journalen genom att följa dessa steg.
 >
-> 1. Gå till **Moms** > **Deklarationer** > **Utländsk handel** > **Intrastat**.
-> 2. Sök efter och ta bort den transaktion som är markerad som korrigering.
-> 3. Sök efter den ursprungliga transaktionen och ändra värdet i fältet **Fakturabelopp** efter behov.
-> Du har till exempel en faktura på 10 000 och du får en kreditfaktura på -2 000. I det här fallet måste du öppna Intrastat-journalen och söka efter och radera transaktionen för -2 000. Sök sedan efter den ursprungliga transaktionen på 10 000 och ställ in fakturabeloppet på 8 000 (= 10 000 - 2 000).
+>1.  Gå till **Moms** &gt; **Deklarationer** &gt; **Utländsk handel** &gt; **Intrastat**.
+>2.  Sök efter och ta bort den transaktion som är markerad som korrigering.
+>3.  Sök efter den ursprungliga transaktionen och ändra värdet i fältet **Fakturabelopp** efter behov.
+>Du har till exempel en faktura på 10 000 och du får en kreditfaktura på -2 000. I det här fallet måste du öppna Intrastat-journalen och söka efter och radera transaktionen för -2 000. Sök sedan efter den ursprungliga transaktionen på 10 000 och ställ in fakturabeloppet på 8 000 (= 10 000 - 2 000).
 
 ### <a name="intrastat-transfer"></a>Intrastat-överföring
 
@@ -734,30 +773,235 @@ I åtgärdsfönstret kan du välja **Överför** om du vill överföra informati
 
 Du kan också ange transaktioner manuellt genom att välja **Ny** i åtgärdsfönstret.
 
-För varje transaktion kan du ställa in flera Italien-specifika parametrar på fliken **Allmänt**. I följande register finns mer information om fälten.
+För varje transaktion kan du ställa in flera Italien-specifika parametrar på fliken **Allmänt**.
 
-| Fält | beskrivning |
-|-------|-------------|
-| Artikeltyp | Det här fältet kan ställas in på **Varor** eller **Tjänster**.<br> För att en transaktion ska kunna anses vara en tjänst, ska fakturaraden ställas in på något av följande sätt:<br>- Den har ingen artikelkod<br>- Artikeln har en sexsiffrig artikelkod  |
-| Ursprungsland | Ursprungslandet för produkten eller tjänsten. Detta värde anges i sidan **Frisläppt produkt**. |
-| Leveranssätt | Leveranssättet. <br>För att ange leveranssätt, gå till **Försäljning och marknadsföring** > **Inställningar** > **Distribution** > **Leveranssätt**. |
-| Månad | Månaden i den ursprungliga transaktionen. |
-| Kvartal | Kvartalet i den ursprungliga transaktionen. |
-| Korrigeringsår | Året i den ursprungliga transaktionen. |
-| Ursprunglig Intrastat-post | För servicekorrigeringar anger du numret på den ursprungliga Intrastat-posten. |
-| Valuta | Partnerns nationella valuta. |
-| Fakturabelopp i transaktionsvaluta | Fakturabeloppet i partnerns nationella valuta. |
-| Fakturaavgiftsbelopp i transaktionsvaluta | Fakturaavgifter i partnerns nationella valuta. |
-| Fakturavärde i transaktionsvaluta | Fakturavärdet i partnerns nationella valuta. |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Fält</strong></p>
+</td>
+<td>
+<p><strong>Beskrivning</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p style="text-align: center;">Avsnittet <strong>Allmänt</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Artikeltyp</p>
+</td>
+<td>
+<p>Det här fältet kan ställas in på <strong>Varor</strong> eller <strong>Tjänster</strong>.</p>
+<p>För att en transaktion ska kunna anses vara en tjänst, ska fakturaraden ställas in på något av följande sätt:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Den har ingen artikelkod.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Artikeln har en sexsiffrig artikelkod</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p style="text-align: center;">Avsnittet <strong>Ursprungsland/-region</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ursprungsland</p>
+</td>
+<td>
+<p>Ursprungslandet för produkten eller tjänsten. Detta värde anges i sidan <strong>Frisläppt produkt</strong>.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p style="text-align: center;">Avsnittet <strong>Koder</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Leveranssätt</p>
+</td>
+<td>
+<p>Leveranssättet. För att ange leveranssätt, gå till <strong>Försäljning och marknadsföring</strong> &gt; <strong>Inställningar</strong> &gt; <strong>Distribution</strong> &gt; <strong>Leveranssätt</strong>.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p style="text-align: center;">Avsnittet <strong>Korrigeringar</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Månad</p>
+</td>
+<td>
+<p>Månaden i den ursprungliga transaktionen.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Kvartal</p>
+</td>
+<td>
+<p>Kvartalet i den ursprungliga transaktionen.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Korrigeringsår</p>
+</td>
+<td>
+<p>Året i den ursprungliga transaktionen.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ursprunglig Intrastat-post</p>
+</td>
+<td>
+<p>För servicekorrigeringar anger du numret på den ursprungliga Intrastat-posten.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p style="text-align: center;">Avsnittet <strong>Fakturavärde</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valuta</p>
+</td>
+<td>
+<p>Partnerns nationella valuta.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Fakturabelopp i transaktionsvaluta</p>
+</td>
+<td>
+<p>Fakturabeloppet i partnerns nationella valuta.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Fakturaavgiftsbelopp i transaktionsvaluta</p>
+</td>
+<td>
+<p>Fakturaavgifter i partnerns nationella valuta.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Fakturavärde i transaktionsvaluta</p>
+</td>
+<td>
+<p>Fakturavärdet i partnerns nationella valuta.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 För mer information om fakturaavgifterna i partnerns nationella valuta, se [Intrastat översiktsförutsättningar (Tillägg)](emea-intrastat.md).
 
 ### <a name="generate-an-intrastat-report"></a>Skapa Intrastat-rapport
 
-1. Om du vill generera en Intrastat-rapport, gå till **Skatt** > **Deklarationer** > **Utländsk handel** > **Intrastat**.
-2. I åtgärdsfönstret väljer du **Utdata** > **Rapport**.
-3. I dialogrutan **Intrastat-rapporten**, välj start- och slutdatum för rapporten.
-4. I fältet **Generera fil**, välj **Ja** för att skapa en .txt-fil och ange namnet på filen.
-5. I fältet **Generera rapport**, välj **Ja** för att skapa en .xlsx-fil och ange sedan namnet på rapporten.
-6. Välj **Införsel** eller **Utförsel** utifrån vad rapporten handlar om.
-7. I fältet **dokumentnumret** ange dokumentnummer. Det här värdet påverkar koden filnummer i Intrastat-filrapporten. 
+1.  Om du vill generera en Intrastat-rapport, gå till **Skatt** &gt; **Deklarationer** &gt; **Utländsk handel** &gt; **Intrastat**.
+
+2.  I åtgärdsfönstret väljer du **Utdata** &gt; **Rapport**.
+
+3.  I dialogrutan **Intrastat-rapport** anger du följande fält.
+
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Fält</strong></p>
+</td>
+<td>
+<p><strong>Beskrivning</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Avsnitt <strong>Datum</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Från-datum</p>
+</td>
+<td>
+<p>Välj startdatumet för rapporten.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Till-datum</p>
+</td>
+<td>
+<p>Välj slutdatumet för rapporten.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Avsnittet <strong>Exportalternativ</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Generera fil</p>
+</td>
+<td>
+<p>Ställ in det här alternativet till <strong>Ja</strong> om du vill generera en .txt-filen.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Filnamn</p>
+</td>
+<td>
+<p>Ange namnet på .txt-filen för Intrastat-rapporten.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Generera rapport</p>
+</td>
+<td>
+<p>Ställ in det här alternativet till <strong>Ja</strong> om du vill generera en .xlsx-filen.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Rapportfilnamn</p>
+</td>
+<td>
+<p>Ange namnet på xlsx.-filen för Intrastat-rapporten.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Riktning</p>
+</td>
+<td>
+<p>Välj <strong>Införsel</strong> för en rapport om inomeuropeiska införslar. Välj <strong>Utförsel</strong> för en rapport om inomeuropeiska införslar.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Avsnittet <strong>Mappning av filformat</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Referensnummer</p>
+</td>
+<td>
+<p>Ange dokumentnumret. Det här värdet påverkar koden <strong>filnummer</strong> i Intrastat-filrapporten. Mer information finns i filformatet.</p>
+</td>
+</tr>
+</tbody>
+</table>

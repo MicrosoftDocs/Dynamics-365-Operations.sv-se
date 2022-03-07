@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: be7b17c1049f60379764c5424422ff1ac6ee1770
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103623"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830110"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Aktivera ändringshantering för befintliga produkter
 
@@ -27,9 +27,12 @@ I det här avsnittet beskrivs hur du aktiverar ändringshantering för befintlig
 
 När du aktiverar ändringshantering för en befintlig produkt, kan du skapa versioner av produkten och spåra ändringar som gjorts i den under hela dess livslängd. Därför kan du spåra dessa ändringar genom att använda ändringsorder. Om du vill aktivera ändringshantering måste du konvertera relevanta produkter till *tekniska artiklar* (även kallade tekniska produkter). Teknikprodukter är produkter som versioneras och hanteras med hjälp av ändringshantering. Här finns en guide som vägleder dig genom konverteringsprocessen.
 
-## <a name="turn-this-feature-on-or-off"></a>Aktivera eller inaktivera funktionen
+## <a name="turn-on-the-feature-in-your-system"></a>Aktivera funktionen i systemet
 
-Funktionen som beskrivs i detta ämne kräver att både funktionen *Konstruktionsändringshantering* och *Aktivera ändringshantering för befintliga produkter* är aktiverad för systemet. Information om hur du aktiverar och inaktiverar funktionerna finns i [Översikt över hantering av tekniska ändringar](product-engineering-overview.md).
+Om du vill använda denna funktion måste du utföra följande uppgifter:
+
+1. Aktivera konstruktionsändringshantering-funktionen och dess konfigurationsnyckel som beskrivs i [Översikt över konstruktionsändringshantering](product-engineering-overview.md).
+1. Aktivera funktionen *Aktivera ändringshantering av befintliga produkter* i funktionshantering. Mer information finns i [Översikt för funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="restrictions-and-limitations"></a>Begränsningar
 
@@ -44,9 +47,7 @@ Om du har en specifik produkt kan du därför endast ändra den till en teknisk 
 
 En *teknisk produktkategori* måste tilldelas varje teknisk produkt. Du gör den här tilldelningen när du kör guiden **Omvandla till teknisk produkt**. Teknikproduktkategorier måste finnas för alla relevanta standardprodukter *innan* du kan konvertera dessa produkter.
 
-Den tekniska produktkategorin utgör grunden för att skapa en teknisk produkt, och den förser en uppsättning standardvärden och principer. Tekniska attribut och deras standardvärden (som definierats för den tekniska kategorin) används också för den resulterande tekniska produkten. Du kan redigera attributvärdena och/eller lägga till fler tekniska attribut till den färdiga produkten efter behov.
-
-Den tekniska produktkategorin måste matcha den produkt som du tilldelar den. Produkttypen och dimensionsgruppen måste till exempel matcha både produkten och den tekniska produktkategorin. För mer information, se [Konstruktionsversioner och kategorier av konstruktionsprodukter](engineering-versions-product-category.md).
+Den tekniska produktkategorin utgör grunden för att skapa en teknisk produkt, och den förser en uppsättning standardvärden och principer. Den tekniska produktkategorin måste matcha den produkt som du tilldelar den. Produkttypen och dimensionsgruppen måste till exempel matcha både produkten och den tekniska produktkategorin. För mer information, se [Konstruktionsversioner och kategorier av konstruktionsprodukter](engineering-versions-product-category.md).
 
 > [!IMPORTANT]
 > Guiden **Omvandla till teknisk produkt** kan bara konvertera produkt till teknikprodukter där versionen inte spåras i transaktioner. Därför måste alternativet **Spåra version i transaktioner** ställas in *Nej* för att konstruera produktkategorier som du skapar för att konvertera befintliga produkter.

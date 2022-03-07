@@ -2,9 +2,11 @@
 title: Avanmälan av anpassade rekommendationer
 description: I det här avsnittet beskrivs hur du kan låta kunderna avanmäla si från anpassade rekommendationer i Microsoft Dynamics 365 Commerce.
 author: bebeale
+manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,18 +18,20 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f634e39fe8ca7ffecfd1952933cb82e1bfe7d5a8eec28a61e1d78d21847f95f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e822d0097443d7da347c29ebfa63ad6a2d7cbf8b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772947"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000647"
 ---
-# <a name="opt-out-of-personalized-recommendations"></a>Avanmäl anpassade rekommendationer
+# <a name="opt-out-of-personalized-recommendations"></a>Avanmälan av anpassade rekommendationer
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du kan låta kunderna avanmäla si från anpassade rekommendationer i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Översikt
 
 När kontot skapas konfigureras nya kunder automatiskt för att ta emot anpassade rekommendationer. Med Dynamics 365 Commerce har olika sätt för återförsäljare att låta användarna välja att inte ta emot dessa rekommendationer och begränsa bearbetningen av personuppgifter. Autentiserade användare som avanmäler sig från anpassade rekommendationer kommer omedelbart att sluta se anpassade listor. Dessutom kommer alla personliga data som samlas in för anpassning att tas bort från anpassade rekommendationsmodeller.
 
@@ -44,11 +48,11 @@ I kontohantering i backoffice i Commerce kan återförsäljare avanmäla sig fö
 1. På startsidan för backoffice söker du efter **alla kunder**.
 1. Sök efter och välj en kund och välj sedan snabbfliken **butik**.
 
-    ![Snabbfliken Butik.](./media/Disablepersonalizationpart1.png)
+    ![Snabbfliken Butik](./media/Disablepersonalizationpart1.png)
 
 1. Under **sekretess** anger du alternativet **inaktivera anpassningar** till **ja**.
 
-    ![Sekretessinställningar.](./media/Disablepersonalizationpart2.png)
+    ![Sekretessinställningar](./media/Disablepersonalizationpart2.png)
 
 1. Markera **Spara** och stäng sedan sidan.
 
@@ -99,6 +103,3 @@ Följande exempel visar hur en återförsäljare kan utföra uppgiften.
 [Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

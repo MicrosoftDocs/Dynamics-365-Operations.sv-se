@@ -1,12 +1,10 @@
 ---
 title: Förbered programdata att användas i RCS
-description: Stegen i det här avsnittet förklarar hur en användare kan skapa en ny konfiguration av elektronisk rapporterings (ER) konfiguration som innehåller metadata för program för att utforma konfigurationer av ER-modellmappning i Regulatory Configuration Service (RCS).
+description: I det här avsnittet beskrivs hur du skapar en ny rapportkonfiguration som innehåller programmetadata.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dbc1ca45a39f2a5c3309276f9e2f5d2b7d2ba5f7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 71a33a69796b31c456bfcc5abbb3b18bcb1064be65c1c58b36656a9cebfbf47d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684101"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750584"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>Förbered programdata att användas i RCS
 [!include [banner](../../includes/banner.md)]
@@ -80,3 +78,6 @@ Vi har lagt till metadatainformation om Intrastat-tabellen med poster.
 3.    Klicka på **OK**. 
     
 Den skapade konfigurationen av ER-metadata har sparats som en XML-fil som kan importeras till RCS och användas som källa för information om metadata för den utländska handelsdomänen. Utifrån den här informationen kan vi ange mappningen mellan programdata och ER-datamodell.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Ställ in elektroniska signaturer
 description: Använd den här proceduren för att konfigurera elektroniska signaturer.
 author: maertenm
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysConfiguration, SIGParameters, SIGReasonCode, SIGProcSetup
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 314f48fcac32793c96466ee807d5685e596193b1
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 8d78ecd0606f3b1d5d7b5f3cd470beecfcdd5077
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796668"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747355"
 ---
 # <a name="set-up-electronic-signatures"></a>Ställ in elektroniska signaturer
 
@@ -77,3 +75,6 @@ Använd den här proceduren för att konfigurera elektroniska signaturer. En ele
 10. Klicka på Spara.
 11. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

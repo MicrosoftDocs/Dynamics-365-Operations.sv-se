@@ -2,11 +2,9 @@
 title: Välj datamodelldefinitioner när du skapar format
 description: För att slutföra stegen i den här proceduren måste du först slutföra stegen i proceduren "ER Skapa en konfigurationsleverantör och markera den som aktiv".
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 44288cc3979a0ac2ed6b4a8478aac21a85aca24e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b01f7afb6ca3bd1f317c25202e0cf72231008fca
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684221"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744973"
 ---
 # <a name="select-data-model-definitions-when-you-create-formats"></a>Välj datamodelldefinitioner när du skapar format
 
@@ -98,3 +96,6 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
     * Observera att det nu bara finns ett rotobjekt tillgängligt att mappa till programmets datakällor. När minst en modellmappning har tagits i bruk kan bara modellens rotobjekt som är mappade till programmet datakällor väljas som modelldefinition när ER-formatet läggs till.   
 5. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

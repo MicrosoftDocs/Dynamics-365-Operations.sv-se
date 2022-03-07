@@ -2,25 +2,22 @@
 title: Strategier för lagerpåfyllnad
 description: Det här avsnittet innehåller information om strategier för påfyllning och förklarar hur du kan använda fältet återanskaffningsstrategi på rader för återanskaffning av en påfyllning för att välja hur påfyllning ska göras.
 author: mirzaab
-manager: tfehr
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 45b3b1a4d2e92a52ee69c17865634a6578181ac7
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 84c97bdbe00285d7992a25edbf5d42ffe9b58903
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646143"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814522"
 ---
 # <a name="replenishment-strategies"></a>Strategier för lagerpåfyllnad
 
@@ -115,3 +112,6 @@ Resultaten skiljer sig på grund av den information som är tillgänglig när du
 [![Exempel 2](media/ReplenTemp_example_2.png "Exempel 2")](media/ReplenTemp_example_2_large.png)
 
 Om du vill hämta den maximala kvantiteten till de påfyllningsbara platserna bör du ställa in alternativet **Tillåt delning** på *Ja* i platsdirektiv för påfyllningsplockning.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

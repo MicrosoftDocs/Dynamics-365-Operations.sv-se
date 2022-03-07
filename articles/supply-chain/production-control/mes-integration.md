@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: ea39a1fc9092aaa4622c7193f7538acc85aa0f46
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 43814023474d44b8c95bae087c7b6a4d52d21471
+ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952687"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7891936"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrera med tillverkningsutförandesystem från tredje part
 
@@ -37,17 +37,10 @@ I följande bild visas en typisk samling affärshändelser, processer och meddel
 
 ## <a name="turn-on-the-mes-integration-feature"></a>Aktivera integreringsfunktionen för MES
 
-Innan du kan använda den här funktionen måste en administratör aktivera den i ditt system enligt beskrivningen i följande procedur.
+Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 
-1. Öppna **Systemadministration \> Inställningar \> Licenskonfiguration**.
-1. Kontrollera att licensnyckeln för **tid och närvaro** är aktiverad (markeras med en bockmarkering). Den här licensnyckeln krävs eftersom den styr tillverkningskörningssystemets funktioner och data. Om den inte är aktiverad gör du så här:
-    1. Sätt ditt system i underhållsläge enligt beskrivningen i [underhållsläge](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-    1. På sidan **Licenskonfiguration** markerar du kryssrutan **Tid och närvaro**.
-    1. Inaktivera underhållsläge enligt beskrivningen i [underhållsläge](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)
-1. Gå till **Systemadministration \> Arbetsytor \> Funktionshantering**.
-1. Slå på funktionen som är listad på följande sätt (se även [Funktionshantering, översikt](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)):
-    - **Modul:** *produktionskontroll*
-    - **Funktionsnamn:** *Integrering av utförandesystem för tillverkning*
+- **Modul:** *produktionskontroll*
+- **Funktionsnamn:** *Integrering av utförandesystem för tillverkning*
 
 ## <a name="processes-available-for-mes-integration"></a>Tillgängliga processer för MES-integrering
 

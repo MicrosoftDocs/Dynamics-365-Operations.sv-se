@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 69d3da5cbee5d7b921b0b0b422d838b9821e9c877d6f1951e85aeb49474bd4bc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1e55ce327e2c8ab714eb5e2fa14b3830b9171688
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760910"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020689"
 ---
 # <a name="delivery-options-module"></a>Modul för leveransalternativ
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Det här avsnittet modul för leveransalternativ och förklarar hur du konfigurerar dem i Microsoft Dynamics 365 Commerce.
 
@@ -41,7 +42,7 @@ Om leveransavgifter används på radartiklar kan de visas på kundvagnsraden fö
 
 Följande bild visar ett exempel på en leveransalternativmodul på en kassasida.
 
-![Exempel på en modul för leveranssätt på en kassasida.](./media/ecommerce-deliveryoptions.PNG)
+![Exempel på en modul för leveranssätt på en kassasida](./media/ecommerce-deliveryoptions.PNG)
 
 ## <a name="delivery-options-module-properties"></a>Egenskaper för modul för leveransalternativ
 

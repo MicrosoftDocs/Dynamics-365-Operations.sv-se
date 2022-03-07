@@ -1,97 +1,76 @@
 ---
 title: Redovisningskvittningar
 description: Det här avsnittet beskriver hur du använder sidan Redovisningskvittningar för att kvitta redovisningstransaktioner och återföra kvittningar.
-author: kweekley
-ms.date: 01/31/2022
+author: mikefalkner
+manager: aolson
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerTransSettlement
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: kweekley
+ms.author: roschlom
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: e98b012210338e7f18cb874eefbc8a023aa4428b
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 185a95cfebef0e9d6e7914f3102aa5ecb40a877a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075334"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988710"
 ---
 # <a name="ledger-settlements"></a>Redovisningskvittningar
 
 [!include [banner](../includes/banner.md)]
 
-Redovisningskvittning är processen för att matcha debet- och kredittransaktioner i huvudboken. Kvittningen av debet- och kreditbeloppen används för att stämma av saldot på redovisningskontot med de detaljerade transaktioner som utgör saldot.
+Redovisningskvittningar låter dig matcha debet- eller kredittransaktioner i redovisningen och markera dem som kvittade. På så sätt kan du se till att relaterade transaktioner har tagits bort. Du kan också återföra kvittningar om de ändras av misstag.
 
-Kvittade transaktioner kan utelämnas från förfrågningar och rapporter. På det här sättet är det enklare att analysera de öppna redovisningstransaktioner som utgör saldot på redovisningskontot.
+## <a name="enable-advanced-ledger-settlements"></a>Aktivera avancerade redovisningskvittningar
 
-> [!IMPORTANT] 
-> Modulerna Leverantörsreskontra (AP) och Kundreskontra (AR) har även avräkning av fakturor och betalningar. När avräkning sker i kundreskontra och leverantörsreskontra, avräknas inte motsvarande redovisningsposter automatiskt.
+Sidan för avancerade redovisningskvittningar ger ytterligare möjligheter att filtrera och välja transaktioner. Följ dessa steg om du vill aktivera avancerade redovisningskvittningar.
 
-## <a name="ledger-settlement-features"></a>Funktioner för redovisningskvittning
-I Microsoft Dynamics 365 Finance version 10.0.21 har alternativet **Aktivera avancerad redovisningskvittning** tagits bort från sidan **Allmänna redovisningsparametrar**. Avancerad redovisningskvittning är nu alltid aktiverad.
-I Ekonomi version 10.0.25, funktionen **Medvetenhet mellan redovisningskvittning och årsbokslut** introducerades. Med denna funktion ändras de grundläggande funktionerna vid både redovisningskvittning och stängning av redovisningsmodulen. Innan du aktiverar den här funktionen i arbetsytan **funktionshantering** finns i [Medvetenhet mellan redovisningskvittning och årsbokslut](awareness-between-ledger-settlement-year-end-close.md).
+1. Välj **Redovisning** \> **Redovisningsinställning** \> **Allmänna redovisningsparametrar**. 
+2. På fliken **Redovisningskvittningar** anger du alternativet **avancerad redovisningskvittning** till **Ja** för att aktivera funktionen avancerad redovisningskvittning. Sidan för avancerade **redovisningskvittningar** kommer att användas när du väljer **Redovisningskvittningar** i **periodiska uppgifter**. 
+3. Du måste ange en lista med konton som ska användas för redovisningskvittningar kontoplan. Listan används för att filtrera listan över transaktioner som visas på sidan **Redovisningskvittningar**. I listan **kontoplan** väljer du en kontoplan och väljer sedan **Ny** för att lägga till nya konton i listan.
 
-## <a name="set-up-ledger-settlement"></a>Ställa in redovisningskvittning
-Du måste välja de huvudkonton som du vill redovisningskvittning för. Det finns två sätt att välja dessa huvudkonton.
+## <a name="settle-transactions-by-using-the-advanced-ledger-settlements-page"></a>Kvitta transaktioner på sidan för avancerade redovisningskvittningar
 
-1. Gå till **Redovisning** > **Redovisningsinställning** > **Redovisningsparametrar**.
-2. På fliken **Redovisningskvittningar** väljer du de kontoplanerna som du vill välja huvudkonton från.
-3. Välj huvudkontot att göra redovisningskvittning för. Eftersom kontoplanerna är globala tilldelas alla företag som de valda kontoplanerna tilldelas till samma huvudkonton för redovisningskvittning.
-
-  - eller -
-
-1. Gå till **Redovisning** > **Periodiska uppgifter** > **Redovisningskvittningar**.
-2. Välj **redovisningkvittningskonton**.
-3. Välj i dialogrutan de kontoplan och huvudkonton som du vill göra redovisningskvittning för. Den här dialogrutan är en genväg. Alla huvudkonton som du lägger till här återspeglas också på sidan **Allmänna redovisningsparametrar**.
-
-Du kan använda samma grundläggande procedurer när du vill ta bort huvudkonton från redovisningskvittning. Borttagningen av ett huvudkonto påverkar inte tidigare redovisningkvittningar. Huvudkontot och transaktionerna visas dock inte längre på sidan **Redovisningkvittning**.
-
-## <a name="settle-transactions"></a><a name="settle-transactions"></a>Kvitta transaktioner
 Om du vill kvitta redovisningstransaktioner följer du dessa steg.
 
-1. Gå till **Redovisning** > **Periodiska uppgifter** > **Redovisningskvittningar**.
+1. Välj **Redovisning** \> **Periodiska uppgifter** \> **Redovisningskvittningar**.
 2. Ställ in filtren längst upp på sidan:
 
-    - Välj ett datumintervall. Alternativt kan du välja en datumintervallkod för att automatiskt fylla i datumintervallet. Du bör inte redovisningskvittning för transaktioner som gäller flera räkenskapsår.
-    - Ändra bokföringsskiktet efter behov. Du kan inte kvitta transaktioner som finns i olika bokföringsskikt.
-    - Om du vill visa huvudkonto och dimensioner separat, välj en uppsättning av ekonomiska dimensioner.
+    - Markera ett datumintervall eller välj **Datumintervallkod** för att automatiskt fylla i datumintervallet.
+    - Ändra bokföringsskiktet efter behov.
+    - Om du vill visa redovisningskonto och dimensioner separat, välj en uppsättning av ekonomiska dimensioner.
 
-3. Välj **Visa transaktioner** för att visa alla transaktioner som matchar de filter som du anger och listan över konton som du angav när du ställde in listan med kontoplanen i föregående avsnitt.
-
-    - Om du ändrar något av filtren eller dimensionsuppsättningarna måste du markera **Visa transaktioner** igen.
-    - Om du vill filtrera transaktionerna till ett enskilt huvudkonto använder du filtret i fältet **Redovisningskonto**. Vi rekommenderar inte att du kvittar redovisningen för transaktioner som bokförs på olika huvudkonton.
-
-4. Markera rader för kvittning. Värdet på fältet **markerade belopp** längst upp på sidan höjs eller sänks med för att återspegla det totala beloppet på de valda raderna.
-5. När du är klar med att välja transaktioner väljer du **Markera valda**. För varje vald transaktion visas en bockmarkering i kolumnen **Markerad**. Dessutom ökar eller minskar värdet på fältet **markerat belopp** ovanför rutnätet ökar eller minskar för att återspegla den totala mängden på de markerade raderna.
-6. När värdet i fältet **markerade belopp** är **0** (noll), välj **Kvitta markerade transaktioner**. Status för de markerade transaktionerna uppdateras till **Kvittad**.
-
-    > [!IMPORTANT]
-    > Alla transaktioner som du har markerat för kvittning för den aktiva juridiska personen kvittas, även om de inte visas på sidan Redovisningskvittning eftersom du har använt ett filter.
+3. Välj **Visa transaktioner** för att visa alla transaktioner som matchar de filter som du anger och listan över konton som du angav när du ställde in listan med kontoplanen i föregående avsnitt. Om du ändrar något av filtren eller dimensionsuppsättningarna måste du markera **Visa transaktioner** igen.
+4. Markera en eller flera rader som du beaktar för kvittning. Värdet på fältet **markerade belopp** längst upp på sidan höjs eller sänks med det totala beloppet på de rader som du har valt.
+5. När du är klar med att välja transaktioner väljer du **Markera valda**. En bockmarkering visas i kolumnen **Markerade** för varje transaktion som du markerade. Dessutom ökar eller minskar värdet på fältet **markerade belopp** ovanför rutnätet med det totala beloppet på de rader som du har markerat.
+6. När värdet **markerade belopp** är **0** (noll), välj **Kvitta markerade transaktioner**. Status för de markerade transaktionerna uppdateras till **Kvittad**.
 
 ## <a name="make-transactions-easier-to-find"></a>Göra det lättare att hitta transaktioner
-Sidan **Redovisningskvittningar** innehåller funktioner som gör det lättare att visa de transaktioner som behövs för kvittning.
 
-- Använd filtret **Markerade** låter dig filtrera transaktioner utifrån om kryssrutan **Markerade** har markerats för dem.
-- Använd filtret **Status** för att filtrera transaktioner utifrån deras status.
-- Välj **Sortera efter absolut belopp** om du vill sortera beloppen efter absolut värde. På det här sättet kan du gruppera debet- och kredit som har samma belopp.
+Sidan **Redovisningskvittningar** innehåller funktioner som gör det lättare att se de transaktioner som behövs för kvittning.
+
+- Knappen **Avmarkera valda** rensar fältet **Markerade** för alla rader som har valts.
+- Filtret **Markerade** låter dig filtrera transaktioner utifrån om fältet **Markerade** har markerats eller avmarkerats.
+- Filtret **Status** låter dig filtrera transaktioner baserat på om deras status är **Kvittat** eller **Inte kvittat**.
+- Knappen **Sortera efter absolut belopp** låter dig sortera beloppen efter absoluta värden, så att du kan gruppera debet och kredit som har samma belopp.
 
 ## <a name="reverse-a-settlement"></a>Återföra en kvittning
+
 Du kan återföra en kvittning som har gjorts av misstag.
 
-1. Följ stegen 1 till 3 i avsnittet [Kvitta transaktioner](#settle-transactions) för att visa de transaktioner som du är intresserad av.
+1. Följ steg 1 till 3 i avsnittet ”Kvitta transaktioner med sidan för avancerade redovisningskvittningar” för att visa transaktionerna som du letar efter.
 2. I fältet **Status** markerar du **Kvittad**.
-3. Markera rader för återföring.
-4. Välj **Återför markerade transaktioner**. Statusvärdet för alla transaktioner som har samma kvittnings-ID uppdateras till **Inte kvittad**.
+3. Markera en eller flera rader som du beaktar för återföring. Värdet på fältet **markerade belopp** längst upp på sidan höjs eller sänks med det totala beloppet på de rader som du har valt.
+4. När du är klar med att välja transaktioner väljer du **Markera valda**. En bockmarkering visas i kolumnen **Markerade** för varje transaktion som du markerade. Dessutom ökar eller minskar värdet på fältet **markerade belopp** längst upp på rutnätet med det totala beloppet på de rader som du har markerat.
+5. När värdet **markerade belopp** är **0** (noll), välj **Återför markerade transaktioner**. Status för de markerade transaktionerna uppdateras till **Inte kvittad**.
 
-    > [!IMPORTANT]
-    > Alla transaktioner som har samma kvittnings-ID återförs, även om de inte är markerade. Till exempel har fyra rader markerats och kvitterats. Alla fyra raderna har samma kvittnings-ID. Om du markerar en av dessa fyra rader och sedan väljer **Återföra markerade transaktioner** kommer alla fyra raderna att återföras.
+## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Uppdatera listan över konton som ingår i transaktionslistan
 
-
-
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Välj **Konton för redovisningskvittning** för att öppna en dialogruta där du kan redigera de konton som ingår i listan över transaktioner. Välj **Ny** om du vill lägga till en ny bild i listan. Listan används för att filtrera listan över transaktioner som visas på sidan **Redovisningskvittningar**.

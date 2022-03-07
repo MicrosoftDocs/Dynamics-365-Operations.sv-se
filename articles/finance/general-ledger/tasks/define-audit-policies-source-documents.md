@@ -2,11 +2,9 @@
 title: Definiera granskningspolicyer för källdokument
 description: I det här avsnittet visar vi hur du ställer in och kör granskningspolicyregler.
 author: panolte
-manager: AnnBe
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysPolicySourceDocumentRuleType, SysFieldLookUp, SysPolicyListPage, SysPolicy, AuditPolicyRule, SysQueryForm, SysQueryFieldLookUp, AuditPolicyDateSelection, AuditPolicyAdditionalOption, BatchJob, CaseDetail
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e020a9e82ff18055e40e3e0ddc7bbed1068c886c
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 0779589a3583909984e35014a2ec0e86455cd30a3833110556f095241e7172ca
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021439"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722681"
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Definiera granskningspolicyer för källdokument
 
@@ -41,9 +39,9 @@ I det här avsnittet visar vi hur du ställer in och kör granskningspolicyregle
 11. Välj **Ny**.
 12. Skriv ett värde i fältet **Namn**.
 13. Expandera avsnittet **Policyorganisationer**.
-14. Välj **Contoso Entertainment System USA** i trädet och välj **Lägg till**.
-15. Välj **Contoso Consulting USA** i trädet och välj **Lägg till**.
-16. Välj **Contoso Retail USA** i trädet och välj **Lägg till**.
+14. Välj i trädet **Contoso Entertainment System USA**, välj sedan **Lägg till**.
+15. I trädet, välj **Contoso Consulting USA**, välj sedan **Lägg till**.
+16. I trädet, välj **Contoso Retail USA**, välj sedan **Lägg till**.
 17. Komprimera avsnittet **Policyorganisationer**.
 18. Expandera avsnittet **Policyregler**.
 19. I listan söker du efter och väljer den policyregel som tidigare har skapats.
@@ -87,3 +85,6 @@ I det här avsnittet visar vi hur du ställer in och kör granskningspolicyregle
 57. Expandera avsnittet **Associationer**.
 58. Hitta och markera önskad post i listan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

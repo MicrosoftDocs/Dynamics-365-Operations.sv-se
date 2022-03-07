@@ -6,28 +6,29 @@ ms.topic: article
 ms.date: 07/23/2020
 ms.author: margoc
 ms.prod: ''
+ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 46302589ac5139ee6297aba26572225c0e392287
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: e13536f1d3393aea4d7a973b96d8eac57f666345
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402530"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5008190"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management"></a>Utbildningskatalog för Dynamics 365 Supply Chain Management
 
 Hitta rätt onlineutbildning, i personliga workshops och evenemang för din roll som användare av Dynamics 365 Supply Chain-app.
 
-<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
 :::row:::
     :::column:::
-<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
     ### <a name="business-and-technical-decision-makers"></a>Affärs- och tekniska beslutsfattare
 
@@ -88,11 +89,9 @@ Hitta rätt onlineutbildning, i personliga workshops och evenemang för din roll
 
     [Utbildningskatalog för administratörer](learning-catalog-administrator.md)
 
-    [Kom i gång](learning-catalog-administrator.md#get-started)
+    [Kom igång](learning-catalog-administrator.md#get-started)
 
     [Kunskap om huvudplattformen](learning-catalog-administrator.md#core-platform-knowledge)
-
-    [Supply Chain Management](learning-catalog-administrator.md#scm)
 
     [Core-utveckling](learning-catalog-administrator.md#core-development)
 
@@ -187,6 +186,3 @@ Hitta rätt onlineutbildning, i personliga workshops och evenemang för din roll
 
     :::column-end:::
 :::row-end:::
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

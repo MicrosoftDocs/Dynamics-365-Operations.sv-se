@@ -2,11 +2,9 @@
 title: " Definiera kanalattribut"
 description: Berika kanalen genom att lägga till kanal- och produktattribut.
 author: jashanno
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailInternalOrganization, EcoResAttributeGroup, EcoResAttributeGroupAttribute, RetailAddChannelItems, RetailCatalogProductAttributeValue, RetailMedia
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f50e925689f11f67285c956aec1a7ece235cdb74
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e99c59eba133427dad6d6a27a96b64f06621c932924293e3978d7f540e86153e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964705"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726417"
 ---
 # <a name="define-channel-attributes"></a> Definiera kanalattribut
 
@@ -32,7 +30,7 @@ Berika kanalen genom att lägga till kanal- och produktattribut. Du måste lägg
 
 ## <a name="define-channel-product-attribute"></a>Definiera kanalproduktattribut.
 1. Gå till Butik och handel > Kanalinställningar > Kanalkategorier och produktattribut.
-2. I trädet, välj Contoso Retail\Fashion\Houston.
+2. I trädet, välj 'Contoso Retail\Fashion\Houston'.
 3. Klicka på Redigera.
 4. I fältet Kategorihierarki, ange eller välj ett värde.
     * Navigeringshierarkin används för att navigera produkten inuti dina kanaler.  
@@ -71,3 +69,6 @@ Berika kanalen genom att lägga till kanal- och produktattribut. Du måste lägg
 33. Klicka på OK.
 34. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

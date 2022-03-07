@@ -2,26 +2,23 @@
 title: Lagringsbegränsningsplats
 description: I det här avsnittet beskrivs funktionerna för lagerplatsgränser.
 author: perlynne
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 208662f38b06b1f230bdde5247946a9fefd57cea
-ms.sourcegitcommit: d2dea9ce480f35d0c0b10615c18862695e107d55
+ms.openlocfilehash: b9fb3c35f2f2e0fd7c0e3afe132efb4c51f163a9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "4607289"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831276"
 ---
 # <a name="location-stocking-limits"></a>Lagringsbegränsningsplats
 
@@ -84,7 +81,7 @@ I det här exemplet ska du köra ett flöde för inköpsorder mottagning för tv
 
 Du får först en kvantitet på *4* av enhet *PL* i storleken *S*, och sedan granska placeringsrad platserna för det arbete som skapas. Du får sen en kvantitet på *4* av enhet *PL* i storleken *L*, och sedan granska placeringsrad platserna för det arbete som skapas.
 
-1. I distributionslagerappen, logga in med *24* som användar-ID och *1* som lösenord.
+1. I mobilappen för distributionslagerhantering, logga in med *24* som användar-ID och *1* som lösenord.
 1. Välj **inkommande** \> **inleverans av inköp**.
 1. Ta emot *4* *PL* av artikelnummer *D0013* i storlek *S*.
 1. Granska det artikelinförselarbete som har skapats. Du bör se följande resultat:
@@ -104,3 +101,6 @@ För att förklara felet måste du förstå urvalskriterierna för platsens lage
 
 > [!NOTE]
 > Du kan inte använda platslagergränser för att t.ex. styra påfyllningen av artiklar som har olika kvantiteter på samma plats. Använd i så fall en *återanskaffningsmall*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

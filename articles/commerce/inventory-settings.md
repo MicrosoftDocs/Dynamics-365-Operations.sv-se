@@ -2,15 +2,12 @@
 title: Använd lagerinställningar
 description: Det här avsnittet behandlar lagerinställningar och beskriver hur du använder dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dfa8b2bdc03e3698feda26932db757421097140d
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: ae0195f63b123a345b0cdcd4976bfd25b3b3d6d9
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517074"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019089"
 ---
 # <a name="apply-inventory-settings"></a>Använd lagerinställningar
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Det här avsnittet behandlar lagerinställningar och beskriver hur du använder dem i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 Lagerinställningarna anger om lagret ska kontrolleras innan produkter läggs till i vagnen. De definierar också lagerrelaterade marknadsföringsmeddelanden, t.ex. "i lagret" och "bara några få kvar". Dessa inställningar garanterar att en produkt inte kan köpas om den inte är i lager.
 
@@ -44,12 +40,17 @@ I Commerce webbplatsskaparen kan lagertrösklar och intervall definieras för en
 
 ## <a name="inventory-settings"></a>Lagerinställningar
 
-I Commerce, lagerinställningar definieras på **Platsinställningar \> Tillägg \> Lagerhantering** i webbplatsskaparen. Det finns fyra lagerinställningar, varav en är föråldrad (inaktuell):
+I Commerce, lagerinställningar definieras på **Platsinställningar \> Tillägg \> Lagerhantering** i webbplatsskaparen. Det finns fem lagerinställningar, varav en är föråldrad (inaktuell):
 
 - **Aktivera lagerkontroll i appen** – Den här inställningen aktiverar en produklagerkontroll. När du köper kartongen, kundvagnen och hämtningen i butiksmoduler kontrolleras produktlagret och då kan en produkt bara läggas till i kundvagnen om det finns tillgängligt lager.
 - **Lagernivå baserad på** – den här inställningen definierar hur lagernivåer beräknas. De tillgängliga värdena är **Total tillgänglig**, **fysiskt tillgänglig** och **tröskel för utanför lagret**. I Commerce, lagertrösklar och intervall definieras för en varje produkt och kategori. Lager-API:erna returnerar produktinformation för båda egenskap **Total tillgänglig** och egenskap **Fysisk tillgänglig**. Återförsäljaren bestämmer om det **totala tillgängliga** eller **fysiskt tillgängliga** värdet ska användas för att fastställa lagerinventeringen och motsvarande intervall för status som lager och inte artiklar.
 
-    Värdet **tröskel för utanför lagret** för inställning **Lagernivå baserad på** är ett gammalt (äldre) föråldrat värde. När lagerinventeringen väljs bestäms resultatet av det **totala tillgängliga** värdet, men tröskeln definieras av **inställningen för frånvaro av lagertröskel** som beskrivs senare. Den här tröskelinställningen gäller för alla produkter på en näthandelsplats. Om lagret är lägre än tröskelnumret anses en produkt vara utanför lagret. I annat fall betraktas det som i lager. Möjligheterna för **tröskelvärdet för frånvaro** är begränsade och vi rekommenderar inte att du använder det i version 10.0.12 och senare.
+    Värdet **tröskel för utanför lagret** för inställning **Lagernivå baserad på** är ett gammalt (äldre) föråldrat värde. När lagerinventeringen väljs bestäms resultatet av det **totala tillgängliga** värdet, men tröskeln definieras av **inställningen för frånvaro av lagertröskel** som beskrivs senare. Den här tröskelinställningen gäller för alla produkter på en näthandelssajt. Om lagret är lägre än tröskelnumret anses en produkt vara utanför lagret. I annat fall betraktas det som i lager. Möjligheterna för **tröskelvärdet för frånvaro** är begränsade och vi rekommenderar inte att du använder det i version 10.0.12 och senare.
+
+- **Lagernivå för flera lagerställen** – Med den här inställningen kan lagernivån beräknas mot standardlagerstället eller flera lagerställen. Alternativet **Baserat på enskilda lagerställen** beräknar lagernivåer baserat på standardlagerstället. Alternativt kan en näthandelsplats peka på flera lagerställen i syfte att underlätta uppfyllelsen. I sådana fall används alternativet **Baserat på aggregering för leverans- och upphämtningslagerställen** för att ange lagertillgänglighet. När en kund till exempel köper in en artikel och väljer "leverans" som leveransläge kan artikeln skeppas från valfritt lagerställe i uppfyllelsegruppen som har tillgängligt lager. På sidan för produktinformation (PDP) visas ett "I lager"-meddelande för leverans om något tillgängligt leveranslager i uppfyllelsegruppen har lager. 
+
+> [!IMPORTANT] 
+> Inställningen **Lagernivån för flera lagerställen** är tillgänglig i version 10.0.19 av Commerce. Om du uppdaterar från en äldre version av Commerce måste du uppdatera filen appsettings.json manuellt. För instruktioner, se [SDK- och modulbiblioteksuppdateringar](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 - **Lagerområden** – med den här inställningen definieras de lagerintervall som meddelandet visas för i moduler. Den gäller bara om antingen värdet **totala tillgängliga** eller det **fysiska tillgängliga värdet** har valts för inställning **lagernivån baserat på**. De tillgängliga värdena är **alla**, **låg och ur lagret** och inte **på lagret**.
 
@@ -66,15 +67,15 @@ I Commerce, lagerinställningar definieras på **Platsinställningar \> Tillägg
 
 Ikonmodulerna inköpsruta, önskelista, butiksväljare, kundvagn och kundvagnsikon använder lagerinställningar för att visa lagerområden och meddelanden.
 
-Följande bild visar ett exempel på en sida med produktinformation (PDP) som visar ett meddelandet "tillgängligt".
+I exemplet i följande illustration visar en PDP ett meddelande om "I lager" ("Tillgänglig").
 
 ![Exempel på en PDP-modul som har ett upplagratmeddelande](./media/pdp-InStock.png)
 
-Följande bild visar ett exempel på en PDP som visar meddelandet "Ej i lager".
+I exemplet i följande illustration visar en PDP ett meddelande om "Ej i lager".
 
 ![Exempel på en PDP-modul som har ett ej i lager-meddelande](./media/pdp-outofstock.png)
 
-Följande bild visar ett exempel på en kundvagn som visar meddelandet i lager (tillgänglig).
+I exemplet i följande illustration visar en kundvagn ett meddelande om "I lager" ("Tillgänglig").
 
 ![Exempel på en kundvagnmodul som har ett upplagratmeddelande](./media/cart-instock.png)
 
@@ -93,3 +94,6 @@ Följande bild visar ett exempel på en kundvagn som visar meddelandet i lager (
 [Modul för butiksväljare](store-selector.md)
 
 [Uppdateringar av SDK och modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

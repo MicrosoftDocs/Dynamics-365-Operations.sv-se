@@ -2,11 +2,13 @@
 title: Hantera leasing med ramverket för import av leasing
 description: I det här ämnet beskrivs hur du använder importramverket för leasing för att justera flera leasingar samtidigt.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeaseLeaseImportHeader
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 534584a7da494b427d48b1bc97bf6554d25f4a79d9d62f59ec5f2afb65e67431
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7df2f55f596cab54315c2da2ec0492422514f49c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758907"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971313"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>Hantera leasing med ramverket för import av leasing
 
@@ -51,9 +53,9 @@ Om du vill visa mellanlagringsdata för leasing innan bearbetningen körs välje
 Med jämförelsefunktionen kan du jämföra en post som du importerar med motsvarande post som redan finns i systemet. Om du vill jämföra en enskild leasingpost väljer du en leasing lån och väljer sedan **Jämför**. Du bör slutföra det här steget för att generera en **Skillnader**-rapport innan du migrerar leasingposterna. Jämförelsefunktionen jämför värdena i dina mellanlagringsdata med värden för de leasingar som för närvarande finns i systemet.
 
 > [!NOTE]
-> Jämförelsefunktionen fungerar inte för leasingar som har processtypen **Lägg till post**, detta eftersom det inte finns något att jämföra denna leasing med.
+> Jämförelsefunktionen fungerar inte för leasingar som har processtypen **Lägg till post** eftersom det inte finns något att jämföra med denna leasing.
 >
-> Om du vill jämföra flera leasingar samtidigt kan du gå till **Leasing av tillgångar \> Ramverk för import av leasing \> Periodisk** och välja **Jämför**.
+> Om du vill jämföra flera leasingar samtidigt kan du gå till **Leasing av tillgångar \> Ramverk för import av leasing \> Periodisk \> Jämför** och välja **Jämför**.
 
 För varje entitet kan du visa skillnaderna mellan vad som finns i systemet och vad som finns i mellanlagringstabellerna. Välj **Visa skillnader** för varje entitet i mellanlagringstabellerna. Dialogrutan som visas visar det aktuella värdet och det föreslagna mellanlagringsvärdet.
 
@@ -62,17 +64,17 @@ Du kan också uppdatera ditt mellanlagringsvärde genom att ändra det i kolumne
 Du kan validera leasingar för att säkerställa att posterna kan föras in i systemet utan att några fel uppstår. Innan en leasingpost migreras kör systemet flera valideringar för att kontrollera att posten kommer att importeras utan problem. Om du vill validera en enskild leasing väljer du **Validera**.
 
 > [!NOTE]
-> Om du vill validera flera leasingar samtidigt kan du gå till **LEasing av tillgångar \> Ramverk för import av leasing \> Periodisk** och välja **Validera**.
+> Om du vill validera flera leasingar samtidigt kan du gå till **Leasing av tillgångar \> Ramverk för import av leasing \> Periodisk \> Validera** och välja **Jämför**.
 
 Om du vill bearbeta en enskild leasing väljer du **Migrera leasingposter** på sidan **Importhuvud**. När en leasing migreras utför systemet den åtgärd som anges i fältet **Processtyp**.
 
 > [!NOTE]
-> Om du vill migrera flera leasingar samtidigt kan du gå till **Leasing av tillgångar \> Ramverk för import av leasing \> Periodisk** och välja **Migrera**.
+> Om du vill validera flera leasingar samtidigt kan du gå till **Leasing av tillgångar \> Ramverk för import av leasing \> Periodisk \> Validera** och välja **Jämför**.
 
 När leasingarna jämförs kan du köra en rapport för att visa skillnaderna för varje leasing som ingår i import-ID:t. Om du vill köra rapporten för en leasing lån väljer du denna leasing i mellanlagringsdata och väljer sedan **Jämför och visa rapport \> Rapporten Skillnader**.
 
 > [!NOTE]
-> Om du vill jämföra flera leasingar samtidigt kan du gå till **Leasing av tillgångar \> Ramverk för import av leasing \> Periodisk** och välja **Jämför**. 
+> Om du vill validera flera leasingar samtidigt kan du gå till **Leasing av tillgångar \> Förfrågningar och rapporter \> Rapporten Skillnader** och välja **Jämför**.
 
 ## <a name="set-up-update-fields"></a>Konfigurera uppdateringsfält
 
@@ -80,6 +82,3 @@ Om du använder ramverket för import av leasing för att uppdatera leasingar oc
 
 1. Gå till **Leasing av tillgångar \> Ramverk för import av leasing \> Konfigurera \> Välj fält att uppdatera**.
 2. Välj de fält som ska uppdateras på sidan som visas och välj sedan den gröna pilen för att flytta dem till listan **Valda fält**. Endast fält i listan **Valda fält** kan uppdateras med hjälp av importsviten för leasing.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

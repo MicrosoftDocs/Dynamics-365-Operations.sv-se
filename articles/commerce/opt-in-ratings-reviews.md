@@ -2,9 +2,11 @@
 title: Välj att använda omdömen och recensioner
 description: Det här avsnittet innehåller information om hur du väljer att använda värderingar och recensioner på din Microsoft Dynamics 365 Commerce-webbplats.
 author: gvrmohanreddy
-ms.date: 02/16/2020
+manager: annbe
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,18 +17,20 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 19c3e8b32654f7c4b7803c547e9d5692f9fc461b
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: 6c54a8fa01badb6a383c41dc979e71d82a25ef97
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311939"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251245"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Välj att använda omdömen och recensioner
 
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet innehåller information om hur du väljer att använda värderingar och recensioner på din Microsoft Dynamics 365 Commerce-webbplats.
+
+## <a name="overview"></a>Översikt
 
 Klassificerings- och granskningslösningen är en flerkanalslösning som du kan göra tillgänglig i Dynamics 365 Commerce genom att använda Microsoft Dynamics Lifecycle Services (LCS). LCS är en administrationsportal som används av detaljhandlare för att hantera sina miljöer från etablering till avställning.
 
@@ -39,9 +43,9 @@ Om du vill använda värderingar och recensioner på webbplatsen följer du steg
 1. Följ stegen i [distribuera en ny näthandelssajt](deploy-ecommerce-site.md).
 1. När du fortfarande är i LCS går du till **Inställning av butiksdistribution \> Övriga inställningar**.
 1. Ange alternativet **tjänsten aktivera klassificering och granska** till **Ja**.
-1. I fältet **AAD-säkerhetsgruppen för moderator för omdömen och recensioner** ange ID för den Microsoft Azure Active Directory (Azure AD) äkerhetsgrupp som inkluderar moderatorer för omdömen och recensioner.
+1. I fältet **AAD-säkerhetsgruppen för moderator för omdömen och recensioner (ojekt-ID för säkerhetsgrupp)** ange ID för den Microsoft Azure Active Directory (Azure AD) äkerhetsgrupp som inkluderar moderatorer för omdömen och recensioner.
 
-    ![Välj för att använda omdömen och recensioner.](media/LCS_RnR_Preference_2.png)
+    ![Välj att använda omdömen och recensioner](media/LCS_RnR_Preference.png)
 
 1. Slutför initieringsprocessen för näthandel.
 
@@ -58,13 +62,7 @@ Om du vill använda värderingar och recensioner på webbplatsen följer du steg
 
 [Synkronisera produktklassificeringar i Dynamics 365 Commerce](sync-product-ratings.md)
 
-[Aktivera manuell publicering av omdömen och recensioner genom en moderator](manual-publish-rating-reviews.md)
 
-[Importera och exportera värderingar och granskningar](import-export-reviews.md)
-
-[Konfigurera tjänst-till-tjänst-autentisering](service-to-service-auth.md)
-
-[Vanliga frågor och svar om omdömen och recensioner](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

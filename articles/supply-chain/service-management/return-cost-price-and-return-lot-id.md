@@ -2,11 +2,9 @@
 title: Retursjälvkostnad och returparti-ID
 description: Vill du eventuellt att kostnaden för de returnerade produkterna lika med kostnaden för produkter som vid den tidpunkt då du sålde produkter till kunden. Det gör du med hjälp av **returparti-ID**.
 author: ShylaThompson
-manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnInventTransIdLookup, ReturnItemNumLookup
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eff30383e06677793313e8abac0339c6032c2a7f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 86e048139da28c04c9f5ca03d71f92e5a7e60652
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965840"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836000"
 ---
 # <a name="return-cost-price-and-return-lot-id"></a>Retursjälvkostnad och returparti-ID        
 
@@ -111,3 +109,6 @@ När du använder fältet **returparti-ID** på en returorderrad för att ange r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

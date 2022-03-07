@@ -2,9 +2,11 @@
 title: Avancerade automatiska avgifter för flera kanaler
 description: Det här avsnittet beskriver funktionerna för hantering av ytterligare avgifter för beställningar i handelskanal med hjälp av funktioner för avancerade automatiska avgifter.
 author: hhaines
+manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ef6396ec66a0f96ba97b176c46bf70d83a080883cf496312398f14dce3ad9758
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b7a309cc9e8901aa50e1d4ea3be6ee37d9fc5450
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743441"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5244945"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerade automatiska avgifter för flera kanaler
 
@@ -29,9 +31,9 @@ ms.locfileid: "6743441"
 
 Det här avsnittet innehåller information om konfiguration och distribution av funktionen för avancerade automatiska avgifter som är tillgängliga i Dynamics 365 for Retail version 10.0.
 
-När avancerade funktioner för automatiska avgifter är aktiverade stöds order som har skapats i någon handelskanal (kassa, kundtjänst och online), kan utnyttja den [automatisk debitering](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurationer som fastställs i ERP-programmet för både huvud- och relaterade avgifter på radnivå.
+När avancerade funktioner för automatiska avgifter är aktiverade stöds order som har skapats i någon handelskanal (kassa, kundtjänst och online), kan utnyttja den [automatisk debitering](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurationer som fastställs i ERP-programmet för både huvud- och relaterade avgifter på radnivå.
 
-I versioner före Retail version 10.0 [automatiska avgifter](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) endast tillgängliga för order som har skapats i näthandels- och kundtjänstkanaler. I versioner 10.0 och senare kan kassaskapade order utnyttja konfigurationer av automatiska avgifter. På så sätt kan ytterligare avgifter systematiskt läggas på försäljningstransaktioner.
+I versioner före Retail version 10.0 [automatiska avgifter](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) endast tillgängliga för order som har skapats i näthandels- och kundtjänstkanaler. I versioner 10.0 och senare kan kassaskapade order utnyttja konfigurationer av automatiska avgifter. På så sätt kan ytterligare avgifter systematiskt läggas på försäljningstransaktioner.
 
 När du använder versioner före version 10.0 uppmanas POS-användare att manuellt ange en leverans avgift när skapas fartygets ”alla” eller ”skicka valda” POS-transaktionen. När funktionerna för diverse avgifter i programmet används i förhållande till hur avgifterna skrivs till ordern, ges inte någon systematisk beräkning – beräkningen är beroende av användarens indata för att bestämma värdet på avgifterna. Avgifterna endast läggas till som en enda ”leverans”-relaterad kod och enkelt redigeras eller ändras när de har skapats i POS.
 
@@ -39,11 +41,11 @@ Manuella anvisningar för att lägga till leveransavgifter används fortfarande 
 
 Med funktionen för avancerade automatiska avgifter kan kassaanvändare ha systematiska beräkningar för alla definierade diverse avgifter baserat på inställningstabeller för automatiska avgifter. Dessutom kan har användare möjlighet att lägga till eller redigera ett obegränsat antal ytterligare debiteringar och avgifter till en försäljningstransaktion i kassa i rubrik eller radnivå (för en hämtköp eller kundorder).
 
-## <a name="enable-advanced-auto-charges"></a>Aktivera avancerade automatiska avgifter
+## <a name="enabling-advanced-auto-charges"></a>Aktivera avancerade automatiska avgifter
 
 På sidan **Butik och handel \> Administrationsinställning \> Parametrar \> Commercesparametrar**, gå till fliken **kundorder**. På snabbfliken **Avgifter**, ange **Använd avancerade automatiska avgifter** till **Ja**.
 
-![Avancerade parametrar för automatiska debiteringar.](media/advancedchargesparameter.png)
+![Parametrar för avancerade automatiska avgifter](media/advancedchargesparameter.png)
 
 När avancerad automatiska avgifter aktiveras uppmanas användare inte längre att manuellt ange en fraktkostnad vid kassaterminalen när man skapar en leverera alla eller leverera utvalda kundorder. Kassans orderavgifter beräknas systematiskt och läggs till kassatransaktionen (om det finns en motsvarande tabell för automatiska avgifter som matchar kriteriet om ordern som skapats). Användare kan också lägga till eller underhålla sidhuvud eller radnivå tillägg manuellt via tillagda kassaoperationer som kan läggas till kassaskärmens layout.
 
@@ -51,9 +53,9 @@ När avancerade automatiska tillägg är aktiverade kommer befintliga **handelsp
 
 Innan du aktiverar den här funktionen, kontrollera att du har testat och utbildad personal, eftersom den aktiverade funktionen ändrar affärsprocessflödet för hur frakt och andra avgifter beräknas och läggs till försäljningsorder från POS. Kontrollera att du förstår effekten av processflödet för att skapa transaktioner från POS. För kundtjänst och näthandel är effekterna av att aktivera avancerade automatiska tillägg minimal. Kundtjänst och näthandelsprogram fortsätter att ha samma sätt som de tidigare har haft relaterade till register för automatiska avgifter för att beräkna ytterligare avgifter. Användare av kundtjänstkanal kommer även fortsättningsvis ha möjlighet att manuellt redigera beräknade automatiska avgifter på rubrik- eller radnivå eller lägga till ytterligare tillägg manuellt på rubrik- eller radnivå.
 
-## <a name="add-pos-operations"></a>Lägga till kassaåtgärder
+## <a name="additional-pos-operations"></a>Ytterligare kassaåtgärder
 
-För att avancerade automatiska avgifter ska fungera korrekt i din kassaapplikationsmiljö, har nya kassaåtgärder lagts till. Dessa åtgärder måste du lägga till dina [kassaskärmlayouter](/dynamics365/unified-operations/retail/pos-screen-layouts) och distribuera till kassaenheter när du distribuerar avancerade automatiska avgifter. Om dessa åtgärder inte läggs till kan användare inte hantera eller underhålla diverse avgifter för kassatransaktioner och har inget sätt att justera eller ändra tilläggsvärden som systematiskt beräknas utifrån konfigurationer av automatiska avgifter. Vi rekommenderar åtminstone att du distribuerar åtgärden **Hantera avgifter** i kassalayouten.
+För att avancerade automatiska avgifter ska fungera korrekt i din kassaapplikationsmiljö, har nya kassaåtgärder lagts till. Dessa åtgärder måste du lägga till dina [kassaskärmlayouter](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) och distribuera till kassaenheter när du distribuerar avancerade automatiska avgifter. Om dessa åtgärder inte läggs till kan användare inte hantera eller underhålla diverse avgifter för kassatransaktioner och har inget sätt att justera eller ändra tilläggsvärden som systematiskt beräknas utifrån konfigurationer av automatiska avgifter. Vi rekommenderar åtminstone att du distribuerar åtgärden **Hantera avgifter** i kassalayouten.
 
 Följande nya åtgärder finns.
 
@@ -74,7 +76,7 @@ I det här avsnittet visas exempel på användningsfall som hjälper dig att fö
 
 #### <a name="use-case-scenario"></a>Använd fallstudie
 
-En återförsäljare vill automatiskt lägga till avgifter för frakt när transaktioner skapas i någon handelskanal som kräver en leverans av varor till kunden. Återförsäljaren erbjuder två leveransmetoder: mark och luft. Om en kund väljer markleverans och ordervärdet är mindre än $100, vill återförsäljaren debitera kunden en fraktavgift på $10,00. Om kunden väljer markleverans och ordern är över 100 dollar debiteras kunden inte några ytterligare fraktavgifter. Om kunden väljer flygleveranssätt för alla order, oavsett deras totala värde debiteras en avgift för frakt på $20,00.
+En återförsäljare vill automatiskt lägga till avgifter för frakt när transaktioner skapas i någon handelskanal som kräver en leverans av varor till kunden. Återförsäljaren erbjuder två leveransmetoder: mark och luft. Om en kund väljer markleverans och ordervärdet är mindre än $100, vill återförsäljaren debitera kunden en fraktavgift på $10,00. Om kunden väljer markleverans och ordern är över $100 debiteras kunden inte några ytterligare fraktavgifter. Om kunden väljer flygleveranssätt för alla order, oavsett deras totala värde debiteras en avgift för frakt på $20,00.
 
 #### <a name="setup-and-configuration"></a>Installation och konfiguration
 
@@ -86,7 +88,7 @@ Konfigurera två olika automatiska avgifter på huvudnivå. Konfigurera en för 
 
 För markleverans, i radavsnittet på sidan **automatiska avgifter** kan du definiera ett tillägg som ska användas för order mellan $,01- och $100 som $10,00. Skapa en annan avgiftsrad för att ange att order under $100,01 inte har avgifter.
 
-![Exempel på tabeller med två automatiska debiteringar.](media/headerchargesexample.png)
+![Exempel på tabeller med två automatiska debiteringar](media/headerchargesexample.png)
 
 För luftsleverans, i radavsnittet på formuläret automatiska avgifter kan du definiera ett tillägg på $20,00 som ska användas för alla order (mellan $,01och $9 999 999).
 
@@ -116,7 +118,7 @@ Gå till **Kundreskontra \> Ställa in avgifter \> Automatiska avgifter**.
 
 Ange listrutan **nivå** till **rad** och skapa en ny post för automatiska avgifter för alla kunder och för en viss produkt eller produktgrupp där inställningsavgifter tas ut.
 
-![Exempel på tabell med automatiska debiteringar på enkel radnivå.](media/linechargesexample.png)
+![Exempel på tabell med automatiska debiteringar på en radnivå](media/linechargesexample.png)
 
 Skicka avgifterna till skalningsenhet för handel/Channel DB så att POS kan utnyttja dem genom att köra jobbet **1040 distributionsschema**.
 
@@ -136,13 +138,13 @@ En återförsäljare gör undantag från vanliga processer genom att erbjuda en 
 
 Kontrollera att avgiftskoden som används i det här scenariot har konfigurerats korrekt genom att gå till **kundreskontra \> inställningar av avgifter \> avgifter** för att definiera en lämplig avgiftskod för scenariot.
 
-![Exempel på debiteringar.](media/chargesexample.png)
+![Exempel på avgifter](media/chargesexample.png)
 
 Ange om avgiften ska betraktas som en ”frakt”-relaterad avgift för fraktrelaterade rabatter eller kampanjer, ange **leveransavgift** för avgiftskoden till **Ja**. Om denna avgift också kan återbetalas systematiskt under bearbetningen av en returtransaktion i kassaprogram ställer du in **Återbetalningsbar** till **Ja**. Flaggan **Återbetalningsbar** gäller endast när parameter **Använd avancerade automatiska avgifter** är inställd på **Ja**.
 
 Skicka avgifterna till skalningsenhet för handel/Channel DB så att POS kan utnyttja dem genom att köra jobbet **1040 distributionsschema**.
 
-Åtgärden **lägg till huvudavgift** måste konfigureras i din [kassaskärmlayout](/dynamics365/unified-operations/retail/pos-screen-layouts) så att en knapp som är tillgänglig för användaren från POS kan anropa åtgärden (åtgärd 141). Skärmens layoutändringar måste distribueras till kanalen samt via distributionsplanen.
+Åtgärden **lägg till huvudavgift** måste konfigureras i din [kassaskärmlayout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) så att en knapp som är tillgänglig för användaren från POS kan anropa åtgärden (åtgärd 141). Skärmens layoutändringar måste distribueras till kanalen samt via distributionsplanen.
 
 #### <a name="sales-processing-of-manual-header-charges"></a>Försäljningsprocesserna för manuella huvudavgifter
 
@@ -164,7 +166,7 @@ Ange om avgiften ska betraktas som en ”frakt”-relaterad avgift för fraktrel
 
 Skicka avgifterna till skalningsenhet för handel/Channel DB så att POS kan utnyttja dem genom att köra jobbet **1040 distributionsschema**.
 
-Åtgärden **lägg till radavgift** måste konfigureras i din [kassaskärmlayout](/dynamics365/unified-operations/retail/pos-screen-layouts) så att en knapp som är tillgänglig för användaren från POS kan anropa åtgärden (åtgärd 140). Skärmens layoutändringar måste distribueras till kanalen samt via distributionsplanen.
+Åtgärden **lägg till radavgift** måste konfigureras i din [kassaskärmlayout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) så att en knapp som är tillgänglig för användaren från POS kan anropa åtgärden (åtgärd 140). Skärmens layoutändringar måste distribueras till kanalen samt via distributionsplanen.
 
 #### <a name="sales-processing-of-the-manual-line-charge"></a>Försäljningsprocesserna för manuella radavgifter
 
@@ -176,7 +178,7 @@ Samma tillvägagångssätt kan användas i kundtjänst med funktionen ”Underh�
 
 ### <a name="editing-charges-on-a-pos-sales-transaction"></a>Redigera avgifter i en kassaförsäljningstransaktion
 
-Åtgärden **Hantera tillägg** (142) ska läggas till i [kassaskärmlayout](/dynamics365/unified-operations/retail/pos-screen-layouts) så att en användare kan visa och redigera eller åsidosätta eventuella systemberäknade eller manuellt skapade avgifter på huvud- eller radnivå. Om operationen inte läggs till kommer användaren inte att kunna justera värdet av avgifterna på kassatransaktionen, och inte heller kan de visa information om avgifter såsom typ av avgiftskod kopplad till avgiften.
+Åtgärden **Hantera tillägg** (142) ska läggas till i [kassaskärmlayout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) så att en användare kan visa och redigera eller åsidosätta eventuella systemberäknade eller manuellt skapade avgifter på huvud- eller radnivå. Om operationen inte läggs till kommer användaren inte att kunna justera värdet av avgifterna på kassatransaktionen, och inte heller kan de visa information om avgifter såsom typ av avgiftskod kopplad till avgiften.
 
 På sidan **Hantera avgifter** i POS kan användaren visa information om avgifter på både huvud- och radnivå. Användaren kan använda **redigera** som är tillgänglig på den här sidan för att ändra det belopp som debiteras en specifik avgiftsrad. När en avgiftsrad läggs till manuellt räknas den inte om systematiskt om inte användaren initierar åtgärden **beräkna om avgifter**.
 
@@ -197,7 +199,7 @@ Avgifter återbetalas inte systematiskt till **returorder** som skapats i handel
 Följande inleverans har lagts till inleveransraden och sidfoten för att stödja funktionen för avancerade automatiska avgifter.
 
 - **Leveransavgifter för rad** – Detta element på radnivå kan användas för att sammanfatta koder för särskilda avgifter som har kopplats till försäljningsraden. Endast avgiftskoder som har flaggats som **leverans**-avgifter på sidan **avgiftskoder** visas här.
-- **Övriga avgifter för rad** – Detta element på radnivå kan användas för alla icke leveransspecifika avgiftskoder som har kopplats till försäljningsraden. **Radens övriga avgifter** är avgiftskoder där flaggan **Leverans** på sidan **Avgiftskod** inte har aktiverats.
+- **Övriga avgifter för rad** – Detta element på radnivå kan användas för alla icke leveransspecifika avgiftskoder som har kopplats till försäljningsraden. Dessa är avgiftskoder där flaggan **leverans** på sidan den **avgiftskod** inte har aktiverats.
 - **Leveransavgiftsdetaljer för order** – Detta element på sidfotnivå visar beskrivningar av avgiftskoder som gäller för ordern som har flaggats som **leverans** på installationssidan **avgiftskod**.
 - **Leveransavgifter för order** – Detta element på sidfotnivå visar belopp för leveransrelaterade avgifter.
 - **Övriga leveransavgiftsdetaljer för order** – Detta element på sidfotnivå visar beskrivningar av avgiftskoder som gäller för ordern som inte har flaggats som leveransrelaterade avgifter.

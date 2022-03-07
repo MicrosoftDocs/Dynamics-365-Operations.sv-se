@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: b5f7342a997407c8701b836c2a6a6222d8512121
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 72273a125da2e6c4a2fc16b449cd5077f3d767df
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075004"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7548533"
 ---
 # <a name="create-and-invoice-an-intercompany-sales-order-for-an-external-customer"></a>Skapa och fakturera en koncernintern försäljningsorder för en extern kund
 
@@ -75,18 +75,5 @@ Utför de här stegen i juridisk person B. Den här proceduren motsvarar rutan m
 1. Välj försäljningsordern och klicka sedan på **OK**.
 
 Kundfakturan för den koncerninterna försäljningsordern bokförs automatiskt i juridisk person B. Den koncerninterna leverantörsfakturan skapas och bokförs sedan automatiskt i juridisk person A. Om den ursprungliga försäljningsordern har ställts in som en direktleverans skapas kundfakturan för den ursprungliga försäljningsordern i juridisk person A.
-
-> [!NOTE]
-> För koncerninterna försäljningsscenarier tidigare, om leverantörsfakturaarbetsflödet har konfigurerats i det koncerninterna inköpsföretaget, kan den koncerninterna försäljningsordern inte faktureras. Därför måste arbetsflödet för leverantörsfakturan stängas av för det koncerninterna inköpande företaget. 
-> 
-> Denna begränsning har fastställts av en ny funktion i version 10.0.25. Koncerninterna försäljningsorder kan nu faktureras när arbetsflödet för leverantörsfakturan konfigureras i det koncerninterna inköpande företaget.
-> 
-> Följ dessa steg om du vill aktivera denna funktion.
->
-> 1. Välj den juridiska personen i koncernintern försäljningsorder.  
-> 2. Gå till **Leverantörsreskontra \> Kunder \> Alla kunder**.
-> 3. Välj kund för det koncerninterna inköpande företaget.
-> 4. Gå till **Allmän \> Inställningar \> Koncernintern**.
-> 5. På fliken **Inköpsorderpolicyer**, välj parameter **Kringgå arbetsflöde för leverantörsfaktura för koncerninterna leverantörsfakturor**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

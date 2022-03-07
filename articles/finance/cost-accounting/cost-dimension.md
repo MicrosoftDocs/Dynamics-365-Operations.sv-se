@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6febb8a48cf6496fb7f4c2ee9f5281d47aa1ccae1a8ecc51c908b3810302e11c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9634612bcffbcf71b77dbb184e71367c67bac10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775132"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822937"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>Skapa dimensioner och importera dimensionsmedlemmar
 
@@ -36,7 +36,7 @@ Ett **Kostnadselement** motsvarar en kostnadsrelevant artikel i kontolistan. Ett
 
 Följande diagram illustrerar de dimensioner som används inom kostnadsredovisningen.
 
-[![Dimensioner i kostnadsredovisning.](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
+[![Dimensioner i kostnadsredovisning](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
 
 När datan väl har importerats till kostnadsredovisningen kan du använda den för att skapa olika perspektiv som ger insikter till chefer på alla organisationsnivåer. Mer information om hur du skapar dimensioner och importerar dimensionsmedlemmar finns i följande avsnitt: 
 

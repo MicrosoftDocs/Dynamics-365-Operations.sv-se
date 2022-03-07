@@ -2,23 +2,26 @@
 title: Översikt över redigeringssidan
 description: Det här ämnet innehåller en översikt över redigeringssidan i Microsoft Dynamics 365 Commerce.
 author: brendans
+manager: annbe
 ms.date: 10/31/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application USer
 ms.reviewer: v-chgri
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 68487c899edccaeff9c339d746d21b1d27b498aa
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 39d91857a9d1f0b1280a842b0a26578fbb561851
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984631"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989628"
 ---
 # <a name="authoring-page-overview"></a>Översikt över redigeringssidan
 
@@ -26,6 +29,8 @@ ms.locfileid: "7984631"
  [!include [banner](includes/banner.md)]
 
 Det här ämnet innehåller en översikt över redigeringssidan i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Översikt
 
 Webbplatser kan skapas för att stödja olika affärsbehov. De kan representera ett helt företag, erbjuda en enda affärskanal eller rikta en viss målgrupp eller ett specifikt segment till en målgrupp. En tillverkare av kläder kan till exempel ha en webbplats som visar alla varumärken som den äger. Samma tillverkare av kläder kan sedan ha en separat webbplats för vart och ett av dessa varumärken, och även en uppsättning webbplatser som innehåller lyxmodeartiklar, utomhusmode och barnkläder.
 
@@ -39,7 +44,7 @@ För närvarande består redigeringssidan av följande avsnitt.
 
 Illustrationen som följer visar redigeringssidan.
 
-![Redigeringssida för Dynamics 365 Commerce.](../commerce/media/authoring_tools_01.png)
+![Dynamics 365 Commerce redigeringssidan](../commerce/media/authoring_tools_01.png)
 
 ## <a name="use-the-home-button-to-select-a-tool"></a>Använd startknappen för att välja ett verktyg
 
@@ -116,6 +121,3 @@ När utvecklingsverktyget har lästs in kan du välja **Start** för att gå til
 [Språkinformation för sökmotoroptimering (SEO) för din webbplats](search-engine-optimization-considerations.md)
 
 [Hantera säkerhetspolicy för innehåll (CSP)](manage-csp.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

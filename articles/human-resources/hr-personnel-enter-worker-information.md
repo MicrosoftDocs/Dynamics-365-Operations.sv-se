@@ -2,28 +2,27 @@
 title: Ange arbetarinformation
 description: När en rekryterare har skapat ett massanställningsprojekt och genererat befattningar, är nästa steg att ange arbetarinformation för de personer som anställs.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: HRMMassHireProject, HRMMassHireLine, HcmPersonnelManagementWorkspace
+ms.search.form: HcmWorkerV2, HRMMassHireProject, HRMMassHireLine, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8d139b079c011b60af6d2b896e9edb5b9d27501a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cef2de88827ccf33dafe2152238e4fe96dfda1ae
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420551"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6056597"
 ---
 # <a name="enter-worker-information"></a>Ange arbetarinformation
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -45,3 +44,6 @@ När en rekryterare har skapat ett massanställningsprojekt och genererat befatt
 8. Avmarkera vald rad i listan.
     * Välj nästa projektbefattning och fortsätt ange information om arbetare för varje person som du anställer.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

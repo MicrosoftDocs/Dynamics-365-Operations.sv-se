@@ -1,27 +1,25 @@
 ---
 title: Övervaka försändelselagret med hjälp av leverantörssamarbete
 description: I den här proceduren visas hur du använder leverantörssamarbete om du vill visa information om lagernivån för den produkt som du har placerat i försändelse med en kund.
-author: RichardLuan
-manager: tfehr
+author: sherry-zheng
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, PurchVendorPortalConfirmedOrders, DefaultDashboard, ConsignmentVendorPortalOnhand
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: riluan
+ms.author: chuzheng
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f2e782bed4cd9f2f13e2ee45afffaef277279131
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 7cca89917148f782a67c80fc47ac1af0582c79d19337dd1093965c87a4c9a42e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020139"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755333"
 ---
 # <a name="monitor-consignment-inventory-using-vendor-collaboration"></a>Övervaka försändelselagret med hjälp av leverantörssamarbete
 
@@ -42,3 +40,6 @@ I den här proceduren visas hur du använder leverantörssamarbete om du vill vi
 1. Gå till Leverantörssamarbete > Försändelselager > Behållning i försändelselager.
     * Lagersidan för behållningsförsändelse (On-hand consignment inventory) visar det lager som du äger på kundens lagerställe. Du kan visa ytterligare dimensioner, till exempel plats och lagerställe, genom att klicka på fliken Display dimensions.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

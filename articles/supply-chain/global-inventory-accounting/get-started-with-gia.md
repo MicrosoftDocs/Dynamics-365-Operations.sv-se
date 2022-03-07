@@ -6,23 +6,21 @@ ms.date: 06/18/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: f5b3c013996253de75cd85c4bcfc52ed159e8f9d
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 59f9db309312bbbc88b4fa47c12c4c02f09e7c6d
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860519"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301708"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Kom i gång med Global lagerredovisning
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Global lagerredovisning låter dig utföra flera lagerredovisningar i de globala lagerredovisningar som du har skapat. Du kopplar varje redovisning med en Global lagerredovisning till en *konvention*. En konvention är en samling av följande typer av redovisningsprinciper:
 
@@ -43,7 +41,7 @@ Global lagerredovisning har för närvarande inte stöd för alla kostnadshanter
 > [!IMPORTANT]
 > Om du vill använda global lagerredovisning måste du ha en LCS-aktiverad miljö med hög tillgänglighet (inte en OneBox-miljö). Du måste dessutom köra Supply Chain Management version 10.0.19 eller senare.
 
-Om du vill registrera dig för offentlig förhandsgranskning av global lagerredovisning skickar du ditt LCS-miljö-ID med e-post till [Global lagerredovisning teamet](mailto:GlobalInvAccount@microsoft.com). När du har godkänts för programmet skickar teamet ett uppföljningsmeddelande med en nyckel för Global lagerredovisning och dina tjänsteslutpunkter. När du har fått nyckeln kan du [installera tillägget](#install).
+Om du vill registrera dig för offentlig förhandsgranskning av global lagerredovisning skickar du ditt LCS-miljö-ID med e-post till [Global lagerredovisning teamet](mailto:GlobalInventoryAccounting@service.microsoft.com). När du har godkänts för programmet skickar teamet ett uppföljningsmeddelande med en nyckel för Global lagerredovisning och dina tjänsteslutpunkter. När du har fått nyckeln kan du [installera tillägget](#install).
 
 ## <a name="licensing"></a>Licensiering
 
@@ -61,7 +59,7 @@ Innan du kan aktivera tilläggsfunktionen måste du integrera Microsoft Power Pl
 1. Markera kryssrutan i dialogrutan **Inställning av Power platform miljö** och välj sedan **Inställningar**. Normalt tar inställningen mellan 60 och 90 minuter.
 1. När inställningen av Microsoft Power Platform miljön är klar, visar sidan namnet på din miljö. Dessutom visar avsnittet **Power Platform-integration** visar instruktionen, "Power Platform miljöinställningen är klar." Global lagerredovisning behöver inte ha något program för global lagerredovisning.
 
-Mer information finns i [Aktivera efter utveckling av miljön](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
+Mer information finns i [Ställ in efter utveckling av miljön](../../fin-ops-core/dev-itpro/power-platform/overview.md#set-up-after-environment-deployment).
 
 ### <a name="set-up-dataverse"></a>Ställ in Dataverse
 

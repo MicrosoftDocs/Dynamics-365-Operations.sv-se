@@ -11,24 +11,23 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5adcb666f35426f2fed545813d81ddb9b1034f1d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459959"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5238242"
 ---
 # <a name="recognize-deferred-revenue"></a>Redovisa uppskjuten intäkt
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Intäktsredovisningsfunktionen kan inte slås på via funktionshantering. För närvarande måste du använda konfigurationsnycklar för att slå på den.
+> Intäktsredovisningsfunktionen kan inte aktiveras via funktionshantering. För närvarande måste du använda konfigurationsnycklar för att aktivera den.
 
 I det här avsnittet beskrivs hur intäkter redovisas i intäktsplanen. När en faktura har bokförts för en försäljningsorder skapas en intäktsredovisningsplan för varje försäljningsorderrad som har en intäktsplan. Intäktsplaner på en rad används för att bestämma om radens intäkt ska skjutas upp eller inte.
 
@@ -39,7 +38,7 @@ Det finns två sätt att visa detaljer i intäktsredovisningsplanen.
 - Du kan öppna intäktsredovisningsplanen direkt från en fakturerad försäljningsorder. I det här fallet filtreras informationen i intäktsplanen så att bara information om den valda försäljningsordern visas. Den här metoden är användbar när du validerar detaljer i planen för en försäljningsorder.
 - Du kan öppna intäktsredovisningsplanen från sidan **Intäktsredovisning \> Periodiska uppgifter**. Den här metoden används ofta när intäkten redovisas i slutet av en period. När sidan öppnas för första gången visas ingen information. Du använder filtren ovanför rutnätet för att definiera kriterier för den planinformation som ska visas. Du kan filtrera efter fakturadatum genom att ange ett datumintervall eller efter försäljningsorder, kund, projekt-ID eller tillstånd.
 
-[![Sidan Intäktsplaner](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
+[![Illustration på sidan Intäktsplaner](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
 
 På snabbfliken **Ekonomisk dimension** under rutnätet visas försäljningsorderradens ekonomiska dimensioner. Dessa dimensioner övervägdes under bokföringen av uppskjuten intäkt. De beaktas också när intäkten redovisas. Vilka dimensionsvärden som används beror på den kontostruktur som tilldelats huvudkontona för intäkt och uppskjuten intäkt.
 
@@ -109,3 +108,6 @@ Om du vill ändra planen markerar du en rad i planen för den artikel du ändrar
 - Om intäkt har redovisats för produkten, redovisades en del intäkter felaktigt eftersom redovisningen baseras på fel intäktsplan. Dessa rader måste återföras och redovisas på nytt, baserat på den nya planen. I det här scenariot skapas nya intäktsplansrader med negativa belopp på det ursprungliga redovisningsdatumet. Sedan skapas nya rader som redovisar belopp baserat på den nya intäktsplanen. Exempel: Den 8 augusti 2019 redovisade du intäkter på 10,53 USD. Den 8 september 2019 redovisade du intäkter på 13,16 USD. Därför skapas två nya rader på samma datum. En rad på -10,53 USD och en annan på -13,16 USD. 24 nya rader skapas sedan och den totala uppskjutna intäkten på 160,61 USD fördelas mellan dem. Du kan bokföra återföringsraderna genom att köra processen **Skapa journal**.
 
 [![Intäktsredovisningsplan](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

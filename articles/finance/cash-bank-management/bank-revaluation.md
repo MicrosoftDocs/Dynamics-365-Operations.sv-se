@@ -1,7 +1,7 @@
 ---
 title: Bank – omräkning i utländsk valuta
 description: Det här avsnittet innehåller en översikt över processen för bank – omräkning i utländsk valuta. Den innehåller information om inställningar, köra processen, beräkningen för processen och återföring av ombedömningstransaktioner.
-author: roschlom
+author: mikefalkner
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3df6a22e06abbfa75a12ffddac242dd34f5beba5
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 706b47afe6cf51f8cf8cd612b579bb8d20083d02
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754130"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830554"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bank – omräkning i utländsk valuta
 

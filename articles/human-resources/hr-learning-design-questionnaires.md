@@ -1,33 +1,35 @@
 ---
-title: Utforma enkäter
-description: Den här artikeln beskriver processen för att skapa en enkät. Det första steget är att utforma enkäten. Om du utformar en enkät skapar du inte bara frågorna och svaren, utan även strukturen som gör det möjligt att registrera och ordna svar i tabeller.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+title: Skapa enkäter
+description: Det här avsnittet beskriver processen för att skapa en enkät.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 90dd59b605c21abd03d2e0d64a89dc787850c26e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420653"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065211"
 ---
-# <a name="design-questionnaires"></a>Utforma enkäter
+# <a name="create-questionnaires"></a>Skapa enkäter
 
-Den här artikeln beskriver processen för att skapa en enkät. Det första steget är att utforma enkäten. Om du utformar en enkät skapar du inte bara frågorna och svaren, utan även strukturen som gör det möjligt att registrera och ordna svar i tabeller. 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Det här avsnittet beskriver processen för att skapa en enkät. Det första steget är att utforma enkäten. Om du utformar en enkät skapar du inte bara frågorna och svaren, utan även strukturen som gör det möjligt att registrera och ordna svar i tabeller. 
 
 En noggrant utformad enkät ökar kvaliteten på informationen som du samlar in. Med noggrann utformning är det lättare att du välja lämpliga alternativ vid en lämplig tidpunkt för en enkät. Följande punkter kan hjälpa dig att planera en effektiv enkät:
 
@@ -64,7 +66,7 @@ Vissa förutsättningar måste vara finnas innan du kan skapa enkäter, frågor 
 
 ### <a name="questionnaire-types"></a>Enkättyper
 
-Enkättyper krävs och måste ha tilldelats när du skapar en enkät. Enkättyper hjälpa dig att hantera och klassificera enkäter enklare. Använd enkättyper för att klassificera enkäter och skilja dem från varandra. Om du till exempel har flera enkäter att välja bland, kan du filtrera dem efter typ för att göra det enklare att hitta en viss enkät. Här följer några exempel på enkättyper:
+**Enkättyper** krävs och måste ha tilldelats när du skapar en enkät. **Enkättyper** hjälpa dig att hantera och klassificera enkäter enklare. Använd enkättyper för att klassificera enkäter och skilja dem från varandra. Om du till exempel har flera enkäter att välja bland, kan du filtrera dem efter typ för att göra det enklare att hitta en viss enkät. Här följer några exempel på enkättyper:
 
 -   Personalutveckling
 -   Kundenkäter
@@ -72,9 +74,9 @@ Enkättyper krävs och måste ha tilldelats när du skapar en enkät. Enkättype
 
 ### <a name="question-types"></a>Frågetyper
 
-Enkättyper krävs och måste ha tilldelats när du skapar en fråga. 
+**Frågetyper** krävs och måste ha tilldelats när du skapar en fråga. 
 
-Använd frågetyper om du vill kategorisera frågor för rapportering. Frågetyper gör det även enklare att hitta frågor, eftersom du kan använda typer som filter på sidan **Frågor**. Här följer några exempel på frågetyper:
+Använd **Frågetyper** om du vill kategorisera frågor för rapportering. **Frågetyper** gör det även enklare att hitta frågor, detta eftersom du kan använda typer som filter på sidan **Frågor**. Här följer några exempel på frågetyper:
 
 -   Personal
 -   Hantera affärer
@@ -91,9 +93,9 @@ Nummerseriekoderna används för att ordna frågor och svar. Baserat på nummers
 Du bör definiera alla parametrar innan du börjar skapa dina data. Du kan ändra enkätparameterinställningarna när som helst.
 
 ## <a name="questionnaire-components"></a>Enkätkomponenter
-Frågeformulär består av tre huvuddelar: svarsgrupper som innehåller svaren på en flervalsfråga frågor, frågor i enkäten samt själva enkäten.  Du kan även gruppera frågorna i en enkät i resultatgrupper. Resultatgrupper kategoriserar frågor och tillhandahåller ytterligare analys i enkäten. 
+Frågeformulär består av tre huvuddelar: svarsgrupper som innehåller svaren på en flervalsfråga frågor, frågor i enkäten samt själva enkäten. Du kan även gruppera frågorna i en enkät i resultatgrupper. Resultatgrupper låter dig kategorisera frågor och tillhandahåller ytterligare analys i enkäten. 
 
-[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+[![Enkätkomponenter.](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### <a name="answer-groups-and-answers"></a>Svarsgrupper och svar
 
@@ -106,17 +108,17 @@ Om du vill ge en lista med svar på stängda frågor kan du skapa svar på sidan
 
 Svarsgrupper och svar är komponenter som utgör det huvudsakliga informationsmaterialet som frågor skapas från. När du har skapat en svarsgrupp kan du koppla svarsgruppen till en fråga i fältet **Svarsgrupp** på sidan **Frågor**. 
 
-Samma svarsgrupp kan användas för fler frågor i samma enkät och den kan också användas i flera enkäter. 
+En **svarsgrupp** kan användas för flera frågor i samma enkät och kan också användas i flera enkäter. 
 
 > [!NOTE]
-> Om du ändrar svarstext i svarsgrupper som redan har använts i ifyllda enkäter kan bli data svåra att utvärdera och enkätresultat gäller kanske inte längre. Om du måste ändra en svarsgrupp, bör du vill skapa en ny svarsgrupp i stället för att ändra en befintlig. Du kan inte radera svarsgrupper som har kopplats till en fråga eller ett svar eller som har besvarats.
+> Om du ändrar svarstext i svarsgrupper som redan har använts i ifyllda enkäter, kan data bli svåra att utvärdera och enkätresultaten kanske inte gäller längre. Om du måste ändra en svarsgrupp bör du överväga att skapa en ny svarsgrupp i stället för att ändra en befintlig. Du kan inte radera svarsgrupper som har kopplats till en fråga eller ett svar eller som har besvarats.
 
 ### <a name="questions"></a>Frågor
 
 En enkät måste innehålla frågor. Frågor kan vara antingen öppna eller stängda.
 
 -   Svaren för öppna frågor kontrolleras inte och svarande kan skriva in sina svar.
--   Stänga frågor kräver en lista med fördefinierade svarsalternativ och frågorna kan struktureras för att tillåta att svaranden väljer flera svar. Frågor bör utformas för att få fram specifik information från en svarande och måste vara länkade till en svarsgrupp som innehåller svarsalternativen för varje stängd fråga. 
+-   Stängda frågor kräver en lista med fördefinierade svarsalternativ, och frågorna kan struktureras för att tillåta att svaranden väljer flera svar. Frågor bör utformas för att få fram specifik information från en svarande och måste vara länkade till en svarsgrupp som innehåller svarsalternativen för varje stängd fråga. 
 
     > [!NOTE]
     > Innan du kan skapa stängda frågor måste du skapa svarsgrupper och svar.
@@ -163,7 +165,7 @@ På sidan **Enkäter** kan du utföra följande uppgifter:
 -   Göra ändringar i resultgrupperna och sekvensnummer. 
 
 > [!CAUTION]
-> Var försiktig när du ändrar enkäter som redan har besvarats. Ändringar kan minska noggrannheten i statistiken och gör dem till dålig grund för utvärdering. Överväg att hellre skapa en ny fråga istället för att ändra en fråga som redan har besvarats.
+> Var försiktig när du ändrar enkäter som redan har besvarats. Ändringar kan minska den statistiska noggrannheten och därigenom göra denna till en dålig grund för utvärdering. Överväg att hellre skapa en ny fråga istället för att ändra en fråga som redan har besvarats.
 
 I en enkät kan du inte ta bort följande typer av frågor:
 
@@ -172,7 +174,7 @@ I en enkät kan du inte ta bort följande typer av frågor:
 
 ### <a name="result-groups"></a>Resultatgrupper
 
-Resultatgrupper är valfria när du kopplar frågor till en enkät. 
+**Resultatgrupper** är valfria när du kopplar frågor till en enkät. 
 
 En resultatgrupp används för att beräkna poäng och kategorisera resultaten för en enkät. Om du använder resultatgrupper kan du utföra följande uppgifter:
 
@@ -190,14 +192,14 @@ En resultatgrupp används för att beräkna poäng och kategorisera resultaten f
 
 Bifoga frågor till en enkät genom att använda resultatgrupper, genom att först lägga till resultatgrupper för enkäten och sedan lägga till frågor till resultatgrupperna. Om du inte använder resultatgrupper kan du koppla frågor direkt till enkäten. 
 
-Du kan ställa in resultatgrupper för att bedöma hur många poäng som en svarande har i varje kategori. När en enkät har slutförts kan du visa hur många poäng som har uppnåtts för varje resultatgrupp. 
+Du kan skapa flera resultatgrupper för att bedöma hur många poäng som en svarande har i respektive kategori. När en enkät har slutförts kan du visa hur många poäng som har uppnåtts för varje resultatgrupp. 
 
 > [!TIP]
 > Om du vill utvärdera en enkät genom att använda poäng men inte separata kategorier, kan du lägga till alla frågor i en enskild resultatgrupp. 
 
-För varje resultatgrupp kan du även skapa en eller flera poängbaserade meddelanden som svarande får när de har fyllt i en enkät. Texten som visas kan variera beroende på poängen som en svarande får i en resultatgrupp. Använd poängbaserade meddelanden genom att definiera poängintervall och en beskrivning av varje intervall. När en svarande uppnår en poäng i ett speciellt intervall inkluderas texten för det intervallet i resultatrapporten. 
+För varje resultatgrupp kan du även skapa en eller flera poängbaserade meddelanden som svaranden får när denne har fyllt i en enkät. Texten som visas kan variera beroende på poängen som en svarande får i en resultatgrupp. Använd poängbaserade meddelanden genom att definiera poängintervall och en beskrivning av varje intervall. När en svarande uppnår en poäng i ett speciellt intervall inkluderas texten för det intervallet i resultatrapporten. 
 
-Eftersom en resultatgrupp är relaterad till poäng som är kopplade till specifika uppsättningar med frågor i en enkät, kan du endast använda en viss resultatgrupp för en enkät.
+Eftersom en resultatgrupp är relaterad till de poäng som är kopplade till specifika frågeuppsättningar i en enkät, kan du endast använda en viss resultatgrupp för en enkät.
 
 #### <a name="example-pointstexts-for-result-group-3"></a>Exempel: Poäng/texter för resultatgrupp 3
 
@@ -207,7 +209,7 @@ Du använder en enkät för ett ledarskapstest som har 15 frågor i tre kategori
 -   Ledarskapsförmågor
 -   Tekniska förmågor
 
-Om du vill använda poängbaserade meddelanden, ställer du in textintervall för varje resultatgrupp. Varje fråga tilldelas två poäng. Därför är 10 den maximala poängsumman i varje resultatgrupp. 
+Om du vill använda poängbaserade meddelanden, ställer du in textintervall för varje resultatgrupp. Varje fråga tilldelas två poäng. Därför är 10 den maximala poängsumman i respektive resultatgrupp. 
 
 Följande tabell visar de poängbaserade meddelanden som du definierar i resultatgruppen "ledarskapsförmågor".
 
@@ -229,10 +231,12 @@ Hierarkier med villkorsfrågor är valfria när du skapar en enkät.
 > [!NOTE]
 > Innan du kan skapa en hierarki för villkorsfrågor måste du koppla frågor som har tilldelade svarsgrupper till enkäten. 
 
-Villkorsfrågor gör det möjligt att skapa en frågehierarki i en enkät och skapa en ordningsföljd för hur frågorna presenteras beroende på hur svaret den svarande valde för varje fråga. Genom att på detta sätt basera frågesekvensen på svaren kan du ändra enkäten medan den svarande svarar på den.
+Villkorsfrågor gör det möjligt att skapa en frågehierarki i en enkät och att skapa en ordningsföljd för hur frågorna presenteras beroende på svaret den svarande valde för respektive fråga. Genom att på detta sätt basera frågesekvensen på svaren kan du ändra enkäten medan den svarande svarar på den.
 
 #### <a name="examples"></a>Exempel
 
-En juridisk person erbjuder både artiklar och tjänster till dess kunder. Som inträffar normalt i sådana fall köper en del kunder endast artiklar, andra bara tjänster och en del köper både artiklar och tjänster. Om företaget skickar ut en enkät om kundnöjdhet, använder det en villkorsstruktur i enkäten så att kunder som endast köper tjänster slipper att svara på frågor om artiklar. 
+En juridisk person erbjuder både artiklar och tjänster till sina kunder. Såsom inträffar normalt i sådana fall köper en del kunder endast artiklar, andra bara tjänster, och en del köper både artiklar och tjänster. Om företaget skickar ut en enkät om kundnöjdhet, använder det en villkorsstruktur i enkäten så att kunder som endast köper tjänster slipper att svara på frågor om artiklar. 
 
 Alternativt kan du skapa en enkät så att om den svarande väljer Svar A på fråga 1 är fråga 2 är nästa fråga i frågesekvensen. Om svarande väljer svar B på fråga 1 följs den av fråga 5.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.21.
 author: kamaybac
-ms.date: 10/28/2021
+ms.date: 08/09/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 894686446436a390ec2d019672e3a2b8b0e5f5ef
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075309"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579746"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
@@ -38,7 +38,8 @@ De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fi
 | Lager&nbsp;och&nbsp;logistik | [Tillägget Global lagerredovisning för Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Startsida för global lagerredovisning](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | Lager&nbsp;och&nbsp;logistik | [Bokför behållningsjusteringar med koder kopplade till motkonton](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Orsakskoder för lagerinventering](../warehousing/reason-codes-for-counting-journals.md) |
 | Lager&nbsp;och&nbsp;logistik | [Dataexportpolicy som refereras i försäljningsoffert](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Välj om ändringar av data som refereras av offerter ska göra att dessa offerter (eller rader) inkluderas i nästa stegvisa export. Din stegvisa export går snabbare om du väljer att inte ta med sådana offerter eller rader.<br><br>Funktionen lägger till en inställning som heter **Hoppa över offertrefererad data vid ändringsspårning** på sidan **Parametrar för kundreskontra**. |
-| Lager&nbsp;och&nbsp;logistik | [Stängd budgivning](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sealed-bidding) | [Sluten budgivning för anbudsförfrågningar](../procurement/sealed-bidding.md) |
+| Lager&nbsp;och&nbsp;logistik | Stängd budgivning <!-- KFM: Add RP link when available --> | [Sluten budgivning för anbudsförfrågningar](../procurement/sealed-bidding.md) |
+| Lager&nbsp;och&nbsp;logistik | [Skanna streckkoder på lagerstället med standarder för GS1-format](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-streckkoder och QR-koder](../warehousing/gs1-barcodes.md) |
 | Lager&nbsp;och&nbsp;logistik | [Preliminär reservation för tillägget Lagersynlighet](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Reservationer för Lagersynlighet](../inventory/inventory-visibility-reservations.md) |
 | Lager&nbsp;och&nbsp;logistik | [Avdrag och ökningar av faktisk nominell vikt för Rabatthantering](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Hantera avdrag med workbench för avdrag](../rebate-management/deduction-workbench.md )<br><br>[Bearbeta, granska och bokföra rabatter](../rebate-management/process-review-post.md)<br><br>[Rabatthanteringsavtal](../rebate-management/rebate-management-deals.md) |
 | Lager&nbsp;och&nbsp;logistik | [Steginstruktioner för lagerställeapp](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Anpassa stegpaneler och instruktioner för mobilappen Warehouse Management](../warehousing/mobile-app-titles-instructions.md) |
@@ -49,7 +50,7 @@ De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fi
 
 Följande register lista de funktionsförbättringar som ingår i denna version: Var och en av dessa tillhandahåller en stegvis förbättring av en befintlig funktion. Eftersom de bara är förbättringar visas de inte i [frisläppningsplanen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). För att säkerställa att dessa förbättringar inte står i konflikt med dina befintliga anpassningar eller inställningar stängs var och en av dem av som standard (om inget annat anges). Om du vill använda någon av dessa funktioner måste du explicit aktivera dem i [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Modul | Funktionsnamn&nbsp;&nbsp;i&nbsp;funktionshantering | Mer information |
+| Funktionsområde | Funktionsnamn&nbsp;&nbsp;i&nbsp;funktionshantering | Mer information |
 |---|---|---|
 | Kostnadshantering | Information om lagerstängningsförlopp | Förhandsgranskningsfunktionen ger en detaljerad vy över förloppet för lagerstängning. |
 | Anskaffning och källa | Förhindra överkonsumering av huvudbudgetreservationer när flera inköpsrekvisitioner finns i arbetsflöde | Förhandsgranskningsfunktionen förbättrar felkontrollen när användarna skickar och godkänner inköpsrekvisitioner som överskrider återstående saldo på en generell budgetreserveringsrad. Det förhindrar att generella budgetreserveringar överkonsumeras när flera inköpsrekvisitioner är i ett arbetsflöde. |
@@ -58,64 +59,6 @@ Följande register lista de funktionsförbättringar som ingår i denna version:
 | Lagerstyrning | Avkoda platsarbete från ASN:er | Funktionen måste skicka och ta emot avancerade leveransmeddelanden (ASNs) när du kör en arbetsbelastning för lagerhantering på en skalningsenhet (som en del av en distribuerad topologi). Det lägger till ett nytt databasregister avsett att lagra information om införselarbete. Tidigare lagrades denna information i register som även används för ASNs. |
 | Lagerstyrning | Blandade enheter i fack | Gör att systemet kan placera artiklar på platser med blandade enheter (till exempel både rutor och lådor). För varje placeringsmallrad kan du med funktionen välja om raden ska placera artiklar på platser med mixade enheter eller platser med enstaka enhet. |
 | Lagerstyrning | Använd snabbare API för behållare som stängs/öppnas igen på förpackningsstationen | När förhandsgranskningsfunktionen är aktiverad skapas lagertransaktioner som är relaterade till behållare med hjälp av en ny lättviktsprocess som förbättrar prestandan när behållare stängs eller öppnas igen under manuell packningsbearbetning. |
-
-## <a name="features-turned-on-by-default-in-this-release"></a>Funktioner aktiveras som standard i denna version
-
-Följande tabeller listar de funktioner som aktiveras som standard i 10.0.21. De flesta funktioner som har aktiverats kan inaktiveras i [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-| Funktionsnamn | Aktiveringsdatum | Funktion som lagts till | Funktionens tillstånd | Modul |
-| :--- | :--- | :--- | :--- | :--- |
-| Lagring av lagerbehållningsrapport | 9/1/2021 | 4/1/2020 | På som standard | Hantering av lager och lagerstyrning |
-| Annullering av överföringsorder | 9/1/2021 | 7/13/2020 | På som standard | Hantering av lager och lagerstyrning |
-| Lås upp lagerjournal | 9/1/2021 | 8/17/2020 | På som standard | Hantering av lager och lagerstyrning |
-| Sparade vyer för lagerhantering | 9/1/2021 | 2020-09-30 | På som standard | Hantering av lager och lagerstyrning |
-| Navigera till strukturlisteversion från strukturlisterader | 9/1/2021 | 11/11/2019 | På som standard | Hantering av lager och lagerstyrning |
-| Med måttenhet och enhetskvantitet i lagerjournaler | 9/1/2021 | 11/11/2019 | På som standard | Hantering av lager och lagerstyrning |
-| Tillåt tomma batchattributvärden | 9/1/2021 | 11/11/2019 | På som standard | Hantering av lager och lagerstyrning |
-| Öka radnummer för orderrader i lageröverföring automatiskt | 9/1/2021 | 10/11/2019 | På som standard | Hantering av lager och lagerstyrning |
-| Godkännandearbetsflöde för lagerjournal | 9/1/2021 | 1/6/2020 | På som standard | Hantering av lager och lagerstyrning |
-| Aktivera varningsfunktionen för parametrar för lagerkvalitetshantering | 9/1/2021 | 10/7/2019 | På som standard | Hantering av lager och lagerstyrning |
-| Skapa överföringsorder från försäljningsrad | 9/1/2021 | 8/31/2019 | På som standard | Hantering av lager och lagerstyrning |
-| Prognosmodellval på Detaljer för efterfrågeprognos | 9/1/2021 | 10/11/2019 | På som standard | Huvudplanering |
-| Visualisering av huvudplaneringsförlopp | 9/1/2021 | 10/7/2019 | På som standard | Huvudplanering |
-| Automatisk bekräftelse för planeringsoptimering | 9/1/2021 | 10/11/2019 | På som standard | Huvudplanering |
-| Parallell bekräftelse av planerade order | 9/1/2021 | 8/31/2019 | På som standard | Huvudplanering |
-| Meddelande om framgångsrik budsändning | 9/1/2021 | 5/15/2019 | På som standard | Anskaffning och källa |
-| Referenslänk för anbudsförfrågan tillagd i IO | 9/1/2021 | 8/31/2019 | På som standard | Anskaffning och källa |
-| Möjlighet att bekräfta godkända inköpsorder från leverantörssamarbete i batch | 9/1/2021 | 9/10/2019 | På som standard | Anskaffning och källa |
-| Förbättringar i inköps-cXML | 9/1/2021 | 11/11/2019 | På som standard | Anskaffning och källa |
-| Visa länken &quot;Öppna publicerade anbudsförfrågningar&quot; som en panel | 9/1/2021 | 2020-09-30 | På som standard | Anskaffning och källa |
-| Frågor och svar om anbudsförfrågningar | 9/1/2021 | 2/19/2020 | På som standard | Anskaffning och källa |
-| Produktinformation och leveransdokumentation för farliga material | 9/1/2021 | 6/14/2020 | På som standard | Produktinformationshantering |
-| Strikt validering av standardkvantiteter för order | 9/1/2021 | 6/24/2020 | På som standard | Produktinformationshantering |
-| Funktion för hantering av ursprungsland | 9/1/2021 | 7/13/2020 | På som standard | Produktinformationshantering |
-| Sparade vyer för frisläppta produkter | 9/1/2021 | 2020-09-30 | På som standard | Produktinformationshantering |
-| Förbättringar av dialogrutorna Godkänn jobb och Överför jobb | 9/1/2021 | 10/11/2019 | På som standard | Produktionskontroll |
-| ID-nummer för rapportering som färdig har lagts till på jobbkortenheten | 9/1/2021 | 8/31/2019 | På som standard | Produktionskontroll |
-| Den nya knappen Stoppa rast har lagts till på sidan Jobbkortterminal | 9/1/2021 | 2/19/2020 | På som standard | Produktionskontroll |
-| Aktivera delvis inleverans av underleverantörsartiklar och korrigera ett problem med beräkning av kassation för strukturlisterader av typen Leverantör. | 9/1/2021 | 11/11/2019 | På som standard | Produktionskontroll |
-| Sparade vyer för produktionskontroll | 9/1/2021 | 8/17/2020 | På som standard | Produktionskontroll |
-| Dynamics 365 Guides för tillverkning | 9/1/2021 | 7/13/2020 | På som standard | Produktionskontroll |
-| Produktionsgolvskörning | 9/1/2021 | 2020-09-30 | På som standard | Produktionskontroll |
-| Funktion för att låsa jobbkortsenhet och jobbkortsterminal för att anpassas till språk | 9/1/2021 | 5/10/2020 | På som standard | Produktionskontroll |
-| Allokering av avgifter på en försäljningsorder | 9/1/2021 | 2020-09-30 | På som standard | Försäljning och marknadsföring |
-| Begränsa antalet försäljningsorder som går att välja för bokföring | 9/1/2021 | 9/1/2021 | På som standard | Försäljning och marknadsföring |
-| Rensa försäljningsorderns uppdateringshistorik | 9/1/2021 | 9/1/2021 | På som standard | Försäljning och marknadsföring |
-| Ändra nummerserien för rullande inventeringsarbete | 9/1/2021 | 10/7/2019 | På som standard | Lagerstyrning |
-| Uppgiftsbaserad lagerpåfyllnad med påfyllnadsbegäran | 9/1/2021 | 10/7/2019 | Obligatoriskt | Lagerstyrning |
-| Dölj fältet Totalt värde på sidorna &quot;Alla beläggningar&quot; och &quot;Beläggningsinformation&quot; | 9/1/2021 | 10/7/2019 | På som standard | Lagerstyrning |
-| Utskrift av påfyllnadsetikett | 9/1/2021 | 2/19/2020 | Obligatoriskt | Lagerstyrning |
-| Associera lagertransaktioner för inköpsorder med last | 9/1/2021 | 1/6/2020 | Obligatoriskt | Lagerstyrning |
-| Förbättrad layout för ID-nummeretikett | 9/1/2021 | 2/19/2020 | På som standard | Lagerstyrning |
-| Arbetsspärr för hela organisationen | 9/1/2021 | 2/19/2020 | Obligatoriskt | Lagerstyrning |
-| Arbetsradsdetaljer | 9/1/2021 | 10/11/2019 | På som standard | Lagerstyrning |
-| Gör fältet med lagerstatus för mobilenhetslagerrörelse redigerbart | 9/1/2021 | 10/16/2019 | På som standard | Lagerstyrning |
-| Bekräfta utgående leveranser från batchjobb | 9/1/2021 | 7/13/2020 | På som standard | Lagerstyrning |
-| Kontrollera om en sammanfattningssida för inleverans ska visas på mobila enheter | 9/1/2021 | 4/1/2020 | På som standard | Lagerstyrning |
-| Prompt för att lösa tvetydiga &#39;plats/ID-nummernamn&#39; | 9/1/2021 | 4/1/2020 | På som standard | Lagerstyrning |
-| Inhämta produktvarianter och spårningsdimensioner i lagerstyrningsappen under mottagande av lastartikel | 9/1/2021 | 5/10/2020 | På som standard | Lagerstyrning |
-| Tillåt inte att skapa laster som inte uppfyller kraven i mallen för påfyllnadslastuppbyggnad. | 9/1/2021 | 8/17/2020 | På som standard | Lagerstyrning |
-| Utvärdera alla åtgärder för platsdirektiv för flera SKU:er | 9/1/2021 | 2020-09-30 | På som standard | Lagerstyrning |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
 
@@ -137,9 +80,9 @@ Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Finance and Operations-appar
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdateringar för Finance and Operations-appar
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.21 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.21 av Ekonomi och Drift-appar (oktober 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.21 inkluderar plattformsuppdateringar. Mer information finns i [plattformsuppdateringar för version 10.0.21 av Finance and Operations appar (oktober 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 

@@ -1,26 +1,24 @@
 ---
 title: Skapa ett leverantörsbankkonto
 description: Den här proceduren visar hur du skapar ett bakkonto för en leverantör.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, VendBankAccounts, LogisticsPostalAddressSingle
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3523dec15363bd42219d40ed8048681c56829ac
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5d24535035d26ca1313e293f9958b1b5000bb845
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019263"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575421"
 ---
 # <a name="create-a-vendor-bank-account"></a>Skapa ett leverantörsbankkonto
 
@@ -57,3 +55,6 @@ Den här proceduren visar hur du skapar ett bakkonto för en leverantör. Du kan
 25. Välj det konto som du nyss skapat i fältet **Bankkonto**.
 26. Klicka på **Spara**. Adressen kan ärvas från bankgruppen, om en sådan har angetts, eller så kan du lägga till den här.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,25 +2,28 @@
 title: Centraliserade betalningar för leverantörsreskontra
 description: Organisationer som omfattar flera juridiska personer kan skapa och hantera betalningar genom att använda en enda juridisk person som hanterar alla betalningar. Därför måste inte samma betalningar anges i flera juridiska personer. Den här artikeln ger exempel som visar hur bokföringen av centraliserade betalningar hanteras i olika scenarier.
 author: abruer
-ms.date: 02/15/2022
+manager: AnnBe
+ms.date: 02/12/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14341
 ms.assetid: 7bd02e32-2416-4ac6-8a60-85525267fdb7
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3030bc7d2501e2162758c94c0dc1a073655c9c0f
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 2a4632056d6873cfeb748251c77becc410f5cf54
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182528"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4448056"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Centraliserade betalningar för leverantörsreskontra
 
@@ -117,7 +120,7 @@ Fabrikam East har en öppen faktura för leverantör 100, Fourth Coffee. Faktura
 Fabrikam East har en öppen faktura för leverantör 100, Fourth Coffee. Fabrikam registrerar och bokför en betalning för Fabrikams leverantör 3004, Fourth Coffee. Betalningen kvittas mot de öppna Fabrikam East-fakturorna. En transaktion för kursförlust genereras under kvittningen.
 
 -   Valutakursen för euro (EUR) till dollar (USD) vid fakturadatumet: 1,2062
--   Valutakurs för EUR till USD vid betalningsdatumet: 1,2277
+-   Växelkurs för EUR till USD vid betalningsdatumet: 1,2277
 
 ### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a>Faktura bokförs i Fabrikam East för Fabrikam East-leverantör 100
 
@@ -156,8 +159,8 @@ Fabrikam East har en öppen faktura för leverantör 100, Fourth Coffee. Fabrika
 ## <a name="example-4-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-loss"></a>Exempel 4: Leverantörsbetalning av faktura från annan juridisk person med kassarabatt och realiserad kursförlust
 Fabrikam East har en öppen faktura för leverantör 100, Fourth Coffee. Fakturan har en kassarabatt och en momstransaktion skapas. Fabrikam bokför en betalning för Fabrikams leverantör 3004, Fourth Coffee. Betalningen kvittas mot de öppna Fabrikam East-fakturorna. En transaktion för kursförlust genereras under kvittningen. Kassarabatten bokförs till den juridiska personen för fakturan (Fabrikam East) och kursförlusten bokförs till den juridiska personen för betalningen (Fabrikam).
 
--   Valutakurs för EUR till USD vid fakturadatumet: 1,2062
--   Valutakurs för EUR till USD vid betalningsdatumet: 1,2277
+-   Växelkurs för EUR till USD vid fakturadatumet: 1,2062
+-   Växelkurs för EUR till USD vid betalningsdatumet: 1,2277
 
 ### <a name="invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-vendor-100"></a>Faktura bokförs och en momstransaktion skapas i Fabrikam East för leverantör 100
 
@@ -298,6 +301,3 @@ Fabrikam skapar en betalning på 75,00 för leverantör 3004, Fourth Coffee. Bet
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

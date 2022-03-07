@@ -2,11 +2,9 @@
 title: Frånvaroregistrering i Tid och närvaro
 description: Det här avsnittet beskriver hur du hanterar frånvaroregistreringar i Tid och närvaro.
 author: johanhoffmann
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JMGParameters, JmgAbsenceCalendar
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12a61f23ac5a16000275e53d3901c8aea202bab0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 06adca12c172dffa241fe44a6b64bb30863bcb4a8f3867429ad10bc852efd7c3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966640"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730236"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>Frånvaroregistrering i Tid och närvaro
 
@@ -33,7 +31,7 @@ Det här avsnittet beskriver begreppen för frånvaro och hur du hanterar frånv
 
 Arbetare anses vara frånvarande för det antal timmar som de inte arbetar under deras vanliga arbetstider. Vanliga arbetstimmar anges i profilen för en arbetares standardtid.
 
-Exempelvis arbetar en arbetare med en dagprofil som stämplar in klockan 7:00 och stämplar ut kl 15:00. Om arbetaren stämplar in klockan 9:00 anses han frånvarande från 7:00 till 9:00 den dagen.
+Exempelvis arbetar en arbetare med en dagprofil som stämplar in klockan 7:00 och stämplar ut kl 15:00. Om arbetaren stämplar in klockan 9:00 anses de frånvarande från 7:00 till 9:00 den dagen.
 
 I det här fallet uppmanas arbetare att ange en orsak till frånvaron. De kan ange en orsak genom att välja en frånvarokod.
 
@@ -103,8 +101,11 @@ Tidsregistreringar för arbetare måste beräknas och godkännas innan de kan ö
 
 En godkännare kan ändra tidsregistreringar för en arbetare. Godkännaren kan även ändra eventuell frånvaro som arbetaren har registrerat. Om godkännaren manuellt anger en tidsperiod som har en frånvarokod, åsidosätts frånvarokoden för den perioden inte av standardfrånvarokoden från parametrarna Tid och närvaro.
 
-En arbetare stämplar t.ex. in klockan 10:00 och väljer en frånvarokod som indikerar att hon är sen. Arbetaren informerar senare sin arbetsledare att hon hade ett läkarbesök mellan 08:00 till 10:00. Ett läkarbesök bör inte medföra avdrag på arbetarens lön. Därför kan i detta fall chefen justera två timmar av frånvaro mellan 08:00 till 10:00 manuellt genom att ange en frånvarokod som anger sjukdom under de två timmar.
+En arbetare stämplar t.ex. in klockan 10:00 och väljer en frånvarokod som indikerar att de är sena. Arbetaren informerar senare sin arbetsledare att hon hade ett läkarbesök mellan 08:00 till 10:00. Ett läkarbesök bör inte medföra avdrag på arbetarens lön. Därför kan i detta fall chefen justera två timmar av frånvaro mellan 08:00 till 10:00 manuellt genom att ange en frånvarokod som anger sjukdom under de två timmar.
 
 ### <a name="calculate-and-approve-absence"></a>Beräkna och godkänn frånvaro
 
 - Välj **Tid och närvaro**&gt;**Granska och godkänn**&gt;**Godkänn eller beräkna**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

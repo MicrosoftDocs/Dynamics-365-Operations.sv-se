@@ -2,11 +2,9 @@
 title: Arbetsbelastning för tillverknings körning för moln och kantskalningsenheter
 description: I det här avsnittet beskrivs hur arbetsbelastningar för tillverkningskörning fungerar med moln och kantskalningsenheter.
 author: cabeln
-manager: ''
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,27 +16,28 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 08c46655d3966ad1433935318c5e60667dd10bb6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9cd7dd8b9241171bdfdb3cc1379211a2fe99bbe1
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967785"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184006"
 ---
-# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastning för tillverknings körning för moln och kantskalningsenheter
+# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för tillverkningskörning för moln- och kantskalningsenheter
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
+> Arbetsbelastningen för tillverkningskörningen är vid den här tidpunkten tillgänglig i förhandsgranskning.
 > Vissa företagsfunktioner stöds inte fullt ut i den allmänna förhandsgranskningen när enheter för belastningsenheter används.
 
-I tillverkningskörning ger moln och kantskalningsenheter följande funktioner, även om kantenheterna inte är anslutna till navet:
+Vid tillverkningskörningen har skalningsenheter följande funktioner:
 
 - Maskinoperatörer och arbetsledare kan komma åt den operationella produktionsplanen.
 - Maskinoperatörer kan hålla planen aktuell genom att köra separata jobb för bearbetning och processtillverkning.
 - Arbetsledaren kan justera driftsplanen.
-- Arbetare kan få åtkomst till tid och närvaro för in- och utstämpling i kanten, för att säkerställa korrekt löneberäkning för arbetare.
+- Arbetare kan få åtkomst till tid och närvaro för in- och utstämpling "on the edge" - i utkanten av nätverket istället för som annars centralt - för att säkerställa korrekt löneberäkning för arbetare.
 
 I det här avsnittet beskrivs hur arbetsbelastningar för tillverkningskörning fungerar med moln och kantskalningsenheter.
 
@@ -73,6 +72,7 @@ Följande uppgifter för tillverkningskörning kan förnärvarande köras på ar
 - Rapportera kassation
 - Indirekt aktivitet
 - Avbrott
+- Rapportera som färdig och artikelinförsel (kräver att du även kör arbetsbelastningen för lagerställekörningen på din skalningsenhet, se även [Rapportera som färdig och artikelinförsel](#RAF))
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Arbeta med arbetsbelastningar för tillverkningskörning på navet
 
@@ -109,3 +109,27 @@ För att granska historiken om tillverkningsjobb som har bearbetats på en skale
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Tillverkningsnav till skalenhet meddelande processorjobb
 
 Jobbet _Tillverkningsnav till skalenhet meddelande processorjobb_ bearbetar data från navet till skalenheten. Det här jobbet startas automatiskt när arbetsbelastning för tillverkningskörningen distribueras. Du kan dock köra den manuellt när som helst genom att gå till **tillverkningskontroll \> periodiska uppgifter \> hantering av backoffice-arbetsbelastning \> Tillverkningsnav till skalenhet meddelande processorjobb**.
+
+<a name="RAF"></a>
+
+## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>Rapportera som färdig och artikelinförsel på en skalningsenhet
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+I den aktuella versionen stöds funktionerna "rapportera som färdig" och "artikelinförsel" (för färdiga produkter, samprodukter och biprodukter) av [körningsarbetsbelastningen för lagerställe](cloud-edge-workload-warehousing.md) (inte av körningsarbetsbelastningen för tillverkning). Om du vill använda den här funktionen vid anslutning till en skalningsenhet måste du därför göra följande:
+
+- Installera både körningsarbetsbelastningen för lagerstället och körningsarbetsbelastningen för tillverkning på din skalningsenhet.
+- Använd mobilapplikationen Warehouse Management om du vill rapportera som färdig och bearbeta artikelinförselarbetet. Körningsgränssnittet för produktionsgolv har för närvarande inte stöd för dessa processer.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

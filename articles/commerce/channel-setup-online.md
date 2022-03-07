@@ -2,9 +2,11 @@
 title: Ställa in en onlinekanal
 description: I det här avsnittet beskrivs hur du skapar en ny onlinekanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 02/04/2022
+manager: annbe
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -14,18 +16,21 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f32872fcc27e2e74300c4f18dfa08d666e4ad8a8
-ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
+ms.openlocfilehash: 44cc63560c048031c8315dc3f15ef07583bdc266
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092122"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218355"
 ---
 # <a name="set-up-an-online-channel"></a>Ställa in en onlinekanal
+
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du skapar en ny onlinekanal i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Översikt
 
 Dynamics 365 Commerce stöder flera butikskanaler. Dessa kanaler inkluderar onlinebutiker, kundtjänst och butiker (kallas också fysiska butiker). En onlinebutik ger en kunder alternativet att köpa produkter från återförsäljarens onlinebutik såväl som från deras fysiska butik.
 
@@ -52,15 +57,11 @@ Följ stegen nedan om du vill skapa och konfigurera en ny onlinekanal.
 
 Följande bild visar hur en ny onlinekanal skapas.
 
-![Ny onlinekanal.](media/channel-setup-online-1.png)
+![Ny onlinekanal](media/channel-setup-online-1.png)
 
 I bilden nedan visas ett exempel på onlinekanal.
 
-![Exempel på onlinekanal.](media/channel-setup-online-2.png)
-
-## <a name="assign-the-channel-to-a-commerce-scale-unit"></a>Tilldela kanalen till en Commerce Scale Unit
-
-Din nya kanal måste tilldelas en Commerce Scale Unit. Instruktioner finns i [Konfigurera kanaler för att använda Commerce Scale Unit](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-channels-to-use-commerce-scale-unit).
+![Exempel på onlinekanal](media/channel-setup-online-2.png)
 
 ## <a name="set-up-languages"></a>Ställ in språk
 
@@ -68,7 +69,7 @@ Om din näthandelssajt ska stödja flera språk expanderar du avsnittet **språk
 
 ## <a name="set-up-payment-account"></a>Ställ in betalningskonto
 
-Från avsnittet **betalningskonto** kan du lägga till en tredje parts betalningsleverantör. Information om hur du ställer in en Adyen betalningskoppling finns i [Dynamics 365 betalningskoppling för Adyen](./dev-itpro/adyen-connector.md).
+Från avsnittet **betalningskonto** kan du lägga till en tredje parts betalningsleverantör. Information om hur du ställer in en Adyen betalningskoppling finns i [Dynamics 365 betalningskoppling för Adyen](../retail/dev-itpro/adyen-connector.md).
 
 ## <a name="additional-channel-setup"></a>Konfiguration av ytterligare kanal
 
@@ -76,7 +77,7 @@ Ytterligare uppgifter som krävs för inställningar av onlinekanal inkluderar i
 
 I följande bild visas alternativen **leveranssätt**, **betalsätt** och **uppfyllelse av grupptilldelning** på fliken **inställning**.
 
-![Ytterligare åtgärder för konfigurering av onlinekanal.](media/channel-setup-online-3.png)
+![Ytterligare åtgärder för konfigurering av onlinekanal](media/channel-setup-online-3.png)
 
 ### <a name="set-up-payment-methods"></a>Ange betalsätt
 
@@ -91,7 +92,7 @@ Om du vill ställa in betalsätt följer du dessa steg för varje betalningstyp 
 
 I bilden nedan visas ett exempel på en kontantbetalningsmetod.
 
-![Exempel på betalningsmetoder.](media/channel-setup-retail-5.png)
+![Exempel på betalsätt](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Ställ in leveranssätt
 
@@ -105,7 +106,7 @@ Om du vill ändra eller lägga till ett leveranssätt följer du stegen nedan.
 
 I bilden nedan visas ett exempel på ett leveranssätt.
 
-![Konfigurera leveranssätt.](media/channel-setup-retail-7.png)
+![Ställ in leveranssätt](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>Ange tilldelning av uppfyllelsegrupp
 
@@ -119,19 +120,19 @@ Så här ställer du in en tilldelning av uppfyllelsegrupp.
 
 I bilden nedan visas ett exempel på en inställning av tilldelning av uppfyllelsegrupp.
 
-![Konfigurera tilldelning av uppfyllelsegrupp.](media/channel-setup-retail-9.png)
+![Ange tilldelning av uppfyllelsegrupp](media/channel-setup-retail-9.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över kanaler](channels-overview.md)
 
-[Förutsättningar för kanalinställningar](channels-prerequisites.md)
+[Förutsättningar för att ställa in kanaler](channels-prerequisites.md)
 
 [Ställa in en butikskanal](channel-setup-retail.md)
 
 [Ställa in en kundtjänstkanal](channel-setup-callcenter.md)
 
-[Dynamics 365-betalningskoppling för Adyen](./dev-itpro/adyen-connector.md)
+[Dynamics 365-betalningskoppling för Adyen](../retail/dev-itpro/adyen-connector.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

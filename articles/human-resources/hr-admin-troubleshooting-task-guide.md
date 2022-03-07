@@ -2,14 +2,11 @@
 title: Spara uppgiftsguider i LCS och spela upp dem igen
 description: Det här avsnittet beskriver hur du sparar uppgiftsguider till Microsoft Dynamics Lifecycle Services (LCS) och sedan spelar upp dem igen.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -17,14 +14,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b55937c0867117809471f50f1987f7bf12a4b25d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8a18bb14ba8c3c926065c97b0ee26c38ee86ded2
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420597"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053285"
 ---
 # <a name="save-task-guides-to-lcs-and-replay-them"></a>Spara uppgiftsguider i LCS och spela upp dem igen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Miljöinformation** 
 
@@ -32,7 +31,7 @@ Microsoft Dynamics 365 Human Resources som distribuerades via Microsoft Dynamics
 
 **Utleverans**
 
-Kunden vill spara nya uppgiftsinspelningar till hans eller hennes LCS-projekt och sedan spela upp de sparade uppgiftsguiderna.
+Kunden vill spara nya uppgiftsinspelningar till LCS-projektet och sedan spela upp de sparade uppgiftsguiderna.
 
 **Upplösning**
 
@@ -63,3 +62,6 @@ Följ dessa steg för att spela upp en uppgiftsguide från LCS.
 2. Välj **Öppna från LCS**.
 3. Markera biblioteket och BPM-noden som har den sparade uppgiftsguiden.
 4. Öppna uppgiftsguiden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

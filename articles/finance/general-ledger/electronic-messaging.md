@@ -2,11 +2,9 @@
 title: Elektroniska meddelanden
 description: Det här avsnittet innehåller information om översikt och inställningar för elektronisk post i Microsoft Dynamics 365 Finance.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d4ecc29e47d68129df424c4212505413cf6c8889
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 42896c85fe72690aadafb878eb7e899c6fe10c32
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968989"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823798"
 ---
 # <a name="electronic-messaging"></a>Elektroniska meddelanden
 
@@ -535,3 +533,6 @@ Du kan nu ta bort eller uppdatera meddelandestatus. För att uppdatera meddeland
 ![Uppdatera meddelandets status](media/update-status.png)
 
 Meddelandestatus har uppdaterats till **förberedd** och du kan nu skapa rapporten genom att markera **generera rapporten**. Rapporten genereras och meddelandestatus och åtgärdsloggen uppdateras. För att visa den genererade rapporten väljer du knappen **bilaga** (gemsymbolen) i övre högra hörnet på sidan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

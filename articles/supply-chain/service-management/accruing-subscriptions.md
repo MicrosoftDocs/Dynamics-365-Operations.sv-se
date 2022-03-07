@@ -2,11 +2,9 @@
 title: Periodisera abonnemang
 description: Med serviceabonnemang periodiserar du manuellt intäkt i perioderna efter det datum då du fakturerat en avgiftstransaktion.
 author: ShylaThompson
-manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionGroup
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6d0d6c25cc8a19f5ebea3477cd2c957876752fd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f2d51bcdcc268cf0662ef3d82e6cc8581fd4894bba4b2f1f905b9dfd324cce98
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966090"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719585"
 ---
 # <a name="accruing-subscriptions"></a>Periodisera abonnemang 
 
@@ -43,7 +41,7 @@ Om du krediterar fakturerade abonnemangsbelopp kan du använda två olika metode
 
   - Du kan låta de periodiserade summorna återföras på det datum då kreditfakturan bokförs eller på det ursprungliga bokföringsdatumet för periodiseringen.
 
-Mer information finns i [Abonnemangsparametrar (formulär)](https://technet.microsoft.com/library/aa619615.aspx).
+Mer information finns i [Abonnemangsparametrar (formulär)](/dynamicsax-2012//subscription-parameters-form).
 
 ## <a name="setup-requirements"></a>Installationskrav
 
@@ -141,7 +139,7 @@ Du kan kontrollera antalet redovisningstransaktioner som skapas när du bokför 
 
 1.  Klicka på **Projekthantering och redovisning** \> **Inställningar** \> **Parametrar för projekthantering och redovisning**.
 
-2.  På fliken **Ekonomi** i fältet **Faktura**, välj **Total** eller **Rad**.
+2.  På fliken **Finance** i fältet **Faktura**, välj **Total** eller **Rad**.
 
 
 ## <a name="see-also"></a>Se även
@@ -151,3 +149,6 @@ Du kan kontrollera antalet redovisningstransaktioner som skapas när du bokför 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

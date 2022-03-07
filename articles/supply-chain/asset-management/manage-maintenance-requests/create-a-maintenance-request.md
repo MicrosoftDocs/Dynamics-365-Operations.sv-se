@@ -1,12 +1,10 @@
 ---
 title: Skapa underhållsbegäranden
 description: I det här avsnittet beskrivs hur du skapar en underhållsbegäran i tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestTableCreate
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f45378405d9ea06ae847d93b7eacd9badf6d7e00
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 4b48a0504b79d2edf7815296312c7839052092e7d6773b7ebd5d38cbb59c9428
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019188"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714990"
 ---
 # <a name="create-maintenance-requests"></a>Skapa underhållsbegäranden
 
@@ -32,7 +30,7 @@ ms.locfileid: "5019188"
 
 Underhållsbegäran kan användas om underhållsarbetare eller produktionsarbetare upptäcker att utrustning behöver repareras, men reparationsjobbet inte kan utföras direkt.
 
-**Exempel:** när en underhållsarbetare gör en reparation, upptäcker hon att en annan tillgång på samma plats måste servas. Underhållsarbetaren har dock inte tid eller nödvändiga reservdelar för att utföra reparationsjobbet. Därför skapar hon en underhållsbegäran på tillgången och anger en kort beskrivning av problemet.
+**Exempel:** när en underhållsarbetare gör en reparation, upptäcker de att en annan tillgång på samma plats måste servas. Underhållsarbetaren har dock inte tid eller nödvändiga reservdelar för att utföra reparationsjobbet. Därför skapar de en underhållsbegäran på tillgången och anger en kort beskrivning av problemet.
 
 Avsnittet **aktiva underhållsbegäran** i rutan **relaterad information** till höger på sidan **alla tillgångar** eller **aktiva tillgångar** (**tillgångshantering** \> **allmänt** \> **tillgångar** \> **alla tillgångar** eller **aktiva tillgångar**) visar aktiva underhållsbegäran som är kopplade till den valda tillgången.
 
@@ -54,7 +52,7 @@ Avsnittet **aktiva underhållsbegäran** i rutan **relaterad information** till 
 11. I fältet **noteringar** anger du eventuella ytterligare noteringar som krävs.
 12. Välj **OK**.
 
-![Skapa underhållsbegäran](media/03-manage-maintenance-requests.png)
+![Skapa underhållsbegäran.](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Efterföljande behandling av underhållsbegäran
 
@@ -69,7 +67,10 @@ I informationsvyn kan du uppdatera olika information. Nedan följer några exemp
 - Välj en typ av underhållsjobb och, om denna information är relevant, en relaterad underhållsjobbvariant och en jobbhandel.
 - Ange geografiska koordinater i fälten **latitud** och **longitud**. Alla koordinater som läggs till i en underhållsbegäran överförs automatiskt till en relaterad arbetsorder. 
 
-![Uppdatera underhållsbegäran](media/04-manage-maintenance-requests.png)
+![Uppdatera underhållsbegäran.](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Om du väljer en tillgång när du skapar en underhållsbegäran kan du lägga till ett fel till tillgången. När underhållsbegäran har skapats kan du lägga till fler fel, som du behöver. Om du vill lägga till fel väljer du **tillgångsfel** på sidan **alla underhållsbegäran**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

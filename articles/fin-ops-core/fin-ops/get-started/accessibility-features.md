@@ -2,11 +2,9 @@
 title: Hjälpmedelsfunktioner
 description: Det här avsnittet beskriver de funktioner som hjälper användare med olika handikapp.
 author: TLeforMicrosoft
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 2d0dd3ebf4b50f43f9fb1893081ede2a93428c72
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 4cf5a5fc2d40e66d189d281b343d1525edf7e8c5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798705"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744133"
 ---
 # <a name="accessibility-features"></a>Hjälpmedelsfunktioner
 
@@ -97,3 +95,6 @@ På smartphones och andra små skärmar, kontrollerna och formulärlayouten komm
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Riktlinjer för att hjälpa utvecklare och kunder att inkorporera tillgänglighetstänk i sina anpassningar
 
 Mer information om Microsofts bästa praxis för att aktivera hjälpmedel finns [Hjälpmedel i formulär, produkter och kontroller](../../dev-itpro/user-interface/enable-accessibility.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

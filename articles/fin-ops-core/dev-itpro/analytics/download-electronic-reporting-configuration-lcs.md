@@ -2,11 +2,9 @@
 title: Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services
 description: Detta avsnitt innehåller information om hur du hämtar elektroniska rapportkonfigurationer (ER) från Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
-manager: AnnBe
 ms.date: 08/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace
 audience: Application User, IT Pro
@@ -17,18 +15,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 719b277fb828ea2085ea80bc4a36c2af3412f66b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 14f0f2b1a4d63101d432b1361379c61a70ac9345
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683315"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271193"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Hämta konfigurationer för elektronisk rapportering från Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du hämtar den senaste versionen av dina [Elektronisk rapportering (ER) konfigurationer](general-electronic-reporting.md#Configuration) från [biblioteket med gemensamma tillgångar](../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).
+
+> [!IMPORTANT]
+> Användningen av LCS som en lagringsdatabas för ER-konfigurationer är [inaktuell](../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). Mer information finns i [Regulatory Configuration Service (RCS) – Lagringsavskrivning för Lifecycle Services (LCS)](../../../finance/localizations/rcs-lcs-repo-dep-faq.md)
 
 1. Logga in på programmet med någon av följande roller:
 
@@ -76,3 +77,6 @@ I det här avsnittet beskrivs hur du hämtar den senaste versionen av dina [Elek
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Hämta ER-konfigurationer från den globala databasen med konfigurationstjänster](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

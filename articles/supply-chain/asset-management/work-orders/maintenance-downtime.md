@@ -1,12 +1,10 @@
 ---
 title: Underhållsstopp för arbetsorder
 description: Detta ämne förklarar hur du skapar registreringar av underhållsstopp för den valda tillgången på en arbetsorder.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 53487a0173453ef7a8f5ea818672d999fe71cb65
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 38c47a47fdf64c1d3601f6f3f7b84bf128823ec2ceb0c50e586822f6bdb97906
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020921"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753382"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Underhållsstopp för arbetsorder
 
@@ -47,7 +45,7 @@ Du kan skapa registreringar av underhållsstopp för den valda tillgången på e
 
 Bilden nedan visar ett exempel på sidan **Orsakskoder för underhållsstopp**.
 
-![Figur 1](media/15-work-orders.png)
+![Figur 1.](media/15-work-orders.png)
 
 När du har skapat de orsakskoder för underhållsstopp som du vill använda kan du skapa registreringar av underhållsstopp för arbetsorder och tillgångar.
 
@@ -73,18 +71,21 @@ När du har skapat de orsakskoder för underhållsstopp som du vill använda kan
 
 Bilden nedan visar ett exempel på listan Registrering för underhållsstopp.
 
-![Figur 2](media/16-work-orders.png)
+![Figur 2.](media/16-work-orders.png)
 
 Den kalender som används för att beräkna en registrering av underhållsstopp beror på ditt val i inställningarna av tillgångar och parametrar. Om en resurs väljs för en tillgång i fältet **Resurs** på snabbfliken **Anläggningstillgång** på sidan **Alla tillgångar** används den kalender som har ställts in för den associerade resursgruppen, vilket visas i bilden nedan.
 
-![Figur 3](media/17-work-orders.png)
+![Figur 3.](media/17-work-orders.png)
 
 Om ingen resurs väljs för tillgången används standardkalender som valts på sidan **Parametrar för tillgångshantering** som visas i följande bild.
 
-![Figur 4](media/18-work-orders.png)
+![Figur 4.](media/18-work-orders.png)
 
 Om du vill se en översikt över alla underhållsstoppregistreringar, klicka på **Tillgångshantering** > **Förfrågningar** > **Underhållsstopp**.
 
 >[!NOTE]
 >Alla kalendrar som används i modulen **Tillgångshantering** ställs in i **Organisationsadministration** > **Inställningar** > **Kalendrar** > **Kalendrar**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

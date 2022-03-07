@@ -2,11 +2,9 @@
 title: Lägga upp ett sortiment
 description: Denna artikeln beskriver vad ett sortiment är och förklarar hur du ställer in sortiment i Dynamics 365 Commerce.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 31ec0079584832537431872fea61a07b58d31648cdac0f29a469bc977009622f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969836"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774495"
 ---
 # <a name="set-up-assortments"></a>Ställa in sortiment
 
@@ -33,7 +31,7 @@ Denna artikeln beskriver vad ett sortiment är och förklarar hur du ställer in
 
 Ett sortiment är en samling relaterade produkter som du tilldelar en handelskanal, till exempel en fysisk butik eller en onlinebutik. Du använder sortiment för att identifiera de produkter som är tillgängliga i varje butik. Ett sortiment kan inkludera kategorier av produkter. Alla produkter som tilldelats den valda kategorin, ingår i sortimentet. Ett sortiment kan också ta med specifika produkter och specifika varianter av produkter. Om du ställer in ett sortiment, kan du tilldela tusentals produkter till dina kanaler samtidigt, i valfri kombination som din butik kräver. Du kan ställa in så många produktsortiment, som du behöver. Varje produkt kan inkluderas i ett eller flera sortiment, och varje produkt kan tilldelas en eller flera kanaler. Om du till exempel anger ett sortiment som innehåller en basuppsättning med produkter. Alla butiker tar emot sortimentet. Du definierar sedan ett annat sortiment som inkluderar en större sportutrustning. Endast dina större butiker får sortimentet. Följande diagram visar hur produkter kan tilldelas sortiment, och hur de sortimenten kan tilldelas kanaler.
 
-![Relationer för produktsortiment](./media/assortments_relationship.gif)
+![Relationer för produktsortiment.](./media/assortments_relationship.gif)
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -54,3 +52,6 @@ När du har slutfört förberedelserna, kan du skapa ett sortiment och tilldela 
 2. Välj de kanalerna eller grupper med kanaler på hög nivå som sortimentet gäller för.
 3. Lägg till produktkategorier, enskilda produkter eller produktvarianter till sortimentet. Du kan inkludera alla produkter i en specifik kategori, eller så kan du utesluta valda produkter från en kategori som ingår i sortimentet.
 4. Publicera sortimentet. När du publicerar sortimentet kommer sortimentsschemaläggaren att köras automatiskt. Den här processen genererar listan med produkter. När den här processen slutförs blir produkterna tillgängliga för de kanaler som produktsortimentet tilldelas. Om ändringar görs i ett sortiment som har publicerats, eller till de kanaler som sortimentet har tilldelats, måste sortimentet uppdateras. Om du vill uppdatera sortimentet när ändringar görs kan du köra en lämpligt sortimentplanerare som ett batchjobb.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

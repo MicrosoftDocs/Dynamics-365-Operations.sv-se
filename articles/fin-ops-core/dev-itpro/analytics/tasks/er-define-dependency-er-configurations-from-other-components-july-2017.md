@@ -1,12 +1,10 @@
 ---
-title: Definiera beroendet av ER-konfigurationer för andra komponenter
-description: För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden ER Hantera modellmappningskonfigurationer, och ha åtkomst till Microsoft Dynamics Lifecycle Services (LCS).
+title: Definiera ER‑konfigurationers beroende av andra komponenter
+description: I det här avsnittet beskrivs hur du utformar en elektronisk rapporteringskonfiguration (ER) och anger sitt beroende från andra programvarukomponenter.
 author: NickSelin
-manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 07/23/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,14 +12,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77783d629afc9abf30cdc48534fbb26eba5f8811
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2901092938dae5ae14480716eeeb2b0386848332e91ad388ce5d34437f8492ba
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681983"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717604"
 ---
-# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definiera beroendet av ER-konfigurationer för andra komponenter
+# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definiera ER‑konfigurationers beroende av andra komponenter
 
 [!include [banner](../../includes/banner.md)]
 
@@ -46,7 +44,7 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
 5. Klicka på Ny.
 6. Välj produktförutsättningskomponenten.
 7. Välj Microsoft Dynamics 365 for Operations (1611).
-8. I fältet Version, skriv '[7.1.1541.3036,8)'.
+8. Skriv "[7.1.1541.3036,8)" i fältet Version.
     * [7.1.1541.3036,8)  
     * När den här konfigurationen har hämtats från en ER-databas utvärderas de beroenden som du anger. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Exempeldatamodell redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Finance and Operations, versionen måste vara 7.1.1541.3036 eller senare och den får inte vara senare än huvudversion 8.   
 9. Klicka på Spara.
@@ -59,7 +57,7 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
 16. Klicka på Ny.
 17. Välj produktförutsättningskomponenten.
 18. Välj Microsoft Dynamics AX 7.0 RTW.
-19. I fältet Version, skriv '[7.0.1265.3015,7.1)'.
+19. Skriv "[7.0.1265.3015,7.1)" i fältet Version.
     * [7.0.1265.3015,7.1)  
     * Beroendena utvärderas när den här konfigurationen har hämtats från en ER-databas. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Exempeldatamodell redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, versionen måste vara 7.0.1265.3015 eller senare och den får inte vara senare än delversion 1.   
 20. Klicka på Spara.
@@ -139,3 +137,9 @@ Vi ska ta bort de skapade konfigurationerna från systemet och hämta tillbaka d
 26. Expandera Sample data model i trädet.
     * Observera att modellkonfigurationen Exempelmappning har hämtats tillsammans med den valda datamodellkonfigurationen. De två filerna hämtas tillsammans eftersom Exempelmappning har definierats till att implementera den valda datamodellen, och eftersom den gäller för appen. Konfigurationen Exempelmappning (alternative) har inte hämtats eftersom villkoret för programversionen inte är uppfyllt.   
     * Om du loggar in till Finance and Operations, registrerar samma leverantör, öppnar LCS-projektet och hämtar samma datamodellkonfiguration, hämtas konfigurationen Exempelmappning (alternativ) medan konfigurationen Exempelmappning hoppas över.  
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+[Hantera livscykeln för konfiguration av elektronisk rapportering (ER)](../general-electronic-reporting-manage-configuration-lifecycle.md)
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

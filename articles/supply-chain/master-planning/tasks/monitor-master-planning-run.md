@@ -1,24 +1,26 @@
 ---
 title: Övervaka en huvudplaneringskörning
 description: Det här ämnet förklarar hur produktionsplanerare kan se om en huvudplaneringskörning pågår.
-author: ChristianRytt
+author: josaw1
+manager: tfehr
 ms.date: 11/04/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, InventItemIdLookupSimple, ReqLog, ReqProcessTaskTrace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4db1173b35cd196ab39fae3cac3754439fab84d0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2dea87ac106e79339b8cb6bb2c28e36e35de4a1a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103173"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226109"
 ---
 # <a name="monitor-a-master-planning-run"></a>Övervaka en huvudplaneringskörning
 
@@ -28,11 +30,12 @@ ms.locfileid: "8103173"
 
 På sidan **Visa huvudplaneringsförlopp** kan du visa detaljer om historisk huvudplanering som körs som ett Gantt-diagram. Med hjälp av den här funktionen kan du förstå hur lång tid som ägnas åt olika faser i huvudplaneringen. För ett aktuellt aktivt planeringsjobb kan du använda sidan **Visa huvudplaneringsförlopp** för att spåra status och visa den uppskattade återstående tiden.
 
-### <a name="turn-the-master-plan-progress-visualization-feature-on-or-off"></a>Aktivera och inaktivera funktionen för visualisering av huvudplanstatus
+### <a name="turn-on-and-use-the-master-plan-progress-visualization-feature"></a>Aktivera och använda funktionen för visualisering av huvudplanstatus
 
-Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Visualisering av huvudplaneringsförlopp* i arbetsytan [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Du använder funktionen genom att följa dessa steg.
 
-### <a name="use-the-master-plan-progress-visualization-feature"></a>Använda funktionen för visualisering av huvudplanstatus
+1. I arbetsytan **Funktionshantering** på fliken **Ny**, välj **Visualisering av huvudplaneringsförlopp** i listan. Om funktionen inte visas på fliken **Ny** tittar du på flikarna **Ej aktiverad** och **Alla**.
+1. Välj **Aktivera nu**. Du kan också välja **schema** och sedan välja den tidpunkt då funktionen ska aktiveras.
 
 Sidan **Visa huvudplaneringsförlopp** kan visa både historiska planeringsjobb och aktiva planeringsjobb. 
 

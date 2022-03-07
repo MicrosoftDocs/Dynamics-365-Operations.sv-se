@@ -2,11 +2,9 @@
 title: Riktlinjer för att ställa in dubbelriktad skrivning
 description: I det här avsnittet beskrivs scenarier som stöds för inställningen dubbelriktad skrivning.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 10/12/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 78a7cdc18476a1c523c83c92ca6f354c3ba806dc
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 999b37970be1c10fd5e78c3d8ac6c1fb25cad367
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744863"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751396"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Riktlinjer för att ställa in dubbelriktad skrivning
 
@@ -138,3 +136,6 @@ Länkar till ett exempel och en alternativ metod finns i avsnittet [Exempel](#ex
 Ett exempel finns i [Aktivera Customers V3 – kontakter tabellmappning](enable-entity-map.md#enable-table-map)
 
 Om du vill ha en alternativ metod baserad på datavolymer i varje enhet som måste köra en inledande synkronisering, se [Att tänka på vid första synkroniseringen](initial-sync-guidance.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

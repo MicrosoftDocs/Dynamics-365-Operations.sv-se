@@ -2,15 +2,12 @@
 title: Begäran om frånvaro
 description: Skicka in en begäran om frånvaro.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ESSLeaveofAbsenceRequestEntry, EssWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1f50e45a9acaf5295b40648ea5701885ae0ea844
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2d58e84637dac584b080bd0fa30f7ab6214c26db
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420663"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070285"
 ---
 # <a name="request-a-leave-of-absence"></a>Begäran om frånvaro
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan skicka en begäran om frånvaro och se statusen för din begäran om frånvaro i Dynamics 365 Human Resources.
 
@@ -50,6 +52,13 @@ Du kan skicka en begäran om frånvaro och se statusen för din begäran om frå
 
 2. Om du vill visa din begäran om frånvaro, välj **Visa begäran om frånvaro**.
 
+## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Importera tjänstledighetsansökningar från andra system eller äldre system
+
+Om du vill importera tjänstledighetsansökningar från ett annat system måste du gå igenom det vanliga arbetsflödet för att skapa lämpliga tjänstledighetstransaktioner. Du kan också importera tjänstledighetstransaktionerna och tjänstledighetsansökningarna i en slutförd status. Observera att det inte skapas några banktransaktioner automatiskt om du bara importerar tjänstledighetsansökningar.
+
 ## <a name="see-also"></a>Se även
 
 [Skjut upp tjänstledighet](hr-leave-and-absence-suspend-leave.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
