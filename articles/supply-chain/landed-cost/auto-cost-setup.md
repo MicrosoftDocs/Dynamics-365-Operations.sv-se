@@ -2,9 +2,11 @@
 title: Inställning av automatiska kostnader
 description: I det här avsnittet beskrivs hur du ställer in kostnadsregler för olika inkommande färdnivåer. Baserat på dessa regler beräknar systemet kostnaderna och lägger automatiskt till dem. Därför behöver användarna inte lägga till kostnaderna manuellt.
 author: sherry-zheng
+manager: tfehr
 ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ITMCostAutoSetup
 audience: Application User
@@ -13,17 +15,18 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-21
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0fe795127300ac99c3f5ee65cb1f6e0841ad4d95
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: 86dcbfbe6e00e7324e29541da6d682794e7487b3
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575810"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501160"
 ---
 # <a name="auto-costs-setup"></a>Inställning av automatiska kostnader
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Du kan använda sidan **Automatiska kostnader** för att ställa in kostnadsregler för olika kostnadsområden (såsom färder, leveransbehållare, folio, inköpsorder, artiklar eller överföringsorderrader). Baserat på reglerna och de fält som användarna väljer när de skapar poster för ett av kostnadsområdena, beräknar systemet kostnaderna och lägger automatiskt till dem. Därför behöver användarna inte lägga till kostnaderna manuellt.
 

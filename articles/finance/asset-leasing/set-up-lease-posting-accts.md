@@ -2,11 +2,13 @@
 title: Skapa bokföringskonton för leasing
 description: Det här ämnet visar de bokföringskonton som krävs för transaktioner för tillgångsleasing och förklarar hur du definierar bokföringskonton på sidan för Parametrar för bokföring av leasing.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeasePostingAccounts
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ac8dc59a19a489c6a7c4bf6621dd1a316de03ac3af4512d3ed7e55668af801b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 26e046b627d71721f4a4d7b6a60171a482e3e357
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770651"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992799"
 ---
 # <a name="set-up-lease-posting-accounts"></a>Skapa bokföringskonton för leasing
 
@@ -81,6 +83,3 @@ Om du vill tilldela konton till leasingböcker och grupper som har skapats måst
     > [!NOTE]
     > Det valda finansiella eller operationella kontot kommer att debiteras när fakturan för den planerade utgiften bokförs.
     > **Motbokning av leasingkostnad** används som bokföringstyp för verkställighetskostnadstransaktioner men bokförs på ett definierat **motkonto** på **raderna för betalningsplanen för verkställighetskostnad** i leasinginformationen eller i leasingbokformuläret.   
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

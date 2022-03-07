@@ -2,15 +2,12 @@
 title: Konfigurera självbetjäning för medarbetare
 description: I Microsoft Dynamics 365 Human Resources kan du konfigurera paneler för navigering på högsta nivå i Självbetjäning för medarbetare.
 author: andreabichsel
-manager: AnnBe
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d1534e37e83e22dd9860de54165c062935db3798
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cafd89d30ca3876953df099e2e7b7cc9c3e1fdc0f69bb039310434f8d770f6f1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420640"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721593"
 ---
 # <a name="configure-employee-self-service"></a>Konfigurera självbetjäning för medarbetare
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I Microsoft Dynamics 365 Human Resources kan du konfigurera paneler för navigering på högsta nivå i Självbetjäning för medarbetare. Paneler för förmånsplaner dirigerar användare till förmånsplaner som de berättigar till.
 
@@ -72,3 +71,6 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurera paneler för naviger
    | **Slutdatum** | Slutdatum och tid som panelen ska vara tillgänglig. |
 
 4. Välj **Spara**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

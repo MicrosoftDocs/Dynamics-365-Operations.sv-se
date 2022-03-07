@@ -1,12 +1,11 @@
 ---
 title: Ändra format för att generera dokument som omfattar programdata
-description: 'Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren "ER Skapa dokument med uppdatering av programdata (Del 3: Ändra modell och mappning)".'
+description: Det här ämnet beskriver hur du utformar rapporteringskonfigurationer för att skapa ett elektroniskt dokument och uppdatera programdata.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ad75adb22efbd90d3fb4a71a2d592950a66bafd8
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684557"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5565451"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Ändra format för att generera dokument som omfattar programdata
 
@@ -149,3 +148,6 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
 46. Stäng sidan.
 47. Stäng sidan.
 48. Stäng sidan.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

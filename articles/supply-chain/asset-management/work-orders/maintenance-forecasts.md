@@ -1,12 +1,10 @@
 ---
 title: Underhållsprognoser
 description: I det här avsnittet beskrivs underhållsprognoser i Tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderForecastToJournals, EntAssetWorkOrderForecast
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c60834a1f818b142a0f2f022d66fe1f42edeb536
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 6503d5110a4cb5e4041afa7b4e80395b2974a64e5a150eb6bfce1f32a6703e06
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020880"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761864"
 ---
 # <a name="maintenance-forecasts"></a>Underhållsprognoser
 
@@ -104,7 +102,7 @@ Om du vill få en översikt som visar var artikeln på den valda raden används,
 
 I bilden nedan visas ett exempel på sidan **Underhållsprognos för arbetsorder**.
 
-![Figur 1](media/06-work-orders.png)
+![Figur 1.](media/06-work-orders.png)
 
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatisk uppdatering av arbetsorderprognoser
@@ -122,4 +120,7 @@ Om timkostnader, artikelkostnader och utgifter uppdateras i andra moduler i Micr
 
 I bilden nedan visas ett exempel på sidan dialogrutan **Uppdatera arbetsorderprognos**.
 
-![Figur 2](media/07-work-orders.png)
+![Figur 2.](media/07-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

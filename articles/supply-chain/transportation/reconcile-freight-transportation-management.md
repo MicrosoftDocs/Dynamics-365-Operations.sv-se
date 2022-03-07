@@ -1,12 +1,10 @@
 ---
 title: Stäm av frakt i transporthantering
 description: Det här avsnittet ger en beskrivning av fraktavstämningsprocessen.
-author: MarkusFogelberg
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSFBDetailReconcile, TMSInvoiceTable,TMSInvoiceLineReconcile,TMSReconcileInvoice, TMSFreightBillDetail, TMSFreightBillTypeAssignment, TMSRejectInvoiceLine, TMSMiscellaneousCharge
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 89983
 ms.assetid: bc34a9b1-0c11-4797-b463-25409cf98ca8
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac07155e4dde77689b1994abfb8b30f45d5a5a30
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
+ms.openlocfilehash: a63bfd34860c6a7c34cbc526c6a621cbc9666efc
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014518"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574915"
 ---
 # <a name="reconcile-freight-in-transportation-management"></a>Stäm av frakt i transporthantering
 
@@ -37,13 +35,13 @@ Fraktavstämning kan utföras manuellt eller ställas in för att utföras autom
 
 Fraktsatser beräknas med hjälp av tariffmotorer som kopplas till relevanta transportföretag. När en last bekräftas genereras en fraktsedel och fraktsatser överförs till den. Fraktsatser fördelas som tilläggsavgifter till det aktuella källdokumentet (inköpsorder, försäljningsorder och/eller överföringsorder) beroende på inställningarna som används för den vanliga faktureringsprocessen. Fraktavstämningsprocessen (som också kallas matchande processen) kan starta så snart fraktfakturan inkommer från transportföretaget. Fakturan kan tas emot elektroniskt eller som pappersfaktura. Om det är en pappersfaktura kan du generera en elektronisk faktura med hjälp av fraktsedeln som mall.
 
-[![Fraktavstämningsprocess](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
+[![Fraktavstämningsprocess.](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
 
 ## <a name="manual-reconciliation"></a>Manuell avstämning
 
 Om du stämmer av frakten manuellt måste du matcha varje fakturarad med fraktsedelns rad eller rader för lasten som faktureras. Du utför den här matchningen på sidan **Fraktsedel och fakturamatchning**. Om beloppet på fakturaraden inte överensstämmer med beloppet på fraktsedeln måste du välja en orsak till avstämningsavvikelsen. Om det finns flera skäl för avstämning kan du dela upp omatchade belopp över dem. Avstämningsorsaken avgör hur de avvikande beloppen bokförs i redovisningen. När avstämningen av hela fakturabeloppet redovisas skickas den för godkännande och sedan bokförs.journalen. I bilden nedan visas hur du skapar en fraktfaktura och utför fraktavstämning.
 
-[![Fraktavstämningsuppgifter](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
+[![Fraktavstämningsuppgifter.](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
 
 ## <a name="automatic-reconciliation"></a>Automatisk avstämning
 
@@ -105,3 +103,6 @@ Ett sätt att skapa manuell matchning för det här exemplet är att fortsätta 
 1. Matcha Inv1 och Inv 2 med FB en efter en. FB matchas fullständigt.
 
 Som det här exemplet visar bör matchande fraktfakturor med negativa belopp endast göras manuellt. Då går det alltid att matcha fraktfakturor med negativa belopp mot en fraktsedel helt och hållet matchad eftersom du då kan styra matchningssekvensen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Skapa en organisationshierarki.
 description: Använd följande procedur för att skapa en organisationshierarki.
 author: sericks007
-manager: AnnBe
 ms.date: 12/15/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySelection, HierarchyDesigner
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8627c1aa0ce9ec011b568224040b1143f0f54c31
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 4d27bec86302f3e6cef8318a0d846f31d2d9c6a5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796932"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747403"
 ---
 # <a name="create-an-organization-hierarchy"></a>Skapa en organisationshierarki.
 
@@ -48,3 +46,6 @@ Det demonstrationsdataföretag som används för att skapa den här proceduren �
     - Lägg till fler organisationer efter behov.  
     - Klicka på **Redigera** och sedan **Infoga** om du vill lägga till en organisation. När du är klar med ändringar, kan du **spara** ett utkast och/eller **publicera** ändringarna.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

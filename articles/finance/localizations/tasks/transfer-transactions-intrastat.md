@@ -2,26 +2,23 @@
 title: Överföra transaktioner till Intrastat
 description: I den här proceduren går du igenom hur du ställer in Intrastat-parametrar och överför transaktioner till Intrastat.
 author: Anasyash
-manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategory, UnitOfMeasureLookup, ProcCategoryAddCommodityCode, EcoResProductDetailsExtended, IntrastatCommodityLookup, IntrastatTransactionCode, IntrastatParameters, DeliveryMode, MarkupTable, SalesTableListPage, SalesCreateOrder, SalesTable, MarkupTrans, SalesEditLines,  Intrastat, SysQueryForm, DeliveryReason, DeliveryTerms, DestinationCode
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9c47412c8ae68b396de41f04731b841f592dcba9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 374702bae6ae30a3033a451995ae95bf35400334
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408610"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830367"
 ---
 # <a name="transfer-transactions-to-the-intrastat"></a>Överföra transaktioner till Intrastat
 
@@ -113,7 +110,7 @@ I den här proceduren går du igenom hur du ställer in Intrastat-parametrar och
 9. Visa snabbfliken **Radinformation**.
 10. Klicka på fliken **Utländsk handel**. Transporten fylls automatiskt i från det valda leveranssättet  
 11. I fältet **Port** anger eller väljer du ett värde.
-12. Klicka på **Ekonomi**. I enlighet med inställningarna kommer detta belopp att inkluderas i **Intrastat-fakturavärdet**.  
+12. Klicka på **Finance**. I enlighet med inställningarna kommer detta belopp att inkluderas i **Intrastat-fakturavärdet**.  
 13. Klicka på **Underhåll avgifter**.
 14. Ange eller välj ett värde i fältet **Avgiftskoder**. Välj till exempel **FRAKT**.  
 15. Markera kryssrutan **Behåll**.
@@ -153,3 +150,6 @@ I den här proceduren går du igenom hur du ställer in Intrastat-parametrar och
     
 Granska överförda data, inklusive destinationens/utskickets land/region, ursprungsland, vikt, kvantitet, kvantitet i ytterligare enheter, vara, transaktionskod, fakturabelopp och statistiska belopp. Du kan ändra data om det behövs.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

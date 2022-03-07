@@ -2,11 +2,11 @@
 title: Tilldela nummerserier
 description: I det här ämnet beskrivs hur du skapar nummerserier för leasing-ID:n. Det innehåller även information om hur du skapar unika ID:n som används i ombedömningsprocessen för index.
 author: moaamer
-ms.date: 07/16/2021
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetLeasePostingAccounts
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5235979532524a55ddc586b2872ebb28ebd486a280edfcc214e0c3ee0da80bad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a0b5d622df1e5dcdf7f1322328bce7e185f8edb8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733671"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819828"
 ---
 # <a name="assign-number-sequences"></a>Tilldela nummerserier
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 I det här ämnet beskrivs hur du skapar nummerserier för leasing-ID:n. Det innehåller även information om hur du skapar unika ID:n som används i ombedömningsprocessen för index.
 

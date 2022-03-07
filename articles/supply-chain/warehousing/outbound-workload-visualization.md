@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: db6ceb40279e53e9c4751a7ceb3db895e889a7c0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 8416d43fe2b8b08e4d66434a1d95daa4b01a0fa4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102898"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576170"
 ---
 # <a name="outbound-workload-visualization"></a>Visualisering av utgående arbetsbelastning
 
@@ -27,9 +27,12 @@ Avancerade installationsmöjligheter som är tillgängliga från sidan **Visuali
 
 Den här funktionen kan användas för att spåra förloppet för plocknings arbete. Funktionen är integrerad med arbetsstyrningen, och om arbetshantering är inställt kan avgående visualiseringar visa en beräkning av antalet timmar som återstår för det pågående plockningsarbetet (filtrerat).
 
-## <a name="turn-the-outbound-workload-visualization-feature-on-or-off"></a>Aktivera och inaktivera funktionen för Visualisering av utgående arbetsbelastning
+## <a name="turn-on-the-outbound-workload-visualization-feature"></a>Aktivera funktionen för Visualisering av utgående arbetsbelastning
 
-Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Visualisering av utgående arbetsbelastning* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+
+- **Modul:** *Lagerstyrning*
+- **Funktionens namn:** *Visualisering av utgående arbetsbelastning*
 
 ## <a name="set-up-outbound-workload-visualizations"></a>Ställ in visualisering av utgående arbetsbelastning
 

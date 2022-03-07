@@ -2,11 +2,9 @@
 title: Produktionsåterrapportering
 description: Den här artikeln innehåller information om produktionsåterrapportering, som ger arbetarna återrapportering om produktionsjobb. Artikeln innehåller information om de olika sätten att uppdatera produktionsåterrapportering.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistration, ProdJournalTransJob, ProdJournalTransRoute, ProdParmReportFinished
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c8f979fcb9446a0caeddaa37ea3ee1bbc3e849f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 40d6ec45f20b018b8d714e58002bde9cd717884f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966365"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814764"
 ---
 # <a name="production-feedback"></a>Produktionsåterrapportering
 
@@ -35,3 +33,6 @@ Produktionåterkoppling ger arbetarna återrapportering om produktionsjobb. Den 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7c8a36447670458b2a8fe423f35fafd5f8cff773461f4dff47577e52573abc3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a946a8325afebf76639991c60135d7425f5f211
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758859"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826772"
 ---
 # <a name="online-financial-consolidations"></a>Online ekonomisk konsolidering
 
@@ -31,7 +31,7 @@ När du har slutfört inställningarna kan du ange detaljerna för konsolidering
 ## <a name="criteria"></a>Kriterier
 I fliken **kriterier** på sidan **konsolidera [Online]** kan du definiera kontona, perioder och vilken typ av data som ska konsolideras.
 
-![Fliken Kriterier.](./media/criteria-consolidate-online.png "Fliken Kriterier")
+![Fliken Kriterier](./media/criteria-consolidate-online.png "Fliken Kriterier")
 
 Här följer en förklaring av de olika fälten på den här fliken:
 
@@ -57,16 +57,16 @@ Här följer en förklaring av de olika fälten på den här fliken:
 ## <a name="financial-dimensions"></a>Ekonomiska dimensioner
 På fliken **ekonomiska dimensioner** definierar du de dimensioner som ska tas med i konsolideringsföretaget. För att välja en dimension anger du fältet **Specifikation** till **Dimension** och definierar sedan fältordningen för dimensionen i konsolideringsföretaget.
 
-![Fliken Ekonomiska dimensioner.](./media/financial-dimensions-cons.png "Fliken Ekonomiska dimensioner")
+![Fliken Ekonomiska dimensioner](./media/financial-dimensions-cons.png "Fliken Ekonomiska dimensioner")
 
 Oavsett vilken ordning du definierar ska alltid **huvudkonto** vara det första segmentet.
 
 ## <a name="legal-entities"></a>Juridiska personer
 På fliken **Juridiska personer** definierar du de förtag som ska tas med i konsolideringsföretaget. Du kan också ange ägarskapsprocent av dessa företag. Om du anger mindre än 100 procent ägarskap ska den angivna procentandelen sammanställas med konsolideringsföretaget. För eventuella översättningsskillnader används fältet **Kontotyp för konverteringsdifferenser** för att välja huvudkontot från inställningarna på sidan **Konton för automatiska transaktioner**.
 
-![Fliken Juridiska personer.](./media/legal-entities-cons.png "Fliken Juridiska personer")
+![Fliken Juridiska personer](./media/legal-entities-cons.png "Fliken Juridiska personer")
 
-![Sidan Konton för automatiska transaktioner.](./media/accounts-for-automatic-cons.png "Sidan Konton för automatiska transaktioner")
+![Sidan Konton för automatiska transaktioner](./media/accounts-for-automatic-cons.png "Sidan Konton för automatiska transaktioner")
 
 ## <a name="elimination"></a>Eliminering
 På fliken **eliminering** finns det tre alternativ för att bearbeta elimineringar:
@@ -75,7 +75,7 @@ På fliken **eliminering** finns det tre alternativ för att bearbeta eliminerin
 - Välj elimineringsregeln och sedan på fliken **Förslagsalternativ** väljer du **Bokför bara**. Det här alternativet bearbetar elimineringen under konsolideringsprocessen och bokför inte allt i ett enda steg.
 - Kör ett elimineringsförslag separat från konsolideringsprocessen genom att använda elimineringsjournalen.
 
-![Fliken Eliminering.](./media/elimination-cons-onl.png "Fliken Eliminering")
+![Fliken Eliminering](./media/elimination-cons-onl.png "Fliken Eliminering")
 
 Mer information om elimineringar finns i [Elimineringsregler](./elimination-rules.md).
 
@@ -86,7 +86,7 @@ På fliken **valutaomräkning** definierar du juridisk person, konto och valutak
 - **Transaktionsdatum** – datumet för varje transaktion som ska användas för att välja en valutakurs. Det här alternativet används oftast för anläggningstillgångar och kallas ofta historisk kurs. Du kan inte förhandsgranska kursen eftersom det kommer att vara många kurser för olika transaktioner i kontointervallet.
 - **Användardefinierad kurs** – När du har valt detta alternativ kan du ange valutakursen som du vill använda. Det här alternativet kan vara användbart för genomsnittliga valutakurser, eller om du konsoliderar mot en fast valutakurs.
 
-![Fliken Valutaregistrering.](./media/currency-translation-cons-online.png "Fliken Valutaregistrering")
+![Fliken Valutaregistrering](./media/currency-translation-cons-online.png "Fliken Valutaregistrering")
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

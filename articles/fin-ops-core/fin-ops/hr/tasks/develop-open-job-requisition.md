@@ -2,11 +2,9 @@
 title: Utveckla och öppna jobbrekvisition
 description: Med rekryteringsprojekt kan du hantera rekryteringsprocessen.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 22437599ce8643de67c922f6f2392a0c8da94648
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: ca271450bfa534105caabbd45be98d929a3986b8
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797997"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752040"
 ---
 # <a name="develop-and-open-job-requisition"></a>Utveckla och öppna jobbrekvisition
 
@@ -65,3 +63,6 @@ Med rekryteringsprojekt kan du hantera rekryteringsprocessen. För varje rekryte
     * Statusen Startad innebär att projektet är redo att ta emot ansökningar.  
 33. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

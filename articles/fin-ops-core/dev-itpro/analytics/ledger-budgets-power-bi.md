@@ -1,26 +1,24 @@
 ---
 title: Utfall kontra budget Power BI-innehåll
-description: Det här avsnittet beskriver Utfall kontra budget Power BI-innehåll. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet.
-author: ryansandness
-manager: AnnBe
+description: Det här avsnittet beskriver Utfall kontra budget Power BI-innehåll. Här förklaras hur du kommer åt rapporterna och ger information om datamodellen.
+author: panolte
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetTrackingWorkspace
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6a185da5055741ac30c7e237ef72d07084644651
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7a5628dc67c721bf616803d6a31047cee09d8a434d43c0175dd8639815b7c9a6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685283"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737913"
 ---
 # <a name="actual-vs-budget-power-bi-content"></a>Utfall kontra budget Power BI-innehåll
 
@@ -57,3 +55,6 @@ I följande tabell finns information om mått som finns på varje enskild rappor
 | Redovisningar                   | Redovisningar som kan användas för att filtrera rapporten till den aktuella redovisningen              |
 | Budgetkoder              | Budgetkoder att filtrera rapporter efter                                                |
 | Juridiska personer            | Juridiska personer som kan användas för att filtrera rapporten till den aktuella juridiska personen |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

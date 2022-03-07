@@ -2,11 +2,9 @@
 title: Test av dataagnostisk med hjälp av Regression Suite Automation Tool
 description: I det här avsnittet beskrivs rekommendationerna för test av dataagnostisk med Regression Suite Automation Tool.
 author: kfend
-manager: AnnBe
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2398bcbf0d148932e62ebe90aa8016acf0c79c28
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: d9a5bce1cc56dfdf66b2ce58c2e740b7c4b3bdfc7f4e75396fe5dc7cb931b6d0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798212"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763420"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Test av dataagnostisk med hjälp av Regression Suite Automation Tool
 
@@ -32,7 +30,7 @@ Funktionsvalideringen av ett ERP-program kan inte vara fullständigt dataagnosti
 - ATL-ramverk
 - Regression Suite Automation Tool (RSAT)
 
-[![Testklassificeringspyramid](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
+[![Testklassificeringspyramid.](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
 
 ## <a name="overview"></a>Översikt
 -   **SysTest-ramverk** – SysTest-ramverket är pålitligt för skrivning av enhetstest. Eftersom enhetstest vanligtvis testar en metod eller funktion bör de alltid vara dataagnostik och endast beroende av indata som tillhandahålls som en del av testet.
@@ -44,8 +42,11 @@ Funktionsvalideringen av ett ERP-program kan inte vara fullständigt dataagnosti
     - o Ange de unika identifierarna, t.ex. fakturanummer, via nummerserien eller genom att använda Microsoft Excel funktioner som t.ex. =TEXT(NOW(),"yyyymmddhhmm"). Funktionen anger ett unikt nummer varje minut, vilket gör att du kan spåra när åtgärden utförs. Den kan användas för variabler som t.ex. produktinleveransnummer och leverantörsfakturanummer. Dessa tester fortsätter att arbeta med samma databas igen och återigen, utan att det krävs någon återställning.
     - Ställ alltid in **Redigeringsläge** för miljön till **Läsa** eller **Redigera** som det första test fallet eftersom standardalternativet är **Auto**. Alternativet **Auto** använder alltid den föregående inställningen och kan orsaka otillförlitliga tester. 
  
-    [![Sidan Alternativ, fliken Prestanda](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![Sidan Alternativ, fliken Prestanda.](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - Validera endast när du filtrerar efter en viss transaktion i stället för en allmän validering. För antalet poster kan du t.ex. filtrera för transaktionsnumret eller transaktionsdatumet så att valideringen exkluderar alla andra transaktioner. 
     - Om du checkar in ett kundsaldo eller en budgetkontroll sparar du först värdet och lägger sedan till transaktionsvärdet för att validera det förväntade resultatet istället för att validera ett fast förväntat värde. 
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

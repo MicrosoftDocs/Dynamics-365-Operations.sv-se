@@ -2,15 +2,12 @@
 title: Ta bort en instans
 description: I det här artikel får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 72a5b99150e5ccdf9a542b569c94c64cb95923fd
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420625"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053621"
 ---
 # <a name="remove-an-instance"></a>Ta bort en instans
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I det här artikel får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
 
@@ -35,7 +34,7 @@ Personal testkörning etableras med en 60 dagars giltighetspolicy. Ägare av te
 
 1. Gå till [Power Apps administrationscenter](https://admin.businessplatform.microsoft.com/).
 2. Välj **Miljö**.
-3. Välj testkörningsmiljö som har ett namnmönster ungefär så här: TestDrive - alias@domain
+3. Välj testkörningsmiljö som har ett namnmönster ungefär så här: TestDrive – alias@domain
 4. Välj **Ta bort** och bekräfta beslutet. 
 
 Den befintliga testkörningsmiljön tas bort. Om det tas bort kan du skaffa en ny testkörningmiljö. 
@@ -81,7 +80,10 @@ Så här återställer du miljön:
 
 1. Följ anvisningarna i [Återställ Power Apps-miljön](/power-platform/admin/recover-environment.md).
 
-2. Kontakta support för att återställa personalmiljön. För mer information, se [Få support](hr-admin-troubleshooting-support.md).
+2. Kontakta support för att återställa personalmiljön. För mer information, se [Få support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
 > [!Warning]
 > Power Apps-miljöer sparas bara i sju dagar efter borttagning. Du måste återställa miljön inom sju dagar.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

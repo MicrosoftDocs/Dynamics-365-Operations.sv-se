@@ -1,26 +1,24 @@
 ---
 title: Skapa ett nytt inköpsavtal
 description: I den här avsnittet får du hjälp med att skapa ett inköpsavtal.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchAgreement, PurchAgreementCreate, InventItemIdLookupSimple, AgreementConfirmRunForm, PurchAgreementHistory
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 92c9b429a05a2c25672cc14a0c9ee7adfef42631
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ee2cf437446f2e4c2cdd3cc0cd3be863bbafa132
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016841"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565457"
 ---
 # <a name="create-a-purchase-agreement"></a>Skapa ett nytt inköpsavtal
 
@@ -71,3 +69,6 @@ I den här avsnittet får du hjälp med att skapa ett inköpsavtal. Detta görs 
 5. Välj **Bekräftelser av inköpsavtal**. Med alternativet **Förhandsgranska/Skriv ut** kan du generera ett dokument för inköpsavtalet som du sedan kan skriva ut eller skicka till leverantören. Om du uppdaterar avtalet senare och bekräftar det på nytt visas båda versionerna här.  
 6. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

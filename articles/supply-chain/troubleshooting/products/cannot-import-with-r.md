@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: bf6eb0eb755de3f2842c235946bfd7ccad04ccf7
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: efd773313f89784d8fca6b37d867e204cb2d06ab29694a19cbec7eed107a8019
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474734"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764702"
 ---
 # <a name="you-cant-import-an-item-by-using-the-released-products-v2-entity"></a>Du kan inte importera ett objekt med hjälp av entiteten Frisläppta produkter V2
 

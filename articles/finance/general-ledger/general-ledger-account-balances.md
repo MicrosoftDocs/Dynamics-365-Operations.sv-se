@@ -2,9 +2,11 @@
 title: Kontosaldon i redovisningen
 description: Det här avsnittet beskriver två sätt att visa redovisningkontosaldon – sidan Råbalanslista och ekonomiska rapporter. Avsnittet beskriver även upp hur du uppdaterar dimensionsuppsättningsaldon.
 author: aprilolson
+manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerTrialBalanceListPage
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3c1f3832d5e50a709b3032c379298eb32b81649c1c15b5cc426aa5d3afb2ac6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9cca5fee45635f9b752d97f1ca9d0b1fbc1453e3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748196"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249225"
 ---
 # <a name="general-ledger-account-balances"></a>Kontosaldon i redovisningen
 

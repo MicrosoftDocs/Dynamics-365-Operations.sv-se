@@ -1,21 +1,23 @@
 ---
 title: Integrera anskaffning mellan Supply Chain Management och Field Service
 description: I det här avsnittet beskrivs hur integration av nedskrivningsfrågor stöder upprättande av inköpsorder och uppdateringar från både Supply Chain Management och Field Service.
-author: RamaKrishnamoorthy
+author: RichardLuan
 ms.date: 11/11/2020
 ms.topic: article
+ms.prod: ''
+ms.technology: ''
 audience: Application User
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ab251ee60bf3c831b0139beb9557c6b3faaf9f66
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2c27f06524b91f91d95ef4b901740e7761232c28
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783293"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941119"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integrera anskaffning mellan Supply Chain Management och Field Service
 
@@ -29,7 +31,7 @@ Denna integration stöder skapande av inköpsorder och i de flesta fall uppdater
 
 I följande illustration visas registren i båda systemen och hur de mappas till varandra. Inköpsorder i Field Service refererar till *kontorad* medan inköpsorder i Supply Chain Management refererar till en *leverantörsrad*. För att lösa integrationen använder dubbelriktad skrivning en referens för att länka *leverantörsrader* till *kontorader*. Mer information finns i [Integrerat leverantörshuvud](vendor-mapping.md).
 
-![Mappning för anskaffning.](media/scm-field-service-tables.png)
+![Mappning för anskaffning](media/scm-field-service-tables.png)
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -194,10 +196,23 @@ Följande mallar finns tillgängliga för integrering av anskaffningsrelaterade 
 
 | Hantering av underleverantörer | Field Service | beskrivning |
 |---|---|---|
-| [Inköpsorderrubrik V2](mapping-reference.md#183) | msdyn\_Purchaseorders | Den här tabellen innehåller de kolumner som representerar inköpsorderrubriken. |
-| [Entiteten inköpsorderrad](mapping-reference.md#181) | msdyn\_PurchaseOrderProducts | Den här tabellen innehåller de rader som representerar rader på en inköpsorder. Produktnumret används för synkronisering. Detta identifierar produkten som en lagerhållningsenhet (SKU), inklusive produktdimensioner. Mer information om produktintegration med Dataverse finns i [Enhetlig produkterfarenhet](product-mapping.md). |
-| [Produktinleveranshuvud](mapping-reference.md#185) | msdyn\_purchaseorderreceipts | Den här tabellen innehåller rubrikerna för produktinleverans som skapas när en produktinleverans bokförs i Supply Chain Management. |
-| [Produktinleveransrad](mapping-reference.md#184) | msdyn\_purchaseorderreceiptproducts | Den här tabellen innehåller rader för produktinleverans som skapas när en produktinleverans bokförs i Supply Chain Management. |
-| [Inköpsorderrad mjukt borttagen enhet](mapping-reference.md#182) | msdyn\_purchaseorderproducts | Den här tabellen innehåller information om inköpsorderrader som är mjukraderade. En inköpsorderrad i Supply Chain Management kan bara tas bort mjukt när inköpsordern har bekräftats eller godkänts, om ändringshanteringen är aktiverad. Raden finns i Supply Chain Management-databasen och markeras som **IsDeleted**. Eftersom Dataverse inte har något begrepp för mjukradering är det viktigt att den här informationen synkroniseras till Dataverse. Rader som är mjukraderade i Supply Chain Management kan på detta sätt automatiskt raderas från Dataverse. I det här fallet finns logiken för att radera en rad i Dataverse som finns i utökad Supply Chain Management. |
+| Inköpsorderrubrik V2 | msdyn\_Purchaseorders | Den här tabellen innehåller de kolumner som representerar inköpsorderrubriken. |
+| Entiteten inköpsorderrad | msdyn\_PurchaseOrderProducts | Den här tabellen innehåller de rader som representerar rader på en inköpsorder. Produktnumret används för synkronisering. Detta identifierar produkten som en lagerhållningsenhet (SKU), inklusive produktdimensioner. Mer information om produktintegration med Dataverse finns i [Enhetlig produkterfarenhet](product-mapping.md). |
+| Produktinleveranshuvud | msdyn\_purchaseorderreceipts | Den här tabellen innehåller rubrikerna för produktinleverans som skapas när en produktinleverans bokförs i Supply Chain Management. |
+| Produktinleveransrad | msdyn\_purchaseorderreceiptproducts | Den här tabellen innehåller rader för produktinleverans som skapas när en produktinleverans bokförs i Supply Chain Management. |
+| Inköpsorderrad mjukt borttagen enhet | msdyn\_purchaseorderproducts | Den här tabellen innehåller information om inköpsorderrader som är mjukraderade. En inköpsorderrad i Supply Chain Management kan bara tas bort mjukt när inköpsordern har bekräftats eller godkänts, om ändringshanteringen är aktiverad. Raden finns i Supply Chain Management-databasen och markeras som **IsDeleted**. Eftersom Dataverse inte har något begrepp för mjukradering är det viktigt att den här informationen synkroniseras till Dataverse. Rader som är mjukraderade i Supply Chain Management kan på detta sätt automatiskt raderas från Dataverse. I det här fallet finns logiken för att radera en rad i Dataverse som finns i utökad Supply Chain Management. |
+
+[!include [banner](../../includes/dual-write-symbols.md)]
+
+[!include [Currency](includes/productreceiptheader-msdyn-purchaseorderreceipts.md)]
+
+[!include [Currency](includes/productreceiptline-msdyn-purchaseorderreceiptproducts.md)]
+
+[!include [Currency](includes/purchaseorderheadersv2-msdyn-purchaseorders.md)]
+
+[!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
+
+[!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
+
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -5,6 +5,7 @@ author: sherry-zheng
 ms.date: 01/26/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ITMCostTemplateTable, ITM CostEstimateDialog, ITMCostEstimateTable, SysOperationTemplateForm
 audience: Application User
@@ -13,13 +14,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-26
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5a8df57eaa779fe7b1f709a59372d9c634447c4a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: 510f5fc4910dde2f91fe2d666abb23a9bd7381f1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565817"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823443"
 ---
 # <a name="estimate-and-manage-landed-costs"></a>Uppskatta och hantera hemtagningskostnader
 

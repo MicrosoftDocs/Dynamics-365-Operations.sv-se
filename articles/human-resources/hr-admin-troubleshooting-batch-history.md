@@ -1,30 +1,32 @@
 ---
 title: Optimera prestanda med automatiska rensningsuppgifter
-description: I det här avsnittet beskrivs hur du löser vissa prestandaproblem med Microsoft Dynamics 365 Human Resources genom att rensa historiken för batchjobb.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: I detta avsnitt beskrivs hur du förbättrar prestandan i Microsoft Dynamics 365 Human Resources genom att rensa historiken för batchjobb.
+author: twheeloc
+ms.date: 08/21/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Human Resources
+ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: a983fde8ba393ab25f2b330014e04a1379f0e4d0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a293b128364b8b0b293da03495d55e46f6b01fd6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420536"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066103"
 ---
 # <a name="optimize-performance-with-auto-cleanup-tasks"></a>Optimera prestanda med automatiska rensningsuppgifter
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Utleverans**
 
@@ -42,25 +44,28 @@ Schemalägg en automatisk uppgift för att rensa historiken för batchjobb. Vi r
 
 2. I fätet **Sök**, ange **Rensa historik för batchjobb**.
 
-   ![Sök efter rensa historik för batchjobb](media/talent-batch-history-cleanup-search-bar.png)
+   ![Sök efter historikrensning för batchjobb.](media/talent-batch-history-cleanup-search-bar.png)
 
 3. I **Historikgränser (dagar)**, ange **30**.
 
-   ![Ange historikgräns till 30](media/talent-batch-history-cleanup-history-limit.png)
+   ![Ange historikgräns till 30.](media/talent-batch-history-cleanup-history-limit.png)
 
 4. Välj **kör i bakgrunden** och välj sedan **återkommande**.
 
-   ![Ange upprepning](media/talent-batch-history-cleanup-recurrence.png)
+   ![Ange upprepning.](media/talent-batch-history-cleanup-recurrence.png)
 
 5. Under **definiera återkommande**, ange **Startdatum** och **Starttid** vid ledighet eller helg och välj sedan **INGET SLUTDATUM**. 
 
-   ![Definiera återkommande startdatum och tid](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Definiera startdatum och tid för upprepning.](media/talent-batch-history-cleanup-define-recurrence.png)
 
 6. Under **ÅTERKOMMANDE MÖNSTER**, välj **dagar** och ange **UPPREPA EFTER ANGIVET INTERVALL** till **7**.
 
-   ![Ställ in rensning för att upprepa veckovis](media/talent-batch-history-cleanup-recurrence-pattern.png)
+   ![Ställ in rensning att upprepas veckovis.](media/talent-batch-history-cleanup-recurrence-pattern.png)
 
 7. Välj **OK**.
 
 8. Ändra övriga parametrar under **kör i bakgrunden** om det behövs och välj **OK**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Definiera och underhåll butikskanaler
 description: Det här avsnittet innehåller en översikt över processen för att ställa in tegelstens- och-murbruksbutiker, som kallas för butiker i Dynamics 365 Commerce. Här finns information om de uppgifter du måste utföra båda före och efter att du ställer in en butik.
 author: mugunthanm
+manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ef06d79e1fa4d024dc1de0125cc72bdba5671aad384c7988dc63d407323b7abc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 51524ad6918d962d70a8a700f135f96e236f7d34
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760212"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000885"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definiera och underhålla butikskanaler
 
@@ -86,6 +88,3 @@ Commerce använder organisationshierarkier för att strukturera kanaler. Organis
 > [!NOTE]
 > Om du vill använda Commerce säljfunktioner, måste konfigurationsnyckeln **Flera leveransadresser** till aktiveras. Den här konfigurationsnyckeln finns i den konfigurationsnyckel för **handel** under **Systemadministration**\> **Konfiguration** \> **Licenskonfiguration**. Detta krävs på grund av olika valideringar baserat på leveransadressen som konfigurerats på försäljningsorderradnivå.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: Huvudfakturadata i AP med hjälp av leverantörsfakturan
 description: Med den här guiden blir det enklare att skapa en leverantörsfaktura från en inköpsorder och visa resultaten för att matcha inköpsordern, inleverans och fakturan (trevägsmatchning).
 author: abruer
+manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines, VendEditInvoice, InventItemIdLookupSimple, VendInvoiceMatchingDetails
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b3e27ed41ff1fa44d5e8779cb5e81e45d02110eb3b37be3a3b9938cabfc395bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f80c88b7fb3542f624d233f670cd7cd6ccd48b94
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777298"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4447845"
 ---
 # <a name="key-invoice-data-in-ap-using-a-vendor-invoice"></a>Huvudfakturadata i AP med hjälp av leverantörsfakturan
 
@@ -70,6 +73,3 @@ Med den här guiden blir det enklare att skapa en leverantörsfaktura från en i
 19. Klicka på **Bokför**.
 20. Stäng formuläret. Observera att inköpsordern inte längre registreras som mottagen men inte fakturerad.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

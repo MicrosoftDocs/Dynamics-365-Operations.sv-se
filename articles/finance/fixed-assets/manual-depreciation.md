@@ -2,11 +2,9 @@
 title: Manuell avskrivning
 description: Det här avsnittet innehåller en översikt över den manuella avskrivningsmetoden.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 228e6c94042942a26793eb0bebc1186dd4767e7f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 444506bdbf33cb1bd05ae7b55f2059e0eb1ab5b136e8fb1adb6f9e5f53b7067c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969039"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743035"
 ---
 # <a name="manual-depreciation"></a>Manuell avskrivning
 
@@ -75,3 +73,6 @@ Den sammanlagda procentsatsen för alla intervall behöver inte vara 100. Du kom
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

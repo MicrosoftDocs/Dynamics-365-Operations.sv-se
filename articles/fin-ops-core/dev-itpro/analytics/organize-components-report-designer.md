@@ -1,12 +1,11 @@
 ---
 title: Organisera rapportdelar i rapportdesignern
-description: När du har utformat byggblock och skapat rapporter är det praktiskt att ordna objekten så att de blir lättare att hitta för användarna. Den här artikeln innehåller en beskrivning av hur du organiserar befintliga rapporter, byggblock och objekt i rapportdesignern.
+description: Den här artikeln innehåller en beskrivning av hur du organiserar befintliga rapporter, byggblock och objekt i rapportdesignern.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 58525da35eb9e9376cb5793ad6c6fa45b9de42e6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d348993422b24776098657dcef25a088ba2f826b
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685821"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564553"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organisera rapportdelar i rapportdesignern
 
@@ -62,7 +61,7 @@ Du kan gruppera rapportdefinitioner för att skapa flera rapporter samtidigt. F�
 3. Klicka på fliken **Rapportgrupp** och utför valfria ändringar.
 4. På menyn **Arkiv** klickar du på **Spara** för att spara den ändrade rapportgruppen. Du kan också klicka på knappen **Spara** ![Spara](media/save.gif "Spara") i verktygsfältet.
 
-> [OBS] Om du har schemalagda rapporter som skapas vid inställda intervall kan du åsidosätta dessa inställningar och skapa en rapport omedelbart.
+> Om du har schemalagda rapporter som skapas vid inställda intervall kan du åsidosätta dessa inställningar och skapa en rapport direkt.
 
 ### <a name="generate-a-report-group-report"></a>Skapar en rapportgruppsrapport
 
@@ -148,3 +147,6 @@ Endast standardbasperiodinställningar sparas tillsammans med rapportdefinitione
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

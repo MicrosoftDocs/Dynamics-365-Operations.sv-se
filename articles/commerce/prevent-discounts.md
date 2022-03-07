@@ -2,9 +2,11 @@
 title: Alternativ för att förhindra rabatter för butiksprodukter
 description: Det finns olika skäl varför återförsäljare kan vilja förhindra att vissa produkter rabatteras från ett erbjudande eller vid försäljningen i POS.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailPeriodicDiscount
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 257e52d38512aacdf852fb58cb2b0e6f7c949cb3ac8b32e4dc9f9c859bb1eef9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5037067917290f21f681d2446a0e1ab0e31228c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763798"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231210"
 ---
 # <a name="options-for-preventing-discounts-for-retail-products"></a>Alternativ för att förhindra rabatter för butiksprodukter
 
@@ -37,7 +39,7 @@ Följande alternativ, som du hittar på fliken **Commerce** för frisläppta pro
 > [!NOTE]
 > De här inställningarna begränsar inte hur prisåsidosättningsåtgärden eftersom de anger grundpriset och behandlas inte som en rabatt.
 
-[![Fältet Förhindra rabatt.](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+[![Förhindra rabattfält](./media/prevent-discounts.png)](./media/prevent-discounts.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

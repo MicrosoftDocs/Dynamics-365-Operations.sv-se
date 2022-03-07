@@ -1,24 +1,24 @@
 ---
 title: Konfigurera mätvärden för IoT-information
 description: I det här avsnittet beskrivs hur du ställer in mätvärden för IoT-information.
-author: tonyafehr
+author: robinarh
 ms.date: 04/25/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85db0211c32ad4e27c3a9a65d2c74c5a39687f9c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1f623e49422dfb238415ae450fd0ab354b68c38b
+ms.sourcegitcommit: 614d79cba238e466d445767a7d0a012e785a9861
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783108"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7652091"
 ---
 # <a name="set-up-metrics-for-iot-intelligence"></a>Konfigurera mätvärden för IoT-information
 

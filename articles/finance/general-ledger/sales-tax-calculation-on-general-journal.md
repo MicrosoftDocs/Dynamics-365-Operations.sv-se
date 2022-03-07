@@ -1,26 +1,28 @@
 ---
 title: Momsberäkning för allmänna journalrader
 description: Det här ämnet förklarar hur moms beräknas för olika typer av konton (leverantör, kund, redovisning och projekt) på allmänna journalrader.
-author: EricWangChen
-ms.date: 02/16/2022
+author: EricWang
+manager: Ann Beebe
+ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: wangchen
+ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 684b38a4940ff00978201334d1db0cef87b79b35
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: 25eb8dd6965f659f0febe53a6340cb1381c5664f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311964"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204916"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Momsberäkning för allmänna journalrader
 [!include [banner](../includes/banner.md)]
@@ -55,7 +57,7 @@ Annars är momsriktningen Ingående moms.
 
 Följande diagram visar regeln grafiskt.
 
-![Momsriktningsmöjligheter för projektkonton.](media/Sales-Tax-Direction-Vendor.jpg)
+![Momsriktningsmöjligheter för projektkonton](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-vendor"></a>Kontotypen är leverantör
 
@@ -73,13 +75,23 @@ Annars är momsriktningen Ingående moms.
 
 Följande diagram visar regeln grafiskt.
 
-![Momsriktningsmöjligheter för leverantörskonton.](media/Sales-Tax-Direction-Vendor.jpg)
+![Momsriktningsmöjligheter för leverantörskonton](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-customer"></a>Kontotyp är kund
 
-Om en verifikation har en journalrad där kontotypen är **kund**, använder alla journalrader i verifikationen samma momsriktning. 
+Om en verifikation har en journalrad där kontotypen är **kund**, använder alla journalrader i verifikationen samma momsriktning. Följande poäng visar de möjliga momsriktningarna för kundkonton.
 
-Om momskoden är momsbefriad är momsriktningen är skattefritt Sale. Annars är momsriktningen Utgående moms.
+•   Om momskoden är momsbefriad är momsriktningen är skattefritt inköp.
+
+•   Om momskoden är Inomeuropeisk moms är momsriktningen Ingående moms.
+
+•   Om momskoden är återfört tillägg moms är momsriktningen Ingående moms.
+
+Annars är momsriktningen Utgående moms.
+
+Följande diagram visar regeln grafiskt.
+
+![Momsriktningsmöjligheter för kundkonton](media/Sales-Tax-Direction-Customer.jpg)
 
 ### <a name="account-type-is-ledger"></a>Kontotypen är Redovisning
 
@@ -93,7 +105,7 @@ Annars, om journalbeloppet är debet (positivt), är momsriktningen för Ingåen
 
 Följande diagram visar regeln grafiskt.
 
-![Momsriktningsmöjligheter för redovisningskonton.](media/Sales-Tax-Direction-Ledger.jpg)
+![Momsriktningsmöjligheter för redovisningskonton](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### <a name="override-the-sales-tax-direction"></a>Åsidosätt momsriktningen
 
@@ -105,9 +117,9 @@ Gå till **Redovisning \> Kontoplan \> Konton \> Huvudkonton** och välj snabbfl
 
 I det här avsnittet beskrivs hur tecknet för momsbelopp beräknas.
 
-![Sidan för momstransaktioner.](media/sales-tax-amount-sign.jpg)
+![Sidan momstransaktioner](media/sales-tax-amount-sign.jpg)
 
-I följande register visas den allmänna regeln för bestämning av momsriktning och tecken på momsbelopp i det tillfälliga momsregistret.
+I följande tabell visas den allmänna regeln för bestämning av momsbelopp i det tillfälliga momsregistret.
 
 | Journalradsbelopp | Momsriktning  | Momsbelopptecken |
 |---------------------|----------------------|-----------------------|
@@ -116,7 +128,7 @@ I följande register visas den allmänna regeln för bestämning av momsriktning
 | Negativa            | Ingående moms | Negativa              |
 | Negativa            | Utgående moms    | Positiva              |
 
-Det finns en särskild regel för verifikationer som bara har raderna **Projekt** eller **Redovisning** när en moms grupp eller artikelmomsgrupp har valts på raden **Redovisning**. Denna regel styrs genom funktionen **Aktivera funktionen för oboeroende momsberäkning för allmänna journaler**. När den här funktionen inaktiveras använder momsbeloppet för raden **redovisning** debet-/kreditriktningen för raden **projekt**. När den här funktionen aktiveras använder momsbeloppet för raden **redovisning** debet-/kreditriktningen. I följande tabeller visas regeln för varje scenario. 
+Det finns en särskild regel för verifikationer som bara har raderna **Projekt** eller **Redovisning** när en moms grupp eller artikelmomsgrupp har valts på raden **Redovisning**. Den här regeln styrs genom aktivering av oberoende momsberäkningsfunktion för allmänna journaler. När den här funktionen inaktiveras använder momsbeloppet för raden **redovisning** debet-/kreditriktningen för raden **projekt**. När den här funktionen aktiveras använder momsbeloppet för raden **redovisning** debet-/kreditriktningen. I följande tabeller visas regeln för varje scenario. 
 
 **Regel när funktionen är aktiverad**
 

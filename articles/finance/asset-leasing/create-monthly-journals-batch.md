@@ -2,7 +2,7 @@
 title: Skapa månadsvisa poster i redovisningsjournal i en batch
 description: I det här ämnet beskrivs hur du skapar journalposter i ett batchjobb för att öka effektiviteten när månadsutgifter för leasing registreras.
 author: moaamer
-ms.date: 08/10/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 22e2892a6866123ecf0e72511bdce19fe12895df
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: cb03ebe316b1655b1d0ad1d2b9108c4ead7fc61f7a25b4f554b574186efa03b7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344863"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737735"
 ---
 # <a name="create-monthly-journal-entries-in-a-batch"></a>Skapa månadsvisa poster i redovisningsjournal i en batch
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 I det här ämnet beskrivs hur du skapar journalposter i ett batchjobb för att öka effektiviteten när månadsutgifter för leasing registreras. Batchbearbetning kan användas för att skapa journalposter från flera planer. Dessa journalposter kan vara leasingbetalningar, skuldamorteringar, amortering av ROU-tillgångar samt utgifter för verkställighetskostnader. Du kan också använda batchbearbetning för att utföra den första redovisningen av flera leasingar samtidigt, eller för att skapa övergångsjusteringar för flera leasingar samtidigt.
 
@@ -37,6 +35,5 @@ Om du vill konfigurera ett batchjobb eller bearbeta betalningsfakturor, avskrivn
 >
 > Journalposterna skapas men bokförs inte förrän du väljer kommandot **Kör**.
 
-Om du vill bokföra den ursprungliga igenkänningsjournalen på ett annat datum än leasingavtalets startdatum väljer du **Tilldela ursprungligt bokföringsdatum för igenkänning**. Ett **datumfält** visas där du kan ange korrekt bokföringsdatum.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

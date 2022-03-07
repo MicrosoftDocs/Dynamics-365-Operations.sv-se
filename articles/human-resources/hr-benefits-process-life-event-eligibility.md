@@ -2,7 +2,7 @@
 title: Bearbetning av berättigande för livshändelse
 description: I den här artikeln beskrivs hur du kör bearbetning av berättigande för livshändelse.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17ecef1412eb0232fbb4782bd9d2d79f210c7e80
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fdb2f00675fa5191e05dcb99525c1ec9a8b16bd2
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420538"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466288"
 ---
 # <a name="process-life-event-eligibility"></a>Bearbetning av berättigande för livshändelse
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I den här artikeln beskrivs hur du kör bearbetning av berättigande för livshändelse.
 
@@ -48,3 +50,6 @@ I den här artikeln beskrivs hur du kör bearbetning av berättigande för livsh
    4. Välj **OK**. Processen kommer att köras med de parametrar du angett.
 
 4. Välj **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

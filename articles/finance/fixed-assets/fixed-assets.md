@@ -1,38 +1,38 @@
 ---
 title: Startsidan Anläggningstillgångar
-description: Anläggningstillgångar är artiklar av värde, t.ex. fastigheter, fordon, mark eller utrustning, som ägs av en privatperson eller en organisation.
-author: ShylaThompson
-manager: AnnBe
+description: Det här avsnittet ger tillgång till resurser som kan hjälpa dig använda anläggningstillgångar för Microsoft Dynamics 365 Finance.
+author: moaamer
 ms.date: 08/31/2017
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 21481
+ms.custom:
+- "21481"
+- intro-internal
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
-ms.author: roschlom
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf6f0bc27121e6c1a0b4bba2ad1ca31909423c92
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c1a31273e16275750594ef8d9b99f9a4cd2222ef
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969087"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674861"
 ---
 # <a name="fixed-assets-home-page"></a>Startsidan Anläggningstillgångar
 
 [!include [banner](../includes/banner.md)]
 
-Anläggningstillgångar är artiklar av värde, t.ex. fastigheter, fordon, mark eller utrustning, som ägs av en privatperson eller en organisation. 
+Det här avsnittet ger tillgång till resurser som kan hjälpa dig använda anläggningstillgångar för Microsoft Dynamics 365 Finance. Anläggningstillgångar är artiklar av värde som ägs av en person eller en organisation. Artiklarna omfattar byggnader, fordon, mark och utrustning. 
 
-Det går att ställa in och ange anskaffningsinformation för anläggningstillgångar och sedan hantera dem genom att skriva av dem och ställa in en kapitaliseringströskel för att bestämma avskrivningen. Det går att beräkna justeringar för anläggningstillgångarna och även avyttra dem. När du använder Redovisning tillsammans med Anläggningstillgångar går det att visa anläggningstillgångarnas aktuella värde. Sättet på vilket anläggningstillgångar hanteras måste motsvara både internationella redovisningsstandarder och redovisningslagarna i varje land/region. Kraven kan omfatta regler för att registrera anskaffnings- och avyttringstransaktioner, avskrivningar, livstid samt uppskrivningar och nedskrivningar av anläggningstillgångar. Funktionen Anläggningstillgångar införlivar flera av dessa standarder och regler.
+Det går att ställa in och ange anskaffningsinformation för anläggningstillgångar och sedan hantera tillgångarna genom att skriva av dem och ställa in en kapitaliseringströskel för att bestämma avskrivningen. Det går att beräkna justeringar för anläggningstillgångarna och även avyttra dem. När du använder Redovisning tillsammans med Anläggningstillgångar går det att visa anläggningstillgångarnas aktuella värde. Sättet på vilket anläggningstillgångar hanteras måste motsvara både internationella redovisningsstandarder och redovisningslagarna i varje land/region. Kraven kan omfatta regler för att registrera anskaffnings- och avyttringstransaktioner, avskrivningar, livstid samt uppskrivningar och nedskrivningar av anläggningstillgångar. Funktionen Anläggningstillgångar införlivar flera av dessa standarder och regler.
 
-[![Affärsprocess](./media/FA-process.PNG)](./media/FA-process.PNG)
+[![Affärsprocess.](./media/FA-process.PNG)](./media/FA-process.PNG)
 
 
 
@@ -40,7 +40,7 @@ Det går att ställa in och ange anskaffningsinformation för anläggningstillg�
 
 #### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
-Gå till [Utgivningsplaner för Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner har planerats. 
+Gå till [Utgivningsplaner för Microsoft Dynamics 365](/dynamics365/release-plans/) för att se vilka nya funktioner har planerats. 
 
 #### <a name="blogs"></a>Bloggar
 
@@ -60,3 +60,6 @@ Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

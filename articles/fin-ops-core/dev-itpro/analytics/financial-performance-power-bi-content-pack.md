@@ -2,11 +2,9 @@
 title: Innehållspaket för ekonomiska resultat för PowerBI.com
 description: Det här avsnittet beskriver PowerBI.com-lösning för finansiellt resultat.
 author: kweekley
-manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34ebb9c6262defa5ccf520ad51101eb3bc613fef
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1ca8338473b2efd91b6570e140ee1def3fa93df14dcf57273f601efb7f548d08
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682755"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767813"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Innehållspaket för ekonomiska resultat för PowerBI.com
 
@@ -87,4 +85,7 @@ Följande enheter användes till grund för PowerBI.com-lösningen för **ekonom
 - Redovisningar
 - ChartofAccounts
 
-Dessa enheter används för att skapa beräknade mått i datamodellen. Beräknade åtgärder används för att beräkna huvudindikatorerna för prestanda (KPI) samt de rapporter som används i innehåll. Som standard kommer innehållspaketet med data för de senaste tre åren och ett framtida år. Om du vill ta med ytterligare beräkningar i dina rapporter och din instrumentpanel, kan du ändra arbetsboken i [Microsoft Excel](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denna arbetsbok är den standarddatamodell som använts för att skapa innehållet.
+Dessa enheter används för att skapa beräknade mått i datamodellen. Beräknade åtgärder används för att beräkna huvudindikatorerna för prestanda (KPI) samt de rapporter som används i innehåll. Som standard kommer innehållspaketet med data för de senaste tre åren och ett framtida år. Om du vill ta med ytterligare beräkningar i dina rapporter och din instrumentpanel, kan du ändra arbetsboken i [Microsoft Excel](/dynamics/s-e/). Denna arbetsbok är den standarddatamodell som använts för att skapa innehållet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

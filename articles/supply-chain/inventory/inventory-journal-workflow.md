@@ -1,24 +1,26 @@
 ---
 title: Godkännandearbetsflöden för lagerjournal
 description: Det här ämnet ger en beskrivning av hur du kan ställa in och använda arbetsflöden för lagerjournaler för olika typer av fysiska lagertransaktioner. Arbetsflöden för lagerjournal hjälper till att säkerställa att endast godkända lagerjournaler kan bokföras på transaktioner.
-author: yufeihuang
+author: sherry-zheng
+manager: tfehr
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: d9f57d35adac0820d0635ab97a4cb4cefc1d504c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778315"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011682"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Godkännandearbetsflöden för lagerjournal
 
@@ -31,7 +33,7 @@ I det här ämnet beskrivs hur man ställer in och använder arbetsflöden för 
 
 ## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Aktivera funktionen godkännandearbetsflöden för lagerjournal
 
-Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan använda sidan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera/inaktivera den vid behov. Här visas funktionen i listan:
+Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 
 - **Modul:** *Hantering av lager och lagerstyrning*
 - **Funktionsnamn:** *journal arbetsflödet för lagerjournal*
@@ -55,9 +57,9 @@ För att skapa ditt godkännandearbetsflöde för lagerjournal:
     - **Lagerjournal för strukturlista**
     - **Lagerjusteringsjournal**
 
-    ![Dialogrutan skapa arbetsflöde.](media/journal-workflow-create-workflow.png "Dialogrutan skapa arbetsflöde")
+    ![Dialogrutan skapa arbetsflöde](media/journal-workflow-create-workflow.png "Dialogrutan skapa arbetsflöde")
 
-1. Arbetsflödesredigerarens app startas på din dator. (Du kan bli ombedd att godkänna den här åtgärden.) Använd den för att utforma arbetsflödet efter behov. Mer information om hur du använder arbetsflödes redigeraren finns i [arbetsflödessystem – översikt](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
+1. Arbetsflödesredigerarens app startas på din dator. (Du kan bli ombedd att godkänna den här åtgärden.) Använd den för att utforma arbetsflödet efter behov. Mer information om hur du använder arbetsflödes redigeraren finns i [arbetsflödessystem - översikt](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 1. När du har sparat och stängt appen i arbetsflödes redigeraren måste du välja om du vill aktivera arbetsflödesversionen eller behålla den som inaktiv.
 
 > [!NOTE]
@@ -73,7 +75,7 @@ Så här kopplar du ett arbetsflöde för lagerjournal med ett lagerjournalnamn:
 1. Välj ett journalnamn från listkolumnen för att öppna sidan inställningar för dess inställningar.
 1. På snabbfliken **Allmänt** ställer du in **Godkännandearbetsflöde** till **Ja**. Om du uppmanas att bekräfta åtgärden väljer du **Ja**.
 
-    ![Tilldela ett arbetsflöde till ett journalnamn.](media/journal-workflow-journal-name.png "Tilldela ett arbetsflöde till ett journalnamn")
+    ![Tilldela ett arbetsflöde till ett journalnamn](media/journal-workflow-journal-name.png "Tilldela ett arbetsflöde till ett journalnamn")
 
 1. Öppna listrutan **Arbetsflöde** och välj lämpligt arbetsflöde. I listan visas varje aktivt arbetsflöde som du har skapat med hjälp av appen arbetsflödesredigeraren.
 
@@ -87,7 +89,7 @@ När du har associerat namnet på en lagerjournal med det matchande arbetsflöde
 1. Fyll i journalen efter behov.
 1. När du skapar eller öppnar en lagerjournal med ett godkännande arbetsflöde som är associerat med den, kommer knappen **arbetsflöde** att vara aktiv i åtgärdsfönstret. När du är klar att skicka in journalen för godkännande väljer du knappen **arbetsflöde** för att öppna en nedrullningsbar dialogruta och sedan välja **Skicka**. Godkännandeförfrågan skickas sedan till relevant godkännare, som meddelas med hjälp av den meddelandemetod som har konfigurerats för arbetsflödet.
 
-    ![Skicka en journal för godkännande.](media/journal-workflow-inventory-journal.png "Skicka en journal för godkännande")
+    ![Skicka en journal för godkännande](media/journal-workflow-inventory-journal.png "Skicka en journal för godkännande")
 
 Om du vill återkalla en begäran om godkännande öppnar du den relevanta journalen, väljer knappen **Arbetsflöde** och väljer sedan **återkalla**. Detta återställer arbetsflödet.
 
@@ -116,6 +118,3 @@ Så här granskar du arbetsflödeshistoriken för en journal:
 1. I navigeringsfönstret, expandera **Lagerhantering \> Journalposter \> Artiklar** och välj sedan en lagerjournaltyp.
 1. Öppna relevanta journalen.
 1. Klicka på knappen **arbetsflöde** i åtgärdsfönstret för att öppna en nedrullningsbar dialogruta. Välj **arbetsflödeshistorik**. Mer information finns i [Visa arbetsflödeshistorik](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

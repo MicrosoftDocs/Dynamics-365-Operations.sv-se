@@ -2,11 +2,9 @@
 title: Ändra format genom att återanvända Excel-mallar
 description: För att slutföra dessa steg i denna procedur måste du först slutföra proceduren ER - designa en konfiguration för att skapa rapporter i OPENXML-format".
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5b1bc5f227a0944c513dee2c12a5042decde872
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 24eb64679b458d14e30dc5b4365c7305d71cfc4c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684245"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754900"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Ändra format genom att återanvända Excel-mallar
 
@@ -83,3 +81,6 @@ Den här proceduren beskriver hur du ändrar formatkonfigurationen i en elektron
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Använd den ändrade utkastversionen av ER-formatet för bearbetning av betalningsplansjournal
 
 Granska det skapade kalkylbladet, inklusive den nya detaljen på betalningsraderna – betalningsdatum.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

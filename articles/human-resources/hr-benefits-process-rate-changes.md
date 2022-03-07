@@ -2,7 +2,7 @@
 title: Behandla prisändringar
 description: Bearbeta förmånens prisändringar i Microsoft Dynamics 365 Human Resources när en ny eller befintlig förmånsplan har en ändring i inställningarna för berättiganderegler.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: da42ef6ea91b95903316e35b551b222b8ff3b946
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c87d98a16431805ad652e28e5ca100a4152ad0c6
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420564"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466240"
 ---
 # <a name="process-rate-changes"></a>Behandla prisändringar
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Bearbeta förmånens prisändringar i Microsoft Dynamics 365 Human Resources när en ny eller befintlig förmånsplan har en ändring i inställningarna för berättiganderegler. Om en ny berättiganderegel skapas och tilldelas till planen uppmanas systemet att köra om arbetarens berättigande för att kontrollera om medarbetaren kan bli berättigade till planen baserat på nya berättigandealternativ. 
 
@@ -48,3 +50,6 @@ Bearbeta förmånens prisändringar i Microsoft Dynamics 365 Human Resources nä
    4. Välj **OK**. Processen kommer att köras med de parametrar du angett.
 
 4. Välj **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

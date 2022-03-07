@@ -1,29 +1,27 @@
 ---
 title: Översikt över dubbelriktad skrivning
-description: Det här ämnet ger en översikt över dubbelriktad skrivning. Dubbelriktad skrivning är en infrastruktur som ger nära realtids samverkan mellan Microsoft Dynamics 365 modellstyrda appar och Finance and Operations-appar.
+description: Det här ämnet ger en översikt över dubbelriktad skrivning som ger en medföljande infrastruktur mellan kundengagemangsappar och Finance and Operations-appar.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 85530cf644c7b7ffe922a6fb3288f4e05c5df91c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 951136a6a5197d2ec081b325df2980ad2fcf6e42
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685623"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542722"
 ---
 # <a name="dual-write-overview"></a>Översikt över dubbelriktad skrivning
 
@@ -39,7 +37,7 @@ Dubbelriktad skrivning är en medföljande infrastruktur som ger nära realtidss
 
 Dubbelriktad skrivning ger tätt kombinerad, dubbelriktad integration mellan Finance and Operations-appar och Dataverse. Alla dataändringar i Finance and Operations-appar orsakar skrivningar till Dataverse och alla dataändringar i Dataverse orsakar skrivningar till Finance and Operations-appar. Det här automatiserade dataflödet ger ett integrerat användargränssnitt mellan programmen.
 
-![Datarelation mellan appar](media/dual-write-overview.jpg)
+![Datarelation mellan appar.](media/dual-write-overview.jpg)
 
 Dubbelriktad skrivning har två aspekter: en *infrastruktur* aspekt och en *applikation* aspekt.
 
@@ -53,7 +51,7 @@ Infrastrukturen för dubbelriktad skrivning är utökningsbar och tillförlitlig
 + Kombinerad vy över aktivitet och felloggar för dataadministratörer
 + Möjlighet att konfigurera anpassade aviseringar och tröskelvärden samt att prenumerera på meddelanden
 + Intuitivt användargränssnitt (UI) för filtrering och transformeringar
-+ Möjlighet att ställa in och visa enhetsberoenden och relationer
++ Möjlighet att ställa in och visa tabellberoenden och relationer
 + Utökningsbarhet för både standard- och anpassade tabeller och mappningar
 + Tillförlitlig program livscykelhantering
 + Installations upplevelse utanför lådan för nya kunder
@@ -86,14 +84,14 @@ Dubbelriktad skrivning skapar en mappning mellan koncept i Finance and Operation
 
 Dubbelriktad skrivning ger dataintegrering i Microsoft Dynamics 365-program. Detta robusta ramverk länkar sig till miljöer och gör att olika affärsprogram kan fungera tillsammans. Här följer de viktigaste skälen till varför du bör använda dubbelriktad skrivning:
 
-+ Dubbelriktad skrivning ger tätt sammankopplade, nära realtid och dubbelriktad integration mellan Finance and Operations-appar och modellstyrda appar i Dynamics 365. Den här integrationen gör Microsoft Dynamics 365 en enda kontaktpunkt för alla dina affärslösningar. Kunder som använder Dynamics 365 Finance och Dynamics 365 Supply Chain Management, men som inte använder Microsoft-lösningar för hantering av kundrelationer (CRM), flyttar till Dynamics 365 för sitt stöd till dubbelriktad skrivning.
++ Dubbelriktad skrivning ger tätt sammankopplade, nära realtid och dubbelriktad integration mellan Finance and Operations-appar och kundengagemangsappar. Den här integrationen gör Microsoft Dynamics 365 en enda kontaktpunkt för alla dina affärslösningar. Kunder som använder Dynamics 365 Finance och Dynamics 365 Supply Chain Management, men som inte använder Microsoft-lösningar för hantering av kundrelationer (CRM), flyttar till Dynamics 365 för sitt stöd till dubbelriktad skrivning.
 + Data från kunder, produkter, åtgärder, projekt och sakernas Internet (IoT) skickas automatiskt till Dataverse via dubbelriktad skrivning. Denna anslutning är användbar för företag som är intresserade av Power Platform expansioner.
 + Infrastrukturen för dubbelriktad skrivning följer principen för ingen kod/ingen kod. Minsta tekniska ansträngning krävs för att utöka standardmappningarna mellan tabeller och för att inkludera anpassade kartor.
 + Dubbelriktad skrivning stöder både online-läge och offline-läge. Microsoft är det enda företaget som har stöd för online- och offline-lägen.
 
 ## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Vad innebär dubbla skrivmedel för utvecklare och arkitekter av kundengagemangsappar?
 
-Vid dubbelriktad skrivning automatiseras dataflödet mellan Finance and Operations-appar och kundengagemangsappar. Dubbelriktad skrivning består av två AppSource-lösningar som är installerade på Dataverse. Lösningarna utökar entitetens schema, plugin-program och arbetsflöden i Dataverse så att de kan skalas till ERP-storlek. För att implementeringen ska lyckas måste utvecklare och arkitekter av kundengagemangsappar kunna känna till dessa ändringar och samarbeta med deras motsvarigheter på Finance and Operations-appar.
+Vid dubbelriktad skrivning automatiseras dataflödet mellan Finance and Operations-appar och kundengagemangsappar. Dubbelriktad skrivning består av två AppSource-lösningar som är installerade på Dataverse. Lösningarna utökar tabellens schema, plugin-program och arbetsflöden i Dataverse så att de kan skalas till ERP-storlek. För att implementeringen ska lyckas måste utvecklare och arkitekter av kundengagemangsappar kunna känna till dessa ändringar och samarbeta med deras motsvarigheter på Finance and Operations-appar.
 
 Om du vill skapa paritet med Finance and Operations-appar gör dubbelriktad skrivning några viktiga ändringar i Dataverse-schemat. Om du förstår planen kan du undvika att en del design och utveckling fungerar i framtiden.
 
@@ -103,9 +101,12 @@ Om du vill skapa paritet med Finance and Operations-appar gör dubbelriktad skri
 
 + För att förhindra att data går förlorade under överföring mellan olika Finance and Operations-appar och i Dataverse kan du öka antalet decimaler i datatypen kundengagemangsappar. Funktionen översätter befintliga rader till det nya utökade tillståndet i metadata-skiktet. Under den här processen översätts valutavärdet till decimal data snarare än pengadata och valuta värdet stöder 10 decimaler. Den här funktionen är inte skrivskyddad och organisationer som inte behöver mer än 4 decimalers precision behöver inte välja något. Mer information finns i [Migrering av valutadatatyp för dubbelriktad skrivning](currrency-decimal-places.md) .
 
-+ [Gäller från](../../dev-tools/date-effectivity.md) kommer att läggas till i Dataverse . Det kommer att stödja tidigare, nuvarande och framtida data om samma enhet.
++ [Gäller från](../../dev-tools/date-effectivity.md) kommer att läggas till i Dataverse . Det kommer att stödja tidigare, nuvarande och framtida data om samma tabell.
 
 + Produkt [enhetskonverteringar](../../../../supply-chain/pim/tasks/manage-unit-measure.md) stöds för produkter, offerter, order och fakturor.
 
 Mer information om kommande ändringar finns i [nyheter och ändringar i dubbelriktad skrivning](whats-new-dual-write.md) .
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

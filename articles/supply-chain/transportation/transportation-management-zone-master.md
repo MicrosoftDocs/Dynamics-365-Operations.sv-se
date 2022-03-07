@@ -1,10 +1,12 @@
 ---
 title: Transporthantering – zonmall
-description: Detta ämne förklarar hur transporthantering innebär att du kan dela upp geografiska platser i zoner.
+description: Det här ämnet förklarar hur transporthantering innebär att du kan dela upp geografiska platser i zoner.
 author: Henrikan
+manager: ''
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSZoneMaster
 audience: Application User
@@ -14,13 +16,13 @@ ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-01-09
-ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2f3e50a61f7fc842a2656a443805ef5c9538fef4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.14
+ms.openlocfilehash: 6527c4887ccd3085d63dd64c104a94e6354f536b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567641"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996477"
 ---
 # <a name="transportation-management-zone-master"></a>Transporthantering – zonmall
 
@@ -33,6 +35,3 @@ Transporthantering innebär att du kan dela upp geografiska platser i zoner. Att
 - **Optimera flödesplanering** – genom att tilldela specifika flödesplaner till specifika zoner.
 
 Du definierar zoner baserat på värdena i fältet metadata (t.ex. land, postnummerintervall eller transportföretag) som kvalificerar varje zon. Zondefinitioner behövs inte om din transport prissättning inte använder ett zonbegrepp.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

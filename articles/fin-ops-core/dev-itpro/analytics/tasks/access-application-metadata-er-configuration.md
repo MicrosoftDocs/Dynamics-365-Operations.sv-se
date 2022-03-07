@@ -1,12 +1,11 @@
 ---
 title: Få åtkomst till programmets metadata med hjälp av ER-konfiguration
-description: Stegen i det här avsnittet beskriver hur en RCS-användare (Regulatory Configuration Service) kan utforma en ny ER-modellmappning genom att använda metadata i Finance and Operations.
+description: Det här avsnittet beskriver hur en användare av Regulatory Configuration Service kan utforma en ny modellmappning för elektronisk rapportering genom att använda metadata.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fa8e9ac4940bbc1252819ebcc3de2e21c9e0933f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 91c50047781fdc21c9157ceb634822c6cfb5a075
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682175"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559661"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Få åtkomst till programmets metadata med hjälp av ER-konfiguration
 
@@ -125,3 +124,6 @@ I följande steg förklaras hur en användare av Regulatory configuration servic
 > [!NOTE]
 > Det här sättet att hämta information om programdata det enda som är tillgängligt för lokalt distribuerade program (när lokala affärsdata (LBD) eller lokalt, distributionsmodell används).
         
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Kopiera en instans
 description: Du kan använda Microsoft Dynamics Lifecycle Services (LCS) för att kopiera en Microsoft Dynamics 365 Human Resources-databas till en miljö i begränsat läge.
 author: andreabichsel
-manager: AnnBe
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 44df05083cd3c91e5dcbdb3062665c2145d92a7e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527847"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889822"
 ---
 # <a name="copy-an-instance"></a>Kopiera en instans
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -39,9 +39,9 @@ Om du vill kopiera en instans bör du tänka på följande:
 
 - Du måste vara administratör i målmiljön för att du ska kunna logga in på den efter att du har kopierat instansen.
 
-- När du kopierar databasen för Personal kopierar du inte de element (appar eller data) som finns i en Microsoft Power Apps-miljö. Information om hur du kopierar element i en Power Apps-miljö finns i [kopiera en miljö](https://docs.microsoft.com/power-platform/admin/copy-environment). Den Power Apps-miljö som du vill skriva över måste vara en miljö i begränsat läge. Du måste vara global innehavaradministratör om du vill ändra en Power Apps-produktionsmiljö till en miljö i begränsat läge. Mer information om hur du ändrar Power Apps-miljö finns i [Växla en instans](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+- När du kopierar databasen för Personal kopierar du inte de element (appar eller data) som finns i en Microsoft Power Apps-miljö. Information om hur du kopierar element i en Power Apps-miljö finns i [kopiera en miljö](/power-platform/admin/copy-environment). Den Power Apps-miljö som du vill skriva över måste vara en miljö i begränsat läge. Du måste vara global innehavaradministratör om du vill ändra en Power Apps-produktionsmiljö till en miljö i begränsat läge. Mer information om hur du ändrar Power Apps-miljö finns i [Växla en instans](/dynamics365/admin/switch-instance).
 
-- Om du kopierar en instans till sandbox-miljön och vill integrera sandbox-miljön med Common Data Service måste du återställa anpassade fält till Common Data Service-entiteter. Se [tillämpa anpassade fält på Common Data Service](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
+- Om du kopierar en instans till sandbox-miljön och vill integrera sandbox-miljön med Dataverse, måste du återställa anpassade fält till Dataverse-register. Se [tillämpa anpassade fält på Dataverse](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Effekter av att kopiera personaldatabasen
 
@@ -80,7 +80,7 @@ Om du vill slutföra den här uppgiften kopierar du först en instans och loggar
 
 6. Markera den Power Apps-miljö du vill kopiera och välj sedan **kopiera**.
 
-7. När kopieringsprocessen har slutförts loggar du in på målinstansen och aktiverar Common Data Service-integreringen. Mer information och anvisningar finns i [Konfigurera Common Data Service-integration](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
+7. När kopieringsprocessen har slutförts loggar du in på målinstansen och aktiverar Dataverse-integreringen. Mer information och anvisningar finns i [Konfigurera Dataverse-integration](./hr-admin-integration-common-data-service.md).
 
 ## <a name="data-elements-and-statuses"></a>Dataelement och status
 
@@ -122,11 +122,11 @@ Alla användare i målmiljön i begränsat läge, inklusive administratörer, er
 
 Alla användare som inte är administratörer i målmiljön i begränsat läge är inaktiverade för att förhindra oönskade inloggningar i miljön i begränsat läge. Administratörer kan återaktivera användare om det behövs.
 
-## <a name="apply-custom-fields-to-common-data-service"></a>Tillämpa anpassade fält på Common Data Service
+## <a name="apply-custom-fields-to-dataverse"></a>Tillämpa anpassade fält på Dataverse
 
-Om du kopierar en instans till sandbox-miljön och vill integrera sandbox-miljön med Common Data Service måste du återställa anpassade fält till Common Data Service-entiteter.
+Om du kopierar en instans till sandbox-miljön och vill integrera sandbox-miljön med Dataverse, måste du återställa anpassade fält till Dataverse-register.
 
-Utför följande steg för varje anpassat fält som visas på Common Data Service-entiteter:
+Utför följande steg för varje anpassat fält som visas i Dataverse-register:
 
 1. Gå till det anpassade fältet och välj **Redigera**.
 
@@ -140,13 +140,16 @@ Utför följande steg för varje anpassat fält som visas på Common Data Servic
 
 6. Välj **Verkställ ändringar**.
 
-Avmarkerar, tillämpar ändringar, markerar om och återanvänder ändringar gör att schemat uppdateras i Common Data Service för att inkludera de anpassade fälten.
+Avmarkerar, tillämpar ändringar, markerar om och återanvänder ändringar gör att schemat uppdateras i Dataverse för att inkludera de anpassade fälten.
 
-Mer information om anpassade fält finns i [Skapa och arbeta med anpassade fält](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
+Mer information om anpassade fält finns i [Skapa och arbeta med anpassade fält](../fin-ops-core/fin-ops/get-started/user-defined-fields.md).
 
 ## <a name="see-also"></a>Se även
 
-[Reservera Human Resources](hr-admin-setup-provision.md)</br>
+[Reservera Personal](hr-admin-setup-provision.md)</br>
 [Ta bort en instans](hr-admin-setup-remove-instance.md)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

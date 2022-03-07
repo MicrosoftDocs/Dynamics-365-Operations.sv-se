@@ -2,30 +2,27 @@
 title: Aktivera flera leveranssätt genom upphämtning för kundorder
 description: I det här avsnittet beskrivs funktionerna i Microsoft Dynamics 365 Commerce som gör att du kan skapa kundorder för upphämtning i en butik.
 author: hhainesms
-manager: annbe
 ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 768b20ecc8d15353258c9b3af69b897957d3de60
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: c32ffc8435c05c644bf836bb184400d067269208
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594998"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796896"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Aktivera flera leveranssätt genom upphämtning för kundorder
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 I Microsoft Dynamics 365 Commerce version 10.0.16 och senare kan organisationer definiera flera leveranssätt som konsumenter eller säljmedarbetare kan välja mellan när de skapar en order som ska hämtas i en butik. På så sätt kan organisationer erbjuda sina konsumenter flera upphämtningsalternativ. Numera låter många återförsäljare exempelvis sina konsumenter välja mellan upphämtning i butik eller drive in-upphämtning för sina order. Commerce stöder konfiguration av dessa olika leveranssätt genom upphämtning. Användarna kan sedan dra nytta av dem när de skapar kundorder i valfr Commerce-kanal som stöds (näthandel, kundtjänst eller butik).
 
@@ -53,7 +50,7 @@ När du har definierat de ytterligare leveranssätten för upphämtning lägger 
 > [!IMPORTANT]
 > När du har definierat mer än ett leveranssätt genom upphämtning på sidan **Commerce-parametrar** blir funktionen **Stöd för flera leveranssätt genom upphämtning** obligatorisk och kan inte längre stängas av. Om du måste stänga av funktionen tar du bort alla leveranssätt genom upphämtning från rutnätet **Leveranssätt: upphämtning**. När endast ett leveranssätt genom upphämtning har definierats anses funktionen inte längre vara obligatorisk och kan inaktiveras.
 
-### <a name="e-commerce-site-configurations"></a>Konfigurationer för näthandelsplats
+### <a name="e-commerce-site-configurations"></a>Konfigurationer för näthandelssajt
 
 När funktionen **Stöd för flera leveranssätt genom upphämtning** har aktiverats visar följande moduler på näthandelssidor de nya leveranssätta för upphämtning enligt konfigurationen:
 
@@ -86,3 +83,6 @@ När flera leveranssätt genom upphämtning är tillgängliga för en kanal ges 
 ## <a name="considerations-for-distributed-order-management"></a>Beaktanden för fördelad orderhantering
 
 Funktionerna för [fördelad orderhantering (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) i Commerce ignorerar alla försäljningsrader som har markerats för hämtning i butik. Dessa funktioner har uppdaterats i syfte att se till att försäljningsrader som är länkade till konfigurerade leveranssätt för upphämtning åsidosätter DOM-logiken och inte allokeras om till ett nytt lagerställe för uppfyllande.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

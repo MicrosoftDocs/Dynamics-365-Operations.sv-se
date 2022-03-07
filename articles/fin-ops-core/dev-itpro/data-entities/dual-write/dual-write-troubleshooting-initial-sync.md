@@ -2,11 +2,9 @@
 title: Felsöka problem under första synkroniseringen
 description: Det här avsnittet innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem som kan uppstå under initial synkronisering.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: a2f0e0cbf0f8710dc020a48506775fa28df9c2d2
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 0fe319f4c8edd54700b2b32ef80539a8d0ff793aa815cef3813af4c63fd1b0d3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744647"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736384"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Felsöka problem under första synkroniseringen
 
@@ -40,7 +38,7 @@ Det här avsnittet innehåller felsökningsinformation för integrering av dubbe
 
 När du har aktiverat mappningsmallen ska status för mappningarna **köras**. Om status **inte körs** har fel uppstått vid den ursprungliga synkroniseringen. Om du vill visa felen väljer du fliken **Information om initial synkronisering** på sidan **Dubbelriktad skrivning**.
 
-![Fel på fliken information om inledande synkronisering](media/initial_sync_status.png)
+![Fel på fliken Information om inledande synkronisering.](media/initial_sync_status.png)
 
 ## <a name="you-cant-complete-initial-synchronization-400-bad-request"></a>Det går inte att slutföra den första synkroniseringen: 400 Felaktig begäran
 
@@ -87,7 +85,7 @@ Gör så här om du vill åtgärda problemet.
 1. Logga in på Finance and Operations-appen.
 2. På sidan **Azure Active Directory-appar** ta bort klienten **DtAppID** och lägg sedan till den igen.
 
-![DtAppID-klient i listan över Azure AD-program](media/aad_applications.png)
+![DtAppID-klient i listan över Azure AD-program.](media/aad_applications.png)
 
 ## <a name="self-reference-or-circular-reference-failures-during-initial-synchronization"></a>Självreferens- eller cirkulära referensfel vid inledande synkronisering
 
@@ -117,11 +115,11 @@ Om några rader i leverantörstabellen har värden i kolumnen **PrimaryContactPe
     2. Sök efter **primarycontactperson** för att hitta källkolumen **PrimaryContactPersonId**.
     3. Välj **åtgärder** och välj sedan **ta bort**.
 
-        ![Ta bort kolumnen PrimaryContactPersonId](media/vend_selfref3.png)
+        ![Ta bort kolumnen PrimaryContactPersonId.](media/vend_selfref3.png)
 
     4. Upprepa dessa steg om du vill ta bort kolumnen **InvoiceVendorAccountNumber**.
 
-        ![Ta bort kolumnen InvoiceVendorAccountNumber](media/vend-selfref4.png)
+        ![Ta bort kolumnen InvoiceVendorAccountNumber.](media/vend-selfref4.png)
 
     5. Spara dina ändringar i mappningen.
 
@@ -131,11 +129,11 @@ Om några rader i leverantörstabellen har värden i kolumnen **PrimaryContactPe
     2. Välj tabellen **Leverantörer V2**.
     3. I åtgärdsfönstret, välj **Alternativ** och välj sedan **Ändra spårning**.
 
-        ![Välja alternativet Ändringsspårning](media/selfref_options.png)
+        ![Välja alternativet Ändringsspårning.](media/selfref_options.png)
 
     4. Klicka på **inaktivera ändringsspårning**.
 
-        ![Klicka på inaktivera ändringsspårning](media/selfref_tracking.png)
+        ![Klicka på Inaktivera ändringsspårning.](media/selfref_tracking.png)
 
 3. Kör den första synkroniseringen igen för mappningen **leverantörer V2 (msdyn\_vendors)**. Den ursprungliga synkroniseringen bör köras utan fel.
 4. Kör den första synkroniseringen för mappningen **CDS-kontakter V2 (kontakter)**. Du måste synkronisera den här mappningen om du vill synkronisera primära kontaktkolumnen på leverantörstabellen, eftersom initial synkronisering också måste göras för kontaktraderna.
@@ -164,11 +162,11 @@ Om några rader i kundtabellen har värden i kolumner **ContactPersonID** och **
     2. Sök efter **contactperson** för att hitta källkolumnen **ContactPersonID**.
     3. Välj **åtgärder** och välj sedan **ta bort**.
 
-        ![Ta bort kolumnen ContactPersonID](media/cust_selfref3.png)
+        ![Ta bort kolumnen ContactPersonID.](media/cust_selfref3.png)
 
     4. Upprepa dessa steg om du vill ta bort kolumnen **InvoiceAccount**.
 
-        ![Ta bort kolumnen InvoiceAccount](media/cust_selfref4.png)
+        ![Ta bort kolumnen InvoiceAccount.](media/cust_selfref4.png)
 
     5. Spara dina ändringar i mappningen.
 
@@ -178,11 +176,11 @@ Om några rader i kundtabellen har värden i kolumner **ContactPersonID** och **
     2. Välj tabellen **kunder V3**.
     3. I åtgärdsfönstret, välj **Alternativ** och välj sedan **Ändra spårning**.
 
-        ![Välja alternativet Ändringsspårning](media/selfref_options.png)
+        ![Välja alternativet Ändringsspårning.](media/selfref_options.png)
 
     4. Klicka på **inaktivera ändringsspårning**.
 
-        ![Klicka på inaktivera ändringsspårning](media/selfref_tracking.png)
+        ![Klicka på Inaktivera ändringsspårning.](media/selfref_tracking.png)
 
 3. Kör den första synkroniseringen igen för mappningen **Kunder V3 (konton)**. Den ursprungliga synkroniseringen bör köras utan fel.
 4. Kör den första synkroniseringen för mappningen **CDS-kontakter V2 (kontakter)**.
@@ -194,11 +192,11 @@ Om några rader i kundtabellen har värden i kolumner **ContactPersonID** och **
 6. Kör den första synkroniseringen igen för mappningen **Kunder V3 (konton)**. Eftersom ändringsspårning är inaktiverat kommer data för **InvoiceAccount** och **ContactPersonId** att synkroniseras från Finance and Operations-appen till Dataverse.
 7. Om du vill synkronisera data för **InvoiceAccount** och **ContactPersonId** från Dataverse till Finance and Operations-appen måste du använda ett dataintegreringsprojekt.
 
-    1. I Power Apps skapar du ett dataintegreringsprojekt mellan **Sales.Account** och **Finance and Operations-appar. Kunder V3**-tabeller. Datariktningen måste vara från Dataverse till Finance and Operations-appen. Eftersom **InvoiceAccount** är ett nytt attribut i dubbelriktad skrivning kanske du vill hoppa över den inledande synkroniseringen för det. Mer information finns i [integrera data i Dataverse](https://docs.microsoft.com/power-platform/admin/data-integrator).
+    1. I Power Apps skapar du ett dataintegreringsprojekt mellan **Sales.Account** och **Finance and Operations-appar. Kunder V3**-tabeller. Datariktningen måste vara från Dataverse till Finance and Operations-appen. Eftersom **InvoiceAccount** är ett nytt attribut i dubbelriktad skrivning kanske du vill hoppa över den inledande synkroniseringen för det. Mer information finns i [integrera data i Dataverse](/power-platform/admin/data-integrator).
 
         Följande bild visar ett projekt som uppdaterar **CustomerAccount** och **ContactPersonId**.
 
-        ![Dataintegrationsprojekt för att uppdatera CustomerAccount och ContactPersonId](media/cust_selfref6.png)
+        ![Dataintegreringsprojekt för att uppdatera CustomerAccount och ContactPersonId.](media/cust_selfref6.png)
 
     2. Lägg till företagskriterierna i filtret på Dataverse-sidan, eftersom endast de poster som matchar filtervillkoren kommer att uppdateras i Finance and Operations-appen. Klicka på filterknappen om du vill lägga till ett filter. Sedan i dialogrutan **Redigera fråga** kan du lägga till en filterfråga som **\_msdyn\_company\_value eq '\<guid\>'**. 
 
@@ -206,8 +204,11 @@ Om några rader i kundtabellen har värden i kolumner **ContactPersonID** och **
 
         Om du inte anger någon filterfråga för **\_msdyn\_company\_value**, synkroniseras alla rader.
 
-        ![Lägga till en filterfråga](media/cust_selfref7.png)
+        ![Lägga till en filterfråga.](media/cust_selfref7.png)
 
     Den inledande synkroniseringen av raderna har nu slutförts.
 
 8. I Finance and Operations-appen, aktivera tillbaka ändringsspårning på tabellen **Kunder V3**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

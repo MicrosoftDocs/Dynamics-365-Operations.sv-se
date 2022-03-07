@@ -2,29 +2,28 @@
 title: Transportföretagsgrupper
 description: I det här avsnittet beskrivs hur du ställer in data för transportföretagsgrupper.
 author: Henrikan
-manager: ''
 ms.date: 10/30/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSCarrierGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2570479edac9bc8cc7aa998a8b69f54ffc10cd61
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 10a30d8fae52a25b7d65b5a9cc991677df33a2a7
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646438"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574891"
 ---
 # <a name="carrier-groups"></a>Transportföretagsgrupper
+
+[!include [banner](../../includes/banner.md)]
 
 En transportföretagsgrupp är en samling transportföretag och transportföretagstjänster. Varje transportföretagsgrupp anger den ordningsföljd för transportföretag och transportföretagstjänster som tillhör till den.
 
@@ -38,3 +37,6 @@ Om det finns flera transportföretag och transportföretagstjänster för samma 
 1. I fältet **Namn** ange ett beskrivande namn för gruppen.
 1. På snabbfliken **Detaljer** lägger du till en rad och väljer ett transportföretag och en transportföretagstjänst för det. Upprepa det här steget tills du har lagt till så många transportföretag som behövs för gruppen.
 1. Stäng sidan.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

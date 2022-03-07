@@ -2,7 +2,8 @@
 title: Visa och uppdatera enhetsdata i Excel
 description: Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Excel-tillägget.
 author: jasongre
-ms.date: 10/01/2021
+manager: AnnBe
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,24 +15,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1593206e8e22aed518ebca9bee0772c6620bec9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9b7da9867ed86921f3487077081ec63e8b44e92c
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068802"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5562559"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Visa och uppdatera enhetsdata i Excel 
 
 [!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
-
-Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Excel-tillägget. För att öppna entitetsdata kan du starta från antingen Excel eller Ekonomi och Drift-appar.
+Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Excel-tillägget. För att öppna entitetsdata kan du starta från antingen Excel eller Finance and Operations-appar.
 
 Genom att öppna enhetsdata i Excel kan du snabbt och enkelt visa, uppdatera och redigera data med tillägget för Excel. Det här tillägget kräver Microsoft Excel 2016 eller senare.
 
@@ -40,15 +38,15 @@ Genom att öppna enhetsdata i Excel kan du snabbt och enkelt visa, uppdatera och
 
 Om du vill veta mer om hur du använder Excel-tillägg, titta på den korta videon [Skapa en Excel-mall för rubriker och mönster](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Öppna enhetsdata i Excel när du startar från Ekonomi och Drift-app
-1. På en sida i Ekonomi och Drift-app väljer du **Öppna i Microsoft Office**.
+## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Öppna entitetsdata i Excel när du startar från en Finance and Operations-app
+1. På en sida i Finance and Operations-app väljer du **Öppna i Microsoft Office**.
 
     Om rotdatakällan (register) för sidan är samma som rotdatakällan för alla enheter skapas standardalternativet **öppna i Excel** för sidan. Alternativet **Öppna i Excel** finns på ofta använda sidor, t.ex. **alla leverantörer** och **alla kunder**.
  
 2. Klicka på alternativet **öppnas i Excel** och öppna en arbetsbok som har skapats. Den här arbetsboken har bindningsinformation för enheten, en pekare till din miljö och en länk till Excel-tillägget.
 3. I Excel klickar du på **skrivskyddet** för att tillåta att Excel-tillägget körs. Excel-tillägget körs i ett fönster till höger i Excel-fönstret.
 4. Om du använder Excel-tillägg för första gången klickar du på **Lita på det här tillägget**.
-5. Om du uppmanas att logga in klickar du på **Logga in** och loggar sedan in med samma inloggningsuppgifter som du använde för att logga in på Ekonomi och Drift-app. Excel-tillägget använder en tidigare inloggningskontext från webbläsaren och loggar automatiskt in dig, om det kan. (Mer information om webbläsaren som används baserat på operativsystemet finns i [Webbläsare som används av Office-tillägg](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) För att säkerställa att inloggningen lyckades, verifiera användarnamnet i det övre högra hörnet av Excel-tillägget. 
+5. Om du uppmanas att logga in klickar du på **Logga in** och loggar sedan in med samma inloggningsuppgifter som du använde för att logga in till Finance and Operations-appen. Excel-tillägget använder en tidigare inloggningskontext från webbläsaren och loggar automatiskt in dig, om det kan. (Mer information om webbläsaren som används baserat på operativsystemet finns i [Webbläsare som används av Office-tillägg](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) För att säkerställa att inloggningen lyckades, verifiera användarnamnet i det övre högra hörnet av Excel-tillägget. 
 
 Excel-tillägget läser automatiskt data för enheten som du har valt. Lägg märke till att det finns inga data i arbetsboken förrän Excel-tillägget läser in den.
 
@@ -57,13 +55,13 @@ Excel-tillägget läser automatiskt data för enheten som du har valt. Lägg mä
 2. I Office Store.söker du efter nyckelordet **Dynamics** och väljer sedan **Lägg till** bredvid **Microsoft Dynamics Office-tillägget** (Excel-tillägget).
 3. Om du använder Excel-tillägg för första gången klickar du på **Lita på det här tillägget** för att tillåta att Excel-tillägget körs. Excel-tillägget körs i ett fönster till höger i Excel-fönstret.
 4. Klicka på **lägga till information om server** för att öppna fönstret **alternativ**.
-5. I webbläsaren kopierar du webbadressen från Ekonomi och Drift-appinstansen, klistra in den i fältet **Server-URL** och ta bort allt efter värdnamnet. Den resulterande URL:en ska ha bara värdnamnet.
+5. I webbläsaren kopierar du webbadressen från Finance and Operations-appinstansen, klistrar in den i fältet **Server-URL** och tar bort allt efter värdnamnet. Den resulterande URL:en ska ha bara värdnamnet.
 
     Om URL-adressen är till exempel `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, ta bort allt utom `https://xxx.dynamics.com`.
 
 6. Klicka på **OK**, och sedan på **Ja** för att bekräfta ändringarna. Excel-tillägget startar om och hämtar metadata.
 
-    Knappen **Design** är nu tillgänglig. Om Excel-tillägget har länk **Läs in appletar** är du troligen inte korrekt inloggad som användare. Mer information om hur du tar upp det här problemet finns i avsnittet [Läs in appletar](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane) felsökningsposten.
+    Knappen **Design** är nu tillgänglig. Om Excel-tillägget har knappen **Läs in appletar** är du troligen inte korrekt inloggad som användare. Mer information finns i "Knappen läs in appletar visas" i avsnittet [Felsökning](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) i det här avsnittet.
 
 7. Välj **Design**. Excel-tillägget hämtar enhetsmetadata.
 8. Välj **Lägg till registrer**. En lista över enheter visas. Enheterna anges i formatet "Namn – etikett".
@@ -76,7 +74,7 @@ Excel-tillägget läser automatiskt data för enheten som du har valt. Lägg mä
 När Excel-tillägget har läst in enhetsdata i arbetsboken, kan du uppdatera informationen när som helst genom att klicka på **uppdatera** i Excel-tillägget.
 
 ## <a name="edit-entity-data-in-excel"></a>Redigera enhetsdata i Excel
-Du kan ändra enhetsdata som du vill och sedan publicera den igen i Ekonomi och Drift-appen genom att klicka på **publicera** i Excel-tillägget. Markera en cell i kalkylbladet om du vill redigera en post och ändra värdet i cellen. Om du vill lägga till en ny post, gör du något av följande:
+Du kan ändra enhetsdata som du vill och sedan publicera den igen i Finance and Operations-appen genom att klicka på **publicera** i Excel-tillägget. Markera en cell i kalkylbladet om du vill redigera en post och ändra värdet i cellen. Om du vill lägga till en ny post, gör du något av följande:
 
 - Klicka var som helst i registret för datakällor och klicka sedan på **Ny** i Excel-tillägg.
 - Klicka i den sista raden i registret för datakällor och tryck på TAB tills markören flyttas från den sista kolumnen på samma rad och en ny rad skapas.
@@ -139,9 +137,9 @@ De data som läses in i arbetsboken från en miljö kan kopieras till en annan m
 ## <a name="troubleshooting"></a>Felsökning
 Det finns några problem som kan lösas genom några enkla steg.
 
-- **Länken "Läs in appletar" visas** – För mer information om detta problem se [Läs in appletar](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane) felsökningsposten. 
+- **Knappen Läs in appletar visas** – Om Excel-tillägget har knappen **Läs in appletar** är du troligen inte korrekt inloggad som användare. Kontrollera att rätt användarnamn visas i det övre högra hörnet av Excel-tillägget för att lösa problemet. Om ett felaktigt användarnamn visas, klickar du på den, loggar ut och loggar sedan in igen.
 - **Felmeddelandet "Förbjudet" visas** – Om felmeddelandet "Förbjudet" visas medan Excel-tillägget läser in metadata, har det konto som är inloggat i Excel-tillägget inte behörighet att använda den riktade tjänsten, instansen eller databasen. Kontrollera att rätt användarnamn visas i det övre högra hörnet av Excel-tillägget för att lösa problemet. Om ett felaktigt användarnamn visas, klickar du på den, loggar ut och loggar sedan in igen.
-- **En tom webbsida visas över Excel** – Om en tom webbsida öppnas när du loggar in, kräver kontot AD FS, men versionen av Excel som kör Excel-tillägget är inte tillräcklig nytt för att läsa in dialogrutan för inloggning. Uppdatera versionen av Excel som du använder för att lösa problemet. Uppdatera Excel-versionen när du arbetar i ett företag på den uppskjutna kanalen med [Office distributionsverktyg](/deployoffice/overview-office-deployment-tool) för att [flytta från uppskjuten kanal till den aktuella kanalen](/deployoffice/overview-update-channels).
+- **En tom webbsida visas över Excel** – Om en tom webbsida öppnas när du loggar in, kräver kontot AD FS, men versionen av Excel som kör Excel-tillägget är inte tillräcklig nytt för att läsa in dialogrutan för inloggning. Uppdatera versionen av Excel som du använder för att lösa problemet. Uppdatera Excel-versionen när du arbetar i ett företag på den uppskjutna kanalen med [Office distributionsverktyg](https://technet.microsoft.com/library/jj219422.aspx) för att [flytta från uppskjuten kanal till den aktuella kanalen](https://technet.microsoft.com/library/mt455210.aspx).
 - **Du får en timeout medan du publicerar dataändringar** - Om du får timeout-meddelanden när du försöker publicera dataändringar till en enhet kan du överväga att minska publiceringsbatchstorleken för den berörda arbetsboken. Enheter som utlöser större mängder logik i poständringar kan kräva uppdateringar som skickas i mindre batchar för att förhindra timeout.
 
 

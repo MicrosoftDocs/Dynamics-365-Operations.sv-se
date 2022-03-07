@@ -1,12 +1,10 @@
 ---
 title: Nya uppgiftguider (februari 2016)
-description: Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  De publicerade biblioteken innehåller APQC Unified Library for Microsoft Dynamics 365 for Operations och (februari 2016) Komma igång.
+description: Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39e6d6bf4161641ae22de56dac69bc6217649878
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: a1947ec2ef0ef061323f904c739d49a5a2594b9d0e730f19e4d4da322148e473
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4799112"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6725110"
 ---
 # <a name="new-task-guides-february-2016"></a>Nya uppgiftguider (februari 2016)
 
@@ -645,3 +643,6 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 [Nya eller uppdaterade uppgiftsguider (augusti 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Nya eller uppdaterade uppgiftsguider (november 2016)](new-task-guides-november-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

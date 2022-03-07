@@ -2,11 +2,9 @@
 title: Regler för teknikföretag och dataägande
 description: I det här avsnittet beskrivs hur du kan använda ett eller flera teknikföretag för att se till att huvuddata för produkter skapas och underhålls centralt. Ett teknikföretag representerar det företag som äger de tekniska produkterna och det är dess tekniska data.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgEngineeringOrganization
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: ab5ca3bee65bb0ee8ce7f44ba97c00347fe38366
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a434bf3727432f4964b7b0ed60905449378245de
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963673"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830013"
 ---
 # <a name="engineering-companies-and-data-ownership-rules"></a>Regler för teknikföretag och dataägande
 
@@ -66,3 +64,6 @@ Eftersom det tekniska företaget äger tekniskrelevanta data, styr den följande
 
     - När dessa dokument frisläpps till andra juridiska personer, skyddas dokumenten från att tas bort av operativa företaget.
     - Andra juridiska personer kan lägga till helt nya lokala dokument. Det operativa företaget äger och underhåller dessa lokala dokument.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

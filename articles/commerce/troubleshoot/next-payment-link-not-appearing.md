@@ -5,6 +5,7 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -15,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4887cde3e4243ae7a4da6402782e69e780ae20331ed80df63ba1239ef5187e41
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e3156d1aa9a05dc5d159b6f9b33ae341de640bf
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769281"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801709"
 ---
 # <a name="save-for-my-next-payment-option-doesnt-appear"></a>Spara för min nästa betalningsalternativ visas inte
 
@@ -34,9 +35,9 @@ Kryssrutan **Spara för nästa betalning** visas inte i avsnittet **Betalningsme
 
 Följande illustration visar ett exempel på en kassasida som innehåller kryssrutan **Spara för nästa betalning**.
 
-![Kryssrutan Spara till min nästa betalning i modulen Betalning.](media/payment-module-save-payment.jpg)
+![Spara nästa betalningskryssruta i modulen Betalning](media/payment-module-save-payment.jpg)
 
-## <a name="resolution"></a>Lösning
+## <a name="resolution"></a>Upplösning
 
 ### <a name="verify-that-the-dynamics-365-payment-connector-for-adyen-is-correctly-configured-in-commerce-headquarters"></a>Kontrollera att Dynamics 365 Payment Connector för Adyen är korrekt konfigurerat i Commerce-administration
 
@@ -46,7 +47,7 @@ Kontrollera att Dynamics 365 Payment Connector för Adyen är korrekt konfigurer
 1. Välj onlinebutik.
 1. Kontrollera att snabbflikarna **Betalningskonton** se till att fältet **Tillåt att spara betalningsinformation i näthandel** ange till **True**.
 
-![Tillåt att betalningsinformation sparas i fältet e-handel i Commerce-administrationen.](media/payment-connector-save-payment.jpg)
+![Tillåt att betalningsinformation sparas i fältet e-handel i Commerce-administration](media/payment-connector-save-payment.jpg)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

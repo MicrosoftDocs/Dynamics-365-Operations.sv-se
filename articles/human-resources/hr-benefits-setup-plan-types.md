@@ -1,16 +1,13 @@
 ---
-title: Skapa plantyper
+title: Översikt över plantyper
 description: En plantyp i Microsoft Dynamics 365 Human Resources är en grupp på hög nivå med specifika typer av förmåner. Varje plantyp har en plantypkod som bestämmer regler för plantypen.
 author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,22 +15,34 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 88a6d89bf98ea145bbb6a4eb8f4e052e5f4088e5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8966b0aa01795ff00832e480a186c05fa129e7c728112f81cf4f78b6b0915463
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6732740"
 ---
-# <a name="create-plan-types"></a>Skapa plantyper
+# <a name="plan-type-overview"></a>Översikt över plantyper
 
-En plantyp i Microsoft Dynamics 365 Human Resources är en grupp på hög nivå med specifika typer av förmåner. Varje plantyp har en plantypkod som bestämmer regler för plantypen. Exempel: den grundläggande plantypen enkelt liv skulle ha plantypkoden liv eftersom den är en typ av livförsäkringsplan och måste följa reglerna för plantypkoden för liv. En annan plantyp kan vara tillägg liv, även med plantypkod liv.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+En plantyp är en grupp på hög nivå med specifika typer av förmåner. Varje plantyp har en plantypkod som bestämmer regler för plantypen. Till exempel plantypen **Enkel liv** kommer att ha plantypkoden **Liv** eftersom det är en typ av livförsäkringsplan och måste överensstämma med regler som har fastställts för plantypkoden **Liv**. En annan plantyp kan vara **Tillägg liv**.  Den här plantypen innehåller också plantypkoden **Liv**.
 
 Varje plantyp visar om en medarbetare kan registreras i en plan av dess typ eller flera. En medarbetare skulle t.ex. kunna registrera både policyn enkel liv och den tillägg liv cykeln för plantypen liv. En medarbetare är sannolikt tillåten att registrera i endast en policy av typen sjukvård.
 
 Om en plantyp omfattar kontakter anger plantypen om kontakter är mottagare eller beroende. En t.ex. plantypen enkel liv har mottagare, medan en grundläggande sjukvårdsplantyp skulle ha beroenden. I vissa fall kanske en plan inte har några personliga kontakter. Till exempel ett flexibelt utgiftskonto eller parkeringsbidrag.
 
 En plantyp kan definiera täckningsalternativ. Alternativen för disponering är definierade i formuläret täckningsalternativ. Ett alternativ för disponering kan ange förmånsbeloppet eller de kontakter som är berättigade till plantypen. Om kontakttypen till exempel är mottagare, ska täckningsalternativet definiera villkoren för vad mottagaren är berättigad till när förmånen används. Om kontakttypen är beroende ska täckningsalternativet definiera relationen mellan beroende och medarbetaren. 
+
+> [!IMPORTANT]
+> Formuläret innehåller nyckeldata som påverkar vilka alternativ som är tillgängliga när en ny förmånsplan skapas:
+>
+> - **Plantypkod** – Det här fältet påverkar vad som visas på fliken **Konfiguration** när den faktiska förmånen ställs in.  
+> - **Samtidig anmälan** – Det här fältet avgör om flera anmälningar är tillåtna. (För en medicinsk plan ställs det här fältet normalt in på **En anmälan**.)
+> - **Kontakttyp** – Detta fält gör att beroende kan läggas till i en plan. Om den anges till **Ingen**, anställda som anmäler sig till förmåner har inte möjlighet att välja vare sig en förmånstagare eller en beroende.
+> - **Disponeringsalternativ** – Använd det här fältet om du vill koppla disponeringsalternativen till plantyperna. Det definierar antingen vilka personer som omfattas av den här plantypen eller disponeringsbeloppen som är tillgängliga för den här plantypen. Du kan till exempel ange att endast medarbetaren, medarbetaren och en annan person ska ha tillgång till täckning för en medicinsk plantyp, eller medarbetaren och deras familj.
+
+## <a name="create-plan-types"></a>Skapa plantyper
 
 1. I arbetsytan **Förmånshantering** under **inställningar**, välj **plantyper**.
 
@@ -63,3 +72,6 @@ En plantyp kan definiera täckningsalternativ. Alternativen för disponering är
    | **Rapportfönster** | Anger rapportfönstret, i dagar, för livshändelsen. **Obs**! om du inte anger ett belopp, förutsätts att rapportfönstret är noll och livshändelsen bearbetas inte. |
 
 5. Välj **Spara**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

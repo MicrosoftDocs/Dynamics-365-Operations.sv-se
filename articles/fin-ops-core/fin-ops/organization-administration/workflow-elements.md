@@ -2,11 +2,9 @@
 title: Arbetsflödeselement
 description: Det här ämnet beskriver de olika elementen som utgör ett arbetsflöde.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b259d733076193cda793a227bd0bb71c232339d1
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: e9491b8ee6da69ba93c830bf0721c1d58fd4385b
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797586"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070460"
 ---
 # <a name="workflow-elements"></a>Arbetsflödeselement
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Det här ämnet beskriver de olika elementen som utgör ett arbetsflöde.
 
@@ -62,7 +63,7 @@ En *godkännandeprocess* är en process som består av separata steg. I varje go
 
 Ett arbetsflöde kan skapas för att bearbeta antingen dokument eller radartiklarna på ett dokument. Om du till exempel har skapat ett arbetsflöde för godkännande för tidrapporter. (Du refererar till arbetsflödet som *dokumentarbetsflöde*.) Du kan lägga till ett element för *arbetsflöde för radartikel* till det dokumentarbetsflödet. När elementet för radartikeln körs, skickas varje radartikel på dokumentet in för bearbetning. Du kan vilja att alla radartiklar bearbetas av samma radartikelarbetsflöde, eller du kanske vill att varje radartikel kan bearbetas i ett annat arbetsflöde för radartikel. Tänk dig att en medarbetare har skickat in en tidrapport som liknar följande bild.
 
-![Arbetsflöde med radobjekt](./media/workflow_lineitemworkflow.gif)
+![Arbetsflöde med radobjekt.](./media/workflow_lineitemworkflow.gif)
 
 I det här scenariot vill du kanske skapa följande arbetsflöden för radobjekt:
 
@@ -89,3 +90,6 @@ En *parallell aktivitet* är ett arbetsflödeselement som inkluderar två eller 
 ### <a name="subworkflow"></a>Delarbetsflöde
 
 Ett *delarbetsflöde* är ett arbetsflöde som körs i ett annat arbetsflödes sammanhang.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

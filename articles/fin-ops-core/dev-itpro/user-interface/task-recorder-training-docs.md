@@ -1,40 +1,40 @@
 ---
 title: Skapa dokumentation eller utbildning med uppgiftsinspelning
-description: Det här avsnittet förklarar vad uppgiftsregistrering och uppgiftsguider är, hur du skapar inspelningar och hur du anpassar Microsoft uppgiftsguider och inkluderar dem i din Hjälp.
+description: Det här avsnittet förklarar vad uppgiftsregistrering och uppgiftsguider är, hur du skapar uppgiftsinspelningar och hur du anpassar Microsoft uppgiftsguider och inkluderar dem i din Hjälp.
 author: josaw1
+manager: AnnBe
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 448c2b302136e595852c423d53e49adfcc40d12d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b92ef15fc9f3f6a5ebb6ba4ea4eae1a0f7488995
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070536"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687802"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Skapa dokumentation eller utbildning med uppgiftsinspelning
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Det här avsnittet förklarar vad uppgiftsregistrering och uppgiftsguider är, hur du skapar uppgiftsinspelningar och hur du anpassar Microsoft uppgiftsguider och inkluderar dem i din Hjälp.
 
 > [!IMPORTANT]
 > Du kan spela in egna uppgiftsguider för Dynamics 365 Human Resources, men du kan inte spara dem i ett bibliotek för Affärsprocessmodelleraren (BPM) eller öppna dem direkt från fönstret Hjälp just nu. Du kan spara dem lokalt eller på en nätverksplats och sedan öppna och spela upp dem med Uppgiftsinspelaren. 
 
-## <a name="learn-about-task-recorder"></a>Läs om uppgiftsregistrering
+<a name="learn-about-task-recorder"></a>Läs om uppgiftsregistrering
+-------------------------
 
 Uppgiftsinspelaren är ett verktyg som du kan använda till att registrera åtgärder som du utför i produktanvändargränssnittet (UI). När du använder uppgiftsinspelning spelas alla händelser som du utför i UI, som utförs mot servern, inklusive lägga till värden, ändra inställningar, ta bort data, in. Stegen som du registrerar kallas gemensamt för en *uppgiftsregistrering* Uppgiftsregistrering kan användas på flera sätt:
 
@@ -65,21 +65,21 @@ Om du skapar en ny uppgiftsregistrering eller baserar din registrering på Micro
 
 Detta är redigeringsfönstret som visas när du lägger till en kommentar när du skapar registreringen. Ange en rubrik kommentar i rutan **Rubrik**. 
 
-[![Redigeringsfönster med rubrikanteckning.](./media/screen1.png)](./media/screen1.png) 
+[![Redigeringsfönster med rubrikanteckning](./media/screen1.png)](./media/screen1.png) 
 
 Detta är vad rubrikkommentarer ser ut som i "bubblan” i uppgiftsguiden. 
 
-[![Rubrikanteckningens utseende i uppgiftsguiden.](./media/screen2.png)](./media/screen2.png)
+[![Rubrikanteckningens utseende i uppgiftsguiden](./media/screen2.png)](./media/screen2.png)
 
 -   **Anteckningar:** En anteckningskommentar visas efter stegtexten som uppgiftsregistrering skapar automatiskt. I uppgiftsguiden är den bara synlig om användaren klickar på länken **Visa mer** i uppgiftsguidens bubbla. Använd den här kommentarstypen för att beskriva allt som användaren måste veta för att slutföra steget.
 
 Detta är redigeringsfönstret som visas när du lägger till en kommentar när du skapar registreringen. Ange en anteckningskommentar i rutan **Kommentarer**. 
 
-[![Redigeringsfönster med anteckning i anteckningsrutan.](./media/screen3.png)](./media/screen3.png) 
+[![Redigeringsfönster med anteckning i anteckningsruta](./media/screen3.png)](./media/screen3.png) 
 
 Detta är vad anteckningskommentar ser ut som i "bubblan” i uppgiftsguiden.
 
-[![Anteckningskommentarens utseende i uppgiftsguiden.](./media/screen4.png)](./media/screen4.png)
+[![Anteckningskommentarens utseende i uppgiftsguiden](./media/screen4.png)](./media/screen4.png)
 
 -   **Informationssteg**: Dessa anteckningar skapas genom att högerklicka på en kontroll eller någonstans i ett formulär &lt; **Uppgiftsinspelare** &lt; **Lägg till informationssteg.** Informationssteg visas som ett numrerat steg vid den tidpunkt som du infogar det, även om ingen uppgift spelats in i användargränssnittet. Du kan lägga till ett informationssteg på formulärnivå eller ett informationssteg associerat med en kontroll. När ett informationssteg tillhör ett formulär visas uppgiftsguidens "bubbla" någonstans i formuläret utan pekare när uppgiftsguiden spelas upp. När ett informationssteg tillhör en kontroll pekar uppgiftsguidens "bubbla" på kontrollen när uppgiftsguiden spelas upp. I hjälpfönstret visas en informationsstegsanteckning som ett numrerat steg med texten du angett. Använd informationssteg för att förbereda användaren för nästa steg, för att beskriva steg som måste utföras utanför appen eller att hänvisa till andra registreringar (det går dock inte att skapa hyperlänkar i kommentarer).
 
@@ -113,7 +113,8 @@ Du kan hämta och redigera Microsofts uppgiftsregistreringar för att använda d
 
 
 
-## <a name="additional-resources"></a>Ytterligare resurser
+<a name="additional-resources"></a>Ytterligare resurser
+--------
 
 [Hjälpsystem](../../fin-ops/get-started/help-overview.md)
 
@@ -122,6 +123,3 @@ Du kan hämta och redigera Microsofts uppgiftsregistreringar för att använda d
 [Uppgiftsinspelare](task-recorder.md)
 
 [Skapa heltäckande hjälpavsnitt med uppgiftsinspelaren (extern länk)](https://mbspartner.microsoft.com/AX/Videos/970)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

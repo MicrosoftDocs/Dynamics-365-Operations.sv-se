@@ -1,27 +1,24 @@
 ---
 title: Kundarbetsflöde
 description: Det här avsnittet innehåller information om kundarbetsflödet. Du ändrar specifika fält för en kund och skickar sedan ändringarna för godkännande via arbetsflödet innan de läggs till för kunden.
-author: mikefalkner
-manager: aolson
+author: abruer
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 5998a492e12cb93aeec029c6e56f811f8b90055a
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: c74f18997b390d70b5012199fab1adc9734994f4
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4459985"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753836"
 ---
 # <a name="customer-workflow"></a>Kundarbetsflöde
 
@@ -61,3 +58,6 @@ När du har minst en föreslagen ändring visas två extra menyer i åtgärdsfö
     Sidans status ändras till **Ändringar som väntar på godkännande**.
 
 Arbetsflödet följer den vanliga arbetsflödesprocessen i appen. Godkännaren dirigeras till sidan **Kund** där ändringarna kan granskas på sidan **Föreslagna ändringar** och sedan välja **Arbetsflöde \> Godkänn** för att godkänna arbetsflödet. När alla godkännanden har slutförts uppdateras fälten med de värden du har föreslagit.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

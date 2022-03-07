@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f28e9d301b0a3c30f903ccc32e785ae09f0d702f3625f5febe03817ba44046ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e963cf8cbae4651ad05126cdf465a386dea2d7a5
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729864"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798739"
 ---
 # <a name="create-new-address-book"></a>Skapa en ny adressbok
 
@@ -40,7 +40,7 @@ Följ dessa steg för att skapa en ny adressbok.
 
 Följande bild visar hur en adressbok för medarbetare skapas för en butik.
 
-![Exempel på medarbetaradressbok.](media/address-books.png)
+![Exempel på medarbetarens adressbok](media/address-books.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

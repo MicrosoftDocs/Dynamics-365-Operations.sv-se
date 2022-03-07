@@ -11,30 +11,31 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 92af567499c1a8a23cd4d51e5bab48eaab2d8422
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: b21cf04674d01df31dc3304886e7cda035bdcce2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4459984"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5238266"
 ---
 # <a name="revenue-recognition-overview"></a>Översikt över intäktsredovisning
 
 [!include [banner](../includes/banner.md)]
 
-> [!NOTE]
-> Intäktsredovisningsfunktionen kan inte slås på via funktionshantering. För närvarande måste du använda konfigurationsnycklar för att slå på den.
-
 Företag i branscher som säljer flera element, som produkter, tjänster, prenumerationer och liknande, måste kunna bryta ut order med flera element så att intäkten kan identifieras utifrån en uppsättning företagsspecifika och branschspecifika riktlinjer.
+
+> [!NOTE]
+> Intäktsredovisningsfunktionen kan inte aktiveras via funktionshantering. För närvarande måste du använda konfigurationsnycklar för att aktivera den.
+
+> Intäktsredovisning, inklusive buntfunktionen, stöds inte för användning i Commerce-kanaler (e-handel, kassa, callcenter). Artiklar som konfigurerats med intäktsredovisning ska inte läggas till på order eller transaktioner som skapas i Commerce-kanaler.
 
 I allmänhet kan intäktsredovisningsprocessen användas för att utföra dess uppgifter:
 
-* Allokera intäkter som hjälp för att garantera att lämpligt intäktspris identifieras baserat på värdet av komponenterna i order med flera element.
+* Allokera intäkter som hjälp för att säkerställa att lämpligt intäktspris identifieras baserat på värdet av komponenterna i order med flera element.
 * Periodisera intäkter, baserat på intäktsplaner som motsvarar avtalad tidsram och procentandel för identifiering av intäkter över tid.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44iER]
@@ -54,3 +55,6 @@ När försäljningsordern har bekräftats skapas även en förväntad intäktspl
 Uppgifterna för intäktsredovisningsplanen bevaras för respektive försäljningsorderrad. Därför kan intäktsredovisningsansvarig visa uppgifterna och frisläppa rader till intäkt när avtalad skyldighet har slutförts. I slutet av varje period kan intäktsredovisningsansvariga skapa en intäktsjournal för att frisläppa planerade rader som förfallit eller före ett datum som de definierar. Denna intäktsjournal bokförs inte omgående. Därför kan intäktsredovisningsansvarig verifiera att korrekta belopp frisläpps från periodiserad intäkt till faktisk intäkt.
 
 Om en avtalsförändring gör att en ny försäljningsorderrad måste läggas till antingen till den befintliga försäljningsordern eller till en ny försäljningsorder kan en omallokeringsprocess köras för att korrigera intäktspriset på alla försäljningsorderrader.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,31 +1,30 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources (20 augusti 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 20 augusti 2020.
-author: Darinkramer
-manager: AnnBe
-ms.date: 8/20/2020
+author: andreabichsel
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 46dadb8834195c5dd06cd1c56d79324def7d9f2d
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 32535c1f93990306ffaa0a5d97b48d3e6fdda7d014ceeeb2552960cd08b4be6c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527492"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775853"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-20-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (20 augusti 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -51,7 +50,7 @@ Tjänstledighetstransaktioner tillåts nu för medarbetare som har avslutats i f
 
 Alternativen för åtgärdsfönster i formuläret **Arbetare** i **Hantera tjänstledighet** kommer inte längre att inaktiveras om anpassade fält har lagts till i det nya formuläret **arbetare**.
 
-## <a name="making-the-leave-comment-field-mandatory-allows-a-leave-request-to-be-submitted-when-no-comment-is-entered-473543"></a>Om du gör fältet lämna kommentarsfält obligatoriskt kan en begäran om att lämna en förfrågan skickas när ingen kommentar har angetts (473543)
+## <a name="making-the-leave-comment-field-mandatory-allows-a-leave-request-to-be-submitted-when-no-comment-is-entered-473543"></a>Om du gör fältet lämna kommentarsfält obligatoriskt kan en begäran om att lämna en begäran skickas när ingen kommentar har angetts (473543)
 
 Kommentarsfält kan nu vara obligatoriska och lämna förfrågningar följer den här inställningen. Obligatoriska fält är en förhandsgranskningsfunktion.
 
@@ -65,27 +64,27 @@ Nu är en DMF-enhet tillgänglig för periodiserade avstängningar.
 
 Du kan göra fält obligatoriska genom att använda anpassningsfunktioner för personal. Den här funktionen kräver **sparade vyer**. Mer information om sparade vyer, se.
 
-- [Sparade vyer-allmän tillgänglighet](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) i Dynamics 365 2020 utgivningsvåg 2-plan
-- [Skapa formulär som fullt ut utnyttjar sparade vyer](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
+- [Sparade vyer-allmän tillgänglighet](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) i Dynamics 365 2020 utgivningsvåg 2-plan
+- [Skapa formulär som fullt ut utnyttjar sparade vyer](../fin-ops-core/dev-itpro/user-interface/understanding-saved-views.md)
 
 ### <a name="human-resources-application-in-teams"></a>Personalapp i Teams
 
 Medarbetare kan visa och begära ledighet från arbetet inom Microsoft Teams. De kan samverka med en bot för att skapa tjänstledighetsansökan. Mer information finns i:
 
-- [Erfarenhet av medarbetares ledighet och frånvaro i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365 2020 utgivningsvåg 1-planen
-- [Human Resources-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
+- [Erfarenhet av medarbetares ledighet och frånvaro i Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365 2020 utgivningsvåg 1-planen
+- [Personal-app i Teams](./hr-admin-teams-leave-app.md)
 
 ## <a name="coming-soon"></a>Kommer snart
 
-### <a name="human-resources-app-in-teams-preview-features"></a>Förhandsfunktioner för Human Resources-app i Teams
+### <a name="human-resources-app-in-teams-preview-features"></a>Förhandsfunktioner för Personal-app i Teams
  
--  **Meddelanden**: skicka och granskare av tidsförfrågningar kommer att meddelas i modulen Human Resources-app i Teams. Godkännare kommer att kunna godkänna eller neka förfrågningar om att en begäran har godkänts eller nekats.
+-  **Meddelanden**: skicka och granskare av tidsförfrågningar kommer att meddelas i modulen Personal-app i Teams. Godkännare kommer att kunna godkänna eller neka förfrågningar om att en begäran har godkänts eller nekats.
  
 - **Ledighetskalender för chef**: chefer kommer att kunna se godkänd och väntande ledighet för sina underställda i en kalendervy. Den här vyn gör det enklare att förstå när gruppmedlemmarna är borta från arbetet.
 
-### <a name="checklist-entities-included-in-common-data-service"></a>Entiteter för checklista inkluderade i Common Data Service
+### <a name="checklist-entities-included-in-dataverse"></a>Entiteter för checklista inkluderade i Dataverse
 
-Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga i Common Data Service.
+Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga i Dataverse.
 
 ## <a name="known-issues"></a>Kända problem
 
@@ -112,11 +111,14 @@ Arbetsytan **funktionshantering** visas funktioner som har inaktiverats som för
 
 ### <a name="benefit-plan-employee-entity"></a>Entiteten förmånsplan för medarbetare 
 
-Vi har nyligen upptäckt två frågor om **BenefitsPlanEmployee**-entiteten. När du importerar medarbetares registreringar **Omfattningskod** och **Plantypkod** ställs in felaktigt. Det här problemet medför att medarbetar förmånsplaner visas felaktigt i formuläret **förmånsplan för arbetare** och i formuläret **öppen anmälan** i Självbetjäning för medarbetare. Det här problemet kan även påverka medarbetarens förmåga att välja planer i Självbetjäning för medarbetare. Det finns för närvarande ingen lösning. Vi behandlar detta som en hög prioritetskorrigering och tar bort korrigeringen med vår nästa utgåva.
+Vi har nyligen upptäckt två frågeställningar om **BenefitsPlanEmployee**-entiteten. När du importerar medarbetares registreringar **Omfattningskod** och **Plantypkod** ställs in felaktigt. Det här problemet medför att medarbetar förmånsplaner visas felaktigt i formuläret **förmånsplan för arbetare** och i formuläret **öppen anmälan** i Självbetjäning för medarbetare. Det här problemet kan även påverka medarbetarens förmåga att välja planer i Självbetjäning för medarbetare. Det finns för närvarande ingen lösning. Vi behandlar detta som en hög prioritetskorrigering och tar bort korrigeringen med vår nästa utgåva.
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
-[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
+[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

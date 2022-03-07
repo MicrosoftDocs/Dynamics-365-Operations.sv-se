@@ -11,18 +11,19 @@ ms.technology: ''
 ms.search.form: EntAssetObjectFaultCalculate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 674e10b94711b00e526af4af0e0c0afddd05e62c
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: e911f7ca3b67acd9d5a1b170d8c99135da730847
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022391"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437783"
 ---
 # <a name="asset-fault-analysis"></a>Felanalys för tillgång
 

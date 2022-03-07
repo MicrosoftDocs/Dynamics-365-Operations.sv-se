@@ -2,9 +2,11 @@
 title: Skapa en artikelersättningsorder
 description: Ersättningsorder skapas vanligtvis efter att en produkt har returnerats och inspekterats.
 author: josaw1
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnReplaceItem
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57bbb8eb638b990914dc00f9700ff0c1925c48852862b02e09f3f26415d3e347
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0006ea9ec64cd95a709ec91509cb3a9828df160
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745512"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996661"
 ---
 # <a name="create-an-item-replacement-order"></a>Skapa en artikelersättningsorder 
 
@@ -65,6 +67,3 @@ Ersättningsorder skapas vanligtvis efter att en produkt har returnerats och ins
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

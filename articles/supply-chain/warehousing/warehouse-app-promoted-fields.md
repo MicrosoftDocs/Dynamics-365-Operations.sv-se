@@ -1,26 +1,27 @@
 ---
 title: Konfigurera befordrade fält för steg i mobilappen Warehouse Management
 description: Det här ämnet beskriver hur man främjar och lyfter fram specifik information för varje steg i uppgiftsflödena för mobilappen för Warehouse Management.
-author: Mirzaab
+author: MarkusFogelberg
 ms.date: 10/15/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 0ce3fb829d349a35c6c2f29838a2c725f7b61c55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 05ca38e366331c2132bb46eddf77ae2ef371256b
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920333"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678652"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Konfigurera befordrade fält för steg i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: GA with 10.0.23 -->
 
 > [!IMPORTANT]
 > Funktionerna som beskrivs i detta ämne gäller bara den nya mobilappen Warehouse Management. De påverkar inte den gamla lagerställeappen, som nu har blivit inaktuell.

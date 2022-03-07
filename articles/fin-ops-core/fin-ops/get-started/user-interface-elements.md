@@ -2,11 +2,9 @@
 title: Användargränssnittselement
 description: I det här avsnittet beskrivs de användargränssnittselement som används i appen.
 author: tlefor
-manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,14 +12,17 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 3e087a1abec9bf177bb831b9bbfa12895054ad07
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 60e85841ec940ed65d73dc052848168be70301d6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797956"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069333"
 ---
 # <a name="user-interface-elements"></a>Användargränssnittselement
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I det här avsnittet beskrivs de användargränssnittselement som används i appen. Innan användarna kan navigera i gränssnittet är det viktigt att känna till namn och funktioner för de element som utgör gränssnittet.
 
@@ -86,3 +87,6 @@ Ett *verktygsfält* innehåller verktyg, t.ex. möjligheten att lägga till fäl
 En *lista* är det namn som ges till en samling poster som du kan rulla igenom. Du kan flytta dessa poster till sidan genom att markera dem. Detta öppnar ofta ett rutnät.
 
 ![Följande bild visar exempel på verktygsfält, rutnät och listor.](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

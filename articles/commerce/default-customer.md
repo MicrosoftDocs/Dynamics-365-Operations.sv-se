@@ -65,14 +65,14 @@ I bilden nedan visas ett exempel på adressbok.
 
 ![Adressbok.](media/address-book.png)
 
-## <a name="create-a-default-customer&quot;></a>Skapa en standardskund
+## <a name="create-a-default-customer"></a>Skapa en standardskund
 
 Gör så här om du vill skapa en standardkund.
 
 1. I navigeringsfönstret, gå till **Moduler \> Butik och handel \> Kunder \> Alla kunder**.
 1. Klicka på **Ny** i åtgärdsfönstret.
-1. I listrutan **Typ** väljer du &quot;Person&quot;.
-1. I listrutan **kundkonto** väljer du eller anger ett kontonummer (t.ex. &quot;100001").
+1. I listrutan **Typ** väljer du "Person".
+1. I listrutan **kundkonto** väljer du eller anger ett kontonummer (t.ex. "100001").
 1. I listrutan **Förnamn** väljer du eller anger ett namn (till exempel "standard").
 1. I listrutan **Mellannamn** väljer du eller anger ett namn (till exempel "butik").
 1. I listrutan **Efternamn** väljer du eller anger ett namn (till exempel "kund").

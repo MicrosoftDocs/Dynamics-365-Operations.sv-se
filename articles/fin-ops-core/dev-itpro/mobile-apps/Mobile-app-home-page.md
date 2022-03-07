@@ -2,26 +2,24 @@
 title: Startsida för mobilapp
 description: Det här avsnittet beskriver mobilappen Finance and Operations (Dynamics 365) och ger länkar till resurser som kan hjälpa dig att implementera den i din organisation.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 272853
+ms.custom: intro-internal
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: e4a9d6424e2d214624c148c0565c88ea4cf4ccf9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683468"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729718"
 ---
 # <a name="mobile-app-home-page"></a>Startsida för mobilapp
 
@@ -29,8 +27,7 @@ ms.locfileid: "4683468"
 
 Det här avsnittet beskriver mobilappen **Finance and Operations (Dynamics 365)** och ger länkar till resurser som kan hjälpa dig att implementera den i din organisation.
 
-<a name="overview"></a>Översikt
---------
+## <a name="overview"></a>Översikt
 
 Mobilappen låter din organisation sina dess affärsprocesser tillgängliga på mobila enheter. När din IT-administratör aktiverar funktionen för mobila arbetsytor för organisationen, kan användare logga in på appen och omedelbart börja köra affärsprocesser från sina mobila enheter. Mobilappen innehåller följande funktioner som hjälper dig att öka produktiviteten:
 
@@ -42,7 +39,7 @@ Mobilappen låter din organisation sina dess affärsprocesser tillgängliga på 
 ## <a name="elements-of-the-mobile-app"></a>Delar av mobilappen
 Navigering i mobilappen består av fyra grundläggande begrepp: instrumentpanel, arbetsytor, sidor och åtgärder. 
 
-[![Navigeringsbegrepp i mobilappen](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+[![Navigeringsbegrepp i mobilappen.](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 1. När du startar programmet kan du gå till **instrumentpanelen**.
 2. På instrumentpanelen visas en lista över **arbetsytor** som har publicerats.
@@ -56,7 +53,7 @@ Navigering i mobilappen består av fyra grundläggande begrepp: instrumentpanel,
 ## <a name="implementation-process"></a>Implementeringsprocess
 Följande illustration visar processen för implementering av såväl mobila arbetsytor som tillhandahålls av Microsoft, som anpassade mobila arbetsytor. 
 
-[![Implementeringsprocess för mobila program](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
+[![Implementeringsprocess för mobilappar.](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 Följande tabell innehåller länkar till resurser som hjälper dig att implementera såväl mobila arbetsytor som tillhandahålls av Microsoft, som anpassade mobila arbetsytor. Siffrorna i den första kolumnen visar de numrerade stegen i illustrationen.
 
@@ -93,8 +90,8 @@ Följande tabell innehåller länkar till resurser som hjälper dig att implemen
 <li><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Mobil arbetsyta för inventering av lagerbehållning</a></li>
 <li><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Mobil arbetsyta för arbetsplatser</a></li>
 <li><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Mobil arbetsyta för leverantörssamarbete</a></li>
-<li><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Mobil arbetsyta för projekttidangivelse</a></li>
-<li><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Mobil arbetsyta för utläggshantering</a></li>
+<li><a href="/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace">Mobil arbetsyta för projekttidangivelse</a></li>
+<li><a href="/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace">Mobil arbetsyta för utläggshantering</a></li>
 
 </ul></td>
 </tr>
@@ -151,3 +148,6 @@ Följande tabell innehåller länkar till resurser som hjälper dig att implemen
 
 ## <a name="troubleshooting"></a>Felsökning
 [Mobila plattformsresurser](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

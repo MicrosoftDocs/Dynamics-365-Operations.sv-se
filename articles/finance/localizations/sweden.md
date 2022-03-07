@@ -2,26 +2,23 @@
 title: Sverige – översikt
 description: Det här avsnittet innehåller länkar till dokumentationsresurser för Sverige.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Sweden
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8933568a1131cc7751150ee33d7d20a06f0d388c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4632a7e7d6d1f72cc896839fddf11cfc0adfb90f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408613"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832578"
 ---
 # <a name="sweden-overview"></a>Sverige – översikt
 
@@ -33,3 +30,6 @@ Det här avsnittet innehåller länkar till dokumentationsresurser för Sverige.
 - [Importera betalningsformat](emea-swe-payment-formats-import.md)
 - [Funktioner för kassaapparat](../../retail/localizations/emea-swe-cash-registers.md)
 - [Momsbetalningsrapport för Sverige](emea-swe-sales-tax-payment-report-sweden.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

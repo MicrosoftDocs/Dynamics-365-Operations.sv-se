@@ -1,7 +1,7 @@
 ---
 title: Exempel på bokföringsdefinitioner
 description: Denna artikel innehåller exempel som visar hur du använder bokföringsdefinitioner för inköpsorderinteckningar och budgetanslag.
-author: kweekley
+author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 15772
 ms.assetid: 3864e4da-853f-403d-b906-79631d80b363
 ms.search.region: Global
-ms.author: kweekley
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ae45058a55570a62baf43dc785453dad5aa7050
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 6dfd1012ccc1077a028c0cf082cd7685918579af6c58e498ddfa7f4dc9897c62
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726928"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764249"
 ---
 # <a name="posting-definition-examples"></a>Exempel: bokföringsdefinitioner
 

@@ -2,9 +2,11 @@
 title: Konfigurera uppgiftshantering
 description: I det här avsnittet beskrivs hur du konfigurerar funktioner för uppgiftshantering i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -13,18 +15,20 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0ae0f3bd58db587d9024beceedd790cc3d3e4ee990a2f4c727dfda96b2f0785c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e880305d02fd9f10464fe3f65a2774a44da258c6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730813"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006245"
 ---
 # <a name="configure-task-management"></a>Konfigurera uppgiftshantering
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du konfigurerar funktioner för uppgiftshantering i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Översikt
 
 Innan Dynamics 365 Commerce chefer och medarbetare kan använda funktionerna för aktivitets hantering i Commerce måste du konfigurera uppgiftshanteringen. Konfigurationssteg omfattar beviljande av behörigheter till chefer och medarbetare, distribution av behörigheter till kassaklienter, inställning av kassameddelanden och konfigurering av panelen **Uppgifter** på startsidan för en kassaprogram.
 
@@ -44,7 +48,7 @@ Konfigurera behörigheter av uppgiftshantering för butikschefer enligt följand
 
 Följande illustration visar hur du konfigurerar behörigheter av uppgiftshantering för butikschefer.
 
-![Konfigurera behörigheter för uppgiftshantering för butikschefer.](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![Konfigurera behörigheter av uppgiftshantering för butikschefer](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## <a name="configure-permissions-for-employees"></a>Konfigurera behörigheter för medarbetare
 
@@ -78,7 +82,7 @@ Gör på följande vis för att konfigurera kassameddelanden.
 
 Följande bild visar åtgärder **Uppgiftshantering** på sidan **Kassaoperationer**.
 
-![Åtgärden Uppgiftshantering på sidan Kassaåtgärder.](media/HQ-POS-Tasks-Notifications.png)
+![Åtgärden uppgiftshantering på sidan kassaåtgärder](media/HQ-POS-Tasks-Notifications.png)
 
 Mer information om hur du konfigurerar kassameddelanden finns i [Visa ordermeddelanden i POS](notifications-pos.md).
 
@@ -95,7 +99,7 @@ Konfigurera **uppgift** på en kassaprogram startsida, följ dessa steg.
 
 Följande illustration visar ett exempel på panelen **Uppgifter** på en kassas startsida.
 
-![Uppgiftspanel på en startsida för kassa.](media/POS-home-screen-tasks-button-image.png)
+![Paneluppgift på en startsida för kassa](media/POS-home-screen-tasks-button-image.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
@@ -106,6 +110,3 @@ Följande illustration visar ett exempel på panelen **Uppgifter** på en kassas
 [Tilldela uppgiftslistor till butiker eller medarbetare](task-mgmt-assign-lists.md)
 
 [Uppgiftshantering i POS](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

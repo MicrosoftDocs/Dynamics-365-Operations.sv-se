@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailHardwareProfile, RetailFiscalPrinterConfigTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Sweden
 ms.search.industry: retail
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c36e514486bd1359d655f6fce31dbac8f663afbf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b9303ed85a67c3c27ea1c2936771d06a770fa057
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408620"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985926"
 ---
 # <a name="cash-register-functionality-for-sweden"></a>Kassaapparatfunktioner för Sverige
 
@@ -59,7 +58,7 @@ Följande Sverige-specifika kassafunktioner aktiveras när parametern **ISO-kod*
     - Total försäljning exklusive och inklusive skatt
     - Totalförsäljning, returer och netto
 
-- En kanalrapport för **elektronisk journal (Sverige)** som listar användningshändelser i kassan, till exempel försäljning, returer, kvittokopior, kassalådöppningar och prisåsidosättningar.
+- En kanalrapport för **elektronisk journal (Sverige)** som listar användningshändelser i POS, till exempel försäljning, returer, kvittokopior, kassalådöppningar och prisåsidosättningar.
 
     > [!NOTE]
     > För närvarande kan rapporten **elektronisk journal (Sverige)** inte exporteras eller skrivas ut. Men funktionen för export och utskrift av rapportenkommer att läggas till senare.
@@ -79,7 +78,7 @@ Följande Sverige-specifika kassafunktioner aktiveras när parametern **ISO-kod*
 ---
 
 
-## <a name="setting-up-commerce-for-sweden"></a>Konfigurera Handel för Sverige
+## <a name="setting-up-commerce-for-sweden"></a>Konfigurera Commerce för Sverige
 
 Det här avsnittet beskriver inställningar som avser och rekommenderas för Sverige. Mer information finns i [Startsida för Commerce](../index.md).
 
@@ -91,7 +90,7 @@ Om du vill använda Sverige-specifika funktioner måste du utföra följande upp
 Sverige-specifika inställningar kan delas in i två grupper:
 
 - Allmänna inställningar
-- Styrenhet - specifika inställningar
+- Styrenhet – specifika inställningar
 
 ### <a name="general-settings"></a>Allmänna inställningar
 
@@ -145,7 +144,7 @@ Du måste ange följande allmänna inställningar för Sverige.
 
 6. På sidan **Konfiguration av kanalrapporter** anger du rapporten **elektronisk journal (Sverige)**. I fältet **behörighetsgrupper** väljer du kassabehörighetsgrupper som får köra rapporten.
 
-### <a name="control-unitspecific-settings"></a>Styrenhet - specifika inställningar
+### <a name="control-unitspecific-settings"></a>Styrenhet – specifika inställningar
 
    # <a name="retail-1006-and-earlier"></a>[Retail 10.0.6 och tidigare](#tab/retail-10-0-6)
 

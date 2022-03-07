@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 17067ff534e0e3f4636d7a307563128db55cf2ba
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 7da0eba072aba08b4da655cf680af9282278f34f
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797175"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564685"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Nyheter och ändringar i AX programvaruversion 7.0.1 (maj 2016)
 
@@ -106,3 +105,6 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 [Nyheter och ändringar på hemsidan för Finance and Operations](whats-new-changed.md)
 
 [Nya eller uppdaterade uppgiftsguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

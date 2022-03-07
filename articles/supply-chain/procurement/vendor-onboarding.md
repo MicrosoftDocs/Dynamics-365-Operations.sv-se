@@ -1,26 +1,24 @@
 ---
 title: Integrera leverantörer
 description: Det här avsnittet beskriver processen för att integrera nya leverantörer. Det förklarar de åtgärder som krävs av olika roller under denna process.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 081c2e5145a9175ace946e332e299247e706b548
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: c2950cecfaf2c8b19ed14df748810b7d6f926c53
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019889"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566897"
 ---
 # <a name="onboard-vendors"></a>Integrera leverantörer
 
@@ -35,7 +33,7 @@ Processen består av följande steg, där olika roller utför åtgärder i syste
 1. **Datahantering OData** – Importera enhet – Den första begäran är den potentiella leverantörens registreringsbegäran. Denna begäran kommer vanligtvis från en källa som exempelvis webbplats som kunden agerar värd för och som tillåter anonym åtkomst. Leverantörer kan registrera sig genom att tillhandahålla grundläggande information, till exempel leverantörens namn, berättigande, organisationsnummer samt kontaktpersonens namn och e-postadress. Begäran importeras via gränssnittet för datahantering.
 2. **Listsida för registreringsbegäran för potentiell leverantör** - Baserat på den information som tillhandahålls i registreringsbegäran för potentiell leverantör beslutar en inköpsperson huruvida leverantören ska integreras. Inköpspersonen granskar den inkommande begäran på listsidan **Registreringsbegäran för potentiell leverantör**.
 3. **Arbetsflöde för användarreserveringar** - När en inköpare har bekräftat informationen i en inkommande begäran och har beslutat att fortsätta med integreringsprocessen, reserverar arbetsflödet för användare den nya användaren och skickar en inbjudan via e-post att godkänna kontaktpersonen som en autentiserad användare av Microsoft Dynamics 365.
-4. **Registreringsguide för leverantörer** - Leverantörens kontaktperson loggar in på med hjälp av det nya användarkontot. Han eller hon slutför registreringsguiden för leverantörer i syfte att tillhandahålla information som exempelvis adresser, företagsinformation, inköpskategorier och enkätfrågor.
+4. **Registreringsguide för leverantörer** - Leverantörens kontaktperson loggar in på med hjälp av det nya användarkontot. De slutför registreringsguiden för leverantörer i syfte att tillhandahålla information som exempelvis adresser, företagsinformation, inköpskategorier och enkätfrågor.
 5. **Arbetsflöde för godkännande** - En leverantörsförfrågan som innehåller registreringsinformationen skapas. Denna leverantörsförfrågan skickas till ett arbetsflöde och sedan vidare för granskning och godkännande.
 6. **Skapande av en överordnad leverantör och ändring av användarroll** - När en leverantörsförfrågan har godkänts skapas en leverantörspost. Användarkontot för leverantörens kontaktperson får antingen behörighet för leverantörssamarbete, eller också inaktiveras det.
 
@@ -74,7 +72,7 @@ När registreringsbegäran för potentiell leverantör importeras, visas den på
 
 ## <a name="submitting-a-prospective-vendor-user-request"></a>Skicka in en användarbegäran för en potentiell leverantör
 
-Syftet med en användarbegäran för potentiell leverantör är att reservera personen som skickade in den ursprungliga begäran, detta så att han eller hon kan logga in i Supply Chain Management genom att använda det e-postkonto som tillhandahålls i registreringsbegäran för potentiell leverantör.
+Syftet med en användarbegäran för potentiell leverantör är att reservera personen som skickade in den ursprungliga begäran, detta så att de kan logga in i Supply Chain Management genom att använda det e-postkonto som tillhandahålls i registreringsbegäran för potentiell leverantör.
 
 Användarförfrågan för potentiell leverantör bearbetas av arbetsflödet för användarbegäran. Detta arbetsflöde kommunicerar via Azure AD B2B-samarbete. En användare med lämpliga säkerhetsinställningar skapas i Supply Chain Management.
 
@@ -89,7 +87,7 @@ Mer information om hur du konfigurerar e-postmeddelandet och arbetsflödet i all
 
 ## <a name="vendor-registration"></a>Leverantörsregistrering
 
-En potentiell leverantörsanvändare som loggar in i Supply Chain Management får se den första sidan i registreringsguiden för leverantörer, där han eller hon kan ange information om leverantören.
+En potentiell leverantörsanvändare som loggar in i Supply Chain Management får se den första sidan i registreringsguiden för leverantörer, där de kan ange information om leverantören.
 
 Guiden visar konfigurationen för leverantörsförfrågan. Det land/den region där leverantören bedriver verksamhet avgör vilken information som efterfrågas i guiden och vilken information som är obligatorisk.
 
@@ -129,7 +127,7 @@ Följande tabell visar den status som en leverantörsförfrågan kan ha.
 |----------------------------|-------------|
 | Utkast                      | Leverantörsförfrågan har inte skickats in ännu. |
 | Begäran skickad          | Leverantörsförfrågan har skickats in, och första steget i arbetsflödet behandlas. |
-| Pågående granskning             | Om det finns flera granskare i en arbetsflödesuppgift kan en granskare acceptera uppgiften att granska leverantörsförfrågan och sedan slutföra granskningen. Om endast en granskare finns kan den deltagaren slutföra granskningen genom att välja **Slutförd** i arbetsflödesåtgärden. Han eller hon behöver inte först acceptera arbetsuppgiften. |
+| Pågående granskning             | Om det finns flera granskare i en arbetsflödesuppgift kan en granskare acceptera uppgiften att granska leverantörsförfrågan och sedan slutföra granskningen. Om endast en granskare finns kan den deltagaren slutföra granskningen genom att välja **Slutförd** i arbetsflödesåtgärden. De behöver inte först acceptera arbetsuppgiften. |
 | Förfrågan väntar på godkännande   | Leverantörsförfrågan har skickats till deltagarna för godkännande, och det finns ett alternativ att begära kompletterande uppgifter. En begäran om ytterligare information gör att arbetsuppgiften dirigeras tillbaka till avsändaren. Leverantörsförfrågan kan också godkännas eller avvisas när den har denna status. |
 | Begäran om ändring av ansökan | Ytterligare information har begärts av godkännaren, och leverantörsförfrågan har dirigerats till den person som skickade leverantörsförfrågan. Inskickaren kan lägga till erforderliga uppgifter och sedan skicka tillbaka leverantörsförfrågan. Om en leverantörsförfrågan skickas på nytt, ändras statusen tillbaka till **Begäran väntar på godkännande**. |
 | Begäran godkänd           | Denna status blir ett sluttillstånd. |
@@ -174,3 +172,6 @@ Genom att tillämpa åtgärden **Ta bort** på registreringsbegäran för en pot
 |         Godkänt         |                                                                               Leverantörsförfrågan godkänns.                                                                               |                                                                                                   Begäran om registrering av potentiell leverantör, de data som angavs i registreringsguiden för leverantör samt leverantörsförfrågan tas bort.                                                                                                    |
 |         Avvisat         |                                                                               Leverantörsförfrågan avvisas.                                                                               |                                                                                                   Begäran om registrering av potentiell leverantör, de data som angavs i registreringsguiden för leverantör samt leverantörsförfrågan tas bort.                                                                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

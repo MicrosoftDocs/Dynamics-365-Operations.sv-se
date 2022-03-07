@@ -2,9 +2,11 @@
 title: Vanliga frågor om produktrekommendationer
 description: Det här avsnittet innehåller information om processer och verktyg som du kan använda för att felsöka problem som hör till produktrekommendationer eller deras resultat.
 author: bebeale
+manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 88ad0efd8f678c3082c31b1c3162b8288e14fc9edb69e8756f1641461b808e07
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f0140f798e000ca66c67afa00f788abc560c8a07
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733975"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216709"
 ---
 # <a name="product-recommendations-faq"></a>Vanliga frågor om produktrekommendationer
 
@@ -68,7 +70,7 @@ Om du måste spärra en artikel från att upptäckas i butiken måste du ändra 
 
 ## <a name="how-do-i-add-a-list-to-an-e-commerce-page"></a>Hur lägger jag till en lista på en näthandelssida?
 
-Information om hur du lägger till produktrekommendationssidor på din näthandelssajt finns i [Lägga till listor över produktrekommendationer till sidor](./product-recommendations.md).
+Information om hur du lägger till produktrekommendationssidor på din näthandelssajt finns i [Lägga till listor över produktrekommendationer till sidor](add-reco-list-to-page.md).
 
 ## <a name="how-do-i-enable-recommendations-on-pos"></a>Hur aktiverar jag rekommendationer i POS?
 

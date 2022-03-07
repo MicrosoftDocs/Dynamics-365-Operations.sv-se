@@ -2,27 +2,24 @@
 title: Modul för inköpsruta
 description: Det här avsnittet handlar om moduler för inköpsruta och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fa9d42c20540f2ee2240cc4f2b180140c3f9a628
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 4f49c7a1519744cda9cfba31a3938fd23e692841a851a52ec9d18a241f8c0458
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517098"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717805"
 ---
 # <a name="buy-box-module"></a>Modul för inköpsruta
 
@@ -30,9 +27,7 @@ ms.locfileid: "4517098"
 
 Det här avsnittet handlar om moduler för inköpsruta och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Översikt
-
-Termen *inköpsruta* syftar vanligtvis på en sida med produktinformation som är "ovanför vikningen" och som är värd för all den viktigaste information som krävs för att göra produktinköp. (Ett område som är "ovanför vikningen" visas när sidan läses in för första gången, så att användarna inte behöver rulla nedåt för att kunna se dem.)
+Termen *inköpsruta* syftar vanligtvis på en del av en sida med produktinformation (PDP) som ligger "ovanför skrollningsgränsen" ("above the fold") och som har all den viktigaste information som krävs för att göra produktinköp. (Ett område som är "ovanför vikningen" visas när sidan läses in för första gången, så att användarna inte behöver rulla nedåt för att kunna se dem.)
 
 En inköpsruta är en speciell behållare som används för att vara värd för alla moduler som visas i området för inköpsruta på en produktinformationssida.
 
@@ -40,7 +35,7 @@ URL för produktinformationssidan innehåller produkt-ID. All information som kr
 
 Följande bild visar ett exempel på en modul för inköpsruta på en produktinformationssida.
 
-![Exempel på en modul för inköpsruta](./media/ecommerce-pdp-buybox.PNG)
+![Exempel på en modul för inköpsruta.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="buy-box-module-properties-and-slots"></a>Egenskaper och platser för modul för inköpsruta 
 
@@ -72,14 +67,16 @@ Följande köpboxmodulinställningar som kan konfigureras på **Platsinställnin
 
 - **Kvantitetsbegränsning för kundvagn** – Den här egenskapen används för att ange det maximala antalet för varje objekt som kan läggas till i vagnen. En återförsäljare kan till exempel besluta att endast 10 av varje produkt kan säljas i en enda transaktion.
 - **Lager** – För information om hur du använder lagerinställningar finns i [tillämpa lagerinställningar](inventory-settings.md).
-- **Lägg till produkten i kundvagnen** - Denna egenskap används för att ange funktionen när en artikel har lagts till i vagnen. De möjliga värdena är **Navigera till kundvagnssidan**, **Navigera inte till kundvagnssidan** och **Visa meddelande**. När värdet är inställt på **Navigera till kundvagnssidan** skickas användarna till kundvagnssidan när de har lagt till en artikel. När värdet är inställt på **Navigera inte till kundvagnssidan** skickas användarna inte till kundvagnssidan när de har lagt till en artikel. När värdet är inställt på **Visa meddelande** visas användarna ett bekräftelsemeddelande och du kan fortsätta att bläddra på sidan för produktinformation. 
+- **Lägg till produkt i kundvagnen** – Mer information om hur du använder inställningar för **Lägg till produkt i kundvagnen** finns i [Inställningar för Lägg till produkt i kundvagnen](add-cart-settings.md).
+
+## <a name="buy-box-module-definition-extensions-in-the-adventure-works-theme"></a>Köp moduldefinitionstillägg för köpruta i Adventure Works-temat
+
+Den modul för köpruta som Adventure Works-temat innehåller har ett tillägg för moduldefinitioner som stöder implementering av en modul för produktspecifikationer inom en "dragspelsmodul" i en PDP-köpruta. Om du vill demonstrera produktspecifikationsattribut i en PDP-köpbox kan du lägga till en produktspecifikationsmodul för "dragspelsmodulplatten" på platsen för köpruta.
+
 
 > [!IMPORTANT]
-> Webbplatsinställningarna **Lägg till produkt i kundvagn** är tillgängliga i Dynamics 365 Commerce-versionen 10.0.11. Om du uppdaterar från en äldre version av Dynamics 365 Commerce måste du uppdatera filen appsettings.json manuellt. Information om hur du uppdaterar filen appsettings.json finns i [SDK- och modulens biblioteksuppdateringar](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+> Adventure Works-temat finns tillgängligt från och med Dynamics 365 Commerce-version 10.0.20.
 
-I följande bild visas ett exempel på ett bekräftelsemeddelande om tillägg till kundvagnen på Fabrikam webbplats.
-
-![Exempel på en meddelandemodul](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interaktion för skalningsenhet för handel
 
@@ -133,6 +130,11 @@ Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in d
 
 [Modul för delning på sociala nätverk](social-share-module.md)
 
+[Lägga till inställningar för Lägg till produkt i kundvagnen](add-cart-settings.md)
+
 [Beräkna lagertillgänglighet för butikskanaler](calculated-inventory-retail-channels.md)
 
 [Uppdateringar av SDK och modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

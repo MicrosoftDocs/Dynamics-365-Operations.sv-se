@@ -1,7 +1,7 @@
 ---
 title: Integrering av anläggningstillgångar
 description: Anläggningstillgångar kan integreras med Redovisning, Lagerhantering, Kundreskontra och Leverantörsreskontra. Du kan också ställa in anläggningstillgångar så att detta integreras med inköpsorder.
-author: moaamer
+author: ShylaThompson
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 3501
 ms.assetid: f0639053-d99c-432a-8ead-5c26e0d4eaec
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e53d171ba0b9be7bbfffa25c27bd21fe036acee
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: dc069743c1b28133540eeab98ae6dd5242a5e887
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674785"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826844"
 ---
 # <a name="fixed-assets-integration"></a>Integrering av anläggningstillgångar
 
@@ -28,7 +28,8 @@ ms.locfileid: "7674785"
 
 Anläggningstillgångar kan integreras med Redovisning, Lagerhantering, Kundreskontra och Leverantörsreskontra. Du kan också ställa in anläggningstillgångar så att detta integreras med inköpsorder.
 
-## <a name="general-ledger"></a>Huvudbok
+<a name="general-ledger"></a>Huvudbok
+--------------
 
 I redovisningen sammanfattas värdet av alla anläggningstillgångar vanligtvis på flera huvudkonton som är nödvändiga för ekonomisk rapportering. Däremot kan du på sidan **Anläggningstillgångar** skapa många poster för anläggningstillgångar. Dessa poster kan innehålla information som anskaffningspriset, avskrivning och värderingen. Varje gång du bokför en transaktion för en anläggningstillgång uppdateras motsvarande huvudkonton. Huvudkontona för anläggningstillgångar innehåller alltid det uppdaterade värdet på anläggningstillgångarna.
 

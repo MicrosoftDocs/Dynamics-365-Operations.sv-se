@@ -2,9 +2,11 @@
 title: Kostnadsredovisningsterminologi
 description: Detta ämne definierar de grundläggande villkoren som används i kostnadsredovisning.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f61ae7a6657eaad3510833c17f342b7266be247aec2a9bfe80b97172f662ae0a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2bd821fdfe62475849e6d3b80d3a2c377bbabf4a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774387"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990627"
 ---
 # <a name="cost-accounting-terminology"></a>Kostnadsredovisningsterminologi
 
@@ -128,7 +130,7 @@ De flesta källsystem kan innehålla data som matchar en eller flera datakällor
 |---|---|---|---|
 | Dimensionsmedlemmar för kostnadselement  |  Ja | Ja  | Ja  |
 |  Dimensionsmedlemmar för kostnadsobjekt |  Ja | Ja  | Ja  |
-|  Statistikdimensionsmedlemmar | Ja  | Nej  | Nej  |
+|  Statistikdimensionsmedlemmar | Ja  | Nr  | Nr  |
 |  Huvudbok | Ja  | Ja  | Ja  |
 |  Budgetposter  | Ja  | Ja  | Ja  |
 |  Statistiska mätningar | Ja  | Ja  | Ja  |
@@ -202,6 +204,3 @@ Utdrag för vyer för chefer som är ansvariga för att kontrollera kostnader. U
 Versioner används för att simulera, visa och jämföra olika resultat. Som standard visas alla faktiska kostnader i en basversion som kallas för *faktisk* För budgetar och beräkningar kan du efter behov arbeta med valfritt antal versioner. Du kan till exempel importera budgetdata till en ursprunglig version och sedan ändra budgeten i en reviderad version. För beräkningar kan du skapa flera versioner. I dessa olika versioner kan du sedan skapa beräkningar genom att använda olika beräkningsregler som ska tillämpas för kostnadsallokering.
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

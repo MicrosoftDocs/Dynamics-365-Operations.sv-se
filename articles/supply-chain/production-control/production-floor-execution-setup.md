@@ -2,37 +2,35 @@
 title: Konfigurera en enhet för att köra körningsgränssnittet för produktionsgolvet
 description: Körningsgränssnittet för produktionsgolvet är inställt för varje enhet på produktionsgolvet. Företag ställer vanligtvis in varje enhet på olika sätt, beroende på vilket syfte enheten har. Ett företag kan till exempel ha en enhet i mottagningsområdet, där arbetare stämplar in och stämplar ut och en annan på verkstadsgolvet där arbetare hanterar sina jobb.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d4529af21d9673512889b17aeb1e7fbd49969cdc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966289"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752842"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Konfigurera en enhet för att köra körningsgränssnittet för produktionsgolvet
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Körningsgränssnittet för produktionsgolvet är inställt för varje enhet på produktionsgolvet. Företag ställer vanligtvis in varje enhet på olika sätt, beroende på vilket syfte enheten har. Ett företag kan till exempel ha en enhet i mottagningsområdet, där arbetare stämplar in och stämplar ut och en annan på verkstadsgolvet där arbetare hanterar sina jobb.
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>Ställa in konfiguration och filter för en specifik enhet
 
-Om du vill ange konfigurations- och jobbfilter för en enhet loggar du in på sidan **körning på produktionsgolvet** med hjälp av ett konto som har en säkerhets roll som inkluderar uppdraget *Underhåll tidsövervakning*. (Bland de medföljande säkerhetsrollerna i den här listan kan endast *Produktionslagerarbetsledaren* ha detta uppdrag.) Följ sedan de här stegen.
+Om du vill ange konfigurations- och jobbfilter för en enhet loggar du in på sidan **Körning på produktionsgolv** med hjälp av ett konto som har en säkerhetsroll som inkluderar uppdraget *Bibehåll tidsövervakning*. (Bland de medföljande säkerhetsrollerna i den här listan kan endast *Produktionslagerarbetsledaren* ha detta uppdrag.) Följ sedan de här stegen.
 
-1. Gå till den enhet som du vill ställa in och logga in på Microsoft Dynamics 365 Supply Chain Management som en produktionslagerarbetsledare. (Använd ett konto som innehåller uppdraget *Underhåll tidsövervakning*.)
+1. Gå till den enhet som du vill ställa in och logga in på Microsoft Dynamics 365 Supply Chain Management som en produktionslagerarbetsledare. (Använd ett konto som innehåller uppdraget *Bibehåll tidsövervakning*.)
 1. Kontrollera att det finns en konfiguration för enheten som du installerar. Om det inte redan finns en konfiguration anges en standardkonfiguration. Mer information om hur du ställer in en konfiguration finns i [Konfigurera körningsgränssnittet för produktionsgolvet](production-floor-execution-configure.md).
 1. Gå till **Produktionskontroll \> Tillverkningskörning \> Körningsgränssnittet för produktionsgolvet**.
 
@@ -72,10 +70,13 @@ I många fall kör du körningsgränssnittet för produktionsgolvet på en enhet
 
 I den övre delen av bilden nedan visas hur gränssnittet ser ut som standard. I den nedre delen visas hur den ser ut i helskärmsläge när navigeringsfönstret döljs.
 
-![Standard jämfört med helskärmsgränssnitt](media/pfei-full-screen.png "Standard jämfört med helskärmsgränssnitt")
+![Standard- jämfört med helskärmsgränssnitt.](media/pfei-full-screen.png "Standard jämfört med helskärmsgränssnitt")
 
 ## <a name="extend-the-session-past-12-hours"></a>Förläng sessionen de senaste 12 timmarna
 
 Som standard används körningsgränssnittet för produktionsgolvet automatiskt för att logga ut om ingen använder det i 12 timmar. En användare av Supply Chain Management måste sedan logga in igen. Du kan dock förlänga tidsgränsen till upp till 90 dagar.
 
 Om du vill förlänga tidsgränsen loggar du in på Supply Chain Management, går till **Systemadministration \> Användare \> Sessionstillägg**. Ange användarkontot för Supply Chain Management som används för att logga in på enheten och antalet timmar som sessionen ska vara aktiv för.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

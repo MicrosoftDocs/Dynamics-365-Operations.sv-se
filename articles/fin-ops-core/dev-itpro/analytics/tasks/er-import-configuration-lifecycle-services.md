@@ -1,12 +1,10 @@
 ---
 title: Importera en konfiguration från Lifecycle Services
-description: Detta ämne förklarar hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan importera en ny version av en konfiguration för elektronisk rapportering (ER) från Microsoft Dynamics Lifecycle Services (LCS).
+description: I det här avsnittet beskrivs hur du importerar en ny version av konfiguration av elektronisk rapportering (ER) från Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
-manager: AnnBe
-ms.date: 09/14/2020
+ms.date: 06/17/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
@@ -15,18 +13,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c43cdce8d073f04a3158c8beb13a5376e669a4c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 05a8ad127df177c54e67ff1f2ddcd8b3a3f51ea12b6e11d087105bd74b6bdb3f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684461"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712602"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>Importera en konfiguration från Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
 Detta ämne förklarar hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan importera en ny version av en [konfiguration för elektronisk rapportering (ER)](../general-electronic-reporting.md#Configuration) från [Tillgångsbibliotek på projektnivå](../../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).
+
+> [!IMPORTANT]
+> Användningen av LCS som en lagringsdatabas för ER-konfigurationer är [inaktuell](../../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). Mer information finns i [Regulatory Configuration Service (RCS) – Lagringsavskrivning för Lifecycle Services (LCS)](../../../../finance/localizations/rcs-lcs-repo-dep-faq.md)
 
 I det här exemplet ska du välja önskad version av ER-konfigurationen och importera den för exempelföretaget, Litware, Inc. Dessa steg kan utföras i alla företag eftersom ER-konfigureringar delas mellan företag. För att slutföra dessa steg måste du först slutföra stegen i proceduren [Överföra en konfiguration till Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). Du måste också ha tillgång till LCS.
 
@@ -103,3 +104,6 @@ I det här exemplet ska du välja önskad version av ER-konfigurationen och impo
     I det här exemplet väljer du den version av konfigurationen som har status **Delad**.
 
     Observera att den enda delade versionen 1 i den valda konfigurationen av datamodell nu också är tillgänglig.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

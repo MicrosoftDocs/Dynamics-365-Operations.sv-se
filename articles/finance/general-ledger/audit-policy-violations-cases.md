@@ -2,11 +2,9 @@
 title: Överträdelser av granskningspolicyn
 description: Det här avsnittet innehåller en beskrivning av hur revisionsfall genereras från regelbrott för granskningspolicyregler. Här finns även information om hur olika granskningspolicyer använder datumintervallet för dokumenturval.
 author: panolte
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ddd403bfe82b1a7d3c0c5999f89bde19f1bba5e8
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: b4c7b9426cc98f62cd7a62b841c0f90c7c57889d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022115"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821971"
 ---
 # <a name="audit-policy-violations-and-cases"></a>Överträdelser av granskningspolicyn
 
@@ -60,3 +58,6 @@ Mer information finns i [Regler för granskningspolicy](audit-policy-rules.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

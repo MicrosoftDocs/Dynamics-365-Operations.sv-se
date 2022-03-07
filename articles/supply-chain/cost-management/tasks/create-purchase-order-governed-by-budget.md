@@ -1,25 +1,23 @@
 ---
 title: Skapa en inköpsorder som omfattas av budget
 description: Använd den här proceduren för att skapa en inköpsorder som ska kontrolleras med avseende budget.
-author: ShylaThompson
-manager: tfehr
+author: AndersGirke
 ms.date: 06/20/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbfbbef3bd7c7398f0f17b6cddbbff8c4755638d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2e2bfec4d7d38ef95d1f0ce3bd89938337ecf731
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963723"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572059"
 ---
 # <a name="create-a-purchase-order-governed-by-budget"></a>Skapa en inköpsorder som omfattas av budget
 
@@ -61,3 +59,6 @@ Använd den här proceduren för att skapa en inköpsorder som ska kontrolleras 
 4. Klicka på Fel eller varningar från budgetkontroll.
 5. Klicka på Stäng.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

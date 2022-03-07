@@ -1,10 +1,12 @@
 ---
-title: Lägga till en logotyp
+title: Lägg till en logotyp
 description: I det här avsnittet beskrivs hur du lägger till en logotyp till din webbplats i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
+manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -16,18 +18,20 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 583462755838e51b4c988b8da057dbeeee773e0b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 073c3d6f8d5ee88d51efb41f6b9c1a204b82fa12
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964589"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980317"
 ---
-# <a name="add-a-logo"></a>Lägga till en logotyp
+# <a name="add-a-logo"></a>Lägg till en logotyp
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du lägger till en logotyp till din webbplats i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Översikt
 
 När du bygger din webbplats, en av de första sakerna som du förmodligen kommer att göra är att lägga ditt företag eller varumärke logotyp till webbplatsens rubrik. Dynamics 365 Commerce online modulbibliotek ger en modul som gör denna uppgift enkel.
 
@@ -55,18 +59,17 @@ När du har publicerat det uppdaterade rubrikavsnitt visas din logotyp på alla 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Välja ett tema för webbplatsen](select-site-theme.md)
+[Välj ett tema för webbplatsen](select-site-theme.md)
 
 [Arbeta med CSS åsidosättningsfiler](css-override-files.md)
 
-[Lägga till en favoritikon](add-favicon.md)
+[Lägg till en favoritikon](add-favicon.md)
 
-[Lägga till ett copyrightmeddelande](add-copyright-notice.md)
+[Lägg till ett välkomstmeddelande](add-welcome-message.md)
+
+[Lägg till copyrightmeddelande](add-copyright-notice.md)
 
 [Lägg till språk på din webbplats](add-languages-to-site.md)
 
 [Lägga till skriptkod på webbsidor för att stödja telemetri](add-telemetry.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

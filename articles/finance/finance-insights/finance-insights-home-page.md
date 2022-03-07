@@ -1,6 +1,6 @@
 ---
-title: Ekonomiinsikter – startsida (förhandsversion)
-description: Ekonomiinsikter ger konfigurerbara och utökningsbara modeller för att hjälpa dig att noggrant och effektivt förutsäga företagets kassaflöde, när du ska få betalning för utestående kundfordringar och skapa ett budgetförslag som kan påskynda budgetprocessen. Alla dessa funktioner baseras på intelligenta maskininlärningsmodeller.
+title: Finance-insikter – startsida (förhandsversion)
+description: Finance-insikter ger konfigurerbara och utökningsbara modeller för att hjälpa dig att noggrant och effektivt förutsäga företagets kassaflöde, när du ska få betalning för utestående kundfordringar och skapa ett budgetförslag som kan påskynda budgetprocessen. Alla dessa funktioner baseras på intelligenta maskininlärningsmodeller.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/20/2020
@@ -11,42 +11,41 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: d7d167c4a8035231ea3c5630001d3aeccbcd7988
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 3026517a20e7e59e6223894dcc8078e32e4a9c5e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644931"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5245554"
 ---
-# <a name="finance-insights-home-page-preview"></a>Ekonomiinsikter – startsida (förhandsversion)
+# <a name="finance-insights-home-page-preview"></a>Finance-insikter – startsida (förhandsversion)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Ekonomiinsikter ger konfigurerbara och utökningsbara modeller för att hjälpa dig att noggrant och effektivt förutsäga företagets kassaflöde, när du ska få betalning för utestående kundfordringar och skapa ett budgetförslag som kan påskynda budgetprocessen. Alla dessa funktioner baseras på intelligenta maskininlärningsmodeller. När dessa nya funktioner kombineras med automatisering i leverantörsbetalningar och -samlingar, tillhandahåller de ett omfattande och intelligent system som driver beslutsfattande och hjälper dig att vidta åtgärder för att effektivt svara på aktuella och förväntade affärsutmaningar.
+Finance-insikter ger konfigurerbara och utökningsbara modeller för att hjälpa dig att noggrant och effektivt förutsäga företagets kassaflöde, när du ska få betalning för utestående kundfordringar och skapa ett budgetförslag som kan påskynda budgetprocessen. Alla dessa funktioner baseras på intelligenta maskininlärningsmodeller. När dessa nya funktioner kombineras med automatisering i leverantörsbetalningar och -samlingar, tillhandahåller de ett omfattande och intelligent system som driver beslutsfattande och hjälper dig att vidta åtgärder för att effektivt svara på aktuella och förväntade affärsutmaningar.
 
-Förhandsversionen av Ekonomiinsikter finns tillgänglig för utvärderingsdistribution i USA, Europa och Storbritannien. Microsoft lägger stegvis till support för fler regioner.
+Förhandsversionen av Finance-insikter finns tillgänglig för bedömningsdistribution i USA, Europa och Storbritannien. Microsoft lägger stegvis till support för fler regioner.
 
 Förhandsversionsfunktionerna kan och ska bara aktiveras i nivå-2-sandbox-miljöer. Konfiguration och AI-modeller (artificiell intelligens) som skapas i en sandbox-miljö kan inte migreras till en produktionsmiljö. Mer information finns i [Tilläggsavtal för Microsoft Dynamics 365 förhandsversioner](https://docs.microsoft.com/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-I det här avsnittet beskrivs kraven för att använda Ekonomiinsikter. När det är möjligt tillhandahålls länkar till källor med ytterligare information.
+I det här avsnittet beskrivs kraven för att använda Finance-insikter. När det är möjligt tillhandahålls länkar till källor med ytterligare information.
 
 ### <a name="legal-requirements"></a>Lagkrav
 
-Om du vill ansöka om att använda förhandsversionen av programmet fyller du i [Avtal för förhandsversion av Ekonomiinsikter för Dynamics 365 Finance](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u).
+Om du vill ansöka om att använda förhandsversionen av programmet fyller du i [Avtal för förhandsversion av Finance-insikter för Dynamics 365 Finance](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u).
 
 ### <a name="system-requirements"></a>Systemkrav
 
-En nivå-2-sandbox-miljö (multibox) krävs för att förhandsgranska Ekonomiinsikter. Mer bakgrundsinformation om miljöer finns i [Miljöplanering](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
+En nivå-2-sandbox-miljö (multibox) krävs för att förhandsgranska Finance-insikter. Mer bakgrundsinformation om miljöer finns i [Miljöplanering](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
 
 ### <a name="version-requirements"></a>Versionskrav
 
@@ -67,17 +66,17 @@ Exempeldata finns för demosystem som har demodatauppsättningen Contoso.
 - Administratören av Active Directory-klientorganisationen måste auktorisera AI Builder-programmet för åtkomst till datasjön.
 - Funktionen aktiveras i Dynamics 365.
 
-Om du är bekant med processen för att skapa och hantera resurser i Azure, Common Data Service och LCS kommer det vara till hjälp när du slutför processen.
+Om du är bekant med processen för att skapa och hantera resurser i Azure, Microsoft Dataverse och LCS kommer det vara till hjälp när du slutför processen.
 
-## <a name="configure-finance-insights"></a>Konfigurera Ekonomiinsikter
+## <a name="configure-finance-insights"></a>Konfigurera Finance-insikter
 
-Du måste slutföra vissa konfigurationssteg innan du kan använda Ekonomiinsikter. Mer information om hur du konfigurerar Ekonomiinsikter finns i [Konfiguration för Ekonomiinsikter](configure-for-fin-insites.md).
+Du måste slutföra vissa konfigurationssteg innan du kan använda Finance-insikter. Mer information om hur du konfigurerar Finance-insikter finns i [Konfiguration för Finance-insikter](configure-for-fin-insites.md).
 
 ## <a name="create-a-data-integrator-project"></a>Skapa ett projekt för dataintegrerare
 
 Du måste skapa ett projekt för dataintegrerare så att data som skapas i maskininlärningsmodellen kan flöda in Dynamics 365 Finance. Information om hur du skapar ett sådant projekt finns i [Skapa ett projekt för dataintegrerare](create-data-integrate-project.md).
 
-## <a name="enable-finance-insights-capabilities"></a>Aktivera funktioner för Ekonomiinsikt
+## <a name="enable-finance-insights-capabilities"></a>Aktivera funktioner för Finance-insikt
 
 När du har slutfört konfigurationsstegen och konfigurerat demodata måste du aktivera och ställa in varje funktion som du vill använda: kundbetalningsförutsägelser, kassaflödesprognoser och budgetförslag.
 
@@ -96,7 +95,7 @@ Mer information om hur du konfigurerar och använder kassaflödesprognoser finns
 
 I funktionen Budgetförslag används en maskininlärningsmodell tillsammans med din organisations historiska data för att generera ett budgetförslag. Det genererade förslaget kan hjälpa dig att påbörja en budgetprocess som är effektivare än en manuell process. Mer information om hur du aktiverar den här funktionen finns i [Aktivera budgetförslag](enable-budget-proposal.md). 
 
-## <a name="using-finance-insights-features"></a>Använda Ekonomiinsikt-funktioner
+## <a name="using-finance-insights-features"></a>Använda Finance-insikt-funktioner
 
 ### <a name="using-customer-payment-predictions"></a>Använda prediktioner av kundbetalning
 
@@ -130,3 +129,6 @@ Skicka ett e-postmeddelande till [Kundbetalningsinsikter (förhandsversion)](mai
 ## <a name="privacy-notice"></a>Sekretesspolicy
 
 Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

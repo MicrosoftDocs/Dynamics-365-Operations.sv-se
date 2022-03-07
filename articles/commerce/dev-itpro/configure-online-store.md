@@ -2,11 +2,9 @@
 title: Konfigurera onlinebutiker
 description: Denna artikel innehåller länkar till avsnitt som hjälper dig att centralt konfigurera och hantera en onlinebutik.
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 551a0a1e524f4aa30b2420e6ec384c92f48e95ae
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7840a91d1035f06d2cca93d75df20a157a55f14d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683394"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791213"
 ---
 # <a name="configure-online-stores"></a>Konfigurera onlinebutiker
 
@@ -62,3 +60,6 @@ Avsnitten nedan hjälper dig att konfigurera handelskomponenter och onlinebutike
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,33 +1,34 @@
 ---
 title: Kompensationsplaner
-description: Kompensations- och förmånschefer kan använda kompensationshantering för att underhålla och bearbeta fasta och variabla kompensationsplaner för organisationens medarbetare.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
+description: I det här avsnittet beskrivs hur du använder kompensationshantering för att hantera och bearbeta kompensationsplaner.
+author: twheeloc
+ms.date: 08/25/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
-ms.custom: 7521
+ms.search.scope: Human Resources
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: b6dd163b0e956624eb57fa031b918a94609f9cfa
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7571f220780ca383f57338bb69505cc68a741877
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420548"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066910"
 ---
 # <a name="compensation-plans"></a>Kompensationsplaner
 
-Kompensations- och förmånschefer kan använda kompensationshantering för att underhålla och bearbeta fasta och variabla kompensationsplaner för organisationens medarbetare.
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Kompensations- och förmånschefer kan använda **kompensationshantering** för att underhålla och bearbeta fasta och variabla kompensationsplaner för organisationens medarbetare.
 
 ### <a name="introduction"></a>Introduktion
 
@@ -44,7 +45,7 @@ Följande register visar komponenter i kompensationsprocessen som kan vara väse
 <thead>
 <tr class="header">
 <th>Komponent</th>
-<th>Mer information …</th>
+<th>Mer information</th>
 </tr>
 </thead>
 <tbody>
@@ -62,7 +63,7 @@ Följande register visar komponenter i kompensationsprocessen som kan vara väse
 </tr>
 <tr class="odd">
 <td>Matris för utnyttjande inom löneintervall</td>
-<td>En intervallutnyttjandematris hjälper dig att migrera medarbetare till kontrollpunkten för deras jobb. Du kan också använda intervallutnyttjandematrisen om du vill styra lönekapitalet inom företaget utan hänsyn till en enskild medarbetares prestanda eller företagets generella prestanda. Lägre betalda medarbetare i intervallet får exempelvis procentuellt större ökningar än de som har en högre lön inom intervallet. På så sätt kan du systematiskt motboka skillnader i eget kapital. Intervallutnyttjandet beräknas på följande sätt: (Fast lönesats - Minsta intervallvärde) ÷ (Högsta intervallvärde - Minsta intervallvärde).</td>
+<td>En intervallutnyttjandematris hjälper dig att migrera medarbetare till kontrollpunkten för deras jobb. Du kan också använda intervallutnyttjandematrisen om du vill styra lönekapitalet inom företaget utan hänsyn till en enskild medarbetares prestanda eller företagets generella prestanda. Lägre betalda medarbetare i intervallet får exempelvis procentuellt större ökningar än de som har en högre lön inom intervallet. På så sätt kan du systematiskt motboka skillnader i eget kapital. Intervallutnyttjandet beräknas på följande sätt: (Fast lönesats – Minsta intervallvärde) ÷ (Högsta intervallvärde – Minsta intervallvärde).</td>
 </tr>
 <tr class="even">
 <td>Referenspunktsinställningar</td>
@@ -90,7 +91,7 @@ Följande register visar komponenter i kompensationsprocessen som kan vara väse
 </tr>
 <tr class="even">
 <td>Kontrollpunkt</td>
-<td>Kontrollpunkten anger vad du anser vara den ideala lönesatsen för alla medarbetare på en viss kompensationsnivå. För gradplansstrukturer utgörs kontrollpunkterna vanligtvis av intervallernas mittpunkt. Bandstrukturer använder sällan kontrollpunkter. Du kan ange kontrollpunkten för en fast kompensationsplan i formuläret Planer för fast kompensation.</td>
+<td>Kontrollpunkten anger vad du anser vara den ideala lönesatsen för alla medarbetare på en viss kompensationsnivå. För gradplansstrukturer utgörs kontrollpunkterna vanligtvis av intervallernas mittpunkt. Bandstrukturer använder sällan kontrollpunkter. Du kan ange kontrollpunkten för en fast kompensationsplan på sidan **Planer för fast kompensation**.</td>
 </tr>
 <tr class="odd">
 <td>Jobbfunktioner</td>
@@ -122,8 +123,7 @@ Följande register visar komponenter i kompensationsprocessen som kan vara väse
 ## <a name="process-events"></a>Processhändelser
 En processhändelse beräknar kompensationsinformation för en angiven period för alla medarbetare som har anmälts till minst en fast eller variabel kompensationsplan. Du kan köra en processhändelse flera gånger för att testa eller uppdatera beräknade kompensationsresultat.
 
-<a name="compensation-events"></a>Kompensationshändelser
--------------------
+## <a name="compensation-events"></a>Kompensationshändelser
 
 Varje gång en processhändelse körs skapas en kompensationshändelse.  Händelser för medarbetarkompensation innehåller resultaten av kompensationsprocessen för varje anställd som omfattas av den processhändelsen.  När beräkningarna är korrekta kan du ladda kompensationshändelsen för att uppdatera kompensationsposterna för de medarbetare som påverkas av processhändelsen.
 
@@ -132,3 +132,6 @@ När du har kört en processhändelse kan du rekommendera justeringar av en meda
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

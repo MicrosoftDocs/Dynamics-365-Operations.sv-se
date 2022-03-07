@@ -2,7 +2,7 @@
 title: Rapportering av EU-säljlista
 description: Det här avsnittet innehåller information om rapportering av försäljningslista för Europeiska unionen (EU).
 author: EvgenyPopovMBS
-ms.date: 02/17/2022
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af49817667999dd02a96a7a9bd5bb966be652d35
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 5d1df15462a39c17710c9300425561bba8b69fc7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323482"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188390"
 ---
 # <a name="eu-sales-list-reporting"></a>EU-säljlistrapportering
 
@@ -68,19 +68,13 @@ Följande tabell visar förutsättningarna som krävs och måste finnas på plat
 <td>Ställ in parametrar för momsbefrielse på sidan <strong>Parametrar för land/region</strong> (klicka på <strong>Moms</strong> &gt; <strong>Inställningar</strong> &gt; <strong>Moms</strong> &gt; <strong>Parametrar för land/region</strong>). För varje land/region där du har motparter, skapa en post på sidan och ange följande information:
 <ul>
 <li><strong>Land/region</strong> – Välj land/region för att associera till en momsbefriad identifiering.</li>
-<li><strong>Moms</strong> – ange momsbefrielseinformation identifieringsnummer (dvs. momsregistreringsnummer eller prefix för momsregistreringsnummer) för valt land/region.</li>
+<li><strong>Moms</strong> – ange momsbefrielseinformation identifieringsnummer (dvs. momsregistreringsnummer prefix) för valt land/region.</li>
 <li><strong>Kontrollera momsregistreringsnummer</strong> – Markera den här kryssrutan om du vill validera momsbefrielseinformation identifiering för valt land/region.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Ställ in:</strong> momsregistreringsnummer</td>
-<td>Skapa momsregistreringsnummer för dina motparter på antingen sidan <strong>Alla kunder</strong> (gå till <strong>Försäljning och marknadsföring</strong> &gt; <strong>Kunder</strong> &gt; <strong>Alla kunder</strong>, välj en kundpost och klicka sedan på <strong>Kunder</strong>&gt; <strong>Registrerings-ID</strong>) eller sidan <strong>Leverantörer</strong> (gå till <strong>Inköp och anskaffning</strong> &gt; <strong>Leverantörer</strong> &gt; <strong>Leverantörer</strong>, välj en leverantörspost och välj <strong>Leverantörer</strong> &gt; <strong>Registrerings-ID</strong>). På sidan <strong>Registrerings-ID</strong> på snabbfliken <strong>Allmänt</strong>, skapa en post och ange följande information:
-<ul>
-<li><strong>Registreringstyp</strong> – Välj den registreringstyp som tilldelats <strong>moms-ID</strong> registreringskategori för motsvarande land/region.</li>
-<li><strong>Registreringsnummer</strong> – Ange motpartens momsnummer.</li>
-<li><strong>Effektiv</strong> – Välj början på användningsperioden för momsregistreringsnumret.</li>
-</ul>  
-Skapa momsnummer för dina motparter på sidan <strong>Momsbefrielsenummer</strong> (gå till <strong>Moms</strong> &gt; <strong>Inställningar</strong> &gt; <strong>Moms</strong> &gt; <strong>Momsbefrielsenummer</strong>). För varje momsregistreringsnummer, skapa en post på sidan och ange följande information:
+<td><strong>Inställning: </strong>Momsbefrielsenummer</td>
+<td>Skapa momsbefrielsenummer för dina motparter på sidan <strong>Momsbefrielsenummer</strong> (klicka på <strong>Moms</strong> &gt; <strong>Inställningar</strong> &gt; <strong>Moms</strong> &gt; <strong>Momsbefrielsenummer</strong>). För varje momsregistreringsnummer, skapa en post på sidan och ange följande information:
 <ul>
 <li><strong>Land/region – </strong>Välj land/region för skatt registrering av motparten.</li>
 <li><strong>Momsregistreringsnummer</strong> – Ange momsregistreringsnummer av motparten.</li>

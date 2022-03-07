@@ -1,28 +1,31 @@
 ---
-title: Ta mer än den beräknade rabatten för en leverantörsbetalning
+title: Ta en rabatt som är högre än den beräknade rabatten för en leverantörsbetalning
 description: Den här artikeln går igenom ett scenario där en kassarabatt utnyttjas för ett belopp som är större än den rabatt som ursprungligen var tillgänglig för fakturan. Det här scenariot kan inträffa om en organisation sluter ett avtal med leverantören om att betala ett lägre belopp på fakturan.
 author: abruer
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14281
 ms.assetid: 7f0a4197-95dd-4969-ade9-154815cf659e
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52e18e75cfad34829dc78486d2b78b8e4211bb948bc5ddd0be85552bd914010b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b84b3d6ef1a86d8174823345a5ee9181c701c151
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736955"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4447848"
 ---
-# <a name="take-more-than-the-calculated-discount-for-a-vendor-payment"></a>Ta mer än den beräknade rabatten för en leverantörsbetalning
+# <a name="take-a-discount-that-is-more-than-the-calculated-discount-for-a-vendor-payment"></a>Ta en rabatt som är högre än den beräknade rabatten för en leverantörsbetalning
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,10 +39,10 @@ Leverantör 3051 ger Fabrikam en kassarabatt på 4 procent, om en faktura betala
 
 Information om rabatten visas längst ned på sidan **Kvitta transaktioner**.
 
-| Fält                        | Värde     |
+|                              |           |
 |------------------------------|-----------|
-| Kassarabattdatum           | 2015/07/15 |
-| Kassarabattbelopp         | 60.00     |
+| Kassarabattdatum           | 12/7/2015 |
+| Kassarabattbelopp         | 60,00     |
 | Använd kassarabatt            | Normal    |
 | Utnyttjad kassarabatt          | 0,00      |
 | Kassarabattbelopp att utnyttja | 60,00     |
@@ -48,6 +51,3 @@ April bokför sedan betalningsjournalen. Fakturan kvittas fullständigt med hjä
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

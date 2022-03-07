@@ -1,12 +1,10 @@
 ---
 title: Livscykeltillstånd för tillgångar
 description: Det här avsnittet beskriver livscykeltillstånd för tillgångar och livscykelmodeller i tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetLifecycleModelStateNext, EntAssetObjectLifecycleState, EntAssetLifecycleStateUpdate, EntAssetObjectLifecycleModel
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dffedfafd9d75320accf0e27f072bab6fd51f135
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: db025b3edb9daa2ffc19b5fc92930f76d8007dce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016562"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360111"
 ---
 # <a name="asset-lifecycle-states"></a>Tillgångs livscykeltillstånd
 
@@ -63,9 +61,12 @@ När du har skapat de nödvändiga livscykeltillstånden för tillgångar kan du
 
 5. På snabbfliken **livscykeltillstånd** väljer du de livscykeltillstånd för tillgångar som ska inkluderas i livscykelmodellen för tillgångar.
 
-    - Om du vill använda ett livscykeltillstånd för modellen väljer du den i avsnittet **återstående livscykeltillstånd** och markerar sedan högerpilknappen ![högerpil](media/15-setup-for-objects.png) för att flytta den till avsnittet **Valt livscykeltillstånd**.
-    - Om du vill använda alla tillgängliga livscykeltillstånd förmodellen markerar du knappen **Alla alla tillgängliga livscykeltillstånd** knappen ![Alla alla tillgängliga livscykeltillstånd](media/20-setup-for-objects.png). Alla livscykeltillstånd flyttas till avsnittet **markerade livscykeltillstånd**.
-    - Om du vill ta bort ett livscykeltillstånd i livscykelmodellen markerar du avsnittet **valda livscykeltillstånd** och markerar sedan vänsterpilknappen ![vänsterpil](media/16-setup-for-objects.png) för att flytta den till avsnittet **Återstående livscykeltillstånd**.
+    - Om du vill använda ett livscykeltillstånd för modellen markerar du det i avsnittet **Återstående livscykeltillstånd** och väljer sedan höger pilknapp ![Högerpil.](media/15-setup-for-objects.png) för att flytta den till avsnittet **Valda livscykeltillstånd**.
+    - Om du vill använda alla tillgängliga livscykeltillstånd för modellen väljer du knappen **Alla tillgängliga livscykeltillstånd** ![Alla tillgängliga livscykeltillstånd.](media/20-setup-for-objects.png). Alla livscykeltillstånd flyttas till avsnittet **markerade livscykeltillstånd**.
+    - Om du vill ta bort ett livscykeltillstånd från modellen markerar du det i avsnittet **Valda livscykeltillstånd** och väljer sedan vänster pilknapp ![Vänsterpil.](media/16-setup-for-objects.png) för att flytta det till avsnittet **Återstående livscykeltillstånd**.
 
 6. Välj **uppdateringar av livscykeltillstånd** för att definiera vilka livscykeltillstånd för tillgångar som kan följa ett valt livscykeltillstånd.
 7. Du kan använda snabbfliken **tillgångstillstånd** om du hanterar tillgångar som du tar emot för reparation. I avsnittet **inkommande/utgående** kan du välja livscykeltillstånd för tillgångar för att indikera arbetsflödet för en tillgång som du tar emot för reparation. Om du erbjuder lånetillgångar till kunder eller avdelningar kan du i avsnittet **lån** välja livscykeltillstånd för lånetillgångar.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

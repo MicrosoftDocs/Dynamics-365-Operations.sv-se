@@ -1,35 +1,33 @@
 ---
 title: Kundorder i kassa (POS)
-description: Det här avsnittet innehåller information om kundorder i kassan (POS). Kundorder kallas även specialorder. Avsnittet innehåller en beskrivning av relaterade parametrar och transaktionsflöden.
+description: Det här avsnittet innehåller information om kundorder i POS. Kundorder kallas även specialorder. Avsnittet innehåller en beskrivning av relaterade parametrar och transaktionsflöden.
 author: josaw1
-ms.date: 08/02/2021
-ms.topic: overview
+ms.date: 01/06/2021
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.custom:
-- "260594"
-- intro-internal
+ms.custom: 260594
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9ebdad47d761f775cf26666dc3e2736818fb4832
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a310c7067b399fb35ccc8a1b17d8bd6822a27a62
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982828"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821018"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundorder i kassa (POS)
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller information om hur du skapar och hanterar kundorder i kassaappen (POS). Kundorder kan användas för att fånga in försäljningar där köpare vill hämta produkter på ett senare datum, hämta produkter från en annan plats eller låta artiklarna levereras till dem. 
+Det här avsnittet innehåller information om hur du skapar och hanterar kundorder i POS. Kundorder kan användas för att fånga in försäljningar där köpare vill hämta produkter på ett senare datum, hämta produkter från en annan plats eller låta artiklarna levereras till dem. 
 
 I en handelsvärld kännetecknad av omnikanaler erbjuder många återförsäljare möjlighet till kundorder (eller specialorder) för att uppfylla kraven för olika produkter och utföranden. Här följer några vanliga scenarier:
 
@@ -44,9 +42,9 @@ Innan du försöker använda funktionen kundorder i POS måste du se till att sl
 
 ### <a name="configure-modes-of-delivery"></a>Konfigurera leveranssätt
 
-Om du vill använda kundorder måste du konfigurera leveranssätt som butikskanalen kan använda. Du måste definiera minst ett leveranssätt som kan användas när orderrader levereras till en kund från en butik. Du måste också definiera minst ett leveranssätt som kan användas när orderrader hämtas från butiken. Leveranssätt definieras på sidan **leveranssätt** i Commerce-administration. För mer information om hur du ställer in leveranssätt för Commerce-kanaler, se [Definiera leveranssätt](./configure-call-center-delivery.md#define-delivery-modes).
+Om du vill använda kundorder måste du konfigurera leveranssätt som butikskanalen kan använda. Du måste definiera minst ett leveranssätt som kan användas när orderrader levereras till en kund från en butik. Du måste också definiera minst ett leveranssätt som kan användas när orderrader hämtas från butiken. Leveranssätt definieras på sidan **leveranssätt** i Commerce-administration. För mer information om hur du ställer in leveranssätt för Commerce-kanaler, se [Definiera leveranssätt](https://docs.microsoft.com/dynamics365/commerce/configure-call-center-delivery#define-delivery-modes).
 
-![Sidan för leveranssätt.](media/customer-order-modes-of-delivery.png)
+![SIdan leveranssätt](media/customer-order-modes-of-delivery.png)
 
 
 ### <a name="set-up-fulfillment-groups"></a>Ställ in uppfyllelsegrupper
@@ -55,7 +53,7 @@ Vissa butiker eller lagerställen kanske inte kan uppfylla kundorder. Genom att 
 
 I Commerce version 10.0.12 och senare kan organisationer ange huruvida lagerstället eller de kombinationer av lagerställen och butiker som har definierats i uppfyllelsegrupper kan användas för leverans, för upphämtning eller för både leverans och upphämtning. Detta medger ökad flexibilitet för företaget när detta ska avgöra vilka lagerställen som kan väljas när en kundorder skapas för artiklar som ska levereras, kontra vilka butiker som kan väljas när en kundorder skapas för artiklar som ska hämtas upp. Om du vill använda dessa konfigurationsalternativ aktiverar funktionen **Möjlighet att ange platser som "leverans" eller "upphämtning" aktiverad inom en uppfyllelsegrupp**. Om ett lagerställe som är länkat till en uppfyllelsegrupp inte är en butik kan det endast konfigureras som en leveransplats. Den kan inte användas när order för upphämtning har konfigurerats i POS.
 
-![Sidan för uppfyllelsegrupper.](media/customer-order-fulfillment-group.png)
+![Sidan uppfyllelsegrupper](media/customer-order-fulfillment-group.png)
 
 ### <a name="configure-channel-settings"></a>Konfigurera kanalinställningar
 
@@ -67,7 +65,7 @@ När du arbetar med kundorder i POS måste du tänka på några av inställninga
 - **Använd målbaserad moms** – detta alternativ anger om leveransadressen används för att bestämma vilken momsgrupp som ska användas på orderrader som levereras till kundens adress.
 - **Använd kundbaserad moms** – det här alternativet anger om momsgruppen som definieras för kundens leveransadress används för att momsorder för kund som skapas i POS för leverans till kundens hem.
 
-![Konfiguration för butikskanal på sidan Butiker.](media/customer-order-all-stores.png)
+![Inställningar för butikskanal på sidan butiker](media/customer-order-all-stores.png)
 
 ### <a name="set-up-customer-order-parameters"></a>Ställ in orderparametrar för kund
 
@@ -80,24 +78,24 @@ Innan du försöker skapa kundorder i POS måste du konfigurera lämpliga parame
 - **Annulleringsavgift i procent** – Om en avgift ska användas när en kundorder annulleras, ange då avgiftsbeloppet.
 - **Kod för annulleringsavgift** – Ange den debiteringskod för kundreskontra som ska användas när en annulleringsavgift tillämpas på annullerade kund order via POS. Avgiftskoden anger den ekonomiska bokföringslogiken för annulleringsbeloppet.
 - **Leveransavgiftskod** – om alternativet **Använd avancerade automatiska tillägg** är inställt på **Ja** har den här parameterinställningen ingen effekt. Om alternativet är inställt på **Nej** kommer användarna att uppmanas att ange leveransavgift manuellt när de skapar kundorder i POS. Använd den här parametern om du vill mappa en avgiftskod för kundreskontra som ska kopplas till order när användarna anger en leveransavgift. Avgiftskoden anger den ekonomiska bokföringslogiken för leveransavgift.
-- **Använd avancerade automatiska omkostnader** – Ställ in det här alternativet på **Ja** för att använda systemberäknade automatiska omkostnader när kundorder skapas i POS. Dessa automatiska debiteringar kan användas för att beräkna fraktavgifter eller andra order- eller artikelspecifika tillägg. För mer information om hur du ställer in och använder avancerade automatiska tillägg finns i [Avancerade automatiska avgifter för flera kanaler](./omni-auto-charges.md).
+- **Använd avancerade automatiska omkostnader** – Ställ in det här alternativet på **Ja** för att använda systemberäknade automatiska omkostnader när kundorder skapas i POS. Dessa automatiska debiteringar kan användas för att beräkna fraktavgifter eller andra order- eller artikelspecifika tillägg. För mer information om hur du ställer in och använder avancerade automatiska tillägg finns i [Avancerade automatiska avgifter för flera kanaler](https://docs.microsoft.com/dynamics365/commerce/omni-auto-charges).
 
-![Fliken kundorder på sidan Commerce-parametrar.](media/customer-order-parameters.png)
+![Fliken kundorder på sidan Commerce-parametrar](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>Uppdatera skärmlayouter för transaktioner i POS
 
-Kontrollera att POS [skärmlayout](./pos-screen-layouts.md) är konfigurerad så att den stöder skapande och hantering av kundorder och att alla nödvändiga kassaåtgärder har konfigurerats. Nedan följer några av de kassaåtgärder som rekommenderas för att skapa och hantera kundorder:
+Kontrollera att POS [skärmlayout](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts) är konfigurerad så att den stöder skapande och hantering av kundorder och att alla nödvändiga kassaåtgärder har konfigurerats. Nedan följer några av de kassaåtgärder som rekommenderas för att skapa och hantera kundorder:
 - **Leverera alla produkter** – den här operationen används för att ange att alla rader i transaktionsvagnen ska levereras till en destination.
 - **Leverera valda produkter** – den här operationen används för att ange att valda rader i transaktionsvagnen ska levereras till en destination.
 - **Hämta alla produkter** – den här operationen används för att ange att alla rader i transaktionsvagnen ska hämtas från en vald butiksplats.
 - **Hämta valda produkter** – den här operationen används för att ange att valda rader i transaktionsvagnen ska hämtas från en vald butiksplats.
 - **Utföra alla produkter** – den här åtgärden används för att ange att alla rader i transaktionsvagnen ska utföras. Om den här operationen används i POS konverteras kundordern till en hämtköpstransaktioner.
-- **Utför valda produkter** – den här åtgärden används för att ange att valda rader i transaktionsvagnen utförs av kunden vid inköpstillfället. Den här åtgärden är endast användbar i ett scenario med [hybridorder](./hybrid-customer-orders.md) .
+- **Utför valda produkter** – den här åtgärden används för att ange att valda rader i transaktionsvagnen utförs av kunden vid inköpstillfället. Den här åtgärden är endast användbar i ett scenario med [hybridorder](https://docs.microsoft.com/dynamics365/commerce/hybrid-customer-orders) .
 - **Återkalla order** – den här åtgärden används för att söka efter och hämta kundorder så att kassaanvändare kan redigera, avbryta eller utföra slutförda åtgärder på dem efter behov.
 - **Ändra leveranssätt** – den här åtgärden kan användas för att snabbt ändra leveranssättet för rader som redan har konfigurerats för leverans, utan att användarna måste gå igenom flödet "leverera alla produkter" eller "leverera valda produkter" igen.
 - **Åsidosättning av insättningar** – denna operation kan användas för att ändra insättningsbeloppet som kunden ska betala för den valda kundordern.
 
-![Åtgärder i fönstret för kassatransaktion.](media/customer-order-screen-layout.png)
+![Åtgärder i kassatransaktionens fönster](media/customer-order-screen-layout.png)
 
 ## <a name="work-with-customer-orders-in-pos"></a>Arbeta med kundorder i POS
 
@@ -130,11 +128,7 @@ Kontrollera att POS [skärmlayout](./pos-screen-layouts.md) är konfigurerad så
 Detaljhandelsorder som skapas i både online- eller butikskanalen kan återkallas och redigeras via POS efter behov.
 
 > [!IMPORTANT]
-> Det är inte alla butiksorder som kan redigeras via POS-programmet. Order som skapas i en kundtjänstkanal kan inte redigeras via POS om inställningen [Aktivera slutförande av order](./set-up-order-processing-options.md#enable-order-completion) är aktiverad för kundtjänstkanalen. För att säkerställa en korrekt betalningsprocess måste order som har sitt ursprung i en kundtjänstkanal och som använder funktionen för att aktivera slutförande av order redigeras via programmet i Commerce-administration.
-
-> [!NOTE]
-> Vi rekommenderar att du inte redigerar order och offerter i kassan som har skapats av en icke-kundtjänstanvändare i Commerce-administration. Dessa order och offerter använder inte Commerce-prismotorn, så om de redigeras i kassan, kommer Commerce-prismotorn att sätta pris igen.
-
+> Det är inte alla butiksorder som kan redigeras via POS-programmet. Order som skapas i en kundtjänstkanal kan inte redigeras via POS om inställningen [Aktivera slutförande av order](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) är aktiverad för kundtjänstkanalen. För att säkerställa en korrekt betalningsprocess måste order som har sitt ursprung i en kundtjänstkanal och som använder funktionen för att aktivera slutförande av order redigeras via programmet i Commerce-administration.
 
 I version 10.0.17 och senare kan användarna redigera berättigade order via POS-programmet, även om ordern är delvis uppfylld. Order som är helt fakturerade kan dock fortfarande inte redigeras via POS. Du kan aktivera denna funktion genom att slå på funktionen **Redigera delvis uppfyllda order i kassan** i arbetsytan **Funktionshantering**. Om den här funktionen inte är aktiverad, eller om du använder version 10.0.16 eller tidigare, kan användarna bara redigera kundorder i POS om ordern är helt öppen. Om funktionen är aktiverad kan du begränsa vilka butiker som kan redigera delvis uppfyllda order. Alternativet att inaktivera denna funktion för specifika butiker kan konfigureras via **Funktionsprofilen** på snabbfliken **Allmänt**.
 
@@ -146,23 +140,7 @@ I version 10.0.17 och senare kan användarna redigera berättigade order via POS
 5. Slutför redigeringsprocessen genom att välja en betalningsåtgärd.
 6. Om du vill avsluta redigeringsprocessen utan att spara ändringarna kan du använda åtgärden **Annullera transaktion**.
 
-#### <a name="pricing-impact-when-orders-are-edited"></a>Prissättningspåverkan när order redigeras
 
-När order placeras i kassan eller på en e-handelsplats för Commerce, åtar sig kunderna ett belopp. Detta belopp inkluderar ett pris och kan även omfatta en rabatt. En kund som lägger en order och sedan kontaktar kundtjänsten för att senare ändra ordern (t.ex. för att lägga till en artikel) har särskilda förväntningar på hur rabatter ska tillämpas. Även om erbjudandena på de befintliga orderraderna har förfallit, förväntar sig kunden att rabatterna som ursprungligen användes för raderna börjar gälla. Om ingen rabatt var i kraft när ordern ursprungligen gjordes, men rabatten har tillämpats sedan dess, förväntar kunden sig att den nya rabatten tillämpas på den ändrade ordern. Annars kanske kunden bara annullerar den befintliga ordern och sedan skapar en ny order där den nya rabatten tillämpas. Som det här scenariot visar måste priser och rabatter som kunderna har åtagit sig att behålla. Samtidigt måste kassaanvändare och kundtjänstanvändare ha flexibiliteten att räkna om priser och rabatter för försäljningsorderrader efter behov.
-
-När order återkallas och redigeras i kassan betraktas priser och rabatter för de befintliga orderraderna som "låsta". Med andra ord ändras de inte, även om vissa orderrader annulleras eller ändras, eller så läggs nya orderrader till. Om du vill ändra priser och rabatter för befintliga försäljningsrader, måste kassaanvändaren välja **Omberäkna**.  Prislåset tas sedan bort från de befintliga orderraderna. Innan Commerce version 10.0.21 finns den här kapaciteten inte tillgänglig i kundtjänsten. Eventuella ändringar på orderrader gör istället att priser och rabatter räknas om.
-
-I Commerce version 10.0.21, en ny funktion som heter **Förhindra oavsiktlig prisberäkning för handelsorder** är tillgänglig i arbetsytan **Funktionshantering**. Den här funktionen är aktiverad som standard. När den är aktiverad är en ny **prislåst** egenskap tillgänglig för alla e-handelsorder. När order har slutförts för order som placeras från en kanal aktiveras egenskapen automatiskt (det vill säga kryssrutan markeras) för alla orderrader. Commerce-prissättningsmotorn exkluderar sedan dessa orderrader från alla pris- och rabattberäkningar. Om ordern redigeras exkluderas därför orderraderna som standard från pris- och rabattberäkningen. Däremot kan kundtjänstanvändare inaktivera egenskapen (det vill säga avmarkera kryssrutan) för en orderrad och sedan välja **Omberäkna** för att inkludera de befintliga orderraderna i prissättningsberäkningarna.
-
-Även om de tillämpar en manuell rabatt på en befintlig försäljningsrad måste kundtjänstanvändare inaktivera den **prislåsta** egenskapen för försäljningsraden innan de använder den manuella rabatten.
-
-Kundtjänstanvändare kan också inaktivera egenskapen **Prislås** för orderrader på en gång genom att välja **Ta bort prislås** i gruppen **Beräkna** på fliken **Försäljning** i åtgärdsfönstret på sidan **försäljningsorder**. I detta fall tas prislåset bort från alla orderrader utom rader som inte kan redigeras (med andra ord rader som har statusen **Delvis fakturerad** eller **Fakturerad**). När ändringarna i ordern har slutförts och skickats visas sedan prislåset på nytt för alla orderrader.
-
-> [!IMPORTANT]
-> När funktionen **Förhindra oavsiktlig prisberäkning för handelsorder aktiveras**, ignoreras inställningen av handelsavtalsutvärderingen i prissättningsarbetsflödena. Med andra ord visar inte dialogrutorna för handelsavtalsutvärdering det **prisrelaterade** avsnittet. Detta inträffar eftersom både inställningen av handelsavtalsutvärderingen och prislåsfunktionen har ett liknande syfte: att förhindra oavsiktliga prisändringar. Användarerfarenheten för handelsavtalsutvärdering fungerar dock inte bra för stora order där användarna måste välja en eller flera orderrader för omvärdering.
-
-> [!NOTE]
-> Egenskapen **Prislåst** kan bara inaktiveras för en eller flera valda rader när **kundtjänst** modulen används. Kassans beteende förblir oförändrat. Med andra ord kan kassaanvändaren inte låsa upp priser för valda orderrader. De kan dock välja **Omberäkna** om du vill ta bort prislåset från alla befintliga orderrader.
 
 ### <a name="cancel-a-customer-order"></a>Annullera en kundorder
 
@@ -175,7 +153,7 @@ Kundtjänstanvändare kan också inaktivera egenskapen **Prislås** för orderra
 
 ## <a name="finalizing-the-customer-order-shipment-or-pickup-from-pos"></a>Slutför kundorder utleverans eller hämtning från kassa
 
-När en order har skapats hämtas artiklarna av kunden från en butiksplats eller levereras, beroende på orderns konfiguration. Mer information om den här processen finns i [dokumentationen för butiksorder uppfyllelse](./order-fulfillment-overview.md).
+När en order har skapats hämtas artiklarna av kunden från en butiksplats eller levereras, beroende på orderns konfiguration. Mer information om den här processen finns i [dokumentationen för butiksorder uppfyllelse](https://docs.microsoft.com/dynamics365/commerce/order-fulfillment-overview).
 
 ## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Asynkront transaktionsflöde för kundorder
 

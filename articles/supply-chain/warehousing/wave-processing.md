@@ -5,6 +5,7 @@ author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, WHSParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage, WHSProdWaveTable
 audience: Application User
@@ -13,13 +14,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
-ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b89a13e72816bbf140986bd5450d037cf2510753
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.18
+ms.openlocfilehash: 36e1bd7f88a27b2da0672bf9d9ecb1e217fc44d3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103523"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813661"
 ---
 # <a name="wave-creation-and-processing"></a>Skapa och bearbeta påfyllnad
 
@@ -42,7 +43,7 @@ Du kan ange vilket av dessa tillverkningsorderalternativ som ska användas som s
 
 I bilden nedan visas flödet för hur leveranspåfyllnad skapas, bearbetas och frisläpps. Numren motsvarar de avsnitt som beskrivs senare i det här avsnittet.
 
-![Process för att skapa en cykel.](media/wave-processing-diagram.png "Process för att skapa en påfyllnad")
+![Process för att skapa en påfyllnad](media/wave-processing-diagram.png "Process för att skapa en påfyllnad")
 
 ### <a name="prerequisites"></a>Förutsättningar
 
@@ -158,7 +159,7 @@ När funktionen *Schemalägga arbetsskapande* är aktiverad kommer påfyllnadsbe
 
 Flödesschemat nedan visar hur planerat arbete skapas under påfyllnadsbearbetning.
 
-![Skapa tidsplan för arbete.](media/schedule-work-creation-process.png)
+![Skapa tidsplan för arbete](media/schedule-work-creation-process.png)
 
 ### <a name="planned-work"></a>Planerat arbete
 
@@ -190,9 +191,9 @@ Om det behövs kan du avbryta en påfyllnad som har bearbetats. Om du vill annul
 
 Använd sidan **Detaljer om batchjobb för påfyllnad** för att inspektera batchjobb och relaterade uppgifter som är associerade med alla påfyllnader. Detta är särskilt användbart vid felsökning av en påfyllnad som har misslyckats. Om den här funktionen inte har den här funktionen har endast administratörer vanligtvis åtkomst till batchjobbinformation. Sidan **Detaljer om batchjobb för påfyllnad** kan göras tillgänglig för användare som inte är administratörer och ger en skrivskyddad bild av batchjobb och relaterade uppgifter.
 
-### <a name="turn-the-wave-batch-job-details-page-on-or-off"></a>Aktivera eller inaktivera sidan detaljer om batchjobb för påfyllnad
+### <a name="enable-the-wave-batch-job-details-page"></a>Aktivera sidan detaljer om batchjobb för påfyllnad
 
-Från och med version 10.0.25 av Supply Chain Management aktiveras sidan **Information om påfyllnadsbatchjobb** som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Information om påfyllnadsbatchjobb* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Om systemet inte redan innehåller sidan **Detaljer om batchjobb för påfyllnad**, gå till [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktivera funktionen *Detaljer om batchjobb för påfyllnad*.
 
 ### <a name="use-the-wave-batch-job-details-page"></a>Använd sidan detaljer om batchjobb för påfyllnad
 

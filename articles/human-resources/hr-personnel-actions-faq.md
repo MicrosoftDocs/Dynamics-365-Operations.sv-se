@@ -2,29 +2,28 @@
 title: Vanliga frågor och svar om personalåtgärder
 description: Det här avsnittet innehåller svar på frågor som du kan ha om din organisation använder personalåtgärder. Personalåtgärder är ytterligare steg du måste vidta när du utför personalrelaterade uppgifter.
 author: andreabichsel
-manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 6d52e7e5203a4c311afb56259e9e1800ee0e5161
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c005c08c7ceafffc63650b64c3602aa65ae94e2788a5c70b5fd372a4f54a0301
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420581"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748845"
 ---
 # <a name="personnel-actions-faq"></a>Vanliga frågor och svar om personalåtgärder
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Det här avsnittet innehåller svar på frågor som du kan ha om din organisation använder personalåtgärder. Personalåtgärder är ytterligare steg du måste vidta när du utför personalrelaterade uppgifter. Exempel på uppgifter som kan kräva personalåtgärder är när du skapar nya befattningar, ändrar befintliga befattningsvärden, anställer nya arbetstagare, överför arbetstagare, ändrar arbetstagares kompensation, ändrar befattningstilldelningar eller säger upp arbetstagare.
 
@@ -43,16 +42,16 @@ Det finns två typer av personalåtgärder:
 ## <a name="what-do-the-statuses-of-the-personnel-actions-mean"></a>Vad innebär status för personalåtgärderna?
 Personalåtgärder kan ha följande status:
 
-- **Utkast** – Om arbetsflöde används har inte åtgärden skickats in. Om arbetsflöde inte används har inte åtgärden slutförts.
+- **Utkast** – Om arbetsflöde används har åtgärden inte skickats in. Om arbetsflöde inte används har inte åtgärden slutförts.
 - **Granskas** – Personalåtgärden har skickats till arbetsflödet, men arbetsflödet har inte slutförts.
-- **Godkänd - väntar** – Arbetsflödet har slutförts, men ändringarna bearbetas fortfarande. Avbröts – Arbetsflödet avbröts eller också återkallades personalåtgärden. Avvisades – Åtgärdsförfrågan avslogs av godkännaren.
-- **Bearbetningsåtgärd** – Åtgärdsförfrågan har godkänts och ändringarna bearbetas.
+- **Godkänd – väntar** – Arbetsflödet har slutförts, men ändringarna bearbetas fortfarande. Avbröts – Arbetsflödet avbröts eller också återkallades personalåtgärden. Avvisades – Åtgärdsbegäran avslogs av godkännaren.
+- **Bearbetningsåtgärd** – Åtgärdsbegäran har godkänts och ändringarna bearbetas.
 - **Arbetsflödet slutfört**  – Arbetsflödet har slutförts och ändringarna har bearbetats. Misslyckades – Arbetsflödet misslyckades eftersom informationen är inaktuell. Klicka på Återaktivera för att visa den senaste informationen och fortsätta.
 - **Slutfördes** – Befattningen har skapats eller ändrats, medarbetaren har anställts, bytt befattning eller sagts upp, eller också har kompensationen ändrats. Fel – Ett problem har uppstått av någon annan orsak än att informationen är inaktuell. Öppna meddelandeloggen för personalåtgärder om du vill fastställa orsaken till felet.
-- **Avslogs** – Åtgärdsförfrågan avslogs av godkännaren.
+- **Avslogs** – Åtgärdsbegäran avslogs av godkännaren.
 
 ## <a name="can-i-delete-a-personnel-action"></a>Kan jag ta bort en personalåtgärd?
-Ja, du kan ta bort personalåtgärder som har statusen **Utkast**, **Fel**, **Misslyckades** eller **Avbröts**.
+Ja, du kan ta bort personalåtgärder som har statusen **Utkast**, **Fel**, **Misslyckades** eller **Avbröts**. Du kan bara ta bort personalåtgärder som har statusen **Slutförd** om du har angett alternativet **Tillåt borttagning av slutförda arbetsåtgärder** som **Ja** på sidan **Delade personalparametrar**.
 
 ## <a name="what-is-the-fastest-way-to-check-the-status-of-a-personnel-action-request"></a>Vad är det snabbaste sättet att kontrollera statusen på en personalåtgärdsbegäran?
 Öppna någon av listsidorna för personalåtgärder och välj en personalåtgärd.
@@ -67,7 +66,7 @@ Om en personalåtgärdsbegäran misslyckas följer du dessa steg för att lösa 
 > 3. Lös felet och klicka sedan på **Slutför** eller **Skicka in**.
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Vad händer med en personalåtgärd som använder arbetsflödet, om det sista godkännandet är slutfört?
-Om det inte finns några fel, blir personalåtgärden skrivskyddad. (Du kan visa historiken i listsidan **Alla arbetaråtgärder**, men du kan inte ändra personalåtgärden.) När statusen för en personalåtgärd är **Slutförd** har befattningen eller arbetarposten redan uppdaterats. Öppna listsidan **Befattningar** eller **Arbetare** om du vill visa de ändringar som görs.
+Om det inte finns några fel, blir personalåtgärden skrivskyddad. (Du kan visa historiken i listsidan **Alla medarbetaråtgärder**, men du kan inte ändra personalåtgärden.) När statusen för en personalåtgärd är **Slutförd** har befattningen eller medarbetarposten redan uppdaterats. Öppna listsidan **Befattningar** eller **Arbetare** om du vill visa de ändringar som görs.
 
 ## <a name="why-do-i-receive-the-following-error-when-i-enter-a-non-zero-value-in-the-pay-rate-field-the-value-is-out-of-its-valid-range--it-much-be-between-000-and-000"></a>Varför får jag följande felmeddelande när jag anger ett ickenollvärde i fältet Lönesats? "Värdet ligger utanför giltighetsområdet – det måste vara mellan 0,00 och 0,00"
 Du får detta meddelande eftersom fältet Nivå i jobbformuläret är tomt för det jobb som är kopplat till den valda befattningen.
@@ -81,10 +80,10 @@ Du åtgärdar felet genom att följa dessa steg:
 > 5. Välj en nivå i fältet Nivå.
 > 6. Stäng sidan Jobb.
 > 7. Stäng sidan Befattning.
-> 8. Gå tillbaka till fliken Kompensation på sidan Arbetare och välj Fast kompensation.  Välj Nytt och ange medarbetarens befattning i fältet befattning.  Ange ett värde i fältet Plan, och ange sedan medarbetarens kompensation i fältet Lönesats.
+> 8. Gå tillbaka till fliken Kompensation på sidan Arbetare och välj Fast kompensation.  Välj Nytt och ange medarbetarens befattning i fältet Befattning.  Ange ett värde i fältet Plan, och ange sedan medarbetarens kompensation i fältet Lönesats.
 
-## <a name="why-cant-i-change-the-effective-date-in-the-header-of-the-worker-action-form"></a>Varför kan jag inte ändra giltighetsdatumet i huvudet på formuläret för arbetstagaråtgärd?
-Du kan inte ändra giltighetsdatum eftersom fältet fylls i med det logiska datumet för åtgärdstypen.
+## <a name="why-cant-i-change-the-effective-date-in-the-header-of-the-worker-action-form"></a>Varför kan jag inte ändra giltighetsdatumet i sidhuvudet på formuläret för medarbetaråtgärd?
+Du kan inte ändra giltighetsdatum eftersom fältet fylls i med det med logiska datumet för åtgärdstypen.
 
 Exempel:
 
@@ -92,3 +91,6 @@ Exempel:
 - Giltighetsdatumet i rubriken för en **Anställ arbetstagare**-åtgärd är det datum som du angett i fältet **Startdatum för anställning**.
 - Giltighetsdatumet i rubriken för en **Överför en arbetstagare**-åtgärd är det datum som du angett i fältet **Startdatum för tilldelning**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

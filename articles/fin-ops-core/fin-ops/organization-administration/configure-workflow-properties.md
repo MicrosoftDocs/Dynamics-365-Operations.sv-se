@@ -2,11 +2,9 @@
 title: Konfigurera arbetsflödesegenskaper
 description: I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för ett arbetsflöde.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bd3c9bea010099f83d16dad70261bc2d46a1dac
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 81f73f187f75e40297f1f8462e9fff58a309f7f0
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693292"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069258"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurera arbetsflödesegenskaper
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för ett arbetsflöde.
 
@@ -73,6 +74,9 @@ Du kan tillhandahålla instruktioner till de användare som skickar dokument fö
     4. I fältet **Översatt text** anger du texten.
     5. Om du vill anpassa texten kan du infoga platshållare. Se steg 3 för instruktioner om hur du anger en platshållare.
     6. Klicka på **Stäng**.
+
+> [!NOTE]
+> Platshållare kan inte läggas till genom att kopiera och klistra in eftersom målinformationen inte klistras in på rätt sätt. Använd gränssnittet för att lägga till platshållare.
 
 ## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>Ange när det här arbetsflödet används med aktiveringsvillkor
 
@@ -179,3 +183,6 @@ Gör på följande sätt om du vill kommentera de ändringar som du har utfört 
 2. Skriv dina kommentarer i fältet **Ange kommentarer om arbetsflödet**.
 3. Granska dina kommentarer. När du har lagt till kommentarer kan du inte ändra dem.
 4. Klicka på **Lägg till** för att lägga till dina kommentarer i området **Kommentarshistorik**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

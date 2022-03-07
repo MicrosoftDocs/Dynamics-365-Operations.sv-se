@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: e95f06ffaaf2d250b02a8458faa2d9e0b5ef5631
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4d1be6606793d498d01be91de6205e3a45c6dfdf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459933"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251269"
 ---
 # <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Returnera artiklar för flera kunder, order och fakturor
 
@@ -55,3 +54,6 @@ När ordern har valts visas en lista över alla produkter på alla fakturor som 
 
 Om ordern har returnerats till fullo kommer momsbeloppet som har returnerats till kunden att vara lika med det momsbelopp som ursprungligen debiterades.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

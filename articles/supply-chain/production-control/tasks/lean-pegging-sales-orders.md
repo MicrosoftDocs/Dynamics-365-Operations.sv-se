@@ -1,25 +1,28 @@
 ---
 title: Lean-pegging från försäljningsorder
 description: Den här proceduren är avsedd för att validera peggingträdet från en försäljningsrad där artikeln produceras med kanban.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8eca21f8bd988ca352c07e839295b3edd9669929
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e429fef6101f611d7a2c1b5323d6fe1e39d1cdd3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580634"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437635"
 ---
 # <a name="lean-pegging-from-sales-orders"></a>Lean-pegging från försäljningsorder
 
@@ -54,6 +57,3 @@ Den här proceduren är avsedd för att validera peggingträdet från en försä
 5. I trädet, välj försäljningsrad 000832\Kanban 000558\Utleverans för L0001\Kanban 000559.
     * Jobbet för den andra kanban planeras även, eftersom hela pegging-trädet planeras. Observera att kanban-jobbets status ändras från Inte planerad till Planerad.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

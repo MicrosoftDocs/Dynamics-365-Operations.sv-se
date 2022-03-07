@@ -1,39 +1,38 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources (23 juli 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 23 juli 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0672e3039f54a4591db49eee00d69bf5e4278fd
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1dd8ab95d37c2fbc5d7453fadeae043677c30160
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528459"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063732"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-23-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (23 juli 2020)
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
 
 Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Human Resources. Ändringarna tillämpas på versionsnummer 8.1.3416. Siffror inom parenteser i vissa rubriker refererar till LCS-supportnummer för referens.
 
 ## <a name="deleting-financial-dimensions-on-a-position-doesnt-work-as-expected-445476"></a>Att ta bort ekonomiska dimensioner för en position fungerar inte som förväntat (445476)
 
-Om du tar bort dimensioner från en befattning tas nu samma positioner bort från Common Data Service.
+Om du tar bort dimensioner från en befattning tas nu samma positioner bort från Dataverse.
 
 ## <a name="positions-not-in-hierarchy-show-inactive-positions-397257"></a>Positioner som inte är i hierarkin visa inaktiva positioner (397257)
 
@@ -55,7 +54,7 @@ Du kan nu göra fält obligatoriska genom att använda anpassningsfunktioner fö
 
 ## <a name="human-resources-application-in-teams"></a>Personalapp i Teams
 
-Medarbetare kan visa och begära ledighet från arbetet inom Microsoft Teams. De kan samverka med en bot för att skapa tjänstledighetsansökan. Mer information finns [i personalapp i Teams](https://go.microsoft.com/fwlink/?linkid=2127841). 
+Medarbetare kan visa och begära ledighet från arbetet inom Microsoft Teams. De kan samverka med en bot för att skapa tjänstledighetsansökan. Mer information finns [i personalapp i Teams](./hr-admin-teams-leave-app.md). 
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>DMF-enheter (Data Management Framework) för förmånshantering
  
@@ -94,9 +93,9 @@ Nu är en DMF-enhet tillgänglig för periodiserade avstängningar.
 
 ## <a name="coming-soon"></a>Kommer snart
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Entiteter för checklista inkluderade i Common Data Service
+## <a name="checklist-entities-included-in-dataverse"></a>Entiteter för checklista inkluderade i Dataverse
 
-Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga i Common Data Service.
+Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga i Dataverse.
 
 ## <a name="platform-changes"></a>Plattformsändringar
 
@@ -104,7 +103,10 @@ Plattformsuppdatering 10.0.12 (36)
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
-[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
+[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

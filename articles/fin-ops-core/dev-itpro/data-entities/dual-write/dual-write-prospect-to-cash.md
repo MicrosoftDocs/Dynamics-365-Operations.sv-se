@@ -2,40 +2,29 @@
 title: Potentiell kund till kontanter vid dubbel skrivning
 description: I det här avsnittet finns information om kunders kontantkassa vid dubbel skrivning.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/07/2021
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 3f88d7249af515670c0a3e73a5ef890f04133d19
-ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
+ms.openlocfilehash: 0fcbc5b0f571e9f2cf7f1ad7c1e976d022199b47
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "4959611"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542281"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potentiell kund till kontanter vid dubbel skrivning
 
 [!include [banner](../../includes/banner.md)]
 
-
-
 Ett viktigt mål för de flesta företag är att konvertera potentiell kund till kontanter och sedan underhålla en pågående affärsrelation med kunderna. I Microsoft Dynamics 365-appar processen potentiell kund till pengar via arbetsflöden för offerter eller orderbearbetning och ekonomierna stäms av och redovisas. Integrering av potentiell kund till pengar med dubbel skrivning skapar ett arbetsflöde som tar en offert och en order som har sitt ursprung i antingen Dynamics 365 Sales eller Dynamics 365 Supply Chain Management och gör offerten och ordern tillgängliga i båda apparna.
 
 I programgränssnitten får du åtkomst till bearbetningsstatus och fakturainformation i realtid. Därför är det enklare att hantera funktioner som produktlager, lagerhantering och uppfyllelse i Supply Chain Management, utan att du behöver skapa offerter och order på nytt.
 
-![Dataflöde med dubbel skrivning i potentiell kund till kontanter](../dual-write/media/dual-write-prospect-to-cash[1].png)
+![Dataflöde med dubbel skrivning i potentiell kund-till-pengar.](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
 Mer information om kund- och kontaktintegrering finns i [Integrerad kundmall](customer-mapping.md). Information om produktintegration finns i [Enhetlig produkterfarenhet](product-mapping.md).
 
@@ -50,7 +39,7 @@ Innan du kan synkronisera försäljningsofferter måste du uppdatera följande i
 
 I Sales, gå till **Inställningar \> Administration \> Systeminställningar \> Sales** och säkerställ att följande inställningar används:
 
-- Systemalternativet **Använd systemets prisberäkning** är **Ja**.
+- Systemalternativet **Använd systemets beräkningssystem för prissättning** anges som **Ja**.
 - Kolumnen **Metod för rabattberäkning** har tilldelats **radartikel**.
 
 ### <a name="sites-and-warehouses"></a>Webbplatser och lagerställen
@@ -68,10 +57,11 @@ Nummerserien i hanteringen av Supply Chain Management är **1, 2, 3, 4, 5, ...**
 Försäljningsofferter kan skapas antingen i Sales eller Supply Chain Management. Om du skapar en offert i Sales synkroniseras den med Supply Chain Management i realtid. Om du skapar en offert i Supply Chain Management, synkroniseras den med Sales i realtid. Observera följande:
 
 + Du kan lägga till en rabatt för produkten på offerten. I det här fallet kommer rabatten att synkroniseras med Supply Chain Management. Kolumnerna **rabatt**, **tillägg**, och **moms** på rubriken styrs av en inställning i Supply Chain Management. Den här inställningen stöder inte integreringsmappning. I stället underhålls kolumnerna **pris**, **rabatt**, **tillägg**, och **moms** i Supply Chain Management.
-+ Kolumnerna **Rabatt %**, **Rabatt** och **Fraktbelopp** på försäljningsoffertens rubrik är skrivskyddade kolumner.
++ Kolumnerna **Rabattprocent**, **Rabatt** och **Fraktbelopp** på försäljningsoffertens rubrik är skrivskyddade kolumner.
 + Kolumnerna **betalningsvillkor**, **fraktvillkor**, **leveransvillkor**, **leveranssätt** och leveransläge tillhör inte standardmappningarna. Om du vill mappa dessa kolumner måste du konfigurera en värdemappning som är specifik för data i organisationer som tabellen synkroniseras mellan.
 
 Om du även använder Field Service-lösningen måste du aktivera parametern **Snabbskapa anbudsförfrågan**. Om du aktiverar parametern igen kan du fortsätta att skapa offertrader med hjälp av funktionen snabbgenerering.
+
 1. Navigera till ditt Dynamics 365 Sales-program.
 2. Välj ikonen Inställningar i det övre navigeringsfältet.
 3. Välj **avancerade inställningar**.
@@ -123,40 +113,25 @@ Potentiell kund till kontanter inkluderar en samling tabellmappningar som funger
 
 | Finance and Operations-appar | Kundengagemangsappar | beskrivning |
 |-----------------------------|-----------------------------------|-------------|
-| Försäljningsfakturahuvuden V2    | fakturor                          | Tabellen försäljningsfakturahuvuden V2 i Finance and Operations-appen innehåller fakturor för försäljningsorder och fritextfakturor. Ett filter används för Dataverse för att filtrera bort eventuella fritextfakturadokument. |
-| Försäljningsfakturarader V2      | fakturainformation                    |             |
-| CDS-försäljningsorderrubrik     | salesorders                       |             |
-| CDS-försäljningsorderrader       | salesorderdetails                 |             |
-| Koder för försäljningsorderursprung    | msdyn\_salesorderorigins          |             |
-| CDS-försäljningsofferrubrik  | anbudsförfrågningar                            |             |
-| Försäljningsoffertrader för CDS   | quotedetails                      |             |
+[Alla produkter](mapping-reference.md#138) | msdyn_globalproducts | |
+[Kunder V3](mapping-reference.md#101) | konton | |
+[Kunder V3](mapping-reference.md#116) | kontakter | |
+[Kontakter V2](mapping-reference.md#221) | msdyn_contactforparties | |
+[CDS-försäljningsorderrubrik](mapping-reference.md#217) | salesorders | |
+[CDS-försäljningsorderrader](mapping-reference.md#216) | salesorderdetails | |
+[CDS-försäljningsofferrubrik](mapping-reference.md#215) | anbudsförfrågningar | |
+[Försäljningsoffertrader för CDS](mapping-reference.md#214) | quotedetails | |
+[Frisläppta produkter V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
+[Försäljningsfakturahuvuden V2](mapping-reference.md#118) | fakturor | Tabellen försäljningsfakturahuvuden V2 i Finance and Operations-appen innehåller fakturor för försäljningsorder och fritextfakturor. Ett filter används för Dataverse för att filtrera bort eventuella fritextfakturadokument. |
+[Försäljningsfakturarader V2](mapping-reference.md#117) | fakturainformation | |
+[Koder för försäljningsorderursprung](mapping-reference.md#186) | msdyn_salesorderorigins | |
 
-Här är de relaterade huvudsakliga tabellmappningarna för potentiella kunder till kontanter:
-
-+ [Kunder V3 till konton](customer-mapping.md#customers-v3-to-accounts)
-+ [CDS-kontakter V2 till kontakter](customer-mapping.md#cds-contacts-v2-to-contacts)
-+ [Kunder V3 till kontakter](customer-mapping.md#customers-v3-to-contacts)
-+ [Frisläppta produkter V2 till msdyn_sharedproductdetails](product-mapping.md#released-products-v2-to-msdyn_sharedproductdetails)
-+ [Alla produkter till msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
-+ [Prislista](product-mapping.md)
+Information om prislistor finns i [Enhetlig produkterfarenhet](product-mapping.md).
 
 ## <a name="limitations"></a>Begränsningar
+
 - Returorder stöds inte.
 - Kreditfakturor stöds inte.
-- Ekonomiska dimensioner måste anges för huvuddata, till exempel kund och leverantör. När en kund läggs till en offert eller försäljningsorder, flödar kundposten automatiskt till ordern. För närvarande innehåller inte dessa ekonomiska dimensioner några data för huvuddata. 
+- Ekonomiska dimensioner måste anges för huvuddata, till exempel kund och leverantör. När en kund läggs till en offert eller försäljningsorder, flödar kundposten automatiskt till ordern. För närvarande innehåller inte dessa ekonomiska dimensioner några data för huvuddata.
 
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
-
-[!include [sales invoice line](includes/SalesInvoiceLineV2Entity-invoicedetail.md)]
-
-[!include [sales order header](includes/SalesOrderHeaderCDSEntity-salesorder.md)]
-
-[!include [sales order line](includes/SalesOrderLineCDSEntity-salesorderdetails.md)]
-
-[!include [sales order origin](includes/SalesOrderOriginEntity-msdyn-salesorderorigin.md)]
-
-[!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
-
-[!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

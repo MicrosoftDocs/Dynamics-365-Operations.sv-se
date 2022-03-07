@@ -1,8 +1,8 @@
 ---
 title: Aktivera Azure Data Lake Storage i en Dynamics 365 Commerce-miljö
-description: Det här ämnet innehåller instruktioner om hur du ansluter en Azure Data Lake Storage Gen 2-lösning till Dynamics 365 Commerce-miljöns enhetslagring. Detta är ett nödvändigt steg innan du aktiverar produktrekommendationer.
+description: I det här avsnittet beskrivs hur du aktiverar och testar Azure Data Lake Storage för en Dynamics 365 Commerce-miljö, vilket är en förutsättning för att du ska kunna aktivera produktrekommendationer.
 author: bebeale
-ms.date: 08/31/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,41 +16,42 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c96c29a4d9639b02e6a60ad938b7e06f7d500c68
-ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
+ms.openlocfilehash: 8ec56a260501c0d33145c23cb9656446bc871f7c448bbbf33330ad591c506e49
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466302"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775372"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Aktivera Azure Data Lake Storage i en Dynamics 365 Commerce-miljö
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet innehåller instruktioner om hur du ansluter en Azure Data Lake Storage Gen 2-lösning till Dynamics 365 Commerce-miljöns enhetslagring. Detta är ett nödvändigt steg innan du aktiverar produktrekommendationer.
+I det här avsnittet beskrivs hur du aktiverar och testar Azure Data Lake Storage för en Dynamics 365 Commerce-miljö, vilket är en förutsättning för att du ska kunna aktivera produktrekommendationer.
 
-I Dynamics 365 Commerce-lösningen aggregeras de data som behövs för att beräkna rekommendationer, produkter och transaktioner i miljöns enhetslagring. Om du vill göra dessa data tillgängliga för andra Dynamics 365-tjänster, t.ex. dataanalyser, affärsstrategier och anpassade rekommendationer, måste du ansluta miljön till en kundägd Azure Data Lake Storage Gen 2-lösning.
+I Dynamics 365 Commerce-lösningen spåras all produktinformation och all transaktionsinformation i miljöns enhetsarkiv. Om du vill göra dessa data tillgängliga för andra Dynamics 365-tjänster, t.ex. dataanalyser, affärsstrategier och anpassade rekommendationer, måste du ansluta miljön till en kundägd Azure Data Lake Storage Gen 2-lösning.
 
-När stegen ovan har slutförts återspeglas alla kunddata i miljöns enhetslagring automatiskt i kundens Azure Data Lake Storage Gen 2-lösning. När rekommendationer aktiveras via arbetsytan för Funktionshantering i Commerce Headquarters får rekommendationsstacken åtkomst till samma Azure Data Lake Storage Gen 2-lösning.
+Eftersom Azure Data Lake Storage konfigureras i en miljö, speglas alla nödvändiga data från enhetsarkivet samtidigt som de skyddas och kontrolleras av kunden.
 
-Under hela processen förblir kundernas data skyddade och under deras kontroll.
+Om produktrekommendationer eller anpassade rekommendationer också har aktiverats i miljön ger produktrekommendationerna stack åtkomst till den dedikerade mappen i Azure Data Lake Storage för att hämta kundens data och beräkna rekommendationer baserat på den.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-En Dynamics 365 Commerce-miljös enhetslagring måste vara anslutet till ett Azure Data Lake Gen Storage Gen2-konto och tillhörande tjänster.
+Kunder måste ha Azure Data Lake Storage konfigurerat i en Azure-prenumeration som de äger. Det här avsnittet behandlar inte köp av en Azure-prenumeration eller inställningen av ett Azure Data Lake Storage-aktiverat lagringskonto.
 
-Mer information om Azure Data Lake Storage Gen 2 och hur du konfigurerar det finns i [Officiell Azure Data Lake Storage Gen2-dokumentation](https://azure.microsoft.com/pricing/details/storage/data-lake).
+Mer information om Azure Data Lake Storage finns i [Azure Data Lake Storage officiell Gen2-dokumentation](https://azure.microsoft.com/pricing/details/storage/data-lake).
   
 ## <a name="configuration-steps"></a>Konfigurationssteg
 
-I det här avsnittet beskrivs de konfigurationssteg som krävs för att aktivera Azure Data Lake Storage Gen2 i en miljö när det gäller produktrekommendationer.
-En mer ingående översikt över de steg som krävs för att aktivera Azure Data Lake Storage Gen2 finns i [Gör enhetslagring tillgänglig som Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+I det här avsnittet beskrivs de konfigurationssteg som krävs för att aktivera Azure Data Lake Storage i en miljö när det gäller produktrekommendationer.
+En mer ingående översikt över de steg som krävs för att aktivera Azure Data Lake Storage finns i [Gör entitetsbutik tillgänglig som Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
 ### <a name="enable-azure-data-lake-storage-in-the-environment"></a>Aktivera Azure Data Lake Storage i miljö
 
 1. Logga in på miljöns backoffice-Portal.
 1. Sök efter **Systemparametrar** och navigera till fliken **Dataanslutningar**. 
 1. Ange **Aktivera Data Lake-integrering** till **Ja**.
+1. Ange **Indroppning uppdatering av Data Lake** till **Ja**.
 1. Ange sedan följande obligatorisk information:
     1. **Program-ID** // **Programhemlighet** // **DNS-namn** – Behövs för att ansluta till KeyVault där Azure Data Lake Storage-hemligheten lagras.
     1. **Hemligt namn** – Det hemliga namnet lagrat i KeyVault och används för att autentisera med Azure Data Lake Storage.
@@ -66,7 +67,7 @@ I bilden nedan visas ett exempel på Azure Data Lake Storage-konfiguration.
 1. Testa anslutningen till ett Azure Data Lake Storage med hjälp länk **Testa Azure Storage**.
 
 > [!NOTE]
-> Om någon av testerna ovan misslyckas bekräftar du att all KeyVault-information som lagts till ovan är korrekt och försöker igen.
+> Om testerna misslyckas kontrollerar du att all KeyVault-information som lagts till ovan är korrekt och försöker igen.
 
 När anslutningstesten har lyckats måste du aktivera automatisk uppdatering för enhetsarkivet.
 

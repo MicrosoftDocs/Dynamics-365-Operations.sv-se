@@ -2,11 +2,9 @@
 title: Hantering av förmåner – översikt
 description: Översikt över funktionen för förmånshantering i Dynamics 365 Human Resources. Erbjud dina medarbetare utökade förmånsalternativ med en lättanvänd onlineupplevelse.
 author: andreabichsel
-manager: AnnBe
-ms.date: 09/17/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e2e8fcdd0b6124b459c4dc073e2929418d18bcc5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4ad94d81d7e8bedd3622b3e073e431bc4abaafff
+ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420554"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924240"
 ---
 # <a name="benefits-management-overview"></a>Förmånshantering – översikt
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 För att vara konkurrenskraftig måste du erbjuda en stor mängd fördelar för att kunna locka till dig och behålla dina bästa anställda. Förutom standardförmåner som sjukvård och tandvård kanske du även vill erbjuda utökade tjänster som implementeringshjälp, rekreationsprogram och bidrag till kläder. Med förmånshantering i Microsoft Dynamics 365 Human Resources får du en flexibel lösning som stöder en mängd olika förmånsalternativ. Personal inkluderar också en lättanvänd medarbetarupplevelse som visar dina erbjudanden.
 
@@ -40,6 +40,10 @@ För att vara konkurrenskraftig måste du erbjuda en stor mängd fördelar för 
 - Kvalificerad bearbetning av livshändelse stöder framtida livshändelser.
 
 Om du vill ha tillgång till demonstrationsdata måste du omdistribuera miljön i begränsat läge.
+
+>[!NOTE]
+>Du kan nu formulären för hantering av förmåner. Du kan nu lägga till anpassade fält som hör till disponeringssatser i formuläret **Disponeringsalternativ** för förmånsplaner. Mer information om arbete med anpassade fält finns i [Anpassade fält](hr-developer-custom-fields.md).
+>![Anpassade fält för förmånshantering](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Aktivera hantering av förmåner
 
@@ -97,3 +101,6 @@ Du måste bearbeta några av dina ändringar för att göra dem aktiva.
 - [Bearbetning av berättigande för livshändelse](hr-benefits-process-life-event-eligibility.md)
 - [Behandla prisändringar](hr-benefits-process-rate-changes.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

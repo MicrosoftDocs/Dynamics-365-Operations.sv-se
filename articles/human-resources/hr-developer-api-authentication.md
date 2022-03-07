@@ -2,11 +2,9 @@
 title: Äkthetsbevisning
 description: Den här artikeln innehåller översiktlig information om hur du autentiserar med Microsoft Dynamics 365 Human Resources API.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a0509ce99205d49d516e180203ffb65a1dc09a7c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 94d76a9f6d4a3d7afcb9b85d961899880ca9fc75
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420522"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893458"
 ---
 # <a name="authentication"></a>Äkthetsbevisning
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Den här artikeln innehåller översiktlig information om hur du autentiserar med Microsoft Dynamics 365 Human Resources API.
 
@@ -82,7 +82,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
         - Ange bas-URL:en för webbprogram. Till exempel `http://localhost:31544` kan vara URL:en för ett webbprogram som körs på den lokala datorn. Användarna använder sedan denna URL för att logga in i en webbklientapp.
         - För offentliga klientprogram anger du den URI som Azure AD använder för att returnera tokenbegäran. Ange ett värde som är specifikt för din app, till exempel `myapp://auth`.
 
-        Specifika exempel på webbprogram och egna program finns i snabbstartsprogrammen i [Microsoft identitetsplattform (tidigare Azure Active Directory för utvecklare)](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
+        Specifika exempel på webbprogram och egna program finns i snabbstartsprogrammen i [Microsoft identitetsplattform (tidigare Azure Active Directory för utvecklare)](/azure/active-directory/develop/#quickstarts).
 
 5. Under **API-behörighet**, välj **Lägg till behörighet**. Sedan på fliken **API:er som min organisation använder** söker du efter **Dynamics 365 Human Resources** och lägger till behörigheten **användare\_personifiering** till din app. Program-ID för personal är f9be0c49-aa22-4ec6-911a-c5da515226ff. Använd detta ID för att kontrollera att du har valt rätt program.
 
@@ -94,7 +94,7 @@ Azure AD tilldelar ditt program ett unikt program-ID och går till sidan **över
 
 ## <a name="retrieving-an-access-token"></a>Hämta en åtkomsttoken
 
-Information om hur du hämtar en åtkomsttoken för anrop till API för Personal beror på vilken teknik du använder för att utveckla klient programmet. Du kan till exempel [testa med ett tredje parts verktyg](../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md) (t.ex. med brevbärare), utveckla ett C#-konsolprogram eller en webbtjänst eller skapa en JavaScript/typescript-klient.
+Information om hur du hämtar en åtkomsttoken för anrop till API för Personal beror på vilken teknik du använder för att utveckla klient programmet. Du kan till exempel [testa med ett tredje parts verktyg](../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md) (t.ex. med Postman), utveckla ett C#-konsolprogram eller en webbtjänst eller skapa en JavaScript/typescript-klient.
 
 Exempel C# klientprogram:
 ```C#
@@ -185,3 +185,6 @@ namespace TalentODataPoC
 ```
 
 När du har hämtat en åtkomsttoken överför du token i auktoriseringsrubriken som ett ansvarigt token till varje begäran som du skickar till data-API enligt beskrivningen ovan.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

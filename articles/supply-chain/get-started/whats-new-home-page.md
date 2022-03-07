@@ -2,26 +2,24 @@
 title: Nyheter och ändringar i Dynamics 365 Supply Chain Management
 description: Det här ämnet pekar på avsnitt som beskriver de nya och ändrade funktionerna i varje utgåva av Dynamics 365 Supply Chain Management.
 author: kamaybac
-manager: tfehr
 ms.date: 12/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 3350afc5f9537a0bd97b9c5257a66039b9dcb55c
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
+ms.openlocfilehash: 596324b4bf6f342439e44d21e8b770ca35be0425
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014568"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471774"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management
 
@@ -31,8 +29,14 @@ ms.locfileid: "5014568"
 
 Information om vad som är nytt eller ändrat i varje utgåva av Dynamics 365 Supply Chain Management finns i följande avsnitt.
 
-| Version | Byggnummer | Tillgänglighet för automatisk uppdatering | Läs mer |
+| Version | Byggnummer | Tillgänglighet för automatisk uppdatering | Mer information |
 |---|---|---|---|
+| 10.0.22 | 10.0.995 | November 2021 | [Förhandsversion av Dynamics 365 Supply Chain Management 10.0.22](whats-new-scm-10-0-22.md) |
+| 10.0.21 | 10.0.960 | 2021 oktober | [Förhandsversion av Dynamics 365 Supply Chain Management 10.0.21](whats-new-scm-10-0-21.md) |
+| 10.0.20 | 10.0.886 | Augusti 2021 | [Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.20](whats-new-scm-10-0-20.md) |
+| 10.0.19 | 10.0.837 | 2021 juni | [Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.19](whats-new-scm-10-0-19.md) |
+| 10.0.18 | 10.0.793 | 2021 maj | [Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.18](whats-new-scm-10-0-18.md) |
+| 10.0.17 | 10.0.761 | 2021 april | [Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.17](whats-new-scm-10-0-17.md) |
 | 10.0.16 | 10.0.689 | 2021 februari | [Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.16](whats-new-scm-10-0-16.md) |
 | 10.0.15 | 10.0.644 | 2021 januari | [Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.15](whats-new-scm-10-0-15.md) |
 | 10.0.14 | 10.0.605 | November 2020 | [Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.14](whats-new-scm-10-0-14.md) |
@@ -67,3 +71,6 @@ Information om vad som är nytt eller ändrat i utgåvor före november 2019 fin
 | Microsoft Dynamics 365 for Operations                                 | 1611        | 7.1.1541.3036    | November 2016    | [Nyheter och ändringar i Dynamics 365 for Operations version 1611 (November 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-dynamics-365-operations-1611.md)                |
 | Microsoft Dynamics AX                                                 | 7.0.1       | 7.0.1265.23014   | 2016 maj         | [Nyheter och ändringar i AX programvaruversion 7.0.1 (maj 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md)          |
 | Microsoft Dynamics AX                                                 | 7.0         | 7.0.1265.3015    | 2016 februari    | [Nyheter och ändringar i AX 7.0 (Februari 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                            |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

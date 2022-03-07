@@ -2,11 +2,9 @@
 title: Hantera tjänstledighet för medarbetare
 description: Hantera tjänstledighet för medarbetare i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 627c8959b1845fbad761a85bdca7dc93bfc6a105
-ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
+ms.openlocfilehash: bf27f2a235ddb6c37601ce9d2dd7ceb356a511d9
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "4420678"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794695"
 ---
 # <a name="manage-employee-leave"></a>Hantera tjänstledighet för medarbetare
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan hantera en medarbetares tjänstledighet efter ledighetstyp. Det inkluderar utgångna tjänstledighetsregistreringar och justering av ledighetstypsaldon. 
 
@@ -56,3 +56,6 @@ Du kan inkludera en orsakskod och en kommentar när du justerar en medarbetares 
 
 - [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)
 - [Hantera begäranden om ledighet och frånvaro](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

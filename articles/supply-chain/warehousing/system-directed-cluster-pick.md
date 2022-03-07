@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: fa737f61bfd5bd71ba6d76e75e57c8e2d682cda3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: dca006ca00e7ff5aa3681daac713f1e93187cd9c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965687"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5239215"
 ---
 # <a name="system-directed-cluster-picking"></a>Systemdirigerad klusterplockning
 
@@ -206,3 +206,6 @@ Innan du kan ställa in systemstyrd klusterplockning måste du skapa kvalificera
 1. Det sista steget på den mobila enheten är att **placera** klustret till den sista platsen. Välj **OK**
     - När den här placeringsoperationen bekräftas stängs klustret och bryts, baserat på det värde som du anger för fältet **Bryt kluster vid** i klusterprofilen. Arbets-ID:n är också stängda.
 1. Ett meddelande om att "klustret har slutförts" visas på den mobila enheten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

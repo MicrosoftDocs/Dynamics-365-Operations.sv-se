@@ -2,11 +2,9 @@
 title: Ange en anpassad lagringsplats för skapade dokument
 description: Det här avsnittet beskriver hur du utökar listan över lagringsplatser för dokument som elektronisk rapporteringsformat (ER) genererar.
 author: NickSelin
-manager: AnnBe
 ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 5e9afad936a353c8db3c316ad45c4ce28d33b129
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 61a1e46497d650e2c063a5fe7537d17cf7aa1828a5a4504bb781e84aeb88f04a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680816"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718511"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Ange en anpassad lagringsplats för skapade dokument
 
@@ -29,7 +27,7 @@ API (application programming interface) för ramverket för elektronisk rapporte
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Du måste distribuera en topologi som stöder kontinuerlig version. (Mer information finns i [distribuera topologier som stöder kontinuerlig version och testa automatisering](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Du måste ha tillgång till den här topologin för en av följande roller:
+Du måste distribuera en topologi som stöder kontinuerlig version. (Mer information finns i [distribuera topologier som stöder kontinuerlig version och testa automatisering](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Du måste ha tillgång till den här topologin för en av följande roller:
 
 - Utvecklare för elektronisk rapportering
 - Konsult för funktionen för elektronisk rapportering
@@ -41,7 +39,7 @@ Du måste också ha tillgång till utvecklingsmiljön för den här topologin.
 
 I den aktuella topologin [skapa ett nytt ER-format](tasks/er-format-configuration-2016-11.md) för att skapa dokument som du vill lägga till en egen lagringsplats för. Alternativt kan du [importera ett befintligt ER-format till den här topologin](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Formatdesignersida](media/er-extend-file-storages-format.png)
+![Formatdesignersida.](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > ER-formatet du skapar eller importerar måste innehålla minst ett av följande formatelement:
@@ -55,12 +53,12 @@ I den aktuella topologin [skapa ett nytt ER-format](tasks/er-format-configuratio
 
 Om du vill ange hur dokument som ett ER-format genereras skickas, måste du konfigurera [Elektronisk rapportering (ER)-destinationer](electronic-reporting-destinations.md). I varje ER-destination som konfigureras för att lagra genererade dokument som filer måste du ange en dokumenttyp för ramverket för dokumenthantering. Olika typer av dokumenttyper kan användas för att skicka dokument som ger upphov till olika ER-format.
 
-1. Lägg till en ny [dokumenttyp](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) för ER-formatet som du har skapat eller tidigare importerat. I bilden nedan är dokumenttypen **FileX**.
+1. Lägg till en ny [dokumenttyp](../../fin-ops/organization-administration/configure-document-management.md) för ER-formatet som du har skapat eller tidigare importerat. I bilden nedan är dokumenttypen **FileX**.
 2. Inkludera ett specifikt nyckelord i dess namn för att skilja den här dokumenttypen från andra typer av dokument. I bilden nedan är namnet exempelvis **(LOKAL) mapp**.
 3. I fältet **klass** anger du **bifoga fil**.
 4. I fältet **grupp** anger du **fil**.
 
-![Sida för dokumenttyper](media/er-extend-file-storages-document-type.png)
+![Sida för dokumenttyper.](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > Dokumenttyper är företagsspecifika. Om du vill använda ett ER-format med en konfigurerad destination i flera företag, måste du konfigurera en separat dokumenttyp i varje företag.
@@ -115,18 +113,18 @@ Händelsen **AttachingFile()** utlöses när följande ER-destinationer bearbeta
 - **Arkivera** – när denna destination används skapas en ny post för ER-formatet i tabellen ERFormatMappingRunJobTable. Fältet **arkiverade** i den här posten har tilldelats **falsk**. Om ER-formatet körs korrekt, kommer det genererade dokumentet kopplas till denna post och händelsen **AttachingFile()** utlöses. Dokumenttypen som väljs i ER-destinationen bestämmer lagringsplats för den bifogade filen (Microsoft Azure lagring eller en Microsoft SharePoint-mapp).
 - **Jobbarkiv** – när denna destination används skapas en ny post för ER-formatet i tabellen ERFormatMappingRunJobTable. Fältet **arkiverade** i den här posten har tilldelats **sant**. Om ER-formatet körs korrekt, kommer det genererade dokumentet kopplas till denna post och händelsen **AttachingFile()** utlöses. Dokumenttypen som konfigureras i ER-parametrarna bestämmer lagringsplats för den bifogade filen (Azure lagring eller en SharePoint-mapp).
 
-![Sida för parametrar för elektronisk rapportering](media/er-extend-file-storages-parameters.png)
+![Sida för parametrar för elektronisk rapportering.](media/er-extend-file-storages-parameters.png)
 
 ## <a name="configure-an-er-destination"></a>Konfigurera ER-destination
 
-1. Konfigurera arkiverade destinationen för en av de ovan nämnda elementfilerna (fil, mapp, sammanslagning eller bilaga) för ER-formatet som du skapat eller importerat. Instruktioner finns i [ER konfigurera destinationer](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
+1. Konfigurera arkiverade destinationen för en av de ovan nämnda elementfilerna (fil, mapp, sammanslagning eller bilaga) för ER-formatet som du skapat eller importerat. Instruktioner finns i [ER konfigurera destinationer](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Använd den dokumenttyp som du lagt till tidigare konfigurerade destinationen. (I exemplet i det här avsnittet är dokumenttypen **FileX**.)
 
-![Dialogruta för destinationsinställningar](media/er-extend-file-storages-destination.png)
+![Dialogruta för målinställningar.](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Modifiera källkod
 
-1. Lägg till en ny klass i Microsoft Visual Studio projekt och skriv kod för att prenumerera på händelsen **AttachingFile()** som nämnts tidigare. (Mer information om utbyggbarhetsmönstret som används finns i [Svara genom att använda EventHandlerResult](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result).) Skriv till exempel kod i den nya klassen som utför följande åtgärder:
+1. Lägg till en ny klass i Microsoft Visual Studio projekt och skriv kod för att prenumerera på händelsen **AttachingFile()** som nämnts tidigare. (Mer information om utbyggbarhetsmönstret som används finns i [Svara genom att använda EventHandlerResult](/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result).) Skriv till exempel kod i den nya klassen som utför följande åtgärder:
 
     1. Lagra genererade filer i en mapp i det lokala filsystemet på servern som kör tjänsten Application Object Server (AOS).
     2. Lagra endast dessa genererade filer när nya dokumenttypen (till exempel typen **FileX** som har nyckelordet ”(LOKAL)” i namnet) används när en fil som är kopplad till posten i loggen ER-körningens jobblogg.
@@ -175,3 +173,6 @@ Händelsen **AttachingFile()** utlöses när följande ER-destinationer bearbeta
 
 - [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Startsida för utbyggbarhet](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

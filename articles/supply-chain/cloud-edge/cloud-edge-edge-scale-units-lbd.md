@@ -1,38 +1,34 @@
 ---
-title: Distribuera kantskalenheter på anpassad maskinvara med hjälp av LBD
+title: Distribuera kantskalningsenheter på anpassad maskinvara med hjälp av LBD (förhandsversion)
 description: I det här avsnittet beskrivs hur du provision på lokal kantskalningsenheter genom att använda anpassad maskinvara och distribution som baseras på lokala företagsdata (LBD).
 author: cabeln
-ms.date: 01/24/2022
+ms.date: 04/22/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1204b65e76c107c29a94a61c321064a87c7571fb
-ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
+ms.dyn365.ops.version: 10.0.19
+ms.openlocfilehash: 0ebbdaab9d6f040497d3158db2712e102b6e9aa8
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "8024552"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678991"
 ---
-# <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Distribuera kantskalenheter på anpassad maskinvara med hjälp av LBD
+# <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd-preview"></a>Distribuera kantskalningsenheter på anpassad maskinvara med hjälp av LBD (förhandsversion)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)] <!--KFM: Until 11/1/2021 -->
 
 Kantskalningsenheter har en viktig roll i den distribuerade topologin för Supply Chain Management. I hybridtopologin kan du fördela arbetsbelastningar mellan ditt Supply Chain Management molnnav och ytterligare skalningsenheter i molnet eller på kanten.
 
 Kantskalningsenheter kan distribueras genom att du skapar en lokal miljö för affärsdata (LBD) [lokal miljö](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) och sedan konfigurerar den till att fungera som skalningsenhet i din distribuerade hybrida topologi för Supply Chain Management. Detta uppnås genom att associera den lokala LBD-miljön med en Supply Chain Management-miljö i molnet, som har konfigurerats för att fungera som ett nav.  
 
+Kantskalningsenheter förhandsgranskas just nu. Därför får du endast använda en miljö av den här typen enligt [förhandsgranskningsvillkoren](https://aka.ms/scmcnepreviewterms).
+
 I det här avsnittet beskrivs hur du ställer in en lokal LBD-miljö som en kantskalningsenhet och kopplar den till ett nav.
-
-## <a name="infrastructure-considerations"></a>Att tänka på i infrastruktur
-
-Kantskalningsenheter körs i lokala miljöer, så infrastrukturkraven liknar varandra. Det finns dock vissa skillnader som bör noteras:
-
-- Kantskalningsenheter använder inte Financial Reporting, så de kräver inte Financial Reporting-noder.
-- Tillverknings- och lagringsarbetsbelastningarna är inte resurskrävande, så du bör överväga att beräkna datorkraften för AOS-noder på samma sätt.
 
 ## <a name="deployment-overview"></a>Distributionsöversikt
 
@@ -40,9 +36,11 @@ Här finns en översikt av distributionsstegen.
 
 1. **Aktivera en LBD-plats i ditt LBD-projekt i Microsoft Dynamics Lifecycle Services (LCS).**
 
+    Under förhandsgranskningen riktar sig LBD-kantskalningsenheter till befintliga LBD-kunder. Ytterligare en 60-dagars begränsad LBD-plats kommer endast att tillhandahållas i vissa kundsituationer.
+
 1. **Ställ in och distribuera en LBD-miljö med en *tom* databas.**
 
-    Använd LCS för att distribuera LBD-miljön med den senaste topologin och en tom databas. Mer information finns i avsnittet [Ställ in och distribuera en LBD-miljö med en tom databas](#set-up-deploy) längre fram i det här avsnittet. Du måste använda Supply Chain Management version 10.0.21 eller senare i samtliga hubb- och skalningsenhetsmiljöer.
+    Använd LCS för att distribuera LBD-miljön med den senaste topologin och en tom databas. Mer information finns i avsnittet [Ställ in och distribuera en LBD-miljö med en tom databas](#set-up-deploy) längre fram i det här avsnittet. Du måste använda Supply Chain Management version 10.0.19 med plattformsuppdatering 43 eller högre i alla enhetsmiljöer.
 
 1. **Ladda upp målpaket till LBD-projekttillgångar i LCS.**
 
@@ -62,7 +60,7 @@ Här finns en översikt av distributionsstegen.
 
 Med det här steget skapas en funktionell LBD-miljö. Däremot behöver inte miljön nödvändigtvis ha samma program- och plattformsversioner som hubbmiljö. Dessutom saknar den fortfarande anpassningar och har ännu inte aktiverats som en skalningsenhet.
 
-1. Följ anvisningarna i [Ställa in och distribuera lokala miljöer (plattformsuppdatering 41 och senare)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Du måste använda Supply Chain Management version 10.0.21 eller senare i samtliga hubb- och skalningsenhetsmiljöer. Du måste dessutom använda version 2.12.0 eller senare av infrastrukturskripten. 
+1. Följ anvisningarna i [Ställa in och distribuera lokala miljöer (plattformsuppdatering 41 och senare)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Du måste använda Supply Chain Management version 10.0.19 med plattformsuppdatering 43 eller högre i alla enhetsmiljöer
 
     > [!IMPORTANT]
     > Läs resten av det här avsnittet **innan** du går igenom stegen i det avsnittet.
@@ -77,50 +75,9 @@ Med det här steget skapas en funktionell LBD-miljö. Däremot behöver inte mil
     > Det här skriptet tar bort konfigurationer som inte behövs för distribution av kantskalningsenheter.
 
 1. Skapa en databas som innehåller tomma data enligt beskrivningen i [Konfigurera databaser](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb). Använd den tomma data.bak-filen för det här steget.
-1. När du har slutfört steget [Konfigurera databaser](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) kör du följande skript för att konfigurera Scale Unit Alm Orchestrator-databasen.
+1. Ställ in ett fördistributionsskript. För mer information, se [Skripts för lokal agent för fördistribution och efterdistribution](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md).
 
-    > [!NOTE]
-    > Konfigurera inte Financial Reporting-databasen under steget [Konfigurera databaser](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb).
-
-    ```powershell
-    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EdgeScaleUnit
-    ```
-
-    I skriptet Initialize-Database.ps1 utförs följande åtgärder:
-
-    1. Skapa en tom databas med namnet **ScaleUnitAlmDb**.
-    2. Mappa användarna till databasroller, baserat på följande tabell.
-
-        | Användare            | Typ | Databasroll |
-        |-----------------|------|---------------|
-        | svc-LocalAgent$ | gMSA | db\_ägare     |
-
-1. Fortsätt med att följa anvisningarna i [Konfigurera och distribuera lokala miljöer (plattformsuppdatering 41 och senare)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md).
-1. När du har slutfört steget [Konfigurera AD FS](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) gör du följande:
-
-    1. Skapa ett nytt AD FS-program (Active Directory Federation Services) som gör det möjligt för Alm-orkestreringstjänsten att kommunicera med programobjektservern (AOS).
-
-        ```powershell
-        # Host URL is your DNS record\host name for accessing the AOS
-        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
-        ```
-
-    1. Skapa ett nytt Azure Active Directory (Azure AD)-program som gör det möjligt för Alm-orkestreringstjänsten att kommunicera med hanteringstjänsten för skalningsenheter.
-
-        ```powershell
-        # Example .\Create-SumAADApplication.ps1 -ConfigurationFilePath ..\ConfigTemplate.xml -TenantId '6240a19e-86f1-41af-91ab-dbe29dbcfb95' -ApplicationDisplayName 'EdgeAgent-SUMCommunication-EN01'
-        .\Create-SumAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
-                                       -TenantId '<ID of the tenant where your cloud hub is deployed>' `
-                                       -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
-        ```
-
-1. Fortsätt med att följa anvisningarna i [Konfigurera och distribuera lokala miljöer (plattformsuppdatering 41 och senare)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). När du måste ange konfigurationen för den lokala agenten ska du se till att du aktiverar funktionerna för kantskalningsenhet och tillhandahåller alla parametrar som krävs.
-
-    ![Aktivera funktioner för kantskalningsenhet.](media/EnableEdgeScaleUnitFeatures.png "Aktivera funktioner för kantskalningsenhet.")
-
-1. Innan du distribuerar din miljö från LCS måste du konfigurera fördistributionsskriptet. För mer information, se [Skripts för lokal agent för fördistribution och efterdistribution](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md).
-
-    1. Kopiera skriptet Configure-CloudAndEdge.ps1 från mappen **Skalningsenhet** i **Infrastrukturskript** till mappen **Skript** i agentens fillagringsutrymme som konfigurerats i miljön. En typisk sökväg är \\\\lbdiscsi01\\agent\\Scripts.
+    1. Kopiera innehållet från mappen **ScaleUnit** i **Infrastrukturskript** till mappen **Skript** i agentfillagringsandelen som konfigurerades i miljön. En typisk sökväg är \\\\lbdiscsi01\\agent\\Scripts.
     2. Skapa det **PreDefordyment.ps1**-skript som aktiverar skripten genom att använda de parametrar som krävs. Fördistributionsskriptet måste finnas i mappen **Skript** i lagringsresursen för agentfilen. Annars kan den inte köras. En typisk sökväg är \\\\lbdiscsi01\\agent\\Scripts\\PreDeployment.ps1.
 
         Innehållet i skriptet PreDedemyment.ps1 liknar följande exempel.
@@ -129,7 +86,7 @@ Med det här steget skapas en funktionell LBD-miljö. Däremot behöver inte mil
         $agentShare = '\\lbdiscsi01\agent'
         
         Write-Output "AgentShare is set to $agentShare" 
-        . $PSScriptRoot\Configure-CloudAndEdge.ps1 -AgentShare $agentShare -InstanceId '@A'
+        & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
         ```
 
         > [!NOTE]
@@ -144,75 +101,6 @@ Med det här steget skapas en funktionell LBD-miljö. Däremot behöver inte mil
         >   - @#
 
 1. Distribuera miljön genom att använda den senaste bastopologin som finns.
-1. Följ dessa steg när miljön har distribuerats:
-
-    1. Kör följande SQL-kommandon på din affärsdatabas (AXDB):
-
-        ```sql
-        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
-        delete from NumberSequenceTable
-        delete from NumberSequenceReference
-        delete from NumberSequenceScope
-        delete from FeatureManagementMetadata
-        delete from FeatureManagementState
-        delete from SysFeatureStateV0
-        ```
-
-    1. Öka samtidig maximal batchsession till ett värde som överstiger 4.
-
-        ```sql
-        Update batchserverconfig set maxbatchsessions = '<Replace with number of concurrent batch tasks you want>'
-        ```
-
-    1. Kontrollera att ändringsspårning har aktiverats i din affärsdatabas (AXDB).
-
-        1. Öppna SQL Server Management Studio (SSMS).
-        1. Markera och håll inne (eller högerklicka på) din affärsdatabas (AXDB) och välj sedan **Egenskaper**.
-        1. I fönstret som öppnas väljer du **Ändringsspårning** och anger sedan följande värden:
-
-            - **Ändringsspårning:** *Sant*
-            - **Lagringsperiod:** *7*
-            - **Kvarhållningsenheter:** *dagar*
-            - **Automatisk rensning:** *Sant*
-
-    1. Lägg till det program-ID för AD FS som du skapade tidigare (genom att använda skriptet Create-ADFSServerApplicationForEdgeScaleUnits.ps1) i tabellen för Azure AD-program i din skalningsenhet. Du kan utföra detta steg manuellt via användargränssnittet (UI). Alternativt kan du fylla i det via databasen genom att använda följande skript:
-
-        ```sql
-        DECLARE @ALMOrchestratorId NVARCHAR(76) = '<Replace with the ADFS Application ID created in a previous step>';
-
-        IF NOT EXISTS (SELECT TOP 1 1 FROM SysAADClientTable WHERE AADClientId = @ALMOrchestratorId)
-        BEGIN
-            INSERT INTO SysAADClientTable (AADClientId, UserId, Name, ModifiedBy, CreatedBy)
-            VALUES (@ALMOrchestratorId, 'ScaleUnitManagement', 'Scale Unit Management', 'Admin', 'Admin');
-        END
-        ```
-
-## <a name="set-up-an-azure-key-vault-and-an-azure-ad-application-to-enable-communication-between-scale-units"></a><a name="set-up-keyvault"></a>Konfigurera ett Azure Key V och ett Azure AD-program för att aktivera kommunikation mellan skalningsenheter
-
-1. När din miljö har distribuerats skapar du ett ytterligare Azure AD-program för att aktivera betrodd kommunikation mellan din hubb och skalningsenhet.
-
-    ```powershell
-    .\Create-SpokeToHubAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
-                                          -TenantId '<ID of the tenant where your cloud hub is deployed>' `
-                                          -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
-    ```
-
-1. När du har skapat programmet måste du skapa en klienthemlighet och spara informationen i ett Azure-nyckelvalv. Dessutom måste du bevilja åtkomst till det Azure AD-program som skapats så att detta kan hämta de hemligheter som lagrats i nyckelvalvet. För att underlätta för dig utför följande skript automatiskt alla nödvändiga åtgärder:
-
-    ```powershell
-    .\Create-SpokeToHubAADAppSecrets.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
-                                         -TenantId '<ID of the tenant where your cloud hub is deployed>' `
-                                         -SubscriptionName '<Any subscription within your tenant>' `
-                                         -ResourceGroupName '<Any resource group within your subscription>' `
-                                         -KeyVaultName '<Any key vault within your resource group>' `
-                                         -Location '<Any Azure location where Azure Key Vault is available>' `
-                                         -LCSEnvironmentId '<The LCS environment ID of your deployed scale unit>' `
-    ```
-
-    > [!NOTE]
-    > Om inget nyckelvalv besitter angivet värde för **KeyVaultName** kommer skriptet automatiskt att skapa ett.
-
-1. Lägg till det program-ID för Azure AD som du just skapat (vid användnign av skriptet Create-SpokeToHubAADApplication.ps1) i programtabellen för Azure AD i din hubb. Du kan utföra detta steg manuellt via användargränssnittet.
 
 ## <a name="upload-target-packages-into-lbd-project-assets-in-lcs"></a><a name="upload-packages"></a>Ladda upp målpaket till LBD-projekttillgångar i LCS
 
@@ -228,13 +116,122 @@ Det här steget justerar applikationsversionen, plattformsversionen och anpassni
 1. Service av LBD-miljön med det kombinerade program-/plattformspaketet som du överförde i det föregående steget.
 1. Service av LBD-miljön med det anpassade paketet som kan distribueras som du överförde i det föregående steget.
 
-    ![Tillämpa uppdateringar i LCS.](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "Tillämpa uppdateringar i LCS")
+    ![Välja Underhåll > Tillämpa uppdateringar i LCS.](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "Välja Underhåll > Tillämpa uppdateringar i LCS")
 
     ![Välja ditt anpassningspaket.](media/cloud_edge-LBD-LCS-ServiceLBDEnv2.png "Välja ditt anpassningspaket")
 
 ## <a name="assign-your-lbd-edge-scale-unit-to-a-hub"></a><a name="assign-edge-to-hub"></a>Tilldela din LBD-kantskalningsenhet till en hubb
 
-Du konfigurerar och hanterar kantskalningsenheten via hanteringsportalen för skalningsenheter. Mer information finns i [Hantera skalningsenheter och arbetsbelastningar med hjälp av hanteringsportalen för skalningsenheter](./cloud-edge-landing-page.md#scale-unit-manager-portal).
+När kantskalningsenheter fortfarande är i förhandsgranskning måste du använda [verktygen för skalningsenhet och konfiguration](https://github.com/microsoft/SCMScaleUnitDevTools) som är tillgängliga i GitHub för att tilldela din LBD-kantskalningsenhet till en hubb. Med hjälp av den här processen kan LBD-konfiguration fungera som en kantskalningsenhet och associerar den med den. Den här processen liknar konfigurering av en utvecklingsmiljö med en ruta.
+
+1. Hämta den senaste versionen av [SCMScaleUnitDevTools](https://github.com/microsoft/SCMScaleUnitDevTools/releases) och ta bort innehållet i filen.
+1. Skapa en kopia av `UserConfig.sample.xml` filen och ge den ett namn `UserConfig.xml`.
+1. Skapa en Microsoft Azure Active Directory (Azure AD) app i din Azure AD klientorganisation som du nämnde i [Implementeringsguide för skalningsenhet och laster](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#aad-application-registrations).
+    1. När du har skapat det navigerar du till Azure AD programformuläret (SysAADClientTable) på din hubb.
+    1. Skapa en ny post och ange **klient-ID** för programmet du skapade. Ställ in **Namn** till *ScaleUnits* och **Användar-ID** till *Admin*.
+
+1. Skapa en Active Directory Federation Service (AD FS) app som nämns i [Riktlinjer för distribution för skalningsenhet och laster](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#adfs-application-registrations).
+    1. När du har skapat det navigerar du till Azure AD programformuläret (SysAADClientTable) på din kantskalningsenhet.
+    1. Skapa en ny post och ange **klient-ID** för programmet du skapade. Ange **Användar-ID** till *Admin*.
+
+1. Ändra `UserConfig.xml` filen.
+    1. Under avsnittet `InterAOSAADConfiguration` anger du informationen från Azure AD-appen du skapade tidigare.
+        - I elementet `AppId` ange app-ID för Azure-appen.
+        - I elementet `AppSecret` ange apphemlighet för Azure-appen.
+        - Elementet `Authority` måste innehålla URL:en som anger säkerhetsmyndighet för din innehavare.
+
+        ```xml
+        <InterAOSAADConfiguration>
+            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
+            <AppSecret>k6em-_7.lopty56TGUedDTVhtER-j_6anY1</AppSecret>
+            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
+        </InterAOSAADConfiguration>
+        ```
+
+    1. Under avsnittet `ScaleUnitConfiguration` för den första `ScaleUnitInstance`, ändra avsnittet `AuthConfiguration`.
+        - I elementet `AppId` ange app-ID för Azure-appen.
+        - I elementet `AppSecret` ange apphemlighet för Azure-appen.
+        - Elementet `Authority` måste innehålla URL:en som anger säkerhetsmyndighet för din innehavare.
+
+        ```xml
+        <AuthConfiguration>
+            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
+            <AppSecret>k6em-_7.lopdz.6d3DTVOtf9Lo-j_6anY1</AppSecret>
+            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
+        </AuthConfiguration>
+        ```
+
+    1. Dessutom, för samma `ScaleUnitInstance`, ange följande värden:
+        - I `Domain` element ange URL:en för din hubb. Till exempel: `https://cloudhub.sandbox.operations.dynamics.com/`
+        - I `EnvironmentType` element, se till att värdet `LCSHosted` anges.
+
+    1. Under avsnittet `ScaleUnitConfiguration` för den andra `ScaleUnitInstance`, ändra avsnittet `AuthConfiguration`.
+        - I elementet `AppId` ange app-ID för AD FS-appen.
+        - I elementet `AppSecret` ange apphemlighet för AD FS-appen.
+        - Elementet `Authority` måste innehålla URL-adressen till AD FS-instansen.
+
+        ```xml
+        <AuthConfiguration>
+            <AppId>26b16f25-21d8-4d36-987b-62df292895aa</AppId>
+            <AppSecret>iZFfObgI6lLtY9kEbBjEFV98NqI5_YZ0e5SBcWER</AppSecret>
+            <Authority>https://adfs.contoso.com/adfs</Authority>
+        </AuthConfiguration>
+        ```
+
+    1. Dessutom, för samma `ScaleUnitInstance`, ange följande värden:
+        - I `Domain` element ange URL:en för din kantskalningsenhet. Till exempel: https://ax.contoso.com/
+        - I `EnvironmentType` element, se till att värdet LBD anges.
+        - I `ScaleUnitId` element, mata in samma värde som du angav för `InstanceId` när du konfigurerar `Configure-CloudandEdge.ps1` fördistributionsskriptet.
+
+        > [!NOTE]
+        > Om du inte använder standard-ID:t (@A;) måste du uppdatera ScaleUnitId för varje ConfiguredWorkload under avsnittet Arbetsbelastningar.
+
+1. Öppna PowerShell och navigera till mappen som innehåller `UserConfig.xml` filen.
+
+1. Kör verktyget med det här kommandot.
+
+    ```powershell
+    .\CLI.exe
+    ```
+
+    > [!NOTE]
+    > Efter varje åtgärd måste du starta verktyget igen.
+
+1. I verktyget, välj **2. Förbered miljöer för installation av arbetsbelastning**. Kör sedan följande steg:
+    1. Välj **1. Förbered hubben**.
+    1. Välj **2. Förbered skalningsenhet**.
+
+    > [!NOTE]
+    > Om du inte kör det här kommandot från en ren installation och den misslyckas, ska du utföra följande åtgärder:
+    >
+    > - Ta bort alla mappar från `aos-storage` mappen (förutom `GACAssemblies`).
+    > - Kör följande SQL-kommando på din affärsdatabas (AXDB):
+    >
+    > ```sql 
+    > delete from storagefoler
+    > ```
+
+1. Kör följande SQL-kommandon på din affärsdatabas (AXDB):
+
+    ```sql
+    delete from FEATUREMANAGEMENTMETADATA
+    delete from FEATUREMANAGEMENTSTATE
+    delete from NUMBERSEQUENCESCOPE
+    ```
+
+1. Kontrollera att spårning av ändringar har aktiverats i din affärsdatabas (AXDB)
+    1. Starta SQL Server Management Studio (SSMS).
+    1. Högerklicka på din affärsdatabas (AXDB) och välj egenskaper.
+    1. Välj **Ändra spårning** i fönstret som öppnas och gör följande inställningar:
+
+        - **Ändringsspårning:** *Sant*
+        - **Lagringsperiod:** *7*
+        - **Kvarhållningsenheter:** *dagar*
+        - **Automatisk rensning:** *Sant*
+
+1. I verktyget, välj **3. Installera laster**. Kör sedan följande steg:
+    1. Välj **1. Installera på hubb**.
+    1. Välj **2. Installera på skalningsenhet**.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

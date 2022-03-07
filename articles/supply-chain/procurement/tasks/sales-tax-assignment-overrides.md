@@ -1,26 +1,24 @@
 ---
 title: Momstilldelning och åsidosättningar
 description: I den här proceduren visas hur du tilldelar momsgrupper till handelskanaler.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTaxOverrideCode, RetailTaxOverrideGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1c6e1de5046a3ce5d896ba3686a28d6d474d4268
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 90674fd6e0824a112ef0b77eeb512ad20f0c76d7a8504abad2c4608c0cd16845
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020739"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6711841"
 ---
 # <a name="sales-tax-assignment-and-overrides"></a>Momstilldelning och åsidosättningar
 
@@ -56,3 +54,6 @@ I den här proceduren visas hur du tilldelar momsgrupper till handelskanaler. De
 21. Klicka på länken på den valda raden i listan.
 22. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,15 +2,12 @@
 title: Kostnadskonfiguration för fördelad orderhantering (DOM)
 description: I detta avsnitt beskrivs kostnadskonfigurationen för fördelad orderhantering (DOM) i Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 12/05/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-12-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7644cb9800a418fd123b32a0257b787277fcb19f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f3ed387bf7925785c33e2f0c07e9aba898334567
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459920"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795989"
 ---
 # <a name="cost-configuration-for-distributed-order-management-dom"></a>Kostnadskonfiguration för fördelad orderhantering (DOM)
 
@@ -172,3 +169,6 @@ Du måste ställa in följande fält för den här kombinationen:
 
 > [!IMPORTANT]
 > Om att DOM ska ta hänsyn till dessa kostnader under körning måste du lägga till kostnadsfaktorn i relevant uppfyllelseprofil.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

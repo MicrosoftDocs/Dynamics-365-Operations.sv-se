@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: a252c3ecb12cb6a4dc429f35c8aeab6bd3914d03
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 8cbc2909c3f4533b4ea68e522f0874873989f3ce
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528959"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994057"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Synkronisera kontakter direkt från Sales till kontakter i Supply Chain Management
 
@@ -33,9 +32,9 @@ ms.locfileid: "4528959"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Common Data Service för appar](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+> Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Microsoft Dataverse för appar](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
-I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera entiteterna Kontakt (kontakter) och Kontakt (kunder) direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
+I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera tabellerna Kontakt (kontakter) och Kontakt (kunder) direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflöden i Potentiell kund till kontanter
 
@@ -47,7 +46,7 @@ Lösningen Potentiell kund till kontanter använder funktionen Dataintegrering f
 
 För att gå till tillgängliga mallar, öppna [PowerApps administratörscenter](https://preview.admin.powerapps.com/dataintegration). Välj **projekt** och i det övre högra hörnet väljer du **nytt projekt** för att välja allmänna mallar.
 
-Följande mallar och underliggande uppgifter används för att synkronisera entiteterna kontakt (kontakter) i Sales och entiteterna kontakt (kunder) i Supply Chain Management.
+Följande mallar och underliggande uppgifter används för att synkronisera tabellerna kontakt (kontakter) i Sales och tabellerna kontakt (kunder) i Supply Chain Management.
 
 - **Namn på mallar i dataintegrering**
 
@@ -65,7 +64,7 @@ Följande synkroniseringsuppgift krävs före kontaktsynkronisering: konton (Sal
 
 | Försäljning    | Hantering av underleverantörer |
 |----------|------------------------|
-| Kontakter | CDS-kontakter           |
+| Kontakter | Dataverse-kontakter           |
 | Kontakter | Kunder V2           |
 
 ## <a name="entity-flow"></a>Flöde för entitet
@@ -79,13 +78,13 @@ En kontakt i Sales kan antingen bli en kontakt eller en kund i Supply Chain Mana
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Lösningen potentiell kund till kontanter för Sales
 
-Ett nytt fält för **är aktiv kund** har lagts till kontakten. Det här fältet används för att urskilja kontakter vars försäljningsaktivitet och kontakter som inte har en försäljningsaktivitet. **Är aktiv kund** anges till **Ja** endast för kontakter som har relaterade offerter, order eller fakturor. Endast dessa kontakter synkroniseras till Supply Chain Management som kunder.
+En ny kolumn för **är aktiv kund** har lagts till kontakten. Den här kolumnen används för att urskilja kontakter vars försäljningsaktivitet och kontakter som inte har en försäljningsaktivitet. **Är aktiv kund** anges till **Ja** endast för kontakter som har relaterade offerter, order eller fakturor. Endast dessa kontakter synkroniseras till Supply Chain Management som kunder.
 
-Ett nytt fält för **IsCompanyAnAccount** har lagts till kontakten. Det här fältet indikerar om en kontakt är kopplad till ett företag (överordnat konto/kontakt) av typen **konto**. Denna information används för att identifiera kontakter som ska synkroniseras mot Supply Chain Management som kontakter.
+En ny kolumn för **IsCompanyAnAccount** har lagts till kontakten. Den här kolumnen indikerar om en kontakt är kopplad till ett företag (överordnat konto/kontakt) av typen **konto**. Denna information används för att identifiera kontakter som ska synkroniseras mot Supply Chain Management som kontakter.
 
-Ett nytt fält för **kontaktnummer** har lagts till kontakten för att garantera en naturlig och unik nyckel för integration. När en ny kontakt skapas kommer **kontaktnummer**-värde genereras automatiskt med hjälp av en nummerserie. Värdet består av **CON** följt av en ökande nummerserie och sedan ett suffix på sex tecken. Här är ett exempel: **CON-01000-BVRCPS**
+En ny kolumn för **kontaktnummer** har lagts till kontakten för att garantera en naturlig och unik nyckel för integration. När en ny kontakt skapas kommer **kontaktnummer**-värde genereras automatiskt med hjälp av en nummerserie. Värdet består av **CON** följt av en ökande nummerserie och sedan ett suffix på sex tecken. Här är ett exempel: **CON-01000-BVRCPS**
 
-När integrationslösningen för Sales används, anger ett uppgraderingsskript fältet **kontaktnummer** för befintliga kontakter med nummerserien som beskrivits tidigare. Uppgraderingsskriptet anger också fältet **är aktiv kund** till **Ja** för alla kontakter som har försäljningsaktivitet.
+När integrationslösningen för Sales används, anger ett uppgraderingsskript kolumnen **kontaktnummer** för befintliga kontakter med nummerserien som beskrivits tidigare. Uppgraderingsskriptet anger också kolumnen **är aktiv kund** till **Ja** för alla kontakter som har försäljningsaktivitet.
 
 ## <a name="in-supply-chain-management"></a>I Supply Chain Management
 
@@ -95,7 +94,7 @@ Kontakter är märkta med egenskapen **IsContactPersonExternallyMaintained**. De
 
 ### <a name="contact-to-customer"></a>Kontakt till kund
 
-- **CustomerGroup** krävs i Supply Chain Management. För att undvika problem med synkronisering kan du ange ett standardvärde i mappningen. Detta standardvärde används sedan om fältet lämnas tomt i Sales.
+- **CustomerGroup** krävs i Supply Chain Management. För att undvika problem med synkronisering kan du ange ett standardvärde i mappningen. Detta standardvärde används sedan om kolumnen lämnas tomt i Sales.
 
     Standardmallvärdet är **10**.
 
@@ -118,7 +117,7 @@ Kontakter är märkta med egenskapen **IsContactPersonExternallyMaintained**. De
 I följande illustrationer visas ett exempel på en mallmappning i dataintegrering. 
 
 > [!NOTE]
-> Mappningen visar vilken fältinformation som kommer att synkroniseras från Sales till Supply Chain Management.
+> Mappningen visar vilken kolumninformation som kommer att synkroniseras från Sales till Supply Chain Management.
 
 ### <a name="contact-to-contact"></a>Kontakt till kontakt
 

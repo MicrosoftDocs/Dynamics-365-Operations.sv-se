@@ -1,27 +1,27 @@
 ---
 title: Dokumentetutskrift – översikt
 description: Du kan skriva ut dokument genom att använda en lokal skrivare eller en nätverksansluten enhet. Den här artikeln innehåller en översikt över hur dokument skrivs ut.
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Application User
 ms.reviewer: kfend
-ms.custom: 69161
+ms.custom:
+- "69161"
+- intro-internal
 ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1d64a2efeade5e9ba24f4dfe61c861f5a4cbad4
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8b9105ef39e411ac33043f1941d4e1dd32b758e5
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680106"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984918"
 ---
 # <a name="document-printing-overview"></a>Dokumentetutskrift – översikt
 
@@ -54,7 +54,7 @@ Eftersom lösningen varierar beroende på scenariet, innehåller appar inbyggda 
 - **Scenario 2** använder klientprogram och Microsoft 365-tjänster.
 - **Scenario 3** kräver stöd från klientprogram och från tjänster som finns i Microsoft Azure.
 
-Förutom den plattform som distribueras på Azure-abonnemanget ger Finance and Operations-program ger kunderna en integrerad, första part Azure-program som kan användas för att enkelt använda domänhanterade enheter för att skriva ut dokument.
+Förutom den plattform som distribueras på Azure-abonnemanget ger Finance and Operations-.program kunderna en integrerad, första part Azure-program som kan användas för att enkelt använda domänhanterade enheter för att skriva ut dokument.
 
 ## <a name="service-overview"></a>Översikt över tjänsten
 När dokument som har skapats av värdprogram som väntar på att skrivas ut på en nätverksansluten enhet, förvaras de i Azure blobblagring. [Installera dokumentflödesagenten för att aktivera nätverksutskrift](install-document-routing-agent.md) använder Azure-autentisering för att upprätta en säker kanal till Azure-tjänsterna.
@@ -71,6 +71,9 @@ Den klientbaserade lösningen låter kunder hantera omfattningen av deras skriva
 
 Diagrammet nedan visar de grundläggande komponenterna som hjälper till att stödja nätverksutskriftoperationer.
 
-[![tjänstkomponenter för nätverksutskrift\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
+[![tjänstekomponenter-för-nätverksutskrift\_2016.](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Observera att en skrivare kan registreras med flera dokumentflödesagenter. För att lösa skrivarens egenskaper använder värdtjänsten nätverkssökvägen som unikt identifierar alla nätverksskrivare. Därför visas den som ett alternativ i listan över skrivare som är tillgänglig i appar även om en skrivare är registrerad med flera klienter.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

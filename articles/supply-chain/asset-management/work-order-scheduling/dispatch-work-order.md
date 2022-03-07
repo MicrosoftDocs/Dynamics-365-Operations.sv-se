@@ -1,12 +1,10 @@
 ---
 title: Skicka arbetsorder
 description: Det här avsnittet innehåller förklaringar av hur du skickar arbetsorder i Tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetScheduledExecution
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b4b05dfe351bb61dc47c9c2bfe30831ab7b0a16
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 87f67f4db143fabbfae926e30e7e5d97ac6af0f6fa5469218e4ab3605aa44dcb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016866"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778734"
 ---
 # <a name="dispatch-work-order"></a>Skicka arbetsorder
 
@@ -54,8 +52,11 @@ Du kan schemalägga en arbetsorder eller arbetsorderjobb till en arbetare med fu
 
 I bilden nedan visas ett exempel på val för skicka ut i dialogrutan **Schemalägg arbetsorder**.
 
-![Figur 1](media/04-work-order-scheduling.png)
+![Figur 1.](media/04-work-order-scheduling.png)
 
 [!NOTE]
 Om du vill ta bort schemat för en arbetsorder gör du det genom att välja arbetsordern i **Alla arbetsorder** och klicka på **Ta bort schema** på fliken **Allmänt**. Kom ihåg att uppdatera arbetsorderns livscykeltillstånd manuellt om du tar bort schemat.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

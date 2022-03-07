@@ -2,8 +2,11 @@
 title: Funktionen CURCREDREF ER
 description: Det här avsnittet innehåller information om hur funktionen CURCREDREF elektronisk rapportering (ER) används.
 author: NickSelin
+manager: kfend
 ms.date: 12/17/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c90385c3bf64adfe80fa054e1eb78a6aa368c04eb1758a2e453669bb3d4b7214
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3923126060963122634d90c2ba8a380f534e9178
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727519"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686772"
 ---
 # <a name="curcredref-er-function"></a>Funktionen CURCREDREF ER
 
@@ -52,6 +55,3 @@ Det resulterande textvärdet.
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Andra (företagsdomänspecifika) funktioner](er-functions-category-other.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

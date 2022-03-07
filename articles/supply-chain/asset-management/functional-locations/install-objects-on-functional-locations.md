@@ -1,12 +1,10 @@
 ---
 title: Installera tillgångar på funktionsplatser
 description: I det här avsnittet beskrivs hur du installerar tillgångar på en funktionsplats i Tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationObjectChange, EntAssetFunctionalLocationObjectInstall, EntAssetFunctionalLocationObject
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ea67e2392d8e25a2a5f3cb7e1ff5032322f2c48
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: bc278564b02335b44a0b35d6a3a981125e6f456b08893be2b5886f0a55396d52
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022040"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775757"
 ---
 # <a name="install-assets-on-functional-locations"></a>Installera tillgångar på funktionsplatser
 
@@ -82,3 +80,6 @@ När inställningsdata är tillgängliga är du redo att skapa en tillgång.
 1. På sidan **alla funktionsplatser** kontrollerar du att den funktionsplats där du vill att tillgången ska skapas automatiskt använder den funktionsplatstyp som du skapade för detta ändamål.
 2. Markera funktionsplatser i listan.
 3. Välj **Uppdatera funktionsplatsens tillstånd** och välj sedan det livscykeltillstånd som du skapade för det här ändamålet. En tillgång installeras nu automatiskt på funktionsplatsen. Den här tillgången har samma namn som funktionsplatsen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

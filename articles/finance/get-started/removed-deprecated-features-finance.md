@@ -2,25 +2,22 @@
 title: Borttagna och utfasade funktioner i Dynamics 365 Finance
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 Finance.
 author: roschlom
-manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: sericks
+ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a406db6d78302fa05596a58fffb7464222d4bfea
-ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4689504"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890963"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Borttagna och utfasade funktioner i Dynamics 365 Finance
 
@@ -34,13 +31,109 @@ I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerat
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
 > [!NOTE]
-> Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
+> Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.24 utgåva
+
+### <a name="sales-tax-report-for-sweden-design-based-on-reporting-codes"></a>Momsrapport för Sverige (design baserad på rapporteringskoder)
+
+[Momsrapport för Sverige](../localizations/emea-swe-sales-tax-payment-report-sweden.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Ersätt med en ny momsdeklarationsdesign, [momsdeklaration för Sverige](../localizations/emea-swe-vat-declaration-sweden.md) |
+| **Ersatt av en annan funktion?**   | Ja |
+| **Produktområden som påverkas**         | Ansökning |
+| **Distribueringsalternativ**              | Alla |
+| **Status**                         | Inaktuell: Senast den 1 december 2022 planerar vi att inte längre stödja momsrapporten för Sverige (svensk rapportlayout). Nya format för **momsdeklaration XML (SE**) och **momsdeklaration Excel (SE)** Elektronisk rapportering (ER) införs under modellen **momsdeklaration**. |
+
+### <a name="vat-statement-for-austria-design-based-on-reporting-codes"></a>Momsutdrag för Österrike (design baserad på rapporteringskoder)
+
+[Detaljerad momsinformation för Österrike](../localizations/emea-aut-vat-statement-details.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Ersätt med en ny momsdeklarationsdesign, [momsdeklaration för Österrike](../localizations/emea-aut-vat-declaration-austria.md) |
+| **Ersatt av en annan funktion?**   | Ja |
+| **Produktområden som påverkas**         | Ansökning |
+| **Distribueringsalternativ**              | Alla |
+| **Status**                         | Inaktuell: Den 1 december 2022 planerar vi att inte längre stödja **momsdeklarationen (AT)** elektronisk rapportering (ER) under **momsdeklarationsmodellen**.  Nya format för **momsdeklaration XML (AT)** och **momsdeklaration Excel (AT)** införs under modellen **momsdeklaration**. |
+
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>ELSTER-deklaration för Tyskland (design baserad på rapporteringskoder)
+
+[Momsutdrag](../localizations/emea-de-vat-declaration.md)</br>
+[Konfigurera elektronisk skattedeklaration för Tyskland](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
+[Överföring av elektronisk momsdeklaration (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Ersätt med en ny momsdeklarationsdesign, [momsdeklaration för Tyskland](../localizations/emea-deu-vat-declaration-germany.md) |
+| **Ersatt av en annan funktion?**   | Ja |
+| **Produktområden som påverkas**         | Ansökning |
+| **Distribueringsalternativ**              | Alla |
+| **Status**                         | Inaktuell: Den 1 december 2022 planerar vi att inte längre stödja formaten **Elster (DE)** och **Elster modell** elektronisk rapportering (ER). Nya format för **momsdeklaration XML (DE)** och **momsdeklaration Excel (DE)** införs under modellen **momsdeklaration**. |
+
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>OB-deklaration för Nederländerna (design baserad på rapporteringskoder)
+
+[OB-deklarationsnummer](../localizations/emea-nl-vat-declaration.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Ersätt med en ny momsdeklarationsdesign, [momsdeklaration för Nederländerna](../localizations/emea-nl-vat-declaration-netherlands.md) |
+| **Ersatt av en annan funktion?**   | Ja |
+| **Produktområden som påverkas**         | Ansökning |
+| **Distribueringsalternativ**              | Alla |
+| **Status**                         | Inaktuell: Den 1 december 2022 planerar vi att inte längre stödja **OB-deklarationen (NL)** och **modellen OB-deklaration** elektronisk rapportering (ER).  Nya format för **momsdeklaration XML (NL)** och **momsdeklaration Excel (NL)** införs under modellen **momsdeklaration**. |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.20 utgåva
+
+### <a name="rtir-query-invoice-data-request-hu-electronic-reporting-er-format-configuration"></a>Formatkonfiguration för "begäran om fakturadata genom RTIR-fråga" – elektronisk rapportering (ER)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Exkluderad från bearbetning av elektroniska meddelanden rörande driftskompatibilitet med ungerskt online-faktureringssystem |
+| **Ersatt av en annan funktion?**   | Nej |
+| **Produktområden som påverkas**         | Ansökning |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell: Från och med den 15 april 2022 planerar vi att inte längre stödja formatkonfigurationen "RTFV Query Invoice Data Request (HU)." |
+
+### <a name="french-fec-audit-file-electronic-reporting-er-format-for-france-under-german-audit-file-output-format"></a>"Fransk FEC-verifieringsfil" Elektronisk rapportering (ER) för Frankrike under formatet "Tysk verifieringsfil utdata"
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Ersätts med det nya formatet för "FEC-verifieringsfil (FR)" |
+| **Ersatt av en annan funktion?**   | Ja |
+| **Produktområden som påverkas**         | Ansökning |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell: den 1 maj 2022 planerar vi att inte längre stödja "French FEC audit file" Elektronisk rapportering (ER) för Frankrike under formatet "Tysk verifieringsfil utdata". Nytt FEC-verifieringsfilformat (FR) presenteras istället under "Dataexportmodellen". |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.17 utgåva
+
+### <a name="lcs-repository-as-a-storage-option-for-electronic-reporting-configurations"></a>LCS-databas som ett lagringsalternativ för elektroniska rapporteringskonfigurationer
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Utbytt med den nya globala databasen Regulatory Configuration Service (RCS) |
+| **Ersatt av en annan funktion?**   | Ja |
+| **Produktområden som påverkas**         | Dynamics 365 Finance, Supply Chain Management och Project Operations-produkter|
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell: Senast den 1 april 2022 planerar vi att inte längre stödja Microsoft Dynamics Lifecycle Services-databasen (LCS) som lagringsalternativ för konfigurationer av elektronisk rapportering (ER). Nya Microsoft ER-konfigurationer kommer att publiceras för hämtning exklusivt från den globala databasen. Du öppnar den globala databasen från Dynamics 365-produkterna och RCS. Mer information finns i [Importera ER-konfigurationer från RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) och [Regulatory Configuration Service – Lagringsavskrivning för Lifecycle Services-lagring](../localizations/rcs-lcs-repo-dep-faq.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.16 utgåva
 
+### <a name="vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic"></a>Elektroniska rapporteringsformat "Momsdeklaration (CZ)" och "Export av kontrollutdrag (CZ)" för Tjeckien
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Ersatta med nya format |
+| **Ersatt av en annan funktion?**   | Ja |
+| **Produktområden som påverkas**         | Ansökning |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuellt: Den 22 januari 2022 planerar vi att inte längre stödja de elektroniska rapporteringsformaten (ER) "Momsdeklaration (CZ)", "Export av kontrollutdrag (CZ)". Istället införs XML- (CZ) och Excel(CZ)-format för momsdeklaration samt Excel-format (CZ) för momskontrollutdrag inom ramarna för modellen "Skattedeklaration". |
+
 ### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>"Exportformat för redovisningstransaktioner (BE)" Elektroniskt rapporteringsformat och respektive "Export av redovisningstransaktion (BE)"-modell för Belgien
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Ersätts med ett nytt ER-format enligt modellen "Standardverifieringsfil för skatt (SAF-T)".  |
 | **Ersatt av en annan funktion?**   | Ja |
@@ -50,7 +143,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ### <a name="vat-100-report-for-the-united-kingdom-in-ssrs-format"></a>"VAT 100"-rapport för Storbritannien i SSRS-format
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Ersätts med nytt ER-format – "Momsdeklaration Excel (UK)" under "Momsdeklarationsmodell".  |
 | **Ersatt av en annan funktion?**   | Ja |
@@ -62,7 +155,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11-stöd för Dynamics 365 är inaktuellt
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Från och med december 2020 kommer Microsoft Internet Explorer 11-stöd för samtliga Dynamics 365-produkter att betraktas som inaktuellt, och Internet Explorer 11 kommer inte att stödjas efter augusti 2021.<br><br>Detta påverkar kunder som använder Dynamics 365-produkter som har utformats för användning med ett Internet Explorer 11-gränssnitt. Efter augusti 2021 stöds inte Internet Explorer 11 för sådana Dynamics 365-produkter. |
 | **Ersatt av en annan funktion?**   | Vi rekommenderar våra kunder att övergå till Microsoft Edge.|
@@ -72,21 +165,21 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10012-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.12 utgåva
 
-### <a name="polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Polsk SSRS-rapporter: utgående momsregister, ingående momsregister, sammanfattande EU-momsregister – funktionsreferens PL-00014
+### <a name="not-deprecated-polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Ej inaktuella: polska SSRS-rapporter: utgående momsregister, ingående momsregister, sammanfattande EU-momsregister – funktionsreferens PL-00014
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Krävs inte enligt lag.  |
-| **Ersatt av en annan funktion?**   | Ja (Excel-format för standardgranskningsfil med momsdeklaration - JPK_VDEK) |
+| **Ersatt av en annan funktion?**   | Ja (Excel-format för standardgranskningsfil med momsdeklaration – JPK_VDEK) |
 | **Produktområden som påverkas**         | Ansökning |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Föråldrad: den 1 juli 2021 planerar vi att inte längre stödja SSRS-rapporter: **utgående momsregister, ingående momsregister, sammanfattande EU-momsregister – funktionsreferens PL-00014**. Excel-format exempel för standard granskningsfil med momsdeklaration (JPK_VDEK) kommer att införas i stället. |
+| **Status**                         | Ej inaktuella: Per den 27 juli 2021 planerar vi att fortsätta stödja SSRS-rapporter: **utgående momsregister, ingående momsregister, sammanfattande EU-momsregister – funktionsreferens PL-00014**. Excel-formatexempel för standardverifieringsfil med momsdeklaration (JPK_VDEK) har också införts. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.11 utgåva
 
 ### <a name="norwegian-standard-main-accounts"></a>Norska standardhuvudkonton
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Omformat  |
 | **Ersatt av en annan funktion?**   | Ja (ersatt med programspecifika parametrar för ER-format) |
@@ -96,8 +189,9 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.7 utgåva
 
-### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>Dialogrutan ändra arbetsflödesförfrågan innehåller inte längre listrutan för användarval
-|   |  |
+### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>Dialogrutan ändra arbetsflödesbegäran innehåller inte längre listrutan för användarval
+
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Ändras till funktionen med kontogruppsurval.  |
 | **Ersatt av en annan funktion?**   | Ja |
@@ -107,3 +201,6 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Tidigare meddelanden om borttagna eller inaktuella funktioner
 Om du vill veta mer om funktioner som har tagits bort eller ersatts i tidigare versioner, se [borttagna eller inaktuella funktioner i tidigare versioner](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Konfigurera godkännandesteg i ett arbetsflöde
 description: I det här avsnittet beskrivs hur du konfigurerar egenskaperna för ett godkännandesteg.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09f32833d914c05a1830e2bba36ebe4c66a8a52c
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 84ff82dcb9f4ce930b4f1122790f7989c56fac35
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797106"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070787"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Konfigurera godkännandesteg i ett arbetsflöde
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 I det här avsnittet beskrivs hur du konfigurerar egenskaperna för ett godkännandesteg.
 
@@ -158,7 +159,7 @@ Gör på följande sätt när du vill ange vem som ska tilldelas godkännandeste
 
     - **Enskild godkännare** – Den åtgärd som tillämpas på dokumentet avgörs av den första personen som svarar. Till exempel har Sam skickat in en utgiftsrapport på 15 000 dollar. Utgiftsrapporten tilldelas för närvarande Sue, Jo och Bill. Om Sue är den första personen som svarar på dokumentet, är det hon som bestämmer vilken åtgärd som ska vidtas. Om Sue avvisar dokumentet, avslås det och skickas tillbaka till Sam. Om Sue godkänner dokumentet, skickas det vidare till Ann för godkännande.
 
-        ![Arbetsflöde med en godkännandeprocess](./media/workflow_multipleusersinstep.gif)
+        ![Arbetsflöde med en godkännandeprocess.](./media/workflow_multipleusersinstep.gif)
 
     - **Majoritet av godkännare** – Den åtgärd som tillämpas på dokumentet avgörs när majoriteten av godkännarna har svarat. Till exempel har Sam skickat in en utgiftsrapport på 15 000 dollar. Utgiftsrapporten tilldelas för närvarande Sue, Jo och Bill. Om Sue och Jo är de första två godkännarna som svarar, tillämpas den åtgärd de vidtar på dokumentet.
 
@@ -276,3 +277,6 @@ Om en användare inte vidtar åtgärder för ett dokument inom den tilldelade ti
 
 5. Upprepa steg 3 och 4 för varje användare som ska läggas till i eskaleringsvägen. Du kan ändra alla användarnas ordningsföljd.
 6. Om användarna i eskaleringsvägen inte svarar inom den tillåtna tidsperioden, kommer automatiska åtgärder att vidtas för dokumentet. Om du vill ange den åtgärd som systemet ska vidta, välj då raden **Åtgärd** och sedan en åtgärd i fliken **Slutåtgärd**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

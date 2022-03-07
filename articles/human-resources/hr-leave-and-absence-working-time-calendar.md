@@ -1,31 +1,33 @@
 ---
 title: Skapa en arbetstidskalender
 description: Definiera en arbetstidskalender, semestrar och ej arbetstider i Dynamics 365 Human Resources.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/01/2020
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2bedbe65f146c4159c2a809de8f683815fd4a01f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 54aa85acb43c1e9a474bea9996c72c7e7017c245
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420570"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068929"
 ---
 # <a name="create-a-working-time-calendar"></a>Skapa en arbetstidskalender
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 En arbetstidskalender i Dynamics 365 Human Resources visar de dagar och timmar som medarbetarna arbetar i din organisation. När en medarbetare skickar en ledighetsansökan behöver han inte bekymra dig om helgdagar och stängningar.
 
@@ -65,7 +67,7 @@ Du kan lägga till eller ändra helgdagar och stängningar separat från en arbe
 
 Du kan lägga till eller ändra ej arbetstider separat från en arbetstidskalender.
 
-1. På sidan **Organisationsadministration** klickar du på **ej arbetstid**.
+1. På sidan **Organisationsadministration** klickar du på **EJ ARBETSTID**.
 
 2. Välj **Ny** och ange namnet och tidsintervallet för ej arbetstid.
 
@@ -75,3 +77,6 @@ Om du har aktiverat förhandsgranskningsfunktionen för ledighet och frånvaro i
 
 - [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)
 - [Konfigurera typer av tjänstledighet och frånvaro](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

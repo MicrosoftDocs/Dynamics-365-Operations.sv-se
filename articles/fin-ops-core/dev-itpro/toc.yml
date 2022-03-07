@@ -1,25 +1,25 @@
-- name: Utveckling och administration för Ekonomi och drift‑appar
+- name: Utveckling och administration för Finance and Operations-appar
   items:
-    - name: Utveckling och administration för Ekonomi och drift‑appar
+    - name: Utveckling och administration för Finance and Operations-appar
       items:
-        - name: Dokumentation för appen Ekonomi och drift
+        - name: Finance and Operations-programdokumentation
           href: ../fin-ops/index.md
-        - name: Utveckling och administration för Ekonomi och drift-appar
+        - name: Utveckling och administration för Finance and Operations-appar
           href: index.md
         - name: Nyheter och ändringar
           items:
-            - name: Nyheter och ändringar i Ekonomi och drift-appar
+            - name: Nyheter och ändringar i Finance and Operations-appar
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Nyheter och ändringar i Platform updates
               items:
-                - name: Nyheter och ändringar på startsidan för plattformsuppdateringar
+                - name: Nyheter och ändringar på Platform updates startsida
                   href: get-started/whats-new-home-page.md
-                - name: Plattformsuppdateringar för version 10.0.25 (april 2022)
-                  href: get-started/whats-new-platform-updates-10-0-25.md
-                - name: Plattformsuppdateringar för version 10.0.24 (februari 2022)
+                - name: Platform updates för version 10.0.24 (februari 2022)
                   href: get-started/whats-new-platform-updates-10-0-24.md
-                - name: Plattformsuppdateringar för version 10.0.23 (januari 2022)
+                - name: Platform updates för version 10.0.23 (januari 2022)
                   href: get-started/whats-new-platform-updates-10-0-23.md
+                - name: Platform updates för version 10.0.22 (november 2021)
+                  href: get-started/whats-new-platform-updates-10-0-22.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -48,7 +48,7 @@
               href: dev-tools/version-models-build.md
         - name: Dataintegration
           items:
-            - name: Integrering mellan Ekonomi och drift-appar och tjänster från tredje part
+            - name: Integrering mellan appar och tjänster för Finance and Operations från tredje part
               href: data-entities/integration-overview.md
             - name: Prioritetsbaserad begränsning
               hreF: data-entities/priority-based-throttling.md
@@ -72,7 +72,7 @@
                   href: data-entities/recurring-integrations.md
                 - name: Testtjänster som använder verktyg från tredje part
                   href: data-entities/third-party-service-test.md
-            - name: Koppling till Ekonomi och drift
+            - name: Finance and Operations-koppling
               href: data-entities/fin-ops-connector.md
             - name: Utveckling för integration
               items:
@@ -96,39 +96,39 @@
                       items:
                         - name: Potentiell kund till pengar
                           href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                        - name: Synkronisera konton direkt från Sales till kunder i Ekonomi och drift
+                        - name: Synkronisera konton direkt från Sales till kunder i Finance and Operations
                           href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                        - name: Synkronisera produkter direkt från Ekonomi och drift till produkter i Sales
+                        - name: Synkronisera produkter direkt från Finance and Operations till produkter i Sales
                           href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                        - name: Synkronisera kontakter direkt från Sales till kontakter i Ekonomi och drift
+                        - name: Synkronisera kontakter direkt från Sales till kontakter eller kunder i Finance and Operations
                           href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                        - name: Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till Ekonomi och drift
+                        - name: Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till Finance and Operations
                           href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                        - name: Synkronisering av försäljningsorder direkt mellan Sales och Ekonomi och drift
+                        - name: Synkronisering av försäljningsorder direkt mellan Sales och Finance and Operations
                           href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                        - name: Synkronisera huvuden och rader i försäljningsfakturor direkt från Ekonomi och drift till Sales
+                        - name: Synkronisera huvuden och rader i försäljningsfakturor direkt från Finance and Operations till Sales
                           href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
                     - name: Konfigurera integration med Field Service
                       items:
                         - name: Konfigurera integration med Field Service – översikt
                           href: ../../supply-chain/sales-marketing/field-service.md
-                        - name: Synkronisera produkter i Ekonomi och drift till produkter i Field Service
+                        - name: Synkronisera produkter i Finance and Operations till produkter i Field Service
                           href: ../../supply-chain/sales-marketing/field-service-product.md
-                        - name: Synkronisera arbetsorder i Field Service till försäljningsorder i Ekonomi och drift
+                        - name: Synkronisera arbetsorder i Field Service till försäljningsorder i Finance and Operations
                           href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                        - name: Synkronisera avtalsfakturor i Field Service till fritextfakturor i Ekonomi och drift
+                        - name: Synkronisera avtalsfakturor i Field Service till fritextfakturor i Finance and Operations
                           href: ../../supply-chain/sales-marketing/field-service-invoice.md
-                        - name: Synkronisera lageröverföringar och justeringar från Field Service till Ekonomi och drift
+                        - name: Synkronisera lageröverföringar och justeringar från Field Service till Finance and Operations
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                        - name: Synkronisera information om lagernivåer från Ekonomi och drift till Field Service
+                        - name: Synkronisera information om lagernivåer från Finance and Operations till Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                        - name: Synkronisera produkter med lagerenhet från Ekonomi och drift till Field Service
+                        - name: Synkronisera produkter med lagerenhet från Finance and Operations till Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                        - name: Synkronisera projektlista från Ekonomi och drift till Field Service
+                        - name: Synkronisera projektlista från Finance and Operations till Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                        - name: Synkronisera lagerställen från Ekonomi och drift till Field Service
+                        - name: Synkronisera lagerställen från Finance and Operations till Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                        - name: Synkronisera arbetsorder med projekt från Field Service till Ekonomi och drift
+                        - name: Synkronisera arbetsorder med projekt från Field Service till Finance and Operations
                           href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
                     - name: Konfigurera Project Service Automation-integration
                       items:
@@ -190,7 +190,7 @@
                   href: data-entities/data-synchronize-date-and-time.md
                 - name: Importera verifikationer med hjälp av enheten Allmän journal
                   href: data-entities/tips-tricks-import-general-journal-entity.md
-                - name: Optimera datamigrering för Ekonomi och drift-appar
+                - name: Optimera datamigrering för Finance and Operations-appar
                   href: sysadmin/optimize-data-migration.md
             - name: Utveckling för datatabeller
               items:
@@ -236,7 +236,7 @@
               href: data-entities/Azure-Data-Lake-GA-version-overview.md
             - name: Installera tillägget för export till Azure Data Lake
               href: data-entities/configure-export-data-lake.md
-            - name: Ekonomi och drift-appar i Azure Data Lake
+            - name: Finance and Operations-appar i Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
             - name: Gör enhetslagring tillgängligt som en Data Lake
               href: data-entities/entity-store-data-lake.md
@@ -334,9 +334,9 @@
                   href: deployment/arm-onboarding.md
                 - name: Slutför den pågående registreringen av Azure Resource Manager för LCS-projekt för amerikanska myndigheter
                   href: deployment/arm-onbarding-us-goverment.md
-                - name: Azure ExpressRoute och Ekonomi och drift
+                - name: Azure ExpressRoute och Finance and Operations
                   href: deployment/expressroute.md
-                - name: Arkitektur för Ekonomi och drift
+                - name: Finance and Operations-arkitektur
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Tillämpa uppdateringar i molnmiljöer
                   href: deployment/apply-deployable-package-system.md
@@ -360,7 +360,7 @@
                       href: deployment/on-premises-overview.md
                     - name: Planera och förbereda för lokala distributioner
                       href: deployment/plan-onprem-deployment.md
-                    - name: Program som stöds i Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Programvara som stöds av Microsoft Dynamics 365 Finance + Operations (on-premises)
                       href: deployment/onprem-compatibility.md
                     - name: Storlekskrav för maskinvara
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
@@ -404,9 +404,9 @@
                       href: deployment/redeploy-on-prem.md
                     - name: 'Ta bort och installera om, eller lägga till en AOS-nod'
                       href: deployment/onprem-remove-reinstall-AOS-node.md
-                    - name: Återanvända samma AD FS-instans i flera miljöer
+                    - name: Återanvända samma AD FS-instans för flera miljöer
                       href: deployment/onprem-reuseadfs.md
-                    - name: Uppgradera SQL Server-instansen för Microsoft Dynamics 365 Finance + Operations (on-premises)-miljöer
+                    - name: Uppgradera SQL Server-instansen av miljöerna Microsoft Dynamics 365 Finance + Operations (on-premises)
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Lokal agent
                   items:
@@ -432,8 +432,6 @@
                   href: deployment/install-deployable-package.md
                 - name: Avinstallera ett paket
                   href: deployment/uninstall-deployable-package.md
-                - name: Köra anpassade X++-skript med noll drifttid
-                  href: deployment/run-custom-scripts.md
                 - name: Felsöka problem med paketprogram
                   href: deployment/deployable-package-troubleshooting.md
             - name: Distribuera anpassad hjälp
@@ -470,7 +468,7 @@
                   href: deployment/us-gcc-deployment.md
                 - name: Finance och Supply Chain Management som drivs av 21Vianet i Kina
                   href: deployment/china-local-deployment.md
-                - name: Ekonomi och drift-appar i Frankrike
+                - name: Finance and Operations-appar i Frankrike
                   href: deployment/france-local-deployment.md
         - name: Ta fram och anpassa
           items:
@@ -514,8 +512,6 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Skapa en anslutning till Lifecycle Services (LCS) i Azure Pipelines
                   href: dev-tools/pipeline-lcs-connection.md
-                - name: Uppdatera autentiseringsuppgifter för LCS-anslutning till MSAL i Azure Pipelines
-                  href: dev-tools/pipeline-lcs-connection-update.md
                 - name: Uppdatera värdbaserat Azure Pipeline för nya NuGet-paket
                   href: dev-tools/pipeline-nuget-split.md
                 - name: Uppdatera en äldre pipeline i Azure Pipelines
@@ -562,7 +558,7 @@
                   href: dev-tools/metadata-search-visual-studio.md
                 - name: Modeller och paket
                   href: dev-tools/models.md
-                - name: Projekttypen Ekonomi och drift
+                - name: Finance and Operations-projekttyp
                   href: dev-tools/projects.md
                 - name: Verktygstillägg för Visual Studio
                   href: dev-tools/developer-tools-add-ins.md
@@ -858,8 +854,6 @@
                   href: perf-test/continuous-build-test-automation.md
                 - name: SysTest-filtrering med hjälp av klass- och metodattribut
                   href: perf-test/systest-filtering.md
-                - name: SysTestRow-attribut för testning av flera värden
-                  href: perf-test/systest-row.md
                 - name: Bibliotek för acceptanstest
                   items:
                     - name: Resurser i biblioteket för acceptanstester
@@ -1048,9 +1042,9 @@
                       href: data-entities/dual-write/sync-limits.md
                     - name: Inställning av dubbelriktad skrivning från Lifecycle Services
                       href: data-entities/dual-write/lcs-setup.md
-                    - name: Aktivera dubbelriktad skrivning för befintliga Ekonomi och drift-appar
+                    - name: Aktivera dubbelriktad skrivning för befintliga Finance and Operations-appar
                       items:
-                        - name: Aktivera dubbelriktad skrivning för befintliga Ekonomi och drift-appar
+                        - name: Aktivera dubbelriktad skrivning för befintliga Finance and Operations-appar
                           href: data-entities/dual-write/enable-dual-write.md
                         - name: Systemkrav och förutsättningar
                           href: data-entities/dual-write/requirements-and-prerequisites.md
@@ -1058,8 +1052,6 @@
                           href: data-entities/dual-write/link-your-environment.md
                         - name: Aktivera enhetsmappning för dubbelriktad skrivning
                           href: data-entities/dual-write/enable-entity-map.md
-                    - name: Paket för separat dubbelriktad skrivning för programorkestrering
-                      href: data-entities/dual-write/separated-solutions.md
                     - name: Migrering av valutadatatyp för dubbelriktad skrivning
                       href: data-entities/dual-write/currrency-decimal-places.md
                     - name: Ställa in mappning för fälten för försäljningsorderns status
@@ -1162,15 +1154,15 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
                         - name: Felsöka problem med livesynkronisering
                           href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                        - name: Felsöka problem med dubbelriktad skrivning i Ekonomi och drift-appar
+                        - name: Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
                           href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                         - name: Felsök problem i part- och global adressboksmodell
                           href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
                         - name: Felsöka problem som rör lösningsmedvetande
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                        - name: Felsöka problem från uppgraderingar av Ekonomi och drift-appar
+                        - name: Felsöka problem från uppgraderingar av Finance and Operations-appar
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Verifiera konfiguration av dubbelriktad skrivning i Ekonomi och drift-appar och Dataverse
+                        - name: Kontrollera konfiguration för dubbelriktad skrivning i Finance and Operations-appar och Dataverse
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                         - name: Felkoder för hälsokontrollen av tabellmappning
                           href: data-entities/dual-write/table-map-health-check.md
@@ -1188,9 +1180,9 @@
                   href: power-platform/admin-reference.md
                 - name: Aktivera virtuella Dataverse-entiteter
                   href: power-platform/enable-virtual-entities.md
-                - name: Power Apps-portaler med Ekonomi och drift
+                - name: Power Apps-portaler med Finance and Operations
                   href: power-platform/power-portal-reference.md
-                - name: Vanliga frågor om Ekonomi och drift virtuella enheter
+                - name: Vanliga frågor om virtuella Finance and Operations-entiteter
                   href: power-platform/faq.md
             - name: Affärshändelser
               items:
@@ -1492,8 +1484,6 @@
               href: perf-test/rsat/rsat-best-practices.md
             - name: Dataagnostiska tester med hjälp av Regression Suite Automation Tool
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
-            - name: Kör Regression Suite Automation Tool (RSAT) med parallell körning
-              href: perf-test/rsat/rsat-parallel-execution.md
             - name: Felsökning
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Släpp lösningar med hjälp av Lifecycle Services
@@ -1532,15 +1522,15 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Support
           items:
-            - name: Få hjälp med Ekonomi och drift och Lifecycle Services
+            - name: Få support för Finance and Operations och Lifecycle Services
               href: lifecycle-services/lcs-support.md
             - name: Översikt över Dynamics 365-support
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-            - name: Få support för Ekonomi och drift som drivs av 21Vianet i Kina
+            - name: Få support för Finance and Operations som drivs av 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
-            - name: Konfigurera teknisk support för Ekonomi och drift-appar
+            - name: Ställa in teknisk support för Finance and Operations-appar
               href: lifecycle-services/support-experience.md
-            - name: Hantera upplevelser av support för Ekonomi och drift-appar
+            - name: Hantera supportupplevelser för Finance and Operations-appar
               href: lifecycle-services/cloud-powered-support-lcs.md
             - name: Produktionssupport och övervakning
               href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
@@ -1568,7 +1558,7 @@
                   href: sysadmin/role-based-security.md
                 - name: Säkerhetsarkitektur
                   href: sysadmin/security-architecture.md
-                - name: Kryptering i Ekonomi och drift-appar
+                - name: Kryptering i Finance and Operations-appar
                   href: sysadmin/encryption.md
                 - name: Ange tidsgräns för inaktiv session
                   href: sysadmin/session-idle-timeout.md
@@ -1654,11 +1644,11 @@
               href: migration-upgrade/upgrade-home-page.md
             - name: Uppgradera från AX 2012
               items:
-                - name: Uppgradera från AX 2012 till Ekonomi och drift
+                - name: Uppgradera från AX 2012 till Finance and Operations
                   href: migration-upgrade/upgrade-overview-2012.md
-                - name: AX 2012-uppgradering – Planera med verktyget Uppgraderingsanalys
+                - name: AX 2012-uppgradering – planera med verktyget Uppgraderingsanalys
                   href: migration-upgrade/upgrade-analyzer-tool.md
-                - name: AX 2012-uppgradering – Beräkna insatsen med tjänsten Koduppgradering
+                - name: AX 2012-uppgradering – beräkna insatsen med tjänsten Koduppgradering
                   href: migration-upgrade/analyze-code-upgrade.md
                 - name: AX 2012-uppgradering – Distribuera en demonstrationsmiljö för analys
                   href: migration-upgrade/analysis-sandbox.md
@@ -1666,6 +1656,8 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012-uppgradering – Checklista för föruppgradering för datauppgradering
                   href: migration-upgrade/prepare-data-upgrade.md
+                - name: Uppgradera från AX 2012 – SQL Transactional Replication
+                  href: database/replication-setup.md
                 - name: Uppgradera från AX 2012 – Datauppgradering i självbetjäningsmiljöer
                   href: migration-upgrade/data-upgrade-self-service.md
                 - name: AX 2012-uppgradering – Lokala miljöer
@@ -1698,11 +1690,11 @@
                       href: migration-upgrade/upgrade-budget-planning.md
             - name: Flytta data från AX 2009
               items:
-                - name: Migrera data från AX 2009 till Ekonomi och drift
+                - name: Flytta data från AX 2009 till Finance and Operations
                   href: migration-upgrade/data-migration-tool.md
                 - name: AX 2009-migrering – installera verktyg för datamigrering
                   href: migration-upgrade/install-dmt.md
-                - name: AX 2009-migrering – Generera kartor
+                - name: AX 2009-migrering – generera kartor
                   href: migration-upgrade/generate-maps.md
                 - name: AX 2009-migrering – skapa mallar
                   href: migration-upgrade/create-package-templates-dmt.md

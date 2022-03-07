@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 08a806514a92a99a9f0b18b36817f49a09516ab8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ecf6fe97287fcfb3c070215b563542878175789c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964855"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264294"
 ---
 # <a name="create-call-center-orders"></a> Skapa kundtjänstorder
 
@@ -61,3 +61,6 @@ Den här proceduren går igenom hur du söker efter en kund, skapar en ny order,
 
 [Ändra leveranssätt i POS](../pos-change-delivery-mode.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

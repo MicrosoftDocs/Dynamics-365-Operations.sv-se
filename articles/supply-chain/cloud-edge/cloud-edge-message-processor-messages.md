@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 68db4c6561f2cc3fcfd64b49da59a4cc164685f2
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 685c8951b7c0d8524091cf06306388736d894f58
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069439"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471654"
 ---
 # <a name="message-processor-messages"></a>Meddelandeprocessormeddelanden
 
@@ -29,7 +29,7 @@ ms.locfileid: "8069439"
 
 Meddelanden i meddelandeprocessorn används när molnbaserade enheter och kantskalningsenheter körs för [arbetsbelastningar inom tillverkning](cloud-edge-workload-manufacturing.md) samt [arbetsbelastningar inom Warehouse managements](cloud-edge-workload-warehousing.md).
 
-Utbyggnadsmiljöerna för nav och skalningsenhet utbyter en stor mängd data för att förbli synkroniserade. En del av de utbytta uppgifterna kommer att utlösa ytterligare logik i *meddelandeprocessorn*. Du kan visa meddelanden som bearbetats av meddelandeprocessorn genom att gå till **Systemadministration > Meddelandeprocessor > Meddelanden i meddelandeprocessorn**.
+En stor mängd data utbyts mellan distribueringsmiljöerna för nav och skalningsenhet i syfte att hålla dem synkroniserade, men endast ett fåtal av dessa datautbyten kommer att bearbetas av *meddelandeprocessorn*. Du kan visa meddelanden som bearbetats av meddelandeprocessorn genom att gå till **Systemadministration > Meddelandeprocessor > Meddelanden i meddelandeprocessorn**.
 
 ## <a name="message-grid-columns-and-filters"></a>Kolumner och filter i meddelanderutnät
 

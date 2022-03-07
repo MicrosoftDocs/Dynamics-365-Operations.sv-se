@@ -1,12 +1,10 @@
 ---
 title: Leverantörssamarbete med externa leverantörer
 description: I det här avsnittet förklaras hur inköpare kan samarbeta med externa leverantörer för att byta ut information om inköpsorder och försändelselager.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 594a5bc8762d4c3fdc0bfd901ab97262b0f67a53
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3b679f8daed1e09c832a5d138473cccba03552f6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016763"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576986"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverantörssamarbete med externa leverantörer
 
@@ -35,7 +33,7 @@ För mer information om vad externa leverantörer kan göra i gränssnittet för
 > [!NOTE]
 > Informationen i det här avsnittet om samarbete för leverantör gäller bara för den aktuella versionen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februari 2016) och Microsoft Dynamics AX programversion 7.0.1 (maj 2016) kan du samarbeta med leverantörer med hjälp av modulen **Leverantörsportal**. För information om modulen **Leverantörsportal**, se [Samarbeta med leverantörer genom leverantörsportalen](collaborate-vendors-vendor-portal.md).
 
-För mer information om hur leverantörer kan använda leverantörssamarbeten i faktureringsprocessen, se [Arbetsyta för leverantörssamarbetesfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). För mer information hur du reserverar nya användare av leverantörssamarbeten, se [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md).
+För mer information om hur leverantörer kan använda leverantörssamarbeten i faktureringsprocessen, se [Arbetsyta för leverantörssamarbetesfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). För mer information hur du reserverar nya användare av leverantörssamarbeten, se [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md).
 
 ## <a name="defining-the-information-that-is-shown-to-vendors-when-they-respond-to-pos"></a>Definiera information som visas för leverantörer när dessa svarar på inköpsorder
 
@@ -258,3 +256,6 @@ Den användare som ställer in parametrarna för anbudsförfråganprocessen kan 
 - %createddate%
 
 Om en ändring krävs och skickas efter att en anbudsförfrågan har skickats, skickas anbudsförfrågan på nytt till alla inbjudna leverantörer. Det publicerade dokumentet uppdateras också på sidan **Öppna publicerad anbudsförfrågningar**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

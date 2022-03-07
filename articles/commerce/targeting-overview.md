@@ -2,8 +2,8 @@
 title: Enhet, marknad och områdesbestämning
 description: Det här ämnet beskriver hur du skapar, redigerar och hanterar målgrupper och mål i Microsoft Dynamics 365 Commerce webbplatsskaparen genom att använda information om enhet, marknad och geolokalisering.
 author: sushma-rao
-ms.date: 02/03/2022
-ms.topic: overview
+ms.date: 07/30/2021
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.21
-ms.openlocfilehash: 0c8ceb5e59c801e0d3dbc3a57e54c40fa8d967ac
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 3ecc04c97b42b17f257aa40f665136c70de398748b9bda0da860c7000c062807
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090704"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730861"
 ---
 # <a name="device-market-and-geolocation-targeting"></a>Enhet, marknad och områdesbestämning
 
@@ -96,18 +96,6 @@ Om du vill redigera en målgrupp väljer du hyperlänken för den på fliken **M
 
 > [!NOTE]
 > Målgrupp är ett koncept på site-nivå i Commerce webbplatsskaparen. Du kan använda samma målgrupp för flera mål.
-
-### <a name="rename-an-audience-in-site-builder"></a>Byt namn på en målgrupp i webbplatsskaparen
-
-För att byta namn å befintlig målgrupp i Commerce webbplatsskaparen.
-
-1. I navigeringsfönstret till vänster välj er du **Målgrupper**.
-1. Välj namnet för målgruppssegment som du vill byta namn på.
-1. Välj **Redigera** för att börja redigera målgruppen.
-1. I rutan för målgruppsegenskaper väljer du pennsymbolen bredvid målgruppsnamnet.
-1. Redigera målgruppsnamnet efter behov.
-1. Markera kryssrutan om du vill bekräfta namnändringen.
-1. Välj **Slutför redigering**.
 
 ## <a name="targets"></a>Mål
 

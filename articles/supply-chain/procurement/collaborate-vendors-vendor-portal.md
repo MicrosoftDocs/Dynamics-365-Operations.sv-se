@@ -1,12 +1,10 @@
 ---
 title: Samarbeta med leverantörer med hjälp av leverantörsportalen
 description: Denna artikel beskriver hur inköpsagenter kan använda leverantörsportalen för samarbete med externa leverantörer under bekräftelseprocessen för inköpsorder. Denna information gäller endast Dynamics AX-versionerna från februari 2016 &amp; maj 2016.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4aece4fd621be803abe5011e40785f6a3301924f
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 6e691d0e2e4260e75b70e22d94486afdb779871f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019113"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568074"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeta med leverantörer genom leverantörsportalen
 
@@ -94,12 +92,14 @@ Tabellen nedan visar ett exempel på förändringar i statusen och versionen som
 |                           Du skickar den nya versionen av IO:n till leverantörsportalen.                            |                                                                                                                                                                    Den nya versionen registreras på leverantörsportalen och statusen ändras till <strong>I extern granskning</strong>.                                                                                                                                                                     |
 |                                Leverantören godkänner den nya versionen av IO:n.                                 |                                                                                                                                                     Statusen ändras till <strong>Bekräftad</strong> antingen automatiskt eller när du får svar från leverantören och sedan bekräftar IO:n.                                                                                                                                                     |
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Användarsäkerhet för leverantörportal](configure-security-vendor-portal-users.md)
 
-[Arbetsyta för leverantörssamarbetesfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
+[Arbetsyta för leverantörssamarbetesfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

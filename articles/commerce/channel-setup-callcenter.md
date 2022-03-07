@@ -2,24 +2,27 @@
 title: Ställa in en kundtjänstkanal
 description: I det här avsnittet beskrivs hur du skapar en ny kundtjänstkanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 03/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3b21d5e57058fee5bb77beb6731c18967ed11cacc1925e44d2f7d8cdb26d7bcb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744544"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4415984"
 ---
 # <a name="set-up-a-call-center-channel"></a>Ställa in en kundtjänstkanal
 
@@ -54,34 +57,34 @@ Följ stegen nedan om du vill skapa och konfigurera en ny kundtjänstkanal.
 
 Följande bild visar hur en ny kundtjänstkanal skapas.
 
-![Ny kundtjänstkanal.](media/channel-setup-callcenter-1.png)
+![Ny kundtjänstkanal](media/channel-setup-callcenter-1.png)
 
 I bilden nedan visas ett exempel på kundtjänstkanal.
 
-![Exempel på kundtjänstkanal.](media/channel-setup-callcenter-2.png)
+![Exempel på kundtjänstkanal](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>Konfiguration av ytterligare kanal
 
-Ytterligare uppgifter som krävs för inställningar av kundtjänstkanal inkluderar inställning av betalsätt och leveranssätt.
+Ytterligare uppgifter som krävs för inställningar av kundtjänstkanal inkluderar inställning av betalningsmetoder och leveranssätt.
 
-I följande bild visas konfigurationsalternativen **leveranssätt** och **betalsätt** på fliken **inställning**.
+I följande bild visas konfigurationsalternativen **leveranssätt** och **betalningsmetoder** på fliken **inställning**.
 
-![Ytterligare åtgärder för konfigurering av kundtjänstkanal.](media/channel-setup-callcenter-3.png)
+![Ytterligare åtgärder för konfigurering av kundtjänstkanal](media/channel-setup-callcenter-3.png)
 
-### <a name="set-up-payment-methods"></a>Ange betalsätt
+### <a name="set-up-payment-methods"></a>Ange betalningsmetoder
 
-Om du vill ställa in betalsätt följer du dessa steg för varje betalningstyp som stöds på den här kanalen. Användarna måste välja bland fördefinierade betalsätt för att kunna länka dem till kundtjänstkanalen. Innan du ställer in dina betalsätt för kundtjänst, ställ först in dina betalsätt i **Retail och Commerce \> Kanalinställning \> Betalsätt \> Betalsätt**.
+Om du vill ställa in betalningsmetoder följer du dessa steg för varje betalningstyp som stöds på den här kanalen. Användarna måste välja bland fördefinierade betalningsmetoder för att kunna länka dem till kundtjänstkanalen. Innan du ställer in dina betalningsmetoder för kundtjänst, ställ först in dina betalningsmetoder i **Retail och Commerce \> Kanalinställning \> Betalningsmetoder \> Betalningsmetoder**.
 
 1. I åtgärdsfönstret, välj fliken **Inställningar** och välj sedan **betalningssätt**.
 1. Klicka på **Ny** i åtgärdsfönstret.
-1. I navigeringsfönstret väljer du ett betalsätt från tillgängliga fördefinierade betalningar.
+1. I navigeringsfönstret väljer du en betalningsmetod från tillgängliga fördefinierade betalningar.
 1. Konfigurera eventuella ytterligare inställningar efter behov för betalningstypen. För kreditkort, presentkort eller förmånskort behöver du ytterligare inställningar genom att välja funktionen **kortinställningar**. 
 1. Konfigurera lämpliga bokföringskonton för betalningstypen avsnittet **bokföring**.
 1. I åtgärdsfönstret, klicka på **spara**.
 
 I bilden nedan visas ett exempel på en kontantbetalningsmetod.
 
-![Exempel på betalningsmetoder.](media/channel-setup-callcenter-payments.png)
+![Exempel på betalningsmetoder](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Ställ in leveranssätt
 
@@ -97,7 +100,7 @@ Om du vill ändra eller lägga till ett leveranssätt som ska associeras till de
 
 I bilden nedan visas ett exempel på ett leveranssätt.
 
-![Konfigurera leveranssätt.](media/channel-setup-retail-7.png)
+![Ställ in leveranssätt](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>Ställ in en kanalanvändare
 
@@ -133,6 +136,3 @@ Om du vill ställa in en prisgrupp gör du följande.
 [Ställa in och arbeta med bedrägerivarningar](set-up-fraud-alerts.md)
 
 [Ställa in kontinuitetsprogram för kundtjänster](set-up-continuity-program.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

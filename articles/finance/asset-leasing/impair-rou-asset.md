@@ -2,30 +2,32 @@
 title: Skriva ner tillgångar med nyttjanderätt
 description: I det här ämnet beskrivs de funktioner som registrerar en nedskrivning och justerar avskrivningsplanen för tillgångar i en operationell leasing enligt Accounting Standards Codification Topic 842 (ASC 842).
 author: moaamer
-ms.date: 12/03/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b104cec399a368ada64a73688c42476e6fbd9e52
-ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
+ms.openlocfilehash: 7a017cdbcbfa01d4dba383f2b6b7c742e54014e4
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/29/2021
-ms.locfileid: "7947350"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4448218"
 ---
 # <a name="impair-right-of-use-assets"></a>Skriva ner tillgångar med nyttjanderätt
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Om en ROU-tillgångs (ROU, tillgång med nyttjanderätt) redovisade värde inte kan återbetalas måste du kanske testa om tillgången har skrivits ner. Om du fastställer att till gången har skrivits ner kan Leasing av tillgångar registrera nedskrivningen och justera avskrivningsplanen i enlighet därmed. I det här ämnet beskrivs de funktioner som registrerar nedskrivningen och justerar avskrivningsplanen i en operationell leasing enligt Accounting Standards Codification Topic 842 (ASC 842). Samma metod gäller även leasingar enligt International Financial Reporting Standard 16 (IFRS 16).
 
@@ -38,18 +40,13 @@ Det återstående saldot för ROU-tillgången kommer att amorteras på ett linj�
 3. I dialogrutan som visas anger du beloppet för tillgångens nedskrivning i fältet **Nedskrivningsbelopp**. Om du vill minska ROU-tillgången anger du ett positivt värde.
 4. I fältet **Transaktionsdatum** anger du det datum då nedskrivningsposten ska bokföras.
 5. I fältet **Återstående perioder** anger du det återstående antalet månader att amortera.
-6. Ställ in alternativet **Förhandsgranska** för att visa föreslaget tillgångssaldo och finansiella posten innan den skapas eller bokförs.
-7. Ställ in alternativet **Stäng bok** till **Ja** om du vill stänga leasingboken. Du kan ångra den här åtgärden genom att använda status **Öppna leasing igen**. Poster kan inte bokföras mot stängda leasingar, och stängda leasingar kan inte justeras. 
-8. Välj **bokföra** för att skapa eller bokföra nedskrivningsposten.
-
-    > [!NOTE]
-    > När nedskrivningstransaktionen har bokförts skapas en ny bokversion.
-
-    > Om leasingavtalet är klassificerat som ett rörelseleasing kommer den månatliga avskrivningen efter nedskrivningen att beräknas med hjälp av beräknad linjär avskrivning.
-
-9. Om du vill visa avskrivningsplanen för den nedskrivna tillgången öppnar du avskrivningsplanen för tillgången för den leasingboken. Tillgången avskrivs nu på linjär basis över det antal månader som du har angett i fältet **Återstående perioder**.
-10. Om du vill visa journalposten för nedskrivningsutgift väljer du **Journal för leasing av tillgång** i åtgärdsfönstret för den nedskrivna leasingboken. Systemet skapar en post i redovisningsjournalen som debiterar bokföringskontot för nedskrivningsutgiften och krediterar bokföringskontot för leasingtillgången. 
-11. Om du vill visa det bokförda värdet för ROU-tillgången väljer du **Transaktioner för tillgångar** i leasingbokens åtgärdsfönster.
+6. Aktivera parametern **Bokför** om du vill systemet automatiskt ska bokföra utgiftsjournalposten för nedskrivning. Om du låter den här parametern vara inaktiverad skapas posten i systemet, men den bokförs inte. Därefter kan du bokföra posten från sidan **Journaler för leasing av tillgångar**.
+7. Ställ in alternativet **Förhandsgranska före bokföring** till **Ja** om du vill visa den föreslagna posten innan den skapas eller bokförs.
+8. Ställ in alternativet **Stäng bok** till **Ja** om du vill stänga leasingboken. Du kan inte ångra denna åtgärd. Poster kan inte bokföras mot stängda leasingar, och stängda leasingar kan inte justeras.
+9. Välj **OK** för att skapa eller bokföra nedskrivningsposten.
+10. Om du vill visa avskrivningsplanen för den nedskrivna tillgången öppnar du avskrivningsplanen för tillgången för den leasingboken. Tillgången avskrivs nu på linjär basis över det antal månader som du har angett i fältet **Återstående perioder**.
+11. Om du vill visa journalposten för nedskrivningsutgift väljer du **Journal för leasing av tillgång** i åtgärdsfönstret för den nedskrivna leasingboken. Systemet skapar en post i redovisningsjournalen som debiterar bokföringskontot för nedskrivningsutgiften och krediterar bokföringskontot för leasingtillgången.
+12. Om du vill visa det bokförda värdet för ROU-tillgången väljer du **Transaktioner för tillgångar** i leasingbokens åtgärdsfönster.
 
 ## <a name="example-of-rou-asset-impairment"></a>Exempel på nedskrivning av ROU-tillgång
 
@@ -98,14 +95,10 @@ I följande tabeller visas de värden som är inställda på flikarna **Allmänt
     | Transaktionsdatum       | 2022-01-01 |
     | Resterande perioder      | 84       |
     | Bokför                   | Ja      |
-    | Förhandsgranska före bokföring | Nej       |
-    | Stäng bok             | Nej       |
+    | Förhandsgranska före bokföring | Nr       |
+    | Stäng bok             | Nr       |
 
 6. En journalpost för nedskrivningsutgift har skapats och bokförts. Om du vill visa den går du till tillgångens leasingjournal i leasingboken. Observera att beloppet för nedskrivningen debiterades bokföringskontot för nedskrivningsutgift, och bokföringskontot för ROU-tillgången krediterades.
-
 7. Om du vill visa nettoeffekten av nedskrivningen går du till tabellerna skuld- och tillgångstransaktioner. Observera att nedskrivningsutgifterna har minskat ROU-tillgången, men det bokförda värdet för leasingskulden inte har ändrats.
 
 Nedskrivningen har en annan effekt som du bör tänka på. Eftersom ROU-tillgångsbeloppet nu är mycket mindre än leasingskulden, måste beloppet avskrivas på ett annat sätt än tidigare. Tillgången avskrivs nu på linjärt sätt under de återstående 84 månaderna av leasingen, med början på transaktionsdatumet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

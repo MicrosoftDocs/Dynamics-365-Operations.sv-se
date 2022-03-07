@@ -2,9 +2,11 @@
 title: Fakturaautomatisering för skannade dokument
 description: Det här avsnittet beskriver de funktioner som är tillgängliga för slutpunkt till slutpunkt-automatisering av leverantörsfakturor, även fakturor som innehåller bilagor.
 author: abruer
-ms.date: 03/24/2021
+manager: AnnBe
+ms.date: 05/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
@@ -13,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f407d42fe624206e32a2f58fe8c7fcaf2df52c729a1d945d3d801f450b6ed129
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 05a796e7ea520e7f25be9e0a1f766b08f75254bb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722777"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5239661"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Fakturaautomatisering för skannade dokument
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver de datatabeller som är tillgängliga för slutpunkt till slutpunkt-automatisering av leverantörsfakturor, även fakturor som innehåller bilagor.
+Det här avsnittet beskriver de funktioner som är tillgängliga för slutpunkt till slutpunkt-automatisering av leverantörsfakturor, även fakturor som innehåller bilagor.
 
 Organisationer som vill förenkla sina processer för leverantörsreskontra (AP) identifierar ofta behandlingen av fakturan som ett av det viktigaste behandlingsområdet att effektivisera. I många fall kan dessa organisationer avlasta behandlingen av pappersfakturor till en tredjeparts tjänstleverantör av optisk teckenläsning (OCR). De får sedan metadata för en maskinläsbar faktura tillsammans med en skannad bild av varje faktura. Som en hjälp för automatiseringen byggs sedan en ”slut”-lösning för att möjliggöra förbrukning av dessa artefakter i faktureringssystemet. Nu möjliggör nu ”slut”-automatisering via en färdig lösning för automatisering av fakturan.
 
@@ -32,9 +34,9 @@ Organisationer som vill förenkla sina processer för leverantörsreskontra (AP)
 
 Lösningen för automatiseringen av fakturor innebär ett standardgränssnitt som kan acceptera fakturametadata för fakturahuvudet och fakturaraderna och även bifogade filer som är kopplade till fakturan. Alla externa system som genererar artefakter som överensstämmer med det här gränssnittet kan skicka flödet för automatisk bearbetning av fakturor och bifogade filer.
 
-Följande bild visar ett exempelscenario på integrering där Contoso samarbetar med en OCR-tjänsteleverantör för behandling av leverantörsfakturor. Contosos leverantörer skickar fakturor till tjänsteleverantören via e-post. Via OCR-bearbetningen genererar tjänstleverantören fakturans metadata (rubrik och/eller rader) och en skannad bild av fakturan. Ett integreringsskikt omvandlar sedan dessa artefakter så att de kan förbrukas.
+Följande bild visar ett exempelscenario på integrering där Contoso samarbetar med en OCR-tjänstleverantör för behandling av leverantörsfakturor. Contosos leverantörer skickar fakturor till tjänstleverantören via e-post. Via OCR-bearbetningen genererar tjänstleverantören fakturans metadata (rubrik och/eller rader) och en skannad bild av fakturan. Ett integreringsskikt omvandlar sedan dessa artefakter så att de kan förbrukas.
 
-![Exempel på integreringsscenario.](media/vendor_invoice_automation_01.png)
+![Exempel på integreringsscenario](media/vendor_invoice_automation_01.png)
 
 Det finns flera varianter av föregående scenario som är möjliga om fakturintegrering krävs. Migrering av data är ett annat användningsfall där detta gränssnitt kan användas för att skapa fakturor och bilagor.
 
@@ -88,11 +90,11 @@ Fakturor som importeras med datapaket kan associeras med den juridiska person de
 
 I fall där leverantörsfakturor når Finance and Operations via integrering måste det finnas ett enkelt sätt för ansvariga för leverantörsreskontra att behandla undantag och felaktiga fakturor, samt att skapa väntande fakturor med utgångspunkt från felaktiga fakturor. Behandlingen av detta undantag för leverantörsfakturor ingår nu i Finance and Operations.
 
-### <a name="vendor-invoices-that-failed-to-import-list-page"></a>Leverantörsfakturor som inte kunde importera listsidan
+### <a name="exceptions-list-page"></a>Sida med lista över undantag
 
-Den nya sidan med lista över undantag finns på **Leverantörsreskontra** > **Fakturor** > **Importfel** > **Leverantörsfakturor som inte importerades**. Den här sidan visar alla rubrikposter för leverantörsfakturan från mellanlagringsregistret för leverantörsfakturans rubrikdatapost. Observera att du kan visa samma poster från arbetsytan **Datahantering**. Du kan också utföra samma åtgärder som tillhandahålls i undantagshanteringsfunktionen från arbetsytan **Datahantering**. Funktionen för undantagshantering har optimerats för en funktionell användare, vilket gör det enklare att använda.
+Den nya sidan med lista över undantag finns på **Leverantörsreskontra** > **Fakturor** > **Importfel** > **Leverantörsfakturor som inte importerades**. Den här sidan visar alla rubrikposter för leverantörsfakturan från mellanlagringsregistret för leverantörsfakturans rubrikdatapost. Observera att du kan visa samma poster från arbetsytan **Datahantering**, där du även kan utföra samma åtgärder som ingår i funktionen för hantering av undantag. Användargränssnittet för funktionen för hantering av undantag är dock optimerad för en funktionell användare.
 
-![Sida med lista över undantag.](media/vendor_invoice_automation_02.png)
+![Sida med lista över undantag](media/vendor_invoice_automation_02.png)
 
 Den här sidan innehåller följande fält som kommer in via flödet:
 
@@ -116,17 +118,24 @@ Den här sidan innehåller följande fält som kommer in via flödet:
 Den här listsidan har även ett förhandsgranskningsfönster som kan användas på följande sätt:
 
 + Visa hela felmeddelandet så att du inte behöver utöka kolumnen **Felmeddelande** i rutnätet.
++ Visa hela listan över bifogade filer för fakturan, om bilagor medföljde fakturan.
 
 Listsidan stöder följande åtgärder:
 
 + **Redigera** – öppna undantagsposten i redigeringsläge, så att du kan lösa problemen.
 + **Alternativ** – åtkomst till standardalternativ som är tillgängliga på listsidor. Du kan använda alternativet **Lägg till arbetsyta** för att fästa listsidan med undantag på din arbetsyta som en lista eller panel.
 
-### <a name="vendor-invoices-that-failed-to-import-details-page"></a>Leverantörsfakturor som inte kunde importera informationssidan
+### <a name="exception-details-page"></a>Informationssida för undantag
 
-När du startar redigeringsläget öppnas sidan **Leverantörsfakturor som inte kunde importera detaljer** för fakturan som har problem öppnas. Om det finns problem med en faktura som har en koppling visas inte bilagan. Bilagan måste kopplas på samma sätt till fakturan.
+När du startar redigeringsläget visas informationssidan för undantag för fakturan med fel. Om det inte finns bilagor visas fakturan och standardbilagan sida vid sida på informationssidan för undantag.
 
-På sidan **Leverantörsfakturor som inte kunde importera detaljer** kan du skapa en väntande faktura. När du har åtgärdat problemen på en faktura som en del av behandlingen av ett undantag väljer du knappen **Skapa väntande faktura** för att skapa väntande faktura. Den väntande fakturan skapas i bakgrunden. 
+![Informationssida för undantag](media/vendor_invoice_automation_03.png)
+
+I föregående illustration fanns det inga rader för leverantörsfakturarubrik som kom in. Radavsnittet är därför tomt.
+
+Informationssidan för undantag stöder följande åtgärd:
+
++ **Skapa väntande faktura** – när du har åtgärdat felen på fakturan som en del av behandlingen av ett undantag kan du klicka på den här knappen om du vill skapa en väntande faktura. Väntande fakturor skapas i bakgrunden (som en asynkron åtgärd).
 
 ### <a name="shared-service-vs-organization-based-exception-processing"></a>Delad tjänst i förhållande till organisationsbaserad hantering av undantag
 
@@ -136,7 +145,7 @@ Sidan med en lista över undantag stöder standardsäkerhetskonstruktioner som a
 + Efter användare
 + Efter juridisk person
 
-![Importjobb som skyddas av användarroll och juridisk person.](media/vendor_invoice_automation_04.png)
+![Importjobb som skyddas av användarroll och juridisk person](media/vendor_invoice_automation_04.png)
 
 Om skydd konfigureras för importen av fakturan, godkänner sidan med listan över undantag dessa inställningar. Användarna kommer enbart att kunna visa de undantagsposter för fakturan som den här inställningen tillåter.
 
@@ -178,7 +187,7 @@ Endast ett dokument kan anges som standardbilaga. När du har angett ett dokumen
 
 Med hjälp av en ny knapp på förfrågningssidan **Bearbetning av undantag**, **Väntande faktura** och **Fakturajournal** kan du visa eller dölja visningsprogrammet för bilagor.
 
-## <a name="security"></a>Säkerhet
+### <a name="security"></a>Säkerhet
 
 Följande åtgärder i visningsprogrammet för bilagor styrs via rollbaserad säkerhet:
 
@@ -203,7 +212,7 @@ Följande roller ger skrivskyddad åtkomst eller läs/skriv-åtkomst till visnin
 + **Ansvarig för leverantörsreskontra** och **Chef för leverantörsreskontra** – underhålla leverantörsfakturor har tilldelats dessa roller.
 + **Ansvarig för leverantörsreskontra**, **Chef för leverantörsreskontra**, **Ansvarig för centraliserade leverantörsreskontrabetalningar** och **Ansvarig för leverantörsreskontrabetalningar** – uppgiften Fråga om status på leverantörsfaktura har tilldelats dessa roller.
 
-### <a name="vendor-invoice-attachment"></a>Leverantörsfakturabilagor
+### <a name="invoice-exception-details-page"></a>Informationssida för fakturaundantag
 
 Följande behörigheter tillåter skrivskyddad åtkomst eller läs/skriv-åtkomst till visningsprogrammet för bilagor för att markera, blockera och anteckna åtgärder.
 

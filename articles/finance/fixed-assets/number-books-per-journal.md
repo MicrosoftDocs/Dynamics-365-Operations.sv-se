@@ -2,28 +2,25 @@
 title: Antal böcker per journal
 description: I det här ämnet beskrivs relationen mellan journaler och tillgångsböcker när du skapar anskaffnings- eller avskrivningsförslag för anläggningstillgångar via ett batchjobb. Du kan definiera det maximala antalet böcker som inkluderas för varje anskaffning och för avskrivning.
 author: moaamer
-manager: Ann Beebe
-ms.date: 11/19/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d4ba98cefdc0b555eedfaa56b6a3ca4870b5de93
-ms.sourcegitcommit: 65f9e2584c0530b1a71655aae09101691726b47f
+ms.openlocfilehash: d8c6a3aab9063e1f2143c10f9e442001660dc121bfee0b3b2c9e17ade5f762e2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4650684"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767042"
 ---
 # <a name="number-of-books-per-journal"></a>Antal böcker per journal
 
@@ -44,6 +41,11 @@ Du kan använda batchbearbetning för att köra avskrivning för samma uppsättn
 
 I batchbearbetningsjobbet exkluderas stängda böcker. Till exempel, i ett batchjobb för avskrivning, är 10 av de första 2 000 böckerna stängda. I så fall kommer den första journalen innehålla böcker som är kopplade till anläggningstillgångar som är numrerade 1 till 2 011. Den andra journalen kommer då att innehålla böcker som är kopplade till anläggningstillgångar som är numrerade 2 012 till 4 000.
 
+> [!NOTE]
+> Om du har anläggningstillgångs-ID med olika avgränsare (till exempel – eller /) och du skapar transaktioner för anläggningstillgångar i batchjobb, måste du köra ett separat batchjobb för varje typ av avgränsare. Systemet kan inte bearbeta olika avgränsare inom samma batchjobb.
+
 Gränsen för antalet böcker tillämpas om det inte finns dubbletter av tillgångs-ID i samma journal. Om tillgångs-ID:t är samma som bok-ID:t, kan antalet böcker per journal överskridas för att behålla tillgångs-ID:t i samma journal.
 
-Det finns till exempel 5 001 anläggningstillgångs-ID:n, tre böcker associeras med varje anläggningstillgångs-ID och varje tillgångsbok bokförs på samma bokföringsskikt. Du kör avskrivningen under tre på varandra följande månader, utan summering. Avskrivningsjournalen kommer att skapas via ett batchjobb, och i systemet skapas sju journaler med 667 anläggningstillgångs-ID:n och tre böcker för varje anläggningstillgångs-ID. Resultatet blir 2 001 böcker. Därför kommer det att finnas 6 003 journalrader om tre månader för att behålla samma tillgångs-ID:n i samma journal. Systemet kommer också att skapa en journal med 332 anläggningstillgångs-ID:n och tre böcker för varje anläggningstillgångs-ID. Om tre månader kommer det att finnas 2 988 rader.
+Det finns till exempel 5 001 anläggningstillgångs-ID:n, tre böcker associeras med varje anläggningstillgångs-ID och varje tillgångsbok bokförs på samma bokföringsskikt. Du kör avskrivningen under tre på varandra följande månader, utan summering.  Avskrivningsjournalen kommer att skapas via ett batchjobb, och i systemet skapas sju journaler med 667 anläggningstillgångs-ID:n och tre böcker för varje anläggningstillgångs-ID. Resultatet blir 2 001 böcker. Därför kommer det att finnas 6 003 journalrader om tre månader för att behålla samma tillgångs-ID:n i samma journal. Systemet kommer också att skapa en journal med 332 anläggningstillgångs-ID:n och tre böcker för varje anläggningstillgångs-ID. Om tre månader kommer det att finnas 2 988 rader.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

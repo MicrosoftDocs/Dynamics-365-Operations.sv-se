@@ -2,11 +2,9 @@
 title: Åtgärder i godkännandeprocesser i ett arbetsflöde
 description: Det här avsnittet innehåller en beskrivning av åtgärder som alla deltagare i en arbetsflödesgodkännandeprocess kan utföra.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e622f9a0a50cd6c5dbcbaf9cd5d56b691232c849
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: f5750ac5814525351e6688b0aa49eee3811f7785775a91f3394c1a481de8adf2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797612"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749374"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>Åtgärder i godkännandeprocesser i ett arbetsflöde
 
@@ -31,7 +29,7 @@ Det här avsnittet innehåller en beskrivning av åtgärder som alla deltagare i
 
 Ett arbetsflöde kan omfatta flera grupper med personer: upphovsmannen, de som tilldelats uppgifter, beslutsfattare och godkännare. I följande arbetsflöde för utgiftsrapporter är Sam upphovsmannen, medlemmarna i kön har tilldelats uppgifter, John är beslutsfattare och Frank, Sue och Ann är godkännare.
 
-[![Arbetsflöde\_MedManuelltBeslut](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
+[![Arbetsflöde\_MedManuelltBeslut.](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
 
 Följande avsnitt förklarar de arbetsflödesåtgärder som respektive grupp kan utföra.
 
@@ -141,3 +139,6 @@ När en godkännare begär en ändring av ett dokument, skickas det tillbaka til
 Till exempel har Sam skickat en utgiftsrapport på 12 000 USD och detta dokument har tilldelats till Sue. Om Sue begär ändringar skickas utgiftsrapporten tillbaka till Sam.
 
 Sam kan skicka utgiftsrapporten på nytt. Han kan göra nödvändiga ändringar först eller skicka om den ursprungliga versionen av utgiftsrapporten. Om Sam skickar om utgiftsrapporten skickas den till Frank för godkännande eftersom Frank är den första godkännaren i godkännandeprocessen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

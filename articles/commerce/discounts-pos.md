@@ -2,13 +2,16 @@
 title: Visa rabatter i kassan
 description: I det här avsnittet beskrivs hur Microsoft Dynamics 365 Commerce hjälper säljarna att lära sig mer om erbjudanden och hur de kan användas för korsförsäljning och merförsäljning.
 author: ShalabhjainMSFT
+manager: AnnBe
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,14 +19,14 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 9e3fa5030cb684c01153d255ca2bd34d9be7dc9945f0c7ec26985cf74540b73d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731677"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415836"
 ---
-# <a name="show-discounts-in-pos"></a>Visa rabatter i POS
+# <a name="show-discounts-in-pos"></a>Visa rabatter i kassan
 
 [!include [banner](includes/banner.md)]
 
@@ -31,9 +34,9 @@ Erbjudanden spelar en viktig roll när det gäller att motivera kunder som fatta
 
 ## <a name="learn-about-store-discounts"></a>Lär dig mer om butiksrabatter
 
-Commerce inkluderar en operation med namnet "Visa alla rabatter". Den här åtgärden visar alla rabatter som för närvarande körs i en butik. Åtgärden "Visa alla rabatter" kan mappas till en knapp i POS, och den knappen kan läggas till på **Välkomstsidan** eller på **transaktionssidan**. Följande illustration visar ett exempel på listsidan **alla rabatter** som är öppna.
+Commerce inkluderar en operation med namnet "Visa alla rabatter". Den här åtgärden visar alla rabatter som för närvarande körs i en butik. Åtgärden "Visa alla rabatter" kan mappas till en knapp i kassan (POS), och den knappen kan läggas till på **Välkomstsidan** eller på **transaktionssidan**. Följande illustration visar ett exempel på listsidan **alla rabatter** som är öppna.
 
-![Sidan Alla rabatter.](./media/View_all_discounts.png "Sidan alla rabatter")
+![Sidan alla rabatter](./media/View_all_discounts.png "Sidan alla rabatter")
 
 Om du vill visa rabatter letar systemet efter alla rabatter som matchar ett eller flera av följande villkor:
 
@@ -61,11 +64,8 @@ Följande illustrationer visar logiken som avgör vilka rabatter som ska visas i
 
 Följande bild visar den logik som används när concurrency-läge för rabatt är inställd på **bästa pris och sammansatt inom prioritet, aldrig sammansatt över prioritet**.
 
-![Logik för bästa pris och sammansättning inom prioritet, aldrig sammansättning över prioritet.](./media/Model_1.png "Logik för bästa pris och förening inom prioritet, aldrig sammansatt över prioritet").
+![Logik för bästa pris och förening inom prioritet, aldrig sammansatt över prioritet](./media/Model_1.png "Logik för bästa pris och förening inom prioritet, aldrig sammansatt över prioritet").
 
 Följande bild visar den logik som används när concurrency-läge för rabatt är inställd på **bästa pris endast inom prioritet, alltid sammansatt över prioritet**.
 
-![Logik för bästa pris endast inom prioritet, alltid sammansatt över prioritet.](./media/Model_2.png "Logik för bästa pris endast inom prioritet, alltid sammansatt över prioritet").
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+![Logik för bästa pris endast inom prioritet, alltid sammansatt över prioritet](./media/Model_2.png "Logik för bästa pris endast inom prioritet, alltid sammansatt över prioritet").

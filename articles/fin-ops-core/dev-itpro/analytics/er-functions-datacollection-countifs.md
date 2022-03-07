@@ -2,11 +2,9 @@
 title: COUNTIFS ER-funktionen
 description: Det här avsnittet innehåller information om hur funktionen COUNTIFS elektronisk rapportering (ER) används.
 author: NickSelin
-manager: kfend
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 554750b2dae5ec1f0fcf6fdbdf439b4dbe4fa615
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 667002aa01537f846c616d38bba436da18f6e05f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681144"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755286"
 ---
 # <a name="countifs-er-function"></a>COUNTIFS ER-funktionen
 
@@ -77,3 +75,6 @@ För mer information om att använda den här funktionen, se uppgiftsguiden [ER 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Datainsamlingsfunktioner](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

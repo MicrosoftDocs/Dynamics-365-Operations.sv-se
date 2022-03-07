@@ -2,11 +2,9 @@
 title: Konfigurera manuella uppgifter i ett arbetsflöde
 description: I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för en manuell uppgift.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f61e0f7ee16519767192fb379f20c1ed20b69caa
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 9b114448db4f70ec1ef3fcae539030238659f37393e6d5ae126666348343ad47
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798815"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712495"
 ---
 # <a name="configure-manual-tasks-in-a-workflow"></a>Konfigurera manuella uppgifter i ett arbetsflöde
 
@@ -381,3 +379,6 @@ När den manuella uppgiften tilldelas en användare, måste användaren vidta å
 5. Markera kryssrutan **Delegera** om du vill att användaren ska kunna tilldela uppgiften till en annan användare.
 6. Markera kryssrutan **Överlåt** om du vill att användaren ska kunna överlåta uppgiften till en annan användare i arbetsuppgiftskön.
 7. Markera kryssrutan **Frisläpp** om du vill att användaren ska kunna överlåta uppgiften till arbetsuppgiftskön. En annan användare kan sedan slutföra uppgiften.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

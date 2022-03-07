@@ -1,31 +1,33 @@
 ---
 title: Massanställningsprojekt
-description: Massanställningsprojekt låter personalresursspecialister skapa flera befattningar och anställa ett antal arbetare till dessa befattningar på ett effektivt sätt.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+description: Detta ämne beskriver massanställningsprojekt som låter personalresursspecialister skapa flera befattningar och anställa ett antal medarbetare till dessa befattningar på ett effektivt sätt.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMMassHireProject, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.custom: 7481
 ms.assetid: 5f5eb271-76eb-4305-bd1c-5d171dafccc9
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f33fb96e9a2331499a594689a758694c2291368
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fcfc973dc9acea624336f059d68562fa5eb41353
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420608"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070224"
 ---
 # <a name="mass-hire-projects"></a>Massanställningsprojekt
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -44,19 +46,19 @@ Använd massanställningsprojekt när du anställer flera medarbetare på en gå
 
 På sommaren anställer du ofta 15-20 högskolestudenter på deltid för att fylla tillgängliga praktikplatser i ditt företag. I år vill du anställa fem revisorer, fem orderprocessorer och fem kassörer. I stället för att skapa varje befattningpost och arbetarposten separat, skapar du ett massanställningsprojektet som kallas ”SummerInterns”. Projektstart- och slutdatum korrelerar med start- och slutdatumen för befattningsvaraktighet för befattningarna som du skapar för massanställningsprojektet.
 
-Välj sidan **Massanställningsprojekt** och välj projektet "SummerInterns” och klicka sedan på sidan **Öppna projekt**. I den öppna massanställningsprojektet klickar du på **Skapa befattningar** och anger information om revisorbefattningen. Du kan ange att fem revisorbefattningar ska skapas med samma information för varje, och klicka sedan på OK. Upprepa den här processen för orderprocessor- och kassörbefattningarna.
+På sidan **Massanställningsprojekt** väljer du projektet **SummerInterns** och sedan **Öppna projekt**. I det öppna massanställningsprojektet klickar du på **Skapa befattningar** och anger sedan information om revisorbefattningen. Du kan ange att fem revisorbefattningar ska skapas och att samma information ska användas för dessa. Välj sedan **OK**. Upprepa den här processen för orderprocessor- och kassörbefattningarna.
 
-När du har valt studenter att anställa till praktikbefattningarna, ska du ange varje students information i **Befattningsinformation** för befattningen som du anställer dem för. När du har angett alla befattningdetaljer väljer du befattning på sidan Massanställningsprojekt och klickar sedan på **Anställ**. En befattningspost skapas för varje befattning och en arbetarpost skapas och tilldelas korrekt befattning för varje person som du anställer.
+När du har valt studenter att anställa till praktikbefattningarna ska du ange respektive students personliga information i befattningsinformationen för den befattning som du anställer dem för. När du har angett alla befattningsuppgifter väljer du befattningen på sidan **Massanställningsprojekt** och sedan på **Anställ**. En befattningspost skapas för respektive befattning, och en medarbetarpost skapas och tilldelas till korrekt befattning för respektive person som du anställer.
 
 ## <a name="mass-hire-project-statuses"></a>Status för massanställningsprojekt
 
 Ett massanställningsprojekt kan ha nedanstående statusvärden.
 
-- Skapad
-- Öppen
-- Stängt
+- Har skapats
+- Öppet
+- Stängd
 
-Klicka på sidan **Massanställningsprojekt**, klicka på **Öppna projekt** eller **Stäng projekt** för att ändra status för ett massanställningsprojekt. Vad du kan göra med ett projekt enligt dess status beskrivs i följande tabell.
+Klicka på sidan **Massanställningsprojekt** väljer du **Öppna projekt** eller **Stäng projekt** för att ändra status för ett massanställningsprojekt. Vad du kan göra med ett projekt enligt dess status beskrivs i följande tabell.
 
 <table>
 <thead>
@@ -76,9 +78,12 @@ Klicka på sidan **Massanställningsprojekt**, klicka på **Öppna projekt** ell
 </tr>
 <tr>
 <td>Stängt</td>
-<td>Du kan inte lägga till befattningar till projektet. Om du vill lägga till befattningar till massanställningsprojektet öppnar du projektet igen. Det här är status för slutförda projekt.
-<blockquote>[!NOTE] För att du ska kunna stänga ett massanställningsprojekt måste alla befattningar ha status Skapad eller Stängd.</blockquote>
+<td><p>Du kan inte lägga till befattningar till projektet. Om du vill lägga till befattningar till massanställningsprojektet öppnar du projektet igen. Det här är status för slutförda projekt.</p>
+<p><strong>Obs!</strong> För att du ska kunna stänga ett massanställningsprojekt måste alla befattningar i projektet ha antingen statusen <b>Skapad</b> eller <b>Stängd</b>.</p>
 </td>
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Skapa en plan för tjänstledighet och frånvaro
 description: Skapa frånvaroplaner i Dynamics 365 Human Resources för olika typer av tjänstledighet.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f90e49c6191134a99b306fdc9de6b46c07844dea
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420641"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463416"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Skapa en plan för tjänstledighet och frånvaro
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Definiera tjänstledighet och frånvaroplaner i Dynamics 365 Human Resources för varje typ av tjänstledighet du erbjuder. Tjänstledighets- och frånvaroplaner kan periodiseras i olika frekvenser, t.ex. per år, månad eller halvmånad. Planer kan även definieras som ett anslag, där en enda ackumulering sker på ett visst datum. Du kan till exempel skapa en plan som ger flytande helgdagar varje år.
 
@@ -111,25 +113,25 @@ De nya entiteterna är:
    
     1. Välj ett alternativ i listrutan **periodiseringstyp**:
 
-      - **Månaders tjänst** - basera periodiseringsschemat på tjänstemånader.
+      - **Månaders tjänst** – basera periodiseringsschemat på tjänstemånader.
 
-      - **Antal arbetade timmar** - basera periodiseringsschemat på arbetade timmar. Mer information om periodiseringar för arbetade timmar finns i [periodiserad ledighet baserat på arbetade timmar](hr-leave-and-absence-plans.md?accrue-time-off-based-on-hours-worked).
+      - **Antal arbetade timmar** – basera periodiseringsschemat på arbetade timmar. Mer information om periodiseringar för arbetade timmar finns i [periodiserad ledighet baserat på arbetade timmar](hr-leave-and-absence-plans.md?accrue-time-off-based-on-hours-worked).
 
       Mer information om periodiseringssaldon finns i [periodiserad ledighet baserat på arbetade timmar](hr-leave-and-absence-plans.md?enrollments-and-balances).
 
     2. Ange värden i registret för periodiseringsscheman:
 
-      - **Månaders tjänst** - det minsta antalet månader som medarbetare måste arbeta om du vill ha rätt till periodiseringar. Om du inte behöver ett minimum ställer du in värdet på 0.
+      - **Månaders tjänst** – det minsta antalet månader som medarbetare måste arbeta om du vill ha rätt till periodiseringar. Om du inte behöver ett minimum ställer du in värdet på 0.
 
-      - **Arbetade timmar** - det minsta antalet timmar som medarbetare måste arbeta per periodiseringsperiod för att ha rätt till periodiseringar. Om du inte behöver ett minimum ställer du in värdet på 0.
+      - **Arbetade timmar** – det minsta antalet timmar som medarbetare måste arbeta per periodiseringsperiod för att ha rätt till periodiseringar. Om du inte behöver ett minimum ställer du in värdet på 0.
 
-      - **Periodiseringsbelopp** - antalet timmar eller dagar som medarbetare periodiserar per period. Perioden baseras på periodiseringsfrekvensen.
+      - **Periodiseringsbelopp** – antalet timmar eller dagar som medarbetare periodiserar per period. Perioden baseras på periodiseringsfrekvensen.
 
-      - **Minsta saldo** - Ett negativt värde kan användas för minsta saldot om anställda kan begära mer ledighet än vad de har tillgängligt.
+      - **Minsta saldo** – Ett negativt värde kan användas för minsta saldot om anställda kan begära mer ledighet än vad de har tillgängligt.
 
-      - **Maximal överföring** - Periodiseringsprocessen kommer att justera ledighetssaldon som överstiger det maximalt överförda saldot på startdatumet.
+      - **Maximal överföring** – Periodiseringsprocessen kommer att justera ledighetssaldon som överstiger det maximalt överförda saldot på startdatumet.
 
-      - **Beviljad mängd** - Det initiala antalet timmar eller dagar som medarbetaren har beviljats när de först registrerar sig i ledighetsplanen. Mängden periodiseras inte för varje periodiseringsperiod.
+      - **Beviljad mängd** – Det initiala antalet timmar eller dagar som medarbetaren har beviljats när de först registrerar sig i ledighetsplanen. Mängden periodiseras inte för varje periodiseringsperiod.
       
 Om funktionen **Konfigurera flera tjänstledighetstyper för en enskild tjänstledighets- och frånvaroplan** är aktiverad, väljer du ett alternativ från typen **tjänstledighetstyp**. 
 
@@ -229,7 +231,7 @@ Periodiseringar ska behandlas 1 januari 2019 (1/1/2019), så att hela den period
 |----------------|-----------------|-----------------------|----------------|----------------------------------|
 | 200            | 0               | 120                   | 40             | 160                              |
 
-Aktuellt saldo (160) = periodiserad mängd (200) - begärd mängd (40)
+Aktuellt saldo (160) = periodiserad mängd (200) – begärd mängd (40)
 
 #### <a name="semimonthly-plan"></a>Halvmånadsvis plan
 
@@ -247,7 +249,7 @@ Periodiseringar ska behandlas 1 maj 2018 (5/1/2018), så att hela den perioden i
 |----------------|-----------------|-----------------------|----------------|----------------------------------|
 | 5              | 0               | 120                   | 8              | 22                               |
 
-Aktuellt saldo (22) = periodiserad mängd (5x6) - begärd mängd (8)
+Aktuellt saldo (22) = periodiserad mängd (5x6) – begärd mängd (8)
 
 #### <a name="monthly-plan"></a>Månadsvis plan
 
@@ -265,7 +267,7 @@ Periodiseringar ska behandlas 1 maj 2018 (5/1/2018), så att hela den perioden i
 |----------------|-----------------|-----------------------|----------------|----------------------------------|
 | 5              | 0               | 120                   | 8              | 7                                |
 
-Aktuellt saldo (7) = periodiserad mängd (5x3) - begärd mängd (8)
+Aktuellt saldo (7) = periodiserad mängd (5x3) – begärd mängd (8)
 
 ### <a name="forecasted-balance"></a>Prognostiserat saldo
 
@@ -383,3 +385,6 @@ Prognostiserat saldo (30) = periodiserad mängd (10x1) + aktuellt saldo (40) –
 - [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)
 - [Konfigurera typer av tjänstledighet och frånvaro](hr-leave-and-absence-types.md)
 - [Periodisera planer för tjänstledighet och frånvaro](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

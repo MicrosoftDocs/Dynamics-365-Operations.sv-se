@@ -1,24 +1,26 @@
 ---
 title: Skapa dimensionsbaserade konfigurationer
 description: I den här proceduren visas hur du definierar en konfiguration för en dimensionsbaserad produkt.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, EcoResDimensionBasedConfiguration, ConfigChooseFromRoute, ConfigChooseFromGroup, ConfigChoiceApprove
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d244170d9cbde00e3fe94b291348e9b0e6040813
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 74ac3b2202a6a8c99d0a4ddce60b305f7d2a48f6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565625"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011282"
 ---
 # <a name="create-dimension-based-configurations"></a>Skapa dimensionsbaserade konfigurationer
 
@@ -26,30 +28,27 @@ ms.locfileid: "7565625"
 
 I den här proceduren visas hur du definierar en konfiguration för en dimensionsbaserad produkt. Detta är den sista proceduren is serien som förklarar hur du ställer upp kombinationer för dimensionsbaserad konfiguration. Utförandet för den här proceduren är beroende av data som skapas i föregående sju inspelningarna. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 
-## <a name="find-the-dimension-based-product-master"></a>Hitta den dimensionsbaserade produktmallen
 
-1. Gå till **Produktinformationshantering \> Produkter \> Frisläppta produkter**.
-1. Markera vald rad i listan.
+## <a name="find-the-dimension-based-product-master"></a>Hitta den dimensionsbaserade produktmallen
+1. Klicka på Underhåll av frisläppt produkt.
+2. Klicka på Frisläppta produkter.
+3. Markera vald rad i listan.
     * Markera den dimensionsbaserade produktmallen som du skapade i den första inspelningen i denna sekvens av 8 inspelningar.  
 
 ## <a name="create-configurations"></a>Skapa konfigurationer
-
-1. I åtgärdsfönstret **Konstruktion** väljer du **Bibehåll konfigurationer**.
-1. Välj **Konfigurera**.
-1. Markera vald rad i listan.
-1. I fältet **artikelnummer** anger du eller väljer ett värde.
+1. I åtgärdsfönstret Teknik, klicka på Underhåll konfigurationer.
+2. Klicka på Konfigurera.
+3. Markera vald rad i listan.
+4. Ange eller välj ett värde i fältet Artikelnummer.
     * Välj någon av artiklarna i den första konfigurationsgruppen.  
-1. Hitta och markera önskad post i listan.
-1. I fältet **artikelnummer** anger du eller väljer ett värde.
+5. Hitta och markera önskad post i listan.
+6. Ange eller välj ett värde i fältet Artikelnummer.
     * Välj en artikel från den andra konfigurationsgruppen.  
-1. Välj **OK**.
-1. Markera vald rad i listan.
-1. Ange ett värde i fältet **Konfiguration**.
+7. Klicka på OK.
+8. Markera vald rad i listan.
+9. Ange ett värde i fältet Konfigurera.
     * Ange ett konfigurationsnamn som ska göra det enklare att identifiera konfigurationen.  
-1. I fältet **Beskrivning** anger du ett värde.
+10. Ange ett värde i fältet Beskrivning.
     * Ange en beskrivning av konfigurationen för att förklara vad den ska innehålla.  
-1. Välj **OK**.
+11. Klicka på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

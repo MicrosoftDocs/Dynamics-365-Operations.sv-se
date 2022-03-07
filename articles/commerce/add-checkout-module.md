@@ -2,9 +2,11 @@
 title: Kassamodul
 description: I det här avsnittet beskrivs hur du lägger till en kassamodul på en sida och ställer in de obligatoriska egenskaperna.
 author: anupamar-ms
+manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 031c70181e0dff9bc81450d2454f21e1dbaf1285d41b38ff6f7df6045923c27c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cb32b014ac35e33db28d3dee03b01dfa43f5d6a5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715516"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980516"
 ---
 # <a name="checkout-module"></a>Kassamodul
 
@@ -27,13 +29,15 @@ ms.locfileid: "6715516"
 
 I det här avsnittet beskrivs hur du lägger till en kassamodul på en sida och ställer in de obligatoriska egenskaperna.
 
+## <a name="overview"></a>Översikt
+
 En kassamodul är en särskild behållare som är värd för alla moduler som krävs för att skapa en order. Det visar ett steg-för-steg-flöde som en kund använder för att registrera all relevant information för att göra inköp. Den fångar in leveransadress, leveransmetod och faktureringsinformation. Den innehåller också en ordersammanfattning och annan information som är relaterad till en kundorder.
 
 En kassamodul återger data baserat på kundvagn-ID. Detta kundvagn-ID sparas som en webbläsarcookie. Ett kundvagn-ID krävs för att återge information i kassamodulen, till exempel artiklarna i ordern, totalbeloppet och rabatter. 
 
 Följande bild visar ett exempel på en Fabrikam kassamodul på en kassasida.
 
-![Exempel på en kassamodul.](./media/Checkout.PNG)
+![Exempel på en kassamodul](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Egenskaper för kassamodul
 
@@ -52,13 +56,13 @@ En betalningsmodul visar en ordersammanfattning och innehåller funktioner för 
 
     Följande bild visar ett exempel på en leveransadressmodul på en kassasida.
 
-    ![Exempel på en leveransadressmodul.](./media/ecommerce-shippingaddress.PNG)
+    ![Exempel på en leveransadressmodul](./media/ecommerce-shippingaddress.PNG)
 
 - **Leveransalternativ** – i den här modulen kan en kund välja ett leveranssätt för en order. Mer information om den här modulen finns i [Modul för leveransalternativ](delivery-options-module.md).
 
     Följande bild visar ett exempel på en leveransalternativmodul på en kassasida.
  
-    ![Exempel på en leveransalternativmodul.](./media/ecommerce-deliveryoptions.PNG)
+    ![Exempel på en leveransalternativmodul](./media/ecommerce-deliveryoptions.PNG)
 
 - **Behållare för kassaavsnitt** – den här modulen är en behållare som du kan placera flera moduler i för att skapa ett avsnitt i kassaflödet. Du kan till exempel placera alla betalningsrelaterade moduler i behållaren så att de visas som ett avsnitt. Den här modulen påverkar endast flödets layout.
 
@@ -70,7 +74,7 @@ En betalningsmodul visar en ordersammanfattning och innehåller funktioner för 
 
     Följande bild visar ett exempel på moduler för presentkort, förmånspoäng och betalningsmoduler på en kassasida.
 
-    ![Exempel på moduler för presentkort, förmånspoäng och betalningsmoduler på en kassasida.](./media/ecommerce-payments.PNG)
+    ![Exempel på moduler för presentkort, förmånspoäng och betalningsmoduler på en kassasida](./media/ecommerce-payments.PNG)
 
 - **Kontaktinformation** – i den här modulen kan en kund lägga till eller ändra kontaktinformation (e-postadress) för en order.
 
@@ -80,7 +84,7 @@ En betalningsmodul visar en ordersammanfattning och innehåller funktioner för 
 
     Följande bild visar ett exempel på villkor på en kassasida.
 
-    ![Exempel på villkor på en kassasida.](./media/ecommerce-checkout-terms.PNG)
+    ![Exempel på villkor på en kassasida](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interaktion för skalningsenhet för handel
 
@@ -122,6 +126,3 @@ Om du vill lägga till en kassamodul på en ny sida och ställa in de obligatori
 [Orderinformationsmodul](order-confirmation-module.md)
 
 [Presentkortsmodul](add-giftcard.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

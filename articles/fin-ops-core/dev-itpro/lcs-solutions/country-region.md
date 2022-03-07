@@ -1,27 +1,26 @@
 ---
 title: Globaliseringsresurser
 description: Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika funktioner och erbjudanden.
-author: ShylaThompson
+author: kfend
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 02/19/2021
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: sericks
 ms.custom: 104173
 ms.search.region: Global
-ms.author: sericks
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ee422b2bdc8b94c2a465d0e48f5da983a410674
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 26411c24751f698a6789bbbd687aca8f378f7d65
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685063"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560928"
 ---
 # <a name="globalization-resources"></a>Globaliseringsresurser
 
@@ -55,7 +54,6 @@ Följande resurser innehåller information om planerade och nya lokaliseringsfun
 
 #### <a name="regulatory-updates"></a>Regeluppdateringar
 -   [Regeluppdateringar](../../../finance/localizations/regulatory-updates.md)
--   [Lokaliseringsportal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (uppdateras en gång i veckan)
 -   [Problemsökning i Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (uppdateras dagligen)
 
 #### <a name="communication-and-alerts"></a>Kommunikation och notifieringar
@@ -133,3 +131,6 @@ Mer information finns i [hjälpsystemet](../../fin-ops/get-started/help-overview
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

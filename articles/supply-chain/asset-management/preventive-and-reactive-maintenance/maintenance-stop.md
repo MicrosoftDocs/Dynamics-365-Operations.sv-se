@@ -1,12 +1,10 @@
 ---
 title: Aktiviteter för underhållsstopp
 description: Detta ämne förklarar hur underhållsstopp används för att få en översikt över den kapacitet som krävs för att utföra underhållsjobb på specifika tillgångar under en angiven period.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject, EntAssetObjectProductionStop, EntAssetProductionStopType, EntAssetMaintenanceStop
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 986b2ae4cf7f7819caaf35e009fd4735f35e6928
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: b2162621968c5b1c3957ea1a1639e71439000918
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017973"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837835"
 ---
 # <a name="maintenance-downtime-activities"></a>Aktiviteter för underhållsstopp
 
@@ -96,3 +94,6 @@ Bilden nedan visar ett exempel på detaljvyn **Aktiviteter för underhållsstopp
 - Du kan kopiera resurser från en aktivitet för underhållsstopp till en annan. I **Alla aktiviteter för underhållsstopp** väljer du knappen **Kopiera aktiviteter för underhållsstopp** och gör dina urval i fälten **Från aktiviteter för underhållsstopp** och **Till aktiviteter för underhållsstopp** och klickar på **OK**.
 - I **Alla aktiviteter för underhållsstopp** klickar du på knappen **Underhållsschemarader** eller knappen **Aktiva arbetsorder** för att öppna relaterade listor och visa raderna som är relaterade till den valda aktiviteten för underhållsstopp.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

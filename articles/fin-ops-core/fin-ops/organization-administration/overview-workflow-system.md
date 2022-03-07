@@ -2,26 +2,26 @@
 title: Arbetsflödessystem – översikt
 description: Det här ämnet beskriver arbetsflödessystemet.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom: 56381
+ms.custom:
+- "56381"
+- intro-internal
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 660e01618eea66bc611dd51818694d36993ba9ea
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: dc73f1bde3407c144dc1cd48283385c19713430e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797006"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349094"
 ---
 # <a name="workflow-system-overview"></a>Arbetsflödessystem – översikt
 
@@ -41,7 +41,7 @@ Arbetsflöde är ett system som körs på programobjektservern (AOS). Arbetsflö
 
 Ett arbetsflöde representerar en affärsprocess. Det definierar hur ett dokument flyttas genom systemet genom att visa vem som måste genomföra en uppgift, fatta ett beslut eller godkänna ett dokument. Till exempel visar följande bild ett arbetsflöde för utgiftsrapporter.
 
-![Arbetsflöde med element som tilldelas till användare](./media/workflow_user.gif)
+![Arbetsflöde med element som tilldelas till användare.](./media/workflow_user.gif)
 
 För att du ska få en bättre förståelse för det här arbetsflödet, anta att Sam skickar in en utgiftsrapport på 7 000 USD. I det här scenariot måste Ivan granska kvittona som Sam har skickat till honom. Sedan måste Frank och Sue godkänna utgiftsrapporten. Anta nu att Sam skickar en utgiftsrapport på 110 000 kronor. I det här scenariot måste Ivan granska kvittona och Frank, Sue och Ann måste godkänna utgiftsrapporten.
 
@@ -71,3 +71,6 @@ Det finns flera fördelar med att använda arbetsflödessystemet i organisatione
 + [Konfigurera parallella grenar i ett arbetsflöde](configure-parallel-branch-workflow.md)
 + [Konfigurera arbetsflöden för radartiklar](configure-line-item-workflow.md)
 + [Vanliga frågor om arbetsflöde](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

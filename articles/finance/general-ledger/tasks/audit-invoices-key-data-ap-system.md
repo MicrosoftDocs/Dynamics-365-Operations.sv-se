@@ -1,24 +1,26 @@
 ---
 title: Granska fakturor och nyckeldata i leverantörsreskontra
 description: Det här avsnittet visar hur du granskar fakturor och nyckeldata på leverantörskonton.
-author: kweekley
+author: saraschi2
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: kweekley
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f49f8c87f628d68f2c7f355b93cdf5e0a9403251
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: e173d2efe0d5acb1be60c9ba315c21563c2bf105
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883729"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994775"
 ---
 # <a name="audit-invoices-and-key-data-in-accounts-payable"></a>Granska fakturor och nyckeldata i leverantörsreskontra
 
@@ -59,6 +61,3 @@ I den här proceduren används demonstrationsföretaget USMF. Leverantörsreskon
 9. Klicka på **Granska** i åtgärdsrutan.
 10. Klicka på **Matcha detaljer**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

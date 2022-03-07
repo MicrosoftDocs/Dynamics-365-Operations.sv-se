@@ -1,52 +1,152 @@
 ---
-title: Konfigurera resursparametrar för Personal
-description: Inställningarna för vissa Personalparametrar delas av alla företag, medan inställningarna för andra parametrar är företagsspecifika. Den här artikeln innehåller information om hur du ställer in företagsspecifika HR-parametrar.
+title: Konfigurera Personal-parametrar
+description: Det här ämnet innehåller information om hur du ställer in företagsspecifika parametrar i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bac50c5f302797e28df2bc792893c8a682899a93
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cd66cb4f5ac02407250e15ae134b36f5ccd4d290
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420533"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889942"
 ---
-# <a name="configure-human-resources-parameters"></a>Konfigurera resursparametrar för Personal
+# <a name="configure-human-resources-parameters"></a>Konfigurera Personal-parametrar
 
-Inställningarna för vissa HR-parametrar delas av alla företag, medan inställningarna för andra parametrar är företagsspecifika. Den här artikeln innehåller information om hur du ställer in företagsspecifika HR-parametrar.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Två sidor används för att ställa mänskliga resurser (HR) parametrar. För parametrar som delas mellan företag, kan du använda de **mänskliga resurserna delas parametrar sidan** . För parametrar som är företagsspecifika (med andra ord inställningar tillämpas på ett enda företag) kan du använda den **mänskliga resursen parametrar sidan** . På **mänskliga resurser parametrar sidan** , inställningarna är uppdelade i sex flikar:
+Inställningarna för vissa Personalparametrar delas av alla företag, medan inställningarna för andra parametrar är företagsspecifika. Det här ämnet innehåller information om hur du ställer in personalparametrar.
 
--   Allmänt
--   Rekrytering - detta ingår inte i Dynamics 365 Human Resources
--   Kompensation
--   Nummersekvenser
--   Familj och medicinska lämnar Act (fmla)
--   Anställd self-service
+Två sidor används för att ställa in personalparametrar. För parametrar som delas mellan företag, kan du använda de **mänskliga resurserna delas parametrar sidan** . För parametrar som är företagsspecifika (med andra ord inställningar tillämpas på ett enda företag) kan du använda den **mänskliga resursen parametrar sidan** .
 
-Varje flik innehåller information som hänför sig till ett enda bolag. Inställningar på **fliken Allmänt** definierar utseendet av information om frånvaro, skador och sjukdomar, och nyanställningar. Inställningarna på den här fliken definierar också några poster som visas såsom dig arbete. Denna flik låter dig att utvälja en färg för att öppna frånvaro, ange den formatmall som används för rapporter, möjliggör integrationen mellan kurser och frånvaroregistrering och välj frånvarolöneart som används för att styra denna integration. Du kan också ange hur länge skador och sjukdomar vid incidenter ska hållas, och ange id-nummer som visas när en ny arbetstagare anställs. 
+![Gå till personalparametrar](./media/hr-employee-self-service-human-resources-parameters.png)
 
-Inställningar på **fliken rekrytering** definierar dokumenttyper som används för korrespondens som automatiskt skickas till sökande och rekrytering projekt som används för oönskade ansökningar (ansökningar som inte är för en viss rekrytering projekt). Den period som definieras för rekrytering projektet åldrande avgör rekrytering projekt som ingår i den **åldrande projekt** panel i **rekryteringen av** arbetsytan. Den period som definieras för deadline varning används för att visa rekrytering projekt som närmar sig deras sista ansökningsdag på **sista ansökningsdag närmar sig** panelen i **rekryteringen** arbetsyta. 
+På **mänskliga resurser parametrar sidan** , inställningarna är uppdelade i sex flikar:
 
-Inställningarna på fliken **Kompensation** anger om användare måste bekräfta att de vill spara information för en fast eller variabel kompensationsplan. Om du markerar kryssrutan **Aktivera spara validering** kommer användarna när de stänger en relaterad kompensationsplanssida att få ett meddelande som frågar om de vill spara posten. Vissa sidor i kompensationshantering låter inte användare ta bort information. Därför, genom att meddela användarna att bekräfta att de vill spara information, du kan begränsa den mängd information som sparas men inte tas bort senare. Om **Aktivera spara validering** är avmarkerad, poster sparas alltid omedelbart, möjligen innan användaren är redo. Om du använder performance management, **fliken ersättningar** kan du också välja ett betyg modell att använda i stället för den modell som är tilldelade till ersättningsplaner när prestanda är klassad. 
+- **Allmänt**
+- **Rekrytering** (denna flik ingår inte i Dynamics 365 Human Resources)
+- **Kompensation**
+- **Nummerserier**
+- **FMLA**
+- **Självbetjäning för medarbetare**
+- **Självbetjäning för chef**
+- **Hantering av förmåner**
+- **Tjänstledighet och frånvaro**
+- **Betalningsmetoder**
 
-### <a name="previously-released-functionality"></a>Tidigare utgivna funktioner
+Varje flik innehåller information som hänför sig till ett enda bolag.
 
-Inställningarna på **fliken sekvensen** avgör de sekvenser som används för att automatiskt tilldela ID-nummer för objekt i mänskliga resurser, såsom applikationer, ingen registrering, ersättning process resultat, fallnummer, kurser och kurs dagordningar. För att bibehålla nummersekvensreferenser och koder, använd listsidan **Nummersekvenser** (klicka på **Organisationsadministration** &gt; **Nummersekvenser** &gt; **Nummersekvenser**).
+## <a name="general"></a>Allmänt
+
+Inställningar på **fliken Allmänt** definierar utseendet av information om frånvaro, skador och sjukdomar, och nyanställningar. Inställningarna på den här fliken definierar också några poster som visas såsom dig arbete. På den här fliken kan du:
+
+- Välj en färg som ska användas för öppna frånvarotransaktioner
+- Ange formatmallen som ska användas för rapporter
+- Aktivera integration mellan utbildningskurser och frånvaroregistrering
+- Välj den frånvarokod som används för att kontrollera den här integrationen.
+- Ange hur länge du ska behålla incidenter för skada och sjukdom.
+- Ange standard-ID som ska visas när en ny medarbetare anställs.
+
+![Fliken Allmänt](./media/hr-setup-parameters-general.png)
+
+## <a name="recruitment"></a>Rekrytering
+
+Inställningarna på fliken **Rekrytering** definierar de dokumenttyper som används för korrespondens automatiskt till sökande. Du kan även ange vilket rekryteringsprojekt som används för oombedda ansökningar.
+
+Den period som definieras för rekrytering projektet åldrande avgör rekrytering projekt som ingår i den **åldrande projekt** panel i **rekryteringen av** arbetsytan. Den period som definieras för deadline varning används för att visa rekrytering projekt som närmar sig deras sista ansökningsdag på **sista ansökningsdag närmar sig** panelen i **rekryteringen** arbetsyta.
+
+Mer information om rekrytering finns i [Rekrytera jobbsökande](hr-personnel-recruit.md).
+
+## <a name="compensation"></a>Kompensation
+
+I Dynamics 365 Finance anger inställningarna på fliken **Kompensation** om användare måste bekräfta att de vill spara information för en fast eller variabel kompensationsplan. Om du markerar **Aktivera spara validering** kommer användarna när de stänger en relaterad kompensationsplanssida att få ett meddelande som frågar om de vill spara posten. Vissa sidor i kompensationshantering låter inte användare ta bort information. Genom att meddela användarna att bekräfta att de vill spara information, du kan begränsa den mängd information som sparas men inte tas bort senare. Om du rensar **Aktivera spara validering** sparas poster alltid omedelbart, möjligen innan användaren är redo. Om du använder performance management, **fliken ersättningar** kan du också välja ett betyg modell att använda i stället för den modell som är tilldelade till ersättningsplaner när prestanda är klassad.
+
+I Personal kan du använda fliken **Kompensation** om du vill välja att begränsa åtkomsten till kompensationsplaner och att ange en standardvaluta.
+
+Mer information om att kompensationsplaner finns i [Översikt över kompensationsplaner](hr-compensation-overview.md).
+
+![Fliken Kompensation](./media/hr-setup-parameters-compensation.png)
+
+## <a name="number-sequences"></a>Nummerserier
+
+Inställningarna på fliken **Nummerserie** bestämmer vilka sekvenser som används för att automatiskt tilldela ID till artiklar i Personal, till exempel:
+
+- Ansökningar
+- Frånvaroregistreringar
+- Resultat för kompensationsprocessen
+- Ärendenummer
+- Kurser
+- Kursagendor
+
+För att bibehålla nummersekvensreferenser och koder, använd listsidan **Nummersekvenser** (klicka på **Organisationsadministration > Nummersekvenser > Nummersekvenser**).
+
+Mer information finns i [Nummerserier (översikt)](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 > [!NOTE]
-> Det antal timmar som arbetas inte överstiga 1250 och längden på anställningen får inte överskrida 12 månader. Dessa största värden i enlighet med federal lag i USA. Slutligen inställningarna på den **anställde självbetjäning** fliken bestämmer vilken information som en chef kan ange på uppdrag av hans eller hennes anställda.
+> Det antal timmar som arbetas inte överstiga 1250 och längden på anställningen får inte överskrida 12 månader. Dessa största värden i enlighet med federal lag i USA.
+
+![Fliken Nummerserie](./media/hr-setup-parameters-number-sequences.png)
+
+## <a name="fmla"></a>FMLA
+
+På fliken FMLA ställer du in kraven på FMLA-berättigande och FMLA-berättigandetimmar. Mer information finns i [Konfigurera parametrar för tjänstledighet och frånvaro](hr-leave-and-absence-parameters.md).
+
+![Fliken FMLA](./media/hr-setup-parameters-fmla.png)
+
+## <a name="employee-self-service"></a>Självbetjäning för medarbetare
+
+Inställningarna på fliken **Självbetjäning för medarbetare** påverkar hur medarbetarnas självbetjäning visas. På den här fliken kan du:
+
+- Ange ett namn för arbetsytan Självbetjäning för medarbetare
+- Välja vilken information en chef kan ange för medarbetare
+- Lägga till användbara länkar för medarbetare
+- Hindra medarbetare från att lägga till eller redigera affärskontaktinformation. Mer information finns i [Begränsa redigering av personlig information](hr-employee-self-service-restrict-editing.md).
+
+Mer information om hur du ställer in självbetjäning för medarbetare finns [översikt över självbetjäning för medarbetare och chef](hr-employee-manager-self-service-overview.md).
+
+![Fliken Självbetjäning för medarbetare](./media/hr-setup-parameters-employee-self-service.png)
+
+## <a name="manager-self-service"></a>Självbetjäning för chef
+
+Inställningarna på fliken **Självbetjäning för chef** påverkar vad chefer ser i Självbetjäning för chef. På den här fliken kan du konfigurera följande alternativ:
+
+- Intervallet för utgående poster
+- Informationschefer kan visa i utgångsposter
+- Information om huruvida chefer kan visa öppna befattningar för utökade rapporter
+- Vyer av medarbetare
+- Användbara länkar för chefer
+
+Mer information om hur du ställer in självbetjäning för chefer finns [översikt över självbetjäning för medarbetare och chef](hr-employee-manager-self-service-overview.md).
+
+![Fliken Självbetjäning för chef](./media/hr-setup-parameters-manager-self-service.png)
+
+## <a name="benefits-management"></a>Hantering av förmåner
+
+På fliken Förmånshantering kan du konfigurera e-postalternativ för förmånshantering. Mer information om hur du konfigurerar och använder en förmånshantering finns i [Översikt över förmånshantering](hr-benefits-management-overview.md).
+
+![Fliken Hantering av förmåner](./media/hr-setup-parameters-benefits-management.png)
+
+## <a name="leave-and-absence"></a>Tjänstledighet och frånvaro
+
+Läs mer om ställa in och använda ledighet och frånvaro i [Översikt av tjänstledighet och frånvaro](hr-leave-and-absence-overview.md).
+
+## <a name="payment-methods"></a>Betalningsmetoder
+
+På fliken **Betalningsmetoder** kan du välja de betalningsmetoder som stöds av din organisation. Mer information om att konfigurera kompensationsplaner finns i [Översikt över kompensationsplaner](hr-compensation-overview.md).
+
+![Fliken Betalningsmetoder](./media/hr-setup-parameters-payment-methods.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

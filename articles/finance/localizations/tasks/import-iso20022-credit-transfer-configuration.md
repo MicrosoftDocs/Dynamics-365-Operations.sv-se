@@ -2,9 +2,11 @@
 title: Importera konfiguration av ISO20022-kreditöverföring
 description: Denna procedur visar hur du importerar en elektronisk rapporteringkonfiguration för leverantörsbetalning.
 author: mrolecki
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ffc86ba9dade0ae494ca4ace8d9f562da9c9527a4731493d892b60112293af3f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38e3c5b3b85eb9ad17270cf7002046896d305548
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781146"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988274"
 ---
 # <a name="import-iso20022-credit-transfer-configuration"></a>Importera konfiguration av ISO20022-kreditöverföring
 
@@ -42,6 +44,3 @@ Detta är den första av fem uppgifter som tillsammans illustrerar leverantörbe
     * Om importknappen inte är tillgänglig innebär det att konfigureringen redan har importerats.  
 9. Klicka på Ja.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

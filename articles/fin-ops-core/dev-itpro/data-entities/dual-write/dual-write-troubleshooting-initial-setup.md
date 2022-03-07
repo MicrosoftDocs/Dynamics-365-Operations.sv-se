@@ -1,12 +1,10 @@
 ---
 title: Felsöka problem under första installationen
-description: Det här avsnittet innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem som kan uppstå under den första installationen av integrering av dubbelriktad skrivning mellan Finance and Operations-appar och Dataverse.
+description: Ämnet innehåller information som kan hjälpa dig att åtgärda problem som kan uppstå under den första installationen av integrering av dubbelriktad skrivning.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 5ac6ec5003794fb5875fed6a2c4403c1444ab8b2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9ffb1378eccf175fbb9bd84228f91ba606125a63
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685597"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754000"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Felsöka problem under första installationen
 
@@ -71,13 +69,13 @@ Följ dessa steg för att ge appen samtycke.
 
 ## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>Kontrollera att företagsdata och team med dubbelriktad skrivning är korrekt konfigurerade när du länkar
 
-För att säkerställa att dubbelriktad skrivning fungerar korrekt skapas de företag som du väljer under konfigurationen i Dataverse-miljön. Som standard är dessa företag skrivskyddade och egenskapen **IsDualWriteEnable** är inställd på **Sant**. Dessutom skapas standardägaren och teamet för den ägande affärsenheten och teamet och inkluderar företagsnamnet. Innan du aktiverar kartorna kontrollerar du att standardteamets ägare har angetts. För att hitta entiteten **företag (CDM\_företag)** följer du stegen nedan.
+För att säkerställa att dubbelriktad skrivning fungerar korrekt skapas de företag som du väljer under konfigurationen i Dataverse-miljön. Som standard är dessa företag skrivskyddade och egenskapen **IsDualWriteEnable** är inställd på **Sant**. Dessutom skapas standardägaren och teamet för den ägande affärsenheten och teamet och inkluderar företagsnamnet. Innan du aktiverar kartorna kontrollerar du att standardteamets ägare har angetts. För att hitta tabellen **företag (CDM\_företag)** följer du stegen nedan.
 
 1. I den modellstyrda appen i Dynamics 365 väljer du filtret i det övre högra hörnet.
 2. Välj **Företag** i listrutan.
 3. Välj **Kör** om du vill visa resultatet.
 4. Välj det företag som länkades när du konfigurerade dubbelskrivning.
-5. Kontrollera att fältet **standardägargrupp** har ett värde. I bilden nedan är fältet **standardägargrupp** anges till **USMF dubbelriktad skrivning**.
+5. Kontrollera att kolumnen **standardägargrupp** har ett värde. I bilden nedan är kolumnen **standardägargrupp** anges till **USMF dubbelriktad skrivning**.
 
     ![Verifiera standardägargruppen](media/default_owning_team.png)
 
@@ -88,3 +86,6 @@ Följande felmeddelande kan visas när du försöker att aktivera kartor:
 *Del i dubbelriktad skrivning - registrering av plugin-program misslyckades: \[(Det gick inte att skaffa karta över partitioner för projekt-DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea. Felet överskrider högsta antal tillåtna partitioner för mappning av DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\], ett eller flera fel uppstod.*
 
 Den aktuella gränsen när du länkar miljöer är ungefär 40 juridiska tabeller. Det här felet uppstår om du försöker aktivera mappningar och mer än 40 juridiska tabeller är länkade mellan miljöer.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

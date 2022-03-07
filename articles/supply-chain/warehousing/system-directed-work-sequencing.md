@@ -2,11 +2,9 @@
 title: Systemstyrd arbetssekvensering
 description: I det här avsnittet finns information om hur du dirigerar arbetssekvensering. Med den här funktionen kan du sortera och filtrera arbetsorder som systemet visar för användare för körning. Det är praktiskt i scenarier där det krävs fler kriterier för att köra plockningsprocessen för lager.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 3811486a31d079cac7f7c27ea6323f16de4478d5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970216"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577826"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemstyrd arbetssekvensering
 
@@ -304,3 +302,6 @@ Systemstyrda frågor för arbetsserier *inkluderar*. Det är viktigt att du minn
 I exemplet från det här scenariot har arbets-ID *4* också fångats in av frågan. När den skapades lades två rader till: en för 25 ea och en annan för 10 ea. Arbetet uppvisades fortfarande för användaren, eftersom minst en arbetsrad har en kvantitet som är mindre än 20 ea.
 
 Beroende på scenariot kan du förhindra detta genom att använda arbetsavbrott.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

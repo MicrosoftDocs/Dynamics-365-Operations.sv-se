@@ -2,16 +2,13 @@
 title: Huvudplanering med efterfrågeprognoser
 description: I det här avsnittet beskrivs hur du inkluderar efterfrågeprognoser vid huvudplanering med planeringsoptimering.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8b47aee41494394a32ffc0ea0c42a512e5051532
-ms.sourcegitcommit: b86576e1114e4125eba8c144d40c068025f670fc
+ms.openlocfilehash: cbac68b79b2a10f05e0e442d4f0aa716e5a04634
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4666732"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867257"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Huvudplanering med efterfrågeprognoser
 
@@ -89,9 +86,9 @@ När du inkluderar en prognos i en huvudplan kan du välja hur prognosbehoven re
 
 Om du vill ta med en prognos i en huvudplan och välja den metod som används för att minska prognosbehoven, gå till **huvudplanering \> inställningar \> planer \> huvudplaner**. I fältet **prognosmodell** väljer du en prognosmodell. I fältet **Metod som används för att minska prognosbehov** väljer du en metod. Följande alternativ är tillgängliga:
 
-- None
+- Ingen
 - Procent - reduceringsnyckel
-- Transaktioner – reduceringsnyckel (ännu ej stöd för planeringsoptimering)
+- Transaktioner - reduceringsnyckel
 - Transaktions - dynamisk period
 
 Följande avsnitt innehåller mer information om varje alternativ.
@@ -140,32 +137,85 @@ I det här fallet om du kör prognosplanering den 1 januari förbrukas kraven p�
 
 #### <a name="transactions--reduction-key"></a>Transaktioner - reduceringsnyckel
 
-Om du väljer **Transaktioner - reduceringsnyckel** prognosbehoven reduceras av de transaktioner som genomförs under de perioder som definieras av reduceringsnyckeln.
+Om du ställer in fältet **Metod som används för att minska prognosbehov** till *Transaktioner - reduceringsnyckel* reduceras prognosbehoven med de kvalificerade efterfrågetransaktioner som inträffar under de perioder som definieras av reduceringsnyckeln.
+
+Det kvalificerade behovet definieras i fältet **Minska prognos med** på sidan **Disponeringsgrupper**. Om du ställer in fältet **Minska prognos med** till *Order* beaktas endast försäljningsordertransaktioner som kvalificerade efterfrågan. Om du ställer in det till *Alla transaktioner* beaktas alla icke-koncerninterna lagertransaktioner som kvalificerade efterfrågan. Om koncerninterna order ska inkluderas när prognosen minskas ställer du in alternativet **Inkludera koncerninterna order** till *Ja*.
+
+Prognosreducering startar med den första (tidigaste) efterfrågeprognosposten i perioden för reduceringsnyckeln. Om kvantiteten för kvalificerade lagertransaktioner är större än kvantiteten på efterfrågeprognosraderna i samma reduceringsnyckelperiod, används saldot för lagertransaktionskvantiteten för att minska efterfrågeprognoskvantiteten under den föregående perioden (om det finns en oförbrukad prognos).
+
+Om ingen oförbrukad prognos finns kvar i den föregående perioden för reduceringsnyckeln används saldot för lagertransaktionerna för att minska prognoskvantiteten under nästa månad (om det finns en oförbrukad prognos).
+
+Värdet i fältet **Procent** på reduceringsnyckelns rader används inte när fältet **Metod som används för att minska prognosbehov** är inställt *Transaktioner - reduceringsnyckel*. Endast datumen används för att definiera perioden för reduceringsnyckeln.
+
+> [!NOTE]
+> Prognoser som bokförs på eller före dagens datum ignoreras och används inte för att skapa planerade order. Om till exempel din efterfrågeprognos för månaden genereras den 1 januari och du kör huvudplanering som inkluderar efterfrågeprognoser den 2 januari ignorerar beräkningen efterfrågeprognosraden som är daterad den 1 januari.
 
 ##### <a name="example-transactions--reduction-key"></a>Exempel: Transaktioner - reduceringsnyckel
 
 Detta exempel visar hur aktuella order som inträffar under de perioder som definieras av reduceringsnyckeln reducerar behoven av efterfrågeprognos.
 
-I det här exemplet väljer du **Transaktionsplaner - reduceringsnyckel** i fältet **Metod som används för att minska prognosbehov** på sidan **Huvudplaner**.
+[![Faktiska order och prognoser innan huvudplaneringen körs.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
 
-Följande försäljningsorder finns den 1 januari.
+I det här exemplet väljer du *Transaktionsplaner - reduceringsnyckel* i fältet **Metod som används för att minska prognosbehov** på sidan **Huvudplaner**.
 
-| Månad    | Beställt antal enheter |
-|----------|--------------------------|
-| Januari  | 956                      |
-| Februari | 1 176                    |
-| Mars    | 451                      |
-| april    | 119                      |
+Följande rader för efterfrågeprognoser finns den 1 april.
 
-Med samma försäljningsprognos på 1 000 enheter per månad som användes i det föregående exemplet överförs följande behovskvantiteter till huvudplanen:
+| Datum     | Prognostiserat antal enheter |
+|----------|-----------------------------|
+| 5 april  | 100                         |
+| 12 april | 100                         |
+| 19 april | 100                         |
+| 26 april | 100                         |
+| 3 maj    | 100                         |
+| 10 maj   | 100                         |
+| 17 maj   | 100                         |
 
-| Månad                | Obligatoriskt antal enheter |
-|----------------------|---------------------------|
-| Januari              | 44                        |
-| Februari             | 0                         |
-| Mars                | 549                       |
-| april                | 881                       |
-| Maj - december | 1 000                     |
+Följande försäljningsorderrader finns i april.
+
+| Datum     | Begärt antal enheter |
+|----------|----------------------------|
+| 27 april | 240                        |
+
+[![Planerad leverans genererad baserat på aprilorder.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
+
+Följande behovskvantiteter överförs till huvudplanen när huvudplaneringen körs den 1 april. Som du ser har prognostransaktionerna i april minskats med efterfrågekvantiteten 240 i en sekvens, med början från den första av dessa transaktioner.
+
+| Datum     | Obligatoriskt antal enheter |
+|----------|---------------------------|
+| 5 april  | 0                         |
+| 12 april | 0                         |
+| 19 april | 60                        |
+| 26 april | 100                       |
+| 27 april | 240                       |
+| 3 maj    | 100                       |
+| 10 maj   | 100                       |
+| 17 maj   | 100                       |
+
+Anta nu att nya order importerades för maj.
+
+Följande försäljningsorderrader finns i maj.
+
+| Datum   | Begärt antal enheter |
+|--------|----------------------------|
+| 4 maj  | 80                         |
+| 11 maj | 130                        |
+
+[![Planerad leverans genererad baserat på april- och majorder.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
+
+Följande behovskvantiteter överförs till huvudplanen när huvudplaneringen körs den 1 april. Som du ser har prognostransaktionerna i april minskats med efterfrågekvantiteten 240 i en sekvens, med början från den första av dessa transaktioner. Prognostransaktionerna för maj minskades med sammanlagt 210, från den första efterfrågeprognostransaktionen i maj. Summorna per period bevaras (400 i april och 300 i maj).
+
+| Datum     | Obligatoriskt antal enheter |
+|----------|---------------------------|
+| 5 april  | 0                         |
+| 12 april | 0                         |
+| 19 april | 60                        |
+| 26 april | 100                       |
+| 27 april | 240                       |
+| 3 maj    | 0                         |
+| 4 maj    | 80                        |
+| 10 maj   | 0                         |
+| 11 maj   | 130                       |
+| 17 maj   | 90                        |
 
 #### <a name="transactions--dynamic-period"></a>Transaktions - dynamisk period
 
@@ -250,7 +300,7 @@ Därför skapas följande planerade order.
 En prognosreduceringsnyckel används i metoderna **transaktioner - reduceringsnyckel** och **procent - reduceringsnyckel** för att minska prognosbehoven. Följ dessa steg om du vill skapa och ställa in en reduceringsnyckel.
 
 1. Gå till **huvudplanering \> inställningar \> täckning \> reduceringsnycklar**.
-2. Välj **ny** eller tryck på **Ctrl+N** för att skapa en reduceringsnyckel.
+2. Skapa en reduceringsnyckel genom att välja **Nytt**.
 3. I fältet **reduceringsnyckeln** anger ett unikt ID för prognosreduceringsnyckeln. Ange sedan ett namn i fältet **Namn**. 
 4. Definiera perioder och procentandel av reduktionsnyckel i varje period:
 
@@ -266,11 +316,78 @@ En prognosreduceringsnyckel måste tilldelas artikelns disponeringsgrupp. Följ 
 2. På snabbfliken **Övrigt** i fältet **reduceringsnyckel** väljer du reduceringsnyckeln som ska tilldelas disponeringsgruppen. Reduceringsnyckeln gäller för alla objekt som hör till disponeringsgruppen.
 3. Om du vill använda en reduceringsnyckel för att beräkna prognosreducering under huvudplaneringen måste du definiera inställningen av prognosplanen eller huvudplanen. Gå till en av följande platser:
 
-    - Huvudplanering \> Inställning \> Planer \> Prognosplaner
-    - Huvudplanering \> Inställningar \> Planer \> Huvudplaner
+    - **Huvudplanering \> Inställning \> Planer \> Prognosplaner**
+    - **Huvudplanering \> Inställningar \> Planer \> Huvudplaner**
 
 4. På sidan **Prognosplaner** eller **Huvudplaner** på snabbfliken **Allmänt** i fältet **Metod som används för att minska prognosbehov** väljer du antingen **Procent - reduceringsnyckel** eller **transaktioner - reduceringsnyckel**.
 
 ### <a name="reduce-a-forecast-by-transactions"></a>Minska en prognos med transaktioner
 
 När du väljer **transaktioner - reduceringsnyckel** eller **transaktioner - dynamisk period** som metod för att minska prognosbehoven kan du ange vilka transaktioner som reducerar prognosen. På sidan **Disponeringsgrupper** på transaktioner **Övrigt** i fältet **reducera prognos efter** väljer du **alla transaktioner** om alla transaktioner ska reducera prognosen eller **order** om bara försäljningsorder ska reducera prognosen.
+
+## <a name="forecast-models-and-submodels"></a>Prognosmodeller med undermodeller
+
+I det här avsnittet beskrivs hur du skapar prognosmodeller och hur du kombinerar flera prognosmodeller genom att ställa in delmodeller.
+
+En *prognosmodell* namnger och identifierar en viss prognos. När du har skapat prognosmodellen kan du lägga till prognosrader i den. Om du vill lägga till prognosrader för flera artiklar använder du sidan **Efterfrågeprognosrader**. Om du vill lägga till prognosrader för en specifik vald artikel använder du sidan **Frisläppta produkter**.
+
+En prognosmodell kan innehålla prognoser från andra prognosmodeller. För att uppnå detta resultat lägger du till andra prognosmodeller som *delmodeller* till en överordnad prognosmodell. Du måste skapa varje relevant modell innan du kan lägga till den som en delmodell till en överordnad prognosmodell.
+
+Den resulterande strukturen ger dig ett kraftfullt sätt att kontrollera prognoser, eftersom du kan kombinera (aggregera) indata från flera enskilda prognoser. Från planeringssynpunkt är det därför enkelt att kombinera prognoser för simuleringar. Du kan till exempel ställa in en simulering som baseras på kombinationen av en vanlig prognos och prognosen för ett återkommande erbjudande.
+
+### <a name="submodel-levels"></a>Delmodellnivåer
+
+Det finns ingen gräns för hur många delmodeller som kan läggas till i en överordnad prognosmodell. Strukturen kan dock bara vara en nivå djup. Med andra ord kan en prognosmodell som är en delmodell till en annan prognosmodell inte ha sina egna delmodeller. När du lägger till delmodeller till en prognosmodell kontrollerar systemet om denna prognosmodell redan är en delmodell till en annan prognosmodell.
+
+Om en delmodell med sina egna delmodeller påträffas i huvudplaneringen får du ett felmeddelande.
+
+#### <a name="submodel-levels-example"></a>Exempel på delmodellnivåer
+
+Prognosmodell A har prognosmodell B som delmodell. Därför kan prognosmodellen B inte ha sina egna delmodeller. Om du försöker lägga till en delmodell till prognosmodell B visas följande felmeddelande: "Prognosmodell B är en delmodell för modell A."
+
+### <a name="aggregating-forecasts-across-forecast-models"></a>Sammanställa prognoser för flera prognosmodeller
+
+Prognosrader som inträffar samma dag aggregeras över prognosmodellen och dess delmodeller.
+
+#### <a name="aggregation-example"></a>Aggregering, exempel
+
+Prognosmodell A har prognosmodeller B och C som delmodeller.
+
+- Prognosmodell A innehåller en efterfrågeprognos för 2 enheter (delar) den 15 juni.
+- Prognosmodell B innehåller en efterfrågeprognos för 3 enheter den 15 juni.
+- Prognosmodell C innehåller en efterfrågeprognos för 4 enheter den 15 juni.
+
+Den resulterande efterfrågeprognosen blir ett enda behov på 9 procent (2 + 3 + 4) den 15 juni.
+
+> [!NOTE]
+> Varje delmodell har egna parametrar och använder inte parameter av den överordnade prognosmodellen.
+
+### <a name="create-a-forecast-model"></a>Skapa en prognosmodell
+
+Gör så här om du vill skapa en prognosmodell.
+
+1. Gå till **Huvudplanering \> Inställningar \> Efterfrågeprognosticering \> Prognosmodeller**.
+1. Klicka på **Ny** i åtgärdsfönstret.
+1. Ställ in följande fält för den nya prognosmodellen:
+
+    - **Modell** – Ange en unik identifierare för värderingsmodellen.
+    - **Namn** – Ange ett beskrivande namn för modell.
+    - **Stoppat** – Vanligtvis ska du ställa in detta alternativ till *Nej*. Ställ in *Ja* bara om du vill förhindra redigering av alla prognosrader som tilldelas modellen.
+
+    > [!NOTE]
+    > Fältet **Inkludera i kassaflödesprognoser** och fälten på **Projekt** hör inte till huvudplaneringen. Därför kan du ignorera dem i det här sammanhanget. Du måste endast ta hänsyn till dem när du arbetar med prognoser för modulen **Projekthantering och redovisning**.
+
+### <a name="assign-submodels-to-a-forecast-model"></a>Tilldela undermodeller till en prognosmodell
+
+Följ dessa steg för att tilldela undermodeller till en prognosmodell.
+
+1. Gå till **Lagerhantering \> Inställningar \> Prognos \> Prognosmodeller**.
+1. Välj den prognosmodell som du vill ställa in en undermodell för i listfönstret.
+1. På snabbfliken **Delmodeller**, välj **Lägg till** om du vill lägga till rutnätet.
+1. I den nya raden anger du följande fält:
+
+    - **Delmodell** – Välj prognosmodellen som ska läggas till som delmodell. Prognosmodellen måste redan finnas och får inte ha några egna delmodeller.
+    - **Namn** – Ange ett beskrivande namn för delmodell. Det här namnet kan till exempel indikera delmodellens relation till den överordnade prognosmodellen.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

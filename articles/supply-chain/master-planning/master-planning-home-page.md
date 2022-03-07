@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dd25fdd1549fb2fddff57dc2d9cf8762cfd6823
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 15fbab7d0260ed714edfbbb5ef54caddb69cae3c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416537"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360015"
 ---
 # <a name="master-planning-home-page"></a>Startsida för Huvudplanering
 
@@ -83,8 +83,8 @@ Mer hjälp är tillgänglig som uppgiftsguider. Klicka på knappen **Hjälp** p�
 ### <a name="tech-conference-recordings"></a>Inspelningar från tekniska konferenser
 
 - [Utöka funktionen prognos för efterfrågan](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-- [Huvudplanering – tips och trick för felsökning av prestandaproblem](https://youtu.be/7v8BPmEs9Dg)
-- [MRP-prestandajustering](https://youtu.be/RLXybx20B5o)
+- [Huvudplanering - tips och trick för felsökning av prestandaproblem](https://youtu.be/7v8BPmEs9Dg)
+- [Hjälp! MPS går långsamt!](https://youtu.be/RLXybx20B5o)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

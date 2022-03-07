@@ -1,12 +1,10 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources (06 augusti 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 6 augusti 2020.
-author: darinkramer
-manager: AnnBe
-ms.date: 8/06/2020
+author: andreabichsel
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,17 +13,19 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 94ec9b44e21715363116427839badacd14a3d6f8
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 263650cae4b8408f1f7a4a27c43294d2f51c1444
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528435"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800151"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (06 augusti 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -134,7 +134,7 @@ Du kan göra fält obligatoriska genom att använda anpassningsfunktioner för p
 Medarbetare kan visa och begära ledighet från arbetet inom Microsoft Teams. De kan samverka med en bot för att skapa tjänstledighetsansökan. Mer information finns i:
 
 - [Erfarenhet av medarbetares ledighet och frånvaro i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365 2020 utgivningsvåg 1-planen
-- [Human Resources-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
+- [Personal-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
 
 ### <a name="dmf-entity-available-for-accrual-suspensions"></a>DMF-enhet tillgänglig för periodiserade avstängningar
 
@@ -142,9 +142,9 @@ Nu är en DMF-enhet tillgänglig för periodiserade avstängningar.
 
 ## <a name="coming-soon"></a>Kommer snart
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Entiteter för checklista inkluderade i Common Data Service
+## <a name="checklist-entities-included-in-dataverse"></a>Entiteter för checklista inkluderade i Dataverse
 
-Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga i Common Data Service.
+Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga i Dataverse.
 
 ## <a name="known-issues"></a>Kända problem
 
@@ -171,7 +171,10 @@ Arbetsytan **funktionshantering** visas funktioner som har inaktiverats som för
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
 [Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

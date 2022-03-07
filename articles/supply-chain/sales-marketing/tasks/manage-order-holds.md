@@ -1,24 +1,27 @@
 ---
 title: Hantera orderspärrar
 description: Denna procedur visar hur du spärrar kundförsäljningsorder, hur du arbetar med utcheckning av spärrade order, samt hur du tar bort orderspärrar.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MCRHoldCodeTable, SalesTableListPage, SalesCreateOrder, SalesTable, MCRHoldCodeTrans, MCRHoldCheckOutOverride, MCRHoldCodeTable, MCRItemListCopying, MCRItemListTable, MCROMHoldList
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 938b21b66b7b61452be104936877278a3bc120f2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9caf6651813f0111b873db1769140d973f1a2e3b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566302"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437762"
 ---
 # <a name="manage-order-holds"></a>Hantera orderspärrar
 
@@ -67,6 +70,3 @@ Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina 
     - Åtgärden **Rensa och skicka in** gäller endast när du använder kundtjänstfunktionerna.  
 8. Klicka på **Rensa spärrar**. Spärren har nu tagits bort från ordern och från listan över aktiva spärrningar. Ändra värdet i fältet Visa för att visa samtliga spärrningar eller deras underuppsättningar enligt en viss status.     
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

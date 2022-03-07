@@ -2,11 +2,9 @@
 title: " Underhåll butiksprisjusteringar"
 description: Den här proceduren går igenom hur du skapar en handelsprisjustering.
 author: josaw1
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, RetailDiscountPricingWorkspace, RetailPeriodicDiscount, RetailDiscountPriceGroup
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7443f69473c0aad478d47f80f284b1156bad9c24
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0e6ce8ca1d9f63e7ddf6af897a6de5544e4edd9b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962995"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802585"
 ---
 # <a name="retail-price-adjustments"></a> Underhåll butiksprisjusteringar
 
@@ -52,3 +50,6 @@ Den här proceduren går igenom hur du skapar en handelsprisjustering. En prisju
 14. Stäng sidan.
 15. Uppdatera sidan.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

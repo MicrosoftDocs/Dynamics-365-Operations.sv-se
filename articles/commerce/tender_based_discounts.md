@@ -2,11 +2,9 @@
 title: Betalningsmedelbaserade rabatter
 description: Det här ämnet innehåller en översikt över funktioner som gör att detaljhandlare kan konfigurera rabatter för olika typer av betalningsmedel.
 author: bebeale
-manager: AnnBe
 ms.date: 10/30/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTenderDiscount
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 9f6747ff9d68c29612346254928e869d6d34d433
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 482eb8da5777af79c791dd6841315424d101b5d0
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962945"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795175"
 ---
 # <a name="tender-based-discounts"></a>Betalningsmedelbaserade rabatter
 
@@ -71,3 +69,6 @@ När användaren väljer **slutförd** under en kundtjänstorder visas skärmen 
 
 > [!NOTE]
 > När konfigurationen **Förhindra alla rabatter** är inställd på **Ja** tillämpas inga rabatter på produkten. Inte heller betalningsmedelbaserade rabatter kommer att användas.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

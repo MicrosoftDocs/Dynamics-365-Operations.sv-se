@@ -1,33 +1,34 @@
 ---
 title: Synkronisering av försäljningsorder direkt mellan Sales och Supply Chain Management
 description: I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningorder direkt mellan Dynamics 365 Sales och Dynamics 365 Supply Chain Management.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: eb41a21395a5d115b779e6b1ef71e9eb1176e28e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3eaa25f0befcff448250ba2cce8e568fa4a4c707
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061528"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437862"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synkronisering av försäljningsorder direkt mellan Sales och Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
-
-
 
 I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningorder direkt mellan Dynamics 365 Sales och Dynamics 365 Supply Chain Management.
 
@@ -35,7 +36,7 @@ I det här ämnet diskuteras mallarna och de underliggande uppgifterna som anvä
 
 Lösningen Potentiell kund till kontanter använder funktionen Dataintegrering för att synkronisera data mellan instanser av Supply Chain Management och Sales. Potentiell kund till kontanter-mallarna med funktionen för dataintegrering möjliggör ett flöde av konto-, produkt-, försäljningskvots-, försäljningsorder- samt försäljningsfakturadata mellan Supply Chain Management och Sales. Följande bild visar hur data synkroniseras mellan Supply Chain Management och Sales.
 
-[![Dataflöden i Potentiell kund-till-pengar.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Dataflöden i Potentiell kund till kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
 
@@ -63,8 +64,8 @@ Följande synkroniseringsuppgifter krävs före synkronisering av huvuden och ra
 
 | Hantering av underleverantörer  | Försäljning             |
 |-------------------------|-------------------|
-| Dataverse försäljningsorderhuvuden | Försäljningsorder       |
-| Dataverse-försäljningsorderrader   | Försäljningsorderinformation |
+| CDS-försäljningsorderrubrik | Försäljningsorder       |
+| CDS-försäljningsorderrader   | Försäljningsorderinformation |
 
 ## <a name="entity-flow"></a>Flöde för entitet
 
@@ -74,7 +75,7 @@ Du behöver inte skapa order i Sales. Du kan skapa nya försäljningsorder i Sup
 
 I Supply Chain Management hjälper filter i mallen till att endast relevanta försäljningsorder inkluderas i synkroniseringen:
 
-- På försäljningsordern härstammar både beställande kund och fakturerande kund från Sales inkluderas i synkroniseringen. I Supply Chain Management används kolumner **Beställande kund hanteras externt** och **Fakturakund hanteras externt** för att filtrera försäljningsorder från datatabellerna.
+- På försäljningsordern härstammar både beställande kund och fakturerande kund från Sales inkluderas i synkroniseringen. I Supply Chain Management används fälten **Beställande kund hanteras externt** och **Fakturakund hanteras externt** för att filtrera försäljningsorder från dataenheterna.
 - Försäljningsordern i Supply Chain Management måste bekräftas. Endast bekräftade försäljningsorder eller försäljningsorder med högre bearbetningsstatus, exempelvis **Levererad** eller **Fakturerad** synkroniseras till Sales.
 - När en försäljningsorder skapas eller ändras måste batch-jobbet **Beräkna försäljningstotalen** i Supply Chain Management köras. Endast försäljningsorder med beräknade försäljningstotaler synkroniseras med Sales.
 
@@ -102,10 +103,10 @@ När en försäljningsorderrad synkroniseras från Sales till Supply Chain Manag
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Lösningen potentiell kund till kontanter för Sales
 
-Nya kolumner har lagts till i tabellen **Order** och visas på sidan:
+Nya fält har lagst till i enheten **Order** och visas på sidan:
 
 - **Hanteras externt** - Värdet anges som **Ja** när ordern kommer från Supply Chain Management.
-- **Bearbetningsstatus** - Denna kolumn visar bearbetningsstatusen för ordern i Supply Chain Management. Följande värden finns:
+- **Bearbetningsstatus** - Detta fält visar bearbetningsstatusen för ordern i Supply Chain Management. Följande värden finns:
 
     - **Utkast** – inledande status när en order skapas i Sales. I Sales kan endast order med denna bearbetningsstatus redigeras.
     - **Aktiv** – statusen efter att ordern har aktiverats i Sales med hjälp av knappen **aktivera**.
@@ -140,7 +141,7 @@ Innan du synkroniserar försäljningsorder är det viktigt att du uppdaterar fö
 - Gå till **inställningar** &gt; **Administration** &gt; **systeminställningar** &gt; **Sales** och säkerställ att följande inställningar används:
 
     - Alternativet **Använd systemets prisberäkningssystem** är **Ja**.
-    - Kolumnen **Metod för rabattberäkning** har tilldelats **radartikel**.
+    - Fältet **Metod för rabattberäkning** har tilldelats **radartikel**.
 
 ### <a name="setup-in-supply-chain-management"></a>Konfigurera i Supply Chain Management
 
@@ -150,10 +151,10 @@ Om du också använder integration av arbetsorder måste du ställa in försälj
 
 1. Gå till **Försäljning och marknadsföring** \> **Inställningar** \> **Försäljningsorder** \> **Alla försäljningsorder**.
 2. Välj **Ny** för att skapa ett nytt försäljningsursprung.
-3. I kolumnen **Försäljningsursprung** anger du ett namn för försäljningsursprung som t.ex. **Försäljningsorder**.
-4. I kolumnen **Beskrivning** anger du en beskrivning såsom **Försäljningsorder från försäljning**.
+3. I fältet **Försäljningsursprung** anger du ett namn för försäljningsursprung som t.ex. **Försäljningsorder**.
+4. I fältet **Beskrivning** anger du en beskrivning såsom **Försäljningsorder från försäljning**.
 5. Markera kryssrutan **Tilldelning av ursprungstyp**.
-6. Ange kolumnen **Typ av försäljningsursprung** till **Försäljningsorder av arbetsorder**.
+6. Ange fältet **Typ av försäljningsursprung** till **Försäljningsorder av arbetsorder**.
 7. Välj **Spara**.
 
 ### <a name="setup-in-the-sales-orders-sales-to-supply-chain-management---direct-data-integration-project"></a>Inställningen i försäljningsorder (Sales till Supply Chain Management) - Direkt dataintegreringsprojekt
@@ -180,32 +181,29 @@ Om du också använder integration av arbetsorder måste du ställa in försälj
 ## <a name="template-mapping-in-data-integration"></a>Mallmappning i dataintegrering
 
 > [!NOTE]
-> Kolumnerna **betalningsvillkor**, **fraktvillkor**, **leveransvillkor**, **leveranssätt** och **leveransläge** tillhör inte standardmappningarna. Om du vill mappa dessa kolumner måste du konfigurera en värdemappning som är specifik för data i organisationer som tabellen synkroniseras mellan.
+> Fälten **betalningsvillkor**, **fraktvillkor**, **leveransvillkor**, **leveranssätt** och **leveransläge** tillhör inte standardmappningarna. Om du vill mappa dessa fält måste du konfigurera en värdemappning som är specifik för data i organisationer som enheten synkroniseras mellan.
 
 I följande illustrationer visas ett exempel på en mallmappning i dataintegrering.
 
 > [!NOTE]
-> Mappningen visar vilken kolumninformation som kommer att synkroniseras från Supply Chain Management till Sales eller från Supply Chain Management till Sales.
+> Mappningen visar vilken fältinformation som kommer att synkroniseras från Supply Chain Management till Sales eller från Supply Chain Management till Sales.
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Försäljningsorder (Supply Chain Management till Sales) - direkt: OrderHeader
 
-[![Mallmappning i dataintegrering, Sales Orders (Supply Chain Management till Sales) - Direkt: OrderHeader.](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
+[![Mallmappning i dataintegrering](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderline"></a>Försäljningsorder (Supply Chain Management till Sales) - direkt: OrderLine
 
-[![Mallmappning i dataintegrering, Sales Orders (Supply Chain Management till Sales) - Direkt: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
+[![Mallmappning i dataintegrering](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderheader"></a>Försäljningsorder (Sales till Supply Chain Management) - direkt: OrderHeader
 
-[![Mallmappning i dataintegrering, Sales Orders (Sales till Supply Chain Management) - Direkt: OrderHeader.](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
+[![Mallmappning i dataintegrering](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderline"></a>Försäljningsorder (Sales till Supply Chain Management) - direkt: OrderLine
 
-[![Mallmappning i dataintegrering, Sales Orders (Sales till Supply Chain Management) - Direkt: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
+[![Mallmappning i dataintegrering](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Potentiell kund till pengar](prospect-to-cash.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Potentiell kund till kontanter](prospect-to-cash.md)

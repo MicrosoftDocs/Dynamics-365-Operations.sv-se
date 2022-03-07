@@ -2,11 +2,9 @@
 title: Uppgradera lagerstyrning från Microsoft DynamicsAX 2012 till Supply Chain Management
 description: I det här avsnittet finns en översikt över produkt- och lagerhantering samt migreringsalternativ.
 author: perlynne
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45d9809d4bbf1b5a68c3f799ce5d51f9709d276b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5ac8c0d8781e5146186fbf71ce619f90ca3556ccefefe7e974efded7e0eb86dd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970291"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775445"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Uppgradera lagerstyrning från Microsoft DynamicsAX 2012 till Supply Chain Management 
 
@@ -68,7 +66,7 @@ Innan du kan använda frisläppta produkter i **lagerstyrningsmodulen** måste p
 1.  Skapa minst en ny platsprofil.
 2.  Klicka på **Lagerstyrning** &gt; **Inställningar** &gt; **Aktivera lagerstyrningsprocesser** &gt; **Aktivera inställning av lagerställe**.
 3.  På sidan **Aktivera inställning av lagerstyrning** kan du lägga till de lagerställen som ska aktiveras. Du kan slutföra det här steget antingen direkt på sidan eller genom att använda Microsoft Office-integreringen.
-4.  Tilldela en platsprofil till alla platser. Du kan enkelt slutföra det här steget genom att använda Microsoft Office-integreringen direkt från sidan. Du kan antingen exportera och importera data, eller använda dataenheten i [Datahantering](../../dev-itpro/data-entities/data-entities.md).
+4.  Tilldela en platsprofil till alla platser. Du kan enkelt slutföra det här steget genom att använda Microsoft Office-integreringen direkt från sidan. Du kan antingen exportera och importera data, eller använda dataenheten i [Datahantering](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 5.  Godkänn ändringarna. Som en del av valideringen kan olika valideringar av dataintegritet uppträda. Som en del av en större uppgraderingsprocess kan problem som uppstår justeras på källimplementeringen. I detta fall krävs ytterligare en datauppgradering.
 6.  Behandla ändringarna.
 
@@ -79,6 +77,9 @@ Innan du kan använda frisläppta produkter i **lagerstyrningsmodulen** måste p
 3.  På sidan **Reservationshierarki** kan du definiera en ny reservationshierarki enligt artikelns lagring och spårningsdimensionsgrupper.
 4.  Skapa minst en eller flera sekvensgrupper som inkluderar minst samma enheter som används för artikelns lagerenheter.
 5.  Klicka på **Lagerstyrning** &gt; **Inställningar** &gt; **Aktivera lagerstyrningsprocesser** &gt; **Ändra lagringsdimensionsgrupp för artiklar**.
-6.  På sidan **Ändra lagringsdimensionsgruppen för artiklar** och lägg till artikelnummer, lagringsdimensionsgrupper och sekvensgrupper. Du kan slutföra det här steget direkt på sidan med hjälp av Microsoft Office-integrering eller genom att använda dataenhetsprocessen i [Datahantering](../../dev-itpro/data-entities/data-entities.md).
+6.  På sidan **Ändra lagringsdimensionsgruppen för artiklar** och lägg till artikelnummer, lagringsdimensionsgrupper och sekvensgrupper. Du kan slutföra det här steget direkt på sidan med hjälp av Microsoft Office-integrering eller genom att använda dataenhetsprocessen i [Datahantering](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 7.  Godkänn ändringarna. Som en del av valideringen kan olika valideringar av dataintegritet uppträda. Som en del av en större uppgraderingsprocess kan problem som uppstår justeras på källimplementeringen. I detta fall krävs ytterligare en datauppgradering.
 8.  Behandla ändringarna. En uppdatering av alla lagerdimensioner kan ta en stund. Du kan övervaka förloppet med hjälp av batchjobbsuppgifterna.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

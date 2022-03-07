@@ -3,23 +3,24 @@ title: Experiment i Dynamics 365 Commerce
 description: Experiment gör det möjligt att skapa, redigera och hantera sidlayouter och innehålls behandlingar i webbplatsskaparen. Komplett support för experiment har aktiverats för sidor och enheter för näthandel på en sida.
 author: sushma-rao
 ms.date: 10/21/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 292a8934e735c76389e36603a708fd2a1bbf7691
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7641267321e1c97b3f0fa30a97c0519c76fe1b0c0223bdd196b6791d5de7cd8d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986551"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747451"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Experiment i Dynamics 365 Commerce
 Du kan använda experiment i Dynamics 365 Commerce för att validera hypoteser om hur effektiva dina näthandelssidor är och fatta beslut med datadriven säkerhet. Commerce har stöd för A/B-test på sidor, moduler och fragment och gör att du kan mäta effekterna av föreslagna ändringar på webbplatsen.

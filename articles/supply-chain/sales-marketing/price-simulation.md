@@ -1,26 +1,29 @@
 ---
 title: Prissimulering
 description: Det här avsnittet innehåller information om prissimulering för offerter. Prissimulering hjälper dig att utvärdera effekten av avdrag på det framtida försäljningspriset under offertprocessen innan du på fastställer ett specifikt pris.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesQuotationPriceSimulation, SalesQuotationsTableLookup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14e485d1e02247159e1d9eb1c5d81be37626216
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 18214ae3801b5fb0f927020041e997b7ea4f0df4
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580514"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4437970"
 ---
 # <a name="price-simulation"></a>Prissimulering
 
@@ -32,7 +35,7 @@ En prissimulering för en offert visar ett nytt totalbelopp baserat på ett för
 
 En prissimulering ändrar inte priset i offerten. Om prissimuleringen används på en hel offert behandlas den som en särskild rabatt i offerthuvudet. Om prissimuleringen används på specifika artiklar behandlas den som en särskild rabatt på offertraderna. Enhetsförsäljningspriset på offertraden som skapas ändrar inte när en prissimulering används. I stället används en rabattprocent som motsvarar prisminskningen för offertraden. När en prissimulering används överförs enhetsförsäljningspriset och rabattprocenten till offertraden eller offerthuvudet.  
 
->Obs! När du kör en prissimulering används bara den aktuella försäljningsvalutan för att skapa simuleringen. Du kan emellertid visa en kombination av företagsvalutan och försäljningsvalutan när du visar offertsummorna.  
+>[Obs!] När du kör en prissimulering används bara den aktuella försäljningsvalutan för att skapa simuleringen. Du kan emellertid visa en kombination av företagsvalutan och försäljningsvalutan när du visar offertsummorna.  
 
 Fyllnadsartiklar som läggs till på offertrader kan utlösa radrabatter och flerradsrabatter. De kan också utlösa totala rabatter som ändrar täckningsbidraget och täckningsgraden på offertraderna och hela rabatten.  
 
@@ -142,6 +145,3 @@ Prissimuleringen påverkar enbart raden som den tillämpas på och minskar summa
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

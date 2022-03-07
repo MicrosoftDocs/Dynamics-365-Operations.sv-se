@@ -2,11 +2,9 @@
 title: Konfigurera ER-modellmappningar som är beroende av landkontext
 description: I det här avsnittet beskrivs hur du kan ställa in ER-modellmappningar så att de är beroende av land/region i den juridiska personen som styr deras användning.
 author: NickSelin
-manager: AnnBe
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: a9035f128a1db4bcd126f09c0fe30c1857fa884a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680887"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605381"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Konfigurera ER-modellmappningar som är beroende av landkontext
 
@@ -50,7 +48,7 @@ Vissa steg i det här avsnittet kräver att du kör ett ER-format. I vissa fall 
 
 Följ instruktionerna i [tillägg 1](#appendix1) i det här avsnittet för att designa de nödvändiga ER-komponenterna. Du har nu modellmappningskonfigurationen **Mappning (allmänt)** som innehåller modellmappningen för definitionen **startpunkt 1**.
 
-![Sidan ER-konfigurationer](./media/RCS-Context-specific-mapping-Tree.PNG)
+![ER-konfigurationssida, Format för inlärning av mappningskonfiguration.](./media/RCS-Context-specific-mapping-Tree.PNG)
 
 ### <a name="run-the-configured-format"></a>Kör det konfigurerade formatet
 
@@ -63,7 +61,7 @@ Lägg märke till att webbläsaren kan hämta textfilen som genererades i ER-for
 
 Följ instruktionerna i [tillägg 2](#appendix2) i det här avsnittet för att designa de nödvändiga ER-komponenterna. Du har nu modellmappningskonfigurationen **Mappning (allmänt)** och **Mappning (allmänt) anpassa** som var och en innehåller modellmappningen för definitionen **startpunkt 1**.
 
-![Sidan ER-konfigurationer](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
+![ER-konfigurationssida, Mappa allmän anpassad konfiguration.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
 ### <a name="run-the-configured-format"></a>Kör det konfigurerade formatet
 
@@ -73,7 +71,7 @@ Följ instruktionerna i [tillägg 2](#appendix2) i det här avsnittet för att d
 
 Observera att körningen av det valda återställningsformatet misslyckas. Ett felmeddelande informerar om att det finns fler än en modellmappning för modellen **modell för att lära sig mappning** och definitionen **startpunkt 1** i modellmappningskonfigurationerna **Mappning (allmänt)** och **Mappning (allmänt) anpassa**. Meddelandet rekommenderar också att du väljer en av dessa konfigurationer som standardkonfiguration.
 
-![Sidan ER-konfigurationer](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
+![ER-konfigurationssida med felmeddelande.](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
 
 ### <a name="define-a-default-mapping-configuration"></a>Definiera en standardkonfiguration för mappningar
 
@@ -84,7 +82,7 @@ Följ dessa steg för att definiera konfiguration av modellmappning **Mappning (
 3.  Ange alternativet **standard för modellmappning** till **Ja**.
 4.  Välj **Spara**.
 
-![Sidan ER-konfigurationer](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
+![ER-konfigurationssida, Standard för modellmappningsskjutreglage inställt på Ja.](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>Kör det konfigurerade formatet
 
@@ -103,7 +101,7 @@ Följ instruktionerna i [tillägg 3](#appendix3) i det här avsnittet för att d
 
 Observera att version 1 av konfiguration av modellmappning **Mappning (FR)** är konfigurerad så att den bara gäller för ER-format för modellen **modell för att lära mappningar** som körs i ekonomiföretag med franskt land/region-sammanhang.
 
-![Sidan ER-konfigurationer](./media/RCS-Context-specific-mapping-TreeFR.PNG)
+![ER-konfigurationssida, Modellmappningskonfiguration (FR).](./media/RCS-Context-specific-mapping-TreeFR.PNG)
 
 ### <a name="run-the-configured-format"></a>Kör det konfigurerade formatet
 
@@ -123,7 +121,7 @@ Följ dessa steg för att definiera den anpassade konfigurationen för modellmap
 3.  Ange alternativet **standard för modellmappning** till **Ja**.
 4.  Välj **Spara**.
 
-![Sidan ER-konfigurationer](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
+![ER-konfigurationssida, Mappingskonfiguration (FR), Standard för modellmappningsskjutreglage inställt på Ja.](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>Kör det konfigurerade formatet
 
@@ -197,7 +195,7 @@ I tabellen anger ett plus tecken (+) närvaron av en konfiguration av modellmapp
 1.  I navigeringsfönstret, gå till **Moduler \> Organisationsadministration \> Elektronisk rapportering \> Konfiguration av felsökningslogg**.
 2.  Klicka på knappen **Läs in den här sidan**.
 
-![Sidan ER kör loggar](./media/RCS-Context-specific-mapping-DebugLog.PNG)
+![Sida för ER-körningsloggar.](./media/RCS-Context-specific-mapping-DebugLog.PNG)
 
 Observera att en ny post har lagts till i ER-felsökningsloggen för det körda ER-formatet. Eftersom fältet **nivå** för den här posten är inställt på **info**, är posten information. Eftersom fältet Formatkomponent är inställt på **Mappningskonfiguration** informerar posten om en modellmappning som användes under körningen av ER-formatet **Format för att lära mappningar** (välja fältet **Konfigurationsnamn**). Innehållet av fältet **Innehållet text** informerar om att mappningskomponenten för mappningskonfigurationen **Mappning (FR)** som komponent som finns i **Mappning (FR)** som har använts för att köra denna rapport.
 
@@ -238,7 +236,7 @@ Observera att utkastversion 1 av den här ER-konfigurationen är klar för redig
 14. I listrutan i fältet **namn** anger du **funktionsbeskrivning**.
 15. Markera **Lägg till**.
 
-    ![Sidan ER-datamodelldesigner](./media/RCS-Context-specific-mapping-Model.PNG)
+    ![Sidan ER-datamodelldesigner.](./media/RCS-Context-specific-mapping-Model.PNG)
 
 16. Välj **Spara**.
 17. Stäng sidan.
@@ -278,7 +276,7 @@ Observera att utkastversion 1 av den här ER-konfigurationen är klar för redig
 5.  Välj **Spara**.
 6.  Stäng sidan **Formeldesigner**.
 
-    ![Sidan ER-modellmappningsdesigner](./media/RCS-Context-specific-mapping-Mapping1.PNG)
+    ![Designersida för ER-modellmappning, definition för ingångspunkt 1.](./media/RCS-Context-specific-mapping-Mapping1.PNG)
 
 7.  Välj **Spara**.
 8.  Stäng sidan **modellmappningsdesigner**.
@@ -291,12 +289,12 @@ Observera att utkastversion 1 av den här ER-konfigurationen är klar för redig
 15. Välj **Spara**.
 16. Stäng sidan **Formeldesigner**.
 
-    ![Sidan ER-modellmappningsdesigner](./media/RCS-Context-specific-mapping-Mapping2.PNG)
+    ![Designersida för ER-modellmappning, definition för ingångspunkt 2.](./media/RCS-Context-specific-mapping-Mapping2.PNG)
 
 17. Välj **Spara**.
 18. Stäng sidan **modellmappningsdesigner**.
 
-    ![Sidan ER-modellmappningar](./media/RCS-Context-specific-mapping-Mappings.PNG)
+    ![Designersida för ER-modellmappning med definitioner för ingångpunkt.](./media/RCS-Context-specific-mapping-Mappings.PNG)
 
 19. Stäng sidan **modellmappningar**.
 
@@ -337,7 +335,7 @@ Observera att utkastversion 1 av den här ER-konfigurationen är klar för redig
 2.  Välj fältet **funktionsbeskrivning**.
 3.  Välj **bind**.
 
-    ![ER-formatdesignersida](./media/RCS-Context-specific-mapping-Format.PNG)
+    ![ER-formatdesignersida.](./media/RCS-Context-specific-mapping-Format.PNG)
 
 4.  Välj **Spara**.
 5.  Stäng sidan.
@@ -371,7 +369,7 @@ Observera att utkastversion 1 av den här ER-konfigurationen är klar för redig
 6.  Välj **Spara**.
 7.  Stäng sidan.
 
-    ![Sidan ER-modellmappningsdesigner](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
+    ![Designersida för ER-modellmappning, anpassad formel för Generisk funktion 1.](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
 
 8.  Välj **Spara**.
 9.  Stäng sidan.
@@ -382,12 +380,12 @@ Observera att utkastversion 1 av den här ER-konfigurationen är klar för redig
 14. Välj **Spara**.
 15. Stäng sidan.
 
-    ![Sidan ER-modellmappningsdesigner](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
+    ![Designersida för ER-modellmappning, anpassad formel för Generisk funktion 2.](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
 
 16. Välj **Spara**.
 17. Stäng sidan.
 
-    ![Sidan ER-modellmappningar](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
+    ![Mappningssida för ER-modell till datakälla för Mappa (allmänt) kopieringsmappning.](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
 
 18. Stäng sidan.
 
@@ -434,7 +432,7 @@ Observera att utkastversion 1 av den här ER-konfigurationen är klar för redig
 7.  Välj **Spara**.
 8.  Stäng sidan.
 
-    ![Sidan ER-modellmappningsdesigner](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
+    ![Designersida för ER-modellmappninge, formel för FR-funktion 1.](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
 
 9.  Välj **Spara**.
 10. Stäng sidan.
@@ -446,12 +444,12 @@ Observera att utkastversion 1 av den här ER-konfigurationen är klar för redig
 16. Välj **Spara**.
 17. Stäng sidan.
 
-    ![Sidan ER-modellmappningsdesigner](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
+    ![Designersida för ER-modellmappninge, formel för FR-funktion 2.](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
 
 18. Välj **Spara**.
 19. Stäng sidan.
 
-    ![Sidan ER-modellmappningar](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
+    ![Mappningssida för ER-modell till datakälla.](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
 
 20. Stäng sidan.
 
@@ -496,3 +494,6 @@ Kontrollera att konfigurationen för mappning av delade modeller inte har marker
 - Minst en version av konfigurationen för ER-modellmappning har antingen **slutfört** eller **delad** status. I det här fallet används versionen med det högsta versions numret för ER-formatkörning.
 - Alternativet **kör utkast** för konfigurationen för ER-modellmappning är aktiverat. I det här fallet används versionen **utkast** används ER-formatkörning.
 > Alternativet **kör utkast** blir tillgängligt på **sidan konfigurationer** för varje konfiguration för ER-modellmappning när ER-användarparametern **Kör inställning** är aktiverad.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
 title: Generera sjukförsäkringsrapporter i förmånshanteringen
-description: I detta ämne beskrivs hur förmånshantering spåar information som rapporteras i formulär 1095-B och formulär 1095-C för arbetsgivarmandatet för sjukförsäkring (ACA).
-author: twheeloc
-ms.date: 08/23/2021
+description: I det här avsnittet beskrivs hur förmånshantering kan hjälpa dig att spåra information som rapporteras i formulär 1095-B och formulär 1095-C för arbetsgivarmandatet för sjukförsäkring (ACA).
+author: andreabichsel
+ms.date: 12/28/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,24 +11,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 79bd8e02aeac1be94e735373740cf9508f494a06
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d681514f53dbaf4aafce33722d0c1837c3d270407c19d629c3383ff1a2472d67
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066003"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727075"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>Generera ACA-rapporter i förmånshanteringen
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Förmånshanteringen spårar information som rapporteras i formulär 1095-B och formulär 1095-C för arbetsgivarmandatet för sjukförsäkring (ACA). Precis som ACA-rapporteringsfunktionerna i den gamla arbetsytan **Förmåner** gäller denna funktion endast juridiska personer i USA.
+Förmånshanteringen kan hjälpa dig att spåra information som rapporteras i formulär 1095-B och formulär 1095-C för arbetsgivarmandatet för sjukförsäkring (ACA). Precis som ACA-rapporteringsfunktionerna i den gamla arbetsytan **Förmåner** gäller denna funktion endast juridiska personer i USA.
 
 Om du vill använda den här funktionen måste du först aktivera **Avancerad förmånshantering**. Mer information, inklusive viktiga förbehåll angående förmånshantering, finns i [Aktivera eller inaktivera förmånshantering](hr-admin-manage-features.md#enable-or-disable-benefits-management).
 
@@ -148,7 +145,7 @@ Du kan skapa ACA 1095-B- och 1095-C-formulär och sedan distribuera dessa till v
 2. Ändra parametrarna efter behov och välj sedan **OK**.
 
     > [!NOTE]
-    > Om du skriver ut formulär 1095-C till mer än 500 anställda får du mer än en PDF-fil. Vi rekommenderar att du ökar värdet för fältet **Maximal filstorlek i megabyte** på sidan **Parametrar för dokumenthantering** till **150**. (Om du snabbt vill öppna den sidan använder du sökfältet i navigeringsfältet.)
+    > Om du skriver ut formulär 1095-C till mer än 500 anställda får du mer än en PDF-fil. Vi rekommenderar att du ökar värdet för fältet **Maximal filstorlek i megabyte** på sidan **Parametrar för dokumenthantering** till **150**. (Om du snabbt vill öppna den sidan kan du använda sökfältet i navigeringsfältet.)
     >
     > ![Ändra den maximala filstorleken.](./media/hr-benefits-management-aca-maximum-file-size.png)
 

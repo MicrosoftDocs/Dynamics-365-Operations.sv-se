@@ -1,34 +1,30 @@
 ---
 title: Underhållsbegäranden
 description: Det här avsnittet innehåller en översikt över hantering av underhållsbegäran i tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestTable, EntAssetRequestWorkspace, EntAssetRequestActivePart, EntAssetRequestWorkOrderActive, EntAssetRequestType, EntAssetRequestTableCreateWO, EntAssetRequestTableLookup, EntAssetRequestTableActivePart, EntAssetMobileRequestDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1e0071ae745987a1217525b2841e3320933a9242
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 536f512abc2b7ce74ebc35dfdaf48e812a85cc2b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019639"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344254"
 ---
 # <a name="maintenance-requests"></a>Underhållsbegäranden
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Underhållsbegäran är anteckningar eller deklarationer som skapas för att meddela en chef eller planerare att en tillgång kan kräva ett underhålls- eller reparationsjobb, men utan att skapa en arbetsorder. Om innehållet i en underhållsbegäran anses vara giltigt, kan en arbetsorder skapas baserat på underhållsbegäran.
 
@@ -44,7 +40,7 @@ Underhållsbegäran kan skapas för alla tillgångar i tillgångshantering. Olik
 
 Om du vill visa underhållsbegäran, välj **tillgångshantering** \> **allmänt** \> **underhållsbegäran** \> **alla underhållsbegäran**, **aktiva underhållsbegäran** eller **mina underhållsbegäran för funktionsplats**. Varje listsida visar en del av den information som är relaterad till en underhållsbegäran.
 
-![Visa underhållsbegäranden](media/01-manage-maintenance-requests.png)
+![Visa underhållsbegäranden.](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Använd listsidan **mina underhållsbegäran för funktionsplats** för att visa en lista över underhållsbegäran som innehåller antingen funktionsplatser som du är relaterad till som en anställd eller tillgångar som är installerade på funktionsplatser som du relaterade till som arbetstagare. (Information om hur du ställer in funktionsplatser på underhållsarbetare finns i [Underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md).)
@@ -53,7 +49,7 @@ Om du vill visa underhållsbegäran, välj **tillgångshantering** \> **allmänt
 
 Om du vill öppna detaljvyn för en post väljer du listsidan **Alla underhållsbegäran** i rutnätsvyn och väljer en länk i kolumnen **Underhållsbegäran**.
 
-![Visa information om begäran av katalogunderhåll](media/02-manage-maintenance-requests.png)
+![Visa information om underhållsbegäran:](media/02-manage-maintenance-requests.png)
 
 Knapparna i åtgärdsfönstret är ordnade på flikar. I följande tabell beskrivs kortfattat knappar som är relaterade till tillgångshantering.
 
@@ -72,3 +68,6 @@ Knapparna i åtgärdsfönstret är ordnade på flikar. I följande tabell beskri
 | Skicka utlåningstillgång                  | Välj en utlåningstillgång som ska vara en temporär ersättning för tillgången som valts i den valda underhållsbegäran. |
 | Lämna tillbaka utlåningstillgång                | Registrera utlåningstillgången som returnerad. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

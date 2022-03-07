@@ -1,12 +1,10 @@
 ---
 title: Använd konfigurationer för modellmappning för att sammanställa beräkningar på databasnivå
-description: Denna procedur ger information för att skapa en ny elektronisk rapportering (ER)-modellmappningskonfiguration och använda inbyggda funktioner för ER för effektiv aggregerade beräkningar.
+description: Det här ämnet beskriver hur du utformar en ny modellmappningskonfigurationer för elektronisk rapportering och använder inbyggda funktioner för ER för effektiv aggregerade beräkningar.
 author: NickSelin
-manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f1c4ddf0fac5ba962c3dab545bfa7e0df4afa948
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 01f48596c30127976d915811ffa8412dcc9b2593
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684126"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745385"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Använd konfigurationer för modellmappning för att sammanställa beräkningar på databasnivå
 
@@ -116,3 +114,6 @@ Den här proceduren har skapats för användare med rollen Systemadministratör 
 68. Klicka på Spara.
     * Observera att fältet "körning på" anger att grupperingen ska utföras vid körning i minnet även om det inte finns några aggregeringar definierade och den valda datakällan av typen ”registerposter” refererar till samma Intrastat-tabell. Detta beror på att datakällan innehåller vissa beräknade fält som ännu inte kan konverteras till SQL-databasnivå.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

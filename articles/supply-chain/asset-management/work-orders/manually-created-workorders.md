@@ -1,12 +1,10 @@
 ---
 title: Manuellt skapade arbetsorder
 description: Det här avsnittet innehåller förklaringar av hur du skapar arbetsorder manuellt i Tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderTableCreateRelated, EntAssetWorkOrderTableCreate, EntAssetWorkOrderTableCopy
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8c787dbc9889139df76b9b102deb18fce567e382
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 6e16c0bcd9521f822d0f92681e2a545439b78acb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017878"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354867"
 ---
 # <a name="manually-created-work-orders"></a>Manuellt skapade arbetsorder
 
@@ -113,7 +111,7 @@ Du kan skapa en arbetsorder som är relaterad till en befintlig arbetsorder. Den
 
 I bilden nedan visas ett exempel på sidan dialogrutan **Skapa relaterad arbetsorder**.
 
-![Figur 1](media/03-work-orders.png)
+![Figur 1.](media/03-work-orders.png)
 
 >[!NOTE]
 >Om du har angett en relaterad arbetsordermask i **Parametrar för tillgångshantering** fliken  > **Arbetsorder** > fältet **Relaterad arbetsordermask** skapas arbetsorder-ID enligt inställningen för masken. Om ingen relaterad arbetsordermask ställs in används nästa tillgängliga arbetsorder-ID för relaterade arbetsorder.
@@ -139,7 +137,7 @@ Det är möjligt att snabbt skapa en ny arbetsorder utifrån en befintlig arbets
 
 Illustrationen nedan visar ett exempel på dialogrutan **Kopiera arbetsorder**.
 
-![Figur 2](media/04-work-orders.png)
+![Figur 2.](media/04-work-orders.png)
 
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Skapa en arbetsorder baserad på en underhållsbegäran
@@ -159,9 +157,12 @@ Illustrationen nedan visar ett exempel på dialogrutan **Kopiera arbetsorder**.
 
 Illustrationen nedan visar ett exempel på dialogrutan **Skapa arbetsorder**.
 
-![Figur 3](media/05-work-orders.png)
+![Figur 3.](media/05-work-orders.png)
 
 
 >[!NOTE]
 >Om du vill att arbetsordrar ska skapas automatiskt kan du schemalägga underhållsplanjobb eller så kan du ställa in "Skapa automatiskt" [underhållsplaner](../preventive-and-reactive-maintenance/maintenance-plans.md) eller [underhållsrundor](../preventive-and-reactive-maintenance/maintenance-rounds.md) på en tillgång. Arbetsorder som skapas från underhållsbegäranden på listsidan **All underhållsschema** har samma underhållsjobbtyper som väljs i underhållsbegärandena.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

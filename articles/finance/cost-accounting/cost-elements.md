@@ -2,9 +2,11 @@
 title: Dimensioner för kostnadselement
 description: Som en av kärnapelarna i kostnadsredovisning, används kostnadselementen för att kategorisera och spåra var kostnaderna flödar till.
 author: AndersGirke
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimension
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 667fb81a2c1c8f564c09fe8fb7921c7aff75920bfa4326e82078583df61576e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: be2f984c1ce5c76e3f995108d25f57c29e8c8457
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728779"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226374"
 ---
 # <a name="cost-element-dimensions"></a>Dimensioner för kostnadselement
 
@@ -63,7 +65,7 @@ Det finns två typer av kostnadselement: primära kostnadselement och sekundära
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Kostnadselement och+ dimensionsmedlemmar för kostnadselement.
 Kostnadselement kallas *kostnadselementdimensioner*. De enskilda dimensionsvärdena kallas *dimensionsmedlemmar för kostnadselement*. Du kan till exempel ha en amerikansk kontoplanstruktur (COA) som utgör grunden för din lagstadgade rapportering. Detta COA används som kostnadselementdimension. Kontona som är primära kostnadselement, representeras som dimensionsmedlemmar för kostnadselement i kostnadsredovisning. Följande exempel visar en skärmdump av huvudkonton som kostnadselementdimensionen med dess faktiska huvudkonton som dimensionsmedlem för kostnadselement. 
 
-[![Skärmbild av huvudkonton som dimension för kostnadselement.](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![Skärmbild av huvudkonton som dimension för kostnadselement](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>Importera dimensionsmedlemmar för kostnadselement via datakopplingar
 För att underlätta inställningarna av dimensionsmedlemmar för kostnadselement i kostnadsredovisning kan du använda datakopplingar, som antingen är föruppbyggda eller personligt anpassade för att hämta de primära kostnadselementen från ett eller flera källsystem.

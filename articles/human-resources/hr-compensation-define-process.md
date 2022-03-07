@@ -2,28 +2,27 @@
 title: Definiera kompensationsprocessen och beräkna resultat
 description: Kompensationsprocesser används för att bestämma nya kompensationsbelopp och belöningar för medarbetare som har anmälts till fasta och variabla kompensationsplaner.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMCompProcess, HRMCompProcessLine, HRMCompEvent, HRMCompEventEmpl, HcmCompensationWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 254eb4f83cc734e43920b912e81c7a9230ca82dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b43b381ea13d6afc81ebd7bc6458a4bc17d69382
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420617"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6052947"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definiera kompensationsprocessen och beräkna resultat
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Kompensationsprocesser används för att bestämma nya kompensationsbelopp och belöningar för medarbetare som har anmälts till fasta och variabla kompensationsplaner. Kompensationsprocesser kan köras för att utföra ”vad händer om"-analyser, för att kontrollera att alla ändringar och inställningarna är korrekta. Den här proceduren skapar en kompensationsprocess, kör processen och visar resultatet. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 
@@ -100,3 +99,6 @@ Kompensationsprocesser används för att bestämma nya kompensationsbelopp och b
 10. Klicka på Godkända.
     * När posten har godkänts kan den läsas in till medarbetarens officiella kompensationspost. Den nya kompensationen blir giltig på det transaktionsdatum som anges i kompensationsprocessen.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

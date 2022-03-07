@@ -1,12 +1,10 @@
 ---
 title: ER Uppgradera ditt format genom att implementera en ny basversion för det formatet
-description: I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan behålla en formatkonfiguration för elektronisk rapportering (ER).
+description: I det här avsnittet beskrivs hur du underhåller en formatkonfiguration för elektronisk rapportering (ER).
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 17fe6d772040c73959685920743225c128421951
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bfcb85d964234063fd3c6a8e5ea29f7b222e966124b48e46b72b04f457c91e6c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684273"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720818"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Uppgradera ditt format genom att implementera en ny basversion för det formatet
 
 [!include [banner](../../includes/banner.md)]
 
-I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan behålla en formatkonfiguration för elektronisk rapportering (ER). I den här proceduren förklaras hur en anpassad version av ett format kan skapas baserat på det format som tas emot från en konfigurationsleverantör (CP). Den förklarar också hur du antar en ny basversion av det formatet.
+I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan behålla en formatkonfiguration för elektronisk rapportering (ER). I den här proceduren förklaras hur en anpassad version av ett format kan skapas baserat på det format som tas emot från en konfigurationsleverantör. Den förklarar också hur du antar en ny basversion av det formatet.
 
 För att slutföra dessa steg måste du först avsluta stegen i procedurerna ”Skapa en konfigurationsleverantör och markera den som aktiv" och "Använd skapade format för att skapa elektroniska handlingar för betalningar". Dessa steg kan utföras i GBSI-företaget.
 
@@ -243,3 +241,6 @@ För att göra detta måste Proseware, Inc. ändra baskonfigurationversionen fö
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Testa det anpassade formatet för att skapa betalningsfiler
 Slutför stegen i sessionen "Använd skapade format för att generera elektroniska dokument för betalningar" i en parallell Finance and Operations-session. Välj det skapade BACS-formatet (fiktiv kund från Storbritannien) i parametrar för elektronisk betalningsmetod. Kontrollera att den skapade betalningsfilen innehåller den för en tid eftersom Proseware, Inc. introducerade XML-noden som innehåller IBAN-kontokoden i korrespondens till regionala kraven. Filen ska också innehålla nyligen introducerade genom Litware Inc. XML-noden som presenterar SWIFT-bankkoden i enlighet med kraven i landet.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

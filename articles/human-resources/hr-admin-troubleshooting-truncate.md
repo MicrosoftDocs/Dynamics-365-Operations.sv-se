@@ -2,14 +2,11 @@
 title: Undvika att texten trunkeras i befattningshierarkin och exportera till Visio
 description: Det här avsnittet beskriver hur du löser ett problem där namnen på personer och befattningar trunkeras när kunder visar befattningshierarkin i Microsoft Dynamics 365 Human Resources. Texttrunkering kan göra det svårt att ta en skärmbild eller skriva ut hierarkin.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -17,14 +14,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 02fb0098cc6f5a0b353e827653b1c8c96af2470c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a03c8f340e8ebb2fb0440518c154ed3bdd0197f6
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420596"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053261"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Undvika att texten trunkeras i befattningshierarkin och exportera till Visio
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Utleverans**
 
@@ -38,7 +37,7 @@ Detta beteende är av design.
 
 **Upplösning**
 
-Tyvärr kan användare inte enkelt ändra textens storlek. Du kan exportera befattningshierarkin från Personal och sedan importera den till Microsoft Visio. Även om följande artikel skrevs för Microsoft Dynamics AX 2012, gäller processen fortfarande för Personal: [Exportera en befattningshierarki till Microsoft Visio](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
+Tyvärr kan användare inte enkelt ändra textens storlek. Du kan exportera befattningshierarkin från Personal och sedan importera den till Microsoft Visio. Även om följande artikel skrevs för Microsoft Dynamics AX 2012, gäller processen fortfarande för Personal: [Exportera en befattningshierarki till Microsoft Visio](/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
 
 Gör så här för att exportera till Visio.
 
@@ -54,7 +53,7 @@ Gör så här för att exportera till Visio.
 
     ![Exportera till Excel-dialogruta](media/export-excel.png)
 
-4. I Visio, välj **Visio - skapa ny** och välj mallkategorin **Företag**.
+4. I Visio, välj **Visio – skapa ny** och välj mallkategorin **Företag**.
 
     ![Nytt diagram](media/new.png)
 
@@ -104,3 +103,6 @@ Baserat på de fält som du valt att inkludera i diagrammet visar varje nod den 
 **Ytterligare alternativ**
 
 I Personal kanske du också använder arbetsytan **Personer** för att visa hierarkirelaterad information.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

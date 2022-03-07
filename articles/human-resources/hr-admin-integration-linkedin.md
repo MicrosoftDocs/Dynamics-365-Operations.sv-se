@@ -2,15 +2,12 @@
 title: Integration med LinkedIn Talent Hub
 description: Det här avsnittet beskriver hur du ställer in integreringen mellan Microsoft Dynamics 365 Human Resources och LinkedIn Talent Hub.
 author: jaredha
-manager: tfehr
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,24 +15,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: fb75c391809f1ce5c7d48728a735f347ef1784ed
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527895"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441275"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integration med LinkedIn Talent Hub
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+> [!IMPORTANT]
+> Integrationen mellan och Dynamics 365 Human Resources och LinkedIn Talent Hub som beskrivs i det här avsnittet dras tillbaka den 31 december 2021. Integrationstjänsten är inte längre tillgänglig efter det här datumet. Organisationer som inte redan använder integrationstjänsten kan inte implementera tjänsten innan den dras tillbaka.
 
-[LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) är en plattform för sökningsspårningssystem (ATS). Med den kan du anskaffa, hantera och anställa medarbetare på samma ställe. Genom att integrera Microsoft Dynamics 365 Human Resources med LinkedIn Talent Hub kan du enkelt skapa medarbetarposter i Human Resources för de sökande som har anställts för en befattning.
+[LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) är en plattform för sökningsspårningssystem (ATS). Med den kan du anskaffa, hantera och anställa medarbetare på samma ställe. Genom att integrera Microsoft Dynamics 365 Human Resources med LinkedIn Talent Hub kan du enkelt skapa medarbetarposter i Personal för de sökande som har anställts för en befattning.
 
 ## <a name="setup"></a>Ställ in
 
-En systemadministratör måste slutföra installationsåtgärderna för att kunna integrera med LinkedIn Talent Hub. Först i Power Apps-miljön måste du ställa in en användar- och säkerhetsroll för att ge LinkedIn Talent Hub rätt behörighet att skriva data till Human Resources.
+En systemadministratör måste slutföra installationsåtgärderna för att kunna integrera med LinkedIn Talent Hub. Först i Power Apps-miljön måste du ställa in en användar- och säkerhetsroll för att ge LinkedIn Talent Hub rätt behörighet att skriva data till Personal.
 
 ### <a name="link-your-environment-to-linkedin-talent-hub"></a>Länka din miljö till LinkedIn Talent Hub
 
@@ -49,16 +47,16 @@ En systemadministratör måste slutföra installationsåtgärderna för att kunn
 
 5. På sidan **Dynamics 365 Human Resources**, välj den miljö du vill länka LinkedIn Talent Hub till och välj sedan **Länka**.
 
-    ![LinkedIn Talent Hub registrering](./media/hr-admin-integration-talent-hub-onboarding.jpg)
+    ![LinkedIn Talent Hub-registrering.](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
     > [!NOTE]
-    > Du kan bara länka till miljöer där ditt användarkonto har administratörsåtkomst till både Human Resources-miljön och den associerade Power Apps-miljön. Om det inte finns några miljöer på sidan Human Resources-länkar ser du till att du har licensierade Human Resources-miljöer på klientorganisationen och att användaren som du har loggat in på länksidan som har administratörsbehörighet för både Human Resources-miljön och Power Apps-miljön.
+    > Du kan bara länka till miljöer där ditt användarkonto har administratörsåtkomst till både Personal-miljön och den associerade Power Apps-miljön. Om det inte finns några miljöer på sidan Personal-länkar ser du till att du har licensierade Personal-miljöer på klientorganisationen och att användaren som du har loggat in på länksidan som har administratörsbehörighet för både Personal-miljön och Power Apps-miljön.
 
 ### <a name="create-a-power-apps-security-role"></a>Skapa en Power Apps säkerhetsroll
 
 1. Öppna [Power Platform administrationscenter](https://admin.powerplatform.microsoft.com).
 
-2. I listan **miljöer** väljer du den miljö som är kopplad till Human Resources-miljön som du vill länka din instans av LinkedIn Talent Hub till.
+2. I listan **miljöer** väljer du den miljö som är kopplad till Personal-miljön som du vill länka din instans av LinkedIn Talent Hub till.
 
 3. Välj **inställningar**.
 
@@ -82,7 +80,7 @@ En program användare måste skapas för LinkedIn Talent Hub för att bevilja be
 
 1. Öppna [Power Platform administrationscenter](https://admin.powerplatform.microsoft.com).
 
-2. I listan **miljöer** väljer du den miljö som är kopplad till Human Resources-miljön som du vill länka din instans av LinkedIn Talent Hub till.
+2. I listan **miljöer** väljer du den miljö som är kopplad till Personal-miljön som du vill länka din instans av LinkedIn Talent Hub till.
 
 3. Välj **inställningar**.
 
@@ -92,7 +90,7 @@ En program användare måste skapas för LinkedIn Talent Hub för att bevilja be
 
 6. Använd den nedrullningsbara menyn ovanför listan för att ändra visningen av vyn standardinställda **användare** för **appanvändare**.
 
-    ![Vyn appanvändare](./media/hr-admin-integration-power-apps-application-users.jpg)
+    ![Vyn Programanvändare.](./media/hr-admin-integration-power-apps-application-users.jpg)
 
 7. I verktygsfältet klickar du på **Nytt**.
 
@@ -118,7 +116,7 @@ När du har sparat och stängt den nya appanvändaren i föregående avsnitt, ko
 
 5. Välj **OK**.
 
-### <a name="add-an-azure-active-directory-app-in-human-resources"></a>Lägg till en Azure Active Directory-app i Human Resources
+### <a name="add-an-azure-active-directory-app-in-human-resources"></a>Lägg till en Azure Active Directory-app i Personal
 
 1. I Dynamics 365 Human Resources, öppna sidan **Azure Active Directory-appar**.
 2. Lägg till en ny post till listan och ange följande fält:
@@ -127,14 +125,14 @@ När du har sparat och stängt den nya appanvändaren i föregående avsnitt, ko
     - **Namn**: Ange namnet på den Power Apps säkerhetsroll som du skapade tidigare, t.ex. **LinkedIn Talent Hub HRIS-integration**.
     - **Användar-ID**: Välj en användare som har behörighet att skriva data i personalhantering.
 
-### <a name="create-the-entity-in-common-data-service"></a>Skapa entiteten i Common Data Service
+### <a name="create-the-table-in-dataverse"></a>Skapa tabellen i Dataverse
 
 > [!IMPORTANT]
-> Integrationen med LinkedIn Talent Hub beror på virtuella enheter i Common Data Service för Human Resources. Som en förutsättning för det här steget i konfigurationen måste du konfigurera virtuella enheter. Mer information om hur du konfigurerar virtuella entiteter finns i [Konfigurera Common Data Service virtuella enheter](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+> Integreringen med LinkedIn Talent Hub vilar på virtuella register i Dataverse för Personal. Som en förutsättning för det här steget i konfigurationen måste du konfigurera virtuella register. Mer information om hur du konfigurerar virtuella register finns i [Konfigurera virtuella Dataverse-register](./hr-admin-integration-common-data-service-virtual-entities.md).
 
-1. I Human Resources, öppna sidan **Common Data Service (CDS) integration**.
+1. I Personal öppnar du sidan **Dataverse-integrering**.
 
-2. Välj fliken **virtuella entiteter**.
+2. Välj fliken **Virtuella register**.
 
 3. Filtrera enhetslistan efter enhetsetikett för att hitta **LinkedIn-exporterad kandidat**.
 
@@ -142,11 +140,11 @@ När du har sparat och stängt den nya appanvändaren i föregående avsnitt, ko
 
 ## <a name="exporting-candidate-records"></a>Exportera kandidatposter
 
-När installationen är klar kan rekryterare och HR-personal använda funktionen **Exportera till HRIS** i LinkedIn Talent Hub för att exportera anställda kandidatposter från LinkedIn Talent Hub till Human Resources.
+När installationen är klar kan rekryterare och HR-personal använda funktionen **Exportera till HRIS** i LinkedIn Talent Hub för att exportera anställda sökandeposter från LinkedIn Talent Hub till Personal.
 
 ### <a name="export-records-from-linkedin-talent-hub"></a>Exportera poster från LinkedIn Talent Hub
 
-När en kandidat har gått igenom rekryteringsprocessen och har anställts kan du exportera kandidatposten från LinkedIn Talent Hub till Human Resources.
+När en kandidat har gått igenom rekryteringsprocessen och har anställts kan du exportera kandidatposten från LinkedIn Talent Hub till Personal.
 
 1. På LinkedIn Talent Hub öppnar du projektet som du har anställt den nya medarbetaren för.
 
@@ -164,11 +162,11 @@ När en kandidat har gått igenom rekryteringsprocessen och har anställts kan d
     - I fältet **plats** anger du den plats där medarbetaren ska baseras.
     - Ange eller verifiera medarbetarens e-postadress.
 
-![Exportera till HRIS-fönstret på LinkedIn Talent Hub](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
+![Exportera till HRIS-fönstret i LinkedIn Talent Hub.](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
 
-## <a name="complete-onboarding-in-human-resources"></a>Slutföra registrering i Human Resources
+## <a name="complete-onboarding-in-human-resources"></a>Slutföra registrering i Personal
 
-Kandidatposter som exporteras från LinkedIn Talent Hub till Human Resources visas i avsnittet **kandidater att anställa** på sidan **personalhantering**.
+Kandidatposter som exporteras från LinkedIn Talent Hub till Personal visas i avsnittet **kandidater att anställa** på sidan **personalhantering**.
 
 1. I Personal, öppna listsidan **personalhantering**.
 
@@ -188,5 +186,8 @@ Följande information importeras och inkluderas i den nya medarbetarposten:
 
 ## <a name="see-also"></a>Se även
 
-[Konfigurera Common Data Service virtuella enheter](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Vad är Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+[Konfigurera virtuella Dataverse-register](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Vad är Microsoft Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,29 +1,29 @@
 ---
 title: Produktkonfiguration – översikt
 description: De behöver konfigurera produkter för att uppfylla särskilda krav blir regel snarare än undantag, både i business-to-business och business-to-consumer relationer.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails, ConfigPartOf
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "75083"
-- intro-internal
+ms.custom: 75083
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62411bff436d34e3d311b078b1bf8f886e5902d6
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 37d0e5709d0bd7dd9df53b9db165109aff9f639e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983377"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007851"
 ---
 # <a name="product-configuration-overview"></a>Produktkonfiguration – översikt
 
@@ -38,7 +38,6 @@ En lyckad övergång från en tillverkning mot lager inställning för att konfi
 Det finns flera produktkonfiguration modellering principer såsom regelbaserad, dimensionsbaserad och begränsningsbaserad modellering. Studier visar att den begränsningsbaserade metod kan minska antalet kodrader i modeller med cirka 50 procent jämfört med andra modellering principer. Därför är denna metod kan reducera den totala ägandekostnaden (TCO). Genom att flytta från en regelbaserad modell som bygger på koden X++ till en begränsningsbaserad modell, behöver du inte längre en utvecklarlicens för att upprätthålla produktmodeller.
 
 ## <a name="product-configuration"></a>Produktkonfiguration
-
 Industrialiseringen har lett till stora framgångar i att producera högkvalitativa och presentera-rika produkter till överkomliga priser. De stordriftsfördelar har gjort det möjligt för de flesta människor i den industrialiserade världen att köpa bilar, tv-apparater, hushållsapparater, och andra varor som de flesta av oss betraktar som en nödvändig del av vår vardag.  
 
 Många produkter har blivit handelsvaror, ett behov av att särskilja dem har uppstått. Det omedelbara svaret från tillverkare till denna utmaning har varit att skapa varianter av varje produkt, så att kunderna kan få fler alternativ. Denna strategi har lett till ökade prognos utmaningar, och även en ökning av lagerkostnad och osålda produkter som blivit inaktuellt.  
@@ -47,10 +46,9 @@ Genom att anta en konfigurera för filosofi, tillverkar har en möjlighet att m�
 
 Nyckeln till framgång är att noggrant analysera produktportföljen och leta efter mönster i både produktens funktioner och processer. Målet är att identifiera generella komponenter som kan tillverkas med samma utrustning och används i alla varianter.  
 
-Produktkonfigurationen innehåller ett användargränssnitt (UI) som ger en visuell översikt över produktkonfigurationens modellstruktur, och även en deklarativ begränsningssyntax som inte behöver sammanställas. Därför är företag som vill stödja en konfiguration kan komma igång lättare. Följande avsnitt förklarar, en konstruktör av en produkt kräver inte längre stöd av utvecklare för att bygga en produkt konfiguration modell, testa den och släpper den till säljorganisation.
+Den nya produkten configuration innehåller ett användargränssnitt (UI) som ger en visuell översikt över produktens konfiguration modell struktur, och även en beskrivande tvång syntax som inte behöver sammanställas. Därför är företag som vill stödja en konfiguration kan komma igång lättare. Följande avsnitt förklarar, en konstruktör av en produkt kräver inte längre stöd av utvecklare för att bygga en produkt konfiguration modell, testa den och släpper den till säljorganisation.
 
 ## <a name="building-a-product-configuration-model"></a>Bygga en produktkonfiguration modell
-
 Det finns flera strategier som en användare kan vidta för att bygga upp en produktkonfiguration modell. Ett alternativ är att följa ett sekventiellt flöde genom att först skapa alla uppgifter, såsom produkten masters, skilda produkter och operativa resurser och sedan inkludera dem som komponenter, räkningen av material (BOM) linjer, rutt, och andra delar av produktens konfiguration modell. Alternativt kan du välja en mer iterativ metod genom att först skapa en modell och sedan lägga till uppgifter som behovet uppstår.
 
 ### <a name="components"></a>Komponenter
@@ -62,7 +60,7 @@ En produktkonfiguration modellen består av en eller flera komponenter som är s
 Varje komponent har ett eller flera attribut som identifierar dess egenskaper. Attributen är vad användarna välja under konfigurationsprocessen. Attribut styra både inter-komponenten och intra-komponent kundrelationer genom införande i begränsningar eller beräkningar. Genom villkor som tillämpas på BOM linjer, attributen kan användas för att avgöra vilka fysiska artiklar konfigurerad produkt kommer att bestå av. Dessutom kan ett attribut kan styra egenskaperna för en bom med en kartläggning. Liknande funktioner finns för rutten verksamhet både vad gäller integration och egenskapsinställningar.
 
 >[!NOTE]
-> När du skapar attributtyper bör du undvika att skapa ett högt nummer med värden för attributtypdomänen. Om du gör det kan det leda till att produktkonfiguratorn går långsammare.
+> När du skapar attributtyper bör du undvika att skapa ett högt nummer med värden för attributtypdomänen. Om du gör det kan det leda till att produktkonfiguratorn går långsammare. 
 
 ### <a name="expression-constraints"></a>Uttrycksbegränsningar
 
@@ -99,7 +97,6 @@ BOM rader ingår att identifiera tillverkning BOM för varje komponent. En BOM m
 Rutten verksamhet ingår att identifiera tillverkning rutt. En rutt måste hänvisning en definierad funktion och alla egenskaper kan ställas in till ett fast värde. Alla fastigheter utom resursbehov kan mappas till ett attribut i stället för ett värde.
 
 ## <a name="validating-and-testing-a-product-configuration-model"></a>Validera och testa en produkt konfigurationsmodell
-
 Validering av en produktkonfiguration modell kan inträffa på flera nivåer i modellen och kan således omfatta olika omfattningar. Den lägsta nivån är för en enda uttryck tvång. I det här fallet, validering utförs normalt av produkten designer för att kontrollera att syntaxen för ett uttryck är korrekt.  
 
 På samma sätt en förutsättning för en bom eller en rutt kan valideras i isolering.  
@@ -117,7 +114,6 @@ Att testa en modell påminner om att köra en faktisk konfigurationssession. Anv
 För att navigera mellan komponenter, klicka på **Nästa** eller klicka på en komponent i produkten konfigurationsmodell träd satt fokus på det.
 
 ## <a name="finalizing-a-model-for-configuration"></a>Färdigställa en modell för konfiguration
-
 När en produkt konfigurationsmodell är redo att användas i Konfigurera till order scenarier, en version måste skapas. Men det finns flera alternativ som kan förbättra modelleringen erfarenhet.
 
 ### <a name="user-interface"></a>Användargränssnitt
@@ -137,31 +133,32 @@ Om produkten kommer att säljas i olika länder/regioner, översättningar kan s
 Den sista och viktigaste steget i slutförandet är att skapa en version för produktkonfiguration modell. Version representerar förhållandet mellan produkt master, som kan väljas för konfiguration på en order- eller offertrad och produktens konfiguration modell. En version måste vara godkänt och aktiverat innan den kan användas i en konfigurationssession.
 
 ## <a name="extending-a-product-configuration-model-through-the-api"></a>Utöka en produktkonfiguration modell via API
-
 En dedikerad application programming interface (API) har genomförts, så att partner och andra som har en utvecklarlicens kan utöka kapaciteten hos en produktkonfiguration modell. Huvudmålet har varit att upprätta en mekanism som låter kunder och partners som använder den befintliga produktbyggaren att migrera den kod som är inbäddad i produktbyggarmodeller till API. På detta sätt kan de migrera sina modeller från Produktbyggare till produktens konfiguration. Men nya partners och kunder kan också dra nytta av att använda API för att utvidga ny produktkonfiguration modeller.
+
+### <a name="pcadaptor-class"></a>PCAdaptor klass
 
 API finnas genomfört genom att använda en uppsättning **PCAdaptor** klasser att utsätta datastrukturen i produktens konfiguration modeller. En instans av klassen **PCAdaptor** måste skapas för varje modell som ska utökas. När en konfigurationssession slutförts, kontrollerar systemet om det finns en instans av den här klassen och kör den om sådan finns.  
 
-Följande API-flödesschema beskriver processen.  
+Följande flödesschema beskriver processen.  
 
-[![Flödesdiagram.](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
+[![Flödesdiagram](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
 
-## <a name="configure-products"></a>Konfigurera produkter
+Flödesschema över produktkonfigurations-API
 
-### <a name="configure-one-or-more-products"></a>Konfigurera en eller flera produkter
+## <a name="product-configuration"></a>Produktkonfiguration
+Produktkonfigurationen kan utföras från följande ställen:
 
-Du kan konfigurera produkter från följande platser:
+-   Försäljningsorderrad
+-   Försäljningsoffertrad
+-   Inköpsorderrad
+-   Produktion orderrad
+-   Punkt krav (projekt)
 
-- Försäljningsorderrad
-- Försäljningsoffertrad
-- Inköpsorderrad
-- Produktion orderrad
-- Punkt krav (projekt)
+Syftet med den är att skapa ett distinkt variant av produkt som uppfyller kundens krav. En unik konfigurations-ID skapas för varje ny konfiguration. Detta ID möjliggör spårning via lager.
 
-Syftet med konfigurationen är att skapa ett distinkt variant av produkten som uppfyller kundens krav. En unik konfigurations-ID skapas för varje ny konfiguration. Detta ID möjliggör spårning via lager.
-
-### <a name="multiple-sites-and-intercompany-considerations"></a>Flera platser och företagsinterna överväganden
+### <a name="multiple-sites-and-intercompany"></a>Flera orter och företagsinterna
 
 Om konfigurationen kommer att ske på en ort, eller ens ett företag, som skiljer sig från den ort eller det företag där produktionen sker, BOM och rutten skapas för och sätta på leverantörens ort i det levererande företaget. Produkten variant kommer att släppas i alla företag som deltar i distributionskedjan.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+

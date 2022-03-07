@@ -2,28 +2,28 @@
 title: Skapa resultatöversyner
 description: I det här avsnittet förklarar vi hur du skapar en resultatöversyn och beskriver syftet för varje del av granskningen.
 author: andreabichsel
-manager: AnnBe
 ms.date: 05/05/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 99825dd580d617bb47b4f0ece784afbf6573ae8a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: acbfcadb32d3bfb66d290b89e3c90124f80a1be8
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420583"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5805596"
 ---
 # <a name="create-performance-reviews"></a>Skapa resultatöversyner
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 I det här avsnittet förklarar vi hur du skapar en resultatöversyn och beskriver syftet för varje del av granskningen. Denna procedur skapades med demodataföretaget USMF.
@@ -78,3 +78,6 @@ I det här avsnittet förklarar vi hur du skapar en resultatöversyn och beskriv
 34. Välj fliken **Granska**. I takt med att granskningen fortskrider genom de olika stadierna, kan medarbetaren och chefen lägga till kommentarer för respektive mål eller kompetens.  
 35. Välj fliken **Godkännanden**. Arbetaren och chefen kan godkänna granskningen. När alla erforderliga godkännande har slutförts ändras statusen till **Slutfört**, och inga fler ändringar kan genomföras.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

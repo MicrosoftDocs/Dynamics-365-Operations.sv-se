@@ -1,12 +1,10 @@
 ---
 title: Rutnätsmöjligheter
-description: I det här avsnittet beskrivs flera kraftfulla funktioner i rutnätskontrollen. Den nya rutnätsfunktionen måste aktiveras för att du ska kunna använda dessa funktioner.
+description: I det här avsnittet beskrivs flera kraftfulla funktioner i rutnätskontrollen. Du måste aktivera den nya rutnätsfunktionen för att du ska kunna använda dessa funktioner.
 author: jasongre
-manager: AnnBe
-ms.date: 11/17/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
@@ -15,17 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: fb30cdded33f90bb472c8abdb70875077b1dd985
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: c8f417b3ba427104d6d0e57ac595ab7b453f48fa
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693784"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749575"
 ---
 # <a name="grid-capabilities"></a>Rutnätsmöjligheter
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 Den nya rutnätskontrollen innehåller flera användbara och kraftfulla funktioner som kan användas för att förbättra användarproduktiviteten, skapa mer intressanta vyer av dina data och få meningsfulla insikter om dina data. Den här artikeln kommer att omfatta följande funktioner: 
 
@@ -33,7 +31,7 @@ Den nya rutnätskontrollen innehåller flera användbara och kraftfulla funktion
 -  Skriva före systemet
 -  Utvärdera matematikuttryck 
 -  Gruppera data i en tabell (aktiveras separat med hjälp av funktionen **(förhandsversion) gruppering i rutnät**)
--  Fästa systemkolumner
+-  Låsa kolumner
 
 ## <a name="calculating-totals"></a>Beräknar summor
 I Finance and Operations-appar har användare möjlighet att visa summor längst ned på numeriska kolumner i rutnät. Dessa summor visas i ett sidfotsavsnitt längst ned i rutnätet. 
@@ -45,10 +43,10 @@ Det finns ett sidfotsområde längst ned i alla tabell rutnät i Finance and Ope
 - Total summor längst ned i konfigurerade numeriska kolumner
 - Antalet rader i datauppsättning 
 
-Den här sidfoten är som standard dold, men den är lätt att aktivera. Om du vill visa sidfoten för ett rutnät högerklickar du på en kolumn rubrik i rutnätet och väljer alternativet **Visa sidfot**. När sidfoten har aktiverats för ett visst rutnät kommer denna inställning att kommas ihåg tills användaren väljer att dölja sidfoten, som du kan göra genom att högerklicka på en kolumnrubrik och välja **Dölj sidfot**.  Observera placeringen av åtgärden **Visa sidfot/Dölja sidfot** förväntas ligga i en senare uppdatering. 
+Den här sidfoten är som standard dold, men den är lätt att aktivera. Om du vill visa sidfoten för ett rutnät högerklickar du på en kolumn rubrik i rutnätet och väljer alternativet **Visa sidfot**. När du har slå på sidfoten för ett visst rutnät kommer den inställningen att föra in en dag tills användaren väljer att dölja sidfoten. Du döljer sidfoten genom att högerklicka på en kolumnrubrik och välja **Dölj sidfot**.  Placeringen av åtgärden **Visa sidfot/Dölja sidfot** kan flytta till en ny plats i en senare uppdatering. 
 
 ### <a name="specifying-columns-with-totals"></a>Ange kolumner med summor
-För närvarande kommer inga kolumner att konfigureras för att visa summor som standard. I stället betraktas detta som en enstaka inställningsaktivitet, på samma sätt som du justerar bredden på kolumner i rutnät. När du har angett att du vill visa summorna för en kolumn kommer den inställningen att komma ihåg nästa gång du besöker sidan.  
+I nuläget visas för närvarande inga kolumner summor som standard. I stället betraktas detta som en enstaka inställningsaktivitet, på samma sätt som du justerar bredden på kolumner i rutnät. När du har angett att du vill visa summorna för en kolumn kommer den inställningen att komma ihåg nästa gång du besöker sidan.  
 
 Du kan konfigurera en kolumn på två sätt för att visa en summa: 
 
@@ -122,8 +120,14 @@ På samma sätt som du kan markera (eller avmarkera) alla rader i rutnätet geno
 ### <a name="hiding-column-names"></a>Dölja kolumnnamn
 När du grupperar data är standardfunktionen att visa kolumnnamnet i grupprubrikraden. Från och med version 10.0.14/plattformsuppdatering 38 kan du välja att utelämna kolumnnamnet i grupphuvud rader genom att välja **Rutnätsalternativ** > **Dölj gruppkolumnnamn**.
 
-## <a name="pinned-system-columns"></a>Fästa systemkolumner
-Kolumnen radmarkering och kolumnen radstatus i det nya rutnätet är fästa, eller frusna, på den vänstra delen av rutnätet. När dessa kolumner tas med i ett rutnät visas de därför alltid för användaren, oavsett den vågräta rullningspositionen i rutnätet.   
+## <a name="freezing-columns"></a>Låsa kolumner
+En del kolumner i ett rutnät kan vara så viktiga för sammanhanget att du inte vill att de ska rulla ut ur visningen. Istället vill du att värdena i dessa kolumner alltid ska vara synliga. I version 10.0.17 fer funktionen **Lås kolumner i rutnät** flexibiliteten för användarna. 
+
+Om du vill låsa en kolumn högerklickar du i kolumnens rubrik och väljer sedan **Lås kolumn**. Första gången du slutför det här steget blir den valda kolumnen den första kolumnen och kan inte längre rulla ut ur visningen. Alla efterföljande kolumner som du fryser läggs till till höger om den sista låsta kolumnen. Du kan använda standardfunktionen Flytta om du vill beställa om låsta kolumner efter behov. Låsta kolumner kan emellertid inte flyttas så att de visas bland de olästa kolumnerna. Ej låsta kolumner kan emellertid inte flyttas så att de visas bland de låsta kolumnerna.
+
+Om du vill låsa upp en kolumn högerklickar du i kolumnens rubrik och väljer sedan **Lås upp kolumn**. 
+
+Observera att radurvalet och radstatuskolumnerna i det nya rutnätet alltid är låsta som de första två kolumnerna. När dessa kolumner tas med i ett rutnät visas de därför alltid för användaren, oavsett den vågräta rullningspositionen i rutnätet. Dessa två kolumner kan inte beställas om.
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hur aktiverar jag den nya rutnätskontrollen i min miljö? 
@@ -155,11 +159,11 @@ Om din organisation hittar en sida med vissa problem med att använda det nya ru
 
 Denna API kommer att hedras tills oktober 2021 släpps när den nya nätkontrollen blir obligatorisk. Om något problem kräver att denna API används rapporterar du dem till Microsoft.
 
-## <a name="developer-size-to-available-width-columns"></a>[Utvecklare] Anpassa kolumner efter tillgänglig bredd
+## <a name="developer-size-to-available-width-columns"></a>[Utvecklare] kolumner med storlek till tillgänglig bredd
 Om en utvecklare ställer in egenskapen **WidthMode** på **SizeToAvailable** för kolumner inuti det nya rutnätet, har de kolumnerna samma bredd som de skulle ha om egenskapen hade värdet **SizeToContent**. De sträcker sig däremot åt att använda valfri tillgänglig bredd i rutnätet. Om egenskapen har ställts in på **SizeToAvailable** för flera kolumner, delar alla dessa kolumner all tillgänglig bredd i rutnätet. Om en användare manuellt ändrar storleken på en av dessa kolumner blir kolumnen statisk. Den kommer att finnas kvar till den bredden och kan inte längre sträckas ut för att ta upp extra tillgängligt rutnäts bredd.  
 
 ## <a name="known-issues"></a>Kända problem
-Det här avsnittet innehåller en lista med kända problem för den nya rutnätskontrollen medan funktionen är i förhandsgranskningsläge.  
+I det här avsnittet finns en lista över kända problem för den nya rutnätskontrollen.  
 
 ### <a name="open-issues"></a>Öppna ärenden
 -  När funktionen för **ny rutnätskontroll** aktiveras fortsätter vissa sidor att använda den befintliga rutnätskontrollen. Detta sker i följande situationer:  
@@ -170,20 +174,44 @@ Det här avsnittet innehåller en lista med kända problem för den nya rutnäts
     När en användare först stöter på en av dessa situationer, visas ett meddelande om att sidan ska uppdateras. När det här meddelandet visas fortsätter sidan att använda det befintliga rutnätet för alla användare tills nästa versionsuppdatering av produkten sker. En bättre hantering av dessa scenarier, så att det nya rutnätet kan användas, övervägs för framtida uppdateringar.    
     
 -  [KB-4582758] Poster är suddiga när du ändrar zoom från 100 till något annat procenttal
-    
+-  [KB 4592012] Oväntat klientfel i IE11 när du klistrar in flera rader från Excel
+    -  Microsoft följer ingen åtgärd för det här problemet
+
+### <a name="fixed-as-part-of-10016"></a>Korrigerat som en del av 10.0.16
+
+-  [KB 4598335] Strängkontroller med flera linjer följer inte deras DisplayHeorgans i listor/kort 
+-  [KB 4591891] Fakturaförslagsrader försvinner när rader avmarkeras
+-  [KB 4592104] Det gick inte att redigera poster efter att ha klickat på "Korrigera problem" och flyttat till en annan rad utan att korrigera valideringsproblemet
+-  [KB 4594449] Knapparna "Aldrig" och "Rensa" saknas i datumplockningen 
+-  [KB 4594448] När du anger tid behandlas det nya rutnätet på ett annat sätt
+-  [KB 4600059] Oväntat klientfel med e-postbegränsning
+-  [KB 4574584] Förhandsgranskning av utgiftsbilagan är inte tillgänglig när du hovrar över kvittoikonen
+
 ### <a name="fixed-as-part-of-10015"></a>Korrigerat som en del av 10.0.15    
 
+-  (Kvalitetsuppdatering) [KB 4594444] Oväntat klientfel med förhandsgranskning av segmenterad inmatningskontroll
 -  [KB 4582723] Visningsalternativ visas inte när de utförs senare i formuläret livscykel
+-  [KB 4591988] Problem med tangentbordstangentborden för att välja ett värde från en referensgrupps uppslag
+-  [KB 4588958] Regression Suite Automation Tool (RSAT) misslyckas med felet: TypeError: Cannot read property 'text' of undefined
+-  [KB 4591970] Oväntat klientfel när du klistrar in från Excel direkt efter att du klickat i rutnätet
+-  [KB 4591904] Dataändringar sparas inte om användaren omedelbart klickade på en kontroll och öppnade sökning efter en annan kontroll
+-  [KB 4584752] Oväntat klientfel på sidan för projektfakturaförslag
+-  [KB 4584540] Det gick inte att lämna rutnätet efter att en enskild rad har klistrats in i en journalrad
+-  [KB 4591908] När du skapar en ny rad är du inte försent med dig i kolumnen du skapade en ny rad.
 
 ### <a name="fixed-as-part-of-10014"></a>Korrigerat som en del av 10.0.14
 
 -  (Kvalitetsuppdatering) [KB 4584752] Oväntat klientfel på sidan för projektfakturaförslag
+-  [KB-4583880] Regression Suite Automation Tool (RSAT)-tester misslyckas vid OpenLookup-åtgärd med "Cannot read property RowIndex of undefined"
+-  [KB 4583847] Oväntat klientfel vid navigering i sökningar
 
 ### <a name="fixed-as-part-of-10013"></a>Korrigerat som en del av 10.0.13
 
--  (Kvalitetsuppdatering) [KB-4583880] Regression Suite Automation Tool (RSAT)-tester misslyckas vid OpenLookup-åtgärd med "Cannot read property RowIndex of undefined"
+-  (Kvalitetsuppdatering) [KB 4584752] Oväntat klientfel på sidan för projektfakturaförslag
+-  [KB-4583880] Regression Suite Automation Tool (RSAT)-tester misslyckas vid OpenLookup-åtgärd med "Cannot read property RowIndex of undefined"
 -  (Kvalitetsuppdatering) [KB 4583847] Oväntat klientfel vid navigering i sökningar 
 -  (Kvalitetsuppdatering) [Fel 471777] Det går inte att markera fält i ett rutnät för att redigera eller skapa en mobilapp
+-  [KB 4582727] Rutnätet fryses när användaren får dialog för objekt med flera kvantiteter
 -  [Fel 474851] Hyperlänkar i referensgruppskontroller fungerar inte 
 -  [Fel 474848] Utökade förhandsgranskningar med rutnät visas inte
 -  [KB 4582726] Egenskapen RotateSign respekteras inte  
@@ -198,7 +226,7 @@ Det här avsnittet innehåller en lista med kända problem för den nya rutnäts
 -  [KB 4571095] Bokföring av produktinleverans sker när användaren råkar trycka på retur (korrekt hantering av sidans standardåtgärd)
 -  [KB 4575437] Sökningar med redigerbara kontroller stängs oväntat
 -  [KB 4569418] Formuläret duplicerad rad har skapats i leveransschemaformuläret
--  [KB 4575435] Förbättrad förhandsgranskning är ibland kvar även om muspekaren inte är nära fältet
+-  [KB 4575435] Förbättrad förhandsgranskning är ibland även om muspekaren inte är nära fältet
 -  [KB 4575434] Sökningen filtreras inte när fältet har ändrats
 -  [KB 4575430] Värden i lösenordsfält maskeras inte i rutnätet
 -  [KB 4569438] "Bearbetning har avbrutits på grund av ett valideringsproblem" visar efter markeringsrader under kvittning av leverantörstransaktioner
@@ -219,14 +247,14 @@ Det här avsnittet innehåller en lista med kända problem för den nya rutnäts
 - [KB 4558584] Negativa tal återges inte korrekt.
 - [KB 4560726] Ett "oväntat klientfel" inträffar när växlingen mellan listor har utförts med en listvy.
 - [KB 4562141] Rutnätsindex är inaktiverade efter att en ny post har lagts till.
-- [KB 4562151] Alternativen **Validera** och **Kopiera** för uppgiftsinspelning är inte tillgängliga för kontroll av datum/nummer. 
+- [KB 4562151] alternativen **validera** och **kopiera** uppgiftsinspelning är inte tillgängliga för kontroll av datum/nummer. 
 - [KB 4562153] Kryssrutor med flera markeringar visas inte i list- eller kortrutnätet.
-- [KB 4562646] Ibland kan du inte klicka utanför rutnätet när du har flera radmarkeringar i rutnätet.
-- [KB 4562647] Fokus återställs till den första kontrollen i dialogrutan **Publicera** efter att en ny rad har lagts till i rutnätet för säkerhetsroller.
+- [KB 4562646] Ibland kan du inte klicka utanför rutnätet när du har flera markeringar i rutnätet.
+- [KB 4562647] Fokus återställs till den första kontrollen i dialogrutan **publicera** efter att en ny rad har lagts till i rutnätet för säkerhetsroller.
 - [KB 4563310] Den utökade förhandsgranskningen stängs inte efter att en rad har ändrats.
 - [KB 4563313] Ett oväntat klientfel inträffar i Internet Explorer när ett värde väljs i en sökning.
 - [KB 4564557] Uppslag och nedrullningsbara menyer öppnas inte i Internet Explorer
-- [KB 4563324] Navigeringen fungerar inte när arbetsytan **Personalhantering** har öppnats.
+- [KB 4563324] Navigeringen fungerar inte när arbetsytan **personalhantering** har öppnats.
 
 ### <a name="fixed-as-part-of-10011"></a>Korrigerat som en del av 10.0.11
 
@@ -263,3 +291,6 @@ Det här avsnittet innehåller en lista med kända problem för den nya rutnäts
 ### <a name="quality-update-for-1009platform-update-33"></a>Kvalitetsuppdatering för 10.0.9/plattformsuppdatering 33
 
 - [KB 4550367] Tidsvärden formateras inte korrekt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

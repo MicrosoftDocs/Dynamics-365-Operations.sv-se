@@ -1,28 +1,28 @@
 ---
 title: Momsöversikt
 description: Det här ämnet innehåller en översikt över momssystemet. Det ger en beskrivning av komponenterna för inställning av moms och hur de arbetar tillsammans.
-author: kailiang
+author: ShylaThompson
+manager: AnnBe
 ms.date: 10/28/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "13111"
-- intro-internal
+ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
-ms.author: kailiang
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 021692e0b599731db1d991405fcb4632080582bf
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 37ab8a92af77151b7d0ce7fd9ff625064736ccd2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983938"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249057"
 ---
 # <a name="sales-tax-overview"></a>Momsöversikt
 
@@ -30,13 +30,14 @@ ms.locfileid: "7983938"
 
 Det här ämnet innehåller en översikt över momssystemet. Det ger en beskrivning av komponenterna för inställning av moms och hur de arbetar tillsammans.
 
-## <a name="overview"></a>Översikt
+<a name="overview"></a>Översikt
+--------
 
 Ramverket för moms stöder många typer av indirekta skatter, till exempel moms/mervärdesskatt, skatt på varor och tjänster (GST), enhetsbaserade avgifter och källskatt. Dessa skatter beräknas och dokumenteras i samband med inköps- och försäljningstransaktioner. Dessa måste regelbundet rapporteras och betalas till skattemyndigheten. 
 
 Följande diagram visar de enheterna för skatteinställning och hur de hör ihop.
 
-[![Diagram som visar översikt över entiteter för momsinställningar.](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
+[![Diagram som visar översikt över enheter för momsinställningar](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
 För varje momstyp som ett företag redovisar redovisa måste en momskod anges. En momskod lagrar skattesatserna och beräkningsregler för moms. 
 

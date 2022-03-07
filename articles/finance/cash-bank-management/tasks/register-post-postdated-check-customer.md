@@ -2,9 +2,11 @@
 title: Registrera och bokför en efterdaterad check för en kund
 description: Du kan registrera information om en efterdaterad check som tas emot från en kund.
 author: kweekley
+manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcf1bc1620c5daa981c390e8cf7490d582d8d09c394663548e73ed0f98814b09
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d14b0622f4fbad87ddf019307910d4d4e316888a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764297"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995300"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Registrera och bokför en efterdaterad check för en kund
 
@@ -47,6 +49,3 @@ Du kan registrera information om en efterdaterad check som tas emot från en kun
 15. Klicka på Bokför.
 16. Stäng sidan.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

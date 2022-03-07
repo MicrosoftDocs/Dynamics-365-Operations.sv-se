@@ -1,12 +1,10 @@
 ---
 title: Schemalägg underhållsplaner
 description: I det här avsnittet beskrivs schemaläggning av underhållsplaner i Tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9c215417eacb8a0e1ec0a8324fe35fc053089afb
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: bd5192f727c83c017148405fb1b3ee587c118542450d46b5822d86cd1676d8fd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016916"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731329"
 ---
 # <a name="schedule-maintenance-plans"></a>Schemalägg underhållsplaner
 
@@ -54,14 +52,14 @@ Vid planering av förebyggande underhåll skapas kalenderposter på tillgångar 
 
 5. Klicka på **OK** för att påbörja genereringen av underhållsschemaposter för tillgångar. De genererade posterna visas på listsidan **Alla underhållsscheman**. Följande illustration visar ett exempel på dialogrutan **Schemalägg underhållsplaner**.
 
-![Figur 1](media/09-preventive-maintenance.png)
+![Figur 1.](media/09-preventive-maintenance.png)
 
 - I dialogrutan **Schemalägg underhållsplaner** kan du ställa in batchjobb för snabbfliken **Kör i bakgrunden** för att automatiskt generera kalenderposter med jämna mellanrum.  
 - När du planerar förebyggande underhåll skapas inte rader för underhållsplanering med förväntat startdatum och starttid före systemdatumet och systemtiden.  
 
 Bilden nedan visar en grafisk illustration av en beräkning av tidsbaserad underhållsplan.  
 
-![Figur 2](media/10-preventive-maintenance.jpg)
+![Figur 2.](media/10-preventive-maintenance.jpg)
 
 Beträffande räknarbaserade underhållsplaner: I bilderna nedan visas två olika cykler för räknarregistrering. De är baserade på en underhållsplan som ställts in för tillgång "V0001", vilket förväntar tillgången (en bil) att köra cirka 2 000 km varje månad.
 
@@ -71,7 +69,10 @@ I nästa bild registreras 2 000 km eller mer varje månad. Därför skapas tre
 
 I exemplen som beskrivs här visas att alla räknarregistreringar som görs på en tillgång visar en tendens som beskriver slitage på tillgången. Denna trend används som beräkningsbas vid tidsplanering av underhållsplanen.
 
-![Figur 3](media/11-preventive-maintenance.png)
+![Figur 3.](media/11-preventive-maintenance.png)
 
-![Figur 4](media/12-preventive-maintenance.png)
+![Figur 4.](media/12-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

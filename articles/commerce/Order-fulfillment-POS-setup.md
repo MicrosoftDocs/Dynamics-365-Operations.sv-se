@@ -16,18 +16,16 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d6cfa0d1eba4ccb0b24839b7cc632835b17107e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2519dcaf657b495a494b6f45f93930d980d89a65
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965335"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477814"
 ---
-# <a name="set-up-order-fulfillment-for-stores"></a>Ställ in orderuppfyllande för butiker
+# <a name="set-up-order-fulfillment-for-stores"></a>Ställa in orderuppfyllelse för butiker
 
 [!include [banner](includes/banner.md)]
-
-## <a name="overview"></a>Översikt
 
 Många återförsäljare vill optimera orderuppfyllelse genom att låta butiker fylla i order. Orderuppfyllelse på butiksnivå hjälper dig att förenkla scenarier med överlager för en specifik butik eller kan behövas från en logistisk synvinkel i de fall som en butik har extra kapacitet eller ligger inom närmare avstånd för leverans till kunden. För att tillgodose detta behov är ett enhetligt utförande av orderuppfyllelse tillgängligt i POS.
 
@@ -130,3 +128,6 @@ Orderuppfyllelse i POS innehåller filter för att hjälpa användaren att enkel
 - Skapades den
 - Leveransdatum
 - Inleveransdatum
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

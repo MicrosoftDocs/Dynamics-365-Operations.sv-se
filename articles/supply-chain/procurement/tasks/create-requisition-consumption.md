@@ -1,25 +1,23 @@
 ---
 title: Skapa en rekvisition för förbrukning
 description: Det här avsnittet beskriver processen för att skapa en rekvisition.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c76a24999eef16f239578dd6c8cf9e2e5a8ca634
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: e36ccd7b1c0b1902e3631379d71e681e533fa3a6103cc59a3ec65731c4e6326f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018931"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775613"
 ---
 # <a name="create-a-requisition-for-consumption"></a>Skapa en rekvisition för förbrukning
 
@@ -91,3 +89,6 @@ Det här avsnittet beskriver processen för att skapa en rekvisition. Den visar 
 6. Stäng sidan.
 7. Uppdatera sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

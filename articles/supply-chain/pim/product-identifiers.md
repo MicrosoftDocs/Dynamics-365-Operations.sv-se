@@ -1,34 +1,31 @@
 ---
 title: Produktidentifierare
 description: Det här avsnittet innehåller information om de olika typerna av produktidentifierare och förklarar hur du infogar produktidentifierare i dina produktdata.
-author: cvocph
-manager: tfehr
+author: t-benebo
 ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: kamaybac
+ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c16818f1dc52c9e21130539213e7e8d1053fef1d
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 638b5c3b0c83f67f3d99331b6456efd1b8f5225a
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529196"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063351"
 ---
 # <a name="product-identifiers"></a>Produktidentifierare
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,9 +39,9 @@ I Dynamics 365 Supply Chain Management är den primära identifieraren för prod
 
 I många fall skapades inte produktnumret ursprungligen i Dynamics 365 Supply Chain Management. I stället associeras det med en produkt i system för livscykelhantering för produkt (PLM) eller hantering av produktdata (PDM). I det här fallet kan du använda datatabeller för att importera produkterna och produktvarianterna. Supply Chain Management använder sedan numren i alla operationer.
 
-När du implementerar Supply Chain Management bör du särskilt beakta din strategi för produktnummer. Ett bra numreringssystem förbättrar logistikflöden och förebygger fel. En bra produktidentifierare har högst 15 tecken. Idealiskt har den färre än 10 tecken och innehåller högst fem klassificeringstecken. Du kan också använda söknamn för att aktivera snabbsökning. Ett söknamn är ett ytterligare namn som representerar klassificeringen av en produkt.
+När du implementerar Supply Chain Management bör du särskilt beakta din strategi för produktnummer. Ett bra numreringssystem förbättrar logistikflöden och förebygger fel. En bra produktidentifierare bör vanligtvis ha 20 tecken eller mindre, men vi rekommenderar vanligtvis att du använder färre än 10 tecken och inte inkluderar fler än 5 klassificeringstecken. Du kan också använda söknamn för att aktivera snabbsökning. Ett söknamn är ett ytterligare namn som representerar klassificeringen av en produkt.
 
-När du använder Common Data Service är produktnumret i Supply Chain Management också produktnumret i Common Data Service. Produktvarianter synkroniseras till Common Data Service som olika produkter.
+När du använder Microsoft Dataverse är produktnumret i Supply Chain Management också produktnumret i Microsoft Dataverse. Produktvarianter synkroniseras till Dataverse som olika produkter.
 
 ## <a name="item-number-and-product-dimensions"></a>Artikelnummer och produktdimensioner
 
@@ -109,7 +106,7 @@ För att underhålla streckkoder, på sidan **Frisläppta produkter** på fliken
 
 Inom e-handel är det viktigt att alla parter talar ett gemensamt språk och hänvisar till produkter med en gemensam uppsättning identifierare. Därför kan vissa branscher vara beroende av [GTIN](https://www.gs1.org/id-keys/gtin), som är ett globalt artikelnummersystem som möjliggörs med hjälp av GS1.
 
-Vi rekommenderar att du underhåller GTIN som en streckkod. Men du kan också hantera den på sidan **Artikel - GTIN**. För att öppna denna sida, på **Frisläppta produkter** på fliken **Hantera lager** i gruppen **Lagerställe** markerar du **GTIN-koder**. Observera att GTIN inte hanteras som ett globalt nummer. I stället hanteras det av juridisk person.
+Vi rekommenderar att du underhåller GTIN som en streckkod. Men du kan också hantera den på sidan **Artikel - GTIN**. För att öppna denna sida, på **Frisläppta produkter** på fliken **Hantera lager** i gruppen **Lagerställe** markerar du **GTIN-koder**. GTIN hanteras inte som ett globalt nummer. I stället hanteras det av juridisk person.
 
 I Supply Chain Management definierar du förpackningsvarianter i lageroperationer genom att definiera specifika måttenheter. Till exempel kan en artikel lagras i delar, buntar med sex, i fack med 18 eller i fulla lastpallar. En specifik måttenhet ska fastställas för var och en av dessa förpackningsvarianterna. Eftersom GTIN normalt är relaterad till en produkts förpackningsenheten låter sidan **Artikel - GTIN** dig hantera flera GTIN-koder per produkt och måttenheten. Du kan inte använda samma GTIN-kod mer än en gång för olika artiklar eller produktvarianter i en juridisk person.
 
@@ -127,12 +124,12 @@ Det finns tyvärr ingen standardfunktion där du kan söka efter produkter efter
 |-------------|--------------------|--------------------|----------|
 | Produker V2 | Produktnummer, produktsökningsnamn, produktnamn, produktbeskrivning | Produktnummer, produktsökningsnamn, produktnamn, produktbeskrivning | Beroende på inställningarna för enheten och nummerserien för produktnumret kan produktnummer skapas automatiskt vid tidpunkten för importen. |
 | Produktvarianter | Produktnummer, produktsökningsnamn, produktnamn, produktbeskrivning | Produktnummer, produktsökningsnamn, produktnamn, produktbeskrivning | Beroende på vilken mall för produktnomenklatur kan produktnummer skapas automatiskt vid tidpunkten för importen. Men du kan importera alla unika produktnummer och det produktnumret behöver inte ha strukturen som mallen för produktnomenklatur. |
-| Produktöversättningar | Produktnamn, produktbeskrivning | Produktnamn, produktbeskrivning | Den här entiteten skriver över alla språk. Observera att när det primära språket för namnet eller beskrivningen av en juridisk person skrivs över, ändras namn och beskrivning för produkten. |
+| Produktöversättningar | Produktnamn, produktbeskrivning | Produktnamn, produktbeskrivning | Den här entiteten skriver över alla språk. När det primära språket för namnet eller beskrivningen av en juridisk person skrivs över, ändras namn och beskrivning för produkten. |
 | Frisläppt produktgenerering version2 | Artikelnummer, produktnummer, namn på artikelsökning| Artikelnummer, produktnummer, namn på artikelsökning, namn på produktsökning, produktnamn | Den här entiteten kan vara svår när nummerserier används när du skapar nya frisläppta produkter. Både nummerserien **Artikelnummer** och nummerserien **Produktnummer** påverkar. Men nummerserien **Artikelnummer** är per juridisk person, medan nummerserien **Produktnummer** är global. Därför rekommenderar vi inte att du använder nummerserien **Artikelnummer** när du distribuerar nya frisläppta produkter. Det är självklart att när enheten används för att frisläppa en befintlig produkt måste produktnumret anges i enheten. Mer information finns i avsnittet ”Produkt- och artikelnummerserier” i det här avsnittet. |
 | Frisläppta produktvarianter | Artikelnummer, produktdimensioner, produktnummer | Produktnummer, produktsökningsnamn, produktnamn, produktbeskrivning, produktdimensioner | Liksom entiteten **Produktvarianter** kan den här entiteten kan användas för att skapa nya produkter som antingen följa mallen för produktnomenklatur eller egna produktnummer för varianten. |
 | Extern artikelbeskrivning för kunder | Kundens artikelnummer, kundens artikelnamn, kundbeskrivning, kundkonto | Kundens artikelnummer, kundens artikelnamn, kundbeskrivning, kundkonto | En grupp med kunder (exempelvis en köparförening) kan samlas i en grupp med hjälp av entiteten **Kundgrupper för extern artikelbeskrivning**. |
 | Extern artikelbeskrivning för säljare | Leverantörens artikelnummer, leverantörens artikelnamn, leverantörsbeskrivning, leverantörskonto | Leverantörens artikelnummer, leverantörens artikelnamn, leverantörsbeskrivning, leverantörskonto | En grupp med leverantörer (exempelvis en säljarförening eller branschorganisation) kan samlas i en grupp med hjälp av entiteten **Leverantörsgrupper för extern artikelbeskrivning**. |
-| Artikelstreckkod | Streckkod | Streckkod | Observera att vid tidpunkten för importen måste du hänvisa till en streckkodsinställning som definieras i målsystemet. De importerade streckkodreferenserna verifieras mot streckkodsinställningen och avvisas om streckkoderna inte motsvarar kraven som har definierats i dessa streckkodsinställningar. |
+| Artikelstreckkod | Streckkod | Streckkod | Vid tidpunkten för importen måste du hänvisa till en streckkodsinställning som definieras i målsystemet. De importerade streckkodreferenserna verifieras mot streckkodsinställningen och avvisas om streckkoderna inte motsvarar kraven som har definierats i dessa inställningar. |
 | Externa koder för frisläppta produkter | Extern kod | Extern kod, externa kodklasser, artikelnummer | Externa koder är efter juridisk person. Vid import måste du hänvisa till en angiven kodklass. Importera kodklasser genom att använda entiteten **Externa kodklasser för frisläppta produkter**. |
 | Externa koder för frisläppta produktvarianter | Extern kod | Extern kod, externa kodklasser, artikelnummer, produktdimensioner | Externa koder är efter juridisk person. Vid import måste du hänvisa till en angiven kodklass. Importera kodklasser genom att använda entiteten **Externa kodklasser för frisläppta produkter**. Den här entiteten avser produktvarianter efter artikelnummer och produktdimensioner. |
 | Externa koder för frisläppta produktvarianter per produktnummeridentifierare | Extern kod | Extern kod, externa kodklasser, produktnummer | Externa koder är efter juridisk person. Vid import måste du hänvisa till en angiven kodklass. Importera kodklasser genom att använda entiteten **Externa kodklasser för frisläppta produkter**. Den här entiteten avser produktvarianter efter produktnummer av varianten. (Från nästa stora utgåva) |
@@ -161,13 +158,13 @@ Följande tabell ger en översikt över resultaten av import och manuellt skapan
 | Nummerserien Produktnummer | Nummerserien Artikelnummer | Mappning av artikelnummer. | Mappning av produktnumret. | Resultat av entitetsimport | Resultat av manuellt skapande | Slutsats |
 |--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
 | Manuell = Nej | Manuell = Nej | Ingen mappning | Ingen mappning | Produktnummer använder nummerserien **Produktnummer**. Artikelnummer använder nummerserien **Artikelnummer**. | Produktnummer använder nummerserien **Produktnummer**. Artikelnummer använder nummerserien **Artikelnummer**. | Med den här konfigurationen följer produktnumren följer produktnummerserien och artikelnumren följer artikelnummerserien. Den här konfigurationen fungerar dock inte om det finns fler än en artikel (rad) att importera. |
-| Manuell = Nej | Manuell = Ja | Autogenerera | Ingen mappning | Både produktnummer och artikelnummer använder nummer serien **Artikelnummer**. | Både produktnummer och artikelnummer använder nummer serien **Produktnummer**. | Både produktnummer och artikelnummer följer produktnummersekvensen. Detta är den rekommenderade metoden för att importera bulkprodukter till dataentiteten Frisläppt produktgenerering V2. |
-| Manuell = Nej | Manuell = Ja | Ingen mappning | Ingen mappning | Både produktnummer och artikelnummer använder nummer serien **Produktnummer**. | Både produktnummer och artikelnummer använder nummer serien **Produktnummer**. | Både produktnummer och artikelnummer använder produktnummersekvensen. Den här konfigurationen fungerar dock inte om det finns fler än en artikel (rad) att importera. |
-| Manuell = Ja | Inte tillämpligt | Inte tillämpligt | Autogenerera | Du får följande felmeddelande: ”Nummerserien kan inte identifieras”. | Enligt nummerserien **Artikelnummer** | Den här inställningen stöds inte för import. |
+| Manuell = Nej | Manuell = Ja | Autogenerera | Ingen mappning | Både produktnummer och artikelnummer använder nummer serien **Artikelnummer**. | Både produktnummer och artikelnummer använder nummer serien **Produktnummer**. | Både produktnummer och artikelnummer följer produktnummersekvensen. Detta är den rekommenderade metoden för att importera bulkprodukter till dataentiteten Frisläppt produktgenerering V2.<br><br>Du kan bara använda det här arbetssättet vid bulkimport av artiklar (flera rader) och när du inte skapar artiklar via användargränssnittet. Om du behöver både importera bulk och skapa produkter via användargränssnittet, använder du istället proceduren på nästa rad i registret. För att övergå från att använda en bulkimportmetod till att använda användargränssnittet för att manuellt importera och skapa produkter måste du manuellt justera **Nästa nummer** i artikelnummerserien för att matcha **Nästa nummer** i produktnummersekvensen. Du kan sedan växla till nästa rad i det här registret. |
+| Manuell = Nej | Manuell = Ja | Ingen mappning | Ingen mappning | Både produktnummer och artikelnummer använder nummer serien **Produktnummer**. | Både produktnummer och artikelnummer använder nummer serien **Produktnummer**. | Både produktnummer och artikelnummer använder produktnummersekvensen. Den här konfigurationen fungerar dock inte om det finns fler än en artikel (rad) att importera.<br><br>Du måste använda det här arbetssättet om du både behöver importera produkter med hjälp av enheterna (endast en rad kan importeras åt gången) och för att skapa produkter via användargränssnittet. |
+| Manuell = Ja | Inte aktuellt | Inte aktuellt | Autogenerera | Du får följande felmeddelande: ”Nummerserien kan inte identifieras”. | Enligt nummerserien **Artikelnummer** | Den här inställningen stöds inte för import. |
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Identifierare för produktenhet (exportera alla produktidentifierare)
 
-Produktenhetens ID-modell skapades för att möjliggöra att version 1.0 av CDS tillhandahålls med alla identifierare som används för att referera till en produkt. För att förenkla uppgiften samlas alla identifierare i en global identifierartabell så att de kan exporteras som en modell. Observera att den här versionen av CDS inte använder produktidentifierarens modell. Därför har entiteten **Produktentiteten identifierare av common data service** och denna process begränsad praktisk användning och kommer sannolikt att ändras i framtiden.
+Produktenhetens ID-modell skapades för att möjliggöra att version 1.0 av Dataverse tillhandahålls med alla identifierare som används för att referera till en produkt. För att förenkla uppgiften samlas alla identifierare i en global identifierartabell så att de kan exporteras som en modell. Observera att den här versionen av Dataverse inte använder produktidentifierarens modell. Därför har entiteten **Produktentiteten identifierare av common data service** och denna process begränsad praktisk användning och kommer sannolikt att ändras i framtiden.
 
 Tabellen för produktidentifierare är en globalt tabell som är ifylld från alla referenstabeller från den huvudsakliga juridiska personen genom ett återkommande batchjobb. Du måste välja en juridisk person och en produktkategorihierarki som definition av den globala produktmallomfattningen. Generering av den globala tabellen för produktidentifierare begränsas till produkter som övergår till den valda juridiska personen och produkter som ingår i produkthierarkin som har valts för rollen **Common data service** i produktkategorihierarkin.
 
@@ -175,11 +172,11 @@ Den här processen förutsätter att huvuddata för produkt huvudsakligen hålls
 
 Gör på följande sätt när du vill konfigurera miljön.
 
-1. Välj kategorihierarki för CDS. På sidan **Rollassociationer för kategorihierarkier** om ingen hierarki är associerad med rollen **Common data service** måste du skapa en ny association. Välj rollen **Common data service** och associera sedan den kategorihierarki som representerar produktportföljen som ska synkroniseras till CDS.
+1. Välj kategorihierarki för Dataverse. På sidan **Rollassociationer för kategorihierarkier** om ingen hierarki är associerad med rollen **Common data service** måste du skapa en ny association. Välj rollen **Common Data Service** och associera sedan den kategorihierarki som representerar produktportföljen som ska synkroniseras till Dataverse.
 2. Välj juridisk person för globala huvuddata för produkt. På sidan **Parametrar för produktinformationshantering** på fliken **Produktattribut** väljer du det huvudföretag där produkt- och artikelidentifierarna huvudsakligen hålls.
 3. Definiera ID-kodtyper och koder som ska exporteras. Gå till **Produktinformationshantering**&gt;**Inställningar**&gt;**ID-koder för produkt**. Om du vill generera ID-kodtyperna, välj **Generera koder**. En kodtyppost genereras för varje typ för identifierare som finns i den valda juridiska personen.
 
-    Observera att för streckkoder genereras en kodtyp för varje streckkodsinställningar. För externa koder genereras en kodtyp för varje extern kodklass.
+    För streckkoder genereras en kodtyp för varje streckkodsinställningar. För externa koder genereras en kodtyp för varje extern kodklass.
 
     Nu kan du underhålla listan över kodtyper. Du kan ändra kod, namn och beskrivning. Du kan också radera kodtyper. Kodtyper som du tar bort används inte för att fylla i de globala produktenhetens ID-tabeller
 
@@ -190,3 +187,6 @@ Nu kan du använda dataentiteterna **Entiteten identifierare av common data serv
 ## <a name="related-topic"></a>Relaterat ämne
 
 [Sök efter produkter och produktvarianter under orderregistrering](search-products-product-variants.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

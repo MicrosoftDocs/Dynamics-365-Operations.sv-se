@@ -2,11 +2,9 @@
 title: Organisationsutbildning Power BI-innehåll
 description: Det här avsnittet beskriver Finance and Operations – Organisationsutbildning för Power BI-innehåll.
 author: jcart1106
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bbbb3069ffc43062e456721e189f671398514cfd
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cd48c12ea3ea31904c437f678888a51e5381cfcfbeef0e1c709858b0c6cb857d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685845"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763558"
 ---
 # <a name="organizational-training-power-bi-content"></a>Organisationsutbildning Power BI-innehåll
 
@@ -57,3 +55,6 @@ Programdata används för att fylla i rapporter i innehållspaketet för organis
 | Training\_Position        | Befattning, titel och heltidsanställning (FTE)                  | Training\_CourseAgenda, Training\_CourseAttendees |
 | Training\_WorkerName      | Förnamn, efternamn och fullständiga namn                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | Titel och tjänsteålder                                         | Training\_CourseAttendees |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

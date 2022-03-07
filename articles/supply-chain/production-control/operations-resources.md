@@ -1,12 +1,10 @@
 ---
 title: Operations-resurser
 description: Verksamhetsresurser utför aktiviteter för ett projekt eller en produktionsprocess. De kan vara av olika typer och kan ha olika förmågor.
-author: sorenva
-manager: tfehr
+author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability, WrkCtrResourceGroup, WrkCtrResourceAbilityMap, OpResCapacityPlanningWorkspace, WrkCtrCapResGraph, WrkCtrResourceRequirementPart, WrkCtrCapResGraphDialog, WrkCtrResourceCopy, WrkCtrCapResStatistic
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 61943
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: sorenand
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06f5c4ca565511c9392c2f33d081706e571f65e0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9296ea874acece9af6be58ccfe777f8713a4d279
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966440"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566729"
 ---
 # <a name="operations-resources"></a>Operations-resurser
 
@@ -31,8 +29,7 @@ ms.locfileid: "4966440"
 
 Verksamhetsresurser utför aktiviteter för ett projekt eller en produktionsprocess. De kan vara av olika typer och kan ha olika förmågor. 
 
-<a name="operations-resources"></a>Operations-resurser
---------------------
+## <a name="operations-resources"></a>Operations-resurser
 
 Verksamhetsresurser är de datorer, verktygen, arbetarna, lättheterna, fysiska områdena eller leverantörer som utför aktiviteter för ett projekt eller en produktionsprocess. De kan vara av andra typer och kan ha olika förmågor.
 
@@ -84,3 +81,6 @@ När du definierar en aktivitet som till exempel en flödesoperation eller en ti
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

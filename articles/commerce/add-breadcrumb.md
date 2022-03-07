@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f387b6353e58ebb454b74568ddc17ae6d25d7e36
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 050ba58073d6e7e7710ab768e7ce3ea628440f4d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109742"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346958"
 ---
 # <a name="breadcrumb-module"></a>Modul för navigeringssökväg
 
@@ -81,7 +81,7 @@ Om du vill lägga till en modul för navigeringssökväg till en PDP och ställa
 
 [Modul för navigeringsmeny](nav-menu-module.md)
 
-[Webbplatsväljarmodul](site-selector.md)
+[Modul för webbplatsväljare](site-selector.md)
 
 [Översikt över standardkategorilandningssida och sida för sökresultat](category-search-page-overview.md)
 

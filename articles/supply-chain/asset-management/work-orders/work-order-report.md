@@ -1,12 +1,10 @@
 ---
 title: Arbetsorderrapport
 description: Det här avsnittet beskriver arbetsorderrapporter i Tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 93544f0459641c5e72ec6a0af10f0db9718ad799
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3686629af4116df6fc7ea530216ec0d12ecd60bab8f7150e0d2a3917bc12adaf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022375"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780256"
 ---
 # <a name="work-order-report"></a>Arbetsorderrapport
 
@@ -44,9 +42,12 @@ Du kan skapa en arbetsorderrapport som visar detaljerad information om en eller 
 
 I följande illustration visas ett exempel på hur rapportparametrarna kan ställas in.
 
-![Figur 1](media/20-work-orders.png)
+![Figur 1.](media/20-work-orders.png)
 
 I följande illustration visas ett exempel på en arbetsorderrapport som genereras utifrån den inställningen.
 
-![Figur 2](media/21-work-orders.png)
+![Figur 2.](media/21-work-orders.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

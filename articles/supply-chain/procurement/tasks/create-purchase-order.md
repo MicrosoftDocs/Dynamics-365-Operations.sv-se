@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5a3da6b70054fac878ba6266017bffe75f634f61
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 2152a2f6677fc0a321f15798c063f01ffd5969d4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016638"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5212016"
 ---
 # <a name="create-a-purchase-order"></a>Skapa en inköpsorder
 
@@ -73,3 +73,6 @@ Det här avsnittet visar hur du skapar en inköpsorder manuellt. Den är vanliga
 
 2. Välj **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

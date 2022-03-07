@@ -3,7 +3,7 @@ title: Översikt över uppgiftshantering
 description: Det här avsnittet innehåller en översikt över uppgiftshantering för chefer och arbetare i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/10/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 7cdcc0ba6a9f5a3d9dd4ea781adc9e81c45e3d02
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: bc33a8b21c75a308aea738f0db1f3786695f0633
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985403"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791737"
 ---
 # <a name="task-management-overview"></a>Översikt över uppgiftshantering
 
@@ -37,7 +37,7 @@ Butikschefer kan använda uppgiftshantering för att tilldela uppgifter till ens
 
 Följande illustration visar den konceptuella arkitekturen för uppgiftshantering i Commerce.
 
-![Konceptarkitektur för uppgiftshantering.](media/Tasks-management-conceptual-architecture.png)
+![Konceptarkitektur för uppgiftshantering](media/Tasks-management-conceptual-architecture.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35ade352edf31fe895a9b9118a8ad7d5fe6c0bde
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: bf77e488b60cc4c526398db494104c31b0f210b1
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798413"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5570955"
 ---
 # <a name="show-pages-side-by-side-using-the-open-in-new-window-feature"></a>Visa sidor sida vid sida med funktionen Öppna i nytt fönster
 
@@ -48,3 +47,6 @@ Innan du använder funktionen **Öppna i nytt fönster** måste du konfigurera w
 Funktionen **Öppna i nytt fönster** är endast tillgänglig när det finns fler än en sida som är öppen i fönstret. Popup-fönstret stängs även automatiskt när det inte finns några fler öppna sidor (det vill säga när den sista sidan i det fönstret stängs.) Systemet stänger även öppna sidor när du navigerar till ett annat område i programmet. Om du har öppna popup-fönster och navigerar till ett annat område i programmet stängs därför popup-fönster automatiskt, eftersom sidorna i dessa fönster stängdes av systemet.
 
 Det övre fältet i popup-fönster visar information om företaget som sidan öppnades i och är skrivskyddat. Popup-fönstren använder även de huvudsakliga webbläsarfönstret. Om huvudfönstret stängs eller uppdateras, blir alla öppna popup-fönster skrivskyddade. I det här fallet kan du fortfarande visa informationen i dessa fönster, men du kan inte interagera med den.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

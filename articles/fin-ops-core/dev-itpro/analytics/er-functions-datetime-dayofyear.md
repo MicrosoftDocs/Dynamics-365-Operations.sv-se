@@ -2,11 +2,9 @@
 title: DAYOFYEAR ER-funktion
 description: Det här avsnittet innehåller information om hur funktionen DAYOFYEAR elektronisk rapportering (ER) används.
 author: NickSelin
-manager: kfend
 ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9b937e7fae3e90d1a87196fab653dfac8e94179
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 569e988db91ff992fb7db6e7fd6e8c6aa6a1a3e8
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682399"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746925"
 ---
 # <a name="dayofyear-er-function"></a>DAYOFYEAR ER-funktion
 
@@ -59,3 +57,6 @@ Det resulterande numeriska värdet.
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Datum- och tidsfunktioner](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

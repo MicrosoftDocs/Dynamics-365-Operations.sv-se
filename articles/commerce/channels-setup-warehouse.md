@@ -47,7 +47,7 @@ I bilden nedan visas ett exempel på lagerställeplats.
 
 ![Exempel på lagerställeplats.](media/warehouse-site.png)
 
-## <a name="set-up-a-warehouse&quot;></a>Ställ in ett lagerställen
+## <a name="set-up-a-warehouse"></a>Ställ in ett lagerställen
 
 Så här ställer du in ett lagerställe.
 
@@ -61,14 +61,14 @@ Så här ställer du in ett lagerställe.
     - Om du vill ställa in ett **Transitlager** måste du först följa stegen nedan för att skapa ett ytterligare lagerställe där **Typ** ställs in på **Transit**.
 1. Klicka på **Spara** i åtgärdsfönstret.
 
-## <a name=&quot;set-up-inventory-aisles&quot;></a>Ställ in lagergångar
+## <a name="set-up-inventory-aisles"></a>Ställ in lagergångar
 
 Så här ställer du in lagergångar.
 
 1. I navigeringsfönstret, gå till **Moduler \> Butik och handel \> Kanalsinställning \> Platsinställning \> Lagergångar**.
 1. Klicka på **Ny** i åtgärdsfönstret.
 1. I listrutan **Lagerställe** väljer du det lagerställe som du skapade tidigare.
-1. I fältet **Gång** anger du ett namn (till exempel &quot;Def").
+1. I fältet **Gång** anger du ett namn (till exempel "Def").
 1. I fältet **Namn** anger du ett namn (till exempel "Standardgång").
 1. Klicka på **Spara** i åtgärdsfönstret.
 

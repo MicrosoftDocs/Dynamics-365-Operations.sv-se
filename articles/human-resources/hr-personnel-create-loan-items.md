@@ -2,7 +2,7 @@
 title: Skapa låneartiklar
 description: Låneartiklar är poster som gör det enklare att spåra fysiska artiklar, till exempel telefoner eller datorer, som ditt företag lånar ut till arbetare.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,19 +11,21 @@ ms.technology: ''
 ms.search.form: HcmLoanType, DefaultDashboard, HcmLoanItem, HcmWorkerLookUp, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8317a2fbe9d857ed3824631241b99c333b6dc4e8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5b93f68790a72af28130d80ed189538f9c5c87ab
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420585"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467123"
 ---
 # <a name="create-loan-items"></a>Skapa låneartiklar
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -59,3 +61,6 @@ Låneartiklar är poster som gör det enklare att spåra fysiska artiklar, till 
 14. Klicka på OK.
 15. Uppdatera sidan.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

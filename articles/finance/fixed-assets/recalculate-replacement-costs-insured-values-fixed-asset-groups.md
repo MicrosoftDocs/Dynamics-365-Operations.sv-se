@@ -1,31 +1,33 @@
 ---
-title: Räkna om ersättningskostnader och försäkrade värden för anläggningstillgångsgrupper
-description: Det här ämnet beskriver processen för att uppdatera ersättningskostnaden och de försäkrade värdena för anläggningstillgångar.
-author: moaamer
+title: Räkna om ersättningskostnader och försäkrade värden för Anläggningstillgångsgrupper
+description: Den här artikeln beskriver processen för att uppdatera ersättningskostnaden och de försäkrade värdena för anläggningstillgångar.
+author: ShylaThompson
+manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 3261
 ms.assetid: b8876f83-8772-4f2a-b277-12724e2a0c44
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33d3dba59e459193798d790e64d2493c244d49a3
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: b9a6db9942e9d9b63d89c56ec4a03612917772c1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674886"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5240844"
 ---
-# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Räkna om ersättningskostnader och försäkrade värden för anläggningstillgångsgrupper
+# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Räkna om ersättningskostnader och försäkrade värden för Anläggningstillgångsgrupper
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet beskriver processen för att uppdatera ersättningskostnaden och de försäkrade värdena för anläggningstillgångar.
+Den här artikeln beskriver processen för att uppdatera ersättningskostnaden och de försäkrade värdena för anläggningstillgångar.
 
 Då och då kanske du får information om att kostnaden för att ersätta eller försäkra vissa anläggningstillgångar har ändrats. Din chef kanske till exempel informerar dig om att inflationen var 3 procent högre förra året, så att du måste öka ersättningskostnaden för alla anläggningstillgångar med 3 procent. 
 

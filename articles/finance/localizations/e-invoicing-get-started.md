@@ -2,25 +2,25 @@
 title: Kom i gång med elektronisk fakturering
 description: Det här avsnittet innehåller information som hjälper dig att komma igång med elektronisk fakturering i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 11/08/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ba9f6ca08af0647f4519726894b1c9dfcc9cce24
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: cf553f2ffecf18859b88932e68360231ca46410f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983883"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840134"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Kom i gång med elektronisk fakturering
 
@@ -38,10 +38,10 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 ## <a name="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider"></a>Importera en elektronisk faktureringsfunktion från Microsofts konfigurationsleverantör 
 
 1. Logga in på ditt konto för Regelkonfigurationstjänst (RCS).
-2. I arbetsytan **globaliseringsfunktioner** i avsnittet **Funktioner**, välj panelen **Elektronisk faktura**.
+2. I arbetsytan **globaliseringsfunktion** i avsnittet **Funktioner**, välj panelen **Elektronisk faktura**.
 3. Välj **Import** och sedan **Synkronisera**.
 4. Filtrera kolumnen **Konfigurationsleverantör** med termen **Microsoft**.
-5. Välj namnet på en elektronisk faktureringsfunktion från tabellen och välj **Importera**.
+5. Välj namnet på en elektronisk faktureringsfunktion i tabellen i början av det här ämnet och välj sedan **Importera**.
 
 ## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Skapa en funktion för elektronisk fakturering för organisationsleverantören
 
@@ -55,12 +55,7 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 
 Beroende på land eller region kan den elektroniska faktureringsfunktionen kräva specifik konfiguration. 
 
-> [!NOTE]
-> När du aktiverar funktionen Elektronisk fakturering för Finland stöds innte applikationsspecifika parametrar i sökningar. För att komma runt detta problem granskar du konfigurationerna för format för försäljningsfaktura och projektfaktura i modulen **Elektronisk rapportering**. Konfigurera beräknat fält för **$PaymentMethodSubstitution**-mappningen manuellt och bind sedan det fältet till fältet **EpiPaymentMeansCode** från formaten för försäljningsfaktura och projektfaktura.
->
-> När du aktiverar funktionen Elektronisk fakturering för Italien stöds inte applikationsspecifika parametrar i sökningar. För att komma runt detta problem öppnar du modulen **Elektronisk rapportering** och konfigurerar beräknat fät för mappningen **$NaturaReverseCharge** manuellt.
->
-> Specifika steg relaterade till andra platser finns i dokumentationen "Kom igång" som är tillgänglig för ditt land eller din region.
+Specifika steg finns i dokumentationen "Kom igång" som är tillgänglig för ditt land eller din region.
 
 ## <a name="import-the-model-mapping-configurations-from-electronic-reporting"></a>Importera modellmappningskonfigurationer från elektronisk rapportering
 
@@ -87,7 +82,6 @@ Beroende på land eller region kan den elektroniska faktureringsfunktionen kräv
 | Norsk elektronisk faktura (NO)    | <p>Kontextmodell för kundfaktura</p><p>Fakturamodell</p> |
 | Spansk elektronisk faktura (ES)      | <p>Kontextmodell för kundfaktura</p><p>Fakturamodell</p> |
 | PEPPOL-elektronisk faktura            | <p>Kontextmodell för kundfaktura</p><p>Fakturamodell</p> |
-| Elektronisk faktura för Saudiarabien (SA)| <p>Kontextmodell för kundfaktura</p><p>Fakturamodell</p> |
 
 
 ## <a name="configure-the-application-setup"></a>Konfigurera programmets inställningar
@@ -116,9 +110,8 @@ Beroende på land eller region kan den elektroniska faktureringsfunktionen kräv
     | Norsk elektronisk faktura (NO)    | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kundfakturajournal</p><p>Projektfaktura</p> |
     | Spansk elektronisk faktura (ES)      | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kundfakturajournal</p><p>Projektfaktura</p> |
     | PEPPOL-elektronisk faktura            | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kundfakturajournal</p><p>Projektfaktura</p> |
-    | Elektronisk faktura för Saudiarabien (SA)| <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kundfakturajournal</p><p>Projektfaktura</p> |
 
-6. För varje tabellnamn du skapar väljer du och anger ett kontextvärde enligt följande tabell.
+7. För varje tabellnamn du skapar väljer du och anger ett kontextvärde enligt följande tabell.
 
     | Funktionsnamn                         | Affärsdokument | Kontext |
     |--------------------------------------|-------------------|---------|
@@ -138,9 +131,8 @@ Beroende på land eller region kan den elektroniska faktureringsfunktionen kräv
     | Norsk elektronisk faktura (NO)    | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kontextmodell för kundfaktura – kontext för kundfaktura</p><p>Kontextmodell för kundfaktura – kontext för projektfaktura</p> |
     | Spansk elektronisk faktura (ES)      | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kontextmodell för kundfaktura – kontext för kundfaktura</p><p>Kontextmodell för kundfaktura – kontext för projektfaktura</p> |
     | PEPPOL-elektronisk faktura            | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kontextmodell för kundfaktura – kontext för kundfaktura</p><p>Kontextmodell för kundfaktura – kontext för projektfaktura</p> |
-    | Elektronisk faktura för Saudiarabien (SA)| <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kontextmodell för kundfaktura – kontext för kundfaktura</p><p>Kontextmodell för kundfaktura – kontext för projektfaktura</p> |
 
-7. För varje tabellnamn och sammanhang, välj och ange ett mappningsvärde för affärsdokument enligt följande tabell.
+8. För varje tabellnamn och sammanhang, välj och ange ett mappningsvärde för affärsdokument enligt följande tabell.
 
     | Funktionsnamn                         | Affärsdokument | Mappning av affärsdokument |
     |--------------------------------------|-------------------|---------------------------|
@@ -160,7 +152,6 @@ Beroende på land eller region kan den elektroniska faktureringsfunktionen kräv
     | Norsk elektronisk faktura (NO)    | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Fakturamodellmappning – Kundfaktura</p><p>Fakturamodellmappning – Projektfaktura</p> |
     | Spansk elektronisk faktura (ES)      | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Fakturamodellmappning – Kundfaktura</p><p>Fakturamodellmappning – Projektfaktura</p> |
     | PEPPOL-elektronisk faktura            | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Fakturamodellmappning – Kundfaktura</p><p>Fakturamodellmappning – Projektfaktura</p> |
-    | Elektronisk faktura för Saudiarabien (SA)| <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Fakturamodellmappning – Kundfaktura</p><p>Fakturamodellmappning – Projektfaktura</p> |
 
 
 ## <a name="country-specific-configuration-of-application-setup"></a>Landsspecifik konfiguration av programinställningar
@@ -184,11 +175,11 @@ Specifika steg finns i dokumentationen "Kom igång" som är tillgänglig för di
 ## <a name="deploy-the-electronic-invoicing-feature-to-connected-application"></a>Distribuera funktionen elektronisk fakturering till anslutet program
 
 1. I fliken **Version** väljer du den version av Elektronisk fakturering som du vill distribuera.
-2. Välj **Distribuera**.
-3. Ställ in alternativet **Distribuera till anslutet program** som **Ja**.
-4. I fältet **Anslut program** väljer du den anslutning som är associerad med din instans av Finance eller Supply Chain Management.
-5. Ställ in alternativet **Distribuera till tjänstemiljö** som **Nej**.
-6. Välj **OK**.
+4. Välj **Distribuera**.
+5. Ställ in alternativet **Distribuera till anslutet program** som **Ja**.
+6. I fältet **Anslut program** väljer du den anslutning som är associerad med din instans av Finance eller Supply Chain Management.
+7. Ställ in alternativet **Distribuera till tjänstemiljö** som **Nej**.
+10. Välj **OK**.
 
 ## <a name="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management"></a>Aktivera funktionen Elektronisk fakturering i Finance eller Supply Chain Management
 
@@ -214,15 +205,13 @@ Specifika steg finns i dokumentationen "Kom igång" som är tillgänglig för di
     | Norsk elektronisk faktura (NO)                     | Norge          |
     | PEPPOL-elektronisk faktura                             | Globalt          |
     | Spansk elektronisk faktura (ES)                       | Spanien           |
-    | Elektronisk faktura för Saudiarabien (SA)                 | Saudiarabien    |
-    
 
 4. Välj **Spara**.
 
 ## <a name="issue-electronic-invoices"></a>Utfärda elektroniska fakturor
 
 1. Gå till **Organisationsadministration** \> **Periodisk** \> **Elektroniska dokument** \> **Skicka in elektroniska dokument**.
-2. På snabbfliken **Poster att inkludera**, välj **Filter**.
+2. På snabbfliken **Post att inkludera** väljer du **Filter**.
 3. Välj **Lägg till** om du vill lägga till ett registernamn i frågefiltret.
 4. Välj det register som innehåller fakturorna.
 
@@ -244,24 +233,15 @@ Specifika steg finns i dokumentationen "Kom igång" som är tillgänglig för di
 
 3. Välj en faktura u rutnätet och välj sedan **Sök** \> **Sändningsinformation**.
 
-## <a name="download-an-electronic-document-file"></a>Ladda ned en elektronisk dokumentfil
-
-1. Gå till **Organisationsadministration** \> **Periodisk** \> **Elektroniska dokument** \> **Inlämningslogg för elektroniska dokument**.
-2. I fältet **Dokumenttyp** anger du et register som innehåller fakturorna.
-3. Välj ett dokument i rutnätet och välj sedan **Elektroniskt dokument** \> **Ladda ned fil**. Ett arkiv som innehåller den elektroniska dokumentfilen kommer att föreslås för hämtning.
-
-> [!NOTE]
-> Innan du kan hämta filer måste alternativet **Exportera resultat** vara aktiverat för den relaterade åtgärden i inställningarna för elektronisk fakturering i RCS.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [E-fakturering – översikt](e-invoicing-service-overview.md)
+- [Elektronisk fakturering – översikt](e-invoicing-service-overview.md)
 - [Kom i gång med tjänstadministration för elektronisk fakturering](e-invoicing-get-started-service-administration.md)
 - [Kom i gång med elektronisk fakturering för Brasilien](e-invoicing-bra-get-started.md)
 - [Kom i gång med elektronisk fakturering för Mexiko](e-invoicing-mex-get-started.md)
 - [Kom i gång med elektronisk fakturering för Italien](e-invoicing-ita-get-started.md)
 - [Elektroniska kundfakturor i Egypten](emea-egy-e-invoices.md)
-- [Elektroniska kundfakturor i Saudiarabien](emea-sau-e-invoices.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

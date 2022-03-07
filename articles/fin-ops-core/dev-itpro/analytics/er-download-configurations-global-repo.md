@@ -1,12 +1,10 @@
 ---
 title: Hämta ER-konfigurationer från den globala databasen med konfigurationstjänster
-description: I det här avsnittet beskrivs hur du hämtar konfigurationer av elektronisk rapportering (ER) från den globala lagringsplatsen för konfigurationstjänsten.
+description: I det här avsnittet beskrivs hur du hämtar konfigurationer av elektronisk rapportering (ER) från den globala databasen för konfigurationstjänsten.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a96e78a64fe0559ae5f3bfddabf3fe1cad8a3dcb
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679568"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605341"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Hämta ER-konfigurationer från den globala databasen med konfigurationstjänster
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du hämtar [konfigurationer av elektronisk rapportering](general-electronic-reporting.md#Configuration) från den globala lagringsplatsen för konfigurationstjänsten. Mer information finns i [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, konfigurationstjänst](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+I det här avsnittet beskrivs hur du hämtar [konfigurationer av elektronisk rapportering](general-electronic-reporting.md#Configuration) från den globala databasen för konfigurationstjänsten. Mer information finns i [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, konfigurationstjänst](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="open-configurations-repository"></a>Öppna konfigurationsdatabas
 
@@ -42,7 +40,7 @@ I det här avsnittet beskrivs hur du hämtar [konfigurationer av elektronisk rap
 3. I avsnittet **Konfigurationsleverantörer** väljer du panelen **Microsoft**.
 3. I panelen **Microsoft** väljer du **Databaser**.
 
-    ![Arbetsytan för elektronisk rapportering](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![Arbetsytan för elektronisk rapportering.](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. På sidan **Konfigurationsdatabaser** väljer du i rutnätet den befintliga databasen för **Global**-typen. Om denna databas inte visas i rutnätet, följ då nedanstående steg:
 
@@ -54,7 +52,7 @@ I det här avsnittet beskrivs hur du hämtar [konfigurationer av elektronisk rap
 
 5. Välj **Öppna** om du vill visa listan över ER-konfigurationer för den valda databasen.
 
-    ![Sidan Konfigurationsdatabas](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![Sidan Konfigurationsdatabaser.](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## <a name="import-a-single-configuration"></a>Importera en enda konfiguration
 
@@ -65,7 +63,7 @@ I det här avsnittet beskrivs hur du hämtar [konfigurationer av elektronisk rap
     > [!NOTE]
     > Knappen **Importera** är inte tillgänglig för ER-konfigurationsversioner som redan finns i den aktuella Finance-instansen.
 
-    ![Sidan Konfigurationsdatabas](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Databassida för konfiguration, snabbfliken Konfigurationer.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Importera filtrerade konfigurationer
 
@@ -79,7 +77,7 @@ I det här avsnittet beskrivs hur du hämtar [konfigurationer av elektronisk rap
 4. På snabbfliken **konfigurationer** välj **Importera** om du vill hämta de filtrerade konfigurationerna från den globala databasen till den aktuella instansen.
 5. På snabbfliken **konfigurationer** välj **Återställ filter** för att rensa de angivna villkoren för urval.
 
-    ![Sidan Konfigurationsdatabas](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Konfigurationsdatabassida, snabbfliken Versioner, knappen Importera.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > Beroende på ER-inställningarna valideras konfigurationerna när de har importerats. Du kan komma att meddelas om eventuella inkonsekvensproblem som upptäcks. Innan du kan använda den importerade konfigurationsversionen måste du lösa problemen. Mer information finns i listan över relaterade resurser för detta avsnitt.
@@ -90,3 +88,6 @@ I det här avsnittet beskrivs hur du hämtar [konfigurationer av elektronisk rap
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

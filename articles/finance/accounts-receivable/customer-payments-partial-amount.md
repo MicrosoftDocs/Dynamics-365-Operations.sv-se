@@ -2,9 +2,11 @@
 title: Kundbetalningar för ett delbelopp
 description: Ibland kan kunder betala ett belopp som är mindre än beloppet i en faktura. Det här avsnittet innehåller en beskrivning av de olika alternativen för att hantera den här situationen. Vilka alternativ som är tillgängliga för dig beror på dina affärskrav och konfigurationer.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymEntry
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b4a930f7bb070d3105eff3978774bfd8a3ffbfd2b8eb77097028411da619c64
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ef43e6bafcd6a049111701032efbe5474dfaa9f6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769045"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236948"
 ---
 # <a name="customer-payments-for-a-partial-amount"></a>Kundbetalningar för ett delbelopp
 
@@ -28,7 +30,8 @@ ms.locfileid: "6769045"
 
 Ibland kan kunder betala ett belopp som är mindre än beloppet i en faktura. Det här avsnittet innehåller en beskrivning av de olika alternativen för att hantera den här situationen. Vilka alternativ som är tillgängliga för dig beror på dina affärskrav och konfigurationer.
 
-## <a name="partial-payment-with-no-discount"></a>Delbetalning utan rabatt
+<a name="partial-payment-with-no-discount"></a>Delbetalning utan rabatt
+--------------------------------
 
 Kunder kan göra en delbetalning eftersom de inte bara har tillräckligt med kontanter för att betala hela fakturan, eller om det finns en tvist om en artikel på fakturan. I den här situationen kan fakturan delvis kvittas mot betalningen. Fakturan kommer att förbli öppen och visar ett saldo.
 

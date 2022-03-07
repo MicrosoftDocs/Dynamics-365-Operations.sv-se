@@ -2,7 +2,9 @@
 title: Lista över ER-funktioner i listkategorin
 description: Det här ämnet ger information om listfunktionerna som stöds i elektronisk rapportering (ER).
 author: NickSelin
+manager: kfend
 ms.date: 04/01/2020
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f0d9f83a1750ff51d76716147f5d16e96c0fb415608256a5dcc7524a1f2bd2f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b98ad6c2c7eb2881ede83b9bd2d02aac71efc4c9
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734874"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5561696"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>Lista över ER-funktioner i listkategorin
 
