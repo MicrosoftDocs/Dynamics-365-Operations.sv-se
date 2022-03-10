@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
-ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: c3648a2d9df300ecd0c26a12db8093babb3db48f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.16
+ms.openlocfilehash: 021ce940a4ea6d59719d1c6bc79532832cc2f3ff
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838260"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567689"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurera produktfilter för distributionslagertransaktioner
 
@@ -46,11 +46,11 @@ Produktfilter ger upp till 10 egenskaper **Filterrubrik** som är uppräkningsv�
 1. I fältet **Filterrubrik**, välj ett värde.
 1. Ange ett värde i fältet **Filterkod**.
 
-    ![Ställa in ett produktfilter](media/Product_Filters10.png "Ställa in ett produktfilter")
+    ![Ställa in ett produktfilter.](media/Product_Filters10.png "Ställa in ett produktfilter")
 
 1. I fältet **Beskrivning**, ange ett namn för koden. Till exempel kan *Kod 2* representera leverantörer. Du kan sedan skapa ett produktfilter för en viss leverantör eller grupp av leverantörer. Mer information finns i avsnittet [Ställ in leverantörsfilterkoder](#vendor-product-filters) senare i det här avsnittet.
 
-    ![Ställ in produktfilter](media/Product_Filters.png "Ställ in produktfilter")
+    ![Uppsättning produktfilter.](media/Product_Filters.png "Ställ in produktfilter")
 
 ## <a name="set-up-product-filter-groups"></a>Ställa in produktfiltergrupper
 
@@ -69,7 +69,7 @@ Så här ställer du in filtergrupper.
 1. I fältet **Artikelgrupp** välj den artikelgrupp som produktfiltret ska gälla för.
 1. I fälten **Kod 1** till och med **Kod 10**, välj de filterkoder som ska inkluderas i gruppen efter behov.
 
-    ![Artikelgrupp](media/ProdFilterGroup.png "Artikelgrupp")
+    ![Artikelgrupp.](media/ProdFilterGroup.png "Artikelgrupp")
 
 > [!NOTE]
 > Om du får ett felmeddelande när du stänger sidan, kan en kodinställning saknas. På sidan **Artikelgrupper** kan du göra koder obligatoriska för en artikelgrupp genom att välja kryssrutan **Tilldela filterkod 1 för artikelgrupp**, **Tilldela filterkod 2 för artikelgrupp** och så vidare.
@@ -88,7 +88,7 @@ Gör på följande sätt när du vill ställa in filterkoder i artikelgrupper.
 
     För att uppdatera en släppt produkt, öppna dess sida **Information om frisläppt produkt** och sedan i åtgärdsfönstret väljer du **Redigera**. Filtren som är kopplade till koder blir sedan tillgängliga på snabbfliken **Lagerställe**.
 
-    ![Artikelgrupper](media/ItemGroup10.png "Artikelgrupper")
+    ![Artikelgrupper.](media/ItemGroup10.png "Artikelgrupper")
 
 1. I avsnittet **Artikelgruppfilter** markera kryssrutorna för de filter som måste matcha för att filtergruppen ska vara standardfiltergrupp för en artikel.
 

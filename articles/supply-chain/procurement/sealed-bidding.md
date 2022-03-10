@@ -1,22 +1,22 @@
 ---
 title: Sluten budgivning för anbudsförfrågningar
 description: I det här avsnittet beskrivs hur du ställer in stängd budgivning så att leverantörsbud är stängda tills de öppnas av inköpspersonal.
-author: yanansong
+author: Henrikan
 ms.date: 08/02/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: yanansong
+ms.author: henrikan
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 02cbe9d6a6d157208d73ed756efae24df2a082de
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 96549b6053ba75f2d5b9a85bcd5b7feb006f0f1b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500644"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578090"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>Sluten budgivning för anbudsförfrågningar
 
@@ -53,7 +53,11 @@ Innan du börjar ställa in eller använda funktionen måste du se till att den 
 Supply Chain Management använder krypteringsnycklar för att skydda alla stängda anbud och hålla dem stängda till lämplig tidpunkt. Det utnyttjar möjligheten att i Key Vault att generera och hantera nödvändiga nycklar. Därför måste du ställa in en anslutning från Supply Chain Management till ett nyckelvalv som aktiverar systemet.
 
 > [!IMPORTANT]
-> Nyckelvalvet måste skapas i ett Azure-abonnemang som ägs av din organisation (inte det abonnemang där du kör Supply Chain Management).
+> De nyckelvalv som du använder för att uppfylla dessa villkor måste uppfylla följande krav:
+>
+> - Om du använder en säkerhetsnyckel för utveckling och testning måste du ha ett dedikerat nyckelvalv för produktionen och ett separat för produktion.
+> - Varje nyckelvalv måste skapas i ett Azure-abonnemang som ägs av din organisation (inte det abonnemang där du kör Supply Chain Management).
+> - Varje nyckelvalv måste bara användas för stängd budgivning. Du får inte använda dina nyckelvalv med stängd budgivning för något annat syfte.
 
 Varje anbud hämtar sin egen hemliga nyckel. Nyckeln används varje gång en användare visar, uppdaterar eller öppnar anbudet.
 

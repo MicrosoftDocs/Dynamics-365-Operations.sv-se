@@ -1,29 +1,32 @@
 ---
 title: Arbetsyta för personalhantering
 description: I detta ämne beskrivs de begreppsmässiga elementen i arbetsytan för personalhantering.
-author: andreabichsel
-ms.date: 07/01/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.author: anbichse
-ms.reviewer: anbichse
+ms.author: twheeloc
+ms.reviewer: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3cb86f33e437a4f1fed4acf894c9bf48d6d5b1ef
-ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
+ms.openlocfilehash: 7a83dea308e3e2eec1edebd5d619f9455e1a2268
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "6333148"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066585"
 ---
 # <a name="personnel-management-workspace"></a>Arbetsyta för personalhantering
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -33,11 +36,11 @@ Arbetsytan **Personalhantering** innehåller en mängd olika innehåll. Den inne
 
 Fliken **Aktivitet** innehåller avsnitt som grupperar medarbetare utifrån deras fas i anställningsprocessen:
 
-- Kandidater att anställa
-- Börjar snart
-- Tidigare anställningar
-- Avslutar
-- Har slutat
+- **Kandidater att anställa**
+- **Börjar snart**
+- **Tidigare anställningar**
+- **Avslutar**
+- **Har slutat**
 
 När en medarbetare befinner sig i en av dessa faser finns specifika åtgärder tillgängliga som en knapp på kortet eller på menyn som visas när du väljer ellipsen (**...**) i det övre högra hörnet. Följande delavsnitt beskriver avsnitten på fliken **Aktivitet** och listar de åtgärder som är tillgängliga.
 
@@ -51,9 +54,9 @@ Avsnittet **Kandidater att anställa** i arbetsytan fylls i från flera olika k�
 
 När kandidater visas i avsnittet **Kandidater att anställa** kan du utföra följande åtgärder genom att välja ellipsen på kandidatkortet:
 
-- Avfärda kandidat
-- Anställ inte
-- Anställ
+- **Avfärda kandidat**
+- **Anställ inte**
+- **Anställ**
 
 > [!NOTE]
 > Om kandidatlistan fylls i från Microsoft Dataverse kommer samma kandidater att visas för samtliga juridiska personer, detta eftersom ingen juridisk person har kopplats till kandidaten.
@@ -65,7 +68,7 @@ I avsnittet **Börjar snart** listas medarbetare med framtida startdatum. Listan
 Om chefen inte visas på kortet har medarbetaren inte tilldelats någon befattning.
 
 > [!NOTE] 
-> Vi rekommenderar att du tilldelar en befattning till en medarbetare innan du använder en checklista, detta eftersom registreringsuppgifter ibland tilldelas en nyanställd medarbetares chef. Om ingen befattning tilldelas kan emellertid den nya medarbetarens chef inte fastställas. I det här fallet tilldelas de registreringsuppgifter som är avsedda för chefen istället till checklistans ägare.
+> Vi rekommenderar att du tilldelar en medarbetare till en befattning innan du använder en checklista. Ibland kan registreringsuppgifter tilldelas till en nyanställd medarbetares chef. Om ingen befattning tilldelas kan emellertid den nya medarbetarens chef inte fastställas. I det här fallet tilldelas de registreringsuppgifter som är avsedda för chefen istället till checklistans ägare.
 
 När medarbetare visas i avsnittet **Börjar snart** är följande åtgärder tillgängliga för dem:
 
@@ -132,13 +135,9 @@ När medarbetare visas i avsnittet **Lämnat** är följande åtgärder tillgän
 
 Fliken **Medarbetarförändringar** innehåller en lista över samtliga personalåtgärder för medarbetare. Denna lista är inte tillgänglig som standard. Om du vill aktivera funktionen går du till sidan **Delade personalparametrar** > fliken **Personalåtgärder** och anger alternativet **Aktivera medarbetaråtgärder** som **Ja**.
 
-Mer information om personalåtgärder finns här (länk till sidan Personalåtgärder).
-
 ## <a name="position-changes-tab"></a>Fliken Befattningsändringar
 
 Fliken **Befattningsförändringar** innehåller en lista över samtliga personalåtgärder för befattningar. Denna lista är inte tillgänglig som standard. Om du vill aktivera funktionen går du till sidan **Delade personalparametrar** > fliken **Personalåtgärder** och anger alternativet **Aktivera befattningsåtgärder** som **Ja**.
-
-Mer information om personalåtgärder finns här (länk till sidan Personalåtgärder).
 
 ## <a name="open-positions-tab"></a>Fliken Lediga befattningar
 
@@ -151,11 +150,11 @@ Fliken **Lediga befattningar** listar alla öppna befattningar. För att kunna v
 
 Fliken **Utgående poster** listar alla artiklar som har förfallit eller kommer att förfalla för medarbetarna i det företag som användaren är inloggad i. Följande artiklar visas i listan:
 
-- Intyg
-- Identifiering
-- Under prövning
-- Kontroller
-- Tester
+- **Intyg**
+- **Identifiering**
+- **Under prövning**
+- **Kontroller**
+- **Tester**
 
 Om du vill ange om listan ska visa utgångna poster eller utgångna poster ska du på fliken **Personalparametrar** > fliken **Allmänt** ange en tidsram för antingen **Utgående poster** eller **Utgångna poster**. Datan på fliken **Utgående poster** kan visas för ett specifikt antal dagar. Om du till exempel vill visa listan med poster som går ut om 14 dagar ställer du in fältet **Antal dagar** som **14**.
 

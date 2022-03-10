@@ -3,7 +3,7 @@ title: Översikt över sidor för kundvagn och kassa
 description: Det här ämnet innehåller en översikt över sidor för kundvagn och kassa i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a574494784e9a534307cceff584e047d870dc401
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 3e450192025b29c655be49050aa3e61fc8acd898
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027949"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982978"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Översikt över sidor för kundvagn och kassa
 
@@ -37,7 +37,7 @@ Kundvagnssidan fungerar som shoppingväskor och innehåller alla artiklar som ha
 
 Följande illustration visar ett exempel på en kundvagnssida som har skapats med hjälp av modulbibliotek och temat "Fabrikam".
 
-![Exempel på en kundvagnssida](./media/cart2.PNG)
+![Exempel på en kundvagnssida.](./media/cart2.PNG)
 
 Huvudsakliga materialet på kundvagnssidan visar alla artiklar som kunden har lagt till i vagnen. Alla tillämpliga rabatter visas. Rabatterna inkluderar komplexa rabatter. Exempel på detta är "Köp 3 artiklar och få 10 % rabatt" eller "Köp en flaska och en ryggsäck för att få 10 % rabatt". Modulen ordersammanfattning visar det belopp som förfaller efter rabatt, leverans, moms och så vidare. Det finns också en modul för kampanjkod som gör att kunden kan använda eller ta bort kampanjkoder.
 
@@ -53,7 +53,7 @@ Kassasidan anger var kunden anger den information som behövs för att göra en 
 
 Följande illustration visar ett exempel på kassasidan som har skapats med hjälp av modulbiblioteket.
 
-![Exempel på en kassasida](./media/Checkout.PNG)
+![Exempel på en kassasida.](./media/Checkout.PNG)
 
 Huvuddelen av kassasidan är där all orderinformation samlas in. Informationen omfattar leveransadress, leveransalternativ och betalningsinformation. POS har ett steg-för-steg-flöde, eftersom informationen måste anges i en specifik order för att kunna bearbetas. Leveransadressen måste t.ex. anges innan leveranskostnaderna kan beräknas och betalningen kan godkännas.
 

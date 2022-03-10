@@ -2,11 +2,9 @@
 title: Säkerhetsdiagnos för uppgiftsinspelningar
 description: I det här avsnittet finns information om hur du analyserar och hanterar krav på säkerhetsbehörighet baserat på en uppgiftsinspelning.
 author: Peakerbl
-manager: AnnBe
 ms.date: 05/05/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: 88eb90b35f1a9754cc4daa01d8f40cdf712db4f8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 44af35f16f6e9ff89b30bc10eef3f16ecdfaf907c4c6e22aa5775d1941fb6a5d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679800"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745130"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>Säkerhetsdiagnos för uppgiftsinspelningar
 
@@ -41,7 +39,7 @@ I det här avsnittet finns information om hur du analyserar och hanterar krav p�
 
 4. Välj användare i fältet **Användar-ID**. Om användaren inte har behörighet för vissa menyalternativ uppdateras fältet **Saknade behörigheter** till **Ja**.
   
-  ![Sidan med uppgifter om säkerhetsmeny](../media/Security-Menu-Item-Details.png)
+  ![Sidan Artikeldetaljer för säkerhetsmeny.](../media/Security-Menu-Item-Details.png)
 
 5. Välj **Lägg till referens** för att visa en lista över de säkerhetsobjekt, inklusive roller, uppgifter och behörigheter som ger den saknade behörigheten.
 6. Välj ett säkerhetsobjekt i listan:
@@ -49,3 +47,6 @@ I det här avsnittet finns information om hur du analyserar och hanterar krav p�
     - Om **Roll** har valts väljer du **Lägg till roll till användare**. Då öppnas sidan **Tilldela användare till roller**. Mer information finns på sidan [Tilldela användare till säkerhetsroller](assign-users-security-roles.md).
     - Om **Uppdrag** är valt väljer du **Lägg till uppgift i roll**, väljer de roller som uppgiften ska läggas till i och väljer sedan **OK**.
     - Om **Privilegium** är valt väljer du **Lägg till privilegium i uppgifter**, väljer de roller som privilegium ska läggas till i och väljer sedan **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

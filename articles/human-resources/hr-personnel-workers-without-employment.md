@@ -1,8 +1,8 @@
 ---
 title: Arbetare utan anställning
-description: Medarbetare utan framtida, aktiva eller historiska anställningar i organisationen visas i formuläret Medarbetare utan anställning.
-author: andreabichsel
-ms.date: 04/06/2021
+description: Medarbetare utan framtida, aktiva eller historiska anställningar imom organisationen visas på sidan Medarbetare utan anställning.
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: ''
 ms.prod: ''
 ms.technology: ''
@@ -10,23 +10,26 @@ ms.search.form: HcmWorkerV2, HRMMassHireProject, HRMMassHireLine, HcmPersonnelMa
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2021-04-06
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 45841c35780960f524cc232dad16f94dbc8ec1c2df75fa2a5c2520e5522d4e3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d0b8fe7dd0818fa1c3cc4224e73035849f9dadfe
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724974"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070561"
 ---
 # <a name="workers-without-employment"></a>Arbetare utan anställning
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Medarbetare utan framtida, aktiva eller historiska anställningar i organisationen visas i formuläret **Medarbetare utan anställning**. Arbetare med den här statusen kan visas när du importerar medarbetare utan en anställningspost, eller när du tar bort en medarbetares anställning via **Medarbetare > Anställningshistorik**.
+Medarbetare med framtida, aktiva eller historiska anställningar i organisationen visas på sidan **Medarbetare utan anställning**. Arbetare av denna typ kan visas när du importerar medarbetare som inte har någon anställningspost, eller när du tar bort en medarbetares anställning via **Medarbetare \> Anställningshistorik**.
 
-Som standard är formuläret **Medarbetare utan anställning** tillgängligt för följande roller:
+Som standard är sidan **Medarbetare utan anställning** tillgänglig för följande roller:
 
 - Personalassistent
 - Personalchef

@@ -1,22 +1,22 @@
 ---
 title: Tidsplanera påfyllnadsetikett utskrift under påfyllnad
 description: I det här avsnittet beskrivs hur du ställer in och använder funktionerna för uppgiftsbaserad utskrift av påfyllnadsetikett.
-author: MSFTGarm
+author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-obaranov
+ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 32842c32599b3ca5d84cc9f715a1453d55e176dc
-ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
+ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6301896"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920159"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Tidsplanera påfyllnadsetikett utskrift under påfyllnad
 
@@ -33,25 +33,25 @@ När du använder *utskriftsfunktionen för påfyllnadsetiketter* som baseras p�
 De funktioner som beskrivs i det här avsnittet måste vara inaktiverade för ditt system. Använda [utgiftshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiverar du följande funktioner i ordning:
 
 1. *Påfyllnadsetikettsutskrift* – Den här funktionen krävs för att aktivera påfyllnadsprocessmetoden för utskrift av påfyllnadsetikett.
-1. *Arbetsspärr för hela organisationen* - Denna funktion krävs för både manuell och automatisk konfiguration av planerat arbete.
-1. *Uppgiftsbaserad påfyllnadsetikettsutskrift* – Den här funktionen behövs för att dela upp påfyllnadsetikettsutskrift i ett separat transaktionssområde.
+1. *Arbetsspärr för hela organisationen* – Denna funktion krävs för både manuell och automatisk konfiguration av planerat arbete. (Från och med version 10.0.21 av Supply Chain Management är den här funktionen obligatorisk, varför den är aktiverad som standard och inte kan stängas av igen.)
+1. *Uppgiftsbaserad påfyllnadsetikettsutskrift* – Den här funktionen behövs för att dela upp påfyllnadsetikettsutskrift i ett separat transaktionsintervall.
 
 ## <a name="manually-enable-the-new-wave-step-method"></a>Aktivera den nya påfyllnadsstegmetoden manuellt
 
 Börja med att skapa den nya påfyllnadsstegmetoden och aktivera den för parallell asynkron uppgiftsbearbetning.
 
-1. Gå till  **Warehouse management \> Inställningar \> Påfyllnader \> Metoder för påfyllnadsprocess**.
+1. Gå till **Warehouse management \> Inställningar \> Påfyllnader \> Metoder för påfyllnadsprocess**.
 1. Klicka på **återskapa metod** i åtgärdsfönstret. Lägg märke till att *waveLabelPrinting* läggs till i listan över de påfyllnadsprocessmetoder som du kan använda i mallarna för påfyllnad.
 1. Välj den post där fältet **Metodnamn** är inställt på *waveLabelPrinting* och välj sedan **Uppgiftskonfiguration** i åtgärdsfönstret.
 1. I åtgärdsfönstret, välj **Ny** du vill lägga till en rad i rutnätet. Ange sedan följande fält för den nya raden:
 
-    - **Lagerställe** - Välj det lager du ska använda för att schemalägga bearbetning av arbete. (Om du använder demodata för testsyften kan du välja lagerställe *24*.)
-    - **Maximalt antal batchuppgifter** - Ange ett maximalt antal batchuppgifter. I de flesta fall bör värdet vara från *8* till *16*. Vi rekommenderar dock att du hittar den optimala inställningen för dina scenarier.
-    - **Batchgrupp för påfyllnadsbearbetning** - Välj en särskild batchgrupp för påfyllnadsbearbetning för att optimera bearbetning av batchkö.
+    - **Lagerställe** – Välj det lager du ska använda för att schemalägga bearbetning av arbete. (Om du använder demodata för testsyften kan du välja lagerställe *24*.)
+    - **Maximalt antal batchuppgifter** – Ange ett maximalt antal batchuppgifter. I de flesta fall bör värdet vara från *8* till *16*. Vi rekommenderar dock att du hittar den optimala inställningen för dina scenarier.
+    - **Batchgrupp för påfyllnadsbearbetning** – Välj en särskild batchgrupp för påfyllnadsbearbetning för att optimera bearbetning av batchkö.
 
 Du kan nu uppdatera en befintlig påfyllnadsmall så att den använder påfyllnadsbearbetningsmetoden för *Utskrift av påfyllnadsetikett*. Du kan också skapa en ny påfyllnadsmall där den används.
 
-1. Gå till  **Warehouse management \> Inställningar \> Påfyllnader \> Påfyllnadsmallar**.
+1. Gå till **Warehouse management \> Inställningar \> Påfyllnader \> Påfyllnadsmallar**.
 1. I åtgärdsfönstret väljer du **Redigera**.
 1. Välj den påfyllnadsmall som ska uppdateras i listfönstret. (Om du använder demodata för testsyften kan du välja lagerställe *24 leveransstandard*.)
 1. På snabbfliken **Metoder**, i kolumnen **Återstående metoder**, markerar du den rad där fältet **Namn** är inställt på *waveLabelPrinting*.

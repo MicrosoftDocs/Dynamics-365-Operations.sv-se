@@ -1,11 +1,10 @@
 ---
-title: Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.18 (maj 2021)
+title: Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.18 (maj 2021)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.18.
 author: kamaybac
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -15,19 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dc53d2c40414993e43ac90ce4f878c7d1c425eb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c68b8ed1703f2cd49d47fad73485e9e4093aa82b902a484fb79bad4dd2dcbfb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832140"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773571"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.18 (maj 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10018-may-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.18 (maj 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management förhandsversion 10.0.18. Den här versionen har ett versionsnummer för 10.0.793 och är tillgänglig enligt följande:
+Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management 10.0.18. Den här versionen har ett versionsnummer för 10.0.793 och är tillgänglig enligt följande:
 
 - **Förhandsversion:** mars 2021
 - **Allmän tillgänglighet för frisläppning (självuppdatering):** april 2021
@@ -35,17 +33,27 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
-Den här versionen innehåller följande nya funktioner: Följ länkarna till [Utgivningsplan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) för att se de officiella datumen för varje funktion.
+Den här versionen innehåller följande nya funktioner: Följ länkarna till [Utgivningsplan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) för att se de officiella datumen för varje funktion.
 
-- Automatisk frisläppning av inköpsorder (förbättring för [lagerställekörning med skalenheter i molnet](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - För mer information, se [Arbetsbelastningar för hantering av distributionslager för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-warehousing.md).
+- Automatisk frisläppning av inköpsorder (förbättring för [lagerställekörning med skalenheter i molnet](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - För mer information, se [Arbetsbelastningar för hantering av distributionslager för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-warehousing.md).
 
-- [Förbättringar och arkivering i företagsskala för lagerprestanda](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - För mer information, se [Arkivera lagertransaktioner](../inventory/archive-inventory-transactions.md)
+- [Skapa och visa certifieringar i gränssnittet för leverantörs samarbete](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/create-view-certifications-vendor-collaboration-interface)<br> - Mer information finns i [Underhålla leverantörscertifiering](../../finance/public-sector/manage-vendor-certification.md).
 
-- [Rabatthantering](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Mer information finns i [översikt över rabatthanteringsmodul](../rebate-management/rebate-management-overview.md)
+- [Förbättringar och arkivering i företagsskala för lagerprestanda](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Mer information finns i [Arkivera lagertransaktioner](../inventory/archive-inventory-transactions.md).
 
-- Förenklat gränssnitt endast för in- och utstämpling (förbättring för [Förbättrat körningsgränssnitt för produktionsgolvet för tillverkning](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Mer information finns i [Konfigurera gränssnittet för körning av produktionsstyrning](../production-control/production-floor-execution-configure.md).
+- [Rabatthantering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Mer information finns i [Översikt över modul för rabatthantering](../rebate-management/rebate-management-overview.md).
 
-De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem. Vissa av funktionerna visas fortfarande i en förhandsversion, men andra användare kan redan vara tillgängliga i allmänhet. 
+- [Exportkonfigurationspolicy för försäljningsdataenhet](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-data-entity-export-setup-policy)
+
+- [Registrering av försäljningsreturorderrad med decimalprecision med och utan faktisk/nominell vikt](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight)
+
+- [Bekräftelse av försäljningsorder med ett enda klick](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation)
+
+- [Raderingspolicy för försäljningsorder till inköpsorderrad](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-purchase-order-line-deletion-policy)
+
+- Förenklat gränssnitt endast för in- och utstämpling (förbättring för [Förbättrat körningsgränssnitt för produktionsgolvet för tillverkning](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Mer information finns i [Konfigurera gränssnittet för körning av produktionsstyrning](../production-control/production-floor-execution-configure.md).
+
+De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
 
@@ -68,9 +76,9 @@ Om du vill ha information om felkorrigeringar som ingår i varje uppdatering som
 
 ### <a name="dynamics-365-2021-release-wave-1-plan"></a>Dynamics 365: 2021 utgivningsvåg 1 plan
 
-Har du frågor om nya och kommande funktioner i våra affärsappar eller plattformen?
+Har du frågeställningar om nya och kommande funktioner i våra affärsappar eller plattformen?
 
-Se [Dynamics 365: 2021 utgivningsvåg 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). Vi har sammanställt all information som du kan tänkas behöva på ett enskilt dokument som du kan använda för din planering.
+Se [Dynamics 365: 2021 utgivningsvåg 1 plan](/dynamics365-release-plan/2021wave1/). Vi har sammanställt all information som du kan tänkas behöva på ett enskilt dokument som du kan använda för din planering.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Borttagna och inaktuella funktioner för Supply Chain Management
 

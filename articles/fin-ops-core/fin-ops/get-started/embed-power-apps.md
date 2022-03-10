@@ -2,11 +2,9 @@
 title: Bädda in arbetsyteapp från Power Apps
 description: Det här avsnittet förklarar hur du bäddar in arbetsyteappar från Microsoft Power Apps till klienten för att utöka produktens funktionalitet.
 author: jasongre
-manager: AnnBe
-ms.date: 11/03/2020
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl
 audience: Application User, Developer, IT Pro
@@ -15,112 +13,154 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: fbdd4dd1bb0b850319b12e55b0e68d6fdc516ad6
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c2f7b660d364be6e62d484e67908201027190a8a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798387"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065129"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Bädda in arbetsyteapp från Power Apps
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Power Apps är en tjänst som gör det möjligt för både utvecklare och icke-tekniska användare att skapa anpassade företagsprogram för mobila enheter, surfplattor och webben utan att behöva skriva kod. Finance and Operations-appar stöder integration med Power Apps. Arbetsyteappar som utvecklas av dig, ditt företag eller det bredare ekosystemet kan bäddas in i Finance and Operations-appar utöka produktens funktioner. Exempelvis kan du skapa en arbetsyteapp från Power Apps som kompletterar en Finance and Operations-app med information som hämtas från ett annat system.
 
-Om du vill veta mer om inbäddning av Power Apps kan du titta på den korta videon [Så här bäddar du in Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY).
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Microsoft Power Apps är en tjänst som gör det möjligt för både utvecklare och icke-tekniska användare att skapa anpassade företagsprogram för mobila enheter, surfplattor och webben utan att behöva skriva kod. Ekonomi och Drift-appar stöder integrering med Power Apps. Arbetsyteappar som utvecklas av dig, ditt företag eller det bredare ekosystemet kan bäddas in i Ekonomi och Drift-appar utöka produktens funktioner. Exempelvis kan du skapa en arbetsyteapp från Power Apps som kompletterar en Ekonomi och Drift-app med information som hämtas från ett annat system.
+
+Om du vill veta mer om inbäddning av arbetsyteappar kan du titta på den korta videon [Så här bäddar du in arbetsyteappar](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
 ## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Lägger till en inbäddad arbetsyteapp från Power Apps på en sida
 
-### <a name="overview"></a>Översikt
+När du bäddar in en arbetsyteapp från Power Apps till klienten måste du först hitta eller skapa ett programmed önskade bilder eller funktioner. Det här avsnittet innehåller ingen detaljerad beskrivning av processen för att bygga appar. Om Power Apps är nytt för dig, se [Power Apps-dokumentationen](/powerapps/).
 
-När du bäddar in en arbetsyteapp från Power Apps till klienten måste du först hitta eller skapa en app med önskade bilder eller funktioner. Det här avsnittet innehåller ingen detaljerad beskrivning av processen för att bygga appar. Om Power Apps är nytt för dig, se [Power Apps-dokumentationen](https://docs.microsoft.com/powerapps/).
+Det finns tre sätt att bädda in en arbetsyteapp i en Ekonomi och Drift-app. Du kan använda den metod som passar just ditt scenario bäst. 
 
-Det finns två sätt att få åtkomst till en viss arbetsyteapp på en sida när du är redo att bädda in appen. Du kan välja vilken metod som passar ditt scenario bättre. Den första metoden använder knappen **Power Apps** som har lagts till i standardåtgärdsfönstret. Appar som du lägger till genom att använda den här metoden visas som objekt på menyknappen **Power Apps**. När du väljer ett av dessa objekt visas en sidoruta som innehåller inbäddade app. Alternativt kan du visa en inbäddad app direkt på en sida som en ny flik, snabbflik, blad eller ett nytt avsnitt på en arbetsyta.
+- Bädda in arbetsyteappen i **Power Apps**-knappen i standardåtgärdsfönstret på en sida. Program som du lägger till på det här sättet visas som artiklar i **Power Apps**-menyknappen, och programmen öppnas i sidofönster. 
+- Bädda in arbetsyteappen direkt på en befintlig sida som en ny fliksida (pivot-flik, snabbflik, blad eller arbetsyta).
+- Skapa en ny helsidesupplevelse för arbetsyteappen från instrumentpanelen.
 
 När du konfigurerar din inbäddade arbetsyteapp kan du välja ett fält som du vill skicka som kontext till app. Detta steg gör att appen kan svara utifrån den information som för närvarande visas.
 
 > [!NOTE]
-> Du kan för närvarande inte använda den här mekanismen för att bädda in modellerade appar.  
+> Du kan inte använda denna mekanism för att bädda in modellbaserade appar.
 
-### <a name="details"></a>Information
+### <a name="embedding-a-canvas-app-on-an-existing-page"></a>Bädda in en arbetsyteapp på en befintlig sida
 
-Följande procedur visar hur du bäddar in en arbetsyteapp från Power Apps i webbklienten.
+Följande procedur visar hur du bäddar in en arbetsyteapp på en befintlig sida från Power Apps.
 
-1. Gå till sidan där du vill bädda in arbetsyteappen. Denna sida är samma sida som innehåller alla data som måste skickas till appen som indata.
-2. Öppna fönstret **Lägg till en app från Power Apps**:
+1. Gå till sidan där du vill bädda in arbetsyteappen. Denna sida innehåller alla data som måste skickas vidare till appen som indata.
+2. Öppna fönstret **Lägg till ett program från Power Apps**:
 
-    - Klicka på **Alternativ** och välj **Anpassa den här sidan**. Under menyn **Infoga** väljer du **Power Apps**. Slutligen kan du välja den region där du vill lägga till appen. Om du vill bädda in appen under menyknappen Power Apps väljer du åtgärdsfönstret. Om du vill bädda in appen direkt på sidan, välj lämplig flik, snabbflik, blad eller avsnitt (om du är på en arbetsyta).
-    - Om appen sker med hjälp av menyknappen Power Apps, klickar du alternativt på menyn **Power Apps** i standardåtgärdsfönstret och väljer sedan **Lägg till en app**.
+    - Om programmet bäddas in direkt på sidan väljer du **Alternativ** \> **Anpassa denna sida** \> **Mer** och följer sedan ett av dessa steg:
 
-3. Konfigurera inbäddade appen:
+        - Om funktionen **Helsidesappar** har aktiverats väljer du **Lägg till en sida** och väljer sedan den region den region där du vill lägga till programet. Om du vill bädda in programmet i **Power Apps**-menyknappen väljer du åtgärdsfönstret. Om du vill bädda in programmet direkt på sidan väljer du lämplig flik, snabbflik, lämpligt blad eller avsnitt (om du befinner dig på en arbetsyta). I fönstret **Lägg till en app** väljer du sedan **Power Apps**.
+        - Om funktionen **Helsidesappar** är avstängd väljer du **Lägg till ett program från Power Apps** och sedan den region där du vill lägga till programmet. Om du vill bädda in programmet i **Power Apps**-menyknappen väljer du åtgärdsfönstret. Om du vill bädda in programmet direkt på sidan väljer du lämplig flik, snabbflik, lämpligt blad eller avsnitt (om du befinner dig på en arbetsyta).
 
-    - Fältet **Namn** indikerar texten som visas för knappen eller fliken som innehåller inbäddade appen. Du kanske ofta vill upprepa namnet på appen i det här fältet.
-    - Fältet **App-ID** anger den globala unika identifieraren (GUID) för den arbetsyta som du vill bädda in. För att hämta det här värdet hittar du appen på [make.powerapps.com](https://make.powerapps.com) och letar sedan upp den i fältet **Program-ID** under **Detaljer**.
-    - För **Mata in kontext för appen**, kan du även välja fältet som innehåller de data som du vill skicka till appen som indata. Se avsnittet längre fram i det här ämnet med namnet [Bygga appar som använder data från Finance and Operations-appar](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) för information om hur appen kan komma åt data som skickas från Finance and Operations-appar.
-    - Välj **Programstorlek** som matchar typen av app som du bäddar in. Välj **Tunn** för appar som har skapats för mobila enheter och **Omfattande** för appar som skapats för surfplattor. Detta säkerställer att en tillräcklig mängd utrymme avsätts för inbäddade appen.
-    - Snabbfliken **Juridiska personer** innehåller möjligheten att välja vilka juridiska personer som appen är tillgänglig för. Standard är att visa appen för alla juridiska personer. Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är inaktiverad. 
+    - Om åtkomst till appen fås via menyknappen **Power Apps** kan du välja menyknappen **Power Apps** i standard-åtgärdsfönstret och sedan **Lägg till en app**.
 
-4. När du har bekräftat att konfigurationen är korrekt klickar du på **Infoga** för att bädda in PowerApp på sidan. Du uppmanas att uppdatera webbläsaren för att kunna visa inbäddade app.
+3. Konfigurera den inbäddade appen. Mer information finns i avsnittet [Konfigurera en arbetsyteapp](#configuring-a-canvas-app) senare i det här avsnittet.
+4. När du har bekräftat att konfigurationen är korrekt väljer du **Infoga**.
+
+    - Om funktionen **Sparade vyer** är inaktiverad uppmanas du att uppdatera webbläsaren för att se det inbäddade programmet.
+    - Om funktionen **Sparade vyer** har aktiverats måste du spara vyn för att ändringen ska bevaras.
+
+### <a name="embedding-a-canvas-app-as-a-full-page-experience-from-the-dashboard"></a>Bädda in en arbetsyteapp som en helsidesupplevelse från instrumentpanelen
+
+Om programmet inte är relaterat till en befintlig sida, eller om du bara vill ha en helsidesupplevelse för appen inuti Ekonomi och Drift-appen, bör du bädda in en arbetsyteapp från instrumentpanelen.
+
+> [!NOTE]
+> Om du vill göra denna funktion tillgänglig måste du aktivera funktionen **Helsidesappar** i funktionshanteringen. 
+
+1. Öppna instrumentpanelen.
+2. Markera och håll ned (eller högerklicka) på sidan, välj **Anpassa** och välj sedan **Lägg till en sida**.
+3. I fönstret **Lägg till en sida** väljer du **Power Apps**.
+4. Konfigurera den inbäddade appen. Mer information finns i avsnittet [Konfigurera en arbetsyteapp](#configuring-a-canvas-app) senare i det här avsnittet.
+5. Välj **Spara** om du vill lägga till programmet i instrumentpanelen som en ny panel.
+6. Markera den nya panelen på instrumentpanelen och bekräfta att arbetsyteappen visas som förväntat.
+
+### <a name="configuring-a-canvas-app"></a>Konfigurera en arbetsyteapp
+
+När du bäddar in en arbetsyteapp måste du ställa in följande parametrar:
+
+- **Namn** – Ange den text som ska visas för den knapp eller flik som ska innehålla den inbäddade appen. Ofta kan det vara en bra idé att upprepa namnet på appen i det här fältet.
+- **App-ID** – Anger den globala unika identifieraren (GUID) för den arbetsyteapp som du vill bädda in. För att hämta det här värdet hittar du appen på [make.powerapps.com](https://make.powerapps.com) och letar sedan upp den i fältet **Program-ID** under **Detaljer**.
+- **Mata in kontext för appen** – Om du vill kan du välja fältet som innehåller de data som du vill skicka till appen som indata. För information om hur appen kan komma åt data som skickas från Ekonomi och Drift-appar, se avsnittet [Bygga en app som utnyttjar data som skickas från Ekonomi och Drift-appar](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) senare i detta ämne.
+
+    Från och med version 10.0.19 kommer den aktuella juridiska personen också att skickas som kontext till arbetsyteappen med hjälp av URL-parametern **cmp**. Detta beteende påverkar inte målarbetsyteappen förrän den appen använder den informationen.
+
+- **Programstorlek** – Välj den apptyp som du bäddar in. Välj **Tunn** för appar som skapats för mobila enheter, eller **Omfattande** för appar som skapats för surfplattor. Denna parameter säkerställer att en tillräcklig mängd lagringsutrymme avsätts för den inbäddade appen.
+- **Juridiska personer** – Du kan välja vilka juridiska personer som programmet ska vara tillgängligt för. Som standard är programmet tillgängligt för alla juridiska personer. Detta alternativ är bara tillgängligt när du arbetar direkt på en befintlig sida och funktionen **[Sparade vyer](saved-views.md)** är inaktiverad.
 
 ## <a name="sharing-an-embedded-app"></a>Dela en inbäddad app
 
-När du har bäddat in en arbetsyteapp på en sida och bekräftat att den fungerar korrekt med all datakontext som skickas från sidan, kanske du vill dela appen med andra användare i systemet. Om du vill dela en inbäddad arbetsyteapp följer du stegen nedan.
+När du har bäddat in en arbetsyteapp på en sida och bekräftat att den fungerar korrekt, kanske du vill dela appen med andra användare i systemet. Om du vill dela en inbäddad arbetsyteapp följer du stegen nedan.
 
-1. [Dela arbetsyteappen](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app) med rätt användare så att de kan komma åt appen i Power Apps. 
+1. [Dela arbetsyteappen i Power Apps](/powerapps/maker/canvas-apps/share-app) med lämpliga användare så att dessa får direkt åtkomst till appen i Power Apps.
+2. Dela anpassningarna som är associerade med det inbäddade programmet med önskade användare. Du kan använda någon av följande metoder:
 
-2. Se till att de målinriktade användarna har lämpliga anpassningar, så att den inbäddade appen visas när dessa användare visar sidan. Du kan använda någon av följande metoder:
+    - **Publicera vyn (rekommenderas):** Om funktionen **[Sparade vyer](saved-views.md)** är aktiverad bör du skapa en vy som inkluderar det inbäddade programmet och sedan publicera den vyn för önskade användare. På så sätt ser du till att alla användare som har de säkerhetsroller som är riktade mot den publicerade vyn kommer att se arbetsyteappen på sidan.
 
-    - Rekommenderas: Använd funktionen [Sparade vyer](saved-views.md) för att skapa och publicera en vy som innehåller den inbäddade appen. På så sätt ser du till att alla användare som har de säkerhetsroller som är riktade mot den publicerade vyn kommer att se appen i Finance and Operations-appar. 
-    - Om du inte har aktiverat funktionen Sparade vyer kan du låta system administratören sända en anpassning som innehåller den inbäddade appen till alla användare eller en delmängd av användarna. Du kan också exportera sidans anpassningar och skicka dem till en eller flera användare. Var och en av dessa användare kan sedan importera anpassningarna. Verktygsfältet för anpassning har åtgärder som gör att du kan exportera och importera anpassningar. 
-    
+        Du kan också publicera en arbetsyteapp som har bäddats in som en helsiderfarenhet från instrumentpanelen. Markera och håll (eller högerklicka) den panel som är kopplad till programmet på instrumentpanelen, välj **Anpassa** och sedan **Publicera sida**. En erfarenhet som liknar *publiceringsvyerna* visas, och du kan välja vilka säkerhetsroller du vill publicera på. Om funktionen **Förbättrat stöd för juridiska personer för sparade vyer** är aktivera kan du från och med version 10.0.21 även publicera appen i önskade juridiska personer.
+
+    - Om funktionen **Sparade vyer** är avstängd kan systemadministratören tillhandahålla en anpassning som inkluderar arbetsyteappen till en lämplig uppsättning arbetare via sidan **Anpassning**. Du kan också exportera sidans anpassningar och sedan skicka dem till en eller flera användare. Var och en av dessa användare kan sedan importera anpassningen. Verktygsfältet för anpassning har knappar som gör att du kan exportera och importera anpassningar.
+
 > [!NOTE]
-> Om arbetsyteapp har delats med externa användare kan dessa användare inte använda den inbäddade appen i Finance and Operations-appar. De kan emellertid komma åt appen direkt i Power Apps. Externa användare inkluderar gäster och användare som inte tillhör den Microsoft 365 Azure-katalog där Finance and Operations-appen distribueras.
+> Om arbetsyteapp har delats med externa användare kan dessa användare inte använda den inbäddade appen i Ekonomi och Drift-appar. De kan emellertid komma åt appen direkt i Power Apps. Externa användare inkluderar gäster och användare som inte tillhör den Microsoft 365 Azure-katalog där Ekonomi och Drift-appen distribueras.
 
 Se [Anpassa användarupplevelsen](personalize-user-experience.md) för mer information om anpassningsfunktionerna i produkten och hur de används.
 
-## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Skapa en arbetsyteappen som använder data som skickas från Finance and Operations-appar
+## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Skapa en arbetsyteappen som använder data som skickas från Ekonomi och Drift-appar
 
-När du skapar en arbetsyteappen som ska bäddas in i en Finance and Operations-app, är en viktig del av processen att använda indata från den Finance and Operations-appen. Från Power Apps utvecklingsmiljön kan du få åtkomst till indata från en Finance and Operations-app med hjälp av variabeln **Param("EntityId")**.
+När du skapar en arbetsyteappen som ska bäddas in i en Ekonomi och Drift-app, är en viktig del av processen att använda indata från den Ekonomi och Drift-appen. Från Power Apps utvecklingsmiljön kan du få åtkomst till indata från en Ekonomi och Drift-app med hjälp av variabeln **Param("EntityId")**. Från och med version 10.0.19 kommer den aktuella juridiska personen dessutom även att skickas arbetsyteappen med hjälp av variabeln **Param("cmp")**. 
 
-Exempelvis i appens OnStart-funktion kan du ange indata från Finance and Operations-appar till en variabel så här:
+Exempelvis i OnStart-funktionen för appen kan du ange indata från Ekonomi och Drift-appar till en variabel så här:
 
-```powerapps
+``` Power Apps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
+
+If(!IsBlank(Param("cmp")), Set(FinOpsLegalEntity, Param("cmp")), Set(FinOpsLegalEntity, ""));
 ```
 
 ## <a name="viewing-a-canvas-app"></a>Visa en arbetsyteapp
 
-Om du vill visa en inbäddad arbetsyteapp på en sida i Finance and Operations-appar, gå till en sida med en inbäddad app. Kom ihåg att appar kan nås genom att använda **Power Apps**-knappen i standard åtgärdsfönstret. Alternativt kan de visas direkt på sidan som en ny flik, snabbflik, blad eller ett nytt avsnitt på en arbetsyta. När användarna först försöker läsa in en app på en sida uppmanas han eller hon att logga in. Det här steget ser till att användarna har rätt behörighet för att använda appen.
+Om du vill visa en inbäddad arbetsyteapp på en sida i Ekonomi och Drift-appar, gå till en sida med en inbäddad app. Kom ihåg att appar kan nås genom att använda **Power Apps**-knappen i standard åtgärdsfönstret. Alternativt kan de visas direkt på sidan som en ny flik, snabbflik, blad eller ett nytt avsnitt på en arbetsyta. När användarna först försöker läsa in ett programpå en sida uppmanas han eller hon att logga in. Det här steget ser till att användarna har rätt behörighet för att använda appen.
 
 ## <a name="editing-an-embedded-app"></a>Redigera en inbäddad app
 
-När en app har bäddats in på en sida, kan du behöva göra några ändringar av den appkonfigurationen. Exempelvis kanske du vill ändra etiketten som är kopplad till den inbäddade appen eller en ny version av en app har skapats och du behöver uppdatera program-ID som pekar på den senaste.
+När ett program har bäddats in på en sida, kan du behöva göra några ändringar av den appkonfigurationen. Exempelvis kanske du vill ändra etiketten som är kopplad till den inbäddade appen eller en ny version av ett program har skapats och du behöver uppdatera program-ID som pekar på den senaste.
 
 Gör så här om du vill redigera en inbäddad appkonfiguration:
 
 1. Gå till fönstret **Redigera en app**.
 
-    - Om den inbäddade appen sker via menyknappen Power Apps, högerklicka på menyknappen Power Apps och välj **Anpassa**. Välj den app som du vill konfigurera från listrutan **Välj app**.
+    - Om åtkomst till den inbäddade appen sker via menyknappen för Power Apps väljer och håller du menyknappen Power Apps intryckt (eller högerklickar på den) och väljer **Anpassa**. Välj dett programsom du vill konfigurera från listrutan **Välj app**.
     - Om den inbäddade app visas direkt på sidan väljer du **alternativ**, och välj sedan **anpassa den här sidan**. Med hjälp av verktyget **Välj**, klickar du på den inbäddade appen.
+    - Om det inbäddade programmet har lagts till från instrumentpanelen öppnar du instrumentpanelen, markerar och håller ned (eller högerklickar) på den panel som är kopplad till appen, väljer **Anpassa** och sedan **Redigera sida**.
 
 2. Gör nödvändiga ändringar i konfigurationen för appen och klicka på **spara**.
 
 ## <a name="removing-an-app"></a>Ta bort en app
 
-När en app har inbäddats på en sida finns det två sätt att ta bort den vid behov:
+När en app har bäddats in på en sida finns det några olika sätt att ta bort den vid behov:
 
 - Gå till fönstret **Redigera en app** med instruktioner från sektionen [redigera en inbäddad app](#editing-an-embedded-app) tidigare i det här avsnittet. Bekräfta att fönstret visar information om inbäddade appen som du vill ta bort och klicka på knappen **Ta bort**.
+- Om det inbäddade programmet har lagts till från instrumentpanelen öppnar du instrumentpanelen, markerar och håller ned (eller högerklickar) på den panel som är kopplad till arbetsyteappen, väljer **Anpassa** och sedan **Ta bort sida**. 
 - Eftersom en inbäddad app sparas som anpassningsdata, kommer rensning av sidans anpassningar också att ta bort eventuella inbäddade appen på sidan. Observera att rensa sidans anpassning är permanent och kan inte ångras. Ta bort dina anpassningar på en sida genom att markera **Alternativ** och sedan **Anpassa denna sida** och sedan på knappen **Avmarkera**. När du har uppdaterat din webbläsare raderas alla tidigare anpassningar för den här sidan. Se[Anpassa användarupplevelsen](personalize-user-experience.md) för mer information om hur man optimerar sidor med hjälp av personalisering.
 
 ## <a name="appendix"></a>Bilaga
 
-### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Utvecklare] ange var en app kan bäddas in
+### <a name="developer-modeling-a-canvas-app-on-a-form"></a>[Utvecklare] Basera en arbetsyteapp på ett formulär
+
+Även om det här ämnet fokuserar på att bädda in arbetsyteappar genom anpassning har utvecklarna också möjlighet att lägga till en arbetsyteapp i ett formulär med hjälp av utvecklingsupplevelsen Visual Studio. Detta gör du genom att helt enkelt lägga till en PowerAppsHostControl i formuläret. Metadataegenskaperna som finns i kontrollen ger samma funktioner som anpassningsupplevelsen.
+
+### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Utvecklare] ange var ett programkan bäddas in
 
 Som standard kan användare bädda in appar på sidan under menyknappen Power Apps eller direkt på sidan som en flik, snabbflik, blad eller ett nytt avsnitt på en arbetsyta. Emellertid kan utvecklare vid behov även konfigurera funktionen till att endast tillåta inbäddning av appar för vissa sidor genom att använda följande metoder:
 
 - **isPowerAppPersonalizationEnabled** – om den här metoden returnerar falsk för en viss sida kommer menyknappen Power Apps inte att visas och användare kommer inte att bädda in appar på sidan, inklusive som en flik.
-- **isPowerAppTabPersonalizationEnabled** - om den här metoden returnerar falsk för en viss sida kan användare inte bädda in appar direkt på sidan som en flik, snabbflik eller panoramasektion. Användare kan fortfarande bädda in appar via menyknappen Power Apps om inbäddning tillåts på sidan.
+- **isPowerAppTabPersonalizationEnabled** – om den här metoden returnerar falsk för en viss sida kan användare inte bädda in appar direkt på sidan som en flik, snabbflik eller panoramasektion. Användare kan fortfarande bädda in appar via menyknappen Power Apps om inbäddning tillåts på sidan.
 
 I följande exempel visas en ny klass för dessa två metoder som behövs för att konfigurera där appar kan bäddas in.
 
@@ -142,3 +182,5 @@ public final class ClassTest_Extension
     }
 }
 ```
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

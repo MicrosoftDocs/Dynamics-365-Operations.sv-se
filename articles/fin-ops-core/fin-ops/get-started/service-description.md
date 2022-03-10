@@ -2,19 +2,19 @@
 title: Tjänstbeskrivning för Finance and Operations-appar
 description: Det här ämnet innehåller tjänstbeskrivning för Finance and Operations-appar.
 author: tomhig
-ms.date: 11/17/2021
+ms.date: 01/05/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
-ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
+ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "7825410"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952376"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Tjänstbeskrivning för Finance and Operations-appar
 
@@ -117,7 +117,7 @@ Finance and Operations-appar finns i flera Azure-regioner över hela världen. F
 ### <a name="countryregion-specific-considerations"></a>Lands-/regionspecifika beaktanden
 
 - Kunder inom reglerad bransch eller handelsorganisationer som gör affärer med enheter i Frankrike som kräver lokal datahemvist ska granska [Finance and Operations i Frankrike](../../dev-itpro/deployment/france-local-deployment.md).
-- Kunder som har verksamhet i Kina ska granska [Finance and Operations – drivs av 21Vianet i Kina](../../dev-itpro/deployment/china-local-deployment.md).
+- Kunder som har verksamhet i Kina ska granska [Azure Kina spelbok](/azure/china/) och [Finance and Operations drivs av 21Vianet i Kina](../../dev-itpro/deployment/china-local-deployment.md).
 - Kunder som har verksamhet i Ryssland ska granska [Rysk lokaliseringslag för personuppgifter](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia)
 
 ### <a name="general-data-protection-regulation-gdpr"></a>Allmänna dataskyddsförordningen (GDPR)
@@ -314,7 +314,7 @@ Microsofts haveriberedskapsplaner och procedurer undersöks regelbundet genom SO
 | Microsoft tillhandahåller en sekundär miljö i Azure-kopplade datacenter när den primära produktionsinstansen distribueras. Mer information finns i [Affärskontinuitet och haveriberedskap (BCDR): Azure-kopplade regioner](/azure/best-practices-availability-paired-regions). | None |
 | Microsoft aktiverar georedundans av Azure SQL och Azure Blob Storage när den primära produktionsinstansen distribueras. | None |
 | Microsoft aktiverar automatisk säkerhetskopiering av Azure SQL-databaser. | None |
-| <p>När ett avbrott inträffar bestämmer Microsoft om en redundans måste utföras för kunden och om data går förlorade. Dataförlust kan vara upp till fem sekunder. Mer information finns i [Geoåterställning av Azure SQL-databas](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>I händelse av dataförlust begär Microsoft kundens godkännande för en redundans.</p> | I händelse av dataförlust måste kunden eventuellt tillhandahålla skriftligt godkännande för att utlösa redundansen. |
+| <p>När ett avbrott inträffar bestämmer Microsoft om en redundans måste utföras för kunden och om data går förlorade. Kunder kan förlora data på upp till 15 minuter beroende på typen av och tidpunkten för avbrottet. | I händelse av dataförlust måste kunden eventuellt tillhandahålla skriftligt godkännande för att utlösa redundansen. |
 | När en redundans inträffar fungerar tjänsten i begränsat läge. Uppdateringsunderhåll kan inte utlösas i redundansläge. | Kunden kan inte begära paketdistributioner eller andra regelbundna underhållsbegäranden i redundansläge. |
 | När datacentret tas i drift Microsoft återställer tillbaka till produktionsinstansen i den primära Azure-regionen. Normal verksamhet återupptas. | Kunden kanske måste godkänna återställning till produktionsinstansen i den primära Azure-regionen. |
 
@@ -356,6 +356,7 @@ Microsoft är engagerade i en tillgänglighetsgrad på 99,9 procent per månad f
 - **[Licensguide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** – Med den här guiden kan du lära dig mer om hur du licensierar Dynamics 365.
 - **[Kundtjänst](https://dynamics.microsoft.com/support/)** – Få branschledande support för dina Dynamics 365-appar.
 - **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** – Hantera din livscykel för program och gå mot förutsägbara, upprepningsbara implementeringar av hög kvalitet.
+- **[Dynamics 365 Implementeringshandbok](https://aka.ms/D365ImplementationGuideFlip)** - Dynamics 365 Implementeringshandbok dokumenterar tidstestade Success by Design principer och ger föreskrivande vägledning för att utforma, bygga, testa och distribuera Dynamics 365-lösningar.
 
 ## <a name="definitions"></a>Definitioner
 
@@ -428,6 +429,10 @@ Serviceavtalet gäller för Microsofts onlinetjänster. Mer information finns i 
 ### <a name="service-update"></a>Tjänsteuppdatering
 
 Microsoft-tjänsters Finance and Operations-miljöer på enhetlig bas med hjälp av serviceuppdateringar. Kunder ställer in sin egen serviceuppdateringskalender utifrån verksamhetens behov. Mer information i [Tjänstuppdateringar för en version](../../dev-itpro/lifecycle-services/oneversion-overview.md).
+
+### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
+
+Det ramverk som systematiskt styr implementeringen genom en serie bedömningar vid kritiska faser för att säkerställa optimal arkitektur, säkerhet, prestanda och användarerfarenhet för en Dynamics 365-lösning.
 
 ### <a name="user"></a>Användare
 

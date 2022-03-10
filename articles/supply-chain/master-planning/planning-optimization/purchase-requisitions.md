@@ -16,14 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 564f87fe78e79107feb103f953ed4769e4734aa1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1d6fd4be0ee1913264c4a565234cfdf711365792
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808050"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570874"
 ---
 # <a name="purchase-requisitions"></a>Inköpsrekvisitioner
+
+[!include [banner](../../includes/banner.md)]
 
 Huvudplaneringen kan fylla på godkända inköpsrekvisitioner. För att täcka inköpsrekvisitioner behöver därför användarna inte använda ett arbetsflöde för att skapa inköpsorder. I stället kan inköpsrekvisitioner täckas av huvudplaneringen. På grund av den här funktionen kan en inköpsrekvisition producera en inköpsorder, en överföringsorder eller en tillverkningsorder, beroende på värdet för **Planerad ordertyp** som har angetts för den relaterade produkten.
 

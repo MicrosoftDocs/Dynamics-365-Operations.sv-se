@@ -1,29 +1,26 @@
 ---
 title: Befattningsprognos
 description: Utgifter relateradr till att kompensera för arbetare är ofta en stor del av ett företags kostnader. Med befattningsprognoser kan du planera dessa utgifter och inkludera dem i planeringen av budgetar.
-author: ShylaThompson
-manager: AnnBe
+author: panolte
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmPositionForecast
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 64413
 ms.assetid: 35e791d2-1905-4808-a579-7f181ddddd91
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5bae90cf7c8f11fa5409014023d36cc68ae1bd0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d43d0f92e666dd512fc6f2681aa8c7b6446edd5c
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448047"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595496"
 ---
 # <a name="position-forecasting"></a>Befattningsprognos
 
@@ -33,7 +30,7 @@ Utgifter relateradr till att kompensera för arbetare är ofta en stor del av et
 
 ## <a name="position-forecasting-in-budget-planning"></a>Befattningsprognos i budgetplanering
 
-[![Komponenter för befattningsprognosticering](./media/graphic-top.png)](./media/graphic-top.png) 
+[![Komponenter för befattningsprognosticering.](./media/graphic-top.png)](./media/graphic-top.png) 
 
 Befattningsprognosen har tre huvudsakliga komponenter för att ge exakta budgetbelopp för befattningsutgifter. Beloppen kan sedan tas med på en budgetplan för budgetberäkningar. 
 
@@ -45,14 +42,14 @@ En **kompensationsgrupp** är en valfri inställningskomponent som används för
 
 ### <a name="position-forecasting-processes"></a>Befattningsprognosprocesser
 
-[![Bild av processer för befattningsprognosticering](./media/graphic1b.png)](./media/graphic1b.png) 
+[![Bild av processer för befattningsprognosticering.](./media/graphic1b.png)](./media/graphic1b.png) 
 
 I en normal process för befattningsprognos skapar du först inställningskomponenterna (budgetkostnadselement och kompensationsgrupper). Prognosbefattningar genereras sedan, baserat på befintliga befattningar. Du kan sedan göra justeringar. Du kan till exempel lägga till eller avsluta befattningar, ändra ändra lönesatser och förmånskostnader och lägga till löneökningar. Du kan skapa flera versioner av en prognosbefattning för att underlätta jämmförelser mellan olika budgetscenarier. Därefter kan du inkludera budgettransaktioner i prognosbefattningsplaner och sammanföra i kostnaderna från prognosbefattningarna, som den här planen.
 
 Du kan skapa ytterligare prognosbefattningsversioner, som budgetplaner revideras. Dessa nya versioner innehåller bas för revideringarna.
 
 ## <a name="position-forecasting-setup"></a>Befattningsprognosinställning
-[![Bild av markering av inställning](./media/graphic2-1024x327.png)](./media/graphic2.png)
+[![Bild av markeringskonfiguration.](./media/graphic2-1024x327.png)](./media/graphic2.png)
 
 ### <a name="budget-cost-elements"></a>Budgetkostnadselement
 
@@ -70,9 +67,9 @@ Jodis organisation ger ett utbildningsavdrag på 5 procent av en medarbetares g
 
 Jodi inte vill att chefer ska ändra beloppet av förmånen. Därför markerar hon **Tillåt aktivering inte ändringar** i **Prognostisera befattningåsidosätt** fältet. Organisationen vill att den här kostnad ska fördelas jämnt till varje månad. Därför ska Jodi **Kvartalsvis** i **Allokeringsmetod** fältet. 
 
-Därefter lägger till anger anger Jodi en beräkningsrad kostnader, datum och en huvudkonto och procent **5.00** . Hennes organisation har ett lock av $5,000 per år för den här förmån. Därför skapar Jodi det belopp som den årliga gränsen. 
+Därefter lägger till anger anger Jodi en beräkningsrad kostnader, datum och en huvudkonto och procent **5.00** . Organisationen har ett tak på 5 000 dollar per år för den här förmånen. Därför skapar Jodi det belopp som den årliga gränsen. 
 
-Slutligen lägger till Jodi alla kostnader för att tjäna som används för grundlön som beräkningsbaser. Hennes budgeterade kostnader element är nu går det att användas.
+Slutligen lägger till Jodi alla kostnader för att tjäna som används för grundlön som beräkningsbaser. Budgetens kostnadselement är nu redo att användas.
 
 ### <a name="compensation-groups"></a>Kompensationsgrupper
 
@@ -89,7 +86,7 @@ De giltiga data och förfallodatum på kompensationtaktregistren kan du ändra k
 Det kostnader för elementet förtjänsten, som valts på kompensationsgruppen, används, när du skapar resultat för prognosbefattningarna i gruppen, inklusive deras grundlön och eventuella kliver taget. **Kompensation fasta plan** Fältet kompensationsgruppen länkar till en fast kompensationsplan i Personal. Den länk kan tilldela en arbetares information om fast kompensation till en prognos befattning och kan därför göra budgettransaktioner planera exakt. Kom ihåg att strukturen för kompensationsrutnätet (nivåerna och stegen) för kompensationsgruppen bör matcha strukturen för fasta kompensationsplanen. I annat fall kan systemet inte korrekt och länka kompensationsgruppen fasta kompensationsplanen.
 
 ## <a name="creating-forecast-positions"></a>Skapa prognosbefattningar
-[![Bild av markering "Skapa prognosbefattningar"](./media/graphic3-1024x327.png)](./media/graphic3.png)
+[![Bild som framhäver "skapa prognosbefattningar."](./media/graphic3-1024x327.png)](./media/graphic3.png)
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Skapa befattningar en befintlig prognos för befattningar
 
@@ -118,7 +115,7 @@ När en prognos, befattning har valt **Kopiera den valda prognosbefattningen** a
 Du kan också skapa en ny prognosbefattning helt. Markera ett befintligt jobb, och även välja det budgeterade och budgetering planscenariot planeringsprocessen. Du kan sedan lägga till andra uppgifter som du vill lägga till. En gång till skapas en ny befattning i personal samtidigt.
 
 ## <a name="working-with-forecast-positions"></a>Arbeta med prognosbefattningar
-[![Bild av markering "Ändra prognosbefattningar"](./media/graphic5-1024x327.png)](./media/graphic5.png)
+[![Bild som framhäver "Ändra prognosbefattningar."](./media/graphic5-1024x327.png)](./media/graphic5.png)
 
 ### <a name="multiple-versions-of-a-forecast-position"></a>Flera versioner av en prognosbefattning
 
@@ -136,11 +133,11 @@ Ger kostnader för budget i huvudmenyn informationen för budgettransaktioner pl
 
 Om till exempel en budgetrapport kostnadsredovisning beräknas från elementrad Januari 1, 2017, till juni 30, 2017, som har ett årligt belopp på 100,000 och ett av FTE-värde, som × **0.50** = 24,794.52 för 100,000 × 181 dagar (÷ 365 dagar). 
 
-De budgeterade kostnader elementraderna måste räknas om när FTE-värdet, ändras på prognosbefattningen. Raderna måste också beräknas om, aktiveringen när datum, eller avyttringsdatum ändras. Ändringar av dessa data kan orsaka en uppdatering av budgettransaktioner kostnadsredovisning elementets start - och slutdatum, som måste ligga inom prognosbefattningens data. När omberäkningen krävs, **Beräkna om** blir knappen tillgängliga, och ”kräver ett beräknings" meddelande visas. Omberäkningen krävs, även om du lägger till eller ta bort en budget - element.
+De budgeterade kostnader elementraderna måste räknas om när FTE-värdet, ändras på prognosbefattningen. Raderna måste också beräknas om, aktiveringen när datum, eller avyttringsdatum ändras. Ändringar av dessa data kan orsaka en uppdatering av budgettransaktioner kostnadsredovisning elementets start – och slutdatum, som måste ligga inom prognosbefattningens data. När omberäkningen krävs, **Beräkna om** blir knappen tillgängliga, och ”kräver ett beräknings" meddelande visas. Omberäkningen krävs, även om du lägger till eller ta bort en budget – element.
 
 **Exempel** 
 
-Organisationen beaktar två alternativ för att minska kostnaden för en revisorbefattning. En väljare ska fylla i befattningdelen av sätt genom året. Övrig väljaren är att ändra befattningen till halvtid för hela året. Golvspiken har skapat en prognos befattning för den befintliga revisorbefattningen i ett scenario jämföra. Han kopierar den här baslinjeprognosbefattning till scenario A, Lista avyttringsdatumet maj till 31 och omberäkna. Golvspiken kopierar till baslinjeprognosbefattningen scenariot B, ändras till FTE-värdet och omberäkna **0.50**. Golvspiken har nu tre versioner, som vart och ett har kostnad summor, som stämmer överens med hans väljare.
+Organisationen beaktar två alternativ för att minska kostnaden för en revisorbefattning. En väljare ska fylla i befattningdelen av sätt genom året. Övrig väljaren är att ändra befattningen till halvtid för hela året. Golvspiken har skapat en prognos befattning för den befintliga revisorbefattningen i ett scenario jämföra. Brad kopierar denna baslinjeprognosposition till scenario A, sätter indragningsdatumet på 31 maj och omberäknar. Golvspiken kopierar till baslinjeprognosbefattningen scenariot B, ändras till FTE-värdet och omberäkna **0.50**. Brad har nu tre versioner, som var och en har en total kostnad som stämmer överens med alternativen.
 
 #### <a name="assigning-a-compensation-group"></a>Tilldela en kompensationsgrupp
 
@@ -164,7 +161,7 @@ Två alternativ finns på inställningssidan **Budgetkostnadselement**: **Lägg 
 
 Varje process har en liknande sida där du kan välja prognosbefattningar. **Lägga till befattningar** På den här sidan visas alla prognosbefattningar som är tillgängliga för urval, medan sidan **Uppdatera befattningar** visas endast de prognosbefattningar som redan har den tilldelade budgeterade kostnader elementet. (Därför ger sidan **Uppdatera befattningar** dig ett sätt att ta reda på vilka prognosbefattningar som redan har kostnadselementet kopplade.) Du kan flytta prognosbefattningar från en övre rutnätet till ett lägre rutnät för att inkludera dem i uppdateringen. 
 
-Observera att **Ändringsdata** funktionen ändras direkt på **Kostnadsberäkning** fliken budgettransaktioner kostnadsredovisning elementets start - och slutdatum på prognosbefattningarna. Inga valväljare är tillgängliga. 
+Observera att **Ändringsdata** funktionen ändras direkt på **Kostnadsberäkning** fliken budgettransaktioner kostnadsredovisning elementets start – och slutdatum på prognosbefattningarna. Inga valväljare är tillgängliga. 
 
 På **kompensationsgrupp** sidan **Uppdateringbefattningtakter** använder funktionen de aktuella takterna för kompensation taktregistret till prognosbefattningar som tilldelats gruppen. Takterna uppdateras, och rader för merkostnadelement läggas till för alla nya taktregisterrader (baserat på datum.) Om uppdateras de budgeterade kostnader element och ökningdata inte. Du kan välja vilka budgetjournalen planeringsprocessen och budgeterade planscenariot som ska uppdateras. Därför kan du uppdatera ett scenario men lämna andra situationer oförändrade för jämförelse. 
 
@@ -174,7 +171,7 @@ Omberäkningprocessen används automatiskt i en prognosbefattning som har ändra
 
 ## <a name="bringing-forecast-positions-into-budget-plans"></a>Komma prognostiserade med befattningar till budget planer
 
-[![Bild av markering "Lägg till i budgetplan"](./media/graphic6-1024x327.png)](./media/graphic6.png)
+[![Bild som framhäver "Lägg till i budgetplan".](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
 Syftet med att skapa och ändra prognostiserade befattningar är att lägga till dem till budgetplaner, så att budgetplanerna inkluderar de exaktaste budgetbeloppen. Det finns två sätt att lägga till befattningar prognostiserade budgetering planer. Du kan använda antingen en utvecklingsprocess eller en valprocess på den här planen.
 
@@ -218,3 +215,6 @@ Om du vill se vilken budget planerar en prognos, befattning har inkluderats in, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

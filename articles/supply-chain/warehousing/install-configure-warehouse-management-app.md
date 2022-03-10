@@ -1,7 +1,7 @@
 ---
 title: Installera och ansluta mobilappen Hantering av distributionslager
 description: I det här avsnittet beskrivs hur du installerar mobilappen Hantering av distributionslager på alla dina mobila enheter och konfigurerar den för anslutning till din Microsoft Dynamics 365 Supply Chain Management-miljö.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e93aff4914314ea99798415a0bacc7b844169bc2
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 812dd30e0e444bc310fc81edd16958e0c0747885
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384621"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103423"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installera och ansluta mobilappen Hantering av distributionslager
 
@@ -39,12 +39,9 @@ Mobilappen Hantering av distributionslager är tillgänglig för både operativs
 - Windows 10 (Universal Windows Platform \[UWP\]) oktober 2018 uppdatering 1809 (version 10.0.17763) eller senare
 - Android 4.4 eller senare
 
-## <a name="turn-on-the-feature"></a>Aktivera en funktion
+## <a name="turn-warehouse-management-mobile-app-features-or-or-off-in-supply-chain-management"></a>Stänga av funktioner för Warehouse Management Mobile-appen eller inaktivera dem i Supply Chain Management
 
-Innan du kan använda appen måste relaterad funktion aktiveras i ditt system. Administratörer kan använda arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
-
-- **Modul:** *Lagerstyrning*
-- **Funktionsnamn:** *användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen*
+För att använda Warehouse Management Mobile-appen måste funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* måste vara inaktiverade för systemet. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version äldre än 10.0.25 kan administratörer aktivera eller inaktivera denna funktion genom att söka efter funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Skaffa mobilappen Hantering av distributionslager
 
@@ -109,7 +106,7 @@ Mer information om hur du ställer in webbtjänstprogram i Azure AD finns i föl
     - [Snabbstart: Registrera ett program med Microsofts identitetsplattform](/azure/active-directory/develop/quickstart-register-app)
     - [Så här använder du portalen för att skapa ett Azure AD-program och ett tjänstekonto som har åtkomst till resurser](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Skapa och konfigurera ett användarkonto i Supply Chain Management
+## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a><a name="user-azure-ad"></a>Skapa och konfigurera ett användarkonto i Supply Chain Management
 
 Gör så här om du vill låta Supply Chain Management använda ditt Azure AD-program.
 
@@ -117,17 +114,24 @@ Gör så här om du vill låta Supply Chain Management använda ditt Azure AD-pr
 
     1. I Supply Chain Management går du till **Systemadministration \> Användare \> Användare**.
     1. Skapa en användare.
-    1. Tilldela användaren av den mobila enheten för lagerstyrningsenheten.
+    1. Tilldela rollen *Användare av en mobil enhet för lager* till användaren.
 
     ![Tilldela användaren av den mobila enheten för lagerstyrningsenheten.](media/app-connect-app-users.png "Tilldela användaren av den mobila enheten för lagerstyrningsenheten")
 
 1. Koppla ditt Azure AD-program till användaren av mobilappen Hantering av distributionslager:
 
     1. Gå till **Systemadministration \> Konfiguration \> Azure Active Directory-program**.
-    1. Skapa en rad.
-    1. Ange det klient-ID som du noterade i föregående avsnitt, ge det ett namn och välj sedan den användare du just skapat. Vi rekommenderar att du taggar alla enheter. Om en enhet går förlorad kan du enkelt ta bort åtkomsten till Supply Chain Management från den här sidan.
+    1. Välj **Ny** i åtgärdsfönstret för att skapa en rad.
+    1. I fältet **Klient-ID** anger du klient-ID som du noterade i föregående avsnitt.
+    1. Ange sedan ett namn i fältet **Namn**.
+    1. I fältet **Användar-ID**, välj det användar-ID som du nyss skapat.
 
     ![Azure Active Directory-program.](media/app-connect-aad-apps.png "Azure Active Directory-program")
+
+> [!TIP]
+> Ett sätt att använda dessa inställningar är att skapa ett klient-ID i Azure för var och en av dina fysiska enheter och sedan lägga till varje klient-ID till sidan **Azure Active Directory appar**. Om en enhet går förlorad kan du enkelt ta bort åtkomsten till Supply Chain Management genom att ta bort dess klient-ID från den sidan. (Det här fungerar eftersom de anslutningsreferenser som sparas på varje enhet också anger ett klient-ID enligt beskrivningen senare i det här avsnittet.)
+>
+> Dessutom fastställs standardspråk, nummerformat och tidszoninställningar för varje klient-ID genom de inställningar som har angetts för värdet för **användar-ID** som mappas här. Därför kan du använda dessa inställningar när du skapar standardinställningar för varje enhet eller samling enheter, baserat på klient-ID:t. Dessa standardinställningar åsidosätts dock om de även har definierats för *användarkonto för distributionslagerappen* som en arbetare använder när han eller hon loggar in på enheten. (Mer information finns i [användarkonton för mobil enhet](mobile-device-work-users.md).)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Autentisera med hjälp av ett certifikat eller en klienthemlighet
 
@@ -136,6 +140,10 @@ Autentisering med Azure AD är ett säkert sätt att ansluta en mobil enhet till
 Certifikat kan användas som hemligheter för att bevisa programmets identitet när en token begärs. Den offentliga delen av certifikatet överförs till app-registreringen i Azure-portalen, medan det fullständiga certifikatet måste distribueras på varje enskild enhet där mobilappen Hantering av distributionslager installeras. Organisationen ansvarar för att hantera certifikatet i fråga om rotation osv.. Du kan använda självsignerade certifikat, men du bör alltid använda icke-exporterbara certifikat.
 
 Du måste göra certifikatet tillgängligt lokalt på varje enskild enhet där du kör mobilappen Hantering av distributionslager. Information om hur du hanterar certifikat för Intune-styrda enheter om du använder Intune finns i [Använda certifikat för autentisering i Microsoft Intune](/mem/intune/protect/certificates-configure).
+
+## <a name="configure-the-warehouse-management-mobile-app-for-cloud-and-edge-scale-units"></a>Konfigurera mobilappen Warehouse Management för moln- och kantskalningsenheter
+
+Några extra steg krävs om du planerar att köra mobilappen Warehouse Management mot en enhet för molnbaserad eller kantskalningsenhet. För anvisningar, se [Konfigurera mobilappen Warehouse Management för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurera programmet genom att importera anslutningsinställningar
 
@@ -299,5 +307,6 @@ Om en enhet går förlorad eller drabbas av fel, måste du ta bort åtkomsten ti
 
 - [Användarinställningar för mobil enhet](mobile-device-user-settings.md)
 - [Tilldela stegikoner och titlar för mobilappen för Warehouse Management](step-icons-titles.md)
+- [Konfigurera mobilappen Warehouse Management för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

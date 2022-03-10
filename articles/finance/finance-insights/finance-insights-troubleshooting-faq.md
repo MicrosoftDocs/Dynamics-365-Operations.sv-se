@@ -2,7 +2,7 @@
 title: Felsöka problem med Finance Insights
 description: Det här ämnet visar en lista med problem som kan inträffa när du använder Finance Insights. Här förklaras också hur du löser dessa problem.
 author: panolte
-ms.date: 11/03/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 68115d484abcdc3c37357ae441e9f9ccb5212659
-ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
+ms.openlocfilehash: fc616e5fce6bbfeaa3b36ccc35f1b1cf407af4a6
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "7827063"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109870"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Felsöka problem med Finance Insights
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Det här ämnet visar en lista med problem som kan inträffa när du använder Finance Insights. Här förklaras också hur du löser dessa problem.
 
@@ -93,3 +92,33 @@ Följande steg bör ha genomförts.
   | ---------------------------- | ---------------- |
   | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+## <a name="symptom-error-we-didnt-find-any-data-for-the-selected-filter-range-please-select-a-different-filter-range-and-try-again"></a>Symptom: Fel, "Vi hittade inga data för det valda filterintervallet. Välj ett annat filterintervall och försök igen." 
+
+### <a name="resolution"></a>Lösning
+
+Kontrollera inställningarna för dataintegrerare för att validera att det fungerar som förväntat och ställa in data från AI Builder tillbaka till Ekonomi.  
+Mer information finns i [Skapa ett dataintegrationsprojekt](../finance-insights/create-data-integrate-project.md).
+
+## <a name="symptom-customer-payment-prediction-training-failed-and-the-ai-builder-error-states-prediction-should-have-only-2-distinct-outcome-values-to-train-the-model-map-to-two-outcomes-and-retrain-training-report-issue-isnotminrequireddistinctnonnullvalues"></a>Symptom: Utbildning av kundbetalningsförutsägelser misslyckades och AI Builder felvärdena, "Förutsägelse ska bara ha 2 olika resultatvärden för att utbilda modellen. Mappa till två resultat och redisponera", "Utbildningsrapportproblem: IsNotMinRequiredDistinctNonNullValues".
+
+### <a name="resolution"></a>Lösning
+
+Det här felet indikerar att det inte finns tillräckligt många historiska transaktioner under det senaste året som representerar varje kategori som beskrivs i kategorierna **I tid**, **Sent** och **Mycket sent**. Du löser det här felet genom att justera transaktionsperioden **Mycket sent**. Om justering av transaktionsperioden **Mycket sent** korrigerar inte felet, **Kundbetalningsförutsägelser** är inte den bästa lösningen att använda eftersom den behöver data i varje kategori för utbildningsändamål.
+
+Mer information om hur du justerar kategorierna **I tid**, **Sent** och **Mycket sent**, se [Aktivera förutsägelser för kundbetalning](../finance-insights/enable-cust-paymnt-prediction.md).
+
+## <a name="symptom-model-training-failed"></a>Symptom: Modellutbildningen misslyckades
+
+### <a name="resolution"></a>Lösning
+
+Modellutbildning för **kassaflödesprognos** kräver data som sträcker sig över mer än ett år och innehåller mer än 100 transaktioner. Vi rekommenderar att du har minst två års data med mer än 1 000 transaktioner.
+
+Funktionen **Kundbetalningsförutsägelser** kräver mer än 100 transaktioner under de föregående sex till nio månaderna. Transaktionerna kan omfatta fritextfakturor, försäljningsorder och kundbetalningar. Dessa data måste sprids över inställningarna **I tid**, **Sent** och **Mycket sent** som har definierats på sidan **Konfiguration**.    
+
+Funktionen för **budgetförslag** kräver minst tre års budget eller faktiska data. Lösningen använder tre till tio år data i prognoser. Mer än tre år ger bättre resultat. Själva data fungerar bäst när det finns variation i värdena. Om uppgifterna innehåller alla konstanta data, till exempel en leasingkostnad, kan utbildningen misslyckas eftersom bristen på variation inte kräver AI för att projicera beloppen.
+
+## <a name="symptom-error-message-states-that-the-table-with-name-msdyn_paypredpredictionresultentities-does-not-exist-the-remote-server-returned-an-error-404-not-found"></a>Symptom: Felmeddelandet "Register med namn, msdyn_paypredpredictionresultentities" inte finns. Fjärrservern returnerade ett fel: (404) Hittade inte.
+
+### <a name="resolution"></a>Lösning
+
+Miljön har nått högsta registergräns för Data Lake Services. Mer information om gränsen finns i avsnittet **Aktivera ändringar av data i närtid i realtid** i avsnittet, översikten [Exportera översikt över Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

@@ -1,7 +1,7 @@
 ---
 title: Startsida för offentlig sektor
-description: Dynamics 365 Finance har stöd för vanliga affärsprocesser inom den offentliga sektorn. Dessa innefattar uppgifter inom budgetering, inköp, leverantörsreskontra och kundreskontra.
-author: ShylaThompson
+description: Dynamics 365 Finance har stöd för vanliga affärsprocesser inom den offentliga sektorn. Dessa processer innefattar uppgifter inom budgetering, inköp, leverantörsreskontra och kundreskontra.
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: ''
@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: SysConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 20691
+ms.custom:
+- "20691"
+- intro-internal
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c4b7221cb5b0ea1fdbb4e05831cdd6dd482e321
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f59522ab857445d69012f4cfdfade47c40189266
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823550"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817751"
 ---
 # <a name="public-sector-home-page"></a>Startsida för offentlig sektor
 
@@ -63,8 +65,7 @@ I följande tabell finns information om sambandet mellan den här konfigurations
 | Underordnade nycklar | Konfigurationsnyckeln **Avancerad redovisningspost** (AdvancedLedgerEntry) Konfigurationsnyckeln **Offentlig sektor 1099G** (Tax1099G) Konfigurationsnyckeln **Offentlig sektor 1099S** (Tax1099S) Konfigurationsnyckeln **Franska regler** |
 
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Plan för funktioner för offentlig sektor](plan-public-sector-functionality.md)
 

@@ -2,7 +2,8 @@
 title: Modul för butiksväljare
 description: Det här avsnittet handlar om modulen för butiksväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/02/2021
+manager: annbe
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5a9311435264119e8287f1b7da2d0456552231f3
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0ee9d3cec9c524f73472929052d46d87f8270ba67568314eceb462b1803cf149
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021474"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772166"
 ---
 # <a name="store-selector-module"></a>Modul för butiksväljare
 
@@ -50,12 +51,12 @@ Följ dessa steg för att ange värden för latitud och longitud för en butiksp
 1. Välj lagrets plats i vänster ruta.
 1. På snabbfliken **Adresser** väljer du **Avancerat**.
 
-    ![Exempel på butiksinformation i administrationen](./media/Store-address.png)
+    ![Exempel på butiksinformation i administrationen.](./media/Store-address.png)
 
 1. I åtgärdsfönstret väljer du **Redigera**.
 1. På snabbfliken **Allmänt** anger du värden för **Latitud** och **Longitud**.
 
-    ![Exempel på konfiguration av latitud och longitud i administrationen](./media/Store-latitude-longitude.png)
+    ![Exempel på konfiguration av latitud och longitud i administrationen.](./media/Store-latitude-longitude.png)
 
 1. Klicka på **Spara** i åtgärdsfönstret. 
 
@@ -70,7 +71,6 @@ För REST API för automatiska förslag måste du se till att följande URL:er t
 - Till direktivet **script-src** **lägg till &#42;.bing.com, &#42;.virtualearth.net**.
 - Till direktivet **script style-src** lägger du till **&#42;.bing.com**.
 
- 
 ## <a name="pickup-in-store-mode"></a>upphämta i butiksläge
 
 Modulen för butiksväljare stöder läget **Hämta i butik** som visar en lista över butiker där en produkt är tillgänglig för hämtning. Den visar även butikstider och produktlager för varje butik i listan. Modulen butiksväljare kräver en produktskontext för att återge produkttillgänglighet och för att användaren ska kunna lägga till produkten i vagnen, om produktens leveranssätt är inställt på **hämta** vid den valda butiken. Mer information om [lagerinställning](inventory-settings.md). 
@@ -81,7 +81,7 @@ För att detta scenario ska fungera bör produkter konfigureras så att leverans
 
 Följande bild visar ett exempel på en modul för butiksväljare som används på ett PDP.
 
-![Exempel på en modul för butiksväljare som används på PDP](./media/BOPIS.PNG)
+![Exempel på en modul för butiksväljare som används på PDP.](./media/BOPIS.PNG)
 
 > [!NOTE]
 > I version 10.0.16 och senare kan en ny funktion aktiveras, detta så att en organisation kan definiera flera olika hämtningslägen för kunder.  Om den här funktionen aktiveras kommer butiksväljaren och andra näthandelsmoduler att förbättras så att konsumenten eventuellt kan välja mellan olika leveransalternativ.  Mer information om den här funktionen finns i [den här dokumentationen](./multiple-pickup-modes.md). 
@@ -92,7 +92,7 @@ Modulen butiksväljare stöder också ett läge för **sök butiker**. Detta lä
 
 I bilden nedan visas ett exempel på en modul i butiksväljaren som används tillsammans med en kartmodul på en butiksplatssida.
 
-![Exempel på en modul för butiksväljare och en kartmodul på sidan lagringsplatser](./media/ecommerce-Storelocator.PNG)
+![Exempel på en modul för butiksväljare och en kartmodul på sidan för butiksplatser.](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>Återge en karta
 
@@ -110,6 +110,10 @@ Modulen butiksväljare kan användas tillsammans med kartmodulen för att visa b
 | Alternativ för automatiska förslag: Max resultat | Antal | Den här egenskapen anger det högsta antalet resultat för automatiska förslag som kan visas via Bing automatiska förslag-API. |
 | Sök radie | Antal | Den här egenskapen definierar sökradien för butiker, i mil. Om inget värde anges används standardsökradien 50 mil. |
 | Användarvillkor | URL |  Den här egenskapen anger den användarvillkor-URL som krävs för att använda Bing Maps-tjänsten. |
+
+## <a name="site-settings"></a>Platsinställningar
+
+Butiksväljarmodulen följer [inställningarna för Lägg till produkt i kundvagnen](add-cart-settings.md). När en artikel har lagts till i kundvagnen från butiksväljarmodulen ser webbplatsanvändarna lämpliga konfigurerade arbetsflöden.
 
 ## <a name="add-a-store-selector-module-to-a-page"></a>Lägg till modulen för butiksväljare till en sida
 

@@ -2,7 +2,6 @@
 title: Visa sidor sida vid sida med funktionen Öppna i nytt fönster
 description: Det här avsnittet beskriver hur du visar sidor sida vid sida.
 author: aneesmsft
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
@@ -15,16 +14,19 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf77e488b60cc4c526398db494104c31b0f210b1
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: a4c8086d511892f8965dfefca2789742a006f63f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570955"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068069"
 ---
 # <a name="show-pages-side-by-side-using-the-open-in-new-window-feature"></a>Visa sidor sida vid sida med funktionen Öppna i nytt fönster
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Det här avsnittet beskriver hur du visar sidor sida vid sida.
 

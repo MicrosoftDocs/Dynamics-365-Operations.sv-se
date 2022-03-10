@@ -1,8 +1,8 @@
 ---
 title: Kortkommandon
-description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med Finance and Operations-appar.
+description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med Ekonomi och Drift-appar.
 author: jasongre
-ms.date: 12/10/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e6f6faf75bb9dc2b11b3a27a886b1674cc7b339
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 5243ea35138aa37d9fc54821e0923d0fa47c95de
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913528"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119562"
 ---
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
 [!include [banner](../includes/banner.md)]
 
-Du kan använda följande kortkommandon för att snabbt och effektivt mata in data i Finance and Operations-appar.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Kortkommandon kan hjälpa dig att snabbt och effektivt mata in data i appar för ekonomi och drift. 
 
 > [!NOTE]
 > Tangentbordsgenvägarna som beskrivs här hänvisar till en amerikansk tangentbordslayout. Knappar på andra tangentbordslayouter kan kanske inte exakt motsvarar tangenterna på ett tangentbord i USA.
@@ -34,11 +37,11 @@ Vissa av genvägarna på den här sidan är *nyckelackord*, vilket innebär att 
 
 ## <a name="finding-a-shortcut"></a>Söka efter en genväg
 
-I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga genvägar direkt via användargränssnittet. Högerklicka på en kontroll och välj **Visa genvägar**. Då öppnas en dialogruta som visar de kortkommandon som du kan använda baserat på var du befinner dig på sidan.
+Användarna kan upptäcka tillgängliga genvägar direkt via användargränssnittet. Högerklicka på en kontroll och välj **Visa genvägar**. Då öppnas en dialogruta som visar de kortkommandon som du kan använda baserat på var du befinner dig på sidan. Du kan också öppna dialogrutan genom att trycka på Alt+Shift+K (och trycka på Alt+Shift+K en andra gång om du vill se alla tillgängliga genvägar för sidan).    
 
 ## <a name="action-shortcuts"></a>Åtgärdgenvägar
 
-| Om du vill göra detta                                      | Tryck                            |
+| Om du vill göra detta                                      | Tryck på                             |
 |-------------------------------------------------|----------------------------------|
 | Öppna åtgärdssökning                              | Ctrl+ eller Alt+Q                  |
 | Flytta till standardåtgärdsfönstret                | Alt+M,A eller Ctrl+F6               |
@@ -253,10 +256,14 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Visa/dölj det animerade popup-meddelandet (under uppspelning av en uppgiftsguide)              | Alt+R,C                    |
 | Visa mer/mindre information i det animerade popup-meddelandet (under uppspelning av en uppgiftsguide) | Alt+R,M                    |
 
+## <a name="focus-management"></a>Fokushantering 
+I fokushantering beskrivs hur användarfokus hanteras i ett program. Appar för ekonomi och drift har anpassade fokusbeteenden som är avsedda att optimera användarproduktiviteten, särskilt för inmatning av data. Följande är fokusbeteenden:  
+
+-  När en sida läses in kommer den första redigeringsbara inmatningskontrollen på sidan att vara i fokus och du kan acceptera användarindata direkt. Om det inte finns någon redigeringsbar inmatningskontroll på sidan är reservalternativet för ursprungligt fokus den första inmatningskontrollen på sidan följt av den första, fokusbara kontrollen på sidan.   
+-  Vanligtvis bearbetas åtgärden och fokus kan återgå till sidan när en knapp har valts. När detta händer är det fokus på att återgå till knappkontrollen som valdes. Detta gäller appar för ekonomi och drift **förutom** när knappen finns i åtgärdsfönstret eller i ett verktygsfält. När åtgärden är klar återgår åtgärden till den sista kontrollen *utanför* åtgärdsfönstret (eller verktygsfältet) som var i fokus innan knappen markerades.
+
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Tangentbordsgenvägar för analys av saknade konton](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

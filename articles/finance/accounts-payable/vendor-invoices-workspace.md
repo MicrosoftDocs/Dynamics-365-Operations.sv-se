@@ -2,24 +2,24 @@
 title: Arbetsyta för automatisering av leverantörsfaktura
 description: I det här avsnittet beskrivs hur du ställer in en arbetsyta som är relaterad till leverantörsfakturor och som visar den information som är tillgänglig via Microsoft Power BI.
 author: abruer
-ms.date: 09/28/2020
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7216c2f6e593e3ca11d78903f318d5f217b19674
-ms.sourcegitcommit: 375dd11a9e4076394a33e99f11371ab53e80c337
+ms.openlocfilehash: f28cc5f63df2f0d8a4c8cae407f7166aa4fa03db
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5954145"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182589"
 ---
 # <a name="vendor-invoice-automation-workspace"></a>Arbetsyta för automatisering av leverantörsfaktura
 
@@ -60,14 +60,14 @@ När funktionen **Automatisera leverantörsfakturor** är aktiverad visas fälte
 
 Panelerna i avsnittet **Sammanfattning av väntande fakturor** i vyn **Mitt arbete** ger en översikt över statusen för leverantörsfakturorna. Du kan visa journaler som ännu inte har bokförts och fakturor som är spärrade. Det finns dessutom fyra paneler som är kopplade till funktionen automatisering av leverantörsfaktura:
 
-- Manuell inleveransmatchning krävs
-- Matchningsvalideringen lyckades inte
-- Inga fakturor har skickat till arbetsflödet
-- Inga fakturor har importerats
+- **Manuell inleveransmatchning krävs**
+- **Matchningsvalideringen lyckades inte**
+- **Inga fakturor har skickat till arbetsflödet**
+- **Inga fakturor har importerats**
 
-(De fyra panelerna kräver att funktionen för automatisering av leverantörsfakturor aktiveras i funktionshantering.)
+(De fyra panelerna kräver att funktionen för automatisering av leverantörsfakturor aktiveras i **funktionshantering**.)
 
-Om du vill använda panelen **Återställ leverantörsfakturor** måste funktionen vara aktiverad i leverantörsparametrar. Gå till **leverantörsreskontra \> parametrar för leverantörsreskontra** och ställ sedan in fliken **faktura** ange alternativet **tillåt återställning av leverantörsfaktura** till **Ja**.
+Om du vill använda panelen **Återställ leverantörsfakturor** måste funktionen vara aktiverad i **leverantörsparametrar**. Gå till **leverantörsreskontra \> parametrar för leverantörsreskontra** och ställ sedan in fliken **faktura** ange alternativet **tillåt återställning av leverantörsfaktura** till **Ja**.
 
 När funktionen är aktiverad visas också tre paneler som grupperats på arbetsytan i ett avsnitt med namnet **journaler**. Panelerna heter **Journaler**, **Journaler – tilldelade till mig** och **Fakturapool**. 
 

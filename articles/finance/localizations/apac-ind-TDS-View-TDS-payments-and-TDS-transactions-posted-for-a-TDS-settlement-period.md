@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 2bada42073e46c69101e6d31f3328a2eeb95f880
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c67f892e36e536ae2a30b242164eeaa581c7d01b163845a529dd777be6d4f1f9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023591"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771618"
 ---
 # <a name="view-posted-tds-payments-and-transactions-for-a-tds-settlement-period"></a>Visa bokförda TDS-betalningar och transaktioner för en TDS-kvittningsperiod
 
@@ -31,7 +31,7 @@ I det här avsnittet beskrivs hur du visar betalningar och transaktioner för sk
 
 1. Gå till **Skatt \> Indirekta skatter \> Källskatt \> Källskattekvittningsperioder**.
 
-    [![Sidan Källskattekvittningsperioder](./media/apac-ind-TDS-50.png)](./media/apac-ind-TDS-50.png)
+    [![Sidan Källskattekvittningsperioder.](./media/apac-ind-TDS-50.png)](./media/apac-ind-TDS-50.png)
 
 2. På sidan **Källskattekvittningsperioder** väljer du **Källskattebetalningar** för att öppna sidan **Källskattebetalningar**, där du kan visa TDS-kvittningar som gjordes för en specifik TDS-kvittningsperiod.
 

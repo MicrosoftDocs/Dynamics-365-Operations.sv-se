@@ -2,11 +2,11 @@
 title: Förslag på uppsägning av leasingavtal
 description: I detta ämne beskrivs hur du föreslår ett leasingavtal för uppsägning.
 author: moaamer
-ms.date: 1/14/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetLease
+ms.search.form: AssetLeaseTerminateLeaseListPage
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e303821bd41751cb0a07442613b8b20e8061b052
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 657bd2aa32179941e4103fea31f813688ad478ac6e9902212c976a92620b2e67
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819876"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717507"
 ---
 # <a name="propose-a-lease-for-termination"></a>Föreslå ett leasingavtal för uppsägning
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Om ett leasingavtal avslutas i förtid kan tillgångsleasingen registrera en journalpost för uppsägning för att skriva av leasingskulden, användanderättigheten (ROU) samt ackumulerad avskrivning, och registrera en vinst eller förlust. Processen för förtida uppsägning avslutar ett leasingavtal och dess associerade leasingböcker. Den säger inte upp enskilda leasingböcker. I detta ämne beskrivs de funktioner som gör att du kan föreslå ett leasingavtal för uppsägning och bearbeta journalposten för leasinguppsägningen.
 
@@ -103,7 +102,7 @@ I följande tabeller visas de värden som är inställda på flikarna **Allmänt
 | Tillgångens verkliga värde    | 600,000          |
 | Valuta                   | USD              |
 | Direkta utgifter       | 1 000            |
-| Marginell låneränta | 7 %               |
+| Marginell låneränta | 7%               |
 | Intervall för sammanslagning       | Årligen         |
 | Tillgångens livslängd (månader) | 600              |
 | Typ av annuitet               | Vanlig annuitet |

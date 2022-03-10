@@ -1,12 +1,10 @@
 ---
 title: Faktoravskrivning
 description: Den här artikeln ger en översikt över faktoravskrivningsmetoden.
-author: ShylaThompson
-manager: AnnBe
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 13831
 ms.assetid: 2b6c4fe4-02ff-4191-bcad-32f1f34c15f2
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4920f7f90b859006ecdcd486eaa9f4449442e51a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: aab5ab518f2806e1b27f352e354dc9280fd27def
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976151"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674488"
 ---
 # <a name="factor-depreciation"></a>Faktoravskrivning
 
@@ -30,7 +28,7 @@ ms.locfileid: "4976151"
 
 Den här artikeln ger en översikt över faktoravskrivningsmetoden.
 
-Faktorer är de procentsatser som används till att skriva av tillgångar. När du ställer in en avskrivningsprofil för anläggningstillgångar och väljer värdet **Faktor** i fältet **Metod** på sidan för **Avskrivningsprofiler** kan du ställa in progressiv, digressiv eller linjär avskrivning:
+Faktorer är de procentsatser som används till att skriva av tillgångar. När du ställer in en avskrivningsprofil för anläggningstillgångar och väljer värdet **Faktor** i fältet **Metod** på sidan för **Avskrivningsprofiler** kan du ställa in progressiv, digressiv eller linjär avskrivning.
 
 -   I progressiv avskrivning ökar avskrivningsbeloppet för varje avskrivningsperiod.
 -   I digressiv avskrivning, minskar avskrivningsbeloppet per period med tiden.
@@ -78,3 +76,6 @@ Värdet i fältet **Faktor** är lika med **50**. I detta fall är avskrivningen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

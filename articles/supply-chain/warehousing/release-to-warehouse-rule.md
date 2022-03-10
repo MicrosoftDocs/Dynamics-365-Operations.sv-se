@@ -2,11 +2,9 @@
 title: Frisläpp till regel för lagerställe
 description: Det här ämnet ger information om funktionen frisläpp till regel för lagerställe, vilket ger flexibilitet vid frisläppning till lagerstället. Det lägger till ett konfigurationsalternativ som styr om systemet tillåter att delvis reserverade orderrader frisläpps.
 author: mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSParameters
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: b23ef104b918f44eed6508319d9b58f2b8355ff1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: 2fbc292ccf8e1f459bef4d70b8c37b2da8c3dd17
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228427"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580034"
 ---
 # <a name="release-to-warehouse-rule"></a>Frisläpp till regel för lagerställe
 

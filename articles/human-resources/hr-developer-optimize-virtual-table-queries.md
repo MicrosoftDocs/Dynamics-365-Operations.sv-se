@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40fc4c06c563415cd5b1a13c145b778276274fd97279dc9f56ff5e3f8954dc76
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1857d2e35e369bcd0c8f02a059a307f31da8b3b9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732019"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067464"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Optimera frågor för virtuell Dataverse-tabell
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ## <a name="issue"></a>Utleverans
 
@@ -47,12 +50,12 @@ En orsak till långsam prestanda med virtuella Dataverse-register för Personal 
 Ett exempel där denna effekt kan komma att uppstå är i frågor som gäller enheten Arbetare **(mshr_hcmworkerentity)** eller Grundarbetare **(mshr_hcmworkerbaseentity)**. Prestandaproblemet kan manifesteras på några olika sätt:
 
 - **Långsam frågekörning:** Frågan mot det virtuella registret kan returnera förväntat resultat, men det tar längre tid än förväntat att köra frågan fullständigt.
-- **Tidsgräns för fråga**: Frågan kan överskrida tidsgränsen och returnera följande fel: "En token erhölls i syfte att anropa Finance and Operations, men Finance and Operations returnerade ett fel av typen InternalServerError."
+- **Tidsgräns för fråga**: Frågan kan timeout och returnera följande fel: "En token erhölls för att anropa Ekonomi och Drift, men Ekonomi och Drift returnerade ett fel av typen InternalServerError."
 - **Oväntat fel**: Frågan kan komma att returnera feltypen 400 med följande meddelande: "Ett oväntat fel har inträffat."
 
   ![Feltyp 400 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
-- **Begränsning**: Frågan kan komma att överanvända serverresurser och drabbas av begränsningar. I det här fallet returnerar frågan följande felmeddelande: "En token anskaffades i syfte att anropa Finance and Operations, men Finance and Operations returnerade feltypen 429." Mer information om begränsning i Personal finns i [Frågor och avar om begränsningar](./hr-admin-integration-throttling-faq.md).
+- **Begränsning**: Frågan kan komma att överanvända serverresurser och drabbas av begränsningar. I det här fallet returnerar frågan följande fel: "En token erhölls för att anropa Ekonomi och Drift, men Ekonomi och Drift returnerade ett fel av typen 429." Mer information om begränsning i Personal finns i [Frågor och avar om begränsningar](./hr-admin-integration-throttling-faq.md).
 
   ![Feltyp 429 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
@@ -101,7 +104,7 @@ Om du upplever något av ovannämnda tecken på sämre prestanda när du skapar 
 4. Expandera noden **Entiteter** i navigeringsfönstret.
 5. I sökrutan anger du **mshr_hcmworkerbaseentity** och väljer sedan entiteten.
 6. Välj **Transformera data**.
-7. Välj **Avancerad redigerare** i Power Query-redigeraren.
+7. I Power Query redigerarfönster, välj **Avancerad redigerare**.
 8. I fönstret **Avancerad redigerare** uppdaterar du frågeställningen enligt nedan och lägger till eller tar bort kolumner i matrisen efter behov.
 
    ```
@@ -113,7 +116,7 @@ Om du upplever något av ovannämnda tecken på sämre prestanda när du skapar 
    in
      selectedWorkerBaseEntityColumns
    ```
-   ![Uppdatera frågeställningen i Advanced Editor för Power Query-redigeraren.](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
+   ![Uppdatera frågeställningen i Avancerad redigerare för Power Query-redigeraren.](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
 
 9. Välj **Klar**.
 

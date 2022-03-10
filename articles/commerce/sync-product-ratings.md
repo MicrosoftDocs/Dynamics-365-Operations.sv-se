@@ -2,11 +2,9 @@
 title: Synkronisera produktklassificeringar i Dynamics 365 Commerce
 description: I det här avsnittet beskrivs hur du synkroniserar produktvärderingar i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a7318d53535a93352425f811ec90572e65aeb696
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006295"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967960"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkronisera produktklassificeringar i Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du synkroniserar produktvärderingar i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 Om du vill använda produktvärderingar i flera kanaler, t.ex vid POS och i kundtjänst, måste produktvärderingar från tjänsten omdömen och recensioner importeras till databas för handelskanal. När produktvärderingar görs tillgängliga i flera kanaler kan de hjälpa kunderna indirekt under sina interaktioner med säljare.
 
@@ -61,7 +57,7 @@ Så här kontrollerar du att deljobb **RetailProductRating** finns:
 
 Följande illustration visar ett exempel på deljobbdetaljer i handel.
 
-![Detaljer för deljobbet RetailProductRating](media/rnr-hq-ratings-sub-job.png)
+![Detaljer för deljobbet RetailProductRating.](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
 > Om du inte hittar deljobbet **RetailProductRating** kanske du redan har kört jobbet **synkronisera produktklassificering** och **1040 CDX**-jobb innan du initierade schemaläggare för handel. I det här fallet följer du stegen nedan för att köra jobbet **fullständig datasynkronisering**.
@@ -85,7 +81,7 @@ Om du vill importera produktvärderingar till handel från klassificering och re
 
 Följande illustration visar ett exempel på konfiguration av batchjobb i handel.
 
-![Konfiguration av batchjobbet Synkronisera produktklassificeringar](media/rnr-hq-batchjob-recurrence.png)
+![Konfiguration av batchjobbet Synkronisera produktklassificeringar.](media/rnr-hq-batchjob-recurrence.png)
 
 ## <a name="verify-that-the-batch-job-for-product-rating-synchronization-was-successful"></a>Kontrollera att batchjobbet för synkronisering av produktvärderingar har slutförts.
 
@@ -97,7 +93,7 @@ För att kontrollera att batchjobbet **Synkronisera produktklassificeringar** ly
 
 I följande illustration visas ett exempel på detaljerna i batchjobbet i Commerce när batchjobbet är tidsplanerat för körning med två timmars intervall.
 
-![Detaljer för batchjobbet Synkronisera produktklassificeringar](media/rnr-hq-batchjob-status-checking.png)
+![Detaljer för batchjobbet Synkronisera produktklassificeringar.](media/rnr-hq-batchjob-status-checking.png)
 
 ## <a name="make-product-ratings-available-at-the-pos"></a>Göra produkt produktvärderingar tillgängliga i POS.
 
@@ -115,15 +111,15 @@ Så här aktiverar du produktrecensioner i POS.
 
 Följande illustration visar ett exempel på konfigurationen av parametrarna för Commerce som ska aktiveras för produktvärderingar i POS.
 
-![Konfiguration av handelsparametrarna för produktvärderingar i POS](media/rnr-hq-enable-ratings-in-pos.png)
+![Konfiguration av Commerce-parametrar för produktklassificeringar i kassan.](media/rnr-hq-enable-ratings-in-pos.png)
 
 Följande illustration visar ett exempel på produktvärderingar i POS.
 
-![Produktvärderingar i POS](media/rnr-pos-catalog-ratings.png)
+![Produktvärderingar i kassan.](media/rnr-pos-catalog-ratings.png)
 
 Följande illustration visar ett exempel på produktvärderingar kundtjänstkanaler.
 
-![Produktvärderingar i en kundtjänstkanal](media/rnr-call-center-ratings.png)
+![Produktklassificeringar i en kundtjänstkanal.](media/rnr-call-center-ratings.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
@@ -134,3 +130,16 @@ Följande illustration visar ett exempel på produktvärderingar kundtjänstkana
 [Hantera omdömen och recensioner](manage-reviews.md)
 
 [Konfigurera omdömen och recensioner](configure-ratings-reviews.md)
+
+[Synkronisera produktklassificeringar](sync-product-ratings.md)
+
+[Aktivera manuell publicering av omdömen och recensioner genom en moderator](manual-publish-rating-reviews.md)
+
+[Importera och exportera värderingar och granskningar](import-export-reviews.md)
+
+[Konfigurera tjänst-till-tjänst-autentisering](service-to-service-auth.md)
+
+[Vanliga frågor och svar om omdömen och recensioner](ratings-reviews-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

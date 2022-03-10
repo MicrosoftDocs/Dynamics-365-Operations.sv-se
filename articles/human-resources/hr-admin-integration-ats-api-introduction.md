@@ -7,27 +7,29 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f70e377d6844b5c4f9201f0a561ad9cfcab2eda1
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: e16c781a6e51c57db8ae76dcfe0d28ec709428eb
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890135"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069942"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Introduktion av API för integrering av system för sökandespårning
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Detta ämne beskriver API för integrering av system för sökandespårning (ATS) för Dynamics 365 Human Resources. Syftet med API:et är att möjliggöra effektiviserad integrering mellan Dynamics 365 Human Resources och ATS-partner.
 
-![ATS-integreringsflöde](media/hr-admin-integration-ats-api-introduction-flow.png)
+![ATS-integreringsflöde.](media/hr-admin-integration-ats-api-introduction-flow.png)
 
 Den integrerade erfarenheten börjar i Personal när en anställningsansvarig skapar en rekryteringsbegäran. När begäran har aktiverats hämtar ATS uppgifter om förfrågningen för att skapa ett rekryteringsprojekt. Därefter följer det rekryteringsförloppet för att välja och anställa en kandidat för befattningen/befattningarna. Slutligen slutför ATS integreringen genom att skicka den valda kandidatens post till Personal. Kandidatposten kan sedan gå igenom fler registreringsvalideringar och arbetsflöden för att skapa medarbetarposten.
 
@@ -70,7 +72,7 @@ Datamodellen centreras kring två huvudentiteter:
 
 Följande diagram visar relationer inom API:t. Flera typer har utländska nycklar till andra, befintliga entiteter i Personal som inte visas här. Detta dokument innehåller information om entiteter som är specifika för rekryteringintegreringsscenarier. Det finns dock många andra entiteter i webb-API:t för Dataverse för Dynamics 365 Human Resources som också kan vara relevanta för din integrering. Du kanske till exempel också behöver detaljer för medarbetare, jobb, befattningar eller andra entiteter som inte har definierats här. Många av dessa entiteter refereras i relationer med utländska nycklar eller navigeringsegenskaper.
 
-![API-datamodell för ATS-integrering](media/hr-admin-integration-ats-api-data-model.png)
+![API-datamodell för ATS-integrering.](media/hr-admin-integration-ats-api-data-model.png)
 
 ## <a name="recruiting-request-and-related-entities-and-option-sets"></a>Rekryteringsbegäran och relaterade entiteter och alternativuppsättningar
 

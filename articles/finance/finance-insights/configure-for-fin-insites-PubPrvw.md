@@ -1,12 +1,13 @@
 ---
-title: Konfiguration för Finance Insights för offentlig förhandsgranskning (förhandsversion) – version 10.0.20 och senare
-description: I detta ämne beskrivs hur du konfigurerar ditt system för att använda de funktioner som finns i Finance Insights för allmänt tillgänglig förhandsversion i version 10.0.20 och senare.
+title: Konfiguration för Finance Insights – före version 10.0.20 och senare
+description: I detta ämne beskrivs hur du konfigurerar ditt system för att använda de funktioner som finns i Finance Insights i version 10.0.20 och senare.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 06/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
+ROBOTS: noindex,nofollow
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 14151
@@ -15,22 +16,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: eeb3061f215666d0aeb32094b5d04a9ae6e618f2
-ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
+ms.openlocfilehash: cea6258d3a99ba33e73acd2508ec7b6c11d15859
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "6309675"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061764"
 ---
-# <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Konfiguration för Finance Insights för offentlig förhandsgranskning (förhandsversion) – version 10.0.20 och senare
+# <a name="configuration-for-finance-insights---version-10020-and-later"></a>Konfiguration för Finance Insights – före version 10.0.20 och senare
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview banner](../includes/preview-banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Ekonomiska insikter kombinerar funktioner från Microsoft Dynamics 365 Finance med Dataverse, Azure och AI Builder för att tillhandahålla kraftfulla prognosverktyg för organisationen. I detta ämne beskrivs hur du konfigurerar Dynamics 365 Finance version 10.0.20 så att ditt system kan använda de funktioner som finns i Finance Insights för allmänt tillgänglig förhandsversion.
+Finance insights kombinerar funktioner från Microsoft Dynamics 365 Finance med Dataverse, Azure och AI Builder för att tillhandahålla kraftfulla prognosverktyg för organisationen. I detta ämne beskrivs hur du konfigurerar Dynamics 365 Finance version 10.0.20 så att ditt system kan använda de funktioner som finns i Finance Insights.
 
 > [!NOTE]
 > Konfigurationsstegen som beskrivs i det här ämnet gäller bara för Finance version 10.0.20 och senare. "Mer information om hur du ställer in Finance Insights i version 10.0.19 och senare finns i [Konfiguration för Finance Insights – versioner upp till 10.0.19](configure-for-fin-insites.md).
@@ -39,9 +38,9 @@ Ekonomiska insikter kombinerar funktioner från Microsoft Dynamics 365 Finance m
 
 Följ dessa steg för att distribuera miljöerna.
 
-1. I Microsoft Dynamics Lifecycle Services (LCS) skapar eller uppdaterar du en Finance-miljö. Miljön kräver Finance and Operations-appar i version 10.0.20 eller senare.
+1. I Microsoft Dynamics Lifecycle Services (LCS) skapar eller uppdaterar du en Finance-miljö. För miljön krävs appversion 10.0.20 eller senare av Finance and Operations-apparna.
 2. Miljön måste vara en miljö med hög tillgänglighet (HA) i sandbox-miljö. (Den här typen av miljö kallas också för en Nivå-2-miljö.) Mer information finns i [Miljöplanering](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. Om du konfigurerar Finance Insights i en sandbox-miljö måste du kanske kopiera produktionsdata till den miljön för att förutsägelser ska fungera. I modellen för förutsägelse används flera års data för att skapa förutsägelser. Contoso-demodatan innehåller inte tillräckligt historiska data för att mata förutsägelsemodellen tillräckligt mycket. 
+3. Om du konfigurerar Finance Insights i en sandbox-miljö måste du kanske kopiera produktionsdata till den miljön för att förutsägelser ska fungera. I modellen för förutsägelse används flera års data för att skapa förutsägelser. Contoso-demodatan innehåller inte tillräckligt med historiska data för på ett adekvat sätt mata förutsägelsemodellen. 
 
 ## <a name="configure-dataverse"></a>Konfigurera Dataverse
 
@@ -753,6 +752,6 @@ Tillägget kan ta flera minuter att installera.
 
 ## <a name="feedback-and-support"></a>Feedback och support
 
-Om du är intresserad av att lämna feedback, eller om du behöver support, skicka då ett e-postmeddelande till [Finance Insights (förhandsversion)](mailto:fiap@microsoft.com).
+Om du är intresserad av att lämna feedback, eller om du behöver support, skicka då ett e-postmeddelande till [Finance Insights](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

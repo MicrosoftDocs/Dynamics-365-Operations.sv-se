@@ -1,33 +1,30 @@
 ---
 title: Ställ in bokföringsprofiler för anläggningstillgångar
-description: I den här uppgiftsguiden ställer vi in bokföringsprofiler för anläggningstillgångar.
-author: saraschi2
-manager: AnnBe
+description: I den här proceduren visas hur du ställer in bokföringsprofiler för anläggningstillgångar.
+author: moaamer
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 07961d8613b6b5e0e1c5dc6a91b554305dcb17f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ee0006c9588a22d720687e7aceb49acc756b83e1
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448071"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883778"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Ställ in bokföringsprofiler för anläggningstillgångar
 
 [!include [banner](../../includes/banner.md)]
 
-I den här uppgiftsguiden ställer vi in bokföringsprofiler för anläggningstillgångar.  Här används revisorrollen och demonstrationdata för den juridiska personen USMF.  Exempel som angetts i uppgifthandboken, gäller en grundläggande bokföringsprofil, fast bokföringsprofiler måste skapas för dina specifika krav för kontoplanen och om den ekonomiska rapporteringen.
+I den här proceduren visas hur du ställer in bokföringsprofiler för anläggningstillgångar. Exempel som angetts i ämnen, gäller en grundläggande bokföringsprofil, fast bokföringsprofiler måste skapas för dina specifika krav för kontoplanen och om den ekonomiska rapporteringen.
 
 1. I navigeringsfönstret går du till **Moduler > Anläggningstillgångar > Inställningar > Bokföringsprofiler för anläggningstillgångar**.
 2. Klicka på **Ny**.
@@ -123,3 +120,6 @@ I den här uppgiftsguiden ställer vi in bokföringsprofiler för anläggningsti
 88. Ange önskade värden i fältet **Huvudkonto**.
 89. Ange önskade värden i fältet **Motkonto**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

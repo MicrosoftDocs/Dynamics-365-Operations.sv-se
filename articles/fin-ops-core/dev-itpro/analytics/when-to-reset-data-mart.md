@@ -2,7 +2,7 @@
 title: Vanliga frågor om återställ datatorg
 description: Det här avsnittet innehåller svar på vanliga frågor om återställ datatorg.
 author: jinniew
-ms.date: 07/16/2021
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e5a40342306eb9888b456a865ab2220dccfe65f8ccecc67bf8fc16f907e06977
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53f45f469c39f9e389763aa0daed658e5a62d377
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767765"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119522"
 ---
 # <a name="data-mart-resets-faq"></a>Vanliga frågor om återställ datatorg
 
@@ -35,8 +35,9 @@ För att säkerställa att gamla data inte infogas kan en återställ datatorg s
 
 Om ett eller flera av följande gäller i din situation kan din organisation dra fördel av en återställ datatorg:
 
-- Återställdes programdatabasen.
-- Du har öppnat en supportbegäran och en supporttekniker har uppmanat dig att återställa datatorg som ett del av ett felsökningssteg.
+- **Återställdes programdatabasen**
+- **Du har öppnat en supportbegäran** - en supporttekniker har uppmanat dig att återställa datatorg som ett del av ett felsökningssteg.
+- **Stor andel föråldrade poster** - Föråldrade poster ger inte själva nödvändigtvis rätt att återställa datatorg. En hög procentsats av föråldrade data kan försämra den totala genereringen av rapporter och integrationsprestanda och få extra användning av databasutrymme. Vi rekommenderar att du genomför en datamart-återställning för att ta bort inaktuell data när det finns mer än 80 % inaktuell data i datamarten.
  
 > [!NOTE]
 > Processen för att återställa data påverkas av antalet redovisnings- och budgettransaktioner i databasen. Beroende på antalet transaktioner i ditt system kan en data-reset slutföras om bara 15 minuter eller så kan den ta upp till fyra timmar. Om återställningen tar längre än fyra timmar rekommenderar vi dock att du kontaktar Support.
@@ -45,13 +46,12 @@ Om ett eller flera av följande gäller i din situation kan din organisation dra
 
 Det finns vissa omständigheter när vi inte rekommenderar att du återställer en data mart:
 
-- Du upplever prestandaproblem som är kopplade till datasynkronisering.
+- Du upplever problem med dataintegrationsprestanda.
 - Om du har ett återkommande återställt mönster på grund av någon av följande orsaker:
 
-    - **Data som saknas** – Om du ser att data saknas öppnar du ett supportärende hos Microsoft för att granska ditt rapportformat och eventuella problem med datasynkronisering.
+    - **Saknade eller oväntade data i rapporten** – Om du ser att data saknas öppnar du ett supportärende hos Microsoft för att granska ditt rapportformat och eventuella problem med datasynkronisering.
     - **Låst integrationstillstånd**
-    - **Föråldrade poster** - Föråldrade poster ger inte själva nödvändigtvis rätt att återställa datatorg. Om du har en stor datauppsättning kommer återställningsprocessen att ta en stund att köra, men den är särskilt effektiv för att förbättra systemet.
-
+   
 ## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Om jag återställer datatorg, förlorar jag rapporter som jag redan har utformat?
 
 Nej. Dina rapporter lagras i SQL-register som inte påverkas av en återställd data mart. Om du är orolig för att förlora rapporter som du har utformat, kan du backa upp designerna som du inte vill förlora. Om du vill säkerhetskopiera designer öppnar du rapportdesignern och går till **Företag \> Företag \> Byggblock \> Exportera**.

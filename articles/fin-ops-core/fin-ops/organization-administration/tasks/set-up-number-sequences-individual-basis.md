@@ -1,26 +1,24 @@
 ---
 title: Ställa in enskilda nummerserier
 description: Detta avsnitt förklarar hur man ställer in enskilda nummerserier.
-author: sericks007
-manager: AnnBe
+author: SunilGarg
 ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
 audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sericks
+ms.author: sunilg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cf06046c772cd128f5600ed319cc3d0d4457b07f
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: b95a639c593c0f126a9aa1dd50434838d09ef746
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694725"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777923"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Ställa in enskilda nummerserier
 
@@ -32,7 +30,7 @@ Detta avsnitt förklarar hur man ställer in enskilda nummerserier. Nummerserier
 2. Välj **nummerserier**
 3. Skriv ett värde i fältet **Nummerseriekod**.
 4. Skriv ett värde i fältet **Namn**.
-5. Välj ett omfång för nummerserien och de valda omfångvärdena från listrutan på snabbfliken **Områdesparametrar**. Omfånget definierar vilka organisationer använder nummerserien. Dessutom kan nummerserier som har ett annat omfång än **Delad** ha segment som motsvarar deras omfång. Till exempel kan en nummerserie med omfånget **Juridisk person** innehålla ett segment med en juridisk person. Mer information om omfång finns i hjälpavsnittet [Översikt över nummerserier](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). 
+5. Välj ett omfång för nummerserien och de valda omfångvärdena från listrutan på snabbfliken **Områdesparametrar**. Omfånget definierar vilka organisationer använder nummerserien. Dessutom kan nummerserier som har ett annat omfång än **Delad** ha segment som motsvarar deras omfång. Till exempel kan en nummerserie med omfånget **Juridisk person** innehålla ett segment med en juridisk person. Mer information om omfång finns i hjälpavsnittet [Översikt över nummerserier](../number-sequence-overview.md). 
 6. Expandera avsnittet **Segment**.
     - Definiera formatet för nummerserien genom att lägga till, ta bort och ordna om segment.  
     - Nummerserier för alla områden kan innehålla *Konstanta segment* och *Alfanumeriska segment*. Konstanta segment innehåller en uppsättning alfanumeriska tecken som inte ändras. Använd den här segmenttypen om du vill lägga till ett bindestreck eller andra avgränsare mellan nummerseriesegment. Alfanumeriska segment innehåller en kombination av nummertecken (#) och et-tecken (&). Dessa representerar bokstäver och siffror som ökar varje gång som ett nummer i serien används. Använd ett nummertecken (#) om du vill ange att öka nummer och en et-tecken (&) om du vill ange att öka bokstäver. Med formatet `#####_2014` skapas till exempel serien `00001_2014`, `00002_2014`, osv. Minst ett alfanumeriskt segment måste vara närvarande. Omfångsegment som till exempel företag eller juridisk person, är inte obligatoriska. Men om du inte inkluderar omfångsegment i formatet, genereras ändå nummer för den valda referensen per omfång.  
@@ -40,3 +38,6 @@ Detta avsnitt förklarar hur man ställer in enskilda nummerserier. Nummerserier
 8. Expandera den **allmänna** delen. Ange om nummerserien är manuell och kontinuerlig eller ickekontinuerlig på snabbfliken Allmänt. Ange även lägsta och högsta numret som kan användas i nummerserien. Vi rekommenderar inte att ändra en löpande nummerserie till en kontinuerlig nummerserie. Nummerserien kommer inte att vara korrekt kontinuerlig. Den här ändringen kan även orsaka dubbelnyckelkränkningar i databasen. Dessutom har kontinuerliga nummerserier en större effekt på systemets prestanda.   
 9. Klicka på **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

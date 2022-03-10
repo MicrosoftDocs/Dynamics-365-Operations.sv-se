@@ -1,27 +1,24 @@
 ---
 title: Skapa en produktklassificeringshierarki
 description: I den här proceduren visas hur du skapar en ny kategorihierarki och tilldelar en typ av artikelkodhierarki.
-author: ShylaThompson
-manager: tfehr
+author: t-benebo
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole, EcoResProductCategory, EcoResCategorySearchList, EcoResCategoryHierarchyFactbox, EcoResCategoryFriendlyName, EcoResCategoryAddProduct
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 439df63a4f8f0cc1c030554d18f80e9934c88b00
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fb561647efcc21a8287d8246024fb468b8a79a71
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437670"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567113"
 ---
 # <a name="create-a-hierarchy-of-product-classification"></a>Skapa en produktklassificeringshierarki
 
@@ -67,3 +64,6 @@ I den här proceduren visas hur du skapar en ny kategorihierarki och tilldelar e
 8. Klicka på länken på den valda raden i listan.
 9. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

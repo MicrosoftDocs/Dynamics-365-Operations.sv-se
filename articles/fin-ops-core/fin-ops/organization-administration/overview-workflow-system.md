@@ -3,7 +3,7 @@ title: Arbetsflödessystem – översikt
 description: Det här ämnet beskriver arbetsflödessystemet.
 author: ChrisGarty
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
@@ -16,16 +16,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc73f1bde3407c144dc1cd48283385c19713430e
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 70776ba0a0461998d2c1f62ba05b55cd4307a0f7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349094"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067943"
 ---
 # <a name="workflow-system-overview"></a>Arbetsflödessystem – översikt
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Det här ämnet beskriver arbetsflödessystemet.
 

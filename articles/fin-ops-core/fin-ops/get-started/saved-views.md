@@ -2,7 +2,7 @@
 title: Sparade vyer
 description: I det här avsnittet beskrivs hur du använder funktionerna för sparade vyer.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 9cca56a108177520f4aebea03f7f4d776f46fa3f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: bd1b034ebb66b996e20173c2ad4f958e643f9c2e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344354"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065716"
 ---
 # <a name="saved-views"></a>Sparade vyer
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 ## <a name="introduction"></a>Introduktion
 
@@ -213,7 +215,7 @@ En lista med kända problem med sparade vyer finns i [skapa formulär som utnytt
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hur aktiverar jag sparade vyer i min miljö?
 
 > [!NOTE]
-> Funktionen **sparade vyer** kräver att anpassningssystemet i Finance and Operations aktiveras. Om anpassningar inaktiveras för hela miljön inaktiveras vyer även om du följer stegen nedan. 
+> Funktionen **sparade vyer** kräver att anpassningssystemet i Ekonomi och Drift aktiveras. Om anpassningar inaktiveras för hela miljön inaktiveras vyer även om du följer stegen nedan. 
 
 Du kan aktivera och inaktivera funktionen **Sparade vyer** via funktionshantering i alla miljöer. När den har aktiverats aktiveras sparade vyer i alla efterföljande användarsessioner.
 

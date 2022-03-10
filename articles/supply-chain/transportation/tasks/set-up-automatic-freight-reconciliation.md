@@ -1,27 +1,25 @@
 ---
 title: Ställ in automatisk fraktavstämning
 description: Denna procedur visar hur du ställer in data för automatisk fraktavstämning.
-author: ShylaThompson
-manager: tfehr
+author: Henrikan
 ms.date: 10/16/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSFreightBillTypeAssignment, TMSCarrierCodeLookup, DefaultDashboard, TMSAuditMaster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4ac1b73adffd155ca51130e834212c9472d92f94
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d1dbe3c683d869f86bc7231c68839f431cc61d6b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233713"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574843"
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Ställ in automatisk fraktavstämning
 

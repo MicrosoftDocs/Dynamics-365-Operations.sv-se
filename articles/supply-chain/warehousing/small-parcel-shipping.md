@@ -2,11 +2,9 @@
 title: Leverans av små paket
 description: Det här ämnet innehåller information om funktionen leverans av små paket (SPS). Med denna funktion kan Microsoft Dynamics 365 Supply Chain Management skicka uppgifter om en förpackad behållare till transportföretaget och sedan ta emot en leveransetikett, basleveranstariff och spårningsnummer tillbaka från det transportföretaget.
 author: Mirzaab
-manager: tfehr
 ms.date: 01/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSRateEngine, TMSCarrier, CustTable, TMSShippingCarrierCustomerAccount, TMSSmallParcelShippingFeature
 audience: Application User
@@ -15,17 +13,17 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
-ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 350193a0054ef879ece3dd2dfcc4105476981837
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.dyn365.ops.version: 10.0.16
+ms.openlocfilehash: cb5a4195d94750fcbee00e7301bd250f653cb347
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5078309"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576098"
 ---
 # <a name="small-parcel-shipping"></a>Leverans av små paket
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Funktionen leverans av små paket (SPS) gör att Microsoft Dynamics 365 Supply Chain Management kan kommunicera direkt med transportföretag genom att tillhandahålla ett ramverk för kommunikation via transportföretags-API:er. Den här funktionen är användbar när du levererar enskilda försäljningsorder via kommersiella transportföretag i stället för att använda leverans av behållare eller LTL-leverans (mindre än lastbilslasten).
 
@@ -60,7 +58,7 @@ Följ dessa steg för att hämta demotariffmotorn.
 Mer information om hur du skapar och distribuerar funktionella tariffmotorer så att de kan användas i en tillverknings- eller testmiljö finns i följande ämnen:
 
 - [Skapa en ny transporthanteringsmotor](../transportation/create-new-transportation-management-engine.md)
-- [Ställa in motorer för transporthantering](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
+- [Ställa in motorer för transporthantering](/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
 
 Mer information om hur du skapar en SPS-tariffmotor finns i följande inlägg: [Leverans av små paket: Hur du använder funktionen för leverans av små paket i Microsoft Dynamics 365](https://hub.bhsolutions.com/creating-a-mock-parcel-engine-in-d365?submissionGuid=46a1fccf-80b0-4b70-a6a0-4bf45a8756b5).
 
@@ -276,6 +274,9 @@ Följ dessa steg för att förpacka leveransen.
 
     Leveransetiketten ska nu skrivas ut på den ZPL-skrivare som du valde tidigare. Det bör likna följande exempel:
 
-    ![Exempel på leveransetikett](media/sps-label-example.png "Exempel på leveransetikett")
+    ![Exempel på frakthandling.](media/sps-label-example.png "Exempel på leveransetikett")
 
 1. Observera att värdena **Behållarmanifest-ID** och **Total frakt** har lagts till som mottagna från transportföretaget.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

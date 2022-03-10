@@ -12,13 +12,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
-ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 9c534f5e10f5797543d56ff4a5a7ada937edcb017228ebe395ae8a45efa10886
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.18
+ms.openlocfilehash: 527bd24d7f2e9a05f6e617c222005186520f9968
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781331"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103799"
 ---
 # <a name="wave-allocation"></a>Påfyllnadsallokering
 
@@ -77,7 +77,7 @@ Parallell allokeringsbearbetning kräver att påfyllnadsbearbetning körs i batc
 
 Om det behövs kan du ångra alla inställningar som gjorts som standard när funktionen *Påfyllnadsparallellisering för allokera påfyllnadsmetoden* aktiveras automatiskt för din instans. Om du vill göra det här:
 
-- Gå till **Lagerstyrning \> Inställningar \> Parametrar för lagerstyrning**. På fliken **Påfyllnadsbearbetning** använder du de prioriterade värdena för **Bearbeta påfyllnader i batch** och **Vänta på lås (ms)**.
+- Gå till **Warehouse management \> Inställningar \> Parametrar för Warehouse management**. På fliken **Påfyllnadsbearbetning** använder du de prioriterade värdena för **Bearbeta påfyllnader i batch** och **Vänta på lås (ms)**.
 - Gå till **Lagerstyrning \> Inställningar \> Påfyllnader \> Metoder för påfyllnadsprocess**. Välj `allocateWave` metod. I åtgärdsfönstret, välj **Uppgiftskonfiguration** för att öppna en sida som visar varje lager där metoden är inställd på att köras parallellt. Ändra eller radera antalet batchuppgifter och den tilldelade påfyllnadsgruppen för respektive lagerställe i listan efter behov.
 
 ## <a name="troubleshooting"></a>Felsökning

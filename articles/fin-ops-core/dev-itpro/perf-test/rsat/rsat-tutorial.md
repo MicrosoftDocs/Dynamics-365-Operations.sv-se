@@ -1,24 +1,21 @@
 ---
 title: Självstudie för Regression Suite Automation Tool
 description: Det här avsnittet visar hur du använder RSAT (Regression Suite Automation Tool). Den beskriver olika funktioner och ger exempel som använder avancerad skriptanvändning.
-author: robinarh
-ms.date: 01/15/2021
+author: FrankDahl
+ms.date: 09/23/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: rhaertle
-ms.custom: 21761
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: d70b2e7cf497fbf165a452f7977a14a98b9e1956e5a964d42c7bf8a6c3abe0bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2f31009424629221a8e4f130b0ec1879c6c6e3d4
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714559"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781973"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Självstudie för Regression Suite Automation Tool
 
@@ -67,7 +64,7 @@ Med RSAT kan du använda samma uppgiftsinspelning med flera testärenden, vilket
 
 Den här funktionen kan användas för att validera om en åtgärd utförts. När till exempel en tillverkningsorder skapas, uppskattas och sedan startas, visar appen meddelandet "produktion – start" för att meddela dig att tillverkningsordern har startats.
 
-![Produktion - Startameddelande.](./media/use_rsa_tool_05.png)
+![Produktion – Startameddelande.](./media/use_rsa_tool_05.png)
 
 Du kan validera det här meddelandet genom RSAT genom att ange meddelande texten på fliken **MessageValidation** i Excel-parameterfilen för lämplig inspelning.
 
@@ -82,13 +79,19 @@ När testfallet har körts, jämförs meddelandet i Excel-parameterfilen i det m
 
 Den här funktionen tar skärmbilder av de steg som har utförts under uppgiftsregistreringen. Den är användbar för granskning och felsökning.
 
-- Om du vill använda den här funktionen öppnar du filen **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** under RSAT-installationsmappen (t.ex. **C:\\programfiler (x86)\\Regression Suite Automation Tool**) och ändrar värdet i följande element från **falskt** till **sant**.
+- Om du vill använda den här funktionen medan du kör RSAT med användargränssnittet öppnar du filen **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** under RSAT-installationsmappen (t.ex. **C:\\programfiler (x86)\\Regression Suite Automation Tool**) och ändrar värdet i följande element från **falskt** till **sant**.
 
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-När du kör testärendet genererar RSAT ögonblicksbilder (bilder) av stegen i mappen uppspelning i testärenden i arbetskatalogen. Om du använder en äldre version av RSAT sparas bilderna i **C:\\Användare\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, en separat mapp skapas för varje testärende som körs.
+- Om du vill använda den här funktionen medan du kör RSAT med CLI (t.ex. Azure DevOps) öppnar du filen **Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe.config** under RSAT-installationsmappen (t.ex. **C:\\programfiler (x86)\\Regression Suite Automation Tool**) och ändrar värdet i följande element från **falskt** till **sant**.
+
+    ```xml
+    <add key="VerboseSnapshotsEnabled" value="false" />
+    ```
+
+När du kör testärendet genererar RSAT ögonblicksbilder (bilder) av stegen och sparar dem i mappen uppspelning i testärenden i arbetskatalogen. I den mapp som innehåller en mapp skapas en separat undermapp med namnet **StepSnapshots**.  Mappen innehåller ögonblicksbilder för testärenden som körs.
 
 ## <a name="assignment"></a>Uppdrag
 
@@ -521,7 +524,7 @@ for ($i = $start; $i -lt $start + $nr; $i++ )
 
 I följande exempel används ett OData-anrop (Open Data Protocol) för att hitta orderstatusen för en inköpsorder. Om statusvärdet inte har **fakturerats** kan du t.ex. anropa ett testfall för RSAT som bokför fakturan.
 
-```xpp
+```powershell
 function Odata_Get
 {
     Param ( [string] $environment, [string] $cmd )

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 3d197046bd547757f32712a50949b41897f6fedf
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 3d60265df7ff1f447e20866b8b8a447d88db8cc4b3dccedebc0f18ce8f0f70dc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020101"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746330"
 ---
 # <a name="tax-is-posted-to-the-wrong-ledger-account-in-the-voucher"></a>Moms bokförs på fel redovisningskonto i verifikationen
 
@@ -30,26 +30,26 @@ I samband med bokföring kan moms komma att bokföras på fel redovisningskonto 
 
 1. På sidan **Verifikationstransaktioner** väljer du den transaktion som du vill arbeta med och sedan **Bokförd moms**.
 
-    [![Knappen för Bokförd moms på sidan Verifikationstransaktioner](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
+    [![Knappen för Bokförd moms på sidan Verifikationstransaktioner.](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
 
 2. Kontrollera värdet i fältet **Momskod**. I det här exemplet är detta **VAT 19**.
 
-    [![Fältet för momskod på sidan Bokförd moms](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
+    [![Fältet för momskod på sidan Bokförd moms.](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
 
 ## <a name="check-the-ledger-posting-group-of-the-tax-code"></a>Kontrollera momskodens redovisningsbokföringsgrupp
 
 1. Gå till **Moms** \> **Indirekta skatter** \> **Moms** \> **Momskoder**.
 2. Sök efter och välj momskod, och granska sedan värdet i fältet **Redovisningsbokföringsgrupp**. I detta exempel är detta **VAT**.
 
-    [![Fältet Redovisningsbokföring på sidan Momskoder](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
+    [![Fältet Redovisningsbokföring på sidan Momskoder.](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
 
 3. Värdet i fältet **Redovisningsbokföringsgrupp** är en länk. Markera länken om du vill visa mer information om gruppens konfiguration. Du kan även markera och hålla ned (eller högerklicka) i fältet och sedan välja **Visa detaljer**.
 
-    [![Kommandot Visa information](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
+    [![Kommandot Visa information.](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
 
 4. Kontrollera att kontonumret är korrekt och i enlighet med transationstyp en i fältet **Momsskuld**. Om det inte är det ska du välja rätt konto att bokföra på. I detta exempel ska momsen för försäljningsordern bokföras på momsskuldkonto 222200.
 
-    [![Fältet Momsskuld på sidan Redovisningsbokföringsgrupper](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)
+    [![Fältet Momsskuld på sidan Bokföringsgrupper för redovisning.](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)
 
     Följande register ger information om respektive fält på sidan **Redovisningsbokföringsgrupper**.
 
@@ -71,11 +71,11 @@ I koden bestäms bokföringskontot av redovisningsdimensionen. Redovisningsdimen
 
 1. För en försäljningsorder lägger du till en brytpunkt på metoderna **Tax::saveAndPost()** och **Tax::post()**. Var uppmärksam på värdet i **\_ledgerDimension**.
 
-    [![Exempel på försäljningsorderkod som har en brytpunkt](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
+    [![Exempel på försäljningsorderkod som har en brytpunkt.](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
 
     För en inköpsorder lägger du till en brytpunkt för metoderna **TaxPost::saveAndPost()** och **TaxPost::postToTaxTrans()**. Var uppmärksam på värdet i **\_ledgerDimension**.
 
-    [![Exempel på inköpsorderkod som har en brytpunkt](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
+    [![Exempel på inköpsorderkod som har en brytpunkt.](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
 
 2. Kör följande SQL-fråga för att hitta visningsvärdet för kontot i databasen, baserat på det post-ID som sparas av redovisningsdimensionen.
 
@@ -83,7 +83,7 @@ I koden bestäms bokföringskontot av redovisningsdimensionen. Redovisningsdimen
     select * from DIMENSIONATTRIBUTEVALUECOMBINATION where recid={the value of _ledgerDimension}
     ```
 
-    [![Visa värdet på post-ID:t](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
+    [![Visa värdet i post-ID:t.](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
 
 3. Undersöka anropsstacken för att hitta var **_ledgerDimension**-värdet har tilldelats. Värdet kommer vanligtvis från **TmpTaxWorkTrans**. I det här fallet ska du lägga till en brytpunkt vid **TmpTaxWorkTrans::insert()** och **TmpTaxWorkTrans::update()** för att ta reda på var värdet har tilldelats.
 

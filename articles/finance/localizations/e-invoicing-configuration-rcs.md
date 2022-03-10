@@ -2,7 +2,7 @@
 title: Konfigurera E-fakturering i Regulatory Configuration Services (RCS)
 description: I detta ämne beskrivs hur du konfigurerar E-fakturering i Dynamics 365 Regulatory Configuration Services (RCS).
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d7945cc899cf161f294dfcc3f6d1a9a79c9453ab
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 640244612a2a553ec09661635787cb7f8694283b
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897730"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779680"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurera E-fakturering i Regulatory Configuration Services (RCS)
 
@@ -46,21 +46,13 @@ Funktionerna stöder också scenarier där efterlevnad av specifikationerna för
 
 Slutligen stöder funktionerna utbyte av meddelanden med externa webbtjänster som har antingen skattemyndigheten eller någon behörig part auktoriserad part som värd, samt även begäranden om auktorisering eller godkännandestämpel på den elektroniska fakturan.
 
-### <a name="availability-of-electronic-invoicing-features"></a>Tillgänglighet för funktioner för e-fakturering
+## <a name="availability-of-electronic-invoicing-features"></a>Tillgänglighet för funktioner för e-fakturering
 
 Tillgängligheten till de elektroniska faktureringsfunktionerna beror på land eller region. Vissa funktioner är vanligtvis tillgängliga medan andra endast utgör förhandsversioner.
 
-#### <a name="generally-available-features"></a>Allmänt tillgängliga funktioner
+### <a name="generally-available-features"></a>Allmänt tillgängliga funktioner
 
 Följande tabell visar de elektroniska faktureringsfunktioner som är allmänt tillgängliga.
-
-| Land/region | Funktionsnamn                         | Affärsdokument |
-|----------------|--------------------------------------|-------------------|
-| Egypten          | Egyptisk elektronisk faktura (EG) | Försäljnings- och projektfakturor |
-
-#### <a name="preview-features"></a>Förhandsfunktioner
-
-Följande tabell visar de elektroniska faktureringsfunktioner som för närvarande utgör förhandsversioner.
 
 | Land/region | Funktionsnamn                         | Affärsdokument |
 |----------------|--------------------------------------|-------------------|
@@ -68,29 +60,40 @@ Följande tabell visar de elektroniska faktureringsfunktioner som för närvaran
 | Belgien        | Belgisk elektronisk faktura (BE)      | Försäljnings- och projektfakturor |
 | Brasilien         | Brasiliansk NF-e (BR)                  | Skattedokumentmodell 55, korrigeringsbrev, annulleringar och kasseringar |
 | Brasilien         | Brasiliansk NFS-e ABRASF Curitiba (BR) | Skattedokument för tjänster |
+| Brasilien         | Brasiliansk NF-e-import från e-post (BR) | Skattedokument modell 55 |
 | Danmark        | Dansk elektronisk faktura (DK)       | Försäljnings- och projektfakturor |
+| Egypten          | Egyptisk elektronisk faktura (EG)     | Försäljnings- och projektfakturor |
 | Estland        | Estnisk elektronisk faktura (EE)     | Försäljnings- och projektfakturor |
 | Finland        | Finsk elektronisk faktura (FI)      | Försäljnings- och projektfakturor |
 | Frankrike         | Fransk elektronisk faktura (FR)       | Försäljnings- och projektfakturor |
 | Tyskland        | Tysk elektronisk faktura (DE)       | Försäljnings- och projektfakturor |
 | Italien          | FatturaPA (IT)                       | Försäljnings- och projektfakturor |
-| Mexiko         | Mexikansk CFDI (MX)                    | Försäljningsfakturor, följesedlar, lageröverföringar, betalningskomplement och annulleringar |
 | Nederländerna    | Holländsk elektronisk faktura (NL)        | Försäljnings- och projektfakturor |
 | Norge         | Norsk elektronisk faktura (NO)    | Försäljnings- och projektfakturor |
 | Spanien          | Spansk elektronisk faktura (ES)      | Försäljnings- och projektfakturor |
 | Europa         | PEPPOL-elektronisk faktura            | PEPPOL-försäljnings- och -projektfakturor |
+| Europa         | PEPPOL-leverantörsfaktura                | PEPPOL importerar leverantörsfakturor |
+| Saudiarabien   | Elektronisk faktura för Saudiarabien (SA)| Försäljnings- och projektfakturor |
+
+### <a name="preview-features"></a>Förhandsfunktioner
+
+Följande tabell visar de elektroniska faktureringsfunktioner som för närvarande utgör förhandsversioner.
+
+| Land/region | Funktionsnamn                         | Affärsdokument |
+|----------------|--------------------------------------|-------------------|
+| Mexiko         | Mexikansk CFDI (MX)                    | Försäljningsfakturor, följesedlar, lageröverföringar, betalningskomplement och annulleringar |
 
 ### <a name="configurable-components-of-electronic-invoicing-features"></a>Konfigurerbara komponenter i elektroniska faktureringsfunktioner
 
 De elektroniska faktureringsfunktionerna består av följande grupper konfigurerbara komponenter:
 
-- **Format** – Med format kan du konfigurera vad E-fakturering måste generera när ett elektroniskt dokument blir en elektronisk faktura. Formaten inkluderar formatkonfigurationen för den elektroniska fakturan samt för filer och meddelanden som används för att skicka förfrågningar och ta emot svar när kommunikation med en extern webbtjänst krävs.
-- **Åtgärder** – Med åtgärder kan du konfigurera hur E-fakturering genererar transformeringen av ett elektroniskt dokument som Finance och Supply Chain Management har skickat till en elektronisk faktura.
-- **Tillämpliglighetsregler** – Med tillämplighetsregler kan du konfigurera den kontext som E-fakturering måste överväga för att bearbeta en e-faktureringsfunktion.
-- **Variabler** – Variabler gör att du kan konfigurera stödet för skapandet av konfigurationslogiken. Variabler kan fungera som indata för värden för att utföra en viss åtgärd. De kan också fungera som ett värdeutbyte mellan Finance och Supply Chain Management och E-fakturering.
-- **Elektronisk dokumentmodellmappning** – Med hjälp av den elektroniska dokumentmodellmappningen kan du konfigurera ER-modellmappning. Modellmappningen definierar datamappningen för den abstrakta faktura som integreras i E-fakturering när elektroniska dokument skickas.
-- **Kontextmodell för faktura** – Med hjälp av fakturakontextmodellen kan du konfigurera kontextmodellen för ER-fakturor och definiera sammanhanget för en e-faktureringsfunktion.
-- **Svarstyper** – Med svarstyper kan du konfigurera vad E-fakturering måste uppdatera i Finance och Supply Chain Management som ett resultat av den elektroniska fakturabearbetningen.
+- **Format**: Med format kan du konfigurera vad E-fakturering måste generera när ett elektroniskt dokument blir en elektronisk faktura. Formaten inkluderar formatkonfigurationen för den elektroniska fakturan samt för filer och meddelanden som används för att skicka förfrågningar och ta emot svar när kommunikation med en extern webbtjänst krävs.
+- **Åtgärder**: Med åtgärder kan du konfigurera hur E-fakturering genererar transformeringen av ett elektroniskt dokument som Finance och Supply Chain Management har skickat till en elektronisk faktura.
+- **Tillämpliglighetsregler**: Med tillämplighetsregler kan du konfigurera den kontext som E-fakturering måste överväga för att bearbeta en e-faktureringsfunktion.
+- **Variabler**: Variabler gör att du kan konfigurera stödet för skapandet av konfigurationslogiken. Variabler kan fungera som indata för värden för att utföra en viss åtgärd. De kan också fungera som ett värdeutbyte mellan Finance och Supply Chain Management och E-fakturering.
+- **Elektronisk dokumentmodellmappning**: Med hjälp av den elektroniska dokumentmodellmappningen kan du konfigurera ER-modellmappning. Modellmappningen definierar datamappningen för den abstrakta faktura som integreras i E-fakturering när elektroniska dokument skickas.
+- **Kontextmodell för faktura**: Med hjälp av fakturakontextmodellen kan du konfigurera kontextmodellen för ER-fakturor och definiera sammanhanget för en e-faktureringsfunktion.
+- **Svarstyper**: Med svarstyper kan du konfigurera vad E-fakturering måste uppdatera i Finance och Supply Chain Management som ett resultat av den elektroniska fakturabearbetningen.
 
 ### <a name="formats"></a>Format
 
@@ -195,6 +198,13 @@ Följande listor visar de ER-formatkonfigurationer som är tillgängliga för de
 - Försäljningsfaktura (ES)
 - Projektfaktura (ES)
 
+#### <a name="saudi-arabian-sa-electronic-invoice-sales-and-project-invoices-for-saudi-arabia"></a>Elektronisk faktura för Saudiarabien (SA): Försäljnings- och projektfakturor för Saudiarabien
+
+- e-faktura för försäljning (SA)
+- e-faktura för projekt (SA)
+
+Förutom de ER-formatkonfigurationer som är tillgängliga utanför rutan för användning med den elektroniska faktureringstjänsten kan du också skapa dina egna ER-formatkonfigurationer. De formatkonfigurationer som skapas för användning med funktioner för elektronisk fakturering stöder emellertid inte direkt referens till Finance eller Supply Chain Management register eller någon av motsvarande metadata. Det är bara referenser till ER-modellmappningen som stöds.
+
 ### <a name="actions"></a>Åtgärder
 
 I följande tabell visas en lista över tillgängliga åtgärder samt om dessa för tillfället är tillgängliga eller fortfarande är i förhandsgranskning.
@@ -202,10 +212,10 @@ I följande tabell visas en lista över tillgängliga åtgärder samt om dessa f
 | Åtgärd                                        | beskrivning                                                                  | Tillgänglighet         |
 |-----------------------------------------------|------------------------------------------------------------------------------|----------------------|
 | Transformera dokument                            | Transformera dokumentet genom att köra Elektronisk rapportering.                   | Allmänt tillgängligt  |
-| Signera xml-dokument                             | Signera xml-dokument med digital signatur.                                   | I förhandsgranskning           |
-| Signera json-dokument för egyptisk skattemyndighet | Signera json-dokument med digital signatur för egyptisk skattemyndighet.       | Allmänt tillgängligt  |
+| Signera xml-dokument                             | Signera xml-dokument med digital signatur.                                   | Allmänt tillgängligt  |
+| Signera json-dokument för egyptiska skattemyndigheten | Signera json-dokument med digital signatur för egyptisk skattemyndighet.       | Allmänt tillgängligt  |
 | Integrera med egyptisk ETA-tjänst           | Kommunicera med egyptisk skattemyndighet.                                     | Allmänt tillgängligt  |
-| Ring brasiliansk SEFAZ-tjänst                  | Integrera med brasiliansk SEFAZ-tjänst för sändning av skattedokument.       | I förhandsgranskning           |
+| Ring brasiliansk SEFAZ-tjänst                  | Integrera med brasiliansk SEFAZ-tjänst för sändning av skattedokument.       | Allmänt tillgängligt  |
 | Ring mexikansk PAC-tjänst                      | Integrera med mexikansk PAC-tjänst för CFDI-sändning.                      | I förhandsgranskning           |
 | Behandla svar                              | Analysera svaret från webbtjänstsamtalet.                     | Allmänt tillgängligt  |
 | Använd MS Power Automate                         | Integrera med flödet inbyggt i Microsoft Power Automate.                       | I förhandsgranskning           |
@@ -270,7 +280,7 @@ Logikoperatorer:
 - Och
 - Eller
 
-Operatortyper:
+Operatorstyper:
 - Equal
 - Not equal
 - Greater than
