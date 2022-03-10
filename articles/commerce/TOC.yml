@@ -4,13 +4,41 @@
       items:
         - name: Dynamics 365 Commerce startsida
           href: index.md
+        - name: Nyheter och ändringar
+          items:
+            - name: Nyheter och ändringar i Ekonomi och drift-appar
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
+            - name: Nyheter och ändringar i Commerce
+              items:
+                - name: Nyheter och ändringar på startsidan för Commerce
+                  href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.26 (maj 2022)
+                  href: get-started/whats-new-commerce-10-0-26.md
+                - name: Commerce 10.0.25 (april 2022)
+                  href: get-started/whats-new-commerce-10-0-25.md
+                - name: Commerce 10.0.24 (februari 2022)
+                  href: get-started/whats-new-commerce-10-0-24.md
+                - name: Commerce 10.0.23 (januari 2022)
+                  href: get-started/whats-new-commerce-10-0-23.md
+            - name: Borttagna eller inaktuella funktioner
+              items:
+                - name: Borttagna eller inaktuella funktioner – startsida
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
+                - name: Borttagna eller föråldrade funktioner i Ekonomi och drift
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
+                - name: Borttagna eller inaktuella funktioner i Dynamics 365 Commerce
+                  href: get-started/removed-deprecated-features-commerce.md
+            - name: AX 2012-funktioner som har senarelagts
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
+            - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
         - name: Kom i gång
           items:
             - name: Tjänstbeskrivning
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/commerce/toc.json
             - name: Innan du köper
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
-            - name: One Version tjänstuppdateringar
+            - name: Tjänstuppdateringar för One Version
               items:
                 - name: Översikt över tjänstuppdateringar för One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/commerce/toc.json
@@ -74,10 +102,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Commerce Data Exchange – riktlinjer för implementering
                   href: dev-itpro/implementation-considerations-cdx.md
-                - name: Finance and Operations-appar som drivs av 21Vianet i Kina
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and Operations-appar i Frankrike
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Få support
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Uppgraderings- och N-1-stöd
@@ -88,32 +112,6 @@
                   href: dev-itpro/n-1-installation-configuration.md
                 - name: Uppgradera kanaltillägget för Retail till senaste SDK för Retail
                   href: dev-itpro/RetailSDK-update.md
-            - name: Nyheter och ändringar
-              items:
-                - name: Nyheter och ändringar i Finance and Operations-appar
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
-                - name: Nyheter och ändringar i Commerce
-                  items:
-                    - name: Nyheter och ändringar på startsidan för Commerce
-                      href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.23
-                      href: get-started/whats-new-commerce-10-0-23.md
-                    - name: Commerce 10.0.22 (november 2021)
-                      href: get-started/whats-new-commerce-10-0-22.md
-                    - name: Commerce 10.0.21 (oktober 2021)
-                      href: get-started/whats-new-commerce-10-0-21.md
-                - name: Borttagna eller inaktuella funktioner
-                  items:
-                    - name: Borttagna eller inaktuella funktioner – startsida
-                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
-                    - name: Borttagna eller inaktuella funktioner i Finance and Operations
-                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
-                    - name: Borttagna eller inaktuella funktioner i Dynamics 365 Commerce
-                      href: get-started/removed-deprecated-features-commerce.md
-                - name: AX 2012-funktioner som har senarelagts
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
-                - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
             - name: Dokumentationsresurser
               items:
                 - name: Hjälpsystem
@@ -128,10 +126,8 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/commerce/toc.json
                 - name: Skapa dokumentation eller utbildning med Uppgiftsinspelare
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/commerce/toc.json
-                - name: Videoklipp
+                - name: Videor
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/commerce/toc.json
-                - name: Ordlista
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/commerce/toc.json
             - name: Utbildningskatalog
               items:
                 - name: Hemsida för utbildningskatalog
@@ -200,7 +196,7 @@
               items:
                 - name: Livscykelhantering för implementering – startsida
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Arkitektur för Finance and Operations-appar
+                - name: Arkitektur för Ekonomi och drift-appar
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Microsoft FastTrack
                   href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
@@ -226,7 +222,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
                 - name: Flera LCS-projekt och produktionsmiljöer i en Azure AD-klientorganisation
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Implementera Finance and Operations Commerce-projekt
+                - name: Implementera Ekonomi och drift Commerce-projekt
                   href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
                 - name: 'Ställa in nya miljöer, Azure DevOps och avdelningar för projekt'
                   href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
@@ -240,10 +236,8 @@
               items:
                 - name: Arkitekturöversikt för Dynamics 365 Commerce
                   href: commerce-architecture.md
-                - name: Dynamics 365 Commerce autentiseringsflöden
+                - name: Dynamics 365 Commerce-autentiseringsflöden
                   href: arch-auth-flow.md
-                - name: Dynamics 365 Commerce krav för komponentversionshantering
-                  href: arch-component-versioning.md
                 - name: Fjärradministrerad handelsarkitektur
                   href: dev-itpro/retail-server-architecture.md
                 - name: Välja en butikstopologi
@@ -260,6 +254,8 @@
                       href: CDX-package-sort.md
                 - name: Arkitektur för Modern POS
                   href: dev-itpro/retail-modern-pos-architecture.md
+                - name: Modernisera butiksteknikstacken för Commerce (white paper)
+                  href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: Commerce offlineimplementering och felsökning
                   href: dev-itpro/implementation-considerations-offline.md
                 - name: Publicera en katalog för onlinebutik
@@ -298,6 +294,28 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
                 - name: Initiera startdata i nya Commerce-miljöer
                   href: enable-configure-retail-functionality.md
+        - name: Implementering
+          items:
+            - name: Livscykelhantering för program
+              items:
+                - name: Dynamics 365 Commerce-krav för komponentversionshantering
+                  href: arch-component-versioning.md
+            - name: Rekommendationer för publicering och uppdatering
+              items:
+                - name: Rekommendationer för publicering och uppdatering – översikt
+                  href: go-live/go-live-overview.md
+                - name: Prestanda
+                  items:
+                    - name: Optimera bilder
+                      href: go-live/performance-optimize-images.md
+                    - name: Minska JavaScript genom att utesluta oanvända moduler
+                      href: go-live/performance-reduce-javascript.md
+            - name: Fasindelad lansering av AX 2012
+              items:
+                - name: Uppgraderings- och N-1-stöd för Commerce
+                  href: dev-itpro/overview-upgrade-n-minus1.md
+                - name: 'Installation, konfiguration och övergång för fasindelad lansering (N-1) – guide'
+                  href: dev-itpro/n-1-installation-configuration.md
         - name: Ställa in dina kanaler
           items:
             - name: Översikt över kanaler
@@ -370,8 +388,12 @@
                   href: channel-setup-retail.md
                 - name: Konfigurera butiksmedarbetare
                   href: tasks/worker.md
-                - name: Modern Point of Sale (MPOS) och Cloud POS
+                - name: 'Modern Point of Sale (MPOS), Cloud POS och Store Commerce'
                   items:
+                    - name: Appen Store Commerce i Microsoft Dynamics 365 Commerce (förhandsversion)
+                      href: dev-itpro/store-commerce.md
+                    - name: Riktlinjer för implementering av enhetshantering
+                      href: implementation-considerations-devices.md
                     - name: Välja mellan MPOS och Cloud POS
                       href: MPOS-or-CPOS.md
                     - name: Kassaåtgärder online och offline
@@ -428,6 +450,18 @@
                           href: set-up-manage-images-retail-mpos.md
                         - name: Klientbilder i kassan
                           href: pos-image.md
+                        - name: Öppna URL i kassa
+                          href: open-url-in-pos.md
+                    - name: Betalningar
+                      items:
+                        - name: Presentkort
+                          items:
+                            - name: Stöd för externa presentkort
+                              href: dev-itpro/gift-card.md
+                    - name: RSAT
+                      items:
+                        - name: Testinspelare och Regression suite automation tool för Cloud POS
+                          href: dev-itpro/pos-rsat.md
                     - name: Försäljare
                       items:
                         - name: Spåra provisioner i kassan med hjälp av försäljningsgrupper
@@ -462,15 +496,17 @@
                   href: tasks/configure-functionality-profile-sales-representative.md
                 - name: Skapa ekonomiska dimensioner för butikskanaler och konfigurera värden för butiker
                   href: tasks/create-financial-dimensions-retail-channels.md
-            - name: Ställa in en onlinekanal
+                - name: Aktivera konsekvent hantering av leveranssätt i e-handelskanaler
+                  href: consistent-delivery-mode-handling.md
+            - name: Konfigurera en onlinekanal
               items:
-                - name: Ställa in en onlinekanal
+                - name: Konfigurera en onlinekanal
                   href: channel-setup-online.md
-            - name: Ställa in en kundtjänstkanal
+            - name: Konfigurera en kundtjänstkanal
               items:
                 - name: Försäljningsfunktioner för kundtjänst
                   href: call-center-functionality.md
-                - name: Ställa in en kundtjänstkanal
+                - name: Konfigurera en kundtjänstkanal
                   href: channel-setup-callcenter.md
                 - name: Kundtjänstkataloger
                   href: call-center-catalogs.md
@@ -546,9 +582,11 @@
                       href: payinvoice.md
                     - name: Förebygga dubblettbetalningar
                       href: duplicate-payment-protection.md
-                    - name: Översikt över flerkanalsbetalningar
+                    - name: Översikt över omnikanalsbetalningar
                       href: omni-channel-payments.md
-                    - name: Flerkanals orderbetalningar för Commerce
+                    - name: Flera tillgängliga betalningsmetoder för upphämtning i butik
+                      href: dev-itpro/multiple-payments-pickup.md
+                    - name: Omnikanalsorderbetalningar för Commerce
                       href: dev-itpro/commerce-payments.md
                     - name: Arkivera data för kreditkortstransaktion
                       href: dev-itpro/archive-cc-data.md
@@ -714,6 +752,10 @@
                   href: sync-product-ratings.md
                 - name: Aktivera manuell publicering av omdömen och recensioner genom en moderator
                   href: manual-publish-rating-reviews.md
+                - name: Importera och exportera omdömen och recensioner
+                  href: import-export-reviews.md
+                - name: Konfigurera autentisering med tjänst-till-tjänst
+                  href: service-to-service-auth.md
                 - name: Vanliga frågor och svar om omdömen och recensioner
                   href: ratings-reviews-faq.md
             - name: Hantera lagret
@@ -818,13 +860,17 @@
           items:
             - name: Kundhantering i butiker
               href: customer-mgmt-stores.md
+            - name: Asynkront läge för att skapa kunder
+              href: async-customer-mode.md
+            - name: Konvertera asynkrona kunder till synkrona kunder
+              href: convert-async-to-sync.md
             - name: Kundhantering
               items:
                 - name: Översikt över kundhantering
                   href: clienteling-overview.md
             - name: Förmåner
               items:
-                - name: Förmånsöversikt
+                - name: Bonusöversikt
                   href: set-up-customer-loyalty-program.md
                 - name: Definiera bonusprogram
                   href: tasks/define-loyalty-programs.md
@@ -832,13 +878,13 @@
                   href: tasks/define-loyalty-reward-points.md
                 - name: Definiera bonusscheman
                   href: tasks/define-loyalty-schemes.md
-                - name: Bearbeta justeringar av bonusbelöningspoäng
+                - name: Bearbeta justeringar av förmånsbelöningspoäng
                   href: tasks/process-loyalty-reward-point-adjustments.md
         - name: Hantera din ekonomi
           items:
             - name: Översikt över utdrag
               href: retail-statements.md
-            - name: Konsekvenskontroll av transaktion
+            - name: Validera butikstransaktioner för utdragsberäkning
               href: valid-checker.md
             - name: Inaktivera regler i konsekvenskontrollen för butikstransaktioner
               href: disable-consistency-check-rule.md
@@ -914,6 +960,8 @@
                   href: deploy-ecommerce-site.md
                 - name: Skapa en näthandelsplats
                   href: create-ecommerce-site.md
+                - name: Kopiera en näthandelsplats
+                  href: copy-ecommerce-site.md
                 - name: Associera en Dynamics 365 Commerce-webbplats med en onlinekanal
                   href: associate-site-online-store.md
                 - name: Hantera robots.txt-filer
@@ -996,8 +1044,6 @@
                       href: style-presets.md
                     - name: Lägga till en favoritikon
                       href: add-favicon.md
-                    - name: Lägga till ett välkomstmeddelande
-                      href: add-welcome-message.md
                     - name: Lägga till ett copyrightmeddelande
                       href: add-copyright-notice.md
                     - name: Lägga till språk
@@ -1250,10 +1296,16 @@
           items:
             - name: Konfigurera en näthandelsplats för B2B
               href: b2b/set-up-b2b-site.md
-            - name: Skapa organisationsmodelleringshierarkier för B2B-organisationer
-              href: b2b/org-model.md
+            - name: Hantera B2B-affärspartner med hjälp av kundhierarkier
+              href: b2b/partners-customer-hierarchies.md
             - name: Hantera affärspartneranvändare på näthandelsplatser för B2B
               href: b2b/manage-b2b-users.md
+            - name: Hantera affärspartneranvändare på näthandelsplatser för B2B med Dynamics 365 Sales
+              href: b2b/prospect-management-sales.md
+            - name: Göra beställningar snabbt på B2B-webbplatser
+              href: b2b/quick-bulk-orders.md
+            - name: Fakturahantering för B2B-näthandelsplatser
+              href: b2b/invoice-management.md
             - name: Konfigurera betalningsmetod för kundkonto på näthandelsplatser för B2B
               href: b2b/payment-method.md
             - name: Konfigurera produktkvantitetsgränser på nätandelsplatser för B2B
@@ -1272,14 +1324,18 @@
               href: store-performance-information.md
             - name: 'Ställa in Recency-, frekvens- och penninganalys (RFM)'
               href: set-up-rfm-analysis.md
-            - name: Ställa in Microsoft Clarity i Dynamics 36 Commerce
+            - name: Ställa in Microsoft Clarity i Dynamics 365 Commerce
               href: set-up-clarity.md
+            - name: Commerce-analyser (förhandsversion)
+              href: commerce-analytics.md
         - name: Globalisering
           items:
             - name: Översikt över räkenskapsintegration för Commerce-kanal
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Ställa in räkenskapsintegration för Commerce-kanal
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: Ställ in bygg-pipeline för exempel på räkenskapsintegration
+              href: localizations/fiscal-integration-sample-build-pipeline.md
             - name: Användardefinierade certifikatprofiler för butiker
               href: localizations/certificate-profiles-for-retail-stores.md
             - name: Regulatory Configuration Service (RCS)
@@ -1316,6 +1372,8 @@
               items:
                 - name: Exempel på skatteregistreringstjänst för Österrike
                   href: localizations/emea-aut-fi-sample.md
+                - name: Distributionsriktlinjer för exempel på räkenskapsintegration för Österrike (äldre)
+                  href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brasilien
               items:
                 - name: Commerce-lokalisering för Brasilien
@@ -1332,7 +1390,9 @@
                   href: localizations/latam-bra-nfce-contingency-mode.md
                 - name: Bokföra brasilianska skattedokument via butiksutdrag i Commerce-administration
                   href: localizations/latam-bra-retail-statements.md
-                - name: Dynamics 365 Payment Connector för Adyen i Commerce kassa för Brasilien
+                - name: Funktioner för CF-e-skattedokument och integration med SAT i Commerce POS för Brasilien
+                  href: localizations/latam-bra-cf-e-sat.md
+                - name: Dynamics 365 Payment Connector för Adyen i Commerce POS för Brasilien
                   href: localizations/latam-bra-adyen.md
             - name: Östeuropa
               items:
@@ -1350,12 +1410,16 @@
                   items:
                     - name: Exempel på skatteregistreringstjänsten för Tjeckien
                       href: localizations/emea-cze-fi-sample.md
+                    - name: Distributionsriktlinjer för exempel på räkenskapsintegration för Republiken Tjeckien (äldre)
+                      href: localizations/emea-cze-fi-sample-sdk.md
                 - name: Polen
                   items:
                     - name: Exempel på integrering av kvittoskrivare för Polen
                       href: localizations/emea-pol-fpi-sample.md
                     - name: Hantering av kundinformation för Polen
                       href: localizations/emea-pol-customer-information.md
+                    - name: Distributionsriktlinjer för exempel på räkenskapsintegration för Polen (äldre)
+                      href: localizations/emea-pol-fpi-sample-sdk.md
             - name: Frankrike
               items:
                 - name: Funktioner för kassaapparat
@@ -1370,8 +1434,10 @@
                   href: localizations/emea-fra-deployment.md
             - name: Tyskland
               items:
-                - name: Exempel på skatteregistreringstjänsten för Tyskland
+                - name: Exempel på integration av skatteregistreringstjänst för Tyskland
                   href: localizations/emea-deu-fi-sample.md
+                - name: Distributionsriktlinjer för exempel på räkenskapsintegration för Tyskland (äldre)
+                  href: localizations/emea-deu-fi-sample-sdk.md
             - name: Indien
               items:
                 - name: Integrering av moms (GST) för varor och tjänster för kassaapparater
@@ -1380,14 +1446,18 @@
                   href: localizations/apac-ind-loc-deployment-guidelines.md
                 - name: Stöd för uppgradering och N-1 för Indien
                   href: localizations/apac-ind-n-1-for-india.md
-                - name: Generera QR-koder och skriv ut dem på kvitton
+                - name: Generera QR-koder och skriv ut dem på kvitton för Indien
                   href: localizations/ind-generate-qr-code-print-receipt.md
+                - name: Integrering av moms för varor och tjänster (GST) för näthandelsplatser
+                  href: localizations/apac-ind-e-commerce.md
             - name: Italien
               items:
                 - name: Exempel på integrering av kvittoskrivare för Italien
                   href: localizations/emea-ita-fpi-sample.md
                 - name: Hantering av kundinformation för Italien
                   href: localizations/emea-ita-customer-information.md
+                - name: Distributionsriktlinjer för exempel på räkenskapsintegration för Italien (äldre)
+                  href: localizations/emea-ita-fpi-sample-sdk.md
             - name: Mexiko
               items:
                 - name: Globala CFDI e-fakturor för Mexiko
@@ -1397,6 +1467,8 @@
                 - name: Funktioner för kassaapparat
                   href: localizations/emea-nor-cash-registers.md
                 - name: Riktlinjer för distribution av kassaapparater
+                  href: localizations/emea-nor-fi-deployment.md
+                - name: Riktlinjer för distribution av kassaapparater (äldre)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Ryssland
               items:
@@ -1412,12 +1484,18 @@
                   href: localizations/rus-fpi-sample.md
                 - name: Hantering av kundinformation för Ryssland
                   href: localizations/rus-customer-information.md
+            - name: Saudiarabien
+              items:
+                - name: Generera QR-koder och skriv ut dem på kvitton för Saudiarabien
+                  href: localizations/emea-sau-qr-code.md
             - name: Sverige
               items:
                 - name: Funktioner för kassaapparat
                   href: localizations/emea-swe-cash-registers.md
                 - name: Exempel på integration av styrenhet för Sverige
                   href: localizations/emea-swe-fi-sample.md
+                - name: Distributionsriktlinjer för exempel på integration av styrenhet för Sverige (äldre)
+                  href: localizations/emea-swe-fi-sample-sdk.md
                 - name: Exempel för Retail POS-integration med styrenheter (äldre)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Rapportering och Power BI-integrationer
@@ -1614,6 +1692,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/commerce/toc.json
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/commerce/toc.json
                     - name: List
                       items:
                         - name: Lista över funktioner
@@ -1854,8 +1934,10 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/commerce/toc.json
                         - name: Köra format för att dynamiskt lägga till kolumner i Excel-rapporter
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/commerce/toc.json
-                    - name: Designa ett ER-format för att sidnumrera skapade dokument i Excel
+                    - name: Utforma ett ER-format för att sidnumrera skapade dokument i Excel
                       href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/commerce/toc.json
+                    - name: Utforma ett ER-format för att hålla samman rader på samma Excel-sida
+                      href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?toc=/dynamics365/commerce/toc.json
                 - name: Utforma konfigurationer för att generera rapporter i Word-format
                   items:
                     - name: Utforma en ny ER-konfiguration för att generera rapporter i Word-format
@@ -1906,6 +1988,8 @@
                   items:
                     - name: Skapa konfigurationer för att importera data från en extern XML‑fil
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importera data från manuellt markerade filer i batchläge
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurera dataimport i batchläge från filer i SharePoint
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/commerce/toc.json
                 - name: Importera filer i XML‑format
@@ -2136,6 +2220,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.json
                     - name: Programuppdatering 10.0.23
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/commerce/toc.json
+                    - name: Programuppdatering 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/commerce/toc.json
                 - name: Ange anpassad lagringsplats för skapade dokument
                   items:
                     - name: Prenumerera på en händelse för att begära ett svar från en prenumerationshanterare
@@ -2150,7 +2236,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/commerce/toc.json
                 - name: Implementera en anpassad ER-källa för inkommande dokument
                   href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/commerce/toc.json
-        - name: Finance and Operations (Dynamics 365) mobilapp
+        - name: Ekonomi och drift (Dynamics 365) mobilapp
           items:
             - name: Startsida för mobilapp
               href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/commerce/toc.json
@@ -2348,399 +2434,423 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
             - name: Datum-/tidsdata och tidszoner
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
-        - name: Utbyggbarhet
+        - name: Utveckling
           items:
-            - name: Utveckling och utbyggbarhet för Commerce
+            - name: Korslösning
               items:
-                - name: Commerce för IT-personal och utvecklare
-                  href: dev-itpro/dev-retail-home-page.md
-                - name: Konfigurera en lokal utvecklingsmiljö
-                  href: dev-itpro/setup-local-dev-env.md
-            - name: Utbyggbarhet för onlinekanal
+                - name: SDK för Commerce – översikt
+                  items:
+                    - name: Exempel och referenspaket
+                      href: dev-itpro/retail-sdk/sdk-github.md
+                    - name: Migrering av äldre SDK för Retail
+                      href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+                    - name: Modernisera butiksteknikstacken för Commerce (white paper)
+                      href: 'https://www.microsoft.com/download/details.aspx?id=103896'
+                - name: Miljöinställningar
+                  items:
+                    - name: Lokal utvecklingsmiljö
+                      href: dev-itpro/setup-local-dev-env.md
+                    - name: Bygg-pipeline till SDK för Commerce (oberoende paket)
+                      href: dev-itpro/build-pipeline.md
+                - name: Betalningar
+                  items:
+                    - name: Distribuera betalningskopplingar
+                      href: dev-itpro/deploy-payment-connector.md
+                    - name: Bruk av betalningsdata
+                      href: payment-connector-data-fields.md
+                    - name: Stöd för dricks i betalnings-SDK
+                      href: dev-itpro/tipping.md
+                    - name: Inkrementell registrering för orderfakturering
+                      href: dev-itpro/incremental-capture.md
+                - name: Lokalisering
+                  items:
+                    - name: Anpassa resurser och etikettfiler för Commerce-tillägg
+                      href: dev-itpro/extension-resource-localization.md
+            - name: Fjärradministrerad Commerce
               items:
-                - name: Utbyggbarhet för onlinekanal – översikt
-                  href: e-commerce-extensibility/overview.md
-                - name: Kom i gång
+                - name: 'API:er och referens'
                   items:
-                    - name: Kom i gång med utbyggnadsutveckling av näthandel
-                      href: e-commerce-extensibility/sdk-getting-started.md
-                    - name: Systemkrav
-                      href: e-commerce-extensibility/system-requirements.md
-                    - name: Konfigurera en utvecklingsmiljö
-                      href: e-commerce-extensibility/setup-dev-environment.md
-                    - name: Konfigurera en fil för utvecklingsmiljö (.env)
-                      href: e-commerce-extensibility/configure-env-file.md
-                    - name: Konfigurera en utvecklingsmiljö för näthandel mot en molnbaserad Commerce-miljö
-                      href: e-commerce-extensibility/debug-tier-1.md
-                    - name: Konfigurera koddelning för Azure DevOps och skapa en versionspipeline
-                      href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
-                - name: Plattformsöversikt
+                    - name: 'Kund- och användar-API:er för Commerce Scale Unit'
+                      href: dev-itpro/retail-server-customer-consumer-api.md
+                    - name: 'Använda API:er för Retail Server i externa program'
+                      href: dev-itpro/consume-retail-server-api.md
+                    - name: Typescript- och C#-proxyservrar för Retail POS
+                      href: dev-itpro/typescript-proxy-retail-pos.md
+                    - name: Arkitektur och konfiguration för Commerce Runtime (CRT)
+                      href: dev-itpro/commerce-runtime-overview.md
+                    - name: Commerce Runtime-tjänster (CRT)
+                      href: dev-itpro/crt-services.md
+                - name: Skapa nya funktioner
                   items:
-                    - name: Näthandelsplats – översikt över arkitektur
-                      href: e-commerce-extensibility/architectural-overview.md
-                    - name: Komponenter för näthandel
-                      href: e-commerce-extensibility/ecommerce-components.md
-                    - name: Kommandoreferens för CLI
-                      href: e-commerce-extensibility/cli-command-reference.md
-                - name: En moduls uppbyggnad
+                    - name: Skapa ett API för Commerce Scale Unit
+                      href: dev-itpro/retail-server-icontroller-extension.md
+                    - name: Utbyggbarhet för Commerce Runtime (CRT)
+                      href: dev-itpro/commerce-runtime-extensibility.md
+                    - name: Logga tilläggshändelser i Application Insights
+                      href: dev-itpro/commerce-application-insights.md
+                    - name: 'Skapa asynkrona API:er för Commerce (CRT)'
+                      href: dev-itpro/async-commerce-extension.md
+                    - name: Tillägg för kanaldatabas
+                      href: dev-itpro/channel-db-extensions.md
+                    - name: Utöka Commerce Data Exchange – realtidstjänst
+                      href: dev-itpro/extend-commerce-data-exchange.md
+                - name: Utöka befintliga funktioner
                   items:
-                    - name: Översikt över moduler
-                      href: e-commerce-extensibility/modules-overview.md
-                    - name: Definitionsfil för modul
-                      href: e-commerce-extensibility/module-definition-file.md
-                    - name: 'Modul, React-komponentfil'
-                      href: e-commerce-extensibility/module-react-file.md
-                    - name: Modulvyfil
-                      href: e-commerce-extensibility/module-view-file.md
-                    - name: Moduldatafil
-                      href: e-commerce-extensibility/module-data-file.md
-                    - name: Modulmodellfil
-                      href: e-commerce-extensibility/module-mock-file.md
-                    - name: Modultestfil
-                      href: e-commerce-extensibility/module-test-file.md
-                    - name: Modul props.autogenerated.ts fil
-                      href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
-                    - name: Förinställda modulkonfigurationer
-                      href: e-commerce-extensibility/module-config-presets.md
-                - name: Utveckla moduler
+                    - name: Utbyggbarhet och utlösare för Commerce Runtime (CRT)
+                      href: dev-itpro/commerce-runtime-extensibility-trigger.md
+                    - name: Förutökade kolumner i kanaldatabasen
+                      href: dev-itpro/extended-columns.md
+                    - name: Aktivera anpassad Commerce Data Exchange-synkronisering via tillägg
+                      href: dev-itpro/cdx-extensibility.md
+                    - name: Utöka Commerce-butikskvitton
+                      href: dev-itpro/retail-sdk/retail-sdk-samples.md
+                    - name: Kundattribut
+                      href: dev-itpro/customer-attributes.md
+                    - name: Orderattribut
+                      href: dev-itpro/order-attributes.md
+                    - name: Hantera hemligheter för butikskanaler
+                      href: dev-itpro/manage-secrets.md
+                - name: Exempel
                   items:
-                    - name: Skapa ny modul
-                      href: e-commerce-extensibility/create-new-module.md
-                    - name: Klona en modul från modulbiblioteket
-                      href: e-commerce-extensibility/clone-starter-module.md
-                    - name: Lägg till konfigurationsfält för modul
-                      href: e-commerce-extensibility/add-module-config-fields.md
-                    - name: Förhandsgranska och felsöka moduler
-                      href: e-commerce-extensibility/test-module.md
-                    - name: Testa moduler med modulmodeller
-                      href: e-commerce-extensibility/test-module-mock.md
-                    - name: Testa moduler med hjälp av modeller av sidor
-                      href: e-commerce-extensibility/test-page-mock.md
-                    - name: Behållarmoduler
-                      href: e-commerce-extensibility/container-modules.md
-                    - name: Skapa en modul för layoutbehållare
-                      href: e-commerce-extensibility/create-layout-container.md
-                    - name: Skapa en modul för sidobehållare
-                      href: e-commerce-extensibility/create-page-containers.md
-                    - name: Lokalisera en modul
-                      href: e-commerce-extensibility/localize-module.md
-                - name: Ämnen för avancerad modul
+                    - name: Spärra transaktioner genom att använda utlösare
+                      href: dev-itpro/trigger-example-blocking-transaction.md
+                    - name: Spåra övergivna kundvagnar och skicka meddelanden till kunder
+                      href: dev-itpro/abandoned-cart-sample-app.md
+                    - name: Exempel på lojalitetstillägg
+                      href: dev-itpro/retail-sdk/loyalty-extension-sample.md
+                    - name: Tilläggspunkter för följesedlar under orderuppfyllelse
+                      href: dev-itpro/extensions-shipping-carrier-integration.md
+                - name: Förpackning och distribution
                   items:
-                    - name: Objekt för egenskapsbegäran
-                      href: e-commerce-extensibility/request-properties-object.md
-                    - name: Appinställningar
-                      href: e-commerce-extensibility/app-settings.md
-                    - name: Konfigurera globala konfigurationsinställningar för webbplatsskaparen baserat på aktiverade funktioner
-                      href: e-commerce-extensibility/config-settings-for-features.md
-                    - name: Fil för plattformsinställningar
-                      href: e-commerce-extensibility/platform-settings.md
-                    - name: Utöka en moduldefinition
-                      href: e-commerce-extensibility/extend-module-definition.md
-                    - name: Översikt över cookie-API
-                      href: e-commerce-extensibility/cookie-api-overview.md
-                    - name: Översikt över interaktiva komponenter
-                      href: e-commerce-extensibility/interactive-components.md
-                    - name: Skissa på inloggat tillstånd under lokal utveckling
-                      href: e-commerce-extensibility/mock-sign-in.md
-                    - name: Konfigurera modulegenskaper som ska visas baserat på kontext
-                      href: e-commerce-extensibility/configure-properties-context.md
-                    - name: Globalisera moduler med hjälp av klassen CultureInfoFormatter
-                      href: e-commerce-extensibility/globalize-modules.md
-                    - name: Konfigurera Azure Key Vault för säker nyckelhantering
-                      href: e-commerce-extensibility/set-up-key-vault.md
-                    - name: Skapa en begärandehook för plugin-program för försäljningsförlopp
-                      href: e-commerce-extensibility/request-pipeline-hook.md
-                - name: Utveckla dataåtgärder
-                  items:
-                    - name: Översikt över dataåtgärder
-                      href: e-commerce-extensibility/data-actions.md
-                    - name: Cachealternativ för dataåtgärd
-                      href: e-commerce-extensibility/data-action-cache.md
-                    - name: Testa dataåtgärder med modeller
-                      href: e-commerce-extensibility/test-data-action-mocks.md
-                    - name: Dataåtgärder vid sidhämtning
-                      href: e-commerce-extensibility/page-load-data-action.md
-                    - name: Händelsebaserade dataåtgärder
-                      href: e-commerce-extensibility/event-based-data-actions.md
-                    - name: Grundläggande dataåtgärder
-                      href: e-commerce-extensibility/core-data-actions.md
-                    - name: 'Anropa Commerce Scale Unit API:er'
-                      href: e-commerce-extensibility/call-retail-server-apis.md
-                    - name: 'Anropa tilläggs-API:er för Retail Server'
-                      href: e-commerce-extensibility/call-retail-extension-api.md
-                - name: Avancerade dataåtgärdsavsnitt
-                  items:
-                    - name: Kedjedataåtgärder
-                      href: e-commerce-extensibility/chain-data-actions.md
-                    - name: Batcha dataåtgärder
-                      href: e-commerce-extensibility/batch-data-actions.md
-                    - name: Observerbara dataåtgärder
-                      href: e-commerce-extensibility/create-observable-data-action.md
-                    - name: Dela tillstånd mellan moduler
-                      href: e-commerce-extensibility/share-state-across-modules.md
-                    - name: Cacheinställningar för dataåtgärd
-                      href: e-commerce-extensibility/data-action-cache-settings.md
-                    - name: Dataåtgärdsåsidosättningar
-                      href: e-commerce-extensibility/data-action-overrides.md
-                    - name: Dataåtgärdshookar
-                      href: e-commerce-extensibility/data-action-hooks.md
-                    - name: Anropa dataåtgärder på serversidan med AJAX
-                      href: e-commerce-extensibility/data-actions-with-ajax.md
-                - name: Utveckla teman
-                  items:
-                    - name: Översikt över teman
-                      href: e-commerce-extensibility/theming.md
-                    - name: Skapa ett tema
-                      href: e-commerce-extensibility/create-theme.md
-                    - name: Konfigurera temainställningar
-                      href: e-commerce-extensibility/configure-theme-settings.md
-                    - name: Konfigurera förinställningar för temaformat
-                      href: e-commerce-extensibility/theme-style-presets.md
-                    - name: Utöka ett tema för att lägga till modultillägg
-                      href: e-commerce-extensibility/theme-module-extensions.md
-                    - name: Åsidosätta en modulbibliotekskomponent i ett tema
-                      href: e-commerce-extensibility/override-theme-component.md
-                    - name: Utöka ett tema från ett bastema
-                      href: e-commerce-extensibility/extend-theme.md
-                    - name: Lägga till anpassade resurser i din anpassningskod
-                      href: e-commerce-extensibility/add-custom-resources.md
-                - name: Mata in skript
-                  items:
-                    - name: Skriptinmatare
-                      href: e-commerce-extensibility/script-injector.md
-                - name: Anslutningsprogram
-                  items:
-                    - name: Konfigurera och aktivera anslutningsprogram
-                      href: e-commerce-extensibility/connectors.md
-                - name: Resultat
-                  items:
-                    - name: Konfigurera sidcachelagring
-                      href: e-commerce-extensibility/page-caching.md
-                    - name: Instanscache för dataåtgärd
-                      href: e-commerce-extensibility/instance-cache.md
-                - name: Telemetri och analyser
-                  items:
-                    - name: Telemetrilogg
-                      href: e-commerce-extensibility/telemetry-logger.md
-                - name: Distribution och underhåll
-                  items:
-                    - name: Paketera konfigurationer och distribuera dem till en onlinemiljö
-                      href: e-commerce-extensibility/package-deploy.md
-                    - name: Uppdateringar av SDK och modulbibliotek
-                      href: e-commerce-extensibility/sdk-updates.md
-                - name: Bästa praxis och frågor och svar
-                  items:
-                    - name: Bästa praxis för Dynamics 365 Commerce-utveckling
-                      href: e-commerce-extensibility/best-practices-dev.md
-                    - name: Vanliga frågor och svar för SDK för Dynamics 365 Commerce online
-                      href: e-commerce-extensibility/sdk-faq.md
-                    - name: Metodtips för felsökning under Dynamics 365 Commerce-utveckling
-                      href: e-commerce-extensibility/debugging-best-practices.md
-            - name: SDK för Retail
+                    - name: Ta bort Cloud Scale Unit-tillägg
+                      href: dev-itpro/retail-sdk/remove-csu-package.md
+            - name: Store Commerce
               items:
-                - name: Flytta till SDK för Commerce
-                  href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
-                - name: SDK för Retail-arkitektur
-                  href: dev-itpro/retail-sdk/retail-sdk-overview.md
-                - name: Konfigurera en bygg-pipeline för oberoende förpacknings-SDK
-                  href: dev-itpro/build-pipeline.md
-                - name: Migrera SDK för Retail från Visual Studio 2015 till Visual Studio 2017
-                  href: dev-itpro/retail-sdk/migrate-sdk.md
-                - name: 'Exempel på utbyggbarhet: SDK för Retail'
-                  href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
-                - name: Skapa distribuerbara paket
-                  href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-                - name: Utveckling i molnstyrda miljöer utan administratörsåtkomst
-                  href: dev-itpro/cloud-dev-box.md
-                - name: Konfigurera versionspipeline för SDK för Commerce
-                  href: dev-itpro/retail-sdk/SDK-build-pipeline.md
-                - name: Hämta exempel och paket från GitHub och NuGet
-                  href: dev-itpro/retail-sdk/sdk-github.md
-                - name: Vanliga frågor och svar om SDK för Retail
-                  href: dev-itpro/retail-sdk/sdk-faq.md
-            - name: Utbyggbarhet för kassa
-              items:
-                - name: Kassaskärmslayouter
-                  href: pos-screen-layouts.md
-                - name: Appen Store Commerce i Microsoft Dynamics 365 Commerce
-                  href: dev-itpro/store-commerce.md
-                - name: Öppna URL i kassa
-                  href: Open-URL-in-POS.md
-                - name: Installera layoutdesignern för kassa
-                  href: install-pos-layout-designer.md
-                - name: Utöka vyn med dubbla bildskärmar för kassan
-                  href: dev-itpro/pos-dual-display-extension.md
-                - name: Lägga till anpassade kontroller i kassavyer
-                  href: dev-itpro/pos-custom-control.md
-                - name: Lägga till kassaåtgärder i kassalayouter med hjälp av knappsatsdesigner
-                  href: dev-itpro/add-POS-operations.md
-                - name: 'API:er för kassa'
-                  href: dev-itpro/POS-APIs.md
-                - name: Betalningstillägg för kassa
-                  href: dev-itpro/pos-payment-extension.md
-                - name: Stöd för dricks i betalnings-SDK för kassa
-                  href: dev-itpro/tipping.md
-                - name: Stöd för externa presentkort
-                  href: dev-itpro/gift-card.md
-                - name: Skapa och använda profilering i appen Retail Experience
-                  href: dev-itpro/create-retail-experience-app.md
-                - name: Konfigurera appen POS Hybrid i Android och iOS
-                  href: dev-itpro/hybridApp.md
-                - name: Åsidosätt begärandehanterare för kassa
-                  href: dev-itpro/pos-handler.md
-                - name: Visa information om tilläggspaket för kassa
-                  href: dev-itpro/view-pos-extension-package-details.md
-                - name: Testinspelare och Regression suite automation tool för Cloud POS
-                  href: dev-itpro/pos-rsat.md
-                - name: Lägga till anpassade fält i summapanel för kassa
-                  href: dev-itpro/custom-field-pos-totals.md
-                - name: Visa anpassade meddelanden i kassa
-                  href: dev-itpro/extend-pos-notification.md
-                - name: Signera MPOS med certifikat för kodsignering
-                  href: dev-itpro/pos-app-signing-certificate.md
-                - name: Utöka kassavyer för att lägga till egna kolumner och knappar i appfältet
-                  href: dev-itpro/pos-view-extension.md
-                - name: Lägga till egna kontroller på Modern POS-transaktionssidor
-                  href: dev-itpro/pos-custom-transaction.md
-                - name: Lägga till egna kolumner i ett transaktionsrutnät för kassa
-                  href: dev-itpro/pos-custom-transaction-column.md
-                - name: 'Anropa API:er eller åtgärder för kassa från kassatillägg'
-                  href: dev-itpro/pos-api-extension.md
-                - name: Kassautlösare
-                  href: dev-itpro/pos-trigger-printing.md
-                - name: Lägga till anpassade kontroller i designerbaserade vyer (ej skärm) för kassa
-                  href: dev-itpro/pos-control-non-screen.md
-                - name: Kör kassaexemplen
-                  href: dev-itpro/pos-run-samples.md
-                - name: Riktlinjer för implementering av enhetshantering
-                  href: implementation-considerations-devices.md
-                - name: Kassavy för kundvagnens händelser och hanterare
-                  href: dev-itpro/cart-view-handlers.md
-                - name: Lägga till anpassade knappar i kassans rubrikfält
-                  href: dev-itpro/pos-header-bar.md
-                - name: SDK för kassaoberoende förpackning
+                - name: Översikt
                   items:
                     - name: Översikt över kassatillägg
                       href: dev-itpro/pos-extension/pos-extension-overview.md
-                    - name: Komma i gång med kassatillägg
-                      href: dev-itpro/pos-extension/pos-extension-getting-started.md
+                    - name: Koncept och terminologi för kassatillägg
+                      href: dev-itpro/pos-extension/pos-extension-basics.md
+                    - name: Migrera kassatillägg till SDK för Commerce
+                      href: dev-itpro/pos-extension/migrate-pos-extension.md
+                - name: Miljöinställningar
+                  items:
+                    - name: Lokal utvecklingsmiljö
+                      href: dev-itpro/setup-local-dev-env.md
                     - name: Skapa ett projekt för tilläggspaket för kassa
                       href: dev-itpro/pos-extension/create-pos-extension-package.md
                     - name: Skapa en .appx-fil för ett Modern POS-tilläggspaket
                       href: dev-itpro/pos-extension/create-pos-extension-appx.md
                     - name: Felsöka kassatillägg
                       href: dev-itpro/pos-extension/debug-pos-extension.md
-                    - name: Förpackning och distribution av tillägg
+                - name: 'API:er och referens'
+                  items:
+                    - name: Visa information om tilläggspaket för kassa
+                      href: dev-itpro/view-pos-extension-package-details.md
+                    - name: 'API:er för kassa'
+                      href: dev-itpro/pos-apis.md
+                    - name: Använd kassakontroller i tillägg
+                      href: dev-itpro/pos-extension/controls-pos-extension.md
+                    - name: Utöka vyn med dubbla bildskärmar för kassan
+                      href: dev-itpro/pos-dual-display-extension.md
+                    - name: 'Använda anpassade fjärradministrerade Commerce-API:er och entiteter i kassan'
+                      href: dev-itpro/pos-extension/consume-apis-pos.md
+                    - name: Använda externa bibliotek och tredjepartsbibliotek i kassatillägg
+                      href: dev-itpro/pos-extension/knockout-pos-extension.md
+                - name: Skapa nya funktioner
+                  items:
+                    - name: Skapa en kassaåtgärd
+                      href: dev-itpro/add-pos-operations.md
+                    - name: Skapa en anpassad vy i kassa
+                      href: dev-itpro/pos-extension/custom-pos-view.md
+                    - name: Skapa en ny maskinvaruenhet och integrera med kassan
+                      href: dev-itpro/hardware-device-extension.md
+                    - name: Skapa en komplett betalningsintegrering för en betalningsterminal
+                      href: dev-itpro/end-to-end-payment-extension.md
+                    - name: Skapa anpassade lokaliserade felmeddelanden för betalningsterminalstillägg
+                      href: dev-itpro/payment-custom-error-messages.md
+                    - name: Aktivera skydd mot dubbelbetalning för betalningsanslutningsprogram
+                      href: dev-itpro/duplicate-payments-protection.md
+                - name: Utöka befintliga funktioner
+                  items:
+                    - name: Utöka kassavyer för att lägga till egna kolumner och knappar i appfältet
+                      href: dev-itpro/pos-view-extension.md
+                    - name: Utöka kassavyer för att lägga till anpassade kontroller
+                      href: dev-itpro/pos-control-non-screen.md
+                    - name: Utöka kassahuvudfältet
+                      href: dev-itpro/pos-header-bar.md
+                    - name: Utöka kassameddelanden
+                      href: dev-itpro/extend-pos-notification.md
+                    - name: Åsidosätta begärandehanterare för kassa
+                      href: dev-itpro/pos-handler.md
+                    - name: Kassautlösare
+                      href: dev-itpro/pos-trigger-printing.md
+                    - name: Kassavy för kundvagn
                       items:
-                        - name: Skapa ett Modern POS-tilläggspaket
-                          href: dev-itpro/pos-extension/mpos-extension-packaging.md
-                        - name: Kodsignering av ett Modern POS-tilläggspaket (MSIX)
-                          href: dev-itpro/pos-extension/mpos-extension-signing.md
-                        - name: Skapa ett paket för Cloud POS-tillägg
-                          href: dev-itpro/pos-extension/cpos-extension-package.md
-                    - name: Migrera ett kassatillägg till den oberoende förpackningsmodellen
-                      href: dev-itpro/pos-extension/migrate-pos-extension.md
-                    - name: Utvecklingsguide för kassatillägg
+                        - name: Kassavy för kundvagnens händelser och hanterare
+                          href: dev-itpro/cart-view-handlers.md
+                        - name: Fönster för att lägga till anpassade fält i summapanel för kassa
+                          href: dev-itpro/custom-field-pos-totals.md
+                        - name: Lägga till egna kolumner i ett transaktionsrutnät för kassa
+                          href: dev-itpro/pos-custom-transaction-column.md
+                        - name: Lägga till anpassade kontroller i kassavy för kundvagn
+                          href: dev-itpro/pos-custom-transaction.md
+                    - name: Lägga till anpassade kontroller i kassavyer
+                      href: dev-itpro/pos-custom-control.md
+                    - name: Betalningstillägg för kassa
+                      href: dev-itpro/pos-payment-extension.md
+                - name: Förpackning och distribution
+                  items:
+                    - name: Skapa ett paket för MPOS-tillägg
+                      href: dev-itpro/pos-extension/mpos-extension-packaging.md
+                    - name: Kodsignering av ett MPOS-tilläggspaket (MSIX)
+                      href: dev-itpro/pos-extension/mpos-extension-signing.md
+                    - name: Skapa ett paket för Cloud POS-tillägg
+                      href: dev-itpro/pos-extension/cpos-extension-package.md
+            - name: Näthandel
+              items:
+                - name: Översikt
+                  items:
+                    - name: Utbyggbarhet för onlinekanal – översikt
+                      href: e-commerce-extensibility/overview.md
+                    - name: Näthandelsplats – översikt över arkitektur
+                      href: e-commerce-extensibility/architectural-overview.md
+                    - name: Komponenter för näthandel
+                      href: e-commerce-extensibility/ecommerce-components.md
+                    - name: Kom i gång med utbyggnadsutveckling av näthandel
+                      href: e-commerce-extensibility/sdk-getting-started.md
+                    - name: Systemkrav
+                      href: e-commerce-extensibility/system-requirements.md
+                - name: Miljöinställningar
+                  items:
+                    - name: Utvecklingsmiljö
+                      href: e-commerce-extensibility/setup-dev-environment.md
+                    - name: Konfigurera en fil för utvecklingsmiljö (.env)
+                      href: e-commerce-extensibility/configure-env-file.md
+                    - name: Konfigurera en utvecklingsmiljö för näthandel mot en molnbaserad Commerce-miljö
+                      href: e-commerce-extensibility/debug-tier-1.md
+                - name: 'API:er och referens'
+                  items:
+                    - name: Kommandoreferens för CLI
+                      href: e-commerce-extensibility/cli-command-reference.md
+                    - name: En moduls uppbyggnad
                       items:
-                        - name: Grunderna om kassatillägg
-                          href: dev-itpro/pos-extension/pos-extension-basics.md
-                        - name: Skapa en anpassad vy i kassa
-                          href: dev-itpro/pos-extension/custom-pos-view.md
-                        - name: Använd kassakontroller i tillägg
-                          href: dev-itpro/pos-extension/controls-pos-extension.md
-                        - name: Uppgifter
+                        - name: Översikt över moduler
+                          href: e-commerce-extensibility/modules-overview.md
+                        - name: Definitionsfil för modul
+                          href: e-commerce-extensibility/module-definition-file.md
+                        - name: 'Modul, React-komponentfil'
+                          href: e-commerce-extensibility/module-react-file.md
+                        - name: Modulvyfil
+                          href: e-commerce-extensibility/module-view-file.md
+                        - name: Moduldatafil
+                          href: e-commerce-extensibility/module-data-file.md
+                        - name: Modulmodellfil
+                          href: e-commerce-extensibility/module-mock-file.md
+                        - name: Modultestfil
+                          href: e-commerce-extensibility/module-test-file.md
+                        - name: Modul props.autogenerated.ts fil
+                          href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
+                        - name: Förinställda modulkonfigurationer
+                          href: e-commerce-extensibility/module-config-presets.md
+                - name: Skapa nya funktioner
+                  items:
+                    - name: Moduler
+                      items:
+                        - name: Skapa ny modul
+                          href: e-commerce-extensibility/create-new-module.md
+                        - name: Lägg till konfigurationsfält för modul
+                          href: e-commerce-extensibility/add-module-config-fields.md
+                        - name: Förhandsgranska och felsöka moduler
+                          href: e-commerce-extensibility/test-module.md
+                        - name: Testa moduler med modulmodeller
+                          href: e-commerce-extensibility/test-module-mock.md
+                        - name: Testa moduler med hjälp av modeller av sidor
+                          href: e-commerce-extensibility/test-page-mock.md
+                        - name: Behållarmoduler
+                          href: e-commerce-extensibility/container-modules.md
+                        - name: Skapa en modul för layoutbehållare
+                          href: e-commerce-extensibility/create-layout-container.md
+                        - name: Skapa en modul för sidobehållare
+                          href: e-commerce-extensibility/create-page-containers.md
+                        - name: Lokalisera en modul
+                          href: e-commerce-extensibility/localize-module.md
+                        - name: Avancerat
                           items:
-                            - name: Använd Knockout.js i kassatillägg
-                              href: dev-itpro/pos-extension/knockout-pos-extension.md
-                            - name: Använda anpassad fjärradministrerad Commerce API
-                              href: dev-itpro/pos-extension/consume-apis-pos.md
-            - name: Utbyggbarhet för Hardware Station
+                            - name: Objekt för egenskapsbegäran
+                              href: e-commerce-extensibility/request-properties-object.md
+                            - name: Appinställningar
+                              href: e-commerce-extensibility/app-settings.md
+                            - name: Konfigurera globala konfigurationsinställningar för webbplatsskaparen baserat på aktiverade funktioner
+                              href: e-commerce-extensibility/config-settings-for-features.md
+                            - name: Fil för plattformsinställningar
+                              href: e-commerce-extensibility/platform-settings.md
+                            - name: Översikt över cookie-API
+                              href: e-commerce-extensibility/cookie-api-overview.md
+                            - name: Översikt över interaktiva komponenter
+                              href: e-commerce-extensibility/interactive-components.md
+                            - name: Skissa på inloggat tillstånd under lokal utveckling
+                              href: e-commerce-extensibility/mock-sign-in.md
+                            - name: Konfigurera modulegenskaper som ska visas baserat på kontext
+                              href: e-commerce-extensibility/configure-properties-context.md
+                            - name: Globalisera moduler med hjälp av klassen CultureInfoFormatter
+                              href: e-commerce-extensibility/globalize-modules.md
+                            - name: Konfigurera Azure-nyckelvalv för säker nyckelhantering
+                              href: e-commerce-extensibility/set-up-key-vault.md
+                            - name: Bildkomponent
+                              href: e-commerce-extensibility/image-component.md
+                    - name: Dataåtgärder
+                      items:
+                        - name: Översikt över dataåtgärder
+                          href: e-commerce-extensibility/data-actions.md
+                        - name: Cachealternativ för dataåtgärd
+                          href: e-commerce-extensibility/data-action-cache.md
+                        - name: Testa dataåtgärder med modeller
+                          href: e-commerce-extensibility/test-data-action-mocks.md
+                        - name: Dataåtgärder vid sidhämtning
+                          href: e-commerce-extensibility/page-load-data-action.md
+                        - name: Händelsebaserade dataåtgärder
+                          href: e-commerce-extensibility/event-based-data-actions.md
+                        - name: Grundläggande dataåtgärder
+                          href: e-commerce-extensibility/core-data-actions.md
+                        - name: 'Anropa Commerce Scale Unit API:er'
+                          href: e-commerce-extensibility/call-retail-server-apis.md
+                        - name: 'Anropa tilläggs-API:er för Retail Server'
+                          href: e-commerce-extensibility/call-retail-extension-api.md
+                        - name: Avancerat
+                          items:
+                            - name: Kedjedataåtgärder
+                              href: e-commerce-extensibility/chain-data-actions.md
+                            - name: Batchdataåtgärder
+                              href: e-commerce-extensibility/batch-data-actions.md
+                            - name: Observerbara dataåtgärder
+                              href: e-commerce-extensibility/create-observable-data-action.md
+                            - name: Dela tillstånd mellan moduler
+                              href: e-commerce-extensibility/share-state-across-modules.md
+                            - name: Cacheinställningar för dataåtgärd
+                              href: e-commerce-extensibility/data-action-cache-settings.md
+                            - name: Anropa dataåtgärder på serversidan med AJAX
+                              href: e-commerce-extensibility/data-actions-with-ajax.md
+                    - name: Teman
+                      items:
+                        - name: Översikt över teman
+                          href: e-commerce-extensibility/theming.md
+                        - name: Skapa ett tema
+                          href: e-commerce-extensibility/create-theme.md
+                        - name: Konfigurera temainställningar
+                          href: e-commerce-extensibility/configure-theme-settings.md
+                        - name: Konfigurera förinställningar för temaformat
+                          href: e-commerce-extensibility/theme-style-presets.md
+                        - name: Lägga till anpassade resurser i din anpassningskod
+                          href: e-commerce-extensibility/add-custom-resources.md
+                    - name: Mata in skript
+                      items:
+                        - name: Skriptinmatare
+                          href: e-commerce-extensibility/script-injector.md
+                    - name: Anslutningsprogram
+                      items:
+                        - name: Konfigurera och aktivera anslutningsprogram
+                          href: e-commerce-extensibility/connectors.md
+                - name: Utöka befintliga funktioner
+                  items:
+                    - name: Moduler
+                      items:
+                        - name: Klona en modul från modulbiblioteket
+                          href: e-commerce-extensibility/clone-starter-module.md
+                        - name: Utöka en moduldefinition
+                          href: e-commerce-extensibility/extend-module-definition.md
+                    - name: Dataåtgärder
+                      items:
+                        - name: Dataåtgärdsåsidosättningar
+                          href: e-commerce-extensibility/data-action-overrides.md
+                        - name: Dataåtgärdshookar
+                          href: e-commerce-extensibility/data-action-hooks.md
+                    - name: Teman
+                      items:
+                        - name: Utöka ett tema för att lägga till modultillägg
+                          href: e-commerce-extensibility/theme-module-extensions.md
+                        - name: Åsidosätta en modulbibliotekskomponent i ett tema
+                          href: e-commerce-extensibility/override-theme-component.md
+                        - name: Utöka ett tema från ett bastema
+                          href: e-commerce-extensibility/extend-theme.md
+                - name: Förpackning och distribution
+                  items:
+                    - name: Paketera konfigurationer och distribuera dem till en onlinemiljö
+                      href: e-commerce-extensibility/package-deploy.md
+                    - name: Uppdateringar av SDK och modulbibliotek
+                      href: e-commerce-extensibility/sdk-updates.md
+                    - name: Konfigurera koddelning för Azure DevOps och skapa en bygg-pipeline
+                      href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
+                - name: 'Regelverk, prestanda och vanliga frågor och svar'
+                  items:
+                    - name: Regelverk för Dynamics 365 Commerce-utveckling
+                      href: e-commerce-extensibility/best-practices-dev.md
+                    - name: Vanliga frågor och svar för SDK för Dynamics 365 Commerce online
+                      href: e-commerce-extensibility/sdk-faq.md
+                    - name: Regelverk för felsökning under Dynamics 365 Commerce-utveckling
+                      href: e-commerce-extensibility/debugging-best-practices.md
+                    - name: Testa näthandelssidor avseende minnesläckor
+                      href: e-commerce-extensibility/memory-leak-detection.md
+                    - name: Prestanda
+                      items:
+                        - name: Konfigurera sidcachelagring
+                          href: e-commerce-extensibility/page-caching.md
+                        - name: Instanscache för dataåtgärd
+                          href: e-commerce-extensibility/instance-cache.md
+                    - name: Telemetri och analyser
+                      items:
+                        - name: Telemetrilogg
+                          href: e-commerce-extensibility/telemetry-logger.md
+            - name: Commerce HQ
               items:
-                - name: Integrera kassa med ny maskinvaruenhet
-                  href: dev-itpro/hardware-device-extension.md
-            - name: Utbyggbarhet för Retail Server
+                - name: Förpackning och distribution
+                  items:
+                    - name: Skapa Commerce-betalningspaket för Ekonomi och drift-distribution
+                      href: dev-itpro/payment-connector-package.md
+            - name: SDK för Retail (äldre)
               items:
-                - name: 'Kund- och klient-API:er för Commerce Scale Unit'
-                  href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Skapa tilläggs-API för Retail Server (SDK för Retail version 10.0.11 och senare)
-                  href: dev-itpro/retail-server-icontroller-extension.md
-                - name: Retail Typescript- och C#-proxyservrar
-                  href: dev-itpro/typescript-proxy-retail-pos.md
-                - name: 'Använda API:er för Retail Server i externa program'
-                  href: dev-itpro/consume-retail-server-api.md
-            - name: Utbyggbarhet av Commerce Runtime (CRT)
-              items:
-                - name: CRT-arkitektur och konfiguration
-                  href: dev-itpro/commerce-runtime-overview.md
-                - name: CRT-tjänster
-                  href: dev-itpro/crt-services.md
-                - name: Tilläggs mönster för CRT
-                  href: dev-itpro/commerce-runtime-extensibility.md
-                - name: Hantera hemligheter för Retail-kanaler
-                  href: dev-itpro/manage-secrets.md
-                - name: Utbyggbarhet och utlösare för CRT
-                  href: dev-itpro/commerce-runtime-extensibility-trigger.md
-                - name: Spärra transaktioner med utlösare
-                  href: dev-itpro/trigger-example-blocking-transaction.md
-                - name: Lojalitetstillägg
-                  href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-                - name: Tilläggspunkter för följesedlar
-                  href: dev-itpro/extensions-shipping-carrier-integration.md
-                - name: Tillägg för kanaldatabas
-                  href: dev-itpro/channel-db-extensions.md
-                - name: Ta bort Cloud Scale Unit-tillägg
-                  href: dev-itpro/retail-sdk/remove-csu-package.md
-                - name: Aktivera anpassad CDX-synkronisering via tillägg
-                  href: dev-itpro/cdx-extensibility.md
-                - name: Definiera och ställa in orderattribut
-                  href: dev-itpro/order-attributes.md
-                - name: Kundattribut
-                  href: dev-itpro/customer-attributes.md
-                - name: Kvittotillägg
-                  href: dev-itpro/retail-sdk/retail-sdk-samples.md
-                - name: Logga tilläggshändelser i Application Insights
-                  href: dev-itpro/commerce-application-insights.md
-                - name: 'Skapa async Commerce (CRT)-API:er i din affärslogik'
-                  href: dev-itpro/async-commerce-extension.md
-                - name: Förutökade kolumner i kanaldatabasen
-                  href: dev-itpro/extended-columns.md
-                - name: Utöka Commerce Data Exchange – realtidstjänst
-                  href: dev-itpro/extend-commerce-data-exchange.md
-            - name: Utbyggbarhet för betalningskoppling
-              items:
-                - name: Skapa en betalningsintegrering för en betalningsterminal
-                  href: dev-itpro/end-to-end-payment-extension.md
-                - name: Implementera en betalningskoppling och betalningsenhet (vitbok)
-                  href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
-                - name: Distribuera betalningskopplingar
-                  href: dev-itpro/deploy-payment-connector.md
-                - name: Inkrementell insamling för fakturering i backoffice
-                  href: dev-itpro/incremental-capture.md
-                - name: Skapa anpassade lokaliserade felmeddelanden för betalningsterminalstillägg
-                  href: dev-itpro/payment-custom-error-messages.md
-                - name: Skapa Windows-installationsprogram för betalningskopplingar
-                  href: dev-itpro/create-windows-installer-payment-connector.md
-                - name: Bruk av betalningsdata
-                  href: payment-connector-data-fields.md
-                - name: Aktivera skydd mot dubbelbetalning för betalningsanslutning
-                  href: dev-itpro/duplicate-payments-protection.md
-                - name: Skapa Commerce-betalningspaket för Finance and Operations-distribution
-                  href: dev-itpro/payment-connector-package.md
-            - name: Utbyggbarhet för e-handel från tredje part
-              items:
-                - name: Konfigurera onlinebutiker
-                  href: dev-itpro/configure-online-store.md
-                - name: Konfigurera autentiseringsproviders
-                  href: dev-itpro/configure-authentication-providers.md
-                - name: SDK för e-handelsplattform
-                  href: dev-itpro/ecommerce-platform-sdk.md
-            - name: Lokalisera resurser för Commerce-tillägg och etikettfiler
-              href: dev-itpro/extension-resource-localization.md
+                - name: Översikt
+                  items:
+                    - name: Programutvecklingspaket (SDK) för Retail
+                      href: dev-itpro/retail-sdk/retail-sdk-overview.md
+                    - name: Programutvecklingspaket (SDK) för Retail – exempel på utbyggbarhet
+                      href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+                    - name: Vanliga frågor och svar om SDK för Retail
+                      href: dev-itpro/retail-sdk/sdk-faq.md
+                    - name: Migrera SDK för Retail från Visual Studio 2015 till Visual Studio 2017
+                      href: dev-itpro/retail-sdk/migrate-sdk.md
+                - name: Miljöinställningar
+                  items:
+                    - name: Utveckling i molnstyrda miljöer utan administratörsåtkomst
+                      href: dev-itpro/cloud-dev-box.md
+                    - name: Bygg-pipeline för SDK för Retail
+                      href: dev-itpro/retail-sdk/sdk-build-pipeline.md
+                    - name: Kör kassaexempel
+                      href: dev-itpro/pos-run-samples.md
+                - name: Referens
+                  items:
+                    - name: Programutvecklingspaket (SDK) för näthandelsplattform
+                      href: dev-itpro/ecommerce-platform-sdk.md
+                    - name: Konfigurera onlinebutiker
+                      href: dev-itpro/configure-online-store.md
+                    - name: Konfigurera autentiseringsproviders
+                      href: dev-itpro/configure-authentication-providers.md
+                - name: Förpackning och distribution
+                  items:
+                    - name: Skapa distribuerbara paket
+                      href: dev-itpro/retail-sdk/retail-sdk-packaging.md
+                    - name: Signera MPOS appx med ett certifikat för kodsignering
+                      href: dev-itpro/pos-app-signing-certificate.md
+                    - name: Konfigurera kassahybridapp i Android och iOS
+                      href: dev-itpro/hybridapp.md
+                    - name: Skapa och använda anpassning i appen Retail Experience
+                      href: dev-itpro/create-retail-experience-app.md
         - name: Felsökning
           items:
             - name: Orderbehandling
               items:
-                - name: Betalningstyp måste vara kreditkortsfel
+                - name: Betalningstyp måste vara kreditkort-fel
                   href: troubleshoot/payment-type-credit-card-error.md
                 - name: Moms på onlineorder felaktigt beräknad
                   href: troubleshoot/tax-miscalculated-online-order.md
@@ -2782,11 +2892,15 @@
                   href: troubleshoot/items-without-inventory-checked-out.md
                 - name: Omdömesförfinare visas i sökresultat och på kategorisidor när lösning för omdömen och recensioner är inaktiverad
                   href: troubleshoot/hide-ratings-refiner.md
+            - name: Kundhantering
+              items:
+                - name: Välkomstmeddelande skickas inte när nya kunder skapas
+                  href: troubleshoot/email-not-sent-when-new-customer-created.md
             - name: SDK-felsökning
               items:
                 - name: Konfigurera en utvecklingsmiljö för näthandel för att felsöka mot en nivå 1 Retail Server VM
                   href: troubleshoot/set-up-dev-environment-debugging.md
-    - name: Utveckling och administration av Finance and Operations-appar
+    - name: Ekonomi och drift-appar för utveckling och administration
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md

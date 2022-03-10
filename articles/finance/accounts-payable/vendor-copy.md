@@ -1,24 +1,24 @@
 ---
 title: Kopiera leverantörer genom att använda delade nummerserier
 description: Det här avsnittet beskriver hur du använder delade nummerserier för att kopiera en leverantör till en annan juridisk person men behålla samma leverantörs-ID.
-author: mikefalkner
+author: sunfzam
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5b4aeb189fa0e609834d46961be0ff953c2779a05ff1857636199e5448f15396
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4cea8269082b39e2374ffb3c3dc82def8ce35679
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722825"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358475"
 ---
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Kopiera leverantörer genom att använda delade nummerserier
 
@@ -36,9 +36,9 @@ Om du använder manuella leverantörs-ID kan du också kopiera leverantörer mel
 
 ## <a name="copy-a-vendor"></a>Kopiera en leverantör
 
-För att kopiera en leverantör väljer du **Ny** på listsidan **Alla leverantörer** för att öppna sidan **Alla leverantörer, ny post**. Observera att tilldelningen av ett nytt leverantörs-ID inte sker direkt. Det här skiljer sig från hur det har fungerat i tidigare versioner. Eftersom du inte har markerat leverantörsgruppen ännu kan systemet inte avgöra vilken nummerserie som ska användas. Dessutom kan systemet inte avgöra om du vill skapa en ny leverantör eller kopiera en leverantör. Därför tilldelas inte leverantörs-ID förrän du väljer **Spara** längst ned på sidan.
+För att kopiera en leverantör väljer du **Ny** på listsidan **Alla leverantörer** för att öppna sidan **Alla leverantörer, ny post**. Det nya leverantörs-ID:t tilldelas inte direkt. Det här skiljer sig från hur det har fungerat i tidigare versioner. Eftersom du inte har markerat leverantörsgruppen ännu går det inte att avgöra vilken nummerserie som ska användas. Dessutom kan systemet inte avgöra om du vill skapa en ny leverantör eller kopiera en leverantör. Därför tilldelas inte leverantörs-ID förrän du väljer **Spara** längst ned på sidan.
 
-Om du skapar en ny leverantör kan du fortsätta att fylla i alla fält precis som vanligt. När du är klar och väljer **Spara** tilldelas leverantörs-ID automatiskt. För manuella nummerserier kan du se att ditt manuella leverantörs-ID har använts.
+Om du skapar en ny leverantör kan du fortsätta fylla i alla fält precis som vanligt. När du är klar och väljer **Spara** tilldelas leverantörs-ID automatiskt. För manuella nummerserier kan du se att ditt manuella leverantörs-ID har använts.
 
 För att kopiera en leverantör fyller du i en eller flera bokstäver i det leverantörsnamn du söker i fältet **Namn**. En dialogruta visar en lista över parter som kanske är den leverantör du söker. Ytterligare information visas till höger i dialogrutan när du väljer en av parterna:
 
@@ -58,7 +58,7 @@ När du kopierar en leverantör försöker systemet spara den nya leverantörsin
 
 ## <a name="copy-a-vendor-by-using-the-tax-exempt-number-search-feature"></a>Kopiera en leverantör genom att använda sökfunktionen för momsregistereringsnummer
 
-Du kan även kopiera leverantörer med hjälp av sökfunktionen för momsregistreringsnummer i gruppen **Registrering** i fliken **Leverantör** i åtgärdsfönstret på sidan **Alla leverantörer**. Dialogrutan **Sök momsregistreringsnummer** visar momsregistreringsnummer, leverantörs-ID, leverantörens namn och den juridiska person där momsregistreringsnumret används. Du kan kopiera en leverantör om den finns i en juridisk person som inte är den aktuella juridiska personen. Gör följande när du väljer en leverantör som uppfyller detta kriterium.
+Du kan även kopiera leverantörer med hjälp av sökfunktionen för **momsregistreringsnummer** i gruppen **Registrering** i fliken **Leverantör** i åtgärdsfönstret på sidan **Alla leverantörer**. Dialogrutan **Sök momsregistreringsnummer** visar momsregistreringsnummer, leverantörs-ID, leverantörens namn och den juridiska person där momsregistreringsnumret används. Du kan kopiera en leverantör om den finns i en juridisk person som inte är den aktuella juridiska personen. Gör följande när du väljer en leverantör som uppfyller detta kriterium.
 
 1. Alternativet **Kopiera leverantör** visas. Standardvärdet för det här alternativet är **Nej**. Om du vill kopiera leverantören till den aktuella juridiska personen väljer du alternativet **Ja**.
 2. Välj **Välj**. Den nya leverantören skapas.

@@ -4,6 +4,34 @@
       items:
         - name: Dynamics 365 Finance startsida
           href: index.md
+        - name: Nyheter och ändringar
+          items:
+            - name: Nyheter och ändringar i Ekonomi och drift-appar
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+            - name: Nyheter och ändringar i Finance
+              items:
+                - name: Nyheter och ändringar på startsidan för Finance
+                  href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.26 (maj)
+                  href: get-started/whats-new-changed-10-0-26.md
+                - name: Finance 10.0.25 (april)
+                  href: get-started/whats-new-changed-10-0-25.md
+                - name: Finance 10.0.24 (februari)
+                  href: get-started/whats-new-changed-10-0-24.md
+                - name: Finance 10.0.23 (januari)
+                  href: get-started/whats-new-changed-10-0-23.md
+            - name: Borttagna eller inaktuella funktioner
+              items:
+                - name: Borttagna eller inaktuella funktioner – startsida
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
+                - name: Borttagna eller inaktuella funktioner i Dynamics 365 Finance
+                  href: get-started/removed-deprecated-features-finance.md
+                - name: Borttagna eller inaktuella funktioner i tidigare versioner
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
+            - name: AX 2012-funktioner som har senarelagts
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+            - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
         - name: Kom i gång
           items:
             - name: Tjänstbeskrivning
@@ -12,7 +40,7 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: Registrera abonnemang på förhandsversioner
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
-            - name: One Version tjänstuppdateringar
+            - name: Tjänstuppdateringar för One Version
               items:
                 - name: Översikt över Tjänstuppdateringar för One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/finance/toc.json
@@ -60,38 +88,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
                 - name: Köp Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurera lagerhållning för lokala distributioner
+                - name: Konfigurera Lagerhållning för lokala distributioner
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations-appar som drivs av 21Vianet i Kina
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations-appar i Frankrike
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
-            - name: Nyheter och ändringar
-              items:
-                - name: Nyheter och ändringar i Finance and Operations-appar
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-                - name: Nyheter och ändringar i Finance
-                  items:
-                    - name: Nyheter och ändringar på startsidan för Finance
-                      href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.22 (november 2021)
-                      href: get-started/whats-new-changed-10-0-22.md
-                    - name: Finance 10.0.21 (oktober 2021)
-                      href: get-started/whats-new-changed-10-0-21.md
-                    - name: Finance 10.0.20 (augusti 2021)
-                      href: get-started/whats-new-changed-10-0-20.md
-            - name: Borttagna eller inaktuella funktioner
-              items:
-                - name: Borttagna eller inaktuella funktioner – startsida
-                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
-                - name: Borttagna eller inaktuella funktioner i Dynamics 365 Finance
-                  href: get-started/removed-deprecated-features-finance.md
-                - name: Borttagna eller inaktuella funktioner i tidigare versioner
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
-            - name: AX 2012-funktioner som har senarelagts
-              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-            - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
-              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
             - name: Dokumentationsresurser
               items:
                 - name: Hjälpsystem
@@ -106,10 +104,8 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/finance/toc.json
                 - name: Skapa dokumentation eller utbildning med Uppgiftsinspelare
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/finance/toc.json
-                - name: Videoklipp
+                - name: Videor
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/finance/toc.json
-                - name: Ordlista
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/finance/toc.json
             - name: Utbildningskatalog
               items:
                 - name: Hemsida för utbildningskatalog
@@ -178,7 +174,7 @@
               items:
                 - name: Livscykelhantering för implementering – startsida
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/finance/toc.json
-                - name: Arkitektur för Finance and Operations-appar
+                - name: Arkitektur för Ekonomi och drift-appar
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/index
@@ -224,6 +220,8 @@
                   href: accounts-payable/vendor-copy.md
                 - name: Registrera en leverantörsfaktura i fakturajournalen
                   href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
+                - name: Använda ett betalningsschema i fakturajournalen
+                  href: accounts-payable/payment-invoice-journal.md
             - name: Granska fakturor och nyckeldata i leverantörsreskontra
               href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
             - name: Policyer för trevägsmatchningar
@@ -240,6 +238,10 @@
                   href: accounts-payable/auto-vendr-invc-process.md
                 - name: Konfigurera alternativ för automatisering av leverantörsfakturor
                   href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: Använd förskottsbetalningar automatiskt för leverantörsfakturor – översikt
+                  href: accounts-payable/apply-prepymnts-overview.md
+                - name: Generera fakturarader vid import av leverantörsfakturor
+                  href: accounts-payable/auto-create-invc-lines-at-import.md
                 - name: Skicka fakturor till arbetsflödessystemet och matcha produktinleveransrader
                   href: accounts-payable/submit-invoice-workflow-automatically.md
                 - name: Visa resultat från automatisering av leverantörsfakturor
@@ -272,6 +274,8 @@
                   href: accounts-payable/tasks/research-resolve-exceptions.md
             - name: Bokföringsprofiler för leverantörer
               href: accounts-payable/vendor-posting-profiles.md
+            - name: Leverantörsfakturadatum
+              href: accounts-payable/vendor-invoice-dates.md
             - name: Omräkning i utländsk valuta för leverantörsreskontra och kundreskontra
               href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
             - name: Mobila fakturagodkännanden
@@ -406,6 +410,12 @@
                   href: accounts-receivable/rev-rec-reallocation-scenario-3.md
                 - name: Omallokering vid intäktsredovisning – scenario 4
                   href: accounts-receivable/rev-rec-reallocation-scenario-4.md
+            - name: Prenumerationsfakturering
+              items:
+                - name: Översikt över prenumerationsfakturering
+                  href: accounts-receivable/subscription-billing-summary.md
+                - name: Konfigurera faktureringsscheman
+                  href: accounts-receivable/sb-billing-schedules.md
             - name: Betalningar och kvittningar
               items:
                 - name: Översikt över kundbetalning
@@ -494,6 +504,8 @@
               href: accounts-receivable/customer-aging-snapshot.md
             - name: Åldersfördelningsrapport för kunder
               href: accounts-receivable/customer-aging.md
+            - name: Datalagring för kunders åldersfördelning
+              href: accounts-receivable/customer-aging-data-storage.md
             - name: Skapa en avskrivningsjournal för en kund
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Avancerad noteringshantering
@@ -514,6 +526,8 @@
               href: budgeting/budget-control-overview-configuration.md
             - name: Budgetöversikt
               href: budgeting/basic-budgeting-overview-configuration.md
+            - name: Budgetmedel är tillgängliga
+              href: budgeting/budget-funds-available.md
             - name: Befattningsprognos
               href: budgeting/position-forecasting.md
             - name: Motiveringsdokument för budgetplanering
@@ -702,48 +716,6 @@
               href: general-ledger/electronic-messaging-work-with-em.md
             - name: Anropa ett enkelt ER-exportformat för att generera en Excel-rapport
               href: general-ledger/electronic-messaging-example.md
-        - name: Utgiftshantering
-          items:
-            - name: Utgiftshantering – översikt
-              href: /dynamics365/project-operations/prod-exp/expense-management
-            - name: Utgiftsrapporter på nytt sätt
-              href: /dynamics365/project-operations/prod-exp/ExpenseWorkspaceNew
-            - name: Planera utgiftshantering
-              href: /dynamics365/project-operations/prod-exp/plan-expense-management
-            - name: Parametrar för utgiftshantering
-              href: /dynamics365/project-operations/prod-exp/Expense-Management-Parameters
-            - name: Mobil arbetsyta för utgiftshantering
-              href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace
-            - name: Ställ in arbetsflöden för utgiftshantering
-              href: /dynamics365/project-operations/prod-exp/expense-workflows
-            - name: Arbetsflöde för utgiftshantering
-              href: /dynamics365/project-operations/prod-exp/expense-workflow
-            - name: Hantera delegering av utgifter
-              href: /dynamics365/project-operations/prod-exp/manage-expense-delegation
-            - name: Bearbetning av utgiftskvitto
-              href: /dynamics365/project-operations/prod-exp/expense-receipt-processing
-            - name: Importera och underhålla kreditkortstransaktioner
-              href: /dynamics365/project-operations/prod-exp/import-credit-card
-            - name: Fördelningar på en utgiftsrapport
-              href: /dynamics365/project-operations/prod-exp/expense-report-distributions
-            - name: Koncerninterna utgifter
-              href: /dynamics365/project-operations/prod-exp/intercompany-expense
-            - name: Definiera utgiftspolicyer
-              href: /dynamics365/project-operations/prod-exp/travel-expense-policies
-            - name: Visa en utgiftsrapport
-              href: /dynamics365/project-operations/prod-exp/view-expense-report
-            - name: Bokföra en utgiftsrapport
-              href: /dynamics365/project-operations/prod-exp/post-expense
-            - name: Utgiftsrapporter och flera granskare
-              href: /dynamics365/project-operations/prod-exp/expense-report-multiple-approvers
-            - name: Momsåtervinning i Utgiftshantering
-              href: /dynamics365/project-operations/prod-exp/VAT-expense-report
-            - name: Traktamentsregler
-              href: /dynamics365/project-operations/prod-exp/per-diem
-            - name: Reserekvisitioner
-              href: /dynamics365/project-operations/prod-exp/travel-req
-            - name: Privata utgifter i en utgiftsrapport
-              href: /dynamics365/project-operations/prod-exp/personal-expenses
         - name: Anläggningstillgångar
           items:
             - name: Startsidan Anläggningstillgångar
@@ -872,6 +844,8 @@
                   href: asset-leasing/set-up-lease-books.md
                 - name: Skapa en leasinggrupp
                   href: asset-leasing/create-lease-group.md
+                - name: Betalningsbeloppstyp
+                  href: asset-leasing/Payment-amount-type.md
                 - name: Ställa in indexräntor
                   href: asset-leasing/set-up-index-rate-types.md
                 - name: Ställa in utgiftstyper
@@ -932,144 +906,144 @@
               href: asset-leasing/asset-leasing-rprts.md
         - name: Redovisning
           items:
-            - name: Redovisning – översikt
+            - name: Startsida för redovisning
               href: general-ledger/general-ledger.md
-            - name: Konton
+            - name: Kontoplan
               items:
-                - name: Översikt över periodiseringar
-                  href: general-ledger/accruals-overview.md
-                - name: Elimineringsregler
-                  href: general-ledger/elimination-rules.md
-                - name: Kombinationer av konton och dimensioner
-                  href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
-                - name: Balanserade journaler för internredovisning
-                  href: general-ledger/example-balanced-journals-interunit-accounting.md
-                - name: Bokföringsdefinitioner
-                  href: general-ledger/posting-definitions.md
-                - name: Exempel på bokföringsdefinitioner
-                  href: general-ledger/example-posting-definitions.md
-                - name: Ställ in standardbeskrivningar för automatisk bokföring
-                  href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
-                - name: Balanser på huvudbokskonto
-                  href: general-ledger/general-ledger-account-balances.md
-                - name: Definiera ekonomiska dimensioner
-                  href: general-ledger/tasks/define-financial-dimensions.md
-                - name: Underhåll standardmallar för ekonomisk dimension
-                  href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
-                - name: Ekonomiska dimensionsuppsättningar
-                  href: general-ledger/financial-dimension-sets.md
-                - name: Skapa kontostrukturer
-                  href: general-ledger/tasks/create-account-structures.md
-                - name: Ekonomiska dimensioner och bokföring
-                  href: general-ledger/default-dimensions.md
-                - name: Skapa periodiseringsscheman
-                  href: general-ledger/tasks/create-accrual-schemes.md
-                - name: Ekonomisk konsolidering och valutaregistrering
-                  items:
-                    - name: Ekonomisk konsolidering och valutaregistrering – översikt
-                      href: general-ledger/financial-consolidations-currency-translation.md
-                    - name: Konsolidera online
-                      href: general-ledger/consolidate-online.md
-                    - name: Generera konsoliderade bokslut
-                      href: general-ledger/generating-consolidated-financial-statements.md
-                    - name: Importera data för dotterbolagen från filer
-                      href: general-ledger/import-subsidiary-data-from-files.md
-                    - name: Exportera data för dotterbolaget till en fil
-                      href: general-ledger/export-subsidiary-data-to-file.md
-                    - name: Konsolidera med import – format
-                      href: general-ledger/consolidate-with-import-format.md
-                    - name: Förbereda en juridisk person som ska användas i konsolideringsprocessen
-                      href: general-ledger/prepare-company-for-consolidation.md
-                    - name: Ställ in ett dotterbolag (juridisk person) för konsolidering
-                      href: general-ledger/set-up-subsidiary-company-for-consolidation.md
-                - name: Skapa konsolideringsgrupper och ytterligare konsolideringskonto
-                  href: general-ledger/tasks/create-consolidation-groups.md
-                - name: Huvudkontotyper
-                  href: general-ledger/main-account-types.md
-                - name: Skapa ett huvudkonto
-                  href: general-ledger/tasks/create-main-account.md
                 - name: Planera kontoplanen
                   href: general-ledger/plan-chart-of-accounts.md
-                - name: Kvitta transaktioner mellan huvudbokskonton
-                  href: general-ledger/tasks/settle-transactions-between-ledger-accounts.md
-                - name: Ställ in alias för huvudbokskonto
-                  href: general-ledger/tasks/set-up-ledger-account-alias.md
-                - name: Ställ in kategorier för huvudkonto
-                  href: general-ledger/tasks/set-up-main-account-categories.md
-                - name: Utforskare för redovisningskälla
-                  href: accounts-payable/accounting-source-explorer.md
-                - name: Redovisningsfördelningar
-                  href: accounts-payable/accounting-distributions.md
+                - name: Huvudkonton
+                  items:
+                    - name: Huvudkontotyper
+                      href: general-ledger/main-account-types.md
+                    - name: Ställ in kategorier för huvudkonto
+                      href: general-ledger/tasks/set-up-main-account-categories.md
+                    - name: Ställ in alias för huvudbokskonto
+                      href: general-ledger/tasks/set-up-ledger-account-alias.md
+                    - name: Skapa ett huvudkonto
+                      href: general-ledger/tasks/create-main-account.md
+                    - name: Allokeringsvillkor
+                      href: general-ledger/main-account-allocation-terms.md
+                - name: Ekonomiska dimensioner
+                  items:
+                    - name: Ekonomiska dimensioner
+                      href: general-ledger/financial-dimensions.md
+                    - name: Definiera ekonomiska dimensioner
+                      href: general-ledger/tasks/define-financial-dimensions.md
+                    - name: Kombinationer av konton och dimensioner
+                      href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
+                    - name: Ekonomiska dimensionsuppsättningar
+                      href: general-ledger/financial-dimension-sets.md
+                    - name: Underhåll standardmallar för ekonomisk dimension
+                      href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                    - name: Ekonomiska dimensioner och bokföring
+                      href: general-ledger/default-dimensions.md
+                    - name: Konfigurera kontostrukturer
+                      href: general-ledger/configure-account-structures.md
+                    - name: Skapa kontostrukturer
+                      href: general-ledger/tasks/create-account-structures.md
+                    - name: Skapa och tilldela avancerade regelstrukturer
+                      href: general-ledger/tasks/create-assign-advanced-rule-structures.md
+                    - name: Hur konfigurerar jag balanserande ekonomiska dimensioner?
+                      href: general-ledger/set-up-balance-dimensions.md
+            - name: Inställningar
+              items:
                 - name: Bearbeta allokeringar
                   href: general-ledger/process-allocations.md
-                - name: Allokeringsvillkor
-                  href: general-ledger/main-account-allocation-terms.md
-                - name: Ekonomiska dimensioner
-                  href: general-ledger/financial-dimensions.md
-                - name: Konsolideringskontogrupper och ytterligare konsolideringskonton
-                  href: budgeting/consolidation-account-groups-consolidation-accounts.md
-                - name: Översikt över konsolidering och eliminering
-                  href: budgeting/consolidation-elimination-overview.md
-                - name: 'Räkenskapskalendrar, räkenskapsår och perioder'
-                  href: budgeting/fiscal-calendars-fiscal-years-periods.md
-                - name: Konfigurera kontostrukturer
-                  href: general-ledger/configure-account-structures.md
-                - name: Dubbel valuta
-                  href: general-ledger/dual-currency.md
-            - name: Journaler och redovisningar
+                - name: Konfigurera redovisningen
+                  items:
+                    - name: 'Räkenskapskalendrar, räkenskapsår och perioder'
+                      href: budgeting/fiscal-calendars-fiscal-years-periods.md
+                    - name: Konfigurera redovisningar
+                      href: general-ledger/configure-ledger.md
+                    - name: Ändra redovisnings- eller rapporteringsvaluta
+                      href: general-ledger/add-change-acctg-rprtg-crrncy.md
+                    - name: Ändra eller tilldela om en redovisningskalender
+                      href: general-ledger/change-mdfy-clndr-to-ledger.md
+                - name: Koncerninterna och balanserande dimensioner
+                  items:
+                    - name: Balanserade journaler för internredovisning
+                      href: general-ledger/example-balanced-journals-interunit-accounting.md
+                    - name: Ställ in koncernintern redovisning
+                      href: general-ledger/intercompany-accounting-setup.md
+                    - name: Hur konfigurerar jag balanserande ekonomiska dimensioner?
+                      href: general-ledger/set-up-balance-dimensions.md
+                - name: Standardvärden för journaler och bokföring
+                  items:
+                    - name: Ställ in standardbeskrivningar för automatisk bokföring
+                      href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
+                    - name: Översikt över periodiseringar
+                      href: general-ledger/accruals-overview.md
+                    - name: Skapa periodiseringsscheman
+                      href: general-ledger/tasks/create-accrual-schemes.md
+                    - name: Redovisningsjournaltyper
+                      href: general-ledger/ledger-journal-types.md
+                    - name: Skapa avancerade regler för journaler
+                      href: general-ledger/tasks/create-advanced-rules-journals.md
+                    - name: Lägga till sökvärden för ekonomiska dimensioner i Excel-mallar
+                      href: ../fin-ops-core/dev-itpro/financial/add-dimensions-excel-templates.md
+                    - name: Bokföringsdefinitioner
+                      href: general-ledger/posting-definitions.md
+                    - name: Exempel på bokföringsdefinitioner
+                      href: general-ledger/example-posting-definitions.md
+                - name: Valuta
+                  items:
+                    - name: Importera valutakurser
+                      href: general-ledger/import-currency-exchange-rates.md
+                    - name: Dubbel valuta
+                      href: general-ledger/dual-currency.md
+                - name: Allokeringsregler
+                  items:
+                    - name: Allokeringsregler för redovisning
+                      href: general-ledger/ledger-allocation-rules.md
+                    - name: Bearbeta journal för redovisningsallokering
+                      href: general-ledger/tasks/process-ledger-allocation-journal.md
+            - name: Journaler och källdokument
               items:
-                - name: Hantering av allmänna journaler
-                  href: general-ledger/general-journal-processing.md
-                - name: Bokför periodiska journaler
-                  href: general-ledger/tasks/post-periodic-journals.md
-                - name: Återför journalbokföring
-                  href: general-ledger/reverse-journal-posting.md
-                - name: Bearbeta journal för redovisningsallokering
-                  href: general-ledger/tasks/process-ledger-allocation-journal.md
-                - name: Ställ in koncernintern redovisning
-                  href: general-ledger/intercompany-accounting-setup.md
-                - name: Allokeringsregler för redovisning
-                  href: general-ledger/ledger-allocation-rules.md
-                - name: Skapa avancerade regler för journaler
-                  href: general-ledger/tasks/create-advanced-rules-journals.md
-                - name: Skapa och tilldela avancerade regelstrukturer
-                  href: general-ledger/tasks/create-assign-advanced-rule-structures.md
-                - name: Redovisningsjournaltyper
-                  href: general-ledger/ledger-journal-types.md
-                - name: Konfigurera redovisningar
-                  href: general-ledger/configure-ledger.md
-                - name: Skapa och validera journaler
-                  href: general-ledger/tasks/create-validate-journals.md
-                - name: Visa poster eller transaktioner i redovisningsjournal
-                  href: general-ledger/tasks/view-journal-entries-or-transactions.md
-                - name: Visa en relaterad koncernintern verifikation från en journal
-                  href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
-                - name: Skapa en post i en redovisningsjournal med hjälp av en mall
-                  href: general-ledger/tasks/create-journal-entry-template.md
-                - name: Skapa periodiseringtransaktioner i redovisningen
-                  href: general-ledger/tasks/create-ledger-accrual-transactions.md
-                - name: Överföring av delredovisning till redovisning
-                  href: general-ledger/subledger-transfer.md
-                - name: Publicera journalrader och dokument från Excel
-                  href: general-ledger/open-lines-excel-journals-documents.md
+                - name: Journaler
+                  items:
+                    - name: Hantering av redovisningsjournaler
+                      href: general-ledger/general-journal-processing.md
+                    - name: Bokför periodiska journaler
+                      href: general-ledger/tasks/post-periodic-journals.md
+                    - name: Skapa och validera journaler
+                      href: general-ledger/tasks/create-validate-journals.md
+                    - name: Journalbokföringsfel på grund av obalans
+                      href: general-ledger/posting-fail-imbalance.md
+                    - name: Återför journalbokföring
+                      href: general-ledger/reverse-journal-posting.md
+                    - name: Varför kan jag inte återföra den här transaktionen?
+                      href: general-ledger/cant-reverse-transctns.md
+                    - name: Skapa en post i en redovisningsjournal med hjälp av en mall
+                      href: general-ledger/tasks/create-journal-entry-template.md
+                    - name: Bearbeta journal för redovisningsallokering
+                      href: general-ledger/tasks/process-ledger-allocation-journal.md
+                    - name: Visa poster eller transaktioner i redovisningsjournal
+                      href: general-ledger/tasks/view-journal-entries-or-transactions.md
+                    - name: Visa en relaterad koncernintern verifikation från en journal
+                      href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
+                    - name: Publicera journalrader och dokument från Excel
+                      href: general-ledger/open-lines-excel-journals-documents.md
+                    - name: Skapa periodiseringstransaktioner i redovisningen
+                      href: general-ledger/tasks/create-ledger-accrual-transactions.md
+                    - name: En verifikation
+                      href: general-ledger/one-voucher.md
+                    - name: Vanliga frågor och svar om En verifikation
+                      href: general-ledger/one-voucher-faq.md
+                - name: Källdokument
+                  items:
+                    - name: Redovisningsfördelningar
+                      href: accounts-payable/accounting-distributions.md
+                    - name: Överföring av delredovisning till redovisning
+                      href: general-ledger/subledger-transfer.md
+                    - name: Utforskare för redovisningskälla
+                      href: accounts-payable/accounting-source-explorer.md
+            - name: Rapporter och förfrågningar
+              items:
                 - name: Visa poster i redovisningsjournal och transaktioner
                   href: general-ledger/view-journal-entries-transactions.md
                 - name: Rapport för råbalans med transaktionsinformation
                   href: public-sector/general-ledger-public-sector-trial-balance.md
-                - name: Journalföra bokförda poster i redovisningsjournal
-                  href: general-ledger/tasks/journalize-posted-journal-entries.md
-                - name: Valutaomvärdering i ett konsolideringsföretag
-                  href: general-ledger/currency-revaluation-consolidation-company.md
-                - name: Omräkning i utländsk valuta för redovisning
-                  href: general-ledger/foreign-currency-revaluation-general-ledger.md
-                - name: Importera valutakurser
-                  href: general-ledger/import-currency-exchange-rates.md
-                - name: En verifikation
-                  href: general-ledger/one-voucher.md
-                - name: Vanliga frågor och svar om En verifikation
-                  href: general-ledger/one-voucher-faq.md
-                - name: Redovisningskvittningar
-                  href: general-ledger/ledger-settlements.md
             - name: Stängning vid periodslut
               items:
                 - name: Stänga redovisningen vid periodslutet
@@ -1082,80 +1056,50 @@
                   href: general-ledger/tasks/close-fiscal-year.md
                 - name: Masstäng räkenskapsperiod
                   href: general-ledger/tasks/mass-financial-period-close.md
-                - name: Vanliga frågor och svar om aktiviteter för årsavslut
+                - name: Vanliga frågor och svar om aktiviteter för årsbokslut
                   href: general-ledger/faq-year-end-activities.md
-            - name: Moms
+                - name: Redovisningskvittningar
+                  href: general-ledger/ledger-settlements.md
+                - name: Medvetenhet mellan redovisningskvittning och årsbokslut
+                  href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                - name: Omräkning i utländsk valuta för redovisning
+                  href: general-ledger/foreign-currency-revaluation-general-ledger.md
+                - name: Balanser på huvudbokskonto
+                  href: general-ledger/general-ledger-account-balances.md
+                - name: Bearbeta journal för redovisningsallokering
+                  href: general-ledger/tasks/process-ledger-allocation-journal.md
+                - name: Allokeringsregler för redovisning
+                  href: general-ledger/ledger-allocation-rules.md
+                - name: Journalföra bokförda poster i redovisningsjournal
+                  href: general-ledger/tasks/journalize-posted-journal-entries.md
+            - name: Konsolideringar och elimineringar
               items:
-                - name: Momsöversikt
-                  href: general-ledger/indirect-taxes-overview.md
-                - name: Momssatser grundade på bidragsunderlaget och beräkningsmetoder
-                  href: general-ledger/marginal-base-field.md
-                - name: Momsbetalningar och avrundningsregler
-                  href: general-ledger/round-sales-tax-payments.md
-                - name: Momsberäkningsmetoder i fältet Ursprung
-                  href: general-ledger/sales-tax-calculation-methods-origin-field.md
-                - name: Beräkningsalternativ för hela beloppet och intervall för momskoder
-                  href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
-                - name: Momsberäkning för allmänna journalrader
-                  href: general-ledger/sales-tax-calculation-on-general-journal.md
-                - name: Beräkna och justera moms på en leverantörsfaktura
-                  href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
-                - name: Aktivera fördröjd momsberäkning i journal
-                  href: general-ledger/enable-delayed-tax-calculation.md
-                - name: Skapa en momsbetalning
-                  href: general-ledger/tasks/create-sales-tax-payment.md
-                - name: Skapa momstransaktioner i dokument
-                  href: general-ledger/tasks/create-sales-tax-transactions-documents.md
-                - name: Ställ in redovisningsbokföringsgrupper för moms
-                  href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
-                - name: Ställ in momsmyndigheter
-                  href: general-ledger/tasks/set-up-sales-tax-authorities.md
-                - name: Ställ in momskoder
-                  href: general-ledger/tasks/set-up-sales-tax-codes.md
-                - name: Ställ in momsgrupper och artikelmomsgrupper
-                  href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
-                - name: Ställ in momsrapporteringskoder
-                  href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
-                - name: Stöd för moms på dubbel valuta
-                  href: general-ledger/dual-currency-for-tax.md
-                - name: Momsspecifikation per redovisningstransaktionsrapport
-                  href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
-                - name: Ställ in momskvittningsperioder
-                  href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
-                - name: Visa bokförda momstransaktioner
-                  href: general-ledger/tasks/view-posted-sales-tax-transactions.md
-                - name: Skriva ut rapporten för momsbetalning per kod
-                  href: general-ledger/print-sales-tax-payment-by-code-report.md
-                - name: Felsökning av moms
-                  items:
-                    - name: Moms beräknas inte eller momsbeloppet är noll
-                      href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
-                    - name: Resultatet av momsberäkningen påverkar transaktioner
-                      href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
-                    - name: Fel fältvärde i TaxTrans
-                      href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
-                    - name: TaxTrans-posten har inte genererats
-                      href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
-                    - name: Moms bokförs i fel huvudbokskonto i verifikationen
-                      href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
-                    - name: Verifikationen har inte genererats
-                      href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
-            - name: Källskatt
-              items:
-                - name: Ställ in källskatt
-                  href: general-ledger/tasks/set-up-withholding-tax.md
-                - name: Global källskatt
-                  items:
-                    - name: Global källskatt – översikt
-                      href: general-ledger/global-withholding-tax-overview.md
-                    - name: Ställa in global källskatt
-                      href: general-ledger/set-up-global-withholding-tax.md
-                    - name: Källskatt i inköpstransaktioner
-                      href: general-ledger/withholding-tax-in-purchase-transactions.md
-                    - name: Källskatt i försäljningstransaktioner
-                      href: general-ledger/withholding-tax-in-sales-transactions.md
-                    - name: Skapa en källskattebetalning
-                      href: general-ledger/create-a-withholding-tax-payment.md
+                - name: Översikt över konsolidering och eliminering
+                  href: budgeting/consolidation-elimination-overview.md
+                - name: Ekonomisk konsolidering och valutaregistrering – översikt
+                  href: general-ledger/financial-consolidations-currency-translation.md
+                - name: Konsolideringskontogrupper och ytterligare konsolideringskonton
+                  href: budgeting/consolidation-account-groups-consolidation-accounts.md
+                - name: Skapa konsolideringsgrupper och ytterligare konsolideringskonto
+                  href: general-ledger/tasks/create-consolidation-groups.md
+                - name: Förbereda en juridisk person som ska användas i konsolideringsprocessen
+                  href: general-ledger/prepare-company-for-consolidation.md
+                - name: Ställ in ett dotterbolag (juridisk person) för konsolidering
+                  href: general-ledger/set-up-subsidiary-company-for-consolidation.md
+                - name: Konsolidera online
+                  href: general-ledger/consolidate-online.md
+                - name: Importera data för dotterbolagen från filer
+                  href: general-ledger/import-subsidiary-data-from-files.md
+                - name: Exportera data för dotterbolaget till en fil
+                  href: general-ledger/export-subsidiary-data-to-file.md
+                - name: Konsolidera med import – format
+                  href: general-ledger/consolidate-with-import-format.md
+                - name: Elimineringsregler
+                  href: general-ledger/elimination-rules.md
+                - name: Generera konsoliderade bokslut
+                  href: general-ledger/generating-consolidated-financial-statements.md
+                - name: Valutaomvärdering i ett konsolideringsföretag
+                  href: general-ledger/currency-revaluation-consolidation-company.md
             - name: Revision
               items:
                 - name: Granska policyregler
@@ -1194,6 +1138,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
             - name: Valutafunktioner i ekonomisk rapportering
               href: general-ledger/financial-reporting-currency-capability.md
+            - name: Beräkning av balanserade vinstmedel i ekonomisk rapportering
+              href: general-ledger/retained-earnings-enhancements.md
             - name: Ekonomiska rapporter för balansräkning
               href: general-ledger/balance-sheet-financial-reports.md
             - name: Generera ekonomiska rapporter
@@ -1236,14 +1182,14 @@
               href: finance-insights/finance-insights-home-page.md
             - name: Inställning och administration
               items:
-                - name: Konfigurera Finance insights för allmänt tillgänglig förhandsversion
-                  href: finance-insights/configure-for-fin-insites-PubPrvw.md
-                - name: Konfigurera Finance Insights för privat förhandsversion
+                - name: Konfigurera Finance Insights
                   href: finance-insights/configure-for-fin-insites.md
-                - name: Aktivera förutsägelser för kundbetalning
+                - name: Aktivera kundbetalningsförutsägelser
                   href: finance-insights/enable-cust-paymnt-prediction.md
                 - name: Aktivera kassaflödesprognoser
                   href: finance-insights/enable-cash-flow-forecasting.md
+                - name: Externa data i kassaflödesprognoser
+                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Aktivera budgetförslag
                   href: finance-insights/enable-budget-proposal.md
                 - name: Skapa projekt för dataintegrerare
@@ -1264,100 +1210,16 @@
                   href: finance-insights/budget-proposals.md
                 - name: Kassaposition
                   href: finance-insights/cash-position.md
-                - name: Kassaflödesprognos
+                - name: Kassaprognos
                   href: finance-insights/cash-flow-forecast-intro.md
-                - name: Använd externa data i kassaflödesprognoser
-                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Kundbetalningsförutsägelser
                   href: finance-insights/payment-insights-overview.md
-                - name: Använda förutsägelser för kundbetalning
+                - name: Använd kundbetalningsförutsägelser
                   href: finance-insights/use-customer-payment-predictions.md
                 - name: Översikt över ögonblicksbilder
                   href: finance-insights/payment-snapshots.md
             - name: Vanliga frågor och svar om felsökning av Finance Insights
               href: finance-insights/finance-insights-troubleshooting-faq.md
-        - name: Projekthantering och redovisning
-          items:
-            - name: Arbetsflöden för projekthantering och redovisning – översikt
-              href: /dynamics365/project-operations/prod-pma/overview-project-management-accounting
-            - name: Koncernintern fakturering
-              href: /dynamics365/project-operations/prod-pma/intercompany-invoicing
-            - name: Konfigurera koncernintern projektfakturering
-              href: /dynamics365/project-operations/prod-pma/configure-intercompany-project-invoicing
-            - name: Konfigurera standardkostnader för arbetskraft och utgifter
-              href: /dynamics365/project-operations/prod-pma/configure-standard-costs-labor-expenses
-            - name: Skapa och tillämpa villkor för kvarhållande av leverantörsbetalning
-              href: /dynamics365/project-operations/prod-pma/create-and-apply-vendor-payment-retention-terms
-            - name: Ställa in och använda leverantörsbetalningar av typen Betala vid betalning
-              href: /dynamics365/project-operations/prod-pma/setup-manage-vendor-payments
-            - name: Periodisering av projektkostnader på inköpskvitton
-              href: accounts-payable/project-cost-accrual-purchase-receipts.md
-            - name: Projektfakturering
-              href: accounts-payable/project-invoicing.md
-            - name: Projektkontrakt
-              href: /dynamics365/project-operations/prod-pma/project-contracts
-            - name: Skapa avancerade kontrakt för fakturering baserat på status
-              href: /dynamics365/project-operations/prod-pma/project-create-advanced-contracts-for-billing-based-progress
-            - name: Projektprognoser och projektbudgetar
-              href: /dynamics365/project-operations/prod-pma/project-forecasts-budgets
-            - name: Skapa prognosmodeller för projektbudgetar
-              href: /dynamics365/project-operations/prod-pma/create-forecast-models-project-budgets
-            - name: Överför projektbudgetar vid räkenskapsårets slut
-              href: /dynamics365/project-operations/prod-pma/process-project-budgets-for-fiscal-year-end
-            - name: Projektförsäljningsorder
-              href: /dynamics365/project-operations/prod-pma/project-sales-orders
-            - name: Inköpsorder för ett projekt
-              href: /dynamics365/project-operations/prod-pma/project-purchase-orders
-            - name: Projektofferter
-              href: /dynamics365/project-operations/prod-pma/project-quotations
-            - name: 'Bekräfta, uppdatera och skicka en projektoffert'
-              href: /dynamics365/project-operations/prod-pma/confirm-update-send-project-quotation
-            - name: Överföra en offert till ett projekt
-              href: /dynamics365/project-operations/prod-pma/transfer-quote-new-existing-project
-            - name: Projektresurshantering
-              items:
-                - name: Projektresurshantering – översikt
-                  href: /dynamics365/project-operations/prod-pma/project-resourcing
-                - name: Ställa in projektresurser
-                  href: /dynamics365/project-operations/prod-pma/set-up-project-resources
-                - name: Hantera resurskompetenser
-                  href: /dynamics365/project-operations/prod-pma/manage-resource-competencies
-                - name: Skapa ett nytt projekt
-                  href: /dynamics365/project-operations/prod-pma/create-new-project
-                - name: Ställa in rollbaserad prissättning
-                  href: /dynamics365/project-operations/prod-pma/set-up-role-based-pricing
-                - name: Skapa ett projektteam
-                  href: /dynamics365/project-operations/prod-pma/create-project-team
-                - name: Synkronisera resurskapacitet
-                  href: /dynamics365/project-operations/prod-pma/synchronize-resource-capacity
-                - name: Tidsplaneringsprestanda för projektresurser
-                  href: /dynamics365/project-operations/prod-pma/project-scheduling-performance
-                - name: Ställa in roller i mallarna för uppdelad arbetsstruktur
-                  href: /dynamics365/project-operations/prod-pma/set-up-roles-wbs-template
-                - name: Resursuppfyllelse för planerade resurser
-                  href: /dynamics365/project-operations/prod-pma/resource-fulfillment-planned-resources
-            - name: Ta emot artiklar i inköpsorder från artikelbehov
-              href: /dynamics365/project-operations/prod-pma/receive-items-purchase-order-item-requirement
-            - name: Uppdelade arbetsstrukturer
-              items:
-                - name: Uppdelade arbetsstrukturer – översikt
-                  href: /dynamics365/project-operations/prod-pma/work-breakdown-structures
-                - name: Integrering av Microsoft Project Client
-                  href: /dynamics365/project-operations/prod-pma/project-integration
-                - name: Project för mobila appar – Översikt
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview
-                - name: Mobil arbetsyta för registrering av projekttid
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace
-                - name: Mobil app för Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet
-                - name: Projekttidrapporter på mobil enhet
-                  href: /dynamics365/project-operations/prod-pma/Mobile-timesheets
-                - name: Implementera anpassade fält för mobilappen för Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/custom-fields-mobile
-            - name: Projektanslag
-              href: /dynamics365/project-operations/prod-pma/project-grants
-            - name: Eliminera en projektuppskattning
-              href: /dynamics365/project-operations/prod-pma/eliminate-project-estimate
         - name: Offentlig sektor
           items:
             - name: Startsida för offentlig sektor
@@ -1520,18 +1382,84 @@
                   items:
                     - name: Översikt över elektronisk fakturering
                       href: localizations/e-invoicing-service-overview.md?toc=/dynamics365/finance/toc.json
-                    - name: Administrationskomponenter i elektronisk fakturering
-                      href: localizations/e-invoicing-service-administration.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurera elektronisk fakturering i Regulatory Configuration Services (RCS)
-                      href: localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/finance/toc.json
-                    - name: Utfärda elektroniska fakturor i Finance och Supply Chain Management
-                      href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/finance/toc.json
-                    - name: Skapa ett Azure lagringskonto och ett Key Vault
-                      href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
-                    - name: Instrumentpanel för användningshantering
-                      href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
-                    - name: Kom i gång
+                    - name: Administrations- och integrationskomponenter för elektronisk fakturering
+                      href: localizations/e-invoicing-administration-integration-components.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurera elektronisk fakturering
                       items:
+                        - name: Konfigurerar elektronisk fakturering
+                          href: localizations/e-invoicing-set-up-overview.md?toc=/dynamics365/finance/toc.json
+                        - name: Registrera och installera elektronisk fakturering
+                          items:
+                            - name: Översikt över registrering och installation av elektronisk fakturering
+                              href: localizations/e-invoicing-sign-up-install.md?toc=/dynamics365/finance/toc.json
+                            - name: Installera tillägget för mikrotjänster i Lifecycle Services
+                              href: localizations/e-invoicing-install-add-in-microservices-lcs.md?toc=/dynamics365/finance/toc.json
+                            - name: Konfigurera Regulatory Configuration Services (RCS)
+                              href: localizations/e-invoicing-set-up-rcs.md?toc=/dynamics365/finance/toc.json
+                            - name: Administratörsreferens för plugin-programmet Power Platform
+                              href: localizations/e-invoicing-power-platform-plug-in.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurera Azure-resurser
+                          items:
+                            - name: Konfigurera Azure-resurser för elektronisk fakturering
+                              href: localizations/e-invoicing-set-up-azure-resources.md?toc=/dynamics365/finance/toc.json
+                            - name: Skapa ett Azure Key Vault på Azure Portal
+                              href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md?toc=/dynamics365/finance/toc.json
+                            - name: Skapa ett Azure-lagringskonto på Azure Portal
+                              href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md
+                            - name: Konfigurera en SharePoint-anslutning
+                              href: localizations/e-invoicing-create-sharepoint-connection.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurera miljöer
+                          items:
+                            - name: Konfigurera tjänstmiljöer och anslutna appar
+                              href: localizations/e-invoicing-configure-service-environments-connected-applications.md?toc=/dynamics365/finance/toc.json
+                            - name: Tjänstmiljöer
+                              href: localizations/e-invoicing-service-environments.md?toc=/dynamics365/finance/toc.json
+                            - name: Kundcertifikat och hemligheter
+                              href: localizations/e-invoicing-customer-certificates-secrets.md?toc=/dynamics365/finance/toc.json
+                            - name: Anslutna appar
+                              href: localizations/e-invoicing-connected-applications.md?toc=/dynamics365/finance/toc.json
+                    - name: Arbeta med globaliseringsfunktioner
+                      items:
+                        - name: Arbeta med globaliseringsfunktioner – översikt
+                          href: localizations/e-invoicing-working-globalization-features.md?toc=/dynamics365/finance/toc.json
+                        - name: Importera en funktion från den globala lagringsplatsen
+                          href: localizations/e-invoicing-import-feature-global-repository.md?toc=/dynamics365/finance/toc.json
+                        - name: Skapa en ny globaliseringsfunktion
+                          href: localizations/e-invoicing-create-new-globalization-feature.md?toc=/dynamics365/finance/toc.json
+                        - name: Arbeta med konfigurationer
+                          href: localizations/e-invoicing-work-configurations.md
+                        - name: Arbeta med funktionsinställningar
+                          href: localizations/e-invoicing-feature-setup.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Slutföra, publicera och distribuera en globaliseringsfunktion'
+                          href: localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/finance/toc.json
+                        - name: Dela med andra organisationer
+                          href: localizations/e-invoicing-share-other-organizations.md?toc=/dynamics365/finance/toc.json
+                        - name: Bearbeta inkommande elektroniska dokument
+                          items:
+                            - name: Bearbetar inkommande elektroniska dokument
+                              href: localizations/e-invoicing-process-incoming-electronic-documents.md
+                            - name: Konfigurera en e-postkanal
+                              href: localizations/e-invoicing-configure-email.md?toc=/dynamics365/finance/toc.json
+                            - name: Konfigurera en SharePoint-kanal
+                              href: localizations/e-invoicing-configure-sharepoint-channel.md
+                        - name: Konfigurera och använda elektronisk fakturering i Finance och Supply Chain Management
+                          items: null
+                        - name: Aktivera och konfigurera integration med elektronisk fakturering
+                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurera parametrar för elektronisk fakturering
+                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                        - name: Arbeta med elektronisk fakturering
+                          items:
+                            - name: Skicka elektroniska dokument till elektronisk fakturering
+                              href: localizations/e-invoicing-submit-electronic-documents.md?toc=/dynamics365/finance/toc.json
+                            - name: Arbeta med överföringsloggen för elektroniska dokument
+                              href: localizations/e-invoicing-submission-log.md?toc=/dynamics365/finance/toc.json
+                            - name: Arbeta med mottagningsloggen för elektroniska dokument
+                              href: localizations/e-invoicing-electronic-documents-receiving-log.md?toc=/dynamics365/finance/toc.json
+                    - name: Landsspecifika scenarier
+                      items:
+                        - name: Tillgänglighet för funktioner för elektronisk fakturering
+                          href: localizations/e-invoicing-country-specific-availability.md?toc=/dynamics365/finance/toc.json
                         - name: Kom i gång med tjänstadministration för elektronisk fakturering
                           href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
                         - name: Kom i gång med elektronisk fakturering
@@ -1544,28 +1472,46 @@
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Kom i gång med elektronisk fakturering för Mexiko
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
-                        - name: Använd tjänsten elektroniska fakturering för att importera leverantörsfakturor
+                        - name: Kom i gång med elektronisk fakturering för Saudiarabien
+                          href: localizations/e-invoicing-sa-get-started.md
+                        - name: Inställningar för direkt integration av italiensk FatturaPA med SDI
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
+                        - name: Använd tjänsten för elektronisk fakturering för att importera leverantörsfakturor
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
-                        - name: Ställ in elektronisk fakturering
+                        - name: Konfigurera elektronisk fakturering
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
+                        - name: Administratörsreferens för plugin-programmet Power Platform
+                          href: localizations/e-invoicing-power-platform-plug-in.md
                     - name: Vanliga frågor och svar om elektronisk fakturering
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Momsberäkning
                   items:
                     - name: Översikt över momsberäkning
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
-                    - name: Ställ in
+                    - name: Inställningar
                       items:
                         - name: Kom i gång med momsberäkning
                           href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                        - name: Ställ in momskoder
+                          href: localizations/set-up-tax-codes.md
+                        - name: Ställ in momsgrupper
+                          href: localizations/set-up-tax-groups.md
+                        - name: Ställ in artikelmomsgrupper
+                          href: localizations/set-up-item-tax-groups.md
+                        - name: Beräkningar av import- och exportskatt
+                          href: localizations/tax-calculation-import-export-feature.md
                         - name: Konfigurera en miljö för att söka efter huvuddata
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                        - name: Synkronisera momskonfigurationen från momsberäkningstjänsten till ekonomi
+                          href: localizations/global-master-data-sync-tax-calculation-service-finance.md
                     - name: Bestämning
                       items:
                         - name: Datamodell för momsberäkning
                           href: localizations/tax-calculation-data-model-overview.md
                         - name: Tillämplighet för moms och bestämningslogik för momsgrupp
                           href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+                        - name: Använda skattemyndighetsparametrar för konfiguration av kassarabattsberäkning
+                          href: localizations/global-tax-jurisdiction-cash-discount-setup.md?toc=/dynamics365/finance/toc.json
                     - name: Beräkning
                       items:
                         - name: Beräkna moms på priser när Priser inkl. moms är aktiverat
@@ -1586,36 +1532,140 @@
                           items:
                             - name: Momsdeklaration
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
+                        - name: Rapportering för Tyskland
+                          items:
+                            - name: Momsdeklaration
+                              href: localizations/emea-deu-vat-declaration-germany.md
                         - name: Rapportering för Nederländerna
                           items:
                             - name: Momsdeklaration
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Lista över försäljning inom EU
                               href: localizations/emea-nl-eu-sales-list.md
-                        - name: Rapportering i Sverige
+                        - name: Rapportering för Spanien
+                          items:
+                            - name: 'Omedelbar leverans av information om moms (Suministro Inmediato de Información del IVA, SII)'
+                              href: localizations/emea-esp-sii-spain.md
+                            - name: Momsdeklaration
+                              href: localizations/emea-esp-vat-declaration-spain.md
+                        - name: Rapportering för Sverige
                           items:
                             - name: Momsdeklaration
                               href: localizations/emea-swe-VAT-declaration-Sweden.md
-                        - name: Rapportering i Schweiz
+                        - name: Rapportering för Schweiz
                           items:
                             - name: Momsdeklaration
                               href: localizations/emea-che-vat-declaration-switzerland.md
-                        - name: Rapportering i Storbritannien
+                        - name: Rapportering för Storbritannien
                           items:
-                            - name: Förbered för integration med MTD för moms
-                              href: localizations/emea-gbr-mtd-vat-integration.md
+                            - name: Momsdeklaration
+                              href: localizations/emea-gbr-vat-declaration.md
+                        - name: Rapportering för Norge
+                          items:
+                            - name: Momsdeklaration
+                              href: localizations/emea-nor-vat-declaration.md
                     - name: Aktivera momsberäkning för överföringsorder
                       items:
                         - name: Momsfunktionstöd för överföringsorder
                           href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                        - name: Skriva ut momsinformation på överföringsorderdokument
+                          href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?toc=/dynamics365/finance/toc.json
                     - name: Tillägg
                       items:
                         - name: Lägga till datafält i momskonfigurationer
                           href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Lägga till datafält i momsintegreringen genom att använda tillägg
                           href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
+                        - name: Anpassa momskonfigurationer för sökning efter huvuddata
+                          href: localizations/customize-tax-configurations-master-data-lookup.md
+                    - name: Felsökning
+                      items:
+                        - name: Det gick inte att få åtkomst till momstjänsten
+                          href: localizations/tcs-troubleshooting-failed-access-tax-service.md
+                        - name: Tom momsfunktionslista i parametrar för momsberäkning
+                          href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md
+                    - name: Momsberäkning – vanliga frågor och svar
+                      href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
+            - name: Moms
+              items:
+                - name: Moms
+                  items:
+                    - name: Momsöversikt
+                      href: general-ledger/indirect-taxes-overview.md
+                    - name: Momssatser grundade på bidragsunderlaget och beräkningsmetoder
+                      href: general-ledger/marginal-base-field.md
+                    - name: Momsbetalningar och avrundningsregler
+                      href: general-ledger/round-sales-tax-payments.md
+                    - name: Momsberäkningsmetoder i fältet Ursprung
+                      href: general-ledger/sales-tax-calculation-methods-origin-field.md
+                    - name: Beräkningsalternativ för hela beloppet och intervall för momskoder
+                      href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                    - name: Momsberäkning för allmänna journalrader
+                      href: general-ledger/sales-tax-calculation-on-general-journal.md
+                    - name: Beräkna och justera moms på en leverantörsfaktura
+                      href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: Aktivera fördröjd momsberäkning i journal
+                      href: general-ledger/enable-delayed-tax-calculation.md
+                    - name: Skapa en momsbetalning
+                      href: general-ledger/tasks/create-sales-tax-payment.md
+                    - name: Avrundning av momskvittning baserat på anpassat antal decimaler för valuta
+                      href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
+                    - name: Skapa momstransaktioner i dokument
+                      href: general-ledger/tasks/create-sales-tax-transactions-documents.md
+                    - name: Ställ in redovisningsbokföringsgrupper för moms
+                      href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+                    - name: Ställ in momsmyndigheter
+                      href: general-ledger/tasks/set-up-sales-tax-authorities.md
+                    - name: Ställ in momskoder
+                      href: general-ledger/tasks/set-up-sales-tax-codes.md
+                    - name: Ställ in momsgrupper och artikelmomsgrupper
+                      href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+                    - name: Ställ in momsrapporteringskoder
+                      href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                    - name: Stöd för moms på dubbel valuta
+                      href: general-ledger/dual-currency-for-tax.md
+                    - name: Momsspecifikation per redovisningstransaktionsrapport
+                      href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
+                    - name: Ställ in momskvittningsperioder
+                      href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+                    - name: Visa bokförda momstransaktioner
+                      href: general-ledger/tasks/view-posted-sales-tax-transactions.md
+                    - name: Skriva ut rapporten för momsbetalning per kod
+                      href: general-ledger/print-sales-tax-payment-by-code-report.md
+                    - name: Felsökning av moms
+                      items:
+                        - name: Moms beräknas inte eller momsbeloppet är noll
+                          href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
+                        - name: Resultatet av momsberäkningen påverkar transaktioner
+                          href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
+                        - name: Fel fältvärde i TaxTrans
+                          href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
+                        - name: TaxTrans-posten har inte genererats
+                          href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
+                        - name: Moms bokförs i fel huvudbokskonto i verifikationen
+                          href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
+                        - name: Verifikationen har inte genererats
+                          href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
+                - name: Källskatt
+                  items:
+                    - name: Ställ in källskatt
+                      href: general-ledger/tasks/set-up-withholding-tax.md
+                    - name: Global källskatt
+                      items:
+                        - name: Global källskatt – översikt
+                          href: general-ledger/global-withholding-tax-overview.md
+                        - name: Ställa in global källskatt
+                          href: general-ledger/set-up-global-withholding-tax.md
+                        - name: Källskatt i inköpstransaktioner
+                          href: general-ledger/withholding-tax-in-purchase-transactions.md
+                        - name: Källskatt i försäljningstransaktioner
+                          href: general-ledger/withholding-tax-in-sales-transactions.md
+                        - name: Skapa en källskattebetalning
+                          href: general-ledger/create-a-withholding-tax-payment.md
             - name: Regeluppdateringar
               href: localizations/regulatory-updates.md
+            - name: Sök efter regleringsuppdateringar
+              href: localizations/search-for-regulatory-updates.md
             - name: Australien
               items:
                 - name: Australien – översikt
@@ -1643,13 +1693,15 @@
                 - name: Momsutdrag
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Rapport för gränsöverskridande tjänster
-                  href: localizations/emea-aut-vat-statement-details.md
+                  href: localizations/emea-aut-cross-border-services-report.md
                 - name: Österrikisk Intrastat
                   href: localizations/emea-aut-intrastat.md
                 - name: Inköpsavgifter
                   href: localizations/emea-aut-purchase-duties.md
                 - name: Momsdeklaration
                   href: localizations/emea-aut-vat-declaration-austria.md
+                - name: Lista över försäljning inom EU
+                  href: localizations/emea-aut-eu-sales-list.md
             - name: Bahrain
               items:
                 - name: Bahrain – översikt
@@ -1682,6 +1734,8 @@
                   href: localizations/emea-bel-prodcom-report.md
                 - name: Årlig momslista över inrikes försäljning
                   href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
+                - name: Intrastat för Belgien
+                  href: localizations/emea-bel-intrastat.md
             - name: Brasilien
               items:
                 - name: Brasilien – översikt
@@ -1776,6 +1830,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: Ställa in NF-e-parametrar för skattemyndighet
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: Flytta NF-e XML-filer som bilagor
+                      href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
                     - name: NT2020.005 – Uppdatering av layout och validering i det elektroniska skattedokumentet (NF-e)
                       href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 – digital plattform för mellanliggande försäljning för NF-e
@@ -1830,11 +1886,13 @@
                   href: localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
                 - name: Beräkna räntor och böter på kundbetalningar
                   href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
+                - name: Ställ in bankkontonummer för Brasilien
+                  href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
                 - name: Skatter
                   items:
                     - name: Brasilianska skatter – översikt
                       href: localizations/latam-bra-calculate-taxes.md
-                    - name: Beräkna skatt på inköpsrekvisitioner
+                    - name: Beräkna moms på inköpsrekvisitioner
                       href: localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
                     - name: Skapa en momsvärdering - ICMS
                       href: localizations/tasks/br-10001-4-create-tax-assessment-icms.md
@@ -1858,6 +1916,8 @@
                       href: localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
                     - name: 'ICMS‑ST komplement och återbetalningsprocess och deklaration för RS-, SC- och SP-tillstånd'
                       href: localizations/latam-bra-complement-restitution.md
+                    - name: Grundändring av ICMS-DIF-momsberäkningar för produkter från leverantörer i andra stater
+                      href: localizations/latam-brazil-basis-change-ICMS-DIF-tax-calculation-products-suppliers-other-states.md
                     - name: Ställ in justeringskoder för IPI-moms
                       href: localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
                     - name: PIS- och COFINS-anläggningstillgångar
@@ -1888,7 +1948,7 @@
               items:
                 - name: Kina – översikt
                   href: localizations/china.md
-                - name: Finance and Operations – drivs av 21Vianet i Kina
+                - name: Ekonomi och drift drivs av 21Vianet i Kina
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
                 - name: Kontogruppsval för kinesiska verifikationstyper
                   href: localizations/apac-chn-account-groups-selection.md
@@ -1906,7 +1966,7 @@
                   href: localizations/tasks/golden-tax-integration-export-setup.md
                 - name: Avskrivningsmetoder för anläggningstillgångar
                   href: localizations/apac-chn-depreciation-methods-fixed-assets.md
-                - name: Importera datatabellen Chinese Golden Tax
+                - name: Importera kinesiska mervärdesskattefiler
                   href: localizations/apac-chn-import-golden-tax-data-entity.md
                 - name: 'Månatlig, genomsnittlig kostnadsmodell'
                   href: localizations/apac-chn-monthly-average-cost-model.md
@@ -1950,7 +2010,7 @@
                       href: localizations/emea-pre-acquisition-acquisition-fixed-asset.md
                 - name: Bokför periodiska journaler
                   href: general-ledger/tasks/post-periodic-journals.md
-                - name: Ställ in undertecknare för utskriftsformulär
+                - name: Konfigurera undertecknare för utskriftsformulär
                   href: localizations/emea-set-up-signers-for-printing-forms.md
                 - name: Dela perioder i periodiska journaler
                   href: localizations/emea-create-post-periodic-journals.md
@@ -1960,6 +2020,8 @@
                   href: localizations/emea-cze-vat-statement-details.md
                 - name: Momsdeklaration (Tjeckien)
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+                - name: Tjeckisk Intrastat
+                  href: localizations/emea-cze-intrastat.md
                 - name: Banksymboler för bankkonton
                   href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
                 - name: Inomeuropeisk moms
@@ -1992,6 +2054,8 @@
                   href: localizations/tasks/set-up-oioubl-electronic-invoicing.md
                 - name: Ställ in format för betalningsblankett
                   href: localizations/tasks/set-up-payment-slip-format.md
+                - name: Dansk Intrastat
+                  href: localizations/emea-dnk-intrastat.md
             - name: Egypten
               items:
                 - name: Egypten – översikt
@@ -2014,6 +2078,8 @@
                   href: localizations/emea-est-personal-info.md
                 - name: Momsutdrag
                   href: localizations/emea-est-vat-statement-details.md
+                - name: Estnisk Intrastat
+                  href: localizations/emea-est-intrastat.md
             - name: Europa
               items:
                 - name: Europa – översikt
@@ -2040,8 +2106,10 @@
                   href: localizations/emea-edit-invoice-id-sales-orders.md
                 - name: Mottagningskvitton för EU
                   href: localizations/emea-entry-certificates.md
-                - name: EU-säljlistrapportering
+                - name: Rapport med lista över försäljning inom EU
                   href: localizations/emea-eu-sales-list.md
+                - name: Exempel på allmän lista över försäljning inom EU
+                  href: localizations/emea-eu-sales-list-example.md
                 - name: Valutakursjusteringar
                   href: localizations/emea-exchange-rate-adjustments.md
                 - name: Filformat för betalningsmetod
@@ -2052,8 +2120,6 @@
                   href: localizations/emea-credit-note-reverse-fixed-asset-sale.md
                 - name: Generera ett överföringsdokument för en intern lageröverföring
                   href: localizations/tasks/transfer-document-internal-inventory-transfer.md
-                - name: Generera en rapport med lista över försäljning inom EU
-                  href: localizations/tasks/eur-00011-eu-sales-list-report.md
                 - name: ISO20022-filer
                   items:
                     - name: Importera ISO20022-filer
@@ -2122,13 +2188,11 @@
                   href: accounts-payable/sepa-credit-transfer.md
                 - name: Översikt över SEPA-autogiro
                   href: accounts-receivable/sepa-direct-debit-overview.md
-                - name: Ställ in kund- och leverantörskompensation
+                - name: Konfigurera kund- och leverantörskompensation
                   href: localizations/emea-compensation-customer-vendor-transactions.md
-                - name: Ställ in grupp för rapportering av EU-säljlista
-                  href: localizations/tasks/eur-00011-eu-sales-list-reporting.md
                 - name: Skapa betalningsblankettformat för projektfakturor
                   href: localizations/tasks/set-up-payment-slip-format-project-invoices.md
-                - name: Ställ in undertecknare för utskriftsformulär
+                - name: Konfigurera undertecknare för utskriftsformulär
                   href: localizations/emea-set-up-signers-for-printing-forms.md
                 - name: Skapa överföringsdokument för varurörelse inom ett företag
                   href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
@@ -2160,14 +2224,20 @@
                       href: localizations/emea-vat-reporting.md
                     - name: Skapa och skicka en momsrapport
                       href: localizations/tasks/create-submit-vat-report.md
+                    - name: Datum för leverantörens momsregistrering
+                      href: localizations/emea-date-vendor-vat-register.md
                 - name: Visa transaktioner på kvittning
                   href: localizations/emea-transactions-settlement-form.md
+                - name: Ekonomisk orsak
+                  href: localizations/emea-financial-reason.md
             - name: Finland
               items:
                 - name: Finland – översikt
                   href: localizations/finland.md
                 - name: Momsbetalningsrapport för Finland
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
+                - name: Finsk Intrastat
+                  href: localizations/emea-fin-intrastat.md
             - name: Frankrike
               items:
                 - name: Frankrike – översikt
@@ -2208,6 +2278,8 @@
                   href: localizations/tasks/fr-00018-daily-interest.md
                 - name: Nedsättningsavskrivning
                   href: localizations/emea-fra-derogatory-depreciation.md
+                - name: Lista över försäljning inom EU
+                  href: localizations/emea-fra-eu-sales-list.md
                 - name: Franska växlar och skuldsedlar
                   href: localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
                 - name: Fransk Intrastat
@@ -2254,11 +2326,13 @@
                       href: localizations/emea-deu-gdpdu-data-filtering.md
                 - name: Avskrivningsjusteringar för ytterligare anskaffning under det andra året
                   href: localizations/tasks/de-00002-depreciation.md
+                - name: Momsdeklaration
+                  href: localizations/emea-deu-vat-declaration-germany.md
                 - name: Överföring av elektronisk momsdeklaration (ELSTER)
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Tysk Intrastat
                   href: localizations/emea-deu-intrastat.md
-                - name: Momsdeklaration för Tyskland
+                - name: Momsutdrag
                   href: localizations/emea-de-vat-declaration.md
                 - name: Rapport över elektroniska kundfakturor
                   href: localizations/emea-deu-e-invoices.md
@@ -2268,6 +2342,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/finance/toc.json
                 - name: Skriva ut en separat etikett för kreditnotor som kommer från försäljning
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
+                - name: Lista över försäljning inom EU
+                  href: localizations/emea-deu-eu-sales-list.md
             - name: Ungern
               items:
                 - name: Ungern – översikt
@@ -2310,6 +2386,8 @@
                   href: localizations/apac-ind-scope.md
                 - name: Nyheter eller ändringar för lokalisering för Indien
                   items:
+                    - name: Nyheter och ändringar i 10.0.20 – 10.0.22
+                      href: localizations/ind-news-letter-10-0-20-22.md
                     - name: Nyheter och ändringar i 10.0.15 – 10.0.19
                       href: localizations/ind-news-letter-10-0-15-19.md
                     - name: Nyheter och ändringar i 10.0.14
@@ -2342,6 +2420,8 @@
                       href: localizations/apac-ind-news-letter-10-0-01.md
                     - name: Nyheter och ändringar i 10.0.0
                       href: localizations/apac-ind-news-letter-10-0-00.md
+                - name: Spårnings- och redigeringsloggar för redovisningsprogram
+                  href: localizations/apac-ind-audit-trail-edit-logs-accounting-software.md
                 - name: Indirekt moms
                   items:
                     - name: 'GST (moms), Indien'
@@ -2584,7 +2664,7 @@
                               items:
                                 - name: Ställ in TDS-parametrar
                                   href: localizations/apac-ind-TDS-TDS-parameter-activation.md
-                                - name: Ställa in huvudbokskonton för TDS
+                                - name: Ställa in redovisningskonton för TDS
                                   href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
                                 - name: Ställ in TDS-registreringsnummer för juridiska personer
                                   href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
@@ -2678,6 +2758,16 @@
                           href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
                         - name: Uppdatera certifikatnummer och datum för TDS-transaktioner
                           href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+            - name: Indonesien
+              items:
+                - name: Indonesien – översikt
+                  href: localizations/indonesia.md
+                - name: Momsfakturanumrering och fakturering
+                  href: localizations/apac-idn-invoicing.md
+                - name: Momsdeklaration för Indonesien
+                  href: localizations/apac-idn-ppn-declaration.md
+                - name: Källskatterapport för Indonesien
+                  href: localizations/apac-idn-wht-declaration.md
             - name: Italien
               items:
                 - name: Italien – översikt
@@ -2714,10 +2804,14 @@
                   href: localizations/emea-ita-exil-zero-invoice-posting.md
                 - name: Förbättrad användbarhet för bankdata
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
-                - name: Italiensk Intrastat
-                  href: localizations/emea-ita-intrastat.md
-                - name: Bokföra införsel och utförsel för Intrastat
-                  href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                - name: Intrastat
+                  items:
+                    - name: Italiensk Intrastat
+                      href: localizations/emea-ita-intrastat.md
+                    - name: Bokföra införsel och utförsel för Intrastat
+                      href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                    - name: Filformat för Intrastat (IT)
+                      href: /dynamics/s-e/365business/dynamices365finance_itintrastatfile
                 - name: Diverse tillägg per kilogram i en Intrastat-deklaration
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Avsiktsbrev – fakturera vanliga exportörer
@@ -2740,6 +2834,8 @@
                   href: localizations/emea-ita-exil-tax-plafond.md
                 - name: Elektroniska kundfakturor
                   href: localizations/emea-ita-e-invoices.md
+                - name: Elektroniska leverantörsfakturor
+                  href: localizations/emea-ita-vend-e-invoices.md
                 - name: Årlig momsredovisning
                   href: localizations/emea-ita-yearly-tax-communication.md
                 - name: Spårbarhet för betalning
@@ -2924,6 +3020,8 @@
                   href: localizations/emea-lva-tax-natural-resources.md
                 - name: Momsutdragsinformation
                   href: localizations/emea-lva-vat-statement-details.md
+                - name: Lettisk Intrastat
+                  href: localizations/emea-lva-intrastat.md
             - name: Litauen
               items:
                 - name: Litauen – översikt
@@ -3022,6 +3120,8 @@
                   href: localizations/emea-nl-audit-file.md
                 - name: Momsdeklaration (Nederländerna)
                   href: localizations/emea-nl-vat-declaration-netherlands.md
+                - name: Intrastat för Nederländerna
+                  href: localizations/emea-nl-intrastat.md
                 - name: Lista över försäljning inom EU
                   href: localizations/emea-nl-EU-sales-list.md
             - name: Nya Zeeland
@@ -3040,6 +3140,20 @@
                   href: localizations/emea-nor-nets-import-format.md
                 - name: Momsutdrag
                   href: localizations/emea-nor-sales-tax-payment-report.md
+                - name: Momsretur med direkt överföring till Altinn
+                  items:
+                    - name: Översikt över momsretur med direkt överföring till Altinn
+                      href: localizations/emea-nor-vat-return.md
+                    - name: Registrera en integrationspunkt i webbportalen ID-porten
+                      href: localizations/emea-nor-vat-return-integration-point.md
+                    - name: Förbered din miljö för samverkan med ID-porten och Altinn-webbtjänster
+                      href: localizations/emea-nor-vat-return-setup.md
+                    - name: Checklista för konfiguration av elektroniska meddelanden för momsretur
+                      href: localizations/emea-nor-vat-return-checklist.md
+                    - name: Auktorisera din Finance-miljö för samverkan med ID-porten och Altinn-webbtjänster
+                      href: localizations/emea-nor-vat-return-authorization.md
+                    - name: Skicka in en momsretur till Altinn-webbtjänst
+                      href: localizations/emea-nor-vat-return-submission.md
                 - name: Standardverifieringsfil för skatt (SAF-T) för Norge
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: Elektroniska kundfakturor i Norge
@@ -3072,6 +3186,8 @@
                   href: localizations/emea-pol-returnable-packages.md
                 - name: Momsrapporter
                   href: localizations/emea-pol-sales-tax-reports.md
+                - name: Intrastat för Polen
+                  href: localizations/emea-pol-intrastat.md
                 - name: Ställ in nummerserier efter lagerställe
                   href: localizations/emea-pol-number-sequence-warehouses.md
                 - name: Standardverifieringsfil
@@ -3094,6 +3210,8 @@
                       href: localizations/emea-pol-vdek-reporting.md
                     - name: Information om särskilda affärsscenarier i JPK-V7M-rapporten
                       href: localizations/emea-pol-vdek-scenarios.md
+                - name: Betalningsvillkor i affärstransaktionsrapport
+                  href: localizations/emea-pol-payment-terms-report.md
             - name: Qatar
               items:
                 - name: Qatar – översikt
@@ -3118,6 +3236,10 @@
                       href: localizations/rus-turnover-balance-statement-reports.md
                     - name: Rapporter om kontoaktivitet
                       href: localizations/rus-account-activity-reports.md
+                    - name: Federal Accounting Standard 27-2021
+                      href: localizations/emea-rus-federal-accounting-standard-27-2021.md
+                    - name: Aktivera destinationer för elektronisk rapportering för att lagra ryska redovisningsdokument
+                      href: localizations/rus-enable-er-destinations-ru-accounting-documents.md
                 - name: Förskottsmottagare
                   items:
                     - name: Förskottsmottagare i Ryssland – översikt
@@ -3220,6 +3342,8 @@
                           href: localizations/rus-not-valuable-assets.md
                         - name: Redovisning av arbetskläder/särskild utrustning (Ryssland)
                           href: localizations/rus-working-clothes-instruments-accounting.md
+                    - name: Integrera anläggningstillgångar med modulen för tillgångshantering
+                      href: localizations/rus-integration-eam-with-fixed-asset.md
                 - name: Leverantörsreskontra och kundreskontra
                   items:
                     - name: Kreditfakturakorrigeringar (Ryssland)
@@ -3254,6 +3378,8 @@
                           href: localizations/rus-purchases-on-commission.md
                         - name: Försäljning på provision
                           href: localizations/rus-sales-on-commission.md
+                    - name: Lokala rapporter och primära formulär i Kundreskontra och Leverantörsreskontra
+                      href: localizations/rus-local-reports-primary-forms-ar-ap.md
                 - name: Lager
                   items:
                     - name: Varor på väg från leverantör
@@ -3350,11 +3476,13 @@
                   href: localizations/emea-sau-zakat-reporting.md
                 - name: Allokera bankdokumenttillägg till en försändelse
                   href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
+                - name: Elektroniska kundfakturor i Saudiarabien
+                  href: localizations/emea-sau-e-invoices.md
             - name: Singapore
               items:
                 - name: Singapore – översikt
                   href: localizations/singapore.md
-                - name: Skapa GST-05-rapport
+                - name: Generera GST-05-rapport
                   href: localizations/apac-sgp-generate-gst-05-report.md
             - name: Spanien
               items:
@@ -3372,10 +3500,12 @@
                   href: localizations/tasks/emea-esp-credit-invoicing.md
                 - name: Räkenskapsdata från fakturakontot
                   href: localizations/emea-esp-fiscal-data-invoice-account.md
-                - name: Omvärderingsgrupp för anläggningstillgångar
+                - name: Omvärdering av grupp med anläggningstillgångar
                   href: localizations/emea-esp-fixed-asset-group-revaluation.md
                 - name: Inomeuropeisk moms
                   href: localizations/emea-esp-intra-community-vat.md
+                - name: Intrastat för Spanien
+                  href: localizations/emea-esp-intrastat.md
                 - name: Engångskunder
                   href: localizations/emea-esp-no-one-time-customer-for-project-contracts.md
                 - name: Skriv ut checkar med spansk layout
@@ -3386,6 +3516,8 @@
                   href: localizations/emea-esp-report-340.md
                 - name: Deklaration 347-rapport
                   href: localizations/emea-esp-declaration-347-report.md
+                - name: Momsdeklaration 303
+                  href: localizations/emea-esp-vat-declaration-spain.md
                 - name: Inköps- och försäljningscykler
                   href: localizations/emea-esp-sales-purchase-cycle.md
                 - name: Särskilda poster och ingående ark
@@ -3406,6 +3538,8 @@
                   href: localizations/emea-swe-VAT-declaration-Sweden.md
                 - name: Svenskt Intrastat
                   href: localizations/emea-swe-intrastat.md
+                - name: Lista över försäljning inom EU
+                  href: localizations/emea-swe-eu-sales-list.md
             - name: Schweiz
               items:
                 - name: Schweiz – översikt
@@ -3456,32 +3590,30 @@
                       href: localizations/tasks/gb-00002-sales-order.md
                     - name: Ställa in artikelmomsgrupper för återfört tillägg
                       href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-                    - name: 'Konfigurera artikelgrupper, regler och parametrar för återfört tillägg'
+                    - name: 'Ställa in artikelgrupper, regler och parametrar för återfört tillägg'
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-                    - name: Konfigurera momsgrupper för återfört tillägg
+                    - name: Konfigurera momsgrupper för återfört momstillägg
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: Rapportering i Storbritannien
+                - name: 'Gör skatt digital (MTD, Making Tax Digital) för moms'
                   items:
-                    - name: Making Tax Digital (MTD) för moms
-                      items:
-                        - name: Skicka in Making Tax Digital (MTD) momsretur i Storbritannien
-                          href: localizations/emea-gbr-mtd-vat-integration.md
-                        - name: 'Förbered miljön för samverkan med HMRC:s MTD momswebbtjänst'
-                          href: localizations/emea-gbr-mtd-vat-integration-setup.md
-                        - name: Checklista för konfiguration av elektroniska meddelanden för MTD-moms
-                          href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-                        - name: Testa samverkan med MTD sandbox-miljö för moms
-                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: 'Auktorisera Finance-miljön för samverkan med HMRC:s MTD-webbtjänst'
-                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                        - name: 'Skicka in en momsretur till HMRC:s MTD-webbtjänst'
-                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
-                        - name: Hämta information om momsbetalningar och momsskulder från HMRC
-                          href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
-                        - name: Konfigurationsinformation för momsdeklarationer i Storbritannien
-                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
-                        - name: Skapa en momsdeklaration i pappersformat (VAT 100-rapport)
-                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
+                    - name: Skicka in MTD-momsretur (Making Tax Digital) i Storbritannien
+                      href: localizations/emea-gbr-mtd-vat-integration.md
+                    - name: 'Förbered miljön för samverkan med HMRC:s MTD momswebbtjänst'
+                      href: localizations/emea-gbr-mtd-vat-integration-setup.md
+                    - name: Checklista för konfiguration av elektroniska meddelanden för MTD-moms
+                      href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
+                    - name: Testa samverkan med MTD sandbox-miljö för moms
+                      href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                    - name: 'Auktorisera Finance-miljön för samverkan med HMRC:s MTD-webbtjänst'
+                      href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                    - name: 'Skicka in en momsretur till HMRC:s MTD-webbtjänst'
+                      href: localizations/emea-gbr-mtd-vat-integration-submission.md
+                    - name: Hämta information om momsbetalningar och momsskulder från HMRC
+                      href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+                    - name: Konfigurationsinformation för momsdeklarationer i Storbritannien
+                      href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                    - name: Skapa en momsdeklaration i pappersformat (VAT 100-rapport)
+                      href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Rapport för statistik över betalningspraxis
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: USA
@@ -3494,168 +3626,6 @@
                   href: localizations/noam-usa-form-1099-public-sector.md
                 - name: Ange leverantörer för 1099-rapportering
                   href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
-        - name: Human Resources
-          items:
-            - name: Human Resources – översikt
-              href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-            - name: Konfigurera Human Resources
-              items:
-                - name: Konfigurera Human Resources-parametrar
-                  href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurera delade Human Resources-parametrar
-                  href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: Ställa in arbetsflöden för Human Resources
-                  href: /dynamics365/finance/hr-workflow-manage-employee-information?toc=%2fdynamics365%2ffinance%2ftoc.json
-                - name: Förstå Datum- och tid-fält
-                  href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
-            - name: Hantera personal
-              items:
-                - name: Organisera personalen
-                  href: ../human-resources/hr-personnel-departments-jobs-positions.md?toc=/dynamics365/finance/toc.json
-                - name: Ställa in komponenter för ett jobb
-                  href: ../human-resources/hr-personnel-jobs.md?toc=/dynamics365/finance/toc.json
-                - name: Definiera avdelningar
-                  href: ../human-resources/hr-personnel-define-departments.md?toc=/dynamics365/finance/toc.json
-                - name: Lägga till en avdelning i en hierarki
-                  href: ../human-resources/hr-personnel-add-department-hierarchy.md?toc=/dynamics365/finance/toc.json
-                - name: Definiera jobb
-                  href: ../human-resources/hr-personnel-define-jobs.md?toc=/dynamics365/finance/toc.json
-                - name: Skapa en arbetstidskalender
-                  href: ../human-resources/hr-personnel-create-working-time-calendar.md?toc=/dynamics365/finance/toc.json
-                - name: Vanliga frågor och svar om personalåtgärder
-                  href: ../human-resources/hr-personnel-actions-faq.md?toc=/dynamics365/finance/toc.json
-                - name: Använda arbetsflöden för att hantera medarbetarinformation
-                  href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
-                - name: Ändra rapporteringsrelationer för en befattning
-                  href: ../human-resources/hr-personnel-modify-reporting-relationships-position.md?toc=/dynamics365/finance/toc.json
-                - name: Ange arbetarinformation
-                  href: ../human-resources/hr-personnel-enter-worker-information.md?toc=/dynamics365/finance/toc.json
-                - name: Låna ut artiklar till arbetare
-                  href: ../human-resources/hr-personnel-loan-item-worker.md?toc=/dynamics365/finance/toc.json
-                - name: Skapa låneartiklar
-                  href: ../human-resources/hr-personnel-create-loan-items.md?toc=/dynamics365/finance/toc.json
-                - name: Hantera låneartiklar
-                  href: ../human-resources/hr-personnel-loan-items.md?toc=/dynamics365/finance/toc.json
-                - name: Utveckla en successionsplan
-                  href: ../human-resources/hr-personnel-develop-succession-plan.md?toc=/dynamics365/finance/toc.json
-                - name: Ange projekttidrapporter
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hr-enter-project-timesheets.md
-                - name: Massanställningsprojekt
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md?toc=/dynamics365/finance/toc.json
-                - name: Skapa ett massanställningsprojekt
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md?toc=/dynamics365/finance/toc.json
-                - name: Ställa in befattningar
-                  href: ../human-resources/hr-personnel-set-up-positions.md?toc=/dynamics365/finance/toc.json
-                - name: Ställa in information om skador och sjukdomar
-                  href: ../human-resources/hr-personnel-set-up-injury-illness-information.md?toc=/dynamics365/finance/toc.json
-                - name: Underhålla information om medarbetares skador och sjukdomar
-                  href: ../human-resources/hr-personnel-maintain-employee-injury-illness-information.md?toc=/dynamics365/finance/toc.json
-            - name: Rekrytera kandidater
-              items:
-                - name: Hantera rekryteringsprocesser
-                  href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-                - name: Massanställningsprojekt
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md
-                - name: Skapa massanställningsprojekt
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
-                - name: Ange sökanden och ansökningsdata manuellt
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-                - name: Utveckla och öppna jobbrekvisitioner
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-                - name: Ställa in befattningar
-                  href: ../human-resources/hr-personnel-set-up-positions.md
-                - name: Anställa kandidater via rekrytering
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                - name: Anställa befintliga medarbetare via rekrytering
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-                - name: Identifiera och distribuera kandidaturvalsverktyg
-                  href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
-            - name: Ställ in kompensationsplaner
-              items:
-                - name: Översikt över kompensationsplaner
-                  href: ../human-resources/hr-compensation-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Ställa in kompensationsrutnät
-                  href: ../human-resources/hr-compensation-grids.md?toc=/dynamics365/finance/toc.json
-                - name: Utveckla en struktur och plan för kompensation
-                  href: ../human-resources/hr-compensation-structure.md?toc=/dynamics365/finance/toc.json
-                - name: Skapa planer för fast kompensation
-                  href: ../human-resources/hr-compensation-fixed-plans.md?toc=/dynamics365/finance/toc.json
-                - name: Skapa planer för variabel kompensation
-                  href: ../human-resources/hr-compensation-variable-plans.md?toc=/dynamics365/finance/toc.json
-                - name: Registrera medarbetare i en fast kompensationsplan
-                  href: ../human-resources/hr-compensation-enroll-employees-fixed.md?toc=/dynamics365/finance/toc.json
-                - name: Registrera medarbetare i en variabel kompensationsplan
-                  href: ../human-resources/hr-compensation-enroll-employees-variable.md?toc=/dynamics365/finance/toc.json
-                - name: Definiera kompensationsprocessen och beräkna resultat
-                  href: ../human-resources/hr-compensation-define-process.md?toc=/dynamics365/finance/toc.json
-                - name: Bearbeta kompensationsplaner
-                  href: ../human-resources/hr-compensation-process.md?toc=/dynamics365/finance/toc.json
-            - name: Hantera förmåner
-              items:
-                - name: Definiera och hantera ett förmånsprogram
-                  href: ../human-resources/hr-benefits-manage-program.md?toc=/dynamics365/finance/toc.json
-                - name: Policyer för förmånsberättigande
-                  href: ../human-resources/hr-benefits-eligibility-policies.md?toc=/dynamics365/finance/toc.json
-                - name: Process för förmånsberättigande
-                  href: ../human-resources/hr-benefits-eligibility-process.md?toc=/dynamics365/finance/toc.json
-                - name: Definiera förmånsberättiganderegler och policyer
-                  href: ../human-resources/hr-benefits-define-eligibility-rules.md?toc=/dynamics365/finance/toc.json
-                - name: Utveckla ett förmånsprogram för medarbetare
-                  href: ../human-resources/hr-benefits-deliver-employee-benefits-program.md?toc=/dynamics365/finance/toc.json
-                - name: Skapa nya förmåner
-                  href: ../human-resources/hr-benefits-create.md?toc=/dynamics365/finance/toc.json
-                - name: Anmäl arbetare till förmåner
-                  href: ../human-resources/hr-benefits-enroll-workers.md?toc=/dynamics365/finance/toc.json
-                - name: Hantera utgångsdatum för förmån
-                  href: ../human-resources/hr-benefits-expiration-dates.md?toc=/dynamics365/finance/toc.json
-                - name: Generera ACA-rapporter
-                  href: ../human-resources/hr-benefits-aca-reports.md?toc=/dynamics365/finance/toc.json
-            - name: Utveckla medarbetare
-              items:
-                - name: Översikt över prestationshantering
-                  href: ../human-resources/hr-develop-performance-management-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Anpassa personalens kompetenser
-                  href: ../human-resources/hr-develop-skills.md?toc=/dynamics365/finance/toc.json
-                - name: Lägga till i din resultatjournal
-                  href: ../human-resources/hr-develop-add-performance-journal.md?toc=/dynamics365/finance/toc.json
-                - name: Skapa ett mål
-                  href: ../human-resources/hr-develop-create-goal.md?toc=/dynamics365/finance/toc.json
-                - name: Skapa en resultatöversyn
-                  href: ../human-resources/hr-develop-create-performance-review.md?toc=/dynamics365/finance/toc.json
-            - name: Skapa kurser
-              items:
-                - name: Skapa utbildningar
-                  href: ../human-resources/hr-learning-courses.md?toc=/dynamics365/finance/toc.json
-                - name: Enkätöversikt
-                  href: ../human-resources/hr-learning-questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: Utforma enkäter
-                  href: ../human-resources/hr-learning-design-questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: Skicka ut och schemalägga enkäter
-                  href: ../human-resources/hr-learning-distribute-questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: Distribuera enkäter med hjälp av tidsplanering
-                  href: ../human-resources/hr-learning-distribute-questionnaires-scheduling.md?toc=/dynamics365/finance/toc.json
-                - name: Visa enkätresultat
-                  href: ../human-resources/hr-learning-evaluate-questionnaire-results.md?toc=/dynamics365/finance/toc.json
-                - name: Analysera enkätresultat
-                  href: ../human-resources/hr-learning-analyze-questionnaire-results.md?toc=/dynamics365/finance/toc.json
-                - name: Skapa en öppen fråga
-                  href: ../human-resources/hr-learning-create-open-ended-question.md?toc=/dynamics365/finance/toc.json
-                - name: Skapa en stängd avslutad fråga
-                  href: ../human-resources/hr-learning-create-closed-ended-question.md?toc=/dynamics365/finance/toc.json
-                - name: Skapa en beroende fråga
-                  href: ../human-resources/hr-learning-depending-question.md?toc=/dynamics365/finance/toc.json
-            - name: Arbetsplatssäkerhet och efterlevnad (USA)
-              items:
-                - name: Verifiering av I-9-formulär
-                  href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-form-i-9-verification.md
-                - name: Verifiera anställningskvalifikationer med formuläret I-9
-                  href: ../fin-ops-core/fin-ops/hr/localizations/tasks/employment-verification-i9-verification.md
-                - name: Ställa in dokumenttyper för 1-9-formulär
-                  href: ../fin-ops-core/fin-ops/hr/localizations/tasks/set-up-i9-document-types.md
-                - name: Uppfylla Americans with Disabilities Act
-                  href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
-                - name: Hantera arbetarnas logi
-                  href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
         - name: Rapportering och Power BI-integrationer
           items:
             - name: Rapportering och analyser med Power BI
@@ -3875,6 +3845,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/finance/toc.json
                         - name: AddDays
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/finance/toc.json
+                        - name: ChangeTimeZone
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/finance/toc.json
                         - name: DateFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/finance/toc.json
                         - name: DateTimeFormat
@@ -3901,6 +3873,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/finance/toc.json
                     - name: List
                       items:
                         - name: Lista över funktioner
@@ -4001,24 +3975,28 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/finance/toc.json
                         - name: Char
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/finance/toc.json
-                        - name: Concatenate
+                        - name: Sammanfoga
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/finance/toc.json
                         - name: Format
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/finance/toc.json
                         - name: GetEnumValueByName
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/finance/toc.json
+                        - name: GetLabelText
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getlabeltext.md?toc=/dynamics365/finance/toc.json
                         - name: GuidValue
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
                         - name: JsonValue
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-jsonvalue.md?toc=/dynamics365/finance/toc.json
-                        - name: Left
+                        - name: Vänster
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-left.md?toc=/dynamics365/finance/toc.json
                         - name: Len
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-len.md?toc=/dynamics365/finance/toc.json
                         - name: Lower
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/finance/toc.json
-                        - name: Mid
+                        - name: Medel
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/finance/toc.json
+                        - name: NewGUID
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/finance/toc.json
                         - name: NumberFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
                         - name: NumeralsToText
@@ -4139,8 +4117,10 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
                         - name: Köra format för att dynamiskt lägga till kolumner i Excel-rapporter
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
-                    - name: Designa ett ER-format för att sidnumrera skapade dokument i Excel
+                    - name: Utforma ett ER-format för att sidnumrera skapade dokument i Excel
                       href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/finance/toc.json
+                    - name: Utforma ett ER-format för att hålla samman rader på samma Excel-sida
+                      href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?toc=/dynamics365/finance/toc.json
                 - name: Utforma konfigurationer för att generera rapporter i Word-format
                   items:
                     - name: Utforma en ny ER-konfiguration för att generera rapporter i Word-format
@@ -4191,6 +4171,8 @@
                   items:
                     - name: Skapa konfigurationer för att importera data från en extern XML‑fil
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/finance/toc.json
+                    - name: Importera data från manuellt markerade filer i batchläge
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurera dataimport i batchläge från filer i SharePoint
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/finance/toc.json
                 - name: Importera filer i XML‑format
@@ -4271,6 +4253,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
                         - name: Kör rapporter
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
+                    - name: Gruppera poster och utföra inventering och summering med hjälp av GROUPBY-datakällor
+                      href: ../fin-ops-core/dev-itpro/analytics/er-groupby-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Använd genererad utdata som datakälla för att inventera och summera
                       items:
                         - name: Skapa format
@@ -4331,6 +4315,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/finance/toc.json
                 - name: Relativ sökväg i databindningar
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/finance/toc.json
+                - name: Skapa uttryck för att anropa programklassmetoder
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/design-expressions-app-class-er.md?toc=/dynamics365/finance/toc.json
             - name: Använda ER-lösningar i Finance
               items:
                 - name: Konfigurera ramverket
@@ -4409,16 +4395,20 @@
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
                 - name: API-ändringar
                   items:
-                    - name: Application update 7.3
+                    - name: Programuppdatering 7.3
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
-                    - name: Application update 10.0.11
+                    - name: Programuppdatering 10.0.11
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
-                    - name: Application update 10.0.17
+                    - name: Programuppdatering 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
-                    - name: Application update 10.0.19
+                    - name: Programuppdatering 10.0.19
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
-                    - name: Application update 10.0.21
+                    - name: Programuppdatering 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
+                    - name: Programuppdatering 10.0.23
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/finance/toc.json
+                    - name: Programuppdatering 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/finance/toc.json
                 - name: Ange anpassad lagringsplats för skapade dokument
                   items:
                     - name: Prenumerera på en händelse för att begära ett svar från en prenumerationshanterare
@@ -4431,6 +4421,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
                 - name: Ändra kod för att möjliggöra för användare att konfigurera och använda namngivna ER-destinationer
                   href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
+                - name: Implementera en anpassad ER-källa för inkommande dokument
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/finance/toc.json
         - name: Mobilapp
           items:
             - name: Startsida för mobilapp
@@ -4743,13 +4735,15 @@
               items:
                 - name: Skapa valutakursleverantörer
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-providers.md
-                - name: Skapa valutakursleverantörer i Finance and Operations version 8.0
+                - name: Skapa valutakursleverantörer i Ekonomi och drift version 8.0
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-8.md
             - name: 'Kvitta transaktioner med CustTrans::settleTransaction'
               href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md
-    - name: Utveckling och administration av Finance and Operations-appar
+    - name: Ekonomi och drift‑appar för utveckling och administration
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../human-resources/index.md
