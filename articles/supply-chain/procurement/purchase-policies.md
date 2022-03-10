@@ -1,28 +1,28 @@
 ---
 title: Inköpspolicyer – översikt
 description: Det här avsnittet innehåller information om inköpspolicyer. En inköpspolicy är en grupp regler som styr processen för inköpsrekvisition. Administratörer som är hjälper till med inköpspolicyer för anskaffning implementerar sin anskaffningsstrategi genom att skapa en policystruktur som stämmer överens med organisationens strategiska inköpskrav.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 11614
+ms.custom:
+- "11614"
+- intro-internal
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8c8fa3e4b59cdb013c1c524e06085b06905715e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3cc150ae1a912fbfb4daf505e4240786c2f380a3
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5215899"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982287"
 ---
 # <a name="purchasing-policies-overview"></a>Inköpspolicyer – översikt
 
@@ -134,7 +134,7 @@ Inköpsorderskapande och efterfrågekonsolideringsregeln definierar policyregler
 -   På fliken **Pristolerans** kan du definiera pristoleransreglerna som används för att dirigera tillbaka de godkända inköpsrekvisitionerna genom granskningsprocessen, när priset på en artikel i en intern katalog ökar. Ange maxbeloppet som nettobeloppet i en radartikel i en inköpsrekvisition kan öka, mellan den tidpunkt då inköpsrekvisitionen godkänns och tid när inköpsordern skapas. Nettobeloppet beräknas genom att använda följande formel: (\[Kvantitet × (enhetspris – rabatt) ÷ prisenhet\] + inköpstillägg) × (100 – rabatt i procent) ÷ 100 Inköpsrekvisitionsrader som överstiger pristoleransen som du anger hålls för manuell hantering. Reglerna som du konfigurerar på fliken **Bearbetningsfel** bestämmer hur inköpsrekvisitionsraderna bearbetas.
 -   På fliken **Bearbetningsfel** kan du konfigurera den bearbetningsregeln som tillämpas på en inköpsrekvisition, om den inte klarar validering under skapandet av inköpsordern, på grund av ett leverantörfel eller ett pristoleransfel. Välj ett av följande alternativ:
     -   **Ingen åtgärd** – Inköpsrekvisitionraderna återstår på sidan **Bokför godkända inköpsrekvisitioner för leverans**. Inköpsrekvisitionsradernas status är fortsatt **Godkänd**. Du måste lösas fel innan en inköpsorder kan skapas för rader i inköpsrekvisitionen.
-    -   **Annullera inköpsrekvisitionsraden** – Inköpsrekvisitionsraderna annulleras. Beställaren kan skapa en ny inköpsrekvisition för annullerade raderna, om han/hon ändå vill begära radartiklarna.
+    -   **Annullera inköpsrekvisitionsraden** – Inköpsrekvisitionsraderna annulleras. Beställaren kan skapa en ny inköpsrekvisition för annullerade raderna, om de ändå vill begära radartiklarna.
     -   **Skapa en ny inköpsrekvisitionsrad** – Inköpsrekvisitionsraderna annulleras. Nya inköpsrekvisitioner skapas sedan som bara innehåller raderna i inköpsrekvisitionen som inte klarade validering. De nya inköpsrekvisitionerna som skapas har status **Utkast**. Dessa inköpsrekvisitioner kan skickas tillbaka för granskning, efter att valideringfelen har lösts. Förberedaren för inköpsrekvisitionsraderna uppmanas om att raderna annullerades, och att nya Inköpsrekvisitioner har skapats för inköpsrekvisitionsraderna som misslyckades.
 -   På fliken **Manuellt skapande av inköpsorder** kan du definiera de parametrar som bestämmer om en inköpsrekvisition måste bearbetas manuellt, eller om den kan automatiskt konverteras till en inköpsorder. Parametrarna kan gälla för interna katalogartiklar, externa katalogartiklar eller artiklar som inte finns i kataloger. Välj ett av följande alternativ:
     -   **Skapa inköpsorder manuellt** – Skapar inköpsorder manuellt för alla inköpsrekvisitioner.

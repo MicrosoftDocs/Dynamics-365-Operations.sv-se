@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8aef33a501f43105730eaa21a9159eb1398a1b36
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 68f6bc5b30cd4d7f7eea05233348b10608a4d6e63d4b8508bdb2088f88c445dc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799575"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746002"
 ---
 # <a name="create-a-new-product-hierarchy"></a>Skapa en ny produkthierarki
 
@@ -64,7 +64,7 @@ Gör så här för att lägga till hierarkinoder.
 
 Följande bild visar skapandet av en ny produkthierarkinod.
 
-![Skapa en produkthierarki](media/create-product-hierarchy.png)
+![Skapa en produkthierarki.](media/create-product-hierarchy.png)
 
 ## <a name="other-settings"></a>Andra inställningar
 

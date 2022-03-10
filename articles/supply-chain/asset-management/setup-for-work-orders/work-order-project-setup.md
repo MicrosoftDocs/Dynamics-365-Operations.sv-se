@@ -1,12 +1,10 @@
 ---
 title: Projektinställningar för arbetsorder
 description: Det här avsnittet innehåller förklaringar av projektinställningar för arbetsorder i Tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjectSetup
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 031e61549474745360ac00f9a66bef7a9dbaaf96
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: bb897ca0a7e9c45ee55244189bb1b487fbddf0714ad3ea0cac26eb7bac36a07f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021564"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754093"
 ---
 # <a name="work-order-project-setup"></a>Projektinställningar för arbetsorder
 
@@ -71,7 +69,7 @@ Inställningen möjliggör fullständig integration med modulen **Projekthanteri
 
     Som standard är startdatumet det datum då du lägger till arbetsorderprojektet på sidan. Det styrs av fältet **Giltig från**, som är dolt som standard. Om du vill visa fältet **Giltig från** väljer du **Visa** \> **Allt**. Du kan sedan använda fältet **Giltig från** tillsammans med fältet **Slutdatum** för att ange en begränsad giltighetsperiod för arbetsorderprojektet.
 
-    ![Sidan Projektinställningar för arbetsorder](media/17-setup-for-work-orders.png)
+    ![Sidan Projektkonfiguration för arbetsorder.](media/17-setup-for-work-orders.png)
 
 6. På fliken **Projektgrupp** väljer du **Lägg till**.
 7. I fältet **arbetsordertyp** väljer du en arbetsorder.
@@ -79,9 +77,12 @@ Inställningen möjliggör fullständig integration med modulen **Projekthanteri
 9. I fältet **Projektgrupp** väljer du den projektgrupp som ska vara relaterad till arbetsordertypen. En arbetsordertyp med namnet **Förebyggande underhåll** kan till exempel associeras med en projektgrupp som har namnet **Förebyggande underh** eller **Internt**. Alternativt kan en arbetsordertyp **Investering** som används för arbetsorder som är relaterade till investeringar och anläggningstillgångar associeras med en projektgrupp med namnet **Investera** eller **Investering**.
 10. Välj **Spara**.
 
-![Sidan Projektinställningar för arbetsorder, Lägg till arbetsorder](media/18-setup-for-work-orders.png)
+![Sidan Projektkonfiguration för arbetsorder, Lägg till arbetsorder.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Varje gång en arbetsorderrad skapas söker Tillgångshantering efter en projektgrupp som ska relateras till jobbprojektet för arbetsordern. Sökningen baseras på inställningarna som beskrivs i det här avsnittet. Varje projektgrupp har en relaterad projekttyp. Projekt grupper som har projekttypen **Tid och material** eller **Fastpris** är endast giltiga för tillgångar som är relaterade till ett kundkonto.
 >
 > När det tillgängliga arbetsorderprojektet eller projektgruppen väljs i systemet för överordnade projekt och projekt grupper, baseras valet på de poster som du skapade med hjälp av föregående procedur. Tillgångshantering går igenom poster som är relaterade till arbetsorderprojektet för att söka efter en eventuell matchning. Den kontrollerar alltid den mest specifika kombinationen först. Med andra ord, för arbetsorderns överordnade projekt söker Tillgångshantering först efter en möjlig matchning för fältet **Tillgång**. Om ingen matchning hittas söker den efter en matchning för fältet **Tillgångstyp**. Om ingen matchning hittas söker den efter en matchning för fältet **Funktionsplats** och så vidare. Som du kan se i layouten på sidan **Projektinställningar för arbetsorder** innebär detta att, för att hitta den mest specifika kombinationen, kontrollerar Tillgångshantering varje post från höger till vänster för en matchning. Om det inte finns någon matchning används den standardpost där endast ett projekt-ID har valts. Du hittar den relaterade projektgruppen på samma sätt. Tillgångshantering kontrollerar först en möjlig matchning för fältet **Tillgång**, sedan fältet **Tillgångstyp** och sedan fältet **Arbetsordertyp**. Om det inte finns någon matchning används den standardpost där endast en projektgrupp har valts.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

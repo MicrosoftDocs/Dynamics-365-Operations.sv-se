@@ -2,7 +2,6 @@
 title: Konfigurera ER-format för användning av parametrar som anges per juridisk person
 description: I det här avsnittet beskrivs hur du kan konfigurera format för elektroniska rapporter (ER) att använda parametrar som anges per juridisk person.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 3802675b2fe0615f4c2ad682462a233c67f18f1a
-ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
+ms.openlocfilehash: 2bf4d1ecad3e25299df7c87ffa2236736ddcac300a5ded779616b25920745d7e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "5853503"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765842"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Konfigurera ER-format för användning av parametrar som anges per juridisk person
 
@@ -79,17 +78,17 @@ I det här exemplet ska du skapa en konfiguration för exempelföretaget, Litwar
 
     ER-formatet **Formatet för att lära sig parameteranrop** är utformat för att generera en skatterapport i XML-format som visar flera skattenivåer (vanlig, reducerad och ingen). Varje nivå har ett annat antal detaljer.
 
-    ![Flera nivåer av ER-format, format för att lära sig parameteriserade anrop](./media/RCS-AppSpecParms-ReviewFormat.PNG)
+    ![Flera nivåer av ER-format, Format för att lära sig parameteriserade anrop.](./media/RCS-AppSpecParms-ReviewFormat.PNG)
 
 5.  På fliken **mappning** expanderar du objekten **modell**, **data** och **sammanfattnings**.
 
     Datakällan **Model.Data.Summar** returnerar listan över skattetransaktioner. Transaktionernas sammanfattas per skattekod. För den här datakällan har det beräknade fältet **Model.Data.Summary.Level** konfigurerats att returnera koden för skattenivån för respektive summerad post. För alla skattekoder som kan hämtas från datakällan **Model.Data.Summary** vid körning returnerar det beräknade fältet beskattningsnivåskod (**normal**, **reducerad**, **ingen** eller **annan**) som textvärde. Det beräknade fältet **Model.Data.Summary.Level** används för att filtrera poster av datakällan **Model.Data.Summary** och ange de filtrerade data i varje XML-element representerar en beskattningsnivå genom att använda fältet **Model.Data2.Level1**, **Model.Data2.Level2** och **Model.Data2.Level3**.
 
-    ![Datakällan Model.Data.Summar listan över skattetransaktioner](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
+    ![Datakällelistan Model.Data.Summary för skattetransaktioner.](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
     Det beräknade fältet **Model.Data.Summary.Level** har konfigurerats så att det innehåller ett ER-uttryck. Skattekoder (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** och **InVAT0**) är hårdkodade i denna konfiguration. Därför beror detta ER-format på den juridiska person där dessa skattekoder har konfigurerats.
 
-    ![Beräknat fält Model.Data.Summary.Level med hårdkodade skattekoder](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
+    ![Beräknat fält Model.Data.Summary.Level med hårdkodade skattekoder.](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
     Om du vill stödja en annan uppsättning skattekoder för varje juridisk person måste du göra följande:
 
@@ -129,7 +128,7 @@ Nu ska du lägga till en ny uppräkning för ER-format. Värdena i detta formatu
 12. Välj **Lägg till** igen.
 13. Skriv **Utdata** i fältet **Andra**.
 
-    ![Ny post på sidan formatuppräkningar](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
+    ![Ny post på sidan Formatuppräkningar.](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
 
     Eftersom olika språk används i affärsanvändarna för att ange uppsättningar av skattekoder som är beroende av den juridiska personen rekommenderar vi att du översätter värdena för denna uppräkning till de språk som är konfigurerade som prioriterade språk för dessa användare i Finance.
 
@@ -142,7 +141,7 @@ Nu ska du lägga till en ny uppräkning för ER-format. Värdena i detta formatu
 20. I fältet **Översatt text** anger du **keine Besteuerung**.
 21. Välj **översätt**.
 
-    ![Textöversättningsbild ut](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
+    ![Textöversättningsbild ut.](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
 
 22. Välj **Spara**.
 23. Stäng sidan **formatuppräkningar**.
@@ -169,13 +168,13 @@ Därefter ska du lägga till en ny datakälla som anger hur affärsanvändare sk
 10. Välj objektet **Model.Data.Tax.Code**.
 11. Välj knappen **Lägg till** (högerpilen).
 
-    ![Kolumner bild ut](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
+    ![Kolumner skjuts ut.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
 
     Du har precis angett att för varje regel som anges i denna datakälla för erkännande av beskattningsnivå måste en företagsanvändare välja en av skattekoderna som villkor. Listan över skattekoder som affärsanvändaren kan välja returneras av datakällan **Model.Data.Tax**. Eftersom datakällan innehåller fältet **namn** visas namnet på skattekoden för varje momskodvärde i sökningen som visas för affärsanvändaren.
     
 12. Välj **OK**.
 
-    ![Sökdesignersida](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
+    ![Sökdesignersida.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
 
     Affärsanvändare kan lägga till flera regler som poster i den här datakällan. Varje post kommer att numreras med en radkod. Regler kommer att utvärderas i stigande ordning på radnumret.
 
@@ -189,13 +188,13 @@ Därefter ska du lägga till en ny datakälla som anger hur affärsanvändare sk
 
     Lägg märke till att du har lagt till en ny datakälla som returnerar skattenivån som värdet i **listan över beskattningsnivåer** formatberäkning för eventuella skattekoder som skickas till datakällan som argument till parametern **Kod** för datatypen **sträng**.
     
-    ![Formatdesignersida med ny datakälla](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
+    ![Formatdesignersida med ny datakälla.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
     Utvärderingen av konfigurerade regler beror på datatypen för de fält som har valts att definiera villkoren för dessa regler. När du väljer ett fält som är konfigurerat som ett fält av datatypen **numerisk** eller **datum**, skiljer sig villkoren från kriterierna som beskrevs tidigare för datatypen **sträng**. För fälten **numerisk** och **datum** måste regeln anges som ett värdeintervall. Regelns villkor kommer då att betraktas som uppfyllt när ett värde som skickas till datakällan finns i det konfigurerade intervallet.
     
     Följande illustration visar ett exempel på den här typen av inställning. Förutom fältet **Model.Data.Tax.Code** för datatypen **Sträng** används fältet **Model.Tax.Summary.Base** för datatypen **Real** används för att ange villkor för en datakälla för sökning.
     
-    ![Sökdesignersida med ytterligare kolumner](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
+    ![Sökdesignersida med ytterligare kolumner.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
 
     Eftersom fälten **Model.Data.Tax.Code** och **Model.Tax.Summary.Base** markeras för den här datakälla för sökning konfigureras varje regel för den här datakällan på följande sätt:
     
@@ -224,7 +223,7 @@ Eftersom olika språk används i affärsanvändarna för att ange uppsättningar
 9.  Välj **översätt**.
 10. Välj **OK**.
 
-    ![Datakällsegenskaper bild ut](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
+    ![Datakällsegenskaper skjuts ut.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
 
 ### <a name="add-a-new-field-to-consume-the-configured-lookup"></a>Lägg till ett nytt fält för att förbruka det konfigurerade uppslaget
 
@@ -237,12 +236,12 @@ Eftersom olika språk används i affärsanvändarna för att ange uppsättningar
 7.  I **fältet formel**, ange **Model.Selector(Model.Data.Summary.Code)**.
 8.  Välj **Spara**.
 
-    ![Lägga till Model.Selector(Model.Data.Summary.Code) till sidan Formeldesigner](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
+    ![Lägga till Model.Selector(Model.Data.Summary.Code) på sidan Formeldesigner.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
 
 9.  Stäng sidan **receptredigering**.
 10. Välj **OK**.
 
-    ![Formatdesignersida med ny formel tillagd](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
+    ![Formatdesignersida med ny formel tillagd.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
 
     Observera att det beräknade fältet **LevelByLookup** som du har lagt till kommer att återge beskattningsnivån som värdet på formatuppräkningen **Lista över beskattningsnivåer** för varje sammanfattad skattetransaktionspost. Skattekoden för posten skickas till datakälla för sökning **Model.Selector** och uppsättningen med regler för den här datakällan används för att välja korrekt beskattningsnivå.
 
@@ -270,7 +269,7 @@ Därefter ska du ändra det befintliga beräknade fältet så att det använder 
 
 4.  I fältet **Formula** ange **CASE(@.LevelByLookup, TaxationLevel.'Regular taxation', "Regular", TaxationLevel.'Reduced taxation', "Reduced", TaxationLevel.'No taxation', "None", "Other")**.
 
-    ![ER-åtgärdsdesignersida](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
+    ![ER-åtgärdsdesignersida.](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
     
     Notera att uttrycket tillhörande fältet **Model.Data.Summary.Level** returnerar skattenivån, baserat på den aktuella postens skattekod och den uppsättning regler som en företagsanvändare konfigurerar i sökningsdatakällan **Model.Data.Selector**.
     

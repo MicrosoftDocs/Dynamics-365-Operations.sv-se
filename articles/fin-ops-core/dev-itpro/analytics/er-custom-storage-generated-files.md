@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894158"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594919"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Ange anpassade lagringsplatser för genererade dokument
 
@@ -41,7 +41,7 @@ Alla uppgifter i det här avsnittet kan slutföras i företaget **USMF**.
 
 För att generera de dokument som du planerar att lägga till en anpassad lagringsplats för [importerar](er-download-configurations-global-repo.md) du ER-formatkonfigurationen för **uppdateringsrapport för anläggningstillgång** till den aktuella topologin.
 
-![Sidan Konfigurationsdatabas](./media/er-custom-storage-generated-files-import-format.png)
+![Sidan Konfigurationsdatabas.](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>Kör rapporten för Uppdateringsrapport för anläggningstillgång
 
@@ -52,7 +52,7 @@ För att generera de dokument som du planerar att lägga till en anpassad lagrin
 5. I fältet **Formatmappning** väljer du **Uppdateringsrapport för anläggningstillgång**.
 6. Välj **OK**.
 
-![Körningsdialogruta för rapport om Uppdateringsrapport för anläggningstillgång](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![Körningsdialogruta för Uppdateringsrapport över anläggningstillgångar.](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 I Microsoft Excel granskar du det utgående dokument som genereras och är tillgängligt för hämtning. Detta är [standardbeteendet](electronic-reporting-destinations.md#default-behavior) för ett ER-format som inte är konfigurerat för [destinationer](electronic-reporting-destinations.md) och som körs i interaktivt läge.
 
@@ -255,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Ändra den befintliga `AssetRollForwardService`-klassen och skriv kod för att ställa in en anpassad destinationsfabrik för rapportköraren. Observera att den programbaserade parametern som anger en målmapp skickas när en anpassad destinationsfabrik skapas. På så sätt används den målmappen för att lagra genererade filer.
 
     > [!NOTE] 
-    > Kontrollera att den angivna mappen (**c:\\0** i det här exemplet) finns i det lokala filsystemet på servern där AOS-tjänsten körs. I annat fall kommer ett [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1)-undantag att skapas vid körning.
+    > Kontrollera att den angivna mappen (**c:\\0** i det här exemplet) finns i det lokala filsystemet på servern där AOS-tjänsten körs. I annat fall kommer ett [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception)-undantag att skapas vid körning.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;

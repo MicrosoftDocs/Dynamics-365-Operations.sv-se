@@ -1,26 +1,23 @@
 ---
 title: Bearbeta rabatter för betalning
 description: I den här proceduren visas hur du konverterar godkända och bearbetade kundrabatter till kreditfakturor.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 11/10/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 981068d26d232b10efd8d7288daaf7358aee3728
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5ce813f0f5d9aa750828b524dd9fdf9b4a9f0854
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437793"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572491"
 ---
 # <a name="process-rebates-for-payment"></a>Bearbeta rabatter för betalning
 
@@ -51,3 +48,6 @@ I den här proceduren visas hur du konverterar godkända och bearbetade kundraba
     * Observera att en transaktion för negativt belopp som motsvarar det totala rabattbeloppet utan fakturareferens har lagts till kundbalansen.   
 15. Klicka på Avbryt.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

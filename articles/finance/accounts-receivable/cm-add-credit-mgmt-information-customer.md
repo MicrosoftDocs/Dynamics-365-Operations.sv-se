@@ -1,12 +1,10 @@
 ---
 title: Lägg till information för kredithantering för kunder
 description: I det här avsnittet beskrivs hur du lägger till information om kredithantering för en kund.
-author: mikefalkner
-manager: AnnBe
+author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a04180a5dbec1e08d0149beeed0495a0d13af76c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3c8584c33b4f77b6d1f5a4dc0d62208b76b3ffa3
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971738"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753980"
 ---
 # <a name="add-credit-management-information-for-customers"></a>Lägg till information för kredithantering för kunder
 
@@ -101,3 +99,6 @@ Du kan skapa försäkringsbrev och garantier på sidan **alla kunder** (**kundre
     I det här fallet är den effektiva kreditgränsen 125 000 (= A + \[B × C\]).
     
     Om du däremot markerar kryssrutan **inkluderad i exponering** tas värdet **Uppdatera kreditgräns** på 50 000 (= 50,00 procent av 100 000) bort och exponeringsvärdet är 75 000 (= A + \[B × C\] – B).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

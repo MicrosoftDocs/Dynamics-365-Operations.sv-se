@@ -1,29 +1,28 @@
 ---
 title: Upphandling och inköp – översikt
 description: Det här avsnittet ger en översikt över de funktioner som är tillgängliga i modulen Anskaffning och källa.
-author: mkirknel
-manager: tfehr
+author: Henrikan
 ms.date: 05/06/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: 58021
+ms.custom:
+- "58021"
+- intro-internal
 ms.assetid: eea24e23-a803-4de0-a218-6485757cde1b
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7de9430ddcc2499627bacfa01b4dc7fd5546a4d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: e7be7696716e887a7fa4ea4af234db20c6e161b5
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4437995"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984230"
 ---
 # <a name="procurement-and-sourcing-overview"></a>Upphandling och inköp – översikt
 
@@ -93,3 +92,6 @@ Fakturerade inköpsorder bokförs som skuld på leverantörens konto i leverant�
 ## <a name="vendor-performance"></a>Leverantörsprestanda
 
 Prestanda och granskning av inköp stöds genom *upphandlings- och leverantörsreskontrarapporter*, som inkluderar kostnadsanalys och leverantörens resultatanalys.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

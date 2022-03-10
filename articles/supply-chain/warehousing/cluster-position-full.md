@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 2da0421bdb1496d51c807e51a26a980238886a42dfec167dac95611cc3df97bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730044"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102848"
 ---
 # <a name="cluster-position-full"></a>Klusterposition full
 
@@ -28,14 +28,11 @@ Funktionen *Klusterposition full* erbjuder ett alternativ till en striktare till
 
 Med den här funktionen kan du köra knappen **Full** på en av arbetsenheterna i ett kluster. I äldre versioner är det här alternativet bara tillgängligt för plockning med vanlig order, inte för klusterplockning. Den här funktionen skiljer sig emellertid från standardknappen **full** för alla på så vis att den avbryter det återstående arbetet. Det föreslår inte att användaren lägger till en annan lagerplats i samma kluster och det nya arbetet skapas inte automatiskt.
 
-## <a name="turn-on-the-cluster-position-full-feature"></a>Aktivera funktionen för klusterposition full
+## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>Aktivera eller inaktivera funktionen för klusterposition full
 
-Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+De funktioner som beskrivs i det här avsnittet måste funktionen *Klusterposition full* vara inaktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Klusterposition full* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- **Modul:** *Lagerstyrning*
-- **Funktionsnamn:** *Klusterposition full*
-
-## <a name="setup"></a>Ställ in
+## <a name="setup"></a>Inställningar
 
 Det här avsnittet innehåller riktlinjer och ett exempel som visar hur du ställer in och använder funktion *Klusterposition full*.
 

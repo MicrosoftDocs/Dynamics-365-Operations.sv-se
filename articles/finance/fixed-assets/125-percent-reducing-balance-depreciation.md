@@ -1,35 +1,32 @@
 ---
 title: 125 procent degressiv avskrivning
-description: Den här avsnittet ger en översikt över 125-procentsmetoden för degressiv avskrivning.
-author: saraschi2
-manager: AnnBe
+description: Det här ämnet ger en översikt över 125-procentsmetoden för degressiv avskrivning.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13871
 ms.assetid: 3abc263e-59d6-4f1a-986d-1be388948bd3
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5af050fb6099b583be4e9c60ba56dacf38d31c08
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 605f9fd3dea02e01c2c49b8e1a6cc52310132304
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448126"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883528"
 ---
 # <a name="125-percent-reducing-balance-depreciation"></a>125 procent degressiv avskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Den här avsnittet ger en översikt över 125-procentsmetoden för degressiv avskrivning.
+Det här ämnet ger en översikt över 125-procentsmetoden för degressiv avskrivning.
 
 När du ställer in en avskrivningsprofil för anläggningstillgångar och väljer **125 % degressiv avskrivning** i fältet **Metod** på sidan **Avskrivningsprofiler** skrivs tillgångarna som tilldelas den här avskrivningsprofilen av med samma procentsats under varje avskrivningsperiod. Denna procentsats beräknas baserat på tillgångens tjänstelivstid. Om till exempel en tillgång har en tjänstelivstid på fem år, beräknas procentsatsen som 25 procent (125 % ÷ 5).
 
@@ -58,7 +55,7 @@ Om du väljer **Kalender** som avskrivningsår finns följande alternativ i fäl
 
 Om du väljer **Räkenskapsår** i fältet **Avskrivningsår**, beräknas 125 % degressiv avskrivning baserat på räkenskapsåret för räkenskapskalendern som angetts för boken, eller för den räkenskapskalender som har valts på sidan **Huvudbok**. Räkenskapskalendrar ställs in på sidan **Räkenskapskalendrar**. 
 
-För räkenskapsåret 1 juli - 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras automatiskt för varje period och längden på nästa räkenskapsår bestäms av perioderna som ställs in på sidan **Räkenskapskalendrar**. 
+För räkenskapsåret 1 juli – 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras automatiskt för varje period och längden på nästa räkenskapsår bestäms av perioderna som ställs in på sidan **Räkenskapskalendrar**. 
 
 Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ i fältet **Periodfrekvens**:
 
@@ -67,7 +64,7 @@ Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ 
 
 ## <a name="example-of-125-reducing-balance-depreciation"></a>Exempel på en degressiv avskrivning på 125 %
 
-|                                |        |
+| &nbsp;                         | &nbsp; |
 |--------------------------------|--------|
 | Anskaffningskostnad               | 11 000 |
 | Skrotvärde                  | 1 000  |
@@ -75,7 +72,7 @@ Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ 
 | Antal tjänsteår             | 5      |
 | Årlig avskrivningsprocent | 25 %    |
 
-Den degressiva avskrivningsmetoden på 125 % delar 125 procent med tjänstelivstiden i år. Den procenten multipliceras med anläggningstillgångens bokförda nettovärde för att bestämma årets avskrivningsbelopp.
+Den degressiva avskrivningsmetoden på 125 % delar 125 procent med tjänstelivstiden i år. Den procenten multipliceras med anläggningstillgångens bokförda nettovärde för att bestämma årets avskrivningsbelopp.
 
 | Period | Beräkning av årligt avskrivningsbelopp | Bokfört värde                    | Bokfört nettovärde i slutet av året |
 |--------|-----------------------------------------------|-------------------------------|---------------------------------------|
@@ -88,3 +85,6 @@ Den degressiva avskrivningsmetoden på 125 % delar 125 procent med tjänstelivs
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

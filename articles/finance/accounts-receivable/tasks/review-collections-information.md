@@ -2,11 +2,9 @@
 title: Granska inkasseringsinformation
 description: I den här avsnittet förklaras hur du granskar inkassoinformation samt olika inställningsalternativ och inkassotransaktioner.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9bbfb6537118a9936c127018427b0516e7ea002a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 59fcaef39460761dbe68273aecb5cbff8850ef031d43393277a17d07dd92db3b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971538"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778396"
 ---
 # <a name="review-collections-information"></a>Granska inkasseringsinformation
 
@@ -142,3 +140,6 @@ I den här avsnittet förklaras hur du granskar inkassoinformation samt olika in
 5. Välj **Visa lista**.
 - Markera ett kundkonto eller acceptera standardvärdet. Som standard är det här det valda kundkontot på listsidan eller i formuläret från vilket du öppnade det här formuläret. Om du öppnade formuläret från en listsida, kunderna i listan är de kunder som ingår i inkassopoolen som används på listsidan.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,28 +1,28 @@
 ---
 title: Fakturamatchning för leverantörsreskontra – översikt
 description: Fakturamatchning i leverantörsreskontra är den process där information om leverantörsfaktura, inköpsorder och produktinleverans matchas.
-author: abruer
-manager: AnnBe
+author: sunfzam
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 27361
+ms.custom:
+- "27361"
+- intro-internal
 ms.assetid: 9f3dace7-05d8-4974-8f85-aca2e224876c
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2cfdd8f90fec23341cd9c5606cf0cc2ee005a5c6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a7ffcd731b127b9a51551d4fe966dcfd69a34e54
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4995751"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984087"
 ---
 # <a name="accounts-payable-invoice-matching-overview"></a>Fakturamatchning för leverantörsreskontra – översikt
 
@@ -48,7 +48,7 @@ Du kan använda följande typer av fakturamatchning för leverantörsreskontra:
 
 Tvåvägsmatchning och trevägsmatchning matchar alltid prisinformation baserat på enhetspriset. Du kan även konfigurera dessa matchningspolicyer för att matcha prisinformation baserat på prissumman.
 -   Matchning av nettopris per enhet – Matcha prisinformation för tvåvägsmatchning eller trevägsmatchning genom att jämföra nettopriset per enhet för varje rad på fakturan med motsvarande nettopris per enhet på inköpsordern. Nettopriset per enhet beräknas med följande formel: nettobeloppet på raden dividerat med kvantiteten för raden.
--   Matchning av prissumma – Matcha prisinformation för tvåvägsmatchning eller trevägsmatchning genom att jämföra nettobelopp (prissumma) för varje rad på fakturan med motsvarande nettobelopp på inköpsordern. Nettobeloppet beräknas med följande formel: *(Enhetspris \* Radkvantitet) + Radavgifter – Radrabatter*. När du matchar prissummor efter procent jämför systemet värden i transaktionsvalutan. När du matchar prissummor efter belopp jämför systemet värden med redovisningsvalutan.
+-   Matchning av prissumma – Matcha prisinformation för tvåvägsmatchning eller trevägsmatchning genom att jämföra nettobelopp (prissumma) för varje rad på fakturan med motsvarande nettobelopp på inköpsordern. Nettobeloppet beräknas med följande formel: *(Enhetspris \* Radkvantitet) + Radavgifter – Radrabatter*. När du matchar prissummor efter procent jämför systemet värden i transaktionsvalutan. När du matchar prissummor efter belopp jämför systemet värden med redovisningsvalutan. När du delvis fakturerar en inköpsorderrad, sker valideringen av prissummor-matchning på den senaste fakturan för den raden. 
 
 Vanligtvis utförs fakturamatchningsberäkningar när du redigerar leverantörsfakturor på sidan Leverantörsfaktura. Alternativt kan fakturamatchning utföras vid behov om det behövs. Fakturamatchning vid behov kontrolleras för den juridiska personen av Uppdatera status för fakturahuvud automatiskt som Till på sidan Parametrar för leverantörsreskontra på fliken Fakturavalidering. Fakturamatchningen kan också utföras som en del av fakturagranskningsprocessen. Du kan visa resultaten från fakturamatchningen på sidan Leverantörsfaktura och relaterade fakturamatchningssidor.
 
@@ -193,3 +193,6 @@ Mer information finns i [Trevägsmatchningspolicyer](three-way-matching-policies
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

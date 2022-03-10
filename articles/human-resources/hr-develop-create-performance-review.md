@@ -1,27 +1,29 @@
 ---
 title: Skapa resultatöversyner
 description: I det här avsnittet förklarar vi hur du skapar en resultatöversyn och beskriver syftet för varje del av granskningen.
-author: andreabichsel
-ms.date: 05/05/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: acbfcadb32d3bfb66d290b89e3c90124f80a1be8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9c3ab4e769008bd8b401967e454aa6402f013773
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805596"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066960"
 ---
 # <a name="create-performance-reviews"></a>Skapa resultatöversyner
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -66,17 +68,17 @@ I det här avsnittet förklarar vi hur du skapar en resultatöversyn och beskriv
 30. Välj fliken **Värderingar**.  
 
     - Snabbfliken för **Bedömningsinformation** låter medarbetarna bedöma sig själva och chefen bedöma medarbetaren. Om vikter används kommer det viktade värdet av poängen att beräknas automatiskt.  
-    - Aktivera parameterinställningarna för att visa medarbetarbedömningar för att visa detta avsnitt.  
+    - Om du vill visa det här avsnittet aktiverar du parameterinställningarna för visning av medarbetaromdömen på sidan **Delade personalparametrar**.  
 
-31. Välj fliken **Godkännanden**. Om granskningen använder arbetsflöden kommer godkännandena att visas först när arbetsflödet är färdigt. Om ingen arbetsflöde används kommer både arbetaren och chefen att anges här. Den obligatoriska kryssrutan väljs utifrån inställningarna för granskningstypen.  
+31. Välj fliken **Godkännanden**. Om granskningen använder arbetsflöden kommer godkännandena att visas först när arbetsflödet är färdigt. Om ingen arbetsflöde används kommer både arbetaren och chefen att anges här. Kryssrutan **Obligatoriskt** för **Godkännanden** väljs utifrån inställningarna för granskningstypen.  
 32. Välj fliken **Allmänt**.
 
     - Resultatperioden skapar förvalda start- och slutdatum. Dessa datum kan redigeras.  
-    - Statusen reglerar åtkomsten till granskningen. Statusen **Inte startad** låter alla redigera granskningen. Statusen **Pågår** låter endast medarbetaren granska och redigera granskningen. **Klar för granskning** tillåter endast chefen att visa och redigera granskningen. Statusen **Slutlig granskning** låter både medarbetaren och chefen visa granskningen och även redigera den, om detta har ställts in i granskningstypen. Statusen **Slutförd** och **Avbruten** skrivskyddar granskningen. Om en granskning är **Avvisad** och skickas tillbaka till medarbetaren kan både medarbetaren och chefen göra nödvändiga ändringar så att medarbetaren kan skicka in på nytt.
+    - Statusen reglerar åtkomsten till granskningen. Statusen **Inte startad** låter alla redigera granskningen. Statusen **Pågår** låter endast medarbetaren granska och redigera granskningen. **Klar för granskning** tillåter endast chefen att visa och redigera granskningen. Status för **Slutlig granskning** ger både medarbetaren och chefen möjlighet att visa och redigera granskningen om alternativet **Tillåt redigering i slutgiltig granskning** har valts i granskningstypen. Statusen **Slutförd** och **Avbruten** skrivskyddar granskningen. Om en granskning är **Avvisad** och skickas tillbaka till medarbetaren kan både medarbetaren och chefen göra nödvändiga ändringar så att medarbetaren kan skicka in på nytt.
 
 33. Ange ett värde i fältet **Översikt**.
 34. Välj fliken **Granska**. I takt med att granskningen fortskrider genom de olika stadierna, kan medarbetaren och chefen lägga till kommentarer för respektive mål eller kompetens.  
-35. Välj fliken **Godkännanden**. Arbetaren och chefen kan godkänna granskningen. När alla erforderliga godkännande har slutförts ändras statusen till **Slutfört**, och inga fler ändringar kan genomföras.  
+35. Välj fliken **Godkännanden**. Arbetaren och chefen kan godkänna granskningen. När alla erforderliga godkännanden har slutförts ändras statusen till **Slutfört**, och inga fler ändringar kan genomföras.  
 
 
 

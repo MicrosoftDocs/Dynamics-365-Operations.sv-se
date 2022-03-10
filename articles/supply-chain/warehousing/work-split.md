@@ -2,28 +2,27 @@
 title: Arbetsdelning
 description: Det här avsnittet innehåller information om funktionen arbetsdelning. Med den här funktionen kan du dela upp stora arbetsorder i flera mindre arbetsorder som du sedan kan tilldela till flera lagerarbetare. På så sätt kan samma arbete plockas samtidigt av flera lagerarbetare.
 author: mirzaab
-manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e74b630e72d70829938f0f34efd624509b1ba7c3
-ms.sourcegitcommit: 531be324bf706ca727d777720df899d6ddd3c2d7
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "4438142"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778267"
 ---
 # <a name="work-split"></a>Arbetsdelning
+
+[!include [banner](../includes/banner.md)]
 
 Med funktion för arbetsdelning kan du dela stora arbets-ID (det vill säga arbetsorder som har flera rader) i flera mindre arbets-ID som du sedan kan tilldela till flera lagerarbetare. På så sätt kan samma nummer för arbetsskapande plockas samtidigt av flera lagerarbetare.
 
@@ -34,9 +33,9 @@ Med funktion för arbetsdelning kan du dela stora arbets-ID (det vill säga arbe
 
 Innan du kan använda funktionen för delning av resurser måste du aktivera funktionen och dess nödvändiga funktion i systemet. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs.
 
-Börja med att aktivera funktionen *Arbetsspärr för hela organisationen* om den inte redan är aktiverad. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+Börja med att aktivera funktionen *Arbetsspärr för hela organisationen* om den inte redan är aktiverad. Från och med version 10.0.21 av Supply Chain Management är den här funktionen obligatorisk, varför den är aktiverad som standard och inte kan stängas av igen. Funktionen anges emellertid fortfarande i [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) på följande sätt:
 
-- **Modul:** *Lagerstyrning*
+- **Modul:** *Warehouse management*
 - **Funktionsnamn:** *Arbetsspärr för hela organisationen*
 
 > [!NOTE]
@@ -54,7 +53,7 @@ Funktionen *Arbetsdelning* lägger till följande två knappar på **Arbete** i 
 - **Dela arbetsuppgift** – Dela aktuellt arbets-ID i flera mindre arbete-ID som kan bearbetas av olika personer.
 - **Avbryt arbetsdelningssession** – Avbryt arbetssessionen för arbetet och gör arbetet tillgängligt för bearbetning.
 
-![Knappar för dela upp arbete och avbryt arbetsdelningssessioner](media/Work_split_buttons.png "Knappar för dela upp arbete och avbryt arbetsdelningssessioner")
+![Knappar för Dela upp arbete- och Avbryt arbetsdelning-sessioner.](media/Work_split_buttons.png "Knappar för dela upp arbete och avbryt arbetsdelningssessioner")
 
 > [!IMPORTANT]
 > Knappen **Dela arbete** är inte tillgänglig om något av följande villkor är uppfyllt:
@@ -70,7 +69,7 @@ Funktionen *Arbetsdelning* lägger till följande två knappar på **Arbete** i 
 >
 > - Arbetet håller på att delas av en annan användare. Om du försöker öppna delningssidan för arbete som redan delas av en annan användare visas följande felmeddelande: "arbetet med ID \#\#\#\# håller på att delas. Försök igen om några minuter. Kontakta en arbetsledare om du fortsätter att få det här meddelandet".
 
-Ett nytt arbetsblockerande skäl *Dela arbete* anger när arbets-ID håller på att delas. Den visas både på sidan **Dela arbete** och i distributionslagerappen om en användare försöker köra arbetet. När spärrningsorsaker används ändras namnet på fältet **spärrad påfyllnad** från arbets-ID till **spärrat**.
+Ett nytt arbetsblockerande skäl *Dela arbete* anger när arbets-ID håller på att delas. Den visas både på sidan **Dela arbete** och i mobilappen för distributionslagerhantering om en användare försöker köra arbetet. När spärrningsorsaker används ändras namnet på fältet **spärrad påfyllnad** från arbets-ID till **spärrat**.
 
 ## <a name="initiate-a-work-split"></a>Starta en arbetsdelning
 
@@ -97,7 +96,7 @@ Om du vill dela arbete följer du stegen nedan.
 
     Fältet **Arbetsblockerande skäl** för aktuellt arbete kommer att anges till *Delat arbete* och arbetet blockeras. 
 
-    ![Spärrningsorsak](media/Blocking_reason.png "Spärrningsorsak")
+    ![Spärrningsorsak.](media/Blocking_reason.png "Spärrningsorsak")
 
 1. Markera de rader som du vill ta bort från aktuellt arbets-ID och lägg till i ett nytt arbets-ID. Då inträffar följande händelser:
 
@@ -126,7 +125,7 @@ Om du vill dela arbete följer du stegen nedan.
 
 1. Klicka på **Dela arbete** i åtgärdsfönstret.
 
-När arbetet delas upp visas följande meddelande: "bearbetningsåtgärd - dela arbete". Även om det här meddelandet visas kan du avbryta åtgärden genom att välja **Avbryt** i meddelanderutan.
+När arbetet delas upp visas följande meddelande: "bearbetningsåtgärd – dela arbete". Även om det här meddelandet visas kan du avbryta åtgärden genom att välja **Avbryt** i meddelanderutan.
 
 Om kryssrutan **Visa alla rader** är avmarkerad visas inte längre den rad som delades och annullerades i rutnätet. Om kryssrutan är markerad bör du se att värdet i fältet **Arbetsstatus** för den raden har ändrats till *Annullerat*.
 
@@ -148,10 +147,13 @@ För att slutföra delningsarbetet måste spärrningsorsak *Dela arbete* tas bor
 
 När blockeringsorsaken *Delat arbete* tas bort kan arbetet köras på den mobila enheten, förutsatt att **Blockerat** tillstånd är inställt på *Nej* på arbets-ID.
 
-## <a name="user-blocking-on-the-warehouse-app"></a>Användarspärr i distributionslagerappen
+## <a name="user-blocking-on-the-warehouse-management-mobile-app"></a>Användarblockering i mobilappen för distributionslagerhantering
 
-Om du försöker använda distributionslagerappen för att köra plockningsarbete mot ett arbets-ID som redan delas av en annan användare visas följande felmeddelande: "arbetet med ID \#\#\#\# håller på att delas. Om du får detta meddelande väljer du **Avbryt**. Därefter kan du fortsätta att bearbeta annat arbete.
+Om du försöker använda mobilappen för distributionslagerhantering för att köra plockningsarbete mot ett arbets-ID som redan delas av en annan användare visas följande felmeddelande: "arbetet med ID \#\#\#\# håller på att delas. Om du får detta meddelande väljer du **Avbryt**. Därefter kan du fortsätta att bearbeta annat arbete.
 
 ## <a name="other-blocked-operations"></a>Andra blockerade operationer
 
 Alla operationer som ändrar arbetsrader, arbetslagertransaktioner eller lagerpåfyllnadslänkar som är relaterade till arbete som delas kommer att misslyckas, och följande felmeddelande visas: "arbetet med ID håller \#\#\#\# just nu på att delas."
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

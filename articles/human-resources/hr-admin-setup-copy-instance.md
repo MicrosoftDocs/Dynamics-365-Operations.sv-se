@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 44df05083cd3c91e5dcbdb3062665c2145d92a7e
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 22aa33135535d543eb8fe437821cab7a4865d6df
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889822"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060841"
 ---
 # <a name="copy-an-instance"></a>Kopiera en instans
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Du kan använda Microsoft Dynamics Lifecycle Services (LCS) för att kopiera en Microsoft Dynamics 365 Human Resources-databas till en miljö i begränsat läge. Om du har en annan miljö med begränsat läge kan du även kopiera databasen från den miljön till en miljö med begränsat läge.
 
@@ -53,9 +52,9 @@ Följande händelser inträffar när du kopierar en personaldatabas:
 
 - Dokument i Microsoft Azure Blob-lagring kopieras inte från en miljö till en annan. Därför kopieras inte de kopplade dokumenten och mallarna och de blir kvar i källmiljön.
 
-- Alla användare förutom administratören och andra interna användarkonton kommer inte att vara tillgängliga.​ Administratörsanvändaren kan ta bort eller dölja data innan andra användare tillåts tillbaka till systemet.
+- Alla användare utom de som har säkerhetsrollen Systemadministratör och andra interna tjänsteanvändarkonton är inte tillgängliga. Administratörsanvändaren kan ta bort eller dölja data innan andra användare tillåts tillbaka till systemet.
 
-- Administratörsanvändaren måste göra obligatoriska konfigurationsändringar, t.ex. återansluta integreringsslutpunkter för specifika tjänster eller URL:er.
+- Alla användare med säkerhetsrollen "Systemadministratör" måste göra obligatoriska konfigurationsändringar, t.ex. återansluta integreringsslutpunkter för specifika tjänster eller URL:er.
 
 ## <a name="copy-the-human-resources-database"></a>Kopiera databasen för personal
 
@@ -72,11 +71,11 @@ Om du vill slutföra den här uppgiften kopierar du först en instans och loggar
 
 4. I åtgärdsfönstret **Kopiera en instans** välj instansen som ska skrivas över och välj sedan **Kopiera**. Vänta tills värdet på fältet **Kopieringsstatus** uppdateras till **Slutförd**.
 
-   ![[Välj instans som ska skrivas över](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Välj den instans som ska skrivas över.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Välj **Power Platform** och logga in på administrationscenter för Microsoft Power Platform.
 
-   ![[Välj Power Platform](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Välj Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Markera den Power Apps-miljö du vill kopiera och välj sedan **kopiera**.
 
@@ -112,7 +111,7 @@ Vissa av elementen kopieras inte eftersom de är miljöspecifika. Exempel inneh�
 
 Dessutom ändras följande statusvärden när du kopierar en instans:
 
-- Alla användare utom administratören har **inaktiverats**.
+- Alla användare utom de med säkerhetsrollen "Systemadministratör" ställs in på **Inaktiverad**.
 
 - Alla batchjobb, förutom vissa systemjobb, ställs in på **undanhålla**.
 

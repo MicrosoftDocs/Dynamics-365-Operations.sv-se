@@ -2,26 +2,23 @@
 title: EUR-00015 Registrering av moms-ID för leverantör
 description: I den här proceduren visas hur du lägger till momsregistrerings-ID och momsbefrielsenummer i ett leverantörskonto.
 author: v-oloski
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, LogisticsPostalAddress, RegNumTaxIdLookup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5126868038801091c7a9c17eee78e31db322cbb7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f53cde5a8e976a1a01a5f6688c8a4f986d5317ab5acba98a47abb724982b6e8b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408617"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735434"
 ---
 # <a name="eur-00015-registration-of-vendor-vat-id"></a>EUR-00015 Registrering av moms-ID för leverantör
 
@@ -64,3 +61,6 @@ Innan du kan slutföra denna procedur måste du skapa moms-ID:n. Den här proced
 25. Ange eller välj ett värde i fältet Momsregistreringsnummer.
 26. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

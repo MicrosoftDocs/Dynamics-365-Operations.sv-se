@@ -1,26 +1,24 @@
 ---
 title: Importera ISO20022-filer
 description: Det här avsnittet beskriver hur du importerar betalningsfiler ISO 20022 camt.054 och pain.002 format i Microsoft Dynamics 365 Finance.
-author: neserovleo
-manager: AnnBe
+author: anasyash
 ms.date: 07/27/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
-ms.author: v-lenest
+ms.author: anasyash
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0645f473214dd4f8edf56e93c44ed4d734c64b1b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 19b9e90ac42c496931c2fc936a25ee3b1b16ce58
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988437"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592612"
 ---
 # <a name="import-iso20022-files"></a>Importera ISO20022-filer
 
@@ -116,7 +114,7 @@ När du importerar en formatkonfigurationen från LCS importerar du hela konfigu
  - **Pain.002** – det här formatet ska användas tillsammans med betalningsmodellmappning till destination ISO20022 för att importera filen pain.002 till överföringsjournalen för leverantörsbetalningar
  - **Camt.054** – det här formatet ska användas tillsammans med betalningsmodellmappning till destination ISO20022 för att importera filen camt.054 till överföringsjournalen för leverantörsbetalningar Samma formatkonfiguration används i kundens betalningsimporteringsfunktion men olika mappning ska användas i en betalningsmodellmappning till destinationskonfigurationen ISO20022.
 
-Mer information om elektronisk rapportering finns i [översikt över elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md).
+Mer information om elektronisk rapportering finns i [översikt över elektronisk rapportering](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 - [Skapa och exportera leverantörbetalningar med ett ISO20022-betalningsformat](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
@@ -128,3 +126,6 @@ Mer information om elektronisk rapportering finns i [översikt över elektronisk
 - [Ställ in ett betalsätt för ISO20022-kreditöverföringar](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Ställ in ett betalsätt för ISO20022-autogiro](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Ställ in leverantörer och leverantörsbankkonton för ISO20022-krediteringsöverföringar](./tasks/set-up-vendor-iso20022-credit-transfers.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

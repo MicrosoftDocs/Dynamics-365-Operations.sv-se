@@ -1,12 +1,10 @@
 ---
 title: Ställ in mall för att representera objekt hos kunden
 description: Ställ in mall för att representera objekt hos kunden.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec91198e86b123fd886fb220c8a35c98cdfc8fdd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 304fd46e7559791bb14fcf7bca2773f2e30a255d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006526"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570019"
 ---
 # <a name="set-up-template-to-represent-objects-at-customer-site"></a>Ställ in mall för att representera objekt hos kunden 
 
@@ -54,3 +52,6 @@ Använd den här proceduren för att ställa in en mall som ska representera obj
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

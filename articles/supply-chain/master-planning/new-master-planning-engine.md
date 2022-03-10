@@ -2,11 +2,9 @@
 title: Migrering till planeringsoptimering för huvudplanering
 description: Det här avsnittet innehåller information om den nya huvudplaneringsmotorn, planeringsoptimering och migrering från den befintliga motorn.
 author: ChristianRytt
-manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8a55958a4b9573a7c3527d3d97cbcb818457b995
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8d3edeefca2e2194a8d5484afbfabf2091da4a1c1538d238351a5d389177ccfd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5008000"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728589"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migrering till planeringsoptimering för huvudplanering
 
@@ -65,10 +63,14 @@ För närvarande är undantag för migrering av planeringsoptimering endast rele
 
 När de nödvändiga funktionerna blir tillgängliga kommer Microsoft att tillhandahålla en respitperiod tills undantaget upphör att gälla. Miljöadministratören kommer att informeras när de nödvändiga funktionerna har blivit tillgängliga och respitperiod har inletts.
 
-> [!NOTE]
-> Du kan bara begära ett undantag för produktionsmiljöer, inte för begränsade miljöer. Om du behöver inaktivera undantagsfelet för planeringsoptimeringen i en infrastruktur som en service (IaaS) miljö med begränsat läge kör du SQL-frågan i [begränsade miljöer](#faq-sandbox).
+Flödesschemat nedan sammanfattar informationen i detta avsnitt så att du snabbt kan ta reda på om du bör begära ett undantag. Om du behöver begära ett undantag kan du fylla i och skicka in enkäten [Planera optimeringsmigrering och undantag](https://go.microsoft.com/fwlink/?linkid=2144962).
 
-## <a name="frequently-asked-questions"></a>Vanliga frågor
+![Flödesschema för undantag.](media/exception-diagram.png "Flödesschema för undantag")
+
+> [!NOTE]
+> Du kan endast begära ett undantag för klientorganisationer som för närvarande inkluderar, eller kommer att omfatta, en produktionsmiljö, ej endast klientorganisationer med enbart sandbox-miljöer. Om du behöver inaktivera undantagsfelet för planeringsoptimeringen i en infrastruktur som en service (IaaS) miljö med begränsat läge kör du SQL-frågeställningen i [begränsade miljöer](#faq-sandbox).
+
+## <a name="frequently-asked-questions"></a>Vanliga frågeställningar
 
 ### <a name="sandbox-environments"></a><a name="faq-sandbox"></a>Miljö i begränsade lägen
 
@@ -115,3 +117,6 @@ Jag använder version 10.0.16 eller senare och följande felmeddelande visas nä
 > Fyll i följande enkät för att komma igång och om relevant undantag från migreringen till planeringsoptimering.
 
 **Svar:** Nej, huvudplaneringen är inte blockerad. Huvudplaneringskörningen har slutförts och du kan använda resultatet på vanligt sätt. För att undvika att felmeddelandet visas under en framtida huvudplaneringskörning måste du emellertid migrera till planeringsoptimering direkt eller begära ett undantag med hjälp av länken i felmeddelandet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

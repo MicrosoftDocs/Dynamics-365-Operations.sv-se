@@ -1,8 +1,8 @@
 ---
-title: Skapa en app för återkommande dataexport
-description: I den här artikeln beskrivs hur du skapar en Microsoft Azure logisk app som exporterar data från Microsoft Dynamics 365 Human Resources på ett återkommande schema.
-author: andreabichsel
-ms.date: 02/03/2020
+title: Skapa ett program för återkommande dataexport
+description: I detta ämne beskrivs hur du skapar en logisk Microsoft Azure-app som exporterar data från Microsoft Dynamics 365 Human Resources i ett återkommande schema.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,25 +12,28 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba4f0eca471cf9734230bb2a23d53ff2e233ba2f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 368eee6bb182f363f47467a5c5ad8208a57db7ec
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6361243"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069792"
 ---
-# <a name="create-a-recurring-data-export-app"></a>Skapa en app för återkommande dataexport
+# <a name="create-a-recurring-data-export-app"></a>Skapa ett program för återkommande dataexport
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I den här artikeln beskrivs hur du skapar en Microsoft Azure logisk app som exporterar data från Microsoft Dynamics 365 Human Resources på ett återkommande schema. Självstudierna drar fördel av personalens DMF-paket REST API (Application Programming Interface) för att exportera data. När data har exporterats sparar logikprogrammet det exporterade datapaketet i en Microsoft OneDrive för företag-mapp.
+I detta ämne beskrivs hur du skapar en logisk Microsoft Azure-app som exporterar data från Microsoft Dynamics 365 Human Resources i ett återkommande schema. Självstudierna drar fördel av personalens DMF-paket REST API (Application Programming Interface) för att exportera data. När data har exporterats sparar logikprogrammet det exporterade datapaketet i en Microsoft OneDrive för företag-mapp.
 
 ## <a name="business-scenario"></a>Affärsscenario
 
-I ett typiskt affärsscenario för Microsoft Dynamics 365-integrationer måste data exporteras till ett underordnat system i ett återkommande schema. I den här självstudien visas hur du exporterar alla Microsoft Dynamics 365 Human Resources och spara listan över arbetare i OneDrive för företag-mapp.
+I ett typiskt affärsscenario för Microsoft Dynamics 365-integreringer måste data exporteras till ett underordnat system i ett återkommande schema. I den här självstudien visas hur du exporterar alla Microsoft Dynamics 365 Human Resources och spara listan över medarbetare i OneDrive för företag-mapp.
 
 > [!TIP]
 > De specifika data som exporteras i den här självstudien och de exporterade data är bara exempel. Du kan enkelt ändra dem för att uppfylla affärskrav.
@@ -39,7 +42,7 @@ I ett typiskt affärsscenario för Microsoft Dynamics 365-integrationer måste d
 
 I den här självstudien används följande tekniker:
 
-- **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)**– Huvuddatakällan för arbetare som ska exporteras.
+- **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)**– Huvuddatakällan för medarbetare som ska exporteras.
 - **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – tekniken som tillhandahåller dirigering och schemaläggning av den återkommande exporten.
 
     - **[Kopplingar](/azure/connectors/apis-list)** – tekniken som används för att ansluta logikappen till de obligatoriska slutpunkterna.
@@ -67,7 +70,7 @@ Den slutförda logikappen kommer att likna följande bild.
 
 ### <a name="step-1-create-a-data-export-project-in-human-resources"></a>Steg 1: skapa ett projekt för dataexport i personal
 
-Skapa ett dataexportprojekt i personal som exporterar arbetare. Namnge projektets **exportarbetare** och se till att alternativet **Generera datapaket** är inställt på **ja**. Lägg till en enskild enhet **(** arbetare) i projektet och välj det format du vill exportera i. (Microsoft Excel-formatet används i den här självstudien.)
+Skapa ett dataexportprojekt i personal som exporterar medarbetare. Namnge projektets **exportarbetare** och se till att alternativet **Generera datapaket** är inställt på **ja**. Lägg till en enskild enhet **(** arbetare) i projektet och välj det format du vill exportera i. (Microsoft Excel-formatet används i den här självstudien.)
 
 ![Exportera dataprojekt för medarbetare.](media/integration-logic-app-export-workers-project.png)
 

@@ -2,7 +2,6 @@
 title: Formeldesigner i elektronisk rapportering (ER)
 description: Det här avsnittet innehåller information om hur du använder formeldesignern i elektronisk rapportering (ER).
 author: NickSelin
-manager: kfend
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1384307182e44fe7771ad6244eca6784434827f1
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: eec63fb1782c5afed0320eb841b6bfc92af31a691731ef6bac5d00ed442c0dcd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568761"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777414"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -59,11 +58,11 @@ ER-formeldesignern kan användas för att definiera ett uttryck som transformera
 
 Bilden visar hur ett uttryck av den här typen skapas. I det här exemplet avrundar uttrycket värdet i fältet **Intrastat.AmountMST** i tabellen Intrastat till två decimaler och returnerar det avrundade värdet.
 
-[![Databindning för uttryck](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
+[![Databindningsuttryck.](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
 
 Bilden nedan visar hur ett uttryck av den här typen kan användas. I det här exemplet anges resultatet av det utformade uttrycket i komponenten **Transaction.InvoicedAmount** i datamodellen **Tax reporting model**.
 
-[![Databindning för uttryck används](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
+[![Databindningsuttryck som används.](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
 
 Vid körning avrundar den designade formeln `ROUND (Intrastat.AmountMST, 2)` värdet av fältet **AmountMST** för varje post i tabellen Intrastat till två decimaler. Därefter skrivs det avrundade värdet in i komponenten **Transaction.InvoicedAmount** i datamodellen **Tax reporting**.
 
@@ -73,17 +72,17 @@ ER-formeldesignern kan användas för att definiera uttryck som formaterar data 
 
 Bilden nedan visar hur du skapar en transformering av den här typen. I det här exemplet trunkerar **TrimmedString**-transformeringen inkommande data för datatypen *String* genom att ta bort inledande och avslutande blanksteg. Därefter returneras det trunkerade strängvärdet.
 
-[![Transformering](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
+[![Omvandling.](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
 
 Bilden nedan visar hur en transformering av den här typen kan användas. I det här exemplet skickar flera formatkomponenter text som utdata till det skapande elektroniska dokumentet vid körning. Dessa formatkomponenter hänvisar till **TrimmedString**-transformationen med namn.
 
-[![Transformering används](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
+[![Omvandling som används.](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
 
 När formatkomponenter, såsom komponenten **partyName** i föregående illustration, hänvisar till transformeringen **TrimmedString** sänds text som utdata till det skapande elektroniska dokumentet. Denna text inkluderar inte inledande eller avslutande blanksteg.
 
 Om du har en formatering som måste tillämpas separat kan du införa den formateringen som ett individuellt uttryck för en bindning av en särskild formatkomponent. Bilden visar ett uttryck av den här typen. I det här exemplet är **partyType**-formatkomponenten bunden till datakällan via ett uttryck som omvandlar inkommande data från fältet **Model.Company.RegistrationType** i datakällan till versal text. Uttrycket skickar sedan texten som utdata till det elektroniska dokumentet.
 
-[![Att tillämpa formatering på en enskild komponent](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
+[![Tillämpa formatering på en enskild komponent.](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
 ## <a name="process-flow-control"></a><a name="Validation"></a>Processen flödeskontroll
 
@@ -99,7 +98,7 @@ Varje regel i processen flödeskontroll är utformad som en individuell valideri
 - Valideringen stoppar körningsprocessen och returnerar **FALSKT** om listan över transaktioner är tom.
 - Valideringen returnerar ett felmeddelande som innehåller texten i etiketten SYS70894 på användarens valda språk.
 
-[![Validering](./media/picture-validation.jpg)](./media/picture-validation.jpg)
+[![Validering.](./media/picture-validation.jpg)](./media/picture-validation.jpg)
 
 ER-formeldesignern kan även användas för att skapa ett filnamn för ett skapande elektroniskt dokument och styra processen för hur en fil skapas. Bilden nedan visar utformningen av en styrning av ett processflöde av den här typen. Här följer en förklaring av konfigureringen i det här exemplet:
 
@@ -108,7 +107,7 @@ ER-formeldesignern kan även användas för att skapa ett filnamn för ett skapa
 - Ett uttryck returnerar ett filnamn för skapande elektroniska dokument genom att konkatenera filnamnet och filnamnstillägget. För den andra batchen och alla efterföljande batchar innehåller filnamnet batchens ID som ett suffix.
 - Ett uttryck möjliggör (genom att returnera **TRUE**) processen för att skapa en fil för batchar som innehåller minst en post.
 
-[![Processen flödeskontroll](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+[![Processflödeskontroll.](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
 ## <a name="document-content-control"></a><a name="Enabled"></a>Kontroll av dokumentinnehåll
 
@@ -122,18 +121,18 @@ Bilden visar uttryck av den här typen. (Version 11.12.11 av **ISO20022 kreditö
 - **PaymentNotes**-komponenten används för att skapa texten i betalningsanteckningarna.
 - **DelimitedSequence**-komponenten genererar kommaavgränsade fakturanummer som används för att kvitta den aktuella kreditöverföringen.
 
-[![Komponenter för PaymentNotes och DelimitedSequence](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+[![Komponenterna PaymentNotes och DelimitedSequence.](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
 
 > [!NOTE]
 > **PaymentNotes**- och **DelimitedSequence**-komponenterna märks med hjälp av ett frågetecken. Ett frågetecken indikerar att användningen av en komponent är villkorad. I det här fallet baseras användningen av komponenterna på följande kriterier:
 >
 > - Uttrycket `@.PaymentsNotes <> ""` som definieras för komponenten **PaymentNotes** aktiverar (genom att returnera **SANT**) **Ustrd** XML-element att fyllas i med text av betalningsanteckningar om den texten inte är tom för den aktuella kreditöverföringen.
 >
->    [![Uttryck för komponenten PaymentNotes](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+>    [![Uttryck för komponenten PaymentNotes.](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
 >
 > - Uttrycket `@.PaymentsNotes = ""` som definieras för komponenten **DelimitedSequence** aktiverar (genom att returnera **SANT**) **Ustrd** XML-elementet att fyllas i med en kommaseparerad lista av de fakturanummer som används för att kvitta den aktuella kreditöverföringen när texten för betalningsnoteringar om kreditöverföringen är tom.
 >
->    [![Uttryck för komponenten DelimitedSequence](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+>    [![Uttryck för komponenten DelimitedSequence.](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
 > 
 > Baserat på denna inställning, meddelandet som genereras för varje gäldenärsbetalning, **Ustrd** XML-element, som antingen innehåller texten på betalningsanteckningar eller om den texten är tom, en kommaseparerad lista av de fakturanummer som används för att kvitta betalningen.
 
@@ -141,7 +140,7 @@ Bilden visar uttryck av den här typen. (Version 11.12.11 av **ISO20022 kreditö
 
 På sidan **formeldesignern** väljer du **test** för att validera hur den konfigurerade formeln fungerar.
 
-[![Välja test för att validera en formel](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
+[![Välja Test för att validera en formel.](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
 
 När värdena för formelargument krävs kan du öppna dialogrutan **Testuttryck** från sidan **Formulärdesigner**. I de flesta fall måste dessa argument definieras manuellt, eftersom de konfigurerade bindningarna inte körs vid designtillfället. Fliken **testresultat** på sidan **formeldesigner** visar resultatet från körningen av den konfigurerade formeln.
 
@@ -149,15 +148,15 @@ I följande exempel visas hur du kan testa formeln som har konfigurerats för de
 
 När du testar den här formeln kan du använda dialogrutan **testuttryck** för att ange värdet för Intrastat-varukoden för testning.
 
-[![Ange Intrastat-varukoden för testning](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
+[![Ange Intrastat-varukoden för testning.](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
 
 När du har angett Intrastat-artikelkoden och väljer **OK**, visar fliken **Testresultat** på sidan **Formeldesigner** resultatet av körningen av den konfigurerade formeln. Du kan sedan utvärdera om resultatet är acceptabelt. Om resultatet inte är acceptabelt kan du uppdatera formeln och testa den igen.
 
-[![Testresultat](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
+[![Testresultat.](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
 
 Vissa formler kan inte testas vid designtillfället. En formel kan till exempel returnera ett resultat av en datatyp som inte kan visas på fliken **testresultat**. I det här fallet visas ett felmeddelande som säger att formeln inte kan testas.
 
-[![Felmeddelande](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
+[![Felmeddelande.](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

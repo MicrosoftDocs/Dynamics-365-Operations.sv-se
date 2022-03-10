@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 14f0f2b1a4d63101d432b1361379c61a70ac9345
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: ea603d01d05e98ac69d5a0d12802b5f23ee34793bf4c9b4f885f0e4303f77d2b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271193"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762282"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Hämta konfigurationer för elektronisk rapportering från Lifecycle Services
 
@@ -41,7 +41,7 @@ I det här avsnittet beskrivs hur du hämtar den senaste versionen av dina [Elek
 3. I avsnittet **Konfigurationsleverantörer** väljer du panelen **Microsoft**.
 4. I panelen **Microsoft** väljer du **Databaser**.
 
-    [![Microsoft-panel på sidan lokaliseringskonfiguration](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
+    [![Microsoft-panel på sidan Lokaliseringskonfiguration.](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
 
 5. På sidan **Konfigurationsdatabaser** väljer du i rutnätet den befintliga databasen för **LCS**-typen. Om denna databas inte visas i rutnätet, följ då nedanstående steg:
 
@@ -55,7 +55,7 @@ I det här avsnittet beskrivs hur du hämtar den senaste versionen av dina [Elek
 
 6. Välj **Öppna** om du vill visa listan över ER-konfigurationer för den valda databasen.
 
-    [![Sidan Konfigurationsdatabas](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
+    [![Sidan Konfigurationsdatabaser.](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 
     > [!TIP]
     > Om du har problem med att komma åt LCS-databasen för hämtning av konfigurationer från biblioteket med gemensamma tillgångar i LCS kan du i stället hämta konfigurationer från den [globala databasen](er-download-configurations-global-repo.md) .
@@ -67,7 +67,7 @@ I det här avsnittet beskrivs hur du hämtar den senaste versionen av dina [Elek
     > [!NOTE]
     > Knappen **Importera** är inte tillgänglig för ER-konfigurationsversioner som redan finns i den aktuella instansen.
 
-    [![Sidan Konfigurationsdatabas](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+    [![Sidan Konfigurationsdatabas.](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 > [!NOTE]
 > Beroende på ER-inställningarna valideras konfigurationerna när de har importerats. Du kan komma att meddelas om eventuella inkonsekvensproblem som upptäcks. Du måste lösa dessa problem innan du kan använda den importerade konfigurationsversionen. Mer information finns i listan över relaterade artiklar för detta avsnitt.

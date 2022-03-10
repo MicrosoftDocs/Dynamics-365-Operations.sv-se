@@ -1,12 +1,10 @@
 ---
 title: Orsakskoder för lagerinventering
 description: I det här avsnittet beskrivs hur du ställer in och tillämpar orsakskoder och inventeringsuppgifter.
-author: Mirzaab
-manager: tfehr
-ms.date: 03/15/2017
+author: perlynne
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCountingReasonCodePolicy, InventCountingReasonCode
 audience: Application User
@@ -14,21 +12,21 @@ ms.reviewer: kamaybac
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: perlynne
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: d72b171bfe149b25f5055d5bebef85b49e952295
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228499"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500610"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Orsakskoder för lagerinventering
 
 [!include [banner](../includes/banner.md)]
 
-Orsakskoder låter dig analysera resultatet från en inventeringsprocess och eventuella avvikelser som inträffar under den här processen. Du kan ange en orsak till att göra inventeringen, t.ex. en trasig lastpall eller en lagerjustering som baseras på lagerexempel.
+Orsakskoder låter dig analysera resultatet från en inventeringsprocess och eventuella avvikelser som inträffar under den här processen. Du kan ange en orsak till att göra inventeringen, t.ex. en trasig lastpall eller en lagerjustering som baseras på lagerexempel. Samtidigt kan du använda justeringsfunktionerna för att bokföra värdet för lagerbehållningsjusteringar på korrekt motkonto baserat på orsaken till varje lagerjustering.
 
 ## <a name="recommendation"></a>Rekommendation
 
@@ -37,17 +35,30 @@ Innan du ställer in systemet rekommenderar vi att du definierar en strategi fö
 - Orsakskoder ska finnas på lagerställen?
 - Orsakskoder ska vara obligatoriska eller valfria över vissa objekt?
 - Hur många orsakskoder behöver du?
-- Hur ska användarna av streckkodsskannrar använda orsakskoder? Orsakskoderna ska vara förvalda, obligatoriska eller inte redigerbara?
+- Måste du förvälja en begränsad lista med orsakskoder för justeringar?
+- Hur ska användare av streckkodsskannrar använda orsakskoder? Orsakskoderna ska vara förvalda, obligatoriska eller inte redigerbara?
 - Behöver lagerarbetare olika orakskodbeteenden på mobila skannrar? Om svaret är Ja kan du skapa fler menyalternativ och tilldela dem till olika personer.
+- Ska orsakskoderna driva bokföring av ekonomiskt motkonto?
 
-## <a name="where-reason-codes-apply"></a>Var orsakskoder tillämpas
+## <a name="turn-on-reason-code-features-in-your-system"></a>Aktivera funktioner för orsakskoder i systemet
 
-Du kan skapa flera orsakskodprinciper och varje orsakskodprincip kan ha två cykliska orsakskodprinciper. Orsakskodprinciper för inventering kan användas på lagerställenivå eller artikelnivå.
+Om du inte ser alla funktioner som beskrivs i det här avsnittet i systemet måste du troligen aktivera *Bokför lagerbehållningsjusteringar* med konfigurerbara orsakskoder relaterade till motkontofunktionen. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 
-## <a name="set-up-reason-code-policies"></a>Ställa in orsakskodprinciper
+- **Modul:** *Warehouse management*
+- **Funktionsnamn:** *Bokför behållningsjusteringar med konfigurerbara orsakskoder kopplade till motkonton*
 
-1. Välj **lagerhantering**\>**inställningar**\>**lager**\>**orsakskodprinciper för inventering**, och skapa en ny orsakskodprincip.
-2. På fältet **Typ av orsakskod för inventering** väljer du antingen **obligatorisk** eller **valfri** för att ange om valet av en orsakskod ska vara en valfri eller obligatorisk åtgärd på något av följande inventeringsjournaler:
+## <a name="set-up-reason-codes"></a>Ställ in orsakskoder
+
+### <a name="set-up-reason-code-policies"></a>Ställa in orsakskodprinciper
+
+Du kan skapa flera policyer för orsakskoder för att styra när och hur inventeringsorsakskoder används. Varje orsakskodpolicy kan ha endera av två typer av inventeringsorsakskoder (*Valfri* eller *Obligatorisk*). Orsakskodprinciper för inventering kan användas på lagerställenivå eller artikelnivå.
+
+Följ dessa steg för att skapa en orsakskodpolicy.
+
+1. Gå till **Lagerhantering** \> **Konfiguration** \> **Lager** \> **Orsakskodpolicyer för inventering**.
+1. I åtgärdsrutan väljer du **Ny** för att lägga till en policy i rutnätet.
+1. Ställ in fältet **Namn** för den nya policyn.
+1. På fältet **Typ av orsakskod för inventering** väljer du antingen *obligatorisk* eller *valfri* för att ange om valet av en orsakskod ska vara en valfri eller obligatorisk åtgärd på något av följande lagerjusteringsprocesser:
 
     - Rullande inventering (mobil enhet)
     - Punktinventering (mobil enhet)
@@ -55,34 +66,63 @@ Du kan skapa flera orsakskodprinciper och varje orsakskodprincip kan ha två cyk
     - Justering in (mobil enhet)
     - Justering ut (mobil enhet)
     - Inventeringsjournal (rich-klient)
+    - Kvantitetsjustering/Onlineinventing (avancerad klient)
 
-Du kan också ställa in orsakskoder för enskilda lagerställen och produkter. Inställningen av orsakskod för produkter kan ignorera inställningarna för lagerställen.
+Du kan ställa in orsakskodpolicyer för både enskilda lagerställen och produkter. Inställning av orsakskod för en produkt kan ha företräde före inställningen för produktens lagerställe.
 
-## <a name="mandatory-reason-codes"></a>Obligatoriska orsakskoder
+> [!NOTE]
+> För lagerställen och artiklar med fältet **Orsakskodpolicy för inventering** inställt som *Obligatorisk* kan inventeringsjournalen inte slutföras och stängas förrän en orsakskod har angetts. Mer information finns i nästa avsnitt.
 
-Om parametern **obligatorisk** anges i konfigurationen för orsakskoder för lager eller artiklar, kan inventeringsjournalen inte slutföras och stängas tills en orsakskod har angetts.
+### <a name="assign-counting-reason-code-policies-to-warehouses"></a>Tilldela lagerställen orsakskodpolicyer för inventering
 
-### <a name="set-up-reason-codes-for-warehouses"></a>Ställ in orsakskoder för lagerställen
+Följ dessa steg för att tilldela ett lagerställe en orsakskodpolicy för inventering.
 
-1. Välj **Lagerhantering** \> **Inställningar** \> **Lagerindelning** \> **Lagerställen**
-2. På fliken **lagerställe** i fältet **Policy för orsakskod för inventering** väljer du ett av följande alternativ:
+1. Gå till **Lagerhantering** \> **Konfiguration** \> **Lagerindelning** \> **Lagerställen**.
+1. Välj lagerställe i listrutan.
+1. I åtgärdsfönstret, på fliken **Lagerställe**, i gruppen **Konfiguration**, väljer du **Orsakskodpolicy för inventering**. Följ sedan ett av följande steg i dialogrutan **Tilldela orsakskodpolicy för inventering**:
 
-    - **Tom** - parametern som ställts in för artikeln används för att bestämma om inventeringsjournaler är obligatoriska för produkten.
-    - **Obligatorisk** – en orsakskod krävs alltid på inventeringsjournaler för lagerstället.
-    - **Tillval** – en orsakskod krävs inte på inventeringsjournaler för lagerstället.
+    - Om du vill använda policyinställningarna för alla artiklar för att fastställa om inventeringsjournaler är obligatoriska för dem anger du inget värde (eller raderar det befintliga värdet).
+    - För att kräva orsakskod i inventeringsjournaler för lagerstället väljer du en orsakspolicy där fältet **Orsakskodtyp för inventering** är *Obligatorisk*.
+    - Om orsakskod är valfri i inventeringsjournaler för lagerstället väljer du en orsakspolicy där fältet **Orsakskodtyp för inventering** är *Valfri*.
 
-### <a name="set-up-reason-codes-for-products"></a>Ställ in orsakskoder för produkter
+### <a name="assign-counting-reason-code-policies-to-products"></a>Tilldela produkter orsakskodpolicyer för inventering
 
-1. Välj **Produktinformationshantering** \> **Produkter** \> **Frisläppta produktersamprodukt**.
-2. På fliken **Produkt** välj **Policy för orsakskod för inventering** och sedan väljer du ett av följande alternativ:
+Följ dessa steg för att tilldela en produkt en orsakskodpolicy för inventering.
 
-    - **Tom** - parametern som ställts in för lagerstället används för att bestämma om inventeringsjournaler är obligatoriska för produkten.
-    - **Obligatorisk** – en orsakskod krävs alltid på inventeringsjournaler för produkten. Den här inställningen åsidosätter inställningen för varje orsakskod på lagernivå.
-    - **Tillval** – en orsakskod krävs inte på inventeringsjournaler för produkten. Den här inställningen åsidosätter inställningen för varje orsakskod på lagernivå.
+1. Gå till **Produktinformationshantering** \> **Produkter** \> **Frisläppta produkter**.
+1. I rutnätet väljer du en produkt.
+1. I åtgärdsfönstret, på fliken **Produkt**, i gruppen **Konfiguration**, väljer du **Orsakskodpolicy för inventering**. Följ sedan ett av följande steg i dialogrutan **Tilldela orsakskodpolicy för inventering**:
 
-### <a name="use-reason-codes-in-counting-journals"></a>Använd orsakskoder i inventeringsjournaler
+    - Om du vill använda policyinställningarna för lagerstället för att fastställa om inventeringsjournaler är obligatoriska för produkten anger du inget värde (eller raderar det befintliga värdet).
+    - För att kräva orsakskod i inventeringsjournaler för produkten väljer du en orsakspolicy där fältet **Orsakskodtyp för inventering** är *Obligatorisk*. Den här inställningen åsidosätter inställningen för varje orsakskod på lagernivå.
+    - Om orsakskod är valfri i inventeringsjournaler för produkten väljer du en orsakspolicy där fältet **Orsakskodtyp för inventering** är *Valfri*. Den här inställningen åsidosätter inställningen för varje orsakskod på lagernivå.
 
-I en inventeringsjournal lägger du till orsakskoder för inventeringar av följande typer:
+### <a name="set-up-counting-reason-codes"></a>Konfigurera orsakskoder för inventering
+
+Följ dessa steg för att ställa in orsakskoder för inventering.
+
+1. Gå till **Lagerhantering** \> **Inställning** \> **Lager** \> **Orsakskoder för inventering**.
+1. I åtgärdsfönstret, välj **Ny** du vill lägga till en rad i rutnätet.
+1. Ställ in fälten **Orsakskod för inventering** och **Beskrivning** för den nya raden.
+1. Om du vill tilldela ett motkonto anger du eller väljer ett värde i fältet **Motkonto**.
+
+    > [!NOTE]
+    > Om ett motkonto tilldelats en orsakskod för inventering och du bokför en inventeringsjournal med den orsakskoden för inventering bokförs värdet mot det tilldelade motkontot i stället för standardkontot för inventeringsjournal i profilen.
+
+### <a name="set-up-counting-reason-code-groups"></a><a name="reason-groups"></a>Ställa in orsakskodgrupper för inventering
+
+*Grupper med orsakskoder för inventering* kan användas som en del av menyalternativen *Justering in* och *Justering ut* i mobilappen Warehouse Management för att begränsa listan med orsakskoder för inventering. (Mer information om grupper medorsakskoder för inventering finns i avsittet [Ställ in menyalternativ för mobila enheter för justering in och justering ut](#setup-adjustment-in-out) längre ner.)
+
+1. Gå till **Lagerhantering** \> **Konfiguration** \> **Lager** \> **Orsakskodgrupper för inventering**.
+1. I åtgärdsfönstret väljer du **Ny** för att lägga till en grupp.
+1. Ställ in fälten **Orsaksgrupp för inventering** och **Gruppbeskrivning** för den nya gruppen.
+1. Klicka på **Spara** i åtgärdsfönstret.
+1. Öppna avsnittet **Information** och välj **Ny** i verktygsfältet för att lägga till en rad i rutnätet. Ställ sedan in fältet **Orsakskod för inventering** för den nya raden. 
+1. Upprepa föregående steg för att vid behov tilldela fler koder. Om du måste ta bort en kod från gruppen markerar du den och väljer sedan **Radera** i verktygsfältet.
+
+### <a name="set-up-reason-codes-for-mobile-device-menu-items"></a>Ställa in orsakskoder för menyalternativ för mobila enheter
+
+Du kan konfigurera orsakskoder för följande justeringstyper för behållning:
 
 - Rullande inventering
 - Punktinventering
@@ -90,59 +130,92 @@ I en inventeringsjournal lägger du till orsakskoder för inventeringar av följ
 - Justering in
 - Justering ut
 
-Orsakskoderna läggs till journalraderna i inventeringsjournaler av typen **inventeringsjournal**.
-
-1. Välj **Lagerhantering** \> **Journalposter** \> **Artikelräkning** \> **Inventering**.
-2. I raddetaljerna för inventeringsjournalen, i fältet **Orsakskod för inventering** väljer du ett alternativ.
-
-### <a name="view-the-counting-history-as-its-recorded-by-reason-codes"></a>Visa inventeringshistorik enligt vad som noterats av orsakskoder
-
-- Välj **lagerhantering**\>**förfrågningar och rapporter**\>**inventeringshistorik**, och sedan i fältet **Orsakskod för inventering** visar du inventeringshistorik som har registreras via en orsakskod.
-
-### <a name="use-a-reason-code-for-a-quantity-adjustment"></a>Använda en orsakskod för en kvantitetsjustering
-
-1. På sidan **lagerbehållning** ange **Justera kvantitet**. Du kan öppna sidan **lagerbehållning** på flera olika sätt. Välj t.ex. **Lagerhantering** \> **Förfrågningar och rapporter** \> **Lagerbehållning**.
-2. Välj **Justera kvantitet** och sedan, i fältet **Orsakskod för inventering** väljer du en orsakskod.
-
-### <a name="configure-reason-codes-for-mobile-device-menu-items"></a>Konfigurera orsakskoder för menyalternativ för mobila enheter
-
-Du kan konfigurera orsakskoder för alla typer av inventering på ett menyalternativ för mobila enheter. Konfigurationen för menyalternativ för mobil enhet omfattar följande information:
+I de flesta fall kan du definiera följande information för varje relevant menyalternativ för mobil enhet:
 
 - Om orsakskoden visas till mobiltelefonarbetaren under inventering.
 - Standardorsakskoden som visas på ett menyalternativ för mobila enheter.
 - Om användaren kan redigera orsakskoden.
 
-### <a name="set-up-reason-codes-on-a-mobile-device"></a>Ställ in orsakskoder på en mobil enhet
+#### <a name="set-up-mobile-device-menu-items-for-a-counting-process"></a>Ställa in menyalternativ för mobila enheter för inventeringsprocess
 
-1. Välj **Lagerstyrning** \> **InställningarSetup** \> **Mobil enhet** \> **Menyalternativ på mobil enhet**.
-2. På fliken **Rullande inventering** Välj **Rullande inventering**.
-3. På fältet **Orsakskod för standardinventering**, ställ in standardorsakskoden som ska registreras när inventeringen är klar genom att använda menyalternativet för mobil enhet.
-4. I fältet **Visa orsakskod för inventering** välj **Rad** för att visa orsakskoden efter att varje avvikelse har registrerats. Du kan också välja **Dölj** om orsakskoden inte visas.
-5. Ange alternativet **Redigera orsakskod för inventering** till antingen **Ja** eller **Nej**. Om du anger det här alternativet till **Ja** kan arbetaren redigera orsakskoden när det visas på den mobila enheten under inventering.
+Följ dessa steg för att ställa in ett menyalternativ för mobila enheter för en inventeringsprocess.
+
+1. Gå till **Lagerställehantering** \> **Inställningar** \> **Mobil enhet** \> **Menyalternativ för mobil enhet**.
+1. Välj relevant menyalternativ i listrutan eller skapa ett nytt menyalternativ.
+1. Välj **rullande inventering** i åtgärdsfönstret.
+1. På fältet **Standard orsakskod för inventering** ställer du in standardorsakskoden som ska registreras när inventeringen görs med menyalternativet för mobil enhet.
+1. I fältet **Visa orsakskod för inventering** väljer du ett av följande värden:
+
+    - *Rad* – Visa orsakskoden efter att varje avvikelse har registrerats.
+    - *Dölj* – Visa inte orsakskoden.
+
+1. Ställ in **Redigera orsakskod för inventering** som *Ja* så att medarbetaren kan redigera orsakskoden när det visas på den mobila enheten under inventering. Ställ in på *Nej* om du vill förhindra att medarbetaren redigerar koden.
 
 > [!NOTE]
-> Knappen **rullande inventering** kan aktiveras på alla menyalternativ för mobil enhet när inventering kan göras. Exempel inkluderar menyalternativ för punktinventeringar, användarstyrt arbete och systemstyrt arbete.
+> Knappen **rullande inventering** kan aktiveras på alla menyalternativ för mobil enhet när inventering kan göras. Exemplen inkluderar menyalternativ för punktinventeringar, användarstyrt arbete och systemstyrt arbete.
 
-## <a name="cycle-count-approvals"></a>Godkännande av rullande inventering
+#### <a name="set-up-mobile-device-menu-items-for-adjustment-in-and-adjustment-out"></a><a name="setup-adjustment-in-out"></a>Ställ in menyalternativ för mobil enhet för justering in och justering ut
 
-Användaren kan ändra orsakskoden som är kopplad till inventeringen innan inventeringen kan godkännas. Orsakskoden anges på journalraderna som skapas när inventeringen godkänns.
+Följ dessa steg för att ställa in ett menyalternativ för mobil enhet för justering in och justering ut.
 
-### <a name="modify-cycle-count-approvals"></a>Ändra godkännande av rullande inventering
+1. Gå till **Lagerställehantering** \> **Inställningar** \> **Mobil enhet** \> **Menyalternativ för mobil enhet**.
+1. I åtgärdsrutan väljer du **Ny** för att skapa ett menyalternativ.
+1. Ställ in fälten för **Namn på mobilartikel** och **Rubrik** för det nya menyalternativet.
+1. Ställ in fältet **Läge** på *Arbete*.
+1. Ange alternativet **Använd befintligt arbete** till *Nej*.
+1. I fältet **Process för att skapa arbete** väljer du *Justering in* eller *Justering ut*.
+1. På snabbfliken **Allmänt** anger du följande fält. (Alla dessa fält läggs till när du väljer *Justering in* eller *Justering ut* i fältet **Process för att skapa arbete**.)
 
-1. Välj **lagerstyrning**\>**rullande inventering**\>**Granskning av väntande rullande inventeringsarbete**.
-2. Välj **Rullande inventering** och sedan, i fältet **Orsakskod** väljer du en ny orsakskod.
+    - **Använd processguiden** – Om du skapar en process för *Justering ut* ska du se till att ange det här alternativet som *Ja*. Om du skapar en process för *Justering ut* ställs alltid det här alternativet in på *Ja*.
+    - **Standard orsakskod för inventering** – Ställ in standardorsakskoden som ska registreras när inventeringen görs med menyalternativet för mobil enhet.
+    - **Visa orsakskod för inventering** – Välj ett av följande värden:
 
-### <a name="modify-the-mobile-device-menu-item-for-adjustment-in-and-adjustment-out"></a>Ändra menyalternativet för mobil enhet för Justering in och Justering ut
+        - *Rad* – Visa orsakskoden efter att varje avvikelse har registrerats.
+        - *Dölj* – Visa inte orsakskoden.
 
-1. Välj **lagerstyrning**\>**inställningar**\>**mobil enhet**\>**menyalternativ för mobil enhet**, och välj sedan **justering in och ut**.
-2. Ange alternativet **Använd befintligt arbete** till **Nej**.
-3. I fältet **Process för att skapa arbete** väljer du **justering i**.
+    - **Redigera orsakskod för inventering** – Ställ in alternativet som *Ja* så att medarbetaren kan redigera orsakskoden när det visas på den mobila enheten under inventering. Ställ in på *Nej* om du vill förhindra att medarbetaren redigerar koden.
+    - **Orsakskodgrupp för inventering** – Välj en orsakskodgrupp för att begränsa listan med alternativ som visas för medarbetare. Mer information om hur du ställer in orsakskodgrupper finns i avsnittet [Ställa in orsakskodgrupper för inventering](#reason-groups) tidigare i det här avsnittet. 
 
-Följande fält läggs till på menyalternativet för mobil enhet när **justering in** eller **justering ut** markeras under process för att skapa arbete:
+> [!NOTE]
+> När du tilldelar en orsakskodgrupp för inventering menyalternativen *Justering in* och *Justering ut* där alternativet **Använd processguide** är inställt på *Ja*, kan du få en begränsad lista över orsakskoderna för inventering som en del av bearbetningen i mobilappen Warehouse Management.
+>
+> Alternativet **Använd processguide** kan också förhindra att stora justeringskvantiteter sker av misstag. (Exempelvis kanske en medarbetare kråkar skanna en streckkod med ett artikelnummer istället för ett kvantitetsvärde.) För att ställa in dessa funktioner ställer du in alternativet **Använd processguide** på *Ja* för varje relevant menyalternativ. Gå sedan till **Lagerställehantering \> Inställningar \> medarbetare** och ställ in fältet **Gräns för kvantitetsjustering** för varje relevant lagerställearbetare för att ange den maximala justeringskvantitet som medarbetaren kan registrera.
 
-- Orsakskod för standardinventering
-- Visa orsakskod för inventering
-- Redigera orsakskod för inventering
+## <a name="processing-that-uses-counting-reason-codes"></a>Bearbetning som använder orsakskoder för inventering
 
+När medarbetare använder mobilappen Warehouse Management registreras orsakskoderna. Om inte en godkännandeprocess för inventering har definierats används omedelbart de registrerade orsakskoderna som en del av bokföring av inventeringsjournalen som följer.
+
+### <a name="cycle-count-approvals"></a>Godkännande av rullande inventering
+
+Arbetaren kan ändra orsakskoden som är kopplad till inventeringen innan inventeringen kan godkännas. Orsakskoden anges på journalraderna som skapas när inventeringen godkänns.
+
+#### <a name="modify-reason-codes-for-cycle-count-approvals"></a>Ändra orsakskoder för godkännanden av rullande inventering
+
+Följ dessa steg för att ändra ett godkännande av rullande inventering.
+
+1. Hå till **Lagerställehantering** \> **Rullande inventering** \> **Rullande inventeringsarbete som väntar på granskning**.
+1. I rutnätet väljer du en rullande inventering.
+1. I åtgärdsfönstret på fliken **Arbete** välj **Rullande inventering**. Sedan väljer du en ny orsakskod i fältet **Orsakskod**.
+
+Orsakskoderna läggs till journalraderna i inventeringsjournaler av typen *inventeringsjournal*.
+
+1. Gå till **Lagerhantering** \> **Journalposter** \> **Artikelinventering** \> **Inventering**.
+2. I radinformationen i inventeringsjournalen väljer du den orsakskod som matchar den aktuella situationen i fältet **Orsakskod för inventering**.
+
+### <a name="view-the-reason-codes-recorded-in-the-counting-history"></a>Visa registrerade orsakskoder i inventeringshistoriken
+
+Följ de här stegen för att visa orsakskoderna som har registrerats i inventeringshistoriken.
+
+1. Gå till **Lagerhantering** \> **Förfrågningar och rapporter** \> **Inventeringshistorik**.
+1. Välj en artikelinventeringspost i listrutan.
+1. I fältet **Orsakskod för inventering** visas inventeringshistoriken som har registrerats med orsakskod.
+
+### <a name="use-reason-codes-for-quantity-adjustment-or-online-counting"></a>Använd orsakskoder för kvantitetsjustering eller onlineinventering
+
+Följ de här stegen för att använda en orsakskod för kvantitetsjustering eller onlineinventering.
+
+1. Gå till **Lagerhantering \> Förfrågningar och rapporter \> Behållningslista**.
+1. Välj **Kvantitetsjustering** i åtgärdsrutan.
+1. Välj **Kvantitetsjustering** och välj sedan orsakskod i fältet **Orsakskod för inventering**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

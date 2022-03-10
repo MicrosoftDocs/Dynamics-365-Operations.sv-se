@@ -2,11 +2,9 @@
 title: Konfigurera omdömen och recensioner
 description: I det här avsnittet beskrivs hur du konfigurerar din näthandelssajt så att du kan visa kundomdömen och recensioner i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,20 +14,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fcdf571378c25d71b3ef4f3baad062a25390417
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e3f9ff4b0654ec5fa7548ac62e16ae64f44383e7
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993560"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968112"
 ---
 # <a name="configure-ratings-and-reviews"></a>Konfigurera omdömen och recensioner
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du konfigurerar din näthandelssajt så att du kan visa kundomdömen och recensioner i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 Omdömen och recensioner på webbplatser för näthandel hjälper kunder lära sig mer om produkter innan de fattar ett inköpsbeslut, genom att visa vad andra kunder tycker om dessa produkter. För näthandelssajter är omdömen och recensioner också en mekanism för att samla in kundernas feedback om produkter. 
 
@@ -48,7 +44,7 @@ Konfigurera en webbplats för visning av värderingar och recensioner enligt fö
 
 Följande bild visar hur den här konfigurationen ser ut i Dynamics 365 Commerce.
 
-![Konfigurera en webbplats att visa omdömen och recensioner](media/rnr-eCommerce-site-appsettings.png)
+![Konfigurera en webbplats att visa omdömen och recensioner.](media/rnr-eCommerce-site-appsettings.png)
 
 ## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a>Länka en produktvärdering till avsnittet recensioner i ett PDP
 
@@ -62,7 +58,7 @@ Om du vill länka en produktvärdering avsnittet **recensioner** i PDP följer d
 
 Följande bild visar hur den här konfigurationen ser ut i Dynamics 365 Commerce.
 
-![Länka en produktvärdering till avsnittet recensioner i ett PDP](media/rnr-eCommerce-buy-box-rating-summary.png)
+![Länka en produktvärdering till avsnittet Recensioner på en PDP (produktdetaljsida).](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## <a name="configure-the-link-for-the-privacy-and-policy-page"></a>Konfigurera länken till sidan sekretess och policy
 
@@ -77,7 +73,7 @@ Konfigurera länken till sidan sekretess och policy genom att följa dessa steg.
 
 Följande bild visar hur den här konfigurationen ser ut i Dynamics 365 Commerce.
 
-![Konfigurera länken till sidan sekretess och policy](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+![Konfigurera länken till sidan för sekretess och policy.](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
 ## <a name="configure-ratings-and-reviews-modules-on-product-details-pages"></a>Konfigurera klassificeringar och recensioner av moduler på produktinformationssidor
 
@@ -91,6 +87,17 @@ Information om hur du konfigurerar modulen värderingar och recensioner på prod
 
 [Hantera omdömen och recensioner](manage-reviews.md)
 
-[Konfigurera klassificeringar och recensioner av moduler på produktinformationssidor](ratings-reviews-modules.md)
-
 [Synkronisera produktklassificeringar i Dynamics 365 Retail](sync-product-ratings.md)
+
+[Aktivera manuell publicering av omdömen och recensioner genom en moderator](manual-publish-rating-reviews.md)
+
+[Importera och exportera värderingar och granskningar](import-export-reviews.md)
+
+[Konfigurera tjänst-till-tjänst-autentisering](service-to-service-auth.md)
+
+[Vanliga frågor och svar om omdömen och recensioner](ratings-reviews-faq.md)
+
+[Moduler för omdömen och recensioner](ratings-reviews-modules.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

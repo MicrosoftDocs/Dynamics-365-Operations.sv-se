@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 34325d2a2d87a4bb84acae53211db36468b7432a016eb24c0473358a40415426
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: f37d161bf3d27e15eaaf1230c05270f3769f9901
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753781"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778291"
 ---
 # <a name="work-line-details"></a>Arbetsradsdetaljer
 
@@ -28,9 +28,9 @@ Sidan **Information om arbetsrad** visar en omfattande, sorterbar och filtrerbar
 
 ## <a name="turn-on-the-work-line-details-feature"></a>Aktivera funktionen arbetsraddetaljer
 
-Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan använda sidan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera/inaktivera den vid behov. Här visas funktionen i listan:
 
-- **Modul:** *Lagerstyrning*
+- **Modul:** *Warehouse management*
 - **Funktionsnamn:** *Arbetsraddetaljer*
 
 ## <a name="open-and-use-the-work-line-details-page"></a>Öppna och använd sidan med information om arbetsrader

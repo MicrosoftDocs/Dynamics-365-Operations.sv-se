@@ -1,29 +1,28 @@
 ---
 title: Översikt över anskaffningskataloger
 description: Den här artikeln beskriver, på en hög nivå, hur professionella inköpare kan ställa in och underhålla anskaffningskataloger. Anskaffningskataloger definierar de artiklar och tjänster som anställda i företaget kan beställa för intern användning.
-author: mkirknel
-manager: tfehr
+author: Henrikan
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, CatDisplayProductRelationAdd
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: 2214
+ms.custom:
+- "2214"
+- intro-internal
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64c7c2787e2ac996e3016f5b23fc48582f5533ad
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: efe0541859822b4c6404f2833ae38e07b79dd634
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4437997"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984305"
 ---
 # <a name="procurement-catalogs-overview"></a>Översikt över anskaffningskataloger
 
@@ -69,10 +68,12 @@ Uppdateringar publiceras automatiskt eller fylls i manuellt, beroende på det al
 -   **Båda** – Om katalogen som inkluderar produktkategorier har standarduppdateringtypen **Statisk** måste den uppdateras manuellt när dessa kategorier uppdateras. Om katalogen inkluderar produktkategorier har standarduppdateringstypen **Dynamiskt**, uppdateras den automatiskt när som helst den har ändrats.
 
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ställ in en anskaffningskategorihierarki](tasks/set-up-procurement-category-hierarchy.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

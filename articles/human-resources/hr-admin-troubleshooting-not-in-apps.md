@@ -1,8 +1,8 @@
 ---
 title: Personalresurser visas inte i Microsoft Dynamics 365-appar
-description: Det här avsnittet beskriver vad du gör om kunden inte ser Microsoft Dynamics 365 Human Resources-appen bland Microsoft Dynamics 365-appar.
-author: andreabichsel
-ms.date: 02/03/2020
+description: I detta ämne beskrivs vad du ska göra om Microsoft Dynamics 365 Human Resources inte finns bland Microsoft Dynamics365-apparna.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,21 +11,24 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17a454cd32a08db105a13577c32368ad819bed1c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 4bdbe6c4065a8266fd30a3b093743ded91524f6a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053386"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069690"
 ---
-# <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Personalresurser visas inte i Microsoft Dynamics 365-appar
+# <a name="human-resources-app-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Human Resources-appen visas inte i bland Microsoft Dynamics 365-apparna
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-**Utleverans**
+**Problem**
 
 Kunden ser inte Dynamics 365 Human Resources bland Microsoft Dynamics 365-apparna.
 
@@ -39,11 +42,11 @@ Användaren måste läggas till rollen Environment Maker för miljön i Microsof
 
 3. På fliken **Säkerhet** på fliken **Miljöroller**, välj **Environment Maker**.
 
-    ![Fliken Miljöroller](media/environment-roles.png)
+    ![Fliken Miljöroller.](media/environment-roles.png)
 
 4. På fliken **Användare** lägger du till användaren eller organisationen.
 
-    ![Fliken Användare](media/environment-maker.png)
+    ![Fliken Användare.](media/environment-maker.png)
 
 5. Välj **Spara**.
 
@@ -51,7 +54,7 @@ Användaren måste läggas till rollen Environment Maker för miljön i Microsof
 
 7. Välj **Synkronisera** för att uppdatera användarapparna.
 
-    ![Knappen Synkronisera](media/get-more.png)
+    ![Knappen Synkronisera.](media/get-more.png)
 
     När synkroniseringen är klar visas Personal på startsidan.
 

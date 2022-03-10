@@ -1,8 +1,8 @@
 ---
-title: Inaktivera regler i konsekvenskontrollen för butikstransaktioner
-description: Det här avsnittet beskriver funktionen som inaktiverar regler för konsekvenskontroll av transaktioner i Microsoft Dynamics 365 Commerce.
-author: josaw1
-ms.date: 10/15/2019
+title: Inaktivera regler som används i transaktionsvalideringsprocessen
+description: Det här ämnet beskriver funktionen som inaktiverar transaktionsvalideringsregler i Microsoft Dynamics 365 Commerce.
+author: analpert
+ms.date: 12/11/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,21 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 381bc8534d4b0a06a50c8c18b3f78aba9d43a1f497bfd271361216ed1dee9197
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cdaea51b4c84e6a62f0eb9412315ae77b4c11503
+ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746671"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7919537"
 ---
-# <a name="disable-rules-in-the-retail-transaction-consistency-checker"></a>Inaktivera regler i konsekvenskontrollen för butikstransaktioner 
+# <a name="disable-rules-used-in-the-transaction-validation-process"></a>Inaktivera regler som används i transaktionsvalideringsprocessen
 
 [!include [banner](../includes/banner.md)]
 
-Återförsäljare kan ha affärsscenarier och processer som är unika för dem. Därför gäller inte alla regler som ingår som standard i konsekvenskontrollen av handelstransaktioner för alla detaljhandlare. För att hantera skillnader innehåller Microsoft Dynamics 365 Commerce funktioner som kan användas för att inaktivera regler som inte är tillämpliga.
+Återförsäljare kan ha affärsscenarier och processer som är unika för dem. Därför gäller inte alla regler som ingår i valideringsprocessen för handelstransaktioner för alla återförsäljare. För att hantera skillnader innehåller Microsoft Dynamics 365 Commerce funktioner som kan användas för att inaktivera regler som inte är tillämpliga.
 
-Om du vill visa en lista över regler som är tillgängliga i konsekvenskontrollen av butikstransaktioner i din miljö, och se status för varje regel, gå till **Retail och Commerce \> Administrationsinställningar \> Parametrar \> Commerce-parametrar**, och välj fliken **Transaktionsvalidering**.
+Visa en lista med regler som finns tillgängliga i miljöns transaktionsvalideringsprocess och visa status för varje regel genom att öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> Commerce-parametrar** och välja fliken **Transaktionsvalidering**. Alla aktiverade regler används till att validera transaktioner under processen **Validera butikstransaktioner** och måste passera för att samla in och bokföra transaktioner på ett transaktionsutdrag.
 
-Som standard är status för varje regel inställd på **Aktiverad**. Därför används alla regler för att validera butikstransaktioner innan de hämtas till butiksutdragen. Om du vill inaktivera en regel ändrar du dess status till **Inaktiverad**. Inaktiverade regler beaktas inte när transaktioner valideras under utdragsberäkningsprocessen.
-
-Om du vill kringgå hela valideringsprocessen, oavsett vilka regler som aktiveras, går du till **Retail och Commerce \> Administrationsinställningar \> Parametrar \> Commerce-parametrar**, och sedan, på fliken **Transaktionsvalidering** ställer du in valet för **Inaktivera konsekvenskontroll för Commerce-transaktioner** på **Ja**. När alternativet är inställt på **Nej** kan det inte ställas tillbaka till **Ja** från användargränssnittet (UI).
-
+Som standard är status för varje regel inställd på **Aktiverad**. Därför används alla regler för att validera butikstransaktioner innan de går att hämta till handelstransaktionsutdragen. Om du vill inaktivera en regel ändrar du dess status till **Inaktiverad**. Inaktiverade regler beaktas inte när transaktioner valideras under processen **Validera butikstransaktioner**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

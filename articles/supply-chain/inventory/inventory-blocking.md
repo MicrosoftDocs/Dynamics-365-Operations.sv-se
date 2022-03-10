@@ -1,7 +1,7 @@
 ---
 title: Lagerspärr
 description: Det här avsnittet ger en översikt över lagerspärren, som är en del av kvalitetsinspektionsprocessen i Supply Chain Management. Du kan använda lagerspärr för att förhindra att artiklar bearbetas eller förbrukas.
-author: perlynne
+author: yufeihuang
 ms.date: 03/02/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 2094
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58dd5c5b3d7b2f077305fa4d420fc55702acbe7ebba049ae9ac78a1362ff2523
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 606bc23f552b57d0f4e3fdad28d1144cdf43e5d5
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770298"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103548"
 ---
 # <a name="inventory-blocking"></a>Lagerspärr
 
@@ -96,13 +96,11 @@ När **Reservera beställda artiklar** inaktiveras, kan de förväntade inlevera
 
 Observera skillnaden i transaktionsstatus och dimensioner mellan de två ärendena. Därför rekommenderar vi att du aktiverar alternativet **Reservera beställda artiklar**.
 
-<!-- KFM: (Enable this section when the feature leaves private preview)
+### <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory-feature"></a>Inaktivera förväntade inleveranser från kvalitetsorder som ger exempel på funktionen blockerat lager
 
-### Disable expected receipts from quality orders that sample blocked inventory feature
+För att förenkla lagertransaktionerna när det gäller kvalitetsorder som innehåller spärrat lager som en förfallen lagerstatus, innehåller systemet en funktion som inaktiverar förväntade inleveranser från sådana kvalitetsorder. Eftersom den förväntade inleveransen är omedelbart blockerad av lagerstatusspärr finns ingen reducering av lagerbehållningen på grund av den här ändringen.
 
-To simplify the inventory transactions in the case of quality orders that sample inventory blocked as a consequence of inventory status, the system provides a feature that disables expected receipts from such quality orders. As the expected receipt is in any case immediately blocked by inventory status blocking, there is no reduction of on-hand inventory because of this change.
-
--->
+Den här funktionen är inaktiverad som standard. Administratörer kan aktivera eller inaktivera det genom att söka efter funktionen *Inaktivera förväntade kvitton från kvalitetsorder som provar blockerat lager* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

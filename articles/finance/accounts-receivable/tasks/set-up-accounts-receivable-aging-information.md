@@ -1,12 +1,10 @@
 ---
 title: Ställ in och generera åldersfördelningsinformation för kundreskontra
 description: I den här handboken får du hjälp med att ställa in en åldersfördelningsperioddefinition, ålderkundsaldon och vysaldon i ålderssaldolistan och samlingssidan.
-author: mikefalkner
-manager: AnnBe
+author: abruer
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustVendReportInterval, CustAgingSnapshot, CustCollectionsPoolsListPage, CustCollections
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 19b60d5fcfba995d08f12d0548f41a0c3d2781fb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 996fb289c32a1819103fd67ffddc940dfd2870fb
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012096"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753570"
 ---
 # <a name="set-up-and-generate-accounts-receivable-aging-information"></a>Ställ in och generera åldersfördelningsinformation för kundreskontra
 
@@ -58,3 +56,6 @@ I den här handboken får du hjälp med att ställa in en åldersfördelningsper
 2. Välj en kund med ett saldo.
 3. Expandera faktarutan **åldersfördelning** om du vill visa åldersfördelningssaldon. Åldersfördelningsperioddefinitionen för faktarutan hämtas från standardåldersfördelningsperioddefinitionen som anges i parametrarna. Du kan ändra detta med menyn Inkasso.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

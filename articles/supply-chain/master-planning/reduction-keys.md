@@ -1,7 +1,7 @@
 ---
 title: Prognosreduceringnycklar
 description: Den här ämnet ger exempel som visar hur du ställer in en reduceringsnyckel. Den innehåller information om de olika reduceringsnyckelinställningarna och resultaten av varje nyckel. Du kan använda en reduceringsnyckel om du vill ange hur du ska minska prognosbehoven.
-author: roxanadiaconu
+author: ChristianRytt
 ms.date: 04/15/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 555f75df1b28d374f2a46481857902c2f9315809c082699355190c54e856899b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cbed77fd1abc0e4ae26e2b9ddcc01d3f4a84889f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736633"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570835"
 ---
 # <a name="forecast-reduction-keys"></a>Prognosreduceringnycklar
 
@@ -86,7 +86,18 @@ I det här fallet om du kör prognosplanering den 1 januari förbrukas kraven p�
 
 ### <a name="transactions--reduction-key"></a>Transaktioner - reduceringsnyckel
 
-Om du väljer **Transaktioner - reduceringsnyckel** prognosbehoven reduceras av de transaktioner som genomförs under de perioder som definieras av reduceringsnyckeln.
+Om du ställer in fältet **Metod som används för att minska prognosbehov** till *Transaktioner - reduceringsnyckel* reduceras prognosbehoven med de kvalificerade efterfrågetransaktioner som inträffar under de perioder som definieras av reduceringsnyckeln.
+
+Det kvalificerade behovet definieras i fältet **Minska prognos med** på sidan **Disponeringsgrupper**. Om du ställer in fältet **Minska prognos med** till *Order* beaktas endast försäljningsordertransaktioner som kvalificerade efterfrågan. Om du ställer in det till *Alla transaktioner* beaktas alla icke-koncerninterna lagertransaktioner som kvalificerade efterfrågan. Om koncerninterna order ska inkluderas när prognosen minskas ställer du in alternativet **Inkludera koncerninterna order** till *Ja*.
+
+Prognosreducering startar med den första (tidigaste) efterfrågeprognosposten i perioden för reduceringsnyckeln. Om kvantiteten för kvalificerade lagertransaktioner är större än kvantiteten på efterfrågeprognosraderna i samma reduceringsnyckelperiod, används saldot för lagertransaktionskvantiteten för att minska efterfrågeprognoskvantiteten under den föregående perioden (om det finns en oförbrukad prognos).
+
+Om ingen oförbrukad prognos finns kvar i den föregående perioden för reduceringsnyckeln används saldot för lagertransaktionerna för att minska prognoskvantiteten under nästa månad (om det finns en oförbrukad prognos).
+
+Värdet i fältet **Procent** på reduceringsnyckelns rader används inte när fältet **Metod som används för att minska prognosbehov** är inställt *Transaktioner - reduceringsnyckel*. Endast datumen används för att definiera perioden för reduceringsnyckeln.
+
+> [!NOTE]
+> Prognoser som bokförs på eller före dagens datum ignoreras och används inte för att skapa planerade order. Om till exempel din efterfrågeprognos för månaden genereras den 1 januari och du kör huvudplanering som inkluderar efterfrågeprognoser den 2 januari ignorerar beräkningen efterfrågeprognosraden som är daterad den 1 januari.
 
 #### <a name="example-transactions--reduction-key"></a>Exempel: Transaktioner - reduceringsnyckel
 

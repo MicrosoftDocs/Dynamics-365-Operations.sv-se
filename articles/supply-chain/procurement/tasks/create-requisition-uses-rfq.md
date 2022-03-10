@@ -1,7 +1,7 @@
 ---
 title: Skapa en rekvisition som använder en anbudsförfrågan
 description: I det här avsnittet visas hur du lägger till pris- och leverantörsinformation till en inköpsrekvisition från en anbudsförfråganprocess.
-author: kamaybac
+author: Henrikan
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqLi
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6083afe0e2bfafd337d572863a198330e8cb6cc8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f88d50c24e84b94128aa3fd567562f3240832910
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812144"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578066"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Skapa en rekvisition som använder en anbudsförfrågan
 

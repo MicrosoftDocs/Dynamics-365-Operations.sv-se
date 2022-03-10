@@ -1,12 +1,10 @@
 ---
 title: Bonusavskrivning
 description: Det här avsnittet innehåller en översikt över funktionen för bonusavskrivning.
-author: ShylaThompson
-manager: AnnBe
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBonus
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 3621
 ms.assetid: 835ec594-744e-461c-a676-1b9abc094173
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1500eb6dd74576e21708907229d60362a6534077
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 04ee70fab05d033923a675e0db5c62d3c938d0e4
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5257595"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674415"
 ---
 # <a name="bonus-depreciation"></a>Bonusavskrivning
 

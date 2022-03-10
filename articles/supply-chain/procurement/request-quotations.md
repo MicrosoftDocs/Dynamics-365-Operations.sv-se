@@ -1,29 +1,28 @@
 ---
 title: Anbudsförfrågningar (RFQ) – översikt
 description: Det här ämnet ger en översikt över anbudsförfrågningar (RFQ). Organisationer utfärdar anbudsförfrågan (RFQ) när de vill ta emot konkurrenskraftiga erbjudanden för de artiklar eller tjänster som de måste köpa.
-author: mkirknel
-manager: tfehr
+author: Henrikan
 ms.date: 10/05/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ, PurchRFQReplyFollowupItem, PurchRFQCaseVend, PurchRFQReplyFollowup, PurchRFQCaseAmendmentInfo, PurchRFQReplyFollowupCase, PurchRFQReplyStatus, PurchRFQCaseReplyFields, PurchRFQAddQuestionnaire, PurchRFQAmendmentWizard, PurchRFQReplyTableStatus, PurchRFQReplyTableListPage, PurchRFQCancelWizard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: 2154
+ms.custom:
+- "2154"
+- intro-internal
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd0ee376da52dc3b36ec32859283a410e5b71854
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 7338897feb2c3a28350d366f26eecc56f8eeb3fb
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438082"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983402"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Anbudsförfrågningar (RFQ) – översikt
 
@@ -40,13 +39,13 @@ Anbudsförfråganprocessen består av följande uppgifter:
 
 Följande bild ger en översikt över ändringarna i anbudsförfrågansprocessen.
 
-[![RFQ-process](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
+[![RFQ-process-](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
 
 Du kan skapa ett anbudsförfrågansärende från planerade order, från en inköpsrekvisition eller genom en manuell post. Anbudsförfrågansärendet är det grundläggande dokument som du använder för att skicka en anbudsförfrågan till varje leverantör.
 
 När du förbereder anbudsförfrågansärende och lägger till leverantörer väljer du **Sskicka** (**Sskicka och publicera** för offentliga sektorn) på anbudsförfrågansärendet. En journal för anbudsförfrågan skapas för varje leverantör som du har skickat anbudsförfrågan till. Du kan konfigurera utskriftsinställningarna för Skicka-åtgärden om du vill skriva ut en rapport för varje leverantör till ett arkiv, eller skicka en rapport varje leverantörs e-postadress. Dessutom kan du använda anbudsförfråganjournalen för varje leverantör för att generera en rapport som du kan skicka eller skicka om till en leverantör senare. Du kan även konfigurera åtgärden Skicka till att skapa ett svarsblad som leverantören kan fylla i.
 
-Nedan beskrivs processen för hantering av anbudsförfrågningar när leverantörsamarbete inte används. Om systemet är inställt för leverantörssamarbete kan leverantörer ange bud direkt i Supply Chain Management. För mer information, se [Leverantörssamarbeten med kunder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) och [Leverantörssamarbeten med externa leverantörer](vendor-collaboration-work-external-vendors.md).
+Nedan beskrivs processen för hantering av anbudsförfrågningar när leverantörsamarbete inte används. Om systemet är inställt för leverantörssamarbete kan leverantörer ange bud direkt i Supply Chain Management. För mer information, se [Leverantörssamarbeten med kunder](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) och [Leverantörssamarbeten med externa leverantörer](vendor-collaboration-work-external-vendors.md).
 
 Om du måste ändra en anbudsförfrågan när du har skickat den, kan du skicka anbudsförfrågan igen till leverantörer när du är klar med ändringen av två åtgärder: skapa och färdigställ.
 
@@ -81,23 +80,23 @@ På sidan **Anskaffnings- och källparametrar** väljer du mallen för e-postmed
 - %Orsak till att buden returneras%
 - %Orsak till ändring%
 - %Ändringen har förberetts av%
-- %Företag%
+- %Company%
 - %anbudsförfrågansärendets namn%
 - %Utgångsdatum%
-- %Datum%
+- %Date%
 
-Token för %Orsak till att buden returneras% och %Orsak till ändring% ersätts av text som prokuristen kan ange, när han eller hon avslutar ändringen i guiden **Ändring**. Värdena för token %Ändring förberedd av%, och %Företag% hämtas automatiskt från anbudsförfrågan. Token %Datum% ersätts av det innevarande datumet.
+Token för %Orsak till att buden returneras% och %Orsak till ändring% ersätts av text som prokuristen kan ange, när han eller hon avslutar ändringen i guiden **Ändring**. Värdena för token %Ändring förberedd av%, och %Company% hämtas automatiskt från anbudsförfrågan. Token %Date% ersätts av det innevarande datumet.
 
 Om du vill avbryta en anbudsförfrågan när den har skickats, kan du göra detta från anbudsförfrågansärendet. För annullering krävs en e-postmall för att skicka meddelande om annullering till leverantörens kontaktpersoner. Mallen måste markeras på sidan **Anskaffnings- och källparametrar**. När mallen skapas, kan den innehålla följande utbytestoken:
 
 - %Orsak till annullering%
 - %Anbudsförfrågansärende%
 - %Anbudsförfrågan annullerad av%
-- %Företag%
+- %Company%
 - %anbudsförfrågansärendets namn%
-- %Datum%
+- %Date%
 
-Token %Orsak till annulleringen% ersättas med text som anskaffningsproffset kan ange i guiden **annullering**. Token %Datum% ersätts av det innevarande datumet.
+Token %Orsak till annulleringen% ersättas med text som anskaffningsproffset kan ange i guiden **annullering**. Token %Date% ersätts av det innevarande datumet.
 
 Om du vill använda orsakskoder för ett anbud för att ange varför det accepterades eller avvisades, måste du ställa in orsakskoder på sidan **Leverantöranledningar**.
 
@@ -168,7 +167,7 @@ Om du konfigurerar ändringsprocessen till att vara mer restriktiv måste du inn
 
 Om du konfigurerar ändringsprocessen så att den blir mindre restriktiv behöver du inte välja **Skapa** innan du kan ändra fälten på ett anbudsförfrågansärende som redan har skickats. Du måste dock manuellt lägga till ett ändringsmeddelande på anbudsförfrågan och skicka ärendet igen. Tänk på att denna metod endast kan användas om inget svar (bud) har redigerats. Om du har angett ett svar och det befinner sig status **mottagen** är knappen **skicka** inte tillgänglig. I det här fallet måste du välja **skapa** och **slutför** såsom du måste göra i den mer restriktiva processen. Svaret återställs sedan till att återspegla ändringarna i anbudsförfrågansärendet.
 
-Om leverantörer använder gränssnittet för leverantörssamarbete måste du alltid använda ändringsprocessen för att meddela leverantörer om ändringar av anbudsförfrågansärendet. Denna process hjälper till att förhindrar situationen där leverantörer lägger bud på ett inaktuellt anbudsförfrågansärende när deras bud pågår. För mer information om leverantörssamarbetet, se [Leverantörssamarbeten med externa leverantörer](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+Om leverantörer använder gränssnittet för leverantörssamarbete måste du alltid använda ändringsprocessen för att meddela leverantörer om ändringar av anbudsförfrågansärendet. Denna process hjälper till att förhindrar situationen där leverantörer lägger bud på ett inaktuellt anbudsförfrågansärende när deras bud pågår. För mer information om leverantörssamarbetet, se [Leverantörssamarbeten med externa leverantörer](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Om du vill bjuda in ytterligare leverantörer till att lämna bud, och inga ändringar har gjorts i anbudsförfrågansärendet kan du använda knappen **skicka**. De leverantörer som du lade till visas på sidan **skicka** och kommer att ta emot e-postinbjudan.
 
@@ -247,3 +246,6 @@ I exemplet nedan du ser högsta/lägsta status på anbudsförfrågansärenden d�
 | Acceptera ett av buden. (eller minst en rad) |                          Inlevererat                           |                           Accepterade                           |                    Inlevererat                    |                    Accepterade                     |                   Inlevererat                   |                   Accepterade                    |
 |           Avvisa alla de andra buden.           |                          Avvisat                           |                           Accepterade                           |                    Avvisat                    |                    Accepterade                     |                   Avvisat                   |                   Godkänt                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

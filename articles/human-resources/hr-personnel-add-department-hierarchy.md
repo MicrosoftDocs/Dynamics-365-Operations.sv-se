@@ -1,29 +1,31 @@
 ---
 title: Skapa avdelningar och inkludera dessa i avdelningshierarkin
-description: En avdelning är en driftenhet som representerar en kategori eller verksamhetsområde inom en organisation. En avdelning är ansvarig för en viss del av organisationen, såsom försäljning, bokföring eller mänskliga resurser. Du kan använda avdelningar att rapportera om funktionella områden. Avdelningar kan ha vinst och förlust.
-author: andreabichsel
-ms.date: 06/20/2017
+description: En avdelning är en driftenhet som representerar en kategori eller verksamhetsområde inom en organisation. En avdelning är ansvarig för en viss del av organisationen, såsom försäljning, bokföring eller mänskliga resurser.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HierarchyDesigner, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 63213
 ms.assetid: 5dbc62fc-0184-4c0e-9856-e735fc68799e
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 3c4382336e53bc09c51dd845446af9a20a2ba8af
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8571b254a3dcdeaf562a97f165b8124f04ae7e6d
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794479"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068904"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Skapa avdelningar och inkludera dessa i avdelningshierarkin
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -33,15 +35,15 @@ En avdelning kan omfatta en grupp kostnadsställen. Positionerna kan tilldelas a
 
 | Fält               | Beskrivning                                                                                                                                                                                                       |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Namn                | Ange ett namn på avdelningen.                                                                                                                                                                                  |
-| Avdelningsnummer   | Ett standardvärde kan skapas automatiskt om en nummersekvens kod tilldelas **organisationsnummer** hänvisning på **nummersekvens** sida.                                                 |
-| Söknamn         | Ange ett namn eller en förkortning som kan användas för sökning för avdelningen.                                                                                                                                            |
-| Anteckning                | Ange eventuellt ytterligare information här.                                                                                                                                                                            |
-| I hierarki        | En vald kryssruta anger att avdelningen ingår i avdelningen hierarki. För information om hur man lägger till en avdelning till avdelning hierarki, se information senare i denna artikel. |
-| DUNS-nummer         | DUNS står för Data Universal antal System. Detta är en 9-siffrig kod som är utfärdade av Dun & Bradstreet.                                                                                                     |
-| Chef             | Ange den persona som hanterar avdelningen.                                                                                                                                                                    |
-| Adresser           | Lägga till adressinformation för avdelningen. Lägg till exempel till postadress till byggnaden där avdelningen finns.                                                                          |
-| Kontaktinformation | Lägg till kontaktinformation för avdelningen. Lägg till ett telefonnummer till avdelningens servicedesk, till exempel.                                                                                           |
+| **Namn**                | Ange ett namn på avdelningen.                                                                                                                                                                                  |
+| **Avdelningsnummer**   | Ett standardvärde kan skapas automatiskt om en nummersekvens kod tilldelas **organisationsnummer** hänvisning på **nummersekvens** sida.                                                 |
+| **Söknamn**         | Ange ett namn eller en förkortning som kan användas för sökning för avdelningen.                                                                                                                                            |
+| **Anteckning**                | Ange eventuellt ytterligare information här.                                                                                                                                                                            |
+| **I hierarki**        | En vald kryssruta anger att avdelningen ingår i avdelningen hierarki. För information om hur man lägger till en avdelning till avdelning hierarki, se information senare i denna artikel. |
+| **DUNS-nummer**         | DUNS står för Data Universal antal System. Detta är en 9-siffrig kod som är utfärdade av Dun & Bradstreet.                                                                                                     |
+| **Chef**             | Ange den persona som hanterar avdelningen.                                                                                                                                                                    |
+| **Adresser**           | Lägga till adressinformation för avdelningen. Lägg till exempel till postadress till byggnaden där avdelningen finns.                                                                          |
+| **Kontaktinformation** | Lägg till kontaktinformation för avdelningen. Lägg till ett telefonnummer till avdelningens servicedesk, till exempel.                                                                                           |
 
 Om du vill lägga till en avdelning till avdelning hierarki, följ dessa steg.
 
@@ -53,7 +55,7 @@ Om du vill lägga till en avdelning till avdelning hierarki, följ dessa steg.
 6.  När du är klar klickar du på **Publicera** i hierarkidesignern. Du kan ange ett giltighetsdatum som anger när hierarkin ska publiceras. Om du exempelvis vill lägga till en ny avdelning i början av nästa kalenderår, ställ in datumet 1 januari på det nya kalenderåret. Ändringarna i hierarkin kommer att träda i kraft den dagen.
 
 ## <a name="steps-for-creating-a-department"></a>Steg för att skapa en avdelning
-Hänvisa till ämnet [Definiera nya avdelningar](../fin-and-ops/hr/tasks/define-new-departments.md) för stegvisa anvisningar om hur du skapar en ny avdelning. 
+Hänvisa till ämnet [Definiera nya avdelningar](./hr-personnel-define-departments.md) för stegvisa anvisningar om hur du skapar en ny avdelning. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

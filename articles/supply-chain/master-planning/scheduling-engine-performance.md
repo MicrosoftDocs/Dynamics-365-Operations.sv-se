@@ -2,11 +2,9 @@
 title: Förbättra schemaläggningsmotorns prestanda
 description: I det här avsnittet finns information om schemaläggningsmotorn och hur du förbättrar prestandan.
 author: ChristianRytt
-manager: tfehr
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2c39a72d22c01faec3856e7f47cb6b3811447cab
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2495339f25469af705cff841f090c5df95b4d996
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983451"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578450"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Förbättra schemaläggningsmotorns prestanda
 
@@ -66,13 +64,13 @@ Det kan till exempel vara en väg som visas i följande tabell och bild, vilket 
 | --- | --- | --- | --- | --- | --- | --- |
 | 10 | Primär | 1.00 | 2.00 | | 1 | 20 |
 | 10 | Sekundär&nbsp;1 | | | | 1 | 20 |
-| 20 | Primär | | 3.00 | 1.00 | 3 | 0 |
+| 20 | Primärt | | 3.00 | 1.00 | 3 | 0 |
 
-![Exempel på ruttdiagram](media/scheduling-engine-route.png "Exempel på ruttdiagram")
+![Exempel på flödesdiagram.](media/scheduling-engine-route.png "Exempel på ruttdiagram")
 
 När du skickar detta till motorn delas det upp i åtta jobb, vilket visas i bilden nedan (markera bilden om du vill förstora den).
 
-[![Planera motorjobb](media/scheduling-engine-jobs.png "Planera motorjobb")](media/scheduling-engine-jobs-large.png)
+[![Planera motorjobb](media/scheduling-engine-jobs.png "Planera motorjobb.")](media/scheduling-engine-jobs-large.png)
 
 Standardlänken mellan två jobb är `FinishStart` vilket innebär att sluttiden för ett jobb måste infalla före starttiden för ett annat jobb. Eftersom inställningarna måste utföras av samma resurs som senare kommer att utföra processen, finns det `OnSameResource` begränsningar mellan dem. Mellan jobben för den primära och sekundära operationen för 10, finns `StartStart` och `FinishFinish` länkar, vilket innebär att jobben måste starta och sluta samtidigt och det finns `NotOnSameResource` begränsningar som förhindrar samma resurs för primär och sekundär.
 
@@ -328,3 +326,6 @@ Värdet för **Tidsgräns för optimeringsförsök** styr hur många sekunder so
 
 > [!NOTE]
 > De värden som anges för tidsgräns används både för planering av släppta produktionsorder och planerade order som en del av MPS. Det innebär att om du ställer in mycket höga värden kan du markant lägga till produktionstiden för MPS när den körs för en plan med många planerade tillverkningsorder.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

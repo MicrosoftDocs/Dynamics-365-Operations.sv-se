@@ -2,11 +2,9 @@
 title: Förbered programspecifika metadata för RCS och ER
 description: I det här avsnittet beskrivs hur du förbereder programspecifika metadata för RCS (Regulatory Configuration Service) och elektronisk rapportering (ER).
 author: NickSelin
-manager: AnnBe
 ms.date: 04/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
@@ -15,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f15b78d3ed5b4df47540f9f89cc69c0b535a7241
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9136bd3db2aee1447d6af3b3c47b908177cee966aba630490cc6e72072525d29
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680204"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735608"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Förbered programspecifika metadata för RCS och ER
 
@@ -280,3 +278,6 @@ När du behöver utvärdera den här modellmappningen med hjälp av metadata i e
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 Du kan också spela upp uppgiftsguiden **förbereda programmetadata som kan användas i RCS** i programmet och uppgiftsguiderna **Få åtkomst till programmets metadata med hjälp av en ER-konfiguration** och **Få åtkomst till programmetadata med hjälp av kopplade program** i RCS. De här uppgiftsguiderna kan hämtas på sidan [uppgiftsguiden elektronisk rapportering för Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

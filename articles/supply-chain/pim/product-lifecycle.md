@@ -1,29 +1,26 @@
 ---
 title: Produktens livscykeltillstånd – översikt
 description: Ett livscykeltillstånd för produkt beskriver livscykelstatusen för en frisläppt produkt eller produktvariant.
-author: cvocph
-manager: tfehr
+author: t-benebo
 ms.date: 01/06/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: kamaybac
+ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: cff4ee39d4c27e9a0dfc891e0f95278040ede877
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f71ce701adbe60b69b25e41810dda7adeec1d390
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4999791"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983804"
 ---
 # <a name="product-lifecycle-state-overview"></a>Produktens livscykeltillstånd – översikt
 
@@ -108,3 +105,6 @@ Använd följande kriterier för att välja och uppdatera frisläppta produkter 
 - [Tilldela ett produktlivscykeltillstånd för en frisläppt produkt](tasks/product-lifecycle-state-released-product.md)
 - [Söka efter föråldrade produktvarianter och tilldela ett produktlivscykeltillstånd](tasks/obsolete-product-variants.md)
 - [Skapa ett produktlivscykeltillstånd för att utesluta produkter från huvudplanering](tasks/exclude-products-master-planning.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

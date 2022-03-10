@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2c5ae1078e3490fef3383fc6d637df70128683e7
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: cb4693f3c856e7abcc39cbd658183d01ec98a066
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051027"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063757"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (14 maj 2020)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Human Resources. Ändringarna tillämpas på versionsnummer 8.1.3244. Siffror inom parenteser i vissa rubriker refererar till supportnummer i Lifecycle Services (LCS) för referens.
 
 ## <a name="platform-changes"></a>Plattformsändringar
 
-Plattformsändringar ingår i den här veckans version. Mer information finns i [Plattformsuppdateringar för version 10.0.10 av Finance and Operations-appar (maj 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). I den här versionen ingår felkorrigeringar och ändringar i sparade vyer.
+Plattformsändringar ingår i den här veckans version. Mer information finns i [Plattformsuppdateringar för version 10.0.10 av Ekonomi och Drift-appar (maj 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). I den här versionen ingår felkorrigeringar och ändringar i sparade vyer.
  
 ## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Kontrollera att Dataverse-plocklistor är konsekventa med uppräkningar (enum) för tjänstledighet (436343)
 

@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d152449b55ab111cf5bac363b38d32c3658a56e3
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: de8286c7612cd588b28cf4667340374906962dde
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359421"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8324072"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Återanvända ER-konfigurationer med Excel-mallar för att generera rapporter i Word-format
 
 [!include [banner](../../includes/banner.md)]
 
-För att generera rapporter som Microsoft Word-dokument kan du [konfigurera](../er-design-configuration-word.md) ett nytt [elektronisk rapportering (ER)](../general-electronic-reporting.md) [format](../general-electronic-reporting.md#FormatComponentOutbound). Du kan också återanvända ett ER-format som ursprungligen utformats för att generera rapporter som Excel-arbetsböcker. I så fall måste du ersätta Excel-mallen med en Word-mall.
+För att generera rapporter som Microsoft Word-dokument kan du [konfigurera](../er-design-configuration-word.md) ett nytt [elektronisk rapportering (ER)](../general-electronic-reporting.md) format. Du kan också återanvända ett ER-format som ursprungligen utformats för att generera rapporter som Excel-arbetsböcker. I så fall måste du ersätta Excel-mallen med en Word-mall.
 
 Följande procedurer visar hur en användare med rollen Systemadministratör eller Elektronisk rapporteringsutvecklare kan konfigurera ett ER-format för att generera rapporter som Word-filer genom att återanvända ett ER-format som har utformats för att generera rapporter som Excel-filer.
 
@@ -90,7 +90,7 @@ För närvarande används Excel-dokumentet som en mall för att skapa utdata i O
 
 Du kan nu mappa elementen i den anpassade **Rapport** XML-koden till innehållskontrollerna i Word-dokumentet.
 
-Om du känner till processen att utforma Word-dokument som formulär som innehåller [innehållskontroll](/office/client-developer/word/content-controls-in-word) som är mappade till delar av [anpassade XML-koder](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019), slutföra alla steg i nästa procedur för att skapa dokumentet. Mer information finns i [Skapa formulär som användare fyller i eller skriver ut i Word](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Hoppa annars över proceduren.
+Om du känner till processen att utforma Word-dokument som formulär som innehåller [innehållskontroll](/office/client-developer/word/content-controls-in-word) som är mappade till delar av [anpassade XML-koder](/visualstudio/vsto/custom-xml-parts-overview), slutföra alla steg i nästa procedur för att skapa dokumentet. Mer information finns i [Skapa formulär som användare fyller i eller skriver ut i Word](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Hoppa annars över proceduren.
 
 ## <a name="get-a-word-document-that-has-a-custom-xml-part-and-do-data-mapping"></a><a id='get-word-doc'></a>Hämta ett Word-dokument som har en anpassad XML-kod och mappa data
 

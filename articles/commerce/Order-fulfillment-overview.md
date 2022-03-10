@@ -1,9 +1,9 @@
 ---
 title: Orderuppfyllelse i butik
 description: Det här ämnet ger en översikt över orderuppfyllelse i butik.
-author: rubencdelgado
+author: BrianShook
 ms.date: 10/30/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 88665c70b05d9ecf8ec2641862d870d87604092f
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 36ce908e81639fbb836d33ff3e84976c395b1473
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193165"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983352"
 ---
 # <a name="store-order-fulfillment"></a>Orderuppfyllelse i butik
 

@@ -2,11 +2,8 @@
 title: FILTER ER-funktion
 description: Det här avsnittet innehåller information om hur funktionen FILTER elektronisk rapportering (ER) används.
 author: NickSelin
-manager: kfend
-ms.date: 12/12/2019
-ms.topic: article
+ms.date: 12/14/2021
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55fa3d4ad4427e2a45f7c5fce679c50a91c40b6d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e857306574dda7bad5dd25fc7708514997d8e86f
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679448"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922433"
 ---
 # <a name="filter-er-function"></a>FILTER ER-funktion
 
@@ -52,11 +49,17 @@ Ett giltigt villkorsuttryck som används för att filtrera poster i den angivna 
 
 Den resulterande listan med poster.
 
-## <a name="usage-notes"></a>Användningsanteckningar
+## <a name="usage-notes"></a><a name="usage-notes"></a>Användningsanteckningar
 
 Till skillnad från funktionen [WHERE](er-functions-list-where.md) tillämpas angivet villkor på alla ER-datakällor (elektronisk rapportering) av typen *Tabellregister* på databasnivå. Listan och villkoret kan definieras med hjälp av tabeller och relationer.
 
 Om ett eller båda argument som har konfigurerats för den här funktionen (`list` och `condition`) inte tillåter att den här begäran översätts till direkt SQL-anrop, genereras ett undantag vid designtillfället. Det här undantaget informerar användaren om att antingen `list` eller `condition` inte kan användas för att fråga databasen.
+
+> [!NOTE]
+> Funktionen `FILTER` fungerar på ett annat sätt än funktionen `WHERE` när [`VALUEIN`](er-functions-logical-valuein.md) används för att ange urvalskriterier.
+> 
+> - Om funktionen `VALUEIN` används inom funktionen `WHERE` område och det andra argumentet för `VALUEIN` gäller en datakälla som inte returnerar några poster, beaktas det booleska värdet *[False](er-formula-supported-data-types-primitive.md#boolean)*-värde som `VALUEIN` returnerar. Därför returnerar uttrycket `WHERE(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` inga leverantörsposter om datakällan **VendGroups** inte returnerar några leverantörsgruppposter.
+> - Om funktionen `VALUEIN` används inom funktionen `FILTER` område och det andra argumentet för `VALUEIN` gäller en datakälla som inte returnerar några poster, ignoreras det booleska värdet *[False](er-formula-supported-data-types-primitive.md#boolean)*-värde som `VALUEIN` returnerar. Därför returnerar uttrycket `FILTER(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` alla leverantörsposter som datakällan **Leverantörer** även om datakällan **VendGroups** inte returnerar några leverantörsgruppposter.
 
 ## <a name="example-1"></a>Exempel 1
 
@@ -73,3 +76,6 @@ Du anger datakällan **DS** för typen *beräknat fält* som innehåller uttryck
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Lista över funktioner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

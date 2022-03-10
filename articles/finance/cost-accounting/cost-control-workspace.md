@@ -2,11 +2,9 @@
 title: Arbetsyta för kostnadskontroll
 description: Det här avsnittet innehåller information om arbetsytan för kostnadskontroll. Den här arbetsytan är en central plats där chefer, som ansvarar för kontroll av ett kostnadsobjekt eller en uppsättning kostnadsobjekt i en dimension eller i flera dimensioner har åtkomst till rapporter.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22f441f7dc3d53fee263ebb059679510c2e3d054
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: db587f5526e0541fc81964d510000a42a671a9bd65224e7167b9d869475c3601
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226447"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763200"
 ---
 # <a name="cost-control-workspace"></a>Arbetsyta för kostnadskontroll 
 
@@ -118,7 +116,7 @@ Arbetsytan **kostnadskontroll** har utformats som en webbrapport. Därför kan a
 
 Listan över rapporter som är tillgängliga för användare, som t.ex. för chefer, styrs av inställningen av alternativet **publicerad** på sidan **Konfigurationer av arbetsyta för kostnadskontroll**.
 
-![En rapport som användare kan visa i arbetsytan för kostnadskontroll](./media/report-cost-control.png)
+![En rapport som användare kan visa i arbetsytan för kostnadskontroll.](./media/report-cost-control.png)
 
 En chef kan välja att visa räkenskapskalenderperioden. Sessionsdatumet används för att bestämma innevarande standardperiod.
 
@@ -138,11 +136,11 @@ Ett rutnät visar varje kostnadselement som är associerat med dimensionshierark
 
 Två diagram visar en översikt över utfall kontra budget och budgetavvikelse per period.
 
-![Diagram visar en översikt över utfall kontra budget och budgetavvikelse per period](./media/cost-element-details-operations.png)
+![Diagram visar en översikt över faktiskt utfall kontra budget och budgetavvikelse per period.](./media/cost-element-details-operations.png)
 
 Användare kan klicka på **kostnadstransaktioner** för att gå till postens detaljer som krävs.
 
-![Kostnadsposter](./media/cost-entries.png)
+![Kostnadsposter.](./media/cost-entries.png)
 
 Hyra är till exempel en utgift som distribueras till kostnadsställen. En användare som vill förstå om hans eller hennes kostnadsställe ska bära hyreskostnaden kan öka detaljnivån för att se hur hyra beräknas.
 
@@ -150,7 +148,7 @@ Om användaren klickar på **Allokeringsunderlag** på sidan **kostnadstransakti
 
 I följande exempel är allokeringsunderlaget av typen **Formelallokeringsunderlag** och formeln visas. De faktorer som definierar formeln visas. Dessutom visar ett rutnät beräkningen som görs per kostnadsobjekt.
 
-![Beräkningar per kostnadsobjekt](./media/cost-entries-allocation-base.png)
+![Beräkningar per kostnadsobjekt.](./media/cost-entries-allocation-base.png)
 
 Ytterligare resurser 
 

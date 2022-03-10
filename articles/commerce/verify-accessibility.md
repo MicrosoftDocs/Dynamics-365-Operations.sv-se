@@ -2,36 +2,30 @@
 title: Kontrollera tillgängligheten för sidinnehåll
 description: I det här avsnittet beskrivs hur du kontrollerar tillgängligheten för sidinnehåll i Microsoft Dynamics 365 Commerce.
 author: josaw1
-manager: annbe
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: fc3dca673510e1636f497bb7d5c295bebe025677
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 6f92d5c34896e284a40a4806cd83e469c2db4c9181c919d2d967dacc84076201
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4415958"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748458"
 ---
 # <a name="verify-page-content-accessibility"></a>Kontrollera tillgängligheten för sidinnehåll
-
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du kontrollerar tillgängligheten för sidinnehåll i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 När du är klar med att ändra en sida bör du se till att innehållet är tillgängligt för alla på webben. I handelsredigeringsverktyg kan du enkelt kontrollera tillgängligheten för sidans innehåll med hjälp av den integrerade [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-tjänsten. Den här tjänsten verifierar sidans innehåll mot de senaste [tillgänglighetsriktlinjerna för World Wide Web Consortium (W3C)](https://www.w3.org/standards/webdesign/accessibility).
 
@@ -85,3 +79,8 @@ Om du vill använda den integrerade tjänsten [Microsoft Accessibility Insights]
 [Utöka en produktsida](enrich-product-page.md)
 
 [Utöka en kategorilandningssida](enrich-category-page.md)
+
+[Skapa dynamiska näthandelssidor baserade på URL-parametrar](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

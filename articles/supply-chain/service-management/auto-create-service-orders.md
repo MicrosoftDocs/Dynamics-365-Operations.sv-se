@@ -1,29 +1,26 @@
 ---
 title: Skapa serviceorder automatiskt
 description: Du kan skapa serviceorder som baseras på ett serviceavtal för den giltiga perioden av serviceavtalet.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08fb7363ab87fd6a7f3d38406e72b1f542dc2c2a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1acf4620556fe7ec5ae40f0a98b0a23602e2524a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437847"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565195"
 ---
 # <a name="automatically-create-service-orders"></a>Skapa serviceorder automatiskt 
 
@@ -59,3 +56,6 @@ Serviceavtalet varar från 1 januari 2012 till 31 december 2012. Det finns två 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

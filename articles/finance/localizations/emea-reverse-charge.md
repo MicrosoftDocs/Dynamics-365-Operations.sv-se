@@ -12,12 +12,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b59be8b395826914e8196009c339c2ced5a4debf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818312"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594725"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mekanism för omvänd moms för moms/GST-schema
 
@@ -45,7 +45,6 @@ Du måste utföra följande inställningar om du vill använda omvänd moms.
 Vi rekommenderar att du använder olika momskoder för försäljning och inköp.
 
 <table>
-<body>
 <tr>
 <td><strong>Momskoder för försäljning</strong></td>
 <td>Skapa en momskod för försäljningsoperationer med omvänd moms (<strong>Skatt</strong> &gt; <strong>Indirekta skatter</strong> &gt; <strong>Moms</strong> &gt; <strong>Momskoder</strong>).
@@ -62,7 +61,6 @@ Den måste tilldela denna negativa momskod till en artikelmomsgrupp, och däreft
 <p>Mer information om &quot;Ange momsgrupper och artikelmomsgrupper&quot; finns i nästa avsnitt.</p>
 </td>
 </tr>
-</tbody>
 </table>
 
 ## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><a name="sales-tax-item-sales-tax-groups"></a>Ställ in momsgrupper och artikelmomsgrupper
@@ -121,7 +119,7 @@ När en inköpsfaktura med omvänd moms bokförs, skapas två momstransaktioner.
 
 I följande skärmbild har en transaktion riktningen **Momsfordran** och den andra transaktionen har riktningen **Momsskuld**. 
 
-![Bokförd moms](media/apac-sau-posted-sales-tax.png)
+![Bokförd moms.](media/apac-sau-posted-sales-tax.png)
 
 ## <a name="enable-reverse-charge-mechanism-for-vatgst-scheme-feature"></a><a name="enable-reverse-charge"></a>Aktivera funktionen mekanism för omvänd moms för moms/GST-schema
 På arbetsytan **Funktionshantering** söker du reda på funktionen och väljer **Aktivera**.

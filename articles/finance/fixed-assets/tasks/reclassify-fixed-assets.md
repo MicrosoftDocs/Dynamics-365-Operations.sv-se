@@ -1,7 +1,7 @@
 ---
 title: Omklassificera anläggningstillgångar
-description: Om du vill omklassificera en anläggningstillgång, måste du överföra den till en ny anläggningstillgångsgrupp eller tilldela ett nytt anläggningstillgångsnummer till den inom samma grupp.
-author: saraschi2
+description: Det här ämnet beskriver omklassificering av tillgångar. Om du vill omklassificera en anläggningstillgång, måste du överföra den till en ny anläggningstillgångsgrupp eller tilldela ett nytt anläggningstillgångsnummer till den inom samma grupp.
+author: moaamer
 ms.date: 05/14/2019
 ms.topic: business-process
 ms.prod: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fbfb754459fad1f3b1509f4f9c65c20e0385b013
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: a5fadebe685810d6833d1cb0581ed9a4869cc124
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944725"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883656"
 ---
 # <a name="reclassify-fixed-assets"></a>Omklassificera anläggningstillgångar
 
@@ -45,7 +45,7 @@ När en anläggningstillgång omklassificeras:
 
 Följande diagram och procedur ger ett exempel på omklassificeringsprocessen. 
 
-[![Diagram som visar omklassificeringsprocessen](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
+[![Diagram som visar omklassificeringsprocesser.](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
 
 Följ dessa steg för att omklassificera en anläggningstillgång:
 

@@ -2,7 +2,7 @@
 title: Etablera Human Resources
 description: I detta ämne får du veta hur du skapar en ny produktionsmiljö för Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/11/2021
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 766e807ee9061f52b692cf3436ba393b334e67c4
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 0c856bca32c3dee44469c098961d85b4d8cb70a6
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488093"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060448"
 ---
 # <a name="provision-human-resources"></a>Etablera Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 I detta ämne får du veta hur du skapar en ny produktionsmiljö för Microsoft Dynamics 365 Human Resources. 
 
@@ -44,12 +44,12 @@ Innan du provisioner din första resurs eller produktionsmiljö kan du använda 
 
 Med utvärderingsmiljöer kan du utvärdera personalfunktioner för personer som inte redan har tillgång till en personalmiljö. Om du inför en utvärderingsmiljö och den autentiserade användaren redan har tillgång till en eller flera befintliga personalmiljöer, omdirigeras användaren till den befintliga miljön eller listan över miljöer.
 
-Testmiljöer är inte avsedda att användas som produktionsmiljöer. De är begränsade till en 60-dagars försöksperiod. När utvärderingsperioden löper ut är miljön och all data inte raderas och kan inte återställas. Miljön kan inte konverteras till en produktions- eller tillverkningsmiljö. Du kan registrera dig för en ny bedömningsmiljö när den befintliga miljön har gått ut.
+Testmiljöer är inte avsedda att användas som produktionsmiljöer. De är begränsade till en 30-dagars försöksperiod. När utvärderingsperioden löper ut är miljön och all data inte raderas och kan inte återställas. Miljön kan inte konverteras till en produktions- eller tillverkningsmiljö. Du kan registrera dig för en ny bedömningsmiljö när den befintliga miljön har gått ut.
 
 När du skapar en Human Resources-utvärderingsmiljö skapas också en Power Apps-utvärderingsmiljö i klientorganisationen och kopplas till Human Resources-miljön. Power Apps-miljön, med namnet "TestDrive", har samma utvärderingsperiod som Human Resources-miljön.
 
 > [!NOTE]
-> Om den autentiserade användaren inte har behörighet att skapa Power Apps-utvärderingsmiljöer kommer det inte att gå att etablera en Human Resources-utvärderingsmiljö. Användaren måste inkluderas i den användargrupp som kan skapa utvärderingsmiljöer i Power Platform-administratörscenter. Mer information finns i [Kontrollera vem som kan skapa och hantera miljöer i Power Platform-administratörscenter](//power-platform/admin/control-environment-creation).
+> Om den autentiserade användaren inte har behörighet att skapa Power Apps-utvärderingsmiljöer kommer det inte att gå att etablera en Human Resources-utvärderingsmiljö. Användaren måste inkluderas i den användargrupp som kan skapa utvärderingsmiljöer i Power Platform-administratörscenter. Mer information finns i [Kontrollera vem som kan skapa och hantera miljöer i Power Platform-administratörscenter](/power-platform/admin/control-environment-creation).
 
 ## <a name="plan-human-resources-environments"></a>Planera Personal-miljöer
 

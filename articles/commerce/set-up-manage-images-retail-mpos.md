@@ -2,11 +2,9 @@
 title: Ställa in och hantera bilder för Modern POS (MPOS)
 description: Den här artikeln beskriver stegen som ingår i hur du ställer in och hanterar avbildningar för de olika entiteterna som visas i Modern POS (MPOS).
 author: athinesh99
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1139d4c826b6c35f1a6660d3880449e495473441
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 71b90b1bc93c756731960871a0cb7b1e5f416a825399cd135dfbcc7656d6bf65
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5264514"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755041"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Ställa in och hantera bilder för Modern POS (MPOS)
 
@@ -48,11 +46,11 @@ I följande procedurer ställs in bilder för katalogenheten till exempel. Dessa
 1. Öppna Commerce HQ portal.
 2. Klicka på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kanalprofiler**.
 
-    [![Navigering](./media/channel-profile1.png)](./media/channel-profile1.png)
+    [![Navigering.](./media/channel-profile1.png)](./media/channel-profile1.png)
 
 3. I kanalprofilen, som din butik använder för MPOS, uppdatera **Mediabas-URL**-fältet med bas-URL för din mediaserver eller CDN. Bas-URL är den första delen av URL som delas av alla bildmappar för olika enheter.
 
-    [![Sidan Kanalprofiler](./media/channel-profile2.png)](./media/channel-profile2.png)
+    [![Sidan Kanalprofiler.](./media/channel-profile2.png)](./media/channel-profile2.png)
 
 ### <a name="define-the-media-template-for-an-entity"></a>Definiera mediamallen för en enhet
 
@@ -70,7 +68,7 @@ I följande procedurer ställs in bilder för katalogenheten till exempel. Dessa
 8. Kör synkroniseringjobben för att flytta den nya mallen till kanaldatabasen, så att MPOS kan använda mallen för åtkomst till bilderna.
 9. För att uppdatera mediamallen för katalogbilder på kanalsidan, kontrollera att du kör **Katalogjobb 1150** från **Butik och handel-IT** &gt; **Distributionsschema**.
 
-    [![Definiera dialogrutan mediamall](./media/catalog1.png)](./media/catalog1.png)
+    [![Definiera dialogrutan för mediamall.](./media/catalog1.png)](./media/catalog1.png)
 
 ## <a name="previewing-an-image-from-the-entity-level"></a>Granska en bild ur enhetsnivå
 
@@ -79,7 +77,7 @@ I följande procedurer ställs in bilder för katalogenheten till exempel. Dessa
 3. Du kan använda **Lägg till** och **Ta bort** knapparna som manuellt ändrar sökvägen baserat på den implicita mallen och använda för en viss bild. Mer information finns i [Skriva över mediamallen för enhetsartiklar](#overwriting-the-media-template-for-entity-items) senare i denna artikel.
 4. När du är klar att granska en bild och med de ändringar som du behöver, starta MPOS-instansen för den aktuella butiken och se om katalogbilderna visas.
 
-    [![Dialogrutan bilder](./media/catalog4.png)](./media/catalog4.png)
+    [![Dialogrutan Bilder.](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
 > Du kan använda samma procedur för alla fem enheter som stöds: Arbetare, kund, katalog, kategori och produkter. ”Katalogprodukter” (produkter som anges på katalognivån), och " kanalprodukter " (produkter som anges på kanalnivån) använder mediamallen som anges för produktenheten. För produktmediamallen kan du välja antalet produktbilder som du vill visa per produkt. Du kan även ange standardbilden för en viss produkt. På så sätt kan du förebygga tomma bilder i MPOS och få hjälp att kontrollera vilken bilden som används som standardbild för en produktartikel. I följande exempel har varje produkt fem bilder, och den första bilden anges som standardbilden. Variantprodukter hanteras på samma sätt som huvudplaneringsprodukter. Filnamnet på bildfilen ska baseras på produktnumret. Vissa tecken undantas också medan filnamnet skapas. Därför är det bra att verifiera filnamnet genom att använda **Skapa bild-URL för Excel** avsnittet. Se avsnittet [Skriv över genom att använda Redigera i Excel](#overwrite-by-using-edit-in-excel) senare i den här artikeln.
@@ -110,7 +108,7 @@ Som du lärde dig i det föregående avsnittet, stöder mediamallen för en viss
 
     Du ser nu en förhandsgranskning av bild-webbadresserna som har genererats utifrån den senast sparade mediamallen.
 
-    [![Generera bid-URL:r för snabbfliken Excel efter att Generera har valts](./media/excel2.png)](./media/excel2.png)
+    [![Generera bild-URL:r för snabbfliken för Excel efter det att Generera har valts.](./media/excel2.png)](./media/excel2.png)
 
     > [!NOTE]
     > De webbadresser som genereras för Excel använder sökvägen och konventionerna i den definierade mediamallen. Dessa inkluderar konventioner för filnamn. Förväntan är att du har ställt in de fysiska bilderna utanför Commerce och bilderna kan hämtas från URL som härleds från mediamallen, som du tidigare definierade. Du kan skriva över härledda URL genom att använda Redigera i Excel-funktionen.
@@ -119,17 +117,17 @@ Som du lärde dig i det föregående avsnittet, stöder mediamallen för en viss
 6. Klicka på **Aktivera redigeringen** när du uppmanas, efter att Microsoft Excel kalkylbladet har öppnats.
 7. Klicka på i högra fönstret **Har förtroende här tilläggsprogram** och väntar på tilläggsprogrammet för att slutföra installationen, när du uppmanas.
 
-    [![Lita på det här tillägget](./media/excel4.jpg)](./media/excel4.jpg)
+    [![Lita på det här tillägget.](./media/excel4.jpg)](./media/excel4.jpg)
 
 8. Om du uppmanas att logga in, anger du den inloggningsinformation som du använde för att logga in på huvudkontoret.
 
-    [![Inloggningsuppmaning](./media/excel5.png)](./media/excel5.png)
+    [![Inloggningsuppmaning.](./media/excel5.png)](./media/excel5.png)
 
 9. När du har signerat in, ska du vara en stånd till att visa listan över bildURL för de olika av katalogposterna.
 10. Du lägger till, redigera och ta bort bildURL för olika enhetartiklar.
 11. För alla enheter utom produkter kan du skriva över bildURL. Ändra befintlig bildURL, så att den använder den nya målURL av bilden, uppdatera och filnamn med den nya filnamn för den bildfil. Filnamnet måste vara unikt att garantera att posten är unikt.
 
-    [![Skriv över bild-webbadresserna i Excel](./media/excel6.jpg)](./media/excel6.jpg)
+    [![Skriv över bild-webbadresserna i Excel.](./media/excel6.jpg)](./media/excel6.jpg)
 
     > [!NOTE]
     > När du skriver över bild-webbadresser för produktenheter genom att använda redigeringsfunktionen (Edit) i Excel eller sidan för enhetsartikel, visar MPOS alltid samtliga bild-webbadresser för mediamallar tillsammans med de överskriva bild-webbadresserna.
@@ -155,11 +153,11 @@ För alla enheter utom produkter kan du skriva över bildURL för en viss enheta
 3. Om du vill att den här bild ska visas i MPOS för katalogen, kan du ange den som standardinställningbilden.
 4. Klicka på **OK**. BildURL uppdateras för den här katalogbild, och en förhandsgranskning visas.
 
-    [![URL uppdaterad i dialogrutan ny bild](./media/preview3.png)](./media/preview3.png)
+    [![URL uppdaterad i dialogrutan Ny bild.](./media/preview3.png)](./media/preview3.png)
 
 5. Du kan även se bildförtitten för alla överskrivavna bildURL på gallerisidan **Katalogbilder**.
 
-    [![Katalogbildgallerisidan](./media/preview-4.png)](./media/preview-4.png)
+    [![Gallerisida för katalogbilder.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
 > För närvarande visas galleriet inte förhandsgranskning av bilder för URL för medium mallbild. För katalog-, arbetare-, kund och kategorienheter om användaren innehåller tydligt en URL via den här sidan, rekommenderar vi att du anger vilken bild är standardinställningbilden, eftersom Skalningsenhet för handel serverklienter visar bara en bild per katalog, kund, anställd och kategori. Om användaren inte anger en standardinställningbild, bestämmer systemet standardinställningbilden och skicka den till Commerce-menyn uppringangen tjänst (MPOS eller ecommercen).
@@ -174,7 +172,7 @@ Om du vill skriva över bildURL för katalogproduktbilder måste du använda sid
 4. Klicka **Lägg till** på, och skriver över bildURL med en ny URL-adressen.
 5. Klicka på **OK**. Du ser förhandsgranskning av den och välj den kan nu ange den som standardinställningbilden.
 
-    [![Förhandsgranskning av bild i dialogrutan ny bild](./media/cat3.png)](./media/cat3.png)
+    [![Förhandsgranskning av bild i dialogrutan Ny bild.](./media/cat3.png)](./media/cat3.png)
 
 > [!NOTE]
 > När du har kategoribildassociation, måste du publicera kanalen och köra kanaljobbet att garantera att ändringarna publiceras på kanaldatabasen.
@@ -195,7 +193,7 @@ Produktbilderna, som måste användas i frånkopplat leveranssätt, kan ställas
 6. Kör katalogjobbet i Huvudkontor, medan att se till MPOS är anslutet i form, att data skickas minst en gång till offlinedatabasen.
 7. Sätt MPOS till frånkopplat läge. Du bör se den bild du överför för den specifika Huvudkontor i produkten.
 
-    [![Produktbild i offlineläge](./media/offline1.png)](./media/offline1.png)
+    [![Produktbild i offlineläge.](./media/offline1.png)](./media/offline1.png)
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>Ställ in katalogen, kategori, medarbetare och kundbilder som ska visas i det läget för MPOS offline
 
@@ -207,7 +205,7 @@ Katalogen, kategori, medarbetare och kundbilderna, som måste användas i frånk
 4. Kör katalogjobbet. Den bild du vill använda nu som den offline bilden för den katalog i MPOS.
 5. Följ en liknande process för andra enheter, till exempel kategori, medarbetare och kund.
 
-    [![Offlineläge](./media/offline2.png)](./media/offline2.png)
+    [![Offlineläge.](./media/offline2.png)](./media/offline2.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

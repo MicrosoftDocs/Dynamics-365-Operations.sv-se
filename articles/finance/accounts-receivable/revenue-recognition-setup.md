@@ -2,7 +2,7 @@
 title: Inställning för intäktsredovisning
 description: I det här avsnittet beskrivs inställningsalternativen för intäktsredovisning och deras konsekvenser.
 author: kweekley
-ms.date: 08/24/2018
+ms.date: 11/24/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: b5ffd86d736cb7b6b5c270663c2b774e14556a6b
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675211"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867230"
 ---
 # <a name="revenue-recognition-setup"></a>Inställning för intäktsredovisning
 [!include [banner](../includes/banner.md)]
@@ -61,7 +61,7 @@ Det första scenariot inträffar när alla avtalade förpliktelser har uppfyllts
 
 Det andra scenariot inträffar när en journal skapas efter omallokeringen. Omallokering sker när en försäljningsorderrad läggs till i en tidigare fakturerad försäljningsorder, eller när en ny försäljningsorder skapas som innehåller en rad som ingår i det ursprungliga kontraktet. Om en faktura har bokförts innan den nya försäljningsorderraden har lagts till måste en korrigerande redovisningstransaktion skapas för den bokförda kundfakturan.
 
-Journalen ställs in på sidan **Journalnamn** (**Intäktsredovisning \> Inställningar \> Journalnamn**). Journaltypen måste ställas in på **Intäktsredovisning**. Med hjälp av journalen för intäktsredovisning väljer du vilket bokföringsskikt som ska bokföras.
+Journalen ställs in på sidan **Journalnamn** (**Intäktsredovisning \> Inställningar \> Journalnamn**). Journaltypen måste ställas in på **Intäktsredovisning**. 
 
 ## <a name="parameters-for-revenue-recognition"></a>Parametrar för intäktsredovisning
 

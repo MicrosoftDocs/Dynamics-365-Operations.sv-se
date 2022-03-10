@@ -2,29 +2,26 @@
 title: Kostnadsobjekt
 description: Det här avsnittet innehåller information om kostnadsobjekt och en beskrivning av hur kostnader och kvantiteter ackumuleras. Ett kostnadsredovisning är ett objekt som kostnader och kvantiteter ackumuleras för. En kostnadsobjektenhet kan vara antingen en produkt eller produktvarianter såsom varianter för stil och färg.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostOnhandItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19451
 ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85e590322c75cfb2ad21236af56656061037a4b7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d27e2dcfd8f70c8d4b0f2ae1254f3c4fce63bb4d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437809"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572179"
 ---
 # <a name="cost-objects"></a>Kostnadsobjekt
 
@@ -67,18 +64,20 @@ Följande tabell visar vad som är ett kostnadsobjekt och vad som är ett lagero
 
 **Obs!** Parametern **Inkludera fysiskt värde** påverkar inte de tidigare beräkningarna.
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
-[Produktdimensionsgrupp](https://technet.microsoft.com/library/aa499382.aspx)
+[Produktdimensionsgrupp](/dynamicsax-2012/appuser-itpro/about-product-dimensions)
 
-[Lagringsdimensionsgrupp](https://technet.microsoft.com/library/hh209317.aspx)
+[Lagringsdimensionsgrupp](/dynamicsax-2012//storage-dimension-groups-form)
 
-[Spårningsdimensionsgrupp](https://technet.microsoft.com/library/hh209465.aspx)
+[Spårningsdimensionsgrupp](/dynamicsax-2012//tracking-dimension-groups-form)
 
-[Nyheter eller ändringar](../../fin-and-ops/get-started/whats-new-changed.md)
+[Nyheter eller ändringar](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 
 [Kostnadsposter](cost-entries.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

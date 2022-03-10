@@ -2,7 +2,6 @@
 title: Power BI ER-målstyper
 description: Det här avsnittet innehåller information om hur du konfigurerar Power BI ER-måltyp för utgående dokument.
 author: NickSelin
-manager: AnnBe
 ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 10.0.09
-ms.openlocfilehash: a6b6a2e4bc3c0eca8185f501121d9d1ba1b4e063
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 499447b05ef6360cde95049e592d7c9ffe2da1c4ff26937482033b9f705c3acd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561984"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777438"
 ---
 # <a name="power-bi-destination"></a>Power BI-destination
 
@@ -31,7 +30,7 @@ Du kan konfigurera ett Microsoft Power BI-destination för varje mapp- eller fil
 
 Ange **Aktiverad** till **Ja** om du vill använda din ER-konfiguration för att ordna överföringen av data från din Dynamics 365 Finance-instans till Microsoft Power BI-tjänster. De överförda filerna lagras i en Microsoft SharePoint-serverinstans som måste ha konfigurerats för det syftet. Mer information finns i [Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
-[![Sidan Destinationsinställningar](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)
+[![Sidan Destinationsinställningar.](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 38099909f169391c17760ac381af07f0848fc384
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: af76169455cef16467b1faa9eda92a969aa923e85750cf245b0a6bd071a092e8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797489"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731017"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Lägg till rekommendationer på transaktionsskärmen
 
@@ -43,7 +43,7 @@ Du kan visa produktrekommendationer på din kassaenhet när du använder Commerc
 6. När du loggar in visas en sida som liknar den nedanstående. Layouten är olika beroende på de anpassningar som gjorts för din butik.
 
 
-    [![Layoutdesigner](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![Layoutdesigner.](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## <a name="choose-a-display-option"></a>Välj ett visningsalternativ
 
@@ -58,11 +58,11 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 1. Minska höjden på detaljområdet för transaktionsrader så att denna är samma höjd som hos kundpanelen till vänster.
 
 
-    [![Höjden på detaljområdet för transaktionsrader har reducerats](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![Höjden på detaljområdet för transaktionsrader har reducerats.](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. Från menyn till vänster, dra och släpp rekommendationskontrollen mellan detaljområdet för transaktionsrad och knappsatsen längst ned i mitten längst på transaktionsskärmen. Ändra storlek på kontrollen så att den passar in i utrymmet.
 
-    [![Rekommendationskontroll som läggs till i layouten](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![Rekommendationskontroll som lagts till i layouten.](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 
 3. Klick på **X** för att spara och stänga layoutdesignern.
@@ -77,13 +77,13 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 
 2. Klicka på **anpassa**.
 
-    [![Anpassning – dialogrutan flikkontroll](./media/pic-5.png)](./media/pic-5.png)
+    [![Anpassning – dialogrutan Flikkontroll.](./media/pic-5.png)](./media/pic-5.png)
 
 3. Klicka på **Ny flik**.
 4. Hitta den nya fliken som du just skapade. Du kan behöva rulla nedåt.
 5. I listrutan **Innehåll** väljer du **Rekommenderade produkter**.
 
-    [![Välja rekommenderade produkter i fältet Innehåll](./media/pic-6.png)](./media/pic-6.png)
+    [![Välja rekommenderade produkter i fältet Innehåll.](./media/pic-6.png)](./media/pic-6.png)
 
 6. I fältet **Etikett** anger du ett namn för rekommendationsfliken. Skriv till exempel ”Rekommenderade produkter”.
 7. I fältet **Bild** väljer du den bild du vill visa i fliken.

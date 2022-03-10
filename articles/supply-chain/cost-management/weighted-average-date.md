@@ -2,11 +2,9 @@
 title: Datum för viktat medelvärde
 description: Datum för viktat medelvärde är en lagermodell som bygger på principen om viktat medelvärde, där utleveranser från lagret värderas till medelvärdet av artiklarna som inlevereras till lagret för varje dag i lagerstängningsperioden.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f82a7b9f21d27ff368bc7c5824055bf29ce20e8a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ce056a661130d30426ccfa4c288a0ce5b62ff959
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235494"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572035"
 ---
 # <a name="weighted-average-date"></a>Datum för viktat medelvärde
 
@@ -41,7 +39,7 @@ Viktat medelvärde = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 
 
 Under lagerstängningen utförs beräkningen dagligen under hela stängningsperioden vilket visas i följande bild. 
 
-![Modell för daglig beräkning av viktat medeldatum](./media/weightedaveragedatedailycalculationmodel.gif) 
+![Modell för daglig beräkning av viktat medeldatum.](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 Lagertransaktioner som lämnar lagerinleveranserna, bland anat försäljningsorder, lagerjournaler, inköpskreditfakturor och tillverkningsorder, gör det med en uppskattad självkostnad vid bokföringsdatumet. Denna uppskattade självkostnad kallas också för löpande genomsnittlig självkostnad. På datumet för lagerstängningen analyserar systemet lagertransaktionerna för föregående perioder, föregående dagar och den aktuella dagen. Denna analys används för att avgöra vilken av följande stängningsprinciper som ska användas:
 
@@ -74,7 +72,7 @@ Illustrationen som följer visar dessa transaktioner:
 -   2b. Lagrets ekonomiska utleverans uppdateras med kvantiteten 2 med en kostnad på 100,00 kronor vardera.
 -   3. Lagerstängningen utförs med den direkta kvittningsmetoden som kvittar lagrets ekonomiska inleverans mot lagrets ekonomiska utleverans.
 
-![Viktat genomsnittligt datum med direkt kvittning utan alternativet Inkludera fysiskt värde](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![Viktat genomsnittligt datum med direkt kvittning utan alternativet Inkludera fysiskt värde.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Förklaring till bilden:**
 
@@ -128,7 +126,7 @@ Systemet skapar och bokför den summerade lageröverföringstransaktionen. Dessu
 
 I bilden nedan visas hur den här serien med transaktioner påverkas när du väljer lagermodellen för viktat medelvärde med den summerade kvittningsprincipen utan alternativet **Inkludera fysiskt värde**. 
 
-![Viktat genomsnittligt datum med summerad kvittning utan alternativet Inkludera fysiskt värde](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Viktat genomsnittligt datum med summerad kvittning utan alternativet Inkludera fysiskt värde.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Förklaring till bilden**
 
@@ -177,7 +175,7 @@ Du kan markera ett problem transaktion till en inleverans innan en transaktion b
 
 Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 275,00 kronor. I bilden nedan visas hur den här serien med transaktioner påverkas om du väljer lagermodell med datum för viktat medelvärde och markering.
 
-![Viktat genomsnittligt datum med markering](./media/weightedaveragedatewithmarking.gif) 
+![Viktat genomsnittligt datum med markering.](./media/weightedaveragedatewithmarking.gif) 
 
 **Förklaring till bilden:**
 

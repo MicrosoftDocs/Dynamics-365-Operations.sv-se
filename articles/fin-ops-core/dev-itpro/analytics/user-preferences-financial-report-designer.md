@@ -2,7 +2,6 @@
 title: Användarinställningar i designer för ekonomiska rapporter
 description: Den här artikeln ger en beskrivning av hur du gör användarinställningar för att anpassa användarinteraktioner i en ekonomisk rapportdesigner och kontrollerar den inledande inloggningen.
 author: aprilolson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bc8308ab8f856adf5045af5f005c95bffb8ad864
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 1f4c9bdde367044cfbf736c1aecbe0387031309318a7bf929f1b9ba2fd9368be
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561134"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724379"
 ---
 # <a name="user-preferences-in-financial-report-designer"></a>Användarinställningar i designer för ekonomiska rapporter
 

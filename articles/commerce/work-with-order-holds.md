@@ -2,11 +2,9 @@
 title: Konfigurera och arbeta med orderspärrar för kundtjänst
 description: Det här avsnittet beskriver hur du arbetar med undantag för order med Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 55b794029ec765162ccfca1f39f3816c6772273d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f474b5936f2ae154ad54185becd91865642e8efe3cf10e7dcdbb650c6c833b21
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000444"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762606"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurera och arbeta med orderspärrar för kundtjänst
 
@@ -45,7 +43,7 @@ Order som kundtjänst skapar i back officnäthandelsprogrammet kan spärras manu
 
 Under orderregistreringen och innan beställningen gjordes och bekräftades ska användare kunna lägga order manuellt eller spärra för att förhindra att de övergår till distributionslagret för vidare bearbetning. Till exempel om kunden som gör beställningen inte är redo eller viktiga data som krävs för att bearbeta ordern kanske saknas.
 
-På orderns startsida kan användaren av kundtjänst spärra en order med hjälp av alternativet **Orderspärrar** på fliken **försäljningsorder** på orderregistreringsmenyn. Alternativt kan du välja menyobjektet **spärra** på sidan **sammanfattning av försäljningsorder** som visas när han eller hon väljer **slutförd** på en kundtjänsts försäljningsorder.
+På orderns startsida kan användaren av kundtjänst spärra en order med hjälp av alternativet **Orderspärrar** på fliken **försäljningsorder** på orderregistreringsmenyn. Alternativt kan användaren välja menyobjektet **Spärra** på sidan **Sammanfattning av försäljningsorder** som visas när användaren väljer **Slutförd** på en kundtjänsts försäljningsorder.
 
 I båda fallen visas sidan **Orderspärrar**. Användaren kan sedan välja **Ny** för att skapa ett undantag för ordern. I fältet **spärrkod** ska användaren välja den kod som bäst beskriver orsaken till spärrningen. I fältet **orsakskod** kan användaren också välja en ytterligare kod för att skapa en andra beskrivning av spärrningen.
 
@@ -55,7 +53,7 @@ När spärrningsinformation registrerats och sparats, kan användaren stänga si
 
 Om flaggan **aktiverar slutförande av order** är aktiverad i kundtjänstkanalen behöver betalningen inte gälla för en order som har spärrats. Däremot för en försäljningsorder som inte är spärrad kan användarna inte lämna startsidan för försäljningsorder förrän betalningen görs. Betalning kommer förstås att krävas innan orderspärren frisläpps.
 
-Kundtjänst kan dessutom lägga en manuell bedrägerispärr för order som av någon anledning är osäkra. Order kan också spärras automatiskt när de matchar aktiva bedrägerikriterier och regler. Mer information om den här typen av orderspärr, se [ställa in bedrägerivarningar](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+Kundtjänst kan dessutom lägga en manuell bedrägerispärr för order som av någon anledning är osäkra. Order kan också spärras automatiskt när de matchar aktiva bedrägerikriterier och regler. Mer information om den här typen av orderspärr, se [ställa in bedrägerivarningar](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Visa och hantera de order som har spärrats
 
@@ -102,3 +100,6 @@ Om användaren vill ta bort ett undantag, men gör ytterligare ändringar i orde
 ## <a name="reporting-options"></a>Rapporteringsalternativ
 
 Gå till **Butik och handel** \> **förfrågningar och rapporter** \> **kundtjänstrapporter** \> **Orderspärrrapport** om du vill köra en rapport om orderspärrar efter datumintervall, spärrkod eller andra relaterade kriterier.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

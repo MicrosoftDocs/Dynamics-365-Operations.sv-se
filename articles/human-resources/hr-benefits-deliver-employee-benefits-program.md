@@ -1,31 +1,33 @@
 ---
 title: Utveckla förmånsprogram för medarbetare
-description: Den här artikeln visar hur du skapar förmånselement som ska användas när du skapar en ny förmån.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: Detta ämne förklarar hur du skapar förmånselement som ska användas när du skapar en ny förmån.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: cc02346ebccd04f2b4f6fc7029717a8793d75e0d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 868ddb9b372b90ec75a5f35ebf3c987f2d39bd74
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420616"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066078"
 ---
 # <a name="deliver-employee-benefits-program"></a>Utveckla förmånsprogram för medarbetare
 
-Den här artikeln visar hur du skapar förmånselement som ska användas när du skapar en ny förmån. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF. Denna uppgift är avsedd för kompensations- och förmånsansvariga.
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Detta ämne förklarar hur du skapar förmånselement som ska användas när du skapar en ny förmån. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF. Denna uppgift är avsedd för kompensations- och förmånsansvariga.
 
 
 ## <a name="create-benefit-elements"></a>Skapa förmånselement
@@ -68,3 +70,6 @@ Den här artikeln visar hur du skapar förmånselement som ska användas när du
 16. Markera ett alternativ i fältet Bas.
 17. Ange ett tal i fältet Belopp eller tariff.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

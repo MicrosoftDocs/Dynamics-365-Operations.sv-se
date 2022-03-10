@@ -1,29 +1,28 @@
 ---
 title: Startsidan Budgetering
 description: Det här avsnittet innehåller en översikt över komponenter för budgeteringsfunktioner, budgeteringsverktyg och rapporteringskapaciteter i Microsoft Dynamics 365 Finance.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 08/09/2017
-ms.topic: index-page
+author: panolte
+ms.date: 04/29/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 106043
+ms.custom:
+- "106043"
+- intro-internal
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
-ms.author: roschlom
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a910aa7f54905f305ed69e9dd9eea0909e5558d
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 6ad0d055702a3801bf9fe9ac3159eba7c297b6f0
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528555"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983962"
 ---
 # <a name="budgeting-home-page"></a>Startsidan Budgetering
 
@@ -31,12 +30,11 @@ ms.locfileid: "4528555"
 
 Det här avsnittet innehåller en översikt över komponenter för budgeteringsfunktioner, budgeteringsverktyg och rapporteringskapaciteter. 
 
-<a name="components-of-budgeting-functionality"></a>Komponenter i budgeteringsfunktionen
--------------------------------------
+## <a name="components-of-budgeting-functionality"></a>Komponenter i budgeteringsfunktionen
 
 Resursplanläggningscykeln för ett företag består typiskt av aktiviteter för planering, budgetering och prognostisering.
 
-[![Komponenter för budgetringsfunktioner](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
+[![Komponenter för budgeteringsfunktioner.](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
 
 Processerna för såväl långsiktig strategisk planering som årlig budgetplanering stöds via ett budgetplandokument. Budgetplandokument är väl integrerade med Microsoft Excel. Användarna kan konfigurera obegränsade monetära och kvantitativa scenarier och även definiera en organisationshierarki för budgetering som stöder budgetmetoder både uppifrån och ned och nedifrån och upp. När en budget har skapats och godkänts i appen, konverterar du budgetplanen till en budgetregisterpost. Budgetregisterposter innehåller verktyg för underhåll av budgeten för att göra beloppen spårningsbara med budgetkoder. Budgetregisterposter gör att det går att ändra ursprungliga budgetar, utföra överföringar och överföra budgetbelopp från föregående år. Utifrån den upprättade budgeten kan företaget aktivera budgetkontroll. Nivån på kontrollen beror på organisationens kultur och mognadsnivå. Organisationer med en lägre mognadsnivå kan lämna budgeten som den är och kan vara mer reaktiva än proaktiva om en budget inte uppfyller förväntningarna. Andra organisationer kan aktivera budgetkontrollregler som hindrar att användare gör inköp om budgeterade medel inte finns tillgängliga.
 
@@ -50,7 +48,7 @@ Slutligen: Väl utvecklade organisationer kan skapa en organisationskultur där 
 -   [Budgetplaneringsmallar för Excel](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Budgeteringsverktyg
-[![Budgeteringsverktyg](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
+[![Budgeteringsverktyg.](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
 Det finns ytterligare funktioner för planering och budgetering som är integrerade i redovisningsbudgetarna.
 
@@ -71,3 +69,6 @@ Det går till exempel att definiera vem som gör budgeten, vad som budgeteras oc
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

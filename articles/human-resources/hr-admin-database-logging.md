@@ -1,14 +1,13 @@
 ---
 title: Konfigurera och hantera databasloggning
 description: Du kan spåra ändringar i register och fält i Dynamics 365 Human Resources med databasloggning.
-author: andreabichsel
-ms.date: 06/10/2020
+author: twheeloc
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,14 +15,17 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d22ff9f3ce68c81f37840342c795d7d162eb027b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3cbe4c105b14935db6803e4bded0d891c564fb81
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801345"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066453"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurera och hantera databasloggning
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -94,14 +96,14 @@ Du kan ta bort alla eller en del av databasloggarna med följande alternativ:
 Följ dessa steg för att ställa in rensning av databaslogg: 
 
 1. Gå till **Systemadministration > Länkar > Databasen > Databaslogg**. Välj **Rensa logg**.
-
-2. Välj en metod för att välja loggar att ta bort genom att ange något av följande alternativ:
+2. Under **Poster som ska ingår** välj **Filter**.
+3. Välj den metod som ska användas för att välja vilka loggar som ska tas bort. Ange ett av följande alternativ:
 
    - Register-ID
    - Typ av logg
-   - Skapat datum och klockslag
+   - Skapades datum och klockslag
 
-3. Använd fliken **Rensning i databasloggen** för att bestämma när loggrensningsuppgiften ska köras. Som standard är databasloggar tillgängliga i 30 dagar.
+4. Använd fliken **Rensning i databasloggen** för att bestämma när loggrensningsuppgiften ska köras. Som standard är databasloggar tillgängliga i 30 dagar.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

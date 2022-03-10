@@ -1,12 +1,10 @@
 ---
 title: Synkronisera kontakter direkt från Sales till kontakter i Supply Chain Management
 description: I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera entiteterna Kontakt (kontakter) och Kontakt (kunder) direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -15,24 +13,24 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 8cbc2909c3f4533b4ea68e522f0874873989f3ce
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 57a9c2a860e99855e841f0f4276ba2f92767c2b1
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994057"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062525"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Synkronisera kontakter direkt från Sales till kontakter i Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 > [!NOTE]
-> Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Microsoft Dataverse för appar](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+> Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Microsoft Dataverse för appar](/powerapps/administrator/data-integrator).
 
 I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera tabellerna Kontakt (kontakter) och Kontakt (kunder) direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
 
@@ -40,7 +38,7 @@ I det här ämnet diskuteras mallarna och de underliggande uppgifterna som anvä
 
 Lösningen Potentiell kund till kontanter använder funktionen Dataintegrering för att synkronisera data mellan instanser av Supply Chain Management och Sales. Potentiell kund till kontanter-mallarna med funktionen för dataintegrering möjliggör ett flöde av konto-, produkt-, försäljningskvots-, försäljningsorder- samt försäljningsfakturadata mellan Supply Chain Management och Sales. Följande bild visar hur data synkroniseras mellan Supply Chain Management och Sales.
 
-[![Dataflöden i Potentiell kund till kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Dataflöden i Potentiell kund-till-pengar.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
 
@@ -119,18 +117,18 @@ I följande illustrationer visas ett exempel på en mallmappning i dataintegreri
 > [!NOTE]
 > Mappningen visar vilken kolumninformation som kommer att synkroniseras från Sales till Supply Chain Management.
 
-### <a name="contact-to-contact"></a>Kontakt till kontakt
+### <a name="contact-to-contact-example"></a>Exempel på kontakt till kontakt
 
-![Mallmappning i dataintegreraren](./media/contacts-direct-template-mapping-data-integrator-1.png)
+![Mallmappning för kontakt till kontakt i dataintegratör.](./media/contacts-direct-template-mapping-data-integrator-1.png)
 
-### <a name="contact-to-customer"></a>Kontakt till kund
+### <a name="contact-to-customer-example"></a>Exempel på kontakt till kund
 
-![Mallmappning i dataintegreraren](./media/contacts-direct-template-mapping-data-integrator-2.png)
+![Mallmappning för kontakt till kund i dataintegratör.](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Prospekt till kontanter](prospect-to-cash.md)
+[Potentiell kund till pengar](prospect-to-cash.md)
 
 [Synkronisera konton direkt från Sales till kunder i Supply Chain Management](accounts-template-mapping-direct.md)
 
@@ -141,3 +139,6 @@ I följande illustrationer visas ett exempel på en mallmappning i dataintegreri
 [Synkronisera huvuden och rader i försäljningsfakturor direkt från Supply Chain Management till Sales](sales-invoice-template-mapping-direct.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

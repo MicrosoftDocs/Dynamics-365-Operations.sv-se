@@ -2,11 +2,9 @@
 title: Lagerstängning
 description: Som en del av processen för att kvitta utleveranstransaktioner med inleveranstransaktioner, kan du också välja att uppdatera redovisningen med justeringarna som har gjorts.
 author: AndersGirke
-manager: tfehr
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventClosing
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 61973
 ms.assetid: c210c882-6849-4704-b78c-a777dd6cfdb6
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1169ad784c07d0757990b36b618282ed7858bcbf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 078969e12275c3abd2e4ea2f8c6c9579dce73e5f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987564"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574027"
 ---
 # <a name="inventory-close"></a>Lagerstängning
 
@@ -86,3 +84,6 @@ I vissa fall kanske du måste återföra en genomförd lagerstängning för att 
 > [!NOTE] 
 > Endast den senaste lagerperioden som har stängts kan öppnas igen. För att återföra en tidigare lagerstängning måste du återföra alla efterföljande lagerstängningar en i taget och börja med de senaste.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

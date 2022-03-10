@@ -2,7 +2,6 @@
 title: Organisera rapportdelar i rapportdesignern
 description: Den här artikeln innehåller en beskrivning av hur du organiserar befintliga rapporter, byggblock och objekt i rapportdesignern.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d348993422b24776098657dcef25a088ba2f826b
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 6b30e7e480edb50bb9509e270806224755f98e38111cda0c1cae86a0f56eb193
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564553"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763534"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organisera rapportdelar i rapportdesignern
 
@@ -48,7 +47,7 @@ Du kan gruppera rapportdefinitioner för att skapa flera rapporter samtidigt. F�
 ### <a name="create-a-report-group"></a>Skapa en rapportgrupp
 
 1. Öppna Report Designer och klicka på **Rapportgrupper** i navigeringsfönstret.
-2. På menyn **Arkiv** klickar du på **Ny** &gt; **Rapportgruppsdefinition** för att öppna en ny rapportgrupp i visningsfönstret. Du kan även klicka på knappen **Rapportgrupp** ![Rapportgrupp](media/report-group.gif "Rapportgrupp") i verktygsfältet.
+2. På menyn **Arkiv** klickar du på **Ny** &gt; **Rapportgruppsdefinition** för att öppna en ny rapportgrupp i visningsfönstret. Du kan även klicka på knappen **Rapportgrupp** ![Rapportgrupp.](media/report-group.gif "Rapportgrupp") i verktygsfältet.
 3. Klicka på fliken **Rapportgrupp**. För att åsidosätta informationen om de enskilda rapportdefinitionerna genereringen av denna rapport väljer du kryssrutan **Åsidosätt företags-, informations- och datuminställningar från individuella rapportdefinitioner**. Företagets namn, detaljnivå, preliminär inställning och datuminformation fylls i automatiskt, men du kan fortfarande göra uppdateringar.
 4. Välj kryssrutan **Inkludera alla rapporteringsvalutor** om du vill skapa fler rapporter som visar vilken valuta som används i rapporten. Du kan komma åt flera vyer genom att klicka på knappen **Valuta** i Web Viewer när du visar rapporten.
 5. I fältet **Rapporter i grupp** klickar du på **Lägg till** för att välja rapporter som ska ingå i rapportgruppen. Om du vill välja flera rapporter i dialogrutan **Lägg till** kan du hålla ned Ctrl-tangenten samtidigt som du markerar rapporter. När du är klar med att välja rapporter klickar du på **OK**.
@@ -59,7 +58,7 @@ Du kan gruppera rapportdefinitioner för att skapa flera rapporter samtidigt. F�
 1. Öppna Report Designer och klicka på **Rapportgrupper** i navigeringsfönstret.
 2. Dubbelklicka på rapportgruppen att modifiera.
 3. Klicka på fliken **Rapportgrupp** och utför valfria ändringar.
-4. På menyn **Arkiv** klickar du på **Spara** för att spara den ändrade rapportgruppen. Du kan också klicka på knappen **Spara** ![Spara](media/save.gif "Spara") i verktygsfältet.
+4. I menyn **Arkiv** klickar du på **Spara** för att spara den ändrade rapportgruppen. Du kan också klicka på knappen **Spara** ![Spara.](media/save.gif "Spara") i verktygsfältet.
 
 > Om du har schemalagda rapporter som skapas vid inställda intervall kan du åsidosätta dessa inställningar och skapa en rapport direkt.
 
@@ -67,7 +66,7 @@ Du kan gruppera rapportdefinitioner för att skapa flera rapporter samtidigt. F�
 
 1. Öppna Report Designer och klicka på **Rapportgrupper** i navigeringsfönstret.
 2. Öppna rapportgruppen att skapa.
-3. Klicka på knappen **Generera rapport** ![Generera rapport](media/generate-report.gif "Generera rapport") för att generera rapporter.
+3. Klicka på knappen **Generera rapport** ![Generera rapport.](media/generate-report.gif "Generera rapport") för att generera rapporter.
 
 ### <a name="delete-a-report-group"></a>Ta bort en rapportgrupp
 

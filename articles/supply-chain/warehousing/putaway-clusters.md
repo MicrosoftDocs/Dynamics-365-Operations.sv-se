@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: b3a7d1b7109b83b26c8187a7f0d271f1c82f6d63
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: d5aa579394a0e3bd4c27cd44c9ff98951b3bfe1c
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840375"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103673"
 ---
 # <a name="putaway-clusters"></a>Kluster för artikelinförsel
 
@@ -25,12 +25,9 @@ ms.locfileid: "5840375"
 
 Kluster för artikelinförsel erbjuder ett sätt att välja flera ID-nummer samtidigt och sedan ta dem till artikelinförsel på olika platser. Den här processen kalla ofta en *slinga*. Kluster för artikelinförsel kan vara mycket användbara för butiker, där ID-nummer vanligtvis inte är fullständiga lastpallar med lager. 
 
-## <a name="turn-on-the-cluster-putaway-feature"></a>Aktivera funktionen för kluster för artikelinförsel
+## <a name="turn-the-cluster-putaway-feature-on-or-off"></a>Aktivera eller inaktivera funktionen för kluster för artikelinförsel
 
-Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
-
-- **Modul:** *Lagerstyrning*
-- **Funktionens namn:** *Funktion för kluster för artikelinförsel*
+De funktioner som beskrivs i det här avsnittet måste funktionen *Funktion för kluster för artikelinförsel* vara inaktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Funktion för kluster för artikelinförsel* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup-for-the-example-scenario"></a>Ställ in exempelscenario
 
@@ -284,7 +281,7 @@ Klustret måste vara stängt innan artiklarna i klustret kan föras in.
 
     Du har standardalternativen för att åsidosätta eller godkänna det här steget.
 
-    ![Kluster för artikelinförsel: sidan placera](media/Cluster_putaway-Put.png "Kluster för artikelinförsel: sidan placera")
+    ![Klusterplats: sidan Placera.](media/Cluster_putaway-Put.png "Kluster för artikelinförsel: sidan placera")
 
 1. Välj **OK** för att bekräfta placering av kluster.
 

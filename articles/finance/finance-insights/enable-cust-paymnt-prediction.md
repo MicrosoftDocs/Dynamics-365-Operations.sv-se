@@ -1,8 +1,8 @@
 ---
-title: Aktivera prediktioner av kundbetalning (förhandsversion)
+title: Aktivera förutsägelser för kundbetalning
 description: I det här ämnet beskrivs hur du aktiverar och konfigurerar funktionen för kundbetalningsförutsägelse i Finance-insikter.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,46 +15,41 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 0b945111f360838dfa35cddb916c4fb34a41f55bdd8f3095bd97c906b7dd3dd7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b83d1230c94462ca722ad7ceb7b2185afd636aae
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768901"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109614"
 ---
-# <a name="enable-customer-payment-predictions-preview"></a>Aktivera prediktioner av kundbetalning (förhandsversion)
+# <a name="enable-customer-payment-predictions"></a>Aktivera förutsägelser för kundbetalning
 
 [!include [banner](../includes/banner.md)]
 
-I det här ämnet beskrivs hur du aktiverar och konfigurerar funktionen för kundbetalningsförutsägelse i Finance-insikter. Du aktiverar funktionen på arbetsytan **Funktionshantering** och anger konfigurationsinställningar på sidan **Parametrar för ekonomiinsikter**. Det här avsnittet innehåller också information som kan hjälpa dig att effektivt använda funktionen.
+I det här ämnet beskrivs hur du aktiverar och konfigurerar funktionen för kundbetalningsförutsägelse i Finance-insikter. Du aktiverar funktionen på arbetsytan **Funktionshantering** och anger konfigurationsinställningar på sidan **Konfiguration för Finance Insights**. Det här avsnittet innehåller också information som kan hjälpa dig att effektivt använda funktionen.
 
 > [!NOTE]
 > Innan du genomför följande steg måste du se till att slutföra de nödvändiga stegen i ämnet [Konfigurera för Finance-insikter](configure-for-fin-insites.md).
 
-1. Använd information från miljösidan i Microsoft Dynamics Lifecycle Services (LCS) för att ansluta till den primära instansen av Azure SQL för den miljön. Kör följande Transact-SQL-kommando (T-SQL) för att aktivera förhandsversioner för sandbox-miljön. (Du kanske måste aktivera åtkomst för din IP-adress i LCS innan du kan fjärransluta till Application Object Server \[AOS\].)
+1. Aktivera funktionen för kundbetalningsförutsägelser:
 
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('PayPredEnableFeature', 1)`
+    1. Öppna arbetsytan **Funktionshantering**.
+    2. Välj **Sök efter uppdateringar**.
+    3. På fliken **Alla** letar du upp **Förutsägelser för kundbetalningar**. Om du inte hittar funktionen söker du efter **(förhandsversion) Förutsägelser för kundbetalningar**. 
+    4. Aktivera funktionen.
 
-    > [!NOTE]
-    > Hoppa över det här steget om du använder version 10.0.20 eller senare, eller om du använder en Service Fabric-distribution. Teamet för ekonomiinsikter ska redan ha aktiverat förhandsversionen för dig. Om funktionen inte visas på arbetsytan **Funktionshantering**, eller om det uppstår problem när du försöker att aktivera den, kontaktar du <fiap@microsoft.com>. 
+    Funktionen för kundbetalningsförutsägelser är nu aktiverad och redo att konfigureras.
 
-2. Aktivera funktionen för kundbetalningsinsikter:
+2. Konfigurera funktionen för kundbetalningsinsikter:
 
-    1. Gå till **Systemadministration \> Arbetsytor \> Funktionshantering**.
-    2. Hitta funktionen med namnet **Kundbetalningsinsikter (förhandsversion)**.
-    3. Välj **Aktivera nu**.
+    1. Gå till **Kredit och inkasso \> Inställningar \> Finance Insights \> Kundbetalningsförutsägelser**.
+    2. På sidan **Konfiguration för Finance Insights**, på fliken **Kundbetalningsförutsägelser**, väljer du länken **Visa de datafält som används i förutsägelsemodellen** för att öppna sidan **Datafält för förutsägelsemodell**. Där kan du visa standardlistan över fält som används för att skapa en AI-förutsägelsemodell för kundbetalningsförutsägelser.
 
-    Funktionen för kundbetalningsinsikter är nu aktiverad och kan konfigureras.
-
-3. Konfigurera funktionen för kundbetalningsinsikter:
-
-    1. Gå till **Kredit och inkasso \> Konfigurera \> Finance-insikter \> Parametrar för ekonomiinsikter**.
-
-        [![Sidan med parametrar för Finance Insights innan funktionen har konfigurerats.](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
-
-    2. På sidan **Parametrar för ekonomiinsikter**, på fliken **Kundbetalningsinsikter**, väljer du länken **Visa de datafält som används i förutsägelsemodellen** för att öppna sidan **Datafält för förutsägelsemodell**. Där kan du visa standardlistan över fält som används för att skapa en AI-förutsägelsemodell för kundbetalningsförutsägelser.
-
-        Om du vill använda standardlistan med fält för att skapa förutsägelsemodellen stänger du sidan **Datafält för förutsägelsemodell** och väljer sedan **Ja** för alternativet **Aktivera funktion** på sidan **Parametrar för ekonomiinsikter**.
+        Om du vill använda standardlistan med fält för att skapa förutsägelsemodellen stänger du sidan **Datafält för förutsägelsemodell** och anger på sidan **Konfiguration för Finance Insights** sedan alternativet **Aktivera funktion** som **Ja**.
+        
+   > [!NOTE]
+   > Funktionen **Kundbetalningsförutsägelser** kräver mer än 100 transaktioner under de föregående sex till nio månaderna. Transaktionerna kan omfatta fritextfakturor, försäljningsorder och kundbetalningar. Dessa data måste sprids över inställningarna **I tid**, **Sent** och **Mycket sent**.    
+     
 
     3. Ange transaktionsperioden "mycket sent" för att definiera vad den förutsägelsebucketen **Mycket sent** innebär för din verksamhet.
 
@@ -67,21 +62,13 @@ I det här ämnet beskrivs hur du aktiverar och konfigurerar funktionen för kun
         > [!NOTE]
         > Om du ändrar transaktionsperioden "mycket sent" och väljer **Ändra tröskel för Sent** efter att AI-förutsägelsemodellen för kundbetalningar har skapats tas den befintliga förutsägelsemodellen bort och en ny modell skapas. Den nya förutsägelsemodellen flyttar transaktionerna till perioden "mycket sent", baserat på de inställningar som angavs för att definiera den.
 
-    4. När du har definierat transaktionsperioden "mycket sent" väljer **Skapa förutsägelsemodell** för att skapa förutsägelsemodellen. I avsnittet **Förutsägelsemodell** på sidan **Parametrar för ekonomiinsikter** visas status för förutsägelsemodellen.
+    4. När du har definierat transaktionsperioden "mycket sent" väljer **Skapa förutsägelsemodell** för att skapa förutsägelsemodellen. I avsnittet **Förutsägelsemodell** på sidan **Konfiguration för Finance Insights** visas statusen för förutsägelsemodellen.
 
         > [!NOTE]
         > Du kan när som helst medan förusägelsemodellen skapas välja **Återställ modellskapande** för att starta om processen.
 
     Funktionen har nu konfigurerats och är redo att användas.
 
-När funktionen har aktiverats och konfigurerats, och om förutsägelsemodellen har skapats och fungerar, visar avsnittet **Förutsägelsemodell** på sidan **Parametrar för ekonomiinsikter** hur noggrann modellen är, vilket visas i bilden nedan.
-
-[![Noggrannheten för förutsägelsemodellen på sidan Parametrar för Finance Insights](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
-
-## <a name="release-details"></a>Frisläppningsinformation
-
-Den allmänt tillgängliga förhandsversionen av Finance-insikter finns tillgänglig för bedömningsdistribution i USA, Europa och Storbritannien. Microsoft lägger stegvis till support för fler regioner.
-
-Funktionerna för allmänt tillgänglig förhandsversion kan och ska bara aktiveras i nivå-2-sandbox-miljöer. Konfiguration och AI-modeller som skapas i en sandbox-miljö kan inte migreras till en produktionsmiljö. Mer information finns i [Tilläggsavtal för Microsoft Dynamics 365 förhandsversioner](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
+När funktionen har aktiverats och konfigurerats, och om förutsägelsemodellen har skapats och fungerar, visar avsnittet **Förutsägelsemodell** på sidan **Parametrar för Finance Insights** hur noggrann modellen är.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

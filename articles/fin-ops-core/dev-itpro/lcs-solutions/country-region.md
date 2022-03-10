@@ -2,7 +2,6 @@
 title: Globaliseringsresurser
 description: Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika funktioner och erbjudanden.
 author: kfend
-manager: AnnBe
 ms.date: 02/19/2021
 ms.topic: index-page
 ms.prod: ''
@@ -15,19 +14,19 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26411c24751f698a6789bbbd687aca8f378f7d65
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5560928"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747525"
 ---
 # <a name="globalization-resources"></a>Globaliseringsresurser
 
 ## <a name="local-and-regional-deployments"></a>Lokala och regionala distributioner
 Om dina myndighetsregleringar kräver att data lagras på ett annat sätt eller att de underhålls på ett annat sätt vad som krävs för andra länder/regioner, kan det finnas lands-/regionspecifika krav som du måste ta hänsyn till under distributionen. Följande resurser kan vara relevanta för dig:
 
-[Finance and Operations-appar som drivs av 21Vianet i Kina](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Finance and Operations-apparna av 21Vianet i Kina](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Lokaliserings- och regelfunktioner
 
@@ -61,7 +60,7 @@ Följande resurser innehåller information om planerade och nya lokaliseringsfun
 -   [Skicka notifieringar om lands-/regionspecifika regelfunktioner](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Utgivningsplaner för Dynamics 365
-[Utgivningsplaner för Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) innehåller beskrivningar av förbättrade funktioner som planeras för affärsapparna och applattformen för Dynamics 365. 
+[Utgivningsplaner för Dynamics 365](/business-applications-release-notes/) innehåller beskrivningar av förbättrade funktioner som planeras för affärsapparna och applattformen för Dynamics 365. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations-appar – Nyheter
 [Nyheter och ändringar på startsidan för Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) innehåller de funktioner som ingår i olika versioner av Finance and Operations-apparna.

@@ -1,12 +1,10 @@
 ---
 title: Kostnad för underhållsschema
 description: I det här avsnittet beskrivs underhållsschemakostnad i Tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9686efb228e123671ba93a37480d2daac8d038a4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 267452bf5ec8cafebb5927045e8708a41603ec16f48626b7fd351d13fdb2fab7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5252976"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746266"
 ---
 # <a name="maintenance-schedule-cost"></a>Kostnad för underhållsschema
 
@@ -51,7 +49,7 @@ I Tillgångshantering kan du beräkna budgetkostnader för rader i underhållssc
 
 Bilden nedan visar resultaten av en kostnadsberäkning för underhållsscheman.
 
-![Figur 1](media/17-preventive-maintenance.png)
+![Figur 1.](media/17-preventive-maintenance.png)
 
 
 

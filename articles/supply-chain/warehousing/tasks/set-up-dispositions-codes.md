@@ -1,28 +1,25 @@
 ---
 title: Ställ in dispositionskoder
 description: I den här proceduren läggs fokus på inställningen av en dispositionskod som kan användas på en mobil enhet för inleveransprocessen för returorder.
-author: ShylaThompson
-manager: tfehr
+author: Mirzaab
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSDispositionTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d84699e8e4323792ac67b69236d264e33eeaf28
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: fb83108c934e864da0df39ec4ee36a0bc7ba7588
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438055"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574075"
 ---
 # <a name="set-up-dispositions-codes"></a>Ställ in dispositionskoder
 
@@ -41,3 +38,6 @@ I den här proceduren läggs fokus på inställningen av en dispositionskod som 
 6. Skriv ett värde i fältet Returdispositionskod.
     * Returdispositionskoden bestämmer resten av returorderprocessen för de registrerade artiklarna. I det här exemplet ska kunden få en kreditfaktura. Lägg till en returdispositionskod som innehåller en åtgärdskredit.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

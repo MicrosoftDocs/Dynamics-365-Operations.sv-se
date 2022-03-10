@@ -2,13 +2,12 @@
 title: Hantera tjänstledighet för medarbetare
 description: Hantera tjänstledighet för medarbetare i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,14 +15,17 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bf27f2a235ddb6c37601ce9d2dd7ceb356a511d9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ccdf2346e3fdecf4f27fc9f34f0641d3b1fb5b55
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794695"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067387"
 ---
 # <a name="manage-employee-leave"></a>Hantera tjänstledighet för medarbetare
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -45,12 +47,11 @@ Du kan hantera en medarbetares tjänstledighet efter ledighetstyp. Det inkludera
 
 Du kan inkludera en orsakskod och en kommentar när du justerar en medarbetares tjänstledighetssaldo. 
 
->[!IMPORTANT]
->Visa mer information om att lämna saldon är i förhandsgranskning. Du måste aktivera den i **sandbox-miljön**. Mer information om att aktivera förhandsfunktioner finns i [Hantera funktioner](hr-admin-manage-features.md).<br>
->När du hovrar över en tjänstledighet visas nu:<br>
->- **Tillgänglig**: totalt under året – ta detta år
->- **Total i år**: alla periodiseringar, justeringar och överföringar för året
->- **Taget i år**: alla godkända ledigheter
+När du nu hovrar över ett tjänstledighetssaldo visas följande information:
+
+- **Tillgänglig** – Värdet **Totalt i år** minus värdet **Uttaget detta år**.
+- **Total i år** – alla periodiseringar, justeringar och överföringar för året.
+- **Taget i år** – alla godkända ledigheter.
 
 ## <a name="see-also"></a>Se även
 

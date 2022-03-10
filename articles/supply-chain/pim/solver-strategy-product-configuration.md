@@ -1,30 +1,27 @@
 ---
 title: Lösarstrategi för produktkonfiguration
 description: Det här avsnittet beskriver hur du kan använda problemlösarstrategin för att förbättra prestandan för produktkonfiguration.
-author: cvocph
-manager: tfehr
+author: t-benebo
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb0fc054e0feec4c54c0bd916e01ce3a2a4cd903
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 37e8f2c9557ee6fc827d60ca6dc83cd638b6378a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437899"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565721"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Lösarstrategi för produktkonfiguration
 
@@ -53,7 +50,7 @@ Studier av verkliga kundimplementationer har visat att en ändring i problemlös
 
 För att ändra problemlösarstrategin på sidan **produktkonfigurationsmodeller** i åtgärdsfönstret, välj **modellegenskaper**. Därefter väljer du problemlösarstrategi i dialogrutan **redigera modelluppgifter**.
 
-[![Att ändra problemlösarstrategi.](./media/solver-strategy.png)](./media/solver-strategy.png)
+[![Ändra problemlösarstrategi.](./media/solver-strategy.png)](./media/solver-strategy.png)
 
 Det finns för närvarande ingen logik som automatiskt identifierar den mest effektiva strategin för begränsningsbaserad konfiguration. Därför måste du prova en problemlösarstrategi i taget.
 
@@ -73,3 +70,6 @@ Följande tabell innehåller rekommendationer om problemlösarstrategin i olika 
 [Heuristik](https://techterms.com/definition/heuristic)
 
 [Begränsningsbaserad problem](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,36 +1,37 @@
 ---
 title: Ställa in utbildningskurser
 description: Personalresursadministratörer och chefer kan använda kursfunktionerna för att underhålla information om utbildningen som ges till arbetare.
-author: andreabichsel
-ms.date: 06/24/2019
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 0718987583d02a76acc2420e5a371c418757e384
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c66459a044419535d66875cddac7eb73af744ca7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793547"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066760"
 ---
 # <a name="set-up-training-courses"></a>Ställa in utbildningskurser
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Personalresursadministratörer och chefer kan använda kursfunktionerna för att underhålla information om utbildningen som ges till arbetare.
 
- <a name="set-up-prerequisites"></a> Konfigurera krav
----------------------
+##  <a name="set-up-prerequisites"></a> Konfigurera krav
 
 Följande information krävs och måste ställas in innan du skapar kurser.
 -   **Kurstyper**
@@ -82,7 +83,7 @@ Du kan utföra följande uppgifter för varje kurs.
 - Ange lägsta och högsta antal deltagare
 - Tilldela en plats och ett klassrum för kursen
 - Rekommendera hotell för kursdeltagare
-- Skapa en kursbeskrivning som du sedan kan annonsera på Självbetjäning för medarbetare
+- Skapa en kursbeskrivning som du sedan kan annonsera på **Självbetjäning för medarbetare**
 
   >**Obs!** Du kan bara ta bort en kurs om ingen har registrerat sig för den. 
 
@@ -128,8 +129,7 @@ Följande tabell listar möjliga kursstatusvärden och de åtgärder som du kan 
 ## <a name="course-participants"></a>Kursdeltagare
 Kursdeltagare är arbetare som deltar i en utbildningskurs eller en händelse. Du kan bara registrera deltagare för öppna kurser. Det minsta och det högsta antalet deltagare som du kan registrera för en kurs definieras på snabbfliken **Allmänt** på sidan **Kurser**.
 
-<a name="workflow"></a>Arbetsflöde
---------
+## <a name="workflow"></a>Arbetsflöde
 
 Medarbetare som registrerar sig för en kurs via sidan **Självbetjäning för medarbetare** kan få sin registrering skickad via arbetsflödet för godkännande. Du kan tilldela ett arbetsflöde till en kurs i snabbfliken **Allmänt** på sidan **Kurser**.
 

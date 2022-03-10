@@ -1,7 +1,7 @@
 ---
 title: Synkronisera arbetsorder i Field Service till försäljningsorder i Supply Chain Management
 description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera arbetsorder i Field Service till försäljningsorder i Supply Chain Management.
-author: ChristianRytt
+author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
@@ -13,21 +13,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 7d7688e757a3ab9746ae0307a7c15f0624c1d8aceeb0dc935b0da32d3ab2994b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b7b311701aff12d58392fc036d0f1174678b7dc3
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752692"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061319"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synkronisera arbetsorder i Field Service till försäljningsorder i Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera arbetsorder i Dynamics 365 Field Service till försäljningsorder Dynamics 365 Supply Chain Management.
 
@@ -88,21 +88,21 @@ Följande tabell ger en översikt över de olika kombinationerna för produktrad
 | Systemstatus <br>(Field Service) | Radstatus <br>(Field Service) | Fördelat <br>(Field Service) |Synkroniserat värde <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Öppen - Schemalagd   | Uppskattad   | Ja       | Uppskattad                       |
-| Öppen - Schemalagd   | Uppskattat   | Nr        | Används                            |
+| Öppen - Schemalagd   | Uppskattat   | Nej        | Används                            |
 | Öppen - Schemalagd   | Används        | Ja       | Används                            |
-| Öppen - Schemalagd   | Används        | Nr        | Används                            |
+| Öppen - Schemalagd   | Används        | Nej        | Används                            |
 | Öppen - Pågår | Uppskattat   | Ja       | Uppskattat                       |
-| Öppen - Pågår | Uppskattat   | Nr        | Används                            |
+| Öppen - Pågår | Uppskattat   | Nej        | Används                            |
 | Öppen - Pågår | Används        | Ja       | Används                            |
-| Öppen - Pågår | Används        | Nr        | Används                            |
+| Öppen - Pågår | Används        | Nej        | Används                            |
 | Öppen - Slutförd   | Uppskattat   | Ja       | Uppskattat                       |
-| Öppen - Slutförd   | Uppskattat   | Nr        | Används                            |
+| Öppen - Slutförd   | Uppskattat   | Nej        | Används                            |
 | Öppen - Slutförd   | Används        | Ja       | Används                            |
-| Öppen - Slutförd   | Används        | Nr        | Används                            |
+| Öppen - Slutförd   | Används        | Nej        | Används                            |
 | Stängd - Bokförd    | Uppskattat   | Ja       | Används                            |
-| Stängd - Bokförd    | Uppskattat   | Nr        | Används                            |
+| Stängd - Bokförd    | Uppskattat   | Nej        | Används                            |
 | Stängd - Bokförd    | Används        | Ja       | Används                            |
-| Stängd - Bokförd    | Används        | Nr        | Används                            |
+| Stängd - Bokförd    | Används        | Nej        | Används                            |
 
 Följande tabell ger en översikt över de olika kombinationerna för tjänstrader.
 
@@ -245,31 +245,31 @@ I följande illustrationer visas en mallmappning i dataintegrering.
 
 Filter: (msdyn_systemstatus ne 690970005) och (msdyn_systemstatus ne 690970000) och (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Mallmappning i dataintegrering.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![Mallmappning i Dataintegration för arbetsorder till försäljningsorder (Field Service till Supply Chain Management): WorkOrderHeader.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Arbetsorder till Sales orders (Field Service till Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och (msdyn_linestatus eq 690970000) och (msdynce_headersystemstatus ne 690970004)
 
-[![Mallmappning i dataintegrering.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![Mallmappning i Dataintegration för arbetsorder till försäljningsorder (Field Service till Supply Chain Management): WorkOrderServiceLineEstimate.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Arbetsorder till Sales orders (Field Service till Supply Chain Management): WorkOrderServiceLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004))
 
-[![Mallmappning i dataintegrering.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![Mallmappning i Dataintegration för arbetsorder till försäljningsorder (Field Service till Supply Chain Management): WorkOrderServiceLineUsed.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Arbetsorder till Sales orders (Field Service till Supply Chain Management): WorkOrderProductLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och (msdyn_linestatus eq 690970000) och (msdynce_headersystemstatus ne 690970004) och (msdyn_allocated eq true)
 
-[![Mallmappning i dataintegrering.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![Mallmappning i Dataintegration för arbetsorder till försäljningsorder (Field Service till Supply Chain Management): WorkOrderProductLineEstimate.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Arbetsorder till Sales orders (Field Service till Supply Chain Management): WorkOrderProductLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004) eller (msdyn_allocated ne true))
 
-[![Mallmappning i dataintegrering.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+[![Mallmappning i Dataintegration för arbetsorder till försäljningsorder (Field Service till Supply Chain Management): WorkOrderProductLineUsed.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

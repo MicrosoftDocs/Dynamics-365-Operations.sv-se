@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: a3daa2286eb444d3aaad1fd29eb6be5737415a08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801994"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761672"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Demodataskärmlayouter i Modern POS (MPOS) och molnbaserad kassa
 
@@ -33,13 +33,13 @@ Det här avsnittet innehåller information om skärmlayouterna som medföljer da
 
 Exempel på de skärmlayouter som medföljer Commerce demodata ger innehåll som är optimerat för olika butikssegment, lagerarbetarroller och enheter. En enkel layout kan innehålla flera layoutstorlekar och kombinationer av knappsatser som säkerställer täckning som lagerarbetare flyttar mellan enheter och stationer. Det här avsnittet beskriver skillnaderna mellan dessa layouter, operationer de tillhandahåller och de övergripande erfarenheter som de kan ge.
 
-![Demodatalayouter mellan enheter](../commerce/media/demo-screen-layouts-fig-1-1.png)
+![Demodatalayouter mellan enheter.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Beskrivning av en skärmlayout-ID
 
 För att hitta skärmlayouter i Retail, gå till **Butik och handel** \> **Kanalinställning** \> **Kassainställning** \> **Kassa** \> **Skärmlayouter**.
 
-![Sidan Skärmlayouter](../commerce/media/demo-screen-layouts-fig-2-1.png)
+![Sidan Skärmlayouter.](../commerce/media/demo-screen-layouts-fig-2-1.png)
 
 Skärmlayout-ID kan ha upp till 10 tecken. ID är en sträng som består av tre delar med information i följande ordning:
 
@@ -79,7 +79,7 @@ F4MGR
 
 Följande illustration visar ett exempel på välkomstskärmen för Fabrikam butikschefen.
 
-![Välkomstskärm för butikschefen Fabrikam](../commerce/media/demo-screen-layouts-fig-2-2.png)
+![Välkomstskärm för Fabrikam-butikschefen.](../commerce/media/demo-screen-layouts-fig-2-2.png)
 
 ## <a name="layout-sizes"></a>Layoutstorlekar
 
@@ -108,7 +108,7 @@ Följande tabell visar layoutstorlek för normal skärmupplösning.
 > [!TIP]
 > POS väljer automatiskt layoutstorlekar, baserat på närmaste storleken för skärmupplösningen för det aktuella appfönstret. Öppna den layout-ID och layoutskärmupplösning som för närvarande används i Modern POS (MOPS) eller Retail Cloud POS (CPOS), öppna sidan **inställningar** och titta i avsnittet **sessionsinformation**. Du kan också hitta den aktuella upplösningen för fönster för ditt aktuella program eller webbläsarram. När du har den här informationen hittar du källan för layoutinnehållet genom att gå till **kanalinställning** \> **kassainställningar** \> **kassa** \> **skärmlayouter**.
 
-![Skärmlayouter och layoutlösningar/storlekar i Commerce och kassa](../commerce/media/demo-screen-layouts-fig-3-1.png)
+![Skärmlayouter och layoutlösningar/storlekar i Commerce och kassa.](../commerce/media/demo-screen-layouts-fig-3-1.png)
 
 ## <a name="companies-and-brands"></a>Företag och varumärken
 
@@ -118,30 +118,30 @@ Varje fiktivt företag är avsett för ett annat butikssegment och innehåller p
 
 | Företag         | Plats | Segment        | Accent | Tema |
 |-----------------|----------|----------------|--------|-------|
-| Adventure Works | Seattle  | Sportutrustning | Blått   | Mörk  |
-| Fabrikam        | San Francisco  | Mode        | Grönt  | Ljus |
-| Contoso         | Boston   | Elektronik    | Röd    | Mörk  |
+| Adventure Works | Seattle  | Sportutrustning | Blått   | Mörkt  |
+| Fabrikam        | San Francisco  | Mode        | Grönt  | Ljust |
+| Contoso         | Boston   | Elektronik    | Röd    | Mörkt  |
 
 > [!NOTE]
-> Adventure Works och Fabrikam är två framstående varumärken. Contoso finns tillgänglig, men alla layouter har inte tillhandahållits.
+> Adventure Works och Fabrikam är två framstående varumärken. Contoso finns tillgängligt, men alla layouter har inte tillhandahållits.
 
 I följande illustrationer visas exempel på välkomstsidan och transaktionssidan för de tre fiktiva företagen.
 
 ### <a name="adventure-works"></a>Adventure Works
 
-![Demodata välkomstsida för Adventure Works](../commerce/media/demo-screen-layouts-fig-4-1a.png)
+![Demodata-välkomstsida för Adventure Works.](../commerce/media/demo-screen-layouts-fig-4-1a.png)
 
-![Demodata transaktionssida för Adventure Works](../commerce/media/demo-screen-layouts-fig-4-1b.png)
+![Demodata-transaktionssida för Adventure Works.](../commerce/media/demo-screen-layouts-fig-4-1b.png)
 
 ### <a name="fabrikam"></a>Fabrikam
 
-![Demodata välkomstsida för Fabrikam](../commerce/media/demo-screen-layouts-fig-4-2a.png)
+![Demodata-välkomstsida för Fabrikam.](../commerce/media/demo-screen-layouts-fig-4-2a.png)
 
-![Demodata transaktionssida för Fabrikam](../commerce/media/demo-screen-layouts-fig-4-2b.png)
+![Demodata-transaktionssida för Fabrikam.](../commerce/media/demo-screen-layouts-fig-4-2b.png)
 
 ### <a name="contoso"></a>Contoso
 
-![Layouter för Contoso-demo](../commerce/media/demo-screen-layouts-fig-4-3.png)
+![Layouter för Contoso-demodata.](../commerce/media/demo-screen-layouts-fig-4-3.png)
 
 ## <a name="user-sign-in-matrix"></a>Matris för användarinloggning
 
@@ -157,7 +157,7 @@ Användare har angetts för de olika layouterna för skärmen. Med hjälp av tab
 | Fabrikam        | F3STK            | Ansvarig för lager   | 000164, 000112, 000123 |
 | Contoso         | C3MGR            | Butikschef | 000100, 000111         |
 | Contoso         | C3CSH            | Kassör       | 000110, 000120         |
-| Contoso         | Inte tillämpligt   | Ansvarig för lager   | Inte tillämpligt         |
+| Contoso         | Inte aktuellt   | Ansvarig för lager   | Inte aktuellt         |
 
 > [!TIP]
 > För bästa resultat, aktivera ett register i motsvarande lagringsplats och ange vilket företag för den person som du tänker använda när du loggar in. På så sätt kan du garantera den visuella profilen och varumärkesanpassade bilder är justerade genom erfarenheten. Om du till exempel vill visa Fabrikam-layouten Fabrikam för en kassör, bör du aktivera en kassa i Houston-butiken.
@@ -168,7 +168,7 @@ Användare har angetts för de olika layouterna för skärmen. Med hjälp av tab
 
 <!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail and Commerce \> Channel setup \> POS setup \> POS \> Images**. -->
 
-<!-- ![Images in Dynamics 365 Commerce](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
+<!-- ![Images in Dynamics 365 Commerce.](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
 
 <!-- Use the [POS Icon and Image Mapping](../commerce/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 

@@ -2,11 +2,9 @@
 title: ER Skapa erforderliga konfigurationer för att importera data från en extern fil
 description: Det här avsnittet beskriver hur du designar ER-konfigurationer för elektronisk rapportering som importerar data till Microsoft Dynamics 365 Finance-appen från en extern fil.
 author: NickSelin
-manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 03/24/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
@@ -15,18 +13,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0492fae6cfad505fc9fee5cd20f483c9c6d2a061
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 7eaa35baae8e030d8a8b7ce903554c4876c874b48cfd72d6ac278cf4c0e8a6e8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093733"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720866"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Skapa erforderliga konfigurationer för att importera data från en extern fil
 
 [!include [banner](../../includes/banner.md)]
 
-I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan designa konfigurationer för Elektronisk rapportering (ER) så att dessa importerar data till programmet från en extern fil. I det här exemplet skapar du de ER-konfigurationer som krävs för exempelföretaget Litware, Inc. För att slutföra stegen måste du först slutföra stegen i uppgiftsguiden ”ER skapa en konfigurationsleverantör” och markera den som aktiv." Stegen kan utföras med hjälp av datauppsättningen USMF. Du måste också hämta och spara följande filer lokalt med hjälp av länkar från ämnet för översikt av elektronisk rapportering (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan designa konfigurationer för Elektronisk rapportering (ER) så att dessa importerar data till programmet från en extern fil. I det här exemplet skapar du de ER-konfigurationer som krävs för exempelföretaget Litware, Inc. För att slutföra stegen måste du först slutföra stegen i uppgiftsguiden ”ER skapa en konfigurationsleverantör” och markera den som aktiv." Stegen kan utföras med hjälp av datauppsättningen USMF. Du måste också hämta följande filer och lagra dem lokalt: 
+
+| Beskrivning av innehåll                       | Filnamn                                     |
+|-------------------------------------------|-----------------------------------------------|
+| Konfiguration av ER-datamodell - 1099 | [1099model,xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml)                  |
+| Konfiguration för ER-fomat - 1099    | [1099format.xml](https://download.microsoft.com/download/e/8/7/e87154b0-b53f-431f-8e1e-0b7f7c9805a9/1099format.xml)                  |
+| Exempel på inkommande dokument i XML-format                          | [1099entries.xml](https://download.microsoft.com/download/4/0/3/403a4958-df24-476a-b8b0-6843a9fa7f89/1099entries.xml)        |
+| Exempel på arbetsboken för att hantera data för inkommande dokument                          | [1099entries.xlsx](https://download.microsoft.com/download/6/0/0/6001abab-a331-48db-a939-41851fb0f5d0/1099entries.xlsx) |
 
 ER ger företagsanvändare möjlighet att konfigurera importen av externa datafiler till tabeller i antingen XML- eller TXT-format. Först måste en abstrakt datamodell och en konfiguration av en ER-datamodell skapas med syfte att representera de data som du importerar. Därefter måste du definiera strukturen för den fil som du importerar och den metod som du använder för att porta datan från filen till den abstrakta datamodellen. ER-formatkonfigurationen som mappar till utformad datamodell måste skapas för den abstrakta datamodellen. Därefter måste modellkonfiguration utökas med en mappning som beskriver hur den importerade datan bevaras som data för en abstrakt datamodell, samt hur den används för att uppdatera tabellerna.  Modellkonfigurationen för ER-data måste läggas till en ny modellmappning som beskriver hur datamodellen är kopplad till programmodellens mål.  
 
@@ -254,3 +259,6 @@ Kör denna formatmappning i testsyfte. Använd filen 1099entries.xml som du tidi
 27. Stäng sidan.
 28. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,27 +1,25 @@
 ---
 title: Definiera produktionsflödesmodeller
 description: Produktionsflödesmodeller beskriver hur kapaciteten i lean manufacturing-arbetsgrupper beräknas och hanteras.
-author: cvocph
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 22aabf2d0cecf272ac25ba3adde8cc650b069af9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6fb12be6f744cee8af3a845d6b278d1f1462ec5d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977873"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579146"
 ---
 # <a name="define-production-flow-models"></a>Definiera produktionsflödesmodeller
 
@@ -45,3 +43,6 @@ Produktionsflödesmodeller beskriver hur kapaciteten i lean manufacturing-arbets
 8. Markera ett alternativ i fältet Reaktion på kapacitetsbrist.
     * Alternativen omfattar: senarelägga - senarelägga det fullständiga behovet av planläggningshändelsen på nästa tillgängliga produktionsdag med tillgängligt genomflöde. Avbryt - Avsluta automatisk planläggning för planläggningshändelsen och lämna relaterade jobb oplanerade.   Lägga till begärd dag - Planera de begärda jobben för den begärda perioden. Detta överbelastar cellen för den aktuella dagen och kräver att planeraren gör en granskning och manuell åtgärd.   Fördela till tillgängliga perioder - fördela olika jobb i planläggningshändelsen till alla aktuella produktionsorderdagar med start från den första tillgängliga dagen. Den minsta distributionskvantiteten är Kanban-jobbkvantiteten. Fördelningen tilldelas den minsta planeringskvantiteten (kanbankvantitet) för varje dag med tillräckligt tillgängligt genomflöde.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

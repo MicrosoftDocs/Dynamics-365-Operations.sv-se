@@ -2,11 +2,9 @@
 title: Produkt- och kundsökning i POS
 description: Det här avsnittet innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-manager: AnnBe
-ms.date: 03/10/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 23b556e72e1ec76be48336bed21d02abd9d31087
-ms.sourcegitcommit: db9b35ce6968cad8874b3c13d4c02d84e2617c8b
+ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5574729"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700099"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- och kundsökning i POS
 
@@ -38,7 +36,7 @@ Som standard utförs en produktsökning på butikssortimentet. Denna typ av sök
 
 På sidan **Ändra katalog** kan personalen enkelt välja valfri butik, eller också kan de söka efter produkter i alla butiker.
 
-![Ändra katalogen](./media/Changecatalog.png "Ändra katalogen")
+![Ändra katalogen.](./media/Changecatalog.png "Ändra katalogen")
 
 En lokal produktsökning söker inom följande produktegenskaper:
 
@@ -49,7 +47,7 @@ En lokal produktsökning söker inom följande produktegenskaper:
 - Streckkod
 - Söknamn
 
-### <a name="additional-local-product-search-capabilities"></a>Ytterligare sökfunktioner för lokal produkt
+### <a name="additional-local-product-search-capabilities-conventional-sql-full-text-search"></a>Ytterligare lokala produktsökningsfunktioner (konventionell SQL-fulltextsökning) 
 
 - För flera nyckelordssökningar (det vill säga, för sökningar med sökvillkor) kan återförsäljare ange om sökresultatet ska innehåll resultat som matchar *alla* sökord eller endast resultat som matchar *alla* sökord. inställningen för denna funktion finns i kassafunktionens profil, i en ny grupp som heter **Produktsökning**. Standardinställningen är **Matcha alla sökord**. Detta är också den rekommenderade inställningen. När inställningen **Matcha alla sökord** används returneras alla produkter som helt eller delvis matchar ett eller flera sökord som resultat. Resultaten sorteras automatiskt i stigande ordning efter produkter som har de flesta nyckelordsträffarna (helt eller delvis).
 
@@ -57,11 +55,13 @@ En lokal produktsökning söker inom följande produktegenskaper:
 
     - Sökningen utförs på individuella produktegenskaper. Exempelvis returneras bara produkter som har de sökta nyckelorden i minst en produktegenskap.
     - Dimensioner genomsöks inte.
+> [!NOTE]
+> Följande konfigurationer av **Matcha alla sökord**/**Matcha alla sökvillkor** i funktionsprofiler för kassa kan endast användas för **lokala** produktsökningar (konventionell SQL-fulltextsökning). Den här konfigurationen påverkar inte molnbaserade sökerfarenheter. Den nya sökmotorn har sin egen avancerade algoritm som söker efter relevans för produktssökresultat. 
 
 - Återförsäljare kan konfigurera produktsökningen så att denna visar sökförslag när användarna skriver produktnamn. En ny inställning för denna funktion finns i kassafunktionens profil, i en grupp som heter **Produktsökning**. Inställningen kallas **Visa sökförslag medan du skriver**. Denna funktion hjälper anställda att snabbt hitta den produkt som de söker efter, detta eftersom de inte behöver skriva hela namnet manuellt.
 - Sökalgoritmen för produkten söker nu också efter de sökta villkoren i produktens **Söknamn**-egenskap.
 
-![Produktförslag](./media/Productsuggestions.png "Produktförslag")
+![Produktförslag.](./media/Productsuggestions.png "Produktförslag")
 
 ## <a name="customer-search"></a>Sök efter kund
 
@@ -85,7 +85,7 @@ För att genomföra en global sökning kan personalen använda knappen **Filtrer
 
 Kund ID som frågas för kunder från andra juridiska personer, detta eftersom inget kund-ID har skapats för dessa parter i det aktuella företaget. Om en medarbetare emellertid öppnar sidan för information om kunden kan systemet automatiskt skapa ett kund-ID för parten, och kopplar också ihop butikens kundadressböcker med kunden. Därför syns kunden i lokala butikssökningar som utförs senare.
 
-![Global kundsökning](./media/Globalcustomersearch.png "Global kundsökning")
+![Global kundsökning.](./media/Globalcustomersearch.png "Global kundsökning")
 
 ### <a name="additional-local-customer-search-capabilities"></a>Ytterligare sökfunktioner för lokal kund
 
@@ -96,11 +96,11 @@ När användaren söker efter ett telefonnummer ignorerar systemet specialtecken
 
 Vanlig kundsökning kan vara tidskrävande, eftersom den söker över flera fält. Kassörer kan istället söka i en kudegenskap, till exempel namn, telefonnummer eller e-postadress. Egenskaper som kundens sökalgoritm använder kallas *sökvillkor för kund*. Systemadministratören kan enkelt konfigurera ett eller flera kriterier som genvägar som visas i POS. Eftersom sökningen är begränsat till ett enda villkor visas endast relevanta sökresultat och den får mycket bättre prestanda än en standardkundsökningsprestanda. I följande illustration visas kundens sökgenvägar i POS.
 
-![Genvägar för kundsökning](./media/SearchShortcutsPOS.png "Genvägar för kundsökning")
+![Genvägar för kundsökning.](./media/SearchShortcutsPOS.png "Genvägar för kundsökning")
 
 Om du vill ange sökvillkor som genvägar måste administratören öppna sidan **Handelparametrar** i Commerce och sedan på fliken **Sökvillkor för kassa** väljer du de kriterier som ska visas som genvägar.
 
-![Konfigurera sökgenvägar](./media/ConfigureShortcutsAX.png "Konfigurera sökgenvägar")
+![Konfigurera sökgenvägar.](./media/ConfigureShortcutsAX.png "Konfigurera sökgenvägar")
 
 > [!NOTE]
 > Om du lägger till för många genvägar kommer menyn på sökfältet i POS att bli plottrig och medarbetarens sökupplevelse kan påverkas. Vi rekommenderar att du endast lägger till så många genvägar som du behöver.
@@ -149,7 +149,5 @@ Följande lista visar hur den molnbaserade kundsökningsfunktionen skiljer sig f
 > Sökfunktionen för kunder med hjälp av tjänsten Azure Cognitive Search finns tillgänglig i begränsade regioner för förhandsgranskning. Sökfunktionen för kunder är *inte* tillgänglig i följande regioner:
 > - Brasilien
 > - Indien
-> - Kanada
-> - Storbritannien
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
-title: Förbättra prediktionsmodellen (förhandsversion)
+title: Förbättra förutsägelsemodellen
 description: I det här avsnittet beskrivs funktioner som du kan använda för att förbättra prestandan för förutsägelsemodeller.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 74005d17e2524b922b0fab1aab5350b85dfad771
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 804c18c1b165fff99390db1fda22da0137249373
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355686"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595047"
 ---
-# <a name="improve-the-prediction-model-preview"></a>Förbättra prediktionsmodellen (förhandsversion)
+# <a name="improve-the-prediction-model"></a>Förbättra förutsägelsemodellen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 I det här avsnittet beskrivs funktioner som du kan använda för att förbättra prestandan för förutsägelsemodeller. Du börjar förbättra din modell på arbetsytan **Prediktioner av kundbetalning** i Microsoft Dynamics 365 Finance. Förbättringsstegen slutförs sedan i AI Builder.
 
@@ -76,6 +75,6 @@ Följande fält ska inte väljas för träning:
 
 Du kan filtrera fakturorna som används för utbildning genom att ställa in filterkriterier för fält på fakturan eller i kundregistren. Du kan till exempel ange ett tröskelvärde om du bara vill inkludera fakturor där summan är lika med eller högre än ett specifikt belopp. Du kan också exkludera fakturor som har associerats med kunder i en viss kundgrupp.
 
-Mer information om hur du filtrerar data finns i [Skapa en förutsägelsemodell](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
+Mer information om hur du filtrerar data finns i [Skapa en förutsägelsemodell](/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

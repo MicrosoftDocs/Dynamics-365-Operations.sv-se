@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: a434bf3727432f4964b7b0ed60905449378245de
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 1a05ad1a9d24239e2659c1ffecc21e5e186b1e96
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830013"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572923"
 ---
 # <a name="engineering-companies-and-data-ownership-rules"></a>Regler för teknikföretag och dataägande
 

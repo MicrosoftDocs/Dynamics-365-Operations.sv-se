@@ -1,24 +1,23 @@
 ---
 title: Europa – översikt
 description: Det här avsnittet innehåller länkar till Microsoft Dynamics 365 Finance dokumentationsresurser för Europa.
-author: ShylaThompson
-ms.date: 02/24/2021
-ms.topic: article
+author: kfend
+ms.date: 01/15/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
 ms.search.region: global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 638e0468f9d200083d8263786f5f5750b6129e73
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: f2d8a2e44713607ff2a4df91271c70d96c4d71d9
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336696"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982104"
 ---
 # <a name="europe-overview"></a>Europa – översikt
 
@@ -66,7 +65,7 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
 - [Standarder för e-fakturering som stöds](emea-oioubl-standards-electronic-invoicing.md)
 - [Tvingad generering av elektroniska fakturor](emea-eur-forced-einvoices.md)
 - [Ursprunglig fakturareferens (Östeuropa)](tasks/ee-00004-original-invoice-reference.md)
-- [Partsökning via moms-ID](tasks/eur-00015-party-search-vat-id.md)
+- [Partsökning via momsregistreringsnummer](tasks/eur-00015-party-search-vat-id.md)
 - [Verktyg för generering av betalningsreferens](tasks/ee-00015-payment-reference-generation-tool.md)
 - [Betalningskvittorapport](emea-eur-payment-slip-report-giro.md)
 - [Handkassan för Östeuropa och Ryssland](emea-petty-cash.md)
@@ -85,8 +84,8 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
 - [Skattedirektiv](emea-tax-directives.md)
 - [Uppdatera hur belopp visas i rapporter och dokument](emea-amount-printing-forms.md)
 - Mervärdesskatt (moms)
-  - [Skapa moms-ID](tasks/eur-00015-vat-id.md)
-  - [Registrering av moms-ID för leverantör](tasks/eur-00015-registration-vendor-vat-id.md)
+  - [Skapa momsregistreringsnummer](tasks/eur-00015-vat-id.md)
+  - [Registrering av momsregistreringsnummer för leverantör](tasks/eur-00015-registration-vendor-vat-id.md)
   - [Momsvalutakurs – översikt](emea-vat-exchange-rate.md)
   - [Momsavstämningsrapport](tasks/eur-00018-vat-reconciliation-report.md)
   - [Momsregistrera transaktioner för Östeuropa](emea-vat-register-transactions.md)
@@ -94,6 +93,8 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
   - [Skapa och skicka en momsrapport](tasks/create-submit-vat-report.md)
   - [Visa transaktioner för kvittning för Östeuropa](emea-transactions-settlement-form.md)
   - [Bokföringsdatum (datum för momsregistering)](emea-tax-point-date.md)
+  - [Datum för leverantörens momsregistrering](emea-date-vendor-VAT-register.md)
+- [Funktionstillägg för ekonomiska orsaker](emea-financial-reason.md)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

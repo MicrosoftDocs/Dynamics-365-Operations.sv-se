@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b2162621968c5b1c3957ea1a1639e71439000918
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0e6168033afb97c6f4f1b8466801a6f16332df82a039927ec1b45e03aa3694b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837835"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727928"
 ---
 # <a name="maintenance-downtime-activities"></a>Aktiviteter för underhållsstopp
 
@@ -40,7 +40,7 @@ När du har valt tillgångar för en underhållsstopptidsregistrering inkluderas
 
 Klicka på **Tillgångshantering** > **Allmänt** > **Aktiviteter för underhållsstopp** > **Alla aktiviteter för underhållsstopp** för att öppna en lista med alla aktiviteter för underhållsstopp och visa informationen relaterad till aktiviteterna. Klicka på en länk i kolumnen **Aktiviteter för underhållsstopp** om du vill öppna informationsvyn. Bilden nedan visar ett exempel på listan **Aktiviteter för underhållsstopp**.
 
-![Figur 1](media/19-preventive-maintenance.png)
+![Figur 1.](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>Skapa en aktivitet för underhållsstopp
@@ -61,7 +61,7 @@ Klicka på **Tillgångshantering** > **Allmänt** > **Aktiviteter för underhål
 
 Bilden nedan visar ett exempel på detaljvyn **Aktiviteter för underhållsstopp**.
 
-![Figur 2](media/20-preventive-maintenance.png)
+![Figur 2.](media/20-preventive-maintenance.png)
 
 >[!NOTE]
 >Underhållsjobben för arbetsorder och underhållsschemarader relaterade till de valda till gångarna uppdateras automatiskt om nya arbetsorder eller underhållsschemarader skapas när du har skapat aktiviteten för underhållsstopp. Om du till exempel tidsplanerar underhållsplaner eller underhållsomgångar för de relaterade till gångarna två dagar efter att aktiviteten för underhållsstopp har skapats, läggs nya underhållsschemarader automatiskt till i aktiviteten för underhållsstopp.
@@ -72,7 +72,7 @@ Bilden nedan visar ett exempel på detaljvyn **Aktiviteter för underhållsstopp
 
 10. Klicka på **OK** för att starta beräkningen. Det totala antalet timmar visas i översikten **Kapacitetsbeläggning**. På fliken **Kapacitetsbeläggning** > i åtgärdsfönstergrupperna **Gruppera efter...** klickar du på de relevanta knapparna för att få en mer detaljerad översikt över allokeringen av prognostiserade timmar. Bilden nedan visar resultaten av en beräkning av **Kapacitetsbeläggning**.
 
-![Figur 3](media/21-preventive-maintenance.png)
+![Figur 3.](media/21-preventive-maintenance.png)
 
 11. När du har skaffat en översikt över kapacitetsbeläggningen, om du vill göra justeringar på underhållsjobben för arbetsorder eller underhållsschemarader, återgår du till informationsvyn **Aktiviteter för underhållsstopp** och väljer de rader du vill justera på snabbflikarna **Resulterande underhållsjobb för arbetsorder** och **Underhållsschemarader**.
 
@@ -89,7 +89,7 @@ Bilden nedan visar ett exempel på detaljvyn **Aktiviteter för underhållsstopp
 
 16. Klicka på **OK** för att starta beräkningen. Det totala antalet artikelprognoser visas i översikten **Artikelprognos**. På fliken **Artikelprognos** > åtgärdsfönstergrupperna **Gruppera efter...** klickar du på de relevanta knapparna för att få en mer detaljerad översikt över allokeringen av prognostiserade artiklar. Bilden nedan visar resultaten av en beräkning av **Artikelprognos**.
 
-![Figur 4](media/22-preventive-maintenance.png)
+![Figur 4.](media/22-preventive-maintenance.png)
 
 - Du kan kopiera resurser från en aktivitet för underhållsstopp till en annan. I **Alla aktiviteter för underhållsstopp** väljer du knappen **Kopiera aktiviteter för underhållsstopp** och gör dina urval i fälten **Från aktiviteter för underhållsstopp** och **Till aktiviteter för underhållsstopp** och klickar på **OK**.
 - I **Alla aktiviteter för underhållsstopp** klickar du på knappen **Underhållsschemarader** eller knappen **Aktiva arbetsorder** för att öppna relaterade listor och visa raderna som är relaterade till den valda aktiviteten för underhållsstopp.

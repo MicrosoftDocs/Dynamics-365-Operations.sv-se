@@ -2,7 +2,6 @@
 title: Nyheter och ändringar i Dynamics AX programvaruversion 7.0.1 (maj 2016)
 description: Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Microsoft Dynamics AX programvaruversion 7.0.1. Den här versionen släpptes i maj 2016 och har en versionsnummer 7.0.1265.23014.
 author: sericks007
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7da0eba072aba08b4da655cf680af9282278f34f
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 9a455ffbc4396ea4bf0e3df12e7acdcbfeaa5f5269dbe772848341ac0d22a5e1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564685"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748274"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Nyheter och ändringar i AX programvaruversion 7.0.1 (maj 2016)
 
@@ -77,7 +76,7 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 </tr>
 <tr>
 <td>Stöd för strukturer som innehåller artiklar med olika dimensioner av samma artikel.</td>
-<td>När du använder en eller flera av produktdimensionerna i produktionen kan situationer uppstå då du vill producera en artikel utifrån en annan variant av samma artikel. Mer information finns i <a href="https://blogs.msdn.microsoft.com/axmfg/2015/12/22/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item/">den här bloggen</a>.</td>
+<td>När du använder en eller flera av produktdimensionerna i produktionen kan situationer uppstå då du vill producera en artikel utifrån en annan variant av samma artikel. Mer information finns i <a href="/archive/blogs/axmfg/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item">den här bloggen</a>.</td>
 </tr>
 <tr>
 <td>Produktionsorder med cirkulära strukturer på den första nivån av deras strukturer är undantagna från strukturlistenivåberäkning för materialresursplanering.</td>

@@ -1,37 +1,39 @@
 ---
-title: Registrera och ta bort förmåner för arbetare
-description: I den här proceduren visas hur en enskild anställd kan omfattas av en eller flera förmåner, samt flera anställd kan omfattas av en förmån.
-author: andreabichsel
-ms.date: 02/03/2020
+title: Registrera och ta bort förmåner för medarbetare
+description: I den här proceduren visas hur du registrerar en enskild anställd för en eller flera förmåner, samt hur du registrerar flera anställda för en viss förmån.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, HcmMassBenefitEnrollment, HcmBenefitLookup, HcmMassBenefitEnrollmentResults, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 47e8bf46d3d38cd1b776debb835d53a22e724149
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1b99db1e480ea4a53d2bda609eb08105509d95f4
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805860"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065386"
 ---
-# <a name="enroll-and-remove-benefits-from-workers"></a>Registrera och ta bort förmåner för arbetare
+# <a name="enroll-and-remove-benefits-from-workers"></a>Registrera och ta bort förmåner för medarbetare
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-I den här proceduren visas hur en enskild anställd kan omfattas av en eller flera förmåner, samt flera anställd kan omfattas av en förmån. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
+I den här proceduren visas hur du registrerar en enskild anställd för en eller flera förmåner, samt hur du registrerar flera anställda för en viss förmån. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 
 
 ## <a name="enroll-a-single-worker-in-benefits"></a>Anmäl en enstaka medarbetare till förmåner
-1. Gå till Personal > Arbetare > Medarbetare
+1. Gå till Personal > medarbetare > Medarbetare
 2. Hitta och markera önskad post i listan.
 3. Klicka på Förmåner.
 4. Klicka på Ny.
@@ -41,9 +43,9 @@ I den här proceduren visas hur en enskild anställd kan omfattas av en eller fl
 8. Expandera avsnittet Mottagare om mottagare ska läggas till i förmånen. Du kan också lägga till beroenden från den här sidan, om det behövs för förmånen.
 9. Du kan också redigera informationen om en förmånsregistrering och ta bort en registrering på den här sidan. När du är klar med ändringarna av förmånregistreringen, stängs sidan.
 
-## <a name="enroll-multiple-workers-in-a-benefit"></a>Anmäl flera arbetare till en förmån
+## <a name="enroll-multiple-workers-in-a-benefit"></a>Anmäl flera medarbetare till en förmån
 1. Stäng sidan.
-2. Gå till Personal > Arbetare > Medarbetare
+2. Gå till Personal > medarbetare > Medarbetare
 3. Markera vald rad i listan.
 4. Hitta och markera önskad post i listan.
 5. Hitta och markera önskad post i listan.

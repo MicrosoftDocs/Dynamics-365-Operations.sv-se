@@ -2,7 +2,7 @@
 title: Granska den konfigurerade ER-komponenten för att förhindra körningsproblem
 description: Det här avsnittet innehåller information om hur du granskar de konfigurerade komponenterna för elektroniska rapporter (ER) för att förhindra problem som kan uppstå vid körning.
 author: NickSelin
-ms.date: 03/04/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd4f2b00dd7634a44b75c76753f5d864b039391f4fcb29e750fb17e8a03e9b77
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718633"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074801"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Granska den konfigurerade ER-komponenten för att förhindra körningsproblem
 
 [!include[banner](../includes/banner.md)]
 
-Alla konfigurerade [elektronisk rapporterings- (ER)](general-electronic-reporting.md) [format](general-electronic-reporting.md#FormatComponentOutbound) och [modellmappning](general-electronic-reporting.md#data-model-and-model-mapping-components) kan [valideras](er-fillable-excel.md#validate-an-er-format) vid designtillfället. Under valideringen görs en konsekvenskontroll för att förhindra körningsproblem som kan uppstå, t. ex. körningsfel och prestandaförsämring. För varje problem som hittas tillhandahålls sökvägen till ett problematiskt element. För vissa problem är en automatisk korrigering tillgänglig.
+Alla konfigurerade [elektronisk rapporterings- (ER)](general-electronic-reporting.md) [format](er-overview-components.md#format-components-for-outgoing-electronic-documents) och [modellmappning](er-overview-components.md#model-mapping-component) kan [valideras](er-fillable-excel.md#validate-an-er-format) vid designtillfället. Under valideringen görs en konsekvenskontroll för att förhindra körningsproblem som kan uppstå, t. ex. körningsfel och prestandaförsämring. För varje problem som hittas tillhandahålls sökvägen till ett problematiskt element. För vissa problem är en automatisk korrigering tillgänglig.
 
 Som standard används valideringen automatiskt i följande fall för en återställningskonfiguration som innehåller de tidigare nämnda återställningskomponenterna:
 
@@ -230,6 +230,21 @@ Följande tabell ger en översikt över granskningar som ER tillhandahåller. Om
 <p><b>Körtid:</b> Den senast konfigurerade komponenten används vid körning om utkastversionen av det konfigurerade ER-formatet körs.</p>
 </td>
 </tr>
+<tr>
+<td><a href='#i17'>Inkonsekvent inställning av sidkomponent</a></td>
+<td>Dataintegritet</td>
+<td>Fel</td>
+<td>Det finns fler än två intervallkomponenter utan replikering. Ta bort onödiga komponenter.</td>
+</tr>
+<tr>
+<td><a href='#i18'>Körbarhet för ett uttryck med funktionen ORDERBY</a></td>
+<td>Körbarhet</td>
+<td>Fel</td>
+<td>
+<p>Listuttrycket för funktionen ORDERBY är inte frågningsbart.</p>
+<p><b>Körningsfel:</b> Sortering stöds inte. Validera konfigurationen om du vill ha mer information.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -359,7 +374,7 @@ Följande steg visar hur det här problemet kan uppstå.
 8. Namnge det nya kapslade fältet **$AccNumber** och konfigurera det så att det innehåller uttrycket `TRIM(Vendor.AccountNum)`.
 9. Välj **Validera** för att granska den redigerbara modellmappningskomponenten på sidan **Modellmappningsdesigner** och kontrollera att uttrycket `FILTER(Vendor, Vendor.AccountNum="US-101")` i datakällan **Leverantör** kan läsas.
 
-    ![Verifiering av uttrycket kan sökas på sidan Modellmappningsdesigner.](./media/er-components-inspections-04.gif)
+    ![Verifiering av uttrycket som har FILTER-funktionen kan sökas på sidan Modellmappningsdesigner.](./media/er-components-inspections-04.gif)
 
 10. Observera att ett valideringsfel inträffar eftersom datakällan **Leverantör** innehåller ett kapslat fält av typen **Beräknat fält** som inte tillåter att uttrycket för datakällan **FilteredVendor** översätts till den direkta SQL-instruktionen.
 
@@ -866,6 +881,67 @@ Det finns inget alternativ för automatisk korrigering av det här problemet.
 #### <a name="option-2"></a>Alternativ 2
 
 Ändra värdet på egenskapen för **Sidhuvud/Sidfot utseende** för någon av de inkonsekventa komponenterna **Excel\\Sidhuvud** eller **Excel\\Sidfot**.
+
+## <a name="inconsistent-setting-of-page-component"></a><a id="i17"></a>Inkonsekvent inställning av sidkomponent
+
+När du [konfigurerar](er-fillable-excel.md) en ER-formatkomponent för att använda en Excel-mall för att generera ett utgående dokument, kan du lägga till **Excel\\Sid**-komponent i sidnumrering av ett genererat dokument med hjälp av ER-formler. För varje **Excel\\sid**-komponent som du lägger till kan du lägga till många kapslade intervallkomponenter och fortfarande vara [intervall](er-fillable-excel.md#range-component)-komponenter och fortfarande vara kompatibel med följande [struktur](er-fillable-excel.md#page-component-structure):
+
+- Den första kapslade **intervall**-komponenten kan konfigureras så att egenskapen **Replikeringsriktning** ställs in på **Ingen replikering**. Detta intervall används för att skapa sidrubriker i genererade dokument.
+- Du kan lägga till många andra kapslade **intervall** komponenter där egenskapen **Replikeringsriktning** är inställd på **Lodrät**. De här intervallen används för att fylla i genererade dokument.
+- Den sista kapslade **intervall**-komponenten kan konfigureras så att egenskapen **Replikeringsriktning** ställs in på **Ingen replikering**. Det här intervallet används för att skapa sidfot i genererade dokument och för att lägga till sidbrytningar.
+
+Om du inte följer den här strukturen för ett ER-format i ER-formatdesignern vid designtid, inträffar ett valideringsfel och följande felmeddelande visas: "Det finns fler än två intervallkomponenter utan replikering. Ta bort onödiga komponenter.
+
+### <a name="automatic-resolution"></a>Automatisk lösning
+
+Det finns inget alternativ för automatisk korrigering av det här problemet.
+
+### <a name="manual-resolution"></a>Manuell lösning
+
+#### <a name="option-1"></a>Alternativ 1
+
+Ändra det konfigurerade formatet genom att ändra egenskapen för **Replikeringsriktning** för alla inkonsekventa **Excel\\intervall**-komponenter.
+
+## <a name="executability-of-an-expression-with-orderby-function"></a><a id="i18"></a>Körbarhet för ett uttryck med funktionen ORDERBY
+
+Den inbyggda [ORDERBY](er-functions-list-orderby.md) ER-funktionen används för att sortera posterna för en ER-datakälla av typen **[Postlista](er-formula-supported-data-types-composite.md#record-list)** som angetts som ett argument för funktionen.
+
+Argument för funktionen `ORDERBY` kan [anges](er-functions-list-orderby.md#syntax-2) för att sortera poster över apptabeller, vyer eller dataenheter genom att göra ett enda databasanrop för att få sorterad data som en lista med poster. En datakälla för typen **Postlista** används som argument för den här funktionen och anger programkällan för anropet.
+
+ER kontrollerar om det går att upprätta en direkt databasfråga till en datakälla som det refereras till i `ORDERBY`-funktionen. Om det inte går att upprätta en direkt fråga, uppstår ett valideringsfel i ER-modellmappningsdesignern. Meddelandet som du tar emot anger att ER-uttrycket som innehåller `ORDERBY`-funktionen inte kan köras under körning.
+
+Följande steg visar hur det här problemet kan uppstå.
+
+1. Börja att konfigurera ER-modellmappningskomponenten.
+2. Lägg till en datakällan för typen **Dynamics 365 for Operations \\ tabellposter**.
+3. Namnge den nya datakällan **Leverantör**. I fältet **Tabell** väljer du **VendTable** för att ange att denna datakälla ska begära tabellen **VendTable**.
+4. Lägg till en datakälla för typen **Beräknat fält**.
+5. Namnge den nya datakällan **OrderedVendors** och konfigurera den så att den innehåller uttrycket `ORDERBY("Query", Vendor, Vendor.AccountNum)`.
+ 
+    ![Konfigurera datakällan på sidan Modellmappningsdesigner.](./media/er-components-inspections-18-1.png)
+
+6. Välj **Validera** för att granska den redigerbara modellmappningskomponenten på sidan **Modellmappningsdesigner** och kontrollera att uttrycket i datakällan **OrderedVendors** kan läsas.
+7. Ändra datakällan **Levarantör** genom att lägga till ett kapslat fält av typen **Beräknat fält** för att hämta det trimmade leverantörskontonumret.
+8. Namnge det nya kapslade fältet **$AccNumber** och konfigurera det så att det innehåller uttrycket `TRIM(Vendor.AccountNum)`.
+9. Välj **Validera** för att granska den redigerbara modellmappningskomponenten på sidan **Modellmappningsdesigner** och kontrollera att uttrycket i datakällan **Leverantör** kan läsas.
+
+    ![Verifiering av uttrycket i datakällan Leverantör kan sökas på sidan Modellmappningsdesigner.](./media/er-components-inspections-18-2.png)
+
+10. Observera att ett valideringsfel inträffar eftersom datakällan **Leverantör** innehåller ett kapslat fält av typen **Beräknat fält** som inte tillåter att uttrycket för datakällan **OrderedVendors** översätts till den direkta databasinstruktionen. Samma fel inträffar vid körning om du ignorerar valideringsfelet och väljer **Kör** för att köra den här modellmappningen.
+
+### <a name="automatic-resolution"></a>Automatisk lösning
+
+Det finns inget alternativ för automatisk korrigering av det här problemet.
+
+### <a name="manual-resolution"></a>Manuell lösning
+
+#### <a name="option-1"></a>Alternativ 1
+
+I stället för att lägga till ett kapslat fält av typen **Beräknat fält** i datakällan **Leverantör**, lägger du till det kapslade fältet **$AccNumber** i datakällan **FilteredVendors** och konfigurerar fältet så att det innehåller uttrycket `TRIM(FilteredVendor.AccountNum)`. På så sätt kan uttrycket `ORDERBY("Query", Vendor, Vendor.AccountNum)` köras på databasnivå och beräkningen av det kapslade fältet **$AccNumber** kan göras efteråt.
+
+#### <a name="option-2"></a>Alternativ 2
+
+Ändra uttrycket för datakällan **FilteredVendors** från `ORDERBY("Query", Vendor, Vendor.AccountNum)` till `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Vi rekommenderar inte att du ändrar uttrycket för en tabell som har en stor mängd data (transaktionstabell) eftersom alla poster hämtas och beställning av de nödvändiga poster som krävs görs i minnet. Därför kan den här metoden orsaka dålig prestanda.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

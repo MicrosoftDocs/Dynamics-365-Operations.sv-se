@@ -1,7 +1,7 @@
 ---
 title: Strukturlistemallar
 description: En mallstrukturlista ger dig en standardiserad lista över vilka komponenter i serviceobjekt som regelbundet servas.
-author: ShylaThompson
+author: kamaybac
 ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
@@ -15,25 +15,23 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70b514aeed48180bb1b14be8b3d95d55d44d2ca8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d34502d74590595f26ba5aae78158ed893a095df
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824345"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571317"
 ---
-# <a name="template-boms"></a>Strukturlistemallar    
+# <a name="template-boms"></a>Strukturlistemallar
 
 [!include [banner](../includes/banner.md)]
-
 
 En mallstrukturlista ger dig en standardiserad lista över vilka komponenter i serviceobjekt som regelbundet servas. Komponenterna i mallstrukturlistan representerar de enskilda delkomponenterna i serviceobjektet. När du använder en mallstrukturlista på ett serviceobjekt håller du med hjälp av en servicestrukturlista reda på vilka reservdelar som har ersatts i serviceobjektet.
 
 Om du vill använda en mallstrukturlista på ett serviceavtal eller en serviceorder kopplar du den till en serviceobjektrelation.
 
-
 > [!NOTE]
-> <P>Du kan endast koppla en mallstrukturlista till varje serviceobjekt.</P>
+> Du kan endast koppla en mallstrukturlista till varje serviceobjekt.
 
 ## <a name="create-a-template-bom"></a>Skapa en strukturlistemall
 
@@ -41,8 +39,8 @@ Tabellen nedan innehåller information om de olika metoder som du kan använda f
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -70,7 +68,6 @@ Tabellen nedan innehåller information om de olika metoder som du kan använda f
 </tbody>
 </table>
 
-
 ## <a name="apply-the-template-bom-to-a-service-agreement-or-service-order"></a>Använda mallstrukturlistan för ett serviceavtal eller en serviceorder
 
 Mallstrukturlistan kan användas i ett serviceavtal och en serviceorder. Serviceavtalet omfattar vanligtvis en långtidsrelation med kunden. Ersättningshistoriken i servicestrukturlistan är användbar information att registrera i serviceavtalet.
@@ -81,7 +78,7 @@ Du kan också använda en strukturlistemall till en serviceorder om du vill regi
 
 Du kan kopiera historiken för en servicestrukturlisterad från ett serviceavtal till ett annat serviceavtal. Genom att kopiera servicehistoriken mellan serviceavtalen kan du bibehålla ersättningsposterna för en artikel.
 
-**Exempel**
+### <a name="example"></a>Exempel
 
 Anta att du har ett treårigt serviceavtal för en kunds bil. Under denna period blir kunden van vid företagets bra service som företaget erbjuder kunden. Därför när avtalet förfaller vill kunden sätta upp ett nytt. Du kan nu förhandla fram ett mer fördelaktigt avtal för företaget. Eftersom du kan ha nytta av posten för ersättningskomponenter kopierar du servicestrukturlistans historik till det nya avtalet.
 
@@ -99,26 +96,18 @@ Du kan ändra sättet på vilket information på strukturlisteraderna visas i al
 
 Du måste ställa in två nummerserier om du vill använda mallstrukturlistor. Ställ in en nummerserie för mallstrukturlista och en för radnumret i strukturlistans historik.
 
-
 > [!NOTE]
-> <P>Nummerserier används i för att fördela identifierare till poster som krävs. Innan du kan tilldela en nummerserie till en mallstrukturlista eller en radnumret i strukturlistans historik, måste du ställa in nummerserier för streckkoder.</P>
-
+> Nummerserier används i för att fördela identifierare till poster som krävs. Innan du kan tilldela en nummerserie till en mallstrukturlista eller en radnumret i strukturlistans historik, måste du ställa in nummerserier för streckkoder.
 
 ## <a name="set-up-number-sequences"></a>Ställa in nummerserier
 
-1.  På sidan **nummerserier**, skapat du nummerserier för mallstrukturlistor och radnumret för strukturlistans historik. 
-
-2.  Klicka på **servicehantering** \> **inställningar** \> **servicehanteringsparametrar**.
-
-3.  Klicka på **nummerserier**, och välj en nummerseriekod för den nummerseriereferenser som du skapat i formuläret **nummerserier**.
-
-4.  Stäng formuläret så att ändringarna sparas.
-
+1. På sidan **nummerserier**, skapat du nummerserier för mallstrukturlistor och radnumret för strukturlistans historik.
+1. Klicka på **servicehantering** \> **inställningar** \> **servicehanteringsparametrar**.
+1. Klicka på **nummerserier**, och välj en nummerseriekod för den nummerseriereferenser som du skapat i formuläret **nummerserier**.
+1. Stäng formuläret så att ändringarna sparas.
 
 > [!NOTE]
-> <P>Radnumret i strukturlistans historik används av systemet för att koppla transaktionerna i strukturlistans historik till ett serviceavtal eller en serviceorder. Numret visas inte i användargränssnittet.</P>
-
-
+> Radnumret i strukturlistans historik används av systemet för att koppla transaktionerna i strukturlistans historik till ett serviceavtal eller en serviceorder. Numret visas inte i användargränssnittet.
 
 ## <a name="see-also"></a>Se även
 
@@ -127,10 +116,5 @@ Du måste ställa in två nummerserier om du vill använda mallstrukturlistor. S
 [Hantera strukturlistemallar på objektrelationer](manage-template-boms-on-object-relations.md)
 
 [Ändra en servicestrukturlista](modify-service-bom.md)
-
- 
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

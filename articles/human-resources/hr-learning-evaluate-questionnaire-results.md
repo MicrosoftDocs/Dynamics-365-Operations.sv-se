@@ -1,38 +1,40 @@
 ---
 title: Visa och utvärdera resultaten av enkäter
-description: Den här artikeln beskriver hur du visar och utvärderar resultaten för enkäter som svarande slutför.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Detta hjälpavsnitt förklarar hur visar och utvärderar resultaten för enkäter som svarande slutför.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollectorUserResults, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: fbb0d1fb80101f086d817d2ef38e0a07490d1df1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: dc71748a5081b90feb69ed0da936c42b4d0e572a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802561"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070712"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Visa och utvärdera resultaten av enkäter
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Den här artikeln beskriver hur du visar och utvärderar resultaten för enkäter som svarande slutför. 
+Detta hjälpavsnitt förklarar hur visar och utvärderar resultaten för enkäter som svarande slutför. 
 
 Efter att svaranden har slutfört en enkät går det att visa och utvärdera enkätresultaten på följande sätt:
 
 -   **Slutförda svarssessioner** – Visa information om de enkäter som de svarande har slutfört, och generera rapporter om du vill summera svar och eventuella poäng.
--   **Resultatgrupper** – Visa information om resultatgrupper för statistik för enkäter. Resultatgruppsstatistik kan skapas för antingen en enskild svarssession för en enkät eller för alla svarssessioner.
+-   **Resultatgrupper** – Visa information om resultatgrupper för statistik för enkäter. Resultatstatistik för grupp kan skapas för antingen en enskild svarssession för en enkät eller för alla svarssessioner.
 -   **Enkätstatistik** – Ange villkor för att beräkna statistik för en viss grupp svarande.
 
 Du kan även skapa olika rapporter om du vill visa resultat sorterade efter person, svarssession eller resultatgrupp. Följande rapporter som är relaterad till ifyllda enkäter är tillgängliga:

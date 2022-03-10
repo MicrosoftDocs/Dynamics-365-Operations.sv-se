@@ -1,29 +1,29 @@
 ---
 title: Kvalitetsstyrning för lagerprocesser
-description: Det här ämnet innehåller information om funktionen för kvalitetshantering för lagerprocesser. Den här funktionen utökar möjligheterna för kvalitetshantering och låter användarna integrera artikelsamplingskontroller i den process som tar emot lager med hjälp av avancerad lagerstyrning.
+description: Det här ämnet innehåller information om funktionen för kvalitetshantering för lagerprocesser. Den här funktionen utökar möjligheterna för kvalitetshantering och låter användarna integrera artikelsamplingskontroller i den process som tar emot lager med hjälp av avancerad Warehouse management.
 author: Henrikan
-manager: tfehr
-ms.date: 04/02/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
-ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: e2bf8e340115b03577779d50ba03be8341535d87
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: 10.0.10
+ms.openlocfilehash: d81441fcc8cb86927923e76bd1a4d16a141ddc75
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209669"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571891"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Kvalitetsstyrning för lagerprocesser
 
-Funktionen _Kvalitetshantering för lagerprocesser_ låter dig integrera artikelsamplingskontroller i den process som tar emot lager med hjälp av avancerad lagerstyrning. Lagerställearbete kan skapas automatiskt för att flytta lagret till platsen för kvalitetskontroll, baserat på en procentsats eller en fast kvantitet, eller baserat på varje *n*-registreringsskylt. När en kvalitetsorder har slutförts kan arbetet skapas automatiskt för att flytta lagret till nästa plats i processen, beroende på kvalitets resultatet.
+[!include [banner](../includes/banner.md)]
+
+Funktionen _Kvalitetshantering för lagerprocesser_ låter dig integrera artikelsamplingskontroller i den process som tar emot lager med hjälp av avancerad Warehouse management. Lagerställearbete kan skapas automatiskt för att flytta lagret till platsen för kvalitetskontroll, baserat på en procentsats eller en fast kvantitet, eller baserat på varje *n*-registreringsskylt. När en kvalitetsorder har slutförts kan arbetet skapas automatiskt för att flytta lagret till nästa plats i processen, beroende på kvalitets resultatet.
 
 Funktionen _Kvalitetshantering för lagerprocesser_ omfattar alla funktioner i grundläggande kvalitetshanteringsfunktioner. Det ger möjlighet att skapa kvalitetsorder för lagret som skickas till kvalitetskontrollplatsen, även om kvalitetsorder inte alltid behövs. Därför möjliggörs en enkel kontrollprocess baserad på arbete på lager.
 
@@ -31,7 +31,7 @@ Funktionen _Kvalitetshantering för lagerprocesser_ omfattar alla funktioner i g
 
 Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 
-- **Modul:** *Lagerstyrning*
+- **Modul:** *Warehouse management*
 - **Funktionsnamn:** *Kvalitetshantering för lagerprocesser*
 
 ## <a name="key-benefits"></a>Viktiga fördelar
@@ -43,9 +43,9 @@ Funktionen _Kvalitetshantering för lagerprocesser_ genererar automatiskt arbete
 
 ## <a name="quality-management-and-the-quality-management-for-warehouse-processes-feature"></a>Kvalitetshantering och funktionen Kvalitetshantering för lagerprocesser
 
-När funktionen _Kvalitetshantering för lagerprocesser_ är aktiverad ändras konfigurationen av entiteter för viktig lagerstyrning och kvalitetshantering. Följande illustration ger en översikt över de entiteter som aktiverar kvalitetsorder för lagerprocesser. Text inom parentes anger föreslagna åtgärder när kvalitetshanteringen tillämpades innan funktionen _Kvalitetshantering för lagerprocesser_ aktiverades.
+När funktionen _Kvalitetshantering för lagerprocesser_ är aktiverad ändras konfigurationen av entiteter för viktig Warehouse management och kvalitetshantering. Följande illustration ger en översikt över de entiteter som aktiverar kvalitetsorder för lagerprocesser. Text inom parentes anger föreslagna åtgärder när kvalitetshanteringen tillämpades innan funktionen _Kvalitetshantering för lagerprocesser_ aktiverades.
 
-![Entiteter för kvalitetshantering](media/quality-management-entity-diagram.png "Entiteter för kvalitetshantering")
+![Entiteter för kvalitetshantering.](media/quality-management-entity-diagram.png "Entiteter för kvalitetshantering")
 
 ## <a name="enablers-the-quality-item-sampling-and-quality-order-work-order-types"></a>Förutsättningar: artikelsampling av kvalitet och arbetsordertyper för kvalitetsorder
 
@@ -60,7 +60,7 @@ Arbetsordertyperna _Artikelsampling av kvalitet_ och _Kvalitetsorder_ förbrukas
 
 Innan lagerarbete kan genereras automatiskt för att flytta lager till kvalitetskontroll måste du konfigurera systemet enligt följande instruktioner.
 
-1. Skapa separata arbetsklasser för arbetsordertyperna _Artikelsampling av kvalitet_ och _Kvalitetsorder_. På så sätt ser du till att lämpligt arbete kan genereras automatiskt på grundval av de två arbetsordertyperna och att det här arbetet sedan kan köras med hjälp av lagerställeappen.
+1. Skapa separata arbetsklasser för arbetsordertyperna _Artikelsampling av kvalitet_ och _Kvalitetsorder_. På så sätt ser du till att lämpligt arbete kan genereras automatiskt på grundval av de två arbetsordertyperna och att det här arbetet sedan kan köras med hjälp av mobilappen för distributionslagerhantering.
 1. Ställa in en arbetsmall för varje arbetsordertyp:
 
     - Skapa en arbetsmall som använder arbetsordertypen _Artikelsampling av kvalitet_ för att automatiskt flytta registrerade lager till en plats för kvalitetskontroll.
@@ -75,7 +75,7 @@ Ett steg för steg-exempel som visar hur du utför den här inställningen, se [
 
 Innan funktionen _Kvalitetshantering för lagerprocesser_ kan tillämpas för ett specifikt lager, måste du följa dessa steg för att göra funktionen tillgänglig för det lagret.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Lagerställen**.
+1. Gå till **Warehouse management \> Inställningar \> Lagerställe \> Lagerställen**.
 1. Markera lagret för att aktivera kvalitetshantering.
 1. På snabbfliken **lagerställe**, ange alternativet **aktivera kvalitetsorder för lagerprocesser** till _Ja_. (Observera att det här alternativet kan anges till _ja_ endast för lagerställen som använder lagerhanteringsprocesser.)
 
@@ -149,10 +149,10 @@ För att ställa in artikelsampling, gå till **Lagerhantering \> Inställningar
 
 - **Order** – Källdokumentraden kommer att ligga till grund för att utvärdera huruvida och hur kvalitetsorder och/eller kvalitetsartikelsampling och kvalitetsorderarbete skapas. Detta värde är standardvärdet och när det är valt fungerar systemet på samma sätt som det fungerar när funktionen _Kvalitetshantering för lagerprocesser_ inte är aktiverad.
 - **Last** – Last kommer att användas som bas för att utvärdera om och hur en kvalitetsorder och/eller arbete skapas. Det här värdet är bara tillgängligt om funktionen _Kvalitetshantering för lagerprocesser_ är aktiverad.
-- **Leverans** – Leveranser kommer att användas som bas för att utvärdera om och hur en kvalitetsorder och/eller arbete skapas. Det här värdet är bara tillgängligt om funktionen _Kvalitetshantering för lagerprocesser_ är aktiverad.
+- **Försändelse** – Leveranser kommer att användas som bas för att utvärdera om och hur en kvalitetsorder och/eller arbete skapas. Det här värdet är bara tillgängligt om funktionen _Kvalitetshantering för lagerprocesser_ är aktiverad.
 
 > [!NOTE]
-> När fältet **Samplingsområde** anges till *Last* eller *Leverans*, lastenheten och leveransenheterna kommer att användas om de är tillgängliga. Om de inte är tillgängliga kommer orderentiteten att användas.
+> När fältet **Samplingsområde** anges till *Last* eller *Försändelse*, lastenheten och leveransenheterna kommer att användas om de är tillgängliga. Om de inte är tillgängliga kommer orderentiteten att användas.
 
 Funktionen _Kvalitetshantering för lagerprocesser_ introducerar också värdet *Tillämplig lagerställetyp* för fältet **Kvantitetspecifikationen**. Det här värdet har stöd för generering av kvalitetsorderarbete och kvalitetsartikelsampling, baserat på registreringsskyltar. När du väljer det här värdet sker följande ändringar:
 
@@ -164,7 +164,7 @@ Alternativet **Bryt räkna efter artikel** styr om antalet registreringsskyltar 
 
 Värdet på fältet **per N:te registreringsskylt** styr hur ofta kvalitetsorder skapas i förhållande till antalet artiklar som registreras. Värdet *3* kommer till exempel att skicka var tredje objekt till kvalitetskontroll, med början på det första objektet. Värdet måste vara större än 0 (noll).
 
-När arbetstagarna tar emot artiklar med hjälp av lagerställeappen, validerar systemet om en kvalitetsassociation har ställts in för varje inkommande artikel. Om en kvalitetsassociation har ställts in använder systemet den artikelsamplingspost som konfigurerats för den kvalitetsassociationen för att bestämma hur den ska skapa kvalitetsorder, sampling av kvalitetsartiklar och inköpsorderarbete.
+När arbetstagarna tar emot artiklar med hjälp av mobilappen för distributionslagerhantering, validerar systemet om en kvalitetsassociation har ställts in för varje inkommande artikel. Om en kvalitetsassociation har ställts in använder systemet den artikelsamplingspost som konfigurerats för den kvalitetsassociationen för att bestämma hur den ska skapa kvalitetsorder, sampling av kvalitetsartiklar och inköpsorderarbete.
 
 > [!NOTE]
 > När kvittoregistrering görs i webbklienten (med hjälp av den lilla registreringssidan eller artikel införsel journalen för inköpsorderrader), skapas inget artikelsamplingsarbete för kvalitet eller inköpsorderarbete, oavsett inställningarna. I stället används den refererade artikelsamplingen för artiklar som matchar en kvalitetsassociation för att styra skapandet av kvalitetsorder.
@@ -179,14 +179,14 @@ Värdet **Referenstyp** för följande exempel är _inköp_ och värdet för **h
 
 | Samplingsområde | Kvantitetsspecifikation | Per uppdaterad kvantitet | Per lagringsdimension | Antal brytningar per artikel | Per n:te registreringsskylt | Resultat |
 |---|---|---|---|---|---|---|
-| Order | Fullständig registreringsskylt | Ja _(låst/inte redigerbart)_ | <p>Plats: ja</p><p>ID-nummer: Ja _(låst/inte redigerbart)_</p> | Nr | 3 | <p>**Kvantitet på orderrad: 100 EA**</p><ol><li>Registrera inleverans i lagerställeappen för 20 EA, LP1<p>Sampling av kvalitetsartikel för 20 EA</p><p>Kvalitetsorder 1 för 20 EA</p></li><li>Registrera inleverans i lagerställeappen för 20 EA, LP2<p>Arbete med inköpsorder på 20 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för 20 EA, LP3<p>Arbete med inköpsorder på 20 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för 20 EA, LP4<p>Sampling av kvalitetsartikel för 20 EA</p></li><li>Registrera inleverans i lagerställeappen för 20 EA, LP5<p>Arbete med inköpsorder på 20 EA (artikelinförsel)</p></li></ol> |
-| Order | Fast kvantitet = 1 | Ja | <p>Plats: ja</p><p>ID-nummer: ja</p> | Nr | Inte tillämpligt | <p>**Kvantitet på orderrad: 100**</p><ol><li>Registrera inleverans i lagerställeappen för 20 EA, LP1<p>Sampling av kvalitetsartikel för 1 EA</p><p>Kvalitetsorder 1 för 1 EA</p><p>Arbete med inköpsorder på 19 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för 20 EA, LP2<p>Sampling av kvalitetsartikel för 1 EA</p><p>Kvalitetsorder 1 för 1 EA</p><p>Arbete med inköpsorder på 19 (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för 20 EA, LP3<p>Sampling av kvalitetsartikel för 1 EA</p><p>Kvalitetsorder 1 för 1 EA</p><p>Arbete med inköpsorder på 19 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för 20 EA, LP4<p>Sampling av kvalitetsartikel för 1 EA</p><p>Kvalitetsorder 1 för 1 EA</p><p>Arbete med inköpsorder på 19 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för 20 EA, LP5<p>Sampling av kvalitetsartikel för 1 EA</p><p>Kvalitetsorder 1 för 1 EA</p><p>Arbete med inköpsorder på 19 EA (artikelinförsel)</p></li></ol> |
-| Order | Procent = 10 | Nr | <p>Plats: nej</p><p>ID-nummer: nej</p> | Nr | Inte tillämpligt | <p>**Kvantitet på orderrad: 100 EA**</p><ol><li>Registrera inleverans i lagerställeappen för 50 EA, LP1<p>Sampling av kvalitetsartikel för 10 EA</p><p>Kvalitetsorder 1 för 10 EA</p><p>Arbete med inköpsorder på 40 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för 50 EA, LP2<p>Arbete med inköpsorder på 50 EA (artikelinförsel)</p></li></ol> |
-| Lasta | Procent = 5 | Ja _(låst/inte redigerbart)_ | <p>Plats: nej</p><p>ID-nummer: nej</p> | Nr | Inte tillämpligt | <p>**Kvantitet på orderrad: 500 EA**</p><p>**Två laster: första last 200 EA, andra last 300 EA**</p><ol><li>Registrera inleverans i lagerställeappen för den första lasten för 100 EA<p>Sampling av kvalitetsartikel för 5 EA</p><p>Kvalitetsorder 1 för 5 EA</p><p>Arbete med inköpsorder på 95 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för den första lasten för 100 EA<p>Sampling av kvalitetsartikel för 5 EA</p><p>Kvalitetsorder 1 för 5 EA</p><p>Arbete med inköpsorder på 95 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för den andra lasten för 300 EA<p>Sampling av kvalitetsartikel för 15 EA</p><p>Kvalitetsorder 1 för 15 EA</p><p>Arbete med inköpsorder på 285 EA (artikelinförsel)</p></li></ol> |
-| Order | Procent = 10 | Nr | <p>Plats: ja</p><p>ID-nummer: ja</p> | Nr | Inte tillämpligt | <p>**Kvantitet på orderrad: 100**</p><ol><li>Registrera inleverans i lagerställeappen för 50 EA, LP1<p>Sampling av kvalitetsartikel för 5 EA</p><p>Kvalitetsorder 1 för 5 EA</p><p>Arbete med inköpsorder på 45 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för 50 EA, LP2<p>Sampling av kvalitetsartikel för 5 EA</p><p>Kvalitetsorder 1 för 5 EA</p><p>Arbete med inköpsorder på 45 (artikelinförsel)</p></li></ol> |
-| Lasta | Fullständig registreringsskylt | Ja _(låst/inte redigerbart)_ | <p>Plats: ja</p><p>ID-nummer: Ja _(låst/inte redigerbart)_</p> | Nr | 3 | <p>**Två artiklar:**</p><ul><li>**Orderradens kvantitet för artikel A: 120 EA (4 lastpallar)**</li><li>**Orderradens kvantitet för artikel B: 90 EA (3 lastpallar)**</li></ul><p>**En last, två lastrader med varje orderrad**</p><ol><li>Registrera inleverans i lagerställeappen för artikel A, 30 EA, LP1<p>Sampling av kvalitetsartikel för 30 EA</p><p>Kvalitetsorder 1 för 30 EA</p></li><li>Registrera inleverans i lagerställeappen för artikel A, 30 EA, LP2<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för artikel A, 30 EA, LP3<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för artikel A, 30 EA, LP4<p>Sampling av kvalitetsartikel för 30 EA</p><p>Kvalitetsorder 1 för 30 EA</p></li><li>Registrera inleverans i lagerställeappen för artikel B, 30 EA, LP5<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för artikel B, 30 EA, LP6<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för artikel A, 30 EA, LP7<p>Sampling av kvalitetsartikel för 30 EA</p><p>Kvalitetsorder 1 för 30 EA</p></li></ol> |
-| Lasta | Fullständig registreringsskylt | Ja _(låst/inte redigerbart)_ | <p>Plats: ja</p><p>ID-nummer: Ja _(låst/inte redigerbart)_</p> | Ja | 3 | <p>**Två artiklar:**</p><ul><li>**Orderradens kvantitet för artikel A: 120 EA (4 lastpallar)**</li><li>**Orderradens kvantitet för artikel B: 90 EA (3 lastpallar)**</li></ul><p>**En last, två lastrader med varje orderrad**</p><ol><li>Registrera inleverans i lagerställeappen för artikel A, 30 EA, LP1<p>Sampling av kvalitetsartikel för 30 EA</p><p>Kvalitetsorder 1 för 30 EA</p></li><li>Registrera inleverans i lagerställeappen för artikel A, 30 EA, LP2<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för artikel A, 30 EA, LP3<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för artikel A, 30 EA, LP4<p>Sampling av kvalitetsartikel för 30 EA</p><p>Kvalitetsorder 1 för 30 EA</p></li><li>Registrera inleverans i lagerställeappen för artikel B, 30 EA, LP5<p>Sampling av kvalitetsartikel för 30 EA</p><p>Kvalitetsorder 1 för 30 EA</p></li><li>Registrera inleverans i lagerställeappen för artikel B, 30 EA, LP6<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för artikel A, 30 EA, LP7<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li></ol> |
-| Lasta | Procent = 10 | Ja _(låst/inte redigerbart)_ | <p>Plats: nej</p><p>ID-nummer: nej</p> | Nr | Inte tillämpligt | <p>**Kvantitet på orderrad: 100 EA**</p><p>**Inga laster skapas. Orderomfång används.**</p><ol><li>Registrera inleverans i lagerställeappen för 50 EA, LP1<p>Sampling av kvalitetsartikel för 5 EA</p><p>Kvalitetsorder 1 för 5 EA</p><p>Arbete med inköpsorder på 45 EA (artikelinförsel)</p></li><li>Registrera inleverans i lagerställeappen för 50 EA, LP2<p>Sampling av kvalitetsartikel för 5 EA</p><p>Kvalitetsorder 1 för 5 EA</p><p>Arbete med inköpsorder på 45 EA (artikelinförsel)</p></li></ol> |
+| Order | Fullständig registreringsskylt | Ja _(låst/inte redigerbart)_ | <p>Plats: ja</p><p>ID-nummer: Ja _(låst/inte redigerbart)_</p> | Nej | 3 | <p>**Kvantitet på orderrad: 100 EA**</p><ol><li>Registrera inleverans i mobilappen för distributionslagerhantering för 20 EA, LP1<p>Sampling av kvalitetsartikel för 20 EA</p><p>Kvalitetsorder 1 för 20 EA</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för 20 EA, LP2<p>Arbete med inköpsorder på 20 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för 20 EA, LP3<p>Arbete med inköpsorder på 20 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för 20 EA, LP4<p>Sampling av kvalitetsartikel för 20 EA</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för 20 EA, LP5<p>Arbete med inköpsorder på 20 EA (artikelinförsel)</p></li></ol> |
+| Order | Fast kvantitet = 1 | Ja | <p>Plats: ja</p><p>ID-nummer: ja</p> | Nej | Inte aktuellt | <p>**Kvantitet på orderrad: 100**</p><ol><li>Registrera inleverans i mobilappen för distributionslagerhantering för 20 EA, LP1<p>Sampling av kvalitetsartikel för 1 EA</p><p>Kvalitetsorder 1 för 1 EA</p><p>Arbete med inköpsorder på 19 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för 20 EA, LP2<p>Sampling av kvalitetsartikel för 1 EA</p><p>Kvalitetsorder 1 för 1 EA</p><p>Arbete med inköpsorder på 19 (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för 20 EA, LP3<p>Sampling av kvalitetsartikel för 1 EA</p><p>Kvalitetsorder 1 för 1 EA</p><p>Arbete med inköpsorder på 19 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för 20 EA, LP4<p>Sampling av kvalitetsartikel för 1 EA</p><p>Kvalitetsorder 1 för 1 EA</p><p>Arbete med inköpsorder på 19 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för 20 EA, LP5<p>Sampling av kvalitetsartikel för 1 EA</p><p>Kvalitetsorder 1 för 1 EA</p><p>Arbete med inköpsorder på 19 EA (artikelinförsel)</p></li></ol> |
+| Order | Procent = 10 | Nej | <p>Plats: nej</p><p>ID-nummer: nej</p> | Nej | Inte aktuellt | <p>**Kvantitet på orderrad: 100 EA**</p><ol><li>Registrera inleverans i mobilappen för distributionslagerhantering för 50 EA, LP1<p>Sampling av kvalitetsartikel för 10 EA</p><p>Kvalitetsorder 1 för 10 EA</p><p>Arbete med inköpsorder på 40 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för 50 EA, LP2<p>Arbete med inköpsorder på 50 EA (artikelinförsel)</p></li></ol> |
+| Last | Procent = 5 | Ja _(låst/inte redigerbart)_ | <p>Plats: nej</p><p>ID-nummer: nej</p> | Nej | Inte tillämpligt | <p>**Kvantitet på orderrad: 500 EA**</p><p>**Två laster: första last 200 EA, andra last 300 EA**</p><ol><li>Registrera inleverans i mobilappen för distributionslagerhantering för den första lasten för 100 EA<p>Sampling av kvalitetsartikel för 5 EA</p><p>Kvalitetsorder 1 för 5 EA</p><p>Arbete med inköpsorder på 95 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för den första lasten för 100 EA<p>Sampling av kvalitetsartikel för 5 EA</p><p>Kvalitetsorder 1 för 5 EA</p><p>Arbete med inköpsorder på 95 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för den andra lasten för 300 EA<p>Sampling av kvalitetsartikel för 15 EA</p><p>Kvalitetsorder 1 för 15 EA</p><p>Arbete med inköpsorder på 285 EA (artikelinförsel)</p></li></ol> |
+| Ordning | Procent = 10 | Ja | <p>Plats: ja</p><p>ID-nummer: ja</p> | Nej | Inte aktuellt | <p>**Kvantitet på orderrad: 100**</p><ol><li>Registrera inleverans i mobilappen för distributionslagerhantering för 50 EA, LP1<p>Sampling av kvalitetsartikel för 5 EA</p><p>Kvalitetsorder 1 för 5 EA</p><p>Arbete med inköpsorder på 45 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för 50 EA, LP2<p>Sampling av kvalitetsartikel för 5 EA</p><p>Kvalitetsorder 1 för 5 EA</p><p>Arbete med inköpsorder på 45 (artikelinförsel)</p></li></ol> |
+| Lasta | Fullständig registreringsskylt | Ja _(låst/inte redigerbart)_ | <p>Plats: ja</p><p>ID-nummer: Ja _(låst/inte redigerbart)_</p> | Nej | 3 | <p>**Två artiklar:**</p><ul><li>**Orderradens kvantitet för artikel A: 120 EA (4 lastpallar)**</li><li>**Orderradens kvantitet för artikel B: 90 EA (3 lastpallar)**</li></ul><p>**En last, två beläggningsrader med varje orderrad**</p><ol><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel A, 30 EA, LP1<p>Sampling av kvalitetsartikel för 30 EA</p><p>Kvalitetsorder 1 för 30 EA</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel A, 30 EA, LP2<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel A, 30 EA, LP3<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel A, 30 EA, LP4<p>Sampling av kvalitetsartikel för 30 EA</p><p>Kvalitetsorder 1 för 30 EA</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel B, 30 EA, LP5<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel B, 30 EA, LP6<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel A, 30 EA, LP7<p>Sampling av kvalitetsartikel för 30 EA</p><p>Kvalitetsorder 1 för 30 EA</p></li></ol> |
+| Lasta | Fullständig registreringsskylt | Ja _(låst/inte redigerbart)_ | <p>Plats: ja</p><p>ID-nummer: Ja _(låst/inte redigerbart)_</p> | Ja | 3 | <p>**Två artiklar:**</p><ul><li>**Orderradens kvantitet för artikel A: 120 EA (4 lastpallar)**</li><li>**Orderradens kvantitet för artikel B: 90 EA (3 lastpallar)**</li></ul><p>**En last, två beläggningsrader med varje orderrad**</p><ol><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel A, 30 EA, LP1<p>Sampling av kvalitetsartikel för 30 EA</p><p>Kvalitetsorder 1 för 30 EA</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel A, 30 EA, LP2<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel A, 30 EA, LP3<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel A, 30 EA, LP4<p>Sampling av kvalitetsartikel för 30 EA</p><p>Kvalitetsorder 1 för 30 EA</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel B, 30 EA, LP5<p>Sampling av kvalitetsartikel för 30 EA</p><p>Kvalitetsorder 1 för 30 EA</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel B, 30 EA, LP6<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel A, 30 EA, LP7<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li></ol> |
+| Lasta | Procent = 10 | Ja _(låst/inte redigerbart)_ | <p>Plats: nej</p><p>ID-nummer: nej</p> | Nej | Inte tillämpligt | <p>**Kvantitet på orderrad: 100 EA**</p><p>**Inga laster skapas. Orderomfång används.**</p><ol><li>Registrera inleverans i mobilappen för distributionslagerhantering för 50 EA, LP1<p>Sampling av kvalitetsartikel för 5 EA</p><p>Kvalitetsorder 1 för 5 EA</p><p>Arbete med inköpsorder på 45 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för 50 EA, LP2<p>Sampling av kvalitetsartikel för 5 EA</p><p>Kvalitetsorder 1 för 5 EA</p><p>Arbete med inköpsorder på 45 EA (artikelinförsel)</p></li></ol> |
 
 När en arbetare validerar en av de kvalitetsorder som visas i föregående register, genererar systemet automatiskt kvalitetsorderarbete för att flytta lager från kvalitetskontrollplatsen till den plats som har definierats i platsdirektivet för arbetsorder typen för _kvalitetsorder_. Du kan ställa in valfri plats för det här syftet, t.ex. en retur- eller en lagringsplats, beroende på testresultatet för kvalitetsordern. Ett exempel på den här inställningen finns i [exempelscenario](#example-scenario) i slutet av det här avsnittet.
 
@@ -238,7 +238,7 @@ I följande exempel är värdet för **referenstypen** _inköp_.
     - **Testgrupp:** *kon*
     - **Artikelsampling:** *10 %*
 
-En inköpsorder för kvantiteten 10 för artikel A0001 skapas nu för leverantör 104. Därefter registreras en inköpsorderrad som har kvantiteten 10 som mottagen på ett ID-nummer med hjälp av lagerställeappen. Detta är resultatet:
+En inköpsorder för kvantiteten 10 för artikel A0001 skapas nu för leverantör 104. Därefter registreras en inköpsorderrad som har kvantiteten 10 som mottagen på ett ID-nummer med hjälp av mobilappen för distributionslagerhantering. Detta är resultatet:
 
 - Det finns en kvalitetsorder från den första kvalitetsassociationen för testgruppen *bilaga*. Kvantiteten är 5. Det finns ingen kvalitetsorder från den andra kvalitetsassociationen, eftersom kriterierna för den första kvalitetsassociationen är mer specifika i relation testgruppen *bilaga*.
 - Det finns en kvalitetsorder för den tredje kvalitetsassociationen för testgruppen *Impedans*. Kvantiteten är 10. Det finns ingen kvalitetsorder från den fjärde kvalitetsassociationen, eftersom kriterierna för den första kvalitetsassociationen är mer specifika i relation testgruppen *Impedans*.
@@ -273,7 +273,7 @@ När kvalitetsordern valideras försöker systemet skapa arbete med kvalitetsord
 
 Du kan avbryta arbetet som skapas för sampling av kvalitetsartikel. Om du vill kontrollera vad som händer när det här arbetet avbryts följer du stegen nedan.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Parametrar för lagerstyrning**.
+1. Gå till **Warehouse management \> Inställningar \> Parametrar för Warehouse management**.
 1. På fliken **allmänt** på snabbfliken **arbete** anger du alternativet **Avregistreringskvitto vid annullering av arbete** till ett av följande värden:
 
     - **Ja** – när sampling av kvalitetsartikel annulleras tas den associerade kvalitetsordern bort och lagret avregistreras.
@@ -297,7 +297,7 @@ För att kunna arbeta i det här scenariot måste du förbereda systemet på fö
 - Aktivera funktionen _Kvalitetshantering för lagerprocesser_ i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Konfigurera lagerställe 51 om du vill använda funktionen _Kvalitetshantering för lagerprocesser_ genom att följa dessa steg:
 
-    1. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Lagerställen**.
+    1. Gå till **Warehouse management \> Inställningar \> Lagerställe \> Lagerställen**.
     1. Välj lagerställe 51.
     1. På snabbfliken **lagerställe**, ange alternativet **aktivera kvalitetsorder för lagerprocesser** till *Ja*.
 
@@ -314,7 +314,7 @@ Nu måste du förbereda en grundinställning som gör det möjligt för ditt sys
 
 #### <a name="work-class-for-quality-in"></a>Arbetsklass för kvalitet in
 
-1. Gå till **Lagerstyrning \> Inställningar \> Arbete \> Arbetsklasser**.
+1. Gå till **Warehouse management \> Inställningar \> Arbete \> Arbetsklasser**.
 1. Skapa en arbetsklass och ange följande värden:
 
     - **Arbetsklass-ID:** _QualityIn_
@@ -323,7 +323,7 @@ Nu måste du förbereda en grundinställning som gör det möjligt för ditt sys
 
 #### <a name="work-template"></a>Arbetsmall
 
-1. Gå till **Lagerstyrning \> Inställningar \> Arbete \> Arbetsmallar**.
+1. Gå till **Warehouse management \> Inställningar \> Arbete \> Arbetsmallar**.
 1. Ange fältet **Typ av arbetsorder** till _sampling av kvalitetsartikel_.
 1. Skapa en arbetsmall och ange följande värden:
 
@@ -342,7 +342,7 @@ Nu måste du förbereda en grundinställning som gör det möjligt för ditt sys
 
 #### <a name="location-directive"></a>Platsdirektiv
 
-1. Gå till **Lagerstyrning \> Inställningar \> Platsdirektiv**.
+1. Gå till **Warehouse management \> Inställningar \> Platsdirektiv**.
 1. Ange fältet **Typ av arbetsorder** till _sampling av kvalitetsartikel_.
 1. Skapa ett platsdirektiv. och ange följande värden:
 
@@ -370,7 +370,7 @@ Nu måste du förbereda en grundinställning som gör det möjligt för ditt sys
 
 Sedan måste du ändra ordningsföljden för de befintliga direktiven för inköpsorderplats för lagerställe 51. Demonstrationsdata innehåller två platsdirektiv som har ett värde på **arbetsordertyp** på _inköp_: ett som kallas _51 QMS_ och den andra heter _51 PO direkt_. För att säkerställa att funktionen *Kvalitetshantering för lagerprocesser* används för lagerställe 51, måste du se till att platsdirektivet _51 QMS_ inte används. I stället för att ta bort det platsdirektivet (eftersom du kanske vill använda det i framtiden) kan du dock bara ändra ordningen.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Platsdirektiv**.
+1. Gå till **Warehouse management \> Inställningar \> Platsdirektiv**.
 1. Ange **Inköpsorder** i fältet till _Inköpsorder_.
 1. I sekvenslistan väljer du ordningsnummer 5 för platsdirektivet _51 PO direkt_.
 1. Flytta vald sekvens upp till löpnummer 4.
@@ -432,7 +432,7 @@ Skapa en kvalitetsassociation som ska använda den nya artikelsamplingen.
 
 Om du vill slutföra inställningarna för att flytta varor till platsen för kvalitetskontroll måste du göra samplingen av kvalitetsartikel tillgänglig från et menyalternativ på en mobil enhet.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Mobil enhet \> Menyalternativ på mobil enhet**.
+1. Gå till **Warehouse management \> Inställningar \> Mobil enhet \> Menyalternativ på mobil enhet**.
 1. Välj menyalternativet för mobil enhet **inköpsartikelinförsel**.
 1. På snabbfliken **arbetsgrupper** lägger du till arbetsklass-ID *QualityIn*.
 
@@ -456,7 +456,7 @@ Du har nu definierat en kvalitetsassociation som använder funktionen *kvalitets
     - **Lagerställe:** *51*
 
 1. Skriv ned inköpsordernumret så att du kan använda det senare.
-1. Gå till en mobil enhet eller emulator som kör lagerställeappen och logga in i distributionslager 51 med hjälp av *51* som användar-ID och *1* som lösenord.
+1. Gå till en mobil enhet eller emulator som kör mobilappen för distributionslagerhantering och logga in i distributionslager 51 med hjälp av *51* som användar-ID och *1* som lösenord.
 1. Gå till **ingående \> inleverans av inköp** och ange följande värden:
 
     - **PONum:** Numret på inköpsorderraden du just skapade
@@ -464,7 +464,7 @@ Du har nu definierat en kvalitetsassociation som använder funktionen *kvalitets
     - **Enhet:** *ea*
 
 1. Fortsätt att ta emot mot raden, *5 ea* i taget tills raden har tagits emot helt. (Totalt fyra registreringsskyltar kommer att skapas.)
-1. Logga ut från lagerställeappen.
+1. Logga ut från mobilappen Hantering av distributionslager.
 1. Tillbaka till webbklienten, gå till **Anskaffning och källa \> Inköpsorder \> Alla inköpsorder**.
 1. Sök upp och öppna din inköpsorder.
 1. I avsnittet **inköpsorderrader** välj rad för artikelnummer *M9201* och välj sedan **inköpsorderrader \> arbetsuppgifter**.
@@ -474,7 +474,7 @@ Du har nu definierat en kvalitetsassociation som använder funktionen *kvalitets
 
 Du kommer nu att flytta registreringsskyltarna till de angivna platserna. Den första och fjärde registreringsskylten kommer att gå till kvalitetskontrollplatsen, medan den andra och den tredje registreringsskylt går direkt till lagringen.
 
-1. Gå till en mobil enhet eller emulator som kör lagerställeappen och logga in i distributionslager 51 med hjälp av *51* som användar-ID och *1* som lösenord.
+1. Gå till en mobil enhet eller emulator som kör mobilappen för distributionslagerhantering och logga in i distributionslager 51 med hjälp av *51* som användar-ID och *1* som lösenord.
 1. Gå till **ingående \> inköpsartikelinförsel** och inför varje registreringsskylt från föregående procedur tills du har stängt allt arbete.
 
 #### <a name="summary-process-quality-management-work"></a>Sammanfattning: Behandla kvalitetshanteringsarbete
@@ -489,7 +489,7 @@ Du kommer nu att fortsätta med den grundläggande inställningen av arbetsklass
 
 #### <a name="work-class-for-quality-out"></a>Arbetsklass för kvalitet ut
 
-1. Gå till **Lagerstyrning \> Inställningar \> Arbete \> Arbetsklasser**.
+1. Gå till **Warehouse management \> Inställningar \> Arbete \> Arbetsklasser**.
 1. Skapa en arbetsklass och ange följande värden:
 
     - **Arbetsklass-ID:** *QualityOut*
@@ -498,7 +498,7 @@ Du kommer nu att fortsätta med den grundläggande inställningen av arbetsklass
 
 #### <a name="work-templates"></a>Arbetsmallar
 
-1. Gå till **Lagerstyrning \> Inställningar \> Arbete \> Arbetsmallar**.
+1. Gå till **Warehouse management \> Inställningar \> Arbete \> Arbetsmallar**.
 1. Ändra värdet **Arbetsordertyp** till *kvalitetsorder*.
 1. Skapa en arbetsmall och ange följande värden:
 
@@ -517,7 +517,7 @@ Du kommer nu att fortsätta med den grundläggande inställningen av arbetsklass
 
 #### <a name="location-directives"></a>Platsdirektiv
 
-1. Gå till **Lagerstyrning \> Inställningar \> Platsdirektiv**.
+1. Gå till **Warehouse management \> Inställningar \> Platsdirektiv**.
 1. Ändra värdet **Arbetsordertyp** till *kvalitetsorder*.
 1. Skapa ett platsdirektiv. och ange följande värden:
 
@@ -588,7 +588,7 @@ Du kommer nu att fortsätta med den grundläggande inställningen av arbetsklass
 
 #### <a name="mobile-device-menu-items-for-quality-out"></a>Menyartiklar för mobila enheter för kvalitet ut
 
-1. Gå till **Lagerstyrning \> Inställningar \> Mobil enhet \> Menyalternativ på mobil enhet**.
+1. Gå till **Warehouse management \> Inställningar \> Mobil enhet \> Menyalternativ på mobil enhet**.
 1. Välj menyalternativet för mobil enhet **QMS artikelinförsel**.
 1. På snabbfliken **arbetsgrupper** lägger du till arbetsklass-ID *QualityPut*.
 
@@ -603,7 +603,7 @@ Du har ställt in uppgifterna om arbete och platsdata för lagerställe 51, för
 1. Gå till **Lagerhantering \> Periodiska uppgifter \> Kvalitetshantering \> Kvalitetsorder**.
 1. Välj den första kvalitetsordern för de kvantiteter som har registrerats.
 1. Välj **validera**. Statusen för testet uppdateras till *underkänd*.
-1. Gå till **Lagerstyrning \> Allt arbete**.
+1. Gå till **Warehouse management \> Allt arbete**.
 1. Öppna det arbete som du just har skapat och observera att värdet **arbetsordertyp** är *kvalitetsorder*. Arbetet innehåller en rad där läggplatsen är *retur* och statusen är *underkänd*. (Om kvalitetsorderns status var *godkänd*, skulle läggplatsen vara *Bulk* i stället.)
 1. Gå tillbaka till **Lagerhantering \> Periodiska uppgifter \> Kvalitetshantering \> Kvalitetsorder**.
 1. Välj den andra kvalitetsordern för de artiklar som har registrerats.
@@ -614,13 +614,16 @@ Du har ställt in uppgifterna om arbete och platsdata för lagerställe 51, för
     > [!NOTE]
     > Vid valideringshändelsen utlöser skapande av kvalitetsordern för att kvantiteten ska flyttas från kvalitetskontrollplatsen till en ny plats.
 
-1. Gå till **Lagerstyrning \> Allt arbete**.
+1. Gå till **Warehouse management \> Allt arbete**.
 1. Välj det arbete som just har skapats och observera att en andra rubrik för kvalitetsorderarbete har skapats, där läggplatsen är *BULK-001*.
-1. Gå till en mobil enhet eller emulator som kör lagerställeappen och logga in i distributionslager 51 med hjälp av *51* som användar-ID och *1* som lösenord.
+1. Gå till en mobil enhet eller emulator som kör mobilappen för distributionslagerhantering och logga in i distributionslager 51 med hjälp av *51* som användar-ID och *1* som lösenord.
 1. Gå till **kvalitet \> Inlagra från QMS** och behandla var och en av de två registreringsskyltarna som hör till båda arbetsdelarna så att allt arbete stängs.
 
 > [!NOTE]
 > Överväg att lägga till posten kvalitet ut på en menyartikel på en mobil enhet där aktivitetskoden är *Visa öppna arbetslista*. Ett exempel finns i menyalternativet på mobila enheten som heter **arbetslista** i demonstrationsdata. Lägg först till arbetsklassen *kvalitetsorder* på ett menyalternativ som användaren anger, eftersom denna arbetsklass krävs för att arbete ska visas i arbetslistan. Lägg sedan till arbetsklassen *Kvalitetsorder* till menyalternativet **arbetslista**. Användare som har tillgång till arbetslistan kan då välja och bearbeta det arbete som skapas automatiskt av valideringen av kvalitetsorder.
 
+## <a name="additional-resources"></a>Ytterligare resurser
+
+- [Kvalitets- och avvikelsehantering – en översikt](quality-management-processes.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
 title: Konfigurera självbetjäning för medarbetare
 description: I Microsoft Dynamics 365 Human Resources kan du konfigurera paneler för navigering på högsta nivå i Självbetjäning för medarbetare.
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,24 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cafd89d30ca3876953df099e2e7b7cc9c3e1fdc0f69bb039310434f8d770f6f1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83718856a864123d7941b21c078bcdb96a62cca8
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721593"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067589"
 ---
 # <a name="configure-employee-self-service"></a>Konfigurera självbetjäning för medarbetare
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I Microsoft Dynamics 365 Human Resources kan du konfigurera paneler för navigering på högsta nivå i Självbetjäning för medarbetare. Paneler för förmånsplaner dirigerar användare till förmånsplaner som de berättigar till.
+I Microsoft Dynamics 365 Human Resources kan du konfigurera paneler för navigering på högsta nivå i **Självbetjäning för medarbetare**. Paneler för förmånsplaner dirigerar användare till förmånsplaner som de berättigar till.
 
 ## <a name="set-up-a-benefit-plans-tile"></a>Ställa in panel för förmånsplan
 
@@ -34,19 +37,16 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurera paneler för naviger
 
 2. Välj fliken **Inställning av paneler för förmånsplaner** och välj **Ny**.
 
-3. Ange värden för de följande fälten:
+3. Ange värden för de följande fälten.
 
    | Fält | Beskrivning |
    | --- | --- |
+   | **Kod för plantyp** | Plantypen som visas när den här panelen väljs i **Självbetjäning av förmåner**. |
    | **Panel-ID** | Unik identifierare för panelen. |
-   | **Etikettext för panel** | Texten som visas för panelen på självbetjäning. |
+   | **Etikettext för panel** | Den text som visas för panelen i **Självbetjäning av förmåner**. |
    | **Beskrivning** | En beskrivning av panelen. |
-   | **Internet-adress** | Ange URL-adressen till sidan för medarbetarens självbetjäningstjänster. |
-   | **Panelstorlek** | Panelens storlek: liten, medium eller stor. |
-   | **Mål** | Anger om sidan ska öppnas i ett nytt fönster eller i det aktuella fönstret. |
    | **Bakgrundsbild för panel** | URL till den bild som ska användas för panelen (valfritt). |
-   | **Start** | Startdatum och tid som panelen ska vara tillgänglig. |
-   | **Slutdatum** | Slutdatum och tid som panelen ska vara tillgänglig. |
+   | **Spåra öppen anmälan** | Välj det här alternativet om du vill spåra det öppna anmälningsförloppet för den här plantypen. Du kanske till exempel har planer som skapats där **Plantyp = Övrigt**. Dessa planer kan vara valfria planer som du inte vill spåra anmälningsförloppet för. Om du inte väljer den här plantypen ignoreras planer av dessa typer när du spårar anmälningsförloppet eller när den slutförts på fliken **Öppen anmälan**. Den här inställningen gäller för den plantyp som valts för alla perioder och juridiska personer. |
 
 4. Välj **Spara**.
 
@@ -56,19 +56,16 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurera paneler för naviger
 
 2. Välj fliken **Inställning av panel för flexkreditplan** och välj **Ny**.
 
-3. Ange värden för de följande fälten:
+3. Ange värden för de följande fälten.
 
    | Fält | Beskrivning |
    | --- | --- |
+   | **ID för förmånens kredit** | Planen för flexkreditprogram som visas när den här panelen väljs i **Självbetjäning av förmåner**. |
    | **Panel-ID** | Unik identifierare för panelen. |
-   | **Etikettext för panel** | Texten som visas för panelen på självbetjäning. |
+   | **Etikettext för panel** | Den text som visas för panelen i **Självbetjäning av förmåner**. |
    | **Beskrivning** | En beskrivning av panelen. |
-   | **Internet-adress** | Ange URL-adressen till sidan för medarbetarens självbetjäningstjänster. |
-   | **Panelstorlek** | Panelens storlek: liten, medium eller stor. |
-   | **Mål** | Anger om sidan ska öppnas i ett nytt fönster eller i det aktuella fönstret. |
    | **Bakgrundsbild för panel** | URL till den bild som ska användas för panelen (valfritt). |
-   | **Start** | Startdatum och tid som panelen ska vara tillgänglig. |
-   | **Slutdatum** | Slutdatum och tid som panelen ska vara tillgänglig. |
+   | **Spåra öppen anmälan** | Välj det här alternativet om du vill spåra det öppna anmälningsförloppet för den här plantypen. Du kanske till exempel har planer som skapats där **Plantyp = Övrigt**. Dessa planer kan vara valfria planer som du inte vill spåra anmälningsförloppet för. Om du inte väljer den här plantypen ignoreras planer av dessa typer när du spårar anmälningsförloppet eller när den slutförts på fliken **Öppen anmälan**. Den här inställningen gäller för den plantyp som valts för alla perioder och juridiska personer. |
 
 4. Välj **Spara**.
 

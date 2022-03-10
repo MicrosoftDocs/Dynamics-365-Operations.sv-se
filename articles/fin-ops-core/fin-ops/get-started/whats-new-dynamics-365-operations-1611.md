@@ -2,11 +2,9 @@
 title: Nyheter och ändringar i Dynamics 365 for Operations version 1611 (november 2016)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Operations version 1611.
 author: sericks007
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b3ede085533fee1bb779ed9da899f509a77fc0c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693441"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752818"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nyheter och ändringar i Dynamics 365 for Operations version 1611 (november 2016)
 
@@ -378,11 +376,11 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 <td>Kundfakturautskriften justeras för att uppfylla Frankrike-specifika krav.</td>
 </tr>
 <tr>
-<td>Frankrike - Framtvninga kronologiskt numrering av dokument efter räkenskapsperiod.</td>
+<td>Frankrike – Framtvninga kronologiskt numrering av dokument efter räkenskapsperiod.</td>
 <td>För att uppfylla Frankrike-specifika krav för numrering av kundfakturor kan du ställa in nummerserier för kundfakturor per räkenskapsperiod.</td>
 </tr>
 <tr>
-<td>Österrike-lokalisering - ER-konfigurationer</td>
+<td>Österrike-lokalisering – ER-konfigurationer</td>
 <td>
 <ul>
 <li>Filformat för export av lista över försäljning inom EU för Österrike.</li>
@@ -395,7 +393,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 </td>
 </tr>
 <tr>
-<td>Belgien-lokalisering - ER-konfigurationer</td>
+<td>Belgien-lokalisering – ER-konfigurationer</td>
 <td>
 <ul>
 <li>BLWI-format för Belgien</li>
@@ -413,7 +411,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 </td>
 </tr>
 <tr>
-<td>Brasilien-lokalisering - ER-konfigurationer</td>
+<td>Brasilien-lokalisering – ER-konfigurationer</td>
 <td>
 <ul>
 <li>GIA-SP för Brasilien</li>
@@ -432,7 +430,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 </td>
 </tr>
 <tr>
-<td>Kina-lokalisering - ER-konfigurationer</td>
+<td>Kina-lokalisering – ER-konfigurationer</td>
 <td>
 <ul>
 <li>Format för åldersfördelningsrapport för kunder för Kina</li>
@@ -450,7 +448,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 </td>
 </tr>
 <tr>
-<td>Estland-lokalisering - ER-konfigurationer</td>
+<td>Estland-lokalisering – ER-konfigurationer</td>
 <td>
 <ul>
 <li>Filformat för export av lista över försäljning inom EU för Estland.</li>
@@ -463,7 +461,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 </td>
 </tr>
 <tr>
-<td>Finland-lokalisering - ER-konfigurationer</td>
+<td>Finland-lokalisering – ER-konfigurationer</td>
 <td>
 <ul>
 <li>EU-försäljningslista i TXT-format för Finland</li>
@@ -473,7 +471,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 </td>
 </tr>
 <tr>
-<td>Ungern-lokalisering - ER-konfigurationer</td>
+<td>Ungern-lokalisering – ER-konfigurationer</td>
 <td>
 <ul>
 <li>Filformat för export av lista över försäljning inom EU för Ungern.</li>
@@ -488,7 +486,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 </td>
 </tr>
 <tr>
-<td>Italien-lokalisering - ER-konfigurationer</td>
+<td>Italien-lokalisering – ER-konfigurationer</td>
 <td>
 <ul>
 <li>Intrastat-format för Italien</li>
@@ -498,14 +496,14 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 <li>ISO20022 betalningsformat för autogiro för Italien.</li>
 <li>RIBA-inkassoremissformat för Italien</li>
 <li>Rapport för lokala skattetransaktioner för Italien</li>
-<li>Rapport för svarta listan för Italien</li>
+<li>Rapport för spärrlista för Italien</li>
 <li>Modello770-rapport för Italien</li>
 <li>Årlig momsredovisningsrapport för Italien</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td>Lettland-lokalisering - ER-konfigurationer</td>
+<td>Lettland-lokalisering – ER-konfigurationer</td>
 <td>
 <ul>
 <li>Användningsrapport för kassakvitton (LV)</li>
@@ -524,7 +522,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 </td>
 </tr>
 <tr>
-<td>Litauen-lokalisering - ER-konfigurationer</td>
+<td>Litauen-lokalisering – ER-konfigurationer</td>
 <td>
 <ul>
 <li>Filformat för export av lista över försäljning inom EU för Litauen.</li>
@@ -537,7 +535,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 </td>
 </tr>
 <tr>
-<td>Norge-lokalisering - ER-konfigurationer</td>
+<td>Norge-lokalisering – ER-konfigurationer</td>
 <td>
 <ul>
 <li>Kravbrevformat för Norge</li>
@@ -550,7 +548,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 </td>
 </tr>
 <tr>
-<td>Polen-lokalisering - ER-konfigurationer</td>
+<td>Polen-lokalisering – ER-konfigurationer</td>
 <td>
 <ul>
 <li>Intrastat-format för Polen</li>
@@ -563,11 +561,11 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 </td>
 </tr>
 <tr>
-<td>Saudiarabien-lokalisering - ER-konfigurationer</td>
+<td>Saudiarabien-lokalisering – ER-konfigurationer</td>
 <td>Allokeringsformat för rembursavgifter för Saudiarabien</td>
 </tr>
 <tr>
-<td>Spanien-lokalisering - ER-konfigurationer</td>
+<td>Spanien-lokalisering – ER-konfigurationer</td>
 <td>
 <ul>
 <li>EU-försäljningslista i TXT-format för Spanien</li>
@@ -584,7 +582,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 </td>
 </tr>
 <tr>
-<td>Sverige-lokalisering - ER-konfigurationer</td>
+<td>Sverige-lokalisering – ER-konfigurationer</td>
 <td>
 <ul>
 <li>Intrastat-format för Sverige</li>
@@ -597,7 +595,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 </td>
 </tr>
 <tr>
-<td>Schweiz-lokalisering - ER-konfigurationer</td>
+<td>Schweiz-lokalisering – ER-konfigurationer</td>
 <td>
 <ul>
 <li>Autogiro-betalningsformat för Schweiz</li>
@@ -609,7 +607,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Opera
 </td>
 </tr>
 <tr>
-<td>Tyskland - Exportera leverantörsbetalningar DTAZV-format</td>
+<td>Tyskland – Exportera leverantörsbetalningar DTAZV-format</td>
 <td>Tyskland kräver DTAZV med utländsk formatspecifikation som representerar ett meddelande om kreditöverföring (leverantörsbetalning) enligt specifikationen för gränsöverskridande betalningar från Tyskland till ett konto i utländsk bank eller till en lokal bank i en utländsk valuta.</td>
 </tr>
 </tbody>
@@ -945,3 +943,6 @@ För närvarande är Retail Modern POS endast tillgänglig som Windows 8.1-progr
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Nyheter och ändringar på hemsidan för Finance and Operations](whats-new-changed.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

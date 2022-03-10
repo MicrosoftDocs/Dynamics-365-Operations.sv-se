@@ -2,26 +2,23 @@
 title: EUR-00002 Ange en fraktadress för en inomeuropeisk transaktion
 description: I den här proceduren visas hur du anger en fraktadress för en transaktion för inomeuropeisk handel.
 author: v-oloski
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, TransportationDocument, LogisticsPostalAddress, SysLookupMultiSelectGrid,  VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, Intrastat, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e555d6791f596850ba1ed718aa5593ee3f88bed9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 68a62a26be418b7a0cb8e17532d022d76cd552411f438ffc5a0ddad589a9e476
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408608"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780799"
 ---
 # <a name="eur-00002-specifying-a-lading-address-for-an-intra-community-transaction"></a>EUR-00002 Ange en fraktadress för en inomeuropeisk transaktion
 
@@ -73,3 +70,6 @@ Den här proceduren gäller för alla europeiska länder/regioner. Uppgiften ska
 37. Klicka på fliken Allmänt.
     * Sök efter en nyligen skapad rad och kontrollera att avsändaren skickade varorna från Italien.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

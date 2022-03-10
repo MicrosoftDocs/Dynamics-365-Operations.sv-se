@@ -2,11 +2,9 @@
 title: Lön baserat på registreringar
 description: Det här avsnittet beskriver hur lön beräknas utifrån arbetarregistreringar.
 author: johanhoffmann
-manager: tfehr
 ms.date: 03/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgCalcApproveWeekView, JmgProdStatusListPagePayrollCostDetails, JmgPayCountTable, JmgPayStatConfig, JmgOvertimeSlize, JmgPayAgreementOverride, JmgPayCountSum, JmgPayAdjustSetup, JmgPayAdjustCostType, JmgPayEmployee, JmgMESBreak, JmgPayAddTable, JmgPayAddTransSelectTransId, JmgPayrollCostDetailsPart, jmgProdStatusListPagePayrollCosts, JmgPayrollCostPart, JmgPayEvents, JmgTermRegPayStatSetup, JmgPayStatGroup, JmgPayAddTrans, JmgPayStatTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 98ca6f7713b2f605a49a97d391fb8485bea78c4b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 58ff2629c2894e85ca5529df5f995ffa5273de67e1c22564f5f9911ea86fbd95
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966390"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715732"
 ---
 # <a name="pay-based-on-registrations"></a>Lön baserat på registreringar
 
@@ -170,9 +168,9 @@ Om du vill konfigurera systemet för att tydligt skilja standardtid och övertid
 
 På sidan **Beräkningsparametrar**, välj **Övertid** som profilspecifikationstypen och ange alternativet **Betald tid** till **Nr**, som visas här.
 
-| Reg.specifikation | Typ av profilspecifikation | Beräkning   |     | Betalad         |     |
+| Reg.specifikation | Typ av profilspecifikation | Beräkning   | Inställning | Betald         | Inställning |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
-| Arbetstid       | Övertid                   | Standardtid | Ja | Betald tid     | Nr  |
+| Arbetstid       | Övertid                   | Standardtid | Ja | Betald tid     | Nej  |
 |                    |                            | Betald tid      | Ja | Betald övertid | Ja |
 
 När du har justerat beräkningsparametrarna genereras följande löneposter.
@@ -561,7 +559,7 @@ Om däremot kryssrutan **Dra av övertid** avmarkeras för den valda frånvaroko
 
 I följande exempel visas hur en arbetares flexkonto kan minskas genom att konvertera frånvaroperioden till en Flex--period.
 
-Arbetaren stämplar in klockan 07:00 och stämplar ut 13:00. Hon har nått en överenskommelse med sin chef så att hon kan gå hem för helgen om hon drar av timmarna från sin flexkonto. När medarbetaren stämplar ut klockan 13:00 uppmanas hon att välja en frånvarokod eftersom perioden för frånvaron för den återstående delen av arbetsdagen som påverkas är inte inom en planerad flexperiod. Om du vill konvertera den återstående delen av arbetsdagen till en Flex--period kan arbetaren välja en frånvarokod som har ställts in för att minska sitt flexkonto.
+Arbetaren stämplar in klockan 07:00 och stämplar ut 13:00. Arbetaren har ett avtal som de kan gå hem för veckoslutet om de drar av dessa timmar från flexkontot. När medarbetaren stämplar ut klockan 13:00 uppmanas hon att välja en frånvarokod eftersom perioden för frånvaron för den återstående delen av arbetsdagen som påverkas är inte inom en planerad flexperiod. Om du vill konvertera den återstående delen av arbetsdagen till en Flexperiod kan arbetaren välja en frånvarokod som har ställts in för att minska sitt flexkonto.
 
 För att minska saldot för flextimmar för arbetare som registrerar frånvaro på en arbetsdag, markera **Tid och närvaro**&gt;**Inställningar**&gt;**Grupper**&gt;**Frånvarogrupper** och markera kryssrutan **Minska flex**.
 
@@ -598,3 +596,6 @@ Om arbetaren inte går till jobbet en arbetsdag och det inte finns någon planer
 - Infoga frånvaro automatiskt
 
 När dagliga registreringar beräknas för en arbetare som är aktiverad för flextid används frånvarokoden som anges på fältet **Infoga flex- automatiskt** som en standardfrånvarokod. Om arbetaren inte har aktiverats för flextid används den frånvarokod som anges på fältet **Infoga frånvaro automatiskt**. Om ett företag har en kombination av arbetare som är aktiverade för flextid och som inte är aktiverade för flextimmar, måste båda parametrarna ställas in.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,24 +3,23 @@ title: Underhållsbegäranden
 description: Det här avsnittet innehåller en översikt över hantering av underhållsbegäran i tillgångshantering.
 author: johanhoffmann
 ms.date: 10/01/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: EntAssetRequestTable, EntAssetRequestWorkspace, EntAssetRequestActivePart, EntAssetRequestWorkOrderActive, EntAssetRequestType, EntAssetRequestTableCreateWO, EntAssetRequestTableLookup, EntAssetRequestTableActivePart, EntAssetMobileRequestDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 536f512abc2b7ce74ebc35dfdaf48e812a85cc2b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 6d247457b83036dba2fad8fd9f94e04c29a3aa5e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344254"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985263"
 ---
 # <a name="maintenance-requests"></a>Underhållsbegäranden
 

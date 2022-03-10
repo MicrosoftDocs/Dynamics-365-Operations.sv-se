@@ -1,8 +1,8 @@
 ---
 title: Spara uppgiftsguider i LCS och spela upp dem igen
 description: Det här avsnittet beskriver hur du sparar uppgiftsguider till Microsoft Dynamics Lifecycle Services (LCS) och sedan spelar upp dem igen.
-author: andreabichsel
-ms.date: 02/03/2020
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,17 +11,20 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8a18bb14ba8c3c926065c97b0ee26c38ee86ded2
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 54251aed1a54f626e5cd6cbd983e3eb4589a02e8
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053285"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068369"
 ---
 # <a name="save-task-guides-to-lcs-and-replay-them"></a>Spara uppgiftsguider i LCS och spela upp dem igen
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -52,7 +55,7 @@ Följ dessa steg om du vill spara en uppgiftsinspelning till LCS.
 10. Skapa en uppgiftsinspelning.
 11. När du är klar, välj **Spara till Lifecycle Services**.
 
-    ![Spara till Lifecycle Services](media/task-guides.png)
+    ![Spara till Lifecycle Services.](media/task-guides.png)
 
 12. Välj BPM-bibliotek och nod att spara uppgiftsinspelningen till.
 

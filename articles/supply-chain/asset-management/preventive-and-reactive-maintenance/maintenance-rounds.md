@@ -1,12 +1,10 @@
 ---
 title: Underhållsomgångar
 description: I det här avsnittet beskrivs underhållsomgångar i Tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRoundTable
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a3a64593a2155d35e78b0d854c7367fa65d1c5c8
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: dc0d8ec546e7455187a87ac124c5e56a93f5bafd2270bf275af950991fc4b87e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018556"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740729"
 ---
 # <a name="maintenance-rounds"></a>Underhållsomgångar
 
@@ -82,7 +80,7 @@ In **Tillgångshantering** kan du skapa underhållsomgångar för olika tillgån
 
 Bilden nedan visar och exempel på en underhållsrunda som innehåller tre tillgångar.
 
-![Figur 1](media/13-preventive-maintenance.png)
+![Figur 1.](media/13-preventive-maintenance.png)
 
 
 ## <a name="schedule-maintenance-rounds"></a>Schemalägg underhållsomgångar
@@ -108,11 +106,14 @@ När du har ställt in en underhållsomgång kör du ett schemajobb för att tid
 
 De två bilderna nedan visar ett schemajobb i dialogrutan **Schemalägg underhållsomgångar** och de rader för underhållsschema som skapats i **Alla underhållsscheman** baserat på det schemajobbet.
 
-![Figur 2](media/14-preventive-maintenance.png)
+![Figur 2.](media/14-preventive-maintenance.png)
 
-![Figur 3](media/15-preventive-maintenance.png)
+![Figur 3.](media/15-preventive-maintenance.png)
 
 - När arbetsorder skapas manuellt på tillgångar som täcks av en leverantörsgaranti visas en dialogruta som gör användaren medveten om garantin. Skapandet av arbetsordern kan sedan annulleras. Kontrollen av en garantirelation utelämnas för arbetsorder som skapas automatiskt.  
 - Du kan ställa in ett batchjobb på snabbfliken **Kör i bakgrunden** för att schemalägga omgångar med regelbundna intervall.  
 - Om en omgång ingår i flera arbetsorderpooler (se [Arbetsorderpooler](../work-orders/work-order-pools.md)) visas en post för varje pool i **Öppna pooler för underhållsschema**. Detta görs för att optimera filtreringsalternativen för arbetsorderpooler.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,29 +1,29 @@
 ---
 title: Lean manufacturing-översikt
 description: Denna artikel ger en översikt och beskrivning av lean manufacturing-funktioner i Dynamics 365 Supply Chain Management.
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow, Kanban, KanbanQuantityOverview, KanbanAssignCard, KanbanCirculatingCards, KanbanRules, WHSKanbanWaveTableManagePickingListPool
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 19371
+ms.custom:
+- "19371"
+- intro-internal
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b333b1bf5842211641c946730c5c6582a221b5b5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e0c8b5ec4d4a391773e32a61a321c28868678baa
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246031"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985946"
 ---
 # <a name="lean-manufacturing-overview"></a>Lean manufacturing – översikt
 
@@ -68,7 +68,7 @@ I listan nedan beskrivs de specialiserade kanban-tavlorna:
 -   Kanban-tavla för överföringsjobb – Den här tavlan ger en översikt över aktuella överföringsjobb. Du kan uppdatera och registrera plocklistor, starta och slutföra överföringsjobb och utföra andra uppgifter.
 -   Kanban-tavla för processjobb – Den här tavlan har utformats för att stödja det normala produktionsflödet och för att ge en översikt över den aktuella situationen i en eller flera arbetsgrupper. Från den här tavlan kan kanban prioriteras, väljas eller tillverkas. Tavlan har också utformats för att stödja skanning av streckkoder för rapporteringen av kanban.
 
-## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>Kanban-jobb och integration med processer för Supply Chain Management.
+## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>Kanban-jobb och integrering med processer för Supply Chain Management.
 Kanban-jobb är helt integrerade med aktuella processer för lagertransaktioner i Supply Chain Management.
 -   Du kan utföra plockningsaktiviteter för att fylla på material som används för att uppfylla behoven i kanban-jobb.
 -   Du kan skriva ut kanban-kort, cirkulerande kanban-kort och plocklistor för att stödja användningen av kanban. Dessa dokument används för att representera, spåra och registrera kanban-jobb på lagerstället och på produktionsgolvet.

@@ -1,28 +1,30 @@
 ---
 title: Åtkomst till privata adresser per säkerhetsroll
-description: Det här avsnittet beskriver hur du löser problemet när en kund kan inte komma åt privata adresser.
-author: andreabichsel
-ms.date: 11/02/2018
+description: Detta avsnitt förklarar hur du löser problemet när en kund kan inte komma åt privata adresser.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8daee1b645836e96a4bf3057cb317d5409d4583a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 05895d58cfd108c45c3c75921cb6930b904a6482
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803931"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068394"
 ---
-# <a name="access-to-private-addresses-by-security-role"></a>Åtkomst till privata adresser efter säkerhetsroll
+# <a name="access-to-private-addresses-by-security-role"></a>Åtkomst till privata adresser per säkerhetsroll
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -38,7 +40,7 @@ För att lösa problemet måste kunden följa instruktionerna på den dubblerade
 2. På fliken **Säkerhet för privat plats** och flytta den nya rollen från listan **Tillgängliga roller** till listan **Markerade roller**.
 3. Välj **Spara**.
 
-![Sidan Parametrar för global adressbok](media/GAD-parameters.png)
+![Sidan Parametrar för global adressbok.](media/GAD-parameters.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

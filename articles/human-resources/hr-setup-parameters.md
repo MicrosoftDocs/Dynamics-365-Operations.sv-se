@@ -1,27 +1,26 @@
 ---
 title: Konfigurera Personal-parametrar
 description: Det här ämnet innehåller information om hur du ställer in företagsspecifika parametrar i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/03/2020
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cd66cb4f5ac02407250e15ae134b36f5ccd4d290
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889942"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771445"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurera Personal-parametrar
 
@@ -31,7 +30,7 @@ Inställningarna för vissa Personalparametrar delas av alla företag, medan ins
 
 Två sidor används för att ställa in personalparametrar. För parametrar som delas mellan företag, kan du använda de **mänskliga resurserna delas parametrar sidan** . För parametrar som är företagsspecifika (med andra ord inställningar tillämpas på ett enda företag) kan du använda den **mänskliga resursen parametrar sidan** .
 
-![Gå till personalparametrar](./media/hr-employee-self-service-human-resources-parameters.png)
+![Gå till personalparametrar.](./media/hr-employee-self-service-human-resources-parameters.png)
 
 På **mänskliga resurser parametrar sidan** , inställningarna är uppdelade i sex flikar:
 
@@ -52,20 +51,21 @@ Varje flik innehåller information som hänför sig till ett enda bolag.
 
 Inställningar på **fliken Allmänt** definierar utseendet av information om frånvaro, skador och sjukdomar, och nyanställningar. Inställningarna på den här fliken definierar också några poster som visas såsom dig arbete. På den här fliken kan du:
 
-- Välj en färg som ska användas för öppna frånvarotransaktioner
-- Ange formatmallen som ska användas för rapporter
-- Aktivera integration mellan utbildningskurser och frånvaroregistrering
+- Välj en färg som ska användas för öppna frånvarotransaktioner.
+- Ange formatmallen som ska användas för rapporter.
+- Aktivera integrering mellan utbildningskurser och frånvaroregistrering.
 - Välj den frånvarokod som används för att kontrollera den här integrationen.
 - Ange hur länge du ska behålla incidenter för skada och sjukdom.
 - Ange standard-ID som ska visas när en ny medarbetare anställs.
+- Ange datumet som används för att beräkna tjänsteår. 
 
-![Fliken Allmänt](./media/hr-setup-parameters-general.png)
+![Fliken Allmänt.](./media/hr-setup-parameters-general.png)
 
 ## <a name="recruitment"></a>Rekrytering
 
 Inställningarna på fliken **Rekrytering** definierar de dokumenttyper som används för korrespondens automatiskt till sökande. Du kan även ange vilket rekryteringsprojekt som används för oombedda ansökningar.
 
-Den period som definieras för rekrytering projektet åldrande avgör rekrytering projekt som ingår i den **åldrande projekt** panel i **rekryteringen av** arbetsytan. Den period som definieras för deadline varning används för att visa rekrytering projekt som närmar sig deras sista ansökningsdag på **sista ansökningsdag närmar sig** panelen i **rekryteringen** arbetsyta.
+Den period som anges i **Åldersfördelning för rekryteringsprojekt** avgör vilka rekryteringsprojekt som inkluderas i panelen **Åldersfördelningsprojekt** i arbetsytan **Rekryteringshantering**. Den period som definieras för deadlinevarning för ansöka används för att visa rekryteringsprojekt som närmar sig sista ansökningsdag på panelen **Sista ansökningsdag närmar sig** i arbetsytan **Rekrytering**.
 
 Mer information om rekrytering finns i [Rekrytera jobbsökande](hr-personnel-recruit.md).
 
@@ -77,7 +77,7 @@ I Personal kan du använda fliken **Kompensation** om du vill välja att begrän
 
 Mer information om att kompensationsplaner finns i [Översikt över kompensationsplaner](hr-compensation-overview.md).
 
-![Fliken Kompensation](./media/hr-setup-parameters-compensation.png)
+![Fliken Kompensation.](./media/hr-setup-parameters-compensation.png)
 
 ## <a name="number-sequences"></a>Nummerserier
 
@@ -97,30 +97,30 @@ Mer information finns i [Nummerserier (översikt)](../fin-ops-core/fin-ops/organ
 > [!NOTE]
 > Det antal timmar som arbetas inte överstiga 1250 och längden på anställningen får inte överskrida 12 månader. Dessa största värden i enlighet med federal lag i USA.
 
-![Fliken Nummerserie](./media/hr-setup-parameters-number-sequences.png)
+![Fliken Nummerserie.](./media/hr-setup-parameters-number-sequences.png)
 
 ## <a name="fmla"></a>FMLA
 
 På fliken FMLA ställer du in kraven på FMLA-berättigande och FMLA-berättigandetimmar. Mer information finns i [Konfigurera parametrar för tjänstledighet och frånvaro](hr-leave-and-absence-parameters.md).
 
-![Fliken FMLA](./media/hr-setup-parameters-fmla.png)
+![Fliken FMLA.](./media/hr-setup-parameters-fmla.png)
 
 ## <a name="employee-self-service"></a>Självbetjäning för medarbetare
 
-Inställningarna på fliken **Självbetjäning för medarbetare** påverkar hur medarbetarnas självbetjäning visas. På den här fliken kan du:
+Inställningarna på fliken **Självbetjäning för medarbetare** påverkar hur **Självbetjäning för medarbetare** visas för medarbetarna. På denna flik kan du utföra följande uppgifter:
 
-- Ange ett namn för arbetsytan Självbetjäning för medarbetare
+- Ange ett namn för arbetsytan **Självbetjäning för medarbetare**
 - Välja vilken information en chef kan ange för medarbetare
 - Lägga till användbara länkar för medarbetare
 - Hindra medarbetare från att lägga till eller redigera affärskontaktinformation. Mer information finns i [Begränsa redigering av personlig information](hr-employee-self-service-restrict-editing.md).
 
-Mer information om hur du ställer in självbetjäning för medarbetare finns [översikt över självbetjäning för medarbetare och chef](hr-employee-manager-self-service-overview.md).
+Mer information om hur du konfigurerar **Självbetjäning för medarbetare** finns i [Självbetjäningsöversikt för medarbetare och chefer](hr-employee-manager-self-service-overview.md).
 
-![Fliken Självbetjäning för medarbetare](./media/hr-setup-parameters-employee-self-service.png)
+![Fliken Självbetjäning för medarbetare.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Självbetjäning för chef
 
-Inställningarna på fliken **Självbetjäning för chef** påverkar vad chefer ser i Självbetjäning för chef. På den här fliken kan du konfigurera följande alternativ:
+Inställningarna på fliken **Självbetjäning för chef** påverkar det som cheferna ser i **Självbetjäning för chef**. På den här fliken kan du konfigurera följande alternativ:
 
 - Intervallet för utgående poster
 - Informationschefer kan visa i utgångsposter
@@ -128,15 +128,15 @@ Inställningarna på fliken **Självbetjäning för chef** påverkar vad chefer 
 - Vyer av medarbetare
 - Användbara länkar för chefer
 
-Mer information om hur du ställer in självbetjäning för chefer finns [översikt över självbetjäning för medarbetare och chef](hr-employee-manager-self-service-overview.md).
+Mer information om hur du konfigurerar **Självbetjäning för chef** finns i [Självbetjäningsöversikt för medarbetare och chefer](hr-employee-manager-self-service-overview.md).
 
-![Fliken Självbetjäning för chef](./media/hr-setup-parameters-manager-self-service.png)
+![Fliken Självbetjäning för chef.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>Hantering av förmåner
 
-På fliken Förmånshantering kan du konfigurera e-postalternativ för förmånshantering. Mer information om hur du konfigurerar och använder en förmånshantering finns i [Översikt över förmånshantering](hr-benefits-management-overview.md).
+På fliken **Förmånshantering** kan du konfigurera e-postalternativ för förmånshantering. Mer information om hur du konfigurerar och använder förmånshanteringar finns i [Översikt över förmånshantering](hr-benefits-management-overview.md).
 
-![Fliken Hantering av förmåner](./media/hr-setup-parameters-benefits-management.png)
+![Fliken Hantering av förmåner.](./media/hr-setup-parameters-benefits-management.png)
 
 ## <a name="leave-and-absence"></a>Tjänstledighet och frånvaro
 
@@ -146,7 +146,7 @@ Läs mer om ställa in och använda ledighet och frånvaro i [Översikt av tjän
 
 På fliken **Betalningsmetoder** kan du välja de betalningsmetoder som stöds av din organisation. Mer information om att konfigurera kompensationsplaner finns i [Översikt över kompensationsplaner](hr-compensation-overview.md).
 
-![Fliken Betalningsmetoder](./media/hr-setup-parameters-payment-methods.png)
+![Fliken Betalningsmetoder.](./media/hr-setup-parameters-payment-methods.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
+ms.custom:
+- "220314"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 36998d299e166709778bfaa7bfd0d8980890d4fe
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224044"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323852"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Skapa en ny ER-lösning för att skriva ut en egen rapport
 
@@ -123,15 +125,15 @@ I det här exemplet ska du skapa en ny ER-lösning för modulen [enkät](../../.
 
 1. Om du vill köra den befintliga rapporten går du till **enkät** \> **design** \> **enkätrapport**.
 
-    ![Att välja menyalternativet enkätrapport i modulen enkät för att köra den befintliga SSRS-rapporten](./media/er-quick-start1-application-menu-origin.png)
+    ![Välja menyalternativet Enkätrapport i modulen Enkät för att köra den befintliga SSRS-rapporten.](./media/er-quick-start1-application-menu-origin.png)
 
 2. I dialogrutan **enkätrapport** ange urvalskriterier. Använd ett filter så att rapporten bara innehåller **SBCCrsExam** enkät.
 
-    ![Ange urvalskriterier i dialogrutan för enkätrapport](./media/er-quick-start1-ssrs-report-dialog.png)
+    ![Ange urvalskriterier i dialogrutan för enkätrapport.](./media/er-quick-start1-ssrs-report-dialog.png)
 
 Följande bild visar den genererade versionen av SSRS-rapporten för **SBCCrsExam**-enkät.
 
-![Genererad SSRS-rapport](./media/er-quick-start1-ssrs-report.png)
+![Genererad SSRS-rapport.](./media/er-quick-start1-ssrs-report.png)
 
 ## <a name="configure-the-er-framework"></a><a name="ConfigureFramework"></a>Konfigurera ER-ramverket
 
@@ -179,13 +181,13 @@ Mer information om ER-konfigurationsleverantörer finns i [Skapa konfigurationsl
 
 ## <a name="design-a-domain-specific-data-model"></a><a name="DesignModel"></a>Ange urvalskriterier i dialogrutan för frågeformulär
 
-Du måste skapa en ny ER-konfiguration som innehåller komponenten [datamodell](general-electronic-reporting.md#data-model-and-model-mapping-components) för affärsdomänen **Enkät**. Den här datamodellen kommer senare att användas som datakälla när du designar ett ER-format för att generera **enkät**-rapporten.
+Du måste skapa en ny ER-konfiguration som innehåller komponenten datamodellför affärsdomänen **enkät**. Den här datamodellen kommer senare att användas som datakälla när du designar ett ER-format för att generera **enkät**-rapporten.
 
 Genom att slutföra stegen i avsnittet [Importera en ny konfiguration för datamodell](#ImportDataModel) kan du importera den datamodell som krävs från den angivna XML-filen. Du kan också slutföra stegen i avsnittet [Skapa en ny konfiguration för datamodell](#DesignDataModel) om du vill designa den här datamodellen från början.
 
 ### <a name="import-a-new-data-model-configuration"></a><a name="ImportDataModel"></a>Importera en ny konfiguration för datamodell
 
-1. Hämta filen [enkätmodell.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) och spara den på den lokala datorn.
+1. Hämta filen [enkätmodell.version.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml) och spara den på den lokala datorn.
 2. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 3. På arbetsytan **Elektronisk rapportering** väljer du **Rapporteringskonfiguration**.
 4. På Åtgärdsfönster väljer du **växla** \> **läs in från XML-fil**.
@@ -271,7 +273,7 @@ Om du vill fortsätta hoppar du över nästa procedur, [skapa en ny konfiguratio
 
     I bilden nedan visas den färdiga redigerbara datamodellen på sidan **Datamodelldesigner**.
 
-    ![Konfigurerad datamodell i ER-datamodelldesigner](./media/er-quick-start1-model2.png)
+    ![Konfigurerad datamodell i ER-datamodelldesignern.](./media/er-quick-start1-model2.png)
 
 7. Spara ändringarna.
 8. Stäng sidan **datamodelldesigner**.
@@ -285,7 +287,7 @@ Om du vill fortsätta hoppar du över nästa procedur, [skapa en ny konfiguratio
 
 Status för version 1 av denna konfiguration ändras från **utkast** till **slutförd**. Version 1 kan inte längre ändras. Den här versionen innehåller den konfigurerade datamodellen och kan användas som grund för andra ER-konfigurationer. Version 2 av denna konfiguration skapas och har statusen **utkast**. Du kan redigera den här versionen för att justera datamodellen **enkät**.
 
-![Versioner av den redigerbara konfigurationen på sidan Konfigurationer](./media/er-quick-start1-model-configuration.png)
+![Versioner av den redigerbara konfigurationen på sidan Konfigurationer.](./media/er-quick-start1-model-configuration.png)
 
 Mer information om versionshantering för ER-konfigurationer finns i [Översikt över elektroniska rapporter (ER)](general-electronic-reporting.md#component-versioning).
 
@@ -294,13 +296,13 @@ Mer information om versionshantering för ER-konfigurationer finns i [Översikt 
 
 ## <a name="design-a-model-mapping-for-the-configured-data-model"></a><a name="DesignMapping"></a>Designa en modellmappning för den konfigurerade datamodellen
 
-Som användare i rollen som elektronisk rapporteringsutvecklare måste du skapa en ny ER-konfiguration som innehåller en komponent för [modellmappning](general-electronic-reporting.md#data-model-and-model-mapping-components) för datamodellen **enkät**. Eftersom den här komponenten implementerar den konfigurerade datamodellen för Finance, är den Finance-specifik. Du måste konfigurera komponenten för modellmappning för att ange vilka programobjekt som ska användas för att fylla i den konfigurerade datamodellen med programdata vid körning. För att slutföra den här uppgiften måste du vara medveten om implementeringsinformationen för datastrukturen i affärsdomänen **enkät** i Finance.
+Som användare i rollen som elektronisk rapporteringsutvecklare måste du skapa en ny ER-konfiguration som innehåller en komponent för modellmappning för datamodellen **enkät**. Eftersom den här komponenten implementerar den konfigurerade datamodellen för Finance, är den Finance-specifik. Du måste konfigurera komponenten för modellmappning för att ange vilka programobjekt som ska användas för att fylla i den konfigurerade datamodellen med programdata vid körning. För att slutföra den här uppgiften måste du vara medveten om implementeringsinformationen för datastrukturen i affärsdomänen **enkät** i Finance.
 
 Genom att slutföra stegen i avsnittet [Importera en ny konfiguration för modellmappning](#ImportModelMapping) som följer kan du importera den konfiguration av modellmappning som krävs från den angivna XML-filen. Du kan också slutföra stegen i avsnittet [Skapa en ny konfiguration för modellmappning](#CreateModelMapping) om du vill designa den här modellmappningen från början.
 
 ### <a name="import-a-new-model-mapping-configuration"></a><a name="ImportModelMapping"></a>Importera en ny konfiguration för modellmappning
 
-1. Hämta filen [enkätmappning.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) och spara den på den lokala datorn.
+1. Hämta filen [enkätmappning.version.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml) och spara den på den lokala datorn.
 2. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 3. På arbetsytan **Elektronisk rapportering** väljer du **Rapporteringskonfiguration**.
 4. På Åtgärdsfönster väljer du **växla** \> **läs in från XML-fil**.
@@ -366,7 +368,7 @@ Du måste konfigurera datakällor för att få åtkomst till programtabellerna s
     2. Markera **Lägg till**.
     3. I dialogrutan i fältet **Namn** ange **\$ResultGroup**.
     4. Välj **Redigera recept**.
-    5. I [ER-formelredigeraren](general-electronic-reporting-formula-designer.md), i fältet **Formel** ange **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** för att använda [sökväg](er-formula-language.md#paths) för 1:n-relation mellan register KMCollection och KMQuestionResultGroup.
+    5. I [ER-formelredigeraren](general-electronic-reporting-formula-designer.md), i fältet **Formel** ange **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** för att använda [sökväg](er-formula-language.md#Paths) för 1:n-relation mellan register KMCollection och KMQuestionResultGroup.
     6. Markera **Spara** och stäng sedan formelredigeraren.
     7. Klicka på **OK** om du vill lägga till nya beräknade fält.
 
@@ -439,7 +441,7 @@ Du kan lägga till ER-etiketter för att konfigurera vissa av dina datakällor f
 5. Stäng dialogrutan **textöversättning**.
 6. Välj **Avbryt**.
 
-![Lägga till ER-etiketter för redigerbar modellmappning](./media/er-quick-start1-adding-labels.png)
+![Lägga till ER-etiketter för redigerbar modellmappning.](./media/er-quick-start1-adding-labels.png)
 
 Du har bara angett ER-etiketter för standardspråket. Information om hur ER-etiketter kan översättas till andra språk finns i [utforma flerspråkiga rapporter](er-design-multilingual-reports.md).
 
@@ -473,7 +475,7 @@ Eftersom du måste transformera resultaten av jämförelsen mellan uppräkningsv
     8. Markera **Spara** och stäng sedan formelredigeraren.
     9. Klicka på **OK** om du vill lägga till den nya datakällan.
 
-![Konfigurerad modellmappning i ER-modellmappningsdesigner](./media/er-quick-start1-added-data-sources.png)
+![Konfigurerad modellmappning i ER-modellmappningsdesignern.](./media/er-quick-start1-added-data-sources.png)
 
 #### <a name="bind-data-sources-to-data-model-fields"></a><a name="AddMmBindings1"></a>Binda datakällor till fält för datamodell
 
@@ -524,7 +526,7 @@ Du måste binda de konfigurerade datakällorna till fälten i datamodellen för 
 
     Bilden nedan visar det slutliga tillståndet för den konfigurerade modellmappningen på sidan **modellmappningsdesigner**.
 
-    ![Helt konfigurerad modellmappning i ER-modellmappningsdesigner](./media/er-quick-start1-mapping2.png)
+    ![Helt konfigurerad modellmappning i ER-modellmappningsdesignern.](./media/er-quick-start1-mapping2.png)
 
 7. Spara ändringarna.
 8. Stäng sidan **modellmappningsdesigner**.
@@ -538,7 +540,7 @@ Du måste binda de konfigurerade datakällorna till fälten i datamodellen för 
 
 Status för version 1.1 av denna konfiguration ändras från **utkast** till **slutförd**. Version 1.1 kan inte längre ändras. Den här versionen innehåller den konfigurerade modellmappningen och kan användas som grund för andra ER-konfigurationer. Version 1.2 av denna konfiguration skapas och har statusen **utkast**. Du kan redigera den här versionen för att justera konfigurationen **enkätmappningen**.
 
-![Versioner av den redigerbara ER-konfigurationen på sidan konfigurationer](./media/er-quick-start1-mapping-configuration.png)
+![Versioner av den redigerbara ER-konfigurationen på sidan Konfigurationer.](./media/er-quick-start1-mapping-configuration.png)
 
 > [!NOTE]
 > Den konfigurerade modellmappningen är din Finance-specifika implementering av den abstrakta datamodellen som representerar affärsdomän **enkät**.
@@ -547,32 +549,32 @@ Status för version 1.1 av denna konfiguration ändras från **utkast** till **s
 
 ER-ramverket använder fördefinierade mallar för att generera rapporter i Microsoft Office-format (Excel-arbetsböcker eller Word-dokument). Medan den rapport som krävs skapas fylls en mall i med de data som krävs enligt det konfigurerade dataflöden. Därför måste du först designa en mall för din anpassade rapport. Den här mallen måste vara utformad som en Excel-arbetsbok, vars struktur representerar layouten i en anpassad rapport. Du måste namnge varje Excel-artikel som du tänker fylla i med nödvändiga data.
 
-1. Hämta filen [enkätrapportmall.xslx](https://go.microsoft.com/fwlink/?linkid=851448) och spara den på den lokala datorn.
+1. Hämta filen [enkätrapportmall.xslx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx) och spara den på den lokala datorn.
 2. Öppna filen i Excel och granska arbetsbokens struktur.
 
 Som visas i bilden nedan har den hämtade mallen utformats för att skriva ut angivna enkäter som visar en enkätfrågeställningar tillsammans med lämpliga svar.
 
-![Excel-mall för att skriva ut angivna enkäter](./media/er-quick-start1-template-layout.png)
+![Excel-mall för att skriva ut angivna enkäter.](./media/er-quick-start1-template-layout.png)
 
 Excel-namn har lagts till i den här mallen för ifyllning av enkätinformation. Du kan använda namnhanteraren för att granska Excel-namnen.
 
-![Använda namnhanteraren för att granska Excel-namn i den medföljande Excel-mallen](./media/er-quick-start1-template-names.png)
+![Använda namnhanteraren för att granska Excel-namn i den medföljande Excel-mallen.](./media/er-quick-start1-template-names.png)
 
 Rapportetiketter har lagts till som fast text på engelska. Du kan ersätta rapportetiketterna med nya Excel-namn som fyller i etiketterna med språkberoende text genom att använda etiketterna för återställningsformat [etikett](#AddMmLabels), på samma sätt som för språkberoende uttryck i den konfigurerade modellmappningen. I det här fallet måste du lägga till ER-etiketter i det redigerbara återställningsformatet.
 
 Som visas i bilden nedan har det anpassade rapporthuvudet angetts för att Excel ska kunna göra sidindelning.
 
-![Anpassat rapporthuvud i den angivna Excel-mallen](./media/er-quick-start1-template-header.png)
+![Anpassat rapportsidhuvud i den angivna Excel-mallen.](./media/er-quick-start1-template-header.png)
 
 ## <a name="design-a-format"></a><a name="DesignFormat"></a>Designa ett format
 
-Som användare i rollen funktionell konsult för elektronisk rapportering måste du skapa en ny ER-konfiguration som innehåller komponenten [format](general-electronic-reporting.md#FormatComponentOutbound). Du måste konfigurera formatkomponenten för att ange hur en rapportmall ska fyllas i med nödvändiga data vid körning.
+Som användare i rollen funktionell konsult för elektronisk rapportering måste du skapa en ny ER-konfiguration som innehåller komponenten format. Du måste konfigurera formatkomponenten för att ange hur en rapportmall ska fyllas i med nödvändiga data vid körning.
 
 Genom att slutföra stegen i avsnittet [Importera en utformad formatkonfiguration](#FormatImport) kan du importera det format som krävs från den angivna XML-filen. Du kan också slutföra stegen i avsnittet [Skapa en ny formatkonfiguration](#FormatCreate) om du vill designa det här formatet från början.
 
 ### <a name="import-a-designed-format-configuration"></a><a name="FormatImport"></a>Importera en utformad formatkonfiguration
 
-1. Hämta filen [enkätformat.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) och spara den på den lokala datorn.
+1. Hämta filen [enkätformat.version.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml) och spara den på den lokala datorn.
 2. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 3. På arbetsytan **Elektronisk rapportering** väljer du **Rapporteringskonfiguration**.
 4. På Åtgärdsfönster väljer du **växla** \> **läs in från XML-fil**.
@@ -612,11 +614,11 @@ Om du vill fortsätta hoppar du över nästa procedur, [skapa en ny formatkonfig
     2. Sök och markera den lokalt sparade filen **enkätrapportmall.xslx** och välj sedan **Öppna**.
     3. Välj **OK** för att importera mallen.
 
-    ![Importera en rapportmall](./media/er-quick-start1-template-import.png)
+    ![Importera en rapportmall.](./media/er-quick-start1-template-import.png)
 
 Formatelementet **Excel\\File** läggs automatiskt till i det redigerbara formatet som ett rotelement. Dessutom läggs formatelementet **Excel\\Range** eller formatelementet **Excel\\Cell** automatiskt till för varje identifierat Excel-namn i den importerade mallen. Formatet **Excel\\Header** som har kapslade **Sträng**-element läggs automatiskt till för att avspegla rubrikinställningarna för den importerade mallen.
 
-![Formatstruktur som innehåller automatiskt tillagda element i ER-åtgärdsdesigner.](./media/er-quick-start1-template-import2.png)
+![Formatstruktur som innehåller automatiskt tillagda element i ER-funktionsdesignern.](./media/er-quick-start1-template-import2.png)
 
 #### <a name="configure-a-format"></a><a name="ConfigureFormat"></a>Konfigurera ett format
 
@@ -627,12 +629,12 @@ Formatelementet **Excel\\File** läggs automatiskt till i det redigerbara format
 
     Information om hur du anger språk och kulturkontexter för en ER-process finns i [utforma flerspråkiga rapporter](er-design-multilingual-reports.md).
 
-    ![Konfigurera språk- och kulturinställningar för den designade rapporten i ER-åtgärdsdesigner](./media/er-quick-start1-template-format-structure1.png)
+    ![Konfigurera språk- och kulturinställningar för den designade rapporten i ER-funktionsdesignern.](./media/er-quick-start1-template-format-structure1.png)
 
 5. Expandera rotnoden i formatträdet och välj sedan **ResultsGroup**.
 6. På fliken **Format** i fältet **Replikeringsriktning** välj **Ingen replikering**, eftersom du inte förväntar dig att ha flera resultatgrupper för en enda enkät.
 
-    ![Definiera riktning för replikering för områdesformatelement i ER-åtgärdsdesigner](./media/er-quick-start1-template-format-structure2.png)
+    ![Definiera riktning för replikering för områdesformatelement i ER-funktionsdesignern.](./media/er-quick-start1-template-format-structure2.png)
 
 7. Välj **Spara**.
 
@@ -652,7 +654,7 @@ Du måste ange en databindning för ett formatelement som används för att fyll
 
 5. Stäng formelredigeraren.
 
-    ![Konfigurera bindningen så att den fyller i rubriken på en genererad rapport](./media/er-quick-start1-add-report-title-label.png)
+    ![Konfigurera bindningen så att den fyller i rubriken i en genererad rapport.](./media/er-quick-start1-add-report-title-label.png)
 
 Du kan använda den här tekniken för att göra alla andra etiketter för den aktuella mallspråkberoende. Information om hur tillagda etiketter för en enskild ER-konfiguration kan översättas till alla språk som stöds finns i [utforma flerspråkiga rapporter](er-design-multilingual-reports.md).
 
@@ -662,7 +664,7 @@ Du kan använda den här tekniken för att göra alla andra etiketter för den a
 2. Välj **Redigera**.
 3. Granska informationen i dialogrutan **Egenskaper för datakälla**. Den här datakällan representerar version 1 av den datamodellkomponent för **enkäter** som finns i ER-konfigurationen för **enkätmodell**.
 
-![Egenskaper för modelldatakällan i ER-åtgärdsdesigner](./media/er-quick-start1-model-data-source.png)
+![Egenskaper för modelldatakällan i ER-funktionsdesignern.](./media/er-quick-start1-model-data-source.png)
 
 #### <a name="bind-format-elements-to-data-source-fields"></a><a name="BindFormatElements"></a>Binda formatelement till fält för datakällor
 
@@ -678,7 +680,7 @@ Om du vill ange hur en mall ska fyllas i vid körning måste du binda varje form
 
     Områdesformatelement **enkät** intervall konfigureras som vertikalt replikerat. När den är bunden till en datakälla för typen **postlista** upprepas det korrekta intervallet **enkät** för Excel-mallen för varje post i den bundna datakällan.
  
-    ![Bindande områdesformatelement för enkät till lämpliga datakällor för postlista i ER-åtgärdsdesigner](./media/er-quick-start1-bindings1.png)
+    ![Binda områdesformatelement för enkät till lämpliga datakällor för postlista i ER-funktionsdesignern.](./media/er-quick-start1-bindings1.png)
 
     Eftersom området **enkät** för Excel-mallen definieras mellan raderna 5 till 14, upprepas dessa rader för varje rapporterad enkät.
 
@@ -718,7 +720,7 @@ Om du vill ange hur en mall ska fyllas i vid körning måste du binda varje form
 
 Bilden nedan visar det slutliga tillståndet för den konfigurerade databindningar på sidan **Formatdesigner**.
 
-![Konfigurerad databindningar i ER-åtgärdsdesigner](./media/er-quick-start1-bindings2.png)
+![Konfigurerade databindningar i ER-funktionsdesignern.](./media/er-quick-start1-bindings2.png)
 
 > [!IMPORTANT]
 > Hela mängden med angivna datakällor och bindningar representerar en formatmappningskomponent i det konfigurerade formatet. Den här formatmappningen anropas när du kör det konfigurerade formatet för rapportgenerering.
@@ -738,9 +740,9 @@ Du kan nu köra ett utformat format för testning från sidan **konfigurationer*
 
 Som [standard](electronic-reporting-destinations.md#default-behavior) levereras en genererad rapport som en Excel-fil som du kan hämta. I följande illustrationer visas två sidor i den genererade rapporten i Excel-format.
 
-![Exempel på en genererad rapport i Excel-format, sidan 1](./media/er-quick-start1-report1a.png)
+![Exempel på en genererad rapport i Excel-format, sida 1.](./media/er-quick-start1-report1a.png)
 
-![Exempel på en genererad rapport i Excel-format, sidan 2](./media/er-quick-start1-report1b.png)
+![Exempel på en genererad rapport i Excel-format, sida 2.](./media/er-quick-start1-report1b.png)
 
 ## <a name="tune-a-designed-format"></a><a name="TuneFormat"></a>Justera ett utformat format
 
@@ -761,7 +763,7 @@ Frågeställningarna ordnas inte korrekt i en genererad rapport. Du kan ändra o
 1. På sidan **Formatdesigner** välj rotobjekt **Rapport**.
 2. På fliken **Mappning** i formatträdet, expandera **Report\\Questionnaire\\Question**.
 
-    ![Element i frågetyp i intervalltypen för ER-åtgärdsdesigner](./media/er-quick-start1-bindings3.png)
+    ![Element i frågeformat för typen Område i ER-funktionsdesignern.](./media/er-quick-start1-bindings3.png)
 
 3. På fliken **Mappning** välj **model.Questionnaire**.
 4. Välj **Lägg till** \> **funktioner\\beräknat fält** och skriv sedan i fältet **Name** **OrderedQuestions**.
@@ -774,7 +776,7 @@ Frågeställningarna ordnas inte korrekt i en genererad rapport. Du kan ändra o
 11. Välj **Bind** och bekräfta att den aktuella sökvägen **model.Questionnaire.Questions** ersätts av den nya sökvägen **model.Questionnaire.OrderedQuestions** i alla bindningar för kapslade element.
 12. Välj **Spara**.
 
-![Bind frågeformatelementet till den konfigurerade OrderedQuestions-datakällan i ER-åtgärdsdesigner](./media/er-quick-start1-bindings4.png)
+![Binda frågeformatelementet till den konfigurerade OrderedQuestions-datakällan i ER-funktionsdesignern.](./media/er-quick-start1-bindings4.png)
 
 ### <a name="run-a-modified-format-from-er"></a><a name="RunFormatFromER2"></a>Kör ett ändrat format från ER
 
@@ -788,7 +790,7 @@ Du kan nu köra ett ändrat format för testning från ER-ramverket.
 
 Följande bild visar en genererad rapport i Excel-format där frågeställningarna har beställts på rätt sätt.
 
-![Genererad rapport i Excel-format med korrekt ordnade frågeställningar](./media/er-quick-start1-report2.png)
+![Genererad rapport i Excel-format med korrekt ordnade frågeställningar.](./media/er-quick-start1-report2.png)
 
 ### <a name="complete-the-format-design"></a><a name="CompleteFormat"></a>Slutför formatdesignen
 
@@ -799,7 +801,7 @@ Följande bild visar en genererad rapport i Excel-format där frågeställningar
 
 Status för version 1.1 av denna konfiguration ändras från **utkast** till **slutförd**. Version 1.1 kan inte längre ändras. Den här versionen innehåller det konfigurerade formatet och kan användas för att skriva ut din anpassade rapport. Version 1.2 av denna konfiguration skapas och har statusen **utkast**. Du kan redigera den här versionen för att justera formatet för rapporten **enkät**.
 
-![Redigerbar ER-konfigurationen på sidan Konfigurationer](./media/er-quick-start1-format-configuration.png)
+![Redigerbar ER-konfiguration på sidan Konfigurationer.](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > Det konfigurerade formatet är din design av **enkät**-rapporten och innehåller inga relationer till de Finance-specifika artefakter.
@@ -1049,7 +1051,7 @@ Bygg ditt projekt för att göra ett nytt menyalternativ tillgängligt för anv�
 
 1. Gå till **Enkät** \> **Design** \> **Enkätrapport (drivs av ER)**.
 
-    ![Att välja menyalternativet enkätrapport (drivs av ER) i modulen enkät för att köra det konfigurerade ER-formatet](./media/er-quick-start1-application-menu-modified.png)
+    ![Att välja menyalternativet enkätrapport (drivs av ER) i modulen Enkät för att köra det konfigurerade ER-formatet.](./media/er-quick-start1-application-menu-modified.png)
 
 2. I dialogrutan i fältet **Formatmappning** välj **Enkätrapport**.
 3. Välj **OK**.
@@ -1057,7 +1059,7 @@ Bygg ditt projekt för att göra ett nytt menyalternativ tillgängligt för anv�
 5. Bekräfta filtreringsåtgärden genom att välja **OK**.
 6. Klicka på **OK** om du vill köra rapporten.
 
-    ![Ange urvalskriterier i dialogrutan för Elektronisk rapport](./media/er-quick-start1-report-run-dialog-page.png)
+    ![Ange urvalskriterier i dialogrutan för Elektronisk rapport.](./media/er-quick-start1-report-run-dialog-page.png)
 
 7. Granska den genererade rapporten.
 
@@ -1082,7 +1084,7 @@ Du kan ändra den konfigurerade ER-lösningen så att den använder dataleverant
 
 Den tillagda datakällan innehåller information om post-ID för den ER-formatmappning som körs.
 
-![Tillagd datakälla i ER-modellmappningsdesigner](./media/er-quick-start1-mapping3.png)
+![Tillagd datakälla i ER-modellmappningsdesignern.](./media/er-quick-start1-mapping3.png)
 
 #### <a name="add-a-data-source-to-access-er-format-mapping-records"></a><a name="AddDataSource2"></a>Lägga till en datakälla för åtkomst av mappningsposter för ER-format
 
@@ -1117,7 +1119,7 @@ Fortsätt att redigera den valda modellmappningen så att namnet på det ER-form
 
 Eftersom du använde fältet **FormatName** visar den konfigurerade modellmappningen namnet på ett ER-format som anropar modellmappningen under körningen.
 
-![Bind datamodellfältet till metoden för den tillagda datakällan i ER-modellmappningsdesigner](./media/er-quick-start1-mapping4.png)
+![Binda datamodellfältet till metoden för den tillagda datakällan i ER-modellmappningsdesignern.](./media/er-quick-start1-mapping4.png)
 
 #### <a name="complete-the-design-of-the-model-mapping"></a><a name="CompleteModelMapping2"></a>Färdigställa modellmappningens utformning
 
@@ -1154,7 +1156,7 @@ Du kan ändra det konfigurerade ER-formatet så att namnet visas i sidfoten i en
 
 Det konfigurerade formatet har nu ändrats så att namnet infogas i sidfoten i en genererad rapport med hjälp av elementet **Footer\\String**.
 
-![Lägga till elementet sidfotsformat i det konfigurerade formatet i ER-åtgärdsdesigner](./media/er-quick-start1-template-format-structure3.png)
+![Lägga till elementet Sidfotsformat i det konfigurerade formatet i ER-åtgärdsdesignern.](./media/er-quick-start1-template-format-structure3.png)
 
 #### <a name="complete-the-format-design"></a><a name="CompleteFormat2"></a>Slutför formatdesignen
 
@@ -1176,7 +1178,7 @@ Status för version 1.2 av denna konfiguration ändras från **utkast** till **s
 
 Observera att den genererade rapportens sidfot innehåller namnet på det ER-format som användes för att generera den.
 
-![Genererad rapport i Excel-format](./media/er-quick-start1-report4.png)
+![Genererad rapport i Excel-format.](./media/er-quick-start1-report4.png)
 
 ### <a name="run-a-format-from-er"></a><a name="RunFormatFromER3"></a>Kör ett format från ER
 
@@ -1197,7 +1199,7 @@ Observera att den genererade rapportens sidfot inte innehåller namnet på ER-fo
 3. På snabbfliken **Filmål** ange **Skärm** [destination](er-destination-type-screen.md) för formatkomponenten **rapport** som har [lagts till](#AddFormatRootElement) som rotelement för det konfigurerade ER-formatet **enkätrapport**.
 4. På snabbfliken **inställningar av PDF-konvertering** konfigurera destinationen för att konvertera en rapport till [PDF-format](electronic-reporting-destinations.md#OutputConversionToPDF) som använder sidorienteringen **liggande**.
 
-![Konfigurera den anpassade skärmens destination för ER-format på sidan Destination för elektronisk rapportering](./media/er-quick-start1-destination.png)
+![Konfigurera det anpassade skärmmålet för ER-format på målsidan för elektronisk rapportering.](./media/er-quick-start1-destination.png)
 
 ### <a name="run-a-format-from-the-application-to-preview-it-as-a-pdf-document"></a><a name="RunFormatFromApp3"></a>Kör ett format från programmet för att förhandsgranska det som ett PDF-dokument
 
@@ -1209,7 +1211,7 @@ Observera att den genererade rapportens sidfot inte innehåller namnet på ER-fo
 
     På snabbfliken **destinationer** ser du att fältet **resultat** är angivet till **skärm**. Om du vill ändra det konfigurerade målet väljer du **ändra**.
 
-    ![Dialogrutan ER-rapportkörning där du kan ändra det konfigurerade målet](./media/er-quick-start1-run-settings.png)
+    ![Dialogrutan för ER-rapportkörning där du kan ändra det konfigurerade målet.](./media/er-quick-start1-run-settings.png)
 
 6. Klicka på **OK** om du vill köra rapporten.
 7. Granska den genererade rapporten i PDF-format.

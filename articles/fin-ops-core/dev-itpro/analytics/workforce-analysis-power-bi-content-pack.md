@@ -2,11 +2,9 @@
 title: Personalmätningar Power BI-innehåll
 description: Det här avsnittet beskriver Power BI-innehåll för personalmätningar.
 author: jcart1106
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d0622cebcfca15acf50cf62e8a77af360d4f1bda
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 9393b4dcc6cb5f65d38c6904bf38def9d50af281671e0e09314148824f3e6891
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092801"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757283"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Personalmätningar Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver **personalmätningar** Microsoft Power BI -innehåll. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
+Det här avsnittet beskriver **personalmätningar** Microsoft Power BI innehåll. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
 **Personalmätningar** Power BI-innehåll visas på arbetsytan **Personalhantering** om du använder någon av följande produkter:
@@ -86,3 +84,6 @@ Följande tabell visar enheterna som innehållet baserades på.
 | Medarbetarutveckling           | Arbetare över tid, antal anställda, företag och befattning                                 | Företag, geografisk plats, medarbetarens namn, rapporter till, förskjutningskalender, datum, medarbetarens titel, demografi, anställning, jobb |
 | Massanställningsprojekt        | Antal massanställningsprojekt, projektägare och projektstatus                     | Företag, massanställningsrad |
 | Massanställningsrad           | Avdelning, anställningstyp och befattning                                           | Datum, jobb, massanställningsprojekt |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

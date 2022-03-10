@@ -1,12 +1,10 @@
 ---
 title: Livscykelstadier för funktionsplats
 description: I det här avsnittet beskrivs hur du ställer in funktionsplatstillstånd och livscykelmodeller i tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationLifecycleModel, EntAssetFunctionalLocationLifecycleState
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f119e68319b901b052fa4aa659260f386f44bcf
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3a9893ad497bbe442d74f5212153fa466d2c85eb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021295"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360980"
 ---
 # <a name="functional-location-lifecycle-states"></a>Livscykelstadier för funktionsplats
 
@@ -58,7 +56,10 @@ När du har skapat de livscykeltillstånd som krävs för dina funktionsplatser 
 1. Välj **tillgångshanterings** > **inställningar** > **funktionsplatser** > **livscykelmodeller**.
 2. Skapa en ny livscykelmodell genom att välja **Nytt**.
 3. Infoga livscykelmodell-ID i fältet **livscykelmodell** och ett namn för livscykelmodellen i fältet **namn**. I fälten **funktionsplatstyper** och **livscykeltillstånd** kan du se antalet funktionsplatstyper som använder livscykelmodellen och antalet tillstånd som har valts i livscykelmodellen.
-4. På snabbfliken **livscykeltillstånd** väljer du de tillstånd som ska inkluderas i modellen. Detta görs genom att klicka på ett tillstånd i avsnittet **Resterande livscykeltillstånd** och klicka på ![framåtpilknappen](media/02-setup-for-functional-locations.png).
-5. Om du vill markera alla tillgängliga tillstånd för en modell klickar du på knappen ![Välj alla tillgängliga tillstånd](media/03-setup-for-functional-locations.png). Alla tillstånd överförs till avsnittet **markerade livscykeltillstånd**.
-6. Om du vill ta bort ett valt tillstånd från modellen, markerar du tillståndet i avsnittet **markerade livscykeltillstånd** och väljer sedan ![bakåtpilknappen](media/04-setup-for-functional-locations.png).
+4. På snabbfliken **livscykeltillstånd** väljer du de tillstånd som ska inkluderas i modellen. Detta görs genom att klicka på ett tillstånd i avsnittet **Återstående livscykeltillstånd** och klicka på ![framåtpilknappen.](media/02-setup-for-functional-locations.png) .
+5. Om du vill markera alla tillgängliga tillstånd för en modell klickar du på knappen ![välj alla tillgängliga tillstånd.](media/03-setup-for-functional-locations.png) . Alla tillstånd överförs till avsnittet **markerade livscykeltillstånd**.
+6. Om du vill ta bort ett valt tillstånd från modellen markerar du tillståndet i avsnittet **markerade livscykeltillstånd** och väljer sedan ![bakåtpilknappen](media/04-setup-for-functional-locations.png) .
 7. Välj **uppdateringar av livscykeltillstånd** för att definiera vilka livscykeltillstånd som kan följa ett valt tillstånd.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

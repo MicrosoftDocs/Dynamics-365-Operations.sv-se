@@ -2,11 +2,9 @@
 title: Begränsningar för kostnadsversioner av standardkostnader
 description: Det här avsnittet beskriver de restriktioner som gäller för kostnadsversioner av standardkostnader.
 author: AndersGirke
-manager: tfehr
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
@@ -18,12 +16,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f8f5707b6f51372684606d135c0643b36e3a94f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2028cdabde3d01de16050b38893ec9e42353ae542be7a0cd7362cf62e9315170
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245261"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748797"
 ---
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a>Begränsningar för kostnadsversioner av standardkostnader
 
@@ -41,8 +39,7 @@ Följande restriktionerna ser till att standardkostnadsprinciperna efterlevs:
 
 Artikelkostnadsdata för standardkostnader kan kopieras till en annan kostnadsversion som innehåller standardkostnader eller planerade kostnader. Artikelkostnadsdata för planerade kostnader kan emellertid inte kopieras till en kostnadsversion som innehåller standardkostnader, eftersom restriktionerna som beskrivits tidigare i det här avsnittet inte gäller för planerade kostnader.
 
-<a name="related-topics"></a>Relaterade ämnen
---------
+## <a name="related-topics"></a>Relaterade ämnen
 
 [Översikt över kostnadsversioner](costing-versions.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c95704b944f86a1cfc0654f0ebf5bc7c79bbeec9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3ece0fc1121211706350d804fec59e72ef08282fcba4e65f557a510834738b11
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743684"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Underhållsbegärans livscykeltillstånd
 
@@ -48,7 +48,7 @@ Livscykeltillstånd för underhållsbegäran definierar stadier som en begäran 
 
 Följande illustration visar ett exempel på sidan **livscykeltillståndet för underhållsbegäran**.
 
-![Sidan Underhållsbegärans livscykeltillstånd](media/02-setup-for-requests.png)
+![Sidan Livscykeltillstånd för underhållsbegäran.](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Livscykeltillstånd för underhållsbegäran, livscykeltillståndsgrupper och typer är relaterade till och används på samma sätt som livscykeltillstånd för arbetsorder, livscykeltillståndsgrupper och typer. 
@@ -66,9 +66,9 @@ När du har skapat de livscykeltillstånd som krävs för dina underhållsbegär
 
 5. På snabbfliken **livscykeltillstånd** väljer du de livscykeltillstånd som ska inkluderas i livscykelmodellen.
 
-    - Om du vill inkludera ett livscykeltillstånd i livscykelmodellen markerar du avsnittet **återstående livscykeltillstånd** och markerar sedan högerpilknappen ![högerpil](media/03-setup-for-requests.png) för att flytta den till avsnittet **Valt livscykeltillstånd**.
-    - Om du vill inkludera alla tillgängliga livscykeltillstånd i livscykelmodellen markerar du knappen **Välj alla tillgängliga tillstånd** knappen ![Välj alla tillgängliga tillstånd](media/04-setup-for-requests.png). Alla livscykeltillstånd flyttas till avsnittet **markerade livscykeltillstånd**.
-    - Om du vill ta bort ett livscykeltillstånd i livscykelmodellen markerar du avsnittet **valda livscykeltillstånd** och markerar sedan vänsterpilknappen ![vänsterpil](media/05-setup-for-requests.png) för att flytta den till avsnittet **Återstående livscykeltillstånd**.
+    - Om du vill inkludera ett livscykeltillstånd i livscykelmodellen markerar du det i avsnittet **Återstående livscykeltillstånd** och väljer sedan höger pilknapp ![Högerpil.](media/03-setup-for-requests.png) för att flytta den till avsnittet **Valda livscykeltillstånd**.
+    - Om du vill inkludera alla tillgängliga livscykeltillstånd i livscykelmodellen markerar du knappen **Välj alla tillgängliga tillstånd** ![Välj alla tillgängliga tillstånd.](media/04-setup-for-requests.png). Alla livscykeltillstånd flyttas till avsnittet **markerade livscykeltillstånd**.
+    - Om du vill ta bort ett livscykeltillstånd från livscykelmodellen markerar du det i avsnittet **Valt livscykeltillstånd** och väljer sedan vänster pilknapp ![Vänsterpil.](media/05-setup-for-requests.png) för att flytta det till avsnittet **Återstående livscykeltillstånd**.
 
 6. På snabbfliken **allmänt** är fälten i avsnittet **uppdateringar** relevanta om du använder depåreparation.
 
@@ -77,7 +77,7 @@ När du har skapat de livscykeltillstånd som krävs för dina underhållsbegär
 
 Följande illustration visar ett exempel på sidan **livscykelmodeller för underhållsbegäran**.
 
-![Sidan Livscykelmodeller för underhållsbegäran](media/06-setup-for-requests.png)
+![Sidan Livscykelmodeller för underhållsbegäran.](media/06-setup-for-requests.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

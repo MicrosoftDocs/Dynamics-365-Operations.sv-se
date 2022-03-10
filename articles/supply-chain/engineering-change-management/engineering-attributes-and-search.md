@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2f8803e46ce6f104a5afee64faaf393a2df47a61
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 59710f0366418e240a4109e7cf8fcf84073110bf
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568121"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103223"
 ---
 # <a name="engineering-attributes-and-engineering-attribute-search"></a>Tekniska attribut och sökning efter tekniska attribut
 
@@ -72,9 +72,9 @@ Om du vill visa, skapa eller redigera av teknisk attribut följer du dessa steg.
 
 För produktstrukturer, till exempel strukturlistor eller formler, kan valda attribut föras över från de underordnade artiklarna upp till de överordnade artiklarna. Du kan se processen som "omvänt arv".
 
-#### <a name="turn-on-this-feature-for-your-system"></a>Aktivera funktionen i systemet
+#### <a name="turn-engineering-attribute-inheritance-on-or-off"></a>Aktivera eller inaktivera arv av tekniska attribut
 
-Om ditt system inte redan innehåller de funktioner som beskrivs i det här avsnittet, gå till [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktivera funktionen *Förbättrat arv av attribut för konstruktionsändringshantering*.
+Den här funktionen kräver att både kontrollfunktionerna för *Konstruktionsändringshantering* och *Förbättrat attributarv för konstruktionsändringshantering* är aktiverad för systemet. Information om hur du aktiverar och inaktiverar funktionerna finns i [Översikt över hantering av tekniska ändringar](product-engineering-overview.md).
 
 #### <a name="attribute-inheritance-example"></a>Exempel på attributarv
 

@@ -1,77 +1,79 @@
 ---
 title: Konfigurera Dataverse-integrering
-description: Du kan aktivera eller inaktivera integration mellan Microsoft Dataverse och Dynamics 365 Human Resources. Du kan också visa synkroniseringsinformation, ta bort spårningsdata och synkronisera om ett register för att hjälpa till att felsöka dataproblem från de två miljöerna.
-author: andreabichsel
-manager: tfehr
-ms.date: 01/25/2021
+description: I detta ämne beskrivs integreringen mellan Microsoft Dataverse och Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: CDSIntegrationAdministration
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 38c42469e62bf5457d0281540325a6c56a5f930f
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: c4e68142045b72b139bdda8be707a73e21e568fd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5114342"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065461"
 ---
 # <a name="configure-dataverse-integration"></a>Konfigurera Dataverse-integrering
 
-Du kan aktivera eller inaktivera integration mellan Microsoft Dataverse och Dynamics 365 Human Resources. Du kan också visa synkroniseringsinformationen, rensa spårningsdata och synkronisera om ett register för att hjälpa till att felsöka dataproblem från de två miljöerna.
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Du kan aktivera eller inaktivera integrering mellan Microsoft Dataverse och Dynamics 365 Human Resources. Du kan också visa synkroniseringsinformationen, rensa spårningsdata och synkronisera om ett register för att hjälpa till att felsöka dataproblem från de två miljöerna.
 
 > [!NOTE]
-> Mer information om Dataverse (tidigare Common Data Service) och terminologiuppdateringar finns i [Vad är Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Mer information om Dataverse (tidigare Common Data Service) och terminologiuppdateringar finns i [Vad är Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
-När du stänger av integrationen kan användarna göra ändringar i personal eller Dataverse, men dessa ändringar synkroniseras inte mellan de två miljöerna.
+När du stänger av integreringen kan användarna göra ändringar i personal eller Dataverse, men dessa ändringar synkroniseras inte mellan de två miljöerna.
 
 Som standard inaktiveras dataintegrering mellan personal och Dataverse.
 
-Du kanske vill inaktivera integration i följande situationer:
+Du kanske vill inaktivera integrering i följande situationer:
 
 - Du fyller i data via datahanteringsramverket och måste importera data flera gånger för att de ska få rätt status.
 
-- Det finns problem med data i personal eller Dataverse. Om du inaktiverar integration kan du ta bort en post i en miljö utan att ta bort den i den andra. När du aktiverar integreringen igen kommer posten i miljön där den inte togs bort att synkroniseras till den miljö där den togs bort. Synkroniseringen påbörjas nästa gång batchjobbet **Dataverse-integrering missade begärd synkronisering** körs.
+- Det finns problem med data i personal eller Dataverse. Om du inaktiverar integrering kan du ta bort en post i en miljö utan att ta bort den i den andra. När du aktiverar integreringen igen kommer posten i miljön där den inte togs bort att synkroniseras till den miljö där den togs bort. Synkroniseringen påbörjas nästa gång batchjobbet **Dataverse-integrering missade begärd synkronisering** körs.
 
 > [!WARNING]
-> När du stänger av dataintegreringen måste du se till att du inte redigerar samma post i båda miljöerna. När du slår på integrationen igen synkroniseras posten som du senast redigerade. Om du inte gör samma ändringar i den här posten i båda miljöerna kan det därför hända att data går förlorade.
+> När du stänger av dataintegreringen måste du se till att du inte redigerar samma post i båda miljöerna. När du slår på integreringen igen synkroniseras posten som du senast redigerade. Om du inte gör samma ändringar i den här posten i båda miljöerna kan det därför hända att data går förlorade.
 
-## <a name="access-the-dataverse-integration-page"></a>Öppna sidan Dataverse-integration
+## <a name="access-the-dataverse-integration-page"></a>Öppna sidan Dataverse-integrering
 
 1. I personalinstansen där du vill visa eller konfigurera inställningar för integrering med Dataverse väljer du panelen **systemadministration**.
 
-    [![Panelen Systemadministration](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
+    [![Panelen Systemadministration.](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
 2. Välj fliken **Länkar**.
 
-    [![Fliken Länkar](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
+    [![Fliken Länkar.](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
-3. Under **Integrationer**, välj **Dataverse konfiguration**.
+3. Under **Integreringer**, välj **Dataverse konfiguration**.
 
-    [![Dataverse konfigurationslänk](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
+    [![Dataverse-konfigurationslänk.](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
 
 ## <a name="turn-data-integration-between-human-resources-and-dataverse-on-or-off"></a>Aktivera och inaktivera dataintegrering mellan personal och Dataverse
 
 - Ställ in alternativet **Aktivera Dataverse-integrering** som **Ja** på sidan **Microsoft Dataverse-integrering** för att aktivera integrering.
 
     > [!NOTE]
-    > När du aktiverar integrationen kommer data att synkroniseras nästa gång som batchjobbet **Dataverse-integrering missade begärd synkronisering** körs. Alla data måste vara tillgängliga när batch-jobbet har slutförts.
+    > När du aktiverar integreringen kommer data att synkroniseras nästa gång som batchjobbet **Dataverse-integrering missade begärd synkronisering** körs. Alla data måste vara tillgängliga när batch-jobbet har slutförts.
 
-- Om du vill stänga av integrationen ställer du in alternativet på **Nej**.
+- Om du vill stänga av integreringen ställer du in alternativet på **Nej**.
 
-[![Aktivera eller inaktivera Dataverse-integreringen](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
+[![Aktivera eller inaktivera Dataverse-integreringen.](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
 
 > [!WARNING]
-> Vi rekommenderar att du inaktiverar Dataverse integration när du utför dataflyttningsuppgifter. Stora dataöverföringar kan påverka prestanda betydligt. Exempelvis kan överföringar av 2 000 arbetare ta flera timmar när integreringen är aktiverad och mindre än en timme när den är inaktiverad. Siffrorna i det här exemplet är endast avsedda som demonstrationer. Hur lång tid det tar att importera poster kan variera kraftigt baserat på många faktorer.
+> Vi rekommenderar att du inaktiverar Dataverse integrering när du utför dataflyttningsuppgifter. Stora dataöverföringar kan påverka prestanda betydligt. Exempelvis kan överföringar av 2 000 medarbetare ta flera timmar när integreringen är aktiverad och mindre än en timme när den är inaktiverad. Siffrorna i det här exemplet är endast avsedda som demonstrationer. Hur lång tid det tar att importera poster kan variera kraftigt baserat på många faktorer.
 
 ## <a name="view-data-integration-details"></a>Visa information om dataintegrering
 
@@ -99,7 +101,7 @@ Om du får problem under synkroniseringen mellan personal och Dataverse kan du k
 
 - Om du vill ta bort kopplingen mellan en Personal-post och en Dataverse-rad väljer du registret i fältet **Dataverse-register** och sedan **Rensa spårningsinformation**.
 
-[![Rensa uppföljningsinformation](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
+[![Rensa spårningsinformation.](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
 
 Se nästa procedur för att köra en fullständig synkronisering på registret efter det att du har rensat spårningen.
 
@@ -117,12 +119,15 @@ Så här kör du en fullständig synkronisering på ett register mellan Personal
 
 2. Välj **Synkronisera nu**.
 
-[![Köra en fullständig synkronisering](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
+[![Köra en fullständig synkronisering.](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
 
 ## <a name="see-also"></a>Se även
 
 [Dataverse-register](hr-developer-entities.md)<br>
 [Konfigurera virtuella Dataverse-register](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Vanliga frågor och svar om virtuella register i Personal](hr-admin-virtual-entity-faq.md)<br>
-[Vad är Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Terminologiuppdateringar](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+[Vanliga frågor och svar om virtuella register i Human Resources](hr-admin-virtual-entity-faq.md)<br>
+[Vad är Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Terminologiuppdateringar](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

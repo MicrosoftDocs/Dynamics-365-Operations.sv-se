@@ -1,26 +1,28 @@
 ---
 title: Översikt över inköpsorder
 description: Den här artikeln innehåller allmän information om inköpsorder (PO) och länkar till fler artiklar som är relaterade till de olika stegen som en inköpsorder geomgår.
-author: kamaybac
+author: Henrikan
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 93083
+ms.custom:
+- "93083"
+- intro-internal
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77410fd131ecdcb05b682ac4660ec8c453b75218
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: b2e01f73aa78c0fabf0f5a1e0acd3bbc4f69cfc4
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188231"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982314"
 ---
 # <a name="purchase-order-overview"></a>Översikt över inköpsorder
 

@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 23ac3067c03bf2cf336848301e8c27b60da8dc8c
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 2a9753e220e62794b157340c9f8e6f8a053e9ba7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964867"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067993"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identifiera och distribuera kandidaturvalsverktyg
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Om du vill hitta en kvalificerad pool av kandidater kan det vara svårt att fylla vakanser, särskilt för en befattning kräver en unik kompetenskombination. Det kan dock hända att kandidater med de färdigheter som du behöver redan arbetar i din organisation. Du kan söka efter en viss kompetensuppsättning bland befintliga medarbetare eller nya sökande. Det gör att en rekryterare snabbt kan samla in och gå igenom sökande som har ansökt till en vakans, nu eller tidigare, eller hitta potentiella sökande från sin befintliga pool av medarbetare. Använd den här proceduren om du vill veta hur kompetensmappningsfunktionen kan hjälpa dig att hitta rätt person för en vakans. Demonstrationsdataföretaget **USMF** har använts för att skapa denna procedur.
 

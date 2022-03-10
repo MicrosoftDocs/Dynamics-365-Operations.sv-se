@@ -1,12 +1,10 @@
 ---
 title: Abonnemangsförsäljningspriser
 description: När du skapar ett abonnemang hämtas försäljningspriset från inställningarna för försäljningspris som skapats i formuläret Försäljningspris (abonnemang).
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASalespriceSubscription
 audience: Application User
@@ -17,17 +15,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ed8329e9da08fbe24d9b3982eee562974f0fb3b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fd63fc290263babafabd6e29441f008d0cf10e13
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5242311"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569995"
 ---
-# <a name="subscription-sales-prices"></a>Abonnemangsförsäljningspriser   
+# <a name="subscription-sales-prices"></a>Abonnemangsförsäljningspriser
 
 [!include [banner](../includes/banner.md)]
-
 
 När du skapar ett abonnemang hämtas försäljningspriset från inställningarna för försäljningspris som skapats i formuläret **Försäljningspris (abonnemang)**.
 
@@ -35,14 +32,14 @@ I formuläret **Försäljningspris (abonnemang)** kan du skapa försäljningspri
 
 Om periodkoden och valutan är identiska för både abonnemang och försäljningspris väljs försäljningspriser för abonnemanget utifrån de prioriteringar som listas i följande tabell. En tom cell i tabellen indikerar tomt fält och X anger ett värde som är lika med värdet i abonnemanget som transaktionen genererats från.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -122,7 +119,6 @@ Om periodkoden och valutan är identiska för både abonnemang och försäljning
 </tbody>
 </table>
 
-
 När en abonnemangsavgift skapas väljs försäljningspriset med högst detaljnivå (enligt uppgifterna i tabellen ovan) som försäljningspris för abonnemanget.
 
 ## <a name="update-and-index-subscription-sales-prices"></a>Uppdatera och indexera abonnemangsförsäljningspriser
@@ -137,15 +133,15 @@ När du skapar en abonnemangsavgift baseras försäljningspriset på abonnemange
 
 Du vill skapa ett försäljningspris för abonnemang på 500 EUR för det nya projektet 9030. I formuläret **försäljningspris (abonnemang)** kan du skapa en försäljningsprisrad enligt tabellen nedan.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -176,14 +172,14 @@ Observera att fälten **Kategori** och **Abonnemang** är tomma.
 
 Du skapar sedan följande abonnemang:
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -228,14 +224,14 @@ Abonnemangsavgifter med försäljningspriset 500 EUR skapas för båda abonneman
 
 <table>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -276,15 +272,15 @@ Abonnemangsavgifter med försäljningspriset 500 EUR skapas för båda abonneman
 
 Senare beslutar du dig för att du vill ange försäljningspriser för kategorin AbKat1 för projekt 9030. Därför skapar du en ny försäljningsprisrad med försäljningspriset EUR 550 för kombinationen projekt 9030 och avgiftskategori AbKat1. Det finns nu två abonnemangsprisrader för projekt 9030 enligt följande tabell.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -319,19 +315,18 @@ Senare beslutar du dig för att du vill ange försäljningspriser för kategorin
 </tbody>
 </table>
 
-
 Du upprepar proceduren ovan och skapar abonnemangsavgifter för båda abonnemangen i abonnemangsgruppen Ab1. Följande tabell visar de transaktioner som skapas för varje abonnemang som är kopplat till abonnemangsgruppen:
 
 <table>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -369,16 +364,10 @@ Du upprepar proceduren ovan och skapar abonnemangsavgifter för båda abonnemang
 </tbody>
 </table>
 
-
 I den första transaktionen för abonnemang 00020\_135, kommer försäljningspriset på 550 EUR från det abonnemangsförsäljningspris som skapats för den specifika kombinationen av projekt och kategori. I den andra transaktionen för abonnemang 00021\_135, används försäljningspriset 500 EUR som projektets abonnemangsförsäljningspris eftersom inget pris skapats för kombinationen av projekt 9030 och kategori AbKat2.
 
 ## <a name="see-also"></a>Se även
 
 [Uppdatera och indexera abonnemangsförsäljningspriser](update-and-index-subscription-sales-prices.md)
-
-  
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

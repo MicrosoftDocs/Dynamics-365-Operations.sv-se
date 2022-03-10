@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4c7b9426cc98f62cd7a62b841c0f90c7c57889d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 057cb8afe0da5e0810a2d1c87f7cdbe73bc88b9819ca81631d889bfa1cc55e6c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758111"
 ---
 # <a name="audit-policy-violations-and-cases"></a>Överträdelser av granskningspolicyn
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821971"
 
 Det här avsnittet innehåller en beskrivning av hur revisionsfall genereras från regelbrott för granskningspolicyregler. Här finns även information om hur olika granskningspolicyer använder datumintervallet för dokumenturval.
 
-<a name="how-audit-cases-are-generated"></a>Hur revisionsärenden genereras
------------------------------
+## <a name="how-audit-cases-are-generated"></a>Hur revisionsärenden genereras
 
 Granskningspolicyn används för att identifiera utgiftsrapporter, inköpsorder och leverantörsfakturor som inte överensstämmer med affärsreglerna som du definierar och konfigurerar som granskningsregler. 
 

@@ -2,11 +2,11 @@
 title: Registrera avskrivning av tillgång med nyttjanderätt (förhandsversion)
 description: I det här ämnet beskrivs hur du skapar en journalpost för den amortering som krävs för leasingar som redovisas i en organisations balansräkning.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseAssetSchedule
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c64f19d4cf334a6cbcacaaa3753dbafe8cbf1ffe
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a766247e5482677429706a324c09cc9be4386c0b
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823081"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947325"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Registrera avskrivning av tillgång med nyttjanderätt (förhandsversion)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 För leasingavtal som redovisas i en organisations balansräkning amorteras den ROU-tillgången (Right-Of-Use) på månatlig basis. I det här ämnet beskrivs hur du skapar en journalpost för amorteringen. Amorteringen debiterar är utgiftsredovisningskontot och krediterar det ackumulerade avskrivningsredovisningskontot, baserat på inställningarna för din bokföringsprofil och leasingtypen. Dessa poster kan skapas för varje leasing, eller så kan de skapas för flera leasingar med hjälp av batchfunktionen för journaler.
 
@@ -33,9 +35,12 @@ För leasingavtal som redovisas i en organisations balansräkning amorteras den 
 1. Välj en leasing på sidan **Sammanfattning av leasing**. Välj sedan **Böcker \> Avskrivningsplan för tillgången** för att öppna sidan **Avskrivningsplan för tillgången**.
 
     ROU-tillgångens för journalpost för avskrivningsutgifter baseras på beloppet i kolumnen **Avskrivningsutgift**. Ett exempel på riktlinjer för överensstämmelse med redovisningsstandard finns i [Beräkning av ROU-tillgångens amorteringsutgift för finansiell leasing](#calculation-of-rou-asset-amortization-expense-for-finance-leases) senare i det här ämnet.
-
+    
 2. Välj avskrivningsperiod och välj sedan **Skapa journal**. Ett meddelande visas om att journalen som kommer att användas för att registrera avskrivning har skapats.
 3. Välj **Journaler \> Journaler för leasing av tillgångar** för att öppna sidan **Journal för leasing av tillgång**, där du kan visa journalposten för avskrivningsutgifter som har skapats.
+
+   Systemet låser vissa ekonomiska fält från att redigeras i syfte att förhindra eventuella avvikelser mellan transaktioner och tidsplaner. Fält som är låsta inkluderar följande: **Kontro**, **Belopp**, **Ekonomiska dimensioner**, **Valuta** och **Transaktionstyp**. Du kan vidare inte lägga till eller ta bort journalpostrader från någon journalpost för tillgångsleasing eftersom detta kan orsaka avvikelser mellan tidsplanerna och transaktionerna.
+
 4. Välj journalposten och välj **Bokför** för att registrera avskrivningsposten i redovisningen.
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-operating-leases"></a>Beräkning av ROU-tillgångens amorteringsutgift för operationell leasing
@@ -65,6 +70,8 @@ Som nämndes tidigare beräknas den linjära leasingkostnaden som summan av alla
 
 > [!NOTE]
 > Enligt ASC 842 klassificeras avskrivningen av ROU-tillgången för en operationell leasing som en leasingkostnad i resultaträkningen. För synlighet beskriver tillgångsleasing posten som avskrivningen av ROU-tillgången. Debetposten bör dock tilldelas till ett konto för operationell leasingkostnad och kreditposten ska tilldelas direkt till ROU-tillgången för den operationella leasingen. I leasingparametrarna kan du dock ange att kreditposter ska göras till ett ackumulerat avskrivningskonto för operationella ROU-tillgångar.
+
+Om leasingavtalet är klassificerat som ett rörelseleasing kommer den månatliga avskrivningen efter nedskrivningen att beräknas med hjälp av beräknad linjär avskrivning.
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-finance-leases"></a>Beräkning av ROU-tillgångens amorteringsutgift för finansiell leasing
 

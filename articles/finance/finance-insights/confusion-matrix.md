@@ -1,34 +1,30 @@
 ---
-title: Resultat av maskininlärningsmodeller (förhandsversion)
+title: Resultat av maskininlärningsmodeller
 description: Det här ämnet innehåller information om sammanblandningsmatris, klassificeringsproblem och noggrannhet i maskininlärningsmodeller (ML). Syftet är att förbättra din förståelse av noggrannhet i ML-förutsägelseresultat.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 06/05/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6a1620c33ee1e23a79ef5413afebdee332aa82b6
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 2545f7d043e139606c51bc559e3aacbe73abccfc
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645027"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386647"
 ---
-# <a name="results-of-machine-learning-models-preview"></a>Resultat av maskininlärningsmodeller (förhandsversion)
+# <a name="results-of-machine-learning-models"></a>Resultat av maskininlärningsmodeller
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Det här ämnet innehåller information om sammanblandningsmatris, klassificeringsproblem och noggrannhet i maskininlärningsmodeller (ML). Syftet är att förbättra din förståelse av noggrannhet i ML-förutsägelseresultat. Målgruppen är ingenjörer, analytiker och chefer som vill få större kunskap och kompetens inom datavetenskap.
 
@@ -37,7 +33,7 @@ När ett övervakat ML-problem har tränats in på en uppsättning historiska da
 
 Ditt mål kan till exempel vara att förutsäga om ett husdjur är en hund eller katt, baserat på vissa fysiska och beteendebaserade attribut. Om du har en testdatamängd som innehåller 30 hundar och 20 katter kan sammanblandningsmatrisen likna följande bild.
 
-[![Exempel på förutsägelse om art](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+![Exempel på förutsägelse om art.](media/species-prediction-matrix.png)
 
 Talen i de gröna cellerna representerar korrekta förutsägelser. Som du ser förutsäger modellen en högre procentandel av faktiska katter på rätt sätt. Modellens övergripande noggrannhet är enkel att beräkna. I det här fallet är den 42 ÷ 50, eller 0,84.
 
@@ -47,7 +43,7 @@ De flesta diskussioner om sammanblandningsmatrisen är inriktade på binära kla
 
 Nu ska vi ta hänsyn till ett klassificeringsproblem för ett finansscenario med tre tillstånd. Modellen förutsäger om en kundfaktura kommer att betalas i tid, sent eller mycket sent. Exempelvis av 100 testfakturor betalas 50 i tid, 35 betalas sent och 15 betalas mycket sent. I det här fallet kan en modell generera en sammanblandningsmatris som liknar bilden nedan.
 
-[![Modell 1](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png) Modell 1
+![Modell 1.](media/payment-prediction-matrix.png)]
 
 En sammanblandningsmatris ger betydligt mer information än ett enkelt noggrannhetsmått. Det är dock fortfarande relativt enkelt att förstå. En sammanblandningsmatris visar om du har en balanserad datamängd där utdataklasserna har liknande antal. När det gäller scenariot med flera klasser får du veta hur avvikande en förutsägelse kan vara när utdataklasserna är ordningstal, som i föregående exempel om kundbetalningar.
 
@@ -58,7 +54,7 @@ Eftersom noggrannhet är ett enkelt mått att förstå, är det en bra utgångsp
 
 För en mer grundlig förståelse bör emellertid flera utmaningar som är förknippade med noggrannhet noteras. Måttets användbarhet beror på problemets kontext. En fråga som ofta uppstår i relation till modellprestanda är, "hur bra är modellen?". Svaret på den här frågan är dock inte nödvändigtvis okomplicerat. Tänk på följande sammanblandningsmatris (modell 2).
 
-[![Exempel på betalningsförutsägelse med ett större urval](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
+![Exempel på betalningsförutsägelse med ett större urval.](media/payment-prediction-matrix-2.png)
 
 En snabb beräkning visar att den här modellens noggrannhet är (70 + 10 + 3) ÷ 100, eller 0,83. På ytan verkar detta resultat bättre än resultatet för den tidigare modellen med flera klasser (modell 1), vilket har en exakthet på 0,73. Men är det bättre?
 
@@ -66,8 +62,8 @@ För att börja besvara den här frågan bör du beakta hur korrekt en naiv giss
 
 En annan aspekt är värt att notera. Beakta ett scenario där ett medicinskt test används för att upptäcka en sjukdom i en patient. Det här problemet är ett problem med binära klassificeringar där ett positivt resultat anger att patienten har sjukdomen. I det här scenariot måste du tänka på konsekvenserna av följande fel:
 
-- Falska positiva, där testet anger att en patient har sjukdomen, men patienten inte har sjukdomen
-- Falska negativa, där testet anger att en patient inte har sjukdomen, men patienten har sjukdomen
+- Falska positiva, där testet anger att en patient har sjukdomen, men patienten inte har sjukdomen.
+- Falska negativa, där testet anger att en patient inte har sjukdomen, men patienten har sjukdomen.
 
 Det är uppenbart att båda typerna av fel är oönskade, men vilket fel är värst? Det beror på. När det gäller en livshotande sjukdom som kräver snabb behandling, är minimering falska negativa (förhoppningsvis följda av ytterligare tester) en högre prioritet. I andra mindre kritiska situationer kan den som skapar modellen minimera falska positiva i stället. Oavsett är det en rimlig slutsats att för att effektivt fastställa modellens kvalitet måste du ha mer information än ett noggrannhetsmått.
 
@@ -90,7 +86,7 @@ Det slutliga övervägandet i det här ämnet är ett mer avancerat mått på kl
 
 Innan F1-noggrannhet kan definieras måste ytterligare två mått införas: precision och återkallande. Precision anger hur många av det totala antalet förutsägelser som har angetts som positiva som är korrekt tilldelade. Det här måttet kallas även det positiva predikativa värdet. Återkallande är det totala antalet faktiska positiva fall som har förutsagts korrekt. Det här måttet kallas också för känslighet.
 
-[![Sanna resultat kontra falska resultat](./media/tn-fn.png)](./media/tn-fn.png)
+[![Sanna resultat kontra falska resultat.](./media/tn-fn.png)](./media/tn-fn.png)
 
 I sammanblandningsmatrisen i föregående bild beräknas dessa mått på följande sätt:
 
@@ -103,7 +99,7 @@ Med F1-måttet kombineras precision och återkallande. Resultatet blir det harmo
 
 Nu ska vi titta på ett konkret exempel. Tidigare i det här avsnittet fanns ett exempel på en modell som var förutsade om ett djur är en hund eller katt. Bilden upprepas här.
 
-[![Exempel på förutsägelse om art](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+[![Exempel på förutsägelse om art (upprepas).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 Här är resultaten om "hund" används som positivt svar.
 
@@ -115,11 +111,11 @@ Som du ser ligger F1-värdet mellan värdena för precision och återkallande.
 
 Även om F1-noggrannhet inte är lika lätt att förstå, bidrar det till att nyansera det grundläggande noggrannhetstalet. Det kan också hjälpa vid obalanserade datauppsättningar, som följande diskussion visar.
 
-Avsnittet [Modellens noggrannhet](#classify-machine-learning-accuracy) i det här ämnet jämförde de två följande sammanblandningsmatriserna. Även om den första modellen har lägre noggrannhet, ansågs den vara en mer användbar modell eftersom den visade mer förbättring än standardgissningen för betalning i tid.
+Avsnittet [Modellens noggrannhet](#model-accuracy) i det här ämnet jämförde de två följande sammanblandningsmatriserna. Även om den första modellen har lägre noggrannhet, ansågs den vara en mer användbar modell eftersom den visade mer förbättring än standardgissningen för betalning i tid.
 
-[![Exempel på betalningsförutsägelse kontra faktiskt utfall](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png)
+![Exempel på betalningsförutsägelse kontra faktiskt utfall.](media/payment-prediction-matrix.png)
 
-[![Exempel på betalningsförutsägelse med ett större urval](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
+![Exempel på betalningsförutsägelse med ett större urval (upprepas).](media/payment-prediction-matrix-2.png)
 
 Nu ska vi se hur de här två modellerna står sig i jämförelse med när F1-poängen används. F1-poängfaktorerna i precision och återkallande för varje tillstånd, och F1-makroberäkningen tar fram medelvärdet för F1-poäng för alla tillstånd för att fastställa en övergripande F1-poäng. Det finns andra F1-varianter, men det är av större intresse att ta hänsyn till makroversionen, med tanke på den lika behandling som ges för alla tre tillstånden.
 
@@ -132,7 +128,7 @@ För att förenkla beräkningarna skapades exempelmatriser som matchar de faktis
 
 Mer information om hur beräkningen fungerar finns i sklearn.metrics-klassificeringsrapporten för modell 1. De tre tillstånden, "i tid", "sent" och "mycket sent", representeras av de rader som är märkta 1, 2 och 3. Makromedelvärdet är bara genomsnittet för kolumnen "f1-score".
 
-|           | precision | återkallande   | f1-score |
+| &nbsp;    | precision | återkallande   | f1-score |
 |-----------|-----------|----------|----------|
 | **1**     | 0.83      | 0.80     | 0.82     |
 | **2**     | 0.68      | 0.71     | 0.69     |
@@ -140,5 +136,4 @@ Mer information om hur beräkningen fungerar finns i sklearn.metrics-klassificer
 
 Som de här resultaten visar har de två modellerna nästan identiska F1-makropoäng för noggrannhet. I detta och många andra fall ger F1-noggrannhet en bättre indikator på modellens funktion. När det gäller noggrannhet kräver tolkningen av resultaten att du förstår vad som är viktigast att beakta i modellen.
 
-#### <a name="privacy-notice"></a>Sekretesspolicy
-Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

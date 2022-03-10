@@ -1,39 +1,30 @@
 ---
-title: Ställ in mappningen för fälten för försäljningsorderstatus
-description: I det här avsnittet beskrivs hur du ställer in fälten för försäljningsorderstatus för dubbelriktad skrivning.
+title: Ställa in mappning för kolumnerna för försäljningsorderns status
+description: I det här avsnittet beskrivs hur du ställer in kolumnerna för försäljningsorderstatus för dubbelriktad skrivning.
 author: dasani-madipalli
-manager: tonyafehr
 ms.date: 06/25/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: damadipa
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 53d824ca2fb1eadf34e62bf9c08b837db3efaf42
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4457405"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782294"
 ---
-# <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>Ställ in mappningen för fälten för försäljningsorderstatus
+# <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Ställa in mappning för kolumnerna för försäljningsorderns status
 
 [!include [banner](../../includes/banner.md)]
 
-De fält som anger försäljningsorderstatus har olika uppräkningsvärden i Microsoft Dynamics 365 Supply Chain Management och Dynamics 365 Sales. Det krävs ytterligare inställningar för att mappa dessa fält i dubbelriktad skrivning.
+De kolumner som anger försäljningsorderstatus har olika uppräkningsvärden i Microsoft Dynamics 365 Supply Chain Management och Dynamics 365 Sales. Det krävs ytterligare inställningar för att mappa dessa kolumner i dubbelriktad skrivning.
 
-## <a name="fields-in-supply-chain-management"></a>Fält i Supply Chain Management
+## <a name="columns-in-supply-chain-management"></a>kolumner i Supply Chain Management
 
-I Supply Chain Management visar två fält status för försäljningsordern. De fält som du måste mappa är **status** och **dokumentstatus**.
+I Supply Chain Management visar två kolumner status för försäljningsordern. De kolumner som du måste mappa är **status** och **dokumentstatus**.
 
 **Status** uppräkningen anger den övergripande statusen för ordern. Denna status visas i orderrubriken.
 
@@ -53,9 +44,9 @@ I Supply Chain Management visar två fält status för försäljningsordern. De 
 - Följesedel
 - Faktura
 
-## <a name="fields-in-sales"></a>Fält i Sales
+## <a name="columns-in-sales"></a>kolumner i Sales
 
-I Sales anger två fält status för ordern. De fält som du måste mappa är **status** och **Bearbetningsstatus**.
+I Sales anger två kolumner status för ordern. De kolumner som du måste mappa är **status** och **Bearbetningsstatus**.
 
 **Status** uppräkningen anger den övergripande statusen för ordern. Det har följande värden:
 
@@ -95,14 +86,14 @@ Följande tabell visar en mappning av **bearbetningsstatus** mellan Sales och Su
 
 ## <a name="setup"></a>Ställ in
 
-Om du vill ställa in mappningen för fälten för försäljningsorderstatus måste du aktivera attributen **IsSOPIntegrationEnabled** och **isIntegrationUser**.
+Om du vill ställa in mappningen för kolumner för försäljningsorderstatus måste du aktivera attributen **IsSOPIntegreringEnabled** och **isIntegreringUser**.
 
-Så här aktiverar du attribut **IsSOPIntegrationEnabled** följ dessa steg.
+Så här aktiverar du attribut **IsSOPIntegreringEnabled** följ dessa steg.
 
 1. I en webbläsare går du till `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Ersätt **\<test-name\>** med företagets länk till Sales.
 2. På den sida som är öppnad, sök efter **organizationid** och anteckna värdet.
 
-    ![Sök efter organizationid](media/sales-map-orgid.png)
+    ![Sök efter organizationid.](media/sales-map-orgid.png)
 
 3. Öppna webbläsarkonsolen i Sales och kör följande skript. Använd värdet **organizationid** från steg 2.
 
@@ -110,43 +101,46 @@ Så här aktiverar du attribut **IsSOPIntegrationEnabled** följ dessa steg.
     Xrm.WebApi.updateRecord("organization",
     "d9a7c5f7-acbf-4aa9-86e8-a891c43f748c", {"issopintegrationenabled" :
     true}).then(
-        function success(result) {
-            console.log("Account updated");
-            // perform operations on record update
-        },
-        function (error) {
-            console.log(error.message);
-            // handle error conditions
-        }
+        function success(result) {
+            console.log("Account updated");
+            // perform operations on row update
+        },
+        function (error) {
+            console.log(error.message);
+            // handle error conditions
+        }
     );
     ```
 
-    ![JavaScript-kod i webbläsarkonsol](media/sales-map-script.png)
+    ![JavaScript-kod i webbläsarkonsolen.](media/sales-map-script.png)
 
-4. Kontrollera att **IsSOPIntegrationEnabled** är inställt på **true**. Använd URL från steg 1 för att kontrollera värdet.
+4. Kontrollera att **IsSOPIntegreringEnabled** är inställt på **true**. Använd URL från steg 1 för att kontrollera värdet.
 
-    ![Ange IsSOPIntegrationEnabled till true](media/sales-map-integration-enabled.png)
+    ![Ange IsSOPIntegreringEnabled till "true".](media/sales-map-integration-enabled.png)
 
-Så här aktiverar du attribut **isIntegrationUser** följ dessa steg.
+Så här aktiverar du attribut **isIntegreringUser** följ dessa steg.
 
-1. I Sales, gå till **Inställning \> Anpassning \> Anpassa systemet**, välj **Användarentitet** och öppna sedan **Formulär \> Användare**.
+1. I Sales, gå till **Inställning \> Anpassning \> Anpassa systemet**, välj **Användartabell** och öppna sedan **Formulär \> Användare**.
 
-    ![Öppna användarformuläret](media/sales-map-user.png)
+    ![Öppna användarformuläret.](media/sales-map-user.png)
 
-2. I Tillgängliga fält, hitta **Användarläge för integration** och dubbelklicka på den för att lägga till den i formuläret. Spara ändringarna.
+2. I Tillgängliga fält, hitta **Användarläge för integrering** och dubbelklicka på den för att lägga till den i formuläret. Spara ändringarna.
 
-    ![Lägga till fältet användarläge för integration i formuläret](media/sales-map-field-explorer.png)
+    ![Lägga till kolumnen Användarläge för integrering i formuläret.](media/sales-map-field-explorer.png)
 
 3. I Sales, gå till **inställning \> säkerhet \> användare** och ändra vyn från **aktiverade användare** till **programanvändare**.
 
-    ![Ändra visningen av aktiverade användare till programanvändare](media/sales-map-enabled-users.png)
+    ![Ändra visningen från Aktiverade användare till Programanvändare.](media/sales-map-enabled-users.png)
 
-4. Välj de två posterna för **DualWrite IntegrationUser**.
+4. Välj de två posterna för **DualWrite IntegreringUser**.
 
-    ![Lista över programanvändare](media/sales-map-user-mode.png)
+    ![Lista över programanvändare.](media/sales-map-user-mode.png)
 
-5. Ändra värdet för fältet **användarläge för integration** till **Ja**.
+5. Ändra värdet för kolumnen **användarläge för integrering** till **Ja**.
 
-    ![Ändra värdet för fältet användarläge för integration](media/sales-map-user-mode-yes.png)
+    ![Ändra värdet för kolumnen Användarläge för integrering.](media/sales-map-user-mode-yes.png)
 
 Dina försäljningsorder är nu mappade.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

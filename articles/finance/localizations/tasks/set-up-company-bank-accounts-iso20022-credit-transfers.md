@@ -2,11 +2,9 @@
 title: Ställ in företagets bankkonton för ISO20022-kreditöverföringar
 description: I den här proceduren visas hur du ställer in företagsspecifik bankkontoinformation som krävs för att generera betalningsfilen.
 author: mrolecki
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ca0f0af3cccd4110c3da1703112a5b0f29bd64ad
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a3b3b5ce9d7e24b2b7d3f76e4d770968df897b546df507ba9e3bde5aeac91715
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988180"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780780"
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-credit-transfers"></a>Ställ in företagets bankkonton för ISO20022-kreditöverföringar
 
@@ -51,3 +49,6 @@ Detta är den andra proceduren av fem som illustrerar leverantörbetalningsproce
 4. Ange eller välj ett värde i fältet Bankkonto.
 5. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,27 +1,25 @@
 ---
 title: Ställ in orderuppfyllande för butiker
 description: Det här ämnet ger en översikt över hur du ställer in orderuppfyllelse i butik.
-author: rubencdelgado
-manager: AnnBe
+author: BrianShook
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2519dcaf657b495a494b6f45f93930d980d89a65
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: ed709c2a15a2d9e1675da55fc87284127e64ba39
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477814"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779607"
 ---
 # <a name="set-up-order-fulfillment-for-stores"></a>Ställa in orderuppfyllelse för butiker
 
@@ -35,9 +33,9 @@ Utförande av orderuppfyllelse i butiken ger en enskild arbetsyta i POS som kan 
 
 ## <a name="set-up-the-order-fulfillment-operation"></a>Ställa in utförandet av orderuppfyllelse.
 
-Orderuppfyllande [Operations-ID 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations), kan användas för åtkomst till butikens orderuppfyllelsearbete i POS.
+Orderuppfyllande [Operations-ID 928](pos-operations.md), kan användas för åtkomst till butikens orderuppfyllelsearbete i POS.
 
-Följ instruktionerna i [lägga till åtgärden i en knappsats](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) för att ange vilken parameter som ska användas vid åberopande av orderuppfyllelse i POS. Som standard när du har angett åtgärden för orderuppfyllelse väljs **alla order**. När de konfigureras med den här parametern kommer åtgärden att lista alla orderrader för uppfyllelse i den aktuella butiken. **order ska levereras** finns också tillgänglig som kan tilldelas till en knapp och användas när användaren bara vill visa order som levereras från lager. Slutligen finns det **order för upphämtning**. När detta anropas i POS listar detta bara order som ska hämtas i butiken. De olika parametrarna kan tilldelas till olika knappar för att ge användaren en mängd olika sätt att visa orderuppfyllelse.
+Följ instruktionerna i [lägga till åtgärden i en knappsats](pos-screen-layouts.md) för att ange vilken parameter som ska användas vid åberopande av orderuppfyllelse i POS. Som standard när du har angett åtgärden för orderuppfyllelse väljs **alla order**. När de konfigureras med den här parametern kommer åtgärden att lista alla orderrader för uppfyllelse i den aktuella butiken. **order ska levereras** finns också tillgänglig som kan tilldelas till en knapp och användas när användaren bara vill visa order som levereras från lager. Slutligen finns det **order för upphämtning**. När detta anropas i POS listar detta bara order som ska hämtas i butiken. De olika parametrarna kan tilldelas till olika knappar för att ge användaren en mängd olika sätt att visa orderuppfyllelse.
 
 ### <a name="enable-users-to-access-order-fulfillment-at-the-point-of-sale"></a>Ge användare åtkomst till orderuppfyllelse i POS.
 
@@ -106,9 +104,9 @@ Som standard har ordern statusen **accepterad**. Orderstatus kan visas som en ko
 
 - **Redigera** – Om en orderstatus väntar den redigeras vid POS. Order som redan har delvis plockats, packats eller fakturerats kan inte redigeras från orderuppfyllandevyn.
 - **Godkänn** – Om **Manuellt godkännande** är konfigurerad på kanalnivå måste rader först godkännas innan de kan förflytta genom uppfyllandet av orderprocessen.
-- **Välj** – Alternativet plockning stöder flera åtgärder. Först uppdaterar **plockning** status för orderraden så att andra i butiken inte försöker välja samma rad. Nästa **Skriv ut plocklista** skriver ut en plocklista för den valda raden eller raderna och deras status ska uppdateras även **plockning**. Plocklisteformat styrs som en del av kvittoformat. Mer information om hur du ställer in kvittoformat finns i [Kvittomallar och utskrift](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing). Slutligen indikerar **Markera som plockad** att raden har plockats. **Markera som plockad** initierar motsvarande lagertransaktioner i backoffice. Plockåtgärder kan utföras samtidigt för flera rader på en order och för alla leveranssätt.
+- **Välj** – Alternativet plockning stöder flera åtgärder. Först uppdaterar **plockning** status för orderraden så att andra i butiken inte försöker välja samma rad. Nästa **Skriv ut plocklista** skriver ut en plocklista för den valda raden eller raderna och deras status ska uppdateras även **plockning**. Plocklisteformat styrs som en del av kvittoformat. Mer information om hur du ställer in kvittoformat finns i [Kvittomallar och utskrift](receipt-templates-printing.md). Slutligen indikerar **Markera som plockad** att raden har plockats. **Markera som plockad** initierar motsvarande lagertransaktioner i backoffice. Plockåtgärder kan utföras samtidigt för flera rader på en order och för alla leveranssätt.
 - **Avslå** – Rader eller delvisa rader avslås. Detta gör att de kan skickas vidare från backoffice till en annan butik eller lagerställe. Raderna kan bara avvisas om de har ännu inte plockats eller förpackats. Om du vill avvisa en rad som redan har plockats eller förpackats måste den raden upphävas eller packas upp från backoffice.
-- **Packa** – Alternativet packa stöder två åtgärder: **Skriv ut följesedel** skriver ut en följesedel för de valda raderna och **markerad som packad** kommer att markera raderna som du packade och markerar raderna som levereras i backoffice. Endast orderrader som tillhör samma order och har samma leveranssätt kan packas samtidigt. Följesedelformat styrs som en del av kvittoformat. Mer information om hur du ställer in kvittoformat finns i [Kvittomallar och utskrift](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+- **Packa** – Alternativet packa stöder två åtgärder: **Skriv ut följesedel** skriver ut en följesedel för de valda raderna och **markerad som packad** kommer att markera raderna som du packade och markerar raderna som levereras i backoffice. Endast orderrader som tillhör samma order och har samma leveranssätt kan packas samtidigt. Följesedelformat styrs som en del av kvittoformat. Mer information om hur du ställer in kvittoformat finns i [Kvittomallar och utskrift](receipt-templates-printing.md).
 - **Leverera** Åtgärden leverera markerar de valda raderna som **levererad** i backoffice. När en rad har levererats visas den inte längre i orderuppfyllelsevyn.
 - **Upphämtning** – Åtgärden för upphämtning lägger till rader i transaktionsvyn för upphämtning. Om det inte finns andra rader för order som för närvarande inte tas upp kommer de att läggas till i transaktionsvyn med kvantiteten noll. När en rad har hämtats helt visas den inte längre i orderuppfyllelsevyn.
 

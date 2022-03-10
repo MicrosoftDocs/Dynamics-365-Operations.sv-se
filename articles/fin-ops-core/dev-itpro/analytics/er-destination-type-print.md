@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 83081f8c17a903cd447a34596df2e61ebda0cafc
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 672b1d70607a32d30c703ce39573d7480462fec45739b6e1e49ef27166a50e2c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753442"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712722"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Skrivardestination
 
@@ -30,7 +30,7 @@ Du kan skicka ett genererat dokument direkt till en nätverksskrivare för direk
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Innan du börjar måste du installera och konfigurera dokumentflödesagenten och sedan registrera nätverksskrivarna. Mer information finns i [Installera dokumentflödesagenten för att aktivera nätverksutskrift](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent).
+Innan du börjar måste du installera och konfigurera dokumentflödesagenten och sedan registrera nätverksskrivarna. Mer information finns i [Installera dokumentflödesagenten för att aktivera nätverksutskrift](./install-document-routing-agent.md).
 
 ## <a name="make-the-printer-destination-available"></a>Göra skrivarmålet tillgängligt
 
@@ -39,7 +39,7 @@ Om du vill göra **skrivarmålet** tillgängligt i den aktuella instansen av Mic
 1. Konvertera utgående dokument för elektronisk rapportering från Microsoft Office-format till PDF.
 2. Dokumentflödesagenten som mål för utgående dokument vid elektronisk rapportering
 
-[![Aktivera funktionen för ER-skrivarmål i funktionshantering](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
+[![Aktivera funktionen för ER-skrivarmål i funktionshanteringen.](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
 ### <a name="applicability"></a>Tillämplighet
 
@@ -55,7 +55,7 @@ Om du vill göra **skrivarmålet** tillgängligt i den aktuella instansen av Mic
 2. I fältet **Skrivarnamn** välj önskad nätverksskrivare.
 3. Ange alternativet **Spara i utskriftsarkivet?** till **Ja** att de genererade utdata ska sparas i utskriftsarkivet så att de blir tillgängliga för utskriften. Om du vill komma åt arkiverade utdata senare **Organisationsadministration** \> **Förfrågningar och rapporter** \> **Rapportarkiv**.
 
-[![Använd skrivarmål](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
+[![Använda skrivarmål.](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
 
 > [!NOTE]
 > Alternativet **konvertera till PDF** måste inte vara aktiverat när du konfigurerar **skrivarmålet**. PDF-konverteringen för utskrift sker även om alternativet är inaktiverat.
