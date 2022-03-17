@@ -1,8 +1,8 @@
 ---
-title: Elektronisk fakturering – översikt
-description: Det här avsnittet ger information om Elektroniska fakturor i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management.
+title: e-fakturering – översikt
+description: Detta ämne ger en översikt över e-fakturering i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 01/21/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,100 +17,69 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6983abeb4d0fdd1a595a53ea0fd9cd840b24030b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 23a98706bc2ab0abc2c72e9f20d8e8fbff56b2b9
+ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983868"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8371464"
 ---
-# <a name="electronic-invoicing-overview"></a>Elektronisk fakturering – översikt
+# <a name="electronic-invoicing-overview"></a>e-fakturering – översikt
 
 [!include [banner](../includes/banner.md)]
 
-Elektronisk fakturering för Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management är en skalbar tjänst för flera innehavare som möjliggör konfigurerbar bearbetning av elektroniska fakturadokument och konfigurerbart dokumentutbyte. Bearbetnings- och integrationsreglerna är helt konfigurerbara och logiken körs utanför Finance och Supply Chain Management. Tjänsten är huvudsakligen riktad mot bearbetning av e-faktura i scenarier med företag till myndigheter, men den kan konfigureras för andra ändamål.
+E-fakturering för Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management är en ytterst skalbar tjänst för flera klientorganisationer som möjliggör konfigurerbar bearbetning av e-fakturor och konfigurerbart elektroniskt dokumentutbyte. Bearbetnings- och integrationsreglerna är helt konfigurerbara och logiken körs utanför Finance och Supply Chain Management. Tjänsten är framför allt avsedd för bearbetning av e-fakturadokument i scenarier mellan företag och myndigheter. Den kan emellertid även konfigureras för andra syften, till exempel scenarier mellan företag för olika typer av dokument.
 
-Med hjälp av Elektronisk fakturering kan du uppnå följande mål:
+Med hjälp av e-fakturering kan du uppnå följande mål:
 
 - Snabb och enkel antagande av lands-/regionspecifika krav
-- Standardiserade implementeringar av lösningen för elektronisk fakturering
+- Standardiserade implementeringar av lösningen för e-fakturering
 - Förbättrad spårning av dokumenthistorik
 - Kortare implementeringscykel
 - Minskad total ägandekostnad (TCO)
-- Lätt inställbara konfigurationer som inte kräver kodändringar
+- Enkelt inställbara konfigurationer som inte kräver kodändringar
 - Förenklad konfigurationsförpackning
-- Inbyggd export, import och integration samt enkel utökning i bearbetning av dokument med e-fakturor
+- Inbyggd export, import och integrering, samt enkel utökning i bearbetningen av e-fakturor
 - Enkel återanvändning av samma inställningar för export, import och integration mellan företag
 
-Om du vill använda elektronisk fakturering måste du installera det från ditt projekt i Microsoft Dynamics Lifecycle Services (LCS). Följ sedan inställningsproceduren för att aktivera integrationen med Finance eller Supply Chain Management. För mer information, se [Kom igång med elektronisk fakturering](e-invoicing-get-started.md).
+## <a name="service-availability"></a>Tjänstetillgänglighet
 
-## <a name="service-availability"></a><a name="availability"></a>Tjänstetillgänglighet
+E-faktureringsfunktionen är för närvarande tillgänglig för kunder inom Ekonomi och Supply Chain Management. Mer information finns i licensvillkoren för ditt program.
 
-För närvarande är Elektronisk fakturering tillgängligt för kunder via förhandsgranskningsprogrammet, och i nästa fas blir tjänsten allmänt tillgänglig. Eftersom funktioner som åtgärdar lands-/regionspecifika krav kan begränsas till olika faser av versionen, bör du alltid kontrollera den mest aktuella dokumentationen som belyser omfattningen och omfattningen av de lands-/regionspecifika lösningar som stöds.
+Eftersom funktioner som åtgärdar lands-/regionspecifika krav kan begränsas i olika faser av versionen, bör du alltid studera den mest aktuella dokumentationen som belyser omfattningen av de lands-/regionspecifika lösningar som stöds.
 
-Elektronisk fakturering distribueras i följande Azure-geografiska områden:
+e-fakturering distribueras i följande Azure-geografiska områden:
 
 - USA
 - Europa
-- Storbritannien
 - Asien
 
 > [!NOTE]
-> Elektronisk fakturering stöder inte lokala distributioner.
-
-## <a name="extended-configurability"></a>Utökade konfigureringsmöjligheter
-
-Elektronisk fakturering kan användas i situationer där du måste skapa och skicka ett elektroniskt dokument till de utsedda parterna. Den är särskilt utformad för att köra ett konfigurerbart flöde av bearbetningsåtgärder, baserat på mottagna data. De alternativ för konfigurering som är tillgängliga i Finance och Supply Chain Management är begränsade till transformering av dokument. Tjänsten utvidgar dessa alternativ genom att lägga till de konfigurerbara integreringarna som är tillgängliga i den. Dessutom har alla elektroniska fakturafunktioner som tidigare funnits, t.ex. Brazilian Nota fiscal eletrônica (NF-e), Mexican Comprobante Fiscal Digital por Internet (CFDI) eller andra funktioner för Västeuropeiska Universal Business Language (UBL)/Pan-European Public Procurement OnLine (PEPPOL) kommer att använda konfigurationer för export och import och för att möjliggöra integrationer med externa webbtjänster.
+> e-fakturering stöder inte lokala distributioner.
 
 ## <a name="feature-highlights"></a>Funktionens höjdpunkter
 
-- Inbyggd integration med Finance och Supply Chain Management
-- Konsekvent användarupplevelse för konfiguration och övervakning av e-fakturaprocessen för alla länder eller regioner
-- Snabbare, enklare och billigare antagande av lösningar för elektronisk fakturering i nya länder eller regioner
-- Konfiguration av tjänsten via Regulatory Configuration Service (RCS) och inställningar för globaliseringsfunktionen
+- Medföljande integrering med Ekonomi och Supply Chain Management
+- En konsekvent användarupplevelse för konfiguration och övervakning av e-fakturaprocessen för alla länder och regioner
+- Snabbare, enklare och billigare antagande av lösningar för e-fakturering i nya länder eller regioner
+- Konfiguration av tjänsten via inställningen av Regulatory Configuration Service (RCS) och globaliseringsinställningar
 - Omvandling av affärsdata till flera e-fakturaformat (XML, JavaScript Object Notation \[JSON\], TXT och kommaavgränsade värden \[CSV\]) med hjälp av konfigurationer som har definierats i RCS:
 
-    - Elektroniska rapportformat som är tillgängliga för länder eller regioner där omvandling av e-faktura inte är tillgänglig
+    - Elektroniska rapportformat (ER) som är tillgängliga för länder och regioner där konfigurering av e-faktura inte är tillgänglig
 
 - Konfigurerbar överföring av e-fakturor till externa webbtjänster, inklusive certifieringshantering genom digitala signaturer:
 
-    - Inbyggd, lätt att utöka och konfigurerbar integration med ytterligare innehåll för flera länder
+    - Inbyggd, lätt expanderbar samt konfigurerbar integrering med ytterligare innehåll för flera länder och regioner
 
-    > [!NOTE]
-    > För närvarande stöds ett begränsat antal direktöverföringar. Mer information finns i avsnittet [Tjänstetillgänglighet](#availability) tidigare i det här avsnittet. Supporten kommer att utökas i framtiden.
-
-- Hantering av svar från webbtjänster, inklusive hantering av konfigurerbara undantagsmeddelanden
-- Stöd för elektroniska signaturer (till exempel genom användning av XMLDSig-signeringsalgoritmen)
+- Hantering av svar från webbtjänster, inklusive konfigurerbar hantering av undantagsmeddelanden
+- Stöd för elektroniska signaturer (till exempel elektroniska signaturer som använder signeringsalgoritmen XMLDSig)
+- Kapaciteten att skicka dokument till e-postmeddelanden och lagra dem i SharePoint
 - Batchbearbetning av e-faktura meddelanden
-
-## <a name="architecture-and-data-flow"></a>Arkitektur och dataflöde
-
-När Elektronisk fakturering installeras från LCS och de obligatoriska inställningarna har slutförts i alla program som krävs, upprättas en säker anslutning. Tjänsten finns för närvarande i datacenter i USA och i Europa. Därför kan det bero på att tjänstplatsen skiljer sig från platsen för den relaterade Finance eller Supply Chain Management-instansen. När du har slutfört inställningen av Elektronisk fakturering och aktiverat integrationen, skickas huvuddata och transaktionsdata som hör till ett visst dokument till Elektronisk fakturering när en elektronisk faktura skickas.
-
-> [!NOTE]
-> Om den elektroniska fakturan eller något annat dokument innehåller personuppgifter kontrollerar du att din användning av den här funktionen stämmer överens med allmän dataskyddsförordning (GDPR) och andra regler som rör överföring av personuppgifter.
-
-### <a name="high-level-description-of-the-data-flow"></a>Beskrivning på hög nivå av dataflödet
-
-1. Klienten skickar ett kanoniskt affärsdokument till tjänsten.
-2. Med hjälp av den kontextinformation som tas emot från klienten väljer tjänsten det tillämpliga bearbetningsflödet.
-3. Tjänsten kör bearbetningsåtgärderna. Dessa åtgärder kan inkludera att omvandla affärsdokumentet till en elektronisk faktura, använda en elektronisk signatur och skicka dokumentet till en extern webbtjänst.
-4. Alla inlevererade och bearbetade dokument lagras i kundens Azure Blob-lagring.
-5. Alla de innehavares hemligheter och certifikat som användes för bearbetningen lagras i kundens Azure Key Vault.
-6. Tjänsten tillhandahåller information på begäran för klienten om bearbetningsstatus för det affärsdokument som har skickats.
-7. Klienten får information om den slutförda bearbetningskörningen och gör all tillgänglig logginformation. Det gör också dokumentet som har skapats eller mottagits under flödesbearbetning tillgänglig.
-
-Följande illustration visar hur data flödar till och från elektronisk fakturering.
-
-![Dataflöde för Elektronisk fakturering.](media/e-invoicing-service-data-flow-diagram-overview.png)
+- Konfigurerbar transformering av inkommande dokument och bearbetning av dessa dokument i Ekonomi och Supply Chain Management
+- Möjligheten att ta emot inkommande dokument från kanaler såsom e-post och SharePoint
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
-Om du aktiverar och använder elektronisk fakturering kan det krävas att begränsade data skickas, vilket inkluderar organisationens momsregistrerings-ID. Detta kommer att översändas till tredje parts byråer som har tillstånd av skattemyndigheten för att skicka elektroniska fakturor i fördefinierade format som krävs för integrering med den offentliga sektorns webbtjänster. Data som importeras från dessa externa system till denna Dynamics 365 onlinetjänst omfattas av vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=512132). Mer information finns i sektionerna om sekretessmeddelanden i landsspecifik funktionsdokumentation.
 
-## <a name="additional-resources"></a>Ytterligare resurser
-- [Tjänsteadministration](e-invoicing-service-administration.md)
-- [Konfigurera elektroniska fakturor i RCS](e-invoicing-configuration-rcs.md)
-- [Utfärda elektroniska fakturor i Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
-
+Om du vill aktivera och använda funktionen för e-faktura måste begränsade data eventuellt skickas. Dessa data inkluderar företagets momsregistrerings-ID. Dessa data kommer att överföras till tredjepartsinstanser som har tillstånd av skattemyndigheten att skicka e-fakturor i de fördefinierade format som krävs för integrering med den offentliga sektorns webbtjänster. Data som importeras från dessa externa system till denna Dynamics 365-onlinetjänst omfattas av vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=512132). Mer information finns i sektionerna om sekretessmeddelanden i lands-/regionspecifik funktionsdokumentation.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

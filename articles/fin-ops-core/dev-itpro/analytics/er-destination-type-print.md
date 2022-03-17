@@ -2,7 +2,7 @@
 title: ER-målstyp för skrivare
 description: I det här avsnittet beskrivs hur du konfigurerar en skrivare för varje MAPP- eller FIL-komponent i ett elektroniskt rapporteringsformat (ER).
 author: NickSelin
-ms.date: 02/24/2021
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 672b1d70607a32d30c703ce39573d7480462fec45739b6e1e49ef27166a50e2c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2513fc4f86519c71602089cd46e9757813b1a708
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712722"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388298"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Skrivardestination
 
@@ -43,7 +43,24 @@ Om du vill göra **skrivarmålet** tillgängligt i den aktuella instansen av Mic
 
 ### <a name="applicability"></a>Tillämplighet
 
-**Skrivarmålet** kan bara konfigureras för de fil komponenter som används för att generera utdata i antingen utskrivbara PDF-format (PDF-sammanslagning eller PDF-filformat) eller Microsoft Office Excel/Word-format (Excel-fil). När utdata genereras i PDF-format skickas det till en skrivare. När utdata genereras i Microsoft Office-format konverteras det automatiskt till PDF-format och skickas sedan till en skrivare.
+#### <a name="pdf-printing"></a>PDF-utskrift
+
+I versioner av Ekonomi före 10.0.18 kan målet **Skrivare** konfigureras endast för filkomponenter som används för att generera utdata i utskriftsbart PDF-format (formatelementen **PDF-sammanfogning** eller **PDF-fil**) eller Microsoft Office Excel- och Word-format (**Excel-fil**-formatelement). När utdata genereras i PDF-format skickas det till en skrivare. När utdata genereras i Office-format genom att använda formatelementet **Excel-fil** konverteras det automatiskt till PDF-format och skickas sedan till en skrivare.
+
+Från och med version 10.0.18 kan du konfigurera målet **Skrivare** för formatelementet **Vanlig fil**. Detta formatelement används oftast för att generera utdata i antingen TXT- eller XML-format. Du kan konfigurera ett ER-format som innehåller formetelementet **Vanlig fil** som rotformatelement och formatelementet **Binära innehåll** som det enda kapslade elementet under det. I detta fall producerar formatelementet **Vanlig fil** utdata i det format som anges av den bindning som du konfigurerar för formatet **Binära innehåll**. Du kan till exempel konfigurera denna bindning som [fyll i](tasks/er-document-management-files-5.md#modify-the-format-to-populate-attachments-into-generating-messages-in-binary-format) detta element med innehållet i en bilaga för [dokumenthantering](../../fin-ops/organization-administration/configure-document-management.md) i PDF- eller Office-format (Excel eller Word). Du kan skriva ut utdata genom att använda det konfigurerade målet **Skrivare**. 
+
+> [!NOTE]
+> När du väljer formatelementet **Vanlig\\Fil** för att konfigurera målet **Skrivare** går det inte att garantera (i samband med design) att det valda elementet producerar utdata i PDF-format eller utdata som kan konverteras till PDF-format. Därför visas följande varningsmeddelande: "Se till att den utdata som genereras av den valda formatkomponenten kan konverteras till PDF. Annars avmarkerar du alternativet "Konvertera till PDF". Du måste vidta åtgärder för att förhindra körningsproblem när utdata som inte är PDF eller PDF-konvertera utdata ska skrivas ut vid körning. Om du förväntar dig att få utdata i Office-formatet (Excel eller Word) måste alternativet **Konvertera till PDF** vara valt.
+>
+> Om du vill använda alternativet **Konvertera till PDF** i version 10.0.26 eller senare måste du välja **PDF** för parametern **Dokumentdirigeringstyp** för konfigurerat **Skrivar**-mål.
+
+#### <a name="zpl-printing"></a>ZPL-utskrift
+
+I version 10.0.26 och senare kan du konfigurera målet **Skrivare** för formatelementet **Vanlig\\Fil** genom att välja **ZPL** för parametern **Dirigeringstyp för dokument**. I det här ignoreras alternativet **Konfigurera till PDF** vid körning, och TXT- eller XML-utdatan skickas direkt till en vald skrivare genom att använda ZPL-avtalet (Zebra Programming Language) i [Dokumentflödesagenten (DRA)](install-document-routing-agent.md). Använd den här funktionen för ett ER-format som representerar en ZPL II-etikettlayout för utskrift av olika etiketter.
+
+[![Ange parametern Dokumentdirigeringstyp i dialogrutan Målinställningar.](./media/ER_Destinations-SetDocumentRoutingType.png)](./media/ER_Destinations-SetDocumentRoutingType.png)
+
+Mer information om den här funktionen finns i [Designa en ny ER-lösning för utskrift av ZPL-etiketter](er-design-zpl-labels.md).
 
 ### <a name="limitations"></a>Begränsningar
 

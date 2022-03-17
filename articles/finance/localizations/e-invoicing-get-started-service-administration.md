@@ -1,6 +1,6 @@
 ---
-title: Kom i gång med tjänstadministration för elektronisk fakturering
-description: I det här avsnittet beskrivs hur du kommer igång med Elektronisk fakturering.
+title: Kom i gång med tjänstadministration för e-fakturering
+description: I det här avsnittet beskrivs hur du kommer igång med e-fakturering.
 author: gionoder
 ms.date: 08/17/2021
 ms.topic: article
@@ -18,13 +18,13 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: f77c8fd1696b74f852d04cc0a696d4816ef9af1f
-ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
+ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463821"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "7984838"
 ---
-# <a name="get-started-with-electronic-invoicing-service-administration"></a>Kom i gång med tjänstadministration för elektronisk fakturering
+# <a name="get-started-with-electronic-invoicing-service-administration"></a>Kom i gång med tjänstadministration för e-fakturering
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,18 +49,18 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 1. Logga in på ditt LCS-konto och LCS-projektinstrumentpanelen, LCS-projekt.
 2. I projektet på instrumentpanelen **Miljöer** väljer du din distribuerade miljö. Miljön du väljer måste köras.
 3. Under fliken **Power Platform-integrering**, i fältgruppen **Miljötillägg**, väljer du **Installera ett nytt tillägg**.
-4. Välj **Elektronisk fakturering**.
+4. Välj **e-fakturering**.
 5. I fältet **AAD-program-ID**, ange **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Detta är ett fast värde.
 6. I fältet **AAD innehavar-ID** anger du innehavar-ID för ditt Azure abonnemangskonto. Den Azure Active Directory (Azure AD) klientorganisation som du anger ska vara samma som används för RCS.
 7. Granska villkoren och markera sedan kryssrutan.
 8. Välj **Installera**. Installationen kan ta upp till flera minuter.
 
 
-## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Ställ in parametrarna för RCS-integrationen med Elektronisk fakturering
+## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Ställ in parametrarna för RCS-integrationen med e-fakturering
 
 1. Logga in på RCS-kontot.
 2. I arbetsytan **Globaliseringsfunktioner** i avsnittet **Relaterade inställningar** väljer du länken **Parametrar för elektronisk rapportering**.
-3. På fliken **Elektronisk fakturering**, under fliken **URI för tjänstens slutpunkt** anger du ungefärlig tjänstslutpunkt för ditt Azure-område enligt följande tabell.
+3. På fliken **e-fakturering**, under fliken **URI för tjänstens slutpunkt** anger du ungefärlig tjänstslutpunkt för ditt Azure-område enligt följande tabell.
 
     | Azure-område för datacenter | URI för tjänstslutpunkt                                                       |
     |----------------------------|----------------------------------------------------------------------------|
@@ -76,7 +76,7 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 ## <a name="create-key-vault-references"></a>Skapa en nyckelvalvsreferens
 
 1. Logga in på RCS-kontot.
-2. I arbetsytan **globaliseringsfunktion** i avsnittet **Miljöer**, välj panelen **Elektroniska fakturor**.
+2. I arbetsytan **globaliseringsfunktion** i avsnittet **Miljöer**, välj panelen **e-fakturor**.
 3. På sidan **Miljökonfigurationer** väljer du i åtgärdsrutan **Tjänstmiljöer** och sedan **Parametrar för nyckelvalv**.
 4. Välj **Ny** för att skapa en nyckelvalvsreferens.
 5. I fältet **Namn** anger du namnet för nyckelvalvsreferens. Ange en beskrivning i fältet **beskrivning**.
@@ -104,12 +104,12 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 ## <a name="create-a-service-environment"></a>Skapa en tjänstemiljö
 
 1. Logga in på RCS-kontot.
-2. I arbetsytan **globaliseringsfunktion** i avsnittet **Miljöer**, välj panelen **Elektroniska fakturor**.
+2. I arbetsytan **globaliseringsfunktion** i avsnittet **Miljöer**, välj panelen **e-fakturor**.
 3. På sidan **Miljökonfigurationer** väljer du **Tjänstemiljö** i åtgärdsfönstret.
 4. Välj **Ny** för att skapa en ny tjänstemiljö.
 5. I fältet **Namn** anger du namnet på miljön för e-fakturering. Ange en beskrivning i fältet **beskrivning**.
 6. I fältet **Lagringshemlighet för SAS-token** väljer du namnet på lagringskontots hemlighet som måste användas för att ge åtkomst till lagringskontot.
-7. I avsnittet **Användare** väljer du **Lägg till** om du vill lägga till en användare som är behörig att skicka in elektroniska fakturor via miljön samt även ansluta till lagringskontot.
+7. I avsnittet **Användare** väljer du **Lägg till** om du vill lägga till en användare som är behörig att skicka in e-fakturor via miljön samt även ansluta till lagringskontot.
 8. I fältet **Användar-ID** anger du användarens alias. I fältet **E-postadress** anger du användarens e-postadress.
 9. Välj **Spara**.
 10. Om dina lands-/regionspecifika fakturor kräver en certifikatkedja för att kunna tillämpa digitala signaturer, väljer du **Parametrar för nyckelvalv** och sedan **Certifikatkedja** i åtgärdsfönstret och följer sedan dessa steg:
@@ -140,18 +140,18 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 3. I fältet **Tjänstemiljö** väljer du en tjänstemiljö.
 4. Markera **Spara** och stäng sedan sidan.
 
-## <a name="set-up-electronic-invoicing-integration-in-finance-and-supply-chain-management"></a>Ställa in integrering av elektronisk fakturering i Finance och Supply Chain Management
+## <a name="set-up-electronic-invoicing-integration-in-finance-and-supply-chain-management"></a>Ställa in integrering av e-fakturering i Finance och Supply Chain Management
 
-### <a name="turn-on-the-electronic-invoicing-integration-feature"></a>Aktivera integrationsfunktionen för Elektronisk fakturering
+### <a name="turn-on-the-electronic-invoicing-integration-feature"></a>Aktivera integrationsfunktionen för e-fakturering
 
 1. Logga in på din instans för Finance eller Supply Chain Management.
-2. I arbetsytan **Funktionshantering** söker du efter den nya funktionen **Integrering av för elektronisk fakturering**. Om den här funktionen inte visas på sidan väljer du **Sök efter uppdateringar**.
+2. I arbetsytan **Funktionshantering** söker du efter den nya funktionen **Integrering av för e-fakturering**. Om den här funktionen inte visas på sidan väljer du **Sök efter uppdateringar**.
 3. Välj funktionen och välj sedan **aktivera nu**.
 
 ### <a name="set-up-the-service-endpoint-url"></a>Ställ in URL för tjänstslutpunkt
 
 1. Gå till **organisationsadministration \> inställning \> parametrar för elektroniska dokument**.
-2. På fliken **Elektronisk fakturering**, under fliken **URL för slutpunkt** anger du ungefärlig tjänstslutpunkt för ditt Azure-område enligt följande tabell.
+2. På fliken **e-fakturering**, under fliken **URL för slutpunkt** anger du ungefärlig tjänstslutpunkt för ditt Azure-område enligt följande tabell.
 
     | Azure-område för datacenter | URI för tjänstslutpunkt                                                       |
     |----------------------------|----------------------------------------------------------------------------|
@@ -160,7 +160,7 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
     | Storbritannien             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | Asien                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
-3. I fältet **Miljö** anger du namnet på miljön för tjänstemiljö publicerad i Elektronisk fakturering.
+3. I fältet **Miljö** anger du namnet på miljön för tjänstemiljö publicerad i e-fakturering.
 4. Markera **Spara** och stäng sedan sidan.
 
 ### <a name="enable-flighting-keys-for-finance-or-supply-chain-management-version-10017"></a>Aktivera förhandsversionsnycklar för Finance or Supply Chain Management version 10.0.17

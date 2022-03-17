@@ -2,7 +2,7 @@
 title: Hantering av allmänna journaler
 description: Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics 365 Finance som kan underlätta processen för allmänna journaler och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas.
 author: kweekley
-ms.date: 08/09/2019
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f9f4019618891909e674c6b936f79778ac84744
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 7096d8576cf124e5e1d814c360d96639f66a742a
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726787"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367902"
 ---
 # <a name="general-journal-processing"></a>Hantering av allmänna journaler
 
@@ -101,7 +101,7 @@ En knapp är tillgänglig på sidan Journal för att låsa upp en journal med st
 Möjligheten att återkalla en journal i ett arbetsflöde med statusen "oåterkallelig" aktiveras genom att använda knappen **arbetsflöde** i en journal och på sidan **arbetsflödeshistorik**. Detta aktiveras med funktionen som kallas **återställning av arbetsflödesstatusen för journaler** på sidan **funktionshantering**.
 
 ## <a name="delete-journal-lines"></a>Radera journalrader
-Möjligheten att snabbt ta bort alla journalrader är aktiverad i en journal under **funktioner** > **ta bort journalrader**. Om du vill aktivera den här funktionen väljer du **funktionshantering**, välj **ta bort optimeringar för journalprestanda**.
+Möjligheten att snabbt ta bort alla journalrader är aktiverad i en journal under **funktioner** > **ta bort journalrader**. Om du vill aktivera den här funktionen väljer du **funktionshantering**, välj **ta bort optimeringar för journalprestanda**. Denna funktion påverkar tillägg i tabellen **LedgerJournalTrans** och dess **Ta bort**-metod, detta eftersom raduppsättningen tas bort utan att anropa respektive rads **Ta bort**-metod. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

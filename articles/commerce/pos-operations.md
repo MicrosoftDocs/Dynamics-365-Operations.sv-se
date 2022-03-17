@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5e139b7b12b8f2e549fb9c2c8e39125e190c7396
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: 0c62e11cc6d39c351321419bb862a5169b162fb7
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311989"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349727"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Verksamhet för online- och offlinekassor (POS)
 
@@ -43,7 +43,7 @@ Följande kolumner anger var operationerna kan startas:
 > Åtgärderna i listan nedan gäller den senaste versionen av Commerce. Vissa operationer kan ha ändrats eller kanske inte är tillgängliga i tidigare versioner.
 
 
-| ID | Åtgärd | beskrivning | Knappsats | Transaktionsskärm | Välkomstskärm | Tillgänglig offline | Språkspecifik  |
+| ID | Åtgärd | beskrivning | Knappsats | Transaktionsskärm | Välkomstskärm | Tillgänglig offline | Språkspecifik |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
 | 707 | Aktivera enhet | Aktivera aktuell enhet genom att låta en autentiserad användare ange anslutningsinformationen och tilldela en enhet och registrer-ID. | Nej | Nej | Nej | Nej | Nej |
 | 134 | Lägg till anknytning | Lägg till en förvald anknytning till en transaktion. Välj anknytningen på sidan **Knappegenskaper**. | Ja | Ja | Nej | Ja | Nej |
@@ -100,7 +100,7 @@ Följande kolumner anger var operationerna kan startas:
 | 1201 | Växelpost | Lägg till ytterligare pengar i den aktuella kassalådan eller skift. | Ja | Ja | Ja | Ja | Nej |
 | 1218 | Tvinga upp lås av kringutrustning | Systemet använder denna operation internt för att låsa upp kringutrustning för kassa. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Nej |
 | 520 | Presentkortssaldo | Visa presentkortssaldo. | Ja | Ja | Nej | Nej | Nej |
-| 708 | Inaktiv enhet | Inaktivera aktuell enhet så att den inte kan användas som ett kassaregister. | Nej | Nej | Nej | Nej | Nej |
+| 708 | Inaktiv enhet | Inaktivera aktuell enhet så att den inte kan användas som en kassaapparat. | Nej | Nej | Nej | Nej | Nej |
 | 804 | Inkommande åtgärd | Komma åt funktionerna för hantering av inkommande lager. | Ja | Nej | Ja | Nej| Nej |
 | 517 | Inkomstkonton | Registrera pengar, som sätts till kassalådan för en orsak annan än en försäljning. | Ja | Ja | Ja | Ja | Nej |
 | 801 | Lagersökning | Slå upp kvantiteter för disponibelt, på ordern, och disponibelt att lova (ATP) för den aktuella butiken och andra tillgängliga platser. | Ja | Ja | Ja | Nej | Nej |
@@ -159,7 +159,7 @@ Följande kolumner anger var operationerna kan startas:
 | 305 | Utnyttja förmånspoäng | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Ja |
 | 635 | Återbetala leveransavgifter | Återbetala fraktkostnader för en annullerad order. | Nej | Nej | Nej | Nej | Nej |
 | 644 | Ta bort kupongkod | Uppmana användaren till att ta bort kuponger genom att markera dem i en lista över kuponger som associeras med transaktionen. | Ja | Ja | Nej | Ja | Nej |
-| 1057 | Skriv ut Z igen | Skriv ut Z-rapporten igen för föregående skift eller ett markerat skift. | Ja | Ja | Ja | Nej | Nej |
+| 1057 | Skriv ut Z igen | Skriv ut Z-rapporten igen för föregående skift. | Ja | Ja | Ja | Nej | Nej |
 | 1216 | Ange ett nytt lösenord | Den här operationen låter användaren med behörighet att återställa lösenord för en annan medarbetares med hjälp av ett tillfälligt lösenord. | Ja | Ja | Ja | Nej | Nej |
 | 1219 | Öppna URL i kassa | Öppna en adminkonfigurerad URL i kassan. | Ja | Ja | Ja | Ja | Nej |
 | 109 | Returnera produkt | Utför en retur av enskilda produkter. Nästa skannade produkt visas som en returnerad produkt som har en negativ kvantitet och pris. | Ja | Ja | Nej | Ja | Nej |

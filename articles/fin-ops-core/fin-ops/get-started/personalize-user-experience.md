@@ -2,7 +2,7 @@
 title: Anpassa användarupplevelsen
 description: Det här avsnittet beskriver hur du kan anpassa appen.
 author: jasongre
-ms.date: 01/28/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 4bdce3cd12358112e40a783c73795bd6f35545c8
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075432"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384653"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
@@ -158,6 +158,7 @@ För vissa sidor som innehåller listor är anpassningsfunktionen **Lägg till p
 
 - Lägg till en lista i en arbetsyta, sortera först eller filtrera listan på sidan så att den visar information som du vill ska visas på arbetsytan. (Om funktionen **Sparade vyer** är aktiverad kan du inte fortsätta förrän du har sparat en vy som har dessa villkor.) Välj sedan **Lägg till i arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Lista**. När du har valt **konfigurera**, visas en dialogruta, där du kan välja vilka kolumner som ska visas i listan i arbetsytan. Du kan också ange etiketten som ska användas för i listan i arbetsytan.
 - För att lägga till en panel till en arbetsyta, filtrera först listan på sidan så att den visar de data som du vill sammanfatta eller som vill ha snabb tillgång till. (Om funktionen **Sparade vyer** är aktiverad kan du inte fortsätta förrän du har sparat en vy som har dessa villkor.) Välj sedan **Lägg till i arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Panel**. När du har valt **konfigurera**, visas en dialogruta där du kan ange etiketten som ska användas för panelen på arbetsytan. Du kan också ange om panelen ska visa ett antal. När du har lagt till en panel i arbetsytan kan du välja den för att öppna den aktuella sidan från arbetsytan. Du kan sedan visa den filtrerade listan som är kopplad till panelen.
+    - Från och med version 10.0.26, om funktionen **Tillåt användarna att välja och ändra panelstorlekar** har aktiverats, kan du välja en av fyra tillgängliga **Panelstorlekar** för din nya panel i dialogen **Konfigurera panel**. Med den här funktionen kan du också justera storleken på din panel efter att den skapats direkt från arbetsytan.   
 - Om du vill lägga till en länk till en arbetsyta filtrerar du först listan så att den visar de data du är intresserad av. (Om funktionen **Sparade vyer** är aktiverad kan du inte fortsätta förrän du har sparat en vy som har dessa villkor.) Välj sedan **Lägg till i arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Länk**. När du har valt **konfigurera**, visas en dialogruta där du kan ange etiketten som ska användas för länken. Du kan också valfritt ange en etikett för avsnittet där denna länk kan placeras. Om det avsnittet inte finns kommer ett nytt avsnitt att skapas.
 
 > [!NOTE]
@@ -168,6 +169,9 @@ När du har lagt till en lista, panel eller länk har lagts till en arbetsyta ka
 ### <a name="adding-a-summary-from-a-workspace-to-a-dashboard"></a>Lägga till en sammanfattning från en arbetsyta till en panel
 
 En del arbetsytor innehåller antalet paneler (detta är paneler som har nummer på dem) och vill kanske vill att dessa paneler ska visas på instrumentpanelen. I arbetsytan högerklickar du på en räkneverkspanel, väljer **Anpassa** och sedan **Fäst på instrumentpanelen** i panelens egenskapsfönster. Nästa gång som du öppnar (och uppdaterar) den valda instrumentpanelen kommer antalet att visas under navigeringspanelen för den arbetsytan. Du kan välja att gå direkt till de data som representerar antalet.
+
+### <a name="changing-the-size-of-a-tile"></a>Ändra storleken på en panel
+Från och med version 10.0.26 låter funktionen **Tillåt användarna välja och ändra panelstorleken** användare ändra storleken på alla icke-KPI-paneler via personanpassning. På en arbetsyta, högerklicka på en panel och välj **Anpassa**. I panelens egenskapsfönster väljer du önskad storlek från alternativen för **Panelstorlek**. Storleken på panelen justeras omedelbart. Om funktionen **(Förhandsversion) Stöd för sparade vyer för arbetsyter** har aktiverats kan du spara personanpassningen i en arbetsytevy.  
 
 ### <a name="personalizing-your-dashboard"></a>Anpassa instrumentpanelen
 

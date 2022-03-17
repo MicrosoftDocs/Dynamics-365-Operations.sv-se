@@ -2,7 +2,7 @@
 title: Vad är nytt eller ändrat i mobilappen Warehouse Management
 description: Det här ämnet visar en lista med nya och ändrade funktioner för varje frisläppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 01/18/2022
+ms.date: 02/21/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,51 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ceb327599bb2651a37ac51c3e0fdffc39d20c7f6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b146fb12f89559efcb3b0973b0dd1ce9b98ffe2a
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067261"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384381"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Vad är nytt eller ändrat i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Detta ämne listar nya funktioner, korrigeringar, förbättringar och kända problem för varje släppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20170"></a>Version 2.0.17.0
+
+I den här versionen ingår följande nya funktioner, korrigeringar och förbättringar:
+
+- Åtgärdade ett problem där streckkoder skannades felaktigt.
+- Åtgärdade ett GS1-skanningsproblem för skannern.
+- Åtgärdade GS1-skanningsproblemet för streckkodsskannern på Zebra-enheter.
+- Förbättrade flödet för omvägsförfrågan så att valet av ett kort under en omväg nu medför en återgång till huvudflödet.
+- Lade till stöd för ett allmänt dataförfrågningsflöde.
+- Lade till ett meddelande om ändringar av nätverkets anslutningsstatus för användarna.
+- Anpassa lagringsbehörigheter till sekretesspolicyn för lagring i Android 10.
+- För flöden som behöver det inkluderar kvantitetsförloppsrutan nu en position där användare skickar ett tomt numeriskt värde.
+- Åtgärdade problem med kvantitetsförloppsorientering.
+- Åtgärdade ett problem där kvantitetsförloppet kunde hoppa till fel värde.
+- Åtgärdade ett problem där inmatning till den primära sidan gick förlorad när den fylls i från detaljsidan.
+- Åtgärdade ett problem där platshållartexten behandlades som det inledningsvis valda värdet i urvalslistor.
+- Knappen "Skicka" på bekräftelsesteg aktiveras nu automatiskt om det finns förvalda värden.
+- Åtgärdade detaljkortet så att så många rader som möjligt för textfält med flera rader visas.
+- Åtgärdade höjden på knapparna "Skicka" och "Fler åtgärder", så nu tar de mindre plats på skärmen.
+- Lade till rubriker på saknade vallistor.
+- Åtgärdade ett problem där bakåtknappen inte fungerade.
+- Lade till flera korrigeringar och förbättringar för tangentbordsnavigering, bland annat på följande sidor:
+  - Användarinloggning
+  - Välj anslutning
+  - Redigera anslutning
+- Fast rullning när du använder tangentbordsnavigering.
+- Förbättrad åtkomst, inklusive följande förbättringar:
+  - Fast färgsynbarhet och kontrast.
+  - Förhindrad förlust av tangentbordsfokus när popup-sidor stängs.
+  - Lade till felmeddelanden i berättandet.
+  - Ökade storleken på platshållarvärdena i stegbanderollen.
+- Åtgärdade exemplet på den anpassade äldre sidan i demoläge.
 
 ## <a name="version-20150"></a>Version 2.0.15.0
 
@@ -39,12 +72,12 @@ I den här versionen ingår följande nya funktioner, korrigeringar och förbät
 ## <a name="version-20130"></a>Version 2.0.13.0
 
 I den här versionen ingår följande nya funktioner, korrigeringar och förbättringar:
- 
+
 - Förbättrad bläddring mellan sidor med smidigare animering.
 - Fasta ologiska svar på sveprörelser och enstaka skärmfrysningar.
 - Förbättrad kombination av mörklägestext och bakgrundsfärg för bättre läsbarhet.
 - Korrigerat ett problem där viss text kan bli mycket liten när du ändra storlek på appfönstret.
-- Fast ett problem som kan göra att programmet kraschar när streckkoder skannas.
+- Åtgärdade ett problem som kan göra att programmet kraschar när streckkoder skannas.
 - Har lagt till möjligheten att ersätta ett skjutreglage med en knapp.
 - Åtgärdat ett problem som kan göra att programmet visar felmeddelandet, "AADSTS7000215: Ogiltig klienthemlighet anges."
 - Har fast tipsanimeringen som visar hur du stänger en sida med ett svepa nedåt-gest.
@@ -73,7 +106,7 @@ I den här versionen ingår följande nya funktioner, korrigeringar och förbät
 - Kort med förbättrad detalj.
 - Förbättrade omvägar för menyalternativsteg.
 - Mindre förbättringar av användargränssnitt.
-- Fast ett problem som kan göra att programmet kraschar när streckkoder skannas.
+- Åtgärdade ett problem som kunde göra att programmet kraschar när streckkoder skannades.
 - Åtgärdade olika problem som gjorde att systemet inte svarade har lösts.
 
 ## <a name="version-20100"></a>Version 2.0.10.0

@@ -2,7 +2,7 @@
 title: Lista över ER-funktioner i textkategorin
 description: Det här ämnet ger information om textfunktionerna som stöds i elektronisk rapportering (ER).
 author: NickSelin
-ms.date: 09/09/2021
+ms.date: 02/28/2022
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 5d185c128de1120e93d1779db04a7666ba557707
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075510"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367777"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Lista över ER-funktioner i textkategorin
 
@@ -51,7 +51,7 @@ Textfunktioner för elektronisk rapportering (ER) kan användas för att utföra
 | [Höger](er-functions-text-right.md) | Den här funktionen returnerar ett *sträng*-värde som visar angivet antal tecken från slutet av den angivna strängen. |
 | [Text](er-functions-text-text.md) | Den här funktionen returnerar det specificerade numret som ett *Sträng*-värde efter att den har konverteras till en textsträng formaterad enligt serverns lokala inställningar för den aktuella programinstansen. |
 | [Översätt](er-functions-text-translate.md) | Funktionen returnerar ett *sträng*-värde som innehåller resultatet av teckenersättningen för angiven text i tecken som ingår i en annan uppsättning tecken. |
-| [Trim](er-functions-text-trim.md) | Den här funktionen returnerar den angivna textsträngen som ett *Sträng*-värde efter att inledande och efterföljande blanksteg har trunkerats och multipla blanksteg mellan ord har tagits bort. |
+| [Trim](er-functions-text-trim.md) | Denna funktion returnerar den angivna textsträngen som ett *Sträng*-värde efter tabb, carriage return, radflöde och formulärflödestecken har ersatts med ett blanksteg, efter att inledande och avslutande blanksteg har trunkerats samt efter att flera blanksteg mellan ord har tagits bort. |
 | [Upper](er-functions-text-upper.md) | Den här funktionen returnerar den angivna textsträngen som ett *sträng*-värde efter att den har konverterats till versaler. |
 
 ## <a name="additional-resources"></a>Ytterligare resurser

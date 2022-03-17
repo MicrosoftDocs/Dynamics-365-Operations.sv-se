@@ -1,6 +1,6 @@
 ---
 title: Förmånsutdrag
-description: I rapporten Förmånsutdrag förklaras de förmåner som en medarbetare har registrerats för.
+description: I rapporten Förmånsutdrag förklaras de förmåner som en medarbetare för tillfället har registrerats för.
 author: twheeloc
 ms.date: 09/21/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 65bf91faba049b3fed4d80e020d77b82e48cceb6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 602e4f9459aac8fdbea5f2752e51cc2c1b71360c
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069005"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358253"
 ---
 # <a name="benefit-statement"></a>Förmånsutdrag
 
@@ -58,7 +58,7 @@ Du måste importera **förmånsutdrag** med hjälp av rapportkonfigurationen **f
 
 ## <a name="generate-the-benefit-statement-as-a-pdf-file"></a>Generera förmånsutdraget som en PDF-fil
 
-Som standard skrivs **förmånsutdraget** ut som ett Microsoft Word dokument. Om du vill skriva ut i ett PDF-format måste du konfigurera PDF-alternativet i **destinationen Elektronisk rapportering**. 
+Som standard skrivs **förmånsutdraget** ut som ett Microsoft Word dokument. Om du vill skriva ut i ett PDF-format måste du konfigurera PDF-alternativet i **målet Elektronisk rapportering**. 
 
 1. Det gör du genom att gå till **Arbetsytan för systemadministration** > **Elektronisk rapportering** > **Relaterade länkar** > **Mål för elektronisk rapportering**.
 

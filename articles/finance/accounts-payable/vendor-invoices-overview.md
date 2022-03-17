@@ -2,13 +2,13 @@
 title: Översikt över leverantörsfakturor
 description: Det här ämnet innehåller allmän information om leverantörsfakturor.
 author: abruer
-ms.date: 06/03/2021
+ms.date: 02/25/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "13971"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22535f4bc320bde096214e2044cfeb00d4e9fbbc
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b54a60ac3b1868ea7cc5ed88d5a31203b4bd29d3
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985347"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358451"
 ---
 # <a name="vendor-invoices-overview"></a>Översikt över leverantörsfakturor
 
@@ -51,10 +51,10 @@ Följande diskussion innehåller mer information om hur du använder sidorna **�
 
 När du öppnar en leverantörsfaktura från en relaterad inköpsorder skapar systemet fakturarader från inköpsordern. Som standard tar systemet kvantiteterna från produktinleveransen. Du kan dock använda en av följande standardinställningar:
 
-- **Kvantitet för Inleverera nu** – Använd det här alternativet för delförsändelser. Systemet anger standardvärdet i fältet **Kvantitet** från den kvantitet som anges i fältet **Inleverera nu** på inköpsordern.
-- **Beställd kvantitet** – Använd det här alternativet för fullständiga försändelser. Systemet anger standardvärdet i fältet **Kvantitet** från den kvantitet som anges i fältet **Beställt** på inköpsordern.
+- **Kvantitet för Inleverera nu** – Använd det här alternativet för delförsändelser. Standardvärdet i fältet **Kvantitet** anges till den kvantitet som anges i fältet **Inleverera nu** på inköpsordern.
+- **Beställd kvantitet** – Använd det här alternativet för fullständiga försändelser. Standardvärdet i fältet **Kvantitet** anges som den kvantitet som anges i fältet **Beställt** på inköpsordern.
 - **Registrerad kvantitet** – Använd det här alternativet om artikeln måste registreras på sättet som anges på sidan **Artikelmodellgrupper**. Standardvärdet i fältet **Kvantitet** är den fysiska uppdaterade kvantiteten som har registrerats.
-- **Kvantitet för produktinleverans** – Använd det här alternativet om en produktinleverans redan har inlevererats för ordern. Systemet hämtar standardvärdet i fältet **Kvantitet** från den totala kvantiteten tillgängliga produktinleveranser.
+- **Kvantitet för produktinleverans** – Använd det här alternativet om en produktinleverans redan har inlevererats för ordern. Standardvärdet i fältet **Kvantitet** är den totala kvantiteten i tillgängliga produktinleveranser.
 - **Registrerade kvantitet och tjänster** – Använd det här alternativet om kvantiteter har registrerats i införseljournaler för artiklar i lager eller artiklar som inte lagras. Det här alternativet inkluderar tjänster, oavsett om de registreras inte.
 
 Om din juridiska person använder fakturamatchning kan du visa resultaten på kvantiteten som matchar i kolumnen **Matchning av kvantitet för produktinleverans**. Du kan också använda knappen **Matcha detaljer** på fliken **Granska** på åtgärdsfönstret om du vill visa resultatet av kvantitetsmatchningen.
@@ -65,7 +65,7 @@ Du kan lägga till en rad som inte fanns i inköpsordern till leverantörsfaktur
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Skicka in en leverantörsfaktura för granskning
 
-Organisationen kan använda arbetsflöden för att hantera granskningen för leverantörsfakturor. Arbetsflödesgranskningen kan krävas för fakturahuvudet, fakturaraden eller båda. Arbetsflödeskontrollerna används för sidhuvudet eller raden beroende på var fokus ligger innan du väljer kontrollen. Istället för knappen **Bokför** visas knappen **Skicka** som skickar leverantörsfakturan genom granskningsprocessen.
+Organisationen kan använda arbetsflöden för att hantera granskningen för leverantörsfakturor. Arbetsflödesgranskningen kan krävas för fakturahuvudet, fakturaraden eller båda. Arbetsflödeskontrollerna används för sidhuvudet eller raden beroende på var fokus ligger innan du väljer kontrollen. Istället för knappen **Bokför** skickar knappen **Skicka** leverantörsfakturan genom granskningsprocessen.
 
 ### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Förhindra att faktura skickas till arbetsflödet 
 
@@ -80,7 +80,7 @@ Nedan kan du på flera sätt förhindra att en faktura skickas till ett arbetsfl
 
 Du kan ange och spara information för leverantörsfakturor, och du kan matcha fakturarader mot produktinleveransrader. Det går även att matcha delkvantiteter på en rad.
 
-Du kan skapa en leverantörsfaktura som baseras på de radartiklar i produktinleveransen som har inlevererats till nuvarande datum, även om alla artiklar för en viss inköpsorder ännu inte har inlevererats. Använd det här alternativet om till exempel leverantören skickar en faktura per månad som täcker alla leveranser som skickas den månaden. Varje produktinleverans representerar en del av eller hela leveransen av artiklarna på inköpsordern.
+Du kan skapa en leverantörsfaktura som baseras på de radartiklar i produktinleveransen som har inlevererats till nuvarande datum, även om alla artiklar för en viss inköpsorder ännu inte har inlevererats. Använd det här alternativet om till exempel providern skickar en faktura per månad som täcker alla leveranser som skickas den månaden. Varje produktinleverans representerar en del av eller hela leveransen av artiklarna på inköpsordern.
 
 När en faktura är i arbetsflödet kan godkännaren uppdatera fakturakvantiteter så att dessa matchar värdet i fältet **Produktinleveranskvantitet-att-matcha**. Detta gör du genom att välja funktionen **Uppdatera fakturakvantiteter så att dessa matchar produktinleveranskvantiteterna i arbetsflödet** i arbetsytan **Funktionshantering** och sedan **Aktivera**. Om en godkännare i arbetsflödesprocessen har tagit bort alla träffar från alla produktinleveranser från fakturaraden, tas fakturaraden bort. Om den här funktionen inte är aktiverad, uppdateras inte fakturakvantiteter för fakturor i arbetsflödet.
 
@@ -102,7 +102,7 @@ Du kan ange antalet fakturor som ska inkluderas i batchen och antalet timmar att
 
 ## <a name="working-with-multiple-invoices"></a>Arbeta med flera fakturor
 
-Du kan arbeta med flera fakturor samtidigt och bokföra dem samtidigt. Om du måste skapa flera fakturor, använd sidan **Väntande leverantörsfakturor**. Om du måste bokföra och skriv ut flera leverantörsfakturor, använd fakturagodkännandejournalen. Om du använder fakturagodkännandejournalen måste minst en produktinleverans vara bokförd för inköpsordern och att en faktura för inköpsordern har bokförts i ett fakturaregister. Den ekonomiska informationen för fakturan kommer från fakturan som bokfördes i registret.
+Du kan arbeta med flera fakturor samtidigt och bokföra dem samtidigt. Om du måste skapa flera fakturor, använd sidan **Väntande leverantörsfakturor**. Om du måste bokföra och skriva ut flera leverantörsfakturor använder du **fakturagodkännandejournalen**. Om du använder **fakturagodkännandejournalen** måste minst en produktinleverans vara bokförd för inköpsordern och en faktura för inköpsordern ha bokförts i ett fakturaregister. Den ekonomiska informationen för fakturan kommer från fakturan som bokfördes i registret.
 
 ## <a name="recovering-vendor-invoices-that-are-being-used"></a>Återställer leverantörsfakturor som används
 

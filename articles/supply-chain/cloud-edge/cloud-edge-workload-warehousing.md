@@ -1,6 +1,6 @@
 ---
-title: Arbetsbelastningar för distributionslagerhantering för moln- och molnskalningsenheter
-description: Det här avsnittet innehåller information om funktionen som gör att enheterna kan köra valda processer från din arbetsbelastningar för distributionslagerhantering.
+title: Arbetsbelastningar för distributionslagerstyrning för moln- och molnskalningsenheter
+description: Det här avsnittet innehåller information om funktionen som gör att enheterna kan köra valda processer från din arbetsbelastningar för distributionslagerstyrning.
 author: perlynne
 ms.date: 09/03/2021
 ms.topic: article
@@ -16,14 +16,14 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d8b0f5a4878a924943f6f8876575d5247875811
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068119"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384496"
 ---
-# <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
+# <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för distributionslagerstyrning för moln- och kantskalningsenheter
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,9 +36,9 @@ Med hjälp av arbetsbelastningar för lagerstyrning kan moln- och kantskalningse
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Innan du börjar arbeta med arbetsbelastningen för lagerhantering måste ditt system förberedas på det sätt som beskrivs i det här avsnittet.
+Innan du börjar arbeta med arbetsbelastningen för lagerstyrning måste ditt system förberedas på det sätt som beskrivs i det här avsnittet.
 
-### <a name="deploy-a-scale-unit-with-the-warehouse-management-workload"></a>Distribuera en skalningsenhet med arbetsbelastningen för lagerhantering
+### <a name="deploy-a-scale-unit-with-the-warehouse-management-workload"></a>Distribuera en skalningsenhet med arbetsbelastningen för lagerstyrning
 
 Du måste ha ett Dynamics 365 Supply Chain Management nav och en skalningsenhet som har distribuerats med arbetsbelastningen för lagerstyrning. Mer information om arkitektur och distributionsprocess finns i [Skalningsenheter i en distribuerad hybridtopologi](cloud-edge-landing-page.md).
 
@@ -62,7 +62,7 @@ Beroende på vilka affärsprocesser som används kan samma datapost byta ägarsk
 
 ## <a name="outbound-process-flow"></a>Utgående processflöde
 
-Innan du distribuerar en arbetsbelastning för lagerhantering på en moln- eller kantskalningsenhet, se till att du har funktionen *Skalningsenhetsstöd för frisläppning till lagerställe för utgående order* aktiverad på ditt företagshubb. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+Innan du distribuerar en arbetsbelastning för lagerstyrning på en moln- eller kantskalningsenhet, se till att du har funktionen *Skalningsenhetsstöd för frisläppning till lagerställe för utgående order* aktiverad på ditt företagshubb. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 
 - **Modul:** *Warehouse management*
 - **Funktionsnamn:** *Skalningsenhetsstöd för frisläppning till lagerställe för utgående order*
@@ -107,7 +107,7 @@ Du måste logga in på navet för att använda processen *Släpp till distributi
 
 När du använder **Automatiskt släpp av försäljningsorder**, du kan välja specifika inköpsorderrader baserat på en frågeställning. Ett vanligt scenario är att ställa in ett återkommande batchjobb som frisläpper alla bekräftade inköpsorderrader som förväntas komma in nästa dag.
 
-Arbetaren kan köra mottagningsprocessen med hjälp av en mobilappen för distributionslagerhantering som är ansluten till skalningsenhet. Data registreras sedan av skalningsenheten och rapporteras mot inkommande lagerorder. Skapandet och bearbetningen av efterföljande borttagning kommer också att hanteras av skalningsenheten.
+Arbetaren kan köra mottagningsprocessen med hjälp av en mobilappen för distributionslagerstyrning som är ansluten till skalningsenhet. Data registreras sedan av skalningsenheten och rapporteras mot inkommande lagerorder. Skapandet och bearbetningen av efterföljande borttagning kommer också att hanteras av skalningsenheten.
 
 Om du inte använder processen *frisläppning till lager* och därför inte använder *lagerställeorder*, kan navet bearbeta inleverans och bearbetning av lager oberoende från skalningsenheter.
 
@@ -180,7 +180,7 @@ Följande typer av arbete kan skapas för en skalningsenhet och kan därför bea
 Inga andra typer av källdokumenthantering eller lagerarbete stöds för närvarande på skalningsenheter. Till exempel, när du kör mot en arbetsbelastning för lagerutförande på en skalningsenhet, kan du inte använda processen för mottagning av försäljningsreturorder för att behandla returorder. I stället måste denna bearbetning göras av navinstansen.
 
 > [!NOTE]
-> Menyalternativ och knappar för mobila enheter för funktioner som inte stöds visas inte i _mobilappen för distributionslagerhantering_ när den är ansluten till en distribution av skalningsenhet.
+> Menyalternativ och knappar för mobila enheter för funktioner som inte stöds visas inte i _mobilappen för distributionslagerstyrning_ när den är ansluten till en distribution av skalningsenhet.
 >
 > Några extra steg krävs för att ställa in mobilappen Warehouse Management att arbeta mot en enhet för molnbaserad eller kantskalningsenhet. För mer information, se [Konfigurera mobilappen Warehouse Management för moln- och kantskalningsenheter](cloud-edge-workload-setup-warehouse-app.md).
 >
@@ -210,9 +210,9 @@ Följande funktioner för lagerstyrning stöds för närvarande inte i arbetslas
 - Bearbetning av artiklar som endast aktiverats för Transporthantering (NIS).
 - Bearbetning av negativ lagerbehållning.
 - Datadelning för produkter mellan företag. <!-- Planned -->
-- Bearbetning av lagerställe med leveransnoteringar.
-- Bearbetning av lagerställearbete med materialhantering/lagerautomatisering.
+- Bearbetning av lagerställe med leveransanteckningar (till exempel förpackningsanteckningar på packningsstation).
 - Avbildning av produktmallsdata (t.ex. i mobilappen Warehouse Management).
+- Bearbetning av lagerställearbete med materialhantering/lagerautomatisering.
 
 > [!WARNING]
 > Vissa lagerställefunktioner är inte tillgängliga för lagerställen som kör lagerstyrningsarbetsbelastningar på en skalningsenhet, och den har inte heller stöd för hantering av lagerställen eller på arbetsbelastningen vid lagerstyrning.
@@ -236,8 +236,7 @@ I följande tabell visas vilka utgående funktioner som stöds och var de stöds
 | Underhålla försändelser för cykel                                  | Nej  | Ja|
 | Arbetsprocess för lager (inkl. tryck på ID-nummer)        | Nej  | Ja, men endast för de tidigare nämnda funktionerna |
 | Klusterplockning                                              | Nej  | Ja|
-| Manuell förpackningsbearbetning, inklusive bearbetning av "Plockning för packad behållare" | Nej <P>Viss bearbetning kan utföras efter en ursprunglig plockningsprocess som hanteras av en vågenhet, men du rekommenderas inte på grund av följande spärrade operationer.</p>  | Nej |
-| Ta bort behållare från grupp                                  | Nej  | Nej |
+| Manuell bearbetning av packningsstation  | Nej  | Nej |
 | Utgående sorteringsbearbetning                                  | Nej  | Nej |
 | Utskrift av läsrelaterade dokument                           | Ja | Ja|
 | Fraktsedel och ASN-generering                            | Nej  | Ja|
@@ -258,6 +257,7 @@ I följande tabell visas vilka utgående funktioner som stöds och var de stöds
 | Återför leveransbekräftelse                                | Nej  | Ja|
 | Begäran om att annullera lagerorderrader                      | Ja | Nej, men förfrågningen kommer att godkännas eller avvisas |
 | <p>Frisläpp överföringsorder för mottagande</p><p>Den här processen sker automatiskt som en del i utgående leveransprocessen efter behov. Det kan emellertid användas manuellt för att aktivera licensmottagningen vid en skalningsenhet om inkommande orderrader för lagerställe har annullerats eller som en del av en ny distributionsprocess för arbetsbelastning.</p> | Ja | Nej|
+<!--| Manuell bearbetning av packningsstation, inklusive arbete rörande "Plockning för packad behållare"  | Nej  | Ja, men utan visning av TMS-sändning och bokföring av försäljningsföljesedlar och utan följesedlar och produktbilder |-->
 
 ### <a name="inbound"></a>Inkommande
 
@@ -359,6 +359,7 @@ På navdistributionen kan du manuellt underhålla följande batch-jobb:
     - Meddelandeprocessor för skalningsenhet till hubb
     - Registrera inleveranser av källorder
     - Slutför lagerställeorder
+    - Generera saknade utgående lagerorder
 
 - Hantera följande batchjobb i **lagerstyrning \> periodiska uppgifter \> hantering av arbetsbelastning**:
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6cbc800d7ae4d566fddb111b7ee9d67234e3cf8c
-ms.sourcegitcommit: 43d0555c17a0643c9e5ba3bc2da3ce5f80754642
+ms.openlocfilehash: 4ed5664b5be11f013900d6411d4307692d5e8334
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "8326004"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358199"
 ---
 # <a name="configure-accounts-payable-overview"></a>Konfigurera leverantörsreskontra – översikt
 
@@ -34,7 +34,7 @@ Det här avsnittet innehåller en beskrivning av de sidor som används för att 
 
 Följande inställning måste göras innan det går att ställa in leverantörsreskontra:
 
--   I Redovisning:
+-   I redovisningen:
     -   Om du tänker använda betalningsjournaler, konfigurera betalningsjournaler.
     -   Om du tänker använda valutakursjusteringar, ställ in valutakoder på sidan **Valutor**, ställ in valutakurstyper på sidan **Valutakurstyp** och ställ in valutakurser på sidan **Valutakurs**.
 -   Ställ in bankkonton som används med betalsätt i Kassa- och bankhantering.

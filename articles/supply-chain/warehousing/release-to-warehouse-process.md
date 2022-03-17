@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6c8aa0338ab30e6366601e3759141c7e41bf99fb
-ms.sourcegitcommit: ab1455c67f6ee6ca36bec148bea0dbb0f7704eda
+ms.openlocfilehash: 3269bf3f8a5475fb85e6b51514db29006be9aab1
+ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7428965"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376218"
 ---
 # <a name="release-to-warehouse"></a>Frisläpp till distributionslager
 
@@ -125,6 +125,7 @@ Följ stegen nedan för att konfigurera batchjobbet som släpper försäljningso
     - **Kvantitet att frisläppa** – Välj om hela kvantiteten eller endast den fysiskt reserverade kvantiteten ska släppas till lagerstället.
     - **Tillåt frisläppning av delvis frisläppta order** – Ange om återstående kvantiteter för delvis frisläppta order ska frisläppas till lagerstället.
     - **Behåll reservationer vid fel vid frisläppning** – Ange om kvantiteter som automatiskt reserverats för en försäljningsorder ska förbli reserverade om frisläppningen till lagerstället misslyckas.
+    - **Gruppversioner efter kund** – Ange huruvida systemet ska bearbeta frisläppning till distributionslager separat för varje kund eller om det ska frisläppa alla försäljningsorder samtidigt. När detta alternativ anges som *Ja* samlar systemet in alla försäljningsorderrader för en vald kund, frisläpper dessa order till lagerstället och bearbetar sedan nästa kund. När detta alternativ är inställt på *Nej* kommer systemet att frisläppa alla tillgängliga försäljningsorderrader i en enda version till distributionslagret. Genom att aktivera detta alternativ förbättras prestanda och effektivitet i frisläppningen till lagerställebearbetningen. Du måste dock vara försiktig när du använder det här alternativet tillsammans med cykelmallar som är konfigurerade att bearbeta cykler vid frisläppning till lagerställe, detta eftersom denna kombination kan komma att generera många cykler för individuella kunder som alla genererar arbete för endast denna kund. Om du vill generera arbete som kombinerar försändelser för flera kunder, ska du antingen stänga av alternativet *Gruppera frisläppningar efter kund* eller konfigurera cykelmallarna så att dessa använder senareläggning av bearbetningen.
     - **Låst orderhantering** – Välj hur systemet ska hantera försäljningsorder som för tillfället är låsta på grund av att de redigeras av andra användare eller processer:
 
         - *Vänta tills order låses upp* – Systemet ska vänta tills order blir olåsta innan de frisläpps till lagerstället. I det här fallet kan frisläppningen till lagerstället ta längre tid.

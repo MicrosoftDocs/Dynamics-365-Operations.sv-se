@@ -2,23 +2,24 @@
 title: Implementeringsriktlinjer för integrationsprovet för skatteregistreringstjänsten för Tyskland (äldre)
 description: Det här ämnet ger riktlinjer för distribution av exemplet på räkenskapsintegration för Tyskland från Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK).
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 98641f9989322feb77ab683df66c2c1f9ad50a0d
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c578420783a8d19fe4a1522486e0b0146a390722
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077075"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388194"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-germany-legacy"></a>Implementeringsriktlinjer för integrationsprovet för skatteregistreringstjänsten för Tyskland (äldre)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Det här ämnet ger riktlinjer för distribution av exemplet på skatteregistreringstjänsten för Tyskland från Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) på en virtuell dator för utvecklare (VM) i Microsoft Dynamics Lifecycle Services (LCS). Mer information om exemplet på räkenskapsintegrering finns i [Exempel på skatteregistreringstjänsten för Tyskland](emea-deu-fi-sample.md). 
 
@@ -85,11 +86,15 @@ CRT tilläggskomponenter inkluderas i CRT-exemplen. För att slutföra följande
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsGermany" />
     ```
 
-### <a name="enable-hardware-station-extensions"></a>Aktivera tilläggen för Hardware Station
+### <a name="enable-fiscal-connector-extensions"></a>Aktivera tillägg för anslutningsprogram för skatt
+
+Du kan aktivera tillägg för anslutningsprogram för skatt i [maskinvarustationen](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) eller [kassaapparaten](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
+
+#### <a name="enable-hardware-station-extensions"></a>Aktivera tilläggen för Hardware Station
 
 Tilläggskomponenterna för Hardware Station ingår i Hardware Station exemplen. För att slutföra följande procedurer, öppna lösningen **HardwareStationSamples.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
-#### <a name="efrsample-component"></a>EFRSample-komponent
+##### <a name="efrsample-component"></a>EFRSample-komponent
 
 1. Leta upp projektet **HardwareStation.Extension.EFRSample** och skapa det.
 2. I mappen **Extension.EFRSample\\bin\\Debug** hitta följande sammansättningsfiler:
@@ -112,6 +117,30 @@ Tilläggskomponenterna för Hardware Station ingår i Hardware Station exemplen.
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample.dll" />
     ```
+
+#### <a name="enable-pos-extensions"></a>Aktivera kassatillägg
+
+Kassatilläggsexemplet finns i mappen **src\\FiscalIntegration\\PosFiscalConnectorSample** i databasen [Dynamics 365 Commerce-lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
+
+För att tillämpa exemplet för kassatillägg i äldre SDK, följ dessa steg.
+
+1. Kopiera mappen **Pos.Extension** till mappen **Tillägg** för kassa i äldre SDK (till exempel `C:\RetailSDK\src\POS\Extensions`).
+1. Byt namn på kopian av **Pos.Extension**-mappen **PosFiscalConnector**.
+1. Ta bort följande mappar och filer från mappen **PosFiscalConnector**:
+
+    - bin
+    - DataService
+    - devDependencies
+    - Bibliotek
+    - obj
+    - Contoso.PosFiscalConnectorSample.Pos.csproj
+    - RetailServerEdmxModel.g.xml
+    - tsconfig.json
+
+1. Öppna lösningen **CloudPos.sln** eller **ModernPos.sln**.
+1. I projektet **Pos.Extensions** inkluderar du mappen **PosFiscalConnector**.
+1. Öppna filen **extensions.json** och lägg till filnamnstillägget **PosFiscalConnector**.
+1. Skapa SDK.
 
 ### <a name="production-environment"></a>Produktionsmiljö
 
@@ -166,7 +195,7 @@ CRT-tillägget är **Runtime.Extensions.DocumentProvider.EFRSample**. Mer inform
 
 #### <a name="request-handler"></a>Begärandehanterare
 
-Det finns en begäranhanterare för dokumentleverantören **DocumentProviderEFRFiscalDEU**. Den här hanteraren används för att generera skattedokument för räkenskapsregistreringstjänst. Den ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på dokumentprovidern för koppling som anges i Commerce-administration.
+Det finns en begäranhanterare för dokumentprovidern **DocumentProviderEFRFiscalDEU**. Den här hanteraren används för att generera skattedokument för räkenskapsregistreringstjänst. Den ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på dokumentprovidern för koppling som anges i Commerce-administration.
 
 Kopplingen stöder följande begäranden:
 
@@ -210,3 +239,26 @@ Följande inställningar är tillagda:
 - **Slutpunktsadress** – URL:en för skatteregistreringstjänsten.
 - **Tidsgräns** – hur länge, i millisekunder (ms), som drivrutinen väntar på ett svar från räkenskapsregistreringstjänst.
 - **Visa meddelanden för skatteregistrering** – Om den här parametern är aktiverad visas meddelanden från skattetjänsten som användarmeddelanden i POS.
+
+### <a name="pos-fiscal-connector-extension-design"></a>Design för kassatillägg för skatteanslutningsprogram
+
+Syftet med kassatillägget för anslutningsprogram för skatt är att kommunicera med registreringstjänsten från kassan. Det använder HTTPS-protokollet för kommunikation.
+
+#### <a name="fiscal-connector-factory"></a>Anslutningsprogram för skatt
+
+Generatorn för anslutningsprogram för skatt mappar namne tpå anslutningsprogrammet till implementeringen av anslutningsprogrammet för skatt och finns i filen **Pos.Extension\\Anslutningsprogram\\FiscalConnectorFactory.ts**. Anslutningsprogrammets namn ska matcha namnet på anslutningsprogrammet för skatt som anges i Commerce-administration.
+
+#### <a name="efr-fiscal-connector"></a>Anslutningsprogram för EFR-skatt
+
+EFR-anslutningsprogrammet för skatt finns i filen **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts**. Detta implementerar **IFiscalConnector**-gränssnittet som stöder följande begäran:
+
+- **FiscalRegisterSubmitDocumentClientRequest** – Denna begäran skickar dokument till skatteregistreringstjänsten och returnerar ett svar från den.
+- **FiscalRegisterIsReadyClientRequest** – Denna begäran används för en hälsokontroll av skatteregistreringstjänsten.
+- **FiscalRegisterInitializeClientRequest** – Denna begäran används för att initialisera tjänsten för skatteregistrering.
+
+#### <a name="configuration"></a>Konfiguration
+
+Konfigurationsfilen finns i mappen **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** i databasen [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Syftet med filen är att aktivera inställningar för räkenskapskoppling som ska konfigureras från Commerce-administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration. Följande inställningar är tillagda:
+
+- **Slutpunktsadress** – URL:en för skatteregistreringstjänsten.
+- **Tidsgräns** – Den tid i millisekunder (ms) som anslutningsprogrammet väntar på ett svar från skatteregistreringstjänsten.

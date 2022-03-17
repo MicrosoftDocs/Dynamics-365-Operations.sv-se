@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc8e8ec224208990563e7c0f5d354bb13bb45fbcd35821e7f980b6cfb2c5a379
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a4768ee6ddbaba8ae5bab5e2f9f7df9239efeb90
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777274"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358299"
 ---
 # <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a>Mata in fakturadata i LR-systemet genom att använda fakturapool
 
@@ -31,7 +31,7 @@ I det här avsnittet beskrivs hur du använder fakturaregister för att skapa fa
 2. Skapa en inköpsorder genom att välja **Ny**.
 3. I fältet **Leverantörskonto** väljer du en levernatör i den nedrullningsbara listan. Välj till exempel leverantör **1001**.
 4. Välj **OK**.
-5. I fält **Artikelnummer** klicka på tjänstartikeln i den nedrullningsbara listan. Välj till exempel **S0001**. Nettobeloppet är 75.00.  Det är det belopp som ska förvänta vi på fakturan.  
+5. I fält **Artikelnummer** klicka på tjänstartikeln i den nedrullningsbara listan. Välj till exempel **S0001**. Nettobeloppet är 75,00.  Det är det belopp som ska förvänta vi på fakturan.  
 6. I åtgärdsfönstret, välj **Inköp**.
 7. Välj **Bekräfta**.
 
@@ -58,9 +58,9 @@ I det här avsnittet beskrivs hur du använder fakturaregister för att skapa fa
 6. Välj **Byt visning**.
 7. Välj **Rutnätsvy**.
 8. Vald **bokföring**
-9. Stäng formuläret.
+9. Stäng sidan.
 10. I navigeringsfönstret, gå till **Moduler > Leverantörsreskontra > Leverantörer > Leverantörer**.
-11. Välj leverantören på inköpsordern. Välj till exempel leverantör **1001**.
+11. Välj providern på inköpsordern. Välj till exempel leverantör **1001**.
 12. Klicka på **Leverantör** i åtgärdsfönstret.
 13. Markera **transaktioner**
 14. Välj den faktura som du själv har skapat. Ankomstregistreringaccrualen återfördes och bokförts i lämplig utgiftskonto.  

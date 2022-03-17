@@ -2,23 +2,24 @@
 title: Implementeringsriktlinjer för integrationsexempel för kvittoskrivare för Italien (äldre)
 description: Det här ämnet ger riktlinjer för distribution av integrationsexempel för kvittoskrivare för Italien från Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK).
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 93aca34239affb41998f4309d7c03f29f7b5f003
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c820c320410c43cafaae43c59cad04efdee24ab2
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076922"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388454"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>Implementeringsriktlinjer för integrationsexempel för kvittoskrivare för Italien (äldre)
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 Det här ämnet ger riktlinjer för distribution av integrationsexempel för kvittoskrivare för Italien från Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) på en virtuell dator för utvecklare i Microsoft Dynamics Lifecycle Services (LCS). Mer information om exemplet på räkenskapsintegrering finns i [Exempel på integrering av kvittoskrivare för Italien](emea-ita-fpi-sample.md). 
 
@@ -89,13 +90,13 @@ För att skapa distribuerbara paket som innehåller Commerce-komponenter och fö
 1. Slutför stegen som beskrivs i avsnittet [utvecklingsmiljö](#development-environment) i det här avsnittet.
 2. Gör följande ändringar i paketkonfigurationsfilerna under mappen **RetailSdk\\Assets**:
 
-    - I konfigurationsfilerna **commerceruntime.ext.config** och **CommerceRuntime.MPOSOffline.Ext.config** lägger du till följande rader i avsnittet **komposition**.
+    1. I konfigurationsfilerna **commerceruntime.ext.config** och **CommerceRuntime.MPOSOffline.Ext.config** lägger du till följande rader i avsnittet **komposition**.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" />
         ```
 
-    - I konfigurationsfilen **HardwareStation.Extension.config** lägg till följande rad i avsnittet **komposition**.
+    1. I konfigurationsfilen **HardwareStation.Extension.config** lägg till följande rad i avsnittet **komposition**.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample" />
@@ -103,20 +104,56 @@ För att skapa distribuerbara paket som innehåller Commerce-komponenter och fö
 
 3. Gör följande ändringar i konfigurationsfilerna för paketanpassning **Customization.settings** under **BuildTools**:
 
-    - Lägg till följande rad om du vill inkludera CRT-tilläggen i de distribuerbara paketen.
+    1. Lägg till följande rad om du vill inkludera CRT-tilläggen i de distribuerbara paketen.
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll"/>
         ```
 
-    - Lägg till följande rad om du vill inkludera Hardware Station-tillägget i de distribuerbara paketen.
+    1. Lägg till följande rad om du vill inkludera Hardware Station-tillägget i de distribuerbara paketen.
 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
         ```
 
-4. Starta MSBuild-Kommandotolken för Visual Studio-verktyget och kör **msbuild** under mappen Retail SDK för att skapa distribuerbara paket.
-5. Tillämpa paketen via LCS eller manuellt. Mer information finns i [skapa distribuerbara paket](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+4. Gör följande ändringar i filen **Sdk.ModernPos.Shared.csproj** under mappen **Packages\_SharedPackagingProjectComponents** för att inkludera resursfilerna för Italien i distributionsbara paket:
+
+    1. Lägg till **ItemGroup**-avsnitt som innehåller noder som pekar på resursfilerna för de önskade översättningarna. Se till att du anger korrekta namnutrymder och exempelnamn. I följande exempel läggs resursnoder till för språken **it** och **it-CH**.
+
+        ```xml
+        <ItemGroup>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        </ItemGroup>
+        ```
+
+    1. I avsnittet **Target Name="CopyPackageFiles"** lägger du till en rad för respektive språk enligt följande exempel.
+
+        ```xml
+        <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it-CH" SkipUnchangedFiles="true" />
+        ```
+
+5. Gör följande ändringar i filen **Sdk.RetailServerSetup.proj** under mappen **Packages\_SharedPackagingProjectComponents** för att inkludera resursfilerna för Italien i distributionsbara paket:
+
+    1. Lägg till **ItemGroup**-avsnitt som innehåller noder som pekar på resursfilerna för de önskade översättningarna. Se till att du anger korrekta namnutrymder och exempelnamn. I följande exempel läggs resursnoder till för språken **it** och **it-CH**.
+
+        ```xml
+        <ItemGroup>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        </ItemGroup>
+        ```
+
+    1. I avsnittet **Target Name="CopyPackageFiles"** lägger du till en rad för respektive språk enligt följande exempel.
+
+        ``` xml
+        <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it-CH" SkipUnchangedFiles="true" />
+        ```
+
+6. Starta MSBuild-Kommandotolken för Visual Studio-verktyget och kör **msbuild** under mappen Retail SDK för att skapa distribuerbara paket.
+7. Tillämpa paketen via LCS eller manuellt. Mer information finns i [skapa distribuerbara paket](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ## <a name="design-of-extensions"></a>Design av tilläggen
 

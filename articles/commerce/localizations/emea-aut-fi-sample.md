@@ -2,27 +2,28 @@
 title: Exempel på skatteregistreringstjänst för Österrike
 description: I det här avsnittet finns en översikt över exemplet på räkenskapsintegration för Österrike i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: d720bffb98965bdc0276660d2a2e50d2bf155e74
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: b41ff8a112f801cd9bf5ebad3aed588ccb40e1f8
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077175"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388373"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Exempel på skatteregistreringstjänst för Österrike
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 I det här avsnittet finns en översikt över exemplet på räkenskapsintegration för Österrike i Microsoft Dynamics 365 Commerce.
 
-För att uppfylla lokala räkenskapskrav för kassaregister i Österrike Dynamics 365 Retail funktionaliteten för Österrike inkluderar ett exempel på integration av kassan (POS) med en extern skatteregistreringstjänst. Det här exemplet utökar [funktionen räkenskapsintegrering](fiscal-integration-for-retail-channel.md). Den är baserad på [EFR (elektroniskt skatteregister)](https://www.efsta.eu/at/fiskalloesungen/oesterreich) lösningar från [EFSTA](https://www.efsta.eu/at/) och möjliggör kommunikation med EFR-tjänsten via HTTPS-protokollet. EFR-tjänsten bör ha en värd för antingen Retail Hardware eller en separat maskin som kan kopplas till från maskinvarutjänsten. Exemplet tillhandahålls i form av källkod och är en del av Retail Software Development Kit (SDK).
+För att uppfylla lokala räkenskapskrav för kassaapparater i Österrike Dynamics 365 Retail funktionaliteten för Österrike inkluderar ett exempel på integration av kassan (POS) med en extern skatteregistreringstjänst. Det här exemplet utökar [funktionen räkenskapsintegrering](fiscal-integration-for-retail-channel.md). Den är baserad på [EFR (elektroniskt skatteregister)](https://www.efsta.eu/at/fiskalloesungen/oesterreich) lösningar från [EFSTA](https://www.efsta.eu/at/) och möjliggör kommunikation med EFR-tjänsten via HTTPS-protokollet. EFR-tjänsten bör ha en värd för antingen Retail Hardware eller en separat maskin som kan kopplas till från maskinvarutjänsten. Exemplet tillhandahålls i form av källkod och är en del av Retail Software Development Kit (SDK).
 
 Microsoft släpper inte någon maskinvara, programvara eller dokumentation från EFSTA. För information om hur du får EFR-lösning och använder den, kontakta [EFSTA](https://www.efsta.eu/at/kontakt).
 
@@ -204,7 +205,7 @@ Mer information om hur du arbetar med kvittoformat finns i [Ställ in och design
 
 ## <a name="set-up-fiscal-integration-for-austria"></a>Ställ in räkenskapsintegration för Österrike
 
-Exemplet på integrering av räkenskapsregistreringstjänsten för Österrike baseras på [räkenskapsintegrationsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Efr** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (till exempel [i version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett filnamnstillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [ställa in ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md). 
+Exemplet på integrering av räkenskapsregistreringstjänsten för Österrike baseras på [räkenskapsintegrationsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Efr** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (till exempel [i version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett tillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [ställa in ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md). 
 
 > [!WARNING]
 > På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare (VM) i Microsoft Dynamics Lifecycle Services (LCS). Mer information finns i [Implementeringsriktlinjer för det skattemässiga integreringsexemplet för Österrike (äldre)](emea-aut-fi-sample-sdk.md). Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
@@ -220,7 +221,7 @@ Slutför konfigurationsstegen för räkenskapsintegration som beskrivs i [ställ
 
 Om du vill aktivera registreringsprocessen, följ dessa steg för att ställa in Commerce-administration. Mer information om [Ställ in räkenskapsintegrering för handelskanaler](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-1. Ladda ner konfigurationsfiler för leverantören av skattedokument och skatteanslutningen:
+1. Ladda ner konfigurationsfiler för providern av skattedokument och skatteanslutningen:
 
     1. Öppna [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) databasen.
     1. Välj en korrekt version av frisläppningen enligt din SDK/programversion (till exempel **[frisläppning/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
@@ -237,8 +238,8 @@ Om du vill aktivera registreringsprocessen, följ dessa steg för att ställa in
     > Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
 
 1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> delade Commerce-parametrar**. På fliken **allmänt** anger du alternativet **Aktivera räkenskapsintegration** till **Ja**.
-1. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Leverantörer av skattedokument** och läs in konfigurationsfiler för skattedokumentleverantören som du laddade ner tidigare.
-1. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Räkenskapskopplingar** och läs in konfigurationsfilen för räkenskapskoppling för skattedokumentleverantören som du laddade ner tidigare.
+1. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Leverantörer av skattedokument** och läs in konfigurationsfiler för skattedokumentprovidern som du laddade ner tidigare.
+1. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Räkenskapskopplingar** och läs in konfigurationsfilen för räkenskapskoppling för skattedokumentprovidern som du laddade ner tidigare.
 1. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegration \> Funktionsprofiler för koppling**. Skapa två nya funktionsprofiler en för varje finansiell dokumentleverantör som du laddade tidigare, och välj den skatteanslutna anslutningen som du laddade tidigare. Uppdatera [datamappningsinställningarna](#default-data-mapping) efter behov.
 1. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegration \> Tekniska profiler för koppling**. Skapa en ny teknisk profil för koppling och välj räkenskapskoppling som du laddade tidigare. Uppdatera [kopplingsinställningarna](#fiscal-connector-settings) efter behov.
 1. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegration \> Grupper för skattekoppling**. Skapa två nya skatteanslutningsgrupper, en för varje funktionsprofil för anslutningsprogram som du skapade tidigare.
@@ -249,7 +250,7 @@ Om du vill aktivera registreringsprocessen, följ dessa steg för att ställa in
 
 #### <a name="default-data-mapping"></a>Standarddatamappning
 
-Följande standarddatamappning ingår i konfigurationen av leverantören av skattedokument som tillhandahålls som en del av exemplet på räkenskapsintegration.
+Följande standarddatamappning ingår i konfigurationen av providern av skattedokument som tillhandahålls som en del av exemplet på räkenskapsintegration.
 
 - **Mappning av momssats** – Mappning av procentvärden för moms som har ställts in för momskoderna till värden i attributet **TaxG** (momsgrupp) i förfrågningar som skickas till skattetjänsten. Här är standardmappningen:
 
@@ -287,7 +288,7 @@ Följ dessa steg för att ställa in en utvecklingsmiljö för att testa och ut�
         - **Commerce Scale Unit:** I mappen **Efr\\ScaleUnit\\ScaleUnit.EFR.Installer\\bin\\Debug\\net461** hitta installationsprogrammet **ScaleUnit.EFR.Installer**.
         - **Lokal CRT i Modern POS:** I mappen **Efr\\ModernPOS\\ModernPOS.EFR.Installer\\bin\\Debug\\net461** hitta installationsprogrammet **ModernPOS.EFR.Installer**.
 
-    1. Starta CRT installationsprogrammet för filnamnstillägget från kommandorad:
+    1. Starta CRT installationsprogrammet för tillägget från kommandorad:
 
         - **Commerce Scale Unit.**
 
@@ -301,14 +302,28 @@ Följ dessa steg för att ställa in en utvecklingsmiljö för att testa och ut�
             ModernPOS.EFR.Installer.exe install --verbosity 0
             ```
 
-1. Install tilläggen för Hardware Station:
+1. Installera tillägg för anslutningsprogram för skatt:
 
-    1. Lokal i mappen **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461**, hitta installationsprogrammet **HardwareStation.EFR.Installer**.
-    1. Starta installationsprogrammet för filnamnstillägget från kommandorad.
+    Du kan installera tillägg för anslutningsprogram för skatt i [maskinvarustationen](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) eller [kassaapparaten](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
-        ```Console
-        HardwareStation.EFR.Installer.exe install --verbosity 0
-        ```
+    1. Install tilläggen för Hardware Station:
+
+        1. Lokal i mappen **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461**, hitta installationsprogrammet **HardwareStation.EFR.Installer**.
+        1. Starta installationsprogrammet för tillägget från kommandoraden genom att köra följande kommando.
+
+            ```Console
+            HardwareStation.EFR.Installer.exe install --verbosity 0
+            ```
+
+    1. Installera kassatillägg:
+
+        1. Öppna exempellösningen för kassaanslutningsprogram för skatt på **Dynamics365Commerce.Solutions\\FiscalIntegration\\PosFiscalConnectorSample\\Contoso.PosFiscalConnectorSample.sln** och bygg den.
+        1. I mappen **PosFiscalConnectorSample\\StoreCommerce.Installer\\bin\\Debug\\net461** letar du upp installationsprogrammet **Contoso.PosFiscalConnectorSample.StoreCommerce.Installer**.
+        1. Starta installationsprogrammet för tillägget från kommandoraden genom att köra följande kommando.
+
+            ```Console
+            Contoso.PosFiscalConnectorSample.StoreCommerce.Installer.exe install --verbosity 0
+            ```
 
 #### <a name="production-environment"></a>Produktionsmiljö
 
@@ -316,12 +331,12 @@ Följ stegen i [Konfigurera en byggpipeline för ett skatteintegrationsprov](fis
 
 ## <a name="design-of-extensions"></a>Design av tilläggen
 
-Exemplet på integrering av räkenskapsregistreringstjänsten för Österrike baseras på [räkenskapsintegrationsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Efr** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (till exempel [i version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett filnamnstillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [ställa in ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md). 
+Exemplet på integrering av räkenskapsregistreringstjänsten för Österrike baseras på [räkenskapsintegrationsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Efr** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (till exempel [i version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett tillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [ställa in ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md). 
 
 > [!WARNING]
 > På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare i LCS. Mer information finns i [Implementeringsriktlinjer för det skattemässiga integreringsexemplet för Österrike (äldre)](emea-aut-fi-sample-sdk.md). Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
 
-### <a name="commerce-runtime-extension-design"></a>Utbyggbarhetdesign för Commerce Runtime
+### <a name="commerce-runtime-extension-design"></a>Utbyggbarhetdesign för Commerce Runtime 
 
 Syftet med tillägget som är en skattedokument leverantör är att generera tjänstspecifika dokument och hantera svar från räkenskapsregistreringstjänsten.
 
@@ -343,16 +358,16 @@ Kopplingen stöder följande begäranden:
 
 #### <a name="configuration"></a>Konfiguration
 
-Konfigurationsfilerna för leverantören av skattedokument finns i mappen **src\\FiscalIntegration\\Efr\\Configurations\\DocumentProviders** mappen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) databasen:
+Konfigurationsfilerna för providern av skattedokument finns i mappen **src\\FiscalIntegration\\Efr\\Configurations\\DocumentProviders** mappen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) databasen:
 
-- **DocumentProviderFiscalEFRSampleAustria** – Konfigurationsfilen för skattedokumentleverantören för skattedokument.
-- **DocumentProviderNonFiscalEFRSampleAustria** – Konfigurationsfilen för skattedokumentleverantören för icke skattedokument.
+- **DocumentProviderFiscalEFRSampleAustria** – Konfigurationsfilen för skattedokumentprovidern för skattedokument.
+- **DocumentProviderNonFiscalEFRSampleAustria** – Konfigurationsfilen för skattedokumentprovidern för icke skattedokument.
 
 Syftet med den här filen är att aktivera inställningar för skattedokumentprovidern som ska konfigureras från Commerce-administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration.
 
 ### <a name="hardware-station-extension-design"></a>Tilläggsdesign för Hardware Station
 
-Syftet med tillägget som är en räkenskapskoppling är att kommunicera med räkenskapsregistreringstjänsten. Hardware Station tillägg använder HTTP-protokollet för att skicka dokument som CRT-tillägget genererar till räkenskapsregistreringstjänsten. Den hanterar också svar som tas emot från räkenskapsregistreringstjänsten.
+Syftet med tillägget för anslutningsprogram för skatt är att kommunicera med registreringstjänsten för skatt. Tillägget för maskinvarustation använder HTTP- och HTTPS-protokollen för att skicka dokument som CRT-tillägget genererar till skatteregistreringstjänsten. Den hanterar också svar som tas emot från räkenskapsregistreringstjänsten.
 
 #### <a name="request-handler"></a>Begärandehanterare
 
@@ -369,5 +384,28 @@ Räkenskapskopplingen stöder följande begäranden:
 #### <a name="configuration"></a>Konfiguration
 
 Konfigurationsfilen för leverantör av anslutningsprogram på **src\\FiscalIntegration\\Efr\\konfigurationer\\anslutningsprogram\\ConnectorEFRSample.xml** i [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) databasen. Syftet med filen är att aktivera inställningar för räkenskapskoppling som ska konfigureras från Commerce-administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration.
+
+### <a name="pos-fiscal-connector-extension-design"></a>Design för kassatillägg för skatteanslutningsprogram
+
+Syftet med kassatillägget för anslutningsprogram för skatt är att kommunicera med registreringstjänsten från kassan. Det använder HTTPS-protokollet för kommunikation.
+
+#### <a name="fiscal-connector-factory"></a>Anslutningsprogram för skatt
+
+Generatorn för anslutningsprogram för skatt mappar namne tpå anslutningsprogrammet till implementeringen av anslutningsprogrammet för skatt och finns i filen **Pos.Extension\\Anslutningsprogram\\FiscalConnectorFactory.ts**. Anslutningsprogrammets namn ska matcha namnet på anslutningsprogrammet för skatt som anges i Commerce-administration.
+
+#### <a name="efr-fiscal-connector"></a>Anslutningsprogram för EFR-skatt
+
+EFR-anslutningsprogrammet för skatt finns i filen **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts**. Detta implementerar **IFiscalConnector**-gränssnittet som stöder följande begäran:
+
+- **FiscalRegisterSubmitDocumentClientRequest** – Denna begäran skickar dokument till skatteregistreringstjänsten och returnerar ett svar från den.
+- **FiscalRegisterIsReadyClientRequest** – Denna begäran används för en hälsokontroll av skatteregistreringstjänsten.
+- **FiscalRegisterInitializeClientRequest** – Denna begäran används för att initialisera tjänsten för skatteregistrering.
+
+#### <a name="configuration"></a>Konfiguration
+
+Konfigurationsfilen finns i mappen **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** i databasen [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Syftet med filen är att aktivera inställningar för räkenskapskoppling som ska konfigureras från Commerce-administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration. Följande inställningar är tillagda:
+
+- **Slutpunktsadress** – URL:en för skatteregistreringstjänsten.
+- **Tidsgräns** – Den tid i millisekunder (ms) som anslutningsprogrammet väntar på ett svar från skatteregistreringstjänsten.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

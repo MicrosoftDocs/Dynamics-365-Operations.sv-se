@@ -1,6 +1,6 @@
 ---
-title: Använd den elektroniska faktureringstjänsten för att importera leverantörsfakturor
-description: I det här avsnittet finns information om hur du importerar leverantörsfakturor med hjälp av den elektroniska faktureringstjänsten.
+title: Använd e-faktureringstjänsten för att importera leverantörsfakturor
+description: I det här avsnittet finns information om hur du importerar leverantörsfakturor med hjälp av e-faktureringstjänsten.
 author: gionoder
 ms.date: 09/03/2021
 ms.topic: article
@@ -18,32 +18,32 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: c28adbfe532e77a52cab7625b9539d1e8e528bea
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
+ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473386"
+ms.lasthandoff: 02/22/2022
+ms.locfileid: "7983833"
 ---
-# <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Använd den elektroniska faktureringstjänsten för att importera leverantörsfakturor
+# <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Använd e-faktureringstjänsten för att importera leverantörsfakturor
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-Det här ämnet innehåller information som hjälper dig att komma igång med att importera leverantörsfakturor med tjänsten Elektronisk fakturering. Här får du hjälp med konfigurationsstegen i Regulatory Configuration Services (RCS), Dynamics 365 Finance och Dynamics 365 Supply Chain Management som du måste följa för att ta emot elektroniska leverantörsfakturor från leverantörerna.
+Det här ämnet innehåller information som hjälper dig att komma igång med att importera leverantörsfakturor med tjänsten e-fakturering. Här får du hjälp med konfigurationsstegen i Regulatory Configuration Services (RCS), Dynamics 365 Finance och Dynamics 365 Supply Chain Management som du måste följa för att ta emot elektroniska leverantörsfakturor från leverantörerna.
 
 ## <a name="set-up-vendor-invoice-import-in-rcs"></a>Konfigurera leverantörsfakturaimport i RCS
 Så här ställer du in import av leverantörsfakturor i RCS:
 
-1. Läs i listan över [allmänt tillgängliga funktioner för elektronisk fakturering](e-invoicing-configuration-rcs.md#generally-available-features).
-2. Välj och importera funktion för elektronisk fakturering. För mer information, se [Importera en elektronisk faktureringsfunktion från Microsofts konfigurationsleverantör](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider).
-3. Skapa en funktion för elektronisk fakturering för organisation. För mer information, se [Skapa en elektronisk faktureringsfunktion under organisationsleverantör](e-invoicing-get-started.md#create-an-electronic-invoicing-feature-under-your-organization-provider).
+1. Läs i listan över [allmänt tillgängliga funktioner för e-fakturering](e-invoicing-configuration-rcs.md#generally-available-features).
+2. Välj och importera funktion för e-fakturering. För mer information, se [Importera en e-faktureringsfunktion från Microsofts konfigurationsleverantör](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider).
+3. Skapa en funktion för e-fakturering för organisation. För mer information, se [Skapa en e-faktureringsfunktion under organisationsleverantör](e-invoicing-get-started.md#create-an-electronic-invoicing-feature-under-your-organization-provider).
 
 ## <a name="configure-an-email-account-channel"></a>Konfigurera en e-postkontokanal
 
-Konfigurera en e-postkontokanal om du med hjälp av den elektroniska faktureringsfunktionen importerar elektroniska leverantörsfakturor från bifogade filer som tas emot via e-post.
+Konfigurera en e-postkontokanal om du med hjälp av e-faktureringsfunktionen importerar elektroniska leverantörsfakturor från bifogade filer som tas emot via e-post.
 
-1. I RCS, välj den funktion för elektronisk fakturering som du har skapat. Se till att du väljer den version som har status **utkast**.
+1. I RCS, välj den funktion för e-fakturering som du har skapat. Se till att du väljer den version som har status **utkast**.
 2. På fliken **Inställningar** i rutnätet, välj en funktionsinställning och välj sedan **Redigera**.
 3. Ange kanalens namn på fliken **Datakanal** i fältgruppen **Parametrar**, i fältet **Datakanal**. Kanalnamnet får inte vara längre än tio tecken.
 4. I fältet **Serveradress** anger du avsändarens e-postleverantör. Serveradressen för **https://outlook.live.com/** är till exempel **imap-mail.outlook.com**.
@@ -63,9 +63,9 @@ Konfigurera en e-postkontokanal om du med hjälp av den elektroniska fakturering
 
 ### <a name="configure-a-microsoft-sharepoint-channel"></a>Konfigurera Microsoft SharePoint-kanal
 
-Konfigurera en Microsoft SharePoint-kanal om funktionen Elektronisk fakturering importerar elektroniska leverantörsfakturor från filer i SharePoint-mappar.
+Konfigurera en Microsoft SharePoint-kanal om funktionen e-fakturering importerar elektroniska leverantörsfakturor från filer i SharePoint-mappar.
 
-1. I RCS, välj den funktion för elektronisk fakturering som du har skapat. Se till att du väljer den **version** som har status **utkast**.
+1. I RCS, välj den funktion för e-fakturering som du har skapat. Se till att du väljer den **version** som har status **utkast**.
 2. På fliken **Inställningar** i rutnätet, välj en funktionsinställning och välj sedan **Redigera**.
 3. På fliken **Datakanal** i fältgruppen **Parametrar** väljer du **SharePoint adress** och anger SharePoint URL.
 4. Välj **serverport** och ange den port som används av e-postkontoprovidern.
@@ -75,9 +75,9 @@ Konfigurera en Microsoft SharePoint-kanal om funktionen Elektronisk fakturering 
 8. På fliken **Tillämplighetsregler** kan du granska och uppdatera kriterierna om det behövs. Mer information finns i [Tillämplighetsregler](e-invoicing-configuration-rcs.md#applicability-rules).
 9. Markera **Spara** och stäng sedan sidan
 
-### <a name="deploy-an-electronic-invoicing-feature"></a>Distribuera den elektroniska faktureringsfunktionen
+### <a name="deploy-an-electronic-invoicing-feature"></a>Distribuera e-faktureringsfunktionen
 
-Om du vill distribuera funktionen Elektronisk fakturering, se [Distribuera funktionen Elektronisk fakturering till servicemiljön](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment).
+Om du vill distribuera funktionen e-fakturering, se [Distribuera funktionen e-fakturering till tjänstemiljön](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment).
 
 ## <a name="set-up-vendor-invoice-import-in-finance-or-supply-chain-management"></a>Konfigurera leverantörsfakturaimport i Finance eller Supply Chain Management
 Gör stegen i följande två avsnitt om du vill ställa in olika typer av import av leverantörsfaktura.
@@ -86,13 +86,13 @@ Gör stegen i följande två avsnitt om du vill ställa in olika typer av import
 
 1. Logga in i Finance eller Supply Chain Management-miljö och kontrollera att du befinner dig i rätt juridisk person.
 2. Gå till **Organisationsadministration** > **Inställningar** > **Parametrar för elektroniskt dokument**.
-3. På flik **Funktioner**, se till att **NF-e Federal - Brasiliansk elektronisk faktura** är vald.
+3. På flik **Funktioner**, se till att **NF-e Federal - Brasiliansk e-faktura** är vald.
 4. På fliken **Externa kanaler**, i fältgruppen **Kanaler**, välj **Lägg till**.
-5. I fältet **Kanalen**, ange **NFe** (namnet på kanalen som anges i konfigurationen av datakanalen för funktionen Elektronisk fakturering i RCS).
+5. I fältet **Kanalen**, ange **NFe** (namnet på kanalen som anges i konfigurationen av datakanalen för funktionen e-fakturering i RCS).
 6. Ange en beskrivning i fältet **beskrivning**. Välj den juridiska personen i fältet **Företag**.
 7. I fältet **Dokumentkontext** väljer du **Skattedokument kontext – Kundfaktura kontextmodell**.
 8. I fältgruppen **Importera källor**, välj **Lägg till**.
-9. I fältet **Namn**, ange **XmlFile** (namnet för **Bilagefilter** anges i datakanalens konfiguration för funktionen Elektronisk fakturering i RCS).
+9. I fältet **Namn**, ange **XmlFile** (namnet för **Bilagefilter** anges i datakanalens konfiguration för funktionen e-fakturering i RCS).
 10. I fältet **Beskrivning** ange en beskrivning och i **Dataenhetens namn**, välj **Mottagna NF-e XML-dokument**.
 11. I fältet **Modellmappning**, välj **NF-e-postimport-NF-e-postimport (BR)** och välj **Spara**.
 12. På fliken **Elektroniskt dokument**, fältet **Elektroniskt dokument**, välj **Lägg till** och fältet **Tabellnamn**, välj **Mottaget NF-e XML-dokument**.
@@ -109,11 +109,11 @@ Gör stegen i följande två avsnitt om du vill ställa in olika typer av import
 2. Välj **Kontextmodell för kundfaktura** och välj **Skapa konfiguration** > **Härled från namn: kontextmodell för kundfaktura, Microsoft** för att skapa en härledd konfiguration.
 3. I versionen **Utkast** väljer du **Designer** och i trädet **Datamodell** välj **Mappa modell till datakälla**.
 4. I trädet **Definitioner**, välj **DataChannel** och välj **Designer**.
-5. I trädet **Datakällor**, visa containern **$Context\_kanal**. I fältet **Värde**, välj **Redigera** och ange namnet på datakanalen. Detta är namnet kanalen, ange namnet på kanalen som anges i konfigurationen av datakanalen för funktionen Elektronisk fakturering i RCS. 
+5. I trädet **Datakällor**, visa containern **$Context\_kanal**. I fältet **Värde**, välj **Redigera** och ange namnet på datakanalen. Detta är namnet kanalen, ange namnet på kanalen som anges i konfigurationen av datakanalen för funktionen e-fakturering i RCS. 
 7. Markera **Spara** och stäng sedan sidan.
 8. Stäng sidan.
 9. Välj den härledda konfigurationen som du just skapat från **kontextmodellen för kundfaktura**, och på snabbfliken **Versioner**, välj **Ändra status** > **Slutförd**.
-10. Gå till **Organisationsadministration** > **Inställningar** > **Parametrar för elektroniska dokument** och **Funktioner**, se till att **PEPPOL Globala elektroniska fakturor** är markerad. 
+10. Gå till **Organisationsadministration** > **Inställningar** > **Parametrar för elektroniska dokument** och **Funktioner**, se till att **PEPPOL Globala e-fakturor** är markerad. 
 11. På fliken **Externa kanaler**, i fältgruppen **Kanaler**, välj **Lägg till**.
 12. I fältet **Kanal**, ange namnet på datakanalen och ange en beskrivning i fältet **Beskrivning**.
 13. Välj den juridiska personen i fältet **Företag**. 
@@ -124,24 +124,24 @@ Gör stegen i följande två avsnitt om du vill ställa in olika typer av import
 18. Klicka på **Spara** och stäng sedan sidan.
 
 
-## <a name="receive-electronic-invoices"></a>Ta emot Elektroniska fakturor
+## <a name="receive-electronic-invoices"></a>Ta emot e-fakturor
 
-Den elektroniska faktureringstjänsten utför två steg under fakturaimporten från datakanalerna:
+Den e-faktureringstjänsten utför två steg under fakturaimporten från datakanalerna:
 
 1. Får åtkomst till postlådan och läser e-post.
 2. Bearbetar e-post. 
     
 Om du vill utföra dessa två steg ska klienten anropa tjänsten manuellt för varje steg. Vi rekommenderar dock att du ställer in batchjobb för mottagning av elektroniska dokument.
 
-Så här tar du emot elektroniska fakturor:
+Så här tar du emot e-fakturor:
 
 1. Gå till **Organisationsadministration** > **Periodisk** > **Elektroniska dokument** > **Ta emot elektroniska dokument**.
 2. Markera **OK** och stäng sedan sidan.
 
 
-## <a name="view-receive-logs-for-electronic-invoices"></a>Visa ta emot loggar för elektroniska fakturor
+## <a name="view-receive-logs-for-electronic-invoices"></a>Visa ta emot loggar för e-fakturor
 
-Om du vill visa loggfilerna för elektroniska fakturor går du till **Organisationadministration** > **Periodisk** > **Elektroniska dokument** > **Elektronisk dokumentkvittologg**.
+Om du vill visa loggfilerna för e-fakturor går du till **Organisationadministration** > **Periodisk** > **Elektroniska dokument** > **Elektronisk dokumentkvittologg**.
 Om du inte ser fakturor som har bearbetats slutfört tar du bort tabellfiltret.
 
 

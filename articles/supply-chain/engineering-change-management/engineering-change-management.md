@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 93f5c3e4951784a6c4925b8f9026816bfaf551ee
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9af5184da4f9507e3c06464a223f0debaea4430e
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102923"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384678"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Hantera ändringar av konstruktionsprodukter
 
@@ -217,5 +217,15 @@ De flesta fält på konstruktionsändringsorder är samma fält för frisläppta
 
 Använd knappen **Bibehåll/kopiera ändringsinformation** för att kopiera ändringsinformation mellan berörda produkter.
 
+## <a name="use-electronic-signatures-to-approve-and-active-boms-and-routes"></a>Använd elektroniska signaturer för att godkänna
+
+Om du vill använda elektroniska signaturer för att godkänna och/eller aktivera strukturlistor och/eller flödesändringar ska du gå till **Organisationsadministration \> Inställningar \> Elektronisk signatur \> Krav för elektroniska signaturer**. Se sedan till att samtliga av följande artiklar har **Signatur krävs** inställt på *Ja*:
+
+- Aktivera produktstrukturlista för konstruktionsändringsorder
+- Aktivera produktflöde för konstruktionsändringsorder
+- Godkänn produktstrukturlista för konstruktionsändringsorder
+- Godkänn produktflöde för konstruktionsändringsorder
+- Godkänn strukturlista och strukturlisteversioner för konstruktion
+- Godkänn konstruktionsversion och flödesversion
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

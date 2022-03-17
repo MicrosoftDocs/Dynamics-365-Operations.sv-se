@@ -2,7 +2,7 @@
 title: Modul för sidfot
 description: Det här avsnittet innehåller moduler för sidfot och hur du redigerar dem i Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 03/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fdf183afe0df71e43a05b65fba06126f75f85b981b78afc4a543fb9310c6906
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 81db5cf32f23b7ee1ca8325eeec2e6ceafda55e0
+ms.sourcegitcommit: 90a553e271e7cd471fed2e4f006d753fdb67b47d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719996"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8374841"
 ---
 # <a name="footer-module"></a>Modul för sidfot  
 
@@ -39,9 +39,9 @@ Precis som i de flesta behållare har en modul för sidfot stöd för egenskaper
 
 ## <a name="modules-available-in-a-footer-module"></a>Moduler tillgängliga i en modul för sidfot
 
-**Sidfotsobjekt** – en modul för sidfotsobjekt kan innehålla en rubrik, en bild och en länk. Rubriken kan antingen användas separat eller tillsammans med en bild och en länk. Varje länk i sidfoten kan konfigureras så att den bara har text (t.ex. "kontakta oss" och "sekretess") eller så att den har både text och bild (t.ex. sociala medielänkar).
+**Sidfotsobjekt** – En modul för sidfotsobjekt kan innehålla antingen en rubrik eller en länk. Rubriken används vanligtvis som sidfotsavsnittsrubrik.  Varje länk i sidfoten kan konfigureras så att den bara har text (t.ex. "kontakta oss" och "sekretess") eller så att den har både text och bild (t.ex. sociala medielänkar). Om både rubrik och länk visas kommer rubrikegenskapen att ha företräde före länken. 
 
-**Tillbaka till början** – modulen Tillbaka till början innehåller en länk för snabb navigering till sidans övre del. En destination måste anges. Standarddestinationen är \# vilket innebär att användaren kommer högst upp på sidan.
+**Tillbaka till början** – modulen Tillbaka till början innehåller en länk för snabb navigering till sidans övre del. En destination måste anges. Standardmålet är \# vilket innebär att användaren kommer högst upp på sidan.
 
 ## <a name="create-a-footer-module"></a>Skapa en sidfotsmodul
 

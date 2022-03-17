@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6207627c1e901ce969e39d960adb5ab50f13e17d
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: ee206ced76dbdd356c77d34a4b8f197879e9a3f0
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790876"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384782"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Designa körningsgränssnittet för produktionsgolvet
 
@@ -54,7 +54,7 @@ Följ stegen nedan om du vill skapa och konfigurera en ny flik:
 1. Gör följande inställningar i sidans rubrik:
 
     - **Fliknamn** – Ange ett namn på fliken.
-    - **Huvudvy** – Välj mellan de fördefinierade jobblistorna (*Aktiva jobb*, *Alla jobb* och *Min maskin*).
+    - **Huvudvy** – Välj mellan fördefinierade jobblistor (*Aktiva jobb*, *Alla jobb*, *Mina jobb* och *Min maskin*).
     - **Detaljvy** – Välj mellan ett tomt värde eller **Jobbinformation**. Om du väljer det tomma värdet visas ingen detaljerad vy på fliken. Om du väljer **jobbdetaljer** kommer den detaljerade vyn att innehålla en detaljerad beskrivning av det jobb som valts i jobblistan i huvudvyn.
 
 1. I avsnittet för det **primära verktygsfältet** väljer du vilka knappar som ska vara tillgängliga i det primära verktygsfältet. I kolumnen **tillgängliga åtgärder** visas en lista över alla knappar som kan läggas till. I kolumnerna **Valda åtgärderna** visas en lista över alla knappar som ingår i den aktuella konfigurationen. Använd knapparna mellan kolumnerna för att flytta de markerade objekten mellan de kolumner som behövs. Använd knapparna upp och ned bredvid kolumnen **Valda åtgärder** om du vill styra i vilken ordning knapparna visas i användargränssnittet.

@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2d8a2e44713607ff2a4df91271c70d96c4d71d9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1b7a3dd75f526a076b6fe696f71ec623e20abb24
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982104"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367895"
 ---
 # <a name="europe-overview"></a>Europa – översikt
 
@@ -36,13 +36,13 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
 - [Redigera faktura-ID för försäljningsorder för Östeuropa](emea-edit-invoice-id-sales-orders.md)
 - [EU-mottagningskvitton](emea-entry-certificates.md)
 - [Rapportering av EU-säljlista](emea-eu-sales-list.md)
+  - [Exempel på allmän lista över försäljning inom EU ](emea-eu-sales-list-example.md)
 - [Valutakursjusteringar](emea-exchange-rate-adjustments.md)
 - [Filformat för betalningsmetod](emea-select-file-formats-for-the-method-of-payments.md)
 - [Finansiell (Globalisering) riktlinjer om påverkan av Brexit](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Integration av räkenskapstjänst (ESR)](emea-fiscal-service-integration.md)
 - [Avyttring av anläggningstillgångar för Estland och Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Generera ett överföringsdokument för en intern lageröverföring](tasks/transfer-document-internal-inventory-transfer.md)
-- [Generera rapport med lista över försäljning inom EU](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022-filer
   - [Importera ISO20022-filer](emea-ISO20022-file-formats.md)
   - [Importera konfiguration för ISO20022-autogiro](tasks/import-iso20022-direct-debit-configuration.md)
@@ -63,7 +63,7 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
 - [Fakturabearbetning](emea-invoice-processing.md)
 - [Utfärda ett EU-mottagningskvitto](tasks/eur-00012-issue-eu-entry-certificate.md)
 - [Standarder för e-fakturering som stöds](emea-oioubl-standards-electronic-invoicing.md)
-- [Tvingad generering av elektroniska fakturor](emea-eur-forced-einvoices.md)
+- [Tvingad generering av e-fakturor](emea-eur-forced-einvoices.md)
 - [Ursprunglig fakturareferens (Östeuropa)](tasks/ee-00004-original-invoice-reference.md)
 - [Partsökning via momsregistreringsnummer](tasks/eur-00015-party-search-vat-id.md)
 - [Verktyg för generering av betalningsreferens](tasks/ee-00015-payment-reference-generation-tool.md)
@@ -77,7 +77,6 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
 - [Översikt över SEPA-kreditöverföring](../accounts-payable/sepa-credit-transfer.md)
 - [Översikt över SEPA-autogiro](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Ställ in kund- och leverantörskompensation](emea-compensation-customer-vendor-transactions.md)
-- [Ställ in grupp för rapportering av EU-säljlista](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Skapa betalningsblankettformat för projektfakturor](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Ställ in undertecknare för utskriftsformulär](emea-set-up-signers-for-printing-forms.md)
 - [Storno-redovisning](emea-storno.md)
@@ -93,7 +92,7 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
   - [Skapa och skicka en momsrapport](tasks/create-submit-vat-report.md)
   - [Visa transaktioner för kvittning för Östeuropa](emea-transactions-settlement-form.md)
   - [Bokföringsdatum (datum för momsregistering)](emea-tax-point-date.md)
-  - [Datum för leverantörens momsregistrering](emea-date-vendor-VAT-register.md)
+  - [Datum för providerns momsregistrering](emea-date-vendor-VAT-register.md)
 - [Funktionstillägg för ekonomiska orsaker](emea-financial-reason.md)
 
 ## <a name="additional-resources"></a>Ytterligare resurser

@@ -1,22 +1,22 @@
 ---
-title: Översikt över räkenskapsintegrering för handelskanaler
+title: Översikt över räkenskapsintegrering för Commerce-kanaler
 description: Det här avsnittet innehåller en översikt över funktioner för räkenskapsintegrering som är tillgängliga i Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 01/31/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 82913eaca1d56a5b0609480d8825717278eca132
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 46e0afd5a8cb692da56a7d5f261ca30d9b3aaa80
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077202"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388323"
 ---
-# <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Översikt över räkenskapsintegrering för handelskanaler
+# <a name="fiscal-integration-overview-for-commerce-channels"></a>Översikt över räkenskapsintegrering för Commerce-kanaler
 
 [!include [banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
@@ -27,7 +27,7 @@ Räkenskapsintegrering omfattar integrering med olika räkenskapsenheter och tj�
 
 - Registrera en räkenskapsenhet som är ansluten till kassa (POS), till exempel en kvittoskrivare och skriva ut en kvittoskrivare för kunden.
 - Skicka säkert information som är relaterad till försäljning och returer som slutförs i Retail POS till en extern webbtjänst som drivs av skattemyndigheten.
-- Hjälpa till att garantera oföränderlighet av försäljningstransaktionsdata via digitala signaturer.
+- Hjälp till att garantera oföränderlighet för försäljningstransaktionsdata genom digitala signaturer.
 
 Räkenskapsintegreringen är ett ramverk som utgör en gemensam lösning för ytterligare utveckling och anpassning av integrering mellan Retail POS och räkenskapsenheter och tjänster. Funktionen innehåller också exempel på räkenskapsintegrering som stöder grundläggande scenarier för vissa länder eller regioner, och som arbetar med specifika räkenskapsenheter och tjänster. Exempel på räkenskapsintegrering består av flera tillägg av Commerce-komponenter och ingår i programutvecklingskit (SDK). Mer information om exemplen på räkenskapsintegrering finns i [Exempel på räkenskapsintegrering i Commerce SDK](#fiscal-integration-samples-in-the-commerce-sdk). Information om hur du installerar och använder Commerce SDK finns i [Arkitektur i utvecklingspaket (SDK) för programutveckling](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
@@ -37,7 +37,7 @@ Stöd för andra scenarier som inte stöds av exempel på räkenskapsintegrering
 
 En process för räkenskapsregistrering i Retail POS kan bestå av ett eller flera steg. Varje steg omfattar räkenskapsregistrering av specifika transaktioner och händelser i en räkenskapsenhet eller tjänst. Följande komponenter ingår i räkenskapsregistrering i en räkenskapsenhet eller tjänst:
 
-- **Räkenskapsdokumentprovider** – Den här komponenten serialiserar transaktionshändelsen/data i det format som också används i samband med räkenskapsårets analyserar svaren från räkenskapsenhet eller tjänst och lagrar svaren i kanaldatabasen. Tillägget definierar även specifika transaktioner och händelser som ska registreras.
+- **Räkenskapsdokumentleverantör** – Den här komponenten serialiserar transaktionshändelsen/data i det format som också används i samband med räkenskapsårets analyserar svaren från räkenskapsenhet eller tjänst och lagrar svaren i kanaldatabasen. Tillägget definierar även specifika transaktioner och händelser som ska registreras.
 - **Räkenskapskoppling** – denna komponent initierar kommunikationen med räkenskapsenheten eller tjänsten, skickar begärande och kommandon direkt till räkenskapsenheten eller tjänsten baserat på transaktionshändelse/data som extraheras från skattedokument och tar emot svar från räkenskapsenheten eller tjänsten
 
 Ett exempel på räkenskapsintegrering kan innehålla Commerce Runtime (CRT), Hardware station och kassatillägg för en finansiell dokumentleverantör och en finansiell anslutning. Den innehåller även följande komponentkonfigurationer:
@@ -45,14 +45,17 @@ Ett exempel på räkenskapsintegrering kan innehålla Commerce Runtime (CRT), Ha
 - **Konfiguration av leverantör av skattedokument** – den här konfigurationen definierar en utmatningsmetod och ett format för skattedokument. Den innehåller även en datamappning för skatter och betalsätt som gör data från Retail POS kompatibel med de värden som ska fördefinieras i räkenskapsenhetens eller tjänst inbyggda programvara.
 - **Konfiguration av räkenskapskopplare** – definierar den fysiska kommunikationen med räkenskapsenheten eller tjänsten.
 
-En process för räkenskapsregistrering för ett visst kassaregister definieras av en motsvarande inställning i kassans funktionsprofil. Mer information om hur du konfigurerar processen för räkenskapsregistrering, laddar upp konfiguration av leverantör av skattedokument och räkenskapskopplare och ändra konfigurationsparametrar finns i [skapa en process för räkenskapsregistrering](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+En process för räkenskapsregistrering för en viss kassaapparat definieras av en motsvarande inställning i kassans funktionsprofil. Mer information om hur du konfigurerar processen för räkenskapsregistrering, laddar upp konfiguration av leverantör av skattedokument och räkenskapskopplare och ändra konfigurationsparametrar finns i [skapa en process för räkenskapsregistrering](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+
+> [!NOTE]
+> Om du behöver enheter för icke-skattemässiga åtgärder, till exempel sökning i produktkatalog, kundsökning eller skapande av transaktionsutkast, kan du välja dessa som register med skatteprocessrestriktioner. Mer information finns i [Ställa in register med skatteregistreringsrestriktioner](setting-up-fiscal-integration-for-retail-channel.md#set-up-registers-with-fiscal-registration-restrictions).
 
 Följande typiska flöde för räkenskapsregistrering startar med en händelse i kassan (t.ex. slutförande av en försäljningstransaktion) och implementerar en fördefinierad sekvens med steg som omfattar andra Commerce-komponenter (till exempel CRT och maskinvarustationen ).
 
 1. Kassan begär ett skattedokument från ramverket för räkenskapsintegrering (FIF).
 1. FIF avgör om händelsen kräver räkenskapsregistrering.
 1. Baserat på processen för räkenskapsregistrering identifierar FIF en skattekoppling och motsvarande leverantör av skattedokument för räkenskapsregistreringen.
-1. FIF kör leverantören av skattedokument som genererar skattedokument (till exempel ett XML-dokument) som motsvarar transaktionen eller händelse.
+1. FIF kör providern av skattedokument som genererar skattedokument (till exempel ett XML-dokument) som motsvarar transaktionen eller händelse.
 1. FIF returnerar det genererade skattedokumentet till kassan.
 1. Kassan begär att FIF ska skicka skattedokumentet till räkenskapsenheten eller tjänsten.
 1. FIF kör räkenskapskopplingen som bearbetar skattedokumentet och skickar den till räkenskapsenheten eller tjänsten.
@@ -67,25 +70,25 @@ I följande exempel visas ett flöde för räkenskapsregistreringskörning för 
  
 ### <a name="fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station"></a>Skatteregistrering utförs via en enhet som är ansluten till maskinvarustationen
 
-Den här konfigurationen används när en fysisk räkenskapsenhet, till exempel en kvittoskrivare, är ansluten till maskinvarustationen. Den gäller även när kommunikationen med en räkenskapsenhet eller tjänst sker via programvara som är installerad på maskinvarustation. I det här fallet finns leverantören av skattedokument på och CRT, kvittoskrivaren finns på maskinvarustationen.
+Den här konfigurationen används när en fysisk räkenskapsenhet, till exempel en kvittoskrivare, är ansluten till maskinvarustationen. Den gäller även när kommunikationen med en räkenskapsenhet eller tjänst sker via programvara som är installerad på maskinvarustation. I det här fallet finns providern av skattedokument på och CRT, kvittoskrivaren finns på maskinvarustationen.
 
 ![Skatteregistrering utförs via en enhet som är ansluten till maskinvarustationen.](media/FIF-CRT-HWS.png)
 
 ### <a name="fiscal-registration-is-done-via-an-external-service"></a>Skatteregistrering utförs via en extern tjänst
 
-Denna konfiguration används när räkenskapsregistreringen utförs via en extern tjänst, t.ex. en webbtjänst som skattemyndigheten förser med. II det här fallet finns både leverantören av skattedokument och skatteanslutningen på CRT.
+Denna konfiguration används när räkenskapsregistreringen utförs via en extern tjänst, t.ex. en webbtjänst som skattemyndigheten förser med. II det här fallet finns både providern av skattedokument och skatteanslutningen på CRT.
 
 ![Skatteregistrering utförs via en extern tjänst.](media/FIF-CRT-CRT.png)
  
 ### <a name="fiscal-registration-is-done-internally-in-the-crt"></a>Skatteregistreringen görs internt i CRT
 
-Den här konfigurationen används när det inte krävs någon extern räkenskapsenhet eller tjänst för skatteregistrering. Den används till exempel när skatteregistrering görs genom digital signering av försäljningstransaktioner. II det här fallet finns både leverantören av skattedokument och skatteanslutningen på CRT.
+Den här konfigurationen används när det inte krävs någon extern räkenskapsenhet eller tjänst för skatteregistrering. Den används till exempel när skatteregistrering görs genom digital signering av försäljningstransaktioner. II det här fallet finns både providern av skattedokument och skatteanslutningen på CRT.
 
 ![Skatteregistreringen görs internt i CRT.](media/FIF-CRT-CRT-SGN.png)
 
 ### <a name="fiscal-registration-is-done-via-a-device-or-service-in-the-local-network"></a>Skatteregistrering utförs via en enhet eller tjänst i det lokala nätverket
 
-Denna konfiguration används när en fysisk skatteanordning eller skattetjänst finns i butikens lokala nätverk och tillhandahåller ett HTTPS-approgrammeringsgränssnitt (API). I det här fallet finns leverantören av skattedokument på och CRT, kvittoskrivaren finns i kassan.
+Denna konfiguration används när en fysisk skatteanordning eller skattetjänst finns i butikens lokala nätverk och tillhandahåller ett HTTPS-approgrammeringsgränssnitt (API). I det här fallet finns providern av skattedokument på och CRT, kvittoskrivaren finns i kassan.
 
 ![Skatteregistrering utförs via en enhet eller tjänst i det lokala nätverket.](media/FIF-CRT-POS.png)
 

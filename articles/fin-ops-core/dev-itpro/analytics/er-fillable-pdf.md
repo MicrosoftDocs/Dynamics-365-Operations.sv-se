@@ -2,7 +2,7 @@
 title: Utforma ER-konfigurationer för att fylla i PDF-mallar
 description: Det här avsnittet innehåller information om hur du utformar ett ER-format (elektronisk rapportering) för att fylla i en PDF-mall.
 author: NickSelin
-ms.date: 03/24/2021
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 81da1b4f9ca5d2884122266312b2f7cb298572eef3a5c6151daba2f9b17326f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758298"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367866"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Utforma ER-konfigurationer för att fylla i PDF-mallar
 
@@ -60,8 +60,8 @@ Slutligen måste du hämta följande filer.
 ### <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a>Få åtkomst till listan med konfigurationer som tillhandahålls av Microsoft
 
 1. Gå till **Organisationsadministration \> Arbetsytor \> Elektronisk rapportering**.
-2. Kontrollera att leverantören **Litware, Inc.** finns tillgänglig och har markerats som aktiv.
-3. På panelen för **Microsoft**-leverantören väljer du **Databaser**.
+2. Kontrollera att providern **Litware, Inc.** finns tillgänglig och har markerats som aktiv.
+3. På panelen för **Microsoft**-providern väljer du **Databaser**.
 
     > [!NOTE]
     > Om det redan finns en databas av typen **LCS** hoppar du över de återstående stegen för den här proceduren.
@@ -100,7 +100,7 @@ Slutligen måste du hämta följande filer.
 6. I fältet **Beskrivning** anger du **Intrastat-rapport i PDF-format**.
 
     > [!NOTE]
-    > Den aktiva konfigurationsleverantören anges automatiskt. Den här leverantören kommer att kunna underhålla konfigurationen. Även om andra leverantörer kan använda den här konfigurationen kommer de inte att underhålla den.
+    > Den aktiva konfigurationsprovidern anges automatiskt. Den här providern kommer att kunna underhålla konfigurationen. Även om andra leverantörer kan använda den här konfigurationen kommer de inte att underhålla den.
 
 7. Valfritt: i fältet **formattyp** kan du välja ett specifikt format för elektroniskt dokument. Om du väljer **PDF**, vid designtiden kommer ER-verksamhetens designer att bara erbjuda de formatelement som endast gäller för dokument som genereras i PDF-format (**PDF\fil**, **PDF\PDF-sammanslagning**, etc.). Om du lämnar det här fältet tomt kommer ett format för det elektroniska dokumentet att anges i designtid i ER-verksamhetens designer när ett första formatelement läggs till. Om du till exempel lägger till **Excel\Fil** som första formatelement kommer ER-verksamhetens designer kommer bara att erbjuda formatelementen som bara gäller för dokument som genereras i Excel-format (**Excel\Cell**, **Excel\Intervall**, etc.). format.
 8. Välj **Skapa konfiguration**.
@@ -294,6 +294,20 @@ Den följande bilden visar ett exempel på första sidan i den rapport som gener
 Den följande bilden visar ett exempel på en annan sida i den rapport som genereras.
 
 ![Annan sida i den genererade rapporten.](media/rcs-ger-filloutpdf-generatedreport2.png)
+
+## <a name="limitations"></a>Begränsningar
+
+Namnen på ifyllbara fält ska vara unika i det PDF-formulär som du planerar att använda som rapportmall. För varje sådant fält skapas ett enskilt formatelement med motsvarande namn i det redigerbara ER-formatet när ett PDF-formulär importeras. Om ett PDF-formulär innehåller flera fält med samma namn skapas ett enda formatelement för de fält som inte tillåter att de fylls i enskilt under körning.
+
+## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
+
+### <a name="when-i-run-the-er-format-to-generate-a-report-in-pdf-format-why-do-i-get-the-following-errors--cannot-handle-iref-streams-the-current-implementation-of-pdfsharp-cannot-handle-this-pdf-feature-introduced-with-acrobat-6-and-a-pdf-name-must-start-with-a-slash-"></a>När jag kör ER-formatet för att generera en rapport i PDF-format, varför visas då följande fel: **Kan inte hantera iref-streams. Den aktuella implementeringen av PDFSharp kan inte hantera den här PDF-funktionen som finns från och med Acrobat 6**? och **Ett PDF-namn måste börja med ett snedstreck (/).**
+
+ER-ramverket använder version 1.5 av PDFSharp-biblioteket för att generera dessa PDF-rapporter. Vissa funktioner i PDF 1.5 (Adobe Reader 6.0) har ännu inte implementerats i det här biblioteket. Därför kan PDFSharp ännu inte öppna några filer som har markerats som **för PDF 1.5 eller högre** och kan resultera i de mottagna felen. Använd någon av följande lösningar för att lösa problemet:
+
+-   När du använder din egen PDF-mall: Nedgradera mallen till en tidigare Adobe-version och börja använda en ny mall i ditt ER-format.
+-   När du använder en ER-formatmall som delats med dig av en annan konfigurationsleverantör som en del av en ER-lösning: Kontakta ägaren till dennr ER-lösning och ange en beskrivning av problemet.
+-   När du använder ISV-lösning som innehåller en tidigare version av PDFSharp-biblioteket: Kontakta ägaren av lösningen och föreslå en uppgradering till den nyare PDFSharp-versionen.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

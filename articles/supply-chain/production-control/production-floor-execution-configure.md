@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 30f36ccf967c47d6a034c00544d45cdfdc3d1907
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 5a0ead85eaeb6b96b80716614990af8c8e5e70f7
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103398"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384757"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurera körningsgränssnittet för produktionsgolvet
 
@@ -75,9 +75,41 @@ Med denna funktion går det att lägga till ett sökfält i jobblistan. En arbet
 
 ### <a name="enable-reporting-on-co-products-and-by-products"></a>Aktivera rapportering av samprodukter och biprodukter
 
-Den här funktionen låter arbetare använda gränssnittet för exekvering av produktionsgolvet för att rapportera framsteg på batchorder. Denna rapportering inkluderar rapportering om biprodukter och biprodukter. För att använda den här funktionen, aktivera följande funktion i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Den här funktionen låter arbetare använda gränssnittet för exekvering av produktionsgolvet för att rapportera framsteg på batchorder. Denna rapportering inkluderar rapportering om biprodukter och biprodukter. För att använda den här funktionen, aktivera följande funktion i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Rapport om sam- och biprodukter från produktionsgolvets körningsgränssnitt*
+
+### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>Aktivera visning av fullständiga serie-, batch- och ID-nummer
+
+Funktionen ger en förbättrad upplevelse av att visa listor med serie-, batch- och ID-nummer i gränssnittet för körning på produktionsgolv. Visningen ändras från en kortvy som anger ett begränsat antal tecken till en listvy som har tillräckligt utrymme för att visa de fullständiga värdena. Du kan också söka efter särskilda nummer i listan.
+
+Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Administratrörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Visa fullständigt serie-, batch- och ID-nummer i körningsgränssnittet för produktionsgolv* i arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) .
+
+### <a name="enable-registering-of-material-consumption"></a>Aktivera registrering av materialförbrukning
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Med denna funktion kan arbetare använda gränssnittet för produktionsgolvkörning för att registrera materialförbrukning, batchnummer och serienummer. Vissa tillverkare, särskilt de som finns i bearbetningsindustrier, måste explicit registrera hur mycket material som förbrukas för varje batch eller tillverkningsorder. Medarbetare kan till exempel använda en våg för att väga hur mycket material som förbrukas medan de arbetar. För att garantera fullständig spårbarhet av material måste dessa organisationer också registrera vilka batchnummer som förbrukades när varje produkt produceras.
+
+Det finns två versioner av denna funktion. Den ena stöder artiklar som *inte* aktiverats för att använda avancerade lagerställeprocesser (WMS). Den andra stöder artiklar som *är* aktiverade för att använda WMS. Om du vill använda den här funktionen ska du aktivera en av eller båda följande funktioner i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i den här ordningen), beroende på om du har artiklar som är aktiverade för WMS:
+
+- *(Förhandsversion) Registrera materialförbrukning i körningsgränssnittet för produktionsgolv (inte WMS)*
+- *(Förhandsversion) Registrera materialförbrukning i körningsgränssnittet för produktionsgolvet (WMS-aktiverat)*
+
+> [!IMPORTANT]
+> Du kan använda enbart versionen utan WMS. Om du använder WMS måste du emellertid aktivera båda funktioner.
+
+### <a name="enable-reporting-on-catch-weight-items"></a>Aktivera rapportering av artiklar med nominell vikt
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Medarbetare kan använda gränssnittet för exekvering av produktionsgolvet för att rapportera framsteg rörande batchorder för artiklar med nominell vikt. Batchorder skapas från formler, vilkar kan definieras så att de har artiklar med nominell vikt som formelartiklar, samprodukter och biprodukter. En formel kan också definieras till att ha formelrader för ingredienser som är definierade för nominell vikt. Artiklar med nominell vikt använder två måttenheter för att spåra lager: nominell viktkvantitet och lagerkvantitet. Inom till exempel livsmedelsindustrin kan förpackat kött definieras som en nominell viktartikel, där den nominella viktkvantiteten används för att spåra antalet kartonger och lagerkvantiteten används för att spåra kartongerna.
+
+För att använda den här funktionen, aktivera följande funktion i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *(Förhandsversion) Rapport med fångstviktartiklar från körningsgränssnittet för produktionsgolvet*
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeta med konfigurationer av körningsgränssnittet för produktionsgolvet
 

@@ -2,19 +2,19 @@
 title: Ställ in räkenskapsintegrering för handelskanaler
 description: Det här avsnittet ger riktlinjer för att skapa funktionen för räkenskapsintegrering för handelskanaler.
 author: EvgenyPopovMBS
-ms.date: 01/31/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: fd37934e1ebd103d66c5181e0bfb75047f4cb6a3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c15104e0f34c1f6cb6a599d506dad741be3e5e9e
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076973"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388400"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Ställ in räkenskapsintegrering för handelskanaler
 
@@ -46,6 +46,7 @@ Processen för att ställa in räkenskapsintegrering inkluderar följande uppgif
 - Konfigurera räkenskapsregistreringsprocessen som definierar en uppsättning steg i räkenskapsregistrering och räkenskapskopplingar och skattedokumentleverantörer som används för varje steg.
 - Tilldela räkenskapsregistreringsprocess till funktionsprofiler för kassa.
 - Tilldela koppling tekniska profiler till maskinvaruprofiler.
+- Tilldela anslutningsprogramtekniska profiler till profiler för kassamaskinvara eller funktion.
 
 ### <a name="upload-configurations-of-fiscal-document-providers"></a>Överför konfigurationer av leverantörer av skattedokument
 
@@ -60,7 +61,7 @@ Följ dessa steg för att överföra konfigurationer av leverantörer av skatted
 > Genom att markera **Visa**, kan du visa alla funktionella profiler som är relaterade till aktuell leverantör av skattedokument.
 
 > [!NOTE]
-> Datamappning betraktas som en del av skattedokumentleverantören. Om du vill ställa in olika datamappningar för samma typ av koppling (till exempel delstatsspecifika regler) bör du skapa olika leverantörer för skattedokument.
+> Datamappning betraktas som en del av skattedokumentprovidern. Om du vill ställa in olika datamappningar för samma typ av koppling (till exempel delstatsspecifika regler) bör du skapa olika leverantörer för skattedokument.
 
 ### <a name="upload-configurations-of-fiscal-connectors"></a>Överför konfigurationer av räkenskapskopplingar
 
@@ -96,7 +97,7 @@ Du kan ändra parametrarna för datamappning i en funktionsprofil för koppling.
 | Mappning av momskoder | VATcode : värde | vat20 : 1, vat18 : 2 |
 | Mappning av betalningsmedelstyper | TenderType : värde | Kontant: 1 kort: 2 |
 
-Återställ standardparametrar som är definierade i konfigurationen av leverantören av skattedokument, markera **Uppdatera** på sidan **Funktionsprofiler för koppling**.
+Återställ standardparametrar som är definierade i konfigurationen av providern av skattedokument, markera **Uppdatera** på sidan **Funktionsprofiler för koppling**.
 
 > [!NOTE]
 > Funktionsprofiler för koppling är företagsspecifika. Om du planerar att använda samma kombination av räkenskapskoppling och skattedokumentleverantör i olika företag, bör du skapa en funktionsprofil för koppling för varje företag.
@@ -122,7 +123,7 @@ Följ dessa steg för att skapa tekniska profiler för kopplingar.
 
 Parametrarna på flikarna **enhet** och **inställningar** i en teknisk profil för koppling kan ändras. Återställ standardparametrar som är definierade i konfigurationen av räkenskapskoppling, markera **uppdatering**. När en ny version av en XML-konfiguration laddas får du ett meddelande om att aktuellt räkenskapskoppling eller leverantör av skattedokument används redan. Den här proceduren åsidosätter inte manuella ändringar som gjorts i tidigare funktionsprofiler för koppling och tekniska profiler för koppling. För att tillämpa standarduppsättningen med parametrar från en ny konfiguration, klicka på **uppdatera** på sidan **Funktionsprofiler för koppling** och **Uppdatera**.
 
-Om du måste ställa in specifika parametrar för en enskild kassaregister eller butik följer du dessa steg.
+Om du måste ställa in specifika parametrar för en enskild kassaapparat eller butik följer du dessa steg.
 
 1. Välj menyalternativet **Åsidosätt**.
 1. Skapa en ny post på sidan **Åsidosätt**.
@@ -161,20 +162,33 @@ Följ dessa steg för att tilldela entiteter för räkenskapsregistreringsproces
 1. I Commerce-administration, gå till sidan **Kassafunktionsprofiler** (**Retail och Commerce \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Funktionsprofiler**). 
 1. Tilldela räkenskapsregistreringsprocess till en funktionsprofil för kassa.
 1. Välj **redigera** och klicka sedan på **Process för räkenskapsregistrering** i fältet **Processnummer** väljer du en process.
+1. På fliken **Skattetjänster** väljer du tekniska profiler för anslutningsprogram med anslutningsprogramplatsen **Registrera**.
 1. Gå till sidan **Maskinvaruprofil för kassa** (**Retail och Commerce \> Kanalinställning \> Kassainställning \> Kassaprofiler \> Hårdvaruprofil**).
 1. Tilldela koppling tekniska profiler till maskinvaruprofil. 
 1. Välj **Redigera** och lägg sedan till en rad på fliken **Kringutrustning för räkenskaper**. 
 1. I fältet **Profilnummer** väljer du en profil för koppling.
+1. På fliken **Skattetillbehör** väljer du tekniska profiler för anslutningsprogram med anslutningsprogramplatsen **Maskinvarustation**.
 
 > [!NOTE]
 > Du kan lägga till flera tekniska profiler till en maskinvaruprofil. En maskinvaruprofil eller kassafunktionalitetsprofil har dock endast en skärningspunkt med en grupp för räkenskapskoppling.
 
-Räkenskapsregistreringsflöde har definierats av räkenskapsregistreringsprocessen samt av vissa parametrar för räkenskapsintegreringskomponenterna: tillägget CRT för leverantören av skattedokument och tillägg för maskinvarustation för räkenskapskopplingen.
+Räkenskapsregistreringsflöde har definierats av räkenskapsregistreringsprocessen samt av vissa parametrar för räkenskapsintegreringskomponenterna: tillägget CRT för providern av skattedokument och tillägg för maskinvarustation för räkenskapskopplingen.
 
-- Prenumeration på händelser och transaktioner till räkenskapsregistreringen är fördefinierade i leverantören av skattedokument.
+- Prenumeration på händelser och transaktioner till räkenskapsregistreringen är fördefinierade i providern av skattedokument.
 - Leverantören av skattedokument ansvarar för att identifiera räkenskapskopplingen som används för räkenskapsregistreringen. Den matchar kopplingens funktionella profiler som ingår i den grupp för räkenskapskoppling som har angetts för det aktuella steget för räkenskapsregistreringsprocessen med den tekniska profil för koppling som tilldelats maskinvaruprofilen för maskinvarustationen som POS är kopplad till.
 - Leverantören av skattedokument använder data från konfiguration av leverantör av skattedokument för att omvandla transaktionshändelsen/data såsom skatter och betalningar medan skattedokument genereras.
-- När leverantören av skattedokument genererar ett skattedokument kan räkenskapskopplingen antingen skicka den till räkenskapsenheten som den är, eller analysera den och omvandla den till en sekvens av kommandon i applikationsprogrammeringsgränssnittet (API) beroende på hur kommunikationen hanteras.
+- När providern av skattedokument genererar ett skattedokument kan räkenskapskopplingen antingen skicka den till räkenskapsenheten som den är, eller analysera den och omvandla den till en sekvens av kommandon i applikationsprogrammeringsgränssnittet (API) beroende på hur kommunikationen hanteras.
+
+### <a name="set-up-registers-with-fiscal-registration-restrictions"></a>Ställa in register med skatteregistreringsrestriktioner
+
+Du kan välja register där skatteregistrering är börbjuden, till exempel om du endast behöver tillhandahålla icke-skattemässiga åtgärder som till exempel sökning i produktkatalog, kundsökning eller skapande av transaktionsutkast på dessa enheter.
+
+För mer information om hur du ställer in register med skatteregistreringsrestriktioner, följ dessa steg.
+
+1. I Commerce-administrationen går du till **Butik och handel \> Kanalinställningar \> Räkenskapsintegrering \> Processer för räkenskapsregistrering**.
+1. Välj erforderlig process.
+1. Markera fliken **Kassaregister med restriktioner rörande skatteprocess**.
+1. Lägg till register med restriktioner rörande skatteprocess efter behov.
 
 ### <a name="validate-the-fiscal-registration-process"></a>Validera räkenskapsregistreringsprocessen
 
@@ -226,7 +240,7 @@ Gör på följande sätt om du vill göra inställningar för felhantering.
     - **Tillåt hoppa över** – den här parametern aktiverar alternativet **hoppa över** i dialogrutan för felhantering.
     - **Tillåt att markera som registrerad** – den här parametern aktiverar alternativet **Markera som registrerad** i dialogrutan för felhantering.
     - **Tillåt skjuta upp** – den här parametern aktiverar alternativet **skjuta upp** i dialogrutan för felhantering.
-    - **Fortsätt vid fel** – om den här parametern är aktiverad kan räkenskapsregistreringen fortsätta på kassaregister om räkenskapsregistreringen av en transaktioner eller händelser misslyckas. Annars om du vill köra räkenskapsregistreringen av nästa transaktion eller händelse måste operatorn göra om den misslyckade räkenskapsregistreringen, hoppa över den eller markera transaktioner eller händelser som registrerats. Mer information finns i [Valfri räkenskapsregistrering](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).
+    - **Fortsätt vid fel** – om den här parametern är aktiverad kan räkenskapsregistreringen fortsätta på kassaapparater om räkenskapsregistreringen av en transaktioner eller händelser misslyckas. Annars om du vill köra räkenskapsregistreringen av nästa transaktion eller händelse måste operatorn göra om den misslyckade räkenskapsregistreringen, hoppa över den eller markera transaktioner eller händelser som registrerats. Mer information finns i [Valfri räkenskapsregistrering](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).
 
     > [!NOTE]
     > Om parametern **Fortsätt vid fel** är aktiverad kan parametrarna **Tillåt hoppa över** och **Tillåt markera som registrerad** inaktiveras automatiskt.

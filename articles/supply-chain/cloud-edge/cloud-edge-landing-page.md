@@ -1,6 +1,6 @@
 ---
 title: Skalningsenheter i en distribuerad hybridtopologi
-description: Detta ämne ger information, se moln och kantskalningsenhet med arbetsbelastning för tillverkning och distributionslagerhantering.
+description: Detta ämne ger information, se moln och kantskalningsenhet med arbetsbelastning för tillverkning och distributionslagerstyrning.
 author: cabeln
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ef81ef7ad726ebe0cc6a0acd58cb68d07e222a42
-ms.sourcegitcommit: 0d14c4a1e6cf533dd20463f1a84eae8f6d88f71b
+ms.openlocfilehash: 30f455f37b5161878cf9c864b92966aa74da051f
+ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119197"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376192"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skalningsenheter i en distribuerad hybridtopologi
 
@@ -40,7 +40,7 @@ Arbetsbelastningsfunktionerna frisläpps kontinuerligt genom stegvisa förbättr
 
 ## <a name="scale-units-and-dedicated-workloads"></a>Skalningsenheter och dedikerade arbetsbelastning
 
-Skalningsenheter utökas med Supply Chain Management navmiljö genom att lägga till dedikerad bearbetningskapacitet. Skalningsenheter kan köras i molnet. De kan också köras "on the edge" – i utkanten av nätverket istället för som annars centralt – på plats på din lokala anläggning.
+Skalningsenheter utökas med Supply Chain Management navmiljö genom att lägga till dedikerad bearbetningskapacitet. Skalningsenheter kan köras i molnet. De kan också köras ["on the edge"](cloud-edge-edge-scale-units-lbd.md), på plats på din lokala anläggning.
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 med skalningsenheter.":::
 
@@ -50,7 +50,7 @@ En *arbetsbelastning* är en definierad uppsättning affärsfunktioner som kan b
 
 Du kan använda [portalen för skalningsenhetsansvarig](https://sum.dynamics.com) för att konfigurera din navmiljö och dina molnskalningsenhet för utvalda arbetsbelastningar. Du kan också tilldela flera arbetsbelastningar per skalningsenhet. Mer information om förutsättningar och begränsningar för molnbaserade skalningsenheter i den aktuella versionen finns i avsnittet [Förutsättningar och begränsningar för molnskalningsenheter](#cloud-scale-unit-prerequisites) längre fram i detta ämne.
 
-### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Särskilda arbetsbelastningsmöjligheter för distributionslagerhantering i en skalningsenhet
+### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Särskilda arbetsbelastningsmöjligheter för distributionslagerstyrning i en skalningsenhet
 
 Arbetsbelastningen för lagerstyrning gör det möjligt för dina lagerställeåtgärder att anpassa och köra i en miljö med underhåll som inte är underhåll, genom att använda enstaka underhållsfönster. Arbetsbelastningen för lagerstyrning har stöd för de flesta hanteringsprocesserna för lagerställen i företag. För mer information, se [Arbetsbelastningar för hantering av distributionslager för moln- och kantskalningsenheter](cloud-edge-workload-warehousing.md).
 
@@ -65,7 +65,7 @@ Tillverkningsarbetsbelastningen har följande funktioner:
 
 För mer information, se [Arbetsbelastningar för tillverkningskörning för moln- och kantskalningsenheter](cloud-edge-workload-manufacturing.md).
 
-## <a name="considerations-before-you-enable-the-distributed-hybrid-topology-for-supply-chain-management"></a>Att tänka på innan du aktiverar distribuerad, hybridtopologi för Supply Chain Management
+## <a name="considerations-before-you-enable-the-distributed-hybrid-topology-for-supply-chain-management"></a>Att tänka på innan du aktiverar distribuerad hybridtopologi för Supply Chain Management
 
 Genom att aktivera den distribuerade hybridtopologin överför du din molnbaserade Supply Chain Management-miljö så att den fungerar som ett nav. Du kan också associera ytterligare miljöer som konfigureras som skalningsenheter i molnet eller "on the edge" – i utkanten av nätverket istället för som annars centralt.
 
@@ -116,7 +116,7 @@ Mätvärden och mått som kan hjälpa dig att välja det bästa programmet för 
 
 ### <a name="data-processing-during-management-of-scale-units"></a><a name="data-processing-management"></a>Databehandling vid hantering av skalningsenheter
 
-När du aktiverar din Dynamics 365-miljö för att stödja distribuerad, såld topologi för molnbaserade enheter och kantskalenheter, kommer vissa hanteringstjänster bara att lagras med värdar baserade i USA, som för LCS. Detta beteende påverkar överföringen och lagringen av viss administrativ information och konfigurationsinformation som används i [portalen för skalningsenhetsansvarig](https://sum.dynamics.com). Nedan följer några exempel:
+När du aktiverar din Dynamics 365-miljö för att stödja distribuerad hybridtopologi för molnbaserade enheter och kantskalningsenheter, kommer vissa hanteringstjänster bara att lagras med värdar baserade i USA, som för LCS. Detta beteende påverkar överföringen och lagringen av viss administrativ information och konfigurationsinformation som används i [portalen för skalningsenhetsansvarig](https://sum.dynamics.com). Nedan följer några exempel:
 
 - Namn och ID för innehavare
 - Ditt LCS projekt-ID
@@ -125,33 +125,27 @@ När du aktiverar din Dynamics 365-miljö för att stödja distribuerad, såld t
 - Arbetsbelastningskonfigurationer, inklusive namn och fysiska adresser för juridiska personer och lokaler, så att din topologi kan visas på en geografisk karta
 - Insamlade mått (t.ex. svarstid och dataflöde) som visas på analyssidan för kartan i syfte att hjälpa dig att välja den bästa användningen av dina skalningsenheter
 
-Data som överförs till och lagras i de amerikanska datacentren kommer att raderas i enlighet med datalagringsprinciperna från Microsoft. Din integritet är viktig för Microsoft. För mer information läs vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=521839).
+Data som överförs till och lagras i de amerikanska datacentren kommer att raderas i enlighet med datalagringsprinciperna från Microsoft. Din integritet är viktig för Microsoft. Mer information finns i vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## <a name="onboarding-in-two-stages"></a>Registrering i två steg
+## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Registrera dig för den distribuerade hybridtopologin för Supply Chain Management
 
-Registreringsprocessen till distribuerad hybridtopologi sker i två steg. Under den första fasen måste du validera anpassningar i syfte att säkerställa att dessa fungerar i den distribuerade topologi som har skalningsenheter. Sandbox- och produktionsmiljöerna flyttas bara under det andra steget.
+### <a name="try-out-the-distributed-hybrid-topology"></a>Prova en distribuerad hybridtopologi
 
-### <a name="stage-1-evaluate-customizations-in-one-box-development-environments"></a>Fas 1: Utvärdera anpassningar i utvecklingsmiljöer med en enda ruta
+Registreringsprocessen för distribuerad hybridtopologi sker i två steg. Under den första fasen bör du [prova](cloud-edge-try-out.md) lösningen och validera dina anpassningar i syfte att säkerställa att dessa fungerar i en distribuerad topologi som omfattar skalningsenheter. (Du kan använda befintliga utvecklingsmiljöer för att validera.) Du kan sedan fortsätta till det andra steget, där du skaffar produktionsmiljöer.
 
-Innan du börjar registrera din sandbox- eller tillverkningsmiljö rekommenderar vi att du utforskar skaningsenheter i en utvecklingskonfiguration, till exempel en enrutesmiljö (kallas även för en "tier-1"-miljö) så att du kan validera processer, anpassningar och lösningar. Under den här fasen används data och anpassningar i enrutesmiljöerna. En miljö tar rollen som nav, medan den andra tar rollen som skalningsenhet. Denna konfiguration är det bästa sättet att identifiera och åtgärda problem. Den senaste versionen för tidig åtkomst (PEAB) kan också användas för att slutföra den här fasen.
-
-I steg 1 bör du använda [användningsverktygen för skalningsenhet för one-box-utvecklingsmiljöer](https://github.com/microsoft/SCMScaleUnitDevTools). Med dessa verktyg kan du konfigurera na- och skalningsenheter i en eller två separata "one-box"-miljöer. Verktygen tillhandahålles som en binär version och i källkod på GitHub. Läs projektets wiki, som innehåller en [användarhandbok för steg](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) som beskriver hur verktygen används.
-
-### <a name="stage-2-acquire-add-ins-and-deploy-in-your-sandbox-and-production-environments"></a>Fas 2: Skaffa tilläggsprogram och distribuera i dina sandbox- och produktionsmiljöer
-
-Om du vill registrera en av dina sandbox- eller produktionsmiljöer i den nya topologin måste du skaffa tilläggsprogram för en eller flera molnbaserade skalningsenheter (och, i framtiden, för kantskalningsenheter). Tilläggsprogrammen beviljar motsvarande projekt- och miljöplatser i [LCS](https://lcs.dynamics.com/) så miljöerna för skalningsenheter kan distribueras.
-
-> [!NOTE]
-> Tilläggsprogrammen för skalningsenhet kopplas inte till ett begränsat antal användare, utan kan användas av alla användare i det befintliga abonnemanget baserat på de roller som administratören tilldelar.
+## <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>Välj klientorganisationen för LCS-projekt samt detaljerad registreringsprocess
 
 Skalningsenheter ges i flera lagerhållningsenheter (SKU) och prissättningsalternativ. Därför kan du välja det alternativ som bäst uppfyller dina krav på volym och prestanda för planerade månatliga transaktioner.
+
+> [!TIP]
+> Identifiera den storlek som bäst uppfyller dina behov genom att samarbeta med din implementeringspartner och Microsoft för att ta reda på vilken månadstransaktionsstorlek du behöver.
 
 SKU på ingångsnivå kallas *Basic*, och den mer högpresterande kallas *Standard*. Varje SKU förinlästes med ett visst antal månadstransaktioner. Du kan emellertid öka den månatliga transaktionsbudgeten genom att lägga till tilläggsprogram för överförbrukning för respektive SKU.
 
 :::image type="content" source="media/SKUs-highlevel.png" alt-text="Tillägg för molnskalningsenheter.":::
 
-> [!TIP]
-> Identifiera den storlek som bäst uppfyller dina behov genom att samarbeta med din partner och Microsoft för att ta reda på vilken månadstransaktionsstorlek du behöver.
+> [!NOTE]
+> Skalningsenhetstillägg kopplas inte till ett begränsat antal användare. De är tillgängliga för alla användare i ditt befintliga abonnemang (förutsatt att din administratör har tilldelat de användarroller som krävs för dem).
 
 Inköpet av tilläggsprogrammet för skalningsenhet ger dig inte bara en månatlig volym av transaktioner utan ger dig även rätt till ett specifikt antal miljöplatser i LCS. För varje tilläggsprogram för molnbaserade skalningsenheter har du rätt till en ny produktionsplats och en ny sandbox-plats. Under registrerings läggs ett nytt LCS-projekt till med dessa platser. Användarrättigheterna för platserna binds, varför platserna måste användas som skalningsenheter med ett molnbaserat nav.
 
@@ -159,9 +153,6 @@ Tilläggsprogram för överförbrukning ger dig inte rätt till nya miljöplatse
 
 Om du vill skaffa fler sandbox-miljöer kan du köpa in ytterligare vanliga sandbox-platser. Microsoft kan sedan hjälpa dig att aktivera dessa platser som sandbox-skalningsenheter för hybridtopologin.
 
-## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Registrera dig för den distribuerade hybridtopologin för Supply Chain Management
-
-### <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>Välj klientorganisationen för LCS-projekt samt detaljerad registreringsprocess
 
 När du har planerat hur du ska registrera dig för den distribuerade hybridtopologin för Supply Chain Management använder du [portalen för skalningsansvarig](https://aka.ms/SCMSUM) för att påbörja registreringsprocessen. I portalen väljer du fliken **Dynamics 365-klientorganisationer**. Denna flik anger en lista över de klientorganisationer som ingår i ditt konto och där du är ägare eller miljöadministratör för en LCS-produkt.
 
@@ -190,7 +181,7 @@ Gå till [portalen för skalningsenhetsansvarig](https://aka.ms/SCMSUM) och logg
 
 Om du vill lägga till en eller flera skalningsenheter som är tillgängliga i dina prenumerationer väljer du **Lägg till skalningsenheter**.
 
-På fliken **Definierade arbetsbelastningar** använder du knappen **Skapa arbetsbelastning** för att lägga till en arbetsbelastning för lagerhantering i en av dina skalningsenheter. För varje arbetsbelastning måste du ange kontexten för de processer som ska ägas av arbetsbelastningen. För distributionslagerhantering arbetsbelastningar är sammanhanget ett specifikt lagerställe på en specifik webbplats och juridisk person.
+På fliken **Definierade arbetsbelastningar** använder du knappen **Skapa arbetsbelastning** för att lägga till en arbetsbelastning för lagerstyrning i en av dina skalningsenheter. För varje arbetsbelastning måste du ange kontexten för de processer som ska ägas av arbetsbelastningen. För distributionslagerstyrning arbetsbelastningar är sammanhanget ett specifikt lagerställe på en specifik webbplats och juridisk person.
 
 :::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Definiera dialogrutan för arbetsbelastning.":::
 
@@ -200,7 +191,7 @@ När en eller flera arbetsbelastningar har aktiverats kan du använda alternativ
 
 | Process | Beskrivning |
 |---|---|
-| Pausa skalningsenhetskommunikation | Pausa pipelinemeddelanden mellan hubb och skalningsenhet. Den process stoppar kommunikationen och tömmer datapipelinen mellan hubb och skaningsenheter. Du måste köra den här processen innan du kör en serviceoperation i Supply Chain Management på antingen hubben eller skaningsenheten, men du kan även använda den i andra situationer. |
+| Pausa skalningsenhetskommunikation | Pausa pipelinemeddelanden mellan hubb och skalningsenhet. Den process stoppar kommunikationen och tömmer dataförloppet mellan hubb och skaningsenheter. Du måste köra den här processen innan du kör en serviceoperation i Supply Chain Management på antingen hubben eller skaningsenheten, men du kan även använda den i andra situationer. |
 | Återuppta skalningsenhetskommunikation | Återuppta pipelinemeddelanden mellan hubb och skalningsenhet. Du kanske måste använda den här processen efter att du har kört en serviceoperation i Supply Chain Management på antingen hubb eller skalningsenhet. |
 | Uppgradera arbetsbelastningar | Synkronisera nya funktioner mellan arbetsbelastningar för hubb och skalningsenheter. Du kanske måste använda den här processen till exempel när servicen har medfört att datautbytesfrågorna har ändrats och/eller har lagt till nya register eller fält i arbetsbelastningen. |
 | Överföra arbetsbelastningar till en skalningsenhet | Planera en arbetsbelastning som i nuläget körs på den hubb som ska flyttas till en skalningsenhet. När denna process körs flödar synkroniseringen av data, och både hubben och saklningsenheten ställs in för att ändra ägarskapet för arbetsbelastningen. |

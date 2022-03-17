@@ -1,23 +1,23 @@
 ---
 title: Sverige – översikt
 description: Det här avsnittet innehåller länkar till dokumentationsresurser för Sverige.
-author: ShylaThompson
-ms.date: 07/25/2019
+author: kfend
+ms.date: 03/04/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Sweden
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b076e691ac884a20a0b75e5051d6890633db23a4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: eefa8be7173979e52bb0201d884f27edaaa24e78
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984363"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388537"
 ---
 # <a name="sweden-overview"></a>Sverige – översikt
 
@@ -31,6 +31,7 @@ Det här avsnittet innehåller länkar till dokumentationsresurser för Sverige.
 - [Momsbetalningsrapport för Sverige](emea-swe-sales-tax-payment-report-sweden.md)
 - [Momsdeklaration för Sverige](emea-swe-VAT-declaration-Sweden.md)
 - [Svensk Intrastat](emea-swe-intrastat.md)
+- [Lista över EU-försäljning för Sverige](emea-swe-eu-sales-list.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

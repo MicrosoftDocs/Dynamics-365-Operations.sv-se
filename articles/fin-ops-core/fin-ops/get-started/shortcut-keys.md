@@ -1,8 +1,8 @@
 ---
 title: Kortkommandon
-description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med Ekonomi och Drift-appar.
+description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med appar för ekonomi och drift.
 author: jasongre
-ms.date: 02/11/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5243ea35138aa37d9fc54821e0923d0fa47c95de
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: 7d66c1fd08c29b85ca14bf1ae5d08c603e4a1945
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119562"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384573"
 ---
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -41,7 +41,7 @@ Användarna kan upptäcka tillgängliga genvägar direkt via användargränssnit
 
 ## <a name="action-shortcuts"></a>Åtgärdgenvägar
 
-| Om du vill göra detta                                      | Tryck på                             |
+| Om du vill göra detta                                      | Tryck på                            |
 |-------------------------------------------------|----------------------------------|
 | Öppna åtgärdssökning                              | Ctrl+ eller Alt+Q                  |
 | Flytta till standardåtgärdsfönstret                | Alt+M,A eller Ctrl+F6               |
@@ -130,7 +130,7 @@ Användarna kan upptäcka tillgängliga genvägar direkt via användargränssnit
 
 ## <a name="grid-shortcuts"></a>Genvägar för rutnät
 
-| Om du vill göra detta                                                                                                             | Tryck på                            |
+| Om du vill göra detta                                                                                                             | Tryck på                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | Lodrät rullning                                                                                                     | Mushjul                     |
 | Vågrät rullning                                                                                                   | Skift + Mushjul             |
@@ -158,7 +158,7 @@ Användarna kan upptäcka tillgängliga genvägar direkt via användargränssnit
 
 ## <a name="input-control-shortcuts"></a>Mata in kontrollgenvägar
 
-| Om du vill göra detta                                                                   | Tryck på                          |
+| Om du vill göra detta                                                                   | Tryck på                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Öppna hyperlänk                                                           | Ctrl+Return                    |
 | Ange aktuellt sessionsdatum i ett datumfält                                       | D                             |
@@ -199,9 +199,12 @@ Användarna kan upptäcka tillgängliga genvägar direkt via användargränssnit
 | Flytta till huvudsidans innehåll (med fokus i ett annat fönster)                    | Alt+M,M                    |
 | Flytta till faktaboxen (som kan inkludera att öppna den)                       | Alt+M,B eller Ctrl+F2         |
 
+> [!NOTE]
+> Funktionen **Strömlinjeforma funktionen för flikar i helsidesformulär**, som introduceras i version 10.0.26, gör det möjligt för användarna att via tabb förflytta sig mellan alla delar på en sida utan att behöva använda mus eller ett särskilt kortkommando. Du kan fortfarande använda de befintliga kortkommandona (t.ex. tangentbordskortkommando via Alt+M-tangenterna) för att snabbt förflytta dig mellan delar på en sida.
+
 ## <a name="personalization-shortcuts"></a>Kortkommandon [anpassning](personalize-user-experience.md) 
 
-| Om du vill göra detta                                                                                                             | Tryck                               |
+| Om du vill göra detta                                                                                                             | Tryck på                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | Låt sidan övergå till anpassningsläge                                                                          | Ctrl+Shift+P                        |
 | Använd markeringsverktyget (i anpassningsläge)                                                                     | S                                   |
@@ -245,7 +248,7 @@ Användarna kan upptäcka tillgängliga genvägar direkt via användargränssnit
 
 ## <a name="task-recorder-shortcuts"></a>Kortkommandon [Uppgiftsinspelare](../../dev-itpro/user-interface/task-recorder.md) 
 
-| Om du vill göra detta                                                                    | Tryck på                       |
+| Om du vill göra detta                                                                    | Tryck på                      |
 |-------------------------------------------------------------------------------|----------------------------|
 | Stoppa inspelningen (under inspelning)                                          | Alt+R,S                    |
 | Växla synligheten för fönstret uppgiftsinspelning (under inspelning)             | Alt+R,T                    |

@@ -18,11 +18,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
-ms.sourcegitcommit: 385fc4e9c641b43734ddb030893904489361af7d
+ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881601"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "7986368"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Kom i gång med e-fakturering för Mexiko
 
@@ -35,7 +35,7 @@ Det här avsnittet innehåller information som hjälper dig att komma igång med
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Innan du slutför stegen i det här avsnittet måste du slutföra stegen i [komma igång med tjänstadministration för elektronisk fakturering](e-invoicing-get-started-service-administration.md) och [komma igång med elektronisk fakturering](e-invoicing-get-started.md).
+Innan du slutför stegen i det här avsnittet måste du slutföra stegen i [komma igång med tjänstadministration för e-fakturering](e-invoicing-get-started-service-administration.md) och [komma igång med e-fakturering](e-invoicing-get-started.md).
 
 ## <a name="set-up-the-cadena-xslt"></a>Konfigurera Cadena XSLT
 
@@ -55,7 +55,7 @@ Under RCS-inställningar ska du utföra följande uppgifter:
 4. Publicera e-faktureringsfunktionen för CFDI-fakturor.
 
 > [!NOTE]
-> "e-faktureringsfunktionen" är det allmänna namnet för resursen som är konfigurerad och publicerad för att använda servern för e-fakturering. I det här fallet är CFDI-fakturor (MX) den e-faktureringsfunktion du vill ställa in.
+> "e-faktureringsfunktionen" är det allmänna namnet för resursen som är konfigurerad och publicerad för att använda servern för e-fakturering. I det här fallet är CFDI-fakturor (MX) e-faktureringsfunktion du vill ställa in.
 
 ## <a name="import-the-e-invoicing-feature"></a>Importera e-faktureringsfunktion
 
@@ -174,7 +174,7 @@ Om du vill skicka annullering av CFDI-faktura krävs funktionsinställningarna *
 
 ## <a name="set-up-electronic-invoicing--integration-in-finance"></a>Ställ in integrering av e-fakturering i Finance
 
-Du ställer in elektroniska fakturering i Finance genom att utföra följande uppgifter:
+Du ställer in e-fakturering i Finance genom att utföra följande uppgifter:
 
 1. Importera ER-datamodell, ER-datamodellmappning och de format som krävs för CFDI-fakturor.
 2. Konfigurera svarstyper för uppdatering av CFDI-fakturor. Dessa svarstyper används för svaret från den auktoriserade certifieringsserverns leverantör (PAC).
@@ -182,7 +182,7 @@ Du ställer in elektroniska fakturering i Finance genom att utföra följande up
 ### <a name="import-the-er-data-model-er-data-model-mapping-and-context-configurations-for-cfdi-invoices"></a>Importera ER-datamodell, ER-datamodellmappning och kontextkonfigurationer för CFDI-fakturor
 
 1. Logga in på Finance.
-2. I arbetsytan **elektronisk rapportering** i avsnittet **konfigurationsprovider** väljer du rubriken **Microsoft**. Kontrollera att konfigurationsprovidern är **aktiverad**. För information om hur du ställer in en leverantör på **Aktiv**, se [Skapa konfigurationsleverantörer och markera dem som aktiva](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. I arbetsytan **elektronisk rapportering** i avsnittet **konfigurationsleverantör** väljer du rubriken **Microsoft**. Kontrollera att konfigurationsprovidern är **aktiverad**. För information om hur du ställer in en leverantör på **Aktiv**, se [Skapa konfigurationsleverantörer och markera dem som aktiva](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Välj **Databaser**.
 4. Välj **Global resurs \> Öppna**.
 5. Importera **Fakturamodell**, **Mappning av fakturamodell**, **CFDI-fakturaformat (MX)**, **CFDI-format för begäran om annullering av faktura (MX)** och **CFDI-format för annullering av faktura (MX)**.
@@ -198,7 +198,7 @@ Du ställer in elektroniska fakturering i Finance genom att utföra följande up
 
 #### <a name="import-er-configurations"></a>Importera ER-konfigurationer
 
-1. I arbetsytan **elektronisk rapportering** i avsnittet **konfigurationsprovider** väljer du rubriken **Microsoft**.
+1. I arbetsytan **elektronisk rapportering** i avsnittet **konfigurationsleverantör** väljer du rubriken **Microsoft**.
 3. Välj **Databaser**.
 4. Välj **Global resurs \> Öppna**.
 5. Importera **Svarsmeddelandemodell**, **CFDI import av fellogg (MX)** och **CFDI import av svarsmeddelande (MX)**.
@@ -223,7 +223,7 @@ Du ställer in elektroniska fakturering i Finance genom att utföra följande up
 11. I fältet **modellmappning** väljer du **CFDI importformat för svarsdata (information) – import av svarsdata**.
 12. Välj **Spara**.
 
-## <a name="process-electronic-invoices-in-finance"></a>Bearbeta elektroniska fakturor i Finance 
+## <a name="process-electronic-invoices-in-finance"></a>Bearbeta e-fakturor i Finance 
 
 Under bearbetningen av CFDI-fakturor i Finance genom E-fakturering kan du utföra följande uppgifter:
 
@@ -310,7 +310,7 @@ När du har aktiverat funktionen **konfigurerbar integrering för e-fakturering*
     ![Visa information om överföringsloggar för annullering.](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
-Om du aktiverar funktionen **CFDI mexikansk elektronisk faktura (MX)** kan det krävas att begränsade data skickas, vilket inkluderar organisationens skatteregistrerings-ID. Detta kommer att översändas till tredje parts byråer som har tillstånd av skattemyndigheten för att skicka elektroniska fakturor till denna skattemyndighet i det fördefinierade format som krävs för integrering med den offentliga sektorns webbtjänster. En administratör kan aktivera och inaktivera funktionen **CFDI mexikansk elektronisk faktura (MX)** genom att navigera till **Organisationsadministration \> Inställningar \> Parametrar för elektroniskt dokument**. Välj fliken **Funktioner**, markera de rader som innehåller funktionerna **CFDI mexikansk elektronisk faktura (MX)** och välj sedan lämpligt alternativ. Data som importeras från dessa externa system till denna Dynamics 365 onlinetjänst omfattas av vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=512132). Mer information finns i sektionerna om sekretessmeddelanden i landsspecifik funktionsdokumentation.
+Om du aktiverar funktionen **CFDI mexikansk e-faktura (MX)** kan det krävas att begränsade data skickas, vilket inkluderar organisationens skatteregistrerings-ID. Detta kommer att översändas till tredje parts byråer som har tillstånd av skattemyndigheten för att skicka e-fakturor till denna skattemyndighet i det fördefinierade format som krävs för integrering med den offentliga sektorns webbtjänster. En administratör kan aktivera och inaktivera funktionen **CFDI mexikansk e-faktura (MX)** genom att navigera till **Organisationsadministration \> Inställningar \> Parametrar för elektroniskt dokument**. Välj fliken **Funktioner**, markera de rader som innehåller funktionerna **CFDI mexikansk e-faktura (MX)** och välj sedan lämpligt alternativ. Data som importeras från dessa externa system till denna Dynamics 365 onlinetjänst omfattas av vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=512132). Mer information finns i sektionerna om sekretessmeddelanden i landsspecifik funktionsdokumentation.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

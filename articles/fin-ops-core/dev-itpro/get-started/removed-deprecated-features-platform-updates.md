@@ -1,8 +1,8 @@
 ---
 title: Borttagna eller avskrivna plattformsfunktioner
-description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning i plattformsuppdatering av Finance and Operations-appar.
+description: I detta ämne beskrivs funktioner som har tagits bort, eller som planerats för borttagning i plattformsuppdateringar av appar för ekonomi och drift.
 author: sericks007
-ms.date: 12/16/2021
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,25 +12,25 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 4ac68cfdd8f8b2c65993fbd91587e52cce56a437
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: 6b4c514d34e4afbaac4afabed6865496747c0411
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927489"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384730"
 ---
-# <a name="removed-or-deprecated-platform-features"></a>Borttagna eller avskrivna plattformsfunktioner
+# <a name="removed-or-deprecated-platform-features"></a>Borttagna eller utfasade plattformsfunktioner
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning i plattformsuppdatering av Finance and Operations-appar.
+I detta ämne beskrivs funktioner som har tagits bort, eller som planerats för borttagning i plattformsuppdateringar av appar för ekonomi och drift.
 
 - En *borttagen* funktion är inte längre tillgänglig i produkten.
 - En *borttagen* funktion är inte i aktiv utveckling och kan tas bort i en kommande uppdatering.
 
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
-Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
+Detaljerad information om objekt i appar för ekonomi och drift finns i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av appar för ekonomi och drift.
 
 ## <a name="feature-removal-effective-october-2021"></a>Funktionsborttagning som gäller oktober 2021
 
@@ -67,7 +67,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Distribueringsalternativ**              | Alla |
 | **Status**                         | Inaktuell  |
 
-## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.23 för Finance and Operations-appar
+## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.23 av appar för ekonomi och drift
 
 ### <a name="ondbsynchronize-event"></a>Händelse för OnDBSynchronize
 
@@ -90,7 +90,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Distribueringsalternativ**              | Alla |
 | **Status**                         | Inaktuell. Planerat borttagningsdatum är april 2023. |
 
-## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.21 för Finance and Operations-appar
+## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.21 av appar för ekonomi och drift
 
 ### <a name="skype-for-business-online-support"></a>Support för Skype för företag online
 
@@ -145,12 +145,12 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Den här funktionen har tagits bort för att minska omkostnaderna för hantering, övervakning och underhåll av indexhanteringen för kunder. |
 | **Ersatt av en annan funktion?**   | Framåt kommer indexunderhållet att utföras av Microsoft-tjänster. Detta sker kontinuerligt utan att användararbetsbelastningarna påverkas. |
-| **Produktområden som påverkas**         | Finance and Operations-appar|
+| **Produktområden som påverkas**         | appar för ekonomi och drift|
 | **Distribueringsalternativ**              | Molnbaserad distribution – påverkar Microsoft-hanterade produktionsmiljöer och Nivå 2 via Nivå 5 miljöer med begränsat läge. |
 | **Status**                         | Denna funktion är borttagen. |
 
 
-## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.17 för Finance and Operations-appar
+## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.17 av appar för ekonomi och drift
 
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
@@ -177,24 +177,25 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Metadata som är associerade med Dynamics AX 2012 Enterprise Portal (EP) är utfasad, eftersom EP aldrig har stöds i Finance and Operations-appar. |
+| **Orsak till inaktuell/borttagning** | Metadata som är associerade med Dynamics AX 2012 Enterprise Portal (EP) är utfasad eftersom EP aldrig haft stöd i Ekonomi- och Drift-appar. |
 | **Ersatt av en annan funktion?**   | Nej |
 | **Produktområden som påverkas**         | Webbklient |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell: All EP-kod ska tas bort i versionen för oktober 2021. |
 
-## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.15 för Finance and Operations-appar
+## <a name="deprecation-effective-december-2020"></a>Utfasning från december 2020
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11-stöd för Dynamics 365 är inaktuellt
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Från och med december 2020 kommer Microsoft Internet Explorer 11-stöd för samtliga Dynamics 365-produkter att betraktas som inaktuellt, och Internet Explorer 11 kommer inte att stödjas efter augusti 2021.<br><br>Detta påverkar kunder som använder Dynamics 365-produkter som har utformats för användning med ett Internet Explorer 11-gränssnitt. Efter augusti 2021 stöds inte Internet Explorer 11 för sådana Dynamics 365-produkter. |
+| **Orsak till inaktuell/borttagning** | Från och med december 2020 kommer Microsoft Internet Explorer 11-stöd för samtliga Dynamics 365- och Dynamics Lifecycle Services (LCS)-produkter att dras in, och Internet Explorer 11 kommer inte att stödjas efter augusti 2021.<br><br>Detta påverkar kunder som använder Dynamics 365-produkter och LCS som har utformats för användning med ett Internet Explorer 11-gränssnitt. Efter augusti 2021 stöds inte Internet Explorer 11 för sådana Dynamics 365-produkter eller LCS. |
 | **Ersatt av en annan funktion?**   | Vi rekommenderar våra kunder att övergå till Microsoft Edge.|
-| **Produktområden som påverkas**         | Alla Dynamics 365-produkter |
+| **Produktområden som påverkas**         | Alla Dynamics 365-produkter och LCS |
 | **Distribueringsalternativ**              | Allt|
 | **Status**                         | Inaktuell: Internet Explorer 11 kommer inte att stödjas efter augusti 2021.|
 
+## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.15 av appar för ekonomi och drift
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio tillägg för att tillämpa snabbkorrigeringar för metadata
 
@@ -207,7 +208,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Status**                         | Med version 10.0.15 ingår inte längre tillägget i Visual Studio-verktygen. |
 
 
-## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.14 för Finance and Operations-appar
+## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.14 av appar för ekonomi och drift
 
 ### <a name="online-users-page"></a>Sidan Onlineanvändare 
 
@@ -220,7 +221,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Status**                         | I oktober 2021 kommer det här formuläret att tas bort.   |
 
 
-## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.13 för Finance and Operations-appar
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.13 av appar för ekonomi och drift
 
 
 ### <a name="custom-code-defined-in-ssrs-report-properties"></a>Anpassad kod som definierats i SSRS-rapportens egenskaper 
@@ -264,19 +265,19 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Status**                         | I version 10.0.13/plattformsuppdatering 37 är funktionen Sparade vyer vanligtvis tillgänglig och kunder kan välja att aktivera den här funktionen. Funktionen sparade vyer kommer att vara obligatorisk i versionen oktober 2021. |
 
 
-## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.12 för Finance and Operations-appar
+## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.12 av appar för ekonomi och drift
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Formulärtillägg för rutnät- eller gruppkontroll som innehåller ogiltiga fältreferenser
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Datagruppegenskapen för rutnäts- eller gruppkontroller används för att automatiskt visa alla fält i en fältgrupp. En rutnäts- eller gruppkontroll som läggs till av tillägget kan innehålla fält som inte längre definieras i fältgruppen, eller saknas fält som är definierade i fältgruppen. Detta kan orsaka inkonsekvent beteende vid körning. Plattformsuppdateringar för version 10.0.12 av Finance and Operations-appar kategoriserar nu det här problemet som ett kompilator *varning*. Du åtgärdar det här problemet genom att öppna formulärtillägget och spara det.
+| **Orsak till inaktuell/borttagning** | Datagruppegenskapen för rutnäts- eller gruppkontroller används för att automatiskt visa alla fält i en fältgrupp. En rutnäts- eller gruppkontroll som läggs till av tillägget kan innehålla fält som inte längre definieras i fältgruppen, eller saknas fält som är definierade i fältgruppen. Detta kan orsaka inkonsekvent beteende vid körning. Plattformsuppdateringar för version 10.0.12 av appar för ekonomi och drift kategoriserar nu det här problemet som ett *kompilatorvarning*. Du åtgärdar det här problemet genom att öppna formulärtillägget och spara det.
 | **Ersatt av en annan funktion?**   | Den här kompilatorvarningen kommer att ersättas med ett kompileringsfel i en framtida uppdatering. |
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | En kompilatorvarning införs i plattformsuppdateringar för version 10.0.12 för Finance and Operations-appar. |
+| **Status**                         | En kompilatorvarning införs i plattformsuppdateringar för version 10.0.12 för appar för ekonomi och drift. |
 
-## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.11 för Finance and Operations-appar
+## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.11 av appar för ekonomi och drift
 
 ### <a name="explicit-safe-lists-for-self-service-environments"></a>Explicita säkra listor för självbetjäningsmiljöer
 
@@ -302,11 +303,11 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Fältgrupper i definitioner av registermetadata kan innehålla fältreferenser som inte är giltiga. Om dessa fältgrupper distribueras kan de orsaka körningsfel i Financial Reporting och Microsoft SQL Server Reporting Services (SSRS). Plattformsuppdatering 23 introducerade kompileraren *varning* om att detta problem med metadata har åtgärdats. Plattformsuppdateringar för version 10.0.11 av Finance and Operations-appar kategoriserar det här problemet som ett kompilator *fel*.<p>Gör så här om du vill åtgärda problemet.</p><ol><li>Ta bort den ogiltiga fältreferensen från tabellens fältgruppdefinition.</li><li>Kompilera om.</li><li>Kontrollera att eventuella fel har åtgärdats.</li></ol> |
+| **Orsak till inaktuell/borttagning** | Fältgrupper i definitioner av registermetadata kan innehålla fältreferenser som inte är giltiga. Om dessa fältgrupper distribueras kan de orsaka körningsfel i Financial Reporting och Microsoft SQL Server Reporting Services (SSRS). Plattformsuppdatering 23 introducerade kompileraren *varning* om att detta problem med metadata har åtgärdats. Plattformsuppdateringar för version 10.0.11 av appar för ekonomi och drift kategoriserar nu det här problemet som ett *kompilatorfel*.<p>Gör så här om du vill åtgärda problemet.</p><ol><li>Ta bort den ogiltiga fältreferensen från tabellens fältgruppdefinition.</li><li>Kompilera om.</li><li>Kontrollera att eventuella fel har åtgärdats.</li></ol> |
 | **Ersatt av en annan funktion?**   | Detta kompilatorfel ersätter kompilatorvarningen permanent.  |
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell: kompilatorvarningen är ett kompileringsfel i plattformsuppdateringar för version 10.0.11 av Finance and Operations-appar. |
+| **Status**                         | Inaktuell: Kompilatorvarningen är ett kompilatorfel i plattformsuppdateringar för version 10.0.11 av appar för ekonomi och drift. |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>ISV-licenser som skapats med hjälp av SHA1-hashing-algoritm
 

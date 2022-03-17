@@ -2,7 +2,7 @@
 title: Ansluta kringutrustning till POS
 description: Detta avsnitt innehåller information om hur du ansluter kringutrustning till Retail POS.
 author: BrianShook
-ms.date: 06/20/2017
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 66912443c25adfae6fa11e6a25c4a97f63a438ba
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: f1c53c7215d3a5a182f345d5e040274ae06f9b12
+ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779528"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8370961"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Ansluta kringutrustning till POS
 
@@ -46,11 +46,11 @@ Kassaregistret är en enhet som används för att definiera egenskaperna hos en 
 
 Navigering: klicka på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Enheter**.
 
-En enhet är en entitet som representerar en fysisk instans av en enhet som är mappad till ett kassaregister. När en enhet skapas är den mappad till ett kassaregister. Enhetsentiteten spårar information om när ett kassaregister aktiveras, vilken typ av klient som används och programpaketet som har distribuerats till en viss enhet. Det finns två typer av enheter: **Retail modern POS** (modernt butikskassaregister (MPOS)) och **Retail Cloud POS** (molnbaserat butikskassaregister).
+En enhet är en entitet som representerar en fysisk instans av en enhet som är mappad till en kassaapparat. När en enhet skapas är den mappad till en kassaapparat. Enhetsentiteten spårar information om när en kassaapparat aktiveras, vilken typ av klient som används och programpaketet som har distribuerats till en viss enhet. Det finns två typer av enheter: **Retail modern POS** (modern butikskassaapparat (MPOS)) och **Retail Cloud POS** (molnbaserat butikskassaapparater).
 
 #### <a name="mpos"></a>MPOS
 
-MPOS är ett kassaklientprogram som är installerat på Windows 8.1 eller ett senare PC-baserat operativsystem. Om programtypen **Retail modern POS** har mappats till en enhet kan hämtningspaketet anges för en viss enhet. Paketet kan anpassas för att inkludera olika versioner av installationspaketet. Möjligheten att distribuera olika paket ger flexibilitet i de fall där olika kassaregister kan behöva olika integrationer. MPOS distribueras tillsammans med en inbyggd maskinvarustation.
+MPOS är ett kassaklientprogram som är installerat på Windows 8.1 eller ett senare PC-baserat operativsystem. Om programtypen **Retail modern POS** har mappats till en enhet kan hämtningspaketet anges för en viss enhet. Paketet kan anpassas för att inkludera olika versioner av installationspaketet. Möjligheten att distribuera olika paket ger flexibilitet i de fall där olika kassaapparater kan behöva olika integrationer. MPOS distribueras tillsammans med en inbyggd maskinvarustation.
 
 #### <a name="cloud-pos"></a>Cloud POS
 
@@ -58,21 +58,15 @@ Molnkassa är en webbläsarbaserad kassa. Eftersom det körs i webbläsaren krä
 
 ### <a name="hardware-profile"></a>Maskinvaruprofil
 
-Navigering: Klicka på **Commerce** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Maskinvaruprofiler**.
+Navigering: Gå till **Retail och Commerce \> Kanalinställningar \> Kassainställning \> Kassaprofiler \> Maskinvaruprofiler**.
 
-En maskinvaruprofil identifierar den maskinvara som är ansluten till ett kassaregister eller en maskinvarustation. Maskinvaruprofilen används också för att ange betalningsprocessorparametrar som ska användas vid kommunikation med SDK (Software Development Kit) för betalning. (SDK för betalning distribueras som en del av maskinvarustationen.)
+En maskinvaruprofil identifierar den maskinvara som är ansluten till en kassaapparat via en inbyggd eller delad maskinvarustation. Maskinvaruprofilen används också för att ange betalningsprocessorparametrar som ska användas vid kommunikation med SDK (Software Development Kit) för betalning. SDK för betalning distribueras som en del av maskinvarustationen.
 
-### <a name="hardware-station"></a>Hardware Station
+### <a name="hardware-station"></a>Maskinvarustation
 
-Navigering: Klicka på **Retail och Commerce** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker**. Markera en butik och klicka på snabbfliken **Maskinvarustationer**.
+Navigering: Gå till **Butik och handel \> Kanaler \> Butiker \> Alla butiker**, välj en butik och välj sedan snabbfliken **Maskinvarystationer**.
 
 En station för maskinvara är en instans av affärslogiken som ligger till grund för kringutrustningen för POS. En maskinvarustation installeras automatiskt tillsammans med MPOS. Alternativt kan maskinvarustationen installeras som en fristående komponent och sedan kommas åt via MPOS eller Cloud POS via en webbtjänst. Maskinvarustationen måste definieras på kanalnivå.
-
-### <a name="hardware-station-profile"></a>Maskinvarustationens profil
-
-Navigering: Klicka på **Commerce** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Profiler för maskinvarustation**.
-
-Medan maskinvarustationen som anges på kanalnivå innehåller instansspecifik information såsom URL för maskinvarustationen innehåller maskinvarustationens profil information som kan vara statisk eller delad över flera maskinvarustationer. Statisk information innehåller den port som ska användas, maskinvarustationspaketet och maskinvaruprofilen. Statisk information innehåller också en beskrivning av vilken typ av maskinvarustation som distribueras såsom **Checka ut** eller **Returer** beroende på vilken maskinvara som krävs för varje specifik maskinvarustation.
 
 ## <a name="scenarios"></a>Scenarier
 
@@ -80,36 +74,33 @@ Medan maskinvarustationen som anges på kanalnivå innehåller instansspecifik i
 
 [![Traditionell, fast kassa.](./media/traditional-300x279.png)](./media/traditional.png)
 
-Anslut MPOS till kassans kringutrustning i ett traditionellt, fast kassascenario genom att först navigera till själva POS och tilldela en maskinvaruprofil. Du hittar kassaregister om du går till **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassor**. 
+Anslut MPOS till kassans kringutrustning i ett traditionellt, fast kassascenario genom att först navigera till själva POS och tilldela en maskinvaruprofil. Du hittar kassaapparater om du går till **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassor**. 
 
 När du har tilldelat maskinvaruprofilen ska du synkronisera ändringar i kanaldatabasen med hjälp av distributionsschemat **Kassor**. Du hittar distributionsscheman om du går till **Butik och handel** &gt; **Butik och handel-IT** &gt; **Distributionsschema**. 
 
-Ställ därefter in en "lokal" maskinvarustation på kanalen. Klicka på **Retail och Commerce** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker** och välj en butik. 
+Konfigurera därefter en särskild maskinvarustation på kanalen. Gå till **Butik och handel \> Kanaler \> Butiker \> Alla butiker** och välj en butik. 
 
-Välj sedan snabbfliken **Maskinvarustationer** och klicka på **Lägg till** för att lägga till en maskinvarustation. Ange en beskrivning, ange **localhost** som värdnamn och synkronisera sedan ändringarna till kanalen med hjälp av distributionsschemat **Kanalkonfiguration**. Du hittar distributionsscheman om du går till **Butik och handel** &gt; **Butik och handel-IT** &gt; **Distributionsschema**. 
+På snabbfliken **Maskinvarustationer** väljer du sedan **Lägg till** för att lägga till en maskinvarustation. Välj **Dedikerad** som maskinvarustationstyp och ange sedan en beskrivning. Fältet **Maskinvaruprofil** kan lämnas tomt, detta eftersom maskinvaruprofilen som används i det här scenariot kommer från själva kassaapparaten. Synkronisera sedan ändringarna med kanalen via distributionsschemat **Kanalkonfiguration**. Du hittar distributionsscheman på **Butik och handel \> IT för butik och handel \> Distributionsschema**. 
 
-Gå sedan till MPOS och använd åtgärden **Välj maskinvarustation** och markera maskinvarustationen **localhost**. Ställ in maskinvarustation till **Aktiv**. Den maskinvaruprofil som används i det här fallet bör komma från själva kassaregistret. En maskinvarustationsprofil är inte obligatorisk för det här scenariot.
+Slutligen kan du i MPOS använda åtgärden **Välj maskinvarustation** för att välja den maskinvarustation som matchar värdet du tidigare angett för beskrivningen samt ställa in maskinvarustationen på **Aktiv**. 
 
 > [!NOTE]
-> Vissa ändringar av maskinvaruprofilen såsom ändringar av kassalådor kräver att ett nytt skift öppnas efter att ändringarna har synkroniserats till kanalen.
->
-> Cloud POS måste använda den fristående maskinvarustationen för kommunikation med kringutrustningen.
+> - Vissa ändringar av maskinvaruprofilen såsom ändringar av kassalådor kräver att ett nytt skift öppnas efter att ändringarna har synkroniserats till kanalen.
+> - Cloud POS måste använda den fristående maskinvarustationen för kommunikation med kringutrustningen.
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS eller Cloud POS med en fristående maskinvarustation
 
 [![Delad kringutrustning.](./media/shared-300x254.png)](./media/shared.png)
 
-I det här scenariot delas en fristående maskinvarustation mellan MPOS- och Cloud POS-klienter. Det här scenariot kräver att du skapar en maskinvarustationsprofil för att du ska kunna specificera vilket hämtningsbart paket, vilken port och vilken maskinvaruprofil maskinvarustationen använder. Du hittar maskinvarustationsprofilen genom att gå till **Butik och handel** &gt; **Kanalinställning** &gt; **Kassainställning** &gt; **Kassaprofiler** &gt; **Maskinvarustationens profiler**. 
+I det här scenariot delas en fristående maskinvarustation mellan MPOS- och Cloud POS-klienter. Detta scenario kräver att du skapar en delad maskinvarustation och anger vilket hämtningsbart paket, vilken port och vilken maskinvaruprofil som maskinvarustationen använder. Du definierar en ny maskinvarustation genom att välja snabbfliken **Maskinvarustationer** i den specifika kanalen (**Butik och handel \> Kanaler \> Butiker \> Alla butiker**) och lägger till en ny maskinvarustation av typen **Delad**. 
 
-När du har skapat maskinvarustationsprofilen, navigera till den specifika kanalen (**Retail och Commerce** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker**) och lägg till en ny maskinvarustation. Mappa den nya maskinvarustationen till maskinvarustationsprofilen som skapades tidigare. 
+Tillhandahåll sedan en beskrivning som hjälper kassören att identifiera maskinvarustationen. I fältet **Värdnamn** anger du värdmaskinens URL i följande format: `https://<MachineName:Port>/HardwareStation`. (Ersätt **&lt;MachineName:Port&gt;** med det faktiska maskinnamnet på maskinvarustationen.) För en fristående maskinvarustation måste du också ange terminal-ID för elektronisk betalning (EFT). Det här värdet identifierar den EFT-terminal som är ansluten till maskinvarustationen när betalningskopplingen kommunicerar med betalningsförmedlaren. 
 
-Tillhandahåll sedan en beskrivning som hjälper kassören att identifiera maskinvarustationen. I fältet **Värdnamn** anger du värdmaskinens URL i följande format: `https://<MachineName:Port>/HardwareStation`. (Ersätt **&lt;MachineName:Port&gt;** med det faktiska datornamnet på maskinvarustationen och den port som anges i maskinvarustationens profil.) För en fristående maskinvarustation måste du också ange terminal-ID för elektronisk betalning (EFT). Det här värdet identifierar den EFT-terminal som är ansluten till maskinvarustationen när betalningskopplingen kommunicerar med betalningsförmedlaren. 
-
-Navigera sedan från den faktiska maskinvarustationen till kanalen och välj maskinvarustation. Klicka på **Hämta** och installera maskinvarustationen. 
+Navigera sedan från den maskin som ska agera värd för maskinvarustationen, gå till kanalen i administrationen och välj maskinvarustationen. Välj sedan **Hämta** för att hämta installationsprogrammet för maskinvarustationen och installera maskinvarustationen. Mer information om hur du installerar maskinvarustationen finns i [Konfigurera och installera maskinvarustation för butik](retail-hardware-station-configuration-installation.md). 
 
 Använd därefter MPOS eller Clod POS för att utföra åtgärden **Välj maskinvarustation** för att välja den maskinvarustation som tidigare installerades. Välj **Koppla** för att upprätta en säker förbindelse mellan POS och maskinvarustationen. Det här steget måste slutföras en gång för varje kombination av en kassa och en maskinvarustation. 
 
-När maskinvarustationen är kopplad används samma operation för att aktivera maskinvarustationen medan den används. I det här scenariot ska maskinvaruprofilen tilldelas maskinvarustationens profil snarare än själva kassaapparaten. Om en maskinvarustation av någon anledning inte har tilldelats någon maskinvaruprofil direkt, kommer den maskinvaruprofil som tilldelats kassaapparaten att användas.
+När maskinvarustationen är kopplad används samma operation för att aktivera maskinvarustationen medan den används. I det här scenariot ska maskinvaruprofilen tilldelas till den delade maskinvarustationen istället för själva kassaapparaten. Om en maskinvaruprofil av någon anledning inte har tilldelats någon maskinvarustation direkt, kommer den maskinvaruprofil som tilldelats kassaapparaten att användas.
 
 ## <a name="client-maintenance"></a>Underhåll av klient
 
@@ -158,19 +149,19 @@ Funktionsprofilen ställs in på butiksnivån. Denna används för att ange inst
 
 - Snabbfliken **Kvittonumrering**:
 
-    - Ange kvittonumreringsmaskar (som kan innefatta segment för butiksnummer, terminalnummer och konstanter) och om försäljning, returer, försäljningsorder och offerter ska skrivas ut i olika sekvenser eller om alla ska följa samma sekvens.
+    - Ange inleveransnumreringsmaskar (som kan innefatta segment för butiksnummer, terminalnummer och konstanter) samt huruvida försäljning, returer, försäljningsorder och offerter ska skrivas ut i olika sekvenser eller om alla ska följa samma sekvens.
 
 #### <a name="receipt-profiles"></a>Kvittoprofiler
 
-Kvittoprofiler tilldelas till skrivare via maskinvaruprofilen. De används för att ange vilken typ av kvitto som skrivs ut på en viss skrivare. Profilerna innehåller inställningar för kvittoformat och inställningar som fastställer om kvittot alltid ska skrivas ut eller om kassören ska uppmanas att besluta om kvittot ska skrivas ut. Olika skrivare kan också använda olika kvittoprofiler. Exempel: Skrivare 1 är en termisk standardkvittoskrivare och har därför ett mindre kvittoformat. Skrivare 2 är dock en skrivare som skriver ut fullskaliga kvitton som enbart används för att skriva ut kundorderkvitton, vilket kräver mer utrymme.
+Inleveransprofiler tilldelas till skrivare via maskinvaruprofilen. De används för att ange vilken typ av kvitto som skrivs ut på en viss skrivare. Profilerna innehåller inställningar för kvittoformat och inställningar som fastställer om kvittot alltid ska skrivas ut eller om kassören ska uppmanas att besluta om kvittot ska skrivas ut. Olika skrivare kan också använda olika kvittoprofiler. Exempel: Skrivare 1 är en termisk standardkvittoskrivare och har därför ett mindre kvittoformat. Skrivare 2 är dock en skrivare som skriver ut fullskaliga kvitton som enbart används för att skriva ut kundorderkvitton, vilket kräver mer utrymme. Mer information finns i [konfigurera en inleveransprofil](configure-emailed-receipt-formats.md#configure-a-receipt-profile).
 
 #### <a name="hardware-profiles"></a>Maskinvaruprofiler
 
-Maskinvaruprofiler beskrevs som en komponent för klientinstallation tidigare i denna artikel. Maskinvaruprofiler tilldelas direkt till kassaregister eller till maskinvarustationsprofiler. De används för att ange vilka typer av enheter ett visst kassaregister eller maskinvarustation använder. Maskinvaruprofiler kan även användas för att ange EFT-inställningar som används för att kommunicera med betalnings-SDK:n.
+Maskinvaruprofiler beskrevs som en komponent för klientinstallation tidigare i detta ämne. Maskinvaruprofiler tilldelas direkt till kassaapparaten eller till en delad maskinvarustation och används för att ange de typer av enheter som en specifik kassaapparat eller maskinvara använder. Maskinvaruprofiler kan även användas för att ange EFT-inställningar som används för att kommunicera med betalnings-SDK:n.
 
 #### <a name="visual-profiles"></a>Visuella profiler
 
-Visuella profiler tilldelas på registernivå. De används för att ange temat för en viss kassa. Profilerna innehåller inställningarna för typen av program som ska användas (MPOS eller Cloud POS), accentfärg och tema, teckensnittsschema, inloggningsbakgrund och kassabakgrund.
+Visuella profiler används för att ange tema för en specifik kassaapparat och tilldelas på kassaapparatnivå. Profilerna innehåller inställningarna för typen av program som används (MPOS eller Cloud POS), accentfärg och tema, teckensnittsschema, inloggningssidans bakgrund och kassabakgrund. Mer information finns i [Skapa visuella profiler för kassa (POS)](tasks/create-pos-visual-profile-2016-02.md). 
 
 ### <a name="custom-fields"></a>​Anpassade fält
 
@@ -180,17 +171,13 @@ Du kan skapa anpassade fält om du vill lägga till fält som inte tillhandahål
 
 Du kan åsidosätta standardsträngar i POS med hjälp av språktextposter. Lägga till en ny språktextrad om du vill åsidosätta en sträng i POS. Ange ett ID, standardsträngen som ska åsidosättas och den text som ska visas i POS i stället för standardsträngen.
 
-### <a name="hardware-station-profiles"></a>Maskinvarustationens profiler
-
-Maskinvarustationens profiler beskrevs tidigare i denna artikel. De används för att tilldela ej instansspecifik information till maskinvarustationer.
-
 ### <a name="channel-reports-configuration"></a>Konfiguration av kanalrapporter
 
 Du ställer in de rapporter som är tillgängliga i kanalen på sidan **Rapportkonfiguration för kanal**. Du kan skapa nya rapporter genom att ange XML-definitionen för rapporten och tilldela rapporten till en viss behörighetsgrupp i POS.
 
 ### <a name="devices"></a>Enheter
 
-Enheter beskrevs tidigare i denna artikel. De används för att hantera aktivering av ett visst kassaregister. Enheter används också för att ange vilket program som används för en viss kassa och det installationspaket som ska användas för att installera MPOS-klienten. Här är enhetens aktiveringstillstånd:
+Enheter beskrevs tidigare i denna artikel. De används för att hantera aktivering av en viss kassaapparat. Enheter används också för att ange vilket program som används för en viss kassa och det installationspaket som ska användas för att installera MPOS-klienten. Här är enhetens aktiveringstillstånd:
 
 - **Väntande** – Enheten är redo att aktiveras.
 - **Aktiverad** – Enheten har aktiverats.
@@ -202,6 +189,10 @@ Ytterligare aktiveringsrelaterad information omfattar arbetstagare som har ändr
 ### <a name="client-data-synchronization"></a>Klientdatasynkronisering
 
 Alla ändringar av en kassaklient, förutom ändringar av enhetens aktiveringsstatus, måste synkroniseras till kanaldatabasen för att börja gälla. Om du vill synkronisera ändringar i kanaldatabasen, gå till **Butik och handel** &gt; **Butik och handel-IT** &gt; **Distributionsschema** och kör det obligatoriska distributionsschemat. För klientändringar bör du köra distributionsschemat **Kassor** och även distributionsschemat **Kanalkonfiguration**.
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+[Konfigurera och installera Retail Hardware Station](retail-hardware-station-configuration-installation.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

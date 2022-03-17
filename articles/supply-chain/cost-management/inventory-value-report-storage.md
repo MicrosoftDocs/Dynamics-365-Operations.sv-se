@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: banluo
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3da92c384d3074335067433120eccc97d11b6b81
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: d78cde26d238d18744adde9a576552588736e619
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103950"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384705"
 ---
 # <a name="inventory-value-reports"></a>Lagervärderapporter
 
@@ -102,7 +102,7 @@ På sidan **Lagervärdesrapporter** kan du konfigurera innehållet som ingår i 
         - Mottagna och ännu inte fakturerade artiklar när alternativet **Bokför fysiskt lager** frigörs för den relevanta artikelmodellgruppen.
         - Mottagna och ännu inte fakturerade artiklar när alternativet **Bokför produktinleverans i redovisning** har rensats på snabbfliken **Produktmottagning** på fliken **Allmänt** på sidan **Parametrar för leverantörsreskontra** (**Leverantörskontra \> Inställningar \> Parametrar för leverantörsreskontra**).
 
-    - **Beräkna genomsnittlig enhetskostnad** – Ange detta alternativ som *Ja* om du vill visa genomsnittlig enhetskostnad. Den genomsnittliga enhetskostnaden är den totala kvantiteten delad med det totala beloppet.
+    - **Beräkna genomsnittlig enhetskostnad** – Ange detta alternativ som *Ja* om du vill visa genomsnittlig enhetskostnad. Den genomsnittliga enhetskostnaden är det totala beloppet delat med den totala kvantiteten.
     - **Total kvantitet och värde** – Ange detta alternativ som *Ja* för att visa kolumner som visar den totala kvantiteten för fysiskt lager (och ekonomiska kvantiteter) och den totala mängden fysiskt lager (och ekonomiska belopp). Du kan endast ange detta alternativ som *Ja* endast om alternativet **Sammanfatta fysiska och ekonomiska värden** är inställt på *Nej*.
     - **Lagerdimensioner** – I detta rutnät markerar du kryssrutan **Visa** för varje dimension som du vill visa i rapporten. Endast dimensioner där alternativet **Ekonomiskt lager** har aktiverats kommer att visa värden i rapporten. Övriga dimensioner visar bara tomma kolumner. För de dimensioner som du väljer att visa kan du också markera kryssrutan **Summa** för att även inkludera summor.
     - **Resurs-ID** – Ange alternativet **Visa** som *Ja* för att visa en kolumn som identifierar artikeln för respektive rad. Ställ in alternativet **Summa** som *Ja* för att även inkludera summor. Beroende på vilken typ av artikel som visas på varje enskild rad visas någon av följande informationstyper i kolumnen:

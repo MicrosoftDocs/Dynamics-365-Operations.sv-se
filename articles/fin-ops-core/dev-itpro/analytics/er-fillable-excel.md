@@ -2,7 +2,7 @@
 title: Skapa en konfiguration för att generera dokument i Excel-format
 description: Det här avsnittet beskriver hur du utformar ett elektroniskt rapporteringsformat (ER) för att fylla i en Excel-mall och sedan generera utgående dokument i Excelformat.
 author: NickSelin
-ms.date: 01/05/2022
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9b1c83894d93789a270ed4521ba7f80da70285ac
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 1b2f38aa9e5eff9366697afd57ceefd06f026096
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952662"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388273"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Skapa en konfiguration för att generera dokument i Excel-format
 
@@ -49,7 +49,7 @@ Du måste lägga till en **Excel\\fil**-komponent i det konfigurerade ER-formate
 
 ![Excel-\filkomponent.](./media/er-excel-format-add-file-component.png)
 
-Om du vill ange layouten för det utgående dokumentet bifogar du en Excel-arbetsbok med filnamnstillägget .xlsx till komponenten **Excel\\fil** som mall för utgående dokument.
+Om du vill ange layouten för det utgående dokumentet bifogar du en Excel-arbetsbok med tillägget .xlsx till komponenten **Excel\\fil** som mall för utgående dokument.
 
 > [!NOTE]
 > När du bifogar en mall manuellt måste du använda en [dokumenttyp](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types) som har konfigurerats för detta syfte i [ER-parametrarna](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
@@ -83,31 +83,48 @@ På fliken **Mappning** i ER-åtgärdsdesignern kan du konfigurera egenskapen **
 
 ## <a name="range-component"></a>Intervall-komponent
 
-**Intervall**-komponenten anger ett Excel-intervall som måste kontrolleras av denna ER-komponent. Namnet på intervallet definieras i egenskapen **Excel-intervall** för den här komponenten.
-
-### <a name="replication"></a>Replikering
-
-Egenskapen **Replikeringsriktning** anger om och hur intervallet ska upprepas i ett genererat dokument:
-
-- Om egenskapen **Replikeringsriktning** anges som **Ingen replikering** upprepas inte det aktuella Excel-intervallet i det genererade dokumentet.
-- Om egenskapen **Replikeringsriktning** anges som **Lodrät** upprepas lämpligt Excel-intervall i det genererade dokumentet. Varje replikerat intervall placeras under det ursprungliga intervallet i en Excel-mall. Antalet upprepningar definieras av antalet poster i en data källa för den typ av **Postlista** som är bunden till den här ER-komponenten.
-- Om egenskapen **Replikeringsriktning** anges som **Horisontell** upprepas lämpligt Excel-intervall i det genererade dokumentet. Varje replikerat intervall placeras till höger om det ursprungliga intervallet i en Excel-mall. Antalet upprepningar definieras av antalet poster i en data källa för den typ av **Postlista** som är bunden till den här ER-komponenten.
-
-Om du vill veta mer om vågrät replikering följer du stegen i [Använd vågrätt expanderbara intervall för att dynamiskt lägga till kolumner i Excel-rapporter](tasks/er-horizontal-1.md).
-
 ### <a name="nested-components"></a>Kapslade komponenter
 
-**Intervall**-komponenten kan ha andra kapslade ER-komponenter som används för att ange värden i lämpliga Excel-namngivna intervall.
+#### <a name="data-typing"></a>Datatyper
+
+**Intervall**-komponenten kan ha andra kapslade ER-komponenter som används för att ange värden i lämpliga intervall.
 
 - Om en komponent i **Text**-gruppen används för att ange värden, anges värdet i ett Excel-intervall som ett textvärde.
 
     > [!NOTE]
     > Använd det här mönstret om du vill formatera angivna värden baserat på de språk som har definierats i programmet.
 
-- Om en **Cell**-komponent tillhörande gruppen **Excel** används för att ange värden, anges värdet i ett Excel-intervall som värde för den datatyp som definieras av bindningen för den **Cell**-komponenten (t.ex. **Sträng**, **Verklig** eller **Heltal**).
+- Om komponenten **Cell** för gruppen **Excel** används för att ange värden, så anges värdet i ett Excel-intervall som ett värde för den datatyp som definieras av bindningen för den **Cell**-komponenten. Datatypen kan till exempel vara **Sträng**, **Verklig** eller **Heltal**.
 
     > [!NOTE]
     > Använd det här mönstret om du vill göra det möjligt för Excel-programmet att formatera angivna värden baserat på språkinställningen för den lokala dator som öppnar det utgående dokumentet.
+
+#### <a name="row-handling"></a>Radhantering
+
+Komponenten **Intervall** kan konfigureras som lodrätt replikerad så att flera rader genereras i ett Excel-kalkylblad. Raderna kan genereras av den överordnade **Intervall**-komponenten eller av dess kapslade **Intervall**-komponenter.
+
+I version 10.0.26 och senare kan du tvinga fram ett genererat kalkylblad för att behålla de genererade raderna på samma sida. Ange alternativet **Behåll rader tillsammans** i ER-formatdesignern som **Ja** för överordnad **Intervall**-komponent i det redigerbara ER-formatet. ER försöker sedan att behålla allt innehåll som genereras av intervallet på samma sida. Om innehållets höjd överstiger det återstående utrymmet på den aktuella sidan läggs en sidbrytning till, och innehållet börjar högst upp på nästa nya sida.
+
+> [!NOTE]
+> Vi rekommenderar att du bara konfigurerar alternativet **Behåll rader tillsammans** för intervall som sträcker sig över hela bredden i ett genererat dokument.
+>
+> Alternativet **Behåll rader tillsammans** kan endast användas för **Excel \> Fil**-komponenter som är konfigurerade att använda en Excel-arbetsboksmall.
+>
+> Alternativet **Håll ihop rader** fungerar bara när funktionen **Aktivera användning av EPPlus-biblioteket i ramverksfunktionen för elektronisk rapportering** är aktiverad.
+>
+> Den här funktionen kan användas för **intervallkomponenter** som finns under komponenten **Sida**. Det finns emellertid inga garantier för att [sidfotssummor](er-paginate-excel-reports.md#add-data-sources-to-calculate-page-footer-totals) beräknas korrekt med hjälp av datakällor för [datainsamling](er-data-collection-data-sources.md).
+
+Om du vill lära dig använda detta alternativ följer du exempelstegen i [Designa ett ER-format för att hålla ihop rader på samma Excel-sida](er-keep-excel-rows-together.md).
+
+### <a name="replication"></a>Replikering
+
+Egenskapen **Replikeringsriktning** anger huruvida samt hur ett intervall kommer att upprepas i ett genererat dokument:
+
+- **Ingen replikering** – Lämpligt Excel-intervall upprepas inte i det genererade dokumentet.
+- **Vertikalt** – Lämpligt Excel-intervall upprepas vertikalt i det genererade dokumentet. Varje replikerat intervall kommer att placeras under det ursprungliga intervallet i en Excel-mall. Antalet upprepningar definieras av antalet poster i en data källa för den typ av **Postlista** som är bunden till den här ER-komponenten.
+- **Horisontellt** – Lämpligt Excel-intervall upprepas horisontellt i det genererade dokumentet. Varje replikerat intervall kommer att placeras till höger om det ursprungliga intervallet i en Excel-mall. Antalet upprepningar definieras av antalet poster i en data källa för den typ av **Postlista** som är bunden till den här ER-komponenten.
+
+    Om du vill veta mer om vågrät replikering följer du stegen i [Använd vågrätt expanderbara intervall för att dynamiskt lägga till kolumner i Excel-rapporter](tasks/er-horizontal-1.md).
 
 ### <a name="enabling"></a>Aktiverar
 
@@ -280,12 +297,12 @@ När ett utgående dokument i ett Microsoft Excel arbetsboksformat genereras, ka
 
 - Välj **Automatisk** för att beräkna om alla beroende formler varje gång som ett genererat dokument läggs till av nya intervaller, celler osv.
 
-    >[!NOTE]
+    > [!NOTE]
     > Det kan orsaka ett prestandaproblem för Excel-mallar som innehåller många relaterade formler.
 
 - Välj **Manuell** för att undvika omberäkningar av formler när ett dokument genereras.
 
-    >[!NOTE]
+    > [!NOTE]
     > Omräkning av formel utförs påtvingat manuellt när ett genererat dokument öppnas för förhandsgranskning med Excel.
     > Använd inte det här alternativet om du konfigurerar en ER-destination som förutsätter användning av ett genererat dokument utan förhandsgranskning i Excel (PDF-konvertering, e-post osv.) eftersom det genererade dokumentet kanske inte innehåller värden i celler med formler.
 

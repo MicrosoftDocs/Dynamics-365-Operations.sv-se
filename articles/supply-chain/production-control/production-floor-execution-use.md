@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: a677eb71f97a953c625a1f667b055e5b7696fbe6
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075029"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384435"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hur arbetare använder körningsgränssnittet för produktionsgolvet
 
@@ -71,6 +71,18 @@ Listan med aktiva jobb har följande kolumner:
 - **Slutförd** – i den här kolumnen visas den kvantitet som redan har slutförts för ett jobb.
 - **Kasserad** – i den här kolumnen visas den kvantitet som redan har kasserats för ett jobb.
 - **Resterande** – i den här kolumnen visas den kvantitet som återstår att färdigställa för ett jobb.
+
+## <a name="my-jobs-tab"></a>Fliken Mina jobb
+
+Fliken **Mina jobb** gör det enkelt för medarbetarna att visa alla icke-startade och icke-definierade jobb som har tilldelats enkom för dem. Det är användbart i företag där jobb ibland eller alltid tilldelas till specifika medarbetare (personal) istället för andra typer av resurser (till exempel maskiner). 
+
+Planeringssystemet tilldelar automatiskt varje produktionsjobb till en viss resurspost, och varje resurspost har en typ (till exempel maskin eller person). När du ställer in en medarbetare som produktionsmedarbetare kan du koppla medarbetarkontot till en unik personalpost. 
+
+Fliken **Mina jobb** listar alla icke-startade och icke-definierade jobb som har tilldelats personalposten för den inloggade medarbetaren, om någon medarbetare är inloggad. Den listar aldrig jobb som har tilldelats en maskin eller annan typ av resurs, även om den inloggade medarbetaren har börjat arbeta med dessa jobb.
+
+Om du vill visa alla jobb som har startats av den inloggade arbetaren - oavsett vilken typ av resurs som varje jobb har tilldelats - använder du fliken **Aktiva jobb**. Om du vill visa alla icke-avslutade jobb som matchar konfigurationen för det lokala jobbfiltret - oavsett medarbetar- eller startstatus - använder du fliken **Alla jobb**.
+
+![Fliken Mina jobb.](media/pfei-my-jobs-tab.png "Fliken Mina jobb")
 
 ## <a name="my-machine-tab"></a>Min maskinflik
 
@@ -133,6 +145,13 @@ Om en batchorder skapas från en receptversion där alternativet **variation av 
 
 I det här fallet kan arbetaren ange samprodukten och kvantiteten som ska rapporters genom att välja **variationer av samprodukter** i dialogrutan för rapportförloppet. Arbetaren kan sedan välja bland alla frisläppta produkter som definieras som samprodukter.
 
+### <a name="reporting-catch-weight-items"></a>Rapportera artiklar med nominell vikt
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Medarbetare kan använda gränssnittet för exekvering på produktionsgolvet för att rapportera framsteg rörande batchorder om skapats för artiklar med nominell vikt. Batchorder skapas från formler, vilkar kan definieras så att de har artiklar med nominell vikt som formelartiklar, samprodukter och biprodukter. En formel kan också definieras till att ha formelrader för ingredienser som är definierade för nominell vikt. Artiklar med nominell vikt använder två måttenheter för att spåra lager: nominell viktkvantitet och lagerkvantitet. Inom till exempel livsmedelsindustrin kan förpackat kött definieras som en nominell viktartikel, där den nominella viktkvantiteten används för att spåra antalet kartonger och lagerkvantiteten används för att spåra kartongerna.
+
 ## <a name="reporting-scrap"></a>Rapportera kassation
 
 När en arbetare slutför eller delvis slutför ett jobb kan de rapportera kassation genom att välja ett jobb på **Aktiva jobb** och flik **Rapportera kassation**. Sedan i dialogrutan **Rapportera kassation** anger arbetaren kassationskvantiteten med hjälp av det numeriska tangentbordet. Arbetaren väljer också en orsak (*ingen*, *maskin*, *operatör* eller *material*).
@@ -187,6 +206,13 @@ Följande åtgärder kan utföras:
 
 Knappen **Justera material** kan konfigureras så att den visas i verktygsfältet till höger. (Mer information finns i [Designa körningsgränssnittet för produktionsgolvet](production-floor-execution-tabs.md).) En arbetare kan välja **Justera material** för ett produktionsjobb som pågår. I det här fallet visas dialogrutan **Justera material**, där arbetaren kan göra de önskade justeringarna. När dialogrutan är öppen skapas en produktionsplockningslista som innehåller rader för de justerade kvantiteterna för tillverkningsordern. Om arbetaren väljer **Bokför nu**, bekräftas justeringen och plocklistan bokförs. Om arbetaren väljer **Avbryt**, plocklistan raderas och ingen justering görs.
 
+### <a name="adjust-material-consumption-for-catch-weight-items"></a>Justera materialförbrukning för nominella viktartiklar
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Medarbetarna kan justera materialförbrukningen för nominella viktartiklar. Denna funktion används i scenarier där den faktiska kvantiteten av material med nominell vikt som förbrukats av ett produktionsjobb var mer eller mindre än den planerade kvantiteten. Därför måste den justeras för att hålla lagernivåerna aktuella. När en medarbetare justerar förbrukningen av en artikel med nominell vikt kan han eller hon justera både kvantiteten med nominell vikt och lagerkvantiteten. Om till exempel ett produktionsjobb planeras att förbruka fem lådor med en uppskattad vikt på 2 kilo per låda kan medarbetaren justera båda antalet lådor som ska förbrukas och lådornas vikt. Systemet validerar att den angivna vikten för lådorna ligger inom den definierade minimi- och maximitröskel som definierats på den frisläppta produkten.
+
 ### <a name="reserve-materials"></a>Reservera material
 
 I dialogrutan **Justera material** kan en arbetare göra och justera materialreservationer genom att välja **Reservera material**. I dialogrutan **Reservera material** som visas det fysiskt tillgängliga lagret för artikeln för varje lagrings- och spårningsdimension.
@@ -197,6 +223,8 @@ Mer information om hur du ställer in platsen för produktionsindata finns i fö
 
 > [!NOTE]
 > Reservationer som en arbetare gör dialogrutan **Reservera material** finns kvar när arbetaren väljer **Avbryt** i dialogrutan **Rapportera framsteg** eller **Rapport kassation**.
+>
+> Det går inte att justera reservationer för artiklar med nominell vikt.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Slutföra ett jobb och starta ett nytt jobb
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: ea39a1fc9092aaa4622c7193f7538acc85aa0f46
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 8917c9b265bc3df19517f052e28fb7644057cb46
+ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952687"
+ms.lasthandoff: 02/22/2022
+ms.locfileid: "8330711"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrera med tillverkningsutförandesystem från tredje part
 
@@ -152,7 +152,7 @@ Följande tabell visar de fält som varje rad i `ReportFinishedLines`-avsnittet 
 | `ProductionWarehouseLocationId` | Valfritt | Sträng |
 | `InventoryDimension1` till `InventoryDimension12` | Valfritt | Sträng |
 
-De 12 utökningsbara dimensionerna (`InventoryDimension1` genom `InventoryDimension12`) kräver anpassning och används inte alltid. Mer information om dem finns i [Lägg till nya lagerdimensioner via filnamnstillägg](../../fin-ops-core/dev-itpro/extensibility/inventory-dimensions.md).
+De 12 utökningsbara dimensionerna (`InventoryDimension1` genom `InventoryDimension12`) kräver anpassning och används inte alltid. Mer information om dem finns i [Lägg till nya lagerdimensioner via tillägg](../../fin-ops-core/dev-itpro/extensibility/inventory-dimensions.md).
 
 ### <a name="material-consumption-picking-list-message"></a>Meddelande om materialförbrukning (plocklista)
 
@@ -183,6 +183,7 @@ Följande tabell visar de fält som varje rad i `PickingListLines`-avsnittet av 
 | `PositionNumber` | Valfritt | Sträng |
 | `IsConsumptionEnded` | Valfritt | Booleskt |
 | `ErrorCause` | Valfritt | Uppräkning (Ingen \| Material \| Maskin \| OperatingStaff), utbyggbar |
+| `InventoryLotId` | Valfritt | Sträng |
 
 ### <a name="time-used-for-operation-route-card-message"></a>Tid som används för åtgärdsmeddelande (flödeskort)
 

@@ -2,27 +2,22 @@
 title: Kringutrustning
 description: Det här avsnittet förklarar koncepten som är relaterade till kringutrustning i handel.
 author: BrianShook
-ms.date: 02/04/2022
-ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
+ms.date: 03/01/2022
+ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.custom:
 - "268444"
 - intro-internal
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e60b369feff5bf17f58d6a3b4c9e9b290343b1ae
-ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
+ms.openlocfilehash: fa9b8c79d1b3b5ed04a7d277bf09cd05dbd332d2
+ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092494"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8370986"
 ---
 # <a name="peripherals"></a>Kringutrustning
 
@@ -39,13 +34,13 @@ Navigering: Gå till **Retail och Commerce \> Kanalinställningar \> Kassainstä
 
 ### <a name="devices"></a>Enheter
 
-Navigering: Gå till **Retail och Commerce \> Kanalinställningar \> Kassainställning \> Enheter**. En enhet är en entitet som representerar en fysisk instans av en enhet som är mappad till ett kassaregister. När en enhet skapas är den mappad till ett kassaregister. Enhetsentiteten spårar information om när ett kassaregister aktiveras, vilken typ av klient som används och programpaketet som har distribuerats till en viss enhet. 
+Navigering: Gå till **Retail och Commerce \> Kanalinställningar \> Kassainställning \> Enheter**. En enhet är en entitet som representerar en fysisk instans av en enhet som är mappad till en kassaapparat. När en enhet skapas är den mappad till en kassaapparat. Enhetsentiteten spårar information om när en kassaapparat aktiveras, vilken typ av klient som används och programpaketet som har distribuerats till en viss enhet. 
 
 Enheter som kan mappas till följande programtyper: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Android och Retail Modern POS – iOS.
 
 ### <a name="modern-pos"></a>Modern POS
 
-Modern POS är kassaprogrammet för Microsoft Windows. Det kan användas på Windows 10 operativsystem (OSs).
+Modern POS är kassaprogrammet för Microsoft Windows. Det kan användas med operativsystemen Windows 10 och Windows 11.
 
 ### <a name="cloud-pos"></a>Cloud POS
 
@@ -69,7 +64,7 @@ Navigering: Gå till **Retail och Commerce \> Kanaler \> Butiker \> Alla butiker
 
 ### <a name="hardware-profile"></a>Maskinvaruprofil
 
-Navigering: Gå till **Retail och Commerce \> Kanalinställningar \> Kassainställning \> Kassaprofiler \> Maskinvaruprofiler**. Maskinvaruprofilen är en lista över enheter som är konfigurerade för ett kassaregister eller en maskinvarustation. Maskinvaruprofilen kan mappas direkt till ett kassaregister eller till en maskinvarustation.
+Navigering: Gå till **Retail och Commerce \> Kanalinställningar \> Kassainställning \> Kassaprofiler \> Maskinvaruprofiler**. Maskinvaruprofilen är en lista över enheter som är konfigurerade för en kassaapparat eller en maskinvarustation. Maskinvaruprofilen kan mappas direkt till en kassaapparat eller till en maskinvarustation.
 
 ## <a name="devices-classes"></a>Enhetsklasser
 Kringutrustning för kassa är vanligtvis uppdelade i klasser. Det här avsnittet beskriver och ger en översikt över enheterna som stödjer Modern POS.
@@ -108,7 +103,7 @@ Knappsatser för persondientifieringsnummer (PIN) stöds via OPOS, men de måste
 
 ### <a name="secondary-display"></a>Sekundär bildskärm
 
-När en sekundär bildskärm konfigureras används den andra Windows-displayen för att visa grundläggande information. Syftet med den sekundära bildskärmen är att stödja tillägget för oberoende programleverantör (ISV) eftersom out of the box kan inte den sekundära bildskärmen konfigureras och visar begränsat innehåll.
+När en sekundär bildskärm konfigureras används den andra Windows-displayen för att visa grundläggande information. Som standard kan den sekundära visningen inte konfigureras, och innehållet är begränsat. Syftet med den sekundära visningen är att stödja ett tillägg för oberoende programvaruleverantör (ISV). 
 
 ### <a name="payment-device"></a>Betalningsenhet
 
@@ -132,7 +127,7 @@ För att garantera att den största mängden enheter kan användas med Commerce 
 Kvittoutskrift i POS optimeras för OPOS. OPOS brukar vara betydligt snabbare än utskrift genom Windows. Därför är det en bra idé att använda OPOS, särskilt i miljöer där 40-kolumnkvitton skrivs ut och transaktionstiderna måste vara snabba. För de flesta enheter används OPOS-kontroller. Vissa OPOS kvittoskrivare stöder emellertid Windows-drivrutiner. Genom att använda en Windows-drivrutin kan du komma åt de senaste teckensnitten och en nätverksskrivare för flera kassor. Det finns emellertid nackdelar med Windows-drivrutiner. Här följer några exempel på dessa nackdelar:
 
 -   När Windows-drivrutiner används återges bilder innan utskrift sker. Därför brukar utskrifter vara långsammare än på skrivare med OPOS-kontroller.
--   Enheter som är anslutna till skrivaren ("daisy-fastkedjad") fungerar inte när Windows-drivrutiner används. Exempelvis går det inte att öppna kassalådan eller kvittoskrivaren kanske inte skriver som förväntat.
+-   Enheter som är anslutna till skrivaren ("daisy-fastkedjad") fungerar inte när Windows-drivrutiner används. Exempelvis kanske inte kassalådan går att öppna, eller också kanske inte kvittoskrivaren fungerar som förväntat.
 -   OPOS stöder även en mer omfattande uppsättning variabler som avser kvittoskrivare, som t.ex. pappersskärning eller kvittoutskrift.
 -   Windows-skrivare stöds inte via IIS maskinvarustation. 
 
@@ -176,15 +171,15 @@ Följ dessa steg för att använda den dedikerade maskinvarustation.
 1. Öppna Modern POS i läget utan kassalåda och använd åtgärden **Hantera maskinvarustationer** för att aktivera maskinvarufunktionerna. Den dedikerade maskinvaran kommer som standard att vara aktiv. 
 1. Logga ut från Modern POS. Logga tillbaka in och öppna ett skift. Kringutrustningen som är konfigurerad i maskinvaruprofilen kan nu användas. 
 
-### <a name="shared"></a>Delad 
+### <a name="shared"></a>Delad
 
-Ibland kallas också "IIS" maskinvarustation, "IIS", vilket innebär att kassaapplikationen ansluter till maskinvarustationen via Microsoft Internet Information Services. POS-programmet ansluter till IIS maskinvarustation via webbtjänster som körs på en dator där enheterna är anslutna. När den delade maskinvarustationen används kan kringutrustningen som är ansluten till en maskinvarustation användas av alla kassaregister som finns i samma nätverk som IIS maskinvarustation. Eftersom endast Modern POS för Windows och Android har inbyggt stöd för kringutrustning, måste andra Modern POS-program använda IIS maskinvarustation för att kommunicera med kassakringutrustning som har konfigurerats i maskinvaruprofilen. Varje förekomst av IIS-maskinvarustation kräver därför en dator som kör webbtjänsten och program som kommunicerar med enheter. 
+Ibland kallas också "IIS" maskinvarustation, "IIS", vilket innebär att kassaapplikationen ansluter till maskinvarustationen via Microsoft Internet Information Services. POS-programmet ansluter till IIS maskinvarustation via webbtjänster som körs på en dator där enheterna är anslutna. När den delade maskinvarustationen används kan kringutrustningen som är ansluten till en maskinvarustation användas av alla kassaapparater som finns i samma nätverk som IIS maskinvarustation. Eftersom endast Modern POS för Windows och Android har inbyggt stöd för kringutrustning, måste andra Modern POS-program använda IIS maskinvarustation för att kommunicera med kassakringutrustning som har konfigurerats i maskinvaruprofilen. Varje förekomst av IIS-maskinvarustation kräver därför en dator som kör webbtjänsten och program som kommunicerar med enheter. 
 
-Den delade maskinvarustationen kan användas för att tillåta flera kassaklienter att dela kringutrustning eller som kan användas för att hantera en fast uppsättning eller kringutrustning för en enda kassa. 
+Den delade maskinvarustationen kan användas för att tillåta flera kassaklienter att dela kringutrustning eller för att hantera en fast uppsättning kringutrustning för en enda kassa. 
 
 När en maskinvarustation används för att stödja delning av kringutrustning mellan flera kassaklienter, bör bara kassalådor, kvittoskrivare och betalningsterminaler användas. Du kan inte direkt ansluta fristående streckkodsläsare, MSR:er, radvisningar, skalor andra enheter. I annat fall inträffar konflikter när flera POS-enheter försöker göra anspråk på denna kringutrustning samtidigt. Här visas hur konflikter hanteras för enheter som stöds:
 
--   **Kassalådan** – kassalådan öppnas via en händelse som skickas till enheten. Endast problem som kan uppstå när en kassalådan kallas uppstår om kassalådan är redan öppen. När det gäller delade maskinvaustationer ska kassalådan vara inställd på **delade** i maskinvaruprofilen. Den här inställningen förhindrar att POS kontrollerar om kassalådan redan är öppen när du skickar öppna-kommandon.
+-   **Kassalådan** – kassalådan öppnas via en händelse som skickas till enheten. Problem kan uppstå om en kassalåda anropad när kassalådan redan är öppen. En kassalåda som används i en konfiguration med delad maskinvarustation ska vara inställd på **Delad** i maskinvaruprofilen. Den här inställningen förhindrar att POS kontrollerar om kassalådan redan är öppen när du skickar öppna-kommandon.
 -   **Kvittoskrivaren** – om två kvittoutskriftskommandon skickas till maskinvarustationen på samma gång kan ett kommando försvinna, beroende på vilken enhet. Vissa enheter har internminne eller poolning som kan förhindra att det här problemet. Om utskriftskommando misslyckas kommer kassören att få ett felmeddelande och kan försöka utföra utskriftkommandot från POS.
 -   **Betalningsterminal** – om en kassör försöker utföra en transaktion som redan används på en betalningsterminal får kassören ett meddelande att terminalen används och uppmanas att försöka igen senare. Vanligtvis kan kassörer se att en terminal används redan och ska vänta tills den andra transaktionen har slutförts innan de kan försöka igen.
 
@@ -205,7 +200,7 @@ Logiken som driver fysiskt anslutna och nätverkets adresserbara kringutrustning
 ## <a name="setup-and-configuration"></a>Installation och konfiguration
 ### <a name="hardware-station-installation"></a>Installation av maskinvarustation
 
-För mer information se [Konfiguration och installation av maskinvarustation](retail-hardware-station-configuration-installation.md)
+Vägledning om hur du installerar en IIS-maskinvarustation finns i [Konfigurera och installera maskinvarustation](retail-hardware-station-configuration-installation.md).
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Modern POS för Windows-installation och konfiguration
 
@@ -339,7 +334,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 <td>OPOS</td>
 </tr>
 <tr class="odd">
-<td>Betalterminal </td>
+<td>Betalterminal</td>
 <td><ul>
 <li>Stöd för anpassade enheter</li>
 <li>Nätverk (För mer information, se dokumentationen för betalningsanslutning)</li>
@@ -422,7 +417,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 <td>OPOS</td>
 </tr>
 <tr class="even">
-<td>Betalterminal </td>
+<td>Betalterminal</td>
 <td><ul>
 <li>Stöd för anpassade enheter</li>
 <li>Nätverk (För mer information, se dokumentationen för betalningsanslutning)</li>
@@ -431,7 +426,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 </tbody>
 </table>
 
-### <a name="all-modern-pos-clients-shared-an-iis-hardware-station"></a>Alla Modern POS-klienter som har en delad IIS maskinvarustation
+### <a name="all-modern-pos-clients-that-share-an-iis-hardware-station"></a>Alla moderna kassaklienter som delar en IIS-maskinvarustation
 
 > [!NOTE]
 > När IIS maskinvarustation "delas" kan flera enheter använda maskinvarustationen samtidigt. I det här scenariot bör du använda de enheter som visas i följande tabell. Om du försöker dela enheter som inte visas här, t.ex. streckkodsläsare och MSR:er, inträffar fel när flera enheter försöker göra anspråk på samma enhet. I framtiden kommer en sådan konfiguration uttryckligen att förhindras.
@@ -477,7 +472,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Betalterminal </td>
+<td>Betalterminal</td>
 <td><ul>
 <li>Stöd för anpassade enheter</li>
 <li>Nätverk (För mer information, se dokumentationen för betalningsanslutning)</li>
@@ -487,7 +482,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 </table>
 
 ## <a name="configuration-for-supported-scenarios"></a>Konfiguration för scenarier som stöds
-Mer information om hur du skapar maskinvaruprofiler finns i [definiera och underhålla kanalklienter såsom register och maskinvarustationer](define-maintain-channel-clients-registers-hw-stations.md). 
+Mer information om hur du skapar maskinvaruprofiler finns i [ansluta kringutrustning till kassan (POS)](define-maintain-channel-clients-registers-hw-stations.md). 
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS för Windows med en IPC maskinvarustation (inbyggt)
 
@@ -495,7 +490,7 @@ Den här konfigurationen är de vanligaste konfigurationen för traditionella, f
 
 1.  Skapa en maskinvaruprofil där all kringutrustning har konfigurerats.
 2.  Mappa maskinvaruprofilen till en kassa.
-3.  Skapa en maskinvarustation av typen **Dedikerad** för butiken som kassaregister ska användas i. En beskrivning är valfri. 
+3.  Skapa en maskinvarustation av typen **Dedikerad** för butiken som kassaapparaten ska användas i. En beskrivning är valfri. 
 
     > [!NOTE]
     > Du behöver inte ange andra egenskaper för maskinvarustationen. Alla övriga uppgifter som krävs till exempel maskinvaruprofilen kommer från själva POS.
@@ -515,7 +510,7 @@ Den här konfigurationen är de vanligaste konfigurationen för traditionella, f
 Den här konfigurationen kan användas för alla Modern POS-klienter som har en maskinvarustation som används exklusivt av en kassa. För att konfigurera denna konfiguration, följ dessa steg.
 
 1.  Skapa en maskinvaruprofil där all kringutrustning har konfigurerats.
-2.  Skapa en maskinvarustation av typen **Dedikerad** för butiken som kassaregister ska användas i.
+2.  Skapa en maskinvarustation av typen **Dedikerad** för butiken som kassaapparaten ska användas i.
 3.  Ange följande egenskaper på dedikerade maskinvarustationen:
     -   **Värdnamn** – namnet på värddatorn där maskinvarustationen körs. 
     
@@ -545,7 +540,7 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som har en 
 Den här konfigurationen kan användas för alla Modern POS-klienter som delar maskinvarustation med andra enheter. För att konfigurera denna konfiguration, följ dessa steg.
 
 1.  Skapa en maskinvaruprofil där all kringutrustning har konfigurerats.
-2.  Skapa en maskinvarustation av typen **Delad** för butiken som kassaregister ska användas i.
+2.  Skapa en maskinvarustation av typen **Delad** för butiken som kassaapparaten ska användas i.
 3.  Ange följande egenskaper på delade maskinvarustationen:
     -   **Värdnamn** – namnet på värddatorn där maskinvarustationen körs.
     -   **Beskrivning** – Text som hjälper identifiera vilken maskinvarustation, t ex **returnerar** eller **framför butiken**.
@@ -623,9 +618,8 @@ Följande kringutrustning som har testats med IPC maskinvarustation som ingår i
 | Tillverkare | Modell    | Gränssnitt | Kommentarer                |
 | ------------ | -------- | --------- | ----------------------- |
 | Epson        | TM-T88V  | OPOS      |                         |
-| Epson        | TM-T88VI | OPOS      |                         |
-| Epson        | TM-T88   | Anpassad    | Ansluten via nätverket   |
-| HP           | F7M67AA  | OPOS      | Strömförsörjd USB             |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Strömförsörjd USB             |
 | Stjärna         | TSP650II | Anpassad    | Ansluten via nätverket   |
 | Stjärna         | mPOP     | OPOS      | Ansluten via Bluetooth |
 | Toshiba      | HSP100   | OPOS      |                         |
@@ -637,26 +631,17 @@ Följande kringutrustning som har testats med IPC maskinvarustation som ingår i
 #### <a name="bar-code-scanner"></a>Streckkodsläsare
 
 | Tillverkare  | Modell         | Gränssnitt | Kommentarer |
-|---------------|---------------|-----------|----------|
-| Motorola      | DS9208        | OPOS      |          |
-| Honeywell     | 1900          | UWP       |          |
-| Symbol        | LS2208        | OPOS      |          |
-| HP-integrerad | E1L07AA       | OPOS      |          |
+| ------------- | ------------- | --------- | -------- |
 | Datalogic     | Magellan 8400 | OPOS      |          |
+| Honeywell     | 1900          | UWP       |          |
+| HP-integrerad | E1L07AA       | OPOS      |          |
+| Symbol        | LS2208        | OPOS      |          |
 
-#### <a name="pin-pad"></a>PIN-knappsats
+#### <a name="payment-terminals-and-pin-pads"></a>Beetalningsterminaler och PIN-knappsatser
 
-| Tillverkare | Modell  | Gränssnitt | Kommentarer                                        |
-|--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Anpassning av betalningskopplingen krävs |
+Dynamics 365 Commerce erbjuder en färdig lösning för integrering med Adyen för betalningstjänster. [Dynamics 365-betalningsanslutningsprogrammet Adyen](dev-itpro/adyen-connector.md) använder det enhetsoberoende [programmeringsgränssnittet (API) för Adyen-betalningsterminalprogram](https://www.adyen.com/blog/introducing-the-terminal-api) och kan samverka med alla betalningsterminaler som detta API stöder. En fullständig lista över betalningsterminaler som stöds finns i [Adyen-kassaterminaler](https://www.adyen.com/pos-payments/terminals).
 
-#### <a name="payment-terminal"></a>Betalterminal 
-
-| Tillverkare | Modell | Gränssnitt | Kommentarer                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Anpassa    | Anpassning av betalningskopplingen krävs                                |
-| VeriFone     | MX925 | Anpassa    | Kräver anpassning av betalningsanslutning; ansluten via nätverket och USB |
-| VeriFone     | MX915 | Anpassa    | Kräver anpassning av betalningsanslutning; ansluten via nätverket och USB |
+Du kan också använda andra betalningsproviders med Dynamics 365 Commerce genom att skapa ett anpassat anslutningsprogram. Alla betalningsterminaler som stöds av betalningprovidern kan användas med Dynamics 365 Commerce. På samma sätt medger Dynamics 365 Commerce alla integrationsmodeller för betalningsenheter som stöds av betalningsprovidern, till exempel lokal IP, molnbaserad API eller direktanslutning (till exempel via USB) till kassan. Mer information finns i [Skapa en komplett betalningsintegrering för en betalningsterminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Kassalåda
 
@@ -670,10 +655,10 @@ Följande kringutrustning som har testats med IPC maskinvarustation som ingår i
 
 #### <a name="line-display"></a>Radvisning
 
-| Tillverkare  | Modell   | Gränssnitt | Kommentarer |
-|---------------|---------|-----------|----------|
-| HP-integrerad | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+| Tillverkare | Modell    | Gränssnitt | Kommentarer |
+| ------------ | -------- | --------- | -------- |
+| Epson        | DM-D110  | OPOS      |          |
+| HP           | T-serien | OPOS      |          |
 
 #### <a name="signature-capture"></a>Digital signatur
 
@@ -701,39 +686,29 @@ Följande kringutrustning har testats med hjälp av en särskild (Ej delad) IIS 
 
 #### <a name="printer"></a>Skrivare
 
-| Tillverkare | Modell    | Gränssnitt | Kommentarer              |
-| ------------ | -------- | --------- | --------------------- |
-| Epson        | TM-T88V  | OPOS      |                       |
-| Epson        | TM-T88VI | OPOS      |                       |
-| Epson        | TM-T88V  | Anpassad    | Ansluten via nätverket |
-| HP           | F7M67AA  | OPOS      | Strömförsörjd USB           |
-| Stjärna         | TSP650II | Anpassad    | Ansluten via nätverket |
-| Toshiba      | HSP100   | OPOS      |                       |
-| Toshiba      | HSP150   | OPOS      |                       |
-
-
+| Tillverkare | Modell    | Gränssnitt | Kommentarer                |
+| ------------ | -------- | --------- | ----------------------- |
+| Epson        | TM-T88V  | OPOS      |                         |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Strömförsörjd USB             |
+| Stjärna         | TSP650II | Anpassad    | Ansluten via nätverket   |
+| Stjärna         | mPOP     | OPOS      | Ansluten via Bluetooth |
+| Toshiba      | HSP100   | OPOS      |                         |
+| Toshiba      | HSP150   | OPOS      |                         |
 
 #### <a name="bar-code-scanner"></a>Streckkodsläsare
 
-| Tillverkare  | Modell   | Gränssnitt | Kommentarer |
-|---------------|---------|-----------|----------|
-| Motorola      | DS9208  | OPOS      |          |
-| Symbol        | LS2208  | OPOS      |          |
-| HP-integrerad | E1L07AA | OPOS      |          |
+| Tillverkare  | Modell         | Gränssnitt | Kommentarer |
+| ------------- | ------------- | --------- | -------- |
+| Datalogic     | Magellan 8400 | OPOS      |          |
+| HP-integrerad | E1L07AA       | OPOS      |          |
+| Symbol        | LS2208        | OPOS      |          |
 
-#### <a name="pin-pad"></a>PIN-knappsats
+#### <a name="payment-terminals-and-pin-pads"></a>Beetalningsterminaler och PIN-knappsatser
 
-| Tillverkare | Modell  | Gränssnitt | Kommentarer                                        |
-|--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Anpassning av betalningskopplingen krävs |
+Dynamics 365 Commerce erbjuder en färdig lösning för integrering med Adyen för betalningstjänster. [Dynamics 365-betalningsanslutningsprogrammet för Adyen](dev-itpro/adyen-connector.md) använder det enhetsoberoende [API för Adyen-betalningsterminaler](https://www.adyen.com/blog/introducing-the-terminal-api) och kan samverka med alla betalningsterminaler som detta API stöder. En fullständig lista över betalningsterminaler som stöds finns i [Adyen-kassaterminaler](https://www.adyen.com/pos-payments/terminals).
 
-#### <a name="payment-terminal"></a>Betalterminal 
-
-| Tillverkare | Modell | Gränssnitt | Kommentarer                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Anpassa    | Anpassning av betalningskopplingen krävs                                |
-| VeriFone     | MX925 | Anpassa    | Kräver anpassning av betalningsanslutning; ansluten via nätverket och USB |
-| VeriFone     | MX915 | Anpassa    | Kräver anpassning av betalningsanslutning; ansluten via nätverket och USB |
+Du kan också använda andra betalningsproviders med Dynamics 365 Commerce genom att skapa ett anpassat anslutningsprogram. Alla betalningsterminaler som stöds av betalningprovidern kan användas med Dynamics 365 Commerce. På samma sätt medger Dynamics 365 Commerce alla integrationsmodeller för betalningsenheter som stöds av betalningsprovidern, till exempel lokal IP, molnbaserad API eller direktanslutning (till exempel via USB) till kassan. Mer information finns i [Skapa en komplett betalningsintegrering för en betalningsterminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Kassalåda
 
@@ -780,22 +755,20 @@ Följande kringutrustning har testats med hjälp av en delad IIS maskinvarustati
 
 #### <a name="printer"></a>Skrivare
 
-| Tillverkare | Modell    | Gränssnitt | Kommentarer              |
-| ------------ | -------- | --------- | --------------------- |
-| Epson        | TM-T88V  | OPOS      |                       |
-| Epson        | TM-T88VI | OPOS      |                       |
-| Epson        | TM-T88   | Anpassad    | Ansluten via nätverket |
-| HP           | F7M67AA  | OPOS      | Strömförsörjd USB           |
-| Stjärna         | TSP650II | Anpassad    | Ansluten via nätverket |
-| Toshiba      | HSP100   | OPOS      |                       |
-| Toshiba      | HSP150   | OPOS      |                       |
+| Tillverkare | Modell    | Gränssnitt | Kommentarer                |
+| ------------ | -------- | --------- | ----------------------- |
+| Epson        | TM-T88V  | OPOS      |                         |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Strömförsörjd USB             |
+| Stjärna         | mPOP     | OPOS      | Ansluten via Bluetooth |
+| Toshiba      | HSP100   | OPOS      |                         |
+| Toshiba      | HSP150   | OPOS      |                         |
 
 #### <a name="payment-terminal"></a>Betalningsterminal
 
-| Tillverkare | Modell | Gränssnitt | Kommentarer                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| VeriFone     | MX925 | Anpassa    | Kräver anpassning av betalningsanslutning; ansluten via nätverket och USB |
-| VeriFone     | MX915 | Anpassa    | Kräver anpassning av betalningsanslutning; ansluten via nätverket och USB |
+Dynamics 365 Commerce erbjuder en färdig lösning för integrering med Adyen för betalningstjänster. [Dynamics 365-betalningsanslutningsprogrammet för Adyen](dev-itpro/adyen-connector.md) använder det enhetsoberoende [API för Adyen-betalningsterminaler](https://www.adyen.com/blog/introducing-the-terminal-api) och kan samverka med alla betalningsterminaler som detta API stöder. En fullständig lista över betalningsterminaler som stöds finns i [Adyen-kassaterminaler](https://www.adyen.com/pos-payments/terminals).
+
+Du kan också använda andra betalningsproviders med Dynamics 365 Commerce genom att skapa ett anpassat anslutningsprogram. Alla betalningsterminaler som stöds av betalningprovidern kan användas med Dynamics 365 Commerce. På samma sätt medger Dynamics 365 Commerce alla integrationsmodeller för betalningsenheter som stöds av betalningsprovidern, till exempel lokal IP, molnbaserad API eller direktanslutning (till exempel via USB) till kassan. Mer information finns i [Skapa en komplett betalningsintegrering för en betalningsterminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Kassalåda
 
@@ -822,7 +795,7 @@ Följande kringutrustning har testats med hjälp av en delad IIS maskinvarustati
 
 **Lösning:** något av följande faktorer kan orsaka problemet:
 
--   Hardware Station har inte ställts in korrekt i administrationen. Använd instruktionerna tidigare i det här avsnittet för att kontrollera att maskinvarustationprofilen och maskinvarustationen har angetts korrekt.
+-   Maskinvarustationen har inte ställts in korrekt i administrationen. För mer information, se [Konfiguration och installation av maskinvarustation för Handel](retail-hardware-station-configuration-installation.md#troubleshooting). 
 -   Jobb har inte körts om du vill uppdatera kanalkonfigurationen. I det här fallet kör du jobbet 1070 för kanalkonfiguration.
 
 ### <a name="modern-pos-doesnt-reflect-new-cash-drawer-settings"></a>Modern POS innehåller inte de nya inställningarna för kassalådan
@@ -837,7 +810,7 @@ Följande kringutrustning har testats med hjälp av en delad IIS maskinvarustati
 -   Om kringutrustningen delas med flera kassaenheter, kontrollerar du att den tillhör en av följande kategorier:
     -   Kassalåda
     -   Kvittoskrivare
-    -   Betalterminal 
+    -   Betalterminal
 
     Om kringutrustningen inte tillhör någon av dessa kategorier, är inte maskinvarustationen utformad för kringutrustning som ska delas mellan flera kassaenheter.
 -   Drivrutiner kan ibland orsaka att common control objekt (CCOs) inte fungerar korrekt. Om en enhet nyligen har installerats men inte fungerar korrekt eller om du upplever andra problem, kan du ofta las problemet genom att installera om CCO. Du kan hämta CCO på <http://monroecs.com/oposccos_current.htm>.

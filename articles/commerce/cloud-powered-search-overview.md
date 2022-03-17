@@ -2,7 +2,7 @@
 title: Översikt över molnbaserade sökningar
 description: Det här ämnet ger en översikt över den molnbaserade sökningen i Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 06/29/2020
+ms.date: 02/28/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb34780d5bdd41a128fff543fe0f1ef73cfead8b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9116dd415d44a56fbe8c7852382c413b0a75872c
+ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983679"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8371439"
 ---
 # <a name="cloud-powered-search-overview"></a>Översikt över molnbaserade sökningar
 
@@ -26,13 +26,13 @@ ms.locfileid: "7983679"
 
 Det här ämnet ger en översikt över den molnbaserade sökningen i Microsoft Dynamics 365 Commerce.
 
-Produktidentifiering garanterar att kunder snabbt och enkelt kan hitta produkter genom att bläddra bland kategorier, söka och filtrera. Återförsäljare betraktar produktidentifiering som ett primärt verktyg för kundinteraktion i alla kanaler.
+Produktidentifiering garanterar att kunder snabbt och enkelt kan hitta produkter genom att bläddra bland kategorier, söka och filtrera. Återförsäljare anser att produktidentifiering utgör ett primärt verktyg för kundinteraktioner mellan kanaler som drivs via CSU (Cloud Scale Unit), såsom näthandel och kassa (POS).
 
-Kunderna är vana vid de nästan ögonblickliga svarstiderna för sökmotorer på webben, avancerade näthandelssajter, sociala appar, automatiska förslag som visas som söktermer, inblandad navigering och markeringar. Om kunderna inte hittar produkten som de letar efter tillräckligt snabbt i en nätbutik tvekar de inte att gå vidare till en annan nätbutik.
+Kunderna är vana vid de nästan ögonblickliga svarstiderna för sökmotorer på webben, avancerade näthandelssajter, sociala appar, automatiska förslag som visas som söktermer, inblandad navigering och markeringar. Om kunderna inte hittar produkten som de letar efter tillräckligt snabbt i en näthandelsbutik tvekar de inte att gå vidare till en annan näthandelsbutik.
 
-Den molnbaserade produktidentifieringen i Dynamics 365 Commerce hjälper återförsäljare att fortsätta att öka konsumenternas lagrings- och konverteringskurser över alla kanaler, både näthandelskanaler och kassakanaler (POS).
+Den molnbaserade produktidentifieringen i Commerce hjälper återförsäljare att fortsätta öka konsumenternas lagrings- och konverteringskurser över alla kanaler som drivs av CSU.
 
-Dynamics 365 Commerce sökfunktion har förbättrade funktioner som hjälper återförsäljare att uppnå bättre produktidentifiering. På samma gång ger dessa funktioner den skalbarhet och prestanda som krävs för näthandelstrafiken.
+Commerce-sökfunktionen har förbättrade funktioner som hjälper återförsäljare att uppnå en bättre produktidentifiering. På samma gång ger dessa funktioner den skalbarhet och prestanda som krävs för näthandelstrafiken.
 
 ## <a name="browse-and-search"></a>Bläddra och sök
 
@@ -54,9 +54,9 @@ I bilden nedan visas ett exempel där uppblandning av navigering används vid en
 
 ## <a name="immersive-autosuggest"></a>Integrerade automatiska förslag
 
-Aktuell automatisk förslagsfunktion visar bara nyckelord som utlöser en sökning efter det matchande nyckelordet. På grund av nya förbättringar i Dynamics 365 Commerce kunderna ofta upptäcka länkar till produkter innan de har skrivit klart.
+Den nuvarande funktionen för aytomatiska förslag anger nyckelord som utlöser en sökning efter det matchande nyckelordet. På grund av nya förbättringar i Commerce kan kunderna oftaa länkar till produkter innan de har skrivit klart.
 
-Dynamics 365 Commerce stöder också funktioner för nyckelordsmatchningar i olika kategorier. Den här funktionen gör att kunder kan se antalet matchande nyckelord i olika kategorier och utlösa en sökning efter ett nyckelord i andra kategorier.
+Commerce stöder också funktioner för nyckelordsmatchningar i olika kategorier. Den här funktionen gör att kunder kan se antalet matchande nyckelord i olika kategorier och utlösa en sökning efter ett nyckelord i andra kategorier.
 
 Följande illustration visar ett exempel där integrerade automatiska förslag används.
 
@@ -64,10 +64,10 @@ Följande illustration visar ett exempel där integrerade automatiska förslag a
 
 ## <a name="sort"></a>Sortera
 
-Förbättrad sortering i Dynamics 365 Commerce låter kunderna sortera, söka och bläddra i sökresultat och justera dem efter kriterier, t.ex. pris, produktnamn och produktnummer. Kunder kan också sortera resultat baserat på om en produkt är ny, bästsäljare eller nyligen tillagd.
+Förbättrad sortering i Commerce låter kunderna sortera, söka och bläddra bland sökresultat och justera dem efter kriterier såsom t.ex. pris, produktnamn och produktnummer. Kunder kan också sortera resultat baserat på om en produkt är ny, bästsäljare eller nyligen tillagd.
 
->[!NOTE]
->De här molndrivna sökfunktionerna är tillgängliga från och med version 10.0.8. Se till att under **Handelsparametrar > Konfigurationsparametrar** finns en post för "ProductSearch.UseAzureSearch inställd på true". 
+> [!NOTE]
+> De här molndrivna sökfunktionerna är tillgängliga från och med version 10.0.8. Se till att det finns en post för "ProductSearch.UseAzureSearch" märkt "true" i **Commerce Parameters > Configuration Parameters**. 
 ![Konfigurationsparametrar för molndriven sökning.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
@@ -77,4 +77,4 @@ Förbättrad sortering i Dynamics 365 Commerce låter kunderna sortera, söka oc
 [Hantera SEO-metadata](manage-seo-metadata.md)
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]

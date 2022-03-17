@@ -2,7 +2,7 @@
 title: Borttagna och utfasade funktioner i Dynamics 365 Commerce
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 Commerce.
 author: josaw
-ms.date: 09/27/2021
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
-ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
+ms.openlocfilehash: 7b06f8ca65e4fac13f322f8d72b8ad4f9db8ccd7
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "7559569"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384619"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Borttagna och utfasade funktioner i Dynamics 365 Commerce
 
@@ -31,7 +31,7 @@ I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerat
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
 > [!NOTE]
-> Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](/dynamics/s-e/). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
+> Detaljerad information om objekt i appar för ekonomi och drift finns i [Tekniska referensrapporter](/dynamics/s-e/). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av appar för ekonomi och drift.
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Borttagna eller föråldrade funktioner i Commerce version 10.0.21
 
@@ -59,7 +59,7 @@ Retail SDK levereras i Lifecycle Services (LCS). Detta distributionssätt är in
 | **Ersatt av en annan funktion?**   |  [Hämta Retail SDK-exempel och referenspaket från GitHub och NuGet](../dev-itpro/retail-sdk/sdk-github.md) |
 | **Produktområden som påverkas**         | Retail SDK |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell: Från och med version 10.0.21 kommer de SDK som levereras via LCS-VM:ar att tas bort i oktober 2022. |
+| **Status**                         | Inaktuell: Från och med version 10.0.21 kommer de SDK som levereras via LCS-VM:ar att tas bort i april 2023. |
 
 ### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>Paket som kan distribueras i butik och kombinerade installationsprogram för kassa, maskinvarustation och molnbaserad skalningsenhet
 
@@ -67,7 +67,7 @@ Paket som kan distribueras i Butik och som genereras med hjälp av Retail SDK MS
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Ett paket som kan distribueras inom Butik är ett kombinerat paket som innehåller en komplett uppsättning tilläggspaket och -installationsprogram. Detta kombinerade paket gör distributionen komplex när CSU-tillägg går till skalningsenhet för moln och installationsprogram distribueras i butiker. Installationsprogrammen omfattar filnamnstillägget och basprodukten, vilket försvårar uppdateringar. Vid varje uppgradering krävs en kodsammanslagning och en paketgenerering. För att förenkla denna process är tilläggspaketen nu uppdelade i komponenter för enkel distribution och hantering. Med denna nya metod separeras tillägg och installationsprogram för basprodukt och kan då uppgraderas utan kodsammanslagning eller generering av nytt paket.|
+| **Orsak till inaktuell/borttagning** | Ett paket som kan distribueras inom Butik är ett kombinerat paket som innehåller en komplett uppsättning tilläggspaket och -installationsprogram. Detta kombinerade paket gör distributionen komplex när CSU-tillägg går till skalningsenhet för moln och installationsprogram distribueras i butiker. Installationsprogrammen omfattar tillägget och basprodukten, vilket försvårar uppdateringar. Vid varje uppgradering krävs en kodsammanslagning och en paketgenerering. För att förenkla denna process är tilläggspaketen nu uppdelade i komponenter för enkel distribution och hantering. Med denna nya metod separeras tillägg och installationsprogram för basprodukt och kan då uppgraderas utan kodsammanslagning eller generering av nytt paket.|
 | **Ersatt av en annan funktion?**   | CSU-tillägg, installationsprogram för kassatillägg, installationsprogram för maskinvarustationstillägg |
 | **Produktområden som påverkas**         | Dynamics 365 Commerce-tillägg och distribution |
 | **Distribueringsalternativ**              | Allt |
@@ -82,9 +82,9 @@ Mer information finns i:
     + [Molnskalningsenhet](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
     + [Kassa, CSU och maskinvarustation](https://github.com/microsoft/Dynamics365Commerce.InStore)
 
-### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>ModernPos.Sln och CloudPOs.sln i SDK för Retail
+### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>ModernPos.Sln och CloudPos.sln i Retail SDK
 
-Kassatilläggsutveckling med hjälp av ModernPos.sln, CloudPOs.sln, POS. Extension.csproj och kassamappen blir inaktuell i version 10.0.21. I framtiden använder du kassaoberoende förpacknings-SDK för kassatillägg.
+Kassatilläggsutveckling med hjälp av ModernPos.sln, CloudPos.sln, POS.Extension.csproj och kassamappen blir inaktuella i version 10.0.21. I framtiden använder du kassaoberoende förpacknings-SDK för kassatillägg.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -92,7 +92,7 @@ Kassatilläggsutveckling med hjälp av ModernPos.sln, CloudPOs.sln, POS. Extensi
 | **Ersatt av en annan funktion?**   | [SDK för kassaoberoende packning](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
 | **Produktområden som påverkas**         | Kassatillägg och distribution för Dynamics 365 Commerce |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuellt: Från och med release 10.0.21 kommer stöd för kombinerade kassapaket och tilläggsmodeller som använder ModernPos.Sln, CloudPOs.sln och POS. Extenseb.csproj i Retail SDK att tas bort i oktober 2022. |
+| **Status**                         | Inaktuellt: Från och med release 10.0.21 kommer stöd för kombinerade kassapaket och tilläggsmodeller som använder ModernPos.Sln, CloudPOs.sln och POS. Extenseb.csproj i Retail SDK att tas bort i april 2023. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Borttagna eller föråldrade funktioner i Commerce version 10.0.17
 
