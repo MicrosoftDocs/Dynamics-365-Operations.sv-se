@@ -4,113 +4,65 @@
       items:
         - name: Dynamics 365 Human Resources startsida
           href: index.md
-        - name: Infrastrukturversion 10.0.25
-          href: hr-infrastructure.md
-        - name: Nyheter och ändringar i sammanslagen Dynamics 365 Human Resources-infrastruktur
-          href: ./get-started/hr-whats-new-changed-10-0-25.md
-        - name: Kom igång
+        - name: Nyheter och ändringar
           items:
-            - name: Nyheter
-              href: hr-admin-whats-new.md
-            - name: Arkiv för nyheter och ändringar 2021
+            - name: Nyheter och ändringar i appar för ekonomi och drift
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+            - name: Nyheter och ändringar i Human Resources
               items:
-                - name: 29 november 2021
-                  href: hr-whats-new-2021-11-29.md
-                - name: 5 oktober 2021
-                  href: hr-whats-new-2021-10-04.md
-                - name: 20 september 2021
-                  href: hr-whats-new-2021-09-20.md
-                - name: 6 september 2021
-                  href: hr-whats-new-2021-09-06.md
-                - name: 23 augusti 2021
-                  href: hr-whats-new-2021-08-23.md
-                - name: 9 augusti 2021
-                  href: hr-whats-new-2021-08-09.md
-                - name: 26 juli 2021
-                  href: hr-whats-new-2021-07-26.md
-                - name: 12 juli 2021
-                  href: hr-whats-new-2021-07-12.md
-                - name: 22 juni 2021
-                  href: hr-whats-new-2021-06-22.md
-                - name: 20 maj 2021
-                  href: hr-whats-new-2021-05-20.md
-                - name: 3 maj 2021
-                  href: hr-whats-new-2021-05-03.md
-                - name: 19 april 2021
-                  href: hr-whats-new-2021-04-19.md
-                - name: 5 april 2021
-                  href: hr-whats-new-2021-04-05.md
-                - name: 22 mars 2021
-                  href: hr-whats-new-2021-03-22.md
-                - name: 8 mars 2021
-                  href: hr-whats-new-2021-03-08.md
-                - name: 22 februari 2021
-                  href: hr-whats-new-2021-02-22.md
-                - name: 28 januari 2021
-                  href: hr-whats-new-2021-01-28.md
-                - name: 21 januari 2021
-                  href: hr-whats-new-2021-01-21.md
-            - name: Nyhetsarkiv 2020
-              items:
-                - name: 2 december 2020
-                  href: hr-whats-new-2020-12-02.md
-                - name: 22 oktober 2020
-                  href: hr-whats-new-2020-10-22.md
-                - name: 6 oktober 2020
-                  href: hr-whats-new-2020-10-06.md
-                - name: 26 september 2020
-                  href: hr-whats-new-2020-09-26.md
-                - name: 16 september 2020
-                  href: hr-whats-new-2020-09-16.md
-                - name: 3 september 2020
-                  href: hr-whats-new-2020-09-03.md
-                - name: 20 augusti 2020
-                  href: hr-whats-new-2020-08-20.md
-                - name: 6 augusti 2020
-                  href: hr-whats-new-2020-08-06.md
-                - name: 23 juli 2020
-                  href: hr-whats-new-2020-07-23.md
-                - name: 8 juli 2020
-                  href: hr-whats-new-2020-07-08.md
-                - name: 25 juni 2020
-                  href: hr-whats-new-2020-06-23.md
-                - name: 11 juni 2020
-                  href: hr-whats-new-2020-06-11.md
-                - name: 28 maj 2020
-                  href: hr-whats-new-2020-05-28.md
-                - name: 14 maj 2020
-                  href: hr-whats-new-2020-05-14.md
-                - name: 1 maj 2020
-                  href: hr-whats-new-2020-05-01.md
-                - name: 13 april 2020
-                  href: hr-whats-new-2020-04-13.md
-                - name: 3 april 2020
-                  href: hr-whats-new-2020-04-03.md
-                - name: 24 mars 2020
-                  href: hr-whats-new-2020-03-24.md
-                - name: 19 mars 2020
-                  href: hr-whats-new-2020-03-19.md
-                - name: 10 mars 2020
-                  href: hr-whats-new-2020-03-10.md
-                - name: 3 mars 2020
-                  href: hr-whats-new-2020-03-03.md
-                - name: 25 februari 2020
-                  href: hr-whats-new-2020-02-25.md
-                - name: 18 februari 2020
-                  href: hr-whats-new-2020-02-18.md
-                - name: 12 februari 2020
-                  href: hr-whats-new-2020-02-12.md
-                - name: 7 februari 2020
-                  href: hr-whats-new-2020-02-07.md
-                - name: 3 februari 2020
-                  href: hr-whats-new-2020-02-03.md
+                - name: Human Resources 10.0.26 (sammanslagen infrastruktur)
+                  href: ./get-started/hr-whats-new-changed-10-0-26.md
+                - name: Human Resources 10.0.25 (sammanslagen infrastruktur)
+                  href: ./get-started/hr-whats-new-changed-10-0-25.md
+                - name: Nyheter i Dynamics 365 Human Resources (fristående)
+                  items:
+                    - name: Nyheter i Dynamics 365 Human Resources (fristående) arkiv 2021
+                      href: hr-admin-whats-new.md
+                    - name: 29 november 2021
+                      href: hr-whats-new-2021-11-29.md
+                    - name: 5 oktober 2021
+                      href: hr-whats-new-2021-10-04.md
+                    - name: 20 september 2021
+                      href: hr-whats-new-2021-09-20.md
+                    - name: 6 september 2021
+                      href: hr-whats-new-2021-09-06.md
+                    - name: 23 augusti 2021
+                      href: hr-whats-new-2021-08-23.md
+                    - name: 9 augusti 2021
+                      href: hr-whats-new-2021-08-09.md
+                    - name: 26 juli 2021
+                      href: hr-whats-new-2021-07-26.md
+                    - name: 12 juli 2021
+                      href: hr-whats-new-2021-07-12.md
+                    - name: 22 juni 2021
+                      href: hr-whats-new-2021-06-22.md
+                    - name: 20 maj 2021
+                      href: hr-whats-new-2021-05-20.md
+                    - name: 3 maj 2021
+                      href: hr-whats-new-2021-05-03.md
+                    - name: 19 april 2021
+                      href: hr-whats-new-2021-04-19.md
+                    - name: 5 april 2021
+                      href: hr-whats-new-2021-04-05.md
+                    - name: 22 mars 2021
+                      href: hr-whats-new-2021-03-22.md
+                    - name: 8 mars 2021
+                      href: hr-whats-new-2021-03-08.md
+                    - name: 22 februari 2021
+                      href: hr-whats-new-2021-02-22.md
+                    - name: 28 januari 2021
+                      href: hr-whats-new-2021-01-28.md
+                    - name: 21 januari 2021
+                      href: hr-whats-new-2021-01-21.md
+        - name: Kom i gång
+          items:
             - name: Översikt
               href: hr-admin-overview.md
             - name: Systemkrav
               href: hr-admin-system-requirements.md
             - name: Ställa in och hantera instanser
               items:
-                - name: Reservera Human Resources
+                - name: Etablera Human Resources
                   href: hr-admin-setup-provision.md
                 - name: Kopiera en instans
                   href: hr-admin-setup-copy-instance.md

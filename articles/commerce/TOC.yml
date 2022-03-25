@@ -1020,6 +1020,8 @@
                   href: unit-of-measure.md
                 - name: Använd visningsinställningar för produktdimensioner
                   href: dimension-settings.md
+                - name: Möjliggör och aktivera underhållsläge för e-handel
+                  href: enable-maintenance-mode.md
             - name: Hantera webbplatsens innehåll
               items:
                 - name: Sätt att lägga till innehåll
@@ -2100,9 +2102,13 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Felsök datakällor
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurera datamodeller
+                  items:
+                    - name: Stöd parameteriserade anrop av ER-datamodeller
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurera modellmappningar
                   items:
-                    - name: Konfigurera ER-modellmappningar som är beroende av landsammanhang
+                    - name: Konfigurera ER-modellmappningar som är beroende av landssammanhang
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
                     - name: Hantera ER-modellmappning i separata ER-konfigurationer
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/commerce/toc.json
@@ -2760,6 +2766,8 @@
                           href: e-commerce-extensibility/clone-starter-module.md
                         - name: Utöka en moduldefinition
                           href: e-commerce-extensibility/extend-module-definition.md
+                        - name: Ändra modulbibliotekets statiska strängar
+                          href: e-commerce-extensibility/change-module-library-strings.md
                     - name: Dataåtgärder
                       items:
                         - name: Dataåtgärdsåsidosättningar
@@ -2774,6 +2782,8 @@
                           href: e-commerce-extensibility/override-theme-component.md
                         - name: Utöka ett tema från ett bastema
                           href: e-commerce-extensibility/extend-theme.md
+                        - name: Ändra strängar i temamodulen
+                          href: e-commerce-extensibility/change-theme-module-strings.md
                 - name: Förpackning och distribution
                   items:
                     - name: Paketera konfigurationer och distribuera dem till en onlinemiljö
@@ -2798,6 +2808,8 @@
                           href: e-commerce-extensibility/page-caching.md
                         - name: Instanscache för dataåtgärd
                           href: e-commerce-extensibility/instance-cache.md
+                        - name: Modul för CSS-optimering
+                          href: e-commerce-extensibility/module-css-optimization.md
                     - name: Telemetri och analyser
                       items:
                         - name: Telemetrilogg

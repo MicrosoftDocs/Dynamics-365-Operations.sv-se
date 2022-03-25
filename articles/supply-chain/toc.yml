@@ -747,8 +747,32 @@
                   href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
                 - name: Jämför lagringsrapport över artikelpriser
                   href: cost-management/compare-item-price.md
+            - name: Kostnadsmetoder
+              items:
+                - name: Löpande genomsnittlig självkostnad
+                  href: cost-management/running-average-cost-price.md
+                - name: Spåra löpande genomsnittlig kostnad per lagerdimension
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+                - name: FIFO med fysiskt värde och markering
+                  href: cost-management/fifo-physical-value-marking.md
+                - name: LIFO-datum med fysiskt värde och markering
+                  href: cost-management/lifo-date-physical-value-marking.md
+                - name: LIFO med fysiskt värde och markering
+                  href: cost-management/lifo-physical-value-marking.md
+                - name: Viktat genomsnitt med fysiskt värde och markering
+                  href: cost-management/weighted-average-physical-value-marking.md
+                - name: Viktat genomsnittsdatum med fysiskt värde och markering
+                  href: cost-management/weighted-average-date.md
+                - name: Glidande medelvärde
+                  href: cost-management/moving-average.md
+                - name: Glidande medelvärde – reservkostnadssekvens
+                  href: cost-management/moving-average-fallback.md
             - name: Lagerredovisning
               items:
+                - name: Fysiska och finansiella uppdateringar
+                  href: cost-management/physical-financial-updates.md
+                - name: Inkludera fysiskt värde
+                  href: cost-management/include-physical-value.md
                 - name: Kostnadsobjekt
                   href: cost-management/cost-object.md
                 - name: Visa saldo för kostnadsobjekt
@@ -761,30 +785,8 @@
                   href: cost-management/tasks/view-cost-entries-cost-object.md
                 - name: Kostnadsgrupper
                   href: cost-management/cost-groups.md
-                - name: FIFO med fysiskt värde och markering
-                  href: cost-management/fifo-physical-value-marking.md
-                - name: Inkludera fysiskt värde
-                  href: cost-management/include-physical-value.md
                 - name: Lagerobjektvärden
                   href: cost-management/physical-quantity.md
-                - name: LIFO-datum med fysiskt värde och markering
-                  href: cost-management/lifo-date-physical-value-marking.md
-                - name: LIFO med fysiskt värde och markering
-                  href: cost-management/lifo-physical-value-marking.md
-                - name: Glidande medelvärde
-                  href: cost-management/moving-average.md
-                - name: Glidande medelvärde – reservkostnadssekvens
-                  href: cost-management/moving-average-fallback.md
-                - name: Fysiska och finansiella uppdateringar
-                  href: cost-management/physical-financial-updates.md
-                - name: Löpande genomsnittlig självkostnad
-                  href: cost-management/running-average-cost-price.md
-                - name: Spåra löpande genomsnittlig kostnad per lagerdimension
-                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
-                - name: Datum för viktat medelvärde
-                  href: cost-management/weighted-average-date.md
-                - name: Viktat genomsnitt med fysiskt värde och markering
-                  href: cost-management/weighted-average-physical-value-marking.md
                 - name: Lagerstängning
                   href: cost-management/inventory-close.md
                 - name: Justera kostnadsvärden för lagerbehållning
@@ -1431,9 +1433,13 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Felsök datakällor
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurera datamodeller
+                  items:
+                    - name: Stöd parameteriserade anrop av ER-datamodeller
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurera modellmappningar
                   items:
-                    - name: Konfigurera ER-modellmappningar som är beroende av landsammanhang
+                    - name: Konfigurera ER-modellmappningar som är beroende av landssammanhang
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Hantera ER-modellmappning i separata ER-konfigurationer
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
@@ -3855,6 +3861,8 @@
               items:
                 - name: Warehouse mobile app
                   items:
+                    - name: Oväntad skillnad mellan begäran och sessionsdata under testning
+                      href: troubleshooting/warehousing/request-session-data-difference.md
                     - name: Förtroendeankare för certifieringssökväg hittas inte när du ställer in appanslutning
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: Förtroendeankare för certifieringssökväg hittas inte när du uppdaterar och migrerar till WMS

@@ -1528,6 +1528,10 @@
                           items:
                             - name: Momsdeklaration
                               href: localizations/emea-aut-vat-declaration-austria.md
+                        - name: Rapportering för Danmark
+                          items:
+                            - name: Momsdeklaration
+                              href: localizations/emea-dnk-vat-declaration-denmark.md
                         - name: Rapportering för Frankrike
                           items:
                             - name: Momsdeklaration
@@ -2344,6 +2348,8 @@
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
                 - name: Lista över försäljning inom EU
                   href: localizations/emea-deu-eu-sales-list.md
+                - name: Momsdeklaration
+                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Ungern
               items:
                 - name: Ungern – översikt
@@ -3566,7 +3572,7 @@
                   href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Grendimensioner för skatt
                   href: localizations/apac-tha-tax-branch-dimensions.md
-                - name: Momsrapport
+                - name: Momsrapporter
                   href: localizations/apac-tha-sales-vat-report.md
                 - name: Källskatt
                   href: localizations/apac-tha-withholding-tax.md
@@ -4285,9 +4291,13 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Felsök datakällor
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurera datamodeller
+                  items:
+                    - name: Stöd parameteriserade anrop av ER-datamodeller
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurera modellmappningar
                   items:
-                    - name: Konfigurera ER-modellmappningar som är beroende av landsammanhang
+                    - name: Konfigurera ER-modellmappningar som är beroende av landssammanhang
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/finance/toc.json
                     - name: Hantera ER-modellmappning i separata ER-konfigurationer
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
@@ -4353,8 +4363,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurera åtgärdsberoende destinationer
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurera postspecifika ER-destinationer för utskriftshantering
+                    - name: Konfigurera postspecifika destinationer för utskriftshantering
                       href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/finance/toc.json
+                    - name: Skapa en ny ER-lösning för att skriva ut ZPL-etiketter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-zpl-labels.md?toc=/dynamics365/finance/toc.json
                 - name: Ställa in en referens till ett ER-format
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
                 - name: Validera genererade rapporter automatiskt
