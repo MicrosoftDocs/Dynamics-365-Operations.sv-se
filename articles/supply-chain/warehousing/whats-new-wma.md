@@ -2,7 +2,7 @@
 title: Vad är nytt eller ändrat i mobilappen Warehouse Management
 description: Det här ämnet visar en lista med nya och ändrade funktioner för varje frisläppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 02/21/2022
+ms.date: 03/11/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b146fb12f89559efcb3b0973b0dd1ce9b98ffe2a
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: c4731c5f0b0a1553deb53753d82d29a34e5525df
+ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384381"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "8418650"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Vad är nytt eller ändrat i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Detta ämne listar nya funktioner, korrigeringar, förbättringar och kända problem för varje släppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20190"></a>Version 2.0.19.0
+
+I den här versionen ingår följande nya funktioner, korrigeringar och förbättringar:
+
+- Förbättrade det allmänna flödet för dataförfrågan.
+- Förbättrade darrningsproblemet på sidorna **Arbetslista** och **Artikelförfrågan**.
+- Sänkt batteriförbrukning.
+- Tog bort gränsen för antalet fält för arbetskort.
+- Justerade höjden på arbetskort så att alla har samma storlek, oavsett antal fält i varje.
+- Åtgärdade ett problem där blanksteg i streckkoder rensades.
+- Lade till inställningen **Knappstil**, som gör att du kan växla mellan att visa skjutreglaget och visa knappar på alla typer av enheter.
+- Åtgärdade olika problem som fick appen att krascha.
+- Ange fokus automatiskt på den första textrutan på anpassade sidor.
+- Hjälpmedelsförbättringar relaterade till ljusstyrka, kontrast, berättande och platshållartexter som saknas.
 
 ## <a name="version-20170"></a>Version 2.0.17.0
 
@@ -61,13 +76,13 @@ I den här versionen ingår följande nya funktioner, korrigeringar och förbät
 I den här versionen ingår följande nya funktioner, korrigeringar och förbättringar:
 
 - Förbättrad prestanda genom korrigering av ett problem med minnesproblem.
-- Korrigerade ett problem där vissa fältvärden inte uppdaterades korrekt när de markerades på detaljsidan.
+- Åtgärdade ett problem där vissa fältvärden inte uppdaterades korrekt när de markerades på detaljsidan.
 
 ## <a name="version-20140"></a>Version 2.0.14.0
 
 I den här versionen ingår följande nya funktioner, korrigeringar och förbättringar:
 
-- Har åtgärdat en utfråga som inaktiverade knappen Skicka.
+- Åtgärdade ett problem som inaktiverade knappen Skicka.
 
 ## <a name="version-20130"></a>Version 2.0.13.0
 
@@ -76,14 +91,14 @@ I den här versionen ingår följande nya funktioner, korrigeringar och förbät
 - Förbättrad bläddring mellan sidor med smidigare animering.
 - Fasta ologiska svar på sveprörelser och enstaka skärmfrysningar.
 - Förbättrad kombination av mörklägestext och bakgrundsfärg för bättre läsbarhet.
-- Korrigerat ett problem där viss text kan bli mycket liten när du ändra storlek på appfönstret.
+- Åtgärdade ett problem där viss text kan bli mycket liten när du ändra storlek på appfönstret.
 - Åtgärdade ett problem som kan göra att programmet kraschar när streckkoder skannas.
 - Har lagt till möjligheten att ersätta ett skjutreglage med en knapp.
-- Åtgärdat ett problem som kan göra att programmet visar felmeddelandet, "AADSTS7000215: Ogiltig klienthemlighet anges."
+- Åtgärdade ett problem som kan göra att programmet visar felmeddelandet, "AADSTS7000215: Ogiltig klienthemlighet anges."
 - Har fast tipsanimeringen som visar hur du stänger en sida med ett svepa nedåt-gest.
 - Lade till möjligheten att stänga en sida med hjälp av en snärt nedåt.
 - Har åtgärdat ett problem där listruterubriker inte visas på sidan **Användarinställningar**.
-- Korrigerat ett lokaliseringsproblem där programmet inte identifierar ett komma (,) som en decimalavgränsare.
+- Åtgärdade ett lokaliseringsproblem där programmet inte identifierar ett komma (,) som en decimalavgränsare.
 - Förbättrad tillgänglighet.
 - Har fast navigeringen på sidan **Ny anslutning** för att ge förbättrad åtkomst.
 - Har åtgärdat ett problem där det mjuka tangentbordet (på skärmen) inte visas när du väljer ett inmatningsfält.
@@ -132,9 +147,9 @@ I den här versionen ingår följande nya funktioner, korrigeringar och förbät
 - Lade till stöd för den [steginstruktionsfunktionen](mobile-app-titles-instructions.md) som lagts till i version 10.0.21 av Supply Chain Management.
 - Lade till tipsanimering för att visa användare att de kan stänga överlägg genom att svepa nedåt.
 - Lade till stöd för funktionstangenter i åtgärdslistor och menyer. Användare kan hålla ned valfri funktionstangent i tre sekunder när de vill visa en lista över tillgängliga kommandon.
-- Korrigerade ett problem som genererade följande felmeddelande på vissa enheter: "Det går inte att hitta någon lämplig vy för den angivna storleken."
-- Korrigerade ett problem där läget för helskärm inte alltid fungerar när tangentbordet på skärmen används.
-- Korrigerade ett problem där sidsepandet inte fungerade på Windows-enheter.
+- Åtgärdade ett problem som genererade följande felmeddelande på vissa enheter: "Det går inte att hitta någon lämplig vy för den angivna storleken."
+- Åtgärdade ett problem där läget för helskärm inte alltid fungerar när tangentbordet på skärmen används.
+- Åtgärdade ett problem där sidsepandet inte fungerade på Windows-enheter.
 - Åtgärdade olika problem som gjorde att systemet inte svarade har lösts.
 
 ## <a name="version-2070"></a>Version 2.0.7.0
@@ -145,7 +160,7 @@ I den här versionen ingår följande nya funktioner, korrigeringar och förbät
 - Gör det enklare att snärta och svepa mellan sidor.
 - Ändrade ikonen för knappen stigande/fallande i arbetslistan.
 - Minskade marginalerna på kortet **Information** för mer plats för information.
-- Tillämpat olika prestandaförbättringar för att minska problemet med att appen blir långsammare med tiden.
+- Tillämpade olika prestandaförbättringar för att minska problemet med att appen blir långsammare med tiden.
 - Om det finns fler kontroller än de som får plats på skärmen leder det till sidindelning och kontrollen rullar inte längre på samma sätt som sidan.
 - Prioritera att visa det senast skannade värdet före att visa uppgiftens rubrik, så om de överlappar uppgiftsrubrikn kortas den av.
 - Åtgärdade olika problem som gjorde att systemet inte svarade har lösts.

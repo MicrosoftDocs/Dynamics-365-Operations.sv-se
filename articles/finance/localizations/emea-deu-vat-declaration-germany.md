@@ -2,19 +2,19 @@
 title: Momsdeklaration för (Tyskland)
 description: I det här avsnittet beskrivs hur du ställer in och genererar en förhandsdeklaration för moms (VAT) för Tyskland i det officiella XML-formatet.
 author: anasyash
-ms.date: 11/22/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 29c04e1034c05b4672f3657ce0b7bc9d5f6d7c9c
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: a761a145a876584728098a92b3f3e93ac718a164
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860888"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402813"
 ---
 # <a name="vat-declaration-germany"></a>Momsdeklaration för (Tyskland)
 
@@ -164,6 +164,9 @@ För mer information om hur du ställer in registreringskategorier och registrer
 
 Om du vill generera en momsdeklaration automatiskt, associerar du momskoder i programmet och sökningsresultaten i ER-konfigurationen.
 
+> [!NOTE]
+> Vi rekommenderar att du aktiverar funktionen genom att **Använd appspecifika parametrar från tidigare versioner av ER-format** i arbetsytan **Funktionshantering**. När den här funktionen är aktiverad blir parametrar som är konfigurerade för den tidigare versionen av ett ER-format automatiskt tillämpliga för den senare versionen av samma format. Om den här funktionen inte är aktiverad måste du konfigurera programspecifika parametrar explicit för varje formatversion. Funktionen **Använd appspecifika parametrar från tidigare versioner av ER-format** är tillgänglig i arbetsytan **Funktionshantering** med början i Finance version 10.0.23. Mer information om hur du ställer in parametrarna för ett ER-format för varje juridisk person finns i [Ställa in parametrarna för ett ER-format per juridisk enhet](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+
 Följ dessa steg för att definiera vilka momskoder som genererar vilka rutor i momsdeklarationen.
 
 1. Gå till **Arbetsytor** > **Elektronisk rapportering** och välj **Rapporteringskonfiguration**.
@@ -193,7 +196,7 @@ Följ dessa steg för att definiera vilka momskoder som genererar vilka rutor i 
 2. Gå till **Redovisning** > **Inställningar** > **Redovisningsparametrar**.
 3. På fliken **Moms** på snabbfliken **Alternativ för skatt** i fältet **Formatmappning för momsutdrag**, välj **Momsdeklaration Excel (DE)**.
 
-   Det här formatet skrivs ut när du kör rapporten **Rapportera moms för kvittningsperiod**.  Den skrivs också ut när du väljer **Skriv ut** på sidan **Momsbetalningar**.
+   Det här formatet skrivs ut när du kör rapporten **Rapportera moms för kvittningsperiod**. Den skrivs också ut när du väljer **Skriv ut** på sidan **Momsbetalningar**.
 
 4. På sidan **Skattemyndigheter** väljer du skattemyndighet innan du i fältet **Rapportlayout** väljer **Standard**.
 

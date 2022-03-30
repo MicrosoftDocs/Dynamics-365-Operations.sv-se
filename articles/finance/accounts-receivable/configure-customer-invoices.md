@@ -2,7 +2,7 @@
 title: Skapa en kundfaktura
 description: En kundfaktura för en försäljningsorder är en faktura som är relaterad till en försäljning och som en organisation skickar till en kund.
 author: ShivamPandey-msft
-ms.date: 02/01/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087433"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392921"
 ---
 # <a name="create-a-customer-invoice"></a>Skapa en kundfaktura
 
@@ -30,7 +30,7 @@ En **kundfaktura för en försäljningsorder** är en faktura som är relaterad 
 
 En **fritextfaktura** har inget samband med en försäljningsorder. Den innehåller orderrader som inkluderar redovisningskonton, fritextbeskrivningar och en försäljningssumma som du anger. Du kan inte ange ett artikelnummer på den här sortens faktura. Du måste ange korrekt momsinformation. En huvudkonto för försäljningen anges på varje fakturarad, som du kan fördela till flera huvudbokskonton genom att klicka på **Fördela belopp** på sidan **Fritextfaktura** . Dessutom bokförs kundsaldot till det samlingskonto från bokföringsprofilen som används för fritextfakturan.
 
-Mer information finns i 
+Mer information finns i
 
 [Skapa fritextfakturor](../accounts-receivable/create-free-text-invoice-new.md)
 
@@ -82,6 +82,9 @@ Visa status för försäljningsorder på listsidan **Alla försäljningsorder**.
 Använd den här processen när en eller flera försäljningsorder är klara att fakturera och du vill konsolidera dem till en enda faktura. 
 
 Du kan markera flera fakturor på listsidan **Försäljningsorder** och sedan använda **Skapa fakturor** för att konsolidera dem. På sidan **Bokföring av faktura** kan du ändra inställningen **Samlingsorder** att sammanställa efter ordernummer (där flera olika följesedlar finns för en enda försäljningsorder) eller per fakturakonto (där det finns flera olika försäljningsorder för ett enda fakturakonto). Använd knappen **Ordna** för att konsolidera försäljningsorder till enskilda fakturor som baseras på inställningarna för **Samlingsorder**.
+
+## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Bokför på intäktskontot för försäljningsorderrader utan pris
+Du kan uppdatera **intäktskontot** i **redovisningen** för försäljningsorderrader som saknar pris. Om du vill ställa in eller visa denna information går du till parametern **Bokför på intäktskontot för försäljningsorderfakturarader med nollpris** på fliken **Redovisning och moms** på sidan **Parametrar för kundreskontra**. (**Kundreskontra > Inställningar > Parametrar för kundreskontra**). Välj **Ja** om du vill uppdatera **intäktskontot** för försäljningsorderfakturarader som saknar pris. Ett intäktskonto definieras på parametersidan **lagerbokföring**, på fliken kontodefinitionsfliken **Försäljningsorder**. Om detta alternativ inte markeras kommer rader som inte har prisinformation inte att bokföras på **intäktskontot**.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Ytterligare inställningar som ändrar bokföringsbeteendet
 Följande fält ändrar beteendet för bokföringsprocessen.

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 01edccbf1a50264b3867e303cbca44eb1b1d7dd9
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087509"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408240"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametrar som inte används av planeringsoptimeringen
 
@@ -102,7 +102,7 @@ Planeringsoptimeringen använder inte följande parametrar eller alternativ på 
   - **Tidsgräns för strukturlistenedbrytning (dagar)** – Inväntar stöd för *Tidsplanering*.
   - **Tidsgräns för kapacitetsplanering (dagar)** – Inväntar stöd för *Tidsplanering*.
   - **Godkänd tidsgräns för rekvisition (dagar)** – Inväntar stöd för *Rekvisition*.
-  - **Uppfyll minimum** – Planeringsoptimeringen stöder inte alternativen *Dagens datum*, *Första problem* eller *Tidsgräns för disponering*. Den använder alltid alternativet *Dagens datum + anskaffningstid*.
+  - **Uppfyll minimum** – Planeringsoptimeringen stöder inte alternativen *Dagens datum*, *Första utleverans* eller *Tidsgräns för disponering*. Den använder alltid alternativet *Dagens datum + anskaffningstid*.
   - **Minimiperioder** – Inväntar på stöd *Lägsta lagernivå*.
   - **Planeringsformel** – Inväntar stöd för *Formelversioner med sam-/biprodukter*.
   - **Standardprioritet** – Inväntar stöd för *Formelversioner med sam-/biprodukter*.
@@ -194,12 +194,6 @@ Planeringsoptimeringen använder inte följande parameteralternativ på sidan **
   - **Datumkontroll för leverans** – Planeringsoptimering stöder inte alternative *CTP* i väntan på stöd för *CTP*.
   - **Ledtid för lager** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att ställa in fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
   - **Arbetsdagar** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att ställa in fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
-
-## <a name="working-time-calendars-page"></a>Sidan Arbetstidskalendrar
-
-Planeringsoptimeringen använder inte följande parametrar på sidan **Arbetstidskalendrar**:
-
-- **Baskalender** – Inväntar stöd för *baskalendrar*.
 
 ## <a name="batch-disposition-master-page"></a>Huvudsidan för batchdisposition
 

@@ -1,20 +1,20 @@
 ---
 title: Uppgradera till part- och globala adressboksmodellen.
-description: I detta ämne beskrivs hur du uppgraderar data för dubbel skrivning till parten samt till den globala adressboksmodellen..
+description: I detta ämne beskrivs hur du uppgraderar data för dubbelskrivning till parten samt till den globala adressboksmodellen..
 author: RamaKrishnamoorthy
-ms.date: 03/31/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 579a7d19ee7196d3242c78bd9915df24ec479c31
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 95d272d9076f1ab25230e4efa98e321bdd618062
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060495"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407805"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Uppgradera till part- och globala adressboksmodellen
 
@@ -151,16 +151,22 @@ I det här avsnittet beskrivs de inställningar som krävs för att du ska kunna
 
 ## <a name="run-the-templates"></a>Kör mallar
 
-1. Stoppa följande dubbelriktade mappningar för **Konto**, **Kontakt** och **Leverantör** med hjälp av appen för ekonomi och drift:
+1. Stoppa följande dubbelriktade mappningar för **Part**, **Konto**, **Kontakt** och **Leverantör** som använder appen för ekonomi och drift:
 
+    + CDS-parter (msdyn_parties) 
     + Kunder V3 (konton)
     + Kunder V3 (kontakter)
     + CDS-kontakter V2 (kontakter)
     + CDS-kontakter V2 (kontakter)
     + Leverantör V2 (msdyn_vendor)
+    + Kontakter V2 (msdyn_contactforparties)
+    + Postadressplatser för CDS-part (msdyn_partypostaladdresses)
+    + CDS-postadress historik V2 (msdyn_postaladdresses)
+    + Postadressplatser för CDS (msdyn_postaladdresscollections)
+    + Partikontakter V3 (msdyn_partyelectronicaddresses)
 
 2. Kontrollera att kartorna har tagits bort från **msdy_dualwriteruntimeconfig** registret i Dataverse.
-3. Installera [lösningar för dubbel skrivningspart och global adressbok](https://aka.ms/dual-write-gab) från AppSource.
+3. Installera [lösningar för dubbelskrivningspart och global adressbok](https://aka.ms/dual-write-gab) från AppSource.
 4. I appen för ekonomi och drift, kör **Initial synkronisering** för följande tabeller om de innehåller data:
 
     + Tilltal

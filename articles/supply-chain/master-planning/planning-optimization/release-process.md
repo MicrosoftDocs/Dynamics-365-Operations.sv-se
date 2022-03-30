@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: f9674bb68d7f577a6efdef3416d1731d743d0555
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: fd6ecb0b7bc1fcf85feab2588622a96cf43b6155
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087176"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407855"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Frisläppningsprocess och frisläppningshistorik för Planeringsoptimering
 
@@ -33,6 +33,7 @@ Eftersom meddelanden inte visas när Planeringsoptimering uppdateras i din milj�
 
 | Ändringar | Information om funktionshantering | Frisläppningsdatum |
 |---|---|---|
+| <p>Allmän prestanda, kvalitet och förbättringar i effektivitet.<p>Centralunderhåll för planeringsoptimering<p>Förslag till planeringsoptimering för att optimera befintligt leverans | Ingen funktionshantering krävs. | 7-11 mars 2022 |
 | <p>Tillagt stöd för planeringsprioritet för tillverkningsorder. | Tillgänglig med version 10.0.25 som en del av funktionen med namnet *Prioriterad MRP-stöd för planeringsoptimering*. | November 12-18, 2021 |
 | <p>Allmän prestanda, kvalitet och förbättringar i effektivitet. | Ingen funktionshantering krävs. | November 12-18, 2021 |
 | <p>Lade till stöd för processtidsberäkningsformler, produktionsflöde med överlappning och produktionsdriftsnummer för behovstransaktioner.</p><p>Förbättrade felmeddelanden för produktionsplanering tillhörande tidsgränsen, kapaciteten går inte att hitta, samt cykliskt flöde.</p><p>Förbättrad överensstämmelse vid beräkning av inleverans- och utleveransdatum på både planerade order och bekräftade order.</p><p>Allmän prestanda, kvalitet och förbättringar i effektivitet. | Funktionsnamn: *Planering med obegränsad kapacitet för Planeringsoptimering* | 22-27 oktober 2021 |

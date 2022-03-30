@@ -5,7 +5,6 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 510a8904cc36821dbb22d2affab5aa32c269e6d8c57144cc1f4ef3e1ac448334
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8391953024f302e75f23c72f8078d59a5541e24b
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774265"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408214"
 ---
 # <a name="threshold-limit-and-exception-threshold-limit"></a>Tröskelvärde och tröskelvärde för undantag
 
@@ -36,7 +35,7 @@ Om en undantagströskelgräns anges tillsammans med tröskelvärdet för en TDS-
 ### <a name="example"></a>Exempel
 En skattekomponent som kallas TDS ställs in och kopplas till den TDS-skattegrupp som kallas Leverantör. Tröskelvärdet har definierats som 50 000 och undantagströskeln har definierats som 20 000 för TDS-skattekomponenten. Leverantören för TDS-gruppen definieras som standardgrupp för TDS för leverantör 1.
 
-En inköpsfaktura 001 bokförs för leverantör 1 för 10 000. TDS beräknas inte för fakturan eftersom fakturabeloppet inte har passerat tröskelvärdet eller undantagströskeln. En inköpsfaktura 002 bokförs för leverantör 1 för 25 000. TDS beräknas för fakturan eftersom fakturabeloppet har passerat undantagströskeln. En inköpsfaktura 003 bokförs för leverantör 1 för 20 000. TDS beräknas för fakturan eftersom det totala fakturabeloppet för de tre fakturor som skickas för leverantören har passerat tröskelvärdet. TDS beräknas på alla fakturor som har utfärdats för leverantören där TDS inte har beräknats tidigare. Därför beräknas TDS på 30 000, vilket är det totala fakturabeloppet på faktura 001 och 003.
+En inköpsfaktura 001 bokförs för leverantör 1 för 10 000. TDS beräknas inte för fakturan eftersom fakturabeloppet inte har passerat tröskelvärdet eller undantagströskeln. En inköpsfaktura 002 bokförs för leverantör 1 för 25 000. TDS beräknas för fakturan eftersom fakturabeloppet har passerat undantagströskeln. En inköpsfaktura 003 bokförs för leverantör 1 för 20 000. TDS beräknas för fakturan eftersom det totala fakturabeloppet för de tre fakturor som utfärdas för leverantören har passerat tröskelvärdet. TDS beräknas på alla fakturor som har utfärdats för leverantören där TDS inte har beräknats tidigare. Därför beräknas TDS på 30 000, vilket är det totala fakturabeloppet på faktura 001 och 003.
 
 Tröskelgränsen och undantagströskeln beaktas inte i TDS-beräkningen om kryssrutan **Förbigå tröskelvärde** har markerats för TDS-skattekoder i TDS-gruppen som är kopplad till transaktionen. Tröskelgränsen används inte i TDS-skattekoderna i TDS-gruppen som kryssrutan **Förbigå tröskelvärde** gäller för.
 

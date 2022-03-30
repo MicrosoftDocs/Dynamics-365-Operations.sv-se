@@ -2,7 +2,7 @@
 title: Borttagna eller avskrivna plattformsfunktioner
 description: I detta ämne beskrivs funktioner som har tagits bort, eller som planerats för borttagning i plattformsuppdateringar av appar för ekonomi och drift.
 author: sericks007
-ms.date: 03/03/2022
+ms.date: 03/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6b4c514d34e4afbaac4afabed6865496747c0411
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 27be0e720b7eca5883c5d73dfe312c09fcd22c65
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384730"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396559"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller utfasade plattformsfunktioner
 
@@ -31,6 +31,18 @@ I detta ämne beskrivs funktioner som har tagits bort, eller som planerats för 
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
 Detaljerad information om objekt i appar för ekonomi och drift finns i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av appar för ekonomi och drift.
+
+## <a name="feature-removal-effective-march-14-2022"></a>Funktionsborttagning som gäller från och med 14 mars 2022
+
+### <a name="xslt-scripting-in-data-management"></a>XSLT-skript i datahantering
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Stödet för XSLT-skript i Datahantering blir avvecklas i syfte att förbättra säkerheten och datasäkerheten i apparna för ekonomi och drift.  |
+| **Ersatt av en annan funktion?**   | Nej Kunder och ISV bör överväga att implementera om sina lösningar baserat på X++-språk i stället för på XSLT-skript. |
+| **Produktområden som påverkas**         | Appar för ekonomi och drift. |
+| **Distribueringsalternativ**              | Alla. |
+| **Status**                         | Inaktuell: Planerat borttagningsdatum 14 mars 2022.<br><br>Undantag: Kunder som för närvarande använder XLST-skript. Dessa kan fortsätta att använda den tills de uppdaterar till version 10.0.30 eller senare. Kunder med detta undantag har fått ett meddelande i Meddelandecentret som är tillgängligt i administratörscentret för Microsoft 365. |
 
 ## <a name="feature-removal-effective-october-2021"></a>Funktionsborttagning som gäller oktober 2021
 

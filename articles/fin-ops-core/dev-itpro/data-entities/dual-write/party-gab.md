@@ -2,19 +2,19 @@
 title: Part och global adressbok
 description: I det här avsnittet beskrivs funktionerna för part och global adressbok för dubbelriktad skrivning.
 author: RamaKrishnamoorthy
-ms.date: 08/11/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 601c49e21c3a97d2da225705ddbb386e491d4d25
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2e0d16b29a71da23acc925c09c87f0bb4776759c
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060342"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407775"
 ---
 # <a name="party-and-global-address-book"></a>Part och global adressbok
 
@@ -22,7 +22,7 @@ ms.locfileid: "8060342"
 
 
 
-*Part* och *global adressbok* är koncept i Ekonomi och Drift-appar. En part kan vara en organisation eller en person. Det är praktiskt att globalt lagra och hantera egenskaper för en part, till exempel namn, språk, kontakter och adresser. När ett egenskapsvärde sedan ändras på ett ställe återspeglas ändringen på alla ställen där parten är involverad.
+*Part* och *global adressbok* är koncept i appar för ekonomi och drift. En part kan vara en organisation eller en person. Det är praktiskt att globalt lagra och hantera egenskaper för en part, till exempel namn, språk, kontakter och adresser. När ett egenskapsvärde sedan ändras på ett ställe återspeglas ändringen på alla ställen där parten är involverad.
 
 ## <a name="party"></a>Part
 
@@ -46,7 +46,7 @@ Följande illustration visar datamodellen för part.
 > [!TIP]
 > När du försöker skapa en ny kontopost använder du fältet **Part** för att söka efter posten med hjälp av namnet. Om du hittar posten behöver du därför helt enkelt bara markera den. Systemet fyller sedan automatiskt i alla data från den parten. Du behöver inte ange alla fält som behövs manuellt. Detta beteende kan du hitta på de färdiga medföljande sidorna **Konto**, **Kontakt** och **Leverantör**.
 
-Dubbelriktad skrivning stöder inte alla partroller i Ekonomi och Drift-program. En fullständig lista över partroller finns i [översikten över den globala adressboken](../../../fin-ops/organization-administration/overview-global-address-book.md).
+Dubbelriktad skrivning stöder inte alla partroller i appar för ekonomi och drift. En fullständig lista över partroller finns i [översikten över den globala adressboken](../../../fin-ops/organization-administration/overview-global-address-book.md).
 
 ### <a name="global-address-book"></a>Global adressbok
 
@@ -75,7 +75,7 @@ Registret **Kontakt** kan lagra följande radtyper:
 |----------|-------------|
 | En person som är kund (t.ex. en säljbar kontakt eller B2C-kund) | En sorterad kontaktpost där fältet **Företag** är inte är tomt och fältet **Är kund** anges som **Ja**. |
 | En person som är leverantör (till exempel en enskild firma som är leverantör). | En sorterad kontaktpost där fältet **Företag** är inte är tomt och fältet **Är leverantör** anges som **Ja**. |
-| En person som är både kund och leverantör | En sorterad kontaktpost där fältet **Företag** är inte är tomt och fältet **Är kund** anges som **Ja** och fältet **Är leverantör** anges som **Ja**. En person kan vara både producent och kund för en annan produkt. Både Ekonomi och Drift-program och support för den här relationen. |
+| En person som är både kund och leverantör | En sorterad kontaktpost där fältet **Företag** är inte är tomt och fältet **Är kund** anges som **Ja** och fältet **Är leverantör** anges som **Ja**. En person kan vara både producent och kund för en annan produkt. Både appar för ekonomi och drift och dubbelskrivning stöder denna relation. |
 | En person som är kontaktperson för en organisation men inte är kund eller leverantör. | En ej sorterad kontaktpost där fältet **Företag** är tomt och fältet **Är kund** anges som **Nej** och fältet **Är leverantör** anges som **Nej**. |
 
 ## <a name="contact-for-party-table"></a>Kontakt för partregister
@@ -142,17 +142,17 @@ Du kan använda knappen **Ny elektronisk adress** ovanför rutnätet för att sk
 Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande versioner tas alla fält för postadresser och elektroniska adresser bort från de andra flikarna (till exempel flikarna **Sammanfattning** och **Detaljer**). Kontaktinformation som visas på fliken **Detaljer** är skrivskyddade kopior av den primära elektroniska adressen, till exempel primärt telefonnummer, primär e-postadress, primär fax och primärt Twitter-ID. Under kvalificeringsledprocessen kan du både ange ett företagtelefonnummer och ett mobiltelefonnummer. Företagstelefonnumret betraktas som primärt telefonnummer om **IsMobile=No**, och mobiltelefonnumret betraktas som sekundärt nummer om **IsMobile=Yes**.
 
 > [!TIP]
-> Använd flikarna **Adresser** och **Elektroniska adresser** i formulären **Konto** och **Kontakt** om du vill hantera postadresser och elektroniska adresser. På så sätt ser du till att adressdata synkroniseras till Ekonomi och Drift-program.
+> Använd flikarna **Adresser** och **Elektroniska adresser** i formulären **Konto** och **Kontakt** om du vill hantera postadresser och elektroniska adresser. På så sätt ser du till att adressdata synkroniseras till appar för ekonomi och drift.
 
-## <a name="setup"></a>Inställningar
+## <a name="setup"></a>Konfigurera
 
 1. Öppna din appmiljö för kundengagemang.
 
 2. Installera den senaste versionen (2.2.2.60 eller senare) av [Lösningen för dubbelriktad skrivning för programorkestrering](https://aka.ms/dual-write-app).
 
-3. Installera [lösningar för dubbel skrivningspart och global adressbok](https://aka.ms/dual-write-gab).
+3. Installera [lösningar för dubbelskrivningspart och global adressbok](https://aka.ms/dual-write-gab).
 
-4. Öppna appen Finance and Operations. Navigera till modulen Datahantering och välj fliken Dubbel skrivning. Administrationssidan för dubbel skrivning öppnas.
+4. Öppna appen Finance and Operations. Navigera till modulen Datahantering och välj fliken dubbelskrivning. Administrationssidan för dubbelskrivning öppnas.
 
 5. Använd båda lösningar som är installerade i steg 2 och 3 med hjälp av funktionen [Använd lösning](link-your-environment.md).
 
@@ -226,11 +226,11 @@ Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande ve
 
     ![Dubblettregel för kontakter.](media/duplicate-rule-2.PNG)
 
-11. Om du redan är en befintlig användare med dubbelriktad skrivning följer du instruktionerna i [Uppgradera till modellen för part och global adressbok](upgrade-party-gab.md) och uppgradera dina uppgifter.
+11. Om du redan är en befintlig användare med dubbelriktad skrivning följer du instruktionerna i [Uppgradera till modellen för part och global adressbok](upgrade-party-gab.md) och uppgradera dina uppgifter. **Fortsätt inte till steg 12 utan att genomföra det här steget.** Om du är en ny användare av dubbelskrivning kan du gå vidare till steg 12.
 
-12. Kör kartorna i följande ordning: Om du får ett fel där det står "Projektvalideringen misslyckades. Målfält saknas..." öppnar du kartan och väljer **Uppdatera register**. Kör sedan kartan.
+12. Om du redan är en befintlig användare med dubbelskrivning slutför du steg 11 och kan sedan köra mappningarna i följande ordning. Om du är en ny kund med dubbelskrivning kan du fortsätta direkt. Om du får ett felmeddelande där det står "Projektvalideringen misslyckades. Målfält saknas..." öppnar du mappningen och väljer **Uppdatera register** innan du kör mappningen.
 
-    Ekonomi och Drift-appar | Kundengagemangsapp  
+    Appar för ekonomi och drift | Kundengagemangsapp  
     ----------------------------|------------------------
     [CDS-parter](mapping-reference.md#220) | msdyn_parties
     [Platser för postadressen för CDS](mapping-reference.md#234) | msdyn_postaladdresscollections
@@ -269,7 +269,7 @@ Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande ve
 
 En samling tabellkartor fungerar tillsammans för interaktion mellan part och global adressbok, som visas i följande tabell.
 
-| Ekonomi och Drift-appar | Kundengagemangsapp | Beskrivning |
+| Appar för ekonomi och drift | Kundengagemangsapp | Beskrivning |
 |----------------------------|-------------------------|-------------|
 | [Kontaktpersonens titlar](mapping-reference.md#223) | msdyn\_salescontactpersontitles |
 | [Kunder V3](mapping-reference.md#101) | konton |
@@ -291,14 +291,14 @@ En samling tabellkartor fungerar tillsammans för interaktion mellan part och gl
 | [Tilltal](mapping-reference.md#228) | msdyn\_salutations |
 | [Leverantörer V2](mapping-reference.md#202) | msdyn\_vendors |
 
-Mer information finns i [Mappningsreferens för dubbel skrivning](mapping-reference.md).
+Mer information finns i [Mappningsreferens för dubbelskrivning](mapping-reference.md).
 
 ## <a name="known-issues-and-limitations"></a>Kända problem och begränsningar
 
-+ I Ekonomi och Drift-appar, när du skapar en kund tillsammans med en adress och sparar den kanske adressen inte synkroniseras med registret **Adress**. Detta beror på ett ordningsföljdsproblem med plattformar med dubbelskrivning. Som en lösning måste du skapa kunden först och spara den. Lägg sedan till adressen.
-+ När en kundpost har en primär adress i programmen och du skapar en ny kontakt för kunden ärver kontaktposten en primär adress från den associerade kundposten i Ekonomi och Drift-program. Detta inträffar även för leverantörskontakt. Dataverse stöder för närvarande inte detta beteende. Om dubbel skrivning är aktiverad synkroniseras en kundkontakt som ärvs med en primär adress från Ekonomi och Drift-appen med Dataverse tillsammans med sin adress.
++ När du skapar en kund tillsammans med en adress och sparar denna i appar för ekonomi och drift kanske adressen inte synkroniseras med registret **Adress**. Detta beror på ett ordningsföljdsproblem med plattformar med dubbelskrivning. Som en lösning måste du skapa kunden först och spara den. Lägg sedan till adressen.
++ När en kundpost har en primär adress i appar för ekonomi och drift och du skapar en ny kontakt för den kund ärver kontaktposten en primär adress från den associerade kundposten. Detta inträffar även för leverantörskontakt. Dataverse stöder för närvarande inte detta beteende. Om dubbelskrivning är aktiverad synkroniseras en kundkontakt som ärvs med en primär adress från appen för ekonomi och drift med Dataverse tillsammans med dess adress.
 + De elektroniska adresser som ställs in på fliken för elektronisk adress i formuläran **Konto**, **Kontakt** och **Leverantör** härrör från `msdyn_partyelectronicaddress`-registret. Denna information flödar inte till dess associerade transaktioner såsom försäljningsorder, offert och inköpsorder. Vi planerar att korrigera det här problemet i stegvisa versioner. Befintliga data i de elektroniska adressfälten i konto- och kontaktposterna fortsätter att arbeta med transaktioner såsom försäljningsorder, offert och inköpsorder.
-+ I Ekonomi och Drift-program kan du skapa en kontaktpost från formuläret **Lägg till kontakt**. När du försöker skapa en ny kontakt från formuläret **Visa kontalt**, misslyckas åtgärden. Detta är ett känt problem.
++ I appar för ekonomi och drift kan du skapa en kontaktpost från formuläret **Lägg till kontakt**. När du försöker skapa en ny kontakt från formuläret **Visa kontalt**, misslyckas åtgärden. Detta är ett känt problem.
 
     ![Känt problem med Lägg till kontakt.](media/party-gab-contact-issue.png)
 
@@ -307,4 +307,4 @@ Mer information finns i [Mappningsreferens för dubbel skrivning](mapping-refere
 
     ![Känt problem med adress.](media/party-gab-address-issue.png)
 
-+ Du kan inte ange en framåtdaterad postadress med hjälp av en Ekonomi och Drift-app med dubbelskrivning, detta eftersom Dataverse inte stöder giltighetsdatum. Om du anger en framtida daterad postadress med hjälp av en Ekonomi och Drift-app, synkroniserar denna helt och hållet med Dataverse och du får omedelbart se adressen i användargränssnittet. Eventuella uppdateringar av den här posten resulterar i ett fel eftersom den är daterad i framtiden och inte i nutid i Ekonomi och Drift-programmet.
++ Du kan inte ange en framåtdaterad postadress med hjälp av en app för ekonomi och drift med dubbelskrivning, detta eftersom Dataverse inte stöder giltighetsdatum. Om du anger en framåtdaterad postadress med hjälp av en app för ekonomi och drift synkroniseras denna helt och hållet med Dataverse, och du får omedelbart se adressen i användargränssnittet. Eventuella uppdateringar av den här posten resulterar i ett fel eftersom den är daterad i framtiden och inte i nutid i appen för ekonomi och drift.

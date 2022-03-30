@@ -1,23 +1,23 @@
 ---
 title: Skapa en fritextfaktura
 description: Det här avsnittet innehåller information om hur du skapar fritextfakturor.
-author: mikefalkner
-ms.date: 08/24/2018
+author: abruer
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e5ca9e00ec881707248d966470288fd3ddba4e785127f30bd0e6dd4e7186c7e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e9578d9b2d61f241ab5e92fc9740b88b80969f6
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763296"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392895"
 ---
 # <a name="create-a-free-text-invoice"></a>Skapa en fritextfaktura
 
@@ -68,6 +68,7 @@ Det här avsnittet innehåller information om hur du skapar fritextfakturor. Fö
 
     * DU kan ändra tidmätning för din fakturautskrift. Välj **Aktuell** om du vill skriva ut fakturor när de uppdateras. Välj **Efter** om du vill skriva ut när alla fakturor har uppdaterats.
     * Om du vill ändra hur kundens kreditgräns kontrolleras innan fakturan bokförs kan du ändra värdet i fältet **kreditgränstyp**.
+    * Du kan välja att stoppa bokföring av fritextfakturor när dett fel uppstår på fliken **Uppdateringar** på sidan **Parametrar för kundreskontra** (**Kundreskontra > Inställningar > Parametrar för kundreskontra**). Välj **Ja** för parametern **Stoppa bokföring av fritextfakturor vid första fel** om du vill stoppa bokföringen av fritextfakturor när ett fel inträffar. Om du bokför i batch stoppar ett fel bokföringsprocessen och batchstatusen anges som **Fel**. Om det här alternativet inte markeras hoppar bokföringsprocessen över en faktura med ett bokföringsfel och fortsätter bokföra ytterligare fakturor. Om du bokför i batch hindrar inte ett bokföringsfel andra fakturor från att bokföras. Batchstatusen blir **Avslutad**. En detaljerad bokföringsprocessrapport finns tillgänglig för granskning i batchjobbhistoriken.
     * Om du vill skriva ut fakturan, ange alternativet till **Ja**.
     * Om du vill bokföra fakturan, ange alternativet till **Ja**. Du kan skriva ut fakturan utan att bokföra den.
 
@@ -82,6 +83,12 @@ När du kopierar rader kan du redigera informationen efter behov.
 Du kan skapa en fritextfaktura från en mall. När du väljer **Ny från mall** på fliken **Faktura** kan du välja ett mallnamn och kundkontot för den nya fritextfakturan. Standardvärden, till exempel betalningsvillkor och betalningsmetod, kan fyllas i automatiskt från kunden, eller du kan använda de värden som sparades i mallen.
 
 En ny fritextfaktura skapas och du kan redigera värdena som du vill.
+
+## <a name="resetting-the-workflow-status-for-free-text-invoices-from-unrecoverable-to-draft"></a>Återställer arbetsflödesstatus för fritextfakturor från Oåterkallelig till Utkast
+En arbetsflödesinstans som har stoppats på grund av ett oåterkalleligt fel får arbetsflödesstatusen **oåterkalleligt**. När statusen för ett arbetsflöde för fritextfakturor för kund är **Oåterkalleligt** kan du återställa den till **Utkast** genom att välja **Återkalla** bland åtgärderna för arbetsflöde. Du kan sedan redigera kundens fritextfaktura. Den här funktionen är tillgänglig om parametern **Återställa arbetsflödesstatus för fritextfakturor från Oåterkalleligt till Utkast** på sidan **Funktionshantering** är aktiverad.
+
+På sidan **Arbetsflödeshistorik** för leverantörsfakturor kan du återställa arbetsflödesstatusen till **utkast**. Du kan öppna den här sidan från **Fritextfaktura** eller från navigeringen **Allmänt > Förfrågningar > Arbetsflöde**. Om du vill återställa arbetsflödesstatus **utkast**, välj **återkalla**. Du kan också återställa arbetsflödesstatusen till **Utkast** genom att välja åtgärden **Återkalla** på sidan **Fritextfaktura** eller sidan **Alla fritextfakturer**. När arbetsflödesstatusen har återställts till **Utkast** blir den tillgänglig för redigering på sidan **Fritextfaktura**.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

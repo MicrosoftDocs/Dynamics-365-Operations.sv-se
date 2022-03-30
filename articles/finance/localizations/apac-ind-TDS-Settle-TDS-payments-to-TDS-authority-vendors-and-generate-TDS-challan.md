@@ -5,7 +5,6 @@ author: kailiang
 ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 19f41020c6e1db8b08c7f69a58d33852c730931447803e2e1e970b1c293b6acd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3e35131cf7fe28274f3f5fa3961c1ba30fdd70a0
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779408"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407724"
 ---
 # <a name="settle-tds-payments-to-tds-authority-vendors-and-generate-tds-challan"></a>Kvitta TDS-betalningar till TDS-myndigheter och generera TDS challan
 
@@ -109,22 +108,22 @@ Om du väljer **Källskattetransaktioner** för att visa de olika TDS-transaktio
 
 | TDS-belopp |
 |------------|
-| 16,995.00  |
-| 22,660.00  |
-| 28,325.00  |
-| 16,995.00  |
-| 28,325.00  |
-| 16,995.00  |
-| 11,330.00  |
+| 16 995,00  |
+| 22 660,00  |
+| 28 325,00  |
+| 16 995,00  |
+| 28 325,00  |
+| 16 995,00  |
+| 11 330,00  |
 
 För ett specfikt TDS-belopp kan du välja **Källskattekomponenter** för att visa TDS som beräknades per TDS-skattekomponent för en specifik TDS-skattekod. I det här exemplet väljer du **Källskattekomponenter** för TDS-beloppet 16 995,00. Skattebeloppet som beräknades per komponent för transaktionen visas.
 
 | Momskomponent | Mängd    | Ackumulerat belopp |
 |---------------|-----------|--------------------|
-| TDS           | 1,5000.00 | 125,000.00         |
-| Tillägg     | 1,500.00  | 12,500.00          |
-| PE-Cess       | 330.00    | 2,750.00           |
-| SHE Cess      | 165.00    | 1,375.00           |
+| TDS           | 1 500,00 | 125 000,00         |
+| Tillägg     | 1 500,00  | 12 500,00          |
+| PE-Cess       | 330,00    | 2 750,00           |
+| SHE Cess      | 165,00    | 1 375,00           |
 
 Om du endast har valt TDS-beloppen 16 995,00, 22 660,00 och 28 325,00 för kvittning på sidan **Källskattetransaktioner**, visas det totala kvittningsbeloppet som **67 980,00** i fältet **Korrigering** på sidan **Öppna transaktionsredigering**. Om den här transaktionen markeras för kvittning och sidan **Öppna transaktionsredigering** är stängd, visas beloppet **67 980,00** i fältet **Debet** på sidan **Journalverifikation**.
 

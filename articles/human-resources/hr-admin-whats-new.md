@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86322fdf14bdefb5c9d4793a69e95ca913843e53
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: d8f0d91667d22ddd1dd7131ca3d03bb2fa70659c
+ms.sourcegitcommit: 1819a11ae22019f1de6991d233c1c51e9950d7a3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087534"
+ms.lasthandoff: 03/18/2022
+ms.locfileid: "8457463"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Nyheter och ändringar i Human Resources
 
 > [!IMPORTANT]
-> Funktionen som anges i det här avsnittet är för närvarande tillgänglig för kunder som är fristående Dynamics 365 Human Resources. Vissa eller alla funktionerna kommer att vara tillgängliga i en kommande version av Ekonomi-infrastrukturen efter att Ekonomi version 10.0.25.  
+> Funktionen som anges i det här avsnittet är för närvarande tillgänglig för kunder som är fristående Dynamics 365 Human Resources. Vissa eller alla funktionerna kommer att vara tillgängliga i en kommande version av Finance-infrastrukturen efter Finance version 10.0.25.  
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Varannan vecka tillhandahåller vi en ny lansering för Microsoft Dynamics 365 Human Resources. Ämnena som anges här beskriver ändringarna som görs med varje version.
 
 Mer information om kommande funktioner eller uppdateringsprocessen för personal finns i följande artiklar: 
 

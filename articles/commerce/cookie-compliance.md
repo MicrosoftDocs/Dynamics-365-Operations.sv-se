@@ -2,7 +2,7 @@
 title: Cookie-kompatibilitet
 description: I det här avsnittet beskrivs överväganden för cookie-efterlevnad och standardprinciper som ingår i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/30/2021
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2efb866d513ba90630b0397c1ca144c92d40719c
+ms.sourcegitcommit: 4645278a4b4a38dcb18fdfb49ce2e276eabb59de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747707"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "8403157"
 ---
 # <a name="cookie-compliance"></a>Cookie-kompatibilitet
 
@@ -58,6 +58,7 @@ I följande tabell visas den aktuella referenslistan över cookies som placerats
 | \_msdyn365___aud_0                          | Lagrar segmentvärden som används vid mål och används bara om mål ska konfigureras på en sida eller i ett fragment som en webbplatsanvändaren. Denna placeras endast om segmentvärdena kommer från en segmenteringsleverantör som är tredje part.      | 7 dagar |
 | \_msdyn365___aud_1                           | Lagrar segmentvärden som används vid mål och används bara om mål ska konfigureras på en sida eller i ett fragment som en webbplatsanvändaren. Denna placeras endast om segmentvärdena kommer från en segmenteringsleverantör som är tredje part.      | 7 dagar |
 | \_msdyn365___aud_2                           | Lagrar segmentvärden som används vid mål och används bara om mål ska konfigureras på en sida eller i ett fragment som en webbplatsanvändaren. Denna placeras endast om segmentvärdena kommer från en segmenteringsleverantör som är tredje part.      | 7 dagar |
+| d365gi                                       | Denna cookie lagrar information om geografisk plats när en tredje part använder tjänsten Geolocation.      | 1 dag |
 
 Om en webbplatsanvändare väljer några sociala medialänkar på en webbplats kommer cookies i följande register även att spåras i webbläsaren.
 
@@ -65,17 +66,17 @@ Om en webbplatsanvändare väljer några sociala medialänkar på en webbplats k
 | Domän                      | Cookie               | beskrivning                                                  | Källa                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | .linkedin.com                | UserMatchHistory         | ID-synkronisering av LinkedIn-annonser                                      | LinkedIn-flöde och insiktstagg                                |
-| .linkedin.com               | li_sugr                  | Webbläsar-ID                                           | Insiktstagg för LinkedIn om IP-adressen inte finns i anvisat land |
+| .linkedin.com               | li_sugr                  | Webbläsar-ID                                           | LinkedIn Insight tag om IP-adressen inte finns i anvisat land |
 | .linkedin.com               | BizographicsOptOut       | Bestämmer avanmälningsstatus för tredjepartsspårning.              | LinkedIn-gästkontroller och avanmälningssidor för bransch           |
 | .linkedin.com               | \_guid                    | Webbläsar-ID för Google Ads-annonser.                            | LinkedIn-flöde                                                |
 | .linkedin.com               | li_oatml                 | Medlem som har ett indirekt ID för konverteringsspårning, ominriktning och analys. | LinkedIn-annonser och insiktstaggar                                |
 | Olika första part-domäner | li_fat_id                | Medlem som har ett indirekt ID för konverteringsspårning, ominriktning och analys. | LinkedIn-annonser och insiktstaggar                                |
-| .adsymptotic.com            | U                        | Webbläsar-ID                                           | Insiktstagg för LinkedIn om IP-adressen inte finns i anvisat land |
+| .adsymptotic.com            | U                        | Webbläsar-ID                                           | LinkedIn Insight tag om IP-adressen inte finns i anvisat land |
 | .linkedin.com                | bCookie                  | Cookie för webbläsar-ID                                            | Förfrågningar till LinkedIn                                         |
 | .linkedin.com                | bscookie                 | Säker webbläsarcookie                                        | Förfrågningar till LinkedIn                                         |
 | .linkedin.com               | lang                     | Anger standardinställningar och -språk.                                 | Förfrågningar till LinkedIn                                         |
 | .linkedin.com                | lidc                     | Används för flöde.                                             | Förfrågningar till LinkedIn                                         |
-| .linkedin.com               | aam_uuid                 | Cookie för Adobe-målgruppschef                                                     | Inställd för ID-sykronisering                                              |
+| .linkedin.com               | aam_uuid                 | Cookie för Adobe Audience Manager                                                     | Inställd för ID-sykronisering                                              |
 | .linkedin.com               | \_ga                      | Google Analytics-cookie                                            | Google Analytics                                             |
 | .linkedin.com               | \_gat                     | Google Analytics-cookie                                             | Google Analytics                                             |
 | .linkedin.com               | liap                     | Google Analytics-cookie                                             | Google Analytics                                             |
@@ -108,7 +109,7 @@ Om en webbplatsanvändare väljer några sociala medialänkar på en webbplats k
 
 ## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Cookie-tillstånd för webbplatsanvändare på en näthandelssajt 
 
-Om en användare av en näthandelssajt eller en modul använder en icke-väsentlig cookie måste en webbplatsanvändare erhålla ett tillstånd innan cookien spåras. För att webbplatsanvändare ska kunna ge cookie-samtycke på näthandelssajten måste en webbplatsförfattare lägga till och konfigurera en modul för cookie-samtycke i sidans rubrikmodul för att säkerställa att samtycket uppmanas och tas emot. Tillstånd från webbplatsanvändare måste ges innan en funktion eller modul med en icke-väsentlig cookie kan återges på en webbplatssida.
+Om en användare av en näthandelssajt eller en modul använder en icke-väsentlig cookie måste en webbplatsanvändares tillstånd inhämtas innan cookien spåras. För att webbplatsanvändare ska kunna ge sitt cookie-samtycke på näthandelssajten måste en webbplatsförfattare lägga till och konfigurera en modul för cookie-samtycke i sidans rubrikmodul i syfte att säkerställa att samtycket uppmanas och tas emot. Tillstånd från webbplatsanvändare måste ges innan en funktion eller modul med en icke-väsentlig cookie kan återges på en webbplatssida.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

@@ -2,7 +2,7 @@
 title: Skapa en näthandelssajt
 description: I det här avsnittet beskrivs de steg och den information som krävs för att skapa en ny näthandelssajt i webbplatsverktyget för Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 03/04/2022
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 37734e2ceea3a50c70a2f7945329d4a9cf660cc6
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388221"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402785"
 ---
 # <a name="create-an-e-commerce-site"></a>Skapa en näthandelssajt
 
@@ -70,6 +70,14 @@ Följ dessa steg för att byta namn på din webbplats i webbplatsverktyget.
 1. Om du vill öppna listvyn väljer du **Webbplatsväxlare** i det övre högra hörnet och väljer **Hantera webbplatser** . 
 1. Markera kryssrutan bredvid den site du vill byta namn på och välj sedan **Byt namn** i kommandofältet.
 1. I dialogrutan **Nytt namn på webbplats** ange det nya namnet på webbplats och välj **OK**. Webbplatslistan uppdateras så att webbplatsens nya namn visas.
+
+## <a name="delete-a-site"></a>Radera en webbplats
+
+Följ dessa steg för att radera en webbplats i webbplatsverktyget.
+
+1. Om du vill öppna listvyn väljer du **Webbplatsväxlare** i det övre högra hörnet och väljer **Hantera webbplatser** .
+1. Välj den webbplats som du vill ta bort och markera sedan **Ta bort** i kommandofältet.
+1. I dialogrutan **Ta bort \<site name\>** anger du det nya namnet på webbplatsen och väljer sedan **Ta bort**.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
