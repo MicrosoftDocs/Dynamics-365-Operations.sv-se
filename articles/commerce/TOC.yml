@@ -390,7 +390,7 @@
                   href: tasks/worker.md
                 - name: 'Modern Point of Sale (MPOS), Cloud POS och Store Commerce'
                   items:
-                    - name: Appen Store Commerce i Microsoft Dynamics 365 Commerce (förhandsversion)
+                    - name: Appen Store Commerce
                       href: dev-itpro/store-commerce.md
                     - name: Riktlinjer för implementering av enhetshantering
                       href: implementation-considerations-devices.md
@@ -2872,6 +2872,8 @@
               items:
                 - name: Återbetalning för returorder avvisas
                   href: troubleshoot/refund-declined.md
+                - name: Återbetalningsbara avgifter beräknas fel baserat på den returnerade kvantiteten
+                  href: troubleshoot/refund-miscalculated-partial-return.md
                 - name: Dynamics 365 Payment Connector för Adyen
                   items:
                     - name: Felsök problem med Dynamics 365 Payment Connector för Adyen

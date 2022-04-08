@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-25.md
                 - name: Finance 10.0.24 (februari)
                   href: get-started/whats-new-changed-10-0-24.md
-                - name: Finance 10.0.23 (januari)
-                  href: get-started/whats-new-changed-10-0-23.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -414,8 +412,20 @@
               items:
                 - name: Översikt över prenumerationsfakturering
                   href: accounts-receivable/subscription-billing-summary.md
-                - name: Konfigurera faktureringsscheman
-                  href: accounts-receivable/sb-billing-schedules.md
+                - name: Återkommande kontraktsfakturering
+                  items:
+                    - name: Skapa faktureringsscheman
+                      href: accounts-receivable/sb-billing-schedules.md
+                    - name: Kopiera ett faktureringsschema
+                      href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Milstolpesfakturering
+                      href: accounts-receivable/sb-milestonebilling.md
+                    - name: Avsluta faktureringsscheman
+                      href: accounts-receivable/terminate-billing-schedule.md
+                - name: Periodisering av intäkt och utgift
+                  items: null
+                - name: Intäktsallokering för flera element
+                  items: null
             - name: Betalningar och kvittningar
               items:
                 - name: Översikt över kundbetalning
@@ -1443,11 +1453,11 @@
                             - name: Konfigurera en SharePoint-kanal
                               href: localizations/e-invoicing-configure-sharepoint-channel.md
                         - name: Konfigurera och använda elektronisk fakturering i Finance och Supply Chain Management
-                          items: null
-                        - name: Aktivera och konfigurera integration med elektronisk fakturering
-                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-                        - name: Konfigurera parametrar för elektronisk fakturering
-                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                          items:
+                            - name: Aktivera och konfigurera integration med elektronisk fakturering
+                              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                            - name: Konfigurera parametrar för elektronisk fakturering
+                              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
                         - name: Arbeta med elektronisk fakturering
                           items:
                             - name: Skicka elektroniska dokument till elektronisk fakturering
@@ -1532,6 +1542,10 @@
                           items:
                             - name: Momsdeklaration
                               href: localizations/emea-dnk-vat-declaration-denmark.md
+                        - name: Rapportering för Finland
+                          items:
+                            - name: Momsdeklaration
+                              href: localizations/emea-fin-vat-declaration-mult-tax-id.md
                         - name: Rapportering för Frankrike
                           items:
                             - name: Momsdeklaration
@@ -1546,6 +1560,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Lista över försäljning inom EU
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Rapportering för Norge
+                          items:
+                            - name: Momsdeklaration
+                              href: localizations/emea-nor-vat-declaration.md
                         - name: Rapportering för Spanien
                           items:
                             - name: 'Omedelbar leverans av information om moms (Suministro Inmediato de Información del IVA, SII)'
@@ -1564,10 +1582,6 @@
                           items:
                             - name: Momsdeklaration
                               href: localizations/emea-gbr-vat-declaration.md
-                        - name: Rapportering för Norge
-                          items:
-                            - name: Momsdeklaration
-                              href: localizations/emea-nor-vat-declaration.md
                     - name: Aktivera momsberäkning för överföringsorder
                       items:
                         - name: Momsfunktionstöd för överföringsorder
@@ -1694,8 +1708,6 @@
                   href: localizations/emea-aut-half-year-depreciation.md
                 - name: Avgifter för förpackningsmaterial
                   href: localizations/emea-aut-packing-material-fee-calculation.md
-                - name: Momsutdrag
-                  href: localizations/emea-aut-vat-statement-details.md
                 - name: Rapport för gränsöverskridande tjänster
                   href: localizations/emea-aut-cross-border-services-report.md
                 - name: Österrikisk Intrastat
@@ -2020,9 +2032,7 @@
                   href: localizations/emea-create-post-periodic-journals.md
                 - name: Uppdatera hur belopp visas i rapporter och dokument
                   href: localizations/emea-amount-printing-forms.md
-                - name: Momsutdrag
-                  href: localizations/emea-cze-vat-statement-details.md
-                - name: Momsdeklaration (Tjeckien)
+                - name: Momsdeklaration
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
                 - name: Tjeckisk Intrastat
                   href: localizations/emea-cze-intrastat.md
@@ -2060,6 +2070,8 @@
                   href: localizations/tasks/set-up-payment-slip-format.md
                 - name: Dansk Intrastat
                   href: localizations/emea-dnk-intrastat.md
+                - name: Momsdeklaration
+                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Egypten
               items:
                 - name: Egypten – översikt
@@ -2242,6 +2254,8 @@
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
                 - name: Finsk Intrastat
                   href: localizations/emea-fin-intrastat.md
+                - name: Momsdeklaration
+                  href: localizations/emea-fin-vat-declaration.md
             - name: Frankrike
               items:
                 - name: Frankrike – översikt
@@ -2332,12 +2346,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: Momsdeklaration
                   href: localizations/emea-deu-vat-declaration-germany.md
-                - name: Överföring av elektronisk momsdeklaration (ELSTER)
-                  href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Tysk Intrastat
                   href: localizations/emea-deu-intrastat.md
-                - name: Momsutdrag
-                  href: localizations/emea-de-vat-declaration.md
                 - name: Rapport över elektroniska kundfakturor
                   href: localizations/emea-deu-e-invoices.md
                 - name: Journallisterapport
@@ -2348,8 +2358,6 @@
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
                 - name: Lista över försäljning inom EU
                   href: localizations/emea-deu-eu-sales-list.md
-                - name: Momsdeklaration
-                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Ungern
               items:
                 - name: Ungern – översikt
@@ -2562,6 +2570,8 @@
                                   href: localizations/apac-ind-GST-import-goods-gst.md
                                 - name: Importera tjänster som har GST (moms)
                                   href: localizations/apac-ind-import-services-gst.md
+                                - name: Avgiftsallokering på sidan Växel för importorder
+                                  href: localizations/apac-ind-charge-allocation-boe-page-import-orders.md
                                 - name: Exportera varor som har nollvärderad moms
                                   href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
                                 - name: Exportera tjänster som har nollvärderad moms
@@ -3116,17 +3126,13 @@
               items:
                 - name: Nederländerna – översikt
                   href: localizations/netherlands.md
-                - name: Momsdeklaration
-                  href: localizations/emea-nl-VAT-declaration.md
-                - name: Elektroniska momsdeklarationer (EVAT)
-                  href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL-integration
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
                 - name: Verifieringsfil (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
                 - name: Momsdeklaration (Nederländerna)
                   href: localizations/emea-nl-vat-declaration-netherlands.md
-                - name: Intrastat för Nederländerna
+                - name: Intrastat
                   href: localizations/emea-nl-intrastat.md
                 - name: Lista över försäljning inom EU
                   href: localizations/emea-nl-EU-sales-list.md
@@ -3540,7 +3546,7 @@
                   href: localizations/emea-swe-payment-formats-import.md
                 - name: Momsbetalningsrapport för Sverige
                   href: localizations/emea-swe-sales-tax-payment-report-sweden.md
-                - name: Momsdeklaration för Sverige
+                - name: Momsdeklaration
                   href: localizations/emea-swe-VAT-declaration-Sweden.md
                 - name: Svenskt Intrastat
                   href: localizations/emea-swe-intrastat.md

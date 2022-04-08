@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-25.md
                 - name: Platform updates för version 10.0.24 (februari 2022)
                   href: get-started/whats-new-platform-updates-10-0-24.md
-                - name: Platform updates för version 10.0.23 (januari 2022)
-                  href: get-started/whats-new-platform-updates-10-0-23.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -98,13 +96,13 @@
                       items:
                         - name: Potentiell kund till pengar
                           href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                        - name: Synkronisera konton direkt från Sales till kunder i Ekonomi och drift
+                        - name: Synkronisera konton direkt från försäljning till kunder i appar för ekonomi och drift
                           href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                        - name: Synkronisera produkter direkt från Ekonomi och drift till produkter i Sales
+                        - name: Synkronisera produkter direkt från appar för ekonomi och drift till produkter i försäljning
                           href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                        - name: Synkronisera kontakter direkt från Sales till kontakter i Ekonomi och drift
+                        - name: Synkronisera kontakter direkt från försäljning till kontakter i appar för ekonomi och drift
                           href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                        - name: Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till Ekonomi och drift
+                        - name: Synkronisera huvuden och rader i försäljningsofferter direkt från försäljning till appar för ekonomi och drift
                           href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
                         - name: Synkronisering av försäljningsorder direkt mellan Sales och Ekonomi och drift
                           href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
@@ -240,6 +238,8 @@
               href: data-entities/configure-export-data-lake.md
             - name: Appar för ekonomi och drift i Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
+            - name: Lagrade data och metadata i Azure Data Lake
+              href: data-entities/Azure-Data-Lake-Enhanced-Metadata.md
             - name: Gör enhetslagring tillgängligt som en Data Lake
               href: data-entities/entity-store-data-lake.md
             - name: Affärshändelser som genererats av Exportera till Azure Data Lake-tjänsten (förhandsversion)
@@ -410,6 +410,8 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Återanvända samma AD FS-instans i flera miljöer
                       href: deployment/onprem-reuseadfs.md
+                    - name: Uppgradera Windows Server i dina Microsoft Dynamics 365 Finance + Operations (on-premises)-miljöer
+                      href: deployment/onprem-upgrade-os.md
                     - name: Uppgradera SQL Server-instansen för Microsoft Dynamics 365 Finance + Operations (on-premises)-miljöer
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Lokal agent
@@ -932,6 +934,8 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: LCS för partner
                   href: lifecycle-services/getting-started-lcs.md
+                - name: Webbläsare som stöds
+                  href: lifecycle-services/web-browsers.md
                 - name: 'RESTful API:er'
                   items:
                     - name: Starta och stoppa miljöer
@@ -1490,7 +1494,9 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Uppgradera parameterfilerna
               href: perf-test/rsat/rsat-upgrade-parameter-files.md
-            - name: Självstudier för Regression suite automation tool
+            - name: Utvärderingsläge utan Azure DevOps
+              href: perf-test/rsat/rsat-trial-without-devops.md
+            - name: Självstudier för Regression Suite Automation Tool
               href: perf-test/rsat/rsat-tutorial.md
             - name: Konfigurera icke-administratörsanvändare
               href: perf-test/rsat/rsat-configure-nonadmin.md
