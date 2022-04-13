@@ -10,18 +10,27 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c4731c5f0b0a1553deb53753d82d29a34e5525df
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: 2544c30afe18f290b681efed1705f7cef0cb7620
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8418650"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487848"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Vad är nytt eller ändrat i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Detta ämne listar nya funktioner, korrigeringar, förbättringar och kända problem för varje släppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20200"></a>Version 2.0.20.0
+
+I den här versionen ingår följande nya funktioner, korrigeringar och förbättringar:
+
+- Har åtgärdat flera problem som kraschar.
+- Fast en fråga där felaktiga värden skulle visas på korten på sidan **Arbetslista**.
+- Förbättrad rullningsupplevelsen och eliminerad rullningslisten på sidorna **arbetslistan** och **artikelförfrågning** i Android.
+- Lade till en exit-knapp på inloggningssidan, som avslutar programmet.
 
 ## <a name="version-20190"></a>Version 2.0.19.0
 

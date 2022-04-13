@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 304cf3f6c913586e08e0a3771ebfe40bc5d2b102
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416315"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464921"
 ---
 # <a name="financial-analysis"></a>Ekonomisk analys
 
@@ -38,7 +38,7 @@ ms.locfileid: "7416315"
 
 Arbetsytan **Ekonomisk analys** fokuserar på hur du visar och filtrerar data i befintliga rapporter. Du kan lägga till nytt visuellt innehåll i arbetsytan **Ekonomisk analys**. Arbetsytan **Ekonomisk analys** är tillgänglig för aktuellt företag samt alla företag för att visa data för alla juridiska personer, oavsett vilka juridiska personer som rollen har åtkomst till.
 
-- [Lägg till eller redigera Power BI-visualiseringar på instrumentpanelen](/powerapps-docs/user/add-powerbi-dashboards.md)
+- [Lägg till eller redigera Power BI-visualiseringar på instrumentpanelen](/powerapps/user/add-powerbi-dashboards)
 
 ## <a name="dynamics-365-finance-setup"></a>Dynamics 365 Finance-konfiguration
 **Redovisning**

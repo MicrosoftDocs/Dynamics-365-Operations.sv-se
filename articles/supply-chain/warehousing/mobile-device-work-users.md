@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3a930814a1fb98e3b1611adf309c10e66b49b9d
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: c4cb36160e692cc12140b57037d2c9739f7b2ebd
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902107"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462682"
 ---
 # <a name="mobile-device-user-accounts"></a>Användarkonton för mobil enhet
 
@@ -90,8 +90,8 @@ När en arbetare loggar in på den Warehouse Management-mobilappen ändras språ
 1. I åtgärdsfönstret väljer du **Användaralternativ**.
 1. Ange följande fält på fliken **Inställningar**:
 
-    - **Språk** – Välj det språk som arbetaren föredrar. Det här fältet styr även datumformatet som visas i lagerställeappen.
-    - **Datum, tid och nummerformat** – Välj det språk som bestämmer vilka nummerformat som visas i lagerställeappen. Observera att datum- och tidsformaten som visas i lagerställeappen avgörs av fältet **Språk** och inte av det här fältet.
+    - **Språk** – Välj det språk som arbetaren föredrar. Det här fältet styr även nummerformatet som visas i lagerställeappen.
+    - **Datum, tid och nummerformat** – Välj det datum- och tidsformat som arbetaren föredrar. I distributionslagerappen används nummerformatet som associeras med det språk som valts i fältet **Språk** i stället för den här inställningen.
     - **Tidszon** – Välj den tidszon där arbetaren arbetar. Det här fältet påverkar tidstämpeln för alla registreringar som arbetaren gör med hjälp av programmet.
 
 > [!NOTE]

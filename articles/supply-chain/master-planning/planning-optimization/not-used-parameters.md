@@ -1,22 +1,22 @@
 ---
 title: Parametrar som inte används av planeringsoptimeringen
 description: Detta ämne visar en lista över de parametrar som planeringsoptimeringen just nu inte tar hänsyn till under drift.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408240"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469126"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametrar som inte används av planeringsoptimeringen
 
@@ -65,18 +65,6 @@ Planeringsoptimeringen använder inte följande parametrar eller alternativ på 
   - **Använd angiven strukturlista eller formelversion** – Inväntar stöd för *Formelversioner med sam-/biprodukt*.
   - **Använd angiven flödesversion** – Inväntar stöd för *Krav med definierade strukturliste- eller flödeskrav*.
 
-- Snabbfliken **Åtgärd**:
-
-  - **Åtgärdsmeddelande** – Inväntar stöd för *Åtgärder*.
-  - **Åtgärdstidsgräns** – Inväntar stöd för *Åtgärder*.
-  - **Senarelägg marginal** – Inväntar stöd för *Åtgärder*.
-  - **Flytta fram marginal** – Inväntar stöd för *Åtgärder*.
-  - **Basdatum** – Inväntar stöd för *Åtgärder*.
-  - **Flytta fram** – Inväntar stöd för *Åtgärder*.
-  - **Senarelägg** – Inväntar stöd för *Åtgärder*.
-  - **Minska** – Inväntar stöd för *Åtgärder*.
-  - **Öka** – Inväntar stöd för *Åtgärder*.
-  - **Härledda åtgärder** – Inväntar stöd för *Åtgärder*.
 
 - Snabbfliken **Annan**:
 
@@ -149,7 +137,6 @@ Planeringsoptimeringen använder inte följande parametrar eller alternativ på 
   - **Prognosplan** – Inväntar ytterligare stöd för *Prognos*.
   - **Kapacitet** – Inväntar stöd för *Tidsplanering*.
   - **Kontinuitetsplan** – Inväntar stöd för *Kontinuitetsplanering*.
-  - **Åtgärdsmeddelande** – Inväntar stöd för *Åtgärder*.
   - **Beräknade förseningar** – Inväntar ytterligare stöd för *Beräknade förseningar*.
   - **Ordningsföljd** – Inväntar stöd för *Produktion*.
 

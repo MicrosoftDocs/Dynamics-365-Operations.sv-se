@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1593206e8e22aed518ebca9bee0772c6620bec9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3b97c585009b50c6623036d10f54e78a65a89cea
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068802"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464949"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Visa och uppdatera enhetsdata i Excel 
 
@@ -48,7 +48,7 @@ Om du vill veta mer om hur du använder Excel-tillägg, titta på den korta vide
 2. Klicka på alternativet **öppnas i Excel** och öppna en arbetsbok som har skapats. Den här arbetsboken har bindningsinformation för enheten, en pekare till din miljö och en länk till Excel-tillägget.
 3. I Excel klickar du på **skrivskyddet** för att tillåta att Excel-tillägget körs. Excel-tillägget körs i ett fönster till höger i Excel-fönstret.
 4. Om du använder Excel-tillägg för första gången klickar du på **Lita på det här tillägget**.
-5. Om du uppmanas att logga in klickar du på **Logga in** och loggar sedan in med samma inloggningsuppgifter som du använde för att logga in på Ekonomi och Drift-app. Excel-tillägget använder en tidigare inloggningskontext från webbläsaren och loggar automatiskt in dig, om det kan. (Mer information om webbläsaren som används baserat på operativsystemet finns i [Webbläsare som används av Office-tillägg](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) För att säkerställa att inloggningen lyckades, verifiera användarnamnet i det övre högra hörnet av Excel-tillägget. 
+5. Om du uppmanas att logga in klickar du på **Logga in** och loggar sedan in med samma inloggningsuppgifter som du använde för att logga in på Ekonomi och Drift-app. Excel-tillägget använder en tidigare inloggningskontext från webbläsaren och loggar automatiskt in dig, om det kan. (Mer information om webbläsaren som används baserat på operativsystemet finns i [Webbläsare som används av Office-tillägg](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). För att säkerställa att inloggningen lyckades, verifiera användarnamnet i det övre högra hörnet av Excel-tillägget. 
 
 Excel-tillägget läser automatiskt data för enheten som du har valt. Lägg märke till att det finns inga data i arbetsboken förrän Excel-tillägget läser in den.
 

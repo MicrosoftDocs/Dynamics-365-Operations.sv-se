@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2f31009424629221a8e4f130b0ec1879c6c6e3d4
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e2273aefb98880a1ae746ef7ec65b4f2262f3560
+ms.sourcegitcommit: 49c97b0c94e916db5efca5672d85df70c3450755
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781973"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8492932"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Självstudie för Regression Suite Automation Tool
 
@@ -43,7 +43,7 @@ I följande exempel visas hur du kan använda den här funktionen för att valid
     5. Markera vald rad i listan.
     6. Validera att värdet i fältet **totala tillgängliga** är **411,0000000000000000**.
 
-2. Spara uppgiftsinspelningen som **utvecklingsregistrering** och koppla den till ditt testfall i Azure Devops.
+2. Spara uppgiftsinspelningen som **utvecklingsregistrering** och koppla den till ditt testfall i Azure DevOps.
 3. Lägg till testfallet testplanen och läs in testfallet i RSAT.
 4. Öppna Excel-parameterfilen och gå till fliken **TestCaseSteps**.
 5. Om du vill validera om lagerbehållningen alltid kommer att vara över **0**, gå till steget **Validera totalt tillgängligt** och ändrar värdet från **411** till **0**. Ändra värdet i fältet **Operatör** till ett lika med-tecken (**=**) till ett större än-tecken (**\>**).
@@ -172,6 +172,7 @@ RSAT kan anropas från fönstret **kommandotolk** eller **PowerShell**.
         about
         cls
         download
+        downloadsuite
         edit
         generate
         generatederived
@@ -181,11 +182,13 @@ RSAT kan anropas från fönstret **kommandotolk** eller **PowerShell**.
         list
         listtestplans
         listtestsuite
+        listtestsuitebyid
         listtestsuitenames
         playback
         playbackbyid
         playbackmany
         playbacksuite
+        playbacksuitebyid
         quit
         upload
         uploadrecording
@@ -194,17 +197,17 @@ RSAT kan anropas från fönstret **kommandotolk** eller **PowerShell**.
 
 #### <a name=""></a>?
 
-Visar hjälp om alla tillgängliga kommandon och deras parametrar.
+Listar alla kommandon eller visar hjälp för ett specifikt kommando, tillsammans med tillgängliga parametrar.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
 
 ##### <a name="-optional-parameters"></a>?: Valfria parametrar
 
-`command`: Där ``[command]`` är ett av de kommandon som anges nedan.
+`command`: Var ``[command]`` finns ett av kommandona i den föregående listan.
 
 #### <a name="about"></a>om
 
-Visar den aktuella versionen.
+Visar versionen av den installerade RSAT.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
 
@@ -216,21 +219,57 @@ Rensar skärmen.
 
 #### <a name="download"></a>hämta
 
-Hämtar bifogade filer för det angivna testfallet till utdatafilen.
-Du kan använda ``list`` kommandot för att hämta alla tillgängliga testärenden. Använd valfritt värde från den första kolumnen som en **test_case_id** parameter.
+Laddar ned bilagor (inspelnings-, körnings- och parameterfiler) för det angivna testfallet från Azure DevOps i utdatapanelen. Du kan använda kommandot ``list`` för att få alla tillgängliga testfall, och använda alla värden från den första kolumnen som **test_case_id** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[/retry[=<seconds>]] [test_case_id] [output_dir]``
+
+##### <a name="download-optional-switches"></a>hämtning: valfria växlingar
+
++ `/retry[=seconds]`: Om denna switch är angiven, och falltestfall spärras av andra RSAT-instanser, väntar hämtningsprocessen angivet antal sekunder och sedan försöker du en gång till. Standardmallvärdet är \[sekunder\] är 120 sekunder. Om du inte använder denna växel kommer processen att avbrytas omedelbart om testfallen är spärrade.
 
 ##### <a name="download-required-parameters"></a>hämtning: parametrar som krävs
 
 + `test_case_id` Representerar ID för testärende.
-+ `output_dir` Representerar katalogen för utdata. Katalogen måste finnas.
+
+##### <a name="download-optional-parameters"></a>nedladdning: valfria parametrar
+
++ `output_dir` Representerar katalogen för arbetskatalogen. Katalogen måste finnas. Arbetskatalogen från inställningarna används om den här parametern inte har angetts.
 
 ##### <a name="download-examples"></a>hämta: exempel
 
 `download 123 c:\temp\rsat`
 
-`download 765 c:\rsat\last`
+`download /retry=240 765`
+
+#### <a name="downloadsuite"></a>downloadsuite
+
+Laddar ned bilagor (inspelnings-, körnings- och parameterfiler) för alla testfall i den angivna testsviten från Azure DevOps i utdatapanelen. Du kan använda kommandot ``listtestsuitenames`` för att få alla tillgängliga testsviter och använd valfritt värde som en **test_suite_name** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``downloadsuite``**``[/retry[=<seconds>]] ([test_suite_name] | [/byid] [test_suite_id]) [output_dir]``
+
+##### <a name="downloadsuite-optional-switches"></a>downloadsuite: valfria växlingar
+
++ `/retry[=seconds]`: Om denna switch är angiven, och falltestfall spärras av andra RSAT-instanser, väntar hämtningsprocessen angivet antal sekunder och sedan försöker du en gång till. Standardmallvärdet är \[sekunder\] är 120 sekunder. Om du inte använder denna växel kommer processen att avbrytas omedelbart om testfallen är spärrade.
++ `/byid`: Denna växel anger att den önskade testsviten identifieras med sitt Azure DevOps ID i stället för namnet på testsviten.
+
+##### <a name="downloadsuite-required-parameters"></a>downloadsuite: parametrar som krävs
+
++ `test_suite_name`: Representerar testpaketets namn. Denna parameter är nödvändig om /byid-växeln **inte** har angetts. Detta är testsvitens Azure DevOps namn.
++ `test_suite_id`: Representerar ID för testpaketet. Denna parameter är nödvändig om /byid-växeln **är** har angetts. Detta ID är testsvit-ID Azure DevOps.
+
+##### <a name="downloadsuite-optional-parameters"></a>downloadsuite: valfria parametrar
+
++ `output_dir` Representerar katalogen för arbetskatalogen. Katalogen måste finnas. Arbetskatalogen från inställningarna används om den här parametern inte har angetts.
+
+##### <a name="downloadsuite-examples"></a>downloadsuite: exempel
+
+`downloadsuite NameOfTheSuite c:\temp\rsat`
+
+`downloadsuite /byid 123 c:\temp\rsat`
+
+`downloadsuite /retry=240 /byid 765`
+
+`downloadsuite /retry=240 /byid 765 c:\temp\rsat`
 
 #### <a name="edit"></a>redigera
 
@@ -244,7 +283,7 @@ Gör att du kan öppna parameter filen i Excel-programmet och redigera den.
 
 ##### <a name="edit-examples"></a>redigera: exempel
 
-`edit c:\RSAT\TestCase_123_Base.xlsx`
+`edit c:\RSAT\123\TestCase_123_Base.xlsx`
 
 `edit e:\temp\TestCase_456_Base.xlsx`
 
@@ -252,24 +291,41 @@ Gör att du kan öppna parameter filen i Excel-programmet och redigera den.
 
 Skapar test körnings- och parametervärden för det angivna testärendet i utdatapanelen. Du kan använda ``list`` kommandot för att hämta alla tillgängliga testärenden. Använd valfritt värde från den första kolumnen som en **test_case_id** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[/retry[=<seconds>]] [/dllonly] [/keepcustomexcel] [test_case_id] [output_dir]``
+
+##### <a name="generate-optional-switches"></a>generera: valfria växlar
+
++ `/retry[=seconds]`: Om denna switch är angiven, och falltestfall spärras av andra RSAT-instanser, väntar genereringsprocessen angivet antal sekunder och sedan försöker du en gång till. Standardmallvärdet är \[sekunder\] är 120 sekunder. Om du inte använder denna växel kommer processen att avbrytas omedelbart om testfallen är spärrade.
++ `/dllonly`: Generera endast testkörningsfiler. Återskapa inte Excel-parameterfilen.
++ `/keepcustomexcel`: Uppgradera den befintliga parameterfilen. Generera också om körningsfiler.
 
 ##### <a name="generate-required-parameters"></a>generera: obligatoriska parametrar
 
 + `test_case_id` Representerar ID för testärende.
-+ `output_dir` Representerar katalogen för utdata. Katalogen måste finnas.
+
+##### <a name="generate-optional-parameters"></a>generera: valfria parametrar
+
++ `output_dir` Representerar katalogen för arbetskatalogen. Katalogen måste finnas. Arbetskatalogen från inställningarna används om den här parametern inte har angetts.
 
 ##### <a name="generate-examples"></a>genererar: exempel
 
 `generate 123 c:\temp\rsat`
 
-`generate 765 c:\rsat\last`
+`generate /retry=240 765 c:\rsat\last`
+
+`generate /retry=240 /dllonly 765`
+
+`generate /retry=240 /keepcustomexcel 765`
 
 #### <a name="generatederived"></a>generatederived
 
-Genererar ett nytt testärende som härletts från det angivna testärendet. Du kan använda ``list`` kommandot för att hämta alla tillgängliga testärenden. Använd valfritt värde från den första kolumnen som en **test_case_id** parameter.
+Genererar ett nytt härlett testfall (underordnat testfall) av det angivna testfallet. Det nya testfallet läggs också till i den angivna testsviten. Du kan använda kommandot ``list`` för att få alla tillgängliga testfall, och använda alla värden från den första kolumnen som **test_case_id** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[/retry[=<seconds>]] [parent_test_case_id] [test_plan_id] [test_suite_id]``
+
+##### <a name="generatederived-optional-switches"></a>generatederived: valfria växlar
+
++ `/retry[=seconds]`: Om denna switch är angiven, och falltestfall spärras av andra RSAT-instanser, väntar genereringsprocessen angivet antal sekunder och sedan försöker du en gång till. Standardmallvärdet är \[sekunder\] är 120 sekunder. Om du inte använder denna växel kommer processen att avbrytas omedelbart om testfallen är spärrade.
 
 ##### <a name="generatederived-required-parameters"></a>generatederived: obligatoriska parametrar
 
@@ -281,39 +337,63 @@ Genererar ett nytt testärende som härletts från det angivna testärendet. Du 
 
 `generatederived 123 8901 678`
 
+`generatederived /retry 123 8901 678`
+
 #### <a name="generatetestonly"></a>generatetestonly
 
-Skapar endast test körningsfil för det angivna testärendet i utdatapanelen. Du kan använda ``list`` kommandot för att hämta alla tillgängliga testärenden. Använd valfritt värde från den första kolumnen som en **test_case_id** parameter.
+Skapar endast test körningsfil för det angivna testärendet. Det genererar inte Excel-parameterfilen. Filerna genereras i den angivna utdatakatalogen. Du kan använda kommandot ``list`` för att få alla tillgängliga testfall, och använda alla värden från den första kolumnen som **test_case_id** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[/retry[=<seconds>]] [test_case_id] [output_dir]``
+
+##### <a name="generatetestonly-optional-switches"></a>generatetestonly: valfria växlar
+
++ `/retry[=seconds]`: Om denna switch är angiven, och falltestfall spärras av andra RSAT-instanser, väntar genereringsprocessen angivet antal sekunder och sedan försöker du en gång till. Standardmallvärdet är \[sekunder\] är 120 sekunder. Om du inte använder denna växel kommer processen att avbrytas omedelbart om testfallen är spärrade.
 
 ##### <a name="generatetestonly-required-parameters"></a>generatetestonly: obligatoriska parametrar
 
 + `test_case_id` Representerar ID för testärende.
-+ `output_dir` Representerar katalogen för utdata. Katalogen måste finnas.
+
+##### <a name="generatetestonly-optional-parameters"></a>generatetestonly: valfria parametrar
+
++ `output_dir` Representerar katalogen för arbetskatalogen. Katalogen måste finnas. Arbetskatalogen från inställningarna används om den här parametern inte har angetts.
 
 ##### <a name="generatetestonly-examples"></a>generatetestonly: exempel
 
 `generatetestonly 123 c:\temp\rsat`
 
-`generatetestonly 765 c:\rsat\last`
+`generatetestonly /retry=240 765`
 
 #### <a name="generatetestsuite"></a>generatetestsuite
 
-Genererar alla testärenden för det angivna paketet i utdatakatalogen. Du kan använda ``listtestsuitenames`` kommandot för att hämta alla tillgängliga testpaket. Använd valfritt värde kolumnen som en **test_suite_name** parameter.
+Genererar testautomatiseringsfiler för alla testfall i den angivna testsviten. Du kan använda kommandot ``listtestsuitenames`` för att få alla tillgängliga testsviter och använd valfritt värde som en **test_suite_name** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[/retry[=<seconds>]] [/dllonly] [/keepcustomexcel] ([test_suite_name] | [/byid] [test_suite_id]) [output_dir]``
+
+##### <a name="generatetestsuite-optional-switches"></a>generatetestsuite: valfria växlar
+
++ `/retry[=seconds]`: Om denna switch är angiven, och falltestfall spärras av andra RSAT-instanser, väntar genereringsprocessen angivet antal sekunder och sedan försöker du en gång till. Standardmallvärdet är \[sekunder\] är 120 sekunder. Om du inte använder denna växel kommer processen att avbrytas omedelbart om testfallen är spärrade.
++ `/dllonly`: Generera endast testkörningsfiler. Återskapa inte Excel-parameterfilen.
++ `/keepcustomexcel`: Uppgradera den befintliga parameterfilen. Generera också om körningsfiler.
++ `/byid`: Denna växel anger att den önskade testsviten identifieras med sitt Azure DevOps ID i stället för namnet på testsviten.
 
 ##### <a name="generatetestsuite-required-parameters"></a>generatetestsuite: obligatoriska parametrar
 
-+ `test_suite_name`: Representerar testpaketets namn.
-+ `output_dir` Representerar katalogen för utdata. Katalogen måste finnas.
++ `test_suite_name`: Representerar testpaketets namn. Denna parameter är nödvändig om /byid-växeln **inte** har angetts. Detta är testsvitens Azure DevOps namn.
++ `test_suite_id`: Representerar ID för testpaketet. Denna parameter är nödvändig om /byid-växeln **är** har angetts. Detta ID är testsvit-ID Azure DevOps.
+
+##### <a name="generatetestsuite-optional-parameters"></a>generatetestsuite: valfria parametrar
+
++ `output_dir` Representerar katalogen för arbetskatalogen. Katalogen måste finnas. Arbetskatalogen från inställningarna används om den här parametern inte har angetts.
 
 ##### <a name="generatetestsuite-examples"></a>generatetestsuite: exempel
 
 `generatetestsuite Tests c:\temp\rsat`
 
-`generatetestsuite Purchase c:\rsat\last`
+`generatetestsuite /retry Purchase c:\rsat\last`
+
+`generatetestsuite /dllonly /byid 121`
+
+`generatetestsuite /keepcustomexcel /byid 121`
 
 #### <a name="help"></a>hjälp
 
@@ -321,7 +401,7 @@ Genererar alla testärenden för det angivna paketet i utdatakatalogen. Du kan a
 
 #### <a name="list"></a>lista
 
-Visar alla tillgängliga testärenden.
+Listar alla tillgängliga testfall i den aktuella testplanen.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
 
@@ -333,13 +413,13 @@ Visar alla tillgängliga testplaner.
 
 #### <a name="listtestsuite"></a>listtestsuite
 
-Visar testärenden för angivet testpaket. Du kan använda ``listtestsuitenames`` kommandot för att hämta alla tillgängliga testpaket. Använd valfritt värde från första kolumnen som en **suite_name** parameter.
+Visar testärenden för angivet testpaket. Du kan använda kommandot ``listtestsuitenames`` för att få alla tillgängliga testsviter och använd valfritt värde från listan som en **suite_name** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[test_suite_name]``
 
 ##### <a name="listtestsuite-required-parameters"></a>listtestsuite: obligatoriska parametrar
 
-+ `suite_name`: Namn på önskat paket.
++ `test_suite_name`: Namn på önskat paket.
 
 ##### <a name="listtestsuite-examples"></a>listtestsuite: exempel
 
@@ -347,33 +427,61 @@ Visar testärenden för angivet testpaket. Du kan använda ``listtestsuitenames`
 
 `listtestsuite NameOfTheSuite`
 
+#### <a name="listtestsuitebyid"></a>listtestsuitebyid
+
+Visar testärenden för angivet testpaket.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitebyid``**``[test_suite_id]``
+
+##### <a name="listtestsuitebyid-required-parameters"></a>listtestsuitebyid: obligatoriska parametrar
+
++ `test_suite_id`: ID på önskat paket.
+
+##### <a name="listtestsuitebyid-examples"></a>listtestsuitebyid: exempel
+
+`listtestsuitebyid 12345`
+
 #### <a name="listtestsuitenames"></a>listtestsuitenames
 
-Visar alla tillgängliga testpaket.
+Listar alla tillgängliga testsviter i den aktuella testplanen.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
 
 #### <a name="playback"></a>playback
 
-Spelar upp ett testärende med hjälp av en Excel-fil.
+Testa testfallet som är kopplat till den angivna Excel-parameterfilen. Det här kommandot använder befintliga lokala automationsfiler och hämtar inte filer från Azure DevOps. Det här kommandot stöds inte för POS Commerce testärenden.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[/retry[=<seconds>]] [/comments[="comment"]] [excel_parameter_file]``
+
+##### <a name="playback-optional-switches"></a>uppspelning: valfria växlar
+
++ `/retry[=seconds]`: Om denna switch är angiven, och falltestfall spärras av andra RSAT-instanser, väntar uppspelningsprocessen angivet antal sekunder och sedan försöker du en gång till. Standardmallvärdet är \[sekunder\] är 120 sekunder. Om du inte använder denna växel kommer processen att avbrytas omedelbart om testfallen är spärrade.
++ `/comments[="comment"]`: Ange en anpassad informationssträng som tas med i fältet **Kommentarer** på sammanfattnings- och testresultatsidorna för Azure DevOps testfallskörningar.
 
 ##### <a name="playback-required-parameters"></a>uppspelning: obligatoriska parametrar
 
-+ `excel_file`: En fullständig sökväg till Excel-filen. Filen måste finnas.
++ `excel_parameter_file`: Den fullständiga sökvägen för en Excel-parameterfil. Filen måste finnas.
 
 ##### <a name="playback-examples"></a>uppspelning: exempel
 
-`playback c:\RSAT\TestCaseParameters\sample1.xlsx`
+`playback c:\RSAT\2745\attachments\Create_Purchase_Order_2745_Base.xlsx`
 
-`playback e:\temp\test.xlsx`
+`playback /retry e:\temp\test.xlsx`
+
+`playback /retry=300 e:\temp\test.xlsx`
+
+`playback /comments="Payroll solution 10.0.0" e:\temp\test.xlsx`
 
 #### <a name="playbackbyid"></a>playbackbyid
 
-Spelar upp flera testärenden samtidigt. Du kan använda ``list`` kommandot för att hämta alla tillgängliga testärenden. Använd valfritt värde från den första kolumnen som en **test_case_id** parameter.
+Spelar upp flera testärenden samtidigt. Testfallen identifieras med deras ID. Det här kommandot hämtar filer från Azure DevOps. Du kan använda kommandot ``list`` för att få alla tillgängliga testfall, och använda alla värden från den första kolumnen som **test_case_id** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[/retry[=<seconds>]] [/comments[="comment"]] [test_case_id1] [test_case_id2] ... [test_case_idN]``
+
+##### <a name="playbackbyid-optional-switches"></a>playbackbyid: valfria växlar
+
++ `/retry[=seconds]`: Om denna switch är angiven, och falltestfall spärras av andra RSAT-instanser, väntar uppspelningsprocessen angivet antal sekunder och sedan försöker du en gång till. Standardmallvärdet är \[sekunder\] är 120 sekunder. Om du inte använder denna växel kommer processen att avbrytas omedelbart om testfallen är spärrade.
++ `/comments[="comment"]`: Ange en anpassad informationssträng som tas med i fältet **Kommentarer** på sammanfattnings- och testresultatsidorna för Azure DevOps testfallskörningar.
 
 ##### <a name="playbackbyid-required-parameters"></a>playbackbyid: obligatoriska parametrar
 
@@ -387,75 +495,132 @@ Spelar upp flera testärenden samtidigt. Du kan använda ``list`` kommandot för
 
 `playbackbyid 2345 667 135`
 
+`playbackbyid /comments="Payroll solution 10.0.0" 2345 667 135`
+
+`playbackbyid /retry /comments="Payroll solution 10.0.0" 2345 667 135`
+
 #### <a name="playbackmany"></a>playbackmany
 
-Spelar upp många testärenden samtidigt, med Excel-filer.
+Spelar upp flera testärenden samtidigt. Testfallen identifieras av Excel-parameterfiler. Det här kommandot använder befintliga lokala automationsfiler och hämtar inte filer från Azure DevOps.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[/retry[=<seconds>]] [/comments[="comment"]] [excel_parameter_file1] [excel_parameter_file2] ... [excel_parameter_fileN]``
+
+##### <a name="playbackmany-optional-switches"></a>playbackmany: valfria växlar
+
++ `/retry[=seconds]`: Om denna switch är angiven, och falltestfall spärras av andra RSAT-instanser, väntar uppspelningsprocessen angivet antal sekunder och sedan försöker du en gång till. Standardmallvärdet är \[sekunder\] är 120 sekunder. Om du inte använder denna växel kommer processen att avbrytas omedelbart om testfallen är spärrade.
++ `/comments[="comment"]`: Ange en anpassad informationssträng som tas med i fältet **Kommentarer** på sammanfattnings- och testresultatsidorna för Azure DevOps testfallskörningar.
 
 ##### <a name="playbackmany-required-parameters"></a>playbackmany: obligatoriska parametrar
 
-+ `excel_file1`: Fullständig sökväg till Excel-filen. Filen måste finnas.
-+ `excel_file2`: Fullständig sökväg till Excel-filen. Filen måste finnas.
-+ `excel_fileN`: Fullständig sökväg till Excel-filen. Filen måste finnas.
++ `excel_parameter_file1`: Den fullständiga sökvägen för en Excel-parameterfil. Filen måste finnas.
++ `excel_parameter_file2`: Den fullständiga sökvägen för en Excel-parameterfil. Filen måste finnas.
++ `excel_parameter_fileN`: Den fullständiga sökvägen för en Excel-parameterfil. Filen måste finnas.
 
 ##### <a name="playbackmany-examples"></a>playbackmany: exempel
 
-`playbackmany c:\RSAT\TestCaseParameters\param1.xlsx`
+`playbackmany c:\RSAT\2745\attachments\Create_Purchase_Order_2745_Base.xlsx`
 
-`playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx`
+`playbackmany e:\temp\test.xlsx f:\RSAT\sample1.xlsx c:\RSAT\sample2.xlsx`
+
+`playbackmany /retry=180 /comments="Payroll solution 10.0.0" e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx`
 
 #### <a name="playbacksuite"></a>playbacksuite
 
-Spelar upp alla testärende från angiven testpaket.
-Du kan använda ``listtestsuitenames`` kommandot för att hämta alla tillgängliga testpaket. Använd valfritt värde från första kolumnen som en **suite_name** parameter.
+Spelar upp alla testfall från en eller flera specificerade testpaket. Om den /lokala växeln anges används lokala bilagor för alltid. Annars hämtas bilagor från Azure DevOps. Du kan använda kommandot ``listtestsuitenames`` för att få alla tillgängliga testsviter och använd valfritt värde från första kolumnen som en **suite_name** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[/updatedriver] [/local] [/retry[=<seconds>]] [/comments[="comment"]] ([test_suite_name1] .. [test_suite_nameN] | [/byid] [test_suite_id1] .. [test_suite_idN])``
+
+##### <a name="playbacksuite-optional-switches"></a>playbacksuite: valfria växlar
+
++ `/updatedriver`: Om denna växel är angiven uppdateras webbläsarens WebDriver så som krävs innan denna process körs.
++ `/local`: I den här växeln anges att lokala bilagor ska användas för växling istället för att hämta filer från Azure DevOps.
++ `/retry[=seconds]`: Om denna switch är angiven, och falltestfall spärras av andra RSAT-instanser, väntar uppspelningsprocessen angivet antal sekunder och sedan försöker du en gång till. Standardmallvärdet är \[sekunder\] är 120 sekunder. Om du inte använder denna växel kommer processen att avbrytas omedelbart om testfallen är spärrade.
++ `/comments[="comment"]`: Ange en anpassad informationssträng som tas med i fältet **Kommentarer** på sammanfattnings- och testresultatsidorna för Azure DevOps testfallskörningar.
++ `/byid`: Denna växel anger att den önskade testsviten identifieras med sitt Azure DevOps ID i stället för namnet på testsviten.
 
 ##### <a name="playbacksuite-required-parameters"></a>playbacksuite: obligatoriska parametrar
 
-+ `suite_name`: Namn på önskat paket.
++ `test_suite_name1`: Representerar testpaketets namn. Denna parameter är nödvändig om /byid-växeln **inte** har angetts. Detta är testsvitens Azure DevOps namn.
++ `test_suite_nameN`: Representerar testpaketets namn. Denna parameter är nödvändig om /byid-växeln **inte** har angetts. Detta är testsvitens Azure DevOps namn.
++ `test_suite_id1`: Representerar ID för testpaketet. Denna parameter är nödvändig om /byid-växeln **är** har angetts. Detta ID är testsvit-ID Azure DevOps.
++ `test_suite_idN`: Representerar ID för testpaketet. Denna parameter är nödvändig om /byid-växeln **är** har angetts. Detta ID är testsvit-ID Azure DevOps.
 
 ##### <a name="playbacksuite-examples"></a>playbacksuite: exempel
 
 `playbacksuite suiteName`
 
-`playbacksuite sample_suite`
+`playbacksuite suiteName suiteNameToo`
+
+`playbacksuite /updatedriver /local /retry=180 /byid 151 156`
+
+`playbacksuite /updatedriver /local /comments="Payroll solution 10.0.0" /byid 150`
+
+#### <a name="playbacksuitebyid"></a>playbacksuitebyid
+
+Kör alla testärende från angiven Azure DevOps testpaket.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuitebyid``**``[/updatedriver] [/local] [/retry[=<seconds>]] [/comments[="comment"]] [test_suite_id]``
+
+##### <a name="playbacksuitebyid-optional-switches"></a>playbacksuitebyid: valfria växlar
+
++ `/retry[=seconds]`: Om denna switch är angiven, och falltestfall spärras av andra RSAT-instanser, väntar uppspelningsprocessen angivet antal sekunder och sedan försöker du en gång till. Standardmallvärdet är \[sekunder\] är 120 sekunder. Om du inte använder denna växel kommer processen att avbrytas omedelbart om testfallen är spärrade.
++ `/comments[="comment"]`: Ange en anpassad informationssträng som tas med i fältet **Kommentarer** på sammanfattnings- och testresultatsidorna för Azure DevOps testfallskörningar.
++ `/byid`: Denna växel anger att den önskade testsviten identifieras med sitt Azure DevOps ID i stället för namnet på testsviten.
+
+##### <a name="playbacksuitebyid-required-parameters"></a>playbacksuitebyid: obligatoriska parametrar
+
++ `test_suite_id`: Representerar testsvit-ID:t så som det finns i Azure DevOps.
+
+##### <a name="playbacksuitebyid-examples"></a>playbacksuitebyid: exempel
+
+`playbacksuitebyid 2900`
+
+`playbacksuitebyid /retry 2099`
+
+`playbacksuitebyid /retry=200 2099`
+
+`playbacksuitebyid /retry=200 /comments="some comment" 2099`
 
 #### <a name="quit"></a>avsluta
 
-Stänger programmet.
+Stänger programmet. Det här kommandot är bara användbart när programmen körs i interaktivt läge.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
 
+##### <a name="quit-examples"></a>avsluta: exempel
+
+`quit`
+
 #### <a name="upload"></a>överför
 
-Överför alla filer som hör till de angivna testpaketen eller testärenden.
+Överför bilagefiler (inspelnings-, körnings- och parameterfiler) som tillhör en angiven testsvit eller testfall till Azure DevOps.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``([test_suite_name] | [test_case_id1] .. [test_case_idN])``
 
-#### <a name="upload-required-parameters"></a>ladda upp: parametrar som krävs
+##### <a name="upload-required-parameters"></a>ladda upp: parametrar som krävs
 
-+ `suite_name`: Alla filer som hör till de angivna testpaketen kommer att laddas upp.
-+ `testcase_id`: Alla filer hör till de angivna testärenden kommer att laddas upp.
++ `test_suite_name`: Alla filer som hör till de angivna testpaketen kommer att laddas upp.
++ `test_case_id1`: Representerar det första testfalls-ID som ska överföras. Använd endast denna parameter om inget testsvitnamn har angetts.
++ `test_case_idN`: Representerar det sista testfalls-ID som ska överföras. Använd endast denna parameter om inget testsvitnamn har angetts.
 
 ##### <a name="upload-examples"></a>ladda upp: exempel
 
 `upload sample_suite`
 
-`upload 123`
+`upload 2900`
 
 `upload 123 456`
 
 #### <a name="uploadrecording"></a>uploadrecording
 
-Överför endast registreringsfil som hör till de angivna testärenden.
+Laddar bara upp inspelningsfilen som tillhör ett eller flera specificerade testfall till Azure DevOps.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[test_case_id1] .. [test_case_idN]``
 
 ##### <a name="uploadrecording-required-parameters"></a>uploadrecording: parametrar som krävs
 
-+ `testcase_id`: Registreringsfil som hör till de angivna testärenden kommer att överföras.
++ `test_case_id1`: Representerar det första testfalls-ID för inspelningen som ska laddas upp till Azure DevOps.
++ `test_case_idN`: Representerar det sista testfalls-ID för inspelningen som ska laddas upp till Azure DevOps.
 
 ##### <a name="uploadrecording-examples"></a>uploadrecording: exempel
 
@@ -465,9 +630,21 @@ Stänger programmet.
 
 #### <a name="usage"></a>användning
 
-Visar två sätt att anropa det här programmet: ett som använder en standardinställningsfil, ett annat som en inställningsfil.
+Visar de tre användningssätten för det här programmet.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
+
+Köra programmet interaktivt:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``
+
+Köra programmet genom att ange ett kommando:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp ``**``[command]``**
+
+Så här kör du programmet med en inställningsfil:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``/settings [drive:\Path to\file.settings] [command]``**
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell-exempel
 

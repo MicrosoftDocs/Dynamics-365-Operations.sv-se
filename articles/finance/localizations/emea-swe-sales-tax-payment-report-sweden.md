@@ -2,7 +2,7 @@
 title: Momsrapport för Sverige
 description: I det här avsnittet beskrivs hur du ställer in och genererar momsrapporten för juridiska personer i Sverige.
 author: anasyash
-ms.date: 03/13/2020
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,21 @@ ms.search.region: Sweden
 ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 83d396b82962d11f9166d1f302359c393e85325e8a286a7fc48483e4581abdd8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64dcafe0dcbfc4a1097fa10285ab988d4d0a674f
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715007"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487687"
 ---
 # <a name="sales-tax-report-for-sweden"></a>Momsrapport för Sverige
 
 [!include [banner](../includes/banner.md)]
 
-
+> [!IMPORTANT]
+  > Den här funktionen har ersatts. Mer information finns i beskrivningen av [borttagna eller gamla funktioner](../get-started/removed-deprecated-features-finance.md#sales-tax-report-for-sweden-design-based-on-reporting-codes).
+  > Mer information om momsdeklaration finns i [momsdeklarationen (Sverige)](emea-swe-vat-declaration-sweden.md)
+  
 Allmän information om hur du ställer in mervärdesskattutdraget (moms) finns i [momsrapportering för Europa](emea-vat-reporting.md).
 
 ## <a name="set-up-the-report-layout-for-sales-tax-authorities"></a>Ställ in rapportlayouten för skattemyndigheter

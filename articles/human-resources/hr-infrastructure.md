@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a80bedd0224f1e31dfec4e9f4c39ad1ed75d7f2f
-ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
+ms.openlocfilehash: 9d574f760960241e4d79a988b1b671f224cb345f
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "8024577"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487806"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge---release-10025-update"></a>Dynamics 365 Human Resources infrastrukturkoppling – version 10.0.25 uppdatering
 
@@ -34,7 +34,7 @@ Kopplingen blir konsekvent för Personal-användare på följande sätt:
     - Det finns en kodbas där nya funktioner för Personal släpps som en del av den vanliga uppdateringsprocessen för en version.
     - Det sätt som uppgraderar, uppdaterar och snabbkorrigeringar används i miljön är konsekvent.
 
-- [Utbyggbarhetsalternativen förbättras.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options.md)
+- [Utbyggbarhetsalternativen förbättras.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options)
 
     - Du kan fortsätta att använda Microsoft Power Platform Tools och utöka efter behov.
     - Du kan utöka funktioner via formulär, register, metoder och API (Application Programming Interfaces).
@@ -42,7 +42,7 @@ Kopplingen blir konsekvent för Personal-användare på följande sätt:
 
     Mer information om tillgängliga filnamnstillägg finns i [Översikt över utvidgningar i Dynamics 365](../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
-- [Skapa en uppsättning med personalfunktioner i Dynamics 365.](/dynamics365-release-plan/2021wave2/human-resources/create-one-set-human-resources-capabilities-within-dynamics-365.md)
+- [Skapa en uppsättning med personalfunktioner i Dynamics 365.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/create-one-set-human-resources-capabilities-within-dynamics-365)
 
     I versionen 10.0.25 har funktionella funktioner som endast finns i Personal gjorts tillgängliga i infrastruktur för Ekonomi och Drift. För att kunderna ska kunna dra nytta av den här kapaciteten i en Ekonomi och Drift-miljö måste följande personalfunktioner vara aktiverade i Funktionshantering.
 

@@ -2,7 +2,7 @@
 title: Vanliga frågor om återställ datatorg
 description: Det här avsnittet innehåller svar på vanliga frågor om återställ datatorg.
 author: jinniew
-ms.date: 02/14/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 53f45f469c39f9e389763aa0daed658e5a62d377
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: ab6417a739e9a7b67b9e67d93f3bef654e55e5e4
+ms.sourcegitcommit: 2c2ef3e312e7221006a9e230c9378bb4c1b4cd33
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119522"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8466423"
 ---
 # <a name="data-mart-resets-faq"></a>Vanliga frågor om återställ datatorg
 
@@ -47,10 +47,14 @@ Om ett eller flera av följande gäller i din situation kan din organisation dra
 Det finns vissa omständigheter när vi inte rekommenderar att du återställer en data mart:
 
 - Du upplever problem med dataintegrationsprestanda.
+- Din Financial Reporter-integration är inte aktiverad. 
+
+    - Det innebär att redovisningsdata inte längre synkroniseras till dina data i Financial Reporting. I Financial Reporter kanske du inte får aktuella nummer för dina ekonomirapporter. Detta inträffar vanligtvis om du inte har använd Financial Reporter på länge.
+    - Du uppmanas att aktivera integrationen genom att återställa data. Du kan fortsätta genom att välja **Ja**. Du kan också välja att återställa data mär en senare tidpunkt. När integrationen har aktiverats synkroniseras redovisningsdata återigen i Financial Reporter. 
 - Om du har ett återkommande återställt mönster på grund av någon av följande orsaker:
 
     - **Saknade eller oväntade data i rapporten** – Om du ser att data saknas öppnar du ett supportärende hos Microsoft för att granska ditt rapportformat och eventuella problem med datasynkronisering.
-    - **Låst integrationstillstånd**
+    - **Låst integrationsläge** - Om du ser att integrationsstatusen har körts kan det bero på ett stort antal transaktioner i systemet. Denna stat kommer att lösa sig. Om du däremot ser att integreringsstatusen har körts i fler än fyra timmar måste du öppna en supportbiljett hos Microsoft. 
    
 ## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Om jag återställer datatorg, förlorar jag rapporter som jag redan har utformat?
 

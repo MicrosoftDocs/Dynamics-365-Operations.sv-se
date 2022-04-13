@@ -12,17 +12,16 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: fa9b8c79d1b3b5ed04a7d277bf09cd05dbd332d2
-ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
+ms.openlocfilehash: 76ce17777a2d13b46e5faed96dbde5e0d93782eb
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8370986"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462251"
 ---
 # <a name="peripherals"></a>Kringutrustning
 
 [!include[banner](includes/banner.md)]
-[!include[banner](includes/preview-banner.md)]
 
 Det här avsnittet förklarar koncepten som är relaterade till kringutrustning i butik. Här beskrivs olika sätt att ansluta kringutrustning till POS och komponenterna som är ansvariga för anslutning till POS.
 
@@ -495,7 +494,7 @@ Den här konfigurationen är de vanligaste konfigurationen för traditionella, f
     > [!NOTE]
     > Du behöver inte ange andra egenskaper för maskinvarustationen. Alla övriga uppgifter som krävs till exempel maskinvaruprofilen kommer från själva POS.
 
-4.  Gå till **Retail and Commerce \> Retail and Commerce-IT \> Distributionsschema**.
+4.  Gå till **Butik och Handel \> Butik och Handel-IT \> Distributionsschema**.
 5.  Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
 6.  Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
 7.  Installera och aktivera Modern POS för Windows.
@@ -522,7 +521,7 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som har en 
     -   **EFT-POS-nummer** – det EFT terminal-ID som används när EFT-tillstånd skickas. Detta ID tillhandahålls av kreditkortsföretaget.
     -   **Paketnamnet** – maskinvarustationspaketet att använda när maskinvarustationen distribueras.
 
-4.  Gå till **Retail and Commerce \> Retail and Commerce-IT \> Distributionsschema**.
+4.  Gå till **Butik och Handel \> Butik och Handel-IT \> Distributionsschema**.
 5.  Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
 6.  Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
 7.  Installation av maskinvarustation. Mer information om hur du installerar maskinvarustationen finns [Konfiguration och installation av Retail hardware station](retail-hardware-station-configuration-installation.md).
@@ -550,7 +549,7 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som delar m
     -   **Paketnamnet** – maskinvarustationspaketet att använda när maskinvarustationen distribueras.
 
 4.  Upprepa steg 2 och 3 för varje ytterligare maskinvarustation som krävs i butiken.
-5.  Gå till **Retail and Commerce \> Retail and Commerce-IT \> Distributionsschema**.
+5.  Gå till **Butik och Handel \> Butik och Handel-IT \> Distributionsschema**.
 6.  Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
 7.  Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
 8.  Installera maskinvarustationen på varje värddator som du angav i steg 2 och 3. Mer information om hur du installerar maskinvarustationen finns [Konfiguration och installation av Retail hardware station](retail-hardware-station-configuration-installation.md).

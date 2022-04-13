@@ -2,7 +2,7 @@
 title: Momsrapporter för Europa
 description: Det här avsnittet innehåller allmän information om inställning och skapande av mervärdesskattutdrag (skatt) för vissa europeiska länder.
 author: ShylaThompson
-ms.date: 06/20/2017
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b028c5a185b4e7626dd9258630cc469c4439fc37d1c9d1cd7d42007b0ec85736
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a1f7611dcf713e80f637a4b3f5542763050ac4a6
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741491"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487755"
 ---
 # <a name="vat-reporting-for-europe"></a>Momsrapporter för Europa
 
@@ -39,6 +39,25 @@ Det här avsnittet innehåller en allmän metod för inställning och skapande a
 -   Litauen
 -   Nederländerna
 -   Sverige
+
+> [!IMPORTANT]
+> Funktioner som beskrivs i det här avsnittet för Österrike, Tjeckien, Tyskland, Nederländerna och Sverige avskrivs. Mer information finns i beskrivningen av [borttagna eller gamla funktioner](../get-started/removed-deprecated-features-finance.md).
+> Med länkarna i följande tabell kan du lära dig mer om den nya utformningen av momsdeklarationer i motsvarande länder.
+> 
+>
+> | Land        | Ytterligare information                                                          |
+> |----------------|---------------------------------------------------------------------------------|
+> | Österrike        | [Momsdeklaration för (Österrike)](emea-aut-vat-declaration-austria.md)       |                                                                           
+> | Tjeckien | [Momsdeklaration (Tjeckien)](emea-cze-vat-declaration-tax-declaration-model.md) |
+> | Danmark        | [Momsdeklaration (Danmark)](emea-dnk-vat-declaration-denmark.md)         |
+> | Frankrike         | [Momsdeklaration (Frankrike)](emea-fra-vat-declaration-preview-france.md)       |
+> | Tyskland        | [Momsdeklaration för (Tyskland)](emea-deu-vat-declaration-germany.md)           |
+> | Nederländerna    | [Momsdeklaration (Nederländerna)](emea-nl-vat-declaration-netherlands.md)    |
+> | Norge         | [Momsretur med direkt överföring till Altinn](emea-nor-vat-return.md) |
+> | Spanien          | [Momsdeklaration (Spanien)](emea-esp-vat-declaration-spain.md)              |
+> | Sverige         | [Momsdeklaration (Sverige)](emea-swe-vat-declaration-sweden.md)          |
+> | Schweiz    | [Momsdeklaration (Schweiz)](emea-che-vat-declaration-switzerland.md) |
+> | Storbritannien             | [Förbered för integration med MRD för moms](emea-gbr-mtd-vat-integration.md) |
 
 ## <a name="vat-statement-overview"></a>Översikt över momsrapport
 Skatteutdraget baseras på beloppen i momstransaktionerna. Att skapa ett momsrapport ingår i betalningsprocessen för moms, som implementeras med funktionen Kvitta och bokföra moms. Den här funktionen beräknar momsen som ska betalas för en given period. Kvittningsberäkningen innehåller bokförd moms för den valda kvittningsperioden för momstransaktionen. Processen för att beräkna data för en momsrapport baseras på förhållandet mellan momskoder och momsrapporteringskoder, där momsrapporteringskoderna matchar rutorna för momsrapporter (eller taggar i XML). För varje momskod bör momsrapporteringskoder ställas in för varje transaktionstyp, till exempel skattepliktig försäljning, skattepliktiga inköp och skattepliktig import. Följande typ av transaktioner beskrivs i avsnittet Momskoder för momsrapportering längre fram i det här avsnittet.
@@ -258,10 +277,10 @@ Momsrapporten för varje land måste uppfylla kraven i landets lagstiftning. Det
 
 | Land        | Ytterligare information                                                          |
 |----------------|---------------------------------------------------------------------------------|
-| Österrike        |  [Detaljerad momsinformation för Österrike](emea-aut-vat-statement-details.md)         |
+| Österrike        | [Detaljerad momsinformation för Österrike](emea-aut-vat-statement-details.md)         |
 | Belgien        |                                                                                 |
-| Tjeckien |  [Momsutdrag för Tjeckien](emea-cze-vat-statement-details.md)   |
-| Estland        |  [Detaljerad momsinformation för Estland](emea-est-vat-statement-details.md) |
+| Tjeckien | [Momsutdrag för Tjeckien](emea-cze-vat-statement-details.md)   |
+| Estland        | [Detaljerad momsinformation för Estland](emea-est-vat-statement-details.md) |
 | Finland        | [Momsrapport för Finland](emea-fin-sales-tax-payment-report-finland.md)          |
 | Tyskland        | [Momsdeklaration för Tyskland](emea-de-vat-declaration.md)                       |
 | Italien          | [Detaljerad momsinformation för Italien](emea-ita-vat-statements-details.md)            |

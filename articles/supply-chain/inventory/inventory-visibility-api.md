@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f74bb4bd4ed66520c04261bd9f82faad7775817e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062121"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524477"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentliga API:er för Lagersynlighet
 
@@ -41,15 +41,17 @@ I följande tabell finns de API:er som är tillgängliga i nuläget:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Bokför | [Ställ in/åsidosätta lagerbehållning](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Bokför | [Skapa en reservationshändelse](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Bokför | [Skapa flera reservationshändelser](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/on-hand/changeschedule | Bokför | [Skapa en schemalagd engångs-ändring](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/on-hand/changeschedule/bulk | Bokför | [Skapa flera schemalagda engångs-ändringar](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Bokför | [Fråga genom att använda inläggsmetoden](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Hämta | [Fråga genom att använda hämtningsmetoden](#query-with-get-method) |
-
-Microsoft har tillhandahållit en färdig *brevbärar*-begärandesamling. Du kan importera denna samling till ditt *brevbärar* program genom att använda följande delade länk: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
 > [!NOTE]
 > Delen {environmentId} av sökvägen är miljö-ID:t i Microsoft Dynamics Lifecycle Services (LCS).
 > 
 > Bulk-API:t kan returnera maximalt 512 poster för varje begäran.
+
+Microsoft har tillhandahållit en färdig *brevbärar*-begärandesamling. Du kan importera denna samling till ditt *brevbärar* program genom att använda följande delade länk: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Hitta slutpunkten enligt Lifecycle Services-miljön
 
@@ -517,6 +519,9 @@ Parametern `groupByValues` bör följa din konfiguration för indexering. Mer in
 
 Parametern `returnNegative` styr om resultatet innehåller negativa poster.
 
+> [!NOTE]
+> Om du har aktiverat funktionerna för förändring av behållningslistan och tillgängligt att lova-funktionerna, kan frågan också inkludera den `QueryATP` booleska parametern som styr om frågeresultaten omfattar information om tillgängligt att lova. Mer information och exempel finns i [Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova](inventory-visibility-available-to-promise.md).
+
 Följande exempel visar brödtext.
 
 ```json
@@ -572,5 +577,9 @@ Här är ett exempel på URL-adressen. Denna hämtbegäran är exakt densamma so
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
+
+## <a name="available-to-promise"></a>Disponibelt att lova
+
+Du kan ställa in lagersynlighet så att du kan tidsplanera framtida ändringar av lagerbehållningen och beräkna ATP-kvantiteter. ATP är den kvantitet av en artikel som finns tillgänglig och därför kan utlovas en kund i nästa period. Om du använder ATP beräkningen kan du öka möjligheten att uppfylla ordern mycket. Information om hur du aktiverar funktionen, och hur du kan interagera med lagersynlighet genom dess API när funktionen har aktiverats, finns i [Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova](inventory-visibility-available-to-promise.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 82848f1ff068cea0adfc6ec1b33fc4bb035f78dc
-ms.sourcegitcommit: 374bbdde90fc9a68c0799158a50409bfbe8ca64e
+ms.openlocfilehash: 1db4e988653aa55db2b18fb201edeafc4d16a1bc
+ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353368"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "8489040"
 ---
 # <a name="detect-abandoned-carts-and-send-notifications-to-customers"></a>Spåra övergivna kundvagnar och skicka meddelanden till kunder
 
@@ -127,7 +127,7 @@ Om du vill konfigurera exempelanslutningsprogrammet för övergiven kundvagn än
 
 ### <a name="azurecosmosoptions"></a>AzureCosmosOptions
 
-Jobbstatusen för hämtning av övergiven vagn, vagns-ID samt ändrade tidsstämplar lagras i Azure Cosmos DB. Som standard pekar inställningarna i konfigurationsfilen mot den lokala emulatorinstansen av Azure Cosmos DB. När du distribuerar anslutningsprogrammet till produktion måste du uppdatera dessa inställningar så att de pekar mot Azure-instansen Cosmos DB i ditt Azure-abonnemang. Du kan avnvända [Azure Cosmos-emulatorn](/azure/cosmos-db/local-emulator) för lokal testning och testning i samndbox-miljö.
+Jobbstatusen för hämtning av övergiven vagn, vagns-ID samt ändrade tidsstämplar lagras i Azure Cosmos DB. Som standard pekar inställningarna i konfigurationsfilen mot den lokala emulatorinstansen av Azure Cosmos DB. När du distribuerar anslutningsprogrammet till produktion måste du uppdatera dessa inställningar så att de pekar mot Azure-instansen Cosmos DB i ditt Azure-abonnemang. Du kan använda [Azure Cosmos DB-emulatorn](/azure/cosmos-db/local-emulator) för lokal testning och testning i sandbox-miljö.
 
 | Egenskap    | Beskrivning |
 | ----------- | ----------- |

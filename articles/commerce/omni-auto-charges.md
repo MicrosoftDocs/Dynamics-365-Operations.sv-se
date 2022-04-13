@@ -2,7 +2,7 @@
 title: Avancerade automatiska avgifter för flera kanaler
 description: Det här avsnittet beskriver funktionerna för hantering av ytterligare avgifter för beställningar i handelskanal med hjälp av funktioner för avancerade automatiska avgifter.
 author: hhaines
-ms.date: 03/30/2020
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ef6396ec66a0f96ba97b176c46bf70d83a080883cf496312398f14dce3ad9758
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 69432e13424b08b75e8ce7c88eaf6be66db59e65
+ms.sourcegitcommit: 94ebdaae6dc996b205ac78ed546e38f91f4f46ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743441"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "8489628"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerade automatiska avgifter för flera kanaler
 
@@ -187,6 +187,9 @@ Om orsakskoder registrerays för överskrivna avgifter, finns även en ny rappor
 ### <a name="refunding-charges-on-a-pos-return-transaction"></a>Återbetalning av avgifter för en kassareturtransaktion
 
 Om parametern **Använd avancerade automatiska avgifter** är inställd på **Ja** kommer befintlig handelsparameter för **återbetala leveransavgifter** inte längre gälla. Om du vill ange vilka avgifter som systematiskt återbetalas till en kund vid användning av avancerade automatiska avgifter, kontrollera att relaterade avgiftskoden har konfigurerats som **Återbetalningsbar** på installationssidan **avgiftskod**. Kontrollera att inställningarna har synkroniserats med databaserna för handelskanal via distributionsplan.
+
+> [!TIP]
+> Riktlinjer som hjälper dig att se till att de återbetalningsbara avgifterna på radnivå beräknas baserat på den kvantitet som returneras finns i [Återbetalningsbara avgifter inte beräknas baserat på den returnerade kvantiteten](/troubleshoot/Refund-charges-miscalculated-for-partial-quantity-returned.md).
 
 ### <a name="refunding-charges-on-a-return-order-transaction"></a>Återbetalning av avgifter för en ordertransaktion
 

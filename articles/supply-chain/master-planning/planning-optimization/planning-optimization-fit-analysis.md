@@ -1,7 +1,7 @@
 ---
 title: Planera analys av optimeringsanpassning
 description: I det här avsnittet beskrivs hur du kontrollerar dina aktuella inställningar och data mot funktionerna i funktionen för planeringsoptimering.
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/07/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 440cddca11df8d705757c6f6adf01e08626c5158
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: dccc955492d33e9e0156f2a5feb6b33387d80af3
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408025"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487654"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Bristanalys för planeringsoptimering
 
@@ -84,7 +84,7 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 | Produktion | Strukturliste-/formelrader med resursförbrukning: _\#_ | Denna funktion väntar. För närvarande kommer strukturliste- och formelrader som har resursförbrukning att ignoreras när planeringsoptimering aktiveras. När den här funktionen stöds kommer material kravet att ställas in på startdatum för produktion. För att den här funktionen ska kunna användas genereras inte krav för material som har markerats med en resurs förbrukningsflagga. | 2022 oktober |
 | Produktion | Strukturliste-/formelrader med stegförbrukning: _\#_ | Denna funktion väntar. För närvarande kommer stegförbrukning på strukturliste- och formelrader att ignoreras när planeringsoptimering aktiveras. | 2022 oktober |
 | Produktion | Strukturlistor med definierad konstant eller variabel kassation: _\#_ | Denna funktion väntar. För närvarande ignoreras konstant kassation och variabel kassation som definieras på strukturlistor när planeringsoptimering aktiveras. | 2022 oktober |
-| Produktion | Strukturlistor med legotillverkning: _\#_ | Denna funktion väntar. För närvarande ignoreras inställning av legotillverkning på strukturlistor när planeringsoptimeringen är aktiverad, oavsett den här inställningen. | 2022 april |
+| Produktion | Strukturlistor med legotillverkning: _\#_ | Denna funktion stöds nu. | Stöds |
 | Produktion | Strukturlistor utan plats: _\#_ | Denna funktion stöds nu. Mer information finns i [Produktionsplanering](production-planning.md) | Stöds |
 | Produktion | Efterfrågan med specifika definierade strukturliste- eller flödeskrav: _\#_ | Denna funktion väntar. För närvarande ignoreras de specifika strukturliste- eller flödeskraven som har definierats på efterfrågan (t.ex. en understrukturlista eller underflöde på en försäljningsorder) när planeringsoptimering är aktiverad. Standardstrukturlistan eller flödet används oavsett den här inställningen. | 2022 oktober |
 | Produktion | Formelversioner med sam-/biprodukter: _\#_ | Denna funktion väntar. För närvarande kommer samprodukter och biprodukter som är associerade med formelversionen att ignoreras när planeringsoptimering är aktiverad. | 2022 oktober |

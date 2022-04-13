@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8917c9b265bc3df19517f052e28fb7644057cb46
-ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
+ms.openlocfilehash: 9ec0bedcf1a3a2888a91158ea0353283660d3266
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "8330711"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487593"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrera med tillverkningsutförandesystem från tredje part
 
@@ -65,6 +65,8 @@ Du kan aktivera en eller samtliga av följande processer för integrering.
 ## <a name="monitor-incoming-messages"></a>Övervaka inkommande meddelanden
 
 Du övervakar inkommande meddelanden till systemet genom att öppna sidan **Integrering av körningssystem för tillverkning**. Där kan du visa, bearbeta och felsöka ärenden.
+
+Alla meddelanden för en viss tillverkningsorder bearbetas i den ordning de tas emot. Det kan dock hända att meddelanden för olika tillverkningsorder inte bearbetas i den mottagna serien eftersom batchjobb bearbetas parallellt. Om det misslyckas försöker batchjobbet att bearbeta varje meddelande tre gånger innan det får statusvärdet *Misslyckat*.
 
 ## <a name="call-the-api"></a>Anropa API
 
@@ -119,13 +121,13 @@ Följande tabell visar de fält som varje rad i `ReportFinishedLines`-avsnittet 
 | `ReportedGoodQuantity` | Valfritt | Realtal|
 | `ReportedErrorCatchWeightQuantity` | Valfritt | Realtal |
 | `ReportedGoodCatchWeightQuantity` | Valfritt | Realtal |
-| `AcceptError` | Valfritt |Booleskt |
+| `AcceptError` | Valfritt | Enum (Ja \|nej) |
 | `ErrorCause` | Valfritt | Uppräkning (Ingen \| Material \| Maskin \| OperatingStaff), utbyggbar |
 | `ExecutedDateTime` | Valfritt | DatumTid |
 | `ReportAsFinishedDate` | Valfritt | Datum |
 | `AutomaticBOMConsumptionRule` | Valfritt | Uppräkning (FlushingPrincip \| Alltid \| Aldrig) |
 | `AutomaticRouteConsumptionRule` | Valfritt |Uppräkning (RouteDependent \| Alltid \| Aldrig) |
-| `RespectFlushingPrincipleDuringOverproduction` | Valfritt | Booleskt |
+| `RespectFlushingPrincipleDuringOverproduction` | Valfritt | Enum (Ja \|nej) |
 | `ProductionJournalNameId` | Valfritt | Sträng |
 | `PickingListProductionJournalNameId` | Valfritt | Sträng|
 | `RouteCardProductionJournalNameId` | Valfritt | Sträng |
@@ -133,11 +135,11 @@ Följande tabell visar de fält som varje rad i `ReportFinishedLines`-avsnittet 
 | `ToOperationNumber` | Valfritt | Heltal|
 | `InventoryLotId` | Valfritt | Sträng |
 | `BaseValue` | Valfritt | Sträng |
-| `EndJob` | Valfritt | Booleskt |
-| `EndPickingList` | Valfritt | Booleskt |
-| `EndRouteCard` | Valfritt | Booleskt |
-| `PostNow` | Valfritt | Booleskt |
-| `AutoUpdate` | Valfritt | Booleskt |
+| `EndJob` | Valfritt | Enum (Ja \|nej) |
+| `EndPickingList` | Valfritt | Enum (Ja \|nej) |
+| `EndRouteCard` | Valfritt | Enum (Ja \|nej) |
+| `PostNow` | Valfritt | Enum (Ja \|nej) |
+| `AutoUpdate` | Valfritt | Enum (Ja \|nej) |
 | `ProductColorId` | Valfritt | Sträng|
 | `ProductConfigurationId` | Valfritt | Sträng |
 | `ProductSizeId` | Valfritt | Sträng |
@@ -181,7 +183,7 @@ Följande tabell visar de fält som varje rad i `PickingListLines`-avsnittet av 
 | `OperationNumber` | Valfritt | Heltal |
 | `LineNumber` | Valfritt | Realtal |
 | `PositionNumber` | Valfritt | Sträng |
-| `IsConsumptionEnded` | Valfritt | Booleskt |
+| `IsConsumptionEnded` | Valfritt | Enum (Ja \|nej) |
 | `ErrorCause` | Valfritt | Uppräkning (Ingen \| Material \| Maskin \| OperatingStaff), utbyggbar |
 | `InventoryLotId` | Valfritt | Sträng |
 
@@ -217,9 +219,9 @@ Följande tabell visar de fält som varje rad i `RouteCardLines`-avsnittet av `P
 | `ConsumptionDate` | Valfritt | Datum |
 | `TaskType` | Valfritt | Uppräkning (QueueBefore \| Konfiguration \| Process \| Överlappning \| Transport \| QueueAfter \| Ej fakturerbart) |
 | `ErrorCause` | Valfritt | Uppräkning (Ingen \| Material \| Maskin \| OperatingStaff), utbyggbar |
-| `OperationCompleted` | Valfritt | Booleskt |
-| `BOMConsumption` | Valfritt | Booleskt |
-| `ReportAsFinished` | Valfritt | Booleskt |
+| `OperationCompleted` | Valfritt | Enum (Ja \|nej) |
+| `BOMConsumption` | Valfritt | Enum (Ja \|nej) |
+| `ReportAsFinished` | Valfritt | Enum (Ja \|nej) |
 
 ### <a name="end-production-order-message"></a>Meddelandet Avsluta produktionsorder
 
@@ -230,9 +232,13 @@ För meddelandet *avsluta produktionsorder* är värdet för `_messageType` lika
 | `ProductionOrderNumber` | Obligatoriskt | Sträng |
 | `ExecutedDateTime` | Valfritt | DatumTid |
 | `EndedDate` | Valfritt | Datum |
-| `UseTimeAndAttendanceCost` | Valfritt | Booleskt |
-| `AutoReportAsFinished` | Valfritt | Booleskt |
-| `AutoUpdate` | Valfritt | Booleskt |
+| `UseTimeAndAttendanceCost` | Valfritt | Enum (Ja \|nej) |
+| `AutoReportAsFinished` | Valfritt | Enum (Ja \|nej) |
+| `AutoUpdate` | Valfritt | Enum (Ja \|nej) |
+
+## <a name="other-production-information"></a>Annan produktionsinformation
+
+Meddelandena stöder åtgärder eller händelser som inträffar i arbetsgolvet. De bearbetas med hjälp av MES-integrationsramverket som beskrivs i det här avsnittet. Designen förutsätter att annan referensinformation som ska delas med MES (till exempel produktrelaterad information, strukturlista eller flöde (med dess specifika inställnings- och konfigurationstider) som används i en viss tillverkningsorder) hämtas från systemet med hjälp av [dataenheter](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) via filöverföring eller OData.
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>Få feedback om statusen för ett meddelande
 

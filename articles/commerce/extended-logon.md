@@ -1,8 +1,8 @@
 ---
-title: Konfigurera utökad inloggning för MPOS och molnkassor
-description: Detta avsnitt täcker dina alternativ för att ställa in utökad inloggning för molnbaserad kassa och Retail Modern POS (MPOS).
-author: boycezhu
-ms.date: 09/07/2021
+title: Ställa in och använda den utökade inloggningskapaciteten
+description: I det här avsnittet beskrivs hur du ställer in och utökar inloggningsförmåga hos Microsoft Dynamics 365 Commerce kassaapp.
+author: boycez
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,56 +16,52 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
-ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
+ms.openlocfilehash: d211ecfe1550f6093e1d35e7c2b37c036b50dd4a
+ms.sourcegitcommit: 5aebb181004eb63210503fb566dcda5c55032bee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7478681"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8491449"
 ---
-# <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Ställa in utökad inloggningsfunktion för MPOS och molnbaserad kassa
+# <a name="set-up-and-use-the-extended-logon-capability"></a>Ställa in och använda den utökade inloggningskapaciteten
 
 [!include [banner](includes/banner.md)]
 
-Detta avsnitt täcker dina alternativ för att ställa in utökad inloggning för molnbaserad kassa och Retail Modern POS (MPOS).
+I det här avsnittet beskrivs hur du ställer in och utökar inloggningsförmåga hos Microsoft Dynamics 365 Commerce kassaapp.
 
-## <a name="setting-up-extended-logon"></a>Ställa in utökade inloggning
+Cloud POS (CPOS) och Modern POS (MPOS) har en utökad inloggningskapacitet som gör att butiksarbetare loggar in i kassaprogrammet genom att skanna en streckkod eller dra ett kort med hjälp av en kortläsare (MSR).
 
-Du hittar inställningarna för streckkod masker på **Butik och handel** &gt; **kanalinställning** &gt; **kassainställning** &gt; **kassaprofiler** &gt; **funktionsprofiler**. **Funktionerna** snabbfliken innehåller följande alternativ som är relaterade till utökad inloggning.
+## <a name="set-up-extended-logon"></a>Ställa in utökade inloggning
 
-### <a name="staff-bar-code-logon"></a>Streckkodsinloggning för personal
+Ställ in utökad inloggning för kassaregister i en butik genom att följa stegen nedan.
 
-När **personalen bar kod inloggning** är aktiverad, arbetstagare som har en utökad inloggning tilldelas deras försäljningsställe (POS) inloggningsuppgifter kan logga in med hjälp av en streckkod.
+1. I Commerce-administration, gå till **Butik och Handel \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Funktionsprofiler**. 
+2. Välj den funktionsprofil som är kopplad till butiksbutiken i det vänstra navigeringsfönstret.
+3. I snabbfliken **Funktioner**, under **Ytterligare inloggningsautentisering alternativ**, ange följande alternativ till **Ja** eller **Nej** efter behov.
 
-### <a name="staff-bar-code-logon-requires-password"></a>Streckkodsinloggning för personal kräver lösenord
+    - **Streckkodsinloggning för personal** – Ange det här alternativet till **Ja** om du vill att medarbetarna ska logga in i kassan genom att skanna en streckkod. 
+    - **Streckkodsinloggning kräver lösenord** – Ange det här alternativet till **Ja** om du vill att medarbetarna ska ange lösenord när de loggar in i kassan genom att skanna en streckkod.
+    - **Personalkortsinloggning** – Ange det här alternativet till **Ja** om du vill att medarbetarna ska logga in i kassan genom att svepa ett kort.
+    - **Personalkortsinloggning kräver lösenord** – Ange det här alternativet till **Ja** om du vill att medarbetarna ska ange lösenord när de loggar in i kassan genom att svepa ett kort.
 
-När **personalen bar kod inloggning kräver lösenord** alternativ är aktiverat personal bar kod inloggning väljer endast de arbetstagare som har tilldelats utökade inloggning att presenteras. Arbetstagare måste ange sitt lösenord när det här alternativet är aktiverat.
+Streckkoden eller kortet är kopplat till autentiseringsuppgifter som kan tilldelas en arbetare. Autentiseringsuppgifterna måste ha minst sex tecken. Strängen som innehåller de första fem tecknen måste vara unik och betraktas som ett *autentiserings-ID* som används för att söka efter en arbetare. Återstående tecken används för säkerhetsverifiering. Du har till exempel två kort, varav en har autentiseringsuppgifterna 12345DGYDEYTDW och varav en har autentiseringsuppgifterna 12345EWUTBDAJH. Eftersom dessa två kort har samma användar-ID, 12345, kan de inte båda tilldelas till arbetare.
 
-### <a name="staff-card-logon"></a>Personalkortsinloggning
-
-När **personalen kort inloggning** är aktiverad, arbetstagare som har en utökad inloggning tilldelas sina POS inloggningsuppgifter kan logga in med en magnetremsa.
-
-### <a name="staff-card-logon-requires-password"></a>Personalkortsinloggning kräver lösenord
-
-När **personalen kort inloggning kräver lösenord** alternativ är aktiverat personal kort inloggning väljer endast de arbetstagare som har tilldelats utökade inloggning att presenteras. Arbetstagare måste ange sitt lösenord när det här alternativet är aktiverat.
-
-## <a name="assigning-an-extended-logon"></a>Tilldela en utökad inloggning
+## <a name="assign-extended-logon"></a>Tilldela förlängd inloggning
 
 Som standard är endast chefer kan tilldela utökade inloggning till arbetstagarna. Tilldela utökad inloggning genom att navigera till **Utökad inloggning** i POS. Sök sedan efter en anställd genom att ange den anställdes operatörs-ID i sökfältet. Välj anställd och klicka sedan på **Tilldela**. På nästa sida, nallar eller skanna utökade inloggning tilldelas arbetaren. Om nallar eller skanna finnas framgångsrikt lydde, **OK-** knappen blir tillgänglig. Klicka på **OK för** att spara det utökade inloggning för arbetstagaren.
 
-## <a name="deleting-an-extended-logon"></a>Ta bort en utökad inloggning
+## <a name="delete-extended-logon"></a>Ta bort en utökad inloggning
 
 Ta bort den utökade inloggning som är tilldelad till en arbetstagare, sökningen för arbetstagaren med **utökad logga på** . Välj anställd och klicka sedan på **Ta bort**. Alla utökade inloggningsbehörighet som associeras med att arbetstagaren är borttagen.
 
-## <a name="extending-extended-logon"></a>Utvidga utökade inloggning
+## <a name="use-extended-logon"></a>Med hjälp av utökade inloggning
 
-Vid utökad inloggning tillåts endast fem tecken att vara den unika identifieraren från början. Om du till exempel konfigurerar två kort med ID:t "1234567" och "1234578" anses de båda vara "12345". Du kan skapa ett tillägg för att stödja fler tecken. Detaljerade instruktioner finns i [Utöka den utökade inloggningsfunktionen för MPOS och molnbaserad kassa](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
+När utökad inloggning är konfigurerad, och arbetstagaren har tilldelats en streckkod eller den magnetiska remsan, arbetaren bara nallar eller skanna hans eller hennes kort medan POS inloggningssidan visas. Om ett lösenord krävs också före inloggning kan fortsätta, arbetstagaren uppmanas du att ange sitt lösenord.
 
-Inloggning tjänsten kan utökas för att stödja ytterligare utökade inloggning enheter, t.ex. palm scannrar. För mer information, se POS extensibility dokumentation.
+## <a name="extend-extended-logon"></a>Utvidga utökade inloggning
 
-## <a name="using-extended-logon"></a>Med hjälp av utökade inloggning
+Om du inte vill använda den utökade inloggningsinformationen måste autentiseringsuppgifterna ha minst sex tecken och att de första fem tecknen (användar-ID:t) är unika. Det var ursprungligen avsett som ett exempel som utvecklare skulle kunna anpassa för att uppfylla kraven för en specifik implementering. (Det kan till exempel anpassas så att det stöder fler tecken eller använder olika säkerhetsverifieringsregler.) Detaljerad information om hur du bygger tillägg för utökad inloggning finns i [Utöka de utökade inloggningsfunktionerna för MPOS och Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
 
-När utökad inloggning är konfigurerad, och arbetstagaren har tilldelats en streckkod eller magnetremsa, behöver arbetstagaren bara dra eller skanna sitt kort medan POS-inloggningssidan visas. Om ett lösenord krävs före inloggning kan fortsätta, uppmanas arbetstagaren att ange sitt lösenord.
-
+Inloggning tjänsten kan utökas för att stödja ytterligare utökade inloggning enheter, t.ex. palm scannrar. För mer information, se [POS extensibility dokumentation](dev-itpro/pos-extension/pos-extension-overview.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

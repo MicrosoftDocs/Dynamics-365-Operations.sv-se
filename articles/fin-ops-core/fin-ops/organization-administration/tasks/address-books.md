@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1e9edd384cf8cc1373481fd47c040cdaeae7d050d2cdba5e0a9afb7c1d361362
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 666ecc5b4e0df9ed518e8e9dabc1babd442508bc
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759123"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487625"
 ---
 # <a name="configure-address-books"></a>Konfigurera adressböcker
 
@@ -26,7 +26,7 @@ ms.locfileid: "6759123"
 
 Använd den här proceduren och besluten, som du har gjort i planeringen av konfigurationen för den globala adressboken och det ytterligare adressbokavsnittet för att ställa in ytterligare adressböcker för din organisation.
 
-Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF. Denna registrering är avsedd för planerings- och konfigurationsteamets medlemmar.
+Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.
 
 
 ## <a name="configure-address-books"></a>Konfigurera adressböcker

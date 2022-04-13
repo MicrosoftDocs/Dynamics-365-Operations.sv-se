@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8ba478fef424a6c4688191ed4e5375bbce52de0c
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: adab5ee3f626390355f4bab1227efd5fe58c2fcf
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061011"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524533"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurera lagersynlighet
 
@@ -39,22 +39,25 @@ Innan du börjar arbeta med Lagersynlighet måste du utföra följande konfigura
 
 Innan du börjar installerar och konfigurerar du tillägget Lagersynlighet enligt beskrivningen i [Installera och konfigurera Lagersynlighet](inventory-visibility-setup.md).
 
-## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Aktivera funktioner för lagersynlighet i Power Apps-funktionshantering
-
-Tillägget Lagersynlighet lägger till flera nya funktioner i Power Apps-installationen. Dessa funktioner är avstängda som standard. Om du vill använda dem öppnar du sidan **Konfiguration** i Power Apps och aktiverar följande funktioner på fliken **Funktionshantering**.
-
-- *OnHandReservation*
-- *OnHandMostSpecificBackgroundService*
-
-## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Hitta tjänstslutpunkten
-
-Om du inte känner till rätt tjänstslutpunkt för Lagersynlighet öppnar du sidan **Konfiguration** i Power Apps och sedan **Visa tjänstslutpunkt** i det övre högra hörnet. Sidan visar korrekt tjänstslutpunkt.
-
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Konfigurationssidan i appen Lagersynlighet
 
 I Power Apps, på sidan **Konfiguration** i [Lagersynlighet-appen](inventory-visibility-power-platform.md), kan du konfigurera behållningskonfigurationen och konfigurationen av preliminär reservation. När tillägget har installerats innehåller standardkonfigurationen värdet från Microsoft Dynamics 365 Supply Chain Management (datakällan `fno`). Du kan granska standardinställningarna. Baserat på dina affärsbehov och lagerbokföringskraven i det externa systemet kan du modifiera konfigurationen för att standardisera det sätt på vilket lagerändringar kan bokföras, ordnas och efterfrågas i flera olika system. I de återstående avsnitten i det här ämnet beskrivs hur du använder varje del av sidan **Konfiguration**.
 
 När konfigurationen är slutförd, se till att du väljer **Uppdatera konfiguration** i appen.
+
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Aktivera funktioner för lagersynlighet i Power Apps-funktionshantering
+
+Tillägget Lagersynlighet lägger till flera nya funktioner i Power Apps-installationen. Dessa funktioner är avstängda som standard. Om du vill använda dem öppnar du sidan **Konfiguration** i och aktiverar följande funktioner på fliken **Funktionshantering**.
+
+| Funktionshanteringsnamn | Beskrivning |
+|---|---|
+| OnHandReservation | Denna funktion låter dig skapa reservationsfunktionen för att skapa reservationer, förbruka reservationer och/eller avmarkera angivna lagerkvantiteter med hjälp av Lagersynlighet. Mer information finns i [Reservationer för Lagersynlighet](inventory-visibility-reservations.md). |
+| OnHandMostSpecificBackgroundService | Denna funktion ger en lagersammanfattning för produkter tillsammans med alla dimensioner. Data för lagersammanfattningen synkroniseras regelbundet från Lagersynlighet. Mer information finns i [Lagersammanfattning](inventory-visibility-power-platform.md#inventory-summary). |
+| OnhandChangeSchedule | Med hjälp av funktionen kan du ändra schemat för disponibelt att lova (ATP) funktionerna (valfritt). Mer information finns i [Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova](inventory-visibility-available-to-promise.md). |
+
+## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Hitta tjänstslutpunkten
+
+Om du inte känner till rätt tjänstslutpunkt för Lagersynlighet öppnar du sidan **Konfiguration** i Power Apps och sedan **Visa tjänstslutpunkt** i det övre högra hörnet. Sidan visar korrekt tjänstslutpunkt.
 
 ## <a name="data-source-configuration"></a>Konfiguration för datakälla
 
@@ -178,15 +181,21 @@ Följ stegen nedan för att konfigurera ett anpassat beräknat mått.
 
 1. Logga in i din Power Apps-miljö och öppna **Lagersynlighet**.
 1. Öppna sidan **Konfiguration**.
-1. På fliken **Beräknat mått** väljer du **Ny måttberäkning** om du vill lägga till ett beräknat mått. Ställ sedan in fälten enligt beskrivningen i följande tabell.
+1. På fliken **Beräknat mått** väljer du **Ny måttberäkning** om du vill lägga till ett beräknat mått.
+1. Ställ in följande fält för det nya beräknade måttet:
 
-    | Fält | Värde |
-    |---|---|
-    | Nytt beräknat måttnamn | Ange namnet på det beräknade måttet. |
-    | Datakälla | Frågesystemet är en datakälla. |
-    | Modifierarare för datakälla | Ange modifierarens datakälla. |
-    | Modifierare | Ange modifierarens namn. |
-    | Modifierartyp | Välj typ av modifierare (*Tillägg* eller *Avdrag*). |
+    - **Nytt beräknat måttnamn** – Ange namnet på det beräknade måttet.
+    - **Datakälla** – Välj den datakälla som är associerad med den nya ändringskällan. Frågesystemet är en datakälla.
+
+1. Välj **Lägg till** om du vill lägga till en modifierare till det nya beräknade måttet.
+1. Ställ in följande fält för den nya modifieraren:
+
+    - **Modifierare** – Välj typ av modifierare (*Tillägg* eller *Avdrag*).
+    - **Datakälla** – Välj den datakälla där måttet som tillhandahåller ändringsvärdet ska hittas.
+    - **Mått** – Välj namnet på måttet (från den valda datakällan) som ger modifieraren värdet.
+
+1. Upprepa steg 5 till 6 tills du har lagt till alla modifierare som behövs.
+1. Välj **Spara**.
 
 Du kan exempelvis ha följande frågeresultat.
 
@@ -465,6 +474,10 @@ I det här exemplet kan du göra reservationer i följande dimensionssekvenser. 
 - `(SiteId, LocationId, ColorId, SizeId, StyleId)`
 
 En giltig dimensionssekvens bör strikt följa reservationshierarkin, dimension för dimension. Hierarkisekvensen är till exempel `(SiteId, LocationId, SizeId)` inte giltig eftersom `ColorId` saknas.
+
+## <a name="available-to-promise-configuration-optional"></a>Konfiguration av tillgänglig för löfte (valfritt)
+
+Du kan ställa in lagersynlighet så att du kan tidsplanera framtida ändringar av lagerbehållningen och beräkna kvantiteter som är tillgängliga att lova. ATP är den kvantitet av en artikel som finns tillgänglig och därför kan utlovas en kund i nästa period. Om du använder den här beräkningen kan du öka möjligheten att uppfylla ordern mycket. Om du vill använda funktionen måste du aktivera den på fliken **Funktionshantering** och sedan ställa in den på fliken **ATP-inställningar**. Mer information finns i [Lagerinventeringsbehållningens ändringsscheman och som är tillgängliga att lova](inventory-visibility-available-to-promise.md).
 
 ## <a name="complete-and-update-the-configuration"></a>Slutför och uppdatera konfigurationen
 
