@@ -2,11 +2,11 @@
   items:
     - name: Dynamics 365 Finance
       items:
-        - name: Dynamics 365 Finance startsida
+        - name: Dynamics 365 Finance – startsida
           href: index.md
         - name: Nyheter och ändringar
           items:
-            - name: Nyheter och ändringar i Ekonomi och drift-appar
+            - name: Nyheter och ändringar i appar för ekonomi och drift
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Nyheter och ändringar i Finance
               items:
@@ -16,8 +16,6 @@
                   href: get-started/whats-new-changed-10-0-26.md
                 - name: Finance 10.0.25 (april)
                   href: get-started/whats-new-changed-10-0-25.md
-                - name: Finance 10.0.24 (februari)
-                  href: get-started/whats-new-changed-10-0-24.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -418,14 +416,30 @@
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Kopiera ett faktureringsschema
                       href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Funktioner för faktureringsschema
+                      href: accounts-receivable/sb-schedule-billing-features.md
                     - name: Milstolpesfakturering
                       href: accounts-receivable/sb-milestonebilling.md
+                    - name: Support- och förnyelseprocess
+                      href: accounts-receivable/sb-support-renewals.md
+                    - name: Tidsplaner för kundprisindex
+                      href: accounts-receivable/cpischedules.md
                     - name: Avsluta faktureringsscheman
                       href: accounts-receivable/terminate-billing-schedule.md
                 - name: Periodisering av intäkt och utgift
-                  items: null
+                  items:
+                    - name: Konfigurera periodisering av intäkt och utgift
+                      href: accounts-receivable/sb-deferrals.md
+                    - name: Periodiseringsscheman
+                      items:
+                        - name: Skapa avvisningsscheman
+                          href: accounts-receivable/sb-deferrals-schedules.md
+                        - name: Standardtransaktioner för avvisning
+                          href: accounts-receivable/sb-deferral-transactions.md
                 - name: Intäktsallokering för flera element
-                  items: null
+                  items:
+                    - name: Konfigurera intäktsallokering för flera element
+                      href: accounts-receivable/sb-rev-alloc-setup.md
             - name: Betalningar och kvittningar
               items:
                 - name: Översikt över kundbetalning
@@ -922,6 +936,8 @@
               items:
                 - name: Planera kontoplanen
                   href: general-ledger/plan-chart-of-accounts.md
+                - name: Planera din lokala kontoplan
+                  href: general-ledger/plan-local-chart-of-accounts.md
                 - name: Huvudkonton
                   items:
                     - name: Huvudkontotyper
@@ -3092,6 +3108,8 @@
                   href: localizations/tasks/mx-00010-cancel-electronic-invoice.md
                 - name: CFDI-version 3.3
                   href: localizations/latam-mex-cfdi-3-3.md
+                - name: CFDI-version 4.0
+                  href: localizations/latam-mex-cfdi-4-0.md
                 - name: Kundregistrerings-ID och annan information
                   href: localizations/tasks/mx-00007-customer-registration-ids-other-information.md
                 - name: DIOT-deklarationsutdrag

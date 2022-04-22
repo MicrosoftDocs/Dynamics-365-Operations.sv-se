@@ -8,7 +8,7 @@
           href: index.md
         - name: Nyheter och ändringar
           items:
-            - name: Nyheter och ändringar i Ekonomi och drift-appar
+            - name: Nyheter och ändringar i appar för ekonomi och drift
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Nyheter och ändringar i Platform updates
               items:
@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-26.md
                 - name: Platform updates för version 10.0.25 (april 2022)
                   href: get-started/whats-new-platform-updates-10-0-25.md
-                - name: Platform updates för version 10.0.24 (februari 2022)
-                  href: get-started/whats-new-platform-updates-10-0-24.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -396,6 +394,8 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Konfigurera proxyservrar för lokala miljöer
                       href: deployment/onprem-reverseproxy.md
+                    - name: Installera nätverksskrivare i lokala miljöer
+                      href: analytics/install-network-printer-onprem.md
                     - name: Lokal diagnostik
                       href: deployment/on-premises-diagnostics.md
                     - name: Konfiguration av lokal haveriberedskap
@@ -470,7 +470,7 @@
                   href: help/contributor-guide.md
             - name: Att tänka på vid distribuering
               items:
-                - name: Distribuering av lokala molnbaserade distributionsalternativ Dynamics 365 Finance för och Dynamics 365 Supply Chain Management
+                - name: Distribuering av lokala molnbaserade distributionsalternativ för Dynamics 365 Finance och Dynamics 365 Supply Chain Management
                   href: deployment/deployment-options-geo.md
                 - name: Finance och Supply Chain Management i GCC (US Government Community Cloud)
                   href: deployment/us-gcc-deployment.md
@@ -496,6 +496,8 @@
                   href: dev-tools/configure-developer-vm.md
                 - name: Vanliga frågor och svar om hur du utvecklar och skapar virtuella datorer som inte tillåter administratörsåtkomst
                   href: sysadmin/VMs-no-admin-access.md
+                - name: Ställa in nedladdningsbara VHD för första användning
+                  href: dev-tools/vhd-setup.md
                 - name: Byta namn på lokala miljöer för att komma åt Azure DevOps
                   href: migration-upgrade/vso-machine-renaming.md
                 - name: Systemkrav för utveckling
@@ -1028,6 +1030,8 @@
                   href: lifecycle-services/use-translation-service-tm.md
                 - name: Azure DevOps-tillägg (allmänt tillgänglig förhandsversion)
                   href: lifecycle-services/dts-devops-extension.md
+                - name: Självstudier för Azure DevOps-tillägg (allmänt tillgänglig förhandsversion)
+                  href: lifecycle-services/dts-ado-tutorial.md
         - name: Microsoft Power Platform-integration
           items:
             - name: Översikt
@@ -1506,6 +1510,8 @@
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: Kör Regression Suite Automation Tool (RSAT) med parallell körning
               href: perf-test/rsat/rsat-parallel-execution.md
+            - name: Integrera RSAT med Azure DevOps-pipelines
+              href: perf-test/rsat/rsat-devops-extension.md
             - name: Felsökning
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Släpp lösningar med hjälp av Lifecycle Services
