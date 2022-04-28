@@ -2,7 +2,7 @@
 title: Betalningsmodul
 description: Det här avsnittet handlar om betalningsmodul för leveransadressmodulen förklarar hur du konfigurera i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/07/2022
+ms.date: 04/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: ba95386143ca830aeb1b50b31b4bbd2b54f53a40
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952479"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565739"
 ---
 # <a name="payment-module"></a>Betalningsmodul
 
@@ -74,6 +74,8 @@ I bilden nedan visas ett exempel på den PayPal-iframe som åberopas med hjälp 
 | Åsidosättning av betalningsformat | Kod för överlappande formatmallar (CSS) | Eftersom betalningsmodulen finns i en iframe finns det en begränsad format kapacitet. Du kan formatera formateringen genom att använda den här egenskapen. Om du vill åsidosätta webbplatsformat måste du klistra in CSS-koden som egenskapensvärde. Webbplatsskaparen CSS åsidosätter och stilar gäller inte för den här modulen. |
 |Betalningsmedelstyper som stöds| Sträng| Om flera betalningsanslutningar har konfigurerats bör du tillhandahålla den sträng för betalningsmedel som stöds enligt definitionen i konfigurationen för Payment Connector för Commerce-administration (se följande bild). Om denna är tom kommer den att återställas till Adyen-betalningsanslutningen. Lades till i Commerce version 10.0.14.|
 |Är primär betalning|  **Sant** eller **falskt** | Om **True** kommer eventuella felmeddelanden att genereras via den primära betalningsanslutningen på kassasidan. Om både Adyen- och PayPal-betalningsanslutningarna har konfigurerats anger du Adyen som **True**, som lades till i Commerce version 10.0.14.|
+|Använd anslutnings-id| **Sant** eller **falskt** | Använd den här egenskapen om flera anslutningsprogram för betalning har konfigurerats för webbplatsen. Om **Sant** måste anslutningsprogrammen använda ID för anslutningsprogram för betalningskorrelation.|
+|Använd webbläsarinställd språkkod för iFrame|  **Sant** eller **falskt** | (Endast Adyen) Om **Sant** kommer Adyen iFrame att återge språket baserat på webbplatsanvändarens webbläsarkontext istället för att använda språkkoden för den Handelskanal som konfigurerats för webbplatsen. Lades till i Commerce version 10.0.27.|
 
 I bilden nedan visas ett exempel på värdet **Offerttyper som stöds** angivet som "PayPal" i konfigurationen av betalningsanslutning i Commerce-administrationen.
 ![Exempel på offerttyper som stöds i Commerce-administrationen.](./media/ecommerce-paymenttendertypes.png)

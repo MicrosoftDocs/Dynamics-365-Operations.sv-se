@@ -2,7 +2,7 @@
 title: Kom i gång med skatteberäkning
 description: Detta ämne förklarar hur du ställer in skatteberäkningen.
 author: wangchen
-ms.date: 01/05/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 61ee15901a091ee733b83c8cbaa5b84801fa8e5d
+ms.sourcegitcommit: 4afd1e0b325d27cd7c4e0d9a198400b038262ac7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952531"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "8558325"
 ---
 # <a name="get-started-with-tax-calculation"></a>Kom i gång med momsberäkning
 
 [!include [banner](../includes/banner.md)]
 
-Detta ämne innehåller information om hur du kommer igång med skatteberäkningen. Avsnitten i det här ämnet guidar dig genom design- och konfigurationsstegen på hög nivå i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) och Dynamics 365 Finance och Dynamics 365 Supply Chain Management. 
+Detta ämne innehåller information om hur du kommer igång med skatteberäkningen. Avsnitten i detta ämne guidar dig genom design- och konfigurationsstegen på hög nivå i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance samt Dynamics 365 Supply Chain Management. 
 
 Inställningen består av tre huvudsteg.
 
@@ -36,7 +36,7 @@ Inställningen består av tre huvudsteg.
 
 ## <a name="high-level-design"></a>Design på hög nivå
 
-### <a name="runtime-design"></a>Körtidsdesign
+### <a name="runtime-design"></a><a name="runtime"></a> Körtidsdesign
 
 Följande illustration visar körtidsdesignen på hög nivå för skatteberäkning. Eftersom momsberäkning kan integreras med flera Dynamics 365-program, används integrationen med Finance som ett exempel i illustrationen.
 
@@ -96,6 +96,14 @@ Innan du kan slutföra de återstående procedurerna i det här ämnet måste f�
 
     - Globaliseringsfunktioner
 
+- Följande roller bör tilldelas i egenskap av lämpliga för användarna i din RCS-miljö:
+
+    - Utvecklare för elektronisk rapportering
+    - Utvecklare av globaliseringsfunktioner
+    - Skattemotorutvecklare
+    - Funktionskonsult för skattemotor
+    - Utvecklare av skattetjänst
+
 ## <a name="set-up-tax-calculation-in-lcs"></a>Konfigurera skatteberäkning i LCS.
 
 1. Logga in på [LCS](https://lcs.dynamics.com)
@@ -150,7 +158,7 @@ Stegen i det här avsnittet är inte relaterade till någon specifik juridisk pe
 14. På fliken **Skattekoder**, välj **Lägg till** och ange skattekoden och en beskrivning.
 15. Välj **Skattekomponent**. Skattekomponenten är en grupp med beräkningsmetoder för skatt som har definierats i den tidigare versionen av den valda skattekonfigurationen. Följande skattekomponenter är tillgängliga:
 
-    - Efter nettobelopp 
+    - Efter nettobelopp
     - Efter bruttobelopp
     - Efter antal
     - Efter marginal
@@ -203,6 +211,9 @@ Stegen i det här avsnittet är inte relaterade till någon specifik juridisk pe
     | Försäljning            | DEU       | FRA     | DEU_EU       |
     | Försäljning            | BEL       | BEL     | BEL_Domestic |
     | Försäljning            | BEL       | FRA     | BEL_EU       |
+    
+    > [!NOTE]
+    > Om standardmomsgruppen på de beskattningsbara dokumentraderna är korrekt, lämnar du denna matris tom. Mer information finns i avsnittet [Körningsdesign](#runtime) senare i detta avsnitt.
 
 22. På fliken **Tillämplighet för artikelmomsgrupp** markerar du de kolumner som krävs för att fastställa rätt momskod, och väljer sedan **Lägg till**. Ange eller välj värden för varje kolumn. Fältet **Artikelmomsgrupp** blir utdataresultatet för den här matrisen. Om denna flik inte är konfigurerad kommer artikelmomsgruppen på transaktionsraden att användas.
 
@@ -212,6 +223,9 @@ Stegen i det här avsnittet är inte relaterade till någon specifik juridisk pe
     | --------- | -------------- |
     | D0001     | Full           |
     | D0003     | Reducerad        |
+
+    > [!NOTE]
+    > Om standardmomsgruppen för artiklar på de beskattningsbara dokumentraderna är korrekt, lämnar du denna matris tom. Mer information finns i avsnittet [Körningsdesign](#runtime) senare i detta avsnitt.
 
     Mer information om hur momskoder bestäms i Momsberäkning finns i [Bestämningslogik för momsgrupp och artikelmomsgrupp](global-sales-tax-group-determination.md).
 

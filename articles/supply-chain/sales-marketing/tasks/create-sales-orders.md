@@ -2,7 +2,7 @@
 title: Skapa försäljningsorder
 description: Den här proceduren visar hur du skapar en försäljningsorder.
 author: Henrikan
-ms.date: 06/25/2019
+ms.date: 04/06/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5746fa0ab9fd7ef3e288adc88a755324309a27c0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 462f47ab5d85665ed8132e5bfb6dd945c537c1ef
+ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566321"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8551736"
 ---
 # <a name="create-sales-orders"></a>Skapa försäljningsorder
 
@@ -55,7 +55,7 @@ Produkterna som säljs av din organisation kan levereras i varianter beroende p�
     - Om fältet **Plats** redan innehåller ett värde värde kopierades från orderhuvudet eller från inställningar som är förknippade med produkten. Du kan ändra värdet när som helst. Välj ett värde om fältet är tomt.   
     - Om fältet **Enhetspris** redan innehåller ett värde, värdet har kopierats från en giltig handelsavtal, eller från produkten. (Enhetspriset kan också komma från ett försäljningsavtal, men processen för att skapa försäljningsorder från försäljningsavtal skiljer sig från den som visas här.) Om fältet är tomt, anger du ett värde.   
     - Fältet **Rabatt** innehåller ett rabattbelopp per producerad enhet. För att beräkna det totala radbeloppet rabattbelopp, rabatten värdet multipliceras med antal på raden. Om fältetb **Rabatt** redan finns ett värde i fältet värde har kopierats från en giltig handelsavtal. Om fältet är tomt och du vill ge kunden en radrabatt, ange ett värde.  
-    - Fältet **Rabattprocent** innehåller ett procentvärde som totala radens bruttobelopp minskas.  Om fältet **Rabattprocent** innehåller redan ett värde, det var kopierat från ett giltigt handelsavtal. Om fältet är tomt och du vill ge kunden en radrabatt, ange ett värde. 
+    - Fältet **Rabattprocent** innehåller ett procentvärde med vilket radens totala bruttobelopp minskas.  Om fältet **Rabattprocent** innehåller redan ett värde, det var kopierat från ett giltigt handelsavtal. Om fältet är tomt och du vill ge kunden en radrabatt, ange ett värde. 
     - I fältet **Nettobelopp** innehåller ett värde som beräknas baserat på linjens kvantitet och enhet pris justeras genom rabatter.  Du kan åsidosätta det beräknade värdet till ett annat.  
 
 ## <a name="review-the-order-totals"></a>Granska ordersummor
@@ -66,5 +66,7 @@ Produkterna som säljs av din organisation kan levereras i varianter beroende p�
     
 3. Välj **OK**.
 
+## <a name="sales-order-creation-performance-enhancement"></a>Prestandaförbättringar när försäljningsorder skapas
+Den nya funktionen som introduceras i programversion 10.0.26 minskar det extra skapandet av poster för tabellerna **SourceDocumentHeader** och **SourceDocumentLine**. Prestandan förbättras och lagringsstorleken minskas eftersom dessa poster inte skapas. Dessa underliggande ramverksregister för källdokument används inte för försäljningsorder i produkten vid denna tidpunkt, och det finns inga planerade planer på att använda dem. Att aktivera den här funktionen betraktas som en säker ändring för att förbättra prestandan. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: a254e20dd7fcc29ca520282b4bf9fcd903e4de58
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: a8f0dc5c7498d04230e5e7356979e08ee3a86052
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087560"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570294"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.24 (februari 2022)
 
@@ -31,10 +31,10 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 Följande tabeller listar de funktioner som ingår i denna version. Vi kan komma att uppdatera detta ämne i syfte att inkludera funktioner som kommit med i bygget efter det att ämnet publicerades första gången.
 
-| Funktionsområde | Funktion | Mer information | Har aktiverats av   |
+| Funktionsområde | Funktion | Mer information | Har aktiverats av |
 |---|---|---|---|
 | Distribuerad hybridtopologi | [Förbättrade arbetsbelastningar för lagerkörning på skalningsenheter](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-warehouse-execution-workloads-scale-units) | [Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-warehousing.md) | Aktiverad som standard. |
-| Distribuerad hybridtopologi | [Starta produktionsorder på arbetsbelastningen för lagerhantering för moln- och kantskalningsenhet](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-manufacturing-execution-workloads-scale-units) | [Arbetsbelastningar för tillverkningskörning för moln- och kantskalenheter](../cloud-edge/cloud-edge-workload-manufacturing.md) | Funktionshantering (*Starta produktionsorder på arbetsbelastningen för lagerhantering för moln- och kantskalningsenhet*)  |
+| Distribuerad hybridtopologi | [Starta tillverkningsorder på arbetsbelastningen för lagerhantering för moln- och kantskalningsenhet](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-manufacturing-execution-workloads-scale-units) | [Arbetsbelastningar för tillverkningskörning för moln- och kantskalenheter](../cloud-edge/cloud-edge-workload-manufacturing.md) | Funktionshantering (*Starta tillverkningsorder på arbetsbelastningen för lagerhantering för moln- och kantskalningsenhet*)  |
 | Planering | [Planeringsoptimeringssupport för beställningsmarginal och ut ärendemarginal](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-reorder-margin-issue-margin) | [Säkerhetsmarginaler](../master-planning/planning-optimization/safety-margins.md) | Aktiverad som standard. |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funktionsförbättringar som ingår i den här versionen
@@ -45,7 +45,7 @@ Om du vill slå på eller stänga av någon av dessa funktioner måste du göra 
 
 | Modul | Funktionsnamn i funktionshantering | Mer information |
 |---|---|---|
-| Produktionskontroll | Kontroll av materialtillgänglighet på begäran för produktionsorder | Denna funktion gör det snabbare att öppna sidan **Produktionsorder som ska frisläppas** som är tillgänglig från arbetsytan **Hantering av produktionsgolvskörning**. Om den här funktionen inte har den här funktionen kontrollerar systemet automatiskt om material är tillgängliga för alla listade tillverkningsorder så snart du öppnar sidan, vilket kan ta lång tid om du har ett stort antal order. När den här funktionen har aktiverats används i stället en verktygsfältsknapp som du kan använda för att initiera materialkontrollen enbart för valda order och vid behov. |
+| Produktionskontroll | Kontroll av materialtillgänglighet på begäran för tillverkningsorder | Denna funktion gör det snabbare att öppna sidan **Tillverkningsorder som ska frisläppas** som är tillgänglig från arbetsytan **Hantering av produktionsgolvskörning**. Om den här funktionen inte har den här funktionen kontrollerar systemet automatiskt om material är tillgängliga för alla listade tillverkningsorder så snart du öppnar sidan, vilket kan ta lång tid om du har ett stort antal order. När den här funktionen har aktiverats används i stället en verktygsfältsknapp som du kan använda för att initiera materialkontrollen enbart för valda order och vid behov. |
 | Produktionskontroll | (Förhandsversion) Registrera materialförbrukning i körningsgränssnittet för produktionsgolv (inte WMS) | Med denna funktion kan arbetare använda gränssnittet för produktionsgolvkörning för att registrera materialförbrukning, batchnummer och serienummer. Den här funktionen stöder bara artiklar som inte är aktiverade för att använda avancerade lagerställeprocesser (WMS). Stöd för WMS-aktiverade artiklar planeras för en framtida version.<p>Vissa tillverkare, särskilt de som finns i processindustrier, måste explicit registrera hur mycket material som förbrukas för varje batch eller tillverkningsorder. En arbetare kan till exempel använda en våg för att väga hur mycket material som förbrukats medan de arbetar. För att garantera fullständig spårning av material måste dessa organisationer också registrera vilka batchnummer som förbrukades när varje produkt produceras. |
 | Produktionskontroll | Rapportera som klar om arbetsbelastningen för lagerhantering för moln- och kantskalningsenhet | Med den här funktionen kan personalen använda mobilappen Warehouse Management för att rapportera en tillverknings- eller batchorder som färdig när programmet körs mot en arbetsbörda för lagerstyrning i en enhet för molnbaserad eller kantskala. Mer information finns i [Rapportera som färdig och inlagrad på en skalningsenhet](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
 | Warehouse management | Nya sidor för lastplaneringsworkbench | Aktiverar två nya workbench-sidorna för lastplanering: **Workbench för inkommande lastplanering** och **Workbench för utgående lastplanering**. |
@@ -63,7 +63,7 @@ Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De
 | Huvudplanering | [Använd säkerhetslagerjournalen för att uppdatera minimumdisponering för artiklar](../master-planning/safety-stock-journal.md) |
 | Produktionskontroll | [Anpassa körningsgränssnittet för produktionsgolvet](../production-control/production-floor-execution-customize.md) |
 | Produktionskontroll | [Styla körningsgränssnittet för produktionsgolvet](../production-control/production-floor-execution-styles.md) |
-| Försäljning och marknadsföring | [Förbättringar av prestanda för rensning av försäljningshistorik](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
+| Försäljning och marknadsföring | [Schemalägga datarensning i försäljningshistorik](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
 | Warehouse management | [Användarkonton för mobil enhet](../warehousing/mobile-device-work-users.md) |
 
 ## <a name="additional-resources"></a>Ytterligare resurser

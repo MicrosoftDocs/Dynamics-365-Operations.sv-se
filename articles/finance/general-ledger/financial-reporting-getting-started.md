@@ -1,6 +1,6 @@
 ---
 title: Översikt över ekonomisk rapportering
-description: Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 Finance och hur du använder finansiella rapporteringsfunktioner.
+description: Detta ämne beskriver hur du kommer åt ekonomisk rapportering i Microsoft Microsoft Dynamics 365 Finance och hur du använder funktionerna för finansiell rapportering.
 author: aprilolson
 ms.date: 03/31/2022
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1db676024f5ec0f254500bd2ceee85ab2150502
-ms.sourcegitcommit: 777f9581dccc0f963c6a04c95b85e00e68573db5
+ms.openlocfilehash: fcdb5a934818468e00be960f9afe541966e5eabf
+ms.sourcegitcommit: e8a2a1e34fa48a42afac9724828f4ec72b6d7085
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8527325"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8573662"
 ---
 # <a name="get-started-with-financial-reporting"></a>Kom i gång med ekonomisk rapportering 
 
@@ -138,7 +138,7 @@ När du klickar på menyn **Ekonomisk rapportering** visas listan över ekonomis
 
 ## <a name="creating-and-modifying-financial-reports"></a>Skapa och ändra ekonomiska rapporter
 
-På listan med ekonomiska rapporter kan du skapa en ny rapport eller ändra en befintlig rapport. Om du har rätt behörighet kan du skapa en ny ekonomisk rapport genom att klicka på **Ny** i åtgärdsfönstret. Ett rapportdesignerprogram hämtas till enheten. När rapportdesignern startar kan du skapa den nya rapporten. När du har sparat den nya rapporten visas på listan med ekonomiska rapporter. Listan visar endast rapporter som har skapats för företaget som använder i Dynamics 365 Finance. 
+På listan med ekonomiska rapporter kan du skapa en ny rapport eller ändra en befintlig rapport. Om du har rätt behörighet kan du skapa en ny ekonomisk rapport genom att klicka på **Ny** i åtgärdsfönstret. Ett rapportdesignerprogram hämtas till enheten. När rapportdesignern startar kan du skapa den nya rapporten. När du har sparat den nya rapporten visas på listan med ekonomiska rapporter. Listan visar endast rapporter som har skapats för det företag som använder i Dynamics 365 Finance. 
 
 ## <a name="reporting-tree-definitions"></a>Rapportträddefinitioner
 
@@ -150,9 +150,9 @@ Du kan skapa ett obegränsat antal rapportträd för att visa ditt företags dat
 
 Finance and Operations-appar uppdateras varje månad. Ekonomisk rapportering behöver emellertid inte nödvändigtvis uppdateras på den cadencen. Kunder kan dessutom ha fler alternativ om när de implementerar uppdateringar för Finance and Operations-program. Uppdateringar av ekonomiska rapporter installeras automatiskt. Ekonomisk rapportering har en särskild version som förbrukas i en kundmiljö när en serviceuppdatering implementeras, när drifttid har initierats eller när en kunds miljö är i underhållsläge. Den här processen kallas *slipstreaming* eller *stämmer*, eftersom alla kundimplementeringar är inställda på samma version av finansiell rapportering.
 
-Ändringar som frisläpps i varje version finns i [Vad är nytt eller ändrat i Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Uppdateringar av plattformar och uppdateringskorrigeringar finns i avsnittet "Ytterligare resurser" längst ned på sidan för varje version.
+Ändringar som frisläpps i respektiv version finns i [Nyheter och ändringar i Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Uppdateringar av plattformar och uppdateringskorrigeringar finns i avsnittet "Ytterligare resurser" längst ned på sidan för varje version.
 
-Den valda slipstreamed-versionen är en granskad och validerad version av ekonomisk rapportering som är klar för produktion. Den är kompatibel med alla tidigare eller framtida versioner av Dynamics 365 Finance. Ekonomisk rapportering kan till exempel finnas på den senaste versionen av 10.0.19 medan kunden fortfarande finns på programversion 10.0.16.
+Den valda slipstreamed-versionen är en granskad och validerad version av ekonomisk rapportering som är klar för produktion. Den är kompatibel med alla tidigare och framtida versioner av Dynamics 365 Finance. Ekonomisk rapportering kan till exempel finnas på den senaste versionen av 10.0.19 medan kunden fortfarande finns på programversion 10.0.16.
 
 > [!NOTE]
 > Den enda situation där kunder kan flytta till en tidigare version (ett nedgraderingsscenario) uppstår om Microsoft slutar en sann sammanslagning på grund av ett problem. Så snart en korrigering är tillgänglig kommer den att tillämpas automatiskt.
@@ -212,7 +212,7 @@ Nedan finns några steg du kan vidta för att göra dina samtal med Microsoft me
 I följande steg går du igenom processen för att aktivera meddelanden i Loggboken för ekonomisk rapportering. Loggarna som Loggboken genererar hjälper supporttekniker att snabbt identifiera källan till anslutningsproblemet. Skicka kopior av dessa loggar tillsammans med din lott när du kontaktar supporten.
 
 
-1. Kopiera RegisterETW.zip-filen till klientens arbetsstation (helst Desktop) och extrahera [RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster).
+1. Kopiera RegisterETW.zip-filen till klientens arbetsstation (helst Desktop) och extrahera [RegisterETW.zip](https://mbs2.microsoft.com/fileexchange/?fileID=60b1106b-d5f8-4e0f-8041-039102505122).
 2. Kontrollera att Loggboken i Windows är stängd.
 3. Öppna en kommandotolk för Administratör PowerShell och gå till katalogen där RegisterETW.ps1 finns.
 4. Kör följande kommando: .\RegisterETW.ps1
@@ -242,7 +242,7 @@ Problem: Du får felmeddelandet "Det gick inte att ansluta till den ekonomiska r
 * När du får anslutningsfelmeddelandet väljer du **Testa** om du vill testa anslutningen för att se vilket meddelande som visas. 
 * Problemet kan vara resultatet om en annan användare inte har tillgång till ekonomisk rapportering. Om en användare inte har åtkomst får han eller hon ett meddelande om att han eller hon inte har behörighet.
 * Om problemet uppstår på flera webbläsare måste du kontrollera att tidsklockan på din arbetsstation är inställd på Auto.
-* Arbeta med en användare som har säkerhetsadministratörens rättigheter i Dynamics 365 Finance samt administratörsbehörigheten till nätverksdomänen, för att logga in på din arbetsstation för att se om de kan ansluta. Om de kan ansluta kan problemet vara relaterat till nätverksbehörigheter.
+* Arbeta med en användare som har säkerhetsadministratörsrättigheter i Dynamics 365 Finance samt administratörsrättigheter till nätverksdomänen för att logga in på din arbetsstation och se om de kan ansluta. Om de kan ansluta kan problemet vara relaterat till nätverksbehörigheter.
 * På arbetsstationen inaktiverar du tillfälligt brandväggen. Om du sedan kan ansluta till Report Designer handlar det om brandväggen. Arbeta med organisationens IT-avdelning för att lösa problemet.
 
 ## <a name="additional-resources"></a>Ytterligare resurser

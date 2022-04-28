@@ -15,18 +15,17 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: Version 10.0.26
-ms.openlocfilehash: 711681ab38fb24b57a83f008f86a8261176aa5a5
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 06782a4933fb5c3e86ad436b853f207fd3d5cddb
+ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388607"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "8612382"
 ---
 # <a name="design-an-er-format-to-keep-rows-together-on-the-same-excel-page"></a>Utforma ett ER-format för att hålla samman rader på samma Excel-sida
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 Detta ämne beskriver hur en användare med rollen Systemadministratör eller Funktionskonsult för elektronisk rapportering kan konfigurera ett [format för elektronisk rapportering](general-electronic-reporting.md) [(ER)](er-overview-components.md#format-component) som genererar utgående dokument i Microsoft Excel samt elektronisk sidnumrering så att skapade rader hålls kvar på samma sida.
 
@@ -55,7 +54,7 @@ Följ stegen i [Konfigurera ER-ramverket](er-quick-start2-customize-report.md#Co
 
 ## <a name="import-the-standard-er-format-configuration"></a>Importera standardkonfiguration av ER-format
 
-Följ anvisningarna i [Importera standardkonfigurationen för ER -format](er-quick-start2-customize-report.md#ImportERSolution1) för att lägga till standard ER -konfigurationer i din nuvarande instans av Dynamics 365 Finance. Till exempel importversion **252.116** av formatkonfigurationen **Fritextfaktura (Excel)**. Basversion **252** av konfigurationen för **grundfakturamodell** importeras automatiskt från databasen tillsammans med den konfiguration av **fakturamodellmappningen** som krävs.
+Följ stegen i [Importera standardkonfiguration för ER-format](er-quick-start2-customize-report.md#ImportERSolution1) för att lägga till ER-standardkonfigurationerna i din nuvarande instans av Dynamics 365 Finance. Till exempel importversion **252.116** av formatkonfigurationen **Fritextfaktura (Excel)**. Basversion **252** av konfigurationen för **grundfakturamodell** importeras automatiskt från databasen tillsammans med den konfiguration av **fakturamodellmappningen** som krävs.
 
 ## <a name="set-up-print-management-to-use-the-standard-er-format"></a>Ställa in utskriftshantering för användning av standardformat för ER
 

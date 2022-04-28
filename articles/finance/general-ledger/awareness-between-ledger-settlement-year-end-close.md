@@ -2,7 +2,7 @@
 title: Medvetenhet mellan redovisningskvittning och årsbokslut
 description: Det här ämnet ger information om förbättringar som in inverkan på redovisningskvittningar och stängningen av redovisningsåret.
 author: kweekley
-ms.date: 03/18/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: e18f77d73239de23000b5310d9342c6db95bc524
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 13d0a0a11a8f31e4ba647ccc23906f6b137051c2
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462364"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553344"
 ---
 # <a name="awareness-between-ledger-settlement-and-year-end-close"></a>Medvetenhet mellan redovisningskvittning och årsbokslut
 
 [!include [banner](../includes/banner.md)]
 
 
-I Microsoft Dynamics 365 Finance version 10.0.25 finns **Medvetenhet mellan redovisningskvittning och årsbokslut** tillgänglig i arbetsytan för **funktionshantering**. Med den här funktionen läggs två primära förbättringar till som påverkar redovisningskvittning och årsbokslut.
+I Microsoft Microsoft Dynamics 365 Finance version 10.0.25 finns **Medvetenhet mellan redovisningskvittning och årsbokslut** tillgänglig i arbetsytan för **funktionshantering**. Med den här funktionen läggs två primära förbättringar till som påverkar redovisningskvittning och årsbokslut.
 
 Vid årsbokslut kommer de redovisningstransaktioner som har kvittats inte längre att inkluderas i den ingående balansen för nästa räkenskapsår. Denna förbättring säkerställer att endast oreglerade redovisningstransaktioner inkluderas i den ingående balansen. Det är viktigt när omvärdering av utländsk valuta körs i redovisningen. Omvärdering av utländsk valuta körs endast för redovisningstransaktioner med status **Ej kvittad**. Innan funktionen **Medvetenhet mellan redovisningskvittning och årsbokslut** släpptes, sammanfattade ingående balans båda transaktionerna som har statusen **Kvittad** och de som har statusen **Inte kvittad** och statusen för det sammanfattade beloppet sattes till **Inte kvittad**.
 
@@ -48,12 +48,16 @@ Som ett stöd för de nya förbättringarna har ändringar gjorts i redovisnings
 
 På grund av ändringarna i funktionen och datamodellen är det viktigt att du överväger följande innan du aktiverar funktionen:
 
+- Eftersom endast kvittade transaktioner visas i den ingående balansen måste du ta bort transaktioner från det aktuella räkenskapsåret som kvittas mot transaktioner under föregående räkenskapsår. Transaktionerna måste kvittas på nytt mot transaktioner inom aktuellt räkenskapsår. Detta kan göras via en justeringspost för aktuellt räkenskapsår. Justeringen återför de summerade ingående saldona och motbokar med den detaljerade transaktion som krävs för att kvitta redovisningsposterna för aktuellt år. 
+
+  > [!IMPORTANT]
+  > Om detta inte sker får du ett felmeddelande om **saldofel** när du kör årsbokslutsstängningen för aktuellt räkenskapsår. Om det inte är möjligt att ta bort och återställa redovisningstransaktioner med samma räkenskapsår, bör du inte aktivera funktionen förrän efter att årsboksslutet har slutförts. Aktivera funktionen omedelbart efter att årsbokslutet har slutförts och innan några nya redovisningstransaktioner kvittas under nästa räkenskapsår. 
+  
 - Alla transaktioner som har markerats för kvittning men inte kvittats avmarkeras automatiskt när funktionen aktiveras. Om du vill förhindra att arbetet går förlorade, kvittar du alla markerade transaktioner innan du aktiverar funktionen.
 - Vissa organisationer kör årsbokslutet flera gånger för samma räkenskapsår. Aktivera inte funktionen om årsbokslutet redan har körts en gång och kommer att köras igen för samma räkenskapsår. Funktionen måste vara aktiverad innan du bearbetar det första årsbokslutet eller efter att du har bearbetat räkenskapsårets senaste årsbokslut.
 
   Om du vill aktivera funktionen, men årsbokslutet redan har körts en gång, måste du återföra årsbokslutet innan du kan aktivera funktionen.
 
-- Eftersom kvittning över räkenskapsår inte längre tillåts rekommenderar vi att du aktiverar funktionen innan du påbörjar årsbokslutsprocessen. För att säkerställa att nästa räkenskapsårs ingående saldon inte påverkas av tidigare kvittningar mellan räkenskapsår, ska den ingående transaktionen kvittas för räkenskapsåret som stängs.
 - Eftersom kvittning mellan huvudkonton inte längre är tillåten bör du justera kontoplanen eller processerna så som krävs för att säkerställa att redovisningskvittning kan göras på samma huvudkonto.
 - Funktionen kan inte aktiveras om den offentliga sektorns årsbokslutprocess används.
 

@@ -15,24 +15,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-02-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 4fb89f4b56ce8189482bf1a86582ef7e3684b15a
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: c1bedf1184b45741102000fa68c8d662c7383301
+ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392973"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "8612368"
 ---
 # <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Skapa en ny ER-lösning för att skriva ut ZPL-etiketter
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 Detta ämne förklarar hur en användare i rollerna systemadministratör, elektronisk rapportutvecklare eller funktionskonsult för elektronisk rapportering kan konfigurera parametrar för ramverket för [elektronisk rapportering (ER)](general-electronic-reporting.md), utforma nödvändiga ER-[konfigurationer](general-electronic-reporting.md#Configuration) för en ny ER-lösning för att komma åt data i lagerstyrningssystemet, samt skapa anpassade etiketter för lagerplats i Zebra Programming Language (ZPL) II-format. Dessa steg kan slutföras i **USRT**-företaget.
 
 ## <a name="business-scenario"></a>Affärsscenario
 
-Du representerar ett företag som implementerat lagerstyrning i Microsoft Dynamics 365 Finance. Alla lagerställen måste märkas med en självhäftande som innehåller en streckkod. Lagerarbetare använder streckkodsläsare för att skanna streckkoderna.
+Du representerar ett företag som implementerat lagerstyrning i Microsoft Microsoft Dynamics 365 Finance. Alla lagerställen måste märkas med en självhäftande som innehåller en streckkod. Lagerarbetare använder streckkodsläsare för att skanna streckkoderna.
 
 Alla lagerställen har märkts inom ramarna för aktiviteter före aktivering. Du måste dock också kunna skriva ut platsetiketter för lagerställen på begäran om befintliga etiketter skadas eller om lagerställets hyllor omkonfigureras. Med den nyligen frisläppta ER-funktionen kan du konfigurera en ny ER-lösning som gör att en lageransvarig kan skriva ut etiketter direkt på en etikettskrivare.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a842a3ba31c0a8e0d80ad1856d9d6d861a8514ea
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 21e03660387c7e715bc0f4cb1dbcd3ec9ec6cee2
+ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371785"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8554573"
 ---
 # <a name="complete-publish-and-deploy-a-globalization-feature"></a>Slutföra, publicera och distribuera en globaliseringsfunktion
 
@@ -59,7 +59,7 @@ I RCS använder du kommandot **Disitribuera** för att publicera en e-fakturerin
 2. På fliken **Versioner** till höger på sidan väljer du den version av e-faktureringsfunktionen som du vill distribuera till tjänstemiljön eller det anslutna programmet. Den valda versionen måste ha statusen **Slutförd** eller **Publicerad**.
 3. Välj **Distribuera** och sedan ett eller båda av följande alternativ för att definiera distributionens mål:
 
-    - **Anslutet program** – Den konfiguration som tillhandahålls av programinställningarna skrivs i instansen av Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management som tidigare associerats med den.
+    - **Anslutet program** – Den konfiguration som tillhandahålls av programinställningarna skrivs i den instans av Microsoft Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management som tidigare associerats med den.
     - **Servicemiljö** – E-faktureringsfunktionen distribueras till tjänstemiljön. E-fakturering är sedan redo att ta emot och bearbeta elektroniska dokument som Ekonomi och Supply Chain Management skickar.
 
 > [!NOTE]

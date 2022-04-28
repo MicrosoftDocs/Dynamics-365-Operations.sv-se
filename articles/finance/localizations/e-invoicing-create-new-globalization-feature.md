@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 197a5b983b307758425b1acc1f354d0a8bfbf8a1
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 94038b0eb412632c348081bbf467f44310d9e955
+ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371821"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "8603037"
 ---
 # <a name="create-a-globalization-feature"></a>Skapa en globaliseringsfunktion
 
@@ -47,7 +47,7 @@ Följ de här stegen om du vill skapa en funktion för e-fakturering.
 8. I rutnätet **Konfigurationer** bläddrar du till och väljer de formatkonfigurationer som krävs för bearbetningsförloppet (t.ex. för att generera e-fakturafiler eller bearbeta svar från externa webbtjänster).
 9. Välj **OK**. Du kan nu använda konfigurationerna för åtgärder i bearbetningsförloppet. För mer information, se [Arbeta med konfigurationer](e-invoicing-work-configurations.md).
 10. Lägg till inställningar för en e-faktureringsfunktion genom att skapa den på fliken **Inställningar** på sidan **Ny funktion**. Mer information finns i [Arbeta med funktionsinställningar](e-invoicing-feature-setup.md).
-11. Slutför konfigureringen och distribuera funktionen för e-fakturering till tjänstemiljön. För mer information, se [Slutföra, publicera och distribuera en globaliseringsfunktion](e-invoicing-complete-publish-deploy-globalization-feature).
+11. Slutför konfigureringen och distribuera funktionen för e-fakturering till tjänstemiljön. För mer information, se [Slutföra, publicera och distribuera en globaliseringsfunktion](e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### <a name="create-file-format-configurations-that-are-derived-from-the-existing-invoice-model"></a>Skapa filformatskonfigurationer som härleds från den befintliga fakturamodellen
 
@@ -91,4 +91,4 @@ De nya konfigurationerna för filformat måste delas med Microsoft-domänen inna
     - Granska konfigurationerna i den händelse att du skulle behöva anpassa ER-formaten och deras bindningar med formatmappningar för funktionsversionen.
     - Granska inställningarna om du skulle behöva anpassa fliken **Åtgärder**, fliken **Tillämplighetsregler** eller fliken **Variabler** för funktionsversionen.
 
-9. Slutför konfigureringen och distribuera funktionen för e-fakturering till tjänstemiljön. För mer information, se [Slutföra, publicera och distribuera en globaliseringsfunktion](e-invoicing-complete-publish-deploy-globalization-feature).
+9. Slutför konfigureringen och distribuera funktionen för e-fakturering till tjänstemiljön. För mer information, se [Slutföra, publicera och distribuera en globaliseringsfunktion](e-invoicing-complete-publish-deploy-globalization-feature.md).

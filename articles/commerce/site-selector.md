@@ -2,7 +2,7 @@
 title: Webbplatsväljarmodul
 description: Det här avsnittet handlar om modulen för webbplatsväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 02/11/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 381163fdd6180a76def2e1bfb733f597b611c517
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: ad4d4d5f950d0631059d8f509e9e808a9106eb98
+ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109716"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8551705"
 ---
 # <a name="site-picker-module"></a>Webbplatsväljarmodul
 
@@ -28,14 +28,9 @@ ms.locfileid: "8109716"
 
 Det här avsnittet handlar om modulen för webbplatsväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 
-Om ett företag har olika webbplatser på olika marknader, regioner och språk, behöver webbplatsanvändarna ett enkelt sätt att växla mellan platserna och välja sin föredragna webbplats att handla på. I det här scenariot kan du använda modulen webbplatsväljare för att söka på flera webbplatser.
+Om ett företag har olika webbplatser på olika marknader, regioner och språk, behöver webbplatsanvändarna ett enkelt sätt att växla mellan platserna och välja sin föredragna webbplats att handla på. I det här scenariot kan du använda modulen webbplatsväljare för att söka på flera webbplatser. En webbplatsväljare rekommenderas även när [geografisk detektering och omdirigering](geo-detection-redirection.md) har implementerats för din näthandelsplats, detta så att kunderna har möjlighet att åsidosätta den webbplatsinställning de anger via modulen [för lands-/regionsinställningar](country-region-picker-module.md). 
 
-Modulen webbplatsväljare måste vara konfigurerad med en lista över platser (marknader, regioner eller språk) som webbplatsanvändarna kan bläddra i.
-
-> [!NOTE]
-> Modulen webbplatsväljare är tillgänglig i Dynamics 365 Commerce 10.0.14-versionen.
-
-I följande bild visas ett exempel på en modul för webbplatsväljare som finns i rubriken på en webbplatssida.
+Modulen webbplatsväljare måste vara konfigurerad med en lista över platser (marknader, regioner eller språk) som webbplatsanvändarna kan bläddra i. I följande bild visas ett exempel på en modul för webbplatsväljare som finns i rubriken på en webbplatssida.
 
 ![Exempel på en modul för webbplatsväljare i sidhuvudet på en webbplatssida.](./media/ecommerce-sitepicker.PNG)
 

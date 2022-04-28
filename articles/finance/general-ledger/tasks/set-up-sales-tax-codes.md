@@ -1,6 +1,6 @@
 ---
 title: Ställ in momskoder
-description: Det här avsnittet innehåller information om hur du ställer in momskoder i Dynamics 365 Finance.
+description: Detta avsnitt innehåller information om hur du ställer in momskoder i Dynamics 365 Finance.
 author: twheeloc
 ms.date: 09/27/2021
 ms.topic: business-process
@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxTable, TaxData
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2539d701dda4ef5e1484d095b2d86d1f68a0dc98
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 69e2cf9a16fe0e694154cccf9b49944b49c79b90
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562112"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565865"
 ---
 # <a name="set-up-sales-tax-codes"></a>Ställ in momskoder
 
@@ -45,7 +45,7 @@ I den här uppgiften används demonstrationsföretaget USMF.
 12. Stäng sidan.
 13. Välj **Spara**.
 
-Från och med Microsoft Dynamics 365 Finance version 10.0.22, om du använder [Tax service](../../localizations/global-tax-calcuation-service-overview.md) och funktionen [**Stöd för flera momsregistreringsnummer**](../../localizations/emea-multiple-vat-registration-numbers.md) är aktiverad i arbetsytan **funktionshantering** kan du använda fältet **Typ av moms** för att ange typ av momskod. Följande värden finns:
+Från och med Microsoft Dynamics 365 Finance version 10.0.22, om du använder [tjänsten för moms](../../localizations/global-tax-calcuation-service-overview.md) och funktionen [**Stöd för flera momsregistreringsnummer**](../../localizations/emea-multiple-vat-registration-numbers.md) är aktiverad i arbetsytan **funktionshantering**, kan du använda fältet **Momstyp** för att ange typen av momskod. Följande värden finns:
 
 - Standardmoms
 - Reducerad moms

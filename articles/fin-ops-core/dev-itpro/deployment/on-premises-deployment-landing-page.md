@@ -4,7 +4,8 @@ description: Det här avsnittet innehåller information och länkar till innehå
 author: sericks007
 ms.date: 07/01/2021
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,24 +17,24 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 93ed4e81db18cd02c097ff188003569e7bb391c511fd93fcab0961c14029dc96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b57183a0c06f4735757c3c0c8d9e355879585e7a
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712578"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566051"
 ---
 # <a name="on-premises-deployment-home-page"></a>Lokal distribution – startsida
 
 [!include [banner](../includes/banner.md)]
 
-Du kan distribuera Dynamics 365 Finance + Operations (lokal). När du väljer en lokal distributionstyp skiljer sig systemkrav, maskinvarustorlek och funktionalitet sig åt från en molnbaserad distribution. Det här avsnittet innehåller länkar till specifik innehåll om lokal distribution.
+Du kan distribuera Dynamics 365 Finance + Operations (on-premises). När du väljer en lokal distributionstyp skiljer sig systemkrav, maskinvarustorlek och funktionalitet sig åt från en molnbaserad distribution. Det här avsnittet innehåller länkar till specifik innehåll om lokal distribution.
 
 ## <a name="get-started"></a>Kom igång
 - [Lokal distribution – översikt](on-premises-overview.md)
 - [Planera och förbereda för lokala distributioner](plan-onprem-deployment.md)
 - [Systemkrav för lokala distributioner](../../fin-ops/get-started/system-requirements-on-prem.md)
-- [Programvara som stöds av Microsoft Dynamics 365 Finance + Operations (lokal)](onprem-compatibility.md)
+- [Program som stöds i Microsoft Dynamics 365 Finance + Operations (on-premises)](onprem-compatibility.md)
 - [Krav för beräkning av maskinvara för lokala miljöer](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Köp Finance + Operations (on-premises)](../../fin-ops/get-started/purchase-on-premises.md)
 - [Jämförelse mellan funktioner i molnet och lokalt](../../fin-ops/get-started/cloud-prem-comparison.md)
@@ -52,7 +53,7 @@ Du kan distribuera Dynamics 365 Finance + Operations (lokal). När du väljer en
 - [Importera konfigurationer för elektronisk rapportering (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Skapa, publicera och skriva ut dokument i lokala distributioner](../analytics/printing-capabilities-on-premises.md)
 - [Konfigurera proxyservrar för lokala miljöer](onprem-reverseproxy.md)
-- [Ställa in teknisk support för Finance and Operations-appar](../lifecycle-services/support-experience.md)
+- [Konfigurera teknisk support för Finance and Operations-appar](../lifecycle-services/support-experience.md)
 - [Internetanslutning för klient](../user-interface/client-disconnected.md)
 - [Uppdatera lokala distributioner](apply-updates-on-premises.md)
 - [Omdistribuera lokala miljöer](redeploy-on-prem.md)
@@ -72,7 +73,7 @@ Du kan distribuera Dynamics 365 Finance + Operations (lokal). När du väljer en
 - [Skript för problemlösning i lokala miljöer](onprem-tsg-implementations.md)
 - [Certifikatrotation](certificate-rotation-on-prem.md)
 - [Lokal diagnostik](on-premises-diagnostics.md)
-- [Borttagna och utfasade funktioner för Finance and Operations](../migration-upgrade/deprecated-features.md)
+- [Borttagna eller föråldrade funktioner för Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Livscykelpolicy och lokala versioner av programmet](../migration-upgrade/on-prem-version-update-policy.md)
  
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0c856bca32c3dee44469c098961d85b4d8cb70a6
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 65891e380f740f4a1fa404d57789a6f50506d3b5
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060448"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565640"
 ---
 # <a name="provision-human-resources"></a>Etablera Human Resources
 
@@ -40,6 +40,10 @@ Följande förutsättningar måste vara på plats innan du kan etablera en ny pr
 
 ## <a name="provision-a-human-resources-trial-environment"></a>Skapa en utvärderingsmiljö för Personal
 
+>[!NOTE]
+> Från och med april 2022 finns inte utvärderingsmiljöerna för Personal tillgängliga i det fristående programmet. Potentiella kunder som är intresserade av att utvärdera Personalfunktionerna i apparna för ekonomi och drift kan göra detta med hjälp av gratisversionen på 30 dagar tillsammans med demodatan. Dynamics 365 Finance omfattar de Personalfunktioner som inkluderats i Ekonomiinfrastrukturen via sammanslagningen med det fristående programmet. Mer information finns i [Sammanslagning av Personalerbjudanden samlar funktioner för kunder](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) Mer information om utvärderingsversioner av Dynamics 365 Finance finns i den stegvisa [guiden](/fin-ops/get-started/before-you-buy). 
+
+
 Innan du provisioner din första resurs eller produktionsmiljö kan du använda en [utvärderingsmiljö för Personal](https://go.microsoft.com/fwlink/p/?LinkId=2115962) för att validera personalfunktioner. Bedömningsmiljöer innehåller fiktiva data som kan användas för att utforska programmet på ett säkert sätt. Även om bedömningsmiljön ägs av den användare som har begärt den, kan andra användare bjudas in via systemets administrationserfarenhet för Personal. 
 
 Med utvärderingsmiljöer kan du utvärdera personalfunktioner för personer som inte redan har tillgång till en personalmiljö. Om du inför en utvärderingsmiljö och den autentiserade användaren redan har tillgång till en eller flera befintliga personalmiljöer, omdirigeras användaren till den befintliga miljön eller listan över miljöer.
@@ -58,7 +62,7 @@ Innan du skapar din första Personal-miljö bör du noggrant planera miljöbehov
 Att tänka på vid ytterligare miljöer:
 
 - **Datamigrering**: Du kan komma att behöva överväga en ytterligare miljö för datamigreringsaktiviteter så att din sandbox-miljö kan användas i testsyfte under hela projektets gångf. Om det finns ytterligare en miljö kan datamigreringsaktiviteter fortsätta samtidigt som tester och konfigurationsaktiviteter sker i en annan miljö.
-- **Integrering**: Du kanske måste överväga att skapa ytterligare en miljö för att konfigurera och testa integreringer. Detta kan innefatta inbyggda integreringer som Ceridian Dayforce LinkedIn Talent Hub-integreringar eller anpassade integreringar som exempelvis för löne-, sökandespårningssystem eller förmånssystem och leverantörer.
+- **Integrering**: Du kanske måste överväga att skapa ytterligare en miljö för att konfigurera och testa integreringer. Detta kan innefatta inbyggda integreringar som Ceridian Dayforce- eller LinkedIn Talent Hub-integreringar eller anpassade integreringar som exempelvis för löner, sökandespårningssystem eller förmånssystem och leverantörer.
 - **Utbildning**: Du kan behöva en separat miljö som är konfigurerad med en uppsättning utbildningsdata för att utbilda dina medarbetare i användningen av det nya systemet. 
 - **Flerprojektfas**: Du kan behöva ytterligare en miljö för att stödja konfiguration, datamigrering, testning eller andra aktiviteter i en projektfas som planeras efter projektets ursprungliga start.
 
@@ -135,7 +139,7 @@ Använd följande riktlinjer när du bestämmer vilka Power Apps-miljöer som sk
    
     - **Testmiljöer** – dessa miljöer skapas med ett utgångsdatum. Efter förfallodatum kommer din miljö och alla personalinstanser som finns i den att tas bort automatiskt.
    
-    - **Ej stödda områden** - Miljön måste finnas i ett geografiskt område som stöds. Mer information finns i [Områden som stöds](hr-admin-setup-provision.md#supported-geographies).
+    - **Ej stödda områden** – Miljön måste finnas i ett geografiskt område som stöds. Mer information finns i [Områden som stöds](hr-admin-setup-provision.md#supported-geographies).
 
 6. Dubbla skrivfunktioner för att integrera Personal-data med miljön Power Apps kan bara användas om alternativet **Aktivera Dynamics 365-appar** har valts för miljön. Se [sidan Dubbelriktad skrivning](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) för mer information för dubbelriktad skrivning.
 

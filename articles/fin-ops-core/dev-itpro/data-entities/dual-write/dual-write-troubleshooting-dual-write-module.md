@@ -2,19 +2,19 @@
 title: Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
 description: Det här avsnittet innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem med dubbelriktad skrivning i Ekonomi och Drift-appar.
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
+ms.date: 04/12/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 58b20e38269922203b54173509e31c5e6f30c25b
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061820"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565978"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
 
@@ -70,6 +70,21 @@ Följande felmeddelande kan visas när du försöker att stoppa tabellmappningen
 Det här felet uppstår när den länkade Dataverse-miljön inte är tillgänglig.
 
 Lös problemet genom att skapa en biljett till dataintegreringsteamet. Koppla nätverksspårningen så att dataintegreringsteamet kan markera kartorna som **Inte körs** i servern.
+
+## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>Aktivera parallell bearbetning i appar för ekonomi och drift för att förbättra prestandan
+
+Om du aktiverar parallell bearbetning kan den tid som behövs för att importera data från appar för ekonomi och drift till kundkopplingsappar och Microsoft Dataverse minskas. 
+
+Slutför följande steg för att aktivera parallell bearbetning i appar för ekonomi och drift.
+
+1. Logga in i din appmiljö för ekonomi och drift.
+2. Gå till **Datahantering > Ramverksparametrar**.
+3. Välj **Enhetsinställningar** och sedan **Konfigurera parametrar för enhetskörning**.
+4. Lägg till parametrarna för parallell bearbetning:
+    - **Importera tröskelvärde för postantal** – Det antal poster som måste uppfyllas innan parallell bearbetning aktiveras.
+    - **Importera uppgiftsantal** – Antalet trådar (uppgifter) som ska köras parallellt.
+5. Välj **Spara**.
+
 
 ## <a name="errors-while-trying-to-start-a-table-mapping"></a>Fel vid försök att starta en tabellmappning
 

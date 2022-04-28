@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 83d19f92984c9f67242946aa8faf445d9d2bd881
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 876f5a5f8ebf77a65ba3aa6271a2957b7dc2cb96
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920210"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570490"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.23 (januari 2022)
 
@@ -31,7 +31,7 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 Följande tabeller listar de funktioner som ingår i denna version. Kolumnen *Funktion* innehåller länkar till [versionsplanen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), där du kan se de officiella frisläppningsdatumen för respektive funktion. Kolumnen *Mer information* innehåller mer information och/eller länkar till relaterad dokumentation. Information om hur du aktiverar en funktion finns i kolumnen *Aktiverad av*. Mer information om hur du använder funktionshantering finns i [Översikt över funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Vi kan komma att uppdatera detta ämne i syfte att inkludera funktioner som kommit med i bygget efter det att ämnet publicerades första gången.
 
-| Funktionsområde | Funktion | Mer information | Har aktiverats av   |
+| Funktionsområde | Funktion | Mer information | Har aktiverats av |
 |---|---|---|---|
 | Global adressbok | Definiera en standard delstat/region för varje land/region i adressinställningarna | Du kan nu definiera en standard delstat/region för varje land/region i adressinställningarna för den globala adressboken. När en standard delstat/region anges används standardvärdet som anges i regionfälten när du skapar en ny post för region eller ort för landet/regionen. Se även [Adressinställningar](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json) | Aktiverad som standard. |
 | Lager&nbsp;och&nbsp;logistik | [Pausa uppgifter och ansluta Warehouse Management-mobilappen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/park-tasks-warehouse-management-mobile-app) | [Konfigurera omvägar för steg i menyalternativ för mobila enheter](../warehousing/warehouse-app-detours.md) | Funktionshantering (*Omvägar för lagerstyrningsapp)* |
@@ -57,7 +57,7 @@ Om du vill aktivera eller inaktivera någon av dessa funktioner måste du göra 
 | Anskaffning och källa | Rensa inköpsorderns uppdateringshistorik | Med hjälp av den här funktionen kan du rensa tillfälliga historiska poster som är relaterade till inköpsorderuppdateringar. Den lägger till en ny knapp med namnet **Rensa inköpsuppdateringshistorik** i åtgärdsfönstret på sidan **Alla inköpsorder**. Den här funktionen aktiveras som standard. |
 | Produktionskontroll | (Förhandsversion) Automatisk plockning av lagerställeaktiverade material för automatiskt bokförda plocklistor | Den här funktionen gör det möjligt att välja och lösa lagerdimensioner för automatiskt bokförda, härledda/bakåtavräknade plocklistejournaler. |
 | Produktionskontroll | Validera råmaterialets utgång mot planerat förbrukningsdatum | Den här funktionen ändrar hur utgångsdatum för batchar valideras när en batch med råmaterial reserveras för användning under produktionen. När den här funktionen är aktiverad valideras batchutgångsdatumet mot det planerade förbrukningsdatumet (råmaterialdatumet), enligt vad som är upprättat på produktionsstrukturlisteraden eller batchorderformelraden. När den här funktionen inaktiveras valideras batchens utgångsdatum mot det planerade leveransdatumet för tillverknings- eller batchordern (som tidigare). |
-| Försäljning och marknadsföring | Rensa försäljningsuppdateringshistorik grundat på ålder | Med hjälp av den här funktionen kan du ange en högsta ålder för poster som ska behållas när den periodiska uppgiften **Rensning av försäljningsuppdateringshistorik**. Äldre poster raderas. Detta är användbart när du ställer in uppgiften så att den körs periodiskt, detta eftersom ålder alltid beräknas i relation till det datum då uppgiften körs. Utan den här funktionen kan du bara ange ett visst datum för de äldsta posterna som ska behållas. |
+| Försäljning och marknadsföring | Rensa försäljningsuppdateringshistorik grundat på ålder | Med hjälp av den här funktionen kan du ange en högsta ålder för poster som ska behållas när den periodiska uppgiften **Rensning av försäljningsuppdateringshistorik**. Äldre poster raderas. Detta är användbart när du ställer in uppgiften så att den körs periodiskt, detta eftersom ålder alltid beräknas i relation till det datum då uppgiften körs. Utan den här funktionen kan du bara ange ett visst datum för de äldsta posterna som ska behållas. Mer information finns i [Schemalägga datarensning i försäljningshistorik](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Försäljning och marknadsföring | Förbättra rapportresultat för de 100 främsta kunderna | Den här funktionen förbättrar prestandan hos de **100 bästa** kunderna genom att alltid köra rapporten över alla kunder (som är avsedd att användas) istället för att tillåta anpassade frågor. När den här funktionen är aktiverad, alla inställningar **Poster att inkludera** inaktiveras i rapportdialogrutan **Bästa 100**. |
 | Lagerstyrning | Skalningsenhetsstöd för frisläppning till lagerställe för utgående order | När funktionen är aktiverad kan utgående ordrar frisläppas från hubben direkt till skalningsenheten, varifrån de uppfylls. |
 
@@ -79,9 +79,9 @@ Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdateringar för Finance and Operations-appar
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för appar för ekonomi och drift
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.23 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.23 av Finance and Operations-appar (november 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.23 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.23 av Finance and Operations-appar (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 

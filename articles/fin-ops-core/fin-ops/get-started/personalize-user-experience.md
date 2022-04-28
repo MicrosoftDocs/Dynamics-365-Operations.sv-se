@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bdce3cd12358112e40a783c73795bd6f35545c8
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: b922d68fcf3e83be57140cf8c54c4bacd2b75f56
+ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384653"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "8603002"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
-
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -94,11 +92,11 @@ Dessutom är de vanligaste typerna av anpassning tillgängliga genom att högerk
 Du kan använda egenskapsfönstret för att anpassa ett element på följande sätt:
 
 - Ändra elementets etikett.
-- Dölj elementet så att den inte visas på sidan. Informationen i det här fältet tas inte bort eller ändras. Informationen visas bara inte på sidan längre.
+- Dölj elementet så att den inte visas på sidan. Informationen i detta fält tas inte bort eller ändras. Informationen visas bara inte på sidan längre.
 - Inkludera informationen i sammanfattningsavsnittet på snabbfliken (om elementet på en snabbflik).
 - Hoppa över fältet så att det inte får fokus när du tabbar genom sidan.
 - Förhindra att data i fältet redigeras (för alla poster).
-- Ange ett fält som krävs för inmatning av data. Om inget värde har angetts i det här fältet kommer det att visas med en röd kantlinje och en asterisk för att ange det här läget. Det här alternativet är bara tillgängligt från början i version 10.0.11 när funktionerna [Sparade vyer](saved-views.md) och **Tilldela fält enligt önskemål med anpassning** är aktiverade.
+- Ange ett fält som krävs för inmatning av data. Om inget värde har angetts i detta fält kommer det att visas med en röd kantlinje och en asterisk för att ange det här läget. Det här alternativet är bara tillgängligt från början i version 10.0.11 när funktionerna [Sparade vyer](saved-views.md) och **Tilldela fält enligt önskemål med anpassning** är aktiverade.
 
 Egenskapsfönstret kan omfatta andra anpassningsfunktioner, beroende på vilket element. Exempelvis egenskapsfönstret för en panel kan låta dig flytta upp den panelen till en instrumentpanel och egenskapsfönster för element på standardpanelen kan låta dig skapa ett nytt anpassat arbetsområde.
 

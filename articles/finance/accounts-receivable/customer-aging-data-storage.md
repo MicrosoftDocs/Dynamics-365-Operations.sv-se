@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ecd4f5359019e3c4778e21cc4946b9998cd519f
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.openlocfilehash: 497d49da84f4df90877908bef3031e079bc36066
+ms.sourcegitcommit: d0e99545d722c924db57ae2bd06f72154a1f1f97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817432"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "8557890"
 ---
 # <a name="customer-aging-data-storage"></a>Datalagring för kunders åldersfördelning
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-I det här avsnittet beskrivs hur du använder extern lagring för åldersdata för kunder. I Microsoft Dynamics 365 Finance kan du köra processen för lagring av åldersdata för kunder för att göra utdata tillgängliga för export till ett externt system. När du kör processen blir samma åldersrapportalternativ som finns tillgängliga i systemet tillgängliga för externa system. Detaljerna inkluderas alltid i exporterade data.
+
+I det här avsnittet beskrivs hur du använder extern lagring för åldersdata för kunder. I Microsoft Microsoft Dynamics 365 Finance kan du köra processen för datalagring för kunders åldersfördelning i syfte att göra utdata tillgängliga för export till ett externt system. När du kör processen blir samma åldersrapportalternativ som finns tillgängliga i systemet tillgängliga för externa system. Detaljerna inkluderas alltid i exporterade data.
 
 Det kan vara praktiskt att göra kundernas åldersdata tillgängliga i ett externt system för lagring i fall där utleveransen innehåller många kunder och/eller många transaktioner. Om den befintliga **åldersfördelningsrapporten för kunder** går ut på grund av att den innehåller för mycket data att skriva ut, är denna funktion ett alternativt sätt att hämta samma data.
 

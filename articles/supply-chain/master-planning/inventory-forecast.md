@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: abc827139c71f7942335cd2b7e2c7502f7fc1cfe
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 1446928c2f5fe606d1d0732764a2a4460643afcf
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469406"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548179"
 ---
 # <a name="inventory-forecasts"></a>Lagerprognoser
 
@@ -39,7 +39,7 @@ Det finns också andra sätt att skapa prognosrader:
 - [Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md).
 - [Importera historiska data för efterfrågeprognoser](import-historical-data.md).
 - [Generera prognosen genom att skapa en Machine Learning-webbtjänst för Microsoft Azure](demand-forecasting-setup.md).
-- [Importera rader för efterfråge- och inflödesprognoser med hjälp av datahanteringsramverket (dataentiteterna ForecastDemandForecastEntryStaging och ForecastSupplyForecastEntryStaging)](../../dev-itpro/data-entities/data-entities-data-packages.md).
+- [Importera rader för efterfråge- och inflödesprognoser med hjälp av datahanteringsramverket (dataentiteterna ForecastDemandForecastEntryStaging och ForecastSupplyForecastEntryStaging)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
 
 I enlighet med tabellen i steg 1 visas finns olika sätt att komma åt sidorna som används.
 

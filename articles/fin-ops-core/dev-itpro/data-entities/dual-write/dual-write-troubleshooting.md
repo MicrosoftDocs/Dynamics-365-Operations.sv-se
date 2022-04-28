@@ -2,19 +2,19 @@
 title: Allmän felsökning
 description: Det här avsnittet innehåller allmän felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Dataverse.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 04/07/2020
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f6f5b9f26990e2f4db9bf69040a6c4be31400b40
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8b5951f9f40179ca0bf31f5cccf1f05a0f968213
+ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062348"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8554611"
 ---
 # <a name="general-troubleshooting"></a>Allmän felsökning
 
@@ -29,20 +29,31 @@ Det här avsnittet innehåller allmän felsökningsinformation för integrering 
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Aktivera och visa spårningslogg för plugin-program i Dataverse för att visa felinformation
 
+Spårningsloggar kan vara användbara när du felsöker problem med direktsynkronisering mellan Finance & Operations och Dataverse. Loggarna kan innehålla specifik information avsedd för de team som ger teknisk och teknisk support för Dynamics 365. I den här artikeln beskrivs hur du aktiverar spårningsloggar och hur du visar dem. Spårningsloggar hanteras på inställningssidan för Dynamics 365 och kräver behörighet på administratörsnivå för att ändra och visa. 
+
 **Nödvändig roll för att aktivera spårningsloggen och visa fel:** systemadministratör
 
+### <a name="turn-on-the-trace-log"></a>Aktivera spårningsloggen
 Så här aktiverar du spårningslogg.
 
-1. Logga in på kundengagemangsappen, öppna sidan **inställningar** och under **System**, välj **Administration**.
-2. På sidan **Administration** väljer du **Systeminställningar**.
-3. På fliken **Anpassning** i kolumnen **Plugin-program and aktivitetsspåring för anpassat arbetsflöde**, välj **Alla** för att aktivera spårningsloggen för plugin-program. Om du bara vill logga spårningsloggar när undantag inträffar kan du istället välja **undantag**.
+1.  Logga in i Dynamics 365 och välj sedan **Inställningar** i det övre navigeringsfältet. På sidan System klickar du på **Administration**.
+2.  På sidan Administration klickar du på **Systeminställningar**.
+3.  Markera fliken och insticksmodulen **Anpassning** innan du ändrar listrutan till **Alla** i avsnittet för aktivitetsspårning av anpassat arbetsflöde. Då spåras alla aktiviteter, samntidigt som en omfattande uppsättning data tillhandahålls till de team som måste granska potentiella problem.
 
+> [!NOTE]
+> Om du ställer in listrutan till **Undantag** kommer spårningsinformation endast att tillhandahållas när undantag (fel) förekommer.
 
+När de har aktiverats fortsätter loggarna för inloggningsspårning att samlas in tills de stängs av manuellt genom att gå tillbaka till den här platsen och välja **Av**.
+
+### <a name="view-the-trace-log"></a>Visa spårningsloggen
 Så här visar du spårningslogg.
 
-1. Logga in på kundengagemangsappen, öppna sidan **inställningar** och under **Anpassning**, välj **Spårningslogg för plugin-program**.
-2. Sök efter spårningsloggarna där kolumnen **Typnamn** anges till **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
-3. Dubbelklicka på ett objekt om du vill visa hela loggen och på snabbfliken **Körning**, granska texten **Meddelandeblock**.
+1. På inställningssidan för Dynamics 365 väljer du **Inställningar** högst upp i navigeringsfältet. 
+2. Välj **Spårningslogg för insticksprogram** i avnittet **Anpassningar** på sidan.
+3. Posterna i listan med spårningsloggar baseras på typen av namn och/eller meddelandenamn.
+4. Öppna önskad post för att visa hela loggen. Meddelandeblocket i körningsavsnittet ger tillgänglig information för insticksmodulen. Om tillgänglig anges även undantagsinformation. 
+
+Du kan kopiera innehållet i spårningsloggar och klistra in dem i ett annat program som exempelvis Anteckningar eller andra verktyg om du vill visa loggar eller textfiler för att lättare kunna se allt innehåll. 
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivera felsökningsläget för att felsöka problem med direkt synkronisering i Ekonomi och Drift-appar
 
@@ -69,6 +80,34 @@ Fel i dubbelriktad skrivning som har sitt ursprung i Dataverse kan visas i Ekono
 5. Öppna händelsevisningsprogrammet.
 6. Välj **Program- och tjänstloggar \> Microsoft \> Dynamics \> AX-DualWriteSync \> Drift**.
 7. Granska listan över de senaste felen.
+
+## <a name="dual-write-ui-landing-page-showing-blank"></a>UI-landningssida för dubbelriktad skrivning som är tom
+När du öppnar sidan för dubbel skrivning i webbläsarna Microsoft Edge eller Google Chrome läses startsidan inte in, och du ser en tom sida eller ett fel, exmepelvis "Något gick fel".
+I Devtools visas ett fel i konsolloggarna:
+
+>bundle.eed39124e62c58ef34d2.js:37 DOMException: Det gick inte att läsa egenskapen "sessionStorage" från "Fönster": Åtkomst nekas för det här dokumentet. at t.storeInSessionStorage (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:16:136860 ) på ny t (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:69:20103 ) på ci (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:44115 ) på Eo (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:58728 ) på jo (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:65191 ) på Nr (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:84692 ) på Or (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:85076 ) på Ss (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91750 ) på vs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91130 ) på hs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:90151 )
+
+Användargränssnittet använder webbläsarens "sessionslagring" för att spara vissa egenskapsvärden för inläsning av startsidan. För att detta ska fungera måste tredjepartscookies tillåtas i webbläsaren för webbplatsen. Felet indikerar att användargränssnittet inte kan komma åt sessionslagringen. Det finns två scenarier där det här problemet uppstår:
+
+1.  Du öppnar användargränssnittet i inkognitoläget för Edge/Chrome och tredjepartscookies i inkognito har spärrats.
+2.  Du har helt blockerat tredjepartscookies i Edge/Chrome.
+
+### <a name="mitigation"></a>Minskning
+Tredjepartscookies måste tillåtas i webbläsarinställningarna.
+
+### <a name="google-chrome-browser"></a>Webbläsaren Google Chrome
+Första alternativ:
+1.  Gå till inställningarna genom att gå till chrome://settings/ i adressfältet och sedan navigera till Säkerhet > Cookies och andra webbplatsdata.
+2.  Välj "Tillåt alla cookies". Om du inte vill göra detta går du vidare till det andra alternativet.
+
+Andra alternativet:
+1.  Gå till inställningarna genom att gå till chrome://settings/ i adressfältet och sedan navigera till Säkerhet > Cookies och andra webbplatsdata.
+2.  Om du har valt "Spärra tredjepartscookies i Inkognito" eller "Blockera tredjepartscookies" går du till "Webbplatser som alltid kan använda cookies" och klickar på **Lägg till**. 
+3.  Lägg till webbplatsnamnet för Finance & Operations-appar – https://<your_FinOp_instance>.cloudax.dynamics.com. Se till att du markerar kryssrutan för "Alla cookies, endast på den här webbplatsen". 
+
+### <a name="microsoft-edge-browser"></a>Webbläsaren Microsoft Edge
+1.  Navigera till Inställningar -> Webbplatsbehörigheter -> Cookies och webbplatsdata.
+2.  Stäng av "Blockera tredjepartscookies".  
 
 ## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Ta bort länken till och länka en annan Dataverse-miljö från Ekonomi och Drift-app
 
@@ -97,14 +136,14 @@ Så här aktiverar du alternativet för formuläret **informations** igen:
 
 Supportteamet kanske måste granska nätverksspårningar för att felsöka vissa problem. Följ dessa steg för att skapa en nätverksspårning:
 
-### <a name="chrome"></a>Chrome
+### <a name="google-chrome-browser"></a>Webbläsaren Google Chrome
 
 1. I den öppnade fliken trycker du på **F12** eller väljer **Utvecklarverktyg** om du vill öppna utvecklarverktygen.
 2. Öppna fliken **Nätverk** och skriv in **integ** i filtertextrutan.
 3. Kör ditt scenario och observera de förfrågningar som loggas.
 4. Högerklicka på posterna och välj **Spara alla som en HAR med innehåll**.
 
-### <a name="microsoft-edge"></a>Microsoft Edge
+### <a name="microsoft-edge-browser"></a>Webbläsaren Microsoft Edge
 
 1. I den öppnade fliken trycker du på **F12** eller väljer **Utvecklarverktyg** om du vill öppna utvecklarverktygen.
 2. Öppna fliken **Nätverk**.

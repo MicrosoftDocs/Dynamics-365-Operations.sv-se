@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1e06fafe8d8bbe92ddf4fcd94d7271a1fbb6362a
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 4cd99b1d2c0dbbf48e7eee7e1233e3b078d14ba3
+ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413617"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "8603066"
 ---
 # <a name="configure-print-management-record-specific-er-destinations"></a>Konfigurera postspecifika ER-destinationer för utskriftshantering
 
@@ -35,7 +35,7 @@ Procedurerna kan slutföras i USMF-företaget. Ingen kod behövs.
 
 ## <a name="introduction"></a>Introduktion
 
-Du kan konfigurer [destinationer](electronic-reporting-destinations.md) för respektive mapp i filutdatakomponentenr för en ER-[format](general-electronic-reporting.md#FormatComponentOutbound)[konfiguration](general-electronic-reporting.md#Configuration) som används för att generera ett utgående dokument. När du kör ett ER-format av den här typen och du har rätt åtkomstbehörighet kan också ändra de konfigurerade destinationsinställningarna vid körning.
+Du kan konfigurer [destinationer](electronic-reporting-destinations.md) för respektive mapp i filutdatakomponentenr för en ER-[format](general-electronic-reporting.md)[konfiguration](general-electronic-reporting.md#Configuration) som används för att generera ett utgående dokument. När du kör ett ER-format av den här typen och du har rätt åtkomstbehörighet kan också ändra de konfigurerade destinationsinställningarna vid körning.
 
 I Microsoft Dynamics 365 Finance **version 10.0.17 och senare** kan en åtgärdskod [konfigureras](er-apis-app10-0-17.md) så att ett ER-format kan ange den åtgärd som användare utför genom att köra det ER-formatet. I modulen **Kundreskontra** kan du, bland inställningarna för utskriftshantering, välja ett ER-format som genererar ett specifikt affärsdokument, till exempel en fritextfaktura. Du kan sedan välja **Vy** om du vill förhandsgranska fakturan eller **Skriv ut** om du vill skicka den till en skrivare. Om en åtgärd överförs för det körande ER-formatet vid körning kan du [konfigurera olika ER-destinationer för olika användaråtgärder](er-action-dependent-destinations.md)..
 
@@ -59,7 +59,7 @@ Dessutom måste ER-konfigurationen **Fritextfaktura (Excel)** [importeras](er-do
 1. Gå till **Kundreskontra** \> **Fakturor** \> **Alla fritextfakturor**.
 2. Välj en faktura för kundkontot **US-001**.
 3. På sidan **Fritextfaktura** > fliken **Faktura** > gruppen **Utskriftshantering** väljer du **Utskriftshantering**.
-4. På sidan **Inställningar för utskriftshantering** expanderar du **Modul - kundreskontra** \> **Dokument** \> **Fritextfaktura**, väljer den **ursprungliga** posten och följer sedan dessa steg:
+4. På sidan **Inställningar för utskriftshantering** expanderar du **Modul – kundreskontra** \> **Dokument** \> **Fritextfaktura**, väljer den **ursprungliga** posten och följer sedan dessa steg:
 
     1.  Observera de aktuella inställningarna för den valda posten:
         -   Standardrapporten SSRS **FreeTextInvoice.Report** väljs i fältet **Rapportformat**.
@@ -76,9 +76,9 @@ Dessutom måste ER-konfigurationen **Fritextfaktura (Excel)** [importeras](er-do
 
     ![Konfigurera en namngiven ER-destination för det valda ER-formatet och tilldela det till en konfigurerad utskriftshanteringspost på konfigurationssidan för Utskriftshantering](./media/er-named-destinations-01.gif)
 
-    Du har nu konfigurerat namngiven ER- destination **Huvuddestination** för formatet **Fritextfaktura (Excel)** och tilldelat den till posten **Ursprunglig** för utskriftshantering under **Modul - kundreskontra** \> **Dokument** \> **Fritextfaktura**.
+    Du har nu konfigurerat namngiven ER- destination **Huvuddestination** för formatet **Fritextfaktura (Excel)** och tilldelat den till posten **Ursprunglig** för utskriftshantering under **Modul – kundreskontra** \> **Dokument** \> **Fritextfaktura**.
 
-5. Visa **Module - kundreskontra** \> **Konto - US-001** \> **Fritextfaktura**, välj posten **Ursprunglig** och följ sedan dessa steg:
+5. Visa **Module – kundreskontra** \> **Konto – US-001** \> **Fritextfaktura**, välj posten **Ursprunglig** och följ sedan dessa steg:
 
     1. Markera och håll inne (eller högerklicka på) posten, och välj sedan **Åsidosätt**.
     2. Välj pilknappen till höger om fältet **Målnamn**.
@@ -90,7 +90,7 @@ Dessutom måste ER-konfigurationen **Fritextfaktura (Excel)** [importeras](er-do
 
     ![Konfigurera en namngiven ER-destination för det valda ER-formatet och tilldela det till en konfigurerad utskriftshanteringspost på konfigurationssidan för Utskriftshantering](./media/er-named-destinations-02.gif)
 
-    Du har nu konfigurerat namngiven ER-destination **US-001-destination** för formatet **Fritextfaktura (Excel)** och tilldelat den till posten **Ursprunglig** för utskriftshanteringsposten under **Modul - kundreskontra** \> **Konto - US-001** \> **Fritextfaktura**.
+    Du har nu konfigurerat namngiven ER-destination **US-001-destination** för formatet **Fritextfaktura (Excel)** och tilldelat den till posten **Ursprunglig** för utskriftshanteringsposten under **Modul – kundreskontra** \> **Konto – US-001** \> **Fritextfaktura**.
 
 När en fritextfaktura bearbetas körs nu ER-formatet **Fritextfaktura (Excel)** och något av följande inträffar:
 

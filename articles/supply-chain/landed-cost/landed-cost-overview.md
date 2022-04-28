@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e4861c0e8b3680f3cd3229facf059b671a4fc765
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 90410585f314aa9f17f2c132afb6568307fb28ab
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983427"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570393"
 ---
 # <a name="landed-cost-module"></a>Modul för hemtagningskostnad
 
@@ -30,8 +30,8 @@ Företag kan använda hemtagningskostnader för att utföra följande uppgifter:
 
 - Uppskatta hemtagningskostnader vid skapandet av färd.
 - Fördela hemtagningskostnader för flera artiklar och inköpsorder eller överföringsorder i en enda färd.
-- Stödja överföring av varor mellan fysiska platser genom att känna igen hemtagningskostnader.
-- Känna igen periodiseringar för varor på väg.
+- Stödja överföring av varor mellan fysiska platser genom att beakta hemtagningskostnader.
+- Beakta periodiseringar för varor på väg.
 
 Hemtagningskostnader ger korrekta och aktuella kostnadsuppskattningar för omkostnader för hemtagningskostnader. Samtidigt ökar den ekonomiska och logistiska synligheten i den utökade leveranskedjan. Det minskar också administrationen av kostnadsredovisning och kostnadsfel.
 
@@ -39,7 +39,7 @@ Hemtagningskostnader ger korrekta och aktuella kostnadsuppskattningar för omkos
 
 ### <a name="voyages"></a>Sjötransporter
 
-I hemtagningskostnad är en färd en viss rörelse från en utlastningsplats, via en viss uppsättning destinationer över en angiven period, till en angiven inlastningsplats för lagerstället. Inköpsorder och orderrader kan läggas till i antingen en enda behållare eller flera behållare för en färd, och kostnaderna fördelas korrekt tillbaka till artikelraden. Order och orderrader kan också läggas till mellan juridiska personer för en enda färd.
+I hemtagningskostnad är en färd en viss rörelse från en utlastningsplats, via en viss uppsättning destinationer över en angiven period, till en angiven inlastningsplats för lagerstället. Inköpsorder och orderrader kan läggas till i antingen en enda behållare eller flera behållare för en färd, och kostnaderna fördelas korrekt tillbaka till artikelraden. 
 
 ### <a name="item-ownership"></a>Ägare av artikel
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: adab5ee3f626390355f4bab1227efd5fe58c2fcf
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
+ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524533"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547800"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurera lagersynlighet
 
@@ -51,9 +51,10 @@ Tillägget Lagersynlighet lägger till flera nya funktioner i Power Apps-install
 
 | Funktionshanteringsnamn | Beskrivning |
 |---|---|
-| OnHandReservation | Denna funktion låter dig skapa reservationsfunktionen för att skapa reservationer, förbruka reservationer och/eller avmarkera angivna lagerkvantiteter med hjälp av Lagersynlighet. Mer information finns i [Reservationer för Lagersynlighet](inventory-visibility-reservations.md). |
-| OnHandMostSpecificBackgroundService | Denna funktion ger en lagersammanfattning för produkter tillsammans med alla dimensioner. Data för lagersammanfattningen synkroniseras regelbundet från Lagersynlighet. Mer information finns i [Lagersammanfattning](inventory-visibility-power-platform.md#inventory-summary). |
-| OnhandChangeSchedule | Med hjälp av funktionen kan du ändra schemat för disponibelt att lova (ATP) funktionerna (valfritt). Mer information finns i [Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova](inventory-visibility-available-to-promise.md). |
+| *OnHandReservation* | Denna funktion låter dig skapa reservationsfunktionen för att skapa reservationer, förbruka reservationer och/eller avmarkera angivna lagerkvantiteter med hjälp av Lagersynlighet. Mer information finns i [Reservationer för Lagersynlighet](inventory-visibility-reservations.md). |
+| *OnHandMostSpecificBackgroundService* | Denna funktion ger en lagersammanfattning för produkter tillsammans med alla dimensioner. Data för lagersammanfattningen synkroniseras regelbundet från Lagersynlighet. Mer information finns i [Lagersammanfattning](inventory-visibility-power-platform.md#inventory-summary). |
+| *OnhandChangeSchedule* | Med hjälp av denna valfria funktion får du åtkomst till funktionerna för lagerändringsschema för lagerbehållning och disponibelt att lova (ATP). Mer information finns i [Ändringsschema för lagersynlighet för lagerbehållning som är disponibel att lova](inventory-visibility-available-to-promise.md). |
+| *Aktivera lagerartiklar i lagersynlighet* | Denna tillvalsfunktion gör att Lagersynlighet kan stödja artiklar som har aktiverats för avancerade lagerstyrningsprocesser (WHS-artiklar). Mer information finns i [Stöd för lagersynlighet för WHS-artiklar](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Hitta tjänstslutpunkten
 
@@ -61,7 +62,7 @@ Om du inte känner till rätt tjänstslutpunkt för Lagersynlighet öppnar du si
 
 ## <a name="data-source-configuration"></a>Konfiguration för datakälla
 
-Varje datakälla representerar ett system som dina data kommer från. Namn på exempeldatakällor är bland annat `fno` (som betyder för "Dynamics 365 Finance och drift-program") och `pos` (som betyder "försäljningsställe"). Standardinställningen är att Supply Chain Management konfigureras som standarddatakälla (`fno`) i Lagersynlighet.
+Varje datakälla representerar ett system som dina data kommer från. Källnamn för exempeldata är till exempel `fno` (som står för "Dynamics 365-appar för ekonomi och drift") samt `pos` (som står för "kassa"). Standardinställningen är att Supply Chain Management konfigureras som standarddatakälla (`fno`) i Lagersynlighet.
 
 > [!NOTE]
 > Datakällan `fno` är reserverad för Supply Chain Management. Om tillägget Lagerhantering är integrerat i en miljö för Supply Chain Management rekommenderar vi att du inte tar bort konfigurationer som är relaterade till `fno` datakällan.
@@ -144,7 +145,7 @@ Om datakällan till exempel innehåller en produktfärgsdimension kan du mappa d
 
 När en datakälla bokför en lagerändring i Lagersynlighet bokför den denna ändring med hjälp av *fysiska mått*. Fysiska mått ändrar kvanheten och återspeglar lagerstatusen. Du kan definiera dina egna fysiska mått, baserat på dina behov. Frågor kan baseras på de fysiska måtten.
 
-Lagerstyrning innehåller en lista över fysiska standardmått som är kopplade till Supply Chain Management (`fno`-datakällan). Dessa fysiska standardmått tas från lagertransaktionens status på sidan **Lagerbehållningslista** i Supply Chain Management (**Lagerstyrning \> Förfrågningar och rapporter \> Behållningslista**). Följande tabell innehåller ett exempel på fysiska mått.
+Lagersynlighet innehåller en lista över fysiska standardmått som är kopplade till Supply Chain Management (`fno`-datakällan). Dessa fysiska standardmått tas från lagertransaktionens status på sidan **Lagerbehållningslista** i Supply Chain Management (**Lagerstyrning \> Förfrågningar och rapporter \> Behållningslista**). Följande tabell innehåller ett exempel på fysiska mått.
 
 | Namn på fysiskt mått | beskrivning |
 |---|---|
@@ -278,7 +279,7 @@ När denna beräkningsformel används kommer det nya frågeresultatet att omfatt
 ]
 ```
 
-`MyCustomAvailableforReservation`-resultatet som baseras på beräkningsinställningen i de anpassade måtten är 100 + 50 - 10 + 80 - 20 + 90 + 30 - 60 - 40 = 220.
+`MyCustomAvailableforReservation`-resultatet som baseras på beräkningsinställningen i de anpassade måtten är 100 + 50 – 10 + 80 – 20 + 90 + 30 – 60 – 40 = 220.
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Patritionskonfiguration
 

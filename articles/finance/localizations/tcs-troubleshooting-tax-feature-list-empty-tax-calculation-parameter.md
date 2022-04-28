@@ -13,22 +13,21 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 5b87499042c9c4bfe76e182b170adf4f1cfeac4b
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: ef8158c2ada18e7d132eebbedef559b3f80ab19f
+ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388576"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "8612301"
 ---
 # <a name="empty-tax-feature-list-in-tax-calculation-parameters"></a>Tom momsfunktionslista i parametrar för momsberäkning
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 ## <a name="symptom"></a>Symptom
 
-Du har publicerat en funktion i Regulatory Configuration Service (RCS) så att du kan använda den i Microsoft Dynamics 365 Finance. När du öppnar Ekonomi, gå till **Moms** \> **Inställningar** \> **Inställningar för moms** \> **Beräkningsparametrar för moms** och förösk välja ett värde i fältet **Namn på funktionsinställningar** (fältet är tomt).
+Du har publicerat en funktion i Regulatory Configuration Service (RCS) så att du kan använda den i Microsoft Microsoft Dynamics 365 Finance. När du öppnar Ekonomi, gå till **Moms** \> **Inställningar** \> **Inställningar för moms** \> **Beräkningsparametrar för moms** och förösk välja ett värde i fältet **Namn på funktionsinställningar** (fältet är tomt).
 
 ## <a name="reason"></a>Orsak
 

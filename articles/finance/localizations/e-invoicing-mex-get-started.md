@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
-ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
+ms.openlocfilehash: 6fc8a9eaf6c6e4c82719e7c1ebccd4272548e73f
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "7986368"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566011"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Kom i gång med e-fakturering för Mexiko
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> E-fakturering för Mexiko stöder för närvarande inte alla funktioner som är tillgängliga i dokumentet Comprobante Fiscal Digital por Internet (CFDI) i den relaterade integrationen som är inbyggd i Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management.
+> E-fakturering för Mexiko stöder för närvarande inte alla funktioner som är tillgängliga i dokumentet Comprobante Fiscal Digital por Internet (CFDI) samt i den relaterade integrationen som är inbyggd i Microsoft Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management.
 
 Det här avsnittet innehåller information som hjälper dig att komma igång med e-fakturering för Mexiko. Den guidar dig genom de konfigurationssteg som är beroende av RCS (Regulatory Configuration Services) och Finance. Det vägleder dig genom de steg som du måste följa i ekonomin när du vill skicka CFDI-fakturor via tjänsten, och den innehåller även information om hur du granskar bearbetningsresultaten och status för CFDI-fakturor.
 
@@ -141,7 +141,7 @@ Om du vill skicka annullering av CFDI-faktura krävs funktionsinställningarna *
 1. På sidan **inställning av funktionsversion** på fliken **variabler**, välj variabelnamn **DigitalSignatureXSLT**.
 2. I fältet **Värden** ange: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
    
-    där: <RelativePath> = mapp\\mapp\\filnamn med två omvända snedstreck, ContainerName måste ange den behållare som används för tjänsten.
+    där: \<RelativePath\> = mapp\\mapp\\filnamn med två omvända snedstreck, ContainerName måste ange den behållare som används för tjänsten.
    
     Exempel på variabeln är:
     

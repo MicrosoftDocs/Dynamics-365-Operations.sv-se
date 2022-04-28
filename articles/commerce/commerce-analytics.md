@@ -8,12 +8,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2021-11-12
-ms.openlocfilehash: 7e3721421e15bc3e5937691cdbaee51e4d3cdd17
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: 63d6e5ef7e883578106495d5ec778bbd686ee92d
+ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349753"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8550017"
 ---
 # <a name="commerce-analytics-preview"></a>Commerce-analyser (förhandsversion)
 
@@ -352,15 +352,20 @@ Sidan **visningsrapport** omfattar följande mätvärden:
 
 ### <a name="enable-and-configure-commerce-analytics-preview"></a><a name="enableCommerceAnalytics"></a>Aktivera och konfigurera Commerce-analys (förhandsversion)
 
-Om du vill installera Commerce-analys (förhandsversion) måste du ha behörighet att skapa resurser i ett Azure-abonnemang. Du måste också ha behörighet att installera tillägg i LCS. 
+Om du vill installera Commerce-analys (förhandsversion) måste du ha behörighet att skapa resurser i ett Azure-abonnemang. Du måste också ha behörighet att installera tillägg i LCS.
 
 Följ dessa steg för att aktivera och konfigurera tillägget för Commerce-analys (förhandsversion).
 
-1. [Aktivera och konfigurera tillägget Exportera till Data Lake](#enableExportToDataLake).
-1. [Installera och konfigurera en Azure Synapse Workspace](#configureAzureSynapse).
-1. [Lägg till hemligheter i nyckelvalvet](#addSecrets).
-1. [Aktivera och konfigurera tillägget Commerce-analys (förhandsversion)](#enableCommerceAnalyticsAddin).
-1. [Installera Power BI mallappen](#powerbi).
+1. [Skicka in förhandsgranskningsformuläret för Commerce-analys (förhandsversion)](#joinPreview)
+2. [Aktivera och konfigurera tillägget Exportera till Data Lake](#enableExportToDataLake).
+3. [Installera och konfigurera en Azure Synapse Workspace](#configureAzureSynapse).
+4. [Lägg till hemligheter i nyckelvalvet](#addSecrets).
+5. [Aktivera och konfigurera tillägget Commerce-analys (förhandsversion)](#enableCommerceAnalyticsAddin).
+6. [Installera Power BI mallappen](#powerbi).
+
+### <a name="submit-the-preview-intake-form-for-commerce-analytics-preview"></a><a name="joinPreview"></a>Skicka in förhandsgranskningsformuläret för Commerce-analys (förhandsversion).
+
+Skicka in [förhandsgranskningsformuläret för Commerce-analys (förhandsversion)](https://forms.office.com/r/vW5VLJGXZ2). När din begäran har bearbetats skickas ett bekräftelsemeddelande via e-post till den e-postadress som du angett i formuläret.
 
 ### <a name="enable-and-configure-the-export-to-data-lake-add-in"></a><a name="enableExportToDataLake"></a>Aktivera och konfigurera tillägget Exportera till Data Lake
 
@@ -460,7 +465,7 @@ För att installera Power BI mallappen för Commerce-analys (förhandsversion), 
     | Lösenord | Ange lösenordet som du [lagrade för den skrivskyddade SQL-användaren i nyckelvalvet](#roUser). |
 
 1. Välj **logga in och anslut**.
-1. Vänta tills datauppsättningen har uppdaterats. Välj sedan knappen **Redigera app** för att öppna programarbetsytan, där du kan visa uppdateringsstatusen för datauppsättningen. I app-arbetsytan kan du även ställa in automatiska uppdateringsscheman för din datauppsättning, hantera behörigheter och byta namn på appinstansen.
+1. Vänta tills datauppsättningen har uppdaterats. Välj sedan knappen **Redigera app** för att öppna programarbetsytan, där du kan visa uppdateringsstatusen för datauppsättningen. I app-arbetsytan kan du även ställa in automatiska uppdatringsplaner för din datauppsättning, hantera behörigheter och byta namn på appinstansen.
 
 ### <a name="privacy"></a><a name="privacy"></a>Tillgänglighet
 

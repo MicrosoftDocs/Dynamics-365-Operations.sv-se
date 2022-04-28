@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5b84237844ec1d8f6c0716a0a13b05c83b358901
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d414ed7ac55afbbc58b8f5542c713f56392f9bc7
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575786"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570462"
 ---
 # <a name="manage-folios"></a>Hantera folio
 
 [!include [banner](../../includes/banner.md)]
 
-En folio avgörs ofta av tullregleringar. Den består av en leverantörs varor för en enhet eller ett företag per leverans. Varorna i en folio kan läggas i en behållare eller spridas bland flera behållare.
+En folio avgörs ofta av tullregleringar. Den består av en leverantörs varor för en enhet eller ett företag per leverans. Varorna i en folio hanteras i en och samma behållare.
 
 Om du vill öppna sidan **Alla folio** går du till **Hemtagningskostnad \> folio \> Alla folio**. På den här sidan visas en lista över alla aktuella folio. Med knapparna i åtgärdsfönstret kan du skapa, ta bort och arbeta med folio. Välj folio i listan om du vill visa mer information om detta på sidan **folio**.
 
@@ -86,15 +86,15 @@ I tabellen nedan beskrivs fälten som är tillgängliga på snabbfliken **Allmä
 | Tullmäklare | Välj tullmäklare för folio. Tullmäklare definieras på leverantören. Med hjälp av dessa kan skapade kostnader bestämmas automatiskt. |
 | HAWB/fraktsedel | Ange den underflygfraktsedel eller fraktsedel som ska tillämpas på folio. |
 | Företag | Den juridiska enhet (företag) som är associerad med folio. |
-| Lastens kontrollnummer | Det här fältet används av tullmyndigheterna i vissa länder eller regioner. |
-| Mått | Det här fältet gör att en mätning kan anges i modulen **Hemtagningskostnad**. Mått används ofta av organisationer som inte känner till den individuella volymen eller vikten av varorna, men som kräver en mer korrekt fördelning än alternativen för belopp och kvantitet. Fraktspeditören ger med vikt- eller kubiska mått och du kan lägga den på antingen en artikel eller inköpsorder.. Den kan uppdateras automatiskt om parametern väljs eller anges manuellt. |
+| Lastens kontrollnummer | Detta fält används av tullmyndigheterna i vissa länder eller regioner. |
+| Mått | Detta fält gör att en mätning kan anges i modulen **Hemtagningskostnad**. Mått används ofta av organisationer som inte känner till den individuella volymen eller vikten av varorna, men som kräver en mer korrekt fördelning än alternativen för belopp och kvantitet. Fraktspeditören ger med vikt- eller kubiska mått och du kan lägga den på antingen en artikel eller inköpsorder.. Den kan uppdateras automatiskt om parametern väljs eller anges manuellt. |
 | Måttenhet | Enheten som gäller för det angivna måttet. |
 | Antal kartonger | Antal kartonger i folio. Fältet kan uppdateras automatiskt beroende på parameterurvalet. |
-| Leverantörskonto | Välj den leverantör som är associerad med folion. Det här fältet är bara avsett för information. Den påverkar inte några funktioner. |
+| Leverantörskonto | Välj den leverantör som är associerad med folion. Detta fält är bara avsett för information. Den påverkar inte några funktioner. |
 | Namn | Namnet på det valda leverantörskontot. |
 | Kommentarer | Ange eventuell ytterligare information som är relaterad till folio. |
 | Beskrivning av varor | Välj en varubeskrivning som identifierar folio. För mer information, se [Beskrivning av varor](shipping-information-setup.md#description-of-goods). |
-| Värderingsdatum | Det här fältet är relaterat till sidan för inmatning av skatt. Modulen **Hemtagningskostnad** kommer att använda tullväxelkursen för det datum som du anger här. Standardvärdet är datumet på inmatningssidan för skatt. |
+| Värderingsdatum | Detta fält är relaterat till sidan för inmatning av skatt. Modulen **Hemtagningskostnad** kommer att använda tullväxelkursen för det datum som du anger här. Standardvärdet är datumet på inmatningssidan för skatt. |
 | Tull-ID | Ange tull-ID. Det här ID:t kan tillhandahållas av tullavdelningarna i länder eller regioner. |
 | Tariffkod | Ange en tariffkod som ska associeras med folio. Denna kod krävs normalt (och definieras) av landet eller regionen som du levererar till. |
 

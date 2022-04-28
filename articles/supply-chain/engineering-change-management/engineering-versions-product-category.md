@@ -2,7 +2,7 @@
 title: Konstruktionsversioner och kategorier av konstruktionsprodukter
 description: Det här avsnittet innehåller information om konceptet konstruktionsversioner. Konstruktionsversioner säkerställer att olika tillstånd för en produkt och dess data hålls aktuella och tydliga, och att de kan visualiseras i systemet.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 42faa9e5f073d718c18422e37212c2ae8a28b28d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a4d057c603e6592e491af7597e50fce2497860ec
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572899"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553374"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Konstruktionsversioner och kategorier av konstruktionsprodukter
 
@@ -111,7 +111,7 @@ Ange följande fält snabbfliken **Detaljer** en konstruktionsproduktkategori.
 | Fält | beskrivning |
 |---|---|
 | Produkttyp | Välj om kategorin gäller för produkter eller tjänster. |
-| Produktionstyp | Det här fältet visas bara när du har aktiverat [hantering av formeländring](manage-formula-changes.md) i systemet. Välj den typ av produktion som denna konstruktionsproduktkategori används:<ul><li>**Planering av artikel** – Använd den här tekniska kategorin om du vill hantera receptändring för planering av artiklar. I planeringsartiklar används formler. De liknar receptartiklar, men används för att endast producera samprodukter och biprodukter, inte färdiga produkter. Formler används under processtillverkning.</li><li>**Strukturlista** – Använd den här tekniska kategori för att hantera tekniska produkter som inte använder formler och som vanligtvis (men inte nödvändigtvis) innehåller strukturlistor.</li><li>**Formel** – Använd den här tekniska kategorin om du vill hantera receptändring för avslutade produkter. Dessa artiklar kommer att ha en formel men inte en strukturlista. Formler används under processtillverkning.</li></ul> |
+| Produktionstyp | Detta fält visas bara när du har aktiverat [hantering av formeländring](manage-formula-changes.md) i systemet. Välj den typ av produktion som denna konstruktionsproduktkategori används:<ul><li>**Planering av artikel** – Använd den här tekniska kategorin om du vill hantera receptändring för planering av artiklar. I planeringsartiklar används formler. De liknar receptartiklar, men används för att endast producera samprodukter och biprodukter, inte färdiga produkter. Formler används under processtillverkning.</li><li>**Strukturlista** – Använd den här tekniska kategori för att hantera tekniska produkter som inte använder formler och som vanligtvis (men inte nödvändigtvis) innehåller strukturlistor.</li><li>**Formel** – Använd den här tekniska kategorin om du vill hantera receptändring för avslutade produkter. Dessa artiklar kommer att ha en formel men inte en strukturlista. Formler används under processtillverkning.</li></ul> |
 | Faktisk/nominell vikt | Det här alternativet visas bara när du har aktiverat [hantering av formeländring](manage-formula-changes.md) i systemet. Den är bara tillgänglig om fältet **Produktionstyp** är inställt på *Planering av artikel* eller *Formel*. Ställ in det här alternativet till *Ja* om du ska använda den här tekniska kategorin för att hantera artiklar som kräver support för faktisk/nominell vikt. |
 | Spåra versioner i transaktioner | Välj om versionen av produkten ska märkas med alla transaktioner (logistisk påverkan). Om du till exempel spårar versionen i transaktioner kommer varje försäljningsorder att visa vilken specifik version av produkten som såldes i den försäljningsordern. Om du inte spårar versionen i transaktioner visar inte försäljningsorder vilken specifik version som såldes. De visar i stället alltid den senaste versionen.<ul><li>Om det här alternativet är inställt på *Ja* skapas en produktmall för produkten och varje version av produkten är en variant som använder *version* produktdimensionen. Fältet **Delprodukttyp** ställs automatiskt in på *Produktmall*, och i fältet **Produktdimensionsgrupp** måste du välja en produktdimensionsgrupp där dimensionen *version* är aktiv. Endast produktdimensionsgrupper där *version* är en aktiv dimension visas. Du kan skapa nya produktdimensionsgrupper genom att klicka på knappen **Redigera** (pennsymbol).</li><li>Om det här alternativet är inställt på *Nej* används inte produktdimensionen *version*. Du kan sedan välja om du vill skapa en produkt eller en produktmall som använder de andra dimensionerna.</li></ul><p>Det här alternativet används ofta för produkter som har en kostnadsskillnad mellan versioner, eller produkter där olika villkor gäller i relation till kunden. Därför är det viktigt att ange vilken version som användes i varje transaktion.</p> |
 | Delprodukttyp | Välj om kategorin ska innehålla produkter eller produktmallar. För produktmallar kommer produktdimensioner att användas.
@@ -137,7 +137,7 @@ Ange följande fält för varje rad som du lägger till i rutnätet:
 |---|---|
 | Namn | Välj det attribut som ska läggas till. |
 | Värde | Välj standardvärdet för attributet. |
-| Obligatoriskt | För attribut av typen *boolesk* om det här alternativet har värdet *Ja* måste användarna ställa in attributet på *Ja*. Om alternativet är inställt på *Nej* kan användarna ställa in attributet på antingen *Ja* eller *Nej*. För andra datatyper är inställningen av det här alternativet bara information. |
+| Obligatoriskt | Välj om attributet är obligatoriskt, vilket innebär att användarna måste ange ett giltigt värde för attributet innan de kan spara en produkt. Effekten av inställningen varierar något beroende på datatypen för det valda attributet, enligt definitionen i följande lista.<ul><li>**Boolesk** – Ange detta som *Ja* om attributet ska ha värdet *Ja* (systemet kommer att neka att spara en produkt där attributet är inställt på *Nej*). Ange detta alternativ som *Nej* för att godkänna värdena *Ja* eller *Nej*. (Attribut av typen *Boolesk* kan inte ha ett tomt värde.)</li><li>**Heltal eller Decimal** – Ange värdet som *Ja* om du vill att användare måste ange ett värde som inte är noll för det här attributet. Ange detta alternativ som *Nej* om du vill tillåta användare att spara med värdet noll.  (Attribut av dessa typer får inte ha ett tomt värde.)</li><li>**Lista** – Listor har datatypen *Text*, men omfattar också en fördefinierad lista med möjliga värden. Därför är det inte möjligt att ange ett tomt värde för attribut av den här typen, varför denna inställning inte har någon effekt, utan utgör ren information.</li><li>**Alla övriga datatyper** – Ange detta alternativ som *Ja* om du vill att attributet ska vara obligatoriskt. Ange detta alternativ som *Nej* om du vill att användarna ska kunna spara en produkt utan att ange ett värde för det här attributet.</li></ul> |
 | Batchattribut | Välj om attributet ska spridas via batch-funktionen. |
 
 ### <a name="readiness-policy-fasttab"></a>Snabbfliken beredskapspolicy
@@ -160,7 +160,7 @@ Inställningen av alternativet **Påtvinga effektivitet** är viktigt för anslu
 - Site
 - Effektivitetsdatum
 
-Konstruktionsstrukturlistor och flöden skapas från den konstruktionsversion där de gäller. De kan identifieras med bockmarkeringen i kryssrutan **Konstruktionskontrollerad**. När du arbetar med konstruktionsstrukturlistor och flöden kan du vanligtvis utforma dem med hjälp av olika kvantiteter. Du kommer heller inte heller att utforma olika strukturlistor per plats. För konstruktionsstrukturlistor och flöden hämtas dessutom effektivitetsdatum alltid från konstruktionsversionen. En konstruktionsversion, dess strukturlista och dess flöde kommer därför att ha samma effektivitetsdatum.
+Konstruktionsstrukturlistor och flöden skapas från den konstruktionsversion där de gäller. De kan beaktas med bockmarkeringen i kryssrutan **Konstruktionskontrollerad**. När du arbetar med konstruktionsstrukturlistor och flöden kan du vanligtvis utforma dem med hjälp av olika kvantiteter. Du kommer heller inte heller att utforma olika strukturlistor per plats. För konstruktionsstrukturlistor och flöden hämtas dessutom effektivitetsdatum alltid från konstruktionsversionen. En konstruktionsversion, dess strukturlista och dess flöde kommer därför att ha samma effektivitetsdatum.
 
 För produkter där du använder produktdimensionen *version* (tillsammans med logistisk påverkan på transaktionerna) läggs versionen även till i strukturlistorna och flödena. Det här beteendet gör det enklare att särskilja strukturlistor och flöden i sammanhängande versioner, oavsett inställningen **påtvinga effektivitet**.
 
