@@ -12,14 +12,12 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Commerce
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.27 (juli 2022)
+                  href: get-started/whats-new-commerce-10-0-27.md
                 - name: Commerce 10.0.26 (maj 2022)
                   href: get-started/whats-new-commerce-10-0-26.md
                 - name: Commerce 10.0.25 (april 2022)
                   href: get-started/whats-new-commerce-10-0-25.md
-                - name: Commerce 10.0.24 (februari 2022)
-                  href: get-started/whats-new-commerce-10-0-24.md
-                - name: Commerce 10.0.23 (januari 2022)
-                  href: get-started/whats-new-commerce-10-0-23.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -356,6 +354,8 @@
                           href: tax-exempt-price-inclusive.md
                         - name: Konfigurera moms för onlinebeställningar
                           href: sales-tax-config.md
+                        - name: Dölj momsuppdelningsinformation i ordersammanfattningar
+                          href: hide-taxes-breakup.md
                     - name: Ställa in en meddelandeprofil för e-post
                       href: email-notification-profiles.md
                     - name: Nummerserier
@@ -394,7 +394,7 @@
                       href: dev-itpro/store-commerce.md
                     - name: Riktlinjer för implementering av enhetshantering
                       href: implementation-considerations-devices.md
-                    - name: Välja mellan MPOS och Cloud POS
+                    - name: Välja mellan Store Commerce och molnbaserad kassa
                       href: MPOS-or-CPOS.md
                     - name: Kassaåtgärder online och offline
                       href: pos-operations.md
@@ -496,7 +496,9 @@
                   href: tasks/configure-functionality-profile-sales-representative.md
                 - name: Skapa ekonomiska dimensioner för butikskanaler och konfigurera värden för butiker
                   href: tasks/create-financial-dimensions-retail-channels.md
-                - name: Aktivera konsekvent hantering av leveranssätt i e-handelskanaler
+                - name: Konfigurera nummerserier för butiksutdrag
+                  href: retail-statements-number-sequences.md
+                - name: Aktivera konsekvent hantering av leveranssätt i näthandelskanaler
                   href: consistent-delivery-mode-handling.md
             - name: Konfigurera en onlinekanal
               items:
@@ -884,9 +886,11 @@
           items:
             - name: Översikt över utdrag
               href: retail-statements.md
+            - name: Commerce bokföringsparametrar
+              href: commerce-posting-parameters.md
             - name: Validera butikstransaktioner för utdragsberäkning
               href: valid-checker.md
-            - name: Inaktivera regler i konsekvenskontrollen för butikstransaktioner
+            - name: Inaktivera regler i konsekvenskontroll för butikstransaktioner
               href: disable-consistency-check-rule.md
             - name: Redigera och granska butikstransaktioner
               items:
@@ -1100,6 +1104,8 @@
                       href: adventure-works-theme.md
                     - name: Installera Adventure Works-temat
                       href: install-adventure-works.md
+                - name: Commerce lokaliseringsguide
+                  href: e-commerce-localization-guide.md
             - name: Hantera digitala tillgångar
               items:
                 - name: Översikt av digital tillgångshantering
@@ -1312,6 +1318,14 @@
               href: b2b/payment-method.md
             - name: Konfigurera produktkvantitetsgränser på nätandelsplatser för B2B
               href: b2b/quantity-limits.md
+            - name: Commerce-kataloger för B2B-webbplatser
+              items:
+                - name: Skapa Commerce-kataloger för B2B-webbplatser
+                  href: catalogs-b2b-sites.md
+                - name: Utbyggbarhetspåverkan av Commerce-kataloger för B2B-anpassningar
+                  href: catalogs-b2b-sites-dev.md
+                - name: Commerce-kataloger för Vanliga frågor och svar om B2B
+                  href: catalogs-b2b-sites-FAQ.md
         - name: Övervakning och analys
           items:
             - name: Övervaka försäljningsresultat och marginaler
@@ -2004,7 +2018,7 @@
               items:
                 - name: Hantera livscykeln för konfigurationer
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: ' Lifecycle Services (LCS)'
+                - name: Lifecycle Services (LCS)
                   items:
                     - name: Överför konfigurationer till LCS
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
@@ -2472,13 +2486,17 @@
                   items:
                     - name: Anpassa resurser och etikettfiler för Commerce-tillägg
                       href: dev-itpro/extension-resource-localization.md
-            - name: Fjärradministrerad Commerce
+            - name: Fjärradministrerad handel
               items:
+                - name: Översikt
+                  items:
+                    - name: Introduktion till CSU-kärnan (Commerce Scale Unit)
+                      href: dev-itpro/CSU-core.md
                 - name: 'API:er och referens'
                   items:
                     - name: 'Kund- och användar-API:er för Commerce Scale Unit'
                       href: dev-itpro/retail-server-customer-consumer-api.md
-                    - name: 'Använda API:er för Retail Server i externa program'
+                    - name: 'Använda Retail Server API:er i externa program'
                       href: dev-itpro/consume-retail-server-api.md
                     - name: Typescript- och C#-proxyservrar för Retail POS
                       href: dev-itpro/typescript-proxy-retail-pos.md
@@ -2528,6 +2546,8 @@
                       href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: Förpackning och distribution
                   items:
+                    - name: Skapa ett tilläggspaket för Cloud Scale Unit
+                      href: dev-itpro/CSU-packaging.md
                     - name: Ta bort Cloud Scale Unit-tillägg
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
@@ -2540,6 +2560,8 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: Migrera kassatillägg till SDK för Commerce
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Felsöka Store Commerce-tillägg genom VS Code
+                      href: dev-itpro/sc-debug.md
                 - name: Miljöinställningar
                   items:
                     - name: Lokal utvecklingsmiljö
@@ -2610,10 +2632,12 @@
                   items:
                     - name: Skapa ett paket för MPOS-tillägg
                       href: dev-itpro/pos-extension/mpos-extension-packaging.md
-                    - name: Kodsignering av ett MPOS-tilläggspaket (MSIX)
+                    - name: Kodsignera ett MPOS-tilläggspaket (MSIX)
                       href: dev-itpro/pos-extension/mpos-extension-signing.md
-                    - name: Skapa ett paket för Cloud POS-tillägg
+                    - name: Skapa ett tilläggspaket för Cloud POS
                       href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Skapa ett installationspaket för Store Commerce-tillägg
+                      href: dev-itpro/store-comm-extension-installer.md
             - name: Näthandel
               items:
                 - name: Översikt
@@ -2814,11 +2838,15 @@
                       items:
                         - name: Telemetrilogg
                           href: e-commerce-extensibility/telemetry-logger.md
-            - name: Commerce HQ
+            - name: Commerce headquarters
               items:
+                - name: CDX-pakettillägg
+                  items:
+                    - name: Utöka kundens CDX-paket för att lägga till anpassade data
+                      href: dev-itpro/extend-customer-CDX-package.md
                 - name: Förpackning och distribution
                   items:
-                    - name: Skapa Commerce-betalningspaket för Ekonomi och drift-distribution
+                    - name: Skapa Commerce-betalningspaket för distribution av ekonomi och drift
                       href: dev-itpro/payment-connector-package.md
             - name: SDK för Retail (äldre)
               items:
@@ -2914,7 +2942,7 @@
               items:
                 - name: Konfigurera en utvecklingsmiljö för näthandel för att felsöka mot en nivå 1 Retail Server VM
                   href: troubleshoot/set-up-dev-environment-debugging.md
-    - name: Nyheter och ändringar i appar för ekonomi och drift
+    - name: Utveckling och administration av appar för ekonomi och drift
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md

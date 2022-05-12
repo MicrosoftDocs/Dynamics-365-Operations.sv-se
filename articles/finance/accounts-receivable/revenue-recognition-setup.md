@@ -2,7 +2,7 @@
 title: Inställning för intäktsredovisning
 description: I det här avsnittet beskrivs inställningsalternativen för intäktsredovisning och deras konsekvenser.
 author: kweekley
-ms.date: 11/24/2021
+ms.date: 04/28/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 5f72ebd743763db7c68340a833c2501d47d27081
+ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867230"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8656733"
 ---
 # <a name="revenue-recognition-setup"></a>Inställning för intäktsredovisning
 [!include [banner](../includes/banner.md)]
@@ -100,7 +100,7 @@ Ange beskrivande värden i fälten **Intäktsplan** och **Beskrivning**. Följan
     - **Förekomster** – beloppet fördelas jämnt mellan förekomsterna, men kan inkludera en extra period om du väljer **Faktiskt startdatum** som redovisningsregel.
     - **Räkenskapsperiod efter dagar** – beloppet fördelas baserat på de faktiska dagarna i varje räkenskapsperiod. 
 
-    **Månadsvis efter dagar** och **Räkenskapsperiod efter dagar** ger samma resultat när räkenskapsperioderna följer kalendermånaderna. Det enda undantaget är när redovisningsregeln är inställd som **Månadens/periodens slut** och fälten **Startdatum för kontrakt** och **Slutdatum** är tomma på en försäljningsorderrad.
+         - **Månadsvis efter dagar** och **Räkenskapsperiod efter dagar** ger samma resultat när räkenskapsperioderna följer kalendermånaderna. Det enda undantaget är när redovisningsregeln är inställd som **Månadens/periodens slut** och fälten **Startdatum för kontrakt** och **Slutdatum** är tomma på en försäljningsorderrad.
 
 - **Redovisningsregel** – redovisningsregeln fastställer datumen som anges i intäktsplanen för fakturan.
 
@@ -108,7 +108,7 @@ Ange beskrivande värden i fälten **Intäktsplan** och **Beskrivning**. Följan
     - **Första i månaden/perioden** – datumet på den första planraden är kontraktets startdatum (eller fakturadatum). Alla efterföljande planrader skapas emellertid för den första dagen i månaden eller räkenskapsperioden.
     - **Delning mitt i månaden** – datumet på den första planraden beror på fakturadatumet. Om fakturan bokförs från den första till den femtonde i månaden skapas intäktsplanen med hjälp av den första dagen i månaden. Om fakturan bokförs den sextonde i månaden eller senare skapas intäktsplanen med hjälp av den första dagen i nästa månad.
 
-        **Delning mitt i månaden** kan inte väljas om redovisningsvillkoret har inställningen **Räkenskapsperiod efter dagar**.
+        - **Delning mitt i månaden** kan inte väljas om redovisningsvillkoret har inställningen **Räkenskapsperiod efter dagar**.
 
     - **Första dagen i nästa månad/period** – det datum som planen börjar är den första dagen i nästa månad eller räkenskapsperiod.
     - **Månadens/periodens slut** – datumet på den första planraden är kontraktets startdatum (eller fakturadatum). Alla efterföljande planrader skapas emellertid för den sista dagen i månaden eller räkenskapsperioden. 

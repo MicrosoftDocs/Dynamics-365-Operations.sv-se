@@ -14,6 +14,8 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Platform updates
                   href: get-started/whats-new-home-page.md
+                - name: Platform updates för version 10.0.27 (juli 2022)
+                  href: get-started/whats-new-platform-updates-10-0-27.md
                 - name: Platform updates för version 10.0.26 (maj 2022)
                   href: get-started/whats-new-platform-updates-10-0-26.md
                 - name: Platform updates för version 10.0.25 (april 2022)
@@ -66,6 +68,8 @@
                   href: data-entities/odata.md
                 - name: Utveckling av anpassade tjänster
                   href: data-entities/custom-services.md
+                - name: Spårning av tjänstbegäran
+                  href: data-entities/service-request-tracing.md
                 - name: Återkommande integrationer
                   href: data-entities/recurring-integrations.md
                 - name: Testtjänster som använder verktyg från tredje part
@@ -1714,9 +1718,25 @@
                       href: migration-upgrade/migrate-upgraded-cube-entity-store.md
                     - name: Uppgradera budgetplanering
                       href: migration-upgrade/upgrade-budget-planning.md
-            - name: Flytta data från AX 2009
+                - name: Felsöka uppgraderingen
+                  items:
+                    - name: Felsöka utvecklingsmiljöer under uppgradering
+                      href: migration-upgrade/troubleshoot-dev-env.md
+                    - name: Felsöka uppgraderingar av självbetjäningsmiljöer
+                      href: migration-upgrade/troubleshoot-self-service-env.md
+                    - name: Felsöka uppgraderingsskripten PreSync och PostSync
+                      href: migration-upgrade/pre-post-upgrade-scripts.md
+                - name: Miljöåtgärder
+                  items:
+                    - name: Migrera dokumentbilagor
+                      href: migration-upgrade/migrate-doc-attachments-ax-2012.md
+                    - name: Rensa källdata för uppgradering
+                      href: migration-upgrade/clean-up-source-data-upgrade.md
+                    - name: Komprimera register i Dynamics AX 2012-miljöer
+                      href: migration-upgrade/compress-tables-ax-2012.md
+            - name: Migrera data från AX 2009
               items:
-                - name: Migrera data från AX 2009 till Ekonomi och drift
+                - name: Migrera data från AX 2009 till Finance and Operations
                   href: migration-upgrade/data-migration-tool.md
                 - name: AX 2009-migrering – installera verktyg för datamigrering
                   href: migration-upgrade/install-dmt.md
@@ -2000,3 +2020,5 @@
       href: ../../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../../human-resources/index.md
