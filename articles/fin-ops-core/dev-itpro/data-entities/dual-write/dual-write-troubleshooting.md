@@ -2,19 +2,19 @@
 title: Allmän felsökning
 description: Det här avsnittet innehåller allmän felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Dataverse.
 author: RamaKrishnamoorthy
-ms.date: 04/07/2020
+ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8b5951f9f40179ca0bf31f5cccf1f05a0f968213
-ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
+ms.openlocfilehash: 5896b031229c7fe7e02c8ccf038dd2b1a4f2de05
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8554611"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614107"
 ---
 # <a name="general-troubleshooting"></a>Allmän felsökning
 
@@ -131,6 +131,29 @@ Så här aktiverar du alternativet för formuläret **informations** igen:
 2. Hitta formuläret **Information** under formulärnoden.
 3. Markera formuläret **Information** och klicka på **aktivera säkerhetsroller**.
 4. Ändra säkerhetsinställningarna till **Visa för alla**.
+
+## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>Se till att dataintegrationen använder det senaste ekonomi- och driftschemat
+
+Det kan uppstå dataproblem i dataintegrationen om det senaste schemat inte används. Följande steg hjälper dig att uppdatera enhetslistan i ekonomi- och driftapparna och enheterna i dataintegratorn.
+
+### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Uppdatera entitetslistan i miljön för ekonomi och drift
+1.  Logga in i din miljö för ekonomi och drift.
+2.  Välj **Datahantering**.
+3.  Inne i Datahantering, välj **Ramverksparametrar**.
+4.  På sidan **Ramverksparametrar för dataimport/export** välj fliken **Entitetsinställningar** och välj **Uppdatera entitetslistan**. Det kan ta mer än 30 minuter att uppdatera, beroende på antalet enheter som berörs.
+5.  Navigera till **Datahantering** och välj **Dataentiteter** som ska valideras när de förväntade enheterna visas. Om de förväntade enheterna inte visas i listan ska du validera att enheterna visas i din ekonomi- och driftmiljö och återställa de enheter som saknas efter behov.
+
+#### <a name="if-the-refresh-fails-to-resolve-the-issue-delete-and-re-add-the-entities"></a>Om det inte går att lösa problemet genom att uppdatera tas bort och läggas till entiteterna på ett annat sätt
+
+> [!NOTE]
+> Du kanske måste stoppa alla bearbetningsgrupper som förs genom att använda enheterna innan de tas bort.
+
+1.  Välj **datahantering** i din ekonomi- och driftmiljö och välj **dataenheter**.
+2.  Sök efter enheter som har problem och anteckna målenheten, mellanställningstabellen, enhetens namn och andra inställningar. Ta bort enheten eller enheterna från listan.
+3.  Välj **Ny** och lägg till enheten eller enheterna på nytt med hjälp av data från steg 2. 
+
+#### <a name="refresh-entities-in-data-integrator"></a>Uppdatera enheter i dataintegratorn
+Logga in på Power Platform administrationscenter och välj **Dataintegration**. Öppna projektet där ut problemen uppstår och välj **Uppdatera entiteter**.
 
 ## <a name="how-to-enable-and-save-network-trace-so-that-traces-can-be-attached-to-support-tickets"></a>Så här aktiverar och sparar du nätverksspårning så att spårningar kan kopplas till supportbegäranden
 

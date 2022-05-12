@@ -2,7 +2,7 @@
 title: Utforma ER-konfigurationer för att fylla i PDF-mallar
 description: Det här avsnittet innehåller information om hur du utformar ett ER-format (elektronisk rapportering) för att fylla i en PDF-mall.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 706256300cf0b64bc5b5e1e7adb77c1da500d16f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367866"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645119"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Utforma ER-konfigurationer för att fylla i PDF-mallar
 
 [!include[banner](../includes/banner.md)]
 
-Procedurerna i det här avsnittet är exempel som visar hur en användare i någon av rollerna **Systemadministratör** eller **Utvecklare för elektronisk rapportering** kan konfigurera ett ER-format (elektronisk rapportering) som genererar rapporter som PDF-filer genom att använda ifyllbara PDF-dokument som rapportmallar. Dessa steg kan utföras i alla företag med Dynamics 365 Finance eller som RCS (Regulatory Configuration Services).
+Procedurerna i det här avsnittet är exempel som visar hur en användare i någon av rollerna **Systemadministratör** eller **Utvecklare för elektronisk rapportering** kan konfigurera ett ER-format (elektronisk rapportering) som genererar rapporter som PDF-filer genom att använda ifyllbara PDF-dokument som rapportmallar. Dessa steg kan utföras i alla företag som Dynamics 365 Finance eller Regulatory Configuration Services (RCS).
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -252,10 +252,14 @@ Eftersom båda egenskaperna är valfria för formatelementet **fält** används 
 - Om attributet **Namn** definieras, uttrycket **Namn** är konfigurerat fylls det PDF-fält i som har samma namn som värdet som returneras av uttrycket **Namn** för formatelementet fylls i.
 
 > [!NOTE]
-> En PDF-kryss ruta kan fyllas i som valt på följande sätt:
+> När en kryssruta i PDF-mallen inte tillhör en grupp kryssrutor, representeras den i det redigerbara ER-formatet som ett **fält** element som är kapslat under **PDF-fil** elementet. Denna typ av PDF-kryssruta kan anges som valt på följande sätt:
 >
-> - När motsvarande formatelement **Fält** är bundet till ett datakällfält av datatypen **Boolesk** ahr värdet **True**
-> - När motsvarande formatelementet **Fält** innehåller ett nästat formatelementet **Sträng** som är bundet till ett data käll fält som har ett text värde av **1**, **True**, eller **Ja**
+> - När motsvarande **Fält** formatelement är bundet till ett datakällfält av datatypen *[Boolesk](er-formula-supported-data-types-primitive.md#boolean)* datatyp värdet **Värdet**.
+> - När motsvarande formatelementet **Fält** innehåller ett nästat formatelementet **Sträng** som är bundet till ett data käll fält som har ett text värde av **1**, **True**, eller **Ja**.
+>
+> Din mall kan innehålla en grupp kryssrutor där endast en kryssruta kan markeras åt gången. Dessa kryssrutor visas i en PDF-mall som flera formulärfält av typen *KRYSSRUTA*. Varje fält har samma namn men har ett eget exportvärde. När du importerar mallen till det redigerbara ER-formatet visas varje kryssruta i den formathierarkiska strukturen som ett artikelelement i en **Objekt i kryssrutegrupp** som är kapslat under samma **Kryssrutegrupp element**. Namnet på elementet i **kryssrutegrupp** är samma som namnet på kryssrutorna i PDF-mallen. Namnet på elementet i **Objekt i kryssrutegrupp** är samma som exportvärde på motsvarande fält för kryssrutorna i PDF-mallen.
+>
+> Du kan bara binda ett element **Objekt i kryssrutegrupp** till ett datakällfält av den *booleska* datatypen.
 
 ## <a name="run-the-format-configuration"></a>Kör formatkonfigurationen
 

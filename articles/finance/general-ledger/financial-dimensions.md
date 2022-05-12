@@ -2,7 +2,7 @@
 title: Ekonomiska dimensioner
 description: Den här ämnet beskriver de olika typerna av ekonomiska dimensioner och hur de ställs in.
 author: aprilolson
-ms.date: 01/03/2019
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9d5de5b58f0d498c4766659671d43fdb216cd6a870345509505b5a6bc19bdd4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36e667e8dd1282e788eb40cd392baa9db824cec2
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754204"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644371"
 ---
 # <a name="financial-dimensions"></a>Ekonomiska dimensioner
 
@@ -79,8 +79,12 @@ För att upprätthålla datans referensintegritet kan ekonomiska dimensioner sä
 - Är den ekonomiska dimensionen i en aktiv kontostruktur, avancerad regelstruktur, eller ekonomisk dimension angiven?
 - Ingår den ekonomiska dimensionen i standardformat för integrering av ekonomisk dimension?
 - Har den ekonomiska dimensionen ställts in som standarddimension?
+- Har den ekonomiska dimensionen avmarkerats från inställningen för Financial Reporting? 
 
 Du kan inte radera den ekonomiska dimensionen om något av villkoren är uppfyllda.
+
+> [!NOTE]
+> Med start i ekonomiversion 10.0.27 kommer ekonomiska dimensioner inte längre att väljas automatiskt för ekonomiska rapporteringsinställningar när de skapas. 
 
 ## <a name="default-dimension-values"></a>Standarddimensionsvärden
 

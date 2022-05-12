@@ -2,7 +2,7 @@
 title: Sparade vyer
 description: I det här avsnittet beskrivs hur du använder funktionerna för sparade vyer.
 author: jasongre
-ms.date: 09/13/2021
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: bd1b034ebb66b996e20173c2ad4f958e643f9c2e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e10137ff5d11ed06c32613e601e2fa7423e270ac
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065716"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644799"
 ---
 # <a name="saved-views"></a>Sparade vyer
 
@@ -45,7 +45,7 @@ När vyer har aktiverats för en miljö kommer alla sidor som har stöd för vye
 
 Det finns två storleksvariationer i vyväljaren: 
 
-- **Stora vyväljare**: sidor som är framträdande med en lista har en större vyväljare av några möjliga orsaker. Större delen av den största viktigaste vyväljaren visar sidorna där vyn kan innehålla användardefinierade filter. Eftersom filter inkluderas i vyerna är den större väljarstorleken också motiverad eftersom vynamnen ofta är den bästa beskrivningen av de data som visas på skärmen och det förväntas att användarna ska växla mellan vyer oftare på dessa sidtyper.
+- **Stora vyväljare**: sidor som är framträdande med en lista har en större vyväljare av några möjliga orsaker. Större delen av den största viktigaste vyväljaren visar sidorna där vyn kan innehålla användardefinierade filter och sorterar. Eftersom filter och sorterar inkluderas i vyerna är den större väljarstorleken också motiverad eftersom vynamnen ofta är den bästa beskrivningen av de data som visas på skärmen och det förväntas att användarna ska växla mellan vyer oftare på dessa sidtyper. Gruppering i ett rutnät kan också sparas i vyer på en sida med stora visningsväljare. 
 - **Små vyväljare**: alla andra helsidor (med undantag för arbetsytor och instrumentpanelen) har en mindre vyväljare som visas bredvid sidrubriken. Vyer på dessa sidor innehåller bara anpassningar (och inte användardefinierade filter). På dessa sidor är rubriken eller postrubriken ofta den viktigaste informationen längst upp på sidan. Den mindre storleken av vyväljaren återspeglar också en lägre förväntad frekvens av vyväxling på dessa sidor. 
  
 Om du väljer vyns namn öppnas vyväljaren och visar listan över tillgängliga vyer för den här sidan.

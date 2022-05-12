@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4eb8f6aee50d74127ecc816af691a96bb1d8966b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: bb837a38485bad2b9b76a5e4f20d311c0281e192
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469154"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625405"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Planera med negativ lagerbehållning
 
@@ -75,7 +75,7 @@ Resultatet blir en planerad order på 25 stycken. (= 25 stycken. &minus; 0 styck
 
 ## <a name="planning-when-there-is-a-reservation-against-negative-on-hand-inventory"></a>Planering när det finns en reservation mot negativ lagerbehållning
 
-Om du justerar lager när det finns fysiska reservationer kan det leda till en situation där en order fysiskt reserveras mot negativt lager. I det här fallet, då det finns en fysisk reservation, förutsätter Planeringsoptimering att det stöds av lagerbehållning, även om inleverans av lagerbehållning ännu inte har registrerats i systemet. Därför förutsätts det att lagerpåfyllnad inte krävs och det skapas inte någon planerad order för att fylla på orderns kvantitet.
+Om du justerar lager när det finns fysiska reservationer kan det leda till en situation där en order fysiskt reserveras mot negativt lager. I det här fallet måste du ha leverans för att täcka den reserverade kvantiteten, eftersom det finns en fysisk reservation. Påfyllnad krävs därför, så att systemet antingen skapar en planerad order för att fylla på den kvantitet som inte kunde täckas av den befintliga lagerbehållningen, eller så täcker den med en befintlig order för artikeln.
 
 I följande exempel illustreras scenariot.
 
@@ -88,7 +88,7 @@ Systemet konfigureras så här:
 - Det finns en försäljningsorder med en kvantitet *10* st. av produkten *FG*.
 - Försäljningsorderkvantiteten reserveras fysiskt mot befintlig lagerbehållning.
 
-Du justerar sedan kvantiteten för produkt *FG* så lagerbehållningen blir 0 (noll). Eftersom lagerbehållningen för produkten är noll, reserveras nu försäljningsorderkvantiteten mot negativt lager. Men om du nu kör huvudplanering skapas dock ingen planerad order för att leverera försäljningsordern, eftersom Planeringsoptimering förutsätter att lagerbehållning finns för att tillhandahålla den fysiska reservationen.
+Du justerar sedan kvantiteten för produkt *FG* så lagerbehållningen blir 5. Eftersom beställningsproduktlagret är 5, reserveras försäljningsorder kvantiteten nu mot kvantitet som inte finns tillgänglig (det skulle vara liknande om beställningen var 0, i vilket fall försäljningsordern skulle reserveras mot negativt lager ). Om du kör huvudplanering nu, en planerad beställning av kvantitet 5 för *FG* kommer att skapas för att leverera försäljningsordern, eftersom Planeringsoptimering alltid kommer att använda befintligt utbud eller skapa en ny planerad order för att tillhandahålla den fysiska reservationen.
 
 ## <a name="related-resources"></a>Relaterade resurser
 

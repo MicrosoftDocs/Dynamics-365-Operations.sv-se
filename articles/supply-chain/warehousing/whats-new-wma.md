@@ -2,7 +2,7 @@
 title: Vad är nytt eller ändrat i mobilappen Warehouse Management
 description: Det här ämnet visar en lista med nya och ändrade funktioner för varje frisläppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 03/11/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2544c30afe18f290b681efed1705f7cef0cb7620
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 679222005fe12009004921fa75a56145ae94c3ba
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487848"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644744"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Vad är nytt eller ändrat i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Detta ämne listar nya funktioner, korrigeringar, förbättringar och kända problem för varje släppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20210"></a>Version 2.0.21.0
+
+I den här versionen ingår följande nya funktioner, korrigeringar och förbättringar:
+
+- Har åtgärdat flera problem som kraschar.
+- Korrigerade ett problem där vissa tecken inte skulle identifieras när du skannar eller skriver på standardsidan.
+- Korrigerade ett problem med att skriva ett blanksteg på standardsidan var att radera två tecken åt gången.
+- Fast en fråga där fältet **Sortera efter** på sidan **arbetslista** skulle visa ett felaktigt värde som inte motsvarar den faktiska sorteringsordningen för korten.
+- Har åtgärdat ett problem där fel layout visas efter att appfönstret har storleksändring medan det körs Microsoft Windows.
+- Korrigerat ett problem där rullning i en popup-lista kan leda till att vissa listobjekt blir dolda eller så att de blir dolda.
+- Har gjorts om inloggningssidan så att användarnamn- och lösenordsfält visas på samma sida när den körs på större displayer.
+- Förbättrat sätt att kontrollera det som gör att kontrollerna blir snabbare.
+- Lade till en vy för fellogg för i app.
+- Har lagt till flera hjälpmedelsförbättringar (förbättrad avräkning, fasta saknade platshållare, Android aktiverade tangentbordsinmatningar för skjutreglageskontroller med mera).
 
 ## <a name="version-20200"></a>Version 2.0.20.0
 

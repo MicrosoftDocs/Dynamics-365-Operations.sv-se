@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-5-29
-ms.openlocfilehash: 65315a9fd6bc1af26bc225220e096aee4da09be2
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 16079ba5ca830625c4f18df9fe6b5b307217183d
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388169"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614054"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>Exempel på skatteregistreringstjänsten för Tyskland
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 I det här avsnittet finns en översikt över exemplet på räkenskapsintegration för Tyskland i Microsoft Dynamics 365 Commerce.
 
@@ -472,7 +471,7 @@ Konfigurationsfilen för leverantör av anslutningsprogram på **src\\FiscalInte
 
 Syftet med kassatillägget för anslutningsprogram för skatt är att kommunicera med registreringstjänsten från kassan. Det använder HTTPS-protokollet för kommunikation.
 
-#### <a name="fiscal-connector-factory"></a>Generera anslutningsprogram för skatt
+#### <a name="fiscal-connector-factory"></a>Anslutningsprogram för skatt
 
 Generatorn för anslutningsprogram för skatt mappar namne tpå anslutningsprogrammet till implementeringen av anslutningsprogrammet för skatt och finns i filen **Pos.Extension\\Anslutningsprogram\\FiscalConnectorFactory.ts**. Anslutningsprogrammets namn ska matcha namnet på anslutningsprogrammet för skatt som anges i Commerce-administration.
 

@@ -2,7 +2,7 @@
 title: Hantera affärspartnersanvändare på B2B-näthandelssajter
 description: I detta ämne beskrivs hur du lägger till, redigerar och tar bort affärspartners i Microsoft Dynamics 365 Commerce B2B-näthandelssajter och i Commerce.
 author: josaw1
-ms.date: 02/17/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: def8d4de082ceb4be77ed7e8898cbef82d52b749
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: c2fb4846a8457296a2ce758198ade5f4b0df8124
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323465"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616867"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Hantera affärspartnersanvändare på B2B-näthandelssajter
 
@@ -28,7 +28,8 @@ ms.locfileid: "8323465"
 I detta ämne beskrivs hur du lägger till, redigerar och tar bort affärspartners i Microsoft Dynamics 365 Commerce B2B-näthandelssajter och i Commerce.
 
 > [!NOTE]
-> Ämnet [Hantera B2B affärspartners med hjälp av kundhierarkier](partners-customer-hierarchies.md) är en förutsättning för detta dokument. 
+> - Ämnet [Hantera B2B affärspartners med hjälp av kundhierarkier](partners-customer-hierarchies.md) är en förutsättning för detta dokument.
+> - Se till att du initierar dokumenttypsenheten i Commerce-administration genom att öppna **Dokumenttyper** formulär på **Organisationadministration \> Dokumenthantering \> Dokumenttyper**.
 
 B2B-näthandeswebbplatser kräver att organisationerna registrerar sig som affärspartners. När en organisation har skickat registreringsinformation till en B2B-näthandelssajt, registreringsbegäran går den igenom en kvalifikationsprocess. Om organisationen har kvalificerats installeras den som affärspartner.
 

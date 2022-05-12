@@ -1,26 +1,26 @@
 ---
-title: Tjänstbeskrivning för Finance and Operations-appar
-description: Det här ämnet innehåller tjänstbeskrivning för Finance and Operations-appar.
+title: Tjänstebeskrivning för appar för ekonomi och drift
+description: Det här ämnet innehåller tjänstbeskrivning för appar för ekonomi och drift.
 author: tomhig
-ms.date: 01/05/2022
+ms.date: 04/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: cd033cfc3df21ddac5572aa70c18db5ffe26f54e
+ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952376"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8656815"
 ---
-# <a name="service-description-for-finance-and-operations-apps"></a>Tjänstbeskrivning för Finance and Operations-appar
+# <a name="service-description-for-finance-and-operations-apps"></a>Tjänstebeskrivning för appar för ekonomi och drift
 
 [!include[banner](../includes/banner.md)]
 
-Finance and Operations-program är ERP(Enterprise Resource Planning) SaaS-produkter som bygger på och för [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/). Finance and Operations-tjänsten ger organisationer ERP-funktioner som stöder deras unika behov och gör det lättare för dem att ändra företagsmiljöer utan att behöva hantera infrastruktur. Finance and Operations-appar kan omfatta ett eller flera av följande lösningsområden:
+Appar för ekonomi och drift är ERP (resursplanering för företag) SaaS-produkter som bygger på och för [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/). Ekonomi och drift-tjänsten ger organisationer ERP-funktioner som stöder deras unika behov och gör det lättare för dem att ändra företagsmiljöer utan att behöva hantera infrastruktur. Appar för ekonomi och drift kan omfatta ett eller flera av följande lösningsområden:
 
 - [Dynamics 365 Finance](/dynamics365/finance/)
 - [Dynamics 365 Human Resources](/dynamics365/human-resources/)
@@ -32,21 +32,21 @@ Tillsammans med [Business Intelligence](/power-bi/fundamentals/power-bi-service-
 
 - Inbyggd [personanpassningsupplevelse](personalize-user-experience.md)
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md)-verktyg
-- [Visual Studio](https://visualstudio.microsoft.com)-baserat [Finance and Operations SDK (software development kit)](../../dev-itpro/dev-tools/developer-home-page.md) och [Azure DevOps automatiserat bygge](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
+- [Visual Studio](https://visualstudio.microsoft.com)-baserat [Programutvecklingspaket (SDK) för ekonomi och handel](../../dev-itpro/dev-tools/developer-home-page.md) och [Azure DevOps skapa automatisering](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
 - Oberoende programvaruleverantör (ISV) från [AppSource](https://appsource.microsoft.com/partners)
 
 Utifrån kraven väljer kunderna en lösningsmetod. De arbetar med sin implementeringspartner för att definiera, utveckla och testa sin lösning genom att använda de verktyg och regelverk som finns i [Microsoft Dynamics Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs.md). Det finns fyra vanliga scenarier:
 
-- Färdig standardkonfiguration av Finance and Operations-appar (inga tillägg)
-- Finance and Operations-appkonfiguration som omfattar en eller flera ISV-lösningar
-- Finance and Operations-appkonfiguration som omfattar ett eller flera kundspecifika tillägg
-- Finance and Operations-appkonfiguration som omfattar en kombination av kundspecifika tillägg och en eller flera ISV-lösningar
+- Standardappar för ekonomi och drift "medföljande" konfiguration (inga tillägg)
+- Konfiguration av appar för ekonomi och drift som omfattar en eller flera ISV-lösningar
+- Konfiguration av appar för ekonomi och drift som omfattar en eller flera kundspecifika tillägg
+- Konfiguration av appar för ekonomi och drift som omfattar en kombination av kundspecifika tillägg och en eller flera ISV-lösningar
 
 En organisation kan matcha sin affärsutveckling genom att enkelt lägga till användare och affärsprocesser via en enkel, transparent prenumerationsmodell. Mer information finns i [Licensguide för Dynamics 365](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365).
 
 ## <a name="operating-model"></a>Driftmodell
 
-I driftmodellen för Finance and Operations-appar definieras specifika roller och ansvarsområden för kunden, implementeringspartnern och Microsoft under tjänstens livscykel. Mer information finns i [Molnåtgärder och underhåll](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md).
+I driftmodellen för appar för ekonomi och drift definieras specifika roller och ansvarsområden för kunden, implementeringspartnern och Microsoft under tjänstens livscykel. Mer information finns i [Molnåtgärder och underhåll](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md).
 
 ### <a name="customer-activities"></a>Kundaktiviteter
 
@@ -61,7 +61,7 @@ Kunderna arbetar tillsammans med sin partner och [Microsoft FastTrack](/dynamics
 
 ### <a name="microsoft-responsibilities"></a>Microsofts ansvar
 
-Microsoft hanterar Finance and Operations-tjänsten genom att distribuera, övervaka och underhålla kunder och produktionsmiljöer i Microsoft SaaS-prenumerationen. Den här hanteringen omfattar att allokera den systeminfrastruktur som krävs för att köra tjänsten och i förebyggande syfte kommunicera med kunder om tjänstens hälsa. Ansvarsområdena omfattar:
+Microsoft hanterar tjänsten för appar för ekonomi och drift genom att distribuera, övervaka och underhålla kunder och produktionsmiljöer i Microsoft SaaS-prenumerationen. Den här hanteringen omfattar att allokera den systeminfrastruktur som krävs för att köra tjänsten och i förebyggande syfte kommunicera med kunder om tjänstens hälsa. Ansvarsområdena omfattar:
 
 **Infrastrukturhantering**
 - Säkerhet och isolering
@@ -79,7 +79,7 @@ Microsoft hanterar Finance and Operations-tjänsten genom att distribuera, över
 
 ## <a name="system-configuration"></a>Systemkonfiguration
 
-Finance and Operations-appar skalas enligt transaktionsvolymen och användarbelastningen. Varje kundimplementering skapar en unik lösning som består av följande element:
+Appar för ekonomi och drift skalas enligt transaktionsvolymen och användarbelastningen. Varje kundimplementering skapar en unik lösning som består av följande element:
 
 - **Datasammansättning** – En unik uppsättning parametrar som styr beteende, layout för organisationen, strukturen på huvuddata (t.ex. ekonomiska dimensioner och lagerdimensioner) och granularitet i transaktionsspårningen.
 - **Tillägg och konfiguration** – Tilläggsmekanismer som använder kodtillägg, ISV-lösningar och unika konfigurationer som omfattar arbetsflöden, integrationer och rapportkonfigurationer.
@@ -89,11 +89,11 @@ Microsoft konfigurerar kundproduktionsmiljöer som storleksanpassas för hanteri
 
 - Korrekt allokering av resurser i produktionsmiljöer, baserat på kundens profilinformation i [LCS-prenumerationsberäkningen](../../dev-itpro/lifecycle-services/subscription-estimator.md)
 - Kontinuerlig övervakning och diagnos av produktionsmiljöers tjänsttillgänglighet
-- Analysera och felsöka problem med systemprestanda med Finance and Operations-appar
+- Analysera och felsöka problem med systemprestanda med appar för ekonomi och drift
 
 För att säkerställa att en implementering är konfigurerad för hög prestanda måste kunderna utföra följande uppgifter:
 
-- Ange korrekt användningsinformation om Finance and Operations-implementeringen i [LCS-prenumerationsberäkningen](../../dev-itpro/lifecycle-services/subscription-estimator.md).
+- Ange korrekt användningsinformation om implementering av ekonomi och drift i [LCS prenumerationsberäkning](../../dev-itpro/lifecycle-services/subscription-estimator.md).
 - Bygga och testa tillägg avseende prestanda och skala.
 - Testa datakonfigurationer för prestanda på rätt sätt.
 - Säkerställa skalbarhet genom att utföra [prestandatest](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) innan de går live.
@@ -112,17 +112,17 @@ Mer information finns i [Registrera ett implementeringsprojekt](../imp-lifecycle
 
 ## <a name="globalization"></a>Globalisering
 
-Finance and Operations-appar finns i flera Azure-regioner över hela världen. Finance and Operations-appar innehåller funktioner som stöder olika länder/regioner och modersmål. Mer information finns i [Lokaliserings- och regelfunktioner](../../dev-itpro/lcs-solutions/country-region.md#localization-and-regulatory-features).
+Appar för ekonomi och drift finns i flera Azure-regioner över hela världen. Appar för ekonomi och drift innehåller funktioner som stöder olika länder/regioner och modersmål. Mer information finns i [Lokaliserings- och regelfunktioner](../../dev-itpro/lcs-solutions/country-region.md#localization-and-regulatory-features).
 
 ### <a name="countryregion-specific-considerations"></a>Lands-/regionspecifika beaktanden
 
-- Kunder inom reglerad bransch eller handelsorganisationer som gör affärer med enheter i Frankrike som kräver lokal datahemvist ska granska [Finance and Operations i Frankrike](../../dev-itpro/deployment/france-local-deployment.md).
-- Kunder som har verksamhet i Kina ska granska [Azure Kina spelbok](/azure/china/) och [Finance and Operations drivs av 21Vianet i Kina](../../dev-itpro/deployment/china-local-deployment.md).
+- Kunder inom reglerad bransch eller handelsorganisationer som gör affärer med enheter i Frankrike som kräver lokal datahemvist ska granska [Ekonomi och drift i Frankrike](../../dev-itpro/deployment/france-local-deployment.md).
+- Kunder som har verksamhet i Kina ska granska [Azure Kina spelbok](/azure/china/) och [Ekonomi och drift som drivs av 21Vianet i Kina](../../dev-itpro/deployment/china-local-deployment.md).
 - Kunder som har verksamhet i Ryssland ska granska [Rysk lokaliseringslag för personuppgifter](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia)
 
 ### <a name="general-data-protection-regulation-gdpr"></a>Allmänna dataskyddsförordningen (GDPR)
 
-För Finance and Operations-appar fungerar Microsoft som personuppgiftsbiträde. Som personuppgiftsbiträde har Finance and Operations processer och funktioner som hjälper kunder att följa GDPR-krav som personuppgiftsbiträde. Mer information finns i [GDPR – översikt](../../dev-itpro/gdpr/gdpr-guide.md).
+När det gäller appar för ekonomi och drift fungerar Microsoft som ett företag. Som personuppgiftsbiträde har ekonomi och drift-processer och funktioner som hjälper kunder att följa GDPR-krav som personuppgiftsbiträde. Mer information finns i [GDPR – översikt](../../dev-itpro/gdpr/gdpr-guide.md).
 
 ## <a name="environment-and-data-management"></a>Miljö- och datahantering
 
@@ -182,7 +182,7 @@ LCS tillhandahåller [självbetjäningetablering](../../dev-itpro/deployment/inf
 
 ## <a name="data-backup-and-retention"></a>Säkerhetskopiering och kvarhållning av data
 
-Databaser för Finance and Operations-miljöer i SaaS-prenumerationen skyddas av automatiska säkerhetskopieringar. För produktionsmiljöer sparas automatiska säkerhetskopieringar i 28 dagar om inte Microsoft gör en återtagning. För sandbox-miljöer (Tier 2+) finns de kvar i sju dagar. Ett återtag av produktionsmiljön kan utföras om ett fel inträffar under en planerad underhållsuppdatering.
+Databaser för ekonomi- och drift-miljöer i SaaS-prenumerationen skyddas av automatiska säkerhetskopieringar. För produktionsmiljöer sparas automatiska säkerhetskopieringar i 28 dagar om inte Microsoft gör en återtagning. För sandbox-miljöer (Tier 2+) finns de kvar i sju dagar. Ett återtag av produktionsmiljön kan utföras om ett fel inträffar under en planerad underhållsuppdatering.
 
 Mer information om automatiska säkerhetskopieringar finns i [Automatiserad säkerhetskopiering - Azure SQL-databas & SQL Managed Instance](/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
 
@@ -228,13 +228,13 @@ I tabellen nedan beskrivs några typiska scenarier och aktiviteter för tjänste
 
 ## <a name="service-update-strategy"></a>Strategi för tjänstuppdatering
 
-I enlighet med [livscykelpolicyn för programvara](../../dev-itpro/migration-upgrade/versions-update-policy.md) följer Finance and Operations-appar Microsofts [Modern Lifecycle Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy) som omfattar produkter som kontinuerligt servas och stöds. 
+I enlighet med [livscykelpolicyn för programvara](../../dev-itpro/migration-upgrade/versions-update-policy.md), appar för ekonomi och drift följer du Microsoft [Modern Lifecycle Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy), som omfattar produkter som kontinuerligt servas och stöds. 
 
-Microsoft släpper åtta tjänstuppdateringar för Finance and Operations-appar varje år under följande månader:
+Microsoft släpper åtta tjänstuppdateringar för appar för ekonomi och drift varje år under följande månader:
 
-- Januari
-- Februari
-- April
+- januari
+- februari
+- april
 - maj
 - Juli
 - Augusti
@@ -255,7 +255,7 @@ Mer information finns i följande ämnen:
 
 ## <a name="security-and-administrative-access"></a>Säkerhet och administrativ åtkomst
 
-Administrativ åtkomst till en Finance and Operations-produktionsmiljö kontrolleras och loggas strikt. Kunddata hanteras i enlighet med [villkoren för Microsofts onlinetjänster](https://www.microsoft.com/licensing/terms/productoffering). 
+Administrativ åtkomst till en ekonomi och drift-produktionsmiljö kontrolleras och loggas strikt. Kunddata hanteras i enlighet med [villkoren för Microsofts onlinetjänster](https://www.microsoft.com/licensing/terms/productoffering). 
 
 ### <a name="customer-administrative-access"></a>Kunds administrativa åtkomst
 
@@ -264,7 +264,7 @@ Kundens klientorganisationsadministratör kan komma åt produktionsinstanser ell
 | Miljötyp | Syfte | Åtkomstnivå för kunder |
 |---|---|---|
 | **Icke-produktion**<br>Nivå 1 sandbox-miljö | En miljö som inte är produktionsmiljö som kunder distribuerar för utveckling, demonstration eller utbildning. | En Nivå 1 sandbox-miljö (kallas även molnbaserad miljö) är en kundhanterad VM som distribueras till kundens Azure-prenumeration från LCS. Eftersom det är en virtuell dator i kundens Azure-prenumeration har kunden fullständig administrativ åtkomst till miljön via Remote Desktop. |
-| **Icke-produktion**<br>Nivå 2 (eller högre) sandbox-miljö | En miljö som inte är produktionsmiljö där kunder distribuerar för testning av användargodkännande, integrationstester, utbildning, mellanlagring eller andra scenarion som gäller för förproduktion. | Nivå 2 och högre sandbox-miljöer distribueras till Finance and Operations SaaS-prenumerationen. Åtkomst till Azure SQL-databaser som är associerade med den icke-produktionsmiljön beviljas via [just-in-time-åtkomst](../../dev-itpro/database/database-just-in-time-jit-access.md). Remote Desktop-åtkomst är inte tillgänglig. |
+| **Icke-produktion**<br>Nivå 2 (eller högre) sandbox-miljö | En miljö som inte är produktionsmiljö där kunder distribuerar för testning av användargodkännande, integrationstester, utbildning, mellanlagring eller andra scenarion som gäller för förproduktion. | Nivå 2 och högre sandbox-miljöer distribueras till ekonomi och drift SaaS-prenumerationen. Åtkomst till Azure SQL-databaser som är associerade med den icke-produktionsmiljön beviljas via [just-in-time-åtkomst](../../dev-itpro/database/database-just-in-time-jit-access.md). Remote Desktop-åtkomst är inte tillgänglig. |
 | **Produktion** | En produktionsmiljö distribueras när projektet är [klart för initial publicering](/imp-lifecycle/environment-planning.md#production-system-readiness). | Produktionsmiljöer distribueras till SaaS-prenumerationen. All åtkomst går via webbläsaren, tjänsteslutpunkter eller LCS. |
 
 ### <a name="microsoft-administrative-access"></a>Microsofts administrativa åtkomst
@@ -296,7 +296,7 @@ Mer information om allvarlighetsnivåer finns i [den här allvarlighetstabellen]
 
 ## <a name="business-continuity-through-high-availability-and-disaster-recovery"></a>Verksamhetskontinuitet genom hög tillgänglighet och haveriberedskap 
 
-Microsoft tillhandahåller affärskontinuitet och haveriberedskap för produktionsinstanser av Finance and Operations-appar i händelse av Azure-regionomfattande avbrott. Mer information finns i [Affärskontinuitet och haveriberedskap](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md).
+Microsoft tillhandahåller affärskontinuitet och haveriberedskap för produktionsinstanser av appar för ekonomi och drift i händelse av Azure-regionomfattande avbrott. Mer information, inklusive RTO (Service Recovery Time Objective) och Recovery Point Objective (RPO) finns i [affärskontinuitet och haveriberedskap](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md).
 
 - **Hög tillgänglighet** – HA-funktionaliteten innehåller sätt att förhindra avbrott som orsakas av att en enstaka nod i en Azure-resurs misslyckas. Varje tjänsts molnarkitektur använder Azure-tillgänglighetsuppsättningar för beräkningsskiktet för att förhindra händelser med fel vid enstaka punkter. HA för databaser tillhandahålls via [Azure SQL HA-funktioner](/azure/azure-sql/database/high-availability-sla).
 - **Haveriberedskap** – [Funktioner för Azure-haveriberedskap](/azure/best-practices-availability-paired-regions) skyddar varje tjänst mot avbrott som påverkar ett hel Azure-datacenter. Här följer några av dessa funktioner:
@@ -305,28 +305,19 @@ Microsoft tillhandahåller affärskontinuitet och haveriberedskap för produktio
     - Georedundanta kopior av Azure Blob Storage (som innehåller dokumentbilagor) i andra Azure-regioner.
     - Sekundär region för Azure SQL- och Azure Blob Storage-replikeringar.
 
-Primära datalager stöds för replikering. Därför används transformerade data från den primära databasen för komponenter för varje tjänst, t.ex. Management Reporter och enhetsarkiv. Dessa data måste genereras efter att återställningsplatsen har konfigurerats och tjänsten har startats. Kundkodsartefakter och återställda datalager används för att omdistribuera platsen. Med omdistribueringen går det att använda tillståndsreplikering av beräkningsnoderna, tillsammans med nätverk och andra komponenter, för att använda återställda datalager för att konfigurera den sekundära platsen. Om haveriberedskap används för att återställa kundens produktionsinstans, kommer Microsoft och kunden att uppfylla sina ansvarsområden [för incidenthantering](service-description.md#incident-management).
+Om haveriberedskap används för att återställa kundens produktionsinstans, kommer Microsoft och kunden att uppfylla sina ansvarsområden [för incidenthantering](service-description.md#incident-management).
 
-Microsofts haveriberedskapsplaner och procedurer undersöks regelbundet genom SOC-granskningar (System and Organization Controls). Dessa efterlevnadskontroller granskar den tekniska och procedurmässiga processen för Microsofts DR, inklusive Dynamics 365 Finance and Operations-appar. [SOC-efterlevnad](/compliance/regulatory/offering-soc-2) granskningsrapporter och alla andra efterlevnadsrapporter finns tillgängliga i [efterföljandeerbjudanden för Microsoft Trust Center](/compliance/regulatory/offering-home).
+Microsofts haveriberedskapsplaner och procedurer undersöks regelbundet genom SOC-granskningar (System and Organization Controls). Dessa efterlevnadskontroller granskar den tekniska och procedurmässiga processen för Microsofts DR, inklusive Dynamics 365-appar för ekonomi och drift. [SOC-efterlevnad](/compliance/regulatory/offering-soc-2) granskningsrapporter och alla andra efterlevnadsrapporter finns tillgängliga i [efterföljandeerbjudanden för Microsoft Trust Center](/compliance/regulatory/offering-home).
 
-| Microsofts ansvar | Kundens ansvar |
-|---|---|
-| Microsoft tillhandahåller en sekundär miljö i Azure-kopplade datacenter när den primära produktionsinstansen distribueras. Mer information finns i [Affärskontinuitet och haveriberedskap (BCDR): Azure-kopplade regioner](/azure/best-practices-availability-paired-regions). | None |
-| Microsoft aktiverar georedundans av Azure SQL och Azure Blob Storage när den primära produktionsinstansen distribueras. | None |
-| Microsoft aktiverar automatisk säkerhetskopiering av Azure SQL-databaser. | None |
-| <p>När ett avbrott inträffar bestämmer Microsoft om en redundans måste utföras för kunden och om data går förlorade. Kunder kan förlora data på upp till 15 minuter beroende på typen av och tidpunkten för avbrottet. | I händelse av dataförlust måste kunden eventuellt tillhandahålla skriftligt godkännande för att utlösa redundansen. |
-| När en redundans inträffar fungerar tjänsten i begränsat läge. Uppdateringsunderhåll kan inte utlösas i redundansläge. | Kunden kan inte begära paketdistributioner eller andra regelbundna underhållsbegäranden i redundansläge. |
-| När datacentret tas i drift Microsoft återställer tillbaka till produktionsinstansen i den primära Azure-regionen. Normal verksamhet återupptas. | Kunden kanske måste godkänna återställning till produktionsinstansen i den primära Azure-regionen. |
+## <a name="finance-and-operations-support-offerings"></a>Erbjudanden om stöd för ekonomi och drift
 
-## <a name="finance-and-operations-support-offerings"></a>Finance and Operations-supporterbjudanden
-
-Teknisk support finns på marknader där Finance and Operations-tjänster erbjuds. [Supportupplevelser](../../dev-itpro/lifecycle-services/lcs-support.md) tillhandahålls i LCS och Finance and Operations-appar. Nedan följer några exempel:
+Teknisk support finns på marknader där ekonomi och drift-tjänster erbjuds. [Stödupplevelser](../../dev-itpro/lifecycle-services/lcs-support.md) tillhandahålls i LCS eller appar för ekonomi och drift. Nedan följer några exempel:
 
 - [Problemsökning](../../dev-itpro/lifecycle-services/issue-search-lcs.md) i LCS
-- [Integrerad teknisk support](../../dev-itpro/lifecycle-services/support-experience.md) i Finance and Operations-appar
+- [Integrerad teknisk support](../../dev-itpro/lifecycle-services/support-experience.md) i appar för ekonomi och drift
 - [Molnbaserad support](../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md) i LCS
 
-Microsoft erbjuder Finance and Operations-kunderna tre supportplaner: Premier, Professional Direct och det support som ingår i prenumerationen. Supportnivån varierar per plan. Följande tabell visar en jämförelse av de tre planerna.
+Microsoft erbjuder ekonomi och drift-kunderna tre supportplaner: Premier, Professional Direct och det support som ingår i prenumerationen. Supportnivån varierar per plan. Följande tabell visar en jämförelse av de tre planerna.
 
 | Supportfunktion | Premier | Professional Direct | Abonnemang |
 |---|---|---|---|
@@ -341,7 +332,7 @@ Mer information finns i [Supportöversikt](/power-platform/admin/support-overvie
 
 ### <a name="process-to-engage-support"></a>Process för att engagera support
 
-I händelse av incidenter som involverar Finance and Operations-appar skickar kunderna supportärenden till Microsoft via LCS. CSS hanterar incidenterna utifrån kundens supportplan och hur allvarliga incidenten är enligt CSS
+I händelse av incidenter som involverar appar för ekonomi och drift skickar kunderna supportärenden till Microsoft via LCS. CSS hanterar incidenterna utifrån kundens supportplan och hur allvarliga incidenten är enligt CSS
 
 ### <a name="service-level-agreement"></a>Servicenivåavtal
 
@@ -349,7 +340,7 @@ Microsoft är engagerade i en tillgänglighetsgrad på 99,9 procent per månad f
 
 ## <a name="important-resources"></a>Viktiga resurser
 
-- **[Trust Center](https://www.microsoft.com/trust-center)** – Hämta information om var dina Finance and Operations-data lagras, plus ytterligare information om sekretess, efterlevnad och säkerhetsprocedurer.
+- **[Trust Center](https://www.microsoft.com/trust-center)** – Hämta information om var dina ekonomi och drift-data lagras, plus ytterligare information om sekretess, efterlevnad och säkerhetsprocedurer.
 - **[Licensvillkor och -dokumentation](https://www.microsoftvolumelicensing.com/)** – Snabbt få åtkomst till licensvillkor, villkor och ytterligare information som är relevant för användningen av produkter och tjänster som licensieras via Microsofts volymlicensprogram.
 - **[Licensvillkor](https://www.microsoft.com/licensing/product-licensing/)** – Resurserna på den här sidan definierar villkoren för programvaran och onlinetjänsternas produkter som du köper via Microsofts kommersiella licensieringsprogram.
 - **[Microsofts livscykelpolicy](/lifecycle/)** – På den här sidan finns enhetliga och förutsägbara riktlinjer för support under en produkts livscykel.
@@ -366,7 +357,7 @@ En geografisk region där det finns ett eller flera Azure-datacenter. Exempel p�
 
 ### <a name="business-process-modeler-bpm"></a>[Affärsprocessmodelleraren (BPM)](../../dev-itpro/lifecycle-services/bpm-overview.md)
 
-Ett verktyg i LCS som gör det lättare att göra en bristanalys för en given implementering med hjälp av affärsprocessdefinitioner från amerikansk produktivitet och kvalitetscenter (APQC) som stöds i Finance and Operations-appar.
+Ett verktyg i LCS som gör det lättare att göra en bristanalys för en given implementering med hjälp av affärsprocessdefinitioner från amerikansk produktivitet och kvalitetscenter (APQC) som stöds i appar för ekonomi och drift.
 
 ### <a name="cloud-solution-provider"></a>Leverantör av molnbaserad lösning
 
@@ -374,7 +365,7 @@ En partner som ingår i CSP-programmet (Microsoft molnbaserad lösningsleverant�
 
 ### <a name="customer"></a>Kund
 
-En företagsenhet som använder Finance and Operations-appar och representeras av en klientorganisation i Office 365.
+En företagsenhet som använder appar för ekonomi och drift och representeras av en klientorganisation i Office 365.
 
 ### <a name="development-environment"></a>Utvecklingsmiljö
 
@@ -386,19 +377,19 @@ En period när användare inte kan logga in eller få åtkomst till sin aktiva k
 
 ### <a name="implementation-partner"></a>Implementeringspartner
 
-Den partner som kunden väljer för att anpassa, konfigurera, implementera och hantera sina Finance and Operations-lösningar.
+Den partner som kunden väljer för att anpassa, konfigurera, implementera och hantera sina ekonomi och drift-lösningar.
 
 ### <a name="incident"></a>Incident
 
-Ett problem som kunderna stöter på när de använder Finance and Operations-tjänsten och som de skickar in en ärende för via LCS.
+Ett problem som kunderna stöter på när de använder ekonomi och drift-tjänsten och som de skickar in en ärende för via LCS.
 
 ### <a name="microsoft-customer-support-services-css"></a>Microsoft Customer Support Services (CSS)
 
-Microsofts globala supportteam som arbetar med kvalitetsservice för Finance and Operations-appar.
+Microsofts globala supportteam som arbetar med kvalitetsservice för appar för ekonomi och drift.
 
 ### <a name="microsoft-dynamics-lifecycle-services-lcs"></a>Microsoft Dynamics Lifecycle Services (LCS)
 
-Den administrativa portal för livscykelhantering av Finance and Operations-appar från utvärdering, till implementering, hantering av och support efter produktion. Mer information finns i [Lifecycle Services-resurser](../../dev-itpro/lifecycle-services/lcs.md).
+Den administrativa portal för livscykelhantering av appar för ekonomi och drift från utvärdering, till implementering, hantering av och support efter produktion. Mer information finns i [Lifecycle Services-resurser](../../dev-itpro/lifecycle-services/lcs.md).
 
 ### <a name="non-production-instance"></a>Icke-produktionsinstans
 
@@ -412,7 +403,7 @@ Mer information om Nivå 2 till 5 finns i [Välja korrekt nivå-2 eller högre m
 
 ### <a name="production-instance"></a>Produktionsinstans
 
-En Finance and Operations-miljö som kunden använder för att hantera "live" dagliga transaktioner och affärsprocesser.
+En ekonomi och drift-miljö som kunden använder för att hantera "live" dagliga transaktioner och affärsprocesser.
 
 ### <a name="sandbox-environment"></a>Sandbox-miljö
 
@@ -420,7 +411,7 @@ En icke-produktionsmiljö som kunden använder för demonstration, utbildning, a
 
 ### <a name="service"></a>Service
 
-Alla kärntjänster som ingår i Finance and Operations-apparna.
+Alla kärntjänster som ingår i appar för ekonomi och drift.
 
 ### <a name="service-level-agreement-sla-for-microsoft-online-services"></a>Servicenivåavtal (SLA) för Microsofts onlinetjänster
 
@@ -428,7 +419,7 @@ Serviceavtalet gäller för Microsofts onlinetjänster. Mer information finns i 
 
 ### <a name="service-update"></a>Tjänsteuppdatering
 
-Microsoft-tjänsters Finance and Operations-miljöer på enhetlig bas med hjälp av serviceuppdateringar. Kunder ställer in sin egen serviceuppdateringskalender utifrån verksamhetens behov. Mer information i [Tjänstuppdateringar för en version](../../dev-itpro/lifecycle-services/oneversion-overview.md).
+Microsoft-tjänsters ekonomi och drift-miljöer på enhetlig bas med hjälp av serviceuppdateringar. Kunder ställer in sin egen serviceuppdateringskalender utifrån verksamhetens behov. Mer information i [Tjänstuppdateringar för en version](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
 ### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
 
@@ -436,4 +427,4 @@ Det ramverk som systematiskt styr implementeringen genom en serie bedömningar v
 
 ### <a name="user"></a>Användare
 
-En person som använder Finance and Operations-miljöer och som är associerad med en kunds klientorganisation.
+En person som använder ekonomi och drift-miljöer och som är associerad med en kunds klientorganisation.

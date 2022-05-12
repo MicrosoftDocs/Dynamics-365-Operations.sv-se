@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7f765e7cfd97170bd144dfff12c18ced96e3332a
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 3c9b9602e5c219be5756f5987b0497f2ce5c269d
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533724"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644314"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Periodisera planer för tjänstledighet och frånvaro
 
@@ -105,8 +105,10 @@ Ta bort periodiseringsposter för ett specifikt plan- och datumintervall. Period
 **Granskning av periodisering av tjänstledighet** visas varje gång du kör eller tar bort en periodisering för en eller alla medarbetare. Datumet och personen som utförde åtgärden visas också.
 
 1. På sidan **tjänstledighet och frånvaro** välj fliken **Länkar**.
-
 2. Under **Hantera tjänstledighet**, välj **Ta bort granskning av periodisering av tjänstledighet**.
+
+## <a name="leave-accrual-rounding"></a>Runda av periodiserad ledighet
+När en medarbetare är anmäld eller ej anmäld låter du runda av periodiserad ledighet vara periodiserad. Tidigare var avrundning endast tillåten när en ledighetsplan var inställd på proportionell och en anställd anmäld/avanmäld under mitten av perioden. Tjänstledigheten kommer nu att avrundas oavsett anmälan/avanmälan i mitten av perioden eller i början av en period.
 
 ## <a name="leave-accrual-transaction-auditing"></a>Granskning av periodiseringstransaktion för tjänstledighet
 

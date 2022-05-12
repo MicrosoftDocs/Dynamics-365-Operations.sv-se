@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71e87b1102e21e035c25af4c63245eaaa59e4babb82bcf59c5cfba48f7d114f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 101cbcc77b2e1eab9fb4b6724fc5e3e8925a54c5
+ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749062"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8629478"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Skapa leverantörsbetalningar med ett betalningsförslag
 
@@ -48,7 +48,7 @@ Betalningsförslagfrågan innehåller olika flikar, som var och en har olika alt
 - **Inkludera leverantörsfakturor från andra juridiska personer** – Om din organisation har en centraliserad process för betalning, och betalningsförslaget skulle innehålla fakturor från andra juridiska personer som inkluderas i sökkriteriet, anger du detta alternativ till **Ja**.
 - **Föreslå leverantörsbetalning per separat juridisk person** – Om det här alternativet anges till **Ja**, skapas en separat betalning för varje juridisk person per leverantör. Leverantören för betalningen är leverantören från fakturan från varje juridisk person. Om det här alternativet anges till **Nej**, och en leverantör har fakturor som ska betalas i flera juridiska personer skapas en betalning för det totala beloppet på de markerade fakturorna. Leverantören för betalningen är leverantören i den aktuella juridiska personen. Om leverantörskontot inte finns i den aktuella juridiska personen används leverantörskontot för den första fakturan som måste betalas.
 - **Betalningsvaluta** – Det här fältet anger den valuta som alla betalningar skapas i. Om en valuta inte har definierats, betalas varje faktura i valutan för fakturan.
-- **Veckodag för betalning** Ange dagen i veckan då betalningen ska göras. Det här fältet används bara om betalsättet ställs in på totala antalet fakturor för betalning på en viss dag i veckan.
+- **Betalningsvecka** – Ange den veckodag då betalningen ska göras. Det här fältet används endast om betalningsmetoden är inställd på **Vecka**. Betalningsbeloppet för fakturor summeras den angivna veckodagen för betalning.
 - **Motkontotyp** och **Motkonto** – Ange dessa fält för att definiera en viss kontotyp (t.ex **Redovisning** eller **Bank**) och motkonto (t.ex ett specifikt bankkonto). Betalsättet för fakturan definierar standardmotkontotyp och motkonto, men du kan använda fälten för att åsidosätta standardvärdena.
 - **Summerat betalningsdatum** – detta används endast när fältet **Period** på betalsättet är inställt på **totala**. Om ett datum anges, skapas alla betalningar på detta datum. Fältet **Tidigaste betalningsdatum** ignoreras.
 - **Ytterligare filter** – På snabbfliken **Poster som ska ingå** definierar du ytterligare intervallkriterier. Om du till exempel bara vill betala ett visst leverantörsintervall kan du definiera ett filter för leverantörsintervallet. Den här funktionen används ofta för att välja fakturor för en specifik betalningsmetod. Om du till exempel definierar ett filter där **Betalningsmetod** = **Check** kommer endast fakturor som har denna betalningsmetod att väljas ut för betalning, förutsatt att de även uppfyller andra kriterier som angetts i frågan.

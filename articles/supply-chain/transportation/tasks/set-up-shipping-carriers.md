@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e9bc4fefb6aabc0b93d4d96f5930590ef99235b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 38bf1f9f201e7f34e6a7ea76fbef399ba94caafa
+ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567666"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8660391"
 ---
 # <a name="set-up-shipping-carriers"></a>Konfigurera transportföretag
 
@@ -27,8 +27,8 @@ ms.locfileid: "7567666"
 
 I det här avsnittet beskrivs hur du ställer in ett transportföretag och definierar detaljer som tjänster, leveranssätt, transportanbud, transportbegränsningar och leveranskostnader. En transportkoordinator kan sedan tilldela ett transportföretag till en inkommande eller utgående beläggning.
 
-
 ## <a name="create-a-new-shipping-carrier"></a>Skapa ett nytt transportföretag
+
 1. Gå till **Navigeringsfönster > Moduler >Transporthantering > Inställningar > Transportföretag > Transportföretag**.
 2. Välj **Ny** i åtgärdsfönstret.
 3. Skriv ett värde i fältet **Transportföretag**.
@@ -36,6 +36,7 @@ I det här avsnittet beskrivs hur du ställer in ett transportföretag och defin
 5. I fältet **Metod** väljer du ett alternativ i den nedrullningsbara menyn.
 
 ## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a>Fyll i den allmänna informationen för transportföretaget
+
 1. Växla expanderingen av avsnittet **Översikt**.
 2. Markera eller avmarkera kryssrutan **Aktivera transportföretag**.
 3. I fältet **Leverantörskonto** väljer du ett alternativ i den nedrullningsbara menyn. Välj det leverantörskonto som du vill tilldela transportföretaget till.  
@@ -43,13 +44,16 @@ I det här avsnittet beskrivs hur du ställer in ett transportföretag och defin
 5. Markera eller avmarkera kryssrutan **Aktivera värdering av transportföretag**.
 
 ## <a name="create-the-necessary-services-for-the-shipping-carrier"></a>Skapa nödvändiga tjänster för det transportföretaget
+
 1. Växla expanderingen av avsnittet **Tjänster**.
 2. Välj **Ny**.
 3. Skriv ett värde i fältet **Transportföretagstjänst**.
 4. Skriv ett värde i fältet **Namn**.
-5. I fältet **Transportmetod** väljer du ett alternativ i den nedrullningsbara menyn.
+5. I fälten **Lastmall-ID** välj en laddningsmall att associera med tjänsten. Beläggningsmallen definierar maximala mått för vikt och volym för hela beläggningen. Beläggningsmallen kan till exempel representera storleken på en behållare eller en lastbil. Lastmalls-ID anges också i lastbyggnadsmallar och när du använder [lastuppbyggnadsworkbench](load-building-workbench.md), som hjälper dig att tillämpa lastbyggande strategier för att skapa laster. Följden blir att systemet kan matcha varje ny beläggning mot en lämplig transportföretagstjänst genom att jämföra de angivna beläggningsmall-ID:erna.
+6. I fältet **Transportmetod** väljer du ett alternativ i den nedrullningsbara menyn.
 
 ## <a name="set-up-the-address-for-the-carrier-optional"></a>Ställ in för adress för transportföretaget (valfritt)
+
 1. Växla utökningen av avsnittet **Adresser** .
 2. Välj **Ny**.
 3. Skriv ett värde i fältet **Namn eller beskrivning**.
@@ -59,6 +63,7 @@ I det här avsnittet beskrivs hur du ställer in ett transportföretag och defin
 7. Välj **OK**.
 
 ## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a>Ställa in bedömningsprofil för transportföretaget
+
 1. Växla expanderingen av avsnittet **Bedömningsprofiler**.
 2. Välj **Ny**.
 3. Skriv ett värde i fältet **Bedömningsprofil**.

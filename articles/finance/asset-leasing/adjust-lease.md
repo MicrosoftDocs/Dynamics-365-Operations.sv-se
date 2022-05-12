@@ -2,7 +2,7 @@
 title: Justera leasingar
 description: Ämnet förklarar hur du justerar en leasing. Justering kan krävas om leasingvillkoren ändras, leasingen utökas eller andra omständigheter ändras.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1016b69fd59bbe90924996f5c931cb5d0f779253de66f5f3821a8c3001d3313b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7d7151c28d124420638dc4e69a8ab5359ecf443c
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729664"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644567"
 ---
 # <a name="adjust-leases"></a>Justera leasingar
 
@@ -134,5 +134,19 @@ Om en leasing har justerats kan du visa olika versioner av den. Du kan också vi
 2. Om du vill visa historiska planer öppnar du den ändrade leasingen från sidan **Sammanfattning av leasing**, väljer önskad bok och väljer sedan **Versionshistorik för bok** i åtgärdsfönstret.
 3. På sidan **Bokversion** väljer du en version och plan att visa.
 
+## <a name="adjust-a-lease-book"></a>Justera leasingbok 
+
+Följ dessa steg för att justera enbart en leasingbok.
+
+1. Gå till **Leasing av tillgångar** \> **Leasing** \> **Sammanfattning av leasing**.
+2. Välj och öppna ett leasingavtal.
+3. Välj **Böcker** på sidan **Leasingdetaljer**.
+4. På sidan **Böcker detaljer** i åtgärdsfönstret i **Underhåll** välj **Justera bokföring**. 
+5. Ta bort betalningsplansraderna.
+6. I fältet **Ändringsdatum för leasingavtal** ange ändringsdatumet. Överväg sedan att ta bort alla ytterligare synpunkter på tillgångar/skulder (direkt utgift, leasingskuld, förskottsbetalningar för leasingavtal, ansvarskostnad och garanti för kvarstående värde), om det finns några. 
+7. Bidra till att förhindra felaktiga beräkningar för leasingjustering genom att lägga till nya leverantörsbetalningsplan för de nya betalningsdatum som matchar ändringsdatumet. 
+
+> [!NOTE] 
+> Vi rekommenderar att du använder guiden **Justera leasingavtalet** när du justerar ett leasingavtal. Guiden minskar antalet manuella steg, visar en förhandsgranskning av saldona efter justeringen och gör att du kan ändra beloppen innan du bokför.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

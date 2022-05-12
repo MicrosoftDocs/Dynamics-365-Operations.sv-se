@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 642ba812156a95e9b0be2e996d4a93096a5809a9
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c73587015d6714c409819ab19ad68685aaa71cf7
+ms.sourcegitcommit: 70289a33b0a6ff3f9418d91a928db452cfd815bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468340"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8618272"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Skillnader mellan inbyggd huvudplanering och Planeringsoptimering
 
@@ -37,6 +37,7 @@ Resultatet från Planeringsoptimering kan skilja sig från resultaten från den 
 | Pegging av säkerhetslager och nettobehov | Kravtypen *säkerhetslager* ingår inte och visas inte på sidan **Nettobehov**. Säkerhetslager representerar inte efterfrågan och har inget behovsdatum kopplat. I stället begränsar det hur mycket lager som alltid måste finnas i lager. Fältvärdet **Minimum** beaktas fortfarande vid beräkning av planerade order under masterplanering. Vi rekommenderar att du inspekterar kolumnen **Ackumulerad kvantitet** på sidan **Nettobehov** för att se att detta värde beaktades. |
 | Transportkalendrar | Värdet i kolumnen **Transportkalender** på sidan **Leveranssätt** ignoreras. |
 | Minsta/högsta disponeringskod utan värden| Med den inbyggda planeringsmotorn behandlas disponeringskoden som ett behov när du använder en minsta/högsta disponeringskod där inga minimi- eller maximivärden anges, och en order skapas för respektive behov. Med planeringsoptimering skapar systemet en order per dag för att täcka hela beloppet för den dagen.  |
+| Nettobehov och manuellt skapade planerade order | Med den inbyggda planeringsmotorn visas manuellt skapade leveransorder för en artikel automatiskt bland nettobehoven för artikeln. När du till exempel skapar en inköpsorder från en försäljningsorder visas inköpsordern på sidan **Nettobehov** utan att föregående åtgärder krävs. Det beror på att den inbyggda planeringsmotorn loggar lagertransaktioner i `inventLogTTS` registret och visar ändringar på sidan **nettobehov** för dynamiska planer. Med Planeringsoptimering kommer emellertid manuellt skapade order inte att visas bland nettobehoven för en artikel förrän Planeringsoptimering körs (med hjälp av en plan som inkluderar artikeln), eller innan du väljer **Uppdatera \> Huvudplanering** i åtgärdsfönstret på sidan **Nettobehov**, som kommer att köra huvudplanering för objektet. Mer information om hur du arbetar med sidan finns på sidan **Nettobehov**, se [Nettobehov och pegging-information med Planeringsoptimering](net-requirements.md). |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

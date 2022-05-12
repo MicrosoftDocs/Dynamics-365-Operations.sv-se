@@ -2,7 +2,7 @@
 title: Hantera SEO-metadata
 description: I det här avsnittet beskrivs hur du hanterar SEO-metadata (Search Engine Optimization) i Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 04/14/2020
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 06d2da60695be499971904451fd56fb8a64dfd64c9192d93f87ababb349e9378
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d6f56968e9adfe90142955cba8e6c7ecc50fc92
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751577"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644769"
 ---
 # <a name="manage-seo-metadata"></a>Hantera SEO-metadata
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 I det här avsnittet beskrivs hur du hanterar SEO-metadata (Search Engine Optimization) i Microsoft Dynamics 365 Commerce.
 
@@ -62,17 +63,21 @@ Dynamics 365 Commerce gör att du kan hantera SEO-metadata för enskilda sidor. 
 ### <a name="modify-page-metadata"></a>Ändra metadata för sidan
 
 Om du vill ändra metadata, följ dessa steg.
-
 1. Under **Webbplatser**, välj **Fabrikam** (eller namet på webbplatsen).
 1. I navigeringsfönstret till vänster, välj **sidor**.
 1. Välj startsidan för att öppna den i sidredigeraren.
 1. Klicka på **Redigera** i kommandofältet.
-1. I fönstret Egenskaper till höger, visa **Standardmetataggar**.
-1. Om du vill lägga till en ny metatagg väljer du **Lägg till** och anger sedan taggen i fältet. Om du vill ta bort en befintlig metatagg markerar du papperskorgen till höger om den.
+1. I sidredigeraren, högst upp på sidkonturkontrollen till vänster, välj **Dispositionslägesalternativ** (växelsymbol) och välj **Avancerad dispositionsvy**.
+1. Utvidga trädkontrollerna i huvudvyn så att innehållet på **HTML-huvud** visas.
+1. I **HTML-huvud** plats, välj önskad SEO-modul (till exempel **Sidsammanfattning**, **Sammanfattning för produktsida**, **Sammanfattning av kategorisida** eller **Metataggar**).
+1. I egenskapsrutan till höger, redigera önskad SEO-data för den valda SEO-modulen (till exempel, **Rubrik**, **Beskrivning** eller **Dela bild**).
 1. Välj **spara** och välj sedan **Avsluta redigeringen**.
-1. I fältet **kommentarer** anger du **Uppdaterade metataggar** och sedan **OK**.
+1. I fältet **kommentarer** anger du **Uppdaterade SEO-data** och sedan **OK**.
 1. Välj **Förhandsgranska** om du vill förhandsgranska din sida. När du är klar kan du stänga fliken förhandsgranskning och återgå till redigeringsverktyget.
 1. Markera **Publicera**.
+
+> [!TIP]
+> Författare kan använda alternativet **Dispositionslägesalternativ** (kugghjulssymbolen) överst på den vänstra konturkontrollen i sidredigeraren för att växla mellan **Grundläggande dispositionsvy** och **Avancerad dispositionsvy**. **Den grundläggande dispositionsvyn** är standardinställningen och filtrerar dispositionen så att endast moduler på **brödtext**-HTML-platsen visas för en sida. **Avancerad dispositionsvy** visar hela sidmodulen, inklusive **HTML-huvud**, **brödtextens början** och **brödtextens slut**. Denna vy är användbar när författare måste redigera specifika SEO- eller skriptmodulinställningar för en sida.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

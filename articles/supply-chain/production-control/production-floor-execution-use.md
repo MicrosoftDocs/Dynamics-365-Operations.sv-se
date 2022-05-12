@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: a677eb71f97a953c625a1f667b055e5b7696fbe6
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f163b8feb906470f31a648bf09abf5647c5f1bab
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384435"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645002"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hur arbetare använder körningsgränssnittet för produktionsgolvet
 
@@ -74,9 +74,9 @@ Listan med aktiva jobb har följande kolumner:
 
 ## <a name="my-jobs-tab"></a>Fliken Mina jobb
 
-Fliken **Mina jobb** gör det enkelt för medarbetarna att visa alla icke-startade och icke-definierade jobb som har tilldelats enkom för dem. Det är användbart i företag där jobb ibland eller alltid tilldelas till specifika medarbetare (personal) istället för andra typer av resurser (till exempel maskiner). 
+Fliken **Mina jobb** gör det enkelt för medarbetarna att visa alla icke-startade och icke-definierade jobb som har tilldelats enkom för dem. Det är användbart i företag där jobb ibland eller alltid tilldelas till specifika medarbetare (personal) istället för andra typer av resurser (till exempel maskiner).
 
-Planeringssystemet tilldelar automatiskt varje produktionsjobb till en viss resurspost, och varje resurspost har en typ (till exempel maskin eller person). När du ställer in en medarbetare som produktionsmedarbetare kan du koppla medarbetarkontot till en unik personalpost. 
+Planeringssystemet tilldelar automatiskt varje produktionsjobb till en viss resurspost, och varje resurspost har en typ (till exempel maskin eller person). När du ställer in en medarbetare som produktionsmedarbetare kan du koppla medarbetarkontot till en unik personalpost.
 
 Fliken **Mina jobb** listar alla icke-startade och icke-definierade jobb som har tilldelats personalposten för den inloggade medarbetaren, om någon medarbetare är inloggad. Den listar aldrig jobb som har tilldelats en maskin eller annan typ av resurs, även om den inloggade medarbetaren har börjat arbeta med dessa jobb.
 
@@ -87,7 +87,7 @@ Om du vill visa alla jobb som har startats av den inloggade arbetaren - oavsett 
 ## <a name="my-machine-tab"></a>Min maskinflik
 
 Fliken **Min maskin** låter arbetare välja en tillgång som är ansluten till en maskinresurs inom filteruppsättningen på fliken **Alla jobb**. Arbetaren kan sedan se tillståndet och hälsan för den valda tillgången genom att läsa värden för upp till fyra valda räknare och listor över senaste underhållsförfrågningar och registrerade driftstopp. Arbetaren kan också begära underhåll av den valda tillgången och registrera och redigera maskiners drifttid. (Det här fliknamnet är anpassningsbart och kan vara ett annat för systemet.)
- 
+
 ![Fliken Min maskin.](media/pfei-my-machine-tab.png "Min maskinflik")
 
 Fliken **Min maskin** har följande kolumner. Siffrorna motsvarar siffrorna i föregående illustration.
@@ -202,9 +202,9 @@ Följande åtgärder kan utföras:
 - Om arbetaren väljer **OK** tas inte plocklistan bort. Det bokförs när jobbet rapporteras i dialogrutan **Rapportera kassation** eller **Rapport förlopp**.
 - Om arbetaren väljer **Avbryt** i dialogrutan **Rapportera framsteg** eller **Rapportera kassation** tas plocklistan bort.
 
-### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Justera material från verktygsfältet till höger
+### <a name="adjust-material-from-the-primary-or-secondary-toolbar"></a>Justera material från det primära eller sekundära verktygsfältet
 
-Knappen **Justera material** kan konfigureras så att den visas i verktygsfältet till höger. (Mer information finns i [Designa körningsgränssnittet för produktionsgolvet](production-floor-execution-tabs.md).) En arbetare kan välja **Justera material** för ett produktionsjobb som pågår. I det här fallet visas dialogrutan **Justera material**, där arbetaren kan göra de önskade justeringarna. När dialogrutan är öppen skapas en produktionsplockningslista som innehåller rader för de justerade kvantiteterna för tillverkningsordern. Om arbetaren väljer **Bokför nu**, bekräftas justeringen och plocklistan bokförs. Om arbetaren väljer **Avbryt**, plocklistan raderas och ingen justering görs.
+Knappen **Justera material** kan konfigureras så att den visas i det primära eller sekundära verktygsfältet. (Mer information finns i [Designa körningsgränssnittet för produktionsgolvet](production-floor-execution-tabs.md).) En arbetare kan välja **Justera material** för ett produktionsjobb som pågår. I det här fallet visas dialogrutan **Justera material**, där arbetaren kan göra de önskade justeringarna. När dialogrutan är öppen skapas en produktionsplockningslista som innehåller rader för de justerade kvantiteterna för tillverkningsordern. Om arbetaren väljer **Bokför nu**, bekräftas justeringen och plocklistan bokförs. Om arbetaren väljer **Avbryt**, plocklistan raderas och ingen justering görs.
 
 ### <a name="adjust-material-consumption-for-catch-weight-items"></a>Justera materialförbrukning för nominella viktartiklar
 
@@ -260,6 +260,42 @@ När Shannon bekräftar sina val i båda scenarierna, går hon antingen till inl
 Arbetare kan registrera raster. Raster kan definieras flexibelt, vilket beskrivs i [lön baserat på registreringar](pay-based-on-registrations.md).
 
 En arbetare registrerar en rast genom att välja **rast** och sedan välja det kort som representerar rasttypen (t.ex. lunch). När personen har bekräftat urvalet visar enheten antingen inloggningssidan eller en sida som väntar på att personen ska bekräfta att de har returnerats från rasten. Vilken sida som visas beror på konfigurationen av körningsgränssnittet för produktionsgolvet. (Mer information finns i [Konfigurera gränssnittet för körning av produktionsstyrning](production-floor-execution-configure.md).)
+
+## <a name="view-the-my-day-dialog"></a>Visa dialogrutan "Min dag"
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+I dialogrutan **Mitt dag** får medarbetare en översikt över sina registreringar och saldon. Dialogrutan är uppdelad i följande tre avsnitt:
+
+- Huvudavsnittet listar de registreringar som den aktuella arbetaren har gjort på ett valt datum. Här visas registreringar för den aktuella dagen och ett datumplockningsfält som gör att arbetaren kan visa andra dagar.
+- I avsnittet för **Senast beräknade dagliga saldo** visas arbetarens aktuella saldon för betald tid, betald övertid, frånvaro och betald frånvaro. Värdena baseras på de registreringar som har beräknats under godkännandeprocessen.
+- Avsnittet **Saldon** ger en översikt över saldona inom en angiven period för valda kategorier av registreringar (till exempel semester, standardtid och övertid). De här saldona baseras på de statistiska saldona i **tids- och närvaromodulen**. Mer information om hur du ställer in en konfiguration finns i [Visa semestersaldon i körningsgränssnittet för produktionsgolvet](production-floor-execution-payroll-stats.md).
+
+Administratörer kan lägga till den här funktionen i gränssnittet genom att trycka på knappen **Min dag** på ett verktygsfält för varje relevant flik som beskrivs i [Designa gränssnittet för utförande av produktionsgolvet](production-floor-execution-tabs.md).
+
+## <a name="working-in-teams"></a>Arbeta i team
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+När flera arbetare tilldelas samma produktionsjobb kan de ingå i ett team. Teamet kan utnämna en arbetare till ledare. De återstående arbetarna blir automatiskt medhjälpare till ledare. För det resulterande teamet måste bara ledaren registrera jobbstatus. Tidsposter gäller för alla gruppmedlemmar.
+
+### <a name="prerequisites"></a>Förutsättningar
+
+För att använda team måste en administratör aktivera åtgärden **Assistent** för det primära verktygsfältet på fliken **Alla jobb** i körningsgränssnittet för produktionsgolvet. Se instruktioner i [Designa körningsgränssnittet för produktionsgolv](production-floor-execution-tabs.md).
+
+### <a name="form-a-new-team-that-has-a-pilot-and-an-assistant"></a>Skapa ett nytt team som har en ledare och en assistent
+
+En arbetare kan registrera sig som assistent genom att välja **Assistent** på fliken **Alla jobb**. I dialogrutan **Välj en medarbetare som ska hjälpa till** kan arbetaren sedan välja en pilot i en lista med medarbetare som är ansvarig för att arbeta med ett jobb. När arbetaren har bekräftat sitt val blir de en medhjälpare till den valda arbetaren, som blir ledare för det nya teamet.
+
+### <a name="assign-a-new-pilot-to-an-existing-team"></a>Tilldela en ny ledare till ett befintligt team
+
+När ett team vill välja en ny ledare måste den aktuella piloten välja en annan arbetare i teamet som ny ledare. Om du vill ange en ny pilot väljer den aktuella piloten **Assistent** på fliken **Alla jobb**. I dialogrutan **Ändra pilot** som visas kan sedan piloten välja en ny pilot i en lista över arbetare som redan finns i teamet. När den aktuella ledaren har bekräftat sitt val tas de bort helt från teamet. De kan dock ansluta tillbaka till teamet efter behov.
+
+### <a name="assistant-clocks-out"></a>Medhjälpare stämplar ut
+
+När en arbetare som arbetar som assistent stämplar ut lämnar de teamet. Om alternativen **Permanenta team** och **Starta om vid instämpling** ställs in på *Ja*, kommer en arbetare som stämplar ut automatiskt att ansluta till teamet nästa gång de stämplar in. De här alternativen finns på fliken **Allmänt** på sidan **Tids - och närvaroparametrar**.
 
 ## <a name="opening-instructions"></a>Öppnar instruktioner
 

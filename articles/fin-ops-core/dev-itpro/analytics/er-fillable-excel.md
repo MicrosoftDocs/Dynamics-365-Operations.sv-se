@@ -2,7 +2,7 @@
 title: Skapa en konfiguration för att generera dokument i Excel-format
 description: Det här avsnittet beskriver hur du utformar ett elektroniskt rapporteringsformat (ER) för att fylla i en Excel-mall och sedan generera utgående dokument i Excelformat.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b2f38aa9e5eff9366697afd57ceefd06f026096
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388273"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645147"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Skapa en konfiguration för att generera dokument i Excel-format
 
@@ -141,7 +141,12 @@ Du kan konfigurera din Excel-mall till att använda celler för att presentera t
 > [!NOTE]
 > En känd [Excel-begränsning](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353) gör att du – även om du konfigurerar celler att radbryta text, samt konfigurerar de rader som innehåller dessa celler att automatiskt höjdjusteras i syfte att rymma den radbrutna texten – kanske inte kan använda Excel-funktionerna **Autopassa** och **Radbrytning** för sammanfogade celler och de rader som innehåller dem. 
 
-Från och med Dynamics 365 Finance-version 10.0.23 kan du tvinga ER att i ett genererat dokument beräkna höjden för varje enskild rad som konfigurerats att automatiskt höjdanpassas efter innehållet i kapslade celler närhelst den raden innehåller minst en sammanfogad cell som konfigurerats att radbryta den text som finns i densamma. Den beräknade höjden används sedan för att ändra storleken på raden för att säkerställa att alla celler i raden är synliga i det genererade dokumentet. Följ dessa steg om du vill börja använda den här funktionen när du kör eventuella ER-format som konfigurerats för att använda Excel-mallar för att generera utgående dokument.
+Från och med Dynamics 365 Finance-version 10.0.23, när du arbetar i ett genererat dokument, kan du tvinga ER att beräkna höjden för varje enskild rad som konfigurerats att automatiskt höjdanpassas efter innehållet i kapslade celler närhelst den raden innehåller minst en sammanfogad cell som konfigurerats att radbryta den text som finns i densamma. Den beräknade höjden används sedan för att ändra storleken på raden för att säkerställa att alla celler i raden är synliga i det genererade dokumentet.
+
+> [!NOTE]
+> Tänk på att funktionen inte fungerar som förväntat när ett anpassat teckensnitt används för att formatera en sammanfogade cell. Eftersom Excel inte erbjuder anpassade teckensnitt behöver det inte innehålla information om anpassad teckenstorlek. Därför kan storleken på den sammanfogade cellen uppskattas på fel sätt.
+
+Följ dessa steg om du vill börja använda den här funktionen när du kör eventuella ER-format som konfigurerats för att använda Excel-mallar för att generera utgående dokument.
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. På sidan **lokaliseringskonfiguration** i avsnittet **Relaterade länkar** väljer du **parametrar för elektronisk rapportering**.
@@ -224,7 +229,7 @@ När du använder **sidkomponenten** för Excel-sidnumrering känner du inte av 
 > [!TIP]
 > Detta kan du uppnå i ett Excel-sidhuvud eller en sidfot i Excel genom att använda särskild Excel-[formatering](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) för sidhuvud och sidfot.
 
-Konfigurerade **sidkomponenter** beaktas inte när du uppdaterar en Excel-mall i det redigerbara formatet i Dynamics 365 Finance version 10.0.22. Den här funktionen bör användas för ytterligare versioner av Finance.
+Konfigurerade **sida** komponenter beaktas inte när du uppdaterar en Excel-mall i det redigerbara formatet i Dynamics 365 Finance version 10.0.22. Den här funktionen bör användas för ytterligare versioner av Finance.
 
 Om du konfigurerar Excel-mallen till att använda [villkorsformatering](/office/dev/add-ins/excel/excel-add-ins-conditional-formatting), fungerar det kanske inte som förväntats i vissa fall.
 

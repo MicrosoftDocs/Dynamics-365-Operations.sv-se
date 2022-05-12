@@ -2,19 +2,19 @@
 title: Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
 description: Det här avsnittet innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem med dubbelriktad skrivning i Ekonomi och Drift-appar.
 author: RamaKrishnamoorthy
-ms.date: 04/12/2022
+ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 58b20e38269922203b54173509e31c5e6f30c25b
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 0696d525e985f1cfcac1998d4c0bd8a380ca9551
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565978"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8613894"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
 
@@ -73,7 +73,7 @@ Lös problemet genom att skapa en biljett till dataintegreringsteamet. Koppla n�
 
 ## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>Aktivera parallell bearbetning i appar för ekonomi och drift för att förbättra prestandan
 
-Om du aktiverar parallell bearbetning kan den tid som behövs för att importera data från appar för ekonomi och drift till kundkopplingsappar och Microsoft Dataverse minskas. 
+Att aktivera parallell bearbetning kan minska den tid som behövs för att importera data från Dynamics 365 Customer Engagement-appar och Microsoft Dataverse till appar för ekonomi och drift. 
 
 Slutför följande steg för att aktivera parallell bearbetning i appar för ekonomi och drift.
 

@@ -2,7 +2,7 @@
 title: Översikt över jobb för import och export av data
 description: Använda arbetsytan Datahantering för att skapa och hantera dataimport- och dataexportjobb.
 author: peakerbl
-ms.date: 10/21/2021
+ms.date: 04/25/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071095"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644473"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Översikt över jobb för import och export av data
 
@@ -74,8 +74,11 @@ När du väljer en enhet markerar du format för de data som ska exporteras elle
 > [!NOTE]
 > Det är viktigt att välja rätt värde för **Radavgränsare**, **Kolumnavgränsare** och **Textkvalifierare**, om alternativet **Filformat** anges till **Avgränsat**. Kontrollera att dina data inte innehåller det tecken som används som avgränsare eller kvalificerare, eftersom detta kan leda till fel under import och export.
 
+> [!NOTE]
+> Se till att endast använda juridiska tecken för XML-baserade filformat. Mer information om giltiga tecken finns i [Giltiga tecken i XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 tillåter inte några kontrolltecken förutom flikar, kundvagnsreturer och radmatningar. Exempel på otillåtna tecken är hakparenteser, klammerparenteser och snedstreck. 
+
 ### <a name="sequence-the-entities"></a>Ordna enheterna
-Enheter kan ordnas i en datamall eller i import- och exportjobb. När du kör ett jobb som innehåller mer än en datatabell måste du kontrollera att datatabellerna har ordnats korrekt. Du ordnar entiteter i första hand så att du kan lösa eventuella funktionella samband mellan olika enheter. Om enheterna inte har några funktionella samband kan de schemaläggas parallell import eller export.
+Enheter kan ordnas i en datamall eller i import- och exportjobb. När du kör ett jobb som innehåller mer än en datatabell måste du kontrollera att datatabellerna har ordnats korrekt. Du ordnar entiteter i första hand så att du kan lösa eventuella funktionella samband mellan olika enheter. Om enheterna inte har några funktionella samband kan de schemaläggas parallell import eller export. 
 
 #### <a name="execution-units-levels-and-sequences"></a>Körningsenheter, -nivåer och -sekvenser
 Körningsenheten, nivån i körningsenheten samt en enhets ordningsföljd hjälper till att styra i vilken serie som data exportera eller importeras.

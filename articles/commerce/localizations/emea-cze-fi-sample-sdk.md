@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 80778547b99af5a7a9717146850d8161f2e8f686
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: aaa894ccfd77a5522a3696e20987b9e67f3abee0
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388348"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8613971"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-the-czech-republic-legacy"></a>Implementeringsriktlinjer för integrationsprovet för skatteregistreringstjänsten för Republiken Tjeckien (äldre)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Det här ämnet ger riktlinjer för distribution av exemplet på skatteregistreringstjänsten för Republiken Tjeckien från Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) på en virtuell dator för utvecklare (VM) i Microsoft Dynamics Lifecycle Services (LCS). Mer information om exemplet på räkenskapsintegrering finns i [Exempel på skatteregistreringstjänsten för Republiken Tjeckien](emea-cze-fi-sample.md). 
 
@@ -241,7 +240,7 @@ Konfigurationsfilen finns i mappen **konfiguration** för tilläggsprojektet. Sy
 
 Syftet med kassatillägget för anslutningsprogram för skatt är att kommunicera med registreringstjänsten från kassan. Det använder HTTPS-protokollet för kommunikation.
 
-#### <a name="fiscal-connector-factory"></a>Generator för anslutningsprogram för skatt
+#### <a name="fiscal-connector-factory"></a>Anslutningsprogram för skatt
 
 Generatorn för anslutningsprogram för skatt mappar namne tpå anslutningsprogrammet till implementeringen av anslutningsprogrammet för skatt och finns i filen **Pos.Extension\\Anslutningsprogram\\FiscalConnectorFactory.ts**. Anslutningsprogrammets namn ska matcha namnet på anslutningsprogrammet för skatt som anges i Commerce-administration.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1bcce7af0a15add63f1d9c3b32563de0ab6698bd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 335bed49b05bf64547d7ded885f365a30487484f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577658"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644650"
 ---
 # <a name="costing-parameter-values-setup"></a>Ställa in parametervärden för kostnadsredovisning
 
@@ -123,9 +123,9 @@ Följande register beskriver de inställningar som är tillgängliga för varje 
 
 ## <a name="volumetric-divisors"></a>Volymavgränsare
 
-Volymdelare används för att beräkna volymvikten. Varje leverans-/fraktföretag formulerar sina egna volymdelare. Dessutom varierar ett företags delare vanligtvis, beroende på leveranssättet. Till exempel har luft och hav ofta mycket olika delare. Ett företag kan också göra sina regler mer komplexa, beroende på varifrån det skickas.
+Volymdelare används för att beräkna volymvikten. Varje leverans-/fraktföretag formulerar sina egna volymdelare. Dessutom varierar ett företags delare vanligtvis, beroende på leveranssättet. Till exempel har luft och hav ofta mycket olika delare. Ett företag kan också göra sina regler mer komplexa, beroende på varifrån det skickas. Systemet använder följande formel för att hitta volymvikten: VolumetricWeight = Volym ÷ VolumetricDivisor.
 
-Ett paket som skickas med flyg har till exempel en volym på 3 m³. Företagets avgifter per volymvikt och tillämpar en volymdelare på 6. Denna delare multipliceras med volymen för att bestämma volymvikten. Därför är volymvikten för det här exemplet 3 × 6 = 18 kilo (kg).
+Ett paket som skickas med flyg har till exempel en volym på 3 m³. Företagets avgifter per volymvikt och tillämpar en volymdelare på 6. Denna delare divideras med volymen för att bestämma volymvikten. Därför är volymvikten för det här exemplet 3 ÷ 6 = 0,5 kilo (kg).
 
 För att ställa in volymdelare, gå till **Hemtagningskostnad \> Inställning av kostnadsredovisning \> Volymdelare**. Sidan **Volymdelare** tillhandahåller ett rutnät som listar alla befintliga volymdelare. Du kan använda knapparna i åtgärdsfönstret för att lägga till, ta bort och redigera rader i rutnätet.
 
@@ -136,4 +136,7 @@ Följande register beskriver de fält som är tillgängliga för varje rad i rut
 | Speditör | Välj leverantörskontot för rederiet som är associerat med volymdelaren. |
 | Kod för kostnadstyp | Välj den kostnadstypkod som är associerad med volymdelaren. Använd det här fältet om du vill placera kostnadstyper i rapportgrupp. Rapporter kan skrivas ut antingen efter rapportkategorier eller efter kostnadstyp. |
 | Från hamn | Välj den port "från" som volymdelaren gäller för. |
-| Volymavgränsare | Ange det volymdelarens värde som gäller för raden. Värdet du anger *multipliceras* med volymen för varje paket för att bestämma paketets volymvikt. |
+| Volymavgränsare | Ange det volymdelarens värde som gäller för raden. Volymen för varje paket kommer att delas med det värde som du anger här för att bestämma paketets volymvikt. |
+
+> [!NOTE]
+> Systemet använder maxvärdet mellan **faktiska vikten** och **volymvikten**.

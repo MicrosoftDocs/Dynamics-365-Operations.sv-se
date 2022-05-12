@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6fe1dd4254db8b390c17558320a6eaff2b0dcd19
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: e21c4ce4d676c3194665672a078dc1e3d0492799
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371366"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661734"
 ---
 # <a name="electronic-invoicing-for-egypt"></a>e-fakturering för Egypten
 
@@ -41,8 +41,8 @@ Innan du kan inleda procedurerna i detta ämne måste följande förutsättninga
     - [Konfigurera Azure-resurser för e-fakturering](e-invoicing-set-up-azure-resources.md)
     - [Installera tillägget för mikrotjänster i Lifecycle Services](e-invoicing-install-add-in-microservices-lcs.md)
     
-- Aktivera integreringen mellan ditt Microsoft Dynamics 365 Finance- eller din Dynamics 365 Supply Chain Management-program och e-faktureringstjänsten enligt beskrivningen i [Aktivera och ställ in integrering med e-fakturering](e-invoicing-activate-setup-integration.md).
-- Skapa en digital certifikathemlighet i Azure Key Vault och ställ in den på det sätt som beskrivs i [Kundcertifikat och hemligheter.](e-invoicing-customer-certificates-secrets.md). För teständamål tillhandahåller den egyptiska skattemyndigheten specifika digitala testcertifikat som endast får användas under test- och lösningsvalideringsfaser. För mer information, besök den egyptiska skattemyndighetens webbplats via länken som tillhandahålls i [Egyptisk e-fakturering SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+- Aktivera integreringen mellan ditt Microsoft Dynamics 365 Finance eller din Dynamics 365 Supply Chain Management-program och e-faktureringstjänsten enligt beskrivningen i [Aktivera och ställ in integrering med e-fakturering](e-invoicing-activate-setup-integration.md).
+- Skapa en digital certifikathemlighet i Azure Key Vault och ställ in den på det sätt som beskrivs i [Kundcertifikat och hemligheter.](e-invoicing-customer-certificates-secrets.md). För teständamål tillhandahåller den egyptiska skattemyndigheten specifika digitala testcertifikat som endast får användas under test- och lösningsvalideringsfaser. För mer information, besök den egyptiska skattemyndighetens webbplats via länken som tillhandahålls i [Egyptisk e-fakturering SDK](https://sdk.invoicing.eta.gov.eg/faq/).
 
 ## <a name="country-specific-configuration-for-the-egyptian-electronic-invoice-eg-feature"></a>Landsspecifik konfiguration för funktionen för egyptisk e-faktura (EG)
 
@@ -56,7 +56,7 @@ Vissa av parametrarna från funktionen för **Egyptisk e-faktura (EG)** publicer
 6. På fliken **Bearbetningspipeline**, i avsnittet **Bearbetningspipeline**, väljer du **Signera json-dokument för den egyptiska skattemyndigheten**.
 7. I avsnittet **Parametrar** väljer du **Certifikatsnamn** och sedan namnet på det digitala certifikat som du skapat.
 8. I avsnittet **Bearbetningspipeline** väljer du **Integrera med egyptisk ETA-tjänst**. Upprepa det här steget för de två förekomsterna av åtgärden.
-9. I avsnittet **Parametrar** väljer du **URL för webbtjänst** och **URL för inloggningstjänst**. Granska sedan URL-parametrarna. För att få en URL till test och produktion, gå till den egyptiska skattemyndighetens webbplats via länken i [SDK för egyptisk e-fakturering](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+9. I avsnittet **Parametrar** väljer du **URL för webbtjänst** och **URL för inloggningstjänst**. Granska sedan URL-parametrarna. För att få en URL till test och produktion, gå till den egyptiska skattemyndighetens webbplats via länken i [SDK för egyptisk e-fakturering](https://sdk.invoicing.eta.gov.eg/faq/).
 10. Markera **Spara** och stäng sedan sidan.
 11. Upprepa steg 4 till och med 10 för inställningarna av funktionen **Härledd projektfaktura**.
 

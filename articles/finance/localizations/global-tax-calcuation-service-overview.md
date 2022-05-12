@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a02767e4a90fa6b7414c796d66e758afe0501cf5
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: d2fcc883cc87f785cad2e5f7efbf67888ca38d10
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388505"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644682"
 ---
 # <a name="tax-calculation-overview"></a>Översikt över momsberäkning
 
@@ -27,7 +27,7 @@ ms.locfileid: "8388505"
 
 Skatteberäkningen är en hyperskalbar tjänst för flera innehavare som gör det möjligt för den globala skattemotorn (Global Tax Engine) att automatisera och förenkla bestämmandet och beräkningsprocessen för skatt. Skattemotorn är helt konfigurerbar. Elementen som kan konfigureras är inklusive, men inte begränsat till, den beskattningsbara datamodellen, skattekoden, tillämplighetsmatrisen för skatt och beräkningsformeln för skatt. Skattemotorn körs på Microsoft Azure kärntjänsters plattform och erbjuder modern teknik och exponentiell skalbarhet.
 
-Beräkningstjänsten för skatt går att integrera med Dynamics 365 Finance och Dynamics 365 Supply Chain Management. Så småningom kommer den också att integreras Dynamics 365 Project Operations, Dynamics 365 Commerce och andra applikationer från första och tredje part.
+Momsberäkning integreras med Dynamics 365 Finance och Dynamics 365 Supply Chain Management. Så småningom kommer den också att integreras Dynamics 365 Project Operations, Dynamics 365 Commerce och andra applikationer från första och tredje part.
 
 > [!IMPORTANT]
 > När du aktiverar tjänsten Momsberäkning kan vissa åtgärder på relaterade data utföras i ett annat datacenter än det datacenter som underhåller dina tjänstedata. Granska [Användarvillkoren](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) innan du aktiverar Momsberäkning. Din sekretess är viktig för oss. Mer information finns i vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=521839).
@@ -79,6 +79,7 @@ Vi rekommenderar att du importerar och ställer in din momsberäkningskonfigurat
 | 10.0.24         | Momsberäkningskonfiguration 40.50.225 |
 | 10.0.25         | Momsberäkningskonfiguration 40.50.225 |
 | 10.0.26         | Momsberäkningskonfiguration 40.54.234 |
+| 10.0.27         | Momsberäkningskonfiguration 40.54.234 |
 
 
 ## <a name="data-flow"></a>Dataflöde

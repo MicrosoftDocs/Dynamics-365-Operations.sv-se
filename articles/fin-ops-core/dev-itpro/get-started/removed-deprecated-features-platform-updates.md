@@ -2,7 +2,7 @@
 title: Borttagna eller avskrivna plattformsfunktioner
 description: I detta ämne beskrivs funktioner som har tagits bort, eller som planerats för borttagning i plattformsuppdateringar av appar för ekonomi och drift.
 author: sericks007
-ms.date: 03/08/2022
+ms.date: 04/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 27be0e720b7eca5883c5d73dfe312c09fcd22c65
-ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
+ms.openlocfilehash: 0cf0d4b3ff108645c8542ce10a0be58d29cc68ed
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "8396559"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644619"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller utfasade plattformsfunktioner
 
@@ -32,7 +32,19 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 Detaljerad information om objekt i appar för ekonomi och drift finns i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av appar för ekonomi och drift.
 
-## <a name="feature-removal-effective-march-14-2022"></a>Funktionsborttagning som gäller från och med 14 mars 2022
+## <a name="feature-deprecation-effective-april-2022"></a>Utfasning av funktioner från april 2022
+
+### <a name="xml-url-resolution-in-data-management"></a>XML-URL-lösning i datahantering 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Vi tar bort stöd för XML-URL-lösning eftersom detta har identifierats som en potentiell sårbar punkt. Det innebär att externa resurser som är kopplade till XML-filer inte längre kan lösas.  |
+| **Ersatt av en annan funktion?**   | Nej |
+| **Produktområden som påverkas**         | appar för ekonomi och drift |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell. |
+
+## <a name="feature-deprecation-effective-march-14-2022"></a>Utfasning av funktioner från 14 mars, 2022
 
 ### <a name="xslt-scripting-in-data-management"></a>XSLT-skript i datahantering
 
@@ -40,9 +52,9 @@ Detaljerad information om objekt i appar för ekonomi och drift finns i [Teknisk
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Stödet för XSLT-skript i Datahantering blir avvecklas i syfte att förbättra säkerheten och datasäkerheten i apparna för ekonomi och drift.  |
 | **Ersatt av en annan funktion?**   | Nej Kunder och ISV bör överväga att implementera om sina lösningar baserat på X++-språk i stället för på XSLT-skript. |
-| **Produktområden som påverkas**         | Appar för ekonomi och drift. |
-| **Distribueringsalternativ**              | Alla. |
-| **Status**                         | Inaktuell: Planerat borttagningsdatum 14 mars 2022.<br><br>Undantag: Kunder som för närvarande använder XLST-skript. Dessa kan fortsätta att använda den tills de uppdaterar till version 10.0.30 eller senare. Kunder med detta undantag har fått ett meddelande i Meddelandecentret som är tillgängligt i administratörscentret för Microsoft 365. |
+| **Produktområden som påverkas**         | appar för ekonomi och drift |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell <br><br>**Undantag**: Kunder som för närvarande använder XLST-skript. Dessa kan fortsätta att använda den tills de uppdaterar till version 10.0.30 eller senare. För tidigare versioner upphör undantaget att gälla den 31 januari 2023. Kunder med detta undantag har fått ett meddelande i Meddelandecentret som är tillgängligt i administratörscentret för Microsoft 365. |
 
 ## <a name="feature-removal-effective-october-2021"></a>Funktionsborttagning som gäller oktober 2021
 

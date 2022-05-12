@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: c578420783a8d19fe4a1522486e0b0146a390722
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: c49e6cedcce1d336486e9fbcc0620bcdf455cc9d
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388194"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614134"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-germany-legacy"></a>Implementeringsriktlinjer för integrationsprovet för skatteregistreringstjänsten för Tyskland (äldre)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Det här ämnet ger riktlinjer för distribution av exemplet på skatteregistreringstjänsten för Tyskland från Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) på en virtuell dator för utvecklare (VM) i Microsoft Dynamics Lifecycle Services (LCS). Mer information om exemplet på räkenskapsintegrering finns i [Exempel på skatteregistreringstjänsten för Tyskland](emea-deu-fi-sample.md). 
 

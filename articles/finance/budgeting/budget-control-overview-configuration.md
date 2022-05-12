@@ -2,7 +2,7 @@
 title: Översikt över budgetkontroll
 description: Det här ämnet presenterar budgetkontrollfunktionen och innehåller information som hjälper dig att konfigurera budgetkontroll för att optimera hanteringen av organisationens ekonomiska resurser.
 author: panolte
-ms.date: 11/08/2021
+ms.date: 03/28/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14b852bb4aeca927adeeb2665b9887e467b71158
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7019b3546b83047e91fa129d8d92f209f131c993
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986066"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644861"
 ---
 # <a name="budget-control-overview"></a>Översikt över budgetkontroll
 
@@ -80,7 +80,9 @@ På fliken **Tillgängliga budgetmedel** kan du sedan definiera formeln som anv�
 > [!NOTE]
 > Om beräkningen ändras under en budgetcykel kommer ändringarna inte att påverka dokument som tidigare har godkänts i budgetkontroller och som har bokförts eller slutförts. En funktion som kallas **Endast spårade belopp i de tillgängliga budgetmedelsberäkningarna** gör att du kan ändra vilka data som spåras i BudgetSourceTracking-registren. När funktionen aktiveras lagras belopp endast om de har valts för att användas i beräkningen av de tillgängliga budgetmedlen. Mer information finns i [Budgetmedel är tillgängliga](budget-funds-available.md).
 
-På fliken **Dokument och journaler** kan du välja källdokument och journaler som ska vara föremål för budgetkontroller och om kontrollerna ska utföras på radpostnivån eller på dokumentet som helhet. 
+### <a name="documents-and-journals"></a>Dokument och journaler
+
+På fliken **Dokument och journaler** kan du välja källdokument och journaler som ska vara föremål för budgetkontroller och om kontrollerna ska utföras på radpostnivån eller på dokumentet som helhet. Dessutom ger den nya funktionen **Filtreringsförbättring av budgetkontrolldokument** som är tillgänglig via Microsoft Dynamics 365 Finance version 10.0.27 ett frågebaserat filteralternativ för varje dokument som ingår i budgetkontrollen. Därför kan du ange vilka budgetkontrolldokument som budgetkontrollerats. På det här sättet går det bara att budgetera en delmängd av en dokumenttyp med funktionen. Du kan till exempel endast kontrollera inköpsorder där fältet **Pool** är inställt på **01**. En ny kolumn som läggs till på fliken **Dokument och journaler** visar om en fråga har definierats för den valda dokumenttypen. Dessutom kan du lägga till, redigera och ta bort filter som läggs till i verktygsfältet ovanför dokumentrutnätet. 
 
 Du bör matcha de valda källdokumenten med de kryssrutor du väljer för saldon som ingår i beräkningen av tillgängliga budgetmedel. Om du t.ex. har valt **Budgetreservationer för inteckningar**, ska du välja alternativet **Inköpsorder**. När en budgetkontroll utförs för beloppen och konton på en ett inköpsrad, är budgetkontrollkategorin som är tilldelat reservationen är **Inteckning**. När en budgetkontroll utförs för belopp och konton på en inköpsrekvisition ska kategorin som tilldelas reservationen vara **Förinteckning**. 
 

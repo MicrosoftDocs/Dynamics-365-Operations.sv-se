@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5a0ead85eaeb6b96b80716614990af8c8e5e70f7
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384757"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644409"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurera körningsgränssnittet för produktionsgolvet
 
@@ -111,17 +111,67 @@ För att använda den här funktionen, aktivera följande funktion i [funktionsh
 
 - *(Förhandsversion) Rapport med fångstviktartiklar från körningsgränssnittet för produktionsgolvet*
 
+### <a name="enable-the-my-day-dialog"></a>Aktivera dialogrutan "Min dag"
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+I dialogrutan **Min dag** får medarbetare en översikt över sina dagliga registreringar och aktuella saldon för betald tid, betald övertid, frånvaro och betald frånvaro.
+
+För att använda den här funktionen, aktivera följande funktion i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Vyn Min dag i körningsgränssnittet för produktionsgolvet*
+
+### <a name="enable-teams"></a>Aktivera team
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+När flera arbetare tilldelas samma produktionsjobb kan de ingå i ett team. Teamet kan utnämna en arbetare till ledare. De återstående arbetarna blir automatiskt medhjälpare till ledare. För det resulterande teamet måste bara ledaren registrera jobbstatus. Tidsposter gäller för alla gruppmedlemmar.
+
+För att använda den här funktionen, aktivera följande funktion i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Produktionsteam i körningsgränssnittet för produktionsgolvet*
+
+### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Aktivera ytterligare konfiguration i körningsgränssnittet för produktionsgolvet
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Den här funktionen lägger till inställningar för följande funktioner på sidan **Konfigurera körning på produktionsgolv**:
+
+- Öppna dialogrutan **Startjobb** automatiskt när en sökning har slutförts.
+- Öppna dialogrutan **Rapportförlopp** automatiskt när en sökning har slutförts.
+- Förfyllning av resterande kvantitet i dialogrutan **Rapportförlopp**.
+- Aktivera materialförbrukningsjusteringar från dialogrutan **Rapportförlopp**. (För denna funktion krävs även *Registrera materialförbrukning i gränssnittet för produktionsgolvskörning (ej WMS)* .)
+- Aktivera sökning med projekt-ID.
+
+Information om hur du använder inställningarna finns senare i det här avsnittet.
+
+För att använda den här funktionen, aktivera följande funktion i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Ytterligare konfiguration i körningsgränssnittet för produktionsgolvet*
+
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeta med konfigurationer av körningsgränssnittet för produktionsgolvet
 
 Om du vill skapa och underhålla konfigurationer av körning på produktionsgolv går du till **Produktionskontroll \> Inställning \> Tillverkningskörning \> Konfigurera för produktionsgolvet**. På sidan **Konfigurera för produktionsgolvet** visas en lista över befintliga konfigurationer. På den här sidan kan du utföra följande åtgärder:
 
 - Välj en konfiguration av produktionsgolvet som visas i den vänstra kolumnen om du vill visa och redigera den.
-- Välj **ny** i åtgärdsfönstret om du vill lägga till en ny konfiguration i listan. Ange sedan ett namn i fältet **Konfiguration** för att identifiera den nya konfigurationen. Namnet som du anger här måste vara unikt bland alla konfigurationer och du kan inte redigera det senare.
+- På åtgärdsfönstret, välj **Ny** för att lägga till en ny konfiguration i listan. Ange sedan ett namn i fältet **Konfiguration** för att identifiera den nya konfigurationen. Namnet som du anger här måste vara unikt bland alla konfigurationer och du kan inte redigera det senare. I fält **Beskrivning** kan du valfritt ange en beskrivning av konfigurationen.
 
-Konfigurera sedan de olika inställningarna för den valda konfigurationen. Följande fält är tillgängliga:
+Sedan konfigurerar du de olika inställningarna för den valda konfigurationen, enligt beskrivningen i följande delgrupper.
+
+### <a name="the-general-fasttab"></a>Allmänt snabbfliken
+
+Följande inställningar finns på snabbfliken **Allmänt**.
 
 - **Endast för in- och utstämpling** – Ange det här alternativet *Ja* för att skapa ett förenklat gränssnitt som bara ger in- och urklockningsfunktionalitet. Då inaktiveras de flesta andra alternativ på den här sidan. Du måste ta bort alla rader från snabbflikarna **Flikmarkering** innan du kan aktivera det här alternativet.
 - **Aktivera sökning** – Ange detta alternativ till *Ja* om du vill inkludera ett sökfält i jobblistan. En arbetare kan hitta ett visst jobb genom att ange jobb-ID eller söka efter alla jobb för en viss order genom att ange order-ID:t. Arbetare kan ange ID:t med hjälp av ett tangentbord eller genom att skanna en streckkod.
+- **Aktivera sökning efter projekt-ID** – Ange det här alternativet till *Ja*, så att arbetare kan söka efter projekt-ID (utöver jobb-ID och order-ID) i sökfältet i körningsgränssnittet för produktionsgolvet. Du kan ange det här alternativet till *Ja* endast om alternativet **Aktivera sökning** är inställt på *Ja*.
+- **Öppna dialogrutan Starta automatiskt** – När detta alternativet är inställt på *Ja*, dialogrutan **Startjobb** öppnas automatiskt när arbetare använder sökfältet för att hitta ett jobb.
+- **Öppna dialogrutan Rapportförlopp automatiskt** – När detta alternativet är inställt på *Ja*, dialogrutan **Rapportförlopp** öppnas automatiskt när arbetare använder sökfältet för att hitta ett jobb.
+- **Aktivera justering av material** – Ställ in det här alternativet till *Ja* för att aktivera knappen **Justera material** i dialogrutan **Rapportförlopp**. Arbetare kan välja den här knappen för att justera materialförbrukningen för jobbet.
 - **Rapportera kvantitet vid utstämpling** – Ange detta alternativ till *Ja* för att be arbetare att rapportera återrapportering om pågående jobb när han eller hon stämplar ut. Om detta alternativ anges till *Nej* kommer medarbetarna inte att uppmanas.
 - **Lås medarbetare** – när det här alternativet är inställt på *Nej* kommer arbetstagarna att loggas ut omedelbart efter att de har gjort en registrering (t.ex. ett nytt jobb). Gränssnittet kommer sedan tillbaka till inloggningssidan. När det här alternativet är inställt på *Ja* kommer varje medarbetare att vara inloggad på körningsgränssnittet för produktionsgolvet. En arbetare kan dock manuellt logga ut så att en annan arbetare kan logga in medan ett körningsgränssnitt för produktionsgolvet fortsätter att köras under samma systemanvändarkonto. Mer information om dessa typer av konton finns i [Tilldela användare](config-job-card-device.md#assigned-users).
 - **Använd den faktiska tiden för registrering** – Ställ in detta alternativ på *Ja* att ställa in tiden för varje ny registrering till den exakta tidpunkt då arbetstagaren lämnade in registreringen. När alternativet är inställt på *Nej*, används inloggningstiden istället. Du vill vanligtvis ange alternativet till *Ja* om du anger **Lås medarbetare** och/eller **Enskild arbetare** till *Ja* i fall där arbetstagare ofta förblir inloggade under längre perioder.
@@ -130,7 +180,17 @@ Konfigurera sedan de olika inställningarna för den valda konfigurationen. Föl
 - **Tidslängd för skärmlåsning** – När alternativet **Tillåt låsning pekskärm** anges till *Ja*, använd det här alternativet för att ange antalet sekunder som pekskärmen ska vara låst för att desinficera. Längden måste vara mellan 5 och 120 sekunder.
 - **Generera ID-nummer** – Ange det här alternativet *Ja* om du vill generera ett nytt ID-nummer varje gång en medarbetare använder körningsgränssnittet för produktionsgolvet för att rapportera som färdig. ID-numret genereras från en nummerserie som ställs in på sidan **parametrar för Warehouse management**. Om alternativet *Nej* måste arbetare ange ett befintligt ID-nummer när den rapporteras som färdig.
 - **Skriv ut etikett** – Ställ in det här alternativet på *Ja* om du vill skriva ut ett ID-nummer när en medarbetare använder ett körningsgränssnitt för produktionsgolvet för att rapportera som färdig. Konfigurationen av etiketten ställs in i dokumentflödet som beskrivs i [Layout på dokumentflödet för ID-nummeretiketter](../warehousing/document-routing-layout-for-license-plates.md).
-- **Val av flik** – Använd inställningarna i det här avsnittet om du vill välja vilka flikar som ska visas av körningsgränssnittet för produktionsgolvet när den aktuella konfigurationen är aktiv. Du kan utforma så många flikar du behöver och sedan lägga till och ordna dem efter behov. Mer information om hur du utformar flikar och arbetar med inställningarna här finns i [utforma körningsgränssnittet för produktionsgolvet](production-floor-execution-tabs.md).
+
+### <a name="the-tab-selection-fasttab"></a>Snabbfliken Flikval
+
+Använd inställningarna på snabbfliken **Flikval** för att välja vilka flikar som produktionsgolvets gränssnitt ska visa när den aktuella konfigurationen är aktiv. Du kan utforma så många flikar du behöver och sedan lägga till och ordna dem enligt dina behov med hjälp av knapparna i snabbfliksverktygsfältet. Mer information om hur du utformar flikar och arbetar med inställningarna här finns i [utforma körningsgränssnittet för produktionsgolvet](production-floor-execution-tabs.md).
+
+### <a name="the-report-progress-fasttab"></a>Snabbflikarna Rapportförloppet
+
+Följande inställningar finns på snabbfliken **Rapportförlopp**.
+
+- **Aktivera justering av material** – Ställ in det här alternativet till *Ja* för att inkludera knappen **Justera material** i dialogrutan **Rapportförlopp**. Arbetare kan välja den här knappen för att justera materialförbrukningen för jobbet.
+- **Standard för återstående kvantitet** – Ange alternativet *Ja* för att fylla i den förväntade återstående kvantiteten för ett produktionsjobb i dialogrutan **Rapportförlopp**.
 
 ## <a name="clean-up-job-configurations"></a>Rensa jobbkonfigurationerna
 

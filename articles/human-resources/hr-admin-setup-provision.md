@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 65891e380f740f4a1fa404d57789a6f50506d3b5
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 7ce30b64bc7c3889347bec94186614bd6cc337f4
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565640"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625369"
 ---
 # <a name="provision-human-resources"></a>Etablera Human Resources
 
@@ -41,7 +41,7 @@ Följande förutsättningar måste vara på plats innan du kan etablera en ny pr
 ## <a name="provision-a-human-resources-trial-environment"></a>Skapa en utvärderingsmiljö för Personal
 
 >[!NOTE]
-> Från och med april 2022 finns inte utvärderingsmiljöerna för Personal tillgängliga i det fristående programmet. Potentiella kunder som är intresserade av att utvärdera Personalfunktionerna i apparna för ekonomi och drift kan göra detta med hjälp av gratisversionen på 30 dagar tillsammans med demodatan. Dynamics 365 Finance omfattar de Personalfunktioner som inkluderats i Ekonomiinfrastrukturen via sammanslagningen med det fristående programmet. Mer information finns i [Sammanslagning av Personalerbjudanden samlar funktioner för kunder](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) Mer information om utvärderingsversioner av Dynamics 365 Finance finns i den stegvisa [guiden](/fin-ops/get-started/before-you-buy). 
+> Från och med april 2022 finns inte utvärderingsmiljöerna för Personal tillgängliga i det fristående programmet. Potentiella kunder som är intresserade av att utvärdera Personalfunktionerna i apparna för ekonomi och drift kan göra detta med hjälp av gratisversionen på 30 dagar tillsammans med demodatan. Dynamics 365 Finance omfattar de Personalfunktioner som inkluderats i Ekonomiinfrastrukturen via sammanslagningen med det fristående programmet. Mer information finns i [Sammanslagning av Personalerbjudanden samlar funktioner för kunder](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) Mer information om utvärderingsversioner av Dynamics 365 Finance finns i den stegvisa [guiden](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
 
 
 Innan du provisioner din första resurs eller produktionsmiljö kan du använda en [utvärderingsmiljö för Personal](https://go.microsoft.com/fwlink/p/?LinkId=2115962) för att validera personalfunktioner. Bedömningsmiljöer innehåller fiktiva data som kan användas för att utforska programmet på ett säkert sätt. Även om bedömningsmiljön ägs av den användare som har begärt den, kan andra användare bjudas in via systemets administrationserfarenhet för Personal. 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c8cf4866b6a8c239359d726d8cd4f03a9eb4137
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324097"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661670"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Anpassa konfigurationer av elektronisk rapportering så att ett elektroniskt dokument skapas
 
@@ -61,7 +61,7 @@ Som användare i rollen funktionell konsult för elektronisk rapportering eller 
 ### <a name="configure-er-parameters"></a>Konfigurera ER-parametrar
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
-2. På sidan **lokaliseringskonfiguration** i avsnittet **Relaterade länkar** väljer du **parametrar för elektronisk rapportering**.
+2. På sidan **Lokaliseringsritning** i avsnittet **Relaterade länkar** väljer du **parametrar för elektronisk rapportering**.
 3. På sidan **parametrar för elektronisk rapportering** på fliken **allmänna** anger du alternativet till **aktivera designläge** till **Ja**.
 4. På fliken **Bilagor** i fältet **Konfigurationer** välj **Fil**.
 5. I fältet **Jobbarkiv**, **Tillfälliga**, **Baslinje** och **Andra** och välj typen **Fil**.
@@ -78,13 +78,13 @@ Varje ER-konfiguration som läggs till markeras som ägd av en ER-konfigurations
 #### <a name="review-the-list-of-er-configuration-providers"></a>Granska listan med ER-konfigurationsleverantörer
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
-2. På sidan **lokaliseringskonfiguration** i avsnittet **Relaterade länkar** väljer du **Konfigurationsleverantörer**.
+2. På sidan **Lokaliseringsritning** i avsnittet **Relaterade länkar** väljer du **Konfigurationsleverantörer**.
 3. På sidan **Tabellen konfigurationsleverantörer** har varje leverantörspost ett unikt namn och en URL. Granska innehållet på den här sidan. Om det redan finns en post för **Litware, Inc.** (`https://www.litware.com`) hoppar du över nästa procedur [Lägg till en ny ER-konfigurationsleverantör](#AddProvider).
 
 #### <a name="add-a-new-er-configuration-provider"></a><a id="AddProvider"></a>Lägg till en ny ER-konfigurationsleverantör
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
-2. På sidan **lokaliseringskonfiguration** i avsnittet **Relaterade länkar** väljer du **Konfigurationsleverantörer**.
+2. På sidan **Lokaliseringsritning** i avsnittet **Relaterade länkar** väljer du **Konfigurationsleverantörer**.
 3. Välj **Konfigurationsleverantörer** på sidan **Leveranssätt**.
 4. I fältet **Namn** anger du **Litware, Inc.**.
 5. I fältet **Internetadress** anger du `https://www.litware.com`.
@@ -93,7 +93,7 @@ Varje ER-konfiguration som läggs till markeras som ägd av en ER-konfigurations
 #### <a name="activate-an-er-configuration-provider"></a>Aktivera en ER-konfigurationsleverantör
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
-2. På sidan **lokaliseringskonfiguration** i avsnittet **konfigurationsleverantörer** välj panelen **Litware, Inc.** och välj sedan **Ange aktiv**.
+2. På sidan **Lokaliseringsritning** i avsnittet **konfigurationsleverantörer** välj panelen **Litware, Inc.** och välj sedan **Ange aktiv**.
 
 Mer information om ER-konfigurationsleverantörer finns i [Skapa konfigurationsleverantörer och markera dem som aktiva](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -102,7 +102,7 @@ Mer information om ER-konfigurationsleverantörer finns i [Skapa konfigurationsl
 Om du vill lägga till standard-ER-konfigurationer i din aktuella Finance-instansen måste du importera dem från [databasen](general-electronic-reporting.md#Repository) som har konfigurerats för den instansen.
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
-2. På sidan **lokaliseringskonfiguration** i avsnittet **konfigurationsleverantörer** välj panelen **Microsoft** och markera sedan **databaser** om du vill visa listan över databaser för Microsoft-leverantören.
+2. På sidan **Lokaliseringsritning** i avsnittet **konfigurationsleverantörer** välj panelen **Microsoft** och markera sedan **databaser** om du vill visa listan över databaser för Microsoft-leverantören.
 3. På sidan **Konfigurationsdatabaser** väljer du i rutnätet den befintliga databasen för **Global**-typ och väljer sedan **Öppna**. Om du uppmanas att bevilja behörighet att ansluta till Regulatory Configuration Service följer du instruktionerna för auktorisering.
 4. På sidan **Konfigurationsdatabas** i konfigurationsträdet i vänster fönster, välj den **Peppol-försäljningsfaktura**-formatkonfiguration.
 5. På snabbfliken **Versioner**, välj version **11.2.2**.
@@ -116,7 +116,7 @@ Om du vill lägga till standard-ER-konfigurationer i din aktuella Finance-instan
 ### <a name="review-the-imported-er-configurations"></a>Granska importerade ER-konfigurationer
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
-2. På sidan **Lokaliseringskonfiguration** i avsnittet **Konfigurationer** väljer du panelen **Rapporteringskonfiguration**.
+2. På sidan **Lokaliseringsritning** i avsnittet **Konfigurationer** väljer du panelen **Rapporteringskonfiguration**.
 3. På sidan **Konfigurationer** expanderar du snabbfliken **Konfigurationskomponenter**.
 4. I konfigurationsträdet i det vänstra fönstret, expandera **Fakturamodell** och expandera sedan **UBL försäljningsfaktura**.
 

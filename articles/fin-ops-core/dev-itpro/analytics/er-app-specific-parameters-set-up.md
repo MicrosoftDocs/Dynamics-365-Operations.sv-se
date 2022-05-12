@@ -2,7 +2,7 @@
 title: Ställ in parametrarna för ett ER-format per juridisk person
 description: I det här avsnittet beskrivs hur du kan konfigurera parametrar för ett format för elektroniska rapporter (ER) per juridisk person.
 author: NickSelin
-ms.date: 10/22/2021
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: cb600c55cb2d40129d1b29ab989bc8f7cf3f4686
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: f72ce72e9cbd268efc6ab09dbec7009794d69613
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927464"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644511"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Ställ in parametrarna för ett ER-format per juridisk person
 
@@ -30,7 +30,7 @@ ms.locfileid: "7927464"
 
 För att kunna utföra de här stegen måste du först slutföra stegen i [konfigurera ER-format för att använda parametrar som anges per juridisk person](er-app-specific-parameters-configure-format.md).
 
-Om du vill slutföra exemplen i det här avsnittet måste du ha tillgång till Microsoft Dynamics 365 Finance för en av följande roller:
+Om du vill slutföra exemplen i det här avsnittet måste du ha tillgång till Microsoft Microsoft Dynamics 365 Finance för en av följande roller:
 
 - Utvecklare för elektronisk rapportering
 - Konsult för funktionen för elektronisk rapportering
@@ -226,7 +226,7 @@ Om du konfigurerar programspecifika parametrar för en version av ett ER-format 
 När du väljer en fil för import, jämförs även programspecifika parametrar i den filen med strukturen för motsvarande datakälla av typen **uppslag** för det återställningsformat som valts för import. Som standard är importen är slutförd endast om strukturen för varje programspecifik parameter matchar strukturen för motsvarande datakälla i det återställningsformat som har valts för import. Om strukturlistorna inte matchar får du ett varningsmeddelande om att importen inte kan slutföras. Om du tvingar importen rensas de befintliga programspecifika parametrarna för det valda återställningsformatet och du måste ställa in dem från början.
 
 
-Från och med Dynamics 365 Finance version 10.0.24, du kan ändra standardbeteendet och undvika att få ett varningsmeddelande genom att aktivera funktionen **Justera ER-appspecifika parametrar under import** i arbetsytan **Funktionshantering**. När den här funktionen är aktiverad, om strukturen för programspecifika parametrar som du importerar skiljer sig från strukturen för motsvarande datakällor i mål-ER-formatet som har valts för import, kommer importen att lyckas i följande fall:
+Från och med Finance version 10.0.24, du kan ändra standardbeteendet och undvika att få ett varningsmeddelande genom att aktivera funktionen **Justera ER-appspecifika parametrar under import** i arbetsytan **Funktionshantering**. När den här funktionen är aktiverad, om strukturen för programspecifika parametrar som du importerar skiljer sig från strukturen för motsvarande datakällor i mål-ER-formatet som har valts för import, kommer importen att lyckas i följande fall:
 
 - Strukturen för mål-ER-formatet har ändrats genom att nya villkorskolumner läggs till i alla befintliga datakällor för **söktypen**. När importen är klar uppdateras de programspecifika parametrarna. I alla importerade poster med applikationsspecifika parametrar initieras värdena i varje tillagd villkorskolumn med standardvärdet för [datatyp](er-formula-supported-data-types-primitive.md) i den kolumnen.
 - Strukturen för mål-ER-formatet har ändrats genom att ta bort vissa villkorskolumner från alla befintliga datakällor för **söktypen**. När importen är klar uppdateras de programspecifika parametrarna. I alla importerade poster för programspecifika parametrar raderas värdena i alla borttagna villkorskolumner.
@@ -235,9 +235,33 @@ Från och med Dynamics 365 Finance version 10.0.24, du kan ändra standardbeteen
 
 När importen är klar, utöver de ändringar som just beskrevs, ändras tillståndet för de importerade programspecifika parametrarna till **Pågår**. Ett varningsmeddelande informerar om att de automatiskt justerade programspecifika parametrarna måste redigeras manuellt.
 
+#### <a name="replicate-parameters"></a>Replikera parametrar
+
+Från och med Finance version 10.0.27 kan du kopiera de parametrar som du konfigurerat i ett företag till andra företag samtidigt.
+
+Utför följande steg för att kopiera parametrar.
+
+1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
+2. Välj **rapporteringskonfigurationer**.
+3. I konfigurationsträdet väljer du formatet **format för att lära dig hur du letar upp LE-data**.
+4. I Åtgärdsfönstret, på fliken **Konfigurationer**, i gruppen **Appspecifika parametrar**, markerar du **Konfigurera**.
+5. Välj version **1.1.1** av ER-formatet.
+6. I åtgärdsfönstret, välj **Replikera**.
+7. I dialogrutan **Replikera** på fliken **Företag**, välj de företag som du vill kopiera parametrar till.
+
+    > [!NOTE]
+    > Välj de företag som du vill kopiera parametrar till [roll](../sysadmin/role-based-security.md#security-roles) som är konfigurerad för att ge åtkomst till alla organisationer.
+
+8. Välj **OK**.
+
+    > [!NOTE]
+    > Bekräftelsedialogrutan informerar dig om vissa målföretag innehåller tidigare konfigurerade parametrar för den valda versionen av ett ER-format. Välj **Ja** om du vill åsidosätta parametrarna genom att kopiera dem från det aktuella företaget.
+
+    Den konfigurerade uppsättningen med programspecifika parametrar kopieras nu till de valda företagen.
+
 ### <a name="reuse-existing-parameters"></a>Använd befintliga parametrar igen
 
-Från och med Dynamics 365 Finance version 10.0.23, du kan återanvända programspecifika parametrar som har konfigurerats för en version av ett ER-format när du kör en högre version av samma format. För att göra detta aktiverar funktionen genom att **Använd appspecifika parametrar från tidigare versioner av ER-format** i arbetsytan **Funktionshantering**. När den här funktionen är aktiverad och du kör en version av ett ER-format som försöker läsa programspecifika parametrar försöker ER att hitta programspecifika parametrar som har konfigurerats för den körande versionen av det här formatet. Eller, när de inte är tillgängliga, för närmaste nedre version av det här formatet.
+Från och med Finance version 10.0.23, du kan återanvända programspecifika parametrar som har konfigurerats för en version av ett ER-format när du kör en högre version av samma format. För att återanvända befintliga parametrar aktivera du funktionen genom att **Använd appspecifika parametrar från tidigare versioner av ER-format** i arbetsytan **Funktionshantering**. När den här funktionen är aktiverad och du kör en version av ett ER-format som försöker läsa programspecifika parametrar försöker ER att hitta programspecifika parametrar som har konfigurerats för den körande versionen av det här formatet. Om de inte är tillgängliga kommer ER att försöka hitta dem för närmaste lägre version av formatet.
 
 > [!NOTE]
 > Du kan bara återanvända programspecifika parametrar i den aktuella juridiska personens område.

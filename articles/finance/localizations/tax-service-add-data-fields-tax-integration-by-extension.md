@@ -2,7 +2,7 @@
 title: Lägga till datafält i momsintegreringen genom att använda tillägg
 description: I det här avsnittet beskrivs hur du använder X++-tillägg för att lägga till datafält i momsintegreringen.
 author: qire
-ms.date: 02/17/2022
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: acbe8070424febf24883362448ea56857d9d72d9
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 79b51812eac354072ebf2a0ef6fe8d39610c6385
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323528"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649113"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Lägga till datafält i momsintegreringen genom att använda tillägg
 
@@ -334,9 +334,10 @@ Utöka eller `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
+    // private const str IOEnumExample = 'Enum Example';
 
     /// <summary>
     /// Copies to <c>TaxableDocumentLineWrapper</c> from <c>TaxIntegrationLineObject</c> by line.
@@ -349,20 +350,24 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
         // Set the field we need to integrated for tax service
         _destination.SetField(IOCostCenter, _source.getCostCenter());
         _destination.SetField(IOProject, _source.getProjectId());
+
+        // If the field to be extended is an enum type, use enum2Symbol to convert an enum variable exampleEnum of ExampleEnumType to a string
+        // _destination.SetField(IOEnumExample, enum2Symbol(enumNum(ExampleEnumType), _source.getExampleEnum()));
     }
 }
 ```
 
-I den här koden `_destination` är omslagsobjektet som används för att generera postförfrågan och `_source` är `TaxIntegrationLineObject` objektet.
+I den här koden `_destination` är omslagsobjektet som används för att generera förfrågan och `_source` är `TaxIntegrationLineObject` objektet.
 
 > [!NOTE]
-> Definiera nyckeln som används i förfrågningsformuläret som **privat const str**. Strängen ska vara exakt samma som måttnamnet som läggs till i avsnittet, [lägg till datafält i skattekonfigurationer](tax-service-add-data-fields-tax-configurations.md).
-> Ange fältet i metoden **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** genom att använda metoden **SetField**. Datatypen för den andra parametern bör vara **sträng**. Om datatypen inte är **sträng**, konverterar du den.
-> Om en X++ **uppräkningstyp** är utökad, notera skillnaden mellan dess värde, etikett och namn.
+> Definiera fältnamn som används i förfrågning som **privat const str**. Strängen ska vara exakt samma som nodnamnet (inte etiketten) som läggs till i [lägg till datafält i skattekonfigurationer](tax-service-add-data-fields-tax-configurations.md).
 > 
+> Ange fältet i metoden **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** genom att använda metoden **SetField**. Datatypen för den andra parametern bör vara **sträng**. Om datatypen inte är **sträng**, konverterar du sträng.
+> Om datatypen är X++ **enum-typ** rekommenderar vi att du använder en **enum2Symbol**-metod för att konvertera enum-värdet till en sträng. Uppräkningsvärdet som läggs till i skattekonfigurationen ska vara exakt samma som uppräkningsnamnet. Här följer en lista över differenser mellan uppräkningsvärde, etikett och namn.
+> 
+>   - Namnet på uppräkning är ett symboliskt namn i kod. **enum2Symbol()** kan konvertera enum-värdet till dess namn.
 >   - Värdet på uppräkningen är heltal.
->   - Etiketten för uppräkningen kan skilja sig åt mellan föredragna språk. Använd inte **enum2Str** för att konvertera uppräkningstypen till sträng.
->   - Namnet på uppräkning rekommenderas eftersom det är fast. **enum2Symbol** kan användas för att konvertera uppräkning till dess namn. Uppräkningsvärdet som läggs till i skattekonfigurationen ska vara exakt samma som uppräkningsnamnet.
+>   - Etiketten för uppräkningen kan skilja sig åt mellan föredragna språk. **enum2Str()** kan konvertera enum-värdet till dess etikett.
 
 ## <a name="model-dependency"></a>Modellberoende
 
@@ -526,7 +531,7 @@ final class TaxIntegrationPurchTableDataRetrieval_Extension
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
 

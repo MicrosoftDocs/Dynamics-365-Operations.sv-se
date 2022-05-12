@@ -2,7 +2,7 @@
 title: Konfigurera betalsätt för kundkonto på B2B-näthandelssajter
 description: I det här avsnittet beskrivs hur du konfigurerar betalningsmetoden för kundkontot i Microsoft Dynamics 365 Commerce. Det beskriver också hur kreditgränser påverkar à conto-betalningar på e-handelsplatser mellan företag (B2B).
 author: josaw1
-ms.date: 02/16/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0366f7b51ac138cc7305f98d5607c554440e6d34
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: a8fdeb109204557f0e44457e23a60224e662474f
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323365"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616842"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Konfigurera betalsätt för kundkonto på B2B-näthandelssajter
 
@@ -82,13 +82,13 @@ Värdena som egenskapen för **kreditgränstyp** stöder är **Ingen**, **Saldo*
 
 En annan egenskap som påverkar kontoordern är egenskapen **Obligatorisk kreditgräns** som finns på snabbfliken **Kreditera och inkasso** för kundposten. Genom att ange egenskapen till **Ja** för vissa kunder kan du tvinga systemet att kontrollera sin kreditgräns, även om egenskapen för **kreditgränstyp** har satts till **Ingen** för att ange att kreditgränsen inte ska kontrolleras för någon kund.
 
-B2B-platser där egenskapen **Obligatorisk kreditgräns** är aktiverad har för närvarande ytterligare funktionalitet. Om egenskapen aktiveras för en kundpost hindrar B2B-webbplats dem från att använda kontobetalningsmetoden för att betala mer än resten av kreditsaldot när kunden gör en beställning. Om kundens återstående kreditsaldo är 1 000 USD men ordern är värd ett 1 200 USD kan kunden till exempel bara betala 1 000 USD med à conto-metoden. De måste använda någon annan betalningsmetod för att betala saldot. Om den **obligatoriska kreditgränsegenskapen** är inaktiverad för en kundpost kan kunden betala vilket belopp som helst med betalningsmetoden à conto. Även om kunden kan göra beställningar innebär systemet inte att dessa order kan uppfyllas om de överskrider kreditgränsen. Om du måste kontrollera kreditgränsen för alla kunder som är berättigade till a conto-betalningar rekommenderar vi att du ställer in egenskapen **kreditgränstyp** till **Saldo + förpackningsföljesedel eller produktföljesedel** och egenskapen **Obligatorisk kreditgräns** till **Nej**.
+För närvarande kan en kund som använder kontobetalningsmetoden inte betala mer än det återstående kreditsaldot för en order. Om kundens återstående kreditsaldo är 1 000 USD men ordern är värd ett 1 200 USD kan kunden till exempel bara betala 1 000 USD med à conto-metoden. Kunden måste sedan använda någon annan betalningsmetod för att betala saldot. I en framtida version innebär en handelskonfiguration att användarna kan lägga ut mer än sin kreditgräns när de gör beställningar.
 
 Modulen **Kredit - och inkasso** har nya funktioner för kredithantering. För att aktivera dessa funktioner, aktivera **Kredithantering** i arbetsytan **funktionshantering**. En av de nya funktionerna gör det möjligt att spärra försäljningsorder baserat på spärregler. Kreditchefen kan sedan frisläppa eller avvisa order efter vidare analys. Möjligheten att parkera försäljningsorder är dock inte tillämplig på Commerce-order, eftersom försäljningsorder ofta har en förskottsbetalning och **kredithantering** funktionen inte helt stöder scenarier för förskottsbetalning. 
 
 Oavsett om **kredithantering** funktionen är aktiverad innehar inte försäljningsordern om ett kundsaldo går över kreditgränsen under uppfyllelsen av ordern. I stället genererar Commerce antingen ett varningsmeddelande eller ett felmeddelande, beroende på värdet för **meddelandet när kreditgränsen överskrids** på snabbflikarna **Kreditgränser**.
 
-Egenskapen **Exkludera från kredithantering** som hindrar Commerce försäljningsorder från att stängas finns i försäljningsorderrubriken (**Butik och handel \> Kunder \> Alla försäljningsorder**). Om egenskapen har värdet **Ja** (standardvärdet) för Commerce-försäljningsorder exkluderas orderna från innehar arbetsflödet för kredithantering. Observera att även om egenskapen kallas **Exkludera från kredithantering** används den definierade kreditgränsen fortfarande under uppfyllelse av ordern. Orderna går inte att innehar.
+Egenskapen **Exkludera från kredithantering** som hindrar Commerce försäljningsorder från att stängas finns i försäljningsorderrubriken (**Butik och handel \> Kunder \> Alla försäljningsorder**). Om egenskapen har värdet **Ja** (standardvärdet) för Commerce-försäljningsorder exkluderas orderna från innehar arbetsflödet för kredithantering. Även om egenskapen kallas **Exkludera från kredithantering** används den definierade kreditgränsen fortfarande under uppfyllelse av ordern. Orderna går inte att innehar.
 
 Möjligheten att spärra Commerce-försäljningsorder baserat på spärrningsregler planeras för framtida Commerce-versioner. Tills det stöds kan du, om du måste tvinga Commerce-försäljningsorder att gå igenom de nya kredithanteringsflödena, anpassa följande XML-filer i Visual Studio-lösningen. Ändra logiken i filerna så att **CredManExcludeSalesOrder**-flaggor ställs in på **Nej**. På det här sättet ställs egenskapen **Exkludera från kredithantering** som standard in på **Nej** för försäljningsorder om Commerce.
 
