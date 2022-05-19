@@ -600,7 +600,9 @@
                       href: wallets.md
                     - name: Utökade betalningar i webbutikskassa
                       href: dev-itpro/enhanced-sca.md
-                    - name: Vanliga frågor om betalningar
+                    - name: Konfigurera expressbetalningar för PayPal
+                      href: dev-itpro/express-payments-paypal.md
+                    - name: Vanliga frågor och svar om betalningar
                       href: dev-itpro/payments-retail.md
                 - name: E-post och meddelanden
                   items:
@@ -958,6 +960,8 @@
               href: online-store-overview.md
             - name: Skapa en näthandelsplats
               items:
+                - name: Mappa kanaler till näthandelsplatser
+                  href: map-channels-sites.md
                 - name: Konfigurera ditt domännamn
                   href: configure-your-domain-name.md
                 - name: Distribuera en ny klientorganisation för näthandel
@@ -2560,18 +2564,20 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: Migrera kassatillägg till SDK för Commerce
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Skapa ett projekt för tilläggspaket för kassa
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
                     - name: Felsöka Store Commerce-tillägg genom VS Code
                       href: dev-itpro/sc-debug.md
+                    - name: Slutna MPOS- och CPOS-tillägg
+                      items:
+                        - name: Skapa en .appx-fil för ett Modern POS-tilläggspaket
+                          href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                        - name: Felsöka tillägg för MPOS (slutet) och CPOS
+                          href: dev-itpro/pos-extension/debug-pos-extension.md
                 - name: Miljöinställningar
                   items:
                     - name: Lokal utvecklingsmiljö
                       href: dev-itpro/setup-local-dev-env.md
-                    - name: Skapa ett projekt för tilläggspaket för kassa
-                      href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Skapa en .appx-fil för ett Modern POS-tilläggspaket
-                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: Felsöka kassatillägg
-                      href: dev-itpro/pos-extension/debug-pos-extension.md
                 - name: 'API:er och referens'
                   items:
                     - name: Visa information om tilläggspaket för kassa
@@ -2834,6 +2840,10 @@
                           href: e-commerce-extensibility/instance-cache.md
                         - name: Modul för CSS-optimering
                           href: e-commerce-extensibility/module-css-optimization.md
+                        - name: Optimera bilder på produktinformationssidorna
+                          href: e-commerce-extensibility/optimize-images-pdp.md
+                        - name: Optimera bilder på sök- och kategorisidor
+                          href: e-commerce-extensibility/optimize-images-search-cat.md
                     - name: Telemetri och analyser
                       items:
                         - name: Telemetrilogg

@@ -86,8 +86,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Köp Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurera Lagerhållning för lokala distributioner
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dokumentationsresurser
               items:
                 - name: Hjälpsystem
@@ -3299,8 +3297,8 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: Registrera artiklar för en artikel som är aktiverad för grundläggande lagerstyrning med hjälp av en artikelinförseljournal
                   href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: 'Importera inkommande ASN:er via V2-datatabellen'
-                  href: warehousing/import-asn-v2-data-entity.md
+                - name: 'Importera inkommande ASN:er via V3-datatabellen'
+                  href: warehousing/import-asn-data-entity.md
                 - name: Direktleverera produkter från det mottagande lagerstället till butiker
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: Ställ in ett platsdirektiv för artikelinförsel av inköpsorder

@@ -48,13 +48,9 @@
               href: dev-tools/version-models-build.md
         - name: Dataintegration
           items:
-            - name: Integrering mellan Ekonomi och drift-appar och tjänster från tredje part
+            - name: Integrering mellan appar för ekonomi och drift och tjänster från tredje part
               href: data-entities/integration-overview.md
-            - name: Prioritetsbaserad begränsning
-              hreF: data-entities/priority-based-throttling.md
-            - name: Vanliga frågor och svar om prioritetsbaserad begränsning
-              href: data-entities/throttling-faq.md
-            - name: 'API:er för dataintegrering'
+            - name: 'API:er för dataintegration'
               items:
                 - name: REST API för datahanteringspaket
                   href: data-entities/data-management-api.md
@@ -74,7 +70,19 @@
                   href: data-entities/recurring-integrations.md
                 - name: Testtjänster som använder verktyg från tredje part
                   href: data-entities/third-party-service-test.md
-            - name: Koppling till Ekonomi och drift
+            - name: Begränsningar av tjänsteskydd
+              items:
+                - name: Begränsningar av API för tjänsteskydd
+                  href: data-entities/service-protection-api-limits.md
+                - name: Begränsningar av prioritering
+                  href: data-entities/priority-based-throttling.md
+                - name: Utför åtgärderna igen
+                  href: data-entities/service-protection-retry-operations.md
+                - name: Övervaka API-begränsning
+                  href: data-entities/service-protection-monitoring.md
+                - name: Maximera API-genomflöde
+                  href: data-entities/service-protection-maximizing-api-throughput.md
+            - name: Anslutningsprogram för ekonomi och drift
               href: data-entities/fin-ops-connector.md
             - name: Utveckling för integration
               items:
@@ -398,6 +406,8 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Konfigurera proxyservrar för lokala miljöer
                       href: deployment/onprem-reverseproxy.md
+                    - name: Konfigurera distributionslager app för lokala distributioner
+                      href: deployment/warehousing-for-on-premise-deployments.md
                     - name: Installera nätverksskrivare i lokala miljöer
                       href: analytics/install-network-printer-onprem.md
                     - name: Lokal diagnostik
@@ -472,19 +482,17 @@
                   href: help/language-locale.md
                 - name: 'Utöka, anpassa och samarbeta om hjälpen'
                   href: help/contributor-guide.md
-            - name: Att tänka på vid distribuering
+            - name: Regionala tjänster för appar för ekonomi och drift
               items:
-                - name: Distribuering av lokala molnbaserade distributionsalternativ för Dynamics 365 Finance och Dynamics 365 Supply Chain Management
+                - name: Lokala geografiska områden
                   href: deployment/deployment-options-geo.md
-                - name: Finance och Supply Chain Management i GCC (US Government Community Cloud)
+                - name: US Government Community Cloud (GCC)
                   href: deployment/us-gcc-deployment.md
-                - name: Finance och Supply Chain Management som drivs av 21Vianet i Kina
+                - name: Drivs av 21Vianet i Kina
                   href: deployment/china-local-deployment.md
-                - name: Ekonomi och drift-appar i Frankrike
-                  href: deployment/france-local-deployment.md
-        - name: Ta fram och anpassa
+        - name: Utveckla och anpassa
           items:
-            - name: Ta fram och anpassa – startsida
+            - name: Utveckla och anpassa startsida
               href: dev-tools/developer-home-page.md
             - name: Programstack och serverarkitektur
               href: dev-tools/application-stack-server-architecture.md
@@ -559,7 +567,7 @@
                     - name: Skapa modeller och datamodellelement – översikt
                       href: dev-tools/create-data-model-elements.md
                     - name: Riktlinjer för namngivning av tillägg
-                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
+                      href: /dynamics365/fin-ops-core/dev-itpro/extensibility/naming-guidelines-extensions
                     - name: Inaktivera modellanpassning och avskrivningsfunktioner
                       href: dev-tools/lock-models.md
                 - name: Rapport med anpassningsanalys

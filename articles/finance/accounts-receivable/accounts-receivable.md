@@ -1,28 +1,28 @@
 ---
 title: Startsida för Kundreskontra
 description: Använd Kundreskontra när du vill spåra kundfakturor och inkommande betalningar.
-author: roschlom
+author: kfend
 ms.date: 08/18/2017
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "20671"
 - intro-internal
 ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 946a4e3cab6549af8b6c07248b6889e3b610f27f
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 412b900b5eb9a3a01feb5f4dd67529a5128e52b7
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726952"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711866"
 ---
 # <a name="accounts-receivable-home-page"></a>Startsida för Kundreskontra
 
@@ -83,9 +83,9 @@ Gå till [Microsoft Dynamics 365 översikt](/dynamics365/release-plans/) för at
 
 #### <a name="blogs"></a>Bloggar
 
-Det finns åsikter, nyheter och annan information om kundreskontra och andra lösningar i [bloggen om Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [bloggen om Microsoft Dynamics 365 Finance and Operations – Ekonomi](https://community.dynamics.com/365/financeandoperations/b/financials).
+Det finns åsikter, nyheter och annan information om kundreskontra och andra lösningar i bloggen [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [Microsoft Dynamics 365 Finance and Operations – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partner en resurs där de kan få mer information om vad som är nytt och trendar i Dynamics 365.
+I [partnercommunitybloggen för Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partner en resurs där de kan få mer information om vad som är nytt och trendar i Dynamics 365.
 
 #### <a name="task-guides"></a>Uppgiftsguider
 Mer hjälp är tillgänglig som uppgiftsguider i appen. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.

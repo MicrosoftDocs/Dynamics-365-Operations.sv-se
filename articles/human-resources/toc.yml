@@ -452,8 +452,6 @@
               href: hr-personnel-positions.md
             - name: Skapa en arbetstidskalender
               href: hr-personnel-create-working-time-calendar.md
-            - name: Rekrytera jobbkandidater
-              href: hr-personnel-recruit.md
             - name: Vanliga frågor och svar om personalåtgärder
               href: hr-personnel-actions-faq.md
             - name: Använda arbetsflöden för att hantera medarbetarinformation
@@ -463,7 +461,7 @@
             - name: Ändra rapporteringsrelationer för en befattning
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Strömlinjeformad medarbetarinmatning
-              href: ../talent/streamlined-employee-entry.md?toc=/dynamics365/human-resources/toc.json
+              href: stream-employee-entry.md
             - name: Ange arbetarinformation
               href: hr-personnel-enter-worker-information.md
             - name: Arbetare utan anställning
@@ -488,26 +486,34 @@
               href: hr-personnel-set-up-injury-illness-information.md
             - name: Underhålla information om medarbetares skador och sjukdomar
               href: hr-personnel-maintain-employee-injury-illness-information.md
-            - name: Rekrytera kandidater
+            - name: Rekrytering
               items:
-                - name: Hantera rekryteringsprocesser
-                  href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-                - name: Massanställningsprojekt
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md
-                - name: Skapa massanställningsprojekt
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
-                - name: Ange sökanden och ansökningsdata manuellt
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-                - name: Utveckla och öppna jobbrekvisitioner
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-                - name: Ställa in befattningar
-                  href: ../human-resources/hr-personnel-set-up-positions.md
-                - name: Anställa kandidater via rekrytering
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                - name: Anställa befintliga medarbetare via rekrytering
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-                - name: Identifiera och distribuera kandidaturvalsverktyg
-                  href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+                - name: Översikt
+                  href: ../human-resources/hr-recruit-overview.md
+                - name: Rekryteringsprojekt
+                  items:
+                    - name: Hantera processer för rekryteringsprojekt
+                      href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                    - name: Ange sökanden och ansökningsdata manuellt
+                      href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
+                    - name: Utveckla och öppna jobbrekvisitioner
+                      href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
+                    - name: Ställa in befattningar
+                      href: ../human-resources/hr-personnel-set-up-positions.md
+                    - name: Anställa kandidater via rekrytering
+                      href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
+                    - name: Anställa befintliga medarbetare via rekrytering
+                      href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
+                    - name: Identifiera och distribuera kandidaturvalsverktyg
+                      href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+                    - name: Massanställningsprojekt
+                      href: ../human-resources/hr-personnel-mass-hire-projects.md
+                    - name: Skapa massanställningsprojekt
+                      href: ../human-resources/hr-personnel-create-mass-hire-project.md
+                - name: Rekryteringsbegäranden (sammanslagen infrastruktur)
+                  items:
+                    - name: Rekrytera jobbkandidater
+                      href: hr-personnel-recruit.md
         - name: Uppgiftshantering
           href: hr-task-mgmt.md
         - name: Tjänstledighet och frånvaro
@@ -796,10 +802,12 @@
               href: hr-admin-integration-choose-technology.md
             - name: Konfigurera Dataverse-integration
               href: hr-admin-integration-common-data-service.md
-            - name: Konfigurera virtuella Dataverse-register
+            - name: Konfigurera virtuella Dataverse-tabeller
               href: hr-admin-integration-common-data-service-virtual-entities.md
             - name: Konfigurera integration med Finance
               href: hr-admin-integration-finance.md
+            - name: Skapa länkar från Human Resources till en annan miljö
+              href: configure-links.md
             - name: Konfigurera integration med Dayforce
               href: hr-admin-integration-dayforce.md
             - name: Skapa en app för återkommande dataexport

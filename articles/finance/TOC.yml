@@ -86,8 +86,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
                 - name: Köp Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurera Lagerhållning för lokala distributioner
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
             - name: Dokumentationsresurser
               items:
                 - name: Hjälpsystem
@@ -272,6 +270,8 @@
                   href: accounts-payable/tasks/research-resolve-exceptions.md
             - name: Bokföringsprofiler för leverantörer
               href: accounts-payable/vendor-posting-profiles.md
+            - name: Skapa avgiftskoder
+              href: accounts-receivable/create-charges-codes.md
             - name: Leverantörsfakturadatum
               href: accounts-payable/vendor-invoice-dates.md
             - name: Omräkning i utländsk valuta för leverantörsreskontra och kundreskontra
@@ -292,6 +292,8 @@
               items:
                 - name: Centraliserade leverantörsreskontrabetalningar
                   href: accounts-payable/centralized-payments-accounts-payable.md
+                - name: Ställa in och behandla interimsbetalningar
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: Konfigurera kvittning
                   href: cash-bank-management/configure-settlement.md
                 - name: Kvitta rest
@@ -354,11 +356,15 @@
               href: accounts-receivable/set-up-process-recurring-invoices.md
             - name: Redovisningsfördelningar och poster i redovisningsjournaler för fritextfakturor
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
+            - name: Bokföring av kundreskontra
+              href: general-ledger/accts-recvble-posting.md
             - name: Kundbokföringsprofiler
               href: accounts-receivable/customer-posting-profiles.md
+            - name: Skapa avgiftskoder
+              href: accounts-receivable/create-charges-codes.md
             - name: Översikt över SEPA-autogiro
               href: accounts-receivable/sepa-direct-debit-overview.md
-            - name: Ställa in SEPA Autogiromedgivande
+            - name: Ställa in autogiromedgivande för SEPA
               href: accounts-receivable/sepa-direct-debit-mandate.md
             - name: 'Inställning, auktorisering och registrering av kreditkort'
               href: accounts-receivable/credit-card-authorizations.md
@@ -436,6 +442,8 @@
                       href: accounts-receivable/terminate-billing-schedule.md
                     - name: Scenarier för justeringsdatum
                       href: accounts-receivable/sb-alignment-date-examples.md
+                    - name: Intäktsdelning
+                      href: accounts-receivable/sb-revenue-split.md
                 - name: Periodisering av intäkt och utgift
                   items:
                     - name: Konfigurera periodisering av intäkt och utgift
@@ -452,6 +460,8 @@
               items:
                 - name: Översikt över kundbetalning
                   href: cash-bank-management/tasks/customer-payment-overview.md
+                - name: Ställa in och behandla interimsbetalningar
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: Centraliserade kundreskontrabetalningar
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
                 - name: Sätt in kundbetalningar
@@ -1026,6 +1036,14 @@
                       href: general-ledger/import-currency-exchange-rates.md
                     - name: Dubbel valuta
                       href: general-ledger/dual-currency.md
+                - name: Bokföringsprofiler
+                  items:
+                    - name: Översikt över bokföringsprofiler
+                      href: general-ledger/pstg-prfles-ovrvw.md
+                    - name: Rekommenderade metoder för bokföringsprofiler
+                      href: general-ledger/recommended-practices-pstg-prfles.md
+                    - name: Konton för automatiska transaktioner
+                      href: general-ledger/accounts-for-auto-transactions.md
                 - name: Allokeringsregler
                   items:
                     - name: Allokeringsregler för redovisning
