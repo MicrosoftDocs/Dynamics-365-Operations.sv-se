@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 95d272d9076f1ab25230e4efa98e321bdd618062
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407805"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688387"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Uppgradera till part- och globala adressboksmodellen
 
@@ -57,10 +57,10 @@ Följande förutsättningar krävs för att du ska kunna uppgradera till den par
 
 En uppgradering kräver följande förberedelser:
 
-+ **Fullständig synkronisering:** Både Finance and Operations-miljön och kundengagemangsmiljön är i ett helt synkroniserat tillstånd för tabellerna **Konto (kund)**, **Kontakt** och **Leverantör**.
++ **Fullständig synkronisering:** Både Ekonomi och drift-miljön och kundengagemangsmiljön är i ett helt synkroniserat tillstånd för tabellerna **Konto (kund)**, **Kontakt** och **Leverantör**.
 + **Integreringsnycklar**: Registren **Konto (Kund)**, **Kontakt** och **Leverantör** i program för kundengagemang använder de integreringsnycklar. Om du anpassar integreringsnycklarna måste du anpassa mallen.
 + **Partsnummer:** Alla **Kontro (kund)**, **Kontakt** och **Leverantör** poster som ska uppgraderas har ett partsnummer. Poster som inte har något partnummer ignoreras. Om du vill uppgradera dessa poster lägger du till ett Partsnummer i dem innan du startar uppgraderingsprocessen.
-+ **Systemavbrott**: Under uppgraderingen måste du ta både Finance and Operations-miljön och miljön för kundengagemangsmiljön offline.
++ **Systemavbrott**: Under uppgraderingen måste du ta både Ekonomi och drift-miljön och miljön för kundengagemangsmiljön offline.
 + **Ögonblicksbild:** Ta ögonblicksbilder av både appen för ekonomi och drift och appen för kundengagemang. Du kan sedan använda ögonblicksbilderna om du vill återställa föregående status.
 
 ## <a name="deployment"></a>Distribution
@@ -281,7 +281,7 @@ I det här avsnittet beskrivs de inställningar som krävs för att du ska kunna
 
     ![Köra mallarna för partens postadress och den elektroniska adressen till parten.](media/ADF-7.png)
 
-10. Om du vill uppdatera appen för ekonomi och drift med denna data måste du konvertera .csv-filer till en Excel-arbetsbok och [importera den till app för ekonomi och drift](/data-entities/data-import-export-job). Alternativt, om CSV-importen fungerar kan du importera .csv-filer direkt. Detta steg kan ta några timmar att slutföra baserat på volymen.
+10. Om du vill uppdatera appen för ekonomi och drift med denna data måste du konvertera .csv-filer till en Excel-arbetsbok och [importera den till app för ekonomi och drift](../data-import-export-job.md). Alternativt, om CSV-importen fungerar kan du importera .csv-filer direkt. Detta steg kan ta några timmar att slutföra baserat på volymen.
 
     ![Import klar.](media/ADF-8.png)
 

@@ -1,21 +1,21 @@
 ---
 title: Affärsdokument som stöds av Global Lagerredovisning
 description: Det här ämnet visar en lista med affärsdokument som stöds av Global lagerredovisning. Det ger också ett detaljerat exempel på inköpsorderdokument.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 47251a7167a00346aed26b9e9535f1b12301e5a6
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 44081be35c6737aa0d16b6e11a5fc8f94b41e872
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860596"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8674461"
 ---
 # <a name="business-documents-supported-by-global-inventory-accounting"></a>Affärsdokument som stöds av Global Lagerredovisning
 

@@ -2,7 +2,7 @@
 title: Momsrapport för Sverige
 description: I det här avsnittet beskrivs hur du ställer in och genererar momsrapporten för juridiska personer i Sverige.
 author: anasyash
-ms.date: 03/24/2022
+ms.date: 05/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Sweden
 ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 64dcafe0dcbfc4a1097fa10285ab988d4d0a674f
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 47f4d14c24d543b9e5b3659683504b37e57e7c24
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487687"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8679580"
 ---
 # <a name="sales-tax-report-for-sweden"></a>Momsrapport för Sverige
 
@@ -41,7 +41,7 @@ Om du vill skapa en momsrapport i rätt format för rätt skattemyndighet, måst
 
 ## <a name="set-up-sales-tax-reporting-codes-for-vat-reporting"></a>Ställ in momsrapporteringskoder för momsrapportering
 
-Ställ in momsrapporteringskoder genom att följa instruktionerna i [ställa in momsrapporteringskoder](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SE-VAT-declaration/articles/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes.md). Följande tabell innehåller ett exempel på momsrapporteringskoder för Sverige.
+Ställ in momsrapporteringskoder genom att följa instruktionerna i [ställa in momsrapporteringskoder](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md). Följande tabell innehåller ett exempel på momsrapporteringskoder för Sverige.
 
 | **Kod och motsvarande fält i momsdeklarationen** | **Beskrivning**                                                                                                                                                                                    |
 |-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -79,27 +79,27 @@ Ställ in momsrapporteringskoder genom att följa instruktionerna i [ställa in 
 
 Ställ in momskoder genom att följa instruktionerna i avsnitten, [momskoder för momsrapportering](emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) och [momsöversikt](../general-ledger/indirect-taxes-overview.md).
 
-## <a name="generate-a-sales-tax-payment-and-print-the-swedish-sales-tax-report"></a>Generera en momsbetalning och skriva ut svensk momsrapport
+## <a name="generate-a-sales-tax-payment-and-print-the-swedish-sales-tax-report"></a><a name="generate"></a> Generera en momsbetalning och skriva ut svensk momsrapport
 
 Beräkna momsbeloppen för kvittningsperioden i slutet av momsrapportperioden.
 
 1. Gå till **Moms** \> **Deklarationer** \> **Moms** \> **Kvitta och bokför moms**.
 2. I dialogrutan **Rapportera moms för kvittningsperiod** anger du följande fält.
 
-| **Fält**                 | **Beskrivning**                                                                                                                                                                                                                                                                         |
-|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kvittningsperiod         | Välj tillämplig rapporteringsperiod.                                                                                                                                                                                                                                                 |
-| Från datum                 | Ange det första datumet i den momskvittningsperiod som moms ska beräknas för. Det här värdet motsvarar datumet i fältet **Från** på sidan **Momskvittningsperioder**.                                                                                 |
-| Transaktionsdatum          | Ange datum när momsrapporten beräknas. Standardvärdet är det aktuella datumet. Momsbetalningen beräknas för alla transaktioner som bokfördes under kvittningsperioden.                                                                                  |
-| Momsbetalningsversion | Välj typ av momskvittning. Om denna momskvittning är den första momskvittningen för perioden väljer du **Original**. Om en momskvittning redan har genererats väljer du **Senaste korrigeringar**. Mer information finns i [Skapa momsbetalning](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/general-ledger/tasks/create-sales-tax-payment.md). |
+    | **Fält**                 | **Beskrivning**                                                                                                                                                                                                                                                                         |
+    |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Kvittningsperiod         | Välj tillämplig rapporteringsperiod.                                                                                                                                                                                                                                                 |
+    | Från datum                 | Ange det första datumet i den momskvittningsperiod som moms ska beräknas för. Det här värdet motsvarar datumet i fältet **Från** på sidan **Momskvittningsperioder**.                                                                                 |
+    | Transaktionsdatum          | Ange datum när momsrapporten beräknas. Standardvärdet är det aktuella datumet. Momsbetalningen beräknas för alla transaktioner som bokfördes under kvittningsperioden.                                                                                  |
+    | Momsbetalningsversion | Välj typ av momskvittning. Om denna momskvittning är den första momskvittningen för perioden väljer du **Original**. Om en momskvittning redan har genererats väljer du **Senaste korrigeringar**. Mer information finns i [Skapa momsbetalning](../general-ledger/tasks/create-sales-tax-payment.md). |
 
 3. Välj **OK**. Fyll i följande fält i dialogruta **Svensk momsrapport**.
 
-| **Fält**                       | **Beskrivning**                                                                                                                                                                                                                                                 |
-|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Skattevaluta                    | Välj den valuta som avgör vilka transaktioner som ska ingå i rapporten. I rapporten tas båda transaktionerna som genereras med hjälp av momsvalutan och transaktionerna som genereras med hjälp av momskoderna som använder momsvalutan. |
-| Rapporteringsvaluta              | Välj den utländska valuta som rapporten ska genereras i.                                                                                                                                                                                             |
-| Valutakursen på rapporteringsdatumet | Ställ in det här alternativet på **Ja** om du vill ange att valutakursen för rapportdatumet ska användas för alla transaktioner i rapporten.                                                                                                                      |
+    | **Fält**                       | **Beskrivning**                                                                                                                                                                                                                                                 |
+    |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Skattevaluta                    | Välj den valuta som avgör vilka transaktioner som ska ingå i rapporten. I rapporten tas båda transaktionerna som genereras med hjälp av momsvalutan och transaktionerna som genereras med hjälp av momskoderna som använder momsvalutan. |
+    | Rapporteringsvaluta              | Välj den utländska valuta som rapporten ska genereras i.                                                                                                                                                                                             |
+    | Valutakursen på rapporteringsdatumet | Ställ in det här alternativet på **Ja** om du vill ange att valutakursen för rapportdatumet ska användas för alla transaktioner i rapporten.                                                                                                                      |
 
 4. Klicka på **OK** om du vill generera momsbetalningen.
 
@@ -114,7 +114,7 @@ Beräkna momsbeloppen för kvittningsperioden i slutet av momsrapportperioden.
 Du kan också skapa en svensk momsrapport genom att använda begäran **Rapportera moms för kvittningsperiod**.
 
 1. Gå till **Moms** \> **Deklarationer** \> **Moms** \> **Rapportera moms för kvittningsperiod**.
-2. Ange fältet **Kvittningsperiod**, **Från datum**, **Momsvaluta** och **Rapporteringsvaluta** enligt beskrivningen i avsnittet [Generera en momsbetalning och skriv ut svensk momsrapport](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SE-VAT-declaration/articles/finance/localizations/emea-swe-Sales-tax-payment-report-for-Sweden.md#generate-a-sales-tax-payment-and-print-the-swedish-sales-tax-report) tidigare i detta ämne.
+2. Ange fältet **Kvittningsperiod**, **Från datum**, **Momsvaluta** och **Rapporteringsvaluta** enligt beskrivningen i avsnittet [Generera en momsbetalning och skriv ut svensk momsrapport](#generate) tidigare i detta ämne.
 3. I fältet **Momsbetalningsversion**, välj ett att följande alternativ:
 
     - **Original** – Generera en rapport för momstransaktioner för den första bokförda kvittningsberäkningen för perioden.
@@ -122,7 +122,7 @@ Du kan också skapa en svensk momsrapport genom att använda begäran **Rapporte
     - **Total lista** – generera en rapport för alla försäljningstransaktioner för perioden. Dessa transaktioner inkluderar ursprungliga och korrigerade transaktioner.
 
 4. Välj **OK**.
-5. Ange fälten **Momsvaluta**, **Rapporteringsvaluta** och **Växlingskurs på rapporteringsdatumet** enligt beskrivningen i avsnittet [Generera en momsbetalning och skriv ut svensk momsrapport](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SE-VAT-declaration/articles/finance/localizations/emea-swe-Sales-tax-payment-report-for-Sweden.md#generate-a-sales-tax-payment-and-print-the-swedish-sales-tax-report).
+5. Ange fälten **Momsvaluta**, **Rapporteringsvaluta** och **Växlingskurs på rapporteringsdatumet** enligt beskrivningen i avsnittet [Generera en momsbetalning och skriv ut svensk momsrapport](#generate).
 
 ## <a name="example"></a>Exempel
 
@@ -130,57 +130,57 @@ Följande exempel visar hur du kan ställa in momskoder och momsrapporteringskod
 
 1. Gå till **Skatt** \> **Indirekt moms** \> **Moms** \> **Momskoder** och ställ in följande momskoder.
 
-| **Momskod** | **Procentsats** | **Beskrivning**                                                                        |
-|--------------------|----------------|----------------------------------------------------------------------------------------|
-| SE25               | 25             | Lokal försäljning och inköp med en kostnad på 25 procent                                   |
-| SE12               | 12             | Lokal försäljning och inköp med en kostnad på 12 procent                                   |
-| SE6                | 6              | Lokal försäljning och inköp med en kostnad på 6 procent                                    |
-| SEEU25             | 25             | EU-inköp med en kostnad på 25 procent där alternativet **importavgift** är inställt på **Ja**.   |
-| SEEU12             | 12             | EU-inköp med en kostnad på 12 procent där alternativet **importavgift** är inställt på **Ja**.   |
-| SEEU6              | 6              | EU-inköp med en kostnad på 6 procent där alternativet **importavgift** är inställt på **Ja**.    |
-| SEImp25            | 25             | Importera till en kostnad på 25 procent där alternativet **importavgift** är inställt på **Ja**.         |
-| SEImp12            | 12             | Importera till en kostnad på 12 procent där alternativet **importavgift** är inställt på **Ja**.         |
-| SEImp6             | 6              | Importera till en kostnad på 6 procent där alternativet **importavgift** är inställt på **Ja**.          |
-| SERC25             | 25             | Återfört tillägg till en kostnad på 25 procent där alternativet **importavgift** är inställt på **Ja**. |
-| SERC12             | 12             | Återfört tillägg till en kostnad på 12 procent där alternativet **importavgift** är inställt på **Ja**. |
-| SERC6              | 6              | Återfört tillägg till en kostnad på 6 procent där alternativet **importavgift** är inställt på **Ja**.  |
-| SEEUS              | 0              | Försäljning inom EU där alternativet **undantag** anges till **Ja**.                                |
-| SEThird            | 0              | Exportförsäljning där alternativet **undantag** anges till **Ja**.                            |
+    | **Momskod** | **Procentsats** | **Beskrivning**                                                                        |
+    |--------------------|----------------|----------------------------------------------------------------------------------------|
+    | SE25               | 25             | Lokal försäljning och inköp med en kostnad på 25 procent                                   |
+    | SE12               | 12             | Lokal försäljning och inköp med en kostnad på 12 procent                                   |
+    | SE6                | 6              | Lokal försäljning och inköp med en kostnad på 6 procent                                    |
+    | SEEU25             | 25             | EU-inköp med en kostnad på 25 procent där alternativet **importavgift** är inställt på **Ja**.   |
+    | SEEU12             | 12             | EU-inköp med en kostnad på 12 procent där alternativet **importavgift** är inställt på **Ja**.   |
+    | SEEU6              | 6              | EU-inköp med en kostnad på 6 procent där alternativet **importavgift** är inställt på **Ja**.    |
+    | SEImp25            | 25             | Importera till en kostnad på 25 procent där alternativet **importavgift** är inställt på **Ja**.         |
+    | SEImp12            | 12             | Importera till en kostnad på 12 procent där alternativet **importavgift** är inställt på **Ja**.         |
+    | SEImp6             | 6              | Importera till en kostnad på 6 procent där alternativet **importavgift** är inställt på **Ja**.          |
+    | SERC25             | 25             | Återfört tillägg till en kostnad på 25 procent där alternativet **importavgift** är inställt på **Ja**. |
+    | SERC12             | 12             | Återfört tillägg till en kostnad på 12 procent där alternativet **importavgift** är inställt på **Ja**. |
+    | SERC6              | 6              | Återfört tillägg till en kostnad på 6 procent där alternativet **importavgift** är inställt på **Ja**.  |
+    | SEEUS              | 0              | Försäljning inom EU där alternativet **undantag** anges till **Ja**.                                |
+    | SEThird            | 0              | Exportförsäljning där alternativet **undantag** anges till **Ja**.                            |
 
 2. På sidan **Momskoder** på snabbfliken **Rapportinställning** tilldelar rapporteringskoder till momskoder.
 
    Följande tabell visar hur du tilldelar momsrapporteringskoder till momskoder.
 
-| **Momskod** | **Skattepliktig försäljning** | **Skattefri försäljning** | **Momsskuld** | **Skattepliktiga inköp** | **Momsfordran** | **Skattepliktig import** | **Importavgift** | **Motbokning av importavgift** |
-|--------------------|-------------------|-------------------|-----------------------|-----------------------|--------------------------|--------------------|-------------|--------------------|
-| SE25               | 05                |                   | 10                    |                       | 48                       |                    |             |                    |
-| SE12               | 05                |                   | 11                    |                       | 48                       |                    |             |                    |
-| SE6                | 05                |                   | 12                    |                       | 48                       |                    |             |                    |
-| SEEU25             |                   |                   |                       |                       |                          | 20                 | 48          | 30                 |
-| SEEU12             |                   |                   |                       |                       |                          | 20                 | 48          | 31                 |
-| SEEU6              |                   |                   |                       |                       |                          | 20                 | 48          | 32                 |
-| SEImp25            |                   |                   |                       |                       |                          | 50                 | 48          | 60                 |
-| SEImp12            |                   |                   |                       |                       |                          | 50                 | 48          | 61                 |
-| SEImp6             |                   |                   |                       |                       |                          | 50                 | 48          | 62                 |
-| SERC25             |                   |                   |                       |                       |                          | 23                 | 48          | 30                 |
-| SERC12             |                   |                   |                       |                       |                          | 23                 | 48          | 31                 |
-| SERC6              |                   |                   |                       |                       |                          | 23                 | 48          | 32                 |
-| SEEUS              |                   | 35                |                       |                       |                          |                    |             |                    |
-| SEThird            |                   | 36                |                       |                       |                          |                    |             |                    |
+    | **Momskod** | **Skattepliktig försäljning** | **Skattefri försäljning** | **Momsskuld** | **Skattepliktiga inköp** | **Momsfordran** | **Skattepliktig import** | **Importavgift** | **Motbokning av importavgift** |
+    |--------------------|-------------------|-------------------|-----------------------|-----------------------|--------------------------|--------------------|-------------|--------------------|
+    | SE25               | 05                |                   | 10                    |                       | 48                       |                    |             |                    |
+    | SE12               | 05                |                   | 11                    |                       | 48                       |                    |             |                    |
+    | SE6                | 05                |                   | 12                    |                       | 48                       |                    |             |                    |
+    | SEEU25             |                   |                   |                       |                       |                          | 20                 | 48          | 30                 |
+    | SEEU12             |                   |                   |                       |                       |                          | 20                 | 48          | 31                 |
+    | SEEU6              |                   |                   |                       |                       |                          | 20                 | 48          | 32                 |
+    | SEImp25            |                   |                   |                       |                       |                          | 50                 | 48          | 60                 |
+    | SEImp12            |                   |                   |                       |                       |                          | 50                 | 48          | 61                 |
+    | SEImp6             |                   |                   |                       |                       |                          | 50                 | 48          | 62                 |
+    | SERC25             |                   |                   |                       |                       |                          | 23                 | 48          | 30                 |
+    | SERC12             |                   |                   |                       |                       |                          | 23                 | 48          | 31                 |
+    | SERC6              |                   |                   |                       |                       |                          | 23                 | 48          | 32                 |
+    | SEEUS              |                   | 35                |                       |                       |                          |                    |             |                    |
+    | SEThird            |                   | 36                |                       |                       |                          |                    |             |                    |
 
    > [!NOTE]
    > Den föregående konfigurationen är bara ett exempel och beror på strukturen för de momskoder som används. Om du vill att värdena ska beräknas och överföras till momsrapporten, för varje momskod som används i momsbetalningsprocessen, måste du ställa in en relevant momsrapporteringskod i ett eller flera fält på fliken **rapportinställningar**.
    
 3. Bokför följande transaktioner. Till exempel för kundfakturor gå till **Kundreskontra** \> **Fakturor** \> **Alla fritextfakturor**, för leverantörsfakturor gå till **Leverantörsreskontra** \> **Fakturor** \> **Fakturajournal**.
 
-| **Datum**        | **transaktionstyp**            | **Nettobelopp** | **Momsbelopp** | **Momskod** | **Förväntad momsbas – rapporteringskod** | **Förväntat momsbelopp – rapporteringskod** |
-|-----------------|---------------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|
-| 1 januari 2020 | Kundfaktura                | 100            | 25             | SE25               | 5                                      | 10                                       |
-| 1 januari 2020 | Leverantörsfaktura (EU)             | 100            | 12             | SEEU12             | 20                                     | 31 – Utgående moms 48 – momsavdrag      |
-| 1 januari 2020 | Lerantörsfaktura (import)         | 100            | 6              | SEImp6             | 50                                     | 62 – Utgående moms 48 – momsavdrag      |
-| 1 januari 2020 | Kundfaktura (EU)           | 100            | 0              | SEEUS              | 35                                     | Inte tillämpligt                           |
-| 1 januari 2020 | Kundfaktura (export)       | 100            | 0              | SEThird            | 36                                     | Inte tillämpligt                           |
-| 1 januari 2020 | Leverantörsfaktura (återfört tillägg) | 100            | 25             | SERC25             | 23                                     | 30 – Utgående moms 48 – momsavdrag      |
+    | **Datum**        | **transaktionstyp**            | **Nettobelopp** | **Momsbelopp** | **Momskod** | **Förväntad momsbas – rapporteringskod** | **Förväntat momsbelopp – rapporteringskod** |
+    |-----------------|---------------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|
+    | 1 januari 2020 | Kundfaktura                | 100            | 25             | SE25               | 5                                      | 10                                       |
+    | 1 januari 2020 | Leverantörsfaktura (EU)             | 100            | 12             | SEEU12             | 20                                     | 31 – Utgående moms 48 – momsavdrag      |
+    | 1 januari 2020 | Lerantörsfaktura (import)         | 100            | 6              | SEImp6             | 50                                     | 62 – Utgående moms 48 – momsavdrag      |
+    | 1 januari 2020 | Kundfaktura (EU)           | 100            | 0              | SEEUS              | 35                                     | Inte tillämpligt                           |
+    | 1 januari 2020 | Kundfaktura (export)       | 100            | 0              | SEThird            | 36                                     | Inte tillämpligt                           |
+    | 1 januari 2020 | Leverantörsfaktura (återfört tillägg) | 100            | 25             | SERC25             | 23                                     | 30 – Utgående moms 48 – momsavdrag      |
 
 4. Gå till **Moms** \> **Deklarationer** \> **Moms** \> **Kvitta och bokför moms**. I dialogrutan **Rapportera moms för kvittningsperiod** i fältet **Momsbetalningsversion** välj **Original**.
 5. Skriv ut rapporten och granska alla data.
@@ -189,9 +189,9 @@ Följande exempel visar hur du kan ställa in momskoder och momsrapporteringskod
 
 6. Bokför den nya transaktionen. Gå till exempel till **Kundreskontra** \> **Fakturor** \> **Alla fritextfakturor**.
 
-| **Datum**        | **transaktionstyp**   | **Nettobelopp** | **Momsbelopp** | **Momskod** | **Förväntad momsbas – rapporteringskod** | **Förväntat momsbelopp – rapporteringskod** |
-|-----------------|------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|
-| 1 januari 2020 | Kundfaktura (dom) | 100            | 6              | SE6                | 5                                      | 12                                       |
+    | **Datum**        | **transaktionstyp**   | **Nettobelopp** | **Momsbelopp** | **Momskod** | **Förväntad momsbas – rapporteringskod** | **Förväntat momsbelopp – rapporteringskod** |
+    |-----------------|------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|
+    | 1 januari 2020 | Kundfaktura (dom) | 100            | 6              | SE6                | 5                                      | 12                                       |
 
 7. Gå till **Moms** \> **Deklarationer** \> **Moms** \> **Kvitta och bokför moms**. I dialogrutan **Rapportera moms för kvittningsperiod** i fältet **Momsbetalningsversion** välj **Senaste korrigeringar**.
 8. Gå till **Moms** \> **Deklarationer** \> **Moms** \> **Rapportera moms för kvittningsperiod**. I dialogrutan **Rapportera moms för kvittningsperiod** i fältet **Momsbetalningsversion** välj **korrigeringar**. På bilden nedan visas resultatet.

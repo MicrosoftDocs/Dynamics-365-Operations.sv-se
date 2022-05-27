@@ -1,23 +1,23 @@
 ---
 title: Utbildningskatalog för användare av Dynamics 365 Supply Chain Management
 description: Hitta alla utbildningsalternativ för användare av Dynamics 365 Supply Chain Management.
-author: margoc
+author: kamaybac
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: kamaybac
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fe547f6e224a072301a4d846f1a2867b70c86da3
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: a8324fe183efd956fa39ddd97f562e4c33630580
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402676"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673198"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Utbildningskatalog för användare av Dynamics 365 Supply Chain Management
 
@@ -31,7 +31,7 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 |---------|-------------|--------|--------|
 | [Lär dig affärsvärdet av Microsoft Dynamics 365 och Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Vill du lära dig mer om affärsprogram? Kanske du inte vet var du ska börja med Microsoft Dynamics 365 och Power Platform-appar? Lär dig hur kraften hos affärsappar kan hjälpa dig att omvandla verksamheten. | Gratis, självstudier online utbildningsväg | 8 timmar |
 | [Dynamics 365 och Power Platform grunder](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Vill du lära dig mer om affärsprogram? Börja med den här utbildningsvägen för att se hur Dynamics 365-appar används. Lär dig mer om molnkoncept Power Platform och hur du kommer igång med Dynamics 365-appar. | Gratis, självstudier online utbildningsväg | 5.5 timmar |
-| [Kom igång med Finance and Operations-appar](/learn/paths/get-started-finance-operations/) | Lär dig hur Finance and Operations-appar ger stöd till företag för att hantera deras globala ekonomisystem, operativa affärsprocesser och effektiviserade leveranskedjor för att ge användarna möjlighet att fatta snabba, välgrundade beslut. Det första steget i arbetet med Finance and Operations-appar är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill ha. | Gratis, självstudier online utbildningsväg | 2 timmar |
+| [Komma igång med Ekonomi och Drift-apparna](/learn/paths/get-started-finance-operations/) | Lär dig hur Ekonomi och Drift-appar ger stöd till företag för att hantera deras globala ekonomisystem, operativa affärsprocesser och effektiviserade leveranskedjor för att ge användarna möjlighet att fatta snabba, välgrundade beslut. Det första steget i arbetet med Ekonomi och Drift-appar är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill ha. | Gratis, självstudier online utbildningsväg | 2 timmar |
 | [Kom igång med tillgångshantering för Dynamics 365 Supply Chain Management](/learn/modules/get-started-asset-management/index) | Tillgångshantering är en modul för hantering av tillgångar och underhållsjobb i Dynamics 365 Supply Chain Management. Tillgångshantering gör det möjligt för dig att effektivt hantera och utföra uppgifter som rör hantering och service av många typer av utrustning i ditt företag, till exempel maskiner, produktionsutrustning och fordon. Tillgångshantering stödjer lösningar inom många branscher. | Gratis, självstudier online utbildningsmodul | 1 timma |
 | [Kom igång med tillägget Teknikändringshantering för Dynamics 365 Supply Chain Management](/learn/modules/get-started-engineering-change-management/) | Dynamics 365 Supply Chain Management gör det möjligt för medarbetare och organisationer att få en enhetlig vy över lager, lagerställe, tillverkning, service och logistik med förutsägbara analyser som möjliggör bättre strategiska beslut. | Gratis, självstudier online utbildningsmodul | 2 timmar |
 | [Kom igång med Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | Med Dynamics 365 Intelligent Order Management kan kunderna hantera orkestreringen av order ända fram till uppfyllelsen. Med dessa funktioner kan organisationer orkestrera orderflöden över olika plattformar och program. | Gratis, självstudier online utbildningsmodul | 4 timmar |
@@ -39,10 +39,10 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 
 ## <a name="core-platform-knowledge"></a>Kunskap om huvudplattformen<a name="core-platform-knowledge"></a>
 
-| Innehåll | beskrivning | Format | Längd |
+| Innehåll | Beskrivning | Format | Längd |
 |---------|-------------|--------|--------|
-| [Konfigurera organisationen i Finance and Operations-appar](/learn/paths/configure-your-organization-finance-ops/) | Som en funktionell konsult som arbetar med Finance and Operations-appar måste du förstå hur du skapar en organisation för kunden. Den här utbildningsvägen, bland andra uppgifter, hur du ställer in juridiska personer, implementerar säkerhetsinställningar, anpassar användargränssnittet för användare, utformar och skapar mobilappar, implementerar vanliga integreringer. | Gratis, självstudier online utbildningsväg | 12 timmar |
-| [Konfigurera och arbeta med analyser och rapporter i Finance and Operations-appar](/learn/paths/configure-analytics-reporting-finance-operations/) | Företagsledare kan fatta viktiga beslut i företaget om de har noggrann insikt i underliggande ekonomiska och operativa data. En affärsanvändare kan också konfigurera och använda verktyget elektroniskt rapportering utan en enskild kodrad för att införa nya regleringskrav och generera affärsdokument i det format som krävs för elektronisk utbyte av information med statliga organ, banker och andra parter. | Gratis, självstudier online utbildningsväg | 4 timmar |
+| [Konfigurera din organisation i appar för ekonomi och drift](/learn/paths/configure-your-organization-finance-ops/) | Som funktionskonsult som arbetar med appar för ekonomi och drift måste du förstå hur du skapar en organisation för kunden. Den här utbildningsvägen, bland andra uppgifter, hur du ställer in juridiska personer, implementerar säkerhetsinställningar, anpassar användargränssnittet för användare, utformar och skapar mobilappar, implementerar vanliga integreringer. | Gratis, självstudier online utbildningsväg | 12 timmar |
+| [Konfigurera och arbeta med analyser och rapporter i appar för ekonomi och drift](/learn/paths/configure-analytics-reporting-finance-operations/) | Företagsledare kan fatta viktiga beslut i företaget om de har noggrann insikt i underliggande ekonomiska och operativa data. En affärsanvändare kan också konfigurera och använda verktyget elektroniskt rapportering utan en enskild kodrad för att införa nya regleringskrav och generera affärsdokument i det format som krävs för elektronisk utbyte av information med statliga organ, banker och andra parter. | Gratis, självstudier online utbildningsväg | 4 timmar |
 
 ## <a name="supply-chain-management"></a>Hantering av underleverantörer<a name="supply-chain-management"></a>
 

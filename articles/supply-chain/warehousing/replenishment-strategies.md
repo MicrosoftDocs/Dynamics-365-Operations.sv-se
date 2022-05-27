@@ -1,7 +1,7 @@
 ---
 title: Strategier för lagerpåfyllnad
 description: Det här avsnittet innehåller information om strategier för påfyllning och förklarar hur du kan använda fältet återanskaffningsstrategi på rader för återanskaffning av en påfyllning för att välja hur påfyllning ska göras.
-author: mirzaab
+author: Mirzaab
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: bd2ddbfeef454f2759ca09d8d763bada36a1fc83
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1aa48f231c5d98a22fa989fb6e6996b972be9089
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574171"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8669892"
 ---
 # <a name="replenishment-strategies"></a>Strategier för lagerpåfyllnad
 

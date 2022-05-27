@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf7178888e39a5f26ae92e77df9c996374b76bf3
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 933c8211276c1335a6a81bf4a8cb1c3f270762d4
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323675"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689254"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Sammansatta datatyper som stöds för elektroniska rapporteringsformler
 
@@ -81,7 +81,7 @@ En *postlista* är en lista över artiklar av typen *post*. En *postlista* anvä
 
 Som standard ges åtkomst sekventiellt till poster i en *postlista*. Du kan komma åt en specifik post genom att använda funktionen [INDEX](er-functions-list-index.md) och ange *heltals* index.
 
-Standardvärdet för en *postlista* är **tom**. Du kan använda funktionen [SEMPTY](/er-functions-list-isempty.md) för att utvärdera om en *postlista* är tom.
+Standardvärdet för en *postlista* är **tom**. Du kan använda funktionen [SEMPTY](er-functions-list-isempty.md) för att utvärdera om en *postlista* är tom.
 
 > [!NOTE]
 > Om en *postlista* är tom kommer alla försök att hämta ett fältvärde för en *post* i densamma att förorsaka ett undantag i samband med körning. Information om hur du kan förhindra undantag av det här slaget i samband med körning finns i [Beaktanden i samband med tomma listor](er-components-inspections.md#i9).

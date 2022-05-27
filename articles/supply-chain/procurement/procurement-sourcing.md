@@ -1,7 +1,7 @@
 ---
 title: Startsidan för Anskaffning och källa
 description: Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser som är tillgängliga för anskaffning och inköp.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom:
 - intro-internal
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54ddaee1fd820435c245f3946ae1cc91209b12d4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fdf56084147edcdf8951d4a267611c10dc7eb6dd
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565505"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673030"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Startsidan för Anskaffning och källa
 
@@ -57,7 +57,7 @@ Anskaffning och källa omfattar alla steg från att identifiera ett behov av pro
 -   [Inkommande demonstrationsskript för försändelselager för Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/download/details.aspx?id=101945)(vitbok)
 -   [Övervaka försändelselagret med hjälp av leverantörssamarbete](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Samarbeta med leverantörer genom att använda leverantörsportalen](collaborate-vendors-vendor-portal.md)  (endast Dynamics AX-versioner från februari 2016 och maj 2016)
--   [Användarsäkerhet för leverantörsportalen](configure-security-vendor-portal-users.md) (endast 2016 och maj 2016 versioner av Finance and Operations)
+-   [Användarsäkerhet för leverantörsportalen](configure-security-vendor-portal-users.md) (endast Ekonomi och drift-versioner från februari 2016 och maj 2016)
 -   [Mobil arbetsyta för leverantörssamarbete](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>Hantering av anskaffningsprodukt
