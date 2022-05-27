@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 222564
 ms.assetid: ''
 ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 89ea19753abdc4e5d4219a123a832bb3606515a43b439d5f94a9619857b6c7d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 772c754e9980e693daf7542de273cbe278ca7038
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722705"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722448"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Ställ in standardbeskrivningar för automatisk bokföring
 
@@ -28,7 +28,7 @@ ms.locfileid: "6722705"
 Det här avsnittet förklarar hur du kan ställa in standardtext som används för att beskriva redovisningsposter som bokförs automatiskt i redovisningen. Du kan ställa in standardbeskrivningstext genom att använda fritext eller välja fasta variabler.
 
 > [!NOTE]
-> För vissa typer av transaktioner i vissa länder eller regioner kan du även ta med text från fält i Microsoft Dynamics AX-databasen som rör dessa transaktionstyper. En lista över transaktionstyperna, samt länderna och regionerna, finns i avsnittet [Valfritt: Lägg till annan text i standardbeskrivningar](#optional-add-other-text-to-default-descriptions) senare i det här avsnittet.
+> För vissa typer av transaktioner i vissa länder eller regioner kan du även ta med text från fält i som rör dessa transaktionstyper. En lista över transaktionstyperna, samt länderna och regionerna, finns i avsnittet [Valfritt: Lägg till annan text i standardbeskrivningar](#optional-add-other-text-to-default-descriptions) senare i det här avsnittet.
 
 ## <a name="set-up-default-descriptions"></a>Ställ in standardbeskrivningar
 

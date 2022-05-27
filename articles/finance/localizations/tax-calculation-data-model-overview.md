@@ -9,24 +9,23 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 976a90b1a04a5bba91d73712d4d38a8c9038d885
-ms.sourcegitcommit: 6fd739976b46122f9a9002309aba60edb89e5468
+ms.openlocfilehash: 759803767111c27cba76b68430e09a0d9dd6110f
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "8453494"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694268"
 ---
 # <a name="tax-calculation-data-model"></a>Datamodell för momsberäkning
 
 Det här ämnet innehåller information om hur fältvärdena momsdatamodellen bestäms i momsberäkningstransaktioner.
 
-*Momsdatamodellen* består av fält som krävs för momsberäkningar. Microsoft tillhandahåller *momsberäkningsdatamodellen*, som inkluderar huvudfälten och radfälten för transaktionsdokument i Finance and Operations-appar. Fälten som definieras i datamodellen för momsberäkning är de tillgängliga kolumnerna för tabellerna med tillämplighetsregler i konfigurationen av funktionen för momsberäkning.
+*Momsdatamodellen* består av fält som krävs för momsberäkningar. Microsoft tillhandahåller *momsberäkningsdatamodellen*, som inkluderar huvudfälten och radfälten för transaktionsdokument i Ekonomi och drift-appar. Fälten som definieras i datamodellen för momsberäkning är de tillgängliga kolumnerna för tabellerna med tillämplighetsregler i konfigurationen av funktionen för momsberäkning.
 
 > [!NOTE] 
 > Vissa noder som definieras i datamodellen, som **Post-ID** och **Tabell-ID** finns av tekniska skäl. De är inte tillgängliga kolumner i konfigurationen av momsberäkningsfunktionen.
@@ -55,7 +54,7 @@ Du kan också visa momsberäkningsdatamodellen och tillgängliga kolumner i tabe
 
     [![Hantera kolumner.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Datamodellen för momsberäkning är integrerad med Finance and Operations-appar. Under varje transaktion som rör momsberäkning samlas värdena i fälten som definieras i tabellerna för tillämplighetsregler in och skickas till momsberäkningstjänsten för beräkning. I version 40.46 är 57 fördefinierade datamodeller tillgängliga för följande transaktionstyper: inköpsorder, försäljningsorder, överföringsorder, inköpsrekvisitioner, anbudsförfrågningar och försäljningsofferter.
+Datamodellen för momsberäkning är integrerad med Ekonomi och drift-appar. Under varje transaktion som rör momsberäkning samlas värdena i fälten som definieras i tabellerna för tillämplighetsregler in och skickas till momsberäkningstjänsten för beräkning. I version 40.46 är 57 fördefinierade datamodeller tillgängliga för följande transaktionstyper: inköpsorder, försäljningsorder, överföringsorder, inköpsrekvisitioner, anbudsförfrågningar och försäljningsofferter.
 
 ## <a name="version-updates-and-restrictions"></a>Versionsuppdateringar och -begränsningar
 

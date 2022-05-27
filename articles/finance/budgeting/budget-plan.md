@@ -1,6 +1,6 @@
 ---
 title: Budgetplanering
-description: Målet med den här övningen är att ge en guidad visning av funktionen Microsoft Dynamics 365 Finance-uppdateringar inom området Budgetplanering. Syftet med övningen är att illustrera ett kort konfigureringsexempel av budgetplaneringsmodulen och visa hur budgetplaneringen kan utföras med hjälp av den här konfigurationen.
+description: Målet med den här övningen är att ge en guidad visning av Microsoft Dynamics 365 Finance-funktionsuppdateringar inom området Budgetplanering. Syftet med övningen är att illustrera ett kort konfigureringsexempel av budgetplaneringsmodulen och visa hur budgetplaneringen kan utföras med hjälp av den här konfigurationen.
 author: panolte
 ms.date: 06/25/2018
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0420887c35bbb07aaf8cce05a68173ab6c534f92
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 65ebfddb1baf39e20c22d3ed9bb26dbb33765e20
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595344"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712016"
 ---
 # <a name="budget-planning"></a>Budgetplanering
 
 [!include [banner](../includes/banner.md)]
 
-Målet med den här övningen är att ge en guidad visning av funktionen Microsoft Dynamics 365 Finance-uppdateringar inom området Budgetplanering. Syftet med övningen är att illustrera ett kort konfigureringsexempel av budgetplaneringsmodulen och visa hur budgetplaneringen kan utföras med hjälp av den här konfigurationen.  I det här övningen fokuseras på följande processer och uppgifter:
+Målet med den här övningen är att ge en guidad visning av Microsoft Dynamics 365 Finance-funktionsuppdateringar inom området Budgetplanering. Syftet med övningen är att illustrera ett kort konfigureringsexempel av budgetplaneringsmodulen och visa hur budgetplaneringen kan utföras med hjälp av den här konfigurationen.  I det här övningen fokuseras på följande processer och uppgifter:
 - Skapa organisationshierarki för budgetplanering och säkerhetsinställningar för användare
 - Definiera budgetplanscenarier, budgetplankolumner, layouter och Excel-mallar
 - Skapa och aktivera en budgetplaneringsprocess

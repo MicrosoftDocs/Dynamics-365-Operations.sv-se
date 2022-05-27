@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d91ef244f8dd48baf65f5633357a7d81a68f84621b20d39d4e0ee771283a2bab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 19ac856de0fed9253bf79cb4c06d4347e5a19c77
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741367"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693484"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-5-2021"></a>Vad är nytt eller har ändrats i Dynamics 365 Human Resources (5 april 2021)
 
@@ -72,7 +71,7 @@ Följande nya funktioner är i förhandsgranskning. Mer information om hur du ak
 | Funktion | Information |
 | --- | --- |
 | Färdigheter som en chef har angett för sina medarbetare kan godkännas automatiskt av ett arbetsflöde | Kommer snart. |
-| Plattformsuppdatering 10.0.17 (41) | Plattformsuppdatering 10.0.17 planeras i och med nästa version den 19 april 2021. Mer information finns i [Plattformsuppdateringar för version 10.0.17 av Finance and Operations-program (april 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md). |
+| Plattformsuppdatering 10.0.17 (41) | Plattformsuppdatering 10.0.17 planeras i och med nästa version den 19 april 2021. Mer information finns i [Plattformsuppdateringar för version 10.0.17 av Ekonomi och Drift-appar (april 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md). |
 
 En fullständig lista över planerade funktioner och deras schemalagda versioner finns i [Översikt över Dynamics 365 Human Resources 2021 utgivningscykel 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 

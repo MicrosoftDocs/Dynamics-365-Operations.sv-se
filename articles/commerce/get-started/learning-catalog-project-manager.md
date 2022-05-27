@@ -9,16 +9,15 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 6af1e4bb0873945f85911aa72e22e334de0343d8
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 497c1e8e69971ca7f1e176970c43ff8313b78678
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402113"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691090"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-commerce"></a>Utbildningskatalog för projektledare för implementering som arbetar med Dynamics 365 Commerce
 
@@ -26,11 +25,11 @@ ms.locfileid: "7402113"
 
 Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner och från de flesta till de mest avancerade. Om det finns innehåll i flera format får vi meddela dig att du kan välja det utbildningsformat som bäst motsvarar dina behov.
 
-Om du vill öva på funktioner som delas med andra Finance and Operations-appar, se [Dynamics 365 Finance utbildningskatalogen](../../finance/get-started/learning-catalog-project-manager.md).
+Om du vill öva på funktioner som delas med andra Ekonomi och drift-appar, se [Dynamics 365 Finance utbildningskatalog](../../finance/get-started/learning-catalog-project-manager.md).
 
 ## <a name="get-started"></a>Kom igång<a name="get-started"></a>
 
-| Innehåll | beskrivning  | Format  | Längd    |
+| Innehåll | Beskrivning  | Format  | Längd    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------|
 | [Lär dig affärsvärdet av Microsoft Dynamics 365 och Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Den här utbildningsupplevelsen kommer att ta dig på en resa som börjar med att visa hur digitala transformeringar och hur kraftfulla affärsprogram kan förändra ditt företag. Vi kommer att ta upp hur Dynamics 365 och Power Platform hjälper dig att fatta välgrundade beslut baserade på organisationens behov och mål, genom fyra byggblock av digital transformation – modern, enhetlig, intelligent och anpassningsbar. | Gratis, självstudier online utbildningsväg   | 6.5 timmar   |
 | [Kom igång med Dynamics 365 Commerce](/learn/paths/get-started-dynamics-365-commerce/)  | Dynamics 365 Commerce som bygger på de beprövade funktionerna i Dynamics 365 Retail är en omfattande lösning i flera kanaler där backoffice, butik, kundtjänst och digitala upplevelser samordnas. Dynamics 365 Commerce gör det möjligt för dig att skapa varumärkeslojalitet via anpassade kundåtaganden, öka intäkterna med förbättrad produktivitet hos anställda, optimera åtgärder för att minska kostnaderna och öka effektiviteten i leveranskedjan och slutligen leverera bättre affärsresultat. | Gratis, självstudier online utbildningsväg   | 2 timmar   |

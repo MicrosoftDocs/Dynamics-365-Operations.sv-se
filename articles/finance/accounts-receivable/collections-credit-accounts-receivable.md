@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b143ebead89804af57e7d2dbfa6f7d366c1ae664573776d78bff44763ddeb819
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 03d1304c39628323c6d6e15181263a73ba965930
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723929"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710369"
 ---
 # <a name="collections-in-accounts-receivable"></a>Samlingar i kundreskontra
 
@@ -65,7 +65,7 @@ Följande listsidor hjälper dig att ordna information om inkasso.
 
 > [!NOTE]
 > En ögonblicksbild av åldersfördelning måste skapas innan du kan visa information om listsidan Inkasso. Information visas bara för kunder som en ögonblicksbild av åldersfördelning har skapats för. De poster som visas på listsidan kan dessutom filtreras, enligt följande:
-> <li>Som standard har användare av Finance and Operations åtkomst till alla kunder som har en ögonblicksbild av åldersfördelning.</li>
+> <li>Som standard har en Ekonomi och drift-användare åtkomst till alla kunder som har en ögonblicksbild av åldersfördelning.</li>
 > <li>Om kundpooler finns, måste en användare anges som en inkassohandläggare för att använda poolerna till att filtrera information om listsidorna för inkasso. Informationen begränsas till de kunder som ingår i den valda kundpoolen.</li>
 > <li>Om en användare har ställts in som en inkassohandläggare, är endast poolerna som har valts för den inkassohandläggaren tillgängliga på listsidan. Om Tillåt handläggare att visa alla kundpooler har valts på sidan Inkassohandläggare för inkassohandläggaren, är alla pooler tillgängliga för den handläggaren.</li>
 

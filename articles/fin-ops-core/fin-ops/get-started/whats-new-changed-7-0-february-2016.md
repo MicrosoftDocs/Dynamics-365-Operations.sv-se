@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bcc69cbf418131d0b1747f1c904de3188d7ba84216cb3145607b45553263244c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d81d20045c7b06de01a023d1a34ee653dd696ff1
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757229"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711332"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheter och ändringar i Dynamics AX 7.0 (februari 2016)
 
@@ -969,7 +969,7 @@ Det finns en förbättrad ”low-touch”-klientkomponentinstallation via själv
 </tr>
 <tr>
 <td>Övervaka systemhälsa och diagnostisera fel och problem.</td>
-<td>Den här funktionen kräver <a href="https://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack för Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
+<td>Den här funktionen kräver <a href="https://www.microsoft.com/en-us/download/details.aspx?id=58205">System Center 2012 Management Pack för Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
 <td>Övervakning och diagnostik för Retail-komponenter är nu tillgängliga via instrumentpanelen <strong>Insikt i driften</strong> i LCS.</td>
 <td>Instrumentpanelen <strong>Insikt i driften</strong> är en molnbaserad övervakningsportal som ersätter behovet av att installera SCOM-infrastrukturen (System Center Operations Manager).</td>
 </tr>
@@ -1028,7 +1028,7 @@ Inga nya funktioner har lagts till.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Nyheter och ändringar på hemsidan för Finance and Operations](whats-new-changed.md)
+[Nyheter och ändringar på hemsidan för Ekonomi och drift](whats-new-changed.md)
 
 [Nya uppgiftguider (februari 2016)](new-task-guides-available-february-2016.md)
 

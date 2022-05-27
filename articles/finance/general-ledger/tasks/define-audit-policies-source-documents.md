@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SysPolicySourceDocumentRuleType, SysFieldLookUp, SysPolicyListPage, SysPolicy, AuditPolicyRule, SysQueryForm, SysQueryFieldLookUp, AuditPolicyDateSelection, AuditPolicyAdditionalOption, BatchJob, CaseDetail
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0779589a3583909984e35014a2ec0e86455cd30a3833110556f095241e7172ca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e8698dd2c14321498d23efe1d01be274c56d5721
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722681"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713795"
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Definiera granskningspolicyer för källdokument
 
@@ -39,9 +39,9 @@ I det här avsnittet visar vi hur du ställer in och kör granskningspolicyregle
 11. Välj **Ny**.
 12. Skriv ett värde i fältet **Namn**.
 13. Expandera avsnittet **Policyorganisationer**.
-14. Välj i trädet **Contoso Entertainment System USA**, välj sedan **Lägg till**.
-15. I trädet, välj **Contoso Consulting USA**, välj sedan **Lägg till**.
-16. I trädet, välj **Contoso Retail USA**, välj sedan **Lägg till**.
+14. Välj **Contoso Entertainment System USA** i trädet och välj **Lägg till**.
+15. Välj **Contoso Consulting USA** i trädet och välj **Lägg till**.
+16. Välj **Contoso Retail USA** i trädet och välj **Lägg till**.
 17. Komprimera avsnittet **Policyorganisationer**.
 18. Expandera avsnittet **Policyregler**.
 19. I listan söker du efter och väljer den policyregel som tidigare har skapats.

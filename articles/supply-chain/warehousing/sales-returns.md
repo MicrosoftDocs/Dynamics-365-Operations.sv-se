@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cfcfd165b5f7b97d1ee88175b3f6c9d418c30c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 672f24a720f48c420916c197722eb2d9599744fa
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565289"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695575"
 ---
 # <a name="sales-returns"></a>Försäljningsreturer
 
@@ -76,7 +76,6 @@ Informationen i tabellen nedan måste inkluderas när du skapar en returorder.
 | RMA-nummer         | Det ID som har tilldelats returorden              | RMA-numret används som en alternativ nyckel under hela returorderprocessen. RMA-numret som tilldelas baseras på den RMA-nummersekvens som ställdes in på sidan **Parametrar för kundreskontra**.                                                                                                                              |
 | Deadline           | Det senaste datumet då en artikel kan returneras.               | Standardvärdet beräknas från dagens datum plus giltighetsperioden. Om en retur är giltigt i endast 90 dagar från det datum då returordern skapas och returordern skapades den 1 maj är värdet i fältet exempelvis **30 juli**. Giltighetsperioden är inställd på sidan **Parametrar för kundreskontra**. |
 | Returorsakskod | Kundorsaken för retur av produkten          | Orsakskoden markeras i listan med användardefinierade orsakskoder. Du kan uppdatera det här fältet när som helst.                                                                                                                                                                                                                                    |
-
 ### <a name="create-return-order-lines"></a>Skapa returorder
 
 När du har slutfört returrubriken kan du skapa returrader med någon av följande metoder:
@@ -84,7 +83,8 @@ När du har slutfört returrubriken kan du skapa returrader med någon av följa
 -   Ange manuellt artikelinformation, kvantitet och annan information för varje returraden.
 -   Skapa en returrad med hjälp av funktionen **Sök efter försäljningsorder**. Vi rekommenderar att du använder den här funktionen när du skapar en returorder. Funktionen **Söka efter försäljningsorder** upprättar en referens från returraden till den fakturerade försäljningsorderraden och hämtar radinformation som t.ex artikelnummer, kvantitet, pris, rabatt och kostnadsvärden från försäljningsraden. Referensen hjälper till att garantera att produkten när den returneras till företaget har samma styckkostnad som den såldes till. Referensen kontrollerar även att returorder inte skapas för en kvantitet som överstiger den kvantitet som har såldes på fakturan.
 
->Obs! Returrader som har en referens till en försäljningsorder hanteras som korrigeringar till eller återföringar av försäljningen. Mer information finns i avsnittet ”Bokför i redovisningen" senare i det här avsnittet.
+>[!NOTE] 
+>Returrader som har en referens till en försäljningsorder hanteras som korrigeringar till eller återföringar av försäljningen. Mer information finns i avsnittet ”Bokför i redovisningen" senare i det här avsnittet.
 
 ### <a name="charges"></a>Debiteringar
 
@@ -189,8 +189,10 @@ Under införselprocessen integreras returer i den allmänna processen för lager
 
 ### <a name="identify-products-in-the-arrival-overview-list"></a>Identifiera produkter i listan Införselöversikt
 
-Sidan **Införselöversikt** visar alla planerade inkommande införslar. 
->Obs! Införsel från returorder måste behandlas separat från andra typer av införseltransaktioner. När du har identifierat ett inkommande paket på sidan **Införselöversikt** (t.ex. med hjälp av det medföljande RMA-dokumentet) klickar du på **Starta införsel** i åtgärdsfönstret för att skapa och initiera en införseljournal som matchar införseln.
+Sidan **Införselöversikt** visar alla planerade inkommande införslar.
+
+>[!NOTE] 
+>Införsel från returorder måste behandlas separat från andra typer av införseltransaktioner. När du har identifierat ett inkommande paket på sidan **Införselöversikt** (t.ex. med hjälp av det medföljande RMA-dokumentet) klickar du på **Starta införsel** i åtgärdsfönstret för att skapa och initiera en införseljournal som matchar införseln.
 
 ### <a name="edit-the-arrival-journal"></a>Redigera införseljournalen
 
@@ -232,7 +234,8 @@ Om du levererar en ersättningsartikel till kunden och använder dispositionsåt
 
 Ersättningsartikeln levereras med hjälp av en oberoende försäljningsorder, ersättningsförsäljningsordern. Den här försäljningsordern skapas när packsedeln för returordern skapas. Orderrubriken använder information från kunden som refereras till i returorderrubriken. Radinformationen hämtas från informationen som registreras på sidan **Ersättningsartikel**. Sidan **Ersättningsartikel** måste fyllas i för rader som har dispositionsåtgärder som börjar med ordet "Ersätt". Emellertid valideras eller begrämsas varken kvantiteten eller ersättningsartikelns identitet. Det här beteendet gör det möjligt för ärenden där kunden vill ha samma artikel, men i en annan konfiguration eller storlek samt ärenden där kunderna vill ha en helt annan artikel. Som standard anges en identisk artikel på sidan **Ersättningsartikel**. Men du kan välja en annan artikel förutsatt att funktionen har ställts in. 
 
->Obs! Du kan redigera och ta bort ersättningsförsäljningsordern när den har skapats.
+>[!NOTE] 
+>Du kan redigera och ta bort ersättningsförsäljningsordern när den har skapats.
 
 ## <a name="generate-a-packing-slip"></a>Skapa en följesedel
 Innan returnerade artiklar kan föras in i lagret, måste du uppdatera följesedeln för den order som artiklarna tillhör. Liksom fakturauppdateringsprocessen är uppdateringen av den ekonomiska transaktionen, uppdateringen av följesedeln den fysiska uppdateringen av lagerposten. Med andra ord genomför den här processen ändringar i lagret. Vid returer implementeras stegen som tilldelas dispositionsåtgärden under uppdateringen av följesedeln. När du genererar följesedeln inträffar följande händelser:
@@ -253,8 +256,10 @@ Generellt sett kan du hoppa över följesedelprocessen och gå direkt till faktu
 
 ### <a name="credit-correction"></a>Kreditkorrigering
 
-Kontrollera att alla övriga avgifter är korrekta som en del av faktureringsprocessen. För att redovisningsbokföringar ska bli korrigeringar (Storno) bör du använda alternativet **Kreditera korrigering** på fliken **Övriga** på sidan **Bokföring av faktura** när du bokför fakturan/kreditfakturan. 
->Obs! Som standard aktiveras alternativet **Kreditkorrigering** om alternativet **Kreditfaktura som korrigering** på sidan **Parametrar för kundreskontra** har aktiverats. Vi rekommenderar dock att du inte bokför returer med Storno.
+Kontrollera att alla övriga avgifter är korrekta som en del av faktureringsprocessen. För att redovisningsbokföringar ska bli korrigeringar (Storno) bör du använda alternativet **Kreditera korrigering** på fliken **Övriga** på sidan **Bokföring av faktura** när du bokför fakturan/kreditfakturan.
+
+> [!NOTE]
+> Som standard aktiveras alternativet **Kreditkorrigering** om alternativet **Kreditfaktura som korrigering** på sidan **Parametrar för kundreskontra** har aktiverats. Vi rekommenderar dock att du inte bokför returer med Storno.
 
 ## <a name="create-intercompany-return-orders"></a>Skapa koncerninterna returorder
 Returorder kan slutföras mellan två företag inom din organisation. Följande scenarier stöds:
@@ -308,7 +313,8 @@ Returordern refererar inte till en kundfaktura. Den returnerade artikeln kredite
 
 ![Returordern refererar inte till en kundfaktura.](./media/SalesReturn09.png)  
 
->Obs! Artikelns huvudpris används som standardvärde för parametern **Retursjälvkostnad**. Standardpriset skiljer sig från självkostnaden vid tidpunkten för lagerutleveransen. Därför är implikationen att en förlust på 3 har uppkommit. Dessutom innehåller inte returordern rabatten som gavs till kunden på försäljningsordern. Därför uppstår en alltför stor kredit.
+> [!NOTE]
+> Artikelns huvudpris används som standardvärde för parametern **Retursjälvkostnad**. Standardpriset skiljer sig från självkostnaden vid tidpunkten för lagerutleveransen. Därför är implikationen att en förlust på 3 har uppkommit. Dessutom innehåller inte returordern rabatten som gavs till kunden på försäljningsordern. Därför uppstår en alltför stor kredit.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Exempel 2: Kreditkorrigering markeras för returordern
 
@@ -316,7 +322,8 @@ Exempel 2 är samma som exempel 1, men parametern **Kreditkorrigering** paramete
 
 ![Returordern där kreditkorrigeringen markerats.](./media/SalesReturn10.png)  
 
->Obs! Redovisningsbokföringar anges som negativa korrigeringar.
+>[!NOTE] 
+>Redovisningsbokföringar anges som negativa korrigeringar.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Exempel 3: Returorderraden skapas med hjälp av funktionen Sök efter försäljningsorder
 
@@ -324,7 +331,8 @@ I det här exemplet skapas returorderraden med hjälp av funktionen **Sök efter
 
 ![Returorderraden som skapas med hjälp av funktionen Sök efter försäljningsorder.](./media/SalesReturn11.png)  
 
->[Obs!] **Rabatt** och **Retursjälvkostnad** är korrekt inställda. Därför uppstår en exakt återföring av kundfakturan.
+> [!NOTE]
+> **Rabatt** och **Retursjälvkostnad** är korrekt inställda. Därför uppstår en exakt återföring av kundfakturan.
 
 
 

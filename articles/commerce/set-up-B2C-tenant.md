@@ -2,7 +2,7 @@
 title: Ställa in en B2C-innehavare i Commerce
 description: I det här avsnittet beskrivs hur du ställer in din Azure Active Directory (Azure AD) B2C-innehavare (Business-to-Consumer) för autentisering av användarplats i Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 02/11/2022
+ms.date: 05/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d4cbb117e47940491266134fb1e2dbe87374d4a3
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 086128091b23ce6ab46dd2dfc0803af38de6bac7
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109899"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8714322"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Ställa in en B2C-innehavare i Commerce
 
@@ -239,7 +239,7 @@ Lägg till och ställ in en leverantör av sociala identiteter enligt följande 
 
 1. I Azure-portal, navigera till **identitetsleverantörer**.
 1. Markera **Lägg till**. Skärmen **Lägg till identitetsleverantör** visas.
-1. Under **namn** anger du det namn som ska visas för användarna i inloggningsskärmen.
+1. Under **Namn** anger du det namn som ska visas för användarna i inloggningsskärmen.
 1. Under **Typ av identitetsleverantör**, välj en identitetsleverantör från listan.
 1. Välj **OK**.
 1. Välj **konfigurera den här identitetsleverantören** för åtkomst till skärmen **Ställ in till fönstret för social identitetsleverantör**.
@@ -332,9 +332,9 @@ Följ stegen nedan om du vill lägga till din Azure AD B2C-information till Comm
 
 1. Logga in som administratör på Commerce webbplatsskaparen för din miljö.
 1. I det vänstra navigeringsfönstret väljer du **innehavarinställningar** för att expandera den.
-1. Under **innehavarinställningar** väljer du **B2C-inställningar**. 
-1. I huvudfönstret bredvid **B2C-program**, välj **Hantera**. (Om din klientorganisation visas i listan B2C-program, har den redan lagts till av en administratör. Kontrollera att artiklarna i steg 6 nedan matchar ditt B2C-program.)
-1. Välj **Lägg till B2C-program**.
+1. Under **Inställningar för klientorganisation**, välj **Inställning av webbplatsautentisering**. 
+1. I huvudfönstret, bredvid **Webbplatsautentiseringsprofiler**, välj **Hantera**. (Om din klientorganisation visas i listan med webbplatsautentiseringsprofiler har den redan lagts till av en administratör. Kontrollera att artiklarna i steg 6 nedan matchar artiklarna för din avsedda B2C-konfiguration. En ny profil kan också skapas med hjälp av liknande Azure AD B2C-innehavare eller program som tar hänsyn till mindre skillnader, t.ex. olika användarpolicy-ID).
+1. Välj **Lägg till webbplatsautentiseringsprofil**.
 1. Ange följande obligatoriska objekt i formuläret som visas med värden från din B2C-innehavare och programmet. Fält som inte är obligatoriska (sådana som saknar asterisk) kan lämnas tomma.
 
     - **Programnamn**: namnet på ditt B2C-program, t.ex. "Fabrikam B2C".
@@ -347,12 +347,13 @@ Följ stegen nedan om du vill lägga till din Azure AD B2C-information till Comm
 1. Välj **OK**. Nu ska nu se att namnet på ditt B2C-program visas i listan.
 1. Spara ändringarna genom att klicka på **Spara**.
 
+Det valfria fältet **Anpassad domän för inloggning** ska endast användas om du ställer in en anpassad domän för Azure AD B2C-klientorganisationen. Mer information och beaktanden om hur du använder fältet **Anpassad domän för inloggning** finns i [Ytterligare B2C-information](#additional-b2c-information) nedan.
+
 ### <a name="associate-the-b2c-application-to-your-site-and-channel"></a>Associera B2C program till din webbplats och kanal
 
 > [!WARNING]
-> Om webbplatsen redan är associerad med ett B2C-program tas aktuella referenser för användare som redan registrerats i den här miljön bort när du byter till ett annat B2C-program. Om det ändras kommer inga autentiseringsuppgifter som associeras med det B2C programmet att vara tillgängliga för användarna. 
-> 
-> Uppdatera endast B2C-programmet om du ställer in kanalens B2C-program för första gången eller om du vill att användarna ska registrera dig igen med nya autentiseringsuppgifter för den här kanalen med det nya B2C-programmet. Var försiktig när du kopplar kanaler till B2C-program och namnge program tydligt. Om en kanal inte är associerad med ett B2C program i stegen nedan, kommer användare som loggar in på den kanalen för din webbplats att anges i B2C-program som visas **standard** i **innehavarinställningar \> B2C-inställningar** för B2C-program.
+> - Om webbplatsen redan är associerad med ett B2C-program tas aktuella referenser för användare som redan registrerats i den här miljön bort när du byter till ett annat B2C-program. Om det ändras kommer inga autentiseringsuppgifter som associeras med det B2C programmet att vara tillgängliga för användarna. 
+> - Uppdatera endast B2C-programmet om du ställer in kanalens B2C-program för första gången eller om du vill att användarna ska registrera dig igen med nya autentiseringsuppgifter för den här kanalen med det nya B2C-programmet. Var försiktig när du kopplar kanaler till B2C-program och namnge program tydligt. Om en kanal inte är associerad med ett B2C program i stegen nedan, kommer användare som loggar in på den kanalen för din webbplats att anges i B2C-program som visas **standard** i **innehavarinställningar \> B2C-inställningar** för B2C-program.
 
 För att associera B2C-program till din webbplats och kanal, följ dessa steg.
 
@@ -378,6 +379,23 @@ Mer information om hur du anpassar Azure AD-interaktioner och policyflöden utö
 ### <a name="secondary-admin"></a>Sekundär administration
 
 Ett valfritt, sekundärt administratörskonto kan läggas till i avsnittet **användare** på din B2C-innehavare. Det kan vara ett direkt konto eller ett allmänt konto. Om du behöver dela ett konto mellan teamresurser kan du även skapa ett gemensamt konto. På grund av känsligheten hos de data som lagras i Azure AD B2C, bör ett gemensamt konto övervakas i ett nära samarbete per ditt företags säkerhetspolicyer.
+
+### <a name="set-up-a-custom-sign-in-domain"></a>Ställa in en anpassad inloggningsdomän
+
+Med Azure AD B2C kan du ställa in en anpassad inloggningsdomän för Azure AD B2C-klientorganisationer. Instruktioner finns i [Aktivera anpassade domäner för Azure Active Directory B2C](/azure/active-directory-b2c/custom-domain). 
+
+Om du använder en anpassad inloggningsdomän måste domänen anges i Commerce-webbplatsbyggaren.
+
+För att ange en anpassad inloggningsdomän i webbplatsskaparen följer du stegen nedan.
+
+1. I övre högra hörnet på webbplatsbyggaren väljer du webbplatsväxlaren och väljer **Hantera webbplatser**.
+1. I det vänstra navigeringsfönstret väljer du **Inställningar för klientorganisation \> Inställning av webbplatsautentisering**.
+1. I avsnittet **Webbplatsautentiseringsprofiler**, välj **Hantera**.
+1. Klicka på knappen **Redigera** (pennsymbol) i den utfällbara menyn till höger som finns bredvid den webbplatsautentiseringsprofil som du vill ange en anpassad domän för.
+1. I dialogrutan **Redigera webbplatsautentiseringsprofil**, under **Anpassad domän för inloggning**, anger du din anpassade inloggningsdomän (t.ex. login.fabrikam.com).
+
+> [!WARNING]
+> När du uppdaterar till en anpassad domän för Azure AD B2C-klientorganisationer påverkar ändringen klientorganisationens utfärdarinformation för den token som genereras. Utfärdardetaljerna omfattar sedan den anpassade domänen i stället för den standarddomän som tillhandahålls av Azure AD B2C. En annorlunda **Utfärdare**-konfiguration i Commerce headquarters (**Butik och handel \> Administrationsinställning \> Parametrar \> Gemensamma handelsparametrar \> Identitetsproviders**) ändrar systemets interaktion med webbplatsanvändare, och skapar potentiellt en ny kundpost om en användare autentiserar mot den nya utfärdaren. Alla ändringar av anpassade domän bör testas noggrant innan du växlar till den anpassade domänen i en live Azure AD B2C-miljö.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

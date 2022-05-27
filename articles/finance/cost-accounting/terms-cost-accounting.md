@@ -1,27 +1,27 @@
 ---
 title: Kostnadsredovisningsterminologi
 description: Detta ämne definierar de grundläggande villkoren som används i kostnadsredovisning.
-author: ShylaThompson
+author: aprilolson
 ms.date: 08/31/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f61ae7a6657eaad3510833c17f342b7266be247aec2a9bfe80b97172f662ae0a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f50f7849ac3c097d64a8499a19157f24d7a7b317
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774387"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712437"
 ---
 # <a name="cost-accounting-terminology"></a>Kostnadsredovisningsterminologi
 
@@ -124,7 +124,7 @@ Kostnadsredovisning stöder integrering av data från källsystem via en uppsät
 
 De flesta källsystem kan innehålla data som matchar en eller flera datakällor i kostnadsredovisningen. Om du vill justera data från källsystemen med datakällan i kostnadsredovisningen, måste en dataleverantör konfigureras. I följande tabell visas vilka dataleverantörer som finns tillgängliga per dataanslutning och datakälla.
 
-|  **Datakällor** |  **Dataanslutning för importerade transaktioner** | **Dynamics 365 Finance datakoppling**  | **Datakoppling för Dynamics AX**  |
+|  **Datakällor** |  **Dataanslutning för importerade transaktioner** | **Dynamics 365 Finance dataanslutningsprogram**  | **Datakoppling för Dynamics AX**  |
 |---|---|---|---|
 | Dimensionsmedlemmar för kostnadselement  |  Ja | Ja  | Ja  |
 |  Dimensionsmedlemmar för kostnadsobjekt |  Ja | Ja  | Ja  |

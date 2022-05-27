@@ -2,7 +2,7 @@
 title: Webbplatsväljarmodul
 description: Det här avsnittet handlar om modulen för webbplatsväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/06/2022
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ad4d4d5f950d0631059d8f509e9e808a9106eb98
-ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
+ms.openlocfilehash: a1954f6b2fea35d5138218e6a2a23ab1fd04c8fc
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8551705"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710314"
 ---
 # <a name="site-picker-module"></a>Webbplatsväljarmodul
 
@@ -43,7 +43,23 @@ Modulen webbplatsväljare måste vara konfigurerad med en lista över platser (m
 
 ## <a name="add-a-site-picker-module-to-a-page"></a>Lägg till modulen för webbplatsväljare till en sida
 
-Modulen webbplatsväljare kan läggas till i platsen **webbplatsväljare** i [huvudmodul](author-header-module.md). När modulen för webbplatsväljare har lagts till kan du definiera modulens rubrik och webbplatsalternativ. Vanligtvis finns en rubrikmodul i ett rubrikfragment som kan delas på e-handelssidor för en site. I följande exempel har modulen för webbplatsväljare lagts till på platsen för **webbplatsväljare** i en huvudmodul som finns i ett rubrikavsnitt med namnet **HeaderContainer**.
+Modulen webbplatsväljare kan läggas till i platsen **webbplatsväljare** i [huvudmodul](author-header-module.md). När modulen för webbplatsväljare har lagts till kan du definiera modulens rubrik och webbplatsalternativ. Vanligtvis finns en rubrikmodul i ett rubrikfragment som kan delas på e-handelssidor för en site. 
+
+Följ de här stegen för att lägga till en webbplatsväljarmodul i en rubrikmodul.
+
+1. I platsen för **Webbplatsväljare** i rubrikfragmentets rubrikmodul väljer du ellips (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Välj moduler** lägger du till en **Webbplatsväljare**-modul och väljer **OK**.
+1. I egenskapsfönstret **Webbplatsväljare** väljer du **Lägg till lista över webbplatsalternativ**. Ett redigerbart **Lista över webbplatsalternativ** visas.
+1. Välj **Lista över webbplatsalternativ**. Dialogrutan **Lista över webbplatsalternativ** visas.
+1. Under **Webbplatsens namn** anger du den namntext som ska visas i listrutan för webbplatsväljare.
+1. Under **Omdirigerings-URL för webbplats** väljer du **Lägg till en länk**. Snabbmenyfönstret **Lägg till en länk** visas.
+1. I snabbmenyfönstret **Lägg till en länk** väljer du **Anpassad sida** och väljer **Nästa**.
+1. Från listan med webbplats-URL väljer du URL-adressen med den sökväg du skapade när du lägger till kanalen på webbplatsen (`www.adventure-works.com/fr-ca` till exempel) och väljer sedan **Använd**.
+1. Välj **OK**.
+1. Välj **spara** och välj sedan **Avsluta redigeringen**.
+1. Välj **Publicera** om du vill publicera sidan.
+
+I följande exempel har modulen för webbplatsväljare lagts till på platsen för **webbplatsväljare** i en huvudmodul som finns i ett rubrikavsnitt med namnet **HeaderContainer**.
 
 ![Exempel på en modul för webbplatsväljare i rubrikavsnitt.](./media/ecommerce-sitepicker-2.png)
 

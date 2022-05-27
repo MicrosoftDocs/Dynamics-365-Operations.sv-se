@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4fd46ea161fb4441d94a9e7c7f7ffbfb245eb873
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 08e247bac577dc0bb8a4635d61f0082793380da9
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919511"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722529"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Skapa e-postmallar för transaktionshändelser
 
@@ -64,8 +64,8 @@ Meddelandetypen förpackning klar stöder följande ytterligare e-postplatshåll
 | ------------------- | ------- |
 | `pickupstorename`     | Namnet på butiken där ordern är tillgänglig för upphämtning. |
 | `pickupstoreaddress`  | Adressen på butiken där ordern är tillgänglig för upphämtning. |
-| `pickupstorehourfrom` | Upphämtningsbutikens öppettider. |
-| `pickupstorehourto`   | Upphämtningsbutikens stängningstider. |
+| `pickupstoreopenfrom` | Upphämtningsbutikens öppettider. |
+| `pickupstoreopento` | Upphämtningsbutikens stängningstider. |
 | `pickupchannelid`     | Butikskanal-ID för upphämtningsbutiken. |
 | `packingslipid`      | ID för följesedeln för den order som kommer att hämtas. |
 | `confirmationid`      | Orderbekräftelse-ID för den order som kommer att hämtas. (Detta ID kallas ibland för kanalreferens-ID.) |
@@ -102,7 +102,7 @@ Utbetalningsmeddelandetypen har stöd för följande ytterligare platshållare.
 | Namn på platshållare      | Syfte |
 | --------------------- | ------- |
 | `giftcardnumber`        | Presentkortsnummer för produkter av typen presentkort. |
-| `giftcardbalance`       | Presentkortssaldo för produkter av typen presentkort. |
+| `availablebalance` | Återstående saldo på presentkortet. |
 | `giftcardmessage`       | Presentkortsmeddelande för produkter av typen presentkort. |
 | `giftcardpin`         | PIN-kod för presentkort, för produkter av typen presentkort. (Denna platshållare är specifik för externa presentkort.) |
 | `giftcardexpiration`    | Utgångsdatum för presentkort, för produkter av typen presentkort. (Denna platshållare är specifik för externa presentkort.) |

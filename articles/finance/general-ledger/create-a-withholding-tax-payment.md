@@ -1,26 +1,26 @@
 ---
 title: Skapa en källskattbetalning
 description: Jobbproceduren för källskatt kvittar källskattssaldon från leverantörsreskontra på källskattskonton, och motbokar dem på kontot för källskattskvittning för en viss period. Detta ämne innehåller en lista med steg för att ställa in en källskattebetalning.
-author: roschlom
+author: kailiang
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 226e60d5e374f16d27185ebda512769d36650d24e90ae279d22761d54e238a64
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2b374d7aeab4d066b0894dde8f542c2f807d1ef9
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744975"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713344"
 ---
 # <a name="create-a-withholding-tax-payment"></a>Skapa en källskattbetalning
 

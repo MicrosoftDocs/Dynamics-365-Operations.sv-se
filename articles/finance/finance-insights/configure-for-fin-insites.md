@@ -8,26 +8,26 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b9bad6445e9e77688f66c6c4186422d7a898edd7
-ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
+ms.openlocfilehash: 6ec7e6a7e616e239128281ba669c8bbbfc5e3c7a
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8051380"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710642"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfiguration för Finance Insights
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance insights kombinerar funktioner från Microsoft Dynamics 365 Finance med Dataverse, Azure och AI Builder för att tillhandahålla kraftfulla prognosverktyg för organisationen. I det här avsnittet beskrivs de konfigurationssteg som gör att systemet kan använda de funktioner som finns i Ekonomiska insikter. För att slutföra procedurerna i detta ämne måste du ha åtkomst för Systemadministratör och Systemanpassare i [administratörscentret för Power Portal](https://admin.powerplatform.microsoft.com/), systemadministratörsåtkomst i Dynamics 365 Finance samt åtkomst till att skapa miljöer i Microsoft Dynamics Lifecycle Services (LCS).
+Finance Insights kombinerar funktioner från Microsoft Dynamics 365 Finance med Dataverse, Azure och AI Builder för att tillhandahålla kraftfulla prognosverktyg för organisationen. I det här avsnittet beskrivs de konfigurationssteg som gör att systemet kan använda de funktioner som finns i Ekonomiska insikter. För att slutföra procedurerna i detta ämne måste du ha åtkomst för Systemadministratör och Systemanpassare i [administrationscentret för Power Portal](https://admin.powerplatform.microsoft.com/), Systemadministratörsåtkomst i Dynamics 365 Finance och åtkomst för att skapa miljöer i Microsoft Dynamics Lifecycle Services (LCS).
 
 > [!NOTE]
 > Följande procedurer för hur du konfigurerar Finance Insights gäller för Dynamics 365 Finance-version 10.0.21 och senare.
@@ -36,7 +36,7 @@ Finance insights kombinerar funktioner från Microsoft Dynamics 365 Finance med 
 
 Följ dessa steg för att distribuera miljöerna.
 
-1. Skapa eller uppdatera en Dynamics 365 Finance-miljö i LCS. Miljön kräver appversion 10.0.21 eller senare.
+1. I LCS, skapa eller uppdatera en Dynamics 365 Finance-miljö. Miljön kräver appversion 10.0.21 eller senare.
 
     > [!NOTE]
     > Miljön måste vara en miljö med hög tillgänglighet (HA). (Den här typen av miljö kallas också för en Nivå-2-miljö.) Mer information finns i [Miljöplanering](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
@@ -90,9 +90,9 @@ Tillägget kan ta flera minuter att installera.
 
 ## <a name="one-last-thing"></a>En sista sak...
 
-När tillägget har installerats kan det ta upp till en timme innan du kan aktivera ekonomiin Finance Insights-funktionerna i arbetsytan **Funktionshantering** i Dynamics 365 Finance. Om du inte vill vänta så länge kan du köra processen **Statuskontroll för Insights-etablering**. 
+När tillägget har installerats kan det ta upp till en timme innan du kan aktivera Finance Insights-funktionerna i arbetsytan **Funktionshantering** i Dynamics 365 Finance. Om du inte vill vänta så länge kan du köra processen **Statuskontroll för Insights-etablering**. 
 
-1. I Dynamics 365 Finance går du till **Systemadministration \> Inställningar \> Processautomatisering**.
+1. I Dynamics 365 Finance går du till **Systemadministration \> Konfigurera \> Processautomatisering**.
 2. På fliken **Bakgrundsprocesser** letar du upp **Statuskontroll för Insights-etablering** och väljer **Redigera**.
 3. Ange fältet **Nästa körning** till 30 minuter före den aktuella tiden.
 

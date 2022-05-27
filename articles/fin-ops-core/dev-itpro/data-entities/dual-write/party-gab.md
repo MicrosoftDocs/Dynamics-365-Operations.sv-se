@@ -2,19 +2,19 @@
 title: Part och global adressbok
 description: I det här avsnittet beskrivs funktionerna för part och global adressbok för dubbelriktad skrivning.
 author: RamaKrishnamoorthy
-ms.date: 03/10/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 2e0d16b29a71da23acc925c09c87f0bb4776759c
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 1e2dcfa69308f6691e787a1ff1893f9080dcaef1
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407775"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717458"
 ---
 # <a name="party-and-global-address-book"></a>Part och global adressbok
 
@@ -139,7 +139,7 @@ Rutnätet innehåller följande kolumner:
 
 Du kan använda knappen **Ny elektronisk adress** ovanför rutnätet för att skapa så många postadresser du vill.
 
-Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande versioner tas alla fält för postadresser och elektroniska adresser bort från de andra flikarna (till exempel flikarna **Sammanfattning** och **Detaljer**). Kontaktinformation som visas på fliken **Detaljer** är skrivskyddade kopior av den primära elektroniska adressen, till exempel primärt telefonnummer, primär e-postadress, primär fax och primärt Twitter-ID. Under kvalificeringsledprocessen kan du både ange ett företagtelefonnummer och ett mobiltelefonnummer. Företagstelefonnumret betraktas som primärt telefonnummer om **IsMobile=No**, och mobiltelefonnumret betraktas som sekundärt nummer om **IsMobile=Yes**.
+Under leadkvalificeringsprocessen kan du både ange ett företagtelefonnummer och ett mobiltelefonnummer. Företagstelefonnumret betraktas som primärt telefonnummer om **IsMobile=No**, och mobiltelefonnumret betraktas som sekundärt nummer om **IsMobile=Yes**.
 
 > [!TIP]
 > Använd flikarna **Adresser** och **Elektroniska adresser** i formulären **Konto** och **Kontakt** om du vill hantera postadresser och elektroniska adresser. På så sätt ser du till att adressdata synkroniseras till appar för ekonomi och drift.
@@ -148,11 +148,11 @@ Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande ve
 
 1. Öppna din appmiljö för kundengagemang.
 
-2. Installera den senaste versionen (2.2.2.60 eller senare) av [Lösningen för dubbelriktad skrivning för programorkestrering](https://aka.ms/dual-write-app).
+2. Installera alla nödvändiga lösningar, enligt beskrivningen i [Separat dubbelriktad skrivning programorkestrering-paket](separated-solutions.md).
 
 3. Installera [lösningar för dubbelskrivningspart och global adressbok](https://aka.ms/dual-write-gab).
 
-4. Öppna appen Finance and Operations. Navigera till modulen Datahantering och välj fliken dubbelskrivning. Administrationssidan för dubbelskrivning öppnas.
+4. Öppna appen Ekonomi och drift. Navigera till modulen Datahantering och välj fliken dubbelskrivning. Administrationssidan för dubbelskrivning öppnas.
 
 5. Använd båda lösningar som är installerade i steg 2 och 3 med hjälp av funktionen [Använd lösning](link-your-environment.md).
 
@@ -165,8 +165,8 @@ Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande ve
 
     Mappa | Uppdatera till den här versionen | Ändringar
     ---|---|---
-    `CDS Parties (msdyn_parties)`| 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
-    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.5 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
+    `CDS Parties (msdyn_parties)`| 1.0.0.2 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
+    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.6 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
     `Customers V3 (accounts)` | 1.0.0.5 |Tog bort `PartyNumber` och andra partrelaterade fält som namn, personliga uppgifter, postadressfält samt elektronisk kontaktadress.
     `Customer V3 (contacts)` | 1.0.0.5 | Tog bort `PartyNumber` och andra partrelaterade fält som namn, personliga uppgifter, postadressfält samt elektronisk kontaktadress.
     `Vendors V2 (msdyn_vendors)` | 1.0.0.6 | Tog bort `PartyNumber` och andra partrelaterade fält som namn, personliga uppgifter, postadressfält samt elektronisk kontaktadress.
@@ -174,16 +174,17 @@ Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande ve
     `Sales invoice headers V2 (invoices)` | 1.0.0.4 | Ersatte kontaktpersonen med referensen `ContactforParty`.
     `CDS Sales order headers (salesorders)` | 1.0.0.5 | Ersatte kontaktpersonen med referensen `ContactforParty`.
     `CDS Party postal address locations (msdyn_partypostaladdresses)` | 1.0.0.1  | Detta är en ny karta som har lagts till som en del av den här utgåvan.
-    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.1 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
+    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.2 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
     `CDS postal address locations (msdyn_postaladdresscollections)` | 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
     `Party Contacts V3 (msdyn_partyelectronicaddresses)` | 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
-    `Complimentary Closings ( msdyn_compliemntaryclosings)` | 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
+    `Complimentary Closings (msdyn_compliemntaryclosings)` | 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
     `Decision making roles (msdyn_decisionmakingroles)` | 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
     `Loyalty levels (msdyn_loyaltylevels)` | 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
     `Contact person titles (msdyn_salescontactpersontitles)` | 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
     `Personal character types (msdyn_personalcharactertypes)` | 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
     `Salutations (msdyn_salutations)` | 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
+    `CDS Address roles (msdyn_addressroles)` | 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
 
 8. Innan du kör kartorna ovan måste du uppdatera integreringsnycklarna manuellt enligt beskrivningen i följande steg. Välj sedan **Spara**.
 
@@ -251,14 +252,15 @@ Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande ve
     [CDS-försäljningsofferrubrik](mapping-reference.md#215) | anbudsförfrågningar
     [CDS-försäljningsorderrubrik](mapping-reference.md#217) | salesorders
     [Försäljningsfakturahuvuden V2](mapping-reference.md#118) | fakturor
+    [CDS-adressroller](mapping-reference.md#301) | msdyn_addressroles
 
 > [!NOTE]
-> Kartan `CDS Contacts V2 (contacts)` är den karta som du stoppat i steg 1. När du försöker köra andra kartor visas dessa två kartor kanske i listan med underordnade kartor. Kör inte dessa kartor.
+> Kartan `CDS Contacts V2 (contacts)` är den karta som du stoppade i steg 1. När du försöker köra andra kartor visas dessa två kartor kanske i listan med underordnade kartor. Kör inte dessa kartor.
 >
-> Om parten och den globala adressboken är installerade måste du inaktivera insticksprogrammet `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. Om du avinstallerar lösningen för part och global adressbok måste du återaktivera insticksprogrammet.
+> Om parten och den globala adressboken är installerade måste du inaktivera plugin-programmet `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. Om du avinstallerar lösningen för part och global adressbok måste du återaktivera insticksprogrammet.
 >
 > Fältet `msdyn_*partynumber` (ett textfält med en enda rad) som ingår i registren **Konto**, **Kontakt** och **Leverantör** ska inte användas i fortsättningen. Etikettnamnet har prefixet **(inaktuell)** i förtydligande syfte. Använd istället fältet **msdyn_partyid**. Fältet är en sökning för registret **msdyn_party**.
-
+>
 > Registernamn | Gammalt fält | Nytt fält
 > --------|-------|--------
 > Konto | `msdyn_partynumber` | `msdyn_partyid`
@@ -290,21 +292,22 @@ En samling tabellkartor fungerar tillsammans för interaktion mellan part och gl
 | [Försäljningsfakturahuvuden V2](mapping-reference.md#118) | fakturor |
 | [Tilltal](mapping-reference.md#228) | msdyn\_salutations |
 | [Leverantörer V2](mapping-reference.md#202) | msdyn\_vendors |
+| [CDS-adressroller](mapping-reference.md#301) |msdyn\_addressroles|
 
 Mer information finns i [Mappningsreferens för dubbelskrivning](mapping-reference.md).
+
+## <a name="address-roles-as-a-multi-select-drop-down-list"></a>Adressroller som en listrutan med flera urval
+En postadress eller en elektronisk adress kan användas för mer än ett syfte. En postadress kan till exempel fungera som både faktureringsadress och leveransadress. I så fall kan användaren välja både **Faktura** och **Leverans** i listrutan, vilket visas i illustrationen nedan. 
+
+![Listrutan Syfte/Roll.](media/purpose.png)
 
 ## <a name="known-issues-and-limitations"></a>Kända problem och begränsningar
 
 + När du skapar en kund tillsammans med en adress och sparar denna i appar för ekonomi och drift kanske adressen inte synkroniseras med registret **Adress**. Detta beror på ett ordningsföljdsproblem med plattformar med dubbelskrivning. Som en lösning måste du skapa kunden först och spara den. Lägg sedan till adressen.
 + När en kundpost har en primär adress i appar för ekonomi och drift och du skapar en ny kontakt för den kund ärver kontaktposten en primär adress från den associerade kundposten. Detta inträffar även för leverantörskontakt. Dataverse stöder för närvarande inte detta beteende. Om dubbelskrivning är aktiverad synkroniseras en kundkontakt som ärvs med en primär adress från appen för ekonomi och drift med Dataverse tillsammans med dess adress.
-+ De elektroniska adresser som ställs in på fliken för elektronisk adress i formuläran **Konto**, **Kontakt** och **Leverantör** härrör från `msdyn_partyelectronicaddress`-registret. Denna information flödar inte till dess associerade transaktioner såsom försäljningsorder, offert och inköpsorder. Vi planerar att korrigera det här problemet i stegvisa versioner. Befintliga data i de elektroniska adressfälten i konto- och kontaktposterna fortsätter att arbeta med transaktioner såsom försäljningsorder, offert och inköpsorder.
 + I appar för ekonomi och drift kan du skapa en kontaktpost från formuläret **Lägg till kontakt**. När du försöker skapa en ny kontakt från formuläret **Visa kontalt**, misslyckas åtgärden. Detta är ett känt problem.
 
     ![Känt problem med Lägg till kontakt.](media/party-gab-contact-issue.png)
 
-+ **Initial synkronisering** stöder inte tidsfälten **Tillgänglig från** och **Tillgänglig till** i **ContactForParty**, detta eftersom DIXF omvandlar värdet till en heltalssträng. Konverteringen utlöser felet `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
-+ När en postadress används av mer än en orsak – till exempel affärskommunikationsadress och faktureringsadress – bör den visas som `Business;Invoice` enligt bilden nedan. Om du lägger till ett blanksteg mellan värdena visas ett felmeddelande.
-
-    ![Känt problem med adress.](media/party-gab-address-issue.png)
-
++ **Initial synkronisering** stöder inte tidsfälten **Tillgänglig från** och **Tillgänglig till** i **ContactForParty**, detta eftersom DIXF omvandlar värdet till en heltalssträng. Konverteringen utlöser felet `Cannot convert the literal '<say 08:00:00>' to the expected type edm.int32`.
 + Du kan inte ange en framåtdaterad postadress med hjälp av en app för ekonomi och drift med dubbelskrivning, detta eftersom Dataverse inte stöder giltighetsdatum. Om du anger en framåtdaterad postadress med hjälp av en app för ekonomi och drift synkroniseras denna helt och hållet med Dataverse, och du får omedelbart se adressen i användargränssnittet. Eventuella uppdateringar av den här posten resulterar i ett fel eftersom den är daterad i framtiden och inte i nutid i appen för ekonomi och drift.

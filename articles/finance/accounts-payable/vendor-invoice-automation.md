@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f407d42fe624206e32a2f58fe8c7fcaf2df52c729a1d945d3d801f450b6ed129
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722777"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716421"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Fakturaautomatisering för skannade dokument
 
@@ -32,7 +32,7 @@ Organisationer som vill förenkla sina processer för leverantörsreskontra (AP)
 
 Lösningen för automatiseringen av fakturor innebär ett standardgränssnitt som kan acceptera fakturametadata för fakturahuvudet och fakturaraderna och även bifogade filer som är kopplade till fakturan. Alla externa system som genererar artefakter som överensstämmer med det här gränssnittet kan skicka flödet för automatisk bearbetning av fakturor och bifogade filer.
 
-Följande bild visar ett exempelscenario på integrering där Contoso samarbetar med en OCR-tjänsteleverantör för behandling av leverantörsfakturor. Contosos leverantörer skickar fakturor till tjänsteleverantören via e-post. Via OCR-bearbetningen genererar tjänstleverantören fakturans metadata (rubrik och/eller rader) och en skannad bild av fakturan. Ett integreringsskikt omvandlar sedan dessa artefakter så att de kan förbrukas.
+Följande bild visar ett exempelscenario på integrering där Contoso samarbetar med en OCR-tjänstleverantör för behandling av leverantörsfakturor. Contosos leverantörer skickar fakturor till tjänstleverantören via e-post. Via OCR-bearbetningen genererar tjänstleverantören fakturans metadata (rubrik och/eller rader) och en skannad bild av fakturan. Ett integreringsskikt omvandlar sedan dessa artefakter så att de kan förbrukas.
 
 ![Exempel på integreringsscenario.](media/vendor_invoice_automation_01.png)
 
@@ -58,7 +58,7 @@ Ett datapaket är den arbetsenhet som måste skickas till, så att fakturahuvude
 
 Dokumentbilagor till leverantörsfakturan är en ny dataenhet som introduceras som en del av den här funktionen. Rubrikenheten för leverantörsfakturan har ändrats så att den stöder bilagor. Radenheten för leverantörsfakturan har inte ändrats för den här funktionen.
 
-Detaljerad information om datapaket finns i [Datahantering – en översikt](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Information om hur du skapar datapaket med hjälp av arbetsytan för datahantering finns i [Bearbeta och förbruka datapaket i Dynamics 365 Finance and Operations-applösningen](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
+Detaljerad information om datapaket finns i [Datahantering – en översikt](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Information om hur du skapar datapaket med hjälp av arbetsytan för datahantering finns i [Bearbeta och förbruka datapaket i Dynamics 365 Ekonomi och drift-applösning](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 Om du snabbt vill generera testdata som inkluderar fakturor och bilagor ska du följa dessa steg.
 
@@ -86,7 +86,7 @@ Fakturor som importeras med datapaket kan associeras med den juridiska person de
 
 ## <a name="exception-processing"></a>Behandling av undantag
 
-I fall där leverantörsfakturor når Finance and Operations via integrering måste det finnas ett enkelt sätt för ansvariga för leverantörsreskontra att behandla undantag och felaktiga fakturor, samt att skapa väntande fakturor med utgångspunkt från felaktiga fakturor. Behandlingen av detta undantag för leverantörsfakturor ingår nu i Finance and Operations.
+I fall där leverantörsfakturor kommer till Ekonomi och drift via integrering måste det finnas ett enkelt sätt för ansvariga för leverantörsreskontra att behandla undantag och felaktiga fakturor och att skapa väntande fakturor med utgångspunkt från felaktiga fakturor. Behandlingen av detta undantag för leverantörsfakturor ingår nu i Ekonomi och drift.
 
 ### <a name="vendor-invoices-that-failed-to-import-list-page"></a>Leverantörsfakturor som inte kunde importera listsidan
 

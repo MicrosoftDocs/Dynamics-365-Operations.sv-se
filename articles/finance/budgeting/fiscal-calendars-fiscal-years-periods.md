@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: FiscalCalendars
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 25851
 ms.assetid: a968a5e5-585e-4389-aa4e-c885a7e23413
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87d06e9de2e4e360e92ed350dbad6350744e69ed79a30d2956ab598fdc8a9821
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d50db3a96d6267f59dd5a99c039dd8fc8b44079a
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734572"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717402"
 ---
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Räkenskapskalendrar, räkenskapsår och perioder
 

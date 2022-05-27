@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 10f8754c4156893034117a4d449d464754eacafb0c0f6725c36709632af730ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 092123d6f5f74d2ff160f2ebffdc2c049ccc3f65
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727369"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716536"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generera konsoliderade bokslut
 
@@ -97,7 +97,7 @@ I rapportträdsdefinitionen, ange procentandelen av ägarskap i kolumnen **samma
 
 ![Använda procent för rapportträdsdefinition.](./media/Using-reporting-tree-definition-percentage.png "Använda procent för rapportträdsdefinition")
 
-När rapporten skapas visar Contoso Tyskland-rapporten 100 procent av det totala försäljningsbeloppet, och 80 procent av beloppet fördelas och slås samman med den konsoliderade nivån för försäljning.
+När rapporten skapas, visar Contoso Tyskland-rapporten 100 procent av det totala försäljningsbeloppet och 80 procent av beloppet ska fördelas och slås samman med den konsoliderade nivån för försäljning.
 
 Om du äger mindre än 1 procent av ett företag kan du markera kryssrutan **Tillåt sammanslagning lägre än 1%** på fliken **ytterligare alternativ** på sidan **rapportinställningar** enligt följande illustration. I det här fallet behandlas värden i kolumnen **sammanslagning %** i rapportträdet som mindre än 1 procent. Om du till exempel anger **.8**, kommer 0,8 procent slås samman upp till den konsoliderade nivån, inte 80 procent. Alternativt kan du uppnå samma resultat genom att lämna kryssrutan **Tillåt sammanslagning lägre än 1%** tom och ange **,008** i kolumnen **sammanslagning %**.
 

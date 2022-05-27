@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerAccountAlias
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 60e1dc0e61fd11e5498966031fbe7e6e65af2c6f57a820e1c99df05c6ad7f8f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 50b486cd01850049ab3d23117d994c3db1038124
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745806"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716899"
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Ställ in alias för huvudbokskonto
 
@@ -26,17 +26,14 @@ ms.locfileid: "6745806"
 
 Den här proceduren visar hur du skapar ett kontoalias som innehåller en genväg för att ange ett kontonummer. I proceduren används demonstrationsföretag USMF.
 
-1. Gå till Redovisning > Kontoplan > Konton > Alias för huvudbokskonto.
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Alias för huvudbokskonto.
-4. Välj strukturen som kontot och dimensionerna tillhör i fältet Kontostruktur.
-5. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Företag.
-6. Leta upp och välj det företag som aliaset gäller för i listan.
-7. Klicka på länken på den valda raden i listan.
-8. Ange kontot och dimensionerna i fältet Aliasdefinition för huvudbokskonto.
+1. Gå till **Redovisning > Kontoplan > Konton > Alias för huvudbokskonto**, klicka på **Nytt**.
+2. Skriv ett värde i fältet **Alias för huvudbokskonto**.
+3. Välj strukturen som kontot och dimensionerna tillhör i fältet **Kontostruktur**.
+4. Leta upp och välj det företag som aliaset gäller för i listan i fältet **Företag**.
+5. Ange kontot och dimensionerna i fältet **Aliasdefinition för huvudbokskonto**.
     * Kontot och dimensionerna fylls i när du använder genvägen.  
-9. Välj den dimension som ska ha fokus när aliaset används i fältet Initialt fokus.
-    * När du har skrivit genvägen och kontot och dimensionerna fyllts i är det ursprungliga fokusfältet dit markören eller fokus flyttar.  
+6. Välj den dimension som ska ha fokus när aliaset används i fältet **Initialt fokus**.
+    * När du har skrivit genvägen och kontot och dimensionerna fyllts i är fältet **Initialt fokus** dit markören eller fokus flyttar.  
 
 
 

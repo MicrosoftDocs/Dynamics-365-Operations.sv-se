@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BankReconciliationMatchRule
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "22104"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ebddf6c77df227f896e6f275f741ea69fb68474
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d6dadc5fd49a7103df8e1cacfd3be09c24a06e67
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983602"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711420"
 ---
 # <a name="advanced-bank-reconciliation-overview"></a>Översikt över avancerad bankavstämning
 
@@ -38,7 +38,7 @@ Den avancerade bankavstämningsfunktionen gör att du kan importera bankutdrag. 
     -   Funktionen kan utökas till alla format.
 
 2.  Ställ in en nummerserie som ska användas för avancerad bankavstämning och definiera matchningsregler för bankavstämning.
-    -   Avstämningsmatchningsregler är en uppsättning kriterier som används för att filtrera bankutdragsrader och bankdokumentrader för Microsoft Dynamics 365 Finance under avstämningsprocessen. Du kan ställa in mer än en matchningsregel att automatisera och optimera din avstämningsprocess beroende på din affärsverksamhet.
+    -   Avstämningsmatchningsregler är en uppsättning kriterier som används för att filtrera bankutdragsrader och banktransaktionsrader för Microsoft Dynamics 365 Finance under avstämningsprocessen. Du kan ställa in mer än en matchningsregel att automatisera och optimera din avstämningsprocess beroende på din affärsverksamhet.
 
 3.  Stäm av bankutdragen med banktransaktioner för Finance.
     -   Utför automatisk matchning och genereringen av avstämningsjournaler.

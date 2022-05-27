@@ -2,20 +2,20 @@
 title: Separat dubbelriktad skrivning programorkestrering-paket
 description: Paketet för programorkestrering är inte längre ett enda paket utan har separerats i mindre paket. I det här avsnittet beskrivs lösningar och kartor som varje paket innehåller, samt dess beroende av andra paket.
 author: RamaKrishnamoorthy
-ms.date: 11/29/2021
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: f6950ec3e6ded49a71f119c21be67f538c8e1c69
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063272"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716564"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Separat dubbelriktad skrivning programorkestrering-paket
 
@@ -26,19 +26,19 @@ ms.locfileid: "8063272"
 Tidigare var dubbelriktad skrivning programorkestrering-paketet ett enda paket som innehöll följande lösningar:
 
 - Dynamics 365 Anteckningar
-- Dynamics 365 Finance och Drift gemensamma ankare
-- Dynamics 365 Finance och Drift för entitetsmappningar för dubbelriktade appar
+- Dynamics 365 Ekonomi och drift Gemensamt ankare
+- Dynamics 365 Ekonomi och drift entitetsmappningar för dubbelriktade appar
 - Dynamics 365 tillgångshanteringsapp
 - Dynamics 365 tillgångshantering
 - Gemensamt för HCM
 - Dynamics 365 Supply Chain utökad
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance och Drift gemensamma
+- Dynamics 365 Ekonomi och drift gemensamt
 - Dynamics 365 företag
 - Valutakurser
 - Field Service Common
 
-Eftersom det var ett enskilt paket skapade det här paketet en situation för kunder "allt eller inget". Microsoft har nu separerat den till mindre paket. Därför kan kunden bara välja paket för de lösningar de behöver. Om du till exempel är en Microsoft Dynamics 365 Supply Chain Management kund och du inte kräver integrering med Dynamics 365 Human Resources, anteckningar och tillgångshantering kan du utesluta dessa lösningar från lösningarna som är installerade. Eftersom de underliggande lösningsnamnen, och mappningsversionerna förblir desamma, bryts inte ändringen. Befintliga installationer kan uppgraderas.
+Eftersom det var ett enskilt paket skapade det här paketet en situation för kunder "allt eller inget". Microsoft har nu separerat den till mindre paket. Därför kan kunder bara välja paket för de lösningar de behöver. Om du till exempel är en Microsoft Dynamics 365 Supply Chain Management kund och du inte kräver integrering med Dynamics 365 Human Resources, anteckningar och tillgångshantering kan du utesluta dessa lösningar från lösningarna som är installerade. Eftersom de underliggande lösningsnamnen, och mappningsversionerna förblir desamma, bryts inte ändringen. Befintliga installationer kan uppgraderas.
 
 ![Separerat paket.](media/separated-package-1.png)
 
@@ -51,14 +51,14 @@ Paketet med applikationskärna med dubbelriktad skrivning låter användare inst
 | Unikt namn                           | Visa namn                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 företag                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance och Drift gemensamma |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Ekonomi och drift gemensamt |
 | CurrencyExchangeRates                 | Valutakurser                    |
 | msdyn_DualWriteAppCoreMaps            | Entitetsmappningar för dubbelriktade appar   |
 | msdyn_DualWriteAppCoreAnchor          | Appkärna ankare med dubbla skrivningar        |
 
 Följande kartor finns i detta paket.
 
-| Finance and Operations-appar     | Kundengagemangsappar                    |
+| Ekonomi och drift-appar     | Kundengagemangsappar                    |
 |---------------------------------|---------------------------------------------|
 | Driftenhet                  | msdyn_internalorganizations                 |
 | Organisationshierarki          | msdyn_internalorganizationhierarchies       |
@@ -89,7 +89,7 @@ I paketet med dubbelriktad skrivning Human Resources finns de lösningar och kar
 
 Följande kartor finns i detta paket.
 
-| Finance and Operations-appar | Kundengagemangsappar         |
+| Ekonomi och drift-appar | Kundengagemangsappar         |
 |-----------------------------|----------------------------------|
 | Etniska ursprung              | cdm_ethnicorigins                |
 | Jobbfunktion för kompensation   | cdm_jobfunctions                 |
@@ -119,7 +119,7 @@ I paketet Försörjningskedja finns de lösningar och kartor som krävs för att
 
 Följande kartor finns i detta paket.
 
-| Finance and Operations-appar                 | Kundengagemangsappar                      |
+| Ekonomi och drift-appar                 | Kundengagemangsappar                      |
 |---------------------------------------------|-----------------------------------------------|
 | Enheter                                       | uoms                                          |
 | CDS-försäljningsorderrubrik                     | salesorders                                   |
@@ -186,18 +186,18 @@ Leveranskedjepaketet är beroende av följande tre paket. Därför bör du insta
 
 ## <a name="dual-write-finance"></a>Dubbel riktad skrivning för Finance
 
-I paketet Finance finns de lösningar och kartor som krävs för att Dynamics 365 Finance-data ska synkroniseras. Den innehåller följande fyra lösningar.
+I paketet dubbelriktad skrivning för Finance finns de lösningar och kartor som krävs för att Dynamics 365 Finance-data ska synkroniseras. Den innehåller följande fyra lösningar.
 
 | Unikt namn                            | Visa namn                               |
 |----------------------------------------|-------------------------------------------|
 | Dynamics365FinanceExtended             | Dynamics 365 Finance Extended             |
-| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance utökade enhetsmappningar |
+| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance Extended entitetskartor |
 | FieldServiceCommon                     | Field Service Common                      |
-| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Finance utökade ankare      |
+| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Finance Extended-ankare      |
 
 Följande kartor finns i detta paket.
 
-| Finance and Operations-appar             | Kundengagemangsappar        |
+| Ekonomi och drift-appar             | Kundengagemangsappar        |
 |-----------------------------------------|---------------------------------|
 | Källskattegrupper                  | msdyn_withholdingtaxgroups      |
 | CDS kontakter V2 (kund)              | kontakter                        |
@@ -247,7 +247,7 @@ I anteckningar paketet för dubbelriktad skrivning finns de lösningar och karto
 
 Följande kartor finns i detta paket.
 
-| Finance and Operations                     | Customer Engagement |
+| Ekonomi och drift                     | Customer Engagement |
 |--------------------------------------------|---------------------|
 | Försäljningsorderrubrikens dokumentbilagor    | anteckningar         |
 | Kundbilagor                       | anteckningar         |
@@ -274,7 +274,7 @@ I paketet dubbelriktad skrivning för tillgångshantering innehåller de lösnin
 
 Följande kartor finns i detta paket.
 
-| Finance and Operations-appar                           | Kundengagemangsappar                |
+| Ekonomi och drift-appar                           | Kundengagemangsappar                |
 |-------------------------------------------------------|-----------------------------------------|
 | Garanti över tillgångshantering                             | msdyn_warranties                        |
 | Tillgångshanteringsmodeller                               | msdyn_models                            |
@@ -300,3 +300,47 @@ Project Operations är beroende av följande paket. Därför bör du installera 
 - Försörjningskedja paket med dubbel skrivning
 - Dubbelriktad skrivning för tillgångshantering paket
 - Dubbel skrivning Human Resources-paketet
+
+## <a name="dual-write-party-and-global-address-book-solutions"></a>Lösningar för dubbelskrivningspart och global adressbok
+
+Det paketet med dubbelskrivningspart och global adressbok innehåller följande lösningar och kartor som krävs för att synkronisera part- och globala adressboksdata. 
+
+| Unikt namn                       | Visningsnamn                            |
+|-----------------------------------|-----------------------------------------|
+| Part                             | Part                                   |
+| Dynamics365GABExtended            | Dynamics 365 GAB Extended               |
+| Dynamics365GABDualWriteEntityMaps | Dynamics 365 GAB entitetskartor för dubbelriktad skrivning |
+| Dynamics365GABParty_Anchor        | Dynamics 365 GAB och part              |
+
+Följande kartor finns i detta paket.
+
+| appar för ekonomi och drift | Kundengagemangsappar | 
+|-----------------------------|--------------------------|
+| CDS-parter | msdyn_parties | 
+| Platser för postadressen för CDS | msdyn_postaladdresscollections | 
+| Historik över postadressen för CDS V2 | msdyn_postaladdresses | 
+| Platser för CDS-partens postadress | msdyn_partypostaladdresses | 
+| Partkontakter V3 | msdyn_partyelectronicaddresses | 
+| Kunder V3 | konton | 
+| Kunder V3 | kontakter | 
+| Leverantörer V2 | msdyn_vendors | 
+| Kontaktpersonens titlar | msdyn_salescontactpersontitles | 
+| Avslutningsfraser | msdyn_complimentaryclosings | 
+| Tilltal | msdyn_salutations | 
+| Roller för beslutsfattare | msdyn_decisionmakingroles | 
+| Anställningsfunktioner | msdyn_employmentjobfunctions | 
+| Lojalitetsnivåer | msdyn_loyaltylevels | 
+| Typer av personliga egenskaper | msdyn_personalcharactertypes | 
+| Kontakter V2 | msdyn_contactforparties | 
+| CDS-försäljningsofferrubrik | anbudsförfrågningar | 
+| CDS-försäljningsorderrubrik | salesorders | 
+| Försäljningsfakturahuvuden V2 | fakturor | 
+| CDS-adressroller | msdyn_addressroles |
+
+**Beroendeinformation**
+
+Lösningarna för dubbelriktad skrivning och global adressbok beror på följande tre paket. Därför bör du installera dessa paket innan du installerar paketet med lösningar för dubbelriktad skrivning och global adressbok.
+
+- Paket för appkärna med dubbla skrivningar
+- Dubbel riktad skrivning för Finance-paketet
+- Försörjningskedja paket med dubbel skrivning

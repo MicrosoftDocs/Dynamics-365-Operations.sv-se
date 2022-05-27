@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 ROBOTS: noindex,nofollow
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: cea6258d3a99ba33e73acd2508ec7b6c11d15859
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 61cc002395ac3bc946fa03a04833a7b6d4820194
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061764"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711616"
 ---
 # <a name="configuration-for-finance-insights---version-10020-and-later"></a>Konfiguration för Finance Insights – före version 10.0.20 och senare
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061764"
 
 
 
-Finance insights kombinerar funktioner från Microsoft Dynamics 365 Finance med Dataverse, Azure och AI Builder för att tillhandahålla kraftfulla prognosverktyg för organisationen. I detta ämne beskrivs hur du konfigurerar Dynamics 365 Finance version 10.0.20 så att ditt system kan använda de funktioner som finns i Finance Insights.
+Finance Insights kombinerar funktioner från Microsoft Dynamics 365 Finance med Dataverse, Azure och AI Builder för att tillhandahålla kraftfulla prognosverktyg för organisationen. I detta ämne beskrivs hur du konfigurerar Dynamics 365 Finance version 10.0.20 så att ditt system kan använda de funktioner som finns i Finance Insights.
 
 > [!NOTE]
 > Konfigurationsstegen som beskrivs i det här ämnet gäller bara för Finance version 10.0.20 och senare. "Mer information om hur du ställer in Finance Insights i version 10.0.19 och senare finns i [Konfiguration för Finance Insights – versioner upp till 10.0.19](configure-for-fin-insites.md).
@@ -38,7 +38,7 @@ Finance insights kombinerar funktioner från Microsoft Dynamics 365 Finance med 
 
 Följ dessa steg för att distribuera miljöerna.
 
-1. I Microsoft Dynamics Lifecycle Services (LCS) skapar eller uppdaterar du en Finance-miljö. För miljön krävs appversion 10.0.20 eller senare av Finance and Operations-apparna.
+1. I Microsoft Dynamics Lifecycle Services (LCS) skapar eller uppdaterar du en Finance-miljö. För miljön krävs appversion 10.0.20 eller senare av Ekonomi och drift-apparna.
 2. Miljön måste vara en miljö med hög tillgänglighet (HA) i sandbox-miljö. (Den här typen av miljö kallas också för en Nivå-2-miljö.) Mer information finns i [Miljöplanering](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 3. Om du konfigurerar Finance Insights i en sandbox-miljö måste du kanske kopiera produktionsdata till den miljön för att förutsägelser ska fungera. I modellen för förutsägelse används flera års data för att skapa förutsägelser. Contoso-demodatan innehåller inte tillräckligt med historiska data för på ett adekvat sätt mata förutsägelsemodellen. 
 
@@ -126,7 +126,7 @@ Om du inte hittar något av ovanstående program gör du på följande sätt.
         - **Prestanda** – Vi rekommenderar att du väljer **Standard**.
         - **Kontotyp** – Du måste välja **StorageV2**.
 
-    3. I dialogrutan **Avancerade alternativ**, för alternativet **Data Lake Storage Gen2** väljer du **Aktivera** under funktionen **Hierarkiska namnrymder**. Om du inte aktiverar den här funktionen kan du inte använda data som Finance and Operations-appar skriver med hjälp av tjänster som exempelvis Power BI-dataflöden.
+    3. I dialogrutan **Avancerade alternativ**, för alternativet **Data Lake Storage Gen2** väljer du **Aktivera** under funktionen **Hierarkiska namnrymder**. Om du inte aktiverar den här funktionen kan du inte använda data som Ekonomi och drift-appar skriver med hjälp av tjänster som exempelvis Power BI-dataflöden.
     4. Välj **Granska och skapa**. När distributionen har slutförts visas den nya resursen i Azure-portalen.
     5. Gå till det lagringskonto som du har skapat.
     6. Välj **Åtkomstnycklar** i menyn till vänster.

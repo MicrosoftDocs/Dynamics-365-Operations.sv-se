@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "106043"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ad0d055702a3801bf9fe9ac3159eba7c297b6f0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1e5ef283991cb7ccb990d7d687ab3964040d03ba
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983962"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712577"
 ---
 # <a name="budgeting-home-page"></a>Startsidan Budgetering
 
@@ -38,7 +38,7 @@ Resursplanläggningscykeln för ett företag består typiskt av aktiviteter för
 
 Processerna för såväl långsiktig strategisk planering som årlig budgetplanering stöds via ett budgetplandokument. Budgetplandokument är väl integrerade med Microsoft Excel. Användarna kan konfigurera obegränsade monetära och kvantitativa scenarier och även definiera en organisationshierarki för budgetering som stöder budgetmetoder både uppifrån och ned och nedifrån och upp. När en budget har skapats och godkänts i appen, konverterar du budgetplanen till en budgetregisterpost. Budgetregisterposter innehåller verktyg för underhåll av budgeten för att göra beloppen spårningsbara med budgetkoder. Budgetregisterposter gör att det går att ändra ursprungliga budgetar, utföra överföringar och överföra budgetbelopp från föregående år. Utifrån den upprättade budgeten kan företaget aktivera budgetkontroll. Nivån på kontrollen beror på organisationens kultur och mognadsnivå. Organisationer med en lägre mognadsnivå kan lämna budgeten som den är och kan vara mer reaktiva än proaktiva om en budget inte uppfyller förväntningarna. Andra organisationer kan aktivera budgetkontrollregler som hindrar att användare gör inköp om budgeterade medel inte finns tillgängliga.
 
-Slutligen: Väl utvecklade organisationer kan skapa en organisationskultur där medarbetare utbildas om organisationens mål och följer dessa mål genom olika policyer, t.ex. "Överväg internetkonferenser istället för resor." Appen omfattar ett ramverk för budgetkontroll som låter företagets ledning välja antingen hård styrning (som förhindrar bokföringar som skulle överskrida budgeten) eller mjuk styrning (där användarna varnas att de kommer att överskrida tillgängliga budgetmedel, men själva kan bestämma hur de vill fortsätta). Slutligen går det även att använda löpande prognoser. En rullande prognos är en jämförelse av budgeten och de verkliga siffrorna och används för att definiera hur bra företaget går i förhållande till budgeten. En rullande prognos kan också identifiera tendenser. Finance and Operations stöder rullande prognoser genom ett budgetplandokument som första planeringsaktivitet. Rullande prognoser kan utföras parallellt med planeringen för nästkommande budgetcykel.
+Slutligen: Väl utvecklade organisationer kan skapa en organisationskultur där medarbetare utbildas om organisationens mål och följer dessa mål genom olika policyer, t.ex. "Överväg internetkonferenser istället för resor." Appen omfattar ett ramverk för budgetkontroll som låter företagets ledning välja antingen hård styrning (som förhindrar bokföringar som skulle överskrida budgeten) eller mjuk styrning (där användarna varnas att de kommer att överskrida tillgängliga budgetmedel, men själva kan bestämma hur de vill fortsätta). Slutligen går det även att använda löpande prognoser. En rullande prognos är en jämförelse av budgeten och de verkliga siffrorna och används för att definiera hur bra företaget går i förhållande till budgeten. En rullande prognos kan också identifiera tendenser. Ekonomi och drift stöder rullande prognoser genom ett budgetplandokument som första planeringsaktivitet. Rullande prognoser kan utföras parallellt med planeringen för nästkommande budgetcykel.
 
 -   [Budgetöversikt](basic-budgeting-overview-configuration.md)
 -   [Översikt över budgetkontroll](budget-control-overview-configuration.md)

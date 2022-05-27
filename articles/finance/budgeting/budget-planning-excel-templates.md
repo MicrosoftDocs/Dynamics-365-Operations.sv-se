@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetPlanSetLayout
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8297548bee83d1e982f50c4e5adae748f9f40137362f4ad47ad837ea2af96c29
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 90691aec0ffad8d33a19a09e7bc521cd6d6a09a9
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775180"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711988"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budgetplaneringsmallar för Excel
 
@@ -55,7 +55,7 @@ Du kan granska layoutkonfigurationen och justera den efter behov.
 Excel-mallen innehåller alla element från budgetplanens dokumentlayout, där kolumnen **Tillgängliga i kalkylbladet** har angetts som True. Överlappande element tillåts inte i Excel-mallen. Om layouten exempelvis innehåller kolumner för Begäran K1, Begäran K2, Begäran K3 och Begäran K4 och en kolumn för total begäran som motsvarar summan för alla 4 kvartalkolumner, är endast den kvartalsvisa kolumnen (totalkolumnen) tillgänglig att användas i Excel-mallen. Excel-filen kan inte uppdatera överlappande kolumner under uppdateringen, detta eftersom informationen i tabellen kan bli för gammal eller felaktig.
 
 > [!NOTE] 
-> Om du vill undvika problem med att visa och redigera budgetplandata med Excel, bör samma användare vara inloggad på både Microsoft Dynamics 365 Finance och Office-tillägget för datakoppling till Microsoft Dynamics.
+> Om du vill undvika problem med att visa och redigera budgetplandata med Excel, bör samma användare vara inloggad på både Microsoft Dynamics 365 Finance och Microsoft Dynamics Office-tilläggets dataanslutningsprogram.
 
 ## <a name="add-a-header-to-budget-plan-document-template"></a>Lägg till en sidrubrik i en dokumentmall för budgetplan
 För att lägga till sidrubriksinformation, markera den översta raden i Excel-filen och infoga tomma rader. Klicka på **Design** i **Datakoppling** för att lägga till sidhuvudfält i Excel-filen.
@@ -79,7 +79,7 @@ Den valda fältgruppen visar de kolumner som finns i mallen. Klicka på **Formel
 [![Lägg till och infoga kolumn.](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Ange formeln genom att skapa den i kalkylbladet och kopiera den sedan till fönstret **Design**. En tabell avsedd för Finance and Operations namnges vanligtvis "AXTable1". För att till exempel summera Begäran K1 : Begäran K4-kolumner i kalkylbladet blir formeln = AxRegister1\[Begäran K1\]+ AxRegister1\[Begäran K2\]+ AxRegister1\[Begäran K3\]+ AxRegister1\[Begäran K4\].
+> Ange formeln genom att skapa den i kalkylbladet och kopiera den sedan till fönstret **Design**. Ett register avsett för Ekonomi och drift namnges vanligtvis "AXTable1". För att till exempel summera Begäran K1 : Begäran K4-kolumner i kalkylbladet blir formeln = AxRegister1\[Begäran K1\]+ AxRegister1\[Begäran K2\]+ AxRegister1\[Begäran K3\]+ AxRegister1\[Begäran K4\].
 
 Upprepa dessa steg för att infoga kolumnen **Justering**. Använd formeln = AxRegister1\[Total begäran\]\*$I$ 1 för den här kolumnen. Detta kommer ta värdet i cell I1 och multiplicera värdena i kolumnen **Total begäran** för att beräkna justeringsbeloppen.
 
