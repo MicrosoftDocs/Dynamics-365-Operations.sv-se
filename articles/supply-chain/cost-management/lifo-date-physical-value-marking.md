@@ -1,7 +1,7 @@
 ---
 title: LIFO-datum med fysiskt värde och markering
 description: Sist in, först ut-datum (LIFO-datum) är en lagermodell baserad på LIFO-principen. Utleveranser från lagret kvittas mot de senaste inleveranserna till lagret, baserat på datumet för lagertransaktionen. Genom att använda LIFO-datum kvittas utleveransen mot alla eventuella inleveranser som sker efter datum för utleveransen, detta om det inte finns någon inleverans före utleveransen. Flera utleveranser på samma datum kan kvittas i ordningen senaste utleverans - senaste inleverans.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 02/21/2022
 ms.topic: article
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
@@ -9,15 +9,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 51592
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6f5f447724ace473bece3007a96c4b56e90a908
-ms.sourcegitcommit: addae271ddfc5a8b0721c23337f69916153db4cd
+ms.openlocfilehash: 8ca344e6ca81814e787046f6ece97625d035346d
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/21/2022
-ms.locfileid: "8330286"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8671462"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-datum med fysiskt värde och markering
 

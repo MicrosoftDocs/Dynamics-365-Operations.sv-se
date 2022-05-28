@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 727e1eb75f807d84f088cf3dd139eb094aa76618
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: ae453bd57217f272038decc7e40ed373f618ae03
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087227"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710234"
 ---
 # <a name="task-management"></a>Uppgiftshantering
 
@@ -57,18 +56,14 @@ Fliken **avregistrering** innehåller en lista över medarbetare som lämnar fö
 Fliken **Övergångar** innehåller en lista med **Alla uppgifter** som visar alla uppgifter för alla medarbetare som ska byta befattningar eller som nyligen ändrade befattningar. Det finns också en lista över förfallna uppgifter och en lista över uppgifter som har tilldelats den aktuella användaren.
 
 På alla tre flikar kan personalmedhjälpare och chefer utföra följande aktiviteter:
-
-- Använd en checklista för en medarbetare.
-- Uppdatera status för en uppgift.
-- Tilldela om en uppgift.
-- Uppdatera en uppgifts förfallodatum.
+- Använd en checklista för en medarbetare
+- Uppdatera status för en uppgift
+- Tilldela om en uppgift
+- Uppdatera en uppgifts förfallodatum
 
 > [!NOTE]
 > Som standard visar fliken **Registrering** medarbetare som anställts de senaste sju dagarna. Om du vill ändra denna inställning, på sidan **Personalparametrar** på fliken **Allmänt** i fältet **Nyanställda** anger du en tidsram. Informationen i listan **Nyanställda** kan visas under ett specifikt antal dagar, månader eller år. Om du till exempel vill visa listan med medarbetare som anställdes under de senaste 14 dagarna anger du fältet **Period** som **14** och fältet **Enhet** som **Dagar**.
->
-> På sidan **Personalparametrar** kan du även uppdatera datumintervallet för listorna över utsända och utsända medarbetare som visas på fliken **Avregistrera**.
->
-> Inställningarna gäller även för arbetsytan för **personalhantering**.
+> På sidan **Personalparametrar** kan du även uppdatera datumintervallet för listorna över utsända och utsända medarbetare som visas på fliken **Avregistrering**. Inställningarna gäller även arbetsytan **Personalhantering**.
 
 ## <a name="setting-up-tasks"></a>Ställa in uppgifter
 
@@ -188,6 +183,13 @@ Du kan också tillämpa en checklista för en medarbetare genom att öppna sidan
 ## <a name="completing-tasks"></a>Slutföra uppgifter
 
 På sidan **Självbetjäning för medarbetare** kan en medarbetare visa alla uppgifter som är tilldelade till dem. För varje tilldelad uppgift visas **uppgift**, **beskrivning**, **instruktioner** och **kontaktpersonens** värden. Dessutom kan medarbetaren öppna den associerade externa webbsidan eller den associerade sidan i programmet Dynamics 365 för varje uppgift.
+
+Uppgifter kan också visas på standardinstrumentpanelen. Gör så här om du vill visa uppgifter på standardinstrumentpanelen:
+1. Gå till **Användaralternativ – Inställningar – Uppgiftshantering** 
+2. Välj **Visa uppgifter på standardinstrumentpanel** till **På**.  
+
+>[!Note] 
+>Funktionen **Uppgiftshantering** måste vara aktiverad i **Funktionshantering** för att alternativet ska visas i **Användaralternativ**.
 
 Uppgifter kan markeras som **pågår**, **annullerad** eller **slutförd**. Om en uppgift tilldelas en grupp markeras den som **Slutförd** när en person i gruppen slutför den.
 

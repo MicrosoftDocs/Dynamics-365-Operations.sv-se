@@ -1,7 +1,7 @@
 ---
 title: Skapa leverantörskonton
 description: I det här avsnittet beskrivs de informationstyper som du måste ange när du skapar ett nytt leverantörskonto.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9cbfd3a3c1afd794814bbbae07e1dc31eb9f181
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5d524ff99cba733fdd607d9708abba440248d6cc
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565481"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8676986"
 ---
 # <a name="set-up-vendor-accounts"></a>Skapa leverantörskonton
 
@@ -63,7 +63,7 @@ Du kan skapa leverantörskontakter från noll. Alternativt kan du också kopiera
 
 Du kan inte ta bort en post för kontaktperson om ett dokument refererar till kontakten. I stället kan du avaktivera kontakten.  
 
-Du kan lägga till leverantörskontakter till dina personliga kontakter i Microsoft 365. Du måste dock först ställa in synkronisering mellan Supply Chain Management och Microsoft Exchange Server i både Microsoft 365.-synkroniseringen och Microsoft Outlook-installationsguiden.
+Du kan lägga till leverantörskontakter till dina personliga kontakter i Microsoft 365. Du måste dock först ställa in synkronisering mellan Supply Chain Management och Microsoft 365 i både Microsoft Exchange Server-synkroniseringen och Microsoft Outlook-installationsguiden.
 
 ## <a name="vendors-in-different-legal-entities"></a>Leverantörer i olika juridiska personer
 Om en leverantör registreras för endast en juridisk person inom din organisation, och andra juridiska personer måste registrera samma leverantör, kan du använda sidan **Lägg till leverantör till en annan juridisk person** för att konfigurera leverantören i syfte att göra affärer med en annan juridisk person. Du måste välja en leverantörsgrupp, en valuta och en undantagsstatus för leverantören i den valda juridiska personen.  

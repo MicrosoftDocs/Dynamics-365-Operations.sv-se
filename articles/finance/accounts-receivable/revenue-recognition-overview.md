@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: aae46fa90d306355608200f96ae5cf10793c8464
-ms.sourcegitcommit: 0925b9ee0cb0df93047681a243aacc2abd404dea
+ms.openlocfilehash: 35ee857339a59391b048f920e8d6b13812909d76
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "8446188"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725775"
 ---
 # <a name="revenue-recognition-overview"></a>Översikt över intäktsredovisning
 
@@ -35,7 +35,7 @@ I allmänhet kan intäktsredovisningsprocessen användas för att utföra dess u
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44iER]
 
-Videon [om hur du redovisar intäkter i Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo) (visas ovan) finns med på [spellistan för Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) på YouTube.
+Videon [om hur du redovisar intäkter i Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo) (visas ovan) ingår i [Ekonomi och drifts spellista](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) på YouTube.
 
 Intäktsredovisningsfunktionen ger ett flexibelt ramverk där du kan definiera företagsspecifika regler för redovisning av både intäktspris och intäktsplan.
 

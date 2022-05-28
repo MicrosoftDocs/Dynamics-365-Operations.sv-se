@@ -2,7 +2,7 @@
 title: Regeluppdateringar
 description: Det här avsnittet innehåller en lista med planerade och utgivna regleruppdateringar för Microsoft Dynamics 365 Finance.
 author: VStamberg
-ms.date: 01/20/2022
+ms.date: 04/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 734a4abf4559d05b1f96bcfbde151b49bba8e827
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 4e9a74f814e6ae93fd5c12b05c4fbd00ad503fca
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649141"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711926"
 ---
 # <a name="regulatory-updates"></a>Regeluppdateringar
 
@@ -29,11 +29,11 @@ Regeluppdateringar är funktioner som har implementerats så att de stöder ny e
 
 Microsoft strävar efter att implementera nya regelkrav så tidigt som möjligt. Det faktiska leveransdatumet beror på rätt meddelandedatum, tillgänglighet av kravdetaljer från de lokala myndigheterna, tillgänglighet av valideringsverktyg och på storlek och komplexitet av ändringen.
 
-Vi planerar att släppa andra tjänstuppdateringar för en version som ges ut i tid för kunderna att uppdatera och vara klar för genomförandedatumet (för transaktionsbaserade regeluppdateringar) eller för första obligatoriska rapporteringsdeadline (för regeluppdateringar relaterade till rapportering). Kunder och partners kan förhandsgranska regeluppdateringar i PEAP (Preview Early Adoption Program).
+Vi planerar att släppa andra tjänstuppdateringar för en version som ges ut i tid för kunderna att uppdatera och vara klar för genomförandedatumet (för transaktionsbaserade regeluppdateringar) eller för första obligatoriska rapporteringsdeadline (för regeluppdateringar relaterade till rapportering). Kunder och partners kan förhandsgranska regeluppdateringar i förhandsversionspaketet som tillhandahålls för varje tjänstuppdatering.
 
 Vid sena meddelandedatum, sen tillgänglighet av kravdetaljer eller valideringsverktyg eller ovanligt stora och komplexa ändringar kanske det inte är möjligt att göra en andra regeluppdatering tillgänglig genom allmänna tillgänglighetsdatum av en månatlig uppdatering. I så fall måste regeluppdateringen levereras som snabbkorrigeringar för relevanta månatliga uppdateringar.
 
-Regeluppdateringar som ingår i månadens uppdatering indikeras endast av en utgiven version. Regeluppdateringar som levereras antingen som snabbkorrigeringar eller som en del av en versions förhandsgranskning kan identifieras genom förkortningarna HF respektive PEAP. 
+Regeluppdateringar som ingår i månadens uppdatering indikeras endast av en utgiven version. Regeluppdateringar som levereras antingen som snabbkorrigeringar eller som en del av en versions förhandsgranskning kan identifieras genom förkortningarna HF respektive Förhandsversion. 
 
 För de senaste kravuppdateringsplanerna, se följande tabell.   
 

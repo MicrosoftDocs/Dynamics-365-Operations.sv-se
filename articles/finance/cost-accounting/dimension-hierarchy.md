@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 40ae7b61537cdcd1934056b9e289f342e96b57d3eebe5a6e713b2db91310ed9a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 852cfa536ed7e6985ce1f7de612b34e2a492ee07
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766991"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735094"
 ---
 # <a name="dimension-hierarchy"></a>Dimensionshierarki
 
@@ -203,13 +203,13 @@ Om du skapar rapporter med hjälp av Excel eller Power BIexporteras endast de f�
 I följande exempel visas hur en dimensionshierarki kan se ut i rapportstrukturen.
 
 | Dimensionshierarki för kostnadsobjekt – nivå 1 | Dimensionshierarki för kostnadsobjekt – nivå 2 | Dimensionshierarki för kostnadsobjekt – nivå 3 | Dimensionshierarki för kostnadsobjekt – nivå 4 | Dimensionshierarki för kostnadsobjekt – nivå 15 |
-|-------------------------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|--------------------------------------------|
-| Organisation                              | Admin                                     | Finansiellt                                   | CC002                                     |                                            |
-| Organisation                              | Admin                                     | Finansiellt                                   | CC003                                     |                                            |
-| Organisation                              | Admin                                     | Finansiellt                                   | CC007                                     |                                            |
-| Organisation                              | Admin                                     | Personal                                        | CC001                                     |                                            |
-| Organisation                              | Produktion                                | Paketering                                 | CC005                                     |                                            |
-| Organisation                              | Produktion                                | Sammansättning                                  | CC006                                     |                                            |
+|----------------------------------|---------------------------------|-------------------------|-------------------------|----------------------------------------|
+| Organisation              | Admin                 | Finansiellt                    | CC002              |                                            |
+| Organisation              | Admin                 | Finansiellt                    | CC003              |                                            |
+| Organisation              | Admin               | Finansiellt                     | CC007               |                                            |
+| Organisation              | Admin                | Personal                           | CC001              |                                            |
+| Organisation              | Produktion           | Paketering                    | CC005             |                                            |
+| Organisation              | Produktion          | Sammansättning                      | CC006            |                                            |
 
 ### <a name="update-the-dimension-hierarchies-that-are-used-for-reporting"></a>Uppdatera de dimensionshierarkier som används för rapportering 
 
@@ -328,7 +328,7 @@ Inställningar för Hierarki för åtkomstlista används för att bestämma vilk
 - Power BI:
 
     - Data som visas i Power BI-visualiseringar
-    - Data Power BI visuella effekter som är inbäddade i Dynamics 365 Finance-klienten
+    - Data Power BI-visualiseringar som är inbäddade i Dynamics 365 Finance-klienten
 
 > [!NOTE] 
 > - Innan Hierarki för åtkomstlista kan påverka data i Power BI måste hierarkiåtkomst och säkerhet på radnivå i Power BI paras ihop. Mer information finns i [ställa in säkerhet för kostnadsredovisningens innehållspaket](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).

@@ -7,19 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 308e2a538666522edf4a76be13b93c82c3f3a774
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9b83250bdb54ea6e78709dd3a3ea434a994f6211
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071120"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694016"
 ---
 # <a name="integration-with-finance-faq"></a>Vanliga frågeställningar integrering med Finance
 
@@ -34,7 +33,7 @@ Det här avsnittet svarar på vanliga frågeställningar om vilken information s
 
 ## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Kan jag redigera Dynamics 365 Talent-programanvändaren i Power Apps?
 
-Nr Om du redigerar Personal-programanvändaren kan det hända att integreringen mellan Personal och Dataverse misslyckas. I följande tabell visas standardinställningarna för Talang-programanvändaren.
+Nej Om du redigerar Personal-programanvändaren kan det hända att integreringen mellan Personal och Dataverse misslyckas. I följande tabell visas standardinställningarna för Talang-programanvändaren.
 
 | Fullständigt namn | Sökande-ID | Azure AD Objekt-ID | Sökande-ID URI |
 | --- | --- | --- | --- |
@@ -44,7 +43,7 @@ Nr Om du redigerar Personal-programanvändaren kan det hända att integreringen 
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Synkroniseras all data eller bara vissa datatabeller?
 
-E delmängd data synkroniseras. En lista över alla enheter finns i [integrering med Dynamics 365 Finance](hr-admin-integration-finance.md).
+E delmängd data synkroniseras. En lista över alla enheter finns i [Integrering med Dynamics 365 Finance](hr-admin-integration-finance.md).
 
 ## <a name="why-dont-i-see-any-data-synced-to-dataverse"></a>Varför visas inga data synkroniserade till Dataverse?
 
@@ -119,7 +118,7 @@ Orsaker till felet kan vara:
 
 - Dataöverföring resulterade i dubbla extraheringar av poster vid källan (Dataverse).
 
-- Dataöverföringen har null-värden för fält som behövs i Finance and Operations. Verifiera data på Dataverse som uppfyller behovet av Finance and Operations.
+- Dataöverföringen har null-värden för fält som behövs i Ekonomi och drift. Verifiera data på Dataverse som uppfyller behovet av Ekonomi och drift.
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Om det finns exekveringsfel och anställningsidentifikationen inte synkroniserades, hur hittar jag det historikjobb som har misslyckad medarbetarpost?
 
@@ -151,7 +150,7 @@ Om enheten stöds och data som finns på Dataverse, verifiera att mappningen är
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Adresser för mina medarbetare är felaktiga när jag har importerat dem till Finance. Vad ska jag göra?
 
-Nummerserien för **plats-ID** använder samma mönster i både Personal och Finance. Nummerserien måste vara unika på båda sidor så att det inte finns några adresskollisioner när du integrerar data från Dataverse till Finance and Operations.
+Nummerserien för **plats-ID** använder samma mönster i både Personal och Finance. Nummerserien måste vara unika på båda sidor så att det inte finns några adresskollisioner när du integrerar data från Dataverse till Ekonomi och drift.
 
 Under implementering av Personal, verifiera att nummerserier inte är desamma i Personal and Finance. Verifiera att alla nummerserier inte är identiska där data kan behållas i båda systemen.
 

@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspace, CAMParameters
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c30a7c2765647aad17a475ba8705b8e688d166593adf242fcd15d90e49334189
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13d562a4f42644b822c9548d1ea87d44a396b2c2
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733039"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733890"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Åtkomsträttigheter för en kostnadsobjektcontroller
 
@@ -91,7 +91,7 @@ Inställningar för Hierarki för åtkomstlista används för att bestämma vilk
 - Microsoft Power BI:
 
     - Data som visas i Power BI-visualiseringar
-    - Data Power BI visuella effekter som är inbäddade i Dynamics 365 Finance-klienten
+    - Data Power BI-visualiseringar som är inbäddade i Dynamics 365 Finance-klienten
 
 > [!IMPORTANT]
 > - Innan Hierarki för åtkomstlista kan påverka data i Power BI måste hierarkiåtkomst och säkerhet på radnivå i Power BI paras ihop. Mer information finns i [ställa in säkerhet för kostnadsredovisningens innehållspaket](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).

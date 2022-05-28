@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMDimension, CAMDimensionMember, CAMDimensionMapping
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 223234
 ms.assetid: 4c66a231-aed2-48b5-9727-b3eb4fe6e6aa
 ms.search.region: global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b9ac59f305afd55edfcfb3b47bf38ddd44d92a706904f55a069a6a9fc9050825
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7654f748fb0cfc70d76718f03a235c5d4d13a908
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728041"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735476"
 ---
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Mappa dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar
 
@@ -33,12 +33,12 @@ Om du är ett globalt företag och följer lagstadgade redovisningsbestämmelser
 ## <a name="map-cost-element-dimension-members-to-a-common-format"></a>Mappa dimensionsmedlemmar för kostnadselement till en gemensamt format
 Följande exempel visar hur du som en kostnadscontroller kan skapa en ny dimension för kostnadselement i som mappar dimensionsmedlemmar för kostnadselement för den amerikanska kontoplanstrukturen och den franska kontoplanstrukturen till en gemensam uppsättning med dimensionsmedlemmar för kostnadselement. Du kan sedan använda den gemensam uppsättningen med dimensionsmedlemmar för kostnadselement om du vill analysera kostnadsdata från de två juridiska personerna i en kostnadsredovisning.
 
-| Källa: amerikanska kontoplanen                                          | Källa: franska kontoplanen                                          | Ny gemensam uppsättning med dimensionsmedlemmar för kostnadselement                        |
-|-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Källa: amerikanska kontoplanen          | Källa: franska kontoplanen           | Ny gemensam uppsättning med dimensionsmedlemmar för kostnadselement                        |
+|------------------------------------|----------------------------------------------|-------------------------------------------------------------------------|
 | Importerade dimensionsmedlemmar för kostnadselement från den amerikanska kontoplanen | Importerade dimensionsmedlemmar för kostnadselement från den franska kontoplanen | Mappning av franska och amerikanska dimensionsmedlemmar för kostnadselement till en gemensam uppsättning |
-| 5001: Försäljning                                                           | 5001: Försäljning och reklam                                               | 5000: Försäljning och reklam                                             |
-| 5030: Reklam                                                     | 6390: Lagerinköp\*                                                    | 7000: Rengöringskostnader                                                 |
-| 7001: Rengöringskostnader                                               | 7001: Reseutgifter                                                      | 7001: Reseutgifter                                                   |
+| 5001: Försäljning                   | 5001: Försäljning och reklam                      | 5000: Försäljning och reklam                               |
+| 5030: Reklam             | 6390: Lagerinköp\*                          | 7000: Rengöringskostnader                                   |
+| 7001: Rengöringskostnader              | 7001: Reseutgifter                     | 7001: Reseutgifter                                                   |
 
 \*Lagerinköp för franska dimensionsmedlemmar för kostnadselement är inte mappade.
 

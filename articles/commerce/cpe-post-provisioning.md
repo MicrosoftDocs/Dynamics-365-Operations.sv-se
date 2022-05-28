@@ -2,7 +2,7 @@
 title: Konfigurera en Dynamics 365 Commerce utvärderingsmiljö
 description: Detta ämne förklarar hur du konfigurerar bedömningsmiljö för Microsoft Dynamics 365 Commerce efter att den är etablerad.
 author: psimolin
-ms.date: 12/10/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: d9738700ca495d54c91ad91aa9c5a3d32c95a5a5
+ms.sourcegitcommit: 4a973ac0e7af0176270a8070a96a52293567dfbf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913737"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8747647"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera en Dynamics 365 Commerce utvärderingsmiljö
 
@@ -39,7 +39,9 @@ När din bedömningsmiljö för Commerce har etablerats måste ytterligare konfi
 1. Välj din miljö i listan.
 1. Välj i miljöinformation till höger **Logga in i miljön**. Du kommer att skickas till Commerce-administration.
 1. Kontrollera att **USRT** juridisk person har valts i övre högra hörnet.
-2. Gå till **Commerce-parametrar > Konfigurationsparametrar** och se till att det finns en post för **ProductSearch.UseAzureSearch** inställd på **true**. Om den här posten saknas kan du lägga till den här posten och köra **Kanaldatabas > Full synkronisering** för Commerce Scale Unit som kopplas till din näthandelsplats.
+1. Gå till **Handelsparametrar \> Konfigurationsparametrar** och se till att det finns en post för **ProductSearch.UseAzureSearch** och att värdet är **true**. Om den här posten saknas kan du lägga till den, ange värdet **true** och välja **Kanaldatabas \> Fullständig datasynkronisering** för den Commerce Scale Unit som är associerad med din näthandelsplats.
+1. Gå till **Butik och handel \> Administrationsinställning \> Schemaläggare för handel \> Initiera schemaläggare för handel**. På den utfällbara menyn **Initiera schemaläggare för handel** se till att alternativet **Ta bort befintligt konfiguration** anges till **Ja** och välj **OK**.
+1. För att lägga till kanaler i Commerce Scale Unit, gå till **Butik och handel \> Administrationsinställning \> Handelsschemaläggare \>Kanaldatabas** och välj Commerce Scale Unit i vänstra fönstret. På snabbfliken **Butikskanal**, lägg till kanalerna **AW-onlinebutik**, **AW Business-onlinebutik** och **Fabrikam utökade online-butik**. Alternativt kan du också lägga till detaljhandelsbutiker om du ska använda kassa (till exempel **Seattle**, **San Francisco** och **San Jose**).
 
 Under åtgärderna efter etablering i Commerce-administration, se till att den juridiska personen **USRT** alltid är vald.
 
@@ -85,6 +87,7 @@ Följ dessa steg om du vill börja konfigurera din bedömningswebbplats i Commer
 1. För standardspråk väljer du **sv-SE**.
 1. Lämna värdet i fältet **sökväg** som det är.
 1. Välj **OK**. Listan över sidor på webbplatsen visas.
+1. Upprepa steg 2–7 för webbplatsen **AdventureWorks** (som mappas till kanalen **AW-onlinebutik**) och webbplatsen **AdventureWorks Business** (som mappar till kanalen **AW Business-onlinebutik**). Om fältet **Sökväg** för Fabrikam-webbplatsen är tomt måste du lägga till sökvägar för de två AdventureWorks-webbplatserna (till exempel "aw" och "awbusiness").
 
 ## <a name="enable-jobs"></a>Aktivera jobb
 
@@ -149,6 +152,28 @@ För att konfigurera valfria funktioner för Commerce bedömningsmiljö efter at
 
 > [!NOTE]
 > Med utvärderingsmiljöer för Commerce följer en förinläst Azure Active Directory (Azure AD) B2C(business-to-consumer)-klientorganisation för demonstrationssyften. Konfigurering av en egen Azure AD B2C-klientorganisation krävs inte för utvärderingsmiljöer. Om du konfigurerar utvärderingsmiljön för att använda din egen Azure AD B2C-klientorganisation ska du emellertid se till att lägga till ``https://login.commerce.dynamics.com/_msdyn365/authresp`` som en svars-URL i Azure AD B2C-programmet via Azure Portal.
+
+## <a name="troubleshooting"></a>Felsökning
+
+### <a name="site-builder-channel-list-is-empty-when-configuring-site"></a>Kanallistan för webbplatsbyggaren är tom när du konfigurerar webbplats
+
+Om webbplatsbyggaren inte visar några onlinebutikskanaler ser du till att kanalerna har lagts till i Commerce Scale Unit enligt beskrivningen i avsnittet [Innan du startar](#before-you-start) ovan. Du kan också köra **initiera schemaläggare för handel** med värdet **Ta bort befintlig konfiguration** inställt på **Ja**.  När stegen är klara går du till sidan **Kanaldatabas** (**Butik och handel \> Administrationsinställning \> Handelsschemaläggare \> Kanaldatabas**) och kör jobbet **9999** på Commerce Scale Unit.
+
+### <a name="color-swatches-are-not-rendering-on-the-category-page-but-are-rendering-on-the-product-details-page-pdp-page"></a>Färgrutor återges inte på kategorisidan, utan återges på sidan produktinformation (PDP)
+
+Följ dessa steg för att se till att färg- och storleksrutor är inställda på att kunna förfinas.
+
+1. I headquarters, gå till **Butik och handel \> Kanalinställningar \> Kanalkategorier och produktattribut**.
+1. Välj onlinebutikskanal i det vänstra fönstret och välj sedan **Ställ in attributmetadata**.
+1. Ställ in **Visa attribut för kanal** till **Ja**, ställ in **Kan förfinas** till **Ja** och välj **Spara**. 
+1. Gå tillbaka till sidan för onlinebutikskanal och välj **Publicera kanaluppdateringar**.
+1. Gå till **Butik och handel \> Administrationsinställning \> Handelsschemaläggare \> Kanaldatabas** och kör jobbet **9999** på Commerce Scale Unit.
+
+### <a name="business-features-dont-appear-to-be-turned-on-for-the-adventureworks-business-site"></a>Affärsfunktioner visas inte att vara aktiverad för affärswebbplatsen AdventureWorks
+
+I headquarters ska du säkerställa att onlinebutikskanal är konfigurerad med **Kundtyp** inställd på **B2B**. Om **Kundtyp** inställd på **B2C** måste en ny kanal skapas eftersom den befintliga kanalen inte kan redigeras. 
+
+Demodata levereras i Commerce version 10.0.26 och hade tidigare ett fel där kanalen **AW Business- onlinebutik** var felkonfigurerad. Lösningen är att skapa en ny kanal med samma inställningar och konfigurationer utom **Kundtyp**, som bör ställas in på **B2B**.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

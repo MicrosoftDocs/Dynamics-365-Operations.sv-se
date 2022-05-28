@@ -3,7 +3,7 @@ title: Modul för butiksväljare
 description: Det här avsnittet handlar om modulen för butiksväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0ee9d3cec9c524f73472929052d46d87f8270ba67568314eceb462b1803cf149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7276f25daada8286490ad7e1af2b350e4a2805bb
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772166"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710790"
 ---
 # <a name="store-selector-module"></a>Modul för butiksväljare
 
@@ -59,6 +59,16 @@ Följ dessa steg för att ange värden för latitud och longitud för en butiksp
     ![Exempel på konfiguration av latitud och longitud i administrationen.](./media/Store-latitude-longitude.png)
 
 1. Klicka på **Spara** i åtgärdsfönstret. 
+
+### <a name="hide-a-store-from-the-store-selector-module"></a>Dölja en butik från butiksväljarmodulen
+
+Vissa butiker i en uppfyllelsegrupp kanske inte är giltiga upphämtningsplatser. Om du vill vara säker på att endast giltiga upphämtningsplatser visas som alternativ i butiksväljarmodulen följer du dessa steg i Commerce Headquarters.
+
+1. Gå till **Butik och handel \> Inställning av Commerce \> Uppfyllelsegrupper \> Alla butiker**.
+1. I åtgärdsfönstret väljer du **Redigera**.
+1. Under **Konfigurera** avmarkerar du kryssrutan **Är upphämtningsplats** för alla butiker som inte är en giltig upphämtningsplats.
+1. Klicka på **Spara** i åtgärdsfönstret.
+1. Kör distributionsschemajobbet 1070 **Kanalkonfiguration**.
 
 ## <a name="bing-maps-integration"></a>Bing Maps-integrering
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14e485d1e02247159e1d9eb1c5d81be37626216
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d206654dcb7964ac2ed9aa9ccf7cec709e1bd38c
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580514"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689690"
 ---
 # <a name="price-simulation"></a>Prissimulering
 
@@ -32,7 +32,8 @@ En prissimulering för en offert visar ett nytt totalbelopp baserat på ett för
 
 En prissimulering ändrar inte priset i offerten. Om prissimuleringen används på en hel offert behandlas den som en särskild rabatt i offerthuvudet. Om prissimuleringen används på specifika artiklar behandlas den som en särskild rabatt på offertraderna. Enhetsförsäljningspriset på offertraden som skapas ändrar inte när en prissimulering används. I stället används en rabattprocent som motsvarar prisminskningen för offertraden. När en prissimulering används överförs enhetsförsäljningspriset och rabattprocenten till offertraden eller offerthuvudet.  
 
->Obs! När du kör en prissimulering används bara den aktuella försäljningsvalutan för att skapa simuleringen. Du kan emellertid visa en kombination av företagsvalutan och försäljningsvalutan när du visar offertsummorna.  
+>[!NOTE]
+>När du kör en prissimulering används bara den aktuella försäljningsvalutan för att skapa simuleringen. Du kan emellertid visa en kombination av företagsvalutan och försäljningsvalutan när du visar offertsummorna.  
 
 Fyllnadsartiklar som läggs till på offertrader kan utlösa radrabatter och flerradsrabatter. De kan också utlösa totala rabatter som ändrar täckningsbidraget och täckningsgraden på offertraderna och hela rabatten.  
 

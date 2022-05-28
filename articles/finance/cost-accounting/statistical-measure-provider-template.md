@@ -1,6 +1,6 @@
 ---
 title: Tillhandahåller mallar för statistiska dimensionsmedlemmar och måttleverantörer
-description: Det här avsnittet innehåller information om statistikdimensionsmedlemmar och providermallar för statistisk mätning. Statistikdimensionsmedlemmar kan användas som en fördelningsbas i policyerna för bland annat kostnadsfördelning och kostnadsallokering. De kan också användas för att rapportera icke-monetär kostnadsförbrukning.
+description: Det här avsnittet innehåller information om statistikdimensionsmedlemmar och providermallar för statistisk mätning.
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c79451a5145a6e419ae0e332c67f06ca2df65996f959333a508dbf62dbf435ff
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5daac80fdc62fb996be82aa4c8bb7bb3c8dc03e9
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767657"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733918"
 ---
 # <a name="provider-templates-for-statistical-dimension-members-and-measure-providers"></a>Tillhandahåller mallar för statistiska dimensionsmedlemmar och måttleverantörer
 
@@ -128,13 +128,13 @@ Innan du kan hämta statistiska mätningar till kostnadsredovisningen måste du 
 > [!NOTE]
 > I det här exemplet skapar vi en relation för en **Faktisk version**.
 
-Gå till **Huvudbok för kostnadsredovisning** \> **Faktisk version** \> **Hantera** \> **Statistiska mätningar** för att upprätta relationen. I det här scenariot markerar du **Dynamics 365 Finance – statistiska mätningar** eftersom vi vill hämta data från Finance.
+Gå till **Huvudbok för kostnadsredovisning** \> **Faktisk version** \> **Hantera** \> **Statistiska mätningar** för att upprätta relationen. I det här scenariot väljer du dataanslutningsprogrammet **Dynamics 365 Finance – statistiska mätningar** eftersom vi vill hämta data från Finance.
 
 **Datakälla**
 
-| Namn        | Datakoppling                                                                     | Statistikdimensionsmedlem |
+| Namn        | Dataanslutningsprogram                                                                     | Statistikdimensionsmedlem |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| Heltidsanställda D365FO | Dynamics 365 Finance – Statistiska mätningar | Heltidsanställda                         |
+| Heltidsanställda D365FO | Dynamics 365 Finance – statistiska mätningar | Heltidsanställda                         |
 
 **Dataproviderkonfiguration**
 
@@ -216,13 +216,13 @@ Innan du kan hämta statistiska mätningar till kostnadsredovisningen måste du 
 > [!NOTE]
 > I det här exemplet skapar vi en relation för en **Faktisk version**.
 
-Gå till **Huvudbok för kostnadsredovisning** \> **Faktisk version** \> **Hantera** \> **Statistiska mätningar** för att upprätta relationen. I det här scenariot markerar du **Dynamics 365 Finance – statistiska mätningar** eftersom vi vill hämta data från Finance.
+Gå till **Huvudbok för kostnadsredovisning** \> **Faktisk version** \> **Hantera** \> **Statistiska mätningar** för att upprätta relationen. I det här scenariot väljer du dataanslutningsprogrammet **Dynamics 365 Finance – statistiska mätningar** eftersom vi vill hämta data från Finance.
 
 **Datakälla**
 
-| Namn           | Datakoppling                                                                     | Statistikdimensionsmedlem |
+| Namn           | Dataanslutningsprogram                                                                     | Statistikdimensionsmedlem |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Packkopia D365FO | Dynamics 365 Finance – Statistiska mätningar | Packkopia                      |
+| Packkopia D365FO | Dynamics 365 Finance – statistiska mätningar | Packkopia                      |
 
 Systemet känner igen att ProdRouteTrans är ett register där varje post tillhör en separat juridisk person. Därför uppmanas du att välja den juridiska person som transaktionerna ska importeras från.
 

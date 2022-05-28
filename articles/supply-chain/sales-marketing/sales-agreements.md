@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14f76e06f7265a4dc1837a66171d3db13bc2e580
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c36ace4fe61d4f3add7750c66594c0f1060f8127
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982519"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694380"
 ---
 # <a name="sales-agreements-overview"></a>Försäljningsavtal – översikt
 
@@ -36,7 +36,8 @@ Giltighetsperioden för försäljningsavtalsraden anges med fälten **Giltighets
 
 Du kan skapa en försäljningsorder direkt från ett försäljningsavtal, med hjälp av åtgärden **Frisläpp order**. Alternativt kan du välja ett effektivt försäljningsavtal när du tar order (mer information finns i avsnittet ”Använda försäljningsavtal i beställningsprocessen" i denna artikel).  
 
-> Obs! I tidigare versioner kallades försäljningsavtal för ramförsäljningsordrar.
+> [!NOTE] 
+> I tidigare versioner kallades försäljningsavtal för ramförsäljningsordrar.
 
 ## <a name="commitment-types"></a>Utfästelsetyper
 Varje rad i ett försäljningsavtal är en utfästelse att sälja något. I allmänhet finns det två kategorier av utfästelser:

@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransAccrual, LedgerJournalTransAccrualTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6500da88424ea71aa8f8836dfdb7d42ef444637b50efe4401a6f76a876e3e0cf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d9aa546bea140fe29a97e4cda7a85f632b8cf3b0
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750398"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716619"
 ---
 # <a name="create-ledger-accrual-transactions"></a>Skapa periodiseringtransaktioner i redovisningen
 
@@ -26,25 +26,25 @@ ms.locfileid: "6750398"
 
 Stegen i den här guiden beskriver hur du genererar periodiseringstransaktioner för redovisning som baseras på periodiseringsscheman
 
-1. Gå till Redovisning > Journalposter > Allmänna journaler.
+1. Gå till **Redovisning > Journalposter > Allmänna journaler**.
 2. I listan letar du upp och väljer önskad journal eller skapar en ny.
-3. Klicka för att följa länken i fältet Journalbatchnummer.
+3. Klicka för att följa länken i fältet **Journalbatchnummer**.
 4. Markera vald rad i listan.
-5. Ange önskade värden i fältet Konto.
+5. Ange önskade värden i fältet **Konto**.
     * I det här exemplet definierar vi utgifterna för försäkringen. Det blir ett periodiskt utgiftbelopp.  
-6. Ange ett värde i fältet Beskrivning.
-7. Ange ett tal i fältet Debet.
-8. Ange önskade värden i fältet Motkonto.
-9. Klicka på Funktioner.
-10. Klicka på Periodiseringar.
-11. I fältet Identifiering av periodisering öppnar du sökningen genom att klicka på den nedrullningsbara knappen.
+6. I fältet **Beskrivning** anger du ett värde.
+7. I fältet **Debit** anger du ett nummer.
+8. Ange önskade värden i fältet **Motkonto**.
+9. Klicka på **Funktioner**.
+10. Klicka på **Periodiseringar**.
+11. I fältet **Identifiering av periodisering** öppnar du sökningen genom att klicka på den nedrullningsbara knappen.
 12. I listan letar du upp och väljer det periodiseringsschema som du vill använda.
 13. Klicka på länken på den valda raden i listan.
-14. Ange ett datum i fältet Startdatum.
-15. Klicka på Transaktioner.
+14. Ange ett datum i fältet **Startdatum**.
+15. Klicka på **Transaktioner.**
 16. Stäng sidan.
-17. Klicka på OK.
-18. Klicka på Bokför.
+17. Klicka på **OK**.
+18. Klicka på **Bokför**.
 
 
 

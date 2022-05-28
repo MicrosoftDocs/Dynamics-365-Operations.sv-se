@@ -1,6 +1,6 @@
 ---
 title: Kvitta en delleverantörsbetalning som har flera rabattperioder
-description: Den här artikeln går igenom ett scenario där flera delbetalningar görs till en leverantör som erbjuder flera kassarabatter.
+description: Den här avsnittet går igenom ett scenario där flera delbetalningar görs till en leverantör som erbjuder flera kassarabatter.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14262
 ms.assetid: af95c48a-afd1-476c-978d-e34995100be4
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0538a522733a9df9ae3b8832959c68bb0c25056694786e4b1a46a2ee7d0fcfc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d805ce2de866d0073b4bb797eb7ddae0736e8948
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737099"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716291"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Kvitta en delleverantörsbetalning som har flera rabattperioder
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln går igenom ett scenario där flera delbetalningar görs till en leverantör som erbjuder flera kassarabatter. 
+Den här avsnittet går igenom ett scenario där flera delbetalningar görs till en leverantör som erbjuder flera kassarabatter. 
 
 Leverantör 3054 erbjuder Fabrikam en kassarabatt på 2 procent, om en faktura betalas inom fem dagar och en kassarabatt på 1 procent, om fakturan betalas inom 14 dagar.
 

@@ -2,7 +2,7 @@
 title: Anpassa körningsgränssnittet för produktionsgolvet
 description: I det här ämnet beskrivs hur du utökar aktuella formulär eller skapar nya formulär och knappar för körningsgränssnittet för produktionsgolvet.
 author: johanhoffmann
-ms.date: 11/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.search.form: ''
 ms.technology: ''
@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-11-08
-ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 67fb381cbef6f1673afcaa834666b4a859bdf4e6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.dyn365.ops.version: 10.0.25
+ms.openlocfilehash: ad5037442f27a5068b38613655591f1298808eac
+ms.sourcegitcommit: 28537b32dbcdefb1359a90adc6781b73a2fd195e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066556"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712955"
 ---
 # <a name="customize-the-production-floor-execution-interface"></a>Anpassa körningsgränssnittet för produktionsgolvet
 
@@ -60,7 +60,7 @@ När du är klar visas den nya knappen (åtgärden) automatiskt på sidan **Desi
 1. Skapa ett tillägg kallat `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension`, där `getMainMenuItemsList`-metoden utökas genom att det nya menyalternativet läggs till i listan. Följande kod visar ett exempel.
 
     ```xpp
-    [ExtensionOf(classStr(JmgProductionFloorExecutionForm))]
+    [ExtensionOf(classStr(JmgProductionFloorExecutionMenuItemProvider))]
     public final class <ExtensionPrefix>_JmgProductionFloorExecutionForm<FormName>_Extension{
         static public List getMainMenuItemsList()
         {
@@ -142,6 +142,79 @@ formRun.setNumpadController(numpadController);
 numpadController.setValueToNumpad(333.56);
 formRun.run();
 ```
+
+## <a name="add-a-date-and-time-controls-to-a-form-or-dialog"></a>Lägga till en datum- och tidskontroll i ett formulär eller en dialogruta
+
+I det här avsnittet visas hur du lägger till datum- och tidskontroller i ett formulär eller en dialogruta. Med den pekanvändarvänliga datum- och tidskontrollen kan medarbetare ange datum och tider. Följande skärmbilder visar hur kontrollerna vanligtvis visas på sidan. Tidskontrollen ger både 12-timmars- och 24-timmarsversioner. Den version som visas följer inställningarna för användarkontot under vilket gränssnittet körs.
+
+![Exempel på datumkontroll](media/pfe-customize-date-control.png "Exempel på datumkontroll")
+
+![Tidskontrollexempel med 12-timmarsklocka.](media/pfe-customize-time-control-12h.png "Tidskontrollexempel med 12-timmarsklocka")
+
+![Tidskontrollexempel med 24-timmarsklocka.](media/pfe-customize-time-control-24h.png "Tidskontrollexempel med 24-timmarsklocka")
+
+Följande procedur visar ett exempel på hur du lägger till datum- och tidskontroller i ett formulär.
+
+1. Lägg till en kontrollant i formuläret för varje datum- och tidskontroll som formuläret ska innehålla. (Antalet kontrollanter måste vara lika med antalet datum- och tidskontroller i formuläret.)
+
+    ```xpp
+    private JmgProductionFloorExecutionDateTimeController  dateFromController; 
+    private JmgProductionFloorExecutionDateTimeController  dateToController; 
+    private JmgProductionFloorExecutionDateTimeController  timeFromController; 
+    private JmgProductionFloorExecutionDateTimeController  timeToController;
+    ```
+
+1. Deklarera de variabler som krävs (av typen `utcdatetime`).
+
+    ```xpp
+    private utcdatetime fromDateTime;
+    private utcdatetime toDateTime;
+    ```
+
+1. Skapa metoder där datetime uppdateras av datum- och tidskontrollerna. Exemplet nedan visar en sådan metod.
+
+    ```xpp
+    private void setFromDateTime(utcdatetime _value)
+        {
+            fromDateTime = _value;
+        }
+    ```
+
+1. Konfigurera beteendet för varje datetime-kontrollant och koppla varje kontrollant så att den formar en del. I följande exempel visas hur du ställer in data för kontroller för från-datum och tid från. Du kan lägga till liknande kod för datum till- och tid till-kontroller (visas inte).
+
+    ```xpp
+    /// <summary>
+    /// Initializes all date and time controllers, defines their behavior, and connects them with the form parts.
+    /// </summary>
+    private void initializeDateControlControllers()
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        timeFromController = new JmgProductionFloorExecutionDateTimeController();
+        timeFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        timeFromController.parmDateTimeValue(fromDateTime);
+        
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, timeFromController);
+        TimeFromFormPart.getPartFormRun().setTimeControlController(timeFromController, dateFromController);
+        
+        ...
+
+    }
+    ```
+
+    Om allt du behöver är en datumkontroll kan du hoppa över tidskontrollinställningarna och i stället bara ställa in datumkontrollen som visas i följande exempel:
+
+    ```xpp
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, null);
+    }
+    ```
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

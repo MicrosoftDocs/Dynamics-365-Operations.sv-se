@@ -8,26 +8,26 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: roschlom
+ms.author: wangchen
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 449ebe55b8be7ee7ea22b4be7c44162d83fc3c2affbd4d20f4cad235ddb0f772
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fcd5a3afb442d9c85aba12b7782cf09f88f0e51a
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742214"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713056"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Stöd för moms på dubbel valuta
 [!include [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du utökar redovisning av dubbla valutor för moms och vilken inverkan för beräkning, bokföring och kvittningar av moms.
 
-Funktionen Dynamics 365 Finance med dubbla valutor infördes i version 8.1 (oktober 2018). Den ändrar hur redovisningstransaktioner i rapporteringsvalutan beräknas.
+Funktionen med dubbla valutor för Dynamics 365 Finance infördes i version 8.1 (oktober 2018). Den ändrar hur redovisningstransaktioner i rapporteringsvalutan beräknas.
 
 I tidigare versioner konverterades transaktionerna till rapportvalutan i följande ordning: 
 

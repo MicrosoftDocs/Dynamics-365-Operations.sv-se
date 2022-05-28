@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7ce30b64bc7c3889347bec94186614bd6cc337f4
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 79747d0c5c4265315d1757352dfecef09c469dd8
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625369"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710875"
 ---
 # <a name="provision-human-resources"></a>Etablera Human Resources
 
@@ -144,7 +143,7 @@ Använd följande riktlinjer när du bestämmer vilka Power Apps-miljöer som sk
 6. Dubbla skrivfunktioner för att integrera Personal-data med miljön Power Apps kan bara användas om alternativet **Aktivera Dynamics 365-appar** har valts för miljön. Se [sidan Dubbelriktad skrivning](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) för mer information för dubbelriktad skrivning.
 
     > [!NOTE]
-    > Alternativet **Aktivera Dynamics 365-appar** måste väljas när Power Apps skapas. Om alternativet inte är valt vid administreringstillfället kommer du inte att kunna använda dubbelriktad skrivning för att integrera data mellan Dynamics 365 Human Resources och Power Apps miljön eller installera Dynamics 365-appar som Dynamics 365 Sales och Field Service i miljön. Det här alternativet kan inte ångras. Mer information finns i [Några viktiga överväganden när du skapar en ny miljö](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) på Power Platform dokumentationssplatsen.
+    > Alternativet **Aktivera Dynamics 365-appar** måste väljas när Power Apps skapas. Om alternativet inte är valt vid administreringstillfället kommer du inte att kunna använda dubbelriktad skrivning för att integrera data mellan Dynamics 365 Human Resources och Power Apps miljön eller installera Dynamics 365-appar som Dynamics 365 Sales och Field Service i miljön. Det här alternativet kan inte ångras. Mer information finns i [Några viktiga överväganden när du skapar en ny miljö](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) på Power Platform dokumentationssplatsen.
 
 7. När du har kontrollerat den korrekta miljön kan du fortsätta med etableringsprocessen. 
 
