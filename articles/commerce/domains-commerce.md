@@ -2,7 +2,7 @@
 title: Domäner i Dynamics 365 Commerce
 description: I det här avsnittet beskrivs hur domäner hanteras i Microsoft Dynamics 365 Commerce.
 author: BrShoo
-ms.date: 03/17/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
+ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734001"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8737356"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domäner i Dynamics 365 Commerce
 
@@ -28,6 +28,9 @@ ms.locfileid: "6734001"
 I det här avsnittet beskrivs hur domäner hanteras i Microsoft Dynamics 365 Commerce.
 
 Domäner är webbadresser som används för att navigera till Dynamics 365 Commerce webbplatser i en webbläsare. Du kontrollerar hanteringen av din domän med en vald DNS-leverantör (domännamnserver). Domäner refereras till i hela Dynamics 365 Commerce webbplatsskaparen för att koordinera hur en plats kommer att få åtkomst till när den publiceras. I det här avsnittet beskrivs hur domäner hanteras och refereras under hela livscykeln för webbplatsutveckling och start av Commerce.
+
+> [!NOTE]
+> Från och med 6 maj 2022 kommer alla miljöer som skapats i Dynamics 365 Commerce att tillhandahållas med domänen `.dynamics365commerce.ms` som ersätter det tidigare mönstret `.commerce.dynamics.com` Befintliga miljöer som etablerats med domänen `.commerce.dynamics.com` kommer att fortsätta att fungera.
 
 ## <a name="provisioning-and-supported-host-names"></a>Etablera och stödja värdnamn
 
@@ -44,7 +47,7 @@ Du kan skapa en tjänstbegäran om du vill lägga till fler domäner i en miljö
 
 ## <a name="commerce-generated-urls"></a>Commerce-genererade URL
 
-Vid etablering av en Dynamics 365 Commerce-näthandelsmiljö genererar Commerce en URL som blir miljöns arbetsadress. Denna URL refereras till i den näthandelssajtlänk som visas i LCS efter det att miljön har etablerats. En Commerce-genererad URL bär formatet `https://<e-commerce tenant name>.commerce.dynamics.com`, där namnet på näthandelns klientorganisation är det namn som har angetts i LCS för Commerce-miljö.
+Vid etablering av en Dynamics 365 Commerce-näthandelsmiljö genererar Commerce en URL som blir miljöns arbetsadress. Denna URL refereras till i den näthandelssajtlänk som visas i LCS efter det att miljön har etablerats. En Commerce-genererad URL bär formatet `https://<e-commerce tenant name>.dynamics365commerce.ms`, där namnet på näthandelns klientorganisation är det namn som har angetts i LCS för Commerce-miljö.
 
 Du kan också använda namn på produktionsplats värden i en sandbox-miljö. Det här alternativet är praktiskt när du vill kopiera en webbplats från en begränsat miljö till en produktion.
 
@@ -67,11 +70,11 @@ Rutan **Sökväg** kan lämnas tom, eller så kan en extra sökvägssträng läg
 
 Om du till exempel har en webbplats i webbplatsskaparen som kallas "Fabrikam" i en näthandelsklient med namnet "xyz" och du ställer in webbplatsen med en tom sökväg, får du tillgång till det publicerade webbplatsinnehållet i en webbläsare genom att gå direkt till den grundläggande Commerce-genererade URL:en:
 
-`https://xyz.commerce.dynamics.com`
+`https://xyz.dynamics365commerce.ms`
 
 Alternativt, om du har lagt till en sökväg på "Fabrikam" under samma platsinställningar, kommer du åt det publicerade webbplatsinnehållet i en webbläsare med hjälp av följande URL:
 
-`https://xyz.commerce.dynamics.com/fabrikam`
+`https://xyz.dynamics365commerce.ms/fabrikam`
 
 ## <a name="pages-and-urls"></a>Sidor och URL-adresser
 
@@ -92,16 +95,16 @@ De värden för värdnamn som stöds är tillgängliga för att associeras som e
 Om du arbetar med webbplatser i webbplatsskaparen, om du har två webbplatser inställda med två olika domäner, kan du lägga till attributet **?domain=** till din arbets-URL för att få åtkomst till det publicerade webbplatsinnehållet i en webbläsare.
 
 Till exempel miljön "xyz" för att få åtkomst till det publicerade webbplats innehållet i en webbläsare: en med domänen `www.fabrikam.com` och den andra med domänen `www.constoso.com`. Varje webbplats skapades med en tom sökväg. Dessa två webbplatser kan sedan öppnas i en webbläsare enligt följande med hjälp av attributet **?domain=**:
-- `https://xyz.commerce.dynamics.com?domain=www.fabrikam.com`
-- `https://xyz.commerce.dynamics.com?domain=www.contoso.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.fabrikam.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.contoso.com`
 
-Om ingen frågesträng för domän har angetts i en miljö med flera domäner, använder Commerce den första domän som du har angett. Om t.ex. sökvägen "Fabrikam" tillhandahölls först under webbplatskonfigurationen kan URL:en `https://xyz.commerce.dynamics.com` användas för åtkomst till den publicerade webbplatsens innehållsplatsen för `www.fabrikam.com` .
+Om ingen frågesträng för domän har angetts i en miljö med flera domäner, använder Commerce den första domän som du har angett. Om t.ex. sökvägen "Fabrikam" tillhandahölls först under webbplatskonfigurationen kan URL:en `https://xyz.dynamics365commerce.ms` användas för åtkomst till den publicerade webbplatsens innehållsplatsen för `www.fabrikam.com` .
 
 ## <a name="traffic-forwarding-in-production"></a>Vidarebefordran av trafik i produktion
 
-Du kan simulera flera domäner med hjälp av parametrar för domänfrågor i själva commerce.dynamics.com slutpunkt. När du behöver gå in i produktionen måste du vidarebefordra trafiken för din anpassade domän till slutpunkten `<e-commerce tenant name>.commerce.dynamics.com`.
+Du kan simulera flera domäner med hjälp av parametrar för domänfrågor i själva commerce.dynamics.com slutpunkt. När du behöver gå in i produktionen måste du vidarebefordra trafiken för din anpassade domän till slutpunkten `<e-commerce tenant name>.dynamics365commerce.ms`.
 
-Slutpunkten `<e-commerce tenant name>.commerce.dynamics.com` stöder inte anpassade domän Secure Sockets Layers (SSL), så du måste konfigurera anpassade domäner med hjälp av Front Door Service eller ett CDN (Content Delivery Network). 
+Slutpunkten `<e-commerce tenant name>.dynamics365commerce.ms` stöder inte anpassade domän Secure Sockets Layers (SSL), så du måste konfigurera anpassade domäner med hjälp av Front Door Service eller ett CDN (Content Delivery Network). 
 
 Om du vill ställa in anpassade domäner med hjälp av en Front Door Service eller CDN har du två alternativ:
 

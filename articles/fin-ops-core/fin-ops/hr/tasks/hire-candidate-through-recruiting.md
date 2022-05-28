@@ -13,20 +13,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2a6ecee078b18b12769a14cadc7e0182bf03d704
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 4bae8c038d048d18096eab20150701fd0e47250a
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075383"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734672"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>Anställa kandidat genom rekrytering
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Funktionerna som anges i det här avsnittet är för närvarande tillgängliga för Personal-kunder i ekonomiinfrastrukturen.  
-
+> Rekryteringsfunktionen i det här avsnittet kallas för rekryteringsprojekt och är fokuserad på sökande, ansökningar och rekryteringsprojekt.  
 
 I den här proceduren aktiveras en rekryterare när du anställer en sökande som har skickat in en ansökning via ett visst rekryteringsprojekt. När du anställer en sökande via ett rekryteringsprojekt skapas en ny arbetarpost och sökandens post har statusen **Anställd**. Demonstrationsdataföretaget **USMF** har använts för att skapa denna procedur.
 

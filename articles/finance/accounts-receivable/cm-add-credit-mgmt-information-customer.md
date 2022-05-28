@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3c8584c33b4f77b6d1f5a4dc0d62208b76b3ffa3
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: d5ced2f2bc419f18431663273236d21546c5541b
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753980"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734469"
 ---
 # <a name="add-credit-management-information-for-customers"></a>Lägg till information för kredithantering för kunder
 
@@ -32,7 +32,7 @@ Du kan lägga till kunduppgifter på snabbfliken **kredit och inkasso** på sida
 1. Ställ in alternativet **obegränsad kreditgräns** till **ja** om kunden inte ska begränsas med några kreditgränstest.
 2. Ange alternativet **exkludera från kredithantering** till **ja** för att utesluta kunden från de åtgärder som normalt inträffar under kredithanteringsprocesser.
 3. Välj kredithanteringsgrupp för kunden.
-4. Om du vill beräkna kreditgränsen i kundens valuta anger du kundens kreditgräns i fältet **kreditgräns** i kundens valuta. Kreditgränsen i företagsvalutan konverteras med hjälp av de valutakurser som definieras av valutakurstypen för kreditgräns som valts i parametrarna för kredithantering.
+4. Om du vill beräkna kreditgränsen i kundens valuta anger du kundens kreditgräns i fältet **kreditgräns** i kundens valuta. Kreditgränsen i företagsvalutan konverteras med hjälp av de valutakurser som definieras av valutakurstypen för kreditgräns som valts i **Parametrar för kredithantering**.
 5. I fältet **senaste granskningsdatum** anger du det datum då kundens kreditgräns senast granskades av en kreditchef.
 6. I fältet **nästa planerade granskningsdatum** anger du det datum då kunden är schemalagd för granskning och uppdatering av kredit.
 7. I fältet **Berättigad kreditgräns** anger du den högsta kreditgränsen som kan tilldelas kunden, baserat på din granskning av kundens kredithistorik. Den berättigade kreditgränsen kan skilja sig från kreditgränsen som visas på snabbfliken **kredit och inkasso**.
@@ -46,7 +46,8 @@ Du kan lägga till kunduppgifter på snabbfliken **kredit och inkasso** på sida
 15. I fältet **kund sedan** anger du det datum då de första transaktionerna bearbetades för kunden. Den här informationen används när riskresultat skapas.
 16. Ange noteringar som kreditteamet kan använda för att ytterligare utvärdera kundens kreditvärdighet.
 
-Observera att en del av informationen som visas på sidan **kund** skapas av en annan process:
+> [!Note] 
+> En del av informationen som visas på sidan **kund** skapas av en annan process:
 
 - I fältet **utgångsdatum för kreditgräns** visas det datum då kreditgränsen förfaller. Om du inte anger det här fältet upphör kundens kreditgräns inte att gälla.
 - I fältet **datum för kreditgräns** visas det datum då kreditgränsen skapades. Det här fältet uppdateras när kreditgränsen justeras.

@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 511d875baed029df9083da36baf6c48ca4b7abf866ae569038b554bf594473c8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38b7371ab668eb76801fbe7f15894609a846bbd8
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734437"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687685"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Ställ in prioriterade underhållsarbetare
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Under schemaläggning av arbetsorder kan du göra en inställning för hur underhållsarbetare eller arbetargrupper allokeras för att slutföra arbetsordern. Användningen av den här funktionen är valfri, men den kan hjälpa dig att göra ett val för den mest kvalificerade underhållsarbetaren för att slutföra ett jobb, baserat på arbetarnas färdigheter och kompetenser. Endast underhållsarbetare som är tillgängliga vid planeringstiden tidsplaneras. Om en förinställd inställning för underhållsarbetare matchar en arbetsorder under planeringen, men underhållsarbetaren allokeras till andra jobb, planeras arbetsordern till en annan, tillgänglig, underhållsarbetare.
 
@@ -51,13 +49,15 @@ Ju fler val du gör för samma post, desto mer specifika blir inställningarna.
 
 3. Börja med att skapa en "standard" underhållsarbetare eller arbetsgrupp. Det innebär att du bara gör ett val i fältet **Prioriterad underhållsarbetargrupp** eller fältet **Prioriterad underhållsarbetare**. I skärmbilden nedan visas ett exempel i den första posten där "Begäranden" har valts som **Prioriterad underhållsarbetargrupp**.
 
-    [!NOTE] Den här standardinställningen kommer att användas vid schemaläggning av arbetsorder om ingen annan, mer specifik kombination matchar innehållet i arbetsordern.
+    > [!NOTE]
+    > Den här standardinställningen kommer att användas vid schemaläggning av arbetsorder om ingen annan, mer specifik kombination matchar innehållet i arbetsordern.
 
 4. Upprepa steg 2 för att skapa en ny post. Gör de val som krävs, beroende på detaljnivån för den prioriterade arbetaren eller arbetargruppen. 
 
     *Exempel:* I skärmbilden nedan väljs underhållsarbetaren Shawn Richardson som prioriterad arbetare. Han väljs automatiskt under tidsplaneringen av en arbetsorder som innehåller tillgången CH-BP1-03-02 och underhållsjobbtypen "Lokalbedömning", om han är tillgänglig vid den schemalagda tiden.
 
-    [!NOTE] När en prioriterad underhållsarbetare väljs under arbetsorderplaneringen går Tillgångshantering igenom alla poster för **Prioriterade underhållsarbetare** för att söka efter en eventuell matchning, och kontrollerar alltid den mest specifika kombinationen först. Om det inte går att hitta någon matchning används "standard"-posten med ett val i fältet **Prioriterad underhållsarbetargrupp** eller fältet **Prioriterad underhållsarbetare**.
+    > [!NOTE]
+    > När en prioriterad underhållsarbetare väljs under arbetsorderplaneringen går Tillgångshantering igenom alla poster för **Prioriterade underhållsarbetare** för att söka efter en eventuell matchning, och kontrollerar alltid den mest specifika kombinationen först. Om det inte går att hitta någon matchning används "standard"-posten med ett val i fältet **Prioriterad underhållsarbetargrupp** eller fältet **Prioriterad underhållsarbetare**.
 
 ![Figur 1.](media/02-work-order-scheduling.png)
 

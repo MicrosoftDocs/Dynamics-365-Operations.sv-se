@@ -1,31 +1,31 @@
 ---
 title: Hantera rekryteringsprocesser
 description: Det här avsnittet beskriver ett begrepp som rekryterare kan använda när de spårar stegen i en rekryteringsprocess.
-author: andreabichsel
+author: twheeloc
 ms.date: 01/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMApplication, HRMRecruitingTable
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.custom: 7501
 ms.assetid: 1ad725bf-20e2-42a1-8068-111f7ddddad9
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fa1d5201fcc52d49b9d954356f1ca39b7619cd2
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: eb7cc1db906ba0cd07caaa1d82a12182f78b19ba
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075485"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735386"
 ---
 # <a name="manage-recruiting-processes"></a>Hantera rekryteringsprocesser
 
 > [!IMPORTANT]
-> Funktionerna som anges i det här avsnittet är för närvarande tillgängliga för Personal-kunder i ekonomiinfrastrukturen.  
+> Rekryteringsfunktionen i det här avsnittet kallas för rekryteringsprojekt och är fokuserad på sökande, ansökningar och rekryteringsprojekt. 
 
 
 Denna artikel beskriver ett begrepp som rekryterare kan använda för att följa stegen i en rekryteringsprocess, inklusive försök att annonsera lediga jobberbjudanden och att rekrytera sökande, spåra sökande och ansökningsinformation, intervjua sökande och välja en eller flera kandidater till lediga befattningar i din organisation.

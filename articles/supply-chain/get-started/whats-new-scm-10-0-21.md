@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: cf38717ab3768249e3c9b988ee3893c5e539bcd0
+ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075309"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739399"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
@@ -130,14 +130,14 @@ Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De
 | Huvudplanering | [Visa planhistorik och planeringsloggar](../master-planning/planning-optimization/plan-history-logs.md) |
 | Lagerstyrning | [Strategier för förpackning av behållare](../warehousing/container-packing-strategy-overview.md) |
 | Lagerstyrning | [Exempelscenarier för rullande inventering](../warehousing/cycle-counting-scenarios.md) |
-| Lagerstyrning | [Importera inkommande ASN:er via V2-datatabellen](../warehousing/import-asn-v2-data-entity.md) |
-| Lagerstyrning | [Överplockning för försäljningsorder och överföringsorder](../warehousing/over-picking-for-sales-and-transfer-orders.md) |
+| Warehouse management | [Importera inkommande ASN:er via V3-dataentiteten](../warehousing/import-asn-data-entity.md) |
+| Warehouse management | [Överplockning för försäljningsorder och överföringsorder](../warehousing/over-picking-for-sales-and-transfer-orders.md) |
 | Lagerstyrning | [Schemalägga utskrift av påfyllnadsetikett under cykel](../warehousing/configure-task-based-wave-label-printing.md) |
 | Lagerstyrning | [Vad är nytt eller ändrat i mobilappen Warehouse Management](../warehousing/whats-new-wma.md) |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Finance and Operations-appar
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Ekonomi och drift-appar
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.21 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.21 av Ekonomi och Drift-appar (oktober 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
 

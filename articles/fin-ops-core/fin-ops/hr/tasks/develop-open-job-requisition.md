@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e3287fc824f2f7eb725b11c990a1c457d45439f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 364117133cb7a868e613088b14a33869fd9fedb1
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075159"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735358"
 ---
 # <a name="develop-and-open-job-requisition"></a>Utveckla och öppna jobbrekvisition
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Funktionerna som anges i det här avsnittet är för närvarande tillgängliga för Personal-kunder i ekonomiinfrastrukturen.  
+> Rekryteringsfunktionen i det här avsnittet kallas för rekryteringsprojekt och är fokuserad på sökande, ansökningar och rekryteringsprojekt.  
 
 
 Med rekryteringsprojekt kan du hantera rekryteringsprocessen. För varje rekryteringsprojekt kan du konfigurera information, till exempel jobbet som rekryteringen gäller, namnet på rekryteraren, projektets status och den avdelning som jobbet ska finns på. När du har skapat ett rekryteringsprojekt, kan du skriva en jobbannons för projektet, publicera annonsen på sidan **medarbetarnas självbetjäning,** koppla jobbansökningar till projektet och spåra aktiviteter för det här projekt. Demonstrationsdataföretaget **USMF** har använts för att skapa denna procedur.

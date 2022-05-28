@@ -7,7 +7,6 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom:
 - "221024"
 - intro-internal
@@ -16,18 +15,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fa4d90d568697526adeef52443a01c3251696bf4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c1ef722eabc3c3bc740f9ff5d959cfa005862a9b
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984756"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735735"
 ---
 # <a name="performance-management"></a>Prestandahantering
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Genom prestationshanteringsprocessen kan medarbetare dokumentera och diskutera sin prestation med chefen. Chefer kan i sin tur ge återkoppling och vägledning till medarbetarna.  
+Genom prestationshanteringsprocessen kan medarbetare dokumentera och diskutera sin prestation med chefen. Chefer kan i sin tur ge återkoppling och vägledning till medarbetarna.
 
 Som så visas i följande diagram finns det tre sidor som används för att hantera processen:
 
@@ -35,7 +34,7 @@ Som så visas i följande diagram finns det tre sidor som används för att hant
 -   Mål
 -   Prestandagranskning
 
-I följande diagram visas hur huvudkomponenterna i prestationshantering är relaterade till varandra. [![Översikt över prestandaprocess.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+I följande diagram visas hur huvudkomponenterna i prestationshantering är relaterade till varandra. <!--note from editor: This alt text should describe the relationship among the boxes so a reader with low vision will understand. This will require using the :::image type="complex"::: tag and a long description. -->[![Översikt över prestandaprocess.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Prestationsjournal
 
@@ -57,7 +56,7 @@ Du kan även koppla prestationsjournalen till en extern webbplats genom att lagr
 
 ### <a name="send-feedback"></a>Skicka feedback
 
-Prestationsjournalen innehåller en funktion som heter **Skicka feedback**. När du klickar på **Skicka feedback** kan du välja en medarbetare och ge återkoppling till den medarbetaren via e-post. Meddelandet skickas till medarbetaren som få feedback, till den medarbetarens chef, till medarbetaren som skickar feedback och den medarbetarens chef. En prestationsjournalpost skapas för varje person som får meddelandet med feedback.
+Prestationsjournalen innehåller en funktion som heter **Skicka feedback**. När du väljer **Skicka feedback** kan du välja en medarbetare och ge återkoppling om den medarbetaren via e-post. Meddelandet skickas till den medarbetare som feedback handlar om.<!--note from editor: Suggested-->, den medarbetarens chef, den medarbetare som skickar feedback och den medarbetarens chef. En prestationsjournalpost skapas för varje person som får meddelandet med feedback.
 
 ## <a name="goals"></a>Mål
 
@@ -70,13 +69,13 @@ Ett grundläggande mål måste innehålla följande information:
 -   Målets förväntade startdatum
 -   Målets beräknade slutdatum
 
-Du kan också ange en målkategori som hjälper dig att ordna dina mål. Dessutom visas namnet på den person som tilldelats målet för chefer. 
+Du kan också ange en målkategori som hjälper dig att ordna dina mål. Chefer kan också se namnet på den person som tilldelats målet. 
 
-Om du har mer detaljerade instruktioner för ett mål kan du skapa ett målavsnitt. Dessa avsnitt innehåller en rubrik och en beskrivning. Du kan inkludera så många avsnitt som du behöver för att garantera att målinformationen är tydlig för både medarbetaren och chefen. Både medarbetare och chefer kan också kommentera hur målen fortskrider. 
+Om du har mer detaljerade instruktioner för ett mål kan du skapa ett målavsnitt. Dessa avsnitt innehåller en rubrik och en beskrivning. Du kan inkludera så många avsnitt som du behöver för att garantera att målinformationen är tydlig för både medarbetaren och chefen. Både medarbetare och chef kan också kommentera hur målen fortskrider. 
 
 Mål har ofta mätbara resultat. Du kan lägga till mått för att spåra målresultat och faktiska resultat. Om måttet är ett stretchmål kan du markera måttet genom att använda alternativet **Stretchmål**. 
 
-Prestationsjournalen innehåller aktiviteter som ger din chef mer information om hur du uppfyller dina mål. Om du har länkat en prestationsjournal till målet visas den i avsnittet **Aktiviteter** för det målet. Du kan också lägga till en ny prestationsjournal från sidan **Resultatmål**. Den prestationsjournalen länkas automatiskt till målet. 
+Din resultatjournal beskriver<!--note from editor: Suggested.--> aktiviteter som ger din chef mer information om hur du uppfyller dina mål. Om du har länkat en prestationsjournal till målet visas den i avsnittet **Aktiviteter** för det målet. Du kan också lägga till en ny prestationsjournal från sidan **Resultatmål**. Den prestationsjournalen länkas automatiskt till målet. 
 
 Om du vill bifoga ett dokument till målet, till exempel ett kurscertifikat, kan du bifoga det i avsnittet **Bilagor** på sidan **Resultatmål**. Det finns ett dokumentvisningsprogram så att du snabbt kan visa innehållet i bifogade dokument. 
 
@@ -84,7 +83,7 @@ Du kan skapa en mall från ett mål och sedan använda mallen för att skapa nya
 
 ## <a name="performance-reviews"></a>Prestationsgranskningar
 
-Prestationsgranskningar kallas mer formellt för diskussioner. De är tillräckligt flexibla för att stödja kontinuerliga återkopplingar, utvecklingsplaner och mer formella granskningar. Du kan snabbt skapa mindre möten mellan två personer, som personliga möten, eller skapa mer komplexa granskningar som passar granskningsprocessen i ditt företag. 
+Prestationsgranskningar kallas mer formellt för diskussioner. De är tillräckligt flexibla för att stödja kontinuerliga återkopplingar, utvecklingsplaner och mer formella granskningar. Du kan snabbt skapa små möten för två personer<!--note from editor: I think "one-on-one meeting" is implied by "two people."--> och du kan även skapa en mer komplex granskning som matchar granskningsprocessen i ditt företag. 
 
 Ett personligt möte är en enkel granskning. Du måste ange ett kortnamn, en beskrivning av mötesinnehållet och datumet för mötet samt granskningsperioden som diskuteras. För chefer visas dessutom visas namnet på personen som granskningen skapas för. 
 
@@ -94,7 +93,7 @@ Du kan också använda avsnittet **Kompetenser** om du vill diskutera, granska o
 
 Du kan skapa nya granskningar som baseras på mallar som du har skapat. Du kan till exempel ha en mall för personliga möten, utvecklingsplaner och periodiska granskningar. Du kan välja mallen när du skapar en ny granskning.
 
-Om du vill skriva ut recensioner väljer du knappen **skriv ut granskning**. Om du inte ser knappen på sidan **Granska** kontrollerar du att du har aktiverat funktionen i arbetsytan **funktionshantering**. Mer information om hur du aktiverar Funktionshantering finns i [Översikt över funktionshantering](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Om du vill skriva ut recensioner väljer du knappen **skriv ut granskning**. Om du inte ser knappen på sidan **Granska** kontrollerar du att du har aktiverat funktionen i arbetsytan **funktionshantering**. Mer information om funktionshantering finns i [Översikt över funktionshantering](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!NOTE]
 > Möjligheten att skriva ut resultatgranskningar är bara tillgänglig i personal. Den är inte tillgänglig i Dynamics 365 Finance.
@@ -105,7 +104,7 @@ Du kan inkludera flera olika typer av information i prestationsgranskningar. Bla
 
 ### <a name="review-detail"></a>Granskningsinformation
 
-Du kan dra in dina mål till granskningsinformationen och kommentera dem. Du kan också ställa in kompetenser och kommentera dem.
+Du kan dra in dina mål till granskningsinformationen och kommentera dem. Du kan också ställa in kompetenser och kommentera dem.<!--note from editor: Suggested, in the spirit of using the fewest words to say the same thing.-->
 
 ### <a name="measurements"></a>Mått
 
@@ -115,13 +114,13 @@ Du kan visa mått som är relaterade till ett mål eller en granskning. Du kan o
 
 Du kan visa prestationsjournalobjekt som är relaterade till granskningen. Du kan också lägga till en prestationsjournal, som automatiskt länkas till granskningen.
 
-### <a name="ratings"></a>Värderingar
+### <a name="ratings"></a>Bedömningar
 
 Du kan tillämpa bedömningar på alla mål eller kompetenser i granskningen. Du kan definiera bedömningsmodeller för varje granskning. Standardvärdena för bedömningar finns på sidan **Dela personalparametrar** under **Prestation**.
 
 ### <a name="sign-offs"></a>Godkännanden
 
-Medarbetaren och/eller chefen visas i granskningen baserat på de granskningsparametrar som du anger. Granskningar kan var obligatoriska eller valfria. När alla obligatoriska godkännanden har gjorts markeras granskningen med statusen **Slutförd**.
+Medarbetaren och/eller chefen visas i granskningen baserat på de granskningsparametrar som du anger. Granskningar kan var obligatoriska eller valfria. Efter<!--note from editor: Via Writing Style Guide.--> att alla obligatoriska godkännanden har gjorts markeras granskningen med statusen **Slutförd**.
 
 ### <a name="attachments"></a>Bilagor
 
@@ -129,33 +128,33 @@ Du kan bifoga ett dokument till en granskning i avsnittet **Bilagor** på sidan 
 
 ## <a name="workflow-for-performance-management"></a>Arbetsflöde för prestationshantering
 
-Med arbetsflödet Arbetargranskning kan du styra godkännandet av en granskning. Du kan också välja att hoppa över det automatiska arbetsflödet och manuellt ändra status för granskningen, så att du kan skapa enklare dokument för personliga möten utan att använda arbetsflödesprocessen. Åtkomsten till en granskning bestäms av granskningens status.
+Med arbetsflödet Arbetargranskning kan du styra godkännandet av en granskning. Du kan också välja att hoppa över det automatiska arbetsflödet och manuellt ändra status för granskningen, så att du kan skapa enklare dokument för personliga möten utan att använda arbetsflödesprocessen. Åtkomsten till en granskning bestäms av granskningens status enligt följande:<!--note from editor: Suggested as an intro to the list.-->
 
-1.  När granskningen skapas anges dess status till **Ej startad**. Granskningen kan redigeras av vem som helst.
+1.  När granskningen skapas anges den som **Ej startad**. Granskningen kan redigeras av vem som helst.
 
-2.  När medarbetaren klickar på **Starta granskning** anges granskningen till statusvärdet **Pågår**. Medarbetaren börjar sedan lägga till innehåll. Vid den här punkten kan chefen inte längre visa granskningsdokumentet.
+2.  När medarbetaren väljer **Starta granskning** anges granskningen till **Pågår**. Medarbetaren börjar sedan lägga till innehåll. Vid den här punkten kan chefen inte längre visa granskningsdokumentet.
 
 3.  Medarbetaren ändrar statusvärdet till **Klar för granskning**.
 
 4.  Chefen kan lägga till kommentarer och bedömningar. Nu kan bara chefen visa granskningen.
 
-5.  Chefen ändrar statusvärdet till **Slutlig granskning** så att både chefen och medarbetaren kan visa granskningen och diskutera den. I parametrarna kan du ange om granskningen kan redigeras eller inte vid den här tidpunkten. Detta steg är också valfritt om chefen bara vill dela granskningen till medarbetaren och markera den som **Komplett** när de är klara.
+5.  Chefen ändrar statusvärdet till **Slutlig granskning** så att både chefen och medarbetaren kan visa granskningen och diskutera den. I parametrarna kan du ange om granskningen kan redigeras eller inte vid den här tidpunkten. Detta steg är också valfritt om chefen bara vill dela granskningen till medarbetaren och markera den som **Slutförd** när de är klara.
 
-6.  När godkännandena är klara ändras statusvärdet till **Slutfört**. Nu kan granskningen inte ändras.
+6.  När godkännandena är klara ändras statusvärdet till **Komplett**. Nu kan granskningen inte ändras.
 
 Arbetsflödet Arbetargranskning omfattar två element:
 
-1.  Godkänn granskning. Lägg till det här elementet om du vill kontrollera statusändringen från **Pågår** till **Klar för granskning**. Ändra tilldelningen om du vill använda ledarskapshierarkin där chefsnivån för Employee.line = 1.
+1.  Godkänn granskning. Lägg till det här elementet om du vill kontrollera statusändringen från **Pågår** till **Klar för granskning**. Ändra tilldelningen om du vill använda ledarskapshierarkin där **chefsnivån för Employee.line = 1**.<!--note from editor: Edit assumes that this is a UI string. -->
 
-2.  Slutlig granskning. Lägg till det här elementet om du vill kontrollera statusändringen från **Klar för granskning** till **Slutlig granskning**. Ändra tilldelningen för att använda ledarskapshierarkin där ledarnivån Employee.line = 1 om du vill att chefen ska godkänna slutlig granskning. Ändra tilldelningen till Arbetsflödesanvändare om du vill att medarbetaren ska godkänna den. Om du vill att både chefen och medarbetaren ska godkänna granskningen lägger du till två steg i arbetsflödet och utför passande tilldelningar för varje steg i den ordning du vill att godkännandena ska ske.
+2.  Slutlig granskning. Lägg till det här elementet om du vill kontrollera statusändringen från **Klar för granskning** till **Slutlig granskning**. Ändra tilldelningen för att använda ledarskapshierarkin där **chefsnivån Employee.line = 1** om du vill att chefen ska godkänna slutlig granskning. Ändra tilldelningen till **Arbetsflödesanvändare** om du vill att medarbetaren ska godkänna den. Om du vill att både chefen och medarbetaren ska godkänna granskningen lägger du till två steg i arbetsflödet och utför passande tilldelningar för varje steg i den ordning du vill att godkännandena ska ske.<!--note from editor: I like this, so succinct.-->
 
-## <a name="setup"></a>Ställ in
+## <a name="setup"></a>Konfigurera
 
-Det finns tre sidor där du får hjälp med att ange informationen som krävs för att slutföra prestationsprocessen: sidan **Mått**, sidan **Prestationsjournalens källtyper** och sidan **Granskningstyper**.
+Tre sidor<!--note from editor: Suggested, to avoid "there are" (via Writing Style Guide).--> där du får hjälp med att ange informationen som krävs för att slutföra prestationsprocessen: sidan **Mått**, sidan **Prestationsjournalens källtyper** och sidan **Granskningstyper**.
 
 ### <a name="measurements"></a>Mått
 
-På sidan **Mått** kan du skapa standardmått som ska användas på sidorna **Resultatmåt** och **Granskningar**. Du kan skapa mått som datum, belopp, kvantiteter eller procentsatser, eller mått som baseras på en bedömningsmodell.
+Använd sidan **Mått** för att<!--note from editor: Via Writing Style Guide, https://styleguides.azurewebsites.net/Styleguide/Read?id=2700&topicid=35221--> skapa standardmått som ska användas på sidorna **Resultatmål** och **Granskningar**. Du kan skapa mått som datum, belopp, kvantiteter, procentsatser eller mått som baseras på en bedömningsmodell.
 
 ### <a name="performance-journal-source-types"></a>Prestationsjournalens källtyper
 

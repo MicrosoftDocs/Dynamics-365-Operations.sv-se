@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 069ada071fe6a7d3e22ad6aa45e3c2f06a9f4b31
+ms.sourcegitcommit: 5a4b8ce4a7ae82c0ef22d2223c11c6b55f048cdd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392921"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "8756975"
 ---
 # <a name="create-a-customer-invoice"></a>Skapa en kundfaktura
 
@@ -30,7 +30,7 @@ En **kundfaktura för en försäljningsorder** är en faktura som är relaterad 
 
 En **fritextfaktura** har inget samband med en försäljningsorder. Den innehåller orderrader som inkluderar redovisningskonton, fritextbeskrivningar och en försäljningssumma som du anger. Du kan inte ange ett artikelnummer på den här sortens faktura. Du måste ange korrekt momsinformation. En huvudkonto för försäljningen anges på varje fakturarad, som du kan fördela till flera huvudbokskonton genom att klicka på **Fördela belopp** på sidan **Fritextfaktura** . Dessutom bokförs kundsaldot till det samlingskonto från bokföringsprofilen som används för fritextfakturan.
 
-Mer information finns i
+Mer information finns i:
 
 [Skapa fritextfakturor](../accounts-receivable/create-free-text-invoice-new.md)
 
@@ -41,7 +41,10 @@ Mer information finns i
 [Generera och bokför återkommande fritextfakturor](tasks/post-recurring-free-text-invoices.md)
 
 
-En **proformafaktura** är en faktura som förbereds som en uppskattning av de faktiska fakturabeloppen innan fakturan bokförs. Du kan skriva ut en proformafaktura för antingen en kundfaktura för en försäljningsfaktura eller för en fritextfaktura.
+En **proformafaktura** är en faktura som förbereds som en uppskattning av de faktiska fakturabeloppen innan fakturan bokförs. Du kan skriva ut en **proformafaktura** för antingen en kundfaktura för en försäljningsfaktura eller för en fritextfaktura. 
+
+>[!NOTE]
+> Om systemet avbryts under proformafakturaprocessen kan en proformafaktura bli överbliven. En överbliven proformafaktura kan raderas genom att köra periodiska jobbet **Radera proformafakturor manuellt**. Gå till **Försäljning och marknadsföring > Periodiska uppgifter > Rensa > Radera proformafakturor manuellt**.
 
 ## <a name="using-sales-order-customer-invoice-data-entities"></a>Använda försäljningsorder kundfaktura dataenheter
 Du kan använda dataenheter när du vill importera och exportera information om en kundfaktura för en försäljningsorder. Det finns olika enheter för informationen i försäljningsfakturahuvudet och på raderna på försäljningsfakturan.
@@ -82,6 +85,11 @@ Visa status för försäljningsorder på listsidan **Alla försäljningsorder**.
 Använd den här processen när en eller flera försäljningsorder är klara att fakturera och du vill konsolidera dem till en enda faktura. 
 
 Du kan markera flera fakturor på listsidan **Försäljningsorder** och sedan använda **Skapa fakturor** för att konsolidera dem. På sidan **Bokföring av faktura** kan du ändra inställningen **Samlingsorder** att sammanställa efter ordernummer (där flera olika följesedlar finns för en enda försäljningsorder) eller per fakturakonto (där det finns flera olika försäljningsorder för ett enda fakturakonto). Använd knappen **Ordna** för att konsolidera försäljningsorder till enskilda fakturor som baseras på inställningarna för **Samlingsorder**.
+
+## <a name="split-sales-order-invoices-by-site-and-delivery-information"></a>Dela upp försäljningsorderfakturor per webbplats och leveransinformation
+Du kan konfigurera uppdelningen av försäljningsorderkundfakturor efter webbplats eller leveransadress på fliken **Samlingsuppdatera** på sidan **Parametrar för kundreskontra**. 
+ - Välj **Dela upp baserat på fakturaplats** för att skapa en faktura per plats vid bokföring. 
+ - Välj **Dela upp baserat på fakturaleveransinformation** för att skapa en faktura per försäljningsorderraders leveransadress vid bokföring. 
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Bokför på intäktskontot för försäljningsorderrader utan pris
 Du kan uppdatera **intäktskontot** i **redovisningen** för försäljningsorderrader som saknar pris. Om du vill ställa in eller visa denna information går du till parametern **Bokför på intäktskontot för försäljningsorderfakturarader med nollpris** på fliken **Redovisning och moms** på sidan **Parametrar för kundreskontra**. (**Kundreskontra > Inställningar > Parametrar för kundreskontra**). Välj **Ja** om du vill uppdatera **intäktskontot** för försäljningsorderfakturarader som saknar pris. Ett intäktskonto definieras på parametersidan **lagerbokföring**, på fliken kontodefinitionsfliken **Försäljningsorder**. Om detta alternativ inte markeras kommer rader som inte har prisinformation inte att bokföras på **intäktskontot**.

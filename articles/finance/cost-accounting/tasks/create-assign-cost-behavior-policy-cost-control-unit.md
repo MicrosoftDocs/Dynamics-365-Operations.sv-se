@@ -1,24 +1,24 @@
 ---
 title: Skapa och tilldela en kostnadsbeteendepolicy till en kostnadsstyrenhet
 description: Kostnadsbeteende är klassificeringen av kostnader som fasta eller rörliga.
-author: ShylaThompson
+author: twheeloc
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostBehaviorRule
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77e79b4959d546fd04c9705220c7f7a4c4a0ffd0621a66553adbe1a85b6cce39
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 653bfb69c4ca118c700755cb95a6b349d2c6bbad
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712277"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735154"
 ---
 # <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a>Skapa och tilldela en kostnadsbeteendepolicy till en kostnadsstyrenhet
 
@@ -28,60 +28,60 @@ Kostnadsbeteende är klassificeringen av kostnader som fasta eller rörliga. En 
 
 
 ## <a name="create-a-cost-behavior-hierarchy"></a>Skapa en hierarki för kostnadsbeteende
-1. Gå till Kostnadsredovisning > Dimensioner > Dimensionshierarkier.
-2. Klicka på Ny.
-3. Klicka på Skapa.
-4. Skriv "Cost behavior hierarchy" i fältet Dimensionshierarkins namn.
-5. Ange eller välj ett värde i fältet Dimension.
+1. Gå till  **Kostnadsredovisning > Dimensioner > Dimensionshierarkier**.
+2. Klicka på **Ny**.
+3. Klicka på **Skapa**.
+4. Skriv "Cost behavior hierarchy" i fältet **Dimensionshierarkins namn**.
+5. Ange eller välj ett värde i fältet **Dimension**.
     * Välj Kostnadselement.  
-6. Klicka på Spara.
-7. Klicka p Visa hierarki
-8. Klicka på Ny.
-9. Skriv ett värde i fältet för nodnamn.
+6. Klicka på **Spara**.
+7. Klicka på **Visa hierarki**.
+8. Klicka på **Ny**.
+9. Skriv ett värde i fältet **Nodnamn**.
     * Ange fast kostnad.  
 10. Välj Cost behavior hierarchy i trädet.
-11. Klicka på Ny.
-12. Skriv ett värde i fältet för nodnamn.
+11. Klicka på **Ny**.
+12. Skriv ett värde i fältet **Nodnamn**.
     * Ange rörlig kostnad.  
-13. Klicka på Spara.
+13. Klicka på **Spara**.
 14. Välj Cost behavior hierarchy\Fixed cost i trädet.
-15. Klicka på Ny.
+15. Klicka på **Ny**.
 16. Markera vald rad i listan.
-17. Ange eller välj ett värde i fältet Från dimensionsmedlem.
+17. Ange eller välj ett värde i fältet **Från dimensionsmedlem**.
     * Intervallet med dimensionsmedlemmar får innehålla luckor men medlemmarna får inte överlappa.  
-18. Ange eller välj ett värde i fältet Till dimensionsmedlem.
+18. Ange eller välj ett värde i fältet **Till dimensionsmedlem**.
     * Intervallet med dimensionsmedlemmar får innehålla luckor men medlemmarna får inte överlappa.  
 19. Välj Cost behavior hierarchy\Variable cost i trädet.
-20. Klicka på Ny.
+20. Klicka på **Ny**.
 21. Markera vald rad i listan.
-22. Ange eller välj ett värde i fältet Från dimensionsmedlem.
+22. Ange eller välj ett värde i fältet **Från dimensionsmedlem**.
     * Intervallet med dimensionsmedlemmar får innehålla luckor men medlemmarna får inte överlappa.  
-23. Ange eller välj ett värde i fältet Till dimensionsmedlem.
+23. Ange eller välj ett värde i fältet **Till dimensionsmedlem**.
     * Intervallet med dimensionsmedlemmar får innehålla luckor men medlemmarna får inte överlappa.  
-24. Klicka på Spara.
+24. Klicka på **Spara**.
 
 ## <a name="create-the-policy-and-rules"></a>Skapa policyn och regler
-1. Gå till Kostnadsredovisning > Policyer > Kostnadsbeteendepolicyer.
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Policynamn.
-4. Ange eller välj ett värde i fältet Dimensionshierarki för kostnadselement.
+1. Gå till **Kostnadsredovisning > Policyer > Kostnadsbeteendepolicyer**.
+2. Klicka på **Ny**.
+3. Skriv ett värde i fältet **Policynamn**.
+4. Ange eller välj ett värde i fältet **Dimensionshierarki för kostnadselement**.
     * Välj policyhierarkin som du just har skapat.  
-5. Ange eller välj ett värde i fältet Dimensionshierarki för kostnadsobjekt.
+5. Ange eller välj ett värde i fältet **Dimensionshierarki för kostnadsobjekt**.
     * Välj Organisation.  
-6. Klicka på Spara.
-7. Klicka på Ny.
+6. Klicka på **Spara**.
+7. Klicka på **Ny**.
 8. Markera vald rad i listan.
-9. Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadselement.
+9. Ange eller välj ett värde i fältet **Dimensionshierarkinod för kostnadselement**.
     * Expandera hela hierarkin för att Rörlig kostnad.  
-10. Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadsobjekt.
+10. Ange eller välj ett värde i fältet **Dimensionshierarkinod för kostnadsobjekt**.
     * Som standard är den rörliga procentandelen 100 procent.  
-11. Klicka på Policytilldelningar för kostnadsstyrenhet.
-12. Klicka på Ny.
+11. Klicka på **Policytilldelningar för kostnadsstyrenhet**.
+12. Klicka på **Ny**.
 13. Markera vald rad i listan.
-14. Ange ett datum i fältet Gäller från redovisningsdatum.
+14. Ange ett datum i fältet **Gäller från redovisningsdatum**.
     * Reglerna gäller utifrån datum och en regel kan upphöra att gälla genom en användare eller systemet om en nyare version skapas.  
-15. Ange eller välj ett värde i fältet Kostnadsstyrenhet.
-16. Klicka på Spara.
+15. Ange eller välj ett värde i fältet **Kostnadsstyrenhet**.
+16. Klicka på **Spara**.
 
 
 

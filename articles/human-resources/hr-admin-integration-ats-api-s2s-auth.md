@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d221e1a47dca85880fd683177ca95dd1b7766fb9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 350fb5a00b85f28fa8aef2ca50cf1f277b8f635e
+ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064932"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "8743553"
 ---
 # <a name="server-to-server-authentication-for-the-ats-integration-api"></a>Autentisering mellan servrar för API:t för ATS-integrering
 
@@ -89,7 +89,7 @@ För den nya rollen måste du åtminstone tilldela lämplig åtkomst till följa
 
 Syftet med det andra steget är att säkerställa att programmet beviljas rätt behörighet till data i Personal genom att koppla det till en användare i programmet Personal. För en programanvändare görs anropen från server till server via virtuella Dataverse-tabeller i kontexten för användarens identitet (app) i Dataverse som genererat åtgärden. Den virtuella tabelladaptertjänsten söker sedan upp den associerade användaren i Personal och kör frågan i samband med användaren. Detta innebär att en användare måste skapas i Personal med de korrekta rollerna tilldelade för att ge åtkomst till de data som integrationsprogrammet behöver.
 
-Personalanvändaren måste också tilldelas rätt behörighet till data i Personal. Rollen **Rekryteringsprogram** (HcmRecruitingIntegrator) finns tillgänglig med privilegier till de primära entiteter som krävs för integrering med rekryteringsdata. Denna rollen kan tilldelas programanvändaren på sidan **Användare** i syfte att bevilja lämplig åtkomst till datan. Mer information om säkerhetsroller för Personal finns i [Rollbaserad säkerhet](/fin-ops-core/dev-itpro/sysadmin/role-based-security).
+Personalanvändaren måste också tilldelas rätt behörighet till data i Personal. Rollen **Rekryteringsprogram** (HcmRecruitingIntegrator) finns tillgänglig med privilegier till de primära entiteter som krävs för integrering med rekryteringsdata. Denna rollen kan tilldelas programanvändaren på sidan **Användare** i syfte att bevilja lämplig åtkomst till datan. Mer information om säkerhetsroller för Personal finns i [Rollbaserad säkerhet](/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security).
 
 ### <a name="set-up-the-new-user-with-appropriate-permissions"></a>Ställ in den nya användaren med lämpliga behörigheter
 

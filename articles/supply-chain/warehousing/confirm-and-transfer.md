@@ -1,7 +1,7 @@
 ---
 title: Bekräfta och överför
 description: I det här avsnittet beskrivs hur du använder funktionen bekräfta och överför, som gör att användarna kan leverera från lagret innan de slutför allt arbete som är kopplat till dessa laster.
-author: mirzaab
+author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 7b487684980f60112d9af6bea02672f7e919c834
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 0d34dd1b33467aa1ea3a723e1baaf7f06285c3fa
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103599"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8675499"
 ---
 # <a name="confirm-and-transfer"></a>Bekräfta och överför
 

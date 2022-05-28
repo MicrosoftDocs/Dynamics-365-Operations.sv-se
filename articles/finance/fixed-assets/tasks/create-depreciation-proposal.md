@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a6cf285e8764af8c6525fb3f9cbec7306917e57e832777588e8c2c1d4aeed818
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db747bf8e3343082feda204fc56d9608313a280e
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719256"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716407"
 ---
 # <a name="create-a-depreciation-proposal"></a>Skapa ett avskrivningsförslag
 
@@ -28,7 +28,7 @@ Det här avsnittet beskriver hur avskrivningsbatchförslag fungerar och förklar
 
 
 ## <a name="create-a-depreciation-proposal"></a>Skapa ett avskrivningsförslag
-1. I navigeringsfönstret går du till **Moduler > Anläggningstillgångar > Journalposter > Skapa avskrivningsförslag**.
+1. I navigeringsfönstret går du till **Anläggningstillgångar > Journalposter > Skapa avskrivningsförslag**.
 2. I fältet **Journalnamn** väljer du ett alternativ i den nedrullningsbara menyn.
 3. I fältet **Till-datum**, anger du ett datum.
 

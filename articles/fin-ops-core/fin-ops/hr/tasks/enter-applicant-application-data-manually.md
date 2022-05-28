@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 68f236ad000adea91e746309564baf84a270a0e5
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: a00e20569f05730296ef611938a94b73ebb7f6f5
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075460"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735330"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Ange sökanden och ansökningsdata manuellt
 
-> [!IMPORTANT]
-> Funktionerna som anges i det här avsnittet är för närvarande tillgängliga för Personal-kunder i ekonomiinfrastrukturen.  
+> [!NOTE]
+> Rekryteringsfunktionen i det här avsnittet kallas för rekryteringsprojekt och är fokuserad på sökande, ansökningar och rekryteringsprojekt.  
 
 
 I den här proceduren visas hur du manuellt hanterar information om sökanden och hans/hennes ansökning. Du kan ange och hantera personuppgifter, intervjudata och tider, referenser, kompetenser och logiförfrågningar för sökande. Du kan även uppdatera statusen för sökandens platsansökningar och skapa brev eller e-postmeddelande för att kommunicera med sökanden. När du skapar en sökandepost, skapas en personpost för den sökanden i den globala adressboken. Demonstrationsdataföretaget **USMF** har använts för att skapa denna procedur.

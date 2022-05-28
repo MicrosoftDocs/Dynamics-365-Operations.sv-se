@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 77d37cba84fcd6fb8f93da79b10db2db91d91db0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ef2f2c82708fd48055faa7546e7e0c4da51e7b6c
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066610"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733997"
 ---
 # <a name="recruit-job-candidates"></a>Rekrytera jobbkandidater
 
@@ -29,7 +28,7 @@ ms.locfileid: "8066610"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dynamics 365 Human Resources hjälper dig att hantera rekryteringsförfrågningar. Den hjälper dig också att på ett smidigt sätt överföra jobbkandidater till medarbetare. Om din organisation använder ett separat rekryteringsprogram kan din rekryteringsprocess innehålla följande steg:
+Dynamics 365 Human Resources hjälper dig att hantera rekryteringsförfrågningar. Den hjälper dig också att på ett smidigt sätt överföra jobbkandidater till medarbetare. Om din organisation använder ett separat rekryteringsprogram kan din rekryteringsprocess innehålla följande steg:<!--note from editor: Should this be a numbered list? These steps do seem to follow a particular order.-->
 
 - Ange din rekryteringsbegäran i Personal.
 - Ta emot kandidathänvisningar i Personal från programmet för rekrytering.
@@ -42,13 +41,18 @@ Om du inte använder ett separat rekryteringsprogram kan du även hantera kandid
 >
 > Du kan också hitta integrationsappar för rekrytering på [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
-## <a name="enable-recruiting-requests"></a>Aktivera rekryteringsbegäranden
+## <a name="enable-recruiting-requests-on-the-merged-infrastructure"></a>Aktivera rekryteringsbegäranden i sammanslagen infrastruktur
 
-Om du vill skicka in rekryteringsförfrågningar i Personal måste du först aktivera funktionerna i **Delade parametrar för personal**.
+Om du vill skicka rekryteringsförfrågningar i HR-rekrytering måste du först aktivera funktionerna för **användarupplevelse för personal** och **Hantering av rekryteringsprocess**.
 
-1. I arbetsytan **Personalhantering** väjer du **Länkar**.
-2. Under **Inställningar**, välj **Delade personalparametrar**.
-3. På fliken **Rekrytering**, under **Rekrytering**, anger du **Aktivera rekryteringsförfrågningar** som **Ja**.
+När funktionerna har aktiverats ska du välja funktionen med följande steg: 
+1. Gå till **Personal** > **Konfigurera** > **Personalparametrar**.
+2. På fliken  **Rekrytering** , ställ in **Rekrytering har inaktiverats** till **Nej**.
+3. I listan **Rekryteringsupplevelse**, välj **HR-rekrytering**.   
+
+> [!Note] 
+> När **HR-rekrytering** har valts blir **Rekryteringsprojekt** (äldre) skrivskyddade. 
+
 
 ## <a name="add-a-recruiting-request-location"></a>Lägg till en plats för rekryteringsbegäran
 
@@ -60,8 +64,8 @@ Om din organisation har flera platser kan du lägga till dem så att de kan väl
 
     ![Lägg till en plats för rekryteringsbegäran.](./media/hr-recruit-0a-add-location.png)
 
-4. I **Beskrivning** anger du en beskrivning av platsen.
-5. Under **Plats**, välj **Lägg till**. Om dialogrutan **Ny adress** visas anger du platsens adress.
+4. För **Beskrivning** anger du en beskrivning av platsen.
+5. Under **Plats**, välj **Lägg till**. Om dialogrutan **Ny adress** visas anger du platsens adress.<!--note from editor: Please make the address in this image less plausible. Via the fictitious guidelines on CELAweb: For street addresses, you should use sequential numbers, common street names, and incorrect zip codes (e.g., 4567 Main St Buffalo, NY 98052). (See https://microsoft.sharepoint.com/sites/CELAWeb-Copyrights-Trademarks-And-Patents/SitePages/trademarks-fictitious-names.aspx)-->
 
     ![Ange adress.](./media/hr-recruit-0b-address.png)
 
@@ -91,7 +95,7 @@ Chefer kan skicka in rekryteringsförfrågningar till Personal. Om du använder 
     Resten av din rekryteringsbegäran fylls i med standardinformation för det jobb som du har angett.
 
 8. Under **Extern beskrivning** anger du en jobbeskrivning som är riktad utåt.
-9. Under **Befattningar** väljer du **Lägg till** och sedan en befattning för den här rekryteringsbegäran.
+9. Under **Befattningar** väljer du **Lägg till** och sedan en befattning för den här rekryteringsbegäran.<!--note from editor: In all of these images, are they approved fictitious names, or do they come from sample data included with the app?-->
 
     ![Lägg till en befattning.](./media/hr-recruit-4-select-position.png)
 

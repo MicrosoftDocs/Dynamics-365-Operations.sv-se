@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f86529359f548bf48fdef8817bd2e2260235561cce57cac28158739687ade2c1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779966"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734441"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy för samlade kostnader och omkostnadsberäkning 
 
@@ -30,9 +30,7 @@ ms.locfileid: "6779966"
 Kostnadsredovisning låter dig få en inblick i hur kostnadsflödet relaterar till produkter och tjänster som levereras inom en organisation. För att se kostnadstransparens är det viktigt att uppnå kostnadsfördelning mellan kostnadsobjekt utifrån en lämplig allokeringsbas. Kostnadsfördelning uppnås som standard för det primära kostndselementet vilket önskas i vissa situationer, men har några konsekvenser som du bör överväga.
 
 -   Extra kostnadsobjekt slutar med ett nollsaldo för det primära kostnadselementet efter omkostnadsberäkning.
-
 -   Volymen för kostnadstransaktionerna som skapas av omkostnadsberäkning kan vara mycket hög.
-
 -   Det går inte att spåra kostnadsflödet mellan kostnadsbärare.
 
 För att undvika de här effekterna kan du konfigurera kostnadsallokering med kostnadsredovisningen för att passa din organisation ledarskaprapportering. Det här avsnittet innehåller information om hur du avgör korrekt nivå på sekundära kostnadselement och skapar regler för samlade kostnader som passar organisationens rapportering och kostnadsspårbarhet.

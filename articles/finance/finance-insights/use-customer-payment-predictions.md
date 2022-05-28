@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: ed70e133b93c783542d4669b679fc5b6d2d20240
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: ecc864485dfc106df22b48e92a85f2c73d58e0e8
+ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968922"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740636"
 ---
 # <a name="use-customer-payment-predictions"></a>Använda förutsägelser för kundbetalning
 
@@ -84,12 +84,8 @@ Datan på snabbflikarna **Customer Insights** och **Kundhistorik** förklarar be
 
 ## <a name="improving-the-accuracy-of-payment-predictions"></a>Förbättra noggrannheten i betalningsförutsägelser
 
-Du kan visa noggrannheten hos betalningsförutsägelser genom att gå till **Kredit och inkasso \> Konfigurera \> Finance-insikter \> Parametrar för ekonomiinsikter**. På fliken **Kundbetalningsinsikter** visar avsnittet **Förutsägelsemodell** noggrannheten i förutsägelsemodellen som en procentandel.
-
-[![Noggrannheten i betalningsförutsägelser.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
+Du kan visa noggrannheten hos betalningsförutsägelser genom att gå till **Kredit och inkasso \> Konfigurera \> Finance-insikter \> Parametrar för Finance Insights**. På fliken **Kundbetalningsinsikter** visar avsnittet **Förutsägelsemodell** noggrannheten i förutsägelsemodellen som en procentandel.
 
 Om du inte är nöjd med noggrannheten väljer du länken **Förbättra modellens noggrannhet** för att öppna AI Builder-tilläggets upplevelse. I AI Builder-tilläggets upplevelse kan du välja eller avbryta urvalet av fält tills du har valt de fält som du tror är viktigast för en korrekt förutsägelse av betalningssannolikhet. När du är klar kan du enkelt återträna förutsägelsemodellen och publicera dina ändringar. Den nyligen tränade förutsägelsemodellen hämtas automatiskt för förutsägelser i Dynamics 365 Finance.
-
-[![AI Builder erfarenhet av filnamnstillägg.](./media/ai-builder.png)](./media/ai-builder.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

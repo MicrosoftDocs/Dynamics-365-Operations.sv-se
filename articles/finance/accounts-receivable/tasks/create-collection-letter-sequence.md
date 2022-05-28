@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CollectionLetterCourse
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: af5d0a001fbe705834e116516933be67f2de8826
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921235"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734171"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Skapa in en kravbrevsserie
 
@@ -26,10 +26,10 @@ ms.locfileid: "7921235"
 
 Använd den här proceduren när du vill skapa en kravbrevsserie. I den här uppgiften används demonstrationsföretaget USMF.
 
-1. I navigeringsfönstret, gå till **Moduler > Kredit och inkasso > Inställningar > Ställ in kravbrevsserier**.
+1. Gå till **Kredit och inkasso > Inställningar > Ställ in kravbrevsserier**.
 2. Klicka på **Ny**.
 3. Ange sekvens-ID för att representera sekvensen i fältet **Kravbrevsserie**. Detta kan användas, när du ställer in en bokföringsprofil.
-4. I fältet **Beskrivning** anger du ett värde.  Betalningsvillkoren är valfri. Om du anger ett värde här, ska kravbrevsavgift fakturan använda dessa betalningsvillkor istället för de betalningsvillkor som lagras med kunden.  
+4. I fältet **Beskrivning** anger du ett värde. Betalningsvillkoren är valfri. Om du anger ett värde här, ska kravbrevsavgift fakturan använda dessa betalningsvillkor istället för de betalningsvillkor som lagras med kunden.  
 5. I fältet **kravbrevskod** väljer du koden för det första kravbrev som du vill skicka. Det första kravbrevet skapas med hjälp av förfallodatumet på fakturan, det värde som du anger för respitperioden i fältet och den information som du anger på denna rad.  
 6. I fältet **Beskrivning** anger du ett värde. 
 7. Valutan för avgiften anpassas till kundens valuta för juridisk person. Denna valutakod kan skilja sig från fakturavalutan.   
@@ -52,9 +52,9 @@ Använd den här proceduren när du vill skapa en kravbrevsserie. I den här upp
 22. Klicka på länken på den valda raden i listan.
 23. Ange ett värde i fältet **Minsta förfallet saldo**.
 24. Välj ett tal i fältet **Dagar**.
-25. Markera kryssrutan **Spärra** om du vill stoppa ytterligare leveranser till och fakturering av kunden. Om du vill ta bort spärren från kontot väljer du **Nej** i fältet Spärrad fakturering och leverans på sidan Kunder.  
+25. Markera kryssrutan **Spärra** om du vill stoppa ytterligare leveranser till och fakturering av kunden. Om du vill ta bort spärren från kontot väljer du **Nej** i fältet **Spärrad fakturering och leverans** på sidan **Kunder**.  
 26. Expandera snabbfliken **Anmärkning**.
-27. Ange den text som ska visas i kravbrevet för den valda kravbrevskoden. Du kan översätta den här texten in på språk med hjälp av översättningsmenyn över anmärkningsasken.  
+27. Ange den text som ska visas i kravbrevet för den valda kravbrevskoden. Du kan översätta den här texten till flera språk med hjälp av menyn **Översättningar** ovanför anmärkningsrutan.  
 
 
 

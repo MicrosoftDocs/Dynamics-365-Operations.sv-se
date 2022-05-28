@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxReportCollection
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b7d12ffa90bde30518780d750e74d20db89f007044f8622480b8bd6e629e00dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ff5a5622fa63b6058b9e768f1fd1bc776a48962
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728755"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734851"
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>Ställ in momsrapporteringskoder
 
 [!include [banner](../../includes/banner.md)]
 
-Momsrapportkoderna refererar till ett fältnummer som anges i momsrapporten. De används på landsspecifika rapportlayouter. De används också på rapporten Momsbetalning per kod. Rapporten visar momsbelopp för en kvittningsperiod som summeras för varje rapporteringskod. När du har skapat momsrapporteringskoder kan du referera till koderna på rapportinställningssnabbflikarna, som du når från sidan **Momskod**. 
+**Momsrapportkoderna** refererar till ett fältnummer som anges i momsrapporten. De används på landsspecifika rapportlayouter. De används också på rapporten Momsbetalning per kod. Rapporten visar momsbelopp för en kvittningsperiod som summeras för varje rapporteringskod. När du har skapat **momsrapportkoder** kan du referera till koderna på snabbflikarna **Rapportkonfiguration** som du når från sidan **Momskod**. 
 
 I den här registreringen används demonstrationsföretaget DEMF.
 

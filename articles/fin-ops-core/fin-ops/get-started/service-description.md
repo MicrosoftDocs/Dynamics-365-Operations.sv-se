@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: cd033cfc3df21ddac5572aa70c18db5ffe26f54e
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 26b2821f33ea23dde1fda1d461baa5de1b4f9efc
+ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656815"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740664"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Tjänstebeskrivning för appar för ekonomi och drift
 
@@ -265,7 +265,7 @@ Kundens klientorganisationsadministratör kan komma åt produktionsinstanser ell
 |---|---|---|
 | **Icke-produktion**<br>Nivå 1 sandbox-miljö | En miljö som inte är produktionsmiljö som kunder distribuerar för utveckling, demonstration eller utbildning. | En Nivå 1 sandbox-miljö (kallas även molnbaserad miljö) är en kundhanterad VM som distribueras till kundens Azure-prenumeration från LCS. Eftersom det är en virtuell dator i kundens Azure-prenumeration har kunden fullständig administrativ åtkomst till miljön via Remote Desktop. |
 | **Icke-produktion**<br>Nivå 2 (eller högre) sandbox-miljö | En miljö som inte är produktionsmiljö där kunder distribuerar för testning av användargodkännande, integrationstester, utbildning, mellanlagring eller andra scenarion som gäller för förproduktion. | Nivå 2 och högre sandbox-miljöer distribueras till ekonomi och drift SaaS-prenumerationen. Åtkomst till Azure SQL-databaser som är associerade med den icke-produktionsmiljön beviljas via [just-in-time-åtkomst](../../dev-itpro/database/database-just-in-time-jit-access.md). Remote Desktop-åtkomst är inte tillgänglig. |
-| **Produktion** | En produktionsmiljö distribueras när projektet är [klart för initial publicering](/imp-lifecycle/environment-planning.md#production-system-readiness). | Produktionsmiljöer distribueras till SaaS-prenumerationen. All åtkomst går via webbläsaren, tjänsteslutpunkter eller LCS. |
+| **Produktion** | En produktionsmiljö distribueras när projektet är [klart för initial publicering](../imp-lifecycle/environment-planning.md#production-system-readiness). | Produktionsmiljöer distribueras till SaaS-prenumerationen. All åtkomst går via webbläsaren, tjänsteslutpunkter eller LCS. |
 
 ### <a name="microsoft-administrative-access"></a>Microsofts administrativa åtkomst
 
@@ -286,7 +286,7 @@ Microsoft har investerat i en omfattande verktygsuppsättning för att övervaka
 |---|---|
 | <ul><li>Övervaka tillgängligheten på tjänsten.</li><li>Övervaka och avisera kontinuerligt via hälsomått och säkerhetskomponenter för viktiga komponenter som Application Object Server (AOS), Batch, Dataimport/export-ramverk (DIXF), Commerce och Management Reporter.</li><li>Övervaka prestandaförsämring som orsakas av infrastrukturtjänster (till exempel Azure Active Directory \[Azure AD\] och Azure SQL).</li><li>Om Microsoft fastställer att en enskild process eller ett batchjobb orsakar avvikelser, kommer den processen eller jobbet att avslutas efter kommunikation med kunden.</li></ul> | <ul><li>Övervaka ändringar av programkonfigurationer och tillägg som kan orsaka funktionsproblem och prestandaproblem.</li><li>Programfel måste diagnosticeras genom att använda övervakningsverktygen. Använd dessa verktyg diagnosticera användarrapporterade prestandaförsämringar.</li><li>Informera Microsoft om det finns förväntad belastning på systemet utöver projekterad toppanvändning.</li><li>Om den tillämpliga tjänsten inte är tillgänglig i produktionsinstansen kan kunden använda LCS för att rapportera ett [produktionsavbrott](../../dev-itpro/lifecycle-services/report-production-outage.md).</li></ul> |
 
-Genom att skicka supportförfrågningar online, via LCS, kan Microsoft leverera snabb och djupgående teknisk kompetens på det mest effektiva sättet. Även om det finns ett telefonnummeralternativ bör det endast användas om onlinealternativet inte är tillgängligt. Mer information finns i [Alternativ för telefonsupport](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support).
+Genom att skicka supportförfrågningar online, via LCS, kan Microsoft leverera snabb och djupgående teknisk kompetens på det mest effektiva sättet. Även om det finns ett telefonnummeralternativ bör det endast användas om onlinealternativet inte är tillgängligt. Mer information finns i [Alternativ för telefonsupport](/power-platform/admin/support-overview?toc=%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Ftoc.json&bc=%2Fdynamics365%2Fbreadcrumb%2Ftoc.json#is-there-a-phone-number-i-can-call-to-contact-support).
 
 ## <a name="incident-management"></a>Incidenthantering
 

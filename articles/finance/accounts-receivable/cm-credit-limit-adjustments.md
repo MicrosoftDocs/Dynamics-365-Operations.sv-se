@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c171ab99a434e529c48f39be9147ac411fb08b9b
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 4d96f50db4379a44ad8f2b06725db654a27393f9
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753908"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734815"
 ---
 # <a name="credit-limit-adjustments"></a>Kreditgränsjusteringar 
 
@@ -27,7 +27,7 @@ Kreditgränsjusteringar gör att kreditchefer uppdaterar kreditgränserna och ut
 
 ## <a name="set-up-credit-limit-adjustments"></a>Ange justering av kreditgräns
 
-Du kan skapa poster i journalen för kreditgränsjustering på sidan **kreditgränsjustering** (**kredithantering \> kreditgränsjusteringar \> kreditgränsjusteringar**).
+Du kan skapa poster i journalen **Kreditgränsjustering** på sidan **Kreditgränsjustering** (**Kredithantering \> Kreditgränsjusteringar \> Kreditgränsjusteringar**).
 
 1. Välj **Ny**. En ny grupp med poster skapas som har ett kreditgränsjusteringsnummer.
 2. Välj typ av kreditgränsjustering:

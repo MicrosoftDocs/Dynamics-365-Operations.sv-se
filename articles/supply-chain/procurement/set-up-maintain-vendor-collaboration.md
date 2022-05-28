@@ -1,7 +1,7 @@
 ---
 title: Skapa och underhåll leverantörssamarbete
 description: Det här avsnittet förklarar hur du ställer in leverantörssamarbete i Dynamics 365 Supply Chain Management. Här förklaras också hur du inför nya leverantörers samarbetsanvändare och hanterar säkerhetsrollerna för dessa användare.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 220774
 ms.assetid: 69d05e8b-7dc2-48ea-bc24-bea9ac963579
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b635255fffa6fd3c6612cd248dc692df204aa76d
-ms.sourcegitcommit: 614d79cba238e466d445767a7d0a012e785a9861
+ms.openlocfilehash: 4b59513d86426d3c1bfd759b9aabc331e58d5423
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "7652095"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677574"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Skapa och underhåll leverantörssamarbete
 
@@ -31,7 +31,7 @@ Lleverantörssamarbetesgränssnittet visar en begränsad uppsättning informatio
 Det här avsnittet förklarar hur du ställer in leverantörssamarbete i Dynamics 365 Supply Chain Management. Här förklaras också hur du ställer in ett arbetsflöde för nya leverantörers samarbetsanvändare och hu du hanterar säkerhetsrollerna för dessa användare.
 
 > [!NOTE]
-> Informationen om inställningen av säkerhetsroller för leverantörssamarbete gäller bara för den aktuella versionen av Finance and Operations. I Microsoft Dynamics AX 7.0 (februari 2016) och Microsoft Dynamics AX programversion 7.0.1 (maj 2016) kan du samarbeta med leverantörer med hjälp av modulen **Leverantörsportal**. Mer information om användarbehörigheter för Leverantörsportalen i Microsoft Dynamics AX, se [användarsäkerheten för leverantörsportalen](configure-security-vendor-portal-users.md).
+> Informationen om inställningen av säkerhetsroller för leverantörssamarbete gäller bara för den aktuella versionen av Ekonomi och drift. I Microsoft Dynamics AX 7.0 (februari 2016) och Microsoft Dynamics AX programversion 7.0.1 (maj 2016) kan du samarbeta med leverantörer med hjälp av modulen **Leverantörsportal**. Mer information om användarbehörigheter för Leverantörsportalen i Microsoft Dynamics AX, se [användarsäkerheten för leverantörsportalen](configure-security-vendor-portal-users.md).
 
 ## <a name="set-up-vendor-collaboration-security-roles"></a>Skapa säkerhetsroller för leverantörssamarbete
 

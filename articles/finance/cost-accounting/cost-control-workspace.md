@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db587f5526e0541fc81964d510000a42a671a9bd65224e7167b9d869475c3601
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36e94ff2cd499a827c631d6836a6c976af53dfa1
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763200"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734616"
 ---
 # <a name="cost-control-workspace"></a>Arbetsyta för kostnadskontroll 
 
@@ -54,7 +54,7 @@ På snabbfliken **Datafiltrering** definierar du grunden för data för rapporte
 | Huvudbok för kostnadsredovisning                                            | **Huvudboken för kostnadsredovisning** som rapporten baseras på. Värdet hämtas från fältet **kostnadskontrollenhet**. |
 | Kostnadsstyrenhet                                                 | Värdet som du väljer bestämmer kostnadsredovisningen och kostnadobjekten som rapporten ska baseras på. |
 | Statistisk dimensionshierarki, dimensionshierarki för kostnadselement | En konfigurationspost för arbetsytan **kostnadskontroll** kan rapportera icke-monetära eller monetära värden, men inte i samma layout. Välj ett värde i fältet **Dimensionshierarki för kostnadselement** för att rapportera monetära värden. Välj ett värde i fältet **Statistisk dimensionshierarki** för att rapportera icke-monetära. Dimensionshierarkiposten som du väljer avgör strukturen för rapporterings- och aggregeringsnivåer.<blockquote>[!NOTE]<br>Om du vill visa monetära och icke-monetära värden sida vid sida kan du exportera data till Microsoft Excel för Microsoft Power BI-innehållet.</blockquote> |
-| Dimensionshierarki för kostnadsobjekt                                   | Välj dimensionshierarkin av kostnadsobjektdimensionen som passar syftet med rapporteringen du definierar. |
+| Dimensionshierarki för kostnadsobjekt      | Välj dimensionshierarkin av kostnadsobjektdimensionen som passar syftet med rapporteringen du definierar. |
 | Ursprunglig budgetversion                                           | Välj det budgetversion-ID som utgör den ursprungliga budgeten i samband med den här rapporten. |
 | Reviderad budgetversion                                            | Välj det budgetversion-ID som utgör den reviserade budgeten i samband med den här rapporten. |
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 21910c61cc330e0c9292990b7b1914f56bac844c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
+ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570763"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8736045"
 ---
 # <a name="dual-use-goods"></a>Varor med dubbla användningsområden
 
@@ -34,7 +34,7 @@ Tänk på följande scenario:
 2. Sidan **Information om frisläppt produkt** för produkt X-100 visar att det är ett bra användningssystem. Tillsammans visar koden, kategorin, gruppen och ordningen den export kontrollklassificering som produkten tillhör.
 3. På sidan **Certifikat för dubbel användning** inkluderar ett certifikat för produkt X-100 när den skickas till Frankrike. Det här certifikatet upphör att gälla 1 januari 2020.
 4. Den 17 juni 2020 skapar du en försäljningsorder för ett kundföretag som är baserat på Frankrike och ordern inkluderar produkt X-100.
-5. När du sparar försäljningsordern avgör systemet följande information:
+5. När du bekräftar försäljningsordern avgör systemet följande information:
 
     1. Omfattar ordern alla produkter som är varor som är med dubbla användningsområden?
     2. Om ordern innehåller produkter med dubbla användningsområden kräver mållandet att använda certifikat med dubbla användningsområden?

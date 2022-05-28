@@ -1,6 +1,6 @@
 ---
 title: Ställ in momskvittningsperioder
-description: Det här avsnittet innehåller information om hur du ställer in momskvittningsperioder i Dynamics 365 Finance.
+description: Detta avsnitt innehåller information om hur du ställer in momskvittningsperioder i Dynamics 365 Finance.
 author: twheeloc
 ms.date: 08/05/2019
 ms.topic: business-process
@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f57cd2b5b0f8f86d67500086403c5f484a263f76601453c00f59ede901b01a8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 197b85fb88f966b0a13fc061e2e780dd84e74acb
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732967"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735826"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Ställ in momskvittningsperioder
 
@@ -28,7 +28,7 @@ Det här avsnittet innehåller information om hur du ställer in momskvittningsp
 
 I den här uppgiften används demonstrationsföretaget USMF.
 
-1. I navigeringsfönstret går du till **Moduler > Skatt > Indirekta skatter > Moms > Momskvittningsperioder.**
+1. Gå till **Moms > Indirekt moms > Moms > Momskvittningsperioder**.
 2. Välj **Ny**.
 3. Ange ett värde i fältet **Kvittningsperiod**.
 4. I fältet **Beskrivning** anger du ett värde.
