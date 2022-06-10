@@ -1,8 +1,8 @@
 ---
 title: Startsida för mobilapp
-description: Det här avsnittet beskriver mobilappen Finance and Operations (Dynamics 365) och ger länkar till resurser som kan hjälpa dig att implementera den i din organisation.
+description: Det här avsnittet beskriver mobilappen ekonomi och drift (Dynamics 365) och ger länkar till resurser som kan hjälpa dig att implementera den i din organisation.
 author: ChrisGarty
-ms.date: 01/22/2020
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a6928b1fc7713b6822f53aaa77b8d1281eb6d320
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729718"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811185"
 ---
 # <a name="mobile-app-home-page"></a>Startsida för mobilapp
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Det här avsnittet beskriver mobilappen **Finance and Operations (Dynamics 365)** och ger länkar till resurser som kan hjälpa dig att implementera den i din organisation.
+Det här avsnittet beskriver mobilappen **ekonomi och drift (Dynamics 365)** och ger länkar till resurser som kan hjälpa dig att implementera den i din organisation.
 
 ## <a name="overview"></a>Översikt
 
@@ -76,7 +77,7 @@ Följande tabell innehåller länkar till resurser som hjälper dig att implemen
 <tr class="odd">
 <td>1</td>
 <td>Systemadministratör</td>
-<td>Implementera Finance and Operations-appen i din organisation.</td>
+<td>Implementera ekonomi och drift-app i din organisation.</td>
 <td><ul><li>Om du ännu inte har installerat en version av Microsoft Dynamics 365, se <a href="../deployment/deploy-demo-environment.md">Distribuera en demomiljö</a>.</li><li>En lista över de mobila arbetsytor som kan användas finns i <a href="mobile-workspaces-released.md">Mobila arbetsytor som nyligen lanserats</a>.</li></ul></td>
 </tr>
 <tr class="even">
@@ -131,8 +132,8 @@ Följande tabell innehåller länkar till resurser som hjälper dig att implemen
 <td>Användare</td>
 <td>Hämta och installera mobilappen.</td>
 <td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations-app för Android</a><BR/>
-<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations-app för iOS</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Ekonomi och drift-app för Android</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Ekonomi och drift-app för iOS</a><BR/>
 (Windows Phone stöds inte)
 </td>
 </tr>

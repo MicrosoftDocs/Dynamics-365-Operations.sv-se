@@ -2,7 +2,7 @@
 title: Produkt- och kundsökning i POS
 description: Det här avsnittet innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 10/26/2021
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 460c7d3b00421ba43414f7343887edf9b8adad9c
+ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700099"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8806438"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- och kundsökning i POS
 
@@ -106,6 +106,8 @@ Om du vill ange sökvillkor som genvägar måste administratören öppna sidan *
 > Om du lägger till för många genvägar kommer menyn på sökfältet i POS att bli plottrig och medarbetarens sökupplevelse kan påverkas. Vi rekommenderar att du endast lägger till så många genvägar som du behöver.
 
 Fältet **visningsordning** anger den ordning som genvägarna visas i POS. Kriteriet som visas är de färdiga egenskaper som kundens sökalgoritm använder för att söka efter kunder. Partner kan emellertid lägga till anpassade egenskaper som sökgenvägar. Om du vill lägga till anpassade egenskaper som sökgenvägar måste systemadministratören utöka den omfattande uppräkningen (enum) som ska användas för kundsökkriterierna och markera partners anpassade egenskaper som genvägar. Partner som är ansvarig för att skriva koden för att hitta resultat när deras anpassade genvägar används i sökningar.
+
+Det krävs översättningar av genvägar om du vill att genvägar ska återges i kassan. Om ditt kanalspråk inte är systemets standardspråk måste du definiera översättningen för varje genväg på det förväntade språket. Du kan definiera översättningar genom att välja **Översätt** för varje genväg. 
 
 > [!NOTE]
 > En anpassad egenskap som läggs till enum påverkar inte den standardinställda kundsökalgoritmen. Med andra ord söker inte kundens sökalgoritm i den anpassade egenskapen. Användare kan endast använda en anpassad egenskap för sökningar om den anpassade egenskapen läggs till som en genväg, eller om standardsökalgoritmen åsidosätts.

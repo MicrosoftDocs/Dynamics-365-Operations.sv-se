@@ -2,7 +2,7 @@
 title: Snabbvisningsmodul
 description: Detta ämne handlar om snabbvisningsmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 68808da1ad2b3474852b3544df55db948f8758cd
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5ba42806d8f77f41ab9c5cf5e26b20ecb647aadf
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692710"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780828"
 ---
 # <a name="quick-view-module"></a>Snabbvymodul
 
@@ -61,7 +61,7 @@ Om du vill lägga till en snabbvisningsmodul i en produktsamlingsmodul i Commerc
 
 1. Gå till **Sidor** och välj sedan startsidan för Fabrikam-webbplatsen.
 1. Gå till valfri modul för **Produktsamlingmodul** på startsidan, välj ellipsen (**...**) och välj sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul** väljer du modulen **Snabbvisning** och sedan **OK**.
+1. I dialogrutan **Välj moduler** väljer du modulen **Snabbvisning** och sedan **OK**.
 1. I egenskapsfönstret i modulen **Snabbvisning** väljer du **Rubrik**. I dialogrutan **Rubrik** anger du fältet **Rubriknivå** som **H2** och väljer sedan **OK**.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 

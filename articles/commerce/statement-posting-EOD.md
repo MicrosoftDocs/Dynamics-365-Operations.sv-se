@@ -2,19 +2,19 @@
 title: Förbättringar av funktionen för bokföring av utdrag
 description: Det här avsnittet beskriver de förbättringar som har gjorts till funktionen för bokföring av utdrag.
 author: analpert
-ms.date: 04/27/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: be9aa68aec1fd7deff315234a6dbf41edc3d6819
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: f3937ee7b34b7204c31d922900029ae3a2c59e18
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649029"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770179"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Förbättringar av funktionen för bokföring av utdrag
 
@@ -151,6 +151,9 @@ Vyn sammanlagd transaktion ger följande fördelar:
 - Användaren har insyn i hur transaktioner slås samman.
 - Användaren har en fullständig redovisningsspårning från transaktioner, försäljningsorder till försäljningsfakturor. Den här redovisningsspårningen är inte tillgänglig i funktionen för bokföring av äldre utdrag.
 - Sammanlagd XML-filen gör det enklare att identifiera problem vid upprättande av försäljningsorder och fakturering.
+
+> [!NOTE]
+> När transaktioner aggregeras är den personal som tilldelats transaktionen inte längre tillgänglig för **Främsta personalförsäljning - rapport**, som innebär att **Främsta personalförsäljning - rapport** inte visar alla transaktioner. Vi rekommenderar att du inte använder **Främsta personalförsäljning - rapport** med aggregerade transaktioner.
 
 ### <a name="journal-vouchers"></a>Bokföringsorder
 

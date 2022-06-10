@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524477"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786878"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentliga API:er för Lagersynlighet
 
@@ -41,17 +41,22 @@ I följande tabell finns de API:er som är tillgängliga i nuläget:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Bokför | [Ställ in/åsidosätta lagerbehållning](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Bokför | [Skapa en reservationshändelse](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Bokför | [Skapa flera reservationshändelser](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/on-hand/changeschedule | Bokför | [Skapa en schemalagd engångs-ändring](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/on-hand/changeschedule/bulk | Bokför | [Skapa flera schemalagda engångs-ändringar](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule | Bokför | [Skapa en schemalagd engångs-ändring](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule/bulk | Bokför | [Skapa flera schemalagda engångs-ändringar](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Bokför | [Fråga genom att använda inläggsmetoden](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Hämta | [Fråga genom att använda hämtningsmetoden](#query-with-get-method) |
+| /api/environment/{environmentId}/allocation/allocate | Bokför | [Skapa en allokerad händelse](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/unallocate | Bokför | [Skapa en ej allokerad händelse](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/reallocate | Bokför | [Skapa en ej omallokerad händelse](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/consume | Bokför | [Skapa en förbrukningshändelse](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/query | Bokför | [Resultat för frågeallokering](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
 > Delen {environmentId} av sökvägen är miljö-ID:t i Microsoft Dynamics Lifecycle Services (LCS).
 > 
 > Bulk-API:t kan returnera maximalt 512 poster för varje begäran.
 
-Microsoft har tillhandahållit en färdig *brevbärar*-begärandesamling. Du kan importera denna samling till ditt *brevbärar* program genom att använda följande delade länk: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
+Microsoft har tillhandahållit en färdig *brevbärar*-begärandesamling. Du kan importera denna samling till ditt *brevbärar* program genom att använda följande delade länk: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Hitta slutpunkten enligt Lifecycle Services-miljön
 
@@ -84,7 +89,7 @@ Microsoft har skapat ett användargränssnitt (UI) i Power Apps som gör att du 
 
 ## <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Äkthetsbevisning
 
-Säkerhetstoken för plattform används för att anropa det offentliga API:t Lagersynlighet. Därför måste du generera en _Azure Active Directory (Azure AD) token_ med hjälp av ditt Azure AD program. Du måste sedan använda Azure AD token för att få _åtkomsttoken_ från säkerhetstjänsten.
+Säkerhetstoken för plattform används för att anropa det offentliga API:t Lagersynlighet. Därför måste du generera en _Azure Active Directory (Azure AD) token_ med hjälp av din Azure AD-app. Du måste sedan använda Azure AD token för att få _åtkomsttoken_ från säkerhetstjänsten.
 
 Microsoft tillhandahåller en färdig samling för hämta token för *brevbärare*. Du kan importera denna samling till ditt *brevbärar* program genom att använda följande delade länk: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
 
@@ -580,6 +585,10 @@ Här är ett exempel på URL-adressen. Denna hämtbegäran är exakt densamma so
 
 ## <a name="available-to-promise"></a>Disponibelt att lova
 
-Du kan ställa in lagersynlighet så att du kan tidsplanera framtida ändringar av lagerbehållningen och beräkna ATP-kvantiteter. ATP är den kvantitet av en artikel som finns tillgänglig och därför kan utlovas en kund i nästa period. Om du använder ATP beräkningen kan du öka möjligheten att uppfylla ordern mycket. Information om hur du aktiverar funktionen, och hur du kan interagera med lagersynlighet genom dess API när funktionen har aktiverats, finns i [Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova](inventory-visibility-available-to-promise.md).
+Du kan ställa in lagersynlighet så att du kan tidsplanera framtida ändringar av lagerbehållningen och beräkna ATP-kvantiteter. ATP är den kvantitet av en artikel som finns tillgänglig och därför kan utlovas en kund i nästa period. Om du använder ATP beräkningen kan du öka möjligheten att uppfylla ordern mycket. Information om hur du aktiverar funktionen, och hur du kan interagera med lagersynlighet genom dess API när funktionen har aktiverats, finns i [Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova](inventory-visibility-available-to-promise.md#api-urls).
+
+## <a name="allocation"></a>Allokering
+
+Allokeringsrelaterade API:er finns i [Alllokering för lagersynlighet](inventory-visibility-allocation.md#using-allocation-api).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

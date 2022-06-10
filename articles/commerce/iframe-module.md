@@ -2,7 +2,7 @@
 title: Iframe-modul
 description: Det här avsnittet handlar om iframe-modulen och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 11/04/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: eeb9d76367be6b2d2153578f6358594b807382ac
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754024"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780244"
 ---
 # <a name="iframe-module"></a>Iframe-modul
 
@@ -53,15 +53,18 @@ I följande bild visas exempel på iframe-moduler som visar externa videoklipp p
 Om du vill lägga till en iframe-modul på en sida för att visa en extern video följer du stegen nedan.
 
 1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
-1. I dialogrutan **Ny mal** under **Mallnamn**, ange **Marknadsföringsmall** och välj sedan **OK**.
+1. I dialogrutan **Ny mall** under **Mallnamn**, ange **Marknadsföringsmall** och välj sedan **OK**.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
-1. I dialogrutan **Välj en mall** väljer du en **Marknadsföringsmall**. Under **sidnamn**, ange **Marknadsföringssida** och klicka sedan på **OK**.
+1. I dialogrutan **Skapa en ny sida** under **Sidnamn**, ange **Marknadsföringssida** och välj sedan **Nästa**.
+1. Under **Välj en mall**, välj mallen **Marknadsföringsmall** som du skapade och välj sedan **Nästa**.
+1. Under **Välj en layout** väljer du en sidlayout (till exempel **Flexibel layout**) och väljer sedan **Nästa**.
+1. Under **Granska och slutför**, granska sidkonfiguration. Om du behöver redigera sidinformationen väljer du **Bakåt**. Om sidinformationen är korrekt väljer du **Skapa sida**. 
 1. I platsen för nya sidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
+1. I dialogrutan **Välj moduler**, välj modulen **Behållare** och klicka sedan på **OK**.
 1. I modulens egenskapsfönster, ange värdet **Bredd** till **Fyll behållare**.
 1. I facket **behållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul**, välj modulen **iframe** och klicka sedan på **OK**.
+1. I dialogrutan **Välj moduler**, välj modulen **iframe** och klicka sedan på **OK**.
 1. I modulens egenskapsfönster, ange värdet **Mål-URL** till en extern URL för en video.
 1. Ange andra egenskaper **rubrik** och **höjd**, efter behov.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.

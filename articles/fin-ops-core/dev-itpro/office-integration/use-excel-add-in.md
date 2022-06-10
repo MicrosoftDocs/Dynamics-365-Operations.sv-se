@@ -2,7 +2,7 @@
 title: Visa och uppdatera enhetsdata i Excel
 description: Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Excel-tillägget.
 author: jasongre
-ms.date: 10/01/2021
+ms.date: 05/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b97c585009b50c6623036d10f54e78a65a89cea
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: f5090674fc4f7c49c55a8a12aea8c567545d519f
+ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464949"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8762665"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Visa och uppdatera enhetsdata i Excel 
 
@@ -110,7 +110,7 @@ Du kan använda designern för att justera att kolumnerna läggs till automatisk
 5. Om du har lagt till ett fält (kolumn) klickar du på **uppdatera** för att ta emot en uppdaterad uppsättning data.
 
 ## <a name="change-the-publish-batch-size"></a>Ändra publicera batchstorlek
-När användarna publicerar ändringar i dataposter med hjälp av Excel-tillägget skickas uppdateringarna i batchar. Standardvärdet för publicering av batchstorlek är 100 rader. I version 10.0.17 och senare ger funktionen **Tillåt konfiguration av publiceringen av batchstorleken i Excel-tillägg** dig flexibel kontroll över publicering av batchstorlek.
+När användarna publicerar ändringar i dataposter med hjälp av Excel-tillägget skickas uppdateringarna i batchar. Standard (och maximal) publiceringsbatchstorlek är 100 rader; dock ger funktionen **Tillåt konfiguration av publiceringsbatchstorleken i Excel-tillägget** ger dig flexibilitet när det gäller att minska publiceringsbatchstorleken, särskilt om du ser tidsplanering när du försöker publicera uppdateringar från Excel.
 
 Systemadministratörer kan ange en systemomfattande gräns för publicering av batchstorlek för "Öppna i Excel"-arbetsböcker genom att ange fältet **Publicera batchgräns** i avsnittet **Apparametrar** på sidan **Office-apparametrar**.
 

@@ -2,7 +2,7 @@
 title: Borttagna eller avskrivna plattformsfunktioner
 description: I detta ämne beskrivs funktioner som har tagits bort, eller som planerats för borttagning i plattformsuppdateringar av appar för ekonomi och drift.
 author: sericks007
-ms.date: 04/26/2022
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0cf0d4b3ff108645c8542ce10a0be58d29cc68ed
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 3de9b9ea0bd20d1346a7cdfd2f919f50374b164c
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644619"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811258"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller utfasade plattformsfunktioner
 
@@ -31,6 +31,33 @@ I detta ämne beskrivs funktioner som har tagits bort, eller som planerats för 
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
 Detaljerad information om objekt i appar för ekonomi och drift finns i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av appar för ekonomi och drift.
+
+
+## <a name="feature-deprecation-effective-june-2022"></a>Utfasning av funktioner från juni 2022
+
+### <a name="finance-and-operations-dynamics-365-mobile-application-and-mobile-platform"></a>Ekonomi och drift (Dynamics 365) mobilapp och mobil plattform 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Vi tar bort mobilapplikationen Ekonomi och drift (Dynamics 365) för konsolidering till en enda mobil plattform, det vill säga Power Apps. |
+| **Ersatt av en annan funktion?**   | Ja, mobilerfarenheter över data i programmet Ekonomi och drift kan byggas med Power Platform integration. Se [Bygga mobila upplevelser](../power-platform/build-mobile-experiences.md) för mer information. |
+| **Produktområden som påverkas**         | Ekonomi och drift-appar |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell. Slutdatum för supportdatum är till oktober 2024. |
+
+
+## <a name="platform-updates-for-version-10029-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.29 av appar för ekonomi och drift
+
+### <a name="panorama-tab-style"></a>Flikstil för Panorama
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Sidor som bläddras vågrätt anpassas efter utdaterade layoutmönster som har kända problem vad gäller tillgänglighet och användarvänlighet.  |
+| **Ersatt av en annan funktion?**   | Nej, men andra flikformat är fortfarande tillgängliga. |
+| **Produktområden som påverkas**         | Webbklient |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell. |
+
 
 ## <a name="feature-deprecation-effective-april-2022"></a>Utfasning av funktioner från april 2022
 

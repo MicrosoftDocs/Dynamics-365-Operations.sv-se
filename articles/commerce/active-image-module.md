@@ -2,7 +2,7 @@
 title: Aktiv bildmodul
 description: Det här avsnittet omfattar aktiva bildmoduler och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 36b7d6dea87c7f309c07608794d443a0ae19be211847d2cddcad95f2d933a8db
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 06b9162029de3f5f3fede9583fa8a4a96fefb2f3
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716918"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780295"
 ---
 # <a name="active-image-module"></a>Aktiv bildmodul
 
@@ -58,11 +58,11 @@ Om du vill lägga till en aktiv bildmodul på en ny sida och ställa in erforder
 
 1. Gå till **Mallar** och öppna marknadsföringsmallen för webbplatsens startsida (eller skapa en ny marknadsföringsmall).
 1. I platsen **Huvud** i standardsida markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul** väljer du modulen **Aktiv bild** och sedan **OK**.
+1. I dialogrutan **Välj moduler**, välj modulen **Aktiv bild** och klicka sedan på **OK**.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Gå till **Sidor** och öppna webbplatsens startsida (eller skapa en ny startsida med hjälp av marknadsföringsmallen).
 1. I platsen för standardsidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul** väljer du modulen **Aktiv bild** och sedan **OK**.
+1. I dialogrutan **Välj moduler**, välj modulen **Aktiv bild** och klicka sedan på **OK**.
 1. Lägg till en bild i egenskapsfönstret för den aktiva bildmodulen och ställ in arbetsytans bredd till bildens storlek.
 1. Ställ in X- och Y-koordinaterna och lägg till lämpligt produkt-ID-nummer.
 1. Lägg till och konfigurera ytterligare aktiva bildmoduler efter behov.

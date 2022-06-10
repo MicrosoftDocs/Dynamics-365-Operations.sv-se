@@ -2,7 +2,7 @@
 title: Formeldesigner i elektronisk rapportering (ER)
 description: Det här avsnittet innehåller information om hur du använder formeldesignern i elektronisk rapportering (ER).
 author: NickSelin
-ms.date: 12/05/2019
+ms.date: 04/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eec63fb1782c5afed0320eb841b6bfc92af31a691731ef6bac5d00ed442c0dcd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 606532411aa8297654d8d20a9061472597e773da
+ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777414"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8782216"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -41,7 +41,8 @@ Du kan öppna sidan **Formula designer** när du utför någon av följande åtg
 - Binda datakällsartiklar till datamodellkomponenter.
 - Binda datakällsartiklar till formatkomponenter
 - Slutför underhåll av beräknade fält som är en del av datakällor.
-- Definiera synlighetvillkoren för användarnas indataparametrar.
+- Definiera synlighets- och redigerbarhetsvillkoren för användarnas indataparametrar.
+- Definiera standardvärden för användarnas indataparametrar.
 - Utforma transformeringar för ett format.
 - Definiera aktiveringsvillkoren för formatets komponenter.
 - Definiera filnamnen för formatets FIL-komponenter.

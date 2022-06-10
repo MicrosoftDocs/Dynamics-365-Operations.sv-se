@@ -2,7 +2,7 @@
 title: Mobil arbetsyta för leverantörssamarbete
 description: Det här avsnittet innehåller information om den mobila arbetsytan för leverantörssamarbete. Den här arbetsytan hjälper till att hålla dina leverantörer uppdaterade om de inköpsorder som har skickats till dem för godkännande. De kan också visa information om nya och uppdaterade inköpsorder och kontakter.
 author: GalynaFedorova
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,20 +14,21 @@ ms.search.region: global
 ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c1e8a6589b16c4a24b151980d01929ed154bbb7b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 97352ca89cef77b9320f17af5a1dbe6a00df2dd6
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670116"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811726"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobil arbetsyta för leverantörssamarbete
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 Det här avsnittet innehåller information om den mobila arbetsytan för **Leverantörssamarbete**. Den här arbetsytan hjälper till att hålla dina leverantörer uppdaterade om de inköpsorder som har skickats till dem för godkännande. De kan också visa information om nya och uppdaterade inköpsorder och kontakter.
 
-Denna mobila arbetsyta är avsedd att användas med mobilappen Ekonomi och drift.
+Denna mobila arbetsyta är avsedd att användas med mobilappen Ekonomi och drift (Dynamics 365).
 
 ## <a name="overview"></a>Översikt 
 Mobil arbetsyta för **leverantörssamarbete** sparar information om nya inköpsorder så att de kan visa inköpsorder och sedan svara på dem i webbklienten. 
@@ -109,7 +110,7 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 
-Hämta och installera mobilappen Ekonomi och drift:
+Ladda ner och installera Ekonomi och drift (Dynamics 365) mobilappen:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

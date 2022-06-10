@@ -3,7 +3,7 @@ title: Modul för butiksväljare
 description: Det här avsnittet handlar om modulen för butiksväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/04/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7276f25daada8286490ad7e1af2b350e4a2805bb
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 76682f26f62fe4686f5102e3099f038a50005f5e
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710790"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780674"
 ---
 # <a name="store-selector-module"></a>Modul för butiksväljare
 
@@ -135,26 +135,29 @@ För **upphämtning i butik**-läge kan modulen bara användas på PDP och kundv
 Om du vill konfigurera modulen för butiksväljaren att visa tillgängliga butiker för en sida för lagringsplatser, som i bilden som visas tidigare i det här avsnittet följer du stegen nedan.
 
 1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
-1. I dialogrutan **Ny mal** under **Mallnamn**, ange **Marknadsföringsmall** och välj sedan **OK**.
+1. I dialogrutan **Ny mall** under **Mallnamn**, ange **Marknadsföringsmall** och välj sedan **OK**.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
-1. I dialogrutan **Välj en mall** väljer du en **Marknadsföringsmall**. Under **sidnamn**, ange **Butiksplatser** och klicka sedan på **OK**.
+1. I dialogrutan **Skapa en ny sida** under **Sidnamn**, ange **Butiksplatser** och välj sedan **Nästa**.
+1. Under **Välj en mall**, välj mallen **Marknadsföringsmall** som du skapade och välj sedan **Nästa**.
+1. Under **Välj en layout** väljer du en sidlayout (till exempel **Flexibel layout**) och väljer sedan **Nästa**.
+1. Under **Granska och slutför**, granska sidkonfiguration. Om du behöver redigera sidinformationen väljer du **Bakåt**. Om sidinformationen är korrekt väljer du **Skapa sida**. 
 1. I platsen för nya sidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
+1. I dialogrutan **Välj moduler**, välj modulen **Behållare** och klicka sedan på **OK**.
 1. I facket **behållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul**, välj modulen **Behållare med 2 kolumner** och klicka sedan på **OK**.
+1. I dialogrutan **Välj moduler**, välj modulen **Behållare med 2 kolumner** och klicka sedan på **OK**.
 1. I modulens egenskapsfönster, ange värdet **Bredd** till **Fyll behållare**.
 1. Ställ in värdet för **X-Small visningsport kolumnkonfiguration** till **100%**.
 1. Ställ in värdet för **Small visningsport kolumnkonfiguration** till **100%**.
 1. Ställ in värdet för **Medium visningsport kolumnkonfiguration** till **33% 67%**.
 1. Ställ in värdet för **Large visningsport kolumnkonfiguration** till **33% 67%**.
 1. I facket **Behållare med 2 kolumner** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul** välj modulen **butiksväljare** och sedan **OK**.
+1. I dialogrutan **Välj till moduler** välj modulen **butiksväljare** och sedan **OK**.
 1. I modulens egenskapsfönster, ange värdet **Läge** till **Hitta butiker**.
 1. Ange värdet **sökradie** i mil.
 1. Ange andra egenskaper, t.ex. **Ange som prioriterad butik**, **Visa alla butiker** och **Aktivera automatiskt förslag** efter behov.
 1. I facket **Behållare med 2 kolumner** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul**, välj modulen **Karta** och klicka sedan på **OK**.
+1. I dialogrutan **Välj moduler**, välj modulen **Karta** och klicka sedan på **OK**.
 1. Ange eventuella ytterligare egenskaper efter behov i modulens egenskapsfönster.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
  

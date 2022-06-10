@@ -2,7 +2,7 @@
 title: Modul för mediegalleri
 description: Det här avsnittet handlar om modul för mediegalleri och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 08/02/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d05129145c5d6c3967b243cb0855a1c4fd3e84e
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733207"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780878"
 ---
 # <a name="media-gallery-module"></a>Modul för mediegalleri
 
@@ -78,18 +78,21 @@ När bildkällan hämtas från sidkontexten används produkt-ID:t från PDP för
 För att lägga till en modul för mediegalleri till en marknadsföringssida, följ dessa steg.
 
 1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
-1. I dialogrutan **Ny mal** under **Mallnamn**, ange **Marknadsföringsmall** och välj sedan **OK**.
+1. I dialogrutan **Ny mall** under **Mallnamn**, ange **Marknadsföringsmall** och välj sedan **OK**.
 1. I facket **brödtext** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul**, välj modulen **Standardsida** och klicka sedan på **OK**.
+1. I dialogrutan **Välj moduler**, välj modulen **Standardsida** och klicka sedan på **OK**.
 1. I platsen **Huvud** i standardsida markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
+1. I dialogrutan **Välj moduler**, välj modulen **Behållare** och klicka sedan på **OK**.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
-1. I dialogrutan **Välj en mall** väljer du en **Marknadsföringsmall**. Under **Sidnamn**, ange **Sidan mediegalleri** och klicka sedan på **OK**.
+1. I dialogrutan **Skapa en ny sida** under **Sidnamn**, ange **Sidan mediegalleri** och välj sedan **Nästa**.
+1. Under **Välj en mall**, välj mallen **Marknadsföringsmall** som du skapade och välj sedan **Nästa**.
+1. Under **Välj en layout** väljer du en sidlayout (till exempel **Flexibel layout**) och väljer sedan **Nästa**.
+1. Under **Granska och slutför**, granska sidkonfiguration. Om du behöver redigera sidinformationen väljer du **Bakåt**. Om sidinformationen är korrekt väljer du **Skapa sida**. 
 1. I platsen för nya sidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
+1. I dialogrutan **Välj moduler**, välj modulen **Behållare** och klicka sedan på **OK**.
 1. I facket **behållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul** välj modulen **Mediagalleriet** och sedan **OK**.
+1. I dialogrutan **Välj moduler** välj modulen **Mediagalleriet** och sedan **OK**.
 1. I egenskapsfönstret under **modulen mediegalleri**, välj **Produkt-ID**. I fältet **Produkt-ID** anger du ett produkt-ID.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan. Du bör kunna se bilderna för produkten i en gallerivy.
 1. Om du bara vill använda kuraterade bilder i fastighetsfönstret, under **Bidkälla**, välj **Produkt-ID**. Sedan under **Bilden**, välj **Lägg till en bild** så många gånger som krävs för att lägga till bilder från mediebiblioteket.

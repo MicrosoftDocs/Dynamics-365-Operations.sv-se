@@ -2,7 +2,7 @@
 title: Kundvagnsmodul
 description: Det här avsnittet handlar om vagnmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 12/15/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f2db61cf23c217365274297c6e9878a4eb5679f8d9502cb70484372ae43f6b18
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 962710f7b65c8d26b301b5034a89fc25476b6e0f
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716894"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780549"
 ---
 # <a name="cart-module"></a>Kundvagnsmodul
 
@@ -75,12 +75,12 @@ Vagnmodul för inköpsruta hämtar produktinformation med hjälp av API:er för 
 Om du vill lägga till en kundvagnsmodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
 1. Gå till **Fragment** och välj **ny** för att skapa ett nytt fragment.
-1. I dialogrutan **Nytt fragment**, välj modulen **Kundvagn**.
+1. I dialogrutan **Välj fragment**, välj modulen **Kundvagn**.
 1. Under **Fragmentets namn**, anger du ett namn på **kundvagnsfragmentet** och klickar sedan på **OK**.
 1. Markera platsen **kundvagn**.
 1. I pennfönstret till höger väljer du pennsymbolen, anger rubriktext i fältet och markerar sedan kryssmarkeringssymbolen.
 1. I facket **kundvagn** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul** välj modulen **butiksväljare** och sedan **OK**.
+1. I dialogrutan **Välj till moduler** välj modulen **butiksväljare** och sedan **OK**.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera den.
 1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
 1. I dialogrutan **Ny mall** under **Mallnamn** anger du ett namn för mallen.

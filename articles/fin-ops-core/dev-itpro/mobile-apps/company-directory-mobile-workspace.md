@@ -2,7 +2,7 @@
 title: Mobila arbetsytan för företagskatalog
 description: Det här avsnittet innehåller information om mobila arbetsytan för företagskatalog som låter användarna visa och kontakta andra medarbetare i din organisation.
 author: jcart1106
-ms.date: 09/17/2019
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,16 +12,17 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2152d89e7d60a74e8d7561ea888e60cff42dd1ffd0ec697fac371aad9b85383c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b754e46f194f60cc70d02367d4cca2a382821191
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720658"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811551"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobila arbetsytan för företagskatalog
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 Det här avsnittet innehåller information om den mobila arbetsytan för **företagskatalog**. Den här arbetsytan låter användare visa och kontakta andra medarbetare i din organisation.
 
@@ -54,7 +55,7 @@ Följande förutsättningar måste vara uppfyllda innan du kan använda den här
 </ul>
 </td>
 <td>Systemadministratör</td>
-<td>Om du inte &#39;redan har en Finance and Operations-app i din organisation, se <a href="../deployment/deploy-demo-environment.md">Distribuera en demomiljö</a>. Om du inte redan använder Personal i din organisation kan systemadministratören komma åt en utvärderingsversion från <a href="https://dynamics.microsoft.com/human-resources/overview/">webbsidan Personal</a>.
+<td>Om du inte redan använder Finance and Operations-appen i din organisation, se <a href="../deployment/deploy-demo-environment.md"> Distribuera en demomiljö</a>. Om du inte redan använder Personal i din organisation kan systemadministratören komma åt en utvärderingsversion från <a href="https://dynamics.microsoft.com/human-resources/overview/">webbsidan Personal</a>.
 </td>
 </tr>
 <tr class="even">
@@ -66,7 +67,7 @@ Följande förutsättningar måste vara uppfyllda innan du kan använda den här
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
-Hämta och installera mobilappen Finance and Operations.
+Hämta och installera mobilappen Ekonomi och drift:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

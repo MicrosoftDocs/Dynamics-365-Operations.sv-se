@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a905d752af2cf8397acb4927aa99edb4c23bfa6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 766ee49c17749841d8acac6637a0262e87e52e92
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688132"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809625"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Vanliga frågor om Dynamics 365 Human Resources infrastrukturkoppling
 
@@ -131,6 +131,9 @@ Det beror på integreringsslutpunkten. För mer information om integreringstekni
 Om Dynamics 365 Human Resources-miljöer som kommer att förenas i miljön på den nya infrastrukturen är anslutna till samma Dataverse-miljö, kommer de två apparna att fortsätta att vara anslutna till samma Dataverse-miljö efter migreringen. Ingen migrering krävs för Dataverse-tillägg.
 
 Om Dynamics 365 Human Resources-miljöer är för närvarande anslutna till separata Ekonomi och Drift-miljöer måste de två Dataverse-miljöerna kombineras så att de är anslutna till en enda Dataverse-miljö på den nya infrastrukturen. För denna Dataverse migrering kan Dataverse tabellerna som är standard för personallösningar kan vara anslutna synkroniseras med den nya Dataverse-miljön. Alla tillägg i Dataverse-miljön migreras emellertid inte automatiskt, utan måste omdistribueras i den nya miljön. Vi rekommenderar att du använder hanterade lösningar för hantering av Dataverse-tillägg. Mer information finns i [Introduktion till lösningar](/powerapps/developer/data-platform/introduction-solutions).
+
+### <a name="we-have-utilized-the-custom-field-functionality-within-dynamics-365-human-resources-will-those-custom-fields-migrate-automatically"></a>Vi har använt den anpassade fältfunktionen inom Dynamics 365 Human Resources kommer dessa anpassade fält att migrera automatiskt?
+Ja, de anpassade fälten som har lagts till migrerar till den nya infrastrukturen.
 
 ### <a name="we-have-configured-microsoft-power-automate-flows-andor-microsoft-power-apps-to-work-with-dynamics-365-human-resources-will-these-microsoft-power-platform-components-be-migrated-and-work-automatically-after-the-infrastructure-change-is-completed"></a>Vi har konfigurerat Microsoft Power Automate flöden och/eller Microsoft Power Apps att arbeta Dynamics 365 Human Resources. Kommer dessa Microsoft Power Platform-komponenter att migreras och arbeta automatiskt när infrastrukturändringen är klar?
 

@@ -1,8 +1,8 @@
 ---
-title: Signera MPOS med ett certifikat för kodsignering
+title: Signera filen MPOS .appx med ett certifikat för kodsignering
 description: I det här avsnittet beskrivs hur du signerar MPOS med ett kodsigneringscertifikat.
 author: mugunthanm
-ms.date: 05/11/2022
+ms.date: 05/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
@@ -10,16 +10,17 @@ ms.custom: 28021
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
-ms.openlocfilehash: e45961cf1ddb385d914b700d03bc95d07de47b68
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 38c094de6f94381a809fdb68d2e76d410e406934
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741553"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811095"
 ---
-# <a name="sign-mpos-appx-with-a-code-signing-certificate"></a>Signera MPOS appx med ett certifikat för kodsignering
+# <a name="sign-the-mpos-appx-file-with-a-code-signing-certificate"></a>Signera filen MPOS .appx med ett certifikat för kodsignering
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Om du vill installera Modern POS (MPOS) måste du signera MPOS-programmet med ett kodsigneringscertifikat från en betrodd leverantör och installera samma certifikat på alla maskiner där MPOS installeras under den betrodda rotmappen för den aktuella användaren.
 
@@ -42,7 +43,7 @@ Att använda uppgiften Säker fil är det rekommenderade tillvägagångssättet 
 ![MPOS-appsigneringsflöde.](media/POSSigningFlow.png)
 
 > [!NOTE]
-> För närvarande stöder OOB-paketeringen bara signeringen av appx-filen. De olika självbetjäningsinstallationsprogrammen som MPOIS, RSSU och HWS signeras inte av den här processen. Du måste signera det manuellt med hjälp av SignTool eller andra signeringsverktyg. Certifikatet som används för att signera appx-filen måste installeras i maskinen där Modern POS är installerat.
+> För närvarande stöder OOB-paketeringen bara signeringen av .appx-filen. De olika självbetjäningsinstallationsprogrammen som MPOIS, RSSU och HWS signeras inte av den här processen. Du måste signera det manuellt med hjälp av SignTool eller andra signeringsverktyg. Certifikatet som används för att signera .appx-filen måste installeras i maskinen där Modern POS är installerat.
 
 ## <a name="steps-to-configure-the-certificate-for-signing-in-azure-pipelines"></a>Steg för att konfigurera certifikatet för signering i Azure Pipelines
 
@@ -51,21 +52,22 @@ Att använda uppgiften Säker fil är det rekommenderade tillvägagångssättet 
 Ladda ned [uppgiften DownloadFile](/visualstudio/msbuild/downloadfile-task) och lägg till den som ett första steg i byggprocessen. Fördelen med att använda uppgiften Säker fil är att filen är krypterad och placeras på disken under bygget oavsett om bygg-pipelinen lyckas, misslyckas eller avbryts. Filen tas bort från nedladdningsplatsen när byggprocessen är klar.
 
 1. Ladda ned och lägg till uppgiften Säker fil som ett första steg i Azure-bygg-pipelinen. Du kan ladda ned uppgiften Säker fil från [DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile).
-2. Ladda upp certifikatet till uppgiften Säker fil och ställ in referensnamnet under Utdatavariabler, enligt bilden nedan.
+1. Ladda upp certifikatet till uppgiften Säker fil och ställ in referensnamnet under Utdatavariabler, enligt bilden nedan.
     > [!div class="mx-imgBorder"]
     > ![Uppgiften Säker fil.](media/SecureFile.png)
-3. Skapa en ny variabel i Azure Pipelines genom att välja **Ny variabel** på fliken **Variabler**.
-4. Ange ett namn på variabeln i värdefältet, t.ex. **MySigningCert**.
-5. Spara variabeln.
-6. Öppna filen **Customization.settings** från **RetailSDK\\BuildTools** och uppdatera **ModernPOSPackageCertificateKeyFile** med variabelnamnet som skapades i pipelinen (steg 3). Exempel:
+1. Skapa en ny variabel i Azure Pipelines genom att välja **Ny variabel** på fliken **Variabler**.
+1. Ange ett namn på variabeln i värdefältet, t.ex. **MySigningCert**.
+1. Spara variabeln.
+1. Öppna filen **Customization.settings** från **RetailSDK\\BuildTools** och uppdatera **ModernPOSPackageCertificateKeyFile** med variabelnamnet som skapades i pipelinen (steg 3). Exempel:
 
     ```Xml
     <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(MySigningCert)</ModernPOSPackageCertificateKeyFile>
     ```
     Det här steget är obligatoriskt om certifikatet inte är lösenordsskyddat. Om certifikatet är lösenordsskyddat fortsätter du med följande steg.
- 
-7. Lägg till en ny variabel med säker test på fliken **Variabler** i pipelinen. Ange namnet som **MySigningCert.secret** och ställ in värdet på lösenordet för certifikatet. Välj låsikonen för att säkra variabeln.
-8. Lägg till uppgiften **Powershell-skript** i pipelinen (efter Ladda ned Säker fil och före Bygg-steget). Ange **Visning**-namn och ange Typ som **Infogat**. Kopiera och klistra in följande i skriptavsnittet.
+    
+1. Om du vill tidsstämpla MPOS-filen .appx när du signerar det med ett certifikat öppnar du filen **Retail SDK\\Build tool\\Customization.settings** och uppdatera variabeln **ModernPOSPackageCertificateTimestamp** med tidstämpelprovidern (till exempel `http://timestamp.digicert.com`).
+1. Lägg till en ny variabel med säker test på fliken **Variabler** i pipelinen. Ange namnet som **MySigningCert.secret** och ställ in värdet på lösenordet för certifikatet. Välj låsikonen för att säkra variabeln.
+1. Lägg till uppgiften **Powershell-skript** i pipelinen (efter Ladda ned Säker fil och före Bygg-steget). Ange **Visning**-namn och ange Typ som **Infogat**. Kopiera och klistra in följande i skriptavsnittet.
 
     ```powershell
     Write-Host "Start adding the PFX file to the certificate store."
@@ -74,7 +76,7 @@ Ladda ned [uppgiften DownloadFile](/visualstudio/msbuild/downloadfile-task) och 
     Import-PfxCertificate -FilePath $pfxpath -CertStoreLocation Cert:\CurrentUser\My -Password $secureString
     ```
 
-9. Öppna filen **Customization.settings** från **RetailSDK\\BuildTools** och uppdatera **ModernPOSPackageCertificateThumbprint** med certifikatets tumavtrycksvärde.
+1. Öppna filen **Customization.settings** från **RetailSDK\\BuildTools** och uppdatera **ModernPOSPackageCertificateThumbprint** med certifikatets tumavtrycksvärde.
 
     ```Xml
        <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
@@ -82,7 +84,6 @@ Ladda ned [uppgiften DownloadFile](/visualstudio/msbuild/downloadfile-task) och 
  
 Information om hur du hämtar tumavtrycket för ett certifikat finns i [Hämta ett certifikats tumavtryck](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint). 
 
- 
 ## <a name="download-or-generate-a-certificate-to-sign-the-mpos-app-manually-using-msbuild-in-sdk"></a>Ladda ned eller generera ett certifikat för att signera MPOS-appen manuellt med msbuild i SDK
 
 Om ett nedladdat eller genererat certifikat används för att signera MPOS-appen uppdaterar du noden **ModernPOSPackageCertificateKeyFile** i filen **BuildTools\\Customization.settings** så att den pekar på pfx-filplatsen (**$(SdkReferencesPath)\\appxsignkey.pfx**). Exempel:

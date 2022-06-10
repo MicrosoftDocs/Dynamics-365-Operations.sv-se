@@ -2,7 +2,7 @@
 title: Mobil arbetsyta för kostnadskontroll
 description: Det här avsnittet innehåller information om Mobil arbetsyta för kostnadskontroll. Den här arbetsytan låter chefer för kostnadsställen visa information om kostnadsställets effektivitet när som helst och var som helst.
 author: AndersGirke
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,21 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 1f5e0314678758849a787e6b3f7a67391c701046
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 75d8abaeec85b46f0fd0e430040bc7e3a8fd3042
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734085"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811336"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Mobil arbetsyta för kostnadskontroll
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 Det här avsnittet innehåller information om den mobila arbetsytan **kostnadskontroll**. Den här arbetsytan låter chefer för kostnadsställen visa information om kostnadsställets effektivitet när som helst och var som helst.
 
-Denna mobila arbetsyta är avsedd att användas med mobilappen Ekonomi och drift.
+Denna mobila arbetsyta är avsedd att användas med mobilappen Ekonomi och drift (Dynamics 365).
 
 ## <a name="overview"></a>Översikt
 Mobil arbetsyta för **Kostnadskontroll** ger en omedelbar översikt över aktuell prestanda för kostnadsställen genom att jämföra faktiska kostnader mot budgeterade kostnader. Du kan gå ända ner till statusen för enskilda kostnadselement.
@@ -113,7 +114,7 @@ Om version 1611 med plattformsuppdatering 3 eller senare har använts i organisa
 
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
-Hämta och installera mobilappen Ekonomi och drift:
+Ladda ner och installera Ekonomi och drift (Dynamics 365) mobilappen:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

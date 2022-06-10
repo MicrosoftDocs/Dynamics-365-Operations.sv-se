@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 20e48fee237615c7b1acdb564e5e524d393f8eba
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 598e29ead50e1ecb249a7338c7f0952a912b4f69
+ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469909"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809107"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migrering till planeringsoptimering för huvudplanering
 
@@ -63,7 +63,7 @@ För närvarande är undantag för migrering av planeringsoptimering endast rele
 
 När de nödvändiga funktionerna blir tillgängliga kommer Microsoft att tillhandahålla en respitperiod tills undantaget upphör att gälla. Miljöadministratören kommer att informeras när de nödvändiga funktionerna har blivit tillgängliga och respitperiod har inletts.
 
-Flödesschemat nedan sammanfattar informationen i detta avsnitt så att du snabbt kan ta reda på om du bör begära ett undantag. Om du behöver begära ett undantag kan du fylla i och skicka in enkäten [Planera optimeringsmigrering och undantag](https://go.microsoft.com/fwlink/?linkid=2144962).
+Flödesschemat nedan sammanfattar informationen i detta avsnitt så att du snabbt kan ta reda på om du bör begära ett undantag. Om du behöver begära ett undantag kan du fylla i och skicka in enkäten [Planera optimeringsmigrering och undantag](https://go.microsoft.com/fwlink/?linkid=2144962). Produktgruppen ansvarar för att utvärdera och godkänna varje undantagsbegäran, så skicka din begäran direkt till produktgruppen med länken och skapa ingen supportbegäran för den. Om din begäran avvisas ska du inte skapa en supportbegäran eftersom Microsoft Support inte kan utvärdera eller bevilja undantag på nytt.
 
 ![Flödesschema för undantag.](media/exception-diagram.png "Flödesschema för undantag")
 

@@ -2,7 +2,7 @@
 title: Sökresultatmodul
 description: Detta ämne handlar om moduler för sökresultat och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/21/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 15b3bb50eb0b75fa19ac8e136da83cb362b4cec6
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: dcf3dedbb7c499135bbae45b917153854ecd4a28
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644936"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780928"
 ---
 # <a name="search-results-module"></a>Sökresultatmodul
 
@@ -65,23 +65,26 @@ Modulen för sökresultat stöder [snabbvisningsmodulen](quick-view-module.md), 
 
 ## <a name="add-a-search-results-module-to-a-category-page"></a>Lägg till en sökresultatmodul på en kategorisida
 
-För att lägga till en sökresultatmodul på en kategorisida, följ dessa steg.
+Följ dessa steg för att lägga till en sökresultatmodul på en kategorisida i webbplatsbyggaren.
 
 1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
 1. I dialogrutan **Ny mall** anger du namnet **Sökresultat** och väljer sedan **OK**.
 1. I fältet **Brödtext** väljer du ellipsen (...) och sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul**, välj modulen **Standardsida** och klicka sedan på **OK**.
+1. I dialogrutan **Välj moduler**, välj modulen **Standardsida** och klicka sedan på **OK**.
 1. I fältet **Huvud** i modulen **Standardsida** väljer du ellipsen (...) och sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
+1. I dialogrutan **Välj moduler**, välj modulen **Behållare** och klicka sedan på **OK**.
 1. I fältet **Behållare** väljer du ellipsen (...) och sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul**, välj modulen **navigeringssökväg** och klicka sedan på **OK**.
+1. I dialogrutan **Välj moduler**, välj modulen **Synlig sökväg** och klicka sedan på **OK**.
 1. I egenskapsfönstret för **Navigering** anger du värdet **1** för **Min. träffar**.
 1. I fältet **Behållare** väljer du ellipsen (...) och sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul** väljer du modulen **Sökresultat** och sedan **OK**.
+1. I dialogrutan **Välj moduler** väljer du modulen **Sökresultat** och sedan **OK**.
 1. I egenskapsfönstret **Sökresultat** anger du värdet **1** för **Min. träffar** och anger sedan övriga erforderliga egenskaper för sökresultatmodulen. Genom att ange dessa egenskaper i mallen säkerställer du att alla anpassningar till en viss kategorisida automatiskt inkluderar dessa inställningar.
 1. Välj **Slutför redigering** och välj sedan **Publicera** för att publicera mallen.
 1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
-1. I dialogrutan **Välj en mall** väljer du den **Sökresultat**-mall som du skapade, anger sedan **Kategorisida** för **Sidnamn** och väljer sedan **OK**. Eftersom alla värden har angetts i mallen är sidan klar att publiceras.
+1. I dialogrutan **Skapa en ny sida** under **Sidnamn**, ange **Kategorisida** och välj sedan **Nästa**.
+1. Under **Välj en mall**, välj mallen **Sökresultat** som du skapade och välj sedan **Nästa**.
+1. Under **Välj en layout** väljer du en sidlayout (till exempel **Flexibel layout**) och väljer sedan **Nästa**.
+1. Under **Granska och slutför**, granska sidkonfiguration. Om du behöver redigera sidinformationen väljer du **Bakåt**. Om sidinformationen är korrekt väljer du **Skapa sida**.
 1. Välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 
 ## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Aktivera kunskap om lager för modulen sökresultat
@@ -102,7 +105,7 @@ Lagermedveten produktsökning använder produktattribut för att få information
 
 Följ dessa steg för att skapa dedikerade produktattribut för att stödja den lagermedvetna sökresultatmodulen.
 
-1. Gå till **Retail och Commerce \> Retail och Commerce IT \> Produkter och lager**.
+1. I administration, gå till **Butik och handel \> Butik och handel IT \> Produkter och lager**.
 1. Välj och öppna **Fyll i produktattribut med lagernivå**.
 1. Ange följande information i dialogrutan:
 
@@ -116,11 +119,11 @@ Följ dessa steg för att skapa dedikerade produktattribut för att stödja den 
 
 Konfigurera produktattributen för en onlinekanal genom att följa dessa steg. 
 
-1. Gå till **Butik och handel \> Kanalinställningar \> Kanalkategorier och produktattribut**.
-2. Välj en onlinekanal för att aktivera den lagermedvetna sökresultatmodulen för.
-3. Markera och öppna en associerad attributgrupp, lägg till det nya produktattributet.
-4. För Commerce versioner före 10.0.27, välj **Ange attributmetadata**, välj det nya produktattributet och aktivera sedan alternativet **Visa attribut på kanal**, **Hämtningsbar**, **Kan förfinas** och K **an frågas**.
-5. Gå till **Butik och handel \> Butik och handel IT \> Distributionsschema** och kör jobbet **1150 (katalog)**. Om du schemalägger jobbet **Fyll i produktattribut med lagernivå** är en batchprocess rekommenderar vi att du också schemalägger 1150-jobbet som en batchprocess som körs med samma frekvens.
+1. I headquarters, gå till **Butik och handel \> Kanalinställningar \> Kanalkategorier och produktattribut**.
+1. Välj en onlinekanal för att aktivera den lagermedvetna sökresultatmodulen för.
+1. Markera och öppna en associerad attributgrupp, lägg till det nya produktattributet.
+1. För Commerce versioner före 10.0.27, välj **Ange attributmetadata**, välj det nya produktattributet och aktivera sedan alternativet **Visa attribut på kanal**, **Hämtningsbar**, **Kan förfinas** och K **an frågas**.
+1. Gå till **Butik och handel \> Butik och handel IT \> Distributionsschema** och kör jobbet **1150 (katalog)**. Om du schemalägger jobbet **Fyll i produktattribut med lagernivå** är en batchprocess rekommenderar vi att du också schemalägger 1150-jobbet som en batchprocess som körs med samma frekvens.
 
 > [!NOTE]
 > För produkter som visas i sökresultatmodulen visas lagernivån på huvudproduktnivå i stället för den enskilda variantnivån. Det har bara två möjliga värden: "tillgänglig" och "lagerförd". Den faktiska etiketten för värdet hämtas från definitionen [lagernivåprofil](inventory-buffers-levels.md). En huvudprodukt anses endast vara i lager när alla varianter av den inte finns i lager.

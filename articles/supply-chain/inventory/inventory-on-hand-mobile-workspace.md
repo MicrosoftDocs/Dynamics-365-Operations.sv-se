@@ -2,7 +2,7 @@
 title: Mobil arbetsyta för inventering av lagerbehållning
 description: Det här avsnittet innehåller information om den mobila arbetsytan för lagerbehållning. Denna arbetsyta ger dig mobil insyn i reserverat och tillgängligt lager, när som helst och var som helst.
 author: yufeihuang
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,21 @@ ms.search.industry: Manufacturing
 ms.author: yufeihuang
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 9e67e16acc8ed72d571e9010131723038c8586a9
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b380da99b02fe9b7cd834eabac3498ee3b8e54a4
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573907"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811478"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobil arbetsyta för inventering av lagerbehållning
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 Det här avsnittet innehåller information om den mobila arbetsytan för **Lagerbehållning**. Denna arbetsyta ger dig insyn i reserverat och lagerbehållning, när som helst och var som helst.
 
-Denna mobila arbetsyta är avsedd att användas med mobilappen Finance and Operations.
+Denna mobila arbetsyta är avsedd att användas med mobilappen Ekonomi och drift (Dynamics 365).
 
 ## <a name="overview"></a>Översikt
 Normalt har företag flera in- och flera utleveranser av lager varje dag. Dessa transporter ändrar konstant tillgänglig lagerstatus. Den mobila arbetsytan för **Lagerbehållning** låter dig se tillgänglig lagerstatus för hela företaget, vilket ger dig den senaste informationen om lagerdata på valfri mobil enhet. Oavsett om du arbetar i på lagerstället, inom inköp, försäljning, tillverkning, administration eller har andra roller, kan du använda datan för tillgängligt lager när som helst och var som helst. 
@@ -93,7 +94,7 @@ Om plattformsuppdatering 3 eller senare har använts i organisationen måste sys
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 
-Hämta och installera mobilappen Finance and Operations.
+Ladda ner och installera Ekonomi och drift (Dynamics 365) mobilappen:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

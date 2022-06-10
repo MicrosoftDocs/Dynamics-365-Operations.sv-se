@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 13768988fcb2b1485753b29b3562c20ee6ba35c7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1c6d0952b98334dc0c0a2e780a7c6f54a7811185
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687769"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811754"
 ---
 # <a name="tax-calculation-overview"></a>Översikt över momsberäkning
 
@@ -142,6 +142,11 @@ Följande transaktioner stöds i version 10.0.26:
 
 - Allmänna journaler
 - Leverantörsfakturajournal
+
+Följande transaktioner stöds i version 10.0.28: 
+
+- Leverantörsbetalningsjournal
+- Kundbetalningsjournal
 
 ## <a name="supported-countriesregions"></a>Länder/regioner som stöds
 

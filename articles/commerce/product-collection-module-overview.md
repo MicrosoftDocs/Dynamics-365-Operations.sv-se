@@ -2,7 +2,7 @@
 title: Produktsamlingsmoduler
 description: Det här ämnet innehåller en översikt över produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
-ms.date: 01/28/2021
+ms.date: 05/18/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7bc76aa8d5728005711ee8f9758532a989e3568c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4ff891eef79835fb4a65535ce8152e5b17023b9c
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984554"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780419"
 ---
 # <a name="product-collection-modules"></a>Produktsamlingsmoduler
 
@@ -70,11 +70,14 @@ Modulen för produktsamling stöder [snabbvisningsmodulen](quick-view-module.md)
 För att lägga till en modul för produktsamling på en kategorisida, följ dessa steg.
 
 1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
-1. I dialogrutan **Välj en mall** väljer du samma mall som den som används på din standardkategorisida. Under **sidnamn**, ange ett lämpligt namn och klicka sedan på **OK**.
+1. I dialogrutan **Skapa en ny sida** under **Sidnamn**, ange ett lämpligt sidnamn och välj sedan **Nästa**.
+1. Under **Välj en mall**, välj samma mall som den som används av din standardkategorisida och välj sedan **Nästa**.
+1. Under **Välj en layout** väljer du en sidlayout (till exempel **Flexibel layout**) och väljer sedan **Nästa**.
+1. Under **Granska och slutför**, granska sidkonfiguration. Om du behöver redigera sidinformationen väljer du **Bakåt**. Om sidinformationen är korrekt väljer du **Skapa sida**. 
 1. I facket **Undersidfot** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
+1. I dialogrutan **Välj moduler**, välj modulen **Behållare** och klicka sedan på **OK**.
 1. I facket **behållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul**, välj modulen **produktsamling** och sedan **OK**.  
+1. I dialogrutan **Välj moduler**, välj modulen **produktsamling** och sedan **OK**.  
 1. Välj **Lägg till en produktlista** i egenskapsrutan för modulen produktsamling.
 1. I dialogrutan **Välj konfiguration av produktlista** väljer du typ av lista, listkälla och anger antalet artiklar. Konfigurera andra tillgängliga alternativ för listtypen. Mer information om dessa listtyper finns i följande tabell. 
 1. Välj **OK**.

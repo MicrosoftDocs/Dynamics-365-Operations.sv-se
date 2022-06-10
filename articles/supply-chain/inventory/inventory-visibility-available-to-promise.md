@@ -2,7 +2,7 @@
 title: Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova
 description: Det här ämnet beskriver hur du schemalägger framtida beredskapsändringar och beräknar kvantiteter disponibelt att lova (ATP).
 author: yufeihuang
-ms.date: 03/04/2022
+ms.date: 05/11/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 7ce868871f093fd734a466bb8a06c5782bf83302
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: 7456f87bede7bd0073223fa4762f96f919799e06
+ms.sourcegitcommit: 38d97efafb66de298c3f504b83a5c9b822f5a62a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8525892"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "8763265"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova
 
@@ -24,7 +24,7 @@ ms.locfileid: "8525892"
 
 I det här avsnittet beskrivs hur du ställer in funktionen *schema för ändringsplan* för att kunna tidsplanera framtida ändringar av lagerbehållningen och beräkna kvantiteter som är tillgängliga att lova. ATP är den kvantitet av en artikel som finns tillgänglig och därför kan utlovas en kund i nästa period. Om du använder den här beräkningen kan du öka möjligheten att uppfylla ordern mycket.
 
-För många tillverknings-, butiks- och säljare räcker det inte att veta vad som finns i nuläget. De måste ha fullständig insyn i framtida tillgänglighet. Framtida tillgänglighet ska ta hänsyn till framtida leverans, framtida efterfrågan och tillgängligt att leverera tillgängligt att leverera.
+För många tillverkare, återförsäljare och säljare räcker det inte att veta vad som finns i nuläget. De måste ha fullständig insyn i framtida tillgänglighet. Framtida tillgänglighet ska ta hänsyn till framtida leverans, framtida efterfrågan och tillgängligt att leverera tillgängligt att leverera.
 
 ## <a name="enable-and-set-up-the-features"></a><a name="setup"></a>Aktivera och ställa in funktionerna
 
@@ -32,9 +32,12 @@ Innan du kan använda slutet på ett leverantörsantal måste du ställa in en e
 
 ### <a name="set-up-calculated-measures-for-atp-quantities"></a>Ställ in beräknade mått för ATP-kvantiteter
 
-*Mått för ATP-kvantiteter* är ett fördefinierat beräknat mått som vanligtvis används för att hitta den tillgängliga kvantiteten som för närvarande är tillgänglig. Summan av dess additionsmodifierande kvantiteter är utbudskvantiteten, och summan av dess subtraktionsmodifierande kvantiteter är efterfrågekvantiteten.
+*Mått för ATP-kvantiteter* är ett fördefinierat beräknat mått som vanligtvis används för att hitta den tillgängliga kvantiteten som för närvarande är tillgänglig. *Leveranskvantiteten* är summan av kvantiteter för de fysiska mått som har en modifieringstyp av *tillägg* och *efterfrågekvantitet* är summan av kvantiteter för de fysiska mått som har en modifieringstyp av *subtraktion*.
 
-Du kan lägga till flera beräknade mått för att beräkna ATP-kvantiteter. Det totala antalet modifierare för alla beräknade ATP-mått bör dock vara mindre än nio.
+Du kan lägga till flera beräknade mått för att beräkna flera ATP-kvantiteter. Det totala antalet distinkta fysiska mått över alla ATP-beräknade mått bör dock vara mindre än nio.
+
+> [!IMPORTANT]
+> Ett beräknat mått är en sammansättningen av fysiska mått. Formeln kan endast innehålla fysiska mått utan dubbletter, inte beräknade mått.
 
 Till exempel ställer du in följande beräknade mått:
 
@@ -43,6 +46,12 @@ Till exempel ställer du in följande beräknade mått:
 Summan (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *Inbound*) representerar leverans och summan (*ReservPhysical* + *SoftReservePhysical* + *Outbound*) representerar efterfrågan. Därför kan det beräknade måttet förstå på följande sätt:
 
 **Disponibel lagerbehållning** = *Leverans* – *Efterfrågan*
+
+Du kan lägga till ytterligare ett beräknat mått för att beräkna **Fysisk behållning** ATP kvantiteten.
+
+**Fysisk behållning** = (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *Inbound*) – (*Outbound*)
+
+Det finns åtta distinkta fysiska mått över dessa två ATP-beräknade mått: *PhysicalInvent*, *OnHand*, *Unrestricted*, *QualityInspection*, *Inbound*, *ReservPhysical*, *SoftReservePhysical* och *Outbound*.
 
 För mer information om beräknade mått, se [Beräknat mått](inventory-visibility-configuration.md#calculated-measures).
 
@@ -80,7 +89,7 @@ Du kan till exempel göra en order på tio cyklar, och förvänta dig att den in
 
 När du fråga efter lagersynlighet för lagerbehållnings- och lagerbehållningskvantiteter returnerar det följande information för varje dag under planeringsperioden:
 
-- **Datum** – Datumet som resultatet gäller.
+- **Datum** – Datumet som resultatet gäller. Tidszonen är Coordinated Universal Time (UTC).
 - **Lagerhållningskvantitet** – Den faktiska lagerhållningskvantiteten för det angivna datumet. Beräkningen görs i enlighet med det beräknade måttet för maximalt lager som har konfigurerats för Lagerfinlighet.
 - **Tidsplanerad leverans** – Summan av alla planerade inkommande kvantiteter som inte har blivit fysiskt tillgängliga för omedelbar förbrukning eller leverans på angivet datum.
 - **Planerad efterfrågan** – Summan av alla planerade utgående kvantiteter som inte har förbrukats eller levererats på det angivna datumet.
@@ -108,79 +117,79 @@ Resultaten i det här exemplet visar ett värde för *projekterade behållning*.
 
     | Datum | Behållning | Schemalagd leverans | Schemalagd efterfrågan | Projekterad behållning | ATP |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 20 | | 3 | 17 | 17 |
-    | 2022/02/02 | 20 | | | 17 | 17 |
-    | 2022/02/03 | 20 | | | 17 | 17 |
-    | 2022/02/04 | 20 | | | 17 | 17 |
-    | 2022/02/05 | 20 | | | 17 | 17 |
-    | 2022/02/06 | 20 | | | 17 | 17 |
-    | 2022/02/07 | 20 | | | 17 | 17 |
+    | 2022-02-01 | 20 | | 3 | 17 | 17 |
+    | 2022-02-02 | 20 | | | 17 | 17 |
+    | 2022-02-03 | 20 | | | 17 | 17 |
+    | 2022-02-04 | 20 | | | 17 | 17 |
+    | 2022-02-05 | 20 | | | 17 | 17 |
+    | 2022-02-06 | 20 | | | 17 | 17 |
+    | 2022-02-07 | 20 | | | 17 | 17 |
 
 1. På det aktuella datumet (1 februari 2022) skickar du en tidsplanerad leveranskvantitet på 10 februari 3 februari 2022. Tabellen nedan visar resultatet.
 
     | Datum | Behållning | Schemalagd leverans | Schemalagd efterfrågan | Projekterad behållning | ATP |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 20 | | 3 | 17 | 17 |
-    | 2022/02/02 | 20 | | | 17 | 17 |
-    | 2022/02/03 | 20 | 10 | | 27 | 27 |
-    | 2022/02/04 | 20 | | | 27 | 27 |
-    | 2022/02/05 | 20 | | | 27 | 27 |
-    | 2022/02/06 | 20 | | | 27 | 27 |
-    | 2022/02/07 | 20 | | | 27 | 27 |
+    | 2022-02-01 | 20 | | 3 | 17 | 17 |
+    | 2022-02-02 | 20 | | | 17 | 17 |
+    | 2022-02-03 | 20 | 10 | | 27 | 27 |
+    | 2022-02-04 | 20 | | | 27 | 27 |
+    | 2022-02-05 | 20 | | | 27 | 27 |
+    | 2022-02-06 | 20 | | | 27 | 27 |
+    | 2022-02-07 | 20 | | | 27 | 27 |
 
 1. På aktuellt datum (1 februari 2022) skickar du följande planerade kvantitetsändringar:
 
     - Efterfrågekvantitet på 15 februari 4 februari 2022
     - Leveranskvantitet på 1 februari 5 februari 2022
-    - Efterfrågekvantitet på 3 februari 6 februari 2022
+    - Leveranskvantitet på 3 februari 6 februari 2022
 
     Tabellen nedan visar resultatet.
 
     | Datum | Behållning | Schemalagd leverans | Schemalagd efterfrågan | Projekterad behållning | ATP |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 20 | | 3 | 17 | 12 |
-    | 2022/02/02 | 20 | | | 17 | 12 |
-    | 2022/02/03 | 20 | 10 | | 27 | 12 |
-    | 2022/02/04 | 20 | | 15 | 12 | 12 |
-    | 2022/02/05 | 20 | 1 | | 13 | 13 |
-    | 2022/02/06 | 20 | 3 | | 16 | 16 |
-    | 2022/02/07 | 20 | | | 16 | 16 |
+    | 2022-02-01 | 20 | | 3 | 17 | 12 |
+    | 2022-02-02 | 20 | | | 17 | 12 |
+    | 2022-02-03 | 20 | 10 | | 27 | 12 |
+    | 2022-02-04 | 20 | | 15 | 12 | 12 |
+    | 2022-02-05 | 20 | 1 | | 13 | 13 |
+    | 2022-02-06 | 20 | 3 | | 16 | 16 |
+    | 2022-02-07 | 20 | | | 16 | 16 |
 
 1. På aktuellt datum (1 februari 2022) du skickar den planerade efterfrågan på 3. Därför måste du bekräfta ändringen så att den återspeglas i din faktiska lagerhållningskvantitet. Om du vill bekräfta ändringen skickar du en händelse för behållningsändring som har en utgående kvantitet på 3. Du måste sedan återställa den tidsplanerade ändringen genom att skicka en tidsplan för som har en utgående kvantitet på -3. Tabellen nedan visar resultatet.
 
     | Datum | Behållning | Schemalagd leverans | Schemalagd efterfrågan | Projekterad behållning | ATP |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 17 | | 0 | 17 | 12 |
-    | 2022/02/02 | 17 | | | 17 | 12 |
-    | 2022/02/03 | 17 | 10 | | 27 | 12 |
-    | 2022/02/04 | 17 | | 15 | 12 | 12 |
-    | 2022/02/05 | 17 | 1 | | 13 | 13 |
-    | 2022/02/06 | 17 | 3 | | 16 | 16 |
-    | 2022/02/07 | 17 | | | 16 | 16 |
+    | 2022-02-01 | 17 | | 0 | 17 | 12 |
+    | 2022-02-02 | 17 | | | 17 | 12 |
+    | 2022-02-03 | 17 | 10 | | 27 | 12 |
+    | 2022-02-04 | 17 | | 15 | 12 | 12 |
+    | 2022-02-05 | 17 | 1 | | 13 | 13 |
+    | 2022-02-06 | 17 | 3 | | 16 | 16 |
+    | 2022-02-07 | 17 | | | 16 | 16 |
 
 1. På nästa dag (2 februari 2022) skiftar tidsplanperioden framåt med en dag. Tabellen nedan visar resultatet.
 
     | Datum | Behållning | Schemalagd leverans | Schemalagd efterfrågan | Projekterad behållning | ATP |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/02 | 17 | | | 17 | 12 |
-    | 2022/02/03 | 17 | 10 | | 27 | 12 |
-    | 2022/02/04 | 17 | | 15 | 12 | 12 |
-    | 2022/02/05 | 17 | 1 | | 13 | 13 |
-    | 2022/02/06 | 17 | 3 | | 16 | 16 |
-    | 2022/02/07 | 17 | | | 16 | 16 |
-    | 2022/02/08 | 17 | | | 16 | 16 |
+    | 2022-02-02 | 17 | | | 17 | 12 |
+    | 2022-02-03 | 17 | 10 | | 27 | 12 |
+    | 2022-02-04 | 17 | | 15 | 12 | 12 |
+    | 2022-02-05 | 17 | 1 | | 13 | 13 |
+    | 2022-02-06 | 17 | 3 | | 16 | 16 |
+    | 2022-02-07 | 17 | | | 16 | 16 |
+    | 2022-02-08 | 17 | | | 16 | 16 |
 
 1. Två dagar senare (4 februari 2022) har dock leveranskvantiteten 10 som planerats för den 3 februari inte anlänt. Tabellen nedan visar resultatet.
 
     | Datum | Behållning | Schemalagd leverans | Schemalagd efterfrågan | Projekterad behållning | ATP |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/04 | 17 | | 15 | 2 | 2 |
-    | 2022/02/05 | 17 | 1 | | 3 | 3 |
-    | 2022/02/06 | 17 | 3 | | 6 | 6 |
-    | 2022/02/07 | 17 | | | 6 | 6 |
-    | 2022/02/08 | 17 | | | 6 | 6 |
-    | 2022/02/09 | 17 | | | 6 | 6 |
-    | 2022/02/10 | 17 | | | 6 | 6 |
+    | 2022-02-04 | 17 | | 15 | 2 | 2 |
+    | 2022-02-05 | 17 | 1 | | 3 | 3 |
+    | 2022-02-06 | 17 | 3 | | 6 | 6 |
+    | 2022-02-07 | 17 | | | 6 | 6 |
+    | 2022-02-08 | 17 | | | 6 | 6 |
+    | 2022-02-09 | 17 | | | 6 | 6 |
+    | 2022-02-10 | 17 | | | 6 | 6 |
 
     Som du ser påverkas inte de planerade (men inte utfästa) lagerändringarna den faktiska lagerhållningskvantiteten.
 
@@ -190,8 +199,8 @@ Med följande URL-adresser för program programming interface (API) kan du skick
 
 | Sökväg | Metod | Beskrivning |
 | --- | --- | --- |
-| `/api/environment/{environmentId}/on-hand/changeschedule` | `POST` | Skapa en schemalagd engångs-ändring. |
-| `/api/environment/{environmentId}/on-hand/changeschedule/bulk` | `POST` | Skapa flera schemalagda engångs-ändringar. |
+| `/api/environment/{environmentId}/onhand/changeschedule` | `POST` | Skapa en schemalagd engångs-ändring. |
+| `/api/environment/{environmentId}/onhand/changeschedule/bulk` | `POST` | Skapa flera schemalagda engångs-ändringar. |
 | `/api/environment/{environmentId}/onhand` | `POST` | Skapa en ändringshändelse för behållning. |
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | Skapa flera ändringshändelser. |
 | `/api/environment/{environmentId}/onhand/indexquery` | `POST` | Fråga genom att använda `POST` metoden. |
@@ -199,31 +208,46 @@ Med följande URL-adresser för program programming interface (API) kan du skick
 
 Mer information finns i [Offentliga API:er för Lagersynlighet](inventory-visibility-api.md).
 
-### <a name="submit-on-hand-change-schedules"></a>Skicka tidsplaner för förändring av behållning
+### <a name="create-one-on-hand-change-schedule"></a>Skapa ett aktuellt förändringsschema
 
-Tidsplaner för ändringar av lagerbehållning görs genom att du skickar en `POST` begäran till relevant URL för lagertjänst (mer information finns i [Skicka ändringsscheman, ändringshändelser och ATP-frågor via API](#api-urls)-avsnittet). Du kan även skicka bulkbegäranden.
+Planerad lagerbehållningsändring skapas genom att du skickar en `POST` begäran till relevant URL för lagertjänst (mer information finns i [Skicka ändringsscheman, ändringshändelser och ATP-frågor via API](#api-urls)-avsnittet). Du kan även skicka bulkbegäranden.
 
-För att kunna skicka en tidsplan för förändring av lagerhållningen måste förfrågan innehålla ett organisations-ID, ett produkt-ID, ett tidsplanerat datum och kvantiteter per datum. Det tidsplanerade datumet måste vara mellan det aktuella datumet och slutet för den aktuella tidsplanerade perioden.
+Planerad lagerbehållningsändring måste vara mellan det aktuella datumet och slutet för den aktuella tidsplanerade perioden. Datumtidsformatet skulle vara *år-månad-dag* (till exempel, **2022-02-01**). Tidsformatet måste bara vara korrekt till dagen.
 
-#### <a name="example-request-body-that-contains-a-single-update"></a>Exempel på begäran som innehåller en enda uppdatering
+Detta API skapar en enskild planerad lagerbehållningsändring.
 
-Exempel på begäran som innehåller en enda uppdatering.
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/changeschedule
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        productId: string,
+        dimensionDataSource: string, # optional
+        dimensions: {
+            [key:string]: string,
+        },
+        quantitiesByDate: {
+            [datetime:datetime]: {
+                [dataSourceName:string]: {
+                    [key:string]: number,
+                },
+            },
+        },
+    }
+```
+
+Följande exempel visar brödtext utan `dimensionDataSource`.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/changeschedule
-
-# Method
-Post
-
-# Header
-# Replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "id": "id-bike-0001",
     "organizationId": "usmf",
@@ -232,38 +256,60 @@ Authorization: "Bearer {access_token}"
         "SiteId": "1",
         "LocationId": "11",
         "ColorId": "Red",
-        "SizeId": "Small"
+        "SizeId&quot;: &quot;Small"
     },
     "quantitiesByDate":
     {
-        "2022/02/01": // today
+        "2022-02-01": // today
         {
             "pos":{
-                "inbound": 10,
-            },
-        },
-    },
+                "inbound": 10
+            }
+        }
+    }
 }
 ```
 
-#### <a name="example-request-body-that-contains-multiple-bulk-updates"></a>Exempel på begäran som innehåller flera (bulk) uppdateringar
+### <a name="create-multiple-on-hand-change-schedules"></a>Skapa flera planerade lagerbehållningsändringar
 
-Exempel på begäran som innehåller flera (bulk) uppdateringar.
+Detta API kan skapa flera poster samtidigt. De enda skillnaderna mellan denna API och en API med enskild är värden `Path` och `Body` värden. För detta API tillhandahåller `Body` en matris av poster. Det maximala antalet poster är 512. Därför kan bulk-API:et för befintliga förändringsscheman stödja upp till 512 schemalagda ändringar åt gången.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/changeschedule/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [
+        {
+            id: string,
+            organizationId: string,
+            productId: string,
+            dimensionDataSource: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            quantityDataSource: string, # optional
+            quantitiesByDate: {
+                [datetime:datetime]: {
+                    [dataSourceName:string]: {
+                        [key:string]: number,
+                    },
+                },
+            },
+        },
+        ...
+    ]
+```
+
+Följande exempel visar brödtext.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/changeschedule/bulk
-
-# Method
-Post
-
-# Header
-# replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
 [
     {
         "id": "id-bike-0001",
@@ -273,67 +319,51 @@ Authorization: "Bearer {access_token}"
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "Small"
+            "SizeId&quot;: &quot;Small"
         },
         "quantitiesByDate":
         {
-            "2022/02/01": // today
+            "2022-02-01": // today
             {
                 "pos":{
-                    "inbound": 10,
-                },
-            },
-        },
+                    "inbound": 10
+                }
+            }
+        }
     },
     {
-        "id": "id-bike-0002",
+        "id": "id-car-0002",
         "organizationId": "usmf",
         "productId": "Car",
         "dimensions": {
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "Small"
+            "SizeId&quot;: &quot;Small"
         },
         "quantitiesByDate":
         {
-            "2022/02/05":
+            "2022-02-05":
             {
                 "pos":{
-                    "outbound": 10,
-                },
-            },
-        },
+                    "outbound": 10
+                }
+            }
+        }
     }
 ]
 ```
 
-### <a name="submit-on-hand-change-events"></a>Skicka ändringshändelser för behållning
+### <a name="create-on-hand-change-events"></a>Skapa ändringshändelser för behållning
 
 Ändringshändelser för behållning görs genom att du skickar en `POST` begäran till relevant URL för lagertjänst (mer information finns i [Skicka ändringsscheman, ändringshändelser och ATP-frågor via API](#api-urls)-avsnittet). Du kan även skicka bulkbegäranden.
 
 > [!NOTE]
-> Ändringshändelser vid handen är inte unika för ATP-funktionaliteten utan är en del av standardinventeringssynlighets-API. Det här exemplet har inkluderats eftersom händelser är relevanta när du arbetar med ATP. Ändringshändelser vid handen är inte unika för ATP-funktionaliteten utan är en del av standardinventeringssynlighets-API `quantities` i stället för `quantityByDate` i meddelandetexten. Mer information om händelser för lagerbehållningsändring och andra funktioner i API:erna för lager synlighet finns i [Allmänna API:er för lager](inventory-visibility-api.md).
-
-För att kunna skicka en händelse för behållning måste begärandetexten innehålla ett organisations-ID, ett produkt-ID, ett tidsplanerat datum och kvantiteter per datum. Det tidsplanerade datumet måste vara mellan det aktuella datumet och slutet för den aktuella tidsplanerade perioden.
+> Ändringshändelser vid handen är inte unika för ATP-funktionaliteten utan är en del av standardinventeringssynlighets-API. Det här exemplet har inkluderats eftersom händelser är relevanta när du arbetar med ATP. Ändringshändelser vid handen är inte unika för ATP-funktionaliteten utan är en del av standardinventeringssynlighets-API `quantities` i stället för `quantityByDate` i meddelandetexten. Mer information om händelser för lagerbehållningsändring och andra funktioner i API:erna för lager synlighet finns i [Allmänna API:er för lager](inventory-visibility-api.md#create-one-onhand-change-event).
 
 Exempel på begäran som innehåller en enskild ändringshändelse för behållning.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
-
-# Method
-Post
-
-# Header
-# Replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "id": "id-bike-0001",
     "organizationId": "usmf",
@@ -342,7 +372,7 @@ Authorization: "Bearer {access_token}"
         "SiteId": "1",
         "LocationId": "11",
         "SizeId": "Big",
-        "ColorId": "Red",
+        "ColorId": "Red"
     },
     "quantities": {
         "pos": {
@@ -362,46 +392,71 @@ I din begäran, ange `QueryATP` till *true* om du vill fråga efter schemalagda 
 - Om du skickar en begäran med hjälp av `POST` metoden ställer du in den här parametern i begärandetext.
 
 > [!NOTE]
-> Oavsett om `returnNegative` parametern är inställd på *true* eller *false* i begärandetext, kommer resultatet att innehålla negativa värden när du ställer frågor för tidsplanerade ändringar av behållning och resultat av valörerna. Dessa negativa värden inkluderas eftersom, om endast efterfrågeorder planeras, eller om leveranskvantiteterna är mindre än efterfrågekvantiteterna, kommer de planerade lagerändringskvantiteterna att vara negativa. Om negativa värden inte ingår i det här programmet blir resultaten det verkliga. Mer information om det här alternativet och hur det fungerar för andra typer av frågor finns i [Offentliga API:er för Lagersynlighet](inventory-visibility-api.md).
+> Oavsett om `returnNegative` parametern är inställd på *true* eller *false* i begärandetext, kommer resultatet att innehålla negativa värden när du ställer frågor för tidsplanerade ändringar av behållning och resultat av valörerna. Dessa negativa värden inkluderas eftersom, om endast efterfrågeorder planeras, eller om leveranskvantiteterna är mindre än efterfrågekvantiteterna, kommer de planerade lagerändringskvantiteterna att vara negativa. Om negativa värden inte ingår i det här programmet blir resultaten det verkliga. Mer information om det här alternativet och hur det fungerar för andra typer av frågor finns i [Offentliga API:er för Lagersynlighet](inventory-visibility-api.md#query-with-post-method).
 
-### <a name="post-method-example"></a>Exempel på POST-metod
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/indexquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            siteId: string[],
+            locationId: string[],
+            [dimensionKey:string]: string[],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
 
 Följande exempel visar hur du skapar ett förfrågnings brödtext som kan skickas till Lagerfinlighet med hjälp av `POST`-metoden.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/indexquery
-
-# Method
-Post
-
-# Header
-# replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
         "siteId": ["1"],
-        "LocationId": ["11"],
+        "LocationId": ["11"]
     },
     "groupByValues": ["ColorId", "SizeId"],
     "returnNegative": true,
-    "QueryATP":true,
+    "QueryATP":true
 }
 ```
 
 ### <a name="get-method-example"></a>Exempel på GET-metod
 
+```txt
+Path:
+    /api/environment/{environmentId}/onhand
+Method:
+    Get
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Query(Url Parameters):
+    groupBy
+    returnNegative
+    [Filters]
+```
+
 Följande exempel visar hur du skapar en URL för en begäran som en `GET` begäran.
 
 ```txt
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
 ```
 
 Resultatet av denna `GET` begäran är exakt detsamma som resultatet av `POST` begäran i det föregående exemplet.

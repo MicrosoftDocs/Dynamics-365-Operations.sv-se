@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 26b2821f33ea23dde1fda1d461baa5de1b4f9efc
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 3385edf8961d04cf8bfc4ca06299f1911b76a4f5
+ms.sourcegitcommit: 2b119aec0e6f49bfd36125d9660f49cde5394446
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740664"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8758781"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Tjänstebeskrivning för appar för ekonomi och drift
 
@@ -132,9 +132,9 @@ Det här avsnittet beskriver några typiska miljö- och datahanteringshändelser
 
 LCS tillhandahåller [självbetjäningsverktyg](../../dev-itpro/deployment/infrastructure-stack.md) och [databasflyttåtgärder](../../dev-itpro/database/dbmovement-operations.md) som används för att utföra miljö- och datahanteringsuppgifter. Nedan följer några exempel:
 
-**Händelse:** [Begära en produktionsinstans](../imp-lifecycle/prepare-go-live.md#requesting-the-production-environment)
+**Händelse:** [Begära en produktionsinstans](../imp-lifecycle/go-live-faq.md#when-can-i-configure-and-request-my-production-environment)
 
-- Fyll i [checklistan för publicering](../imp-lifecycle/prepare-go-live.md) och skicka den till [Microsoft FastTrack](/dynamics365/fasttrack/)-teamet.
+- Fyll i [beredskapsöversyn för publicering](../imp-lifecycle/prepare-go-live.md) och skicka den till [Microsoft FastTrack](/dynamics365/fasttrack/)-teamet.
 - Fyll i [LCS-prenumerationsberäkningen](../../dev-itpro/lifecycle-services/subscription-estimator.md) innan du begär en produktionsinstans.
 - Slutför alla implementeringsuppgifter som angetts i [LCS-metoden](../../dev-itpro/lifecycle-services/create-methodology.md).
 

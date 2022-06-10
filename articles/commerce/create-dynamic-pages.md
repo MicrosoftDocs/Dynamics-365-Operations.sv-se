@@ -2,35 +2,32 @@
 title: Skapa dynamiska näthandelssidor baserade på URL-parametrar
 description: I detta ämne beskrivs hur du ställer in en Microsoft Dynamics 365 Commerce-näthandelssida som kan använda dynamiskt innehåll baserat på URL-parametrar.
 author: StuHarg
-ms.date: 01/28/2021
+ms.date: 05/27/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ROBOTS: ''
-audience: Application user
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 348fdb30f4d0104e80bea5235c1e337b9f977311
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694350"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811041"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Skapa dynamiska näthandelssidor baserade på URL-parametrar
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 I detta ämne beskrivs hur du ställer in en Microsoft Dynamics 365 Commerce-näthandelssida som kan använda dynamiskt innehåll baserat på URL-parametrar.
 
-En näthandelssida kan konfigureras till att använda olika typer av innehåll, baserat på ett segment i URL-sökvägen. Därför kallas sidan för en "dynamisk" sida. Segmentet används som en parameter för att hämta sidinnehållet. En sida kallad **blog\_viewer** skapas exempelvis och kopplas till webbadressen (URL) `https://fabrikam.com/blog`. Denna sida kan sedan användas för att visa annat innehåll, baserat på det sista segmentet i URL-sökvägen. Det sista segmentet i webbadressen (URL) `https://fabrikam.com/blog/article-1` är **artikel-1**.
+En näthandelssida kan konfigureras till att använda olika typer av innehåll, baserat på ett segment i URL-sökvägen. Därför kallas sidan för en "dynamisk" sida. Segmentet används som en parameter för att hämta sidinnehållet. Till exempel en sida som skapas i webbplatsskaparen och namnges **blogg\_visningsprogram** blir mappade till URL `https://fabrikam.com/blog`. Denna sida kan sedan användas för att visa annat innehåll, baserat på det sista segmentet i URL-sökvägen. Det sista segmentet i webbadressen (URL) `https://fabrikam.com/blog/article-1` är **artikel-1**.
 
-Separata anpassade sidor som åsidosätter den dynamiska sidan kan också associeras med segment i URL-sökvägen. En sida kallad **blog\_summary** skapas exempelvis och kopplas till webbadressen (URL) `https://fabrikam.com/blog/about-this-blog`. När denna URL begärs kommer den **blog\_summary**-sida som associeras med **/about-this-blog**-parametern att returneras istället för **blog\_viewer**-sidan.
+Du kan också åsidosätta ett parameteriserat URL-segment med en sida för webbplatsskaparen. Till exempel en sida som skapas i webbplatsskaparen och namnges **blogg\_sammanfattning** blir mappade till URL `https://fabrikam.com/blog/about-this-blog`. När `https://fabrikam.com/blog` URL begärs med `/about-this-blog` segment i slutet returneras sidinnehållet **blogg\_sammanfattning** istället för `/about-this-blog` segment tolkas som en parameter som ska användas av sidan `https://fabrikam.com/blog`. 
+
+När du väljer namn för parametrarna som ska skickas till den dynamiska sidan, kan namnet på den dynamiska sidan som visas i URL (`/blog` i exemplet ovan) inte användas som ett parameternamn eller en del av ett parameternamn. 
 
 > [!NOTE]
 > Funktionerna för värd, hämtning och visning av dynamiskt sidinnehåll implementeras med hjälp av en anpassad modul. Mer information finns i [Utbyggbarhet för onlinekanal](e-commerce-extensibility/overview.md).
@@ -60,7 +57,7 @@ Följ dessa steg om du vill konfigurera flödet till den dynamiska sidan i Comme
 1. Under **PParameteriserade URL-sökvägar** väljer du **Lägg till** och anger sedan den URL-sökväg som du angav när du skapade URL:en (i detta exempel **/blog**).
 1. Välj **Spara och publicera**.
 
-När flödet har konfigurerats kommer alla förfrågningar till den parameteriserade URL-sökvägen att returnera den sida som är kopplad till URL:en. Om en begäran innehåller ytterligare ett segment returneras den associerade sidan, och sidinnehållet hämtas med segmentet som en parameter. `https://fabrikam.com/blog/article-1` kommer exempelvis att returnera sidan **blog\_summary**, och sidinnehållet kommer att hämtas genom att använda parametern **/article-1**.
+När flödet har konfigurerats kommer alla förfrågningar till den parameteriserade URL-sökvägen att returnera den sida som är kopplad till URL:en. Om en begäran innehåller ytterligare ett segment returneras den associerade sidan, och sidinnehållet hämtas med segmentet som en parameter. Till exempel kommer `https://fabrikam.com/blog/article-1` returnera sidan `https://fabrikam.com/blog` som visar innehållet som den hämtade med hjälp av parameter **/artikel-1**.
 
 ## <a name="override-a-parameterized-url-with-a-custom-page"></a>Åsidosätta en parameteriserad URL med en anpassad sida
 

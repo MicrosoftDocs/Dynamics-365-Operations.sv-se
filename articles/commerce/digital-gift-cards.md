@@ -2,7 +2,7 @@
 title: Digitala presentkort för näthandel
 description: I detta ämne beskrivs hur digitala presentkort fungerar i näthandelsimplementeringar av Microsoft Dynamics 365 Commerce. Det ger också en översikt över viktiga konfigurationssteg.
 author: anupamar-ms
-ms.date: 12/15/2020
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e0cbab05cfd9dcde8ec5caf802d13cd10bc9123716b46307616b0e3e66f0f061
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de8811b3265bc582a055aaad1f3dea32def552f4
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727567"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809597"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Digitala presentkort för näthandel
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 I detta ämne beskrivs hur digitala presentkort fungerar i näthandelsimplementeringar av Microsoft Dynamics 365 Commerce. Det ger också en översikt över viktiga konfigurationssteg.
 
@@ -36,31 +35,34 @@ I följande bild visas ett exempel på produktinformationssidan (PDP) för ett d
 
 ![Exempel på ett digitalt presentkorts-PDP på Fabrikams näthandelssajt.](./media/GiftcardPDP.PNG)
 
-## <a name="turn-on-the-digital-gift-card-feature-in-commerce-headquarters"></a>Aktivera funktionen för digitala presentkort i Commerce-administrationen
+## <a name="turn-on-the-digital-gift-card-feature-in-commerce-headquarters"></a>Aktivera funktionen för digitala presentkort i Commerce headquarters
 
-För att inköpsflödet för digitala presentkort ska fungera i Dynamics 365 Commerce måste funktionen **Köpa presentkort i funktion för näthandel** vara aktiverad i Commerce-administrationen. Du hittar dunktionen i arbetsytan **Funktionshantering** i Commecer-administrationen enligt följande illustration.
+För att inköpsflödet för digitala presentkort ska fungera i Dynamics 365 Commerce måste funktionen **Köpa presentkort i funktion för näthandel** vara aktiverad i Commerce headquarters. Du hittar dunktionen i arbetsytan **Funktionshantering** i Commecer-administrationen enligt följande illustration.
 
-![Arbetsytan Funktionshantering i Commerce-administrationen.](./media/Featureflag.PNG)
+![Arbetsytan Funktionshantering i Commerce headquarters.](./media/Featureflag.PNG)
 
-## <a name="configure-a-digital-gift-card-in-commerce-headquarters"></a>Konfigurera ett digitalt presentkort i Commerce-administrationen
+## <a name="configure-a-digital-gift-card-in-commerce-headquarters"></a>Konfigurera ett digitalt presentkort i Commerce headquarters
 
-Digitala presentkortprodukter bör konfigureras i Commerce-administrationen. Processen liknar processen för att skapa andra produkten. Följande viktiga steg är dock specifika för konfigurationen av presentkort för inköp. Mer information om hur du skapar och konfigurerar produkter finns i [Skapa en ny produkt i Commerce](create-new-product-commerce.md).
+Digitala presentkortprodukter bör konfigureras i Commerce headquarters. Processen liknar processen för att skapa andra produkten. Följande viktiga steg är dock specifika för konfigurationen av presentkort för inköp. Mer information om hur du skapar och konfigurerar produkter finns i [Skapa en ny produkt i Commerce](create-new-product-commerce.md).
 
 - När du konfigurerar digitala presentkortprodukter i dialogrutan **Ny produkt** anger du ältet **Produkttyp** som **Tjänst**. (Om du vill öppna dialogrutan går du till **Butik och handel \> PRodukter och kategorier \> Produkter efter kategori** och väljer sedan **Ny**.) Produkter av typen **Tjänst** kontrolleras inte för tillgängligt lager innan en order läggs. Mer information finns i [Skapa en ny produkt](create-new-product-commerce.md#create-a-new-product).
 - På sidan **Parametrar för Commerce**, på fliken **Bokföring**, måste fältet **Presentkortprodukt** anges som **Digitalt presentkort** enligt följande illustration. Mer information om produkten är ett externt presentkort finns i [Stöd för externa presentkort](./dev-itpro/gift-card.md).
 
-    ![Produktfält för presentkort i Commerce-administrationen.](./media/PostGiftcard.png)
+    ![Produktfält för presentkort i Commerce headquarters.](./media/PostGiftcard.png)
 
-- Om ett presentkort måste ha stöd för flera fördefinierade belopp (till exempel 25, 50 respektive 100 USD) ska dimensionen **Storlek** användas för att konfigurera dessa fördefinierade belopp. Varje enskilt fördefinierat belopp kommer att vara en variant. Mer information finns i [Produktdimensioner](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
-- Om kunderna måste kunna ange ett anpassat belopp för ett presentkort måste du först skapa en variant som tillåter ett anpassat belopp. Öppna sedan produkten från sidan **Frisläppta produkter i kategori** innan du på snabbfliken **Commerce** anger fältet **Ange pris** som **Måste ange nytt pris**, enligt följande illustration. Denna inställning garanterar att kunderna kan ange ett pris när de bläddrar i produkten på en PDP.
+- Om ett presentkort måste ha stöd för flera fördefinierade belopp (till exempel 25, 50 respektive 100 USD) ska dimensionen **Storlek** användas för att konfigurera dessa fördefinierade belopp. Varje enskilt fördefinierat belopp kommer att vara en produktvariant. Mer information finns i [Produktdimensioner](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
+- Om kunderna måste kunna ange ett anpassat belopp för ett presentkort utöver fördefinierade belopp måste du först skapa en variant som tillåter ett anpassat belopp. Attributet **Storlek** har stöd för anpassade beloppsvarianter. Öppna sedan produkten från sidan **Frisläppta produkter i kategori** innan du på snabbfliken **Commerce** anger fältet **Ange pris** som **Måste ange nytt pris**, enligt följande exempelillustration. Denna inställning garanterar att kunderna kan ange ett pris när de bläddrar i produkten på en PDP.
 
-    ![Fältet Ange pris i Commerce-administrationen.](./media/KeyInPrice.png)
+    ![Fältet Ange pris i Commerce headquarters.](./media/KeyInPrice.png)
+    
+    I följande exempelillustrationen visas en lista över digitala presentkortsproduktvarianter i Commerce headquarters, inklusive två anpassade prisvarianter.
+    ![Exempel på digitala presentkortsvarianter med anpassade prisvarianter](./media/DigitalGiftCards_ProductVariantsWithCustom.png)
 
 - Leveranssättet för ett digitalt presentkort måste vara **Elektroniskt**. På sidan **Leveranssätt** (**Retail och commerce \> Kanalinställningar \> Leveranssätt**) väljer du leveranssättet **Elektroniskt** i listpanelen innan du lägger till den digitala presentkortprodukten i rutnätet på snabbfliken **Produkter** enligt följande illustration. Mer information finns i [Konfigurera leveranssätt](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
-    ![Digitala presentkortprodukter på sidan Leveranssätt i Commerce-administrationen.](./media/ElectronicMode.PNG)
-
-- Kontrollera att en online-funktionsprofil har skapats och associerats med din onlinebutik i Commerce-administrationen. Ställ in alternativet **Aggregera produkter** som **Ja**. Denna inställning garanterar att alla artiklar utom presentkort aggregeras. Mer information finns i [Skapa en online-funktionsprofil](online-functionality-profile.md).
+    ![Digitala presentkortprodukter på sidan Leveranssätt i Commerce headquarters.](./media/ElectronicMode.PNG)
+    
+- Kontrollera att en online-funktionsprofil har skapats och associerats med din onlinebutik i Commerce headquarters. Ställ in alternativet **Aggregera produkter** som **Ja**. Denna inställning garanterar att alla artiklar utom presentkort aggregeras. Mer information finns i [Skapa en online-funktionsprofil](online-functionality-profile.md).
 - Om du vill försäkra dig om att kunderna får ett e-postmeddelande efter att ett presentkort fakturerats, skapar du ett nytt e-postmeddelande på sidan **Profiler för e-postmeddelanden** och anger fältet **E-postmeddelandetyp** som **Utfärda presentkort**. Mer information finns i [Konfigurera profil för e-postmeddelande](email-notification-profiles.md).
 
 ## <a name="add-product-images-to-the-commerce-site-builder-media-library"></a>Lägg till produktbilder i mediabiblioteket för Commerce-webbplatsbyggaren

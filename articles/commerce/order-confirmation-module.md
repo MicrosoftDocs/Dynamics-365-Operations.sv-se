@@ -2,7 +2,7 @@
 title: Orderbekräftelsemodulen
 description: Det här avsnittet handlar om orderbekräftelsemoduler och beskriver hur du använder dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 11/06/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6914f8c968b03c05a2311a31a4f391c828db5b8b35bc864504dad78f43b3623f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e74ffbdfe57f9220cc9ed85edae4270409165b41
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733856"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780394"
 ---
 # <a name="order-confirmation-module"></a>Modul för orderbekräftelse
 
@@ -51,15 +51,18 @@ Om du vill lägga till en orderbekräftelsemodul på en ny sida och ställa in d
 1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
 1. I dialogrutan **Ny mall**, under **Mallnamn**, anger du namnet **Orderbekräftelsemall** och väljer sedan **OK**.
 1. I facket **brödtext** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul**, välj modulen **Standardsida** och klicka sedan på **OK**.
+1. I dialogrutan **Välj moduler**, välj modulen **Standardsida** och klicka sedan på **OK**.
 1. I platsen **Huvud** i modulen **Standardsida** markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul** väljer du modulen **Orderbekräftelse** och väljer sedan **OK**.
+1. I dialogrutan **Välj moduler** väljer du modulen **Orderbekräftelse** och väljer sedan **OK**.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska mallen. Modulen för orderbekräftelse återges inte eftersom den kräver en kontext för orderbekräftelsenumret.
 1. Välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
-1. I dialogrutan **Välj en mall** väljer du en **Orderbekräftelsemall**. Under **Sidnamn** anger du **Orderbekräftelsesida** och klickar sedan på **OK**.
+1. I dialogrutan **Skapa en ny sida** under **Sidnamn**, ange **Sidan Orderbekräftelse** och välj sedan **Nästa**.
+1. Under **Välj en mall**, välj **Orderbekräftelsemall** och välj sedan **Nästa**.
+1. Under **Välj en layout** väljer du en sidlayout (till exempel **Flexibel layout**) och väljer sedan **Nästa**.
+1. Under **Granska och slutför**, granska sidkonfiguration. Om du behöver redigera sidinformationen väljer du **Bakåt**. Om sidinformationen är korrekt väljer du **Skapa sida**. 
 1. I platsen **Huvud** i modulen **Standardsida** markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul** väljer du modulen **Orderbekräftelse** och väljer sedan **OK**.
+1. I dialogrutan **Välj moduler** väljer du modulen **Orderbekräftelse** och väljer sedan **OK**.
 1. I egenskapsrutan för orderbekräftelsemodulen väljer du **Rubrik** bredvid pennsymbolen.
 1. I fältet **Rubriktext** i dialogrutan **Rubrik** anger du rubriktexten **Orderbekräftelse** och väljer sedan **OK**.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan.

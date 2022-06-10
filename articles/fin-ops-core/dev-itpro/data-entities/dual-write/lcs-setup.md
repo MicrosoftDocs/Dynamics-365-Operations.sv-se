@@ -2,19 +2,19 @@
 title: Inställning av dubbelriktad skrivning från Lifecycle Services
 description: I det här avsnittet beskrivs hur du ställer in en dubbelriktad anslutning från Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
-ms.date: 08/03/2021
+ms.date: 05/16/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 53e82fbf8cff834c9eb0d14a0597561158b85fa1
+ms.sourcegitcommit: 6744cc2971047e3e568100eae338885104c38294
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063682"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8783213"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Inställning av dubbelriktad skrivning från Lifecycle Services
 
@@ -26,12 +26,12 @@ I det här avsnittet beskrivs hur du aktiverar en dubbelriktad skrivning från M
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Du måste slutföra Power Platform-integreringen enligt beskrivningen i följande avsnitt:
+Kunder måste slutföra Power Platform-integreringen enligt beskrivningen i följande avsnitt:
 
-+ [Power Platform-integrering – Aktivera under utveckling av miljön](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
-+ [Power Platform-integrering – Aktivera efter utveckling av miljön](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
+- Om du ännu inte använder Microsoft Power Platform och vill expandera dina ekonomi- och driftmiljöer genom att lägga till plattformsfunktionerna, ska du se [Power Platform integration - Aktivera under miljödistributionen](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
+- Om du redan har Dataverse och Power Platform-miljöer och vill ansluta dem till ekonomi- och driftmiljöer, se [Power Platform integration - Aktivera efter utveckling av miljön](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Ställ in dubbelriktad skrivning för nya Dataverse-miljöer
+## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>Ställ in dubbelriktad för ny eller befintlig Dataverse-miljö
 
 Följ dessa steg när du vill ställa in dubbelriktad skrivning från LCS **miljöinformation**:
 
@@ -55,28 +55,19 @@ Följ dessa steg när du vill ställa in dubbelriktad skrivning från LCS **milj
 
 8. När länkningen är slutförd visas en hyperlänk. Använd länken för att logga in på administrationsområdet för dubbelriktad skrivning i Ekonomi och Drift-miljön. Därifrån kan du ställa in enhetsmappningar.
 
-## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Ställ in dubbelriktad skrivning för en befintlig Dataverse-miljö
-
-Om du vill ställa in dubbelriktad skrivning för en befintlig Dataverse-miljö måste du skapa ett Microsoft [supportärende](../../lifecycle-services/lcs-support.md). Ärendet måste innehålla:
-
-+ Ditt Ekonomi och Drift miljö-ID.
-+ Ditt miljönamn från Lifecycle Services.
-+ Dataverse organisations-ID eller Power Platform miljö-ID från Power Platform administrationscenter. Begär att ID:t ska vara den instans som används för integrering på din Power Platform-integrering.
-
-> [!NOTE]
-> Du kan inte avlänka miljöer med hjälp av LCS. Om du vill ta bort länken för en miljö, öppna arbetsytan **Dataintegrering** i Ekonomi och Drift-miljön och väljer **Ta bort länk**.
-
 ## <a name="linking-mismatch"></a>Koppla matchningsfel
 
-Det är möjligt att din LCS-miljö är länkad till en Dataverse instans, medan din skrivmiljö är kopplad till en annan Dataverse instans. Denna koppling av matchningsfel kan orsaka oväntade beteende, och det kan sluta med att data skickas till fel miljö. Den rekommenderade miljön att använda för dubbelriktad skrivning är den som skapas som en del av Power Platform-integreringen, och på längre sikt är detta det enda sättet att upprätta en länk mellan olika miljöer.
+Det är möjligt att din arbetsmiljö är länkad till en Dataverse instans medan LCS inte har ställts in för Power Platform integration. Detta kan leda till oväntade beteende. Det rekommenderas att LCS-miljödetaljer matchar det du är ansluten till i dubbelriktad skrivning så att samma anslutning kan användas av affärshändelser, virtuella tabeller och tillägg.
 
-Om din miljö har en matchningsfel, visar LCS en varning på din miljöinformationssida, som liknar "Microsoft har upptäckt att din miljö är kopplad via Webbplatsskrivning till en annan destination än den som angetts i Power Platform integreringen, och det rekommenderas inte":
+Om din miljö har en matchningsfel, visar LCS en varning som liknar följande exempel på din miljöinformationssida "Microsoft har upptäckt att din miljö är kopplad via Webbplatsskrivning till en annan destination än den som angetts i Power Platform integreringen, och det rekommenderas inte".
 
 :::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform integreringslänk stämmer inte överens.":::
 
-Om du stöter på det här felet finns det två alternativ, baserat på dina behov:
+Om du får den här varningen försöker du med någon av följande lösningar:
 
-+ [Ta bort länken och koppla om dubbelskrivningsmiljöer (Återställ eller ändra länkning)](relink-environments.md#scenario-reset-or-change-linking) enligt specifikationen på din LCS -miljöinformation. Detta är det bästa alternativet, eftersom du kan köra det utan Microsofts stöd.  
-+ Om du vill behålla din länk vid dubbelskrivning kan du be om hjälp från Microsofts support för att ändra Power Platform-integreringen i syfte att använda din befintliga Dataverse-miljö enligt dokumenterat i föregående avsnitt.  
+- Om din LCS-miljö aldrig har ställts in för Power Platform integration kan du ansluta till Dataverse instansen som är konfigurerad i dubbelriktad skrivning genom att följa instruktionerna i den här artikeln.
+- Om din LCS-miljö redan är inställd för Power Platform integration, bör du koppla bort dual-write och återansluta den till den som specificeras av LCS med hjälp av [Scenario: Återställ eller ändra länkning](relink-environments.md#scenario-reset-or-change-linking).
+
+Tidigare var ett manuellt alternativ för supportbegäran tillgängligt, men det var före alternativen 1 ovan.  Microsoft stöder inte längre manuella omkopplingar av förfrågningar via supportbegäran.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

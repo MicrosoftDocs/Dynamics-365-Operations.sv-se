@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547800"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786850"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurera lagersynlighet
 
@@ -60,7 +60,7 @@ Tillägget Lagersynlighet lägger till flera nya funktioner i Power Apps-install
 
 Om du inte känner till rätt tjänstslutpunkt för Lagersynlighet öppnar du sidan **Konfiguration** i Power Apps och sedan **Visa tjänstslutpunkt** i det övre högra hörnet. Sidan visar korrekt tjänstslutpunkt.
 
-## <a name="data-source-configuration"></a>Konfiguration för datakälla
+## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Konfiguration för datakälla
 
 Varje datakälla representerar ett system som dina data kommer från. Källnamn för exempeldata är till exempel `fno` (som står för "Dynamics 365-appar för ekonomi och drift") samt `pos` (som står för "kassa"). Standardinställningen är att Supply Chain Management konfigureras som standarddatakälla (`fno`) i Lagersynlighet.
 
@@ -141,7 +141,7 @@ Om du vill lägga till dimensionsmappningar följer du dessa steg.
 
 Om datakällan till exempel innehåller en produktfärgsdimension kan du mappa den till basdimensionen `ColorId` för att lägga till en anpassad `ProductColor`- dimension i `exterchannel`-datakällan. Den mappas sedan till `ColorId`-basdimensionen.
 
-### <a name="physical-measures"></a>Fysiska mått
+### <a name="physical-measures"></a><a name="data-source-configuration-physical-measures"></a>Fysiska mått
 
 När en datakälla bokför en lagerändring i Lagersynlighet bokför den denna ändring med hjälp av *fysiska mått*. Fysiska mått ändrar kvanheten och återspeglar lagerstatusen. Du kan definiera dina egna fysiska mått, baserat på dina behov. Frågor kan baseras på de fysiska måtten.
 
@@ -175,6 +175,9 @@ Om datakällan är Supply Chain Management behöver du inte skapa de fysiska sta
 ### <a name="calculated-measures"></a>Beräknade mått
 
 Du kan använda Lagersynlighet när du vill söka efter både fysiska lagermått *och anpassade beräknade mått*. Beräknade mått ger en anpassad beräkningsformel som består av en kombination av fysiska mått. Med hjälp av denna funktion kan du definiera en uppsättning fysiska mått som ska läggas till, och/eller en uppsättning fysiska mått som dras ifrån, för att generera det anpassade måttet.
+
+> [!IMPORTANT]
+> Ett beräknat mått är en sammansättningen av fysiska mått. Formeln kan endast innehålla fysiska mått utan dubbletter, inte beräknade mått.
 
 Med konfigurationen kan du definiera en uppsättning modifierare som läggs till eller dras ifrån för att få den totala sammanlagda utleveranskvanheten.
 

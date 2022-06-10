@@ -2,39 +2,38 @@
 title: Språkinformation för sökmotoroptimering (SEO) för din webbplats
 description: Det här avsnittet handlar om sökmotorns SEO-information för din webbplats från utveckling till produktion.
 author: psimolin
-ms.date: 10/01/2019
+ms.date: 05/25/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application user
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: df92aeae967bbf248b90dffc6bc2239a8d2959183acb9e9181bc344b9e3eff8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2f90581766dba3d3a671df52ec08339a1a0fd7dc
+ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716867"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8806415"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>Språkinformation för sökmotoroptimering (SEO) för din webbplats
 
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om varje sökmotors SEO-information för din webbplats från utveckling till produktion.
+Det här avsnittet handlar om sökmotorns SEO-information för din webbplats från utveckling till produktion.
 
 ## <a name="a-site-that-is-under-development"></a>En webbplats som är under utveckling
 
-Medan en webbplats är under utveckling ska alla sidor ha metataggarna **NOINDEX** och **NOFOLLOW** så att sökmotorer inte kan indexera sidorna och lagra utvecklingsversionerna av din webbplats i cacheminnet. För att kunna utföra den här konfigurationen måste du lägga till standardmodulen för metataggar på webbplatsmallen. Standardegenskaperna för metataggarna är sedan tillgängliga i avsnittet SEO-egenskaper i sidredigeraren. Du kan använda dessa egenskaper för att hantera metataggarna.
+För att säkerställa att sökmotorer inte indexerar en webbplats under utveckling bör alla webbplatssidor ha metataggar **noindex** och **nofollow**. En bra praxis är att skapa ett fragment baserat på [MetaTags-modul](metatags-module.md) som innehåller följande metataggpost och se till att fragmentet läggs till i HTML-koden \<head\> avsnitt av alla mallar som används på din webbplats.
+
+```html
+<meta name="robots" content="noindex,nofollow" /> 
+```
 
 ## <a name="soft-launch-of-a-site"></a>Mjuk start av en plats
 
-Under en "mjuk start" görs en webbplats tillgänglig för en begränsad publik eller marknad innan den fullständiga lanseringen sker. Om du gör en mjuk start av din webbplats bör du överväga att lämna metataggarna **NOINDEX** på plats. På så sätt garanterar du att den mjuka starten förblir begränsad till de begränsade målgrupper som du vill uppnå.
+Under en "mjuk start" görs en webbplats tillgänglig för en begränsad publik eller marknad innan den fullständiga lanseringen sker. Om du gör en mjuk start av din webbplats bör du överväga att lämna metataggarna **noindex** på plats. På så sätt garanterar du att den mjuka starten förblir begränsad till de begränsade målgrupper som du vill uppnå.
 
 ## <a name="a-site-that-is-in-production"></a>En webbplats som är i produktion
 
@@ -44,7 +43,7 @@ För att optimera indexeringen använder återgivningsramverket både informatio
 
 ### <a name="page-seo-settings-for-internal-preview-limited-audiences-and-all-audiences"></a>Sidinställningar för SEO för intern förhandsgranskning, begränsade målgrupper och alla målgrupper
 
-Eftersom Dynamics 365 Commerce ger stöd för "vad du ser är vad du får" (WYSIWYG)-autentiserade förhandsgranskningar i visuell sidskapare, kan författare förbereda sitt sidinnehåll utan att behöva oroa sig om att informationen kommer att visas för besökare på webbplatsen. Om en sida måste publiceras, men dess exponering måste vara begränsad måste den ha metataggen **NOINDEX**, så att den inte indexeras av sökmotorer. När sidan är klar för alla målgrupper bör alla de grundläggande SEO-metadata finnas tillgängliga, vilket maximerar effektiviteten hos sökmotorindexeringen. Dessutom bör metataggen **NOLIMIT** tas bort.
+Eftersom Dynamics 365 Commerce ger stöd för "vad du ser är vad du får" (WYSIWYG)-autentiserade förhandsgranskningar i visuell sidskapare, kan författare förbereda sitt sidinnehåll utan att behöva oroa sig om att informationen kommer att visas för besökare på webbplatsen. Om en sida måste publiceras, men dess exponering måste vara begränsad måste den ha metataggen **noindex**, så att den inte indexeras av sökmotorer. När sidan är klar för alla målgrupper bör alla de grundläggande SEO-metadata finnas tillgängliga, vilket maximerar effektiviteten hos sökmotorindexeringen. Dessutom bör metataggen **noindex** tas bort.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

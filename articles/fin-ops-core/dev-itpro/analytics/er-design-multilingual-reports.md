@@ -2,7 +2,7 @@
 title: Designa flerspråkiga rapporter i elektronisk rapportering
 description: I det här avsnittet beskrivs hur du kan använda elektronisk rapporteringsetiketter för att skapa flerspråkiga rapporter.
 author: NickSelin
-ms.date: 11/30/2021
+ms.date: 04/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eab17635494657740fe46364bde0773dae5b9e4b
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: aa8297d4f5c56a7a20561b1a90c5852e65dbff31
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313701"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811619"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Designa flerspråkiga rapporter i elektronisk rapportering
 
@@ -217,6 +217,11 @@ Det här formatet används för automatisk översättning av etiketter med exter
 Etiketter för en ER-komponent som kan redigeras behålls, tillsammans med annat innehåll för komponenten, i en lämplig version av en ER-konfiguration.
 
 Etiketter för en grundläggande ER-komponent kan refereras till en härledd version av ER-komponenten som du skapar för att införa dina ändringar.
+
+> [!TIP]
+> När du designar en ER-lösning kan du härleda din egen ER [datamodell](er-overview-components.md#data-model-component) komponent från den som tillhandahålls. I denna härledda datamodell kan du införa egna ER-etiketter och använda dem i alla ER-format som kommer att använda datamodellen som datakälla. Du kan sedan härleda din egen ER [format](er-overview-components.md#format-component) komponent från den som tillhandahålls genom att välja den härledda ER-datamodellen istället för den som tillhandahålls. I version 10.0.28 och senare kan du aktivera funktionen **Utökad åtkomst till etiketter för den stigande ER-datamodellen** för att komma åt etiketter för en stigande ER-datamodell i härledda ER-formatkomponenter, även när ER-datamodellen som du valde för den härledda ER-komponenten skiljer sig från den som användes i ER-baskomponenten.
+>
+> När samma etikettnamn används i den härledda komponenten och dess stigande komponenter, används översättningen av den etiketten som den mest relevanta.
 
 ER-versioner kontrollerar etiketttilldelningen till alla attribut i en ER-komponent. Ändringar i etikettilldelningen registreras i listan över ändringar (delta) i en redigerbar ER-komponent som har skapats som en härledd version av den angivna ER-komponenten. Ändringarna kommer att valideras när en härledd version baseras på en ny grundläggande version.
 

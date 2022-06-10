@@ -2,7 +2,7 @@
 title: Skapa en konfiguration för att generera dokument i Excel-format
 description: Det här avsnittet beskriver hur du utformar ett elektroniskt rapporteringsformat (ER) för att fylla i en Excel-mall och sedan generera utgående dokument i Excelformat.
 author: NickSelin
-ms.date: 03/25/2022
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645147"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811432"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Skapa en konfiguration för att generera dokument i Excel-format
 
@@ -288,6 +288,16 @@ Du kan välja **Uppdatera från Excel** på fliken **Importera** i åtgärdsfön
 
 ![Alternativet Skapa formatelement för Excel-ark i dialogrutan Uppdatera från Excel.](./media/er-excel-format-update-template.png)
 
+I version 10.0.28 och senare kan du använda alternativet **Uppdatera formatelementen Excel-sidhuvud och Excel-sidfot**.
+
+- När du anger alternativet **Nej** ändras inte formatelementen i Excel-sidhuvud och Excel-sidfot, även om motsvarande sidhuvud eller sidfötter har uppdaterats i kalkylbladen för den importerade mallen i Excel-arbetsbokens format.
+- När du anger alternativet **Ja** ändras formatelementen i Excel-sidhuvud och Excel-sidfot, även om motsvarande sidhuvud eller sidfötter har uppdaterats i kalkylbladen för den importerade mallen i Excel-arbetsbokens format.
+
+    - Om strukturen för ett kalkylbladshuvudet eller en sidfot inte har ändrats, eller om det bara har bifogats, uppdateras strukturen för motsvarande formatelement för Excel-sidhuvud eller Excel-sidfot. Bindande formatelement som är kapslade under det här formatelementet för Excel-sidhuvud eller Excel-sidfot kommer att bevaras.
+    - Om strukturen för ett kalkylbladshuvud eller sidfot har ändrats, återskapas motsvarande Excel-huvud- eller Excel-sidfotsformatelement. Bindande formatelement som är kapslade under det här formatelementet för Excel-sidhuvud eller Excel-sidfot kommer att tas bort.
+
+![Alternativet Uppdatera Excel-huvud- och sidfotsformatelement i dialogrutan Uppdatera från Excel.](./media/er-excel-format-update-template2.png)
+
 Om du vill veta mer om den här funktionen följer du stegen i [Ändra format för elektronisk rapportering genom att återanvända Excel-mallar](modify-electronic-reporting-format-reapply-excel-template.md).
 
 ## <a name="validate-an-er-format"></a>Validera ett ER-format
@@ -355,7 +365,7 @@ När ett utgående dokument i ett Microsoft Excel arbetsboksformat genereras, ka
 
 ## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Exempel 2: Korrigering av de sammanfogade cellerna EPPlus-problem
 
-Du kan köra ett ER-format för att generera ett utgående dokument i ett Excel-arbetsbokformat. När funktionen **Aktivera användning av EPPlus-biblioteket i ramverket för elektronisk rapportering** är aktiverad i arbetsytan **Funktionshantering** används [EPPlus bibliotek](https://www.nuget.org/packages/epplus/4.5.2.1) för att göra Excel-utdata. På grund av kända [Excel-beteenden](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) och begränsningar vad gäller EPPlus-biblioteket kan du dock stöta på följande undantag: "Det går inte att ta bort/skriva över kopplade celler. Ett intervall sammanfogas delvis med ett annat kopplat intervall." Slutför följande exempel om du vill veta vilka typer av Excel-mallar som kan orsaka det här undantaget och hur du löser problemet.
+Du kan köra ett ER-format för att generera ett utgående dokument i ett Excel-arbetsbokformat. När funktionen **Aktivera användning av EPPlus-biblioteket i ramverket för elektronisk rapportering** är aktiverad i arbetsytan **Funktionshantering** används [EPPlus bibliotek](https://www.nuget.org/packages/epplus/4.5.2.1) för att göra Excel-utdata. På grund av kända [Excel-beteenden](https://answers.microsoft.com/en-us/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) och begränsningar vad gäller EPPlus-biblioteket kan du dock stöta på följande undantag: "Det går inte att ta bort/skriva över kopplade celler. Ett intervall sammanfogas delvis med ett annat kopplat intervall." Slutför följande exempel om du vill veta vilka typer av Excel-mallar som kan orsaka det här undantaget och hur du löser problemet.
 
 1. Skapa en ny Excel-arbetsbok i Excel-programmet.
 2. På kalkylbladet **Sheet1**, lägg till **ReportTitle** namn för cell **A2**.

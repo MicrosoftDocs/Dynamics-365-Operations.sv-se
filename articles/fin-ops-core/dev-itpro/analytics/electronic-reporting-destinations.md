@@ -2,7 +2,7 @@
 title: Destinationer för elektronisk rapportering (ER)
 description: I det här avsnittet finns information om hantering av mål för elektroniska rapportering, vilka typer av destinationer som stöds samt säkerhetsaspekter.
 author: nselin
-ms.date: 09/16/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: e3154cb62531bf956365b420b454c98ead7f7335
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647103"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780472"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer för elektronisk rapportering (ER)
 
@@ -173,11 +173,11 @@ I versioner av Finance **före version 10.0.18**, kan PDF-konverteringsalternati
 
 ### <a name="limitations"></a>Begränsningar
 
-Alternativet PDF-konvertering är bara tillgängligt för molndistributioner.
+Som Finance **version 10.0.9**, alternativet PDF-konvertering är bara tillgängligt för molndistributioner. Med start i Finance version **10.0.27** är PDF-konverteringsalternativet tillgängligt för alla lokala distributioner som har [Internet-anslutning](../user-interface/client-disconnected.md) aktiverat.
 
 Det producerade PDF-dokumentet är begränsat till en maximal längd på 300 sidor.
 
-I Finance **version 10.0.9** stöds endast liggande sidorientering i PDF-dokumentet som har skapats från en Excel-utdatafil. I Finance **version 10.0.10 (maj 2020) och senare**, kan du [ange sidorientering](#SelectPdfPageOrientation) för PDF-dokument som har skapats från ett Excel-format när du konfigurerar ett ER-mål.
+I Finance **version 10.0.9** stöds endast liggande sidorientering i PDF-dokumentet som har skapats från en Excel-utdatafil. Med start i Finance **version 10.0.10**, kan du [ange sidorientering](#SelectPdfPageOrientation) för PDF-dokument som har skapats från ett Excel-format när du konfigurerar ett ER-mål.
 
 Endast de vanligaste systemteckensnitten i Windows-operativsystemet används för att konvertera utdata som inte innehåller inbäddade teckensnitt.
 

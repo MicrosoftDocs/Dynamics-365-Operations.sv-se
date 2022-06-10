@@ -2,7 +2,7 @@
 title: Kassamodul
 description: I det här avsnittet beskrivs hur du lägger till en kassamodul på en sida och ställer in de obligatoriska egenskaperna.
 author: anupamar-ms
-ms.date: 08/31/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 031c70181e0dff9bc81450d2454f21e1dbaf1285d41b38ff6f7df6045923c27c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d022ad98603b489a133a5b9f2326677e9ebb307
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715516"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780524"
 ---
 # <a name="checkout-module"></a>Kassamodul
 
@@ -91,14 +91,14 @@ Större delen av kassan, t.ex. leveransadress och leveransmetod, lagras i kundva
 Om du vill lägga till en kassamodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
 1. Gå till **Fragment** och välj **ny** för att skapa ett nytt fragment.
-1. I dialogrutan **Nytt fragment**, välj modulen **Kassa**.
+1. I dialogrutan **Välj fragment**, välj modulen **Kassa**.
 1. Under **fragmentets namn**, anger du ett namn på **kassafragmentet** och klickar sedan på **OK**.
 1. Markera facket **Kassamodul**.
 1. I pennfönstret till höger väljer du pennsymbolen, anger rubriktext i fältet och markerar sedan kryssmarkeringssymbolen.
 1. I facket **Kassainformation** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul**, välj **Leveransadress**, **Leveransalternativ**, **Behållare för kassaavsnitt** och **Kontaktinformation** Välj sedan **OK**.
+1. I dialogrutan **Välj moduler**, välj **Leveransadress**, **Leveransalternativ**, **Behållare för kassaavsnitt** och **Kontaktinformation** Välj sedan **OK**.
 1. I modulen **Behållare för kassaavsnitt** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul** välj modulerna **Presentkort**, **Förmåner** och **Betalning** och välj sedan **OK**. På så sätt ser du till att alla betalsätt visas tillsammans i ett avsnitt.
+1. I dialogrutan **Välj moduler** välj modulerna **Presentkort**, **Förmåner** och **Betalning** och välj sedan **OK**. På så sätt ser du till att alla betalsätt visas tillsammans i ett avsnitt.
 1. På platsen för **Villkor** lägger du till en modul för **Betalningsvillkor** om det behövs. Konfigurera villkoren och villkorstexten enligt önskemål i modulens egenskapsfönster.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska fragmentet. Vissa moduler som inte har ett kundvagnssammanhang kanske inte återges i förhandsgranskningen.
 1. Välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera det.

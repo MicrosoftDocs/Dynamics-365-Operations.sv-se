@@ -2,7 +2,7 @@
 title: Felsöka prestandaproblem i ER-konfigurationer
 description: I det här avsnittet beskrivs hur du hittar och åtgärdar prestandaproblem i ER-konfigurationer (elektronisk rapportering).
 author: NickSelin
-ms.date: 06/08/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: maximbel
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: b5f5308f171b6cd4224debec897dbde133e6d8424673aabfab51e6b83b9014e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e727e06c73ff445bf4219ac5a9eee7bec25740d9
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744396"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811692"
 ---
 # <a name="troubleshooting-performance-issues-in-er-configurations"></a>Felsöka prestandaproblem i ER-konfigurationer
 
@@ -82,7 +82,7 @@ Förbered ett exempel som har en liten mängd data, så att du kan samla in en [
 
 - Motsvarar antalet frågor och hämtade poster den totala mängden data? Om ett dokument till exempel har 10 rader, visar då statistiken att rapporten extraherar 10 rader eller 1 000 rader? Om du har ett stort antal hämtade poster bör du överväga någon av följande korrigeringar:
 
-    - [Använd funktionern **FILTER** istället för funktionen **VAR**](#filter) för att bearbeta data på SQL Server-sidan.
+    - [Använd funktionen **FILTER** istället för funktionen **WHERE**](#filter) för att bearbeta data på Microsoft SQL Server sidan.
     - Använd cachelagring för att undvika att hämta samma data.
     - [Använd insamlade datafunktioner](#collected-data) för att undvika att hämta samma data för summering.
 
@@ -191,6 +191,10 @@ Det finns några begränsningar i samband med detta tillvägagångssätt. Du må
 
 Även om cachelagring minskar den tid som krävs för att hämta data igen, så kostar den minne. Använd cachelagring i de fall där mängden hämtade data inte är särskilt stor. Mer information och ett exempel som visar hur du använder cachelagring finns i [Förbättra modellmappningen baserat på information från körningsspårningen](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace).
 
+#### <a name="reduce-volume-of-data-fetched"></a><a name="reduce-fetched-data"></a>Minska volymen av data som hämtas
+
+Du kan minska minnesförbrukningen för cachning genom att begränsa antalet fält i posterna i ett programregister som du hämtar vid körning. I det här fallet hämtar du bara de fältvärden för ett programregister som du behöver i ER-modellmappningen. Andra fält i den tabellen hämtas inte. Därför minskas den volym av minne som krävs för cachehämtning av poster. Mer information finns i [Förbättra prestandan för ER-lösningar genom att minska antalet registerfält som hämtas under körning](er-reduce-fetched-fields-number.md).
+
 #### <a name="use-a-cached-parameterized-calculated-field"></a><a name="cached-parameterized"></a>Använd ett cachelagrat, parameteriserat beräknat fält
 
 Ibland måste värdena sökas upprepade gånger. Exempel på detta är kontonamn och kontonummer. För att spara tid kan du skapa ett beräknat fält som har parametrar på den översta nivån och sedan lägga till fältet i cacheminnet.
@@ -218,4 +222,4 @@ ER kan använda data från följande källor:
 - Klasser (datakällorna **objekt** och **klass**)
 - Tabeller (datakällorna **tabell** och **tabellposter**)
 
-[ER-API:n](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) ger också ett sätt att skicka förberäknade data från den anropande koden. Programserien innehåller många exempel på den här metoden.
+[ER programprogrammeringsgränssnitt (API)](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) ger också ett sätt att skicka förberäknade data från den anropande koden. Programserien innehåller många exempel på den här metoden.

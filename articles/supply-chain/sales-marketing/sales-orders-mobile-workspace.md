@@ -2,7 +2,7 @@
 title: Mobil arbetsyta för försäljningsorder
 description: Det här avsnittet innehåller information om den mobila arbetsytan för Försäljningsorder. Arbetsytan hjälper dig att hålla dig uppdaterad om dina försäljningsorder var som helst och när som helst.
 author: Henrikan
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,21 @@ ms.search.industry: Manufacturing
 ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 3a746ae5d7f0c6ca2fd8e69a23114cfcaa24b16b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: be9fd32f5f5d80bb9bce5f0de7e4ff92d6f5d28f
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675021"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811579"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Mobil arbetsyta för försäljningsorder
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 Det här avsnittet innehåller information om den mobila arbetsytan för **Försäljningsorder**. Arbetsytan hjälper dig att hålla dig uppdaterad om dina försäljningsorder var som helst och när som helst. 
 
-Denna mobila arbetsyta är avsedd att användas med mobilappen Ekonomi och drift.
+Denna mobila arbetsyta är avsedd att användas med mobilappen Ekonomi och drift (Dynamics 365).
 
 ## <a name="overview"></a>Översikt
 Den mobila arbetsytan **Försäljningsorder** låter dig visa detaljerad information om varje försäljningsorder. Informationen innehåller status för den ordern, kontaktinformation för kunden och kontaktinformation för ordermottagaren. Den mobila arbetsytan för **försäljnigsorder** ger en direkt översikt över försäljningsorder. Du kan visa alla försäljningsorder, visa försäljningsorder per kund, eller visa information om en specifik försäljningsorder. 
@@ -117,7 +118,7 @@ Om Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller se
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
-Hämta och installera mobilappen Ekonomi och drift:
+Ladda ner och installera Ekonomi och drift (Dynamics 365) mobilappen:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
