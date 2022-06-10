@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter eller ändringar på startsidan för Supply Chain Management
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.28 (augusti 2022)
+                  href: get-started/whats-new-scm-10-0-28.md
                 - name: Supply Chain Management 10.0.27 (juli 2022)
                   href: get-started/whats-new-scm-10-0-27.md
                 - name: Supply Chain Management 10.0.26 (maj 2022)
@@ -711,6 +713,8 @@
           items:
             - name: Kostnadshantering – startsida
               href: cost-management/cost-management-home-page.md
+            - name: Vanliga frågor och svar om kostnadsredovisning för lager
+              href: cost-management/inventory-costing-faq.md
             - name: Krav för standardkostnader
               items:
                 - name: Krav för översikt över standardkostnader
@@ -1425,9 +1429,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurera sökningsdatakällor att använda programspecifika parametrar för ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Använd datakällor för DATAINSAMLING i ER-format
+                    - name: Använda datakällor för DATAINSAMLING i ER-format
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Felsök datakällor
+                    - name: Använda datakällorna för USER INPUT PARAMETER när du vill ange parametrar för en rapport som du vill generera
+                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Felsöka datakällor
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurera datamodeller
                   items:
@@ -1707,6 +1713,8 @@
                   href: inventory/inventory-visibility-power-platform.md
                 - name: Inventory Visibility-reservationer
                   href: inventory/inventory-visibility-reservations.md
+                - name: Lagerallokering med Inventory Visibility
+                  href: inventory/inventory-visibility-allocation.md
                 - name: Inventory Visibility för planerad lagerbehållningsändring som är disponibel att lova
                   href: inventory/inventory-visibility-available-to-promise.md
                 - name: 'Offentliga API:er för Inventory Visibility'
@@ -3285,9 +3293,21 @@
               href: landed-cost/landed-cost-inquiries.md
             - name: Rapporter om hemtagningskostnader
               href: landed-cost/landed-cost-reports.md
-        - name: Lagerstyrning
+            - name: Datatabeller för hemtagningskostnad
+              items:
+                - name: Entiteter för hemtagningskostnad – översikt
+                  href: landed-cost\landed-cost-entities-overview.md
+                - name: Entiteter som skapas för sjötransport
+                  href: landed-cost\landed-cost-entities-voyage-creation.md
+                - name: Entiteter för kostnadstransaktioner
+                  href: landed-cost\landed-cost-entities-cost-transactions.md
+                - name: Entitet för aktivitet för fraktcontainer
+                  href: landed-cost\landed-cost-entities-container-activities.md
+                - name: Entiteter för leverantörsfaktura
+                  href: landed-cost\landed-cost-entities-vendor-invoices.md
+        - name: Hantering av distributionslager
           items:
-            - name: Lagerstyrning – översikt
+            - name: Hantering av distributionslager – översikt
               href: warehousing/warehouse-management-overview.md
             - name: Åtgärder för mottagande distributionslager
               items:
@@ -3857,7 +3877,7 @@
               items:
                 - name: Det går endast att lägga till huvudkontot som kreditkonto av avstämningsorsaker
                   href: troubleshooting/transportation/reconciliation-reaso.md
-            - name: Lagerstyrning
+            - name: Hantering av distributionslager
               items:
                 - name: Warehouse mobile app
                   items:

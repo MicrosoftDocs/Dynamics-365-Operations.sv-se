@@ -10,15 +10,17 @@
           items:
             - name: Nyheter och ändringar i appar för ekonomi och drift
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: Nyheter och ändringar i Platform updates
+            - name: Nyheter och ändringar i plattformsuppdateringar
               items:
-                - name: Nyheter och ändringar på startsidan för Platform updates
+                - name: Nyheter och ändringar på startsidan för plattformsuppdateringar
                   href: get-started/whats-new-home-page.md
-                - name: Platform updates för version 10.0.27 (juli 2022)
+                - name: Plattformsuppdateringar för version 10.0.28 (augusti 2022)
+                  href: get-started/whats-new-platform-updates-10-0-28.md
+                - name: Plattformsuppdateringar för version 10.0.27 (juli 2022)
                   href: get-started/whats-new-platform-updates-10-0-27.md
-                - name: Platform updates för version 10.0.26 (maj 2022)
+                - name: Plattformsuppdateringar för version 10.0.26 (maj 2022)
                   href: get-started/whats-new-platform-updates-10-0-26.md
-                - name: Platform updates för version 10.0.25 (april 2022)
+                - name: Plattformsuppdateringar för version 10.0.25 (april 2022)
                   href: get-started/whats-new-platform-updates-10-0-25.md
             - name: Borttagna eller inaktuella funktioner
               items:
@@ -384,9 +386,9 @@
                   items:
                     - name: Konfigurera lokala projekt i LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Ställa in och distribuera lokala miljöer (Platform update 41 och senare)
+                    - name: Ställa in och distribuera lokala miljöer (plattformsuppdatering 41 och senare)
                       href: deployment/setup-deploy-on-premises-pu41.md
-                    - name: Ställa in och distribuera lokala miljöer (Platform update 12 till och med 40)
+                    - name: Ställa in och distribuera lokala miljöer (plattformsuppdatering 12 till och med 40)
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Installationssteg för kanalkomponenter i Retail i en lokal miljö
                       href: deployment/deploy-retail-onprem.md
@@ -888,7 +890,7 @@
                       href: perf-test/concepts-navigation.md
                     - name: Metoder för testdata
                       href: perf-test/test-data-methods.md
-                    - name: Enheter i biblioteket för acceptanstester
+                    - name: Entiteter i biblioteket för acceptanstester
                       href: perf-test/concepts-entities.md
                     - name: Kommandon i biblioteket för acceptanstester
                       href: perf-test/concepts-commands.md
@@ -1018,6 +1020,8 @@
                   href: lifecycle-services/azure-data-explorer.md
             - name: Starta om miljötjänster
               href: lifecycle-services/restart-environment-services.md
+            - name: Uppdatera miljöadministratör
+              href: lifecycle-services/update-environment-admin.md
             - name: Rapportera ett produktionsavbrott
               href: lifecycle-services/report-production-outage.md
             - name: Spåra användares inloggningar
@@ -1266,6 +1270,8 @@
               items:
                 - name: Översikt över tillägg
                   href: power-platform/add-ins-overview.md
+            - name: Skapa upplevelser för mobilen
+              href: power-platform/build-mobile-experiences.md
             - name: Policyer och kommunikation
               href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: Mobil plattform
