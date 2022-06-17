@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 99083ae30de147d8c0c8d60edc858a31c26bee0be0c65019423f4f4696af2218
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 757eb6aa1a8debfde28bcba1f46ca8bc54b57b64
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751408"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895239"
 ---
 > [!IMPORTANT]
-> Vissa förbättringar som anges i det här avsnittet är tillgängliga för användare som valt att ingå i programmet Continuous Auto-update Advantage Program (CAAP) för plattformsuppdateringar. Mer information om standardiserade och målinriktade versioner finns i [Tillgänglighet för tjänstuppdateringar](../get-started/public-preview-releases.md).
+> Vissa förbättringar som anges i den här artikeln är tillgängliga för användare som valt att ingå i programmet Continuous Auto-update Advantage Program (CAAP) för plattformsuppdateringar. Mer information om standardiserade och målinriktade versioner finns i [Tillgänglighet för tjänstuppdateringar](../get-started/public-preview-releases.md).

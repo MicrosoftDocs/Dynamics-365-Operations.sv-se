@@ -1,6 +1,6 @@
 ---
 title: Inställning för intäktsredovisning
-description: I det här avsnittet beskrivs inställningsalternativen för intäktsredovisning och deras konsekvenser.
+description: I den här artikeln beskrivs inställningsalternativen för intäktsredovisning och deras konsekvenser.
 author: kweekley
 ms.date: 04/28/2022
 ms.topic: index-page
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 86690af303eb87335c980bd7dae3ae34ce06a2a0
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: ef294af8d3a8f39a80b98aeba293267dcca1f29b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725523"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900025"
 ---
 # <a name="revenue-recognition-setup"></a>Inställning för intäktsredovisning
 [!include [banner](../includes/banner.md)]
 
-En ny modul för **intäktsredovisning** har lagts till, inklusive menyartiklar för alla inställningar som krävs. I det här avsnittet beskrivs inställningsalternativen och deras konsekvenser.
+En ny modul för **intäktsredovisning** har lagts till, inklusive menyartiklar för alla inställningar som krävs. I den här artikeln beskrivs inställningsalternativen och deras konsekvenser.
 
 > [!NOTE]
 > Intäktsredovisningsfunktionen är nu aktiverad som standard via Funktionshantering. Om din organisation inte använder den här funktionen kan du stänga av den i arbetsytan **Funktionshantering**.

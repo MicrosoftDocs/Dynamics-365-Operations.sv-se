@@ -1,6 +1,6 @@
 ---
 title: Startsidan Anläggningstillgångar
-description: Det här avsnittet ger tillgång till resurser som kan hjälpa dig använda anläggningstillgångar för Microsoft Dynamics 365 Finance.
+description: Den här artikeln ger tillgång till resurser som kan hjälpa dig använda anläggningstillgångar för Microsoft Dynamics 365 Finance.
 author: moaamer
 ms.date: 08/31/2017
 ms.topic: index-page
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cee27143ca005f2fa42899365933ec3014aa13f6
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 57e81aaefd61eb9e695d8fe0d1c7cac4091bece7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720458"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880828"
 ---
 # <a name="fixed-assets-home-page"></a>Startsidan Anläggningstillgångar
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet ger tillgång till resurser som kan hjälpa dig använda anläggningstillgångar för Microsoft Dynamics 365 Finance. Anläggningstillgångar är artiklar av värde som ägs av en person eller en organisation. Artiklarna omfattar byggnader, fordon, mark och utrustning. 
+Den här artikeln ger tillgång till resurser som kan hjälpa dig använda anläggningstillgångar för Microsoft Dynamics 365 Finance. Anläggningstillgångar är artiklar av värde som ägs av en person eller en organisation. Artiklarna omfattar byggnader, fordon, mark och utrustning. 
 
 Det går att ställa in och ange anskaffningsinformation för anläggningstillgångar och sedan hantera tillgångarna genom att skriva av dem och ställa in en kapitaliseringströskel för att bestämma avskrivningen. Det går att beräkna justeringar för anläggningstillgångarna och även avyttra dem. När du använder Redovisning tillsammans med Anläggningstillgångar går det att visa anläggningstillgångarnas aktuella värde. Sättet på vilket anläggningstillgångar hanteras måste motsvara både internationella redovisningsstandarder och redovisningslagarna i varje land/region. Kraven kan omfatta regler för att registrera anskaffnings- och avyttringstransaktioner, avskrivningar, livstid samt uppskrivningar och nedskrivningar av anläggningstillgångar. Funktionen Anläggningstillgångar införlivar flera av dessa standarder och regler.
 
@@ -44,9 +44,9 @@ Gå till [Utgivningsplaner för Microsoft Dynamics 365](/dynamics365/release-pla
 
 #### <a name="blogs"></a>Bloggar
 
-Det finns åsikter, nyheter och annan information om bloggen [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [Microsoft Dynamics 365 Finance and Operations – ekonomibloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
+Det finns åsikter, nyheter och annan information i[bloggen Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [Microsoft Dynamics 365 Finance and Operations – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-I [partnercommunitybloggen för Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partner en resurs där de kan få mer information om vad som är nytt och trendar i Dynamics 365.
+I [partnercommunitybloggen om Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) har Microsoft Dynamics-partner en resurs där de kan få information om vad som är nytt och trendar i Dynamics 365.
 
 #### <a name="task-guides"></a>Uppgiftsguider
 Mer hjälp är tillgänglig som uppgiftsguider. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.

@@ -1,6 +1,6 @@
 ---
 title: Kostnadskonfiguration för fördelad orderhantering (DOM)
-description: I detta avsnitt beskrivs kostnadskonfigurationen för fördelad orderhantering (DOM) i Dynamics 365 Commerce.
+description: I den här artikeln beskrivs kostnadskonfigurationen för fördelad orderhantering (DOM) i Dynamics 365 Commerce.
 author: josaw1
 ms.date: 12/05/2018
 ms.topic: index-page
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-12-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ba4e24052599d431de88d00236a4a99899ca413c136f4627e69c8937541dac03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9aaff8f627adcd00be174a0b5f7bd398300cfef9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730993"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862030"
 ---
 # <a name="cost-configuration-for-distributed-order-management-dom"></a>Kostnadskonfiguration för fördelad orderhantering (DOM)
 

@@ -1,6 +1,6 @@
 ---
 title: Ändra redovisnings- eller rapporteringsvaluta
-description: Det här avsnittet förklarar hur du ändrar redovisnings- eller rapporteringsvalutan eller lägger till en rapporteringsvaluta i redovisningsinställningarna.
+description: Den här artikeln förklarar hur du ändrar redovisnings- eller rapporteringsvalutan eller lägger till en rapporteringsvaluta i redovisningsinställningarna.
 author: kweekley
 ms.date: 05/05/2021
 ms.topic: index-page
@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ff5c38193e8469cb806c525b77809844847d6c92
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b02432c8e0bdf52c2a588f67a581b78e682b1bf8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710904"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904626"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Ändra redovisnings- eller rapporteringsvaluta
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet förklarar hur du ändrar redovisnings- eller rapporteringsvalutan eller lägger till en rapporteringsvaluta i redovisningsinställningarna.
+Den här artikeln förklarar hur du ändrar redovisnings- eller rapporteringsvalutan eller lägger till en rapporteringsvaluta i redovisningsinställningarna.
 
-## <a name="symptom"></a>Symptom
+## <a name="symptom"></a>Symtom
 
 Du vill ändra redovisnings- eller rapporteringsvalutan eller lägger till en rapporteringsvaluta i redovisningsinställningarna. Det här inträffar vanligen i följande scenarier:
 
@@ -73,7 +73,7 @@ Följ dessa steg för att kopiera inställnings- och huvuddata från den aktuell
 10. Välj **Lägg till mall** i området **Valda entiteter**.
 11. Välj mallar att använda. Föreslagna mallar för en ny juridisk person inkluderar **025 - Redovisning** och **Ekonomi**. Vi rekommenderar att du granskar alla andra tillgängliga mallar för att avgöra om någon av dem gäller för dina krav.
 12. Välj **Kopiera till juridisk person** om du vill starta en batchprocess som skapar de valda enheterna och kopierar dem till målets juridiska person.
-13. När processen är klar måste du innan transaktioner bokförs gå till redovisningen och uppdatera redovisnings- och rapporteringsvalutorna enligt beskrivningen tidigare i det här ämnet.
+13. När processen är klar måste du innan transaktioner bokförs gå till redovisningen och uppdatera redovisnings- och rapporteringsvalutorna enligt beskrivningen tidigare i den här artikeln.
 
 Om du skapade en ny juridisk person för att ändra redovisnings- eller rapporteringsvalutan måste du kontrollera att startsaldon omräknas från den gamla juridiska personens valutor till de nya valutorna.
 

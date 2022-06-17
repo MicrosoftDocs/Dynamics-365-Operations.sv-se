@@ -1,6 +1,6 @@
 ---
 title: Förbättrad hantering av batchspårade artiklar
-description: I det här avsnittet beskrivs den förbättrade hanteringen av batchspårade artiklar under bokföringsprocessen av utdrag i Microsoft Dynamics 365 Commerce.
+description: I den här artikeln beskrivs den förbättrade hanteringen av batchspårade artiklar under bokföringsprocessen av utdrag i Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 513b6ca84fa71e851a5a3e4275e0b6572789e1eb
-ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
+ms.openlocfilehash: 736ab8dd21f04d7119cca6d53bfeb5e408b8cbd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485793"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881890"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>Förbättrad hantering av batchspårade artiklar
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs den förbättrade hanteringen av batchspårade artiklar under bokföringsprocessen av utdrag i Microsoft Dynamics 365 Commerce.
+I den här artikeln beskrivs den förbättrade hanteringen av batchspårade artiklar under bokföringsprocessen av utdrag i Microsoft Dynamics 365 Commerce.
 
 I Dynamics 365 Commerce-kassan kan batchnummer inte registreras för batchspårade artiklar vid försäljningstillfället. För specifika konfigurationer, när försäljning bokförs vid Commerce-administration genom kundorder- eller utdragsbokföring, förväntar sig Commerce-systemet att det finns giltiga batchnummer för batchspårade artiklar och att de används under faktureringen.
 

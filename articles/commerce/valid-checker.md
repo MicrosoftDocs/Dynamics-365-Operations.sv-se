@@ -1,6 +1,6 @@
 ---
 title: Validera butikstransaktioner för utdragsberäkning
-description: Det här ämnet beskriver funktionerna för att validera butikstransaktioner i Microsoft Dynamics 365 Commerce.
+description: Den här artikeln beskriver funktionerna för att validera butikstransaktioner i Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 01/31/2022
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 4be40189777a37495f185467050b61af47b684d7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087459"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890525"
 ---
 # <a name="validate-store-transactions-for-statement-calculation"></a>Validera butikstransaktioner för utdragsberäkning
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet beskriver funktionerna för att validera butikstransaktioner i Microsoft Dynamics 365 Commerce. Valideringsprocessen identifierar och markerar transaktioner som orsakar bokföringsfel innan de hämtas av bokföringsprocessen för utdrag.
+Den här artikeln beskriver funktionerna för att validera butikstransaktioner i Microsoft Dynamics 365 Commerce. Valideringsprocessen identifierar och markerar transaktioner som orsakar bokföringsfel innan de hämtas av bokföringsprocessen för utdrag.
 
 När du försöker bokföra ett utdrag kan valideringsprocessen misslyckas på grund av inkonsekvent data i handelstransaktionsregistren. Här följer några exempel på faktorer som kan orsaka sådana inkonsekvenser:
 

@@ -1,6 +1,6 @@
 ---
 title: Intäktsredovisning på försäljningsorder
-description: I det här avsnittet beskrivs de grundläggande funktionerna för intäktsredovisning på försäljningsorder och fakturor. Intäktsredovisning kan användas för försäljningsorder och motsvarande faktura som skapas från försäljningsordern.
+description: I den här artikeln beskrivs de grundläggande funktionerna för intäktsredovisning på försäljningsorder och fakturor. Intäktsredovisning kan användas för försäljningsorder och motsvarande faktura som skapas från försäljningsordern.
 author: kweekley
 ms.date: 08/24/2018
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 7aaa5e7c3b568400c72a1a84b5f29082579aeeae
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 5df7341160940f5c5db0dd4c5d86e4d9698d22e2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725496"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899969"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Intäktsredovisning på försäljningsorder
 
@@ -27,10 +27,10 @@ ms.locfileid: "8725496"
 > [!NOTE]
 > Intäktsredovisningsfunktionen kan inte aktiveras via funktionshantering. För närvarande måste du använda konfigurationsnycklar för att aktivera den.
 
-I det här avsnittet beskrivs de grundläggande funktionerna för intäktsredovisning på försäljningsorder och fakturor. Intäktsredovisning kan användas för en försäljningsorder och motsvarande faktura som skapas från försäljningsordern. Försäljningsordern kan även skapas via ett tids- och materialprojekt.
+I den här artikeln beskrivs de grundläggande funktionerna för intäktsredovisning på försäljningsorder och fakturor. Intäktsredovisning kan användas för en försäljningsorder och motsvarande faktura som skapas från försäljningsordern. Försäljningsordern kan även skapas via ett tids- och materialprojekt.
 
 > [!NOTE]
-> I illustrationerna i det här avsnittet har kolumner dolts eller lagts till i rutnäten så att begreppen blir lättare att förstå. Därför kan sidorna och data i illustrationerna skilja sig från vad du ser i produkten.
+> I illustrationerna i den här artikeln har kolumner dolts eller lagts till i rutnäten så att begreppen blir enklare att förstå. Därför kan sidorna och data i illustrationerna skilja sig från vad du ser i produkten.
 
 ## <a name="enter-a-sales-order"></a>Registrera en försäljningsorder
 

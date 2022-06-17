@@ -1,6 +1,6 @@
 ---
-title: Startsida för Leverantörsreskontra
-description: Det här ämnet ger en översikt över leverantörsreskontra.
+title: Startsida för leverantörsreskontra
+description: Den här artikeln ger en översikt över leverantörsreskontra.
 author: sunfzam
 ms.date: 02/15/2019
 ms.topic: index-page
@@ -8,27 +8,27 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "21901"
 - intro-internal
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce768ecaa668f2c69d6753401eaa145b6fddc5ec
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 5ed6aacb94de14bdb72185cd528f62e74cd3cc15
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595297"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946113"
 ---
-# <a name="accounts-payable-home-page"></a>Startsida för Leverantörsreskontra
+# <a name="accounts-payable-home-page"></a>Startsida för leverantörsreskontra
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet ger en översikt över leverantörsreskontra. 
+Den här artikeln ger en översikt över leverantörsreskontra. 
 
 Det går att registrera leverantörsfakturor manuellt eller ta emot dem elektroniskt genom en datatabell. När fakturorna har angetts eller tagits emot går det att granska och godkänna dem med en fakturagodkännandejournal eller sidan **Leverantörsfaktura**. Det går att använda fakturamatchning, leverantörsfakturapolicyer och arbetsflöden för att automatisera granskningen, så att fakturor som uppfyller vissa villkor godkänns automatiskt och de återstående fakturorna flaggas för granskning av en auktoriserad användare.
 
@@ -126,13 +126,13 @@ Gå till [utgivningsplaner för Microsoft Dynamics 365](/dynamics365/release-pla
 
 #### <a name="blogs"></a>Bloggar
 
-Det finns åsikter, nyheter och annan information om leverantörsreskontra och andra lösningar i [bloggen om Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [bloggen om Microsoft Dynamics 365 Finance – Ekonomi](https://community.dynamics.com/365/financeandoperations/b/financials).
+Du hittar åsikter, nyheter och annan information om leverantörsreskontra och andra lösningar i[bloggen Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [Microsoft Dynamics 365 Finance – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partner en resurs där de kan få mer information om vad som är nytt och trendar i Dynamics 365.
+I [partnercommunitybloggen om Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) har Microsoft Dynamics-partner en resurs där de kan få information om vad som är nytt och trendar i Dynamics 365.
 
 #### <a name="community-blogs"></a>Community-bloggar
 
-[Hantera leverantörsskulder i Dynamics 365 Finance](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
+[Hantera leverantörsreskontra i Dynamics 365 Finance](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
 
 #### <a name="task-guides"></a>Uppgiftsguider
 Mer hjälp är tillgänglig som uppgiftsguider i appen. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.

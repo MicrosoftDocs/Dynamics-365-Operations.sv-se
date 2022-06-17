@@ -1,6 +1,6 @@
 ---
 title: Redovisa uppskjuten intäkt
-description: I det här avsnittet finns information om hur du redovisar intäkter med hjälp av intäktsredovisningsfunktionen.
+description: I den här artikeln finns information om hur du redovisar intäkter med hjälp av intäktsredovisningsfunktionen.
 author: kweekley
 ms.date: 08/24/2018
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 42e9aa20eb6f4a1c14f83c5a18a4699489a932a3
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 638e56c9bbbe0b377e804aa2ff55ffe4eded21f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725944"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902556"
 ---
 # <a name="recognize-deferred-revenue"></a>Redovisa uppskjuten intäkt
 
@@ -27,7 +27,7 @@ ms.locfileid: "8725944"
 > [!NOTE]
 > Intäktsredovisningsfunktionen kan inte aktiveras via funktionshantering. För närvarande måste du använda konfigurationsnycklar för att aktivera den.
 
-I det här avsnittet beskrivs hur intäkter redovisas i intäktsplanen. När en faktura har bokförts för en försäljningsorder skapas en intäktsredovisningsplan för varje försäljningsorderrad som har en intäktsplan. Intäktsplaner på en rad används för att bestämma om radens intäkt ska skjutas upp eller inte.
+I den här artikeln beskrivs hur intäkter redovisas i intäktsplanen. När en faktura har bokförts för en försäljningsorder skapas en intäktsredovisningsplan för varje försäljningsorderrad som har en intäktsplan. Intäktsplaner på en rad används för att bestämma om radens intäkt ska skjutas upp eller inte.
 
 ## <a name="view-revenue-recognition-schedule-details"></a>Visa detaljer i intäktsredovisningsplanen
 

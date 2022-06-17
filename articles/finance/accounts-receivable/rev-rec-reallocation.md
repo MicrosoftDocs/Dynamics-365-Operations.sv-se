@@ -1,6 +1,6 @@
 ---
 title: Omallokering vid intäktsredovisning
-description: Det här avsnittet innehåller information om omallokering, vilket gör det möjligt för organisationer att beräkna om intäktspriser när villkoren för en avyttring ändras. Det innehåller länkar till andra avsnitt som beskriver hur du redovisar intäkter i flera olika scenarier.
+description: Den här artikeln innehåller information om omallokering, vilket gör att organisationer kan beräkna om intäktspriser när villkoren för en avyttring ändras. Det innehåller länkar till andra avsnitt som beskriver hur du redovisar intäkter i flera olika scenarier.
 author: kweekley
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7528202ed140dc2c0a7fc8c595178f155c3c1f75
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a79288fd69a2e7780ff03952b05b99db2ed88e41
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726139"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903432"
 ---
 # <a name="revenue-recognition-reallocation"></a>Omallokering vid intäktsredovisning
 
@@ -58,7 +58,7 @@ En parameter påverkar omallokeringsprocessen.
 
 Eftersom omallokering kan göras på en försäljningsorder som är delvis eller helt fakturerad, måste eventuella tidigare redovisningsposter för fakturan korrigeras med de nya, omallokerade intäktspriserna. Korrigeringen görs genom att den ursprungliga fakturans redovisningspost återförs och en ny redovisningspost bokförs som baseras på de omallokerade intäktspriserna.
 
-Varje organisation måste bestämma om korrigeringen enbart ska uppdatera redovisningen eller om den även ska uppdatera kundreskontra. Det beslut som fattas avgör vilken lämplig inställning som ska anges i alternativet **Bokför fakturakorrigeringar i Kundreskontra** på fliken **Intäktsredovisning** på sidan **Redovisningsparametrar** (**Intäktsredovisning \> Inställningar \> Redovisningsparametrar**). Vilken inställning som ska väljas beror på scenariot. Mer information om möjliga scenarier finns i länkarna i avsnittet [Scenarier för omallokering](#scenarios-for-reallocation)senare i det här avsnittet.
+Varje organisation måste bestämma om korrigeringen enbart ska uppdatera redovisningen eller om den även ska uppdatera kundreskontra. Det beslut som fattas avgör vilken lämplig inställning som ska anges i alternativet **Bokför fakturakorrigeringar i Kundreskontra** på fliken **Intäktsredovisning** på sidan **Redovisningsparametrar** (**Intäktsredovisning \> Inställningar \> Redovisningsparametrar**). Vilken inställning som ska väljas beror på scenariot. Mer information om möjliga scenarier finns i länkarna i avsnittet [Scenarier för omallokering](#scenarios-for-reallocation) senare i den här artikeln.
 
 [![Fliken Intäktsredovisning på sidan Redovisningsparametrar.](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
@@ -90,7 +90,7 @@ Du startar omallokeringsprocessen genom att välja **Allokera om pris med nya or
 
 [![Sidan Allokera om pris med nya orderrader.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-Det övre rutnätet på sidan **Allokera om pris med nya orderrader** har namnet **Försäljning**. Här visas försäljningsorder för kunden. Välj de försäljningsorder som ska allokeras om. Om en försäljningsorder har ett omallokerings-ID har den redan markerats för omallokering av en annan användare. Om en eller flera försäljningsorder tidigare har allokerats om och måste inkluderas i en annan omallokering, måste omallokeringen av dessa försäljningsorder ångras först. De kan sedan inkluderas i en ny omallokering. Mer detaljerad information finns i avsnitten [Ångra en omallokering](#undo-a-reallocation) och [Allokera om flera gånger](#reallocate-multiple-times) senare i det här avsnittet.
+Det övre rutnätet på sidan **Allokera om pris med nya orderrader** har namnet **Försäljning**. Här visas försäljningsorder för kunden. Välj de försäljningsorder som ska allokeras om. Om en försäljningsorder har ett omallokerings-ID har den redan markerats för omallokering av en annan användare. Om en eller flera försäljningsorder tidigare har allokerats om och måste inkluderas i en annan omallokering, måste omallokeringen av dessa försäljningsorder ångras först. De kan sedan inkluderas i en ny omallokering. Mer detaljerad information finns i avsnitten [Ångra en omallokering](#undo-a-reallocation) och [Allokera om flera gånger](#reallocate-multiple-times) senare i den här artikeln.
 
 Det nedre rutnätet på sidan har namnet **Rader**. När du har valt en eller flera försäljningsorder i rutnätet **Försäljning** visar rutnätet **Rader** försäljningsorderraderna. Välj de försäljningsorderrader som ska allokeras om. Om du bara har valt en försäljningsorder måste raderna i samma försäljningsorder allokeras om. Denna situation kan uppstå när en av försäljningsorderraderna har fakturerats tidigare, och sedan har en ny rad lagts till, eller när en befintlig rad har tagits bort eller annullerats. Om en rad har tagits bort visas den inte i rutnätet. Därför kan den inte väljas. Den beaktas dock fortfarande när omallokeringsprocessen körs.
 

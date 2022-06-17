@@ -1,6 +1,6 @@
 ---
 title: Omallokering vid intäktsredovisning – scenario 3
-description: Det här avsnittet innehåller en genomgång av ett omallokeringsscenario där en ny rad läggs till en befintlig, fakturerad försäljningsorder. När en ny artikel läggs till i ett kontrakt kan den läggas till i en ny försäljningsorder eller i den befintliga försäljningsordern.
+description: Den här artikeln innehåller en genomgång av ett omallokeringsscenario där en ny rad läggs till en befintlig, fakturerad försäljningsorder. När en ny artikel läggs till i ett kontrakt kan den läggas till i en ny försäljningsorder eller i den befintliga försäljningsordern.
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3b3b41b09cc9f4c56fdb04f6a2c4156bc1637699
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7aa62406a80eb3381206172caaae457ec71b7bf8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726589"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904828"
 ---
 # <a name="revenue-recognition-reallocation--scenario-3"></a>Omallokering vid intäktsredovisning – scenario 3
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en genomgång av ett omallokeringsscenario där en ny rad läggs till en befintlig, fakturerad försäljningsorder. När en ny artikel läggs till i ett kontrakt kan den läggas till i en ny försäljningsorder eller i den befintliga försäljningsordern. I det här scenariot visas även vad som händer när Kundreskontra uppdateras på grund av omallokeringen.
+Den här artikeln innehåller en genomgång av ett omallokeringsscenario där en ny rad läggs till en befintlig, fakturerad försäljningsorder. När en ny artikel läggs till i ett kontrakt kan den läggas till i en ny försäljningsorder eller i den befintliga försäljningsordern. I det här scenariot visas även vad som händer när Kundreskontra uppdateras på grund av omallokeringen.
 
 För det här scenariot ska alternativet **Bokför fakturakorrigeringar i Kundreskontra** anges till **Ja** på fliken **Intäktsredovisning** på sidan **Redovisningsparametrar** (**Intäktsredovisning \> Inställningar \> Redovisningsparametrar**).
 

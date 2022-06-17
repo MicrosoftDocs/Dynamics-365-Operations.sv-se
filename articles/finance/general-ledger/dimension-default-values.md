@@ -1,6 +1,6 @@
 ---
 title: Ekonomiska standarddimensioner i redovisningsjournaler
-description: Det här ämnet beskriver regler som definierar hur ekonomiska dimensionsvärden ställs in i transaktioner som anges genom redovisningsjournaler. Det innehåller även information om scenarier där fasta dimensioner används.
+description: Den här artikeln beskriver regler som definierar hur värden för ekonomiska dimensioner ställs in i transaktioner som anges genom redovisningsjournaler. Det innehåller även information om scenarier där fasta dimensioner används.
 author: kweekley
 ms.date: 09/04/2021
 ms.topic: index-page
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 51235b8a5dac50aad5031456760c970e50506d66
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 8d0fcf836e22207baae562801fb082d735df0f96
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713118"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907945"
 ---
 # <a name="default-financial-dimensions-on-financial-journals"></a>Ekonomiska standarddimensioner i redovisningsjournaler
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet beskriver regler som definierar hur ekonomiska dimensionsvärden ställs in i transaktioner som anges genom redovisningsjournaler (men inte genom lager- eller projektjournaler). Det innehåller även information om scenarier där fasta dimensioner används.
+Den här artikeln beskriver regler som definierar hur värden för ekonomiska dimensioner ställs in i transaktioner som anges genom redovisningsjournaler (men inte genom lager- eller projektjournaler). Det innehåller även information om scenarier där fasta dimensioner används.
 
-## <a name="symptom"></a>Symptom
+## <a name="symptom"></a>Symtom
 
-Ekonomiska dimensionsvärden ställs inte in som förväntat konto eller motkonto i en redovisningsjournal. Följande scenarier är två exempel:
+Värden för ekonomiska dimensioner  ställs inte in som förväntat konto eller motkonto i en redovisningsjournal. Följande scenarier är två exempel:
 
 En verifikation registreras i en journal som är en allmän journal. Kontot är ett leverantörskonto och motkontot är ett bankkonto. Leverantörens ekonomiska dimensioner anges som standard på kontot, men bankens ekonomiska dimensioner anges inte som standard på motkontot. I stället anges dimensionsvärdena från kontot som standard på motkontot.
 
@@ -97,7 +97,7 @@ Använd samma ekonomiska dimensioner som du definierade för journalnamnet i sce
 
 Skapa en ny allmän journal som använder namnet **GenJrn**. Ändra standardvärdet för **BUSINESSUNIT** från **001** till **002** på fliken **Ekonomiska dimensioner**.
 
-Gå till **Rader**. Välj **Kund** i fältet **Kontotyp** och ange sedan **US-001** i fältet **Konto**. Välj **Ekonomiska dimensioner \> Konto** för att visa ekonomiska dimensioner för kontotyper som inte är redovisningskonton. Följande standardvärden för de ekonomiska dimensionsvärdena anges:
+Gå till **Rader**. Välj **Kund** i fältet **Kontotyp** och ange sedan **US-001** i fältet **Konto**. Välj **Ekonomiska dimensioner \> Konto** för att visa ekonomiska dimensioner för kontotyper som inte är redovisningskonton. Följande standardvärden för ekonomiska dimensioner anges:
 
 - **BUSINESSUNIT:** 002 – standardvärdet tas från journalrubriken. Värdet **001** anges inte som standard från kunden US-001 eftersom ett standardvärde redan har angetts.
 - **COSTCENTER:** 007 – standardvärdet tas från inställningarna för kund US-001.
@@ -111,7 +111,7 @@ Välj **Redovisning** i **Motkontotyp** när du är tillbaka på raden och ange 
 
 ### <a name="scenario-3"></a>Scenario 3
 
-Lägg till en ny rad i samma journal som du använde till scenario 2. Välj **Redovisning** i fältet **Kontotyp** och ange sedan **170150** i fältet **Konto**. Rensa standarddimensionsvärdena så att endast huvudkontot 170150 finns kvar. Välj **Kund** i fältet **Motkontotyp** och ange sedan **US-001** i fältet **Motkonto**. Följande standardvärden för de ekonomiska dimensionsvärdena anges:
+Lägg till en ny rad i samma journal som du använde till scenario 2. Välj **Redovisning** i fältet **Kontotyp** och ange sedan **170150** i fältet **Konto**. Rensa standarddimensionsvärdena så att endast huvudkontot 170150 finns kvar. Välj **Kund** i fältet **Motkontotyp** och ange sedan **US-001** i fältet **Motkonto**. Följande standardvärden för ekonomiska dimensioner anges:
 
 - **BUSINESSUNIT:** 002 – standardvärdet tas från journalrubriken, eftersom dimensionsvärdet för Konto är tomt. Värdet **001** anges inte som standard från kunden US-001 eftersom ett standardvärde redan har angetts från journalrubriken. Om värdet **BUSINESSUNIT** har lämnats tomt med avsikt, måste du även ta bort den ekonomiska dimensionen i motkontot.
 - **COSTCENTER:** 007 – standardvärdet tas från kunden US-001, eftersom dimensionsvärdet för Konto och journalrubrikens dimensionsvärde är tomma. Om värdet **COSTCENTER** har lämnats tomt med avsikt, måste du även ta bort den ekonomiska dimensionen i motkontot.

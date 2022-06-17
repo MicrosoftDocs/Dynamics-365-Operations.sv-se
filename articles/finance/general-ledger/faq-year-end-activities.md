@@ -1,6 +1,6 @@
 ---
 title: Vanliga frågor och svar om aktiviteter för årsbokslut
-description: Avsnittet innehåller frågor som kan uppkomma när du stänger ett år och svar som kan hjälpa till med aktiviteter vid årsbokslut.
+description: Artikeln innehåller frågor som kan uppkomma när du stänger ett år och svar som kan hjälpa till med aktiviteter vid årsbokslut.
 author: moaamer
 ms.date: 12/21/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 19d23c2c5a8fabd6799c6240c25f3ede4064c001
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1c5aca6180821dfc9fd1d475d4726c82acdf4d78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725612"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865752"
 ---
 # <a name="year-end-activities-faq"></a>Vanliga frågor och svar om aktiviteter för årsbokslut 
 
 [!include [banner](../includes/banner.md)]
 
-Avsnittet innehåller frågor som kan uppkomma när du stänger ett år och svar som kan hjälpa till med aktiviteter vid årsbokslut. Informationen i avsnittet rör sig framförallt om frågor kring aktiviteter vid årsbokslut i redovisning och leverantörsreskontra.
+Artikeln innehåller frågor som kan uppkomma när du stänger ett år och svar som kan hjälpa till med aktiviteter vid årsbokslut. Informationen i artikeln rör sig framförallt om frågor kring aktiviteter vid årsbokslut i redovisning och leverantörsreskontra.
 
 ## <a name="general-ledger-year-end-enhancements"></a>Förbättringar av årsslut i redovisning 
 Version 10.0.20 innehåller en förbättring av årsbokslut som aktiveras som standard när du börjar med version 10.0.25. Om din organisation använder en version tidigare än 10.0.25 rekommenderar vi att du aktiverar funktionen innan du påbörjar stängningen för årsbokslut. Innan du kan använda funktionen måste den aktiveras i ditt system. Administratörer kan använda arbetsytan Funktionshantering för att kontrollera funktionens status och aktivera den vid behov. Funktionen visas på följande sätt:
@@ -75,7 +75,7 @@ De onödiga dimensionsuppsättningarna påverkar också batchjobbet **BudgetDime
 [![Ekonomiska dimensionsuppsättningar.](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### <a name="year-end-close-template-configuration"></a>Konfiguration av mall för årsbokslut
-Med mallen för årsbokslut kan organisationer välja nivån på ekonomiska dimensioner som ska underhållas när resultatsaldon ska överföras till balanserade vinstmedel. Med dessa inställningarna kan en organisation underhålla de detaljerade ekonomiska dimensionerna (**Stäng alla**) när saldona överförs till balanserade vinstmedel eller välja att summera beloppen till ett enda dimensionsvärde (**Stäng enstaka**). Detta kan definieras för varje ekonomisk dimension. Mer information om de här inställningarna finns i avsnittet [Årsbokslut](year-end-close.md).
+Med mallen för årsbokslut kan organisationer välja nivån på ekonomiska dimensioner som ska underhållas när resultatsaldon ska överföras till balanserade vinstmedel. Med dessa inställningarna kan en organisation underhålla de detaljerade ekonomiska dimensionerna (**Stäng alla**) när saldona överförs till balanserade vinstmedel eller välja att summera beloppen till ett enda dimensionsvärde (**Stäng enstaka**). Detta kan definieras för varje ekonomisk dimension. Mer information om de här inställningarna finns i artikeln [Årsbokslut](year-end-close.md).
 
 Vi rekommenderar att du utvärderar organisationens behov och, om det går, stänga så många dimensioner som möjligt med årsslutsalternativet **Stäng enstaka** för att förbättra prestandan. Om du gör stängningen med ett enskilt dimensionsvärde (vilket även kan vara ett tomt värde) beräknar systemet färre detaljer när saldon för kontoposter för balanserade vinstmedel ska beräknas.
 

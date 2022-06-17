@@ -60,9 +60,11 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurera tjänstuppdateringar
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
+                - name: För- och efterservice
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/finance/toc.json
                 - name: Pausa tjänstuppdateringar
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/finance/toc.json
-                - name: Få meddelanden om tjänstuppdateringar
+                - name: Få aviseringar om tjänstuppdateringar
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Automatisering av datauppgift
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/finance/toc.json
@@ -172,7 +174,7 @@
               items:
                 - name: Livscykelhantering för implementering – startsida
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/finance/toc.json
-                - name: Arkitektur för Ekonomi och drift-appar
+                - name: Arkitektur för appar för ekonomi och drift
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/index
@@ -1684,6 +1686,8 @@
                       href: general-ledger/sales-tax-calculation-methods-origin-field.md
                     - name: Beräkningsalternativ för hela beloppet och intervall för momskoder
                       href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                    - name: Beräkning och avrundning av moms
+                      href: general-ledger/sales-tax-calculation-rounding.md
                     - name: Momsberäkning för allmänna journalrader
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: Beräkna och justera moms på en leverantörsfaktura
@@ -2168,6 +2172,8 @@
                   href: localizations/emea-est-vat-statement-details.md
                 - name: Estnisk Intrastat
                   href: localizations/emea-est-intrastat.md
+                - name: Lista över försäljning inom EU
+                  href: localizations/emea-est-eu-sales-list.md
             - name: Europa
               items:
                 - name: Europa – översikt
@@ -2452,6 +2458,8 @@
                   href: localizations/emea-hun-online-invoicing.md
                 - name: Momsrapporter för Ungern
                   href: localizations/emea-hun-sales-tax-reports.md
+                - name: Ungersk Intrastat
+                  href: localizations/emea-hun-intrastat.md
                 - name: Beräkningar av uppskjuten moms
                   href: localizations/emea-hun-deferred-vat.md
             - name: Island
@@ -3112,6 +3120,8 @@
                   href: localizations/emea-lva-vat-statement-details.md
                 - name: Lettisk Intrastat
                   href: localizations/emea-lva-intrastat.md
+                - name: Lista över försäljning inom EU
+                  href: localizations/emea-lva-eu-sales-list.md
             - name: Litauen
               items:
                 - name: Litauen – översikt
@@ -3130,6 +3140,8 @@
                   href: localizations/emea-ltu-saf-t.md
                 - name: Skapa överföringsdokument för varurörelse inom ett företag
                   href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
+                - name: Lista över försäljning inom EU
+                  href: localizations/emea-ltu-eu-sales-list.md
             - name: Malaysia
               items:
                 - name: Malaysia – översikt
@@ -4483,9 +4495,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: Felsöka prestandaproblem i ER-konfigurationer
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
+                    - name: Minska antal registerfält som hämtas vid körning
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/finance/toc.json
                 - name: Hantering av affärsdokument
                   items:
-                    - name: Hantering av affärsdokument – översikt
+                    - name: Översikt över hantering av affärsdokument
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
                     - name: Användargränssnitt för nytt dokument i Hantering av affärsdokument
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/finance/toc.json

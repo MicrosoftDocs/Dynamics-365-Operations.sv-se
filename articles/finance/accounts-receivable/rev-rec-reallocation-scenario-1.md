@@ -1,6 +1,6 @@
 ---
 title: Omallokering vid intäktsredovisning – scenario 1
-description: Det här avsnittet innehåller en genomgång av ett omallokeringsscenario där två försäljningsorder registreras, men de bekräftas bara. Samma scenario kommer att ge liknande resultat om fler än två försäljningsorder är i ett bekräftat tillstånd.
+description: Den här artikeln innehåller en genomgång av ett omallokeringsscenario där två försäljningsorder registreras, men de bekräftas bara. Samma scenario kommer att ge liknande resultat om fler än två försäljningsorder är i ett bekräftat tillstånd.
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cd094840e16a0ab19e234148e4ef40c454315d96
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 597c83388937cff689748889eff29d6be1b8341a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725804"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876280"
 ---
 # <a name="revenue-recognition-reallocation--scenario-1"></a>Omallokering vid intäktsredovisning – scenario 1
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en genomgång av ett omallokeringsscenario där två försäljningsorder registreras, men de bekräftas bara. Samma scenario kommer att ge liknande resultat om fler än två försäljningsorder är i ett bekräftat tillstånd.
+Den här artikeln innehåller en genomgång av ett omallokeringsscenario där två försäljningsorder registreras, men de bekräftas bara. Samma scenario kommer att ge liknande resultat om fler än två försäljningsorder är i ett bekräftat tillstånd.
 
 För det här scenariot ska alternativet **Bokför fakturakorrigeringar i Kundreskontra** anges till **Nej** på fliken **Intäktsredovisning** på sidan **Redovisningsparametrar** (**Intäktsredovisning \> Inställningar \> Redovisningsparametrar**).
 

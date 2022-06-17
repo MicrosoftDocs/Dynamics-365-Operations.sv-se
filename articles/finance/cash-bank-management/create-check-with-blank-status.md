@@ -1,6 +1,6 @@
 ---
 title: Skapa checkar med statusvärdet Tom
-description: I det här avsnittet beskrivs hur du skapar en tom check för ett bankkonto.
+description: I den här artikeln beskrivs hur du skapar en tom check för ett bankkonto.
 author: abruer
 ms.date: 10/26/2017
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b3a0fbb26f135e567bf6af7b2f10b39a28be4c9e
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 834e11e0e359521c674e2b6fd78c93dcb23961a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717228"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861456"
 ---
 # <a name="create-checks-that-have-blank-status"></a>Skapa checkar med statusvärdet Tom
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skapar tomma checkar. Du kan till exempel skapa en tom check om du vill registrera en check som har skadats och inte kan användas för betalning.
+I den här artikeln beskrivs hur du skapar tomma checkar. Du kan till exempel skapa en tom check om du vill registrera en check som har skadats och inte kan användas för betalning.
 
 Du utför underhåll för checkar på sidan **Checkar**. Du kan till exempel skapa nya checknummer och ta bort checkar. Du kan också skapa checkar som har statusvärdet **Tom**. När du har skapat tomma checkar kan de inte tas bort eller återanvändas i systemet.
 

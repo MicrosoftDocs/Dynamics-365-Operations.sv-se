@@ -1,6 +1,6 @@
 ---
 title: Supply Chain Management – startsida
-description: Den här sidan innehåller en lista med hjälpavsnitt och andra resurser för funktionerna i Supply Chain Management.
+description: Den här sidan innehåller en lista med hjälpartiklar och andra resurser för funktionerna i Supply Chain Management.
 author: kamaybac
 ms.date: 09/15/2021
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9ae75f33d96261691eee52c963a1f1f00c75b0de
-ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
+ms.openlocfilehash: 189239ad6142af200e41cfe9cfcdbb56be65b0b7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "8789224"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879088"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management – startsida
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller en lista med hjälpavsnitt och andra resurser i Dynamics 365 Supply Chain Management.
+Den här artikeln innehåller en lista med hjälpartiklar och andra resurser i Dynamics 365 Supply Chain Management.
 
 ## <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
@@ -93,7 +93,7 @@ I följande inspelningar från en teknisk konferens diskuteras funktionaliteten 
 
 ## <a name="blogs"></a>Bloggar
 
-Det finns många avsnitt om tillverkning och hantering av underleverantörer i [teambloggen Dynamics AX Manufacturing R&D](/archive/blogs/axmfg/) och [teambloggen Supply Chain Management i Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De flesta av inläggen skrevs för den föregående versionen, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
+Det finns många artiklar om tillverkning och hantering av underleverantörer i [teambloggen Dynamics AX Manufacturing R&D](/archive/blogs/axmfg/) och [teambloggen Supply Chain Management i Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De flesta av inläggen skrevs för den föregående versionen, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
 
 ## <a name="white-papers"></a>White paper
 

@@ -1,10 +1,10 @@
-- name: Utveckling och administration för Ekonomi och drift‑appar
+- name: Utveckling och administration för appar för ekonomi och drift
   items:
-    - name: Utveckling och administration för Ekonomi och drift‑appar
+    - name: Utveckling och administration för appar för ekonomi och drift
       items:
         - name: Dokumentation för appen Ekonomi och drift
           href: ../fin-ops/index.md
-        - name: Utveckling och administration för Ekonomi och drift-appar
+        - name: Utveckling och administration för appar för ekonomi och drift
           href: index.md
         - name: Nyheter och ändringar
           items:
@@ -202,7 +202,7 @@
                   href: data-entities/data-synchronize-date-and-time.md
                 - name: Importera verifikationer med hjälp av enheten Allmän journal
                   href: data-entities/tips-tricks-import-general-journal-entity.md
-                - name: Optimera datamigrering för Ekonomi och drift-appar
+                - name: Optimera datamigrering för appar för ekonomi och drift
                   href: sysadmin/optimize-data-migration.md
             - name: Utveckling för datatabeller
               items:
@@ -408,8 +408,10 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Konfigurera proxyservrar för lokala miljöer
                       href: deployment/onprem-reverseproxy.md
-                    - name: Konfigurera distributionslager app för lokala distributioner
+                    - name: Konfigurera lagerstyrningsappen för lokala distributioner
                       href: deployment/warehousing-for-on-premise-deployments.md
+                    - name: Aktivera RSAT i Finance + Operations (on-premises)-miljöer
+                      href: deployment/onprem-rsat-configuration.md
                     - name: Installera nätverksskrivare i lokala miljöer
                       href: analytics/install-network-printer-onprem.md
                     - name: Lokal diagnostik
@@ -1048,6 +1050,8 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Självstudier för Azure DevOps-tillägg (allmänt tillgänglig förhandsversion)
                   href: lifecycle-services/dts-ado-tutorial.md
+                - name: Tillägg för Dynamics 365 Translation Service Visual Studio Code (allmänt tillgänglig förhandsversion)
+                  href: lifecycle-services/dts-vscode-doc.md
         - name: Microsoft Power Platform-integration
           items:
             - name: Översikt
@@ -1076,9 +1080,9 @@
                       href: data-entities/dual-write/sync-limits.md
                     - name: Inställning av dubbelriktad skrivning från Lifecycle Services
                       href: data-entities/dual-write/lcs-setup.md
-                    - name: Aktivera dubbelriktad skrivning för befintliga Ekonomi och drift-appar
+                    - name: Aktivera dubbelriktad skrivning för befintliga appar för ekonomi och drift
                       items:
-                        - name: Aktivera dubbelriktad skrivning för befintliga Ekonomi och drift-appar
+                        - name: Aktivera dubbelriktad skrivning för befintliga appar för ekonomi och drift
                           href: data-entities/dual-write/enable-dual-write.md
                         - name: Systemkrav och förutsättningar
                           href: data-entities/dual-write/requirements-and-prerequisites.md
@@ -1192,15 +1196,15 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
                         - name: Felsöka problem med livesynkronisering
                           href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                        - name: Felsöka problem med dubbelriktad skrivning i Ekonomi och drift-appar
+                        - name: Felsöka problem med dubbelriktad skrivning i appar för ekonomi och drift
                           href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                         - name: Felsök problem i part- och global adressboksmodell
                           href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
                         - name: Felsöka problem som rör lösningsmedvetande
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                        - name: Felsöka problem från uppgraderingar av Ekonomi och drift-appar
+                        - name: Felsöka problem från uppgraderingar av appar för ekonomi och drift
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Verifiera konfiguration av dubbelriktad skrivning i Ekonomi och drift-appar och Dataverse
+                        - name: Verifiera konfiguration av dubbelriktad skrivning i appar för ekonomi och drift och Dataverse
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                         - name: Felkoder för hälsokontrollen av tabellmappning
                           href: data-entities/dual-write/table-map-health-check.md
@@ -1574,9 +1578,9 @@
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
             - name: Få support för Ekonomi och drift som drivs av 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
-            - name: Konfigurera teknisk support för Ekonomi och drift-appar
+            - name: Konfigurera teknisk support för appar för ekonomi och drift
               href: lifecycle-services/support-experience.md
-            - name: Hantera upplevelser av support för Ekonomi och drift-appar
+            - name: Hantera upplevelser av support för appar för ekonomi och drift
               href: lifecycle-services/cloud-powered-support-lcs.md
             - name: Produktionssupport och övervakning
               href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
@@ -1604,7 +1608,7 @@
                   href: sysadmin/role-based-security.md
                 - name: Säkerhetsarkitektur
                   href: sysadmin/security-architecture.md
-                - name: Kryptering i Ekonomi och drift-appar
+                - name: Kryptering i appar för ekonomi och drift
                   href: sysadmin/encryption.md
                 - name: Ange tidsgräns för inaktiv session
                   href: sysadmin/session-idle-timeout.md

@@ -1,6 +1,6 @@
 ---
 title: Globaliseringsresurser
-description: Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika funktioner och erbjudanden.
+description: Den här artikeln innehåller listor med resurser med mer information om lands- och regionspecifika funktioner och erbjudanden.
 author: kfend
 ms.date: 02/19/2021
 ms.topic: index-page
@@ -14,27 +14,27 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4935d54a911701fda4740e3a1116c139730ceb08
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747525"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866549"
 ---
 # <a name="globalization-resources"></a>Globaliseringsresurser
 
 ## <a name="local-and-regional-deployments"></a>Lokala och regionala distributioner
 Om dina myndighetsregleringar kräver att data lagras på ett annat sätt eller att de underhålls på ett annat sätt vad som krävs för andra länder/regioner, kan det finnas lands-/regionspecifika krav som du måste ta hänsyn till under distributionen. Följande resurser kan vara relevanta för dig:
 
-[Finance and Operations-apparna av 21Vianet i Kina](../deployment/china-local-deployment.md)
+[Appar för ekonomi och drift som drivs av 21Vianet i Kina](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Lokaliserings- och regelfunktioner
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations-apparna innehåller funktioner för länder/regioner dokumenterade i [tillgänglighetsguiden för lokaliserade och översatta produkter](https://aka.ms/dynamics_365_international_availability_deck). Den här funktionen aktiveras grundad på den aktiva juridiska personens primära adress. 
+Appar för ekonomi och drift innehåller funktioner för länder/regioner dokumenterade i [tillgänglighetsguiden för lokaliserade och översatta produkter](https://aka.ms/dynamics_365_international_availability_deck). Den här funktionen aktiveras grundad på den aktiva juridiska personens primära adress. 
 
-Det här avsnittet innehåller listor över resurser som kan hjälpa dig att göra följande: 
+Den här artikeln innehåller listor över resurser som kan hjälpa dig göra följande: 
 - Läs mer om hur du utvecklar lands-/regionspecifika lösningar.
 - Hämta lands-/regionspecifika uppdateringar.
 - Skicka och granska regelnotifieringar.
@@ -62,8 +62,8 @@ Följande resurser innehåller information om planerade och nya lokaliseringsfun
 #### <a name="dynamics-365-release-plans"></a>Utgivningsplaner för Dynamics 365
 [Utgivningsplaner för Dynamics 365](/business-applications-release-notes/) innehåller beskrivningar av förbättrade funktioner som planeras för affärsapparna och applattformen för Dynamics 365. 
 
-#### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations-appar – Nyheter
-[Nyheter och ändringar på startsidan för Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) innehåller de funktioner som ingår i olika versioner av Finance and Operations-apparna.
+#### <a name="finance-and-operations-apps-whats-new"></a>Nyheter i appar för ekonomi och drift
+Listan [Nyheter och ändringar på startsidan för Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) innehåller de funktioner som ingår i olika versioner av appar för ekonomi och drift.
 
 ### <a name="electronic-reporting"></a>Elektronisk rapportering
 Verktyget Elektronisk rapportering (ER) gör det möjligt att konfigurera elektroniska dokumentformat i enligt rättsliga krav i olika länder/regioner. Med ER går det att hantera formaten under deras livscykel. Mer information finns i följande ämnen:

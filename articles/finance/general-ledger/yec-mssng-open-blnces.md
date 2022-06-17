@@ -1,6 +1,6 @@
 ---
 title: Ingående balanser saknas i årsbokslut
-description: Det här ämnet förklarar varför ingående balanser kan saknas vid årsbokslut och hur du återskapar dem om de saknas.
+description: Den här artikeln förklarar varför ingående balanser kan saknas vid årsbokslut och hur du återskapar dem om de saknas.
 author: kweekley
 ms.date: 05/12/2021
 ms.topic: index-page
@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 582363ba6c5f6e63e695d41e73ee2f0b382cf26e
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9b64118fc3ff368e21ea8935c1e706f2161c620f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727184"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894860"
 ---
 # <a name="year-end-close-missing-opening-balances"></a>Ingående balanser saknas i årsbokslut
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet förklarar varför ingående balanser kan saknas vid årsbokslut och hur du återskapar dem om de saknas.
+Den här artikeln förklarar varför ingående balanser kan saknas vid årsbokslut och hur du återskapar dem om de saknas.
 
-### <a name="symptom"></a>Symptom
+### <a name="symptom"></a>Symtom
 
 Varför finns det inga ingående balanser efter körning av redovisningens årsbokslut? 
 
@@ -36,9 +36,9 @@ Saker att kontrollera vid ett årsbokslut i redovisningen och när du har genere
 
 Om fältet **Ångra föregående slut** är inställt på **Ja** återförs föregående årsbokslut för samma räkenskapsår. När du kör en process för att återföra årsboksluten tas alla utgående och ingående balansposter bort, som om årsbokslutet aldrig hade körts. Verifikationerna tas också bort. Årsbokslutet körs inte automatiskt igen. Du måste starta processen på nytt och nu uppdatera alternativet **Ångra föregående slut** till **Nej**.
 
-Det här scenariot beskrivs i ämnet vanliga frågor och svar om årsbokslut. Mer information finns i [Vanliga frågor och svar om aktiviteter för årsavslut](faq-year-end-activities.md).
+Det här scenariot beskrivs i artikeln vanliga frågor och svar om årsbokslut. Mer information finns i [Vanliga frågor och svar om aktiviteter för årsavslut](faq-year-end-activities.md).
 
-### <a name="symptom"></a>Symptom
+### <a name="symptom"></a>Symtom
 
 Jag körde årsbokslut med alternativet **Ångra föregående stängning** inställt på **Nej** och jag har fortfarande inga ingående balanser för räkenskapsåret.
 
@@ -58,7 +58,7 @@ Om det här steget av någon anledning inte slutfördes, bokfördes troligen IB-
 
 Om det finns ingående verifikationer (och eventuellt utgående verifikationer) behöver du inte köra årsbokslutet igen. Se i stället nästa avsnitt för information om att gå vidare.
 
-### <a name="symptom"></a>Symptom
+### <a name="symptom"></a>Symtom
 
 Måste jag köra om hela årsbokslutsprocessen om steget Återskapa saldon i årsbokslutet inte slutfördes?
 
