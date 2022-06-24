@@ -1,6 +1,6 @@
 ---
 title: Använd visningsinställningar för produktdimensioner
-description: I det här avsnittet beskrivs visningsinställningarna för produktdimensioner och hur du använder dem i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs visningsinställningarna för produktdimensioner och hur du använder dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/28/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80a0861c51ea14ddb6bce02d757667adac34e740cd04311e26211d9bdbae4ed8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d7575e205a9732259b00e424f66eeadfe8c659ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716232"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899185"
 ---
 # <a name="apply-display-settings-for-product-dimensions"></a>Använd visningsinställningar för produktdimensioner
 
 [!include [banner](includes/banner.md)]
 
 
-I det här avsnittet beskrivs visningsinställningarna för produktdimensioner och hur du använder dem i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs visningsinställningarna för produktdimensioner och hur du använder dem i Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce stöder dimensioner för storlek, utförande och färg för att särskilja produktvarianter. Dimensioner visas vanligtvis som textvärden, till exempel "Small", "Medium" och "Large" för storlekar, och "Svart" och "Brunt" för färger. Om en produkt stöder många variationer kan det dock vara svårt att bläddra bland produktvarianter, eftersom flera val krävs för att visa bilden för varje variant. För att göra det enklare att bläddra i produktvarianter kan version 10.0.20-versionen av Commerce använda bilder och hexadecimala (hex)-koder för att visa dimensioner som tum.
 
@@ -37,15 +37,15 @@ I Commerce-webbplatsskaparen, definieras inställningar på **Platsinställninga
 
 Det finns två dimensionsinställningar:
 
-- **Dimensioner som ska visas som bild** – Ange vilka dimensioner som ska visas som färgrutor på sidor med e-handelswebbplatser, t.ex. produktinformationssidor (PDP) och listor med sökresultat. Alla kombinationer av färg, storlek och stildimensioner kan visas som en färgruta. Om en dimension har valts för visning som en färgruta, kommer återgivning av Commerce-modul att leta efter en tillgänglig konfiguration av en hexkodsfärg. Om ingen hexkod konfigureras söker systemlogiken efter en konfiguration av en bild-URL konfiguration. Text visas om varken en hexkod eller en URL för bilden har konfigurerats.
+- **Dimensioner som ska visas som bild** – Ange vilka dimensioner som ska visas som färgrutor på sidor med näthandelswebbplatser, t.ex. produktinformationssidor (PDP) och listor med sökresultat. Alla kombinationer av färg, storlek och stildimensioner kan visas som en färgruta. Om en dimension har valts för visning som en färgruta, kommer återgivning av Commerce-modul att leta efter en tillgänglig konfiguration av en hexkodsfärg. Om ingen hexkod konfigureras söker systemlogiken efter en konfiguration av en bild-URL konfiguration. Text visas om varken en hexkod eller en URL för bilden har konfigurerats.
 
-    I följande bild visas ett exempel där en PDP på en e-handelswebbplats innehåller färg- och storleksrutor. I det här exemplet konfigureras en hexkod för färgdimensionen. Därför visas färgrutor som färger. Det går dock att konfigurera varken en hexkod eller en bild-URL för storleksdimensionen. Därför visas text.
+    I följande bild visas ett exempel där en PDP på en näthandelswebbplats innehåller färg- och storleksrutor. I det här exemplet konfigureras en hexkod för färgdimensionen. Därför visas färgrutor som färger. Det går dock att konfigurera varken en hexkod eller en bild-URL för storleksdimensionen. Därför visas text.
 
     ![Exempel på den färgdimension som visas som färgrutor på en detaljsida för näthandelprodukt.](./dev-itpro/media/swatch_pdp.png)
 
 - **Dimensioner som ska visas på produktkort** – Ange vilka dimensioner som ska visas på produktkort som visas i listor och på listsidor. Innan en dimension kan visas på ett produktkort måste den här inställningen vara aktiverad för den dimensionen. Även inställningen **dimensionerna som ska visas som bild** bör vara aktiverade. Urvalssättet för färgrutor för produktkort optimeras för färgdimensionen. För andra dimensioner kan det krävas ett visningstillägg för att anpassa urvalsbeteendet.
 
-    I följande bild visas ett exempel där en listsida på en e-handelsplats innehåller produktkort som innehåller färgrutor.
+    I följande bild visas ett exempel där en listsida på en näthandelsplats innehåller produktkort som innehåller färgrutor.
 
     ![Exempel på den färgdimension som visas som färgrutor på en listsida för näthandel.](./dev-itpro/media/swatch_searchresults.PNG)
 

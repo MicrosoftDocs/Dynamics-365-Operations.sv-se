@@ -1,6 +1,6 @@
 ---
 title: Konfigurera körningsgränssnittet för produktionsgolvet
-description: I det här avsnittet beskrivs hur du skapar en eller flera konfigurationer för körningsgränssnittet för produktionsgolvet. När du öppnar körningsgränssnittet för produktionsgolvet läser det automatiskt in ett valt konfigurations- och jobbfilter som är specifikt för webbläsaren och enheten. I konfigurationen ställer du in de principer som måste tillämpas för en viss användning.
+description: I denna artikel beskrivs hur du skapar en eller flera konfigurationer för körningsgränssnittet för produktionsgolvet. När du öppnar körningsgränssnittet för produktionsgolvet läser det automatiskt in ett valt konfigurations- och jobbfilter som är specifikt för webbläsaren och enheten. I konfigurationen ställer du in de principer som måste tillämpas för en viss användning.
 author: johanhoffmann
 ms.date: 10/05/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644409"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899423"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurera körningsgränssnittet för produktionsgolvet
 
@@ -31,15 +31,15 @@ När du öppnar körningsgränssnittet för produktionsgolvet läser det automat
 - På en enhet i företagsplatsen har medarbetarna stämplat in när de kommer in på kontoret och de stämplar ut när de går för dagen.
 - På en enhet i verkstadsgolvet registreras maskinoperatörer när de startar och avslutar jobben. De registrerar också pauser och indirekta aktiviteter.
 
-Det här avsnittet beskriver de olika alternativen för att konfigurera ett gränssnitt för produktionsgolv för varje enhet som används på din plats.
+Denna artikel beskriver de olika alternativen för att konfigurera ett gränssnitt för produktionsgolv för varje enhet som används på din webbplats.
 
 ## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>Aktivera gränssnittet för körning av produktionsstyrningen och tillhörande valfria funktioner
 
-Själva gränssnittet för körning av produktionsstyrningen, plus flera av de valfria inställningar som beskrivs i det här avsnittet, måste aktiveras i systemet innan du kan använda dem. Använd sidan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) om du vill aktivera någon av eller alla funktioner som beskrivs i följande underavsnitt efter behov.
+Själva körningsgränssnittet för produktionsstyrningen, plus flera av de valfria inställningar som beskrivs i denna artikel, måste aktiveras i systemet innan du kan använda dem. Använd sidan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) om du vill aktivera någon av eller alla funktioner som beskrivs i följande underavsnitt efter behov.
 
 ### <a name="the-production-floor-execution-interface"></a>Körningsgränssnittet för produktionsgolvet
 
-Detta är den primära funktion som beskrivs i det här avsnittet och är en förutsättning för alla andra funktioner som nämns i det här avsnittet. Från och med version 10.0.25 av Supply Chain Management är obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Produktionsgolvskörning* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Detta är den primära funktion som beskrivs i denna artikel och är en förutsättning för alla andra funktioner som nämns i det här avsnittet. Från och med version 10.0.25 av Supply Chain Management är obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Produktionsgolvskörning* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="generate-license-plates"></a>Generera registreringsskyltar
 
@@ -61,11 +61,11 @@ Med denna funktion går det att tillåta arbetare att låsa den så att de kan s
 
 Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version äldre än 10.0.25 kan administratörer aktivera eller inaktivera denna funktion genom att söka efter *Funktion för att låsa jobbkortsenhet och jobbkortsterminal så att de kan rensas* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funktionen för tillgångshantering för körningsgränssnittet för produktionsgolvet
+### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funktionen för Tillgångshantering för körningsgränssnittet för produktionsgolvet
 
-Den här funktionen lägger till en flik för tillgångshantering i produktionsstyrningsgränssnittet. Arbetare kan använda den här fliken för att välja en tillgång som är ansluten till en maskinresurs inom det valda filtret för jobblistan. För den valda maskintillgången kan arbetaren visa status och tillstånd för tillgången från räknarvärden i upp till fyra valda räknare. Om du vill använda denna funktion aktiverar du följande funktion i för att aktivera den [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Den här funktionen lägger till en flik för Tillgångshantering i produktionsstyrningsgränssnittet. Arbetare kan använda den här fliken för att välja en tillgång som är ansluten till en maskinresurs inom det valda filtret för jobblistan. För den valda maskintillgången kan arbetaren visa status och tillstånd för tillgången från räknarvärden i upp till fyra valda räknare. Om du vill använda denna funktion aktiverar du följande funktion i för att aktivera den [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- *Funktionen för tillgångshantering för körningsgränssnittet för produktionsgolvet*<br>(Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard.)
+- *Funktionen för Tillgångshantering för körningsgränssnittet för produktionsgolvet*<br>(Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard.)
 
 ### <a name="enable-job-search"></a>Aktivera jobbsökning
 
@@ -146,7 +146,7 @@ Den här funktionen lägger till inställningar för följande funktioner på si
 - Aktivera materialförbrukningsjusteringar från dialogrutan **Rapportförlopp**. (För denna funktion krävs även *Registrera materialförbrukning i gränssnittet för produktionsgolvskörning (ej WMS)* .)
 - Aktivera sökning med projekt-ID.
 
-Information om hur du använder inställningarna finns senare i det här avsnittet.
+Information om hur du använder inställningarna finns senare i denna artikel.
 
 För att använda den här funktionen, aktivera följande funktion i [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
@@ -174,7 +174,7 @@ Följande inställningar finns på snabbfliken **Allmänt**.
 - **Aktivera justering av material** – Ställ in det här alternativet till *Ja* för att aktivera knappen **Justera material** i dialogrutan **Rapportförlopp**. Arbetare kan välja den här knappen för att justera materialförbrukningen för jobbet.
 - **Rapportera kvantitet vid utstämpling** – Ange detta alternativ till *Ja* för att be arbetare att rapportera återrapportering om pågående jobb när han eller hon stämplar ut. Om detta alternativ anges till *Nej* kommer medarbetarna inte att uppmanas.
 - **Lås medarbetare** – när det här alternativet är inställt på *Nej* kommer arbetstagarna att loggas ut omedelbart efter att de har gjort en registrering (t.ex. ett nytt jobb). Gränssnittet kommer sedan tillbaka till inloggningssidan. När det här alternativet är inställt på *Ja* kommer varje medarbetare att vara inloggad på körningsgränssnittet för produktionsgolvet. En arbetare kan dock manuellt logga ut så att en annan arbetare kan logga in medan ett körningsgränssnitt för produktionsgolvet fortsätter att köras under samma systemanvändarkonto. Mer information om dessa typer av konton finns i [Tilldela användare](config-job-card-device.md#assigned-users).
-- **Använd den faktiska tiden för registrering** – Ställ in detta alternativ på *Ja* att ställa in tiden för varje ny registrering till den exakta tidpunkt då arbetstagaren lämnade in registreringen. När alternativet är inställt på *Nej*, används inloggningstiden istället. Du vill vanligtvis ange alternativet till *Ja* om du anger **Lås medarbetare** och/eller **Enskild arbetare** till *Ja* i fall där arbetstagare ofta förblir inloggade under längre perioder.
+- **Använd den faktiska tiden för registrering** – Ställ in detta alternativ på *Ja* att konfigurera tiden för varje ny registrering till den exakta tidpunkt då arbetstagaren lämnade in registreringen. När alternativet är inställt på *Nej*, används inloggningstiden istället. Du vill vanligtvis ange alternativet till *Ja* om du anger **Lås medarbetare** och/eller **Enskild arbetare** till *Ja* i fall där arbetstagare ofta förblir inloggade under längre perioder.
 - **En arbetare** – Ställ in det här alternativet på *Ja* om bara en av dem använder varje körningsgränssnitt för produktionsgolvet där denna konfiguration är aktiv. När det här alternativet är inställt på *Ja* alternativet **Lås medarbetare** automatiskt till *Ja*. Dessutom tar den här inställningen bort kravet (och möjligheten) för arbetaren att logga in med hjälp av ID-bricka (eller liknande ID). Istället loggar medarbetaren in Microsoft Dynamics 365 Supply Chain Management genom att använda ett systemanvändarkonto som är länkat till en *tidsregistrerad arbetare* (från tabellen *arbetaren*) och loggas in på körningsgränssnittet för produktionsgolvet samtidigt som medarbetaren.
 - **Tillåt låsning av pekskärm** – Ange detta alternativ till *Ja* medarbetare ska kunna låsa pekskärmen på körningsgränssnittet för produktionsgolvet så att de kan sanera den. När det här alternativet är inställt på *Ja* läggs knappen **Låsskärm för sanering** läggs till på inloggningssidan. När en medarbetare väljer den här knappen, låser sig pekskärmen tillfälligt för att förhindra indata. En nedräkningstimer visas också. Arbetaren kan nu rensa enheten och skärmen på ett säkert sätt. När nedräkningen är klar låses pekskärmen upp automatiskt.
 - **Tidslängd för skärmlåsning** – När alternativet **Tillåt låsning pekskärm** anges till *Ja*, använd det här alternativet för att ange antalet sekunder som pekskärmen ska vara låst för att desinficera. Längden måste vara mellan 5 och 120 sekunder.
@@ -194,7 +194,7 @@ Följande inställningar finns på snabbfliken **Rapportförlopp**.
 
 ## <a name="clean-up-job-configurations"></a>Rensa jobbkonfigurationerna
 
-När arbetsstyrningen ställer in gränssnittet för körningsgränssnittet för produktionsgolvet väljer de en konfiguration och ett jobbfilter. Dessa val lagras i en referenstabell i Supply Chain Management och webbläsaren använder ett ID som lagras i en lokal cookie för att hitta rätt rad i registret. I tabellen loggas också det datum och den tidpunkt då en arbetare som senast loggade in på varje enhet.
+När arbetsstyrningen konfigurerar gränssnittet för körningsgränssnittet för produktionsgolvet väljer de en konfiguration och ett jobbfilter. Dessa val lagras i en referenstabell i Supply Chain Management och webbläsaren använder ett ID som lagras i en lokal cookie för att hitta rätt rad i registret. I tabellen loggas också det datum och den tidpunkt då en arbetare som senast loggade in på varje enhet.
 
 Ett batchjobb rensar regelbundet poster i referensregistret för enheter som inte har loggat någon aktivitet under de senaste 60 dagarna. Du kan också manuellt rensa posterna genom att följa stegen nedan.
 

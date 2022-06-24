@@ -1,6 +1,6 @@
 ---
 title: Skapa och bearbeta avvikelser
-description: Detta ämne beskriver hur du utför avvikelsehantering baserat på en befintlig kvalitetsorder.
+description: Denna artikel beskriver hur du utför avvikelsehantering baserat på en befintlig kvalitetsorder.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 032f5b712c2be5312524129cd25e655e778f5f44
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: dd8a10e88ab4d1be24a11739dddd7619b3fa6bbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580874"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901978"
 ---
 # <a name="create-and-process-nonconformances"></a>Skapa och bearbeta avvikelser
 
 [!include [banner](../../includes/banner.md)]
 
-Detta ämne beskriver hur du utför avvikelsehantering baserat på en befintlig kvalitetsorder. Vanligtvis utförs avvikelsehanteringen av en kvalitetsansvarig. En förutsättning är att du har en kvalitetsorder tillgänglig. (Mer information om hur du skapar en kvalitetsorder finns i [Inspektera kvaliteten på varorna](inspect-quality-goods.md) .)
+Denna artikel beskriver hur du utför avvikelsehantering baserat på en befintlig kvalitetsorder. Vanligtvis utförs avvikelsehanteringen av en kvalitetsansvarig. En förutsättning är att du har en kvalitetsorder tillgänglig. (Mer information om hur du skapar en kvalitetsorder finns i [Inspektera kvaliteten på varorna](inspect-quality-goods.md) .)
 
 Innan en användare kan bearbeta godkännandet av en avvikelse måste han eller hon tilldelas en medarbetare i fältet **Person** på sidan **Användare**. Innan användaren kan använda dokumentnoteringarna måste alternativet **Aktivera dokumenthantering** dessutom ställas in på *Ja* bland användarens alternativ.
 

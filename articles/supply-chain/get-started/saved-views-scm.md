@@ -1,6 +1,6 @@
 ---
 title: Standardvyer för Supply Chain Management
-description: I det här avsnittet beskrivs de standardvyer som finns tillgängliga, samt information om hur du aktiverar dem.
+description: I denna artikel beskrivs de standardvyer som finns tillgängliga, samt information om hur du aktiverar dem.
 author: kamaybac
 ms.date: 02/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0709574ea44fcf841321044da31781862fcf1420
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 92ff2dfc9cd8b742a7b086e540bd2c527833254d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103698"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887585"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standardvyer för Supply Chain Management
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management innehåller flera sparade vyer som du kan aktivera och använda efter behov. Vissa av dessa standardvyer optimeras och namnges för en viss roll eller uppgift (till exempel "Kvalitetskontroll" eller "Mottagning"). Andra optimeras så att de bara inkluderar de fält och inställningar som Microsofts användningsstatistik anger används oftast av kunder. Dessa sparade vyer kallas vanligtvis för *förenklade* vyer. I det här avsnittet beskrivs de standardvyer som finns tillgängliga, samt information om hur du aktiverar och anpassar dem.
+Microsoft Dynamics 365 Supply Chain Management innehåller flera sparade vyer som du kan aktivera och använda efter behov. Vissa av dessa standardvyer optimeras och namnges för en viss roll eller uppgift (till exempel "Kvalitetskontroll" eller "Mottagning"). Andra optimeras så att de bara inkluderar de fält och inställningar som Microsofts användningsstatistik anger används oftast av kunder. Dessa sparade vyer kallas vanligtvis för *förenklade* vyer. I denna artikel beskrivs de standardvyer som finns tillgängliga, samt information om hur du aktiverar och anpassar dem.
 
 Detaljerad information om hur du arbetar med sparade vyer, bland annat standardvyerna, finns i [Sparade vyer](../../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json).
 
@@ -39,7 +39,7 @@ Mer information om hur du anpassar och byter namn på sparade vyer finns i [Spar
 
 För att använda funktionen sparade vyer, oavsett om du använder standard sparade vyer, måste du aktivera funktionen *Sparade vyer* i [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (från och med version 10.0.21 är den här funktionen aktiverad som standard).
 
-I de återstående avsnitten i det här avsnittet finns register som beskriver de standardvyer som för närvarande är tillgängliga för respektive relevant modul. Varje tabell visar namnet på varje sparad vy, sidan där du kan hitta den och en beskrivning av den. Varje tabell visar även namnet på funktionen som inkluderar den sparade vyn. Om du vill se en sparad standardvy i systemet måste du aktivera den angivna funktionen i [Funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Från och med version 10.0.25 aktiveras alla vyer i listan som standard.
+I de återstående avsnitten i denna artikel finns register som beskriver de standardvyer som för närvarande är tillgängliga för respektive relevant modul. Varje tabell visar namnet på varje sparad vy, sidan där du kan hitta den och en beskrivning av den. Varje tabell visar även namnet på funktionen som inkluderar den sparade vyn. Om du vill se en sparad standardvy i systemet måste du aktivera den angivna funktionen i [Funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Från och med version 10.0.25 aktiveras alla vyer i listan som standard.
 
 ## <a name="saved-views-for-the-inventory-management-module"></a>Sparade vyer för modulen Lagerhantering
 

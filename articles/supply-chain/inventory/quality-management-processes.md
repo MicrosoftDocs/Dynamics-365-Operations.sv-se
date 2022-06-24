@@ -1,6 +1,6 @@
 ---
 title: Kvalitets- och avvikelsehantering – en översikt
-description: Det här ämnet presenterar funktionerna för kvalitet och avvikelsehantering i Microsoft Dynamics 365 Supply Chain Management och förklarar hur de kan förbättra produktkvaliteten i din leveranskedja.
+description: Denna artikel presenterar funktionerna för kvalitet och avvikelsehantering i Microsoft Dynamics 365 Supply Chain Management och förklarar hur de kan förbättra produktkvaliteten i din leveranskedja.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bb4bcb7f554c22b4e1ab1b41867bd2d3dcca4d4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 510dee78f6fed02e6511aedad00fcb1b15195470
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985530"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907505"
 ---
 # <a name="quality-and-nonconformance-management-overview"></a>Kvalitets- och avvikelsehantering – en översikt
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet presenterar funktionerna för kvalitet och avvikelsehantering i Microsoft Dynamics 365 Supply Chain Management och förklarar hur de kan förbättra produktkvaliteten i din leveranskedja.
+Denna artikel presenterar funktionerna för kvalitet och avvikelsehantering i Microsoft Dynamics 365 Supply Chain Management och förklarar hur de kan förbättra produktkvaliteten i din leveranskedja.
 
 Kvalitetssäkring innebär bland annat produkttestning och hantering av avvikande material. Kvalitetshanteringsprocesser gör det enklare att garantera en hög nivå av produktkvalitet i din leveranskedja. Dessa processer kan också optimera distributionskedjeprocesser och öka kundnöjdheten. Kvalitetshantering kan hjälpa dig att hantera handläggningstider när du hanterar avvikande produkter, oavsett deras ursprungspunkt. Du kan koppla diagnostikresultatet till korrigeringsuppgifter. Systemet kan schemalägga uppgifter för att åtgärda problem och därmed förhindra förekomster av dessa problem i framtiden. Kvalitetshantering låter dig också följa upp ärenden (inklusive interna problem) efter problemtyp, och låter dig identifiera lösningar som långfristiga eller kortfristiga. Statistik om KPI:er (Key Performance Indicator) ger insyn i tidigare avvikelseproblem och lösningarna som användes för att korrigera dem. Du kan använda historiska data om du vill granska effektiviteten hos tidigare tagna kvalitetsmått och bestämma lämpliga mått som ska användas i framtiden.
 
@@ -36,7 +36,7 @@ Kvalitetshantering kan hjälpa dig att hantera handläggningstider när du hante
 
 Förutom funktioner för att hantera avvikelser inkluderar kvalitetshanteringen funktioner för att spåra problem efter problemtyp (även då problemen är interna) och för att identifiera lösningar som kortsiktiga eller långsiktiga. Statistik om KPI:er (Key Performance Indicator) ger insyn i historiken över tidigare avvikelseproblem och lösningarna som användes för att korrigera dem. Du kan använda historiska data om du vill granska effektiviteten hos tidigare kvalitetsmått och bestämma lämpliga mått som ska användas i framtiden.
 
-När du ställer in en kvalitetsassociation kan Supply Chain Management skapa kvalitetsorder för olika affärsprocesser, händelser och villkor. Kvalitetsassociationen kan omfatta en viss artikel, en specifik grupp artiklar eller alla artiklar.
+När du konfigurerar en kvalitetsassociation kan Supply Chain Management skapa kvalitetsorder för olika affärsprocesser, händelser och villkor. Kvalitetsassociationen kan omfatta en viss artikel, en specifik grupp artiklar eller alla artiklar.
 
 ## <a name="examples-of-the-use-of-quality-management"></a>Exempel på användningen av kvalitetshantering
 
@@ -100,7 +100,7 @@ Avvikelserapporten visar avvikelsenummer, artikel och problemtyp. Beroende på d
 
 ## <a name="approved-nonconformance"></a>Godkänd avvikelse
 
-Om du vill kan du även definiera en eller flera relaterade åtgärder för en godkänd avvikelse. En relaterad åtgärd beskriver det arbete som ska utföras, och innehåller en lista med de kvalitetsåtgärder som du har definierat, och en beskrivning av anledningen till arbetet. När du definierar en operation kan du om du vill även definiera de tillägg, artiklar och tidrapporttimmar som krävs för att utföra arbetet. De beräknade kostnaderna visas för den relaterade åtgärden och den totala beräknade kostnaden visas för avvikelsen. Den beräknade kostnaden och den bakomliggande informationen (om artiklar, arbetstimmar och tillägg) är referensinformation och den används bara inom kvalitetshanteringsfunktionen.
+Om du vill kan du även definiera en eller flera relaterade åtgärder för en godkänd avvikelse. En relaterad åtgärd beskriver det arbete som ska utföras, och innehåller en lista med de kvalitetsåtgärder som du har definierat, och en beskrivning av anledningen till arbetet. När du definierar en åtgärd kan du om du vill även definiera de tillägg, artiklar och tidrapporttimmar som krävs för att utföra arbetet. De beräknade kostnaderna visas för den relaterade åtgärden och den totala beräknade kostnaden visas för avvikelsen. Den beräknade kostnaden och den bakomliggande informationen (om artiklar, arbetstimmar och tillägg) är referensinformation och den används bara inom kvalitetshanteringsfunktionen.
 
 Du kan även skapa en kvalitetsorder från avvikelsen genom att först utföra en förfrågan om kvalitetsorder och sedan skapa den nya kvalitetsordern. Exempelvis kan en kvalitetsorder identifiera behovet att testa (eller testa om) det defekta materialet. Den nyligen skapade kvalitetsordern visar länken till den ursprungliga avvikelsen.
 

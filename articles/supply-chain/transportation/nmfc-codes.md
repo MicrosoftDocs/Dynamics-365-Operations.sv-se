@@ -1,6 +1,6 @@
 ---
 title: National Motor Freight Classification (NMFC)-koder
-description: I det här ämnet beskrivs hur du arbetar med NMFC-koder (National Motor Freight Classification) i Microsoft Dynamics 365 Supply Chain Management
+description: I denna artikel beskrivs hur du arbetar med NMFC-koder (National Motor Freight Classification) i Microsoft Dynamics 365 Supply Chain Management
 author: Weijiesa
 ms.date: 04/22/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 5127e132a8c06815e9ecd11338c729cd8bb87f18
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 522e4d4e26b04b5ca1dd317e433c5a20ff3cb12e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670592"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893277"
 ---
 # <a name="national-motor-freight-classification-nmfc-codes"></a>National Motor Freight Classification (NMFC)-koder
 
@@ -31,11 +31,11 @@ Denna funktion kan hjälpa medarbetare att använda NMFC-koder för att klassifi
 - Denna klassificering kan vara viktig för ditt företag eftersom den används för att bestämma kostnaden för en viss last.
 - Ditt företag kan identifiera lönsamhet i ett LTL-logistik- och transportföretag.
 
-I detta ämne beskrivs hur du arbetar med NMFC-koder i Microsoft Dynamics 365 Supply Chain Management.
+I denna artikel bekrivs hur du arbetar med NMFC-koder i Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Innan du kan skapa NMFC-koder måste du ställa in alla LTL-fraktklasser som måste mappas till dem. LTL-fraktklasser representerar artikelkategorier, medan NMFC-koder rör specifika varor i var och en av de 18 fraktklasserna. Mer information om hur du arbetar med LTL-klasser finns i [Klasser som understiger truckload (LTL)](ltl-class.md).
+Innan du kan skapa NMFC-koder måste du konfigurera alla LTL-fraktklasser som måste mappas till dem. LTL-fraktklasser representerar artikelkategorier, medan NMFC-koder rör specifika varor i var och en av de 18 fraktklasserna. Mer information om hur du arbetar med LTL-klasser finns i [Klasser som understiger truckload (LTL)](ltl-class.md).
 
 ## <a name="create-an-nmfc-code"></a>Skapa en NMFC-kod
 
@@ -55,7 +55,7 @@ Gör så här om du vill skapa en NMFC-kod:
 
 ## <a name="example-set-up-nmfc-codes"></a>Exempel: Konfigurera NMFC-koder
 
-Följande exempel visar hur du ställer in två olika NMFC-koder som kan användas med olika produkter.
+Följande exempel visar hur du konfigurerar två olika NMFC-koder som kan användas med olika produkter.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Lager \> NMFC-koder**.
 1. Klicka på **Ny** i åtgärdsfönstret.

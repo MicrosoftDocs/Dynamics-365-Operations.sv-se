@@ -1,6 +1,6 @@
 ---
 title: Praxischef Power BI-innehåll
-description: Det här avsnittet beskriver vad som ingår i innehållet för praxischef för Power BI.
+description: Den här artikeln beskriver vad som ingår i innehållet för praxischef för Power BI.
 author: kfend
 ms.date: 12/18/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4acef3c595f25fa0be16945a9f41611832cfcea9
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 31ca2841983d972194b55d91a6789fd84d62d890
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500231"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898999"
 ---
 # <a name="practice-manager-power-bi-content"></a>Praxischef Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vad som ingår i innehållet för **praxischef** för Microsoft Power BI. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
+Den här artikeln beskriver vad som ingår i innehållet för **praxischef** för Microsoft Power BI. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
 
 ## <a name="overview"></a>Översikt
 

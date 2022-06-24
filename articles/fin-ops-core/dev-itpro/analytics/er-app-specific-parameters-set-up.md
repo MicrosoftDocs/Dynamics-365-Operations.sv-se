@@ -1,6 +1,6 @@
 ---
-title: Ställ in parametrarna för ett ER-format per juridisk person
-description: I det här avsnittet beskrivs hur du kan konfigurera parametrar för ett format för elektroniska rapporter (ER) per juridisk person.
+title: Ställa in parametrarna för ett ER-format per juridisk person
+description: I den här artikeln beskrivs hur du kan konfigurera parametrar för ett format för elektroniska rapporter (ER) per juridisk person.
 author: NickSelin
 ms.date: 03/25/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: f72ce72e9cbd268efc6ab09dbec7009794d69613
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: dbcf968dde432da182b5bd2d6a7bcb9f83dad6fa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644511"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890224"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Ställ in parametrarna för ett ER-format per juridisk person
 
@@ -30,7 +30,7 @@ ms.locfileid: "8644511"
 
 För att kunna utföra de här stegen måste du först slutföra stegen i [konfigurera ER-format för att använda parametrar som anges per juridisk person](er-app-specific-parameters-configure-format.md).
 
-Om du vill slutföra exemplen i det här avsnittet måste du ha tillgång till Microsoft Microsoft Dynamics 365 Finance för en av följande roller:
+Om du vill slutföra exemplen i den här artikeln måste du ha tillgång till Microsoft Microsoft Dynamics 365 Finance för en av följande roller:
 
 - Utvecklare för elektronisk rapportering
 - Konsult för funktionen för elektronisk rapportering
@@ -221,7 +221,7 @@ De programspecifika parametrarna för ett ER-format som är beroende av den juri
 
 Du kan också använda den här export-import-metoden om du vill överföra ER-formatrelaterade programspecifika parametrar som ursprungligen konfigurerades i en Finance-instans till en annan Finance-instans.
 
-Om du konfigurerar programspecifika parametrar för en version av ett ER-format och sedan importerar en senare version av samma format till den aktuella ekonomiinstansen, tillämpas inte de befintliga programspecifika parametrarna på den importerade versionen såvida du inte använder den använd programspecifika parametrarna från tidigare versioner av funktionen **ER-format**. Mer information finns i avsnittet [Återanvänd befintliga parametrar](#reuse-existing-parameters) senare i det här avsnittet.
+Om du konfigurerar programspecifika parametrar för en version av ett ER-format och sedan importerar en senare version av samma format till den aktuella ekonomiinstansen, tillämpas inte de befintliga programspecifika parametrarna på den importerade versionen såvida du inte använder den använd programspecifika parametrarna från tidigare versioner av funktionen **ER-format**. Mer information finns i avsnittet [Återanvänd befintliga parametrar](#reuse-existing-parameters) senare i den här artikeln.
 
 När du väljer en fil för import, jämförs även programspecifika parametrar i den filen med strukturen för motsvarande datakälla av typen **uppslag** för det återställningsformat som valts för import. Som standard är importen är slutförd endast om strukturen för varje programspecifik parameter matchar strukturen för motsvarande datakälla i det återställningsformat som har valts för import. Om strukturlistorna inte matchar får du ett varningsmeddelande om att importen inte kan slutföras. Om du tvingar importen rensas de befintliga programspecifika parametrarna för det valda återställningsformatet och du måste ställa in dem från början.
 

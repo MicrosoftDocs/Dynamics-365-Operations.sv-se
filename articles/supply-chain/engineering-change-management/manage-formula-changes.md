@@ -1,6 +1,6 @@
 ---
 title: Hantera ändringar i formler och deras ingredienser
-description: I det här avsnittet beskrivs hur du hanterar recepthantering och hanterar ändringar av huvuddata för processtillverkning.
+description: I denna artikel beskrivs hur du hanterar recept och ändringar av huvuddata för processtillverkning.
 author: t-benebo
 ms.date: 05/19/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 31953fd29c471e52bd63dbb02c20f5f224c3cae2
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 8105ebc7f3698a6baaa04b6548dac18a7bf81a47
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103054"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904084"
 ---
 # <a name="manage-changes-in-formulas-and-their-ingredients"></a>Hantera ändringar i formler och deras ingredienser
 
@@ -29,7 +29,7 @@ Om du använder processtillverkningsfunktionerna för Microsoft Dynamics 365 Sup
 
 ## <a name="turn-this-feature-on-or-off"></a>Aktivera eller inaktivera funktionen
 
-Funktionen som beskrivs i detta ämne kräver att både funktionen *Konstruktionsändringshantering* och *Hantera formeländringar och deras ingredienser* är aktiverad för systemet. Information om hur du aktiverar och inaktiverar funktionerna finns i [Översikt över hantering av tekniska ändringar](product-engineering-overview.md).
+Funktionen som beskrivs i denna artikel kräver att både funktionen *Konstruktionsändringshantering* och *Hantera formeländringar och deras ingredienser* är aktiverade för systemet. Information om hur du aktiverar och inaktiverar funktionerna finns i [Översikt över hantering av tekniska ändringar](product-engineering-overview.md).
 
 ## <a name="feature-naming-conventions"></a>Namnkonventioner för funktioner
 
@@ -46,7 +46,7 @@ I följande lista sammanfattas hur funktionerna för att hantera förändringar 
 - **Beredskapskontroll** – Använd systemkontroller och användarvägledning (enkäter och checklistor) för att säkerställa att alla produktdata är fullständigt angivna innan produkten frisläpps. Mer information finns i [Produktberedskap](product-readiness.md).
 - **Förbättrad produktlanseringsfunktion** – Frisläpp fullständigt definierade versioner av en produkt och dess formel från en organisation (juridisk person) till andra juridiska personer. Du kan till och med bestämma om produktinformationen måste granskas eller redigeras före frisläppning. Mer information finns i [Frisläppa produktstruktur](release-product-structure.md).
 
-Observera att de flesta avsnitt som är länkade till i föregående lista ger exempel som baseras på strukturlistor. Formler fungerar dock på liknande sätt. Här är några ytterligare koncept som är användbara när du använder ändringshantering (eller bara receptändringshantering) för att hantera formler och strukturlistor:
+Observera att de flesta artiklar som är länkade till i föregående lista tillhandahåller exempel som baseras på strukturlistor. Formler fungerar dock på liknande sätt. Här är några ytterligare koncept som är användbara när du använder ändringshantering (eller bara receptändringshantering) för att hantera formler och strukturlistor:
 
 - För varje [kategori för produktdesign](engineering-versions-product-category.md) kan du ange produktionstypen (strukturlista, recept eller planeringsartikel). Du kan även ange om support för faktisk/nominell vikt krävs för produkter där denna kategori används.
 - Samprodukter och biprodukter är inte tekniska produkter. Därför är de inte versionerade. Om du måste ändra dem behöver du bara skapa en ny produkt. Det här gör underhållet enklare.

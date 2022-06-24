@@ -1,6 +1,6 @@
 ---
 title: Synkronisera avtalsfakturor i Field Service till fritextfakturor i Supply Chain Management
-description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera avtalsfakturor i Dynamics 365 Field Service till fritextfakturor i Dynamics 365 Supply Chain Management.
+description: Denna artikel beskriver de mallar och underliggande uppgifter som används för att synkronisera avtalsfakturor i Dynamics 365 Field Service till fritextfakturor i Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 04/10/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 70f1c072c3a2a1b201aac1f1d2beea9979a3b792
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c4ef70af71ae223baaa2abb2b64428beab946e3d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060774"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900895"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Synkronisera avtalsfakturor i Field Service till fritextfakturor i Supply Chain Management
 
@@ -29,7 +29,7 @@ ms.locfileid: "8060774"
 
 
 
-Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera avtalsfakturor i Dynamics 365 Field Service till fritextfakturor i Dynamics 365 Supply Chain Management.
+Denna artikel beskriver de mallar och underliggande uppgifter som används för att synkronisera avtalsfakturor i Dynamics 365 Field Service till fritextfakturor i Dynamics 365 Supply Chain Management.
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
 
@@ -74,7 +74,7 @@ Kolumnen **Har avtalsursprung** har lagts till i tabellen **Fakturarad**. Den h�
 
 ### <a name="in-supply-chain-management"></a>I Supply Chain Management
 
-Ett fakturafakturaursprung måste ställas in för integrationen för att särskilja fritextfakturor i Supply Chain Management som skapas från avtalsfakturor i Field Service. När en faktura har ett fakturaursprung i typen **Integration avtal/faktura** visas fältet **Externt fakturanummer** på rubriken för **Försäljningsfaktura**.
+Ett fakturafakturaursprung måste ställas in för integreringen för att särskilja fritextfakturor i Supply Chain Management som skapas från avtalsfakturor i Field Service. När en faktura har ett fakturaursprung i typen **Integrering avtal/faktura** visas fältet **Externt fakturanummer** på rubriken för **Försäljningsfaktura**.
 
 Förutom att visas på fakturarubriken, kan information **Externt fakturanummer** användas för att garantera att fakturor som skapas från avtalsfakturor för Field Service filtreras bort under synkroniseringen av fakturan från Supply Chain Management till Field Service.
 
@@ -83,7 +83,7 @@ Förutom att visas på fakturarubriken, kan information **Externt fakturanummer*
 3. I fältet **Fakturaursprung** anger du ett namn för fakturaursprung som t.ex. **FS**.
 4. I fältet **Beskrivning** anger du en beskrivning såsom **Avtalsfakturor för Field Service**.
 5. Markera kryssrutan **Tilldelning av ursprungstyp**.
-6. Ange fältet **Typ av fakturaursprung** till **Integration avtal/faktura**.
+6. Ange fältet **Typ av fakturaursprung** till **Integrering avtal/faktura**.
 7. Välj **Spara**.
 
 ### <a name="in-the-data-integration-project"></a>I dataintegreringsprojektet

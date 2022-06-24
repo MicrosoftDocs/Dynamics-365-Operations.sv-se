@@ -1,6 +1,6 @@
 ---
 title: Konfigurera kvittning
-description: Hur och när transaktioner kvittas kan vara komplexa ämnen så det är nödvändigt att du förstår och definierar parametrarna korrekt så att de uppfyller dina verksamhetskrav. Det här avsnittet ger en beskrivning av de parametrar som används för kvittning av både Leverantörsreskontra och Kundreskontra.
+description: Hur och när transaktioner kvittas kan vara komplexa ämnen så det är nödvändigt att du förstår och definierar parametrarna korrekt så att de uppfyller dina verksamhetskrav. Den här artikeln ger en beskrivning av de parametrar som används för kvittning av både Leverantörsreskontra och Kundreskontra.
 author: kweekley
 ms.date: 05/16/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 978c99ddd3e56e6699ab128a154a5594685d5956
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 14ed2999a9ad8ffc64815ca3f8b1556aad27ae48
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712505"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910212"
 ---
 # <a name="configure-settlement"></a>Konfigurera kvittning
 
 [!include [banner](../includes/banner.md)]
 
-Hur och när transaktioner kvittas kan vara komplexa ämnen så det är nödvändigt att du förstår och definierar parametrarna korrekt så att de uppfyller dina verksamhetskrav. Det här avsnittet ger en beskrivning av de parametrar som används för kvittning av både Leverantörsreskontra och Kundreskontra. 
+Hur och när transaktioner kvittas kan vara komplexa ämnen så det är nödvändigt att du förstår och definierar parametrarna korrekt så att de uppfyller dina verksamhetskrav. Den här artikeln ger en beskrivning av de parametrar som används för kvittning av både Leverantörsreskontra och Kundreskontra. 
 
 Följande parametrar påverkar hur kvittningar bearbetas i Microsoft Dynamics 365 Finance. Kvittningen är en process som kvittar en faktura mot en betalning eller kreditfaktura. Dessa parametrar finns i området **Kvittning** på sidorna **Parametrar för leverantörsreskontra** och **Parametrar för leverantörsreskontra**.
 

@@ -1,6 +1,6 @@
 ---
 title: Installera tillägget för IoT-information i LCS
-description: I det här avsnittet beskrivs hur du installerar IoT-information-tillägget i Microsoft Dynamics Lifecycle Services (LCS).
+description: lagerbehållning beskrivs hur du installerar IoT-information-tillägget i Microsoft Dynamics Lifecycle Services (LCS).
 author: johanhoffmann
 ms.date: 07/07/2020
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 12ffa71dc1c2badaffdc2e419a47d855635016f2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 52fe4c4a79378aca5f1e64c8b3f4fa85199c9911
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679035"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887498"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>Installera tillägget för IoT-information i LCS
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du installerar IoT-information-tillägget i Microsoft Dynamics Lifecycle Services (LCS). Lägg märke till att tillägg inte kan installeras i en demo/utvärderingsmiljö. Innan du kan installera tillägget måste du [skapa Azure-resurserna](iot-azure-setup.md).
+lagerbehållning beskrivs hur du installerar IoT-information-tillägget i Microsoft Dynamics Lifecycle Services (LCS). Lägg märke till att tillägg inte kan installeras i en demo/utvärderingsmiljö. Innan du kan installera tillägget måste du [skapa Azure-resurserna](iot-azure-setup.md).
 
-Du kan ställa in och konfigurera IoT-information utan att skriva någon kod. Här är de grundläggande stegen.
+Du kan konfigurera och konfigurera IoT-information utan att skriva någon kod. Här är de grundläggande stegen.
 
 1. [Ställ in Azure-resurser](iot-azure-setup.md) – Skapa en IoT hub, en Redis-cache och ett nyckelvalv som du får åtkomst till från Supply Chain Management.
 2. [Meddelandeschemaformat för IoT Hub](iot-schema-format.md) – Konfigurera dina enheter så att de skickar meddelanden till IoT Hub och definiera JavaScript Object Notation (JSON) meddelandeformat.
 3. Aktivera funktionen IoT-information i Funktionshantering.
-4. Installera tillägget IoT-information i Microsoft Dynamics Lifecycle Services (LCS) – Installera tillägget i LCS och konfigurera Azure-hemligheter (som beskrivs i detta ämne).
+4. Installera tillägget IoT-information i Microsoft Dynamics Lifecycle Services (LCS) – Installera tillägget i LCS och konfigurera Azure-hemligheter (som beskrivs i denna artikel).
 5. [Ställ in mått](iot-metrics-setup.md) – Ställ in mått i Supply Chain Management.
 6. [Scenarioinställningar](iot-scenario-setup.md) – Ange scenarier i Supply Chain Management.
 
@@ -42,19 +42,19 @@ Du kan ställa in och konfigurera IoT-information utan att skriva någon kod. H�
 2. Bläddra till avsnittet **Miljötillägg**.
 3. Välj **Installera ett nytt tillägg** om du vill visa listan över tillägg som har aktiverats för miljön.
 4. I dialogrutan **Välj ett tillägg att installera** väljer du **IoT-information**.
-5. I dialogrutan **Tillägg för inställningar** anger du information om IoT-navet och Redis-cachen. Du hittar erforderliga värden i det nyckelvalv som du skapade i [Skapa Azure-resurser](iot-azure-setup.md).
+5. I dialogrutan **Tillägg för inställningar** anger du information om IoT-hubben och Redis-cachen. Du hittar erforderliga värden i det nyckelvalv som du skapade i [Skapa Azure-resurser](iot-azure-setup.md).
 
     + **ID för klientorganisation** – Gå till nyckelvalvet i Azure-portalen och välj sedan **Översikt** i det vänstra navigeringsfönstret. Kopiera sedan värdet för **Katalog-ID**. Klistra in värdet i dialogrutan **Tillägg för konfiguration**.
     + **IoT Event Hub-kompatibel URI för slutpunktsnyckelvalv** – Gå till nyckelvalvet, välj **Översikt** i det vänstra navigeringsfönstret och kopiera värdet för **DNS-namn**. Klistra in värdet i dialogrutan **Tillägg för konfiguration**.
-    + **IoT Event Hub-kompatibelt namn för slutpunktshemlighet** – Gå till nyckelvalvet, välj **Hemligheter** i det vänstra navigeringsfönstret och kopiera namnet på den hemlighet där anslutningssträngen i händelsenavet för IoT-navet lagras. Klistra in värdet i dialogrutan **Tillägg för konfiguration**.
+    + **IoT Event Hub-kompatibelt namn för slutpunktshemlighet** – Gå till nyckelvalvet, välj **Hemligheter** i det vänstra navigeringsfönstret och kopiera namnet på den hemlighet där anslutningssträngen i händelsehubbent för IoT-hubben lagras. Klistra in värdet i dialogrutan **Tillägg för konfiguration**.
     + **Nyckelvärdes-URI för Redis-cache** – Gå till nyckelvalvet, välj **Översikt** i det vänstra navigeringsfönstret och kopiera värdet för **DNS-namn**. Klistra in värdet i dialogrutan **Tillägg för konfiguration**.
-    + **Hemligt slutpunktsnamn för Redis-cache** – Gå till nyckelvalvet, välj **Hemligheter** i det vänstra navigeringsfönstret och kopiera namnet på den hemlighet där anslutningssträngen i händelsenavet för Redis-cache lagras. Klistra in värdet i dialogrutan **Tillägg för konfiguration**.
+    + **Hemligt slutpunktsnamn för Redis-cache** – Gå till nyckelvalvet, välj **Hemligheter** i det vänstra navigeringsfönstret och kopiera namnet på den hemlighet där anslutningssträngen i händelsehubben för Redis-cache lagras. Klistra in värdet i dialogrutan **Tillägg för konfiguration**.
 
 6. Markera kryss rutan om du vill acceptera villkoren.
 7. Välj **Installera**.
 8. En meddelanderuta visas med statusen "Tillägget har aktiverats för installation". Välj **OK**.
 
-LCS-konfigurationen har nu slutförts. Nästa steg är att [ställa in scenarierna](iot-scenario-setup.md).
+LCS-konfigurationen har nu slutförts. Nästa steg är att [konfigurera scenarierna](iot-scenario-setup.md).
 
 ## <a name="uninstall-the-add-in"></a><a id="uninstall-addin"></a>Avinstallera tillägget
 

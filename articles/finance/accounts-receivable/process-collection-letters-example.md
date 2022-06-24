@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 1bb1889e9450685f7b6a5000e2ef81d1a65f1b51
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 502a026f2070e92a017733ce2c37bf357eaa10ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8721828"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908166"
 ---
 # <a name="process-collection-letters-example"></a>Exempel på bearbeta kravbrev
 

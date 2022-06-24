@@ -1,6 +1,6 @@
 ---
 title: Godkänn leverantörer för specifika anskaffningskategorier
-description: I det här avsnittet beskrivs hur du godkänner leverantörer för särskilda anskaffningskategorier i Dynamics 365 Supply Chain Management.
+description: I denna artikel beskrivs hur du godkänner leverantörer för särskilda anskaffningskategorier i Dynamics 365 Supply Chain Management.
 author: GalynaFedorova
 ms.date: 07/30/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4247833a011704a9e3c83ad4a2b464ee49d6b3f5
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: bb6861c1cfbc7702fae74b4aa97fe618b50ac0bb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670200"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903997"
 ---
 # <a name="approve-vendors-for-specific-procurement-categories"></a>Godkänn leverantörer för specifika anskaffningskategorier
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du godkänner leverantörer för särskilda anskaffningskategorier i Dynamics 365 Supply Chain Management. När en inköpsrekvisition har skapats, kan det finnas krav på att välja en godkänd eller prioriterad leverantör beroende på hur inköpspolicyerna ställs in. Den här proceduren visar hur du anger att en leverantör är godkänd eller föredras för en viss anskaffningkategori. Den här uppgiften utförs vanligtvis av ett anskaffningsproffs. Du kan köra den här proceduren i demonstrationsdataföretaget USMF.
+I denna artikel beskrivs hur du godkänner leverantörer för särskilda anskaffningskategorier i Dynamics 365 Supply Chain Management. När en inköpsrekvisition har skapats, kan det finnas krav på att välja en godkänd eller prioriterad leverantör beroende på hur inköpspolicyerna ställs in. Den här proceduren visar hur du anger att en leverantör är godkänd eller föredras för en viss anskaffningkategori. Den här uppgiften utförs vanligtvis av ett anskaffningsproffs. Du kan köra den här proceduren i demonstrationsdataföretaget USMF.
 
 1. I navigeringsfönstret, gå till **Moduler > Anskaffning och källa > Leverantörer > Alla leverantörer**.
 2. Markera leverantören som du vill ange som godkänd eller prioriterad leverantör för en kategori.

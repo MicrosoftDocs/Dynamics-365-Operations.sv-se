@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-26
-ms.openlocfilehash: 82bfb768b0ecac04184f4b806527346d39584d64
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 8e5c11e535bd61e9955a4abf1491e88991ee40f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087278"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894278"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Flytta potentiell kund till kontantdata från dataintegrerare till dubbelriktad skrivning
 
 [!include [banner](../../includes/banner.md)]
 
-Potentiell kund till pengar-lösningen som är tillgänglig för Dataintegrerare är inte kompatibel med dubbelriktad skrivning. Orsaken till detta är msdynce_AccountNumber index för kontoregistret som följde som en del av lösningen Potentiell kund till pengar. Om det finns ett sådan index kan du inte skapa samma kundkontonummer i två olika juridiska personer. Du kan antingen välja att börja om med dubbelriktad skrivning genom att migrera Potentiell kund till kontanter från Dataintegrerare till dubbelriktad skrivning eller så kan du installera den sista "vilande" versionen av Potentiell kund till kontanter-lösningen. I det här avsnittet beskrivs båda dessa metoder.
+Potentiell kund till pengar-lösningen som är tillgänglig för Dataintegrerare är inte kompatibel med dubbelriktad skrivning. Orsaken till detta är msdynce_AccountNumber index för kontoregistret som följde som en del av lösningen Potentiell kund till pengar. Om det finns ett sådan index kan du inte skapa samma kundkontonummer i två olika juridiska personer. Du kan antingen välja att börja om med dubbelriktad skrivning genom att migrera Potentiell kund till kontanter från Dataintegrerare till dubbelriktad skrivning eller så kan du installera den sista "vilande" versionen av Potentiell kund till kontanter-lösningen. I den här artikeln beskrivs båda dessa metoder.
 
 ## <a name="install-the-last-dorman-version-of-the-data-integrator-prospect-to-cash-solution"></a>Installera den sista "vilande" versionen av Dataintegrerare Potentiell kund till kontanter-lösningen
 
@@ -50,7 +50,7 @@ Följ dessa steg för att migrera din potentiell kund till kontantdata från dat
 5. Skapa en dubbelriktad koppling mellan Ekonomi och Drift-app och kundengagemangsapp för en eller flera juridiska personer.
 6. Aktivera dubbelriktade registermappningar och kör den initiala synkroniseringen för nödvändiga referensdata. (Mer information finns i [Att tänka på vid ursprunglig synkronisering](initial-sync-guidance.md).) Exempel på obligatoriska data är kundgrupper, betalningsvillkor och betalningsscheman. Aktivera inte dubbelriktade mappningar för register som kräver initialisering, till exempel konto, offert, offertrad, order och orderradsregister.
 7. I kundengagemangsappen, gå till **Avancerade inställningar \> Systeminställningar \> Datahantering \> Duplicera detekteringsregler** och inaktivera alla regler.
-8. Initiera registren som listas i steg 2. Instruktioner finns i de återstående avsnitten i det här avsnittet.
+8. Initiera registren som listas i steg 2. Instruktioner finns i de återstående avsnitten i den här artikeln.
 9. Öppna Ekonomi och Drift-appen och aktivera registermappningar, till exempel konto, offert, offertrad, order och orderrad registermappningar. Kör sedan initial synkronisering. (Mer information finns i [Att tänka på vid ursprunglig synkronisering](initial-sync-guidance.md).) Den här processen synkroniserar ytterligare information från Ekonomi och Drift-appen, såsom bearbetningsstatus, leverans- och faktureringsadresser, webbplatser och lager.
 
 ## <a name="account-table"></a>Kontoregister

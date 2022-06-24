@@ -1,6 +1,6 @@
 ---
 title: Arbeta med förinställda layouter
-description: I det här avsnittet beskrivs hur du arbetar med förinställda layouter i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du arbetar med förinställda layouter i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 56ad992b6a9fd6fce09cadad70b8098acdc74ac0
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 34b9cb15dd77e6317208e6468fbfb60e804f5e8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090855"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896855"
 ---
 # <a name="work-with-preset-layouts"></a>Arbeta med förinställda layouter
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du arbetar med förinställda layouter i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du arbetar med förinställda layouter i Microsoft Dynamics 365 Commerce.
 
-Innan du slutför procedurerna i det här avsnittet bör du läsa [förinställda och anpassade layouter](templates-layouts-overview.md#preset-and-custom-layouts) En allmän översikt finns i [mallar och layouter – översikt](templates-layouts-overview.md).
+Innan du slutför procedurerna i denna artikel bör du läsa [Förinställda och anpassade layouter](templates-layouts-overview.md#preset-and-custom-layouts) En allmän översikt finns i [mallar och layouter – översikt](templates-layouts-overview.md).
 
 ## <a name="create-a-new-preset-layout"></a>Skapa en ny förinställd layout
 

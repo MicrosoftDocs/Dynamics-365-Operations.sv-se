@@ -1,6 +1,6 @@
 ---
 title: Exempel på scenarier med rullande inventering
-description: I det här avsnittet finns en samling scenarier där du kan undersöka funktionerna för rullande inventering i Microsoft Dynamics 365 Supply Chain Management.
+description: I denna artikel finns en samling scenarier där du kan undersöka funktionerna för rullande inventering i Microsoft Dynamics 365 Supply Chain Management.
 author: GalynaFedorova
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,28 +11,28 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 60be945035570634c572baaa37ae0d02e41dd0be
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 90a3f132a96081b56ab60f5b0ba5cc328b820879
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674713"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899336"
 ---
 # <a name="cycle-counting-example-scenarios"></a>Exempel på scenarier med rullande inventering
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet finns en samling scenarier där du kan undersöka funktionerna för rullande inventering i Microsoft Dynamics 365 Supply Chain Management. Den beskriver först kraven för din befintliga Supply Chain Management-miljö. Det förklarar sedan hur du konfigurerar rullande inventering och beskriver alla faserna för rullande inventering. När du är klar bör du ha god förståelse för rullande inventering, inklusive guidad rullande inventering, rullande inventering av typen blind, rullande inventering av typen spot, tröskelvärden för rullande inventering och planer för rullande inventering.
+I denna artikel finns en samling scenarier där du kan undersöka funktionerna för rullande inventering i Microsoft Dynamics 365 Supply Chain Management. Den beskriver först kraven för din befintliga Supply Chain Management-miljö. Det förklarar sedan hur du konfigurerar rullande inventering och beskriver alla faserna för rullande inventering. När du är klar bör du ha god förståelse för rullande inventering, inklusive guidad rullande inventering, rullande inventering av typen blind, rullande inventering av typen spot, tröskelvärden för rullande inventering och planer för rullande inventering.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
 ### <a name="make-demo-data-available"></a>Gör demodata tillgängliga
 
-Varje scenario i detta ämne innehåller värdet och poster som ingår i den standarddemodata som finns för Supply Chain Management. Om du vill använda de värden som finns här när du går igenom scenarierna måste du arbeta i en miljö där demonstrationsdata har installerats samt ställa in den juridiska personen (företag) på **USMF** innan du börjar.
+Varje scenario i denna artikel refererar till värden och poster som ingår i den standarddemodata som finns för Supply Chain Management. Om du vill använda de värden som finns här när du går igenom scenarierna måste du arbeta i en miljö där demonstrationsdata har installerats samt konfigurera den juridiska personen (företag) på **USMF** innan du börjar.
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>Aktivera support för Warehouse Management-mobilappen
 
-För att använda Warehouse Management Mobile-appen måste funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* måste vara inaktiverade för systemet. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version äldre än 10.0.25 kan administratörer aktivera eller inaktivera denna funktion genom att söka efter funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+För att använda Warehouse Management Mobile-appen måste funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* måste vara aktiverade för systemet. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version äldre än 10.0.25 kan administratörer aktivera eller inaktivera denna funktion genom att söka efter funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="prepare-demo-data-for-the-scenarios"></a><a name= "prepare-demo-data"></a>Förbered demodata för scenarierna
 
@@ -158,7 +158,7 @@ Följ dessa steg för att skapa arbete för rullande inventering för artikelpla
 
 När du har skapat cykelräkningsarbetet gör du jobbet genom att räkna artiklar på en lagerplats och sedan ange resultatet i Supply Chain Management med hjälp av en mobil enhet. Följ dessa steg när du vill göra arbete för rullande inventering i mobilappen Warehouse Management.
 
-1. Logga in på mobilappen Warehouse Management som arbetsanvändaren som du ställer in i [förbereda demodata för scenarierna](#prepare-demo-data) som beskrivs tidigare i det här avsnittet. För exemplet i detta ämne heter användaren *Julia Funderburk* och ställ in för lagerställe *61*. (USMF-demodata bör låta dig logga in som den här arbetsanvändaren genom att ange *61* som användar-ID och *1* som lösenord.)
+1. Logga in på mobilappen Warehouse Management som arbetsanvändaren som du konfigurerat i [Förbereda demodata för scenarierna](#prepare-demo-data) som beskrivs tidigare i denna artikel. För exemplet i denna artikel heter användaren *Julia Funderburk* och har konfigurerats för lagerställe *61*. (USMF-demodata bör låta dig logga in som den här arbetsanvändaren genom att ange *61* som användar-ID och *1* som lösenord.)
 1. I huvudmenyn, välj **lager**.
 1. I menyn **lager**, välj **Guidad rullande inventering**.
 1. Markera fältet **Kvt** ange *9* med hjälp av det numeriska tangentbordet och sedan **OK** (bockmarkeringsknappen).
@@ -227,7 +227,7 @@ Innan rullande inventering av typen blind kan göras måste du skapa arbete. Fö
 
 Följ dessa steg när du har skapat arbete för rullande inventering i mobilappen Warehouse Management.
 
-1. Logga in på mobilappen Warehouse Management som arbetsanvändaren som du ställer in i [förbereda demodata för scenarierna](#prepare-demo-data) som beskrivs tidigare i det här avsnittet. För exemplet i detta ämne heter användaren *Julia Funderburk* och ställ in för lagerställe *61*. (USMF-demodata bör låta dig logga in som den här arbetsanvändaren genom att ange *61* som användar-ID och *1* som lösenord.)
+1. Logga in på mobilappen Warehouse Management som arbetsanvändaren som du konfigurerat i [Förbereda demodata för scenarierna](#prepare-demo-data) som beskrivs tidigare i denna artikel. För exemplet i denna artikel heter användaren *Julia Funderburk* och har konfigurerats för lagerställe *61*. (USMF-demodata bör låta dig logga in som den här arbetsanvändaren genom att ange *61* som användar-ID och *1* som lösenord.)
 1. I huvudmenyn, välj **lager**.
 1. I menyn **lager**, välj **Rullande inventering av typen blind**.
 1. Välj fältet **Zon-ID** ange *BULK06* och markera **OK** (bockmarkeringsknappen).
@@ -259,7 +259,7 @@ Lagerhållningsposten visar att det finns en lagerkvantitet av artikel *L0101* p
 
 Följ dessa steg när du vill göra arbete för rullande inventering i mobilappen Warehouse Management.
 
-1. Logga in på mobilappen Warehouse Management som arbetsanvändaren som du ställer in i [förbereda demodata för scenarierna](#prepare-demo-data) som beskrivs tidigare i det här avsnittet. För exemplet i detta ämne heter användaren *Julia Funderburk* och ställ in för lagerställe *61*. (USMF-demodata bör låta dig logga in som den här arbetsanvändaren genom att ange *61* som användar-ID och *1* som lösenord.)
+1. Logga in på mobilappen Warehouse Management som arbetsanvändaren som du konfigurerat i [Förbereda demodata för scenarierna](#prepare-demo-data) som beskrivs tidigare i denna artikel. För exemplet i denna artikel heter användaren *Julia Funderburk* och har konfigurerats för lagerställe *61*. (USMF-demodata bör låta dig logga in som den här arbetsanvändaren genom att ange *61* som användar-ID och *1* som lösenord.)
 1. I huvudmenyn, välj **lager**.
 1. I menyn **lager**, välj **Punktinventering**.
 1. Välj fältet **plats** ange *01A02R2S1B* och markera **OK** (bockmarkeringsknappen).
@@ -292,7 +292,7 @@ Ett sätt att skapa arbete för rullande inventering är att använda tröskelv�
 
 Det finns till exempel 60 artiklar på en plats som har en tröskel för rullande inventering på 40. Under en försäljningsordertransaktion plockas 25 artiklar från platsen och placeras på en mellanlagringsplats. Eftersom det nya artikelantalet är 35, d.v.s. mindre än tröskelkvantiteten, skapas arbete för rullande inventering automatiskt för platsen.
 
-Gör på följande sätt när du vill ställa in tröskelvärden för rullande inventering.
+Gör på följande sätt när du vill konfigurera tröskelvärden för rullande inventering.
 
 1. Gå till **Warehouse management \> Inställningar \> Rullande inventering \> Trösklar för rullande inventering**.
 1. I åtgärdsfönstret väljer du **Ny** för att skapa en tröskel och anger följande värden:
@@ -317,9 +317,9 @@ Rullande inventering skapas nu för artikel *L0101* på valfri plats om lagerhå
 
 ## <a name="scenario-5-define-cycle-count-plans"></a>Scenario 5: Definiera planer för rullande inventering
 
-Med hjälp av planer för rullande inventering kan du automatisera skapandet av rullande inventeringsarbete. Du kan ställa in varje plan för för rullande inventering med specifika artikel- och platsfrågor. När batchjobbet körs skapas rullande inventeringsarbete för alla platser som matchar artikel- och platskriterierna (upp till det maximala antalet inventeringar som har angetts för planen). När rullande inventeringsarbete skapas innehåller raden för rullande inventering information om vilken plats som ska räknas. Den lagerbehållning som är kopplad till den platsen är inte spärrad. Det är därför tillgängligt för reservationer och utgående bearbetningar, även om det finns öppna inventeringsarbete.
+Med hjälp av planer för rullande inventering kan du automatisera skapandet av rullande inventeringsarbete. Du kan konfigurera varje plan för för rullande inventering med specifika artikel- och platsfrågor. När batchjobbet körs skapas rullande inventeringsarbete för alla platser som matchar artikel- och platskriterierna (upp till det maximala antalet inventeringar som har angetts för planen). När rullande inventeringsarbete skapas innehåller raden för rullande inventering information om vilken plats som ska räknas. Den lagerbehållning som är kopplad till den platsen är inte spärrad. Det är därför tillgängligt för reservationer och utgående bearbetningar, även om det finns öppna inventeringsarbete.
 
-Gör på följande sätt när du vill ställa in plan för rullande inventering.
+Gör på följande sätt när du vill konfigurera plan för rullande inventering.
 
 1. Gå till **Warehouse management \> Inställningar \> Rullande inventering \> Planer för rullande inventering**.
 1. I åtgärdsfönstret, välj **Ny** om du vill lägga till en rad i rutnätet och ange följande värden:

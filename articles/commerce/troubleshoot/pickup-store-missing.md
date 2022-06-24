@@ -1,6 +1,6 @@
 ---
 title: Butiksbutik visas inte i listan över butiker som ska hämtas från
-description: Det här avsnittet innehåller felsökningsvägledning som kan vara till hjälp när en butik inte visas i listan över butiker där artiklar kan plockas.
+description: Denna artikel innehåller felsökningsvägledning som kan vara till hjälp när en butik inte visas i listan över butiker där artiklar kan hämtas.
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 6ccd60082b65fdbd47fef4a67ba269d7d7afc04679647d3eb8d2a5e9c21a19b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 936b3df3194fbdacf8e853ed60431b077f4015cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762630"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905266"
 ---
 # <a name="retail-store-doesnt-appear-in-the-list-of-stores-to-pick-up-from"></a>Butiksbutik visas inte i listan över butiker som ska hämtas från
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet innehåller felsökningsvägledning som kan vara till hjälp när en butik inte visas i listan över butiker där artiklar kan plockas.
+Denna artikel innehåller felsökningsvägledning som kan vara till hjälp när en butik inte visas i listan över butiker där artiklar kan hämtas.
 
 ## <a name="description"></a>beskrivning
 
@@ -34,20 +34,20 @@ En butik visas inte i listan över butiker där artiklar kan hämtas.
 
 ## <a name="resolution"></a>Upplösning
 
-### <a name="configure-the-longitude-and-latitude-for-the-store-address-in-commerce-headquarters"></a>Konfigurera för butiksadressen i Commerce-administration
+### <a name="configure-the-longitude-and-latitude-for-the-store-address-in-commerce-headquarters"></a>Konfigurera för butiksadressen i Commerce headquarters
 
-Konfigurera för butiksadressen i Commerce-administration med dessa steg.
+Konfigurera för butiksadressen i Commerce headquarters med dessa steg.
 
 1. Gå till **Retail och Commerce \> Kanaler \> Butiker \> Alla butiker**.
-1. Hitta den butik som du vill ska visas bland upphämtningsalternativen på webbplatsen för e-handel. Anteckna dess värde för **Driftenhetsnummer**.
+1. Hitta den butik som du vill ska visas bland upphämtningsalternativen på webbplatsen för näthandel. Anteckna dess värde för **Driftenhetsnummer**.
 1. Gå till **Organisationsadministration \> Organisationer \> Driftenheter**.
 1. Sök efter numret för den driftenhet som du tidigare noterar och välj sedan driftenhet i sökresultaten.
 1. På snabbfliken **Adresser**, välj **Fler alternativ** och välj **Avancerat**.
 1. PÅ snabbflikarna **Allmänt** ska du kontrollera att fälten **Longitud** och **Latitud** är korrekt inställda. Som en del av det här steget ska du kontrollera att värdena har angetts korrekt som positiva eller negativa tal.
 
-### <a name="configure-fulfillment-groups-in-commerce-headquarters"></a>Konfigurera uppfyllelsegrupper i Commerce-administration
+### <a name="configure-fulfillment-groups-in-commerce-headquarters"></a>Konfigurera uppfyllelsegrupper i Commerce headquarters
 
-För att konfigurera uppfyllande grupper i Commerce-administration, följ dessa steg.
+För att konfigurera uppfyllande grupper i Commerce headquarters, följ dessa steg.
 
 1. Gå till **Retail och Commerce \> Kanaler \> Onlinebutiker**.
 1. Välj onlinebutiken som ska konfigureras.

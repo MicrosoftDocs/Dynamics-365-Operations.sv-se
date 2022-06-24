@@ -1,6 +1,6 @@
 ---
 title: Manuell uppdatering av tillgångsräknare
-description: Det här avsnittet beskriver manuell uppdatering av tillgångsräknare i Tillgångshantering.
+description: Denna artikel beskriver manuell uppdatering av tillgångsräknare i Tillgångshantering.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 74d840cbb064018560a6abc2823f520c2f3179ac42b149c0507c9421a4e73391
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f3a9ee0a96e6a9097608b4c7cd1f65085e95b8ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776444"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897731"
 ---
 # <a name="manual-update-of-asset-counters"></a>Manuell uppdatering av tillgångsräknare
 
@@ -59,7 +59,7 @@ Bilden nedan visar ett exempel på sidan **Tillgångsräknare**.
 På sidan **Tillgångsräknare** (**Tillgångshantering** > **Förfrågningar** > **Tillgångar** > **Tillgångsräknare**) kan du göra räknarregistreringar på flera tillgångar samtidigt, efter behov.
 
 >[!NOTE]
->Du kan ställa in ett intervall för att definiera avvikelser i manuella räknarregistreringar. Du kan även ange vilken typ av meddelande som visas om registreringarna ligger utanför det definierade intervallet. Mer information om hur du ställer in räknare finns i [räknare](../setup-for-objects/counters.md).
+>Du kan konfigurera ett intervall för att definiera avvikelser i manuella räknarregistreringar. Du kan även ange vilken typ av meddelande som visas om registreringarna ligger utanför det definierade intervallet. Mer information om hur du konfigurerar räknare finns i [räknare](../setup-for-objects/counters.md).
 
 
 

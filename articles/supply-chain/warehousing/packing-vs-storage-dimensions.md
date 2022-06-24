@@ -1,6 +1,6 @@
 ---
 title: Ställ in olika dimensioner för förpackning och lagring
-description: I det här avsnittet visas hur du anger vilken process (förpackning, lagring eller kapslad förpackning) som varje dimension används för.
+description: I denna artikel visas hur du anger vilken process (förpackning, lagring eller kapslad förpackning) som varje dimension används för.
 author: Mirzaab
 ms.date: 01/28/2021
 ms.topic: article
@@ -13,27 +13,27 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 090a6f653b50d8f22a2f34354172f129624813f1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 85e40a0768174dcdc5d0fa2647b24cddccf01bdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687679"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905498"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Ställ in olika dimensioner för förpackning och lagring
 
 [!include [banner](../../includes/banner.md)]
 
-Vissa artiklar packas eller lagras på ett sådant sätt att du kan behöva spåra fysiska dimensioner olika för vart och ett av flera olika processer. Funktionen *Dimensioner för förpackningsprodukt* gör att du kan ställa in en eller flera typer av dimensioner för varje produkt. Varje dimensionstyp tillhandahåller en uppsättning fysiska mått (vikt, bredd, djup och höjd) och använder den process där de fysiska mätningsvärdena gäller. När den här funktionen är aktiverad har ditt system stöd för följande typer av dimensioner:
+Vissa artiklar packas eller lagras på ett sådant sätt att du kan behöva spåra fysiska dimensioner olika för vart och ett av flera olika processer. Funktionen *Dimensioner för förpackningsprodukt* gör att du kan konfigurera en eller flera typer av dimensioner för varje produkt. Varje dimensionstyp tillhandahåller en uppsättning fysiska mått (vikt, bredd, djup och höjd) och använder den process där de fysiska mätningsvärdena gäller. När den här funktionen är aktiverad har ditt system stöd för följande typer av dimensioner:
 
 - *Lagring* - Lagringsdimensioner används tillsammans med platsvolym för att bestämma hur många av varje artikel som kan lagras på olika lagerställen.
 - *Förpackning* - Förpackningsdimensioner används under skapande av behållare och manuell förpackningsprocess för att bestämma hur många av varje artikel som kommer att passa i olika behållartyper.
 - *Kapslad förpackning* - Kapslade förpackningsdimensioner används när förpackningsprocessen innehåller flera nivåer.
 
-*Lagringsdimensioner* stöds även om funktionen *Förpackningsproduktdimensioner* inte är aktiverad. Du ställer in dessa med hjälp av sidan **Fysisk dimension** i Supply Chain Management. Dessa dimensioner används av alla processer där förpacknings- och kapslade förpackningsdimensioner inte anges.
+*Lagringsdimensioner* stöds även om funktionen *Förpackningsproduktdimensioner* inte är aktiverad. Du konfigurerar dessa med hjälp av sidan **Fysisk dimension** i Supply Chain Management. Dessa dimensioner används av alla processer där förpacknings- och kapslade förpackningsdimensioner inte anges.
 
 Dimensionerna *förpackning* och *kapslad förpackning* ställs in på sidan **Fysiska produktdimensioner** som läggs till när du aktiverar funktionen för *förpackningsproduktdimensioner*.
-Det här avsnittet innehåller ett scenario som illustrerar hur den här funktionen används.
+Denna artikel innehåller ett scenario som illustrerar hur den här funktionen används.
 
 ## <a name="turn-on-the-packaging-product-dimensions-feature"></a>Aktivera funktionen för förpackningsproduktdimensioner
 

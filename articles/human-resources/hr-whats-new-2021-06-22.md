@@ -1,6 +1,6 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources 22 juni 2021
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 22 juni 2021.
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 22 juni 2021.
 author: marcelbf
 ms.date: 06/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b1d2ccf1083f34aefbe87354f03dbebd6cb5be7e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: aacb605374d99a3c0bad3438c89e33a04a4d7faf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694436"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897789"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Nyheter och ändringar i Dynamics 365 Human Resources 22 juni 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Det här ämnet beskriver nya, ändrade, kommer snart funktioner i Dynamics 365 Human Resources.
+Den här artikeln beskriver funktioner som är nya, ändrade eller kommer snart i Dynamics 365 Human Resources.
 
 Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
@@ -51,9 +51,9 @@ Följande funktioner är i allmänhet tillgänglig i den här versionen.
 Den här versionen innehåller följande felkorrigeringar.
 
 > [!NOTE]
-> Vårt mål är att få den här informationen så snart som möjligt. Vi kan uppdatera det här avsnittet för att inkludera felkorrigeringar som gjorde det i versionen efter det att ämnet publicerades första gången.
+> Vårt mål är att få den här informationen så snart som möjligt. Vi kan komma att uppdatera detta ämne i syfte att inkludera felkorrigeringar som kommit med i versionen efter det att ämnet publicerades första gången.
 
-| Utfärda nummer | Problem |  beskrivning |
+| Utfärda nummer | Problem |  Beskrivning |
 | --- | --- | --- |
 | 583052 | Användare som tar emot återrapportering kan redigera feedback som mottagits | När en medarbetare som får återrapportering från en resultatjournal väljer **Lägg till extern länk**, kan formuläret redigeras så att medarbetaren kan redigera den resultatfeedback som de har fått. |
 | 522281 | Om du väljer antalet medarbetare i kompensationsstrukturen som är nöjda i Kompensationshantering leder det till felaktiga resultat| När du går ner i kompensationsplanerna från kompensationsarbetsytan visas nu korrekt antal medarbetare. |

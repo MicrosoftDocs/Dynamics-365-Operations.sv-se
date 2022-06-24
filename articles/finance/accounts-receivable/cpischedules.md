@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 54114fae25565ed1aae7056ef9be5a4a159291e9
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f08b79ee00baab3713d9ccc24a7595b1de7a7768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686531"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904885"
 ---
 # <a name="consumer-price-index-schedule"></a>Schema för konsumentprisindex
 
 [!include [banner](../includes/banner.md)]
 
-I detta ämne beskrivs hur du skapar, tar bort, granskar och bearbetar KPI-scheman (konsumentprisindex). En KPI-tidsplan kan användas för att bestämma priserna för konsumtionsvaror och tjänster som du lägger till som faktureringstidsplansrader. KPI-tidsplanen kan sedan användas tillsammans med eskalerings- och rabattpriser i ett faktureringsschema, eller också kan den bearbetas manuellt för att uppdatera faktureringsbeloppen i faktureringstidsplaner. Du kan ange KPI-tidsplaner manuellt eller importera dem med hjälp av den sammansatta enhet för KPI-tidsplan.
+I denna artikel beskrivs hur du skapar, tar bort, granskar och bearbetar KPI-scheman (konsumentprisindex). En KPI-tidsplan kan användas för att bestämma priserna för konsumtionsvaror och tjänster som du lägger till som faktureringstidsplansrader. KPI-tidsplanen kan sedan användas tillsammans med eskalerings- och rabattpriser i ett faktureringsschema, eller också kan den bearbetas manuellt för att uppdatera faktureringsbeloppen i faktureringstidsplaner. Du kan ange KPI-tidsplaner manuellt eller importera dem med hjälp av den sammansatta enhet för KPI-tidsplan.
 
 Följ dessa steg för att lägga till en KPI-tidsplan.
 

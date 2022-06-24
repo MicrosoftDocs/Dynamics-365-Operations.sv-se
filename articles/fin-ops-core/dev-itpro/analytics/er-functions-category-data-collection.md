@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2046931732f2d1c1ca040c1c84d4b182c2214f2f44a5a90fceda49298445b743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a8d4f5068bedcf1f15ae5257e29004a4773ef84c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760084"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908573"
 ---
 # <a name="list-of-er-functions-in-the-data-collection-category"></a>Lista över ER-funktioner i datainsamlingskategorin
 
 [!include [banner](../includes/banner.md)]
 
-Datainsamlingsfunktioner för elektronisk rapportering (ER) används för att göra inventering och summering i ett ER-format som körs, baserat på data från utdata som redan har genererats i **text** eller **Xml**-format. Den här metoden används för att förbättra prestanda för ett ER-format som körs, för att ange värden för löpande summor i genererade dokument och för andra syften. Det här avsnittet innehåller en sammanfattning av dessa funktioner.
+Datainsamlingsfunktioner för elektronisk rapportering (ER) används för att göra inventering och summering i ett ER-format som körs, baserat på data från utdata som redan har genererats i **text** eller **Xml**-format. Den här metoden används för att förbättra prestanda för ett ER-format som körs, för att ange värden för löpande summor i genererade dokument och för andra syften. Den här artikeln innehåller en sammanfattning av dessa funktioner.
 
 ## <a name="list-of-supported-functions"></a>Lista över funktioner som stöds
 

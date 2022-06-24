@@ -1,6 +1,6 @@
 ---
 title: Välj sidlayouter
-description: Det här avsnittet beskriver hur du skapar och väljer sidlayouter i Microsoft Dynamics 365 Commerce.
+description: Denna artikel beskriver hur du skapar och väljer sidlayouter i Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e7424755ed794f4e4b8ff640a7e7b9dd96b2145fddcf91511266fa166626112d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df6ec6dec267c456f2f0fac9a963c07015412e46
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738009"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888213"
 ---
 # <a name="select-page-layouts"></a>Välj sidlayouter
 
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver hur du skapar och väljer sidlayouter i Microsoft Dynamics 365 Commerce.
+Denna artikel beskriver hur du skapar och väljer sidlayouter i Microsoft Dynamics 365 Commerce.
 
 ## <a name="create-layouts-for-an-existing-page"></a>Skapa layouter för en befintlig sida
 

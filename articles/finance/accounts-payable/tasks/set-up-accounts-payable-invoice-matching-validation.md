@@ -1,6 +1,6 @@
 ---
-title: Ställ in validering av Fakturamatchning för leverantörsreskontra
-description: Det här avsnittet innehåller information om hur du ställer in validering av Fakturamatchning för leverantörsreskontra.
+title: Ställa in validering av fakturamatchning för leverantörsreskontra
+description: Den här artikeln innehåller information om hur du ställer in validering av Fakturamatchning för leverantörsreskontra.
 author: abruer
 ms.date: 02/14/2022
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 602666df4cf015791398939a3067a2cae85a12eb
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 86cc5cf688e3b66cf976fc7f507bd8f8df757612
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182565"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904971"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Ställ in validering av Fakturamatchning för leverantörsreskontra
 
@@ -44,7 +44,7 @@ Fyra olika typer av matchningsvalideringar är tillgängliga.
 5. Markera eller avmarkera kryssrutan **Matchning av fakturasummor** för att matcha verkliga fakturasummor med förväntade summor.
     * Välj om en ikon ska visas om avvikelser för fakturamatchning överskrider toleransen. Du kan välja att visa ikonen när en positiv diskrepans överskrider toleransen, eller när antingen en positiv eller negativ diskrepans överskrider toleransen.  
     * Toleransen är till exempel 5 procent och det totala fakturabeloppet på inköpsordern är 100,00. Därför visas en prismatchningsikon om det totala fakturabeloppet på fakturan överstiger 105.00. Om du väljer **Om större eller mindre än tolerans**, visas också en ikon om fakturabeloppet är mindre än 95,00.  
-6. I fältet **Toleransprocent för fakturasummor** anger du den procentuella avvikelse som är acceptabel. Det här värdet är standardvärdet för företaget. Detta värde kan åsidosättas för specifika leverantörer med hjälp av sidan **Toleranser för fakturasummor**. Information om hur du åsidosätter toleransprocenten för fakturasummor för en viss leverantör finns i avsnittet "ställa in matchningstolerans för fakturasummor för leverantörer" senare i det här avsnittet.
+6. I fältet **Toleransprocent för fakturasummor** anger du den procentuella avvikelse som är acceptabel. Det här värdet är standardvärdet för företaget. Detta värde kan åsidosättas för specifika leverantörer med hjälp av sidan **Toleranser för fakturasummor**. Information om hur du åsidosätter toleransprocenten för fakturasummor för en viss leverantör finns i avsnittet "ställa in matchningstolerans för fakturasummor för leverantörer" senare i den här artikeln.
 7. Ange **Pris- och kvantitetsmatchning**.
 8. Välj ett värde som ska användas som standardpolicy för den juridiska person som du arbetar med i fältet **Radmatchningspolicy**. **Krävs ej** innebär att det inte finns någon verifiering av enskilda fakturaradspriser till inköpsorderpris- eller fakturakvantiteter till obligatoriska följesedelns kvantiteter. **Tvåvägsmatchning** betyder att verifieringen med fakturarader krävs men endast inköpsordern och leverantörens fakturadokumenten ingår i verifieringen. Produktinleveransen faktorer inte till de matcha de valideringar. **Trevägsmatchning** betyder att fakturans nettoenhetspris ska jämföras med inköpsorderns netto enhetspris och matcha den produktinleveranskvantiteten ska jämföras med kvantiteten.
 9. Om du vill tillåta en annan matchningsnivå för en artikel, leverantör, leverantör och artikel i kombination eller en inköpsorderrad, väljer du ett värde i fältet **Tillåt åsidosättning av matchningspolicy**. Radmatchningspolicyn för den juridiska personen kan åsidosättas för en specifik leverantör, artikel eller kombination av leverantör och artikel på sidan **matchningspolicy**.

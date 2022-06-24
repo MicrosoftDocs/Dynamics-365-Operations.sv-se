@@ -1,6 +1,6 @@
 ---
 title: Översikt över uppgiftshantering
-description: Det här avsnittet innehåller en översikt över uppgiftshantering för chefer och arbetare i Microsoft Dynamics 365 Commerce.
+description: Denna artikel innehåller en översikt över uppgiftshantering för chefer och arbetare i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: overview
@@ -14,22 +14,22 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 7cdcc0ba6a9f5a3d9dd4ea781adc9e81c45e3d02
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1a814b76985b9bb7ee47ee287967acbf41ddd0e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985403"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900344"
 ---
 # <a name="task-management-overview"></a>Översikt över uppgiftshantering
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över uppgiftshantering för chefer och arbetare i Microsoft Dynamics 365 Commerce.
+Denna artikel innehåller en översikt över uppgiftshantering för chefer och arbetare i Microsoft Dynamics 365 Commerce.
 
 I en butiksmiljö är det alltid svårt att se till att uppgifter utförs av rätt person vid rätt tidpunkt. Återförsäljare måste kunna meddela arbetare om kommande uppgifter och tillhandahålla relaterad affärskontext, så att uppgifterna kan utföras på rätt sätt och i tid.
 
-Uppgiftshantering är en produktivitetsfunktion i Dynamics 365 Commerce som innebär att chefer och medarbetare kan skapa uppgiftslistor, hantera tilldelningskriterier, spåra status och integrera dessa operationer mellan program för Commerce-backoffice och kassaprogram (POS).
+Uppgiftshantering är en produktivitetsfunktion i Dynamics 365 Commerce som innebär att chefer och medarbetare kan skapa uppgiftslistor, hantera tilldelningskriterier, spåra status och integrera dessa åtgärder mellan program för Commerce-backoffice och kassaprogram (POS).
 
 Administrationspersonalen kan använda uppgiftshantering för att skapa uppgiftslistor för butiker och för att spåra status per butik eller arbetare. De kan också skapa återkommande uppgifter (till exempel "checklista för torsdagens nattstängning").
 

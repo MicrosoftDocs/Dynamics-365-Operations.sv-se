@@ -1,6 +1,6 @@
 ---
 title: Placera på vägg – placera i butik
-description: Det här avsnittet innehåller information om funktionen Placera på vägg – placera i butik. Med den här funktionen kan du hantera situationer där du måste konsolidera en produkt till ett förpackat mellanlagringsområdet, baserat på konfigurerbara kriterier. Den hjälper till att minska plocktiden eftersom den möjliggör plockning på en målnummer-ID och kan använda fler befattningar än klusterplockning.
+description: Denna artikel innehåller information om funktionen Placera på vägg – placera i butik. Med den här funktionen kan du hantera situationer där du måste konsolidera en produkt till ett förpackat mellanlagringsområdet, baserat på konfigurerbara kriterier. Den hjälper till att minska plocktiden eftersom den möjliggör plockning på en målnummer-ID och kan använda fler befattningar än klusterplockning.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 372bb556ec1207096a8ff3c7df8bac9b7011b5c4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e020bd3973b8b56dd1e6f3e5bdc8cba32600f7f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574147"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909655"
 ---
 # <a name="put-to-wall---put-to-store"></a>Placera på vägg – placera i butik
 
@@ -376,7 +376,7 @@ Innan du skapar försäljningsorder och leveranser måste du se till att plockpl
     - **Artikelnummer:** *A0001*
     - **Kvantitet:** *5*
 
-1. Välj **Lägg till rad** för att lägga till en andra rad och ställa in följande värden:
+1. Välj **Lägg till rad** för att lägga till en andra rad och konfigurera följande värden:
 
     - **Artikelnummer:** *A0002*
     - **Kvantitet:** *10*
@@ -399,7 +399,7 @@ Innan du skapar försäljningsorder och leveranser måste du se till att plockpl
     - **Artikelnummer:** *A0001*
     - **Kvantitet:** *7*
 
-1. Välj **Lägg till rad** för att lägga till en andra rad och ställa in följande värden:
+1. Välj **Lägg till rad** för att lägga till en andra rad och konfigurera följande värden:
 
     - **Artikelnummer:** *A0002*
     - **Kvantitet:** *3*
@@ -511,7 +511,7 @@ Nu när hela lagret har placerats på sorteringsplatsen måste det vara sorterat
     - Om positionerna stängs automatiskt väljer du **Visa stängd** för att visa stängda positioner.
     - Observera att transaktioner för sorteringspositioner visas. Artikeln och kvantiteten som bearbetades genom positionen visas.
 
-    När du ställer in mallen för utgående sortering ställer du in alternativet **Automatiskt stängning av sorteringsordning** till *Ja*. Därför stängs positionen automatiskt när den sista förväntade lagerstället har placerats där. Sorteringspositionerna har statusen **stängd** och arbetet har skapats för att flytta det sorterade lagret till platsen *Baydoor*.
+    När du konfigurerar mallen för utgående sortering ställer du in alternativet **Automatiskt stängning av sorteringsordning** till *Ja*. Därför stängs positionen automatiskt när den sista förväntade lagerstället har placerats där. Sorteringspositionerna har statusen **stängd** och arbetet har skapats för att flytta det sorterade lagret till platsen *Baydoor*.
 
 1. Slutför det sorterade lagerplockningsarbetet för att flytta lagret till leveransplatsen. När lagret är klart kan du bekräfta det för leverans.
 

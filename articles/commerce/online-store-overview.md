@@ -1,6 +1,6 @@
 ---
-title: Webbplatsöversikt för näthandel
-description: Detta ämne innehåller en översikt över stödet för näthandelssajter i Microsoft Dynamics 365 Commerce.
+title: Näthandelsplats – översikt
+description: Denna artikel innehåller en översikt över stödet för näthandelssajter i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 11/05/2020
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 90f0f01115b00f231af8d4ae11be1d18d379399b
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 9b7e4d09eaa4f91478d27cbca5eaea48af86e676
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487778"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899131"
 ---
 # <a name="e-commerce-site-overview"></a>Näthandelsplats – översikt
 
 [!include [banner](includes/banner.md)]
 
-Detta ämne innehåller en översikt över stödet för näthandelssajter i Microsoft Dynamics 365 Commerce. Den innehåller information om hur näthandelsbutiker initieras och hanteras i Dynamics 365 Commerce. Den ger också länkar till mer information om onlinebutiker samt om hur du skapar och konfigurerar en näthandelssajt. Även om detta ämne täcker många av grunderna omfattar det inte allt som krävs för att konfigurera en produktion näthandelssajt. Mer avancerade ämnen finns i Dynamics 365 Commerce-dokumentationen.
+Denna artikel innehåller en översikt över stödet för näthandelssajter i Microsoft Dynamics 365 Commerce. Den innehåller information om hur näthandelsbutiker initieras och hanteras i Dynamics 365 Commerce. Den ger också länkar till mer information om onlinebutiker samt om hur du skapar och konfigurerar en näthandelssajt. Även om denna artikel täcker många av grunderna omfattar den inte allt som krävs för att konfigurera en näthandelssajt för produktion. Mer avancerade artiklar finns i Dynamics 365 Commerce-dokumentationen.
 
 ## <a name="online-store-channel"></a>Onlinebutikskanal
 
@@ -64,17 +64,17 @@ När en näthandelssajt har skapats kan du ändra kanalen som den är kopplad ti
 
 ![Sidan Kanaler i Commerce-webbplatsbyggaren.](media/e-commerce-site-04.png)
 
-Du kan lägga till nya kanaler genom att välja **Lägg till en kanal**. Om du vill lägga till nya språk i en kanal markerar du kanalen och väljer sedan **Lägg till ett språk** i kanaldialogrutan som visas. Innan språken kan visas i dialogrutan måste de vara förkonfigurerade för onlinebutikskanalen i Commerce-administrationen.
+Du kan lägga till nya kanaler genom att välja **Lägg till en kanal**. Om du vill lägga till nya språk i en kanal markerar du kanalen och väljer sedan **Lägg till ett språk** i kanaldialogrutan som visas. Innan språken kan visas i dialogrutan måste de vara förkonfigurerade för onlinebutikskanalen i Commerce headquarters.
 
 ![Kanaldialogrutan i Commerce-webbplatsbyggaren.](media/e-commerce-site-05.png)
 
 ## <a name="set-up-an-azure-b2c-tenant"></a>Konfigurera en Azure B2C-klientorganisation
 
-Dynamics 365 Commerce använder Azure Active Directory (Azure AD) B2C-klientorganisationer (business-to-consumer) för att stödja autentiseringsuppgifter för användare och verifikationsflöden. Information om hur du ställer in din Azure B2C-klientorganisation finns i [Konfigurera en B2C-klientorganisation i Commerce](set-up-b2c-tenant.md), [Konfigurera anpassade sidor för inloggningar för användare](custom-pages-user-logins.md) och [Konfigurera flera B2C-klientorganisationer i en Commerce-miljö](configure-multi-b2c-tenants.md).
+Dynamics 365 Commerce använder Azure Active Directory (Azure AD) B2C-klientorganisationer (business-to-consumer) för att stödja autentiseringsuppgifter för användare och verifikationsflöden. Information om hur du konfigurerar din Azure B2C-klientorganisation finns i [Konfigurera en B2C-klientorganisation i Commerce](set-up-b2c-tenant.md), [Konfigurera anpassade sidor för inloggningar för användare](custom-pages-user-logins.md) och [Konfigurera flera B2C-klientorganisationer i en Commerce-miljö](configure-multi-b2c-tenants.md).
 
 ## <a name="overview-of-the-default-site-pages"></a>Översikt över standardwebbplatssidorna
 
-**Standard**- och **fabrikam**-webbplatserna innehåller förkonfigurerade mallar, fragment och sidor som hjälper dig att komma igång. Mer information finns i följande avsnitt:
+**Standard**- och **fabrikam**-webbplatserna innehåller förkonfigurerade mallar, fragment och sidor som hjälper dig att komma igång. Mer information finns i följande artiklar:
 
 - [Översikt över startsidan](quick-tour-home-page.md)
 - [Översikt över sida med produktinformation](quick-tour-pdp.md)
@@ -83,7 +83,7 @@ Dynamics 365 Commerce använder Azure Active Directory (Azure AD) B2C-klientorga
 
 ## <a name="manage-site-settings"></a>Hantera webbplatsinställningar
 
-För information om hur du hanterar dina webbplatsinställningar, se följande ämnen:
+För information om hur du hanterar dina webbplatsinställningar, se följande artiklar:
 
 - [Hantera näthandelsanvändare och roller](manage-ecommerce-users-roles.md)
 - [Språkinformation för sökmotoroptimering (SEO) för din webbplats](search-engine-optimization-considerations.md)
@@ -92,14 +92,14 @@ För information om hur du hanterar dina webbplatsinställningar, se följande �
 
 ## <a name="manage-site-content"></a>Hantera webbplatsinnehåll
 
-För information om hur du hanterar webbplatsinnehåll, se följande ämnen:
+För information om hur du hanterar webbplatsinnehåll, se följande artiklar:
 
 - [Ordlista för sidmodell](page-elements-overview.md)
 - [Dokumentera tillstånd och livscykel](document-states-overview.md)
 - [Mallar och layout](templates-layouts-overview.md)
 - [Arbeta med fragment](work-with-fragments.md)
 - [Arbeta med moduler](work-with-modules.md)
-- [Översikt av digital tillgångshantering](dam-overview.md)
+- [Översikt av digital Tillgångshantering](dam-overview.md)
 - [Modulbibliotek – översikt](starter-kit-overview.md)
 
 ## <a name="additional-resources"></a>Ytterligare resurser

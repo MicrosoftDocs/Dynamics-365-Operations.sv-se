@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb7cc1db906ba0cd07caaa1d82a12182f78b19ba
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 1ada6dfc9b227c7ae4ca873e8354d1fcc11ecbaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735386"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910331"
 ---
 # <a name="manage-recruiting-processes"></a>Hantera rekryteringsprocesser
 
 > [!IMPORTANT]
-> Rekryteringsfunktionen i det här avsnittet kallas för rekryteringsprojekt och är fokuserad på sökande, ansökningar och rekryteringsprojekt. 
+> Rekryteringsfunktionen i den här artikeln kallas för rekryteringsprojekt och är fokuserad på sökande, ansökningar och rekryteringsprojekt. 
 
 
-Denna artikel beskriver ett begrepp som rekryterare kan använda för att följa stegen i en rekryteringsprocess, inklusive försök att annonsera lediga jobberbjudanden och att rekrytera sökande, spåra sökande och ansökningsinformation, intervjua sökande och välja en eller flera kandidater till lediga befattningar i din organisation.
+Denna artikel beskriver ett begrepp som rekryterare kan använda för att följa stegen i en rekryteringsprocess, inklusive försök att annonsera lediga jobberbjudanden och att rekrytera sökande, spåra sökande och ansökningsinformation, intervjua sökande och välja en eller flera kandidater till de lediga befattningarna i din organisation.
 
 ## <a name="overview"></a>Översikt
 

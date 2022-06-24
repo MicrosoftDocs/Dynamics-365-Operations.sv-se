@@ -1,6 +1,6 @@
 ---
 title: Återbetalningsbara avgifter beräknas fel baserat på den returnerade kvantiteten
-description: Det här avsnittet innehåller felsökningsvägledning som kan hjälpa kassörerna att se felaktiga återbetalningsbara avgifter i kassan (POS) för den kvantitet med artiklar som returneras.
+description: Denna artikel innehåller felsökningsvägledning som kan hjälpa kassörer som upptäcker felaktiga återbetalningsbara avgifter i kassan (POS) för den kvantitet med artiklar som returneras.
 author: gvrmohanreddy
 ms.date: 03/24/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c8ecaa0cb73d06ac66b57cce815264e841a2259b
-ms.sourcegitcommit: 94ebdaae6dc996b205ac78ed546e38f91f4f46ed
+ms.openlocfilehash: 7a84207f587a826b9acdfd818c64220c5327bde1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "8490221"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890253"
 ---
 # <a name="refundable-charges-are-miscalculated-based-on-the-quantity-returned"></a>Återbetalningsbara avgifter beräknas fel baserat på den returnerade kvantiteten
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet innehåller felsökningsvägledning som kan hjälpa kassörerna att se felaktiga återbetalningsbara avgifter i kassan (POS) för den kvantitet med artiklar som returneras.
+Denna artikel innehåller felsökningsvägledning som kan hjälpa kassörer som upptäcker felaktiga återbetalningsbara avgifter i kassan (POS) för den kvantitet med artiklar som returneras.
 
 ## <a name="description"></a>Beskrivning
 
@@ -34,7 +34,7 @@ En kund köper till exempel en kvantitet på fem artiklar $5 per artikel, för t
 
 Från och med Microsoft Dynamics 365 Commerce version 10.0.26, gör funktionen **Aktivera återbetalningsavgifter baserat på den återbetalade kvantiteten** det möjligt att beräkna återbetalningsbara avgifter på radnivå baserat på mängden varor som returneras.
 
-Aktivera funktionen **Aktivera återbetalningsavgifter baserade på funktionen för återbetalad kvantitet** i Commerce-administration genom att följa dessa steg.
+Aktivera funktionen **Aktivera återbetalningsavgifter baserade på funktionen för återbetalad kvantitet** i Commerce headquarters genom att följa dessa steg.
 
 1. Öppna arbetsytan **Funktionshantering** (**Systemadministratör \> Arbetsytor \> Funktionshantering**).
 1. Sök efter och välj aktivera återbetalningsavgifter baserat på funktionen för **Aktivera återbetalningsavgifter baserade på funktionen för återbetalad kvantitet**.

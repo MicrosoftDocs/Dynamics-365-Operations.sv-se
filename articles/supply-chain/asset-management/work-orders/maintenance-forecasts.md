@@ -1,6 +1,6 @@
 ---
 title: Underhållsprognoser
-description: I det här avsnittet beskrivs underhållsprognoser i Tillgångshantering.
+description: I denna artikel beskrivs underhållsprognoser i Tillgångshantering.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6503d5110a4cb5e4041afa7b4e80395b2974a64e5a150eb6bfce1f32a6703e06
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c2dbd968a22f2bded29cff3517dacbafc79ff8f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761864"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902123"
 ---
 # <a name="maintenance-forecasts"></a>Underhållsprognoser
 
@@ -80,7 +80,7 @@ Gör så här om du vill lägga till en artikel från tillgångsstrukturen:
 2. Välj artikeln och redigera den relaterade informationen som du behöver.
 3. Välj **OK**.
 
-Om du vill få en översikt som visar var artikeln på den valda raden används, i relation till tillgångar, underhållsjobbtypstandarder, reservdelar och arbetsorder i tillgångshantering väljer du **artikel där den används**. Mer information om översikten finns i [Artikel där den används](../controlling-and-reporting/item-where-used.md).
+Om du vill få en översikt som visar var artikeln på den valda raden används, i relation till tillgångar, underhållsjobbtypstandarder, reservdelar och arbetsorder i Tillgångshantering väljer du **artikel där den används**. Mer information om översikten finns i [Artikel där den används](../controlling-and-reporting/item-where-used.md).
 
 
 ## <a name="add-an-expense-forecast-to-a-work-order"></a>Lägga till utgiftsprognos i en arbetsorder
@@ -113,7 +113,7 @@ Om timkostnader, artikelkostnader och utgifter uppdateras i andra moduler i Micr
 
 2. I dialogrutan **Uppdatera arbetsorderprognos** på snabbfliken **Poster som ska ingå** kan du lägga till urval för specifika arbetsorder eller arbetsorderjobb om det behövs. Välj **filter** och gör relevanta val.
 
-3. På snabbfliken **Kör i bakgrunden** kan du ställa in den automatiska uppdateringen som ett batchjobb, efter behov.
+3. På snabbfliken **Kör i bakgrunden** kan du konfigurera den automatiska uppdateringen som ett batchjobb, efter behov.
 
 4. Starta prognosuppdateringen genom att välja **OK**.
 

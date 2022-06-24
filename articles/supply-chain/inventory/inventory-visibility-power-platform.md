@@ -1,8 +1,8 @@
 ---
 title: Appen Lagersynlighet
-description: I detta ämne beskrivs hur du använder appen för Lagersynlighet.
+description: I denna artikel beskrivs hur du använder appen för Lagersynlighet.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 359f89f98ca6954a0bbafd63fffa1d505a43f0c8
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: db158e3b6ae76f69149db04096f99d3dc4251146
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895769"
 ---
-# <a name="use-the-inventory-visibility-app"></a>Använda appen Lagersynlighet
+# <a name="use-the-inventory-visibility-app"></a>Använda appen Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
 
 
-I detta ämne beskrivs hur du använder appen för Lagersynlighet.
+I denna artikel beskrivs hur du använder appen för Lagersynlighet.
 
 Lagersynligheten innehåller en modellbaserad app för visualisering. Appen innehåller tre sidor: **Konfiguration**, **Verksamhetens synlighet** och **Lagersammanfattning**. Den har följande värden:
 
@@ -70,7 +70,10 @@ Om du vill bokföra en reservationsbegäran måste du ange ett värde i begäran
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Lagersammanfattning
 
-**Lagersammanfattning** är en anpassad vy för entiteten *Inventory OnHand Sum*. Den ger en lagersammanfattning för produkter tillsammans med alla dimensioner. Data för lagersammanfattningen synkroniseras regelbundet från Lagersynlighet. Innan du kan se data på fliken **Lagersammanfattning** måste du aktivera funktionen *OnHandMostSpecificBackgroundService* på fliken **Funktionshantering**.
+**Lagersammanfattning** är en anpassad vy för entiteten *Inventory OnHand Sum*. Den ger en lagersammanfattning för produkter tillsammans med alla dimensioner. Sammanfattningsdata för lager synkroniseras periodiskt från Lagersynlighet var 15:e minut. För att se data i fliken **Lagersammanfattning** måste du aktivera funktionen *OnHandMostSpecificBackgroundService* på fliken **Funktionshantering** och välja **Uppdatera konfiguration**.
+
+> [!NOTE]
+> Funktionen *OnHandMostSpecificBackgroundService* spårar bara ändringar i produktens behållning som inträffat efter det att du aktiverat funktionen. Data för produkter som inte har ändrats sedan du aktiverade funktionen synkroniseras inte från lagertjänstcachen till Dataverse-miljön. Om din sida för **lagersamamnfattning** inte visar all behållningsinformation du förväntar dig går du till **Lagerhantering > Periodiska uppgifter > Integrering av lagersynlighet** inaktiverar du batchjobbet och återaktiverar det. Detta utför den första distributionen och all data synkroniseras med entiteten *Behållningssumma för lager* under närmaste 15 minuter. Om du vill använda den här funktionen rekommenderar vi att du aktiverar den innan du skapar ändringar i lagerbehållningen och aktiverar batchjobbet **Integrering för lagersynlighet**.
 
 Genom att använda det **avancerade filter** som Dataverse tillhandahåller kan du skapa en personlig vy som visar de rader som är av vikt för dig. Med hjälp av de avancerade filteralternativen kan du skapa många olika vyer, från enkla till komplexa. Du kan också lägga till grupperade och kapslade villkor i filtren. Mer information om hur du använder det **avancerade filtret** finns i [Redigera eller skapa personliga vyer med avancerade filter](/powerapps/user/grid-filters-advanced).
 

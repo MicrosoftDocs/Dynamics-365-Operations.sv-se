@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4cd99b1d2c0dbbf48e7eee7e1233e3b078d14ba3
-ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
+ms.openlocfilehash: 2972dc6a0b373cbc63b811c01ef7a5538810edbb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "8603066"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872725"
 ---
 # <a name="configure-print-management-record-specific-er-destinations"></a>Konfigurera postspecifika ER-destinationer för utskriftshantering
 

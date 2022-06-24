@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 98add33413f38db52b70b9c39c4ebd004ab3dd57
-ms.sourcegitcommit: 1819a11ae22019f1de6991d233c1c51e9950d7a3
+ms.openlocfilehash: 2430e75897a8ddc78a6b1b9288b23458aa44108a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2022
-ms.locfileid: "8457408"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908239"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Nyheter och ändringar på hemsidan för Ekonomi och Drift-appar
 
@@ -33,7 +33,7 @@ ms.locfileid: "8457408"
 
 Information om vad som är nytt eller ändrat i varje utgåva av Ekonomi och Drift-app finns i följande avsnitt:
 
-- **Ekonomi:** [Nyheter och ändringar i Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md)
+- **Finance:** [Nyheter och ändringar i Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md)
 - **Personal (kopplad infrastruktur):**[Vad är nytt eller ändrat i Microsoft Dynamics 365 Human Resources](../../../human-resources/get-started/hr-whats-new-changed-10-0-26.md)  
 - **Supply Chain Management:** [Nyheter och ändringar i Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/whats-new-home-page.md) 
 - **Commerce:** [Nyheter och ändringar i Dynamics 365 Commerce](../../../commerce/get-started/whats-new-home-page.md)

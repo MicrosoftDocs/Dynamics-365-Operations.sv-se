@@ -1,6 +1,6 @@
 ---
 title: Ställ in anläggningstillgångar
-description: Detta avsnitt ger en översikt över inställningen av modulen för anläggningstillgångar.
+description: Denna artikel ger en översikt över inställningen av modulen för anläggningstillgångar.
 author: moaamer
 ms.date: 06/08/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 164f19d4b346a51d4f5d43064cb33bf0c01378dd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 3baa842dadddd0f763f803528d322b9561b3141e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726250"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910154"
 ---
 # <a name="set-up-fixed-assets"></a>Ställ in anläggningstillgångar
 
 [!include [banner](../includes/banner.md)]
 
-Detta avsnitt ger en översikt över inställningen av modulen för **anläggningstillgångar**. 
+Denna artikel ger en översikt över inställningen av modulen för **anläggningstillgångar**. 
 
 Parametrar styr det allmänna beteendet bland anläggningstillgångar. Anläggningstillgångsgrupper låter dig gruppera dina tillgångar och ange standardinställningsattribut för varje tillgång som har tilldelats till en grupp. Böcker tilldelas till Anläggningstillgångsgrupper. Böcker följer det ekonomiska värdet för en anläggningstillgång över tid genom att använda avskrivningkonfigurationen som definieras i avskrivningsprofilen.
 

@@ -1,6 +1,6 @@
 ---
 title: Meddelanden för påfyllnadskörning
-description: Det här ämnet beskriver meddelande om påfyllnadskörning och förklarar hur du ställer in det.
+description: Denna artikel beskriver meddelanden om påfyllnadskörning och förklarar hur du konfigurerar dem.
 author: Mirzaab
 ms.date: 04/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: b6218610b673963f5d43e1b29c6fc356ea977935
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6f8f43bcdaae9a14350c66039d204caf38d33768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906983"
 ---
 # <a name="wave-execution-notifications"></a>Meddelanden för påfyllnadskörning
 
@@ -77,7 +77,7 @@ Med påfyllnadsmallar kan du länka specifika förekomster av påfyllnadsmetoder
 
 ### <a name="configure-a-work-template"></a>Konfigurera en arbetsmall
 
-Arbetsmallar används under påfyllnadskörningen för att generera arbete. I det här scenariot ska ett fel utlösas av påfyllnadskörningen. Genom att ställa in arbetsmallfrågan till att använda ett lagerställe som inte finns, ser du till att påfyllnadskörningen misslyckas och skickar därför ett meddelande.
+Arbetsmallar används under påfyllnadskörningen för att generera arbete. I det här scenariot ska ett fel utlösas av påfyllnadskörningen. Genom att konfigurera arbetsmallfrågan till att använda ett lagerställe som inte finns, ser du till att påfyllnadskörningen misslyckas och skickar därför ett meddelande.
 
 1. Gå till **Warehouse management \> Inställningar \> Arbete \> Arbetsmallar**.
 1. I listrutan, ange fältet **Malltyp för arbete** till *Försäljningsorder* och väljer sedan arbetsmallen *24 SO steg* för lagerställe 24.

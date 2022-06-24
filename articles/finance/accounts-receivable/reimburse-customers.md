@@ -1,6 +1,6 @@
 ---
 title: Återbetala kunder
-description: Det här avsnittet förklarar hur du skapar återbetalningstransaktioner för en grupp med kunder.
+description: Det här avsnittet innehåller en beskrivning av hur du skapar återbetalningstransaktioner för en kundgrupp.
 author: JodiChristiansen
 ms.date: 09/09/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47d464dd23d70e1a340211eb83828550d807a543
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 892b089edb16ba560f588c086d37faafdf16958d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735651"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891794"
 ---
 # <a name="reimburse-customers"></a>Återbetala kunder
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet förklarar hur du skapar återbetalningstransaktioner för en grupp med kunder. Om en kund har ett kreditsaldo, kan du återbetala kunden för beloppet för saldot. 
+Det här avsnittet innehåller en beskrivning av hur du skapar återbetalningstransaktioner för en kundgrupp. Om en kund har ett kreditsaldo, kan du återbetala kunden för beloppet för saldot. 
 
 Följande tabell visar förutsättningarna som krävs och måste finnas på plats innan du startar
 

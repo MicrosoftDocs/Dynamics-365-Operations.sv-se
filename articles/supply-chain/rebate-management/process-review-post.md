@@ -1,6 +1,6 @@
 ---
 title: Bearbeta, granska och bokföra rabatter
-description: I det här avsnittet beskrivs hur du bearbetar dina rabatthanteringserbjudanden, beräknar deras rabatter, granskar transaktionerna som genereras, bokför transaktioner och granskar bokföringarna.
+description: I denna artikel beskrivs hur du bearbetar dina rabatthanteringserbjudanden, beräknar deras rabatter, granskar transaktionerna som genereras, bokför transaktioner och granskar bokföringarna.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 524aec8025378391057275f77e31191f88e4a98b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e63f02e5e93ec2ce8c321a20c2a0c5886edcbe42
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690286"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901949"
 ---
 # <a name="process-review-and-post-rebates"></a>Bearbeta, granska och bokföra rabatter
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du bearbetar dina rabatthanteringserbjudanden, beräknar deras rabatter, granskar transaktionerna som genereras, bokför transaktioner och granskar bokföringarna.
+I denna artikel beskrivs hur du bearbetar dina rabatthanteringserbjudanden, beräknar deras rabatter, granskar transaktionerna som genereras, bokför transaktioner och granskar bokföringarna.
 
 ## <a name="change-the-status-of-a-deal"></a>Ändra status på ett erbjudande
 
@@ -45,7 +45,7 @@ Gå till **Rabatthantering \> Periodiska uppgifter \> Beräkna FIFO-inköpspris*
 
 Du kan skapa försäljnings- eller inköpsorder som har källtransaktioner, antingen före eller efter att du skapar ett tillämpligt rabatthanteringserbjudande.
 
-Du kan ställa in varje erbjudanderad så det automatiskt skapas en rabattreservering genom att bokföra antingen leverans eller faktura för en försäljningsorder eller inköpsorder. Ställ in fältet **Transaktionstyp** för erbjudanderaden som *Leverans* eller *Faktura* och ställ in alternativet **Bearbeta vid bokföring** som *Ja*. Om fältet **Transaktionstyp** är inställt på *Order*, inaktiveras bearbetning vid bokföringen. För källtransaktioner som skapades efter att ett erbjudande aktiverats, kan du fortfarande bearbeta reserveringarna enligt beskrivningen i avsnittet [Bearbeta rabatthanteringserbjudande](#process-deals) senare i det här avsnittet.
+Du kan konfigurera varje erbjudanderad så det automatiskt skapas en rabattreservering genom att bokföra antingen leverans eller faktura för en försäljningsorder eller inköpsorder. Ställ in fältet **Transaktionstyp** för erbjudanderaden som *Leverans* eller *Faktura* och ställ in alternativet **Bearbeta vid bokföring** som *Ja*. Om fältet **Transaktionstyp** är inställt på *Order*, inaktiveras bearbetning vid bokföringen. För källtransaktioner som skapades efter att ett erbjudande aktiverats kan du fortfarande bearbeta tillhandahållandena enligt beskrivningen i avsnittet [Bearbeta rabatthanteringserbjudanden](#process-deals) senare i denna artikel.
 
 ### <a name="enable-price-details"></a>Aktivera prisinformation
 
@@ -65,7 +65,7 @@ Följ dessa steg för att skapa en källtransaktion.
 
 1. Ange eller välj en kund som ska berättigas till rabatterbjudande i fältet **Kundkonto**.
 1. Skapa försäljningsordern genom att välja **OK**.
-1. På snabbfliken **Försäljningsorderrader** lägger du till en rad och ställer in följande fält för den:
+1. På snabbfliken **Försäljningsorderrader** lägger du till en rad och konfigurerar följande fält för den:
 
     - **Artikelnummer** – Ange en artikel som berättigar till en rabatt.
     - **Kvantitet** – Ange en kvantitet som berättigar till ett rabatterbjudande som omfattar en rad där fältet **Bas** är inställt på *Kvantitet*.
@@ -139,7 +139,7 @@ När du bearbetar ett erbjudande beräknar systemet alla relevanta rabatter och 
 
 ### <a name="process-deals-using-a-batch-job"></a>Bearbeta erbjudanden med hjälp av ett batchjobb
 
-Istället för att bearbeta specifika avtal eller rader kan du köra ett batchjobb för att bearbeta flera erbjudanden samtidigt. Om du vill kan du även använda postfilter och/eller ställa in ett återkommande schema. Om du vill bearbeta erbjudanden genom att använda ett batchjobb följer du dessa steg.
+Istället för att bearbeta specifika avtal eller rader kan du köra ett batchjobb för att bearbeta flera erbjudanden samtidigt. Om du vill kan du även använda postfilter och/eller konfigurera ett återkommande schema. Om du vill bearbeta erbjudanden genom att använda ett batchjobb följer du dessa steg.
 
 1. Gör något av följande:
 
@@ -149,13 +149,13 @@ Istället för att bearbeta specifika avtal eller rader kan du köra ett batchjo
 
 1. I dialogrutan som visas, på snabbfliken **Parametrar** i avsnittet **Period**, ange fälten **Från datum** och **Till datum** för att definiera datumintervallet för transaktioner för beräkningen.
 1. I avsnittet **Garantiperiod** ange **Från datum** och **Till datum** för att definiera datumintervallet för garantier för beräkningen.
-1. På snabbfliken **Poster som ska ingå** kan du ställa in filter för att begränsa den uppsättning erbjudanden som batchjobbet kommer att bearbetas. Inställningarna fungerar på samma sätt som de fungerar för andra typer av batchjobb.
+1. På snabbfliken **Poster som ska ingå** kan du konfigurera filter för att begränsa den uppsättning erbjudanden som batchjobbet kommer att bearbetas. Inställningarna fungerar på samma sätt som de fungerar för andra typer av batchjobb.
 1. På snabbfliken **Kör i bakgrunden** kan du ställa batchbearbetning och schemaläggningsalternativ efter behov. Inställningarna fungerar på samma sätt som de fungerar för andra typer av batchjobb.
 1. Välj **OK** för att köra och/eller planera beräkningen.
 
 ### <a name="process-deals-by-using-the-rebate-workbench"></a>Bearbeta erbjudanden med workbench för rabatt
 
-Istället för att bearbeta specifika erbjudanden eller rader kan du använda *workbench för rabatt* för att bearbeta flera erbjudanden samtidigt. Om du vill kan du även använda postfilter och/eller ställa in ett återkommande schema. Du behöver inte markera några rader. Alla rader som uppfyller de datum- och filterkrav som du anger bearbetas av systemet.
+Istället för att bearbeta specifika erbjudanden eller rader kan du använda *workbench för rabatt* för att bearbeta flera erbjudanden samtidigt. Om du vill kan du även använda postfilter och/eller konfigurera ett återkommande schema. Du behöver inte markera några rader. Alla rader som uppfyller de datum- och filterkrav som du anger bearbetas av systemet.
 
 Om du vill bearbeta erbjudanden genom att använda workbench för rabatt följer du dessa steg.
 
@@ -168,7 +168,7 @@ Om du vill bearbeta erbjudanden genom att använda workbench för rabatt följer
 
 1. I dialogrutan **Rabatthantering** som visas i avsnittet **Period** , ange fälten **Från-datum** och **Till-datum** för att ange datumintervall för beräkningen.
 1. I avsnittet **Garantiperiod** anger du fälten **Från-datum** och **Till-datum** för att ange datumintervallet för garantier för beräkningen.
-1. På snabbfliken **Poster som ska ingå** kan du ställa in filter för att begränsa den uppsättning erbjudanden som batchjobbet kommer att bearbetas. Inställningarna fungerar på samma sätt som de fungerar för andra typer av batchjobb.
+1. På snabbfliken **Poster som ska ingå** kan du konfigurera filter för att begränsa den uppsättning erbjudanden som batchjobbet kommer att bearbetas. Inställningarna fungerar på samma sätt som de fungerar för andra typer av batchjobb.
 1. På snabbfliken **Kör i bakgrunden** kan du ställa batchbearbetning och schemaläggningsalternativ efter behov. Inställningarna fungerar på samma sätt som de fungerar för andra typer av batchjobb.
 1. Välj **OK** för att köra och/eller planera beräkningen.
 
@@ -236,7 +236,7 @@ Om du vill bokföra värdet av en bearbetad reservering, ett rabatthanteringsbel
 
 ### <a name="set-up-the-system-to-post-all-target-transactions-automatically"></a>Ställ in systemet att bokföra alla måltransaktioner automatiskt
 
-För att ställa in ditt system för att bokföra alla måltransaktioner så snart de genereras genom bokföring av provision, rabatthanteringsbelopp och avskrivning, slå på **Bokför journaler automatiskt** och/eller alternativet **Boka automatiskt fritextfakturor** på sidan **Parametrar för rabatthantering**. Mer information finns i [parametrar för rabatthantering](rebate-management-parameters.md).
+För att konfigurera ditt system för att bokföra alla måltransaktioner så snart de genereras genom bokföring av provision, rabatthanteringsbelopp och avskrivning, slå på **Bokför journaler automatiskt** och/eller alternativet **Boka automatiskt fritextfakturor** på sidan **Parametrar för rabatthantering**. Mer information finns i [parametrar för rabatthantering](rebate-management-parameters.md).
 
 ### <a name="post-transactions-for-all-lines-for-one-or-more-deals"></a>Bokför transaktioner för alla rader för en eller flera erbjudanden
 
@@ -272,7 +272,7 @@ När du har bearbetat relevanta erbjudanden följer du dessa steg för att grans
 
 ### <a name="post-transactions-using-a-batch-job"></a>Bokföra transaktioner med hjälp av ett batchjobb
 
-Istället för att bokföra transaktioner för specifika avtal eller rader kan du köra ett batchjobb för att bokföra transaktioner för flera erbjudanden samtidigt. Om du vill kan du även använda postfilter och/eller ställa in ett återkommande schema. Om du vill bokföra transaktioner genom att använda ett batchjobb följer du dessa steg.
+Istället för att bokföra transaktioner för specifika avtal eller rader kan du köra ett batchjobb för att bokföra transaktioner för flera erbjudanden samtidigt. Om du vill kan du även använda postfilter och/eller konfigurera ett återkommande schema. Om du vill bokföra transaktioner genom att använda ett batchjobb följer du dessa steg.
 
 1. Gör något av följande:
 
@@ -282,7 +282,7 @@ Istället för att bokföra transaktioner för specifika avtal eller rader kan d
 
 1. I dialogrutan som visas, på snabbfliken **Parametrar** i avsnittet **Period**, ange fältet **Bokföringsdatum**. Ange sedan fälten **Från datum** och **Till datum** för att definiera datumintervallet för de transaktioner som måste bokföras.
 1. I avsnittet **Garantiperiod** ange **Från datum** och **Till datum** för att definiera datumintervallet för de garantier som ska bokföras.
-1. På snabbfliken **Poster som ska ingå** kan du ställa in filter för att begränsa den uppsättning erbjudanden som batchjobbet kommer att bearbetas. Inställningarna fungerar på samma sätt som de fungerar för andra typer av batchjobb.
+1. På snabbfliken **Poster som ska ingå** kan du konfigurera filter för att begränsa den uppsättning erbjudanden som batchjobbet kommer att bearbetas. Inställningarna fungerar på samma sätt som de fungerar för andra typer av batchjobb.
 1. På snabbfliken **Kör i bakgrunden** kan du ställa batchbearbetning och schemaläggningsalternativ efter behov. Inställningarna fungerar på samma sätt som de fungerar för andra typer av batchjobb.
 1. Välj **OK** för att köra och/eller planera beräkningen.
 

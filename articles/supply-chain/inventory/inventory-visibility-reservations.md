@@ -1,6 +1,6 @@
 ---
-title: Reservationer för Lagersynlighet
-description: I detta ämne beskrivs hur du ställer in reservationsfunktionen för att skapa reservationer, förbruka reservationer och/eller avmarkera angivna lagerkvantiteter med hjälp av Lagersynlighet.
+title: Inventory Visibility-reservationer
+description: I denna artikel beskrivs hur du konfigurerar reservationsfunktionen för att skapa reservationer, förbruka reservationer och/eller avmarkera angivna lagerkvantiteter med hjälp av Lagersynlighet.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 5e6752539a6381e1f7271883102391374e04f3aa
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3b74907709ab97ddf4cc829dba324df213ca229f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061714"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895740"
 ---
-# <a name="inventory-visibility-reservations"></a>Lagersynlighetsreservationer
+# <a name="inventory-visibility-reservations"></a>Inventory Visibility-reservationer
 
 [!include [banner](../includes/banner.md)]
 
 
-I detta ämne beskrivs hur du ställer in reservationsfunktionen för att skapa reservationer, förbruka reservationer och/eller avmarkera angivna lagerkvantiteter med hjälp av Lagersynlighet.
+I denna artikel beskrivs hur du konfigurerar reservationsfunktionen för att skapa reservationer, förbruka reservationer och/eller avmarkera angivna lagerkvantiteter med hjälp av Lagersynlighet.
 
 Reservationer utgör en kvantitet av lager som ska användas i framtiden. När du skapar en reservation förhindrar systemet att andra order reserverar eller förbrukar reserverade varor tills reservationen antingen förbrukas eller inte längre reserveras. Reservationer skapas, förbrukas och annulleras med hjälp av API-anrop till tjänsten för lagersynlighet.
 
-Om du vill kan du ställa in Microsoft Dynamics 365 Supply Chain Management (och andra tredjepartssystem) för att automatiskt motboka den kvantitet som har reserverats med hjälp av Lagersynlighet. Motbokningskvantiteten tas bort från reservationsposterna i Lagersynlighet.
+Om du vill kan du konfigurera Microsoft Dynamics 365 Supply Chain Management (och andra tredjepartssystem) för att automatiskt motboka den kvantitet som har reserverats med hjälp av Lagersynlighet. Motbokningskvantiteten tas bort från reservationsposterna i Lagersynlighet.
 
 När du aktiverar reservationsfunktionen blir Supply Chain Management automatiskt redo att motboka reservationer som görs med hjälp av Lagersynlighet.
 
@@ -70,7 +70,7 @@ För en reservation måste begärandetexten innehålla ett organisations-ID, ett
 
 När du anropar reservations-API:t kan du kontrollera reservationsvalideringen genom att ange den booleska parametern `ifCheckAvailForReserv` i begärandetexten. Ett värde `True` betyder att valideringen krävs, medan ett värde av `False` betyder att valideringen inte krävs. Standardvärdet är `True`.
 
-Om du vill annullera en reservation eller ta bort reservationen av angivna lagerkvantiteter ställer du in kvantiteten på ett negativt värde och ställer in parametern `ifCheckAvailForReserv` på `False` för att hoppa över valideringen.
+Om du vill annullera en reservation eller ta bort reservationen av angivna lagerkvantiteter ställer du in kvantiteten på ett negativt värde och konfigurerar parametern `ifCheckAvailForReserv` på `False` för att hoppa över valideringen.
 
 Här är ett exempel på begärandetext (för referens).
 

@@ -1,6 +1,6 @@
 ---
 title: En verifikation med flera kund- eller leverantörsposter
-description: Det här avsnittet innehåller en översikt över vad som händer när du bokför en enskild verifikation med flera kund- eller leverantörsposter. Den här funktionen ska annulleras i kommande versioner av Microsoft Dynamics 365 Finance och därför rekommenderar vi att inte använda denna metod för bokföring på grund av redovisningens inverkan på kvittningsbehandling.
+description: Den här artikeln innehåller en översikt över vad som händer när du bokför en enskild verifikation med flera kund- eller leverantörsposter. Den här funktionen ska annulleras i kommande versioner av Microsoft Dynamics 365 Finance och därför rekommenderar vi att inte använda denna metod för bokföring på grund av redovisningens inverkan på kvittningsbehandling.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8677eba2c38c6273555e1189c0153272a8ff9e005655f3846c0d7605b872ff94
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb94d582020484d8f37eb139c037fb108894c9ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737051"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889103"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>En verifikation med flera kund- eller leverantörsposter
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över vad som händer när du bokför en enskild verifikation med flera kund- eller leverantörsposter. Den här funktionen ska annulleras i kommande versioner av och därför rekommenderar vi att inte använda denna metod för bokföring på grund av redovisningens inverkan på kvittningsbehandling. 
+Den här artikeln innehåller en översikt över vad som händer när du bokför en enskild verifikation med flera kund- eller leverantörsposter. Den här funktionen ska annulleras i kommande versioner av och därför rekommenderar vi att inte använda denna metod för bokföring på grund av redovisningens inverkan på kvittningsbehandling. 
 
 Några vanliga exempel där en verifikation används för flera kunder eller leverantörer inkluderar saldoöverföringar mellan kunder och netting av saldon mellan kunder och leverantörer i samma organisation. 
 
@@ -35,7 +35,7 @@ En verifikation som innehåller mer än en kund eller leverantör, kan anges med
 -   Med hjälp av verifikation av flera rader där det inte finns någon motkonto med mer än en kund eller leverantör.
 -   Ange en verifikation med kontot och det motkonto som är leverantör/leverantör, kund/kund, leverantör/kund, eller kund/leverantör.
 
-Det här avsnittet visar hur kvittningen kommer att bearbetas när en verifikation med flera kund- eller leverantörsposter bokförs. Dessutom ger det här avsnittet tillfälliga lösningar som hjälper dig att förstå hur du undviker att använda en verifikation med flera kunder eller leverantörer. I synnerhet finns det två exempel som illustrerar de två gemensamma kvittningscenarion som påverkas av användningen av en verifikation med flera kunder eller leverantörer:
+Den här artikeln visar hur kvittningen kommer att bearbetas när en verifikation med flera kund- eller leverantörsposter bokförs. Dessutom ger den här artikeln tillfälliga lösningar som hjälper dig att förstå hur du undviker att använda en verifikation med flera kunder eller leverantörer. I synnerhet finns det två exempel som illustrerar de två gemensamma kvittningscenarion som påverkas av användningen av en verifikation med flera kunder eller leverantörer:
 
 -   Kassarabattbokföring
 -   Ombedömningsbokföring

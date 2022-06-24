@@ -1,6 +1,6 @@
 ---
 title: Uppskjuten bearbetning av lagerhållningsarbete
-description: I det här avsnittet beskrivs de funktioner som gör att uppskjuten bearbetning av lagerställets arbetsplaceringsoperationer är tillgängliga i Dynamics 365 Supply Chain Management.
+description: I denna artikel beskrivs de funktioner som gör att uppskjuten bearbetning av lagerställets arbetsplaceringsåtgärder är tillgängliga i Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 11/18/2019
 ms.topic: article
@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f99e960ffe7ca383563cc49c2e0825592ef5de57
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f4eeea0805c2cecedbd6b42926191ab02022df9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577874"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899307"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Uppskjuten bearbetning av lagerhållningsarbete
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs de funktioner som gör att uppskjuten bearbetning av placeringsoperationer för lagerställearbete i Dynamics 365 Supply Chain Management.
+I denna artikel beskrivs de funktioner som gör att uppskjuten bearbetning av placeringsåtgärder för lagerställearbete i Dynamics 365 Supply Chain Management.
 
-Funktionen uppskjuten bearbetning låter lagerarbetare fortsätta att göra annat arbete medan placeringsoperationen bearbetas i bakgrunden. Uppskjuten bearbetning är användbart när många arbetsrader måste bearbetas och arbetaren kan låta det arbetet bearbetas asynkront. Det är också användbart när servern kan ha ad hoc- eller oplanerade ökningar i bearbetningstiden, och den ökade bearbetningstiden kan påverka användarens produktivitet.
+Funktionen uppskjuten bearbetning låter lagerarbetare fortsätta att göra annat arbete medan placeringsåtgärden bearbetas i bakgrunden. Uppskjuten bearbetning är användbart när många arbetsrader måste bearbetas och arbetaren kan låta det arbetet bearbetas asynkront. Det är också användbart när servern kan ha ad hoc- eller oplanerade ökningar i bearbetningstiden, och den ökade bearbetningstiden kan påverka användarens produktivitet.
 
 Bakgrundsbearbetning uppnås med hjälp av SysOperation-ramverket. Mer information finns i [Översikt över SysOperation-ramverk](/dynamicsax-2012/developer/sysoperation-framework-overview).
 
@@ -70,7 +70,7 @@ Här följer en förklaring av möjliga statusar:
 
 ## <a name="impact-on-closed-work-dates"></a>Påverkan på stängda arbetsdatum
 
-När uppskjuten placeringsbearbetning används anges det stängda arbetsdatumet som det skapade datumet/tiden för de uppskjutna placeringsbearbetningsuppgifterna. Det stängda arbetsdatumet används eftersom det är den bästa uppskattningen för när placeringsoperationen slutfördes.
+När uppskjuten placeringsbearbetning används anges det stängda arbetsdatumet som det skapade datumet/tiden för de uppskjutna placeringsbearbetningsuppgifterna. Det stängda arbetsdatumet används eftersom det är den bästa uppskattningen för när placeringsåtgärden slutfördes.
 
 ## <a name="reprocessing-a-failed-task"></a>Ombearbetning av en misslyckad uppgift
 

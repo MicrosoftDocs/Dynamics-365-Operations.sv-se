@@ -1,6 +1,6 @@
 ---
 title: Skapa och underhåll leverantörssamarbete
-description: Det här avsnittet förklarar hur du ställer in leverantörssamarbete i Dynamics 365 Supply Chain Management. Här förklaras också hur du inför nya leverantörers samarbetsanvändare och hanterar säkerhetsrollerna för dessa användare.
+description: Denna artikel förklarar hur du konfigurerar leverantörssamarbete i Dynamics 365 Supply Chain Management. Här förklaras också hur du inför nya leverantörers samarbetsanvändare och hanterar säkerhetsrollerna för dessa användare.
 author: GalynaFedorova
 ms.date: 12/03/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4b59513d86426d3c1bfd759b9aabc331e58d5423
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677574"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890840"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Skapa och underhåll leverantörssamarbete
 
@@ -28,7 +28,7 @@ ms.locfileid: "8677574"
 
 Lleverantörssamarbetesgränssnittet visar en begränsad uppsättning information om inköpsorder, fakturor och försändelselager till användare av externa leverantörer. Från det här gränssnittet kan en leverantör också svara på anbudsförfrågningar och visa och redigera grundläggande företagsinformation.
 
-Det här avsnittet förklarar hur du ställer in leverantörssamarbete i Dynamics 365 Supply Chain Management. Här förklaras också hur du ställer in ett arbetsflöde för nya leverantörers samarbetsanvändare och hu du hanterar säkerhetsrollerna för dessa användare.
+Denna artikel förklarar hur du konfigurerar leverantörssamarbete i Dynamics 365 Supply Chain Management. Här förklaras också hur du konfigurerar ett arbetsflöde för nya leverantörers samarbetsanvändare och hu du hanterar säkerhetsrollerna för dessa användare.
 
 > [!NOTE]
 > Informationen om inställningen av säkerhetsroller för leverantörssamarbete gäller bara för den aktuella versionen av Ekonomi och drift. I Microsoft Dynamics AX 7.0 (februari 2016) och Microsoft Dynamics AX programversion 7.0.1 (maj 2016) kan du samarbeta med leverantörer med hjälp av modulen **Leverantörsportal**. Mer information om användarbehörigheter för Leverantörsportalen i Microsoft Dynamics AX, se [användarsäkerheten för leverantörsportalen](configure-security-vendor-portal-users.md).
@@ -46,10 +46,10 @@ Du kanske vill lägga till rollerna **Leverantörsadministratör (extern)** och 
 
 Du bör bara göra rollen **Leverantörsadministratör (extern)** tillgänglig om leverantörer ska kunna skapa nya kontakter, skicka användarförfrågningar från leverantörer för samarbete med nya användare och ändra användarinformation och hantera dessa förfrågningar via ett arbetsflöde.
 
-Om du tänker ställa in leverantörskontakter och -användare manuellt kan du bara göra rollen **Leverantör (extern)** tillgänglig. Denna roll kommer sedan att vara den enda rollen som kan begäras via en leverantörsanvändarbegäran.
+Om du tänker konfigurera leverantörskontakter och -användare manuellt kan du bara göra rollen **Leverantör (extern)** tillgänglig. Denna roll kommer sedan att vara den enda rollen som kan begäras via en leverantörsanvändarbegäran.
 
 > [!NOTE]
-> Rollen **SystemUser** beviljas automatiskt när du manuellt skapar ett nytt användarkonto. Därför måste du ta bort rollen och tilldela rollen **SystemExternalUser**.  Om nya användarkonton skapas via arbetsflödet som initieras av en leverantörsanvändares begäran att tilldela en ny användare, tilldelas en eller flera roller som du har ställt in för leverantörssamarbete och rollen **SystemExternalUser**. 
+> Rollen **SystemUser** beviljas automatiskt när du manuellt skapar ett nytt användarkonto. Därför måste du ta bort rollen och tilldela rollen **SystemExternalUser**. Om nya användarkonton skapas via arbetsflödet som initieras av en leverantörsanvändares begäran att tilldela en ny användare, tilldelas en eller flera roller som du har ställt in för leverantörssamarbete och rollen **SystemExternalUser**.
 
 #### <a name="vendor-admin-external-security-role"></a>Säkerhetsrollen Leverantörsadministratör (extern)
 
@@ -77,7 +77,7 @@ Rollen **Leverantör (extern)** kan användas för externa leverantörer som arb
 
 ## <a name="set-up-security-roles-that-are-used-when-prospective-vendors-are-onboarded"></a>Ställ in säkerhetsroller som används när potentiella leverantörer blir inbyggda
 
-Du måste ställa in en extern säkerhetsroll för leverantörer som initieras via en potentiell registreringsbegäran för leverantörer. Den här rollen tilldelas nya användare under försörjningsprocessen som kontrolleras av arbetsflödet för typen **Arbetsflöde för användarbegäran (plattform)**. Mer information finns i avsnittet [Ställ in arbetsflöden för att bearbeta användarförfrågningar från leverantörssamarbete](#set-up-workflows-to-process-vendor-collaboration-user-requests) längre fram i det här avsnittet.
+Du måste konfigurera en extern säkerhetsroll för leverantörer som initieras via en potentiell registreringsbegäran för leverantörer. Den här rollen tilldelas nya användare under försörjningsprocessen som kontrolleras av arbetsflödet för typen **Arbetsflöde för användarbegäran (plattform)**. Mer information finns i avsnittet [Konfigurera arbetsflöden för att bearbeta användarförfrågningar för leverantörssamarbete](#set-up-workflows-to-process-vendor-collaboration-user-requests) längre fram i denna artikel.
 
 Information om hur du introducerar potentiella leverantörer finns [introducera leverantörer](vendor-onboarding.md).
 
@@ -92,7 +92,7 @@ Säkerhetsrollen beviljar endast åtkomst till den nya guiden för leverantörsr
 
 ## <a name="set-up-workflows-to-process-vendor-collaboration-user-requests"></a>Skapa arbetsflöden som bearbetar användarförfrågningar om leverantörssamarbete
 
-För att garantera att alla relevanta uppgifter är slutförda och att godkännanden ges, måste du ställa in arbetsflöden för hantering av användarbegäranden om leverantörssamarbetsflöde.
+För att garantera att alla relevanta uppgifter är slutförda och att godkännanden ges, måste du konfigurera arbetsflöden för hantering av användarbegäranden om leverantörssamarbetsflöde.
 
 Användarförfrågningar om leverantör samarbete skickas antingen av externa leverantörer med säkerhetsrollen **Leverantörsadministratör (extern)** eller liknande behörigheter, eller av anskaffningspersonal i ditt företag. De kan också genereras från potentiella leverantörsregistreringsförfrågningar under processen för leverantörsregistrering.
 
@@ -110,7 +110,7 @@ Du måste skapa två eller fler arbetsflöden för att kunna bearbeta alla tre t
 
 Om du vill hantera leverantörsanvändarförfrågningar för att skapa nya användare och ändra säkerhetsroller, kan du skapa ett förgreningsvillkor i början av arbetsflödet. På det här sättet används en annan förgrening av arbetsflödet, beroende på om begäran är att skapa en ny användare eller ändra en befintlig användare.
 
-För att ställa in denna förgrening, skapa ett nytt arbetsflöde för **Arbetsflödet för användarbegäran (plattform)**. Förgreningarna i arbetsflödet kan innehålla följande element.
+För att konfigurera denna förgrening, skapa ett nytt arbetsflöde för **Arbetsflödet för användarbegäran (plattform)**. Förgreningarna i arbetsflödet kan innehålla följande element.
 
 #### <a name="branch-to-provision-new-users"></a>Förgrening för att skapa nya användare
 
@@ -118,7 +118,7 @@ För att ställa in denna förgrening, skapa ett nytt arbetsflöde för **Arbets
 2. Tilldela en uppgift till den person som är ansvarig för begäran om nya Microsoft Azure Active Directory (Azure AD) användarkonton i Azure-portalen. Använd den fördefinierade uppgiften **Skicka Azure B2B användarinbjudan** för det här steget. B2B-användare kan automatiskt exporteras till Azure AD. Använd den fördefinierade **Etablera Azure AD B2B-användaren**. Mer information finns i [Exportera B2B-användare till Azure AD](../../fin-ops-core/dev-itpro/sysadmin/implement-b2b.md).
 3. Tilldela en godkännandeuppgift till den person som överför till Azure. Om en kontonummer inte skapats, avvisar denna person uppgiften och avslutar arbetsflödet. Denna godkännandeuppgift kan hoppas över om du har inkluderat steget som automatiskt exporterar nya användarkonton till Azure via B2B-programgränssnittet (API).
 4. Lägg till en automatisk uppgift som gör att en ny användare kan läggas till. Använd den fördefinierade uppgiften **Användare av automatiserad etablering** för det här steget.
-5. Lägg till en uppgift som meddelar den nya användaren. Du kanske vill skicka ett välkomstmeddelande till den nya användaren, som innehåller en URL för Supply Chain Management. E-postmeddelandet kan använda en mall som du skapar på sidan **E-postmeddelanden** och sedan välja på sidan **Användararbetsflödesparametrar**.  Mallen kan innehålla taggen **%portalURL%**. När välkomstmeddelandet genereras ersätts det här märket av URL:en för Supply Chain Management-innehavare.
+5. Lägg till en uppgift som meddelar den nya användaren. Du kanske vill skicka ett välkomstmeddelande till den nya användaren, som innehåller en URL för Supply Chain Management. E-postmeddelandet kan använda en mall som du skapar på sidan **E-postmeddelanden** och sedan välja på sidan **Användararbetsflödesparametrar**. Mallen kan innehålla taggen **%portalURL%**. När välkomstmeddelandet genereras ersätts det här märket av URL:en för Supply Chain Management-innehavare.
 
     > [!NOTE]
     > Det här arbetsflödet kan användas i flera olika scenarier där användarna måste registrera sig. Det kan till exempel användas när potentiella leverantörer eller kontaktpersoner kräver ett konto för leverantörssamarbete. Därför ska du formulera e-postmeddelandet som ett allmänt uttryck som kan användas för flera syften.
@@ -148,7 +148,7 @@ Innan du skapar ett användarkonto för någon som ska använda leverantörssama
 
 ## <a name="troubleshoot-the-provisioning-of-new-vendor-collaboration-users"></a>Felsöka nya användare av leverantörssamarbete
 
-Nya användare av leverantörssamarbete tillhandahålls via arbetsflödet som du ställer in för att bearbeta användarförfrågningar från leverantörssamarbete av typen **Etablera användare av leverantör**.
+Nya användare av leverantörssamarbete tillhandahålls via arbetsflödet som du konfigurerar för att bearbeta användarförfrågningar från leverantörssamarbete av typen **Etablera användare av leverantör**.
 
 Om e-postadressen till en ny samarbetsanvändare för leverantörer tillhör en domän som har registrerats med Azure som innehavare (det vill säga om det är ett hanterat domänkonto), måste e-postadressen vara ett befintligt Azure AD konto. Annars kan etableringsprocessen inte slutföras.
 

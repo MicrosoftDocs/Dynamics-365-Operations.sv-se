@@ -1,6 +1,6 @@
 ---
 title: Manuellt skapade arbetsorder
-description: Det här avsnittet innehåller förklaringar av hur du skapar arbetsorder manuellt i Tillgångshantering.
+description: Denna artikel innehåller förklaringar av hur du skapar arbetsorder manuellt i Tillgångshantering.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a755fa579d929056296c5512f976d15c4808c336b6688b891a4712051e15e9a1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb29c5e7170011b95151d9aaf2a96a570563096d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750110"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902094"
 ---
 # <a name="manually-created-work-orders"></a>Manuellt skapade arbetsorder
 
@@ -114,7 +114,7 @@ I bilden nedan visas ett exempel på sidan dialogrutan **Skapa relaterad arbetso
 ![Figur 1.](media/03-work-orders.png)
 
 >[!NOTE]
->Om du har angett en relaterad arbetsordermask i **Parametrar för tillgångshantering** fliken  > **Arbetsorder** > fältet **Relaterad arbetsordermask** skapas arbetsorder-ID enligt inställningen för masken. Om ingen relaterad arbetsordermask ställs in används nästa tillgängliga arbetsorder-ID för relaterade arbetsorder.
+>Om du har angett en relaterad arbetsordermask i **Parametrar för Tillgångshantering** fliken  > **Arbetsorder** > fältet **Relaterad arbetsordermask** skapas arbetsorder-ID enligt inställningen för masken. Om ingen relaterad arbetsordermask ställs in används nästa tillgängliga arbetsorder-ID för relaterade arbetsorder.
 
 ## <a name="copy-a-work-order"></a>Kopiera arbetsorder
 
@@ -133,7 +133,7 @@ Det är möjligt att snabbt skapa en ny arbetsorder utifrån en befintlig arbets
 6. På listsidan **Alla arbetsorder** kan du redigera arbetsordern som du behöver.
 
 >[!NOTE]
->När den nya arbetsordern skapas kopieras viss information direkt från den befintliga arbetsordern. Information om prognoser, verktyg, underhållschecklistor, funktionella platser, adresser och tidsplanering kopieras inte. I stället initieras den från de aktuella inställningarna i tillgångshantering. Om informationen ändras mellan den tidpunkt då den första arbetsordern skapades och den tidpunkt då du gjorde en kopia av arbetsordern, inkluderas därför ändringarna i den nya arbetsordern. Exempel är ändringar i prognoser eller uppdaterade underhållschecklistor.
+>När den nya arbetsordern skapas kopieras viss information direkt från den befintliga arbetsordern. Information om prognoser, verktyg, underhållschecklistor, funktionella platser, adresser och tidsplanering kopieras inte. I stället initieras den från de aktuella inställningarna i Tillgångshantering. Om informationen ändras mellan den tidpunkt då den första arbetsordern skapades och den tidpunkt då du gjorde en kopia av arbetsordern, inkluderas därför ändringarna i den nya arbetsordern. Exempel är ändringar i prognoser eller uppdaterade underhållschecklistor.
 
 Illustrationen nedan visar ett exempel på dialogrutan **Kopiera arbetsorder**.
 
@@ -161,7 +161,7 @@ Illustrationen nedan visar ett exempel på dialogrutan **Skapa arbetsorder**.
 
 
 >[!NOTE]
->Om du vill att arbetsordrar ska skapas automatiskt kan du schemalägga underhållsplanjobb eller så kan du ställa in "Skapa automatiskt" [underhållsplaner](../preventive-and-reactive-maintenance/maintenance-plans.md) eller [underhållsrundor](../preventive-and-reactive-maintenance/maintenance-rounds.md) på en tillgång. Arbetsorder som skapas från underhållsbegäranden på listsidan **All underhållsschema** har samma underhållsjobbtyper som väljs i underhållsbegärandena.
+>Om du vill att arbetsordrar ska skapas automatiskt kan du schemalägga underhållsplanjobb eller så kan du konfigurera "Skapa automatiskt" [underhållsplaner](../preventive-and-reactive-maintenance/maintenance-plans.md) eller [underhållsrundor](../preventive-and-reactive-maintenance/maintenance-rounds.md) på en tillgång. Arbetsorder som skapas från underhållsbegäranden på listsidan **All underhållsschema** har samma underhållsjobbtyper som väljs i underhållsbegärandena.
 
 
 

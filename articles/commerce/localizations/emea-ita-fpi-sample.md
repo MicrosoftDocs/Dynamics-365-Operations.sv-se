@@ -1,6 +1,6 @@
 ---
 title: Exempel på integrering av kvittoskrivare för Italien
-description: I det här avsnittet finns en översikt över exemplet på räkenskapsintegration för Italien i Microsoft Dynamics 365 Commerce.
+description: I denna artikel finns en översikt över exemplet på räkenskapsintegrering för Italien i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,26 +9,26 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
-ms.openlocfilehash: 02226fd9f2c92db2518ca48baefb680a3d2f0ac1
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 2aa1851fe5fe447ba2dd4640be9881b37e54216e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076913"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909400"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>Exempel på integrering av kvittoskrivare för Italien
 
 [!include[banner](../includes/banner.md)]
 
-I det här avsnittet finns en översikt över exemplet på räkenskapsintegration för Italien i Microsoft Dynamics 365 Commerce.
+I denna artikel finns en översikt över exemplet på räkenskapsintegrering för Italien i Microsoft Dynamics 365 Commerce.
 
-Commerce-funktionen för Italien omfattar en exempelintegration av kassan (POS) med en kvittoskrivare. Provet förlänger [räkenskapsintegrationsfunktionen](fiscal-integration-for-retail-channel.md) så att det fungerar med [Epson FP-90III serier](https://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) skrivare från Epson och det möjliggör kommunikation med en kvittoskrivare i webbserverläget via webbtjänsten EpsonFPMate med Fiscal ePOS-Print API. Proven stöder bara läget Registratore Telemato (RT). Exemplet tillhandahålls i form av källkod och är en del av Retail Software Development Kit (SDK).
+Commerce-funktionen för Italien omfattar en exempelintegrering av kassan (POS) med en kvittoskrivare. Provet förlänger [räkenskapsintegreringsfunktionen](fiscal-integration-for-retail-channel.md) så att det fungerar med [Epson FP-90III serier](https://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) skrivare från Epson och det möjliggör kommunikation med en kvittoskrivare i webbserverläget via webbtjänsten EpsonFPMate med Fiscal ePOS-Print API. Proven stöder bara läget Registratore Telemato (RT). Exemplet tillhandahålls i form av källkod och är en del av Retail Software Development Kit (SDK).
 
 Microsoft släpper inte någon maskinvara, programvara eller dokumentation från Epson. Om du vill ha information om hur du får kvittoskrivaren och använder den kan du kontakta [Epson Italia S.p.A](https://www.epson.it).
 
 ## <a name="scenarios"></a>Scenarier
 
-Följande scenarier täcks av integrationsexempel för kvittoskrivare för Italien:
+Följande scenarier täcks av integreringsexempel för kvittoskrivare för Italien:
 
 - Försäljningsscenarier:
 
@@ -52,7 +52,7 @@ Följande scenarier täcks av integrationsexempel för kvittoskrivare för Itali
         - Uteslut en utfärdad/omdebiterad presentkortsrad från ett skattekvitto för en försäljning.
         - Skriv ut en betalning där ett presentkort används som vanlig betalningsmetod.
 
-    - Skriv ut räkenskapskvitton för operationer inom kundorder:
+    - Skriv ut räkenskapskvitton för åtgärder inom kundorder:
 
         - Ett skattekvitto skrivs inte ut för en kundorderdeposition.
         - Skriv ut en skattekvitto för leveransrader i en kundorder.
@@ -86,7 +86,7 @@ Exemplet för integrering av kvittoskrivare implementerar följande regler som r
 
 - Skriv inte ut ett skattekvitto om en transaktion är en kundinsättning.
 - Skriv inte ut ett skattekvitto om en transaktion endast innehåller en kundorderinsättning eller en återbetalning av en kundorderinsättning.
-- Skriv ut beloppet för den tidigare betalade insättningen på ett skattekvitto för en upphämtningsoperation för kundorder.
+- Skriv ut beloppet för den tidigare betalade insättningen på ett skattekvitto för en upphämtningsåtgärd för kundorder.
 - Dra av insättningsbeloppet för kundordern från betalningsrader när en kundorder skapas.
 - Spara beräknade justeringar av betalningsrader i kanaldatabasen med en referens för en hybrid kundorder.
 
@@ -95,18 +95,18 @@ Exemplet för integrering av kvittoskrivare implementerar följande regler som r
 - kvittoskrivaren stöder bara scenarier där moms inkluderas i priset. Därför måste alternativet **Inkludera moms** anges som **Ja** för både butiker och kunder.
 - Dagliga rapporter (räkenskapsårets X och räkenskapsårets Z) skrivs ut med det format som är inbäddat i räkenskapsskrivarens dator.
 - kvittoskrivaren har inte stöd för blandade transaktioner. Alternativet **Förbjud att blanda försäljning och returer i ett kvitto** bör anges till **Ja** i kassafunktionsprofiler.
-- Exemplet stöder bara integration med en kvittoskrivare som arbetar i läget Registratore Telemato (RT).
+- Exemplet stöder bara integrering med en kvittoskrivare som arbetar i läget Registratore Telemato (RT).
 
-## <a name="set-up-fiscal-integration-for-italy"></a>Ställ in räkenskapsintegration för Italien
+## <a name="set-up-fiscal-integration-for-italy"></a>Ställ in räkenskapsintegrering för Italien
 
-Exemplet på integrering av kvittoskrivaren för Italien baseras på [räkenskapsintegrationsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\EpsonFP90IIISample** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (t.ex. [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett filnamnstillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [ställa in ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md). 
+Exemplet på integrering av kvittoskrivaren för Italien baseras på [räkenskapsintegreringsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\EpsonFP90IIISample** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (t.ex. [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett tillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [konfigurera ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
 > På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare (VM) i Microsoft Dynamics Lifecycle Services (LCS). Mer information finns i [Implementeringsriktlinjer för det skattemässiga skrivarintegreringsexemplet för Italien (äldre)](emea-ita-fpi-sample-sdk.md).
 >
 > Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
 
-Slutför konfigurationsstegen för räkenskapsintegration som beskrivs i [ställa in räkenskapsintegration för Commerce-kanaler](setting-up-fiscal-integration-for-retail-channel.md).
+Slutför konfigurationsstegen för räkenskapsintegrering som beskrivs i [konfigurera räkenskapsintegrering för Commerce-kanaler](setting-up-fiscal-integration-for-retail-channel.md).
 
 1. [Ställa in process för räkenskapsregistrering](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Var noga med att notera inställningarna för den process för räkenskapsregistrering som är [specifika för det här kvittoskrivare integrering av prov](#set-up-the-registration-process).
 1. [Ställ in räkenskapstexter för rabatter](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
@@ -118,9 +118,9 @@ Slutför konfigurationsstegen för räkenskapsintegration som beskrivs i [ställ
 
 ### <a name="set-up-the-registration-process"></a>Ställa in registrationsprocessen
 
-Om du vill aktivera registreringsprocessen, följ dessa steg för att ställa in Commerce-administration. Mer information om [Ställ in räkenskapsintegrering för handelskanaler](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+Om du vill aktivera registreringsprocessen, följ dessa steg för att konfigurera Commerce headquarters. Mer information om [Ställ in räkenskapsintegrering för handelskanaler](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-1. Ladda ner konfigurationsfiler för leverantören av skattedokument och skatteanslutningen:
+1. Ladda ner konfigurationsfiler för providern av skattedokument och skatteanslutningen:
 
     1. Öppna [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) databasen.
     1. Välj en korrekt version av frisläppningen enligt din SDK/programversion (till exempel **[frisläppning/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
@@ -129,27 +129,27 @@ Om du vill aktivera registreringsprocessen, följ dessa steg för att ställa in
     1. Ladda ner konfigurationsfilen för räkenskapskoppling på **HardwareStation \> EpsonFP90IIIFiscalDeviceSample \> konfiguration \> ConnectorEpsonFP90IIISample.xml** (t.ex. [filen för version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/EpsonFP90IIISample/HardwareStation/EpsonFP90IIIFiscalDeviceSample/Configuration/ConnectorEpsonFP90IIISample.xml).
 
     > [!WARNING]
-    > På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare i LCS. Konfigurationsfilerna för det här exemplet för skatteintegration finns i följande mappar i Retail SDK på en utvecklar-VM i LCS:
+    > På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare i LCS. Konfigurationsfilerna för det här exemplet för skatteintegrering finns i följande mappar i Retail SDK på en utvecklar-VM i LCS:
     >
     > - **Konfigurationsfilen för räkenskapsdokumentprovidern** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml
     > - **Konfigurationsfil för räkenskapskoppling:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml
     > 
     > Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
 
-1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> delade Commerce-parametrar**. På fliken **allmänt** anger du alternativet **Aktivera räkenskapsintegration** till **Ja**.
-1. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Leverantörer av skattedokument** och läs in konfigurationsfilen för skattedokumentleverantören som du laddade ner tidigare.
-1. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Räkenskapskopplingar** och läs in konfigurationsfilen för räkenskapskoppling för skattedokumentleverantören som du laddade ner tidigare.
-1. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegration \> Funktionsprofiler för koppling**. Skapa en ny funktionsprofil för anslutning. Välj dokumentleverantören och den koppling som du läst in tidigare. Uppdatera [datamappningsinställningarna](#default-data-mapping) efter behov.
-1. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegration \> Tekniska profiler för koppling**. Skapa en ny teknisk profil för koppling och välj räkenskapskoppling som du laddade tidigare. Uppdatera [kopplingsinställningarna](#fiscal-connector-settings) efter behov.
-6. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegration \> Grupper för skattekoppling**. Skapa en ny grupp för räkenskapskoppling för den funktionsprofil för koppling som du skapade tidigare.
-7. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegration \> Processer för räkenskapsregistrering**. Skapa en ny räkenskapsregistrering och räkenskapsregistrering och välj den grupp för räkenskapskoppling som du skapade tidigare.
+1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> delade Commerce-parametrar**. På fliken **allmänt** anger du alternativet **Aktivera räkenskapsintegrering** till **Ja**.
+1. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegrering \> Leverantörer av skattedokument** och läs in konfigurationsfilen för skattedokumentprovidern som du laddade ner tidigare.
+1. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegrering \> Räkenskapskopplingar** och läs in konfigurationsfilen för räkenskapskoppling för skattedokumentprovidern som du laddade ner tidigare.
+1. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegrering \> Funktionsprofiler för koppling**. Skapa en ny funktionsprofil för anslutning. Välj dokumentprovidern och den koppling som du läst in tidigare. Uppdatera [datamappningsinställningarna](#default-data-mapping) efter behov.
+1. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegrering \> Tekniska profiler för koppling**. Skapa en ny teknisk profil för koppling och välj räkenskapskoppling som du laddade tidigare. Uppdatera [kopplingsinställningarna](#fiscal-connector-settings) efter behov.
+6. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegrering \> Grupper för skattekoppling**. Skapa en ny grupp för räkenskapskoppling för den funktionsprofil för koppling som du skapade tidigare.
+7. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegrering \> Processer för räkenskapsregistrering**. Skapa en ny räkenskapsregistrering och räkenskapsregistrering och välj den grupp för räkenskapskoppling som du skapade tidigare.
 8. Gå till **Butik och handel \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Funktionsprofiler**. Välj en funktionsprofil som är kopplad till butiken där registreringsprocessen ska aktiveras. På snabbfliken **Process för räkenskapsregistrering**, välj räkenskapsregistreringsprocessen som du skapade tidigare.
 9. Gåt ill **Retail och Commerce \> Kanalinställningar \> Kassainställning \> Kassaprofiler \> Maskinvaruprofiler**. Välj en maskinvaruprofil som är länkad till den Hardware Station som kvittoskrivare ska anslutas till. På snabbfliken **Kringutrustning för räkenskaper**, välj teknisk profil för koppling som du skapade tidigare.
 10. Öppna distributionstidsplanen (**Retail och Commerce \> Retail och Commerce-IT \> Distributionsschema**) och välj jobb **1070** och **1090** för att överföra data till kanaldatabasen.
 
 #### <a name="default-data-mapping"></a>Standarddatamappning
 
-Följande standarddatamappning ingår i konfigurationen av leverantören av skattedokument som tillhandahålls som en del av exemplet på räkenskapsintegration.
+Följande standarddatamappning ingår i konfigurationen av leverantören av skattedokument som tillhandahålls som en del av exemplet på räkenskapsintegrering.
 
 - **Mappning av betalningsmedelstyp** – Mappningen av betalningsmetoder som har konfigurerats för butiken till betalningstyper som kvittoskrivaren har stöd för. Följande exempel visar standardmappningen.
 
@@ -216,7 +216,7 @@ Följande standarddatamappning ingår i konfigurationen av leverantören av skat
 
     Denna infokod ska konfigureras så att användaren kan välja eller ange en av de möjliga returerna från butikerna. Den kan till exempel konfigureras som en lista med delkoder (till exempel **Retur från webbplatsen** eller **Retur from kiosk**). Parametern **Returnera ursprungsmappning** används sedan för att översätta värdet för infokoden till ett kommando för kvittoskrivaren.
 
-    Den infokod som väljs för **Infokod för retur ursprung** bör konfigureras som en obligatorisk infokod som aktiveras en gång per försäljningstransaktion. Den ska tilldelas som infokoden **Returnerad produkt** i funktionsprofilen för kassan så att den förser **returprodukten** med operationen som körs.
+    Den infokod som väljs för **Infokod för retur ursprung** bör konfigureras som en obligatorisk infokod som aktiveras en gång per försäljningstransaktion. Den ska tilldelas som infokoden **Returnerad produkt** i funktionsprofilen för kassan så att den förser **returprodukten** med åtgärden som körs.
 
     Inget standardvärde har angetts för den här mappningen. Du måste välja en infokod som är konfigurerad i ditt program.
 
@@ -238,7 +238,7 @@ Följande standarddatamappning ingår i konfigurationen av leverantören av skat
 
     Här följer en förklaring av attribut i den här mappningen:
 
-    - **ReturnOrigin** är ett av de möjliga ursprungen till returerna i butikerna. Värdet bör motsvara värdet för parametern **infokod för returursprung**. 
+    - **ReturnOrigin** är ett av de möjliga ursprungen till returerna i butikerna. Värdet bör motsvara värdet för parametern **infokod för returursprung**.
     - **PrinterReturnOrigin** är ett av returkällorna som kvittoskrivaren accepterar (**POS**, **VR** eller **ND**).
     - **PrinterReturnOriginWithoutFiscalData** är returursprunget som skattetryckaren accepterar och som motsvarar en returtransaktion som är kopplad till en ursprunglig försäljningstransaktion som inte har kopplade skattedata, eftersom den inte registrerades via en skattetryckare. I detta fall identifieras det ursprungliga försäljningsdatumet som datumet för den ursprungliga försäljningstransaktionen.
 
@@ -249,7 +249,7 @@ Följande standarddatamappningar är föråldrade och hålls endast för bakåtk
 
 #### <a name="fiscal-connector-settings"></a>Inställningar för räkenskapskoppling
 
-Följande inställningar ingår i den skatteanslutningskonfiguration som tillhandahålls som en del av det skattemässiga integrationsexemplet:
+Följande inställningar ingår i den skatteanslutningskonfiguration som tillhandahålls som en del av det skattemässiga integreringsexemplet:
 
 - **Slutpunktsadress** – Skrivarens URL.
 - **Datum- och tidssynkronisering** – Ett värde som anger om datum och tid för skrivaren måste synkroniseras med den anslutna maskinvaran.
@@ -263,10 +263,10 @@ Följande inställningar ingår i den skatteanslutningskonfiguration som tillhan
 
 #### <a name="set-up-the-development-environment"></a>Konfigurera en utvecklingsmiljö
 
-Följ dessa steg för att ställa in en utvecklingsmiljö för att testa och utöka provet.
+Följ dessa steg för att konfigurera en utvecklingsmiljö för att testa och utöka provet.
 
 1. Eller hämta [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions)-databasen. Välj en korrekt version av frisläppningen enligt din SDK/programversion. För mer information, se [Hämta Retail SDK-exempel och referenspaket från GitHub och NuGet](../dev-itpro/retail-sdk/sdk-github.md).
-1. Öppna integrationslösningen för kvittoskrivaren på **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\EpsonFP90IIISample.sln** och skapa det.
+1. Öppna integreringslösningen för kvittoskrivaren på **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\EpsonFP90IIISample.sln** och skapa det.
 1. Installera CRT-tillägg:
 
     1. Sök efter CRT installationsprogram:
@@ -299,11 +299,11 @@ Följ dessa steg för att ställa in en utvecklingsmiljö för att testa och ut�
 
 #### <a name="production-environment"></a>Produktionsmiljö
 
-Följ stegen i [Konfigurera en byggpipeline för ett skatteintegrationsprov](fiscal-integration-sample-build-pipeline.md) för att generera och släppa Cloud Scale Unit och självbetjäningsdistributionspaket för skatteintegreringsexemplet. Mall **EpsonFP90III build-pipeline.yml** YAML-filen finns i **Pipeline\\YAML_Files** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions).
+Följ stegen i [Konfigurera en byggpipeline för ett skatteintegreringsprov](fiscal-integration-sample-build-pipeline.md) för att generera och släppa Cloud Scale Unit och självbetjäningsdistributionspaket för skatteintegreringsexemplet. Mall **EpsonFP90III build-pipeline.yml** YAML-filen finns i **Pipeline\\YAML_Files** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions).
 
 ## <a name="design-of-extensions"></a>Design av tilläggen
 
-Exemplet på integrering av kvittoskrivaren för Italien baseras på [räkenskapsintegrationsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\EpsonFP90IIISample** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (t.ex. [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett filnamnstillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [ställa in ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md). 
+Exemplet på integrering av kvittoskrivaren för Italien baseras på [räkenskapsintegreringsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\EpsonFP90IIISample** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (t.ex. [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett tillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [konfigurera ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
 > På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare i LCS. Mer information finns i [Implementeringsriktlinjer för det skattemässiga skrivarintegreringsexemplet för Italien (äldre)](emea-ita-fpi-sample-sdk.md). Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
@@ -316,7 +316,7 @@ Syftet med tillägget som är en skattedokument leverantör är att generera uts
 
 **DocumentProviderEpsonFP90III** begäranhanteraren är ingångspunkten för begäran om att generera dokument från kvittoskrivaren.
 
-Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på dokumentprovidern för koppling som anges i Commerce-administration.
+Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på dokumentprovidern för koppling som anges i Commerce headquarters.
 
 Kopplingen stöder följande begäranden:
 
@@ -325,7 +325,7 @@ Kopplingen stöder följande begäranden:
 
 #### <a name="configuration"></a>Konfiguration
 
-Konfigurationsfilen för leverantör av skattedokument finns på **src\\FiscalIntegration\\EpsonFP90IIISample\\CommerceRuntime\\DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml** i databasen [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Syftet med den här filen är att aktivera inställningar för dokumentprovidern som ska konfigureras från Commerce-administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration.
+Konfigurationsfilen för leverantör av skattedokument finns på **src\\FiscalIntegration\\EpsonFP90IIISample\\CommerceRuntime\\DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml** i databasen [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Syftet med den här filen är att aktivera inställningar för dokumentprovidern som ska konfigureras från Commerce headquarters. Filformatet justeras med kraven för konfiguration av räkenskapsintegrering.
 
 ### <a name="hardware-station-extension-design"></a>Tilläggsdesign för Hardware Station
 
@@ -335,7 +335,7 @@ Syftet med tillägget som är en räkenskapskoppling är att kommunicera med kvi
 
 **EpsonFP90IIISample** begäranhanteraren är startpunkten för hantering av begäranden till kringutrustning för räkenskaper.
 
-Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på räkenskapskopplingsnamn som anges i Commerce-administration.
+Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på räkenskapskopplingsnamn som anges i Commerce headquarters.
 
 Kopplingen stöder följande begäranden:
 
@@ -345,6 +345,6 @@ Kopplingen stöder följande begäranden:
 
 #### <a name="configuration"></a>Konfiguration
 
-Konfigurationsfilen för leverantör av anslutningsprogram på **src\\FiscalIntegration\\EpsonFP90IIISample\\HardwareStation\\EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml** i [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) databasen. Syftet med filen är att aktivera inställningar för anslutningsprogram som ska konfigureras från Commerce-administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration.
+Konfigurationsfilen för leverantör av anslutningsprogram på **src\\FiscalIntegration\\EpsonFP90IIISample\\HardwareStation\\EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml** i [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) databasen. Syftet med filen är att aktivera inställningar för anslutningsprogram som ska konfigureras från Commerce headquarters. Filformatet justeras med kraven för konfiguration av räkenskapsintegrering.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

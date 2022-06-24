@@ -1,6 +1,6 @@
 ---
 title: Arbetsbelastningar för distributionslagerstyrning för moln- och molnskalningsenheter
-description: Det här avsnittet innehåller information om funktionen som gör att enheterna kan köra valda processer från din arbetsbelastningar för distributionslagerstyrning.
+description: Denna artikel innehåller information om funktionen som gör att skalningsenheterna kan köra utvalda processer från dina arbetsbelastningar för distributionslagerhantering.
 author: perlynne
 ms.date: 09/03/2021
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f9839ad9a18eb543734c2ba43a56b568460a64c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384496"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893509"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för distributionslagerstyrning för moln- och kantskalningsenheter
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Alla affärsfunktioner för lagerstyrning stöds inte fullt ut för lagerställen som kör en arbetsbelastning på en skalningsenhet. Se till att bara använda de processer som det här ämnet explicit beskriver som det stöds.
+> Alla affärsfunktioner för lagerstyrning stöds inte fullt ut för lagerställen som kör en arbetsbelastning på en skalningsenhet. Se till att bara använda de processer som denna artikel explicit anger stöds..
 
 ## <a name="warehouse-execution-on-scale-units"></a>Lagerkörning på skalningsenheter
 
@@ -40,7 +40,7 @@ Innan du börjar arbeta med arbetsbelastningen för lagerstyrning måste ditt sy
 
 ### <a name="deploy-a-scale-unit-with-the-warehouse-management-workload"></a>Distribuera en skalningsenhet med arbetsbelastningen för lagerstyrning
 
-Du måste ha ett Dynamics 365 Supply Chain Management nav och en skalningsenhet som har distribuerats med arbetsbelastningen för lagerstyrning. Mer information om arkitektur och distributionsprocess finns i [Skalningsenheter i en distribuerad hybridtopologi](cloud-edge-landing-page.md).
+Du måste ha en Dynamics 365 Supply Chain Management-hubb och en skalningsenhet som har distribuerats med arbetsbelastningen för lagerstyrning. Mer information om arkitektur och distributionsprocess finns i [Skalningsenheter i en distribuerad hybridtopologi](cloud-edge-landing-page.md).
 
 ### <a name="turn-on-required-features-in-feature-management"></a>Aktivera krävda funktioner i funktionshantering
 
@@ -51,7 +51,7 @@ Använd [utgiftshantering](../../fin-ops-core/fin-ops/get-started/feature-manage
 
 ## <a name="how-the-warehouse-execution-workload-works-on-scale-units"></a>Så här fungerar arbetsbelastningar för lagerkörning på skalningsenheter
 
-För processerna i arbetsbelastningen för lagerstyrning synkroniseras data mellan navet och skalningsenheter.
+För processerna i arbetsbelastningen för lagerstyrning synkroniseras data mellan hubben och skalningsenheter.
 
 En skalningsenhet kan endast bevara de data som den äger. Konceptet för dataägarskap för skalningsenheter bidrar till att förhindra konflikter i flera original. Därför är det viktigt att du förstår vilka processdata som ägs av hubben och vilka som ägs av skalningsenheterna.
 
@@ -100,20 +100,20 @@ Navet äger följande data:
 >
 > Om du använder processen *frisläppning till lagerställe*, [*lagerställeorder*](cloud-edge-warehouse-order.md) skapas lagerställeorder och ägarskapet för det relaterade mottagningsflödet tilldelas till skalningsenheten. Navet kommer inte att kunna registrera inkommande inleveranser.
 
-Du måste logga in på navet för att använda processen *Släpp till distributionslager*. För bearbetning av inköpsorder går du till någon av följande sidor för att köra eller schemalägga den:
+Du måste logga in på hubben för att använda processen *Släpp till distributionslager*. För bearbetning av inköpsorder går du till någon av följande sidor för att köra eller schemalägga den:
 
 - **Anskaffning och källa > Inköpsorder > All inköpsorder > Distributionslager > Åtgärder > Släpp till distributionslager**
 - **Lagerstyrning > Släpp till lagerställe > Automatiskt släpp av försäljningsorder**
 
-När du använder **Automatiskt släpp av försäljningsorder**, du kan välja specifika inköpsorderrader baserat på en frågeställning. Ett vanligt scenario är att ställa in ett återkommande batchjobb som frisläpper alla bekräftade inköpsorderrader som förväntas komma in nästa dag.
+När du använder **Automatiskt släpp av försäljningsorder**, du kan välja specifika inköpsorderrader baserat på en frågeställning. Ett vanligt scenario är att konfigurera ett återkommande batchjobb som frisläpper alla bekräftade inköpsorderrader som förväntas komma in nästa dag.
 
 Arbetaren kan köra mottagningsprocessen med hjälp av en mobilappen för distributionslagerstyrning som är ansluten till skalningsenhet. Data registreras sedan av skalningsenheten och rapporteras mot inkommande lagerorder. Skapandet och bearbetningen av efterföljande borttagning kommer också att hanteras av skalningsenheten.
 
-Om du inte använder processen *frisläppning till lager* och därför inte använder *lagerställeorder*, kan navet bearbeta inleverans och bearbetning av lager oberoende från skalningsenheter.
+Om du inte använder processen *frisläppning till lager* och därför inte använder *lagerställeorder*, kan hubben bearbeta inleverans och bearbetning av lager oberoende från skalningsenheter.
 
 ![Ingående bearbetningsflöde.](./media/wes-inbound-ga.png "Ingående processflöde")
 
-När en arbetare gör inkommande registreringar med hjälp av en Warehouse Management-mobilapp inleveransprocess mot skalningsenheten, registreras ett kvitto för den relaterade lagerställeordern, som lagras i skalningsenheten. Arbetsbelastningen för skalningsenheten signalerar då till hubben att den ska uppdatera den relaterade inköpsorderns radtransaktioner till *Registrerade*. Så snart denna är färdig kommer du att kunna köra en produktinleverans för inköpsorder på navet.
+När en arbetare gör inkommande registreringar med hjälp av en Warehouse Management-mobilapp inleveransprocess mot skalningsenheten, registreras ett kvitto för den relaterade lagerställeordern, som lagras i skalningsenheten. Arbetsbelastningen för skalningsenheten signalerar då till hubben att den ska uppdatera den relaterade inköpsorderns radtransaktioner till *Registrerade*. Så snart denna är färdig kommer du att kunna köra en produktinleverans för inköpsorder på hubben.
 
 I bilden nedan visas det ingående flödet och var de enskilda affärsprocesserna äger rum. (Välj diagrammet för att förstora det.)
 
@@ -129,7 +129,7 @@ Arbetsbelastningen för lagerstyrning har stöd för följande tre produktionsfl
 
 ### <a name="report-as-finished-and-put-away"></a>Rapportera som färdig och inlagrad
 
-Arbetare kan använda flödet **Rapportera som färdig och bortförd** i Warehouse Management-appen för att rapportera en produktion eller batchorder som färdig. De kan också rapportera samprodukter och biprodukter i en batchorder som färdiga. När ett jobb rapporteras som färdigt genererar systemet vanligtvis inlagringsarbete på skalningsenheten. Om du inte kräver inlagringsarbete kan du ställa in arbetspolicyer så att du utesluter det.
+Arbetare kan använda flödet **Rapportera som färdig och bortförd** i Warehouse Management-appen för att rapportera en produktion eller batchorder som färdig. De kan också rapportera samprodukter och biprodukter i en batchorder som färdiga. När ett jobb rapporteras som färdigt genererar systemet vanligtvis inlagringsarbete på skalningsenheten. Om du inte kräver inlagringsarbete kan du konfigurera arbetspolicyer så att du utesluter det.
 
 ### <a name="start-production-order"></a>Starta produktionsorder
 
@@ -137,7 +137,7 @@ Arbetare kan använda flödet för **Starta produktionsorder** i Warehouse Manag
 
 ### <a name="register-material-consumption"></a>Registrera materialförbrukning
 
-Arbetare kan använda flödet för **Registrera materialförbrukning** i Warehouse Management-app för att rapportera materialförbrukning för en tillverknings- eller batchorder. En plocklistejournal skapas sedan för det rapporterade materialet i tillverknings- eller batchordern på skalningsenheten. Journalraderna gör en fysisk reservation för det förbrukade lagret. När data synkroniseras mellan skalningsenheten och navet genereras en plocklistejournal och bokförs på navinstansen.
+Arbetare kan använda flödet för **Registrera materialförbrukning** i Warehouse Management-app för att rapportera materialförbrukning för en tillverknings- eller batchorder. En plocklistejournal skapas sedan för det rapporterade materialet i tillverknings- eller batchordern på skalningsenheten. Journalraderna gör en fysisk reservation för det förbrukade lagret. När data synkroniseras mellan skalningsenheten och hubben genereras en plocklistejournal och bokförs på navinstansen.
 
 ## <a name="supported-processes-and-roles"></a>Processer och roller som stöds
 
@@ -145,7 +145,7 @@ Inte alla lagerstyrningsprocesser stöds i en arbetsbelastning för lagerkörnin
 
 För att underlätta den här processen ingår en exempelroll med namnet *Lagerchef på arbetsbelastning* ingår i demodata på **Systemadministration \> Säkerhet \> Säkerhetskonfiguration**. Syftet med den här rollen är att göra det möjligt för lageransvariga att få åtkomst till arbetsbelastningen för lagerkörning på skalningsenheten. Rollen beviljar åtkomst till de sidor som är relevanta i kontexten för en arbetsbelastning som finns på en skalningsenhet.
 
-Användarroller i en skalningsenhet tilldelas som en del av den ursprungliga datasynkroniseringen från navet till skalningsenhet.
+Användarroller i en skalningsenhet tilldelas som en del av den ursprungliga datasynkroniseringen från hubben till skalningsenhet.
 
 Om du vill ändra rollerna som tilldelas en användare, gå till **systemadministration \> säkerhet \> tilldela användare till roller**. Användare som endast fungerar som lagerchefer på skalningsenheter bör endast tilldelas *Lagerchef på arbetsbelastning*. På så sätt ser du till att användarna bara har tillgång till de funktioner som stöds. Ta bort alla andra roller som har tilldelats dessa användare.
 
@@ -182,9 +182,9 @@ Inga andra typer av källdokumenthantering eller lagerarbete stöds för närvar
 > [!NOTE]
 > Menyalternativ och knappar för mobila enheter för funktioner som inte stöds visas inte i _mobilappen för distributionslagerstyrning_ när den är ansluten till en distribution av skalningsenhet.
 >
-> Några extra steg krävs för att ställa in mobilappen Warehouse Management att arbeta mot en enhet för molnbaserad eller kantskalningsenhet. För mer information, se [Konfigurera mobilappen Warehouse Management för moln- och kantskalningsenheter](cloud-edge-workload-setup-warehouse-app.md).
+> Några extra steg krävs för att konfigurera mobilappen Warehouse Management att arbeta mot en enhet för molnbaserad eller kantskalningsenhet. För mer information, se [Konfigurera mobilappen Warehouse Management för moln- och kantskalningsenheter](cloud-edge-workload-setup-warehouse-app.md).
 >
-> När du kör en arbetsbelastning på en skalningsenhet kan du inte köra processer som inte stöds för det specifika lagerstället i navet. De tabeller som finns längre fram i det här avsnittet innehåller de funktioner som stöds.
+> När du kör en arbetsbelastning på en skalningsenhet kan du inte köra processer som inte stöds för det specifika lagerstället i hubben. De tabeller som finns längre fram i detta artikeldokument innehåller de funktioner som stöds.
 >
 > Valda arbetstyper för lagerställen kan skapas både i hubben och i skalningsenheter, men kan endast underhållas av den ägda hubben eller skalningsenheten (distributionen som skapade data).
 >
@@ -233,7 +233,7 @@ I följande tabell visas vilka utgående funktioner som stöds och var de stöds
 | Planerad direktleverans                                        | Nej  | Nej |
 | Konsolidering av leverans                                       | Ja, när du använder lastplanering | Ja |
 | Påfyllnadsbearbetning för leverans                                     | Nej  |Ja, utom **Lastuppbyggnad och sortering** |
-| Underhålla försändelser för cykel                                  | Nej  | Ja|
+| Underhålla försändelser för påfyllnad                                  | Nej  | Ja|
 | Arbetsprocess för lager (inkl. tryck på ID-nummer)        | Nej  | Ja, men endast för de tidigare nämnda funktionerna |
 | Klusterplockning                                              | Nej  | Ja|
 | Manuell bearbetning av packningsstation  | Nej  | Nej |
@@ -281,7 +281,7 @@ I följande tabell visas vilka ingående funktioner som stöds och var de stöds
 | ID-nummer för överföringsorder har inlevererats och inlagrats             | Nej | Ja |
 | Inleverans och inlagring av överföringsorderartikel                       | Ja | Nej |
 | Överför orderrad inleverans och inlagring                       | Ja | Nej |
-| Inköpsorder som tas emot med underleverans                      | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Ja, men bara genom att göra en annulleringsbegäran från navet |
+| Inköpsorder som tas emot med underleverans                      | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Ja, men bara genom att göra en annulleringsbegäran från hubben |
 | Inköpsorder som tas emot med överleverans                       | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Ja  |
 | Ta emot med skapande av *Direktleveransarbete*                 | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nej |
 | Ta emot med skapande av *Kvalitetsorder*                  | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nej |
@@ -293,7 +293,7 @@ I följande tabell visas vilka ingående funktioner som stöds och var de stöds
 | Avbryt arbete (inkommande)                                            | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | <p>Ja men endast när alternativet <b>Avregistreringskvitto vid annullering av arbete</b> (på sidan <b>parametrar för lagerstyrning</b>) är avmarkerat</p> |
 | Läs in registreringsskylt                                           | Ja | Ja |
 
-### <a name="warehouse-operations-and-exception-handing"></a>Lageroperationer och hantering av undantag
+### <a name="warehouse-operations-and-exception-handing"></a>Lageråtgärder och hantering av undantag
 
 I följande tabell visas vilka funktioner för lagerställeåtgärder och hantering av undantag som stöds och var de stöds, när lagerstyrningshanteringen används i enheter för moln- och molnskalningsenheter.
 
@@ -315,7 +315,7 @@ I följande tabell visas vilka funktioner för lagerställeåtgärder och hanter
 | Avbrott för registreringsskylt                                | Ja | Nej                           |
 | Packa till kapslade ID-nummer                      | Ja | Nej                           |
 | Förarens incheckning                                    | Ja | Nej                           |
-| Förarens utcheckning                                   | Ja | Nej                           |
+| Förarens kassa                                   | Ja | Nej                           |
 | Ändra batchdispositionskod                      | Ja | Ja                          |
 | Visa lista över öppet arbete                             | Ja | Ja                          |
 | Bearbetning av minimi-/max- och zontröskeln| Ja <p>Rekommendationen ska inte inkludera samma platser som en del av frågeställningarna</p>| Ja                          |
@@ -350,7 +350,7 @@ Följande tabell sammanfattar vilka produktionsscenarier för lagerstyrning som 
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Underhålla skalningsenheter för lagerställekörning
 
-Flera batchjobb körs på både nav och skalningsenheterna.
+Flera batchjobb körs på både hubb och skalningsenheterna.
 
 På navdistributionen kan du manuellt underhålla följande batch-jobb:
 

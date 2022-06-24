@@ -1,6 +1,6 @@
 ---
 title: Skapa och tilldela avancerade regelstrukturer
-description: I det här avsnittet beskrivs hur du skapar och tilldelar en avancerad regelstruktur till en kontostruktur.
+description: I den här artikeln beskrivs hur du skapar och tilldelar en avancerad regelstruktur till en kontostruktur.
 author: aprilolson
 ms.date: 07/19/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ea0a31eeac9593051916d44113459f4b6ad70a92
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 72688642936f9428c96aebb34bf9f240dd48b46b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723063"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896331"
 ---
 # <a name="create-and-assign-advanced-rule-structures"></a>Skapa och tilldela avancerade regelstrukturer
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skapar och tilldelar en avancerad regelstruktur till en kontostruktur. Den här guiden använder demoföretaget USMF.
+I den här artikeln beskrivs hur du skapar och tilldelar en avancerad regelstruktur till en kontostruktur. Den här guiden använder demoföretaget USMF.
 
 ## <a name="create-an-advanced-rule-structure"></a>Skapa en avancerad regelstruktur
 1. Gå till **Navigeringsfönster > Moduler > General ledger > Chart of accounts > Structures > Advanced rule structures**.

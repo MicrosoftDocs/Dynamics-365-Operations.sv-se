@@ -1,6 +1,6 @@
 ---
-title: Översikt över hantering av affärsdokument
-description: Det här avsnittet innehåller information om hur du använder funktionen för hantering av affärsdokument i ER-ramverket.
+title: Hantering av affärsdokument – översikt
+description: Den här artikeln innehåller information om hur du använder funktionen för hantering av affärsdokument i ER-ramverket.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: faea9d4d9b3fc8f3f1474b6bb2a8dc31cdc22511
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9147a2e81329d5bf9103b6bfe067d166c1471835
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986261"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903629"
 ---
 # <a name="business-document-management-overview"></a>Översikt över hantering av affärsdokument
 
@@ -50,7 +50,7 @@ En fullständig lista över alla rapporter planerade för oktober 2020-utgåvan 
 
 Fler rapporter blir tillgängliga i framtida versioner. Särskilda meddelanden om ytterligare rapporter kommer att skickas separat. Mer information om hur du granskar listan över tillgängliga rapporter finns i avsnittet [Lista över ER-konfigurationer som har frisläppts i Finance för att stödja konfigurerbara affärsdokument](#list-of-configurations-cbd) nedan.
 
-Om du vill veta mer om den här funktionen fyller du i exemplet i det här avsnittet.
+Om du vill veta mer om den här funktionen fyller du i exemplet i den här artikeln.
 
 ## <a name="configure-er-parameters"></a>Konfigurera ER-parametrar
 
@@ -60,7 +60,7 @@ Eftersom hanteringen av affärsdokument skapas ovanpå ER-ramverket måste du ko
 
 ## <a name="import-er-solutions"></a>Importera ER-lösningar
 
-Exempel på ER-konfigurationer används i exemplet på denna procedur. Du måste importera till den aktuella instansen av Dynamics 365 Finance ER-konfigurationer som innehåller de affärsdokumentmallar som kan redigeras med hjälp av hantering av affärsdokument. Hämta följande filer och spara lokalt för att slutföra den här proceduren.
+Exempel på ER-konfigurationer används i exemplet på denna procedur. Du måste importera till den aktuella instansen av Dynamics 365 Finance, ER-konfigurationer som innehåller de affärsdokumentmallar som kan redigeras med hjälp av hantering av affärsdokument. Hämta följande filer och spara lokalt för att slutföra den här proceduren.
 
 **Exempel på ER-kundfaktureringslösning**
 
@@ -231,7 +231,7 @@ Företagsanvändare har åtkomst till affärsdokumentmallar för redigering på 
 - Användare som tilldelats rollen **Systemadministratör**.
 - Användare som har tilldelats en roll som är konfigurerad för att utföra uppdraget **Hantera affärsdokumentmallar** (AOT-namn **ERBDManageTemplates**).
 
-Använd följande procedur om du vill redigera mallar för fritextfakturor på arbetsytan affärsdokumenthantering. Innan du slutför den här proceduren måste du ha slutfört alla föregående procedurer i det här avsnittet.
+Använd följande procedur om du vill redigera mallar för fritextfakturor på arbetsytan affärsdokumenthantering. Innan du slutför den här proceduren måste du ha slutfört alla föregående procedurer i den här artikeln.
 
 1. Logga in som en användare med åtkomst till sidan arbetsyta för hantering av affärsdokument.
 2. Öppna arbetsytan för hantering av affärsdokument.

@@ -1,6 +1,6 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources (6 oktober 2020)
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 6 oktober 2020.
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 6 oktober 2020.
 author: jcart1106
 ms.date: 10/06/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ac64218e48d2713b91af1541f94083aef3f815a2
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4eb3e893c3243d3b2c169cb5a47001d4e0771a20
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062989"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887730"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (6 oktober 2020)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8062989"
 
 
 
-Det här ämnet beskriver nya, ändrade, kommer snart funktioner i Dynamics 365 Human Resources. Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
+Den här artikeln beskriver funktioner som är nya, ändrade eller kommer snart i Dynamics 365 Human Resources. Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
 Mer information om nya funktioner och deras förväntade allmänna tillgänglighetsdatum finns i [Översikt över Dynamics 365 Human Resources 2020 utgivningscykel 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -48,9 +48,9 @@ Följande funktion är i allmänhet tillgänglig i den här versionen.
 Den här versionen innehåller följande felkorrigeringar.
 
 >[!NOTE]
-> Vårt mål är att få den här informationen så snart som möjligt. Det kan finnas uppdateringar till det här avsnittet för att inkludera felkorrigeringar som gjorde det i versionen efter det att ämnet publicerades första gången.
+> Vårt mål är att få den här informationen så snart som möjligt. Det kan finnas uppdateringar till den här artikeln för att inkludera felkorrigeringar som gjorde det i versionen efter det att ämnet publicerades första gången.
 
-| Utfärda nummer | Utleverans | beskrivning |
+| Utfärda nummer | Problem | Beskrivning |
 | --- | --- | --- |
 | 448806 | **Standard identifieringstyp** exporterar som **RecId** i HCM-parametrar | Denna ändring i entiteten Personal-parametrar lägger till ytterligare en kolumn som visar **standard identifieringstypen**. |
 | 492923 | Uppgiftsregistreringar sparas inte i Lifecycle Services (LCS) | Uppgiftsregistreringar kan n u sparas i LCS. |

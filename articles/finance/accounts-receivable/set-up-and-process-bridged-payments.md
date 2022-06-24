@@ -1,6 +1,6 @@
 ---
-title: Ställ in och behandla interimsbetalningar
-description: I det här avsnittet beskrivs hur du ställer in och behandla till interimsbetalningar. En interimsbetalning är en betalning som bokförs i redovisningen i två steg.
+title: Ställa in och behandla interimsbetalningar
+description: I den här artikeln beskrivs hur du ställer in och behandla till interimsbetalningar. En interimsbetalning är en betalning som bokförs i redovisningen i två steg.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca93d99ce04e607b137a2755d507022a33ab1be8
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 4f0609e333fb16ba189b6a971f88fbb5bf900fec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734203"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887989"
 ---
 # <a name="set-up-and-process-bridged-payments"></a>Ställ in och behandla interimsbetalningar
 
@@ -28,7 +28,7 @@ ms.locfileid: "8734203"
 
 En interimsbetalning är en betalning som bokförs i redovisningen i två steg. Den här metoden används vanligtvis när betalningsmetoden är inställd på **Bank** och du bara måste bokföra transaktioner på bankkontot om transaktionen har raderat banken. Du kan dock även använda det för ett redovisningskonto. I det här fallet flyttar systemet beloppet från ett huvudkonto till ett annat när interimsbokning bearbetas.
 
-Du kan skapa interimsbetalningar från leverantörsreskontra eller kundreskontra. Även om det här avsnittet förklarar hur du konfigurerar interimsbokföring för kundreskontra, är stegen för leverantörsreskontratransaktioner liknande.
+Du kan skapa interimsbetalningar från leverantörsreskontra eller kundreskontra. Även om den här artikeln förklarar hur du konfigurerar interimsbokföring för kundreskontra, är stegen för leverantörsreskontratransaktioner liknande.
 
 ## <a name="set-up-bridging-posting"></a>Konfigurera interimsbokning
 

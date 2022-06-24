@@ -1,6 +1,6 @@
 ---
 title: Produktinleverans mot inköpsorder
-description: Detta avsnitt innehåller en beskrivning av olika alternativ för att registrera produkter som mottagna.
+description: Denna artikel innehåller en beskrivning av olika alternativ för att registrera produkter som mottagna.
 author: GalynaFedorova
 ms.date: 11/15/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ea22357b4d966f50ef2021ba7534ae633859455
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 53925426b5df6000617b0d8cee757a551fb89c95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674405"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904055"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Produktinleverans mot inköpsorder
 
 [!include [banner](../includes/banner.md)]
 
-Detta avsnitt innehåller en beskrivning av olika alternativ för att registrera produkter som mottagna.
+Denna artikel innehåller en beskrivning av olika alternativ för att registrera produkter som mottagna.
 
 Produktinleverans är en process som används för att registrera att de produkter som har beställts har tagits emot så att inköpsorderrader (IO) sedan kan bearbetas för fakturering. I vissa fall genomgår produkterna en förregistrering där extra information från leverantören registreras innan produkterna tas emot. När en produkt tas emot får den först statusen **Registrerad**. Produkten kan sedan genomgå ytterligare processer, till exempel kvalitetshantering, innan den slutligen får statusen **Mottagen**.
 
@@ -39,7 +39,7 @@ Registreringen av produktinleveransen sker ofta vid inlastningsplatser på ett l
 Produkter som tas emot på ett lagerställe kan genomgå en kvalitetskontroll innan de placeras på lagret. Kvalitetsorder eller karantänorder kan användas för att utföra kvalitetskontrollen. Om en kvalitetsorder används kan du konfigurera processen för att tillfälligt blockera produkter genom en reservation medan de kontrolleras. Om en karantänorder används flyttas produkterna till ett annat lagerställe för kontroll. Det här lagerstället kallas karantänlagerställe. I båda kvalitetskontrollsprocesserna kan vissa produkter komma att kasseras, antingen för att de inte uppfyller förväntningarna på kvalitet eller på grund av att kvalitetskontrollen innefattar destruktiv provning av ett urval av produkten.
 
 ## <a name="product-receipt"></a>Produktinleverans
-Oftast används åtgärden **Produktinleverans** på sidan **Inköpsorder** för att markera produkten som **Mottagen** på inköpsordern. Sidan **Bokföra produktinleverans** har olika alternativ för den kvantitet som redovisas som mottagen. Du kan till exempel ställa in fältet **Kvantitet** till **Orderkvantitet** eller **Inleverera nu-kvantitet**. Om ett lagerställes inleveransprocess har använts är det vanligt att fältet i stället ställs in till **Registrerad kvantitet**. Du kan ändra kvantiteterna för varje orderrad som kommer att få statusen **Mottagen** för att kunna ta hänsyn till eventuella avvikelser såsom under- eller överleverans. Vid produktinleveransen måste du ange en identifierare för produktinleveransen. Identifieraren utgörs vanligtvis av en referens till följesedeln från leverantören. Den här identifieraren krävs för redovisning eftersom den möjliggör kontroller och granskningar av leverantörens följesedlar mot vad som har tagits emot. Den krävs även för det bokförda lagret och utgiften.  
+Oftast används åtgärden **Produktinleverans** på sidan **Inköpsorder** för att markera produkten som **Mottagen** på inköpsordern. Sidan **Bokföra produktinleverans** har olika alternativ för den kvantitet som redovisas som mottagen. Du kan till exempel konfigurera fältet **Kvantitet** till **Orderkvantitet** eller **Inleverera nu-kvantitet**. Om ett lagerställes inleveransprocess har använts är det vanligt att fältet i stället ställs in till **Registrerad kvantitet**. Du kan ändra kvantiteterna för varje orderrad som kommer att få statusen **Mottagen** för att kunna ta hänsyn till eventuella avvikelser såsom under- eller överleverans. Vid produktinleveransen måste du ange en identifierare för produktinleveransen. Identifieraren utgörs vanligtvis av en referens till följesedeln från leverantören. Den här identifieraren krävs för redovisning eftersom den möjliggör kontroller och granskningar av leverantörens följesedlar mot vad som har tagits emot. Den krävs även för det bokförda lagret och utgiften.  
 
 Inköpsorder kan skapas för produkter som inte är avsedda som lagervaror, men som betraktas som en utgift. Den här kategorin inkluderar orderrader där produkter får statusen **Finns inte i lager** av respektive lagermodellgrupp och även rader som använder anskaffningskategorier. I detta fall kan artiklarna inte genomgå ankomstregistrering och inleveransen på lagerstället. I stället används åtgärden **Produktinleverans** för att registrera inleveransen direkt på inköpsordern och inleveransen baseras då på den beställda kvantiteten och inte på den registrerade kvantiteten.  
 

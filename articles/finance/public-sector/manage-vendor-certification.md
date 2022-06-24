@@ -1,6 +1,6 @@
 ---
 title: Underhålla leverantörscertifieringar
-description: I detta ämne beskrivs vilka steg leverantörer kan vidta när de underhåller sina certifieringar med hjälp av arbetstytan för leverantörssamarbeten.
+description: I denna artikel beskrivs vilka steg leverantörer kan vidta när de underhåller sina certifieringar med hjälp av arbetsytan för leverantörssamarbeten.
 author: v-kiarnd
 ms.date: 04/27/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b1b2cdd4389afd8997b60fe8e7a9b6851cbde199
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 37990292748c363f44d306bda0263dd117808eb1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735707"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891449"
 ---
 # <a name="maintain-vendor-certification"></a>Underhålla leverantörscertifieringar
 
 [!include [banner](../includes/banner.md)]
 
-I detta ämne beskrivs vilka steg som dina leverantörer kan vidta när de underhåller sina certifieringar med hjälp av **arbetstytan för leverantörssamarbeten**. Exempel på certifieringar kan till exempel vara ett WBE (Woman Business Enterprise) eller ett företag med certifieringen Energy and Environment Design (LEED). Leverantörer måste ange certifieringsinformation i arbetsytan **Leverantörsinformation**. Därifrån väljer leverantörerna **Mer information** och sedan **Certifieringar**.
+I denna artikel beskrivs vilka steg som dina leverantörer kan vidta när de underhåller sina certifieringar med hjälp av **arbetstytan för leverantörssamarbeten**. Exempel på certifieringar kan till exempel vara ett WBE (Woman Business Enterprise) eller ett företag med certifieringen Energy and Environment Design (LEED). Leverantörer måste ange certifieringsinformation i arbetsytan **Leverantörsinformation**. Därifrån väljer leverantörerna **Mer information** och sedan **Certifieringar**.
 
 ## <a name="turn-on-the-vendor-certification-feature"></a>Aktivera leverantörsintygsfunktionen
 

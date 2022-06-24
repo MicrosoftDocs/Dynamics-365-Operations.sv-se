@@ -1,6 +1,6 @@
 ---
 title: Ange och jämför anbudsförfråganbud och tilldela kontrakt
-description: Det här ämnet förklarar hur du anger svar på en anbudsförfrågan (RFQ), poäng och jämför bud, och sedan tilldelar kontraktet till en av leverantörerna.
+description: Denna artikel förklarar hur du anger svar på en anbudsförfrågan (RFQ), betygsätter och jämför bud, och sedan tilldelar kontraktet till en av leverantörerna.
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50b403021c347498a9b489a34196e592a2041a11
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d3ef754f2d5d58254a7c6f0e572115f8a2981ad9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677378"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893393"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Ange och jämför anbudsförfråganbud och tilldela kontrakt
 
 [!include [banner](../../includes/banner.md)]
 
-Det här ämnet förklarar hur du anger svar på en anbudsförfrågan (RFQ), poäng och jämför bud, och sedan tilldelar kontraktet till en av leverantörerna. Du kan använda den här proceduren i demonstrationsdataföretaget **USMF**.
+Denna artikel förklarar hur du anger svar på en anbudsförfrågan (RFQ), betygsätter och jämför bud, och sedan tilldelar kontraktet till en av leverantörerna. Du kan använda den här proceduren i demonstrationsdataföretaget **USMF**.
 
 Innan du startar proceduren måste du ha en anbudsförfrågan med två rader som har skickats till minst två leverantörer. Om du vill skapa en anbudsförfrågan slutför du proceduren [skapa en anbudsförfrågan](create-request-quotation.md). Poängkriterier måste också ställas in innan du kan slutföra den här proceduren.
 

@@ -1,6 +1,6 @@
 ---
 title: Integration med LinkedIn Talent Hub
-description: Det här avsnittet beskriver hur du ställer in integreringen mellan Microsoft Dynamics 365 Human Resources och LinkedIn Talent Hub.
+description: Den här artikeln beskriver hur du ställer in integreringen mellan Microsoft Dynamics 365 Human Resources och LinkedIn Talent Hub.
 author: jaredha
 ms.date: 10/20/2020
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d14a8cb1973e0ed55ef10ddb43415eba80eb5c1b
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: df4a0a4dec078392ba835318450f5983a6e95c97
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717123"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887760"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integration med LinkedIn Talent Hub
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 > [!IMPORTANT]
-> Integrationen mellan och Dynamics 365 Human Resources och LinkedIn Talent Hub som beskrivs i det här avsnittet drogs tillbaka den 31 december 2021. Integrationstjänsten är inte längre tillgänglig efter det här datumet. Organisationer som inte redan använder integrationstjänsten kan inte implementera tjänsten innan den dras tillbaka.
+> Integrationen mellan och Dynamics 365 Human Resources och LinkedIn Talent Hub som beskrivs i den här artikeln drogs tillbaka den 31 december 2021. Integrationstjänsten är inte längre tillgänglig efter det här datumet. Organisationer som inte redan använder integrationstjänsten kan inte implementera tjänsten innan den dras tillbaka.
 
 [LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) är en plattform för sökningsspårningssystem (ATS). Med den kan du anskaffa, hantera och anställa medarbetare på samma ställe. Genom att integrera Microsoft Dynamics 365 Human Resources med LinkedIn Talent Hub kan du enkelt skapa medarbetarposter i Personal för de sökande som har anställts för en befattning.
 

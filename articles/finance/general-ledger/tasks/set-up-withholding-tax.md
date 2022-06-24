@@ -1,6 +1,6 @@
 ---
 title: Ställ in källskatt
-description: Det här avsnittet innehåller information om hur du ställer in källskatt.
+description: Den här artikeln innehåller information om hur du ställer in källskatt.
 author: twheeloc
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c3c4992c7ab02793db3650df5624143d0ec090d0
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 0cc080df587904568796a9d6794987326be3ad26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565596"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907963"
 ---
 # <a name="set-up-withholding-tax"></a>Ställ in källskatt
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet innehåller information om hur du ställer in källskatt. *Källskatt* är en skatt på leverantörer som inte skapar momstransaktioner. Källskatt som beräknats på leverantörsbetalningar är en skuld. Därför är endast balansräkningskonton eller skuldkonton giltiga konton för bokföring av källskatt. Den här uppgifthandboken visar hur du ställer in källskatt.
+Den här artikeln innehåller information om hur du ställer in källskatt. *Källskatt* är en skatt på leverantörer som inte skapar momstransaktioner. Källskatt som beräknats på leverantörsbetalningar är en skuld. Därför är endast balansräkningskonton eller skuldkonton giltiga konton för bokföring av källskatt. Den här uppgifthandboken visar hur du ställer in källskatt.
 
 1. Gå till **Navigeringsfönster > Moduler > Skatt > Indirekt moms > Källskatt > Källskattekoder**.
 2. Välj **Ny**.

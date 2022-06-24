@@ -1,8 +1,8 @@
 ---
 title: Stödparameteranrop till ER-datakällor för typen beräknat fält
-description: Det här avsnittet innehåller information om hur du använder typen beräknat fält för ER-datakällor.
+description: Den här artikeln innehåller information om hur du använder typen beräknat fält för ER-datakällor.
 author: NickSelin
-ms.date: 08/06/2020
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349170"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934712"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Stödparameteranrop till ER-datakällor för typen beräknat fält
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du kan utforma en data källa med elektronisk rapportering (ER) med hjälp av typen **beräknat fält**. Den här datakällan kan innehålla ett ER-uttryck som vid körning kan kontrolleras av värdena i parameterargumenten som är konfigurerade i en bindning som anropar den här datakällan. Genom att konfigurera parametriserade anrop av en sådan datakälla kan du återanvända en enskild datakälla i många bindningar, vilket minskar det totala antalet datakällor som måste konfigureras i ER-modellmappningar eller ER-format. Det förenklar också den konfigurerade ER-komponenten, vilket minskar underhållskostnaderna och kostnaderna för användning av andra konsumenter.
+I den här artikeln beskrivs hur du kan utforma en data källa med elektronisk rapportering (ER) med hjälp av typen **beräknat fält**. Den här datakällan kan innehålla ett ER-uttryck som vid körning kan kontrolleras av värdena i parameterargumenten som är konfigurerade i en bindning som anropar den här datakällan. Genom att konfigurera parametriserade anrop av en sådan datakälla kan du återanvända en enskild datakälla i många bindningar, vilket minskar det totala antalet datakällor som måste konfigureras i ER-modellmappningar eller ER-format. Det förenklar också den konfigurerade ER-komponenten, vilket minskar underhållskostnaderna och kostnaderna för användning av andra konsumenter.
 
 ## <a name="prerequisites"></a>Förutsättningar
-För att slutföra exemplet i det här avsnittet måste du ha följande åtkomst:
+För att slutföra exemplet i den här artikeln måste du ha följande åtkomst:
 
 - Åtkomst till en av dessa roller:
 
@@ -46,10 +46,10 @@ Du måste också hämta följande filer och lagra dem lokalt.
 
 | **Innehåll**                           | **Filnamn**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Konfiguration av exempel på ER-datamodell.    | [Modell för att lära dig parameteranrop.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
-| Konfiguration av exempel på ER-metadata.      | [Metadata för att lära dig parameteranrop.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
-| Konfiguration av exempel på ER-modellmappning | [Mappning för att lära dig parameteranrop.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Konfiguration av exempel på ER-format.        | [Format för att lära dig parameteranrop.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Konfiguration av exempel på ER-datamodell.    | [Modell för att lära dig parameteranrop.version.1.xml](https://download.microsoft.com/download/e/5/c/e5c0d3f9-1818-47c7-ae75-46efcbb1314f/Modeltolearnparameterizedcallsversion.1.xml)     |
+| Konfiguration av exempel på ER-metadata.      | [Metadata för att lära dig parameteranrop.version.1.xml](https://download.microsoft.com/download/8/3/a/83a910a5-bf65-4509-bec4-6737a81ecc45/Metadatatolearnparameterizedcalls.version.1.xml)  |
+| Konfiguration av exempel på ER-modellmappning | [Mappning för att lära dig parameteranrop.version.1.1.xml](https://download.microsoft.com/download/b/f/d/bfd8cbd8-0370-44d1-a1b1-66d021c580ca/Mappingtolearnparameterizedcalls.version.1.1.xml) |
+| Konfiguration av exempel på ER-format.        | [Format för att lära dig parameteranrop.version.1.1.xml](https://download.microsoft.com/download/8/1/d/81deb6d8-a768-4fcf-bbbe-8f84d2dac3eb/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Logga in på RCS-instansen.
 I det här exemplet skapar du en konfiguration för exempelföretaget, Litware, Inc. Först, i RCS, måste du slutföra stegen i proceduren [Skapa en konfigurationsleverantör och markera den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md):
@@ -306,7 +306,7 @@ När ett parametiserat beräknat fält returnerar en post måste du stödja bind
 Du kan köra de ursprungliga och de förbättrade ER-formaten för att säkerställa att konfigurerade parameterbaserade beräknade fält fungerar som de ska.
 
 ### <a name="import-er-configurations"></a>Importera ER-konfigurationer
-Du kan importera granskade konfigurationer från RCS med hjälp av ER-databasen för **RCS**-typen. Om du redan gick igenom stegen i avsnittet [Importera konfigurationer för elektronisk rapportering (ER) från Regulatory Configuration Services (RCS)](rcs-download-configurations.md), använder du den konfigurerade återställningsdatabasen för att importera konfigurationer som beskrivs tidigare i det här avsnittet till din miljö. Annars följer du dessa steg:
+Du kan importera granskade konfigurationer från RCS med hjälp av ER-databasen för **RCS**-typen. Om du redan gick igenom stegen i avsnittet [Importera konfigurationer för elektronisk rapportering (ER) från Regulatory Configuration Services (RCS)](rcs-download-configurations.md), använder du den konfigurerade återställningsdatabasen för att importera konfigurationer som beskrivs tidigare i den här artikeln till din miljö. Annars följer du dessa steg:
 
 1. Markera företaget **DEMF** och välj sedan **elektronisk rapportering** på standardinstrumentpanelen.
 2. Välj **rapporteringskonfigurationer**.

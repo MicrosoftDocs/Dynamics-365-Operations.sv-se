@@ -1,6 +1,6 @@
 ---
 title: Lagerställeorder för moln- och kantskalningsenheter
-description: Det här ämnet ger information om den lagerställeorderkapacitet som används som en del av arbetsbelastningen för lagerställeenheter.
+description: Denna artikel ger information om den lagerställeorderkapacitet som används som en del av arbetsbelastningen för lagerställeenheter.
 author: perlynne
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: db254216e6c34b81f83c87a8fda454d0aeb1cece
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471702"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893538"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Lagerställeorder för moln- och kantskalningsenheter
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Inte alla företagsfunktioner stöds fullt ut i den allmänna förhandsgranskningen när enheter för belastningsenheter används. Om du använder skalningsenheter, se till att bara använda de processer som det här ämnet explicit beskriver som det stöds.
+> Inte alla företagsfunktioner stöds fullt ut i den allmänna förhandsgranskningen när enheter för belastningsenheter används. Om du använder skalningsenheter, se då till att bara använda de processer som denna artikel explicit beskriver som "stöds".
 
 ## <a name="what-are-warehouse-orders"></a>Vad är lagerställeorder?
 
@@ -45,7 +45,7 @@ Följ de här stegen om du vill skapa en inkommande lagerställeorder för en in
 1. I åtgärdsfönstret **Lagerställe**, flik **åtgärder**, välj **Släpp till lagerställe**.
 1. För att se relaterade orderrader för lagerställe, öppna relevant inköpsorder, välj en rad i avsnittet **Inköpsorderrader** och sedan i verktygsfältet, välj **lagerställe \> orderrader för lagerställe**. Om du vill visa alla raderna går du till **Hantering av distributionslager \> Förfrågningar och rapporter \> Orderrader för lagerställe**.
 
-Du kan också utlösa processen *Frisläpp till lagerställe* från ett batchjobb genom att gå till **Warehouse management > Frisläpp till lagerställe > Automatisk frisläppning av inköpsorder**. När du ställer in batchjobbet kan du välja specifika inköpsorderrader baserade på en frågeställning. Ett vanligt scenario är att ställa in ett återkommande batchjobb som frisläpper alla bekräftade inköpsorderrader som förväntas komma in nästa dag.
+Du kan också utlösa processen *Frisläpp till lagerställe* från ett batchjobb genom att gå till **Warehouse management > Frisläpp till lagerställe > Automatisk frisläppning av inköpsorder**. När du konfigurerar batchjobbet kan du välja specifika inköpsorderrader baserade på en frågeställning. Ett vanligt scenario är att konfigurera ett återkommande batchjobb som frisläpper alla bekräftade inköpsorderrader som förväntas komma in nästa dag.
 
 ## <a name="cancel-a-warehouse-order"></a>Annullera en lagerorder
 

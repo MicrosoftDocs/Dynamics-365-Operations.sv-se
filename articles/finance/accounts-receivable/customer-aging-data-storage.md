@@ -1,6 +1,6 @@
 ---
 title: Datalagring för kunders åldersfördelning
-description: I det här avsnittet beskrivs hur du använder extern lagring för åldersdata för kunder. Du kan köra processen för lagring av åldersdata för kunder för att göra utdata tillgängliga för export till ett externt system.
+description: I den här artikeln beskrivs hur du använder extern lagring för åldersdata för kunder. Du kan köra processen för lagring av åldersdata för kunder för att göra utdata tillgängliga för export till ett externt system.
 author: JodiChristiansen
 ms.date: 10/27/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1af4b4cbf503369565ee64ad8889ee9e59a92b3f
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d7a66485cc9a538f5c3999009b6dbe295d7a5b9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735533"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894154"
 ---
 # <a name="customer-aging-data-storage"></a>Datalagring för kunders åldersfördelning
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du använder extern lagring för åldersdata för kunder. I Microsoft Dynamics 365 Finance kan du köra processen **Datalagring för kunders åldersfördelning** i syfte att göra utdata tillgängliga för export till ett externt system. När du kör processen blir samma åldersrapportalternativ som finns tillgängliga i systemet tillgängliga för externa system. Detaljerna inkluderas alltid i exporterade data.
+I den här artikeln beskrivs hur du använder extern lagring för åldersdata för kunder. I Microsoft Dynamics 365 Finance kan du köra processen **Datalagring för kunders åldersfördelning** i syfte att göra utdata tillgängliga för export till ett externt system. När du kör processen blir samma åldersrapportalternativ som finns tillgängliga i systemet tillgängliga för externa system. Detaljerna inkluderas alltid i exporterade data.
 
 Det kan vara praktiskt att göra kundernas åldersdata tillgängliga i ett externt system för lagring i fall där utleveransen innehåller många kunder och/eller många transaktioner. Om den befintliga **åldersfördelningsrapporten för kunder** går ut på grund av att den innehåller för mycket data att skriva ut, är denna funktion ett alternativt sätt att hämta samma data.
 

@@ -1,6 +1,6 @@
 ---
 title: Inköps- och utgiftsanalys för Power BI-innehåll
-description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet Inköps- och utgiftsanalys.
+description: Den här artikeln beskriver vad som ingår i Power BI-innehållet Inköps- och utgiftsanalys.
 author: FrankDahl
 ms.date: 04/24/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a40d4f39a7119def9ed0393d4ced2be1f7e801a5c1c3f984b002e5224299915a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08937d36be27f7b21ab50473715cc155e4fd0c9e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716122"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892752"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Inköps- och utgiftsanalys för Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vad som ingår i **Inköps- och utgiftsanalys** Microsoft Power BI-innehåll. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
+Den här artikeln beskriver vad som ingår i **Inköps- och utgiftsanalys** Microsoft Power BI-innehållet. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
 
 ## <a name="overview"></a>Översikt
 

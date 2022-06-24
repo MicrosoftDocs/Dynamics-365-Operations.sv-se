@@ -1,6 +1,6 @@
 ---
 title: Rådgivning om optimering – översikt
-description: Det här avsnittet innehåller en översikt över funktionen för rådgivning om optimering.
+description: Denna artikel innehåller en översikt över funktionen Planeringsoptimering.
 author: t-benebo
 ms.date: 10/31/2019
 ms.topic: overview
@@ -15,24 +15,24 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 7a44de70eeed4a32af47cd5ab636cac74400a2ac
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 302c92c48765d1c2faddd65c6c6a18ddfd56c71e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469098"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891014"
 ---
 # <a name="planning-optimization-overview"></a>Rådgivning om optimering – översikt
 
 [!include [banner](../../includes/banner.md)]
 
-Tillägget planerings optimering för Microsoft Dynamics 365 Supply Chain Management gör det möjligt att utföra en beräkning av huvudplanering utanför Dynamics 365 Supply Chain Management och den relaterade SQL-databasen. De fördelar som är kopplade till funktionerna för planeringsoptimering omfattar förbättrad prestanda och minimal inverkan på SQL-databasen under huvudplaneringskörningen. Snabba planeringskörningar kan göras även under kontorstid, så att planerare omedelbart kan reagera på efterfrågan eller parameterändringar.
+Tillägget planerings optimering för Microsoft Dynamics 365 Supply Chain Management gör det möjligt att utföra en beräkning av huvudplanering utanför Dynamics 365 Supply Chain Management och den relaterade SQL-databasen. De fördelar som är kopplade till funktionerna för Planeringsoptimering omfattar förbättrad prestanda och minimal inverkan på SQL-databasen under huvudplaneringskörningen. Snabba planeringskörningar kan göras även under kontorstid, så att planerare omedelbart kan reagera på efterfrågan eller parameterändringar.
 
-Om du vill använda planeringsoptimering måste du installera tillägget planeringsoptimering från ditt projekt i Microsoft Dynamics Lifecycle Services (LCS) och aktivera planeringsoptimeringsfunktionen i Supply Chain Management. Mer information finns i [komma igång med planeringsoptimering](get-started.md).
+Om du vill använda Planeringsoptimering måste du installera tillägget Planeringsoptimering från ditt projekt i Microsoft Dynamics Lifecycle Services (LCS) och aktivera Planeringsoptimerinsfunktionen i Supply Chain Management. Mer information finns i [komma igång med Planeringsoptimering](get-started.md).
 
-Följande illustration visar fördelen med att använda planeringsoptimering under kontorstid.
+Följande illustration visar fördelen med att använda Planeringsoptimering under kontorstid.
 
-![Fördelar med att använda planeringsoptimering under kontorstid.](media/PlanningOptimization1.png)
+![Fördelar med att använda Planeringsoptimering under kontorstid.](media/PlanningOptimization1.png)
 
 ## <a name="improved-performance"></a>Förbättrad prestanda
 
@@ -47,15 +47,15 @@ Planeringsoptimeringen hjälper dig att uppnå följande mål:
 
 ## <a name="architecture-and-data-flow"></a>Arkitektur och dataflöde
 
-När tillägget för planeringsoptimering installeras från LCS, upprättas en säker anslutning till planeringsoptimeringstjänsten. Tjänsten finns i samma datacenterland eller -region som den relaterade instansen för Supply Chain Management. När planeringsoptimeringen har ställts in, när huvudplaneringen körs, skickas huvuddata och transaktionsdata från Supply Chain Management till planeringsoptimeringstjänsten.
+När tillägget för Planeringsoptimering installeras från LCS, upprättas en säker anslutning till Planeringsoptimerinstjänsten. Tjänsten finns i samma datacenterland eller -region som den relaterade instansen för Supply Chain Management. När Planeringsoptimeringen har ställts in, när huvudplaneringen körs, skickas huvuddata och transaktionsdata från Supply Chain Management till Planeringsoptimerinstjänsten.
 
-Om tillägget för planeringsoptimering avinstalleras tas alla relaterade data i planeringsoptimeringstjänsten bort.
+Om tillägget för Planeringsoptimering avinstalleras tas alla relaterade data i Planeringsoptimerinstjänsten bort.
 
 ### <a name="high-level-data-flow-for-regeneration-runs"></a>Dataflöde på hög nivå för återskapande körs
 
-1. Klienten för Supply Chain Management skickar en signal för att begära en planeringskörning från planeringsoptimering.
+1. Klienten för Supply Chain Management skickar en signal för att begära en planeringskörning från Planeringsoptimering.
 2. Planeringsoptimering begär nödvändiga data via den integrerade anslutaren.
-3. SQL-databasen skickar den begärda informationen om installations-, huvud- och transaktionsdata för planeringsoptimering via anslutningen. Anslutningen översätter information mellan Supply Chain Management och planeringsoptimeringstjänsten.
+3. SQL-databasen skickar den begärda informationen om installations-, huvud- och transaktionsdata för Planeringsoptimering via anslutningen. Anslutningen översätter information mellan Supply Chain Management och Planeringsoptimerinstjänsten.
 4. Planeringsoptimeringstjänsten innehåller planeringsrelaterade data i minnet och de beräkningar som krävs.
 5. Planeringsresultatet skickas till Supply Chain Management-databasen via anslutaren. Resultaten innehåller information som t.ex. planerade order och pegging-information. Planeringsoptimering skickar en signal till Supply Chain Management som visar att planeringskörningen har slutförts. Alla relevanta meddelanden och varningar skickas också.
 
@@ -65,7 +65,7 @@ Illustrationen som följer visar dataflöde.
 
 ## <a name="related-resources"></a>Relaterade resurser
 
-[Kom i gång med planeringsoptimering](get-started.md)
+[Kom i gång med Planeringsoptimering](get-started.md)
 
 [Planera analys av optimeringsanpassning](planning-optimization-fit-analysis.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Formeldesigner för TDS-beräkningar
-description: Det här avsnittet innehåller ett exempel på hur TDS (moms avdragen vid källa) beräknas baserat på formeln som definieras för varje TDS-momskod i den TDS-grupp som är kopplad till transaktionen.
+description: Den här artikeln innehåller ett exempel på hur TDS (moms avdragen vid källa) beräknas baserat på formeln som definieras för varje TDS-momskod i den TDS-grupp som är kopplad till transaktionen.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: e60db55fd3bbcfb8dc34670b3bbbd39336b04efb
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 1196f7258c898a55f3f29ddce7457e6f527185d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720095"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889873"
 ---
 # <a name="formula-designer-for-tds-calculations"></a>Formeldesigner för TDS-beräkningar
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller ett exempel på hur TDS (moms avdragen vid källa) beräknas baserat på formeln som definieras för varje TDS-momskod. TDS-momskoder definieras i TDS-gruppen som är kopplad till transaktionen. Innan du designar TDS-formler måste du göra de grundläggande inställningarna som krävs för TDS enligt stegen nedan. 
+Den här artikeln innehåller ett exempel på hur TDS (moms avdragen vid källa) beräknas baserat på formeln som definieras för varje TDS-momskod. TDS-momskoder definieras i TDS-gruppen som är kopplad till transaktionen. Innan du designar TDS-formler måste du göra de grundläggande inställningarna som krävs för TDS enligt stegen nedan. 
 
 - Konfigurera TDS-komponentgrupper på sidan **Källskattekomponentgrupper**. 
 - Ställ in TDS-komponenter och koppla TDS-komponentgruppen till TDS-komponenterna på sidan **Källskattekomponenter**. 

@@ -1,6 +1,6 @@
 ---
 title: Momsspecifikation per redovisningstransaktion (rapport)
-description: I det här avsnittet beskrivs hur du använder rapporten Moms specifikation per redovisningstransaktion för att visa och skriva ut information om redovisningstransaktioner som moms beräknas för.
+description: I den här artikeln beskrivs hur du använder rapporten Moms specifikation per redovisningstransaktion för att visa och skriva ut information om redovisningstransaktioner som moms beräknas för.
 author: EricWang
 ms.date: 08/19/2019
 ms.topic: article
@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-08-19
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: a51bfd604a1ecc790d5f26f4be95a72375a9ffe6
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: c96f457a0ea24aef1769f370c3c0657ada31eebf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726222"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898103"
 ---
 # <a name="sales-tax-specification-by-ledger-transaction-report"></a>Momsspecifikation per redovisningstransaktion (rapport)
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du använder rapporten **Moms specifikation per redovisningstransaktion** för att visa och skriva ut information om redovisningstransaktioner som moms beräknas för.
+I den här artikeln beskrivs hur du använder rapporten **Moms specifikation per redovisningstransaktion** för att visa och skriva ut information om redovisningstransaktioner som moms beräknas för.
 
 ## <a name="tax-accounts-vs-non-tax-accounts"></a>Momskonton kontra icke-moms konton
 

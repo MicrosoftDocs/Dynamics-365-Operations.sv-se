@@ -1,6 +1,6 @@
 ---
-title: Informationsmodul för upphämtning
-description: Det här avsnittet handlar om informationsmodulen för upphämtning och beskriver hur du lägger till den på kassasidorna i Microsoft Dynamics 365 Commerce.
+title: Modul för upphämtningsinformation
+description: Denna artikel avhandlar informationsmodulen för upphämtning och beskriver hur du lägger till den på kassasidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 11/06/2020
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 52015fb973642bfc6f45901e7c1a265f0ccfc415b1324bc62ef77a5fc72550bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad877a0c018093fe97f0aa8ac213357c0520a1c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764571"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892607"
 ---
 # <a name="pickup-information-module"></a>Modul för upphämtningsinformation
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om informationsmodulen för upphämtning och beskriver hur du lägger till den på kassasidorna i Microsoft Dynamics 365 Commerce.
+Denna artikel avhandlar informationsmodulen för upphämtning och beskriver hur du lägger till den på kassasidorna i Microsoft Dynamics 365 Commerce.
 
 Du kan använda modulen för upphämtningsinformation i en kassamodul för att visa information om orderupphämtning. Kunder kan visa tillgängliga datum och tidpunkter för upphämtning och sedan välja en lämplig tid att hämta sin order. En kund kan till exempel välja att hämta en order kl. 15.00 den 21 mars från butiken i San Francisco.
 
-Upphämtningstider för relevanta butiker måste konfigureras i Commerce-administrationen. Mer information finns i [Skapa och uppdatera tidpunkter för kundupphämtning](dev-itpro/pickup-timeslots.md).
+Upphämtningstider för relevanta butiker måste konfigureras i Commerce headquarters. Mer information finns i [Skapa och uppdatera tidpunkter för kundupphämtning](dev-itpro/pickup-timeslots.md).
 
 Om en modul för upphämtningsinformation skapas på en kassasida men inga tidpunkter har definierats för den butik som valts för upphämtning, visar modulen information men användaren kan inte välja några tidpunkter. Tidpunkter är valfria och krävs inte för att lägga en beställning.
 

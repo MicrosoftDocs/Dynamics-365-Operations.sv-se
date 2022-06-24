@@ -1,6 +1,6 @@
 ---
 title: Korrigera planeringsmotorfelet "Det finns inte tillräcklig kapacitet" och begränsad kapacitet
-description: Det här avsnittet innehåller information om orsakerna och lösningarna för planeringsmotorfelet "Produktionsorder %1 kunde inte tidsplaneras. Det finns inte tillräcklig kapacitet".
+description: Denna artikel innehåller information om orsakerna till och lösningarna för "Produktionsorder %1 kunde inte tidsplaneras. Det finns inte tillräcklig kapacitet".
 author: t-benebo
 ms.date: 7/29/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a3c08dc72c7133a2ebb148a2f88f83fee282717b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 2db4c2606936222fcd1a97cf2814fbfbc41df113
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469853"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891043"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Korrigera planeringsmotorfelet "Det finns inte tillräcklig kapacitet".
 
@@ -26,7 +26,7 @@ När du kör planering kan följande felmeddelande kan visas:
 
 > Det gick inte att planera produktionsordern %1. Det finns inte tillräcklig kapacitet.
 
-Det finns flera orsaker till att planeringsmotorn kan misslyckas och skicka det här felmeddelandet. Det här avsnittet innehåller riktlinjer som hjälper dig att hitta rotorsaken till felet och sedan begränsa det.
+Det finns flera orsaker till att planeringsmotorn kan misslyckas och skicka det här felmeddelandet. Denna artikel innehåller riktlinjer som hjälper dig att hitta grundorsaken till felet och därefter begränsa det.
 
 ## <a name="review-the-applicable-resources"></a>Granska tillämpliga resurser
 
@@ -108,8 +108,8 @@ Följ stegen nedan för att granska den tillgängliga kapaciteten för resursgru
 
 ## <a name="master-planning-books-a-resource-when-the-resource-calendar-is-closed"></a>Huvudplaneringsregler för en resurs när resurskalendern är stängd
 
-När du använder grovplanering kommer huvudplaneringen att planerar kapacitet enligt kalendern för den primära resursgruppen. Den bokar den sekundära operationen samtidigt som den primära operationen och tar inte hänsyn till kalendrarna eller kapaciteten för den sekundära operationen. Detta kan leda till att tillverkningsordern planeras på en stängd kalender eller vid en tidpunkt när den sekundära operationen är tillgänglig (kalender stängd, ingen kapacitet).
+När du använder grovplanering kommer huvudplaneringen att planerar kapacitet enligt kalendern för den primära resursgruppen. Den bokar den sekundära åtgärden samtidigt som den primära åtgärden och tar inte hänsyn till kalendrarna eller kapaciteten för den sekundära åtgärden. Detta kan leda till att tillverkningsordern planeras på en stängd kalender eller vid en tidpunkt när den sekundära åtgärden är tillgänglig (kalender stängd, ingen kapacitet).
 
-Vid finplanering tar huvudplaneringen hänsyn till kapacitet och kalender för både den primära och sekundära operationen vid planering av ordern. Kalendrar för båda operationerna måste vara öppna och ha tillgänglig kapacitet för att ordern ska kunna planeras.
+Vid finplanering tar huvudplaneringen hänsyn till kapacitet och kalender för både den primära och sekundära åtgärden vid planering av ordern. Kalendrar för båda åtgärderna måste vara öppna och ha tillgänglig kapacitet för att ordern ska kunna planeras.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Nettobehov och pegging-information med Planeringsoptimering
-description: Avsnittet innehåller information om beräknade nettobehov och pegging-information i Planeringsoptimering.
+description: Denna artikel innehåller information om beräknade nettobehov och "pegging"-information i Planeringsoptimering.
 author: t-benebo
 ms.date: 7/28/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: edfa6010074a4b04b3200115891723cd45871624
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 259e5793a8dfac67793034d98ccb627fe1947bab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468872"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888540"
 ---
 # <a name="net-requirements-and-pegging-information-with-planning-optimization"></a>Nettobehov och pegging-information med Planeringsoptimering
 
@@ -75,7 +75,7 @@ I exemplet visas hur pegging-information visas på sidan **Nettobehov**.
 
 Innan du börjar arbeta med detta scenario måste följande förutsättningar förberedas:
 
-1. Du måste arbeta med ett system där standardexempeldata finns tillgängliga, och du måste ställa in den juridiska personen som *USMF*.
+1. Du måste arbeta med ett system där standardexempeldata finns tillgängliga, och du måste konfigurera den juridiska personen som *USMF*.
 2. I exemplet används produkt *1000* som ingår i USMF exempeldata. Se till att den här produkten är tillgänglig och att den är inställd på följande sätt:
 
     - **Standardordertyp:** *Inköpsorder*
@@ -133,7 +133,7 @@ Nu ska du öppna sidan **Nettobehov** för produkt *1000* för att granska hur b
     ![Pegging-information för den planerade försäljningsordern](media/pegging-planned-purchase-order.png "Pegging-information för den planerade försäljningsordern")
 
 > [!NOTE]
-> Eftersom Planeringsoptimering ännu inte har stöd för vissa funktioner, inkluderas inte behovstyperna *Säkerhetslager* och *Utgången batch* på sidan **Nettobehov**. Mer information finns i [anpassningsanalys för planeringsoptimering](planning-optimization-fit-analysis.md).
+> Eftersom Planeringsoptimering ännu inte har stöd för vissa funktioner, inkluderas inte behovstyperna *Säkerhetslager* och *Utgången batch* på sidan **Nettobehov**. Mer information finns i [anpassningsanalys för Planeringsoptimering](planning-optimization-fit-analysis.md).
 >
 > Om du använder den inbyggda huvudplaneringsmotorn stöds batchkontrollerade produkter. För batchkontrollerade produkter visas utgången lagerbehållning på sidan **Nettobehov** men den är inte peggad med efterfrågekrav. Utgångna behållningsrader av den här typen visas som behovsrader *Utgången batch* på sidan **Nettobehov**.
 

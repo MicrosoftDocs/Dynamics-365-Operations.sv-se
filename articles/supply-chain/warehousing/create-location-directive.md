@@ -1,6 +1,6 @@
 ---
 title: Arbeta med platsdirektiv
-description: I det här avsnittet beskrivs hur du arbetar med platsdirektiv. Platsdirektiv är användardefinierade regler som hjälper till att identifiera plockning och inlagringsplatser för lagerrörelse.
+description: I denna artikel beskrivs hur du arbetar med platsdirektiv. Platsdirektiv är användardefinierade regler som hjälper till att identifiera plockning och inlagringsplatser för lagerrörelse.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 84ff0a466c037db05aecaff14aa2e17990ce8799
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103148"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903707"
 ---
 # <a name="work-with-location-directives"></a>Arbeta med platsdirektiv
 
@@ -27,7 +27,7 @@ ms.locfileid: "8103148"
 Placering av direktiven är regler som hjälper till att identifiera och sätta platserna för lager. Exempelvis i en försäljningsorder transaktion, en plats direktiv bestämmer var objekten ska plockas, och där plockade artiklar kommer att användas. Platsdirektiv består av ett rubrik och tillhör ande rader. De skapas för specifika *arbetsordertyper*.
 
 > [!NOTE]
-> Det här ämnet gäller funktioner i modulen **Lagerstyrning**. Den gäller inte funktioner i modulen [Lagerhantering](../inventory/inventory-home-page.md).
+> Denna artikel gäller funktioner i modulen **Warehouse management**. Den gäller inte funktioner i modulen [Lagerhantering](../inventory/inventory-home-page.md).
 
 Du kan använda platsdirektiv när du slutför följande uppgifter:
 
@@ -56,7 +56,7 @@ Många av fälten som kan ställas in för platsdirektiv är gemensamma för all
 > [!NOTE]
 > Två arbetsordertyper, *annullerade arbeten* och *rullande inventering*, används endast i systemet. Platsdirektiv kan inte skapas för dessa arbetsordertyper.
 
-I tabellerna i följande underavsnitt finns en lista över vanliga och arbetsordertyper – specifika fält som är tillgängliga när du ställer in ett platsdirektiv.
+I tabellerna i följande underavsnitt finns en lista över vanliga och arbetsordertyper – specifika fält som är tillgängliga när du konfigurerar ett platsdirektiv.
 
 ### <a name="fields-that-are-common-to-all-work-order-types"></a>Fält som är gemensamma för alla arbetsordertyper
 
@@ -109,7 +109,7 @@ I följande tabell visas de fält som är specifika för vissa arbetsordertyper.
 
 För att öppna sidan **Platsdirektiv** gå till **Lagerstyrning \> Inställning \> Platsdirektiv**.
 
-Därifrån kan du visa, skapa och redigera dina platsdirektiv med hjälp av kommandona i åtgärdsfönstret. Se de återstående avsnitten i detta ämne för information om hur du använder alla fälten som är tillgängliga på sidan.
+Därifrån kan du visa, skapa och redigera dina platsdirektiv med hjälp av kommandona i åtgärdsfönstret. Se de återstående avsnitten i denna artikel för information om hur du använder alla fält som är tillgängliga på sidan.
 
 ## <a name="action-pane"></a>Åtgärdsfönster
 
@@ -145,10 +145,10 @@ Fälten på snabbfliken **platsdirektiv** är specifika för arbetsordertypen so
     > [!TIP]
     > Om en direktivkod ställs in kommer systemet inte att söka efter platsdirektiv med sekvensnummer när arbete måste genereras. I stället sker sökningen efter en direktivkod. På detta sätt kan du vara mer specifik om det platsdirektiv som används för ett visst steg i en arbetsmall, till exempel steget för att iscensätta materialen.
 
-- **Flera SKU-enheter** – Ange det här alternativet till *Ja* för att möjliggöra att flera lagerhållningsenheter (SKU) kan användas på en plats. Till exempel måste flera SKU-enheter vara aktiverade för vikdörrens plats. Om du aktiverar flera SKU-enheter anges din plats i arbete, som förväntat. Platsen kan dock bara hantera en placering av flera artiklar (om arbete inkluderar olika SKU-enheter som måste plockas och placeras). Det går inte att hantera en placering med en SKU. Om du ställer in detta alternativ till *Nej*, anges din plats bara om din placering har en enda typ av SKU.
+- **Flera SKU-enheter** – Ange det här alternativet till *Ja* för att möjliggöra att flera lagerhållningsenheter (SKU) kan användas på en plats. Till exempel måste flera SKU-enheter vara aktiverade för vikdörrens plats. Om du aktiverar flera SKU-enheter anges din plats i arbete, som förväntat. Platsen kan dock bara hantera en placering av flera artiklar (om arbete inkluderar olika SKU-enheter som måste plockas och placeras). Det går inte att hantera en placering med en SKU. Om du konfigurerar detta alternativ till *Nej*, anges din plats bara om din placering har en enda typ av SKU.
 
     > [!IMPORTANT]
-    > Om du vill kunna utföra placeringar av flera artiklar och placeringar av en SKU måste du ange två rader som har samma struktur och inställning, men du måste ställa in alternativet **Flera SKU-enheter** till *Ja* för en rad och *Nej* för den andra. För placeringsoperationer måste du därför ha två identiska platsdirektiv, även om du inte behöver skilja enskilda SKU:er och flera SKU:er på ett arbets-ID. Om du inte ställer in båda dessa platsdirektiv kommer oväntade platser för affärsprocesser från det tillämpliga platsdirektivet. Du måste använda en liknande inställning för plats direktiv som har **arbetstypen** *plocka* om du behöver bearbeta order som innehåller flera SKU:er.
+    > Om du vill kunna utföra placeringar av flera artiklar och placeringar av en SKU måste du ange två rader som har samma struktur och inställning, men du måste konfigurera alternativet **Flera SKU-enheter** till *Ja* för en rad och *Nej* för den andra. För placeringsåtgärder måste du därför ha två identiska platsdirektiv, även om du inte behöver skilja enskilda SKU:er och flera SKU:er på ett arbets-ID. Om du inte konfigurerar båda dessa platsdirektiv kommer oväntade platser för affärsprocesser från det tillämpliga platsdirektivet. Du måste använda en liknande inställning för plats direktiv som har **arbetstypen** *plocka* om du behöver bearbeta order som innehåller flera SKU:er.
 
     Använd alternativet **Flera SKU-enheter** för arbetsrader som hanterar fler än ett artikelnummer. (Artikelnumret kommer att vara tomt i arbetsuppgifterna och visas som **Flera** på bearbetningssidorna i mobilappen för distributionslagerhantering.)
 
@@ -162,7 +162,7 @@ Fälten på snabbfliken **platsdirektiv** är specifika för arbetsordertypen so
 - **Tillämplig dispositionskod** – Ange om dispositionskoden i platsdirektivet måste matcha den dispositionskod som används när artikeln tas emot eller om platsdirektivet kan väljas utifrån en dispositionskod. Om du väljer *exakt matchning* och fältet **dispositionskod** är tomt, beaktas endast tomma dispositionskoder för detta platsdirektiv.
 
     > [!NOTE]
-    > Det här fältet är endast tillgängligt för de valda arbetsordertyperna där lagerpåfyllnad är tillåtet. En fullständig lista finns i [fält som är specifika för avsnittet arbetsordertyper](#fields-specific-types) tidigare i det här avsnittet.
+    > Det här fältet är endast tillgängligt för de valda arbetsordertyperna där lagerpåfyllnad är tillåtet. En fullständig lista finns i asvnittet [Fält som är specifika för arbetsordertyper](#fields-specific-types) tidigare i denna artikel.
 
 - **Placera efter** – Ange om inleveranskvantitet ska vara hela kvantiteten på ID-numret, eller om den ska vara artikel efter artikel. Använd det här fältet för att se till att allt innehåll på ett ID-nummer placeras på en plats, och att systemet inte föreslår att du delar upp innehållet på flera platser för **ASN** (inleverans av ID-nummer), inleverans av **Blandade ID-nummer** och **Kluster** inleveransprocesser. (**Kluster** inleveransprocess kräver att funktionen [klusterinlagring](putaway-clusters.md) aktiveras). Uppförandet av platsdirektivfrågan, raderna och platsdirektivets åtgärder kommer att variera beroende på vilket värde du väljer. Snabbfliken **Rader** används bara när alternativet **Placera efter** är inställt på *Artikel*.
 
@@ -182,7 +182,7 @@ Använd snabbfliken **Rader** om du vill skapa villkor för att tillämpa de rel
 - **Från kvantitet** – Ange starten för det intervall av kvantiteter som raden gäller för. Ange mängden i den måttenhet som har valts i fältet **Enhet**.
 - **Till kvantitet** – Ange slutet för det intervall av kvantiteter som raden gäller för. Ange mängden i den måttenhet som har valts i fältet **Enhet**.
 - **Enhet** – Välj måttenhet för artiklarna. Du kan ange en minsta kvantitet och en maximal kvantitet att direktivet bör gälla, och du kan ange att direktivet bör vara en viss lagerenhet. Fältet **Enhet** används *endast* för utvärdering av kvantitet. För att avgöra om en platsdirektivrad gäller alls använder systemet kvantiteten i enheten som anges på den raden. Varje gång den når platsdirektivrad har nåtts, görs försök att konvertera efterfrågeenheten till en enhet som har angetts på raden. Om måttenhetskonverteringen inte finns, kommer systemet att gå vidare till nästa rad.
-- **Hitta kvantitet** – det här fältet används endast vid försök att placera eller lokalisera artiklar i lagerstället. (Därför gäller den endast om fältet **arbetstyp** är inställt på *placera*). Välj ett av följande värden för att ange den kvantitet som används för att utvärdera om en kvantitet ligger inom **från kvantitet** och **till kvantitet**:
+- **Hitta kvantitet** – det här fältet används endast vid försök att placera eller hitta artiklar i lagerstället. (Därför gäller den endast om fältet **arbetstyp** är inställt på *placera*). Välj ett av följande värden för att ange den kvantitet som används för att utvärdera om en kvantitet ligger inom **från kvantitet** och **till kvantitet**:
 
     - **Kvantitet för ID-nummer** – Använd den kvantitet på ID-numret som tas emot.
     - **Kvantitet för enhet** – Använd den kvantitet som används under transaktionen. Du får t.ex. kvantiteten 1 000 i ett lagerställe och bryter den till 10 ID-nummer, som var och en har kvantiteten 100. I detta fall kan du använda en kvantitet på 1 000 artiklar i stället för antalet ID-nummer 100.
@@ -233,7 +233,7 @@ Du kan definiera flera plats direktiv åtgärder för varje linje. Återigen anv
     - **Ingen** – ingen strategi kommer att användas.
     - **Matcha förpackningskvantitet** – Denna strategi används för att verifiera att en plockplats har den angivna kvantiteten. Denna strategi är endast giltig om fältet **arbetstyp** är inställt på *plocka*.
     - **Konsolidera** – Denna strategi konsoliderar artiklar på en viss plats när andra artiklar redan är tillgängliga. Denna strategi är endast giltig om fältet **arbetstyp** är inställt på *placera*. En typisk inställning för placera försöker konsolidera på den första åtgärdsraden och sedan försöker den på den andra raden placera utan konsolidering. Konsolidera varor gör senare plockning effektivare.
-    - **FEFO batchreservation** – Denna strategi använder FEFO-gruppreservationer (först utgått, först ut). Använd den när lagret lokaliseras med hjälp av en batch för utgångsdatum och allokeras för batchreservation. Du kan bara använda denna strategi för batchen aktiverade artiklar. Den är endast giltig om fältet **arbetstyp** är inställt på *plocka*.
+    - **FEFO batchreservation** – Denna strategi använder FEFO-gruppreservationer (först utgått, först ut). Använd den när lagret hittas med hjälp av en batch för utgångsdatum och allokeras för batchreservation. Du kan bara använda denna strategi för batchen aktiverade artiklar. Den är endast giltig om fältet **arbetstyp** är inställt på *plocka*.
     - **Avrunda till fullständigt LP och FEFO-batch** – den här strategin kombinerar elementen i *FEFO-batchreservation* och *avrundar upp till en fullständig LP* strategi. Det är bara giltigt för grupperade artiklar och platsdirektiv med jobbtypen *plocka*. Raden måste vara aktiverad för att använda strategin *FEFO-batchreservation* och strategin *avrundning till fullständig LP* kan bara användas för påfyllnad. Om den här strategin har konfigurerats tillsammans med en platsgräns för lager, kan det medföra att den valda arbetsplatsen för placering överbelastas och att gränsvärdena för lagring ignoreras.
     - **Avrunda uppåt till full LP** - Denna strategi avrundar lagerkvantiteten för att matcha den registreringsskyltskvantitet som tilldelas artiklarna som ska plockas. Du kan bara använda den här strategin för påfyllningsdirektiv av typen *Plocka*. Om den här strategin har konfigurerats tillsammans med en platsgräns för lager, kan det medföra att den valda arbetsplatsen för placering överbelastas och att gränsvärdena för lagring ignoreras.
     - **Guidat ID-nummer** – Använd denna strategi när du släpper ordern till lagret för att skapa plocka och inlagra arbete. Du kan använda denna metod för flera ID-nummer. Denna strategi kommer att försöka reservera och skapa plockningsarbete mot de platser som innehåller de begärda registreringsskylt som har associerats med överföringsorderraderna. Om dessa åtgärder inte kan slutföras men du ändå vill skapa plockningsarbete, bör du gå tillbaka till en annan strategi för platsdirektivåtgärder. Beroende på vilka affärsprocess behov du har kan du även söka efter lager i ett annat område i lagerstället.
@@ -254,7 +254,7 @@ När du har skapat platsdirektiv kan du associera varje direktivkod med en arbet
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - Video: [konfiguration för lagerstyrning djupdykning](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Hjälpavsnitt: [Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv](control-warehouse-location-directives.md)
+- Hjälpartikel: [Kontrollera lagerarbete genom arbetsmallar och platsdirektiv](control-warehouse-location-directives.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

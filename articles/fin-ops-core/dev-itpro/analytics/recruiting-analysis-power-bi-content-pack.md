@@ -1,6 +1,6 @@
 ---
 title: Rekrytering Power BI-innehåll
-description: Det här avsnittet beskriver rekrytering Power BI-innehållet.
+description: Den här artikeln beskriver rekrytering Power BI-innehållet.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 36ea9f204b50b3d7a6c8e33e69a9c3fd7d82cd79d466e2b9547c6733aa294aea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3240b92993986b32a739b7a6e5c7f7c2df3ed71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765132"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890108"
 ---
 # <a name="recruiting-power-bi-content"></a>Rekrytering Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver **rekrytering** Microsoft Power BI-innehållet. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
+Den här artikeln beskriver **rekrytering** Microsoft Power BI-innehållet. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
 **Rekrytering** Power BI-innehåll visas på arbetsytan **Rekryteringshantering**.

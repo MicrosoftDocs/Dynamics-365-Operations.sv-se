@@ -1,6 +1,6 @@
 ---
-title: Jämförelse mellan moln- och lokala funktioner
-description: Detta avsnitt anger vilka funktioner stöds i molnet och på plats.
+title: Jämförelse mellan funktioner i molnet och lokalt
+description: Denna artikel anger vilka funktioner stöds i molnet och på plats.
 author: sericks007
 ms.date: 01/14/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 68082ad0ae264b76a852d8d12412af8c4ad917703441c41e67743d1b499a8d73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4096089978032f150bf6d711711a948cf1d3232f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736232"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879787"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Jämförelse mellan funktioner i molnet och lokalt
 
@@ -38,7 +38,7 @@ Följande tabell anger appområdena. Lokalt stöd och molnstöd anges för funkt
 
 ## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
-| **Område**             | **Funktion**                | **Moln** | **På plats** |
+| **Område**             | **Funktion**                | **Moln** | **Lokal** |
 |---------------------|-----------------------------|-----------|-----------------|
 | Efterlevnad och certifieringar        |                                                                                           | Ja       | Ja             |
 |                                      | SOC 1 Typ 1-certifiering                                                                | Ja       | Nej              |
@@ -57,7 +57,7 @@ Följande tabell anger appområdena. Lokalt stöd och molnstöd anges för funkt
 |                                      | ER: Integration med Regulatory Configuration Services (RCS)                              | Ja       | Nej              |
 |                                      | ER: Använder lokalt filsystem som lagringsplats för ER-konfigurationer som är tillgängliga via ER-databaser | Nej        | Ja             |
 |                                      | Integrering med PowerBI.com                                                              | Ja       | Nej              |
-|                                      | Integrering med Power BI Desktop                                                          | Nej        | Ja             |
+|                                      | Integrering med PowerBI Desktop                                                          | Nej        | Ja             |
 |                                      | Analytiska arbetsytor                                                                     | Ja       | Nej              |
 |                                      | Intelligent affärsprocess: Rekommendationer                                             | Ja       | Nej              |
 |                                      | Skapa Power BI-rapporter med OData med hjälp av stationära Power BI- eller Excel PowerQuery-verktyg    | Ja       | Nej              |
@@ -106,7 +106,7 @@ Följande tabell anger appområdena. Lokalt stöd och molnstöd anges för funkt
 |                                      | ER: Integration med Regulatory Configuration Services (RCS)                              | Ja       | Nej              |
 |                                      | ER: Använder lokalt filsystem som lagringsplats för ER-konfigurationer som är tillgängliga via ER-databaser | Nej        | Ja             |
 |                                      | Integrering med PowerBI.com                                                              | Ja       | Nej              |
-|                                      | Integrering med Power BI Desktop                                                          | Nej        | Ja             |
+|                                      | Integration med PowerBI Desktop                                                          | Nej        | Ja             |
 |                                      | Analytiska arbetsytor                                                                     | Ja       | Nej              |
 |                                      | Intelligent affärsprocess: Rekommendationer                                             | Ja       | Nej              |
 |                                      | Skapa Power BI-rapporter med OData med hjälp av stationära Power BI- eller Excel PowerQuery-verktyg    | Ja       | Nej              |

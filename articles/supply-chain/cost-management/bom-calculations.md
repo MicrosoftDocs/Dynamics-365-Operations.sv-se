@@ -1,6 +1,6 @@
 ---
 title: BOM-beräkningar
-description: Kostnadssummeringen och försäljningsprisberäkningarna kallas för strukturlisteberäkningar och du initierar dem från sidan Beräkningar. Det här ämnet innehåller information om BOM-beräknignar.
+description: Kostnadssummeringen och försäljningsprisberäkningarna kallas för strukturlisteberäkningar och du initierar dem från sidan Beräkningar. Den här artikeln innehåller information om beräkningar av strukturlistor.
 author: JennySong-SH
 ms.date: 05/01/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 0a71a17efbca3945c5a1010cf7d523a85420e8e2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c19c15f807a809a68043a75ca935fa92217fcd5f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674601"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902814"
 ---
 # <a name="bom-calculations"></a>BOM-beräkningar
 
 [!include [banner](../includes/banner.md)]
 
-Kostnadssummeringen och försäljningsprisberäkningarna kallas för strukturlisteberäkningar och du initierar dem från sidan Beräkningar. Det här ämnet innehåller information om BOM-beräknignar.
+Kostnadssummeringen och försäljningsprisberäkningarna kallas för strukturlisteberäkningar och du initierar dem från sidan Beräkningar. Den här artikeln innehåller information om beräkningar av strukturlistor.
 
 Kostnadssummeringen och försäljningsprisberäkningarna kallas för strukturlisteberäkningar och du initierar dem från sidan **Beräkningar**. Du använder sidan **Beräkningar** för att utföra följande uppgifter:
 
@@ -77,7 +77,7 @@ Följande situationer illustrerar hur reservprincipen kan används på två sät
 -   **Simulera effekten av kostnadsändring med planerade kostnader** – en kostnadsversion för planerade kostnader kan innehålla stegvisa ändringar för simulering. Denna kostnadsversion innehåller väntande kostnadsposter som representerar de simulerade kostnadsändringarna för artiklar, kostnadskategorier och beräkningsformler för indirekta kostnader. I den här situationen kan reservprincipen identifiera hur aktiva standardkostnader i de övriga kostnadsversionerna används.
 
 ## <a name="bom-calculation-of-a-suggested-sales-price"></a>Strukturlisteberäkning av ett föreslaget försäljningspris
-När du använder en metod för kostnad plus tillägg återspeglar artikelns beräknade försäljningspris de grupper med avkastningsprocent som anges i strukturlisteberäkningen och kostnaderna om associeras med dess komponentartiklar, flödesoperationer och tillämpbara tillverkningsomkostnader. Tillägget återspeglar avkastningsprocenten som tilldelas kostnadsgrupper och  kostnadsgrupperna som tilldelas artiklar, kostnadskategorier för flödesoperationer och beräkningsformlerna för indirekta kostnader för tillverkningsomkostnader. Grupperna med avkastningsprocent har etiketterna **standard**, **vinst 1**, **vinst 2**, och **vinst 3**. Inom uppsättningen vinst 1 kan till exempel en avkastningsprocent på 50 procent definieras för en kostnadsgrupp som tilldelas inköpt material och en avkastningsprocent på 80 kan definieras för en kostnadsgrupp som tilldelas kostnadskategorier för flödesoperationer. Sammanhanget för strukturlisteberäkningen bestämmer hur resultatet från ett beräknat försäljningspris hanteras.
+När du använder en metod för kostnad plus tillägg återspeglar artikelns beräknade försäljningspris de grupper med avkastningsprocent som anges i strukturlisteberäkningen och kostnaderna om associeras med dess komponentartiklar, flödesåtgärder och tillämpbara tillverkningsomkostnader. Tillägget återspeglar avkastningsprocenten som tilldelas kostnadsgrupper och kostnadsgrupperna som tilldelas artiklar, kostnadskategorier för flödesåtgärder och beräkningsformlerna för indirekta kostnader för tillverkningsomkostnader. Grupperna med avkastningsprocent har etiketterna **standard**, **vinst 1**, **vinst 2**, och **vinst 3**. Inom uppsättningen vinst 1 kan till exempel en avkastningsprocent på 50 procent definieras för en kostnadsgrupp som tilldelas inköpt material och en avkastningsprocent på 80 kan definieras för en kostnadsgrupp som tilldelas kostnadskategorier för flödesåtgärder. Sammanhanget för strukturlisteberäkningen bestämmer hur resultatet från ett beräknat försäljningspris hanteras.
 
 -   **Strukturlisteberäkning för en artikel och angiven kostnadsversion** - Strukturlisteberäkningen genererar en väntande försäljningsprispost i kostnadsversionen. Försäljningsprisposten utgör startpunkten när du visar beräkningsdetaljer, (till exempel på sidan **Beräkna artikelkostnad**). Försäljningsprisposten fungerar främst som referensinformation, och ligger inte till grund för ett försäljningspris på försäljningsorder.
 -   **Orderspecifik strukturlisteberäkning** - En variation på sidan **strukturlisteberäkning** som används när det gäller försäljningsorder, försäljningsofferter eller radartiklar på en serviceorder. En orderspecifik strukturlisteberäkning genererar ingen post i en kostnadsversion. Däremot genererar en beräkningspost som visas på sidan **strukturberäkningsresultat**. Beräkningsposten utgör startpunkten när du visar beräkningsdetaljer, (till exempel på sidan **Beräkna artikelkostnad**). Information om den valda beräkningsposten kan överföras till den ursprungliga radartikeln. Till exempel kan det beräknade försäljningspriset överföras till en radartikel på försäljningsordern.

@@ -1,6 +1,6 @@
 ---
 title: Konfigurera expressbetalningar för PayPal
-description: I det här avsnittet beskrivs hur du konfigurerar expressbetalningar för PayPal för att aktivera snabbare utcheckning i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du konfigurerar expressbetalningar för PayPal för att aktivera snabbare kassa i Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,30 +9,30 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 5fff17959e7ed9299df169c68b2ed07f6b7c7d2c
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: b69b7384992fb86370ff6881824a7d2c9a77d2c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743589"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905292"
 ---
 # <a name="configure-express-payments-for-paypal"></a>Konfigurera expressbetalningar för PayPal
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du konfigurerar expressbetalningar för PayPal för att aktivera snabbare utcheckning i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du konfigurerar expressbetalningar för PayPal för att aktivera snabbare kassa i Microsoft Dynamics 365 Commerce.
 
 ## <a name="key-terms"></a>Nyckeltermer
 
 | Villkor | Beskrivning |
 |---|---|
-| PayPal Wallet | Den kundupplevelse och -integration som stöds av PayPal-anslutningsprogrammet. Den kallas också för PayPal-knappen. |
+| PayPal Wallet | Den kundupplevelse och -integrering som stöds av PayPal-anslutningsprogrammet. Den kallas också för PayPal-knappen. |
 | Plånbok | En betalningstyp som inte har traditionella betalningsegenskaper, som BIN-intervall (Bank Identification Number) och utgångsdatum, som används för att särskilja typer av kredit- och betalkort. |
-| Expressbetalning | En Commerce-modul som stöder snabbare utcheckningssätt när betalningsmetoder som stöds används. I det här avsnittet används betalningsexpressmodulen med PayPal. |
+| Expressbetalning | En Commerce-modul som stöder snabbare kassasätt när betalningsmetoder som stöds används. I denna artikel används betalningsexpressmodulen med PayPal. |
 
-Dynamics 365 Commerce erbjuder en färdig integration för PayPal Wallet. När du har konfigurerat Dynamics 365 Payment Connector för PayPal visas knappen PayPal som en betalningsmetod som kan väljas när onlineordern checkas ut. När användarna väljer PayPal skickas de direkt till PayPal för att betala via PayPal och skickas sedan tillbaka till onlinebutiken för att slutföra sin order. I utcheckning av PayPal-kundvagnen kan kunderna använda sin betalningskontoinformation för att förifylla utcheckningsformuläret så att de snabbt kan slutföra utcheckningsprocessen.
+Dynamics 365 Commerce erbjuder en färdig integrering för PayPal Wallet. När du har konfigurerat Dynamics 365 Payment Connector för PayPal visas knappen PayPal som en betalningsmetod som kan väljas när onlineordern checkas ut. När användarna väljer PayPal skickas de direkt till PayPal för att betala via PayPal och skickas sedan tillbaka till onlinebutiken för att slutföra sin order. I kassa av PayPal-kundvagnen kan kunderna använda sin betalningskontoinformation för att förifylla kassaformuläret så att de snabbt kan slutföra kassaprocessen.
 
-Commerce har lagt till en betalningsexpressmodul för att underlätta expressutcheckningar. Modulen för expressbetalning kan användas i ett fragment som kan inkluderas på en utchecknings- eller kundvagnssida. När PayPal konfigureras används samma Dynamics 365 Payment Connector för PayPal-anslutningsprogramreferens för både expressbetalningsalternativet och det vanliga utcheckningsalternativet.
+Commerce har lagt till en betalningsexpressmodul för att underlätta expresskassor. Modulen för expressbetalning kan användas i ett fragment som kan inkluderas på en kassa- eller kundvagnssida. När PayPal konfigureras används samma Dynamics 365 Payment Connector för PayPal-anslutningsprogramreferens för både expressbetalningsalternativet och det vanliga kassaalternativet.
 
 ## <a name="paypal-checkout-in-commerce"></a>PayPal-checkout i Commerce
 
@@ -40,15 +40,15 @@ Commerce har lagt till en betalningsexpressmodul för att underlätta expressutc
 
 Konfigurera PayPal Wallet för din miljö enligt beskrivningen i [Dynamics 365 Payment Connector för PayPal](../paypal.md).
 
-Om du använder PayPal som ett alternativ i det vanliga utcheckningsflödet (där användarna manuellt anger sin kontoinformation utan att använda förfyllningsåtgärderna för betalning) följer du installationsanvisningarna i [modulen Betalning](../payment-module.md).
+Om du använder PayPal som ett alternativ i det vanliga kassaflödet (där användarna manuellt anger sin kontoinformation utan att använda förfyllningsåtgärderna för betalning) följer du installationsanvisningarna i [modulen Betalning](../payment-module.md).
 
 ### <a name="payment-express-module-with-paypal"></a>Modul för expressbetalning med PayPal
 
-Modulen för expressbetalning fungerar med de betalningsmetoder som stöds så att webbplatskunder kan välja att checka ut snabbare genom att förifylla sin betalningstjänstkontoinformation under utcheckningsprocessen. I expressbetalningsmodulen används den konfigurerade betalningsanslutningsprogrammet för att förifylla utcheckningsformuläret med användarkontoinformation som t.ex. adress, kontaktinformation och vald betalningsmetod.
+Modulen för expressbetalning fungerar med de betalningsmetoder som stöds så att webbplatskunder kan välja att checka ut snabbare genom att förifylla sin betalningstjänstkontoinformation under kassaprocessen. I expressbetalningsmodulen används den konfigurerade betalningsanslutningsprogrammet för att förifylla kassaformuläret med användarkontoinformation som t.ex. adress, kontaktinformation och vald betalningsmetod.
 
-När PayPal expressutcheckning används, och en användare väljer knappen PayPal i avsnittet för expressbetalning på utcheckningssidan, öppnas ett iFrame-fönster för PayPal-betalning. Användaren loggar sedan in på sitt PayPal-konto för att använda kontots leveransadress, faktureringsadress, e-postadress och PayPal-betalningsmetod för att betala för transaktionen.
+När PayPal expresskassa används, och en användare väljer knappen PayPal i avsnittet för expressbetalning på kassasidan, öppnas ett iFrame-fönster för PayPal-betalning. Användaren loggar sedan in på sitt PayPal-konto för att använda kontots leveransadress, faktureringsadress, e-postadress och PayPal-betalningsmetod för att betala för transaktionen.
 
-När användaren har slutfört åtgärden i PayPal-fönstret skickas den tillbaka till utcheckningssidan för Commerce-webbplatsen där utcheckningsformuläret förifylls med de valda detaljerna. I expressbetalningsflödet fylls det första leveransalternativet i som är tillgängligt för leveransadressen som returneras för användaren. Användaren har sedan möjlighet att granska ordern och ändra detaljer i utcheckningsordern innan de väljer **Beställ** för att slutföra ordern.
+När användaren har slutfört åtgärden i PayPal-fönstret skickas den tillbaka till kassasidan för Commerce-webbplatsen där kassaformuläret förifylls med de valda detaljerna. I expressbetalningsflödet fylls det första leveransalternativet i som är tillgängligt för leveransadressen som returneras för användaren. Användaren har sedan möjlighet att granska ordern och ändra detaljer i kassaordern innan de väljer **Beställ** för att slutföra ordern.
 
 ### <a name="add-the-payment-express-module-with-paypal-to-a-fragment"></a>Lägg till modulen för expressbetalning med PayPal i ett fragment
 
@@ -56,29 +56,29 @@ Om du vill lägga till expressbetalningsmodulen med PayPal i ett fragment i Comm
 
 1. Gå till webbplatsen.
 1. I vänster navigeringsfönstret, välj **Fragment** och välj sedan **Nytt**.
-1. I dialogrutan **Nytt fragment** hitta och välj modulen **Expressbetalning** och sedan under **Namn på fragment** ange ett namn (till exempel **Expressutcheckning**).
+1. I dialogrutan **Nytt fragment** hitta och välj modulen **Expressbetalning** och sedan under **Namn på fragment** ange ett namn (till exempel **Expresskassa**).
 1. Skapa fragmentet genom att välja **OK**.
 1. I översiktsvyn väljer du platsen för den expressbetalningsmodul som du har skapat.
 1. Välj **Rubrik** i egenskapsfönstret.
-1. I dialogrutan **Rubrik**, i fältet **Rubriktext**, anger du den rubriktext som du vill visa för expressutcheckningsavsnittet på webbplatsen (till exempel **Expressutcheckning**).
+1. I dialogrutan **Rubrik**, i fältet **Rubriktext**, anger du den rubriktext som du vill visa för expresskassaavsnittet på webbplatsen (till exempel **Expresskassa**).
 1. Under **Rubriknivå** väljer du rubriknivå (t.ex. **H2**).
 1. Välj **OK**.
 1. I egenskapsfönstret i fältet **Höjd på iFrame** anger eller justerar du höjden på iFrame-elementet (till exempel **60**).
 1. I fältet **Betalningsmedelstyper som stöds** anger du **PayPal**.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera den.
 
-### <a name="add-the-payment-express-fragment-to-the-checkout-page"></a>Lägga till expressbetalningsfragment på utcheckningssidan
+### <a name="add-the-payment-express-fragment-to-the-checkout-page"></a>Lägga till expressbetalningsfragment på kassasidan
 
-För att lägga till ett fragment för expressbetalning på utcheckningssidan i webbplatsbyggaren följer du dessa steg.
+För att lägga till ett fragment för expressbetalning på kassasidan i webbplatsbyggaren följer du dessa steg.
 
 1. Gå till webbplatsen.
-1. Välj **Sidor** i vänster navigeringsfönster och välj sedan webbplatsens utcheckningssida.
+1. Välj **Sidor** i vänster navigeringsfönster och välj sedan webbplatsens kassasida.
 1. Välj **Redigera** för att redigera sidan.
 1. I facket **Huvud** väljer du ellipsknappen (**...**) och välj sedan **Lägg till modul**.
 1. I dialogrutan **Välj moduler**, välj modulen **Behållare** och klicka sedan på **OK**.
 
     > [!NOTE]
-    > Om en behållarmodul som innehåller ett utcheckningsfragment redan finns, flyttar du expressbetalningsavsnittet så att det visas ovanför den befintliga utcheckningsbehållaren på platsen **Huvud**. Expressbetalningsavsnittet återges ovanför den vanliga utcheckningsbehållaren. Om du vill flytta en behållarmodul uppåt eller nedåt väljer du ellipsen (**...**) och väljer sedan **Flytta upp** eller **Flytta ned**.
+    > Om en behållarmodul som innehåller ett kassafragment redan finns, flyttar du expressbetalningsavsnittet så att det visas ovanför den befintliga kassabehållaren på platsen **Huvud**. Expressbetalningsavsnittet återges ovanför den vanliga kassabehållaren. Om du vill flytta en behållarmodul uppåt eller nedåt väljer du ellipsen (**...**) och väljer sedan **Flytta upp** eller **Flytta ned**.
 
 1. I egenskapsfönstret **Behållare** rekommenderar vi att du konfigurerar egenskapsinställningarna på följande sätt:
 
@@ -109,7 +109,7 @@ När expressbetalningsmodulen är konfigurerad till att använda PayPal, kommer 
 
 Leveranssättet konfigureras i avsnittet **Leveranssätt** för kanalen i Commerce headquarters. Mer information finns i [Konfigurera leveranssätt](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
-Utcheckningsmodulen använder också leveransalternativmodulen när leveranssätt återges vid utcheckning. Mer information finns i [Modul för leveransalternativ](../delivery-options-module.md).
+kassamodulen använder också leveransalternativmodulen när leveranssätt återges vid kassa. Mer information finns i [Modul för leveransalternativ](../delivery-options-module.md).
 
 Leveranssätt läggs till i listan för onlinebutiken i Commerce headquarters. Gå till **Butik och handel \> Kanaler \> Onlinebutiker** och välj kanal-ID för din butik. Välj sedan **Konfigurera \> Leveranssätt**. Modulens leveranssätt som visas i konfigurationen visas på liknande sätt på webbplatsen. Om du vill lägga till eller ta bort leveranssätt för en butikskanal eller produkt väljer **Hantera leveranssätt** i åtgärdsfönstret.
 

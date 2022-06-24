@@ -1,6 +1,6 @@
 ---
 title: Fel fältvärde i TaxTrans
-description: I detta ämne finns information om felsökning av felaktiga fältvärden i TaxTrans.
+description: I denna artikel finns information om felsökning av felaktiga fältvärden i TaxTrans.
 author: EricWangChen
 ms.date: 04/27/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6d4e7fd1bae56c5a7cb9a1a558a5344b3e555e83
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 6e7329ffdc04207116c92cb42e02750b176713fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687600"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899826"
 ---
 # <a name="incorrect-field-value-in-taxtrans"></a>Fel fältvärde i TaxTrans
 

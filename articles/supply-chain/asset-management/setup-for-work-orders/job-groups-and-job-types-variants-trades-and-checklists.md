@@ -1,6 +1,6 @@
 ---
 title: Underhållsjobbtyper, kategorier, varianter, handel och checklistor
-description: I detta avsnitt beskrivs kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor i Tillgångshantering.
+description: I denna artikel beskrivs kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor i Tillgångshantering.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 54bd489a3c9be5be298ef75893b7acad38104a1379d20f853dd700635a3e058e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b4d0bf82dc0dfe12991b4a48fd68a029a2ff2f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742810"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887614"
 ---
 # <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>Underhållsjobbtyper, kategorier, varianter, handel och checklistor
 
@@ -38,9 +38,9 @@ För varje underhållsjobbtyp kan varianter av inställningen av underhållsjobb
 
 Kategorier av underhållsjobbtyper används för att samla in en grupp med underhållsjobbtyper i översiktssyfte. Exempel på kategorier av underhållsjobbtyper kan vara **Kalibrering**, **Inspektion**, **Översyn** och **Instrumentering**.
 
-Mallar för underhållschecklista och variabler för underhållschecklista används för att ställa in underhållschecklistor. Underhållschecklistor ställs in på underhållsjobbtyper och används på arbetsorder.
+Mallar för underhållschecklista och variabler för underhållschecklista används för att konfigurera underhållschecklistor. Underhållschecklistor ställs in på underhållsjobbtyper och används på arbetsorder.
 
-Först ställer du in kategorier av underhållsjobbtyp, varianterna av underhållsjobbtyp och yrkesgrenar för underhållsjobb Därefter skapar du underhållsjobbtyper. Till slut, på sidan **Standardvärden för underhållsjobbtyp** skapar du alla varianter av underhållsjobbtyper som krävs för din utrustning. På den sidan kan du också ställa in prognoser, checklistor för underhåll och verktyg för en kombination av underhållsjobbtyper.
+Först ställer du in kategorier av underhållsjobbtyp, varianterna av underhållsjobbtyp och yrkesgrenar för underhållsjobb Därefter skapar du underhållsjobbtyper. Till slut, på sidan **Standardvärden för underhållsjobbtyp** skapar du alla varianter av underhållsjobbtyper som krävs för din utrustning. På den sidan kan du också konfigurera prognoser, checklistor för underhåll och verktyg för en kombination av underhållsjobbtyper.
 
 > [!NOTE]
 > En underhållsjobbtyp kan bara vara relaterad till en kategori av underhållsjobbtyp.
@@ -131,8 +131,8 @@ Mallar för underhållschecklistor kan användas som en gemensam uppsättning up
     - **Text** – Raden innehåller text som beskriver vad du ska göra. Använd den här typen av underhållschecklista om du vill att en arbetare ska kontrollera eller inspektera något, men du inte förväntar dig ett specifikt (mätbart) resultat. När du har valt den här typen anger du ett namn eller en rubrik i fältet **Namn**. I fältet **Instruktioner** anger du en beskrivning av vad som måste göras. Om steget är obligatoriskt för underhållschecklistan ställer du in alternativet **Obligatoriskt** till **Ja**.
     - **Sidhuvu** – Raden används som en rubrik för att gruppera de rader för underhållschecklista som visas under den. Den här typen är användbar om du har flera rader för underhållschecklista som kan delas in i specifika områden. Rubriker ger en översikt för arbetaren som kommer att genomföra en underhållschecklista som har många rader. När du har valt den här typen anger du ett beskrivande namn i fältet **Namn**.
     - **Mall** – Raden används för att referera till en befintlig mall. När du har valt den här typen anger du ett namn för mallen i fältet **Namn**. I fältet **Mall** väljer du mallen.
-    - **Variabel** – Raden används för att definiera ett möjligt resultat i ett intervall. Mer information om hur du ställer in variabler för underhållschecklistor finns i [Skapa en variabel för underhållschecklista](#create-a-maintenance-checklist-variable). När du har valt den här typen anger du ett beskrivande namn för variabeln i fältet **Namn**. Välj variabeln i fältet **Variabel**. I fältet **Instruktioner** anger du en beskrivning av vad som måste göras. Om steget är obligatoriskt för underhållschecklistan ställer du in alternativet **Obligatoriskt** till **Ja**.
-    - **Mått** – Raden används för att registrera ett specifikt mått. Du kan ställa in måtten som ska relateras till en fördefinierad räknare. När du har valt den här typen anger du ett namn för mallen i fältet **Namn**. Om steget är obligatoriskt för underhållschecklistan ställer du in alternativet **Obligatoriskt** till **Ja**. Om du vill använda måttraden som en räknarregistrering väljer du räknaren i fältet **Räknare**. Det relaterade fältet **Enhet** uppdateras då automatiskt. Om du har valt en räknare väljer du uppdateringsmetoden i fältet **Värde**. I fälten **Min. värde** och **Max. värde** anger du det tillåtna värdeintervallet. I fältet **Instruktioner** anger du en beskrivning av vad som måste göras.
+    - **Variabel** – Raden används för att definiera ett möjligt resultat i ett intervall. Mer information om hur du konfigurerar variabler för underhållschecklistor finns i [Skapa en variabel för underhållschecklista](#create-a-maintenance-checklist-variable). När du har valt den här typen anger du ett beskrivande namn för variabeln i fältet **Namn**. Välj variabeln i fältet **Variabel**. I fältet **Instruktioner** anger du en beskrivning av vad som måste göras. Om steget är obligatoriskt för underhållschecklistan ställer du in alternativet **Obligatoriskt** till **Ja**.
+    - **Mått** – Raden används för att registrera ett specifikt mått. Du kan konfigurera måtten som ska relateras till en fördefinierad räknare. När du har valt den här typen anger du ett namn för mallen i fältet **Namn**. Om steget är obligatoriskt för underhållschecklistan ställer du in alternativet **Obligatoriskt** till **Ja**. Om du vill använda måttraden som en räknarregistrering väljer du räknaren i fältet **Räknare**. Det relaterade fältet **Enhet** uppdateras då automatiskt. Om du har valt en räknare väljer du uppdateringsmetoden i fältet **Värde**. I fälten **Min. värde** och **Max. värde** anger du det tillåtna värdeintervallet. I fältet **Instruktioner** anger du en beskrivning av vad som måste göras.
 
         > [!NOTE]
         > Alla rader i typen **Mått** som inte har någon inställning för räknare behandlas som en oberoende mätningsregistrering som det inte finns någon automatisk uppföljning för i Tillgångshantering. På samma sätt behandlas uppgiften i underhållschecklistan som ett oberoende mått om den valda räknartypen inte finns på tillgången som hör till arbetsordern. Räknarvärdet kan ändras flera gånger. Det bokförs inte förrän [arbetsorderns livscykeltillstånd](work-order-lifecycle-states.md) ändras till ett tillstånd där alternativet **Bearbeta underhållschecklista** har värdet **Ja**.
@@ -155,7 +155,7 @@ Mallar för underhållschecklistor kan användas som en gemensam uppsättning up
 7. Ange en beskrivning av underhållsjobbtypen i på snabbfliken **Beskrivning**.
 8. På snabbfliken **Varianter av underhållsjobbtyp** kan du lägga till varianter för underhållsjobbtypen.
 9. På snabbflikarna **Obligatorisk kompetens** och **Obligatoriska intyg** kan du lägga till kompetens- och intygskrav för underhållsjobbtypen.
-10. Om en viss typ av underhållsjobb måste utföras härnäst lägger du till den på snabbfliken **Efterföljande jobb**. Du kan också ställa in en variant av och yrkesgren för underhållsjobbtyp som hör till underhållsjobbtypen. Om det efterföljande jobbet ska börja ett visst antal dagar före eller efter att jobbet som använder den här underhållsjobbtypen har startat, anger du antalet dagar i fältet **Fördröj med antal dagar**. Positiva tal representerar dagar efter starten av det relaterade jobbet, och negativa tal representerar dagar före den schemalagda starten av det relaterade jobbet. Om du till exempel anger **5** kommer det efterföljande jobbet att starta fem dagar efter att jobbet som är relaterat till underhållsjobbtypen har startats. Om du anger **-3** kommer det efterföljande jobbet att starta tre dagar innan den schemalagda starten för jobbet som är relaterat till underhållsjobbtypen.
+10. Om en viss typ av underhållsjobb måste utföras härnäst lägger du till den på snabbfliken **Efterföljande jobb**. Du kan också konfigurera en variant av och yrkesgren för underhållsjobbtyp som hör till underhållsjobbtypen. Om det efterföljande jobbet ska börja ett visst antal dagar före eller efter att jobbet som använder den här underhållsjobbtypen har startat, anger du antalet dagar i fältet **Fördröj med antal dagar**. Positiva tal representerar dagar efter starten av det relaterade jobbet, och negativa tal representerar dagar före den schemalagda starten av det relaterade jobbet. Om du till exempel anger **5** kommer det efterföljande jobbet att starta fem dagar efter att jobbet som är relaterat till underhållsjobbtypen har startats. Om du anger **-3** kommer det efterföljande jobbet att starta tre dagar innan den schemalagda starten för jobbet som är relaterat till underhållsjobbtypen.
 
     > [!NOTE]
     > Om du lägger till fler än en rad för underhållsjobbtyp, visar ordningsföljden för raderna den ordning som de ska utföras i. Sekvensen börjar högst upp i listan.
@@ -217,14 +217,14 @@ Mallar för underhållschecklistor kan användas som en gemensam uppsättning up
     Om du lägger till en arbetsbeskrivning här åsidosätter den eventuell beskrivning som har ställts in för underhållsjobbtypen på sidan **Underhållsjobbtyper**. Om du inte lägger till en arbetsbeskrivning här används en beskrivning som har ställts in för underhållsjobbtypen. Beskrivningar överförs automatiskt till arbetsorder där typen av underhållsjobb eller standardtypen för underhållsjobb används.
 
 25. Återgå till sidan **Standardvärden för underhållsjobbtyp**.
-26. Om du vill ställa in bilagor på en vald rad för standardtyp av underhållsjobb väljer du **Bifoga dokument**. Bilagor som ställs in på en standardrad för underhållsjobbtyp inkluderas automatiskt på arbetsorder rader där standardraden för underhållsjobbtypen används.
+26. Om du vill konfigurera bilagor på en vald rad för standardtyp av underhållsjobb väljer du **Bifoga dokument**. Bilagor som ställs in på en standardrad för underhållsjobbtyp inkluderas automatiskt på arbetsorder rader där standardraden för underhållsjobbtypen används.
 27. Välj **Ny** och välj en dokumenttyp.
 28. Överför dokumentet eller filen.
 29. Ställ in fälten på sidan **Bilagor**. Inställningen av den bifogade filen använder standardfunktionen för dokumentinställningar.
 30. Välj **Spara** för att spara bilagan.
 
     > [!NOTE]
-    > Bilagor på en underhållsjobbtyp standardrad skrivs ut tillsammans med en arbetsorderrapport endast om dokumenttyperna för de bifogade filerna väljs på fliken **Dokumenttyper** på sidan **Parametrar för tillgångshantering** (**Tillgångshantering** \> **Inställning** \> **Parametrar för tillgångshantering**). Exempel på bilagor är riktlinjer som förklarar hur du slutför ett visst jobb eller en fördefinierad underhållschecklista (om du inte använder funktionen för underhållschecklista för standardrader för underhållsjobbtyp).
+    > Bilagor på en underhållsjobbtyp standardrad skrivs ut tillsammans med en arbetsorderrapport endast om dokumenttyperna för de bifogade filerna väljs på fliken **Dokumenttyper** på sidan **Parametrar för Tillgångshantering** (**Tillgångshantering** \> **Inställning** \> **Parametrar för Tillgångshantering**). Exempel på bilagor är riktlinjer som förklarar hur du slutför ett visst jobb eller en fördefinierad underhållschecklista (om du inte använder funktionen för underhållschecklista för standardrader för underhållsjobbtyp).
 
     På sidan **Standardvärden för underhållsjobbtyp** visar varje rad antalet prognostiserade timmar och även antalet rader som har skapats för artiklar, utgifter, underhållschecklistor och verktyg. I fältet **Tillgångar** visas antalet aktiva tillgångar som är relaterade till standardraden för underhållsjobbtyp.
 
@@ -235,9 +235,9 @@ Mallar för underhållschecklistor kan användas som en gemensam uppsättning up
 
 När systemet väljer den standardtyp av underhållsjobb som ska användas på en arbetsorderrad, baseras valet på tillgången och inställningen för relaterad tillgångstyp. Tillgångshantering går igenom de standardposter för underhållsjobbtyp som är relaterade till den underhållsjobbtyp som är relaterade till tillgångstypen för att kontrollera om en möjlig matchning finns. Den kontrollerar alltid den mest specifika kombinationen först. Med andra ord, för att hitta den mest specifika kombinationen kontrollerar Tillgångshantering först om det finns en möjlig matchning för fältet **Yrkesgren**. Om ingen matchning hittas söker den efter en matchning för fältet **underhållsjobbtypvariant** och så vidare. Om det inte finns någon matchning söker programmet efter en matchning för fältet **Underhållsjobbtyp**, och så vidare (**Yrkesgren**, sedan **Variant av underhållsjobbtyp**, sedan **Underhållsjobbtyp**, sedan **Tillgång**, sedan **Modell**, sedan **Tillverkare** och sedan **Tillgångstyp**). Om det inte finns någon matchning används den standardpost där endast underhållsjobbtypen väljs.
 
-Ett projektaktivitets-ID relateras automatiskt till varje standardrad för underhållsjobbtyp som du skapar. Projektaktiviteten skapas på det prognosprojekt som väljs i fältet **Underhållsprognosprojekt** på fliken **Tillgångar** på sidan **Parametrar för tillgångshantering**. Syftet med projektaktiviteten är att hantera prognoser för timmar, artiklar och utgifter i relation till arbetsorder. Prognoser för underhållsjobbtyp överförs automatiskt till arbetsorderraden och kopieras från prognosprojektet till det arbetsorderprojekt som har skapats för arbetsorderraden. Syftet med projektaktiviteten är att hantera prognoser i relation till arbetsorder.
+Ett projektaktivitets-ID relateras automatiskt till varje standardrad för underhållsjobbtyp som du skapar. Projektaktiviteten skapas på det prognosprojekt som väljs i fältet **Underhållsprognosprojekt** på fliken **Tillgångar** på sidan **Parametrar för Tillgångshantering**. Syftet med projektaktiviteten är att hantera prognoser för timmar, artiklar och utgifter i relation till arbetsorder. Prognoser för underhållsjobbtyp överförs automatiskt till arbetsorderraden och kopieras från prognosprojektet till det arbetsorderprojekt som har skapats för arbetsorderraden. Syftet med projektaktiviteten är att hantera prognoser i relation till arbetsorder.
 
-Du kan ställa in ett batchjobb för att uppdatera underhållsjobbtypens standardreferenser med jämna mellanrum, eller köra jobbet manuellt. Om du vill skapa ett batchjobb eller köra en manuell uppdatering väljer du **Tillgånghantering** \> **Periodiskt** \> **Förebyggande underhåll** \> **Uppdatera standardreferenser för förebyggande underhåll**.
+Du kan konfigurera ett batchjobb för att uppdatera underhållsjobbtypens standardreferenser med jämna mellanrum, eller köra jobbet manuellt. Om du vill skapa ett batchjobb eller köra en manuell uppdatering väljer du **Tillgånghantering** \> **Periodiskt** \> **Förebyggande underhåll** \> **Uppdatera standardreferenser för förebyggande underhåll**.
 
 ## <a name="overview-of-maintenance-job-types-that-are-related-to-assets"></a>Översikt över underhållsjobbtyper som är relaterade till tillgångar
 
@@ -260,7 +260,7 @@ I Tillgångshantering kan du automatiskt uppdatera alla ändringar av prognoser 
 
 1. Välj **Tillgångshantering** \> **Periodisk** \> **Prognos** \> **Uppdatera prognos för underhållsjobbtyp**.
 2. I dialogrutan **Uppdatera prognos för underhållsjobbtyp**, på snabbfliken **Poster som ska ingå** kan du lägga till urval för specifika underhållsjobbtyper efter behov. Välj **Filter** och välj **Välj** för att göra urvalen.
-3. På snabbfliken **Kör i bakgrunden** kan du ställa in den automatiska uppdateringen som ett batchjobb, efter behov.
+3. På snabbfliken **Kör i bakgrunden** kan du konfigurera den automatiska uppdateringen som ett batchjobb, efter behov.
 4. Starta prognosuppdateringen genom att välja **OK**.
 
 

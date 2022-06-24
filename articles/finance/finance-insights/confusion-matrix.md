@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c57a023995e0bb58d4fba0a4fd2f147d07e51348
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 23df5979231fbd6908b6f1e7c3aca5dd3e0e733d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725972"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910183"
 ---
 # <a name="results-of-machine-learning-models"></a>Resultat av maskininlärningsmodeller
 
@@ -97,7 +97,7 @@ Med F1-måttet kombineras precision och återkallande. Resultatet blir det harmo
 
 - F1 = 2 × (precision x återkallande) ÷ (precision + återkallande)
 
-Nu ska vi titta på ett konkret exempel. Tidigare i det här avsnittet fanns ett exempel på en modell som var förutsade om ett djur är en hund eller katt. Bilden upprepas här.
+Nu ska vi titta på ett konkret exempel. Tidigare i den här artikeln fanns ett exempel på en modell som var förutsade om ett djur är en hund eller katt. Bilden upprepas här.
 
 [![Exempel på förutsägelse om art (upprepas).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 

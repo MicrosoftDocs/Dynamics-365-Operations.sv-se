@@ -1,6 +1,6 @@
 ---
 title: Bädda in arbetsyteapp från Power Apps
-description: Det här avsnittet förklarar hur du bäddar in arbetsyteappar från Microsoft Power Apps till klienten för att utöka produktens funktionalitet.
+description: Den här artikeln förklarar hur du bäddar in arbetsyteappar från Microsoft Power Apps till klienten för att utöka produktens funktionalitet.
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: c2f7b660d364be6e62d484e67908201027190a8a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fb81aa058e749df346ee87bbe83427b20b234b72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065129"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898410"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Bädda in arbetsyteapp från Power Apps
 
@@ -33,7 +33,7 @@ Om du vill veta mer om inbäddning av arbetsyteappar kan du titta på den korta 
 
 ## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Lägger till en inbäddad arbetsyteapp från Power Apps på en sida
 
-När du bäddar in en arbetsyteapp från Power Apps till klienten måste du först hitta eller skapa ett programmed önskade bilder eller funktioner. Det här avsnittet innehåller ingen detaljerad beskrivning av processen för att bygga appar. Om Power Apps är nytt för dig, se [Power Apps-dokumentationen](/powerapps/).
+När du bäddar in en arbetsyteapp från Power Apps till klienten måste du först hitta eller skapa ett programmed önskade bilder eller funktioner. Den här artikeln innehåller ingen detaljerad beskrivning av processen för att bygga appar. Om Power Apps är nytt för dig, se [Power Apps-dokumentationen](/powerapps/).
 
 Det finns tre sätt att bädda in en arbetsyteapp i en Ekonomi och Drift-app. Du kan använda den metod som passar just ditt scenario bäst. 
 
@@ -60,7 +60,7 @@ Följande procedur visar hur du bäddar in en arbetsyteapp på en befintlig sida
 
     - Om åtkomst till appen fås via menyknappen **Power Apps** kan du välja menyknappen **Power Apps** i standard-åtgärdsfönstret och sedan **Lägg till en app**.
 
-3. Konfigurera den inbäddade appen. Mer information finns i avsnittet [Konfigurera en arbetsyteapp](#configuring-a-canvas-app) senare i det här avsnittet.
+3. Konfigurera den inbäddade appen. Mer information finns i avsnittet [Konfigurera en arbetsyteapp](#configuring-a-canvas-app) senare i den här artikeln.
 4. När du har bekräftat att konfigurationen är korrekt väljer du **Infoga**.
 
     - Om funktionen **Sparade vyer** är inaktiverad uppmanas du att uppdatera webbläsaren för att se det inbäddade programmet.
@@ -76,7 +76,7 @@ Om programmet inte är relaterat till en befintlig sida, eller om du bara vill h
 1. Öppna instrumentpanelen.
 2. Markera och håll ned (eller högerklicka) på sidan, välj **Anpassa** och välj sedan **Lägg till en sida**.
 3. I fönstret **Lägg till en sida** väljer du **Power Apps**.
-4. Konfigurera den inbäddade appen. Mer information finns i avsnittet [Konfigurera en arbetsyteapp](#configuring-a-canvas-app) senare i det här avsnittet.
+4. Konfigurera den inbäddade appen. Mer information finns i avsnittet [Konfigurera en arbetsyteapp](#configuring-a-canvas-app) senare i den här artikeln.
 5. Välj **Spara** om du vill lägga till programmet i instrumentpanelen som en ny panel.
 6. Markera den nya panelen på instrumentpanelen och bekräfta att arbetsyteappen visas som förväntat.
 
@@ -145,7 +145,7 @@ Gör så här om du vill redigera en inbäddad appkonfiguration:
 
 När en app har bäddats in på en sida finns det några olika sätt att ta bort den vid behov:
 
-- Gå till fönstret **Redigera en app** med instruktioner från sektionen [redigera en inbäddad app](#editing-an-embedded-app) tidigare i det här avsnittet. Bekräfta att fönstret visar information om inbäddade appen som du vill ta bort och klicka på knappen **Ta bort**.
+- Gå till fönstret **Redigera en app** med instruktioner från sektionen [redigera en inbäddad app](#editing-an-embedded-app) tidigare i den här artikeln. Bekräfta att fönstret visar information om inbäddade appen som du vill ta bort och klicka på knappen **Ta bort**.
 - Om det inbäddade programmet har lagts till från instrumentpanelen öppnar du instrumentpanelen, markerar och håller ned (eller högerklickar) på den panel som är kopplad till arbetsyteappen, väljer **Anpassa** och sedan **Ta bort sida**. 
 - Eftersom en inbäddad app sparas som anpassningsdata, kommer rensning av sidans anpassningar också att ta bort eventuella inbäddade appen på sidan. Observera att rensa sidans anpassning är permanent och kan inte ångras. Ta bort dina anpassningar på en sida genom att markera **Alternativ** och sedan **Anpassa denna sida** och sedan på knappen **Avmarkera**. När du har uppdaterat din webbläsare raderas alla tidigare anpassningar för den här sidan. Se[Anpassa användarupplevelsen](personalize-user-experience.md) för mer information om hur man optimerar sidor med hjälp av personalisering.
 

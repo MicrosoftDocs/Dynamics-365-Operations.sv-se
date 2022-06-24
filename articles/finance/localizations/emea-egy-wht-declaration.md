@@ -1,6 +1,6 @@
 ---
 title: Källskattedeklaration för Egypten
-description: I det här avsnittet beskrivs hur du konfigurerar och genererar formuläret för källskattedeklaration för Egypten.
+description: I den här artikeln beskrivs hur du konfigurerar och genererar formuläret för källskattedeklaration för Egypten.
 author: sndray
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 505eb8a907ec8cc74b897695ddd90eee3abb0ed6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403901"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907699"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Källskattedeklaration för Egypten (EG-00005)
 

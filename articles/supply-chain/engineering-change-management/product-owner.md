@@ -1,6 +1,6 @@
 ---
 title: Produktägare
-description: Det här avsnittet innehåller information om produktägare. En produktägare är en grupp användare som är ansvariga för vissa produkter. Endast gruppens medlemmar kan frisläppa dessa produkter. Produktägaren kan också användas i arbetsflödet för godkännande.
+description: Denna artikel innehåller information om produktägare. En produktägare är en grupp användare som är ansvariga för vissa produkter. Endast gruppens medlemmar kan frisläppa dessa produkter. Produktägaren kan också användas i arbetsflödet för godkännande.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a29ab169e9b24826fbe69fbc316040d4618750ee
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5e09fdbbe14aa5a5ffbc5f07ae90b5d307a9e155
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567521"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907534"
 ---
 # <a name="product-owners"></a>Produktägare
 
@@ -57,7 +57,7 @@ Produktens X tilldelas till exempel produktens ägargruppen *Designa skåp*. Pro
 
 ## <a name="product-owners-and-approvals"></a>Produktägare och godkännanden
 
-Eftersom produktägaren vet om vissa tekniska förändringar kommer att gynna sina produkter, är det ofta klokt att ta med dem som en del av godkännande processen i konstruktionsändringshantering. Du kan implementera den här metoden genom att ställa in produktägarna som deltagarleverantörer i de arbetsflöden som används för konstruktionsändringshantering. Systemet tilldelar sedan godkännandeuppgifter i arbetsflödena, baserat på produkter som finns i konstruktionsändringshantering och teknisk ändringsorder. För mer information, se [Hantera ändringar av konstruktionsprodukter](engineering-change-management.md).
+Eftersom produktägaren vet om vissa tekniska förändringar kommer att gynna sina produkter, är det ofta klokt att ta med dem som en del av godkännande processen i konstruktionsändringshantering. Du kan implementera den här metoden genom att konfigurera produktägarna som deltagarleverantörer i de arbetsflöden som används för konstruktionsändringshantering. Systemet tilldelar sedan godkännandeuppgifter i arbetsflödena, baserat på produkter som finns i konstruktionsändringshantering och teknisk ändringsorder. För mer information, se [Hantera ändringar av konstruktionsprodukter](engineering-change-management.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

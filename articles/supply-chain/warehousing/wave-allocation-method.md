@@ -1,6 +1,6 @@
 ---
 title: Påfyllnadsallokering
-description: I det här avsnittet beskrivs hur du ställer in påfyllnadsallokeringssteget, bland annat hur du aktiverar parallellbearbetning för det.
+description: I denna artikel beskrivs hur du konfigurerar påfyllnadsallokeringssteget, bland annat hur du aktiverar parallellbearbetning för det.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 08781b26a4e066a026d4efa14670f073b04ec185
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c6b89364afd57b9c4b4413d0319b86e725433594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695547"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906963"
 ---
 # <a name="wave-allocation"></a>Påfyllnadsallokering
 
@@ -25,7 +25,7 @@ ms.locfileid: "8695547"
 
 Påfyllnadsbearbetning kan vara tidskrävande och den största delen av bearbetningstiden läggs på allokeringssteget och i arbetsskapandesteget.
 
-Det är nu möjligt att köra varje steg parallellt, vilket kan förbättra prestandan för påfyllnadsbearbetningen och tillåta ett större genomflöde av påfyllnader i samma lagerställe. I det här avsnittet beskrivs hur du ställer in den påfyllnadsallokeringsmetod som ska köras parallellt. Mer information om hur du ställer in att skapande av arbete ska köras parallellt finns i [Planera skapande av arbete under påfyllnad](configure-wave-schedule-work-creation.md).
+Det är nu möjligt att köra varje steg parallellt, vilket kan förbättra prestandan för påfyllnadsbearbetningen och tillåta ett större genomflöde av påfyllnader i samma lagerställe. I denna artikel beskrivs hur du konfigurerar den påfyllnadsallokeringsmetod som ska köras parallellt. Mer information om hur du konfigurerar att skapande av arbete ska köras parallellt finns i [Planera skapande av arbete under påfyllnad](configure-wave-schedule-work-creation.md).
 
 Tidigare var det bara möjligt att fördela en påfyllnad vid ett lagerställe åt gången. Begränsningen har tagits bort och ersatts av en ny begränsning som bara låser artikeln och dimensionerna som finns ovanför platsen i reservationshierarkin. Dimensioner ovanför platsen inkluderar alltid produktdimensioner. Om till exempel en artikel har konfigurerats med hjälp av *Färg*, kan varianterna för *Röd*, *Blå* och *Gul* bearbetas parallellt.
 
@@ -66,7 +66,7 @@ Så här ställer du in parallellbearbetning:
 
 ## <a name="enable-or-disable-parallelization-across-all-legal-entities"></a>Aktivera eller inaktivera parallellisering för alla juridiska personer
 
-Vi rekommenderar att du ställer in `allocateWave` metoden så att den körs parallellt för alla juridiska personer, eftersom detta bidrar till att förbättra prestandan för påfyllnadsbearbetningen. Med början i Supply Chain Management version 10.0.17, funktionen *Påfyllnadsparallellisering för allokera påfyllnadsmetoden* är aktiverat som standard för alla nya och uppdaterade installationer och kan inte stängas av igen. När du har aktiverat funktionen händer följande:
+Vi rekommenderar att du konfigurerar `allocateWave` metoden så att den körs parallellt för alla juridiska personer, eftersom detta bidrar till att förbättra prestandan för påfyllnadsbearbetningen. Med början i Supply Chain Management version 10.0.17, funktionen *Påfyllnadsparallellisering för allokera påfyllnadsmetoden* är aktiverat som standard för alla nya och uppdaterade installationer och kan inte stängas av igen. När du har aktiverat funktionen händer följande:
 
 - `allocateWave` metoden uppdateras för att inkludera en inställning för uppgiftskonfiguration som låter dig använda sidan **Metod för påfyllnadsbearbetning** för att definiera antalet uppgifter som ska köras samtidigt, motsvarande antalet parallella processer. Som ett resultat av detta minskas den tid som används på fyllnadssteget (som normalt sett är 30 % till 60 % av den totala bearbetningstiden) med en faktor som grovt motsvarar antalet uppgifter. Du kan också välja vilken batch som ska tilldelas för att bearbeta dessa uppgifter. Tänk på att alla juridiska personer kommer att konfigureras för bearbetning av påfyllnader i batch. För de lager som redan är konfigurerade för att bearbeta påfyllnader i batch och för de lager som redan är konfigurerade för att använda `allocateWave` metod parallellt kommer den befintliga konfigurationen att behållas.
 - Som standard konfigureras alla nya juridiska personer till att bearbeta påfyllnader i batch. Alla nya lagerställen med alternativet **lagerhanteringsprocesser** aktiverade kommer att `allocateWave` metoden konfigureras så att de körs parallellt som standard.

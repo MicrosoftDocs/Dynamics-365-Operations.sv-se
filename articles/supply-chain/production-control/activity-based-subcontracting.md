@@ -1,6 +1,6 @@
 ---
 title: Aktivitetsbaserad legotillverkning
-description: Det här avsnittet beskriver i detalj hur du använder legotillverkningsaktiviteter i ett produktionsflöde för lean manufacturing.
+description: Denna artikel beskriver i detalj hur du använder legotillverkningsaktiviteter i ett produktionsflöde för lean manufacturing.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c2e1efceb800930d9f9e19a109da80d8cfebe2e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e53da46a27fd573ae7f7450fcf34ffd8ef43e3fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566841"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890753"
 ---
 # <a name="activity-based-subcontracting"></a>Aktivitetsbaserad legotillverkning
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver i detalj hur du använder legotillverkningsaktiviteter i ett produktionsflöde för lean manufacturing.
+Denna artikel beskriver i detalj hur du använder legotillverkningsaktiviteter i ett produktionsflöde för lean manufacturing.
 
 Det finns två sätt för legotillverkning i Microsoft Dynamics 365 Supply Chain Management: tillverkningsorder och lean manufacturing. I metoden lean manufacturing modelleras legotillverkningsarbetet som en tjänst som hör till en aktivitet för ett produktionsflöde. En speciell typ av kostnadsgruppstyp som heter **Direktutkontraktering** har införts, och legotillverkningstjänsterna är inte längre en del av en strukturlista (BOM). Kostnadsredovisning av legotillverkning är helt integrerat i kostnadsredovisningen för lean manufacturing.
 

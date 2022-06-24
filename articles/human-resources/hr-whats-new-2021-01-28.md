@@ -1,6 +1,6 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources 28 januari 2021
-description: Detta ämne beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för den 28 januari 2021.
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 28 januari 2021.
 author: marcelbf
 ms.date: 01/28/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d59e242421b1b86c32f9009ae6ae17e0f161a2e2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 46bbda21c3eb2b32030b93afc2a40785c22b124e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689310"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909771"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-28-2021"></a>Nyheter och ändringar i Dynamics 365 Human Resources 28 januari 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Det här ämnet beskriver nya, ändrade, kommer snart funktioner i Dynamics 365 Human Resources.
+Den här artikeln beskriver funktioner som är nya, ändrade eller kommer snart i Dynamics 365 Human Resources.
 
 Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
@@ -48,10 +48,10 @@ Följande funktioner är i allmänhet tillgänglig i den här versionen.
 Den här versionen innehåller följande felkorrigeringar.
 
 > [!NOTE]
-> Vårt mål är att få den här informationen så snart som möjligt. Vi kan uppdatera det här avsnittet för att inkludera felkorrigeringar som gjorde det i versionen efter det att ämnet publicerades första gången.
+> Vårt mål är att få den här informationen så snart som möjligt. Vi kan komma att uppdatera detta ämne i syfte att inkludera felkorrigeringar som kommit med i versionen efter det att ämnet publicerades första gången.
 
 
-| Utfärda nummer | Utleverans |  beskrivning |
+| Utfärda nummer | Problem |  Beskrivning |
 | --- | --- | --- |
 | 539456 | I kalendern visas tjänstledighetstypen i hovrad text när parametern **Visa endast frånvaro utan detaljer** är aktiverad. | När alternativet **Visa endast frånvaro utan detaljer** har aktiverats visas datumet för begäran hovrat. |
 | 528907 | Om medarbetare beviljas åtkomst till en juridisk person i medarbetarroller leder detta till att chefer inte kan se en saldoaktivitet för medarbetare i området **Mitt team** i självbetjäningen för medarbetare. |Om du ställer in det här alternativet kan chefer fortsätta att se aktiviteten för tjänstledighetssaldo. |

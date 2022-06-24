@@ -1,6 +1,6 @@
 ---
 title: Tilldela stegikoner och titlar för mobilappen för Warehouse Management
-description: I det här avsnittet beskrivs hur du tilldelar stegikoner och titlar för nya eller anpassade uppgiftsflöden för mobilappen för Warehouse Management.
+description: I denna artikel beskrivs hur du tilldelar stegikoner och titlar för nya eller anpassade uppgiftsflöden för mobilappen för Warehouse Management.
 author: Mirzaab
 ms.date: 05/17/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a687c26cacc0dbdaf0091b2d26277864553ca1bf
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 361ace454f7125ec86bd99cffefc7d268f81d37f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103323"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890608"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Tilldela stegikoner och titlar för mobilappen för Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du tilldelar stegikoner och titlar för nya eller anpassade uppgiftsflöden för mobilappen för Warehouse Management.
+I denna artikel beskrivs hur du tilldelar stegikoner och titlar för nya eller anpassade uppgiftsflöden för mobilappen för Warehouse Management.
 
 Följande illustrationer visar hur stegikoner och titlar visas i mobilappen för Warehouse Management.
 
@@ -29,7 +29,7 @@ Följande illustrationer visar hur stegikoner och titlar visas i mobilappen för
 
 ## <a name="turn-this-feature-on-or-off"></a>Aktivera eller inaktivera funktionen
 
-För att använda funktionen som beskrivs i det här avsnittet måste funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* måste vara inaktiverade för systemet. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version äldre än 10.0.25 kan administratörer aktivera eller inaktivera denna funktion genom att söka efter funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+För att använda funktionen som beskrivs i denna artikel måste funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* vara aktiverad för systemet. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version äldre än 10.0.25 kan administratörer aktivera eller inaktivera denna funktion genom att söka efter funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="standard-step-ids-classes-and-icons"></a>Standardstegs-ID, klasser och ikoner
 
@@ -39,7 +39,7 @@ Varje steg i ett uppgiftsflöde identifieras med ett steg-ID och varje steg-ID h
 
 I följande register visas alla steg-ID som för närvarande är tillgängliga, och det är motsvarande stegklass. Kontrollnamnet för det primära indatafältet används som steg-ID.
 
-För ett exempel som visar hur dessa steg-ID och klasser används, se implementeringen av metoden `WHSMobileAppStepInfoBuilder.stepId()` i avsnittet [Exempel: Tilldela stegikoner och titlar för ett anpassat flöde](#example) senare i det här ämnet.
+För ett exempel som visar hur dessa steg-ID:n och klasser används, se implementeringen av metoden `WHSMobileAppStepInfoBuilder.stepId()` i avsnittet [Exempel: Tilldela stegikoner och titlar för ett anpassat flöde](#example) senare i denna artikel.
 
 | Steg-ID | Stegklass |
 |-|-|
@@ -215,7 +215,7 @@ I följande tabell visas alla standardstegsikoner som för närvarande är tillg
 <td><img src="media/step-icons-driver-check-in-id.png" alt="Driver check in ID step icon" title="Stegikonen inchecknings-ID förare"><br>DriverCheckInId</td>
 </tr>
 <tr>
-<td><img src="media/step-icons-driver-check-out-id.png" alt="Driver check out ID step icon" title="Stegikonen utchecknings-ID förare"><br>DriverCheckOutId</td>
+<td><img src="media/step-icons-driver-check-out-id.png" alt="Driver check out ID step icon" title="Stegikonen kassa-ID förare"><br>DriverCheckOutId</td>
 <td><img src="media/step-icons-exp-date.png" alt="Expiration date step icon" title="Stegikonen Utgångsdatum"><br>ExpDate</td>
 <td><img src="media/step-icons-field.png" alt="Field step icon" title="Stegikonen fält"><br>Fält</td>
 <td><img src="media/step-icons-from-batch.png" alt="From batch disposition step icon" title="Stegikon från batchdisposition"><br>FromBatchDisposition</td>
@@ -339,7 +339,7 @@ I följande tabell visas alla standardstegsikoner som för närvarande är tillg
 
 ## <a name="example-assign-step-icons-and-titles-for-a-custom-flow"></a><a name="example"></a>Exempel: Tilldela stegikoner och titlar för ett anpassat flöde
 
-I det här exemplet förklaras hur du ställer in stegikoner och titlar för ett anpassat uppgiftsflöde. Scenariot bygger på ett exempel på ett anpassat uppgiftsflöde som visas och mer ingående i följande bloggpost: [Anpassa mobilappen för lagerhantering](https://cloudblogs.microsoft.com/dynamics365/it/2017/07/06/customizing-the-warehousing-mobile-app). Uppgiftsflödet fungerar på följande sätt:
+I det här exemplet förklaras hur du konfigurerar stegikoner och titlar för ett anpassat uppgiftsflöde. Scenariot bygger på ett exempel på ett anpassat uppgiftsflöde som visas och mer ingående i följande bloggpost: [Anpassa mobilappen för lagerhantering](https://cloudblogs.microsoft.com/dynamics365/it/2017/07/06/customizing-the-warehousing-mobile-app). Uppgiftsflödet fungerar på följande sätt:
 
 1. I programmet visas en sida där arbetaren måste ange ett behållar-ID (till exempel genom att skanna en streckkod).
 1. Om behållar-ID:t är giltigt öppnar programmet en ny sida där arbetaren uppmanas att ange vikten. (Om behållar-ID:t är ogiltigt, returneras arbetaren till första sidan.)
@@ -373,7 +373,7 @@ final internal class WHSMobileAppStepContainerId extends WHSMobileAppStep
 
 Identifieraren för stegikonen lagras i `defaultStepIcon` klassmedlemmen och stegtiteln lagras i  `defaultStepTitle` klassmedlemmen.
 
-Om du vill tilldela en stegikon ställer du in `defaultStepIcon` till ett av de ikon_ID som anges i avsnittet [Tillgängliga stegikoner](#step-icons) tidigare i det här ämnet.
+Om du vill tilldela en stegikon ställer du in `defaultStepIcon` till ett av de ikon-ID:n som anges i avsnittet [Tillgängliga stegikoner](#step-icons) tidigare i denna artikel.
 
 ### <a name="use-a-standard-or-custom-step-icon-and-title-for-the-weight-input"></a>Använd en standard- eller anpassad stegikon och rubrik för viktinmatning
 
@@ -405,7 +405,7 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
 }
 ```
 
-Du skapar sedan en stegklass för `NewWeight` steget. Koden bör likna koden för `ContainerId` exempel som tidigare visades i det här avsnittet.
+Du skapar sedan en stegklass för `NewWeight` steget. Koden bör likna koden för `ContainerId`-exemplet som tidigare visades i denna artikel.
 
 #### <a name="override-the-stepinfo-method"></a>Åsidosätt metoden stepInfo()
 
@@ -429,7 +429,7 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
 }
 ```
 
-Sedan skapar du ett `WHSMobileAppStepInfo` objekt och ställer in ikonen och/eller rubriken direkt.
+Sedan skapar du ett `WHSMobileAppStepInfo` objekt och konfigurerar ikonen och/eller rubriken direkt.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

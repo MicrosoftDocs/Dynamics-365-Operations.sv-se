@@ -1,6 +1,6 @@
 ---
 title: Spåra övergivna kundvagnar och skicka meddelanden till kunder
-description: Detta ämne beskriver hur du anpassar exempelanslutningsprogrammet med övergivna Microsoft Dynamics 365 Commerce-kundvagnar för att hitta övergivna kundvagnar och skicka påminnelsemeddelanden till kunder via e-post.
+description: Denna artikel beskriver hur du anpassar exempelanslutningsprogrammet med övergivna Microsoft Dynamics 365 Commerce-kundvagnar för att hitta övergivna kundvagnar och skicka påminnelsemeddelanden till kunder via e-post.
 author: bicyclingfool
 ms.date: 02/25/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1db4e988653aa55db2b18fb201edeafc4d16a1bc
-ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
+ms.openlocfilehash: 707640ca211e997533d0f5a0b4e6d52cb5be9db4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "8489040"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899220"
 ---
 # <a name="detect-abandoned-carts-and-send-notifications-to-customers"></a>Spåra övergivna kundvagnar och skicka meddelanden till kunder
 
 [!include [banner](../includes/banner.md)]
 
-Detta ämne beskriver hur du anpassar exempelanslutningsprogrammet med övergivna Microsoft Dynamics 365 Commerce-kundvagnar för att hitta övergivna kundvagnar och skicka påminnelsemeddelanden till kunder via e-post.
+Denna artikel beskriver hur du anpassar exempelanslutningsprogrammet med övergivna Microsoft Dynamics 365 Commerce-kundvagnar för att hitta övergivna kundvagnar och skicka påminnelsemeddelanden till kunder via e-post.
 
 Möjligheten att ta igen intäkter och behålla kunder med hjälp av övergivna kundvagnsmeddelanden är en viktig kapacitet som Dynamics 365 Commerce stöder. Genom att anpassa Commerce-exempelprogrammet för övergivna kundvagnar kan återförsäljare få åtkomst till kundvagnar i Retail Server som inte har ändrats under ett tidsfönster som butikerna anger. Dessa kundvagnar kan sedan hämtas, utökas med produkt- och kunddata och skickas vidare till en tredje parts leverantör för marknadsföring via e-post som kan generera e-postmeddelanden och skicka dem till kunderna.
 
@@ -52,7 +52,7 @@ I följande bild visas komponenterna i exempelanslutningsprogrammet för övergi
 
 ## <a name="obtain-the-code-sample"></a>Hämta exempelkoden
 
-Exempelanslutningsprogrammet för övergiven kundvagn inkluderas i Retail SDK från och med version 10.0.16. Koden finns under **\\RetailSDK\\Code\\SampleExtensions\\RetailServer\\Extensions.AbandonedCartSample**. Mer information om Retail SDK och var du hittar det finns i [Programutvecklingskit för Retail (SDK)](retail-sdk/retail-sdk-overview.md).
+Exempelanslutningsprogrammet för övergiven kundvagn inkluderas i Retail SDK från och med version 10.0.16. Koden finns under **\\RetailSDK\\Code\\SampleExtensions\\RetailServer\\Extensions.AbandonedCartSample**. Mer information om Retail SDK och var du hittar det finns i [Retail Software Development kit (SDK)](retail-sdk/retail-sdk-overview.md).
 
 > [!NOTE]
 > Provkoden görs först tillgänglig i version 10.0.16-versioner, men den är kompatibel med version 10.0.13 och senare versioner av Retail Server.
@@ -81,7 +81,7 @@ Om du använder Azure Cosmos DB måste följande villkor uppfyllas innan du kan 
 
 Anslutningsprogrammet för övergivna kundvagnar använder Key Vault för att lagra namn och hemligheter för de olika komponenter som kräver säker åtkomst.
 
-Följ dessa steg för att ställa in ett nyckelvalv.
+Följ dessa steg för att konfigurera ett nyckelvalv.
 
 1. Följ instruktionerna i [Hantera Key Vault i Azure Stack Hub med hjälp av portalen](/azure-stack/user/azure-stack-key-vault-manage-portal?view=azs-2002&preserve-view=true).
 2. Skapa hemligheter för följande information:
@@ -120,7 +120,7 @@ Om du vill konfigurera exempelanslutningsprogrammet för övergiven kundvagn än
 | AppIdKeyVaultSecretName                       | Namnet på den hemlighet som du skapade för ditt exempelanslutningsprogram-ID för övergiven kundvagn. |
 | AppSecretKeyVaultSecretName                   | Namnet på den hemlighet som lagrar app-hemligheten för ditt exempelanslutningsprogram-ID för övergiven kundvagn. |
 | RetailServerUrl                               | URL-adressen till din Retail Server-instans. Detta värde finns i LCS. |
-| OperatingUnitNumber                           | Driftenhetsnummer (OUN). Detta värde finns i administrationen för Commerce. |
+| OperatingUnitNumber                           | Driftenhetsnummer (OUN). Detta värde finns i Commerce headquarters. |
 | IncludeAbandonedCartsModifiedSinceLastMinutes | Början på tidsfönstret för de övergivna kundvagnarna som du vill hämta. Värdet uttrycks som ett antal minuter före den aktuella tiden. Ange exempelvis denna egenskap som **120** om du vill hämta alla kundvagnar som senast ändrades för mellan 120 minuter sedan och slutet på tidsfönstret som definieras av egenskapen **ExcludeAbandonedCartsModifiedSinceLastMinutes**. |
 | ExcludeAbandonedCartsModifiedSinceLastMinutes | Slutet på tidsfönstret för de övergivna kundvagnarna som du vill hämta. Värdet uttrycks som ett antal minuter före den aktuella tiden. Om till exempel egenskapen **IncludeAbandonedCartsModifiedSinceLastMinutes** har satts till **120** anger du denna egenskap som **30** för att hämta alla vagnar som ändrades för melland 120 minuter sedan och 30 minuter sedan. I praktiken definierar den här egenskapen hur lång tid du vill vänta innan en vagn förklaras vara övergiven. |
 | ReturnToCartUrl                               | Webbadressen till vagnen på webbplatsen för näthändel i det format som används i filen **app.config**. |
@@ -155,7 +155,7 @@ Om du använder näthandelsfunktionerna i Handel kan du använda Hantering av di
 
 | Egenskap                             | Beskrivning |
 | ------------------------------------ | ----------- |
-| ImageServerUrl                       | Rot-URL-adressen till webbplatsens hanterare för digitala tillgångar. Värdet finns i egenskapsnyckeln för **Media Server Base-URL** på **Butik och handel \> Kanalinställningar \> Kanalprofiler** i Handelsadministrationen. |
+| ImageServerUrl                       | Rot-URL-adressen till webbplatsens hanterare för digitala tillgångar. Värdet finns i egenskapsnyckeln för **Media Server Base-URL** på **Butik och handel \> Kanalinställningar \> Kanalprofiler** i Commerce headquarters. |
 | ImageViewPorts                       | Behållarnoden för enskilda konfigurationer för visningsområde. |
 | ImageViewPorts/viewport              | Definitionen för visningsområde. Använd denna egenskap om du vill ange visningsområdets breddintervall i pixlar. Ett exempel på hur egenskapen används finns i konfigurationsfilen **appSettings.json**. |
 | ImageViewPorts/imageWidth            | Visningsområdets bildbredd i pixlar. |

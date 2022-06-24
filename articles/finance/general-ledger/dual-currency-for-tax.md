@@ -1,6 +1,6 @@
 ---
 title: Stöd för moms på dubbel valuta
-description: I det här avsnittet beskrivs hur du utökar redovisningsfunktionen för dubbla valutor i momsdomänen och vilken inverkan som momsen ska beräknas och bokföras.
+description: I den här artikeln beskrivs hur du utökar redovisningsfunktionen för dubbla valutor i momsdomänen och vilken inverkan som momsen ska beräknas och bokföras
 author: EricWang
 ms.date: 12/11/2020
 ms.topic: article
@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fcd5a3afb442d9c85aba12b7782cf09f88f0e51a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 13d70d964a83c2efba090244d549bdb38ad25af2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713056"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909052"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Stöd för moms på dubbel valuta
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du utökar redovisning av dubbla valutor för moms och vilken inverkan för beräkning, bokföring och kvittningar av moms.
+I den här artikeln beskrivs hur du utökar redovisning av dubbla valutor för moms och vilken inverkan för beräkning, bokföring och kvittningar av moms.
 
 Funktionen med dubbla valutor för Dynamics 365 Finance infördes i version 8.1 (oktober 2018). Den ändrar hur redovisningstransaktioner i rapporteringsvalutan beräknas.
 
@@ -89,7 +89,7 @@ Den här funktionen kan endast användas för nya transaktioner. För att momstr
 
 För att förhindra föregående scenario rekommenderar vi att du ändrar detta parameter värde i en ny (ren) momskvittningsperiod som inte innehåller några oreglerade momstransaktioner. Om du vill ändra detta värde i mitten av en momskvittningsperiod kör du programmet "kvitta och bokför moms" för aktuell momskvittningsperiod innan du ändrar detta parametervärde.
 
-Den här funktionen lägger till redovisningsposter som klargör vinster och förluster från valutautbyten. Inmatningarna görs i de realiserade vinst- och förlustkontona för valutajusteringar när omvärdering görs vid momskvittning. Mer information finns i avsnittet [Automatiskt saldo för momskvittning i rapporteringsvaluta](#tax-settlement-auto-balance-in-reporting-currency) senare i det här avsnittet.
+Den här funktionen lägger till redovisningsposter som klargör vinster och förluster från valutautbyten. Inmatningarna görs i de realiserade vinst- och förlustkontona för valutajusteringar när omvärdering görs vid momskvittning. Mer information finns i avsnittet [Automatiskt saldo för momskvittning i rapporteringsvaluta](#tax-settlement-auto-balance-in-reporting-currency) senare i den här artikeln.
 
 > [!NOTE]
 > Vid kvittningen tas informationen för ekonomiska dimensioner från momskonton, som är balansräkningskonton, och anges i valutajusteringsvinst- och förlustkonton, som är resultatkonton. Eftersom restriktioner för värdet av ekonomiska dimensioner skiljer sig mellan balansräkningskonton och resultatkonton, kan ett fel inträffa under processen Kvitta och bokföra moms. För att undvika att behöva ändra kontostrukturer kan du aktivera funktionen "Fyll i ekonomiska dimensioner till realiserade valutajusteringskonton för vinst/förlust för momskvittning". Den här funktionen tvingar ekonomiska dimensioner att använda valutajusteringskonton för vinst/förlust. 

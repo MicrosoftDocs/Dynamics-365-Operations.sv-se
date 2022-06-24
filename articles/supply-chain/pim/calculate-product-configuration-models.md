@@ -1,6 +1,6 @@
 ---
 title: Frågor och Svar - Beräkningar för produktkonfigurationsmodeller
-description: Det här ämnet beskriver beräkningar för produktkonfigurationsmodeller och förklarar hur du använder beräkningar tillsammans med begränsningar.
+description: Denna artikel beskriver beräkningar för produktkonfigurationsmodeller och förklarar hur du använder beräkningar tillsammans med begränsningar.
 author: t-benebo
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9463fac363f6bb25c1bd2afebe5737e47aa8b3cf
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 593f6a8e28c789a378515ddc8e4163c331442e8b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570811"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890956"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Frågor och Svar - Beräkningar för produktkonfigurationsmodeller
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet beskriver beräkningar för produktkonfigurationsmodeller och förklarar hur du använder beräkningar tillsammans med begränsningar.
+Denna artikel beskriver beräkningar för produktkonfigurationsmodeller och förklarar hur du använder beräkningar tillsammans med begränsningar.
 
-Beräkningar kan användas för aritmetiska eller logiska operationer. De kompletterar uttryckbegränsningar i produktkonfigurationsmodeller. Du kan definiera beräkningar på sidan **Detaljer för begränsningsbaserad produktkonfigurationsmodell** och sedan skapa uttryck för beräkningar i uttrycksredigeraren. Mer information finns i Skapa beräkningar.
+Beräkningar kan användas för aritmetiska eller logiska åtgärder. De kompletterar uttryckbegränsningar i produktkonfigurationsmodeller. Du kan definiera beräkningar på sidan **Detaljer för begränsningsbaserad produktkonfigurationsmodell** och sedan skapa uttryck för beräkningar i uttrycksredigeraren. Mer information finns i Skapa beräkningar.
 
 ## <a name="what-is-a-calculation"></a>Vad är en beräkning?
 En beräkning är ett element som du kan använda i en produktkonfigurationsmodell. Beräkningar kompletterar begränsningar genom att du kan använda decimaltal till beräkna värden med decimaltal när du konfigurerar en produkt. Vidare har beräkningar en större uppsättning tillgängliga operatorer än begränsningar.  
@@ -94,7 +94,7 @@ Detta meddelande visas när en beräkning innehåller ett fel eller om en motsä
 -   Värdena som returneras av beräkningen ligger utanför domänen för attributet. Ett exempel är ett heltal mellan \[1..10\] som beräknas till 0.
 
 ## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>Varför får jag ett felmeddelande även om jag validerade min produktmodell?
-Beräkningar inkluderas inte i valideringen. Du måste testa produktkonfigurationsmodellen för att hitta fel i beräkningar. Följande steg beskriver hur man testar en produktkonfigurationsmodell.
+Beräkningar inkluderas inte i valideringen. Du måste testa produktkonfigurationsmodellen för att hitta fel i beräkningar. Följande steg beskriver hur du testar en produktkonfigurationsmodell.
 
 1.  Klicka på **Produktinformationshantering** &gt; **Allmänt** &gt; **Produktkonfigurationsmodeller**.
 2.  Välj en produktkonfigurationsmodell i åtgärdsfönstret och klicka sedan på gruppen **Kör**, klicka på **Test**.

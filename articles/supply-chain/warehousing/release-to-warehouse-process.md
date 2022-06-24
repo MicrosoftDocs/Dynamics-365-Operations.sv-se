@@ -1,6 +1,6 @@
 ---
-title: Frisläpp till distributionslager
-description: Det här ämnet innehåller information om processen frisläppning till lagerställe. I artikeln beskrivs entiteter som skapas när du frisläpper en order till lagerställe och vilka alternativ du kan använda när du startar processen.
+title: Släpp till distributionslager
+description: Denna artikel innehåller information om processen för frisläppning till lagerställe. I artikeln beskrivs entiteter som skapas när du frisläpper en order till lagerställe och vilka alternativ du kan använda när du startar processen.
 author: Mirzaab
 ms.date: 8/13/2021
 ms.topic: article
@@ -11,22 +11,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 8624db42e9d0f3d08ed3b582224ed7937d52f85d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678363"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893190"
 ---
-# <a name="release-to-warehouse"></a>Frisläpp till distributionslager
+# <a name="release-to-warehouse"></a>Släpp till distributionslager
 
 [!include [banner](../../includes/banner.md)]
 
-Det här ämnet innehåller information om processen frisläppning till lagerställe. I artikeln beskrivs entiteter som skapas när du frisläpper en order till lagerställe och vilka alternativ du kan använda när du startar processen.
+Denna artikel innehåller information om processen för frisläppning till lagerställe. I artikeln beskrivs entiteter som skapas när du frisläpper en order till lagerställe och vilka alternativ du kan använda när du startar processen.
 
 ## <a name="release-to-warehouse-overview"></a>Översikt över frisläppning till lagerställe
 
-Frisläppning till lagerställe är processen att göra lagret klart för bearbetning av utförsel. När du frisläpper en order till lagerstället skapas lastrader och leveranser. Om automatisk påfyllnadsbearbetning har konfigurerats, skapas även laster och obligatoriskt arbete. Konfigurationen av de entiteter som ingår beror på systeminställningarna. Det här avsnittet i ämnet granskar de entiteter som skapas under frisläppningen till lagerställe och de systeminställningar som definierar dem.
+Frisläppning till lagerställe är processen att göra lagret klart för bearbetning av utförsel. När du frisläpper en order till lagerstället skapas lastrader och leveranser. Om automatisk påfyllnadsbearbetning har konfigurerats, skapas även laster och obligatoriskt arbete. Konfigurationen av de entiteter som ingår beror på systeminställningarna. Detta avsnittet av artikeln granskar de entiteter som skapas under frisläppningen till lagerställe och de systeminställningar som definierar dem.
 
 En *leverans* är en grupp av försäljningsorder- eller överföringsorderrader för samma kund eller samma leveransadress.
 
@@ -67,7 +67,7 @@ Slutsatsen är att när en order frisläpps till lagerstället fungerar det mest
 
 Beroende på lastmallar, arbetsmallar och inställningar för platsdirektiv kan vissa steg i flödet bli manuella. Generellt sett förblir flödet dock detsamma.
 
-Du har flera alternativ för hur du frisläpper en order till lagerstället. Du kan utföra åtgärden manuellt eller konfigurera ett batchjobb. Resten av avsnitten i den här ämnesöversikten innehåller information om hur du kan utföra en frisläppning för lagerställe.
+Du har flera alternativ för hur du frisläpper en order till lagerstället. Du kan utföra åtgärden manuellt eller konfigurera ett batchjobb. Resterande avsnitt i denna artikelgranskning innehåller detaljerad information om hur du kan utföra en frisläppning för lagerställe.
 
 ## <a name="manual-release-to-the-warehouse-from-the-sales-orders-and-transfer-orders-pages"></a>Manuell frisläppning till lagerstället från sidorna Försäljningsorder och Överföringsorder
 

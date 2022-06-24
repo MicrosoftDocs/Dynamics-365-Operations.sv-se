@@ -1,6 +1,6 @@
 ---
 title: Genomgång av funktioner för konstruktionsändringshantering
-description: Det här avsnittet innehåller en komplett genomgång som visar hur man arbetar med konstruktionsändringshantering.
+description: Denna artikel innehåller en komplett genomgång som visar hur man arbetar med konstruktionsändringshantering.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4c1c67559a8f2e9d0abb512f4231aea495d1957c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ec5535013af9ccb253744e061de738155ac9ad22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574003"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889647"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Genomgång av funktioner för konstruktionsändringshantering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en komplett genomgång som visar hur man arbetar med konstruktionsändringshantering. Det går igenom vart och ett av de viktigaste scenarierna:
+Denna artikel innehåller en komplett genomgång som visar hur man arbetar med konstruktionsändringshantering. Det går igenom vart och ett av de viktigaste scenarierna:
 
 - Grundläggande funktionskonfiguration
 - Hur ett tekniskt företag skapar en ny konstruktionsprodukt
@@ -35,13 +35,13 @@ Det här avsnittet innehåller en komplett genomgång som visar hur man arbetar 
 - Hur du schemalägger och implementerar begärda ändringar genom att skapa en teknisk ändringsorder
 - Så här släpper du en produkt som har ändrats
 
-Alla övningar i det här avsnittet använder de standardexempeldata som finns för Microsoft Dynamics 365 Supply Chain Management. Dessutom bygger varje övning på den föregående övningen. Vi rekommenderar därför att du arbetar under övningarna i ordning, från början till slut, särskilt om du aldrig har använt funktionen för konstruktionsändringshantering tidigare. På så sätt får du en fullständig förståelse för funktionen.
+Alla övningar i denna artikel använder de standardexempeldata som finns för Microsoft Dynamics 365 Supply Chain Management. Dessutom bygger varje övning på den föregående övningen. Vi rekommenderar därför att du arbetar under övningarna i ordning, från början till slut, särskilt om du aldrig har använt funktionen för konstruktionsändringshantering tidigare. På så sätt får du en fullständig förståelse för funktionen.
 
 ## <a name="set-up-for-the-sample-scenario"></a>Ställ in exempelscenario
 
-Om du vill följa det exempelscenario som finns i det här avsnittet måste du först förbereda funktionen genom att göra demodata tillgängliga och lägga till några anpassade poster.
+Om du vill följa det exempelscenario som finns i denna artikel måste du först förbereda funktionen genom att göra demodata tillgängliga och lägga till några anpassade poster.
 
-Innan du försöker göra något av övningarna i resten av det här avsnittet följer du instruktionerna i alla följande underavsnitt. Dessa underavsnitt innehåller också flera viktiga inställningssidor som du kommer att använda när du konfigurerar konstruktionsändringshantering för din egen organisation.
+Innan du försöker göra något av övningarna i resten av denna artikel följer du instruktionerna i alla följande underavsnitt. Dessa underavsnitt innehåller också flera viktiga inställningssidor som du kommer att använda när du konfigurerar konstruktionsändringshantering för din egen organisation.
 
 ### <a name="make-standard-demo-data-available"></a>Gör standarddemodata tillgängliga
 
@@ -71,7 +71,7 @@ En teknikorganisation som äger den tekniska informationen och ansvarar för pro
 
 ### <a name="set-up-product-lifecycle-states"></a>Ställa in produktens livscykeltillstånd
 
-När en konstruktionsprodukt går igenom sin livscykel är det viktigt att du kan kontrollera vilka transaktioner som tillåts för varje livscykeltillstånd. Följ dessa steg för att ställa in produktens livscykelstatus.
+När en konstruktionsprodukt går igenom sin livscykel är det viktigt att du kan kontrollera vilka transaktioner som tillåts för varje livscykeltillstånd. Följ dessa steg för att konfigurera produktens livscykelstatus.
 
 1. Gå till **konstruktionsändringshantering &gt; inställningar &gt; produktens livscykeltillstånd**.
 1. Välj **Ny** för att lägga till en livscykeltillstånd och ställa sedan in följande värden för den:
@@ -124,7 +124,7 @@ När en konstruktionsprodukt går igenom sin livscykel är det viktigt att du ka
     - **Företag:** *DEMF*
     - **Mall för släppt produkt:** *D0006*
 
-1. Välj **Lägg till** för att lägga till en till rad och ställa in följande värden på den:
+1. Välj **Lägg till** för att lägga till en till rad och konfigurera följande värden på den:
 
     - **ID för företagskonton:** *USMF*
     - **Mall för släppt produkt:** *D0006*
@@ -189,10 +189,10 @@ En konstruktionsprodukt är en produkt som har versionskontroll och styrs genom 
 
     ![Lägga till en konstruktionsprodukt.](media/new-product-dialog.png "Lägga till en konstruktionsprodukt")
 
-    Observera att fältet **Version** automatiskt ställs in med hjälp av nummerregeln för produktversion som du ställer in tidigare.
+    Observera att fältet **Version** automatiskt ställs in med hjälp av nummerregeln för produktversion som du konfigurerar tidigare.
 
 1. Välj **OK** för att skapa produkt och stänga dialogrutan.
-1. Detaljsidan för den nya produkten öppnas. Observera att värden redan har fyllts i för vissa fält, till exempel **lagringsdimensionsgrupp**, **spårningsdimensionsgrupp** och/eller **artikelmodellgrupp**. Dessa fält ställdes in automatiskt eftersom produkten släpps i juridiska enheten *DEMF* och använder policy för produktlansering *Komponenter* som är kopplad till konstruktionsproduktkategori *Komponenter*. Eftersom du tidigare har använt artikeln *D0006* som mall för att ställa in en rad för den juridiska personen *DEMF* togs de värden som har fyllts i från artikel *D0006*.
+1. Detaljsidan för den nya produkten öppnas. Observera att värden redan har fyllts i för vissa fält, till exempel **lagringsdimensionsgrupp**, **spårningsdimensionsgrupp** och/eller **artikelmodellgrupp**. Dessa fält ställdes in automatiskt eftersom produkten släpps i juridiska enheten *DEMF* och använder policy för produktlansering *Komponenter* som är kopplad till konstruktionsproduktkategori *Komponenter*. Eftersom du tidigare har använt artikeln *D0006* som mall för att konfigurera en rad för den juridiska personen *DEMF* togs de värden som har fyllts i från artikel *D0006*.
 
     ![Information om frisläppt produkt.](media/product-details.png "Information om frisläppt produkt")
 
@@ -365,14 +365,14 @@ Teknikern granskar nu begäran från kunden och skapar en ändringsorder för pr
     - **Prioritet:** *låg*
     - **Allvarlighetsgrad:** *medium*
 
-1. På snabbfliken **Påverkade produkter** välj **Ny &gt; Lägg till befintlig produkt** för att lägga till en rad i rutnätet och ställa in följande värden för det:
+1. På snabbfliken **Påverkade produkter** välj **Ny &gt; Lägg till befintlig produkt** för att lägga till en rad i rutnätet och konfigurera följande värden för det:
 
     - **Produkt:** *Z0001*
     - **Påverkan:** *Ny version*
 
     ![Skapa en teknisk ändringsorder.](media/eng-change-order.png "Skapa en teknisk ändringsorder")
 
-1. Observera att eftersom du ställer in fältet **Påverkan** till *Ny version*, fältet **Ny version** på fliken **Detaljer** av snabbfliken **Produktinformation** visar vad det nya versionsnumret kommer att bli (*V-02* för detta exempel).
+1. Observera att eftersom du konfigurerar fältet **Påverkan** till *Ny version*, fältet **Ny version** på fliken **Detaljer** av snabbfliken **Produktinformation** visar vad det nya versionsnumret kommer att bli (*V-02* för detta exempel).
 
     ![Produktinformation för teknisk ändringsorder.](media/eng-change-order-product-details.png "Produktinformation för teknisk ändringsorder")
 

@@ -1,6 +1,6 @@
 ---
 title: Kvalitetsassociationer
-description: I detta ämne beskrivs hur du kan använda kvalitetsassociationer i Microsoft Dynamics 365 Supply Chain Management för att automatiskt generera kvalitetsorder som hör till dina försäljnings-, inköps- och produktionsprocesser.
+description: I denna artikel hur du kan använda kvalitetsassociationer i Microsoft Dynamics 365 Supply Chain Management för att automatiskt generera kvalitetsorder som hör till dina försäljnings-, inköps- och produktionsprocesser.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28984730e5660414eec1ba087eb5de1eba4cbbb8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4e96f301d8dec255e57f0f0fbfa9c8e1a5922ae9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571939"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887527"
 ---
 # <a name="quality-associations"></a>Kvalitetsassociationer
 
 [!include [banner](../includes/banner.md)]
 
-I detta ämne beskrivs hur du kan använda kvalitetsassociationer i Microsoft Dynamics 365 Supply Chain Management för att automatiskt generera kvalitetsorder som hör till dina försäljnings-, inköps- och produktionsprocesser.
+I denna artikel hur du kan använda kvalitetsassociationer i Microsoft Dynamics 365 Supply Chain Management för att automatiskt generera kvalitetsorder som hör till dina försäljnings-, inköps- och produktionsprocesser.
 
 En kvalitetsassociation definierar all följande information för en kvalitetsorder som genereras:
 
@@ -42,7 +42,7 @@ Du måste definiera en kvalitetsassociation för varje variant i en affärsproce
 
 Affärsprocessen som använder en kvalitetsassociation kan relateras till olika källdokument, till exempel inköpsorder, försäljningsorder eller produktionsorder.
 
-Varje kvalitetsassociationspost definierar testuppsättningarna, den godtagbara kvalitetsnivån och provtagningsplanen som gäller genererade kvalitetsorder. Du måste definiera en kvalitetsassociationspost för varje variant i en affärsprocess. Du kan till exempel ställa in en kvalitetsassociation som genererar en kvalitetsorder när en produktinleverans för en inköpsorder uppdateras. Beroende på hur körningsplanen har ställts in kan själva utlösarprocessen spärras när det finns en öppen kvalitetsorder. Efterföljande processer, såsom inköpsorderfakturering, kan också spärras.
+Varje kvalitetsassociationspost definierar testuppsättningarna, den godtagbara kvalitetsnivån och provtagningsplanen som gäller genererade kvalitetsorder. Du måste definiera en kvalitetsassociationspost för varje variant i en affärsprocess. Du kan till exempel konfigurera en kvalitetsassociation som genererar en kvalitetsorder när en produktinleverans för en inköpsorder uppdateras. Beroende på hur körningsplanen har ställts in kan själva utlösarprocessen spärras när det finns en öppen kvalitetsorder. Efterföljande processer, såsom inköpsorderfakturering, kan också spärras.
 
 > [!NOTE]
 > Även om det finns öppna kvalitetsorder spärras lagerkvantiteter automatiskt från att utfärdas. Beroende på inställningen för fältet **Fullständig spärr** på sidan **Artikelsamplingar** är kvantiteten antingen kvantiteten på kvalitetsordern eller kvantiteten på källdokumentraden. Mer information finns i [Artikelsampling för kvalitetshantering](quality-item-sampling.md).
@@ -200,7 +200,7 @@ Om du vill arbeta med kvalitetsassociationer går du till **Lagerhantering \> In
 <td>Slut</td>
 </tr>
 <tr>
-<td rowspan="3">Flödesoperation</td>
+<td rowspan="3">Flödesåtgärd</td>
 <td rowspan="3">Rapportera som färdig</td>
 <td rowspan="2">Före</td>
 <td>None</td>
@@ -276,11 +276,11 @@ Följande register innehåller mer information om hur kvalitetsorder kan generer
 <td>En manuellt genererad kvalitetsorder som refererar till en produktionsorder kan använda information i en kvalitetsassociationspost, till exempel testsamplingsplanen.</td>
 </tr>
 <tr>
-<td>Produktionsorder som har en flödesoperation</td>
+<td>Produktionsorder som har en flödesåtgärd</td>
 <td>Före eller efter att rapporten är färdig för en åtgärd</td>
 <td>Efter att rapporteringsproduktionen är färdig för den senaste åtgärden</td>
 <td>Behovet av en kvalitetsorder kan återspegla en specifik plats, artikel eller verksamhetsresurs, eller en kombination av dessa betingelser.</td>
-<td>En manuellt genererad kvalitetsorder som refererar till en flödesoperation kan använda information i en kvalitetsassociationspost, till exempel testsamplingsplanen.</td>
+<td>En manuellt genererad kvalitetsorder som refererar till en flödesåtgärd kan använda information i en kvalitetsassociationspost, till exempel testsamplingsplanen.</td>
 </tr>
 <tr>
 <td>Lager</td>
@@ -297,14 +297,14 @@ Följande register innehåller mer information om hur kvalitetsorder kan generer
 
 ### <a name="purchasing"></a>Inköp
 
-I inköp, om du ställer in fältet **händelsetyp** till *produktinleverans* och fältet **körning** till *efter* på sidan **kvalitetsassociationer**, får du följande resultat:
+I inköp, om du konfigurerar fältet **händelsetyp** till *produktinleverans* och fältet **körning** till *efter* på sidan **kvalitetsassociationer**, får du följande resultat:
 
 - Om alternativet **per uppdaterad kvantitet** är inställt på *Ja*, genereras en kvalitetsorder för varje inleverans mot inköpsordern, baserat på inlevererad kvantitet och inställningar i artikelsampling. Varje gång en kvantitet inlevereras mot inköpsordern genereras nya kvalitetsorder utifrån den nylevererade kvantiteten.
 - Om alternativet **per uppdaterad kvantitet** är inställt på *Nej*, genereras en kvalitetsorder för första inleveransen mot inköpsordern, baserat på inlevererad kvantitet. Dessutom skapas en eller flera kvalitetsorder utifrån den återstående kvantiteten, beroende på spårningsdimensionerna. Kvalitetsorder genereras inte för efterföljande inleveranser mot inköpsordern.
 
 ### <a name="production"></a>Produktion
 
-I produktion, om du ställer in fältet **händelsetyp** till *Rapportera som slutförd* och fältet **körning** till *efter* på sidan **kvalitetsassociationer**, får du följande resultat:
+I produktion, om du konfigurerar fältet **händelsetyp** till *Rapportera som slutförd* och fältet **körning** till *efter* på sidan **kvalitetsassociationer**, får du följande resultat:
 
 - Om alternativet **per uppdaterad kvantitet** är inställt på *Ja*, genereras en kvalitetsorder för varje slutförd kvantitet och inställningar i artikelsampling. Varje gång en kvantitet rapporteras som slutförd mot produktionsorden genereras nya kvalitetsorder utifrån den nyligen avslutade kvantiteten. Denna generations logik är förenlig med inköp.
 - Om alternativet **Per uppdaterad kvantitet** anges till *Nej*, genereras en kvalitetsorder första gången som en kvantitet rapporteras som färdig, baserat på den färdiga kvantiteten. Dessutom skapas en eller flera kvalitetsorder utifrån den återstående kvantiteten, beroende på spårningsdimensionerna av artikelsampling. Kvalitetsorder genereras inte för senare färdiga kvantiteter.

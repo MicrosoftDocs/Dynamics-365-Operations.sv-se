@@ -1,6 +1,6 @@
 ---
 title: Massdistribution av stängda Commerce-självbetjäningskomponenter
-description: Det här ämnet beskriver hur du använder ramverket för installationsprogram för självbetjäning för tyst installation och tjänstedistributioner.
+description: Denna artikel beskriver hur du använder ramverket för installationsprogram för självbetjäning för tyst installation och tjänstedistributioner.
 author: jashanno
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 5cb27fd0ea366d12c8bd6ee1cdb0c6d584375862
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: a679d78db3ad5bd9cccbd4ab6a7026bd07890f55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741554"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898589"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>Massdistribution av stängda Commerce-självbetjäningskomponenter
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet gäller komponentinstallationsprogram med stängt ramverk som frisläpps varje månad, med början med version 10.0.18, och som är tillgängliga i det delade tillgångsbiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Observera att de flera av de första versionerna av dessa nya installationsprogram betecknas som **(Förhandsversion)**. Det enda syftet med denna beteckning är att skilja mellan de nya installationsprogrammen medan Microsoft fastställer om det finns ytterligare funktionella krav för att använda dem. Det betyder inte att installationsprogrammet inte är giltigt för produktion. Baserat på frisläppning av dessa nya installationsprogram planerar Microsoft att fasa ut de gamla (äldre) installationsprogrammen i eller runt oktober 2023. 
+Denna artikel gäller komponentinstallationsprogram med stängt ramverk som frisläpps varje månad, med början med version 10.0.18, och som är tillgängliga i det delade tillgångsbiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Observera att de flera av de första versionerna av dessa nya installationsprogram betecknas som **(Förhandsversion)**. Det enda syftet med denna beteckning är att skilja mellan de nya installationsprogrammen medan Microsoft fastställer om det finns ytterligare funktionella krav för att använda dem. Det betyder inte att installationsprogrammet inte är giltigt för produktion. Baserat på frisläppning av dessa nya installationsprogram planerar Microsoft att fasa ut de gamla (äldre) installationsprogrammen i eller runt oktober 2023. 
 
-I det ämnet avsnittet beskrivs hur du använder de nya installationsprogrammen för att utföra tysta installations- och serviceuppdateringar via kommandoradsargument. Med dessa argument kan du använda massdistribution på flera olika sätt.
+Denna artikel beskriver hur du använder de nya installationsprogrammen för att utföra tysta installations- och serviceuppdateringar via kommandoradsargument. Med dessa argument kan du använda massdistribution på flera olika sätt.
 
 > [!NOTE]
 > De nya stängda installationsprogrammen med självservicen kommer inte att göras tillgängliga i headquarters och kan bara laddas ned via LCS.
@@ -108,7 +108,7 @@ Migrering från de gamla självbetjäningsramverkets komponentinstallationsprogr
 
 ### <a name="before-you-begin"></a>Innan du börjar
 
-Det är mycket viktigt att du tar bort den gamla Modern POS-komponenten med självbetjäning. Mer information finns i migreringsstegen tidigare i det här ämnet.
+Det är mycket viktigt att du tar bort den gamla Modern POS-komponenten med självbetjäning. Mer information finns i migreringsstegen tidigare i denna artikel.
 
 ### <a name="examples-of-silent-deployment"></a>Exempel på tyst distribution
 
@@ -125,7 +125,7 @@ CommerceModernPOS.exe --help install
 ```
 
 > [!NOTE]
-> En konfigurationsfil behövs inte för Modern POS. Installationsprogrammet har nu parametrar (visas tidigare i det här ämnet) för de olika värden som används under enhetsaktivering.
+> En konfigurationsfil behövs inte för Modern POS. Installationsprogrammet har nu parametrar (visas tidigare i denna artikel) för de olika värden som används under enhetsaktivering.
 
 Följande kommando specificerar alla parametrar som ska användas under enhetsaktiveringen när Modern POS-programmet har installerats. I det här exemplet används **Houston-3**, som är ett vanligt värde i Dynamics 365 Commerce-demodata.
 
@@ -145,7 +145,7 @@ Du kan blanda och matcha dessa koncept för att uppnå de installationsresultat 
 
 ### <a name="before-you-begin"></a>Innan du börjar
 
-Det är mycket viktigt att du tar bort den gamla maskinvarustationskomponenten med självbetjäning. Mer information finns i migreringsstegen tidigare i det här ämnet. Det finns inte längre ett informationsverktyg för handlarkonto. I stället installeras information om handlares konto när en kassaterminal kopplas ihop med maskinvarustationen. När du testar installationsprogrammet för första gången rekommenderar vi att du kör följande kommando:
+Det är mycket viktigt att du tar bort den gamla maskinvarustationskomponenten med självbetjäning. Mer information finns i migreringsstegen tidigare i denna artikel. Det finns inte längre ett informationsverktyg för handlarkonto. I stället installeras information om handlares konto när en kassaterminal kopplas ihop med maskinvarustationen. När du testar installationsprogrammet för första gången rekommenderar vi att du kör följande kommando:
 
 ```Console
 CommerceHardwareStation.exe --help install
@@ -166,7 +166,7 @@ HardwareStation.exe install --Port 443 --StoreSystemAOSURL "https://MyDynamics36
 ```
 
 > [!NOTE]
-> En konfigurationsfil behövs inte för maskinvarustation. Installationsprogrammet har nu parametrar (visas tidigare i det här ämnet) för de olika värden som krävs.
+> En konfigurationsfil behövs inte för maskinvarustation. Installationsprogrammet har nu parametrar (visas tidigare i denna artikel) för de olika värden som krävs.
 
 Följande kommando anger alla parametrar som krävs för att hoppa över förutsättningskontroller under en standardinstallation. 
 
@@ -189,7 +189,7 @@ CommerceStoreScaleUnitSetup.exe --help install
 
 ### <a name="before-you-begin"></a>Innan du börjar
 
-Det är mycket viktigt att du tar bort den gamla CSU-komponenten (självvärdbaserad) med självbetjäning. Mer information finns i migreringsstegen tidigare i det här ämnet.
+Det är mycket viktigt att du tar bort den gamla CSU-komponenten (självvärdbaserad) med självbetjäning. Mer information finns i migreringsstegen tidigare i denna artikel.
 
 ### <a name="examples-of-silent-deployment"></a>Exempel på tyst distribution
 

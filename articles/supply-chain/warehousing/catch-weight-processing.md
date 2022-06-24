@@ -1,6 +1,6 @@
 ---
-title: Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
-description: Detta avsnitt beskriver hur man använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret.
+title: Produktbearbetning med faktisk/nominell vikt med lagerstyrning
+description: Denna artikel beskriver hur du använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret.
 author: perlynne
 ms.date: 08/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 830e05db47e2e2d3bb5970869bc395cfa73ad603
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: d0f0e44cfafec722f6eed3d18ba8be4739be30c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087380"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900692"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
 
@@ -29,7 +29,7 @@ ms.locfileid: "8087380"
 Om du vill använda lagerstyrning för att bearbeta produkt i faktisk/nominell vikt måste du använda en licensnyckelkonfiguration för att aktivera funktionen. Öppna **Systemadministration \> Inställningar \> Licenskonfiguration**. Klicka sedan på fliken **konfigurationsnycklar**, expandera **handel \> hantering av lager och transport** och markera kryssrutan för **faktisk/nominell vikt för lagerstället**.
 
 > [!NOTE]
-> Både **hantering av lager och transport** licensnyckeln för konfiguration och **Processfördelning \> faktisk/nominell vikt** måste också aktiveras. Om du vill ställa in konfigurationsnycklarna för faktisk/nominell vikt måste du också aktivera funktionen med hjälp av arbetsytan **funktionshantering**. Huvudfunktionen som måste aktiveras är **Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning**. Två relaterade funktioner som du kanske vill aktivera är **lagerstatusändringar för produkter för faktisk/nominell vikt** och **Använd befintliga koder för faktisk/nominell vikt vid rapportering av tillverkningsorder som färdiga**.
+> Både **hantering av lager och transport** licensnyckeln för konfiguration och **Processfördelning \> faktisk/nominell vikt** måste också aktiveras. Om du vill konfigurera konfigurationsnycklarna för faktisk/nominell vikt måste du också aktivera funktionen med hjälp av arbetsytan **funktionshantering**. Huvudfunktionen som måste aktiveras är **Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning**. Två relaterade funktioner som du kanske vill aktivera är **lagerstatusändringar för produkter för faktisk/nominell vikt** och **Använd befintliga koder för faktisk/nominell vikt vid rapportering av tillverkningsorder som färdiga**.
 
 Efter att licenskonfigurationens nyckel är inaktiverad, när du skapar en frisläppt produkt, kan du välja **faktisk/nominell vikt**. Du kan också koppla frisläppt produkt till en lagringsdimension som parametern **använda processer för lagerhantering** väljs för.
 
@@ -40,7 +40,7 @@ Innan du kan använda produkten i lagerstyrning, måste du göra vissa grundläg
 - Skapa en enhetssekvensgrupp där faktisk/nominell viktenheten definieras som den lägsta lagerhållningsenhet (SKU).
 - Ställ in en policy för hantering av faktisk/nominell vikt.
 
-Mer information finns i [ställa in och underhålla artiklar i faktisk/nominell vikt](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items).
+Mer information finns i [konfigurera och underhålla artiklar i faktisk/nominell vikt](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items).
 
 ## <a name="transaction-adjustments"></a>Transaktionjusteringar
 
@@ -63,7 +63,7 @@ I dess definition ställs en produkt in för att klara en lägsta vikt på 8 kg
 
 Du har två lådor av produkten och de har 16 kg registrerad vikt. Om lagerarbetare plockar väger en av lådorna och vikt registreras som 9 kg, väger återstående fält 7 kg. Men eftersom 7 kg är lägre än lägsta vikten, gör systemet en automatisk justering för att öka vikten på lagerbehållningen med 1 kg.
 
-Om du vill ställa in kontona justeringarna bokförs på Gå till **kostnadshantering \> Ställ in policyer för redovisningsintegrering \> bokföring**. Klicka sedan på fliken **lager**, ange följande konton:
+Om du vill konfigurera kontona justeringarna bokförs på Gå till **kostnadshantering \> Ställ in policyer för redovisningsintegrering \> bokföring**. Klicka sedan på fliken **lager**, ange följande konton:
 
 - Förlustkonto för faktisk/nominell vikt
 - Vinstkonto för faktisk/nominell vikt
@@ -93,7 +93,7 @@ Processen för att spåra faktisk/nominell vikt kan användas för artiklar där
 
 En annan viktig parameter som är relaterad till bearbetningen av koder för faktisk/nominell vikt är **spårnings metod för kod för faktisk/nominell vikt**. Koder kan antingen spåras eller spåras helt eller delvis. Om en kod endast spåras delvis kommer produktdimensioner, spårningsdimensioner och lagerstatus att spåras. Om en kod spåras helt kommer produktdimensioner, spårningsdimensioner och **alla** lagerdimensioner att spåras.
 
-När en artikel är en kod, spåras dessutom en parameter för **Inhämtningsmetod för utgående vikt**. Du kan ställa in den här parametern så att du alltid uppmanas att ange koden för utgående transaktioner från den mobila enheten. Du kan också ställa in parametern så att du bara uppmanas att ange koder när de behövs. Det finns till exempel fem koder för faktisk/nominell vikt i lagret på en viss registreringsskylt och du har angett att du vill plocka alla fem koder från registreringsskylten. I detta fall, om parametern **Inhämtningsmetod för utgående vikt** anges till **endast fråga efter kod vid behov** plockas de fem koderna automatiskt. Du behöver inte skanna varje kod. Om parametern är inställd på att **Fråga alltid efter kod** måste du skanna varje kod, även om alla fem koderna hämtas.
+När en artikel är en kod, spåras dessutom en parameter för **Inhämtningsmetod för utgående vikt**. Du kan konfigurera den här parametern så att du alltid uppmanas att ange koden för utgående transaktioner från den mobila enheten. Du kan också konfigurera parametern så att du bara uppmanas att ange koder när de behövs. Det finns till exempel fem koder för faktisk/nominell vikt i lagret på en viss registreringsskylt och du har angett att du vill plocka alla fem koder från registreringsskylten. I detta fall, om parametern **Inhämtningsmetod för utgående vikt** anges till **endast fråga efter kod vid behov** plockas de fem koderna automatiskt. Du behöver inte skanna varje kod. Om parametern är inställd på att **Fråga alltid efter kod** måste du skanna varje kod, även om alla fem koderna hämtas.
 
 > [!NOTE]
 > Som regel sparas och uppdateras koderna endast på menyalternativen på den mobila enheten. Det finns dock några situationer där koderna har fångats in någon annanstans (t.ex. från den manuella förpackningsstationen). Vanligtvis ska menyalternativen på den mobila enheten användas för alla lageraktiviteter om koder används.
@@ -103,7 +103,7 @@ När en artikel är en kod, spåras dessutom en parameter för **Inhämtningsmet
 **När spårning av taggar för faktisk/nominell vikt används** måste taggen alltid skapas för varje faktisk/nominell viktenhet som tas emot och varje tagg måste alltid associeras med en vikt.
 
 Till exempel **Låda** är faktisk/nominell viktenheten och du får en lastpall med åtta lådor. I det här fallet måste åtta unika taggar för faktisk/nominell vikt skapas och en vikt måste vara associerad med varje tagg. Beroende på taggen för inkommande faktisk/nominell vikt måste antingen vikten för alla åtta lådor registreras och den genomsnittliga vikten som sedan kan distribueras till varje låda eller en unik vikt registreras in för varje låda.
-När du använder funktionen **Använd befintliga koder för faktisk/nominell vikt vid rapportering av tillverkningsorder som färdiga** med processen aktiverad via en menyartikel på en mobil enhet, uppdateras lagret baserat på den befintliga informationen på fliken om faktisk/nominell vikt. Detta innebär att mobilappen för distributionslagerhantering inte ber om att fånga upp taggdata för faktisk/nominell vikt som en del av en produktions rapport som en avslutad operation.
+När du använder funktionen **Använd befintliga koder för faktisk/nominell vikt vid rapportering av tillverkningsorder som färdiga** med processen aktiverad via en menyartikel på en mobil enhet, uppdateras lagret baserat på den befintliga informationen på fliken om faktisk/nominell vikt. Detta innebär att mobilappen för distributionslagerhantering inte ber om att fånga upp taggdata för faktisk/nominell vikt som en del av en produktions rapport som en avslutad åtgärd.
 
 **När spårning av tagg för faktisk/nominell vikt inte används** registreras vikten för varje dimensionsuppsättning (till exempel för varje registreringsskylt och spårningsdimension). Du kan också registrera vikten in baserat på aggregerad nivå, t.ex. fem registreringsskyltar (lastpallar).
 
@@ -150,7 +150,7 @@ Alla arbetsflöden stöder inte bearbetning av produkt i faktisk/nominell vikt m
 - Ta emot registreringsskyltar kräver att vikter tilldelas under registreringen, eftersom viktinformation inte stöds som en del av leveransaviseringen. Processer för taggar för faktisk/nominell vikt när taggnummer måste tilldelas manuellt per faktisk/nominell vikt.
 - Kontrollen av ankommande kvalitetskontroll stöds inte för produkter av faktisk/nominell vikt. Om kvalitetskontrollen är konfigurerad hoppas det över.
 
-### <a name="inventory-and-warehouse-operations"></a>Operationer för lager och lagerställen
+### <a name="inventory-and-warehouse-operations"></a>Åtgärder för lager och lagerställen
 
 - Skapa karantänorder manuellt stöds inte för produkter med faktisk/nominell vikt.
 - Manuell lagerförflyttning relaterad till öppet arbete stöds inte för produkter med faktisk/nominell vikt.

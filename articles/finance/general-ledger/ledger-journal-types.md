@@ -1,6 +1,6 @@
 ---
 title: Redovisningsjournaltyper
-description: I det här avsnittet beskrivs de journaltyper där du kan ställa in redovisningsjournaler.
+description: Den här artikeln ger en beskrivning av de journaltyper du kan ställa in för ekonomiska journaler.
 author: kweekley
 ms.date: 10/10/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e49d101bbbe576e0fcf2e9b243f4f29124fbd85
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 883c54b84ed31384a28c31c8b814c75d340d020e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722281"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901325"
 ---
 # <a name="ledger-journal-types"></a>Redovisningsjournaltyper
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs de journaltyper där du kan ställa in redovisningsjournaler. Använd sidan **Journalnamn** för att konfigurera journaler som du kan använda i hela Dynamics 365 Finance.
+Den här artikeln ger en beskrivning av de journaltyper du kan ställa in för ekonomiska journaler. Använd sidan **Journalnamn** för att konfigurera journaler som du kan använda i hela Dynamics 365 Finance.
 
 | Journaltyp                      | Syfte                       | Registrera transaktioner på denna sida                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|

@@ -1,6 +1,6 @@
 ---
 title: Aktivera Power BI för global lagerredovisning
-description: I det här avsnittet beskrivs hur du aktiverar Microsoft Power BI för global lagerredovisningen.
+description: I denna artikel beskrivs hur du aktiverar Microsoft Power BI för global lagerredovisning.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 8be486409d60cc4927599816e30e1e4ab21a312a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 757d969cf9d1ebc12aeb34b0810fc291e47dffad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669794"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906078"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>Aktivera Power BI för global lagerredovisning
 
@@ -37,7 +37,7 @@ Följande förutsättningar måste uppfyllas innan du kan aktivera Power BI rapp
 
 ## <a name="setup"></a>Ställ in
 
-För att ställa in Power BI-integrationen, följ dessa steg.
+För att konfigurera Power BI-integreringen, följ dessa steg.
 
 1. Logga in på [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index).
 1. Gå till **Bibliotek för gemensam tillgång**, välj **Power BI rapportmodell** som tillgångstyp och hämta paketet **Global lagerredovisning**. 
@@ -51,17 +51,17 @@ För att ställa in Power BI-integrationen, följ dessa steg.
 
     1. Gå till **Min arbetsyta**, hitta datauppsättningen för Global lagerredovisning och sedan i menyn **Alternativ** välj **Inställningar**.
     1. Under **Inställningar för global lagerredovisning** expanderar du **Parametrar** och uppdaterar alla parametrar efter behov. Se i synnerhet till att kontrollera följande inställningar:
-        1. Skriv över standardvärdena för **Dataverse URL** med hjälp av värdena som finns under **Miljöinformation om Power Platform** i LCS (i avsnittet **Power Platform-integration**).
+        1. Skriv över standardvärdena för **Dataverse URL** med hjälp av värdena som finns under **Miljöinformation om Power Platform** i LCS (i avsnittet **Power Platform-integrering**).
         1. Skriv över standardvärdena för **Miljö-ID** med värden som hittas under **Miljöinformation** i LCS (i avsnittet **Hantera miljö**).
         1. Välj länken **Redigera autentiseringsuppgifter** bredvid etiketten **CDS** i avsnittet **Autentiseringsuppgifter för datakälla**. Logga sedan in på ditt Dataverse-konto med hjälp av autentiseringsmetoden **OAuth2**.
     1. Kontrollera att de Power BI-rapporter som finns i **Min arbetsyta \> Rapporter \> Global lagerredovisning** nu fungerar som de ska och visar innehåll från systemet.
 
-1. Registrera ansökan enligt beskrivningen i [Konfigurera PowerBI.com-integration](../../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md#registration-process).
+1. Registrera ansökan enligt beskrivningen i [Konfigurera PowerBI.com-integrering](../../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md#registration-process).
 1. Integrera rapportfilen **Global lagerredovisning** Power BI i Dynamics 365 Supply Chain Management genom att följa stegen nedan:
 
     1. Öppna **Systemadministration \> Inställningar \> PowerBI.com konfiguration**.
     1. Välj **Redigera**.
-    1. Välj **Aktivera PowerBI.Com-integration**.
+    1. Välj **Aktivera PowerBI.Com-integrering**.
     1. I fälten **App-ID** anger du app-ID.
     1. I fälten **Appnyckel** anger du appnyckel.
     1. Välj **Spara**.

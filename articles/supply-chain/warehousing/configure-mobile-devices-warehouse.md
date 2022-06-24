@@ -1,6 +1,6 @@
 ---
-title: Ställ in mobila enheter för lagerarbete
-description: Det här ämnet beskriver konfiguration av menyalternativ som lagerarbetare använder för att utföra arbete på en mobil enhet.
+title: Konfigurera mobila enheter för distributionslagerarbete
+description: Denna artikel beskriver konfiguration av menyalternativ som lagerarbetare använder för att utföra arbete på en mobil enhet.
 author: Mirzaab
 ms.date: 03/23/2020
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9e0f27839d9e6330cc8a11874a5cb1786daf8dc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: efbf9072c3bbcb20f38e144f9a15d8178d96d708
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902206"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905585"
 ---
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Ställ in mobila enheter för lagerarbete
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurera mobila enheter för distributionslagerarbete
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet beskriver konfiguration av menyalternativ som lagerarbetare använder för att utföra arbete på en mobil enhet.
+Denna artikel beskriver konfiguration av menyalternativ som lagerarbetare använder för att utföra arbete på en mobil enhet.
 
 > [!NOTE]
-> Denna artikel gäller funktioner i lagerstyrningshanteringen. Den gäller inte funktioner i Lagerhantering. Menyalternativen som visas på menyerna på en mobil enhet för lagerställe konfigureras på sidan **Menyalternativ på mobil enhet**. Eftersom menyalternativen kan sättas på olika menyer, är det enklare att konfigurera menystrukturer så att endast specifika typer av arbete visas för specifika användare. Du kan konfigurera menykommando att utföra följande uppgifter:
+> Denna artikel gäller funktioner i Warehouse Management. Den gäller inte funktioner i Lagerhantering. Menyalternativen som visas på menyerna på en mobil enhet för lagerställe konfigureras på sidan **Menyalternativ på mobil enhet**. Eftersom menyalternativen kan sättas på olika menyer, är det enklare att konfigurera menystrukturer så att endast specifika typer av arbete visas för specifika användare. Du kan konfigurera menykommando att utföra följande uppgifter:
 
 - Bearbeta en förfrågan eller utföra en aktivitet, som till exempel skriva ut en etikett, generera ID-nummer, starta en produktionsorder eller snabbt samla in information artiklar på en plats.
 - Skapa arbete som ska utföras genom en annan process. Mottagning av en artikel för en inköpsorder kan till exempel skapa inlagrat arbete för en annan arbetstagare.
@@ -59,15 +59,15 @@ Om fältet **Metod** för ett menyalternativ anges som **Indirekt**, kan du skap
 | Skapa registreringsskylt | Skapa en överordnad registreringsskylt genom att kombinera flera registreringsskyltar på samma plats. Detta alternativ är användbart om du flyttar flera registreringsskyltar samtidigt. När den överordnade registreringsskylten har tagits bort måste du utföra ett registreringsskyltsavbrott innan du kan plocka artiklar från varje registreringsskylt. <p></p>**Tips:** Om du vill flytta en överordnad registreringsskylt måste du använda en mobil enhet som har konfigurerats för att skapa arbete för förflyttningar. |
 | Avbrott för registreringsskylt | Bryt upp en registreringsskyltversion, så att du kan plocka artiklar från registreringsskyltarna i den versionen. |
 | Förarens incheckning | Om du använder Transporthantering ska du registrera att en förare har anlänt genom att skanna utgående last-ID, mötes-ID eller försändelse-ID. För detta alternativ krävs att en last tilldelas mötet, och att lastens status är **Lastad**. |
-| Förarens utcheckning | Registrera att en förare har slutfört deras möte. |
+| Förarens kassa | Registrera att en förare har slutfört deras möte. |
 | Rensa nummerseriecache | Ta bort nummer i nummerserie från nummerserieminnet. Denna aktivitet utförs vanligtvis av en systemadministratör för att lösa cachelagringsproblem från mobila enheter. |
 | Ändra batchdisposition | Tillåt att en anställd anger en batchdispositionskod för en artikel och en batch. Detta val uppdaterar den dispositionskod som anges för batchen. |
-| Visa lista över öppet arbete | Visa en lista över tillgängligt arbete till en viss användare. Användaren kan sedan välja arbetet som ska utföras och styrs mot det. Den här listan är avsedd att visas på pekplattor med skärmstorlekar på 7 tum eller mer. När du väljer det här alternativet kommer menyalternativen **Redigera fråga** och **Fältlista** blir tillgängliga. Sidan **Redigera fråga** låter dig ställa in kriterier för det arbete som visas i listan. Sidan **Fältlista** låter dig välja vilka fält som visas i arbetslistan. Du kan till exempel minska antalet fält som visas så att användaren snabbare kan välja den lämpligaste arbetsuppgiften. På snabbfliken **Allmän** i fältet **Poster per sida** kan du också välja hur många arbetsposter per sida som ska visas. Om alternativet **Tillåt användare att filtrera arbete efter transaktionstyp** är markerat, kommer arbetslistan att inkludera en **Filtrera arbete**-kontroll i arbetsuppgiftslistan, som låter användaren filtrera per transaktionstyp. I arbetslistan kommer användaren endast att se arbete som de har behörighet till. Du måste kontrollera att användarna har behörighet för en eller flera användarriktade menykommandon som stöder de specifika arbetsklasstyperna som de ska ha åtkomst till. Behörigheter kontrolleras när en användare försöker utföra arbete i listan.|
+| Visa lista över öppet arbete | Visa en lista över tillgängligt arbete till en viss användare. Användaren kan sedan välja arbetet som ska utföras och styrs mot det. Den här listan är avsedd att visas på pekplattor med skärmstorlekar på 7 tum eller mer. När du väljer det här alternativet kommer menyalternativen **Redigera fråga** och **Fältlista** blir tillgängliga. Sidan **Redigera fråga** låter dig konfigurera kriterier för det arbete som visas i listan. Sidan **Fältlista** låter dig välja vilka fält som visas i arbetslistan. Du kan till exempel minska antalet fält som visas så att användaren snabbare kan välja den lämpligaste arbetsuppgiften. På snabbfliken **Allmän** i fältet **Poster per sida** kan du också välja hur många arbetsposter per sida som ska visas. Om alternativet **Tillåt användare att filtrera arbete efter transaktionstyp** är markerat, kommer arbetslistan att inkludera en **Filtrera arbete**-kontroll i arbetsuppgiftslistan, som låter användaren filtrera per transaktionstyp. I arbetslistan kommer användaren endast att se arbete som de har behörighet till. Du måste kontrollera att användarna har behörighet för en eller flera användarriktade menykommandon som stöder de specifika arbetsklasstyperna som de ska ha åtkomst till. Behörigheter kontrolleras när en användare försöker utföra arbete i listan.|
 | Skapa överföringsorder från ID-nummer | Tillåter lagerarbetare att skapa och bearbeta överföringsorder direkt från mobilappen för distributionslagerhantering. Lagerarbetarna börjar med att välja destinationslager stället och kan sedan skanna en eller flera licensskyltar med hjälp av appen. När lagerarbetaren väljer **slutför order**, kommer ett batch-jobb att skapa de överföringsorder och orderrader som krävs baserat på den lagerbehållning som har registrerats för dessa registreringsskyltar. Mer information finns i [skapa överföringsorder från lagerställeapp](create-transfer-order-from-warehouse-app.md)
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Ställ in menyalternativ för att skapa arbete för en annan arbetare eller process
 
-Du kan ställa in en menykommando som skapar arbete för en annan anställd, efter en ursprunglig åtgärden har utförts på mobila enheten. När till exempel en arbetstagare använder en mobil enhet för att ta emotå en artikel, skapas inlagrat arbete för en annan arbetstagare. Om du vill ställa in ett menyalternativ som skapar arbete, välj sidan **Menyalternativ på mobil enhet** i fältet **Metod** och sedan **Arbete**. I följande register arrangeras alternativen i fältet **Process för att skapa arbete** efter arbetsordertyp.
+Du kan konfigurera en menykommando som skapar arbete för en annan anställd, efter en ursprunglig åtgärden har utförts på mobila enheten. När till exempel en arbetstagare använder en mobil enhet för att ta emotå en artikel, skapas inlagrat arbete för en annan arbetstagare. Om du vill konfigurera ett menyalternativ som skapar arbete, välj sidan **Menyalternativ på mobil enhet** i fältet **Metod** och sedan **Arbete**. I följande register arrangeras alternativen i fältet **Process för att skapa arbete** efter arbetsordertyp.
 
 <table>
 <tbody>
@@ -185,7 +185,7 @@ Du kan ställa in en menykommando som skapar arbete för en annan anställd, eft
 </tr>
 <tr>
 <td>Läs in registreringsskylt</td>
-<td>Använd det här alternativet när du ställer in ditt lagerställe för första gången. Skanna platser för alla ID-nummer på alla platser i lagerstället. Platserna måste vara registreringsskyltstyrda. Du kan inte använda det här alternativet, om <strong>Serienummer</strong> eller <strong>Batchnummer</strong> anges över <strong>Plats</strong> i lagerreservationshierarkin.</td>
+<td>Använd det här alternativet när du konfigurerar ditt lagerställe för första gången. Skanna platser för alla ID-nummer på alla platser i lagerstället. Platserna måste vara registreringsskyltstyrda. Du kan inte använda det här alternativet, om <strong>Serienummer</strong> eller <strong>Batchnummer</strong> anges över <strong>Plats</strong> i lagerreservationshierarkin.</td>
 </tr>
 <tr>
 <td rowspan="3">Rullande inventering</td>
@@ -204,7 +204,7 @@ Du kan ställa in en menykommando som skapar arbete för en annan anställd, eft
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Ställa in menyalternativ för att bearbeta befintligt arbete
-Förutom inställningar av menyalternativ som skapar lagerställearbete, kan du ställa in menyalternativ till processarbete som redan har skapats. Ställ in fältet **Metod** till **Arbete** och välj alternativet **Använd befintligt arbete**. Alla ytterligare alternativ blir sedan tillgängliga på fliken **Allmänt**. Du kan styra åtkomsten till menyalternativet genom att tilldela en eller flera arbetsklasser på snabbfliken **Arbetsklass** . Arbetsklasserna definierar det arbete som menyalternativet kan bearbeta. Arbetsklassen kan också användas för att bevilja åtkomst till specifika användarroller eller för separat bearbetning för andra typer av operationer. I följande tabell beskriver de alternativ som är tillgängliga. Alternativet kan väljas under fältet **Dirigerad av** på sidan **Menyalternativ på mobil enhet**. 
+Förutom inställningar av menyalternativ som skapar lagerställearbete, kan du konfigurera menyalternativ till processarbete som redan har skapats. Ställ in fältet **Metod** till **Arbete** och välj alternativet **Använd befintligt arbete**. Alla ytterligare alternativ blir sedan tillgängliga på fliken **Allmänt**. Du kan styra åtkomsten till menyalternativet genom att tilldela en eller flera arbetsklasser på snabbfliken **Arbetsklass** . Arbetsklasserna definierar det arbete som menyalternativet kan bearbeta. Arbetsklassen kan också användas för att bevilja åtkomst till specifika användarroller eller för separat bearbetning för andra typer av åtgärder. I följande tabell beskriver de alternativ som är tillgängliga. Alternativet kan väljas under fältet **Dirigerad av** på sidan **Menyalternativ på mobil enhet**. 
 
 <table>
 
@@ -224,7 +224,7 @@ Förutom inställningar av menyalternativ som skapar lagerställearbete, kan du 
 </tr>
 <tr class="even">
 <td>Systemstyrd</td>
-<td>Supply Chain Management kontrollerar den typ av arbete som har tilldelats en arbetare och i vilken ordning som personen utför arbetet. När du väljer det här alternativet kan du klicka på <strong>Systemstyrt arbete</strong> i åtgärdsfönstret för att öppna sidan <strong>Systemstyrd sorteringsordning</strong>, där du kan ställa in sorteringskriterier för resursen. Sorteringskriteriet kontrollerar den följd i vilken arbetaren utför arbetet. Du kan lägga till så många kriterier som du behöver.</td>
+<td>Supply Chain Management kontrollerar den typ av arbete som har tilldelats en arbetare och i vilken ordning som personen utför arbetet. När du väljer det här alternativet kan du klicka på <strong>Systemstyrt arbete</strong> i åtgärdsfönstret för att öppna sidan <strong>Systemstyrd sorteringsordning</strong>, där du kan konfigurera sorteringskriterier för resursen. Sorteringskriteriet kontrollerar den följd i vilken arbetaren utför arbetet. Du kan lägga till så många kriterier som du behöver.</td>
 </tr>
 <tr class="odd">
 <td>Användarstyrd</td>
@@ -289,7 +289,7 @@ I följande register beskrivs dessa alternativ.
 </tr>
 <tr class="even">
 <td>Förankring</td>
-<td>Markera det här alternativet om du låta arbetare ange en plats som åsidosätter den föreslagna platsen för mellanlagring eller lastning. Allt resterande inlagrat arbete dirigeras till den nya platsen. Detta alternativ är praktiskt när t.ex. en arbetstagare som måste inlagra artiklar för order 1 på en mellanlagringsplats efter docka 1, inte kan göra detta eftersom en tidigare last inte har rensats från platsen. I stället för att vänta på att mellanlagringplatsen Dock 1 blir tillgänglig, kan arbetaren välja att använda mellanlagringsplatsen för Dock 2. I det här fallet åsidosätter arbetaren den föreslagna mellanlagringsplatsen. Läggplatsen för alla återstående artiklar för arbetsordern uppdateras då till mellanlagringsplatsen Docka 2. Om du väljer det här alternativet måste du ställa in fältet <strong>Förankra efter</strong>.</td>
+<td>Markera det här alternativet om du låta arbetare ange en plats som åsidosätter den föreslagna platsen för mellanlagring eller lastning. Allt resterande inlagrat arbete dirigeras till den nya platsen. Detta alternativ är praktiskt när t.ex. en arbetstagare som måste inlagra artiklar för order 1 på en mellanlagringsplats efter docka 1, inte kan göra detta eftersom en tidigare last inte har rensats från platsen. I stället för att vänta på att mellanlagringplatsen Dock 1 blir tillgänglig, kan arbetaren välja att använda mellanlagringsplatsen för Dock 2. I det här fallet åsidosätter arbetaren den föreslagna mellanlagringsplatsen. Läggplatsen för alla återstående artiklar för arbetsordern uppdateras då till mellanlagringsplatsen Docka 2. Om du väljer det här alternativet måste du konfigurera fältet <strong>Förankra efter</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Förankra efter</td>
@@ -297,7 +297,7 @@ I följande register beskrivs dessa alternativ.
 </tr>
 <tr class="even">
 <td>ID för granskningsmall</td>
-<td>Välj den arbetsgranskningsmall som ska avbryta arbetsprocessen för det här menyalternativet så att en annan operation kan utföras. Om till exempel det här menykommandot är för inkommande arbete kan granskningsmallen kräva att arbetstagaren kontrollerar temperaturen i leveransbehållaren. Den punkt där processen avbryts anges på revisionsmallen. Denna punkt kan till exempel vara när arbetet har påbörjats eller avslutats, eller när dess status ändras.</td>
+<td>Välj den arbetsgranskningsmall som ska avbryta arbetsprocessen för det här menyalternativet så att en annan åtgärd kan utföras. Om till exempel det här menykommandot är för inkommande arbete kan granskningsmallen kräva att arbetstagaren kontrollerar temperaturen i leveransbehållaren. Den punkt där processen avbryts anges på revisionsmallen. Denna punkt kan till exempel vara när arbetet har påbörjats eller avslutats, eller när dess status ändras.</td>
 </tr>
 <tr class="odd">
 <td>ID för klusterprofil</td>
@@ -408,7 +408,7 @@ I följande register beskrivs dessa alternativ.
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Begär att arbetare ska bekräfta produkten, platsen eller kvantiteten när de plockar artiklar
 
-Du kan ställa in arbetsbekräftelser som kräver en arbetare att använda en mobil enhet för att registrera platsen eller kvantitet, när han eller hon utför arbete på lagerstället. Arbetsbekräftelser hjälper till att garantera att arbetaren är på rätt plats eller hanterar rätt kvantitet av artiklar. Du kan också aktivera Supply Chain Management du automatiskt vill bekräfta arbetarens registrering. Om du aktiverar automatisk bekräftelse, kan du inte också kräva bekräftelser för plats och kvantitet. Arbetsbekräftelser innehåller också produkter och produktvarianter. Du kan registrera bekräftelser genom att skanna en streckkod. Om du bekräfta produkter och produktvarianter måste du ange ett ID för produkten eller produktvarianten. Detta ID kan vara ett produkt-ID, ett produktsöknings-ID, ett externt ID, en GTIN eller en streckkod. När du har angett ID eller skannat streckkoden visas dimensionerna för produktvarianten i den mobila enheten. 
+Du kan konfigurera arbetsbekräftelser som kräver en arbetare att använda en mobil enhet för att registrera platsen eller kvantitet, när han eller hon utför arbete på lagerstället. Arbetsbekräftelser hjälper till att garantera att arbetaren är på rätt plats eller hanterar rätt kvantitet av artiklar. Du kan också aktivera Supply Chain Management du automatiskt vill bekräfta arbetarens registrering. Om du aktiverar automatisk bekräftelse, kan du inte också kräva bekräftelser för plats och kvantitet. Arbetsbekräftelser innehåller också produkter och produktvarianter. Du kan registrera bekräftelser genom att skanna en streckkod. Om du bekräfta produkter och produktvarianter måste du ange ett ID för produkten eller produktvarianten. Detta ID kan vara ett produkt-ID, ett produktsöknings-ID, ett externt ID, en GTIN eller en streckkod. När du har angett ID eller skannat streckkoden visas dimensionerna för produktvarianten i den mobila enheten. 
 
 I tabellen nedan beskrivs de olika arbetstyperna som du kan använda arbetsbekräftelser med.
 

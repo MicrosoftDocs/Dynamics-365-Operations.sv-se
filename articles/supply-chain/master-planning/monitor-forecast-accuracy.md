@@ -1,6 +1,6 @@
 ---
-title: Övervaka prognosens exakthet
-description: Detta avsnitt beskriver de typer av prognosprecision som Dynamics 365 Supply Chain Management beräknar, och förklarar hur du kan visa spridningsvärden.
+title: Övervaka prognosprecision
+description: Denna artikel beskriver de typer av prognosprecision som Dynamics 365 Supply Chain Management beräknar, och förklarar hur du kan visa spridningsvärden.
 author: t-benebo
 ms.date: 01/07/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14d23ae800240ebb10ae085acf3ed981a22f1574
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: ebde5ab90b9345b3d6f28ea98650b3b29021c304
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470301"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893364"
 ---
-# <a name="monitor-forecast-accuracy"></a>Övervaka prognosens exakthet
+# <a name="monitor-forecast-accuracy"></a>Övervaka prognosprecision
 
 [!include [banner](../includes/banner.md)]
 
-Detta avsnitt beskriver de typer av prognosprecision som Microsoft Dynamics 365 Supply Chain Management beräknar, och förklarar hur du kan visa spridningsvärden.
+Denna artikel beskriver de typer av prognosprecision som Microsoft Dynamics 365 Supply Chain Management beräknar, och förklarar hur du kan visa spridningsvärden.
 
 Supply Chain Management beräknar följande typer av prognosprecision:
 

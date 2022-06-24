@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 559f4571a60ea8ec048b291e3b6a0a93e8bc9d44
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: cf28619e66fa5d3e86bdbb3838dc7f711916bcec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677714"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905614"
 ---
 # <a name="develop-and-establish-service-agreements-overview"></a>Ta fram och upprätta avtal – översikt
 
@@ -72,7 +72,7 @@ Varje serviceavtalsrad beskriver i detalj vad som ingår i det föreslagna servi
 -  Information om huruvida en rad har stoppats. Om en rad har stoppats går det inte att skapa serviceorder för raden.
 -  Projektinställningar, t.ex. kategori och radegenskaper.
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Skapa serviceavtal](create-service-agreements.md)
 

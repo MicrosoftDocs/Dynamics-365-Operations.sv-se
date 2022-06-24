@@ -1,6 +1,6 @@
 ---
 title: Skapa arbetsorder från underhållsbegäran
-description: I det här avsnittet beskrivs hur du skapar en arbetsorder från en underhållsbegäran i tillgångshantering.
+description: I denna artikel beskrivs hur du skapar en arbetsorder från en underhållsbegäran i Tillgångshantering.
 author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1c69ad91e931475dd4c8e5a126190e867bd193f881ad58525c1d2ac8997c972a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0c73f019951460dc7cb6395d616a0f0a22fd0b91
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726931"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909713"
 ---
 # <a name="create-work-orders-from-maintenance-requests"></a>Skapa arbetsorder från underhållsbegäran
 
@@ -29,12 +29,12 @@ ms.locfileid: "6726931"
  
 
 
-När du har skapat underhållsbegäran kan du enkelt konvertera dem till arbetsorder. I det här avsnittet beskrivs det snabbaste sättet att arbeta med underhållsbegäran, uppdatera flera underhållsbegäran samtidigt och sedan skapa en arbetsorder för flera underhållsbegäran samtidigt. På sidan **aktiva underhållsbegäran** eller **underhållsbegäran för min funktionella plats** kan du också arbeta med en underhållsbegäran i taget och konvertera en underhållsbegäran till en arbetsorder.
+När du har skapat underhållsbegäran kan du enkelt konvertera dem till arbetsorder. I denna artikel beskrivs det snabbaste sättet att arbeta med underhållsbegäran, uppdatera flera underhållsbegäran samtidigt och sedan skapa en arbetsorder för flera underhållsbegäran samtidigt. På sidan **aktiva underhållsbegäran** eller **underhållsbegäran för min funktionella plats** kan du också arbeta med en underhållsbegäran i taget och konvertera en underhållsbegäran till en arbetsorder.
 
 > [!NOTE]
 > Varje underhållsbegäran kan endast relateras till en arbetsorder. Flera underhållsbegäran kan dock inkluderas i en arbetsorder, även om underhållsbegäran har olika tillgångar.
 
-1. Välj **tillgångshantering** \> **allmänt** \> **underhållbegäran** \> **alla underhållbegäran**.
+1. Välj **Tillgångshantering** \> **allmänt** \> **underhållbegäran** \> **alla underhållbegäran**.
 2. Innan du kan skapa en arbetsorder från underhållbegäran måste du minst välja en underhållsjobbtyp för underhållbegäran och även en underhålljobbtypvariant och handel, om den här informationen är relevant. I rutnätsvyn kan du enkelt uppdatera information för en underhållsbegäran.
 3. När du är redo att skapa en arbetsorder väljer du de underhållbegäran som ska inkluderas i den.
 
@@ -48,7 +48,7 @@ När du har skapat underhållsbegäran kan du enkelt konvertera dem till arbetso
 
     När du skapar en arbetsorder som baseras på en underhållbegäran, om tillgången som är relaterad till underhållbegäran ingår i ett garantiavtal, meddelar dessutom ett meddelandefält dig om garantiavtalet.
 
-6. Välj **tillgångshantering** \> **allmänt** \> **arbetsorder** \> **alla arbetsorder** och öppna den nya arbetsordern.
+6. Välj **Tillgångshantering** \> **allmänt** \> **arbetsorder** \> **alla arbetsorder** och öppna den nya arbetsordern.
 
     ![Öppna ny arbetsorder.](media/05-manage-maintenance-requests.png)
 

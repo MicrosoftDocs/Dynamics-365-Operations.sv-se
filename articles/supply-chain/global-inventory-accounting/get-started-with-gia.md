@@ -1,6 +1,6 @@
 ---
 title: Kom i gång med Global lagerredovisning
-description: I det här avsnittet beskrivs hur du kommer igång med global lagerredovisningen.
+description: I denna artikel beskrivs hur du kommer igång med global lagerredovisning.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 17d4816fc5fcad0b0665640a8347b1f4ea032dd7
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 493e0be8ab56abc2a3253876107b7f4fefabf4ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679455"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891101"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Kom i gång med Global lagerredovisning
 
@@ -38,12 +38,18 @@ Global lagerredovisning är ett tillägg. För att göra funktionerna tillgängl
 
 Global lagerredovisning har för närvarande inte stöd för alla kostnadshanteringsfunktioner som är inbyggda i Supply Chain Management. Därför är det viktigt att du utvärderar om den tillgängliga funktionsuppsättningen ska uppfylla dina krav.
 
-## <a name="how-to-get-the-global-inventory-accounting-public-preview"></a><a name="sign-up"></a>Så här hämtar du offentlig förhandsgranskning av global lagerredovisning
+## <a name="how-to-get-the-global-inventory-accounting-add-in"></a><a name="sign-up"></a>Så här hämtar du tillägget för global lagerredovisning
 
 > [!IMPORTANT]
 > Om du vill använda global lagerredovisning måste du ha en LCS-aktiverad miljö med hög tillgänglighet (inte en OneBox-miljö). Du måste dessutom köra Supply Chain Management version 10.0.19 eller senare.
 
-Om du vill registrera dig för offentlig förhandsgranskning av global lagerredovisning skickar du ditt LCS-miljö-ID med e-post till [Global lagerredovisning teamet](mailto:GlobalInvAccount@microsoft.com). När du har godkänts för programmet skickar teamet ett uppföljningsmeddelande med en nyckel för Global lagerredovisning och dina tjänsteslutpunkter. När du har fått nyckeln kan du [installera tillägget](#install).
+### <a name="supply-chain-management-version-10019-to-10026"></a>Supply Chain Management version 10.0.19 till 10.0.26
+
+Om du vill installera Global Lagerredovisning för Supply Chain Management version 10.0.19 till 10.0.26 ska du börja med att [installera tillägget](#install). Skicka sedan ditt LCS-miljö-ID och ditt företagsnamn via e-post till [teamet för global lagerredovisning](mailto:GlobalInvAccount@microsoft.com). Teamet kommer att skicka ett uppföljningsmeddelande till dig via e-post som innehåller dina tjänsteslutpunkter för Global lagerredovisning.
+
+### <a name="supply-chain-management-version-10027-and-later"></a>Supply Chain Management version 10.0.27 eller senare
+
+Om du vill installera Global Lagerredovisning för Supply Chain Management version 10.0.27 eller senare behöver du bara [installera tillägget](#install). För dessa versioner av Supply Chain Management kommer slutpunkterna för den globala lagerredovisningstjänsten att ställas in automatiskt, så du behöver inte hitta dem manuellt. Om du upplever problem när du konfigurerar tillägget kan du kontakta det [globala lagerredovisningsteamet](mailto:GlobalInvAccount@microsoft.com).
 
 ## <a name="licensing"></a>Licensiering
 
@@ -59,13 +65,13 @@ Innan du kan aktivera tilläggsfunktionen måste du integrera Microsoft Power Pl
 1. Gå till **Fullständiga detaljer**.
 1. I avsnittet **Power Platform-integrering** väljer du **Konfigurera**.
 1. Markera kryssrutan i dialogrutan **Inställning av Power platform miljö** och välj sedan **Inställningar**. Normalt tar inställningen mellan 60 och 90 minuter.
-1. När inställningen av Microsoft Power Platform miljön är klar, visar sidan namnet på din miljö. Dessutom visar avsnittet **Power Platform-integration** visar instruktionen, "Power Platform miljöinställningen är klar." Global lagerredovisning behöver inte ha något program för global lagerredovisning.
+1. När inställningen av Microsoft Power Platform miljön är klar, visar sidan namnet på din miljö. Dessutom visar avsnittet **Power Platform-integrering** visar instruktionen, "Power Platform miljöinställningen är klar." Global lagerredovisning behöver inte ha något program för global lagerredovisning.
 
 Mer information finns i [Aktivera efter utveckling av miljön](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
 ### <a name="set-up-dataverse"></a>Ställ in Dataverse
 
-Innan du ställer in Dataverse lägger du till serviceprinciperna för global lagerredovisning till din innehavare genom att följa stegen nedan.
+Innan du konfigurerar Dataverse lägger du till serviceprinciperna för global lagerredovisning till din innehavare genom att följa stegen nedan.
 
 1. Installera Azure AD-modul för Windows PowerShell v2 enligt beskrivningen i [Installera Azure Active Directory PowerShell för Graph](/powershell/azure/active-directory/install-adv2).
 1. Kör följande PowerShell-kommando.
@@ -84,7 +90,7 @@ Skapa sedan programanvändare för Global lagerredovisning i Dataverse genom att
 1. Gå till **Avancerade inställningar \> System \> Säkerhet \> Användare** och skapa en programanvändare. Använd fältet **Vy** för att ändra sidvisningen till *appanvändare*.
 1. Välj **Ny**.
 1. Ange fältet **App-ID** till *7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9*.
-1. Välj **Tilldela roll** och välj sedan *Systemadministratör*. Om det finns en roll med namnet *Common Data Service Användare* väljer du den också.
+1. Välj **Tilldela roll** och välj sedan *Systemadministratör*. Om det finns en roll med namnet *Common Data Service-användare* väljer du den också.
 1. Upprepa föregående steg, men ställ in fältet **Program-ID** på *5f58fc56-0202-49a8-ac9e-0946b049718b*.
 
 Mer information finns i [Skapa en appanvändare](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
@@ -98,15 +104,10 @@ Om standardspråket i installationen Dataverse inte är engelska följer du dess
 
 Följ dessa steg för att installera tillägget så att du kan använda global lagerredovisning.
 
-1. [Logga in](#sign-up) för offentlig förhandsgranskning av global lagerredovisning.
 1. Logga in på [LCS](https://lcs.dynamics.com/Logon/Index).
-1. Gå till **Hantering av förhandsgranskningsfunktioner**.
-1. Välj plustecknet (**+**).
-1. I fältet **kod** anger du betanyckeln för tillägget för Global lagerredovisning. (Du bör ha fått nyckeln via e-post när du har registrerat dig.)
-1. Välj **Avblockera**.
 1. Öppna LCS-miljön där du vill lägga till tjänsten.
 1. Gå till **Fullständiga detaljer**.
-1. Gå till **Power Platform-integration** och välj **Inställningar**.
+1. Gå till **Power Platform-integrering** och välj **Inställningar**.
 1. Markera kryssrutan i dialogrutan **Inställning av Power platform miljö** och välj sedan **Inställningar**. Normalt tar inställningen mellan 60 och 90 minuter.
 1. När inställningen av Microsoft Power Platform-miljön är klar väljer du på snabbfliken **Miljötillägg** välj **Installera ett nytt tillägg**.
 1. Välj **Global lagerredovisning**.
@@ -123,7 +124,9 @@ Följ anvisningarna nedan och ställ in integreringen mellan Global Lagerredovis
 1. Välj **Sök efter uppdateringar**.
 1. På fliken **Alla** söker du efter den funktion som kallas *(Förhandsversion) Global lagerredovisning*.
 1. Välj **Aktivera nu**.
-1. Gå till **Global lagerredovisning \> Inställningar \> Parametrar för global lagerredovisning \> Integrationsparametrar**.
-1. I fälten **Datatjänstslutpunkt** och **Slutpunkt för global lagerredovisning** ange webbadresserna från det e-postmeddelande som Global lagerredovisning-teamet skickade när du registrerade dig för förhandsgranskningen.
+1. Gå till **Global lagerredovisning \> Inställningar \> Parametrar för global lagerredovisning \> Integreringsparametrar**.
+1. Beroende på vilken version av Supply Chain Management du kör ska du utföra ett av följande steg:
+    - **Supply Chain Management version 10.0.19 till 10.0.26**: I fälten **Slutpunkt för datatjänst** och **Slutpunkt för global lagerredovisning** anger du de URL:er som tidigare skickades till dig via e-post från teamet för global lagerredovisning (se också [Så här skaffar du tillägget för global lagerredovisning](#sign-up)).
+    - **Supply Chain Management version 10.0.27 och senare**: Du behöver inte ange slutpunkterna, så du kan hoppa över detta steg.
 
 Global lagerredovisning är nu klar att användas.

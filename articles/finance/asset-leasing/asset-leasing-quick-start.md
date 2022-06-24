@@ -1,6 +1,6 @@
 ---
 title: Kom i gång med tillgångsleasing
-description: I det här avsnittet beskrivs funktionen tillgångsleasing och visar information för dessa lån genom att följa stegen för att skapa ett tillgångsleasing.
+description: I den här artikeln beskrivs funktionen tillgångsleasing och visar information för dessa lån genom att följa stegen för att skapa ett tillgångsleasing.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 991685f50a00e60026331bf573561be904c7f9ab
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: df4343031b3b116318f798f31adb4d1f6bed1db9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710341"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895150"
 ---
 # <a name="asset-leasing-get-started"></a>Kom i gång med tillgångsleasing
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs funktionen tillgångsleasing och visar information för dessa lån genom att följa stegen för att skapa ett tillgångsleasing. Avsnittet definierar också vilken terminologi som används i användargränssnittet och i dokumentationen. Leasing av tillgångar är en avancerad funktion för hantering, spårning och automatisering av finansiella transaktioner för leasade tillgångar i Microsoft Dynamics 365 Finance. Leasing av tillgångar uppfyller IAS (IFRS 16) och US GAAP standard (ASC 842). Leasing av tillgångar samlar in och bearbetar information om leasing och genererar journalposter för leasingens livscykel från första redovisningstillfället, månatliga journalposter, till nedskrivningar och uppsägningar av leasingavtalet. Leasing av tillgångar integreras sömlöst med andra komponenter i Dynamics 365 Finance, inklusive anläggningstillgångar, leverantörsreskontra och redovisning.
+I den här artikeln beskrivs funktionen tillgångsleasing och visar information för dessa lån genom att följa stegen för att skapa ett tillgångsleasing. Avsnittet definierar också vilken terminologi som används i användargränssnittet och i dokumentationen. Leasing av tillgångar är en avancerad funktion för hantering, spårning och automatisering av finansiella transaktioner för leasade tillgångar i Microsoft Dynamics 365 Finance. Leasing av tillgångar uppfyller IAS (IFRS 16) och US GAAP standard (ASC 842). Leasing av tillgångar samlar in och bearbetar information om leasing och genererar journalposter för leasingens livscykel från första redovisningstillfället, månatliga journalposter, till nedskrivningar och uppsägningar av leasingavtalet. Leasing av tillgångar integreras sömlöst med andra komponenter i Dynamics 365 Finance, inklusive anläggningstillgångar, leverantörsreskontra och redovisning.
 
 Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda arbetsytan **funktionshantering** för att kontrollera funktionens status och aktivera den om det behövs. I arbetsytan **Funktionshantering** väljer du funktionen kallad **Tillgångsleasing** innan du klickar på knappen **Aktivera nu**.
 

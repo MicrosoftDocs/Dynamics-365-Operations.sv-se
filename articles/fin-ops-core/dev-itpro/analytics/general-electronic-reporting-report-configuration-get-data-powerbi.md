@@ -1,6 +1,6 @@
 ---
 title: Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI
-description: I det här avsnittet beskrivs hur du kan använda konfigurationen för Elektronisk rapportering (ER) om du vill ordna överföringen av data från till Power BI-tjänster.
+description: I den här artikeln beskrivs hur du kan använda konfigurationen för Elektronisk rapportering (ER) om du vill ordna överföringen av data från till Power BI-tjänster.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aa9a47c9ee7c76322fd2d9bfcf5fc61a50bf421321891b3c78a782be6a9f8e6a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6903513dec4da20dbc4463fbae6a406fc06e1a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740952"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896746"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du kan använda konfigurationen för Elektronisk rapportering (ER) om du vill ordna överföringen av data från till Power BI-tjänster. Som exempel använder det här avsnittet Intrastat-transaktioner som affärsdata som ska överföras. Power BI-kartvisualiseringen använder dessa Intrastat-transaktionsdata för att presentera en vy för analys av företagsimport-/exportaktiviteter på Power BI-rapporten.
+I den här artikeln beskrivs hur du kan använda konfigurationen för Elektronisk rapportering (ER) om du vill ordna överföringen av data från till Power BI-tjänster. Som exempel använder den här artikeln Intrastat-transaktioner som affärsdata som ska överföras. Power BI-kartvisualiseringen använder dessa Intrastat-transaktionsdata för att presentera en vy för analys av företagsimport-/exportaktiviteter på Power BI-rapporten.
 
 ## <a name="overview"></a>Översikt
 
-Microsoft Power BI är en samling programtjänster, appar och kopplingar som samverkar för att omvandla externa källor av data till sammanhängande, visuellt integrerande och interaktiva resultat. Elektronisk rapportering (ER) låter användare av enkelt konfigurera datakällor och arrangera överföring från data från appen till Power BI. Data överförs som filer i formatet OpenXML-kalkylbladet (Microsoft Excel arbetsboksfilen). De överförda filerna lagras i en Microsoft SharePoint Server som har konfigurerats för det syftet. De lagrade filerna används i Power BI för att göra rapporter som inkluderar visualiseringar (tabeller, diagram, kartor, etc). Power BI-rapporter delas med Power BI-användare och de finns i Power BI-instrumentpaneler och på appsidorna. Det här avsnittet förklarar följande uppgifter:
+Microsoft Power BI är en samling programtjänster, appar och kopplingar som samverkar för att omvandla externa källor av data till sammanhängande, visuellt integrerande och interaktiva resultat. Elektronisk rapportering (ER) låter användare av enkelt konfigurera datakällor och arrangera överföring från data från appen till Power BI. Data överförs som filer i formatet OpenXML-kalkylbladet (Microsoft Excel arbetsboksfilen). De överförda filerna lagras i en Microsoft SharePoint Server som har konfigurerats för det syftet. De lagrade filerna används i Power BI för att göra rapporter som inkluderar visualiseringar (tabeller, diagram, kartor, etc). Power BI-rapporter delas med Power BI-användare och de finns i Power BI-instrumentpaneler och på appsidorna. Den här artikeln förklarar följande uppgifter:
 
 - Konfigurera Microsoft Dynamics 365 Finance.
 - Förbered din ER-formatkonfiguration för att hämta data från Finance-appen.
@@ -38,7 +38,7 @@ Microsoft Power BI är en samling programtjänster, appar och kopplingar som sam
 - Gör Power BI-rapporten tillgänglig i Finance.
 
 ## <a name="prerequisites"></a>Förutsättningar
-För att slutföra exemplet i det här avsnittet måste du ha följande åtkomst:
+För att slutföra exemplet i den här artikeln måste du ha följande åtkomst:
 
 - Tillgång för en av följande roller:
 

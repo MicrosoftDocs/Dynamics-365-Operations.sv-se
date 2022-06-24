@@ -1,6 +1,6 @@
 ---
-title: Borttagna och utfasade funktioner i Dynamics 365 Commerce
-description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 Commerce.
+title: Borttagna eller inaktuella funktioner i Dynamics 365 Commerce
+description: I denna artikel beskrivs funktioner som har tagits bort eller har planerats för borttagning från Dynamics 365 Commerce.
 author: josaw
 ms.date: 04/27/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 213ed2091b1f2359f2481b162cba07812b3ffe90
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 2725ff2b8bfbaadbca1bc070e32cee7c5d2754be
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649085"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910534"
 ---
-# <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Borttagna och utfasade funktioner i Dynamics 365 Commerce
+# <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Borttagna eller inaktuella funktioner i Dynamics 365 Commerce
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 Commerce.
+I denna artikel beskrivs funktioner som har tagits bort eller har planerats för borttagning från Dynamics 365 Commerce.
 
 - En *borttagen* funktion är inte längre tillgänglig i produkten.
 - En *borttagen* funktion är inte i aktiv utveckling och kan tas bort i en kommande uppdatering.
@@ -41,7 +41,7 @@ Programmet Modern Point of Sale (MPOS) gamla i versionen av Commerce version 10.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Butiksappar är det som gör att det inte går att använda något Dynamics 365 Commerce flerkanalserbjudande. Vi arbetar kontinuerligt med att tillhandahålla moderna och förnyade butikserfarenheter, och för att ytterligare förnya vår lösning, rullar vi ut nya uppsättningar med ändringar som kommer att förbättra IT-operationerna och användarerfarenheterna med våra befintliga program för butik i Windows. Det nya programmet Store Commerce är en teknologiuppgradering av det befintliga MPOS. Den ger förbättrad prestanda, tillförlitlighet och långsiktig support för Windows-plattform, och eliminerar behovet av att packa om programmet vid varje uppdatering. |
+| **Orsak till inaktuell/borttagning** | Butiksappar är det som gör att det inte går att använda något Dynamics 365 Commerce flerkanalserbjudande. Vi arbetar kontinuerligt med att tillhandahålla moderna och förnyade butikserfarenheter, och för att ytterligare förnya vår lösning, rullar vi ut nya uppsättningar med ändringar som kommer att förbättra IT-åtgärderna och användarerfarenheterna med våra befintliga program för butik i Windows. Det nya programmet Store Commerce är en teknologiuppgradering av det befintliga MPOS. Den ger förbättrad prestanda, tillförlitlighet och långsiktig support för Windows-plattform, och eliminerar behovet av att packa om programmet vid varje uppdatering. |
 | **Ersatt av en annan funktion?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
 | **Produktområden som påverkas**         | Modern Point of Sale |
 | **Distribueringsalternativ**              | Allt |

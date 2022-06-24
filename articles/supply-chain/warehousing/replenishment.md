@@ -1,6 +1,6 @@
 ---
 title: Lagerpåfyllnad – översikt
-description: Detta avsnitt beskriver de påfyllnadsstrategier som erbjuds för lager som använder funktionerna i lagerhanteringen.
+description: Denna artikel beskriver de lagerpåfyllnadsstrategier som erbjuds för lager som använder funktionerna i Warehouse management.
 author: Mirzaab
 ms.date: 02/19/2020
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7681294c1c05f1ca93330c948fc454b6460cb41c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 3dceb8e6300d19eb9253e88debbaaef0b6987420
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985794"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893103"
 ---
 # <a name="replenishment-overview"></a>Lagerpåfyllnad – översikt
 
 [!include [banner](../includes/banner.md)]
 
-Detta avsnitt beskriver de påfyllnadsstrategier som erbjuds för lager som använder funktionerna i lagerhanteringen. Informationen i detta avsnitt gäller ej den lagerlösning som erbjuds i lagerhanteringen.
+Denna artikel beskriver de lagerpåfyllnadsstrategier som erbjuds för lager som använder funktionerna i Warehouse management. Informationen i denna artikel gäller ej den lagerlösning som erbjuds i lagerhanteringen.
 
 Det finns följande strategier för lagerpåfyllnad:
 
@@ -61,7 +61,7 @@ Minimi- och maximinivåerna ställs in i en lagerpåfyllnadsmall. Många av de a
 Observera att strategin Minsta/största lagerpåfyllnad inte kan fylla på en tom plats om inte platsen är markerad som fast lagerplats för artikeln. Om platsen som måste fyllas på inte är fast, kan systemet inte avgöra vilken vara som ska fyllas på. Därför krävs åtminstone en viss lagerbehållning innan lagerpåfyllnad utförs.
 
 ## <a name="load-demand-replenishment"></a>Lagerpåfyllnad för lastefterfrågan
-Lagerpåfyllnad för lastefterfrågan summerar behovet av flera laster och skapar de lagerpåfyllnadsarbeten som krävs för att fylla på relevanta plockplatser. Lagerpåfyllnad för lastefterfrågan liknar Lagerpåfyllnad baserad på efterfrågan på många sätt. Den största skillnaden är hur och när Lagerpåfyllnad för lastefterfrågan och Lagerpåfyllnad baserad på efterfrågan körs. I likhet med Minsta/största lagerpåfyllnad körs Lagerpåfyllnad för lastefterfrågan med hjälp av ett batchjobb. Om du vill ställa in batchjobbet på sidan **Lagerpåfyllnad för lastefterfrågan**, välj vilken lagerpåfyllnadsmall som ska användas och markera en filterfråga för att ange vilka laster som ska användas för att fastställa behovet. Platsfrågan definierar de platser som tillgänglig kvantitet kommer att dras av ifrån för att tillgodose det sammanlagda behovet av laster.
+Lagerpåfyllnad för lastefterfrågan summerar behovet av flera laster och skapar de lagerpåfyllnadsarbeten som krävs för att fylla på relevanta plockplatser. Lagerpåfyllnad för lastefterfrågan liknar Lagerpåfyllnad baserad på efterfrågan på många sätt. Den största skillnaden är hur och när Lagerpåfyllnad för lastefterfrågan och Lagerpåfyllnad baserad på efterfrågan körs. I likhet med Minsta/största lagerpåfyllnad körs Lagerpåfyllnad för lastefterfrågan med hjälp av ett batchjobb. Om du vill konfigurera batchjobbet på sidan **Lagerpåfyllnad för lastefterfrågan**, välj vilken lagerpåfyllnadsmall som ska användas och markera en filterfråga för att ange vilka laster som ska användas för att fastställa behovet. Platsfrågan definierar de platser som tillgänglig kvantitet kommer att dras av ifrån för att tillgodose det sammanlagda behovet av laster.
 
 ## <a name="immediate-replenishment"></a>Omedelbar påfyllnad
 Du kan applicera en omedelbar påfyllnadsstrategi istället för att behöva sammanställa behovet i slutet av en allokeringsprocess och sedan fylla på baserat på den sammanställda kvantiteten. När du använder denna teknik kan lagret fyllas på omedelbart efter det att en direktivrad för plats misslyckas. Du kan därför konfigurera påfyllnaden som att den begränsas av specifika enheter, samt på så sätt att den använder kvantiteter angivna för specifika platser.

@@ -1,6 +1,6 @@
 ---
-title: Planera för att ställa in den globala adressboken och andra adressböcker
-description: Det här avsnittet ger en beskrivning av övervägandena och besluten som måste fattas under planeringsprocessen.
+title: Planera för den globala adressboken och andra adressböcker
+description: Den här artikeln ger en beskrivning av övervägandena och besluten som måste fattas under planeringsprocessen.
 author: msftbrking
 ms.date: 01/13/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87b3f6a74c217b0cc7cec784ca6a964ab2caae0c7e9438aee2cc82987a508d63
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 288c96d8c877f5e3b3101080294b2f6cdeb39882
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771906"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863171"
 ---
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>Planera för den globala adressboken och andra adressböcker
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en beskrivning av övervägandena och besluten som måste fattas under planeringsprocessen innan du konfigurerar den globala adressboken och alla ytterligare adressböcker. Vissa av besluten kräver att du bekräftar besluten som har fattats för andra produktområden såsom organisationshierarkin.
+Den här artikeln innehåller en beskrivning av övervägandena och besluten som måste fattas under planeringsprocessen innan du konfigurerar den globala adressboken och alla ytterligare adressböcker. Vissa av besluten kräver att du bekräftar besluten som har fattats för andra produktområden såsom organisationshierarkin.
 
 ## <a name="global-address-book"></a>Global adressbok
 

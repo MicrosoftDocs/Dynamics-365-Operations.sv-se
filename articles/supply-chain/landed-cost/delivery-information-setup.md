@@ -1,6 +1,6 @@
 ---
 title: Inställningar för leveransinformation
-description: I det här avsnittet beskrivs hur du ställer in leveransinformation för modulen hemtagningskostnad.
+description: I denna artikel beskrivs hur du konfigurerar leveransinformation för modulen hemtagningskostnad.
 author: Weijiesa
 ms.date: 12/09/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a0b510e4f58ca1cfec940093d118618693c68d38
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5bf9c700ecd327ab3b3948f38dc60e24efbda94c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694695"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895624"
 ---
 # <a name="delivery-information-setup"></a>Inställningar för leveransinformation
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in leveransinformation för modulen **hemtagningskostnad**.
+I denna artikel beskrivs hur du konfigurerar leveransinformation för modulen **Hemtagningskostnad**.
 
 ## <a name="shipping-ports"></a>Leveranshamnar
 
@@ -39,7 +39,7 @@ För att arbeta med leveransportar, gå till **Hemtagningskostnad \> Inställnin
 
 ## <a name="tracking-control-center"></a><a name="tracking-control-center"></a>Center för spårningskontroll
 
-Du använder spårningskontrollcentret när du vill ställa in ledtider, statusuppdateringar och flöde för information som är kopplad till en transportbehållare när leveransbehållarena flyttas från en del till nästa. När du skapar en spårningskontrollpost är den associerad med en specifik sträcka för en resa på en färd. När en färd uppdateras, uppdateras den associerade posten och fylls i enligt definitionen. Du kan uppdatera spårningsinformation för enskilda användare från sidan **Alla färder**.
+Du använder spårningskontrollcentret när du vill konfigurera ledtider, statusuppdateringar och flöde för information som är kopplad till en transportbehållare när leveransbehållarena flyttas från en del till nästa. När du skapar en spårningskontrollpost är den associerad med en specifik sträcka för en resa på en färd. När en färd uppdateras, uppdateras den associerade posten och fylls i enligt definitionen. Du kan uppdatera spårningsinformation för enskilda användare från sidan **Alla färder**.
 
 Du öppnar spårningskontrollcentret genom att gå till **Hemtagningskostnad \> Informationsinställningarna för leverans \> Spårningskontrollcenter**.
 
@@ -70,12 +70,12 @@ Lägg till en ledtidsregel i spårningskontrollcentret genom att följa dessa st
 
 1. Gör något av följande:
 
-    - Gå till **Hemtagningskostnad \> Inställning av resa med flera sträckor \> Sträckor**. Välj det ben du vill ställa in ledtider för och välj sedan i åtgärdsfönstret **Spårningskontrollcenter**. Spårningskontrollcentret förinlästs med information om valt del.
+    - Gå till **Hemtagningskostnad \> Inställning av resa med flera sträckor \> Sträckor**. Välj det ben du vill konfigurera ledtider för och välj sedan i åtgärdsfönstret **Spårningskontrollcenter**. Spårningskontrollcentret förinlästs med information om valt del.
     - Gå till **Hemtagningskostnad \> Inställning av leveransinformation \> Spårningskontrollcenter**. Du måste sedan välja en sträcka manuellt i steg 4 i den här proceduren.
 
 1. I listfönstret, ange fältet **Skapa typ** till *Ledtid*.
 1. Klicka på **Ny** i åtgärdsfönstret.
-1. Om du har startat från spårningskontrollcentret i steg 1 ska du ställa in fältet **Sträcka** till delen som du vill skapa en ledtidsregel för. Om du har startat från sidan **Sträckor** är fältet **Sträcka** förinställt på den sträcka du valde innan du öppnade spårningskontrollcentret.
+1. Om du har startat från spårningskontrollcentret i steg 1 ska du konfigurera fältet **Sträcka** till delen som du vill skapa en ledtidsregel för. Om du har startat från sidan **Sträckor** är fältet **Sträcka** förinställt på den sträcka du valde innan du öppnade spårningskontrollcentret.
 
     Baserat på värdet i fältet **Sträcka** anges flera fält automatiskt, som visas här:
 
@@ -99,12 +99,12 @@ Lägg till en regel för statusuppdatering i spårningskontrollcentret genom att
 
 1. Gör något av följande:
 
-    - Gå till **Hemtagningskostnad \> Inställning av resa med flera sträckor \> Sträckor**. Välj den sträcka du vill ställa in statusuppdatering för och välj sedan i åtgärdsfönstret **Spårningskontrollcenter**. Spårningskontrollcentret förinlästs med information om valt del.
+    - Gå till **Hemtagningskostnad \> Inställning av resa med flera sträckor \> Sträckor**. Välj den sträcka du vill konfigurera statusuppdatering för och välj sedan i åtgärdsfönstret **Spårningskontrollcenter**. Spårningskontrollcentret förinlästs med information om valt del.
     - Gå till **Hemtagningskostnad \> Inställning av leveransinformation \> Spårningskontrollcenter**. Du måste sedan välja en sträcka manuellt i steg 4 i den här proceduren.
 
 1. I listfönstret, ange fältet **Skapa typ** till *statusuppdatering*.
 1. Klicka på **Ny** i åtgärdsfönstret.
-1. Om du har startat från spårningskontrollcentret i steg 1 ska du ställa in fältet **Sträcka** till delen som du vill skapa en statusuppdatering för. Om du har startat från sidan **Sträckor** är fältet **Sträcka** förinställt på den sträcka du valde innan du öppnade spårningskontrollcentret.
+1. Om du har startat från spårningskontrollcentret i steg 1 ska du konfigurera fältet **Sträcka** till delen som du vill skapa en statusuppdatering för. Om du har startat från sidan **Sträckor** är fältet **Sträcka** förinställt på den sträcka du valde innan du öppnade spårningskontrollcentret.
 
     Baserat på värdet i fältet **Sträcka** anges flera fält automatiskt, som visas här:
 

@@ -1,6 +1,6 @@
 ---
 title: Justera AI-ML-baserade produktrekommendationsresultat
-description: I det här avsnittet beskrivs hur du skräddarsyr resultat för produktrekommendationer baserat på maskininlärning med artificiell intelligens (AI-ML) till ditt företag.
+description: I denna artikel beskrivs hur du skräddarsyr resultat för produktrekommendationer baserat på maskininlärning med artificiell intelligens (AI-ML) till ditt företag.
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5374b2ce559134bd26036b06ac6d96a9f5510ab847544707fc9885506aaab547
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d74fa013d44e0f113bdf0ce0ca9efeb943926e9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748532"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901712"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Justera AI-ML-baserade produktrekommendationsresultat
 
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skräddarsyr resultat för produktrekommendationer baserat på maskininlärning med artificiell intelligens (AI-ML) till ditt företag. 
+I denna artikel beskrivs hur du skräddarsyr resultat för produktrekommendationer baserat på maskininlärning med artificiell intelligens (AI-ML) till ditt företag. 
 
 När du har aktiverat produktrekommendationer börjar standardinställningarna att gälla. Dessa parametrar fungerar kanske för många behov. Det är bäst att planera att ägna en stund åt att bedöma om resultatet passar produkternas försäljningsrörelse. Vi föreslår utvärdering av resultat under några dagar innan parametrarna ändras efter behov innan de testas igen. 
 

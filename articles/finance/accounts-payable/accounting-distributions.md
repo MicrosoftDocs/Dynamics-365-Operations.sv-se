@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8178836318600fd6e702d097062d30b91e6c1a
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6aa3dce4bfda7f3c9243387cd398f08e7b990b2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735589"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894212"
 ---
 # <a name="accounting-distributions"></a>Redovisningsfördelningar
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet innehåller information om redovisningsfördelningar och beskriver de alternativ som är tillgängliga för att bearbeta dem. Redovisningsfördelningar används för att fördela penningbelopp för ett källdokument till specifika redovisningskonton. 
+Det här avsnittet innehåller information om redovisningsfördelningar och beskriver de alternativ som är tillgängliga för att bearbeta dem. Redovisningsfördelningar används för att fördela penningbelopp för ett källdokument till specifika redovisningskonton. 
 
 Redovisningsfördelningar är en programomfattande funktion som används och utökas med varje källdokument, till exempel inköpsorder, leverantörsfaktura, utgiftsrapport och fritextfaktura. Som standard skapas en redovisningsfördelning för varje källdokumentrad och penningbelopp och den är villkorad för ändring. 
 

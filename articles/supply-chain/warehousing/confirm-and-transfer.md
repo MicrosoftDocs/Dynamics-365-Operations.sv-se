@@ -1,6 +1,6 @@
 ---
-title: Bekräfta och överför
-description: I det här avsnittet beskrivs hur du använder funktionen bekräfta och överför, som gör att användarna kan leverera från lagret innan de slutför allt arbete som är kopplat till dessa laster.
+title: Bekräfta och överföra
+description: I denna artikel beskrivs hur du använder funktionen Bekräfta och överför, som gör att användarna kan leverera från lagret innan de slutför allt arbete som är kopplat till dessa leveranser.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 0d34dd1b33467aa1ea3a723e1baaf7f06285c3fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9257d8f9e6ed62ac0b19b0cdc8fd858e8b2f97a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675499"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900576"
 ---
 # <a name="confirm-and-transfer"></a>Bekräfta och överför
 
@@ -55,11 +55,11 @@ Du kan bara dela upp laster som uppfyller följande kriterier:
 
 ## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>Aktivera och inaktivera funktionen för bekräftelse och överföring
 
-De funktioner som beskrivs i det här avsnittet måste funktionen *Bekräfta och överföra* vara inaktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Bekräfta och överföra* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+För att använda de funktioner som beskrivs i denna artikel måste funktionen *Bekräfta och överföra* vara aktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Bekräfta och överföra* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-confirm-and-transfer"></a>Ställ in bekräfta och överför
 
-Om du vill använda funktionen *bekräfta och överför* måste du aktivera den i alla relevanta lastmallar. Du kan också, beroende på dina behov, förbereda arbetsmallarna så att de stöder funktionen. Om du vill arbeta i ett exempelscenario som finns senare i det här avsnittet konfigurerar du systemet enligt beskrivningen i det här avsnittet. (Det scenariot baseras på **USMF** demodata.)
+Om du vill använda funktionen *bekräfta och överför* måste du aktivera den i alla relevanta lastmallar. Du kan också, beroende på dina behov, förbereda arbetsmallarna så att de stöder funktionen. Om du vill arbeta i ett exempelscenario som finns senare i denna artikel konfigurerar du systemet enligt beskrivningen i det här avsnittet. (Det scenariot baseras på **USMF** demodata.)
 
 ### <a name="prepare-your-load-templates"></a>Förbereda dina lastmallar
 
@@ -69,10 +69,10 @@ Om du vill använda funktionen *bekräfta och överför* måste du aktivera den 
 
 ### <a name="prepare-your-work-templates"></a>Förbereda dina arbetsmallar
 
-Den här inställningen är inte obligatorisk i alla situationer. I exemplet som visas här ser du till att arbete kan delas upp per leverans för att stödja det exempel scenario som ges senare i det här avsnittet. Det finns också andra sätt att uppnå detta resultat.
+Den här inställningen är inte obligatorisk i alla situationer. Det exempel som visas här säkerställer att arbete kan delas upp per leverans för att stödja det exempelscenario som anges senare i denna artikel. Det finns också andra sätt att uppnå detta resultat.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Arbete \> Arbetsmallar**.
-1. I rutnätet i den övre delen av sidan väljer du en befintlig arbetsmall där du vill ställa in funktionen *bekräfta och överför*. (Om du arbetar med **USMF** demodata markerar du **51 välj till fas** arbetsmallen.) Du kan också skapa en ny arbetsmall.
+1. Gå till **Warehouse management \> Inställningar \> Arbete \> Arbetsmallar**.
+1. I rutnätet i den övre delen av sidan väljer du en befintlig arbetsmall där du vill konfigurera funktionen *bekräfta och överför*. (Om du arbetar med **USMF** demodata markerar du **51 välj till fas** arbetsmallen.) Du kan också skapa en ny arbetsmall.
 1. I åtgärdsfönstret, välj **Redigera fråga** för att öppna dialogrutan **Försäljning**.
 1. I dialogrutan **Försäljning** på fliken **Sortering** välj **Lägg till** om du vill lägga till en rad i rutnätet.
 1. I den nya raden anger du följande värden:
@@ -162,7 +162,7 @@ Vid workbench för lastplanering används mall-ID för att skapa leverans och fr
 1. I avsnittet **Laster** på sidan **Workbench för lastplanering** väljer du last och sedan i menyn **Relaterad information** ovanför rutnätet **Arbetsuppgifter** för att visa det arbete som har skapats för försäljningsordern.
 1. Anteckna de arbets-ID som har skapats. Du kanske måste rulla till höger för att se det försäljningsordernummer och det leverans-ID som är kopplat till arbets-ID:t.
 
-### <a name="step-2-set-up-the-execution-flow-for-mobile-devices"></a>Steg 2: ställa in körningsflödet för mobila enheter
+### <a name="step-2-set-up-the-execution-flow-for-mobile-devices"></a>Steg 2: konfigurera körningsflödet för mobila enheter
 
 Uppgifter för mobila enheter kräver att information skickas till användaren, t.ex. arbets-ID eller nummer-ID. I fälten är den här informationen vanligtvis avsedd för användare av lagerställe i form av streckkoder som finns i dokumentation, förpackning eller montering. Du slutför stegen i den mobila enheten för scenarion genom att se till att du har identifierat arbets-ID för transaktionerna och nummer-ID för artikeln och platsen i transaktionerna.
 

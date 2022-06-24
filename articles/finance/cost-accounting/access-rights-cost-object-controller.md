@@ -1,6 +1,6 @@
 ---
 title: Åtkomsträttigheter för en kostnadsobjektcontroller
-description: Det här avsnittet innehåller information om åtkomsträttigheter för kostnadsobjektcontroller.
+description: Den här artikeln innehåller information om åtkomsträttigheter för kostnadsobjektcontroller.
 author: AndersGirke
 ms.date: 06/24/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 13d562a4f42644b822c9548d1ea87d44a396b2c2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c40be758c5e5d1d1fb025630ed8321ae46251892
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733890"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903201"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Åtkomsträttigheter för en kostnadsobjektcontroller
 
@@ -35,10 +35,10 @@ Det finns fyra unika roller i kostnadsredovisning.
 |-------------------------|--------------|
 | Kostnadsredovisningschef | Aktivitet     |
 | Kostnadsredovisare         | Operations   |
-| Ansvarig kostnadsredovisare   | Operations   |
-| Kostnadsobjektcontroller  | Teammedlemmar |
+| Ansvarig kostnadsredovisare   | Verksamhet   |
+| Kostnadsobjektskontrollant  | Teammedlemmar |
 
-Det här avsnittet beskriver hur du tilldelar rollen **kostnadsobjektcontroller** till en chef.
+Den här artikeln beskriver hur du tilldelar rollen **kostnadsobjektcontroller** till en chef.
 
 När rollen **kostnadsobjektcontroller** har tilldelats en chef kan denne utföra följande uppgifter:
 
@@ -95,7 +95,7 @@ Inställningar för Hierarki för åtkomstlista används för att bestämma vilk
 
 > [!IMPORTANT]
 > - Innan Hierarki för åtkomstlista kan påverka data i Power BI måste hierarkiåtkomst och säkerhet på radnivå i Power BI paras ihop. Mer information finns i [ställa in säkerhet för kostnadsredovisningens innehållspaket](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
-> - Det här avsnittet visar kraven som måste vara på plats innan du kan använda arbetsytan **kostnadskontroll**.
+> - Den här artikeln visar kraven som måste vara på plats innan du kan använda arbetsytan **kostnadskontroll**.
 
 Ytterligare resurser
 

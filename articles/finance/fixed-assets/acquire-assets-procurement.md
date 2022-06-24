@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b654dbf97f8d91e0a3233803ee182b1383ad317d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ac25114fe8036a474d637e9ad9ede5e46b50d92e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712102"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891592"
 ---
 # <a name="acquire-assets-through-procurement"></a>Skaffa tillgångar genom anskaffning
 
@@ -38,7 +38,7 @@ Välj någon av de två första metoderna om du föredrar att skapa anläggnings
 
 Oavsett om du skapar anläggningstillgångar manuellt eller använder det flexibla sättet, gäller det andra beslutet huruvida en anskaffningstransaktion bara kan bokföras i Anläggningstillgångar, eller om den kan bokföras när du bokför en leverantörsfaktura. Vissa organisationer föredrar att användarna manuellt skapar anskaffningar och anskaffningstransaktioner i Anläggningstillgångar genom manuell journalregistrering eller genom förslag. 
 
-I det här avsnittet beskrivs respektive metod mer ingående.
+I den här artikeln beskrivs respektive metod mer ingående.
 
 ## <a name="methods-for-manually-creating-fixed-assets"></a> Metoder för att manuellt skapa anläggningstillgångar
 När du bokför en faktura som har ett Anläggningstillgångsnummer registrerat på raderna, och sidan Tillåt förvärv av tillgångar från inköp på sidan Parametrar för anläggningstillgångar bokförs förvärvet automatiskt och tillgångens status ändras till Öppen. 

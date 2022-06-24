@@ -1,6 +1,6 @@
 ---
 title: Överför videor
-description: I det här avsnittet beskrivs hur du laddar upp videor i Microsoft Dynamics 365 Commerce webbplatsskapare.
+description: I denna artikel beskrivs hur du laddar upp videor i Microsoft Dynamics 365 Commerce-webbplatsskaparen.
 author: psimolin
 ms.date: 06/09/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f481e5d3f323b0c86d637b67c119d13b956d5714dc0d990004834e2be05b370e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a48c6cbdd5898a2156f60dada40e94cd402df9c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735640"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890551"
 ---
 # <a name="upload-videos"></a>Överför videor
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du laddar upp videor i Microsoft Dynamics 365 Commerce webbplatsskapare.
+I denna artikel beskrivs hur du laddar upp videor i Microsoft Dynamics 365 Commerce-webbplatsskaparen.
 
 Med mediabiblioteket för Commerce webbplatsskapare kan du överföra videor. Du bör alltid överföra versionen av en video med högsta bithastighet och upplösning, eftersom videon omvandlas automatiskt för att vara lämplig för olika visningsportar och deras brytpunkter.
 
@@ -57,7 +57,7 @@ Om du överför flera typer av tillgångar samtidigt (t.ex. bilder och videor) i
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt av digital tillgångshantering](dam-overview.md)
+[Översikt av digital Tillgångshantering](dam-overview.md)
 
 [Överför bilder](dam-upload-images.md)
 

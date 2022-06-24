@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 7de74f2b12e8e7201663ba78d936131b301b1ff9
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b40e0136883d909755480a3ce101627297bd9ffb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685782"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896533"
 ---
 # <a name="support-and-renewals"></a>Support och förnyelser 
 
-I det här avsnittet beskrivs hur du registrerar supportartiklar eller förnyelseartiklar när du registrerar försäljningsorder. Dessa artiklar används för att beräkna debiteringsbeloppet för det ursprungliga supportkontraktet och/eller det förnyelsebelopp som används när en faktureringstidsplan skapas vid prenumerationsfakturering. Ditt företag säljer till exempel en server till en kund, och du erbjuder ett abonnemang för datasäkerhetskopiering för det första året tillsammans med ett alternativ för att förnya det abonnemanget varje år. *Supportartikeln* är abonnemanget för det första året, och *förnyelseartikeln* är förnyelsen för respektive på följande år.
+I den här artikeln beskrivs hur du registrerar supportartiklar eller förnyelseartiklar när du registrerar försäljningsorder. Dessa artiklar används för att beräkna debiteringsbeloppet för det ursprungliga supportkontraktet och/eller det förnyelsebelopp som används när en faktureringstidsplan skapas vid prenumerationsfakturering. Ditt företag säljer till exempel en server till en kund, och du erbjuder ett abonnemang för datasäkerhetskopiering för det första året tillsammans med ett alternativ för att förnya det abonnemanget varje år. *Supportartikeln* är abonnemanget för det första året, och *förnyelseartikeln* är förnyelsen för respektive på följande år.
 
 Du kan ange information för supportkontraktet, förnyelsekontraktet eller båda. När du registrerar supportkontraktsinformationen läggs endast supportartikeln till i försäljningsordern. När du anger informationen rörande förnyelsekontraktet används förnyelseartikeln för att skapa en faktureringstidsplan.
 

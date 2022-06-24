@@ -1,6 +1,6 @@
 ---
 title: Kostnadskalkylering med automatisk lageravräkning
-description: Det här avsnittet förklarar kostnadsredovisning med bakåtavräkning som används för Lean manufacturing.
+description: Denna artikel förklarar kostnadskalkylering med automatisk lageravräkning som används för Lean manufacturing.
 author: JennySong-SH
 ms.date: 04/10/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: a5b0ac26a1f6b209be7c9d52aaad9bb689a8a656
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 33cb7bf70d8867ccd067144e661c3bdf1c0b778d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674038"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906107"
 ---
 # <a name="backflush-costing"></a>Kostnadskalkylering med automatisk lageravräkning
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet förklarar kostnadsredovisning med bakåtavräkning som används för Lean manufacturing. 
+Denna artikel förklarar kostnadskalkylering med automatisk lageravräkning som används för Lean manufacturing. 
 
 Kostnadsredovisning för Lean manufacturing tillåter att produktionsflödet använder den metod för kostnadsackumulering som kallas kostnadsredovisning med bakåtavräkning. I kostnadsredovisning med bakåtavräkning ackumuleras de direktmaterial som förbrukas i produktionsflödets kostnadskonto för pågående arbete (PIA). Lagermodellgruppen för standardkostnader används. Produkterna som inlevereras från produktionsflödet dras från PIA till deras standardkostnad. Den största skillnaden mellan bakåtavräkning och standardkostnad är att för bakåtavräkning beräknas inte avvikelser per kanban eller färdig produkt. I stället beräknas avvikelser per produktionsflöde under en period. Denna metod innebär ett riktigt resurssnålt koncept för rapportering av materialförbrukning. Dedikerade plockade kvantiteter rapporteras inte till en kanban eller tillverkningsorder. I stället mellanlagras hela batchar eller materialhanteringsenheter till produktionsflödet. När batchar eller materialhanteringsenheter registrerats som tomma, förklaras de som förbrukade. Avancerad förbrukning kan användas, beroende på [konfigurationen av produktionsflödet](../production-control/lean-manufacturing-modeling-lean-organization.md). Innan du kan använda avancerad förbrukning, måste organisationer tillåta att de låter material försvinna i PIA för produktionsflödet. Den periodiska bakåtavräkningen bestämmer det effektiva värdet för PIA i slutet av perioden. Beslutet baseras på kanban-materialhanteringsenheten och kanban-jobbstatus. Avvikelser mellan effektiva värden och faktiska PIA-värden per kostnadsgrupp och artikel bokförs och visas som avvikelser.
 
@@ -78,7 +78,7 @@ Produkterna inlevereras från produktionsflödet under följande förhållanden:
 
 Produkterna som inlevereras från produktionsflödet dras från PIA.
 
-## <a name="products-in-wip"></a>Produkter i PIA 
+## <a name="products-in-wip"></a>Produkter i PIA
 PIA-modellen för Lean manufacturing låter dig använda den enhetsstatus för kanban-hantering för att hantera material, halvfabrikat och färdiga produkter som ingår i PIA.
 
 -   **Tilldelad** - kanban kan ha förbrukat materialet som redovisas i PIA.
@@ -96,7 +96,7 @@ Schemalagda eller händelse-kanban som kan ställas in för automatisk registrer
 -   **När materialhanteringsenheter inlevereras** - som standard för tidsplanerade kanbans deklareras materialet som förbrukatnär det sista jobbet för kanban har slutförts. För kanban med fast kvantitet rekommenderas detta alternativ endast för single-bin kanban eftersom det returnerar kortet till efterfrågekällan när en kanban erhålls vid den slutliga användningen.
 -   **När källbehovet är registrerat** - det här alternativet är bara tillgängligt för händelse-kanban och är standardalternativet för dessa. Detta alternativ är användbart för att hålla PIA ren, eftersom kanbans för komponenter i PIA töms automatiskt, och därför förbrukas från PIA, när den överordnade kanban förbereds i anslutning till Pågående arbete.
 
-Sammanfattningsvis  kan kanban-hantering av enheter kan tilldelas (= pågår) tas emot (= komplett), eller tömts. Det finns ingen del tömma. För att aktivera korrekt registrering av förbrukning är det viktigt att du begränsar produktkvantiteter för en kanbans så att de är mindre än förbrukning per period. Produkter som flyttas till verkstaden i stora grupper som täcker dagar eller veckor av efterfrågan ska inte förbrukas till PIA. I stället bör produkterna finnas i lager.
+Sammanfattningsvis kan kanban-hantering av enheter kan tilldelas (= pågår) tas emot (= komplett), eller tömts. Det finns ingen del tömma. För att aktivera korrekt registrering av förbrukning är det viktigt att du begränsar produktkvantiteter för en kanbans så att de är mindre än förbrukning per period. Produkter som flyttas till verkstaden i stora grupper som täcker dagar eller veckor av efterfrågan ska inte förbrukas till PIA. I stället bör produkterna finnas i lager.
 
 ## <a name="backflush-costing"></a>Kostnadskalkylering med automatisk lageravräkning
 Kör ostnadsredovisning med bakåtavräkning till periodiskt värdet för PIA och producera en slutstatus som beräknar varians av material, arbete och omkostnader. Beräknade avvikelser bokförs på avvikelsekontona. I kostnadsredovisning med bakåtavräkning används alla produktionsflöden för den juridiska personen i samma batchkörning. Vid kostnadsredovisning med bakåtavräkning i en batch kan bearbetning vara flertrådad i produktionsmiljön. Bakåtavräkningsperioden definieras av ett slutdatum. Du kan inte bokföra nya transaktioner till ett datum när kostnadsredovisning med bakåtavräkning har körts. Kör aldrig kostnadsredovisning med bakåtavräkning för det aktuella datumet innan dagen är slut. Utför följande steg för kostnadsredovisning med bakåtavräkning.

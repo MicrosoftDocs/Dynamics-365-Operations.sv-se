@@ -1,6 +1,6 @@
 ---
 title: Valutaomräkning för leverantörsreskontra och kundreskontra
-description: Det här ämnet innehåller information om den process för omräkning i utländsk valuta som du kör om du vill uppdatera värdet för öppna transaktioner i Leverantörsreskontra och Kundreskontra.
+description: Den här artikeln innehåller information om den process för omräkning i utländsk valuta som du kör om du vill uppdatera värdet för öppna transaktioner i Leverantörsreskontra och Kundreskontra.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf32a31df1d56740d803b97d65829b1b1d31eb17
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 33750e7bb2f1fc4158a5f2faba5eeae5a356db7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713936"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906396"
 ---
 # <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Valutaomräkning för leverantörsreskontra och kundreskontra
 
 [!include [banner](../includes/banner.md)]
 
-Variationer i valutakurser gör att det teoretiska värdet (bokförda värdet) för öppna kundtransaktioner i utländska valutor varierar över tiden. Det här ämnet innehåller information om den process för omräkning i utländsk valuta som du kör om du vill uppdatera värdet för öppna transaktioner i Leverantörsreskontra och Kundreskontra. 
+Variationer i valutakurser gör att det teoretiska värdet (bokförda värdet) för öppna kundtransaktioner i utländska valutor varierar över tiden. Den här artikeln innehåller information om den process för omräkning i utländsk valuta som du kör om du vill uppdatera värdet för öppna transaktioner i Leverantörsreskontra och Kundreskontra. 
 
 Det teoretiska värdet (bokförda värdet) för öppna leverantörstransaktioner i utländska valutor varierar över tiden med förändringar av valutakursen. Om du vill uppdatera värdet för öppna transaktioner i Leverantörsreskontra och Kundreskontra kan du köra processen för omvärdering i utländsk valuta . Omräkning i utländsk valuta kan köras för Leverantörsreskontra och Kundreskontra Processen använder en ny valutakurs för omvärdering av de öppna beloppen eller ej kvittade belopp, på ett angivet datum. Skillnaderna mellan de ursprungliga bokförda belopp och de revalverade belopp orsakar en orealiserad vinst eller förlust för varje öppen transaktion. Leverantörsreskontra och Kundreskontra uppdateras sedan för att avspegla den orealiserade vinsten eller förlusten, och en bokföringspost ska bokföras i redovisningen.
 

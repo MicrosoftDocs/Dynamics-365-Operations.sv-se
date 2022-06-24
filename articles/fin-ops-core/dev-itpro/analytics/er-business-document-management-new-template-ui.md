@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e33830e2147d92ad5ee53ad11da55a50613b8ef9
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: bcc464a17e27393c5904c59b8439de6ca000d57a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074751"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892237"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Användargränssnitt i Microsoft Office-stil för hantering av affärsdokument
 
@@ -32,7 +32,7 @@ Det nya användargränssnittet (UI) är tydligare och bekvämare att använda. O
 
 Du kan använda knappen **Nytt dokument** arbetsytan **Hantering av affärsdokument** om du vill skapa och redigera en mall i ett format för [elektronisk rapportering (ER)](general-electronic-reporting.md) [konfiguration](general-electronic-reporting.md#Configuration) som tillhandahålls av en annan leverantör och finns i den aktuella Ekonomi-instansen, eller för att ladda upp en ny mall från en Excel-arbetsbok. Dessutom, i version 10.0.25 och senare, kan du använda **Nytt dokument** för att skapa och redigera en mall i en ER-formatkonfiguration som lagras i den [globala databasen](general-electronic-reporting.md#Repository).
 
-I exemplen i det här avsnittet är den aktiva leverantören Contoso och du använder den för att skapa en mall som baseras på en mall som tillhandahålls av Microsoft. Du kan också skapa en mall genom att överföra din egen mall i Excel-format.
+I exemplen i den här artikeln är den aktiva leverantören Contoso och du använder den för att skapa en mall som baseras på en mall som tillhandahålls av Microsoft. Du kan också skapa en mall genom att överföra din egen mall i Excel-format.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 

@@ -1,6 +1,6 @@
 ---
 title: Ekonomiska dimensioner och bokföring
-description: När du planerar och ställer in kontoplanen måste du bestämma hur komponenterna fungerar tillsammans när du bokför ett dokument eller en journal. Dessa komponenter inkluderar kontostrukturer, avancerade regler och balansering och fasta dimensioner. Det här avsnittet beskriver vad varje komponent är och hur komponenterna fungerar tillsammans.
+description: När du planerar och ställer in kontoplanen måste du bestämma hur komponenterna fungerar tillsammans när du bokför ett dokument eller en journal. Dessa komponenter inkluderar kontostrukturer, avancerade regler och balansering och fasta dimensioner. Den här artikeln beskriver vad varje komponent är och hur komponenterna fungerar tillsammans.
 author: aprilolson
 ms.date: 08/04/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a612f3b703349e1cffe300b75afd44e72ae63b2c
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: a165c4084a9f2075a54c99a7e4913a4e3c3dfe55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722811"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910125"
 ---
 # <a name="financial-dimensions-and-posting"></a>Ekonomiska dimensioner och bokföring 
 
 [!include [banner](../includes/banner.md)]
 
-När du planerar och ställer in kontoplanen måste du bestämma hur komponenterna fungerar tillsammans när du bokför ett dokument eller en journal. Dessa komponenter inkluderar kontostrukturer, avancerade regler och balansering och fasta dimensioner. Det här avsnittet beskriver vad varje komponent är och hur komponenterna fungerar tillsammans.
+När du planerar och ställer in kontoplanen måste du bestämma hur komponenterna fungerar tillsammans när du bokför ett dokument eller en journal. Dessa komponenter inkluderar kontostrukturer, avancerade regler och balansering och fasta dimensioner. Den här artikeln beskriver vad varje komponent är och hur komponenterna fungerar tillsammans.
 
 ## <a name="chart-of-accounts-and-financial-dimension-components"></a>Import av kontoplan och ekonomiska dimensionskomponenter
 
@@ -46,7 +46,7 @@ Du kan som tillval definiera en balanserande ekonomisk dimension. På sidan **re
 
 ### <a name="defaultfixed-financial-dimensions-on-the-main-account"></a>Standard/fast ekonomisk dimension för huvudkontot.
 
-Standarddimensioner kommer från olika platser, t.ex. huvudposter (exempelvis kund- eller leverantörsposter), dokument och huvudkontot. Det här avsnittet gäller standarddimensioner för huvudkontot per juridisk person. Du kan ange om ett huvudkonto har ett **inte fast** eller **fast** värde för varje ekonomisk dimension som används i alla kontostrukturer för redovisningen. Om en ekonomisk dimension är **inte fast**, används ett standardvärde, men värdet kan skrivas över. Detta gäller alla standardvärden i systemet, även standardvärden som kommer från huvudposter. Om en ekonomisk dimension är inställt på ett **fast** värde tillämpas alltid det värdet oavsett om den kommer från någon som standardvärde eller om användaren angav det.
+Standarddimensioner kommer från olika platser, t.ex. huvudposter (exempelvis kund- eller leverantörsposter), dokument och huvudkontot. Den här artikeln gäller standarddimensioner för huvudkontot per juridisk person. Du kan ange om ett huvudkonto har ett **inte fast** eller **fast** värde för varje ekonomisk dimension som används i alla kontostrukturer för redovisningen. Om en ekonomisk dimension är **inte fast**, används ett standardvärde, men värdet kan skrivas över. Detta gäller alla standardvärden i systemet, även standardvärden som kommer från huvudposter. Om en ekonomisk dimension är inställt på ett **fast** värde tillämpas alltid det värdet oavsett om den kommer från någon som standardvärde eller om användaren angav det.
 
 ## <a name="order-in-which-default-dimensions-are-applied-during-posting"></a>Ordning som standarddimensionerna använder vid bokföring
 

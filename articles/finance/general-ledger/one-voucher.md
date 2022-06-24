@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 9a0a9a3f23a3aec0077fd1a64c55fea567b72800
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: fa7a519b87bd5933b8b672f9f9b3e230fd7f2eb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722504"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896417"
 ---
 # <a name="one-voucher"></a>En verifikation
 
@@ -37,7 +37,7 @@ Den befintliga funktionaliteten för redovisningsjournaler (allmän journal, jou
     [![Enstaka rad.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
-    > Definitionen av En verifikation omfattar **inte** fall där journalnamn ställs in som **Bara ett verifikationsnummer**, men användaren anger sedan en verifikation som endast omfattar typer av redovisningskonton. I det här avsnittet betyder En verifikation en enda verifikation som innehåller mer än en leverantör, kund, bank, anläggningstillgångar eller projekt.
+    > Definitionen av En verifikation omfattar **inte** fall där journalnamn ställs in som **Bara ett verifikationsnummer**, men användaren anger sedan en verifikation som endast omfattar typer av redovisningskonton. I den här artikeln betyder En verifikation en enda verifikation som innehåller mer än en leverantör, kund, bank, anläggningstillgångar eller projekt.
 
 - Ange en verifikation med flera rader om det inte finns något motkonto.
 

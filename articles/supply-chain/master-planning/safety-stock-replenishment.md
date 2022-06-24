@@ -1,6 +1,6 @@
 ---
 title: Säkerhet för artiklar i lageruppfyllelse
-description: Här beskrivs uppfyllandet av säkerhetslagret och hur du ställer in säkerhetslagerantalet för artiklar.
+description: I denna artikel beskrivs uppfyllandet av säkerhetslagret och hur du konfigurerar säkerhetslagerantalet för artiklar.
 author: t-benebo
 ms.date: 8/23/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c539b804198ddc5d5dac52c958a851ee55116711
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 70461ad1de94c984cb41e6b1d46af9e310a928d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672078"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887411"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Säkerhet för artiklar i lageruppfyllelse
 
@@ -37,7 +37,7 @@ Använd minimumnycklar för att hantera säsongsvarianter i efterfrågan. Du kan
 
 ## <a name="example-minimum-key"></a>Exempel: Minimumnyckel
 
-Följande procedur är ett exempel som visar hur du ställer in en miniminyckel som tar upp ökad säsongsefterfrågan under våren och sommaren.
+Följande procedur är ett exempel som visar hur du konfigurerar en miniminyckel som tar upp ökad säsongsefterfrågan under våren och sommaren.
 
 1. Gå till **Huvudplanering \> Inställningar \> Disponering \> Minimi-/maxinycklar**.
 1. Välj **Ny** för att skapa en minimi-/maxinyckel.
@@ -69,9 +69,9 @@ Följande procedur är ett exempel som visar hur du ställer in en miniminyckel 
     ![Minimi- eller maximinyckelperioder.](media/min-max-key-periods.png "Minimi- eller maximinyckelperioder")
 
 > [!NOTE]
-> Du kan också använda en guiden om du vill skapa en minimum-/maximumnyckel. På sidan **Minimi- eller maximumnycklar**, i åtgärdsrutan, välj **Guide** för att öppna guiden **Minimum-/maximumnycklar**. I guiden går du steg för steg genom processen för att skapa och ställa in minimum-/maximumnyckeln.
+> Du kan också använda en guiden om du vill skapa en minimum-/maximumnyckel. På sidan **Minimi- eller maximumnycklar**, i åtgärdsrutan, välj **Guide** för att öppna guiden **Minimum-/maximumnycklar**. I guiden går du steg för steg genom processen för att skapa och konfigurera minimum-/maximumnyckeln.
 
-Om disponeringskoden är *Min/max* kan du även ange maximal lagerkvantitet som du vill underhålla för en artikeln. Värdet uttrycks även i lagerenheter. Om förväntat tillgängligt lager faller under minimikvantiteten, genererar huvudplaneringen en planerad order för att uppfylla alla öppna behov först och ökar sedan det tillgängliga lagret till den angivna maximikvantiteten. Precis som du ställer in minimilagerkvantitet måste du definiera alla övriga planerade disponeringsdimensioner innan du kan ställa in fältet **Maximum**.
+Om disponeringskoden är *Min/max* kan du även ange maximal lagerkvantitet som du vill underhålla för en artikeln. Värdet uttrycks även i lagerenheter. Om förväntat tillgängligt lager faller under minimikvantiteten, genererar huvudplaneringen en planerad order för att uppfylla alla öppna behov först och ökar sedan det tillgängliga lagret till den angivna maximikvantiteten. Precis som du konfigurerar minimilagerkvantitet måste du definiera alla övriga planerade disponeringsdimensioner innan du kan konfigurera fältet **Maximum**.
 
 ## <a name="example-minmax-coverage-code"></a>Exempel: Min/max disponeringskod
 
@@ -88,7 +88,7 @@ Om **Miniminycklar** är används, välj kryssrutan **Minimiperioder** om du vil
 Följande scenario visar hur denna parameter fungerar och vad som är skillnaderna mellan värdena.
 
 > [!NOTE]
-> För alla bilder i det här avsnittet representerar x-axeln lager, y-axeln representerar dagar, staplarna representerar lagernivån, pilarna representerar transaktioner, exempelvis försäljningsorderrader, inköpsorderrader eller planerade order.
+> För alla bilder i denna artikel representerar x-axeln lager, y-axeln representerar dagar, staplarna representerar lagernivån, pilarna representerar transaktioner, exempelvis försäljningsorderrader, inköpsorderrader eller planerade order.
 
 [![Vanligt scenario för uppfyllelse av säkerhetslager.](media/Scenario1.png)](media/Scenario1.png)
 

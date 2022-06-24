@@ -1,6 +1,6 @@
 ---
 title: Anskaffning
-description: I det här avsnittet beskrivs anskaffning i Tillgångshantering.
+description: I denna artikel beskrivs anskaffning i Tillgångshantering.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2b5e160beb4743db2530b91020f21b686d84237b17cfa7ff7f0cc1da97695d08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 015499463f1eab4aaa3f3658b3204229382e73cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743660"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893654"
 ---
 # <a name="procurement"></a>Anskaffning
 
@@ -32,7 +32,7 @@ På listsidan **Inköpsrekvisition för arbetsorder** (**Tillgångshantering** >
 
 - Om du vill öppna den relaterade inköpsrekvisitionen, välj **inköpsrekvisition**. 
 - Om du vill öppna en relaterad arbetsorder väljer du **arbetsorder**.
-- Om du vill få en översikt som visar var artikeln på den valda raden används, i relation till tillgångar, underhållsjobbtypstandarder, reservdelar och arbetsorder i tillgångshantering väljer du **artikel där den används**. Mer information om översikten finns i [Artikel där den används](../controlling-and-reporting/item-where-used.md).
+- Om du vill få en översikt som visar var artikeln på den valda raden används, i relation till tillgångar, underhållsjobbtypstandarder, reservdelar och arbetsorder i Tillgångshantering väljer du **artikel där den används**. Mer information om översikten finns i [Artikel där den används](../controlling-and-reporting/item-where-used.md).
 
 I bilden nedan visas ett exempel på listsidan **Inköpsrekvisition för arbetsorder**.
 
@@ -43,7 +43,7 @@ På listsidan **Inköp för arbetsorder** (**Tillgångshantering** > **Allmänt*
 
 - Om du vill öppna en relaterad inköpsorder väljer du **inköpsorder**. 
 - Om du vill öppna en relaterad arbetsorder väljer du **arbetsorder**.
-- Om du vill få en översikt som visar var artikeln på den valda raden används, i relation till tillgångar, underhållsjobbtypstandarder, reservdelar och arbetsorder i tillgångshantering väljer du **artikel där den används**. Mer information om översikten finns i [Artikel där den används](../controlling-and-reporting/item-where-used.md).
+- Om du vill få en översikt som visar var artikeln på den valda raden används, i relation till tillgångar, underhållsjobbtypstandarder, reservdelar och arbetsorder i Tillgångshantering väljer du **artikel där den används**. Mer information om översikten finns i [Artikel där den används](../controlling-and-reporting/item-where-used.md).
 
 I bilden nedan visas ett exempel på listsidan **Inköp för arbetsorder**.
 

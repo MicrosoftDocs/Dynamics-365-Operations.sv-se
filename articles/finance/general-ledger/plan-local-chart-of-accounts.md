@@ -10,7 +10,7 @@ ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts, Ledge
 ROBOTS: ''
 audience: Application User
 ms.devlang: ''
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.tgt_pltfrm: ''
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: veneva
 ms.search.validFrom: 10/07/2021
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e224a2e24b4ba293c953c6c883307038128e2f04
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: 78379fd51cf24985fce83e2b6aa9a475af7df363
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798306"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946257"
 ---
 # <a name="plan-your-local-chart-of-accounts"></a>Planera din lokala kontoplan
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet innehåller information som hjälper dig att planera kontoplanen när din organisation innehåller juridiska personer som måste uppfylla kraven för specifika platser där de gör affärer. I det här avsnittet beskrivs kontoplanerna med hjälp av följande termer:
+Det här ämnet innehåller information som hjälper dig att planera kontoplanen när din organisation innehåller juridiska personer som måste uppfylla kraven för specifika platser där de gör affärer. I den här artikeln beskrivs kontoplanerna med hjälp av följande termer:
 
 - **Global** – Kontoplanen som organisationen använder globalt. I de flesta fall konsoliderar du den här kontoplanen.
 - **Lokalt** – En kontoplan som juridiska personer i ett visst land eller en viss region använder.

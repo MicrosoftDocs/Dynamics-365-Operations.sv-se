@@ -1,6 +1,6 @@
 ---
 title: Delleverans av en transportlast
-description: Det här avsnittet beskriver hur du delvis levererar en last och skjuter upp planering av kapacitet för lasten.
+description: Denna artikel beskriver hur du delvis levererar en last och skjuter upp planering av kapacitet för lasten.
 author: Mirzaab
 ms.date: 03/15/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 5ea844531314b4dd2ff3fa46d8f0b57d9c47059e684d677f06f8259b264d4a90
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 09e35b8ee39b3635938f46e174e6ba98db7fa627
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782309"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907041"
 ---
 # <a name="partial-shipment-of-a-transport-load"></a>Delleverans av en transportlast
 
 [!include[banner](../includes/banner.md)]
 
-Genom att ställa in en delleverans av last kan du hantera laster där kapaciteten inte kan bestämmas förrän alla försäljningsrader har lagts till en last. Processen kan sedan slutföras när man vet exakt antal lastpallar. Därför behöver du inte bestämma vilka lastpallar som ska tilldelas till vilket transport tills det ögonblick då en transport fysiskt lastas ur mellanlagret.
+Genom att konfigurera en delleverans av last kan du hantera laster där kapaciteten inte kan bestämmas förrän alla försäljningsrader har lagts till en last. Processen kan sedan slutföras när man vet exakt antal lastpallar. Därför behöver du inte bestämma vilka lastpallar som ska tilldelas till vilket transport tills det ögonblick då en transport fysiskt lastas ur mellanlagret.
 
 Den här funktionen är ett praktiskt alternativ för kontroll av fastare struktur där måste du bestämma vilka lastpallar som tilldelas vilken transport före plockning av arbete eller lastning av arbetet kan skapas. Däremot kan användare konfigurera individuella laster för en bekräftelse av delleverans. Transportlastningsprocessen för dessa laster kan sedan uppstå. Därför kan transportplaneringsavdelningen planera laster utan att behöva tänka på kapacitet för enskilda transporter.
 

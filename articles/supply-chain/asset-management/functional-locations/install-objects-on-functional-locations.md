@@ -1,6 +1,6 @@
 ---
 title: Installera tillgångar på funktionsplatser
-description: I det här avsnittet beskrivs hur du installerar tillgångar på en funktionsplats i Tillgångshantering.
+description: I denna artikel beskrivs hur du installerar tillgångar på en funktionsplats i Tillgångshantering.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc278564b02335b44a0b35d6a3a981125e6f456b08893be2b5886f0a55396d52
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a35f2494c616c2e456f92409d012cc434a32bd8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775757"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894513"
 ---
 # <a name="install-assets-on-functional-locations"></a>Installera tillgångar på funktionsplatser
 
@@ -28,19 +28,19 @@ ms.locfileid: "6775757"
 
  
 
-När du har skapat funktionsplatsstrukturer är nästa steg att installera tillgångar på relevanta funktionsplatser. I det här avsnittet beskrivs hur du installerar tillgångar på dessa funktionsplatser i Tillgångshantering. Information om hur du skapar en tillgång finns i [Introduktion till tillgångar](../objects/introduction-to-objects.md).
+När du har skapat funktionsplatsstrukturer är nästa steg att installera tillgångar på relevanta funktionsplatser. I denna artikel beskrivs hur du installerar tillgångar på dessa funktionsplatser i Tillgångshantering. Information om hur du skapar en tillgång finns i [Introduktion till tillgångar](../objects/introduction-to-objects.md).
 
-Om du har skapat en tillgångsstruktur måste hela tillgångsstrukturen installeras på en funktionsplats. Därför kan endast överordnade tillgångar (tillgångar på toppnivå som inte har någon överordnad tillgång) väljas på en funktionsplats. Alla relaterade underordnade tillgångar (undertillgångar) kommer också att installeras på funktionsplatsen. När du installerar tillgångar på en funktionsplats, kan de ekonomiska dimensionerna för den funktionsplatsen automatiskt överföras till dem, beroende på inställningarna på den funktionsplatstyp som valts för den funktionsplatsen. För mer information om hur du ställer in funktionsplatstyper finns i [funktionsplatstyper](../setup-for-functional-locations/functional-location-types.md).
+Om du har skapat en tillgångsstruktur måste hela tillgångsstrukturen installeras på en funktionsplats. Därför kan endast överordnade tillgångar (tillgångar på toppnivå som inte har någon överordnad tillgång) väljas på en funktionsplats. Alla relaterade underordnade tillgångar (undertillgångar) kommer också att installeras på funktionsplatsen. När du installerar tillgångar på en funktionsplats, kan de ekonomiska dimensionerna för den funktionsplatsen automatiskt överföras till dem, beroende på inställningarna på den funktionsplatstyp som valts för den funktionsplatsen. För mer information om hur du konfigurerar funktionsplatstyper finns i [funktionsplatstyper](../setup-for-functional-locations/functional-location-types.md).
 
 > [!NOTE]
-> Du kan ställa in tillgångstyper på den funktionsplatstyp som används för en funktionsplats. I det här fallet när du installerar tillgångar på visas endast överordnade tillgångar som har samma typ av tillgång i listan över tillgångar som kan installeras på funktionsplatsen.
+> Du kan konfigurera tillgångstyper på den funktionsplatstyp som används för en funktionsplats. I det här fallet när du installerar tillgångar på visas endast överordnade tillgångar som har samma typ av tillgång i listan över tillgångar som kan installeras på funktionsplatsen.
 
 När du har installerat tillgångar på en funktionsplats kan du ersätta en överordnad tillgång eller en tillgångsstruktur som du behöver. Som när du installerar tillgångar, väljer du en överordnad tillgång som ska ersättas. Alla relaterade underordnade tillgångar kommer också att ersättas. 
 
 
 ## <a name="install-an-asset-structure-on-a-functional-location"></a>Installera en tillgångsstruktur på en funktionsplats.
 
-1. Välj **tillgångshantering** \> **allmänt** \> **funktionsplatser** \> **alla funktionsplatser** eller **aktiva funktionsplatser**.
+1. Välj **Tillgångshantering** \> **allmänt** \> **funktionsplatser** \> **alla funktionsplatser** eller **aktiva funktionsplatser**.
 2. Välj den funktionsplats som tillgången ska installeras på.
 3. Välj **Installera tillgång**.
 
@@ -68,7 +68,7 @@ När du har installerat tillgångar på en funktionsplats kan du ersätta en öv
 
 ## <a name="automatically-create-one-asset-on-a-functional-location"></a>Skapa automatiskt en tillgång på en funktionsplats
 
-Du kan ställa in funktionsplatsfaser och funktionsplatstyper för att hantera den automatiska skapandet av *en* tillgång på en funktionsplats. Tillgången får samma ID och namn som funktionsplatsen. Den här funktionen kan vara användbar när du hanterar underhåll på en stor, statisk tillgång, till exempel en byggnad.
+Du kan konfigurera funktionsplatsfaser och funktionsplatstyper för att hantera den automatiska skapandet av *en* tillgång på en funktionsplats. Tillgången får samma ID och namn som funktionsplatsen. Den här funktionen kan vara användbar när du hanterar underhåll på en stor, statisk tillgång, till exempel en byggnad.
 
 Innan du kan skapa en tillgång automatiskt på en funktionsplats måste följande inställningsdata vara tillgängliga:
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1c6d0952b98334dc0c0a2e780a7c6f54a7811185
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: c9511643806a2201b3379dec9bbca01a8ccbcdc3
+ms.sourcegitcommit: 58af7348be9ce60a86a111ede42a7fc5b2b77708
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811754"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8941742"
 ---
 # <a name="tax-calculation-overview"></a>Översikt över momsberäkning
 
@@ -163,6 +163,7 @@ Följande länder/regioner för en juridisk persons primära adress stöds i ver
 - Tyskland
 - Ungern
 - Island
+- Irland
 - Italien
 - Lettland
 - Litauen

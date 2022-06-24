@@ -1,6 +1,6 @@
 ---
 title: Strategier för lagerpåfyllnad
-description: Det här avsnittet innehåller information om strategier för påfyllning och förklarar hur du kan använda fältet återanskaffningsstrategi på rader för återanskaffning av en påfyllning för att välja hur påfyllning ska göras.
+description: Denna artikel innehåller information om strategier för påfyllning och förklarar hur du kan använda fältet återanskaffningsstrategi på rader för återanskaffning av en påfyllning för att välja hur påfyllning ska göras.
 author: Mirzaab
 ms.date: 10/29/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 1aa48f231c5d98a22fa989fb6e6996b972be9089
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3b4d691bbcf88cc73d10e3bb401710508ec641e1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669892"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893161"
 ---
 # <a name="replenishment-strategies"></a>Strategier för lagerpåfyllnad
 
@@ -80,7 +80,7 @@ När du släpper upp försäljningsordern på lagerstället och påfyllnadsbearb
 
 Du får två lagerpåfyllnad arbets-ID eftersom du måste fylla på två platser, och flera resurser stöds inte.
 
-Om du ställer in återanskaffningsstrategin till *maximal platskapacitet* i stället, får du följande påfyllningsarbete:
+Om du konfigurerar återanskaffningsstrategin till *maximal platskapacitet* i stället, får du följande påfyllningsarbete:
 
 - **Påfyllnadsarbete 1:** Välj 4 lådor från bulkplatser och placera dem i plats-001-plock.
 - **Påfyllnadsarbete 2:** Välj 5 lådor från bulkplatser och placera dem i plats-002-plock.
@@ -111,7 +111,7 @@ Resultaten skiljer sig på grund av den information som är tillgänglig när du
 
 [![Exempel 2.](media/ReplenTemp_example_2.png "Exempel 2")](media/ReplenTemp_example_2_large.png)
 
-Om du vill hämta den maximala kvantiteten till de påfyllningsbara platserna bör du ställa in alternativet **Tillåt delning** på *Ja* i platsdirektiv för påfyllningsplockning.
+Om du vill hämta den maximala kvantiteten till de påfyllningsbara platserna bör du konfigurera alternativet **Tillåt delning** på *Ja* i platsdirektiv för påfyllningsplockning.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

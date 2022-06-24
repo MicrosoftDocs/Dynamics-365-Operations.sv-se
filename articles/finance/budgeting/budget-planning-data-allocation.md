@@ -1,6 +1,6 @@
 ---
 title: Dataallokering för budgetplanering
-description: Det här avsnittet ger en beskrivning av olika allokeringsmetoder som är tillgängliga i Microsoft Dynamics 365 Finance och hur de kan användas.
+description: Den här artikeln ger en beskrivning av olika allokeringsmetoder som är tillgängliga i Microsoft Dynamics 365 Finance och hur de kan användas.
 author: panolte
 ms.date: 03/05/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c07fe1363be841d42315084780a1f3146dca174a
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 5788f6dc8aa6cddad5c8eaba748827307a4d38a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711070"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901472"
 ---
 # <a name="budget-planning-data-allocation"></a>Dataallokering för budgetplanering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet ger en beskrivning av olika allokeringsmetoder som är tillgängliga i Microsoft Dynamics 365 Finance och hur de kan användas.  
+Den här artikeln ger en beskrivning av olika allokeringsmetoder som är tillgängliga i Microsoft Dynamics 365 Finance och hur de kan användas.  
 
 Du kan fördela data i en budgetplan på många sätt för att exakt att beskriva de projekterade beloppen.
 

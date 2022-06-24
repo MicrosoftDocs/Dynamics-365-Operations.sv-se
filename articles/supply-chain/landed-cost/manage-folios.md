@@ -1,6 +1,6 @@
 ---
 title: Hantera folio
-description: I det här avsnittet beskrivs hur du arbetar med folio. En folio består normalt av en leverantörs varor för en enhet eller ett företag per leverans. Varorna i en folio kan läggas i en behållare eller spridas bland flera behållare.
+description: I denna artikel beskrivs hur du arbetar med folio. En folio består normalt av en leverantörs varor för en enhet eller ett företag per leverans. Varorna i en folio kan läggas i en behållare eller spridas bland flera behållare.
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f908ae3c150a09af61bb0ee97469619744cd1079
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4cc556c47f7027f2f5d5b24c235b11ced63b3e4e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695314"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905904"
 ---
 # <a name="manage-folios"></a>Hantera folio
 
@@ -105,7 +105,7 @@ I tabellen nedan beskrivs inställningarna som är tillgängliga på snabbfliken
 |---|---|
 | Foliodatum | Välj ett datum ska associeras med folio. Standardvärdet är datumet då färden skapades. |
 | Beräknad ankomst vid leveranshamn | Uppskattat ankomstdatum (ETA) vid destinationsporten ("till"-porten). |
-| Uppskattat leveransdatum | Vanligen det datum då varorna ska ankomma till lagerstället. Fältet används inte när det uppskattade leveransdatumet beräknas. (Det uppskattade leveransdatumet för spårningskontroll används istället.) Om du vill ställa in detta fält så att värdet matchar spårningskontrollens uppskattade leveransdatum använder du [Spårningskontrollcentret](delivery-information-setup.md#tracking-control-center). |
+| Uppskattat leveransdatum | Vanligen det datum då varorna ska ankomma till lagerstället. Fältet används inte när det uppskattade leveransdatumet beräknas. (Det uppskattade leveransdatumet för spårningskontroll används istället.) Om du vill konfigurera detta fält så att värdet matchar spårningskontrollens uppskattade leveransdatum använder du [Spårningskontrollcentret](delivery-information-setup.md#tracking-control-center). |
 | Mottagna originaldokument | Datumet när originaldokumenten togs emot. |
 | Mäklaren har informerats | Datumet när mäklaren informerades. |
 | Skickad ursprunglig fraktsedel | Datumet när den ursprungliga fraktsedeln skickades. |
@@ -132,7 +132,7 @@ I tabellen nedan beskrivs inställningarna som är tillgängliga på snabbfliken
 
 ### <a name="information-on-the-folio-fasttab"></a>Information om snabbfliken Folio
 
-Snabbfliken **Folio** i vyn **Rader** visar information om folio. Större delen av den här informationen visas även i vyn **Huvud**, på det sätt som beskrivs tidigare i det här avsnittet.
+Snabbfliken **Folio** i vyn **Rader** visar information om folio. Större delen av den här informationen visas även i vyn **Rubrik**, på det sätt som beskrivs tidigare i denna artikel.
 
 ### <a name="information-and-buttons-on-the-lines-fasttab"></a>Information och knappar på snabbflikarna Rader
 

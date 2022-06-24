@@ -1,6 +1,6 @@
 ---
 title: Hitta information med hjälp av sökningar
-description: I det här avsnittet lär du dig om sökningsfunktionerna och du får några användbara tips för att få optimal användning av sökningar i systemet.
+description: I den här artikeln lär du dig om sökningsfunktionerna och du får några användbara tips för att få optimal användning av sökningar i systemet.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7135487e5d87564163c643d1315c51231fa66de
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ee309330c165dfb0b67f647afc3514d4c827dad1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069308"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901535"
 ---
 # <a name="find-information-by-using-lookups"></a>Hitta information med hjälp av sökningar
 
@@ -28,7 +28,7 @@ ms.locfileid: "8069308"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Många fält har sökningar som hjälper dig att enkelt hitta rätt eller önskat värde. Flera förbättringar har lagts till sökningar för att göra dessa kontroller mer användbara och göra användarna mer produktiva. I det här avsnittet lär du dig om dessa nya sökningsfunktionerna och du får några användbara tips för att få optimal användning av sökningar i systemet.
+Många fält har sökningar som hjälper dig att enkelt hitta rätt eller önskat värde. Flera förbättringar har lagts till sökningar för att göra dessa kontroller mer användbara och göra användarna mer produktiva. I den här artikeln lär du dig om dessa nya sökningsfunktionerna och du får några användbara tips för att få optimal användning av sökningar i systemet.
 
 ## <a name="responsive-lookups"></a>Responsiv sökning
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurera hjälpupplevelsen för Ekonomi och Drift-appar
-description: I det här avsnittet finns information om komponenterna i hjälpsystemet för vissa Microsoft Dynamics 365-appar.
+description: I den här artikeln finns information om komponenterna i hjälpsystemet för vissa Microsoft Dynamics 365-appar.
 author: margoc
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b002b374e5da619460c496b8f0d7a70b7194afd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071018"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900141"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurera hjälpupplevelsen för Ekonomi och Drift-appar
 
@@ -29,7 +29,7 @@ ms.locfileid: "8071018"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-I det här avsnittet finns en översikt över komponenterna i hjälpsystemet för Ekonomi och Drift-appar, t.ex. Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce och Dynamics 365 Human Resources. Ämnet förklarar även hur du ansluter dessa komponenter samt tillhandahåller en sammanfattning av processen för att skapa egen hjälp.
+I den här artikeln finns en översikt över komponenterna i hjälpsystemet för Ekonomi och Drift-appar, t.ex. Microsoft Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce och Dynamics 365 Human Resources. Ämnet förklarar även hur du ansluter dessa komponenter samt tillhandahåller en sammanfattning av processen för att skapa egen hjälp.
 
 ## <a name="help-architecture"></a>Hjälparkitektur
 

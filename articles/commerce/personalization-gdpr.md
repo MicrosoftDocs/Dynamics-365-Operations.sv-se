@@ -1,6 +1,6 @@
 ---
-title: Avanmälan av anpassade rekommendationer
-description: I det här avsnittet beskrivs hur du kan låta kunderna avanmäla si från anpassade rekommendationer i Microsoft Dynamics 365 Commerce.
+title: Avanmäl anpassade rekommendationer
+description: I denna artikel beskrivs hur du kan låta kunderna avanmäla sig från anpassade rekommendationer i Microsoft Dynamics 365 Commerce.
 author: bebeale
 ms.date: 09/15/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f634e39fe8ca7ffecfd1952933cb82e1bfe7d5a8eec28a61e1d78d21847f95f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47de876a6f304ed5cb35bf075eadaafa4bf0fc7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772947"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896937"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Avanmäl anpassade rekommendationer
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du kan låta kunderna avanmäla si från anpassade rekommendationer i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du kan låta kunderna avanmäla sig från anpassade rekommendationer i Microsoft Dynamics 365 Commerce.
 
 När kontot skapas konfigureras nya kunder automatiskt för att ta emot anpassade rekommendationer. Med Dynamics 365 Commerce har olika sätt för återförsäljare att låta användarna välja att inte ta emot dessa rekommendationer och begränsa bearbetningen av personuppgifter. Autentiserade användare som avanmäler sig från anpassade rekommendationer kommer omedelbart att sluta se anpassade listor. Dessutom kommer alla personliga data som samlas in för anpassning att tas bort från anpassade rekommendationsmodeller.
 

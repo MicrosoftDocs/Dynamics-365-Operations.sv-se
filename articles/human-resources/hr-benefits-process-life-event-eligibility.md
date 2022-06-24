@@ -1,6 +1,6 @@
 ---
 title: Bearbeta livshändelseberättigande
-description: I detta ämne beskrivs hur du bearbetar ändringar av livshändelser.
+description: I denna artikel beskrivs hur du bearbetar ändringar av livshändelser.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0e9007b25a86c2be6f284a5982112d50aaae7075
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ec6565164c6341a25141c25df2fc85f09e2f4e6b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690011"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909800"
 ---
 # <a name="process-life-event-eligibility"></a>Bearbeta livshändelseberättigande
 
@@ -28,7 +28,7 @@ ms.locfileid: "8690011"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I detta ämne beskrivs hur du bearbetar tillgänglighet för livshändelser.
+I denna artikel beskrivs hur du bearbetar tillgänglighet för livshändelser.
 
 1. I arbetsytan **Förmånshantering** under **bearbetar**, välj **bearbetning av berättigande för livshändelse**.
 

@@ -1,6 +1,6 @@
 ---
 title: Dela ER-konfigurationer i RCS/den globala databasen med externa organisationer
-description: Det här avsnittet innehåller information om hur du delar elektroniska rapporteringskonfigurationer (ER) i Microsoft Regulatory Configuration Services (RCS)/den globala databasen direkt med externa organisationer.
+description: Den här artikeln innehåller information om hur du delar elektroniska rapporteringskonfigurationer (ER) i Microsoft Regulatory Configuration Services (RCS)/den globala databasen direkt med externa organisationer.
 author: JaneA07
 ms.date: 05/04/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ee7feef83ffa458e7cbd238d37a0f343d1a202f48002da67823df024bb609d02
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 976a86aee75581d1afa764bea049b6c0eaecf9f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719183"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888935"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Dela elektroniska rapporteringskonfigurationer (ER) i Microsoft Regulatory Configuration Services (RCS)/den globala databasen med externa organisationer
 
@@ -36,7 +36,7 @@ Följande procedurer förklarar hur en RCS-användare kan dela en version av en 
 
 Du måste också säkerställa att en RCS-miljö har etablerats för ditt företag.
 
-1. I en Finance and Operations-app går du till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
+1. I appen för ekonomi och drift, gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. Om ingen RCS-miljö har etablerats för ditt företag väljer du **Regulatory services – extern konfiguration** och följer sedan instruktionerna för att etablera en.
 
 Om en RCS-miljö redan har etablerats för ditt företag kan du använda sidans URL för att komma åt den genom att välja alternativet för inloggning.
@@ -67,7 +67,7 @@ När en konfiguration har skapats i din konfigurationsleverantör kan du dela de
 
     ![Dela konfigurationsversion med dialogrutan för extern organisation.](media/1_RCS_Repo_for_Share_with_form.JPG)
 
-Konfigurationen delas med den externa organisationen och är tillgänglig för den organisationen i den globala databasen. Därifrån kan den importeras till organisationens instans av RCS eller till dess instanser av Finance and Operations-appar.
+Konfigurationen delas med den externa organisationen och är tillgänglig för den organisationen i den globala databasen. Därifrån kan den importeras till organisationens instans av RCS eller till dess instanser av appar för ekonomi och drift.
 
 6. Om du vill ta bort delning av en konfiguration som tidigare har delats med en extern organisation, markerar du konfigurationen och klickar på **Ta bort delning** innan du väljer **OK**
 

@@ -1,6 +1,6 @@
 ---
 title: Köra och övervaka ett experiment
-description: I det här avsnittet beskrivs hur du kör och övervakar ett experiment i en tredjepartstjänst. Det beskriver också hur du gör ändringar i varianter efter att experimentet har startats.
+description: I denna artikel beskrivs hur du kör och övervakar ett experiment i en tredjepartstjänst. Det beskriver också hur du gör ändringar i varianter efter att experimentet har startats.
 author: sushma-rao
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cd8864caec23f6aca30badba1a79da31301a0ddb92a74bb4a6fe027214d0f8d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9f62c97b46fa00791de52b2804dad5edde7f625
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777582"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909593"
 ---
 # <a name="run-and-monitor-an-experiment"></a>Köra och övervaka ett experiment
 
-I det här avsnittet beskrivs hur du kör och övervakar ditt experiment i en annan tillverkare och ändrar varianter om det behövs. Innan du slutför stegen i det här avsnittet måste du först [publicera](experimentation-preview-publish.md) experimentet i Commerce. 
+I denna artikel beskrivs hur du kör och övervakar ditt experiment i ett tredjepartsprogram och ändrar varianter vid behov. Innan du slutför stegen i denna artikel måste du först [publicera](experimentation-preview-publish.md) experimentet i Commerce. 
 
-I bilden nedan visas alla steg som ingår när du ställer in och kör ett experiment på en näthandelssajt i Dynamics 365 Commerce. Ytterligare steg beskrivs i olika avsnitt.
+I bilden nedan visas alla steg som ingår när du konfigurerar och kör ett experiment på en näthandelssajt i Dynamics 365 Commerce. Ytterligare steg beskrivs i separata artiklar.
 
 [ ![Experimentets användarresa – kör och övervaka.](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 

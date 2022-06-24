@@ -1,6 +1,6 @@
 ---
 title: Ange anpassade lagringsplatser för genererade dokument
-description: Det här avsnittet beskriver hur du utökar listan över lagringsplatser för dokument som genererats av elektroniska rapporteringsformat (ER).
+description: Den här artikeln beskriver hur du utökar listan över lagringsplatser för dokument som genererats av elektroniska rapporteringsformat (ER).
 author: NickSelin
 ms.date: 10/29/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 103a7e51fc6042e19b1db3b3d6b00436df15fd89
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594919"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898868"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Ange anpassade lagringsplatser för genererade dokument
 
 [!include[banner](../includes/banner.md)]
 
-API (application programming interface) för ramverket för elektronisk rapportering (ER) låter dig utöka lagringsplatser för dokument som ER-format genererar. I det här avsnittet beskrivs hur du lägger till en anpassad lagringsplats för genererade dokument genom att delegera uppgiften att skapa ER-mål till standardmålfabriken och sedan implementera en anpassad klass som har sin egen mållogik.
+API (application programming interface) för ramverket för elektronisk rapportering (ER) låter dig utöka lagringsplatser för dokument som ER-format genererar. I den här artikeln beskrivs hur du lägger till en anpassad lagringsplats för genererade dokument genom att delegera uppgiften att skapa ER-mål till standardmålfabriken och sedan implementera en anpassad klass som har sin egen mållogik.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -35,7 +35,7 @@ Distribuera en topologi som stöder kontinuerlig version. Mer information finns 
 
 Du måste också ha tillgång till utvecklingsmiljön för den här topologin.
 
-Alla uppgifter i det här avsnittet kan slutföras i företaget **USMF**.
+Alla uppgifter i den här artikeln kan slutföras i företaget **USMF**.
 
 ## <a name="import-the-fixed-asset-roll-forward-er-format"></a>Importera ER-formatet för uppdateringsrapport för anläggningstillgång
 

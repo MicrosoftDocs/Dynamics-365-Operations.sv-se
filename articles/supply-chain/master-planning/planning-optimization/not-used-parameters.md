@@ -1,6 +1,6 @@
 ---
-title: Parametrar som inte används av planeringsoptimeringen
-description: Detta ämne visar en lista över de parametrar som planeringsoptimeringen just nu inte tar hänsyn till under drift.
+title: Parametrar som inte används av Planeringsoptimeringen
+description: Denna artikel visar en lista över de parametrar som Planeringsoptimeringen just nu inte tar hänsyn till under drift.
 author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
@@ -11,20 +11,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 3791ac804b78a20d0051881a83cb075e56ec8639
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469126"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907360"
 ---
-# <a name="parameters-not-used-by-planning-optimization"></a>Parametrar som inte används av planeringsoptimeringen
+# <a name="parameters-not-used-by-planning-optimization"></a>Parametrar som inte används av Planeringsoptimeringen
 
 [!include [banner](../../includes/banner.md)]
 
-Detta ämne visar en lista över de parametrar som planeringsoptimeringen just nu inte tar hänsyn till under drift. Planeringstjänsten kan hoppa över en parameter eftersom till exempel relaterade funktioner ännu inte stöds. Alternativt kan parametern ha blivit föråldrad på grund av funktionella ändringar.
+Denna artikel visar en lista över de parametrar som Planeringsoptimeringen just nu inte tar hänsyn till under drift. Planeringstjänsten kan hoppa över en parameter eftersom till exempel relaterade funktioner ännu inte stöds. Alternativt kan parametern ha blivit föråldrad på grund av funktionella ändringar.
 
-I de följande avsnitten anges de parametrar som planeringsoptimeringen inte använder på vissa sidor. De förklarar också varför respektive parameter inte används.
+I de följande avsnitten anges de parametrar som Planeringsoptimeringen inte använder på vissa sidor. De förklarar också varför respektive parameter inte används.
 
 ## <a name="master-planning-parameters-page"></a>Sidan Huvudplaneringsparametrar
 
@@ -37,7 +37,7 @@ Planeringsoptimeringen använder inte följande parametrar eller alternativ på 
   - **Aktuell dynamisk huvudplan** – Inväntar stöd för *Kopiera statisk till dynamisk plan*.
   - **Kopiera den fullständiga och uppdaterade statiska huvudplanen till den dynamiska huvudplanen** – Inväntar stöd för *Kopiera statisk till dynamisk plan*.
   - **Starttid för beräknade förseningar** – Inväntar stöd för *Beräknade förseningar*.
-  - **Använd dynamiska negativa dagar** – I planeringsoptimeringen används alltid metoden *Dynamiskt negativa dagar*.
+  - **Använd dynamiska negativa dagar** – I Planeringsoptimeringen används alltid metoden *Dynamiskt negativa dagar*.
   - **Dagens datumkalender** – Inväntar stöd för *Tidsplanering*.
   - **Användning av cacheminne** – Konfigurationen av Microsoft Azure-prenumerationen hanterar prestandapunkter.
   - **Antalet uppgifter i hjälpens uppgiftsbunt** – Azure-prenumerationskonfigurationen hanterar prestandapunkter.
@@ -68,7 +68,7 @@ Planeringsoptimeringen använder inte följande parametrar eller alternativ på 
 
 - Snabbfliken **Annan**:
 
-  - **Frys tidsgräns (dagar)** – Stöd för *Frys tidsgräns* planeras inte i planeringsoptimeringen.
+  - **Frys tidsgräns (dagar)** – Stöd för *Frys tidsgräns* planeras inte i Planeringsoptimeringen.
   - **Tidsgräns för strukturlistenedbrytning (dagar)** – Inväntar stöd för *Tidsplanering*.
   - **Tidsgräns för kapacitetsplanering (dagar)** – Inväntar stöd för *Tidsplanering*.
   - **Godkänd tidsgräns för rekvisition (dagar)** – Inväntar stöd för *Rekvisition*.
@@ -86,7 +86,7 @@ Planeringsoptimeringen använder inte följande parametrar eller alternativ på 
 - Fliken **Allmänt**:
 
   - **Planerad ordertyp** – Planeringsoptimeringen stöder inte alternativet *Kanban* i väntan på stöd för *kanban*.
-  - **Frys tidsgräns (dagar)** – Stöd för *Frys tidsgräns* planeras inte i planeringsoptimeringen.
+  - **Frys tidsgräns (dagar)** – Stöd för *Frys tidsgräns* planeras inte i Planeringsoptimeringen.
   - **Tidsgräns för strukturlistenedbrytning (dagar)** – Inväntar stöd för *Tidsplanering*.
   - **Tidsgräns för kapacitetsplanering (dagar)** – Inväntar stöd för *Tidsplanering*.
   - **Godkänd tidsgräns för rekvisition (dagar)** – Inväntar stöd för *Rekvisition*.
@@ -100,10 +100,10 @@ Planeringsoptimeringen använder inte följande parametrar eller alternativ på 
 
 - Fliken **Produktionstid**:
 
-  - **Inköpstid** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att ställa in fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
-  - **Produktionstid** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att ställa in fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
-  - **Överföringstid** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att ställa in fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
-  - **Arbetsdagar** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att ställa in fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
+  - **Inköpstid** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att konfigurera fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
+  - **Produktionstid** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att konfigurera fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
+  - **Överföringstid** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att konfigurera fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
+  - **Arbetsdagar** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att konfigurera fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
 
 ## <a name="master-plans-page"></a>Sidan Huvudplaner
 
@@ -126,13 +126,13 @@ Planeringsoptimeringen använder inte följande parametrar eller alternativ på 
   - **Tidsgräns för begränsad kapacitet** – Inväntar stöd för *Tidsplanering*.
   - **Begränsad kapacitet för flaskhalsresurser** – Inväntar stöd för *Tidsplanering*.
   - **Kapacitetstidsgräns för flaskhalsresurser** – Inväntar stöd för *Tidsplanering*.
-  - **Planerade order** – I planeringsoptimering används fasta nummerserier.
-  - **Session** – I planeringsoptimering används fasta nummerserier.
-  - **Kontinuitetsplan** – I planeringsoptimering används fasta nummerserier.
+  - **Planerade order** – I Planeringsoptimering används fasta nummerserier.
+  - **Session** – I Planeringsoptimering används fasta nummerserier.
+  - **Kontinuitetsplan** – I Planeringsoptimering används fasta nummerserier.
 
 - Snabbfliken **Tidsgräns i dagar**:
 
-  - **Frys** – Stöd för *Frys tidsgräns* planeras inte i planeringsoptimeringen.
+  - **Frys** – Stöd för *Frys tidsgräns* planeras inte i Planeringsoptimeringen.
   - **Nedbrytning** – Inväntar stöd för *Tidsplanering*.
   - **Prognosplan** – Inväntar ytterligare stöd för *Prognos*.
   - **Kapacitet** – Inväntar stöd för *Tidsplanering*.
@@ -173,14 +173,14 @@ Planeringsoptimeringen använder inte följande parameteralternativ på sidan **
 
 - Snabbfliken **Inköpsorder**:
 
-  - **Ledtid för inköp** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att ställa in fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
-  - **Arbetsdagar** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att ställa in fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
+  - **Ledtid för inköp** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att konfigurera fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
+  - **Arbetsdagar** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att konfigurera fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
 
 - Snabbfliken **Lager**:
 
   - **Datumkontroll för leverans** – Planeringsoptimering stöder inte alternative *CTP* i väntan på stöd för *CTP*.
-  - **Ledtid för lager** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att ställa in fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
-  - **Arbetsdagar** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att ställa in fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
+  - **Ledtid för lager** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att konfigurera fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
+  - **Arbetsdagar** – I versioner av tjänsten Planeringsoptimering som är äldre än den 6 augusti 2021-versionen använder Planeringsoptimering den här parametern för att beräkna korrekta order- och leveransdatum, men den sparar inte själva den beräknade produktionstiden i den planerade ordern. I senare versioner använder tjänsten också den beräknade ledtiden för att konfigurera fältet **Produktionstid** och **Arbetsdagar** efter behov för den relevanta planerade ordern.
 
 ## <a name="batch-disposition-master-page"></a>Huvudsidan för batchdisposition
 

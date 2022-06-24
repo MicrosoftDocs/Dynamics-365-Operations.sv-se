@@ -1,6 +1,6 @@
 ---
 title: Importera inkommande ASN:er via V3-datatabellen
-description: I det här avsnittet beskrivs hur du hanterar import av inkommande avancerade leveransmeddelande (ASN) via inkommande ASN-dataentitet.
+description: I denna artikel beskrivs hur du hanterar import av inkommande avancerade leveransmeddelande (ASN) via inkommande ASN-dataentitet.
 author: GalynaFedorova
 ms.date: 05/11/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-04
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 44ec0230236451a413d483b3e9f3ddc58b49a0b0
-ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
+ms.openlocfilehash: 0ac45e070d0473547c48da1380377de3d4bf60bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740145"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907128"
 ---
 # <a name="import-inbound-asns-through-the-v3-data-entity"></a>Importera inkommande ASN:er via V3-datatabellen
 
@@ -26,7 +26,7 @@ Avancerade leveransmeddelanden (ASN) meddelar dig om leverantörsleveranser. De 
 
 ASN kan hjälpa lagerarbetare att ta reda på vad som inkommer när. Därför kan de förbereda sig. Lagerarbetare kan dessutom använda ASN för att matcha detaljer för en försändelse med den relaterade inköpsorder som tidigare skapades.
 
-I det här avsnittet finns en samling scenarier som kan visas, till exempel hur du arbetar med ASN-filer.
+I denna artikel finns en samling scenarier som med exempel visar hur du arbetar med ASN-filer.
 
 > [!IMPORTANT]
 > *Inkommande ASN*-import gäller bara för artiklar som är aktiverade för avancerad Warehouse management (WMS). Innan du får ett ASN måste en inköpsorder registreras i systemet mot leverantören som skickar detta ASN.
@@ -42,7 +42,7 @@ Du importerar inkommande ASN med hjälp av den *inkommande ASN V3* sammansatta d
 - Rader med kollin i packningsstruktur för inkommande last
 - Inkommande beläggning av packningsstrukturrader
 
-*Inkommande ASN V3* sammansatta dataenhet är avsedd för asynkrona integrationsscenarier där XML-filbaserade importer används.
+*Inkommande ASN V3* sammansatta dataenhet är avsedd för asynkrona integreringsscenarier där XML-filbaserade importer används.
 
 ## <a name="xml-format-for-importing-asns"></a>XML-format för import av ASN
 

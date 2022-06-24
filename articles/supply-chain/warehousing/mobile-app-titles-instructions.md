@@ -1,6 +1,6 @@
 ---
 title: Anpassa stegtitlar och instruktioner för mobilappen Warehouse Management
-description: I detta ämne beskrivs hur du skapar och visar anpassade instruktioner för varje enskilt steg i respektive uppgiftsflöde som du konfigurerar in för mobilappen Warehouse Management.
+description: I denna artikel beskrivs hur du skapar och visar anpassade instruktioner för varje enskilt steg i respektive uppgiftsflöde som du konfigurerar för mobilappen Warehouse Management.
 author: Mirzaab
 ms.date: 08/11/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ffd433427b2c5011740a7ee54c93713689945df3
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 289a3735133919ae7dbad05c40ba9ccf0e8f57ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902257"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895508"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Anpassa stegtitlar och instruktioner för mobilappen Warehouse Management
 
 > [!IMPORTANT]
-> Funktionerna som beskrivs i detta ämne gäller bara den nya mobilappen Warehouse Management. De påverkar inte den gamla lagerställeappen, som nu har blivit inaktuell.
+> Funktionerna som beskrivs i denna artikel gäller bara den nya mobilappen Warehouse Management. De påverkar inte den gamla lagerställeappen, som nu har blivit inaktuell.
 
-I detta ämne beskrivs hur du skapar och visar anpassade instruktioner för varje enskilt steg i varje enskilt uppgiftsflöde som du konfigurerar in för mobilappen Warehouse Management. När lagerarbetare får välskrivna instruktioner kan de omedelbart börja använda nya flöden utan behov av föregående utbildning. Denna funktion har följande fördelar:
+I denna artikel bekrivs hur du skapar och visar anpassade instruktioner för varje enskilt steg i varje enskilt uppgiftsflöde som du konfigurerar för mobilappen Warehouse Management. När lagerarbetare får välskrivna instruktioner kan de omedelbart börja använda nya flöden utan behov av föregående utbildning. Denna funktion har följande fördelar:
 
 - **Förbättra medarbetare snabbare genom att låta dem följa enkla instruktioner för respektive uppgiftssteg.** Varje steg i ett flöde tillhandahåller instruktioner som gör det möjligt för medarbetare i frontlinjen att förstå uppgiften.
 - **Ge instruktioner som matchar dina egna processer.** Skriv dina egna instruktioner som matchar dina affärs- och lagerställeprocesser. Du kan till exempel anpassa terminologin efter ditt fysiska utrymme och dina lokala förkortningar.

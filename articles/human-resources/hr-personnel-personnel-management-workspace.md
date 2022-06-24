@@ -1,6 +1,6 @@
 ---
 title: Arbetsyta för personalhantering
-description: I detta ämne beskrivs de begreppsmässiga elementen i arbetsytan för personalhantering.
+description: I denna artikel beskrivs de begreppsmässiga elementen i arbetsytan för personalhantering.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8b7493aa2df65b42d0da8a451c40cccafbc1cda8
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: fc424905bc9311662859b900636a68de2f7ee3cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689478"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888771"
 ---
 # <a name="personnel-management-workspace"></a>Arbetsyta för personalhantering
 

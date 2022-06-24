@@ -1,6 +1,6 @@
 ---
 title: Fast inleveranspris
-description: I det här avsnittet beskrivs hur du kan konfigurera och använda fasta inleveranspriser i Microsoft Dynamics 365 Supply Chain Management.
+description: I denna artikel beskrivs hur du kan konfigurera och använda fasta inleveranspriser i Microsoft Dynamics 365 Supply Chain Management.
 author: raprofit
 ms.date: 04/25/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-04-25
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 8e26d84ddc309249d8bd6e54987ad3ae8eed68f0
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 2630952f395d1a18202698b4d73b67ef4b760194
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770308"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907592"
 ---
 # <a name="fixed-receipt-price"></a>Fast inleveranspris
 
 [!include [banner](../includes/banner.md)]
 
-**Fast inleveranspris** är ett alternativ som du kan välja för en artikelmodellgrupp när du använder en annan lagermodell än *Standardkostnad* eller *Flytta viktat medelvärde*. I tidiga versioner av Microsoft Dynamics AX fick det här alternativet namnet **Standardkostnad**. Det ändrades till **Fast inleveranspris** när den nya lagermodellen för standardkostnad infördes i Dynamics AX 2012. I det här avsnittet beskrivs hur du kan konfigurera och använda fasta inleveranspriser i Dynamics 365 Supply Chain Management.
+**Fast inleveranspris** är ett alternativ som du kan välja för en artikelmodellgrupp när du använder en annan lagermodell än *Standardkostnad* eller *Flytta viktat medelvärde*. I tidiga versioner av Microsoft Dynamics AX fick det här alternativet namnet **Standardkostnad**. Det ändrades till **Fast inleveranspris** när den nya lagermodellen för standardkostnad infördes i Dynamics AX 2012. I denna artikel beskrivs hur du kan konfigurera och använda fasta inleveranspriser i Dynamics 365 Supply Chain Management.
 
 ## <a name="about-fixed-receipt-prices"></a>Om fasta inleveranspriser
 

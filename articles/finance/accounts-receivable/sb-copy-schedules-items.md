@@ -1,6 +1,6 @@
 ---
 title: Kopiera faktureringsscheman
-description: Det här avsnittet förklarar hur du kopierar faktureringsscheman.
+description: Den här artikeln förklarar hur du kopierar faktureringsscheman.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 0257dacd2c2f36a894f7918403886292251659da
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b3eaf5fa9591968eb866f612b6394489659e5d92
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686259"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908137"
 ---
 # <a name="copy-a-billing-schedule"></a>Kopiera ett faktureringsschema
 

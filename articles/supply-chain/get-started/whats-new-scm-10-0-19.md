@@ -1,6 +1,6 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.19 (juni 2021)
-description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.19.
+description: Denna artikel innehåller en beskrivning av nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.19.
 author: kamaybac
 ms.date: 04/23/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f0f1830c9f667d617b8aae28e61a8e541b17c77f
-ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
+ms.openlocfilehash: 1ea0f2dae2f558f1ee5c0d2b94a4b926263b7de7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8570337"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893422"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.19 (juni 2021)
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management version 10.0.19. Den här versionen har ett versionsnummer för 10.0.837 och är tillgänglig enligt följande:
+Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management version 10.0.19. Den här versionen har ett versionsnummer för 10.0.837 och är tillgänglig enligt följande:
 
 - **Förhandgranskning av version:** april 2021
 - **Allmän tillgänglighet för version (självuppdatering):** juni 2021
@@ -51,22 +51,22 @@ Följande register lista de funktionsförbättringar som ingår i denna version:
 | Modul | Funktionsnamn&nbsp;&nbsp;i&nbsp;funktionshantering | Mer information |
 |---|---|---|
 | Försäljning och marknadsföring | Förbättringar i försäljningshistorik | Rensningen av försäljningshistorik kan ta lång tid om den körs sällan i miljöer med stora försäljningsuppdateringar. Om du vill minska tidslängden och förbättra tillförlitligheten, delar den här funktionen upp rensningen i batchar som körs under en begränsad tid. Om det är möjligt kommer databaskapaciteter att användas för att minimera låsning och undvika att transaktionsregister sammanfogas under rensningen. Mer information finns i [Schemalägga datarensning i försäljningshistorik](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
-| Försäljning och marknadsföring | Uppdatera begärt inleveransdatum med bekräftat datum för koncerninterna order | Med denna funktion kan du kontrollera vad som ska hända med fältvärden för försäljning och inköpsdatum vid koncernintern direktleverans. Du kan välja om systemet ska uppdatera de begärda datumen eller hoppa över att uppdatera dem. Om du hoppar över uppdateringen representerar de begärda datumen det som kunden har begärt. Om du aktiverar uppdatering representerar de begärda datumen (vid användning av leveransdatumkontroll) endast det som kunden begärt. Leveransdatumkontrollen, som skiljer sig från *Ingen*, går före det som ursprungligen begärdes. Du kan ställa in detta alternativ med hjälp av den nya inställningen **Uppdatera begärt inleveransdatum med bekräftat datum** i inställningarna för koncernintern leverantör eller kund.<br><br>Om funktionen inaktiveras skriver systemet över begärt inleveransdatum på ursprungliga försäljningsorder baserat på kontrollregeln för leveransdatum, men det begärda leveransdatumet förblir som det är. |
+| Försäljning och marknadsföring | Uppdatera begärt inleveransdatum med bekräftat datum för koncerninterna order | Med denna funktion kan du kontrollera vad som ska hända med fältvärden för försäljning och inköpsdatum vid koncernintern direktleverans. Du kan välja om systemet ska uppdatera de begärda datumen eller hoppa över att uppdatera dem. Om du hoppar över uppdateringen representerar de begärda datumen det som kunden har begärt. Om du aktiverar uppdatering representerar de begärda datumen (vid användning av leveransdatumkontroll) endast det som kunden begärt. Leveransdatumkontrollen, som skiljer sig från *Ingen*, går före det som ursprungligen begärdes. Du kan konfigurera detta alternativ med hjälp av den nya inställningen **Uppdatera begärt inleveransdatum med bekräftat datum** i inställningarna för koncernintern leverantör eller kund.<br><br>Om funktionen inaktiveras skriver systemet över begärt inleveransdatum på ursprungliga försäljningsorder baserat på kontrollregeln för leveransdatum, men det begärda leveransdatumet förblir som det är. |
 | Warehouse management | Avrunda kvantiteter neråt till närmaste försäljningsenhet vid frisläpp till lagerställe | Med den här funktionen läggs ett alternativ till som kan begränsa orderkvantiteter vid frisläppning till lagerställe. När den här aktiveras avrundas orderkvantiteter nedåt till närmaste hela försäljningsenhet, och order som inkluderar kvantiteter för mindre än en försäljningsenhet avvisas för frisläppning. |
 | Warehouse management | Påfyllnadsmetoden "Schemalägg skapande av arbete" för hela organisationen | När du aktiverar den här funktionen, *Skapa tidsplan för arbete* läggs till och konfigureras att köra parallellt över alla juridiska enheter. Flera ytterligare inställningar påverkas också. Mer information finns i [Planera skapande av arbete under påfyllnad](../warehousing/configure-wave-schedule-work-creation.md). |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
 
-Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De är inte nödvändigtvis relaterade till de nya funktioner som har lagts till för den här versionen, vilket visas i föregående avsnitt, men de kan hjälpa dig att få ut mer av befintliga funktioner.
+Följande hjälpartiklar har nyligen lagts till eller uppdaterats väsentligt. De är inte nödvändigtvis relaterade till de nya funktioner som har lagts till för den här versionen, vilket visas i föregående avsnitt, men de kan hjälpa dig att få ut mer av befintliga funktioner.
 
-| Funktionsområde | Nya eller uppdaterade ämnen |
+| Funktionsområde | Nya eller uppdaterade artiklar |
 |---|---|
 | Konstruktionsändringshantering | [Vanliga frågor och svar om konstruktionsändringshantering](../engineering-change-management/change-management-faq.md) |
 | Anskaffning och källa | [Kategoribegäranden från leverantörer](../procurement/category-requests-from-vendors.md) |
 | Produktinformationshantering | [Hantera måttenhet](../pim/tasks/manage-unit-measure.md)<br><br>[Beräkningar för produktkonfigurationsmodell](../pim/config-model-calculations.md) |
 | Produktionskontroll | [Enhetlig nummerserie för jobb-ID:n](../production-control/unified-job-ids.md) |
 | Transporthantering | [LTL-klasser](../transportation/ltl-class.md)<br><br>[NMFC-koder](../transportation/nmfc-codes.md) |
-| Lagerhantering, skapa och bearbeta cykel | [Skapa och bearbeta påfyllnad](../warehousing/wave-processing.md)<br><br>[Distributionslagerparametrar för påfyllnadsbearbetning](../warehousing/wave-warehouse-parameters.md)<br><br>[Påfyllnadsmallar](../warehousing/wave-templates.md)<br><br>[Påfyllnadsallokering](../warehousing/wave-allocation-method.md)<br><br>[Tidsplanera att skapa arbete under påfyllnad](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Skapande av behållare](../warehousing/wave-containerization.md)<br><br>[Meddelanden för påfyllnadskörning](../warehousing/wave-execution-notifications.md) |
+| Lagerhantering, skapa och bearbeta påfyllnad | [Skapa och bearbeta påfyllnad](../warehousing/wave-processing.md)<br><br>[Distributionslagerparametrar för påfyllnadsbearbetning](../warehousing/wave-warehouse-parameters.md)<br><br>[Påfyllnadsmallar](../warehousing/wave-templates.md)<br><br>[Påfyllnadsallokering](../warehousing/wave-allocation-method.md)<br><br>[Tidsplanera att skapa arbete under påfyllnad](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Skapande av behållare](../warehousing/wave-containerization.md)<br><br>[Meddelanden för påfyllnadskörning](../warehousing/wave-execution-notifications.md) |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
@@ -86,12 +86,12 @@ Se [Dynamics 365: 2021 utgivningsvåg 1 plan](/dynamics365-release-plan/2021wave
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Borttagna och inaktuella funktioner för Supply Chain Management
 
-De [borttagna eller föråldrade funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) i ämnet beskriver funktioner som har schemalagts eller är planerade att tas bort eller inaktuellt för Supply Chain Management.
+Artikeln [Borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver funktioner som har tagits bort eller planeras tas bort eller göras inaktuella för Supply Chain Management.
 
 - En *borttagen* funktion är inte längre tillgänglig i produkten.
 - En *borttagen* funktion är inte i aktiv utveckling och kan tas bort i en kommande uppdatering.
 
-Innan någon funktion tas bort från produkten visas understrykningsmeddelandet i ämnet [borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före avhämtningen.
+Innan någon funktion tas bort från produkten kommer meddelandet om inaktualitet att meddelas i artikeln [Borttagna eller inaktuella funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före borttagning.
 
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
 

@@ -1,6 +1,6 @@
 ---
 title: Kassaapparatfunktioner för Norge
-description: Det här ämnet innehåller en översikt över kassaregisterfunktionerna som är tillgängliga för Norge i Microsoft Dynamics 365 Commerce samt riktlinjer för hur du ställer in funktionen.
+description: Denna artikel innehåller en översikt över kassaregisterfunktionerna som är tillgängliga för Norge i Microsoft Dynamics 365 Commerce samt riktlinjer för hur du konfigurerar funktionen.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
-ms.openlocfilehash: bb87b3a7405ef3d8435748813fa66db74b8f0971
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 778a947f03866518219e9c0fa44660d66f19f53a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944974"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906709"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassaapparatfunktioner för Norge
 
 [!include[banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Norge i Dynamics 365 Commerce. Den innehåller även riktlinjer för att ställa in funktionen. Funktionen innehåller följande delar:
+Denna artikel innehåller en översikt över kassaapparatfunktioner för Norge i Dynamics 365 Commerce. Den innehåller även riktlinjer för att konfigurera funktionen. Funktionen innehåller följande delar:
 
 - Vanliga kassafunktioner som är tillgängliga för kunder i alla länder eller regioner. Exempel inkluderar ett alternativ för att förhindra att en kopia av ett kvitto skrivs ut mer än en gång.
 - Norgespecifika funktioner som digitala signaturer för försäljningstransaktioner.
@@ -80,7 +80,7 @@ Kvitton för Norge kan innehålla ytterligare information som har implementerats
 
 - **Kvittotitel** – Du kan lägga till ett fält i en layout för kvittoformat för att identifiera kvittotypen. Ett försäljningskvitto innehåller till exempel texten "Försäljningskvitto".
 - **Underskriven transaktionslöpnummer** – Serienumret för en signerad transaktion kan visas på kvittot för att koppla ett utskrivet kvitto till en digital signatur i databasen.
-- **Inleveranssummor** – Anpassade fält för inleveranssummor exkluderar icke-försäljningsbelopp från totala transaktionsbelopp. Belopp som inte är försäljningstransaktioner inkluderar belopp för följande operationer:
+- **Inleveranssummor** – Anpassade fält för inleveranssummor exkluderar icke-försäljningsbelopp från totala transaktionsbelopp. Belopp som inte är försäljningstransaktioner inkluderar belopp för följande åtgärder:
 
     - Förskottsbetalningar (insättning på kundkonto)
     - Förskottsbetalningar för försäljningsorder (insättning av kundorder)
@@ -89,7 +89,7 @@ Kvitton för Norge kan innehålla ytterligare information som har implementerats
 
 #### <a name="x-and-z-reports"></a>X- och Z-rapporter
 
-Informationen som tas med i X- och Z-rapporterna baseras på Norges krav. **Totala kontantförsäljningsbelopp** inkluderar till exempel bara belopp för kontantförsäljningstransaktioner och exkluderar presentkortsoperationer och förskottsbetalningar. Total kontantförsäljning visas också per artikelgrupp och betalningsmetod. Ackumulerad **total försäljning** och **returbelopp för totalsumma** underhålls och skrivs dessutom ut.
+Informationen som tas med i X- och Z-rapporterna baseras på Norges krav. **Totala kontantförsäljningsbelopp** inkluderar till exempel bara belopp för kontantförsäljningstransaktioner och exkluderar presentkortsåtgärder och förskottsbetalningar. Total kontantförsäljning visas också per artikelgrupp och betalningsmetod. Ackumulerad **total försäljning** och **returbelopp för totalsumma** underhålls och skrivs dessutom ut.
 
 #### <a name="saf-t-cash-register-audit-file"></a>Verifieringsfil för SAF-T kassaapparat
 
@@ -126,13 +126,13 @@ Dessutom, på snabbfliken **Bankkontoinformation** i fältet **Clearingnummer** 
 ### <a name="set-up-value-added-tax-vat-per-norwegian-requirements"></a>Ställ in moms (VAT) per norska krav
 
 
-Du måste skapa momskoder, momsgrupper och artikelmomsgrupper. Du måste även ställa in momsinformation för produkter och tjänster. Mer information om hur du ställer in och använder moms finns i [Momsöversikt](../../finance/general-ledger/indirect-taxes-overview.md).
+Du måste skapa momskoder, momsgrupper och artikelmomsgrupper. Du måste även konfigurera momsinformation för produkter och tjänster. Mer information om hur du konfigurerar och använder moms finns i [Momsöversikt](../../finance/general-ledger/indirect-taxes-overview.md).
 
 Du måste även ange momsgrupper och aktivera alternativet **Priser inkluderar moms** för butiker som finns i Norge.
 
 ### <a name="set-up-functionality-profiles"></a>Ställa in funktionsprofiler
 
-Du måste aktivera granskning och ställa in kvittonumrering.
+Du måste aktivera granskning och konfigurera kvittonumrering.
 
 ### <a name="update-pos-permissions-groups-and-individual-permission-settings-for-store-workers"></a>Uppdatera kassabehörighetsgrupper och enskilda behörighetsinställningar för arbetare i butiken
 
@@ -189,10 +189,10 @@ I Layoutdesigner för kvitto, lägg till följande anpassade fält i lämpliga k
 
 3. Sidfot:
 
-    - **Total (försäljning)** - Detta fält skriver ut kvittots totala kontanta försäljningsbelopp. Beloppet är exklusive skatt. Förskottsbetalningar och presentkortsoperationer exkluderas.
-    - **Momssumma (försäljning)** - Detta fält skriver ut kvittots totala momsbelopp för kontantförsäljning. Förskottsbetalningar och presentkortsoperationer exkluderas.
-    - **Summa med moms (försäljning)** - Detta fält skriver ut kvittots totala kontanta försäljningsbelopp. Beloppet är inklusive skatt. Förskottsbetalningar och presentkortsoperationer exkluderas.
-    - **Momsbelopp (försäljning)** - Detta fält skriver ut kvittots totala momsbelopp per momskod. Förskottsbetalningar och presentkortsoperationer exkluderas.
+    - **Total (försäljning)** - Detta fält skriver ut kvittots totala kontanta försäljningsbelopp. Beloppet är exklusive skatt. Förskottsbetalningar och presentkortsåtgärder exkluderas.
+    - **Momssumma (försäljning)** - Detta fält skriver ut kvittots totala momsbelopp för kontantförsäljning. Förskottsbetalningar och presentkortsåtgärder exkluderas.
+    - **Summa med moms (försäljning)** - Detta fält skriver ut kvittots totala kontanta försäljningsbelopp. Beloppet är inklusive skatt. Förskottsbetalningar och presentkortsåtgärder exkluderas.
+    - **Momsbelopp (försäljning)** - Detta fält skriver ut kvittots totala momsbelopp per momskod. Förskottsbetalningar och presentkortsåtgärder exkluderas.
 
 Mer information om hur du arbetar med kvittoformat finns i [Ställ in och designa inleveransformat](../receipt-templates-printing.md).
 
@@ -206,7 +206,7 @@ Konfigurationen för SAF-T-kassaregister kan hämtas från Microsoft Dynamics Li
 
 När du har importerat konfigurationerna på sidan **Commerce-parametrar** på fliken **Elektroniska dokument** i fältet **SAF-T kassaapparat exportformat**, välj namnet på formatkonfigurationen som importerades.
 
-Du måste också mappa obligatoriska huvuddata till fördefinierade S DE-T-standardkoder. Mer information finns i dokumentationen för SAF-T-kassaregistret som tillhandahålls av den norska momsadministrationen. Om du vill skapa mappningen måste du ställa in det nya fältet **SAF-T kassaregisterkod** på följande sidor:
+Du måste också mappa obligatoriska huvuddata till fördefinierade S DE-T-standardkoder. Mer information finns i dokumentationen för SAF-T-kassaregistret som tillhandahålls av den norska momsadministrationen. Om du vill skapa mappningen måste du konfigurera det nya fältet **SAF-T kassaregisterkod** på följande sidor:
 
 - Artikelgrupper
 - Betalningsmetoder

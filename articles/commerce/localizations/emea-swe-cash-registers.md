@@ -1,6 +1,6 @@
 ---
 title: Kassaapparatfunktioner för Sverige
-description: Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sverige.
+description: Den här artikeln innehåller en översikt över kassaapparatfunktioner för Sverige.
 author: EvgenyPopovMBS
 ms.date: 12/02/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7c303bef69658ecfd35f0c006ff3377f2d59bc1f51e64f0ea570102c81a424ca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 371ae61e2bf305765f9f551f95579093c5df9a62
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758350"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903640"
 ---
 # <a name="cash-register-functionality-for-sweden"></a>Kassaapparatfunktioner för Sverige
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sverige i Dynamics 365 Commerce. Den innehåller även riktlinjer för att ställa in funktionen. Funktionen innehåller följande delar:
+Den här artikeln innehåller en översikt över kassaapparatfunktioner för Sverige i Dynamics 365 Commerce. Den innehåller även riktlinjer för att ställa in funktionen. Funktionen innehåller följande delar:
 
 - Vanliga kassafunktioner som är tillgängliga för kunder i alla länder eller regioner som ett alternativ för att förhindra försäljning och returer från att slås samman i ett kvitto
 - Sverige-specifika funktioner, t.ex. ytterligare räknare i dagliga kassarapporter

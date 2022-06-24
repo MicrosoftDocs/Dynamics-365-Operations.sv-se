@@ -1,6 +1,6 @@
 ---
 title: Inventory Visibility-stöd för WHS-artiklar
-description: Detta ämne beskriver stöd för Lagersynlighet för artiklar som har aktiverats för avancerade lagerstyrningsprocesser (lagerstyrda artiklar).
+description: Denna artikel beskriver stöd för Lagersynlighet för artiklar som har aktiverats för avancerade lagerstyrningsprocesser (lagerstyrda artiklar).
 author: yufeihuang
 ms.date: 03/10/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-10
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: cfbff05697f4159cb74d110887b8029f28fbf96b
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: ec2254d6cf203216acea88fdfb54ad491abdeb49
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625410"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895682"
 ---
 # <a name="inventory-visibility-support-for-whs-items"></a>Inventory Visibility-stöd för WHS-artiklar
 
 [!include [banner](../includes/banner.md)]
 
-Detta ämne beskriver stöd för Lagersynlighet för artiklar som har aktiverats för avancerade lagerstyrningsprocesser (lagerstyrda artiklar). Den funktion som lägger till den här kapaciteten i Lagersynlighet kallas *Avancerad lagerstyrning*.
+Denna artikel beskriver stöd för Lagersynlighet för artiklar som har aktiverats för avancerade lagerstyrningsprocesser (lagerstyrda artiklar). Den funktion som lägger till den här kapaciteten i Lagersynlighet kallas *Avancerad lagerstyrning*.
 
 ## <a name="whs-items"></a>Lagerstyrda artiklar
 
@@ -35,7 +35,7 @@ För mer information om lagerstyrning och modulen **Warehouse Management** i Mic
 Den avancerade lagerstyrningsfunktionen för lagersynlighet fokuserar på beräkningar av lagerbehållningskvantitet som baseras på lagerbehållningsfrågor. Funktionen ska inte användas för att använda lagersynlighet för att hantera bearbetningsaktiviteter för lagerställen i allmänhet. Lagersynlighet innebär inte att lagerställespecifika koncept exponeras för användarna. Här följer några exempel på dessa koncept:
 
 - Reservationshierarki
-- Oavsett om en artikel eller ett lager är lagerstyrt 
+- Oavsett om en artikel eller ett lager är lagerstyrt
 - Enhetssekvensgrupp-ID
 - Lagerställespecifika processer, t.ex. leveranser, lastning, påfyllnader och arbete
 

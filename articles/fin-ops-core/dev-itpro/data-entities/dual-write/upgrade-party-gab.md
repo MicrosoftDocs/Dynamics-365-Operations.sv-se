@@ -1,6 +1,6 @@
 ---
-title: Uppgradera till part- och globala adressboksmodellen.
-description: I detta ämne beskrivs hur du uppgraderar data för dubbelskrivning till parten samt till den globala adressboksmodellen..
+title: Uppgradera till part- och globala adressboksmodellen
+description: I denna artikel beskrivs hur du uppgraderar data för dubbelskrivning till parten samt till den globala adressboksmodellen..
 author: RamaKrishnamoorthy
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 10c5d9eb3f98887be976c2331f4d34530628702c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688387"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895288"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Uppgradera till part- och globala adressboksmodellen
 
@@ -40,7 +40,7 @@ I slutet av processen genereras följande kommaavgränsade värden (.csv).
 | ImportFONewPostalAddress.csv | Den här filen hjälper till att skapa nya **postadress** poster i appen för ekonomi och drift. |
 | ImportFONewElectronicAddress.csv | Den här filen hjälper till att skapa nya **elektronisk adress** poster i appen för ekonomi och drift. |
 
-I detta ämne finns instruktioner om hur du använder Data Factory-mallar och uppgraderar dina data. Om du inte har några anpassningar kan du använda mallar som de är. Men om du har anpassningar för data för **Konto**, **Kontakt** och **Leverantör** måste du ändra mallarna som beskrivs i detta ämne.
+I denna artikel finns instruktioner om hur du använder Data Factory-mallar och uppgraderar dina data. Om du inte har några anpassningar kan du använda mallar som de är. Men om du har anpassningar för data för **Konto**, **Kontakt** och **Leverantör** måste du ändra mallarna som beskrivs i detta ämne.
 
 > [!IMPORTANT]
 > Det finns särskilda instruktioner om du ska köra mallen för partens postadress och den elektroniska adressen för parten. Du måste först köra partmallen, sedan mallen för partens postadress och sedan mallen för den elektroniska adressen för parten. Varje mall har utformats för import i en separat datafabrik.

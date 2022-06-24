@@ -1,6 +1,6 @@
 ---
 title: Underhåll av attributtyper
-description: Det här avsnittet beskriver hur du skapar attributtyper i tillgångshantering.
+description: Denna artikel beskriver hur du skapar attributtyper i Tillgångshantering.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec5552d96473403931bbd513ae68ef0fe3069209f52e813963914417ad41b88a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5a0aca3ccf24505c064ad59f0adafb771056ba95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739141"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887672"
 ---
 # <a name="maintenance-attribute-types"></a>Underhåll av attributtyper
 
@@ -28,21 +28,21 @@ ms.locfileid: "6739141"
 
  
 
-Det här avsnittet beskriver hur du skapar attributtyper i tillgångshantering. Attribut används för att beskriva egenskaperna för olika element. Du kan ställa in attribut på följande element:
+Denna artikel beskriver hur du skapar attributtyper i Tillgångshantering. Attribut används för att beskriva egenskaperna för olika element. Du kan konfigurera attribut på följande element:
 
 - [Funktionsplatstyper](../setup-for-functional-locations/functional-location-types.md)
 - [Skapa funktionsplatser](../functional-locations/create-functional-locations.md)
 - [Tillgångstyper](../setup-for-objects/object-types.md)
 - Tillgångar
 
-Attributen som du kan ställa in varierar beroende på elementet. För en funktionsplats kan du till exempel ställa in attribut för konfigurationen och den fysiska storleken på platsen. För en tillgångstyp eller en tillgång kan du ställa in attribut för motorvolym, energiförbrukning och maximal lastkapacitet under olika förhållanden.
+Attributen som du kan konfigurera varierar beroende på elementet. För en funktionsplats kan du till exempel konfigurera attribut för konfigurationen och den fysiska storleken på platsen. För en tillgångstyp eller en tillgång kan du konfigurera attribut för motorvolym, energiförbrukning och maximal lastkapacitet under olika förhållanden.
 
 ## <a name="create-attribute-types"></a>Skapa attributstyper
 
 Du kan skapa egna attributtyper. Dessutom kan du överföra produktdimensioner till sidan **attributtyper**.
 
 1. Välj **attributtyper** \> **inställningar** \> **attributtyper**.
-2. Första gången du ställer in attributtyper väljer du **Skapa produktdimensioner** för att automatiskt överföra standardproduktdimensioner.
+2. Första gången du konfigurerar attributtyper väljer du **Skapa produktdimensioner** för att automatiskt överföra standardproduktdimensioner.
 3. Skapa en ny attributtyp genom att välja **Nytt**.
 4. I fältet **Attributtyp** anger du ett namn på attributtypen.
 5. Ange en beskrivning i fältet **beskrivning**.

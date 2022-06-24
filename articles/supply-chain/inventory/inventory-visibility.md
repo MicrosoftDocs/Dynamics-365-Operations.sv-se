@@ -1,6 +1,6 @@
 ---
-title: Översikt över tillägg för Lagersynlighet
-description: Detta avsnitt förklarar vad Lagersynlighet är och beskriver dess funktioner.
+title: Tillägg för Inventory Visibility – översikt
+description: Denna artikel förklarar vad Lagersynlighet är och beskriver dess funktioner.
 author: yufeihuang
 ms.date: 03/18/2022
 ms.topic: overview
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9eb8a135d2415c867c746a1c40a80cdb84819c0e
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: 782545ea38a209eb4430607f5bca96e4e930efdc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547913"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897644"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Översikt över tillägg för Lagersynlighet
 
@@ -31,7 +31,7 @@ Tillägget för lagersynlighet (kallas även *tjänsten Lagersynlighet*) tillhan
 
 ## <a name="extensibility"></a>Utbyggbarhet
 
-Tjänsten Lagerhantering är mycket utökningsbar eftersom inmatning och utdata inte är begränsade till Microsoft-program. Externa system kan komma åt tjänsten via RESTful application programming interfaces (API). Förutom att använda de "fördefinierade"-mappningar som finns för datakällan och dimensionerna i Supply Chain Management, kan du integrera lagersynlighet med flera tredjepartssystem genom att ställa in ytterligare datakällor, mått på lagerstatus (som kallas för *fysiska mått* i lagertjänst) och lagerdimensioner via konfigurationsprogrammet. På det här sättet kan du växla fråga och ändra flera datakällor och fördefinierade lagerdimensioner.
+Tjänsten Lagerhantering är mycket utökningsbar eftersom inmatning och utdata inte är begränsade till Microsoft-program. Externa system kan komma åt tjänsten via RESTful application programming interfaces (API). Förutom att använda de "fördefinierade"-mappningar som finns för datakällan och dimensionerna i Supply Chain Management, kan du integrera lagersynlighet med flera tredjepartssystem genom att konfigurera ytterligare datakällor, mått på lagerstatus (som kallas för *fysiska mått* i lagertjänst) och lagerdimensioner via konfigurationsprogrammet. På det här sättet kan du växla fråga och ändra flera datakällor och fördefinierade lagerdimensioner.
 
 Eftersom lagersynligheten bygger på kan Microsoft Dataverse dess data dessutom användas för att bygga och integrera med Power Apps. Du kan också använda Power BI för att skapa anpassade instrumentpaneler som uppfyller dina affärskrav.
 
@@ -59,11 +59,11 @@ Synligheten i ditt framtida projekterade lager (inklusive leverans, efterfrågan
 - Underlätta bearbetning av interna order så att försäljare kan beräkna leverans- och leveransdatum, baserat på tillgängligheten för de produkter som beställts.
 - Ge insyn i när kunder kan förvänta sig att en artikel som inte finns i lager blir tillgänglig via nästa tillgängliga datum.
 
-ATP-funktionen är lätt att använda i din dagliga beställningsprocess. Viktigast av allt, precis som andra erbjudanden om lagersynlighet, är ATP-funktionen *global och realtid*. Därför kan du ställa in flera ATP-beräkningsformler för att få fullständiga frågor om lagertillgänglighet som täcker alla dina affärskanaler och datakällor. Mer information finns i [Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova](inventory-visibility-available-to-promise.md).
+ATP-funktionen är lätt att använda i din dagliga beställningsprocess. Viktigast av allt, precis som andra erbjudanden om lagersynlighet, är ATP-funktionen *global och realtid*. Därför kan du konfigurera flera ATP-beräkningsformler för att få fullständiga frågor om lagertillgänglighet som täcker alla dina affärskanaler och datakällor. Mer information finns i [Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova](inventory-visibility-available-to-promise.md).
 
 ### <a name="compatibility-with-advanced-warehouse-management-items"></a>Kompatibilitet med avancerade lagerstyrningsartiklar
 
-Microsoft strävar efter att tillhandahålla fördefinierade integration med avancerad lagerhantering (WHS), så att WHS-kunder också kan dra nytta av fördelarna med Lagersynlighet-tjänsten. Enligt utgivningscykel 1 2022 (offentlig förhandsvisning i mars) stöder inventeringstjänsten WHS-förfrågningar och ATP. Den mjuka reservationen och allokeringsfunktionen stöds för WHS-kunder i nästa cykel. Mer information finns i [Stöd för lagersynlighet för WHS-artiklar](inventory-visibility-whs-support.md).
+Microsoft strävar efter att tillhandahålla fördefinierade integrering med avancerad lagerhantering (WHS), så att WHS-kunder också kan dra nytta av fördelarna med Lagersynlighet-tjänsten. Enligt utgivningscykel 1 2022 (offentlig förhandsvisning i mars) stöder inventeringstjänsten WHS-förfrågningar och ATP. Den mjuka reservationen och allokeringsfunktionen stöds för WHS-kunder i nästa påfyllnad. Mer information finns i [Stöd för lagersynlighet för WHS-artiklar](inventory-visibility-whs-support.md).
 
 ## <a name="licensing"></a>Licensiering
 

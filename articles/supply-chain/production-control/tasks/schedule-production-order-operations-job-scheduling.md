@@ -1,6 +1,6 @@
 ---
-title: Tidsplanera en produktionsorder med operationer och jobbplanering
-description: Det här avsnittet fokuserar på tidsplanering av en produktionsorder med grovplanering och finplanering.
+title: Tidsplanera en produktionsorder med åtgärder och jobbplanering
+description: Denna artikel fokuserar på tidsplanering av en produktionsorder med grovplanering och finplanering.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc91fe5aa398cd94e38beea017d6d60ecb44f17e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d82d5439e57c02ddc9db4222a946bd15f4ed67e4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574387"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903939"
 ---
-# <a name="schedule-a-production-order-with-operations-and-job-scheduling"></a>Tidsplanera en produktionsorder med operationer och jobbplanering
+# <a name="schedule-a-production-order-with-operations-and-job-scheduling"></a>Tidsplanera en produktionsorder med åtgärder och jobbplanering
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet fokuserar på tidsplanering av en produktionsorder med grovplanering och finplanering. Inga jobb skapas med grovplanering medan jobb skapas med finplanering. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF. Den här proceduren är avsedd för produktionschefen, produktionsplaneraren eller butikens arbetsledare som arbetar i en miljö med diskret tillverkning.
+Denna artikel fokuserar på tidsplanering av en produktionsorder med grovplanering och finplanering. Inga jobb skapas med grovplanering medan jobb skapas med finplanering. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF. Den här proceduren är avsedd för produktionschefen, produktionsplaneraren eller butikens arbetsledare som arbetar i en miljö med diskret tillverkning.
 
 
 ## <a name="create-a-production-order"></a>Skapa en produktionsorder
@@ -36,7 +36,7 @@ Det här avsnittet fokuserar på tidsplanering av en produktionsorder med grovpl
 ## <a name="schedule-operations-for-the-production-order"></a>Tidsplanera åtgärder för produktionsordern.
 1. Markera den nyss skapade raden.      
 2. I åtgärdsfönstret, välj **Tidsplan**.
-3. Välj **Tidsplanera operationer**.
+3. Välj **Tidsplanera åtgärder**.
 4. Välj **Framåt från tidsplaneringsdatum** i fältet **Planeringsriktning**.
 5. Ange ett datum i fältet **Planeringsdatum**. Välj ett framtida datum, till exempel idag plus en vecka. Med den valda planeringsriktningen kommer produktionsordern att tidsplaneras framåt från det här datumet.  
 6. Välj **OK**.

@@ -1,6 +1,6 @@
 ---
-title: Välj ett tema för webbplatsen
-description: I det här avsnittet beskrivs hur du ställer in eller ändrar webbplatstema i Microsoft Dynamics 365 Commerce.
+title: Välja ett tema för webbplatsen
+description: I denna artikel beskrivs hur du konfigurerar eller ändrar webbplatstemat i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a13400258a86087b6137b08ca724cbbfc1a90ad4
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: b038dc996c571d54dce3f2aec679f7af8af85074
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964791"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900396"
 ---
 # <a name="select-a-site-theme"></a>Välja ett tema för webbplatsen
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in eller ändrar webbplatstema i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du konfigurerar eller ändrar webbplatstemat i Microsoft Dynamics 365 Commerce.
 
 En webbplats layout och stil (t.ex. teckensnitt, storlekar och färger) definieras av det tema som du väljer och tillämpar på webbplatsen. Ett tema skapas och distribueras av en utvecklare på ditt företag. En översikt över teman finns i [Översikt över teman](e-commerce-extensibility/theming.md). Mer information om hur du skapar och distribuerar teman finns i [Skapa ett nytt tema](e-commerce-extensibility/create-theme.md).
 

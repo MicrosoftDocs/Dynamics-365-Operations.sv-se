@@ -1,6 +1,6 @@
 ---
-title: Rensningsjobb för lagerbehållningsposter för lagerställe
-description: Det här ämnet beskriver rensningsjobbet för lagerbehållningen, vilket förbättrar systemets prestanda genom att identifiera och ta bort relaterade poster som inte behövs.
+title: Jobbet Rensning av behållningsposter för distributionslagerhantering
+description: Denna artikel beskriver rensningsjobbet för lagerbehållningen, vilket förbättrar systemets prestanda genom att identifiera och ta bort relaterade poster som inte behövs.
 author: perlynne
 ms.date: 04/23/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: b2bdfb7fa0c9c4d9e1f630a41357dc405f0082bc
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 7f054f4f479affe8ca2e041c77bd6fd11d51378e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103873"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900518"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Rensningsjobb för lagerbehållningsposter för lagerställe
 
@@ -26,7 +26,7 @@ ms.locfileid: "8103873"
 
 Prestanda för frågor som används för att beräkna lagerbehållning påverkas av antalet poster i registren som ingår. Ett sätt att förbättra prestandan är att minska antalet poster som måste beaktas i databasen.
 
-Det här ämnet beskriver rensningsjobbet för lagerbehållningen, vilket innebär att poster som inte behövs i tabellerna InventSum och WHSInventReserve tas bort. Dessa register lagrar behållningsinformation för artiklar som aktiveras för bearbetning av lagerstyrning. (Dessa objekt kallas WHS-artiklar). Om du tar bort dessa poster kan du förbättra prestanda för lagerbehållningen avsevärt.
+Denna artikel beskriver rensningsjobbet för lagerbehållningen, vilket innebär att poster som inte behövs i tabellerna InventSum och WHSInventReserve tas bort. Dessa register lagrar behållningsinformation för artiklar som aktiveras för bearbetning av lagerstyrning. (Dessa objekt kallas WHS-artiklar). Om du tar bort dessa poster kan du förbättra prestanda för lagerbehållningen avsevärt.
 
 ## <a name="what-the-cleanup-job-does"></a>Vad rensningsjobbet gör
 
@@ -52,7 +52,7 @@ När jobbet körs har det en genomförande storlek på 100. Med andra ord görs 
 Användare kan påverkas om rensningsjobbet för behållningstransaktioner tar bort alla poster för en viss nivå (t.ex. ID-nummernivå). I det här fallet kanske funktionen för att se att lagret tidigare var tillgängligt på en ID-numret inte fungerar som förväntat, eftersom de relevanta behållningsposterna inte längre är tillgängliga. Detta kan till exempel upplevas i följande situationer:
 
 - I **Behållningslista**, när användaren avmarkerar villkoret **Kvantitet \<\> 0** eller väljer villkoret **Stängda transaktioner** i inställningarna **Dimensionsvisning**.
-- I en rapport **Fysiskt lager per lagerdimension** för tidigare perioder när användaren ställer in parametern **från och med datum**.
+- I en rapport **Fysiskt lager per lagerdimension** för tidigare perioder när användaren konfigurerar parametern **från och med datum**.
 
 Den prestandaförbättring som rensningsjobbet tillhandahåller bör dock göra att dessa små förluster i funktionen förbättras.
 

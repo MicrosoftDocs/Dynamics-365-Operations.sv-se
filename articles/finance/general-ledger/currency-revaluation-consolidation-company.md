@@ -1,6 +1,6 @@
 ---
 title: Valutaomvärdering i ett konsolideringsföretag
-description: Detta avsnitt beskriver hur du omvärderar valuta i ett konsolideringsföretag.
+description: Denna artikel beskriver hur du omvärderar valuta i ett konsolideringsföretag.
 author: aprilolson
 ms.date: 10/02/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67e19b744bfe33624ce2c4212073050012b93f03
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 8fbbc1d0a7ae5b7e288710c99a6af362b3db3d36
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713316"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889016"
 ---
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Valutaomvärdering i ett konsolideringsföretag
 

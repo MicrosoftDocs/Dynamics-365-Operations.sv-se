@@ -1,6 +1,6 @@
 ---
 title: Skapa underhållsbegäranden
-description: I det här avsnittet beskrivs hur du skapar en underhållsbegäran i tillgångshantering.
+description: I denna artikel beskrivs hur du skapar en underhållsbegäran i Tillgångshantering.
 author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4b48a0504b79d2edf7815296312c7839052092e7d6773b7ebd5d38cbb59c9428
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c3def1b8ebd75da44588732d9f54a1cc03c999c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714990"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891246"
 ---
 # <a name="create-maintenance-requests"></a>Skapa underhållsbegäranden
 
@@ -32,9 +32,9 @@ Underhållsbegäran kan användas om underhållsarbetare eller produktionsarbeta
 
 **Exempel:** när en underhållsarbetare gör en reparation, upptäcker de att en annan tillgång på samma plats måste servas. Underhållsarbetaren har dock inte tid eller nödvändiga reservdelar för att utföra reparationsjobbet. Därför skapar de en underhållsbegäran på tillgången och anger en kort beskrivning av problemet.
 
-Avsnittet **aktiva underhållsbegäran** i rutan **relaterad information** till höger på sidan **alla tillgångar** eller **aktiva tillgångar** (**tillgångshantering** \> **allmänt** \> **tillgångar** \> **alla tillgångar** eller **aktiva tillgångar**) visar aktiva underhållsbegäran som är kopplade till den valda tillgången.
+Avsnittet **aktiva underhållsbegäran** i rutan **relaterad information** till höger på sidan **alla tillgångar** eller **aktiva tillgångar** (**Tillgångshantering** \> **allmänt** \> **tillgångar** \> **alla tillgångar** eller **aktiva tillgångar**) visar aktiva underhållsbegäran som är kopplade till den valda tillgången.
 
-1. Välj **tillgångshantering** \> **allmänt** \> **underhållbegäran** \> **alla underhållbegäran** eller **aktiva underhållbegäran**.
+1. Välj **Tillgångshantering** \> **allmänt** \> **underhållbegäran** \> **alla underhållbegäran** eller **aktiva underhållbegäran**.
 2. Välj **Ny**.
 3. I dialogrutan **Skapa begäran** i fältet **underhållsbegärantyp** väljer du typ av underhållsbegäran. En standardtyp föreslås.
 4. I fältet **beskrivning** anger du ett namn eller en rubrik som kortfattat beskriver underhållsbegäran.

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 30530a9870ba2ff0546237d2698d1675afa78104
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 2ac8811a5c10490d90f782472d3c198474c7edc0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770206"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889132"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Skapa avancerad bankavstämningsimport med hjälp av elektronisk rapportering
 
 [!include [banner](../includes/banner.md)]
 
-Funktionen för avancerad bankavstämning låter dig importera elektroniska bankutdrag och utföra en automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 Finance. Detta ämne innehåller en beskrivning av hur du konfigurerar importfunktionen för dina bankutdrag. Inställningen för import av bankutdrag varierar beroende på formatet på det elektroniska bankutdraget. Microsoft Dynamics 365 Finance stöder tre färdiga format för bankutdrag: ISO20022, MT940 and BAI2. 
+Funktionen för avancerad bankavstämning låter dig importera elektroniska bankutdrag och utföra en automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 Finance. Den här artikeln innehåller en beskrivning av hur du ställer in importfunktionen för bankutdrag. Inställningen för import av bankutdrag varierar beroende på formatet på det elektroniska bankutdraget. Microsoft Dynamics 365 Finance stöder tre färdiga format för bankutdrag: ISO20022, MT940 and BAI2. 
 
 ## <a name="set-up-the-electronic-reporting-configuration"></a>Ställa in konfigurationen för elektronisk rapportering
 

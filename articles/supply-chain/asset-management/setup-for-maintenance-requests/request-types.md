@@ -1,6 +1,6 @@
 ---
-title: Underhåll begärandetyper
-description: I det här avsnittet beskrivs hur du ställer in en typ av underhållsbegäran i tillgångshantering.
+title: Typer av underhållsbegäranden
+description: I denna artikel beskrivs hur du konfigurerar en typ av underhållsbegäran i Tillgångshantering.
 author: johanhoffmann
 ms.date: 07/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f51c90f72120d236ae9acf3fbcb8ac98fdc8cdf3d3bd032b3a3a3d317483b070
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a2d707cc9c0aa4863968651a8434883cc1322eb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721497"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888713"
 ---
 # <a name="maintenance-request-types"></a>Underhåll begärandetyper
 
@@ -32,7 +32,7 @@ Typer av underhållsbegäran används för att kategorisera underhållsbegärand
 
 En typ av underhållbegäran definierar anslutningen med en livscykeltillståndgrupp för underhållsbegäran (underhållslivscykelmodell). Livscykelmodeller för underhållsbegäran definierar de livscykeltillstånd som kan ställas in för en underhållsbegäran. (Exempel på livscykeltillstånd för underhållsbegäran inkluderar **skapad**, **aktiv** och **avslutad**.)
 
-1. Välj **tillgångshantering** \> **inställningar** \> **underhållbegäran** \> **underhållbegärantyper**.
+1. Välj **Tillgångshantering** \> **inställningar** \> **underhållbegäran** \> **underhållbegärantyper**.
 2. Välj **ny** för att skapa en typ av underhållsbegäran.
 3. I fältet **underhållbegärantyp** anger du ett ID för underhållbegärantypen.
 4. Ange sedan ett namn i fältet **Namn**.

@@ -1,6 +1,6 @@
 ---
 title: Hemtagningskostnad jämfört med Transporthantering
-description: Microsoft Dynamics 365 Supply Chain Management tillhandahåller två olika moduler för att arbeta med transport, Transporthantering (TMS) och Hemtagningskostnad. I det här avsnittet sammanfattas de funktioner som de två modulerna har gemensamt och skillnaderna mellan dem beskrivs.
+description: Microsoft Dynamics 365 Supply Chain Management tillhandahåller två olika moduler för att arbeta med transport, Transporthantering (TMS) och Hemtagningskostnad. detta ämne sammanfattas de funktioner som de två modulerna har gemensamt, och skillnaderna mellan dem beskrivs.
 author: Weijiesa
 ms.date: 12/04/2020
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8c59d7d1887986d308cb591ece077cff9f4648a5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 40489ff8d8683d19a5f726546cc4c43cc3e7a05d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690398"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905933"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Hemtagningskostnad jämfört med Transporthantering
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management tillhandahåller två olika moduler för att arbeta med transport, **Transporthantering** (TMS) och **Hemtagningskostnad**. I det här avsnittet sammanfattas de funktioner som de två modulerna har gemensamt och skillnaderna mellan dem beskrivs. Du kan använda den här informationen för att avgöra vilken modul som passar bäst för din verksamhet. Du kanske tycker att vissa av affärsrutinerna fungerar bättre med TMS, medan andra fungerar bäst med hemtagningskostnad. Därefter kan du, beroende på företagets verksamhetsbehov, välja att använda en modul exklusivt, eller kombinera de två modulerna.
+Microsoft Dynamics 365 Supply Chain Management tillhandahåller två olika moduler för att arbeta med transport, **Transporthantering** (TMS) och **Hemtagningskostnad**. detta ämne sammanfattas de funktioner som de två modulerna har gemensamt, och skillnaderna mellan dem beskrivs. Du kan använda den här informationen för att avgöra vilken modul som passar bäst för din verksamhet. Du kanske tycker att vissa av affärsrutinerna fungerar bättre med TMS, medan andra fungerar bäst med hemtagningskostnad. Därefter kan du, beroende på företagets verksamhetsbehov, välja att använda en modul exklusivt, eller kombinera de två modulerna.
 
-Detta avsnitt är en inte omfattande granskning av alla funktioner i någon av modulerna. Istället markerar det den tillgängliga funktionen som gäller för transport av varor från en leverantör till ditt företags lagerställe, där det kan förbrukas.
+Denna artikel utgör ingen omfattande granskning av alla funktioner i någon av modulerna. Istället markerar det den tillgängliga funktionen som gäller för transport av varor från en leverantör till ditt företags lagerställe, där det kan förbrukas.
 
 ## <a name="terminology-reference-data-and-reporting-differences"></a>Terminologi, referensdata och rapporteringsdifferenser
 
@@ -56,9 +56,9 @@ Dessa rapporter förutsätter att varor sätts i transit så snart du utfärdar 
 
 ## <a name="using-the-two-modules-together"></a>Använda de två modulerna tillsammans
 
-Du kan använda TMS för både inkommande och utgående operationer. Trots att hemtagningskostnad har de flesta grundläggande funktioner som TMS för inkommande operationer, lägger den även till vissa funktioner. Därför bör du överväga att använda TMS för utgående operationer och hemtagningskostnad för inkommande operationer.
+Du kan använda TMS för både inkommande och utgående åtgärder. Trots att hemtagningskostnad har de flesta grundläggande funktioner som TMS för inkommande åtgärder, lägger den även till vissa funktioner. Därför bör du överväga att använda TMS för utgående åtgärder och hemtagningskostnad för inkommande åtgärder.
 
-I allmänhet rekommenderar vi inte att du använder båda modulerna tillsammans för inkommande operationer. Du bör använda den modul som bäst uppfyller dina behov. Om du använder de två modulerna tillsammans får du inte dela källdokument mellan dem. Du ska till exempel inte använda samma inköpsorder för både en last i TMS och en färd i hemtagningskostnad. Du måste särskilt se till att du inte ställer in systemet så att inkommande laster skapas automatiskt. Om artiklar från inköpsorder inkluderas i en inköpsorder, kan de inte hanteras som en del av en last.
+I allmänhet rekommenderar vi inte att du använder båda modulerna tillsammans för inkommande åtgärder. Du bör använda den modul som bäst uppfyller dina behov. Om du använder de två modulerna tillsammans får du inte dela källdokument mellan dem. Du ska till exempel inte använda samma inköpsorder för både en last i TMS och en färd i hemtagningskostnad. Du måste särskilt se till att du inte konfigurerar systemet så att inkommande laster skapas automatiskt. Om artiklar från inköpsorder inkluderas i en inköpsorder, kan de inte hanteras som en del av en last.
 
 ## <a name="goods-in-transit"></a>Varor på väg
 
@@ -120,13 +120,13 @@ En viktig funktion för både TMS och hemtagningskostnad är möjligheten att sp
 
 ### <a name="tms-tracking-features"></a>TMS spårningsfunktioner
 
-TMS ger begränsade funktioner för spårning av inkommande laster. Här visas datum och det går att skapa en integration för att hitta den exakta positionen (till exempel på sidan **Transportstatus**).
+TMS ger begränsade funktioner för spårning av inkommande laster. Här visas datum och det går att skapa en integrering för att hitta den exakta positionen (till exempel på sidan **Transportstatus**).
 
 För varje flödessegment kan du ange uppskattade tidsplaner och ankomsttider.
 
 ### <a name="landed-cost-tracking-features"></a>Spårningsfunktioner för hemtagningskostnader
 
-Hemtagningskostnad kan ge spårningskontroll för varje destination, från ursprungsporten till den slutliga destinationen. Spårningskontroll ställer in status för färden. Statusen anger om färden är beroende av händelsen, eller om den är i tullen för inspektion eller i lokal leverans på väg till det slutliga lagerstället. Statusen kan ställas in på nivån för inköpsorderraden, behållaren och huvudet för inköpsordern. Därför har du mer finkontroll.
+Hemtagningskostnad kan ge spårningskontroll för varje destination, från ursprungsporten till den slutliga destinationen. Spårningskontroll konfigurerar status för färden. Statusen anger om färden är beroende av händelsen, eller om den är i tullen för inspektion eller i lokal leverans på väg till det slutliga lagerstället. Statusen kan ställas in på nivån för inköpsorderraden, behållaren och huvudet för inköpsordern. Därför har du mer finkontroll.
 
 Ett bekräftat förväntat datum som baseras på angivna ledtider associeras dessutom med varje steg i en resa. De bekräftade och förväntade leveransdatumen läggs till på inköpsorderraden och order för varor på väg och kan användas för huvudplanering och logistik. Förutom de förväntade datumen kan de faktiska datumen uppdateras. De efterföljande stegen i en resa uppdateras sedan.
 
@@ -172,7 +172,7 @@ Med fraktprissökning kan ett företag välja en transportleverantör baserat p�
 
 TMS låter dig identifiera leverantörs- och flödeslösningar för inkommande och utgående order. Du kan till exempel identifiera det snabbaste flödet eller den minst kostsamma tariffen för en leverans.
 
-TMS tillhandahåller fullständig prisinköp och fraktoptimering med hjälp av workbench för tariff/rutt, flexibla värderingsalternativ via värderingsmotorn, ett värderingsmotor-API för integration med externa parter och stöd för volymvikt.
+TMS tillhandahåller fullständig prisinköp och fraktoptimering med hjälp av workbench för tariff/rutt, flexibla värderingsalternativ via värderingsmotorn, ett värderingsmotor-API för integrering med externa parter och stöd för volymvikt.
 
 Mer information finns i [Transporthanteringsmotorer](../transportation/transportation-management-engines.md).
 
@@ -180,17 +180,17 @@ Mer information finns i [Transporthanteringsmotorer](../transportation/transport
 
 Hemtagningskostnad ger bara begränsat stöd för fraktprissökning per leverantör. Även om du kan ange värden för fraktspeditör, jämför inte hemtagningskostnad dem mellan flera leverantörer.
 
-## <a name="driver-check-incheck-out-with-appointment-scheduling"></a>Incheckning/utcheckning av förare med transportplanering
+## <a name="driver-check-incheck-out-with-appointment-scheduling"></a>Incheckning/kassa av förare med transportplanering
 
-Med funktionen för incheckning/utcheckning av förare kan systemet övervaka inkommande och förhindra att lastningsplatsen överbelastas.
+Med funktionen för incheckning/kassa av förare kan systemet övervaka inkommande och förhindra att lastningsplatsen överbelastas.
 
-### <a name="tms-driver-check-incheck-out-features"></a>TMS in- och utcheckning för förare, funktioner
+### <a name="tms-driver-check-incheck-out-features"></a>TMS in- och kassa för förare, funktioner
 
 TMS låter dig skapa *möten*. Ett möte representerar händelser som inträffar vid en lastningsplats för att få en inköpsorder, leverans av en försäljningsorder eller för att bearbeta en inkommande eller utgående last på ett visst datum eller en viss tid. Möten säkerställer att det finns platser för lastning och avlastning av varor, och de förhindrar situationer där flera transportföretag anländer till en plats samtidigt.
 
 Systemet medger att förarna kan checka in på en viss lastbrygga.
 
-### <a name="landed-cost-driver-check-incheck-out-features"></a>Hemtagningskostnad in- och utcheckning för förare, funktioner
+### <a name="landed-cost-driver-check-incheck-out-features"></a>Hemtagningskostnad in- och kassa för förare, funktioner
 
 Hemtagningskostnad kan lagra uppskattningar för datum och tid när en behållare ska levereras.
 

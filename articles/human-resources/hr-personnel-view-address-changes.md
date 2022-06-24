@@ -1,6 +1,6 @@
 ---
 title: Visa och hantera adressändringar
-description: I det här avsnittet beskrivs hur du kan visa och hantera adressändringar i Dynamics 365 Human Resources.
+description: I den här artikeln beskrivs hur du kan visa och hantera adressändringar i Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 819f22c58da485980c38d35dcc6dda6aebacf423
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 744ab532fcc663f25ce376817779924bbef15432
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695857"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899597"
 ---
 # <a name="view-and-manage-address-changes"></a>Visa och hantera adressändringar
 
@@ -27,7 +27,7 @@ ms.locfileid: "8695857"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I detta ämne beskrivs hur du kan visa och hantera adressändringar på sidan **Redigera personliga uppgifter** (som du öppnar via sidan **Självbetjäning för medarbetare**) eller informationssidan för **Medarbetare** i Dynamics 365 Human Resources.
+I denna artikel beskrivs hur du kan visa och hantera adressändringar på sidan **Redigera personliga uppgifter** (som du öppnar via sidan **Självbetjäning för medarbetare**) eller informationssidan för **Medarbetare** i Dynamics 365 Human Resources.
 
 Många företag vill att medarbetare ska hantera sina egna personliga uppgifter genom en självbetjäningsupplevelse. Du kan låta användarna uppdatera sin adress i arbetsytan **Självbetjäning för medarbetare**. Du kan sedan övervaka dessa ändringar i arbetsytan **personalhantering**. Om du vill använda den här funktionen måste du ange antalet dagar som du vill visa ändringar på sidan **personalparametrar**.
 

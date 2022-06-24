@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43cbecf80ff70dac058977932c3a0bb03662cd98a88c68407051bdc584609d84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2361fa0df3fe60813e75c772134299ad948f3582
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767204"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888203"
 ---
 # <a name="list-of-er-functions-in-the-logical-category"></a>Lista över ER-funktioner i logisk kategori
 
 [!include [banner](../includes/banner.md)]
 
-Logiska funktioner för elektronisk rapportering (ER) kan användas för att arbeta med logiska värden för att utföra mer än en jämförelse i ett enda uttryck eller testa flera villkor. Det här avsnittet innehåller en sammanfattning av dessa funktioner.
+Logiska funktioner för elektronisk rapportering (ER) kan användas för att arbeta med logiska värden för att utföra mer än en jämförelse i ett enda uttryck eller testa flera villkor. Den här artikeln innehåller en sammanfattning av dessa funktioner.
 
 ## <a name="list-of-supported-functions"></a>Lista över funktioner som stöds
 

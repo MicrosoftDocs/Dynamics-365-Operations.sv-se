@@ -1,6 +1,6 @@
 ---
 title: Felsöka problem med direkt synkronisering
-description: Det här avsnittet innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem med direkt synkronisering.
+description: Den här artikeln innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem med direkt synkronisering.
 author: RamaKrishnamoorthy
 ms.date: 08/19/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: df184decdfa900ccb5c2070575e55052b9dfc547
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 9d27331b940a95168810c2f1ec4ae240a9df93a8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062373"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896717"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Felsöka problem med direkt synkronisering
 
@@ -22,7 +22,7 @@ ms.locfileid: "8062373"
 
 
 
-Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Microsoft Dataverse. Särskilt ger den information som kan hjälpa dig att åtgärda problem med direkt synkronisering.
+Den här artikeln innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Microsoft Dataverse. Särskilt ger den information som kan hjälpa dig att åtgärda problem med direkt synkronisering.
 
 > [!IMPORTANT]
 > Vissa av de problem som det här ämnet behandlar kan kräva antingen systemadministratörsrollen eller Azure Active Directory (Azure AD) autentiseringsuppgifter för administratör för klientorganisationen. Varje avsnitt förklarar om en viss roll eller vissa autentiseringsuppgifter krävs.

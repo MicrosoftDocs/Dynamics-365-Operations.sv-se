@@ -1,6 +1,6 @@
 ---
 title: Konfigurera en Dynamics 365 Commerce utvärderingsmiljö
-description: Detta ämne förklarar hur du konfigurerar bedömningsmiljö för Microsoft Dynamics 365 Commerce efter att den är etablerad.
+description: Denna artikel förklarar hur du konfigurerar en bedömningsmiljö för Microsoft Dynamics 365 Commerce efter att den är etablerad.
 author: psimolin
 ms.date: 05/12/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9738700ca495d54c91ad91aa9c5a3d32c95a5a5
-ms.sourcegitcommit: 4a973ac0e7af0176270a8070a96a52293567dfbf
+ms.openlocfilehash: 19d88139e35554bce68bc6203141957b96e439a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8747647"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892340"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera en Dynamics 365 Commerce utvärderingsmiljö
 
 [!include [banner](includes/banner.md)]
 
-Detta ämne förklarar hur du konfigurerar bedömningsmiljö för Microsoft Dynamics 365 Commerce efter att den är etablerad.
+Denna artikel förklarar hur du konfigurerar en bedömningsmiljö för Microsoft Dynamics 365 Commerce efter att den är etablerad.
 
-Slutför procedurerna i det här avsnittet först när bedömningsmiljö för Commerce har etablerats. Information om hur du konfigurerar etablerar bedömningsmiljö för Commerce, se [Etablera en bedömningsmiljö för Commerce](provisioning-guide.md).
+Slutför procedurerna i denna artikel först när bedömningsmiljön för Commerce har etablerats. Information om hur du konfigurerar etablerar bedömningsmiljö för Commerce, se [Etablera en bedömningsmiljö för Commerce](provisioning-guide.md).
 
 När din bedömningsmiljö för Commerce har etablerats måste ytterligare konfigurationssteg för efter etableringen slutföras innan du kan börja utvärdera miljön. Om du vill utföra dessa steg måste du använda Microsoft Dynamics Lifecycle Services (LCS) och Dynamics 365 Commerce.
 
@@ -37,19 +37,19 @@ När din bedömningsmiljö för Commerce har etablerats måste ytterligare konfi
 1. Gå till ditt projekt.
 1. På huvudmenyn väljer du miljön **Molnstyrda miljöer**.
 1. Välj din miljö i listan.
-1. Välj i miljöinformation till höger **Logga in i miljön**. Du kommer att skickas till Commerce-administration.
+1. Välj i miljöinformation till höger **Logga in i miljön**. Du kommer att skickas till Commerce headquarters.
 1. Kontrollera att **USRT** juridisk person har valts i övre högra hörnet.
 1. Gå till **Handelsparametrar \> Konfigurationsparametrar** och se till att det finns en post för **ProductSearch.UseAzureSearch** och att värdet är **true**. Om den här posten saknas kan du lägga till den, ange värdet **true** och välja **Kanaldatabas \> Fullständig datasynkronisering** för den Commerce Scale Unit som är associerad med din näthandelsplats.
 1. Gå till **Butik och handel \> Administrationsinställning \> Schemaläggare för handel \> Initiera schemaläggare för handel**. På den utfällbara menyn **Initiera schemaläggare för handel** se till att alternativet **Ta bort befintligt konfiguration** anges till **Ja** och välj **OK**.
 1. För att lägga till kanaler i Commerce Scale Unit, gå till **Butik och handel \> Administrationsinställning \> Handelsschemaläggare \>Kanaldatabas** och välj Commerce Scale Unit i vänstra fönstret. På snabbfliken **Butikskanal**, lägg till kanalerna **AW-onlinebutik**, **AW Business-onlinebutik** och **Fabrikam utökade online-butik**. Alternativt kan du också lägga till detaljhandelsbutiker om du ska använda kassa (till exempel **Seattle**, **San Francisco** och **San Jose**).
 
-Under åtgärderna efter etablering i Commerce-administration, se till att den juridiska personen **USRT** alltid är vald.
+Under åtgärderna efter etablering i Commerce headquarters, se till att den juridiska personen **USRT** alltid är vald.
 
 ## <a name="configure-the-point-of-sale"></a>Konfigurera POS
 
 ### <a name="associate-a-worker-with-your-identity"></a>Associera medarbetare med din identitet
 
-Om du vill associera en anställd med din identitet, följ dessa steg i Commerce-administration.
+Om du vill associera en anställd med din identitet, följ dessa steg i Commerce headquarters.
 
 1. Använd menyn till vänster för att gå till **moduler \> Retail och Commerce \> anställda \> medarbetare**.
 1. Hitta och markera följande post: **000713 – Andrew Collette** i listan.
@@ -116,7 +116,7 @@ Gör så här om du vill aktivera jobb i Commerce.
     1. I Åtgärdsfönstret på fliken **Batchjobb** välj **Ändra status**.
     1. Välj **Väntar** och välj sedan **OK**.
 
-Om du vill kan du också ställa in upprepningsintervallet till en (1) minut för följande jobb:
+Om du vill kan du också konfigurera upprepningsintervallet till en (1) minut för följande jobb:
 
 * Bearbeta butikorders e-postmeddelandejobb
 * P-0001 jobb
@@ -124,7 +124,7 @@ Om du vill kan du också ställa in upprepningsintervallet till en (1) minut fö
 
 ### <a name="run-full-data-synchronization"></a>Kör fullständig datasynkronisering
 
-Om du vill köra fullständig datasynkronisering i Commerce-administration följ dessa steg.
+Om du vill köra fullständig datasynkronisering i Commerce headquarters följ dessa steg.
 
 1. Med hjälp av menyn till vänster, gå till **Moduler \> Retail och Commerce \> Administrationsinställning \> Commercesschemaläggare \> Kanaldatabas**.
 1. Välj kanalen med namnet **scXXXXXXXXX**.

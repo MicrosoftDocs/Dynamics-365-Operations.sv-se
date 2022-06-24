@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6aed74656ceb8edd0e88adf53b61fcae81241f54
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 085d430cbd03df9a950b8b8d5fd80f7557a03301
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470189"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893995"
 ---
 # <a name="set-up-regulatory-configuration-service-rcs"></a>Konfigurera Regulatory Configuration Service (RCS)
 

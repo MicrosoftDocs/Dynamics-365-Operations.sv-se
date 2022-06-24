@@ -1,6 +1,6 @@
 ---
 title: Behovsprognoser inställning
-description: Detta avsnitt beskriver de uppgifter som du måste utföra för att förbereda behovsprognoser.
+description: Denna artikel beskriver de konfigurationsuppgifter som du måste utföra för att förbereda efterfrågeprognosticering.
 author: t-benebo
 ms.date: 11/23/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3b52b970a8040dcba5a1fc59d297dc9ce1a3c53
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 10a211e0e20f22dfbfdb4923841808750b6ed71b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470021"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901014"
 ---
 # <a name="demand-forecasting-setup"></a>Behovsprognoser inställning
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in efterfrågeprognosticering.  
+I denna artikel beskrivs hur du konfigurerar efterfrågeprognosticering.  
 
 ## <a name="item-allocation-keys"></a>Artikelallokeringsnycklar
 
@@ -51,7 +51,7 @@ Följ de här stegen om du vill skapa artikelallokeringsnycklar och lägga till 
 Behovsprognoser genererar gränsöverskridande företag prognoser. I Dynamics 365 Supply Chain Management grupperas företag som är planerade tillsammans i samma koncerninterna planeringsgrupp. Om du vill ange, per företag, vilka artikelallokeringsnycklar som ska beaktas vid efterfrågeprognoser, kopplar du en artikelallokeringsnyckel till medlemmen i den koncerninterna planeringsgruppen.
 
 > [!IMPORTANT]
-> Planeringsoptimering har för närvarande inte stöd för koncerninterna planeringsgrupper. Om du vill göra koncernintern planering med planeringsoptimering ställer du in batchjobb för huvudplaneringar som omfattar huvudplaner för alla relevanta företag.
+> Planeringsoptimering har för närvarande inte stöd för koncerninterna planeringsgrupper. Om du vill göra koncernintern planering med Planeringsoptimering ställer du in batchjobb för huvudplaneringar som omfattar huvudplaner för alla relevanta företag.
 
 Så här ställs koncerninterna planeringsgrupper in.
 
@@ -76,7 +76,7 @@ Så här ställs koncerninterna planeringsgrupper in.
 
 ## <a name="set-up-demand-forecasting-parameters"></a><a name="parameters"></a>Ställ in parametrar för efterfrågeprognosticering
 
-På sidan **Parametrar för efterfrågeprognosticering** kan du ställa in flera alternativ som styr hur efterfrågeprognosticering ska fungera i systemet.
+På sidan **Parametrar för efterfrågeprognosticering** kan du konfigurera flera alternativ som styr hur efterfrågeprognosticering ska fungera i systemet.
 
 ### <a name="open-the-demand-forecasting-parameters-page"></a>Öppna sidan parametrar för efterfrågeprognosticering
 
@@ -106,7 +106,7 @@ I fältet **Strategi för prognosgenerering** kan du välja vilken metod som ska
 
 - *Kopiera över historisk efterfrågan* – Skapa prognoser genom att bara kopiera historiska data.
 - *Azure Machine Learning Service* – Använd en prognosmodell som använder Azure Machine Learning Service. Azure Machine Learning Service är den aktuella maskininlärningslösningen för Azure. Därför rekommenderar vi att du använder den om du vill använda en prognosmodell.
-- *Azure Machine Learning* – Använd en prognosmodell som använder Azure Machine Learning Studio (klassisk). Azure Machine Learning Studio (klassisk) har avaktiverats och kommer snart att tas bort från Azure. Därför rekommenderar vi att du väljer *Azure Machine Learning Service* om du ställer in efterfrågeprognoser för första gången. Om du för närvarande använder Azure Machine Learning Studio (klassisk) du bör planera att växla till Azure Machine Learning Service så snart som möjligt.
+- *Azure Machine Learning* – Använd en prognosmodell som använder Azure Machine Learning Studio (klassisk). Azure Machine Learning Studio (klassisk) har avaktiverats och kommer snart att tas bort från Azure. Därför rekommenderar vi att du väljer *Azure Machine Learning Service* om du konfigurerar efterfrågeprognoser för första gången. Om du för närvarande använder Azure Machine Learning Studio (klassisk) du bör planera att växla till Azure Machine Learning Service så snart som möjligt.
 
 Du kan åsidosätta prognosgenereringsmetoden för en eller flera specifika artikelallokeringsnycklar genom att använda fliken **Artikelallokeringsnycklar**. På den fliken visas liknande fält.
 
@@ -126,20 +126,20 @@ Du kan när som helst lägga prognosen dimensioner till listan av dimensioner so
 
 Inte alla objekt fungerar på samma sätt från en behovsprognoser perspektiv. Därför kan du upprätta allokeringsnyckelspecifika åsidosättningar för de flesta inställningar som har definierats på fliken **Allmänt**. Undantaget är enheten för efterfrågeprognos. Ställ in åsidosättningar för en specifik artikelallokeringsnyckel genom att följa dessa steg.
 
-1. På sidan **Parametrar för efterfrågeprognosticering** på fliken **Artikelallokeringsnycklar** använder du verktygsfältsknapparna för att lägga till artikelallokeringsnycklar till rutnätet till vänster, eller ta bort dem efter behov. Välj sedan den allokeringsnyckel som du vill ställa in åsidosättningar för.
+1. På sidan **Parametrar för efterfrågeprognosticering** på fliken **Artikelallokeringsnycklar** använder du verktygsfältsknapparna för att lägga till artikelallokeringsnycklar till rutnätet till vänster, eller ta bort dem efter behov. Välj sedan den allokeringsnyckel som du vill konfigurera åsidosättningar för.
 1. På snabbflikarna **Transaktionstyper** kan du aktivera de transaktionstyper som du vill använda för att generera statistisk baslinjeprognos för produkter som tillhör den valda allokeringsnyckeln. Inställningarna fungerar precis som de fungerar på fliken **Allmänt**, men de gäller endast för den valda artikelallokeringsnyckeln. Alla inställningar här (både *Ja*-värden och *Nej*-värden) åsidosätter alla **Transaktionstyper** på fliken **Allmänt**.
 1. På snabbfliken **Parametrar för prognosalgoritm** väljer du parametern prognosgenereringsstrategi och prognosalgoritm för produkter som tillhör den valda allokeringsnyckeln. Inställningarna fungerar precis som de fungerar på fliken **Allmänt**, men de gäller endast för den valda artikelallokeringsnyckeln. Använd knapparna **Lägg till** och **Ta bort** på verktygsfältet för att definiera den nödvändiga samlingen av parameter åsidosättning. Välj ett värde i fältet **Namn** för varje parameter i listan och ange ett lämpligt värde i fältet **Värde**. Mer information om hur du använder standardparametrarna och väljer värden för dem finns i avsnittet [Standardparametrar och värden för modeller för efterfrågeprognosticering](#model-parameters).
 
 ### <a name="set-up-the-connection-to-the-azure-machine-learning-service"></a>Ställa in anslutningen till Azure Machine Learning Service
 
-Använd fliken **Azure Machine Learning Service** när du ställer in anslutningen till Azure Machine Learning Service. Den här lösningen är ett av alternativen för att skapa baslinjeprognosen. De här inställningarna på den här fliken har bara effekt när fältet **Strategi för prognosgenerering** är inställt på *Azure Machine Learning Service*.
+Använd fliken **Azure Machine Learning Service** när du konfigurerar anslutningen till Azure Machine Learning Service. Den här lösningen är ett av alternativen för att skapa baslinjeprognosen. De här inställningarna på den här fliken har bara effekt när fältet **Strategi för prognosgenerering** är inställt på *Azure Machine Learning Service*.
 
-Mer information om hur du ställer in Azure Machine Learning Service och sedan använder inställningarna här för att ansluta till den finns i avsnittet [Ställa in avsnittet Azure Machine Learning Service](#setup-amls).
+Mer information om hur du konfigurerar Azure Machine Learning Service och sedan använder inställningarna här för att ansluta till den finns i avsnittet [Ställa in avsnittet Azure Machine Learning Service](#setup-amls).
 
 ### <a name="set-up-the-connection-to-azure-machine-learning-studio-classic"></a>Ställa in anslutningen till Azure Machine Learning Studio (klassisk)
 
 > [!IMPORTANT]
-> Azure Machine Learning Studio (klassisk) har avskrivits. Därför kan du inte längre skapa nya arbetsytor för det i Azure. Den har ersatts av Azure Machine Learning Service, som innehåller liknande funktioner med mera. Om du inte redan använder Azure Machine Learning bör du börja använda Azure Machine Learning Service. Om du redan har en arbetsyta som har skapats för Azure Machine Learning Studio (klassiskt) så kan du fortsätta att använda den tills funktionen är helt borttagen från Azure. Vi rekommenderar dock att du uppdaterar till Azure Machine Learning Service så snart som möjligt. Även om programmet fortsätter att varna dig om att Azure Machine Learning Studio (klassisk) har inaktuellt, påverkas inte prognosresultatet. Mer information om hur du ställer in ny Azure Machine Learning Service och hur du konfigurerar det finns i avsnittet [Ställa in avsnittet Azure Machine Learning Service](#setup-amls).
+> Azure Machine Learning Studio (klassisk) har avskrivits. Därför kan du inte längre skapa nya arbetsytor för det i Azure. Den har ersatts av Azure Machine Learning Service, som innehåller liknande funktioner med mera. Om du inte redan använder Azure Machine Learning bör du börja använda Azure Machine Learning Service. Om du redan har en arbetsyta som har skapats för Azure Machine Learning Studio (klassiskt) så kan du fortsätta att använda den tills funktionen är helt borttagen från Azure. Vi rekommenderar dock att du uppdaterar till Azure Machine Learning Service så snart som möjligt. Även om programmet fortsätter att varna dig om att Azure Machine Learning Studio (klassisk) har inaktuellt, påverkas inte prognosresultatet. Mer information om hur du konfigurerar ny Azure Machine Learning Service och hur du konfigurerar det finns i avsnittet [Ställa in avsnittet Azure Machine Learning Service](#setup-amls).
 >
 > Du kan fritt växla mellan de nya och gamla maskininlärningslösningarna med Supply Chain Management under så länge din gamla arbetsyta Azure Machine Learning Studio (klassisk) arbetsyta förblir tillgänglig.
 
@@ -155,9 +155,9 @@ Om du redan har en tillgänglig arbetsyta för Azure Machine Learning Studio (kl
 
 ## <a name="default-parameters-and-values-for-demand-forecasting-models"></a><a name="model-parameters"></a>Standardparametrar och standardvärden för modeller för efterfrågeprognoser
 
-När du använder Machine Learning för att generera dina prognosplaneringsmodeller kontrollerar du maskininlärningsalternativen genom att ställa in värden för *parametrar i prognosalgoritmen*. Värdena skickas från Supply Chain Management till Azure Machine Learning. På sidan **Parametrar för prognosalgoritmer** kan du kontrollera vilka typer av värden som ska anges och vilka värden som de ska ha.
+När du använder Machine Learning för att generera dina prognosplaneringsmodeller kontrollerar du maskininlärningsalternativen genom att konfigurera värden för *parametrar i prognosalgoritmen*. Värdena skickas från Supply Chain Management till Azure Machine Learning. På sidan **Parametrar för prognosalgoritmer** kan du kontrollera vilka typer av värden som ska anges och vilka värden som de ska ha.
 
-För att ställa in de standardparametrar kan konfigureras för modeller för efterfrågeprognosticering går du till **Huvudplanering \> Konfigurera \> Efterfrågeprognosticering \> Parametrar för prognosalgoritm**. Det finns en standarduppsättning parametrar. Varje partner har följande fält:
+För att konfigurera de standardparametrar kan konfigureras för modeller för efterfrågeprognosticering går du till **Huvudplanering \> Konfigurera \> Efterfrågeprognosticering \> Parametrar för prognosalgoritm**. Det finns en standarduppsättning parametrar. Varje partner har följande fält:
 
 - **Namn** – Namnet på parametern, som används av Azure. Vanligtvis ska du inte ändra det här namnet om du inte har anpassat den i Azure Machine Learning.
 - **Beskrivning** – Ett vanligt namn för parametern. Det här namnet används för att identifiera parametern på andra ställen i systemet (till exempel på sidan **Parametrar för efterfrågeprognoser**).
@@ -194,7 +194,7 @@ Du kan åsidosätta värdena för dessa parametrar genom att gå till **Huvudpla
 
 ## <a name="set-up-the-azure-machine-learning-service"></a><a name="setup-amls"></a>Ställa in Azure Machine Learning Service
 
-Supply Chain Management beräknar efterfrågeprognoser med hjälp av Azure Machine Learning Service, som du måste ställa in och köra på ditt eget Azure-abonnemang. Det här avsnittet beskriver hur du ställer in Azure Machine Learning Service i Azure och sedan ansluter den till din Supply Chain Management-miljö.
+Supply Chain Management beräknar efterfrågeprognoser med hjälp av Azure Machine Learning Service, som du måste konfigurera och köra på ditt eget Azure-abonnemang. Det här avsnittet beskriver hur du konfigurerar Azure Machine Learning Service i Azure och sedan ansluter den till din Supply Chain Management-miljö.
 
 ### <a name="enable-the-azure-machine-learning-service-in-feature-management"></a>Aktivera Azure Machine Learning Service i funktionshantering
 
@@ -205,14 +205,14 @@ Innan du kan använda Azure Machine Learning Service för efterfrågeprognoser m
 
 ### <a name="set-up-machine-learning-in-azure"></a><a name="ml-workspace"></a>Ställa in Machine Learning i Azure
 
-Om du vill att Azure ska kunna använda Machine Learning för att bearbeta dina prognoser måste du ställa in en Azure-Machine Learning-arbetsyta för det här syftet. Det finns två alternativ:
+Om du vill att Azure ska kunna använda Machine Learning för att bearbeta dina prognoser måste du konfigurera en Azure-Machine Learning-arbetsyta för det här syftet. Det finns två alternativ:
 
-- För att ställa in arbetsytan genom att köra ett skript som tillhandahålls av Microsoft, följ instruktionerna i avsnittet [Alternativ 1: Kör ett skript för att automatiskt ställa in din Machine Learning-arbetsyta](#ml-workspace-script) och hoppa sedan till [Ställ in anslutningsparametrar för Azure Machine Learning Service i Supply Chain Management](#demand-forecast-parameters).
-- För att ställa in arbetsytan manuellt, följ instruktionerna i avsnittet [Alternativ 2: Kör ett skript för att manuellt ställa in din Machine Learning-arbetsyta](#ml-workspace-manual) och hoppa sedan till [Ställ in anslutningsparametrar för Azure Machine Learning Service i Supply Chain Management](#demand-forecast-parameters). Det här alternativet tar längre tid men ger dig mer kontroll.
+- För att konfigurera arbetsytan genom att köra ett skript som tillhandahålls av Microsoft, följ instruktionerna i avsnittet [Alternativ 1: Kör ett skript för att automatiskt konfigurera din Machine Learning-arbetsyta](#ml-workspace-script) och hoppa sedan till [Ställ in anslutningsparametrar för Azure Machine Learning Service i Supply Chain Management](#demand-forecast-parameters).
+- För att konfigurera arbetsytan manuellt, följ instruktionerna i avsnittet [Alternativ 2: Kör ett skript för att manuellt konfigurera din Machine Learning-arbetsyta](#ml-workspace-manual) och hoppa sedan till [Ställ in anslutningsparametrar för Azure Machine Learning Service i Supply Chain Management](#demand-forecast-parameters). Det här alternativet tar längre tid men ger dig mer kontroll.
 
-#### <a name="option-1-run-a-script-to-automatically-set-up-your-machine-learning-workspace"></a><a name="ml-workspace-script"></a>Alternativ 1: Köra ett skript om du automatiskt vill ställa in din Machine Learning-arbetsyta
+#### <a name="option-1-run-a-script-to-automatically-set-up-your-machine-learning-workspace"></a><a name="ml-workspace-script"></a>Alternativ 1: Köra ett skript om du automatiskt vill konfigurera din Machine Learning-arbetsyta
 
-I det här avsnittet beskrivs hur du ställer in Machine Learning-arbetsytan genom att använda ett automatiskt skript som tillhandahålls av Microsoft. Om du vill kan du manuellt ställa in alla resurser genom att följa instruktionerna i [alternativ 2: Ställa in arbetsytan manuellt.](#ml-workspace-manual) Båda alternativen behöver inte slutföras.
+I det här avsnittet beskrivs hur du konfigurerar Machine Learning-arbetsytan genom att använda ett automatiskt skript som tillhandahålls av Microsoft. Om du vill kan du manuellt konfigurera alla resurser genom att följa instruktionerna i [alternativ 2: Ställa in arbetsytan manuellt.](#ml-workspace-manual) Båda alternativen behöver inte slutföras.
 
 1. I GitHub, öppna [Mall för Dynamics 365 Supply Chain Management efterfrågeprognoser med Azure Machine Learning](https://github.com/microsoft/Dynamics-365-Supply-Chain-Management-Demand-Forecasting-With-Azure-Machine-Learning-Service) lagringsplats och hämta följande filer:
 
@@ -223,7 +223,7 @@ I det här avsnittet beskrivs hur du ställer in Machine Learning-arbetsytan gen
     - src/run.py
     - src/REntryScript/forecast.r
 
-1. Öppna ett PowerShell-fönster och kör det **quick_setup.ps1**-skript som du hämtade i det föregående steget. Följ instruktionerna på skärmen. Skriptet ställer in önskad arbetsyta, lagring, standarddatalager och resurser för beräkning. Du måste dock fortfarande skapa de pipelines som krävs genom att följa de återstående stegen i den här proceduren. (Pipelines är ett sätt att starta prognosskript från Supply Chain Management.)
+1. Öppna ett PowerShell-fönster och kör det **quick_setup.ps1**-skript som du hämtade i det föregående steget. Följ instruktionerna på skärmen. Skriptet konfigurerar önskad arbetsyta, lagring, standarddatalager och resurser för beräkning. Du måste dock fortfarande skapa de pipelines som krävs genom att följa de återstående stegen i den här proceduren. (Pipelines är ett sätt att starta prognosskript från Supply Chain Management.)
 1. I Azure Machine Learning Studio, överför filen **sampleInput.csv** som du hämtat i steg 1 till den programbehållare som heter *demplan-azureml*. (Skriptet quick_setup.ps1 skapade den här programbehållaren.) Den här filen krävs för att publicera försäljningsförloppet och generera en testprognos. Instruktioner finns i [Ladda upp ett blockblob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob).
 1. I Azure Machine Learning Studio väljer **Anteckningsböcker** i navigeringsfönstret.
 1. Hitta följande plats i strukturen **Filer**: **Users/\[current user\]/src**.
@@ -233,7 +233,7 @@ I det här avsnittet beskrivs hur du ställer in Machine Learning-arbetsytan gen
 
 #### <a name="option-2-manually-set-up-your-machine-learning-workspace"></a><a name="ml-workspace-manual"></a>Alternativ 2: Ställa in Machine Learning-arbetsytan manuellt
 
-I det här avsnittet beskrivs hur du ställer in Machine Learning-arbetsytan manuellt. Du måste bara slutföra procedurerna i det här avsnittet om du har beslutat att inte köra det automatiska inställningsskriptet enligt beskrivningen i [alternativ 1: Kör ett skript för att ställa in din Machine Learning-arbetsyta](#ml-workspace-script).
+I det här avsnittet beskrivs hur du konfigurerar Machine Learning-arbetsytan manuellt. Du måste bara slutföra procedurerna i det här avsnittet om du har beslutat att inte köra det automatiska inställningsskriptet enligt beskrivningen i [alternativ 1: Kör ett skript för att konfigurera din Machine Learning-arbetsyta](#ml-workspace-script).
 
 ##### <a name="step-1-create-a-new-workspace"></a><a name="create-workspace"></a>Steg 1: Skapa en ny arbetsyta
 
@@ -245,7 +245,7 @@ Använd följande procedur om du vill skapa en ny Machine Learning-arbetsyta.
 1. Slutför guiden genom att följa instruktionerna på skärmen. Tänk på följande när du arbetar:
 
     - Använd standardinställningar om inte andra poäng i den här listan rekommenderar andra inställningar.
-    - Se till att välja den geografiska region som matchar den region där din instans av Supply Chain Management är distribuerad. I annat fall kanske vissa data passerar regiongränser. Mer information finns i avsnittet [Sekretesspolicy](#privacy) senare i det här avsnittet.
+    - Se till att välja den geografiska region som matchar den region där din instans av Supply Chain Management är distribuerad. I annat fall kanske vissa data passerar regiongränser. Mer information finns i avsnittet [Sekretesspolicy](#privacy) senare i denna artikel.
     - Använd dedikerade resurser, till exempel resursgrupper, lagringskonton, behållarregister, Azure nyckelvalv och resursresurser.
     - På sidan **Ställ in anslutningparametrar för Azure Machine Learning Service** i guiden måste du ange ett namn för lagringskontot. Använd ett konto som är dedikerad till efterfrågeprognoser. Indata och utdata för efterfrågeprognosticering lagras i det här lagringskontot.
 
@@ -253,7 +253,7 @@ Mer information finns i [Skapa en arbetsyta](/azure/machine-learning/quickstart-
 
 ##### <a name="step-2-configure-storage"></a><a name="config-storage"></a>Steg 2: Konfigurera lagring
 
-Använd följande procedur för att ställa in din lagring.
+Använd följande procedur för att konfigurera din lagring.
 
 1. I GitHub, öppna [Mallar för Dynamics 365 Supply Chain Management efterfrågeprognoser med Azure Machine Learning](https://github.com/microsoft/Dynamics-365-Supply-Chain-Management-Demand-Forecasting-With-Azure-Machine-Learning-Service) lagringsplats och hämta följande **sampleInput.csv** fil.
 1. Öppna lagringskontot som du skapade i [Steg 1: Skapa ett nytt arbetsyta](#create-workspace).
@@ -262,7 +262,7 @@ Använd följande procedur för att ställa in din lagring.
 
 ##### <a name="step-3-configure-a-default-datastore"></a>Steg 3: Konfigurera ett standarddatalager
 
-Använd följande procedur för att ställa in ditt standarddatalager.
+Använd följande procedur för att konfigurera ditt standarddatalager.
 
 1. I Azure Machine Learning Studio väljer **Datalager** i navigeringsfönstret.
 1. Skapa det nya datalagret av typen *Azure Blob Storage* som pekar på den *demplan-azureml* Blob Storage-programbehållare du skapade i avsnittet [Steg 2: Konfigurera lagring](#config-storage). (Om autentiseringstypen för den nya datalagringen är *Kontonyckel*, tillhandahålla en kontonyckel för det skapade lagringskontot. Instruktioner finns i [Hantera åtkomstnycklar för lagringskonto](/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)).
@@ -270,7 +270,7 @@ Använd följande procedur för att ställa in ditt standarddatalager.
 
 ##### <a name="step-4-configure-compute-resources"></a><a name="config-compute-resources"></a>Steg 4: Konfigurera beräkningsresurser
 
-Använd följande procedur när du ställer in en resurs för beräkning i Azure Machine Learning Studio för att köra dina prognosgenereringsskript.
+Använd följande procedur när du konfigurerar en resurs för beräkning i Azure Machine Learning Studio för att köra dina prognosgenereringsskript.
 
 1. Öppna detaljsidan för maskininlärningsarbetsytan som du skapade i [Steg 1: Skapa en ny arbetsyta](#create-workspace). Sök efter värdet **Studio webbadress** och markera länken för att öppna det.
 1. Klicka på **Beräkning** i navigeringsfönstret.
@@ -311,7 +311,7 @@ Ett Active Directory-program måste autentiseras med de resurser som är dediker
     - Storage Blob Data rollen deltagare till det dedikerade lagringskontot
 
 1. I avsnittet **Intyg och hemlighet** för programmet du skapade, skapa en hemlighet för appen. Instruktioner finns i [Lägga till en klienthemlighet](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret).
-1. Gör en notering om program-ID och dess hemlighet. Du behöver mer information om programmet senare när du ställer in sidan **Efterfrågeprognosparametrar** i Supply Chain Management.
+1. Gör en notering om program-ID och dess hemlighet. Du behöver mer information om programmet senare när du konfigurerar sidan **Efterfrågeprognosparametrar** i Supply Chain Management.
 
 ### <a name="set-up-azure-machine-learning-service-connection-parameters-in-supply-chain-management"></a><a name="demand-forecast-parameters"></a>Konfigurera anslutningsparametrar för Azure Machine Learning Service i Supply Chain Management
 
@@ -325,9 +325,9 @@ Använd följande procedur för att ansluta din Supply Chain Management-miljö t
 
     - **Klientorganisations-ID** – Ange ID för din Azure-klientorganisation. Supply Chain Management använder detta ID för att autentisera med Azure Machine Learning Service. Ditt innehavares-ID finns på sidan **Översikt** för i Azure AD i Azure-portal.
     - **App-ID för tjänstens huvudnamn** – Ange app-ID för appen du skapade i avsnittet [Active Directory-app](#aad-app). Det här värdet används för att auktorisera API-förfrågningar till Azure Machine Learning Service.
-    - **Hemlighet för tjänstens huvudnamn** – Ange apphemlighet för tjänstens huvudnamn för appen du skapade i avsnittet [Active Directory-app](#aad-app). Det här värdet används för att hämta åtkomsttoken för säkerhetsprincipen som du har skapat för att utföra behöriga operationer mot Azure Storage och arbetsytan för Azure Machine Language.
+    - **Hemlighet för tjänstens huvudnamn** – Ange apphemlighet för tjänstens huvudnamn för appen du skapade i avsnittet [Active Directory-app](#aad-app). Det här värdet används för att hämta åtkomsttoken för säkerhetsprincipen som du har skapat för att utföra behöriga åtgärder mot Azure Storage och arbetsytan för Azure Machine Language.
     - **Namn på lagringskonto** – Ange namnet på det Azure-lagringskonto som du angav när du körde installationsguiden i Azure-arbetsytan. (Mer information finns i avsnittet [Ställ in Machine Learning i Azure](#ml-workspace).)
-    - **Slutpunktsadress för pipeline** – Ange URL:en för försäljningsförloppets REST-slutpunkt för din Azure Machine Learning Service. Du skapade försäljningsförloppet som ett sista steg när du [ställer in maskininlärning i Azure](#ml-workspace). För att hämta pipeline-URL, logga in på din Azure-portal, välj **Pipelines** i navigeringen. På fliken **Pipeline** väljer du den slutpunkt för försäljningsförloppet som kallas **TriggerDemandForecastGeneration**.  Kopiera sedan REST-slutpunkten som visas.
+    - **Slutpunktsadress för pipeline** – Ange URL:en för försäljningsförloppets REST-slutpunkt för din Azure Machine Learning Service. Du skapade försäljningsförloppet som ett sista steg när du [konfigurerar maskininlärning i Azure](#ml-workspace). För att hämta pipeline-URL, logga in på din Azure-portal, välj **Pipelines** i navigeringen. På fliken **Pipeline** väljer du den slutpunkt för försäljningsförloppet som kallas **TriggerDemandForecastGeneration**. Kopiera sedan REST-slutpunkten som visas.
 
     ![Parametrar på fliken Azure Machine Learning Service för sidan behovsprognosparametrar.](media/azure-ml-service-parameters.png "Parametrar på fliken Azure Machine Learning Service för sidan behovsprognosparametrar")
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62b56e698d3d9eeec08824eb799d74a8c6792ea7
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 2e10842929ba58b845a1df949ecb7c776ae077e8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735244"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904713"
 ---
 # <a name="accruals-overview"></a>Översikt över periodiseringar
 

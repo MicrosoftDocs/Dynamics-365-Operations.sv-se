@@ -1,6 +1,6 @@
 ---
 title: Tidsplanera påfyllnadsetikett utskrift under påfyllnad
-description: I det här avsnittet beskrivs hur du ställer in och använder funktionerna för uppgiftsbaserad utskrift av påfyllnadsetikett.
+description: I denna artikel beskrivs hur du konfigurerar och använder funktionerna för uppgiftsbaserad utskrift av påfyllnadsetikett.
 author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: ac2bc4cce42bada43334b82301d716414cd6d654
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920159"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889469"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Tidsplanera påfyllnadsetikett utskrift under påfyllnad
 
@@ -30,7 +30,7 @@ När du använder *utskriftsfunktionen för påfyllnadsetiketter* som baseras p�
 
 ## <a name="turn-on-the-task-based-wave-label-printing-feature-in-feature-management"></a>Aktivera funktionen för utskrift av påfyllnadsetiketter med uppgiftsbaserad påfyllnad i funktionshanteringen
 
-De funktioner som beskrivs i det här avsnittet måste vara inaktiverade för ditt system. Använda [utgiftshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiverar du följande funktioner i ordning:
+För att kunna använda de funktioner som beskrivs i denna artikel måste de vara aktiverade för ditt system. Använda [utgiftshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiverar du följande funktioner i ordning:
 
 1. *Påfyllnadsetikettsutskrift* – Den här funktionen krävs för att aktivera påfyllnadsprocessmetoden för utskrift av påfyllnadsetikett.
 1. *Arbetsspärr för hela organisationen* – Denna funktion krävs för både manuell och automatisk konfiguration av planerat arbete. (Från och med version 10.0.21 av Supply Chain Management är den här funktionen obligatorisk, varför den är aktiverad som standard och inte kan stängas av igen.)

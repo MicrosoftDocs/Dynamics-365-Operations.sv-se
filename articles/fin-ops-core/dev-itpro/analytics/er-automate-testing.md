@@ -1,6 +1,6 @@
 ---
 title: Automatisera testning med elektronisk rapportering
-description: I det här avsnittet beskrivs hur du kan använda baslinjefunktionen för elektronik rapportering (ER) för att automatisera testning av funktioner.
+description: I den här artikeln beskrivs hur du kan använda baslinjefunktionen för elektronik rapportering (ER) för att automatisera testning av funktioner.
 author: NickSelin
 ms.date: 07/02/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: da69cc903197dbfae536c8494f126074c51aa77f9522d57f2673c97b1e682d9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df2baa988bb634db11d819dd84ef73eaa560bab9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749810"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892781"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatisera testning med elektronisk rapportering
 
 [!include[banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du kan använda ramverket för elektronik rapportering (ER) för att automatisera testning av vissa funktioner. Exemplet i det här avsnittet visar hur du automatiserar testningen av bearbetning av leverantörsbetalningar.
+I den här artikeln beskrivs hur du kan använda ramverket för elektronik rapportering (ER) för att automatisera testning av vissa funktioner. Exemplet i den här artikeln visar hur du automatiserar testningen av bearbetning av leverantörsbetalningar.
 
 Appen använder ER-ramverket för att generera betalningsfiler och motsvarande dokument under bearbetning av leverantörsbetalningar. ER-ramverket består av en datamodell, modellmappning och formatkomponenter som stöder betalningsbearbetning för olika betalningstyper och genereringen av dokument i olika format. Dessa komponenter kan hämtas från Microsoft Dynamics LCS (Lifecycle Services) och importeras till instansen.
 
@@ -57,12 +57,12 @@ Funktionella privilegierade användare kan köra tester av användarens acceptan
 Innan du kan slutföra uppgifterna i detta ämne måste du slutföra följande förutsättningar:
 
 - Distribuera en topologi som stöder testautomatisering. Du måste ha tillgång till instansen av denna topologi för rollen **systemadministratör**. Den här topologin måste innehålla de demodata som ska användas i det här exemplet. Mer information finns i [distribuera och använd en miljö som stöder kontinuerlig automatisering av bygga och testa](../perf-test/continuous-build-test-automation.md).
-- Om du vill köra acceptans- och integrationstest automatiskt måste du installera RSAT i den topologi som du använder och konfigurera det på lämpligt sätt. Information om hur du installerar och konfigurerar RSAT och konfigurerar den för att fungera med Finance and Operations och Azure DevOps finns i [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Var uppmärksam på förutsättningarna för att använda verktyget. Följande illustration visar ett exempel på RSAT-inställningar. Den blå rektangeln innesluter parametrarna som anger åtkomsten till Azure DevOps. Den gröna rektangeln innesluter parametrarna som anger åtkomsten till instansen.
+- Om du vill köra acceptans- och integrationstest automatiskt måste du installera RSAT i den topologi som du använder och konfigurera det på lämpligt sätt. Information om hur du installerar och konfigurerar RSAT och konfigurerar den så att den fungerar med Finance and Operations-appar och Azure DevOps, se [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Var uppmärksam på förutsättningarna för att använda verktyget. Följande illustration visar ett exempel på RSAT-inställningar. Den blå rektangeln innesluter parametrarna som anger åtkomsten till Azure DevOps. Den gröna rektangeln innesluter parametrarna som anger åtkomsten till instansen.
 
     ![RSAT-inställningar.](media/GER-Configure.png "Skärmbild av dialogrutan RSAT-inställningar")
 
 - Om du vill ordna testfall i paket som hjälper till att garantera korrekt körningsordning så att du kan samla in loggar över testkörningar för vidare rapportering och utredning måste du ha åtkomst till Azure DevOps från den distribuerade topologin.
-- Om du vill slutföra exemplet i det här avsnittet rekommenderar vi att du hämtar [ER-användning för test av RSAT](https://go.microsoft.com/fwlink/?linkid=874684). Zip-filen innehåller följande uppgiftsguider:
+- Om du vill slutföra exemplet i den här artikeln rekommenderar vi att du hämtar [ER-användning för test av RSAT](https://go.microsoft.com/fwlink/?linkid=874684). Zip-filen innehåller följande uppgiftsguider:
 
     | Innehåll                                           | Filnamn och plats |
     |---------------------------------------------------|------------------------|

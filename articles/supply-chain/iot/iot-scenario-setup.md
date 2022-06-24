@@ -1,6 +1,6 @@
 ---
 title: Scenarioinställningar för IoT-information
-description: I det här avsnittet beskrivs hur du konfigurerar scenarier för IoT-intelligens i Microsoft Dynamics 365 Supply Chain Management.
+description: I denna artikel beskrivs hur du konfigurerar scenarier för IoT-intelligens i Microsoft Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dddc282ef3e479d524b1dfa0c60091cad1c231e0
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3172bdb81e00d20c5b1d1f3f8e4299ca69c59434
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675189"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889618"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>Scenarioinställningar för IoT-information
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du konfigurerar scenarier för IoT-intelligens i Microsoft Dynamics 365 Supply Chain Management. <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
+I denna artikel beskrivs hur du konfigurerar scenarier för IoT-intelligens i Microsoft Dynamics 365 Supply Chain Management. <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
 
-I det här avsnittet konfigurerar du scenariot **Driftstopp (utrustning)** i syfte att generera ett meddelande i Supply Chain Management när en dator slutar att fungera. Ämnet visar också hur du konfigurerar scenariot **produktkvalitet** så att ett meddelande genereras om ett attribut för en artikel ligger utanför ett angivet intervall och hur du konfigurerar scenariot **produktionsfördröjning** så att ett meddelande genereras om produktions dataflödet sjunker under ett tröskelvärde.
+I denna artikel konfigurerar du scenariot **Driftstopp (utrustning)** i syfte att generera ett meddelande i Supply Chain Management när en dator slutar fungera. Artikeln visar också hur du konfigurerar scenariot **Produktkvalitet** så att ett meddelande genereras om ett attribut för en artikel ligger utanför ett angivet intervall, samt hur du konfigurerar scenariot **Produktionsfördröjning** så att ett meddelande genereras om produktionsgenomflödet sjunker under ett tröskelvärde.
 
 ## <a name="configure-the-equipment-downtime-scenario-in-supply-chain-management"></a>Konfigurera scenariot Driftstopp (utrustning) i Supply Chain Management
 
@@ -47,7 +47,7 @@ Följ dessa steg för att konfigurera scenariot.
 4. Gå till **produktionskontroll \> inställning \> IoT-intelligens \> scenariohantering**.
 6. På panelen **Driftstopp (utrustning)** välj **konfigurera** för att öppna konfigurationsguiden.
 
-   Första sidan i guiden är **Schemadefinition för utrustningssensor**. På den här sidan är ditt mål att ställa in schemat i Supply Chain Management så att det matchar JSON-formatet (JavaScript Object Notation) för IoT-hubb-meddelandena. Du kan definiera flera meddelandescheman. Mer information finns i [Schemaformat för IoT-hubb-meddelande](iot-schema-format.md). I det här exemplet innehåller meddelandets nyttolasten en batch med meddelanden med detta format.
+   Första sidan i guiden är **Schemadefinition för utrustningssensor**. På den här sidan är ditt mål att konfigurera schemat i Supply Chain Management så att det matchar JSON-formatet (JavaScript Object Notation) för IoT-hubb-meddelandena. Du kan definiera flera meddelandescheman. Mer information finns i [Schemaformat för IoT-hubb-meddelande](iot-schema-format.md). I det här exemplet innehåller meddelandets nyttolasten en batch med meddelanden med detta format.
 
     ```json
     {
@@ -106,7 +106,7 @@ Följ dessa steg för att konfigurera scenariot.
 17. Klicka på **Nästa** om du vill gå till sidan för den **komponentproducerade signalkonfigurationen**.
 18. I registret **Signaldatavärden** lägger du till en rad och anger fältet **Värde** som **True**. Detta värde kommer från JSON **värde**-egenskapen i IoT-hubb-meddelande. Du kan lägga till så många värden som du behöver i scenariot.
 19. Välj **Spara**.
-20. Klicka på **Nästa** för att gå till sidan **Tröskelvärde för driftstopp (utrustning)**. De angivna datorerna är de som tidigare har mappats till signalvärden. I det här steget definierar du ett tröskelvärde för att fastställa om en dator inte är tillgänglig. Om du till exempel ställer in tröskelvärdet på **10**, Supply Chain Management genererar ett meddelande om det inte finns någon **KomponentUt**-signal från en maskin på 10 minuter.
+20. Klicka på **Nästa** för att gå till sidan **Tröskelvärde för driftstopp (utrustning)**. De angivna datorerna är de som tidigare har mappats till signalvärden. I det här steget definierar du ett tröskelvärde för att fastställa om en dator inte är tillgänglig. Om du till exempel konfigurerar tröskelvärdet på **10**, Supply Chain Management genererar ett meddelande om det inte finns någon **KomponentUt**-signal från en maskin på 10 minuter.
 21. Klicka på **Nästa** för att öppna sidan **Aktivera scenario**. Ange alternativet för att aktivera scenariot.
 22. Välj **Slutför**.
 
