@@ -1,6 +1,6 @@
 ---
 title: Översikt över konsolidering och eliminering
-description: Det här ämnet innehåller allmän information om konsoliderings- och kvittningsprocessen. Avsnittet innehåller alla svar på vanliga frågor och svar.
+description: Det här avsnittet innehåller allmän information om konsoliderings- och kvittningsprocessen. Avsnittet innehåller alla svar på vanliga frågor och svar.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 670b238580ecf800686324fe664be747c551090d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: cd7647df49883f0e3b6cbb2d21b19ca2acb2f065
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710710"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871403"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Översikt över konsolidering och eliminering
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet innehåller allmän information om konsoliderings- och kvittningsprocessen. Avsnittet innehåller alla svar på vanliga frågor och svar.
+Det här avsnittet innehåller allmän information om konsoliderings- och kvittningsprocessen. Avsnittet innehåller alla svar på vanliga frågor och svar.
 
 När du konsoliderar data kombineras de ekonomiska resultaten för flera dotterbolag till resultat för ett enda, konsoliderat företag. Dotterbolag kan finnas på andra versioner eller system, de kanske inte är helägda och de kan använda andra valutor. Det finns flera alternativ för konsolidering av data:
 

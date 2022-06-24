@@ -1,6 +1,6 @@
 ---
 title: Separat dubbelriktad skrivning programorkestrering-paket
-description: Paketet för programorkestrering är inte längre ett enda paket utan har separerats i mindre paket. I det här avsnittet beskrivs lösningar och kartor som varje paket innehåller, samt dess beroende av andra paket.
+description: Paketet för programorkestrering är inte längre ett enda paket utan har separerats i mindre paket. I den här artikeln beskrivs lösningar och kartor som varje paket innehåller, samt dess beroende av andra paket.
 author: RamaKrishnamoorthy
 ms.date: 04/25/2022
 ms.topic: article
@@ -10,12 +10,12 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: f6950ec3e6ded49a71f119c21be67f538c8e1c69
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 504939f1f98c18005c092cabc1d040b420402c93
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716564"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874824"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Separat dubbelriktad skrivning programorkestrering-paket
 
@@ -42,7 +42,7 @@ Eftersom det var ett enskilt paket skapade det här paketet en situation för ku
 
 ![Separerat paket.](media/separated-package-1.png)
 
-I det här avsnittet beskrivs lösningar och kartor som varje paket innehåller, samt dess beroende av andra paket.
+I den här artikeln beskrivs lösningar och kartor som varje paket innehåller, samt dess beroende av andra paket.
 
 ## <a name="dual-write-application-core"></a>Appkärna med dubbla skrivningar
 

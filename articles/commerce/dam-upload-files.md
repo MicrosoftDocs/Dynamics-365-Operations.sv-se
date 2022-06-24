@@ -1,6 +1,6 @@
 ---
-title: Ladda upp andra filer än bilder och filmer
-description: I det här avsnittet beskrivs hur du överför andra binära filer än bilder och videor i Microsoft Dynamics 365 Commerce webbplatsskaparen.
+title: Överföra andra filer än bilder och videor
+description: I denna artikel beskrivs hur du överför andra binära filer än bilder och videor i Microsoft Dynamics 365 Commerce-webbplatsverktyget.
 author: psimolin
 ms.date: 03/03/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 50f9d793f0e7f34aa21d69c4049a3fe6bf16b58633f7bd555492506dc8d96790
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5952c44d066729d66d62c47249214221fe39ad9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729157"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863445"
 ---
 # <a name="upload-files-other-than-images-and-videos"></a>Överföra andra filer än bilder och videor
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du överför andra filer än bilder och videor i Microsoft Dynamics 365 Commerce webbplatsskaparen.
+I denna artikel beskrivs hur du överför andra filer än bilder och videor i Microsoft Dynamics 365 Commerce-webbplatsverktyget.
 
 Mediabiblioteket Commerce webbplatsskaparen stöder överföring av binära till gångar utom bilder eller videor. Du kanske till exempel vill överföra Microsoft Excel, Microsoft Word Microsoft PowerPoint eller PDF-filer.
 
@@ -82,7 +82,7 @@ Så här överför du en fil till din Commerce-webbplatsskapare.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt av digital tillgångshantering](dam-overview.md)
+[Översikt av digital Tillgångshantering](dam-overview.md)
 
 [Överför bilder](dam-upload-images.md)
 

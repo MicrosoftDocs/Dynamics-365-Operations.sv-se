@@ -1,6 +1,6 @@
 ---
 title: Registrera försäljningsprovisioner
-description: I det här avsnittet beskrivs hur försäljningsprovision beräknas och registreras.
+description: I denna artikel beskrivs hur försäljningsprovision beräknas och registreras.
 author: Henrikan
 ms.date: 08/06/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4aca37350938d54d4acf283093365bfcab64f70
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b15ca78da14068fd2f3275e7aff04852625db7ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575373"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862523"
 ---
 # <a name="register-sales-commissions"></a>Registrera försäljningsprovisioner
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur försäljningsprovision beräknas och registreras. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Innan du startar guiden kör du guiden ”Ställ in regler för försäljningsprovision” för att vara säker på att alla nödvändiga inställningar för provisionsberäkningen har gjorts.
+I denna artikel beskrivs hur försäljningsprovision beräknas och registreras. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Innan du startar guiden kör du guiden ”Ställ in regler för försäljningsprovision” för att vara säker på att alla nödvändiga inställningar för provisionsberäkningen har gjorts.
 
 Skriv upp kundnumren och artikelnumret du har valt för provisionsprocessen, och använd dem när du ska skapa en försäljningsorder i den här guiden.
 

@@ -1,6 +1,6 @@
 ---
 title: Funktioner för avvikelser
-description: I detta ämne beskrivs hur du skapar och använder funktioner för avvikelser.
+description: I denna artikel beskrivs hur du skapar och använder funktioner för avvikelser.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35619454af8b1cb1b7d383d393362f58d9dd0ea6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d2e63156dd2b230da7f1ea89e2c2006c1b4f3eeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573883"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848003"
 ---
 # <a name="operations-for-nonconformances"></a>Funktioner för avvikelser
 
 [!include [banner](../includes/banner.md)]
 
-I detta ämne beskrivs hur du skapar och använder funktioner för avvikelser.
+I denna artikel beskrivs hur du skapar och använder funktioner för avvikelser.
 
-Du kan använda sidan **Funktioner** för att definiera klassificeringen av det arbete som kan utföras för en godkänd avvikelse. När en relaterad funktion tilldelas till en avvikelse kan du definiera detaljerad information om tillhörande material, arbetstid och avgifter som krävs för att funktionen ska kunna genomföras. Systemet använder denna information för att beräkna en uppskattad kostnad för funktionen. Den detaljerade informationen och de uppskattade kostnaderna anges i referenssyfte. Relaterade kvalitetsoperationer skiljer sig från de operationer som kan definieras för ett produktionsflöde.
+Du kan använda sidan **Funktioner** för att definiera klassificeringen av det arbete som kan utföras för en godkänd avvikelse. När en relaterad funktion tilldelas till en avvikelse kan du definiera detaljerad information om tillhörande material, arbetstid och avgifter som krävs för att funktionen ska kunna genomföras. Systemet använder denna information för att beräkna en uppskattad kostnad för funktionen. Den detaljerade informationen och de uppskattade kostnaderna anges i referenssyfte. Relaterade kvalitetsåtgärder skiljer sig från de åtgärder som kan definieras för ett produktionsflöde.
 
 > [!NOTE]
 > Även om du kan spåra kostnader, tid och artiklar som används i en funktion som hör till en avvikelse är de data som du anger bara information. Datan integreras inte automatiskt med redovisningen, lagerredovisningen eller modulen **Tid och närvaro**.

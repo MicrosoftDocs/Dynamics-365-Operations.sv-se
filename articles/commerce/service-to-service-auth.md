@@ -1,6 +1,6 @@
 ---
 title: Konfigurera tjänst-till-tjänst-autentisering
-description: Det här ämnet beskriver hur du konfigurerar autentisering av Service-to-Service i Microsoft Dynamics 365 Commerce för säker samtalstjänst-API:er för värderingar och granskningar.
+description: Denna artikel beskriver hur du konfigurerar autentisering tjänst-till-tjänst i Microsoft Dynamics 365 Commerce för säkra API-anrop för värderingar och granskningar.
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: da780de5f15d72bdac85a261eae809125c830260
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: acb3a6220d146d32bbeb5bd8169033bc897ec3fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968534"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871617"
 ---
 # <a name="configure-service-to-service-authentication"></a>Konfigurera tjänst-till-tjänst-autentisering
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet beskriver hur du konfigurerar autentisering av Service-to-Service (S2S) i Microsoft Dynamics 365 Commerce för säker samtalstjänst-API:er (application programming interfaces) för värderingar och granskningar.
+Denna artikel beskriver hur du konfigurerar autentisering tjänst-till-tjänst (S2S) i Microsoft Dynamics 365 Commerce för säkra anrop till API:er ("application programming interfaces"; programmeringsgränssnitt för program) för värderingar och granskningar.
 
-Dynamics 365 Commerce erbjuder [klassificeringar och recensioner](ratings-reviews-overview.md) som en flerkanalslösning. Med den här lösningen kan du komma åt service-API:er från utanför Commerce så att olika uppgifter kan utföras. Uppgifterna inkluderar import av värderingar och granskningar från ditt externa system till Commerce, samt export av värderingar och granskningar från Commerce. Om du vill aktivera Commerce för att anropa värderingar och granska tjänste-API:er på ett säkert sätt måste du först konfigurera S2S-autentisering genom att slutföra procedurerna i det här avsnittet.
+Dynamics 365 Commerce erbjuder [klassificeringar och recensioner](ratings-reviews-overview.md) som en flerkanalslösning. Med den här lösningen kan du komma åt service-API:er från utanför Commerce så att olika uppgifter kan utföras. Uppgifterna inkluderar import av värderingar och granskningar från ditt externa system till Commerce, samt export av värderingar och granskningar från Commerce. Om du vill låta Commerce anropa tjänste-API:er för värdering och granskning på ett säkert sätt måste du först konfigurera S2S-autentisering genom att slutföra procedurerna i denna artikel.
 
 ## <a name="add-a-new-app-registration"></a>Lägga till en ny appregistrering
 

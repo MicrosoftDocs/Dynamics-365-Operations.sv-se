@@ -1,6 +1,6 @@
 ---
 title: Ställa in en butikskanal
-description: I det här avsnittet beskrivs hur du skapar en ny butikskanal i Microsoft Dynamics 365 Commerce.
+description: I denna kanal beskrivs hur du skapar en ny butikskanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 74a4f0f61e0bbfd73d0006d3cf45863af6fef18f
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: eccbbff33ddf967b000940a8ea9910c34232431f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770231"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847742"
 ---
 # <a name="set-up-a-retail-channel"></a>Ställa in en återförsäljarkanal
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skapar en ny butikskanal i Microsoft Dynamics 365 Commerce.
+I denna kanal beskrivs hur du skapar en ny butikskanal i Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce stöder flera butikskanaler. Dessa kanaler inkluderar onlinebutiker, kundtjänst och butiker (kallas också fysiska butiker). Varje butikskanal kan ha egna betalsätt, prisgrupper, kassaregister (POS), intäkts- och utgiftskonton och personal. Du måste ställa in alla dessa element innan du kan skapa en butikskanel. 
+Dynamics 365 Commerce stöder flera butikskanaler. Dessa kanaler inkluderar onlinebutiker, kundtjänst och butiker (kallas också fysiska butiker). Varje butikskanal kan ha egna betalsätt, prisgrupper, kassaregister (POS), intäkts- och utgiftskonton och personal. Du måste konfigurera alla dessa element innan du kan skapa en butikskanel. 
 
 Innan du skapar en butikskanal ska du kontrollera att du följer [kanalförutsättningarna](channels-prerequisites.md).
 
@@ -60,7 +60,7 @@ I bilden nedan visas ett exempel på butikskanal.
 
 Det finns flera andra inställningar som kan ställas in i avsnitten **Utdrag/stängning** och **Diverse**, baserat på butikens behov.
 
-Se även [Skärmlayouter för POS](pos-screen-layouts.md) för information om att ställa in standardskärmlayouten i avsnittet **skärmlayout** och [Konfigurera och installera Retail Hardware Station](retail-hardware-station-configuration-installation.md) för inställningsinformation om avsnittet **Maskinvarustationer**.
+Se även [Skärmlayouter för POS](pos-screen-layouts.md) för information om att konfigurera standardskärmlayouten i avsnittet **skärmlayout** och [Konfigurera och installera Retail Hardware Station](retail-hardware-station-configuration-installation.md) för inställningsinformation om avsnittet **Maskinvarustationer**.
 
 I bilden nedan visas ett exempel på konfiguration av butikskanal.
 
@@ -78,7 +78,7 @@ Följande bild visar olika ytterligare alternativ för inställning av butikskan
 
 ### <a name="set-up-payment-methods"></a>Ange betalsätt
 
-Om du vill ställa in betalsätt följer du dessa steg för varje betalningstyp som stöds på den här kanalen.
+Om du vill konfigurera betalsätt följer du dessa steg för varje betalningstyp som stöds på den här kanalen.
 
 1. I åtgärdsfönstret väljer du fliken **Inställningar** och sedan **Betalningsmetod**.
 1. Klicka på **Ny** i åtgärdsfönstret.
@@ -193,7 +193,7 @@ Den nya formatfunktionen för transaktions-ID kan aktiveras från arbetsytan **F
 
 Gör på följande sätt om du vill aktivera användning av nya transaktions-ID:n:
 
-1. I Commerce-administrationen går du till **Systemadministration \> Arbetsytor \> Funktionshantering**.
+1. I Commerce headquarters går du till **Systemadministration \> Arbetsytor \> Funktionshantering**.
 1. Filtrera fram modulen "Retail och Commerce".
 1. Sök efter funktionsnamnet **Aktivera nytt transaktions-ID i syfte att undvika dubbletter av transaktions-ID:n**.
 1. Välj funktionen och sedan **Aktivera nu** i det högra fönstret.  

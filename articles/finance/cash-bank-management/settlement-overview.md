@@ -1,6 +1,6 @@
 ---
-title: Kvittningsöversikt
-description: Det här ämnet innehåller allmän information om kvittningsprocessen. Den beskriver vilka transaktionstyper som kan kvittas samt tid och process för kvittning av dem. Här beskrivs även resultat av kvittningsprocessen.
+title: Kvittningöversikt
+description: Den här artikeln innehåller allmän information om kvittningsprocessen. Den beskriver vilka transaktionstyper som kan kvittas samt tid och process för kvittning av dem. Här beskrivs även resultat av kvittningsprocessen.
 author: panolte
 ms.date: 07/30/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e1992019570129461f3ecdd5479a87bafd8aeacb
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a495a71a95032a0022cbab2783f356db48ee349d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724909"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887960"
 ---
 # <a name="settlement-overview"></a>Kvittningsöversikt
 
@@ -30,7 +30,7 @@ ms.locfileid: "8724909"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-Det här ämnet innehåller allmän information om kvittningsprocessen. Den beskriver vilka transaktionstyper som kan kvittas samt tid och process för kvittning av dem. Här beskrivs även resultat av kvittningsprocessen.
+Den här artikeln innehåller allmän information om kvittningsprocessen. Den beskriver vilka transaktionstyper som kan kvittas samt tid och process för kvittning av dem. Här beskrivs även resultat av kvittningsprocessen.
 
 Under kvittning tillämpas transaktionerna för ett dokument till transaktioner på ett annat dokument för att minska eller öka saldot för varje dokument. Exempelvis kan en betalning tillämpas till en faktura. Olika typer av transaktioner kan kvittas vid olika tidpunkter och genom olika metoder. Kvittningen kan även generera nya transaktioner.
 

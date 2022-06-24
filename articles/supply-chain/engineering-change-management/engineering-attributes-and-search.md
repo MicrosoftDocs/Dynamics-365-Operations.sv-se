@@ -1,6 +1,6 @@
 ---
 title: Tekniska attribut och sökning efter tekniska attribut
-description: I det här avsnittet beskrivs hur du kan använda tekniska attribut för att ange alla icke-standardvärden, för att se till att alla produkthuvuddata kan registreras i systemet. Det förklarar också hur du kan använda tekniska attributsökningar för att enkelt hitta produkter, baserat på de egenskaper som har registrerats.
+description: I denna artikel beskrivs hur du kan använda tekniska attribut för att ange alla icke-standardvärden, för att se till att alla produkthuvuddata kan registreras i systemet. Det förklarar också hur du kan använda tekniska attributsökningar för att enkelt hitta produkter, baserat på de egenskaper som har registrerats.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 59710f0366418e240a4109e7cf8fcf84073110bf
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 4b25ab0bfda08b7aa091de8c6833007c586b9c87
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103223"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852575"
 ---
 # <a name="engineering-attributes-and-engineering-attribute-search"></a>Tekniska attribut och sökning efter tekniska attribut
 
@@ -42,9 +42,9 @@ Om du vill visa, skapa eller redigera en typ av teknisk attribut följer du dess
 
     - I fältet **Attributtypnamn** - ange ett namn på attributtypen.
     - **Typ** – Välj en standard datatyp (*Valuta*, *DatumTid*, *Decimal*, *Heltal*, *Text*, *Boolesk* eller *Referens*).
-    - **Fast lista** – det här alternativet är endast tillgängligt om du ställer in fältet **Typ** till *Text*. Ange värdet *Ja* för att definiera specifika värden för attribut av den här typen. I det här fallet skapas en nedrullningsbar lista. Med hjälp av snabbfliken **värde** kan du fastställa vilka värden som är tillgängliga för den här attributtypen. Ställ in det här alternativet på *Nej* om du vill att användarna ska kunna ange valfritt värde. I det här fallet skapas ett inmatningsfält.
-    - **Värdeintervall** – det här alternativet är bara tillgängligt om du ställer in fältet **typ** till *heltal*, *decimal* eller *valuta*. Ange det till *Ja* för att fastställa minimi- och maximivärden som accepteras för attribut av denna typ. Du kan använda snabbfliken **intervall** för att fastställa minimi- och maximivärden och (för valuta) den valuta som gäller för de gränser som du anger. Ange det här alternativet till *Nej* om du accepterar något värde. 
-    - **Måttenhet** – Det här fältet är endast tillgängligt om du ställer in **Typ** till *Heltal* eller *Decimal*. Välj den måttenhet som ska användas för den här attributtypen. Om ingen enhet krävs lämnar du det här fältet tomt.
+    - **Fast lista** – det här alternativet är endast tillgängligt om du konfigurerar fältet **Typ** till *Text*. Ange värdet *Ja* för att definiera specifika värden för attribut av den här typen. I det här fallet skapas en nedrullningsbar lista. Med hjälp av snabbfliken **värde** kan du fastställa vilka värden som är tillgängliga för den här attributtypen. Ställ in det här alternativet på *Nej* om du vill att användarna ska kunna ange valfritt värde. I det här fallet skapas ett inmatningsfält.
+    - **Värdeintervall** – det här alternativet är bara tillgängligt om du konfigurerar fältet **typ** till *heltal*, *decimal* eller *valuta*. Ange det till *Ja* för att fastställa minimi- och maximivärden som accepteras för attribut av denna typ. Du kan använda snabbfliken **intervall** för att fastställa minimi- och maximivärden och (för valuta) den valuta som gäller för de gränser som du anger. Ange det här alternativet till *Nej* om du accepterar något värde. 
+    - **Måttenhet** – Det här fältet är endast tillgängligt om du konfigurerar **Typ** till *Heltal* eller *Decimal*. Välj den måttenhet som ska användas för den här attributtypen. Om ingen enhet krävs lämnar du det här fältet tomt.
 
 ### <a name="set-up-engineering-attributes"></a>Ställ in tekniska attribut
 
@@ -96,7 +96,7 @@ Eftersom dessa produkter oftast liknar varandra kan det vara lämpligt att föra
 
 ## <a name="connect-engineering-attributes-to-an-engineering-product-category"></a>Ansluta tekniska attribut till en teknisk produktkategori
 
-Vissa av de tekniska attributen gäller för alla produkter, medan andra är specifika för enskilda produkter eller produktkategorier. Elektriska attribut krävs till exempel inte för mekaniska produkter. Därför kan du ställa in *kategorier för konstruktionsprodukter*. En kategori för konstruktionsprodukter etablerar samlingen av tekniska attribut som måste ingå i definitionen för produkter som tillhör den kategorin. Du kan även ange vilka tekniska attribut som är obligatoriska och om det finns ett standardvärde.
+Vissa av de tekniska attributen gäller för alla produkter, medan andra är specifika för enskilda produkter eller produktkategorier. Elektriska attribut krävs till exempel inte för mekaniska produkter. Därför kan du konfigurera *kategorier för konstruktionsprodukter*. En kategori för konstruktionsprodukter etablerar samlingen av tekniska attribut som måste ingå i definitionen för produkter som tillhör den kategorin. Du kan även ange vilka tekniska attribut som är obligatoriska och om det finns ett standardvärde.
 
 Mer information om hur du arbetar med kategorier för konstruktionsprodukter inklusive information om hur du ansluter attribut till kategorier, finns i [tekniska versioner och kategorier för konstruktionsprodukter](engineering-versions-product-category.md).
 

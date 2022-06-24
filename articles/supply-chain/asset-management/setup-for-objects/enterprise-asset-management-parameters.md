@@ -1,6 +1,6 @@
 ---
-title: Parametrar för tillgångshantering
-description: I tillgångshantering måste allmänna parametrar som hänför sig till tillgångar, arbetsorder och schemaläggning av arbetsorder ställas in.
+title: Parametrar för Tillgångshantering
+description: I Tillgångshantering måste allmänna parametrar som hänför sig till tillgångar, arbetsorder och schemaläggning av arbetsorder ställas in.
 author: johanhoffmann
 ms.date: 02/18/2020
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1659fd3b4c173ffe09f245631309d329bba5b1bd
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: a1e2c79a621cf4bd1212c006e1c8967d85bd716b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105499"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870823"
 ---
-# <a name="asset-management-parameters"></a>Parametrar för tillgångshantering
+# <a name="asset-management-parameters"></a>Parametrar för Tillgångshantering
 
 [!include [banner](../../includes/banner.md)]
 
-I tillgångshantering måste allmänna parametrar som hänför sig till tillgångar, arbetsorder och schemaläggning av arbetsorder ställas in. Det här avsnittet innehåller information om hur du ställer in dem. Välj **tillgångshantering** > **inställningar** > **tillgångshanteringsparametrar** för att öppna sidan.
+I Tillgångshantering måste allmänna parametrar som hänför sig till tillgångar, arbetsorder och schemaläggning av arbetsorder ställas in. Denna artikel innehåller information om hur du konfigurerar dem. Välj **Tillgångshantering** > **inställningar** > **Tillgångshanteringsparametrar** för att öppna sidan.
 
 > [!NOTE]
-> Om du vill konfigurera ett system som innehåller demodata för att testa funktionerna för tillgångshantering läser [distribuera en demomiljö](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) för instruktioner.
+> Om du vill konfigurera ett system som innehåller demodata för att testa funktionerna för Tillgångshantering läser [distribuera en demomiljö](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) för instruktioner.
 
 ## <a name="the-assets-tab"></a>Fliken Tillgångar
 
@@ -52,7 +52,7 @@ På fliken **Arbetsorder** finns följande inställningar:
 - Välj **Ja** för **Kopieringsfel** som du automatiskt vill kopiera fel som registrerade på underhållsförfrågningar till relaterade arbetsorder. 
 - I fältet **nivå** definierar du den funktionsplatsnivå som infogas automatiskt på en arbetsorder om alla relaterade arbetsorderjobb refererar till samma funktionsplats. Om inte alla arbetsorderjobb relaterar till samma funktionsplats på den definierade nivån, lämnas fältet **funktionsplats** tomt på arbetsordern. Om du till exempel infogar siffran "1" i det här fältet är det den översta nivån i en funktionsplatsstruktur. Om du infogar siffran "0" i det här fältet har du inte definierat en specifik funktionsplatsnivå, endast att alla arbetsorderjobb på en arbetsorder måste relateras till samma funktionsplats för att funktionsplatsen ska läggas till i arbetsordern.  
 - Journaler som används vid bokföring av förbrukning på en arbetsorder kan väljas på snabbfliken **allmänt** i fälten **timme**, **artikel** och **utgift**.  
-- I fältet **produktensspråkkälla** väljer du vilket språk som ska användas för produktnamn i tillgångshanteringsrapporter. Du kan välja det språk som ställts in på företagskontot eller det språk som ställts in för den inloggade användaren.  
+- I fältet **produktensspråkkälla** väljer du vilket språk som ska användas för produktnamn i Tillgångshanteringsrapporter. Du kan välja det språk som ställts in på företagskontot eller det språk som ställts in för den inloggade användaren.  
 - Välj **Ja** på **Uppdateringar i realtid** om du vill att ändringar automatiskt ska uppdateras till standardvärden för jobbtyp, underhållsplaner och underhållsomgångar.
   - Om du väljer **Nej** uppdateras inte ändringar av standardvärden för jobbtyp, underhållsplaner och underhållsomgångar automatiskt i tillgångshanteraren.
   - Välj **nej** om du har stora mängder data som ska synkroniseras, till exempel många tillgångar eller funktionsplatser som ställts in på underhållsplaner eller underhållsomgångar eller ett stort antal underhållsplaner eller rundor.  
@@ -71,7 +71,7 @@ På fliken **Schemaläggning av arbetsorder** finns följande inställningar på
 - **Huvudplanen** relaterar till resurser i modulen **Organisationsadministration**. Om du väljer en huvudplan i det här fältet kan du se kapacitetsreservationer som är relaterade till arbetsorder i **Kapacitetsreservationer** (**Organisationsadministration** > **Resurser** > **Resurser** fliken > Välj resurs > **Resurs** > knappen **Kapacitetsreservationer**). Om du lämnar detta fält tomt, kommer du att kunna se kapacitetsbelastning relaterad till arbetsorder i **Kapacitetsbeläggning** (**Organisationsadministration** \> **Resurser** \> **Resurser** \> välj resurser \> fliken **Resurs** knappen \> **Kapacitetsbeläggning**).  
 
 >[!NOTE]
->Valet om att använda en huvudplan i modulen **tillgångshantering** och det relaterade formuläret som används för att få en översikt över kapacitetsreservationer eller kapacitetsbeläggning är standardinställningar. Beroende på inställningarna i fältet **Huvudplan** kommer du att kunna komma åt kapacitetsinformation i antingen **kapacitetsreservationer** eller **kapacitetsbeläggning** i modulen **organisationsadministration**. Det går inte att skapa en inställning där kapacitetsreservationer visas i båda vyerna.  
+>Valet om att använda en huvudplan i modulen **Tillgångshantering** och det relaterade formuläret som används för att få en översikt över kapacitetsreservationer eller kapacitetsbeläggning är standardinställningar. Beroende på inställningarna i fältet **Huvudplan** kommer du att kunna komma åt kapacitetsinformation i antingen **kapacitetsreservationer** eller **kapacitetsbeläggning** i modulen **organisationsadministration**. Det går inte att skapa en inställning där kapacitetsreservationer visas i båda vyerna.  
 
 Fälten som beskrivs i följande lista relaterar till beräknade bedömningspoäng, som används för att beräkna arbetsorderprioritet under arbetsorderplanering.
 

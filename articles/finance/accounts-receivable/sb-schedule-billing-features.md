@@ -1,6 +1,6 @@
 ---
 title: Funktioner för faktureringsplan
-description: Detta ämne innehåller information om faktureringsplaner, till exempel prissättningsmetoder, eskaleringar och rabatter, justeringsdatum, proportionell fördelning, omvänd fakturering och uppdelade artikelgrupper.
+description: Denna artikeln innehåller information om faktureringsplaner, till exempel prissättningsmetoder, eskaleringar och rabatter, justeringsdatum, proportionell fördelning, omvänd fakturering och uppdelade artikelgrupper.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 0ce323565a94e8e70d90a65b7a3143e984a1c159
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b6cfebc2bbfe06e118bfc96f9ae0df6323805e39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8700731"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853595"
 ---
 # <a name="billing-schedule-features"></a>Funktioner för faktureringsplan
 

@@ -1,6 +1,6 @@
 ---
-title: Vagnikonmodul
-description: Det här avsnittet handlar om vagnikonmodulen och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
+title: Ikon för kundvagnsmodul
+description: Denna artikel handlar om kundvagnsikonmodulen och beskriver hur du lägger till denna på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5cf86876ba03d510b03237c9c89a1fc069a73482b755a1d72227037c91439e86
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a5b86b0c843a680dd0c46295a69e12d6e3542619
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735688"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859123"
 ---
 # <a name="cart-icon-module"></a>Ikon för kundvagnsmodul
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om vagnikonmodulen och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
+Denna artikel handlar om kundvagnsikonmodulen och beskriver hur du lägger till denna på webbsidorna i Microsoft Dynamics 365 Commerce.
 
-Vagnikonmodulen representerar kundvagnen i huvudmodulen på sidan och visar antalet artiklar i vagnen. Vagnikonmodulen visar också en sammanfattning av kundvagnen (även kallad en minivagn) när vagnikonen hovras över. Minivagnen ger användaren en sammanfattning av artiklarna i kundvagnen utan att behöva navigera till kundvagnssidan. Dessutom kan användaren gå direkt till kassasidan om de är nöjda med sammanfattningen. Detta minskar antalet sidnavigeringer och gör utcheckningen snabbare. 
+Vagnikonmodulen representerar kundvagnen i huvudmodulen på sidan och visar antalet artiklar i vagnen. Vagnikonmodulen visar också en sammanfattning av kundvagnen (även kallad en minivagn) när vagnikonen hovras över. Minivagnen ger användaren en sammanfattning av artiklarna i kundvagnen utan att behöva navigera till kundvagnssidan. Dessutom kan användaren gå direkt till kassasidan om de är nöjda med sammanfattningen. Detta minskar antalet sidnavigeringer och gör kassan snabbare. 
 
 Följande bild visar ett exempel på en kundvagnsikon som visar en minikundvagn i Fabrikam-rubriken.
 
@@ -36,11 +36,11 @@ Följande bild visar ett exempel på en kundvagnsikon som visar en minikundvagn 
 ## <a name="module-properties"></a>Modulegenskaper
 
 - **Visa minivagn** – När den här egenskapen är inställd på **True**, en vagnöversikt (minivagn) visas när användare håller muspekaren över vagnikonen. Den här funktionen stöds endast för portar i skrivbordsvy.
-- **Tillåt anonym utcheckning** – När denna egenskap ställs in på **True**, minivagnen tillåter användare som inte är inloggade att göra en gästkassa. Den här egenskapen är tillgänglig i versionen Commerce version 10.0.21 som en del av paketet Commerce-modulbibliotek.
+- **Tillåt anonym kassa** – När denna egenskap ställs in på **True**, minivagnen tillåter användare som inte är inloggade att göra en gästkassa. Den här egenskapen är tillgänglig i versionen Commerce version 10.0.21 som en del av paketet Commerce-modulbibliotek.
 - **Order av artiklar** – Denna egenskap styr i vilken ordning artiklar visas i vagnen. När alternativet **Nya objekt har lagts till överst på listan** väljs, nya artiklar som läggs till i vagnen visas högst upp i listan över minivagnartiklar. När standardalternativet **Nya objekt har lagts till överst på listan** väljs, nya artiklar som läggs till i vagnen visas högst upp i listan över minivagnartiklar. Den här egenskapen är tillgänglig i versionen Commerce version 10.0.21 som en del av paketet Commerce-modulbibliotek.
 
 > [!IMPORTANT]
-> Egenskaperna **Tillåt anonym utcheckning** och **Order av artiklar** är tillgängliga från version 10.0.21 av Commerce. De kräver att paketversion 9.31 för Commerce-modulens bibliotek är installerad.
+> Egenskaperna **Tillåt anonym kassa** och **Order av artiklar** är tillgängliga från version 10.0.21 av Commerce. De kräver att paketversion 9.31 för Commerce-modulens bibliotek är installerad.
 
 ## <a name="module-properties-and-slots-in-the-adventure-works-theme"></a>Modulegenskaper och platser i Adventure Works-temat
 

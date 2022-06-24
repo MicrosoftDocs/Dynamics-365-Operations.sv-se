@@ -1,6 +1,6 @@
 ---
 title: Installera, ställ in och uppdatera kundportalen
-description: Det här avsnittet innehåller licensieringsinformation och installationsinstruktioner för kundportalen.
+description: Denna artikel innehåller licensieringsinformation och installationsinstruktioner för kundportalen.
 author: Henrikan
 ms.date: 06/08/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 187efe1372bf2400241f3d65751189247c001447
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8344212e66cb57ea8c9d4e8c2cdfbf022bc199c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060623"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850595"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Installera, ställ in och uppdatera kundportalen
 
@@ -41,7 +41,7 @@ Till skillnad från andra funktioner från Supply Chain Management, kundportalma
 
 ## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>Obligatorisk inställning för att aktivera kundportalen
 
-När du har installerat de nödvändiga licenserna kan du ställa in dubbelriktad skrivning enligt beskrivningen i [inledande synkroniseringsinställningarna för dubbelriktad skrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map.md).
+När du har installerat de nödvändiga licenserna kan du konfigurera dubbelriktad skrivning enligt beskrivningen i [inledande synkroniseringsinställningarna för dubbelriktad skrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map.md).
 
 Se till att aktivera följande tabellmappningar i dubbelriktad skrivning:
 
@@ -73,7 +73,7 @@ Fler funktioner kan läggas till kundportalen senare. Alla ändringar som Micros
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-Om du vill veta hur du kan ställa in och anpassa kundportalen bör du börja med att granska följande dokumentation för den underliggande tekniken:
+Om du vill veta hur du kan konfigurera och anpassa kundportalen bör du börja med att granska följande dokumentation för den underliggande tekniken:
 
 - [Power Apps-portaldokumentation](/powerapps/maker/portals/overview)
 - [Dokumentation för dubbelriktad skrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)

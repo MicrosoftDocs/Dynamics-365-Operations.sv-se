@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37698133a959792338abcc2abd75b6fa654177f6
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b684cf16b172432fc3bdb485be98a5c3476c8ed0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710682"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846967"
 ---
 # <a name="cash-discounts"></a>Kassarabatter
 
@@ -30,7 +30,7 @@ Kassarabatter ställs in och delas för Leverantörsreskontra och Kundreskontra.
 
 ## <a name="cash-discounts"></a>Kassarabatter
 
-Kassarabatter för både kunder eller leverantörer kan skapas på sidan Kassarabatter. Du kan också definiera, genom att använda fältet Nästa rabattkod, en serie kassarabatter som följer efter varandra när tidigare kassarabattdatum förfaller. Mer information finns i ”Exempel: Serie med kassarabatter” senare i det här avsnittet. Om fakturan, kredittransaktionen (antingen en betalning eller en kreditfaktura) eller båda anges i en annan valuta än redovisningsvalutan för den juridiska personen beräknas kassarabatten med hjälp av valutakursen för datumet för betalningen eller kreditfakturan. Om faktura- och kreditdokumentet anges i olika juridiska personer, och om redovisningsvalutorna förde juridiska personerna skiljer sig, hämtas valutakursen från den juridiska personen på fakturan, från datumet för kreditdokumentet. Mer information finns i ”Exempel: Valutakurser för kassarabatter” senare i det här avsnittet.
+Kassarabatter för både kunder eller leverantörer kan skapas på sidan Kassarabatter. Du kan också definiera, genom att använda fältet Nästa rabattkod, en serie kassarabatter som följer efter varandra när tidigare kassarabattdatum förfaller. Mer information finns i ”Exempel: Serie med kassarabatter” senare i den här artikeln. Om fakturan, kredittransaktionen (antingen en betalning eller en kreditfaktura) eller båda anges i en annan valuta än redovisningsvalutan för den juridiska personen beräknas kassarabatten med hjälp av valutakursen för datumet för betalningen eller kreditfakturan. Om faktura- och kreditdokumentet anges i olika juridiska personer, och om redovisningsvalutorna förde juridiska personerna skiljer sig, hämtas valutakursen från den juridiska personen på fakturan, från datumet för kreditdokumentet. Mer information finns i ”Exempel: Valutakurser för kassarabatter” senare i den här artikeln.
 
 ## <a name="defaulting-order-of-cash-discount-main-account"></a>Ange standardordning för kassarabatthuvudkontot
 

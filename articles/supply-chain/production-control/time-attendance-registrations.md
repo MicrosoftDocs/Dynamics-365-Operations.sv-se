@@ -1,6 +1,6 @@
 ---
 title: Tid- och närvaroregistrering – översikt
-description: Tidsregistreringsarbetare kan ange olika typer av tidregistreringar, till exempel stämpla in, stämpla ut, registrera indirekta aktiviteter och frånvaroregistrering. Det här ämnet beskriver registreringar, deras beräkning, godkännande och användning av arbetsflöde för att lägga till strukturen och godkännande automatiskt till processen för godkännande av tidrapporter.
+description: Tidsregistreringsarbetare kan ange olika typer av tidregistreringar, till exempel stämpla in, stämpla ut, registrera indirekta aktiviteter och frånvaroregistrering. Denna artikel beskriver registreringar, dessas beräkning, godkännande och användning av arbetsflöde för att lägga till struktur och godkännande automatiskt till processen för godkännande av tidrapporter.
 author: johanhoffmann
 ms.date: 07/25/2019
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af257427661cb9a0d976800b657d3eb4afe7feca
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f648663d81cd37a1df7794ee9d5ad6598fb16594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986131"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875229"
 ---
 # <a name="time-and-attendance-registration-overview"></a>Tid- och närvaroregistrering – översikt
 
 [!include [banner](../includes/banner.md)]
 
-Tidsregistreringsarbetare kan ange olika typer av tidregistreringar, till exempel stämpla in, stämpla ut, registrera indirekta aktiviteter och frånvaroregistrering. Det här ämnet beskriver registreringar, deras beräkning, godkännande och användning av arbetsflöde för att lägga till strukturen och godkännande automatiskt till processen för godkännande av tidrapporter.
+Tidsregistreringsarbetare kan ange olika typer av tidregistreringar, till exempel stämpla in, stämpla ut, registrera indirekta aktiviteter och frånvaroregistrering. Denna artikel beskriver registreringar, dessas beräkning, godkännande och användning av arbetsflöde för att lägga till struktur och godkännande automatiskt till processen för godkännande av tidrapporter.
 
 ## <a name="registrations"></a>Registreringar
 
@@ -42,7 +42,7 @@ I företag som använder Tid- och närvaroregistrering, måste arbetare registre
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Om du kör Tid och närvaro tillsammans med Tillverkningskörning, kommer alla registreringar på projekt, projektaktiviteter, indirekta aktiviteter samt frånvarokoder, övertid, flextid att registreras och användas för att beräkna lön i båda moduler. |
 
-## <a name="time-registrations-workers"></a> Tidsregistreringsarbetare
+## <a name="time-registrations-workers"></a>Tidsregistreringsarbetare
 
 För att kunna registrera tid och frånvaro göra måste anställda ställas in som tidsregistreringsarbetare i det företag som de är anställda i.
 
@@ -90,9 +90,9 @@ På samma sätt som du tilldelar en beräkningsgrupp till en tidsregistreringsar
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Om övertid har beräknats för en viss medarbetare kan övertiden tilldelas specifika jobb under dagen. Detta är relevant om jobbkostnaderna baseras på medarbetarens lön. |
 
-## <a name="approving-registrations-using-workflow"></a> Godkänn registreringar med hjälp av arbetsflödet
+## <a name="approving-registrations-using-workflow"></a>Godkänn registreringar med hjälp av arbetsflödet
 
-Du kan ställa in en godkännandeprocess för arbetsflöde som automatiskt godkänner registreringar, som överensstämmer med arbetsflödesregler som lämnar bara avvikelser som ska hanteras manuellt. Om arbetsflödesgodkännande har aktiverats, skickar teamchefen eller handledaren in beräknade registreringar för godkännande. Arbetsflödesprocessen skapar lämpliga godkännanden och uppgifter och tilldelar dem sedan rätt användare och roller som identifieras i arbetsflödet. Det finns två arbetsflödesgodkännanden för tid och närvaro.
+Du kan konfigurera en godkännandeprocess för arbetsflöde som automatiskt godkänner registreringar, som överensstämmer med arbetsflödesregler som lämnar bara avvikelser som ska hanteras manuellt. Om arbetsflödesgodkännande har aktiverats, skickar teamchefen eller handledaren in beräknade registreringar för godkännande. Arbetsflödesprocessen skapar lämpliga godkännanden och uppgifter och tilldelar dem sedan rätt användare och roller som identifieras i arbetsflödet. Det finns två arbetsflödesgodkännanden för tid och närvaro.
 
 | Arbetsflöde                                  | Syfte                                                                                                   | Registreringstyp                                                                                                                                                                                                                                     |
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -1,6 +1,6 @@
 ---
 title: Bearbeta icke-kopplade återrbetalningar med Dynamics 365 Commerce-betalningsanslutningen för Adyen
-description: I detta ämne beskrivs hur icke-kopplade återbetalningar fungerar när Microsoft Dynamics 365-betalningsanslutningen för Adyen används.
+description: I denna artikel beskrivs hur icke-kopplade återbetalningar fungerar när Microsoft Dynamics 365-betalningsanslutningen för Adyen används.
 author: BrianShook
 ms.date: 10/07/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c137dcf7d35031a293c88d8c4f5dc1e5f3d9e2f9
-ms.sourcegitcommit: a21a664cd35b95c8600c5af0aac588a64e892902
+ms.openlocfilehash: 634b30de7adbfb0c316fe14456581ea8eb89d070
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7623931"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885207"
 ---
 # <a name="process-unlinked-refunds-with-the-dynamics-365-commerce-payment-connector-for-adyen"></a>Bearbeta icke-kopplade återrbetalningar med Dynamics 365 Commerce-betalningsanslutningen för Adyen
 
 [!include [banner](../includes/banner.md)]
 
-I detta ämne beskrivs hur icke-kopplade återbetalningar fungerar när [Microsoft Dynamics 365-betalningsanslutningen för Adyen](adyen-connector.md) används. Här granskas också möjligheten att bearbeta en återbetalning mot en ny betalningsmetod i kassa eller kundtjänst.
+I denna artikel beskrivs hur icke-kopplade återbetalningar fungerar när [Microsoft Dynamics 365-betalningsanslutningen för Adyen](adyen-connector.md) används. Här granskas också möjligheten att bearbeta en återbetalning mot en ny betalningsmetod i kassa eller kundtjänst.
 
 Dynamics 365-betalningsanslutningen för Adyen ger stöd åt möjligheten att bearbeta återbetalningar med hjälp av en annan betalningsmetod än den som användes för den ursprungliga transaktionen. Även om vi rekommenderar att du använder [kopplade återbetalningar](linked-refunds.md) för att bearbeta en återbetalning mot den betalningsmetod som ursprungligen tillhandahölls, krävs i vissa fall återbetalnming till en annan metod. Till exempel kan kortet som användes för den ursprungliga betalningen nu ha förfallit eller förlorats, eller också kan det ha annullerats av användaren.
 
@@ -41,7 +41,7 @@ Dynamics 365 Commerce stöder återbetalning av transaktioner som tidigare godk�
 
 ## <a name="enable-unlinked-refunds-functionality"></a>Aktivera funktionen för icke-kopplad återbetalningar
 
-För att aktivera funktionen för icke-kopplade återbetalningar i Commerce-administrationen, följ dessa steg.
+För att aktivera funktionen för icke-kopplade återbetalningar i Commerce headquarters, följ dessa steg.
 
 1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> delade Commerce-parametrar**.
 1. På fliken **Betalningar i flera kanaler** anger du alternativet **Använd betalningar i flera kanaler** som **Ja**.
@@ -96,7 +96,7 @@ När en icke-kopplad återbetalning bearbetas mot en order i kundtjänst, välje
 
 #### <a name="set-up-an-administrator-override-pin-for-call-center"></a>Konfigurera en PIN-kod för administratörsåsidosättande för kundtjänst
 
-Följ dessa steg för att konfigurera en PIN-kod för administratörsåsidosättande för kundtjänst i Commerce-administrationen.
+Följ dessa steg för att konfigurera en PIN-kod för administratörsåsidosättande för kundtjänst i Commerce headquarters.
 
 1. Gå till **Retail och Commerce \> Kanalkonfiguration \> Konfiguration av kundtjänst** eller sök efter "Åsidosättning av behörigheter".
 1. Välj den roll för vilken du vill tillåta behörigheter för icke-kopplad återbetalning.

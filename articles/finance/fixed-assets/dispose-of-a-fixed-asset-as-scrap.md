@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: c30837da84bff67bbab80ff5116135e2533a867d
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 6564314c70de1880e437c3c493689f12d96d91ba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713090"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855445"
 ---
 # <a name="dispose-of-a-fixed-asset-as-scrap"></a>Kassering av avyttrade anläggningstillgångar
 

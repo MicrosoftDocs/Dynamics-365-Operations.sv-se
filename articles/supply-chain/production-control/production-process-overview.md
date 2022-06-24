@@ -1,6 +1,6 @@
 ---
-title: Översikt över produktionsprocess
-description: Det här ämnet innehåller en översikt över produktionsprocesserna. Den beskriver de olika stegen i produktionsorder, batchorder och kanbans, från orderns skapande till stängningen av den ekonomiska perioden.
+title: Produktionsprocess – översikt
+description: Denna artikel innehåller en översikt över produktionsprocesserna. Den beskriver de olika stegen i produktionsorder, batchorder och kanbans, från orderns skapande till stängningen av den ekonomiska perioden.
 author: johanhoffmann
 ms.date: 09/13/2019
 ms.topic: overview
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c9eac4d3f984b6fe511d7cc5ebab67e6c24c722
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a8ebf0418a7d8b93e2ac58f90a686c63fd859355
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983224"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852227"
 ---
-# <a name="production-process-overview"></a>Översikt över produktionsprocess
+# <a name="production-process-overview"></a>Produktionsprocess – översikt
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet innehåller en översikt över produktionsprocesserna. Den beskriver de olika stegen i produktionsorder, batchorder och kanbans, från orderns skapande till stängningen av den ekonomiska perioden.
+Denna artikel innehåller en översikt över produktionsprocesserna. Den beskriver de olika stegen i produktionsorder, batchorder och kanbans, från orderns skapande till stängningen av den ekonomiska perioden.
 
 Produktionen av produkter, en process som ibland också kallas produktionslivscykeln, följer specifika steg som behövs för att slutföra tillverkningen av en artikel. Livscykeln börjar med genereringen av en produktionsorder, batchorder, eller kanban. Den avslutas med en slutförd, tillverkad artikel som antingen är klar för kunden eller för en annan fas i produktionen. Varje steg i livscykeln kräver olika typer av information för att processen ska kunna slutföras. När varje steg har slutförts visar produktionsordern, batchordern eller kanban en ändring i produktionsstatus. Andra typer av produkter kräver olika tillverkningsprocesser.
 
-Modulen **Produktionskontroll** är kopplad till andra moduler, som t.ex. **Produktinformationshantering**, **Lagerhantering**, **Redovisning**, **Lagerstyrning**, **Projektredovisning**, och **Organisationsadministration**. Denna integration stödjer informationsflödet som krävs för att en artikel ska kunna färdigställas.
+Modulen **Produktionskontroll** är kopplad till andra moduler, som t.ex. **Produktinformationshantering**, **Lagerhantering**, **Redovisning**, **Lagerstyrning**, **Projektredovisning**, och **Organisationsadministration**. Denna integrering stödjer informationsflödet som krävs för att en artikel ska kunna färdigställas.
 
 Produktionsprocessen påverkas vanligtvis av kostnadsredovisning och lagervärderingmetoderna som väljs för en viss produktionsprocessen. Supply Chain Management stöder både faktisk kostnad (först-in-först-ut \[FIFO\]; sist in, först ut \[LIFO\]; rörligt genomsnitt, periodiskt och viktat medelvärde) och standardkostnadsmetoder. Lean manufacturing implementeras baserat på kostnadskalkylering med automatisk lageravräkningprincip.
 
@@ -50,7 +50,7 @@ Om du vill välja den tillverkningsprincip som stämmer bäst för en viss produ
 
 - **Gör till lager** – Detta är den klassiska tillverkningsprincipen där produkter produceras för lager, baserat på prognos eller minsta lagerpåfyllning (det senare beräknas normalt baserat på prognos eller historisk förbrukning).
 - **Tillverka mot beställning** – Standardprodukter tillverkas mot beställning eller avslutar beställning. Även om förproduktion kan göras genom att använda Gör till lager-principen, utlöses kostsamma steg i värdekedjan, eller steg som skapar varianter av en försäljningsorder eller en överföringsorder.
-- **Konfigurera till order** – På samma sätt som för Tillverka mot beställning-principen, görs de sista operationerna i värdekedjan mot beställning. Den verkliga produktvarianten som tillverkas är inte fördefinierad men skapas vid tidpunkten för orderregistreringen, baserat på försäljningsproduktens konfigurationsmodell. Konfigurera till order-principen kräver en viss nivå av processammanslagning för en viss produktserie.
+- **Konfigurera till order** – På samma sätt som för Tillverka mot beställning-principen, görs de sista åtgärderna i värdekedjan mot beställning. Den verkliga produktvarianten som tillverkas är inte fördefinierad men skapas vid tidpunkten för orderregistreringen, baserat på försäljningsproduktens konfigurationsmodell. Konfigurera till order-principen kräver en viss nivå av processammanslagning för en viss produktserie.
 - **Tillverka vid order** – Tillverka vid order-processer, behandlas normalt av ett projekt och som vanligtvis ska startas med teknikfasen. Under teknikfasen, uppfyller de faktiska produkterna som krävs, den order som utformats och beskrivs. Produktionsorder, batchorder eller kanban kan sedan skapas för att producera produkterna.
 
 ## <a name="overview-of-the-production-life-cycle"></a>Översikt över produktionslivscykeln
@@ -58,11 +58,11 @@ Om du vill välja den tillverkningsprincip som stämmer bäst för en viss produ
 Följande steg i tillverkningslivscykeln kan genereras för alla ordertyper av tillverkning som görs i blandat läge. Alla av dem representeras dock inte av en uttrycklig orderstatus.
 
 1. **Skapad** – Du kan skapa en produktionsorder, batch order eller en kanban manuellt, eller så kan du konfigurera systemet för att generera dem baserat på olika efterfrågansignaler. Huvudplanering skapar produktionsorder, batchorder eller kanban, genom att bekräfta planerade order. Andra efterfrågansignaler är försäljningsorder eller peggad leveranssignaler från andra produktionsorder eller kanban. För kanbana med fasta kvantiteter skapas efterfrågansignaler när kanban registreras som tomma.
-1. **Uppskattad** – Du kan göra uppskattningar för material- och resursförbrukning. Uppskattningen genererar lagertransaktioner för råmaterial som har statusvärdet **Har beställts**. Inleveranser för huvudprodukter, samprodukter och biprodukter genereras när produktionsorder eller batchorder beräknas. Om strukturlistan innehåller rader av typen **Peggad leverans** genereras inköpsorder för material eller legotillverkningsoperationen och knyts till en produktionsorder eller batchorder. Artiklar eller order reserveras enligt produktionsorderns reservationstrategin och priset på de färdiga varorna beräknas baserat på parameterinställningarna.
-1. **Tidsplan** – Du kan schemalägga produktion baserat på operationer, enskilda jobb eller båda.
+1. **Uppskattad** – Du kan göra uppskattningar för material- och resursförbrukning. Uppskattningen genererar lagertransaktioner för råmaterial som har statusvärdet **Har beställts**. Inleveranser för huvudprodukter, samprodukter och biprodukter genereras när produktionsorder eller batchorder beräknas. Om strukturlistan innehåller rader av typen **Peggad leverans** genereras inköpsorder för material eller legotillverkningsåtgärden och knyts till en produktionsorder eller batchorder. Artiklar eller order reserveras enligt produktionsorderns reservationstrategin och priset på de färdiga varorna beräknas baserat på parameterinställningarna.
+1. **Tidsplan** – Du kan schemalägga produktion baserat på åtgärder, enskilda jobb eller båda.
 
-    - **Grovplanering** – Denna planeringsmetod ger en grov, långsiktig plan. Genom att använda den här metoden kan du tilldela start- och slutdatum till produktionsorder. Om produktionsorder kopplas till flödesoperationer kan du tilldela dem till grupper för kostnadsställen.
-    - **Finplanering** – Denna planeringsmetod ger en detaljerad plan. Varje operation delas upp i enskilda jobb med specifika datum, tider och tilldelade verksamhetsresurser. Om begränsad kapacitet används tilldelas jobb till verksamhetsresurser baserat på tillgänglighet. Du kan visa och ändra planen i ett Gantt-diagram.
+    - **Grovplanering** – Denna planeringsmetod ger en grov, långsiktig plan. Genom att använda den här metoden kan du tilldela start- och slutdatum till produktionsorder. Om produktionsorder kopplas till flödesåtgärder kan du tilldela dem till grupper för kostnadsställen.
+    - **Finplanering** – Denna planeringsmetod ger en detaljerad plan. Varje åtgärd delas upp i enskilda jobb med specifika datum, tider och tilldelade verksamhetsresurser. Om begränsad kapacitet används tilldelas jobb till verksamhetsresurser baserat på tillgänglighet. Du kan visa och ändra planen i ett Gantt-diagram.
     - **Kanban-tidsplan** – Kanban-jobb planeras på det kanban-schematavla eller planeras automatiskt baserat på den automatiska planläggningskonfigurationen av kanban-reglerna.
 
 1. **Frisläppt** – Du kan frisläppa produktionsordern eller batchordern, när tidsplanen är avslutad, och materialet är tillgängligt att plockas eller förberedas. Kontrollera materialtillgänglighet hjälper produktionslagerarbetsledaren att bedöma materialtillgänglighet för produktionsordern eller batchordern. Du kan även skriva ut produktionsorderdokument som plocklistor, jobbkort, flödeskort och flödesjobb. När produktionsordern frisläpps ändras statusen för ordern för att indikera att produktionen kan börja. När lagerstyrning används, frisläpper produktionsordern eller batchordern produktionsstrukturlistaraderna till lagerstyrning. Påfyllnad av lagerstället och lagerställearbete genereras enligt inställningarna för lagerstället.

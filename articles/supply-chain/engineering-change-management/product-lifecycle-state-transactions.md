@@ -1,6 +1,6 @@
 ---
 title: Produktens livscykeltillstånd och transaktioner
-description: Det här avsnittet förklarar hur du kan kontrollera vilka transaktioner som är tillåtna för varje livscykeltillstånd när en teknisk produkt går igenom dess livscykel.
+description: Denna artikel förklarar hur du kan kontrollera vilka transaktioner som är tillåtna för varje livscykeltillstånd när en teknisk produkt går igenom sin livscykel.
 author: t-benebo
 ms.date: 02/17/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1e9b8a9f25edfa654a57e0ab4071cd93c8033d85
-ms.sourcegitcommit: d375ef4138e898621416754c40770d8ccca4d271
+ms.openlocfilehash: dd9155f799c66e8297b93d8ffbeeced1acd14220
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8322754"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867968"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Produktens livscykeltillstånd och transaktioner
 
@@ -37,7 +37,7 @@ För att arbeta med livscykeltillstånd för produkt, gå till **Konstruktionsä
 - Om du vill ta bort ett befintlig livscykeltillstånd markerar du den i listrutan och väljer sedan **ta bort** i åtgärdsfönstret.
 
 > [!NOTE]
-> Tekniska produkter använder samma livscykeltillstånd som standardprodukter (icke konstruktionsprodukter). Du kan också öppna sidan **Produktens livscykeltillstånd** som beskrivs i detta ämne genom att gå till **produktinformationshanteringen \> inställning \> produktens livscykeltillstånd**. Mer information om produktens livscykeltillstånd finns i [produktens livscykeltillstånd översikt](../pim/product-lifecycle.md).
+> Tekniska produkter använder samma livscykeltillstånd som standardprodukter (icke konstruktionsprodukter). Du kan också öppna sidan **Produktens livscykeltillstånd** som beskrivs i denna artikel genom att gå till **produktinformationshantering \> Inställningar \> Produktens livscykeltillstånd**. Mer information om produktens livscykeltillstånd finns i [produktens livscykeltillstånd översikt](../pim/product-lifecycle.md).
 
 ### <a name="header"></a>Siduvud
 
@@ -98,7 +98,7 @@ Anta till exempel att du bara vill sälja en variant (röd) av en viss produkt (
 
 Standardlivscykeln för en teknisk version anges i den tekniska kategorin. Tillståndet kommer att vara standard när du skapar en ny teknisk version, inklusive den första versionen av en ny produkt.
 
-När du skapar en ny produkt eller konstruktionsprodukt kan du också ställa in standardlivscykeln genom att ange den i den mall som frisläppts i den frisläppningspolicy som har tilldelats produkten.
+När du skapar en ny produkt eller konstruktionsprodukt kan du också konfigurera standardlivscykeln genom att ange den i den mall som frisläppts i den frisläppningspolicy som har tilldelats produkten.
 
 I så fall kan produkten ha en annan livscykelläge än versionen när du skapar en ny teknikprodukt.
 

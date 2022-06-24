@@ -1,6 +1,6 @@
 ---
 title: Koncernintern planering
-description: Det här ämnet beskriver koncernintern planering och förklarar hur du konfigurerar koncernintern planering med planeringsoptimering i Microsoft Dynamics 365 Supply Chain Management.
+description: Denna artikel beskriver koncernintern planering och förklarar hur du konfigurerar koncernintern planering med Planeringsoptimering i Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: de9f9679bfaf9491c6b69c11448306627c8a42f9
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c13ecca9523707ef3df5fdb97dc4cbd79478258d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468508"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850682"
 ---
 # <a name="intercompany-planning"></a>Koncernintern planering
 
 [!include [banner](../../includes/banner.md)]
 
-För vissa organisationer är logistikoperationer beroende av andra juridiska personer (företag) i organisationen. Dessa operationer hanteras med koncernintern försäljning och inköp eftersom varje juridisk person har en separat kontoplan.
+För vissa organisationer är logistikåtgärder beroende av andra juridiska personer (företag) i organisationen. Dessa åtgärder hanteras med koncernintern försäljning och inköp eftersom varje juridisk person har en separat kontoplan.
 
-Det här ämnet beskriver koncernintern planering och förklarar hur du konfigurerar koncernintern planering med planeringsoptimering i Microsoft Dynamics 365 Supply Chain Management.
+Denna artikel beskriver koncernintern planering och förklarar hur du konfigurerar koncernintern planering med Planeringsoptimering i Microsoft Dynamics 365 Supply Chain Management.
 
-I det här avsnittet används följande viktiga koncerninterna termer:
+I denna artikel används följande viktiga koncerninterna termer:
 
 - **Uppström** – en relativ referens i en firma eller leveranskedja. Den visar rörelsen i råvaruleverantörens riktning.
 - **Nedström** – en relativ referens i en firma eller leveranskedja. Den visar rörelsen i kundens riktning.

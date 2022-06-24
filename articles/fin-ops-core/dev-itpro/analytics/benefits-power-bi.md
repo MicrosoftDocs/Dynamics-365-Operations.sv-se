@@ -1,6 +1,6 @@
 ---
 title: Förmåner Power BI-innehåll
-description: Det här avsnittet beskriver förmåner Power BI-innehållet.
+description: Den här artikeln beskriver förmåner Power BI-innehållet.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0e7cadc16c5ed6c6eab8c90090cac017221f63f466115b04a6a3b843db44b1c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c78755946c7f07e1be7a57015e6c0c15317e6b76
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733181"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848821"
 ---
 # <a name="benefits-power-bi-content"></a>Förmåner Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver **förmåner** Microsoft Power BI-innehållet. Det beskriver hur du får åtkomst till de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
+Den här artikeln beskriver **förmåner** Microsoft Power BI-innehållet. Det beskriver hur du får åtkomst till de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
 
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
 Innehåll för **Förmåner** Power BI visas i arbetsytan **Förmånshantering** om du använder någon av följande produkter:

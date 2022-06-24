@@ -1,6 +1,6 @@
 ---
 title: Skapa tillgångar baserade på inköpsorder
-description: I det här avsnittet beskrivs hur du kan skapa en lista över tillgångsartiklar som kan användas som underlag för att skapa tillgångar för underhållsjobb i tillgångshantering.
+description: I denna artikel beskrivs hur du kan skapa en lista över tillgångsartiklar som kan användas som underlag för att skapa tillgångar för underhållsjobb i Tillgångshantering.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5068712a7ea1e0d940d4a05a411fb3e1b6f6d9bb9be924d5375b16676561ea1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8bee66e2d35af6daa8d86539e52b558bde3c79a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754117"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893712"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Skapa tillgångar baserade på inköpsorder
 
@@ -28,14 +28,14 @@ ms.locfileid: "6754117"
 
  
 
-I det här avsnittet beskrivs hur du kan skapa en lista över tillgångsartiklar som kan användas som underlag för att skapa tillgångar för underhållsjobb i tillgångshantering. Baserat på tillgångsartiklarna kan du visa en lista över inköpsorderrader som har skapats på dessa artiklar. Syftet med den här funktionen är att enkelt skapa en tillgång i tillgångshantering baserat på en inköpsorder.
+I denna artikel beskrivs hur du kan skapa en lista över tillgångsartiklar som kan användas som underlag för att skapa tillgångar för underhållsjobb i Tillgångshantering. Baserat på tillgångsartiklarna kan du visa en lista över inköpsorderrader som har skapats på dessa artiklar. Syftet med den här funktionen är att enkelt skapa en tillgång i Tillgångshantering baserat på en inköpsorder.
 
 Först ställer du in de artiklar som ska användas för att skapa tillgångar från en inköpsorder i **tillgångsartiklar**. När du har skapat en inköpsorderrad skapar du tillgångarna i **väntande tillgångar**. Det är möjligt att bestämma i vilket skede av inköpsordern som tillgången ska skapas.
 
 
 ## <a name="select-asset-items"></a>Välj tillgångsartiklar
 
-1. Klicka på **tillgångshantering** > **inställningar** > **tillgångar** > **artiklar**.
+1. Klicka på **Tillgångshantering** > **inställningar** > **tillgångar** > **artiklar**.
 2. Klicka på **Ny** om du vill skapa en ny tillgångsartikel.
 3. Välj artikeln i fältet **Artikelnummer**. När du lämnar fältet infogas artikelnamnet automatiskt i fältet **produktnamn**.
 4. På snabbfliken **Allmänt** väljer du en tillgångstyp för artikeln.
@@ -45,7 +45,7 @@ Först ställer du in de artiklar som ska användas för att skapa tillgångar f
 
 ## <a name="create-assets-from-pending-assets"></a>Skapa tillgångar från väntande tillgångar
 
-1. Klicka på **tillgångshantering** > **allmänt** > **tillgångar** > **väntande tillgångar**.
+1. Klicka på **Tillgångshantering** > **allmänt** > **tillgångar** > **väntande tillgångar**.
 2. Du kommer att se en uppdaterad lista över inköpsorder baserat på de artiklar som valts i **tillgångsartiklar**.
 3. Du kan filtrera status för inköpsorder för att välja vid vilket livscykeltillstånd som tillgången ska skapas. Du kanske till exempel bara vill skapa tillgångar när en produktinleverans har bokförts på en inköpsorder.
 4. Välj länken **referensnummer** på en inköpsorderrad om du vill visa detaljerad information om artikeln.
@@ -62,9 +62,9 @@ Först ställer du in de artiklar som ska användas för att skapa tillgångar f
 
 Du kan köra en **väntande tillgångsräkning** för att kontrollera väntande tillgångar. Den här funktionen kan till exempel användas för att ta emot ett meddelande varje gång en väntande tillgång är redo att skapas som en tillgång.
 
-1. Klicka på **tillgångshantering** > **periodisk** > **tillgångar** > **väntande tillgångsräkning**.
+1. Klicka på **Tillgångshantering** > **periodisk** > **tillgångar** > **väntande tillgångsräkning**.
 2. Klicka på **OK** för att köra jobbet och uppdatera listan i **väntande tillgångar**.
-3. Du kan ställa in det här jobbet så att det körs som ett batchjobb, till exempel en gång per dag.
+3. Du kan konfigurera det här jobbet så att det körs som ett batchjobb, till exempel en gång per dag.
 
 **Varning:** om data ändras på en inköpsorder *efter* att du har skapat en tillgång baserat på artikeln, återspeglas inte dessa ändringar på tillgången.
 

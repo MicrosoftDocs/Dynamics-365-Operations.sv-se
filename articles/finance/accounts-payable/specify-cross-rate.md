@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed1db707cf6aed7c9def76ebbbdef7032b8776b6
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: efb01948af2bcba9ca740e8bd0e12584cf021fce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735302"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889973"
 ---
 # <a name="specify-the-cross-rate"></a>Ange valutakurs
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver syftet med en växlingskurs och hur du anger växlingskursen när du kvittar en betalning mot en faktura. Använd en växlingskurs när följande villkor gäller: 
+Den här artikeln beskriver syftet med en växlingskurs och hur du anger växlingskursen när du kvittar en betalning mot en faktura. Använd en växlingskurs när följande villkor gäller: 
 -   Du kvittar en betalning mot en faktura. 
 -   Betalningsraden och fakturaraden använder olika valutor. 
 -   Ingen av valutorna är redovisningsvalutan. 

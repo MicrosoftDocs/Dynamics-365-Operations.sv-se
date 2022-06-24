@@ -1,6 +1,6 @@
 ---
 title: Arbeta med CSS-åsidosättningsfiler
-description: Det här avsnittet beskriver varför, när och hur du använder Cascading Style Sheets (CSS) åsidosätta filer i Microsoft Dynamics 365 Commerce.
+description: Denna artikel beskriver varför, när och hur du använder åsidosättande Cascading Style Sheets (CSS)-filer i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6788481936a54bff32096dba1d0424fc52c669e4
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: eaeeee4c9de7293ba94cc836c4d7b62787eca81d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964614"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892870"
 ---
 # <a name="work-with-css-override-files"></a>Arbeta med CSS-åsidosättningsfiler
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver varför, när och hur du använder Cascading Style Sheets (CSS) åsidosätta filer i Microsoft Dynamics 365 Commerce.
+Denna artikel beskriver varför, när och hur du använder åsidosättande Cascading Style Sheets (CSS)-filer i Microsoft Dynamics 365 Commerce.
 
 Permanenta webbplatsstilar bör vanligtvis hanteras via webbplatsens tema. Teman ger grundläggande CSS och stilinställningar för modulerna på alla sidor på din webbplats. Teman skapas med hjälp av Dynamics 365 Commerce online Software Development Kit (SDK) och de distribueras till dina webbplatser via Microsoft Dynamics Lifecycle Services (LCS). Tema felsökningsfunktioner och konfigurationer av modulgränssnitt i SDK hjälp webbplatsutvecklare skapar anpassningsbara och sammanhängande designpaket för webbplatsen. När dessa designpaket distribueras till en webbplats kan webbplatsförfattarna fokusera på att skapa, redigera och publicera innehåll i stället för webbplatsutveckling.
 

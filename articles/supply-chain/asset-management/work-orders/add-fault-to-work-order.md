@@ -1,6 +1,6 @@
 ---
-title: Lägg till fel i arbetsorder
-description: I det här avsnittet beskrivs hur du lägger till felregistreringar i arbetsorder i Tillgångshantering.
+title: Lägga till fel i arbetsorder
+description: I denna artikel beskrivs hur du lägger till felregistreringar i arbetsorder i Tillgångshantering.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1090d95d381a047e77bca3e18ef7b99151ea3d5f941f2d6c9e4877a339f1385e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7905dcd4c29872ec2601359baefa78545140397c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761078"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857907"
 ---
 # <a name="add-fault-to-work-order"></a>Lägg till fel i arbetsorder
 
@@ -28,7 +28,7 @@ ms.locfileid: "6761078"
 
 
 
-Du kan lägga till fel som ställts in i feldesignern till en arbetsorder. Den tillgång som väljs i arbetsordern måste innehålla tillgångstyper som har en eller flera felposter kopplade till sig. Mer information om hur du ställer in finns i [Felhantering](../setup-for-work-orders/fault-management.md).
+Du kan lägga till fel som ställts in i feldesignern till en arbetsorder. Den tillgång som väljs i arbetsordern måste innehålla tillgångstyper som har en eller flera felposter kopplade till sig. Mer information om hur du konfigurerar finns i [Felhantering](../setup-for-work-orders/fault-management.md).
 
 1. Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
 

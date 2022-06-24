@@ -1,6 +1,6 @@
 ---
-title: Skapa och uppdatera ett retur- och återbetalningspolicy för en kanal
-description: I det här avsnittet beskrivs hur du ställer in en policy för returer och återbetalningar för en kanal.
+title: Skapa och uppdatera en retur- och återbetalningspolicy för en kanal
+description: I denna artikel beskrivs hur du konfigurerar en policy för returer och återbetalningar för en kanal.
 author: ShalabhjainMSFT
 ms.date: 07/13/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 4346f9eefa04688c80ce2512a7972bfd4627942c
-ms.sourcegitcommit: 53fad4d4b5fb67aa75550956ec205f456a5be01d
+ms.openlocfilehash: 54dd19134aea68f73de51086fbaa096961447b62
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "7388943"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873314"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Skapa och uppdatera en retur- och återbetalningspolicy för en kanal
 
@@ -27,16 +27,16 @@ ms.locfileid: "7388943"
 
 Med hjälp av en returpolicy för en kanal i Dynamics 365 Commerce kan återförsäljare ange vilka betalningsmedel som kan tillåtas att bearbeta en retur i en kassa.  
 
-I det här avsnittet beskrivs hur du ställer in en policy för returer och återbetalningar för en kanal.
+I denna artikel beskrivs hur du konfigurerar en policy för returer och återbetalningar för en kanal.
 
-Omfattningen av policyn är för närvarande begränsad till att ställa in betalningsmedel som kan tillåtas för en kanal. Listan tillåtna är baserad på de betalsätt som används för att göra inköpet. Exempel:
+Omfattningen av policyn är för närvarande begränsad till att konfigurera betalningsmedel som kan tillåtas för en kanal. Listan tillåtna är baserad på de betalsätt som används för att göra inköpet. Exempel:
 
 - Om ett inköp gjorts med hjälp av ett presentkort, är butikens policy att endast bearbeta återbetalningar till ett nytt presentkort eller för att ge butikskredit. 
 - Om en försäljning görs med kontanter är de alternativ som är tillåtna för återbetalning det kontanter, presentkort och kundkonto, men inte kreditkort. 
 
 ## <a name="enable-return-policy"></a>Aktivera returpolicy
 
-För att aktivera funktionen returpolicy för kanal i Commerce-administration, följ dessa steg.
+För att aktivera funktionen returpolicy för kanal i Commerce headquarters, följ dessa steg.
 
 1. Gå till arbetsytan **Funktionshantering** i Dynamics 365 Commerce.
 1. Sök efter funktionen **aktivera kanal returprinciper** i listan med funktionsnamn.

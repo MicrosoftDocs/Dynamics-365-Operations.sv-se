@@ -1,6 +1,6 @@
 ---
-title: Modulen navigeringsmeny
-description: Det här avsnittet handlar om modul för navigeringsmenyn och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+title: Modul för navigeringsmeny
+description: Denna artikel handlar om moduler för navigeringsmenyn och beskriver hur du lägger till dessa på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 10/27/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 1af1fc03ead21150415295d83d292afe0110e5bd
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: d2ac2bcf4324f2386c97fbf264c076062e6f304c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109692"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852755"
 ---
 # <a name="navigation-menu-module"></a>Modul för navigeringsmeny
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om modul för navigeringsmenyn och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+Denna artikel handlar om moduler för navigeringsmenyn och beskriver hur du lägger till dessa på webbsidorna i Microsoft Dynamics 365 Commerce.
 
 Det primära syftet med moduler för navigeringsmenyn är att låta användarna söka efter produkter och webbplatssidor i enlighet med den hierarki för kanaler som definierats i Dynamics 365 Commerce administration. Objekt som konfigureras i en modul för navigeringsmeny visas som navigering för webbplatshuvud. Moduler för navigeringsmenyn stöder även statiska menyalternativ som länkar till andra sidor på en näthandelssajt.
 
@@ -39,8 +39,8 @@ Följande illustration visar ett exempel på en navigeringsmeny för Fabrikam-we
 
 | Egenskapsnamn             | Värde                 | beskrivning |
 |---------------------------|-----------------------|-------------|
-| Källa                  | **Detaljhandel**, **Manuell redigering**, **Återförsäljning och manuell redigering** | Med värdet **Detaljhandel** kan kanalnavigeringshierarkin från Commerce-administration visas på navigeringsmenyn. Med hjälp av värdet **Manuellt redigering** kan statiska menyalternativ granskas. Värdet **Återförsäljning och manuell redigering** tillåter en blandning av båda. |
-| Visa kategoribilder | **Sant** eller **falskt**    | När den här egenskapen är aktiverad visas kategoribilder på navigeringsmenyn som har definierats i Commerce-administration för varje kategori. Lades till i Commerce version 10.0.14. |
+| Källa                  | **Detaljhandel**, **Manuell redigering**, **Återförsäljning och manuell redigering** | Med värdet **Detaljhandel** kan kanalnavigeringshierarkin från Commerce headquarters visas på navigeringsmenyn. Med hjälp av värdet **Manuellt redigering** kan statiska menyalternativ granskas. Värdet **Återförsäljning och manuell redigering** tillåter en blandning av båda. |
+| Visa kategoribilder | **Sant** eller **falskt**    | När den här egenskapen är aktiverad visas kategoribilder på navigeringsmenyn som har definierats i Commerce headquarters för varje kategori. Lades till i Commerce version 10.0.14. |
 | Visa kampanjbilder | **Sant** eller **falskt** | När den här egenskapen har aktiverats kan erbjudanden konfigureras med hjälp av bilder, länkar och text. Den här egenskapen har lagts till i version 10.0.17 av Commerce. |
 |Lägg till kategori reklaminnehåll | Text, bild eller länk | När egenskapen **Visa kampanjbilder** har aktiverats kan du lägga till text, en bild eller en länk som erbjudandeinnehåll i navigeringsmenyn. |
 | Aktivera navigeringsmeny med flera nivåer | **Sant** eller **falskt** | När den här egenskapen är aktiverad kan navigeringsmenyn visa flera nivåer i navigeringsvyn. Den här funktionen är tillgänglig i Commerce version 10.0.15. |

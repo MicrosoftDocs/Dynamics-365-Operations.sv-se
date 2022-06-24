@@ -1,6 +1,6 @@
 ---
 title: Skapa leverantörskonton
-description: I det här avsnittet beskrivs de informationstyper som du måste ange när du skapar ett nytt leverantörskonto.
+description: I denna artikel beskrivs de informationstyper som du måste ange när du skapar ett nytt leverantörskonto.
 author: GalynaFedorova
 ms.date: 02/03/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d524ff99cba733fdd607d9708abba440248d6cc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d1ddf126305f39a35f61b9a98da1c6bce29372cf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676986"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875287"
 ---
 # <a name="set-up-vendor-accounts"></a>Skapa leverantörskonton
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs de informationstyper som du måste ange när du skapar ett nytt leverantörskonto.
+I denna artikel beskrivs de informationstyper som du måste ange när du skapar ett nytt leverantörskonto.
 
 När du skapar ett leverantörskonto anger du information om leverantören. Den här informationen används för att automatiskt ange data i dokument och för att spåra aktivitet som rör leverantören. Du kan till exempel konfigurera följande information för en leverantör:
 
@@ -63,7 +63,7 @@ Du kan skapa leverantörskontakter från noll. Alternativt kan du också kopiera
 
 Du kan inte ta bort en post för kontaktperson om ett dokument refererar till kontakten. I stället kan du avaktivera kontakten.  
 
-Du kan lägga till leverantörskontakter till dina personliga kontakter i Microsoft 365. Du måste dock först ställa in synkronisering mellan Supply Chain Management och Microsoft 365 i både Microsoft Exchange Server-synkroniseringen och Microsoft Outlook-installationsguiden.
+Du kan lägga till leverantörskontakter till dina personliga kontakter i Microsoft 365. Du måste dock först konfigurera synkronisering mellan Supply Chain Management och Microsoft 365 i både Microsoft Exchange Server-synkroniseringen och Microsoft Outlook-installationsguiden.
 
 ## <a name="vendors-in-different-legal-entities"></a>Leverantörer i olika juridiska personer
 Om en leverantör registreras för endast en juridisk person inom din organisation, och andra juridiska personer måste registrera samma leverantör, kan du använda sidan **Lägg till leverantör till en annan juridisk person** för att konfigurera leverantören i syfte att göra affärer med en annan juridisk person. Du måste välja en leverantörsgrupp, en valuta och en undantagsstatus för leverantören i den valda juridiska personen.  
@@ -76,7 +76,7 @@ Om du vill slå ihop part-ID:n, följ då dessa steg.
 2.  I åtgärdsfönstret klickar du **Sammanfoga poster**.
 
 ## <a name="agreements"></a>Avtal
-När du konfigurerar ett leverantörskonto kanske du också vill registrera de avtal som du har med leverantören. Du kan ställa in pris- och rabattavtal med hjälp av åtgärder för leverantörsposten. Du kan även ställa in ett inköpsavtal på sidan **Inköpsavtal**.
+När du konfigurerar ett leverantörskonto kanske du också vill registrera de avtal som du har med leverantören. Du kan konfigurera pris- och rabattavtal med hjälp av åtgärder för leverantörsposten. Du kan även konfigurera ett inköpsavtal på sidan **Inköpsavtal**.
 
 ## <a name="putting-a-vendor-on-hold"></a>Spärra en leverantör
 Du kan spärra en leverantör för olika transaktionstyper. Följande alternativ är tillgängliga:

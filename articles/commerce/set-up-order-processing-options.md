@@ -1,6 +1,6 @@
 ---
 title: Ställ in kanaler för kundtjänst
-description: Det här avsnittet innehåller information om hur du bearbetar order till kundtjänst med Dynamics 365 Commerce.
+description: Denna artikel innehåller information om hur du bearbetar order till kundtjänst med Dynamics 365 Commerce.
 author: josaw1
 ms.date: 02/04/2022
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 64669c5bf71a4f1673f5ad2c46db7d3a2eaf2a97
-ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
+ms.openlocfilehash: c6d21385d956534c799af5b9e20a54c9970da368
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092442"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854881"
 ---
 # <a name="set-up-call-center-channels"></a>Ställa in kundtjänstkanaler
 
@@ -77,7 +77,7 @@ När du definierar kundstjänstkanal måste du koppla användare till kundstjän
 Som standard är flaggan **Försäljning** i rubriken på försäljningsordern aktiverad för alla order som kundtjänstanvändaren skapar. Dessa order kan sedan utnyttja systemets handelspecifika pris- och kampanjegenskaper.
 
 
-Användare som inte är kopplade till ett kundtjänstkanaler använda standardorderkvantitet för funktioner i Microsoft Dynamics 365 Finance. Order som användarna anger via försäljningsorderformuläret identifieras inte systematiskt som handelsorder. Dessutom är dessa order som dessa användare anger kanske inte föremål för några orderbearbetningsregler, prissättningslogik eller andra ordervalideringar som kan definieras i konfigurationen för kundtjänstkanalen eller kundtjänstsystemparametrar.
+Användare som inte är kopplade till en kundtjänstkanal använder funktioner för standardorderkvantitet i Microsoft Microsoft Dynamics 365 Finance. Order som användarna anger via försäljningsorderformuläret identifieras inte systematiskt som handelsorder. Dessutom är dessa order som dessa användare anger kanske inte föremål för några orderbearbetningsregler, prissättningslogik eller andra ordervalideringar som kan definieras i konfigurationen för kundtjänstkanalen eller kundtjänstsystemparametrar.
 
 När du är klar med att konfigurera kundtjänstkanalen och definiera kanalanvändare, för att garantera önskad systemfunktion, se till att alla nödvändiga kundtjänstparametrar definieras i **butik och handel** \> **kanalinställningar** \> **kundtjänstinställningar** \> **kundtjänstparametrar**. Se till att relaterade nummerserier definieras också.
 

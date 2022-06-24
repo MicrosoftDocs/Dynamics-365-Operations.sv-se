@@ -1,6 +1,6 @@
 ---
 title: Huvudplanering med efterfrågeprognoser
-description: I det här avsnittet beskrivs hur du inkluderar efterfrågeprognoser vid huvudplanering med planeringsoptimering.
+description: I denna artikel beskrivs hur du inkluderar efterfrågeprognoser vid huvudplanering med Planeringsoptimering.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ec5150186e190e67913409b9cac107ff2bd55001
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468453"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879002"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Huvudplanering med efterfrågeprognoser
 
 [!include [banner](../../includes/banner.md)]
 
-Du kan använda en efterfrågeprognos tillsammans med planeringsoptimering för att redovisa förväntad efter frågan i huvudplaneringen. Du kan manuellt skapa en efterfrågeprognos, importera den eller generera den med hjälp av funktionen för efterfrågeprognos i Microsoft Dynamics 365 Supply Chain Management. Mer information om efterfrågeprognoser finns i [Översikt över efterfrågeprognoser](../introduction-demand-forecasting.md).
+Du kan använda en efterfrågeprognos tillsammans med Planeringsoptimering för att redovisa förväntad efter frågan i huvudplaneringen. Du kan manuellt skapa en efterfrågeprognos, importera den eller generera den med hjälp av funktionen för efterfrågeprognos i Microsoft Dynamics 365 Supply Chain Management. Mer information om efterfrågeprognoser finns i [Översikt över efterfrågeprognoser](../introduction-demand-forecasting.md).
 
 > [!NOTE]
-> Planeringsoptimering stöder inte separat prognosplanering. Därför har inställningen för **aktuell prognosplan** på sidan **parametrar för huvudplanering** när du använder planeringsoptimering.
+> Planeringsoptimering stöder inte separat prognosplanering. Därför har inställningen för **aktuell prognosplan** på sidan **parametrar för huvudplanering** när du använder Planeringsoptimering.
 
 ## <a name="set-up-a-master-plan-to-include-a-demand-forecast"></a>Ställ in en huvudplan för att inkludera en efterfrågeprognos
 
@@ -41,13 +41,13 @@ Följ dessa steg för att konfigurera en huvudplan så att den innehåller en ef
 1. På snabbfliken **Allmänt** ange följande fält:
 
     - **Prognosmodell** – Välj den prognosmodell som ska tillämpas. Den här modellen kommer att beaktas när ett leveransförslag skapas för den aktuella huvudplanen.
-    - **Inkludera efterfrågeprognos** – Ange detta alternativ till *Ja* om du vill inkludera efterfrågeprognosen i den aktuella huvudplanen. Om du ställer in den på *Nej*, tas inte efterfrågeprognos transaktioner med i huvudplanen.
-    - **Metod som används för att minska prognosbehov** – Välj den metod som ska användas för att minska prognosbehoven. Mer information finns i avsnittet [Prognosreduceringnycklar](#reduction-keys) senare i det här avsnittet.
+    - **Inkludera efterfrågeprognos** – Ange detta alternativ till *Ja* om du vill inkludera efterfrågeprognosen i den aktuella huvudplanen. Om du konfigurerar den på *Nej*, tas inte efterfrågeprognos transaktioner med i huvudplanen.
+    - **Metod som används för att minska prognosbehov** – Välj den metod som ska användas för att minska prognosbehoven. Mer information finns i avsnittet [Prognosreduceringnycklar](#reduction-keys) senare i denna artikel.
 
-1. På snabbfliken **Tidsgräns i dagar** du kan ställa in följande fält för att ange den period som efterfrågan förutses inkluderas under:
+1. På snabbfliken **Tidsgräns i dagar** du kan konfigurera följande fält för att ange den period som efterfrågan förutses inkluderas under:
 
     - **Prognosplan** – Ställ in det här alternativet på *Ja* för att åsidosätta tidsgränsen för en prognosplan som kommer från de enskilda disponeringsgrupper. Ställ in den på *Nej* om du vill använda värdena från de enskilda disponeringsgrupper för den aktuella huvudplanen.
-    - **Prognostidsperiod** – om du ställer in alternativet **prognosplan** till *Ja* anger du antalet dagar (från dagens datum) som efterfrågeprognos ska användas.
+    - **Prognostidsperiod** – om du konfigurerar alternativet **prognosplan** till *Ja* anger du antalet dagar (från dagens datum) som efterfrågeprognos ska användas.
 
     > [!IMPORTANT]
     > Inställningen **Prognosplan** stöder inte separat prognosplanering.
@@ -61,7 +61,7 @@ Följ dessa steg för att konfigurera en disponeringsgrupp så att den innehåll
 1. På snabbfliken **Andra** ange följande fält:
 
     - **Tidsgräns för prognosplan** – Ange antalet dagar (från dagens datum) som efterfrågeprognos ska användas för. Det här värdet kan åsidosättas med hjälp av alternativet **prognosplan** i huvudplanen, enligt beskrivningen i föregående avsnitt.
-    - **Reduceringsnyckel** – Välj den reduceringsnyckel som ska användas. Mer information finns i avsnitt [skapa och ställa in en prognosreduceringsnyckel](#create-reduction-key) och [använda ett reduceringsnyckel](#use-reduction-key) senare i det här avsnittet.
+    - **Reduceringsnyckel** – Välj den reduceringsnyckel som ska användas. Mer information finns i avsnitten [Skapa och konfigurera en prognosreduceringsnyckel](#create-reduction-key) och [Använda en reduceringsnyckel](#use-reduction-key) senare i denna artikel.
     - **Reducera prognos med** – för huvudplaner där fältet **Metod som används för att minska prognosbehoven** är inställt på *transaktioner - reduceringsnycklar* eller *transaktioner-dynamisk period* anger du vilka transaktioner som ska reducera prognosen. Välj ett av följande värden:
 
         - **Alla transaktioner** – alla transaktioner ska reducera prognosen.
@@ -125,7 +125,7 @@ Ange följande rader på sidan **Reduceringsnycklar**.
 
 Du tilldelar reduceringsnyckeln till artikelns täckningsgrupp. Sedan på sidan **huvudplaner** i fältet **Metod som används för att minska prognosbehov** väljer du **procent - reduceringsnyckel**.
 
-I det här fallet om du kör prognosplanering den 1 januari förbrukas kraven på efterfrågeprognos enligt de procentsatser som du ställer in på sidan **Reduceringsnycklar**. Följande behovskvantiteter överförs till huvudplanen.
+I det här fallet om du kör prognosplanering den 1 januari förbrukas kraven på efterfrågeprognos enligt de procentsatser som du konfigurerar på sidan **Reduceringsnycklar**. Följande behovskvantiteter överförs till huvudplanen.
 
 | Månad                | Planerad orderkvantitet | Beräkning    |
 |----------------------|------------------------|----------------|
@@ -137,9 +137,9 @@ I det här fallet om du kör prognosplanering den 1 januari förbrukas kraven p�
 
 #### <a name="transactions--reduction-key"></a>Transaktioner - reduceringsnyckel
 
-Om du ställer in fältet **Metod som används för att minska prognosbehov** till *Transaktioner - reduceringsnyckel* reduceras prognosbehoven med de kvalificerade efterfrågetransaktioner som inträffar under de perioder som definieras av reduceringsnyckeln.
+Om du konfigurerar fältet **Metod som används för att minska prognosbehov** till *Transaktioner - reduceringsnyckel* reduceras prognosbehoven med de kvalificerade efterfrågetransaktioner som inträffar under de perioder som definieras av reduceringsnyckeln.
 
-Det kvalificerade behovet definieras i fältet **Minska prognos med** på sidan **Disponeringsgrupper**. Om du ställer in fältet **Minska prognos med** till *Order* beaktas endast försäljningsordertransaktioner som kvalificerade efterfrågan. Om du ställer in det till *Alla transaktioner* beaktas alla icke-koncerninterna lagertransaktioner som kvalificerade efterfrågan. Om koncerninterna order ska inkluderas när prognosen minskas ställer du in alternativet **Inkludera koncerninterna order** till *Ja*.
+Det kvalificerade behovet definieras i fältet **Minska prognos med** på sidan **Disponeringsgrupper**. Om du konfigurerar fältet **Minska prognos med** till *Order* beaktas endast försäljningsordertransaktioner som kvalificerade efterfrågan. Om du konfigurerar det till *Alla transaktioner* beaktas alla icke-koncerninterna lagertransaktioner som kvalificerade efterfrågan. Om koncerninterna order ska inkluderas när prognosen minskas ställer du in alternativet **Inkludera koncerninterna order** till *Ja*.
 
 Prognosreducering startar med den första (tidigaste) efterfrågeprognosposten i perioden för reduceringsnyckeln. Om kvantiteten för kvalificerade lagertransaktioner är större än kvantiteten på efterfrågeprognosraderna i samma reduceringsnyckelperiod, används saldot för lagertransaktionskvantiteten för att minska efterfrågeprognoskvantiteten under den föregående perioden (om det finns en oförbrukad prognos).
 
@@ -295,9 +295,9 @@ Därför skapas följande planerade order.
 | 5 januari                        | 300      | Prognosbehovperioden 5 januari till 10 januari (= 500 – 200)  |
 | 12 januari                       | 1 000    | Prognosbehovperioden 12 januari till slutet                      |
 
-### <a name="create-and-set-up-a-forecast-reduction-key"></a><a name="create-reduction-key"></a>Skapa och ställa in en prognosreduceringsnyckel
+### <a name="create-and-set-up-a-forecast-reduction-key"></a><a name="create-reduction-key"></a>Skapa och konfigurera en prognosreduceringsnyckel
 
-En prognosreduceringsnyckel används i metoderna **transaktioner - reduceringsnyckel** och **procent - reduceringsnyckel** för att minska prognosbehoven. Följ dessa steg om du vill skapa och ställa in en reduceringsnyckel.
+En prognosreduceringsnyckel används i metoderna **transaktioner - reduceringsnyckel** och **procent - reduceringsnyckel** för att minska prognosbehoven. Följ dessa steg om du vill skapa och konfigurera en reduceringsnyckel.
 
 1. Gå till **huvudplanering \> inställningar \> täckning \> reduceringsnycklar**.
 2. Skapa en reduceringsnyckel genom att välja **Nytt**.
@@ -327,13 +327,13 @@ När du väljer **transaktioner - reduceringsnyckel** eller **transaktioner - dy
 
 ## <a name="forecast-models-and-submodels"></a>Prognosmodeller med undermodeller
 
-I det här avsnittet beskrivs hur du skapar prognosmodeller och hur du kombinerar flera prognosmodeller genom att ställa in delmodeller.
+I det här avsnittet beskrivs hur du skapar prognosmodeller och hur du kombinerar flera prognosmodeller genom att konfigurera delmodeller.
 
 En *prognosmodell* namnger och identifierar en viss prognos. När du har skapat prognosmodellen kan du lägga till prognosrader i den. Om du vill lägga till prognosrader för flera artiklar använder du sidan **Efterfrågeprognosrader**. Om du vill lägga till prognosrader för en specifik vald artikel använder du sidan **Frisläppta produkter**.
 
 En prognosmodell kan innehålla prognoser från andra prognosmodeller. För att uppnå detta resultat lägger du till andra prognosmodeller som *delmodeller* till en överordnad prognosmodell. Du måste skapa varje relevant modell innan du kan lägga till den som en delmodell till en överordnad prognosmodell.
 
-Den resulterande strukturen ger dig ett kraftfullt sätt att kontrollera prognoser, eftersom du kan kombinera (aggregera) indata från flera enskilda prognoser. Från planeringssynpunkt är det därför enkelt att kombinera prognoser för simuleringar. Du kan till exempel ställa in en simulering som baseras på kombinationen av en vanlig prognos och prognosen för ett återkommande erbjudande.
+Den resulterande strukturen ger dig ett kraftfullt sätt att kontrollera prognoser, eftersom du kan kombinera (aggregera) indata från flera enskilda prognoser. Från planeringssynpunkt är det därför enkelt att kombinera prognoser för simuleringar. Du kan till exempel konfigurera en simulering som baseras på kombinationen av en vanlig prognos och prognosen för ett återkommande erbjudande.
 
 ### <a name="submodel-levels"></a>Delmodellnivåer
 
@@ -372,7 +372,7 @@ Gör så här om du vill skapa en prognosmodell.
 
     - **Modell** – Ange en unik identifierare för värderingsmodellen.
     - **Namn** – Ange ett beskrivande namn för modell.
-    - **Stoppat** – Vanligtvis ska du ställa in detta alternativ till *Nej*. Ställ in *Ja* bara om du vill förhindra redigering av alla prognosrader som tilldelas modellen.
+    - **Stoppat** – Vanligtvis ska du konfigurera detta alternativ till *Nej*. Ställ in *Ja* bara om du vill förhindra redigering av alla prognosrader som tilldelas modellen.
 
     > [!NOTE]
     > Fältet **Inkludera i kassaflödesprognoser** och fälten på **Projekt** hör inte till huvudplaneringen. Därför kan du ignorera dem i det här sammanhanget. Du måste endast ta hänsyn till dem när du arbetar med prognoser för modulen **Projekthantering och redovisning**.
@@ -382,7 +382,7 @@ Gör så här om du vill skapa en prognosmodell.
 Följ dessa steg för att tilldela undermodeller till en prognosmodell.
 
 1. Gå till **Lagerhantering \> Inställningar \> Prognos \> Prognosmodeller**.
-1. Välj den prognosmodell som du vill ställa in en undermodell för i listfönstret.
+1. Välj den prognosmodell som du vill konfigurera en undermodell för i listfönstret.
 1. På snabbfliken **Delmodeller**, välj **Lägg till** om du vill lägga till rutnätet.
 1. I den nya raden anger du följande fält:
 

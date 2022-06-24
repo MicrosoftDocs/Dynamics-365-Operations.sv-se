@@ -1,6 +1,6 @@
 ---
 title: Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services
-description: Detta avsnitt innehåller information om hur du hämtar elektroniska rapportkonfigurationer (ER) från Microsoft Dynamics Lifecycle Services (LCS).
+description: Denna artikel innehåller information om hur du hämtar elektroniska rapportkonfigurationer (ER) från Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 ms.date: 08/27/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ea603d01d05e98ac69d5a0d12802b5f23ee34793bf4c9b4f885f0e4303f77d2b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8ba720f997981e85ea08d532f23341a838533ac4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762282"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885306"
 ---
-# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Hämta konfigurationer för elektronisk rapportering från Lifecycle Services
+# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du hämtar den senaste versionen av dina [Elektronisk rapportering (ER) konfigurationer](general-electronic-reporting.md#Configuration) från [biblioteket med gemensamma tillgångar](../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).
+I den här artikeln beskrivs hur du hämtar den senaste versionen av dina [Elektronisk rapportering (ER) konfigurationer](general-electronic-reporting.md#Configuration) från [biblioteket med gemensamma tillgångar](../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).
 
 > [!IMPORTANT]
 > Användningen av LCS som en lagringsdatabas för ER-konfigurationer är [inaktuell](../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). Mer information finns i [Regulatory Configuration Service (RCS) – Lagringsavskrivning för Lifecycle Services (LCS)](../../../finance/localizations/rcs-lcs-repo-dep-faq.md)

@@ -1,6 +1,6 @@
 ---
 title: Leveranstidsplan
-description: Det här avsnittet innehåller information om sidan Leveranstidsplan och dess funktioner.
+description: Denna artikel innehåller information om sidan Leveranstidsplan och dess funktioner.
 author: t-benebo
 ms.date: 9/3/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 89b8ce96a5c34902187751cfa523ed99a94500b3
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 0e3937dd4cffc464f38b5770674364579bdb06d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468688"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851751"
 ---
 # <a name="supply-schedule"></a>Leveranstidsplan
 
@@ -28,7 +28,7 @@ På sidan **Leveransplan** visas en omfattande översikt över tillgång och eft
 
 Du kan öppna sidan **Leveransplan** på något av följande sätt:
 
-- Gå till **Huvudplanering \> Huvudplanering \> Leveransplan**. I dialogrutan **Modifiera filter** ange den plan och produkt som du letar efter genom att ange filtervärden i de angivna fälten.  (I resten av det här ämnet kallas samlingen av filtervärden som du anger som "filtret" eller "det aktuella filtret.") När du är klar väljer du **OK**.
+- Gå till **Huvudplanering \> Huvudplanering \> Leveransplan**. I dialogrutan **Modifiera filter** ange den plan och produkt som du letar efter genom att ange filtervärden i de angivna fälten. (I resten av denna artikel kallas samlingen av filtervärden som du anger som "filtret" eller "det aktuella filtret.") När du är klar väljer du **OK**.
 - Gå till **Produktinformationshantering \> Produkter \> Frisläppta produkter**. Välj eller öppna en produkt. I åtgärdsrutan på fliken **Plan** i gruppen **Visa** väljer du **Leveransplan**.
 - Gå till **Huvudplanering \> Inställningar \> Efterfrågeprognosticering \> Artikelallokeringsnycklar**. Välj en artikelallokeringsnyckel som används som produktfamilj. I åtgärdsfönstret väljer du **Leveransplan**.
 - Gå till **Huvudplanering \> Huvudplanering \> Planerade order**. Välj eller öppna en planerad order. I åtgärdsrutan på fliken **Visa** i gruppen **Visa** väljer du **Leveransplan**.

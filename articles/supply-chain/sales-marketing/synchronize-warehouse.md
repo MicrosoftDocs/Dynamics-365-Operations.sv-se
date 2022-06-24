@@ -1,6 +1,6 @@
 ---
 title: Synkronisera lagerställen från Supply Chain Management till Field Service
-description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera lagerställen från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.
+description: Denna artikel beskriver de mallar och underliggande uppgifter som används för att synkronisera lagerställen från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.
 author: Henrikan
 ms.date: 03/13/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f38d2dfdba1f2afa1005bd740cba27afe9dcb0ec
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 7fac40ebd8a1f7994997e12f1231e5522a0c0e24
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062146"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865075"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Synkronisera lagerställen från Supply Chain Management till Field Service
 
@@ -29,7 +29,7 @@ ms.locfileid: "8062146"
 
 
 
-Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera lagerställen från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.
+Denna artikel beskriver de mallar och underliggande uppgifter som används för att synkronisera lagerställen från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.
 
 [![Synkronisering av affärsprocesser mellan Supply Chain Management och Field Service.](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 
@@ -51,7 +51,7 @@ Följande mall och underliggande uppgifter används för att köra synkroniserin
 Lagerställen som har skapats och underhålls i Supply Chain Management kan synkroniseras till Field Service via ett Microsoft Dataverse dataintegreringsprojekt. De lagerställen som du vill synkronisera till Field Service kan kontrolleras med avancerad fråga och filtrering i projektet. Lagerställen som ska synkroniseras från Supply Chain Management skapas i Field Service med kolumnen **Underhålls externt** anges till **Ja** och posten är skrivskyddad.
 
 ## <a name="field-service-crm-solution"></a>CRM-lösning för Field Service
-För att stödja integrationen mellan Field Service och Supply Chain Management krävs ytterligare funktioner från Field Service CRM-lösning. I lösningen har kolumnen **Hanteras externt** har lagts till i tabellen **Lagerställe (msdyn_warehouses)**. Den här kolumnen hjälper till att identifiera om lagerstället ska hanteras från Supply Chain Management eller om det bara finns i Field Service. Inställningarna för denna kolumn är:
+För att stödja integreringen mellan Field Service och Supply Chain Management krävs ytterligare funktioner från Field Service CRM-lösning. I lösningen har kolumnen **Hanteras externt** har lagts till i tabellen **Lagerställe (msdyn_warehouses)**. Den här kolumnen hjälper till att identifiera om lagerstället ska hanteras från Supply Chain Management eller om det bara finns i Field Service. Inställningarna för denna kolumn är:
 - **Ja** – Lagerstället kommer från Supply Chain Management och kan inte redigeras i Sales.
 - **Nej** – Lagerstället angavs direkt i Field Service och underhålls här.
 
@@ -65,7 +65,7 @@ Kolumnen **Hanteras externt** hjälper till att styra synkroniseringen av lagern
 Se till att uppdatera avancerad fråga och filtrering på projektet före synkroniseringen av lagerställen för att bara inkludera de lagerställen som du vill flytta från Supply Chain Management till Field Service. Observera att du behöver lagerstället i Field Service för att använda det på arbetsorder, justeringar och överföringar.  
 
 Kontrollera att **integreringsnyckel** finns i **msdyn_warehouses** genom att:
-1. Gå till dataintegration.
+1. Gå till dataintegrering.
 2. Välj fliken **Anslutningsinställning**.
 3. Välj anslutningsinställning som används för arbetsordersynkronisering.
 4. Välj fliken **Integreringsnyckel**.

@@ -1,6 +1,6 @@
 ---
 title: ER-målstyp för e-post
-description: I det här avsnittet beskrivs hur du konfigurerar en e-post-destination för varje MAPP- eller FIL-komponent i ett elektroniskt rapporteringsformat (ER).
+description: I den här artikeln beskrivs hur du konfigurerar en e-post-destination för varje MAPP- eller FIL-komponent i ett elektroniskt rapporteringsformat (ER).
 author: NickSelin
 ms.date: 08/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2248b8a35b076eb778a50bbbc67d083380ceee62
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 08d64b0f21e4957727de1e8f5f13f9067c0fbc7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324018"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845669"
 ---
 # <a name="email-er-destination-type"></a>ER-målstyp för e-post
 

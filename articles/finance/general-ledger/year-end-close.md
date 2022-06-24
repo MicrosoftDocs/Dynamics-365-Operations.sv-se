@@ -1,6 +1,6 @@
 ---
 title: Årsbokslut
-description: I det här avsnittet beskrivs den nödvändiga inställningen och stegen för att köra årsslutsprocessen i redovisningen.
+description: I den här artikeln beskrivs den nödvändiga inställningen och stegen för att köra årsslutsprocessen i redovisningen.
 author: kweekley
 ms.date: 12/06/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 247c3286124da946937c8afd248a275e5a745044
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 032c572ec7b29bb6b2823ddde0c4fa76e5f8fcf1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725245"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883225"
 ---
 # <a name="year-end-close"></a>Årsbokslut
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs den nödvändiga inställningen och stegen för att köra årsslutsprocessen i redovisningen.
+I den här artikeln beskrivs den nödvändiga inställningen och stegen för att köra årsslutsprocessen i redovisningen.
 
 I slutet av ett räkenskapsår måste du köra årslutslutprocessen för att överföra ingående saldon till det nya året. De flesta företag kör årsbokslutsprocessen flera gånger. Den första körningen flyttar saldona till det nya räkenskapsåret. Processen kan sedan köras om så många gånger som krävs för att flytta saldon från justeringsposter till det nya räkenskapsåret.
 

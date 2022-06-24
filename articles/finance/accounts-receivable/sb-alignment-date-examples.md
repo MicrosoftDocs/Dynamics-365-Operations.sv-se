@@ -1,6 +1,6 @@
 ---
 title: Scenarier för justeringsdatum
-description: Det här avsnittet innehåller exempel som visar hur justeringsdatum fungerar vid prenumerationsfakturering.
+description: Den här artikeln innehåller exempel som visar hur justeringsdatum fungerar vid prenumerationsfakturering.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 91480fecd16cf8417722df73c28bbd81d029fb07
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 102e3a104be5be287f914172160e95aff65d0b18
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690485"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872627"
 ---
 # <a name="alignment-date-scenarios"></a>Scenarier för justeringsdatum
 
-Det här avsnittet innehåller exempel som visar hur justeringsdatum fungerar vid prenumerationsfakturering.
+Den här artikeln innehåller exempel som visar hur justeringsdatum fungerar vid prenumerationsfakturering.
 
 I de här exemplen finns det ett faktureringsdetalj för ett faktureringsschema som har justeringsdatumet 31 oktober 2019. Den första faktureringsdetaljen för raden slutar den 31 oktober 2019 och delräknas enligt detta. Raden förnyas automatiskt genom att du använder ett startdatum för startdatumet 11 november.
 

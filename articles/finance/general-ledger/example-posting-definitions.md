@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e6af5fbd050642ac462ecb159c05d78f534f0ce
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: ae6b2b505acb211f9fb5506234953eba9f3ec2a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722561"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865784"
 ---
 # <a name="posting-definition-examples"></a>Exempel: bokföringsdefinitioner
 
@@ -28,7 +28,7 @@ ms.locfileid: "8722561"
 
 Denna artikel innehåller exempel som visar hur du använder bokföringsdefinitioner för inköpsorderinteckningar och budgetanslag.
 
-Innan du läser det här avsnittet, ska du känna till bokföringsdefinitioner och bokföringsdefinitioner för transaktioner. Mer information finns i [Bokföringsdefinitioner](posting-definitions.md). Följande exempel kan ställas in på sidan **Bokföringsdefinitioner**. Varje exempel innehåller följande ämnen:
+Innan du läser den här artikeln, ska du känna till bokföringsdefinitioner och bokföringsdefinitioner för transaktioner. Mer information finns i [Bokföringsdefinitioner](posting-definitions.md). Följande exempel kan ställas in på sidan **Bokföringsdefinitioner**. Varje exempel innehåller följande ämnen:
 
 -   Bokföringsdefinition – matchvillkor
 -   Bokföringsdefinition – genererade poster

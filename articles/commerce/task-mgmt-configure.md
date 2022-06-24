@@ -1,6 +1,6 @@
 ---
 title: Konfigurera uppgiftshantering
-description: I det här avsnittet beskrivs hur du konfigurerar funktioner för uppgiftshantering i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du konfigurerar funktioner för uppgiftshantering i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0ae0f3bd58db587d9024beceedd790cc3d3e4ee990a2f4c727dfda96b2f0785c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf8584f4a0d71ef6fa867a7f07b568d94656e650
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730813"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868867"
 ---
 # <a name="configure-task-management"></a>Konfigurera uppgiftshantering
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du konfigurerar funktioner för uppgiftshantering i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du konfigurerar funktioner för uppgiftshantering i Microsoft Dynamics 365 Commerce.
 
 Innan Dynamics 365 Commerce chefer och medarbetare kan använda funktionerna för aktivitets hantering i Commerce måste du konfigurera uppgiftshanteringen. Konfigurationssteg omfattar beviljande av behörigheter till chefer och medarbetare, distribution av behörigheter till kassaklienter, inställning av kassameddelanden och konfigurering av panelen **Uppgifter** på startsidan för en kassaprogram.
 
@@ -37,7 +37,7 @@ Konfigurera behörigheter av uppgiftshantering för butikschefer enligt följand
 1. Gå till **Retail och Commerce \> Medarbetare \> Behörighetsgrupper**.
 1. Välj en specifik behörighetsgrupp (till exempel **chef**) och välj sedan **redigera**.
 1. På snabbfliken **behörigheter** anger du alternativet **tillåt uppgiftshantering** till **ja**.
-1. På snabbfliken **meddelanden** lägger du till operationen **uppgiftshantering** och anger ett värde i fältet **visningsordning**. Ange till exempel **2** om operationen **Orderuppfyllelse** redan har värdet **Visningsordning** av **1**.
+1. På snabbfliken **meddelanden** lägger du till åtgärden **uppgiftshantering** och anger ett värde i fältet **visningsordning**. Ange till exempel **2** om åtgärden **Orderuppfyllelse** redan har värdet **Visningsordning** av **1**.
     
 > [!NOTE]
 > Om en icke-chef person måste ha behörighet för uppgiftshantering i POS kan du bevilja behörighet till personen. Du kan också skapa en ny behörighetsgrupp för icke-chefer och ange alternativet **Tillåt uppgiftshantering** till **ja**.
@@ -73,10 +73,10 @@ Uppgiftshantering måste konfigureras så att meddelanden är tillgängliga i ka
 
 Gör på följande vis för att konfigurera kassameddelanden.
 
-1. Navigera till **Retail och Commerce \> Kanalinställningar \> Kassainställningar \> Kassa \> Kassaoperationer**.
+1. Navigera till **Retail och Commerce \> Kanalinställningar \> Kassainställningar \> Kassa \> Kassaåtgärder**.
 1. Sökåtgärd **1400** (**Uppgiftshantering**) och markera kryssrutan **Aktivera meddelanden**.
 
-Följande bild visar åtgärder **Uppgiftshantering** på sidan **Kassaoperationer**.
+Följande bild visar åtgärder **Uppgiftshantering** på sidan **Kassaåtgärder**.
 
 ![Åtgärden Uppgiftshantering på sidan Kassaåtgärder.](media/HQ-POS-Tasks-Notifications.png)
 

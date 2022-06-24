@@ -1,6 +1,6 @@
 ---
 title: Momsrapport för Sverige
-description: I det här avsnittet beskrivs hur du ställer in och genererar momsrapporten för juridiska personer i Sverige.
+description: I den här artikeln beskrivs hur du ställer in och genererar momsrapporten för juridiska personer i Sverige.
 author: anasyash
 ms.date: 05/02/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Sweden
 ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 47f4d14c24d543b9e5b3659683504b37e57e7c24
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4167357ebb429a66ffbea62f25261bff7f31a5ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679580"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894763"
 ---
 # <a name="sales-tax-report-for-sweden"></a>Momsrapport för Sverige
 

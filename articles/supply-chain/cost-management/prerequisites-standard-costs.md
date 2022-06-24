@@ -1,6 +1,6 @@
 ---
 title: Krav för översikt över standardkostnader
-description: I detta avsnitt beskrivs hur du använder standardkostnader.
+description: I denna artikel beskrivs grundläggande steg för hur du använder standardkostnader.
 author: JennySong-SH
 ms.date: 07/25/2019
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cf37ae8d2cfa2a3f372e37eb66c22711e76dd59
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: bf02653b1d1a2cf5ed45f0fc6bd9affe098e7396
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672330"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895798"
 ---
 # <a name="prerequisites-for-standard-costs-overview"></a>Krav för översikt över standardkostnader
 
 [!include [banner](../includes/banner.md)]
 
-I detta avsnitt beskrivs hur du använder standardkostnader. Efterföljande steg beror på företagets verksamhet. Vilka steg som ska användas skiljer sig beroende på företagets verksamhet, till exempel om det är en miljö utan tillverkning, en tillverkningsmiljö utan flöden eller en tillverkningsmiljö med flöden. 
+I denna artikel beskrivs grundläggande steg för hur du använder standardkostnader. Efterföljande steg beror på företagets verksamhet. Vilka steg som ska användas skiljer sig beroende på företagets verksamhet, till exempel om det är en miljö utan tillverkning, en tillverkningsmiljö utan flöden eller en tillverkningsmiljö med flöden. 
 
 Så här ställer du in standardkostnader.
 
@@ -65,13 +65,13 @@ Använd sidan **Inställningar för kostnadsredovisningsversion** om du vill ska
 Kunder som vill ändra sina befintliga artiklar till lagermodellen Standardkostnad måste använda sidan **Konverteringar av standardkostnad**.
 
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Standardkostnadskonvertering – översikt](standard-cost-conversion-overview.md)
 
 ### <a name="blogs"></a>Bloggar
 
-#### <a name="community-blogs"></a>Bloggar
+#### <a name="community-blogs"></a>Community-bloggar
 
 - [Så här ställer du in standardkostnader för direkt material i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/06/07/how-to-set-up-standard-costs-for-direct-materials-in-dynamics-365-for-finance-and-operations)
 - [Direkta standardarbetskostnader i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/07/16/standard-direct-labor-cost-in-dynamics-365-for-finance-and-operations)

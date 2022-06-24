@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 03/22/2022
 ms.search.form: ''
-ms.openlocfilehash: 0ec519cbf0f9a16eaf6adbc13522919ba896ff34
-ms.sourcegitcommit: 49c97b0c94e916db5efca5672d85df70c3450755
+ms.openlocfilehash: b609cac2e8219e8d4a0587c37ceb712547457422
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "8493449"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866321"
 ---
 # <a name="supported-web-browsers-for-lifecycle-services"></a>Få support för webbläsare för Lifecycle Services 
 

@@ -1,6 +1,6 @@
 ---
 title: Lagringsbegränsningsplats
-description: I det här avsnittet beskrivs funktionerna för lagerplatsgränser.
+description: I denna artikel beskrivs funktionerna för lagerplatsgränser.
 author: perlynne
 ms.date: 11/11/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 239b9fa8d8e34a92d453d3387881cff7b0a11f28a3c3b1e19891ea3bd78c3d7c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 794fe9afddfa43862aea62bf56f9b745aaf91c2c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714172"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854048"
 ---
 # <a name="location-stocking-limits"></a>Lagringsbegränsningsplats
 
@@ -26,7 +26,7 @@ ms.locfileid: "6714172"
 
 Du kan använda sidan **Lagringsbegränsningsplats** (**Hantering av distributionslager \> Inställningar \> Lagerställe \> Lagringsbegränsningsplats**) för att styra lastkapaciteten på lagerplatser utan att behöva använda de mer avancerade processerna för volymberäkningar av fysiska produkter.
 
-Syftet med lagringsgränser för plats är att utvärdera den högsta kvantiteten som en plats kan innehålla. Du kan ställa in funktionen på någon av tre nivåer, som var och en har sin egen flik på sidan **lagerplatsgränser**:
+Syftet med lagringsgränser för plats är att utvärdera den högsta kvantiteten som en plats kan innehålla. Du kan konfigurera funktionen på någon av tre nivåer, som var och en har sin egen flik på sidan **lagerplatsgränser**:
 
 - Produkter
 - Produktvarianter

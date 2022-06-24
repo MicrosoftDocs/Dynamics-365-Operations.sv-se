@@ -1,6 +1,6 @@
 ---
 title: Kvalitetsstyrning för lagerprocesser
-description: Det här ämnet innehåller information om funktionen för kvalitetshantering för lagerprocesser. Den här funktionen utökar möjligheterna för kvalitetshantering och låter användarna integrera artikelsamplingskontroller i den process som tar emot lager med hjälp av avancerad Warehouse management.
+description: Denna artikel innehåller information om funktionen för kvalitetshantering för lagerprocesser. Den här funktionen utökar möjligheterna för kvalitetshantering och låter användarna integrera artikelsamplingskontroller i den process som tar emot lager med hjälp av avancerad Warehouse management.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: a8a7ac8266c14791137f9eda51b5abb5a59e5961
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 7f806b58c5e956e4f26158e8ea5c90a559296655
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679063"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857849"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Kvalitetsstyrning för lagerprocesser
 
@@ -39,7 +39,7 @@ Innan du kan använda den här funktionen den aktiveras i ditt system. Administr
 Funktionen _Kvalitetshantering för lagerprocesser_ genererar automatiskt arbete som en del av inleveransen, för att flytta lagerkvantiteten som krävs för kvalitetskontroll till en plats för kvalitetskontroll. Om den kvantitet som inlevereras överskrider den kvantitet som krävs för kvalitetskontroll (enligt artikelns samplingsinställning) flyttas det överskjutande antalet till en ankommande plats som definieras i inställningen för platsdirektiv. När kvalitetsordern har validerats genereras arbete automatiskt för att flytta kvantiteten för kvalitetsordern till en ny inlastningsplats eller returplats, baserat på valideringsresultatet och inställningen för platsdirektiv. Den automatiska genereringen av arbete som bara har den kvantitet som måste flyttas till och från kvalitetskontrollen är en integrerad processupplevelse.
 
 > [!NOTE]
-> När funktionen _Kvalitetshantering för lagerprocesser_ är aktiverad kan du ändå utnyttja den manuella processen. I den manuella processen används lagerrörelse och flyttning efter mall för att en lagerarbetare ska utlösa skapande av lagerarbete för att flytta lagret från en kvalitetskontrollplats till en ny plats. Du kan även ställa in ett inkommande platsdirektiv som flyttar hela lagret från en mottagningsplats till en kvalitetskontrollplats utan att ta hänsyn till inställningen av artikelsampling.
+> När funktionen _Kvalitetshantering för lagerprocesser_ är aktiverad kan du ändå utnyttja den manuella processen. I den manuella processen används lagerrörelse och flyttning efter mall för att en lagerarbetare ska utlösa skapande av lagerarbete för att flytta lagret från en kvalitetskontrollplats till en ny plats. Du kan även konfigurera ett inkommande platsdirektiv som flyttar hela lagret från en mottagningsplats till en kvalitetskontrollplats utan att ta hänsyn till inställningen av artikelsampling.
 
 ## <a name="quality-management-and-the-quality-management-for-warehouse-processes-feature"></a>Kvalitetshantering och funktionen Kvalitetshantering för lagerprocesser
 
@@ -69,7 +69,7 @@ Innan lagerarbete kan genereras automatiskt för att flytta lager till kvalitets
 1. För varje arbetsordertyp ställer du in platsdirektiv som tillämpar rätt platser för kvalitetskontroll som lagret ska flyttas till. Efter att kvalitetskontrollen har slutförts säkerställer platsdirektivet för arbetsordertypen _kvalitetsorder_ att en ny destinationsplats väljs så att lagret kan flyttas från kvalitetskontrollplatsen.
 1. Ställ in de relevanta menyalternativen för mobila enheter för att stödja flyttning av mottaget lager till kvalitetskontrollplatsen och lagerförflyttning som skickar eller underlåter en kvalitetskontroll från platsen för kvalitetskontroll till en ny plats.
 
-Ett steg för steg-exempel som visar hur du utför den här inställningen, se [exempelscenariot](#example-scenario) i slutet av det här avsnittet.
+För att se ett steg för steg-exempel som visar hur du utför den här inställningen, se [exempelscenariot](#example-scenario) i slutet av denna artikel.
 
 ## <a name="enable-a-warehouse-for-quality-management"></a>Aktivera ett lager för kvalitetshantering
 
@@ -145,7 +145,7 @@ Om du definierar en artikelsampling som använder den tillämpliga lagerstället
 
 Artikelsampling styr hur ofta artiklar skickas för kvalitetskontroll. Funktionen _Kvalitetshantering för lagerprocesser_ omfattar konceptet av _artikelsamplingens omfång_. I systemet används artikel samplingsomfånget när det utvärderar om och hur kvalitetsorder och/eller kvalitetsartikelsampling och kvalitetsorderarbete ska skapas.
 
-För att ställa in artikelsampling, gå till **Lagerhantering \> Inställningar \> Kvalitetskontroll \> Artikelsampling** och anger fältet **Samplingsområde** till ett av följande värden:
+För att konfigurera artikelsampling, gå till **Lagerhantering \> Inställningar \> Kvalitetskontroll \> Artikelsampling** och anger fältet **Samplingsområde** till ett av följande värden:
 
 - **Order** – Källdokumentraden kommer att ligga till grund för att utvärdera huruvida och hur kvalitetsorder och/eller kvalitetsartikelsampling och kvalitetsorderarbete skapas. Detta värde är standardvärdet och när det är valt fungerar systemet på samma sätt som det fungerar när funktionen _Kvalitetshantering för lagerprocesser_ inte är aktiverad.
 - **Last** – Last kommer att användas som bas för att utvärdera om och hur en kvalitetsorder och/eller arbete skapas. Det här värdet är bara tillgängligt om funktionen _Kvalitetshantering för lagerprocesser_ är aktiverad.
@@ -188,7 +188,7 @@ Värdet **Referenstyp** för följande exempel är _inköp_ och värdet för **h
 | Lasta | Fullständig registreringsskylt | Ja _(låst/inte redigerbart)_ | <p>Plats: ja</p><p>ID-nummer: Ja _(låst/inte redigerbart)_</p> | Ja | 3 | <p>**Två artiklar:**</p><ul><li>**Orderradens kvantitet för artikel A: 120 EA (4 lastpallar)**</li><li>**Orderradens kvantitet för artikel B: 90 EA (3 lastpallar)**</li></ul><p>**En last, två beläggningsrader med varje orderrad**</p><ol><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel A, 30 EA, LP1<p>Sampling av kvalitetsartikel för 30 EA</p><p>Kvalitetsorder 1 för 30 EA</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel A, 30 EA, LP2<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel A, 30 EA, LP3<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel A, 30 EA, LP4<p>Sampling av kvalitetsartikel för 30 EA</p><p>Kvalitetsorder 1 för 30 EA</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel B, 30 EA, LP5<p>Sampling av kvalitetsartikel för 30 EA</p><p>Kvalitetsorder 1 för 30 EA</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel B, 30 EA, LP6<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för artikel A, 30 EA, LP7<p>Arbete med inköpsorder på 30 EA (artikelinförsel)</p></li></ol> |
 | Lasta | Procent = 10 | Ja _(låst/inte redigerbart)_ | <p>Plats: nej</p><p>ID-nummer: nej</p> | Nej | Inte tillämpligt | <p>**Kvantitet på orderrad: 100 EA**</p><p>**Inga laster skapas. Orderomfång används.**</p><ol><li>Registrera inleverans i mobilappen för distributionslagerhantering för 50 EA, LP1<p>Sampling av kvalitetsartikel för 5 EA</p><p>Kvalitetsorder 1 för 5 EA</p><p>Arbete med inköpsorder på 45 EA (artikelinförsel)</p></li><li>Registrera inleverans i mobilappen för distributionslagerhantering för 50 EA, LP2<p>Sampling av kvalitetsartikel för 5 EA</p><p>Kvalitetsorder 1 för 5 EA</p><p>Arbete med inköpsorder på 45 EA (artikelinförsel)</p></li></ol> |
 
-När en arbetare validerar en av de kvalitetsorder som visas i föregående register, genererar systemet automatiskt kvalitetsorderarbete för att flytta lager från kvalitetskontrollplatsen till den plats som har definierats i platsdirektivet för arbetsorder typen för _kvalitetsorder_. Du kan ställa in valfri plats för det här syftet, t.ex. en retur- eller en lagringsplats, beroende på testresultatet för kvalitetsordern. Ett exempel på den här inställningen finns i [exempelscenario](#example-scenario) i slutet av det här avsnittet.
+När en arbetare validerar en av de kvalitetsorder som visas i föregående register, genererar systemet automatiskt kvalitetsorderarbete för att flytta lager från kvalitetskontrollplatsen till den plats som har definierats i platsdirektivet för arbetsorder typen för _kvalitetsorder_. Du kan konfigurera valfri plats för det här syftet, t.ex. en retur- eller en lagringsplats, beroende på testresultatet för kvalitetsordern. Ett exempel på den här inställningen finns i [exempelscenario](#example-scenario) i slutet av denna artikel.
 
 Du kan öppna en kvalitetsorder som redan har validerats på nytt, förutsatt att kvalitetsordern som är relaterad till flyttningen av lagret från kvalitetskontrollplatsen inte har värde för **arbetsstatus** på *stängd* eller *pågår*.
 

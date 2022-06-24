@@ -1,6 +1,6 @@
 ---
 title: Butiksutdrag
-description: Det här avsnittet beskriver hur rapporter skapas och bokförs.
+description: Denna artikel beskriver hur rapporter skapas och bokförs.
 author: ashishmsft
 ms.date: 04/04/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 64b6fbda9f0396eb4ee6e2e248941f1429d4485278180d5c70dac6dd837a4537
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0717c1198171f411e3c52233200ecfcc213dc13f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738706"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878467"
 ---
 # <a name="retail-statements"></a>Butiksutdrag
 
 [!include [banner](includes/banner.md)]
 
-I Dynamics 365 Commerce är bokföringsprocessen för utdraget att ta hänsyn till de transaktioner som sker i molnbaserad kassa (PO) eller Modern POS (MOPS). Bokföringsprocessen för utdrag använder distributionsschemat för att hämra en uppsättning kassatransaktioner till klientens huvudkontor (HQ). De parametrar som definieras på sidorna **Handelsparametrar** och **Butiker** används för att välja vilka transaktioner som hämtas till enskilda rapporter.
+I Dynamics 365 Commerce är bokföringsprocessen för utdraget att ta hänsyn till de transaktioner som sker i molnbaserad kassa (POS) eller Modern POS (MOPS). Bokföringsprocessen för utdrag använder distributionsschemat för att hämra en uppsättning kassatransaktioner till klientens huvudkontor (HQ). De parametrar som definieras på sidorna **Handelsparametrar** och **Butiker** används för att välja vilka transaktioner som hämtas till enskilda rapporter.
 
 Utdragsbokföringsprocessen illustreras i följande diagram. I denna process överförs transaktioner som är registrerade i POS till klienten, genom att Commerce schemaläggare används. När klienten har tagit emot transaktionerna kan du skapa, beräkna och bokföra transaktionsutdraget för butiken.
 

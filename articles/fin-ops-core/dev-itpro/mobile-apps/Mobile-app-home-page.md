@@ -1,6 +1,6 @@
 ---
 title: Startsida för mobilapp
-description: Det här avsnittet beskriver mobilappen ekonomi och drift (Dynamics 365) och ger länkar till resurser som kan hjälpa dig att implementera den i din organisation.
+description: Den här artikeln beskriver mobilappen ekonomi och drift (Dynamics 365) och ger länkar till resurser som kan hjälpa dig att implementera den i din organisation.
 author: ChrisGarty
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: a6928b1fc7713b6822f53aaa77b8d1281eb6d320
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: d73a8d3cf8a7899f16db87148456671dea773636
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811185"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868771"
 ---
 # <a name="mobile-app-home-page"></a>Startsida för mobilapp
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Det här avsnittet beskriver mobilappen **ekonomi och drift (Dynamics 365)** och ger länkar till resurser som kan hjälpa dig att implementera den i din organisation.
+Den här artikeln beskriver mobilappen **ekonomi och drift (Dynamics 365)** och ger länkar till resurser som kan hjälpa dig att implementera den i din organisation.
 
 ## <a name="overview"></a>Översikt
 

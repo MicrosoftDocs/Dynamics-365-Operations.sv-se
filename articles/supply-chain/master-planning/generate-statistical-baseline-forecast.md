@@ -1,6 +1,6 @@
 ---
 title: Generera en statistisk baslinjeprognos
-description: Det här ämne innehåller information om parametrar och filter som används i beräkningen av behovsprognoser.
+description: Den här artikeln innehåller information om parametrar och filter som används i beräkningen av behovsprognoser.
 author: t-benebo
 ms.date: 07/08/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b2a71faeeb4de35e26b5a346e17caa0d8d353f8
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c45d763a1f3d199c91f3cf6181c22f4b8130fabc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468721"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844950"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Generera en statistisk baslinjeprognos
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämne innehåller information om parametrar och filter som används i beräkningen av behovsprognoser. 
+Den här artikeln innehåller information om parametrar och filter som används i beräkningen av behovsprognoser. 
 
 När du skapar en baslinjeprognos måste du först ange parametrar och filter som används i beräkningen. Du kan till exempel skapa en baslinjeprognos som uppskattar behov baserat på transaktionsdata från det tidigare året för ett specifikt företag, för den föregående månaden och för en vald grupp av artiklar. 
 
@@ -44,7 +44,7 @@ När prognosen är inställd på att **kopiera över historiska behov**, slutet 
 
 För att undvika förvirring i produktionsplaner, ett visst antal prognos kostnadsslag kan frysas. Numret anges i **frys tidsgräns** . Om det **justerade behovet prognos** sida, celler för fryst skopor är avaktiverad, för att ge en visuell indikation på att dessa värden bör inte ändras. 
 
-Startdatum för baslinjen efterfrågan behöver inte vara dagens datum eller ett datum i framtiden. Om du vill ställa in ett annat startdatum, använd den **ursprungliga prognosen startdatum – från fältet datum** . Till exempel, i juni, användare kan generera en prognos för nästa år. Eftersom prognosen hinkar mellan slutet av historisk efterfrågan och start av baslinjen saknas förutsägelser kanske inte exakt. Om du använder tjänsten behovsprognoser finns det fyra sätt som du kan fylla i de felande luckor. Du kan välja den metod som du vill använda genom att ange parametern MISSING\_VALUE\_SUBSTITUTION på sidan **Parametrar för efterfrågeprognosticering**. 
+Startdatum för baslinjen efterfrågan behöver inte vara dagens datum eller ett datum i framtiden. Om du vill konfigurera ett annat startdatum, använd den **ursprungliga prognosen startdatum – från fältet datum** . Till exempel, i juni, användare kan generera en prognos för nästa år. Eftersom prognosen hinkar mellan slutet av historisk efterfrågan och start av baslinjen saknas förutsägelser kanske inte exakt. Om du använder tjänsten behovsprognoser finns det fyra sätt som du kan fylla i de felande luckor. Du kan välja den metod som du vill använda genom att ange parametern MISSING\_VALUE\_SUBSTITUTION på sidan **Parametrar för efterfrågeprognosticering**. 
 
 > [!NOTE]
 > Saknad värdeersättning fungerar endast för luckor i data mellan start- och slutdatum för historiska data. Den kommer inte att fylla i data före eller efter den sista fysiska datapunkten, men den fungerar bara som extrapolering mellan faktiska, befintliga datapunkter. 

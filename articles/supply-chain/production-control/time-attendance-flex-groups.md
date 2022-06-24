@@ -1,6 +1,6 @@
 ---
 title: Flexgrupper
-description: Det här avsnittet beskriver hur flexgrupperna används i tid och närvaro.
+description: Denna artikel beskriver hur flexgrupperna används i Tid och närvaro.
 author: johanhoffmann
 ms.date: 03/15/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 44d8876aac8f8a3439a9a1285780bcc076c95807b950e3640c2a7523beae3f3e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b488a5ae3b3cd0d3e159b85e539d5cc95a87f87
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717038"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857327"
 ---
 # <a name="flex-groups"></a>Flexgrupper
 
@@ -35,7 +35,7 @@ Du kan använda flexgrupper för att ange följande regler och principer för en
 
 ## <a name="set-up-flexible-working-hours-in-flex-groups"></a>Ange flexibla arbetstider i flexgrupper
 
-- Välj **tid och närvaro**\>**inställningar**\>**grupper**\>**flexgrupper** för att ställa in flexgrupper för flextimmar.
+- Välj **tid och närvaro**\>**inställningar**\>**grupper**\>**flexgrupper** för att konfigurera flexgrupper för flextimmar.
 
 ## <a name="associate-workers-with-flex-groups"></a>Koppla personer till flexgrupper
 
@@ -135,7 +135,7 @@ För att ta hänsyn till de flexibla timmarna måste du också definiera en ny l
 |----------|--------------|
 | FlexCnt  | Flexräknare |
 
-Följ stegen nedan för att ställa in en lönetyp och lägga till rader på den nya typen till en löneprofil.
+Följ stegen nedan för att konfigurera en lönetyp och lägga till rader på den nya typen till en löneprofil.
 
 1. Välj **tid och närvaro** \> **inställningar** \> **grupper** \> **flexgrupper** och välj sedan **ny**.
 2. I både fältet **Flex+** och **Flex-**, anger du den nya lönetypen **FlexCnt**.
@@ -167,7 +167,7 @@ Det belopp som ska betalas beräknas på sidan **Godkänn** baserat på den ber�
 
 Mängden Flex+-tid är 6 timmar och beräkningen baseras på flexzoner i tidsprofilen. Detta värde består av en timme av Flex+-tid från 07:00 till 08:00 och fem timmars Flex+-tid från 16:00 till 21:00
 
-När du överför registreringarna, ser du att mängden  Flex+-tid ändras från 6,0 timmar till 8,0 timmar.
+När du överför registreringarna, ser du att mängden Flex+-tid ändras från 6,0 timmar till 8,0 timmar.
 
 | Flex + | Flex - | Tid  | Betald tid |
 |--------|--------|-------|----------|

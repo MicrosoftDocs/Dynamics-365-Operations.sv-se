@@ -1,6 +1,6 @@
 ---
 title: Domäner i Dynamics 365 Commerce
-description: I det här avsnittet beskrivs hur domäner hanteras i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur domäner hanteras i Microsoft Dynamics 365 Commerce.
 author: BrShoo
 ms.date: 05/10/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
-ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
+ms.openlocfilehash: c48c8bd57d90a8c7d47bfa4263cd9ab38002629b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8737356"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848964"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domäner i Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur domäner hanteras i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur domäner hanteras i Microsoft Dynamics 365 Commerce.
 
-Domäner är webbadresser som används för att navigera till Dynamics 365 Commerce webbplatser i en webbläsare. Du kontrollerar hanteringen av din domän med en vald DNS-leverantör (domännamnserver). Domäner refereras till i hela Dynamics 365 Commerce webbplatsskaparen för att koordinera hur en plats kommer att få åtkomst till när den publiceras. I det här avsnittet beskrivs hur domäner hanteras och refereras under hela livscykeln för webbplatsutveckling och start av Commerce.
+Domäner är webbadresser som används för att navigera till Dynamics 365 Commerce webbplatser i en webbläsare. Du kontrollerar hanteringen av din domän med en vald DNS-leverantör (domännamnserver). Domäner refereras till i hela Dynamics 365 Commerce webbplatsskaparen för att koordinera hur en plats kommer att få åtkomst till när den publiceras. I denna artikel beskrivs hur domäner hanteras och refereras under hela livscykeln för webbplatsutveckling och start av Commerce.
 
 > [!NOTE]
 > Från och med 6 maj 2022 kommer alla miljöer som skapats i Dynamics 365 Commerce att tillhandahållas med domänen `.dynamics365commerce.ms` som ersätter det tidigare mönstret `.commerce.dynamics.com` Befintliga miljöer som etablerats med domänen `.commerce.dynamics.com` kommer att fortsätta att fungera.
@@ -53,7 +53,7 @@ Du kan också använda namn på produktionsplats värden i en sandbox-miljö. De
 
 ## <a name="site-setup"></a>Inställning av webbplats
 
-När din näthandelsmiljö har etablerats måste du ställa in din webbplats i Commerce-webbplatsbyggaren för att koppla webbplatsen till arbets-URL:en.
+När din näthandelsmiljö har etablerats måste du konfigurera din webbplats i Commerce-webbplatsbyggaren för att koppla webbplatsen till arbets-URL:en.
 
 När du först skapar en webbplats i webbplatsskaparen visas dialogrutan **konfigurera plats**.
 
@@ -68,7 +68,7 @@ Rutan **Sökväg** kan lämnas tom, eller så kan en extra sökvägssträng läg
 > [!NOTE]
 > Sökvägen kallas även **matchningssökväg** när en kanal läggs till i konfigurationsavsnittet i **webbplatsinställningar \> kanaler** i webbplatsskaparen.
 
-Om du till exempel har en webbplats i webbplatsskaparen som kallas "Fabrikam" i en näthandelsklient med namnet "xyz" och du ställer in webbplatsen med en tom sökväg, får du tillgång till det publicerade webbplatsinnehållet i en webbläsare genom att gå direkt till den grundläggande Commerce-genererade URL:en:
+Om du till exempel har en webbplats i webbplatsskaparen som kallas "Fabrikam" i en näthandelsklient med namnet "xyz" och du konfigurerar webbplatsen med en tom sökväg, får du tillgång till det publicerade webbplatsinnehållet i en webbläsare genom att gå direkt till den grundläggande Commerce-genererade URL:en:
 
 `https://xyz.dynamics365commerce.ms`
 
@@ -106,14 +106,14 @@ Du kan simulera flera domäner med hjälp av parametrar för domänfrågor i sj�
 
 Slutpunkten `<e-commerce tenant name>.dynamics365commerce.ms` stöder inte anpassade domän Secure Sockets Layers (SSL), så du måste konfigurera anpassade domäner med hjälp av Front Door Service eller ett CDN (Content Delivery Network). 
 
-Om du vill ställa in anpassade domäner med hjälp av en Front Door Service eller CDN har du två alternativ:
+Om du vill konfigurera anpassade domäner med hjälp av en Front Door Service eller CDN har du två alternativ:
 
 - Konfigurera en Front Door Service som Azure Front Door för att hantera klienttrafik och ansluta till din Commerce-miljö. Detta ger bättre kontroll över hantering av domäner och certifikat samt mer detaljerade säkerhetsprinciper.
 - Använd den inlevererade Azure Front Door-instansen. Detta kräver samordning av åtgärden med Dynamics 365 Commerce-teamet för domänverifiering och för att hämta SSL-certifikat för din produktionsdomän.
 
-Information om hur du ställer in en CDN-tjänst direkt finns i [lägga till stöd för ett Content Delivery Network (CDN)](add-cdn-support.md) .
+Information om hur du konfigurerar en CDN-tjänst direkt finns i [lägga till stöd för ett Content Delivery Network (CDN)](add-cdn-support.md) .
 
-Om du vill använda en Commerce-tillhandahållen Azure Front Door-instans måste du skapa en service begäran för CDN-inställningar hjälp från det inbyggda Commerce-integrationsteamet. 
+Om du vill använda en Commerce-tillhandahållen Azure Front Door-instans måste du skapa en service begäran för CDN-inställningar hjälp från det inbyggda Commerce-integreringsteamet. 
 
 - Du måste ange företagsnamn, produktionsdomän, miljö-ID och namnet på klientorganisationen för näthandel för produktionen. 
 - Du måste bekräfta om detta är en befintlig domän (som används för en för tillfället aktiv plats) eller en ny domän. 
@@ -130,14 +130,14 @@ Om du vill skapa en tjänstbegäran i LCS, inom din miljö, går du till **Suppo
 När en servicebegäran lämnas in, kommer Commerce-teamet att koordinera följande steg med dig.
 
 För nya domäner:
-- Commerce-teamet ställer in Azure Front Door-instansen (Commerce-värdbaserad).
+- Commerce-teamet konfigurerar Azure Front Door-instansen (Commerce-värdbaserad).
 - Commerce-teamet kommer sedan att tillhandahålla CNAME-posten för att ange den anpassade domänen.
 - När posten CNAME har uppdaterats kan Commerce-värdbaserad Azure Front Door -instans verifiera domänens ägare och hämta SSL-certifikatet.
 
 För befintliga/aktiva domäner:
 - Commerce-teamet instruerar dig att lägga till en `afdverify.<custom-domain>` CNAME-post som ska förse din domän-DNS-provider.
 - När det är klart kommer Commerce-teamet att lägga till domänen i Azure Front Door-instansen och ange att ytterligare DNS TXT-poster ska läggas till i DNS för domänen.
-- När TXT-posterna har slutförts kommer Commerce-teamet att slutföra de Azure Front Door-uppdateringarna för den domän som ska ställa in SSL-certifikatet.
+- När TXT-posterna har slutförts kommer Commerce-teamet att slutföra de Azure Front Door-uppdateringarna för den domän som ska konfigurera SSL-certifikatet.
 
 ## <a name="apex-domains"></a>Apex-domäner
 
@@ -148,7 +148,7 @@ Den Commerce-tillhandahållna Azure Front Door-instansen stöder inte apex-domä
 - **Alternativ 2** – Ställ in en CDN/Front Door-instans som värd för apex-domänen.
 
 > [!NOTE]
-> Om du använder Azure Front Door måste du också ställa in en Azure DNS i samma prenumeration. Apex-domänen som finns på Azure DNS kan peka mot din Azure Front Door som en aliaspost. Detta är det enda problemet, eftersom apex-domäner alltid måste peka mot en IP-adress.
+> Om du använder Azure Front Door måste du också konfigurera en Azure DNS i samma prenumeration. Apex-domänen som finns på Azure DNS kan peka mot din Azure Front Door som en aliaspost. Detta är det enda problemet, eftersom apex-domäner alltid måste peka mot en IP-adress.
 
   ## <a name="additional-resources"></a>Ytterligare resurser
 

@@ -1,6 +1,6 @@
 ---
 title: Ställa in farliga material
-description: I det här avsnittet beskrivs hur du ställer in de data som krävs för att klassificera artiklar som farligt material. När du skapar en försäljningsorder som innehåller en artikel som klassificeras som ett farligt material genererar systemet information om farligt material för försäljningsordern när den har levererats.
+description: I denna artikel beskrivs hur du konfigurerar de data som krävs för att klassificera artiklar som farligt material. När du skapar en försäljningsorder som innehåller en artikel som klassificeras som ett farligt material genererar systemet information om farligt material för försäljningsordern när den har levererats.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6923bd24fc8f9aad6e758603e3b20f7d5f2b8fde
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 95d7a4d5e61b2f0ff2a9d52b7ccfa8deec1b309d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778019"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888511"
 ---
 # <a name="set-up-hazardous-materials"></a>Ställa in farliga material
 
 [!include [banner](../includes/banner.md)]
 
-Om du vill använda funktionen för farliga material måste du först ställa in de data som krävs för att klassificera artiklar som farligt material. Sedan när du skapar en försäljningsorder som innehåller en artikel som klassificeras som ett farligt material genererar systemet information om farligt material för försäljningsordern när den har levererats.
+Om du vill använda funktionen för farliga material måste du först konfigurera de data som krävs för att klassificera artiklar som farligt material. Sedan när du skapar en försäljningsorder som innehåller en artikel som klassificeras som ett farligt material genererar systemet information om farligt material för försäljningsordern när den har levererats.
 
 ## <a name="turn-on-the-hazardous-materials-feature-for-your-system"></a>Aktivera funktionen för farliga material för ditt system
 
@@ -46,7 +46,7 @@ Nedan följer några gemensamma regler:
 Dessa regler hjälper till att fastställa vilken information som ska visas när du skriver ut leveranstexten för en artikel. Du kan definiera så många regler som du måste följa.
 
 > [!IMPORTANT]
-> Funktionen för att ställa in informationskoder som rör farliga material gör inte ditt företag kompatibelt med regler. Det är bara ett verktyg som hjälper dig att skapa processer för ditt företag.
+> Funktionen för att konfigurera informationskoder som rör farliga material gör inte ditt företag kompatibelt med regler. Det är bara ett verktyg som hjälper dig att skapa processer för ditt företag.
 
 Normalt är en förordning tillgänglig för ett särskilt transportsätt, sjötransporterna, vägtransport eller flygtransport. Därför kan du koppla varje regel till ett leveranssätt. Leveranssättet kommer att användas när specifika dokument skrivs ut i lagerstyrning. I lagerstyrning är varje leverans kopplad till ett transportföretag och transportföretagstjänst som har ställts in i modulen **transport**. Leveranssättet är kopplat till transportföretaget och transporttjänsten. När du kör en rapport används leveranssättet för att hitta leveransens tryckta text som är kopplad till en frisläppt artikel.
 
@@ -54,7 +54,7 @@ Dessa inställningsdata är inte specifika för varje juridisk person (företag)
 
 För varje förordning kan du definiera en materiallista och använda den som en mallista som är kopplad till frisläppta artiklar. För varje förordning kan du även definiera en skrivarinställning. Med en skrivarinställning kan du definiera hur leveranstexten för en artikel ska skapas. Skrivarinställningen används för att skapa leveransens tryckta text för en frisläppt artikel.
 
-Om du vill ställa in regler för farliga material går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Regler för farligt material**. På sidan för **regler för farliga material** kan du skapa ett valfritt antal regler och konfigurera var och en med hjälp av fälten som beskrivs i följande underavsnitt.
+Om du vill konfigurera regler för farliga material går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Regler för farligt material**. På sidan för **regler för farliga material** kan du skapa ett valfritt antal regler och konfigurera var och en med hjälp av fälten som beskrivs i följande underavsnitt.
 
 ### <a name="hazardous-material-regulation-header"></a>Rubrik för regler om farliga material
 
@@ -76,12 +76,12 @@ Varje regel kan ha ett obegränsat antal utskriftsinställningar. Du definierar 
 | Skriv ut före | Ange den text som ska skrivas ut före innehållet som definieras av inställningen för **utskriftsfält**. |
 | Skriv ut efter | Ange den text som ska skrivas ut efter innehållet som definieras av inställningen för **utskriftsfält**. |
 | Skriv ut med föregående | Markera den här kryssrutan om du vill förhindra att fält avgränsaren skrivs ut mellan det föregående fältet och det här fältet. Använd den här kryssrutan för att skriva ut fält som är valfria eller inkluderade i ett annat utskriftsfält. |
-| Fast text | Om du ställer in fältet **Utskriftsfält** till **Fast text** eller **Begränsad kvantitet** anger du den text som ska skrivas ut. |
+| Fast text | Om du konfigurerar fältet **Utskriftsfält** till **Fast text** eller **Begränsad kvantitet** anger du den text som ska skrivas ut. |
 | Inkludera i utskrift | Välj vilket värde eller värden från det valda utskriftsfältet som ska skrivas ut för den här raden. Du kan skriva ut koden, beskrivningen eller både koden och beskrivningen. |
 
 ### <a name="mode-of-delivery-fasttab"></a>Snabbfliken Leveranssätt
 
-Regeln är en delad tabell och är inte specifik för varje juridisk person. Leveranssätten är dock specifika för juridiska enheter. När du ställer in ett leverans sätt måste du därför välja relationen mellan regeln, den juridiska personen och leveranssättet.
+Regeln är en delad tabell och är inte specifik för varje juridisk person. Leveranssätten är dock specifika för juridiska enheter. När du konfigurerar ett leverans sätt måste du därför välja relationen mellan regeln, den juridiska personen och leveranssättet.
 
 Följande register beskriver de fält som är tillgängliga i snabbfliken **Leveranssätt**.
 
@@ -102,28 +102,28 @@ Följande register beskriver de fält som är tillgängliga i snabbfliken **Land
 
 ## <a name="material-codes"></a><a name="hazmat-codes"></a>Materialkoder
 
-Materialkoder skapar inställningar som är relaterade till en viss farlig komponent som kan ingå i en frisläppt produkt. Varje materialkod tillhör en specifik farligt materialregel och dess definition måste överensstämma med den regeln. När du kopplar en materialkod till en frisläppt produkt med hjälp av fältet **materialkod** används alla materialkod inställningar för farligt material automatiskt för den produkten. Därför är processen för att ställa in frisläppta produkter snabbare och mindre känslig för felet.
+Materialkoder skapar inställningar som är relaterade till en viss farlig komponent som kan ingå i en frisläppt produkt. Varje materialkod tillhör en specifik farligt materialregel och dess definition måste överensstämma med den regeln. När du kopplar en materialkod till en frisläppt produkt med hjälp av fältet **materialkod** används alla materialkod inställningar för farligt material automatiskt för den produkten. Därför är processen för att konfigurera frisläppta produkter snabbare och mindre känslig för felet.
 
 Hantera dina farliga material definitioner enligt följande instruktioner.
 
 1. Gå till **Produktinformationshantering management \> Konfigurera \> Dokumentation för leverans av farligt material \> Regler för farligt material**.
-2. Välj regeln för att ställa in en definition för farligt material för.
+2. Välj regeln för att konfigurera en definition för farligt material för.
 3. Välj **Försäljningsorderursprung** på fliken **Farliga material** i åtgärdsfönstret.
 4. I fältet **Materialkod** ange en materialkod för definitionen av farligt material i fältet materialkod. Du väljer det här värdet när du använder materialkoden för en frisläppt produkt.
 
     Fältet **Regelkod** är skrivskyddat och visar den regel som du valde i steg 2.
 
-5. Använd de återstående fälten på den här sidan om du vill skapa och ställa in varje farligt material som gäller för den valda regeln. Tillgängliga fält är en delmängd av de farliga material fält som är tillgängliga för enskilda frisläppta produkter. För mer information, se [Farliga material i produkter, order, leveranser och laster](hazmat-items.md).
+5. Använd de återstående fälten på den här sidan om du vill skapa och konfigurera varje farligt material som gäller för den valda regeln. Tillgängliga fält är en delmängd av de farliga material fält som är tillgängliga för enskilda frisläppta produkter. För mer information, se [Farliga material i produkter, order, leveranser och laster](hazmat-items.md).
 
 ## <a name="hazardous-material-classification-groups"></a><a name="classification-groups"></a>Klassificeringsgrupper för farligt material
 
-Varje klassificeringsgrupp för farligt material definierar en grupp av fältvärden som skapar en mall. Du kan använda den här mallen senare när du ställer in information om farligt material för en frisläppt artikel.
+Varje klassificeringsgrupp för farligt material definierar en grupp av fältvärden som skapar en mall. Du kan använda den här mallen senare när du konfigurerar information om farligt material för en frisläppt artikel.
 
 När du tilldelar koden för en anslagen material klassificeringsgrupp till en frisläppt artikel, kopieras den information som är kopplad till klassificeringsgruppen till rätt fält för artikeln. Därför kan du förenkla inställningsprocesserna genom att skapa en uppsättning relaterade fältvärden som du ofta använder tillsammans.
 
 Dessa inställningsdata är inte specifika för varje juridisk person. Därför kan du ha en gemensam uppsättning information om farligt material som delas mellan alla dina juridiska personer.
 
-Om du vill ställa in klassificeringsgrupper för farliga material går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Klassificeringsgrupper för farliga material**. På sidan för **klassificeringsgrupper för farliga material** kan du skapa ett valfritt antal grupper och konfigurera var och en med hjälp av fälten som beskrivs i följande tabell.
+Om du vill konfigurera klassificeringsgrupper för farliga material går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Klassificeringsgrupper för farliga material**. På sidan för **klassificeringsgrupper för farliga material** kan du skapa ett valfritt antal grupper och konfigurera var och en med hjälp av fälten som beskrivs i följande tabell.
 
 | Fält | beskrivning |
 |---|---|
@@ -137,7 +137,7 @@ Om du vill ställa in klassificeringsgrupper för farliga material går du till 
 
 ## <a name="hazardous-material-classes"></a><a name="classes"></a>Klasser för farliga material
 
-En klass för farligt material mappas vanligen till listan över klasser som finns i den förordning som du följer. Exempelvis amerikanska förordning CFR 49 listorna "klass 3" som brandfarliga och brännbara vätskor. Du kan ställa in vilka klasser som är relevanta för det material som du måste klassificera.
+En klass för farligt material mappas vanligen till listan över klasser som finns i den förordning som du följer. Exempelvis amerikanska förordning CFR 49 listorna "klass 3" som brandfarliga och brännbara vätskor. Du kan konfigurera vilka klasser som är relevanta för det material som du måste klassificera.
 
 Varje klass tilldelas en materialinställning i materiallistan som hör till förordningen. Du ska tilldela varje frisläppt artikel en klass för att beskriva den farliga karaktären hos en produkt.
 
@@ -149,7 +149,7 @@ Klasser för farliga material arbetar tillsammans med avdelningar, grupper och s
 - Du kan använda farliga materialklasser tillsammans med [klassificeringsgrupper för farliga material](#classification-groups) att skapa en mall för koder för inställning av artiklar.
 - Du kan använda [samhanteringsgrupp för farliga material](#compatibility-groups) för att fastställa vilka klasser och avdelningar för farligt material som kan skickas tillsammans.
 
-Om du vill ställa in klasser för farliga material går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> klasser för farligt material**. På sidan för **klass för farliga material** kan du skapa ett valfritt antal klasser och konfigurera var och en med hjälp av fälten som beskrivs i följande tabell.
+Om du vill konfigurera klasser för farliga material går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> klasser för farligt material**. På sidan för **klass för farliga material** kan du skapa ett valfritt antal klasser och konfigurera var och en med hjälp av fälten som beskrivs i följande tabell.
 
 | Fält | beskrivning |
 |---|---|
@@ -170,7 +170,7 @@ Avdelningar för farliga material arbetar tillsammans med klasser, grupper och s
 - Du kan använda avdelningar för farliga material tillsammans med [klassificeringsgrupper för farliga material](#classification-groups) att skapa en mall för koder för inställning av artiklar.
 - Du kan använda [samhanteringsgrupp för farliga material](#compatibility-groups) för att fastställa vilka klasser och avdelningar för farligt material som kan skickas tillsammans.
 
-Om du vill ställa in avdelningar för farliga material går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Avdelningar för farligt material**. På sidan för **Avdelningar för farliga material** kan du skapa ett valfritt antal avdelningar och konfigurera var och en med hjälp av fälten som beskrivs i följande tabell.
+Om du vill konfigurera avdelningar för farliga material går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Avdelningar för farligt material**. På sidan för **Avdelningar för farliga material** kan du skapa ett valfritt antal avdelningar och konfigurera var och en med hjälp av fälten som beskrivs i följande tabell.
 
 | Fält | beskrivning |
 |---|---|
@@ -184,7 +184,7 @@ Samhanteringsgrupp för farliga material för att fastställa vilka klasser och 
 
 Dessa inställningsdata är inte specifika för varje juridisk person. Därför kan du ha en gemensam uppsättning information om farligt material som delas mellan alla dina juridiska personer.
 
-Om du vill ställa in samhanteringsgrupper för farliga material går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Samhanteringsgrupp för farliga material**. På sidan för **Samhanteringsgrupp för farliga material** kan du skapa ett valfritt antal samhanteringsgrupper och konfigurera var och en med hjälp av fälten som beskrivs i följande underavsnitt.
+Om du vill konfigurera samhanteringsgrupper för farliga material går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Samhanteringsgrupp för farliga material**. På sidan för **Samhanteringsgrupp för farliga material** kan du skapa ett valfritt antal samhanteringsgrupper och konfigurera var och en med hjälp av fälten som beskrivs i följande underavsnitt.
 
 ### <a name="hazardous-material-compatibility-group-header"></a>Rubrik för samhanteringsgrupp för farligt material
 
@@ -218,13 +218,13 @@ Du kommer att använda [materialkoder](#hazmat-codes) för att upprätta gemensa
 
 Specifikationen *beredskapsprogram för farliga material* anger vad som ska göras om något blir fel medan en produkt som innehåller ett visst farligt material transporteras.
 
-Om du vill ställa in värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Beredskapsprogram för farliga material**. På sidan **Beredskapsprogram för farliga material** kan du skapa ett valfritt antal värden och konfigurera var och en med en klassificeringskod och en kort beskrivning.
+Om du vill konfigurera värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Beredskapsprogram för farliga material**. På sidan **Beredskapsprogram för farliga material** kan du skapa ett valfritt antal värden och konfigurera var och en med en klassificeringskod och en kort beskrivning.
 
 ### <a name="hazardous-material-identification"></a><a name="identification"></a>Identifiering för farligt material
 
 Specifikationen *identifiering av farligt material* identifierar ett farligt materialsklass eller karaktär. Värdet är vanligtvis en kod som baseras på en FN-standard (FN). Varje klass identifieras med en kod och en beskrivning och den kan också ange gränser för transportmetoder. Om du till exempel vill identifiera ett brandfarligt objekt eller material skapar du en klass för farligt material som använder koden *FL* och beskrivningen *brandfarligt*. Du anger även att klassen inte får transporteras med flyg.
 
-Om du vill ställa in värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Identifiering av farliga material**. På sidan för **Identifiering för farliga material** kan du skapa ett valfritt antal värden och konfigurera var och en med hjälp av fälten som beskrivs i följande tabell.
+Om du vill konfigurera värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Identifiering av farliga material**. På sidan för **Identifiering för farliga material** kan du skapa ett valfritt antal värden och konfigurera var och en med hjälp av fälten som beskrivs i följande tabell.
 
 | Fält | beskrivning |
 |---|---|
@@ -237,49 +237,49 @@ Om du vill ställa in värden för denna specifikation går du till **Produktinf
 
 Specifikationen *Etikett för farligt material* identifierar etiketten för farligt gods som måste användas på relevanta frisläppta produkter. Etiketterna beskriver hur produkten ska hanteras. Du har till exempel en produkt som innehåller en giftig gas. I det här fallet skapar du en etikettkod som representerar den giftiga gasens etikett. Du skapar också affärsprocessen så att den slår upp det här värdet när du levererar produkter.
 
-Om du vill ställa in värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Etikett för farliga material**. På sidan **Etikett för farliga material** kan du skapa ett valfritt antal etiketter och konfigurera var och en med en identifieringskod och en kort beskrivning.
+Om du vill konfigurera värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Etikett för farliga material**. På sidan **Etikett för farliga material** kan du skapa ett valfritt antal etiketter och konfigurera var och en med en identifieringskod och en kort beskrivning.
 
 ### <a name="hazardous-material-packing-descriptions"></a><a name="packing-description"></a>Förpackningsbeskrivningar för farligt material
 
 Specifikationen *Förpackningsbeskrivningar av farligt material* anger hur en farligt artikel måste packas. Den kan till exempel behöva förpackas i en viss typ av ståltrumma eller någon annan typ av speciell förpackning.
 
-Om du vill ställa in värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Förpackningsbeskrivningar av farligt material**. På sidan **Förpackningsbeskrivningar av farligt material** kan du skapa ett valfritt antal förpackningsbeskrivningar och konfigurera var och en med en identifieringskod och en kort beskrivning.
+Om du vill konfigurera värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Förpackningsbeskrivningar av farligt material**. På sidan **Förpackningsbeskrivningar av farligt material** kan du skapa ett valfritt antal förpackningsbeskrivningar och konfigurera var och en med en identifieringskod och en kort beskrivning.
 
 ### <a name="hazardous-material-packing-group"></a><a name="packing-group"></a>Förpackningsgrupp för farligt material
 
 Specifikationen *Förpackningsgrupp för farliga material* identifierar förpackningsgruppen för en farlig artikel. I förpackningsgruppen kan du definiera en kod och en beskrivning som anger hur farliga materialartiklar måste packas under transport eller leverans. Förpackningsgruppen tilldelas artikeln via sidan **artikel för farligt material**.
 
-Om du vill ställa in värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Förpackningsgrupp för farliga material**. På sidan **Förpackningsgrupp för farligt material** kan du skapa ett valfritt antal förpackningsgrupper och konfigurera var och en med en identifieringskod och en kort beskrivning.
+Om du vill konfigurera värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Förpackningsgrupp för farliga material**. På sidan **Förpackningsgrupp för farligt material** kan du skapa ett valfritt antal förpackningsgrupper och konfigurera var och en med en identifieringskod och en kort beskrivning.
 
 ### <a name="hazardous-material-packing-instruction"></a><a name="packing-instruction"></a>Förpackningsinstruktion för farligt material
 
 Specifikationen *Förpackningsanvisning för farligt material* beskriver de förpackningsanvisningar som måste följas när en viss farlig artikel förbereds för flygtransport.
 
-Om du vill ställa in värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Förpackningsanvisningar för farligt material**. På sidan **Förpackningsanvisningar av farligt material** kan du skapa ett valfritt antal förpackningsidentifierare och konfigurera var och en med en identifieringskod och en kort beskrivning.
+Om du vill konfigurera värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Förpackningsanvisningar för farligt material**. På sidan **Förpackningsanvisningar av farligt material** kan du skapa ett valfritt antal förpackningsidentifierare och konfigurera var och en med en identifieringskod och en kort beskrivning.
 
 ### <a name="hazardous-material-stowage"></a><a name="stowage"></a>Stuvning av farligt material
 
 Specifikationen *Lagring av farligt material* anger hur en produkt måste lagras på ett fartyg när den transporteras med sjötransport.
 
-Om du vill ställa in värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Lagring av farliga material**. På sidan **Lagring av farliga material** kan du skapa ett valfritt antal lagringsidentifierare och konfigurera var och en med en identifieringskod och en kort beskrivning.
+Om du vill konfigurera värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Lagring av farliga material**. På sidan **Lagring av farliga material** kan du skapa ett valfritt antal lagringsidentifierare och konfigurera var och en med en identifieringskod och en kort beskrivning.
 
 ### <a name="hazardous-material-transport-category"></a><a name="transport-category"></a>Transportkategori för farligt material
 
 Specifikationen *transportkategorier för farliga material* används vanligtvis för att gruppera likadana farliga produkter i rapporter. Transportkategorier används t.ex. i rapporten **Leveranssammanfattning** som du kan skriva ut från lagerleveransposten.
 
-Om du vill ställa in värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Transportkategori för farliga material**. På sidan **Transportkategori för farliga material** kan du skapa ett valfritt antal transportkategori och konfigurera var och en med ett visningsnamn och en kort beskrivning.
+Om du vill konfigurera värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Transportkategori för farliga material**. På sidan **Transportkategori för farliga material** kan du skapa ett valfritt antal transportkategori och konfigurera var och en med ett visningsnamn och en kort beskrivning.
 
 ### <a name="hazardous-material-technical-name"></a><a name="technical-name"></a>Tekniskt namn på farligt material
 
 Specifikationen *Tekniskt namn för farliga material* kan användas för att ge ett vanligt eller internt företagsnamn som beskriver varje material.
 
-Om du vill ställa in värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Tekniskt namn för farliga material**. På sidan **Tekniskt namn för farliga material** kan du skapa ett valfritt antal tekniska namn och konfigurera var och en med ett visningsnamn och en kort beskrivning.
+Om du vill konfigurera värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Tekniskt namn för farliga material**. På sidan **Tekniskt namn för farliga material** kan du skapa ett valfritt antal tekniska namn och konfigurera var och en med ett visningsnamn och en kort beskrivning.
 
 ### <a name="hazardous-material-tunnel"></a><a name="tunnel"></a>Tunnel för farligt material
 
 Specifikationen *Tunnel för farligt material* begränsar vilka typer av tunnlar som ett farligt material kan transporteras genom att identifiera vilka typer av tunnlar som måste användas. Tunnelkategorier fastställs i tillämpliga förordningar för transport av farligt material. Denna specifikation gäller vanligtvis endast för vägtransporter.
 
-Om du vill ställa in värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Tunnel för farliga material**. På sidan **Tunnel för farliga material** kan du skapa ett valfritt antal tunnelidentifierare och konfigurera var och en med en identifieringskod och en kort beskrivning.
+Om du vill konfigurera värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Tunnel för farliga material**. På sidan **Tunnel för farliga material** kan du skapa ett valfritt antal tunnelidentifierare och konfigurera var och en med en identifieringskod och en kort beskrivning.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

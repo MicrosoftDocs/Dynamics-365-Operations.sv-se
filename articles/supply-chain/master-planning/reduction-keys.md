@@ -1,6 +1,6 @@
 ---
-title: Prognosreduceringnycklar
-description: Den här ämnet ger exempel som visar hur du ställer in en reduceringsnyckel. Den innehåller information om de olika reduceringsnyckelinställningarna och resultaten av varje nyckel. Du kan använda en reduceringsnyckel om du vill ange hur du ska minska prognosbehoven.
+title: Prognosreduceringsnycklar
+description: Denna artikel ger exempel som visar hur du konfigurerar en reduceringsnyckel. Den innehåller information om de olika reduceringsnyckelinställningarna och resultaten av varje nyckel. Du kan använda en reduceringsnyckel om du vill ange hur du ska minska prognosbehoven.
 author: t-benebo
 ms.date: 04/15/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 054eb28044e532ed2850cde21cb2f9fb5181ae02
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 5cf84598b731e9750e3cf79d312bf0bbf4f8bd81
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468990"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854280"
 ---
-# <a name="forecast-reduction-keys"></a>Prognosreduceringnycklar
+# <a name="forecast-reduction-keys"></a>Prognosreduceringsnycklar
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet innehåller information om de olika metoder som används för att minska prognosbehov. Det inkluderar exempel på resultatet av varje metod. Det förklarar även hur du skapar, konfigurerar och använder en prognosreduceringnyckel. Vissa metoder använder en prognosreduceringnyckel för att ange hur du ska minska prognosbehoven.
+Denna artikel innehåller information om de olika metoder som används för att minska prognosbehov. Det inkluderar exempel på resultatet av varje metod. Det förklarar även hur du skapar, konfigurerar och använder en prognosreduceringnyckel. Vissa metoder använder en prognosreduceringnyckel för att ange hur du ska minska prognosbehoven.
 
 ## <a name="methods-that-are-used-to-reduce-forecast-requirements"></a>Metoder som används för att minska prognosbehov
 
@@ -74,7 +74,7 @@ Ange följande rader på sidan **Reduceringsnycklar**.
 
 Du tilldelar reduceringsnyckeln till artikelns täckningsgrupp. Sedan på sidan **huvudplaner** i fältet **Metod som används för att minska prognosbehov** väljer du **procent - reduceringsnyckel**.
 
-I det här fallet om du kör prognosplanering den 1 januari förbrukas kraven på efterfrågeprognos enligt de procentsatser som du ställer in på sidan **Reduceringsnycklar**. Följande behovskvantiteter överförs till huvudplanen.
+I det här fallet om du kör prognosplanering den 1 januari förbrukas kraven på efterfrågeprognos enligt de procentsatser som du konfigurerar på sidan **Reduceringsnycklar**. Följande behovskvantiteter överförs till huvudplanen.
 
 | Månad                | Planerad orderkvantitet | Beräkning    |
 |----------------------|------------------------|----------------|
@@ -86,9 +86,9 @@ I det här fallet om du kör prognosplanering den 1 januari förbrukas kraven p�
 
 ### <a name="transactions--reduction-key"></a>Transaktioner - reduceringsnyckel
 
-Om du ställer in fältet **Metod som används för att minska prognosbehov** till *Transaktioner - reduceringsnyckel* reduceras prognosbehoven med de kvalificerade efterfrågetransaktioner som inträffar under de perioder som definieras av reduceringsnyckeln.
+Om du konfigurerar fältet **Metod som används för att minska prognosbehov** till *Transaktioner - reduceringsnyckel* reduceras prognosbehoven med de kvalificerade efterfrågetransaktioner som inträffar under de perioder som definieras av reduceringsnyckeln.
 
-Det kvalificerade behovet definieras i fältet **Minska prognos med** på sidan **Disponeringsgrupper**. Om du ställer in fältet **Minska prognos med** till *Order* beaktas endast försäljningsordertransaktioner som kvalificerade efterfrågan. Om du ställer in det till *Alla transaktioner* beaktas alla icke-koncerninterna lagertransaktioner som kvalificerade efterfrågan. Om koncerninterna order ska inkluderas när prognosen minskas ställer du in alternativet **Inkludera koncerninterna order** till *Ja*.
+Det kvalificerade behovet definieras i fältet **Minska prognos med** på sidan **Disponeringsgrupper**. Om du konfigurerar fältet **Minska prognos med** till *Order* beaktas endast försäljningsordertransaktioner som kvalificerade efterfrågan. Om du konfigurerar det till *Alla transaktioner* beaktas alla icke-koncerninterna lagertransaktioner som kvalificerade efterfrågan. Om koncerninterna order ska inkluderas när prognosen minskas ställer du in alternativet **Inkludera koncerninterna order** till *Ja*.
 
 Prognosreducering startar med den första (tidigaste) efterfrågeprognosposten i perioden för reduceringsnyckeln. Om kvantiteten för kvalificerade lagertransaktioner är större än kvantiteten på efterfrågeprognosraderna i samma reduceringsnyckelperiod, används saldot för lagertransaktionskvantiteten för att minska efterfrågeprognoskvantiteten under den föregående perioden (om det finns en oförbrukad prognos).
 
@@ -202,9 +202,9 @@ Därför skapas följande planerade order.
 | 5 januari                        | 300      | Prognosbehovperioden 5 januari till 10 januari (= 500 – 200)  |
 | 12 januari                       | 1 000    | Prognosbehovperioden 12 januari till slutet                      |
 
-## <a name="create-and-set-up-a-forecast-reduction-key"></a>Skapa och ställa in en prognosreduceringsnyckel
+## <a name="create-and-set-up-a-forecast-reduction-key"></a>Skapa och konfigurera en prognosreduceringsnyckel
 
-En prognosreduceringsnyckel används i metoderna **transaktioner - reduceringsnyckel** och **procent - reduceringsnyckel** för att minska prognosbehoven. Följ dessa steg om du vill skapa och ställa in en reduceringsnyckel.
+En prognosreduceringsnyckel används i metoderna **transaktioner - reduceringsnyckel** och **procent - reduceringsnyckel** för att minska prognosbehoven. Följ dessa steg om du vill skapa och konfigurera en reduceringsnyckel.
 
 1. Gå till **huvudplanering \> inställningar \> täckning \> reduceringsnycklar**.
 2. Skapa en reduceringsnyckel genom att välja **Nytt**.

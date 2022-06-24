@@ -1,6 +1,6 @@
 ---
 title: Ignorera Word-innehållskontroller i genererade rapporter
-description: I det här avsnittet beskrivs hur du konfigurerar ett ER-format (elektronisk rapportering) för att generera rapporter som Microsoft Word-filer där innehållskontroller utelämnas.
+description: I den här artikeln beskrivs hur du konfigurerar ett ER-format (elektronisk rapportering) för att generera rapporter som Microsoft Word-filer där innehållskontroller utelämnas.
 author: NickSelin
 ms.date: 02/11/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 2c2d79c9ea36c42cfc0f6ba0d3c81d063d8d9446
-ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
+ms.openlocfilehash: e11b697b78c89a1758fa9e81c901bd29fe281539
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782189"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882125"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Ignorera Word-innehållskontroller i genererade rapporter
 

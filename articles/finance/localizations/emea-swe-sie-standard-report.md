@@ -1,6 +1,6 @@
 ---
 title: Exportera ekonomisk information för revisorer i Sverige
-description: Det här avsnittet innehåller information om SIE standardrapporten för Sverige.
+description: Den här artikeln innehåller information om SIE standardrapporten för Sverige.
 author: ShylaThompson
 ms.date: 04/05/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Sweden
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2581a1658890dd13354627cc5e4052a58e531e411c2a2cd73f10783307612264
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3e6d0de0cb4f68777b2e45f7e70b483cbb325f4c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781685"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874342"
 ---
 # <a name="export-financial-information-for-auditors-in-sweden"></a>Exportera ekonomisk information för revisorer i Sverige
 

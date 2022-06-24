@@ -1,7 +1,7 @@
 ---
 title: Ställ in huvudplanering
-description: Det här ämnet beskriver olika viktiga strategier och parametrar som används för att ställa in huvudplaneringen.
-author: ChristianRytt
+description: Denna artikel beskriver olika viktiga strategier och parametrar som används för att konfigurera huvudplaneringen.
+author: t-benebo
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 6d33fd53dd088ae4c6b4680d2604f783a3e1a5a0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: effdefcf8326babaa89d7de4b28a86bbef7280f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580730"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888569"
 ---
 # <a name="set-up-master-planning"></a>Ställ in huvudplanering
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet beskriver olika viktiga strategier och parametrar som används för att ställa in huvudplaneringen. Den innehåller en översikt över de typer av planer som används vid huvudplanering och förklarar vilken planeringsstrategi du ska använda, beroende på dina affärsbehov. Här beskrivs också de huvudsakliga parametrar som påverkar planen och förklarar hur dessa parametrar påverkar planerade order som föreslås.
+Denna artikel beskriver olika viktiga strategier och parametrar som används för att konfigurera huvudplaneringen. Den innehåller en översikt över de typer av planer som används vid huvudplanering och förklarar vilken planeringsstrategi du ska använda, beroende på dina affärsbehov. Här beskrivs också de huvudsakliga parametrar som påverkar planen och förklarar hur dessa parametrar påverkar planerade order som föreslås.
 
 ## <a name="types-of-master-plans"></a>Typer av huvudplaner
 
@@ -63,7 +63,7 @@ Om du måste göra en simulering kan planen köras igen för de artiklar som kr�
 
 ### <a name="two-plan-strategy"></a>Strategi för två planer
 
-För strategin med två planer använder du en statisk plan och en annan dynamisk plan. Strategin för två planer används vanligtvis för konfigurera enligt order-scenarier och tillverka enligt order-scenarier där du måste göra simuleringar av försäljningsorder och beräkna exakta leveransdatum för försäljningsorder, men beräkningarna får inte påverka vardagliga operationer. Simuleringarna görs alltid i den dynamiska planen. Strategin för två planer är till exempel användbar i bil- och OEM-industrin.
+För strategin med två planer använder du en statisk plan och en annan dynamisk plan. Strategin för två planer används vanligtvis för konfigurera enligt order-scenarier och tillverka enligt order-scenarier där du måste göra simuleringar av försäljningsorder och beräkna exakta leveransdatum för försäljningsorder, men beräkningarna får inte påverka vardagliga åtgärder. Simuleringarna görs alltid i den dynamiska planen. Strategin för två planer är till exempel användbar i bil- och OEM-industrin.
 
 För strategin med två planer kan leveransdatumkontrollen användas med CTP. När CTP används, utlöser den automatiskt körningen i den dynamiska planen.
 
@@ -71,7 +71,7 @@ För strategin med två planer kan leveransdatumkontrollen användas med CTP. N�
 
 Du kan skapa planer på sidan **huvudplaner** (**huvudplanering \> inställningar \> planer \> huvudplaner**).
 
-Du kan ange vilka planer som ska användas för den statiska planen och den dynamiska planen genom att ställa in fälten **Aktuell statisk huvudplan** och **Aktuell dynamisk huvudplan** på sidan **Huvudplaneringsparametrar** (**Huvudplanering \> Inställningar \> Huvudplaneringsparametrar**). Om du vill använda en strategi för en plan väljer du samma plan i fälten **Aktuell statisk huvudplan** och **Aktuell dynamisk huvudplan**.
+Du kan ange vilka planer som ska användas för den statiska planen och den dynamiska planen genom att konfigurera fälten **Aktuell statisk huvudplan** och **Aktuell dynamisk huvudplan** på sidan **Huvudplaneringsparametrar** (**Huvudplanering \> Inställningar \> Huvudplaneringsparametrar**). Om du vill använda en strategi för en plan väljer du samma plan i fälten **Aktuell statisk huvudplan** och **Aktuell dynamisk huvudplan**.
 
 ## <a name="types-of-planning-methods"></a>Typer av planeringsmetoder
 
@@ -110,20 +110,20 @@ Du kan använda grovplaneringen för att ange en allmän uppskattning av produkt
 
 ### <a name="job-scheduling"></a>Finplanering
 
-Finplanering är en mer detaljerad planeringsmetod där varje operation delas in i sina individuella uppgifter eller jobb. Finplanering omfattar information om kapacitet. Den används som regel för att planera enskilda jobb för en omedelbar eller kortsiktig tidsram. Mer information om finplanering finns i [finplanering](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Finplanering är en mer detaljerad planeringsmetod där varje åtgärd delas in i sina individuella uppgifter eller jobb. Finplanering omfattar information om kapacitet. Den används som regel för att planera enskilda jobb för en omedelbar eller kortsiktig tidsram. Mer information om finplanering finns i [finplanering](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="time-fences-in-days"></a>Frystidsgräns i dagar
 
 För varje plan kan du välja hur långt i framtiden de olika behoven och andra överväganden måste beräknas i huvudplaneringen. Perioden kallas för en *tidsgräns*. För bästa prestanda vid huvudplanering rekommenderar vi att du justerar olika tidsgränser för att uppfylla dina affärskrav. För varje plan hittar du tidsgränsen på snabbfliken **Frystidsgräns i dagar** på sidan **huvudplaner** (**huvudplanering \> inställningar \> planer \> huvudplaner**).
 
 > [!NOTE]
-> Tidsgränser anger hur långt i framtiden som olika krav och andra överväganden beräknas av huvudplanering. De tidsgränser som har valts på den här sidan kommer att åsidosätta tidsgränsen som definierats i disponeringsgruppen. Detta innebär att ange ett tidsgränsalternativ till Ja och definition av dagar kommer att åsidosätta den tidsgräns som definierats i disponeringsgruppen. När du ställer in till Nej, kommer tidsgränsen att definieras i disponeringsgruppen. Slutligen, om du inte vill använda ett alternativ (till exempel om du inte vill använda åtgärdsmeddelanden), ställer du in det på **Ja** och anger sedan tidsgränsen till **0** (noll) dagar.
+> Tidsgränser anger hur långt i framtiden som olika krav och andra överväganden beräknas av huvudplanering. De tidsgränser som har valts på den här sidan kommer att åsidosätta tidsgränsen som definierats i disponeringsgruppen. Detta innebär att ange ett tidsgränsalternativ till Ja och definition av dagar kommer att åsidosätta den tidsgräns som definierats i disponeringsgruppen. När du konfigurerar till Nej, kommer tidsgränsen att definieras i disponeringsgruppen. Slutligen, om du inte vill använda ett alternativ (till exempel om du inte vill använda åtgärdsmeddelanden), ställer du in det på **Ja** och anger sedan tidsgränsen till **0** (noll) dagar.
 
 ### <a name="coverage"></a>Disponering
 
 Tidsgränsen för disponering representerar planeringsperioden eller hur långt upp efter frågeställningen ska inkluderas. Med andra ord anger den planeringshorisonten.
 
-Genom att ställa in alternativet **Disponering** till **Ja** kan du åsidosätta den tidsgräns för disponering som har definierats för artikeln under huvudplaneringen. I detta fall anger du nu antalet dagar som huvudplaneringens beräkning ska täcka behoven. Tidsgränsen för disponering beräknas framåt från dagens datum. Behov som ligger före dagens datum bearbetas alltid.
+Genom att konfigurera alternativet **Disponering** till **Ja** kan du åsidosätta den tidsgräns för disponering som har definierats för artikeln under huvudplaneringen. I detta fall anger du nu antalet dagar som huvudplaneringens beräkning ska täcka behoven. Tidsgränsen för disponering beräknas framåt från dagens datum. Behov som ligger före dagens datum bearbetas alltid.
 
 > [!NOTE]
 > För bästa prestanda vid huvudplanering rekommenderar vi att du justerar olika tidsgränser för disponering till din planeringshorisont.
@@ -132,31 +132,31 @@ Genom att ställa in alternativet **Disponering** till **Ja** kan du åsidosätt
 
 Frystidsgränsen representerar perioden då befintliga planerade order inte ändras när en ny huvudplan körs. Planerade order fryses och inga nya planerade order kommer att föreslås.
 
-Genom att ställa in alternativet **Frysa** till **Ja** kan du åsidosätta den tidsgräns för frysning som har definierats för artikeln under huvudplaneringen. I detta fall anger du antalet dagar då du vill frysa planeringsaktiviteterna. Kom ihåg att under denna period genereras inga nya planerade order och befintliga planerade order kan inte ändras.
+Genom att konfigurera alternativet **Frysa** till **Ja** kan du åsidosätta den tidsgräns för frysning som har definierats för artikeln under huvudplaneringen. I detta fall anger du antalet dagar då du vill frysa planeringsaktiviteterna. Kom ihåg att under denna period genereras inga nya planerade order och befintliga planerade order kan inte ändras.
 
 ### <a name="firming"></a>Bekräftelse
 
 Bekräftad tidsgräns anger den tidshorisont då planerade order automatiskt konverteras till produktions- och inköpsorder. Den här processen kallas även *automatisk bekräftelse av planerade order*.
 
-Genom att ställa in alternativet **Bekräftelse** till **Ja** kan du åsidosätta den tidsgräns för bekräftelse som har definierats för artikeln under huvudplaneringen. I detta fall anger du antalet dagar då planerade inköps- och produktionsorder automatiskt bekräftas. Bekräftad tidsgräns beräknas framåt från datumet för huvudplaneringen. Automatisk bekräftelse av en planerad inköpsorder kan endast äga rum om artikel kopplades till en leverantör.
+Genom att konfigurera alternativet **Bekräftelse** till **Ja** kan du åsidosätta den tidsgräns för bekräftelse som har definierats för artikeln under huvudplaneringen. I detta fall anger du antalet dagar då planerade inköps- och produktionsorder automatiskt bekräftas. Bekräftad tidsgräns beräknas framåt från datumet för huvudplaneringen. Automatisk bekräftelse av en planerad inköpsorder kan endast äga rum om artikel kopplades till en leverantör.
 
 ### <a name="forecast-plan"></a>Prognosplan
 
 Tidsgränsen för prognosplan anger hur långt in i framtiden huvudplaneringen skapar planerade order för artiklar med prognostiserad efterfrågan.
 
-Genom att ställa in alternativet **Prognosplan** till **Ja** kan du åsidosätta den tidsgräns för prognosplan som har definierats för artikeln under huvudplaneringen. I detta fall anger du det antal dagar då försäljningsprognosen från prognosplanen ska inkluderas i huvudplaneringen.
+Genom att konfigurera alternativet **Prognosplan** till **Ja** kan du åsidosätta den tidsgräns för prognosplan som har definierats för artikeln under huvudplaneringen. I detta fall anger du det antal dagar då försäljningsprognosen från prognosplanen ska inkluderas i huvudplaneringen.
 
 ### <a name="capacity"></a>Kapacitet
 
 Kapacitetstidsgränsen anger hur långt i framtiden som systemet tar hänsyn till resursens maximala kapacitet när order planeras. Med andra ord schemalägger planen produktionsordern med hjälp av produktionsflödet för artiklarna och tar hänsyn till produktionsflödets resurser och den maximala kapaciteten för varje resurs.
 
-Genom att ställa in alternativet **Kapacitet** till **Ja** kan du åsidosätta den kapacitetstidsgräns som har definierats för artikeln under huvudplaneringen. I detta fall anger du antalet dagar då kapacitet för planerade tillverkningsorder ska planeras. I huvudplaneringen används artikelns aktiva produktionsflöde och tidsplaneringen görs bakåt från behovsdatum. Om behovsdatum för en planerad tillverkningsorder hamnar utanför kapacitetstidsgränsen bestäms produktionstiden med ledning av artikelns leveranstid. Kapacitetstidsgränsen beräknas framåt från dagens datum.
+Genom att konfigurera alternativet **Kapacitet** till **Ja** kan du åsidosätta den kapacitetstidsgräns som har definierats för artikeln under huvudplaneringen. I detta fall anger du antalet dagar då kapacitet för planerade tillverkningsorder ska planeras. I huvudplaneringen används artikelns aktiva produktionsflöde och tidsplaneringen görs bakåt från behovsdatum. Om behovsdatum för en planerad tillverkningsorder hamnar utanför kapacitetstidsgränsen bestäms produktionstiden med ledning av artikelns leveranstid. Kapacitetstidsgränsen beräknas framåt från dagens datum.
 
 ### <a name="action-message"></a>Åtgärdsmeddelande
 
 Åtgärdsmeddelanden ger förslag på ändringar som kan göras av den befintliga leveransordern för att optimera leveransplaneringen. De kanske till exempel rekommenderar att du förflyttar eller skjuter upp order, eller att du ökar eller minskar orderantalet.
 
-Genom att ställa in alternativet **Åtgärdsmeddelanden** till **Ja** kan du åsidosätta den åtgärdstidsgräns som har definierats för artikeln under huvudplaneringen. I detta fall anger du antalet dagar som huvudplaneringen ska generera åtgärdsmeddelanden för behov. Åtgärdstidsgränsen beräknas framåt från dagens datum.
+Genom att konfigurera alternativet **Åtgärdsmeddelanden** till **Ja** kan du åsidosätta den åtgärdstidsgräns som har definierats för artikeln under huvudplaneringen. I detta fall anger du antalet dagar som huvudplaneringen ska generera åtgärdsmeddelanden för behov. Åtgärdstidsgränsen beräknas framåt från dagens datum.
 
 Mer information om åtgärdsmeddelanden finns i [åtgärdsmeddelanden](/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
 
@@ -171,15 +171,15 @@ Om en planerad order inte kan uppfyllas för det begärda datumet, planeras den 
 
 ### <a name="approved-requisitions-time-fence"></a>Godkänd rekvisitionstidsgräns
 
-Du kan ställa in huvudplaneringen för att skapa planerade order för rekvisitionbegäran. Ange alternativet **Inkludera rekvisitioner** till **Ja** på snabbfliken **allmänt** på sidan **huvudplaner**. När syftet med en godkänd rekvisition är lagerpåfyllnad, skapar huvudplaneringen automatiskt en motsvarande planerad order för att uppfylla den. Metoden lagerpåfyllnad bestäms av tillförselpolicyerna som har ställts in för artiklarna i organisationen. När en påfyllningsrekvisition har skapats och godkänts, krävs ingen ytterligare användareåtgärd.
+Du kan konfigurera huvudplaneringen för att skapa planerade order för rekvisitionbegäran. Ange alternativet **Inkludera rekvisitioner** till **Ja** på snabbfliken **allmänt** på sidan **huvudplaner**. När syftet med en godkänd rekvisition är lagerpåfyllnad, skapar huvudplaneringen automatiskt en motsvarande planerad order för att uppfylla den. Metoden lagerpåfyllnad bestäms av tillförselpolicyerna som har ställts in för artiklarna i organisationen. När en påfyllningsrekvisition har skapats och godkänts, krävs ingen ytterligare användareåtgärd.
 
-Genom att ställa in alternativet **Godkänd rekvisitionstidsgräns** till **Ja** på snabbfliken **Tidsgräns i dagar** kan du åsidosätta den godkända tidsgränsen för rekvisitioner som har definierats för artikeln under huvudplanering. I detta fall anger du antal förflutna dagar under vilka förfrågan från godkända rekvisitioner som har Påfyllnadssyfte inkluderat i huvudplaneringen. Du kan till exempel ange, om bara ouppfylld, förfallen efterfrågan från godkända rekvisitioner som har skapats under de senaste 10 dagarna, ska betraktas som har planerats för.
+Genom att konfigurera alternativet **Godkänd rekvisitionstidsgräns** till **Ja** på snabbfliken **Tidsgräns i dagar** kan du åsidosätta den godkända tidsgränsen för rekvisitioner som har definierats för artikeln under huvudplanering. I detta fall anger du antal förflutna dagar under vilka förfrågan från godkända rekvisitioner som har Påfyllnadssyfte inkluderat i huvudplaneringen. Du kan till exempel ange, om bara ouppfylld, förfallen efterfrågan från godkända rekvisitioner som har skapats under de senaste 10 dagarna, ska betraktas som har planerats för.
 
 ### <a name="sequencing"></a>Ordningsföljd
 
 Med hjälp av ordningsföljd kan planerade order ordnas baserat på ordningsföljden för de attribut som är kopplade till den färdiga produkten. Den används ofta för att förbereda tillverkningsorder för förpackning. Den kan till exempel användas för att packa lådor i en specifik sekvens, baserat på färg och storlek.
 
-Genom att ställa in alternativet **ordningsföljd** till **Ja** kan du ange hur långt operationerna eller jobben ska ställas i ordning. Kom ihåg att ju längre tidsgränsen är, desto längre tid tar huvudplaneringen att köra.
+Genom att konfigurera alternativet **ordningsföljd** till **Ja** kan du ange hur långt åtgärderna eller jobben ska ställas i ordning. Kom ihåg att ju längre tidsgränsen är, desto längre tid tar huvudplaneringen att köra.
 
 ### <a name="calculated-delays"></a>Beräknade fördröjningar
 
@@ -191,7 +191,7 @@ Fördröjningsalternativ hjälper till att garantera att beställningarna har m�
 - **Lägg till den beräknade fördröjningen för behovsdatumet** (under **Planerad överföring**) – Ange det här alternativet till **Ja** för att lägga till den beräknade fördröjningen på behoven.
 - **Lägg till den beräknade fördröjningen för behovsdatumet** (under **Planerad kanban**) – Ange det här alternativet till **Ja** för att lägga till den beräknade fördröjningen på behoven.
 
-När du ställer in alternativet **Lägg till den beräknade fördröjningen för behovsdatumet** till **Ja**  för att lägga till fördröjningar i behoven, tar systemet hänsyn till resursernas kapacitet och skapar genomförbara planerade order Vid omberäkningen av planerade orderdatum ökas körningstiden för huvudplaneringen. Om du inte behöver använda fördröjningar ställer du därför in alternativen på **nej**.
+När du konfigurerar alternativet **Lägg till den beräknade fördröjningen för behovsdatumet** till **Ja**  för att lägga till fördröjningar i behoven, tar systemet hänsyn till resursernas kapacitet och skapar genomförbara planerade order Vid omberäkningen av planerade orderdatum ökas körningstiden för huvudplaneringen. Om du inte behöver använda fördröjningar ställer du därför in alternativen på **nej**.
 
 ## <a name="positive-and-negative-days"></a>Positiva och negativa dagar
 
@@ -213,7 +213,7 @@ Du har till exempel en försäljningsorder för en artikel som är 15 dagar fr�
 
 De negativa dagarna påverkar även prestanda för huvudplaneringen. Om de negativa dagarna är inställda på ett högt antal genereras många åtgärdsmeddelanden.
 
-Vi rekommenderar att du ställer in de negativa dagarna till ett tal som är mindre än produktionstiden för artikeln.
+Vi rekommenderar att du konfigurerar de negativa dagarna till ett tal som är mindre än produktionstiden för artikeln.
 
 ### <a name="dynamic-negative-days"></a>Dynamiska negativa dagar
 

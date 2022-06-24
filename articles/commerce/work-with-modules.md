@@ -1,6 +1,6 @@
 ---
 title: Arbeta med moduler
-description: I det här avsnittet beskrivs hur och när du ska använda moduler i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur och när du ska använda moduler i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ce16aa98a37cd5dec60bcdbf86f59f74810da9755a6d3514bdd3e38a21afb748
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c393f1e619647795a5ae8da3a78500c1678da9f6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728274"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860202"
 ---
 # <a name="work-with-modules"></a>Arbeta med moduler
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur och när du ska använda moduler i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur och när du ska använda moduler i Microsoft Dynamics 365 Commerce.
 
 Moduler är logiska byggblock som utgör sidans struktur och har olika syfte och omfång. Vissa moduler är behållare på hög nivå, och de är bara avsedda att innehålla och organisera andra moduler (underordnade moduler). Andra moduler, t.ex. en enkel bildplaceringsmodul, har ett mycket specifikt syfte. Andra moduler, till exempel en karusellmodul, ligger någonstans mellan dessa två kategorier.
 
@@ -151,7 +151,7 @@ Om du vill konfigurera en behållarmodul på en sida följer du stegen nedan.
 
 1. Välj en behållarmodul på sidan (t.ex. en karusell eller en flytande behållarmodul).
 1. I egenskapsrutan till höger expanderar du de kapslade kontrollerna genom att markera rubrikerna och ange önskade kontrollvärden.
-1. I dispositionsfönstret till vänster väljer du ellipsknappen bredvid namnet på antingen behållaren eller valfri plats i behållaren och välj sedan **Lägg till modul**. Lägg sedan till underordnade moduler i den valda behållaren. Mer information finns i avsnitt [Arbeta med moduler modul](#add-a-module) tidigare i det här avsnittet.
+1. I dispositionsfönstret till vänster väljer du ellipsknappen bredvid namnet på antingen behållaren eller valfri plats i behållaren och välj sedan **Lägg till modul**. Lägg sedan till underordnade moduler i den valda behållaren. Mer information finns i avsnittet [Arbeta med moduler](#add-a-module) tidigare i denna artikel.
 1. Om det finns flera underordnade moduler på samma nivå i en överordnad behållare kan du ändra deras visningsordning i den överordnade behållaren. Välj ellipsknappen för en modul och använd sedan knapparna uppåtpil och nedåtpil.
 
 ## <a name="additional-resources"></a>Ytterligare resurser

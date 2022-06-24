@@ -1,6 +1,6 @@
 ---
 title: Få åtkomst till programmets metadata med hjälp av ER-konfiguration
-description: Det här avsnittet beskriver hur en användare av Regulatory Configuration Service kan utforma en ny modellmappning för elektronisk rapportering genom att använda metadata.
+description: Den här artikeln beskriver hur en användare av Regulatory Configuration Service kan utforma en ny modellmappning för elektronisk rapportering genom att använda metadata.
 author: NickSelin
 ms.date: 06/28/2019
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6ad175f81edcf6b21927d85927c42a3398a0286b4a766e06c88a61952384f75e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76e31e08cafb06cb2e8508c29f6e03d2559ebeb6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754352"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883666"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Få åtkomst till programmets metadata med hjälp av ER-konfiguration
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd192a7718ac4fd8bcb636ede6c005ca29ee5f08
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: eb76c415da87d421b8135a93b84f4e905f01e70d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811965"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847463"
 ---
 # <a name="improve-performance-of-er-solutions-by-reducing-the-number-of-table-fields-that-are-fetched-at-runtime"></a>Förbättra prestandan för ER-lösningar genom att minska antalet registerfält som hämtas under körning
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811965"
 
 Du kan designa [elektronisk rapportering](general-electronic-reporting.md) (ER) [format](er-overview-components.md#format-components-for-outgoing-electronic-documents) som skapar utgående dokument i olika format. När ett dokument skapas anropar ett ER-format datakällor som har konfigurerats i en motsvarande [ER-modellmappning](er-overview-components.md#model-mapping-component). Om du vill konfigurera åtkomst till programregister, frågor eller entiteter för att hämta poster kan du använda ER-datakällor av typen *Registerposter*. Datakällan i typen *registerpost* hämtar som standardvärdena för alla fält i de begärda posterna. Du kan dock konfigurera den här typen av datakälla så att den bara hämtar de fältvärden som krävs för det körande ER-formatet. Den här konfigurationen minskar minnesförbrukningen på programservern som utför datahämtning och ytterligare post cachelagring.
 
-Slutför exemplet i det här avsnittet om du vill veta mer om hur du begränsar listan med hämtade fält med datakällor för *registerposter*.
+Slutför exemplet i den här artikeln om du vill veta mer om hur du begränsar listan med hämtade fält med datakällor för *registerposter*.
 
 ## <a name="example-reduce-the-number-of-table-fields-that-are-fetched-at-runtime"></a>Exempel: Minska antalet registerfält som hämtas vid körning
 

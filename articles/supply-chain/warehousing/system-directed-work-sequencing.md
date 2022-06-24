@@ -1,6 +1,6 @@
 ---
-title: Systemstyrd arbetssekvensering
-description: I det här avsnittet finns information om hur du dirigerar arbetssekvensering. Med den här funktionen kan du sortera och filtrera arbetsorder som systemet visar för användare för körning. Det är praktiskt i scenarier där det krävs fler kriterier för att köra plockningsprocessen för lager.
+title: Systemstyrd arbetsordningsföljd
+description: I denna artikel finns information om hur systemet dirigerar arbetssekvensering. Med den här funktionen kan du sortera och filtrera arbetsorder som systemet visar för användare för körning. Det är praktiskt i scenarier där det krävs fler kriterier för att köra plockningsprocessen för lager.
 author: Mirzaab
 ms.date: 07/03/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577826"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849138"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemstyrd arbetssekvensering
 
@@ -26,7 +26,7 @@ ms.locfileid: "7577826"
 
 Systemstyrd arbetssekvensering låter dig sortera och filtrera arbetsorder som systemet visar för användare för körning. Det är praktiskt i situationer där ytterligare kriterier (t.ex. leveranstid, plockningszon, platsprofil eller en kombination av olika kriterier) krävs för att köra lagerplockningsprocessen.
 
-Den här funktionen utökar den aktuella systembaserade plockningsfunktionen genom att lägga till en systemriktad frågeorder där användarna kan ställa in en sekvens och en eller flera frågor som ska utvärdera alla arbetsorder som skapas. Endast arbetsorder som uppfyller de kriterier som anges i inställningarna för menyalternativet för mobil enhet hämtas och presenteras.
+Den här funktionen utökar den aktuella systembaserade plockningsfunktionen genom att lägga till en systemriktad frågeorder där användarna kan konfigurera en sekvens och en eller flera frågor som ska utvärdera alla arbetsorder som skapas. Endast arbetsorder som uppfyller de kriterier som anges i inställningarna för menyalternativet för mobil enhet hämtas och presenteras.
 
 Denna funktion gör det enklare att optimera lagerplockningsprocesserna när de identifierar arbetsorder som matchar de angivna villkoren, tilldelar dem till rätt menyalternativ för mobila enheter och visar dem sedan till en arbetare, baserat på en viss färdighetsuppsättning, plockningsutrustning eller annat behov.
 
@@ -44,7 +44,7 @@ Innan du kan använda funktionen systemstyrd arbetssekvensering måste den aktiv
 
 ### <a name="make-demo-data-available"></a>Gör demodata tillgängliga
 
-För att arbeta igenom scenariot genom att använda värdena som presenteras i det här ämnet måste du arbeta på ett system där standarddemodata är installerat. Dessutom måste du välja den **USMF** juridiska personen. Scenariot använder lagerställe *51* från demodata.
+För att arbeta igenom scenariot genom att använda värdena som presenteras i denna artikel måste du arbeta på ett system där standarddemodata finns installerat. Dessutom måste du välja den **USMF** juridiska personen. Scenariot använder lagerställe *51* från demodata.
 
 > [!IMPORTANT]
 > Innan du släpper order till distributionslagret måste du se till att plockplatserna har tillräckligt med lager för alla artiklar på order.
@@ -198,7 +198,7 @@ Därefter frigörs varje försäljningsorder till lagerstället så att det utg�
     - **Artikelnummer:** *M9200*
     - **Kvantitet:** *5*
 
-1. Välj **Lägg till rad** för att lägga till en andra rad och ställa in följande värden:
+1. Välj **Lägg till rad** för att lägga till en andra rad och konfigurera följande värden:
 
     - **Artikelnummer:** *M9201*
     - **Kvantitet:** *1*
@@ -220,7 +220,7 @@ Därefter frigörs varje försäljningsorder till lagerstället så att det utg�
     - **Artikelnummer:** *M9200*
     - **Kvantitet:** *7*
 
-1. Välj **Lägg till rad** för att lägga till en andra rad och ställa in följande värden:
+1. Välj **Lägg till rad** för att lägga till en andra rad och konfigurera följande värden:
 
     - **Artikelnummer:** *M9202*
     - **Kvantitet:** *8*
@@ -242,7 +242,7 @@ Därefter frigörs varje försäljningsorder till lagerstället så att det utg�
     - **Artikelnummer:** *M9200*
     - **Kvantitet:** *25*
 
-1. Välj **Lägg till rad** för att lägga till en andra rad och ställa in följande värden:
+1. Välj **Lägg till rad** för att lägga till en andra rad och konfigurera följande värden:
 
     - **Artikelnummer:** *M9202*
     - **Kvantitet:** *10*

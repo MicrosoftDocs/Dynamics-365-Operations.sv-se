@@ -1,6 +1,6 @@
 ---
 title: Periodiska kredithanteringsuppgifter
-description: I det här avsnittet beskrivs de periodiska uppgifter som är en del i processen för hantering av kreditgränser för kunder.
+description: I den här artikeln beskrivs de periodiska uppgifter som är en del i processen för hantering av kreditgränser för kunder.
 author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 53b7cd00b3287f18ba65391842ac259ab2434b86
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 9ad72463acba301f7fc931f9fe316a9a9758922e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735448"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888018"
 ---
 # <a name="periodic-credit-management-tasks"></a>Periodiska kredithanteringsuppgifter
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs de periodiska uppgifter som är en del i processen för hantering av kreditgränser för kunder.
+I den här artikeln beskrivs de periodiska uppgifter som är en del i processen för hantering av kreditgränser för kunder.
 
 ## <a name="update-risk-scores"></a>Uppdatera riskpoäng
 

@@ -1,6 +1,6 @@
 ---
 title: Förbereda underhåll av standardkostnader för tillverkade artiklar
-description: Det här avsnittet beskriver hur du förbereder för underhåll av kostnader för tillverkade artiklar.
+description: Denna artikel beskriver hur du förbereder för underhåll av kostnader för tillverkade artiklar.
 author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d42f61bcd44e89f0563c8f7450a1cdd6fd0e3ce
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 423da8022faf8066c5aa524c49c5071d0871de04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679147"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886027"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Förbereda underhåll av standardkostnader för tillverkade artiklar
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du förbereder för underhåll av kostnader för tillverkade artiklar. Hur du gör för tillverkade artiklar skiljer sig något från hur du gör för inköpta artiklar.
+Denna artikel beskriver hur du förbereder för underhåll av kostnader för tillverkade artiklar. Hur du gör för tillverkade artiklar skiljer sig något från hur du gör för inköpta artiklar.
 
 De principer som tilldelas tillverkade artiklar kan påverka kostnadsberäkningarna för de överordnade tillverkade artiklarna. För att förbereda underhåll av kostnader för tillverkade artiklar följ dessa steg:
 
@@ -51,7 +51,7 @@ De principer som tilldelas tillverkade artiklar kan påverka kostnadsberäkninga
 
 6. Tilldela en standardorderkvantitet till den tilldelade artikeln om den har konstanta kostnader. 
 
-   Standardorderkvantiteten är en redovisningspartistorlek för amortering av konstanta kostnader. Exempel på konstanta kostnader inkluderar inställningstider i flödesoperationer och en konstant komponentkvantitet i en strukturlista (BOM).
+   Standardorderkvantiteten är en redovisningspartistorlek för amortering av konstanta kostnader. Exempel på konstanta kostnader inkluderar inställningstider i flödesåtgärder och en konstant komponentkvantitet i en strukturlista (BOM).
 
 7. Definiera strukturlistan för den tillverkade artikeln. 
 
@@ -61,9 +61,9 @@ De principer som tilldelas tillverkade artiklar kan påverka kostnadsberäkninga
 
    Du kan definiera en eller flera flödesversioner för den tillverkade artikeln. Kontrollera att de versioner som du vill använda har markerats som godkända och aktiva och att de har önskade giltighetsdatum. Flödesversionen måste gälla för en viss site.
 
-Om du vill använda flödesinformation i kostnadssyfte krävs ytterligare förberedelser. Till exempel måste de kostnadskategorier som tilldelas flödesoperationer vara korrekta och fullständiga.
+Om du vill använda flödesinformation i kostnadssyfte krävs ytterligare förberedelser. Till exempel måste de kostnadskategorier som tilldelas flödesåtgärder vara korrekta och fullständiga.
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Periodisera konstanta kostnader för en tillverkad artikel](amortize-constant-costs-manufactured-item.md)
 

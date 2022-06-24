@@ -1,6 +1,6 @@
 ---
-title: Anpassa transaktionsmeddelanden via e-post efter leveranssätt
-description: I det här avsnittet beskrivs hur du ställer in anpassade e-postmallar för specifika meddelandetyper och leveranssätt i Microsoft Dynamics 365 Commerce.
+title: Anpassa transaktionsmeddelanden per e-post efter leveranssätt
+description: I denna artikel beskrivs hur du konfigurerar anpassade e-postmallar för specifika meddelandetyper och leveranssätt i Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 11/16/2020
 ms.topic: article
@@ -14,23 +14,23 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: d15e7c5c7050ad373cb45da72de59416e85a5f2034f7a11b007d497b2e2b98bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f16bc23e3527f57bd61d73e92506946067c6eeb9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749917"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850314"
 ---
-# <a name="customize-transactional-emails-by-mode-of-delivery"></a>Anpassa transaktionsmeddelanden efter leveranssätt
+# <a name="customize-transactional-emails-by-mode-of-delivery"></a>Anpassa transaktionsmeddelanden per e-post efter leveranssätt
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in anpassade e-postmallar för specifika meddelandetyper och leveranssätt i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du konfigurerar anpassade e-postmallar för specifika meddelandetyper och leveranssätt i Microsoft Dynamics 365 Commerce.
 
 Transaktionsmeddelanden via e-post kan nu anpassas för en kombination av en meddelandetyp (t. ex. **Order skapad**, **Order förpackad** eller **Order fakturerad**) och ett leveranssätt (t. ex. nästa dag, upphämtning i butik eller drive in-upphämtning). Anpassade transaktionsmeddelanden via e-post gör att återförsäljare tillhandahåller kundorder med uppfyllelseupplevelser som är skräddarsydda efter orderns leveranssätt. Händelsen "order packad" kan till exempel anpassas så att den tillhandahåller instruktioner rörande drive in-upphämtning till för kunder som väljer detta alternativ. Det kan också tillhandahålla information om speditör och leverans för kunder som väljer att låta ordern levereras.
 
 > [!NOTE]
-> Om du vill använda funktionen för anpassade transaktionsmeddelanden via e-post måste du först aktivera funktionen **Anpassa transaktionsmeddelanden via e-post efter leveranssätt** genom att gå till **Arbetsytor \> Funktionshantering** i Commerce-administrationen.
+> Om du vill använda funktionen för anpassade transaktionsmeddelanden via e-post måste du först aktivera funktionen **Anpassa transaktionsmeddelanden via e-post efter leveranssätt** genom att gå till **Arbetsytor \> Funktionshantering** i Commerce headquarters.
 
 E-postmeddelanden kan anpassas efter leveranssätt för följande meddelandetyper:
 
@@ -48,7 +48,7 @@ E-postmeddelanden kan anpassas efter leveranssätt för följande meddelandetype
 
 För denna procedur görs antagandet att du redan har skapat dina nya, anpassade e-postmallar och lagt till dessa på sidan **E-postmallar för organisation**. Information om hur du skapar och överför e-postmallar finns i [Skapa e-postmallar för transaktionshändelser](email-templates-transactions.md).
 
-Följ dessa steg om du vill konfigurera e-postmallar för specifika leveranssätt i Commerce-administrationen.
+Följ dessa steg om du vill konfigurera e-postmallar för specifika leveranssätt i Commerce headquarters.
 
 1. Gå till **Meddelandeprofil via e-post i Commerce**.
 1. Under **Meddelandeinställningar för butikshändelse** väljer du en befintlig meddelandetyp.

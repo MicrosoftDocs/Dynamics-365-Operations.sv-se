@@ -1,6 +1,6 @@
 ---
 title: Sökresultatmodul
-description: Detta ämne handlar om moduler för sökresultat och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
+description: Denna artikel handlar om moduler för sökresultat och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: dcf3dedbb7c499135bbae45b917153854ecd4a28
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: d026de098ec182e3f7631c1c19e54b3b36db341f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780928"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886968"
 ---
 # <a name="search-results-module"></a>Sökresultatmodul
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Detta ämne handlar om moduler för sökresultat och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
+Denna artikel handlar om moduler för sökresultat och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 
 I modulen Sökresultat returneras produktsökningsresultat och en lista över tillämpliga förfiningar för produkterna. Sökresultatmoduler på Dynamics 365 Commerce-webbplatser kan användas för att återge sidor för följande scenarier:
 
@@ -55,7 +55,7 @@ I följande tabell visas egenskaperna för sökresultatmodulerna tillsammans med
 | Uppdatera förfiningspanel | **Sant** eller **falskt** | Om egenskapen har satts till **Sant** uppdateras förfiningspanelen när förfining väljs. I det här läget kommer vissa flervalsförfinare att bete sig som envalsförfinare när förfiningspanelen uppdateras. |
 
 > [!IMPORTANT]
-> I  Commerce version 10.0.16 och senare kan konfigurationen **Visa anknytningspriser** användas för att visa anknytningspriser på sidan.
+> I Commerce version 10.0.16 och senare kan konfigurationen **Visa anknytningspriser** användas för att visa anknytningspriser på sidan.
 >
 > I Commerce version 10.0.20 frisläppning och senare kan konfigurationen **Uppdatera förfiningspanel** användas för att uppdatera förfiningspanelen under val av förfining.
 
@@ -89,7 +89,7 @@ Följ dessa steg för att lägga till en sökresultatmodul på en kategorisida i
 
 ## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Aktivera kunskap om lager för modulen sökresultat
 
-Kunder förväntar sig vanligtvis att en e-handelsplats är lagermedveten via webbupplevelsen, så att de kan bestämma vad de ska göra om det inte finns något lager för en produkt. Sökresultatmodulen kan konfigureras för att inkludera lagerdata och ger följande erfarenheter:
+Kunder förväntar sig vanligtvis att en näthandelsplats är lagermedveten via webbupplevelsen, så att de kan bestämma vad de ska göra om det inte finns något lager för en produkt. Sökresultatmodulen kan konfigureras för att inkludera lagerdata och ger följande erfarenheter:
 
 - Visa en lagertillgänglighetsetikett tillsammans med produkten.
 - Dölj produkter som inte finns i lager från produktlistan.
@@ -115,7 +115,7 @@ Följ dessa steg för att skapa dedikerade produktattribut för att stödja den 
 1. Kör jobbet i bakgrunden. Eftersom produktlager ständigt förändras i en miljö i flera kanaler, rekommenderar vi starkt att du schemalägger det här jobbet som en batchprocess.
 
 > [!NOTE]
-> För konsekvent beräkning av lagernivå över sidor och moduler på din e-handelswebbplats, se till att välja samma kvantitetstyp för både inställningen **Lagertillgänglighet grundad på** i Commerce-administration och inställningen **Lagernivå grundad på** i Commerce webbplatsskaparen. För information om hur du använder lagerinställningar i webbplatsskaparen, se [tillämpa lagerinställningar](inventory-settings.md).
+> För konsekvent beräkning av lagernivå över sidor och moduler på din näthandelswebbplats, se till att välja samma kvantitetstyp för både inställningen **Lagertillgänglighet grundad på** i Commerce headquarters och inställningen **Lagernivå grundad på** i Commerce webbplatsskaparen. För information om hur du använder lagerinställningar i webbplatsskaparen, se [tillämpa lagerinställningar](inventory-settings.md).
 
 Konfigurera produktattributen för en onlinekanal genom att följa dessa steg. 
 

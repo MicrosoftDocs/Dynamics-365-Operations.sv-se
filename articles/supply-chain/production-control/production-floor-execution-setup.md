@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 0ae9ca901a7af8275db419e25a7297a77aab284e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752842"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857414"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Konfigurera en enhet för att köra körningsgränssnittet för produktionsgolvet
 
@@ -30,8 +30,8 @@ Körningsgränssnittet för produktionsgolvet är inställt för varje enhet på
 
 Om du vill ange konfigurations- och jobbfilter för en enhet loggar du in på sidan **Körning på produktionsgolv** med hjälp av ett konto som har en säkerhetsroll som inkluderar uppdraget *Bibehåll tidsövervakning*. (Bland de medföljande säkerhetsrollerna i den här listan kan endast *Produktionslagerarbetsledaren* ha detta uppdrag.) Följ sedan de här stegen.
 
-1. Gå till den enhet som du vill ställa in och logga in på Microsoft Dynamics 365 Supply Chain Management som en produktionslagerarbetsledare. (Använd ett konto som innehåller uppdraget *Bibehåll tidsövervakning*.)
-1. Kontrollera att det finns en konfiguration för enheten som du installerar. Om det inte redan finns en konfiguration anges en standardkonfiguration. Mer information om hur du ställer in en konfiguration finns i [Konfigurera körningsgränssnittet för produktionsgolvet](production-floor-execution-configure.md).
+1. Gå till den enhet som du vill konfigurera och logga in på Microsoft Dynamics 365 Supply Chain Management som en produktionslagerarbetsledare. (Använd ett konto som innehåller uppdraget *Bibehåll tidsövervakning*.)
+1. Kontrollera att det finns en konfiguration för enheten som du installerar. Om det inte redan finns en konfiguration anges en standardkonfiguration. Mer information om hur du konfigurerar en konfiguration finns i [Konfigurera körningsgränssnittet för produktionsgolvet](production-floor-execution-configure.md).
 1. Gå till **Produktionskontroll \> Tillverkningskörning \> Körningsgränssnittet för produktionsgolvet**.
 
     Om körningsgränssnittet för produktionsgolvet redan har konfigurerats minst en gång på den aktuella enheten visas en inloggningssida. I annat fall visas en välkomstsida.

@@ -1,6 +1,6 @@
 ---
 title: Översikt över funktionshantering
-description: I det här avsnittet beskrivs funktionshantering och hur du kan använda den.
+description: I den här artikeln beskrivs funktionshantering och hur du kan använda den.
 author: Peakerbl
 ms.date: 01/10/2022
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: c98bdbd64ee5488da20de3f5b23ae18ebce8c23f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0691bc34ac8b57d20cfbeb58b6a2e2a03a57d067
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068019"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850072"
 ---
 # <a name="feature-management-overview"></a>Översikt över funktionshantering
 
@@ -41,7 +41,7 @@ Funktionslistan inkluderar följande information:
 - **Status** – en symbol anger om en funktion har aktiverats (bockmarkering), inte aktiveras (tom), har tidsplanerats för att aktiveras (klocka) eller är obligatorisk aktiverad (lås) kräver uppmärksamhet innan du aktiverar den (varningssymbol) eller så kan den inte aktiveras obligatoriska (X). Inställningen som visas används för alla juridiska personer. Observera att även om en funktion har aktiverats, styrs den fortfarande av säkerhet. Funktionen är därför bara tillgänglig för användare som har åtkomst till den, baserat på deras säkerhetsroll. Det är också bara tillgängligt för juridiska personer som användaren har till gång till.
 - **Aktivera datum** – det datum då funktionen aktiverades eller är tidsplanerad att aktiveras.
 - **Funktionen tillagd** – det datum då funktionen lades till i din miljö. Detta datum anges automatiskt när du uppdaterar miljön under de månatliga versionscyklerna.
-- **Funktionsläge** – Aktuell livscykelläge för funktionen: **Förhandsgranskning**, **Frisläppt** (visas som tom), **På som standard** och **Obligatorisk**. Delstater omfattas av mer information senare i det här avsnittet. 
+- **Funktionsläge** – Aktuell livscykelläge för funktionen: **Förhandsgranskning**, **Frisläppt** (visas som tom), **På som standard** och **Obligatorisk**. Delstater omfattas av mer information senare i den här artikeln. 
 - **Modul** – den modul som påverkas av den nya funktionen.
 
 > [!NOTE]

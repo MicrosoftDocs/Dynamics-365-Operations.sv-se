@@ -1,6 +1,6 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources 6 september 2021
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 6 september 2021.
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 6 september 2021.
 author: marcelbf
 ms.date: 09/06/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-09-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 314d836db9b7560c2ed95ad1b9d2eba753e39d2b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 776498b32f8323b1a06f39b518cdc1ae534f9bcc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690594"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872164"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-6-2021"></a>Nyheter och ändringar i Dynamics 365 Human Resources 6 september 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Detta ämne beskriver nya, ändrade och kommande funktioner i Microsoft Dynamics 365 Human Resources.
+Den här artikeln beskriver funktioner som är nya, ändrade eller kommer snart i Microsoft Dynamics 365 Human Resources.
 
 Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
@@ -52,7 +52,7 @@ Den här versionen innehåller följande felkorrigeringar.
 > [!NOTE]
 > Vårt mål är att få den här informationen så snart som möjligt. Vi kan komma att uppdatera detta ämne i syfte att inkludera felkorrigeringar som kommit med i versionen efter det att ämnet publicerades första gången.
 
-| Utfärda nummer | Problem | beskrivning |
+| Utfärda nummer | Problem | Beskrivning |
 |---|---|---|
 | 610128 | Fel i publiceringsdata vid användning av HcmDiscussionOverallCommentEntity | När data publiceras från en Excel-arbetsbok till enheten HcmDiscussionOverralCommentEntity inträffar följande fel: "Det går inte att lokalisera datakällsposten av typen HcmTopicOverrall." |
 | 589073 | EEO-1 räknas som "Ej specifik" och tomma värden för fältet **Kön** som värdet "Kvinna". | Om **Man** inte har angetts för fältet **Kön**, rapporten EEO-1 genererar standardvärdet **Kvinna**. |

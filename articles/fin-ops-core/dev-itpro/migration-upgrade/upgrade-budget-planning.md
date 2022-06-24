@@ -1,6 +1,6 @@
 ---
 title: Uppgradera budgetplanering
-description: Det här avsnittet beskriver vad som måste konfigureras om och beskriver även nya funktioner som du bör överväga när uppgraderingen är klar.
+description: Den här artikeln beskriver vad som måste konfigureras om och beskriver även nya funktioner som du bör överväga när uppgraderingen är klar.
 author: panolte
 ms.date: 04/10/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c52de15faddd797d31d0875882863b8fe37a7d173b38be058e51a06b2e7fe078
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d098aa77b4eb87118692c18ecd1b09a5de2c53d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769201"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890418"
 ---
 # <a name="upgrade-budget-planning"></a>Uppgradera budgetplanering
 
 [!include [banner](../includes/banner.md)]
 
-Det finns väsentliga skillnader i budgetplanering mellan Microsoft Dynamics AX 2012 och Dynamics 365 Finance. Vissa funktioner har inte uppgraderats och kräver därför omkonfigurering. Det här avsnittet beskriver vad som måste konfigureras om och beskriver även nya funktioner som du bör överväga när uppgraderingen är klar.  
+Det finns väsentliga skillnader i budgetplanering mellan Microsoft Dynamics AX 2012 och Dynamics 365 Finance. Vissa funktioner har inte uppgraderats och kräver därför omkonfigurering. Den här artikeln beskriver vad som måste konfigureras om och beskriver även nya funktioner som du bör överväga när uppgraderingen är klar.  
 
-Budgetplanering i Finance innehåller många förbättringar som inte var tillgängliga i Dynamics AX 2012. Det här avsnittet beskriver de ändringar som kunder som uppgraderar måste göra. Den pekar även ut de nya funktionerna som ska beaktas under uppgraderingsprocessen. På grund av omfattningen av förändringarna kommer eventuella befintliga budgetplaner inte at kunna öppnas förrän du har gjort ändringarna som beskrivs i det här avsnittet. Rapporterna bör emellertid fortsätta att fungera och kräver inte ytterligare ändringar.
+Budgetplanering i Finance innehåller många förbättringar som inte var tillgängliga i Dynamics AX 2012. Den här artikeln beskriver de ändringar som kunder som uppgraderar måste göra. Den pekar även ut de nya funktionerna som ska beaktas under uppgraderingsprocessen. På grund av omfattningen av förändringarna kommer eventuella befintliga budgetplaner inte at kunna öppnas förrän du har gjort ändringarna som beskrivs i den här artikeln. Rapporterna bör emellertid fortsätta att fungera och kräver inte ytterligare ändringar.
 
 ## <a name="overview-of-changes"></a>Översikt över ändringar
 Många viktiga förändringar har gjorts i budgetering för Finance and Operations. Dessa ändringar är avsedda att göra budgetplaneringen enklare att konfigurera och mer återanvändningsbar för att minska årligt underhåll och inställningar. Följande områden i AX 2012 finns inte längre i Finance:
@@ -58,7 +58,7 @@ Budgetplaneringsprocesser är oftast detsamma som i AX 2012. Den största ändri
 Handlingar har sparats till en bilagemapp i AX 2012. Inga tidigare handlingar uppgraderas. Motiveringsdokument lagras nu i databasen. Om denna information ska sparas i den uppgraderade versionen kan du överföra motiveringsdokument för varje plan som en bifogad fil med hjälp av knappen **justering** i åtgärdsfönstret. I AX 2012 skapades Excel-kalkylblad för varje budgetplan utifrån mallen. I Finance öppnar alla planer en kopia av layouten. Inga ändringar i Excel-filen sparas dock. Eventuella formler eller stöd information som användes per plan måste läggas till via kommentarer, ett motiveringsdokumentet eller någon annan kompletterande process.
 
 ## <a name="configuring-an-upgraded-environment-from-ax-2012"></a>Konfigurera en uppgraderad miljö från AX 2012
-För att hjälpa dig att avgöra hur du konfigurerar det uppgraderade systemet, har följande exempel en uppgraderad budgetprocess från AX 2012 demodata. Standardkonfigurationsdata för kolumner har skapats för att hjälpa uppgraderingsprocessen. Du kan uppdatera eller ta bort den här standarddatan om den inte uppfyller dina behov av konfigurering. **Obs!** Det finns nya obligatoriska fält som inte anges i systemet. Om du fastnar på en sida som t.ex. sidan **Budgetplaneringskonfiguration** och kan inte navigera iväg. Du kan stänga webbläsaren och öppna den på nytt till en annan sida för att ange information i rätt ordning. Det finns obligatoriska fält som inte ännu är angivna. Därför kan problem uppstå tills allt är konfigurerat och alla obligatoriska fält har angetts. Det här avsnittet beskriver hur du ställer in dessa fält efter behov. Här följer några exempel på krävda fält:
+För att hjälpa dig att avgöra hur du konfigurerar det uppgraderade systemet, har följande exempel en uppgraderad budgetprocess från AX 2012 demodata. Standardkonfigurationsdata för kolumner har skapats för att hjälpa uppgraderingsprocessen. Du kan uppdatera eller ta bort den här standarddatan om den inte uppfyller dina behov av konfigurering. **Obs!** Det finns nya obligatoriska fält som inte anges i systemet. Om du fastnar på en sida som t.ex. sidan **Budgetplaneringskonfiguration** och kan inte navigera iväg. Du kan stänga webbläsaren och öppna den på nytt till en annan sida för att ange information i rätt ordning. Det finns obligatoriska fält som inte ännu är angivna. Därför kan problem uppstå tills allt är konfigurerat och alla obligatoriska fält har angetts. Den här artikeln beskriver hur du ställer in dessa fält efter behov. Här följer några exempel på krävda fält:
 
 -   Sidan **Budgetplaneringsprocess**: fältet **standardkontostruktur**
 -   Sida **Budgetplaneringsprocessen**: fältet **Layout** på snabbfliken **Regler och layouter för budgetplaneringsfaser**
@@ -69,7 +69,7 @@ För att hjälpa dig att avgöra hur du konfigurerar det uppgraderade systemet, 
    -   Budgetplanscenarier: verkliga, baslinje, Budgetförfrågan, budget godkänd
    -   Budgetplansrader för alla scenarier i 2017 och utfall för både 2017 och 2016
 
-   Följande kolumner skapas i Finance and Operations:
+   Följande kolumner skapas Finance and Operations:
 
    | Kolumnnamn    | Budgetplanscenario | Kolumntidsperiod | Förskjutning för år |
    |----------------|----------------------|--------------------|-------------|

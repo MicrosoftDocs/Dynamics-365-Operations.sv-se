@@ -1,6 +1,6 @@
 ---
-title: Bearbeta anmälningsberättigande
-description: I detta ämne beskrivs hur du kör processen för bearbetning av registreringsberättigande.
+title: Bearbetning av berättigande för anmälan
+description: I den här artikeln beskrivs hur du kör bearbetning av berättigande för anmälan.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78a7de6dbb8d8ed13392eb7eb9aa02b15db2e009
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c01d7a6f456514fc9da1889ccaff5af1ae7c0f52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693183"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877755"
 ---
-# <a name="process-enrollment-eligibility"></a>Bearbeta anmälningsberättigande
+# <a name="process-enrollment-eligibility"></a>Bearbetning av berättigande för anmälan
 
 
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I detta ämne beskrivs hur du kör processen för bearbetning av registreringsberättigande.
+I den här artikeln beskrivs hur du kör bearbetning av berättigande för anmälan.
 
 1. I arbetsytan **Förmånshantering** under **bearbetar**, välj **Bearbetning av berättigande för anmälan**.
 
@@ -55,7 +55,7 @@ I detta ämne beskrivs hur du kör processen för bearbetning av registreringsbe
 
 ## <a name="view-process-results"></a>Visa processresultat
 
-I detta ämne beskrivs hur du visar resultaten för berättigandeprocessen.
+I den här artikeln beskrivs hur du visar berättigande processresultat.
 
 1.  I arbetsytan **Förmånshantering** under **bearbetar**, välj **processresultat**.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: f3e94cc79f0daac9107f9876ac8414d2c4cff366
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e3ec1f59e0b1d202d5591bfc1525c9034f4d8f45
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569009"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893132"
 ---
 # <a name="zone-threshold-replenishment"></a>Zontröskel för lagerpåfyllnad
 
@@ -26,7 +26,7 @@ ms.locfileid: "7569009"
 
 Vid en zonbaserad lagerpåfyllnad används en [återanskaffnings](replenishment.md)-strategi av minsta/högsta (min/max), men den utvärderar hela lagerzoner istället för bara enskilda platser. Därför kan lagerchefer lära sig snabbare om ytterligare lager krävs i en plockzon.
 
-Inställningen för den här funktionen liknar inställningen för platsbaserad lagerpåfyllnad. När du ställer in en mall för den minsta/högsta lagerpåfyllnad kan du också ange om tröskeln ska utvärderas per lagerställe eller per zon. Om du ställer in utvärdering som baseras på zoner måste du lägga till specifika zoner i urvalsfrågan för zoner.
+Inställningen för den här funktionen liknar inställningen för platsbaserad lagerpåfyllnad. När du konfigurerar en mall för den minsta/högsta lagerpåfyllnad kan du också ange om tröskeln ska utvärderas per lagerställe eller per zon. Om du konfigurerar utvärdering som baseras på zoner måste du lägga till specifika zoner i urvalsfrågan för zoner.
 
 T.ex. platsbaserad min/max lagerpåfyllnad, zonbaserade krav på min/max lagerpåfyllnad baseras på inställningen av ett minsta lagertröskelvärde som utlöser ett lagerpåfyllningsarbete för valda artiklar. Detta lagerpåfyllningsarbete ökar lagret till det angivna maximala tröskelvärdet för zonen.
 
@@ -45,7 +45,7 @@ Innan du kan använda funktionen *Zontröskel för lagerpåfyllnad* den aktivera
 
 ## <a name="set-up-zone-based-replenishment"></a><a name="setup"></a>Ställ in zonbaserad lagerpåfyllnad
 
-Om du vill ställa in zonbaserad lagerpåfyllnad måste du konfigurera flera delar av systemet. Det här avsnittet innehåller en introduktion till de olika inställningarna och innehåller datavärden för demonstrationer som du kan ange om du vill arbeta genom scenariot i slutet av det här avsnittet.
+Om du vill konfigurera zonbaserad lagerpåfyllnad måste du konfigurera flera delar av systemet. Det här avsnittet innehåller en introduktion till de olika inställningarna och innehåller demonstrationsdatavärden som du kan ange om du vill arbeta genom scenariot i slutet av denna artikel.
 
 ### <a name="set-up-directive-codes"></a>Ställ in direktivkoder
 
@@ -57,7 +57,7 @@ Gå till om du vill se eller redigera dina direktivkoder **Lagerstyrning \> Inst
 
 #### <a name="prepare-demo-data-directive-codes"></a>Förbered demodata, direktivkoder
 
-Det här exemplet visar hur du förbereder en direktivkod. Om du planerar att arbeta genom scenariot i slutet av det här avsnittet ska du använda de datavärden för demon som finns här. I annat fall använder du dina egna värden.
+Det här exemplet visar hur du förbereder en direktivkod. Om du planerar att arbeta genom scenariot i slutet av denna artikel ska du använda de demonstrationsdatavärden som finns här. I annat fall använder du dina egna värden.
 
 1. Välj den juridiska personen **USMF** för att arbeta med demodata.
 1. Gå till **Lagerstyrning \> Inställningar \> Direktivkoder**.
@@ -71,7 +71,7 @@ Det här exemplet visar hur du förbereder en direktivkod. Om du planerar att ar
 
 ### <a name="set-up-replenishment-templates"></a>Konfigurera mallar för lagerpåfyllnad
 
-[Mallar för min/max lagerpåfyllnad](tasks/set-up-min-max-replenishment-process.md) är den primära mekanismen för att bibehålla optimala nivåer på plockplatser. I dessa mallar måste du ställa in de regler som ska användas för att fylla på lagret i lagerstället. Påfyllningen som mallarna kan användas för inkluderar zonbaserad lagerpåfyllnad.
+[Mallar för min/max lagerpåfyllnad](tasks/set-up-min-max-replenishment-process.md) är den primära mekanismen för att bibehålla optimala nivåer på plockplatser. I dessa mallar måste du konfigurera de regler som ska användas för att fylla på lagret i lagerstället. Påfyllningen som mallarna kan användas för inkluderar zonbaserad lagerpåfyllnad.
 
 #### <a name="view-and-edit-replenishment-templates"></a>Visa och redigera påfyllnadsmallar
 
@@ -79,7 +79,7 @@ En mall för lagerpåfyllnad är en uppsättning regler som kontrollerar hur en 
 
 #### <a name="prepare-a-demo-data-replenishment-template"></a>Förbereda en demodata mall för lagerpåfyllnad
 
-Det här exemplet visar hur du förbereder en mall för lagerpåfyllnad. Om du planerar att arbeta genom scenariot i slutet av det här avsnittet ska du använda de datavärden för demon som finns här. I annat fall använder du dina egna värden.
+Det här exemplet visar hur du förbereder en mall för lagerpåfyllnad. Om du planerar att arbeta genom scenariot i slutet av denna artikel ska du använda de demonstrationsdatavärden som finns här. I annat fall använder du dina egna värden.
 
 1. Välj den juridiska personen **USMF** för att arbeta med demodata.
 1. Gå till **Lagerstyrning \> Inställningar \> Lagerpåfyllnad \> Mall för lagerpåfyllnad**.
@@ -134,7 +134,7 @@ Det här exemplet visar hur du förbereder en mall för lagerpåfyllnad. Om du p
 
 ### <a name="set-up-location-directives"></a>Ställ in platsdirektiv
 
-Till skillnad från platsbaserad min/max påfyllnadsenhet, zonbaserade min/max lagerpåfyllnad kräver att du måste ställa in både platsdirektiv för plockning och platsdirektiv för placering eftersom systemet utvärderar hela zonen istället för bara plockningsplatsen för utgående arbete.
+Till skillnad från platsbaserad min/max påfyllnadsenhet, zonbaserade min/max lagerpåfyllnad kräver att du måste konfigurera både platsdirektiv för plockning och platsdirektiv för placering eftersom systemet utvärderar hela zonen istället för bara plockningsplatsen för utgående arbete.
 
 #### <a name="view-and-edit-location-directives"></a>Visa och redigera platsdirektiv
 
@@ -144,7 +144,7 @@ Se nästa avsnitt för exempel som visar hur du använder inställningarna för 
 
 #### <a name="prepare-demo-data-location-directives"></a>Förbered demodata, platsdirektiv
 
-Om du vill förbereda demodata så att de kan användas i scenariot i slutet av det här ämnet måste du skapa två platsdirektiv: ett för plockning och en för placering.
+Om du vill förbereda demodata så att de kan användas i scenariot i slutet av denna artikel måste du skapa två platsdirektiv: ett för plockning och en för placering.
 
 ##### <a name="create-a-replenishment-pick-directive"></a>Skapa en platsdirektiv för lagerpåfyllnad
 
@@ -170,7 +170,7 @@ Om du vill förbereda demodata så att de kan användas i scenariot i slutet av 
     - **Från kvantitet:** Ange _0_.
     - **Till kvantitet:** Ange _10000000_.
     - **Enhet:** Lämna detta fält tomt.
-    - **Lokalisera kvantitet:** Välj _Ingen_.
+    - **Hitta kvantitet:** Välj _Ingen_.
     - **Begränsa efter enhet:** avmarkera kryssrutan.
     - **Avrunda till enhet:** avmarkera den här kryssrutan.
     - **Sök efter förpackningskvantitet:** avmarkera den här kryssrutan.
@@ -222,7 +222,7 @@ Om du vill förbereda demodata så att de kan användas i scenariot i slutet av 
     - **Från kvantitet:** Ange _0_.
     - **Till kvantitet:** Ange _10000000_.
     - **Enhet:** Lämna detta fält tomt.
-    - **Lokalisera kvantitet:** Välj _Ingen_.
+    - **Hitta kvantitet:** Välj _Ingen_.
     - **Begränsa efter enhet:** avmarkera kryssrutan.
     - **Avrunda till enhet:** avmarkera den här kryssrutan.
     - **Sök efter förpackningskvantitet:** avmarkera den här kryssrutan.
@@ -258,7 +258,7 @@ Det här avsnittet innehåller ett exempel på ett scenario som visar hur funkti
 
 ### <a name="prepare-the-sample-data-that-is-required-for-the-sample-scenario"></a>Förbered de exempeldata som krävs för exempelscenariot
 
-Innan du börjar arbeta i scenariot måste du aktivera exempeldata och ställa in funktionen enligt beskrivningen i det här avsnittet och i tidigare avsnitt i detta ämne.
+Innan du börjar arbeta i scenariot måste du aktivera exempeldata och konfigurera funktionen enligt beskrivningen i det här avsnittet och i tidigare avsnitt i denna artikel.
 
 #### <a name="use-the-usmf-legal-entity"></a>Använd USMF juridiska personen
 
@@ -266,7 +266,7 @@ Om du vill arbeta genom detta scenario med hjälp av de exempelposter och värde
 
 #### <a name="prepare-additional-sample-data"></a>Förbered ytterligare exempeldata
 
-När du har valt den juridiska personen för **USMF** lägger du till de ytterligare exempeldata som krävs, enligt beskrivningen i avsnittet [Ställ in zonbaserad lagerpåfyllnad](#setup) tidigare i det här avsnittet.
+När du har valt den juridiska personen **USMF** lägger du till de ytterligare exempeldata som krävs, enligt beskrivningen i avsnittet [Konfigurera zonbaserad lagerpåfyllnad](#setup) tidigare i denna artikel.
 
 #### <a name="check-your-on-hand-inventory"></a>Kontrollera behållningslagret
 
@@ -334,7 +334,7 @@ Lagerpåfyllnadsarbetet skapas nu för att plocka lagret från den *BULK* och se
 
 Här följer några anmärkningar och tips för hur du arbetar med funktionen:
 
-- Om du vill ställa in påfyllningsarbetet som går till önskad zon kan du länka påfyllnadsgrupp och mallrad för lagerpåfyllnad på något av följande sätt:
+- Om du vill konfigurera påfyllningsarbetet som går till önskad zon kan du länka påfyllnadsgrupp och mallrad för lagerpåfyllnad på något av följande sätt:
 
     - Redigera frågan för direktivrubrik för plats och filtrera de valda mallrad för lagerpåfyllnad.
     - Använd en direktivkod på raden för lagerpåfyllnad och matcha den med platsdirektiv för placering.

@@ -1,6 +1,6 @@
 ---
 title: Funktionen Strukturlistedesigner
-description: Det här ämnet ger en beskrivning av hur du kan använda sidan för strukturlistan för att designa och arbeta med trädstrukturer för strukturlistor (BOMs).
+description: Denna artikel ger en beskrivning av hur du kan använda sidan för strukturlisteverktyget och arbeta med trädstrukturer för strukturlistor (BOMs).
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c068e7f5f4f36663766e21e14cf8e75cf1442f50
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2fda2b1d835afdcf06a50528748861fecc6792f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577994"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844278"
 ---
 # <a name="bom-designer-functionality"></a>Funktionen Strukturlistedesigner
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet ger en beskrivning av hur du kan använda sidan för strukturlistan för att designa och arbeta med trädstrukturer för strukturlistor (BOMs). Du kan klicka på Inställningar för att välja olika konfigureringar och ange vilken information som ska visas på raderna i trädstrukturen.
+Denna artikel ger en beskrivning av hur du kan använda sidan för strukturlisteverktyget och arbeta med trädstrukturer för strukturlistor (BOMs). Du kan klicka på Inställningar för att välja olika konfigureringar och ange vilken information som ska visas på raderna i trädstrukturen.
 
 När du öppnar sidan **Strukturlistedesigner** från sidan **Frisläppta produkter**, visar den hierarkin med strukturlistor som är aktiva och godkända för den valda artikeln, standardorderplatsen för artikeln och aktuellt datum.  
 
@@ -46,7 +46,7 @@ Strukturlistedesignern har två avsnitt:
     -   **Artikeldata** – Visar information om huvudartikeln eller en artikel som används i den valda noden. Du kan klicka på **Redigera frisläppt produkt** om du vill behålla den valda artikeln.
     -   **Strukturlista** - Visar sidhuvudet i strukturlistan som är relaterade till den valda noden.
     -   **Flöde** - Visar sidhuvudet i flödet som är relaterade till den valda noden.
-    -   **Flödesoperationer** – Visar en förhandsgranskning av operationerna för flödet. När en strukturlisterad, som tilldelas en viss operation, är markerad markeras operationen som **Komponenter måste anges vid operationer**.
+    -   **Flödesåtgärder** – Visar en förhandsgranskning av åtgärderna för flödet. När en strukturlisterad, som tilldelas en viss åtgärd, är markerad markeras åtgärden som **Komponenter måste anges vid åtgärder**.
 
 ## <a name="selecting-a-bom-and-route"></a>Välj en strukturlista och ett flöde
 Filtret som används för strukturlistan och flödet, visas i strukturlistedesignern. Du kan ändra filtret, genom att använda dialogrutan **Filter**. I tabellen nedan beskrivs fälten i denna dialogruta.
@@ -81,7 +81,7 @@ Filtret som används för strukturlistan och flödet, visas i strukturlistedesig
 </tr>
 <tr class="odd">
 <td>Från-kvantitet</td>
-<td>Filtrera versionerna genom att välja från en viss kvantitet. Om du ställer in ett värde, kan en annan strukturlista och flödesversioner markeras.</td>
+<td>Filtrera versionerna genom att välja från en viss kvantitet. Om du konfigurerar ett värde, kan en annan strukturlista och flödesversioner markeras.</td>
 </tr>
 <tr class="even">
 <td>Visa bara giltiga</td>

@@ -1,6 +1,6 @@
 ---
 title: Aktivera rekommendationer för "köp liknande produkter"
-description: I det här avsnittet beskrivs hur du aktiverar produktrekommendationerna "köp liknande produkter" i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du aktiverar produktrekommendationerna "köp liknande produkter" i Microsoft Dynamics 365 Commerce.
 author: bebeale
 ms.date: 08/06/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e70365be8484d71ef9e0e9823b0a4406b0fd2761439780cafc30e1284bda1f20
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3024e832de5e6a60b49c5b0c8bfbe36b2c416379
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722010"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884587"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>Aktivera rekommendationer för "köp liknande produkter"
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du aktiverar produktrekommendationerna "köp liknande produkter" i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du aktiverar produktrekommendationerna "köp liknande produkter" i Microsoft Dynamics 365 Commerce.
 
 Med hjälp av rekommendationerna "köp liknande produkter" i Dynamics 365 Commerce används funktionerna hos artificiell intelligens och maskininlärning (AI-ML) för att leverera rekommendationer för visuellt likartade produkter till kunder. Genom att göra rekommendationer av typen "köp liknande produkter" tillgängliga för alla detaljhandelskanaler i Commerce kan återförsäljare öka kundtillfredsställelsen genom att hjälpa kunderna att enkelt hitta vad de vill ha.
 
@@ -40,7 +40,7 @@ Rekommendationerna för "köp liknande produkter" i både kassa- (POS) och näth
 - En kund visar en svartrandig tröja och får en rekommendation om liknande tröja i rött. Kunden väljer den rekommenderade produkten i stället för den ursprungligen visade produkten och får rekommendationer för liknande produkter i rött. 
 - En kund använder rekommendationer om "köp liknande produkter" för att upptäcka matchande örhängen för en ring som kunden är intresserad av att köpa.
 
-## <a name="enable-shop-similar-looks-recommendations-in-commerce-headquarters"></a>Aktivera rekommendationerna "köp liknande produkter" i Commerce-administration
+## <a name="enable-shop-similar-looks-recommendations-in-commerce-headquarters"></a>Aktivera rekommendationerna "köp liknande produkter" i Commerce headquarters
 
 Produktrekommendationer stöds endast för Commerce-användare som har migrerat sin lagring till Azure Data Lake Gen2.
 
@@ -48,10 +48,10 @@ Produktrekommendationer stöds endast för Commerce-användare som har migrerat 
 
 Innan återförsäljare kan börja visa rekommendationer från "köp liknande produkter", finns det två steg:
 
-- [Aktivera produktrekommendationer](enable-product-recommendations.md) i Commerce-administration.
+- [Aktivera produktrekommendationer](enable-product-recommendations.md) i Commerce headquarters.
 - Kontrollera att mediaservern stöder HTTPS-anrop.
 
-För att rekommendationsmotorn ska få åtkomst till produktbilderna måste återförsäljare generera produktens URL:er. För att generera URL:er i Commerce-administration, följ de här stegen.
+För att rekommendationsmotorn ska få åtkomst till produktbilderna måste återförsäljare generera produktens URL:er. För att generera URL:er i Commerce headquarters, följ de här stegen.
 
 1. Gå till **Produktbilder**.
 1. I åtgärdsfönstret, välj **Definiera mediemall**.
@@ -60,15 +60,15 @@ För att rekommendationsmotorn ska få åtkomst till produktbilderna måste åte
 > [!NOTE]
 > När du aktiverar rekommendationsfunktionen "köp liknande produkter", börjar processen att generera listor över produktrekommendationer. Det kan krävas upp till en dag innan dessa listor är tillgängliga och kan visas online och i POS.
 
-Gör så här om du vill aktivera rekommendationer funktionen "köp liknande produkter" i Commerce-administration.
+Gör så här om du vill aktivera rekommendationer funktionen "köp liknande produkter" i Commerce headquarters.
 
 1. Gå till **Funktionshantering**.
 1. I listan över tillgängliga funktioner söker du efter och väljer **köp liknande produkter**.
 1. I det högra fönstret väljer du **Aktivera** för att aktivera tjänsten.
 
-I följande bild visas funktionen **köp liknande produkter** på sidan **Funktionshantering** i Commerce-administration.
+I följande bild visas funktionen **köp liknande produkter** på sidan **Funktionshantering** i Commerce headquarters.
 
-![Funktionen Köp liknande produkter på sidan Funktionshantering i Commerce-administrationen.](./media/enableshopsimilarlooks.png)
+![Funktionen Köp liknande produkter på sidan Funktionshantering i Commerce headquarters.](./media/enableshopsimilarlooks.png)
 
 När föregående uppgifter har slutförts förbättras kassaterminaler automatiskt med en panel för **köp liknande produkter**. Genom att välja **Se mer** användare av kassaterminal kan tas till en dedikerad sida för "köp liknande produkter" som kan filtreras ytterligare.
 
@@ -77,7 +77,7 @@ När föregående uppgifter har slutförts förbättras kassaterminaler automati
 
 ## <a name="add-a-shop-similar-looks-button-to-product-details-pages-by-using-commerce-site-builder"></a>Lägga till en knapp för köp liknande produkter på sidan med produktinformation genom att använda Commerce-webbplatsbyggaren
 
-När du har aktiverat rekommendationerna "köp liknande produkter" i Commerce-administration kan du välja ett alternativ i Commerce-webbplatsbyggaren för att lägga till knappar **köp liknande produkter** i köprutan på valfri produktinformationssida (PDP). En kund som väljer den här knappen tas till en särskild sida "köp liknande produkter" som returnerar visuellt likartade produkter. Kunden kan använda väljare för att filtrera produkterna ytterligare.
+När du har aktiverat rekommendationerna "köp liknande produkter" i Commerce headquarters kan du välja ett alternativ i Commerce-webbplatsbyggaren för att lägga till knappar **köp liknande produkter** i köprutan på valfri produktinformationssida (PDP). En kund som väljer den här knappen tas till en särskild sida "köp liknande produkter" som returnerar visuellt likartade produkter. Kunden kan använda väljare för att filtrera produkterna ytterligare.
 
 Lägg till en knapp för **Köp liknande produkter** till en PDP genom att använda Commerce-webbplatsbyggaren, följ dessa steg.
 

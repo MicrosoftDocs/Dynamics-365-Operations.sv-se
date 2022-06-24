@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08ab90d6f53dbb9eabeea3c2cf020792e8957c7b71ed27fc491008fcad114c72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a75b268f2d8341c1a6dd0d3f1bd9dcb31d9084ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727495"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884153"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Importera konfigurationer för att skapa dokument som omfattar programdata
 

@@ -1,6 +1,6 @@
 ---
 title: Tidsplanering med resursurval baserat på kapacitet
-description: Det här ämnet beskriver resursurval vid tidsplanering av obegränsad kapacitet när du anger kapacitet som resursbehov för en operation.
+description: Denna artikel beskriver resursurval vid tidsplanering av obegränsad kapacitet när du anger kapacitet som resursbehov för en åtgärd.
 author: t-benebo
 ms.date: 9/3/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: d1ecdfdbdd605fca953e799ec3f6a82d244bc9f7
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 26b2b65a2d565052b188f4d70f0cc0a773cd7b43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469797"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847974"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Tidsplanering med resursurval baserat på kapacitet
 
 [!include [banner](../../includes/banner.md)]
 
-Genom att ange resursbehov för en operation i ett produktionsflöde definierar du vad som krävs för att utföra operationen. En operation kanske till exempel kräver en viss resurs eller resursgrupp, eller en kombination av färdigheter eller kapacitet. Det här ämnet beskriver resursurval vid tidsplanering av obegränsad kapacitet när du anger kapacitet som resursbehov för en operation.
+Genom att ange resursbehov för en åtgärd i ett produktionsflöde definierar du vad som krävs för att utföra åtgärden. En åtgärd kanske till exempel kräver en viss resurs eller resursgrupp, eller en kombination av färdigheter eller kapacitet. Denna artikel beskriver resursurval vid tidsplanering av obegränsad kapacitet när du anger kapacitet som resursbehov för en åtgärd.
 
 ## <a name="turn-on-the-capability-based-scheduling-feature"></a>Aktivera funktionen för tidsplanering av kapacitetsbaserad
 
@@ -35,11 +35,11 @@ Mer information om denna funktion finns i [Tidsplanering med obegränsad kapacit
 
 ## <a name="capability-based-scheduling"></a>Kapacitetsbaserad planering
 
-En kapacitet är möjligheten hos en verksamhetsresurs att utföra en viss aktivitet. Mer än en kapacitet kan tilldelas en enda operationsresurs och en enda kapacitet kan tilldelas mer än en resurs. Funktioner kan tilldelas alla typer av resurser, till exempel verktyg, leverantörer, maskiner, platser, anläggningar och personalresurser.
+En kapacitet är möjligheten hos en verksamhetsresurs att utföra en viss aktivitet. Mer än en kapacitet kan tilldelas en enda åtgärdsresurs och en enda kapacitet kan tilldelas mer än en resurs. Funktioner kan tilldelas alla typer av resurser, till exempel verktyg, leverantörer, maskiner, platser, anläggningar och personalresurser.
 
-När du anger kapacitet som resursbehov kan du inaktivera resursallokeringen tills order har tidsplanerats. I stället för att tilldela specifika resurser eller resursgrupper till en flödesoperation kan du definiera vilka möjligheter som krävs för varje flödesoperation. Under planeringen matchar sedan systemet den kapacitet som krävs med den kapacitet som har definierats för resurserna. Systemet väljer bara resurser som uppfyller behoven.
+När du anger kapacitet som resursbehov kan du inaktivera resursallokeringen tills order har tidsplanerats. I stället för att tilldela specifika resurser eller resursgrupper till en flödesåtgärd kan du definiera vilka möjligheter som krävs för varje flödesåtgärd. Under planeringen matchar sedan systemet den kapacitet som krävs med den kapacitet som har definierats för resurserna. Systemet väljer bara resurser som uppfyller behoven.
 
-Om du vill tilldela funktioner till en operationsresurs använder du snabbflikarna **Funktioner** på sidan **Resurser**. Om du vill tilldela resurser till en funktion använder du **Resurser** på sidan **Resursfunktioner**. Båda sidorna är tillgängliga under **Produktionskontroll \> Inställningar \> Resurser** i navigeringsfönstret. Båda snabbflikarna innehåller ett rutnät med de resurser som har associerats med en vald resurs eller kapacitet. Båda snabbflikarna innehåller även ett verktygsfält som du använder när du vill lägga till, ta bort och redigera rader i rutnätet. Rutnätet innehåller följande kolumner:
+Om du vill tilldela funktioner till en åtgärdsresurs använder du snabbflikarna **Funktioner** på sidan **Resurser**. Om du vill tilldela resurser till en funktion använder du **Resurser** på sidan **Resursfunktioner**. Båda sidorna är tillgängliga under **Produktionskontroll \> Inställningar \> Resurser** i navigeringsfönstret. Båda snabbflikarna innehåller ett rutnät med de resurser som har associerats med en vald resurs eller kapacitet. Båda snabbflikarna innehåller även ett verktygsfält som du använder när du vill lägga till, ta bort och redigera rader i rutnätet. Rutnätet innehåller följande kolumner:
 
 - **Resurs** eller **Kapacitet** – Välj den resurs eller kapacitet som tilldelas av raden.
 - **Beskrivning** – Ange en kort beskrivning av resursen eller kapaciteten.
@@ -52,15 +52,15 @@ Om du vill tilldela funktioner till en operationsresurs använder du snabbflikar
 
 Det här exemplet visar hur planeringsmotorn väljer resurser utifrån kapacitet.
 
-Ett produktionsflöde har fem åtgärder: *10*, *20*, *30*, *40* och *50*. Varje flödesoperation kräver en resurs med olika kapacitet. Flödesoperation *10* kräver en resurs som har möjlighet att montera en högtalare(*0050 Spkr sammansättning*) och funktionen träbearbetning (*1010 träfunktioner*). Flödesoperation *50* kräver en resurs som har förmågan att packa en produkt (*0070 förpackningskapaciteten*).
+Ett produktionsflöde har fem åtgärder: *10*, *20*, *30*, *40* och *50*. Varje flödesåtgärd kräver en resurs med olika kapacitet. Flödesåtgärd *10* kräver en resurs som har möjlighet att montera en högtalare(*0050 Spkr sammansättning*) och funktionen träbearbetning (*1010 träfunktioner*). Flödesåtgärd *50* kräver en resurs som har förmågan att packa en produkt (*0070 förpackningskapaciteten*).
 
 ![Kapacitet används för planering.](media/capability-based-scheduling.png "Kapacitet används för planering.")
 
-Under tidsplaneringen söker motor efter resurser som uppfyller operationsbehoven. Till exempel väljer schemaläggningsmotorn resurs *00101* för att utföra åtgärden *10*, eftersom den här resursen är den första resursen som finns som har både de nödvändiga funktionerna. Till exempel väljer schemaläggningsmotorn resurs *00301* för att utföra åtgärden *50*, eftersom den här resursen är förpackningskapaciteten.
+Under tidsplaneringen söker motor efter resurser som uppfyller åtgärdsbehoven. Till exempel väljer schemaläggningsmotorn resurs *00101* för att utföra åtgärden *10*, eftersom den här resursen är den första resursen som finns som har både de nödvändiga funktionerna. Till exempel väljer schemaläggningsmotorn resurs *00301* för att utföra åtgärden *50*, eftersom den här resursen är förpackningskapaciteten.
 
 Tänk sedan på hur det här exemplet påverkas när kompetensnivåer används:
 
-- Operation *10* kräver en lägsta effektivitetsnivå på *7* för kapaciteten *0059 sammansättning*.
+- Åtgärd *10* kräver en lägsta effektivitetsnivå på *7* för kapaciteten *0059 sammansättning*.
 - Resurs *00101* har effektivitetsnivå på *5* för kapacitet *0059 sammansättning*.
 - Resurs *00102* har effektivitetsnivå på *10* för kapacitet *0059 sammansättning*.
 

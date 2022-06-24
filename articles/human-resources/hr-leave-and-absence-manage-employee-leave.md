@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d168fe3baac314455b2fefc231ab455a0b85c0e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0ef671ee42848d079cf1ff9bc2328216df4e9e20
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695828"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888800"
 ---
 # <a name="manage-employee-leave"></a>Hantera tjänstledighet för medarbetare
 
 >[!Important]
->Funktionen som anges i det här avsnittet är för närvarande tillgänglig för kunder med fristående Dynamics 365 Human Resources. Vissa eller alla funktionerna kommer att vara tillgängliga i en kommande version av Finance-infrastrukturen efter Finance version 10.0.26.
+>Funktionen som anges i den här artikeln är för närvarande tillgänglig för kunder med fristående Dynamics 365 Human Resources. Vissa eller alla funktionerna kommer att vara tillgängliga i en kommande version av Finance-infrastrukturen efter Finance version 10.0.26.
 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

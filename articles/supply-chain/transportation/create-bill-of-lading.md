@@ -1,6 +1,6 @@
 ---
 title: Skapa en fraktsedel
-description: I det här avsnittet beskrivs hur du skapar en fraktsedel när du använder lagerstyrningsprocesser.
+description: I denna artikel beskrivs hur du skapar en fraktsedel när du använder lagerstyrningsprocesser.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2051583ae1606c9e4c099c2029807ca04d9d076
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 34e84fee13dcff574f1700ba2b8f577f4c401cbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669920"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885795"
 ---
 # <a name="create-a-bill-of-lading"></a>Skapa en fraktsedel
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skapar en fraktsedel när du använder lagerstyrningsprocesser.  
+I denna artikel beskrivs hur du skapar en fraktsedel när du använder lagerstyrningsprocesser.  
 
 En fraktsedel är ett juridiskt dokument mellan företaget som skeppar artiklarna och transportföretaget. Dokumentet medföljer de levererade artiklarna och fungerar som ett leveranskvitto när artiklarna levereras till målet. Om du använder lagerstyrning finns det två sätt att skapa en fraktsedel:
 

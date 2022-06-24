@@ -1,6 +1,6 @@
 ---
-title: Implementeringsriktlinjer för integrationsprovet för skatteregistreringstjänsten för Republiken Tjeckien (äldre)
-description: Det här ämnet ger riktlinjer för distribution av exemplet på räkenskapsintegration för Republiken Tjeckien från Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK).
+title: Implementeringsriktlinjer för integreringsprovet för skatteregistreringstjänsten för Republiken Tjeckien (äldre)
+description: Denna artikel ger riktlinjer för distribution av exemplet på räkenskapsintegrering för Republiken Tjeckien från Microsoft Dynamics 365 Commerce Retail Software Development kit (SDK).
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: aaa894ccfd77a5522a3696e20987b9e67f3abee0
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 35584493cd2a4fecd5fc86d529ec43bb4ef97671
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613971"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881774"
 ---
-# <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-the-czech-republic-legacy"></a>Implementeringsriktlinjer för integrationsprovet för skatteregistreringstjänsten för Republiken Tjeckien (äldre)
+# <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-the-czech-republic-legacy"></a>Implementeringsriktlinjer för integreringsprovet för skatteregistreringstjänsten för Republiken Tjeckien (äldre)
 
 [!include [banner](../includes/banner.md)]
 
 Det här ämnet ger riktlinjer för distribution av exemplet på skatteregistreringstjänsten för Republiken Tjeckien från Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) på en virtuell dator för utvecklare (VM) i Microsoft Dynamics Lifecycle Services (LCS). Mer information om exemplet på räkenskapsintegrering finns i [Exempel på skatteregistreringstjänsten för Republiken Tjeckien](emea-cze-fi-sample.md). 
 
-Exemplet på skatteintegrering för Republiken Tjeckien ingår i Retail SDK. Information om hur du installerar och använder SDK finns i [Retail programutvecklingskit (SDK) arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Det här exemplet består av tillägg för Commerce Runtime (CRT), kassa och Hardware Station. Om du vill köra det här exemplet måste du ändra och bygga CRT och Hardware Station-projekt. Vi rekommenderar att du använder en icke-modifierad Retail SDK för att göra de ändringar som beskrivs i det här avsnittet. Vi rekommenderar också att du använder ett källkontrollsystem, till exempel Azure DevOps, där inga filer har ändrats ännu.
+Exemplet på skatteintegrering för Republiken Tjeckien ingår i Retail SDK. Information om hur du installerar och använder SDK finns i [Retail programutvecklingskit (SDK) arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Det här exemplet består av tillägg för Commerce Runtime (CRT), kassa och Hardware Station. Om du vill köra det här exemplet måste du ändra och bygga CRT och Hardware Station-projekt. Vi rekommenderar att du använder en icke-modifierad detaljhandels-SDK för att utföra de ändringar som beskrivs i denna artikel. Vi rekommenderar också att du använder ett källkontrollsystem, till exempel Azure DevOps, där inga filer har ändrats ännu.
 
 ## <a name="development-environment"></a>Utvecklingsmiljö
 
@@ -183,7 +183,7 @@ Föregående procedur aktiverar tilläggen som är komponenter i exemplet på sk
 
 ## <a name="design-of-extensions"></a>Design av tilläggen
 
-Exemplet på integrering av räkenskapsregistreringstjänsten för Tyskland baseras på [räkenskapsintegrationsfunktionen](fiscal-integration-for-retail-channel.md). Mer information om design för räkenskapsintegreringslösning finns i [översikt över räkenskapsintegrering för exempeldesign](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
+Exemplet på integrering av räkenskapsregistreringstjänsten för Tyskland baseras på [räkenskapsintegreringsfunktionen](fiscal-integration-for-retail-channel.md). Mer information om design för räkenskapsintegreringslösning finns i [översikt över räkenskapsintegrering för exempeldesign](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 ### <a name="commerce-runtime-extension-design"></a>Utbyggbarhetdesign för Commerce Runtime
 
@@ -195,7 +195,7 @@ CRT-tillägget är **Runtime.Extensions.DocumentProvider.EFRSample**.
 
 Det finns en enda **DocumentProviderEFRFiscalCZE**-begärandehanterare för dokumentprovidern. Detta används för att generera skattedokument för räkenskapsregistreringstjänst.
 
-Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på dokumentprovidern för koppling som anges i Commerce-administration.
+Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på dokumentprovidern för koppling som anges i Commerce headquarters.
 
 Kopplingen stöder följande begäranden:
 
@@ -205,7 +205,7 @@ Kopplingen stöder följande begäranden:
 
 #### <a name="configuration"></a>Konfiguration
 
-Konfigurationsfilen **DocumentProviderFiscalEFRSampleCzech** finns i mappen **Konfiguration** för tilläggsprojektet. Syftet med den här filen är att aktivera inställningar för dokumentprovidern som ska konfigureras från Commerce-administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration. Följande inställningar är tillagda:
+Konfigurationsfilen **DocumentProviderFiscalEFRSampleCzech** finns i mappen **Konfiguration** för tilläggsprojektet. Syftet med den här filen är att aktivera inställningar för dokumentprovidern som ska konfigureras från Commerce headquarters. Filformatet justeras med kraven för konfiguration av räkenskapsintegrering. Följande inställningar är tillagda:
 
 - Mappning av momssatser
 - Standardmomsgrupp
@@ -221,7 +221,7 @@ Tillägget för maskinvarustation kallas **HardwareStation.Extension.EFRSample**
 
 **EFRHandler** begäranhanteraren är startpunkten för hantering av begäranden till räkenskapsregistreringstjänst.
 
-Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på räkenskapskopplingsnamn som anges i Commerce-administration.
+Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på räkenskapskopplingsnamn som anges i Commerce headquarters.
 
 Kopplingen stöder följande begäranden:
 
@@ -231,7 +231,7 @@ Kopplingen stöder följande begäranden:
 
 #### <a name="configuration"></a>Konfiguration
 
-Konfigurationsfilen finns i mappen **konfiguration** för tilläggsprojektet. Syftet med filen är att aktivera inställningar för räkenskapskoppling som ska konfigureras från Commerce-administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration. Följande inställningar är tillagda:
+Konfigurationsfilen finns i mappen **konfiguration** för tilläggsprojektet. Syftet med filen är att aktivera inställningar för räkenskapskoppling som ska konfigureras från Commerce headquarters. Filformatet justeras med kraven för konfiguration av räkenskapsintegrering. Följande inställningar är tillagda:
 
 - **Slutpunktsadress** – URL:en för skatteregistreringstjänsten.
 - **Tidsgräns** – Den tid i millisekunder (ms) som anslutningsprogrammet väntar på ett svar från skatteregistreringstjänsten.
@@ -242,7 +242,7 @@ Syftet med kassatillägget för anslutningsprogram för skatt är att kommunicer
 
 #### <a name="fiscal-connector-factory"></a>Anslutningsprogram för skatt
 
-Generatorn för anslutningsprogram för skatt mappar namne tpå anslutningsprogrammet till implementeringen av anslutningsprogrammet för skatt och finns i filen **Pos.Extension\\Anslutningsprogram\\FiscalConnectorFactory.ts**. Anslutningsprogrammets namn ska matcha namnet på anslutningsprogrammet för skatt som anges i Commerce-administration.
+Generatorn för anslutningsprogram för skatt mappar namne tpå anslutningsprogrammet till implementeringen av anslutningsprogrammet för skatt och finns i filen **Pos.Extension\\Anslutningsprogram\\FiscalConnectorFactory.ts**. Anslutningsprogrammets namn ska matcha namnet på anslutningsprogrammet för skatt som anges i Commerce headquarters.
 
 #### <a name="efr-fiscal-connector"></a>Anslutningsprogram för EFR-skatt
 
@@ -254,7 +254,7 @@ EFR-anslutningsprogrammet för skatt finns i filen **Pos.Extension\\Connectors\\
 
 #### <a name="configuration"></a>Konfiguration
 
-Konfigurationsfilen finns i mappen **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** i databasen [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Syftet med filen är att aktivera inställningar för räkenskapskoppling som ska konfigureras från Commerce-administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration. Följande inställningar är tillagda:
+Konfigurationsfilen finns i mappen **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** i databasen [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Syftet med filen är att aktivera inställningar för räkenskapskoppling som ska konfigureras från Commerce headquarters. Filformatet justeras med kraven för konfiguration av räkenskapsintegrering. Följande inställningar är tillagda:
 
 - **Slutpunktsadress** – URL:en för skatteregistreringstjänsten.
 - **Tidsgräns** – Den tid i millisekunder (ms) som anslutningsprogrammet väntar på ett svar från skatteregistreringstjänsten.

@@ -1,6 +1,6 @@
 ---
 title: Köra anpassade X++-skript utan avbrott
-description: I det här avsnittet beskrivs hur du överför och kör de paket som kan distribueras och som innehåller anpassade X++-skript utan att behöva pausa systemet.
+description: I den här artikeln beskrivs hur du överför och kör de paket som kan distribueras och som innehåller anpassade X++-skript utan att behöva pausa systemet.
 author: AndersGirke
 ms.date: 12/16/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-12-16
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: fcd0a472fa5116ca0b3a59561b6eeb72181a9113
-ms.sourcegitcommit: 44e6875e974a3a1b3e1d7a24c1a3cff3d3697cdc
+ms.openlocfilehash: ff01e2ff8ec105603bb91e0b555301f36e8985b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8088354"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867341"
 ---
 # <a name="run-custom-x-scripts-with-zero-downtime"></a>Köra anpassade X++-skript utan avbrott
 
@@ -122,7 +122,7 @@ Använd följande procedur för att ladda upp och köra ett skript.
 
 1. I din Ekonomi och Drift-app, gå till **Systemadministration \> Periodiska uppgifter \> Databas \> Anpassade skript**.
 1. Välj **överför**.
-1. Välj det paket som kan distribueras och som du skapat på det sätt som beskrivs tidigare i det här avsnittet. Du uppmanas att ange syftet med skriptet.
+1. Välj det paket som kan distribueras och som du skapat på det sätt som beskrivs tidigare i den här artikeln. Du uppmanas att ange syftet med skriptet.
 1. Skriptet måste nu godkännas av en annan användare än den som förde över det. Godkännaren måste följa dessa steg:
 
     1. Gå till **Systemadministration \> periodisk \> databas \> anpassade skript**.

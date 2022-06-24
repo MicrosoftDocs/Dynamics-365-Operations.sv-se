@@ -1,6 +1,6 @@
 ---
 title: Fastställa gemensamma värden för konstruktionsändringshantering
-description: I det här avsnittet beskrivs hur du upprättar vanliga värden som används för parametrar i olika delar av konstruktionsändringshantering.
+description: I denna artikel beskrivs hur du upprättar vanliga värden som används för parametrar i olika delar av konstruktionsändringshantering.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: c2ff21490dc71859d75923dd757e264096d4fcba
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 376e3f209109d36e5a18b11d81afc55ba509e3e4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565937"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852546"
 ---
 # <a name="establish-common-values-for-engineering-change-management"></a>Fastställa gemensamma värden för konstruktionsändringshantering
 
 [!include [banner](../includes/banner.md)]
 
-När du ställer in konstruktionsändringshantering måste du upprätta flera uppsättningar med värden som ska användas för att fylla i nedrullningsbara listor i andra delar av användargränssnittet (UI). Du bör ange dessa värden enligt de produkttyper som du tillverkar och dina specifika affärsbehov.
+När du konfigurerar konstruktionsändringshantering måste du upprätta flera uppsättningar med värden som ska användas för att fylla i nedrullningsbara listor i andra delar av användargränssnittet (UI). Du bör ange dessa värden enligt de produkttyper som du tillverkar och dina specifika affärsbehov.
 
 ## <a name="engineering-change-categories"></a>Konstruktionsändringskategorier
 
-Du använder kategorier för teknisk ändring för att organisera dina tekniska ändringsorder, så att de är enklare att hantera och granska. Det kan till exempel vara praktiskt att ställa in ett arbetsflöde där en viss avdelning måste granska de föreslagna ändringarna, beroende på kategorin. Därför innehåller teknikändringsorder ett fält för **kategori**.
+Du använder kategorier för teknisk ändring för att organisera dina tekniska ändringsorder, så att de är enklare att hantera och granska. Det kan till exempel vara praktiskt att konfigurera ett arbetsflöde där en viss avdelning måste granska de föreslagna ändringarna, beroende på kategorin. Därför innehåller teknikändringsorder ett fält för **kategori**.
 
 För att fastställa samlingen av tekniska förändringskategorier som används i ditt företag, gå till **Konstruktionsändringshantering \> Inställningar \> Konstruktionsändringshantering \> Konstruktionsändringskategorier**. Du kan sedan använda knapparna i åtgärdsfönstret för att lägga till, ta bort och redigera värden och för att ordna dem i den ordning de visas i listrutorna.
 
@@ -76,7 +76,7 @@ Du använder teknik för att ändra allvarlighetsregeluppsättningar för att sk
 
 När systemet utvärderar allvarlighetsgrad, bearbetar det reglerna i den ordning de visas på sidan, uppifrån och ned. Om en regel ska väljas och dess prioritet ska kunna fastställas måste alla regler i regeluppsättningen uppfyllas.
 
-Gå till för att ställa in de allvarlighetsregler som gäller för varje nivå som du har definierat **Konstruktionsändringshantering \> Inställningar \> Konstruktionsändringshantering \> Regeluppsättningarna för allvarlighetsgrad**. Gör sedan något av följande.
+Gå till för att konfigurera de allvarlighetsregler som gäller för varje nivå som du har definierat **Konstruktionsändringshantering \> Inställningar \> Konstruktionsändringshantering \> Regeluppsättningarna för allvarlighetsgrad**. Gör sedan något av följande.
 
 - Om du vill skapa en ny regeluppsättning väljer du **ny** i åtgärdsfönstret och anger sedan fälten enligt beskrivningen senare i detta avsnitt.
 - Om du vill redigera en befintlig regeluppsättning markerar du den i listvyn, väljer **Redigera** i åtgärdsfönstret och anger sedan fälten enligt beskrivningen senare i detta avsnitt.

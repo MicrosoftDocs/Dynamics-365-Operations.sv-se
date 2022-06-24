@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f969224f48cdb1f12b48b9f5d839d7c88168e87d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 7026453bf3a0eda2b9bc4d8538150974bd6aa634
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674265"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847916"
 ---
 # <a name="repair-management"></a>Reparationshantering       
 
@@ -29,7 +29,7 @@ ms.locfileid: "8674265"
 
 Inför reparationshantering kan du gruppera problem systematiskt. Detta gör det enklare att föreslå lösningar som tidigare har lyckats.
 
-Du kan ställa in symptom, diagnos och upplösning. Dessa kan senare användas när du får ett liknande objekt för reparation. Du kan också ställa in reparationsfaser så att du kan följa ärendeförloppet.
+Du kan konfigurera symptom, diagnos och upplösning. Dessa kan senare användas när du får ett liknande objekt för reparation. Du kan också konfigurera reparationsfaser så att du kan följa ärendeförloppet.
 
 ## <a name="setting-up-repair-management"></a>Ställa in reparationshantering.
 
@@ -45,7 +45,7 @@ Använd följande inställningsformulär när du anger information som används 
 
 Symptom är hur kunden karaktäriserar problemet. Symptom omfattar kundens observationer som anger reparationsbehovet.
 
-Du kan ställa in symptomområden, symptomkoder och tillstånd. Symptomområden omfattar felområden och symptomkoden täcker in felsymptomet. Villkoret beskriver situationen eller miljö som finns när problemet uppstår.
+Du kan konfigurera symptomområden, symptomkoder och tillstånd. Symptomområden omfattar felområden och symptomkoden täcker in felsymptomet. Villkoret beskriver situationen eller miljö som finns när problemet uppstår.
 
 **Exempel**
 
@@ -91,13 +91,13 @@ Du kan skapa reparationsrader för varje steg i reparationsprocessen.
 
 ## <a name="tracking-progress-and-resolving-a-repair-issue"></a>Uppföljning och lösa ett problem med reparation
 
-Du kan ställa in reparationsfaser för en reparationsrad om du vill spåra ärendeförloppet.
+Du kan konfigurera reparationsfaser för en reparationsrad om du vill spåra ärendeförloppet.
 
 När en reparera problemet är löst kan stänga du reparationsraden. Ange reparationsfasen till en fas där egenskapen **avslutad** är aktiverad. Aktuellt datum och aktuell tid registreras som sluttid på raden.
 
 ## <a name="close-a-repair-line-for-a-resolved-issue"></a>Stänga en reparationsfas för ett löst ärende
 
-1.  Öppna formuläret **Reparationsrader**. Följ proceduren tidigare i det här avsnittet och skapa en reparationsrad.
+1.  Öppna formuläret **Reparationsrader**. Följ proceduren tidigare i denna artikel och skapa en reparationsrad.
 
 2.  Markera reparationsraden med reparationsärendet som du vill stänga.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2021-03-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: c583a2a89b45b59ea76ffd8e38b6206c9ca9ed41
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3d4c15504b2ad128493e1bafa36aed271c2ab6dc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722588"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864293"
 ---
 # <a name="financial-dimension-sets"></a>Ekonomiska dimensionsuppsättningar
 

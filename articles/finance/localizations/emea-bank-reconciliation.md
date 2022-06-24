@@ -1,6 +1,6 @@
 ---
 title: Bankutdrag och betalningsavstämning för EU
-description: Det här avsnittet innehåller en översikt över funktioner med vilka du kan stämma av betalningsinformation från banker i format som används av europeiska länder.
+description: Den här artikeln innehåller en översikt över funktioner med vilka du kan stämma av betalningsinformation från banker i format som används av europeiska länder.
 author: anasyash
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Belgium, Norway, Sweden, Switzerland
 ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: afad3639836d8473ab420f68164c68772ca62db6
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: a8ee9bd6ff4c458df884bc484f66999ddbb8900a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592514"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872387"
 ---
 # <a name="bank-statement-and-payment-reconciliation-for-the-eu"></a>Bankutdrag och betalningsavstämning för EU
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över funktioner med vilka du kan stämma av betalningsinformation från banker i format som används av europeiska länder. Du kan importera transaktioner från banker och kvitta dessa transaktioner mot befintliga transaktioner. I Europa kan du göra detta i följande fall:
+Den här artikeln innehåller en översikt över funktioner med vilka du kan stämma av betalningsinformation från banker i format som används av europeiska länder. Du kan importera transaktioner från banker och kvitta dessa transaktioner mot befintliga transaktioner. I Europa kan du göra detta i följande fall:
 
 -   Importera bankutdrag
 -   Importera betalningar

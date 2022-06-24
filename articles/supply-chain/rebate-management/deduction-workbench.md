@@ -1,6 +1,6 @@
 ---
 title: Hantera avdrag med workbench för avdrag
-description: I det här avsnittet beskrivs hur du använder workbench för avdrag för att bearbeta kundbetalningar som omfattar avdrag.
+description: I denna artikel beskrivs hur du använder workbench för avdrag för att bearbeta kundbetalningar som omfattar avdrag.
 author: sherry-zheng
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: bf98529176fbed368708ea925f542a70f2936037
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 607ad528b56d1f0c9a78e113f67c920cdae6e620
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500412"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873620"
 ---
 # <a name="manage-deductions-using-the-deduction-workbench"></a>Hantera avdrag med workbench för avdrag
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du använder workbench för avdrag för att bearbeta kundbetalningar som omfattar avdrag.
+I denna artikel beskrivs hur du använder workbench för avdrag för att bearbeta kundbetalningar som omfattar avdrag.
 
 En kund som ska få rabatt kan välja att inte vänta på utbetalning av rabatten. I stället kan kunden skicka en betalning som inkluderar ett avdrag för rabattbeloppet. För att hantera den här typen av transaktioner kan du använda workbench för avdrag för att matcha avdrag för att öppna kredittransaktioner, dela avdrag, neka avdrag och slriva av avdrag.
 
 > [!NOTE]
-> Workbench för avdrag har länge varit en del av försäljnings- och marknadsföringsfunktionen i Microsoft Dynamics 365 Supply Chain Management. Nu har den förbättrats så att även fungera med den nyare modulen **Rabatthantering**. I det här avsnittet beskrivs hur du använder både äldre funktioner och funktioner för Rabatthantering i workbench för avdrag. Om du inte har [aktiverat modulen **Rabatthantering** för systemet](rebate-management-enable.md) kommer vissa av funktionerna som beskrivs här inte att vara tillgängliga.
+> Workbench för avdrag har länge varit en del av försäljnings- och marknadsföringsfunktionen i Microsoft Dynamics 365 Supply Chain Management. Nu har den förbättrats så att även fungera med den nyare modulen **Rabatthantering**. I denna artikel beskrivs hur du använder både äldre funktioner och funktioner för Rabatthantering i workbench för avdrag. Om du inte har [aktiverat modulen **Rabatthantering** för systemet](rebate-management-enable.md) kommer vissa av funktionerna som beskrivs här inte att vara tillgängliga.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -51,7 +51,7 @@ Om du använder ett avdrag för handelsavdragsrabatt måste du utföra följande
 
 Systemet registrerar alla avdragshändelser i en anspråksjournal. Därför måste ditt system inkludera en journal som kan användas för detta syfte. Om du inte redan har en anspråksjournal ställer du in den nu. Journalen behövs för att skapa avdrag skapas direkt i workbench för avdrag, på kundkvittnings- eller kundsida.
 
-För att ställa in en ny anspråksjournal för avdrag ska du följa de här stegen.
+För att konfigurera en ny anspråksjournal för avdrag ska du följa de här stegen.
 
 1. Gå till **Redovisning \> Journalkonfiguration \> Journalnamn**.
 1. Välj **Ny** och ange följande fält för det nya journalnamnet:
@@ -80,7 +80,7 @@ För att ställa in en ny anspråksjournal för avdrag ska du följa de här ste
 
 ### <a name="configure-general-ledger-parameters"></a>Konfigurera parametrar för redovisning
 
-När en anspråksjournal skapas för ett nytt avdrag skapas också två nya kundtransaktioner: en för att kompensera anspråksbeloppet mot den ursprungliga fakturan och en där en kunds skuld motsvarande anspråksbeloppet registreras (eftersom anspråket ännu inte har godkänts). Därför måste du ställa in ditt system så att en enda verifikation kan ha flera kundrader.
+När en anspråksjournal skapas för ett nytt avdrag skapas också två nya kundtransaktioner: en för att kompensera anspråksbeloppet mot den ursprungliga fakturan och en där en kunds skuld motsvarande anspråksbeloppet registreras (eftersom anspråket ännu inte har godkänts). Därför måste du konfigurera ditt system så att en enda verifikation kan ha flera kundrader.
 
 För att en enskild verifikation ska ha flera kundrader följer du dessa steg.
 
@@ -103,14 +103,14 @@ Systemet kräver att användarna anger en orsak för varje avdrag som de anger d
         - *Kvantitetsbaserat* – Skapa en negativ försäljningsorder eller returorder vid godkännande.
 
     - **Returorsakskod** – Välj en returorsakskod som ska användas som värde för **Returorsakskod** för returordern.
-    - **Typ** – välj en favdragstyp. Värdet för **Avdragskompensation** för den valda typen används för att ställa in fältet **Avdragskompensation** när ett avdrag eller anspråk skapas. Avdragstyper definieras på sidan **Avdragstyper** (**Försäljning och marknadsföring \> Handelsavdrag \> Avdrag \> Avdragstyper**).
+    - **Typ** – välj en favdragstyp. Värdet för **Avdragskompensation** för den valda typen används för att konfigurera fältet **Avdragskompensation** när ett avdrag eller anspråk skapas. Avdragstyper definieras på sidan **Avdragstyper** (**Försäljning och marknadsföring \> Handelsavdrag \> Avdrag \> Avdragstyper**).
     - **Bokföringskonto för anspråk** – Det här fältet är endast tillgängligt när fältet **Anspråksbas** är inställt på *Prisbaserat*. När ett prisbaserat anspråk godkänns tilldelar systemet det redovisningskonto du väljer här som värde för **Huvudkonto** för utkastet till fritextkreditfaktura.
 
 ### <a name="set-up-the-settle-approved-deductions-periodic-task"></a>Ställa in periodisk uppgift för kvittning av godkända avdrag
 
-För avdrag som skapas med hjälp av kommandot **Nytt avdrag** i workbench för avdrag, på kundkvittnings- eller kundsida kan du ställa in en periodisk uppgift för *Kvittning av godkända avdrag* som automatiskt matchar värden och belopp för avdrag och krediter med matchande **avdrags-ID**.
+För avdrag som skapas med hjälp av kommandot **Nytt avdrag** i workbench för avdrag, på kundkvittnings- eller kundsida kan du konfigurera en periodisk uppgift för *Kvittning av godkända avdrag* som automatiskt matchar värden och belopp för avdrag och krediter med matchande **avdrags-ID**.
 
-För att tidsplanera uppgiften går du till **Försäljning och marknadsföring \> Periodiska uppgifter \> Kvittning av godkända avdrag** och ställer in alternativ, filter och tidsplan, precis som med andra typer av periodiska uppgifter.
+För att tidsplanera uppgiften går du till **Försäljning och marknadsföring \> Periodiska uppgifter \> Kvittning av godkända avdrag** och konfigurerar alternativ, filter och tidsplan, precis som med andra typer av periodiska uppgifter.
 
 > [!NOTE]
 > Om alternativet **Automatisk kvittning** är inställt som *Ja* på fliken **Kvittning** på sidan **Parametrar för kundreskontra** (**Kundreskontra \> Inställning \> Parametrar för kundreskontra**) kommer den periodiska uppgiften *Kvittning av godkända avdrag* inte att utföra något eftersom krediten kvittas automatiskt.
@@ -159,16 +159,16 @@ För att skapa ett avdrag i workbench för avdrag ska du följa dessa steg.
         - *Kvantitetsbaserat* – En negativ försäljningsorder eller returorder skapas.
 
     - **Anspråksdatum** – Välj datum för anspråket. Standardvärdet är det aktuella datumet.
-    - **Anspråksorsak** – Välj orsakskod som gäller för det aktuella avdraget. Anspråksbasen du har valt påverkar vilka alternativ som gäller. Mer information om hur du skapar och konfigurerar anspråksorsaker som går att välja här finns i avsnittet [Skapa avdragsorsaker](#deduction-reasons) tidigare i det här avsnittet.
+    - **Anspråksorsak** – Välj orsakskod som gäller för det aktuella avdraget. Anspråksbasen du har valt påverkar vilka alternativ som gäller. Mer information om hur du skapar och konfigurerar anspråksorsaker som går att välja här finns i avsnittet [Skapa avdragsorsaker](#deduction-reasons) tidigare i denna artikel.
     - **Noteringar** – Lägg till eventuella noteringar. När anspråket har godkänts kan godkännaren redigera eller lägga till noteringar.
     - **Skapa anspråksjournal** – Ange om anspråksjournalen ska skapas när anspråket eller avdraget skapas:
 
-        - *Ja* – Systemet skapar och bokför en allmän journal med hjälp av anspråksjournalen som ställs in på sidan **Parametrar för kundreskontra**. (Mer information finns i [Konfigurera kundreskontra och avdrag](#accounts-receivable-deductions) tidigare i det här avsnittet.) När en faktura bifogas anspråket används anspråksjournalen för att minska saldot på den aktuella fakturan. Om anspråket senare avvisas återförs anspråksjournal och kvittningar (om en faktura har kopplats).
+        - *Ja* – Systemet skapar och bokför en allmän journal med hjälp av anspråksjournalen som ställs in på sidan **Parametrar för kundreskontra**. (Mer information finns i avsnittet [Konfigurera kundreskontra och avdrag](#accounts-receivable-deductions) tidigare i denna artikel.) När en faktura bifogas anspråket används anspråksjournalen för att minska saldot på den aktuella fakturan. Om anspråket senare avvisas återförs anspråksjournal och kvittningar (om en faktura har kopplats).
         - *Nej* – Ingen anspråksjournal skapas just nu. Den skapas när anspråket godkänns. En faktura kan fortfarande kopplas till det nya anspråket, även om en anspråksjournal inte skapats. Kvittning kan dock inte göras utan anspråksjournal.
 
 1. Välj **OK**.
 
-    Ett nytt avdrag har skapats. Om du ställer in alternativet **Skapa anspråksjournal** som *Ja* bokförs följande transaktioner:
+    Ett nytt avdrag har skapats. Om du konfigurerar alternativet **Skapa anspråksjournal** som *Ja* bokförs följande transaktioner:
 
     - **Två nya kundtransaktioner** – En transaktion motbokar anspråksbeloppet mot den ursprungliga fakturan. Den andra transaktionen registrerar en kunds skuld motsvarande anspråksbeloppet, eftersom anspråket ännu inte har godkänts. Den ursprungliga fakturatransaktionen och motbokning av anspråkstransaktionen markeras automatiskt för kvittning när du kopplar fakturan genom att välja **Underhåll \> Bifoga faktura** i åtgärdsrutan.
     - **Två motbokningstransaktioner** – Dessa transaktioner bokförs på **Motbokning avdrag** i redovisningen.
@@ -197,22 +197,22 @@ Processen för att skapa ett avdrag från en kundkvittning liknar processen för
         - *Kvantitetsbaserat* – En negativ försäljningsorder eller returorder skapas.
 
     - **Anspråksdatum** – Välj datum för anspråket. Standardvärdet är det aktuella datumet.
-    - **Anspråksorsak** – Välj orsakskod som gäller för det aktuella avdraget. Anspråksbasen du har valt påverkar vilka alternativ som gäller. Mer information om hur du skapar och konfigurerar anspråksorsaker som går att välja här finns i avsnittet [Skapa avdragsorsaker](#deduction-reasons) tidigare i det här avsnittet.
+    - **Anspråksorsak** – Välj orsakskod som gäller för det aktuella avdraget. Anspråksbasen du har valt påverkar vilka alternativ som gäller. Mer information om hur du skapar och konfigurerar anspråksorsaker som går att välja här finns i avsnittet [Skapa avdragsorsaker](#deduction-reasons) tidigare i denna artikel.
     - **Noteringar** – Lägg till eventuella noteringar. När anspråket har godkänts kan godkännaren redigera eller lägga till noteringar.
     - **Skapa anspråksjournal** – Ange om anspråksjournalen ska skapas när anspråket eller avdraget skapas:
 
-        - *Ja* – Systemet skapar och bokför en allmän journal med hjälp av anspråksjournalen som ställs in på sidan **Parametrar för kundreskontra**. (Mer information finns i [Konfigurera kundreskontra och avdrag](#accounts-receivable-deductions) tidigare i det här avsnittet.) När en faktura bifogas anspråket används anspråksjournalen för att minska saldot på den aktuella fakturan. Om anspråket senare avvisas återförs anspråksjournal och kvittningar (om en faktura har kopplats).
+        - *Ja* – Systemet skapar och bokför en allmän journal med hjälp av anspråksjournalen som ställs in på sidan **Parametrar för kundreskontra**. (Mer information finns i avsnittet [Konfigurera kundreskontra och avdrag](#accounts-receivable-deductions) tidigare i denna artikel.) När en faktura bifogas anspråket används anspråksjournalen för att minska saldot på den aktuella fakturan. Om anspråket senare avvisas återförs anspråksjournal och kvittningar (om en faktura har kopplats).
         - *Nej* – Ingen anspråksjournal skapas just nu. Den skapas när anspråket godkänns. En faktura kan fortfarande kopplas till det nya anspråket, även om en anspråksjournal inte skapats. Kvittning kan dock inte göras utan anspråksjournal.
 
 1. Välj **OK**.
 
-    Ett nytt avdrag har skapats. Om du ställer in alternativet **Skapa anspråksjournal** som *Ja* bokförs följande transaktioner:
+    Ett nytt avdrag har skapats. Om du konfigurerar alternativet **Skapa anspråksjournal** som *Ja* bokförs följande transaktioner:
 
     - **Två nya kundtransaktioner** – En transaktion motbokar anspråksbeloppet mot den ursprungliga fakturan. Den andra transaktionen registrerar en kunds skuld motsvarande anspråksbeloppet, eftersom anspråket ännu inte har godkänts. Den ursprungliga fakturatransaktionen och motbokning av anspråkstransaktionen markeras automatiskt för kvittning när du kopplar fakturan genom att välja **Underhåll \> Bifoga faktura** i åtgärdsrutan.
     - **Två motbokningstransaktioner** – Dessa transaktioner bokförs på **Motbokning avdrag** i redovisningen.
     - **Anspråksjournal** – Välj fliken **Referenser** för att visa anspråksjournal för varje avdrag som visas på workbench för avdrag. Anspråksjournalen visas i fältet **Journalbatchnummer**. Du kan även visa anspråksjournalen på fliken **Avdragshändelser**. Där kommer det att ha värdet *Match* för **Uppdateringstyp**.
 
-    Du returneras till sidan **Kvitta transaktioner**, som nu visar den valda fakturan som markerad. Knappen **Bokför** är bara tillgänglig om du ställer in alternativet **Skapa anspråksjournal** som *Ja*. Om den är tillgänglig väljer du **Bokför** om du vill minska saldot på fakturan med värdet för **Anspråksbelopp**.
+    Du returneras till sidan **Kvitta transaktioner**, som nu visar den valda fakturan som markerad. Knappen **Bokför** är bara tillgänglig om du konfigurerar alternativet **Skapa anspråksjournal** som *Ja*. Om den är tillgänglig väljer du **Bokför** om du vill minska saldot på fakturan med värdet för **Anspråksbelopp**.
 
 ### <a name="create-a-deduction-from-a-customer-page"></a>Skapa ett avdrag från en kundsida
 
@@ -235,16 +235,16 @@ Processen för att skapa ett avdrag från en kundsida liknar processen för att 
         - *Kvantitetsbaserat* – En negativ försäljningsorder eller returorder skapas.
 
     - **Anspråksdatum** – Välj datum för anspråket. Standardvärdet är det aktuella datumet.
-    - **Anspråksorsak** – Välj orsakskod som gäller för det aktuella avdraget. Anspråksbasen du har valt påverkar vilka alternativ som gäller. Mer information om hur du skapar och konfigurerar anspråksorsaker som går att välja här finns i avsnittet [Skapa avdragsorsaker](#deduction-reasons) tidigare i det här avsnittet.
+    - **Anspråksorsak** – Välj orsakskod som gäller för det aktuella avdraget. Anspråksbasen du har valt påverkar vilka alternativ som gäller. Mer information om hur du skapar och konfigurerar anspråksorsaker som går att välja här finns i avsnittet [Skapa avdragsorsaker](#deduction-reasons) tidigare i denna artikel.
     - **Noteringar** – Lägg till eventuella noteringar. När anspråket har godkänts kan godkännaren redigera eller lägga till noteringar.
     - **Skapa anspråksjournal** – Ange om anspråksjournalen ska skapas när anspråket eller avdraget skapas:
 
-        - *Ja* – Systemet skapar och bokför en allmän journal med hjälp av anspråksjournalen som ställs in på sidan **Parametrar för kundreskontra**. (Mer information finns i [Konfigurera kundreskontra och avdrag](#accounts-receivable-deductions) tidigare i det här avsnittet.) När en faktura bifogas anspråket används anspråksjournalen för att minska saldot på den aktuella fakturan. Om anspråket senare avvisas återförs anspråksjournal och kvittningar (om en faktura har kopplats).
+        - *Ja* – Systemet skapar och bokför en allmän journal med hjälp av anspråksjournalen som ställs in på sidan **Parametrar för kundreskontra**. (Mer information finns i avsnittet [Konfigurera kundreskontra och avdrag](#accounts-receivable-deductions) tidigare i denna artikel.) När en faktura bifogas anspråket används anspråksjournalen för att minska saldot på den aktuella fakturan. Om anspråket senare avvisas återförs anspråksjournal och kvittningar (om en faktura har kopplats).
         - *Nej* – Ingen anspråksjournal skapas just nu. Den skapas när anspråket godkänns. En faktura kan fortfarande kopplas till det nya anspråket, även om en anspråksjournal inte skapats. Kvittning kan dock inte göras utan anspråksjournal.
 
 1. Välj **OK**.
 
-    Ett nytt avdrag har skapats. Om du ställer in alternativet **Skapa anspråksjournal** som *Ja* bokförs följande transaktioner:
+    Ett nytt avdrag har skapats. Om du konfigurerar alternativet **Skapa anspråksjournal** som *Ja* bokförs följande transaktioner:
 
     - **Två nya kundtransaktioner** – En transaktion motbokar anspråksbeloppet mot den ursprungliga fakturan. Den andra transaktionen registrerar en kunds skuld motsvarande anspråksbeloppet, eftersom anspråket ännu inte har godkänts. Den ursprungliga fakturatransaktionen och motbokning av anspråkstransaktionen markeras automatiskt för kvittning när du kopplar fakturan genom att välja **Underhåll \> Bifoga faktura** i åtgärdsrutan.
     - **Två motbokningstransaktioner** – Dessa transaktioner bokförs på **Motbokning avdrag** i redovisningen.
@@ -280,7 +280,7 @@ Följ de här stegen för att matcha ett avdrag mot en kredit.
 1. I åtgärdsrutan väljer du **Underhåll \> Matcha**. Systemet matchar avdraget mot krediten. Om saldo återstår för avdraget visas det i fältet **Resterande belopp** på fliken **Avdrag**.
 
     > [!NOTE]
-    > För avdrag som har skapats med kommandot **Nytt avdrag** i workbench för avdrag, på kundkvittnings- eller kundsida är kommandot **Underhåll \> Match** endast tillgängligt om fältet **Anspråksstatus** har ställts in som *Godkänt*. Det här kommandot kan användas för att manuellt matcha den prisbaserade eller kvantitetsbaserade transaktionen med den associerade krediten i avsnittet **Öppna transaktioner**. Krediten skapas antingen när avdraget godkänns (genom att använda kommandot **Underhåll \> Godkänn avdrag**) eller när det kopplas till en befintlig kredit enligt beskrivningen i [Krediter som skapas utanför processen för att godkänna avdrag](#credits-outside-approval) längre ner i det här avsnittet. Den periodiska uppgiften *Kvitta godkända avdrag* (**Försäljning och marknadsföring \> Periodiska uppgifter \> Kvitta godkända avdrag**) kan även användas för att automatiskt matcha avdrag och krediter med matchande värde för **avdrags-ID** och matchande belopp.
+    > För avdrag som har skapats med kommandot **Nytt avdrag** i workbench för avdrag, på kundkvittnings- eller kundsida är kommandot **Underhåll \> Match** endast tillgängligt om fältet **Anspråksstatus** har ställts in som *Godkänt*. Det här kommandot kan användas för att manuellt matcha den prisbaserade eller kvantitetsbaserade transaktionen med den associerade krediten i avsnittet **Öppna transaktioner**. Krediten skapas antingen när avdraget godkänns (genom att använda kommandot **Underhåll \> Godkänn avdrag**) eller när det kopplas till en befintlig kredit enligt beskrivningen i [Krediter som skapas utanför processen för att godkänna avdrag](#credits-outside-approval) längre ner i denna artikel. Den periodiska uppgiften *Kvitta godkända avdrag* (**Försäljning och marknadsföring \> Periodiska uppgifter \> Kvitta godkända avdrag**) kan även användas för att automatiskt matcha avdrag och krediter med matchande värde för **avdrags-ID** och matchande belopp.
 
 ### <a name="split-a-deduction"></a>Dela ett avdrag
 
@@ -552,7 +552,7 @@ Ibland har du kanske inte en godkänd rabatt att matcha mot ett avdrag. I detta 
 
 Den här funktionen är användbar om du använder handelsavtal. Mer information om handelsavdrag finns i [Hantering av handelsavdrag](../sales-marketing/trade-allowance.md).
 
-Först måste du ställa in en mall som kan användas för att skapa det nya avtalet om handelsavdrag. Följ dessa steg för att ställa in en mall.
+Först måste du konfigurera en mall som kan användas för att skapa det nya avtalet om handelsavdrag. Följ dessa steg för att konfigurera en mall.
 
 1. Gå till **Försäljning och marknadsföring \> Handelsavdrag \> Mallar**.
 1. Klicka på **Ny** i åtgärdsfönstret.

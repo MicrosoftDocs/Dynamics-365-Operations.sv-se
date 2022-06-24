@@ -1,6 +1,6 @@
 ---
 title: Webbplatsväljarmodul
-description: Det här avsnittet handlar om modulen för webbplatsväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
+description: Denna artikel handlar om modulen för webbplatsväljare och beskriver hur du lägger till den på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/04/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: a1954f6b2fea35d5138218e6a2a23ab1fd04c8fc
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ef7753658f878fdf76c6a6beb82ce54e9c12e212
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710314"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884613"
 ---
 # <a name="site-picker-module"></a>Webbplatsväljarmodul
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om modulen för webbplatsväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
+Denna artikel handlar om modulen för webbplatsväljare och beskriver hur du lägger till den på webbsidorna i Microsoft Dynamics 365 Commerce.
 
 Om ett företag har olika webbplatser på olika marknader, regioner och språk, behöver webbplatsanvändarna ett enkelt sätt att växla mellan platserna och välja sin föredragna webbplats att handla på. I det här scenariot kan du använda modulen webbplatsväljare för att söka på flera webbplatser. En webbplatsväljare rekommenderas även när [geografisk detektering och omdirigering](geo-detection-redirection.md) har implementerats för din näthandelsplats, detta så att kunderna har möjlighet att åsidosätta den webbplatsinställning de anger via modulen [för lands-/regionsinställningar](country-region-picker-module.md). 
 
@@ -43,7 +43,7 @@ Modulen webbplatsväljare måste vara konfigurerad med en lista över platser (m
 
 ## <a name="add-a-site-picker-module-to-a-page"></a>Lägg till modulen för webbplatsväljare till en sida
 
-Modulen webbplatsväljare kan läggas till i platsen **webbplatsväljare** i [huvudmodul](author-header-module.md). När modulen för webbplatsväljare har lagts till kan du definiera modulens rubrik och webbplatsalternativ. Vanligtvis finns en rubrikmodul i ett rubrikfragment som kan delas på e-handelssidor för en site. 
+Modulen webbplatsväljare kan läggas till i platsen **webbplatsväljare** i [huvudmodul](author-header-module.md). När modulen för webbplatsväljare har lagts till kan du definiera modulens rubrik och webbplatsalternativ. Vanligtvis finns en rubrikmodul i ett rubrikfragment som kan delas på näthandelssidor för en site. 
 
 Följ de här stegen för att lägga till en webbplatsväljarmodul i en rubrikmodul.
 

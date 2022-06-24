@@ -1,6 +1,6 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources 26 september 2020
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 26 september 2020.
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 26 september 2020.
 author: jcart1106
 ms.date: 09/26/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8b0260c4d1bafe271a08336ceed7dc3742f1d590
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 1b7a89ae8a2132c8548d9451aa235d1bccb88809
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061394"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874258"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources 26 september 2020
 
@@ -27,7 +27,7 @@ ms.locfileid: "8061394"
 
 
 
-Det här ämnet beskriver nya, ändrade, kommer snart funktioner i Dynamics 365 Human Resources. Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
+Den här artikeln beskriver funktioner som är nya, ändrade eller kommer snart i Dynamics 365 Human Resources. Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
 Mer information om nya funktioner och deras förväntade allmänna tillgänglighetsdatum finns i [Översikt över Dynamics 365 Human Resources 2020 utgivningscykel 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -46,9 +46,9 @@ Följande funktion är i allmänhet tillgänglig i den här versionen:
 Den här versionen innehåller följande felkorrigeringar.
 
 > [!NOTE]
-> Vårt mål är att få den här informationen så snart som möjligt. Det kan finnas uppdateringar till det här avsnittet för att inkludera felkorrigeringar som gjorde det i versionen efter det att ämnet publicerades första gången.
+> Vårt mål är att få den här informationen så snart som möjligt. Det kan finnas uppdateringar till den här artikeln för att inkludera felkorrigeringar som gjorde det i versionen efter det att ämnet publicerades första gången.
 
-| Utfärda nummer | Utleverans | beskrivning |
+| Utfärda nummer | Problem | Beskrivning |
 | --- | --- | --- |
 | 469495 | Uppdatera standardrutnät och dialogruta för ekonomiska dimensioner | Standardrutnätet för ekonomiska dimensioner och dialogruta ärr uppdaterade i Personal. |
 | 474887 | Arbetsuppgiften för ledighetsansökan öppnar fel länk i ett manuellt beslut | När en arbetsflödeskonfiguration innehåller ett manuellt beslut, öppnar jag fellänken genom att navigera till ledighetsansökan från **arbetsuppgifter som har tilldelats till mig**, med antingen ett tomt formulär eller en ledighetsansökan som har skapats av aktuell användare i stället för den som har tilldelats dem för det manuella beslutet. |

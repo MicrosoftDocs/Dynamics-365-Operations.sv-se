@@ -1,6 +1,6 @@
 ---
 title: Synkronisera information om lagerjusteringar från Supply Chain Management till Field Service
-description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera information om lagernivåer från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.
+description: Denna artikel beskriver de mallar och underliggande uppgifter som används för att synkronisera information om lagernivåer från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.
 author: Henrikan
 ms.date: 05/07/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 8dfba2d2dc2fdd4af136e3cb20061d794369011f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: fc14fc63bc1a69a57b10f39b2cb9fb8014e6f70b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060955"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844805"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Synkronisera information om lagerjusteringar från Supply Chain Management till Field Service 
 
@@ -29,7 +29,7 @@ ms.locfileid: "8060955"
 
 
 
-Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera information om lagernivåer från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.
+Denna artikel beskriver de mallar och underliggande uppgifter som används för att synkronisera information om lagernivåer från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.
 
 [![Synkronisering av affärsprocesser mellan Supply Chain Management och Field Service.](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
@@ -62,7 +62,7 @@ Informationen registreras per frisläppt produkt för varje lagerställe och syn
 
 I Field Service skapar integreringslösningen lagerjournaler för delta, för att få nivåer i Field Service att matcha nivåer i Supply Chain Management.
 
-Supply Chain Management kommer att fungera som mall för lagernivåer. Därför är det viktigt att ställa in integration för arbetsorder, överföringar och justeringar från Field Service till Supply Chain Management om den funktionen används i Field Service samt synkronisering av lagernivåerna från Supply Chain Management.
+Supply Chain Management kommer att fungera som mall för lagernivåer. Därför är det viktigt att konfigurera integrering för arbetsorder, överföringar och justeringar från Field Service till Supply Chain Management om den funktionen används i Field Service samt synkronisering av lagernivåerna från Supply Chain Management.
 
 Produkter och lagerställen där lagernivåer hanteras från Supply Chain Management kan styras med avancerad fråga och filtrering (Power Query).
 
@@ -70,15 +70,15 @@ Produkter och lagerställen där lagernivåer hanteras från Supply Chain Manage
 > Det går att skapa flera lagerställen i Field Service (med **Hanteras externt = Nej**) och mappa dem till ett enda lager i Supply Chain Management med avancerad fråga och filtreringsfunktioner Detta används när du vill att Field Service ska hantera detaljerad lagernivå och bara skicka uppdateringar till Supply Chain Management. I detta fall kommer Field Service inte att få uppdateringar av lagernivåer från Supply Chain Management. För ytterligare information, se [Synkronisera lagerjusteringar från Field Service till Supply Chain Management](/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) och [Synkronisera arbetsorder i Field Service till försäljningsorder som är kopplade till projekt i Supply Chain Management](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
 ## <a name="field-service-crm-solution"></a>CRM-lösning för Field Service
-Entiteten **Externt produktlager** är en ny entitet som endast används för stöd i integrationen. Den här entiteten tar emot värdena för lagernivåer från Supply Chain Management i integrationen och omvandlar sedan dessa värden till manuella lagerjournaler, som sedan ändrar lagerprodukterna på lagret.
+Entiteten **Externt produktlager** är en ny entitet som endast används för stöd i integreringen. Den här entiteten tar emot värdena för lagernivåer från Supply Chain Management i integreringen och omvandlar sedan dessa värden till manuella lagerjournaler, som sedan ändrar lagerprodukterna på lagret.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 
-### <a name="data-integration"></a>Dataintegration
-För att projektet ska fungera måste du se till att integrationsnyckeln uppdateras för msdynce_externalproductinventories.
-1.  Gå till **Dataintegration > anslutningsuppsättningar**.
+### <a name="data-integration"></a>Dataintegrering
+För att projektet ska fungera måste du se till att integreringsnyckeln uppdateras för msdynce_externalproductinventories.
+1.  Gå till **Dataintegrering > anslutningsuppsättningar**.
 2.  Välj den använda anslutningsuppsättningen.
-3.  På fliken **Integrationsnyckeln**, se till att följande nyckel läggs till msdynce_externalproductinventories:
+3.  På fliken **Integreringsnyckeln**, se till att följande nyckel läggs till msdynce_externalproductinventories:
       - msdynce_productnumber (produktnummer)
       - msdynce_warehouseid (dist.lager-ID)
       

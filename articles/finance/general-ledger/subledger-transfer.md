@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 70a34fa1f4ee540d89ec05816e4065fb3e1df9ef
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6d9b40409089e2050dc28c21040069107b766aa0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871258"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Överför delredovisning till redovisningen
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs funktioner som är relaterade till reglerna för överföring av delredovisningsjournalposter.
+I den här artikeln beskrivs funktioner som är relaterade till reglerna för överföring av delredovisningsjournalposter.
 
 I version 8.1 gjordes ändringar för att tillåta överföring av regler, vilket föråldrade alternativet **Synkront**. Mer information finns i [Borttagna eller utfasade funktioner för Ekonomi och drift](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=%2fdynamics365%2ffinance%2ftoc.json#finance-and-operations-81-with-platform-update-20).
 

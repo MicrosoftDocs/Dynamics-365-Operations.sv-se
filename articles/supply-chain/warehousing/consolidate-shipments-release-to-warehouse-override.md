@@ -1,6 +1,6 @@
 ---
 title: Konsolidera försändelser när försändelsekonsolideringspolicyn åsidosätts
-description: Detta ämne innehåller ett scenario där en eller flera försäljningsrader måste släppas manuellt till lagerstället från sidan Släpp till lagerställe, och den systemdefinierade policyn för leveranskonsolidering måste åsidosättas före frisläppandet.
+description: Denna artikel innehåller ett scenario där en eller flera försäljningsrader måste frisläppas manuellt till lagerstället från sidan Släpp till lagerställe, och den systemdefinierade policyn för leveranskonsolidering måste åsidosättas före frisläppandet.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 8b1c8ac41fe0941c9bbfce20ce593eafe5699ef1
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 680941adeba1fc1cd54a02fb366d3d5903938d77
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675471"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878712"
 ---
 # <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden"></a>Konsolidera försändelser när försändelsekonsolideringspolicyn åsidosätts
 
 [!include [banner](../includes/banner.md)]
 
-Detta ämne innehåller ett scenario där en eller flera försäljningsrader måste släppas manuellt till lagerstället från sidan **Släpp till lagerställe**, och den systemdefinierade policyn för leveranskonsolidering måste åsidosättas före frisläppandet. Det kan krävas en åsidosättning av policyn för leveranskonsoliderings om en order som exempelvis normalt sett inte konsolideras med öppna leveranser nu måste konsolideras med öppna leveranser.
+Denna artikel innehåller ett scenario där en eller flera försäljningsrader måste släppas manuellt till lagerstället från sidan **Frisläpp till lagerställe**, och den systemdefinierade policyn för leveranskonsolidering måste åsidosättas före frisläppandet. Det kan krävas en åsidosättning av policyn för leveranskonsoliderings om en order som exempelvis normalt sett inte konsolideras med öppna leveranser nu måste konsolideras med öppna leveranser.
 
 Under scenariot kommer du att skapa en uppsättning försäljningsorder och sedan åsidosätta standardpolicyn för leveranskonsolidering innan du släpper orderna i lagerstället.
 
 ## <a name="make-demo-data-available"></a>Gör demodata tillgängliga
 
-Scenariot i detta ämne innehåller referensvärden och -poster som ingår i den standarddemodata som finns för Microsoft Dynamics 365 Supply Chain Management. Om du vill använda de värden som finns här på samma sätt som i övningarna måste du arbeta i en miljö där demonstrationsdata har installerats samt ställa in den juridiska personen på **USMF** innan du börjar.
+Scenariot i denna artikel innehåller referensvärden och -poster som ingår i den standarddemodata som finns för Microsoft Dynamics 365 Supply Chain Management. Om du vill använda de värden som finns här på samma sätt som i övningarna måste du arbeta i en miljö där demonstrationsdata har installerats samt konfigurera den juridiska personen på **USMF** innan du börjar.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Ställ in policyer och produktfilter för leveranskonsolidering
 

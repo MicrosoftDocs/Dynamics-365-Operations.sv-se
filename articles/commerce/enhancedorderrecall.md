@@ -1,6 +1,6 @@
 ---
 title: Åtgärden återkalla order i POS
-description: Det här avsnittet handlar om vilka funktioner som finns för att förbättra sidor för orderåterkallning i POS.
+description: Denna artikel handlar om vilka funktioner som finns för att förbättra sidor för orderåterkallning i POS.
 author: hhainesms
 ms.date: 03/12/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 43d6b2e4e5d923b16b02337432fc5259f66c0bf1a8ba1dbf311fb76cb3f085e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3723b40209ee1f8fb0ef77cb1ad52d123ff2a02f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737614"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869472"
 ---
 # <a name="recall-order-operation-in-pos"></a>Åtgärden återkalla order i POS
 
@@ -25,17 +25,17 @@ ms.locfileid: "6737614"
 
 Åtgärden **Återkalla order** i Commerce-POS ger uppdaterade funktioner för ordersökning och filtrering, samt orderspecifik information. Den här funktionen är tillgänglig i Commerce versioner 10.0.15 och senare.
 
-För att aktivera denna funktion, slå på funktionen **Förbättrad åtgärden återkalla order i POS** i arbetsytan **funktionshantering** i Commerce-administration. När du har aktiverat funktionen kan du överväga att uppdatera [bildskärmslayouter](pos-screen-layouts.md) i POS för att dra nytta av vissa av de ändrade funktionerna.
+För att aktivera denna funktion, slå på funktionen **Förbättrad åtgärden återkalla order i POS** i arbetsytan **funktionshantering** i Commerce headquarters. När du har aktiverat funktionen kan du överväga att uppdatera [bildskärmslayouter](pos-screen-layouts.md) i POS för att dra nytta av vissa av de ändrade funktionerna.
 
-Genom att konfigurera knappen **Återkalla order** kan organisationer distribuera operationen med en fördefinierad visning.
+Genom att konfigurera knappen **Återkalla order** kan organisationer distribuera åtgärden med en fördefinierad visning.
 
 ![Konfiguration av knapprutnät.](media/recallorderbuttongrid.png)
 
 Visningsalternativen är följande.
 - **Inget** – det här alternativet distribuerar åtgärden utan specifik visning. När en användare öppnar åtgärden med den här konfigurationen uppmanas de att söka efter order eller välja från ett fördefinierat orderfilter.
-- **Order som ska uppfyllas** – när en användare startar operationen körs en fråga automatiskt för att söka i och visa en lista med order som ska uppfyllas av användarens nuvarande butik. Dessa order konfigureras för butikshämtning eller butiksleverans och raderna på dessa order har ännu inte plockats eller packats.
-- **Order som ska hämtas** – när en användare startar operationen körs en fråga automatiskt för att söka i och visa en lista med order som är konfigurerade för hämtning i butik eller i användarens nuvarande butik.
-- **Order som ska levereras** – när en användare startar operationen körs en fråga automatiskt för att söka i och visa en lista med order som är konfigurerade för leverans från användarens nuvarande butik.
+- **Order som ska uppfyllas** – när en användare startar åtgärden körs en fråga automatiskt för att söka i och visa en lista med order som ska uppfyllas av användarens nuvarande butik. Dessa order konfigureras för butikshämtning eller butiksleverans och raderna på dessa order har ännu inte plockats eller packats.
+- **Order som ska hämtas** – när en användare startar åtgärden körs en fråga automatiskt för att söka i och visa en lista med order som är konfigurerade för hämtning i butik eller i användarens nuvarande butik.
+- **Order som ska levereras** – när en användare startar åtgärden körs en fråga automatiskt för att söka i och visa en lista med order som är konfigurerade för leverans från användarens nuvarande butik.
 
 När du startar åtgärden **Återkalla order** från POS, om bildskärmen har konfigurerats till **ingen** kan en användare söka efter och hämta order på något av följande sätt.
 - Skanna orderstreckkoder. Det här fältet söker efter ordernummer, kanalreferens och kvitto-ID för matchningar.
@@ -50,7 +50,7 @@ När sökkriterier har tillämpats visas en lista med matchande försäljningsor
 
 En användare kan välja en order i listan om du vill visa mer information. Informationspanelen till höger på skärmen visar specifika uppgifter för den valda ordern, inklusive order raddetaljer, leveransinformation och information om uppfyllelse.
 
-En användare kan välja en operation i AppBar. Beroende på orderns status kan vissa operationer inte aktiveras.
+En användare kan välja en åtgärd i AppBar. Beroende på orderns status kan vissa åtgärder inte aktiveras.
 
 - **Retur** – Startar processen för att skapa en retur för någon av de fakturerade produkterna på den valda kundordern.
 

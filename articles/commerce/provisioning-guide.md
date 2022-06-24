@@ -1,6 +1,6 @@
 ---
 title: Tillhandahåll en Dynamics 365 Commerce utvärderingsmiljö
-description: Det här avsnittet förklarar hur du etablerar en bedömningsmiljö för Microsoft Dynamics 365 Commerce.
+description: Denna artikel förklarar hur du tillhandahåller en bedömningsmiljö för Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 12/17/2020
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c8241c31e82d124398189666c3a1709d25884b8acd9c8f3b1068529cbd216684
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52a263d1ab833eb688b1049cd4e8c584e8c9a94d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777510"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868919"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Tillhandahåll en Dynamics 365 Commerce utvärderingsmiljö
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet förklarar hur du etablerar en bedömningsmiljö för Microsoft Dynamics 365 Commerce.
+Denna artikel förklarar hur du tillhandahåller en bedömningsmiljö för Microsoft Dynamics 365 Commerce.
 
-Innan du börjar rekommenderar vi att du tar en snabbgenomgång genom det här avsnittet för att få en uppfattning om vad processen kräver.
+Innan du börjar rekommenderar vi att du skummar igneom denna artikel i syfte att få en uppfattning om vad processen kräver.
 
 > [!NOTE]
 > Commerce bedömningsmiljöer är i allmänhet inte tillgängliga och ges till partners och kunder för varje enskild begäran. För mer information, kontakta din Microsoft-partnerkontakt.
 
-För att kunna etablera din bedömningsmiljö för Commerce måste du skapa ett projekt som har ett specifikt produktnamn och en viss typ. Miljön och Commerce Scale Unit (CSU) har även del specifika parametrar som du måste använda för att kunna förvänta dig att etablera näthandel senare. Instruktionerna i det här avsnittet beskriver alla nödvändiga steg för att slutföra etablering och de parametrar som du måste använda.
+För att kunna etablera din bedömningsmiljö för Commerce måste du skapa ett projekt som har ett specifikt produktnamn och en viss typ. Miljön och Commerce Scale Unit (CSU) har även del specifika parametrar som du måste använda för att kunna förvänta dig att etablera näthandel senare. Instruktionerna i denna artikel beskriver alla nödvändiga steg för att slutföra tillhandahållandet, samt de parametrar som du måste använda.
 
 När du har tillhandahållit din bedömningsmiljö för Commerce måste du slutföra några steg efter etablering för att förbereda den. Vissa steg är valfria, beroende på vilka delar av systemet du vill utvärdera. Du kan alltid slutföra de valfria stegen senare.
 
@@ -130,13 +130,13 @@ Följande felmeddelande kan visas under distributionsprocessen:
 
 > Bedömnings(demo-/test)miljöer måste registrera anslutningsprogrammet för skalningsenhet \<application ID\> i administrationen.
 
-Om CSU-initialiseringen misslyckas och du får det här felmeddelandet, noterar du program-ID:t (som är en global unik identifierare, GUID) och följer sedan stegen i nästa avsnitt om du vill registrera CSU-distribueringsprogrammet i Commerce-administrationen.
+Om CSU-initialiseringen misslyckas och du får det här felmeddelandet, noterar du program-ID:t (som är en global unik identifierare, GUID) och följer sedan stegen i nästa avsnitt om du vill registrera CSU-distribueringsprogrammet i Commerce headquarters.
 
-### <a name="register-the-csu-deployment-application-in-commerce-headquarters-if-required"></a>Registrera CSU-distribueringsprogrammet i Commerce-administrationen (vid behov)
+### <a name="register-the-csu-deployment-application-in-commerce-headquarters-if-required"></a>Registrera CSU-distribueringsprogrammet i Commerce headquarters (vid behov)
 
-Följ dessa steg om du vill registrera CSU-distribueringsprogrammet i Commerce-administrationen.
+Följ dessa steg om du vill registrera CSU-distribueringsprogrammet i Commerce headquarters.
 
-1. I Commerce-administrationen går du till **Systemadministration \> Inställningar \> Azure Active Directory-program**.
+1. I Commerce headquarters går du till **Systemadministration \> Inställningar \> Azure Active Directory-program**.
 1. I kolumnen **Klient-ID** anger du program-ID:t från det CSU-initieringsfelmeddelande som du har fått.
 1. Ange eventuell beskrivande text i kolumnen **Namn** (t. ex. **CSU Eval**).
 1. I kolumnen **Användar-ID** anger du **RetailServiceAccount**.

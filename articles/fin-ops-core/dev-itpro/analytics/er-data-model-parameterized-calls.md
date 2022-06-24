@@ -1,6 +1,6 @@
 ---
 title: Stödparameteriserade anrop rörande ER-datamodeller
-description: I detta ämne beskrivs hur du implementerar parameteriserade anrop i datamodeller för elektronisk rapportering (ER).
+description: I denna artikel beskrivs hur du implementerar parameteriserade anrop i datamodeller för elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 03/14/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 968b0769607e9fdbed57c25b727ed44988a92913
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: 65ac81e9aa25b286640fd526e71b55de3b0695ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8419477"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884269"
 ---
 # <a name="support-parameterized-calls-of-er-data-models"></a>Stödparameteriserade anrop rörande ER-datamodeller
 
@@ -160,7 +160,7 @@ Du kan ange repsektive parameter i ett datamodellfält för vilket argumentet ka
 > [!NOTE]
 > Standardvärdet för parametern för ett datamodellfält stöds inte. Om du lägger till en parameter i ett fält i en datamodell, och versionen av den datamodellen redan har frisläppts och publicerats, måste du [basera om](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) alla motsvarande modellmappningar och -format till den nya versionen av den här modellen, detta eftersom den här datamodellen inte är bakåtkompatibel.
 
-Du kan konfigurera parametriserade datamodellfält så att modellmappningsanropen blir formatspecifika. Detta arbetssätt kan hjälpa dig att minska antalet modellmappningar som måste konfigureras för många format för en enskild datamodell. Du kan också använda den här metoden om du vill förbättra körningsprestandan i dina format och minska den tid som krävs för att generera affärsdokument. Om du vill veta mer om den här funktionen fyller du i exemplet i det här avsnittet.
+Du kan konfigurera parametriserade datamodellfält så att modellmappningsanropen blir formatspecifika. Detta arbetssätt kan hjälpa dig att minska antalet modellmappningar som måste konfigureras för många format för en enskild datamodell. Du kan också använda den här metoden om du vill förbättra körningsprestandan i dina format och minska den tid som krävs för att generera affärsdokument. Om du vill veta mer om den här funktionen fyller du i exemplet i den här artikeln.
 
 ## <a name="example-use-parameterized-calls-of-er-data-models"></a>Exempel: Använd parameteriserade anrop av ER-datamodeller
 

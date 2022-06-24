@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 2b374d7aeab4d066b0894dde8f542c2f807d1ef9
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 3d3619137ccb909eed31af3793c6cf2773cc9886
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713344"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855416"
 ---
 # <a name="create-a-withholding-tax-payment"></a>Skapa en källskattbetalning
 

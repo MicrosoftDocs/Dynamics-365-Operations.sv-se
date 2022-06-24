@@ -1,6 +1,6 @@
 ---
-title: Integrera tillgångshantering med anläggningstillgångar
-description: I det här avsnittet beskrivs hur du integrerar modulerna för Tillgångshantering och Anläggningstillgångar så att du kan koppla anläggningstillgångar med underhållstillgångar.
+title: Integrera Tillgångshantering med anläggningstillgångar
+description: I denna artikel beskrivs hur du integrerar modulerna för Tillgångshantering och Anläggningstillgångar, så att du kan koppla anläggningstillgångar till underhållstillgångar.
 author: johanhoffmann
 ms.date: 04/17/2020
 ms.topic: article
@@ -12,21 +12,21 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 40e4fdce50b335668a53d2efe53b7cf6c66f364f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d5dfaaf9e4cd989ad6b993e8d152f4713c0d3aa4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567593"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874229"
 ---
-# <a name="integrate-asset-management-with-fixed-assets"></a>Integrera tillgångshantering med anläggningstillgångar
+# <a name="integrate-asset-management-with-fixed-assets"></a>Integrera Tillgångshantering med anläggningstillgångar
 
 [!include [banner](../../includes/banner.md)]
 
-Genom att integrera modulerna **Tillgångshantering** och **Anläggningstillgångar** kan du koppla anläggningstillgångar med underhållstillgångar. Användare av anläggningstillgångar kan sedan skapa en underhållstillgång från en ny eller befintlig anläggningstillgång och användare av tillgångshantering kan associera en underhållsanläggning med en befintlig anläggningstillgång. Den här funktionen gör det också enkelt för användare med anläggningstillgångar att visa kostnader som har bokförts från arbetsorder för relaterade underhållstillgångar.
+Genom att integrera modulerna **Tillgångshantering** och **Anläggningstillgångar** kan du koppla anläggningstillgångar med underhållstillgångar. Användare av anläggningstillgångar kan sedan skapa en underhållstillgång från en ny eller befintlig anläggningstillgång och användare av Tillgångshantering kan associera en underhållsanläggning med en befintlig anläggningstillgång. Den här funktionen gör det också enkelt för användare med anläggningstillgångar att visa kostnader som har bokförts från arbetsorder för relaterade underhållstillgångar.
 
 > [!NOTE]
-> I det här avsnittet *underhållstillgångar* hänvisar till tillgångar från modulen **tillgångshantering** och *anläggningstillgångar* hänvisar till tillgångar från modulen **anläggningstillgångar**.
+> I denna artikel avser begreppet *underhållstillgångar* tillgångar från modulen **Tillgångshantering**, och begreppet *anläggningstillgångar* till tillgångar från modulen **Anläggningstillgångar**.
 
 ## <a name="set-a-default-location-for-new-maintenance-assets-that-are-created-from-fixed-assets-optional"></a>Ange en standardplats för nya underhållstillgångar som skapas från anläggningstillgångar (valfritt)
 
@@ -34,13 +34,13 @@ Denna valfria konfiguration låter dig ange en funktionell standardplats för ny
 
 Om du vill slutföra konfigurationen, gör följande.
 
-1. Gå till **Tillgångshantering \> Inställningar \> Parametrar för tillgångshantering**.
+1. Gå till **Tillgångshantering \> Inställningar \> Parametrar för Tillgångshantering**.
 1. På fliken **Anläggningstillgångar** i fältet **funktionsplats** väljer du standardplats.
 1. Klicka på **Spara** i åtgärdsfönstret.
 
 ## <a name="work-with-integrated-maintenance-assets-and-fixed-assets"></a>Arbeta med integrerade underhållstillgångar och anläggningstillgångar
 
-Det här avsnittet innehåller en samling procedurer som visar olika sätt som du kan arbeta med integrerad tillgångshantering och funktioner för anläggningstillgångar.
+Det här avsnittet innehåller en samling procedurer som visar olika sätt som du kan arbeta med integrerad Tillgångshantering och funktioner för anläggningstillgångar.
 
 ### <a name="associate-an-existing-maintenance-asset-with-a-fixed-asset"></a>Associera en befintlig underhållstillgång med en anläggningstillgång
 
@@ -73,7 +73,7 @@ Om du vill visa underhållstillgången som är kopplad till en vald anläggnings
 
 ### <a name="view-maintenance-costs-that-are-associated-with-a-fixed-asset"></a>Visa underhållskostnader som är associerade med en anläggningstillgång
 
-Arbetsorder för tillgångshantering kan bokföras för underhållstillgångar och varje arbetsorder har normalt en kostnad. När en anläggningstillgång är kopplad med en underhållstillgång kan du gå direkt från anläggningstillgången för att visa relaterade kostnader.
+Arbetsorder för Tillgångshantering kan bokföras för underhållstillgångar och varje arbetsorder har normalt en kostnad. När en anläggningstillgång är kopplad med en underhållstillgång kan du gå direkt från anläggningstillgången för att visa relaterade kostnader.
 
 Om du vill visa underhållskostnad som är kopplad till en anläggningstillgång, följ dessa steg.
 

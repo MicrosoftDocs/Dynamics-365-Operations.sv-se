@@ -1,6 +1,6 @@
 ---
 title: Mobil arbetsyta för fakturagodkännanden
-description: Det här avsnittet innehåller information om den mobila arbetsytan för fakturagodkännanden.
+description: Den här artikeln innehåller information om den mobila arbetsytan för fakturagodkännanden.
 author: abruer
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 08775a574bcd57948c6bf6a634d822b32112f782
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: e9067e33038ee09b8f8cdcc8dd597ab5be9cfe7f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811370"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868681"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Mobil arbetsyta för fakturagodkännanden
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Detta avsnitt tillhandahåller innehåller information om den mobila arbetsytan för **fakturagodkännanden**. Denna arbetsyta tillhandahåller en lista med fakturor som har tilldelats till dig via arbetsflödet för leverantörsfakturahuvud. 
+Den här artikeln innehåller information om den mobila arbetsytan för **fakturagodkännanden**. Denna arbetsyta tillhandahåller en lista med fakturor som har tilldelats till dig via arbetsflödet för leverantörsfakturahuvud. 
 
 Denna mobila arbetsyta är avsedd att användas med mobilappen Finance and Operations.
 

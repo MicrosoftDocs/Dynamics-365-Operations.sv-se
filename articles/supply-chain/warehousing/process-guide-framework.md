@@ -1,6 +1,6 @@
 ---
 title: Processguideram
-description: Det här ämnet ger information om ramverket för processguide som utökar våra mobila lagerprocesser i X++.
+description: Denna artikel ger information om ramverket för processguide avsedd för utvecklare som utökar våra mobila lagerprocesser i X++.
 author: Mirzaab
 ms.date: 11/01/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 6882c979ad9b37eb4f95a04259b6ac0f0a0edcdc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: e88f32e0347a808d03615cf85e50b1592d691670
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902056"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860447"
 ---
 # <a name="process-guide-framework"></a>Processguideram
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet ger information om ramverket för processguide som utökar våra mobila lagerprocesser i X++. De mobila processerna för lagerstället utökas när processerna bryts ned i små steg. Affärslogiken och användargränssnittet i varje steg har extraherats till individuella klasser, vilket gör att de kan utökas.
+Denna artikel ger information om ramverket för processguide avsedd för utvecklare som utökar våra mobila lagerprocesser i X++. De mobila processerna för lagerstället utökas när processerna bryts ned i små steg. Affärslogiken och användargränssnittet i varje steg har extraherats till individuella klasser, vilket gör att de kan utökas.
 
 ## <a name="overview-of-the-existing-design"></a>Översikt över befintlig design
 
@@ -113,7 +113,7 @@ Dessa klasser skapas med hjälp av behållarinformationen (både status och regi
 
 Informationen om sessionstillstånd används för att instantiera rätt **ProcessGuideController**-klass. När den har instantieras anropas metoden **createResponse()** i klassen **ProcessGuideController**. Den här metoden är startpunkten i processguidelogiken och kommer tillbaka med svaret (representerad i klassen **ProcessGuideResponse**) efter körningen. Svaret konverteras sedan tillbaka till behållaren och tillbaka till den äldre logiken, som sedan serialiserar den till XML och skickar tillbaka svaret till den mobila enheten.
 
-Sedan behöver kontrollant hitta nästa steg för att köra. Om en ny process startas anropar kontrollanten **initialStep()** för att få ett första steg i processen. Därefter kallas det **execute()** metoden i **ProcessGuideStep**. Med den här metoden kan du instantiera en klass för **ProcessGuidePageBuilder** och anropa **buildPage()**, som kan returnera ett **ProcessGuidePage** objekt som är en virtuell representation av användargränssnittet som ska visas för användaren. Steget skickar sedan tillbaka resultatet till kontrollanten som sedan sparar den aktuella sessionen och returnerar sedan resultatet till **getNextFormState()** i formuläret för klassen **ProcessGuideResponse**.  Svaret konverteras sedan tillbaka till behållaren och serialiseras sedan till XML och skickar tillbaka svaret till den mobila enheten.
+Sedan behöver kontrollant hitta nästa steg för att köra. Om en ny process startas anropar kontrollanten **initialStep()** för att få ett första steg i processen. Därefter kallas det **execute()** metoden i **ProcessGuideStep**. Med den här metoden kan du instantiera en klass för **ProcessGuidePageBuilder** och anropa **buildPage()**, som kan returnera ett **ProcessGuidePage** objekt som är en virtuell representation av användargränssnittet som ska visas för användaren. Steget skickar sedan tillbaka resultatet till kontrollanten som sedan sparar den aktuella sessionen och returnerar sedan resultatet till **getNextFormState()** i formuläret för klassen **ProcessGuideResponse**. Svaret konverteras sedan tillbaka till behållaren och serialiseras sedan till XML och skickar tillbaka svaret till den mobila enheten.
 
 I bilden nedan förklaras det här kontrollflödet. Observera att detta är det vanligaste kontrollflödet, förenklat för att förklara designen.
 
@@ -123,9 +123,9 @@ När användaren vidtar en åtgärd på den mobila enheten genom att klicka på 
 
 **ProcessGuideAction**-klassen ansvarar för körning av den specifika åtgärden, men det finns två noteringsbara undantag.
 
-Den första är **ProcessGuideOKAction**-klassen.  Den här åtgärden innebär att användaren vill bekräfta och gå framåt i processen. I enlighet med det – den här metoden anropar i själva verket ProcessGuideStep-klassen vilket innebär att steget anropar **processData()** i **ProcessGuideDataProcessor**. Den bearbetar de data som användaren har angett och uppdaterar sedan statusen för steget och skickar resultatet tillbaka till kontrollanten. Beroende på resultatet av bearbetningen startar steget sidskapare för att bygga lämpligt användargränssnitt eller anger status för steget som slutfört. Det visas i den övre halvan av sekvensdiagrammet nedan.
+Den första är **ProcessGuideOKAction**-klassen. Den här åtgärden innebär att användaren vill bekräfta och gå framåt i processen. I enlighet med det – den här metoden anropar i själva verket ProcessGuideStep-klassen vilket innebär att steget anropar **processData()** i **ProcessGuideDataProcessor**. Den bearbetar de data som användaren har angett och uppdaterar sedan statusen för steget och skickar resultatet tillbaka till kontrollanten. Beroende på resultatet av bearbetningen startar steget sidskapare för att bygga lämpligt användargränssnitt eller anger status för steget som slutfört. Det visas i den övre halvan av sekvensdiagrammet nedan.
 
-Det andra undantaget är annulleringsåtgärden som implementerats i klasserna **ProcessGuideCancelResetProcessAction** och **ProcessGuideCancelExitProcessAction**. Dessa åtgärder representerar en avsikten att avbryta processen och antingen gå tillbaka till början av processen eller avsluta processen helt. Precis som **OK**-åtgärden utför dessa åtgärder även en motringning till steget, som innehåller avsikten med **ProcessGuideController**.  Kontrollanten utför sedan den nödvändiga rensningen av tillståndsvariabler och flyttar antingen kontrollen till det första steget i processen eller avslutar processen helt.
+Det andra undantaget är annulleringsåtgärden som implementerats i klasserna **ProcessGuideCancelResetProcessAction** och **ProcessGuideCancelExitProcessAction**. Dessa åtgärder representerar en avsikten att avbryta processen och antingen gå tillbaka till början av processen eller avsluta processen helt. Precis som **OK**-åtgärden utför dessa åtgärder även en motringning till steget, som innehåller avsikten med **ProcessGuideController**. Kontrollanten utför sedan den nödvändiga rensningen av tillståndsvariabler och flyttar antingen kontrollen till det första steget i processen eller avslutar processen helt.
 
 När steget är slutfört, om statusvärdet för steget är **Slutfört**, instantierar kontrollanten **ProcessGuideNavigationAgent**, som returnerar namnet på nästa steg. Kontrollanten instantierar sedan det här steget och startar metoden **execute()** – och cykeln fortsätter. Vanligast är att det nya steget anropar motsvarande **ProcessGuidePageBuilder** för att bygga användargränssnittet för nästa skärm som ska visas för användaren, som sedan skickas tillbaka. Detta flöde beskrivs i den nedre halvan av sekvensdiagrammet nedan.
 
@@ -163,9 +163,9 @@ public class ProdProcessGuideProductionStartController extends ProcessGuideContr
 
 För att sedan definiera ett första steg ska du skapa klassen **ProdProcessGuidePromptProductionIdStep** som utökar, från **ProcessGuideStep**.
 
-Uppgiften att instantiera klassen delegeras till en stegfabrik, som startas av basklassen **ProcessGuideController**.  Standardimplementering av fabrik instantierar steget baserat på namn. För att instantiera **ProdProcessGuidePromptProductionIdStep** som ett första steg i kontrollant måste du därför göra två saker:
+Uppgiften att instantiera klassen delegeras till en stegfabrik, som startas av basklassen **ProcessGuideController**. Standardimplementering av fabrik instantierar steget baserat på namn. För att instantiera **ProdProcessGuidePromptProductionIdStep** som ett första steg i kontrollant måste du därför göra två saker:
 
--   När den här klassen avslogs **ProdProcessGuidePromptProductionIdStep**-klassen med ett **ProcessGuideStepName**-attribut. 
+-   Dekorerar klassen **ProdProcessGuidePromptProductionIdStep** med ett **ProcessGuideStepName**-attribut.
 
     ```xpp
     [ProcessGuideStepName(classStr(ProdProcessGuidePromptProductionIdStep))] public class ProdProcessGuidePromptProductionIdStep extends ProcessGuideStep
@@ -192,11 +192,11 @@ Nästa steg är då att implementera funktionerna i klassen **ProdProcessGuidePr
 
 ### <a name="building-the-user-interface-for-the-first-step"></a>Bygga användargränssnittet för det första steget
 
-Användargränssnittet skapas med en klass som ärver från den abstrakta klassen **ProcessGuidePageBuilder**.  Ge klassen ett namn som motsvarar det som den gör – **ProdProcessGuidePromptProductionIdPageBuilder**.
+Användargränssnittet skapas med en klass som ärver från den abstrakta klassen **ProcessGuidePageBuilder**. Ge klassen ett namn som motsvarar det som den gör – **ProdProcessGuidePromptProductionIdPageBuilder**.
 
 Instantiationsmekanismen för klassen liknar hur steget instantierades från kontrollanten. 
 
--   När den här klassen avslogs **ProdProcessGuidePromptProductionIdPageBuilder**-klassen med ett **ProcessGuidePageBuilderName**-attribut. 
+-   Dekorera klassen **ProdProcessGuidePromptProductionIdPageBuilder** med ett **ProcessGuidePageBuilderName**-attribut.
 
     ```xpp
     [ProcessGuidePageBuilderName(classStr(ProdProcessGuidePromptProductionIdPageBuilder))] public class ProdProcessGuidePromptProductionIdPageBuilder extends ProcessGuidePageBuilder
@@ -282,7 +282,7 @@ public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
 }
 ```     
 
-Eftersom användaren inte anger några värden här behöver du inte åsidosätta metoden **isComplete()**.  Steget är slutfört när användaren klickar på **OK**.
+Eftersom användaren inte anger några värden här behöver du inte åsidosätta metoden **isComplete()**. Steget är slutfört när användaren klickar på **OK**.
 
 Sidskaparklassen åsidosätter metoden **addDataControls()** för att lägga till tre etiketter. Den första etiketten visar tillverkningsorder-ID:t, den andra innehåller artikelinformation (t.ex. artikel-ID, dimensioner eller beskrivning) och den tredje innehåller kvantitet och måttenhet.
 
@@ -321,7 +321,7 @@ public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGu
 ```
 
 > [!NOTE]
-> Du kan hitta samma källkod för X++-metoderna i det här ämnet genom att använda Programutforskaren. Filtrera på klassnamnet, högerklicka sedan på klassnamnet och välj **Visa kod**.
+> Du kan hitta samma källkod för X++-metoderna i denna artikel genom att använda Programutforskaren. Filtrera på klassnamnet, högerklicka sedan på klassnamnet och välj **Visa kod**.
 
 ### <a name="step-3-start-the-production-order"></a>Steg 3: Starta produktionsorder
 
@@ -378,7 +378,7 @@ Basklassen **ProcessGuideController** instantierar klassen **ProcessGuideNavigat
 
 Det finns processer där det ska finnas villkorsbaserade förgrening (baserat på användaråtgärder eller andra villkor). Följande processer behövs:
 
--   Implementera specifika navigeringsagenter som ärvs från **ProcessGuideNavigationAgent**-klassen. 
+-   Implementera specifika navigeringsagenter som ärvs från **ProcessGuideNavigationAgent**-klassen.
 
 -   Implementera den specifika navigationsagentfabriken som ärvts från klassen **ProcessGuideNavigationAgentAbstractFactory** som innehåller logik för att instansiera rätt navigeringsagent baserat på aktuellt steg, sessionstillstånd, användaråtgärd eller annan logik.
 
@@ -411,7 +411,7 @@ Klassen måste implementera 2 abstrakta metoder:
 
 -   **doExecute()** som utför åtgärden. Som tidigare har nämns utför **OK**-knappen helt enkelt en motringning till steget. Andra åtgärder kan dock ha mer komplex logik här.
 
-Åtgärderna instantieras med **SysExtension**-ramverket baserat på attributet **ProcessGuideActionName**.  Liknar instansen av sidskapare implementerar stegklassen standardåtgärdsfabriken och det går att åsidosätta detta. Sidskapare lägger till en knappkontroll på det här sätt.
+Åtgärderna instantieras med **SysExtension**-ramverket baserat på attributet **ProcessGuideActionName**. Liknar instansen av sidskapare implementerar stegklassen standardåtgärdsfabriken och det går att åsidosätta detta. Sidskapare lägger till en knappkontroll på det här sätt.
 
 ```xpp
 _page.addButton(step.createAction(#ActionOK), true);
@@ -421,7 +421,7 @@ När du gör det får den en fråga om du vill skapa en åtgärdsklass för det 
 
 ### <a name="summary"></a>Sammanfattning
 
-Sammanfatta allt som förklaras i det här avsnittet med en omfattande sammanfattning av den kod som behövs för processen:
+I syfte att sammanfatta allt som förklaras i denna artikel finns en omfattande sammanfattning av den kod som behövs för processen:
 
 1.  **ProdProcessGuideProductionStartController**
 
@@ -570,7 +570,7 @@ Sammanfatta allt som förklaras i det här avsnittet med en omfattande sammanfat
         ```
 
         > [!NOTE]
-        > Metoden **generateItemInfoForProdId()** som används för att generera artikelinformationsetiketter finns inte med i det här avsnittet. Med den här metoden får du ett par register för att få artikel-ID, beskrivning och dimensioner. Om du vill ha en bättre förståelse för **generateItemInfoForProdId()** kan du titta på källkoden.
+        > Metoden **generateItemInfoForProdId()** som används för att generera artikelinformationsetiketter finns inte med i denna artikel. Med den här metoden får du ett par register för att få artikel-ID, beskrivning och dimensioner. Om du vill ha en bättre förståelse för **generateItemInfoForProdId()** kan du titta på källkoden.
 
 4.  **ProdProcessGuideStartProductionOrderStep**
 
@@ -605,7 +605,7 @@ Sammanfatta allt som förklaras i det här avsnittet med en omfattande sammanfat
 
 ### <a name="extending-a-business-process"></a>Utöka en affärsprocess
 
-Hittills har det här avsnittet markerat hur en ny process ska byggas med ramverket **ProcessGuide**. I det sista avsnittet finns några exempel på hur den här affärsprocessen kan utökas.
+Hittills har denna artikel framhävt hur en ny process ska byggas upp med ramverket **ProcessGuide**. I det sista avsnittet finns några exempel på hur den här affärsprocessen kan utökas.
 
 ### <a name="add-a-step-in-a-flow-using-processguidenavigationagentdefault"></a>Lägga till ett steg i ett flöde (med hjälp av ProcessGuideNavigationAgentDefault)
 

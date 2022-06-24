@@ -1,6 +1,6 @@
 ---
 title: Negativa dagar och dynamiska negativa dagar
-description: Det här ämnet innehåller information om negativa dagar och dynamiska negativa dagar och hur du kan använda dem för att hjälpa ditt företag.
+description: Denna artikel innehåller information om negativa dagar och dynamiska negativa dagar, samt hur du kan använda dem för att hjälpa ditt företag.
 author: t-benebo
 ms.date: 05/25/2021
 ms.topic: article
@@ -10,27 +10,27 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d88517c99a274911e8abd8de4bcd318139822a5
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: d83aab9b7d3d30d519e8b313a57f2802de3cfb72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469881"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846139"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negativa dagar och dynamiska negativa dagar
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet innehåller information om negativa dagar och dynamiska negativa dagar och hur du kan använda dem för att hjälpa ditt företag. *Tidsgränsen för negativa dagar* representerar antalet dagar som du är villig att vänta innan du beställer ny påfyllnad när du har negativt lager.
+Denna artikel innehåller information om negativa dagar och dynamiska negativa dagar, samt hur du kan använda dem för att hjälpa ditt företag. *Tidsgränsen för negativa dagar* representerar antalet dagar som du är villig att vänta innan du beställer ny påfyllnad när du har negativt lager.
 
-I det här avsnittet kommer dun att få följande information:
+I denna artikel kommer dun att få följande information:
 
 - Hur planerade order har skapats
 - Korrelationen mellan de negativa dagarnas tidsgräns och artikelns produktionstid
 - Hur tidsgränsen för dynamiska negativa dagar beräknas och hur artikelns produktionstid debiteras i beräkningen
 - Så här tolkar du [förslagen för att förbättra körtiden för behovsplanering av material (MPS) (huvudplanering) som är relaterade till negativa dagar](https://blogs.msdn.com/b/axmfg/archive/2015/01/02/checklist-for-improving-mrp-performance-part-2-how-to-setup-planning-parameters.aspx)
 
-I det här avsnittet används tre hypotetiska scenarier för att förstå den här informationen. Skillnaden mellan scenariona är den punkt där du får efterfrågan: före, under eller efter artikelns produktionstidsperiod.
+I denna artikel används tre hypotetiska scenarier för att förstå den här informationen. Skillnaden mellan scenariona är den punkt där du får efterfrågan: före, under eller efter artikelns produktionstidsperiod.
 
 ## <a name="scenario-1-you-get-demand-before-the-items-lead-time-period"></a>Scenario 1: du får efterfrågan innan artikelns produktionstidsperiod
 
@@ -47,7 +47,7 @@ Bilden nedan visar en grafisk vy av detta scenario.
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Fall A: negativa dagar är mindre än artikelns produktionstid
 
-Om du ställer in de negativa dagarna till ett tal som är mindre än artikelns produktionstid söker MPS efter inleveranser för DemoProduct-artikeln inom de negativa dagarnas tidsgräns. Eftersom det inte finns några inleveranser skapar MPS en ny planerad inköpsorder. Denna planerade ordern försenas omedelbart med sex dagar (produktionstiden). Därför kommer den att anlända den 7 januari. Den befintliga inköpsordern hämtar åtgärdsmeddelandet **Avbryt**, eftersom skapandet av den nya planerade inköpsordern har gjort den överflödig.
+Om du konfigurerar de negativa dagarna till ett tal som är mindre än artikelns produktionstid söker MPS efter inleveranser för DemoProduct-artikeln inom de negativa dagarnas tidsgräns. Eftersom det inte finns några inleveranser skapar MPS en ny planerad inköpsorder. Denna planerade ordern försenas omedelbart med sex dagar (produktionstiden). Därför kommer den att anlända den 7 januari. Den befintliga inköpsordern hämtar åtgärdsmeddelandet **Avbryt**, eftersom skapandet av den nya planerade inköpsordern har gjort den överflödig.
 
 Bilden nedan visar en skärmbild av det här fallet.
 
@@ -61,7 +61,7 @@ Om du anser att MPS-prestanda och planens nerver fungerar, så är detta inte br
 
 ### <a name="case-b-negative-days-are-more-than-the-items-lead-time"></a>Fall B: negativa dagar är mer än artikelns produktionstid
 
-För att förbättra MRP-prestanda kan du ställa in de negativa dagarna till ett tal som är mer än artikelns produktionstid. Eftersom du inte får tillgång inne i produktionstiden i det här scenariot, kan du söka efter inleveranser så länge som sökningen verkar vettig. Även om körningstiden för MPS är kortare, bör du se upp för fler förseningar för orderna.
+För att förbättra MRP-prestanda kan du konfigurera de negativa dagarna till ett tal som är mer än artikelns produktionstid. Eftersom du inte får tillgång inne i produktionstiden i det här scenariot, kan du söka efter inleveranser så länge som sökningen verkar vettig. Även om körningstiden för MPS är kortare, bör du se upp för fler förseningar för orderna.
 
 ### <a name="case-c-automatically-correlate-the-items-lead-time-to-the-negative-days-time-fence"></a>Fall C: Korrelera automatiskt artikelns produktionstid till negativa dagens tidsgräns
 
@@ -81,7 +81,7 @@ Bilden nedan visar en grafisk vy av vad som händer i detta fall.
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Fall D: Använd endast dynamiska negativa dagar
 
-Om du ställer in de negativa dagarna till **0** (noll) och bara använder tidsgränsen för dynamiska negativa dagar, är tidsgränsen för dynamiska negativa dagar 6 + 0 + 0 = 6 dagar. I det här fallet är resultatet detsamma som resultatet i fall A i det här scenariot. MPS måste skapa en ny planerad order och måste beräkna förseningar och åtgärder. Dessa uppgifter är tidskrävande och kan också vara frustrerande. Det finns också två fler transaktioner att bearbeta. Eftersom efterfrågan inte kan uppfyllas i en tid då artikeln ska anlända, lägger detta fall till onödiga komplikationer i planen.
+Om du konfigurerar de negativa dagarna till **0** (noll) och bara använder tidsgränsen för dynamiska negativa dagar, är tidsgränsen för dynamiska negativa dagar 6 + 0 + 0 = 6 dagar. I det här fallet är resultatet detsamma som resultatet i fall A i det här scenariot. MPS måste skapa en ny planerad order och måste beräkna förseningar och åtgärder. Dessa uppgifter är tidskrävande och kan också vara frustrerande. Det finns också två fler transaktioner att bearbeta. Eftersom efterfrågan inte kan uppfyllas i en tid då artikeln ska anlända, lägger detta fall till onödiga komplikationer i planen.
 
 Bilden nedan visar en skärmbild av det här fallet.
 
@@ -93,7 +93,7 @@ Bilden nedan visar en grafisk vy av vad som händer i detta fall.
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Fall E: Använd både negativa dagar som är mer än artikelns produktionstid och de dynamiska negativa dagarna tidsgräns
 
-Om du ställer in de negativa dagarna till ett tal som är mer än artikelns produktionstid, och om du även använder tidsgränsen för dynamiska negativa dagar, så är tidsgränsen för dynamiska negativa dagar 6 + 6 + 0 = 12 dagar. Den här metoden kan ge en mycket lång tidsgräns som MPS måste söka efter resultat i. Mer information om hur ärende E är relaterat till en situation där du ställer in de negativa dagarna till en lång tidsgräns finns i avsnittet [slutsats](#conclusion) i det här avsnittet.
+Om du konfigurerar de negativa dagarna till ett tal som är mer än artikelns produktionstid, och om du även använder tidsgränsen för dynamiska negativa dagar, så är tidsgränsen för dynamiska negativa dagar 6 + 6 + 0 = 12 dagar. Den här metoden kan ge en mycket lång tidsgräns som MPS måste söka efter resultat i. Mer information om hur ärende E är relaterat till en situation där du konfigurerar de negativa dagarna till en lång tidsgräns finns i avsnittet [Slutsats](#conclusion) i denna artikel.
 
 ## <a name="scenario-2-you-get-demand-during-the-items-lead-time-period"></a>Scenario 2: du får efterfrågan under artikelns produktionstidsperiod
 
@@ -110,7 +110,7 @@ Bilden nedan visar en grafisk vy av detta scenario.
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Fall A: negativa dagar är mindre än artikelns produktionstid
 
-Om du ställer in de negativa dagarna till ett tal som är mindre än artikelns produktionstid söker MPS efter inleveranser för DemoProduct-artikeln inom de negativa dagarnas tidsgräns. Eftersom det inte finns några inleveranser skapar MPS en ny planerad inköpsorder som använder det aktuella datumet som orderdatum. Denna planerade ordern försenas omedelbart med sex dagar (produktionstiden). Därför kommer den att anlända den 7 januari. Den befintliga inköpsordern hämtar åtgärdsmeddelandet **Avbryt**, eftersom skapandet av den nya planerade inköpsordern har gjort den överflödig.
+Om du konfigurerar de negativa dagarna till ett tal som är mindre än artikelns produktionstid söker MPS efter inleveranser för DemoProduct-artikeln inom de negativa dagarnas tidsgräns. Eftersom det inte finns några inleveranser skapar MPS en ny planerad inköpsorder som använder det aktuella datumet som orderdatum. Denna planerade ordern försenas omedelbart med sex dagar (produktionstiden). Därför kommer den att anlända den 7 januari. Den befintliga inköpsordern hämtar åtgärdsmeddelandet **Avbryt**, eftersom skapandet av den nya planerade inköpsordern har gjort den överflödig.
 
 Bilden nedan visar en skärmbild av det här fallet.
 
@@ -122,7 +122,7 @@ Bilden nedan visar en grafisk vy av vad som händer i detta fall.
 
 ### <a name="case-b-negative-days-are-more-than-the-items-lead-time"></a>Fall B: negativa dagar är mer än artikelns produktionstid
 
-Detta fall liknar fall B för scenario 1. Om du ställer in de negativa dagarna till ett tal som är mer än artikelns produktionstid får du ingen ny planerad order. Försäljningsordern är kopplad till den befintliga inköpsordern.
+Detta fall liknar fall B för scenario 1. Om du konfigurerar de negativa dagarna till ett tal som är mer än artikelns produktionstid får du ingen ny planerad order. Försäljningsordern är kopplad till den befintliga inköpsordern.
 
 ### <a name="case-c-automatically-correlate-the-items-lead-time-to-the-negative-days-time-fence"></a>Fall C: Korrelera automatiskt artikelns produktionstid till negativa dagens tidsgräns
 
@@ -138,11 +138,11 @@ Bilden nedan visar en grafisk vy av vad som händer i detta fall.
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Fall D: Använd endast dynamiska negativa dagar
 
-Om du ställer in de negativa dagarna till **0** (noll) och bara använder tidsgränsen för dynamiska negativa dagar, är tidsgränsen för dynamiska negativa dagar nu 6 + 0 – 4 = 2 dagar. I det här fallet är resultatet detsamma som resultatet i fall A i det här scenariot. En grafisk vy över vad som händer finns i fall A för det här scenariot.
+Om du konfigurerar de negativa dagarna till **0** (noll) och bara använder tidsgränsen för dynamiska negativa dagar, är tidsgränsen för dynamiska negativa dagar nu 6 + 0 – 4 = 2 dagar. I det här fallet är resultatet detsamma som resultatet i fall A i det här scenariot. En grafisk vy över vad som händer finns i fall A för det här scenariot.
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Fall E: Använd både negativa dagar som är mer än artikelns produktionstid och de dynamiska negativa dagarna tidsgräns
 
-Om du ställer in de negativa dagarna till ett tal som är mer än artikelns produktionstid, och om du även använder tidsgränsen för dynamiska negativa dagar, så är tidsgränsen för dynamiska negativa dagar 6 + 6 – 4 = 8 dagar. Den här metoden kan ge en mycket lång tidsgräns som MPS måste söka efter resultat i. Mer information om hur ärende E är relaterat till en situation där du ställer in de negativa dagarna till en lång tidsgräns finns i avsnittet [slutsats](#conclusion) i det här avsnittet.
+Om du konfigurerar de negativa dagarna till ett tal som är mer än artikelns produktionstid, och om du även använder tidsgränsen för dynamiska negativa dagar, så är tidsgränsen för dynamiska negativa dagar 6 + 6 – 4 = 8 dagar. Den här metoden kan ge en mycket lång tidsgräns som MPS måste söka efter resultat i. Mer information om hur ärende E är relaterat till en situation där du konfigurerar de negativa dagarna till en lång tidsgräns finns i avsnittet [Slutsats](#conclusion) i denna artikel.
 
 ## <a name="scenario-3-you-get-demand-after-the-items-lead-time-period"></a>Scenario 3: du får efterfrågan efter artikelns produktionsti
 
@@ -159,7 +159,7 @@ Bilden nedan visar en grafisk vy av detta scenario.
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Fall A: negativa dagar är mindre än artikelns produktionstid
 
-Om du ställer in de negativa dagarna till ett tal som är mindre än artikelns produktionstid ser MPS ut två dagar före försäljningsorderns behovsdatum. Eftersom det inte finns något skapar MPS en ny planerad inköpsorder den 2 januari. Den här planerade inköpsordern levereras i rätt tid för att försäljningsorderns behov ska uppfyllas. Den befintliga inköpsordern hämtar åtgärdsmeddelandet **Avbryt** eftersom det inte är nödvändigt.
+Om du konfigurerar de negativa dagarna till ett tal som är mindre än artikelns produktionstid ser MPS ut två dagar före försäljningsorderns behovsdatum. Eftersom det inte finns något skapar MPS en ny planerad inköpsorder den 2 januari. Den här planerade inköpsordern levereras i rätt tid för att försäljningsorderns behov ska uppfyllas. Den befintliga inköpsordern hämtar åtgärdsmeddelandet **Avbryt** eftersom det inte är nödvändigt.
 
 Bilden nedan visar en skärmbild av det här fallet.
 
@@ -174,7 +174,7 @@ Bilden nedan visar en grafisk vy av vad som händer i detta fall.
 
 ### <a name="case-b-negative-days-are-more-than-the-items-lead-time"></a>Fall B: negativa dagar är mer än artikelns produktionstid
 
-Om du ställer in de negativa dagarna till ett tal som är mer än artikelns produktionstid får du ingen ny planerad order. Försäljningsordern är peggad mot den befintliga inköpsordern. Därför är försäljningsordern försenad. Om du skapar en planerad order kan du leverera försäljningsordern i tid.
+Om du konfigurerar de negativa dagarna till ett tal som är mer än artikelns produktionstid får du ingen ny planerad order. Försäljningsordern är peggad mot den befintliga inköpsordern. Därför är försäljningsordern försenad. Om du skapar en planerad order kan du leverera försäljningsordern i tid.
 
 Bilden nedan visar en skärmbild av det här fallet.
 
@@ -196,7 +196,7 @@ Bilden nedan visar en grafisk vy av vad som händer i detta fall.
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Fall D: Använd endast dynamiska negativa dagar
 
-Om du ställer in de negativa dagarna till **0** (noll) och bara använder tidsgränsen för dynamiska negativa dagar, är tidsgränsen för dynamiska negativa dagar nu 6 + 0 – 7 = -1 dag. I detta fall tar systemet fortfarande hänsyn till den negativa dagars produktionstiden (2). I det här fallet är därför resultatet detsamma som resultatet i fall A i det här scenariot och har samma nackdelar. En grafisk vy över vad som händer finns i fall A för scenario 2.
+Om du konfigurerar de negativa dagarna till **0** (noll) och bara använder tidsgränsen för dynamiska negativa dagar, är tidsgränsen för dynamiska negativa dagar nu 6 + 0 – 7 = -1 dag. I detta fall tar systemet fortfarande hänsyn till den negativa dagars produktionstiden (2). I det här fallet är därför resultatet detsamma som resultatet i fall A i det här scenariot och har samma nackdelar. En grafisk vy över vad som händer finns i fall A för scenario 2.
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Fall E: Använd både negativa dagar som är mer än artikelns produktionstid och de dynamiska negativa dagarna tidsgräns
 
@@ -204,11 +204,11 @@ Det här fallet är samma som fall E för scenarier 1 och 2. Det har i grunden s
 
 ## <a name="conclusion"></a>Slutsats
 
-Eftersom de tre scenarierna i det här avsnittet visas är det en god idé att ställa in de negativa dagarna till ett tal som är mer än produktionstiden för artiklarna i disponeringsgruppen. Det är också en bra idé att bara använda dynamiska negativa dagar och att ställa in de negativa dagarna till det antal dagar som du är villiga att vänta innan du beställer ny påfyllnad när du har ett negativt lager (dvs. antalet dagar som du är villiga att ytterligare försena efterfrågan för). Dessutom bör artiklar i samma disponeringsgrupp ha liknande produktionstider.
+Som de tre scenarierna i denna artikel visar är det en god idé att konfigurera de negativa dagarna till ett tal som är mer än produktionstiden för artiklarna i disponeringsgruppen. Det är också en bra idé att bara använda dynamiska negativa dagar och att konfigurera de negativa dagarna till det antal dagar som du är villiga att vänta innan du beställer ny påfyllnad när du har ett negativt lager (dvs. antalet dagar som du är villiga att ytterligare försena efterfrågan för). Dessutom bör artiklar i samma disponeringsgrupp ha liknande produktionstider.
 
-Om du ställer in de negativa dagarna till **0** (noll) och inte använder dynamiska negativa dagar, skapar MPS alltid en ny planerad order för att uppfylla efterfrågan. I det här fallet är det viktigt att du arbetar med åtgärdsmeddelandena för att vara säker på att du inte registrerar lagret.
+Om du konfigurerar de negativa dagarna till **0** (noll) och inte använder dynamiska negativa dagar, skapar MPS alltid en ny planerad order för att uppfylla efterfrågan. I det här fallet är det viktigt att du arbetar med åtgärdsmeddelandena för att vara säker på att du inte registrerar lagret.
 
-Du kanske vill ställa in de negativa dagarna till en lång tidsgräns och sedan arbeta med åtgärdsmeddelandena. Den här metoden ger bra planeringsresultat, men det blir också långsammare. Det kan också vara svårare att analysera eftersom du måste analysera och tillämpa åtgärdsmeddelandena. Här är ett exempel:
+Du kanske vill konfigurera de negativa dagarna till en lång tidsgräns och sedan arbeta med åtgärdsmeddelandena. Den här metoden ger bra planeringsresultat, men det blir också långsammare. Det kan också vara svårare att analysera eftersom du måste analysera och tillämpa åtgärdsmeddelandena. Här är ett exempel:
 
 - DemoProduct-artikeln har en inköpstid på sex dagar.
 - På dag noll (1 januari) är lager för DemoProduct artikel 0 (noll).
@@ -235,7 +235,7 @@ Om du minskar de negativa dagarna till en siffra som ligger närmare artikelns p
 
 ![Resultatexempel 2.](./media/negative-days-21.png)
 
-MPS skapar en planerad order som är kopplad till den första försäljningsordern. Sedan, som förväntat, peggas den andra försäljningsordern mot den befintliga inköpsordern, baserat på inställningen för negativa dagar. Det här planeringsresultatet är också korrekt och körningstiden för MPS kan vara kortare. I det här fallet är det inte nödvändigt att förstå och veta hur man arbetar med åtgärdsmeddelandena.
+MPS skapar en planerad order som är kopplad till den första försäljningsordern. Sedan, som förväntat, peggas den andra försäljningsordern mot den befintliga inköpsordern, baserat på inställningen för negativa dagar. Det här planeringsresultatet är också korrekt och körningstiden för MPS kan vara kortare. I det här fallet är det inte nödvändigt att förstå och veta hur du arbetar med åtgärdsmeddelandena.
 
 För att garantera att rätt värden registreras för ditt företag måste du tänka på både funktionaliteten och körningstiden i MPS. Därför kan det bli en liten utvärderingsversion och fel att fastställa de optimala värdena.
 

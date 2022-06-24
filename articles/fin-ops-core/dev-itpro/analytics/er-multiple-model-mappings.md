@@ -1,6 +1,6 @@
 ---
 title: Hantera flera härledda mappningar för en enskild modellrot
-description: I det här avsnittet beskrivs hur du hanterar flera härledda mappningar som har konfigurerats för en enskild modellrot.
+description: I den här artikeln beskrivs hur du hanterar flera härledda mappningar som har konfigurerats för en enskild modellrot.
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d71b05b3f2eda93a93f728926e675c040371781e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324122"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892491"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Hantera flera härledda mappningar för en enskild modellrot
 
@@ -32,7 +32,7 @@ Komponenter för ER-modellmappning kan finnas i ER-datamodell [konfigurationer](
 
 Många konfigurationsleverantörer kan erbjuda ER-modellmappningskonfigurationer för samma ER-datamodell. Dessa modellmappningskonfigurationer kan innehålla mappningskomponenter för olika rotdefinitioner. Du kan använda en modellmappning för en rotdefinition som erbjuds av en [leverantör](general-electronic-reporting.md#Provider) och använda en modellmappning för en annan rotdefinition som erbjuds av en annan leverantör.
 
-Procedurerna i det här avsnittet förklarar hur du hanterar flera ER-modellmappningskonfigurationer för en ER-datamodell när de innehåller olika modellmappningskomponenter som konfigurerats för samma rotdefinition. 
+Procedurerna i den här artikeln förklarar hur du hanterar flera ER-modellmappningskonfigurationer för en ER-datamodell när de innehåller olika modellmappningskomponenter som konfigurerats för samma rotdefinition. 
 
 För att slutföra procedurerna i detta ämne måste du tilldelas rollen Systemadministratör eller utvecklare av elektronisk rapportering.
 

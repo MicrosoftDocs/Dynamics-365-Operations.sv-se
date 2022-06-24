@@ -16,18 +16,18 @@ ms.search.region: global
 ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b43c499928988e98cae63b85f528b8a71e042cc7
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 784ec32ae886ef7ea9342b085f893eeeec761961
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713654"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855503"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Översikt över uppgradering av förteckning med avskrivningsregler
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet beskriver den aktuella bokfunktionen i Anläggningstillgångar. Denna funktionalitet är baserad på den värdemodellfunktion som fanns i tidigare versioner men innehåller även alla funktioner som endast angetts tidigare i avskrivningsregler. Värdemodellfunktionen och funktionen för avskrivningsregel slagits ihop till ett enda begrepp som kallas för "bok". Med bokföringsfunktionen kan du använda en uppsättning sidor, förfrågningar och rapporter för alla dina processer för anläggningstillgångar. Det här avsnittet innehåller vissa saker du bör tänka på innan du uppgraderar. 
+Det här ämnet beskriver den aktuella bokfunktionen i Anläggningstillgångar. Denna funktionalitet är baserad på den värdemodellfunktion som fanns i tidigare versioner men innehåller även alla funktioner som endast angetts tidigare i avskrivningsregler. Värdemodellfunktionen och funktionen för avskrivningsregel slagits ihop till ett enda begrepp som kallas för "bok". Med bokföringsfunktionen kan du använda en uppsättning sidor, förfrågningar och rapporter för alla dina processer för anläggningstillgångar. Den här artikeln innehåller vissa saker du bör tänka på innan du uppgraderar. 
 
 Uppgraderingsprocessen flyttar din befintliga inställning och alla befintliga transaktioner till den nya bokstrukturen. Värdemodeller kommer att kvarstå som de är, som en bok som bokförs till huvudboken. Avskrivningsregler flyttas till en bok som har alternativet Bokför i huvudboken inställt på Nej. Journalnamn för avskrivningsregel flyttas till ett journalnamn för huvudbok som har bokföringsskiktet inställt på Ingen. Transaktioner för avskrivningsregler flyttas till transaktioner för anläggningstillgångar.
 

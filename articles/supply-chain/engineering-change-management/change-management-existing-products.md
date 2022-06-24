@@ -1,6 +1,6 @@
 ---
 title: Aktivera ändringshantering för befintliga produkter
-description: I det här avsnittet beskrivs hur du aktiverar ändringshantering för befintliga produkter. Det beskriver också fall där möjligheten att aktivera ändringshantering är begränsad.
+description: I denna artikel beskrivs hur du aktiverar ändringshantering för befintliga produkter. Det beskriver också fall där möjligheten att aktivera ändringshantering är begränsad.
 author: t-benebo
 ms.date: 02/05/2021
 ms.topic: article
@@ -12,24 +12,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9f99529abebdf5490f158c6f0a7be4519449e9f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103623"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893480"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Aktivera ändringshantering för befintliga produkter
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du aktiverar ändringshantering för befintliga produkter. Det beskriver också fall där möjligheten att aktivera ändringshantering är begränsad.
+I denna artikel beskrivs hur du aktiverar ändringshantering för befintliga produkter. Det beskriver också fall där möjligheten att aktivera ändringshantering är begränsad.
 
 När du aktiverar ändringshantering för en befintlig produkt, kan du skapa versioner av produkten och spåra ändringar som gjorts i den under hela dess livslängd. Därför kan du spåra dessa ändringar genom att använda ändringsorder. Om du vill aktivera ändringshantering måste du konvertera relevanta produkter till *tekniska artiklar* (även kallade tekniska produkter). Teknikprodukter är produkter som versioneras och hanteras med hjälp av ändringshantering. Här finns en guide som vägleder dig genom konverteringsprocessen.
 
 ## <a name="turn-this-feature-on-or-off"></a>Aktivera eller inaktivera funktionen
 
-Funktionen som beskrivs i detta ämne kräver att både funktionen *Konstruktionsändringshantering* och *Aktivera ändringshantering för befintliga produkter* är aktiverad för systemet. Information om hur du aktiverar och inaktiverar funktionerna finns i [Översikt över hantering av tekniska ändringar](product-engineering-overview.md).
+Funktionen som beskrivs i denna artikel kräver att både funktionen *Konstruktionsändringshantering* och *Aktivera ändringshantering för befintliga produkter* har aktiverats för systemet. Information om hur du aktiverar och inaktiverar funktionerna finns i [Översikt över hantering av tekniska ändringar](product-engineering-overview.md).
 
 ## <a name="restrictions-and-limitations"></a>Begränsningar
 
@@ -38,7 +38,7 @@ Alla produkttyper kan inte konverteras till alla andra typer. Följande begräns
 - När du konverterar en produkt till en teknisk produkt, förblir den en *produkt*. Den blir inte en *produktmall*.
 - När du konverterar en produktmall som har en viss dimensionsuppsättning, underhålls dessa dimensioner efter ändringen. Om du till exempel konverterar en produktmall som har storleksdimensionen behåller den storleksdimensionen.
 
-Om du har en specifik produkt kan du därför endast ändra den till en teknisk produkt som inte spårar produktdimensionen i transaktioner (det vill säga den versionsdimension som inte används). Se de återstående delarna av detta ämne för mer information om dessa problem.
+Om du har en specifik produkt kan du därför endast ändra den till en teknisk produkt som inte spårar produktdimensionen i transaktioner (det vill säga den versionsdimension som inte används). Se de återstående delarna av denna artikel för mer information om dessa problem.
 
 ## <a name="prepare-for-conversion-by-creating-all-required-engineering-product-categories"></a>Förbered konvertering genom att skapa alla nödvändiga kategorier för tekniska produkter
 
@@ -81,10 +81,10 @@ Följ dessa steg för att köra guiden **Omvandla till teknisk produkt** och kon
 
     - **Produktnummer** – produktnummer.
     - **Produktnamn** – Produktens namn.
-    - **Teknikkategori** – Välj den tekniska produktkategorin som produkten ska tillhöra när den har konverterats. Det måste redan finnas en lämplig kategori för varje produkt, vilket beskrivs i det föregående avsnittet av det här avsnittet. Du måste tilldela en kategori till varje produkt.
+    - **Teknikkategori** – Välj den tekniska produktkategorin som produkten ska tillhöra när den har konverterats. Det måste redan finnas en lämplig kategori för varje produkt, vilket beskrivs i det föregående avsnittet av denna artikel. Du måste tilldela en kategori till varje produkt.
     - **Version** – Ange produktversionen för att tilldela produkten efter att den har konverterats. Du kan till exempel välja ett nummer som passar in i den nummerserie som din kategori redan använder. I varje konstruktionsversion lagras de tekniska relevanta data som är specifika för den versionen. För mer information, se [Konstruktionsversioner och kategorier av konstruktionsprodukter](engineering-versions-product-category.md).
     - **Produktens livscykeltillstånd** – Välj produktens livscykeltillstånd som produkten ska vara i efter att den har konverterats. I produkts livscykeltillstånd kan du kontrollera vilka transaktioner som är tillåtna för en given teknisk version. Mer information finns i [produktens livscykeltillstånd och transaktioner](product-lifecycle-state-transactions.md).
-    - **Har strukturlista** – En markerad kryssruta visar att produkten har en strukturlista. Om du ställer in den här kryssrutan kan du bestämma hur du anger kryssrutan **aktuell strukturlista ska ingå i den tekniska produkten**.
+    - **Har strukturlista** – En markerad kryssruta visar att produkten har en strukturlista. Om du konfigurerar den här kryssrutan kan du bestämma hur du anger kryssrutan **aktuell strukturlista ska ingå i den tekniska produkten**.
     - **Nuvarande strukturlista kommer att ingå i teknikprodukten** – Markera den här kryssrutan om den aktuella strukturlistan för produkt ska användas som en strukturlista för teknikprodukten. Denna strukturlista hanteras sedan av konstruktionsändringshantering. Om produkten inte har någon strukturlista eller om du föredrar att skapa en strukturlista manuellt för den konverterade produkten senare avmarkerar du den här kryssrutan.
     - **Innehåller fel** – En markerad kryssruta anger att produktinställningen har ett eller flera fel. Till exempel kanske produkttypen eller dimensionsgruppen inte matchar kategorin. Produkter som har fel hoppas över och konverteras inte.
 

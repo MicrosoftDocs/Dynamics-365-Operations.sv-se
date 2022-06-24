@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8f0812e4262a264ffc89b72e0f4fc8c55d6c6822095f550c8f05296bb057a38
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d9df826dcc0b672977d4d8af1feb985ab9a0ab7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712343"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879961"
 ---
 # <a name="list-of-er-functions-in-the-business-domainspecific-category"></a>Lista över ER-funktioner i företagsdomänspecifika kategorin
 
 [!include [banner](../includes/banner.md)]
 
-De domänspecifika funktionerna för elektronisk rapportering (ER) kan användas för att utföra beräkningar och dataåtkomst begäranden som är specifika för implementeringen av Microsoft Dynamics 365 Finance. Det här avsnittet innehåller en sammanfattning av dessa funktioner.
+De domänspecifika funktionerna för elektronisk rapportering (ER) kan användas för att utföra beräkningar och dataåtkomst begäranden som är specifika för implementeringen av Microsoft Dynamics 365 Finance. Den här artikeln innehåller en sammanfattning av dessa funktioner.
 
 ## <a name="list-of-supported-functions"></a>Lista över funktioner som stöds
 

@@ -1,6 +1,6 @@
 ---
 title: Ställa in momsgrupper
-description: Det här avsnittet förklarar hur du ställer in momsgrupper i tjänsten momsberäkning.
+description: Den här artikeln förklarar hur du ställer in momsgrupper i tjänsten momsberäkning.
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 50abafb958edfb8476434ff5842cd84cb186962f
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 89c5670ee7e78f2dc51f128c3ae8d284bb6b925b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883883"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862911"
 ---
 # <a name="set-up-tax-groups"></a>Ställa in momsgrupper
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet förklarar hur du ställer in momsgrupper i tjänsten momsberäkning. Här förklaras också hur du ställer in matrisen för tillämplighetsregel för momsgrupp och konfigurerar rader i matrisen.
+Den här artikeln förklarar hur du ställer in momsgrupper i tjänsten momsberäkning. Här förklaras också hur du ställer in matrisen för tillämplighetsregel för momsgrupp och konfigurerar rader i matrisen.
 
 Begreppet momsgrupper i momsberäkningstjänsten liknar begreppet momsgrupper i Microsoft Dynamics 365 Finance. De är grupper av skattekoder. Tjänsten Skatteberäkning använder skärningspunkten mellan en skattegrupp och en artikelskattegrupp för att fastställa momskoderna.
 

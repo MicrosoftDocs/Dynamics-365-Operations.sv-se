@@ -1,6 +1,6 @@
 ---
 title: Arbetsorder och anläggningstillgångar
-description: Det här avsnittet innehåller förklaringar av arbetsorder och anläggningstillgångar i Tillgångshantering.
+description: Denna artikel innehåller förklaringar av arbetsorder och anläggningstillgångar i Tillgångshantering.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ad4af6bb0df557314f844d3e7a6c5fb84a6331d86f16e1bc76150f78ce3039e4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a6b9cf8327f65371f8362a5729bb32746d900cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752812"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885998"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Arbetsorder och anläggningstillgångar
 
@@ -42,11 +42,11 @@ Följande procedur beskriver relationen mellan tillgångar, arbetsorder, jobbpro
 
 ![Figur 2.](media/25-work-orders.png)
 
-2. När du ställer in arbetsordertyper på sidan **Arbetsorderordertyper** (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Arbetsordertyper**) skapar du en arbetsordertyp för hantering av investeringar. Se även [Arbetsordertyper](../setup-for-work-orders/work-order-types.md).
+2. När du konfigurerar arbetsordertyper på sidan **Arbetsorderordertyper** (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Arbetsordertyper**) skapar du en arbetsordertyp för hantering av investeringar. Se även [Arbetsordertyper](../setup-for-work-orders/work-order-types.md).
 
 ![Figur 3.](media/26-work-orders.png)
 
-3. När du ställer in projektgrupper för arbetsorder i fliken **Projektgrupp** på sidan **Projektinställningar för arbetsorder** (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Projktinställningar**) skapas en relation mellan arbetsordertypen som används för investeringar och projektgruppen som skapas för investeringar på sidan **Projektgrupper** i modulen **Projekthantering och redovisning** (**Projekthantering och redovisning** > **Inställningar** > **Bokföring** > **Projektgrupper**).
+3. När du konfigurerar projektgrupper för arbetsorder i fliken **Projektgrupp** på sidan **Projektinställningar för arbetsorder** (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Projktinställningar**) skapas en relation mellan arbetsordertypen som används för investeringar och projektgruppen som skapas för investeringar på sidan **Projektgrupper** i modulen **Projekthantering och redovisning** (**Projekthantering och redovisning** > **Inställningar** > **Bokföring** > **Projektgrupper**).
 
 ![Figur 4.](media/27-work-orders.png)
 

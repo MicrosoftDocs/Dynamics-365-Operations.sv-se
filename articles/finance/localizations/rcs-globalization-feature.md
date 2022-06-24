@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: e8df8a56d493e58f28699a87dd9dab1f87540a4ee327450384f89e6d426ba1a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf08f25f7d092e0f93284a4019096378543adb9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760641"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888906"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Services (RCS) – Globaliseringsfunktioner
 
@@ -40,7 +40,7 @@ Innan du slutför procedurerna måste du utföra stegen som hör till följande 
 - Öppna en RCS-instans.
 - Skapa och aktivera en konfigurationsleverantör. Mer information finns i [Skapa konfigurationsleverantörer och markera dem som aktiva](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-I Finance and Operations-appinstansen följer du stegen nedan.
+I appinstansen för ekonomi och drift, följ dessa steg.
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. Om ingen RCS-miljö har etablerats för ditt företag väljer du **Regulatory services – konfiguration** och följer sedan instruktionerna för att etablera en.
@@ -161,7 +161,7 @@ Följande åtgärder är tillgängliga för konfigurationer:
 - **Visa** – Visa de underliggande funktionskonfigurationerna som inte kräver någon uppdatering.
 - **Redigera** – skapa en utkastversion av en vald konfiguration så att du kan redigera formatet eller format mappningen i formatdesignern.
 - **Ta bort** – Tar bort en vald konfiguration från funktionen.
-- **Basera om** – basera om funktionen. Mer information finns i avsnittet [BAsera om härledda globaliseringsfunktioner](#rebase) senare i det här avsnittet.
+- **Basera om** – basera om funktionen. Mer information finns i avsnittet [Basera om härledda globaliseringsfunktioner](#rebase) senare i den här artikeln.
 
 ### <a name="setups"></a>Inställningar
 
@@ -182,7 +182,7 @@ Följande åtgärder är tillgängliga för framtida inställningar:
 
 Följande åtgärder är tillgängliga för miljöer:
 
-- **Aktivera** – Välj en publicerad miljö under en vald funktionsversion och välj ett **Giltighet från**-datum då den ska vara tillgänglig. Mer information finns i avsnittet [Konfigurera miljöer för aktivering](#configureenvironment) senare i det här avsnittet.
+- **Aktivera** – Välj en publicerad miljö under en vald funktionsversion och välj ett **Giltighet från**-datum då den ska vara tillgänglig. Mer information finns i avsnittet [Konfigurera miljöer för aktivering](#configureenvironment) senare i den här artikeln.
 - **Avbryt** – ta bort en miljö för en funktionsinställning.
 
 ### <a name="organizations"></a>Organisationer

@@ -1,6 +1,6 @@
 ---
-title: Frisläpp till regel för lagerställe
-description: Det här ämnet ger information om funktionen frisläpp till regel för lagerställe, vilket ger flexibilitet vid frisläppning till lagerstället. Det lägger till ett konfigurationsalternativ som styr om systemet tillåter att delvis reserverade orderrader frisläpps.
+title: Regel för släppa till distributionslager
+description: Denna artikel ger information om funktionen Frisläpp till regel för lagerställe, vilket ger flexibilitet vid frisläppning till lagerstället. Det lägger till ett konfigurationsalternativ som styr om systemet tillåter att delvis reserverade orderrader frisläpps.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5fef1d942f2e9d3467fb8a00c6d89cc5c018a5aa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c011938438be32e8a3169d90561ab329da32e32a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674629"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895479"
 ---
 # <a name="release-to-warehouse-rule"></a>Frisläpp till regel för lagerställe
 
@@ -37,12 +37,12 @@ Innan du kan använda funktionen *Frisläpp till regel för lagerställe* den ak
 
 ### <a name="initialize-the-feature"></a>Initiera funktionen
 
-När funktionen är aktiverad i systemet måste du initiera den för att ställa in regeln på rätt initial status för alla lagerställen.
+När funktionen är aktiverad i systemet måste du initiera den för att konfigurera regeln på rätt initial status för alla lagerställen.
 
 - För lagerställen som inte aktiveras för lagerstyrning anges regeln ursprungligen till **ej tillämplig**.
 - För lagerställen som aktiveras för lagerstyrning anges regeln ursprungligen till **Tillåt viss reservation**.
 
-Om du vill initiera funktionen och ställa in frisläppning till regel för lagerställe för alla lagerställen följer du stegen nedan.
+Om du vill initiera funktionen och konfigurera frisläppning till regel för lagerställe för alla lagerställen följer du stegen nedan.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Parametrar för lagerstyrning**.
 1. På fliken **Parametrar för lagerstyrning** på fliken **Allmänt** i avsnittet **Företagsinformation** väljer du länken för regeln **Initiera frisläppning till lagerställe**. (Om den här länken inte visas är funktionen antingen inte aktiverad eller också har den redan initierats.)
@@ -78,7 +78,7 @@ Du kan också använda dessa scenarier som vägledning för funktionen när du a
 Det här scenariot visar hur funktionen fungerar för lagerställen som är inställda på att **kräva fullständig reservation**.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Lagerställen**.
-1. För lagerställe _62_ ställer du in fältet **Krav för lagerreservation** till **Kräv full reservation** enligt beskrivningen i avsnittet [Ställ in regeln för frisläppning till lagerställe för varje lagerställe](#set-option-warehouse) tidigare i detta ämne.
+1. För lagerställe _62_ ställer du in fältet **Krav för lagerreservation** som **Kräv full reservation** enligt beskrivningen i avsnittet [Ställ in regeln för frisläppning till lagerställe för varje enskilt lagerställe](#set-option-warehouse) tidigare i denna artikel.
 1. Gå till **Försäljning och marknadsföring \> Försäljningsorder \> Alla försäljningsorder**.
 1. Skapa en försäljningsorder genom att välja **Ny**.
 1. I dialogrutan **Skapa försäljningsorder** ställ in följande värden:
@@ -92,7 +92,7 @@ Det här scenariot visar hur funktionen fungerar för lagerställen som är inst
     - **Artikelnummer:** *A0001*
     - **Kvantitet:** *2*
 
-1. Välj **Lägg till rad** för att lägga till en nya rad och ställa in följande värden:
+1. Välj **Lägg till rad** för att lägga till en nya rad och konfigurera följande värden:
 
     - **Artikelnummer:** *A0002*
     - **Kvantitet:** *2*
@@ -112,7 +112,7 @@ Det här scenariot visar hur funktionen fungerar för lagerställen som är inst
 Det här scenariot visar hur funktionen fungerar för lagerställen som är inställda på att **Tillåt delvis frisläppning**.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Lagerställen**.
-1. För lagerställe _62_ ställer du in fältet **Krav för lagerreservation** till **Tillåt delvis frisläppning** enligt beskrivningen i avsnittet [Ställ in regeln för frisläppning till lagerställe för varje lagerställe](#set-option-warehouse) tidigare i detta ämne.
+1. För lagerställe _62_ ställer du in fältet **Krav för lagerreservation** som **Tillåt delvis frisläppning** enligt beskrivningen i avsnittet [Ställ in regeln för frisläppning till lagerställe för varje lagerställe](#set-option-warehouse) tidigare i denna artikel.
 1. På samma sätt som i [föregående scenario](#scenario1), gå till **Försäljning och marknadsföring \> Försäljningsorder \> Alla försäljningsorder** och skapar en order för kundkonto _US-004_ från lagerställe _62_. Lägg till följande två orderrader:
 
     - **Rad 1:** Ställ in fältet **Artikelnummer** till _A0001_, fältet **Kvantitet** till _2_ och fältet **Enhet** till _Pcs_.

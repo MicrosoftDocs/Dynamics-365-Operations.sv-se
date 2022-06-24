@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 71a6f27b4067eadb3d17b6fc14de366fcc441230
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ee7547f9a46034238f2bd6c668c124852b3e0714
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710765"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845328"
 ---
 # <a name="assign-number-sequences"></a>Tilldela nummerserier
 

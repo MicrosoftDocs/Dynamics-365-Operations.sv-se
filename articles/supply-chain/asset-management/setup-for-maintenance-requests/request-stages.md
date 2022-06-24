@@ -1,6 +1,6 @@
 ---
 title: Livscykeltillstånd för underhållsbegäran
-description: I det här avsnittet beskrivs hur du ställer in livscykeltillstånd för underhållsbegäran i tillgångshantering.
+description: I denna artikel beskrivs hur du konfigurerar livscykeltillstånd för underhållsbegäran i Tillgångshantering.
 author: johanhoffmann
 ms.date: 04/20/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ece0fc1121211706350d804fec59e72ef08282fcba4e65f557a510834738b11
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 81b30820adf11f0239ea8ff9d1886b5738e38162
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743684"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862726"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Underhållsbegärans livscykeltillstånd
 
@@ -33,7 +33,7 @@ Livscykeltillstånd för underhållsbegäran definierar stadier som en begäran 
 
 ## <a name="set-up-maintenance-request-lifecycle-states"></a>Ställ in livscykeltillstånd för underhållsbegäran
 
-1. Välj **tillgångshantering** \> **inställningar** \> **underhållsbegäran** \> **livscykeltillstånd**.
+1. Välj **Tillgångshantering** \> **inställningar** \> **underhållsbegäran** \> **livscykeltillstånd**.
 2. Välj **ny** för att skapa ett livscykeltillstånd för underhållsbegäran.
 3. I fältet **livscykeltillstånd** anger du ett ID för livscykeltillståndet.
 4. Ange sedan ett namn i fältet **Namn**.
@@ -57,8 +57,8 @@ Följande illustration visar ett exempel på sidan **livscykeltillståndet för 
 
 När du har skapat de livscykeltillstånd som krävs för dina underhållsbegäranden kan de delas upp i livscykeltillståndsgrupper eller livscykelmodeller. Livscykelmodeller för underhållbegäran används för att skapa flödet som kan användas för olika typer av underhållbegäranden. Som ett minimum ska en standardlivscykelmodell för underhållsbegäran skapas.
 
-1. Välj **tillgångshantering** \> **inställningar** \> **underhållsbegäran** \> **livscykelmodell**.
-2. Välj **ny** för att skapa ett livscykelmodell  för underhållsbegäran.
+1. Välj **Tillgångshantering** \> **inställningar** \> **underhållsbegäran** \> **livscykelmodell**.
+2. Välj **ny** för att skapa en livscykelmodell för underhållsbegäran.
 3. I fältet **livscykelmodell** anger du ett ID för livscykelmodell.
 4. Ange sedan ett namn i fältet **Namn**.
 

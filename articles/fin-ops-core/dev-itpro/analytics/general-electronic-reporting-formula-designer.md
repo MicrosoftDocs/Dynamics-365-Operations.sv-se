@@ -1,6 +1,6 @@
 ---
 title: Formeldesigner i elektronisk rapportering (ER)
-description: Det här avsnittet innehåller information om hur du använder formeldesignern i elektronisk rapportering (ER).
+description: Den här artikeln innehåller information om hur du använder formeldesignern i elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 04/08/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 606532411aa8297654d8d20a9061472597e773da
-ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
+ms.openlocfilehash: 6b03613cb40c5ca718f45e69740d29059fcfb70b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782216"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894307"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
 
-Detta avsnitt avslutar hur du använder formeldesignern inom Elektronisk rapportering (ER). Om du utformar ett format för ett visst elektroniskt dokument i ER kan du använda formler för datatransformering för att uppfylla kraven för dokumentets uppfyllelse och formatering. Dessa formler liknar formler i Microsoft Excel. Formulären ger stöd åt olika typer av funktioner: text, datum och tid, matematik, logik, information, funktioner för datatypskonvertering och andra (företagsdomänspecifika funktioner).
+Den här artikeln innehåller information om hur du använder formeldesignern i Elektronisk rapportering (ER). Om du utformar ett format för ett visst elektroniskt dokument i ER kan du använda formler för datatransformering för att uppfylla kraven för dokumentets uppfyllelse och formatering. Dessa formler liknar formler i Microsoft Excel. Formulären ger stöd åt olika typer av funktioner: text, datum och tid, matematik, logik, information, funktioner för datatypskonvertering och andra (företagsdomänspecifika funktioner).
 
 ## <a name="formula-designer-overview"></a>Formel designer översikt
 

@@ -1,6 +1,6 @@
 ---
 title: Översikt över produktinformation
-description: Det här avsnittet innehåller information om hur du hanterar produktinformation. Produktinformationshantering fungerar med en delad produktdefinition, kategorisering och identifierare för alla juridiska personer och även särskilda konfigurationer för en produkt så att den passar i affärsprocesserna.
+description: Denna artikel innehåller information om produktinformationshantering. Produktinformationshantering fungerar med en delad produktdefinition, kategorisering och identifierare för alla juridiska personer och även särskilda konfigurationer för en produkt så att den passar i affärsprocesserna.
 author: t-benebo
 ms.date: 06/01/2017
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c8aabeed66f864d1d1060a6452a3b554611c295
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: fa06e718d2acc44cfced7db842814c48fb210d1e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867881"
 ---
 # <a name="product-information-overview"></a>Översikt över produktinformation
 
@@ -28,7 +28,7 @@ ms.locfileid: "8063326"
 
 
 
-Det här avsnittet innehåller information om hur du hanterar produktinformation. Produktinformationshantering fungerar med en delad produktdefinition, kategorisering och identifierare för alla juridiska personer och även särskilda konfigurationer för en produkt så att den passar i affärsprocesserna. 
+Denna artikel innehåller information om produktinformationshantering. Produktinformationshantering fungerar med en delad produktdefinition, kategorisering och identifierare för alla juridiska personer och även särskilda konfigurationer för en produkt så att den passar i affärsprocesserna. 
 
 Produktinformation är den viktigaste delen i leveranskedjor och handelsapplikationer inom alla branscher. Det avser processer och tekniker som fokuserar på att centralt hantera information om produkter (t.ex. över distributionskedjor). Det är viktigt att gemensamma produktdefinitioner, dokumentation, attribut och identifierare används. I de olika modulerna för en företagslösning krävs produktspecifik information och konfiguration för att hantera de affärsprocesser som rör specifika produkter, produktfamiljer och produktkategorier.
 

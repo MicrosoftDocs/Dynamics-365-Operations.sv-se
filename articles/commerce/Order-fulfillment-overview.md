@@ -1,6 +1,6 @@
 ---
 title: Orderuppfyllelse i butik
-description: Det här ämnet ger en översikt över orderuppfyllelse i butik.
+description: Denna artikel ger en översikt över orderuppfyllelse i butik.
 author: BrianShook
 ms.date: 10/30/2017
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 36ce908e81639fbb836d33ff3e84976c395b1473
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 23f0b6ff8ec105da04b4b2416d8f6864c70c92fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983352"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854988"
 ---
 # <a name="store-order-fulfillment"></a>Orderuppfyllelse i butik
 
@@ -33,7 +33,7 @@ Utförande av orderuppfyllelse i butiken ger en enskild arbetsyta i POS som kan 
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Komma åt enhetligt orderuppfyllande i POS
 
-Orderuppfyllande [Operations-ID 928](pos-operations.md), kan användas för åtkomst till butikens orderuppfyllelsearbete i POS.
+Orderuppfyllande [Åtgärds-ID 928](pos-operations.md), kan användas för åtkomst till butikens orderuppfyllelsearbete i POS.
 
 Utförande av orderuppfyllelsen har inte sin egen inte har sin egen färdiga behörighet, men användare kommer i framtiden att kunna använda behörigheten **Tillåt hämta order** för att starta en åtgärd från POS.
 
@@ -93,7 +93,7 @@ När en order har tagits emot kan rader väljas och markeras som **plockning**. 
 
 Plocklistor kan skrivas ut vid POS för att hjälpa medarbetare att utföra plockningsprocessen. En utskriven plocklista kan köras medan medarbetaren utför plockningen och när produkterna plockas kan medarbetaren manuellt markera dem som plockade på plocklistan.
 
-Plocklistformatet konfigurerats i Commerce och läggs till i kvittoprofilen. Mer information om hur du ställer in kvittoprofiler finns i [Kvittomallar och utskrift](receipt-templates-printing.md).
+Plocklistformatet konfigurerats i Commerce och läggs till i kvittoprofilen. Mer information om hur du konfigurerar kvittoprofiler finns i [Kvittomallar och utskrift](receipt-templates-printing.md).
 
 Om raderna markeras och en plocklista skrivs ut för dessa rader uppdateras de automatiskt med statusen **plockning**.
 
@@ -119,7 +119,7 @@ Orderrader kan packas när som helst efter det att orderraden har accepterats.
 - **Resulterande status:** Packad eller delvis packad
 - **Resulterande backoffice-status:** levererad eller delvis levererad
 
-Den här åtgärden markerar rader som packade eller delvis packade och skriver ut en följesedel. En följesedel kan skrivas ut för att validera de produkter som har packats ihop. Följesedelformatet konfigureras i Commerce och läggs till i kvittoprofilen. Mer information om hur du ställer in kvittoprofiler finns i [Kvittomallar och utskrift](receipt-templates-printing.md).
+Den här åtgärden markerar rader som packade eller delvis packade och skriver ut en följesedel. En följesedel kan skrivas ut för att validera de produkter som har packats ihop. Följesedelformatet konfigureras i Commerce och läggs till i kvittoprofilen. Mer information om hur du konfigurerar kvittoprofiler finns i [Kvittomallar och utskrift](receipt-templates-printing.md).
 
 **Åtgärd: Markera som packad**
 
@@ -187,7 +187,7 @@ Varje gång en rad markeras fylls det återstående beloppet för den raden i au
 
 Fortsätter med exemplet ovan, om 200 kort markeras som packade och leverans är vald, blir hela beloppet på 500 automatiskt ifyllt. Om endast 200 kort levereras, antar systemet att tidigare packade kort levereras och att den packade kvantiteten minskas. Om 201 kort levereras minskas först de förpackade korten med återstående enkelt kort från den resterande kvantiteten.
 
-## <a name="line-statuses"></a>Radstatusar 
+## <a name="line-statuses"></a>Radstatusar
 
 Orderrader i POS har flera statusar som återspeglar status för orderraden. Statusar i POS och backoffice matchar inte alltid. Orderradstatusen kan ses genom den kassa som använder utförande av orderuppfyllelse. I backoffice visas orderraderna från orderdetaljerna. Orderdetaljer kan nås via **Butik och handel** \> **Kunder** \> **Alla kundorder**. Välj **Order-ID** för orderdetaljer. Från orderdetaljer väljer du fliken **Försäljningsorder** och väljer sedan **Detaljerad status** under underrubriken **Visa**.
 
@@ -201,7 +201,7 @@ Orderrader i POS har flera statusar som återspeglar status för orderraden. Sta
 
 ## <a name="order-fulfillment-filtering"></a>Orderuppfyllelsefiltrering
 
-Orderuppfyllelse i POS innehåller filter för att hjälpa användaren att enkelt hitta vad de behöver. Filter kan ändras via åtgärdsfönstret längst ned på skärmen **Kassa**. Som standard tillämpas filtret **leveranstyp** beroende på hur operationen ställs in. Om operationen ställs in med parametern **alla order** och filtret används vid åtkomst av orderuppfyllelse. Detsamma gäller för parametrarna **Butiksupphämtning** och **Leverans från butik**. Andra filter kan tillämpas på orderuppfyllelsen:
+Orderuppfyllelse i POS innehåller filter för att hjälpa användaren att enkelt hitta vad de behöver. Filter kan ändras via åtgärdsfönstret längst ned på skärmen **Kassa**. Som standard tillämpas filtret **leveranstyp** beroende på hur åtgärden ställs in. Om åtgärden ställs in med parametern **alla order** och filtret används vid åtkomst av orderuppfyllelse. Detsamma gäller för parametrarna **Butiksupphämtning** och **Leverans från butik**. Andra filter kan tillämpas på orderuppfyllelsen:
 
 - Kundnummer
 - Kundnamn

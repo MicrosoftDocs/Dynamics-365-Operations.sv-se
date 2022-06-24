@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: b6e8299dd57730486c731cd38578bd5ff6b8a1754f145432e300c1217c6dd640
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b9ac7dcac4d020759d04fec75e17c43ed627e25
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760760"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847413"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Förbättra spårningsresultat av genererade ER-rapporter för att jämföra med originalvärden
 
 [!include[banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs den första uppsättningen med förbättringar av funktionen för baslinje i det elektroniska rapportramverket (ER). Dessa förbättringar finns i Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (juni 2019) och senare.
+I den här artikeln beskrivs den första uppsättningen med förbättringar av funktionen för baslinje i det elektroniska rapportramverket (ER). Dessa förbättringar finns i Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (juni 2019) och senare.
 
 ## <a name="automate-the-setting-of-baseline-rules"></a>Automatisera inställningen av baslinjeregler
 
-Ämnet [Spårningsgenererade rapportresultat och jämföra dem med baslinjevärden](er-trace-reports-compare-baseline.md) beskriver hur du konfigurerar ER-ramverket för insamling av information om ER-formatering och utvärdering av resultaten av dessa körningar. I exemplet i det här avsnittet visas de steg som måste utföras.
+Ämnet [Spårningsgenererade rapportresultat och jämföra dem med baslinjevärden](er-trace-reports-compare-baseline.md) beskriver hur du konfigurerar ER-ramverket för insamling av information om ER-formatering och utvärdering av resultaten av dessa körningar. I exemplet i den här artikeln visas de steg som måste utföras.
 
 Här följer några steg:
 
@@ -142,7 +142,7 @@ Den valda ER-formatkomponenten har lagts till i listan över komponenter på sna
 
 ### <a name="make-a-new-baseline-rule"></a>Skapa en ny baslinjeregel
 
-Följ stegen i avsnittet "exempel: automatisera inställningen av baslinjeregler" ovan i det här avsnittet. Ett meddelande visas med en varning om att den utgående filen har genererats med hjälp av inställningar för baslinje och att formatbindningarna har bytts ut.
+Följ stegen i avsnittet "exempel: automatisera inställningen av baslinjeregler" ovan i den här artikeln. Ett meddelande visas med en varning om att den utgående filen har genererats med hjälp av inställningar för baslinje och att formatbindningarna har bytts ut.
 
 ![Meddelande på sidan Konfigurationer.](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Skärmbild av meddelande på sidan Konfigurationer")
 

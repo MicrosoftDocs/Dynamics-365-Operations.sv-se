@@ -1,6 +1,6 @@
 ---
 title: Över-/undertransaktioner
-description: Det här ämnet innehåller information som hjälper dig att ställa in information om principer för över-/undertransaktioner så att systemet kan bestämma hur överbearbetning och underbearbetning av varor ska hanteras vid inleverans.
+description: Denna artikel innehåller information som hjälper dig att konfigurera information om principer för över-/undertransaktioner så att systemet kan bestämma hur överbearbetning och underbearbetning av varor ska hanteras vid inleverans.
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 63ba27d3fe10441f5e0ad54e684aa6799b521c7a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 79ce18a462f9c2f93dceec82da7ee0209ab61f78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687852"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845009"
 ---
 # <a name="overunder-transactions"></a>Över-/undertransaktioner
 
 [!include [banner](../../includes/banner.md)]
 
-När beställningarna i en färd behandlas förväntar sig systemet att artikelkvantiteten som mottas i slutdestinationslagret för konsumtion ska matcha den kvantitet som anges på inköpsorderraderna som är associerade med färden. Eftersom den exakta kvantiteten på inköpsorderraderna inte alltid tas emot i lagret, kommer dock modulen **Hemtagningskostnad** definierar en uppsättning regler som används för att hantera övermottagande och undermottagande av varor. Dessa regler är särskilt viktiga eftersom den ursprungliga inköpsordern har fakturerats och inte längre kan ändras. Genom att ställa in detaljerna för över/undertransaktionspolicyer aktiverar du systemet för att bestämma hur överbearbetning och underbearbetning av varor ska hanteras vid inleverans. Du kan också manuellt hantera över- och underlager genom att använda sidan **Över/undertransaktioner**.
+När beställningarna i en färd behandlas förväntar sig systemet att artikelkvantiteten som mottas i slutdestinationslagret för konsumtion ska matcha den kvantitet som anges på inköpsorderraderna som är associerade med färden. Eftersom den exakta kvantiteten på inköpsorderraderna inte alltid tas emot i lagret, kommer dock modulen **Hemtagningskostnad** definierar en uppsättning regler som används för att hantera övermottagande och undermottagande av varor. Dessa regler är särskilt viktiga eftersom den ursprungliga inköpsordern har fakturerats och inte längre kan ändras. Genom att konfigurera detaljerna för över/undertransaktionspolicyer aktiverar du systemet för att bestämma hur överbearbetning och underbearbetning av varor ska hanteras vid inleverans. Du kan också manuellt hantera över- och underlager genom att använda sidan **Över/undertransaktioner**.
 
 ## <a name="overunder-tolerances"></a>Över-/undertoleranser
 
@@ -45,7 +45,7 @@ Om du vill konfigurera toleranserna går du **Hemtagningskostnad \> Över/underi
 
 När en över- eller underkvantitet associeras med en mottagen rad kanske du måste identifiera orsaken till över- eller underkvantiteten. I detta fall kan du välja en orsak till över- eller underleverans på mottagningsraden när varorna tas emot.
 
-Om du vill ställa in över- och underleveransorsaker går du till **Hemtagningskostnad \> Över-/underinställning \> Över-/underorsaker**. Där kan du visa, redigera, lägga till och ta bort tillgängliga överleverans- och underleveransorsaker. Följande register beskriver de fält som är tillgängliga för varje orsak.
+Om du vill konfigurera över- och underleveransorsaker går du till **Hemtagningskostnad \> Över-/underinställning \> Över-/underorsaker**. Där kan du visa, redigera, lägga till och ta bort tillgängliga överleverans- och underleveransorsaker. Följande register beskriver de fält som är tillgängliga för varje orsak.
 
 | Fält | beskrivning |
 |---|---|
@@ -57,7 +57,7 @@ Om du vill ställa in över- och underleveransorsaker går du till **Hemtagnings
 
 Artiklar med liknande toleranser kan grupperas tillsammans. På detta sätt kan du ange över-/undertoleransen för alla artiklar i gruppen samtidigt.
 
-För att ställa in över-/undertoleransgrupper för artikel, gå till **Hemtagningskostnad \> Över-/underinställning \> Över-/undertoleransgrupper för artikel**. Där kan du visa, redigera, lägga till och ta bort poster för över-/undertoleransgrupper. Följande register beskriver de fält som är tillgängliga för varje post.
+För att konfigurera över-/undertoleransgrupper för artikel, gå till **Hemtagningskostnad \> Över-/underinställning \> Över-/undertoleransgrupper för artikel**. Där kan du visa, redigera, lägga till och ta bort poster för över-/undertoleransgrupper. Följande register beskriver de fält som är tillgängliga för varje post.
 
 | Fält | beskrivning |
 |---|---|
@@ -66,9 +66,9 @@ För att ställa in över-/undertoleransgrupper för artikel, gå till **Hemtagn
 
 ## <a name="vendor-overunder-tolerance-groups"></a>Över-/undertoleransgrupper för leverantör
 
-Du kan gruppera ihop leverantörer som regelbundet överleverans eller underleverans. Du kan sedan ställa in över-/undertoleransen per grupp.
+Du kan gruppera ihop leverantörer som regelbundet överleverans eller underleverans. Du kan sedan konfigurera över-/undertoleransen per grupp.
 
-För att ställa in över-/undertoleransgrupper för leverantör, gå till **Hemtagningskostnad \> Över-/underinställning för leverantör \> Över-/undertoleransgrupper**. Där kan du visa, redigera, lägga till och ta bort poster för över-/undertoleransgrupper. Följande register beskriver de fält som är tillgängliga för varje post.
+För att konfigurera över-/undertoleransgrupper för leverantör, gå till **Hemtagningskostnad \> Över-/underinställning för leverantör \> Över-/undertoleransgrupper**. Där kan du visa, redigera, lägga till och ta bort poster för över-/undertoleransgrupper. Följande register beskriver de fält som är tillgängliga för varje post.
 
 | Fält | beskrivning |
 |---|---|

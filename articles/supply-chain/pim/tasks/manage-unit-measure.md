@@ -1,6 +1,6 @@
 ---
 title: Hantera måttenheter
-description: Detta ämne beskriver hur du definierar en måttenhet, anger översättningar för enheten och dess beskrivning, samt definierar konverteringsregler för relaterade enheter.
+description: Denna artikel beskriver hur du definierar en måttenhet, anger översättningar för enheten och dess beskrivning, samt definierar konverteringsregler för relaterade enheter.
 author: t-benebo
 ms.date: 04/09/2021
 ms.topic: business-process
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e13897396810507bb4b2cbb415b873eb3dd7f4e8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8e2c21756b270ef7d914dc74a0cf61727953206a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565530"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863923"
 ---
 # <a name="manage-units-of-measure"></a>Hantera måttenheter
 
 [!include [banner](../../includes/banner.md)]
 
-Detta ämne beskriver hur du definierar en måttenhet, anger översättningar för enheten och dess beskrivning, samt definierar konverteringsregler för relaterade enheter.
+Denna artikel beskriver hur du definierar en måttenhet, anger översättningar för enheten och dess beskrivning, samt definierar konverteringsregler för relaterade enheter.
 
 ## <a name="open-the-units-page"></a>Öppna enhetssidan
 
 Om du vill skapa och arbeta med tillgängliga måttenheter i systemet går du till **Organisationsadministration \> Inställningar \> Enheter \> Enheter**.
 
-I de återstående avsnitten i detta ämne beskrivs vad du kan göra på sidan **Enheter**.
+I de återstående avsnitten i denna artikel beskrivs vad du kan göra på sidan **Enheter**.
 
 ## <a name="create-standard-units-and-conversions"></a>Skapa standardenheter och konverteringar
 
@@ -54,9 +54,9 @@ Följ de här stegen om du vill skapa eller redigera en måttenhet.
 
     - **Enhetsklass** – Välj den egenskap som enheten mäter (t.ex. längd, område, massa eller kvantitet).
     - **System med enheter** – Välj det måttsystem som enheten tillhör (*Metriska enheter* eller *USA-anpassade enheter*).
-    - **Basenhet** – Ange det här alternativet som *Ja* om du vill använda den aktuella enheten som basenhet för dess enhetsklass. I detta fall behöver du bara ange konverteringsfaktorn mellan basenheten och varje ytterligare enhet i enhetsklassen. Systemet kan sedan konvertera mellan alla enheter i denna enhetsklass. Därför är det enklare att ställa in konverteringar.
+    - **Basenhet** – Ange det här alternativet som *Ja* om du vill använda den aktuella enheten som basenhet för dess enhetsklass. I detta fall behöver du bara ange konverteringsfaktorn mellan basenheten och varje ytterligare enhet i enhetsklassen. Systemet kan sedan konvertera mellan alla enheter i denna enhetsklass. Därför är det enklare att konfigurera konverteringar.
 
-        Om liter till exempel är basenhet för enhetsklassen *Volym*, behöver du bara ställa in konverteringsfaktorer från exempelvis quart till liter och från pint till liter. Systemet kan sedan även konvertera från quart till pint.
+        Om liter till exempel är basenhet för enhetsklassen *Volym*, behöver du bara konfigurera konverteringsfaktorer från exempelvis quart till liter och från pint till liter. Systemet kan sedan även konvertera från quart till pint.
 
         Du kan endast ha en basenhet per enhetsklass.
 
@@ -98,7 +98,7 @@ Följ de här stegen om du vill definiera regler för konvertering mellan måtte
 
     Sidan **Enhetskonverteringar** visas. Du kan använda denna sida för att definiera regler för att konvertera den valda enheten till och från andra enheter i enhetsklassen.
 
-1. Välj en av följande flikar, beroende på vilken typ av konvertering som du vill ställa in:
+1. Välj en av följande flikar, beroende på vilken typ av konvertering som du vill konfigurera:
 
     - **Standardkonverteringar** – Ställ in standardkonverteringsregler för alla produkter.
     - **Konverteringar inom klass** – Ställ in produktspecifika konverteringsregler för enheter i samma enhetsklass.
@@ -112,7 +112,7 @@ Följ de här stegen om du vill definiera regler för konvertering mellan måtte
 1. Ställ in följande fält i dialogrutan för listrutan som visas:
 
     - **Produkt** – Välj den specifika produkt som konverteringen gäller för. Detta fält är endast tillgängligt för konverteringar inom klass och mellan klasser.
-    - **Formellayout** – Lämna det här fältet inställt på *Enkelt* om du vill ange en enkel konvertering som har en enda faktor. Ställ in den *Avancerat* för att ställa in en mer komplex formel. Formatet för avancerade formler varierar beroende på enhetsklassen.
+    - **Formellayout** – Lämna det här fältet inställt på *Enkelt* om du vill ange en enkel konvertering som har en enda faktor. Ställ in den *Avancerat* för att konfigurera en mer komplex formel. Formatet för avancerade formler varierar beroende på enhetsklassen.
     - **Från enhet** – I det här fältet visas den valda enheten. Vanligtvis ska du inte ändra värdet. (Om du ändrar värdet måste du öppna sidan **Enhetskonverteringar** för den valda enheten, detta om du vill visa den nya konverteringen när du har sparat den.)
     - **Till enhet** – Välj enheten du vill konvertera till.
     - **Avrundning** – Välj hur en del ska avrundas, baserat på det **decimalvärde** som den valda enheten har (*Till närmaste*, *Upp* eller *Ned*).
@@ -122,6 +122,6 @@ Följ de här stegen om du vill definiera regler för konvertering mellan måtte
 1. Stäng sidan.
 
 > [!TIP]
-> Du kan även ställa in enhetskonverteringar per produktvariant. Mer information finns i [Måttenhetskonvertering per produktvariant](../uom-conversion-per-product-variant.md).
+> Du kan även konfigurera enhetskonverteringar per produktvariant. Mer information finns i [Måttenhetskonvertering per produktvariant](../uom-conversion-per-product-variant.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

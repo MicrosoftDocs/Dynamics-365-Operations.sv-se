@@ -1,6 +1,6 @@
 ---
 title: Spåra körningen av ER-format för att felsöka prestandaproblem
-description: Det här avsnittet innehåller information om hur du använder funktionen för prestandaspårning i elektronisk rapportering (ER) för att felsöka prestandaproblem.
+description: Den här artikeln innehåller information om hur du använder funktionen för prestandaspårning i elektronisk rapportering (ER) för att felsöka prestandaproblem.
 author: NickSelin
 ms.date: 06/22/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 10eddf2f60db914e6451840d4d7aedb9dce7108874ea3ff45f375b85a55a694f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724403"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851963"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spåra körning av ER-format för att felsöka prestanda problem
 
@@ -98,7 +98,7 @@ Anta att du har börjat designa en ny ER-lösning för att skapa en ny rapport s
 
 Anta att du har skapat den första versionen av ER-lösningen. Du vill nu testa instansen och analysera körningsprestanda.
 
-### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importera ER-konfigurationer från RCS till Finance and Operations
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importera en ER-konfiguration från RCS till Finance and Operations
 
 1. Logga in på programinstansen.
 2. För den här självstudien ska du importera konfigurationer från din RCS-instans (där du utformar dina ER-komponenter) instansen (där du testar och slutligen använder dem.) Därför måste du se till att alla nödvändiga artefakter har förberetts. För mer information, se proceduren [Importera e-rapporteringskonfigurationer från Regulatory Configuration Services (RCS)](rcs-download-configurations.md).
@@ -134,7 +134,7 @@ Motsvarande versioner av datamodell- och modellmappningskonfigurationer importer
             - Kör varje datakälla i formatmappningen som anropas för att hämta data
             - Behandla varje formatobjekt för att ange data i de utdata som genereras
 
-            Värdet **Sammansatt spårningsformat** finns tillgängligt i Microsoft Dynamics 365 Finance version 10.0.20 och senare.
+            Värdet **Sammansatt spårningsformat** finns tillgängligt i Microsoft Microsoft Dynamics 365 Finance version 10.0.20 och senare.
 
             I ER-formatdesignern för ER modellmappningsdesignern kan du visa den totala körningstiden för en enskild komponent. Spårningen innehåller även information om körningen, t.ex. antalet körningar samt den minsta och maximala tiden för en enda körning.
 
@@ -305,27 +305,27 @@ Det kan också vara användbart om du vill minska antalet anrop som görs till d
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>Importera den modifierade ER-modellmappningskonfigurationen från RCS till programmet
 
-Upprepa stegen i avsnittet [Importera en ER-konfiguration från RCS till Finance and Operations](#import-configuration) tidigare i det här avsnittet om du vill importera version 1.2 av konfigurationen **Prestandaspårningsmappning**.
+Upprepa stegen i avsnittet [Importera en ER-konfiguration från RCS till Ekonomi och drift](#import-configuration) tidigare i den här artikeln om du vill importera version 1.2 av konfigurationen **Prestandaspårningsmappning**.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Kör modifierad ER-lösning för att spåra körning
 
 ### <a name="run-the-er-format"></a>Kör ER-format
 
-Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i det här avsnittet om du vill generera en ny prestandaspårning.
+Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i den här artikeln om du vill generera en ny prestandaspårning.
 
 ## <a name="work-with-the-execution-trace"></a>Arbeta med körningsspårningen
 
 ### <a name="export-the-generated-trace-from-the-application"></a>Exportera den genererade spårningen från programmet
 
-Upprepa stegen i avsnittet [exportera den genererade spårningen från programmet](#export-trace) tidigare i det här avsnittet om du vill spara en ny prestandaspårning lokalt.
+Upprepa stegen i avsnittet [exportera den genererade spårningen från programmet](#export-trace) tidigare i den här artikeln om du vill spara en ny prestandaspårning lokalt.
 
 ### <a name="import-the-generated-trace-into-rcs"></a>Importera genererad spårning till RCS.
 
-tiUpprepa stegen i avsnittet [importera den genererade spårningen till RCS](#import-trace) tidigare i det här avsnittet om du vill importera den nya prestandaspårningen till RCS.
+Upprepa stegen i avsnittet [importera den genererade spårningen till RCS](#import-trace) tidigare i den här artikeln om du vill importera den nya prestandaspårningen till RCS.
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--model-mapping"></a>Använd prestandaspårning för analys i RCS – modellmappning
 
-Upprepa stegen i avsnittet [Använd prestandaspårning för analys i RCS – modellmappning](#use-trace) tidigare i det här avsnittet om du vill analysera den senaste prestandaspårningen.
+Upprepa stegen i avsnittet [Använd prestandaspårning för analys i RCS – modellmappning](#use-trace) tidigare i den här artikeln om du vill analysera den senaste prestandaspårningen.
 
 Observera att justeringarna som du har gjort av modellmappningen har eliminerat dubbla frågor till databasen. Antalet anrop till databasregister och datakällor för den här modellmappningen har också minskats. Därför har hela ER-lösningens prestanda förbättrats.
 
@@ -355,7 +355,7 @@ Om du använder någon av dessa versioner kan du analysera detaljerna för gener
 
 ### <a name="run-the-er-format"></a>Kör ER-format
 
-Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i det här avsnittet om du vill generera en ny prestandaspårning.
+Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i den här artikeln om du vill generera en ny prestandaspårning.
 
 Observera att en zip-fil kan hämtas i webbläsaren. Den här filen innehåller prestandaspårningen i PerfView-format. Du kan sedan använda prestandaanalysverktyget PerfView för att analysera information om ER-formatkörning.
 
@@ -379,7 +379,7 @@ På grund av de förbättringar som har gjorts i ER-ramverk innehåller den pres
 
 ### <a name="run-the-er-format"></a>Kör ER-format
 
-Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i det här avsnittet om du vill generera en ny prestandaspårning.
+Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i den här artikeln om du vill generera en ny prestandaspårning.
 
 Observera att en zip-fil kan hämtas i webbläsaren. Den här filen innehåller prestandaspårningen i PerfView-format. Du kan sedan använda prestandaanalysverktyget PerfView för att analysera information om ER-formatkörning. I den här spårningen finns nu information om åtkomst till SQL-databasen under körningen av ER-formatet.
 

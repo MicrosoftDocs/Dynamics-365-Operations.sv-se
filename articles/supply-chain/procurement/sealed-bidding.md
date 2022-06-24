@@ -1,6 +1,6 @@
 ---
 title: Sluten budgivning för anbudsförfrågningar
-description: I det här avsnittet beskrivs hur du ställer in stängd budgivning så att leverantörsbud är stängda tills de öppnas av inköpspersonal.
+description: I denna artikel beskrivs hur du konfigurerar stängd budgivning så att leverantörsbud är stängda tills de öppnas upp av inköpspersonal.
 author: GalynaFedorova
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: dfc19646d6724627c8a25bcfc8a6b2a70a73c261
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 40f1735d7efa5131b1462963758b6b48eec78fea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675161"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890898"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>Sluten budgivning för anbudsförfrågningar
 
@@ -39,18 +39,18 @@ I det här avsnittet beskrivs de krav som måste uppfyllas för att du ska kunna
 
 När du använder stängd budgivning kan bara användare som är inställda som kontaktperson för en leverantör visa, redigera och lämna anbud för leverantören tills anbudstiden är slut. Dessa användare måste ha rollen **Leverantör (extern)** och de måste anges som kontaktperson för leverantörskontot. Kontaktpersonen måste också ha behörighet att samarbeta med leverantörer, så som beskrivs i [Ställa in och underhålla leverantörssamarbete](set-up-maintain-vendor-collaboration.md).
 
-Eftersom användare med rätt behörighet och som har ställts in som leverantörskontakter kan komma åt de stängda anbuden för en leverantör, är det viktigt att spåra vilka dessa användare är. Systemadministratören som ställer in användare och säkerhetsroller ansvarar för att begränsa åtkomst till stängda anbud till de användare som verkligen tillåts visa dem.
+Eftersom användare med rätt behörighet och som har ställts in som leverantörskontakter kan komma åt de stängda anbuden för en leverantör, är det viktigt att spåra vilka dessa användare är. Systemadministratören som konfigurerar användare och säkerhetsroller ansvarar för att begränsa åtkomst till stängda anbud till de användare som verkligen tillåts visa dem.
 
 ### <a name="step-2-enable-the-sealed-bidding-feature"></a>Steg 2: Aktivera funktionen för stängd budgivning
 
-Innan du börjar ställa in eller använda funktionen måste du se till att den är tillgänglig i ditt system. Administratörer kan använda arbetsytan **[Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** för att kontrollera funktionens status och aktivera den vid behov. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+Innan du börjar konfigurera eller använda funktionen måste du se till att den är tillgänglig i ditt system. Administratörer kan använda arbetsytan **[Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** för att kontrollera funktionens status och aktivera den vid behov. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 
 - **Modul:** *anskaffning och källa*
 - **Namn på funktion:** *Stängd budgivning för anbudsförfrågan*
 
 ### <a name="step-3-set-up-azure-key-vault"></a>Steg 3: Konfigurera Azure Key Vault
 
-Supply Chain Management använder krypteringsnycklar för att skydda alla stängda anbud och hålla dem stängda till lämplig tidpunkt. Det utnyttjar möjligheten att i Key Vault att generera och hantera nödvändiga nycklar. Därför måste du ställa in en anslutning från Supply Chain Management till ett nyckelvalv som aktiverar systemet.
+Supply Chain Management använder krypteringsnycklar för att skydda alla stängda anbud och hålla dem stängda till lämplig tidpunkt. Det utnyttjar möjligheten att i Key Vault att generera och hantera nödvändiga nycklar. Därför måste du konfigurera en anslutning från Supply Chain Management till ett nyckelvalv som aktiverar systemet.
 
 > [!IMPORTANT]
 > De nyckelvalv som du använder för att uppfylla dessa villkor måste uppfylla följande krav:
@@ -63,11 +63,11 @@ Varje anbud hämtar sin egen hemliga nyckel. Nyckeln används varje gång en anv
 
 Key Vault genererar nyckeln som används för att hämta hemligheten när leverantören väljer **Anbud** i leverantörens samarbetsgränssnitt. Nyckeln upphör sedan att gälla efter en fastställd tid som inköpschefen anger på sidan **Parametrar för anskaffning och sourcing** i Supply Chain Management. När nyckeln har upphört att gälla kan ingen visa, redigera eller öppna budet. Därför är det viktigt att konfigurera nyckelns utgång så att det finns tillräckligt med tid för att processen ska kunna slutföras.
 
-I de följande tre stegen ställer du in anslutning till Key Vault. Först ska du ställa in ett nyckelvalv som ska användas för stängd budgivning. Sedan ska du konfigurera Supply Chain Management att kommunicera med nyckelvalvet. Slutligen ställer du in utgångstid för nyckeln.
+I de följande tre stegen ställer du in anslutning till Key Vault. Först ska du konfigurera ett nyckelvalv som ska användas för stängd budgivning. Sedan ska du konfigurera Supply Chain Management att kommunicera med nyckelvalvet. Slutligen ställer du in utgångstid för nyckeln.
 
 ### <a name="step-4-set-up-a-key-vault-to-use-with-sealed-bidding"></a>Steg 4: Ställ in ett nyckelvalv som ska användas för stängd budgivning
 
-Följ dessa steg för att ställa in nyckelvalvet. Stegens ordningsföljd är mycket viktig.
+Följ dessa steg för att konfigurera nyckelvalvet. Stegens ordningsföljd är mycket viktig.
 
 1. Om du inte redan har ställt in ett Azure-abonnemang som är separat från abonnemanget där du kör Supply Chain Management ställer du in det.
 1. Ställa in ett nyckelvalv i ett separat Azure-lagringsutrymme. Mer information finns i [Underhålla Azure Key Vault lagringsutrymme](https://support.microsoft.com/help/4040294/maintaining-azure-key-vault-storage).
@@ -148,7 +148,7 @@ Processen för att skapa ett förfrågansärende för stängd budgivning är nä
 Anbudsförfrågansärenden för stängd budgivning måste ha värdet *Stängd* för **Anbudstyp**. Det finns tre sätt att tilldela det här värdet till ett anbudsförfrågansärende:
 
 - Ställ in värdet direkt på anbudsförfrågansärendet när du har skapat det.
-- Definiera stängd budgivning som standard för alla anbudsförfrågansärenden i Parametrar för anskaffning och sourcing. (Se föregående avsnitt [Ställ in standard anbudstyp](#set-default-bid-type).)
+- Definiera stängd budgivning som standard för alla anbudsförfrågansärenden i Parametrar för anskaffning och sourcing. (Se föregående avsnitt [Ställ in standardanbudstyp](#set-default-bid-type) i denna artikel.)
 - När du skapar ett nytt anbudsförfrågansärende väljer du en förfråganstyp som konfigureras för stängd budgivning. (Se avsnittet [Ställ in standard anbudstyp](#set-default-bid-type).)
 
 För stängd budgivning avgör anbudsförfrågansärendets värde för **Utgångsdatum och tid** när de lämnade anbuden kan öppnas. Värdet **Utgångsdatum och tid** på varje rad matchar värdet i rubriken.

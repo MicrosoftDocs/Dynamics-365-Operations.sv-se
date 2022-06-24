@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c3366e75b4a6d3f33a1aac9e444236d9ae57c829
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: c1bb3f784148f04c01223ac4e280a18bacfe0e51
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371737"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853234"
 ---
 # <a name="configure-service-environments-and-connected-applications"></a>Konfigurera tjänstemiljöer och anslutna program
 

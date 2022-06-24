@@ -1,6 +1,6 @@
 ---
-title: Implementeringsriktlinjer för integrationsexempel för kvittoskrivare för Italien (äldre)
-description: Det här ämnet ger riktlinjer för distribution av integrationsexempel för kvittoskrivare för Italien från Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK).
+title: Implementeringsriktlinjer för integreringsexempel för kvittoskrivare för Italien (äldre)
+description: Denna artikel ger riktlinjer för distribution av integreringsexempel för kvittoskrivare för Italien från utvecklingspaketet för detaljhandelsprogramvara för Microsoft Dynamics 365 Commerce (SDK).
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 617e97272fb4bd7cea0958958ae99648bb847b56
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: bb07ca91c9e5bf1a79f672f9ba29b7bcc21688c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614079"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848908"
 ---
-# <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>Implementeringsriktlinjer för integrationsexempel för kvittoskrivare för Italien (äldre)
+# <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>Implementeringsriktlinjer för integreringsexempel för kvittoskrivare för Italien (äldre)
 
 [!include[banner](../includes/banner.md)]
 
-Det här ämnet ger riktlinjer för distribution av integrationsexempel för kvittoskrivare för Italien från Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) på en virtuell dator för utvecklare i Microsoft Dynamics Lifecycle Services (LCS). Mer information om exemplet på räkenskapsintegrering finns i [Exempel på integrering av kvittoskrivare för Italien](emea-ita-fpi-sample.md). 
+Denna artikel ger riktlinjer för distribution av integreringsexempel för kvittoskrivare för Italien från utvecklingspaketet för detaljhandelsprogramvara för Microsoft Dynamics 365 Commerce (SDK) på en virtuell dator för utvecklare i Microsoft Dynamics Lifecycle Services (LCS). Mer information om exemplet på räkenskapsintegrering finns i [Exempel på integrering av kvittoskrivare för Italien](emea-ita-fpi-sample.md). 
 
-Exemplet på skatteintegrering för Italien ingår i Retail SDK. Information om hur du installerar och använder SDK finns i [Retail programutvecklingskit (SDK) arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Det här exemplet består av tillägg för Commerce Runtime (CRT), kassa och Hardware Station. Om du vill köra det här exemplet måste du ändra och bygga CRT och Hardware Station-projekt. Vi rekommenderar att du använder en icke-modifierad Retail SDK för att göra de ändringar som beskrivs i det här avsnittet. Vi rekommenderar också att du använder ett källkontrollsystem, till exempel Azure DevOps, där inga filer har ändrats ännu.
+Exemplet på skatteintegrering för Italien ingår i Retail SDK. Information om hur du installerar och använder SDK finns i [Retail programutvecklingskit (SDK) arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Det här exemplet består av tillägg för Commerce Runtime (CRT), kassa och Hardware Station. Om du vill köra det här exemplet måste du ändra och bygga CRT och Hardware Station-projekt. Vi rekommenderar att du använder en icke-modifierad detaljhandels-SDK för att utföra de ändringar som beskrivs i denna artikel. Vi rekommenderar också att du använder ett källkontrollsystem, till exempel Azure DevOps, där inga filer har ändrats ännu.
 
 ## <a name="development-environment"></a>Utvecklingsmiljö
 
@@ -86,7 +86,7 @@ Hardware Station tilläggskomponenter inkluderas i Retail SDK. För att slutför
 
 För att skapa distribuerbara paket som innehåller Commerce-komponenter och för att tillämpa dessa paket i en produktionsmiljö följ dessa steg.
 
-1. Slutför stegen som beskrivs i avsnittet [utvecklingsmiljö](#development-environment) i det här avsnittet.
+1. Slutför stegen som beskrivs i avsnittet [Utvecklingsmiljö](#development-environment) i denna artikel.
 2. Gör följande ändringar i paketkonfigurationsfilerna under mappen **RetailSdk\\Assets**:
 
     1. I konfigurationsfilerna **commerceruntime.ext.config** och **CommerceRuntime.MPOSOffline.Ext.config** lägger du till följande rader i avsnittet **komposition**.
@@ -162,13 +162,13 @@ Syftet med tillägget som är en skattedokument leverantör är att generera uts
 
 CRT-tillägget är **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample**.
 
-Mer information om design av lösningen av räkenskapsintegration finns i [Process för räkenskapsregistrering och exempel på räkenskapsintegration för kvittoskrivarenheter och tjänster](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
+Mer information om design av lösningen av räkenskapsintegrering finns i [Process för räkenskapsregistrering och exempel på räkenskapsintegrering för kvittoskrivarenheter och tjänster](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### <a name="request-handler"></a>Begärandehanterare
 
 **DocumentProviderEpsonFP90III** begäranhanteraren är ingångspunkten för begäran om att generera dokument från kvittoskrivaren.
 
-Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på dokumentprovidern för koppling som anges i Commerce-administration.
+Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på dokumentprovidern för koppling som anges i Commerce headquarters.
 
 Kopplingen stöder följande begäranden:
 
@@ -177,7 +177,7 @@ Kopplingen stöder följande begäranden:
 
 #### <a name="configuration"></a>Konfiguration
 
-Konfigurationsfilen finns i mappen **konfiguration** för tilläggsprojektet. Syftet med den här filen är att aktivera inställningar för dokumentprovidern som ska konfigureras från Commerce-administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration. Följande inställningar är tillagda:
+Konfigurationsfilen finns i mappen **konfiguration** för tilläggsprojektet. Syftet med den här filen är att aktivera inställningar för dokumentprovidern som ska konfigureras från Commerce headquarters. Filformatet justeras med kraven för konfiguration av räkenskapsintegrering. Följande inställningar är tillagda:
 
 - Mappning av momskoder
 - Mappning av momssatser
@@ -195,7 +195,7 @@ Hardware Station-tillägget **HardwareStation.Extension.EpsonFP90IIIFiscalDevice
 
 **EpsonFP90IIISample** begäranhanteraren är startpunkten för hantering av begäranden till kringutrustning för räkenskaper.
 
-Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på räkenskapskopplingsnamn som anges i Commerce-administration.
+Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på räkenskapskopplingsnamn som anges i Commerce headquarters.
 
 Kopplingen stöder följande begäranden:
 
@@ -205,7 +205,7 @@ Kopplingen stöder följande begäranden:
 
 #### <a name="configuration"></a>Konfiguration
 
-Konfigurationsfilen finns i mappen **konfiguration** för tilläggsprojektet. Syftet med filen är att aktivera inställningar för anslutningsprogram som ska konfigureras från Commerce-administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration. Följande inställningar är tillagda:
+Konfigurationsfilen finns i mappen **konfiguration** för tilläggsprojektet. Syftet med filen är att aktivera inställningar för anslutningsprogram som ska konfigureras från Commerce headquarters. Filformatet justeras med kraven för konfiguration av räkenskapsintegrering. Följande inställningar är tillagda:
 
 - **Slutpunktsadress** – Skrivarens URL.
 - **Datum- och tidssynkronisering** – Ett värde som anger om datum och tid för skrivaren måste synkroniseras med den anslutna maskinvaran.

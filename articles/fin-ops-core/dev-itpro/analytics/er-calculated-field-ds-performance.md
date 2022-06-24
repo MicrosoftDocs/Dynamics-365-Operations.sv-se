@@ -1,6 +1,6 @@
 ---
 title: Förbättra prestanda för ER-lösningar genom att lägga till parametriserade datakällor för BERÄKNADE FÄLT
-description: I detta ämne beskrivs hur du kan förbättra prestandan hos lösningar med elektronisk rapportering (ER) genom att lägga till parametriserade datakällor för BERÄKNADE FÄLT.
+description: I denna artikel beskrivs hur du kan förbättra prestandan hos lösningar med elektronisk rapportering (ER) genom att lägga till parametriserade datakällor för BERÄKNADE FÄLT.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,32 +14,32 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fada2fc0b35e22da18f5d6a0505df077d5ada4e0221031d63c316d8c705bc79
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c2c0499ac3d41c9bb6026cc05f971087799c28f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753680"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850126"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Förbättra prestanda för ER-lösningar genom att lägga till parametriserade datakällor för BERÄKNADE FÄLT
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du kan göra [prestandaspårningar](trace-execution-er-troubleshoot-perf.md) av formatet [elektronisk rapportering (ER)](general-electronic-reporting.md) som körs och sedan använda informationen från dessa spårningar för att förbättra prestanda genom att konfigurera en parameter för datakälla **beräknat fält**.
+I den här artikeln beskrivs hur du kan göra [prestandaspårningar](trace-execution-er-troubleshoot-perf.md) av formatet [elektronisk rapportering (ER)](general-electronic-reporting.md) som körs och sedan använda informationen från dessa spårningar för att förbättra prestanda genom att konfigurera en parameter för datakälla **beräknat fält**.
 
 Som en del av processen att utforma ER-konfigurationer för att generera affärsdokument definierar du metoden som används för att hämta data från applikationen och mata in den i den genererade utdata. Genom att utforma en parametriserad ER-datakälla av typen **beräknade fält** kan du minska antalet databasanrop och avsevärt minska den tid och kostnad som krävs för att samla in information om ER-formatkörning.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-- Om du vill slutföra exemplen i det här avsnittet måste du ha tillgång till en av följande [roller](../sysadmin/tasks/assign-users-security-roles.md):
+- Om du vill slutföra exemplen i den här artikeln måste du ha tillgång till en av följande [roller](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Utvecklare för elektronisk rapportering
     - Konsult för funktionen för elektronisk rapportering
     - Systemadministratör
 
 - Företaget måste vara inställt på **DEMF**.
-- Följ instruktionerna i [Bilaga 1](#appendix1) i det här avsnittet för att hämta komponenterna för exemplet Microsoft ER-lösning som krävs för att slutföra exemplen i detta ämne.
-- Följ stegen i [tillägg 2](#appendix2) i det här avsnittet om du vill konfigurera den minsta uppsättningen ER-parametrar som krävs för att använda ER-ramverket för att förbättra prestanda i exempel Microsoft ER-lösningen.
+- Följ instruktionerna i [Bilaga 1](#appendix1) i den här artikeln för att hämta komponenterna för exemplet Microsoft ER-lösning som krävs för att slutföra exemplen i detta ämne.
+- Följ stegen i [tillägg 2](#appendix2) i den här artikeln om du vill konfigurera den minsta uppsättningen ER-parametrar som krävs för att använda ER-ramverket för att förbättra prestanda i exempel Microsoft ER-lösningen.
 
 ## <a name="import-the-sample-er-solution"></a>Importera ER-exempellösning
 
@@ -48,7 +48,7 @@ Tänk dig att du måste designa en ER-lösning för att skapa en ny rapport som 
 Det första steget är att importera exempel ER-lösningen för att generera en leverantörstransaktionsrapport.
 
 1. Logga in på den instans av Microsoft Dynamics 365 Finance som har etablerats för ditt företag.
-2. I det här avsnittet ska du skapa och ändra konfigurationer för exempelföretaget **Litware, Inc**. Kontrollera att denna konfigurationsleverantör har lagts till i din Finance-instans och valts som aktiv. Mer information finns i [Skapa konfigurationsleverantörer och markera dem som aktiva](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. I den här artikeln ska du skapa och ändra konfigurationer för exempelföretaget **Litware, Inc**. Kontrollera att denna konfigurationsleverantör har lagts till i din Finance-instans och valts som aktiv. Mer information finns i [Skapa konfigurationsleverantörer och markera dem som aktiva](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. På arbetsytan **Elektronisk rapportering** väljer du panelen **Rapporteringskonfiguration**.
 4. På sidan **konfigurationer** importerar du de ER-konfigurationer som du hämtade som en förutsättning i Finance i följande ordning: datamodell, modellmappning, format. Följ dessa steg för varje konfiguration:
 
@@ -220,7 +220,7 @@ Gör så här om du vill använda cachelagring och en datakälla för typen **be
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Kör modifierad ER-lösning för att spåra körning
 
-Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i det här avsnittet om du vill generera en ny prestandaspårning.
+Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i den här artikeln om du vill generera en ny prestandaspårning.
 
 ## <a name="use-the-performance-trace-to-analyze-adjustments-to-the-model-mapping"></a>Använd prestandaspårning för att analysera justeringar till modellmappning 
 

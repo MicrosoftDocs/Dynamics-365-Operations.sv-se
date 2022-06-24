@@ -1,6 +1,6 @@
 ---
 title: Fakturaautomatisering för skannade dokument
-description: Det här avsnittet beskriver de funktioner som är tillgängliga för slutpunkt till slutpunkt-automatisering av leverantörsfakturor, även fakturor som innehåller bilagor.
+description: Den här artikeln beskriver de funktioner som är tillgängliga för slutpunkt till slutpunkt-automatisering av leverantörsfakturor, även fakturor som innehåller bilagor.
 author: abruer
 ms.date: 03/24/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716421"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883428"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Fakturaautomatisering för skannade dokument
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver de datatabeller som är tillgängliga för slutpunkt till slutpunkt-automatisering av leverantörsfakturor, även fakturor som innehåller bilagor.
+Den här artikeln beskriver de datatabeller som är tillgängliga för slutpunkt till slutpunkt-automatisering av leverantörsfakturor, även fakturor som innehåller bilagor.
 
 Organisationer som vill förenkla sina processer för leverantörsreskontra (AP) identifierar ofta behandlingen av fakturan som ett av det viktigaste behandlingsområdet att effektivisera. I många fall kan dessa organisationer avlasta behandlingen av pappersfakturor till en tredjeparts tjänstleverantör av optisk teckenläsning (OCR). De får sedan metadata för en maskinläsbar faktura tillsammans med en skannad bild av varje faktura. Som en hjälp för automatiseringen byggs sedan en ”slut”-lösning för att möjliggöra förbrukning av dessa artefakter i faktureringssystemet. Nu möjliggör nu ”slut”-automatisering via en färdig lösning för automatisering av fakturan.
 
@@ -46,7 +46,7 @@ Lösningens fotspår består av följande komponenter:
 + Undantagsbehandling av fakturor
 + En sida-vid-sida-bilagevisning på fakturor
 
-Resten av det här avsnittet innehåller detaljerade beskrivningar av dessa komponenter.
+Resten av den här artikeln innehåller detaljerade beskrivningar av dessa komponenter.
 
 ## <a name="data-entities"></a>Dataentiteter
 

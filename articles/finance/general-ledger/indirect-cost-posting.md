@@ -1,6 +1,6 @@
 ---
 title: Bokföring av indirekt kostnad
-description: I det här avsnittet beskrivs hur du bokför indirekta kostnader, skapar kostnadsgrupper och lägger till noder i kostnadsredovisningen för indirekta kostnader.
+description: I den här artikeln beskrivs hur du bokför indirekta kostnader, skapar kostnadsgrupper och lägger till noder i kostnadsredovisningen för indirekta kostnader.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -10,12 +10,12 @@ ms.search.form: CostSheetDesigner, BOMCostGroup, ProjCategory, CostingVersion, C
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: d7f4753f69d83d172993e1c9b04be2220fdf253f
-ms.sourcegitcommit: 1ea145dc606e243c7f51d91a5c0dd9e385bbda4a
+ms.openlocfilehash: 04af10760ec50d60cbbc31c233109dffb786933c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "8804631"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868443"
 ---
 # <a name="indirect-cost-posting"></a>Bokföring av indirekt kostnad
 

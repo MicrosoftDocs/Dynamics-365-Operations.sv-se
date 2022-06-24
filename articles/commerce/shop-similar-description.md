@@ -1,6 +1,6 @@
 ---
-title: Aktivera rekommendationer för "sök efter liknande beskrivning"
-description: I det här avsnittet beskrivs hur du aktiverar produktrekommendationerna för "leta efter liknande beskrivning" i Microsoft Dynamics 365 Commerce.
+title: Aktivera rekommendationer för "köp liknande beskrivning"
+description: I denna artikel beskrivs hur du aktiverar produktrekommendationerna för "leta efter liknande beskrivning" i Microsoft Dynamics 365 Commerce.
 author: bsokolov
 ms.date: 01/13/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 733b21870f9dd7ffa42fce3bccf669a59d633b14
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b935731b24f96753c814e3b496ffeeb7a92d9cc1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691013"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852018"
 ---
 # <a name="enable-shop-similar-description-recommendations"></a>Aktivera rekommendationer för "köp liknande beskrivning"
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du aktiverar produktrekommendationerna för "leta efter liknande beskrivning" i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du aktiverar produktrekommendationerna för "leta efter liknande beskrivning" i Microsoft Dynamics 365 Commerce.
 
 Med hjälp av rekommendationsfunktionen för "sök liknande beskrivning" i Dynamics 365 Commerce används artificiell intelligens och maskininlärning (AI-ML) för att leverera rekommendationer för produkter med beskrivningar som liknar det som kunden söker. Genom att göra rekommendationer av typen "sök efter liknande beskrivning" tillgängliga för alla detaljhandelskanaler i Commerce kan återförsäljare göra det lättare för kunder att enkelt hitta vad de vill ha.
 
@@ -50,12 +50,12 @@ Produktrekommendationer stöds endast för Commerce-användare som har migrerat 
 
 Innan rekommendationer för "sök efter liknande beskrivning" kan visas för kunderna måste du uppfylla följande förutsättningar:
 
-- [Aktivera produktrekommendationer](enable-product-recommendations.md) i Commerce-administration.
+- [Aktivera produktrekommendationer](enable-product-recommendations.md) i Commerce headquarters.
 - Kontrollera att mediaservern stöder HTTPS-anrop.
 
 ### <a name="turn-on-the-shop-similar-description-recommendations-feature"></a>Aktivera rekommendationsfunktionen för "sök efter liknande beskrivning"
 
-Gör så här om du vill aktivera rekommendationsfunktionen "sök efter liknande beskrivning" i Commerce-administrationen.
+Gör så här om du vill aktivera rekommendationsfunktionen "sök efter liknande beskrivning" i Commerce headquarters.
 
 1. I arbetsytan **Funktionshantering**, i listan över tillgängliga funktioner, söker du efter och väljer **Sök efter liknande beskrivning**.
 1. Välj **Aktivera** i höger fönster.
@@ -67,7 +67,7 @@ Gör så här om du vill aktivera rekommendationsfunktionen "sök efter liknande
 
 ## <a name="add-a-shop-similar-description-button-to-product-details-pages"></a>Lägg till en Sök efter liknande beskrivning-knapp på produktinformationssidor
 
-När du har aktiverat rekommendationsfunktionen "sök efter liknande beskrivning" i Commerce-administrationen kan du lägga till en **Sök efter liknande beskrivning**-knapp i köprutan på valfri produktinformationssida (PDP). En kund som väljer den här knappen tas till en särskild **Sök efter liknande beskrivning**-sida som visar visuellt likartade produkter. Kunden kan därefter använda väljare för att filtrera produkterna ytterligare.
+När du har aktiverat rekommendationsfunktionen "sök efter liknande beskrivning" i Commerce headquarters kan du lägga till en **Sök efter liknande beskrivning**-knapp i köprutan på valfri produktinformationssida (PDP). En kund som väljer den här knappen tas till en särskild **Sök efter liknande beskrivning**-sida som visar visuellt likartade produkter. Kunden kan därefter använda väljare för att filtrera produkterna ytterligare.
 
 Lägg till en **Sök efter liknande beskrivning**-knapp på en PDP med hjälp av Commerce-webbplatsbyggaren genom att följa följande steg.
 

@@ -1,6 +1,6 @@
 ---
 title: Modul för leveransadress
-description: Det här avsnittet handlar om modul för leveransadressmodulen förklarar hur du konfigurera i Microsoft Dynamics 365 Commerce.
+description: Denna artikel handlar om modulen för leveransadress och förklarar hur du konfigurerar den i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 02/11/2021
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 30baef62e03cdaa766133efc4b182c61da3dc7b67e077d80716a035f0b5e40e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e30e639b7ba1c0caaf72fa66d13f80d04c2e861c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765204"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882206"
 ---
 # <a name="shipping-address-module"></a>Modul för leveransadress
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver modul för leveransadressmodulen förklarar hur du konfigurera i Microsoft Dynamics 365 Commerce.
+Denna artikel beskriver modulen för leveransadress och förklarar hur du konfigurerar den i Microsoft Dynamics 365 Commerce.
 
 Leveransadressmodulen låter kunderna lägga till eller välja leveransadressen för en order under kassaflödet. Om kunden är inloggad visas alla adresser som har sparats för den kunden och kunden kan välja bland dem. Kunden kan också lägga till en ny adress. Leveransadressmodulen används för alla artiklar i den order som kräver leverans.
 
-Adressformat för leverans kan definieras i Commerce-administration för varje land eller region och i modulen för leverans används lands-/regionspecifika regler.
+Adressformat för leverans kan definieras i Commerce headquarters för varje land eller region och i modulen för leverans används lands-/regionspecifika regler.
 
 När kunderna anger en leveransadress under kassaflödet kan de välja att spara adressen som en primär adress. Det här alternativet visas bara om kunden är inloggad.
 
@@ -45,10 +45,10 @@ Följande bild visar ett exempel på en ny leveransadressmodul på en kassasida.
 |---------------|--------|-------------|
 | Rubrik | Rubriktext och rubriktagg (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En valfri rubrik för leveransadressmodulen. |
 | Visa adresstyp | **Sant** eller **falskt** | Om den här valfria egenskapen har värdet **True** visas en adresstyp, t.ex. **Start** eller **företag**. Om ingen adresstyp har angetts kommer adressen automatiskt att sparas som **Typ**=**Övriga**. |
-| Aktivera automatiskt förslag| **Sant** eller **falskt** | Om den här valfria egenskapen ställs in på **True**, ges automatiska adressförslag. De här förslagen används av Bing Maps. Information om hur du ställer in Bing Maps-integration för din webbplats finns i [modulen Butiksväljare](store-selector.md). Den här funktionen är tillgänglig i Commerce version 10.0.15.|
+| Aktivera automatiskt förslag| **Sant** eller **falskt** | Om den här valfria egenskapen ställs in på **True**, ges automatiska adressförslag. De här förslagen används av Bing Maps. Information om hur du konfigurerar Bing Maps-integrering för din webbplats finns i [modulen Butiksväljare](store-selector.md). Den här funktionen är tillgänglig i Commerce version 10.0.15.|
 |Alternativ för automatiskt förslag| Ett nummer| Om automatiska adressförslag har aktiverats kan du ange ytterligare alternativ, till exempel det högsta antalet förslag som ska ges.|
 
-## <a name="add-a-shipping-address-module-to-a-checkout-page-and-set-the-required-properties"></a>Lägg till leveransadressmodul på en kassasida och ställa in de obligatoriska egenskaperna.
+## <a name="add-a-shipping-address-module-to-a-checkout-page-and-set-the-required-properties"></a>Lägg till leveransadressmodul på en kassasida och konfigurera de obligatoriska egenskaperna.
 
 En modul för leveransadress kan bara läggas till i en betalningsmodul. Mer information om hur du konfigurerar modulen för leveransadress och lägger till den på en kassasida finns i [betalningsmodulen](add-checkout-module.md).
 

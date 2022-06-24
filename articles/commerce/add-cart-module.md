@@ -1,6 +1,6 @@
 ---
 title: Kundvagnsmodul
-description: Det här avsnittet handlar om vagnmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+description: Denna artikel handlar om vagnmoduler och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 962710f7b65c8d26b301b5034a89fc25476b6e0f
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: c4023857f13830449eaa19f8513799ece97729d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780549"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866066"
 ---
 # <a name="cart-module"></a>Kundvagnsmodul
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om vagnmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+Denna artikel handlar om vagnmoduler och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 
 En kundvagnsmodul visar artiklarna som har lagts till i kundvagnen innan kunden fortsätter till kassan. Modulen visar även en också en ordersammanfattning och gör att kunden kan använda eller ta bort kampanjkoder.
 
@@ -46,7 +46,7 @@ Följande bild visar ett exempel på en kundvagnssida på Fabrikam-webbplatsen. 
 | Egenskap | Värden | beskrivning |
 |----------------|--------|-------------|
 | Rubrik | Rubriktext och rubriktagg (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En rubrik för kundvagnen, till exempel "Shoppingväska" eller "Artiklarna i vagnen." |
-| Visa fel av typen Slut i lager | **Sant** eller **falskt** | Om den här egenskapen har angetts till **True** visar sidan för kundvagn fel som är relaterade till lagret. Vi rekommenderar att du ställer in den här egenskapen på **True** om lagerkontroller används på webbplatsen. |
+| Visa fel av typen Slut i lager | **Sant** eller **falskt** | Om den här egenskapen har angetts till **True** visar sidan för kundvagn fel som är relaterade till lagret. Vi rekommenderar att du konfigurerar den här egenskapen på **True** om lagerkontroller används på webbplatsen. |
 | Visa leveransavgifter för radartiklar | **Sant** eller **falskt** | Om den här egenskapen har värdet **True** visar kundvagnsartiklar leveransavgifter om den här informationen är tillgänglig. Den här funktionen stöds inte i det Fabrikam-temat, eftersom användarna väljer enbart leverans i kassaflödet. Den här funktionen kan emellertid aktiveras i andra arbetsflöden om den är tillämplig. |
 | Visa tillgängliga erbjudanden| **Sant** eller **falskt** | Om egenskapen har satts till **Sant** visar kundvagnen tillgängliga erbjudanden baserat på artiklarna i vagnen. Denna funktion finns i Dynamics 365 Commerce version 10.0.16. |
 
@@ -64,7 +64,7 @@ Följande kundvagnsmodulinställningar som kan konfigureras på **Platsinställn
 - **Tillbaka till shopping** – den här egenskapen används för att ange vägen för länken **Tillbaka till shopping**. Vägen kan konfigureras på webbplatsnivå, vilket gör att återförsäljare kan ta kunden tillbaka till startsidan eller någon annan sida på webbplatsen.
 
 > [!IMPORTANT]
-> I Dynamics 365 Commerce 10.0.14-versionen och senare sammanställs artiklar i kundvagnen baserat på inställningarna som definieras i online-butikens funktionsprofil i Commerce-administration. Mer information om hur du skapar en funktionsprofil i online och ställer in de egenskaper som krävs för aggregering finns i [skapa en online funktionsprofil](online-functionality-profile.md).
+> I Dynamics 365 Commerce 10.0.14-versionen och senare sammanställs artiklar i kundvagnen baserat på inställningarna som definieras i online-butikens funktionsprofil i Commerce headquarters. Mer information om hur du skapar en funktionsprofil i online och konfigurerar de egenskaper som krävs för aggregering finns i [skapa en online funktionsprofil](online-functionality-profile.md).
 
 ## <a name="commerce-scale-unit-interaction"></a>Interaktion för skalningsenhet för handel
 
@@ -72,7 +72,7 @@ Vagnmodul för inköpsruta hämtar produktinformation med hjälp av API:er för 
 
 ## <a name="add-a-cart-module-to-a-page"></a>Lägg till en kundvagnsmodul på en ny sida
 
-Om du vill lägga till en kundvagnsmodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
+Om du vill lägga till en kundvagnsmodul på en ny sida och konfigurera de obligatoriska egenskaperna följer du stegen nedan.
 
 1. Gå till **Fragment** och välj **ny** för att skapa ett nytt fragment.
 1. I dialogrutan **Välj fragment**, välj modulen **Kundvagn**.

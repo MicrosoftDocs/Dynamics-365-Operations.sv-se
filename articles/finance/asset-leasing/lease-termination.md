@@ -1,6 +1,6 @@
 ---
 title: Förslag på uppsägning av leasingavtal
-description: I detta ämne beskrivs hur du föreslår ett leasingavtal för uppsägning.
+description: I denna artikel beskrivs hur du föreslår ett leasingavtal för uppsägning.
 author: moaamer
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 2f6990177251418bece8c99a0f9befa333d6549f
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: a5939f165943ff76ba453fb49d8c0c376c8ce4b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720514"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879665"
 ---
 # <a name="propose-a-lease-for-termination"></a>Föreslå ett leasingavtal för uppsägning
 
 [!include [banner](../includes/banner.md)]
 
-Om ett leasingavtal avslutas i förtid kan tillgångsleasingen registrera en journalpost för uppsägning för att skriva av leasingskulden, användanderättigheten (ROU) samt ackumulerad avskrivning, och registrera en vinst eller förlust. Processen för förtida uppsägning avslutar ett leasingavtal och dess associerade leasingböcker. Den säger inte upp enskilda leasingböcker. I detta ämne beskrivs de funktioner som gör att du kan föreslå ett leasingavtal för uppsägning och bearbeta journalposten för leasinguppsägningen.
+Om ett leasingavtal avslutas i förtid kan tillgångsleasingen registrera en journalpost för uppsägning för att skriva av leasingskulden, användanderättigheten (ROU) samt ackumulerad avskrivning, och registrera en vinst eller förlust. Processen för förtida uppsägning avslutar ett leasingavtal och dess associerade leasingböcker. Den säger inte upp enskilda leasingböcker. I denna artikel beskrivs de funktioner som gör att du kan föreslå ett leasingavtal för uppsägning och bearbeta journalposten för leasinguppsägningen.
 
 Om ett leasingavtal inte klassas som ett leasingavtal med uppskjuten leasingavgift samt inte är associerat med en anläggningstillgång, leder tillgångsleasing till följande journalpost för uppsägning.
 

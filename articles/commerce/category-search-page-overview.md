@@ -1,6 +1,6 @@
 ---
 title: Översikt över standardkategorilandningssida och sida för sökresultat
-description: Det här ämnet ger en överblick över målsidan för standardkategori och sökresultatsida i Dynamics 365 Commerce.
+description: Denna artikel ger en överblick över målsidan för standardkategori och sökresultatsida i Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 06/30/2020
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f61ee8ec212185e195e2cf1a9d6d25c31e4f672
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5e61db026649df8fe331d107bfbda8246fb9d5f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982444"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881862"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Översikt över standardkategorilandningssida och sida för sökresultat
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet ger en överblick över målsidan för standardkategori och sökresultatsida i Microsoft Dynamics 365 Commerce.
+Denna artikel ger en överblick över målsidan för standardkategori och sökresultatsidan i Microsoft Dynamics 365 Commerce.
 
 ## <a name="default-category-landing-page"></a>Standardlandningssida för kategori
 
@@ -32,7 +32,7 @@ Standardlandningssidan för kategori är den sida som webbplatsanvändarna norma
 
 ![Standardlandningssida för kategori.](./media/SimpleCategoryLandingDressCategory.png)
 
-Den övre delen av startsidan har en rubrik som visar alla produktkategorier och andra sidor som inköpschefen har kategoriserat. Konfigurationen görs som en del av konfigurationen av kanalens navigeringshierarki. Startsidans nedre del har en sidfot som innehåller snabblänkar till olika ämnen som kan vara intressanta för köpare.
+Den övre delen av startsidan har en rubrik som visar alla produktkategorier och andra sidor som inköpschefen har kategoriserat. Konfigurationen görs som en del av konfigurationen av kanalens navigeringshierarki. Sidans nedre del har en sidfot som innehåller snabblänkar till olika artiklar som kan vara intressanta för köpare.
 
 Följande komponenter är nödvändiga för en kategori:
 

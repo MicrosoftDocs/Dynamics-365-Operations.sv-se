@@ -1,8 +1,8 @@
 ---
 title: Anpassa användarupplevelsen
-description: Det här avsnittet beskriver hur du kan anpassa appen.
+description: Den här artikeln beskriver hur du kan anpassa appen.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b922d68fcf3e83be57140cf8c54c4bacd2b75f56
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: c326e51dc127d8b82ccef28146ec223ca5169c5e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8603002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845454"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
@@ -28,7 +28,7 @@ ms.locfileid: "8603002"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-I det här avsnittet beskrivs hur du kan anpassa appen och omfattar följande ämnen: 
+I den här artikeln beskrivs hur du kan anpassa appen och omfattar följande ämnen: 
 
 - **Systemövergripande alternativ** – dessa anpassningsalternativ görs på en inställningssida och är tillgängliga för alla användare. Exempel omfattar färgtema och tidszon. 
 - **Begränsad anpassningsåtkomst** – på den här åtkomstnivån sparas de användaråtgärder som är kopplade till typisk sidanvändning automatiskt av appen och återställs nästa gång du besöker sidan. Exempelvis håller appen bredden på rutnätskolumner om du justerar dem, och på det expanderade/komprimerade läget för snabbflikar. 
@@ -58,7 +58,7 @@ Här följer en lista över de åtgärder som ligger under normal sidanvändning
 
 - **Bredd på rutnätskolumner** – Du kan justera bredden på en kolumn i ett rutnät genom att välja storleksfältet till vänster eller till höger om kolumnrubriken och skjuta det åt vänster eller höger tills kolumnen har önskad bredd. Appen lagrar den bredd som du anger för en kolumn. Sedan ändras storleken på kolumnen till den bredden varje gång du öppnar sidan.
 - **Summa för rutnätets sidfot och kolumn** – *(endast tillgängligt när den nya rutnätskontrollen är aktiverad)* du kan bestämma om en summa ska visas längst ned i en numerisk kolumn i ett rutnät och om rutnätssidfoten ska visas. Programmet lagrar dessa data och använder dem nästa gång du öppnar sidan. Mer information finns i [Rutnätsmöjligheter](grid-capabilities.md). 
-- **Snabbflikar** – Vissa sidor har expanderbara avsnitt som kallas *snabbflikar*. Appen lagrar information om snabbflikar som du har utökat och komprimerat. Nästa gång du öppnar sidan kommer samma snabbflikar att visas eller döljs, utifrån din senaste interaktion med sidan. I vissa fall kan du hjälpa till att förbättra systemet genom att komprimera en snabbflik eftersom appen inte behöver hämta informationen för snabbflikar förrän de expanderas. Såsom beskrivs senare i det här avsnittet kan du också ändra ordning på snabbflikarna på en sida.
+- **Snabbflikar** – Vissa sidor har expanderbara avsnitt som kallas *snabbflikar*. Appen lagrar information om snabbflikar som du har utökat och komprimerat. Nästa gång du öppnar sidan kommer samma snabbflikar att visas eller döljs, utifrån din senaste interaktion med sidan. I vissa fall kan du hjälpa till att förbättra systemet genom att komprimera en snabbflik eftersom appen inte behöver hämta informationen för snabbflikar förrän de expanderas. Såsom beskrivs senare i den här artikeln kan du också ändra ordning på snabbflikarna på en sida.
 - **Faktaboxar** – vissa sidor har rutan **relaterad information** som visar skrivskyddad information som är relaterad till sidans aktuella ämne. Varje avsnitt i rutan **relaterad information** kallas en *faktabox*. Du kan utöka eller komprimera rutan **relaterad information** och du kan också visa eller dölja enskilda faktaboxar. Appen lagrar dessa inställningar. Nästa gång du öppnar sidan kommer rutan **relaterad information** och de enskilda faktaboxar antingen utökas eller komprimeras baserat på din senaste interaktion med sidan. I vissa fall kan du hjälpa till att förbättra systemet genom att komprimera ett fönster eller faktabox för **relaterad information** eftersom appen inte behöver hämta informationen för faktaboxar förrän de expanderas.
 - **Åtgärdsfönster** – Ett *åtgärdsfönstret* visas längst upp på de flesta sidor. Åtgärdsfönstret innehåller knappar för många av de åtgärder som du kan utföra på den aktuella sidan. Knapparna ordnas ofta på flikarna. Du kan *öppna* hela åtgärdsfönstret och du kan konfigurera den så att den komprimeras som standard. Nästa gång du öppnar sidan kommer åtgärdsfönstret antingen att visas eller döljas, utifrån din senaste interaktion med sidan. Om du har öppnat åtgärdsfönstret visas den sista fliken som du använde.
 - **Snabbfilter** – Ett *snabbfilter* visas ovanför många rutnät. Snabbfilter låter dig filtrera rutnät, baserat på en kolumn som du väljer. Appen lagrar den kolumn som du filtrerade på. Nästa gång som du öppnar sidan kommer det rutnätet att använda samma kolumn för filtrering som standard. Du kan sedan välja en annan kolumn att filtrera rutnätet på.
@@ -173,7 +173,7 @@ Från och med version 10.0.26 låter funktionen **Tillåt användarna välja och
 
 ### <a name="personalizing-your-dashboard"></a>Anpassa instrumentpanelen
 
-Instrumentpanelen är ofta den första sida som du ser när du öppnar appen. Den kan anpassas på samma sätt som andra sidor i systemet, med hjälp av samma mekanismer som beskrivs tidigare i det här avsnittet. 
+Instrumentpanelen är ofta den första sida som du ser när du öppnar appen. Den kan anpassas på samma sätt som andra sidor i systemet, med hjälp av samma mekanismer som beskrivs tidigare i den här artikeln. 
 
 > [!WARNING]
 > När du döljer innehåll på instrumentpanelen för närvarande är det viktigt att du direkt anpassar en panel, inte utrymmet runt det. Om du döljer gruppen runt en panel kan det bli oväntade resultat om fler paneler läggs till senare, eller om systemet växlas till ett annat språk.
@@ -236,7 +236,7 @@ Ett annat sätt att dela anpassningar är genom export och import. Enskilda anv�
 
 #### <a name="export"></a>Export
 
-I allmänhet kan du exportera en av dina egna vyer eller anpassningar genom att öppna lämplig sida, öppna verktygsfältet **Personanpassning** och sedan välja **Exportera**. Mer information om verktygsfältet finns i avsnittet [Verktygsfält för anpassning](#personalization-toolbar) tidigare i det här avsnittet. Om [sparade vyer](saved-views.md) har aktiverats kan du även gå till **Inställningar \> Användaralternativ \> Anpassningar** för att visa en lista över samtliga dina anpassningar i systemet. Därifrån kan du välja vilka vyer eller personanpassningar som ska exporteras, och sedan välja **Exportera**.
+I allmänhet kan du exportera en av dina egna vyer eller anpassningar genom att öppna lämplig sida, öppna verktygsfältet **Personanpassning** och sedan välja **Exportera**. Mer information om verktygsfältet finns i avsnittet [Verktygsfält för anpassning](#personalization-toolbar) tidigare i den här artikeln. Om [sparade vyer](saved-views.md) har aktiverats kan du även gå till **Inställningar \> Användaralternativ \> Anpassningar** för att visa en lista över samtliga dina anpassningar i systemet. Därifrån kan du välja vilka vyer eller personanpassningar som ska exporteras, och sedan välja **Exportera**.
 
 Dessutom kan administratörer exportera andra användares passningar genom att följa stegen nedan.
 
@@ -285,6 +285,9 @@ För kunder som inte har aktiverat funktionen [sparade vyer](saved-views.md) har
 - **Rensa** – Du kan rensa alla anpassningar för arbetsyta för en eller flera användare. Välj först en sida eller arbetsyta för att se en lista över de användare som har anpassat den. Sedan väljer du de användare vars anpassningar för den aktuella sidan eller arbetsytan ska avmarkeras och välj **Rensa**. Alla anpassningar som de valda användarna har kopplat till den valda sidan eller arbetsytan tas bort. Denna åtgärd kan inte ångras. Om en anpassning sparades för sidan eller arbetsytan, kan den anpassningen emellertid återimporteras.
 - **Användare** – Välj en användare för att visa listan över sidor som användaren har anpassat. Du kan sedan aktivera eller inaktivera den valda användarens förmåga att använda anpassningar för specifika sidor eller för hela systemet. D kan också importera, exportera eller rensa anpassningar för denna användare. Du kan dessutom återställa en användares bildtexter för funktioner. I detta fall, om användaren tidigare stängde alla popup-fönster som introducerar nya funktioner visas det i detta fall igen nästa gång användaren påträffar dessa funktioner.
 - **System** – Du kan temporärt inaktivera alla anpassningar för samtliga användare i systemet. I det här fallet tas alla anpassningar bort för alla användare, och alla sidor återställs till standardtillståndet. Om du senare aktiverar anpassningen igen kommer alla anpassningar att återappliceras. Du kan också ta bort alla anpassningar permanent för samtliga användare i systemet. Det går inte att återställa anpassningar som har tagits bort. Se därför till att du har exporterat den här uppgiften för att exportera alla anpassningar som du kanske vill ha senare.
+
+### <a name="service-updates-and-personalization"></a>Serviceuppdateringar och personanpassning
+Personanpassningsdata behöver inte rensas eller återställas när du flyttar till en ny version av produkten. Personanpassningar och sparade vyer av data fortsätter att fungera under uppdateringarna. Undantagen till detta inkluderar ändringar i själva formuläret som gör en personanpassning ogiltig (t.ex. en borttagen kontroll) eller ändringar i formulärets basfråga som ändrar dess datakällsdelträd så att det inte längre matchar datakällsdelträdet som är kopplat till visningsfrågan.
 
 ## <a name="personalizing-inventory-dimensions"></a>Anpassning av lagerdimensioner
 

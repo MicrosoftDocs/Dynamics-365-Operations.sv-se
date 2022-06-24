@@ -1,6 +1,6 @@
 ---
 title: Hantera attribut och attributsgrupper
-description: Det här avsnittet beskriver hur du använder attribut för att tillhandahålla ett sätt att beskriva en produkt och dess egenskaper med hjälp av anpassade fält.
+description: Denna artikel beskriver hur du använder attribut för att tillhandahålla ett sätt att beskriva en produkt och dess egenskaper med hjälp av användardefinierade fält.
 author: ashishmsft
 ms.date: 04/28/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cd74cb7795366bdca80e47d79a9591af69a16daf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727664"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876674"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Hantera attribut och attributsgrupper
 
@@ -85,9 +85,9 @@ Attribut baseras på *attributtyper*. Attributtypen identifierar den typ av data
 
 *Attributets metadata* låter dig välja alternativ för att ange hur attributen för varje produkt ska fungera. Du kan till exempel ange om attribut krävs eller inte, om de kan användas för sökning och om de kan användas som filter.
 
-För produkter kan attributets metadatainställningar åsidosättas på kanalnivå. Den här funktionen kommer att diskuteras senare i det här avsnittet.
+För produkter kan attributets metadatainställningar åsidosättas på kanalnivå. Den här funktionen kommer att diskuteras senare i denna artikel.
 
-Som du kanske märker innehåller sidan **Attribut** kommandon relaterade till attributmetadata. Under **Attributmetadata för butik**, påverkar ett alternativ som heter **”kan förfinas”** beteendet för attributvärden i kassor (POS) eller sättet som systemet hanterar dessa attributvärden. Endast attribut där du kan ställa in alternativen **”kan förfinas”** till **”Ja”** kommer att visas för förfining eller filtrering av produkter i POS.
+Som du kanske märker innehåller sidan **Attribut** kommandon relaterade till attributmetadata. Under **Attributmetadata för butik**, påverkar ett alternativ som heter **”kan förfinas”** beteendet för attributvärden i kassor (POS) eller sättet som systemet hanterar dessa attributvärden. Endast attribut där du kan konfigurera alternativen **”kan förfinas”** till **”Ja”** kommer att visas för förfining eller filtrering av produkter i POS.
 
 Nedan följer de återstående alternativen för attributmetadata på sidan **Attribut**:
 
@@ -191,7 +191,7 @@ En eller flera attributgrupper som kan förknippas med en eller flera butiker i 
     4. Välj **Lägg till** igen och sedan, i fältet **Namn** väljer du **Modesolglasögon**.
 
         > [!NOTE]
-        > Ett alternativ låter dig ange att denna kanal ska ärva attributgrupper från sin överordnade kanal i hierarkin. Om du ställer in alternativet **Ärva** till **Ja**, ärver den underordnade noden alla attributgrupperna och alla attributen i dessa attributgrupper.
+        > Ett alternativ låter dig ange att denna kanal ska ärva attributgrupper från sin överordnade kanal i hierarkin. Om du konfigurerar alternativet **Ärva** till **Ja**, ärver den underordnade noden alla attributgrupperna och alla attributen i dessa attributgrupper.
 
 4. Aktivera attributen så att de är tillgängliga i Houston-kanalen:
 

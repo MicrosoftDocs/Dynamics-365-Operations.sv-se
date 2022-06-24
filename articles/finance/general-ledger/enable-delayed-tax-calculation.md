@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: fddb6d3a9850b8f2f88f813f9591006637c7e535
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 02a038318d4c0fb44b6fcc4bb159ea87c2e9368a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713146"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887931"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>Aktivera fördröjd momsberäkning i journal
 [!include [banner](../includes/banner.md)]
 
 
-I det här avsnittet beskrivs hur du kan fördröja momsberäkning för journaler. Den här funktionen ger bättre prestanda vid momsberäkningar när det finns många journalrader.
+I den här artikeln beskrivs hur du kan fördröja momsberäkning för journaler. Den här funktionen ger bättre prestanda vid momsberäkningar när det finns många journalrader.
 
 Som standard beräknas momsbelopp på journalrader när momsrelaterade fält uppdateras. Dessa fält inkluderar fält för momsgrupper och artikelmomsgrupper. Alla uppdateringar av en journalrad gör att momsbeloppen räknas om för alla journalrader. Även om beteendet hjälper användare att se momsbelopp som beräknats i realtid, kan det också påverka prestandan om antalet journalrader är mycket stort.
 

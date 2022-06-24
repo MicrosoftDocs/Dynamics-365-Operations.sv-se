@@ -1,6 +1,6 @@
 ---
 title: Ställ in räkenskapsintegrering för handelskanaler
-description: Det här avsnittet ger riktlinjer för att skapa funktionen för räkenskapsintegrering för handelskanaler.
+description: Denna artikel ger riktlinjer för att skapa funktionen för räkenskapsintegrering för Commerce-kanaler.
 author: EvgenyPopovMBS
 ms.date: 04/28/2022
 ms.topic: article
@@ -9,31 +9,31 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 51a75ce03b0ae6b744ec56df35bd3fdb1f40cf3a
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 13bdbcc2d52846b8b5d04773c986cd3a4a59e7b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661759"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889409"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Ställ in räkenskapsintegrering för handelskanaler
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-Det här avsnittet ger riktlinjer för att skapa funktionen för räkenskapsintegrering för handelskanaler. Mer information om räkenskapsintegrering finns i [översikt över räkenskapsintegrering för handelskanaler](fiscal-integration-for-retail-channel.md).
+Denna artikel ger riktlinjer för att skapa funktionen för räkenskapsintegrering för Commerce-kanaler. Mer information om räkenskapsintegrering finns i [översikt över räkenskapsintegrering för handelskanaler](fiscal-integration-for-retail-channel.md).
 
-## <a name="enable-features-in-commerce-headquarters"></a>Aktivera funktioner i Commerce-administrationen
+## <a name="enable-features-in-commerce-headquarters"></a>Aktivera funktioner i Commerce headquarters
 
 Aktivera funktioner som är relaterade till funktionen räkenskapsintegrering för handelskanaler genom att följa dessa steg.
 
-1. I Commerce-administrationen går du till **Systemadministration \> Arbetsytor \> Funktionshantering**.
+1. I Commerce headquarters går du till **Systemadministration \> Arbetsytor \> Funktionshantering**.
 1. Hitta och aktivera följande funktioner:
 
-    - **Direkt räkenskapsintegration från kassaregister** – Den här funktionen utökar ramverket för skatteintegrering genom att lägga till möjligheten att skapa skatteanslutningar som körs i kassan (POS). Denna typ av anslutningsprogram kommunicerar med en räkenskapsenhet eller tjänst som tillhandahåller ett API (HTTP-approgrammeringsgränssnitt) och behöver inte en dedicerad fysisk maskin i butiken. Den här funktionen aktiverar till exempel skatteintegrering för mobila enheter utan att det krävs delad maskinvara.
-    - **Åsidosättningar av räkenskapsintegration för teknisk profil** av den här funktionen kan konfigurationen av skatteintegrering expanderas och kapaciteten att kontrollera kopplingsparametrarna på inställningssidan för ett kassaregister läggs till. När den här funktionen är aktiverad kan du åsidosätta parametrarna för en teknisk profil.
+    - **Direkt räkenskapsintegrering från kassaregister** – Den här funktionen utökar ramverket för skatteintegrering genom att lägga till möjligheten att skapa skatteanslutningar som körs i kassan (POS). Denna typ av anslutningsprogram kommunicerar med en räkenskapsenhet eller tjänst som tillhandahåller ett API (HTTP-approgrammeringsgränssnitt) och behöver inte en dedicerad fysisk maskin i butiken. Den här funktionen aktiverar till exempel skatteintegrering för mobila enheter utan att det krävs delad maskinvara.
+    - **Åsidosättningar av räkenskapsintegrering för teknisk profil** av den här funktionen kan konfigurationen av skatteintegrering expanderas och kapaciteten att kontrollera kopplingsparametrarna på inställningssidan för ett kassaregister läggs till. När den här funktionen är aktiverad kan du åsidosätta parametrarna för en teknisk profil.
     - **Räkenskapsregistreringstillstånd för kassaregister** – När den här funktionen är aktiverad kan du inaktivera räkenskapsregistreringsprocessen för specifika kassaregister. Om skatteregistreringen inaktiveras för ett kassaregister kan försäljningstransaktioner inte slutföras på den kassan.
-    - **Säkerhetskopiering av lokal datalagring för bokföringsintegrering** – Den här funktionen utökar felhanteringsmöjligheterna i ramverket för finansiell integration. Det gör det också möjligt att automatiskt säkerhetskopiera räkenskapsregistreringsdata vid dataförlust, så att data i lokal lagring återställs när en enhet aktiveras.
+    - **Säkerhetskopiering av lokal datalagring för bokföringsintegrering** – Den här funktionen utökar felhanteringsmöjligheterna i ramverket för finansiell integrering. Det gör det också möjligt att automatiskt säkerhetskopiera räkenskapsregistreringsdata vid dataförlust, så att data i lokal lagring återställs när en enhet aktiveras.
 
 ## <a name="set-up-commerce-parameters"></a>Ställ in Commerce-parametrar
 
@@ -53,7 +53,7 @@ Så här ställer du in Commerce-parametrar.
 
 ## <a name="set-up-a-fiscal-registration-process"></a>Ställa in process för räkenskapsregistrering
 
-Processen för att ställa in räkenskapsintegrering inkluderar följande uppgifter:
+Processen för att konfigurera räkenskapsintegrering inkluderar följande uppgifter:
 
 - Konfigurera räkenskapskopplingar som representerar räkenskapsenheter eller tjänster som används för räkenskapsregistrering såsom kvittoskrivare.
 - Konfigurera dokumentleverantörer som skapar skattedokument som registreras i räkenskapsenheter eller tjänster av räkenskapskopplingar.
@@ -68,14 +68,14 @@ En leverantör av skattedokument ansvarar för generering av skattedokument som 
 
 Följ dessa steg för att överföra konfigurationer av leverantörer av skattedokument.
 
-1. I Commerce-administration, gå till sidan **Leverantörer av skattedokument** (**Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Leverantörer av skattedokument**).
+1. I Commerce headquarters, gå till sidan **Leverantörer av skattedokument** (**Retail och Commerce \> Kanalinställningar \> Räkenskapsintegrering \> Leverantörer av skattedokument**).
 1. Överför en XML-konfiguration för varje enhet eller tjänst som du tänker använda.
 
 > [!TIP]
 > Genom att markera **Visa**, kan du visa alla funktionella profiler som är relaterade till aktuell leverantör av skattedokument.
 
 > [!NOTE]
-> Datamappning betraktas som en del av skattedokumentprovidern. Om du vill ställa in olika datamappningar för samma typ av koppling (till exempel delstatsspecifika regler) bör du skapa olika leverantörer för skattedokument.
+> Datamappning betraktas som en del av skattedokumentprovidern. Om du vill konfigurera olika datamappningar för samma typ av koppling (till exempel delstatsspecifika regler) bör du skapa olika leverantörer för skattedokument.
 
 ### <a name="upload-configurations-of-fiscal-connectors"></a>Överför konfigurationer av räkenskapskopplingar
 
@@ -83,8 +83,8 @@ En räkenskapskoppling ansvarar för kommunikationen med en räkenskapsenhet ell
 
 Följ dessa steg för att överföra konfigurationer av räkenskapskopplingar.
 
-1. I Commerce-administration, gå till sidan **Räkenskapskopplingar** (**Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Räkenskapskopplingar**).
-1. Överför en XML-konfiguration för varje enhet eller tjänst som du tänker använda för räkenskapsintegration.
+1. I Commerce headquarters, gå till sidan **Räkenskapskopplingar** (**Retail och Commerce \> Kanalinställningar \> Räkenskapsintegrering \> Räkenskapskopplingar**).
+1. Överför en XML-konfiguration för varje enhet eller tjänst som du tänker använda för räkenskapsintegrering.
 
 > [!TIP]
 > Genom att markera **Visa**, kan du visa alla funktionella och tekniska profiler som är relaterade till aktuell räkenskapskoppling.
@@ -95,7 +95,7 @@ Exempel på konfigurationer av anslutningsprogram för samt leverantörer av ska
 
 Följ dessa steg för att skapa funktionsprofiler för kopplingar.
 
-1. I Commerce-administration, gå till sidan **Funktionsprofiler för koppling** (**Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Funktionsprofiler för koppling**).
+1. I Commerce headquarters, gå till sidan **Funktionsprofiler för koppling** (**Retail och Commerce \> Kanalinställningar \> Räkenskapsintegrering \> Funktionsprofiler för koppling**).
 1. För varje kombination av en finansiell anslutning och en finansiell dokumentleverantör som är relaterad till denna räkenskapskoppling skapar du en funktionsprofil för anslutning genom att följa dessa steg:
 
     1. Välj namnet på en koppling.
@@ -120,7 +120,7 @@ Du kan ändra parametrarna för datamappning i en funktionsprofil för koppling.
 
 Följ dessa steg för att skapa tekniska profiler för kopplingar.
 
-1. I Commerce-administration, gå till sidan **Tekniska profiler för koppling** (**Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Tekniska profiler för koppling**).
+1. I Commerce headquarters, gå till sidan **Tekniska profiler för koppling** (**Retail och Commerce \> Kanalinställningar \> Räkenskapsintegrering \> Tekniska profiler för koppling**).
 1. Skapa en teknisk profil för koppling för respektive räkenskapskoppling genom att följa stegen nedan:
 
     1. Välj namnet på en koppling.
@@ -137,7 +137,7 @@ Följ dessa steg för att skapa tekniska profiler för kopplingar.
 
 Parametrarna på flikarna **enhet** och **inställningar** i en teknisk profil för koppling kan ändras. Återställ standardparametrar som är definierade i konfigurationen av räkenskapskoppling, markera **uppdatering**. När en ny version av en XML-konfiguration laddas får du ett meddelande om att aktuellt räkenskapskoppling eller leverantör av skattedokument används redan. Den här proceduren åsidosätter inte manuella ändringar som gjorts i tidigare funktionsprofiler för koppling och tekniska profiler för koppling. För att tillämpa standarduppsättningen med parametrar från en ny konfiguration, klicka på **uppdatera** på sidan **Funktionsprofiler för koppling** och **Uppdatera**.
 
-Om du måste ställa in specifika parametrar för en enskild kassaapparat eller butik följer du dessa steg.
+Om du måste konfigurera specifika parametrar för en enskild kassaapparat eller butik följer du dessa steg.
 
 1. Välj menyalternativet **Åsidosätt**.
 1. Skapa en ny post på sidan **Åsidosätt**.
@@ -161,7 +161,7 @@ En process för räkenskapsregistrering definieras av ordningen på registrering
 
 Följ dessa steg för att skapa en räkenskapsregistreringsprocess.
 
-1. I Commerce-administration, gå till sidan **Process för räkenskapsregistrering** (**Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Process för räkenskapsregistrering**).
+1. I Commerce headquarters, gå till sidan **Process för räkenskapsregistrering** (**Retail och Commerce \> Kanalinställningar \> Räkenskapsintegrering \> Process för räkenskapsregistrering**).
 1. Skapa en ny post för varje unik räkenskapsregistreringsprocess.
 1. Lägg till registreringssteg i processen genom att följa dessa steg:
 
@@ -173,7 +173,7 @@ Följ dessa steg för att skapa en räkenskapsregistreringsprocess.
 
 Följ dessa steg för att tilldela entiteter för räkenskapsregistreringsprocess till kassaprofiler.
 
-1. I Commerce-administration, gå till sidan **Kassafunktionsprofiler** (**Retail och Commerce \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Funktionsprofiler**). 
+1. I Commerce headquarters, gå till sidan **Kassafunktionsprofiler** (**Retail och Commerce \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Funktionsprofiler**). 
 1. Tilldela räkenskapsregistreringsprocess till en funktionsprofil för kassa.
 1. Välj **redigera** och klicka sedan på **Process för räkenskapsregistrering** i fältet **Processnummer** väljer du en process.
 1. På fliken **Skattetjänster** väljer du tekniska profiler för anslutningsprogram med anslutningsprogramplatsen **Registrera**.
@@ -197,9 +197,9 @@ Räkenskapsregistreringsflöde har definierats av räkenskapsregistreringsproces
 
 Du kan välja register där skatteregistrering är börbjuden, till exempel om du endast behöver tillhandahålla icke-skattemässiga åtgärder som till exempel sökning i produktkatalog, kundsökning eller skapande av transaktionsutkast på dessa enheter.
 
-För mer information om hur du ställer in register med skatteregistreringsrestriktioner, följ dessa steg.
+För mer information om hur du konfigurerar register med skatteregistreringsrestriktioner, följ dessa steg.
 
-1. I Commerce-administrationen går du till **Butik och handel \> Kanalinställningar \> Räkenskapsintegrering \> Processer för räkenskapsregistrering**.
+1. I Commerce headquarters går du till **Butik och handel \> Kanalinställningar \> Räkenskapsintegrering \> Processer för räkenskapsregistrering**.
 1. Välj erforderlig process.
 1. Markera fliken **Kassaregister med restriktioner rörande skatteprocess**.
 1. Lägg till register med restriktioner rörande skatteprocess efter behov.
@@ -214,13 +214,13 @@ Du rekommenderas att validera räkenskapsregistreringsprocessen i följande fall
 
 Följ dessa steg för att validera en räkenskapsregistreringsprocess.
 
-1. I Commerce-administration, gå till sidan **Process för räkenskapsregistrering** (**Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Process för räkenskapsregistrering**).
+1. I Commerce headquarters, gå till sidan **Process för räkenskapsregistrering** (**Retail och Commerce \> Kanalinställningar \> Räkenskapsintegrering \> Process för räkenskapsregistrering**).
 1. Välj **Validera** om du vill validera räkenskapsregistreringsprocessen.
 1. På sidan **Distributionsschema**, kör **1070** och **1090**-jobb för att överföra data till kanaldatabasen.
 
 ## <a name="set-up-fiscal-texts-for-discounts"></a>Ställ in räkenskapstexter för rabatter
 
-I vissa fall kan måste en särskild text skrivas ut på en kvittoskrivare om en rabatt ska tillämpas. Du kan ställa in räkenskapstexter för rabatter på sidan **Grupp för räkenskapskoppling** (**Butik och handel \> kanalinställning \> räkenskapsintegrering \> grupper för räkenskapskoppling**).
+I vissa fall kan måste en särskild text skrivas ut på en kvittoskrivare om en rabatt ska tillämpas. Du kan konfigurera räkenskapstexter för rabatter på sidan **Grupp för räkenskapskoppling** (**Butik och handel \> kanalinställning \> räkenskapsintegrering \> grupper för räkenskapskoppling**).
 
 - För manuella rabatter som tillämpas i POS bör du konfigurera en räkenskapstext för den infokod eller infokodgrupp som anges som **produktrabatt**-infokod i funktionsprofil för kassa.
 
@@ -249,7 +249,7 @@ Alternativ för felhantering som finns tillgängliga i räkenskapsintegrering st
 
 Gör på följande sätt om du vill göra inställningar för felhantering.
 
-1. På sidan **Process för räkenskapsregistrering** (**Butik och handel \> Kanalinställning \> räkenskapsintegrering \> process för räkenskapsregistrering**), kan du ställa in följande parametrar för varje steg i processen för räkenskapsregistrering.
+1. På sidan **Process för räkenskapsregistrering** (**Butik och handel \> Kanalinställning \> räkenskapsintegrering \> process för räkenskapsregistrering**), kan du konfigurera följande parametrar för varje steg i processen för räkenskapsregistrering.
 
     - **Tillåt hoppa över** – den här parametern aktiverar alternativet **hoppa över** i dialogrutan för felhantering.
     - **Tillåt att markera som registrerad** – den här parametern aktiverar alternativet **Markera som registrerad** i dialogrutan för felhantering.
@@ -303,7 +303,7 @@ Om du vill aktivera manuell körning av en senarelagd räkenskapsregistrering b�
 För att visa anslutningsparametrar och annan information i kassan, följ dessa steg.
 
 1. Öppna Modern POS (MPOS) eller Cloud POS (CPOS).
-1. Välj **inställningar**. Om skatteintegrering är aktiverad visas följande information i avsnittet **Räkenskapsintegration** till höger:
+1. Välj **inställningar**. Om skatteintegrering är aktiverad visas följande information i avsnittet **Räkenskapsintegrering** till höger:
 
     - Status för skatteregistrering
     - Tillståndet för den senaste skattetransaktionen

@@ -1,6 +1,6 @@
 ---
 title: Automatisk kvittning och prioritering
-description: Det här ämnet beskriver hur transaktioner kvittas om du väljer Automatisk kvittning på sidan Kundreskontraparametrar. Den beskriver även hur automatisk kvittning kan användas i kombination med betalningsprioriteten.
+description: Den här artikeln beskriver hur transaktioner kvittas om du väljer Automatisk kvittning på sidan Kundreskontraparametrar. Den beskriver även hur automatisk kvittning kan användas i kombination med betalningsprioriteten.
 author: ShivamPandey-msft
 ms.date: 01/30/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47ccdb49b4d5c43b4f9cb9a967bd30376474e4c1
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: bd5b894c82beb1b5d69ad6bf485161ab9c91a806
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712270"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855532"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>Automatisk kvittning och prioritering
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet beskriver hur transaktioner kvittas om du väljer Automatisk kvittning på sidan Kundreskontraparametrar. Den beskriver även hur automatisk kvittning kan användas i kombination med betalningsprioriteten.
+Den här artikeln beskriver hur transaktioner kvittas om du väljer Automatisk kvittning på sidan Kundreskontraparametrar. Den beskriver även hur automatisk kvittning kan användas i kombination med betalningsprioriteten.
 
 Du har två alternativ när du kvittar fakturor och betalningar mot andra transaktioner. Du kan manuellt välja de transaktioner som du vill kvitta, eller systemet kan markera transaktionerna automatiskt, genom att använda automatisk kvittningsfunktionen. Du kan också anpassa hur automatiska kvittningar bearbetas genom att använda alternativet **Prioritera kvittning**. Alla dessa alternativ ingår i de kvittringsparametrar som definieras på sidan **Parametrar för kundreskontra**. Det sätt på vilket transaktioner automatiskt kvittas kan vara olika, beroende på vilken metod som du använder för automatisk kvittning. Följande metoder finns:
 

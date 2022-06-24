@@ -1,6 +1,6 @@
 ---
-title: Konfigurera BOPIS i en Dynamics 365 Commerce-bedömningsmiljö
-description: I det här avsnittet beskrivs hur du konfigurerar onlineköp, hämta i butik (BOPIS) i en Microsoft Dynamics 365 Commerce-utvärderingsmiljö efter att den har etablerats.
+title: Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö
+description: I denna artikel beskrivs hur du konfigurerar "köp online, hämta i butik" (BOPIS) i en Microsoft Dynamics 365 Commerce-utvärderingsmiljö efter att den har etablerats.
 author: BrianShook
 ms.date: 07/16/2020
 ms.topic: article
@@ -14,30 +14,30 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e0aabec196aa1ffd2e4d2f2691c03cf11326ee8
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 379537fd490be98497b6e7c5cdfbc33798fe28ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779804"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861976"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du konfigurerar hämta i butik (BOPIS) i en Microsoft Dynamics 365 Commerce-utvärderingsmiljö efter att miljön har etablerats.
+I denna artikel beskrivs hur du konfigurerar "köp online, hämta i butik" (BOPIS) i en Microsoft Dynamics 365 Commerce-utvärderingsmiljö efter att miljön har etablerats.
 
 ## <a name="prerequisite"></a>Förutsättning
 
-Slutför procedurerna i det här avsnittet först när bedömningsmiljö för Commerce har etablerats och konfigurerats. Information om hur du etablerar och konfigurerar din miljö, se [Etablera en bedömningsmiljö av Dynamics 365 Commerce](provisioning-guide.md) och [Konfigurera en bedömningsmiljö av Dynamics 365 Commerce](./cpe-post-provisioning.md).
+Slutför procedurerna i denna artikel först när bedömningsmiljön för Commerce har etablerats och konfigurerats. Information om hur du etablerar och konfigurerar din miljö, se [Etablera en bedömningsmiljö av Dynamics 365 Commerce](provisioning-guide.md) och [Konfigurera en bedömningsmiljö av Dynamics 365 Commerce](./cpe-post-provisioning.md).
 
-När hela Commerce-miljön har etablerats och konfigurerats kan du använda det här avsnittet för att aktivera BOPIS-scenarier.
+När hela Commerce-miljön har etablerats och konfigurerats kan du använda denna artikel för att aktivera BOPIS-scenarier.
 
 ## <a name="configure-the-pos"></a>Konfigurera POS
 
 ### <a name="configure-modern-pos"></a>Konfigurera Modern POS
 
-BOPIS-scenarier som involverar en kreditkortsbetalning kräver en maskinvarustation. Maskinvarustationen ingår i Modern POS för Windows och Android-klienter. Om du använder Cloud POS eller Modern POS för iOS måste POS kombineras med en delad maskinvarustation. I det här avsnittet beskrivs hur du konfigurerar BOPIS för Windows och Android-klienter. Mer information om hur du konfigurerar en delad maskinvarustation finns i [Konfiguration och installation av Retail Hardware Station](./retail-hardware-station-configuration-installation.md).
+BOPIS-scenarier som involverar en kreditkortsbetalning kräver en maskinvarustation. Maskinvarustationen ingår i Modern POS för Windows och Android-klienter. Om du använder Cloud POS eller Modern POS för iOS måste POS kombineras med en delad maskinvarustation. I denna artikel beskrivs hur du konfigurerar BOPIS för Windows- och Android-klienter. Mer information om hur du konfigurerar en delad maskinvarustation finns i [Konfiguration och installation av Retail Hardware Station](./retail-hardware-station-configuration-installation.md).
 
 1. Gå till **Retail och Commerce \> Kanalinställningar \> Kassainställning \> Kassor**.
 2. Välj kassa **SANFRAN-5** och välj sedan **redigera**.
@@ -67,7 +67,7 @@ BOPIS-scenarier som involverar en kreditkortsbetalning kräver en maskinvarustat
 5. En dialogrutan för verifiering visas. Välj det konto som använder e-postadressen som tidigare kopplades till medarbetaren **000713 – Anders Collette**.
 
     > [!NOTE]
-    > Om du ännu inte har associerat en medarbetare med din identitet kommer aktiveringen att misslyckas. Följ i så fall instruktionerna under avsnittet "Associera arbetare med din identitet", i ämnet [Konfigurera en bedömningsmiljö för Dynamics 365 Commerce](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
+    > Om du ännu inte har associerat en medarbetare med din identitet kommer aktiveringen att misslyckas. Följ i så fall instruktionerna under avsnittet "Associera arbetare med din identitet" i artikeln [Konfigurera en bedömningsmiljö för Dynamics 365 Commerce](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
     
 6. När du uppmanas att låta din organisation hantera enheten väljer du **Endast den här appen**.
 7. När aktiveringen är slutförd, välj **Kom igång**.

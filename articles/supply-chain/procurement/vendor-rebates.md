@@ -1,6 +1,6 @@
 ---
 title: Leverantörsrabatter
-description: Detta avsnitt innehåller en översikt över de vanligaste åtgärderna när du arbetar med leverantörsrabatter. Leverantörsrabatter hjälper förgöra anspråk på intjänade rabatter.
+description: Denna artikel innehåller en översikt över de vanligaste åtgärderna när du arbetar med leverantörsrabatter. Leverantörsrabatter hjälper förgöra anspråk på intjänade rabatter.
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: ed41fe18048050ecb80a93e929d66ebc3a2e2441
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 789a58af40595cbb72d55d598510c43315aead2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672974"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890811"
 ---
 # <a name="vendor-rebates"></a>Leverantörsrabatter
 
@@ -26,7 +26,7 @@ ms.locfileid: "8672974"
 
 Leverantörsrabatter hjälper förgöra anspråk på intjänade rabatter.
 
-Detta avsnitt innehåller en översikt över de vanligaste åtgärderna när du arbetar med leverantörsrabatter. Översikten beskriver följande uppgifter:
+Denna artikel innehåller en översikt över de vanligaste åtgärderna när du arbetar med leverantörsrabatter. Översikten beskriver följande uppgifter:
 
 - Granska informationen i ett rabattavtal
 - Identifiera order som är berättigade till rabatter, och generera anspråk på rabatten.
@@ -34,7 +34,7 @@ Detta avsnitt innehåller en översikt över de vanligaste åtgärderna när du 
 
 ## <a name="audience-and-purpose"></a>Publik och syfte
 
-Informationen i detta avsnitt riktar sig till beslutsfattare inom företag som innehar positioner som exempelvis inköpschef, ekonomichef och redovisningschef, och som har ansvar för följande:
+Informationen i denna artikel riktar sig till beslutsfattare inom företag som innehar positioner som exempelvis inköpschef, ekonomichef och redovisningschef, och som har ansvar för följande:
 
 - Förhandla om leverantörspriser, rabatter och rabattavtal.
 - Hantera personal som behandlar rabattanspråk samlar in betalningar.

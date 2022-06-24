@@ -1,6 +1,6 @@
 ---
 title: Underhållschecklistor
-description: Det här avsnittet beskriver hur du skapar underhållschecklistor i tillgångshantering.
+description: Denna artikel beskriver hur du skapar underhållschecklistor i Tillgångshantering.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9ece9abcbaed0a1881f6b6a0d1b2357bc87ef181636a37564709f62c6aa38475
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 25e9139ce57283482d8da4b7f1e5d6275c74ad28
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760572"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854541"
 ---
 # <a name="maintenance-checklists"></a>Underhållschecklistor
 
@@ -28,7 +28,7 @@ ms.locfileid: "6760572"
 
 
 
-Underhållschecklistor ställs in på underhållsjobbtyper. Du fyller i checklistor för underhåll som en del av processen med att slutföra en arbetsorder. För mer information om hur du ställer in underhållschecklistor för underhållsjobbtyper på sidan **Standardvärden för underhållsjobbtyp**, se [Kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+Underhållschecklistor ställs in på underhållsjobbtyper. Du fyller i checklistor för underhåll som en del av processen med att slutföra en arbetsorder. För mer information om hur du konfigurerar underhållschecklistor för underhållsjobbtyper på sidan **Standardvärden för underhållsjobbtyp**, se [Kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
 När du arbetar med underhållschecklistor på en arbetsorder kan du fylla i de fördefinierade underhållschecklistorna som är relaterade till underhållsjobbtyper. Du kan också lägga till fler underhållschecklistor.
 
@@ -65,7 +65,7 @@ Underhållschecklistor skapas från definitionen för standardtypen av underhål
     - **Text** - Använd den här typen om du vill lägga till en underhållschecklisterad som har text som beskriver vad som måste göras. Du kan till exempel använda den här typen om vill att en arbetare ska kontrollera eller inspektera något, men du inte förväntar dig ett specifikt (mätbart) resultat. När du har valt den här typen anger du på snabbfliken **detaljer om rader** i fältet **instruktioner** en text som beskriver vad som måste göras.
     - **Sidhuvud** - En underhållschecklisterad av den här typen används som en rubrik för att gruppera raderna för underhållschecklista nedan. Den här typen är användbar om du har flera rader för underhållschecklista som kan delas in i specifika områden. När du har valt den här typen anger du ett beskrivande namn i fältet **Namn**.
     - **Mall** - Den här typen kan inte användas när du lägger till en rad för underhållschecklista manuellt på ett arbetsorderjobb.  
-    - **Variabel** - Använd den här typen för att definiera ett möjligt resultat i ett intervall på en rad för underhållschecklista. För information om hur du ställer in variabler för underhållschecklistor finns i [Kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md). När du har valt den här typen anger du ett beskrivande namn för variabeln i fältet **Namn**. På snabbfliken **Information om rader** i fältet **variabel** väljer du variabeln. I fältet **Instruktioner** anger du en text som beskriver vad som måste göras.
+    - **Variabel** - Använd den här typen för att definiera ett möjligt resultat i ett intervall på en rad för underhållschecklista. För information om hur du konfigurerar variabler för underhållschecklistor finns i [Kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md). När du har valt den här typen anger du ett beskrivande namn för variabeln i fältet **Namn**. På snabbfliken **Information om rader** i fältet **variabel** väljer du variabeln. I fältet **Instruktioner** anger du en text som beskriver vad som måste göras.
     - **Mått** – Använd den här typen för att registrera ett specifikt mått på underhållschecklisteraden. När du har valt den här typen anger du ett namn för måttet i fältet **Namn**. På snabbfliken **Raddetaljer** i fälten **räknare** och **enhet** anger du lämpliga värden. I fältet **Instruktioner** anger du en text som beskriver vad som måste göras.
 
 5. När du har lagt till raderna för underhåll manuellt fyller du i raderna enligt beskrivningen i avsnittet **Fyll i en underhållschecklista** ovan.

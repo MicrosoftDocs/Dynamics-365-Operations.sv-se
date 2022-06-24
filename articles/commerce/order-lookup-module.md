@@ -1,6 +1,6 @@
 ---
 title: Modul för ordersökning
-description: Det här avsnittet handlar om modul för ordersökning och förklarar hur du konfigurerar den i Microsoft Dynamics 365 Commerce.
+description: Denna artikel avhandlar modulen för ordersökning och förklarar hur du konfigurerar den i Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 09/01/2021
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 0ae5c8a2eea84a9aa707f7c2f6f29950f2f48faa
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: c83463d9a0ece9605b0d22bee2a1c76057c8ed05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675127"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869440"
 ---
 # <a name="order-lookup-module"></a>Modul för ordersökning
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om modul för ordersökning och förklarar hur du konfigurerar den i Microsoft Dynamics 365 Commerce.
+Denna artikel avhandlar modulen för ordersökning och förklarar hur du konfigurerar den i Microsoft Dynamics 365 Commerce.
 
-I modulen för ordersökning ges ett formulär som kunderna kan använda när de söker efter order som de har lagt på en näthandelsplats. Den används i funktionen [Aktivera ordersökning för gästutcheckningar](order-lookup-guest.md). Sökmodulen för order kan användas för att slå upp order som har skickats via en näthandelsplats, butikskassan (POS) eller ett kundtjänstcenter. Formuläret kan hämta order som skickats både av gästanvändare och av registrerade användare.
+I modulen för ordersökning ges ett formulär som kunderna kan använda när de söker efter order som de har lagt på en näthandelsplats. Den används i funktionen [Aktivera ordersökning för gästkassor](order-lookup-guest.md). Sökmodulen för order kan användas för att slå upp order som har skickats via en näthandelsplats, butikskassan (POS) eller ett kundtjänstcenter. Formuläret kan hämta order som skickats både av gästanvändare och av registrerade användare.
 
 I bilden nedan visas ett exempel på det formulär som återges av modulen för ordersökning. När kunder fyller i formuläret och väljer **Sök efter din order** omdirigeras de till sidan med orderdetaljer.
 
@@ -43,11 +43,11 @@ I bilden nedan visas ett exempel på det formulär som återges av modulen för 
 
 ## <a name="add-an-order-lookup-module-to-a-page"></a>Lägg till modulen för ordersökning på en sida
 
-Modulen för ordersökning kan läggas till på valfri sida på näthandelsplatsen. Om du vill använda modulen för ordersökning för att aktivera ordersökning för gästutcheckningar, se till att lägga till den på en sida som inte kräver att användaren är inloggad. Om du vill söka efter en sidas inställning **Kräver inloggning?** i Commerce-webbplatsbyggarens trädvy väljer du platsen **Standardsida (obligatorisk)** och tittar längst ned i den högra rutan.
+Modulen för ordersökning kan läggas till på valfri sida på näthandelsplatsen. Om du vill använda modulen för ordersökning för att aktivera ordersökning för gästkassor, se till att lägga till den på en sida som inte kräver att användaren är inloggad. Om du vill söka efter en sidas inställning **Kräver inloggning?** i Commerce-webbplatsbyggarens trädvy väljer du platsen **Standardsida (obligatorisk)** och tittar längst ned i den högra rutan.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Aktivera ordersökning för gästutcheckningar](order-lookup-guest.md)
+[Aktivera ordersökning för gästkassor](order-lookup-guest.md)
 
 [Modulbibliotek – översikt](starter-kit-overview.md)
 

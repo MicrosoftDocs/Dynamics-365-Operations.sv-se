@@ -1,6 +1,6 @@
 ---
 title: Inställningar av parametrar för hemtagningskostnad
-description: I detta ämne beskrivs hur du ställer in allmän information och konfigurationsinställningar som används i modulen Hemtagningskostnad för bokföring, statusuppdateringar, nummerserier och beteende.
+description: I denna artikel beskrivs hur du konfigurerar allmän information och konfigurationsinställningar som används i modulen Hemtagningskostnad för bokföring, statusuppdateringar, nummerserier och beteende.
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7abe8f7f9ea98e7aedb6c9d8d2603b7782194b70
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 99dbe17d4e83c2c75d52ca3fd22a1772d8045355
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690384"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871990"
 ---
 # <a name="landed-cost-parameters-setup"></a>Inställningar av parametrar för hemtagningskostnad
 
 [!include [banner](../../includes/banner.md)]
 
-Du använder sidan **parametrar för hemtagningskostnad** för att ställa in allmän information och konfigurationsinställningar som används i modulen **hemtagningskostnad** för bokföring, statusuppdateringar, nummerserier och beteende. Parameterinställningarna delas av juridiska personer och kan ändras av en administratör.
+Du använder sidan **parametrar för hemtagningskostnad** för att konfigurera allmän information och konfigurationsinställningar som används i modulen **hemtagningskostnad** för bokföring, statusuppdateringar, nummerserier och beteende. Parameterinställningarna delas av juridiska personer och kan ändras av en administratör.
 
 ## <a name="open-the-landed-cost-parameters-page"></a>Öppna sidan parametrar för hemtagningskostnad
 
@@ -55,7 +55,7 @@ I följande tabell beskrivs fälten som är tillgängliga på snabbfliken **Kost
 | Tillåt noll kostnader | Ange alternativet *Nej* om ett fel ska visas om en användare försöker bokföra en kostnadsuppskattning för en faktura eller inköpsorder som inte innehåller något värde för den förväntade färdkostnaden. Felmeddelandet visar att kostnaden 0 (noll) inte kan fördelas och att fakturabokföringen misslyckas. I detta fall kan användaren uppdatera uppskattningen manuellt (eller omkonfigurera automatiska kostnaden) och sedan antingen hämta in det uppdaterade värdet eller radera kostnaden om den inte gäller.<p>Ställ in detta alternativ till *Ja* om du vill tillåta att färdkostnaden är tom. I det här fallet fördelas priset 0 (noll) enligt kostnadsområdet. En leverantörskostnadsfaktura kan sedan bearbetas mot nollpriskostnaden när färden inlevereras.</p><p>Vi rekommenderar att du konfigurerar uppskattningen på posten för automatisk kostnad för att förhindra att en nollpriskostnad visas. Även om denna uppskattning inte är helt korrekt bör den fortfarande vara mer exakt än en antagen nollkostnad.</p> |
 | Bokföringsdatum för justering | När du bokar en färdkostnadsfaktura för leverantörsreskontra uppdateras även kvittningstabellen (lagerjusteringar). Välj det datum som är inställt som standard på **Välj färdkostnader** när du är i fakturajournalen:<ul><li>**Transaktionsdatum** – Använd datum för journalen (bokföringsdatum).</li><li>**Fakturadatum för inköpsorder** – Använd det ekonomiska bokföringsdatumet för lagerfakturan (inköpsorder).</li><li>**Markerat datum** – Användaren kan ange ett bokföringsdatum. Även om datumet kan lämnas tomt, om det fortfarande är tomt när kostnadsfakturan bokförs, får användaren ett felmeddelande.</li></ul> |
 | Använd verifikation för inköpsfaktura | När det här alternativet ställs in på *Ja*, kommer periodiseringstransaktioner för kostnader att använda samma verifikationsnummer som används för inköpsfakturan. När det är inställt på *Nej* använder systemet nästa tillgängliga nummer för nummerserien **verifikation av periodiserad kostnad** som anges på fliken **nummerserier** på sidan **Parametrar hemtagningskostnad**.<p>Det här alternativet gäller endast när alternativet **Bokför till debiteringskonto i redovisning** är inställt på *Ja* på fliken **Faktura** på sidan **Parametrar för leverantörsreskontra**.</p> |
-| Spärra manuell bokföring på clearingkonto | Ställ in detta alternativ till *Ja* för att förhindra bokföring till clearingkonton där transaktionen inte har kopplats till en sådan genom att välja **Funktioner \> Välj färdkostnader** i åtgärdsfönstret i leverantörsfakturajournalen. Vi rekommenderar att du ställer in detta alternativ till *Ja*, så att färden och clearingkontot kan kvittas korrekt. |
+| Spärra manuell bokföring på clearingkonto | Ställ in detta alternativ till *Ja* för att förhindra bokföring till clearingkonton där transaktionen inte har kopplats till en sådan genom att välja **Funktioner \> Välj färdkostnader** i åtgärdsfönstret i leverantörsfakturajournalen. Vi rekommenderar att du konfigurerar detta alternativ till *Ja*, så att färden och clearingkontot kan kvittas korrekt. |
 | Använd avgiftsperiodiseringskontots kostnadstypen | När det här alternativet ställs in på *Ja*, används det periodiseringskonto för debitering som konfigurerats för den relevanta kostnadstypskoden på sidan **Kostnadstypkoder** för att periodisera kostnader som en utgift.<p>Det här alternativet gäller endast när alternativet **Bokför till debiteringskonto i redovisning** är inställt på *Ja* på fliken **Faktura** på sidan **Parametrar för leverantörsreskontra**. |
 | Bokför justeringar som avvikelse | När det här alternativet ställs in på *Ja* åsidosätter det standardfunktionen och tvingar lagerjusteringstransaktionerna som är relaterade till avvikelser mellan uppskattade kostnader och faktiska kostnader att bokföras på ett avvikelsekonto.<p>När det här alternativet ställs in på *Nej*, hanteras lagerjusteringstransaktionerna som hör till avvikelserna baserat på konfigurationen för kostnadsmetoden och kostnadstypkoden. För standardkostnader bokförs avvikelser fortfarande på avvikelsekontot. Vid förflyttning av viktat medelvärde (WMA) bokförs avvikelser antingen på avvikelsekontot eller i lagret.</p><p>Det här alternativet gäller endast när alternativet **Bokför till debiteringskonto i redovisning** är inställt på *Ja* på fliken **Faktura** på sidan **Parametrar för leverantörsreskontra**.</p> |
 
@@ -79,7 +79,7 @@ I följande tabell beskrivs fälten som är tillgängliga på snabbfliken **Stan
 | Inställning | beskrivning |
 |---|---|
 | Journalnamn | Välj den standardjournal som ska användas för funktionen *Skapa införseljournal*. |
-| Sjötransportens status | Välj vilken status en användare måste ha innan de kan ställa in en leveransbehållare som används i systemet. Den här åtgärden inträffar normalt när varorna är på väg eller vid lastplatsen. |
+| Sjötransportens status | Välj vilken status en användare måste ha innan de kan konfigurera en leveransbehållare som används i systemet. Den här åtgärden inträffar normalt när varorna är på väg eller vid lastplatsen. |
 | Resemall | Välj den standardmall som ska användas för nya hyrda leveransbehållare. Du väljer vanligtvis en resemall som inkluderar hyreskostnader. |
 | Rörelse | Om över-/underkvantiteten för en leverans ligger inom den definierade toleransen bearbetas en rörelsejournal automatiskt. Välj den standardrörelsejournal som ska användas. Fältet **Motkonto** för det valda namnet på rörelsejournalen måste ha ett värde. |
 | Överför | När en underleverans bearbetas överförs den kortinleveranskvantiteten till ett underleveranslagerställe. Välj den standard överföringsjournal som ska användas. |

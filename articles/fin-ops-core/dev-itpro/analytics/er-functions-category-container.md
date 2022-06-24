@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 522fc6b8ad414745c3949268d9690aa2d258b92971e7d7b4f82428398bfec170
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5c86b0ae6cbf4ac6515491b55390d42c371eae4b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760108"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883829"
 ---
 # <a name="list-of-er-functions-in-the-container-category"></a>Lista över ER-funktioner i behållarkategori
 
 [!include [banner](../includes/banner.md)]
 
-[Elektronisk rapportering (ER)](general-electronic-reporting.md) behållare [funktioner](er-formula-language.md#Functions) kan användas för att utföra åtgärder på datakällor av datatypen *behållare*. Dessa operationer uppstår när bearbetningen av data representerar en samling binära data i binärt stort objekt (BLOB) format. Det här avsnittet innehåller en sammanfattning av dessa funktioner.
+[Elektronisk rapportering (ER)](general-electronic-reporting.md) behållare [funktioner](er-formula-language.md#Functions) kan användas för att utföra åtgärder på datakällor av datatypen *behållare*. Dessa operationer uppstår när bearbetningen av data representerar en samling binära data i binärt stort objekt (BLOB) format. Den här artikeln innehåller en sammanfattning av dessa funktioner.
 
 ## <a name="list-of-supported-functions"></a>Lista över funktioner som stöds
 

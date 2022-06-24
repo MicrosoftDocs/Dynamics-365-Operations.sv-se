@@ -1,6 +1,6 @@
 ---
 title: Konfigurera omkostnadsgranskare
-description: I detta ämne beskrivs hur du använder utgiftsgranskare för att dynamiskt välja den användare som en arbetsflödesuppgift, ett godkännande eller ett manuellt beslut har tilldelats till.
+description: I denna artikel beskrivs hur du använder utgiftsgranskare för att dynamiskt välja den användare som en arbetsflödesuppgift, ett godkännande eller ett manuellt beslut har tilldelats till.
 author: rachel-profitt
 ms.date: 06/25/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 110edf4c2733f899368069c7d215ae5b0882f5cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070156"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863235"
 ---
 # <a name="configure-expenditure-reviewers"></a>Konfigurera utgiftsgranskare
 [!include[banner](../includes/banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: rcarlson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5de2e0e6e56651487ebd36e3594eb378ce6154ea
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: b1e2c0ef5cd405232332847078c70af42f056e17
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734965"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866772"
 ---
 # <a name="financial-dimensions-and-main-accounts-in-right-to-left-languages"></a>Ekonomiska dimensioner och huvudkonton i språk som skrivs från höger till vänster
 

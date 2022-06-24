@@ -1,6 +1,6 @@
 ---
 title: Bekräfta planerade order
-description: I detta ämne beskrivs hur du bekräftar planerade order. När planerade order bekräftas omvandlas de till faktiska inköpsorder, överföringsorder eller produktionsorder.
+description: I denna artikel beskrivs hur du bekräftar planerade order. När planerade order bekräftas omvandlas de till faktiska inköpsorder, överföringsorder eller produktionsorder.
 author: t-benebo
 ms.date: 04/22/2021
 ms.search.form: ReqTransPo, ReqTransFirmLog
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30f3ee656b97e0337b6e3e78f0acb2300d7d85dc
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 24b5c6cb7e97924ebace8f7131a87e9bffea22e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468481"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857530"
 ---
 # <a name="firm-planned-orders"></a>Bekräfta planerade order
 
@@ -27,13 +27,13 @@ Det finns tre metoder för att bekräfta planerade order:
 
 - **Manuellt bekräftande** – Välj specifika planerade order i en lista och starta sedan processen manuellt.
 - **Auto-bekräftande** – Definiera en förvald bekräftad tidsgräns för disponeringsgrupper, enskilda artiklar och kombinationer av artiklar och huvudplaner. Under körningar av huvudplaneringen bekräftas sedan planerade order automatiskt om orderdatumet ligger inom den angivna tidsgränsen för bekräftelse.
-- **Frågebaserat bekräftande** – Definiera en fråga för att välja planerade order baserat på deras egenskaper. Du kan ställa in ett batchjobb för att köra frågan och bekräfta matchande order i ett vanligt schema.
+- **Frågebaserat bekräftande** – Definiera en fråga för att välja planerade order baserat på deras egenskaper. Du kan konfigurera ett batchjobb för att köra frågan och bekräfta matchande order i ett vanligt schema.
 
-I det här ämnet beskrivs de olika metoderna i detalj.
+I denna artikel beskrivs de olika metoderna i detalj.
 
-## <a name="enable-the-features-that-are-described-in-this-topic"></a><a name="enable-features"></a>Aktivera funktionerna som beskrivs i detta ämne
+## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a>Aktivera funktionerna som beskrivs i denna artikel
 
-De flesta planerade orderfunktioner är tillgängliga i alla standardinstallationer av Microsoft Dynamics 365 Supply Chain Management som använder Planeringsoptimering. Några av funktionerna som beskrivs i det här avsnittet måste dock inaktiveras i Funktionshantering innan du kan använda dem.
+De flesta planerade orderfunktioner är tillgängliga i alla standardinstallationer av Microsoft Dynamics 365 Supply Chain Management som använder Planeringsoptimering. Några av funktionerna som beskrivs i denna artikel måste dock inaktiveras i Funktionshantering innan du kan använda dem.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Aktivera eller inaktivera parallell bekräftelse av planerade order
 
@@ -45,11 +45,11 @@ Med bekräftad order med filtrering kan du definiera logiska kriterier för val 
 
 Från och med version 10.0.25 av Supply Chain Management är denna funktion aktiverad som standard. Administratörer kan aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Bekräfta planerad order med filtrering* i arbetsytan [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-auto-firming-for-planning-optimization"></a>Aktivera auto-bekräftande för planeringsoptimering
+### <a name="enable-auto-firming-for-planning-optimization"></a>Aktivera auto-bekräftande för Planeringsoptimering
 
 Med auto-bekräftande kan du bekräfta planerade order som en del av huvudplaneringsprocessen inom tidsgränsramarna för bekräftelse. Auto-bekräftande stöds alltid för planeringsmotorn som är inbyggd i Supply Chain Management. Om du vill använda den tillsammans med Planeringsoptimering måste du även aktivera funktionen.
 
-Om du vill göra dessa funktioner tillgängliga i systemet går du till [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen *Auto-bekräftande för planeringsoptimering*. (Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard.)
+Om du vill göra dessa funktioner tillgängliga i systemet går du till [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen *Auto-bekräftande för Planeringsoptimering*. (Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard.)
 
 ## <a name="manually-firm-planned-orders"></a>Bekräfta planerade order manuellt
 
@@ -84,7 +84,7 @@ Om du vill bekräfta planerade order manuellt hittar och väljer du de planerade
 
     ![Snabbfliken Parametrar i dialogrutan Bekräftelse.](./media/manual-firming.png "Snabbfliken Parametrar i dialogrutan Bekräftelse")
 
-1. På snabbfliken **Kör i bakgrunden** ställer du in jobbet så att det körs i batchläge. Det är dock ingen mening med att ställa in ett återkommande schema när du håller på att bekräfta manuellt. Fälten fungerar precis som för andra typer av [bakgrundsjobb](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) i Supply Chain Management. För manuell bekräftelse bearbetas dock endast valda planerade order i batchjobbet. Inga order som passar de filter som för tillfället används på sidan bearbetas.
+1. På snabbfliken **Kör i bakgrunden** ställer du in jobbet så att det körs i batchläge. Det är dock ingen mening med att konfigurera ett återkommande schema när du håller på att bekräfta manuellt. Fälten fungerar precis som för andra typer av [bakgrundsjobb](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) i Supply Chain Management. För manuell bekräftelse bearbetas dock endast valda planerade order i batchjobbet. Inga order som passar de filter som för tillfället används på sidan bearbetas.
 1. Välj **OK** om du vill använda inställningarna och generera bekräftade order.
 
 ## <a name="auto-firm-planned-orders"></a>Bekräfta planerade order automatiskt
@@ -97,11 +97,11 @@ Med auto-bekräftande kan du bekräfta planerade order som en del av huvudplaner
 > Härledda order (det vil säga inköpsorder för underleverantörer) som bekräftas erhåller statusen *Undergår granskning* om ändringsspårning är påslagen.
 
 > [!IMPORTANT]
-> Innan funktionen som beskrivs i det här avsnittet kan användas med Planeringsoptimering måste funktionen [*Auto-bekräftande för planeringsoptimering*](#enable-features) aktiveras i ditt system enligt beskrivet i början av detta ämne. Auto-bekräftande kan alltid användas med den inbyggda huvudplaneringsmotorn.
+> Innan funktionen som beskrivs i det här avsnittet kan användas med Planeringsoptimering måste funktionen [*Auto-bekräftande för Planeringsoptimering*](#enable-features) aktiveras i ditt system enligt beskrivet i början av denna artikel. Auto-bekräftande kan alltid användas med den inbyggda huvudplaneringsmotorn.
 
-### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Auto-bekräftande med planeringsoptimering kontra den inbyggda planeringsmotorn
+### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Auto-bekräftande med Planeringsoptimering kontra den inbyggda planeringsmotorn
 
-Både planeringsoptimeringen och den inbyggda planeringsmotorn kan användas för att bekräfta planerade order automatiskt. Det finns emellertid några viktiga skillnader. Planeringsoptimeringen använder till exempel orderdatum (dvs. startdatum) för att avgöra vilka planerade order som ska bekräftas, medan den inbyggda planeringsmotorn använder behovsdatumet (dvs. slutdatumet). I följande register sammanfattas skillnaderna.
+Både Planeringsoptimeringen och den inbyggda planeringsmotorn kan användas för att bekräfta planerade order automatiskt. Det finns emellertid några viktiga skillnader. Planeringsoptimeringen använder till exempel orderdatum (dvs. startdatum) för att avgöra vilka planerade order som ska bekräftas, medan den inbyggda planeringsmotorn använder behovsdatumet (dvs. slutdatumet). I följande register sammanfattas skillnaderna.
 
 | Funktion | Planeringsoptimering | Inbyggd planeringsmotor |
 |---|---|---|
@@ -121,7 +121,7 @@ Den automatiskt bekräftande tidsgränsen definieras av antalet dagar du anger f
 - Om du vill skriva över den bekräftande tidsgränsen som har definierats för disponeringsgruppen för en specifik artikel går du till **Produktinformationshantering \> Frisläppta produkter**. I åtgärdsfönstret väljer du **Plan** och sedan **Artikeldisposition**. På fliken **Allmänt** väljer du sedan **Åsidosätt tidsgrän** och, i fältet **Automatisk tidsgräns för bekräftelse (dagar)** anger du antalet dagar.
 - Om du vill skriva över den tidsgräns för bekräftelse som har definierats för disponeringsgruppen och artikeldisponering för en viss huvudplan går du till **Huvudplanering \> Inställningar \> Huvudplaner** och väljer en huvudplan. På snabbfliken **Tidsgräns i dagar** anger du sedan alternativet **Bekräftande** som *Ja* och anger antalet dagar.
 
-Om du ställer in alla tidigare nämnda tidsgränser som *0* (noll), inaktiveras auto-bekräftande effektivt för relevanta, omfattade artiklar.
+Om du konfigurerar alla tidigare nämnda tidsgränser som *0* (noll), inaktiveras auto-bekräftande effektivt för relevanta, omfattade artiklar.
 
 ## <a name="firm-planned-orders-by-using-a-query"></a>Bekräfta planerade order med hjälp av en fråga
 
@@ -130,7 +130,7 @@ Med hjälp av frågebaserat bekräftande kan du planera bekräftande baserat på
 Du kan kombinera automatisk bekräftande med frågebaserat bekräftande. Till exempel har ett frågebaserat bekräftandejobb en tidsgräns framåt som är längre än tidsgränsen för en matchande automatiskt bekräftad disponeringskonfiguration. Därför bearbetas det frågebaserade bekräftandejobbet innan det automatiska bekräftandet utlöses. Du kan använda det här beteendet om du vill schemalägga order för vissa leverantörer på ett annat sätt än order för liknande produkter från andra leverantörer.
 
 > [!IMPORTANT]
-> Innan funktionen som beskrivs i detta avsnitt kan användas måste funktionen [*Planerat orderbekräftande med filtrering*](#enable-features) aktiveras i systemet enligt beskrivet i början av detta ämne.
+> Innan funktionen som beskrivs i detta avsnitt kan användas måste funktionen [*Planerat orderbekräftande med filtrering*](#enable-features) aktiveras i systemet enligt beskrivet i början av denna artikel.
 
 Följ de här stegen om du vill bekräfta en planerad order med hjälp av frågebaserad bekräftandeprocess.
 
