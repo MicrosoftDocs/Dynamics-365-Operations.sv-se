@@ -1,6 +1,6 @@
 ---
 title: Dedikerade betalningsterminaler och fråga om skrivare och kassalåda
-description: Det här ämnet ger information om möjligheten att få en dedikerad betalningsterminal och uppmanar användaren att välja en kassa låda och en kvittoskrivare.
+description: Denna artikel ger information om möjligheten att få en dedikerad betalningsterminal och uppmana användaren att välja en kassalåda och en kvittoskrivare.
 author: BrianShook
 ms.date: 05/20/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b955e55271471ac43ff4c2b217c6448b30536e06
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 7c010448e43bbfb1f949508ce1b62bd07f3107e1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779780"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874931"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedikerade betalningsterminaler och fråga om skrivare och kassalåda
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet ger information om möjligheten att få en dedikerad betalningsterminal och uppmanar användaren att välja en kassa låda och en kvittoskrivare.
+Denna artikel ger information om möjligheten att få en dedikerad betalningsterminal och uppmana användaren att välja en kassalåda och en kvittoskrivare.
 
 ## <a name="overview"></a>Översikt
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 Commerce stöder dessa trender genom att aktivera ett sce
 
 ## <a name="supported-pos-clients-and-devices"></a>Kassaklienter och -enheter som stöds
 
-Funktionen som beskrivs i det här avsnittet stöds av Modern POS för Windows och Modern POS för Android POS-klienter.
+Funktionen som beskrivs i denna artikel stöds av Modern POS för Windows och Modern POS för Android POS-klienter.
 
 Den här funktionen stöder nätaktiverade betalningsterminaler och kvittoskrivare. Du kan tillhandahålla stöd för kassalådan genom att ansluta kassalådan till den nätverksanslutna kvittoskrivaren via d/k-porten.
 
@@ -54,7 +54,7 @@ Medföljande stöd för den här funktionen finns i [Dynamics 365 betalningskopp
 
 Om du vill installera kvittoskrivare använder du verktyget för Star Micronics-skrivaren för att konfigurera enheten så att den kan användas i nätverket. Detta verktyg kommer också att tillhandahålla enhetens IP-adress.
 
-Om du vill ställa in Epson-kvittoskrivare använder du verktyget Epson ePOS-Print för att konfigurera enheten för nätverksprotokoll.
+Om du vill konfigurera Epson-kvittoskrivare använder du verktyget Epson ePOS-Print för att konfigurera enheten för nätverksprotokoll.
 
 Mer information om hur du konfigurerar kringutrustning i nätverk finns i [Översikt över stöd för kringutrustning](./dev-itpro/network-peripherals.md).
 
@@ -66,7 +66,7 @@ Du måste ha två typer av maskinvaruprofil. Den första tilldelas POS. Den andr
 
 #### <a name="set-up-a-hardware-profile-for-the-register"></a>Ställ in en maskinvaruprofil för kassaapparaten
 
-Om du vill ställa in maskinvaruprofilen som är kopplad till kassaapparaten följer du stegen nedan.
+Om du vill konfigurera maskinvaruprofilen som är kopplad till kassaapparaten följer du stegen nedan.
 
 1. I Dynamics 365 Commerce söker du efter **maskinvaruprofil**.
 2. Välj **Ny**.
@@ -90,7 +90,7 @@ Om du vill ställa in maskinvaruprofilen som är kopplad till kassaapparaten fö
 
 #### <a name="set-up-a-hardware-profile-for-the-receipt-printer-and-cash-drawer"></a>Ställa in en maskinvaruprofil för kvittoskrivaren och kassalådan
 
-Om du vill ställa in maskinvaruprofilen som används för att gruppera skrivaren och kassalådan för nätverkskvitton följer du stegen nedan.
+Om du vill konfigurera maskinvaruprofilen som används för att gruppera skrivaren och kassalådan för nätverkskvitton följer du stegen nedan.
 
 1. I Dynamics 365 Commerce söker du efter **maskinvaruprofil**.
 2. Välj **Ny**.

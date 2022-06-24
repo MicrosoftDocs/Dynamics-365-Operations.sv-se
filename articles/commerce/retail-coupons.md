@@ -1,6 +1,6 @@
 ---
 title: Ställa in kuponger för butiksförsäljning
-description: Detta ämne innehåller en översikt över kuponger och hur du konfigurerar dem i Dynamics 365 Commerce.
+description: Dena artikel innehåller en översikt över kuponger och hur du konfigurerar dem i Dynamics 365 Commerce.
 author: josaw1
 ms.date: 10/05/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
-ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
+ms.openlocfilehash: 72ad7b527662bb863069b633d64eea41fee67d44
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7603133"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891942"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Ställa in kuponger för butiksförsäljning
 
@@ -62,7 +62,7 @@ I princip är kuponger nu extra validering utöver kuponger. Kupongen innehålle
 
 ## <a name="system-setup-for-coupons"></a>Systeminställning för kuponger
 
-Innan du kan skapa en kupong måste du ställa in kupongens streckkod och två kupongnummerserier.
+Innan du kan skapa en kupong måste du konfigurera kupongens streckkod och två kupongnummerserier.
 
 1. På sidan **Masktecken** skapas ett nytt masktecken för kupongkoden. Du kan välja ett valfritt oanvänt tecken.
 2. På sidan **Inställning av streckkodsmask** ska du skapa en ny streckkodsmask. Ställ in fältet **Typ** på **Kupong**.
@@ -70,7 +70,7 @@ Innan du kan skapa en kupong måste du ställa in kupongens streckkod och två k
 4. På sidan **Nummerserier** skapar du två nya nummerserier. En serie för kupongkods-ID och en annan för kupongnummer. Kupongkods-ID är den unika identifieraren för varje kupongkod för en kupong. Kupongnumret är den unika identifierare för en kupong. Varje kupong kan ha flera koder och streckkoder som aktiverar kupongen.
 
     > [!NOTE]
-    > För de båda nummerserierna måste du ställa in fältet **Omfattning** på **Företag**. I de flesta fall ska du skapa båda nummerserienumren automatiskt.
+    > För de båda nummerserierna måste du konfigurera fältet **Omfattning** på **Företag**. I de flesta fall ska du skapa båda nummerserienumren automatiskt.
 
 5. På sidan **Handelsparametrar** på fliken **Streckkoder**, välj streckkoden som du skapade tidigare.
 6. På sidan **Delade handelsparametrar** på fliken **Nummerserier** väljer du de nummerserier som du skapade för kupongnummer och kupongkods-ID.

@@ -1,6 +1,6 @@
 ---
-title: Periodisering av projektkostnad på inköpsinleveranser
-description: I det här avsnittet beskrivs hur upplupna projektkostnader från inköpsinleveranser kan spåras i Microsoft Dynamics 365 Finance.
+title: Periodisering av projektkostnader på inköpskvitton
+description: I den här artikeln beskrivs hur upplupna projektkostnader från inköpsinleveranser kan spåras i Microsoft Dynamics 365 Finance.
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e435002bca8fd4deb58c16c50db55237a3e9053
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: a138fd41269fad2e9ac489664ca81c3ee12f830d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735122"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856869"
 ---
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Periodisering av projektkostnader på inköpskvitton
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur upplupna projektkostnader från inköpsinleveranser kan spåras i Microsoft Dynamics 365 Finance. 
+I den här artikeln beskrivs hur upplupna projektkostnader från inköpsinleveranser kan spåras i Microsoft Dynamics 365 Finance. 
 
 Fakturor för ett projekt kommer ofta senare än varorna och tjänster som levereras, vilket betydligt kan påverka projektets nyckeltal (KPI:er). Det är viktigt att kunna spåra transaktionerna i både ekonomiska rapporter och projektrapporter.
 

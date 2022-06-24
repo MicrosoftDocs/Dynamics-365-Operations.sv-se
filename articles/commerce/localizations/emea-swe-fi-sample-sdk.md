@@ -1,6 +1,6 @@
 ---
-title: Distribueringsriktlinjer för kontrollenhetens integrationsexempel för Sverige (äldre)
-description: Det här ämnet innehåller riktlinjer för distribution av exempel på kontrollenhetsintegration för Sverige från Retail SDK
+title: Distribueringsriktlinjer för kontrollenhetens integreringsexempel för Sverige (äldre)
+description: Denna artikel innehåller riktlinjer för distribution av exempel på kontrollenhetsintegrering för Sverige från Retail SDK
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: b8d60f32d986dec6bb26d78ebdfe8cee3a6b688a
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 05a49de43282c449c7b99072d8ac3ac4a5f2a67f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077048"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870557"
 ---
-# <a name="deployment-guidelines-for-the-control-unit-integration-sample-for-sweden-legacy"></a>Distribueringsriktlinjer för kontrollenhetens integrationsexempel för Sverige (äldre)
+# <a name="deployment-guidelines-for-the-control-unit-integration-sample-for-sweden-legacy"></a>Distribueringsriktlinjer för kontrollenhetens integreringsexempel för Sverige (äldre)
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet ger riktlinjer för distribution av integrationsexempel för kontrollenhet för Sverige från Retail Software Development Kit (SDK) på en virtuell dator för utvecklare i Microsoft Dynamics Lifecycle Services (LCS). Mer information om exemplet på räkenskapsintegrering finns i [Exempel på integration av kontrollenhet för Sverige](emea-swe-fi-sample.md). 
+Denna artikel ger riktlinjer för distribution av integreringsexempel för kontrollenhet för Sverige från utvecklingspaketet för detaljhandelsprogramvara (SDK) på en virtuell dator för utvecklare i Microsoft Dynamics Lifecycle Services (LCS). Mer information om exemplet på räkenskapsintegrering finns i [Exempel på integrering av kontrollenhet för Sverige](emea-swe-fi-sample.md). 
 
-Exemplet på skatteintegrering för Sverige ingår i Retail SDK. Information om hur du installerar och använder SDK finns i [Retail programutvecklingskit (SDK) arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Det här exemplet består av tillägg för Commerce Runtime (CRT), Hardware Station och kassa. Om du vill köra det här exemplet måste du ändra och bygga CRT, Hardware Station- och kassaprojekt. Vi rekommenderar att du använder en icke-modifierad Retail SDK för att göra de ändringar som beskrivs i det här avsnittet. Vi rekommenderar också att du använder ett källkontrollsystem, till exempel Azure DevOps, där inga filer har ändrats ännu.
+Exemplet på skatteintegrering för Sverige ingår i Retail SDK. Information om hur du installerar och använder SDK finns i [Retail programutvecklingskit (SDK) arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md). Det här exemplet består av tillägg för Commerce Runtime (CRT), Hardware Station och kassa. Om du vill köra det här exemplet måste du ändra och bygga CRT, Hardware Station- och kassaprojekt. Vi rekommenderar att du använder en icke-modifierad detaljhandels-SDK för att utföra de ändringar som beskrivs i denna artikel. Vi rekommenderar också att du använder ett källkontrollsystem, till exempel Azure DevOps, där inga filer har ändrats ännu.
 
 ## <a name="development-environment"></a>Utvecklingsmiljö
 
@@ -183,7 +183,7 @@ Föregående procedur aktiverar tilläggen som är komponenter i exemplet på in
 
 4. Starta MSBuild-Kommandotolken för Visual Studio-verktyget och **kör MSBuild** under mappen Retail SDK för att skapa distribuerbara paket.
 5. Tillämpa paketen via LCS eller manuellt. Mer information finns i [skapa distribuerbara paket](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-6. Slutföra alla inställningsuppgifter som beskrivs i avsnittet [ställa in integrationen med kontrollenheter](emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
+6. Slutföra alla inställningsuppgifter som beskrivs i avsnittet [konfigurera integreringen med kontrollenheter](emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
 
 ## <a name="design-of-the-extensions"></a>Design av tilläggen
 
@@ -193,13 +193,13 @@ Syftet med tillägget som är en skattedokument leverantör är att generera tj�
 
 CRT-tillägget är **Runtime.Extensions.DocumentProvider.CleanCashSample**.
 
-Mer information om design av lösningen av räkenskapsintegration finns i [Process för räkenskapsregistrering och exempel på räkenskapsintegration för kvittoskrivarenheter och tjänster](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
+Mer information om design av lösningen av räkenskapsintegrering finns i [Process för räkenskapsregistrering och exempel på räkenskapsintegrering för kvittoskrivarenheter och tjänster](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### <a name="request-handler"></a>Begärandehanterare
 
 Det finns en enda **DocumentProviderCleanCash**-begärandehanterare för dokumentprovidern. Den här hanteraren används för att generera skattedokument för kontrollenheten.
 
-Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på dokumentprovidern för koppling som anges i Commerce-administration.
+Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på dokumentprovidern för koppling som anges i Commerce headquarters.
 
 Kopplingen stöder följande begäranden:
 
@@ -208,7 +208,7 @@ Kopplingen stöder följande begäranden:
 
 #### <a name="configuration"></a>Inställningar
 
-Konfigurationsfilen **DocumentProviderFiscalCleanCashSample** finns i mappen **konfiguration** för tilläggsprojektet. Syftet med den här filen är att aktivera inställningar för dokumentprovidern som ska konfigureras från Commerce-administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration. Följande inställningar är tillagda:
+Konfigurationsfilen **DocumentProviderFiscalCleanCashSample** finns i mappen **konfiguration** för tilläggsprojektet. Syftet med den här filen är att aktivera inställningar för dokumentprovidern som ska konfigureras från Commerce headquarters. Filformatet justeras med kraven för konfiguration av räkenskapsintegrering. Följande inställningar är tillagda:
 
 - Mappning av momskoder
 
@@ -222,7 +222,7 @@ Hardware Station-tillägget **HardwareStation.Extension.CleanCashSample**. Den a
 
 **CleanCashHandler** begäranhanteraren är startpunkten för hantering av begäranden till kontrollenheten.
 
-Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på räkenskapskopplingsnamn som anges i Commerce-administration.
+Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på räkenskapskopplingsnamn som anges i Commerce headquarters.
 
 Kopplingen stöder följande begäranden:
 
@@ -232,32 +232,32 @@ Kopplingen stöder följande begäranden:
 
 #### <a name="configuration"></a>Konfiguration
 
-Konfigurationsfilen finns i mappen **konfiguration** för tilläggsprojektet. Syftet med filen är att aktivera inställningar för räkenskapskoppling som ska konfigureras från Commerce-administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration. Följande inställningar är tillagda:
+Konfigurationsfilen finns i mappen **konfiguration** för tilläggsprojektet. Syftet med filen är att aktivera inställningar för räkenskapskoppling som ska konfigureras från Commerce headquarters. Filformatet justeras med kraven för konfiguration av räkenskapsintegrering. Följande inställningar är tillagda:
 
 - **Anslutningssträng** – inställningarna för kontrollenhetens anslutning.
 - **Tidsgräns** – hur länge, i millisekunder, som drivrutinen väntar på ett svar från kontrollenheten.
 
-## <a name="migrating-from-the-earlier-integration-sample"></a>Migrera från det tidigare integrationsprovet
+## <a name="migrating-from-the-earlier-integration-sample"></a>Migrera från det tidigare integreringsprovet
 
-Om du använder det tidigare [exemplet för POS-integrering med styrenheter för Sverige](retail-sdk-control-unit-sample.md), kan du behöva migrera från den till det aktuella integrationsexemplet. För att kunna utnyttja förändringen och få snabba uppdateringar av funktionerna för Sverige i framtiden kan du behöva uppgradera, göra mindre kod- och konfigurationsjusteringar i tilläggen som du har skapat och återskapa dina lösningar. Inga större ändringar krävs i den tilläggslogik som du skapade. Det tidigare integrationsprovet och anpassningarna kommer att fortsätta att fungera om inga ändringar görs från din sida. Därför kan du planera, förbereda för och göra upptaget för din miljö.
+Om du använder det tidigare [exemplet för POS-integrering med styrenheter för Sverige](retail-sdk-control-unit-sample.md), kan du behöva migrera från den till det aktuella integreringsexemplet. För att kunna utnyttja förändringen och få snabba uppdateringar av funktionerna för Sverige i framtiden kan du behöva uppgradera, göra mindre kod- och konfigurationsjusteringar i tilläggen som du har skapat och återskapa dina lösningar. Inga större ändringar krävs i den tilläggslogik som du skapade. Det tidigare integreringsprovet och anpassningarna kommer att fortsätta att fungera om inga ändringar görs från din sida. Därför kan du planera, förbereda för och göra upptaget för din miljö.
 
 ### <a name="migration-process"></a>Migreringsprocess
 
-Migreringen från det tidigare integrationsprovet till det aktuella styrenhetens integrationsprov bör baseras på konceptet med en gradvis uppdatering. Med andra ord bör alla Commerce-administration och Commerce Scale Unit-komponenter redan uppdateras innan du börjar uppdatera POS och komponenter för Hardware Station.
+Migreringen från det tidigare integreringsprovet till det aktuella styrenhetens integreringsprov bör baseras på konceptet med en gradvis uppdatering. Med andra ord bör alla Commerce headquarters och Commerce Scale Unit-komponenter redan uppdateras innan du börjar uppdatera POS och komponenter för Hardware Station.
 
 För att förhindra en situation där en händelse eller transaktion undertecknas två gånger (det vill säga den är undertecknad av både den tidigare tillägget och den nuvarande tillägget), eller där en hämdelse eller transaktion inte kan undertecknas på grund av den saknade konfigurationen, rekommenderar vi att du stänger av alla POS- och Hardware Station-enheter som använder det tidigare exemplet och uppdaterar dem samtidigt. Den här samtidiga uppdateringen kan göras, till exempel i butik för butik genom att uppdatera butikens funktionsprofil och Hardware Station maskinvaruprofil.
 
 Migreringsprocessen bör bestå av följande steg.
 
-1. Uppdatera Commerce-administration komponenterna.
+1. Uppdatera Commerce headquarters komponenterna.
 1. Uppdatera Commerce Scale Unit-komponenterna och aktivera tilläggen för det aktuella exemplet.
 1. Kontrollera att alla offlinetransaktioner synkroniseras från MPOS-enheter som har aktiverats offline.
 1. Stäng av alla enheter som använder komponenterna i det tidigare exemplet.
-1. Slutföra alla inställningsuppgifter som beskrivs i avsnittet [ställa in integrationen med kontrollenheter](emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
+1. Slutföra alla inställningsuppgifter som beskrivs i avsnittet [konfigurera integreringen med kontrollenheter](emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
 1. Uppdatera komponenterna för POS och Hardware Station, inaktivera tilläggen som är delar av det tidigare exemplet och aktivera tilläggen för det aktuella exemplet.
 
     > [!NOTE]
-    > Beroende på typ av miljö kan du hitta mer tekniska detaljer om migreringsprocessen i antingen avsnittet [Migration i en utvecklingsmiljö](#migration-in-a-development-environment) avsnittet [Migration i en produktionsmiljö](#migration-in-a-production-environment).
+    > Beroende på typ av miljö kan du hitta mer tekniska detaljer om migreringsprocessen i antingen avsnittet [Migrering i en utvecklingsmiljö](#migration-in-a-development-environment) eller avsnittet [Migrering i en produktionsmiljö](#migration-in-a-production-environment) i denna artikel.
 
 ### <a name="migration-in-a-development-environment"></a>Migrering i en utvecklingsmiljö
 

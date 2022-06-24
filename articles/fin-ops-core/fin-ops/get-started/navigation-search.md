@@ -1,6 +1,6 @@
 ---
 title: Navigeringsökning
-description: Det här avsnittet beskriver hur du använder sökfunktionen för att navigera till sidor.
+description: Den här artikeln beskriver hur du använder sökfunktionen för att navigera till sidor.
 author: aneesmsft
 ms.date: 08/11/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e689bef43930dbe364baefaa9f4d0231394ff4f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d45ad1d2a85efa561380912e82d38689fabbe119
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069994"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872690"
 ---
 # <a name="navigation-search"></a>Navigeringsökning
 
@@ -28,7 +28,7 @@ ms.locfileid: "8069994"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Det här avsnittet beskriver hur du använder sökfunktionen för att navigera till sidor.
+Den här artikeln beskriver hur du använder sökfunktionen för att navigera till sidor.
 
 Programmet innehåller ett antal områden och sidor som hjälper dig att utföra olika uppgifter. För att snabbt hitta de sidor de behöver för att slutföra dina uppgifter kan du använda funktionen för navigeringssökning.
 

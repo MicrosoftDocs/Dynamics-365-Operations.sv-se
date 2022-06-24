@@ -1,6 +1,6 @@
 ---
 title: Livscykel för modellhantering
-description: I det här avsnittet beskrivs olika sätt att underhålla organisationens maskininlärningsmodeller för att optimera de förutsägelser som dessa genererar.
+description: I den här artikeln beskrivs olika sätt att underhålla organisationens maskininlärningsmodeller för att optimera de förutsägelser som dessa genererar.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: a7b57bc0322e0f9a78dddfb924e379ac05ffca32
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 526916929e4bc079f9cea82d8ea9f80813e89b83
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722106"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880887"
 ---
 # <a name="model-management-lifecycle"></a>Livscykel för modellhantering
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs olika sätt att underhålla organisationens maskininlärningsmodeller för att optimera de förutsägelser som dessa genererar.
+I den här artikeln beskrivs olika sätt att underhålla organisationens maskininlärningsmodeller för att optimera de förutsägelser som dessa genererar.
 
 Vi rekommenderar att du utbildar AI-modellen i en sandbox-miljö och sedan använder hanterade lösningar för att distribuera den till en produktionsmiljö. Denna metod är ett sätt att säkerställa att rätt kontroller finns på plats för hantering av modellens livscykel.
 

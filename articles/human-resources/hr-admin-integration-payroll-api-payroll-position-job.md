@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 349479d9e77861b54d879bcfd93f7af0e38cff95
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fa347f4b99adc7c29d69daf62ad2bbfc14726a19
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069842"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864095"
 ---
 # <a name="payroll-position-job"></a>Lönebefattningsjobb
 
@@ -29,7 +29,7 @@ ms.locfileid: "8069842"
 
 Detta ämne beskriver löneentiteten för befattning för Dynamics 365 Human Resources.
 
-### <a name="description"></a>beskrivning
+### <a name="description"></a>Beskrivning
 
 Denna entitet tillhandahåller relationen mellan befattningen och ett jobb för en given fast kompensationsplan.
 

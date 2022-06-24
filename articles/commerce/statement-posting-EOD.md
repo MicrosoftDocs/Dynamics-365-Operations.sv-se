@@ -1,6 +1,6 @@
 ---
 title: Förbättringar av funktionen för bokföring av utdrag
-description: Det här avsnittet beskriver de förbättringar som har gjorts till funktionen för bokföring av utdrag.
+description: Denna artikel beskriver de förbättringar som har gjorts till funktionen för bokföring av utdrag.
 author: analpert
 ms.date: 05/18/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: f3937ee7b34b7204c31d922900029ae3a2c59e18
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: a7f25a7cc1e214b5c08013055126728b2ad10f3f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770179"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886916"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Förbättringar av funktionen för bokföring av utdrag
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver den första uppsättningen förbättringar som har gjorts till funktionen för bokföring av utdrag. Dessa förbättringar är tillgängliga i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
+Denna artikel beskriver den första uppsättningen förbättringar som har gjorts i funktionen för bokföring av utdrag. Dessa förbättringar är tillgängliga i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
 ## <a name="activation"></a>Aktivering
 
@@ -42,8 +42,8 @@ Commerce omfattar följande valideringar som hör till dessa konfigurationsnyckl
 
 Som del av förbättringarna av funktionerna för bokföring av utdrag har tre nya parametrar införts på snabbfliken **utdrag** på fliken **bokföring** på sidan **Commerce-parametrar**:
 
-- **Inaktivera rensning av utdrag** – det här alternativet gäller endast för äldre funktioner för bokföring av utdrag. Vi rekommenderar att du ställer in detta alternativ till **Nej** att förhindra att användare rensar rapporter som har statusen delvis bokförda. Om utdrag som är delvis bokförda rensas kommer data att skadas. Du bör endast ange detta alternativ till **Ja** i undantagsfall.
-- **Reservera lager vid beräkning** – Vi rekommenderar att du använder batchjobbet **Bokför lager** för reservation av lager och du ställer in detta alternativ till **Nej**. När det här alternativet är inställt på **Nej**, kommer funktionen för förbättrad bokföring av utdrag inte att försöka skapa lagerreservationstransaktioner vid tidpunkten för beräkningen (om transaktionerna inte redan har skapats via batchjobbet **Bokför lager**). Funktionen skapar i stället lagerreservationstransaktioner endast vid bokföringstidpunkten. Den här implementeringen var ett designval och är baserat på att tidsfönstret mellan beräkningsprocessen och bokföringsprocessen vanligtvis är litet. Om du vill reservera lager vid tidpunkten för beräkningen kan du ställa in detta alternativ till **Ja**.
+- **Inaktivera rensning av utdrag** – det här alternativet gäller endast för äldre funktioner för bokföring av utdrag. Vi rekommenderar att du konfigurerar detta alternativ till **Nej** att förhindra att användare rensar rapporter som har statusen delvis bokförda. Om utdrag som är delvis bokförda rensas kommer data att skadas. Du bör endast ange detta alternativ till **Ja** i undantagsfall.
+- **Reservera lager vid beräkning** – Vi rekommenderar att du använder batchjobbet **Bokför lager** för reservation av lager och du konfigurerar detta alternativ till **Nej**. När det här alternativet är inställt på **Nej**, kommer funktionen för förbättrad bokföring av utdrag inte att försöka skapa lagerreservationstransaktioner vid tidpunkten för beräkningen (om transaktionerna inte redan har skapats via batchjobbet **Bokför lager**). Funktionen skapar i stället lagerreservationstransaktioner endast vid bokföringstidpunkten. Den här implementeringen var ett designval och är baserat på att tidsfönstret mellan beräkningsprocessen och bokföringsprocessen vanligtvis är litet. Om du vill reservera lager vid tidpunkten för beräkningen kan du konfigurera detta alternativ till **Ja**.
 
     Den äldre funktionen för bokföring av utdrag reserverar alltid lager under beräkningsprocessen för utdrag (om du inte redan har gjort reservationen via batchjobbet **Bokför lager**), oavsett inställningen av detta alternativ.
 
@@ -101,7 +101,7 @@ Dessutom visas rubriken i andra och tredje avsnitten övergripande tillstånd f�
 
 ### <a name="event-logs"></a>Händelseloggar
 
-Ett utdrag genomgår olika operationer (till exempel skapa, beräkna, radera och bokföra) och flera instanser av samma operation kan anropas under utdragets livscykel. Exempelvis när ett utdrag skapas och beräknas kan användaren avmarkera utdraget och beräkna det igen. Knappen **händelseloggar** i gruppen **Information om körning** för utdraget ger en fullständig redovisningsspårning av olika åtgärder som kallas på utdraget sats, tillsammans med information om när dessa åtgärder kallades.
+Ett utdrag genomgår olika åtgärder (till exempel skapa, beräkna, radera och bokföra) och flera instanser av samma åtgärd kan anropas under utdragets livscykel. Exempelvis när ett utdrag skapas och beräknas kan användaren avmarkera utdraget och beräkna det igen. Knappen **händelseloggar** i gruppen **Information om körning** för utdraget ger en fullständig redovisningsspårning av olika åtgärder som kallas på utdraget sats, tillsammans med information om när dessa åtgärder kallades.
 
 ### <a name="aggregated-transactions"></a>Sammansatta transaktioner
 

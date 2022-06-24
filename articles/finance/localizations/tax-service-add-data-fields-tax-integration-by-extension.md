@@ -1,6 +1,6 @@
 ---
 title: Lägga till datafält i momsintegreringen genom att använda tillägg
-description: I det här avsnittet beskrivs hur du använder X++-tillägg för att lägga till datafält i momsintegreringen.
+description: I den här artikeln beskrivs hur du använder X++-tillägg för att lägga till datafält i momsintegreringen.
 author: qire
 ms.date: 04/27/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 64c68ef6804297f86b5d9dc1933b0c16a0d42aae
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 184012dcc0b68e017bb28d8d73caa9e8415bdbfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695400"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871061"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Lägga till datafält i momsintegreringen genom att använda tillägg
 
 [!include [banner](../includes/banner.md)]
 
 
-I det här avsnittet beskrivs hur du använder X++-tillägg för att lägga till datafält i momsintegreringen. De här fälten kan utökas till momsdatamodellen för momstjänsten och användas för att bestämma momskoder. Mer information finns i [Lägg till datafält i momskonfigurationer](tax-service-add-data-fields-tax-configurations.md).
+I den här artikeln beskrivs hur du använder X++-tillägg för att lägga till datafält i momsintegreringen. De här fälten kan utökas till momsdatamodellen för momstjänsten och användas för att bestämma momskoder. Mer information finns i [Lägg till datafält i momskonfigurationer](tax-service-add-data-fields-tax-configurations.md).
 
 ## <a name="data-model"></a>Datamodell
 

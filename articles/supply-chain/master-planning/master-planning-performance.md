@@ -1,7 +1,7 @@
 ---
 title: Förbättra huvudplaneringens prestanda
-description: I det här avsnittet beskrivs olika alternativ som kan hjälpa dig att förbättra prestandan vid huvudplanering och felsökning av problem.
-author: ChristianRytt
+description: I denna artikel beskrivs olika alternativ som kan hjälpa dig att förbättra prestandan vid huvudplanering och felsökning av problem.
+author: t-benebo
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: fcbc732fce4120268acd774cc4d42193ba95787d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b2c4b7e2197d312d22f9851121a9e6d4d4d03ba3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570931"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897615"
 ---
 # <a name="improve-master-planning-performance"></a>Förbättra huvudplaneringens prestanda
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs olika alternativ som kan hjälpa dig att förbättra prestandan vid huvudplanering och felsökning av problem. Den innehåller information om parametrar och inställningar samt om rekommenderade konfigurationer och åtgärder. Den innehåller också en sammanfattning av de viktiga parametrar som du bör tänka på när du har tidskrävande huvudplaneringsjobb.
+I denna artikel beskrivs olika alternativ som kan hjälpa dig att förbättra prestandan vid huvudplanering och felsökning av problem. Den innehåller information om parametrar och inställningar samt om rekommenderade konfigurationer och åtgärder. Den innehåller också en sammanfattning av de viktiga parametrar som du bör tänka på när du har tidskrävande huvudplaneringsjobb.
 
-Det här avsnittet är avsett för systemadministratörer eller IT-användare som har möjlighet att felsöka. Den är också avsedd för produktion eller leveransplanering, eftersom den innehåller information om parametrar som hör till affärsplaneringskrav. 
+Denna artikel är avsedd för systemadministratörer eller IT-användare som har möjlighet att felsöka. Den är också avsedd för produktion eller leveransplanering, eftersom den innehåller information om parametrar som hör till affärsplaneringskrav. 
 
 ## <a name="parameters-related-to-master-planning-performance"></a>Parametrar som är relaterade till huvudplaneringsresultat
 
@@ -39,7 +39,7 @@ Olika parametrar påverkar huvudplaneringens körtid och bör beaktas.
 
 Parametern **antal trådar** gör att du kan justera huvudplaneringsprocessen så att den fungerar bättre på den specifika datauppsättningen. Denna parameter anger det totala antalet trådar som ska användas för att köra huvudplaneringen. Den orsakar parallellisering av huvudplaneringskörningen som hjälper till att minska körtiden. 
 
-Du kan ställa in parametern **antal trådar** i dialogrutan **huvudplaneringskörning**. Öppna den här dialogrutan genom att gå **Huvudplanering \> Huvudplanering \> Kör \> Huvudplanering**, eller välj **Kör** i arbetsytan **Huvudplanering**. Om du vill fastställa det bästa värdet för den här parametern måste du förlita dig på en försöks- och misstagsprocess. Du kan dock använda följande formler för att beräkna ett startvärde:
+Du kan konfigurera parametern **antal trådar** i dialogrutan **huvudplaneringskörning**. Öppna den här dialogrutan genom att gå **Huvudplanering \> Huvudplanering \> Kör \> Huvudplanering**, eller välj **Kör** i arbetsytan **Huvudplanering**. Om du vill fastställa det bästa värdet för den här parametern måste du förlita dig på en försöks- och misstagsprocess. Du kan dock använda följande formler för att beräkna ett startvärde:
 
 - **Om din bransch är tillverkning:** (antal trådar) = (antal planerade order ÷ 1 000)
 - **Annars:** (antal trådar) = (antal artiklar ÷ 1 000)
@@ -75,7 +75,7 @@ Det är svårt att förutsäga vilket alternativ som är bättre eftersom varje 
 Du kan ange parametern **användning av cachelagring** i avsnittet **prestanda** på fliken **allmänt** på sidan **huvudplaneringsparametrar** (**huvudplanering \> inställning \> huvudplaneringsparametrar**). Hur effektiv cachelagringen är beror på att kundens data är mycket. Om till exempel cachelagrade data aldrig behövs behöver du bara slösa minnet om du lagrar data till slutet av tidsplaneringsprocessen. Om du i detta fall konfigurerar mindre cachelagring kan prestandan öka eftersom AOS kräver mindre minne och serverresurser frigörs för andra uppgifter.
 
 > [!TIP]
-> I allmänhet rekommenderar vi att du ställer in att parametern **Användning av cachelagring** till **maximum** eftersom parametern är avsedd som en funktion för att förbättra prestanda. Vi rekommenderar att du ställer in parametern till **minimal** om du kör på plats och har begränsat minne (ungefär 2 gigabyte\[GB\]).
+> I allmänhet rekommenderar vi att du konfigurerar att parametern **Användning av cachelagring** till **maximum** eftersom parametern är avsedd som en funktion för att förbättra prestanda. Vi rekommenderar att du konfigurerar parametern till **minimal** om du kör på plats och har begränsat minne (ungefär 2 gigabyte\[GB\]).
 
 ### <a name="number-of-orders-in-firming-bundle"></a>Antal order i bekräftelsebunten
 
@@ -86,11 +86,11 @@ Du kan ange parametern **antal eller order i bekräftelsebunt** i avsnittet **pr
 (Antal order per bunt) = (antal efter efterfrågeobjekt ÷ antalet trådar)
 
 > [!NOTE]
-> Om du anger parametern **Antal order i bekräftelsebunten** som **0** (noll) görs ingen parallellisering av den automatiska bekräftelseprocessen. Hela processen körs på en enskild batchuppgift och har en kumulativ körtid. Därför kommer körningstiden för huvudplaneringen att öka. Därför rekommenderar vi att du ställer in den här parametern på ett värde som är större än **0** (noll).
+> Om du anger parametern **Antal order i bekräftelsebunten** som **0** (noll) görs ingen parallellisering av den automatiska bekräftelseprocessen. Hela processen körs på en enskild batchuppgift och har en kumulativ körtid. Därför kommer körningstiden för huvudplaneringen att öka. Därför rekommenderar vi att du konfigurerar den här parametern på ett värde som är större än **0** (noll).
 
 ### <a name="time-fences"></a>Tidsgränser
 
-Tidsgränser anger hur långt beräkningen och andra krav måste beräknas i huvudplaneringen. Ju större tidsgränsen är, desto längre tid tar huvudplaneringen att köra. Ställ därför in tidsgränsen efter dina affärsbehov. Mer information om tidsgränser finns i [ställa in huvudplanering](master-planning-setup.md).
+Tidsgränser anger hur långt beräkningen och andra krav måste beräknas i huvudplaneringen. Ju större tidsgränsen är, desto längre tid tar huvudplaneringen att köra. Ställ därför in tidsgränsen efter dina affärsbehov. Mer information om tidsgränser finns i [konfigurera huvudplanering](master-planning-setup.md).
 
 ### <a name="actions"></a>Åtgärder
 
@@ -151,9 +151,9 @@ Innan disponeringssteget börjar, finns det ett steg före täckning under vilka
 ## <a name="performance-checklist-summary"></a>Sammanfattning av prestandachecklista
 
 - **Antal trådar** – ange ett värde som är större än **0** (noll).
-- **Antal uppgifter i hjälpens uppgiftsbunt** – ange ett värde som är större än **0** (noll). (Använd de formler som anges tidigare i det här avsnittet.)
+- **Antal uppgifter i hjälpens uppgiftsbunt** – ange ett värde som är större än **0** (noll). (Använd de formler som anges tidigare i denna artikel.)
 - **Användning av cache** –Ange **Maximum** om inte systemet har ont om ledigt minne.
-- **Antal order i hjälpens bekräftelsebunten** – ange ett värde som är större än **0** (noll). (Använd den formel som anges tidigare i det här avsnittet.)
+- **Antal order i hjälpens bekräftelsebunten** – ange ett värde som är större än **0** (noll). (Använd den formel som anges tidigare i denna artikel.)
 - **Tidsgränser** – anpassa till dina affärsbehov.
 - **Åtgärder och framleveransplaner** – inaktivera åtgärder och framtida om du inte använder dem.
 - **En tung rutin vid en tidpunkt** – kör inte huvudplanering tillsammans med någon annan tung rutin.

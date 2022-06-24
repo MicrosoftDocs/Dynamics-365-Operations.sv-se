@@ -1,6 +1,6 @@
 ---
 title: Hantera leverantörssamarbetesanvändare
-description: I det här avsnittet beskrivs hur du kan begära reservation av nya leverantörssamarbetesanvändare, samt hur du lägger till nya leverantörssamarbeteskontakter.
+description: I denna artikel beskrivs hur du kan begära etablering av nya leverantörssamarbetesanvändare, samt hur du lägger till nya leverantörssamarbeteskontakter.
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 515d995641f5bbe976643a38c26a46f7d8a115dd
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 823e92cadc36659264a70132ed1390c7bcf8bc5d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678839"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852314"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Hantera leverantörssamarbetesanvändare
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du kan begära reservation av nya leverantörssamarbetesanvändare, samt hur du lägger till nya leverantörssamarbeteskontakter. 
+I denna artikel beskrivs hur du kan begära etablering av nya leverantörssamarbetesanvändare, samt hur du lägger till nya leverantörssamarbeteskontakter. 
 
-Lleverantörssamarbetesgränssnittet i Dynamics 365 Supply Chain Management visar information om inköpsorder, fakturor och försändelselager till externa leverantörer. Du kan skapa nya lleverantörssamarbeteskontakter och begära att nya användare reserveras om du arbetar som en extern leverantör med säkerhetsrollen **Leverantörs-admin (extern)** eller liknande behörigheter. Du kan också utföra dessa uppgifter om du arbetar professionellt inom anskaffning. I det här avsnittet avser denna roll en yrkesperson inom anskaffning som arbetar inom det företag som äger Supply Chain Management-instansen. Mer information om hur du använder leverantörssamarbete om du använder en extern leverantör finns i [Leverantörssamarbete med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+Lleverantörssamarbetesgränssnittet i Dynamics 365 Supply Chain Management visar information om inköpsorder, fakturor och försändelselager till externa leverantörer. Du kan skapa nya lleverantörssamarbeteskontakter och begära att nya användare reserveras om du arbetar som en extern leverantör med säkerhetsrollen **Leverantörs-admin (extern)** eller liknande behörigheter. Du kan också utföra dessa uppgifter om du arbetar professionellt inom anskaffning. I denna artikel avser denna roll en yrkesperson inom anskaffning som arbetar inom det företag som äger Supply Chain Management-instansen. Mer information om hur du använder leverantörssamarbete om du använder en extern leverantör finns i [Leverantörssamarbete med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 Mer information om hur du använder leverantörssamarbete om du är inköpsspecialist, se [Leverantörssamarbete med externa leverantörer](vendor-collaboration-work-external-vendors.md).
 

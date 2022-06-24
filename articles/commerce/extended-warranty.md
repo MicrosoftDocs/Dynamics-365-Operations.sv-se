@@ -1,6 +1,6 @@
 ---
 title: Skapa och konfigurera utökade garantier
-description: Det här avsnittet omfattar utökade garantier och beskriver hur du skapar och konfigurerar dem i Microsoft Dynamics 365 Commerce.
+description: Denna artikel omfattar utökade garantier och beskriver hur du skapar och konfigurerar dem i Microsoft Dynamics 365 Commerce.
 author: sijoshi
 ms.date: 06/08/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 772dc1fdda7c34448ffa946237f717e657df6d83d8fda9336049e79d19ed1af0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9ed9851a9609e8a87ae0ffadc5cdd20c03fa17ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745390"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886994"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Skapa och konfigurera utökade garantier
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet omfattar utökade garantier och beskriver hur du skapar och konfigurerar dem i Microsoft Dynamics 365 Commerce.
+Denna artikel omfattar utökade garantier och beskriver hur du skapar och konfigurerar dem i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Översikt
 
@@ -79,7 +79,7 @@ Följ de här stegen om du vill skapa en garantiartikel i Commerce.
     | Tidsenhet | **Dagar**, **veckor**, **månader** eller **År** | Det här fältet innehåller den tidsenhet som används för garantin. |
     | Tidslängd | Ett positivt heltalsvärde | I det här fältet anges garantins giltighetstid för den valda tidsenheten. |
 
-    Om du till exempel vill ha en två års garanti ställer du in fältet **tidsenhet** på **År** och fältet **tidslängd** på **2**. Du kan också ställa in värdet för fältet **Tidsenhet** till **Månader** och fältet **Tidslängd** till **24**, som visas i bilden nedan.
+    Om du till exempel vill ha en två års garanti ställer du in fältet **tidsenhet** på **År** och fältet **tidslängd** på **2**. Du kan också konfigurera värdet för fältet **Tidsenhet** till **Månader** och fältet **Tidslängd** till **24**, som visas i bilden nedan.
 
     ![Produktinformationssida för en garantiartikel.](./media/ew-time-properties.png)
 
@@ -169,9 +169,9 @@ I följande illustration visas ett exempel på funktionen för att lägga till e
 
 ## <a name="process-warranty-transactions"></a>Bearbeta garantitransaktioner
 
-När garantier säljs i hämtköpstransaktioner, efter det att transaktionerna har bokförts i Commerce-administration kan Commerce-användare köra jobbet **Bearbeta garantitransaktioner** för att bearbeta garantitransaktionerna och skapa garantipolicy.
+När garantier säljs i hämtköpstransaktioner, efter det att transaktionerna har bokförts i Commerce headquarters kan Commerce-användare köra jobbet **Bearbeta garantitransaktioner** för att bearbeta garantitransaktionerna och skapa garantipolicy.
 
-Följ de här stegen för att hantera garantitransaktioner i Commerce-administration.
+Följ de här stegen för att hantera garantitransaktioner i Commerce headquarters.
 
 1. Gå till **Retail och Commerce \> Produkter och kategorier \> Garanti \> Bearbeta garantitransaktioner**.
 1. I dialogrutan **Välj organisationsnoder** i fältet **Organisationshierarki** välj ett värde.
@@ -197,7 +197,7 @@ När en utökad garanti säljs skapas automatiskt en entitet för garantipolicy.
 > [!NOTE]
 > Egenskaper för garantipolicy skapas automatiskt när entiteterna för garantipolicy skapas. De kan för närvarande inte konfigureras manuellt eller redigeras.
 
-I följande tabell beskrivs egenskaperna för garantipolicy och deras värden. I Commerce-administration heter databasregistret WARRANTYPOLICY.
+I följande tabell beskrivs egenskaperna för garantipolicy och deras värden. I Commerce headquarters heter databasregistret WARRANTYPOLICY.
 
 | Egenskapsnamn | Värde | beskrivning |
 |---------------|-------|-------------|
@@ -223,7 +223,7 @@ Se till att garantiartikeln är utvald för kanalen. Kontrollera också att gara
 
 **När jag försöker lägga till en garanti i en befintlig transaktion och ange kundens kvittonummer för order, varför ser jag inte några transaktionsradartiklar?**
 
-Kvitton kan bara hittas om ett dragjobb (P-jobb) körs för att överföra inleveranserna till Commerce-administration. För att köra P-jobb, gå till **Retail och Commerce \> Retail och Commerce IT \> Distributionsschema**, välj **P-0001** jobb och välj sedan **Kör nu**.
+Kvitton kan bara hittas om ett dragjobb (P-jobb) körs för att överföra inleveranserna till Commerce headquarters. För att köra P-jobb, gå till **Retail och Commerce \> Retail och Commerce IT \> Distributionsschema**, välj **P-0001** jobb och välj sedan **Kör nu**.
 
 **Varför gäller endast garantifunktionen för serialiserade produkter?**
 

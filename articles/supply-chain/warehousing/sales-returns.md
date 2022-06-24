@@ -1,6 +1,6 @@
 ---
 title: Försäljningsreturer
-description: Det här avsnittet innehåller information om processen för returorder. Det innehåller information om kundreturer och deras effekt på kostnadsredovisning och lagerbehållningskvantiteter.
+description: Denna artikel innehåller information om processen för returorder. Det innehåller information om kundreturer och deras effekt på kostnadsredovisning och lagerbehållningskvantiteter.
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 672f24a720f48c420916c197722eb2d9599744fa
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9e8045ec39b9caf9bf0dc2b2d331419efb54e6d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695575"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860418"
 ---
 # <a name="sales-returns"></a>Försäljningsreturer
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller information om processen för returorder. Det innehåller information om kundreturer och deras effekt på kostnadsredovisning och lagerbehållningskvantiteter.
+Denna artikel innehåller information om processen för returorder. Det innehåller information om kundreturer och deras effekt på kostnadsredovisning och lagerbehållningskvantiteter.
 
 Kunder kan returnera artiklar av olika skäl. Till exempel kan en artikel ha fel eller den uppfyller inte kundens förväntningar. Processen startar när en kund utfärdar en begäran att returnera en artikel. När en kunds begäran har tagits emot skapas en returorder.
 
@@ -84,9 +84,9 @@ När du har slutfört returrubriken kan du skapa returrader med någon av följa
 -   Skapa en returrad med hjälp av funktionen **Sök efter försäljningsorder**. Vi rekommenderar att du använder den här funktionen när du skapar en returorder. Funktionen **Söka efter försäljningsorder** upprättar en referens från returraden till den fakturerade försäljningsorderraden och hämtar radinformation som t.ex artikelnummer, kvantitet, pris, rabatt och kostnadsvärden från försäljningsraden. Referensen hjälper till att garantera att produkten när den returneras till företaget har samma styckkostnad som den såldes till. Referensen kontrollerar även att returorder inte skapas för en kvantitet som överstiger den kvantitet som har såldes på fakturan.
 
 >[!NOTE] 
->Returrader som har en referens till en försäljningsorder hanteras som korrigeringar till eller återföringar av försäljningen. Mer information finns i avsnittet ”Bokför i redovisningen" senare i det här avsnittet.
+>Returrader som har en referens till en försäljningsorder hanteras som korrigeringar till eller återföringar av försäljningen. Mer information finns i avsnittet ”Bokför i redovisningen" senare i denna artikel.
 
-### <a name="charges"></a>Debiteringar
+### <a name="charges"></a>Avgifter
 
 Avgifter kan läggas till returordern genom en eller flera av följande metoder:
 
@@ -179,7 +179,7 @@ Innan du fysiskt kan ta emot returnerade artiklar i lagret genom att bokföra en
 
 [![Införselprocess.](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
-Processen har flera varianter som inte tas upp i det här avsnittet. Här följer några exempel på sådana varianter.
+Processen har flera olika varianter som inte tas upp i denna artikel. Här följer några exempel på sådana varianter.
 
 -   Använd inte listan **Införselöversikt** om du vill skapa en införseljournal. Skapa i stället införseljournalen manuellt. Returorder kommer att ha **Försäljningsorder** som referens.
 -   Om du använder lagerstyrning genererar du lastpallstransporter. Returraden måste ha statusvärdet **Infört** under lastpallstransport.

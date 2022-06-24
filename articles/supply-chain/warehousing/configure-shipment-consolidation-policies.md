@@ -1,6 +1,6 @@
 ---
 title: Konfigurera konsolideringspolicyer för leverans
-description: I det här avsnittet beskrivs hur du ställer in standard- och anpassade konsolideringspolicyer för leveranser.
+description: I denna artikel beskrivs hur du konfigurerar standard- och anpassade konsolideringspolicyer för leveranser.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 0a575648c0e6f5d0e3b9fb03ea6f47252837bf9c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672582"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845936"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurera konsolideringspolicyer för leverans
 
@@ -26,12 +26,12 @@ ms.locfileid: "8672582"
 
 Konsolideringsprocessen för leveranser som använder konsolideringspolicyer för leveranser möjliggör automatisk leveranskonsolidering vid automatisk och manuell frisläppning till lagerstället. När du har aktiverat den här funktionen måste du konfigurera de ursprungliga policyerna. Om inga policyer konfigureras kommer varje enskild försäljningsrad att generera en separat leverans med en enda beläggninsrad.
 
-Scenarierna som presenteras i det här avsnittet beskriver hur du ställer in standard- och anpassade konsolideringspolicyer.
+Scenarierna som presenteras i denna artikel beskriver hur du konfigurerar standard- och anpassade konsolideringspolicyer.
 
 ## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Aktivera funktionen för konsolideringspolicyer för leverans
 
 > [!IMPORTANT]
-> I det [första scenariot](#scenario-1) som beskrivs i det här avsnittet måste du först ställa in ett lagerställe så att detta använder den tidigare leveranskonsolideringen. Du kommer sedan att göra policyer för leveranskonsolidering tillgängliga. På så sätt kan du uppleva hur uppgraderingsscenariot fungerar. Om du tänker använda en demodatamiljö för att gå igenom det första scenariot ska du inte aktivera funktionen innan du kör scenariot.
+> I det [första scenariot](#scenario-1) som beskrivs i denna artikel måste du först konfigurera ett lagerställe så att detta använder den tidigare leveranskonsolideringen. Du kommer sedan att göra policyer för leveranskonsolidering tillgängliga. På så sätt kan du uppleva hur uppgraderingsscenariot fungerar. Om du tänker använda en demodatamiljö för att gå igenom det första scenariot ska du inte aktivera funktionen innan du kör scenariot.
 
 Innan du kan använda funktionen *Policyer för leveanskonsolidering* måste du aktivera den i systemet. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 
@@ -40,20 +40,20 @@ Innan du kan använda funktionen *Policyer för leveanskonsolidering* måste du 
 
 ## <a name="make-demo-data-available"></a>Gör demodata tillgängliga
 
-Varje scenario i det här avsnittet innehåller referenservärden och -poster som ingår i den standarddemodata som finns för Microsoft Dynamics 365 Supply Chain Management. Om du vill använda de värden som finns här på samma sätt som i övningarna måste du arbeta i en miljö där demonstrationsdata har installerats samt ställa in den juridiska personen på **USMF** innan du börjar.
+Varje scenario i denna artikel innehåller referenservärden och -poster som ingår i den standarddemodata som finns för Microsoft Dynamics 365 Supply Chain Management. Om du vill använda de värden som finns här på samma sätt som i övningarna måste du arbeta i en miljö där demonstrationsdata har installerats samt konfigurera den juridiska personen på **USMF** innan du börjar.
 
 ## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Scenario 1: Konfigurera konsolideringspolicyer för standardleverans
 
 Det finns två situationer där du måste konfigurera det lägsta antalet standardpolicyer när du har aktiverat funktionen för *Konsolideringspolicyer för leverans*:
 
 - Du uppgraderar en miljö som redan innehåller data.
-- Du ställer in en helt ny miljö.
+- Du konfigurerar en helt ny miljö.
 
 ### <a name="upgrade-an-environment-where-warehouses-are-already-configured-for-cross-order-consolidation"></a>Uppgradera en miljö där lagerställen redan har konfigurerats för konsolidering mellan order
 
-När du startar den här proceduren bör funktionen *Konsolideringspolicyer för leverans* inaktiveras i syfte att simulera en miljö där funktionen för grundläggande konsolidering av flera order redan har använts. Du använder sedan funktionshanteringen för att aktivera funktionen så att du kan lära dig att ställa in policyer för leverans efter uppgraderingen.
+När du startar den här proceduren bör funktionen *Konsolideringspolicyer för leverans* inaktiveras i syfte att simulera en miljö där funktionen för grundläggande konsolidering av flera order redan har använts. Du använder sedan funktionshanteringen för att aktivera funktionen så att du kan lära dig att konfigurera policyer för leverans efter uppgraderingen.
 
-Följ de här stegen om du vill ställa in standardpolicyer för leveranskonsolidering i en miljö där lagerställen redan har konfigurerats för konsolidering av flera order.
+Följ de här stegen om du vill konfigurera standardpolicyer för leveranskonsolidering i en miljö där lagerställen redan har konfigurerats för konsolidering av flera order.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Lagerställen**.
 1. I listan söker du efter och öppnar önskad post för lagerställe (t.ex. lager *24* i **USMF**-demodata).
@@ -79,7 +79,7 @@ Följ de här stegen om du vill ställa in standardpolicyer för leveranskonsoli
 
 ### <a name="create-default-policies-for-a-new-environment"></a>Skapa standardpolicyer för en ny miljö
 
-Följ de här stegen om du vill ställa in standardpolicyer för leveranskonsolidering i en helt ny miljö.
+Följ de här stegen om du vill konfigurera standardpolicyer för leveranskonsolidering i en helt ny miljö.
 
 1. Använd [funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera funktionen *Policyer för leveranskonsolidering* om du inte redan har gjort det. I arbetsytan **Funktionshantering** heter funktionen *Konsolidera leverans*.
 1. Gå till **Lagerstyrnings \> Inställningar \> Släpp till lagerställe \> Policyer för leveranskonsolidering**.
@@ -93,11 +93,11 @@ Följ de här stegen om du vill ställa in standardpolicyer för leveranskonsoli
 
 ## <a name="scenario-2-configure-custom-shipment-consolidation-policies"></a>Scenario 2: Konfigurera konsolideringspolicyer för anpassad leverans
 
-I det här scenariot visas hur du ställer in anpassade konsolideringspolicyer för leverans. Anpassade policyer kan stödja komplexa företagsbehov där leveranskonsolidering är beroende av flera olika villkor. För varje enskild exempelpolicy längre fram i det här scenariot ingår en kort beskrivning av affärsärendet. Dessa exempelpolicyer bör ställas in i en sekvens som garanterar en hierarkisk utvärdering av frågorna. (Med andra ord bör de policyer som har flest villkor utvärderas med högst prioritet.)
+I det här scenariot visas hur du konfigurerar anpassade konsolideringspolicyer för leverans. Anpassade policyer kan stödja komplexa företagsbehov där leveranskonsolidering är beroende av flera olika villkor. För varje enskild exempelpolicy längre fram i det här scenariot ingår en kort beskrivning av affärsärendet. Dessa exempelpolicyer bör ställas in i en sekvens som garanterar en hierarkisk utvärdering av frågorna. (Med andra ord bör de policyer som har flest villkor utvärderas med högst prioritet.)
 
 ### <a name="turn-on-the-feature-and-prepare-master-data-for-this-scenario"></a>Aktivera funktionen och förbered huvuddatan för scenariot
 
-Innan du kan gå igenom övningarna i det här scenariot måste du aktivera funktionen och förbereda den huvuddata som krävs för filtreringen enligt beskrivningen i följande underavsnitt. (Dessa förutsättningar gäller även scenarier som anges i [Exempelscenarier i hur man använder policyer för leveranskonsolidering](#example-scenarios).)
+Innan du kan gå igenom övningarna i det här scenariot måste du aktivera funktionen och förbereda den huvuddata som krävs för filtreringen enligt beskrivningen i följande underavsnitt. (Dessa förutsättningar gäller även scenarier som anges i [Exempelscenarier i hur du använder policyer för leveranskonsolidering](#example-scenarios).)
 
 #### <a name="turn-on-the-feature-and-create-the-default-policies"></a>Aktivera funktionen och skapa standardpolicyerna
 
@@ -181,7 +181,7 @@ Följ stegen nedan om du vill skapa en leveranskonsolideringspolicy för affärs
 1. På snabbfliken **Konsolideringsfält**, i listan **Återstående fält**, markerar du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
 1. Välj knappen **Lägg till** ![Höger pil](media/forward-button.png) om du vill flytta fältet till listan **Markerade fält**.
 1. I åtgärdsfönstret väljer du **Redigera fråga**.
-1. I dialogrutan för frågeredigeraren, på fliken **Intervall**, letar du upp raden där fältet **Fält** är inställt på *Kundkonto* och ställer in fältet **Kriterium** för den raden som *USA – 001*.
+1. I dialogrutan för frågeredigeraren, på fliken **Intervall**, letar du upp raden där fältet **Fält** är inställt på *Kundkonto* och konfigurerar fältet **Kriterium** för den raden som *USA – 001*.
 1. Välj **Lägg till** för att lägga till en rad med följande inställningar i rutnätet:
 
     - **Register:** *Orderrader*
@@ -255,7 +255,7 @@ Följ stegen nedan om du vill skapa en leveranskonsolideringspolicy för affärs
 1. I listan **Återstående fält** väljer du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
 1. Välj knappen **Lägg till** ![Höger pil](media/forward-button.png) om du vill flytta fältet till listan **Markerade fält**.
 1. I åtgärdsfönstret väljer du **Redigera fråga**.
-1. I dialogrutan för frågeredigeraren, på fliken **Intervall**, letar du upp raden där fältet **Fält** är inställt på *Kundkonto* och ställer in fältet **Kriterium** för den raden som *US-001*.
+1. I dialogrutan för frågeredigeraren, på fliken **Intervall**, letar du upp raden där fältet **Fält** är inställt på *Kundkonto* och konfigurerar fältet **Kriterium** för den raden som *US-001*.
 1. Välj **OK** för att stänga dialogrutan.
 
 > [!NOTE]
@@ -319,7 +319,7 @@ Vanligtvis kan detta affärsärendet åtgärdas med hjälp av de standardprincip
 1. På snabbfliken **Konsolideringsfält**, i fältet **Återstående fält**, markerar du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
 1. Välj knappen **Lägg till** ![Höger pil](media/forward-button.png) om du vill flytta fältet till listan **Markerade fält**.
 1. I åtgärdsfönstret väljer du **Redigera fråga**.
-1. I dialogrutan för frågeredigeraren, på fliken **Intervall**, letar du upp raden där fältet **Fält** är inställt på *Lagerställe* och ställer in fältet **Kriterium** för den raden som *61, 63*.
+1. I dialogrutan för frågeredigeraren, på fliken **Intervall**, letar du upp raden där fältet **Fält** är inställt på *Lagerställe* och konfigurerar fältet **Kriterium** för den raden som *61, 63*.
 1. Välj **OK** för att stänga dialogrutan.
 
 ### <a name="set-the-order"></a>Ställ in order
@@ -339,7 +339,7 @@ Nu när du har skapat alla dina policyer måste du ange den ordningsföljd som d
 
 ## <a name="example-scenarios-of-how-to-use-shipment-consolidation-policies"></a><a name="example-scenarios"></a> Exempelscenarier på hur du använder policyer för leveranskonsolidering
 
-I följande scenarier visas hur du kan använda de konsolideringspolicyer för leverans som du skapade när du läste det här ämnet. Varje scenario leder dig igenom en leveranskonsolideringsprocess som använder konsolideringspolicyer för leveranser vid automatisk och manuell frisläppning till lagerstället:
+I följande scenarier visas hur du kan använda de konsolideringspolicyer för leverans som du skapade när du läste denna artikel. Varje scenario leder dig igenom en leveranskonsolideringsprocess som använder konsolideringspolicyer för leveranser vid automatisk och manuell frisläppning till lagerstället:
 
 - Scenario 1 – [Konsolidera leveranser när dessa släpps till lagerstället med hjälp av automatisk frisläppning av försäljningsorder](../warehousing/consolidate-shipments-automatic.md)
 - Scenario 2 – [Konsolidera leveranser när policyn för leveranskonsolidering åsidosätts från sidan Frisläpp till lagerställe](../warehousing/consolidate-shipments-release-to-warehouse-override.md)

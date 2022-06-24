@@ -1,6 +1,6 @@
 ---
 title: Frånvaroregistrering i Tid och närvaro
-description: Det här avsnittet beskriver hur du hanterar frånvaroregistreringar i Tid och närvaro.
+description: Denna artikel beskriver hur du hanterar frånvaroregistreringar i Tid och närvaro.
 author: johanhoffmann
 ms.date: 05/26/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06adca12c172dffa241fe44a6b64bb30863bcb4a8f3867429ad10bc852efd7c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a613edbe42d1bfb1d2ee43ee1cb2f1e0ab49a05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730236"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890782"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>Frånvaroregistrering i Tid och närvaro
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver begreppen för frånvaro och hur du hanterar frånvaro i Tid och närvaro.
+Denna artikel beskriver begreppen för frånvaro och hur du hanterar frånvaro i Tid och närvaro.
 
 ## <a name="absence-that-is-based-on-regular-work-hours"></a>Frånvaro som baseras på vanliga arbetstider
 
@@ -55,7 +55,7 @@ Frånvarokoder grupperas i frånvarogrupper. Du kan använda frånvarogrupper f�
 
 ## <a name="planned-absence"></a>Planerad frånvaro
 
-Om du vet att arbetaren kommer att vara frånvarande under en period, till exempel en kommande semester, kan du använda planerad frånvaro. Du kan ställa in planerad frånvarokod genom att konfigurera frånvarokoden så att den anser att den tar hänsyn tilll den planerade frånvaron. När du ställer in en planerad frånvaro blir du inte tillfrågad om en frånvarokod under frånvaroperioden när användarens tidsregistreringar beräknas. Planerad frånvaro kan definieras för en enskild arbetare eller så kan du definiera ett batchjobb för att massuppdatera planerad frånvaro för arbetare.
+Om du vet att arbetaren kommer att vara frånvarande under en period, till exempel en kommande semester, kan du använda planerad frånvaro. Du kan konfigurera planerad frånvarokod genom att konfigurera frånvarokoden så att den anser att den tar hänsyn tilll den planerade frånvaron. När du konfigurerar en planerad frånvaro blir du inte tillfrågad om en frånvarokod under frånvaroperioden när användarens tidsregistreringar beräknas. Planerad frånvaro kan definieras för en enskild arbetare eller så kan du definiera ett batchjobb för att massuppdatera planerad frånvaro för arbetare.
 
 ### <a name="set-up-planned-absence"></a>Ställ in planerad frånvaro
 
@@ -64,7 +64,7 @@ Om du vet att arbetaren kommer att vara frånvarande under en period, till exemp
 
 ## <a name="interrupted-planned-absence"></a>Avbruten planerad frånvaro
 
-Om du använder alternativet **avbryta** när du ställer in en planerad frånvaro, kommer den planerade frånvaron att avbrytas om arbetaren loggar in under den planerade frånvaroperioden. Den planerade frånvaron markeras som **avbruten** och har någon inverkan på framtida beräkningar.
+Om du använder alternativet **avbryta** när du konfigurerar en planerad frånvaro, kommer den planerade frånvaron att avbrytas om arbetaren loggar in under den planerade frånvaroperioden. Den planerade frånvaron markeras som **avbruten** och har någon inverkan på framtida beräkningar.
 
 ### <a name="set-up-a-planned-absence-for-interruption"></a>Skapa en planerad frånvaro för avbrott
 

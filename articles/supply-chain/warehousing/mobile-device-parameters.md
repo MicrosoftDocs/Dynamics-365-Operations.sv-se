@@ -1,6 +1,6 @@
 ---
-title: Parametrar för globala enheter
-description: I det här avsnittet beskrivs hur du ställer in inställningar för mobila enheter på sidan Parametrar för lagerstyrning.
+title: Globala parametrar för mobilenheter
+description: I denna artikel beskrivs hur du konfigurerar inställningar för mobila enheter på sidan Parametrar för Warehouse management.
 author: Mirzaab
 ms.date: 08/13/2021
 ms.topic: article
@@ -11,28 +11,28 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ae04c86ff1eafb649fcef7c34ace66bdc3e5cb8
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6e03414edd9243fcc4156195928455b30a7cee9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679177"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847771"
 ---
-# <a name="global-mobile-device-parameters"></a>Parametrar för globala enheter
+# <a name="global-mobile-device-parameters"></a>Globala parametrar för mobilenheter
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in parametrar för global hantering av lagerställen som påverkar hur systemet samverkar med mobila enheter.
+I denna artikel beskrivs hur du konfigurerar parametrar för global hantering av lagerställen som påverkar hur systemet samverkar med mobila enheter.
 
-Mer information om hur du ställer in lagerarbetare finns i [Hantera lagerarbetare](manage-warehouse-workers.md). Detaljerad information om det mottagna ID-numret och hantering på mobila enheter finns i [Inleverans av ID-nummer som erhålls via mobilappen för Warehouse Management](warehousing-mobile-device-app-license-plate-receiving.md). För mer information om processen för rullande inventering se [Rullande inventering](cycle-counting.md) och [Exempelscenarier för rullande inventering](cycle-counting-scenarios.md).
+Mer information om hur du konfigurerar lagerarbetare finns i [Hantera lagerarbetare](manage-warehouse-workers.md). Detaljerad information om det mottagna ID-numret och hantering på mobila enheter finns i [Inleverans av ID-nummer som erhålls via mobilappen för Warehouse Management](warehousing-mobile-device-app-license-plate-receiving.md). För mer information om processen för rullande inventering se [Rullande inventering](cycle-counting.md) och [Exempelscenarier för rullande inventering](cycle-counting-scenarios.md).
 
 ## <a name="open-the-warehouse-management-parameters-page"></a>Öppna sidan Parametrar för lagerstyrning
 
-För att öppna sida **Parametrar för lagerhantering**, gå till **Lagerhantering \> Inställningar \> Parametrar för lagerstyrning**. Du kan sedan ställa in fälten som är relaterade till mobilt arbete, på det sätt som beskrivs i nästa avsnitt i det här avsnittet.
+För att öppna sida **Parametrar för lagerhantering**, gå till **Lagerhantering \> Inställningar \> Parametrar för lagerstyrning**. Du kan sedan konfigurera fälten som är relaterade till mobilt arbete, på det sätt som beskrivs i nästa avsnitt i denna artikel.
 
 ## <a name="mobile-device-fasttab-on-the-general-tab"></a>Snabbflik på den mobila enheten på fliken Allmänt
 
-Inställningarna för den globala enheten finns på snabbfliken **Mobil enhet** på fliken **Allmänt** på sidan **Lagerstyrningsparametrar**.  Följande fält är tillgängliga.
+Inställningarna för den globala enheten finns på snabbfliken **Mobil enhet** på fliken **Allmänt** på sidan **Lagerstyrningsparametrar**. Följande fält är tillgängliga.
 
 | Fält | beskrivning |
 |---|---|

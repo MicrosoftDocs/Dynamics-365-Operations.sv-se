@@ -1,6 +1,6 @@
 ---
-title: Installera och ansluta lagerställeappen
-description: I det här avsnittet beskrivs hur du installerar lagerställeappen på alla dina mobila enheter och konfigurerar den för anslutning till din Microsoft Dynamics 365 Supply Chain Management-miljö. Du kan konfigurera varje enhet manuellt eller också kan du importera anslutningsinställningar via en fil eller genom att skanna en QR-kod.
+title: Installera och ansluta distributionslagerappen
+description: I denna artikel beskrivs hur du installerar lagerställeappen på alla dina mobila enheter och konfigurerar den för anslutning till din Microsoft Dynamics 365 Supply Chain Management-miljö. Du kan konfigurera varje enhet manuellt eller också kan du importera anslutningsinställningar via en fil eller genom att skanna en QR-kod.
 author: Mirzaab
 ms.date: 05/25/2020
 ms.topic: article
@@ -16,26 +16,26 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9f123f217aabcc7500832fafb15199043048b5e5
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 8ed770e45aa7f9909b98a92b493dd2931c6a3981
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902281"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885766"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Installera och ansluta distributionslagerappen
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> I det här avsnittet beskrivs hur du konfigurerar den gamla distributionslagerappen (som nu avskrivs). Om du letar efter information om hur du konfigurerar den nya mobilappen Hantering av distributionslager, se [Installera och anslut mobilappen Hantering av distributionslager](install-configure-warehouse-management-app.md).
+> I denna artikel beskrivs hur du konfigurerar den gamla distributionslagerappen (som nu är inaktuell). Om du letar efter information om hur du konfigurerar den nya mobilappen Hantering av distributionslager, se [Installera och anslut mobilappen Hantering av distributionslager](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
-> Det här ämnet beskriver hur man konfigurerar distributionslagerappen för molndistribution. Om du letar efter information om hur du konfigurerar distributionslagerappen för lokal distribution, se [Lagerstyrning för lokal distribution](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> Denna artikel beskriver hur du konfigurerar distributionslagerappen för molndistribution. Om du letar efter information om hur du konfigurerar distributionslagerappen för lokal distribution, se [Lagerstyrning för lokal distribution](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 Lagerställeappen kan hämtas från Google Play och i Microsoft Store. Den utgör en fristående komponent. Därför måste du hämta den på varje enskild enhet och sedan konfigurera den för anslutning till din Microsoft Dynamics 365 Supply Chain Management-miljö.
 
-I det här avsnittet beskrivs hur du installerar lagerställeappen på alla dina mobila enheter och konfigurerar den för anslutning till din Supply Chain Management-miljö. Du kan konfigurera varje enhet manuellt eller också kan du importera anslutningsinställningar via en fil eller genom att skanna en QR-kod.
+I denna artikel beskrivs hur du installerar lagerställeappen på alla dina mobila enheter och konfigurerar den för anslutning till din Supply Chain Management-miljö. Du kan konfigurera varje enhet manuellt eller också kan du importera anslutningsinställningar via en fil eller genom att skanna en QR-kod.
 
 ## <a name="system-requirements"></a>Systemkrav
 
@@ -76,21 +76,21 @@ Om du vill att lagerställeappen ska interagera med en viss Supply Chain Managem
 
     ![Guiden Registrera ett program.](media/app-connect-azure-register-wizard.png "Guiden Registrera ett program")
 
-1. Din nya programregistrering öppnas. Anteckna värdet för **Program-ID (klient)** eftersom du kommer att behöva detta senare. Detta ID benämns *klient-ID* längre fram i detta avsnitt.
+1. Din nya programregistrering öppnas. Anteckna värdet för **Program-ID (klient)** eftersom du kommer att behöva detta senare. Detta ID benämns *klient-ID* längre fram i denna artikel.
 
     ![Program-ID (klient).](media/app-connect-azure-app-id.png "Program-ID (klient)")
 
-1. I listan **Hantera** väljer du **Certifikat och hemligheter**. Välj sedan någon av följande knappar, beroende på hur du vill konfigurera appen för autentisering. (Mer information finns under [Autentisera med hjälp av ett certifikat eller en klienthemlighet](#authenticate) senare i det här avsnittet.)
+1. I listan **Hantera** väljer du **Certifikat och hemligheter**. Välj sedan någon av följande knappar, beroende på hur du vill konfigurera appen för autentisering. (Mer information finns under [Autentisera med hjälp av ett certifikat eller en klienthemlighet](#authenticate) senare i den här artikeln.)
 
     - **Ladda upp certifikat** – Ladda upp ett certifikat som ska användas som hemlighet. Vi rekommenderar detta tillvägagångssätt eftersom det är säkrare och även kan automatiseras helt. Om du kör lagerställeappen på Windows-enheter ska du anteckna det värde för **tumavtryck** som visas när du har laddat upp certifikatet. Du kommer att behöva detta värde när du konfigurerar certifikatet på Windows-enheter.
     - **Ny klienthemlighet** – Skapa en nyckel genom att ange en nyckelbeskrivning och en varaktighet i avsnittet **Lösenord**, och välj sedan **Lägg till**. Skapa en kopia av nyckeln och spara den på ett säkert sätt.
 
     ![Certifikat & hemligheter.](media/app-connect-azure-authentication.png "Certifikat & hemligheter")
 
-Mer information om hur du ställer in webbtjänstprogram i Azure AD finns i följande resurser:
+Mer information om hur du konfigurerar webbtjänstprogram i Azure AD finns i följande resurser:
 
 - Instruktioner som visar hur du använder Windows PowerShell för att skapa webbtjänstprogram i Azure AD finns i [Så här använder du Azure PowerShell för att skapa ett tjänstekonto med ett certifikat](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
-- Mer information om hur du manuellt skapar ett webbtjänstprogram i Azure AD finns i följande avsnitt:
+- Mer information om hur du manuellt skapar ett webbtjänstprogram i Azure AD finns i följande artiklar:
 
     - [Snabbstart: Registrera ett program med Microsofts identitetsplattform](/azure/active-directory/develop/quickstart-register-app)
     - [Så här använder du portalen för att skapa ett Azure AD-program och ett tjänstekonto som har åtkomst till resurser](/azure/active-directory/develop/howto-create-service-principal-portal)
@@ -117,7 +117,7 @@ Gör så här om du vill låta Supply Chain Management använda ditt Azure AD-pr
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Autentisera med hjälp av ett certifikat eller en klienthemlighet
 
-Autentisering med Azure AD är ett säkert sätt att ansluta en mobil enhet till Supply Chain Management. Du kan autentisera med hjälp av antingen en klienthemlighet eller ett certifikat. Om du vill importera anslutningsinställningar rekommenderar vi att du använder ett certifikat istället för en klienthemlighet. Eftersom klienthemligheten alltid måste lagras på ett säkert sätt kan du inte importera den från en anslutningsinställningsfil eller en QR-kod, enligt beskrivningen längre fram i det här avsnittet.
+Autentisering med Azure AD är ett säkert sätt att ansluta en mobil enhet till Supply Chain Management. Du kan autentisera med hjälp av antingen en klienthemlighet eller ett certifikat. Om du vill importera anslutningsinställningar rekommenderar vi att du använder ett certifikat istället för en klienthemlighet. Eftersom klienthemligheten alltid måste lagras på ett säkert sätt kan du inte importera den från en anslutningsinställningsfil eller en QR-kod, enligt beskrivningen längre fram i den här artikeln.
 
 Certifikat kan användas som hemligheter för att bevisa programmets identitet när en token begärs. Den offentliga delen av certifikatet överförs till app-registreringen i Azure-portalen, medan det fullständiga certifikatet måste distribueras på varje enskild enhet där lagerställeappen installeras. Organisationen ansvarar för att hantera certifikatet i fråga om rotation osv.. Du kan använda självsignerade certifikat, men du bör alltid använda icke-exporterbara certifikat.
 

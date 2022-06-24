@@ -1,6 +1,6 @@
 ---
 title: Fiktiva artiklar
-description: Det här avsnittet beskriver hur radtypen Fiktiv kan användas för rader i en strukturlista (BOM) och en formel i Dynamics 365 Supply Chain Management.
+description: Denna artikel beskriver hur radtypen Fiktiv kan användas för rader i en strukturlista (BOM) och en formel i Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 05/05/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-05-05
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5c9768381d35709611e4bec3d2b7793a4d896b34
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 64139873216decd8ecb2fcaf1f284e726c53c332
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713259"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893335"
 ---
 # <a name="phantom-items"></a>Fiktiva artiklar
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskrivs i detalj, hur radtypen fiktiv kan användas för rader i en strukturlista (BOM) och en formel.
+I denna artikel beskrivs i detalj hur radtypen Fiktiv kan användas för rader i en strukturlista (BOM) och en formel.
 
 I bild 1 är (a) strukturlistan för produkt H och delar F och G och (b) är flödesbladet för produkter H och del F.
 
@@ -46,9 +46,9 @@ Bild 2 visar hur föregående teknikstrukturlista övergår till en tillverkning
 
 I den här strukturen kan du se att det inte finns några delar F och G och de material som dessa delar består av har upphöjts till nästa strukturlistenivå.
 
-Till skillnad från teknikstrukturlistan som hade två operationsblad har tillverkningsstrukturlistan endast ett operationsblad. Förpackningsoperationen som var kopplad till del G har också utökats och ingår nu i operationsbladet för produkt H. Sammansättningen av den elektriska enheten är den första operationen. Denna order passar bra, eftersom enheten används i nästa operation som är maskinsammansättningen. Den sista operationen är förpackningsoperationen som förbrukar två förpackningsmaterial (C och D).
+Till skillnad från teknikstrukturlistan som hade två åtgärdsblad har tillverkningsstrukturlistan endast ett åtgärdsblad. Förpackningsåtgärden som var kopplad till del G har också utökats och ingår nu i åtgärdsbladet för produkt H. Sammansättningen av den elektriska enheten är den första åtgärden. Denna order passar bra, eftersom enheten används i nästa åtgärd som är maskinsammansättningen. Den sista åtgärden är förpackningsåtgärden som förbrukar två förpackningsmaterial (C och D).
 
-Övergången mellan teknikstrukturlistan och tillverkningsstrukturlistan har aktiverats via radtypen Fiktiv strukturlista. Såsom begreppet ”fiktiv” anger, har delar F och G försvunnit under övergångsperioden mellan de två typerna av strukturlista. I det här exemplet används radtypen Fiktiv till strukturlisteraderna för delar F och G i teknikstrukturlistan. När en produktions- eller batchorder skapas kopieras teknikstrukturlista till produktions- eller batchordern. Sedan när ordern beräknas, sker övergången från teknikstrukturlistan till tillverkningsstrukturlistan enligt bild 2. Från operationsbladet i bild 2 inmatas förpackningsmaterialen C och D för operationen.
+Övergången mellan teknikstrukturlistan och tillverkningsstrukturlistan har aktiverats via radtypen Fiktiv strukturlista. Såsom begreppet ”fiktiv” anger, har delar F och G försvunnit under övergångsperioden mellan de två typerna av strukturlista. I det här exemplet används radtypen Fiktiv till strukturlisteraderna för delar F och G i teknikstrukturlistan. När en produktions- eller batchorder skapas kopieras teknikstrukturlista till produktions- eller batchordern. Sedan när ordern beräknas, sker övergången från teknikstrukturlistan till tillverkningsstrukturlistan enligt bild 2. Från åtgärdsbladet i bild 2 inmatas förpackningsmaterialen C och D för åtgärden.
 
 ## <a name="multilevel-phantom-bom-structures"></a>Fiktiva artikelstrukturlistor på flera nivåer
 

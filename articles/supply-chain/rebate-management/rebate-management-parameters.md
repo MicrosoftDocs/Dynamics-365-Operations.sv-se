@@ -1,6 +1,6 @@
 ---
-title: Parametrar för rabatthantering
-description: Det här ämnet beskriver sidan Parametrar för rabatthantering. På den här sidan finns inställningar som påverkar bokföring, statusuppdateringar, nummerserier och andra beteende.
+title: Rabatthanteringsparametrar
+description: Denna artikel beskriver sidan Parametrar för rabatthantering. På den här sidan finns inställningar som påverkar bokföring, statusuppdateringar, nummerserier och andra beteende.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8f5c9734b2480329eed246bcbbfe3bd6e9991e0b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 218c54d97f3ac204e8613f5efdda0cc9d713ee04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689003"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895537"
 ---
 # <a name="rebate-management-parameters"></a>Parametrar för rabatthantering
 
@@ -40,14 +40,14 @@ I följande tabell beskrivs fälten som är tillgängliga på fliken **Rabatthan
 | Bokför journaler automatiskt | Välj om föreslagna journaler ska bokföras automatiskt i systemet. Dessa journaler omfattar dagliga journaler som används för avräkningar och kundavdrag, samt journaler för leverantörsskattefakturor. |
 | Bokföra fritextfakturor automatiskt | Välj om föreslagna journaler ska bokföras automatiskt i fritextfakturor. Detta alternativ gäller endast fritextfakturor där betalningstypen är inställd på *Momsfaktura och kundavdrag*. |
 | Referens för rabattartikelorder | Välj den rabattreferens som ska användas på försäljnings- och inköpsorder som genereras från rabattprocessen (*Ingen*, *Rabatthanteringsavtal*, *Rabatthanteringsnummer*, *Rabatt transaktionsnummer* eller *Dokumentnoteringar*). |
-| Använd anspråksprocess | <p>Ställ in det här alternativet till *Ja* om du vill använda en anspråksprocess. På det här sättet kan du markera transaktioner som Rabatthantering skapar som antingen begärde eller oanade, och sedan bokföra enbart de begärde transaktionerna.</p><p>Du kan till exempel beräkna rabatter för en månads transaktioner, men kunden har lämnat två dagar oläst. I så fall skapas de olästa transaktionerna på samma gång som du kör funktionen *Process* för nästa period.</p><p>Om du ställer in detta alternativ till *Nej*, bokförs alla anspråkstransaktioner.</p> |
+| Använd anspråksprocess | <p>Ställ in det här alternativet till *Ja* om du vill använda en anspråksprocess. På det här sättet kan du markera transaktioner som Rabatthantering skapar som antingen begärde eller oanade, och sedan bokföra enbart de begärde transaktionerna.</p><p>Du kan till exempel beräkna rabatter för en månads transaktioner, men kunden har lämnat två dagar oläst. I så fall skapas de olästa transaktionerna på samma gång som du kör funktionen *Process* för nästa period.</p><p>Om du konfigurerar detta alternativ till *Nej*, bokförs alla anspråkstransaktioner.</p> |
 | Inkludera ordertypsjournal | För erbjudanden eller erbjudanderader där transaktionstypen är inställd på *Order* styr det här alternativet om en försäljningsorder av typen *Journal* ska inkluderas. Det är flexibelt om dessa ordertyper används i scenarier där en rabatt ännu inte ska gälla. |
 
 ## <a name="number-sequences-tab"></a>Fliken Nummerserie
 
-Använd fliken **Nummerserier** på sidan **Rabatthanteringsparametrar** om du vill tilldela nummerseriekoder till olika nummerserier som Rabatthantering använder. I tabellen nedan beskrivs syftet med var och en av dessa nummerserier. Mer information om nummerserier finns i [översikten över nummerserier](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) samt relaterade ämnen.
+Använd fliken **Nummerserier** på sidan **Rabatthanteringsparametrar** om du vill tilldela nummerseriekoder till olika nummerserier som Rabatthantering använder. I tabellen nedan beskrivs syftet med var och en av dessa nummerserier. Mer information om nummerserier finns i [översikten över nummerserier](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) samt relaterade artiklar.
 
-| Referens | beskrivning |
+| Referens | Beskrivning |
 |---|---|
 | Rabatthanteringsavtal | Nummerserien tilldelar ett unikt nyckelvärde till varje rabattavtal. Den här nyckeln används när erbjudanden skapas. |
 | Rabatthanteringsnummer | Nummerserien tilldelar ett unikt nyckelvärde till varje rabatt. Den här nyckeln används för att identifiera rabattrelationer. |

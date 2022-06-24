@@ -1,6 +1,6 @@
 ---
 title: Konfigurera produktfilter för distributionslagertransaktioner
-description: Det här avsnittet beskriver hur man konfigurerar produktfilter och filterkoder för att kategorisera lagerartiklar i ett lagerställe. Du kan också använda filter för att ange vilka kunder kan beställa en viss artikel och ange de artiklar som kan köpas från en viss leverantör.
+description: Denna artikel beskriver hur man konfigurerar produktfilter och filterkoder för att kategorisera lagerartiklar i ett lagerställe. Du kan också använda filter för att ange vilka kunder kan beställa en viss artikel och ange de artiklar som kan köpas från en viss leverantör.
 author: Mirzaab
 ms.date: 01/04/2021
 ms.topic: article
@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 021ce940a4ea6d59719d1c6bc79532832cc2f3ff
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f3d6cd373699d374c019f0db7befaffc169f4f6c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567689"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850450"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurera produktfilter för distributionslagertransaktioner
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur man konfigurerar produktfilter och filterkoder för att kategorisera lagerartiklar i ett lagerställe. Du kan också använda filter för att ange vilka kunder kan beställa en viss artikel och ange de artiklar som kan köpas från en viss leverantör.
+Denna artikel beskriver hur man konfigurerar produktfilter och filterkoder för att kategorisera lagerartiklar i ett lagerställe. Du kan också använda filter för att ange vilka kunder kan beställa en viss artikel och ange de artiklar som kan köpas från en viss leverantör.
 
-Du kan även ställa in och använda produktfilter för att automatiskt ordna lagerartiklar i ett lagerställe och kombinera filtrerade artiklar i filtergrupper. Filter kan användas för att lägga in artiklar i kategorier för hantering, inköp och försäljning av processer. Du kanske vill gruppera artiklar tillsammans eller separera dem från varandra när sättet att hantera dem baseras på vikt- eller hanteringsbegränsningar. Du kan också ange vilka kunder eller leverantörer en artikel kan köpas från eller säljas till.
+Du kan även konfigurera och använda produktfilter för att automatiskt ordna lagerartiklar i ett lagerställe och kombinera filtrerade artiklar i filtergrupper. Filter kan användas för att lägga in artiklar i kategorier för hantering, inköp och försäljning av processer. Du kanske vill gruppera artiklar tillsammans eller separera dem från varandra när sättet att hantera dem baseras på vikt- eller hanteringsbegränsningar. Du kan också ange vilka kunder eller leverantörer en artikel kan köpas från eller säljas till.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -48,7 +48,7 @@ Produktfilter ger upp till 10 egenskaper **Filterrubrik** som är uppräkningsv�
 
     ![Ställa in ett produktfilter.](media/Product_Filters10.png "Ställa in ett produktfilter")
 
-1. I fältet **Beskrivning**, ange ett namn för koden. Till exempel kan *Kod 2* representera leverantörer. Du kan sedan skapa ett produktfilter för en viss leverantör eller grupp av leverantörer. Mer information finns i avsnittet [Ställ in leverantörsfilterkoder](#vendor-product-filters) senare i det här avsnittet.
+1. I fältet **Beskrivning**, ange ett namn för koden. Till exempel kan *Kod 2* representera leverantörer. Du kan sedan skapa ett produktfilter för en viss leverantör eller grupp av leverantörer. Mer information finns i avsnittet [Ställ in leverantörsfilterkoder](#vendor-product-filters) senare i denna artikel.
 
     ![Uppsättning produktfilter.](media/Product_Filters.png "Ställ in produktfilter")
 
@@ -76,9 +76,9 @@ Så här ställer du in filtergrupper.
 
 ## <a name="set-up-filter-codes-on-item-groups"></a>Ställ in filterkoder i artikelgrupper
 
-Genom att ställa in filterkoder för en artikelgrupp kan du skapa de koder som krävs för produkter som är kopplade till den artikelgruppen.
+Genom att konfigurera filterkoder för en artikelgrupp kan du skapa de koder som krävs för produkter som är kopplade till den artikelgruppen.
 
-Gör på följande sätt när du vill ställa in filterkoder i artikelgrupper.
+Gör på följande sätt när du vill konfigurera filterkoder i artikelgrupper.
 
 1. Gå till **Lagerhantering \> Inställningar \> Lager \> Artikelgrupper**.
 1. I åtgärdsfönstret, välj **Ny** för att skapa en artikelgrupp.
@@ -118,7 +118,7 @@ Du kan göra specifika lagerartiklar endast tillgängliga för kunder eller leve
 > [!NOTE]
 > Kundfilter och leverantörsfilter gäller inte för artiklar som ställs in som allmänt tillgängliga.
 
-Gör på följande sätt när du vill ställa in allmänt tillgängliga artiklar.
+Gör på följande sätt när du vill konfigurera allmänt tillgängliga artiklar.
 
 1. Gå till **Hantering av distributionslager \> Inställningar \> Produktfilter \> Allmänt tillgängliga produkter**.
 1. I åtgärdsfönstret, välj **Ny** för att skapa en post.
@@ -131,9 +131,9 @@ Gör på följande sätt när du vill ställa in allmänt tillgängliga artiklar
 
 ## <a name="set-up-customer-product-filters"></a>Ställ in kundproduktfilter
 
-Du kan använda denna valfria procedur för att visa hur du anger artiklar som ska vara tillgängliga för en kund utöver de artiklar som har gjorts tillgängliga via filterinställningar på sidan **Allmänt tillgängliga artiklar**. Du kan ställa in filter för en enda kund.
+Du kan använda denna valfria procedur för att visa hur du anger artiklar som ska vara tillgängliga för en kund utöver de artiklar som har gjorts tillgängliga via filterinställningar på sidan **Allmänt tillgängliga artiklar**. Du kan konfigurera filter för en enda kund.
 
-Gör på följande sätt när du vill ställa in kundfilterkoder.
+Gör på följande sätt när du vill konfigurera kundfilterkoder.
 
 1. Gå till **Försäljning och marknadsföring \> Kunder \> Alla kunder**.
 1. Välj en kund.
@@ -145,9 +145,9 @@ Gör på följande sätt när du vill ställa in kundfilterkoder.
 
 ## <a name="set-up-vendor-product-filters"></a><a name="vendor-product-filters"></a>Ställ in leverantörproduktfilter
 
-Du kan använda denna valfria procedur för att visa hur du anger artiklar som ska vara tillgängliga för en leverantör utöver de artiklar som har gjorts tillgängliga via filterinställningar på sidan **Allmänt tillgängliga artiklar**. Du kan ställa in filter för en enda säljare.
+Du kan använda denna valfria procedur för att visa hur du anger artiklar som ska vara tillgängliga för en leverantör utöver de artiklar som har gjorts tillgängliga via filterinställningar på sidan **Allmänt tillgängliga artiklar**. Du kan konfigurera filter för en enda säljare.
 
-Gör på följande sätt när du vill ställa in leverantörsfilterkoder.
+Gör på följande sätt när du vill konfigurera leverantörsfilterkoder.
 
 1. Gå till **Anskaffning och källa \> Leverantörer \> Alla leverantörer**.
 1. Välj en leverantör.

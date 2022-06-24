@@ -1,6 +1,6 @@
 ---
 title: Direktleverans från produktionsorder till utlastningsplatser
-description: Det här avsnittet beskriver hur du hanterar processen för direktutleveransmaterial som rapporteras som färdiga från en produktionsrad till en plats med utgående transporter.
+description: Denna artikel beskriver hur du hanterar processen för direktutleveransmaterial som rapporteras som färdiga från en produktionsrad till en plats med utgående transporter.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee91fa28943a27474bff5fb7a7fc368142dabcdd6c9c9772d38134af0257ef6e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ea3ae6cb83d6577ba76d7e2aff9a05973b314cfe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715756"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849341"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Direktleverans från produktionsorder till utlastningsplatser
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du hanterar processen för direktutleveransmaterial som rapporteras som färdiga från en produktionsrad till en plats med utgående transporter.
+Denna artikel beskriver hur du hanterar processen för direktutleveransmaterial som rapporteras som färdiga från en produktionsrad till en plats med utgående transporter.
 
 ## <a name="introduction"></a>Introduktion
 
@@ -86,7 +86,7 @@ Direktutleveranspolicyn anger också policyn för prioritering av överföringso
 
 ### <a name="cross-docking-demand-requires-location"></a>Direktleverans kräver plats
 
-I direktutleveranspolicyn som du kan ställa in villkor för kräver att överföringsorder har en tilldelad plats för att berättiga för direktutleverans. Detta kriterium anges i fältet **Direktleverans kräver plats**. Platsen på mötesschemat som hör till lasten kopplas till den slutgiltiga platsen för varor som direktutlevereras. Den slutgiltiga platsen för varor som direktutlevereras bestäms av platsdirektivet för **Överför leverans** för arbetsordertypen **Placera**. Det kan vara lämpligt att ange fältet **Direktleverans kräver plats** i ett scenario där färdiga varor endast ska direktutlevereras om ett släpfordon har tilldelats en vikdörr. I så fall flyttas varorna direkt från produktionsraden till släpfordonet. När ett släpfordon tilldelas vikdörren, tilldelar en användare platsen för mötesschemat och gör därför platsen tillgänglig för direktutleveransen I följande avsnitt förklaras två exempel.
+I direktutleveranspolicyn som du kan konfigurera villkor för kräver att överföringsorder har en tilldelad plats för att berättiga för direktutleverans. Detta kriterium anges i fältet **Direktleverans kräver plats**. Platsen på mötesschemat som hör till lasten kopplas till den slutgiltiga platsen för varor som direktutlevereras. Den slutgiltiga platsen för varor som direktutlevereras bestäms av platsdirektivet för **Överför leverans** för arbetsordertypen **Placera**. Det kan vara lämpligt att ange fältet **Direktleverans kräver plats** i ett scenario där färdiga varor endast ska direktutlevereras om ett släpfordon har tilldelats en vikdörr. I så fall flyttas varorna direkt från produktionsraden till släpfordonet. När ett släpfordon tilldelas vikdörren, tilldelar en användare platsen för mötesschemat och gör därför platsen tillgänglig för direktutleveransen I följande avsnitt förklaras två exempel.
 
 #### <a name="scenario-1--cross-docking-from-production-to-transfer-orders"></a>Scenario 1 - Direktleverans från produktion till överföringsorder
 

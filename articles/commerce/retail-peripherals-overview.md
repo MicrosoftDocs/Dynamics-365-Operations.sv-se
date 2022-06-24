@@ -1,6 +1,6 @@
 ---
 title: Kringutrustning
-description: Det här avsnittet förklarar koncepten som är relaterade till kringutrustning i handel.
+description: Denna artikel förklarar koncepten som är relaterade till kringutrustning i Commerce.
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 76ce17777a2d13b46e5faed96dbde5e0d93782eb
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 641b45390477c8c5e6239709f7c91887a403fbaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462251"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880091"
 ---
 # <a name="peripherals"></a>Kringutrustning
 
 [!include[banner](includes/banner.md)]
 
-Det här avsnittet förklarar koncepten som är relaterade till kringutrustning i butik. Här beskrivs olika sätt att ansluta kringutrustning till POS och komponenterna som är ansvariga för anslutning till POS.
+Denna artikel förklarar koncepten som är relaterade till kringutrustning i butik. Här beskrivs olika sätt att ansluta kringutrustning till POS och komponenterna som är ansvariga för anslutning till POS.
 
 ## <a name="concepts"></a>Begrepp
 
@@ -55,7 +55,7 @@ Modern POS för Android är en Android-baserad version av Modern POS-programmet 
 
 ### <a name="pos-peripherals"></a>Kringutrustning för kassa
 
-Kringutrustning för kassa är enheter som uttryckligen har stöd för kassafunktioner. Denna kringutrustning är vanligtvis uppdelade i klasser. Mer information om dessa klasser finns i avsnittet "Enhetsklasser" i det här avsnittet.
+Kringutrustning för kassa är enheter som uttryckligen har stöd för kassafunktioner. Denna kringutrustning är vanligtvis uppdelade i klasser. Mer information om dessa klasser finns i avsnittet "Enhetsklasser" i denna artikel.
 
 ### <a name="hardware-station"></a>Maskinvarustation
 
@@ -544,7 +544,7 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som delar m
     -   **Värdnamn** – namnet på värddatorn där maskinvarustationen körs.
     -   **Beskrivning** – Text som hjälper identifiera vilken maskinvarustation, t ex **returnerar** eller **framför butiken**.
     -   **Port** – porten som ska användas för maskinvarustationen för att kommunicera med Modern POS-klienten.
-    -   **Maskinvaruprofil** – för maskinvarustationer bör varje maskinvarustatio ha en maskinvaruprofil. Maskinvaruprofiler kan delas av maskinvarustationer, men de måste kopplas till varje maskinvarustation. Dessutom rekommenderar vi att du använder delade skift när flera enheter använder samma delade maskinvarustation. För att ställa in delat skift, gå till **Retail och Commerce \> Kanalinställningar \> Kassainställning \> Kassaprofiler \> Maskinvaruprofiler**. För varje delad maskinvaruprofil, välj kassalådan och ange **Kassalåda för delat skift** till **Ja**.
+    -   **Maskinvaruprofil** – för maskinvarustationer bör varje maskinvarustatio ha en maskinvaruprofil. Maskinvaruprofiler kan delas av maskinvarustationer, men de måste kopplas till varje maskinvarustation. Dessutom rekommenderar vi att du använder delade skift när flera enheter använder samma delade maskinvarustation. För att konfigurera delat skift, gå till **Retail och Commerce \> Kanalinställningar \> Kassainställning \> Kassaprofiler \> Maskinvaruprofiler**. För varje delad maskinvaruprofil, välj kassalådan och ange **Kassalåda för delat skift** till **Ja**.
     -   **EFT-POS-nummer** – det EFT terminal-ID som används när EFT-tillstånd skickas. Detta ID tillhandahålls av kreditkortsföretaget.
     -   **Paketnamnet** – maskinvarustationspaketet att använda när maskinvarustationen distribueras.
 
@@ -640,7 +640,7 @@ Följande kringutrustning som har testats med IPC maskinvarustation som ingår i
 
 Dynamics 365 Commerce erbjuder en färdig lösning för integrering med Adyen för betalningstjänster. [Dynamics 365-betalningsanslutningsprogrammet Adyen](dev-itpro/adyen-connector.md) använder det enhetsoberoende [programmeringsgränssnittet (API) för Adyen-betalningsterminalprogram](https://www.adyen.com/blog/introducing-the-terminal-api) och kan samverka med alla betalningsterminaler som detta API stöder. En fullständig lista över betalningsterminaler som stöds finns i [Adyen-kassaterminaler](https://www.adyen.com/pos-payments/terminals).
 
-Du kan också använda andra betalningsproviders med Dynamics 365 Commerce genom att skapa ett anpassat anslutningsprogram. Alla betalningsterminaler som stöds av betalningprovidern kan användas med Dynamics 365 Commerce. På samma sätt medger Dynamics 365 Commerce alla integrationsmodeller för betalningsenheter som stöds av betalningsprovidern, till exempel lokal IP, molnbaserad API eller direktanslutning (till exempel via USB) till kassan. Mer information finns i [Skapa en komplett betalningsintegrering för en betalningsterminal](dev-itpro/end-to-end-payment-extension.md).
+Du kan också använda andra betalningsproviders med Dynamics 365 Commerce genom att skapa ett anpassat anslutningsprogram. Alla betalningsterminaler som stöds av betalningprovidern kan användas med Dynamics 365 Commerce. På samma sätt medger Dynamics 365 Commerce alla integreringsmodeller för betalningsenheter som stöds av betalningsprovidern, till exempel lokal IP, molnbaserad API eller direktanslutning (till exempel via USB) till kassan. Mer information finns i [Skapa en komplett betalningsintegrering för en betalningsterminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Kassalåda
 
@@ -707,7 +707,7 @@ Följande kringutrustning har testats med hjälp av en särskild (Ej delad) IIS 
 
 Dynamics 365 Commerce erbjuder en färdig lösning för integrering med Adyen för betalningstjänster. [Dynamics 365-betalningsanslutningsprogrammet för Adyen](dev-itpro/adyen-connector.md) använder det enhetsoberoende [API för Adyen-betalningsterminaler](https://www.adyen.com/blog/introducing-the-terminal-api) och kan samverka med alla betalningsterminaler som detta API stöder. En fullständig lista över betalningsterminaler som stöds finns i [Adyen-kassaterminaler](https://www.adyen.com/pos-payments/terminals).
 
-Du kan också använda andra betalningsproviders med Dynamics 365 Commerce genom att skapa ett anpassat anslutningsprogram. Alla betalningsterminaler som stöds av betalningprovidern kan användas med Dynamics 365 Commerce. På samma sätt medger Dynamics 365 Commerce alla integrationsmodeller för betalningsenheter som stöds av betalningsprovidern, till exempel lokal IP, molnbaserad API eller direktanslutning (till exempel via USB) till kassan. Mer information finns i [Skapa en komplett betalningsintegrering för en betalningsterminal](dev-itpro/end-to-end-payment-extension.md).
+Du kan också använda andra betalningsproviders med Dynamics 365 Commerce genom att skapa ett anpassat anslutningsprogram. Alla betalningsterminaler som stöds av betalningprovidern kan användas med Dynamics 365 Commerce. På samma sätt medger Dynamics 365 Commerce alla integreringsmodeller för betalningsenheter som stöds av betalningsprovidern, till exempel lokal IP, molnbaserad API eller direktanslutning (till exempel via USB) till kassan. Mer information finns i [Skapa en komplett betalningsintegrering för en betalningsterminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Kassalåda
 
@@ -767,7 +767,7 @@ Följande kringutrustning har testats med hjälp av en delad IIS maskinvarustati
 
 Dynamics 365 Commerce erbjuder en färdig lösning för integrering med Adyen för betalningstjänster. [Dynamics 365-betalningsanslutningsprogrammet för Adyen](dev-itpro/adyen-connector.md) använder det enhetsoberoende [API för Adyen-betalningsterminaler](https://www.adyen.com/blog/introducing-the-terminal-api) och kan samverka med alla betalningsterminaler som detta API stöder. En fullständig lista över betalningsterminaler som stöds finns i [Adyen-kassaterminaler](https://www.adyen.com/pos-payments/terminals).
 
-Du kan också använda andra betalningsproviders med Dynamics 365 Commerce genom att skapa ett anpassat anslutningsprogram. Alla betalningsterminaler som stöds av betalningprovidern kan användas med Dynamics 365 Commerce. På samma sätt medger Dynamics 365 Commerce alla integrationsmodeller för betalningsenheter som stöds av betalningsprovidern, till exempel lokal IP, molnbaserad API eller direktanslutning (till exempel via USB) till kassan. Mer information finns i [Skapa en komplett betalningsintegrering för en betalningsterminal](dev-itpro/end-to-end-payment-extension.md).
+Du kan också använda andra betalningsproviders med Dynamics 365 Commerce genom att skapa ett anpassat anslutningsprogram. Alla betalningsterminaler som stöds av betalningprovidern kan användas med Dynamics 365 Commerce. På samma sätt medger Dynamics 365 Commerce alla integreringsmodeller för betalningsenheter som stöds av betalningsprovidern, till exempel lokal IP, molnbaserad API eller direktanslutning (till exempel via USB) till kassan. Mer information finns i [Skapa en komplett betalningsintegrering för en betalningsterminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Kassalåda
 

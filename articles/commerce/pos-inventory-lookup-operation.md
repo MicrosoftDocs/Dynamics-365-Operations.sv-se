@@ -1,6 +1,6 @@
 ---
 title: Lagersökning i kassan
-description: I det här avsnittet beskrivs hur du använder lagersökningsfunktionen i kassan i Dynamics 365 Commerce för att visa lagerbehållning av produkter i butiker och lager.
+description: I denna artikel beskrivs hur du använder lagersökningsfunktionen i kassan i Dynamics 365 Commerce för att visa lagerbehållning av produkter i butiker och lager.
 author: boycezhu
 ms.date: 08/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: ded7c0aa00d0806dfe4eb4e182abbbf66fd76d5b
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 01f10c348c61ffbcb30be26a57b3edd436aacc8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343846"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850259"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Lagersökning i kassan
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du använder lagersökningsfunktionen i kassan i Dynamics 365 Commerce för att visa lagerbehållning av produkter i butiker och lager.
+I denna artikel beskrivs hur du använder lagersökningsfunktionen i kassan i Dynamics 365 Commerce för att visa lagerbehållning av produkter i butiker och lager.
 
 En korrekt översikt över lager i en organisation kan ge snabb, effektiv kundservice. Den tidpunkt som är viktigast är den tidpunkt när kunden är redo att göra ett inköp. Det är viktigt att kassörerna i butiken har lagerinformation lättåtkomlig i realtid i nästan realtid, så att de korrekt kan lova produktleverans och hämtning.
 
@@ -70,7 +70,7 @@ Följande åtgärder är tillgängliga i kassans appfält:
 - **Lägg till i transaktion** – Den här åtgärden lägger till produkten i kundvagnen och dirigerar användaren till transaktionsskärmen.
 
 > [!NOTE]
-> Den platsbaserade sortering som lanserades i Commerce version 10.0.17 visar den aktuella butiken högst upp. För övriga platser bestäms avståndet mellan en plats och den aktuella butiken av de koordinater (latitud och longitud) som definieras i Commerce-administrationen. För en butik definieras platsinformationen i den primära adressen för den driftenhet som är kopplad till butiken. För ett lagerställe utan butik anges platsinformationen i lagerställesadressen. Före version 10.0.17 visar listvyn alltid den aktuella butiken högst upp och sorterar övriga platser i alfabetisk ordning.
+> Den platsbaserade sortering som lanserades i Commerce version 10.0.17 visar den aktuella butiken högst upp. För övriga platser bestäms avståndet mellan en plats och den aktuella butiken av de koordinater (latitud och longitud) som definieras i Commerce headquarters. För en butik definieras platsinformationen i den primära adressen för den driftenhet som är kopplad till butiken. För ett lagerställe utan butik anges platsinformationen i lagerställesadressen. Före version 10.0.17 visar listvyn alltid den aktuella butiken högst upp och sorterar övriga platser i alfabetisk ordning.
 >
 > Åtgärderna **Visa butikstillgänglighet**, **Visa butiksplats**, **Hämta i butik** och **Skicka produkt** är inte tillgängliga för platser utan butik.
 

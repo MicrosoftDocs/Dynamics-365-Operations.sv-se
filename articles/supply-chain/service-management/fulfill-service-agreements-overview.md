@@ -1,6 +1,6 @@
 ---
-title: Fullfölja serviceavtal – översikt
-description: Det här avsnittet innehåller en översikt över aktiviteter att uppfylla serviceavtal.
+title: Fullfölj serviceavtal – översikt
+description: Denna artikel innehåller en översikt över aktiviteter för att uppfylla serviceavtal.
 author: sorenva
 ms.date: 05/03/2018
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c0331477a815c7404faa9bde43275415c3994fd
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 920ac245c94d87ac692b173012e88dc8c1352f8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677210"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852111"
 ---
-# <a name="fulfill-service-agreements-overview"></a>Fullfölja serviceavtal – översikt
+# <a name="fulfill-service-agreements-overview"></a>Fullfölj serviceavtal – översikt
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över aktiviteter att uppfylla serviceavtal. Ämnet listar även formulär som är kopplade till respektive affärsprocesskomponent och beskriver de uppgifter som är associerande med de olika affärsprocesskomponenterna.
+Denna artikel innehåller en översikt över aktiviteter för att uppfylla serviceavtal. Artikeln listar även formulär som är kopplade till respektive affärsprocesskomponent och beskriver de uppgifter som är associerande med de olika affärsprocesskomponenterna.
 
 ## <a name="forms-for-the-fulfill-service-contracts-business-process-components"></a>Formulär för affärsprocesskomponenter för att uppfylla servicekontrakt
 

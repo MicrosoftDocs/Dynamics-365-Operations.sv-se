@@ -1,6 +1,6 @@
 ---
 title: Synkronisera kontakter direkt från Sales till kontakter i Supply Chain Management
-description: I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera entiteterna Kontakt (kontakter) och Kontakt (kunder) direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
+description: I denna artikel diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera entiteterna Kontakt (kontakter) och Kontakt (kunder) direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Managements.
 author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 57a9c2a860e99855e841f0f4276ba2f92767c2b1
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4ddb91c34816791d8eca80e4798eb46c1b496439
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062525"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857356"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Synkronisera kontakter direkt från Sales till kontakter i Supply Chain Management
 
@@ -32,7 +32,7 @@ ms.locfileid: "8062525"
 > [!NOTE]
 > Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Microsoft Dataverse för appar](/powerapps/administrator/data-integrator).
 
-I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera tabellerna Kontakt (kontakter) och Kontakt (kunder) direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
+I denna artikel diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera tabellerna Kontakt (kontakter) och Kontakt (kunder) direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflöden i Potentiell kund till kontanter
 
@@ -80,9 +80,9 @@ En ny kolumn för **är aktiv kund** har lagts till kontakten. Den här kolumnen
 
 En ny kolumn för **IsCompanyAnAccount** har lagts till kontakten. Den här kolumnen indikerar om en kontakt är kopplad till ett företag (överordnat konto/kontakt) av typen **konto**. Denna information används för att identifiera kontakter som ska synkroniseras mot Supply Chain Management som kontakter.
 
-En ny kolumn för **kontaktnummer** har lagts till kontakten för att garantera en naturlig och unik nyckel för integration. När en ny kontakt skapas kommer **kontaktnummer**-värde genereras automatiskt med hjälp av en nummerserie. Värdet består av **CON** följt av en ökande nummerserie och sedan ett suffix på sex tecken. Här är ett exempel: **CON-01000-BVRCPS**
+En ny kolumn för **kontaktnummer** har lagts till kontakten för att garantera en naturlig och unik nyckel för integrering. När en ny kontakt skapas kommer **kontaktnummer**-värde genereras automatiskt med hjälp av en nummerserie. Värdet består av **CON** följt av en ökande nummerserie och sedan ett suffix på sex tecken. Här är ett exempel: **CON-01000-BVRCPS**
 
-När integrationslösningen för Sales används, anger ett uppgraderingsskript kolumnen **kontaktnummer** för befintliga kontakter med nummerserien som beskrivits tidigare. Uppgraderingsskriptet anger också kolumnen **är aktiv kund** till **Ja** för alla kontakter som har försäljningsaktivitet.
+När integreringslösningen för Sales används, anger ett uppgraderingsskript kolumnen **kontaktnummer** för befintliga kontakter med nummerserien som beskrivits tidigare. Uppgraderingsskriptet anger också kolumnen **är aktiv kund** till **Ja** för alla kontakter som har försäljningsaktivitet.
 
 ## <a name="in-supply-chain-management"></a>I Supply Chain Management
 
@@ -126,7 +126,7 @@ I följande illustrationer visas ett exempel på en mallmappning i dataintegreri
 ![Mallmappning för kontakt till kund i dataintegratör.](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Potentiell kund till pengar](prospect-to-cash.md)
 

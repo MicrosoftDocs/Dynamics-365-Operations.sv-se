@@ -1,6 +1,6 @@
 ---
 title: Artikelplacering för lagerställe
-description: Den här ämnet innehåller information om artikelplacering för lagerställe. Artikelplacering för lagerställe låter dig konsolidera efterfrågan per artikel och enhet från order som har status beställt, reserverat eller frisläppt. Det underlättar för lagerchefer att planera plockningsplatser innan de frigör order till lagerstället och skapar plockningsarbete.
+description: Denna artikel innehåller information om artikelplacering för lagerställe. Artikelplacering för lagerställe låter dig konsolidera efterfrågan per artikel och enhet från order som har status beställt, reserverat eller frisläppt. Det underlättar för lagerchefer att planera plockningsplatser innan de frigör order till lagerstället och skapar plockningsarbete.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e057992b15f0a1fa76a78ef78ea9aeea3c088be9
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a5ce900d7698c7d8211ce1e8b7d529ab79a28915
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676311"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897267"
 ---
 # <a name="warehouse-slotting"></a>Artikelplacering för lagerställe
 
@@ -102,12 +102,12 @@ Du måste välja den direktivkod som ska associeras med en mall.
 
 ### <a name="set-up-slotting-templates"></a>Ställ in artikelplaceringsmallar
 
-Varje artikelplaceringsmall styr hur lagret tilldelas till platser för ett visst lagerställe. Varje mall måste innehålla en rad för varje artikelplaceringsspecifikation. Använd procedurerna i det här avsnittet om du vill ställa in artikelplaceringsmallar.
+Varje artikelplaceringsmall styr hur lagret tilldelas till platser för ett visst lagerställe. Varje mall måste innehålla en rad för varje artikelplaceringsspecifikation. Använd procedurerna i det här avsnittet om du vill konfigurera artikelplaceringsmallar.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Lagerpåfyllnad \> Artikelplaceringsmallar**.
 1. Skapa en ny mall genom att välja **Nytt**.
 
-Sedan måste du ställa in mallhuvudet, artikelplaceringsspecifikation och platsdirektiven, enligt beskrivningen i följande underavsnitt. Inställningen för artikelplacering för överföringsorder liknar inställningen för artikelplacering för försäljningsorder, men **Efterfrågetyp** anges till *Överföringsorder* istället för *Försäljningsorder*.
+Sedan måste du konfigurera mallhuvudet, artikelplaceringsspecifikation och platsdirektiven, enligt beskrivningen i följande underavsnitt. Inställningen för artikelplacering för överföringsorder liknar inställningen för artikelplacering för försäljningsorder, men **Efterfrågetyp** anges till *Överföringsorder* istället för *Försäljningsorder*.
 
 #### <a name="set-up-the-header-for-a-sales-order-slotting-template"></a>Ställ in rubriken för en mall för att skapa en försäljningsorder
 
@@ -156,7 +156,7 @@ För varje försäljningsordermall som du skapar lägger du till en rad för var
 
     - **Måttenhetsnivå:** _EaBoxPl_
 
-        I det här fältet definieras den enhetsnivå för efterfrågan som är giltig för raden. (Mer information finns i avsnittet [Ange måttenhetsnivå för artikelplacering](#unit-tiers) tidigare i det här avsnittet.)
+        I det här fältet definieras den enhetsnivå för efterfrågan som är giltig för raden. (Mer information finns i avsnittet [Ange måttenhetsnivå för artikelplacering](#unit-tiers) tidigare i denna artikel.)
 
     - **Tilldela kortkriterier:** _Överväg kvantitet_
 
@@ -300,7 +300,7 @@ Skapa den efter frågan som du vill använda skåra på genom att följa stegen 
     - **Artikel:** _L0101_
     - **Kvantitet:** _20_
 
-1. Välj **Lägg till rad** för att lägga till en nya rad och ställa in följande värden:
+1. Välj **Lägg till rad** för att lägga till en nya rad och konfigurera följande värden:
 
     - **Artikel:** _T0100_
     - **Kvantitet:** _8_
@@ -348,8 +348,8 @@ Artikelplaceringsplanen visar platsen som varje artikel/kvantitet har tilldelats
 
 > [!NOTE]
 > - Processen **Generera efterfrågan**, **Hitta efterfrågan** och **Kör lagerpåfyllnad** processer i ett begränsat läge. (Dessa processer är tillgängliga från åtgärdsfönstret på sidan **artikelplaceringsmallar**).
-> - Processer **Generera efterfrågan**, **Lokalisera efterfrågan** och **Kör lagerpåfyllnad** processer har ett lås för att säkerställa att de inte kan utlösas samtidigt. I annat fall kan data som används tas bort.
-> - Processerna **Generera efterfrågan** och **Lokalisera efterfrågan** visar en varning om körningen inte genererade poster, eller om det saknas information om posterna.
+> - Processer **Generera efterfrågan**, **Hitta efterfrågan** och **Kör lagerpåfyllnad** processer har ett lås för att säkerställa att de inte kan utlösas samtidigt. I annat fall kan data som används tas bort.
+> - Processerna **Generera efterfrågan** och **Hitta efterfrågan** visar en varning om körningen inte genererade poster, eller om det saknas information om posterna.
 > - När du väljer en **Plan för artikelplacering** har inte sidan knapparna **Ny**, **Redigera** eller **Ta bort** i åtgärdsfönstret eftersom datakällan inte kan redigeras.
 > - När du väljer **Kör påfyllnad**, validerar systemet den valda platsens mall och processer.
 
@@ -365,7 +365,7 @@ De platsdirektiv som kommer att användas identifieras utifrån den direktivkod 
 
 ### <a name="set-up-automatic-slotting"></a>Ställ in automatisk artikelplacering
 
-När alla nödvändiga element är på plats kan du ställa in artikelplacering så att de körs automatiskt genom att följa stegen nedan.
+När alla nödvändiga element är på plats kan du konfigurera artikelplacering så att de körs automatiskt genom att följa stegen nedan.
 
 1. Gå till **Lagerstyrning \> Lagerpåfyllnad \> Köra artikelplacering**.
 1. Ange de artikelplaceringssteg som ska köras. Välj ett eller flera av följande artikelplaceringssteg:
@@ -380,7 +380,7 @@ När alla nödvändiga element är på plats kan du ställa in artikelplacering 
 1. Ange vilken artikelplaceringsmall som ska användas.
 1. Ställ in upprepning så att körningen sker automatiskt om du vill.
 
-I övningarna i scenariot ska du **inte** ställa in automatisk artikelplacering.
+I övningarna i scenariot ska du **inte** konfigurera automatisk artikelplacering.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

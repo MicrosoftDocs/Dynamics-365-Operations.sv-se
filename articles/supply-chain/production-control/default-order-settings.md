@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: dca0aba081321dff5ae061ebe4bddcae0e42bc54
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 106da56ed1de7d9e555cfdd63f19687d7e17599a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102774"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862581"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardorderinställningar för dimensioner och produktvarianter
 
@@ -38,7 +38,7 @@ Om du vill ange standardorderinställningar för en produkt följer du dessa ste
     - I fliken **Plan** i gruppen **Orderinställningar** välj **Standardorderinställningar**.
     - I fliken **Hantera lager** i gruppen **Orderinställningar** välj **Standardorderinställningar**.
 
-1. Konfigurera inställningarna enligt beskrivningen i resten av det här avsnittet.
+1. Konfigurera inställningarna enligt beskrivningen i resten av denna artikel.
 
 ## <a name="default-order-settings"></a>Standardorderinställningar
 
@@ -101,7 +101,7 @@ Reglerna för standardorderinställningar har rangordningar. Ju högre rangordni
 
 ### <a name="default-order-settings-for-released-products"></a>Standardorderinställningar för frisläppta produkter
 
-För specifika frisläppta produkter kan du definiera allmänna orderinställningar eller sitespecifika orderinställningar. De allmäna orderinställningarna kommer alltid att ha rangordning noll. Om du ställer in nya försäljningar, inköp och lagerorderinställningar tillsammans samtidigt, rekommenderar vi att du använder **Informationsvy** på sidan **Standardorderinställningar**. För att växla till informationsvyn, gå till **Alternativ** &gt; **Sidalternativ** &gt; **Ändra vy** &gt; **Detaljvy**.
+För specifika frisläppta produkter kan du definiera allmänna orderinställningar eller sitespecifika orderinställningar. De allmäna orderinställningarna kommer alltid att ha rangordning noll. Om du konfigurerar nya försäljningar, inköp och lagerorderinställningar tillsammans samtidigt, rekommenderar vi att du använder **Informationsvy** på sidan **Standardorderinställningar**. För att växla till informationsvyn, gå till **Alternativ** &gt; **Sidalternativ** &gt; **Ändra vy** &gt; **Detaljvy**.
 
 ### <a name="site-specific-order-settings"></a>Platsspecifika orderinställningar.
 

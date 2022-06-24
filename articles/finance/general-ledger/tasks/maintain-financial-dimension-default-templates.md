@@ -1,6 +1,6 @@
 ---
 title: Underhåll standardmallar för ekonomisk dimension
-description: Det här avsnittet visar hur du ställer in standardmallar för ekonomiska dimensioner.
+description: Den här artikeln visar hur du ställer in standardmallar för ekonomiska dimensioner.
 author: aprilolson
 ms.date: 07/30/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 08e795b44e552dbf049b460811a66741d9b6b96f
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 846347f3a0b5257e88e06ad593ba49160de9458a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722146"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872424"
 ---
 # <a name="maintain-financial-dimension-default-templates"></a>Underhåll standardmallar för ekonomisk dimension
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet visar hur du ställer in standardmallar för ekonomiska dimensioner. Mallarna kan användas för att snabbt fördela belopp på källdokument.
+Den här artikeln visar hur du ställer in standardmallar för ekonomiska dimensioner. Mallarna kan användas för att snabbt fördela belopp på källdokument.
 
 1. I navigeringsfönstret, gå till **Moduler > Redovisning > Kontoplan > Dimensioner > Standardmallar för ekonomisk dimension**.
 2. Välj **Ny**.

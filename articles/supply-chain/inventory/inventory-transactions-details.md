@@ -1,6 +1,6 @@
 ---
 title: Lagertransaktion – information
-description: Det här ämnet innehåller en översikt på sidan Transaktionsdetaljer som visar information om en vald lagertransaktion.
+description: Denna artikel innehåller en översikt av sidan Transaktionsdetaljer som visar information om en vald lagertransaktion.
 author: rachel-profitt
 ms.date: 04/25/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-04-25
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: fd1416f21ce15dc832dd41ea4110c93bf5bb41a2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 55e29d5804f57cd86fb5ddac5d6c5576b7ea5f61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735922"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859399"
 ---
 # <a name="inventory-transaction-details"></a>Lagertransaktion – information
 
@@ -36,8 +36,8 @@ Sidan **Transaktionsdetaljer** är uppdelad på flera snabbflikar. Följande tab
 
 | Snabbflik | Beskrivning |
 |---|---|
-| Allmänt | På den här snabbfliken visas grundläggande information om den valda lagertransaktionen. Utöver de fält som visas på sidan **Lagertransaktioner** innehåller den även ytterligare fält som beskrivs senare i det här avsnittet. |
-| Uppdateringar | På den här snabbfliken visas information som är relaterad till de fysiska, ekonomiska och kvittningsaspekterna för den valda lagertransaktionen. Beroende på aktuell status för transaktionen kan vissa fält vara tomma. Dessa fält ställs dock automatiskt in när transaktionerna bokförs. Utöver de fält som visas på sidan **Lagertransaktioner** innehåller den här snabbfliken även ytterligare fält som beskrivs senare i det här avsnittet. |
+| Allmänt | På den här snabbfliken visas grundläggande information om den valda lagertransaktionen. Utöver de fält som visas på sidan **Lagertransaktioner** innehåller den även ytterligare fält som beskrivs senare i denna artikel. |
+| Uppdateringar | På den här snabbfliken visas information som är relaterad till de fysiska, ekonomiska och kvittningsaspekterna för den valda lagertransaktionen. Beroende på aktuell status för transaktionen kan vissa fält vara tomma. Dessa fält ställs dock automatiskt in när transaktionerna bokförs. Utöver de fält som visas på sidan **Lagertransaktioner** innehåller den här snabbfliken även ytterligare fält som beskrivs senare i denna artikel. |
 | Bokföring i reskontran | På den här snabbfliken visas den bokföringstyp och det redovisningskonto som används för fysisk uppdatering, ekonomisk uppdatering, fysisk intäkt, fysiska avgifter, ekonomiska intäkter och ekonomiska avgifter som är kopplade till den valda lagertransaktionen. |
 | Referenser | På den här snabbfliken visas ytterligare information om källtransaktionen som skapade den valda lagertransaktionen. Den här informationen kan till exempel omfatta information från inköpsordern eller försäljningsordern. |
 | Relaterad information | På den här snabbfliken visas ytterligare information om den valda lagertransaktionen. De här fälten kanske inte ställs in om du inte använder vissa funktioner, till exempel anskaffningskategorier eller projekt. |

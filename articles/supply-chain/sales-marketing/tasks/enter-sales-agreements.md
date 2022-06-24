@@ -1,6 +1,6 @@
 ---
 title: Ange försäljningsavtal
-description: I det här avsnittet visas hur du skapar en försäljningsavtal där en av dina kunder åtar sig att köpa en produkt för ett avtalat belopp över tid i utbyte mot speciella rabatter.
+description: I denna artikel visas hur du skapar ett försäljningsavtal där en av dina kunder åtar sig att köpa en produkt för ett avtalat belopp över tid i utbyte mot speciella rabatter.
 author: Henrikan
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Service industries
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee2c1494842c5fd2aa598546ba655c33d6fd3f16
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8b3aa72057753a9592fd47275dc996a3a904d86b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568313"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897499"
 ---
 # <a name="enter-sales-agreements"></a>Ange försäljningsavtal
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet visas hur du skapar en försäljningsavtal där en av dina kunder åtar sig att köpa en produkt för ett avtalat belopp över tid i utbyte mot speciella rabatter. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.
+I denna artikel visas hur du skapar ett försäljningsavtal där en av dina kunder åtar sig att köpa en produkt för ett avtalat belopp över tid i utbyte mot speciella rabatter. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.
 
 
 ## <a name="set-up-sales-agreement-header"></a>Ställ in försäljningsavtalshuvudet
@@ -34,7 +34,7 @@ I det här avsnittet visas hur du skapar en försäljningsavtal där en av dina 
 3. I fältet **Kundkonto** välj önskad post i den nedrullningsbara menyn.
 4. I fältet **Klassificering av försäljningsavtal** välj önskad post i den nedrullningsbara menyn.
 5. Expandera den **allmänna** delen.
-6. I fältet **Standardutfästelse**, välj **Utfästelse för produktvärde**. En utfästelsetyp är ett obligatoriskt kriterium som du måste tilldela till avtalet för att definiera hur avtalskontraktet uppfylls. De fyra fördefinierade typer kan du ställa in kundens åtagande mål, uttryckt som en kvantitet eller ett värde. Kvantitetutfästelsetypen kan endast tillämpas på en specifik produkt, men de hierarkibaserade typerna kan användas för både försäljning och icke-specifika produkter.  
+6. I fältet **Standardutfästelse**, välj **Utfästelse för produktvärde**. En utfästelsetyp är ett obligatoriskt kriterium som du måste tilldela till avtalet för att definiera hur avtalskontraktet uppfylls. De fyra fördefinierade typer kan du konfigurera kundens åtagande mål, uttryckt som en kvantitet eller ett värde. Kvantitetutfästelsetypen kan endast tillämpas på en specifik produkt, men de hierarkibaserade typerna kan användas för både försäljning och icke-specifika produkter.  
 7. I fältet **Utgångsdatum**, ange datumet till ett framtida datum när du vill att avtalet ska upphöra.
 8. Välj **OK**.
 

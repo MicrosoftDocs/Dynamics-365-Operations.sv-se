@@ -1,6 +1,6 @@
 ---
 title: Översikt över sidor för kundvagn och kassa
-description: Det här ämnet innehåller en översikt över sidor för kundvagn och kassa i Microsoft Dynamics 365 Commerce.
+description: Denna artikel innehåller en översikt över sidor för kundvagn och kassa i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3e450192025b29c655be49050aa3e61fc8acd898
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e911a1be1f06fcb3c2af08bab835a2b1ab5590f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982978"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853777"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Översikt över sidor för kundvagn och kassa
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet innehåller en översikt över sidor för kundvagn och kassa i Microsoft Dynamics 365 Commerce.
+Denna artikel innehåller en översikt över sidor för kundvagn och kassa i Microsoft Dynamics 365 Commerce.
 
 På sidan kundvagn på en näthandelssajt visas alla artiklar som kunden har lagt till i vagnen. Sidan kundvagn skapas med hjälp av modulen kundvagn. En kundvagnsmodul är en behållare som används för att vara värd för alla moduler som krävs för att visa upp artiklar i vagnen. I kundvagnsmodulen kan även använda andra moduler för att visa ordersammanfattningen och eventuella kampanjkoder som har tillämpats på kundordern.
 

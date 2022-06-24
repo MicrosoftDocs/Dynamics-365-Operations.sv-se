@@ -1,6 +1,6 @@
 ---
 title: Ändra en befintlig webbplatssida
-description: I det här avsnittet beskrivs hur du ändrar en befintlig webbplatssida i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du ändrar en befintlig webbplatssida i Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0039489c266840e5341f2e322fa7783216ac9bb3ebcecff840f591beec9f79c4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ceffb07afc8287e975f48696a059d3cd4ad20ffa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751553"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848873"
 ---
 # <a name="modify-an-existing-site-page"></a>Ändra en befintlig webbplatssida
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ändrar en befintlig webbplatssida i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du ändrar en befintlig webbplatssida i Microsoft Dynamics 365 Commerce.
 
 När du måste ändra en sida är det första steget att öppna det i sidredigeraren. Gå till den webbplats som innehåller sidan och leta upp önskad sida i listan med sidor. Om du inte hittar sidan kan du använda redigeringsverktygets funktioner för avancerad sökning. Skriv antingen det exakta sidnamnet eller skriv de första bokstäverna i den och sedan en asterisk (\*). En filtrerad lista med sidor visas. Du kan använda den här listan för att hitta den sida du vill ha. När du har hittat rätt sida väljer du namnet på sidan så att sidan öppnas i sidredigeraren.
 

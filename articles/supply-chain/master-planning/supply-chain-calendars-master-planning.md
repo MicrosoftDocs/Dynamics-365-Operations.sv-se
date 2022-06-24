@@ -1,7 +1,7 @@
 ---
 title: Kalendrar och huvudplanering
-description: Det här avsnittet innehåller en översikt över logistikkalendrar och hur de påverkar huvudplanering.
-author: ChristianRytt
+description: Denna artikel innehåller en översikt över leveranskedjekalendrar och hur de påverkar huvudplaneringen.
+author: t-benebo
 ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f424a2a050f917be2f0823c35ee2a47b4dd5cd0a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 182c22a77e73573b4e27a81f80debf67242b95c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568625"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890985"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendrar och huvudplanering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över logistikkalendrar och hur de påverkar huvudplanering.  Olika kalendrar som används i huvudplaneringsmotorn beskrivs, bland annat hur de påverkar datumen leverans- och mottagningsdatum i de planerade orderna. Dessutom ges rekommendationer om tilldelning, användning och uppdatering av kalendrarna.
+Denna artikel innehåller en översikt över leveranskedjekalendrar och hur de påverkar huvudplaneringen.  Olika kalendrar som används i huvudplaneringsmotorn beskrivs, bland annat hur de påverkar datumen leverans- och mottagningsdatum i de planerade orderna. Dessutom ges rekommendationer om tilldelning, användning och uppdatering av kalendrarna.
 
 ## <a name="definition-of-a-calendar"></a>Definition av kalender.
 
@@ -34,7 +34,7 @@ Du kan definiera en kalender som ska användas i din organisation på sidan **Or
 Varje datumpost i en kalender kan vara **öppen** eller **stängd** eller **baskalender**. Detta anges i kolumnen **kontroll** på sidan **arbetstider**. För varje datum: 
 - **Öppna** - anger att arbete utförs på den valda dagen. Kalendern uppdateras enligt arbetstidsmallen.
 - **Stängd** - anger att arbete inte utförs under den valda dagen. 
-- **Baskalender** - anger att ett visst datum ärver arbetstider och öppen/stängd från baskalendern. När baskalendern uppdateras kommer därför den valda kalendern att ärva operationstider från den. 
+- **Baskalender** - anger att ett visst datum ärver arbetstider och öppen/stängd från baskalendern. När baskalendern uppdateras kommer därför den valda kalendern att ärva åtgärdstider från den. 
 
 För alla stängda datum tilldelas kryssrutan **stängd för upphämtning** automatiskt. För öppna datum kan du manuellt välja alternativ **stängd för upphämtning**. Detta betyder att arbetet utförs på datumet, men leverans utförs inte. 
 
@@ -79,7 +79,7 @@ Du kan tilldela en kalender till ett lagerställe för att visa öppna datum fö
 För att indikera att ett lagerställe som är öppet för inleverans men upphämtning är inte möjligt kan du använda **stängd för upphämtning-policy** i kalendern för lagerstället. Detta gäller även för upphämtning av kund. 
 
 ### <a name="transport-calendar"></a>Transportkalender 
-För att ange de datum som är tillgängliga för leverans av överföringsorder från ett **från lagerställe**, kan du tilldela en **transportkalendern**. Du kan ställa in en transportkalender per leveranssätt eller per leveranssätt och från lagerställe. Transportkalendern ställs in i **Försäljning och marknadsföring > Inställningar > Distribution > Leveranssätt**. Välj ett leveranssätt och klicka på knappen **Transportkalender**.
+För att ange de datum som är tillgängliga för leverans av överföringsorder från ett **från lagerställe**, kan du tilldela en **transportkalendern**. Du kan konfigurera en transportkalender per leveranssätt eller per leveranssätt och från lagerställe. Transportkalendern ställs in i **Försäljning och marknadsföring > Inställningar > Distribution > Leveranssätt**. Välj ett leveranssätt och klicka på knappen **Transportkalender**.
 
 En rad kan skapas för varje lagerställe och leveranssätt där kalendern läggs till i kolumnen **transportkalender**. Den anger transportkalendern som tillämpas när varorna levereras från lagerstället med det angivna leveranssättet. Du tillämpar en transportkalender för alla försändelser med ett visst leveranssätt, en rad kan skapas utan att ange lagerstället.  Den påverkar alla försändelser med det angivna leveranssättet oavsett lagerstället. 
 
@@ -93,7 +93,7 @@ Observera att det går bara att inkludera en kalender per kund. Om du vill inklu
 Det begärda inleveransdatumet på försäljningsorderraderna påverkas av kundkalendern och kontrollmetoden för leveransdatum. Du kan läsa mer om hur det tidigaste leveransdatumet beräknas i [Orderlöfte](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Leveranskalender för en bestämd juridisk person
-Om du vill ange de datum då en juridisk person kan leverera varor kan du ställa in en leveranskalender under **Organisationsadministration > organisationer > juridiska personer**. Välj den juridiska personen och lägg till kalendern på fliken **Utländsk handel och logistik** i fältet **Leveranskalender**. Leveranskalendern fungerar som standard för alla kalendrar i lagerstället i den juridiska personen. 
+Om du vill ange de datum då en juridisk person kan leverera varor kan du konfigurera en leveranskalender under **Organisationsadministration > organisationer > juridiska personer**. Välj den juridiska personen och lägg till kalendern på fliken **Utländsk handel och logistik** i fältet **Leveranskalender**. Leveranskalendern fungerar som standard för alla kalendrar i lagerstället i den juridiska personen. 
 
 ## <a name="how-calendars-affect-dates-in-planning"></a>Hur kalendrar påverkar vid planering
 
@@ -130,7 +130,7 @@ När man hittar inleverans- och mottagandedatum för den planerade överföringe
 ## <a name="using-calendars-in-master-planning"></a>Använda kalendrar i huvudplanering
 
 ### <a name="assignment-of-scm-calendars"></a>Tilldelning av SCM-kalendrar
-Det är viktigt att ställa in kalendrar för att identifiera arbetsdagar i företaget. Bästa implementeringen är att ange en kalender för varje element med olika arbetsdagar. Med andra ord alla externa kalendrar (kund, leverantör) och alla interna (lagerställe, disponeringsgrupp och leveranssätt) relaterade till företaget.
+Det är viktigt att konfigurera kalendrar för att identifiera arbetsdagar i företaget. Bästa implementeringen är att ange en kalender för varje element med olika arbetsdagar. Med andra ord alla externa kalendrar (kund, leverantör) och alla interna (lagerställe, disponeringsgrupp och leveranssätt) relaterade till företaget.
 
 ### <a name="recommendation-on-warehouse-calendars"></a>Rekommendation om lagerställekalendrar
 Du rekommenderas att använda en kalender per lagerställe för att inkludera de ändringar som endast påverkar lagret. Två eller flera lagerställen kan till exempel ha samma arbetsdagar men en annan upphämtningsprincip. I sådana fall är en kalender för varje lagerställe med sin respektive upphämtningsprincip bästa implementering för att systemet ska ta med bästa datum för planerade order för inköp, överföring och produktion. Om ingen lagerställekalender ställs kan juridisk person-kalender användas som standard för lagerställekalender. 

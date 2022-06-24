@@ -1,6 +1,6 @@
 ---
 title: Systemdirigerad klusterplockning
-description: Det här avsnittet innehåller en översikt över systemstyrd klusterplockning i Microsoft Dynamics 365 Supply Chain Management.
+description: Denna artikel innehåller en översikt över systemstyrd klusterplockning i Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 05/26/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: ff8e0b9079f5a5a37913f2369f6932e3ca4f19dc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 01ba05224d1aa1de350e5c9a805f128f4e4b11fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677910"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844336"
 ---
 # <a name="system-directed-cluster-picking"></a>Systemdirigerad klusterplockning
 
@@ -134,7 +134,7 @@ Gör så här om du vill skapa ett nytt menyalternativ för mobila enheter för 
 
 ### <a name="create-picking-work"></a>Skapa plockarbete
 
-Innan du kan ställa in systemstyrd klusterplockning måste du skapa kvalificerade utgående arbete. Den klusterprofil som du skapade tidigare anger två klusterpositioner. Därför måste du skapa minst två arbets-ID. I det här scenariot ska du skapa två försäljningsorder, reservera lager, frisläppa försäljningsorder till lagerstället och sedan bearbeta vågen manuellt.
+Innan du kan konfigurera systemstyrd klusterplockning måste du skapa kvalificerade utgående arbete. Den klusterprofil som du skapade tidigare anger två klusterpositioner. Därför måste du skapa minst två arbets-ID. I det här scenariot ska du skapa två försäljningsorder, reservera lager, frisläppa försäljningsorder till lagerstället och sedan bearbeta vågen manuellt.
 
 1. Gå till **Försäljning och marknadsföring > Försäljningsorder > Alla försäljningsorder**.
 1. Välj **Ny** i åtgärdsfönstret för att skapa den första försäljningsordern.
@@ -202,7 +202,7 @@ Innan du kan ställa in systemstyrd klusterplockning måste du skapa kvalificera
 1. Ange positionsnamnet (numeriskt eller alfabetiskt) om du vill bekräfta att artikelkvantiteten som plockats för befattningen placerades i rätt position.
 1. Upprepa den här processen tills alla artikelkvantiteter har plockats och satts till rätt position.
 1. Det sista steget på den mobila enheten är att **placera** klustret till den sista platsen. Välj **OK**
-    - När den här placeringsoperationen bekräftas stängs klustret och bryts, baserat på det värde som du anger för fältet **Bryt kluster vid** i klusterprofilen. Arbets-ID:n är också stängda.
+    - När den här placeringsåtgärden bekräftas stängs klustret och bryts, baserat på det värde som du anger för fältet **Bryt kluster vid** i klusterprofilen. Arbets-ID:n är också stängda.
 1. Ett meddelande om att "klustret har slutförts" visas på den mobila enheten.
 
 

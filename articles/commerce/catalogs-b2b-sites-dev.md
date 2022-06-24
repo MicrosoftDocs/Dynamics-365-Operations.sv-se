@@ -1,6 +1,6 @@
 ---
-title: Utvidgningar av handelskataloger för B2B-anpassningar
-description: Det här ämnet beskriver utvidgningar av handelskatalogerna för B2B-funktionen i Microsoft Dynamics 365 Commerce.
+title: Utbyggbarhetspåverkan av Commerce-kataloger för B2B-anpassningar
+description: Denna artikel beskriver utvidgningar av Commerce-katalogerna för B2B-funktionen i Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 04/28/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: aff333bfe8003233dd5d8181aa8c5dd7eaeffcd0
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: f21d3375db69dd412325d00261bfc18e26d0c257
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656873"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849025"
 ---
-# <a name="extensibility-impact-of-commerce-catalogs-for-b2b-customizations"></a>Utvidgningar av handelskataloger för B2B-anpassningar
+# <a name="extensibility-impact-of-commerce-catalogs-for-b2b-customizations"></a>Utbyggbarhetspåverkan av Commerce-kataloger för B2B-anpassningar
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Det här ämnet beskriver utvidgningar av **handelskatalogerna för B2B**-funktionen i Microsoft Dynamics 365 Commerce.
+Denna artikel beskriver utvidgningseffekten av funktionen **Commerce-kataloger för B2B** i Microsoft Dynamics 365 Commerce.
 
 Om du är intresserad av att utöka katalogkontexten till anpassade scenarier måste du kanske uppdatera dina anpassningar. Uppdateringen följer den standardprocess som kunderna måste ha efter sig, eftersom deras anpassningar eventuellt inte har automatiskt stöd för de senaste funktionerna efter att uppgraderingen är klar. Om det finns någon ny funktion eller korrigeringsalternativ för dina anpassningar i dina erfarenheter rekommenderar vi att du uppdaterar anpassningskoden efter detta. Denna uppdatering liknar de ändringar som Microsoft kan ha gjort för kärnkoden.
 

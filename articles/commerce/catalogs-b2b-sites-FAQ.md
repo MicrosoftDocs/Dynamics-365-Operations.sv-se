@@ -1,6 +1,6 @@
 ---
-title: Vanliga frågor om handelskataloger för B2B
-description: Det här avsnittet innehåller svar på vanliga frågor om Microsoft Dynamics 365 Commerce-kataloger.
+title: Commerce-kataloger för Vanliga frågor och svar om B2B
+description: Denna artikel innehåller svar på vanliga frågor om Microsoft Dynamics 365 Commerce-kataloger.
 author: ashishmsft
 ms.date: 05/18/2022
 ms.topic: article
@@ -9,31 +9,31 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 5bdc7dfcb0e48aa85db2db4d178c5bf62ea0411b
-ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
+ms.openlocfilehash: 0cd11b4469e4dbd1205ace785fe857f6c6001480
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782872"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849051"
 ---
-# <a name="commerce-catalogs-for-b2b-faq"></a>Vanliga frågor om handelskataloger för B2B
+# <a name="commerce-catalogs-for-b2b-faq"></a>Commerce-kataloger för Vanliga frågor och svar om B2B
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Det här avsnittet innehåller svar på vanliga frågor om Microsoft Dynamics 365 Commerce [B2B-kataloger (business-to-business)](catalogs-b2b-sites.md).
+Denna artikel innehåller svar på vanliga frågor om Microsoft Dynamics 365 Commerce [B2B-kataloger (business-to-business)](catalogs-b2b-sites.md).
 
 ## <a name="why-cant-i-configure-a-catalog-specific-navigation-hierarchy-or-see-an-option-to-associate-a-customer-hierarchy"></a>Varför kan jag inte konfigurera en katalogspecifik navigeringshierarki eller se ett alternativ att koppla en kundhierarki?
 
-Kontrollera att funktionen **Aktivera användning av flera kataloger i butikskanaler** är aktiverad på arbetsytan **Funktionshantering** i Commerce-administration. Se dessutom till att din miljö använder Commerce version 10.0.27 eller senare version.
+Kontrollera att funktionen **Aktivera användning av flera kataloger i butikskanaler** är aktiverad på arbetsytan **Funktionshantering** i Commerce headquarters. Se dessutom till att din miljö använder Commerce version 10.0.27 eller senare version.
 
 ## <a name="can-i-view-the-catalog-specific-hierarchy-and-enrich-category-pages-in-commerce-site-builder"></a>Kan jag visa den katalogspecifika hierarkin och kategorisidorna i Commerce webbplatsbyggaren?
 
 Ja, användare av Commerce webbplatsbyggaren som har tillgång till sidan **Produkter** i webbplatsbyggaren kan välja en katalog och visa den katalogspecifika hierarkin. Från sidan **Produkter** kan användarna också se en kategorisida för en viss kategori i katalogen. Mer information finns i [utöka en kategorilandningssida](enrich-category-page.md). Om du vill ha en specifik navigeringshierarki som gäller för en katalog rekommenderar vi att du har en unik och unik navigeringshierarki för katalogen.
 
-## <a name="can-a-b2b-shopper-purchase-from-multiple-catalogs-in-a-single-checkout"></a>Kan en B2B-köpare göra inköp från flera kataloger i en enda utcheckning?
+## <a name="can-a-b2b-shopper-purchase-from-multiple-catalogs-in-a-single-checkout"></a>Kan en B2B-köpare göra inköp från flera kataloger i en enda kassa?
 
-Ja köp från flera kataloger i en enda utcheckning är tillåtet. B2B-köpare kan använda katalogindikatorn i vagnen för att ta reda på vilka artiklar som har lagts till i vilka kataloger.
+Ja köp från flera kataloger i en enda kassa är tillåtet. B2B-köpare kan använda katalogindikatorn i vagnen för att ta reda på vilka artiklar som har lagts till i vilka kataloger.
 
 ## <a name="if-a-b2b-shopper-purchases-the-same-item-from-different-catalogs-what-is-the-expected-behavior"></a>Om en B2B-köpare handlar samma artikel från olika kataloger, hur ser det ut då?
 
@@ -61,7 +61,7 @@ För närvarande stöds produkt endast på webbplats- och kanalnivåer. Med andr
 
 Handelskataloger är för närvarande endast avsedda för B2B-kanaler.
 
-## <a name="can-we-set-up-catalog-specific-upsellcross-sell-items"></a>Kan vi ställa in katalogspecifika mer-/korsförsäljningsartiklar?
+## <a name="can-we-set-up-catalog-specific-upsellcross-sell-items"></a>Kan vi konfigurera katalogspecifika mer-/korsförsäljningsartiklar?
 
 För närvarande stöds endast funktioner för relaterade produkter. Däremot är artikelkonfigurationer för merförsäljning och korsförsäljning tillgängliga för kundtjänster.
 
@@ -75,7 +75,7 @@ Följande funktioner stöds bara för kundtjänster:
 - Betalningstidsplaner
 - Gratisprodukter baserade på källkoder
 
-## <a name="can-we-use-catalog-source-codes-for-b2b-orders-through-the-e-commerce-portal"></a>Kan vi använda katalogkällkoder för B2B-order via e-handelsportalen?
+## <a name="can-we-use-catalog-source-codes-for-b2b-orders-through-the-e-commerce-portal"></a>Kan vi använda katalogkällkoder för B2B-order via näthandelsportalen?
 
 Nej Katalogkällkoder stöds bara för kundtjänstkanaler.
 

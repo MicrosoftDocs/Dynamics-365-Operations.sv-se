@@ -1,6 +1,6 @@
 ---
 title: Vad är nytt eller har ändrats i Dynamics 365 Human Resources (5 april 2021)
-description: Detta ämne beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources per den 5 juli 2021.
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 5 april 2021.
 author: marcelbf
 ms.date: 04/05/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 19ac856de0fed9253bf79cb4c06d4347e5a19c77
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1b8074877b8d2b2c05596406cbf2d98febd2e8cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693484"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899539"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-5-2021"></a>Vad är nytt eller har ändrats i Dynamics 365 Human Resources (5 april 2021)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Det här ämnet beskriver nya, ändrade, kommer snart funktioner i Dynamics 365 Human Resources.
+Den här artikeln beskriver funktioner som är nya, ändrade eller kommer snart i Dynamics 365 Human Resources.
 
 Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
@@ -48,9 +48,9 @@ Följande funktioner är i allmänhet tillgänglig i den här versionen.
 Den här versionen innehåller följande felkorrigeringar.
 
 > [!NOTE]
-> Vårt mål är att få den här informationen så snart som möjligt. Vi kan uppdatera det här avsnittet för att inkludera felkorrigeringar som gjorde det i versionen efter det att ämnet publicerades första gången.
+> Vårt mål är att få den här informationen så snart som möjligt. Vi kan komma att uppdatera detta ämne i syfte att inkludera felkorrigeringar som kommit med i versionen efter det att ämnet publicerades första gången.
 
-| Utfärda nummer | Utleverans |  beskrivning |
+| Utfärda nummer | Problem |  Beskrivning |
 | --- | --- | --- |
 | 550852 | Knappen **Godkännande** valideras inte med obligatoriska fält som ställts in i formuläret **Granska**. | När du anger ett fält som obligatoriskt i formuläret **Granska** och publicerar ändringarna för den ansvariges roll, validerar inte formuläret som förväntat. |
 | 559564 | Historiska medarbetaråtgärder för ändring av fast kompensation leder till ett fel för uppsagda användare. | Medarbetaråtgärden för kompensation till en före detta medarbetare förorsakar ett fel. När en medarbetare lämnar företaget leder medarbetaråtgärden om befordran före uppsägning till ett fel. |

@@ -1,6 +1,6 @@
 ---
-title: Godkänn och bekräfta inköpsorder
-description: Det här avsnittet innehåller en beskrivning av de statusar en inköpsorder genomgår efter att de har skapats och effekterna av att aktivera ändringshantering för inköpsorder.
+title: Godkänna och bekräfta inköpsorder
+description: Denna artikel innehåller en beskrivning av de tillstånd (status) en inköpsorder genomgår efter att de har skapats, samt effekterna av att aktivera ändringshantering för inköpsorder.
 author: GalynaFedorova
 ms.date: 04/02/2020
 ms.topic: article
@@ -16,25 +16,25 @@ ms.search.industry: ''
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d38a486c604dc761dcaf12b839d8b9b89b5e0414
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 936fddb73a639564a136002354a4d3dff7798e0b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677014"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907389"
 ---
-# <a name="approve-and-confirm-purchase-orders"></a>Godkänn och bekräfta inköpsorder
+# <a name="approve-and-confirm-purchase-orders"></a>Godkänna och bekräfta inköpsorder
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en beskrivning av de statusar en inköpsorder (IO) genomgår efter att de har skapats och effekterna av att aktivera ändringshantering för inköpsorder.
+Denna artikel innehåller en beskrivning av de tillstånd (status) en inköpsorder (IO) genomgår efter att de har skapats, samt effekterna av att aktivera ändringshantering för inköpsorder.
 
 När du har skapat en inköpsorder (IO) kan den behöva genomgå en godkännandeprocess. När leverantören har godkänt ordern sätts statusen för inköpsordern till **Bekräftad**.
 
 ## <a name="approval-of-purchase-orders"></a>Godkänna inköpsorder
 Inköpsorder som inte använder ändringshantering har statusen **Godkänd** så fort den har skapats medan inköpsorder som använder ändringshantering har statusen **Utkast** när den skapas. En inköpsorder som har skapats via en bekräftelse av en planerad order från huvudplaneringen får alltid statusen **Godkänd**, oberoende av inställningarna för ändringshanteringen. En inköpsorder kan bara skapa lagertransaktioner när den har statusen **Godkänd**. Av den anledningen visas inte lagret som tillgängligt för reservation eller märkning förrän ordern har accepterats.
 
-Du kan aktivera ändringshantering för inköpsorder genom att ställa in alternativet **Aktivera ändringshantering** på sidan **Anskaffnings- och källparametrar**. När ändringshantering är aktiverad måste inköpsorder genomgå ett godkännandearbetsflöde efter att de har slutförts. Supply Chain Management har en redigerare för arbetsflödesprocesser i vilken du kan definiera ett arbetsflöde som representerar din godkännandeprocess. Arbetsflödet kan omfatta regler för automatiskt godkännande, regler som fastställer vem som ska godkänna särskilda inköpsorder och regler för att påskynda ett arbetsflöde som har väntat på ett godkännande under en längre tid. Du kan aktivera processen för ändringshantering för alla leverantörer eller för vissa leverantörer. Du kan även ställa in processen så att den kan åsidosättas för enskilda inköpsorder.
+Du kan aktivera ändringshantering för inköpsorder genom att konfigurera alternativet **Aktivera ändringshantering** på sidan **Anskaffnings- och källparametrar**. När ändringshantering är aktiverad måste inköpsorder genomgå ett godkännandearbetsflöde efter att de har slutförts. Supply Chain Management har en redigerare för arbetsflödesprocesser i vilken du kan definiera ett arbetsflöde som representerar din godkännandeprocess. Arbetsflödet kan omfatta regler för automatiskt godkännande, regler som fastställer vem som ska godkänna särskilda inköpsorder och regler för att påskynda ett arbetsflöde som har väntat på ett godkännande under en längre tid. Du kan aktivera processen för ändringshantering för alla leverantörer eller för vissa leverantörer. Du kan även konfigurera processen så att den kan åsidosättas för enskilda inköpsorder.
 
 När ändringshantering är aktiverad genomgår inköpsorder sex godkännandestatusar, från **Utkast** till **Slutförd**. När en order har godkänts måste användaren som vill ändra den använda åtgärden **Begär ändring**.
 

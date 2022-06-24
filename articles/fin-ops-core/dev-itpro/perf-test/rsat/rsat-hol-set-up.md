@@ -1,6 +1,6 @@
 ---
 title: Självstudie för att ställa in och installera Regression Suite Automation Tool
-description: Det här avsnittet innehåller en vägledning om hur du ställer in och installerar RSAT (Regression Suite Automation Tool).
+description: Den här artikeln innehåller en vägledning om hur du ställer in och installerar RSAT (Regression Suite Automation Tool).
 author: tonyafehr
 ms.date: 09/20/2019
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 5dcdd14f54b9c0ad39794ff98ede29332c246513
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ec4ae765aaac038e6c7eff11403fb21ebd27fc2c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782001"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858602"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Självstudie för att ställa in och installera Regression Suite Automation Tool
 
-Det här avsnittet är en vägledning som hjälper dig att få installationsprogrammet och komma igång med RSAT och verktygen för att använda RSAT.
+Den här artikeln är en vägledning som hjälper dig att få installationsprogrammet och komma igång med RSAT och verktygen för att använda RSAT.
 
 [!include [banner](../../includes/banner.md)]
 

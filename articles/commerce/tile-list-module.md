@@ -1,6 +1,6 @@
 ---
 title: Panellistmodul
-description: Detta ämne handlar om panellistmoduler och beskriver hur du lägger till dessa på webbsidorna i Microsoft Dynamics 365 Commerce.
+description: Denna artikel handlar om panellistmoduler och beskriver hur du lägger till dessa på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dd714f29fe2f9acd459be7bda1c0bfac65b72cb0
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 44eb9b82ef9625734c7fe5ccba85207d9f210a00
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780803"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905408"
 ---
 # <a name="tile-list-module"></a>Panellistmodul
 
 [!include [banner](includes/banner.md)]
 
-Detta ämne handlar om panellistmoduler och beskriver hur du lägger till dessa på webbsidorna i Microsoft Dynamics 365 Commerce.
+Denna artikel handlar om panellistmoduler och beskriver hur du lägger till dessa på webbsidorna i Microsoft Dynamics 365 Commerce.
 
-En panellistmodul är en samling paneler i en karusell. Denna används för att marknadsföra produktkategorier eller produktvarumärken via bilder och text. En återförsäljare kan till exempel lägga till en panellistmodul på startsidan för en e-handelsplats i syfte att framhäva alla bästsäljande kategorier.
+En panellistmodul är en samling paneler i en karusell. Denna används för att marknadsföra produktkategorier eller produktvarumärken via bilder och text. En återförsäljare kan till exempel lägga till en panellistmodul på startsidan för en näthandelsplats i syfte att framhäva alla bästsäljande kategorier.
 
-Panellistmodulen drivs av data från innehållshanteringssystemet (CMS). Detta beror inte på några andra moduler eller data från Commerce-administrationen. Panellistmodulen kan läggas till på alla webbplatssidor där en återförsäljare vill marknadsföra eller framhäva något (t.ex. produkter, kategorier eller varumärken).
+Panellistmodulen drivs av data från innehållshanteringssystemet (CMS). Detta beror inte på några andra moduler eller data från Commerce headquarters. Panellistmodulen kan läggas till på alla webbplatssidor där en återförsäljare vill marknadsföra eller framhäva något (t.ex. produkter, kategorier eller varumärken).
 
 I följande bild visas ett exempel på en modul för panellistor och panelmoduler på startsidan för Adventure Works.
 
@@ -63,7 +63,7 @@ Panellistmodulen kan stödja olika layouter och stilar baserat på ett tema. I A
 
 ## <a name="add-a-tile-list-module-to-a-new-page"></a>Lägg till en modul för panellista på en ny sida
 
-Om du vill lägga till en modul för panellista på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
+Om du vill lägga till en modul för panellista på en ny sida och konfigurera de obligatoriska egenskaperna följer du stegen nedan.
 
 1. Gå till **Mallar** och öppna marknadsföringsmallen för webbplatsens startsida (eller skapa en ny marknadsföringsmall).
 1. I platsen **Huvud** i standardsida markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.

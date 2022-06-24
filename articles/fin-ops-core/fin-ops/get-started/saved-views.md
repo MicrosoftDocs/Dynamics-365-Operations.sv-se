@@ -1,6 +1,6 @@
 ---
 title: Sparade vyer
-description: I det här avsnittet beskrivs hur du använder funktionerna för sparade vyer.
+description: I den här artikeln beskrivs hur du använder funktionerna för sparade vyer.
 author: jasongre
 ms.date: 04/25/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: e10137ff5d11ed06c32613e601e2fa7423e270ac
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644799"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845425"
 ---
 # <a name="saved-views"></a>Sparade vyer
 
@@ -196,7 +196,7 @@ För en lista med alla publicerade vyer för sidan är följande åtgärder till
 
 ## <a name="managing-views-globally"></a>Hantera vyer globalt
 
-Även om vissa hanteringsfunktioner ligger på alla sidor, vilket visas i det här avsnittet kan **systemadministratörer** och **sparade vyadministratörer** kan hantera vyer mer holistiskt för systemet via sidan **anpassning**. Den här sidan har särskilt följande avsnitt och funktioner: 
+Även om vissa hanteringsfunktioner ligger på alla sidor, vilket visas i den här artikeln kan **systemadministratörer** och **sparade vyadministratörer** kan hantera vyer mer holistiskt för systemet via sidan **anpassning**. Den här sidan har särskilt följande avsnitt och funktioner: 
 
 - **Publicerade vyer** – i det här avsnittet visas alla vyer som har publicerats för din organisation. Härifrån kan du publicera en vy igen när du har justerat säkerhetsrollerna eller juridiska personer som är mål för vyn. Du kan också exportera, radera eller ta bort publiceringar. Du kan använda **Spara som personlig** för att skapa en personlig kopia av vyn, så att du kan uppdatera vyn eller få en bättre förståelse för innehållet. 
 - **Opublicerade vyer** – i det här avsnittet visas alla organisationsvyer i ditt system som inte är publicerade. Dessa vyer kommer oftast in i systemet via importfunktionen. Du kan publicera, exportera eller ta bort dessa vyer. Åtgärden **Snabbpublicering** som har lagts till i version 10.0.12 gör att flera vyer från det här avsnittet kan publiceras i en åtgärd, med hjälp av den befintliga säkerhets rollen och konfigurationen av juridiska enheter. Du kan använda åtgärden **Spara som personlig** för att skapa personliga kopior av dessa vyer, så att du kan få en bättre förståelse av deras antal.

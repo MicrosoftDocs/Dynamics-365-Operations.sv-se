@@ -1,6 +1,6 @@
 ---
 title: Försäljningsavtal – översikt
-description: Det här ämnet innehåller information om försäljningsavtal. Ett försäljningsavtal är ett kontrakt där kunden förbinder sig att köpa produkter i en viss mängd eller för ett visst ett belopp över tid, i utbyte mot specialpriser och rabatter.
+description: Denna artikel innehåller information om försäljningsavtal. Ett försäljningsavtal är ett kontrakt där kunden förbinder sig att köpa produkter i en viss mängd eller för ett visst ett belopp över tid, i utbyte mot specialpriser och rabatter.
 author: Henrikan
 ms.date: 07/25/2019
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c36ace4fe61d4f3add7750c66594c0f1060f8127
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3e84b8be597870deea3beaf1bdc4a98021b7f135
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694380"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903852"
 ---
 # <a name="sales-agreements-overview"></a>Försäljningsavtal – översikt
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet innehåller information om försäljningsavtal. Ett försäljningsavtal är ett kontrakt där kunden förbinder sig att köpa produkter i en viss mängd eller för ett visst ett belopp över tid, i utbyte mot specialpriser och rabatter.
+Denna artikel innehåller information om försäljningsavtal. Ett försäljningsavtal är ett kontrakt där kunden förbinder sig att köpa produkter i en viss mängd eller för ett visst ett belopp över tid, i utbyte mot specialpriser och rabatter.
 
 En försäljningsavtal är ett kontrakt som binder kunden till att köpa produkter i en viss kvantitet eller för ett specifikt belopp över tid, i utbytet mot speciella särskilda priser, rabatter, och andra särskilda villkor, till exempel betalnings- och leveransvillkor. Priserna och rabatterna i inköpsavtalet åsidosätter eventuella priser och rabatter som anges i andra handelsavtal som kan finnas.  
 

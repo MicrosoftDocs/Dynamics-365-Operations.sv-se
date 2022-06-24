@@ -1,6 +1,6 @@
 ---
 title: Ställ in prioriterade underhållsarbetare
-description: I det här avsnittet beskrivs hur du ställer in prioriterade underhållsarbetare i Tillgångshantering.
+description: I denna artikel beskrivs hur du konfigurerar prioriterade underhållsarbetare i Tillgångshantering.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 38b7371ab668eb76801fbe7f15894609a846bbd8
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 72f545b952e72412fc05239ed90e2cbbf2c11437
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687685"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846254"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Ställ in prioriterade underhållsarbetare
 
@@ -28,7 +28,7 @@ ms.locfileid: "8687685"
 
 Under schemaläggning av arbetsorder kan du göra en inställning för hur underhållsarbetare eller arbetargrupper allokeras för att slutföra arbetsordern. Användningen av den här funktionen är valfri, men den kan hjälpa dig att göra ett val för den mest kvalificerade underhållsarbetaren för att slutföra ett jobb, baserat på arbetarnas färdigheter och kompetenser. Endast underhållsarbetare som är tillgängliga vid planeringstiden tidsplaneras. Om en förinställd inställning för underhållsarbetare matchar en arbetsorder under planeringen, men underhållsarbetaren allokeras till andra jobb, planeras arbetsordern till en annan, tillgänglig, underhållsarbetare.
 
-Innan du kan ställa in prioriterade underhållsarbetare måste du först ställa in underhållsarbetare och arbetsgrupper. Information om hur du ställer in underhållsarbetare och arbetargrupper finns i [Underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md).
+Innan du kan konfigurera prioriterade underhållsarbetare måste du först konfigurera underhållsarbetare och arbetsgrupper. Information om hur du konfigurerar underhållsarbetare och arbetargrupper finns i [Underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md).
 
 ## <a name="set-up-preferred-workers"></a>Ställa in prioriterade arbetare
 
@@ -61,9 +61,9 @@ Ju fler val du gör för samma post, desto mer specifika blir inställningarna.
 
 ![Figur 1.](media/02-work-order-scheduling.png)
 
-Du kan också ställa in *ansvariga* underhållsarbetare som kan väljas när en begäran om underhåll eller en arbetsorder skapas. Du kan redigera valet i **Alla arbetsorder** och **Alla underhållsbegäranden** om det behövs. Mer information finns i [Ansvariga underhållsarbetare](../setup-for-maintenance-requests/responsible-workers.md).
+Du kan också konfigurera *ansvariga* underhållsarbetare som kan väljas när en begäran om underhåll eller en arbetsorder skapas. Du kan redigera valet i **Alla arbetsorder** och **Alla underhållsbegäranden** om det behövs. Mer information finns i [Ansvariga underhållsarbetare](../setup-for-maintenance-requests/responsible-workers.md).
 
-Under tidsplaneringen av arbetsordern beräknas olika poäng för att fastställa vilka arbetare som ska utföra jobben som hör till en arbetsorder (dessa poäng ställs in i **Parametrar för tillgångshantering** > **länken Schemaläggning av arbetsorder**). Om två eller fler prioriterade underhållsarbetare eller ansvariga underhållsarbetare får samma poäng vid tidsplaneringen av arbetsordern väljs en av dem slumpmässigt. I annat fall är det alltid arbetaren med högst poäng som allokeras för att slutföra en arbetsorder.
+Under tidsplaneringen av arbetsordern beräknas olika poäng för att fastställa vilka arbetare som ska utföra jobben som hör till en arbetsorder (dessa poäng ställs in i **Parametrar för Tillgångshantering** > **länken Schemaläggning av arbetsorder**). Om två eller fler prioriterade underhållsarbetare eller ansvariga underhållsarbetare får samma poäng vid tidsplaneringen av arbetsordern väljs en av dem slumpmässigt. I annat fall är det alltid arbetaren med högst poäng som allokeras för att slutföra en arbetsorder.
 
 
 

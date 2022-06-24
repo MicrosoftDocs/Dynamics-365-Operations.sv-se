@@ -1,8 +1,8 @@
 ---
 title: Initiera Commerce Scale Unit (moln)
-description: I det här avsnittet beskrivs hur du initierar Commerce Scale Unit (moln) i Microsoft Dynamics 365 Commerce.
+description: I den här artikeln beskrivs hur du initierar Commerce Scale Unit (moln) i Microsoft Dynamics 365 Commerce.
 author: AamirAllaq
-ms.date: 02/04/2022
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,18 +11,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
-ms.openlocfilehash: 84e70515accde161e7efa36755edec68d26be952
-ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
+ms.openlocfilehash: 969dd220a7b73a676b9cf5ac26223ebd9b3f2296
+ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092217"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8942864"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Initiera Commerce Scale Unit (moln)
 
 [!include[banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du initierar Commerce Scale Unit (moln) i Microsoft Dynamics 365 Commerce.
+I den här artikeln beskrivs hur du initierar Commerce Scale Unit (moln) i Microsoft Dynamics 365 Commerce.
 
 Om du använder en Nivå 2-sandbox eller produktionsmiljö som har appversion 8.1.2.x eller senare måste du initiera Commerce Scale Unit (moln) innan du kan använda butikskanalfunktioner antingen för kassaåtgärder (POS) eller för e-handelsverksamhet som använder Retail Server i molnet. Initialiseringen distribuerar en Commerce Scale Unit (moln).
 
@@ -49,32 +49,34 @@ Om du använder en Nivå 2-sandbox eller produktionsmiljö som har appversion 8.
 ## <a name="region-availability"></a>Regiontillgänglighet
 Commerce Scale Unit är tillgängligt för distribution i följande regioner.
 
-| Global plats | Region              | Tillgänglighet        |
-|-----------------|---------------------|---------------------|
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Östra USA             | Allmänt tillgängligt |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Östra USA 2           | Allmänt tillgängligt |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Norra centrala USA    | Allmänt tillgängligt |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Södra centrala USA    | Allmänt tillgängligt |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Centrala USA          | Allmänt tillgängligt |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Västra USA             | Allmänt tillgängligt |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Västra USA 2           | Allmänt tillgängligt |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Centrala Kanada      | Begränsad kapacitet    |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Östra Kanada         | Begränsad kapacitet    |
-| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | USA, västra centrala     | Begränsad kapacitet    |
-| APAC            | Östra Australien      | Allmänt tillgängligt |
-| APAC            | Sydostasien      | Allmänt tillgängligt |
-| APAC            | Östra Japan          | Allmänt tillgängligt |
-| APAC            | Västra Japan          | Allmänt tillgängligt |
-| APAC            | Sydöstra Australien | Begränsad kapacitet    |
-| APAC            | Östasien           | Begränsad kapacitet    |
-| APAC            | Indien, syd         | Begränsad kapacitet    |
-| APAC            | Indien, centrala       | Begränsad kapacitet    |
-| EMEA            | Västeuropa         | Allmänt tillgängligt |
-| EMEA            | Nordeuropa        | Allmänt tillgängligt |
-| EMEA            | Storbritannien, södra            | Begränsad kapacitet    |
-| EMEA            | Storbritannien, västra             | Begränsad kapacitet    |
+| Global plats | Region              | Tillgänglighet        | Kommentarer                  |
+|-----------------|---------------------|---------------------|---------------------------|
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Östra USA             | Allmänt tillgängligt |                           |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Östra USA 2           | Allmänt tillgängligt |                           |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Norra centrala USA    | Begränsad kapacitet    |                           |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Södra centrala USA    | Begränsad kapacitet    |                           |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Centrala USA          | Allmänt tillgängligt |                           |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Västra USA             | Allmänt tillgängligt |                           |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Västra USA 2           | Allmänt tillgängligt |                           |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Centrala Kanada      | Begränsad kapacitet    |                           |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | Östra Kanada         | Begränsad kapacitet    |                           |
+| NORDAMERIKA, CENTRALAMERIKA OCH SYDAMERIKA        | USA, västra centrala     | Begränsad kapacitet    |                           |
+| APAC            | Östra Australien      | Allmänt tillgängligt |                           |
+| APAC            | Sydostasien      | Begränsad kapacitet | Inga distribueringar är tillåtna    |
+| APAC            | Östra Japan          | Allmänt tillgängligt |                           |
+| APAC            | Västra Japan          | Allmänt tillgängligt |                           |
+| APAC            | Sydöstra Australien | Allmänt tillgängligt |                           |
+| APAC            | Östasien           | Begränsad kapacitet    |                           |
+| APAC            | Indien, syd         | Begränsad kapacitet | Inga distribueringar är tillåtna    |
+| APAC            | Indien, centrala       | Begränsad kapacitet    | Kräver godkännandeprocess |
+| EMEA            | Västeuropa         | Allmänt tillgängligt |                           |
+| EMEA            | Nordeuropa        | Allmänt tillgängligt |                           |
+| EMEA            | Storbritannien, södra            | Begränsad kapacitet    |                           |
+| EMEA            | Storbritannien, västra             | Begränsad kapacitet    |                           |
+| Schweiz     | Schweiz, norra   | Begränsad kapacitet    | Kräver godkännandeprocess |
+| UAE             | Förenade Arabemiraten, norra           | Begränsad kapacitet    | Kräver godkännandeprocess |
 
-Distributionskapaciteten i regioner med begränsad kapacitet är ytterst begränsad. Begäran om distribution utvärderas från fall till fall. Om du har ett tvingande affärsbehov av distribution i regioner med begränsad kapacitet kan du göra en supportbegäran och lägga till den i väntelistan.
+Distributionskapaciteten i regioner med begränsad kapacitet är ytterst begränsad. Begäran om distribution utvärderas från fall till fall. Om du har ett tvingande affärsbehov av distribution i regioner med begränsad kapacitet kan du göra en supportbegäran och lägga till den i väntelistan. Kapacitetsbegränsade områden för närvarande tillåter för närvarande inte distribution av Commerce Scale Unit. 
 
 ![Mappning som visar regiontillgänglighet.](media/Commerce-Scale-Unit-Region-Availability.png "Mappning som visar regiontillgänglighet")
 

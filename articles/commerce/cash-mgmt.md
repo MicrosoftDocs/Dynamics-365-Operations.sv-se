@@ -1,6 +1,6 @@
 ---
 title: Förbättringar av kassahantering
-description: I detta avsnitt beskrivs förbättringar av kassahantering i kassa för Dynamics 365 Commerce.
+description: I denna artikel beskrivs förbättringar av kassahantering i kassa för Dynamics 365 Commerce.
 author: anpurush
 ms.date: 05/21/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f878f39e8e9913edbe1da192e199090139a88adb6b7ed9a1e9b779c5748171b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1719e309183042cd7f56be3df8cbbec31cea7c79
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735664"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849077"
 ---
 # <a name="cash-management-improvements"></a>Förbättringar av kassahantering
 
@@ -41,7 +41,7 @@ Ställ in de nya funktionerna för kassahantering genom att följa stegen nedan 
 
 1. Öppna **Butik och handel \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Funktionsprofiler** och välj en funktionsprofil som är kopplad till butikerna du vill göra förbättringar för kassahantering tillgänglig.
 2. På snabbfliken **funktioner** i funktionsprofilen under **avancerad kassahanterng**, ange alternativet **aktivera kassaspårbarhet** till **Ja**.
-3. För att ställa in kassaskåp, gå till **Butik och handel \> Kanaler \> Butiker \> Alla butiker** och välj en butik.
+3. För att konfigurera kassaskåp, gå till **Butik och handel \> Kanaler \> Butiker \> Alla butiker** och välj en butik.
 4. På sidan **butiker** i åtgärdsfönstret, på fliken **ställ in** i gruppen **ställ in** markerar du **kassaskåp**. Med det här alternativet kan du definiera och hantera flera kassaskåp för en butik.
 4. Innan du kan använda funktionerna måste du köra distributionsschemajobbet **1070 kanalkonfiguration** för att synkronisera dessa konfigurationer med kanaldatabasen.
 
@@ -50,8 +50,8 @@ Ställ in de nya funktionerna för kassahantering genom att följa stegen nedan 
 I Retail version 10.0.3 och senare tillhandahålls även följande funktioner som är relaterade till kassatransaktioner:
 
 - En användare som ombeds att "deklarera startbelopp" måste ange kontantkällan. Användaren kan söka efter de tillgängliga kassaskåp som har definierats i butiken och välja det kassaskåp som kontanterna ska tas ut från så att de kan föras in i kassaapparaten.
-- En användare som utför åtgärden "borttagning av betalningsmedel" uppmanas att välja i en lista över öppna transaktioner av typen "växelpost" som den transaktion som operationen utförs mot. Om motsvarande växelpost inte finns i systemet kan användaren skapa en icke-kopplad borttagnings tansaktion för betalningsmedel.
-- En användare som utför åtgärden "borttagning av betalningsmedel" uppmanas att välja i en lista över öppna transaktioner av typen "växelpost" som den transaktion som operationen utförs mot. Om motsvarande borttagning av betalningsmedel inte finns i systemet kan användaren skapa en icke-kopplad växelposttransaktion.
+- En användare som utför åtgärden "borttagning av betalningsmedel" uppmanas att välja i en lista över öppna transaktioner av typen "växelpost" som den transaktion som åtgärden utförs mot. Om motsvarande växelpost inte finns i systemet kan användaren skapa en icke-kopplad borttagnings tansaktion för betalningsmedel.
+- En användare som utför åtgärden "borttagning av betalningsmedel" uppmanas att välja i en lista över öppna transaktioner av typen "växelpost" som den transaktion som åtgärden utförs mot. Om motsvarande borttagning av betalningsmedel inte finns i systemet kan användaren skapa en icke-kopplad växelposttransaktion.
 - En användare som "lämnar pengar i ett kassaskåp" uppmanas att välja det kassaskåp där kontanterna lämnas.
 - För kassaskåp som har definierats i en butik kan användarna hantera åtgärder som att deklarera startbeloppet, utföra en växelpost, göra en borttagning av betalningsmedel och göra en bankinsättning.
 - För användare med rätt användarbehörighet visar åtgärderna "hantera skift" aktiva, uppskjutna och hemligt stängda skift.

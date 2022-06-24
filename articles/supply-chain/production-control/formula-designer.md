@@ -1,6 +1,6 @@
 ---
-title: Receptdesigner
-description: Det här avsnittet beskriver hur du använder formeldesignern för att analysera och underhålla formler i en trädvy.
+title: Formeldesigner
+description: Denna artikel beskriver hur du använder formeldesignern för att analysera och underhålla formler i en trädvy.
 author: johanhoffmann
 ms.date: 06/01/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf45fdf44e6d060ee16edf1a6628c5ffd9920dcb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 247f41b43030d392df67275e6e7db1bea5df1847
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566849"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849283"
 ---
-# <a name="formula-designer"></a>Receptdesigner
+# <a name="formula-designer"></a>Formeldesigner
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du använder formeldesignern för att analysera och underhålla formler i en trädvy.
+Denna artikel beskriver hur du använder formeldesignern för att analysera och underhålla formler i en trädvy.
 
 När du öppnar sidan **Formeldesigner** sidan från sidan **Frisläppta produkter**, visade trädet i det vänstra fönstret en lista över samprodukter och komponenthierarkin för frisläppt produkt. Strukturen härleds från hierarkin för formler som är aktiva och godkända för den valda artikeln och dess komponenter, standardsiten för order för artikeln, samt fakturadatumet.
 
@@ -49,7 +49,7 @@ Formeldesignern har två avsnitt:
     -   **Artikeldata** – Visar information om huvudartikeln eller den artikel som används i den valda noden. Du kan klicka på **Redigera frisläppt produkt** om du vill behålla den valda artikeln.
     -   **Formel** – Visar sidhuvudet för den formel som är relaterad till den valda noden.
     -   **Flöde** – Visar sidhuvudet för det flöde som är relaterat till den valda noden.
-    -   **Flödesoperationer** – Visar en förhandsgranskning av operationerna för flödet. När en strukturlisterad (BOM) som tilldelas en viss operation är markerad, markeras operationen som **Komponent som behövs vid operationer**.
+    -   **Flödesåtgärder** – Visar en förhandsgranskning av åtgärderna för flödet. När en strukturlisterad (BOM) som tilldelas en viss åtgärd är markerad, markeras åtgärden som **Komponent som behövs vid åtgärder**.
 
 ## <a name="select-a-formula-and-route"></a>Välj en formel och ett flöde
 Filtret som används för formeln och flödet visas i formeldesignerns rubrik. Du kan ändra filtret, genom att använda dialogrutan **Filter**. I tabellen nedan beskrivs fälten i denna dialogruta.
@@ -84,7 +84,7 @@ Filtret som används för formeln och flödet visas i formeldesignerns rubrik. D
 </tr>
 <tr class="odd">
 <td>Från-kvantitet</td>
-<td>Filtrera versionerna genom att välja från en viss &quot;från&quot;-kvantitet. Om du ställer in ett värde kan en annan formel och andra flödesversioner markeras.</td>
+<td>Filtrera versionerna genom att välja från en viss &quot;från&quot;-kvantitet. Om du konfigurerar ett värde kan en annan formel och andra flödesversioner markeras.</td>
 </tr>
 <tr class="even">
 <td>Visa bara giltiga</td>

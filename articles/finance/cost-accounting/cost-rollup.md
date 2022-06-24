@@ -1,6 +1,6 @@
 ---
 title: Policy för samlade kostnader och omkostnadsberäkning
-description: Det här avsnittet innehåller information om hur du avgör korrekt nivå på sekundära kostnadselement och skapar regler för samlade kostnader som passar organisationens rapportering och kostnadsspårbarhet.
+description: Den här artikeln innehåller information om hur du avgör korrekt nivå på sekundära kostnadselement och skapar regler för samlade kostnader som passar organisationens rapportering och kostnadsspårbarhet.
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f35bf3e900b8dd9c1864be8668f7ff7296924c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734441"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874621"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy för samlade kostnader och omkostnadsberäkning 
 
@@ -33,7 +33,7 @@ Kostnadsredovisning låter dig få en inblick i hur kostnadsflödet relaterar ti
 -   Volymen för kostnadstransaktionerna som skapas av omkostnadsberäkning kan vara mycket hög.
 -   Det går inte att spåra kostnadsflödet mellan kostnadsbärare.
 
-För att undvika de här effekterna kan du konfigurera kostnadsallokering med kostnadsredovisningen för att passa din organisation ledarskaprapportering. Det här avsnittet innehåller information om hur du avgör korrekt nivå på sekundära kostnadselement och skapar regler för samlade kostnader som passar organisationens rapportering och kostnadsspårbarhet.
+För att undvika de här effekterna kan du konfigurera kostnadsallokering med kostnadsredovisningen för att passa din organisation ledarskaprapportering. Den här artikeln innehåller information om hur du avgör korrekt nivå på sekundära kostnadselement och skapar regler för samlade kostnader som passar organisationens rapportering och kostnadsspårbarhet.
 
 > [!NOTE]
 > Du kan ändra konfigurationer om rapporteringskraven ändras.

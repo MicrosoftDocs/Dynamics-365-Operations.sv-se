@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d1b8af3d5f8f6a6812fe309f57f682d0c5023d00
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 2de5f1e9d52de41388298031a03fbc487a1b1cde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710454"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886441"
 ---
 # <a name="compounding-interval-functionality"></a>Funktion för sammanslagningsintervall
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Det här ämnet innehåller information som hjälper dig att välja mellan månadsvis, kvartalsvis, halvårsvis och årliga sammanslagningsintervall. Funktionen för sammanslagningsintervall används för att fastställa antalet sammanslagningsperioder per år i ett leasingavtals betalningsplan. Vart och ett av de fyra exemplen i det här avsnittet visar hur ett leasingavtals betalningsplan kommer att se ut för ett annat intervall.
+Det här ämnet innehåller information som hjälper dig att välja mellan månadsvis, kvartalsvis, halvårsvis och årliga sammanslagningsintervall. Funktionen för sammanslagningsintervall används för att fastställa antalet sammanslagningsperioder per år i ett leasingavtals betalningsplan. Vart och ett av de fyra exemplen i den här artikeln visar hur ett leasingavtals betalningsplan kommer att se ut för ett annat intervall.
 
 Du kan inte välja ett sammanslagningsintervall som är mindre vanligt än leasingens betalningsfrekvens. Ett kvartalsvis sammanslagningsintervall kan till exempel inte användas med en månatlig betalningsfrekvens, och ett årligt sammanslagningsintervall kan inte användas med en halvårsvis betalningsfrekvens. Om du försöker välja ett sammanslagningsintervall som är mindre vanligt än leasingens betalningsfrekvens får du ett felmeddelande.
 
 > [!NOTE]
-> I alla fyra exemplen i det här avsnittet matchar sammanslagningsintervallet betalningsfrekvensen.
+> I alla fyra exemplen i den här artikeln matchar sammanslagningsintervallet betalningsfrekvensen.
 
 ## <a name="examples"></a>Exempel
 

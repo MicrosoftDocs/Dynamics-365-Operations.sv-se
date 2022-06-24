@@ -1,6 +1,6 @@
 ---
 title: Returserienummerkontrollerade produkter i kassan
-description: I detta ämne beskrivs möjligheterna att validera serialiserade artiklar som en del av returprocessen i Microsoft Dynamics 365 Commerce-kassaprogrammet (POS).
+description: I denna artikel beskrivs möjligheterna att validera serialiserade artiklar som en del av returprocessen i Microsoft Dynamics 365 Commerce-kassaprogrammet (POS).
 author: hhainesms
 ms.date: 06/01/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 179d66e19c7fa81d587ea920b1c71468ec070177d7e7e68e45c2b58da2f9f5af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b2af301180dc2284400b887ce36357660bdd86fa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716358"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860331"
 ---
 # <a name="return-serial-numbercontrolled-products-in-pos"></a>Returserienummerkontrollerade produkter i kassan
 
 [!include [banner](includes/banner.md)]
 
-I detta ämne beskrivs möjligheterna att validera serialiserade artiklar som en del av returprocessen i Microsoft Dynamics 365 Commerce-kassaprogrammet (POS).
+I denna artikel beskrivs möjligheterna att validera serialiserade artiklar som en del av returprocessen i Microsoft Dynamics 365 Commerce-kassaprogrammet (POS).
 
 > [!NOTE]
 > I Commerce-versionen 10.0.20 och senare finns en ny funktion kallad **Enhetlig returbearbetningserfarenhet i kassan**. Om du vill använda serienummervalidering under returorderbearbetning i POS måste du aktivera funktionen. Mer information om andra funktioner som den här funktionen tillhandahåller när den aktiveras finns i [Skapa returer i kassan](POS-returns.md).
@@ -34,7 +34,7 @@ I detta ämne beskrivs möjligheterna att validera serialiserade artiklar som en
 
 När funktionen **Bearbetningsupplevelse för enhetliga returer i kassan** är aktiverad kan organisationer validerar returer av serienummerkontrolelrade artiklar via kassan. Denna funktion kan varna användare om serienumret som returneras skiljer sig från det ursprungliga serienummer som såldes. I Commerce version 10.0.20 och senare är meddelandet som användarna får endast ett varningsmeddelande. Användarna kan fortsätta att bearbeta en retur mot ett serienummer som skiljer sig från serienumret som ursprungligen såldes.
 
-Om du vill konfigurera serienummervalidering för en organisation efter det att funktionen **Upplevelsen för enhetlig returbearbetning i kassan** har aktiverats går du till **Butik och handel \> Administrationsinställning \> Parametrar \> Commerce-parametrar** i Commerce-administrationen. På fliken **Lager**, på snabbfliken **Lagra lageråtgärder** anger du alternativet **Aktivera validering av serienummer för kassareturer** som **Ja**.
+Om du vill konfigurera serienummervalidering för en organisation efter det att funktionen **Upplevelsen för enhetlig returbearbetning i kassan** har aktiverats går du till **Butik och handel \> Administrationsinställning \> Parametrar \> Commerce-parametrar** i Commerce headquarters. På fliken **Lager**, på snabbfliken **Lagra lageråtgärder** anger du alternativet **Aktivera validering av serienummer för kassareturer** som **Ja**.
 
 ## <a name="process-returns-for-serialized-items-in-pos"></a>Bearbeta returer för serialiserade artiklar i kassan
 

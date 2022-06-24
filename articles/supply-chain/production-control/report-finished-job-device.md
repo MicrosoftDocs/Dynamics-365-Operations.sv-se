@@ -1,6 +1,6 @@
 ---
 title: Rapportera som färdigt från jobbkortsenheten
-description: I det här avsnittet beskrivs hur du konfigurerar systemet så att användarna av en jobbkort kan rapportera färdiga produkter från en tillverkningsorder till lagret.
+description: I denna artikel beskrivs hur du konfigurerar systemet så att användarna av en jobbkortsenhet kan rapportera färdiga produkter från en tillverkningsorder till lager.
 author: johanhoffmann
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 67fa97c938f091c23a41ddd5aaf34a32c5a13c93
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 3d1a45ad00e59581f27f2e822ccb47430219c501
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102836"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857385"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Rapportera som färdigt från jobbkortsenheten
 
 [!include [banner](../includes/banner.md)]
 
-Arbetstagarna använder **rapportförlopp** på jobbkortsenheten för att rapportera kvantiteter som har slutförts för ett produktionsjobb. I det här avsnittet beskrivs hur du ställer in olika alternativ som bestämmer hur arbetare kan rapportera som färdiga med hjälp av den här sidan och vad som händer härnäst. Alternativen inkluderar:
+Arbetstagarna använder **rapportförlopp** på jobbkortsenheten för att rapportera kvantiteter som har slutförts för ett produktionsjobb. I denna artikel beskrivs hur du konfigurerar olika alternativ som bestämmer hur arbetare kan rapportera som färdiga med hjälp av den här sidan och vad som händer härnäst. Alternativen inkluderar:
 
 - Kontrollera om och hur kvantiteter som rapporteras som färdiga ska läggas till i lagret.
 - Ange om och hur batchnummer genereras och används vid rapportering som färdigt.
@@ -33,18 +33,18 @@ Arbetstagarna använder **rapportförlopp** på jobbkortsenheten för att rappor
 
 ## <a name="control-whether-quantities-that-are-reported-as-finished-are-added-to-inventory"></a>Kontrollera om kvantiteter som rapporteras som färdiga ska läggas till i lagret
 
-Följ de här stegen om du vill kontrollera om och hur de kvantiteter som rapporteras som färdiga i den sista operationen ska läggas till i lagret.
+Följ de här stegen om du vill kontrollera om och hur de kvantiteter som rapporteras som färdiga i den sista åtgärden ska läggas till i lagret.
 
 1. Gå till **Produktionsstyrning \> Inställningar \> Tillverkningskörning \> Standarder för produktionsorder**.
 1. På fliken **rapportera som färdigt** anger du fältet **Uppdatera färdig rapport online** till något av följande värden:
 
-    - **Nej** – Ingen kvantitet kommer att läggas till i lagret när kvantiteterna rapporteras för den senaste operationen. Status för produktionsorder kommer aldrig att förändras.
+    - **Nej** – Ingen kvantitet kommer att läggas till i lagret när kvantiteterna rapporteras för den senaste åtgärden. Status för produktionsorder kommer aldrig att förändras.
     - **Status + kvantitet** – status för tillverkningsordern ändras till *rapporterat som färdigt* och kvantiteten rapporteras som färdig till lagret.
     - **Kvantitet** – Kvantiteten kommer att rapporteras som färdig till lager, men status för produktionsordern kommer aldrig att förändras.
-    - **Status** – Endast status produktion kommer aldrig att förändras. Ingen kvantitet kommer att läggas till i lagret när kvantiteterna rapporteras för den senaste operationen.
+    - **Status** – Endast status produktion kommer aldrig att förändras. Ingen kvantitet kommer att läggas till i lagret när kvantiteterna rapporteras för den senaste åtgärden.
 
 > [!NOTE]
-> Kvantiteter spåras inte i lagret om de operationer som de rapporteras som färdiga inte definieras som den senaste operationen. Dessa kvantiteter kan dock användas för att visa förloppet. De kan också inkluderas i regler som kontrollerar om arbetare kan starta nästa operation innan en definierad tröskel för rapporterade kvantiteter för den föregående operationen uppnås. Du kan definiera dessa regler på fliken **Kvantitetsvalidering** på sidan **Produktionsorderns standardvärden**.
+> Kvantiteter spåras inte i lagret om de åtgärder som de rapporteras som färdiga inte definieras som den senaste åtgärden. Dessa kvantiteter kan dock användas för att visa förloppet. De kan också inkluderas i regler som kontrollerar om arbetare kan starta nästa åtgärd innan en definierad tröskel för rapporterade kvantiteter för den föregående åtgärden uppnås. Du kan definiera dessa regler på fliken **Kvantitetsvalidering** på sidan **Produktionsorderns standardvärden**.
 
 För mer information om hur du arbetar med sidan **Standarder för produktionsorder** se [produktionsparametrar i tillverkningskörning](production-parameters-manufacturing-execution.md).
 
@@ -75,14 +75,14 @@ Gör så här om du vill aktivera en produkt som stöder alla tillgängliga batc
 > [!NOTE]
 > Om ingen batchnummergrupp tilldelas till en batchkontrollerad produkt innehåller jobbkortsenheten som standard manuell inmatning för batchnumret vid rapportering som färdigt.
 
-I följande avsnitt beskrivs hur du ställer in spårningsnummergrupper för att stödja var och en av de tre scenarierna för rapportering av batch-artiklar.
+I följande avsnitt beskrivs hur du konfigurerar spårningsnummergrupper för att stödja var och en av de tre scenarierna för rapportering av batch-artiklar.
 
 ### <a name="set-up-a-tracking-number-group-that-lets-workers-manually-assign-a-batch-number"></a>Skapa en spårningsnummergrupp som gör att arbetare manuellt kan tilldela ett batchnummer
 
-För att tillåta manuellt tilldelade batchnummer följer du dessa steg för att ställa in en spårningsgrupp.
+För att tillåta manuellt tilldelade batchnummer följer du dessa steg för att konfigurera en spårningsgrupp.
 
 1. Gå till **Lagerhantering \> Inställning \> Dimensioner \> Spårningsnummergrupper**.
-1. Skapa eller välj den spårningsnummergrupp som du vill ställa in.
+1. Skapa eller välj den spårningsnummergrupp som du vill konfigurera.
 1. På snabbfliken **Allmänt** ställer du in **Manuellt** till **Ja**.
 
     ![En spårningsnummergrupp för manuella batchnummer.](media/tracking-number-group-manual.png "En spårningsnummer grupp för manuella batchnummer")
@@ -95,10 +95,10 @@ När du använder det här scenario **batchnummer** som sidan **Rapportförlopp*
 
 ### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-batch-numbers"></a>Ställ in en spårningsnummergrupp som innehåller en lista över fördefinierade batchnummer
 
-För att tillhandahålla fördefinierade batchnummer följer du dessa steg för att ställa in en spårningsgrupp.
+För att tillhandahålla fördefinierade batchnummer följer du dessa steg för att konfigurera en spårningsgrupp.
 
 1. Gå till **Lagerhantering \> Inställning > Dimensioner \> Spårningsnummergrupper**.
-1. Skapa eller välj den spårningsnummergrupp som du vill ställa in.
+1. Skapa eller välj den spårningsnummergrupp som du vill konfigurera.
 1. På snabbfliken **Allmänt** ställer du in **Bara för lagertransaktioner** till **Ja**.
 1. Använd fältet **per kvantitet** om du vill dela upp batchnummer per kvantitet, baserat på det värde som du anger. Du har till exempel en tillverkningsorder på tio enheter och fältet **per kvantitet** anges till *2*. I det här fallet kommer fem batchnummer att tilldelas tillverkningsordern när den skapas.
 
@@ -115,7 +115,7 @@ När du använder det här scenario kommer fältet **batchnummer** som sidan **R
 Om batchnummer ska tilldelas automatiskt, utan indata från arbetare, följer du dessa steg för att skapa en spårningsnummergrupp.
 
 1. Gå till **Lagerhantering \> Inställning \> Dimensioner \> Spårningsnummergrupper**.
-1. Skapa eller välj den spårningsnummergrupp som du vill ställa in.
+1. Skapa eller välj den spårningsnummergrupp som du vill konfigurera.
 1. På snabbfliken **Allmänt** ställer du in **Bara för lagertransaktioner** till **Nej**.
 1. Ange alternativet **Manuell** till **Nej**.
 
@@ -155,14 +155,14 @@ För att aktivera varje scenario följer du stegen nedan.
 > [!NOTE]
 > Om ingen serienummergrupp tilldelas till en seriekontrollerad produkt innehåller jobbkortsenheten som standard manuell inmatning för serienumret vid rapportering som färdigt.
 
-I följande avsnitt beskrivs hur du ställer in spårningsnummergrupper för att stödja var och en av de tre scenarierna för rapportering av seriestyrda artiklar.
+I följande avsnitt beskrivs hur du konfigurerar spårningsnummergrupper för att stödja var och en av de tre scenarierna för rapportering av seriestyrda artiklar.
 
 ### <a name="set-up-a-tracking-number-group-that-lets-workers-manually-assign-a-serial-number"></a>Skapa en spårningsnummergrupp som gör att arbetare manuellt kan tilldela ett serienummer
 
-För att tillåta manuellt tilldelade serienummer följer du dessa steg för att ställa in en spårningsgrupp.
+För att tillåta manuellt tilldelade serienummer följer du dessa steg för att konfigurera en spårningsgrupp.
 
 1. Gå till **Lagerhantering \> Inställning \> Dimensioner \> Spårningsnummergrupper**.
-1. Skapa eller välj den spårningsnummergrupp som du vill ställa in.
+1. Skapa eller välj den spårningsnummergrupp som du vill konfigurera.
 1. På snabbfliken **Allmänt** ställer du in **Manuellt** till **Ja**.
 
     ![Sidan Spårningsnummergrupper, serienummer.](media/tracking-number-group-manual-serial.png "Sidan spårningsnummergrupper, serienummer")
@@ -178,10 +178,10 @@ När du använder det här scenario **serienummer** som sidan **Rapportförlopp*
 
 ### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-serial-numbers"></a>Ställ in en spårningsnummergrupp som innehåller en lista över fördefinierade serienummer
 
-För att tillhandahålla fördefinierade serienummer följer du dessa steg för att ställa in en spårningsgrupp.
+För att tillhandahålla fördefinierade serienummer följer du dessa steg för att konfigurera en spårningsgrupp.
 
 1. Gå till **Lagerhantering \> Inställning \> Dimensioner \> Spårningsnummergrupper**.
-1. Skapa eller välj den spårningsnummergrupp som du vill ställa in.
+1. Skapa eller välj den spårningsnummergrupp som du vill konfigurera.
 1. På snabbfliken **Allmänt** ställer du in **Bara för lagertransaktioner** till **Ja**.
 1. Använd fältet **per kvantitet** om du vill dela serienummer per kvantitet av ett.
 
@@ -198,7 +198,7 @@ När du använder det här scenario kommer fältet **serienummer** som sidan **R
 Om serienummer ska tilldelas automatiskt, utan indata från arbetare, följer du dessa steg för att skapa en spårningsnummergrupp.
 
 1. Gå till **Lagerhantering \> Inställning \> Dimensioner \> Spårningsnummergrupper**.
-1. Skapa eller välj den spårningsnummergrupp som du vill ställa in.
+1. Skapa eller välj den spårningsnummergrupp som du vill konfigurera.
 1. På snabbfliken **Allmänt** ställer du in **Bara för lagertransaktioner** till **Nej**.
 1. Ange alternativet **Manuell** till **Nej**.
 

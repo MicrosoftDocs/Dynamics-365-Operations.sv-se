@@ -1,6 +1,6 @@
 ---
 title: Materialhanteringsutrustningens gränssnitt (MHAX)
-description: I det här avsnittet beskrivs hur du ställer in materialhanteringsutrustningens gränssnitt (MHAX) så att du kan ansluta till externa system för fysisk materialhantering (MH).
+description: I denna artikel beskrivs hur du konfigurerar materialhanteringsutrustningens gränssnitt (MHAX) så att du kan ansluta till externa system för fysisk materialhantering (MH).
 author: Mirzaab
 ms.date: 03/04/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4c04b8a9574bb6f34b56b4a7462882f1885f1178
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c4b0d991d320d5a679d0ed60880c56a6cb849e2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695603"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907099"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Materialhanteringsutrustningens gränssnitt (MHAX)
 
@@ -26,7 +26,7 @@ ms.locfileid: "8695603"
 
 Du kan använda *materialhanteringsutrustningens gränssnitt* (MHAX) för att ansluta externa fysiska materialhanteringssystem (MH) till ett lager som hanteras av avancerad lagerhantering (WMS) i Microsoft Dynamics 365 Supply Chain Management. Gränssnittet mellan WMS- och MJ-systemen består av två köer: en för utgående händelser (WMS till MH) och en för inkommande händelser (MH till WMS). WMS-systemet genererar utgående händelser baserade på arbetsrader som skapas under olika arbetsskapande- och körningsprocesser. MH-systemet söker sedan regelbundet i WMS-systemet efter nya händelser och bearbetar svaren. När MH-systemet har slutfört hanteringen av händelserna i enlighet med arbetsinstruktioner skickar det inkommande händelser, till exempel slutförande av arbetsrad och kort plockning.
 
-I följande bild visas de olika elementen och ordningen som processer uppstår i när du använder MHAX-integration.
+I följande bild visas de olika elementen och ordningen som processer uppstår i när du använder MHAX-integrering.
 
 ![MHAX-komponenter och -interaktioner.](media/mhax-components.png "MHAX-komponenter och interaktioner")
 
@@ -50,12 +50,12 @@ Innan du kan använda MHAX-funktionen måste du aktivera både dess funktion och
 
 ## <a name="set-mhax-parameters"></a>Ställa in MHAX-parametrar
 
-Du måste ställa in några allmänna parametrar på sidan **Parametrar för materialhanteringsutrustningens gränssnitt** för att konfigurera funktionen.
+Du måste konfigurera några allmänna parametrar på sidan **Parametrar för materialhanteringsutrustningens gränssnitt** för att konfigurera funktionen.
 
 1. Gå till **Materialhanteringsutrustningens gränssnitt \> Inställningar \> Parametrar för materialhanteringsutrustningens gränssnitt**.
 2. Ange följande fält på fliken **Allmänt**:
 
-    - **Användar-ID** – Välj en arbetare. Den här arbetaren kommer att användas för att köra alla arbetsoperationer (plocka och placera) som bearbetas via den inkommande kön.
+    - **Användar-ID** – Välj en arbetare. Den här arbetaren kommer att användas för att köra alla arbetsåtgärder (plocka och placera) som bearbetas via den inkommande kön.
     - **Aktivera inkommande meddelande-ID** – När det här alternativet är inställt *Ja*, om ett dubbelt inkommande meddelande-ID mottas kommer meddelandet att avvisas och ett felmeddelande anger att meddelandet redan finns. När det här alternativet ställs in på *Nej*, tillåts dubbletter av inkommande meddelanden.
 
 3. På fliken **Nummerserier** väljer du de systemövergripande nummerserier som ska användas för att generera unika ID:ar för inkommande köartiklar, utgående köartiklar och arbetsradpar.
@@ -68,7 +68,7 @@ Vid specifika punkter under skapandet av arbetet eller utförandet avgör system
 
 Varje utgående händelse identifieras unikt av ett utgående kö-ID. Typen av utgående transaktion avgör händelsens typ. Lagerstället och ID:t för abonnemanget som genererade händelsen registreras också på händelsen.
 
-Om du vill föra data till MH-systemet innehåller den utgående händelsen 10 fält för data (**data01** till **data10**). Dessa datafält har en till en-mappning (1:1) till befintliga databasfält. De extraheras specifikt från fält i arbetsraden och arbetshuvudregister. Fälten kan väljas fritt. Du ställer in dem när du skapar abonnemanget.
+Om du vill föra data till MH-systemet innehåller den utgående händelsen 10 fält för data (**data01** till **data10**). Dessa datafält har en till en-mappning (1:1) till befintliga databasfält. De extraheras specifikt från fält i arbetsraden och arbetshuvudregister. Fälten kan väljas fritt. Du konfigurerar dem när du skapar abonnemanget.
 
 Förutom de 10 datafält som har en 1:1-mappning till befintliga databasfält kan händelsen innehålla ett ytterligare datafält som kallas för *nyttolast*. Innehållet i det här fältet genereras av en anpassad X++-kod som kallas för *nyttolastgenerator*. Alla nyttolastgeneratorer som ska användas ställs in i abonnemanget.
 
@@ -88,9 +88,9 @@ Om du vill skapa ett abonnemang går du till **Materialhanteringsutrustningens g
 
 En fråga kan kopplas till varje abonnemang. Den här frågan filtrerar arbetsrader och huvuden för att ytterligare begränsa det arbete som kommer att använda abonnemanget för att generera händelser. Om du vill lägga till en fråga till ett abonnemang markerar du kryssrutan **Kör fråga** för relevant abonnemang på sidan **Abonnemang** och väljer sedan **Redigera fråga** i åtgärdsfönstret. Frågeredigeraren för standard Supply Chain Management.
 
-Dessutom innehåller abonnemanget en *abonnemangsmappning* som mappar fält från arbetshuvudet eller arbetsraden till några av eller alla de 10 kostnadsfria datafälten i den utgående händelsen, efter behov. Om du vill returnera information till MHAX-tjänsten inkluderar du vanligtvis arbetsradspost-ID eller *arbetsradpar-ID*. (Arbetsradpar-ID är en ny egenskap som gör det möjligt för systemet att använda ett enda returkommando för bearbetning av plock- och inleveransrader.) Återstående fält beror på användningsfallen. Det finns några exempel längre fram i det här avsnittet.
+Dessutom innehåller abonnemanget en *abonnemangsmappning* som mappar fält från arbetshuvudet eller arbetsraden till några av eller alla de 10 kostnadsfria datafälten i den utgående händelsen, efter behov. Om du vill returnera information till MHAX-tjänsten inkluderar du vanligtvis arbetsradspost-ID eller *arbetsradpar-ID*. (Arbetsradpar-ID är en ny egenskap som gör det möjligt för systemet att använda ett enda returkommando för bearbetning av plock- och inleveransrader.) Återstående fält beror på användningsfallen. Det finns några exempel längre fram i denna artikel.
 
-Om du vill ställa in en abonnemangskarta väljer du relevant abonnemang på sidan **Abonnemang** och väljer sedan **Abonnemangsmappning** i åtgärdsfönstret. I dialogrutan **abonnemangsmappning** som visas kan du tilldela ett register och ett fält för varje tillgängligt datafält när det behövs.
+Om du vill konfigurera en abonnemangskarta väljer du relevant abonnemang på sidan **Abonnemang** och väljer sedan **Abonnemangsmappning** i åtgärdsfönstret. I dialogrutan **abonnemangsmappning** som visas kan du tilldela ett register och ett fält för varje tillgängligt datafält när det behövs.
 
 ### <a name="outbound-event-types"></a>Utgående händelsetyper
 
@@ -161,7 +161,7 @@ Om ID för arbetsradspar tillhandahålls, markeras alla plocknings-, placerings-
 
 Välj rader från nummerplatskontrollerade platser kräver att **data03** ange ID-numret som ska plockas från, oavsett om raderna är markerade med arbetsradens post-ID eller arbetsradens par-ID. Fältet **data04** måste ange arbetshuvudets ID-nummer för valet.
 
-Placeringsrader accepterar inte mer information. De körs endast baserat på den aktuella arbetsradens plats och arbetets målnummer-ID. Om placeringen måste göras till en annan plats, ändra arbetsradens plats enligt beskrivningen i [Åsidosätt händelser](#override-events) senare i detta avsnittet.
+Placeringsrader accepterar inte mer information. De körs endast baserat på den aktuella arbetsradens plats och arbetets målnummer-ID. Om placeringen måste göras till en annan plats, ändra då arbetsradens plats enligt beskrivningen i avsnittet [Åsidosätt händelser](#override-events) senare i denna artikel.
 
 Anpassade arbetsrader behöver inte, eller stöder, någon ytterligare information i den inkommande händelsen.
 
@@ -210,9 +210,9 @@ Inkommande händelser skrivs först till databasen och de körs sedan omedelbart
 Händelser med statusen *felaktig* bearbetas på nytt senare om felvillkoret är fast. Gör så här om du vill bearbeta dem igen:
 
 - Gå till **Materialhanteringsutrustningens gränssnitt \> Vanlig \> Ingående köer**. Markera relevant kö för inkommande meddelanden och välj **Bearbeta igen** i åtgärdsfönstret.
-- Gå till **Materialhanteringsutrustningens gränssnitt \> Vanlig \> Bearbeta felaktig inkommande kö igen**. En dialogruta för standard batchjobb visas. Där kan du ställa in ett postfilter och schemalägga eller köra ett batchjobb för att bearbeta kön på nytt.
+- Gå till **Materialhanteringsutrustningens gränssnitt \> Vanlig \> Bearbeta felaktig inkommande kö igen**. En dialogruta för standard batchjobb visas. Där kan du konfigurera ett postfilter och schemalägga eller köra ett batchjobb för att bearbeta kön på nytt.
 
-Alla arbetsoperationer (plock och puts) körs med hjälp av arbetaren som valts i fältet **Användar-ID** på sidan för **Parametrar för materialhanteringsutrustningens gränssnitt**.
+Alla arbetsåtgärder (plock och puts) körs med hjälp av arbetaren som valts i fältet **Användar-ID** på sidan för **Parametrar för materialhanteringsutrustningens gränssnitt**.
 
 ### <a name="clean-up-the-inbound-queue"></a>Rensa upp den ingående kön
 
@@ -220,7 +220,7 @@ Så småningom börjar din ingående kö bli full av köartiklar som redan har b
 
 ## <a name="get-a-quick-overview-by-using-the-queue-manager"></a>Få en snabb överblick med köhanteraren
 
-För att få en snabb översikt över all aktivitet som är relaterad till dina inkommande och utgående köer, gå till **Materialhanteringsutrustningens gränssnitt \> Arbetsytor \> Köhanterare**. På sidan **Köhanteraren** finns en uppsättning flikar som du kan använda för att övervaka och utforska köerna. Den innehåller även användbara länkar till de flesta andra sidor som nämns i det här avsnittet.
+För att få en snabb översikt över all aktivitet som är relaterad till dina inkommande och utgående köer, gå till **Materialhanteringsutrustningens gränssnitt \> Arbetsytor \> Köhanterare**. På sidan **Köhanteraren** finns en uppsättning flikar som du kan använda för att övervaka och utforska köerna. Den innehåller även användbara länkar till de flesta andra sidor som nämns i denna artikel.
 
 ## <a name="connect-to-the-mhax-service"></a>Ansluta MHAX-tjänster
 

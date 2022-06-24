@@ -1,6 +1,6 @@
 ---
-title: Flikmodulen
-description: Det här avsnittet handlar om flikmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+title: Flikmodul
+description: Denna artikel handlar om flikmoduler och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 104fb57cfdcd96a0da50899c0eac576074282017
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 6453db5038e3f25df73b7b656bc53df2d936affb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780624"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873124"
 ---
 # <a name="tab-module"></a>Flikmodul
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om flikmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+Denna artikel handlar om flikmoduler och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 
 Flikmoduler är behållarmoduler som används för att ordna informationen på en webbplatssida på flikar. De kan användas på alla sidor där information måste visas på flikar.
 
@@ -51,7 +51,7 @@ Följande bild visar ett exempel på en flikmodul på en webbplatssida. I det h�
 
 ## <a name="add-a-tab-module-to-a-page"></a>Lägg till en flikmodul på en ny sida
 
-Om du vill lägga till en flikmodul på en sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
+Om du vill lägga till en flikmodul på en sida och konfigurera de obligatoriska egenskaperna följer du stegen nedan.
 
 1. Använd Fabrikam-marknadsföringsmallen (eller en mall utan begränsningar) om du vill skapa en ny sida med namnet **Sida för butikspolicyer**.
 1. I platsen **Huvud** i **Standardsida** markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.

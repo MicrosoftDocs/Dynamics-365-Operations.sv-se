@@ -1,6 +1,6 @@
 ---
-title: Potentiell kund till kontanter
-description: Det här avsnittet innehåller en översikt över lösningen potentiell kund till pengar mellan Dynamics 365 Supply Chain Management och Dynamics 365 Sales.
+title: Potentiell kund till pengar
+description: Denna artikel innehåller en översikt över lösningen Potentiell kund till pengar mellan Dynamics 365 Supply Chain Management och Dynamics 365 Sales.
 author: Henrikan
 ms.date: 04/25/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b96f22d711ce5b34c2f8de5a86caf5f89dd3f337
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 40398a481d23b8abed59556a3c6d70e783756017
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857240"
 ---
 # <a name="prospect-to-cash"></a>Prospekt till kontanter
 
@@ -29,7 +29,7 @@ ms.locfileid: "7579002"
 
 Lösningen potentiell kund till pengar ger direkt synkronisering mellan Dynamics 365 Supply Chain Management och Dynamics 365 Sales. Potentiell kund till kontanter-mallarna med funktionen för dataintegrering möjliggör ett flöde av konto-, produkt-, försäljningskvots-, försäljningsorder- samt försäljningsfakturadata. Samtidigt som datan flödar kan du genomföra försäljnings- och marknadsföringsaktiviteter i Sales, samt hantera orderutförande genom att utnyttja lagerhantering i Supply Chain Management. 
 
-För mer information om integration av funktionen potentiell kund till kontanter se en kort YouTube-video [Integrering av potentiell kund till pengar](https://www.youtube.com/watch?v=AVV9x5x-XCg).
+För mer information om integrering av funktionen potentiell kund till kontanter se en kort YouTube-video [Integrering av potentiell kund till pengar](https://www.youtube.com/watch?v=AVV9x5x-XCg).
 
 I den aktuella versionen innehåller lösningen Potentiell kund till pengar följande typer av direktsynkronisering:
 
@@ -70,7 +70,7 @@ Potentiell kund till kontanter-integrering stöds på följande versioner:
   - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - Stöd för Potentiell kund till pengar-integrering via datatabeller krävs.
     
     > [!NOTE]
-    > Du måste initiera följande batchjobb från formuläret **SalesPopulateProspectToCash** när du har installerat snabbkorrigeringarna. Detta formulär är dolt eftersom du bara behöver det en gång. För att komma åt formuläret loggar du in och lägger till följande i din webbläsaradress: *&mi=action:SalesPopulateProspectToCash*, t.ex., `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. När formuläret öppnas klickar du på OK. Då fylls ett nytt fält för **LineCreationSequnceNumber** i tabellerna **SalesLine**, **SalesQuotationLine** och **CustInvoiceTrans** med unika värden och produktraden uppdateras. Detta är nödvändigt för att integrationen Potentiell kund till kontanter ska fungera.
+    > Du måste initiera följande batchjobb från formuläret **SalesPopulateProspectToCash** när du har installerat snabbkorrigeringarna. Detta formulär är dolt eftersom du bara behöver det en gång. För att komma åt formuläret loggar du in och lägger till följande i din webbläsaradress: *&mi=action:SalesPopulateProspectToCash*, t.ex., `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. När formuläret öppnas klickar du på OK. Då fylls ett nytt fält för **LineCreationSequnceNumber** i tabellerna **SalesLine**, **SalesQuotationLine** och **CustInvoiceTrans** med unika värden och produktraden uppdateras. Detta är nödvändigt för att integreringen Potentiell kund till kontanter ska fungera.
 
 
 ## <a name="system-requirements-for-sales"></a>Systemkrav för Sales

@@ -1,6 +1,6 @@
 ---
 title: Arbetsdelning
-description: Det här avsnittet innehåller information om funktionen arbetsdelning. Med den här funktionen kan du dela upp stora arbetsorder i flera mindre arbetsorder som du sedan kan tilldela till flera lagerarbetare. På så sätt kan samma arbete plockas samtidigt av flera lagerarbetare.
+description: Denna artikel innehåller information om funktionen arbetsdelning. Med den här funktionen kan du dela upp stora arbetsorder i flera mindre arbetsorder som du sedan kan tilldela till flera lagerarbetare. På så sätt kan samma arbete plockas samtidigt av flera lagerarbetare.
 author: Mirzaab
 ms.date: 10/15/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b9914958684d552f0b45ddca641238124ade3454
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 83333f4d8c755bc0ca4b2d141a5591ef43501b64
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669472"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857037"
 ---
 # <a name="work-split"></a>Arbetsdelning
 
@@ -94,7 +94,7 @@ Om du vill dela arbete följer du stegen nedan.
 
     Följande meddelande visas: "användarna kan inte bearbeta rader i arbetet förrän du har slutfört delningen och stängt sidan".
 
-    Fältet **Arbetsblockerande skäl** för aktuellt arbete kommer att anges till *Delat arbete* och arbetet blockeras. 
+    Fältet **Arbetsblockerande skäl** för aktuellt arbete kommer att anges till *Delat arbete* och arbetet blockeras.
 
     ![Spärrningsorsak.](media/Blocking_reason.png "Spärrningsorsak")
 
@@ -151,9 +151,9 @@ När blockeringsorsaken *Delat arbete* tas bort kan arbetet köras på den mobil
 
 Om du försöker använda mobilappen för distributionslagerhantering för att köra plockningsarbete mot ett arbets-ID som redan delas av en annan användare visas följande felmeddelande: "arbetet med ID \#\#\#\# håller på att delas. Om du får detta meddelande väljer du **Avbryt**. Därefter kan du fortsätta att bearbeta annat arbete.
 
-## <a name="other-blocked-operations"></a>Andra blockerade operationer
+## <a name="other-blocked-operations"></a>Andra blockerade åtgärder
 
-Alla operationer som ändrar arbetsrader, arbetslagertransaktioner eller lagerpåfyllnadslänkar som är relaterade till arbete som delas kommer att misslyckas, och följande felmeddelande visas: "arbetet med ID håller \#\#\#\# just nu på att delas."
+Alla åtgärder som ändrar arbetsrader, arbetslagertransaktioner eller lagerpåfyllnadslänkar som är relaterade till arbete som delas kommer att misslyckas, och följande felmeddelande visas: "arbetet med ID håller \#\#\#\# just nu på att delas."
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Avancerad belastningsuppbyggnad under påfyllnad
-description: I det här avsnittet finns information om avancerad belastningsuppbyggnad under påfyllnad, som automatiskt tilldelar försändelser till befintliga påfyllnader under påfyllnadskörning. Därför kan du skapa meningsfulla laster som representerar truckar utan att behöva använda workbench för lastplanering.
+description: I denna artikel finns information om avancerad belastningsuppbyggnad under påfyllnad, som automatiskt tilldelar försändelser till befintliga påfyllnader under påfyllnadskörning. Därför kan du skapa meningsfulla laster som representerar truckar utan att behöva använda workbench för lastplanering.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0dafac981bcdec307de6dc202f557e7b8837ae2e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3a630a7f388e0bbb6fee96e4de753b2380d305c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670529"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863778"
 ---
 # <a name="advanced-load-building-during-wave"></a>Avancerad belastningsuppbyggnad under påfyllnad
 
@@ -28,7 +28,7 @@ Avancerad belastningsuppbyggnad under påfyllnad, som automatiskt tilldelar för
 
 Under en påfyllnadsbearbetning skapar systemet vanligtvis en ny beläggning för varje försändelse som ingen last tilldelas till. När avancerad avancerad belastningsuppbyggnad under påfyllnad är aktiverad tilldelar dock systemet varje otilldelad leverans till en befintlig last (om en lämplig last finns) och nya laster skapas endast när de behövs. Avancerad belastningsuppbyggnad under påfyllnad skapar automatiskt nya laster, baserat på de kriterier du definierar.
 
-Om du vill använda funktionen måste du ställa in systemet på följande sätt:
+Om du vill använda funktionen måste du konfigurera systemet på följande sätt:
 
 - Skapa *påfyllnadsmallar* som innehåller den nya **buildLoads**-metoden. Den här metoden gör avancerad belastningsuppbyggnad under påfyllnad tillgänglig för påfyllnader som använder dessa mallar.
 - Konfigurera *mallar för belastningsuppbyggnad*, som var och en är kopplad till en viss påfyllnadsmall och -metod. Mallar för belastningsuppbyggnad styr vilken belastning (befintlig eller ny) som används för att lägga till de lastrader som används för påfyllnad. Du kan ha kombinerade eller separata försändelser, baserat på kriterier som t.ex. lastmall, utrustning och andra fältvärden på lastraden.
@@ -143,7 +143,7 @@ Om du vill utnyttja avancerad belastningsuppbyggnad under påfyllnad måste du i
 1. Klicka på **Spara** i åtgärdsfönstret.
 
 > [!NOTE]
-> Koder för påfyllnadssteg är koder som användarna kan ställa in och använda för att länka specifika förekomster av påfyllnadsmetoder till en motsvarande mallar. Mallarna innehåller mallar för påfyllning, skapande av behållare, etikettutskrift, lastuppbyggnad och sortering.
+> Koder för påfyllnadssteg är koder som användarna kan konfigurera och använda för att länka specifika förekomster av påfyllnadsmetoder till en motsvarande mallar. Mallarna innehåller mallar för påfyllning, skapande av behållare, etikettutskrift, lastuppbyggnad och sortering.
 >
 > När koder för påfyllnadssteg inte används måste användarna ange fritext för att referera till en specifik mall från förekomst av påfyllnadsmetod. Fritext är benägen att bli fel, eftersom användare måste se till att påfyllnadsstegets text de lägger till för en specifik påfyllnadsstegmetoden i en vågmall exakt matchar påfyllnadsstegtexten i målmallen.
 >
@@ -151,7 +151,7 @@ Om du vill utnyttja avancerad belastningsuppbyggnad under påfyllnad måste du i
 
 ### <a name="set-up-load-mix-groups"></a>Ställ in grupper med blandad last
 
-grupper med blandad last skapar regler för de typer av artiklar som kan kombineras i en enda last. Du kan ställa in så många grupper med blandad last, som du behöver. Om du vill använda avancerad belastningsuppbyggnad måste du dock ha minst en. Följ dessa steg om du vill skapa grupp med blandad last.
+grupper med blandad last skapar regler för de typer av artiklar som kan kombineras i en enda last. Du kan konfigurera så många grupper med blandad last, som du behöver. Om du vill använda avancerad belastningsuppbyggnad måste du dock ha minst en. Följ dessa steg om du vill skapa grupp med blandad last.
 
 1. Gå till **Lagerstyrning** \> **Inställningar** \> **Last** \> **Grupper med blandad last**.
 1. I åtgärdsfönstret, välj **Ny** för att skapa en lastgrupp.
@@ -183,7 +183,7 @@ Om du arbetar med **USMF** demodata har du nu avslutat den här inställningen.
 
 ### <a name="set-up-load-build-templates"></a>Konfigurera mallar för belastningsuppbyggnad
 
-Du kan ställa in så många mallar för belastningsuppbyggnad, som du behöver. Om du vill använda avancerad belastningsuppbyggnad måste du dock ha minst en. Följ dessa steg om du vill skapa en mall för belastningsuppbyggnad.
+Du kan konfigurera så många mallar för belastningsuppbyggnad, som du behöver. Om du vill använda avancerad belastningsuppbyggnad måste du dock ha minst en. Följ dessa steg om du vill skapa en mall för belastningsuppbyggnad.
 
 1. Gå till **Lagerstyrning** \> **Inställningar** \> **Last** \> **Belastningsuppbyggnad under påfyllnad**.
 1. I åtgärdsfönstret, välj **Ny** du vill lägga till en rad i rutnätet.
@@ -193,7 +193,7 @@ Du kan ställa in så många mallar för belastningsuppbyggnad, som du behöver.
     |---|---|---|
     | Sekvensnummer | Den ordning som mallen ska utvärderas i. | *1* |
     | Lastuppbyggnadens mallnamn | Ange den unika identifieraren av lastuppbyggnadsmallen. Ange namnet på mallen som du skapade eller uppdaterade tidigare i den här inställningen. | *Standardleverans 62* |
-    | Kod för påfyllnadssteg | Ange påfyllnadsstegkod som ska användas för att länka mallen till en vågmetod. Du bör ange koden som du har valt för metoden **buildLoads** när du ställer in påfyllnadsmallen tidigare i den här inställningen. | *WSC2112* |
+    | Kod för påfyllnadssteg | Ange påfyllnadsstegkod som ska användas för att länka mallen till en vågmetod. Du bör ange koden som du har valt för metoden **buildLoads** när du konfigurerar påfyllnadsmallen tidigare i den här inställningen. | *WSC2112* |
     | Lastmall-ID | Välj den lastmall som används när du skapar nya laster och att matcha mot när du tilldelar befintliga laster. I lastmallen definieras den maximala vikt och volym som tillåts för hela lasten. | *Standardlastmall* |
     | Utrustning | Utrustningen att matcha mot när du tilldelar befintliga laster och att ange nya laster som skapas. | Lämna det här fältet tomt. |
     | ID för grupp med blandad last | Välj den grupp med blandad last som används om artikeln är tillåtet på lasten. Blandade gruppen skapar regler för de typer av artiklar som kan kombineras i en enda last. Markera en av de blandade grupper som du skapade tidigare i den här inställningen. | *TV* |
@@ -220,7 +220,7 @@ Du kan ställa in så många mallar för belastningsuppbyggnad, som du behöver.
 
 ## <a name="scenario"></a>Scenario
 
-Det här scenariot visar hur inställningarna som beskrevs tidigare i det här avsnittet påverkar lageroperationer medan en försäljningsorder bearbetas. I det här scenariot används **USMF** demodata tillsammans med andra demovärden som finns i dessa installationsanvisningar.
+Det här scenariot visar hur inställningarna som beskrevs tidigare i denna artikel påverkar lageråtgärder medan en försäljningsorder bearbetas. I det här scenariot används **USMF** demodata tillsammans med andra demovärden som finns i dessa installationsanvisningar.
 
 ### <a name="create-sales-orders"></a>Skapa försäljningsorder
 
@@ -246,7 +246,7 @@ Det här scenariot visar hur inställningarna som beskrevs tidigare i det här a
 1. Upprepa raderna 6 till 9 om du vill reservera raden och släppa den på lagerstället. En **ny** leverans skapas för raden som du har lagt till i systemet. Eftersom du använder avancerad belastningsuppbyggnad under påfyllnad lägger systemet dock till leverans- och lastraden för den befintliga påfyllnaden. Om du inte använder avancerad belastningsuppbyggnad under påfyllnad skulle systemet skapa en ny last för leveransen.
 1. I försäljningsordern som du just skapat på snabbfliken **Försäljningsorderrader** väljer du **Lägg till rad** om du vill lägga till ytterligare en rad.
 1. På den nya raden anger du fältet **Artikelnummer** till *M9200* och fältet **Kvantitet** till *1*.
-1. Upprepa raderna 6 till 9 om du vill reservera raden och släppa den på lagerstället. Som tidigare skapar systemet en **ny** leverans för raden som du har lagt till. Eftersom artikeln kommer från artikelgruppen **CarAudio** kommer den att **misslyckas med att klara de begränsningar som du ställer in för grupp med blandad last**. Därför **läggs det till i en ny last**. Om du inte hade angett en grupp med blandad last i lastuppbyggnadsmallen skulle denna leverans ha lagts till i den första lasten.
+1. Upprepa raderna 6 till 9 om du vill reservera raden och släppa den på lagerstället. Som tidigare skapar systemet en **ny** leverans för raden som du har lagt till. Eftersom artikeln kommer från artikelgruppen **CarAudio** kommer den att **misslyckas med att klara de begränsningar som du konfigurerar för grupp med blandad last**. Därför **läggs det till i en ny last**. Om du inte hade angett en grupp med blandad last i lastuppbyggnadsmallen skulle denna leverans ha lagts till i den första lasten.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

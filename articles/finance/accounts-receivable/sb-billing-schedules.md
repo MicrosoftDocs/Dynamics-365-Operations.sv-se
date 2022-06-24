@@ -1,6 +1,6 @@
 ---
 title: Skapa faktureringsscheman
-description: Det här avsnittet förklarar hur du skapar, tar bort och redigerar faktureringstidsplaner.
+description: Den här artikeln förklarar hur du skapar, tar bort och redigerar faktureringstidsplaner.
 author: JodiChristiansen
 ms.date: 02/09/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: ed31dd96b0115610cfb74aed69f1acc1055bfe56
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1248799f92dc6cbce8528a53cc8a3012d2a67b3c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690457"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903404"
 ---
 # <a name="create-billing-schedules"></a>Skapa faktureringsscheman
 
@@ -83,7 +83,7 @@ Om du vill ta bort en artikel från en faktureringsplan följer du dessa steg.
 2. På snabbfliken **Faktureringsschemarader**, välj raden som ska raderas och välj sedan **Ta bort**.
 3. Välj **Spara**.
 
-I resten av det här avsnittet beskrivs de åtgärder och den information som är tillgängliga för rader på snabbfliken **Faktureringsschemarader**.
+I resten av den här artikeln beskrivs de åtgärder och den information som är tillgängliga för rader på snabbfliken **Faktureringsschemarader**.
 
 ## <a name="billing-schedule-line-actions"></a>Radåtgärder för faktureringsschema
 

@@ -1,6 +1,6 @@
 ---
 title: Leverera order som direktleveranser
-description: Det här avsnittet visar hur du kan skapa en direktleverans för en försäljningsorder.
+description: Denna artikel visar hur du kan skapa en direktleverans för en försäljningsorder.
 author: Henrikan
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 94890b0915a49052c298090f124cf2b91c462de8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f5f145bacecc47a782c60335c6ff5b79f978007c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572451"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875171"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Leverera order som direktleveranser
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet visar hur du kan skapa en direktleverans för en försäljningsorder. Du använder direktleverans när du vill leverera varor direkt till kunden från leverantören, i stället för att skicka dem till ditt lagerställe först. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Om du vill slutföra den andra deluppgiften ”Skapa direktleveranser från arbetsbänken” ska du se till att artikeln du väljer på försäljningsordern har en standardleverantör angiven på inköpsnabbfliken för den frisläppta produktmallen.
+Denna artikel visar hur du kan skapa en direktleverans för en försäljningsorder. Du använder direktleverans när du vill leverera varor direkt till kunden från leverantören, i stället för att skicka dem till ditt lagerställe först. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Om du vill slutföra den andra deluppgiften ”Skapa direktleveranser från arbetsbänken” ska du se till att artikeln du väljer på försäljningsordern har en standardleverantör angiven på inköpsnabbfliken för den frisläppta produktmallen.
 
 ## <a name="set-an-individual-order-for-direct-delivery"></a>Ange en enskild order för direktleverans
 1. Gå till **Navigeringsfönstret > Moduler > Kundreskontra > Order > Alla försäljningsorder**.
@@ -71,7 +71,7 @@ Det här avsnittet visar hur du kan skapa en direktleverans för en försäljnin
 4. Ange eller välj ett värde i fälten **Artikelnummer** och **site**.
 5. Visa avsnittet **Raddetaljer** och välj sedan fliken **Leverans**. Istället för att skapa en direktleverans som en del av bearbetningen av försäljningsordern som i föregående procedur, kan du överlämna uppgiften till en inköpare. Om du vill inkludera försäljningsorderraden i hanteringsprocessen för direktleveransen måste du markera raden för direktleverans.  
 6. Välj **Ja** i fältet **Direkt leverans**.
-    - Om artikeln redan har ställts in för direktleverans som standard, kommer fältet automatiskt att ställas in på Ja i orderradposten. Du kan ställa in en artikel för direktleverans i en frisläppts produkts mall genom att ställa in alternativet Direktleverans på Ja och markera ett standardlagerställe för direktleveransen.  
+    - Om artikeln redan har ställts in för direktleverans som standard, kommer fältet automatiskt att ställas in på Ja i orderradposten. Du kan konfigurera en artikel för direktleverans i en frisläppts produkts mall genom att konfigurera alternativet Direktleverans på Ja och markera ett standardlagerställe för direktleveransen.  
     - Eftersom inköpsordern ännu inte har skapats, ställs statusen för direktleveransen in på För direktleverans.   
 7. Välj **Spara**.
 8. Stäng sidorna tills du går tillbaka till startsidan.

@@ -1,6 +1,6 @@
 ---
 title: Ekonomisk konsolidering och valutaregistrering – översikt
-description: Det här avsnittet beskriver online ekonomiska konsolideringar och valutaöversättningar i redovisning.
+description: Den här artikeln beskriver online ekonomiska konsolideringar och valutaöversättningar i redovisning.
 author: jinniew
 ms.date: 10/07/2021
 ms.topic: overview
@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: f6f0094ac3307164e1c715a71e16b0766247e275
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713880"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846869"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Ekonomisk konsolidering och valutaregistrering – översikt
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet hjälper dig genom metoden som både Microsoft Dynamics 365 Finance och ekonomisk rapportering använder för konsolideringar. Det beskriver scenarier som omfattar rapportering med flera företag, aggregering, eliminering och minoritetsintresse. Här förklaras också hur du ska hantera vissa situationer, till exempel scenarier där juridiska personer har olika räkenskapsperioder eller olika kontoplaner.
+Den här artikeln hjälper dig genom metoden som både Microsoft Dynamics 365 Finance och ekonomisk rapportering använder för konsolideringar. Det beskriver scenarier som omfattar rapportering med flera företag, aggregering, eliminering och minoritetsintresse. Här förklaras också hur du ska hantera vissa situationer, till exempel scenarier där juridiska personer har olika räkenskapsperioder eller olika kontoplaner.
 
-Det här avsnittet är avsett för användare och funktionella konsulter och antar att läsare har en förståelse för Finance och ekonomisk rapportering. Grundinställningen omfattas inte.
+Den här artikeln är avsett för användare och funktionella konsulter och antar att läsare har en förståelse för Finance och ekonomisk rapportering. Grundinställningen omfattas inte.
 
 > [!NOTE]
 > Termen *juridisk person* används i Finance och termen *företag* används i ekonomiska rapporter. Båda dessa termer används i detta avsnitt: För detta avsnitt är deras innebörd dock densamma.
 
 ## <a name="audience"></a>Målgrupp
-Det här avsnittet är avsett ekonomi- och redovisningsanvändare och programkonsulter som vill använda Ekonomi och drift och ekonomisk rapportering för att konsolidera flera företag och flera valutor.
+Den här artikeln är avsett ekonomi- och redovisningsanvändare och programkonsulter som vill använda Ekonomi och drift och ekonomisk rapportering för att konsolidera flera företag och flera valutor.
 
 ## <a name="approach"></a>Metod
 Finance använder en separat juridisk person för att behandla en konsolidering. Det gör att konsolidering av enskilda instanser, men ger även möjlighet att hämta data från andra källor. Konsolideringsprocessen måste köras varje gång ändringar görs i källans juridiska person.

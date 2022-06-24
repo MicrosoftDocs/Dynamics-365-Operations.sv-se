@@ -1,6 +1,6 @@
 ---
 title: Aktivera incheckningsmeddelanden för kunder i kassan (POS)
-description: I det här ämnet beskrivs hur du aktiverar incheckningsmeddelanden för kunder Microsoft Dynamics 365 Commerce i kassan (POS).
+description: I denna artikel beskrivs hur du aktiverar incheckningsmeddelanden för kunder i Microsoft Dynamics 365 Commerce-kassan (POS).
 author: bicyclingfool
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 95b4e3a1750cf072db919492f7445e87654701da
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ae53657c95128eae793f670bd9dbc31d9fac0fe4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983171"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885155"
 ---
 # <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>Aktivera incheckningsmeddelanden för kunder i kassan (POS)
 
 [!include [banner](includes/banner.md)]
 
-I det här ämnet beskrivs hur du aktiverar incheckningsmeddelanden för kunder Microsoft Dynamics 365 Commerce i kassan (POS).
+I denna artikel beskrivs hur du aktiverar incheckningsmeddelanden för kunder i Microsoft Dynamics 365 Commerce-kassan (POS).
 
 I sina "order redo för hämtning"-meddelanden via e-post kan organisationer skicka med en länk eller knapp som låter kunderna meddela butiken att de är på plats och väntar på att deras paket ska hämtas ut till dem. Kunderna får sedan en incheckningsbekräftelse och butiken ett meddelande som en uppgift i sitt kassaprogram. Denna uppgift fungerar som en uppmaning till en försäljare att leverera ordern till kundens fordon. Därför behöver kunden inte komma in i butiken.
 
@@ -36,7 +36,7 @@ Kundens incheckningsarbetsflöde kan även konfigureras för att samla in ytterl
 
 När incheckningsfunktionen för kund är aktiverad genererar Commerce ett orderbekräftelse-ID (även kallat kanalreferens-ID). Det genererar även orderbekräftelse-ID för order som skapas via kassakanaler (POS) eller kundtjänstkanaler. 
 
-Följ dessa steg om du vill aktivera incheckningsfunktionen för kund i Commerce-administrationen.
+Följ dessa steg om du vill aktivera incheckningsfunktionen för kund i Commerce headquarters.
 
 1. Gå till **Arbetsytor \> Funktionshantering**.
 2. Sök efter funktionen **Generera ID-format för konsekvent kanalreferens för flera kanaler**. 
@@ -44,7 +44,7 @@ Följ dessa steg om du vill aktivera incheckningsfunktionen för kund i Commerce
 
 ## <a name="create-a-check-in-confirmation-page"></a>Skapa en bekräftelsesida för incheckning
 
-På din näthandelsplats måste du skapa en ny sida som fungerar som upplevelse för incheckningsbekräftelse. Genom ytterligare konfiguration kan sidan även innehålla ett formulär som samlar in ytterligare information från kunder i syfte att underlätta uppfyllelsen av order. Information om hur du ställer in sida och modul finns i [modulen Kundincheckning](check-in-pickup-module.md).
+På din näthandelsplats måste du skapa en ny sida som fungerar som upplevelse för incheckningsbekräftelse. Genom ytterligare konfiguration kan sidan även innehålla ett formulär som samlar in ytterligare information från kunder i syfte att underlätta uppfyllelsen av order. Information om hur du konfigurerar sida och modul finns i [modulen Kundincheckning](check-in-pickup-module.md).
 
 ## <a name="configure-the-transactional-email-template"></a>Konfigurera mallen för transaktionsmeddelande via e-post
 
@@ -70,7 +70,7 @@ Om du vill testa incheckningsfunktionen för kunder följer du dessa steg.
 1. Checka in sidan och publicera den inte.
 1. Lägg till följande länk till en e-postmall som startas av den packade meddelandetypen för ett upphämtningsläge för leverans. För mer information, se [Skapa e-postmallar för transaktionshändelser](email-templates-transactions.md).
 
-    - **För förproduktionsmiljöer (UAT):** Lägg till kodfragmentet från avsnittet [Konfigurera mallen för transaktionsmeddelande via e-post](#configure-the-transactional-email-template) tidigare i detta ämne.
+    - **För förproduktionsmiljöer (UAT):** Lägg till kodfragmentet från avsnittet [Konfigurera mallen för transaktionsmeddelande via e-post](#configure-the-transactional-email-template) tidigare i denna artikel.
     - **För produktionsmiljöer:** Lägg till följande kommentarskod så att befintliga kunder inte påverkas.
 
         `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`

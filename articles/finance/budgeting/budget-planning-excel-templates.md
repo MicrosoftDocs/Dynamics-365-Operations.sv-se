@@ -1,6 +1,6 @@
 ---
 title: Budgetplaneringsmallar för Excel
-description: Det här avsnittet beskriver hur du skapar Microsoft Excel-mallar som kan användas med budgetplaner.
+description: Den här artikeln beskriver hur du skapar Microsoft Excel-mallar som kan användas med budgetplaner.
 author: panolte
 ms.date: 01/12/2018
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 90691aec0ffad8d33a19a09e7bc521cd6d6a09a9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711988"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872511"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budgetplaneringsmallar för Excel
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du skapar Microsoft Excel-mallar som kan användas med budgetplaner.
+Den här artikeln beskriver hur du skapar Microsoft Excel-mallar som kan användas med budgetplaner.
 
-Det här avsnittet beskriver hur du skapar Excel-mallar som ska användas med budgetplaner som använder vanlig demodatauppsättning och administratörsinloggning. Mer information om budgetplanering finns [Översikt för budgetplanering](budget-planning-overview-configuration.md). Du kan även följa guiden [Budgetplanering](budget-plan.md) för att lära dig grundläggande modulkonfiguration och användning.
+Den här artikeln beskriver hur du skapar Excel-mallar som ska användas med budgetplaner som använder vanlig demodatauppsättning och administratörsinloggning. Mer information om budgetplanering finns [Översikt för budgetplanering](budget-planning-overview-configuration.md). Du kan även följa guiden [Budgetplanering](budget-plan.md) för att lära dig grundläggande modulkonfiguration och användning.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Skapa ett kalkylblad med en dokumentlayout för budgetplan
 
-Budgetplandokument kan visas och redigeras med hjälp av en eller flera av layouter. Varje layout kan ha en associerad budgetplansmall som låter dig visa och redigera budgetplandata i ett Excel-kalkylblad. I det här avsnittet genereras en budgetplansmall med hjälp av en befintlig layoutkonfiguration. 
+Budgetplandokument kan visas och redigeras med hjälp av en eller flera av layouter. Varje layout kan ha en associerad budgetplansmall som låter dig visa och redigera budgetplandata i ett Excel-kalkylblad. I den här artikeln genereras en budgetplansmall med hjälp av en befintlig layoutkonfiguration. 
 
 1. Öppna **Budgetplanlista** (**Budgetering** &gt; **Budgetplaner**). 
 2. Klicka på **Ny** om du vill skapa en ny budgetplan. 

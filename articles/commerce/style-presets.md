@@ -1,6 +1,6 @@
 ---
 title: Arbeta med format för inställningar
-description: I det här avsnittet beskrivs hur du arbetar med förinställda stilar i Microsoft Dynamics 365 Commerce webbplatsskapare.
+description: I denna artikel beskrivs hur du arbetar med förinställda stilar i Microsoft Dynamics 365 Commerce-webbplatsverktyget.
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 63e11b718a2b5221c722a11de3a8df6d9d0e3d6b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 0a06052ab29502c57a2ad5a25e5bec870585ef4a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964863"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900370"
 ---
 # <a name="work-with-style-presets"></a>Arbeta med format för inställningar
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du arbetar med förinställda stilar i Microsoft Dynamics 365 Commerce webbplatsskapare.
+I denna artikel beskrivs hur du arbetar med förinställda stilar i Microsoft Dynamics 365 Commerce-webbplatsverktyget.
 
 En format för inställning är en lagrad uppsättning av alla redigeringsbara formatmallar i en webbplatstema. Du kan använda den för att omedelbart ändra utseendet på en webbplats från webbplatsskaparen. Förinställningar av stil låter Commerce webbplatsskapare snabbt ändra, förhandsgranska och aktivera en uppsättning av stilvärden på sin webbplats utan att behöva använda sammanhängande formatmallar (CSS) eller distribuera teman. Teckensnittsstilar, knappformat och webbplatsfärger är typiska exempel på formatvariabler som kan hanteras via format för inställningar.
 
@@ -52,7 +52,7 @@ Om du vill förhandsgranska ett inställningsformat i webbplatsskaparen följer 
 1. Välj den leverantörsspecifika och språkspecifika URL-varianten som ska förhandsgranskas genom att välja variantens namn. Ett nytt fönster för förhandsgranskningswebbläsaren öppnas, där valt inställningsformat används på den angivna sidan.
 
 > [!NOTE]
-> URL:en för förhandsgranskning är beständig och autentiserad. Därför kan du kopiera, klistra in och skicka den till andra autentiserade medarbetare för granskning innan du ställer in den på "aktiv" på din aktiva webbplats. URL:en för förhandsgranskning är också användbar när du vill kontrollera stilar på olika enheter, i olika webbläsare och på olika skärmar.
+> URL:en för förhandsgranskning är beständig och autentiserad. Därför kan du kopiera, klistra in och skicka den till andra autentiserade medarbetare för granskning innan du konfigurerar den på "aktiv" på din aktiva webbplats. URL:en för förhandsgranskning är också användbar när du vill kontrollera stilar på olika enheter, i olika webbläsare och på olika skärmar.
 
 > [!TIP]
 > När du redigerar ett inställningsformat kan det vara bra att låta förhandsgranskningsfönstret vara öppet i ett separat webbläsarfönster, så att du snabbt kan validera dina ändringar. När du har sparat ändringarna i en förinställning uppdaterar du det öppna fönstret för förhandsgranskning av webbläsare för att validera användarupplevelsen.
@@ -70,7 +70,7 @@ Om du vill skapa ett anpassat inställningsformat i webbplatsskaparen följer du
 
 ## <a name="modify-global-and-module-type-style-values"></a>Ändra globala format och värden för modultypformat
 
-Vissa av temats formatvariabler delas mellan olika modultyper. Dessa formatvariabler kallas för *globala* formatvariabler. Exempel på detta är primära webbplatsfärger, standardstilar för teckensnitt och knappformat. Genom att ställa in globala variabler kan du ändra utseendet på många olika typer av moduler.
+Vissa av temats formatvariabler delas mellan olika modultyper. Dessa formatvariabler kallas för *globala* formatvariabler. Exempel på detta är primära webbplatsfärger, standardstilar för teckensnitt och knappformat. Genom att konfigurera globala variabler kan du ändra utseendet på många olika typer av moduler.
 
 Vissa formatvärden kan vara unika för en modultyp, eller också måste ett globalt standardvärde åsidosättas. Om en webbplats tema har implementerat variabler för modultypen kan webbplatsskaparen anpassa formatet för en modultyp oberoende av de globala inställningarna. En modultyps variabler kan antingen utöka eller åsidosätta variabler i det globala formatet i ett tema.
 
@@ -97,7 +97,7 @@ Gör så här om du vill ändra globala formatvärden eller modultyp i webbplats
 
 ## <a name="make-a-new-style-preset-active-on-your-live-site"></a>Aktivera en ny formatinställning som är aktiv på din aktiva webbplats
 
-Om du vill ställa in en formatinställning som ny aktiv för inställning på webbplatsen följer du stegen nedan.
+Om du vill konfigurera en formatinställning som ny aktiv för inställning på webbplatsen följer du stegen nedan.
 
 - Välj knappen **Ange som aktiv** på något av följande ställen:
 

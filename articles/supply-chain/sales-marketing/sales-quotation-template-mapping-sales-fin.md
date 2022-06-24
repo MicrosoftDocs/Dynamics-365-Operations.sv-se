@@ -1,6 +1,6 @@
 ---
 title: Synkronisera försäljningsoffertrubriker och rader direkt från Sales till Supply Chain Management
-description: I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningsoffertrubriker och rader direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
+description: I denna artikel diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningsoffertrubriker och rader direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 362b6c290b1784d05e42ecb650911cc51aa8478a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 440b0a6fd2d297027cf3cab548c611544450269a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061994"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854135"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Synkronisera försäljningsoffertrubriker och rader direkt från Sales till Supply Chain Management
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061994"
 
 
 
-I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningsoffertrubriker och rader direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
+I denna artikel diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningsoffertrubriker och rader direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
 
 > [!NOTE]
 > Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Microsoft Dataverse för appar](/powerapps/administrator/data-integrator).
@@ -91,9 +91,9 @@ Innan försäljningsofferter synkroniseras är det viktigt att du uppdaterar fö
 
 ### <a name="setup-in-sales"></a>Inställningar i Sales
 
-- Se till att behörigheterna ställs in för teamet som användaren från din anslutning som anges i Sales har tilldelats. Om du använder demodata har användaren vanligtvis administratörsåtkomst, men inte administratöråtkomst. Om gruppen inte har administratörsåtkomst även när du kör projektet från dataintegration, visas ett felmeddelande att primärt team saknas.
+- Se till att behörigheterna ställs in för teamet som användaren från din anslutning som anges i Sales har tilldelats. Om du använder demodata har användaren vanligtvis administratörsåtkomst, men inte administratöråtkomst. Om gruppen inte har administratörsåtkomst även när du kör projektet från dataintegrering, visas ett felmeddelande att primärt team saknas.
 
-    Om du vill ställa in behörigheter för gruppen gå till **inställningar**&gt;**säkerhet**&gt;**team**, och välj relevant team. Välj **hantera roller**, och välj sedan en roll med behörigheter, t.ex. **systemadministratör**.
+    Om du vill konfigurera behörigheter för gruppen gå till **inställningar**&gt;**säkerhet**&gt;**team**, och välj relevant team. Välj **hantera roller**, och välj sedan en roll med behörigheter, t.ex. **systemadministratör**.
 
 - Gå till **inställningar** &gt; **Administration** &gt; **systeminställningar** &gt; **Sales** och säkerställ att följande inställningar används:
 
@@ -136,7 +136,7 @@ I följande illustrationer visas ett exempel på en mallmappning i dataintegrat�
 
 ![Mallmappning i dataintegrator, QuoteLine.](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Potentiell kund till pengar](prospect-to-cash.md)
 

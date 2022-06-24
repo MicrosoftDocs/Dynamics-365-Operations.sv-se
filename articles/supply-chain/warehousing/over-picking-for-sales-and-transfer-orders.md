@@ -1,6 +1,6 @@
 ---
 title: Överplockning för försäljningsorder och överföringsorder
-description: I avsnittet beskrivs hur du aktiverar överplockning för försäljningsorder och överföringsorder.
+description: I artikeln förklaras hur du aktiverar överplockning för försäljningsorder och överföringsorder.
 author: GalynaFedorova
 ms.date: 07/06/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-06
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 52a4225efa88a7b9303dd611d5652f59da1612a4
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b8bbc7d532f910edfb442831d6c906f253dee06c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678420"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897296"
 ---
 # <a name="over-picking-for-sales-orders-and-transfer-orders"></a>Överplockning för försäljningsorder och överföringsorder
 
 [!include [banner](../includes/banner.md)]
 
-Avsnittet innehåller ett scenario som visar hur du aktiverar antingen en viss arbetare eller alla arbetare för överplockning. Överplockningsprocessen ger möjlighet till kontrollerad överplockning under plockningsarbetet.
+Denna artikel lägger fram ett scenario som visar hur du aktiverar antingen en viss arbetare eller alla arbetare för överplockning. Överplockningsprocessen ger möjlighet till kontrollerad överplockning under plockningsarbetet.
 
 Lagerställes överplockning är ett enkelt koncept. Systemet låter arbetare att plocka fler artiklar än vad som har angetts för en order. Processen beaktar dock den gräns för överleverans som har ställts in på radnivå för överföringsordern eller försäljningsordern. Om denna gräns överskrids informerar appen Warehouse Management arbetarna om att de överskrider gränsen för överleverans.
 
@@ -41,11 +41,11 @@ Funktionen för överplockning minimerar underhåll och hjälper även dina inst
 > [!IMPORTANT]
 > Funktionen för överplockning gäller endast för plockning och bearbetning av försäljningsorder och överföringsorder. Lagerpåfyllnad har inte stöd för överplockning. När lagerpåfyllnadsarbete körs tillåter systemet inte att användarna plockar för mycket.
 
-Scenariot i avsnittet visar hur du ställer in och använder överplockningsfunktionen.
+Scenariot i denna artikel visar hur du konfigurerar och använder överplockningsfunktionen.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Scenario: Göra demodata tillgängliga
 
-Scenariot i detta ämne innehåller referensvärden och -poster som ingår i den standarddemodata som finns för Microsoft Dynamics 365 Supply Chain Management. Om du vill använda de värden som finns här på samma sätt som i övningarna måste du arbeta i en miljö där demonstrationsdata har installerats samt ställa in den juridiska personen på *USMF* innan du börjar.
+Scenariot i denna artikel innehåller referensvärden och -poster som ingår i den standarddemodata som finns för Microsoft Dynamics 365 Supply Chain Management. Om du vill använda de värden som finns här på samma sätt som i övningarna måste du arbeta i en miljö där demonstrationsdata har installerats samt konfigurera den juridiska personen på *USMF* innan du börjar.
 
 ## <a name="scenario-setup"></a>Scenarioinställningar
 

@@ -1,5 +1,5 @@
 ---
-title: Borttagna eller utfasade funktioner i tidigare versioner
+title: Borttagna eller inaktuella funktioner i tidigare versioner
 description: I det här ämnet beskrivs funktioner som har tagits bort, eller som planerats för borttagning från Dynamics 365 for Finance and Operations och tidigare versioner.
 author: sericks007
 ms.date: 02/16/2021
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2d8c79057c157f9f0244ea11ad5c3563dcdb21a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063247"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866197"
 ---
-# <a name="removed-or-deprecated-features-in-previous-releases"></a>Borttagna eller utfasade funktioner i tidigare versioner
+# <a name="removed-or-deprecated-features-in-previous-releases"></a>Borttagna eller inaktuella funktioner i tidigare versioner
 
 [!include [banner](../includes/banner.md)]
 
 
 
 > [!IMPORTANT]
-> Det här avsnittet uppdateras inte längre. Om du vill visa en aktuell lista över funktioner som har tagits bort från Ekonomi och Drift-appar kan du söka efter innehållet **borttagna eller gamla funktioner** som hör till det program du använder.
+> Den här artikeln uppdateras inte längre. Om du vill visa en aktuell lista över funktioner som har tagits bort från Ekonomi och Drift-appar kan du söka efter innehållet **borttagna eller gamla funktioner** som hör till det program du använder.
 
 I det här ämnet beskrivs funktioner som har tagits bort eller utfasat från Dynamics 365 for Finance and Operations och tidigare versioner av produkten.
 
@@ -37,7 +37,7 @@ I det här ämnet beskrivs funktioner som har tagits bort eller utfasat från Dy
 
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
-Detaljerad information om objekt i Ekonomi och Drift-appar finns i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Ekonomi och Drift-appar.
+Detaljerad information om objekt i appar för ekonomi och drift finns i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Ekonomi och Drift-appar.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finans 10.0.7 med plattformsuppdatering 31
 

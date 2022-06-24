@@ -1,6 +1,6 @@
 ---
 title: Kategoribegäranden från leverantörer
-description: Detta ämnet beskriver hur leverantörer kan begära anskaffningskategorier för sina konton. Det beskriver också godkännandeprocessen som har slutförts av anskaffningsmedarbetare.
+description: Denna artikel beskriver hur leverantörer kan begära anskaffningskategorier för sina konton. Det beskriver också godkännandeprocessen som har slutförts av anskaffningsmedarbetare.
 author: GalynaFedorova
 ms.date: 04/19/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 9874151a5d82cc3441741489065877b78bab7bf5
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8deded1b7f908bcadf705cf992b2d97618bc28b6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671222"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863895"
 ---
 # <a name="category-requests-from-vendors"></a>Kategoribegäranden från leverantörer
 
@@ -44,7 +44,7 @@ Mer information finns i [Ställa in och underhålla leverantörssamarbete](set-u
 
 Arbetsflödet *Leverantörskategoribegäran* måste ha ställts in i anskaffnings- och inköpsarbetsflödena. Leverantörer skickar nya kategoribegäranden som du kan granska och godkänna. Begärda anskaffningskategorier läggs till på ett leverantörskonto efter det att en kategoriförfrågan har godkänts.
 
-Följande exempel visar hur du ställer in ett enkelt arbetsflöde för *leverantörskategoribegäranden* med en enda godkännare. Du måste granska dina interna processer för att kunna avgöra vilka arbetsflödesinställningar som behövs för din myndighet.
+Följande exempel visar hur du konfigurerar ett enkelt arbetsflöde för *leverantörskategoribegäranden* med en enda godkännare. Du måste granska dina interna processer för att kunna avgöra vilka arbetsflödesinställningar som behövs för din myndighet.
 
 1. Gå till **Anskaffning och källa \> Inställningar \> Arbetsflöden för anskaffning och källa**.
 1. Klicka på **Ny** i åtgärdsfönstret.
@@ -234,4 +234,4 @@ Följ dessa steg om du vill visa anskaffningskategorier för en leverantör efte
 
     Sidan **Kategorier** visas. På snabbfliken **Anskaffning** visas anskaffningskategorier som har lagts till via kategoriförfrågan.
 
-1. På snabbfliken **Anskaffning** kan du göra ändringar om det behövs. Du kan till exempel ställa in fältet **Status för leverantörskategori** som _Prioriterat_.
+1. På snabbfliken **Anskaffning** kan du göra ändringar om det behövs. Du kan till exempel konfigurera fältet **Status för leverantörskategori** som _Prioriterat_.

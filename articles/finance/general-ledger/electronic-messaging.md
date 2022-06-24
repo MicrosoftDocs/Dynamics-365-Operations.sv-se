@@ -1,8 +1,8 @@
 ---
 title: Elektroniska meddelanden
-description: Det här avsnittet innehåller information om översikt och inställningar för elektronisk post i Microsoft Dynamics 365 Finance.
+description: Den här artikeln innehåller information om översikt och inställningar för elektronisk post i Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 06/29/2021
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 191abc37b7c349aaf3c9e871fe2f1885eec9fc896271d6fac27e5caa0b0fe3b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf9ee77b2588283f0b34f2099d6f8d78e15a5af5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768349"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934691"
 ---
 # <a name="electronic-messaging"></a>Elektroniska meddelanden
 
 [!include [banner](../includes/banner.md)]
 
-I detta ämne finns en översikt samt konfigurationsinformation rörande funktionen **Elektroniska meddelanden** (EM).
+I denna artikel finns en översikt samt konfigurationsinformation rörande funktionen **Elektroniska meddelanden** (EM).
 
 Myndigheter och rättsliga myndigheter i olika länder och regioner i världen har nyligen implementerat rapporteringskraven för företag som är registrerade i dessa länder eller regioner. Syftet med kraven är att tillåta hämta data från dessa företag i elektroniskt format direkt från systemen där den bokfördes, lagrades och bearbetades.
 
@@ -58,6 +58,16 @@ EM-funktionen stöder följande scenarier:
 - Spara och granska all logginformation som är relaterad till åtgärder som körs för ett meddelande eller en meddelandeartikel.
 - Kontrollera bearbetning genom olika meddelandestatus och status för meddelandeartikel.
 
+## <a name="security-privileges"></a>Säkerhetsprivilegier
+
+Följande säkerhetsprivilegier är tillgängliga för elektroniska meddelanden.
+
+| Säkerhetsprivilegium           | Åtkomstnivå | Koppling |
+|------------------------------|--------------|-------------|
+| Underhåll elektroniska meddelanden | Det här privilegiet ger fullständig åtkomst till EM-funktionerna. Om du har det här privilegiet kan du konfigurera elektroniska meddelanden och köra all bearbetning. | Detta privilegium ingår i säkerhetsuppdraget **Underhålla momstransaktioner**. Detta uppdrag ingår i sin tur i säkerhetsrollen **Redovisare**. |
+| Visa elektroniska meddelanden     | Det här privilegiet ger skrivskyddad åtkomst till EM-funktionerna. Om du har det här privilegiet kan du visa inställningar för elektroniska meddelanden och själva meddelandena. Du kan däremot inte konfigurera eller köra något. | Detta privilegium ingår i säkerhetsuppdraget **Fråga om momstransaktionsstatus**. Detta uppdrag ingår i sin tur i följande säkerhetsroller:<ul><li>Inkassochef</li><li>Kundreskontraansvarig</li><li>Kundreskontrachef</li><li>Skatteredovisare</li><li>Redovisare</li><li>Redovisningschef</li><li>Redovisningsansvarig</li><li>Försäljningschef</li><li>Leverantörsreskontraansvarig</li></ul> |
+| Arbeta med elektroniska meddelanden  | Detta privilegium ger bara åtkomst till sidorna **Elektroniska meddelanden** och **Elektroniska meddelandeartiklar**. Om du har det här privilegiet kan du köra all bearbetning som anropas från dessa sidor. | Detta privilegium ingår i säkerhetsuppdraget **Hantera elektroniska meddelanden**. Detta uppdrag ingår i sin tur i säkerhetsrollen **Operatör för elektroniska meddelanden**. |
+
 ## <a name="country-specific-regulatory-features-supported-by-the-em-functionality"></a>Landsspecifika lagstadgade funktioner som stöds av EM-funktionerna
 
 Följande tabell innehåller information om vissa landsspecifika regleringsfunktioner som stöds av EM-funktionerna.
@@ -66,9 +76,9 @@ Följande tabell innehåller information om vissa landsspecifika regleringsfunkt
 |-------------|--------------|------------------------|
 | Spanien       | [Omedelbar leverans av information om moms (Suministro Inmediato de Información del IVA, SII)](../localizations/emea-esp-sii.md) | |
 | Ungern     | [Faktureringssystem online](../localizations/emea-hun-online-invoicing.md) | |
-| Storbritannien | [Making Tax Digital (MTD) – skicka in momsutlåtande](../localizations/emea-gbr-mtd-vat-integration.md) | [Finance and Operations: UK Digital Tax - Momsdeklaration i Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) |
+| Storbritannien | [Making Tax Digital (MTD) – skicka in momsutlåtande](../localizations/emea-gbr-mtd-vat-integration.md) | [Ekonomi och drift: Storbritannien digital moms – momsdeklaration i Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) |
 | Litauen   | [i.SAF-rapportering](../localizations/emea-ltu-isaf.md) | |
-| Polen      | [Momsdeklaration med kassaapparater (JPK_V7M, VDEK)](../localizations/emea-pol-vdek.md) | [Dynamics 365 Finance: SAF/JPK-momsrevisionsregister](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-saf-jpk-vat-audit-registers-june-4-2020) |
+| Polen      | [Momsdeklaration med kassaapparater (JPK_V7M, VDEK)](../localizations/emea-pol-vdek.md) | [Dynamics 365 Finance: SAF/JPK momsrevisionsregister](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-saf-jpk-vat-audit-registers-june-4-2020) |
 | Nederländerna | [Momsdeklaration för Nederländerna](../localizations/emea-nl-vat-declaration-netherlands.md) | |
 | Tjeckien | [Momsdeklaration](../localizations/emea-cze-vat-declaration-tax-declaration-model.md) | |
 | Brasilien      | [SPED-Reinf](../localizations/latam-bra-sped-reinf-overview.md) | |
@@ -78,7 +88,13 @@ Följande tabell innehåller information om vissa landsspecifika regleringsfunkt
 | Ryssland      | [Preliminär momsdeklaration](../localizations/rus-assessed-tax-declaration.md) | |
 | Ryssland      | [Momsdeklaration för transport](../localizations/rus-transport-tax-declaration.md) | |
 | Ryssland      | [Deklaration för markvärdesmoms](../localizations/rus-land-tax-declaration.md) | |
-
+| Norge      | [Momsretur med direkt överföring till Altinn](../localizations/emea-nor-vat-return.md) | [Ny momsretur med direkt sändning till Altinn i Dynamics 365 Finance](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/new-vat-return-with-direct-submission-to-altinn-in-dynamics-365-finance-december-1-2021) |
+| Frankrike      | [Momsdeklaration (Frankrike)](../localizations/emea-fra-VAT-declaration-preview-France.md) | |
+| Österrike     | [Momsdeklaration för (Österrike)](../localizations/emea-aut-vat-declaration-austria.md) | |
+| Tyskland     | [Momsdeklaration för (Tyskland)](../localizations/emea-deu-vat-declaration-germany.md) | |
+| Nederländerna | [Momsdeklaration för Nederländerna](../localizations/emea-nl-vat-declaration-netherlands.md) | |
+| Sverige      | [Momsdeklaration (Sverige)](../localizations/emea-swe-VAT-declaration-Sweden.md) | |
+| Schweiz | [Momsdeklaration (Schweiz)](../localizations/emea-che-vat-declaration-switzerland.md) | |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

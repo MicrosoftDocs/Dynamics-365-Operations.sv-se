@@ -1,6 +1,6 @@
 ---
 title: Meddelandeprocessormeddelanden
-description: Detta ämne innehåller information om funktionen för meddelandebearbetning för skalningsenhetsarbetsbelastningar.
+description: Denna artikel innehåller information om funktionen för meddelandebearbetning för skalningsenhetsarbetsbelastningar.
 author: perlynne
 ms.date: 04/22/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 68db4c6561f2cc3fcfd64b49da59a4cc164685f2
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a5f8d48ba697df389150f70ac159e690156de33b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069439"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893625"
 ---
 # <a name="message-processor-messages"></a>Meddelandeprocessormeddelanden
 
@@ -29,7 +29,7 @@ ms.locfileid: "8069439"
 
 Meddelanden i meddelandeprocessorn används när molnbaserade enheter och kantskalningsenheter körs för [arbetsbelastningar inom tillverkning](cloud-edge-workload-manufacturing.md) samt [arbetsbelastningar inom Warehouse managements](cloud-edge-workload-warehousing.md).
 
-Utbyggnadsmiljöerna för nav och skalningsenhet utbyter en stor mängd data för att förbli synkroniserade. En del av de utbytta uppgifterna kommer att utlösa ytterligare logik i *meddelandeprocessorn*. Du kan visa meddelanden som bearbetats av meddelandeprocessorn genom att gå till **Systemadministration > Meddelandeprocessor > Meddelanden i meddelandeprocessorn**.
+Utbyggnadsmiljöerna för hubb och skalningsenhet utbyter en stor mängd data för att förbli synkroniserade. En del av de utbytta uppgifterna kommer att utlösa ytterligare logik i *meddelandeprocessorn*. Du kan visa meddelanden som bearbetats av meddelandeprocessorn genom att gå till **Systemadministration > Meddelandeprocessor > Meddelanden i meddelandeprocessorn**.
 
 ## <a name="message-grid-columns-and-filters"></a>Kolumner och filter i meddelanderutnät
 
@@ -48,9 +48,9 @@ Med hjälp av fälten högst upp på sidan **Meddelanden i meddelandeprocessorn*
 
 ## <a name="example-message-type-request-inventory-adjustment-financial-update"></a>Exempel på meddelandetyp: Begär ekonomisk uppdatering av lagerjustering
 
-Till exempel används **meddelandetypen** *Begär ekonomisk uppdatering av lagerjustering* för att skapa och bokföra en inventeringsjournal i navet när en medarbetare använder lagerställeappen för att [registrera en lagerjustering](cloud-edge-warehouse-inventory-adjustment.md) på en Warehouse managementsarbetsbelastning med skalningsenheter. Eftersom denna specifika process har sitt ursprung i en skalningsenhet visar fältet **Meddelandekö** värdet *Skalningsenhet till nav*.
+Till exempel används **meddelandetypen** *Begär ekonomisk uppdatering av lagerjustering* för att skapa och bokföra en inventeringsjournal i hubben när en medarbetare använder lagerställeappen för att [registrera en lagerjustering](cloud-edge-warehouse-inventory-adjustment.md) på en Warehouse managementsarbetsbelastning med skalningsenheter. Eftersom denna specifika process har sitt ursprung i en skalningsenhet visar fältet **Meddelandekö** värdet *Skalningsenhet till nav*.
 
-För denna meddelandetyp registrerar en skalningsenhetsarbetsbelastning meddelandet som en del av en lagerjusteringsfunktion för ett lagerställe. Meddelandedata överförs sedan till navet som ett led i samma process som används för [arkitekturen för Commerce Data Exchange](../../commerce/commerce-architecture.md). Meddelandet uppdateras så att **Meddelandestatus** anges som *Köad*. Meddelandeprocessorn försöker sedan att bearbeta meddelandet och uppdaterar **Meddelandestatus** till *Bearbetad* vid slutförande, eller till *Annullerad* vid fel.
+För denna meddelandetyp registrerar en skalningsenhetsarbetsbelastning meddelandet som en del av en lagerjusteringsfunktion för ett lagerställe. Meddelandedata överförs sedan till hubben som ett led i samma process som används för [arkitekturen för Commerce Data Exchange](../../commerce/commerce-architecture.md). Meddelandet uppdateras så att **Meddelandestatus** anges som *Köad*. Meddelandeprocessorn försöker sedan att bearbeta meddelandet och uppdaterar **Meddelandestatus** till *Bearbetad* vid slutförande, eller till *Annullerad* vid fel.
 
 ## <a name="view-the-message-log-message-content-and-details"></a>Visa meddelandelogg, meddelandeinnehåll och detaljerad information
 
@@ -75,7 +75,7 @@ Om det behövs kan du manuellt bearbeta eller avbryta ett meddelande, beroende p
 
 ## <a name="set-up-business-events-to-deliver-alerts-for-failed-processing-results"></a>Ställa in affärshändelser för leverans av notifieringar för misslyckade bearbetningsresultat
 
-Förutom filtrering av **Meddelandestatus**-värdet *Annullerad* för att söka efter misslyckade meddelanden kan du även konfigurera [Affärshändelser](../../fin-ops-core/dev-itpro/business-events/home-page.md) i navet i syfte att varna dig om misslyckade bearbetningsresultat. Du gör detta genom att aktivera affärshändelsen med namnet *Meddelandeprocessormeddelande som bearbetas* på sidan **Katalog för affärshändelser** (**Systemadministration > Inställningar > Affärshändelser > Katalog för affärshändelser**).
+Förutom filtrering av **Meddelandestatus**-värdet *Annullerad* för att söka efter misslyckade meddelanden kan du även konfigurera [Affärshändelser](../../fin-ops-core/dev-itpro/business-events/home-page.md) i hubben i syfte att varna dig om misslyckade bearbetningsresultat. Du gör detta genom att aktivera affärshändelsen med namnet *Meddelandeprocessormeddelande som bearbetas* på sidan **Katalog för affärshändelser** (**Systemadministration > Inställningar > Affärshändelser > Katalog för affärshändelser**).
 
 Som en del av aktiveringsprocessen får du vägledning när du anger huruvida händelsen är specifik för en eller alla juridiska personer och anger ett **slutpunktsnamn**, som måste definieras först.
 
@@ -90,7 +90,7 @@ I detta exempel använder du **När en affärshändelse inträffar** tillsammans
 
     :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Automatiskt Power Automate-molnflöde.":::
 
-1. I steget **När en affärshändelse inträffar** kan du söka efter eller öppna navet **Instans** efter **Kategori** och därefter **Affärshändelse** > *Meddelandeprocessormeddelande som bearbetas* enligt följande bild.
+1. I steget **När en affärshändelse inträffar** kan du söka efter eller öppna hubben **Instans** efter **Kategori** och därefter **Affärshändelse** > *Meddelandeprocessormeddelande som bearbetas* enligt följande bild.
 
     :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate Steget När en affärshändelse inträffar.":::
 

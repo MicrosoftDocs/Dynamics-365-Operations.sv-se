@@ -1,6 +1,6 @@
 ---
 title: Registrering och installation av tjänsten för e-fakturering
-description: I detta ämne finns information om hur du registrerar dig för och installerar tjänsten för e-fakturering.
+description: I denna artikel finns information om hur du registrerar dig för och installerar tjänsten för e-fakturering.
 author: dkalyuzh
 ms.date: 02/07/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4ab16652e4a50dd71a5d0b2b49b4dd79e327f7a8
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 57314058883e60599bc51d91a65b0daeae724bb7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371766"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865538"
 ---
 # <a name="sign-up-for-and-install-the-electronic-invoicing-service"></a>Registrering och installation av tjänsten för e-fakturering
 
 [!include [banner](../includes/banner.md)]
 
-I detta ämne finns information om hur du registrerar dig för och installerar tjänsten för e-fakturering. Processen är uppdelad i fyra steg. Steg 1 till 3 är obligatoriska, medan steg 4 är valfritt.
+I denna artikel finns information om hur du registrerar dig för och installerar tjänsten för e-fakturering. Processen är uppdelad i fyra steg. Steg 1 till 3 är obligatoriska, medan steg 4 är valfritt.
 
 ### <a name="step-1-sign-up-for-regulatory-configuration-service"></a>Steg 1: Registrera dig för Regulatory Configuration Service
 
@@ -38,7 +38,7 @@ För att registrera dig för RCS, gå till sidan [Regulatory Configuration Servi
 
 ### <a name="step-2-install-the-add-in-for-microservices-in-microsoft-dynamics-lifecycle-services"></a>Steg 2: Installera tillägget för mikrotjänster i Microsoft Dynamics Lifecycle Services
 
-Tjänsten för e-fakturering är en uppsättning mikrotjänster som finns i Microsofts datacenter. Dynamics 365 Finance- och Dynamics 365 Supply Chain Management-kunder har som standard inte åtkomst till e-faktureringstjänsten. Du måste installera det som ett tillägg i Microsoft Dynamics Lifecycle Services (LCS). När du installerar tillägget registreras din Ekonomi- eller Supply Chain Management-miljö i kassan för program som tillåts ansluta till e-faktureringstjänsten.
+Tjänsten för e-fakturering är en uppsättning mikrotjänster som finns i Microsofts datacenter. Som standard har kunder från Dynamics 365 Finance och Dynamics 365 Supply Chain Management inte åtkomst till e-faktureringstjänsten. Du måste installera det som ett tillägg i Microsoft Dynamics Lifecycle Services (LCS). När du installerar tillägget registreras din Ekonomi- eller Supply Chain Management-miljö i kassan för program som tillåts ansluta till e-faktureringstjänsten.
 
 För att slutföra detta steg, se [Installera tillägget för mikrotjänster i Lifecycle Services](e-invoicing-install-add-in-microservices-lcs.md).
 

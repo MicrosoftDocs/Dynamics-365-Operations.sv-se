@@ -1,6 +1,6 @@
 ---
 title: Lagerprognoser
-description: I det här avsnittet beskrivs funktionerna för leverans- och efterfrågeprognoser som kan användas för att skapa lagerprognoser i Microsoft Dynamics 365 Supply Chain Management.
+description: I dena artikel beskrivs funktionerna för leverans- och efterfrågeprognoser som kan användas för att skapa lagerprognoser i Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1446928c2f5fe606d1d0732764a2a4460643afcf
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 10e3b6ad079dbcbc3cce429a4d9d838e584b9c54
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8548179"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844537"
 ---
 # <a name="inventory-forecasts"></a>Lagerprognoser
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du visar och skapar lagerprognoser. Du kan skapa och visa rader för leverans- och efterfrågeprognoser för artiklar, artikelgrupper, artikelallokeringsnycklar, kundkonton, kundgrupper, leverantörskonton och leverantörsgrupper.
+I denna artikel beskrivs hur du visar och skapar lagerprognoser. Du kan skapa och visa rader för leverans- och efterfrågeprognoser för artiklar, artikelgrupper, artikelallokeringsnycklar, kundkonton, kundgrupper, leverantörskonton och leverantörsgrupper.
 
 För varje prognosrad kan du välja den prognosmodell som används. Du kan sedan ange artikeln eller artikelgruppen samt kvantiteten eller transaktionsbeloppet. Du kan också konfigurera en tidsplan för att använda prognoskvantiteten.
 
@@ -60,7 +60,7 @@ I enlighet med tabellen i steg 1 visas finns olika sätt att komma åt sidorna s
     Beroende på vad du väljer visas sidan **Inflödesprognos** eller sidan **Efterfrågeprognos**. Här visas alla befintliga prognosrader för posten som du valde innan du öppnade sidan.
 
 1. I åtgärdsfönstret väljer du **Ny** för att lägga till en prognosrad i rutnätet på sidans övre del.
-1. På den nya raden, i fältet **Modell**, väljer du den prognosmodell som ska användas. Ange sedan annan information som krävs, exempelvis artikel, artikelgrupp, kund- eller leverantörskonto eller -grupp, artikelkvantitet eller totalt transaktionsbelopp. Fullständig information om fälten som är tillgängliga på sidorna **Inflödesprognos** och **Efterfrågeprognos** finns i de senare avsnitten i detta ämne.
+1. På den nya raden, i fältet **Modell**, väljer du den prognosmodell som ska användas. Ange sedan annan information som krävs, exempelvis artikel, artikelgrupp, kund- eller leverantörskonto eller -grupp, artikelkvantitet eller totalt transaktionsbelopp. Fullständig information om fälten som är tillgängliga på sidorna **Inflödesprognos** och **Efterfrågeprognos** finns i de senare avsnitten i denna artikel.
 1. Om du vill fördela prognosen över perioden väljer du fliken **Översikt** och sedan **Allokera prognos** i verktygsfältet.
 1. I rutnätet **Allokering** granskar du tidshorisonten och de tidsintervall som används för att distribuera prognoskvantiteterna.
 
@@ -68,7 +68,7 @@ I enlighet med tabellen i steg 1 visas finns olika sätt att komma åt sidorna s
 
 Med inflödesprognosen kan du skapa en plan för artiklar som måste köpas in. Den informerar anskaffnings- och inköpspersonal om vad de förväntas beställa.
 
-Du kan ange en inflödesprognos per artikel, artikelgrupp, artikelallokeringsnyckel, leverantör och leverantörsgrupp. Information om alla sätt att öppna sidan **Inflödesprognos** för olika entiteter och poster finns i avsnittet [Visa och ange prognosrader manuellt](#manual-entry) tidigare i detta ämne.
+Du kan ange en inflödesprognos per artikel, artikelgrupp, artikelallokeringsnyckel, leverantör och leverantörsgrupp. Information om alla sätt att öppna sidan **Inflödesprognos** för olika entiteter och poster finns i avsnittet [Visa och ange prognosrader manuellt](#manual-entry) tidigare i denna artikel.
 
 Den övre delen av sidan **Inflödesprognos** innehåller ett rutnät med rader för inflödesprognos samt en uppsättning flikar som du kan använda för att visa och ange mer information om en vald prognosrad. Den nedre delen av sidan innehåller ett rutnät för **allokering**.
 
@@ -94,9 +94,9 @@ I följande tabell beskrivs de kommandon som är tillgängliga i verktygsfältet
 
 | Kommando | beskrivning |
 |---|---|
-| Allokera prognos | Om du använder en allokeringsmetod genererar du de enskilda tidsplaneringsraderna för prognostransaktionen. Radens kvantitet fördelas därefter per datum (enligt valda tidsintervall), kvantitet och belopp för hela tidshorisonten. (Se avsnittet [Allokera prognos](#allocate-forecast) längre fram i detta ämne.) |
-| Massuppdatering | Öppna sidan **Redigera prognostransaktioner**. (Se avsnittet [Massuppdatering av prognostransaktioner](#bulk-update) längre fram i detta avsnitt.) |
-| Lagerprognos | Öppna en vy på sidan **Lagerprognos** som har filtrerats för den valda artikel-/modellkombinationen. (Se avsnittet [Lagerprognos](#inventory-forecast) längre fram i detta avsnitt.) |
+| Allokera prognos | Om du använder en allokeringsmetod genererar du de enskilda tidsplaneringsraderna för prognostransaktionen. Radens kvantitet fördelas därefter per datum (enligt valda tidsintervall), kvantitet och belopp för hela tidshorisonten. (Se avsnittet [Allokera prognos](#allocate-forecast) längre fram i denna artikel.) |
+| Massuppdatering | Öppna sidan **Redigera prognostransaktioner**. (Se avsnittet [Massuppdatering av prognostransaktioner](#bulk-update) längre fram i denna artikel.) |
+| Lagerprognos | Öppna en vy på sidan **Lagerprognos** som har filtrerats för den valda artikel-/modellkombinationen. (Se avsnittet [Lagerprognos](#inventory-forecast) längre fram i denna artikel.) |
 | Skapa artikelbehov | Öppna en dialogruta där du kan skapa artikelbehov och försäljningsorder- eller artikeljournalrader för projektrelaterade prognostransaktioner. Även om det här kommandot är tillgängligt för både rader för inflödesprognoser och rader för efterfrågeprognoser, kan det inte användas på sidan **Inflödesprognos**. |
 
 ### <a name="the-overview-tab-on-the-supply-forecast-page"></a>Fliken Översikt på sidan Inflödesprognos
@@ -173,7 +173,7 @@ Om du använder en artikelallokeringsnyckel eller om du har angett en artikelpro
 
 Med hjälp av efterfrågeprognosen kan du ange eller generera efterfrågan för en kund. Detta hjälper försäljnings- och marknadsföringspersonal att informera huvudplaneringskontoren om den förväntade efterfrågan under den kommande prognosperioden.
 
-Du kan ange en efterfrågeprognos per artikel, artikelgrupp, artikelallokeringsnyckel, kund samt kundgrupp. Information om alla sätt att öppna sidan **Efterfrågeprognos** för olika entiteter och poster finns i avsnittet [Visa och ange prognosrader manuellt](#manual-entry) tidigare i detta ämne.
+Du kan ange en efterfrågeprognos per artikel, artikelgrupp, artikelallokeringsnyckel, kund samt kundgrupp. Information om alla sätt att öppna sidan **Efterfrågeprognos** för olika entiteter och poster finns i avsnittet [Visa och ange prognosrader manuellt](#manual-entry) tidigare i denna artikel.
 
 Den övre delen av sidan **Efterfråge prognos** innehåller ett rutnät med rader för efterfrågeprognos samt en uppsättning flikar som du kan använda för att visa och ange mer information om en vald prognosrad. Den nedre delen av sidan innehåller ett rutnät för **allokering**.
 
@@ -201,9 +201,9 @@ I följande tabell beskrivs de kommandon som är tillgängliga i verktygsfältet
 
 | Kommando | beskrivning |
 |---|---|
-| Allokera prognos | Om du använder en allokeringsmetod genererar du de enskilda tidsplaneringsraderna för prognostransaktionen. Radens kvantitet fördelas därefter per datum (enligt valda tidsintervall), kvantitet och belopp för hela tidshorisonten. (Se avsnittet [Allokera prognos](#allocate-forecast) längre fram i detta ämne.)|
-| Massuppdatering | Öppna sidan **Redigera prognostransaktioner**. (Se avsnittet [Massuppdatering av prognostransaktioner](#bulk-update) längre fram i detta avsnitt.) |
-| Lagerprognos | Öppna en vy på sidan **Lagerprognos** som har filtrerats för den valda artikel-/modellkombinationen. (Se avsnittet [Lagerprognos](#inventory-forecast) längre fram i detta avsnitt.) |
+| Allokera prognos | Om du använder en allokeringsmetod genererar du de enskilda tidsplaneringsraderna för prognostransaktionen. Radens kvantitet fördelas därefter per datum (enligt valda tidsintervall), kvantitet och belopp för hela tidshorisonten. (Se avsnittet [Allokera prognos](#allocate-forecast) längre fram i denna artikel.)|
+| Massuppdatering | Öppna sidan **Redigera prognostransaktioner**. (Se avsnittet [Massuppdatering av prognostransaktioner](#bulk-update) längre fram i denna artikel.) |
+| Lagerprognos | Öppna en vy på sidan **Lagerprognos** som har filtrerats för den valda artikel-/modellkombinationen. (Se avsnittet [Lagerprognos](#inventory-forecast) längre fram i denna artikel.) |
 | Skapa artikelbehov | Öppna en dialogruta där du kan skapa artikelbehov och försäljningsorder- eller artikeljournalrader för projektrelaterade prognostransaktioner. |
 
 ### <a name="the-overview-tab-on-the-demand-forecast-page"></a>Fliken Översikt på sidan Efterfrågeprognos
@@ -296,7 +296,7 @@ Fliken **lagerdimensioner** visar alla lagerdimensionsvärden för raden som fö
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Allokeringsrutnätet på sidan Efterfrågeprognos
 
-Om du använder en artikelallokeringsnyckel eller om du har angett en artikelprognos för en eller flera framtida perioder, kan du allokera prognosen genom att välja **Allokera prognos** i verktygsfältet på fliken **Översikt**. Kvantiteten fördelas sedan på det sätt som indikeras av raderna i rutnätet **Allokering**. (Se avsnittet [Allokera prognos](#allocate-forecast) längre fram i detta ämne.)
+Om du använder en artikelallokeringsnyckel eller om du har angett en artikelprognos för en eller flera framtida perioder, kan du allokera prognosen genom att välja **Allokera prognos** i verktygsfältet på fliken **Översikt**. Kvantiteten fördelas sedan på det sätt som indikeras av raderna i rutnätet **Allokering**. (Se avsnittet [Allokera prognos](#allocate-forecast) längre fram i denna artikel.)
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Lagerprognos
 
@@ -385,14 +385,14 @@ Följ dessa steg för att konfigurera en huvudplan så att den innehåller en la
 1. På snabbfliken **Allmänt** ange följande fält:
 
     - **Prognosmodell** – Välj den prognosmodell som ska tillämpas. Den här modellen kommer att beaktas när ett leveransförslag skapas för den aktuella huvudplanen.
-    - **Inkludera inflödesprognos** – Ange detta alternativ till *Ja* om du vill inkludera inflödesprognos i den aktuella huvudplanen. Om du ställer in den på *Nej*, tas inte inflödesprognos transaktioner med i huvudplanen.
-    - **Inkludera efterfrågeprognos** – Ange detta alternativ till *Ja* om du vill inkludera efterfrågeprognosen i den aktuella huvudplanen. Om du ställer in den på *Nej*, tas inte efterfrågeprognos transaktioner med i huvudplanen.
+    - **Inkludera inflödesprognos** – Ange detta alternativ till *Ja* om du vill inkludera inflödesprognos i den aktuella huvudplanen. Om du konfigurerar den på *Nej*, tas inte inflödesprognos transaktioner med i huvudplanen.
+    - **Inkludera efterfrågeprognos** – Ange detta alternativ till *Ja* om du vill inkludera efterfrågeprognosen i den aktuella huvudplanen. Om du konfigurerar den på *Nej*, tas inte efterfrågeprognos transaktioner med i huvudplanen.
     - **Metod som används för att minska prognosbehov** – Välj den metod som ska användas för att minska prognosbehoven. Mer information finns i [Prognosreduceringnycklar](planning-optimization/demand-forecast.md#reduction-keys).
 
-1. På snabbfliken **Tidsgränser i dagar** du kan ställa in följande fält för att ange den period som prognosen inkluderas under:
+1. På snabbfliken **Tidsgränser i dagar** du kan konfigurera följande fält för att ange den period som prognosen inkluderas under:
 
     - **Prognosplan** – Ställ in det här alternativet på *Ja* för att åsidosätta tidsgränsen för en prognosplan som kommer från de enskilda disponeringsgrupper. Ställ in den på *Nej* om du vill använda värdena från de enskilda disponeringsgrupper för den aktuella huvudplanen.
-    - **Prognostidsperiod** – om du ställer in alternativet **prognosplan** till *Ja* anger du antalet dagar (från dagens datum) som efterfrågeprognos ska användas.
+    - **Prognostidsperiod** – om du konfigurerar alternativet **prognosplan** till *Ja* anger du antalet dagar (från dagens datum) som efterfrågeprognos ska användas.
 
     > [!IMPORTANT]
     > Alternativet **Prognosplan** stöder inte separat prognosplanering.
@@ -402,7 +402,7 @@ Följ dessa steg för att konfigurera en huvudplan så att den innehåller en la
 Följ dessa steg för att köra en huvudplan så att den innehåller en lagerprognos.
 
 1. Gå till **Huvudplanering \> Arbetsytor \> Huvudplanering**.
-1. I fältet **Huvudplan** anger du eller väljer huvudplanen som du ställer in i den föregående proceduren.
+1. I fältet **Huvudplan** anger du eller väljer huvudplanen som du konfigurerar i den föregående proceduren.
 1. I panelen **Huvudplanering** välj **Kör**.
 1. I dialogrutan **Huvudplanering** ange alternativet **Spåra bearbetningstid** till *Ja*.
 1. Ange ett nummer i fältet **Antal trådar.**

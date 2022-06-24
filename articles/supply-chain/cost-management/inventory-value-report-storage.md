@@ -1,6 +1,6 @@
 ---
 title: Lagervärderapporter
-description: Detta ämne förklarar hur du konfigurerar, genererar och använder lagervärdesrapporter. Rapporterna innehåller information om fysiska och ekonomiska kvantiteter och belopp för lagret.
+description: Denna artikel förklarar hur du konfigurerar, genererar och använder lagervärdesrapporter. Rapporterna innehåller information om fysiska och ekonomiska kvantiteter och belopp för lagret.
 author: JennySong-SH
 ms.date: 10/19/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 4f710ff308bac42a284cd506143dd0ae21ff2ec7
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3128abb25fdb8f8e01b4d1fe153f5b5fff6cb706
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676199"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854570"
 ---
 # <a name="inventory-value-reports"></a>Lagervärderapporter
 
 [!include [banner](../includes/banner.md)]
 
-Rapporterna för lagervärde innehåller information om fysiska och ekonomiska kvantiteter och belopp. Du kan visa rapporterna på många olika sätt. Du kan till exempel visa summor eller transaktioner, eller filtrera efter artiklar eller tidsintervall. Du kan visa kostnader för sålda varor (COGS) eller PIA-värden (produkter i arbete) samt ställa in andra alternativ.
+Rapporterna för lagervärde innehåller information om fysiska och ekonomiska kvantiteter och belopp. Du kan visa rapporterna på många olika sätt. Du kan till exempel visa summor eller transaktioner, eller filtrera efter artiklar eller tidsintervall. Du kan visa kostnader för sålda varor (COGS) eller PIA-värden (produkter i arbete) samt konfigurera andra alternativ.
 
 Med lagervärdesrapporter kan du utföra följande uppgifter:
 
@@ -82,7 +82,7 @@ På sidan **Lagervärdesrapporter** kan du konfigurera innehållet som ingår i 
 1. På snabbfliken **Kolumner** anger du följande fält: Dessa fält kontrollerar de kolumner som rapporten innehåller samt de datatyper som dessa kolumner innehåller.
 
     - **Lager** – Ange detta alternativ som *Ja* om du vill visa lagervärdena. Du kan sedan stämma av dessa värden med saldon på redovisningskontona.
-    - **PIA** – Ange detta alternativ som *Ja* om du vill visa PIA-värdena. Du kan sedan stämma av dessa värden med PIA-kontosaldon i redovisningen. När du ställer in det här alternativet på *Ja* visar rapporten endast fysiska kvantiteter och lagerbelopp med PIA-status. Tillverkningsorder med PIA-status har valts eller rapporterats som färdiga, men dessa har inte avslutats.
+    - **PIA** – Ange detta alternativ som *Ja* om du vill visa PIA-värdena. Du kan sedan stämma av dessa värden med PIA-kontosaldon i redovisningen. När du konfigurerar det här alternativet på *Ja* visar rapporten endast fysiska kvantiteter och lagerbelopp med PIA-status. Tillverkningsorder med PIA-status har valts eller rapporterats som färdiga, men dessa har inte avslutats.
     - **Uppskjuten KSV** – Ange detta alternativ som *Ja* om du vill visa en kolumn som visar de fysiska kvantiteterna och beloppen i lagret för uppskjuten KSV. Uppskjuten KSV visas med hjälp av fysiska kvantiteter och belopp, detta eftersom det motbokar följesedelskvantiteter och -belopp.
     - **KSV** – Ange detta alternativ som *Ja* om du vill visa en kolumn som visar finansiella kvantiteter och belopp för KSV. KSV visas med hjälp av finansiella kvantiteter och belopp, detta eftersom det förskjuter fakturakvantiteter och -belopp.
     - **Vinst och förlust** – Ange detta alternativ som *Ja* om du vill visa en kolumn som visar det ekonomiska belopp som har bokförts på vinst- och förlustkontona för lager.
@@ -180,7 +180,7 @@ I följande exempel visas hur du exporterar en rapport för **Lagring av lagerv�
 
 1. Gå till **Systemadministration \> Arbetsytor \> Datahantering**.
 1. I välj **Import/export**, välj panelen **Export**.
-1. På sidan **export** som visas ska du ställa in exportjobbet. Ange först ett gruppnamn för jobbet.
+1. På sidan **export** som visas ska du konfigurera exportjobbet. Ange först ett gruppnamn för jobbet.
 1. I avsnitt **Vald entiteter**, välj **Lägg till entitet**.
 1. Ställ in följande fält i dialogrutan som visas:
 

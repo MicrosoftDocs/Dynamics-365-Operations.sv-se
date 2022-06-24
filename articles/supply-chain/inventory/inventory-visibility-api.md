@@ -1,6 +1,6 @@
 ---
-title: Offentliga API:er för Lagersynlighet
-description: Detta ämne beskriver de allmänna API:er som anges i Lagersynlighet.
+title: Offentliga API:er för Inventory Visibility
+description: Denna artikel beskriver de allmänna API:er som anges i Lagersynlighet.
 author: yufeihuang
 ms.date: 12/09/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 25f6539616d4567249e1d1eb4297090176526fde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786878"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902036"
 ---
-# <a name="inventory-visibility-public-apis"></a>Offentliga API:er för Lagersynlighet
+# <a name="inventory-visibility-public-apis"></a>Offentliga API:er för Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
 
 
-Detta ämne beskriver de allmänna API:er som anges i Lagersynlighet.
+Denna artikel beskriver de allmänna API:er som anges i Lagersynlighet.
 
 Det offentliga REST-API för ett av tilläggen för Lagersynlighet visar flera specifika slutpunkter för integreringen. Den stöder fyra huvudinteraktionstyper:
 
@@ -160,7 +160,7 @@ Gör så här om du vill hämta en säkerhetstjänsttoken:
    ```
 
 > [!IMPORTANT]
-> När du använder *brevbärar*-begärandesamling för att anropa offentliga API:er för lagersynlighet måste du lägga till en ägartoken för varje begäran. Om du vill söka efter din ägartoken väljer du fliken **Auktorisering** under begäran-URL, väljer typ av **ägartoken** och kopierar åtkomsttoken som hämtades i det sista steget. I senare avsnitt av detta ämne används `$access_token` för att representera den token som hämtades i det sista steget.
+> När du använder *brevbärar*-begärandesamling för att anropa offentliga API:er för lagersynlighet måste du lägga till en ägartoken för varje begäran. Om du vill söka efter din ägartoken väljer du fliken **Auktorisering** under begäran-URL, väljer typ av **ägartoken** och kopierar åtkomsttoken som hämtades i det sista steget. I senare avsnitt av denna artikel används `$access_token` för att representera den token som hämtades i föregående steg.
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Skapa ändringshändelser för behållning
 
@@ -181,7 +181,7 @@ I tabellen nedan sammanfattas vilket betydelse de olika fälten har i JSON-bröd
 | `dimensions` | Ett dynamiskt nyckel/värde-par. Värdena mappas till några av dimensionerna i Supply Chain Management. Du kan emellertid även lägga till anpassade dimensioner (till exempel _Källa_) för att ange om händelsen kommer från Supply Chain Management eller ett externt system. |
 
 > [!NOTE]
-> Parametrarna `SiteId` och `LocationId` skapar [partitionskonfigurationen](inventory-visibility-configuration.md#partition-configuration). Därför måste du ange dem i dimensioner när du skapar händelser för lagerbehållningsändring, ställer in eller åsidosätter lagerbehållningskvantiteter eller skapar reservationshändelser.
+> Parametrarna `SiteId` och `LocationId` skapar [partitionskonfigurationen](inventory-visibility-configuration.md#partition-configuration). Därför måste du ange dem i dimensioner när du skapar händelser för lagerbehållningsändring, konfigurerar eller åsidosätter lagerbehållningskvantiteter eller skapar reservationshändelser.
 
 ### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Skapa en ändringshändelse för behållning
 
@@ -359,7 +359,7 @@ Body:
     ]
 ```
 
-Följande exempel visar brödtext. Beteendet för detta API skiljer sig från beteendet för API:erna som beskrivs i avsnittet [Skapa ändringshändelser för behållning](#create-onhand-change-event). I detta exempel anges kvantiteten för produkten *T-shirt* som 1.
+Följande exempel visar brödtext. Beteendet för detta API skiljer sig från beteendet för API:erna som beskrivs i avsnittet [Skapa ändringshändelser för behållning](#create-onhand-change-event) tidigare i denna artikel. I detta exempel anges kvantiteten för produkten *T-shirt* som 1.
 
 ```json
 [
@@ -392,7 +392,7 @@ Det går att göra en reservation mot olika datakällsinställningar. Om du vill
 
 När du anropar reservations-API:t kan du kontrollera reservationsvalideringen genom att ange den booleska parametern `ifCheckAvailForReserv` i begärandetexten. Ett värde `True` betyder att valideringen krävs, medan ett värde av `False` betyder att valideringen inte krävs. Standardvärdet är `True`.
 
-Om du vill annullera en reservation eller ta bort reservationen av angivna lagerkvantiteter ställer du in kvantiteten på ett negativt värde och ställer in parametern `ifCheckAvailForReserv` på `False` för att hoppa över valideringen.
+Om du vill annullera en reservation eller ta bort reservationen av angivna lagerkvantiteter ställer du in kvantiteten på ett negativt värde och konfigurerar parametern `ifCheckAvailForReserv` på `False` för att hoppa över valideringen.
 
 ```txt
 Path:
@@ -585,7 +585,7 @@ Här är ett exempel på URL-adressen. Denna hämtbegäran är exakt densamma so
 
 ## <a name="available-to-promise"></a>Disponibelt att lova
 
-Du kan ställa in lagersynlighet så att du kan tidsplanera framtida ändringar av lagerbehållningen och beräkna ATP-kvantiteter. ATP är den kvantitet av en artikel som finns tillgänglig och därför kan utlovas en kund i nästa period. Om du använder ATP beräkningen kan du öka möjligheten att uppfylla ordern mycket. Information om hur du aktiverar funktionen, och hur du kan interagera med lagersynlighet genom dess API när funktionen har aktiverats, finns i [Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova](inventory-visibility-available-to-promise.md#api-urls).
+Du kan konfigurera lagersynlighet så att du kan tidsplanera framtida ändringar av lagerbehållningen och beräkna ATP-kvantiteter. ATP är den kvantitet av en artikel som finns tillgänglig och därför kan utlovas en kund i nästa period. Om du använder ATP beräkningen kan du öka möjligheten att uppfylla ordern mycket. Information om hur du aktiverar funktionen, och hur du kan interagera med lagersynlighet genom dess API när funktionen har aktiverats, finns i [Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova](inventory-visibility-available-to-promise.md#api-urls).
 
 ## <a name="allocation"></a>Allokering
 

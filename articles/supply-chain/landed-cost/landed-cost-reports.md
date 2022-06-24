@@ -1,6 +1,6 @@
 ---
 title: Rapporter för hemtagningskostnad
-description: I det här avsnittet beskrivs hur du söker efter och använder de olika rapporttyper som är tillgängliga för modulen hemtagningskostnad.
+description: I denna artikel beskrivs hur du söker efter och använder de olika rapporttyper som är tillgängliga för modulen Hemtagningskostnad.
 author: Weijiesa
 ms.date: 02/01/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-02-21
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 2ffe3f6b3bf43cca066a1ecd14947bd111adaad6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 836d6b538b32d818ed3b825000d004b005ce95d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690344"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905962"
 ---
 # <a name="landed-cost-reports"></a>Rapporter för hemtagningskostnad
 
@@ -38,7 +38,7 @@ För att generera rapporten för utestående fakturor följ dessa steg.
     - **Ej fakturerat lager** – Inkludera kostnader som har fakturerats, men som inköpsordern ännu inte har mottagits för.
     - **Alla som inte fakturerats** – Inkludera resultatet för både alternativet **Kostnad som inte fakturerats** och alternativet **Lager som inte fakturerats**.
 
-1. Ställ in alternativet **Inkludera nya kostnader** till *Ja* för att inkludera kostnader som ännu inte har någon faktisk kostnad och som inte har erhållits för lager. Om du ställer in det till *Nej* kommer rapporten endast att inkludera kostnader som har fakturerats.
+1. Ställ in alternativet **Inkludera nya kostnader** till *Ja* för att inkludera kostnader som ännu inte har någon faktisk kostnad och som inte har erhållits för lager. Om du konfigurerar det till *Nej* kommer rapporten endast att inkludera kostnader som har fakturerats.
 1. I avsnittet **Vy**, aktivera varje typ av detaljer som du vill inkludera i rapporten.
 1. Som du gör för andra typer av rapporter i Microsoft Dynamics 365 Supply Chain Management, använd snabbfliken **Destination** för att välja utdataformat för rapporten.
 1. Som du gör för andra typer av rapporter i Supply Chain Management, använd snabbflikarna **Poster som ska ingå** för att ytterligare begränsa de poster som kommer att ingå i rapporten.

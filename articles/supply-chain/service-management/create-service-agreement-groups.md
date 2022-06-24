@@ -1,6 +1,6 @@
 ---
 title: Skapa serviceavtalsgrupper
-description: I det här avsnittet finns en procedur som visar hur du skapar serviceavtalsgrupper.
+description: I detna artikel finns en procedur som visar hur du skapar serviceavtalsgrupper.
 author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b849de86f5c2cb89d584df607a4d7662606fa9d6
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9d94dfe38a6aef765bb1089908827275c00b3dc9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677294"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889498"
 ---
 # <a name="create-service-agreement-groups"></a>Skapa serviceavtalsgrupper 
 
@@ -37,7 +37,7 @@ Serviceavtalsgrupper är användbara för att sortera och filtrera serviceavtal.
 > [!NOTE]
 > Om en serviceavtalsgrupp finns definierad i fältet **serviceavtalsgrupp** på sidan **serviceparametrar** föreslås denna grupp för alla nya serviceavtal som du skapar.
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Serviceavtal – översikt](service-agreement-groups.md)
 

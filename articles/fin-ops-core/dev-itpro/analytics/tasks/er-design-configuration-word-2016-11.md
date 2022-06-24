@@ -1,6 +1,6 @@
 ---
 title: Återanvända ER-konfigurationer med Excel-mallar för att generera rapporter i Word-format
-description: I det här avsnittet beskrivs hur rapportformat som har utformats för att generera rapporter som Excel-arbetsböcker kan konfigureras för att generera rapporter som Word-dokument.
+description: I den här artikeln beskrivs hur rapportformat som har utformats för att generera rapporter som Excel-arbetsböcker kan konfigureras för att generera rapporter som Word-dokument.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: de8286c7612cd588b28cf4667340374906962dde
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 1e0fe9ba55be435fb214c9d0885dd4ef942f5081
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324072"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910398"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Återanvända ER-konfigurationer med Excel-mallar för att generera rapporter i Word-format
 
@@ -43,7 +43,7 @@ Procedurerna gäller för en funktion som lagts till Dynamics 365 for Operations
 
 ## <a name="select-the-existing-er-report-configuration"></a>Markera den befintliga ER-rapportkonfigurationen
 
-1. I Dynamics 365 Finance, gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
+1. I Dynamics 365 Finance, går du till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. Kontrollera att konfigurationsleverantören **Litware, Inc.** har markerats som **aktiv**. Om den inte är det följer du stegen i uppgiftsguiden [Skapa konfigurationsleverantörer och markera dem som aktiva](er-configuration-provider-mark-it-active-2016-11.md).
 3. Välj **rapporteringskonfigurationer**. Du kommer att återanvända den befintliga ER-konfigurationen som har skapats för att skapa rapportutdata i OPENXML-format.
 4. På sidan **konfigurationer** i konfigurationsträdet i vänster fönster expanderar du **Betalningsmodell** och väljer sedan **Rapport över exempelkalkylblad**.

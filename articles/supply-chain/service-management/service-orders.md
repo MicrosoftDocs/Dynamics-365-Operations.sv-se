@@ -1,6 +1,6 @@
 ---
 title: Serviceorder
-description: Det här ämnet innehåller en översikt över hur du arbetar med serviceorder.
+description: Denna artikel innehåller en översikt över hur du arbetar med serviceorder.
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45927c318c62a7f02e63ead42f7226ce4530c676
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 606a1e3df72f8a76dab477bb1dd961b6df16f3cf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673478"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882385"
 ---
 # <a name="service-orders"></a>Serviceorder
 
@@ -48,7 +48,7 @@ Företagets klarerare tar mot ett samtal med en begäran om akut service på en 
 
 ## <a name="monitor-the-progress-of-service-orders"></a>Övervaka förlopp för serviceorder
 
-För att övervaka förloppet hos serviceorder genom olika grupper och arbetsprocesser kan du ställa in ett system med faser och orsakskoder för serviceorder. För varje fas kan du ange tillåtna åtgärder. Mer information finns i [Skapa orsakskoder](create-reason-codes.md).
+För att övervaka förloppet hos serviceorder genom olika grupper och arbetsprocesser kan du konfigurera ett system med faser och orsakskoder för serviceorder. För varje fas kan du ange tillåtna åtgärder. Mer information finns i [Skapa orsakskoder](create-reason-codes.md).
 
 ### <a name="example"></a>Exempel
 

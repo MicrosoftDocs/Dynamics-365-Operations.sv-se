@@ -1,6 +1,6 @@
 ---
 title: Ansluta kringutrustning till POS
-description: Detta avsnitt innehåller information om hur du ansluter kringutrustning till Retail POS.
+description: Denna artikel innehåller information om hur du ansluter kringutrustning till Retail POS.
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f1c53c7215d3a5a182f345d5e040274ae06f9b12
-ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
+ms.openlocfilehash: ffee75e1713c7c9d31b1d023cd055c2f1a3fc43d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8370961"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897118"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Ansluta kringutrustning till POS
 
 [!include [banner](includes/banner.md)]
 
-Detta avsnitt innehåller information om hur du ansluter kringutrustning till Retail POS.
+Denna artikel innehåller information om hur du ansluter kringutrustning till Retail POS.
 
 > [!NOTE]
 > Specifika installationsinstruktioner finns i [Konfigurera och installera Retail Hardware Station](retail-hardware-station-configuration-installation.md) och [Konfigurera, installera och aktivera Modern POS (MPOS)](retail-modern-pos-device-activation.md).
@@ -50,7 +50,7 @@ En enhet är en entitet som representerar en fysisk instans av en enhet som är 
 
 #### <a name="mpos"></a>MPOS
 
-MPOS är ett kassaklientprogram som är installerat på Windows 8.1 eller ett senare PC-baserat operativsystem. Om programtypen **Retail modern POS** har mappats till en enhet kan hämtningspaketet anges för en viss enhet. Paketet kan anpassas för att inkludera olika versioner av installationspaketet. Möjligheten att distribuera olika paket ger flexibilitet i de fall där olika kassaapparater kan behöva olika integrationer. MPOS distribueras tillsammans med en inbyggd maskinvarustation.
+MPOS är ett kassaklientprogram som är installerat på Windows 8.1 eller ett senare PC-baserat operativsystem. Om programtypen **Retail modern POS** har mappats till en enhet kan hämtningspaketet anges för en viss enhet. Paketet kan anpassas för att inkludera olika versioner av installationspaketet. Möjligheten att distribuera olika paket ger flexibilitet i de fall där olika kassaapparater kan behöva olika integreringer. MPOS distribueras tillsammans med en inbyggd maskinvarustation.
 
 #### <a name="cloud-pos"></a>Cloud POS
 
@@ -82,7 +82,7 @@ Konfigurera därefter en särskild maskinvarustation på kanalen. Gå till **But
 
 På snabbfliken **Maskinvarustationer** väljer du sedan **Lägg till** för att lägga till en maskinvarustation. Välj **Dedikerad** som maskinvarustationstyp och ange sedan en beskrivning. Fältet **Maskinvaruprofil** kan lämnas tomt, detta eftersom maskinvaruprofilen som används i det här scenariot kommer från själva kassaapparaten. Synkronisera sedan ändringarna med kanalen via distributionsschemat **Kanalkonfiguration**. Du hittar distributionsscheman på **Butik och handel \> IT för butik och handel \> Distributionsschema**. 
 
-Slutligen kan du i MPOS använda åtgärden **Välj maskinvarustation** för att välja den maskinvarustation som matchar värdet du tidigare angett för beskrivningen samt ställa in maskinvarustationen på **Aktiv**. 
+Slutligen kan du i MPOS använda åtgärden **Välj maskinvarustation** för att välja den maskinvarustation som matchar värdet du tidigare angett för beskrivningen samt konfigurera maskinvarustationen på **Aktiv**. 
 
 > [!NOTE]
 > - Vissa ändringar av maskinvaruprofilen såsom ändringar av kassalådor kräver att ett nytt skift öppnas efter att ändringarna har synkroniserats till kanalen.
@@ -100,7 +100,7 @@ Navigera sedan från den maskin som ska agera värd för maskinvarustationen, g�
 
 Använd därefter MPOS eller Clod POS för att utföra åtgärden **Välj maskinvarustation** för att välja den maskinvarustation som tidigare installerades. Välj **Koppla** för att upprätta en säker förbindelse mellan POS och maskinvarustationen. Det här steget måste slutföras en gång för varje kombination av en kassa och en maskinvarustation. 
 
-När maskinvarustationen är kopplad används samma operation för att aktivera maskinvarustationen medan den används. I det här scenariot ska maskinvaruprofilen tilldelas till den delade maskinvarustationen istället för själva kassaapparaten. Om en maskinvaruprofil av någon anledning inte har tilldelats någon maskinvarustation direkt, kommer den maskinvaruprofil som tilldelats kassaapparaten att användas.
+När maskinvarustationen är kopplad används samma åtgärd för att aktivera maskinvarustationen medan den används. I det här scenariot ska maskinvaruprofilen tilldelas till den delade maskinvarustationen istället för själva kassaapparaten. Om en maskinvaruprofil av någon anledning inte har tilldelats någon maskinvarustation direkt, kommer den maskinvaruprofil som tilldelats kassaapparaten att användas.
 
 ## <a name="client-maintenance"></a>Underhåll av klient
 
@@ -157,13 +157,13 @@ Inleveransprofiler tilldelas till skrivare via maskinvaruprofilen. De används f
 
 #### <a name="hardware-profiles"></a>Maskinvaruprofiler
 
-Maskinvaruprofiler beskrevs som en komponent för klientinstallation tidigare i detta ämne. Maskinvaruprofiler tilldelas direkt till kassaapparaten eller till en delad maskinvarustation och används för att ange de typer av enheter som en specifik kassaapparat eller maskinvara använder. Maskinvaruprofiler kan även användas för att ange EFT-inställningar som används för att kommunicera med betalnings-SDK:n.
+Maskinvaruprofiler beskrevs som en komponent för klientinstallation tidigare i denna artikel. Maskinvaruprofiler tilldelas direkt till kassaapparaten eller till en delad maskinvarustation och används för att ange de typer av enheter som en specifik kassaapparat eller maskinvara använder. Maskinvaruprofiler kan även användas för att ange EFT-inställningar som används för att kommunicera med betalnings-SDK:n.
 
 #### <a name="visual-profiles"></a>Visuella profiler
 
 Visuella profiler används för att ange tema för en specifik kassaapparat och tilldelas på kassaapparatnivå. Profilerna innehåller inställningarna för typen av program som används (MPOS eller Cloud POS), accentfärg och tema, teckensnittsschema, inloggningssidans bakgrund och kassabakgrund. Mer information finns i [Skapa visuella profiler för kassa (POS)](tasks/create-pos-visual-profile-2016-02.md). 
 
-### <a name="custom-fields"></a>​Anpassade fält
+### <a name="custom-fields"></a>Anpassade fält
 
 Du kan skapa anpassade fält om du vill lägga till fält som inte tillhandahålles direkt vid leverans till POS. Mer information om hur du använder anpassade fält finns i [Blogginlägget Arbeta med anpassade fält](https://blogs.msdn.microsoft.com/axsupport/2012/08/06/ax-for-retail-2012-working-with-custom-fields/).
 
@@ -173,7 +173,7 @@ Du kan åsidosätta standardsträngar i POS med hjälp av språktextposter. Läg
 
 ### <a name="channel-reports-configuration"></a>Konfiguration av kanalrapporter
 
-Du ställer in de rapporter som är tillgängliga i kanalen på sidan **Rapportkonfiguration för kanal**. Du kan skapa nya rapporter genom att ange XML-definitionen för rapporten och tilldela rapporten till en viss behörighetsgrupp i POS.
+Du konfigurerar de rapporter som är tillgängliga i kanalen på sidan **Rapportkonfiguration för kanal**. Du kan skapa nya rapporter genom att ange XML-definitionen för rapporten och tilldela rapporten till en viss behörighetsgrupp i POS.
 
 ### <a name="devices"></a>Enheter
 

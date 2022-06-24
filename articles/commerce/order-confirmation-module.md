@@ -1,6 +1,6 @@
 ---
-title: Orderbekräftelsemodulen
-description: Det här avsnittet handlar om orderbekräftelsemoduler och beskriver hur du använder dem i Microsoft Dynamics 365 Commerce.
+title: Modul för orderbekräftelse
+description: Denna artikel handlar om orderbekräftelsemoduler och beskriver hur du använder dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e74ffbdfe57f9220cc9ed85edae4270409165b41
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 994ec92abc53efeb240bca5dc8d67aabb45fbe55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780394"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845815"
 ---
 # <a name="order-confirmation-module"></a>Modul för orderbekräftelse
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om orderbekräftelsemoduler och beskriver hur du använder dem i Microsoft Dynamics 365 Commerce.
+Denna artikel handlar om orderbekräftelsemoduler och beskriver hur du använder dem i Microsoft Dynamics 365 Commerce.
 
 Orderbekräftelsemodulen används för att visa bekräftelseinformationen när en order har lagts. Denna visar order bekräftelse-ID, orderns kontaktinformation och annan orderinformation, till exempel de artiklar som har köpts, betalningsinformation, upphämtningsalternativ och leveransmetod.
 
@@ -46,7 +46,7 @@ När du skapar en sida för orderbekräfta kan du lägga till andra relevanta mo
 
 ## <a name="add-an-order-confirmation-module-to-a-page"></a>Lägg till en orderbekräftelsemodul på en sida
 
-Om du vill lägga till en orderbekräftelsemodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
+Om du vill lägga till en orderbekräftelsemodul på en ny sida och konfigurera de obligatoriska egenskaperna följer du stegen nedan.
 
 1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
 1. I dialogrutan **Ny mall**, under **Mallnamn**, anger du namnet **Orderbekräftelsemall** och väljer sedan **OK**.

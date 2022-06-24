@@ -1,6 +1,6 @@
 ---
 title: Interaktiv funktionsmodul
-description: Detta ämne innehåller interaktiva funktionsmoduler och beskriver hur du lägger till dem på webbsidor i Microsoft Dynamics 365 Commerce.
+description: Denna artikel innehåller interaktiva funktionsmoduler och beskriver hur du lägger till dem på webbsidor i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3ab325189812289390740e31fd673ee9892f9759
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: deee7c35cfc4293480fda74665429121b71bbfab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780749"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898529"
 ---
 # <a name="interactive-feature-module"></a>Interaktiv funktionsmodul
 
 [!include [banner](includes/banner.md)]
 
-Detta ämne innehåller interaktiva funktionsmoduler och beskriver hur du lägger till dem på webbsidor i Microsoft Dynamics 365 Commerce.
+Denna artikel innehåller interaktiva funktionsmoduler och beskriver hur du lägger till dem på webbsidor i Microsoft Dynamics 365 Commerce.
 
-Interaktiva funktionsmoduler är mosaikliknande moduler som kan användas för att marknadsföra flera olika produktkategorier eller produktmärken genom en kombination av bilder och text. En återförsäljare kan till exempel lägga till en interaktiv funktionsmodul på startsidan för en e-handelsplats i syfte att framhäva bästsäljande kategorier. Den interaktiva funktionsmodulen liknar modulen i ikonlistan men har en annan layout och olika interaktionsfunktioner.
+Interaktiva funktionsmoduler är mosaikliknande moduler som kan användas för att marknadsföra flera olika produktkategorier eller produktmärken genom en kombination av bilder och text. En återförsäljare kan till exempel lägga till en interaktiv funktionsmodul på startsidan för en näthandelsplats i syfte att framhäva bästsäljande kategorier. Den interaktiva funktionsmodulen liknar modulen i ikonlistan men har en annan layout och olika interaktionsfunktioner.
 
-Varje modul för interaktiva funktioner är en samling interaktiva artikelmoduler. Varje modul för funktionsartikel drivs av data från innehållshanteringssystemet (CMS). Detta beror inte på några andra moduler eller data från Commerce-administrationen. Den interaktiva funktionsmodulen kan läggas till på alla webbplatssidor där en återförsäljare vill marknadsföra eller framhäva något (t.ex. produkter, kategorier eller varumärken).
+Varje modul för interaktiva funktioner är en samling interaktiva artikelmoduler. Varje modul för funktionsartikel drivs av data från innehållshanteringssystemet (CMS). Detta beror inte på några andra moduler eller data från Commerce headquarters. Den interaktiva funktionsmodulen kan läggas till på alla webbplatssidor där en återförsäljare vill marknadsföra eller framhäva något (t.ex. produkter, kategorier eller varumärken).
 
 > [!IMPORTANT]
 > - Den interaktiva funktionsmodulen finns tillgänglig från och med Dynamics 365 Commerce-version 10.0.20.
@@ -61,7 +61,7 @@ Den interaktiva funktionsmodulen kan stödja olika layouter och stilar baserat p
 
 ## <a name="add-an-interactive-feature-module-to-a-new-page"></a>Lägg till en interaktiv funktionsmodul på en ny sida
 
-Om du vill lägga till en interaktiv funktionsmodul på en ny sida och ställa in erforderliga egenskaper i Commerce-webbplatsskaparen följer du stegen nedan.
+Om du vill lägga till en interaktiv funktionsmodul på en ny sida och konfigurera erforderliga egenskaper i Commerce-webbplatsskaparen följer du stegen nedan.
 
 1. Gå till **Mallar** och öppna marknadsföringsmallen för webbplatsens startsida (eller skapa en ny marknadsföringsmall).
 1. I platsen **Huvud** i standardsida markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.

@@ -1,6 +1,6 @@
 ---
 title: Bokföra införsel och utförsel för Intrastat
-description: I detta ämne ges ett exempel på hur du bokför införsel och utförsel för Intrastat.
+description: I denna artikel ges ett exempel på hur du bokför införsel och utförsel för Intrastat.
 author: anasyash
 ms.date: 8/23/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 4ab4402740d199043519773b18732bdde9a0fb2f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: aef20f0261e103be7fe231a7efb39751ab4d1151
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724795"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862976"
 ---
 # <a name="post-arrivals-and-dispatches-for-intrastat"></a>Bokföra införsel och utförsel för Intrastat
 
 [!include [banner](../includes/banner.md)]
 
-I detta ämne ges ett exempel på hur du bokför införsel och utförsel för Intrastat. I exemplet används den juridiska personen **ITCO**.
+I denna artikel ges ett exempel på hur du bokför införsel och utförsel för Intrastat. I exemplet används den juridiska personen **ITCO**.
 
 ## <a name="setup"></a>Ställ in
 
@@ -220,7 +220,7 @@ Denna del av exemplet visar hur du använder en leverantörsfaktura för att kö
 8. I fältet **Fakturadatum** väljer du **7/9/2021**.
 9. I fältet **Faktura** anger du **ITA-0004**.
 10. I fältet **Kredit** anger du **120000**.
-11. I fältet **Motkontotyp** väljer du **Redovisning**.
+11. I fältet **Motkontotyp** fältet **typ** väljer du **Redovisning**.
 12. I fältet **Motkonto** anger du **110130**.
 13. I fältet **Momsgrupp** väljer du **IT\_PUREU**.
 14. I fältet **Artikelmomsgrupp** väljer du **22%EU**.
@@ -293,7 +293,7 @@ Denna del av exemplet visar hur du använder en försäljningsorder för att sä
 13. Klicka på **Spara** i åtgärdsfönstret.
 14. I åtgärdsfönstret > fliken **Faktura** > gruppen **Generera** väljer du **Faktura** om du vill skapa fakturan för ordern.
 15. I dialogrutan **Bokföring av faktura** > snabbfliken **Parametrar** > avsnittet **Parameter** > fältet **Kvantitet** väljer du **Alla**.
-16. På snabbfliken **Inställningar**, i fältet **Fakturadatum** väljer du **7/9/2021**.
+16. På snabbfliken **Inställningar**, i fältet **Faktura** **datum** väljer du **7/9/2021**.
 17. Välj **OK**.
 18. Granska raderna i Intrastatjournalen.
 
@@ -327,7 +327,7 @@ Denna del av exemplet visar hur du använder en kreditfaktura för att returnera
 15. Klicka på **Spara** i åtgärdsfönstret.
 16. I åtgärdsfönstret > fliken **Faktura** > gruppen **Generera** väljer du **Faktura** om du vill skapa fakturan för ordern.
 17. På snabbfliken **Parametrar** > avsnittet **Parameter** > fältet **Kvantitet** väljer du **Alla**.
-18. I dialogrutan **Bokföring av faktura** > snabbfliken **Inställningar** > fältet **Fakturadatum** väljer du **7/9/2021**.
+18. I dialogrutan **Bokföring av faktura** > snabbfliken **Inställningar** > fältet **Faktura** **datum** väljer du **7/9/2021**.
 19. Välj **OK** när du vill bokföra faktura.
 20. Granska raderna i Intrastatjournalen.
 
@@ -358,7 +358,7 @@ Denna del av exemplet visar hur du använder en försäljningsorder för att kö
 12. Klicka på **Spara** i åtgärdsfönstret.
 13. I åtgärdsfönstret > fliken **Faktura** > gruppen **Generera** väljer du **Faktura** om du vill skapa fakturan för ordern.
 14. På snabbfliken **Parametrar** > avsnittet **Parameter** > fältet **Kvantitet** väljer du **Alla**.
-15. I dialogrutan **Bokföring av faktura** > snabbfliken **Inställningar** > fältet **Fakturadatum** väljer du **7/9/2021**.
+15. I dialogrutan **Bokföring av faktura** > snabbfliken **Inställningar** > fältet **Faktura** **datum** väljer du **7/9/2021**.
 16. Välj **OK** när du vill bokföra faktura.
 17. Granska raderna i Intrastatjournalen.
 

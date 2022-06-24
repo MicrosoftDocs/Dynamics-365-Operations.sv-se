@@ -1,6 +1,6 @@
 ---
 title: Funktionen SPLIT ER
-description: Det här avsnittet innehåller information om hur funktionen SPLIT elektronisk rapportering (ER) används.
+description: Den här artikeln innehåller information om hur funktionen SPLIT elektronisk rapportering (ER) används.
 author: NickSelin
 ms.date: 04/01/2021
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a42b0c7cfa2a8d3dcb7448224c9e88a48276f7d8cdbcce484383a778b8275a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2acd93b645121b577d516d3ce29a3d05069b8de9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757331"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906841"
 ---
 # <a name="split-er-function"></a>Funktionen SPLIT ER
 

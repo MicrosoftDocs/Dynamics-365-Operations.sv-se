@@ -1,6 +1,6 @@
 ---
-title: Villkorsutvärdering
-description: Det här avsnittet beskriver hur du skapar en mall för villkorsutvärdering och registrering på en tillgång i tillgångshantering.
+title: Utvärdering av tillstånd
+description: Denna artikel beskriver hur du skapar en mall för villkorsutvärdering och registrering på en tillgång i Tillgångshantering.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,28 +15,28 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cced322dd2f213d8e6025d853edc8472618989b61de7139b28ba1c6bffd3ad2a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa326a01bb63bd0b59c0df7a3c751a5242a3dd37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736074"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872106"
 ---
-# <a name="condition-assessment"></a>Villkorsutvärdering
+# <a name="condition-assessment"></a>Utvärdering av tillstånd
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Det här avsnittet beskriver hur du skapar en mall för villkorsutvärdering och registrering på en tillgång i tillgångshantering. Villkorsutvärdering utförs med jämna mellanrum och det primära målet är att skapa och underhålla villkorsdata för tillgångar. Sett ur ett förebyggande underhållsperspektiv är det viktigt att övervaka viktig information som aktuellt tillstånd och återstående livslängd. Dessutom, om du utför villkorsutvärdering med jämna mellanrum, kommer du att kunna övervaka och jämföra förhållandena på maskinen i din fabrik.
+Denna artikel beskriver hur du skapar en mall för villkorsutvärdering och registrering på en tillgång i Tillgångshantering. Villkorsutvärdering utförs med jämna mellanrum och det primära målet är att skapa och underhålla villkorsdata för tillgångar. Sett ur ett förebyggande underhållsperspektiv är det viktigt att övervaka viktig information som aktuellt tillstånd och återstående livslängd. Dessutom, om du utför villkorsutvärdering med jämna mellanrum, kommer du att kunna övervaka och jämföra förhållandena på maskinen i din fabrik.
 
 Tillståndsbedömning kan användas för att mäta och övervaka många förhållanden på din utrustning. Exempel: du kan mäta vibrationer på din maskin. När du har registrerat vibrationsmätningar i tillståndshantering på olika typer av utrustning kan du söka efter den senaste registrerade utvärderingen och se vibrationsmätningar.
 
-Villkorsutvärdering skapas på tillgångar. Du ställer in en mall för villkorsutvärdering på en tillgångstyp innan du utför villkors utvärderingsproceduren. Anledningen till att använda mallar för villkorsutvärdering är att undvika variation av villkorsdata på liknande tillgångar. Sekvensen för att ställa in och använda villkorsutvärdering i tillgångshantering är: först ställer du in de nödvändiga villkorsutvärderingsmallarna. Därefter kopplar du mallar med tillgångstyper i formuläret **tillgångstyper**. Slutligen kan du skapa villkorsutvärderingsregistreringar på en tillgång i formuläret **tillgång**.
+Villkorsutvärdering skapas på tillgångar. Du konfigurerar en mall för villkorsutvärdering på en tillgångstyp innan du utför villkors utvärderingsproceduren. Anledningen till att använda mallar för villkorsutvärdering är att undvika variation av villkorsdata på liknande tillgångar. Sekvensen för att konfigurera och använda villkorsutvärdering i Tillgångshantering är: först ställer du in de nödvändiga villkorsutvärderingsmallarna. Därefter kopplar du mallar med tillgångstyper i formuläret **tillgångstyper**. Slutligen kan du skapa villkorsutvärderingsregistreringar på en tillgång i formuläret **tillgång**.
 
 ## <a name="create-a-condition-assessment-template"></a>Skapa en mall för villkorsutvärdering
 
-1. Välj **tillgångshantering** > **inställningar** > **tillgångstyper** > **villkorsutvärdering**.
+1. Välj **Tillgångshantering** > **inställningar** > **tillgångstyper** > **villkorsutvärdering**.
 2. Skapa en ny mall genom att välja **Nytt**.
 3. Infoga ID för mallen i fältet **Mall** field.
 4. Infoga ett namn för mallen i fältet **Namn**.
@@ -62,7 +62,7 @@ Villkorsutvärdering skapas på tillgångar. Du ställer in en mall för villkor
 När du har gjort en registrering av villkorsutvärdering på en tillgång kan du skriva ut en villkorsutvärderingsrapport.
 
 >[!NOTE]
->Du kan också registrera villkorsutvärdering på en arbetsorder (knappen **tillgångshantering** > **allmänt** > **arbetsorder** > **alla arbetsorder** > **villkorsutvärdering**.)
+>Du kan också registrera villkorsutvärdering på en arbetsorder (knappen **Tillgångshantering** > **allmänt** > **arbetsorder** > **alla arbetsorder** > **villkorsutvärdering**.)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

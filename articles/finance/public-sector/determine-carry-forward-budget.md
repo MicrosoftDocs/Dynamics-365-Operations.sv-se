@@ -1,6 +1,6 @@
 ---
 title: Uppdatera överföringsbudgeten efter reduceringar av inköpsorder och fakturor
-description: I det här avsnittet beskrivs hur du kontrollerar vad som händer med överföringsbudgeten när inköpsorder annulleras eller minskas och när fakturor reduceras.
+description: I den här artikeln beskrivs hur du kontrollerar vad som händer med överföringsbudgeten när inköpsorder annulleras eller minskas och när fakturor reduceras.
 author: TaylorVH
 ms.date: 02/11/2022
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2022-02-01
-ms.openlocfilehash: 3b0f06b8d5a38252fc8ff6662f3d454adffffe60
-ms.sourcegitcommit: 5b55f2913e736d12e40c227bf3ce3a9abec815bd
+ms.openlocfilehash: 7f0ef0ffdf697609e811f754b4378b1f7a81c494
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8803011"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897970"
 ---
 # <a name="update-the-carry-forward-budget-after-reductions-in-purchase-orders-and-invoices"></a>Uppdatera överföringsbudgeten efter reduceringar av inköpsorder och fakturor
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-I det här avsnittet beskrivs hur du kontrollerar vad som händer med överföringsbudgeten när inköpsorder annulleras eller minskas och när fakturor reduceras.
+I den här artikeln beskrivs hur du kontrollerar vad som händer med överföringsbudgeten när inköpsorder annulleras eller minskas och när fakturor reduceras.
 
 Mer information om hur inköpsorder bearbetas vid årets slut finns i [Bearbeta inköpsorder vid årets slut](/dynamicsax-2012/appuser-itpro/process-purchase-orders-at-year-end).
 

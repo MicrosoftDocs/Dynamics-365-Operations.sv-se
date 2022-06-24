@@ -1,6 +1,6 @@
 ---
 title: Tillgångsstrukturer
-description: Det här avsnittet beskriver tillgångsstrukturer i tillgångshanteraren
+description: Denna artikel beskriver tillgångsstrukturer i Tillgångshanteraren.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0430891607ac4558c91b86318aee318d0076007daf59a32eda65cb411d274b3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 71b861ec31e704e001aab29245b9e24ce8beb0de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751995"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882791"
 ---
 # <a name="asset-boms"></a>Tillgångsstrukturer
 
@@ -28,7 +28,7 @@ ms.locfileid: "6751995"
 
  
 
-Det här avsnittet beskriver tillgångsstrukturer i tillgångshanteraren Sidan **Tillgångsstrukturer** visar en lista över alla artiklar (reservdelar och andra artiklar) som används på en tillgång under hela dess livstid. När du skapar en ny tillgång bör du överväga att ställa in en tillgångsstruktur som en del av inställningsproceduren. På så sätt kan du spåra artikelhistoriken för tillgången från datumet för skapandet.
+Denna artikel beskriver tillgångsstrukturer i Tillgångshanteraren. Sidan **Tillgångsstrukturer** visar en lista över alla artiklar (reservdelar och andra artiklar) som används på en tillgång under hela dess livstid. När du skapar en ny tillgång bör du överväga att konfigurera en tillgångsstruktur som en del av inställningsproceduren. På så sätt kan du spåra artikelhistoriken för tillgången från datumet för skapandet.
 
 När du har slutfört ett underhållsjobb och artikelförbrukning har registrerats på en arbetsorder kan du spåra förbrukning av reservdelar och andra artiklar som används på tillgången. Den här funktionen kan du behålla en fullständig artikelförbrukningspost för alla dina tillgångar. Du kan till exempel använda posten för att övervaka om en viss reservdel ofta ersätts eller för att hålla reda på de reservdelar eller andra artiklar som för närvarande används på en tillgång.
 
@@ -42,15 +42,15 @@ Du kan också manuellt uppdatera en tillgångsstruktur genom att skapa nya artik
 
 På sidan **tillgångsstruktur** kan du spåra reservdelshistorik för tillgångar när artikelförbrukningen har registrerats på en arbetsorder. Om du vill använda den här funktionen måste du välja de artikelgrupper som ska användas för reservdelsregistrering på sidan **artikelgrupper för reservdelar**.
 
-Om du vill använda funktionen för tillgångsstruktur måste du först ställa in nödvändiga artikelgrupper för reservdelar. Om du vill att tillgångsstrukturen ska uppdateras automatiskt när en arbetsorder slutförs, kan du ställa in ett livscykeltillstånd för arbetsorder för att hantera uppdateringen. 
+Om du vill använda funktionen för tillgångsstruktur måste du först konfigurera nödvändiga artikelgrupper för reservdelar. Om du vill att tillgångsstrukturen ska uppdateras automatiskt när en arbetsorder slutförs, kan du konfigurera ett livscykeltillstånd för arbetsorder för att hantera uppdateringen. 
 
 
 ## <a name="set-up-spare-parts-item-groups"></a>Ställ in artikelgrupper för reservdelar
 
-Inställningen av reservdelshistoriken baseras på artikelgrupper som skapas i modulen **hantering av lager och lagerställe**. I tillgångshantering ställer du in artikelgrupper så att du kan spåra reservdelshistorik för artiklarna i de valda artikelgrupperna.
+Inställningen av reservdelshistoriken baseras på artikelgrupper som skapas i modulen **hantering av lager och lagerställe**. I Tillgångshantering ställer du in artikelgrupper så att du kan spåra reservdelshistorik för artiklarna i de valda artikelgrupperna.
 
-1. Välj **tillgångshantering** \> **inställningar** \> **tillgång** \> **artikelgrupper för reservdelar**.
-2. Välj **ny** om du vill ställa in en artikelgrupp.
+1. Välj **Tillgångshantering** \> **inställningar** \> **tillgång** \> **artikelgrupper för reservdelar**.
+2. Välj **ny** om du vill konfigurera en artikelgrupp.
 3. I fältet **artikelgrupp** väljer du gruppen. Namnet på gruppen anges automatiskt i fältet **Namn**.
 
 ## <a name="view-and-update-asset-boms"></a>Visa och uppdatera tillgångsstrukturlistor
@@ -60,11 +60,11 @@ När du bokför artikelförbrukning på en arbetsorder kan du visa den registrer
 1. Välj **Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Aktiva tillgångar** Välj tillgången i listan och välj sedan **tillgångsstruktur**.
 
     > [!NOTE]
-    > Om du vill visa alla artikelförbrukningsregistreringar på alla tillgångar, välj **tillgångshantering** \> **förfrågningar** \> **tillgångar** \> **tillgångsstruktur**.
+    > Om du vill visa alla artikelförbrukningsregistreringar på alla tillgångar, välj **Tillgångshantering** \> **förfrågningar** \> **tillgångar** \> **tillgångsstruktur**.
 
-2. Välj **uppdatera tillgångsstruktur**. Du kan lägga till tillgångar, tillgångstyper och resurser till uppdateringen som du behöver genom att välja **Välj**. Starta uppdateringen genom att välja **OK**, Du kan också ställa in uppdateringsfunktionen som ett batchjobb.
+2. Välj **uppdatera tillgångsstruktur**. Du kan lägga till tillgångar, tillgångstyper och resurser till uppdateringen som du behöver genom att välja **Välj**. Starta uppdateringen genom att välja **OK**, Du kan också konfigurera uppdateringsfunktionen som ett batchjobb.
 3. Om du vill se mer information som är relaterad till artiklarna kan du lägga till lagerdimensioner. Välj **Lager** \> **Dimensionsvisning** och markera sedan kryssrutorna för de dimensioner som du vill visa. Om du vill behålla den här inställningen för alla **tillgångsstrukturer** anger du alternativet **spara inställningar** till **Ja**.
-4. Om du vill få en översikt över var i tillgångshantering som artikeln på den valda raden används, i relation till tillgångar, jobbtypstandard, reservdelar och arbetsorder väljer du **artikel där den används**. 
+4. Om du vill få en översikt över var i Tillgångshantering som artikeln på den valda raden används, i relation till tillgångar, jobbtypstandard, reservdelar och arbetsorder väljer du **artikel där den används**. 
 5. Om du bara vill visa aktiva artikelrader väljer du **visa** \> **aktuell**. Om du vill visa alla artikelrader, inklusive rader där förfallodatumet infaller tidigare än det aktuella datumet väljer du **Visa** \> **Alla**.
 
 > [!NOTE]

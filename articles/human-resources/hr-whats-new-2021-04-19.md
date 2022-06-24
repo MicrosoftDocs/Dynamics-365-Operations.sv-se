@@ -1,6 +1,6 @@
 ---
 title: Vad är nytt eller har ändrats i Dynamics 365 Human Resources (19 april 2021)
-description: Detta ämne beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources per den 19 juli 2021.
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 19 april 2021.
 author: marcelbf
 ms.date: 04/19/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6734069b1448999c62a8c538f97d786fc10995e5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e46c5721853ebfe3b9d5955ca5f4e7a4ead570c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685754"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846312"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-19-2021"></a>Vad är nytt eller har ändrats i Dynamics 365 Human Resources (19 april 2021)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Det här ämnet beskriver nya, ändrade, kommer snart funktioner i Dynamics 365 Human Resources.
+Den här artikeln beskriver funktioner som är nya, ändrade eller kommer snart i Dynamics 365 Human Resources.
 
 Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
@@ -49,9 +49,9 @@ Följande funktioner är i allmänhet tillgänglig i den här versionen.
 Den här versionen innehåller följande felkorrigeringar.
 
 > [!NOTE]
-> Vårt mål är att få den här informationen så snart som möjligt. Vi kan uppdatera det här avsnittet för att inkludera felkorrigeringar som gjorde det i versionen efter det att ämnet publicerades första gången.
+> Vårt mål är att få den här informationen så snart som möjligt. Vi kan komma att uppdatera detta ämne i syfte att inkludera felkorrigeringar som kommit med i versionen efter det att ämnet publicerades första gången.
 
-| Utfärda nummer | Utleverans |  beskrivning |
+| Utfärda nummer | Problem |  Beskrivning |
 | --- | --- | --- |
 | 552164 | **Sparad vy** i **Självbetjäning för medarbetare > Öppna kurser** fungerar inte för kurser som innehåller en agenda | Om en sparad vy används på öppna kurser (ESS) och en av kurserna har en kopplad agenda, visar vyn inte längre flera rader för den kursen. |
 | 560614 | **Förmåner > Alternativ för livshändelser** visar avvikelser i verktygstipsdokumentationen och kodbeteendet. | Uppdaterade knappbeskrivningar i **Alternativ för livshändelse** för att visa korrekt beteende. |

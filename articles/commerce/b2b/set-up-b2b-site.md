@@ -1,6 +1,6 @@
 ---
-title: Konfigurera en B2B-näthandelssajt
-description: I detta ämne beskrivs hur du ställer in en B2B-näthandelssajt ("business-to-business") i Microsoft Dynamics 365 Commerce.
+title: Konfigurera en näthandelsplats för B2B
+description: I denna artikel beskrivs hur du konfigurerar en B2B-näthandelssajt ("business-to-business") i Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 31266f84270f170e172eadea75a90397c5a6e8e6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0bcd864694ff2ad2aa211c927da4d698c0039715
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691928"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881916"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Konfigurera en näthandelsplats för B2B
 
 [!include [banner](../../includes/banner.md)]
 
-näthandelssajter mellan företag (B2B) innehåller ett antal viktiga funktioner som optimerar arbetsflödet för en B2B-användare. I detta ämne beskrivs hur du ställer in en B2B-näthandelssajt ("business-to-business") i Microsoft Dynamics 365 Commerce. Ämnet avhandlar de moduler och webbplatsinställningar som måste konfigureras för att B2B-specifika scenarier ska kunna aktiveras.
+näthandelssajter mellan företag (B2B) innehåller ett antal viktiga funktioner som optimerar arbetsflödet för en B2B-användare. I denna artikel beskrivs hur du konfigurerar en B2B-näthandelssajt ("business-to-business") i Microsoft Dynamics 365 Commerce. Ämnet avhandlar de moduler och webbplatsinställningar som måste konfigureras för att B2B-specifika scenarier ska kunna aktiveras.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-- Om du vill ställa in en näthandelssajt för B2B måste du aktivera och konfigurera specifika funktioner i Commerce-administrationen enligt beskrivningen i det här avsnittet.
+- Om du vill konfigurera en näthandelssajt för B2B måste du aktivera och konfigurera specifika funktioner i Commerce headquarters enligt beskrivningen i denna artikel.
 - Kärnerfarenheter, till exempel produktidentifiering, produktinformationssidor, kundvagnen och POS drivs av samma moduler som används för näthandelssajter för företag till konsument (B2C). Webbplatsutformare bör känna till alla moduler som Dynamics 365 Commerce stöder. Mer information finns i [Översikt över modulbibliotek](../starter-kit-overview.md).
-- I det här avsnittet förutsätts det att webbplatsutformare förstår grunderna i webbplatsbyggare, mallar, fragment och sidor för Commerce, så att de kan aktivera B2B-funktionerna för näthandelssajter.
+- I denna artikel förutsätts att webbplatsutformare förstår grunderna i webbplatsbyggare, mallar, fragment och sidor för Commerce, så att de kan aktivera B2B-funktionerna för näthandelssajter.
 
 ## <a name="site-level-settings"></a>Inställningar på webbplatsnivå
 
@@ -51,7 +51,7 @@ Om användarna ska kunna bli affärspartner måste de först skicka in en begär
 
 Modulen **Partnerregistrering** på en begärandesida för affärspartner används för att initiera användarförfrågningar om att bli affärspartners. I den här modulen kan du samla in den användarinformation som krävs för registreringsprocessen. Modulen **Adress för affärskonto** för att samla in användarens adress.
 
-Följ de här stegen om du vill ställa in och konfigurera begärandesidan för affärspartner i webbplatsskaparen.
+Följ de här stegen om du vill konfigurera och konfigurera begärandesidan för affärspartner i webbplatsskaparen.
 
 1. Skapa en mall som kallas **Registrering**. Denna mall bör innehålla följande moduler:
 
@@ -79,7 +79,7 @@ Följ de här stegen om du vill ställa in och konfigurera begärandesidan för 
 
 När en affärspartnersbegäran har skickats ska en bekräftelsesida visas för användaren som bekräftar överföringen. 
 
-Följ de här stegen om du vill ställa in och konfigurera bekräftelsesidan i webbplatsskaparen.
+Följ de här stegen om du vill konfigurera och konfigurera bekräftelsesidan i webbplatsskaparen.
 
 1. Använd mallen **Registrering** som du skapade tidigare för att skapa en sida kallad **Bekräftelse för partnerbegäran**.
 1. I posten för **Sidhuvud** anger du det rubrikfragment som förkonfigurerats med webbplatsens sidhuvud.

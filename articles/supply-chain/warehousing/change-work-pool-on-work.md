@@ -1,6 +1,6 @@
 ---
 title: Ändra arbetspool för arbete
-description: I det här avsnittet beskrivs hur du kan använda knappen Ändra arbetsgrupp för arbetsuppgifter när du vill ändra arbetsgrupp för befintligt arbete.
+description: I denna artikel beskrivs hur du kan använda knappen Ändra arbetsgrupp för arbetsuppgifter när du vill ändra arbetsgrupp för befintligt arbete.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: dc210de420705062ba52c674f3ddb8eb7944715a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 817b45e8f5af957801a0af04e50acf20ba16c26d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669864"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900634"
 ---
 # <a name="change-work-pool-on-work"></a>Ändra arbetspool för arbete
 
@@ -34,14 +34,14 @@ Från och med version 10.0.25 av Supply Chain Management är denna funktion obli
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>Ange funktionen ändra arbetspool för arbete
 
-Om du vill använda den här funktionen måste du ha ställt in vissa arbetspooler. Du kan också ställa in arbetsmallarna så att de tilldelar en pool automatiskt. Om du vill arbeta i ett exempelscenario som finns senare i det här avsnittet konfigurerar du systemet enligt beskrivningen i det här avsnittet.
+Om du vill använda den här funktionen måste du ha ställt in vissa arbetspooler. Du kan också konfigurera arbetsmallarna så att de tilldelar en pool automatiskt. Om du vill arbeta i ett exempelscenario som finns senare i denna artikel konfigurerar du systemet enligt beskrivningen i det här avsnittet.
 
 ### <a name="set-up-work-pools"></a>Ställa in arbetspooler
 
 Med hjälp av arbetspooler kan du ordna arbetsuppgifter efter typ. Om du vill arbeta med funktionen *Ändra arbetspool för arbete* måste du ha minst två arbetspooler tillgängliga. Så här lägger du till arbetspooler.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Arbete \> Arbetspooler**.
-1. Om du arbetar med demo data från **USMF** företaget och kommer att arbeta genom exempelscenariot senare i det här avsnittet, lägger du till två arbetspooler som har följande inställningar:
+1. Om du arbetar med demo data från **USMF** företaget och kommer att arbeta genom exempelscenariot senare i denna artikel lägger du till två arbetspooler som har följande inställningar:
 
     - Arbetspool 1:
 
@@ -57,9 +57,9 @@ Med hjälp av arbetspooler kan du ordna arbetsuppgifter efter typ. Om du vill ar
 
 ### <a name="set-up-work-templates"></a>Ställ in arbetsmallar
 
-För varje arbetsmall kan du ställa in en standardpool för arbetsgrupp, efter behov. För varje relevant mall tilldelar du en arbetsgrupp i kolumnen **arbetspools-ID**. I det här fallet ärver alla arbetsuppgifter som genereras med hjälp av en given mall automatiskt den tilldelade arbetsgruppen. Om du arbetar med demo data från **USMF** företaget och kommer att arbeta genom exempelscenariot senare i det här avsnittet, följ dessa steg.
+För varje arbetsmall kan du konfigurera en standardpool för arbetsgrupp, efter behov. För varje relevant mall tilldelar du en arbetsgrupp i kolumnen **arbetspools-ID**. I det här fallet ärver alla arbetsuppgifter som genereras med hjälp av en given mall automatiskt den tilldelade arbetsgruppen. Om du arbetar med demonstrationsdata från företaget **USMF** och kommer att arbeta genom exempelscenariot senare i denna artikel, följ då dessa steg.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Arbete \> Arbetsmallar**.
+1. Gå till **Warehouse management \> Inställningar \> Arbete \> Arbetsmallar**.
 1. I åtgärdsfönstret, välj **Redigera** för att placera sidan i redigeringsläge.
 1. Redigera mallen genom att ange följande värden:
 
@@ -70,7 +70,7 @@ För varje arbetsmall kan du ställa in en standardpool för arbetsgrupp, efter 
 
 ## <a name="example-scenario"></a>Exempelscenario
 
-Det här scenariot visar hur du ändrar flödet för bearbetning för en befintlig arbetsuppgift genom att ändra dess arbetsgrupp. Den använder demodata från **USMF** företaget och de inställningar som föreslogs tidigare i det här avsnittet.
+Det här scenariot visar hur du ändrar flödet för bearbetning för en befintlig arbetsuppgift genom att ändra dess arbetsgrupp. Steget använder demodata från företaget **USMF** och de inställningar som föreslogs tidigare i denna artikel.
 
 ### <a name="create-a-sales-order-and-release-it-to-the-warehouse"></a>Skapa en försäljningsorder och släpp den på lagerstället
 

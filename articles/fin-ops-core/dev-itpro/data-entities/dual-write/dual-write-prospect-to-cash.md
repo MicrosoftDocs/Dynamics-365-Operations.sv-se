@@ -1,6 +1,6 @@
 ---
 title: Potentiell kund till kontanter vid dubbel skrivning
-description: I det här avsnittet finns information om kunders kontantkassa vid dubbel skrivning.
+description: I den här artikeln finns information om kunders kontantkassa vid dubbel skrivning.
 author: RamaKrishnamoorthy
 ms.date: 01/07/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 7c53bcd1084d89b59d0f6b2674a85d7c3481a9bf
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f0d5339190f7e2aff7b084fa73e559af28e10ee8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781801"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860121"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potentiell kund till kontanter vid dubbel skrivning
 
@@ -29,7 +29,7 @@ I programgränssnitten får du åtkomst till bearbetningsstatus och fakturainfor
 Mer information om kund- och kontaktintegrering finns i [Integrerad kundmall](customer-mapping.md). Information om produktintegration finns i [Enhetlig produkterfarenhet](product-mapping.md).
 
 > [!NOTE]
-> I Dynamics 365 Sales, refererar både potentiell kund och kund till en post i tabellen **Konto** där kolumnen **RelationshipType** är antingen **Potentiell kund** eller **Kund**. Om din affärslogik innehåller en kvalifikationsprocess för **Konto** där posten **Konto** skapas och kvalificeras som potentiell kund först och sedan som en kund synkroniseras den kunden endast till Finance and Operations-appen när den är en kund (`RelationshipType=Customer`). Om du vill att raden **Konto** ska synkroniseras som en potentiell kund, behöver du en anpassad mappning för att integrera data för potentiell kund.
+> I Dynamics 365 Sales, refererar både potentiell kund och kund till en post i tabellen **Konto** där kolumnen **RelationshipType** är antingen **Potentiell kund** eller **Kund**. Om din affärslogik innehåller en kvalifikationsprocess för **Konto** där posten **Konto** skapas och kvalificeras som potentiell kund först och sedan som en kund synkroniseras den kunden endast till Ekonomi och drift-appen när den är en kund (`RelationshipType=Customer`). Om du vill att raden **Konto** ska synkroniseras som en potentiell kund, behöver du en anpassad mappning för att integrera data för potentiell kund.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 
@@ -111,7 +111,7 @@ Försäljningsfakturor skapas i Supply Chain Management och synkroniseras med Sa
 
 Potentiell kund till kontanter inkluderar en samling tabellmappningar som fungerar tillsammans under kunddatainteraktion, enligt följande tabell.
 
-| Finance and Operations-appar | Kundengagemangsappar | beskrivning |
+| Ekonomi och drift-appar | Kundengagemangsappar | Beskrivning |
 |-----------------------------|-----------------------------------|-------------|
 [Alla produkter](mapping-reference.md#138) | msdyn_globalproducts | |
 [Kunder V3](mapping-reference.md#101) | konton | |
@@ -122,7 +122,7 @@ Potentiell kund till kontanter inkluderar en samling tabellmappningar som funger
 [CDS-försäljningsofferrubrik](mapping-reference.md#215) | anbudsförfrågningar | |
 [Försäljningsoffertrader för CDS](mapping-reference.md#214) | quotedetails | |
 [Frisläppta produkter V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
-[Försäljningsfakturahuvuden V2](mapping-reference.md#118) | fakturor | Tabellen försäljningsfakturahuvuden V2 i Finance and Operations-appen innehåller fakturor för försäljningsorder och fritextfakturor. Ett filter används för Dataverse för att filtrera bort eventuella fritextfakturadokument. |
+[Försäljningsfakturahuvuden V2](mapping-reference.md#118) | fakturor | Tabellen försäljningsfakturahuvuden V2 i Ekonomi och drift-appen innehåller fakturor för försäljningsorder och fritextfakturor. Ett filter används för Dataverse för att filtrera bort eventuella fritextfakturadokument. |
 [Försäljningsfakturarader V2](mapping-reference.md#117) | fakturainformation | |
 [Koder för försäljningsorderursprung](mapping-reference.md#186) | msdyn_salesorderorigins | |
 

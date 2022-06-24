@@ -1,6 +1,6 @@
 ---
 title: Konfigurera leveranssätt och avgifter för kundtjänst
-description: Det här avsnittet beskriver hur du ställer in leveranssätten och avgifter för en kundtjänstorder i Dynamics 365 Commerce.
+description: Denna artikel beskriver hur du konfigurerar leveranssätt och avgifter för en kundtjänstorder i Dynamics 365 Commerce.
 author: josaw1
 ms.date: 04/26/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f445e9dabd0210951609170369eae63bcc30ce6b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748581"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888308"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurera leveranssätt och avgifter för kundtjänst
 
@@ -35,7 +35,7 @@ Commerce har funktioner som låter användarna begränsa leveranssätt som kan a
 
 Du måste definiera leveransmetoder innan du anger vilken leveransadress kan användas för kundtjänst och definiera associerade tillägg och regler. Gå till **Försäljning och marknadsföring \> Inställningar \> Distribution \> Leveranssätt**. Välj **Nytt** om du vill skapa ett nytt leveranssätt. Alternativt väljer du ett befintligt leveranssätt i listan och väljer sedan **redigera** för att göra ändringar.
 
-I fältet **leveranssätt** kan du ange en kombination av alfanumeriska tecken baserat på dina affärsbehov. Du kan använda fältet **beskrivning** och ge ytterligare kontext. Fälten **Avgiftsgrupp** och **Expediera** är valfria och förklaras i detalj längre fram i det här avsnittet.
+I fältet **leveranssätt** kan du ange en kombination av alfanumeriska tecken baserat på dina affärsbehov. Du kan använda fältet **beskrivning** och ge ytterligare kontext. Fälten **Avgiftsgrupp** och **Expediera** är valfria och förklaras i detalj längre fram i denna artikel.
 
 På snabbfliken **Handelskanaler** lägg till en kanal som får användas för att skapa leveranssätt när försäljningstransaktioner skapas i den kanalen.
 
@@ -87,7 +87,7 @@ Om inställningen **aktivera slutförande av order** är inaktiverad, måste anv
 
 ## <a name="use-expedited-delivery-modes-on-call-center-orders"></a>Använd expedierad leveranssätt på kundtjänstorder
 
-Du kan även länka en expedieringskod till varje leveranssätt som du konfigurerar. Den här koden används som en prioriteringssorterings- och rapporteringsverktyg. Det orsakar för närvarande inte extra avgifter som tillämpas på ordern. För att ställa in expedieringskod, gå till **försäljning och marknadsföring \>inställningar \>fördelning \>expedieringskoder**.
+Du kan även länka en expedieringskod till varje leveranssätt som du konfigurerar. Den här koden används som en prioriteringssorterings- och rapporteringsverktyg. Det orsakar för närvarande inte extra avgifter som tillämpas på ordern. För att konfigurera expedieringskod, gå till **försäljning och marknadsföring \>inställningar \>fördelning \>expedieringskoder**.
 
 Exempelvis för order som ska levereras med flyg, nästa dag måste plockning göras på ett lagerställe kl 13 varje dag. I det här fallet kan du skapa en expedieringskod och koden kan länkas till leverans nästa arbetsdagsläge som har konfigurerats i systemet. När lagerstället skapar dess påfyllnadsplockning och lämplig expedieringskod i fältet **expediering** kan användas som ett filter så att plockning utförs endast för order som har de leveranssätt som är kopplade till koden.
 

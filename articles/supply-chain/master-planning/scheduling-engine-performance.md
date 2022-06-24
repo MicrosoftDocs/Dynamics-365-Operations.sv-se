@@ -1,6 +1,6 @@
 ---
 title: Förbättra schemaläggningsmotorns prestanda
-description: I det här avsnittet finns information om schemaläggningsmotorn och hur du förbättrar prestandan.
+description: I denna artikel finns information om schemaläggningsmotorn och hur du förbättrar prestandan.
 author: t-benebo
 ms.date: 09/03/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 972e566153b7423398b2ad4a4e70b264f02c40cd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469018"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854309"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Förbättra schemaläggningsmotorns prestanda
 
@@ -29,14 +29,14 @@ ms.locfileid: "8469018"
 
 Resursplaneringsmotorn används när du planerar flöden för planerade och släppta produktionsorder. Motorn släpptes ursprungligen som en del av Dynamics AX 2012 och har genomgått flera förbättringar sedan den släpptes.
 
-[Problemet med finplanering](https://en.wikipedia.org/wiki/Job_shop_scheduling) är ett extremt komplicerat kombinatoriskt problem där lösningstiden växer exponentiellt med antalet beslutsvariabler. Ibland kan kunder ställa in produktionsflöden och relaterade data på ett sätt som leder till ett planeringsproblem som inte kan lösas i rimlig tid, även på den moderna maskinvaran. Det här avsnittet hjälper dig att förstå planeringsmotorn och hur en viss inställning kan påverka prestandan.
+[Problemet med finplanering](https://en.wikipedia.org/wiki/Job_shop_scheduling) är ett extremt komplicerat kombinatoriskt problem där lösningstiden växer exponentiellt med antalet beslutsvariabler. Ibland kan kunder konfigurera produktionsflöden och relaterade data på ett sätt som leder till ett planeringsproblem som inte kan lösas i rimlig tid, även på den moderna maskinvaran. Denna artikel hjälper dig att förstå planeringsmotorn och hur en viss inställning kan påverka prestandan.
 
 När du ska förbättra schemaläggningens prestanda rekommenderar vi allmänna riktlinjer för att minska komplexiteten hos de problem som motorn måste lösa. Några av de viktigaste faktorerna som kan påverka prestanda är:
 
-- Flöden med många operationer
-- Flöden med parallella operationer
-- Operationer med mer än en resursmängd
-- Operationer med många tillämpliga resurser
+- Flöden med många åtgärder
+- Flöden med parallella åtgärder
+- Åtgärder med mer än en resursmängd
+- Åtgärder med många tillämpliga resurser
 - Användning av hårda länkar
 - Användning av begränsad kapacitet
 - Antalet olika kalendrar som används
@@ -56,7 +56,7 @@ Den grundläggande processen för planering av en order består av tre huvudsteg
 
 ## <a name="load-data-into-the-engine"></a>Läs in data i motorn
 
-Planeringsmotorn har en mer abstrakt datamodell än databasen för Supply Chain Management eftersom den har byggts som en allmän motor som kan hantera olika datakällor. Begreppen flöde, sekundära operationer och körtid måste vara "översatta" till det allmänna jobb och den begränsningsmodell som motorn visar. Logiken för att bygga modellen har en stor mängd affärslogik och varierar beroende på källinformationen. Den ansvariga X++-klassen är `WrkCtrScheduler` och har härlett klasser för planerade produktionsorder, släppta produktionsorder och projektprognoser.
+Planeringsmotorn har en mer abstrakt datamodell än databasen för Supply Chain Management eftersom den har byggts som en allmän motor som kan hantera olika datakällor. Begreppen flöde, sekundära åtgärder och körtid måste vara "översatta" till det allmänna jobb och den begränsningsmodell som motorn visar. Logiken för att bygga modellen har en stor mängd affärslogik och varierar beroende på källinformationen. Den ansvariga X++-klassen är `WrkCtrScheduler` och har härlett klasser för planerade produktionsorder, släppta produktionsorder och projektprognoser.
 
 Det kan till exempel vara en väg som visas i följande tabell och bild, vilket verkar vara relativt enkelt.
 
@@ -72,12 +72,12 @@ När du skickar detta till motorn delas det upp i åtta jobb, vilket visas i bil
 
 [![Planera motorjobb](media/scheduling-engine-jobs.png "Planera motorjobb.")](media/scheduling-engine-jobs-large.png)
 
-Standardlänken mellan två jobb är `FinishStart` vilket innebär att sluttiden för ett jobb måste infalla före starttiden för ett annat jobb. Eftersom inställningarna måste utföras av samma resurs som senare kommer att utföra processen, finns det `OnSameResource` begränsningar mellan dem. Mellan jobben för den primära och sekundära operationen för 10, finns `StartStart` och `FinishFinish` länkar, vilket innebär att jobben måste starta och sluta samtidigt och det finns `NotOnSameResource` begränsningar som förhindrar samma resurs för primär och sekundär.
+Standardlänken mellan två jobb är `FinishStart` vilket innebär att sluttiden för ett jobb måste infalla före starttiden för ett annat jobb. Eftersom inställningarna måste utföras av samma resurs som senare kommer att utföra processen, finns det `OnSameResource` begränsningar mellan dem. Mellan jobben för den primära och sekundära åtgärden för 10, finns `StartStart` och `FinishFinish` länkar, vilket innebär att jobben måste starta och sluta samtidigt och det finns `NotOnSameResource` begränsningar som förhindrar samma resurs för primär och sekundär.
 
-För operation 20, där antalet resurser har ställts in på 3, har process jobbet delats upp i tre skilda jobb där alla jobben måste köras exakt på samma gång.
+För åtgärd 20, där antalet resurser har ställts in på 3, har process jobbet delats upp i tre skilda jobb där alla jobben måste köras exakt på samma gång.
 I det här fallet har flödesgruppen ställts in för att inte reservera kapacitet för kön efter tider, vilket är orsaken till att det bara finns ett enda jobb för kön efter.
 
-Planeringsmotorn förstår bara koncepten för jobben och har inga operationer. Detta innebär att operationerna även delas in i jobb vid grov planering, även om dessa inte kommer att sparas i databasen.
+Planeringsmotorn förstår bara koncepten för jobben och har inga åtgärder. Detta innebär att åtgärderna även delas in i jobb vid grov planering, även om dessa inte kommer att sparas i databasen.
 
 För varje projekt definierar vi också vad jobbkapacitetsbehovet är (antalet sekunder krävs). Beroende på hur resurskraven har definierats kan vi för varje jobb också skicka en lista med alla potentiella tillämpliga resurser som jobbet kan köras på och vilka kapacitetskrav som gäller för den specifika resursen. Även om listan med tillämpliga resurser skickas när modellen skapas måste motorn ändå se till att resurstilldelningen verkligen är giltig för hela jobbets varaktighet.
 
@@ -99,7 +99,7 @@ För att få en uppfattning om motorn som fungerar internt är det bäst att se 
 | `addResource` | Lägger till en resurs till planeringsmotorns resurspool. |
 | `addResourceGroup` | Lägger till en resursgrupp till planeringsmotorns resursgruppool. |
 | `addResourceGroupMembership` | Lägger till en resurs som en medlem i en resursgrupp. |
-| `addOptimizationGoal` | Lägger till ett planeringsoptimeringsmål (varaktighet eller prioritet). |
+| `addOptimizationGoal` | Lägger till ett Planeringsoptimerinsmål (varaktighet eller prioritet). |
 
 #### <a name="individual-jobs"></a>Enskilda jobb
 
@@ -199,11 +199,11 @@ Om jobbkön endast innehåller standard `FinishStart` länkar, vilket innebär a
 
 När det finns parallella jobb kan du söka efter olika kombinationer av resurser genom att söka efter en lösning. Antalet möjliga resurskombinationer är produkten av antalet tillämpliga resurser för de kopplade parallella jobben. Särskilt när du planerar en order bakåt från ett behovsdatum, kan det ta en stund innan logiken inser att det inte finns någon lösning på problemet som gör att parallella jobben får plats före dagens datum, eftersom det då måste kontrollera alla kombinationer eftersom det kan finnas vissa resurser med högre effektivitet eller en annan kalender som kan ge ett resultat. Detta innebär att om ingen tidsgräns har angetts kommer den att köras under lång tid innan den ändrar riktning till framåt.
 
-Den här kombinatoriska logiken innebär också att om du lägger till mer tillämpliga resurser kan motorn bli långsammare. Om det uppstår prestandaproblem vid parallella operationer och tidsplanering med oändlig kapacitet, kan den delvis fastställas genom att låta ruttdesigner ta ett beslut om vilken resurs som ska användas och sedan tilldela resursen direkt till operationen (eftersom motorn i de flesta fall alltid avslutar samma resurs, så att slutresultatet blir samma).
+Den här kombinatoriska logiken innebär också att om du lägger till mer tillämpliga resurser kan motorn bli långsammare. Om det uppstår prestandaproblem vid parallella åtgärder och tidsplanering med oändlig kapacitet, kan den delvis fastställas genom att låta ruttdesigner ta ett beslut om vilken resurs som ska användas och sedan tilldela resursen direkt till åtgärden (eftersom motorn i de flesta fall alltid avslutar samma resurs, så att slutresultatet blir samma).
 
 ### <a name="hard-links"></a>Hårda länkar
 
-Att ställa in länktypen mellan två jobb på hår ser till att det inte finns någon tidslucka mellan slutförandet av ett jobb och början på nästa. Detta kan vara användbart i situationer som när metall värms upp i ett jobb och sedan bearbetas i nästa jobb, där det inte är önskvärt att ha den metall som svalnar mellan.
+Att konfigurera länktypen mellan två jobb på hår ser till att det inte finns någon tidslucka mellan slutförandet av ett jobb och början på nästa. Detta kan vara användbart i situationer som när metall värms upp i ett jobb och sedan bearbetas i nästa jobb, där det inte är önskvärt att ha den metall som svalnar mellan.
 
 Om flödet utgör en enkel kedja utan filialer med vanliga, mjuka länkar och vidarebefordrings planering kan du söka efter en lösning för det första jobbet som uppfyller sina egna begränsningar och sedan förflytta dig genom kedjan som sprider sluttiden från det tidigare jobbet till nästa jobb. Om det aktuella jobbet inte kan hitta någon kapacitet flyttas starttiden för det vidare, utan att det påverkar tidigare jobb som kan skapa luckor mellan jobben. Med fasta länkar (särskilt i samband med begränsad kapacitet) för samma scenario innebär det faktum att ett jobb senare i kedjan inte kan hitta kapacitet, innebär att alla tidigare schemalagda jobb måste "dras" efter ett och på så sätt att ett antal gånger har schemalagts om. Särskilt i scenarier med hög belastning för flera resurser kan de hårda länkarna orsaka en kedjereaktion där jobben påverkar varandra och ett antal upprepningar måste utföras innan resultatet stabiliseras i ett genomförbart schema.
 
@@ -229,23 +229,23 @@ När du planerar med flera motorinstanser är resultatet alltså inte helt deter
 
 Resursgruppens kapacitet beror på vilka och hur många resurser som är medlemmar i resursgruppen. En resursgrupp i sig själv har ingen kapacitet&mdash;endast när resurser är medlemmar i gruppen får den kapacitet. Eftersom resursgrupps medlemskap kan variera över tiden måste kapaciteten utvärderas per dag.
 
-I grovplaneringen används resursgruppens kalender för att bestämma start- och sluttider för varje operation. Det innebär att resursgruppens kalender begränsar hur mycket tid som kan vara tidsplanerad för en operation på en dag i en resursgrupp. Mittemot kalendern för de specifika resurserna ignoreras kalenderns effektivitets data för resursgruppen eftersom det bara anger öppet tider och inte verklig kapacitet.
+I grovplaneringen används resursgruppens kalender för att bestämma start- och sluttider för varje åtgärd. Det innebär att resursgruppens kalender begränsar hur mycket tid som kan vara tidsplanerad för en åtgärd på en dag i en resursgrupp. Mittemot kalendern för de specifika resurserna ignoreras kalenderns effektivitets data för resursgruppen eftersom det bara anger öppet tider och inte verklig kapacitet.
 
-Om till exempel arbetstiden för en resursgrupp för ett visst datum är mellan 8:00 och 16:00, kan en operation inte lägga till mer belastning i resursgruppen än vad som kan vara i åtta timmar, oavsett hur mycket kapacitet som resursgruppen har som summa den dagen. Tillgänglig kapacitet kan dock begränsa belastningen ytterligare.
+Om till exempel arbetstiden för en resursgrupp för ett visst datum är mellan 8:00 och 16:00, kan en åtgärd inte lägga till mer belastning i resursgruppen än vad som kan vara i åtta timmar, oavsett hur mycket kapacitet som resursgruppen har som summa den dagen. Tillgänglig kapacitet kan dock begränsa belastningen ytterligare.
 
 Beläggningen från finplaneringen för alla resurser som ingår i resursgruppen för en viss dag beaktas när den tillgängliga kapaciteten för resursgruppen på samma dag beräknas. För varje datum är beräkningen:
 
-*Tillgänglig resursgruppskapacitet = kapacitet för resurser i gruppen baserat på deras kalender &ndash; tidsplanerad jobbeläggning för resurserna i gruppen &ndash; tidsplanerad operationsbeläggning för resurserna i gruppen &ndash; tidsplanerad operationsbeläggning för resursgruppen*
+*Tillgänglig resursgruppskapacitet = kapacitet för resurser i gruppen baserat på deras kalender &ndash; tidsplanerad jobbeläggning för resurserna i gruppen &ndash; tidsplanerad åtgärdsbeläggning för resurserna i gruppen &ndash; tidsplanerad åtgärdsbeläggning för resursgruppen*
 
-På fliken **resursbehov** i flödesoperationen kan resurskraven anges med antingen en specifik resurs (då tidsplaneringen schemaläggs med hjälp av resursen), för en resursgrupp, för en resurstyp, eller för en eller flera funktioner, kompetens, kurs eller certifikat. När du använder alla dessa alternativ ger det stor flexibilitet i vägens design, men det förstorar också schemaläggningen av motorn eftersom kapaciteten måste redovisas för varje "egenskap" (det abstrakta namn som används i motorn för kapacitet, kvalifikationer och så vidare).
+På fliken **resursbehov** i flödesåtgärden kan resurskraven anges med antingen en specifik resurs (då tidsplaneringen schemaläggs med hjälp av resursen), för en resursgrupp, för en resurstyp, eller för en eller flera funktioner, kompetens, kurs eller certifikat. När du använder alla dessa alternativ ger det stor flexibilitet i vägens design, men det förstorar också schemaläggningen av motorn eftersom kapaciteten måste redovisas för varje "egenskap" (det abstrakta namn som används i motorn för kapacitet, kvalifikationer och så vidare).
 
 Resursgruppens kapacitet för en kapacitet är summan av kapaciteten för alla resurser i resursgruppen som har kapaciteten i fråga. Om en resurs i gruppen har en funktion kommer den att anses vara oavsett vilken kapacitetsnivå som krävs.
 
-Vid grovplanering reduceras den tillgängliga kapaciteten för en viss kapacitet för en resursgrupp när den läses in med en operation som kräver funktionen i fråga. Om operationen kräver fler än en funktion, reduceras kapaciteten för alla funktioner som krävs.
+Vid grovplanering reduceras den tillgängliga kapaciteten för en viss kapacitet för en resursgrupp när den läses in med en åtgärd som kräver funktionen i fråga. Om åtgärden kräver fler än en funktion, reduceras kapaciteten för alla funktioner som krävs.
 
 För varje datum är den krävda beräkningen:
 
-*Tillgänglig kapacitet för en förmåga = kapacitet för en förmåga &ndash; tidsplanerad jobbeläggning för resursen med specifik kapacitet, inkluderad i resursgruppen &ndash; tidsplanerad operationsbeläggning för resurser med specifik kapacitet, inkluderad i resursgruppen &ndash; tidsplanerad operationsbeläggning för själva resursgruppen som kräver den specifika kapaciteten*
+*Tillgänglig kapacitet för en förmåga = kapacitet för en förmåga &ndash; tidsplanerad jobbeläggning för resursen med specifik kapacitet, inkluderad i resursgruppen &ndash; tidsplanerad åtgärdsbeläggning för resurser med specifik kapacitet, inkluderad i resursgruppen &ndash; tidsplanerad åtgärdsbeläggning för själva resursgruppen som kräver den specifika kapaciteten*
 
 Det innebär att om belastningen på en viss resurs laddas, tas beläggningen med i beräkningen av resursgruppens tillgängliga kapacitet per kapacitet, eftersom beläggningen för en viss resurs minskar dess bidrag till resursgruppens kapacitet för en kapacitet oavsett om beläggningen för den specifika resursen är för den specifika funktionen. Om det finns en belastning på resursgruppsnivån beaktas den i beräkningen av resursgruppens tillgängliga kapacitet per möjlighet endast om beläggningen kommer från en åtgärd som kräver den specifika funktionen.
 
@@ -274,27 +274,27 @@ Som kan förstås från alla föregående avsnitt finns det några fallgropar n�
 
 Observera att om ordern inte har tidsplanerats under MPS måste den istället planeras när den planerade ordern bekräftas. Detta innebär att processen tar längre tid, så beroende på hur många av de föreslagna planerade order som har bekräftats prestanda vinsten under MPS kan det gå förlorat i bekräftelsen.
 
-### <a name="route-with-unnecessary-operations"></a>Rutt med onödiga operationer
+### <a name="route-with-unnecessary-operations"></a>Rutt med onödiga åtgärder
 
 När du designar flödet är det en frestande att försöka utforma den verkliga världen exakt med alla steg produktionen går igenom. Även om detta kan vara användbart i vissa fall är det inte bra för prestandan eftersom motorn måste arbeta med större (både vad gäller jobb och begränsningar) och fler SQL-satser körs för infogning och uppdatering av jobb och kapacitetsreservationer. Det finns också en efterföljande effekt där du kan rapportera status för jobben, som kan minskas med automatiska bokföringar. Om data inte används för något skapas en onödig belastning.
 
-Vi rekommenderar att du bara skapar åtgärder som är absolut nödvändiga för schemaläggning (som normalt är flaskhalsresurser) och/eller kostnadssyfte. Du bör även gruppera många mindre distinkta operationer i en större operation som representerar en större del av processen.
+Vi rekommenderar att du bara skapar åtgärder som är absolut nödvändiga för schemaläggning (som normalt är flaskhalsresurser) och/eller kostnadssyfte. Du bör även gruppera många mindre distinkta åtgärder i en större åtgärd som representerar en större del av processen.
 
-### <a name="many-applicable-resources-for-an-operation"></a>Många tillämpliga resurser för en operation
+### <a name="many-applicable-resources-for-an-operation"></a>Många tillämpliga resurser för en åtgärd
 
-Antalet tillämpliga resurser för en operation bestäms av resurskraven som ställts in för operationsrelationen. Kravet kan antingen vara för en viss (enskild) resurs eller så kan den baseras på resursens medlemskap i en resursgrupp eller en funktion.
+Antalet tillämpliga resurser för en åtgärd bestäms av resurskraven som ställts in för åtgärdsrelationen. Kravet kan antingen vara för en viss (enskild) resurs eller så kan den baseras på resursens medlemskap i en resursgrupp eller en funktion.
 
-Om ingen tidsplanering görs med begränsad kapacitet och alla tillämpliga resurser har samma kalender och effektivitet, kommer planeringsmotorn alltid att välja samma resurs för en operation, men bara när du har försökt med alla tillämpliga resurser för att kontrollera om det finns något som är "bättre" än de andra. I det här fallet kan belastningen på tidsplaneringen minskas helt enkelt genom att alltid tilldela en specifik resurs till operationen vid flödets designtid.
+Om ingen tidsplanering görs med begränsad kapacitet och alla tillämpliga resurser har samma kalender och effektivitet, kommer planeringsmotorn alltid att välja samma resurs för en åtgärd, men bara när du har försökt med alla tillämpliga resurser för att kontrollera om det finns något som är "bättre" än de andra. I det här fallet kan belastningen på tidsplaneringen minskas helt enkelt genom att alltid tilldela en specifik resurs till åtgärden vid flödets designtid.
 
-### <a name="route-with-parallel-operations"></a>Flöde med parallella operationer
+### <a name="route-with-parallel-operations"></a>Flöde med parallella åtgärder
 
-Parallella operationer (primära/sekundära) är ett kraftfullt verktyg för modellscenarier som när en dator och en operatör båda behöver för att utföra en viss uppgift, men den är också källan till många prestandaproblem. Om ett krav för en viss enskild resurs har tilldelats både den primära och den sekundära operationen, är det vanligtvis inget problem. Om det finns många möjliga resurser för varje operation lägger du emellertid till en avsevärd beräkningskomplexitet för tidsplaneringen.
+Parallella åtgärder (primära/sekundära) är ett kraftfullt verktyg för modellscenarier som när en dator och en operatör båda behöver för att utföra en viss uppgift, men den är också källan till många prestandaproblem. Om ett krav för en viss enskild resurs har tilldelats både den primära och den sekundära åtgärden, är det vanligtvis inget problem. Om det finns många möjliga resurser för varje åtgärd lägger du emellertid till en avsevärd beräkningskomplexitet för tidsplaneringen.
 
-Ett alternativ till att använda parallella operationer är att antingen modellera paren som "virtuella" resurser (som sedan representerar det team som alltid ska kopplas ihop) eller för att helt enkelt inte modellera en av operationerna om de inte representerar en flaskhals.
+Ett alternativ till att använda parallella åtgärder är att antingen modellera paren som "virtuella" resurser (som sedan representerar det team som alltid ska kopplas ihop) eller för att helt enkelt inte modellera en av åtgärderna om de inte representerar en flaskhals.
 
 ### <a name="route-with-quantity-of-resources-higher-than-1"></a>Rutt med resursmängder högre än 1
 
-Om du ställer in den kvantitet av resurser som behövs för en operation som är högre än en, resulterar detta i ett effektivt resultat som att använda primära/sekundära operationer eftersom flera parallella jobb skickas till motorn. I detta fall kan du dock inte använda specifika resurstilldelningar eftersom en större kvantitet än en kräver att fler än en resurs kan användas för operationen.
+Om du konfigurerar den kvantitet av resurser som behövs för en åtgärd som är högre än en, resulterar detta i ett effektivt resultat som att använda primära/sekundära åtgärder eftersom flera parallella jobb skickas till motorn. I detta fall kan du dock inte använda specifika resurstilldelningar eftersom en större kvantitet än en kräver att fler än en resurs kan användas för åtgärden.
 
 ### <a name="excessive-use-of-finite-capacity"></a>Överdriven användning av begränsad kapacitet
 
@@ -302,9 +302,9 @@ Användning av begränsad kapacitet kräver att motorn läser in kapacitetsinfor
 
 ### <a name="setting-hard-links"></a>Ställa in hårda länkar
 
-Standardlänktypen för flödet är *mjuk*, vilket innebär att en tidslucka är tillåten mellan sluttiden för en operation och starten på nästa. Att tillåta detta kan ha den olyckliga effekten att om material eller kapacitet inte finns tillgängligt för en av verksamheterna under mycket lång tid, kan produktionen vara inaktiv under ett tag, vilket innebär en möjlig ökning av pågående arbete. Det här händer inte när du tar med hårda länkar, eftersom slut och start måste justeras helt. Om du ställer in hårda länkar blir det svårare att schemalägga, eftersom arbetstid och skärningspunkter för kapacitet måste beräknas för de två resurserna i operationerna. Om det också finns parallella operationer lägger detta till en avsevärd beräkningstid. Om resurserna för de två operationerna har olika kalendrar som inte överlappar varandra kan problemet inte lösas.
+Standardlänktypen för flödet är *mjuk*, vilket innebär att en tidslucka är tillåten mellan sluttiden för en åtgärd och starten på nästa. Att tillåta detta kan ha den olyckliga effekten att om material eller kapacitet inte finns tillgängligt för en av verksamheterna under mycket lång tid, kan produktionen vara inaktiv under ett tag, vilket innebär en möjlig ökning av pågående arbete. Det här händer inte när du tar med hårda länkar, eftersom slut och start måste justeras helt. Om du konfigurerar hårda länkar blir det svårare att schemalägga, eftersom arbetstid och skärningspunkter för kapacitet måste beräknas för de två resurserna i åtgärderna. Om det också finns parallella åtgärder lägger detta till en avsevärd beräkningstid. Om resurserna för de två åtgärderna har olika kalendrar som inte överlappar varandra kan problemet inte lösas.
 
-Vi rekommenderar att du endast använder hårda länkar om det är absolut nödvändigt och noga fundera över om det är nödvändigt för varje operation av flödet.
+Vi rekommenderar att du endast använder hårda länkar om det är absolut nödvändigt och noga fundera över om det är nödvändigt för varje åtgärd av flödet.
 
 Om du vill minska det pågående arbetet utan att använda hårda länkar, kan du schemalägga ordern två gånger och ändra till motsatt riktning för det andra steget. Om det första schemat utfördes bakåt från leveransdatum, ska det andra utföras framåt från det planerade startdatumet. Detta medför att jobben komprimeras så mycket som möjligt så att pågående arbete minimeras.
 
@@ -322,10 +322,10 @@ Planeringsmotorns prestanda kan optimeras med hjälp av de parametrar som finns 
 
 Värdet för **maximal planeringstid per sekvens** styr hur många sekunder som mest kan ägna sig åt att försöka hitta en lösning för en enskild sekvens (i de flesta fall motsvarar en sekvens en enda order). Vilket värde som ska användas här beror på hur komplex flödet är och vilka inställningar som inte är ändlig, och det är en bra utgångspunkt för maximalt 30 sekunder.
 
-Värdet för **Tidsgräns för optimeringsförsök** styr hur många sekunder som oftast kan användas för att hitta en bättre lösning än den som ursprungligen hittades. Detta påverkar bara vägar som använder parallella operationer eftersom de gör det nödvändigt att testa olika kombinationer.
+Värdet för **Tidsgräns för optimeringsförsök** styr hur många sekunder som oftast kan användas för att hitta en bättre lösning än den som ursprungligen hittades. Detta påverkar bara vägar som använder parallella åtgärder eftersom de gör det nödvändigt att testa olika kombinationer.
 
 > [!NOTE]
-> De värden som anges för tidsgräns används både för planering av släppta produktionsorder och planerade order som en del av MPS. Det innebär att om du ställer in mycket höga värden kan du markant lägga till produktionstiden för MPS när den körs för en plan med många planerade tillverkningsorder.
+> De värden som anges för tidsgräns används både för planering av släppta produktionsorder och planerade order som en del av MPS. Det innebär att om du konfigurerar mycket höga värden kan du markant lägga till produktionstiden för MPS när den körs för en plan med många planerade tillverkningsorder.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

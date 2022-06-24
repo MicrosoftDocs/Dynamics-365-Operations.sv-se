@@ -1,6 +1,6 @@
 ---
 title: Kostnadshantering Power BI-innehåll
-description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadshantering.
+description: Den här artikeln beskriver vad som ingår i Power BI-innehållet för kostnadshantering.
 author: ShylaThompson
 ms.date: 03/16/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9fbdc6addc820aadc1f5469cb059a62724cfe905
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 98c0097c2df25bafc842c9828d8ff282f5f683a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752650"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876875"
 ---
 # <a name="cost-management-power-bi-content"></a>Kostnadshantering Power BI-innehåll
 
@@ -168,9 +168,9 @@ Data från programmet används för att fylla i rapportsidorna i **Kostnadshante
 
 Huvudaggregatmått för följande objekt ligger till grund för Power BI-innehållet.
 
-| Objekt                          | Sammanlagda huvudmått | Datakälla för Finance and Operations | Fält               |
+| Objekt                          | Sammanlagda huvudmått | Datakällan för Finance and Operations | Fält               |
 |---------------------------------|----------------------------|----------------------------------------|---------------------|
-| CostObjectStatementCacheMonthly | Mängd                     | CostObjectStatementCache               | Tid              |
+| CostObjectStatementCacheMonthly | Tid                     | CostObjectStatementCache               | Tid              |
 | CostObjectStatementCacheMonthly | Kvantitet                   | CostObjectStatementCache               | Kvt                 |
 | CostInventoryAccountingKPIGoal  | AnnualInventoryTurn        | CostInventoryAccountingKPIGoal         | AnnualInventoryTurn |
 | CostInventoryAccountingKPIGoal  | InventoryAccuracy          | CostInventoryAccountingKPIGoal         | InventoryAccuracy   |

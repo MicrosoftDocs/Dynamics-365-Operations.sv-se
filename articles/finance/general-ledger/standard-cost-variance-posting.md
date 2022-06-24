@@ -10,16 +10,16 @@ ms.search.form: InventPosting, InventItemGroup
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: bc4f1bd7c1bf7a8f214f20460b10d371d8f3c790
-ms.sourcegitcommit: 1ea145dc606e243c7f51d91a5c0dd9e385bbda4a
+ms.openlocfilehash: e7b2d04f32b75dbd1354b3ef74a41ea1b6469c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "8804626"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894889"
 ---
 # <a name="standard-cost-variance-posting"></a>Bokföring av standardkostnadsavvikelse
 
-När du använder standardkostnadsredovisning för en eller flera produkter i organisationen måste du konfigurera [förutsättningarna för standardkostnadsredovisning](/supply-chain/cost-management/prerequisites-standard-costs.md). I det här avsnittet beskrivs de bokföringskonton som krävs för steg 3 av förutsättningarna, "Tilldela redovisningskonton till artikelbokföring som hör till standardkostnadsavvikelser."
+När du använder standardkostnadsredovisning för en eller flera produkter i organisationen måste du konfigurera [förutsättningarna för standardkostnadsredovisning](/supply-chain/cost-management/prerequisites-standard-costs.md). I den här artikeln beskrivs de bokföringskonton som krävs för steg 3 av förutsättningarna, "Tilldela redovisningskonton till artikelbokföring som hör till standardkostnadsavvikelser."
 
 Olika typer av avvikelser kan uppstå för inköps- och tillverkningsorder. Exempel på produktionsavvikelser finns i [Vanliga källor till produktionsavvikelser](/supply-chain/cost-management/common-sources-of-production-variances.md). Prisavvikelser för inköpsorder inträffar när du använder standardkostnad för en inköpt artikel och det finns en skillnad mellan produktens standardkostnad och det fakturerade beloppet på inköpsordern.
 

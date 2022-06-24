@@ -1,6 +1,6 @@
 ---
 title: Konfigurera Azure Active Directory-autentisering för kassainloggning
-description: I det här ämnet beskrivs hur du konfigurerar Azure Active Directory som autentiseringsmetod i Microsoft Dynamics 365 Commerce-kassan.
+description: I denna artikel beskrivs hur du konfigurerar Azure Active Directory som autentiseringsmetod i Microsoft Dynamics 365 Commerce-kassan.
 author: boycezhu
 ms.date: 04/23/2021
 ms.topic: article
@@ -12,24 +12,24 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 9dfb0389b0ca4b2cf75ccc70f35824674e618055
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 47da2c78cef2bbee324fbc2202898fbabd927c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402161"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853938"
 ---
 # <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a>Konfigurera Azure Active Directory-autentisering för kassainloggning
 
 [!include [banner](includes/banner.md)]
 
-I detta ämne förklaras hur du konfigurerar Azure Active Directory (Azure AD) som autentiseringsmetod i Microsoft Dynamics 365 Commerce-kassan (POS).
+I denna artikel förklaras hur du konfigurerar Azure Active Directory (Azure AD) som autentiseringsmetod i Microsoft Dynamics 365 Commerce-kassan (POS).
 
-Återförsäljare som använder Dynamics 365 Commerce tillsammans med andra Microsoft-molnbaserade tjänster som exempelvis Microsoft Azure, Microsoft 365 och Microsoft Teams vill vanligtvis använda Azure AD för central hantering av användarreferenser för en säker och sömlös inloggningsupplevelse för alla program. Om du vill använda Azure AD-autentisering för Commerce POS måste du först konfigurera Azure AD som autentiseringsmetod i Commerce-administrationen.
+Återförsäljare som använder Dynamics 365 Commerce tillsammans med andra molnbaserade Microsoft-tjänster som exempelvis Microsoft Azure, Microsoft 365 och Microsoft Teams vill vanligtvis använda Azure AD för central hantering av användarreferenser för en säker och sömlös inloggningsupplevelse för alla program. Om du vill använda Azure AD-autentisering för Commerce POS måste du först konfigurera Azure AD som autentiseringsmetod i Commerce headquarters.
 
 ## <a name="configure-pos-authentication-method"></a>Konfigurera metod för kassaautentisering
 
-Följ dessa steg för att konfigurera metoden för kassaautentisering i Commerce-administrationen.
+Följ dessa steg för att konfigurera metoden för kassaautentisering i Commerce headquarters.
     
 1. Öppna **Retail och Commerce \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Funktionsprofiler** och välj en funktionsprofil som du vill ändra.
 1. I avsnittet **Inloggning för butikspersonal** i snabbfliken **Funktioner** väljer du ett alternativ för autentiseringsmetod i listrutan **Metod för inloggningsmetod**.
@@ -48,9 +48,9 @@ Följ dessa steg för att konfigurera metoden för kassaautentisering i Commerce
 
 ## <a name="associate-azure-ad-accounts-with-pos-users"></a>Associera Azure AD-konton med kassaanvändare
 
-Om du vill använda Azure AD som autentiseringsmetod för kassa måste du koppla Azure AD-konton med kassaanvändare i Commerce-administrationen. 
+Om du vill använda Azure AD som autentiseringsmetod för kassa måste du koppla Azure AD-konton med kassaanvändare i Commerce headquarters. 
 
-Om du vill koppla Azure AD-konton till kassaanvändare i Commerce-administrationen följer du dessa steg.
+Om du vill koppla Azure AD-konton till kassaanvändare i Commerce headquarters följer du dessa steg.
     
 1. Gå till **Retail och Commerce > Medarbetare > medarbetare** och öppna en medarbetarpost.
 1. I åtgärdsfönstret väljer du fliken **Commerce** och sedan, under **Extern identitet**, markerar du **Associera befintlig identitet**. 
@@ -62,7 +62,7 @@ Efter konfigureringsstegen ovan kommer fälten **Alias**, **UPN** och **Extern u
 Du måste köra **1060-jobbet (Personal)** i **Retail och Commerce > Retail och Commerce IT > Distributionsschema** för att synkronisera den senaste kassaanvändaren och Azure AD-kontodata till kanalen.
 
 > [!NOTE]
-> När medarbetarinformation som exempelvis lösenord, kassabehörighet, associerat Azure AD-konto eller medarbetarens adressbok har uppdaterats i Commerce-administrationen rekommenderas det starkt att köra jobbet **1060 (personal)** för att synkronisera den senaste medarbetarinformationen med kanalen. Kassaklienten kan sedan hämta korrekta data för kontroll av användarautentisering och behörighet.
+> När medarbetarinformation som exempelvis lösenord, kassabehörighet, associerat Azure AD-konto eller medarbetarens adressbok har uppdaterats i Commerce headquarters rekommenderas det starkt att köra jobbet **1060 (personal)** för att synkronisera den senaste medarbetarinformationen med kanalen. Kassaklienten kan sedan hämta korrekta data för kontroll av användarautentisering och behörighet.
 
 ## <a name="pos-lock-register-and-sign-out-with-azure-ad-authentication"></a>Kassalåsregister och utloggning med Azure AD-autentisering
 
@@ -82,7 +82,7 @@ När kassan (POS) har konfigurerats för Azure AD-autentisering öppnar chefsfun
 
 ## <a name="security-best-practices-for-azure-ad-based-pos-authentication-on-shared-devices"></a>Metodtips för säkerhet för Azure AD-baserad kassaautentisering på delade enheter
 
-Många återförsäljare ställer in sin butiksmiljö på ett sätt som gör att flera användare behöver få åtkomst till kassaprogrammet från en delad fysisk enhet. Även om en enskild inloggning ger en praktisk och sömlös autentiseringsupplevelse kan den här även skapa ett säkerhetskryphål där den aktuella kassaanvändaren kanske inte inser att en annan användares autentiseringsuppgifter används för att utföra transaktioner eller funktioner i kassan (POS). Innan du konfigurerar POS för att använda autentiseringsmetoden för Azure AD bör du granska din säkerhetspolicy och den delade enhetens inloggningsinställningar för att avgöra vilket alternativ som passar bäst.
+Många återförsäljare konfigurerar sin butiksmiljö på ett sätt som gör att flera användare behöver få åtkomst till kassaprogrammet från en delad fysisk enhet. Även om en enskild inloggning ger en praktisk och sömlös autentiseringsupplevelse kan den här även skapa ett säkerhetskryphål där den aktuella kassaanvändaren kanske inte inser att en annan användares autentiseringsuppgifter används för att utföra transaktioner eller funktioner i kassan (POS). Innan du konfigurerar POS för att använda autentiseringsmetoden för Azure AD bör du granska din säkerhetspolicy och den delade enhetens inloggningsinställningar för att avgöra vilket alternativ som passar bäst.
 
 - Om din butiksmiljö använder ett delat konto (till exempel ett lokalt konto) för inloggning på den fysiska enheten rekommenderas att använda **Azure AD utan alternativet för enkel inloggning**. På så sätt ser du till att varje kassaanvändare explicit anger Azure AD-autentiseringsuppgifter för att logga in i kassan (POS).
 - Om din butiksmiljö kräver att medarbetarna använder sina egna Azure AD-konton för att logga in i kassan (POS) och på den fysiska enhet som är kassans värd, rekommenderas du att använda alternativet **Azure AD med enkel inloggning**.

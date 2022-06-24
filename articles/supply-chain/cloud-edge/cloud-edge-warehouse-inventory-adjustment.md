@@ -1,6 +1,6 @@
 ---
 title: Lagerställets lagerjustering
-description: Detta ämne tillhandahåller information om lagerjusteringsjournal och bearbetning när du använder skalningsenheter.
+description: Denna artikel tillhandahåller information om lagerjusteringsjournal och bearbetning när du använder skalningsenheter.
 author: perlynne
 ms.date: 04/22/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3999c16cdf4fce342ce56ca3a459944566c6d0cb6a8460d30d2254356e5cba82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a4d892cd9e7f518c43df7197fc443b9a284e72b6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748821"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893567"
 ---
 # <a name="warehouse-inventory-adjustment"></a>Lagerställets lagerjustering
 
@@ -37,35 +37,35 @@ Följande arbetsprocesser i appar för lagerställe använder för närvarande *
 - Rullande inventering
 - Läs in registreringsskylt
 
-Ett flertal lagertransaktioner skapas som ett led i varje lagerjusteringsprocess, eftersom distributionen för nav och skalningsenheter delar samma lagerposter.
+Ett flertal lagertransaktioner skapas som ett led i varje lagerjusteringsprocess, eftersom distributionen för hubb och skalningsenheter delar samma lagerposter.
 
 ## <a name="inventory-adjustment-example"></a>Lagerjusteringsexempel
 
 I det här exemplet har en lagerställearbetare använt lagerställeappen för att registrera tillägget av lagerbehållning.
 
-Först skapar arbetsbelastningen för skalningsenheten en lagerjusteringstransaktion för den positiva fysiska justeringen, som sedan synkroniseras med navet och leder till en ökning av lagerbehållningen i navet.
+Först skapar arbetsbelastningen för skalningsenheten en lagerjusteringstransaktion för den positiva fysiska justeringen, som sedan synkroniseras med hubben och leder till en ökning av lagerbehållningen i hubben.
 
 | Typ                                    | Skalningsenhet | Riktning | Hubb |
 |-----------------------------------------|------------|-----------|-----|
 | Lagerställets lagerjustering          | +1         | ->        | +1  |
 
-Navet bearbetar sedan en inventeringsjournalbokföring som tas emot via [meddelanden i meddelandeprocessorn](cloud-edge-message-processor-messages.md). Då uppdateras den ytterligare lagerbehållningen. För att förhindra dubbel lagerbehållning skapar navet en mottransaktion som en del i processen, och tar bort den tidigare registrerade lagerbehållningen som är kopplad till lagerjusteringen av lagerstället.
+Navet bearbetar sedan en inventeringsjournalbokföring som tas emot via [meddelanden i meddelandeprocessorn](cloud-edge-message-processor-messages.md). Då uppdateras den ytterligare lagerbehållningen. För att förhindra dubbel lagerbehållning skapar hubben en mottransaktion som en del i processen, och tar bort den tidigare registrerade lagerbehållningen som är kopplad till lagerjusteringen av lagerstället.
 
 | Typ                                    | Skalningsenhet | Riktning | Hubb |
 |-----------------------------------------|------------|-----------|-----|
 | Inventering                                | +1         | <-        | +1  |
 | Lagerjustering för lagerställe (motbokning) | -1         | <-        | -1  |
 
-När en skalningsenhet har skapat en **lagerjusteringsjournal** i navet kan du granska både **Inventeringsjournal** och **Motbokningsjournal** som skapas av navet som ett led i justeringsprocessen.
+När en skalningsenhet har skapat en **lagerjusteringsjournal** i hubben kan du granska både **Inventeringsjournal** och **Motbokningsjournal** som skapas av hubben som ett led i justeringsprocessen.
 
 Du kan granska alla dessa journalposter och transaktioner i Supply Chain Management genom att göra följande:
 
 1. Logga in på skalningsenheten.
 1. Gå till **Warehouse management \> Periodiska uppgifter \> Lagerjusteringsjournal**.
 1. På sidan **Lagerjusteringsjournal** hittar och öppnar du journalen som registrerade lagerbehållningsändringen. I avsnittet **Journalradet** visas varje justering som registrerats i den här journalen.
-1. Logga in på navet.
+1. Logga in på hubben.
 1. Gå till **Warehouse management \> Periodiska uppgifter \> Lagerjusteringsjournal**.
-1. På sidan **Lagerjusteringsjournal** bör du se samma journal i listan om navet och skalningsenheten har synkroniserats.
+1. På sidan **Lagerjusteringsjournal** bör du se samma journal i listan om hubben och skalningsenheten har synkroniserats.
 1. Öppna journalen. Om [meddelandena i meddelandeprocessorn](cloud-edge-message-processor-messages.md) har bearbetats visas länkar till **inventeringsjournalen** och **motbokningsjournalen** i rubriken.
     - **Inventeringsjournalen** ska visa samma dimensionsvärden som journalraderna.
     - **Motbokningsjournalen** ska visa motbokningen, vilket tar bort den dubbla lagerjusteringen.

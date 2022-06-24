@@ -1,6 +1,6 @@
 ---
 title: Plockradsgruppering
-description: Det här ämnet ger en översikt över plockradsgruppering.
+description: Denna artikel ger en översikt över plockradsgruppering.
 author: Mirzaab
 ms.date: 12/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 076a4dfdc49525eef616d1008073371be1dd4a248cd6f16d395b544ae70e7531
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f9e6cbf0f520f0f30c01cefba03689e9c119f2cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757504"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890637"
 ---
 # <a name="pick-line-grouping"></a>Plockradsgruppering
 
@@ -94,7 +94,7 @@ Följ dessa steg om du vill lägga till menyalternativet som du just skapade på
 
 ### <a name="create-picking-work"></a>Skapa plockarbete
 
-Innan du kan ställa in plockradsgruppering måste du skapa vissa kvalificerade utgående arbete.
+Innan du kan konfigurera plockradsgruppering måste du skapa vissa kvalificerade utgående arbete.
 
 1. Gå till **Försäljning och marknadsföring \> Försäljningsorder \> Alla försäljningsorder**.
 1. Skapa en försäljningsorder genom att välja **Ny**.
@@ -116,7 +116,7 @@ Innan du kan ställa in plockradsgruppering måste du skapa vissa kvalificerade 
     - **Artikel M9201:** *3* var
     - **Artikel M9202:** *9* var
 
-1. Innan du släpper order till distributionslagret måste du se till att plockplatserna har tillräckligt med lager för alla artiklar på alla order. Granska inställningen **platsdirektiv** för att avgöra vilka plockplatser som används för plockning av försäljningsorder. Om du använder Contoso-demodatamiljön för lagerställe *51* ska du kontrollera att det finns tillgängligt lager.
+1. Innan du släpper order till distributionslagret måste du se till att plockplatserna har tillräckligt med lager för alla artiklar på alla order. Granska inställningen **platsdirektiv** för att avgöra vilka plockplatser som används för plockning av försäljningsorder. Om du använder Contoso-demodatamiljön för lagerställe *51* ska du bekräfta att det finns tillgängligt lager.
 
     Du måste nu reservera lagret för varje rad.
 

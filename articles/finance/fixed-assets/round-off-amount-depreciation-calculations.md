@@ -1,5 +1,5 @@
 ---
-title: Avrundningsbelopp för avskrivningsberäkningar
+title: Avrundningsbelopp för avskrivningsberäkningar.
 description: Den här artikeln diskuterar fältet Avrundning av avskrivning som finns på inställningssidorna för räkenskapsbok.
 author: moaamer
 ms.date: 06/20/2017
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98d6a21bea4688d6f258a98eab174485ceee2cfc
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a93842f7cca483df89188695c945edf77e118cef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726737"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870116"
 ---
-# <a name="round-off-amount-for-depreciation-calculations"></a>Avrundningsbelopp för avskrivningsberäkningar
+# <a name="round-off-amount-for-depreciation-calculations"></a>Avrundningsbelopp för avskrivningsberäkningar.
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln diskuterar fältet **Avrundning av avskrivning** som finns på inställningssidorna för **räkenskapsbok**.
+Den här artikeln diskuterar fältet **Avrundning av avskrivning** som finns på sidorna **inställning av räkenskapsbok**.
 
 Avrundningsbeloppet för avskrivning anges för varje bok. Avrundningsbeloppet för avskrivning används i avskrivningsprofilen för anläggningstillgångar som visar den framtida avskrivningen, värdet på anläggningstillgången och även i avskrivningsförslag. Ange lägsta tillåtna avskrivningsbelopp för räkenskapsboken. 
 

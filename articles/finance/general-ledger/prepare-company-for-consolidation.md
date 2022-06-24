@@ -1,6 +1,6 @@
 ---
 title: Förbereda en juridisk person för konsolideringsprocessen
-description: I samband med en konsolidering samlas transaktioner in från flera uppsättningar konton för juridiska personer till en enda uppsättning av konton för juridiska personer. I detta ämne beskrivs hur du förbereder en juridisk person för en konsolidering.
+description: I samband med en konsolidering samlas transaktioner in från flera uppsättningar konton för juridiska personer till en enda uppsättning av konton för juridiska personer. I denna artikel beskrivs hur du förbereder en juridisk person för en konsolidering.
 author: jinniew
 ms.date: 10/30/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0ef6736046748b92357c41d27eeedfc88c610d33
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 2a3d4645c79ec30df2bbb7a32a82a59fdb7016e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722050"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894038"
 ---
 # <a name="prepare-a-legal-entity-for-the-consolidation-process"></a>Förbereda en juridisk person för konsolideringsprocessen
 
 [!include [banner](../includes/banner.md)]
 
-I samband med en konsolidering samlas transaktioner in från flera uppsättningar konton för juridiska personer till en enda uppsättning av konton för juridiska personer. I detta ämne beskrivs hur du förbereder en juridisk person för en konsolidering.
+I samband med en konsolidering samlas transaktioner in från flera uppsättningar konton för juridiska personer till en enda uppsättning av konton för juridiska personer. I denna artikel beskrivs hur du förbereder en juridisk person för en konsolidering.
 
 > [!NOTE]
 > Vi rekommenderar att du använder Management Reporter för Microsoft Dynamics 365 Finance för att kombinera ekonomiska resultat för flera juridiska personer i ett konsoliderat format. I Management Reporter kan du skapa konsoliderade ekonomiska rapporter för juridiska personer, använda Excel för att importera konsolideringsdata från andra källor, samt översätta belopp till valfritt antal rapporteringsvalutor utan att behöva köra konsolideringsprocessen i Dynamics 365 Finance.

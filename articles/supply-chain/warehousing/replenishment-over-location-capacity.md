@@ -1,6 +1,6 @@
 ---
 title: Lagerpåfyllnad över platskapacitet
-description: Det här avsnittet innehåller information om funktionen påfyllnad över lagerställekapacitet. Den här funktionen gör att allt påfyllningsarbete som krävs för dagen skapas och kan användas för att se till att plockplatsen varken hamnar utanför lagret eller går över kapacitet.
+description: Denna artikel innehåller information om funktionen Lagerpåfyllnad över lagerställekapacitet. Den här funktionen gör att allt påfyllningsarbete som krävs för dagen skapas och kan användas för att se till att plockplatsen varken hamnar utanför lagret eller går över kapacitet.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 0c3dedc47558e98f63fb5883e4731bf021b9602b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 72cda7608d55414ee62bc7dcc1e02e28f6212aff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677938"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899249"
 ---
 # <a name="replenishment-over-location-capacity"></a>Lagerpåfyllnad över platskapacitet
 
@@ -37,7 +37,7 @@ Om du vill göra den här funktionen tillgänglig aktiverar du följande funktio
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Ställ in funktionen för det här exempelscenariot
 
-Det här avsnittet innehåller riktlinjer och ett exempel som visar hur du ställer in den här funktionen och förbereder exempeldata för scenariot som ges senare i det här avsnittet.
+Det här avsnittet innehåller riktlinjer och ett exempel som visar hur du konfigurerar den här funktionen och förbereder exempeldata för exempelscenariot som ges senare i denna artikel.
 
 ### <a name="enable-sample-data"></a>Aktivera exempeldata
 
@@ -100,7 +100,7 @@ Aktivera funktionen för påfyllning över kapacitet på platsprofilen.
 ### <a name="wave-step-code"></a>Kod för påfyllnadssteg
 
 > [!NOTE]
-> Om du vill ställa in en påfyllnadskod som beskrivs här, kanske du först måste använda [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera funktionen med namnet *Påfyllnadsstegkod för hela organisationen*.
+> Om du vill konfigurera en påfyllnadskod som beskrivs här, kanske du först måste använda [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera funktionen med namnet *Påfyllnadsstegkod för hela organisationen*.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Påfyllnader \> Koder för påfyllnadssteg**.
 1. Välj **ny** och ange sedan följande värden:
@@ -145,7 +145,7 @@ Mallar för lagerpåfyllnad är en uppsättning regler som kontrollerar hur en p
 
 ## <a name="example-scenario"></a>Exempelscenario
 
-När du har gjort alla exempel data som du redan har beskrivit och ställt in dem kan du arbeta i det här scenariot för att testa funktionen *Påfyllnad över lagerställekapacitet*. De värden som visas i det här scenariot förutsätter att du arbetar med standard demodata, att du har valt den juridiska personen **USMF** och att du har förberett exempelposterna som beskrivs tidigare i det här avsnittet. Det här scenariot fungerar även som ett exempel som visar hur funktionen kan användas i en produktionsinställning.
+När du har gjort alla exempel data som du redan har beskrivit och ställt in dem kan du arbeta i det här scenariot för att testa funktionen *Påfyllnad över lagerställekapacitet*. De värden som visas i det här scenariot förutsätter att du arbetar med standarddemodata, att du har valt den juridiska personen **USMF** och att du har förberett exempelposterna som beskrivs tidigare i denna artikel. Det här scenariot fungerar även som ett exempel som visar hur funktionen kan användas i en produktionsinställning.
 
 ### <a name="create-replenishment-work"></a>Skapa lagerpåfyllnadsarbete
 
@@ -403,7 +403,7 @@ Du kan nu välja försäljningsorder 2. Den blev spärrad när det påfyllningsa
 
 - Den här funktionen fungerar med alla typer av påfyllnad: påfyllnad av efterfrågan, min/max, lastefterfrågan och artikelplacering.
 - Du kan manuellt åsidosätta lagerpåfyllnadsarbetets tillgänglighet för varje arbetsrubrik från sidan **Arbetsinformation** om du vill.
-- När systemet ställer in tillgänglighet av lagerpåfyllnadsarbete beaktas alla lager som redan finns på platsen innan något arbete har slutförts
+- När systemet konfigurerar tillgänglighet av lagerpåfyllnadsarbete beaktas alla lager som redan finns på platsen innan något arbete har slutförts
 - Varje exemplar av försäljningsorderarbete är kopplat till ett visst påfyllningsarbete. Det finns ingen motsvarande funktion för tillgänglighet av försäljningsresurser.
 
 

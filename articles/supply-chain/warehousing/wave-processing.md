@@ -1,6 +1,6 @@
 ---
 title: Skapa och bearbeta påfyllnad
-description: Det här avsnittet beskriver hur man skapar, bearbetar och frisläpper en påfyllnad för att skapa plockningsarbete för en last, försändelse, tillverkningsorder eller kanbanorder.
+description: Denna artikel beskriver hur du skapar, bearbetar och frisläpper en påfyllnad för att skapa plockningsarbete för en last, försändelse, tillverkningsorder eller kanbanorder.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 349285f089ecab00c4c1c0a0315c4223314e3e79
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3347db6395b7da396c42f84881060f476346d2e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687516"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851287"
 ---
 # <a name="wave-creation-and-processing"></a>Skapa och bearbeta påfyllnad
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur man skapar, bearbetar och frisläpper en påfyllnad för att skapa plockningsarbete för en last, försändelse, tillverkningsorder eller kanbanorder. Du kan skapa påfyllnader av följande ordertyper:
+Denna artikel beskriver hur du skapar, bearbetar och frisläpper en påfyllnad för att skapa plockningsarbete för en last, försändelse, tillverkningsorder eller kanbanorder. Du kan skapa påfyllnader av följande ordertyper:
 
 - **Försäljningsorder** – Använd leveranspåfyllnader för att inkludera rader från försäljningsorder. När en försäljningsorder frisläpps till lagerstället, kan försäljningsorderraderna inkluderas i påfyllnaden.
 - **Produktionsorder** – Använd produktionspåfyllnader om du vill inkludera rader i strukturlistan (BOM) för produkten.
@@ -41,7 +41,7 @@ Du kan ange vilket av dessa tillverkningsorderalternativ som ska användas som s
 
 I bilden nedan visas flödet för hur leveranspåfyllnad skapas, bearbetas och frisläpps. Numren motsvarar de avsnitt som beskrivs senare i det här avsnittet.
 
-![Process för att skapa en cykel.](media/wave-processing-diagram.png "Process för att skapa en påfyllnad")
+![Process för att skapa en påfyllnad.](media/wave-processing-diagram.png "Process för att skapa en påfyllnad")
 
 ### <a name="prerequisites"></a>Förutsättningar
 
@@ -57,7 +57,7 @@ Om du vill skapa påfyllnader automatiskt ställer du in [Påfyllnadsmallar](wav
 
 Gör så här om du vill skapa en påfyllnad manuellt:
 
-1. Se till att de relevanta [Påfyllnadsmallarna](wave-templates.md) inte är inställda på att automatiskt skapa en påfyllnad för lager- och ordertyperna där du vill göra det manuellt. 
+1. Se till att de relevanta [Påfyllnadsmallarna](wave-templates.md) inte är inställda på att automatiskt skapa en påfyllnad för lager- och ordertyperna där du vill göra det manuellt.
 1. Klicka på något av följande, beroende på vilken typ av påfyllnad du ska skapa:
 
     - Gå till **Lagerstyrning** \> **Vanlig** \> **Påfyllningar** \> **Leveranspåfyllningar** \> **Alla påfyllningar**. Klicka på **påfyllning** i åtgärdsfönstret.
@@ -149,7 +149,7 @@ Gör så här om du vill frisläppa en påfyllnad manuellt:
 
 ## <a name="containerize-a-wave"></a>Skapa behållare för påfyllnad
 
-Med automatiskt skapande av behållare skapas behållare och plockarbete för leveranser när en påfyllnad bearbetas. Mer information om hur du ställer in den finns i [Behållaranpassning](wave-containerization.md).
+Med automatiskt skapande av behållare skapas behållare och plockarbete för leveranser när en påfyllnad bearbetas. Mer information om hur du konfigurerar den finns i [Behållaranpassning](wave-containerization.md).
 
 ## <a name="work-with-the-scheduled-work-creation"></a>Arbeta med det planerade arbetet som skapas
 

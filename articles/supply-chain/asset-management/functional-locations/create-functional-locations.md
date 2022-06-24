@@ -1,6 +1,6 @@
 ---
 title: Skapa funktionsplatser
-description: I det här avsnittet beskrivs hur du skapar en funktionsplats i Tillgångshantering.
+description: I denna artikel beskrivs hur du skapar en funktionsplats i Tillgångshantering.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5dd5ea59b27c594752ff82428723f3afe555b5f2426a812c70e10b968c920a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 503150e7cfc580821c5ed8d4c4c9b56998f6ff13
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767544"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869732"
 ---
 # <a name="create-functional-locations"></a>Skapa funktionsplatser
 
@@ -28,7 +28,7 @@ ms.locfileid: "6767544"
 
  
 
-I det här avsnittet beskrivs hur du skapar en funktionsplats i Tillgångshantering.
+I denna artikel beskrivs hur du skapar en funktionsplats i Tillgångshantering.
 
 När du skapar en funktionsplatsstruktur bör du vara medveten om att när du har skapat en funktionsplats kan du inte flytta den från den ursprungliga platsen. Det innebär att du noggrant bör överväga strukturen för dina funktionsplatser innan du börjar skapa dem i Tillgångshantering. Om du ångrar en funktionsplats kan du ta bort den, förutsatt att den ännu inte har tagits i bruk.
 
@@ -39,21 +39,21 @@ För att kunna arbeta med funktionsplatser börjar du med att skapa två "katego
 
 ## <a name="create-a-default-functional-location"></a>Skapa en funktionell standardplats
 
-När du använder funktionsplatser börjar du med att skapa en standardplats som ska användas när du skapar nya tillgångar. Den här funktionella platsen är den du väljer i fältet **tillgångshantering** > **inställningar** > **parametrar för tillgångshantering** > **tillgångar** länk > **funktionella standardplatser**. Den funktionella standardplatsen kan användas när du skapar nya tillgångar och du ännu inte har ställt in en funktionsplatsstruktur för dessa tillgångar.
+När du använder funktionsplatser börjar du med att skapa en standardplats som ska användas när du skapar nya tillgångar. Den här funktionella platsen är den du väljer i fältet **Tillgångshantering** > **inställningar** > **parametrar för Tillgångshantering** > **tillgångar** länk > **funktionella standardplatser**. Den funktionella standardplatsen kan användas när du skapar nya tillgångar och du ännu inte har ställt in en funktionsplatsstruktur för dessa tillgångar.
 
-1. Välj **tillgångshantering** > **allmänt** > **funktionsplatser** > **alla funktionsplatser**.  
+1. Välj **Tillgångshantering** > **allmänt** > **funktionsplatser** > **alla funktionsplatser**.  
 2. I **alla funktionsplatser** väljer du **ny**.
 3. Infoga ett ID i fältet **funktionsplats**, till exempel "0000" eller "standard", för att indikera att detta är en speciell funktionsplats.
 4. Infoga namn för den funktionella standardplatsen i fältet **namn**.
 5. Välj *inte* en överordnad i fältet **överordnad** – lämna fältet tomt.
-6. I fältet **funktionsplatstyp** välj den typ av funktionsplats som ska användas för den funktionella standardplatsen. Se [Typer av funktionsplats](../setup-for-functional-locations/functional-location-types.md) för mer information om hur du ställer in typer av funktionsplats.
+6. I fältet **funktionsplatstyp** välj den typ av funktionsplats som ska användas för den funktionella standardplatsen. Se [Typer av funktionsplats](../setup-for-functional-locations/functional-location-types.md) för mer information om hur du konfigurerar typer av funktionsplats.
 7. Välj **OK**. Du bör inte lägga till ytterligare data till den här funktionella platsen eftersom den endast används som en tillfällig plats för nya tillgångar tills du installerar tillgångarna på de funktionsplatser som används av ditt företag.
 
 ## <a name="create-functional-locations"></a>Skapa funktionsplatser
 
 Följande procedur beskriver hur du skapar de funktionsplatser som krävs för underhållshantering i ditt företag.
 
-1. Välj **tillgångshantering** > **allmänt** > **funktionsplatser** > **alla funktionsplatser**. Du kan skapa en funktionsplats från rutnätsvy eller detaljerad vy.
+1. Välj **Tillgångshantering** > **allmänt** > **funktionsplatser** > **alla funktionsplatser**. Du kan skapa en funktionsplats från rutnätsvy eller detaljerad vy.
 2. Välj knappen **Ny**.
 3. Infoga ett ID i fältet **funktionsplats**.
 4. Infoga ett namn för den funktionella standardplatsen i fältet **namn**.
@@ -128,7 +128,7 @@ En funktionsplats med relaterade underplatser kan tas bort om inga tillgångar h
 3. Välj **Ta bort**.
 
 >[!NOTE]
->Om du inte kan ta bort en funktionsplats kan du i stället hantera borttagningen genom att ställa in ett livscykeltillstånd för funktionsplats för detta ändamål. Du kan till exempel ställa in ett "kasserat" eller "borttaget" stadium, som inte ska vara en aktiv fas, i formuläret **livscykeltillstånd för funktionsplats**.
+>Om du inte kan ta bort en funktionsplats kan du i stället hantera borttagningen genom att konfigurera ett livscykeltillstånd för funktionsplats för detta ändamål. Du kan till exempel konfigurera ett "kasserat" eller "borttaget" stadium, som inte ska vara en aktiv fas, i formuläret **livscykeltillstånd för funktionsplats**.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Riktlinjer för distribution av kassaapparater för Norge (äldre)
-description: Det här avsnittet fungerar som en distributionsguide som visar hur du aktiverar lokalisering av Microsoft Dynamics 365 Commerce för Norge.
+description: Denna artikel fungerar som en distributionsguide som visar hur du aktiverar lokalisering av Microsoft Dynamics 365 Commerce för Norge.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,31 +9,31 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
-ms.openlocfilehash: 019bac01abdc0b2e16718c08953b44fbccef83a3
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 7a6450215f152779428d3b0fd83bf09761e2ad98
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944798"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894472"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway-legacy"></a>Riktlinjer för distribution av kassaapparater för Norge (äldre)
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet fungerar som en distributionsguide som visar hur du aktiverar lokalisering av Microsoft Dynamics 365 Commerce för Norge. Lokaliseringen består av flera utvidgningar av Commerce-komponenter. Med tilläggen kan du till exempel skriva ut anpassade fält på kvitton, registrera ytterligare verifieringshändelser, försäljningstransaktioner och betalningstransaktioner i kassa, digitalt signera försäljningstransaktioner och skriva ut X- och Z-rapporter i lokala format. Mer information om lokalisering för Norge finns i [Kassaregisterfunktionen för Norge](./emea-nor-cash-registers.md).
+Denna artikel fungerar som en distributionsguide som visar hur du aktiverar lokalisering av Microsoft Dynamics 365 Commerce för Norge. Lokaliseringen består av flera utvidgningar av Commerce-komponenter. Med tilläggen kan du till exempel skriva ut anpassade fält på kvitton, registrera ytterligare verifieringshändelser, försäljningstransaktioner och betalningstransaktioner i kassa, digitalt signera försäljningstransaktioner och skriva ut X- och Z-rapporter i lokala format. Mer information om lokalisering för Norge finns i [Kassaregisterfunktionen för Norge](./emea-nor-cash-registers.md).
 
 Detta exempel är en del av Retail Software Development Kit (SDK). Information om SDK finns i [Retail programutvecklingskit (SDK) arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-Det här exemplet består av tillägg för Commerce Runtime (CRT), Retail Server och POS. Om du vill köra det här exemplet måste du ändra och bygga CRT, Retail Server och POS-projekt. Vi rekommenderar att du använder en icke-modifierad Retail SDK för att göra de ändringar som beskrivs i det här avsnittet. Vi rekommenderar också att du använder ett källkontrollsystem, till exempel Microsoft Visual Studio Online (VSO), där inga filer har ändrats ännu.
+Det här exemplet består av tillägg för Commerce Runtime (CRT), Retail Server och POS. Om du vill köra det här exemplet måste du ändra och bygga CRT, Retail Server och POS-projekt. Vi rekommenderar att du använder en icke-modifierad detaljhandels-SDK för att utföra de ändringar som beskrivs i denna artikel. Vi rekommenderar också att du använder ett källkontrollsystem, till exempel Microsoft Visual Studio Online (VSO), där inga filer har ändrats ännu.
 
 > [!NOTE]
-> I Commerce 10.0.8 och ovan kallas Retail Server Commerce Scale Unit. Eftersom det här avsnittet gäller för flera tidigare versioner av programmet används *Retail Server* i hela avsnittet.
+> I Commerce 10.0.8 och ovan kallas Retail Server Commerce Scale Unit. Eftersom denna artikel gäller för flera tidigare versioner av programmet används *Retail Server* i hela artikeln.
 >
-> Vissa steg i procedurerna i det här avsnittet varierar beroende på vilken version av Commerce du använder. Mer information finns i [Nyheter eller ändringar i Dynamics 365 Retail](../get-started/whats-new.md).
+> Vissa steg i procedurerna i denna artikel varierar beroende på vilken version av Commerce du använder. Mer information finns i [Nyheter eller ändringar i Dynamics 365 Retail](../get-started/whats-new.md).
 
 ### <a name="using-certificate-profiles-in-commerce-channels"></a>Använda intygsprofiler i Commerce-kanaler
 
-I Commerce versioner 10.0.15 och senare kan du använda funktionen [Användardefinierade certifikatprofiler för butiker](./certificate-profiles-for-retail-stores.md) som stöder redundans till offline när Key Vault eller Commerce-administration inte är tillgängliga. Den här funktionen utökar funktionen [Hantera hemligheter butikskanaler](../dev-itpro/manage-secrets.md).
+I Commerce versioner 10.0.15 och senare kan du använda funktionen [Användardefinierade certifikatprofiler för butiker](./certificate-profiles-for-retail-stores.md) som stöder redundans till offline när Key Vault eller Commerce headquarters inte är tillgängliga. Den här funktionen utökar funktionen [Hantera hemligheter butikskanaler](../dev-itpro/manage-secrets.md).
 
 För att tillämpa denna funktion i tillägget CRT, följ dessa steg.
 
@@ -60,7 +60,7 @@ För att tillämpa denna funktion i tillägget CRT, följ dessa steg.
 
 ## <a name="development-environment"></a>Utvecklingsmiljö
 
-Slutför dessa procedurer för att ställa in en utvecklingsmiljö så att du kan testa och utöka exemplet.
+Slutför dessa procedurer för att konfigurera en utvecklingsmiljö så att du kan testa och utöka exemplet.
 
 ### <a name="the-crt-extension-components"></a>Tilläggskomponenter för CRT
 
@@ -739,7 +739,7 @@ CRT tilläggskomponenter inkluderas i CRT-exemplen. För att slutföra följande
 
 Den här delen motsvarar Retail Server-kontrollant, men utökar den lokala som CRT används när klienten inte är ansluten.
 
-1. I filen **customization.settings**, ändra avsnittet **@(RetailServerLibraryPathForProxyGeneration)** så att den använder den nya Retail Server-sammansättningen för proxygenerering. 
+1. I filen **customization.settings**, ändra avsnittet **@(RetailServerLibraryPathForProxyGeneration)** så att den använder den nya Retail Server-sammansättningen för proxygenerering.
 2. Implementera följande gränssnittsmetoder i **StoreOperationsManager** klassen. Lägg till följande kod vid den första iterationen:
 
     # <a name="application-update-4"></a>[Programuppdatering 4](#tab/app-update-4)
@@ -791,7 +791,7 @@ Den här delen motsvarar Retail Server-kontrollant, men utökar den lokala som C
     ---
 
 3. För att återskapa proxykoden, bygg mappen **Proxyn** från kommandoraden med kommandot **msbuild /t:Rebuild**.
-4. Lösa projektberoenden inom **Proxies.RetailProxy**: 
+4. Lösa projektberoenden inom **Proxies.RetailProxy**:
 
     # <a name="application-update-4"></a>[Programuppdatering 4](#tab/app-update-4)
 
@@ -1252,7 +1252,7 @@ Mer information finns i [Kassafunktion för Norge](./emea-nor-cash-registers.md)
 
 Följ dessa steg för att skapa distribuerbara paket som innehåller Commerce-komponenter och för att tillämpa dessa paket i en produktionsmiljö.
 
-1. Slutför stegen i avsnittet [Cloud POS tilläggskomponenter](#cloud-pos-extension-components) eller [Modern POS tilläggskomponenter](#modern-pos-extension-components) tidigare i detta ämne.
+1. Slutför stegen i avsnittet [Tilläggskomponenter för Cloud POS](#cloud-pos-extension-components) eller [Tilläggskomponenter för Modern POS](#modern-pos-extension-components) tidigare i denna artikel.
 2. Gör följande ändringar i paketkonfigurationsfilerna under mappen **RetailSdk\\Assets**:
 
     1. I konfigurationsfilerna **commerceruntime.ext.config** och **CommerceRuntime.MPOSOffline.Ext.config** lägger du till följande rader i avsnittet **komposition**:
@@ -1570,7 +1570,7 @@ Följ dessa steg för att skapa distribuerbara paket som innehåller Commerce-ko
     > [!Note]
     > I stället <File_name> ange ett namn på resursfilen. Samma sak gäller för de övriga nedan angivna exemplen.
  
-    - Lägg till rad i avsnittet **Målnamn="CopyPackageFiles"** 
+    - Lägg till rad i avsnittet **Målnamn="CopyPackageFiles"**
        ``` xml
         <Copy SourceFiles="@(<File_name>)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\nb-NO" SkipUnchangedFiles="true" />
         ```
@@ -1580,7 +1580,7 @@ Följ dessa steg för att skapa distribuerbara paket som innehåller Commerce-ko
         ``` xml
         <<File_name> Include="$(SdkReferencesPath)\nb-NO\*" />
         ```    
-    - Lägg till rad i avsnittet **Målnamn="CopyPackageFiles"** 
+    - Lägg till rad i avsnittet **Målnamn="CopyPackageFiles"**
          ``` xml
         <Copy SourceFiles="@(<File_name>)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\nb-NO" SkipUnchangedFiles="true" />
         ```    

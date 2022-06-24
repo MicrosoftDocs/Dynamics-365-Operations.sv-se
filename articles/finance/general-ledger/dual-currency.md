@@ -1,6 +1,6 @@
 ---
 title: Dubbel valuta
-description: Det här avsnittet innehåller information om dubbel valuta där rapporteringsvalutan används som en andra redovisningsvaluta för Microsoft Dynamics 365 Finance.
+description: Den här artikeln innehåller information om dubbel valuta där rapporteringsvalutan används som en andra redovisningsvaluta för Microsoft Dynamics 365 Finance.
 author: kweekley
 ms.date: 04/17/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 04738d2fe88fef5c0e96a39febfec86fab3bee7d
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 8db8faefaec4afe208344492ec91375531cb9cd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713597"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906367"
 ---
 # <a name="dual-currency"></a>Dubbel valuta
 
@@ -36,7 +36,7 @@ Dessutom har flera moduler förbättrats för att spåra, rapportera och använd
 - Anläggningstillgångar 
 - Konsolideringar
 
-Efter en uppgradering måste du utföra specifika steg för kassa- och bankhantering och anläggningstillgångar. Därför bör du se till att läsa och förstå relevanta sektioner i det här avsnittet.
+Efter en uppgradering måste du utföra specifika steg för kassa- och bankhantering och anläggningstillgångar. Därför bör du se till att läsa och förstå relevanta sektioner i den här artikeln.
 
 ## <a name="posting-process"></a>Bokföringsprocess
 
@@ -93,7 +93,7 @@ Följande ytterligare ändringar har gjorts i modulen **redovisning**:
 - En separat valutakurstyp för rapporteringsvalutan kan definieras i redovisningen. Om organisationen inte kan använda en annan valutakurstyp lämnar du fältet för valutakurstypen för rapporteringsvalutan tomt. Alternativt kan du välja samma valutakurstyp som används för redovisningsvalutan. Om du lämnar fältet tomt används valutakurstypen för redovisningsvalutan.
 - En ny journal, justeringsjournal för rapporteringsvaluta, möjliggör att justeringar kan bokföras till redovisningskontona endast i rapportvalutan. Denna journal tillåter bokföring endast på redovisningskonton. Den stöder inte koncernintern och valutan måste vara rapporteringsvaluta för den juridiska personen när journalen bokförs. När journalen bokförs är transaktionsvaluta- och redovisningsvalutabeloppen 0 (noll) och rapporteringsvalutabeloppet bokförs med det belopp som registreras på transaktionen. Eftersom sättet som rapporteringsvalutan används i modulerna **Leverantörsreskontra**, **Kundreskontra** och **Anläggningstillgångar** har ändrats, kan den här journalen användas för justeringar efter en uppgradering. För exempel som visar hur du kan använda den här journalen, se avsnitten för dessa moduler.
 - Processen för periodallokering har uppdaterats så att den fördelar beloppen i transaktions-, redovisnings- och rapporteringsvalutor. Tidigare fördelades beloppen i transaktions- och redovisningsvalutor och sedan konverterades redovisningsvalutabeloppet till rapporteringsvalutan. Beteendet kan orsaka att ett saldo finns kvar på redovisningskontot i rapporteringsvalutan. Nu när beloppen beräknas och används i redovisningsposten sker ingen konvertering.
-- Processen för omvärdering i utländsk valuta har redan omvärderat belopp i rapporteringsvalutan. Men rapporteringsvalutabeloppet beräknas nu med hjälp transaktionsvalutabeloppet, enligt beskrivningen i avsnittet [bokföringsprocess](#posting-process) tidigare i det här avsnittet.
+- Processen för omvärdering i utländsk valuta har redan omvärderat belopp i rapporteringsvalutan. Men rapporteringsvalutabeloppet beräknas nu med hjälp transaktionsvalutabeloppet, enligt beskrivningen i avsnittet [bokföringsprocess](#posting-process) tidigare i den här artikeln.
 - Många rapporter och förfrågningarna i redovisningen hade redan rapporteringsvalutan, men några hade den inte. Ett exempel är listsida **råbalans**. Den här sidan innehåller kolumner för både redovisningsvalutan och rapporteringsvaluta nu. Observera att kolumnerna för rapporteringsvalutan döljs om redovisningsvalutan och rapporteringsvalutan stämmer överens eller om ingen rapporteringsvaluta har definierats i redovisningen.
 
 ### <a name="financial-reporting"></a>Ekonomisk rapportering

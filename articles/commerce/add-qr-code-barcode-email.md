@@ -1,6 +1,6 @@
 ---
 title: Lägga till en QR-kod eller streckkod i transaktions- och kvittomeddelanden
-description: Det här avsnittet förklarar hur man infogar QR-koder och streckkoder som representerar order-ID i transaktions- och kvittomeddelanden i Microsoft Dynamics 365 Commerce.
+description: Denna artikel förklarar hur du infogar QR-koder och streckkoder som representerar order-ID:n i transaktions- och kvittomeddelanden i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 03/04/2021
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-02-16
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 5f7b349700a4b3b43f818b30bb479e630048e8b8
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ffa0009c55b5322b209b19692952c2e0704f65c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688975"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872894"
 ---
 # <a name="add-a-qr-code-or-bar-code-to-transactional-and-receipt-emails"></a>Lägga till en QR-kod eller streckkod i transaktions- och kvittomeddelanden
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet förklarar hur man infogar QR-koder och streckkoder som representerar order-ID i transaktions- och kvittomeddelanden i Microsoft Dynamics 365 Commerce.
+Denna artikel förklarar hur du infogar QR-koder och streckkoder som representerar order-ID:n i transaktions- och kvittomeddelanden i Microsoft Dynamics 365 Commerce.
 
 Du kan enkelt ta med QR-koder och streckkoder i transaktionsmeddelanden om du vill påskynda orderprocessen i en butiksmiljö. För att infoga QR-koder och streckkoder i e-postmeddelanden använder du en HTML **\<img\>** tagg som begär en QR-kod eller streckkodsbild från en generation och återgivningstjänster. Microsoft tillhandahåller inte denna tjänst. Det finns emellertid många gratis- eller tjänstservicetjänster som kan servera QR-koder eller streckkoder som är dynamiskt genererade baserat på ett värde som överförs i en frågesträng.
 
 ## <a name="add-a-qr-code-or-bar-code-to-a-transactional-email"></a>Lägga till en QR-kod eller streckkod i transaktionsmeddelande via e-post
 
-Om du vill infoga en QR-kod eller streckkod i ett transaktionsmeddelande via e-post som skickas som en del av ett e-handelsinköp, följer du dessa steg.
+Om du vill infoga en QR-kod eller streckkod i ett transaktionsmeddelande via e-post som skickas som en del av ett näthandelsinköp, följer du dessa steg.
 
 1. Öppna käll-HTML-koden för transaktionsmeddelande via e-post och lägg till en HTML-tagg **\<img\>** som pekar på din QR-kod eller streckkodstjänst. Här är ett exempel:
 

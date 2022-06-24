@@ -1,6 +1,6 @@
 ---
-title: Livscykelstadier för funktionsplats
-description: I det här avsnittet beskrivs hur du ställer in funktionsplatstillstånd och livscykelmodeller i tillgångshantering.
+title: Livscykeltillstånd för funktionsplats
+description: I denna artikel beskrivs hur du konfigurerar funktionsplatstillstånd och livscykelmodeller i Tillgångshantering.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,30 +15,31 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a9893ad497bbe442d74f5212153fa466d2c85eb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ae56c2b734339343b134be95abe0ce40b70c8a0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360980"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934670"
 ---
-# <a name="functional-location-lifecycle-states"></a>Livscykelstadier för funktionsplats
+# <a name="functional-location-lifecycle-states"></a>Livscykeltillstånd för funktionsplats
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-I det här avsnittet beskrivs hur du ställer in funktionsplats livscykeltillstånd och livscykelmodeller i tillgångshantering. Livscykeltillstånd för funktionsplats anger de tillstånd som en funktionsplats kan gå igenom, till exempel skapat, aktiv och avslutad. Du kan visa alla funktionsplatser, oavsett livscykeltillstånd, på listsidan **alla funktionsplatser**. Du kan ändra tillståndet för en funktionsplats genom att markera den på listsidan **alla funktionsplatser** och välja **uppdatera funktionsplatstillstånd**.
+I denna artikel beskrivs hur du konfigurerar livscykeltillstånd och livscykelmodeller för funktionsplats i Tillgångshantering. Livscykeltillstånd för funktionsplats anger de tillstånd som en funktionsplats kan gå igenom, till exempel skapat, aktiv och avslutad. Du kan visa alla funktionsplatser, oavsett livscykeltillstånd, på listsidan **alla funktionsplatser**. Du kan ändra tillståndet för en funktionsplats genom att markera den på listsidan **alla funktionsplatser** och välja **uppdatera funktionsplatstillstånd**.
 
 ## <a name="set-up-functional-location-lifecycle-states"></a>Ställ in funktionsplatsens livscykeltillstånd
 
-1. Välj **tillgångshanterings** > **inställningar** > **funktionsplatser** > **livscykeltillstånd**.
+1. Välj **Tillgångshanterings** > **inställningar** > **funktionsplatser** > **livscykeltillstånd**.
 2. Välj **Ny** för att skapa ett nytt funktionsplatstillstånd.
 3. Infoga tillstånds-ID i fältet **livscykeltillstånd** och ett namn för funktionsplatstillståndet i fältet **namn**. I fältet **livscykelmodeller** kan du se antalet livscykelmodeller för funktionsplats som använder funktionsplatstillståndet.
 4. På snabbfliken **allmänt** väljer du "Ja" på växlingsknappen **aktiva** om funktionsplatsen ska vara aktiv i det här tillståndet.
 5. Välj "Ja" på växlingsknappen **Skapa tillgångar** om det ska vara möjligt att automatiskt skapa en tillgång med samma namn som funktionsplatsen och installera den på funktionsplatsen i det här tillståndet.  
 >[!NOTE]
->Den här växlingsknappen är kopplad till fältet **tillgångstyp** på snabbfliken **Allmänt** i formuläret **funktionsplatstyper** (**tillgångshanterings** > **inställningar** > **funktionsplatser** > **funktionsplatstyper**).
+>Den här växlingsknappen är kopplad till fältet **tillgångstyp** på snabbfliken **Allmänt** i formuläret **funktionsplatstyper** (**Tillgångshanterings** > **inställningar** > **funktionsplatser** > **funktionsplatstyper**).
+
 6. Välj "Ja" på växlingsknappen **Byt namn på plats** om det ska vara möjligt att ändra namnet på funktionsplatsen i det här tillståndet.
 7. Välj "Ja" på växlingsknappen **Nya underplatser** om det ska vara möjligt att lägga till nya underplatser till funktionsplatsen i det här tillståndet.
 8. Välj "Ja" på växlingsknappen **Installera tillgång** om det ska vara möjligt att installera tillgångar på funktionsplatsen i det här tillståndet.
@@ -53,7 +54,7 @@ I det här avsnittet beskrivs hur du ställer in funktionsplats livscykeltillst�
 
 När du har skapat de livscykeltillstånd som krävs för dina funktionsplatser kan de delas upp i grupper. Detta görs för att skapa livscykelmodellflödet som kan användas för olika typer av funktionsplatser. Som ett minimum ska en standardlivscykelmodell för funktionsplats skapas.
 
-1. Välj **tillgångshanterings** > **inställningar** > **funktionsplatser** > **livscykelmodeller**.
+1. Välj **Tillgångshanterings** > **inställningar** > **funktionsplatser** > **livscykelmodeller**.
 2. Skapa en ny livscykelmodell genom att välja **Nytt**.
 3. Infoga livscykelmodell-ID i fältet **livscykelmodell** och ett namn för livscykelmodellen i fältet **namn**. I fälten **funktionsplatstyper** och **livscykeltillstånd** kan du se antalet funktionsplatstyper som använder livscykelmodellen och antalet tillstånd som har valts i livscykelmodellen.
 4. På snabbfliken **livscykeltillstånd** väljer du de tillstånd som ska inkluderas i modellen. Detta görs genom att klicka på ett tillstånd i avsnittet **Återstående livscykeltillstånd** och klicka på ![framåtpilknappen.](media/02-setup-for-functional-locations.png) .

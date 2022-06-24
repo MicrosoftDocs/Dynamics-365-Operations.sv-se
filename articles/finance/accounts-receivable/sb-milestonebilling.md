@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: ecc4ddbb4d22eefac36f8cf8205d3b6084bd7d9d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d3c2cf751e4998c73bc3816e5b81e8d5963c8e53
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686503"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856782"
 ---
 # <a name="milestone-billing"></a>Milstolpesfakturering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet förklarar hur du definierar mallar för funktionen för milstolpsfakturering i prenumerationsfakturering. Du kan definiera allokeringsprocent eller allokeringsbelopp för varje rad i milstolpemallen. Du kan sedan tilldela milstolpemallen till artiklar med faktureringsschema som använder faktureringsfunktionen för milstolpar.
+Den här artikeln förklarar hur du definierar mallar för funktionen för milstolpsfakturering i prenumerationsfakturering. Du kan definiera allokeringsprocent eller allokeringsbelopp för varje rad i milstolpemallen. Du kan sedan tilldela milstolpemallen till artiklar med faktureringsschema som använder faktureringsfunktionen för milstolpar.
 
 ## <a name="add-a-template"></a>Lägg till en mall
 

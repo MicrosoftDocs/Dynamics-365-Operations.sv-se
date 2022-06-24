@@ -1,6 +1,6 @@
 ---
 title: Skapa inköpspolicyer
-description: I det här avsnittet visas hur du skapar inköpspolicyer att justera med dina affärsprocesser för inköp.
+description: I denna artikel visas hur du skapar inköpspolicyer att justeras med dina affärsprocesser för inköp.
 author: GalynaFedorova
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f51c88506044359787257ba0e0a6668213a170d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 011705723466d746fa5b23c5499d03a548f133f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677882"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878857"
 ---
 # <a name="create-purchasing-policies"></a>Skapa inköpspolicyer
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet visas hur du skapar inköpspolicyer att justera med dina affärsprocesser för inköp. Innan du kan skapa inköpspolicyer måste du ställa in inköpspolicyparametrarna. Det är möjligt att skapa, ändra och att överge en inköpspolicy, men du kan inte ta bort en inköpspolicy. Denna procedur utförs vanligtvis av en inköpschef. Du kan använda den här proceduren i demonstrationsföretaget USMF eller på dina egna data.
+I denna artikel visas hur du skapar inköpspolicyer att justeras med dina affärsprocesser för inköp. Innan du kan skapa inköpspolicyer måste du konfigurera inköpspolicyparametrarna. Det är möjligt att skapa, ändra och att överge en inköpspolicy, men du kan inte ta bort en inköpspolicy. Denna procedur utförs vanligtvis av en inköpschef. Du kan använda den här proceduren i demonstrationsföretaget USMF eller på dina egna data.
 
 
 ## <a name="set-up-policy-parameters"></a>Ställ in policyparametrar
@@ -52,7 +52,7 @@ I det här avsnittet visas hur du skapar inköpspolicyer att justera med dina af
 2. Välj **Skapa policyregel**.
 3. Välj **Ja** i fältet **Tillåt manuell åsidosättning**.
 4. Välj **Nära**.
-- Nu kan du ställa in andra policyregler för inköpspolicyn. Observera att en policyregeltyp inte kan ha överlappande regler som är aktiva samtidigt inom en enskild anskaffningpolicy.  
+- Nu kan du konfigurera andra policyregler för inköpspolicyn. Observera att en policyregeltyp inte kan ha överlappande regler som är aktiva samtidigt inom en enskild anskaffningpolicy.  
 
 
 

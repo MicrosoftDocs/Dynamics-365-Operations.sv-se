@@ -1,6 +1,6 @@
 ---
 title: Exempel och logik rörande värderapport för lager
-description: Detta ämne innehåller några exempel på resultat som visas för respektive typ av lagervärdesrapport. Rapporterna för lagervärde innehåller information om fysiska och ekonomiska kvantiteter och belopp.
+description: Denna artikel innehåller några exempel på resultat som visas för respektive typ av lagervärdesrapport. Rapporterna för lagervärde innehåller information om fysiska och ekonomiska kvantiteter och belopp.
 author: JennySong-SH
 ms.date: 10/19/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d594fc18a104c434a334a5b6d1d249330a6be9a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6c6387be5204fde6ebc7a4983567801900974af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675331"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877665"
 ---
 # <a name="inventory-value-report-examples-and-logic"></a>Exempel och logik rörande värderapport för lager
 
 [!include [banner](../includes/banner.md)]
 
-Rapporterna för lagervärde innehåller information om fysiska och ekonomiska kvantiteter och belopp. Detta ämne innehåller några exempel på resultat som visas för respektive typ av lagervärdesrapport.
+Rapporterna för lagervärde innehåller information om fysiska och ekonomiska kvantiteter och belopp. Denna artikel innehåller några exempel på resultat som visas för respektive typ av lagervärdesrapport.
 
 Mer information om hur du genererar och använder respektive typ av lagervärdesrapport finns i [Lagervärdesrapporter](inventory-value-report-storage.md).
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>Exempeldata som används i dessa exempel
 
-Exemplen i det här avsnittet är baserade på transaktionsdata för exempellager som beskrivs i det här avsnittet.
+Exemplen i denna artikel är baserade på transaktionsdata för exempellager som beskrivs i det här avsnittet.
 
 ### <a name="storage-dimension-setup"></a>Inställningar av lagringsdimension
 
@@ -70,7 +70,7 @@ I exempelsystemet ingår en konfiguration av en lagervärdesrapport med följand
 
 ## <a name="inventory-value-report-example-1"></a>Lagervärdesrapport, exempel 1
 
-I följande tabell och illustrationer visas resultaten när du använder den exempeldata och rapportkonfiguration som beskrevs tidigare i det här avsnittet.
+I följande tabell och illustrationer visas resultaten när du använder den exempeldata och rapportkonfiguration som beskrevs tidigare i denna artikel.
 
 | Resurstyp | Resurs | Webbplats | Referens | Lager: Ekonomisk kvantitet | Lager: Ekonomiskt belopp | Lager: Bokförd fysisk kvantitet | Lager: Bokfört fysiskt belopp | Lager: Kvantitet | Lager: Belopp | Genomsnittlig enhetskostnad |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -91,7 +91,7 @@ I följande bild visas rapporten **Lagring av lagervärdesrapport** för exempel
 
 ## <a name="inventory-value-report-example-2"></a>Lagervärdesrapport, exempel 2
 
-I följande tabell och illustrationer visas resultaten när du använder exempeldata som beskrivs tidigare i det här avsnittet, men du ändrar värdet i fältet **Nivå** till *Transaktioner* i rapportkonfigurationen, och du anger fältet **Från datum** som *15 mars* när du kör rapporten.
+I följande tabell och illustrationer visas resultaten när du använder exempeldata som beskrivs tidigare i denna artikel, men du ändrar värdet i fältet **Nivå** till *Transaktioner* i rapportkonfigurationen, och du anger fältet **Från datum** som *15 mars* när du kör rapporten.
 
 | Resurstyp | Resurs | Webbplats | Datum | Nummer | Referens | Lager: Ekonomisk kvantitet | Lager: Ekonomiskt belopp | Lager: Bokförd fysisk kvantitet | Lager: Bokfört fysiskt belopp | Lager: Kvantitet | Lager: Belopp |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -127,7 +127,7 @@ Följande delgrupper visar de lagervärdesrapporter som genereras efter att du s
 
 ### <a name="example-3-when-the-totals-level-is-used"></a>Exempel 3 när nivån Summor används
 
-I följande tabell visas resultaten när du använder den exempeldata och rapportkonfiguration som beskrevs tidigare i det här ämnet. (I den rapportkonfigurationen måste fältet **Nivå** anges till *Summor*.)
+I följande tabell visas resultaten när du använder den exempeldata och rapportkonfiguration som beskrevs tidigare i denna artikel. (I den rapportkonfigurationen måste fältet **Nivå** anges till *Summor*.)
 
 | Resurstyp | Resurs | Webbplats | Referens | Lager: Ekonomisk kvantitet | Lager: Ekonomiskt belopp | Lager: Bokförd fysisk kvantitet | Lager: Bokfört fysiskt belopp | Lager: Kvantitet | Lager: Belopp | Genomsnittlig enhetskostnad |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -136,7 +136,7 @@ I följande tabell visas resultaten när du använder den exempeldata och rappor
 
 ### <a name="example-3-when-the-transactions-level-is-used"></a>Exempel 3 när nivån Transaktioner används
 
-Följande tabell visar resultaten när du använder exempeldata som beskrivs tidigare i det här avsnittet, men du ändrar värdet i fältet **Nivå** till *Transaktioner* i rapportkonfigurationen.
+Följande tabell visar resultaten när du använder exempeldata som beskrivs tidigare i denna artikel, men du ändrar värdet i fältet **Nivå** till *Transaktioner* i rapportkonfigurationen.
 
 | Resurstyp | Resurs | Webbplats | Datum | Nummer | Referens | Lager: Ekonomisk kvantitet | Lager: Ekonomiskt belopp | Lager: Bokförd fysisk kvantitet | Lager: Bokfört fysiskt belopp | Lager: Kvantitet | Lager: Belopp |
 |---|---|---|---|---|---|---|---|---|---|---|---|

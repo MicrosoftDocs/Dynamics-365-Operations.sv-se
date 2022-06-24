@@ -1,6 +1,6 @@
 ---
-title: Transporthanteringsöversikt
-description: Det här avsnittet innehåller en översikt över funktionen för transporthantering i Supply Chain Management.
+title: Transporthantering – översikt
+description: Denna artikel innehåller en översikt över funktionen för transporthantering i Supply Chain Management.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6181d63c9ab447c4892948fe1f3ee41d2680b78d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 12f870c95f28e752c3c3b3dd4161d82815b9954a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671658"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897470"
 ---
 # <a name="transportation-management-overview"></a>Transporthantering – översikt
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över funktionen för transporthantering i Supply Chain Management.
+Denna artikel innehåller en översikt över funktionen för transporthantering i Supply Chain Management.
 
 Transporthantering låter dig använda företagets transporter och även identifiera leverantörs- och ruttlösningar för ingående och utgående order. Du kan till exempel identifiera det snabbaste flödet eller den minst kostsamma tariffen för en leverans. I tabellen nedan beskrivs de huvudsakliga scenarierna för att använda Transporthantering.
 

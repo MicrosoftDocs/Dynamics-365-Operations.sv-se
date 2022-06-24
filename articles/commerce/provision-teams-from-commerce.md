@@ -1,6 +1,6 @@
 ---
 title: Provision Microsoft Teams från Dynamics 365 Commerce
-description: I det här avsnittet beskrivs hur du etablerar Microsoft Teams med hjälp av organisationsdata från Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du etablerar Microsoft Teams med hjälp av organisationsdata från Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 54c85d1b6b51b7b2608200a7fa8e343ac6d008d0
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3dc9d0f20ec251f0908dda0017adaaeac1b43856
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690510"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868945"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Provision Microsoft Teams från Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du etablerar Microsoft Teams med hjälp av organisationsdata från Dynamics 365 Commerce.
+I denna artikel beskrivs hur du etablerar Microsoft Teams med hjälp av organisationsdata från Dynamics 365 Commerce.
 
 Dynamics 365 Commerce erbjuder ett enkelt sätt att tillhandahålla Teams om du ännu inte har ställt in team för dina detaljhandelsbutiker där. Genom att dra nytta av väldefinierad information från Commerce som du vill använda i Teams kan du hjälpa butiksanställda att komma igång i Teams. Den här informationen omfattar organisationshierarkin, butiksnamn, medarbetarinformation Azure Active Directory och (Azure AD) konton. 
 
@@ -32,16 +32,16 @@ Processen för reservering av Teams har två huvudsteg:
 1. I Teams skapar du ett team för varje butik och lägger till butiksarbetare som medlemmar i rätt team. Om en anställd är associerad med mer än en butik kommer teammedlemskapet att återspegla detta faktum. Ett kommunikationsteam med regionala chefer som medlemmar skapas för att publicera uppgifter från Teams.
 1. Överför organisationshierarkin från Commerce till Teams.
 
-## <a name="provision-teams-in-commerce-headquarters"></a>Provision Teams i Commerce-administration
+## <a name="provision-teams-in-commerce-headquarters"></a>Provision Teams i Commerce headquarters
 
 Innan du provision Microsoft Teams måste du utföra följande uppgifter:
 
 - Bekräfta att alla regionchefer har kommunikationschefer.
-- Bekräfta att Azure-kontot för alla butikschefer och den anställda har associerats med chefens eller arbetarens arbetarpost i Commerce-administration.
+- Bekräfta att Azure-kontot för alla butikschefer och den anställda har associerats med chefens eller arbetarens arbetarpost i Commerce headquarters.
 
-Följ de här stegen om du vill etablera Teams i Commerce-administration.
+Följ de här stegen om du vill etablera Teams i Commerce headquarters.
 
-1. Öppna **Butik och handel \> Kanalinställningar \> Microsoft Teams integrationskonfiguration**.
+1. Öppna **Butik och handel \> Kanalinställningar \> Microsoft Teams integreringskonfiguration**.
 1. Klicka på **Provision Teams** i åtgärdsfönstret. Ett batchjobb som kallas **Teams Provision** skapas.
 1. Gå till **Systemadministration \> Förfrågningar \> Batch-jobb** och hitta det senaste jobbet som har beskrivningen **Teams-etablering**. Vänta tills körningen är klar för det här jobbet.
 
@@ -54,7 +54,7 @@ Följ de här stegen om du vill etablera Teams i Commerce-administration.
 
 Om du validera Microsoft Teams etablering i Microsoft Teams administrationscentret gör du på följande sätt.
     
-1. Gå till [Teams administratörscenter](https://admin.teams.microsoft.com/) och logga in som administratör för din e-handelsklient.
+1. Gå till [Teams administratörscenter](https://admin.teams.microsoft.com/) och logga in som administratör för din näthandelsklient.
 1. I det vänstra navigeringsfönstret väljer du **Teams** för att öppna och sedan **Hantera team**.
 1. Bekräfta att ett team har skapats för varje Commerce butik.
 1. Markera ett team och bekräfta att butiksarbetare har lagts till som medlemmar i gruppen.
@@ -70,7 +70,7 @@ Commerce organisationshierarki kan användas för Microsoft Teams för att publi
 
 Så här överför du en Commerce organisationshierarki till Teams.
     
-1. I Commerce-administration, gå till **Butik och handel \> Kanalinställning \> Microsoft Teams integrationskonfiguration**.
+1. I Commerce headquarters, gå till **Butik och handel \> Kanalinställning \> Microsoft Teams integreringskonfiguration**.
 1. Välj **Hämta målhierarki** och välj sedan **Retail Stores by Region** om du vill hämta filen med kommaavgränsade värden (CSV) i organisationshierarkin.
 1. Installera modulen Microsoft TeamsPowerShell genom att följa stegen i [Installera Microsoft Teams PowerShell](/microsoftteams/teams-powershell-install).
 1. När du uppmanas i Teams PowerShell-fönster, logga in med administratörskontot för din Azure AD klientorganisation.
@@ -91,7 +91,7 @@ Kontrollera att organisationshierarkin har överförts till Microsoft Teams med 
 
 [Dynamics 365 Commerce och Microsoft Teams-integrering, översikt](commerce-teams-integration.md)
 
-[Aktivera Dynamics 365 Commerce och Microsoft Teams-integration](enable-teams-integration.md)
+[Aktivera Dynamics 365 Commerce och Microsoft Teams-integrering](enable-teams-integration.md)
 
 [Synkronisera uppgiftshantering mellan Microsoft Teams och Dynamics 365 Commerce POS](synchronize-tasks-teams-pos.md)
 
@@ -99,4 +99,4 @@ Kontrollera att organisationshierarkin har överförts till Microsoft Teams med 
 
 [Mappa butiker och team om det finns befintliga team i Microsoft Teams](map-stores-existing-teams.md)
 
-[Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integration](teams-integration-faq.md)
+[Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integrering](teams-integration-faq.md)

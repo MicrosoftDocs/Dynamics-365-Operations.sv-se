@@ -1,6 +1,6 @@
 ---
 title: Arbeta med fragment
-description: I det här avsnittet beskrivs varför, när och hur du ska använda fragment i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs varför, när och hur du ska använda fragment i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 8824a42e46d94904f50d3f95b486673c231d9828
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090754"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896848"
 ---
 # <a name="work-with-fragments"></a>Arbeta med fragment 
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs varför, när och hur du ska använda fragment i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs varför, när och hur du ska använda fragment i Microsoft Dynamics 365 Commerce.
 
 Fragment gör det möjligt att använda en central redigeringsupplevelse för modulkonfigurationer som måste återanvändas på hela din webbplats. Sidhuvuden, sidfötter och banderoller är ofta konfigurerade som fragment, eftersom de delas på många sidor. Du kan betrakta fragment som miniatyrer av webbsidor som kan infogas på andra sidor på webbplatsen. Fragment har sin egen livscykel. Det innebär att de skapas, refereras, uppdateras och tas bort som oberoende enheter i redigeringsverktygen.
 
@@ -39,7 +39,7 @@ Om du till exempel vill marknadsföra en säsongshändelse på många sidor på 
 > [!NOTE]
 > Fragment kan skapas med alla typer av moduler.
 
-Du kan sedan konfigurera fokusfragment med ditt specifika säljinnehåll. Du kan också lokalisera den efter behov. Det nya fristående fokusfragmentet kan sedan förbrukas som en förkonfigurerad modul på hela din webbplats. Du kan enkelt lägga till det i mallar, specifika sidor eller till andra fragment som kan innehålla fokusmoduler.
+Du kan sedan konfigurera fokusfragment med ditt specifika säljinnehåll. Du kan också lokalanpassa den efter behov. Det nya fristående fokusfragmentet kan sedan förbrukas som en förkonfigurerad modul på hela din webbplats. Du kan enkelt lägga till det i mallar, specifika sidor eller till andra fragment som kan innehålla fokusmoduler.
 
 Alla platser där fragmenten läggs till är referenser till det centrala fokusfragment som du har skapat. Om du publicerar ändringar i avsnittet visas dessa direkt på alla platser där fragmentet refereras på webbplatsen. Därför utgör fragmenten ett kraftfullt och effektivt sätt att återanvända och centralt hantera konfigurationer på en webbplats. Genom att effektivt använda dem kan du öka flexibiliteten och minska den kostnad som är kopplad till hantering av webbplatsens innehåll.
 

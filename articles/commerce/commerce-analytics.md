@@ -1,6 +1,6 @@
 ---
 title: Commerce-analyser (förhandsversion)
-description: Det här avsnittet innehåller information om hur du installerar och använder analysfunktionerna i Microsoft Dynamics 365 Commerce.
+description: Denna artikel innehåller information om hur du installerar och använder analysfunktionerna i Microsoft Dynamics 365 Commerce.
 author: AamirAllaq
 ms.date: 02/24/2022
 audience: Application user
@@ -8,18 +8,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2021-11-12
-ms.openlocfilehash: 63d6e5ef7e883578106495d5ec778bbd686ee92d
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: 9ffa0affa0b80af65dd2aa37ef2fe969752ae332
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8550017"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887176"
 ---
 # <a name="commerce-analytics-preview"></a>Commerce-analyser (förhandsversion)
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du installerar Commerce-analyser (förhandsversion), den funktionella analyskapacitet som finns i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du installerar Commerce-analyser (förhandsversion), den funktionella analyskapacitet som finns i Microsoft Dynamics 365 Commerce.
 
 ## <a name="commerce-analytics-preview-live-demo"></a>Commerce-analyser (förhandsversion) livedemo
 
@@ -372,7 +372,7 @@ Skicka in [förhandsgranskningsformuläret för Commerce-analys (förhandsversio
 > [!IMPORTANT]
 > När du konfigurerar tillägget Exportera till Data Lake avmarkerar du kryssrutan **Ändringar av realtidsdata** på inställningssidan för Exportera till Data Lake för att se till att ändringar av realtidsdata inte aktiveras. Funktionen **Dataändringar i realtid** befinner sig i förhandsgranskningsversion och stöds för närvarande inte av Commerce Analytics. Om du aktiverar funktionen kommer Commerce Analytics inte att kunna bearbeta dina data i datasjön, och de flesta Power BI-rapporter kommer inte att uppvisa några data.
 
-Commerce-analys (förhandsversion) använder sig av funktionen Exportera till Data Lake för att exportera Commerce-administrationsdata till Data Lake och hålla datan aktuell. Innan du konfigurerar Commerce-analys (förhandsversion), aktivera och konfigurera Exportera till Data Lake genom att följa stegen i [konfigurera export till Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
+Commerce-analys (förhandsversion) använder sig av funktionen Exportera till Data Lake för att exportera Commerce headquarterssdata till Data Lake och hålla datan aktuell. Innan du konfigurerar Commerce-analys (förhandsversion), aktivera och konfigurera Exportera till Data Lake genom att följa stegen i [konfigurera export till Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
 
 När du konfigurerar tillägget Exportera till Data Lake, se till att notera följande information eftersom du måste registrera den senare:
 
@@ -453,10 +453,10 @@ För att installera Power BI mallappen för Commerce-analys (förhandsversion), 
     |---|---|
     | Server | Ange den serverlösa SQL-slutpunkt som du gjorde en anteckning om när du [skapade Azure Synapse Workspace](#serverlessep). |
     | Databas | Ange **CommerceAnalytics**. |
-    | Språk | Välj ett värde i listan. Detta fält används för lokaliserade produkt- och kategorinamn. Värdet är skiftlägeskänsligt. |
+    | Språk | Välj ett värde i listan. Detta fält används för lokalanpassade produkt- och kategorinamn. Värdet är skiftlägeskänsligt. |
     | Datumintervall | Välj ett värde i listan. Data för valt antal månader kommer att importeras till Power BI datauppsättningen. Värdet du väljer påverkar storleken på datauppsättningen och den tid som krävs för synkronisering. |
 
-1. Välj **Nästa**. När du uppmanas att ange autentiseringsuppgifterna för att ansluta till Azure Synapse SQL-databasen ska du ställa in fältvärdena så som visas i följande tabell.
+1. Välj **Nästa**. När du uppmanas att ange autentiseringsuppgifterna för att ansluta till Azure Synapse SQL-databasen ska du konfigurera fältvärdena så som visas i följande tabell.
 
     | Fält | Värde |
     |---|---|
@@ -465,7 +465,7 @@ För att installera Power BI mallappen för Commerce-analys (förhandsversion), 
     | Lösenord | Ange lösenordet som du [lagrade för den skrivskyddade SQL-användaren i nyckelvalvet](#roUser). |
 
 1. Välj **logga in och anslut**.
-1. Vänta tills datauppsättningen har uppdaterats. Välj sedan knappen **Redigera app** för att öppna programarbetsytan, där du kan visa uppdateringsstatusen för datauppsättningen. I app-arbetsytan kan du även ställa in automatiska uppdatringsplaner för din datauppsättning, hantera behörigheter och byta namn på appinstansen.
+1. Vänta tills datauppsättningen har uppdaterats. Välj sedan knappen **Redigera app** för att öppna programarbetsytan, där du kan visa uppdateringsstatusen för datauppsättningen. I app-arbetsytan kan du även konfigurera automatiska uppdatringsplaner för din datauppsättning, hantera behörigheter och byta namn på appinstansen.
 
 ### <a name="privacy"></a><a name="privacy"></a>Tillgänglighet
 

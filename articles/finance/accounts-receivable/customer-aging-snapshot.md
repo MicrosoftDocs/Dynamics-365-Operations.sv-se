@@ -1,6 +1,6 @@
 ---
 title: Ögonblicksbild av åldersfördelningen för kunder
-description: Det här avsnittet innehåller information om ögonblicksbilder av kunders åldersfördelning. En ögonblicksbild av åldersfördelning beräknar åldersfördelningssaldon för en grupp av kunder vid en viss tidpunkt.
+description: Den här artikeln innehåller information om ögonblicksbilder av kunders åldersfördelning. En ögonblicksbild av åldersfördelning beräknar åldersfördelningssaldon för en grupp av kunder vid en viss tidpunkt.
 author: JodiChristiansen
 ms.date: 05/05/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 54db3e53cd31936ce80f0cdf1147535216d0d4b4
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: c1a83f2648b52e436d19a11862e58dc33313f341
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723007"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902585"
 ---
 # <a name="customer-aging-snapshots"></a>Ögonblicksbild av åldersfördelningen för kunder
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller information om ögonblicksbilder av kunders åldersfördelning. En ögonblicksbild av åldersfördelning beräknar åldersfördelningssaldon för en grupp av kunder vid en viss tidpunkt. Du kan skapa ögonblicksbild av åldersfördelningposter för antingen alla kunder eller för kunderna i en kundpool.
+Den här artikeln innehåller information om ögonblicksbilder av kunders åldersfördelning. En ögonblicksbild av åldersfördelning beräknar åldersfördelningssaldon för en grupp av kunder vid en viss tidpunkt. Du kan skapa ögonblicksbild av åldersfördelningposter för antingen alla kunder eller för kunderna i en kundpool.
 
 Information från ögonblicksbilder av åldersfördelning visas på listsidan **Åldersfördelade saldon** och på sidan **Inkasso**. Du måste skapa en ögonblicksbild av åldersfördelning innan du kan använda listsidan **Åldersfördelade saldon**. Listsidan visar bara kunder som en ögonblicksbild av åldersfördelning har skapats för.
 

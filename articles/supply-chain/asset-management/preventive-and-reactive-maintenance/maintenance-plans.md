@@ -1,6 +1,6 @@
 ---
 title: Underhållsplaner
-description: I det här avsnittet beskrivs underhållsplaner i Tillgångshantering.
+description: I denna artikel beskrivs underhållsplaner i Tillgångshantering.
 author: johanhoffmann
 ms.date: 01/20/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7c74505c1771354aba42ddd9df2b7eaff8f5bc4653675244be99c4ef8afa73f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f8a6de85f68a924a8d285d8cdd306ab774661fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740753"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897818"
 ---
 # <a name="maintenance-plans"></a>Underhållsplaner
 
@@ -44,7 +44,7 @@ Om du lägger till en underhållsplan för tillgångstyper eller funktionsplatst
 
 ## <a name="set-up-maintenance-plans"></a>Ställ in underhållsplaner
 
-I det här avsnittet beskrivs hur du ställer in underhållsplanrader och ger exempel på hur de kan användas.
+I det här avsnittet beskrivs hur du konfigurerar underhållsplanrader och ger exempel på hur de kan användas.
 
 1. Gå till **Tillgångshantering \> Inställning \> Förebyggande underhåll \> Underhållsplaner**.
 
@@ -84,7 +84,7 @@ I det här avsnittet beskrivs hur du ställer in underhållsplanrader och ger ex
 
 1. I fältet **Periodfrekvens** anger du hur många gånger raden ska användas för att planera förebyggande underhållsjobb. Exempel: Om du har skapat en rad av typen "Räknare", och räknaren är produktionskvantitet och du infogar siffran "20 000" i det här fältet, skapas nya underhållsserierader under förebyggande underhållsplanering varje gång du förväntar dig att producera 20 000 fler artiklar.
 
-1. Kryssrutan **Undertryck överlappande underhållsjobb** avser både tidsbaserade och räknarbaserade radtyper. Markera kryssrutan om du vill ta bort poster för underhållsplaner som skapas för samma datum. Detta är relevant om du t ex. har skapat en 1-månads inspektionsrad, en 6-månaders inspektionsrad och en 1-års inspektionsrad. För den 1-åriga inspektionen vill du bara att inspektionen skall utföras, inte de två andra inspektionerna som också skulle passa inom tidsramen. För att du ska kunna ställa in det här exemplet korrekt ställer du in en 1-års inspektionsrad som den första raden, 6-månadersraden som den andra raden och 1-månadsraden som den tredje raden, och markerar kryssrutan **Undertryck överlappande underhållsjobb** för 1-månads- och 6-månadersraderna. På så sätt ser du till att inspektionerna för en månad och sex månader utelämnas när du når 1-årsmarkeringen och att en underhållsschemarad endast skapas för 1-årsinspektionsraden.
+1. Kryssrutan **Undertryck överlappande underhållsjobb** avser både tidsbaserade och räknarbaserade radtyper. Markera kryssrutan om du vill ta bort poster för underhållsplaner som skapas för samma datum. Detta är relevant om du t ex. har skapat en 1-månads inspektionsrad, en 6-månaders inspektionsrad och en 1-års inspektionsrad. För den 1-åriga inspektionen vill du bara att inspektionen skall utföras, inte de två andra inspektionerna som också skulle passa inom tidsramen. För att du ska kunna konfigurera det här exemplet korrekt ställer du in en 1-års inspektionsrad som den första raden, 6-månadersraden som den andra raden och 1-månadsraden som den tredje raden, och markerar kryssrutan **Undertryck överlappande underhållsjobb** för 1-månads- och 6-månadersraderna. På så sätt ser du till att inspektionerna för en månad och sex månader utelämnas när du når 1-årsmarkeringen och att en underhållsschemarad endast skapas för 1-årsinspektionsraden.
 
     >[!NOTE]
     >Exemplet som beskrivs i det här steget visar att det mest omfattande jobbet, som innehåller det största antalet uppgifter och som inte utförs så ofta, alltid ska infogas som den första raden. De vanligaste jobben infogas som separata rader i frekvensordning, där det vanligaste jobbet placeras längst ned i listan.
@@ -101,7 +101,7 @@ I det här avsnittet beskrivs hur du ställer in underhållsplanrader och ger ex
 
 1. Markera kryssrutan **Autoskapa** om du vill att en arbetsorder automatiskt ska skapas enligt den valda underhållsplanraden när du planerar underhållsplaner.
 
-1. Om du har markerat kryssrutan **Autoskapa** kan du välja en arbetsordertyp för den automatiskt skapade arbetsordern i fältet **Arbetsordertyp**. Om du har markerat kryssrutan **Autoskapa** och inte väljer någon arbetsordertyp i det här fältet, används arbetsordertypen som valts i **Tillgångshantering \> Inställning \> Parametrar för tillgångshantering \> Arbetsorder** länk \> **Förebyggande arbetsorder**.
+1. Om du har markerat kryssrutan **Autoskapa** kan du välja en arbetsordertyp för den automatiskt skapade arbetsordern i fältet **Arbetsordertyp**. Om du har markerat kryssrutan **Autoskapa** och inte väljer någon arbetsordertyp i det här fältet, används arbetsordertypen som valts i **Tillgångshantering \> Inställning \> Parametrar för Tillgångshantering \> Arbetsorder** länk \> **Förebyggande arbetsorder**.
 
 1. Använd fälten **Från säsong** och **Till säsong** för att skapa en upprepad tidsbaserad underhållsplanrad inom en 12-månadersperiod. *Exempel:* Utrustning som används för att underhålla grönområden måste få service varje vår inom en fördefinierad period. Infoga startdatumet för den period som ska upprepas i fältet **Säsong från**.
 
@@ -133,15 +133,15 @@ I det här avsnittet beskrivs hur du ställer in underhållsplanrader och ger ex
 | **Intervalltyp: En gång från startdatum** Se beskrivningen för intervalltypen "Upprepat från startdatum" ovan. Den enda skillnaden är att denna intervalltyp bara ska användas en gång. | Se beskrivning för intervalltypen "Upprepat från startdatum" ovan. Det här intervallet används vanligtvis för ett engångsjobb för underhåll eller service. | Se beskrivning för intervalltypen "Upprepat från startdatum" ovan. Det här intervallet används vanligtvis för ett engångsjobb för underhåll eller service. **Anmärkning 1** ovan gäller även för den här intervalltypen. **Anmärkning 3:** Om räknaren ersätts när underhålls- eller servicejobbet slutförs, fungerar denna intervalltyp som intervalltypen "Upprepat från startdatum" ovan. |
 | **Intervalltyp: När övre nås** Den här intervalltypen gäller endast räknare och används för att indikera en övre gräns som ställts in på underhållsplanraden. Underhållsschemaposter får det förväntade startdatumet och tidpunkten för räknarregistreringen, vilket innebär att dessa poster skapas med ett förväntat startdatum som är lika med eller tidigare än systemdatumet. | Inte aktuellt | Räknarintervallet indikerar en övre gräns. Om denna gräns överskrids när du skapar en räknarregistrering skapas en underhållsschemarad när du planerar förebyggande underhåll. |
 | **Intervalltyp: När nedre nås** Den här intervalltypen gäller endast räknare och används för att indikera en nedre gräns som ställts in på underhållsplanraden. Underhållsschemaposter får det förväntade startdatumet och tidpunkten för räknarregistreringen, vilket innebär att dessa poster skapas med ett förväntat startdatum som är lika med eller tidigare än systemdatumet. | Inte aktuellt | Räknarintervallet indikerar en nedre gräns. Om denna gräns passeras när du skapar en räknarregistrering skapas en underhållsschemarad när du planerar förebyggande underhåll. |
-| **Intervalltyp: länkad från startdatum** Den här intervalltypen skapar bara en underhållsschemarad en gång. En underhållsplan kan innehålla flera underhållsplanrader med den här intervalltypen och dessa rader är kopplade till varandra. Vanligtvis skapar du en underhållsplan som innehåller enbart rader med den här intervalltypen. Underhållsschemarader skapas genom identifiering av den underhållsplanrad som har det första förväntade startdatumet och tiden. | Se beskrivning för intervalltypen "En gång från startdatum" ovan. Exempel: Du skapar två rader i en underhållsplan för ett servicejobb på en bil: en tidsbaserad rad med en 1-årsperiod och en räknarbaserad rad med en 25 000 km-gräns. En underhållsschemarad skapas för den gräns som först uppnås. För den här radtypen skapar du raden med 1-årsperioden. | Se beskrivning för intervalltypen "En gång från startdatum" ovan. Exempel: Du skapar två rader i en underhållsplan för ett servicejobb på en bil: en tidsbaserad rad med en 1-årsperiod och en räknarbaserad rad med en 25 000 km-gräns. En underhållsschemarad skapas för den gräns som först uppnås. För den här radtypen skapar du raden med 25 000 km-gränsen. Exempel för att skapa två räknarrader: Du kan också ställa in en underhållsplan med två länkade, räknarbaserade rader där den första raden har en gräns på 10 000 producerade artiklar och den andra raden gäller den maskin eller resurs som kräver service efter att ha körts 3 000 timmar. |
+| **Intervalltyp: länkad från startdatum** Den här intervalltypen skapar bara en underhållsschemarad en gång. En underhållsplan kan innehålla flera underhållsplanrader med den här intervalltypen och dessa rader är kopplade till varandra. Vanligtvis skapar du en underhållsplan som innehåller enbart rader med den här intervalltypen. Underhållsschemarader skapas genom identifiering av den underhållsplanrad som har det första förväntade startdatumet och tiden. | Se beskrivning för intervalltypen "En gång från startdatum" ovan. Exempel: Du skapar två rader i en underhållsplan för ett servicejobb på en bil: en tidsbaserad rad med en 1-årsperiod och en räknarbaserad rad med en 25 000 km-gräns. En underhållsschemarad skapas för den gräns som först uppnås. För den här radtypen skapar du raden med 1-årsperioden. | Se beskrivning för intervalltypen "En gång från startdatum" ovan. Exempel: Du skapar två rader i en underhållsplan för ett servicejobb på en bil: en tidsbaserad rad med en 1-årsperiod och en räknarbaserad rad med en 25 000 km-gräns. En underhållsschemarad skapas för den gräns som först uppnås. För den här radtypen skapar du raden med 25 000 km-gränsen. Exempel för att skapa två räknarrader: Du kan också konfigurera en underhållsplan med två länkade, räknarbaserade rader där den första raden har en gräns på 10 000 producerade artiklar och den andra raden gäller den maskin eller resurs som kräver service efter att ha körts 3 000 timmar. |
 | **Intervalltyp: länkat från senaste arbetsorder** denna intervalltyp skapar nya underhållsplaneringsrader efter varje slutförd arbetsorder. En underhållsplan kan innehålla flera rader med den här intervalltypen och dessa rader är kopplade till varandra. Vanligtvis skapar du en underhållsplan som innehåller enbart underhållsplanrader med den här intervalltypen. Underhållsschemarader skapas genom identifiering av den underhållsplanrad som har det första förväntade startdatumet och tiden. | Den här intervalltypen fungerar på ett och samma sätt som "Länkat från startdatum", som beskrivs ovan. Den enda skillnaden är det datum som intervalltypen baseras på. Datumet som används är det faktiska datumet och tiden för den senaste arbetsordern som har slutförts på tillgången *och* kombinationen av underhållsjobbtyp / variant av underhållsjobbtyp / yrkesgren. | Den här intervalltypen fungerar på ett och samma sätt som "Länkat från startdatum", som beskrivs ovan. Den enda skillnaden är det datum som intervalltypen baseras på. Datumet som används är det faktiska datumet och tiden för den senaste arbetsordern som har slutförts på tillgången *och* kombinationen av underhållsjobbtyp / variant av underhållsjobbtyp / yrkesgren. |
-| **Intervalltyp: Upprepat på aggregerat värde (endast räknare)** När underhållsplanen körs skapas en tidsplanerad underhållsrad varje gång det ackumulerade värdet för en tillgångsräknare når periodfrekvensen eller en till och med en multipel av periodfrekvensen. (Periodfrekvensen definieras på underhållsplanraden.)<p>Mer information om hur du aktiverar och använder de här funktionerna finns i [Räknarbaserade förbättringar av underhållet](#counter-based-maintenance) längre fram i det här avsnittet. | Inte aktuellt | **Exempel:** En timräknare ställs in för tillgången SEK-101. En anläggningstillgångsplanrad ställs också in för tillgången. Intervalltypen för den här raden är *Upprepat på aggregerat värde (endast räknare)* och periodfrekvensen är *1000*. När underhållsplanen körs genereras en planerad underhållsrad när det aggregerade värdet för räknaren överstiger 1 000 timmar. När det aggregerade värdet för räknaren sedan överskrider 2 000 timmar genereras en annan planerad underhållsrad, och så vidare för varje ytterligare 1 000 timmar. |
+| **Intervalltyp: Upprepat på aggregerat värde (endast räknare)** När underhållsplanen körs skapas en tidsplanerad underhållsrad varje gång det ackumulerade värdet för en tillgångsräknare når periodfrekvensen eller en till och med en multipel av periodfrekvensen. (Periodfrekvensen definieras på underhållsplanraden.)<p>Mer information om hur du aktiverar och använder denna funktion finns i avsnittet [Räknarbaserade förbättringar av underhåll](#counter-based-maintenance) längre fram i denna artikel. | Inte tillämpligt | **Exempel:** En timräknare ställs in för tillgången SEK-101. En anläggningstillgångsplanrad ställs också in för tillgången. Intervalltypen för den här raden är *Upprepat på aggregerat värde (endast räknare)* och periodfrekvensen är *1000*. När underhållsplanen körs genereras en planerad underhållsrad när det aggregerade värdet för räknaren överstiger 1 000 timmar. När det aggregerade värdet för räknaren sedan överskrider 2 000 timmar genereras en annan planerad underhållsrad, och så vidare för varje ytterligare 1 000 timmar. |
 | **Intervalltyp: En på aggregerat värde (endast räknare)** När underhållsplanen körs skapas en tidsplanerad underhållsrad när det ackumulerade värdet för en tillgångsräknare når periodfrekvensen som definieras på underhållsplanraden.<p>Mer information om hur du aktiverar och använder de här funktionerna finns i asvnittet [Räknarbaserade förbättringar av underhållet](#counter-based-maintenance). | Inte aktuellt | **Exempel:** En timräknare ställs in för tillgången SEK-101. En anläggningstillgångsplanrad ställs också in för tillgången. Intervalltypen för den här raden är *En gång på aggregerat värde (endast räknare)* och periodfrekvensen är *1000*. När underhållsplanen körs genereras en planerad underhållsrad när det aggregerade värdet för räknaren överstiger 1 000 timmar. |
 
 >[!NOTE]
 >När underhållsschemarader skapas för tidsbaserade underhållsplanrader är förväntad tid alltid början av dagen. För de räknarbaserade underhållsplanraderna kan förväntad tid vara när som helst under dagen.
 
-Nedan finns exempel på hur du ställer in tidsbaserade och räknarbaserade underhållsplanrader:
+Nedan finns exempel på hur du konfigurerar tidsbaserade och räknarbaserade underhållsplanrader:
 
 **Exempel 1 - Tidsbaserad underhållsplanrad:** Ett smörjjobb kan ställas in i ett fast intervall, som inträffar en gång i veckan. För det ändamålet väljer du "Upprepat från plandatum" i fältet **Intervalltyp**. Se exemplet i följande bild.
 
@@ -175,7 +175,7 @@ Följande illustration visar ett exempel på en underhållsplan för "Lastbilsse
 
 1. Gå till **Tillgångshantering \> Allmänt \> Tillgångar \> Alla tillgångar** eller **Aktiva tillgångar**.
 
-1. Välj tillgången som du vill ställa in en underhållsplan för och klicka på **Redigera**.
+1. Välj tillgången som du vill konfigurera en underhållsplan för och klicka på **Redigera**.
 
 1. På snabbfliken **Underhållsplaner för tillgångar**, klicka på **Lägg till rad** för att lägga till en underhållsplan till tillgången.
 
@@ -197,7 +197,7 @@ Funktionen *Förbättringar av räknarbaserat underhåll* innehåller följande 
 
 - Alternativet för att automatiskt infoga en räknare som har värdet *0* (noll) när en tillgång skapas. Det här alternativet kan vara användbart när du använder förutsägande underhåll som baseras på räknare. När funktionen *Förbättringar av räknarbaserat underhåll* inte används måste räknare som har värdet *0* (noll) infogas manuellt.
 - Möjligheten att konfigurera en räknare så att den återställs automatiskt när en arbetsorder är slutförd. Den här funktionen är praktisk om du vill schemalägga underhåll baserat på det aggregerade värdet sedan den senaste arbetsordern slutfördes.
-- En ny typ av intervall för underhållsplan som kallas *Upprepat på aggregerat värde (gäller endast räknare)*. Den här typen utlöser underhåll varje gång en aggregerad räknare uppnår en multipel av ett visst värde. Underhåll kan till exempel initieras var 10 000:e timme. Mer information finns i avsnitt [Översikt över intervalltyper](#interval-types) tidigare i det här avsnittet.
+- En ny typ av intervall för underhållsplan som kallas *Upprepat på aggregerat värde (gäller endast räknare)*. Den här typen utlöser underhåll varje gång en aggregerad räknare uppnår en multipel av ett visst värde. Underhåll kan till exempel initieras var 10 000:e timme. Mer information finns i avsnittet [Översikt över intervalltyper](#interval-types) tidigare i denna artikel.
 - En annan ny typ av intervall för underhållsplan som kallas *En gång på aggregerat värde (gäller endast räknare)*. Den här typen utlöser underhåll när en aggregerad räknare uppnår ett visst värde, t.ex. 8 000 timmar. Mer information finns i avsnitt [Översikt över intervalltyper](#interval-types).
 
 ### <a name="turn-on-the-counter-based-maintenance-enhancements-feature"></a>Aktivera funktionen för förbättringar av räknarbaserat underhåll
@@ -209,7 +209,7 @@ Innan du kan använda den här funktionen den aktiveras i ditt system. Administr
 
 ### <a name="create-and-initialize-counters-when-an-asset-is-created"></a>Skapa och initiera räknare när en tillgång skapas
 
-Varje gång du skapar en tillgång kan relaterade tillgångsräknare som initieras till värdet *0* (noll) skapas automatiskt, förutsatt att du ställer in systemet och skapar tillgången korrekt.
+Varje gång du skapar en tillgång kan relaterade tillgångsräknare som initieras till värdet *0* (noll) skapas automatiskt, förutsatt att du konfigurerar systemet och skapar tillgången korrekt.
 
 1. Gå till **Tillgångshantering \> Konfigurera \> Tillgångstyper**.
 1. Se till att du har en tillgångstyp som kan användas för din planerade nya tillgång. Skapa en tillgångstyp efter behov. Kontrollera att alla relevanta räknare markeras på snabbfliken **Räknare**.

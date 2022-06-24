@@ -1,6 +1,6 @@
 ---
-title: Konfigurera fält för mobilappen för distributionslagerhantering
-description: Det här avsnittet beskriver hur du definierar och konfigurerar namn och prioriteringar av fälten som visas i mobilappen Hantering av distributionslager.
+title: Konfigurera fält för mobilappen Warehouse Management
+description: Denna artikel beskriver hur du definierar och konfigurerar namn och prioriteringar av fälten som visas i mobilappen Warehouse Management.
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8c9c1d921f68538d5b84db16b1e88e28147e6b41
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 1ce274c997119c7fdba193fa9559832e63febddc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902306"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893248"
 ---
-# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Konfigurera fält för mobilappen för distributionslagerhantering
+# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Konfigurera fält för mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du definierar och konfigurerar namn och prioriteringar av fälten som visas i mobilappen Hantering av distributionslager.
+Denna artikel beskriver hur du definierar och konfigurerar namn och prioriteringar av fälten som visas i mobilappen Warehouse Management.
 
 > [!NOTE]
-> Denna artikel gäller funktioner i lagerstyrningshanteringen. Den gäller inte funktioner i lagerhanteringshanteringen. Mobilappen Hantering av distributionslager är ett program som du kan använda för att utföra uppgifter på lagerstället. Du kan definiera och konfigurera de fältnamn som används i programmet, samt konfigurera prioriteringen bland de fältnamn som ska tilldelas. Det här avsnittet förklarar hur du definierar och konfigurerar fältnamn och prioriteringar i mobilappen Hantering av distributionslager, samt hur dessa används.
+> Denna artikel gäller funktioner i Warehouse Management. Den gäller inte funktioner i lagerhanteringshanteringen. Mobilappen Hantering av distributionslager är ett program som du kan använda för att utföra uppgifter på lagerstället. Du kan definiera och konfigurera de fältnamn som används i programmet, samt konfigurera prioriteringen bland de fältnamn som ska tilldelas. Denna artikel förklarar hur du definierar och konfigurerar dessa fältnamn och prioriteringar i mobilappen Warehouse Management, samt hur de används.
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurera fältnamn i lagerställets program
 

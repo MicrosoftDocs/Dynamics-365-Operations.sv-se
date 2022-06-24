@@ -1,6 +1,6 @@
 ---
 title: Pausa och återuppta en transaktion i POS
-description: Det här avsnittet beskriver hur användare kan avbryta pågående transaktioner och sedan återuppta dem senare eller i en annan kassa med Dynamics 365 Commerce.
+description: Denna artikel beskriver hur användare kan avbryta pågående transaktioner och sedan återuppta dem senare eller i en annan kassa med Dynamics 365 Commerce.
 author: jblucher
 ms.date: 11/27/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2efc88cfa7a8cede50969484d275c6fdbb2204dd2f29b3f8c7340d02cb61a79c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 761adb5e1dc1c9f6ecea42ae739fe44e1f87faeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737564"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850207"
 ---
 # <a name="suspend-and-resume-a-transaction-in-the-point-of-sale-pos"></a>Pausa och återuppta en transaktion i POS
 
@@ -31,9 +31,9 @@ Kassaanvändare kan avbryta pågående transaktioner och återuppta dem senare, 
 
 ## <a name="configure-suspend-and-resume-functionality"></a>Konfigurera funktioner för att pausa och återuppta
 
-### <a name="pos-operations"></a>POS-operationer
+### <a name="pos-operations"></a>POS-åtgärder
 
-Två [kassaoperationer](pos-operations.md) låter POS ge stöd för att pausa och återuppta scenarier. Du kan tilldela dessa operationer som [knappsatser](pos-screen-layouts.md) på transaktionssidan eller välkomstsidan.
+Två [kassaåtgärder](pos-operations.md) låter POS ge stöd för att pausa och återuppta scenarier. Du kan tilldela dessa åtgärder som [knappsatser](pos-screen-layouts.md) på transaktionssidan eller välkomstsidan.
 
 - 503: Pausa transaction
 - 504: Återkalla transaktion
@@ -50,13 +50,13 @@ När det gäller andra kassatransaktionstyper som genererar ett utskrivet kvitto
 
 ### <a name="void-when-closing-shift"></a>Annullera vid skiftstängning
 
-Du kan använda alternativet **Annullera vid skiftstängning** för att kräva att användare antingen måste slutföra eller annullera alla pausade transaktioner innan de har avslutar sina skift. Under operationen **Avsluta skift** uppmanar POS användare att visa eller annullera alla utestående pausade transaktioner.
+Du kan använda alternativet **Annullera vid skiftstängning** för att kräva att användare antingen måste slutföra eller annullera alla pausade transaktioner innan de har avslutar sina skift. Under åtgärden **Avsluta skift** uppmanar POS användare att visa eller annullera alla utestående pausade transaktioner.
 
 ## <a name="suspend-and-resume-a-transaction"></a>Pausa och återuppta en transaktion
 
 ### <a name="suspend-a-transaction"></a>Pausa en transaktion
 
-Användare som har behörighet och som har en skärmlayout med operationen **Pausa transaktion** kan pausa en transaktion så att den kan återställas senare eller i en annan kassa.
+Användare som har behörighet och som har en skärmlayout med åtgärden **Pausa transaktion** kan pausa en transaktion så att den kan återställas senare eller i en annan kassa.
 
 Transaktioner kan endast pausas om de **inte** innehåller följande typer av rader:
 
@@ -67,9 +67,9 @@ En pausad transaktion påverkar inte försäljningsinformation eller lagertillg�
 
 ### <a name="resume-a-suspended-transaction"></a>Återkalla en pausad transaktion
 
-Pausade transaktioner kan återkallas och återuppta i samma butik av alla användare som har tillräcklig behörighet och som även har en layout som innehåller operationen **återkalla transaktion**.
+Pausade transaktioner kan återkallas och återuppta i samma butik av alla användare som har tillräcklig behörighet och som även har en layout som innehåller åtgärden **återkalla transaktion**.
 
-För att snabbt och enkelt återkalla en pausad transaktion, skanna streckkoden på den utskrivna bilden medan du tittar på listan över transaktioner från operationen **återkalla transaktion**.
+För att snabbt och enkelt återkalla en pausad transaktion, skanna streckkoden på den utskrivna bilden medan du tittar på listan över transaktioner från åtgärden **återkalla transaktion**.
 
 ### <a name="considerations-for-offline-mode"></a>Att tänka på vid offlineläge
 
@@ -78,7 +78,7 @@ För att snabbt och enkelt återkalla en pausad transaktion, skanna streckkoden 
 
 ### <a name="void-a-suspended-transaction"></a>Annullera en pausad transaktion
 
-Du kan annullera pausade transaktioner antingen genom att återkalla transaktionen och sedan utföra operationen **Annullera transaktion**, eller genom att välja transaktionen i listan **återkalla transaktion** och välja **annullera** i appfältet. Alternativt kan butiken konfigureras för att uppmana användare att annullera pausade transaktioner när de har avslutat sina skift.
+Du kan annullera pausade transaktioner antingen genom att återkalla transaktionen och sedan utföra åtgärden **Annullera transaktion**, eller genom att välja transaktionen i listan **återkalla transaktion** och välja **annullera** i appfältet. Alternativt kan butiken konfigureras för att uppmana användare att annullera pausade transaktioner när de har avslutat sina skift.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

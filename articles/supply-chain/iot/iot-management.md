@@ -1,6 +1,6 @@
 ---
 title: Övervaka och hantera IoT-information
-description: I det här avsnittet beskrivs hur du övervakar och hanterar IoT-information.
+description: I denna artikel beskrivs hur du övervakar och hanterar IoT-information.
 author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e078f1895b44ca388b75f5cd3d19e0e8f7c36630
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a640b523adac619377e19d670f932d4d85cfb6a9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669752"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852430"
 ---
 # <a name="monitor-and-manage-iot-intelligence"></a>Övervaka och hantera IoT-information
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du övervakar och hanterar IoT-information.
+I denna artikel beskrivs hur du övervakar och hanterar IoT-information.
 
 ## <a name="monitor-scenarios-in-microsoft-dynamics-365-supply-chain-management"></a><a id="monitor-scenarios"></a>Övervaka scenarier i Microsoft Dynamics 365 Supply Chain Management
 
@@ -54,10 +54,10 @@ När ett scenario körs är följande ändringar förbjudna:
 
 ## <a name="simulation-options"></a>Simuleringsalternativ
 
-Du kan simulera fabriksdatorsignaler. Mer information finns i följande ämnen:
+Du kan simulera fabriksdatorsignaler. Mer information finns i följande artiklar:
 
 + [Anslut IoT DevKit AZ3166 till Azure IoT Hub](/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
-+ [Anslut Raspberryte PI online Simulator till Azure IoT-navet (Node.js)](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
++ [Anslut Raspberryte PI online Simulator till Azure IoT-hubben (Node.js)](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

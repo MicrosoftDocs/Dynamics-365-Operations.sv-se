@@ -1,6 +1,6 @@
 ---
 title: Hantering av förmåner – översikt
-description: I detta ämne finns en översikt över funktionen för förmånshantering i Dynamics 365 Human Resources.
+description: I denna artikel finns en översikt över funktionen för förmånshantering i Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 12/06/2021
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e53a68aed2e4b1e0b0d7797e7326e223c47443f4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687203"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901159"
 ---
 # <a name="benefits-management-overview"></a>Hantering av förmåner – översikt
 
@@ -44,7 +44,7 @@ Om du vill ha tillgång till demonstrationsdata måste du omdistribuera miljön 
 
 ## <a name="enable-benefits-management"></a>Aktivera hantering av förmåner
 
-Det här ämnet beskriver hur du aktiverar funktionerna i personal. Det förklarar också vilka befintliga funktioner i Personal som ersätts av Förmånshantering och vilka som inaktiveras när du har aktiverat förmånshanteringen.
+Den här artikeln beskriver hur du aktiverar funktionerna i personal. Det förklarar också vilka befintliga funktioner i Personal som ersätts av Förmånshantering och vilka som inaktiveras när du har aktiverat förmånshanteringen.
 
 > [!IMPORTANT]
 > När du har aktiverat hantering av förmåner i miljön **produktion** kan du inte inaktivera den. Vi rekommenderar att du aktiverar och testar förmånshantering i en miljö med **begränsat läge** innan du aktiverar den i en miljö för **produktion**. Det finns betydande skillnader mellan den tidigare förmånsfunktionen och nya fördelar för hanteringsfunktioner som kräver ytterligare inställningar och bör testas innan de kan placeras i produktionen.

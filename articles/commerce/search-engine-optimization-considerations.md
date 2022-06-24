@@ -1,6 +1,6 @@
 ---
 title: Språkinformation för sökmotoroptimering (SEO) för din webbplats
-description: Det här avsnittet handlar om sökmotorns SEO-information för din webbplats från utveckling till produktion.
+description: Denna artikel avhandlar sökmotornoptimering (SEO) för din webbplats från utveckling till produktion.
 author: psimolin
 ms.date: 05/25/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
-ms.openlocfilehash: 2f90581766dba3d3a671df52ec08339a1a0fd7dc
-ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
+ms.openlocfilehash: 6747df3c56fb05248210f78ebf2176a56ce78329
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "8806415"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896911"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>Språkinformation för sökmotoroptimering (SEO) för din webbplats
 
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om sökmotorns SEO-information för din webbplats från utveckling till produktion.
+Denna artikel avhandlar sökmotornoptimering (SEO) för din webbplats från utveckling till produktion.
 
 ## <a name="a-site-that-is-under-development"></a>En webbplats som är under utveckling
 

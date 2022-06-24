@@ -1,6 +1,6 @@
 ---
-title: Välja mellan Store Commerce och Cloud POS
-description: I det här avsnittet beskrivs viktiga skillnader mellan Store Commerce och Cloud POS och beskriver olika faktorer som återförsäljare som implementerar Dynamics 365 Commerce bör överväga att göra det bästa valet efter behov.
+title: Välja mellan Store Commerce och molnbaserad kassa
+description: I denna artikel beskrivs viktiga skillnader mellan Store Commerce och Cloud POS, samt olika faktorer som återförsäljare som implementerar Dynamics 365 Commerce bör överväga i syfte att välja optimalt efter just deras behov.
 author: jblucher
 ms.date: 04/21/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b62e1737bc9e3b9d9e25a7a88e693a9aece80776
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 26f6e94b13b3058ac42c4c7b83dcf7179bae18e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629300"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854016"
 ---
-# <a name="choose-between-store-commerce-and-cloud-pos"></a>Välja mellan Store Commerce och Cloud POS
+# <a name="choose-between-store-commerce-and-cloud-pos"></a>Välja mellan Store Commerce och molnbaserad kassa
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs viktiga skillnader mellan Store Commerce och Cloud POS och beskriver olika faktorer som återförsäljare som implementerar Dynamics 365 Commerce bör överväga att göra det bästa valet efter behov. Det ger implementerarna ytterligare bakgrund, tips och riktlinjer för de faktorer som bör de överväga när de distribuerar Dynamics 365 Commerce. Genom att granska och följa dessa riktlinjer som ett led i distributionsprocessen kan implementerare undvika problem som kan påverka användarnas tillfredsställelse eller prestanda.
+I denna artikel beskrivs viktiga skillnader mellan Store Commerce och Cloud POS, samt olika faktorer som återförsäljare som implementerar Dynamics 365 Commerce bör överväga i syfte att välja optimalt efter just deras behov. Det ger implementerarna ytterligare bakgrund, tips och riktlinjer för de faktorer som bör de överväga när de distribuerar Dynamics 365 Commerce. Genom att granska och följa dessa riktlinjer som ett led i distributionsprocessen kan implementerare undvika problem som kan påverka användarnas tillfredsställelse eller prestanda.
 
 ## <a name="insights"></a>Insikter
 
@@ -44,7 +44,7 @@ Commerce har stöd för följande kassaalternativ:
 I samtliga fall delar samma kassan (Store Commerce och CPOS) samma grundläggande programkod. Detta är viktigt av följande skäl:
 
 - Användargränssnittet (UI) är konsekvent, oavsett plattform eller formulärfaktor.
-- De flesta funktionerna är desamma, oavsett plattform eller formulärfaktor. Det finns emellertid några viktiga skillnader. Dessa skillnader anges i det här avsnittet.
+- De flesta funktionerna är desamma, oavsett plattform eller formulärfaktor. Det finns emellertid några viktiga skillnader. Dessa skillnader anges i denna artikel.
 - I varje butik kan kassavariationerna kombineras och köras samtidigt. För sina primära kassaapparater kan en återförsäljare exempelvis använda Store Commerce på datorer som kör Windows. Återförsäljaren kan emellertid komplettera dessa kassor med webbläsarbaserade terminaler eller mobila enheter.
 - Anpassningar och utbyggnader kan enkelt användas på plattformar och formulärfaktorer. Eftersom den grundläggande programkoden delas kan de flesta anpassningar implementeras en gång i stället för flera gånger.
 
@@ -71,7 +71,7 @@ Förutom en plattform och formulärfaktor måste detaljhandlare också välja et
 |----------------------------|---------------------|-------------------|-------------------|
 | Store Commerce för Windows | Moln eller RSSU       | Ja               | Ja               |
 | Store Commerce för Android | Moln eller RSSU       | Nej                | Ja               |
-| Store Commerce för iOS      | Moln eller RSSU       | Nej                | Nej                |
+| Store Commerce för iOS     | Moln eller RSSU       | Nej                | Nej                |
 | Cloud POS                  | Moln eller RSSU       | Nej                | Nej                |
 
 #### <a name="commerce-scale-unit"></a>Commerce Scale Unit
@@ -90,7 +90,7 @@ Store Commerce för Windows stödjer offlineläge. I offline-läge kan POS forts
 |----------------------------|----------------|---------------------|--------------------|
 | Store Commerce för Windows | Ja            | Ja                 | Ja                |
 | Store Commerce för Android | Nej             | Ja                 | Ja                |
-| Store Commerce för iOS      | Nej             | Nej                  | Ja                |
+| Store Commerce för iOS     | Nej             | Nej                  | Ja                |
 | Cloud POS                  | Nej             | Nej                  | Ja                |
 
 Mer information om maskinvarustationer finns [Konfiguration och installation av Retail-maskinvarustationer](retail-hardware-station-configuration-installation.md).

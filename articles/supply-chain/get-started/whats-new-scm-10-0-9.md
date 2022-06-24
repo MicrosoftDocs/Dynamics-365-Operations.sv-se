@@ -1,6 +1,6 @@
 ---
 title: Vad är nytt och ändrat i Dynamics 365 Supply Chain Management (10.0.9 april 2020)
-description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.9.
+description: Denna artikel innehåller en beskrivning av nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.9.
 author: kamaybac
 ms.date: 02/19/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: a1f1f83fbf4b7280aec579b17c96e8d9fc59e39bcea5d6d5d7366397cf8f2875
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 421f17402a2f3b37a9ccce9d747e2c0ec865ee39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773379"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854483"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Vad är nytt och ändrat i Dynamics 365 Supply Chain Management (10.0.9 april 2020)
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management förhandsversion 10.0.9. Den här versionen har ett versionsnummer för 10.0.383 och är tillgänglig enligt följande:
+Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management, förhandsversion 10.0.9. Den här versionen har ett versionsnummer för 10.0.383 och är tillgänglig enligt följande:
 
 - **Förhandsversion**: februari 2020
 - **Allmän tillgänglighet (självuppdatering):** mars 2020
@@ -33,7 +33,7 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
-Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. Vissa av dessa funktioner kan också ha inkluderats i en tidigare stegvis version, men inte annonserats i föregående avsnitt *Nyheter*, så vi lägger till dem här. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
+Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. Vissa av dessa funktioner kan också ha inkluderats i en tidigare stegvis version, men inte annonserats i föregående artikel *Nyheter*, varför vi lägger till dem här. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
 
 - [Avancerad belastningsuppbyggnad under en våg](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)<br> - Mer information finns i [Avancerad lastuppbyggnad under påfyllnad](../warehousing/advanced-load-building-during-wave.md) .
 
@@ -49,9 +49,9 @@ Den här versionen innehåller följande nya funktioner: Funktionstitlarna länk
 
 - [Direktleverans](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking)<br> - För mer information, se videon [planerad direktleverans](https://www.microsoft.com/videoplayer/embed/RE4f7LF).
 
-- Ytterligare integration av faktisk/nominell vikt [10.0.1](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1), [10.0.2](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2), [10.0.3](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3), [10.0.4](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4), [10.0.5](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5), [10.0.6](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6), [10.0.7](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7)<br> - Mer information finns i [Produktbearbetning med faktisk/nominell vikt med lagerstyrning](../warehousing/catch-weight-processing.md) och videon [Produktförbättringar med faktisk/nominell vikt](https://www.microsoft.com/videoplayer/embed/RE4jzx8).
+- Ytterligare integrering av faktisk/nominell vikt [10.0.1](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1), [10.0.2](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2), [10.0.3](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3), [10.0.4](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4), [10.0.5](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5), [10.0.6](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6), [10.0.7](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7)<br> - Mer information finns i [Produktbearbetning med faktisk/nominell vikt med lagerstyrning](../warehousing/catch-weight-processing.md) och videon [Produktförbättringar med faktisk/nominell vikt](https://www.microsoft.com/videoplayer/embed/RE4jzx8).
 
-- [Integration av anläggningstillgångar med livscykeln för tillgångshantering](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/fixed-assets-integration-asset-management-lifecycle)<br> - Mer information finns i [integrera tillgångshantering med anläggningstillgångar](../asset-management/integration-to-fixed-assets/fixed-asset-integration.md).
+- [Integrering av anläggningstillgångar med livscykeln för Tillgångshantering](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/fixed-assets-integration-asset-management-lifecycle)<br> - Mer information finns i [integrera Tillgångshantering med anläggningstillgångar](../asset-management/integration-to-fixed-assets/fixed-asset-integration.md).
 
 - [Flexibel dimensionsreservation på lagerställenivå](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation)<br> - För mer information [Flexibel reservationspolicy för dimension på distributionslagernivå](../warehousing/flexible-warehouse-level-dimension-reservation.md).
 
@@ -73,7 +73,7 @@ Den här versionen innehåller följande nya funktioner: Funktionstitlarna länk
 
 - [Parallell bekräftelse av planerade order](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - För mer information, se [Planerade order](../master-planning/planning-optimization/planned-order-firming.md) och videon [MRP-prestanda och användbarhetsförbättringar](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
 
-- [Planera optimering för distribution](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Mer information finns i [översikt för planeringsoptimering](../master-planning/planning-optimization/planning-optimization-overview.md).
+- [Planera optimering för distribution](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Mer information finns i [översikt för Planeringsoptimering](../master-planning/planning-optimization/planning-optimization-overview.md).
 
 - [Förbättringar av inköpsavtal](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements)<br> - Mer information finns i [Inköpsavtal](../procurement/purchase-agreements.md).
 
@@ -87,7 +87,7 @@ Den här versionen innehåller följande nya funktioner: Funktionstitlarna länk
 
 - [Budgivning av leverantör – frågeställningar från leverantörer och sammanfattade svar](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/vendor-bidding-questions-vendors-summarized-responses)
 
-- [Visuell planering av arbetsorder i tillgångshantering](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/visual-scheduling-work-orders-asset-management)<br> - Mer information finns i [arbeta med schemalagda arbetsorder med hjälp av ett Gantt-diagram](../asset-management/work-order-scheduling/schedule-work-orders.md#gantt).
+- [Visuell planering av arbetsorder i Tillgångshantering](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/visual-scheduling-work-orders-asset-management)<br> - Mer information finns i [arbeta med schemalagda arbetsorder med hjälp av ett Gantt-diagram](../asset-management/work-order-scheduling/schedule-work-orders.md#gantt).
 
 - [Artikelplacering för lagerställe](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)<br> - Mer information finns i [Artikelplacering för distributionslager](../warehousing/warehouse-slotting.md).
 
@@ -113,12 +113,12 @@ Se [Dynamics 365: 2020 utgivningsvåg 1 plan](/dynamics365-release-plan/2020wave
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Borttagna och inaktuella funktioner för Supply Chain Management
 
-De [borttagna eller föråldrade funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) i ämnet beskriver funktioner som har schemalagts eller är planerade att tas bort eller inaktuellt för Supply Chain Management.
+Artikeln [Borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver funktioner som har tagits bort eller planeras tas bort eller göras inaktuella för Supply Chain Management.
 
 - En *borttagen* funktion är inte längre tillgänglig i produkten.
 - En *borttagen* funktion är inte i aktiv utveckling och kan tas bort i en kommande uppdatering.
 
-Innan någon funktion tas bort från produkten visas understrykningsmeddelandet i ämnet [borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före avhämtningen.
+Innan någon funktion tas bort från produkten kommer meddelandet om inaktualitet att meddelas i artikeln [Borttagna eller inaktuella funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före borttagning.
 
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
 
