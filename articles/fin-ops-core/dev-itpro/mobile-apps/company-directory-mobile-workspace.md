@@ -1,6 +1,6 @@
 ---
-title: Mobila arbetsytan för företagskatalog
-description: Det här avsnittet innehåller information om mobila arbetsytan för företagskatalog som låter användarna visa och kontakta andra medarbetare i din organisation.
+title: Mobil arbetsyta för företagskatalog
+description: Den här artikeln innehåller information om mobila arbetsytan för företagskatalog som låter användarna visa och kontakta andra medarbetare i din organisation.
 author: jcart1106
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b754e46f194f60cc70d02367d4cca2a382821191
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 8e8e6adc2c72b6e3ab567723ac01055ea8d7292e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811551"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868739"
 ---
-# <a name="company-directory-mobile-workspace"></a>Mobila arbetsytan för företagskatalog
+# <a name="company-directory-mobile-workspace"></a>Mobil arbetsyta för företagskatalog
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Det här avsnittet innehåller information om den mobila arbetsytan för **företagskatalog**. Den här arbetsytan låter användare visa och kontakta andra medarbetare i din organisation.
+Den här artikeln innehåller information om den mobila arbetsytan för **företagskatalog**. Den här arbetsytan låter användare visa och kontakta andra medarbetare i din organisation.
 
 Denna mobila arbetsyta kan användas med mobilappen Finance and Operations.
 

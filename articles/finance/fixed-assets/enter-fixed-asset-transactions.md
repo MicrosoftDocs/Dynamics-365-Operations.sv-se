@@ -1,6 +1,6 @@
 ---
 title: Alternativ för transaktion för anläggningstillgång
-description: Det här avsnittet innehåller en beskrivning av andra tillgängliga metoder för att skapa transaktioner för anläggningstillgångar.
+description: Den här artikeln innehåller en beskrivning av andra tillgängliga metoder för att skapa transaktioner för anläggningstillgångar.
 author: moaamer
 ms.date: 08/10/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 507e263e7267fe96cdf9ed78a84924839c2de982
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 402679b6f1003f14f7e277a326784edaaea719d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719761"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883370"
 ---
 # <a name="fixed-asset-transaction-options"></a>Alternativ för transaktion för anläggningstillgång
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en beskrivning av andra tillgängliga metoder för att skapa transaktioner för anläggningstillgångar.
+Den här artikeln innehåller en beskrivning av andra tillgängliga metoder för att skapa transaktioner för anläggningstillgångar.
 
 Du kan ställa in Anläggningstillgångar för integrering med Leverantörsreskontra, Kundreskontra, Anskaffning och källa, samt Redovisning. Du kan även överföra artiklar i Lager till Anläggningstillgångar för intern användning.
 

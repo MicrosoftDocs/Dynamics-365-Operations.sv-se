@@ -1,6 +1,6 @@
 ---
 title: Översikt över mallar och layouter
-description: I det här avsnittet beskrivs mallar och layouter i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs mallar och layouter i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 12/12/2019
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 888f5295dce601d4ce5d823f14169bbcdfe48d6b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: adf1585e418ca2d09065db03de72cb1bbfb3e614
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986104"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844630"
 ---
 # <a name="templates-and-layouts-overview"></a>Översikt över mallar och layouter
 
@@ -70,7 +70,7 @@ Om du vill börja använda mallar [arbeta med mallar](work-with-templates.md).
 
 ## <a name="layouts"></a>Layouter
 
-Layouter är nästa nivå i sidmodellens hierarki, under mallar. En mall definierar alla moduler som är tillåtna för en sida, men en layout är ett explicit urval och arrangemang av moduler. Sidor är nästa nivå i sidmodellens hierarki, under layouter. De definierar det lokaliserade innehållet för modulerna som väljs i layouten.
+Layouter är nästa nivå i sidmodellens hierarki, under mallar. En mall definierar alla moduler som är tillåtna för en sida, men en layout är ett explicit urval och arrangemang av moduler. Sidor är nästa nivå i sidmodellens hierarki, under layouter. De definierar det lokalanpassade innehållet för modulerna som väljs i layouten.
 
 Följande exempel bygger på mallen från föregående avsnitt och visar hur en grundläggande layout kan konfigureras:
 

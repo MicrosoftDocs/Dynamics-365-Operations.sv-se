@@ -1,6 +1,6 @@
 ---
 title: Diagnostyper för avvikelser
-description: I det här ämnet beskrivs hur du använder och skapar diagnostyper som kan användas med avvikelser.
+description: I denna artikel beskrivs hur du använder och skapar diagnostyper som kan användas med avvikelser.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edaa3a8b5c6446f039f33589166d832dcd9d0b9a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 87b7a051f807c9faab3169d2672d47f663892225
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580946"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852459"
 ---
 # <a name="diagnostic-types-for-nonconformances"></a>Diagnostyper för avvikelser
 
 [!include [banner](../includes/banner.md)]
 
-I det här ämnet beskrivs hur du använder och skapar diagnostyper som kan användas med avvikelser.
+I denna artikel beskrivs hur du använder och skapar diagnostyper som kan användas med avvikelser.
 
 Du kan använda sidan **Diagnostyper** för att definiera klassificeringen av diagnosåtgärder. När du sedan skapar en korrigering för en avvikelse väljer du en diagnos. En korrigering specificerar vilken typ av diagnosåtgärd som ska vidtas vid en godkänd avvikelse, och vem som ska genomföra åtgärden. Även det begärda slutförandedatumet och det planerade slutförandedatumet anges.
 

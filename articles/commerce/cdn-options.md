@@ -1,6 +1,6 @@
 ---
 title: Implementeringsalternativ för Content Delivery Network
-description: Detta ämne granskar de olika alternativen för implementering av nätverk för innehållsleverans (CDN) som kan användas med with Microsoft Dynamics 365 Commerce miljöer. Dessa alternativ omfattar inbyggda, Commerce-försedd instanser av Azure Front Door och kundägda instanser av Azure Front Door.
+description: Denna artikel granskar de olika alternativen för implementering av nätverk för innehållsleverans (CDN) som kan användas med Microsoft Dynamics 365 Commerce-miljöer. Dessa alternativ omfattar inbyggda, Commerce-försedd instanser av Azure Front Door och kundägda instanser av Azure Front Door.
 author: BrianShook
 ms.date: 07/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 944123f3afe1c869c262da3997a73d8c60bbc366
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a63751d42ab98610904191f1c09794b2311b0189
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692735"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884427"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Implementeringsalternativ för Content Delivery Network
 
 [!include [banner](includes/banner.md)]
 
-Detta ämne granskar de olika alternativen för implementering av nätverk för innehållsleverans (CDN) som kan användas med with Microsoft Dynamics 365 Commerce miljöer. Dessa alternativ omfattar inbyggda, Commerce-försedd instanser av Azure Front Door och kundägda instanser av Azure Front Door.
+Denna artikel granskar de olika alternativen för implementering av nätverk för innehållsleverans (CDN) som kan användas med Microsoft Dynamics 365 Commerce-miljöer. Dessa alternativ omfattar inbyggda, Commerce-försedd instanser av Azure Front Door och kundägda instanser av Azure Front Door.
 
 Commerce-kunder har flera alternativ när de överväger vilken CDN-tjänst som ska användas med sin Commerce-miljö. Commerce släpps med grundläggande Azure Front Door support som omfattar grundläggande krav på värdskap och anpassade domänkrav. För företag som vill ha mer kontroll och specifika säkerhetsförmågor, till exempel en brandvägg för webbprogram (WAF), är det bästa alternativet att använda antingen en kundägd instans av Azure Front Door eller en extern CDN-tjänst.
 
@@ -41,7 +41,7 @@ Följande bild ger en översikt över ändringarna i Commerce-arkitektur.
 
 ![Översikt över Commerce-arkitekturen.](media/Commerce_CDN-Option_ComparisonModels.png)
 
-Mer information om hur du ställer in en instans av Azure Front Door för din Commerce-webbplats finns i [Lägg till CDN-support](add-cdn-support.md).
+Mer information om hur du konfigurerar en instans av Azure Front Door för din Commerce-webbplats finns i [Lägg till CDN-support](add-cdn-support.md).
 
 ## <a name="use-the-commerce-provided-azure-front-door-instance"></a>Använd Commerce som tillhandahålls av Azure Front Door-instansen
 
@@ -61,7 +61,7 @@ Följande tabell visar fördelar och nackdelar med att använda en kundägd inst
 
 | Fördelar | Nackdelar |
 |------|------|
-| <ul><li>Inställningarna är säkra och enkla att hantera.</li><li>Den infrastruktur som har Azure-värd är skalbar, säker och tillförlitlig.</li><li>Instansen tillåter WAF-integration och finregelkontroller för fingradig säkerhet som finjusteras specifikt för din site.</li><li>Instansen tillåter finare kontroll av SSL-certifikat (både kundägda och Azure Front Door-hanterade) och domänlänkning.</li><li>Instansen erbjuder en apex-domänlösning om den kopplas direkt till Azure DNS.</li><li>Telemeter och notifieringar visas.</li><li>SSL-certifikatet kräver en inställning vid ett tillfälle och förnyas automatiskt.</li></ul> | <ul><li>Instansen är självstyrd.</li><li>Den initiala kunskaperna som behövs.</li></ul> |
+| <ul><li>Inställningarna är säkra och enkla att hantera.</li><li>Den infrastruktur som har Azure-värd är skalbar, säker och tillförlitlig.</li><li>Instansen tillåter WAF-integrering och finregelkontroller för fingradig säkerhet som finjusteras specifikt för din site.</li><li>Instansen tillåter finare kontroll av SSL-certifikat (både kundägda och Azure Front Door-hanterade) och domänlänkning.</li><li>Instansen erbjuder en apex-domänlösning om den kopplas direkt till Azure DNS.</li><li>Telemeter och notifieringar visas.</li><li>SSL-certifikatet kräver en inställning vid ett tillfälle och förnyas automatiskt.</li></ul> | <ul><li>Instansen är självstyrd.</li><li>Den initiala kunskaperna som behövs.</li></ul> |
 
 I följande bild visas en Commerce-infrastruktur som omfattar en kundägd Azure Front Door-instans.
 

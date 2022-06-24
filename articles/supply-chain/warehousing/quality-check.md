@@ -1,6 +1,6 @@
 ---
 title: Kvalitetskontroll
-description: Det här ämnet innehåller information om funktionen för kvalitetskontroll. Med den här funktionen kan lagerarbetarna göra snabba stickprov för att kontrollera kvaliteten medan de tar emot artiklar på inlastningsplatsen.
+description: Denna artikel innehåller information om funktionen för kvalitetskontroll. Med den här funktionen kan lagerarbetarna göra snabba stickprov för att kontrollera kvaliteten medan de tar emot artiklar på inlastningsplatsen.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: c5a4b380529ca8cb9c3474b363c7f9ba4220ff2b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ceb01205edc269690fda306bc90f465dbccc563b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677994"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855069"
 ---
 # <a name="quality-check"></a>Kvalitetskontroll
 
@@ -41,11 +41,11 @@ Den här processen kan också ställas in så att alla ID-nummer omedelbart omdi
 
 ## <a name="turn-the-quality-check-feature-on-or-off"></a>Aktivera eller inaktivera funktionen kvalitetskontroll
 
-De funktioner som beskrivs i det här avsnittet måste funktionen *Kvalitetskontroll* vara inaktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Kvalitetskontroll* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+För att använda de funktioner som beskrivs i denna artikel måste funktionen *Kvalitetskontroll* vara aktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Kvalitetskontroll* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Ställ in funktionen för det här exempelscenariot
 
-Det här avsnittet innehåller riktlinjer och ett exempel som visar hur du ställer in funktionen *kvalitetskontroll* och förbereder exempeldata för scenariot som ges senare i det här avsnittet.
+Det här avsnittet innehåller riktlinjer och ett exempel som visar hur du konfigurerar funktionen *Kvalitetskontroll* och förbereder exempeldata för scenariot som ges senare i denna artikel.
 
 ### <a name="make-sample-data-available"></a>Gör exempeldata tillgängliga
 
@@ -98,7 +98,7 @@ Arbetsklasser används för att styra och/eller begränsa den typ av arbetsorder
 
     - **Arbetsordertyp:** *kvalitet i kvalitetskontroll*
 
-        Välj den typ av arbetsorder som skapas av arbetsklassen. Välj alltid kvalitet under kvalitetskontroll när du ställer in *kvalitet i kvalitetskontroll*.
+        Välj den typ av arbetsorder som skapas av arbetsklassen. Välj alltid kvalitet under kvalitetskontroll när du konfigurerar *kvalitet i kvalitetskontroll*.
 
 1. På snabbfliken **giltiga platstyper** lämnar du fältet **platstyp** tomt.
 
@@ -198,7 +198,7 @@ Placering av direktiven är regler som hjälper till att identifiera och sätta 
     - **Till kvantitet:** *1000000*
 
 1. I åtgärdsfönstret **Spara** för att spara den nya raden och gör snabbfliken **Platsdirektivåtgärder** tillgänglig.
-1. Medan den nya raden fortfarande är markerad på snabbfliken **Rader** välj **Ny** på snabbfliken **Platsdirektivåtgärder** för att lägga till en rad i rutnätet där, så att du kan ställa in en åtgärd för raden.
+1. Medan den nya raden fortfarande är markerad på snabbfliken **Rader** välj **Ny** på snabbfliken **Platsdirektivåtgärder** för att lägga till en rad i rutnätet där, så att du kan konfigurera en åtgärd för raden.
 1. I nya rader, ange fältet **Namn** till *Kvalitet*. Acceptera standardvärden för kvarvarande fält.
 1. I åtgärdsfönstret välj **Spara** så att knappen **Redigera fråga** i snabbfliken **Platsdirektivåtgärder** är tillgänglig.
 1. Medan raden som du just har lagt till fortfarande är markerad på snabbfliken **Platsdirektivåtgärder** välj **Redigera fråga** för att öppna en dialogruta där du kan redigera frågan för åtgärden.
@@ -270,7 +270,7 @@ Konfigurera ett menyalternativ så att funktionen för **kvalitetskontroll** kan
 
 ## <a name="example-scenario"></a><a name="example-scenario"></a>Exempelscenario
 
-När du har gjort alla exempel data som du redan har beskrivit och ställt in dem kan du arbeta i det här scenariot för att testa funktionen *Kvalitetskontroll*. De värden som visas i det här scenariot förutsätter att du arbetar med standard demodata, att du har valt den juridiska personen **USMF** och att du har förberett exempelposterna som beskrivs tidigare i det här avsnittet. Det här scenariot fungerar även som ett exempel som visar hur funktionen kan användas i en produktionsinställning.
+När du har gjort alla exempel data som du redan har beskrivit och ställt in dem kan du arbeta i det här scenariot för att testa funktionen *Kvalitetskontroll*. De värden som visas i det här scenariot förutsätter att du arbetar med standarddemodata, att du har valt den juridiska personen **USMF** och att du har förberett exempelposterna som beskrivs tidigare i denna artikel. Det här scenariot fungerar även som ett exempel som visar hur funktionen kan användas i en produktionsinställning.
 
 ### <a name="create-a-purchase-order"></a>Skapa en inköpsorder
 
@@ -357,7 +357,7 @@ I det här scenariot avvisas lastpall 2.
 
 Du har nu slutfört kvalitetskontrollen och skapat en kvalitetsorder för den avvisade lastpallen. Om du vill visa den order som skapats gå till **lagerhantering \> periodiska uppgifter \> kvalitetshantering \> kvalitetsorder**.
 
-Kvalitetsordertestning kan nu bearbetas. Kvalitetstestning beskrivs inte i det här avsnittet.
+Kvalitetsordertestning kan nu bearbetas. Kvalitetstestning beskrivs inte i denna artikel.
 
 Mer information om kvalitetshantering finns i [Översikt över kvalitetshantering](../inventory/enable-quality-management.md).
 

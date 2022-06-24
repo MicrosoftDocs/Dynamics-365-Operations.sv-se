@@ -1,6 +1,6 @@
 ---
 title: Frisläpp strukturliste- och formelrader till lagerstället
-description: Det här avsnittet beskriver processen för att frisläppa råmaterial för strukturlisterader och formelrader till lagret.
+description: Denna artikel beskriver processen för att frisläppa råmaterial för strukturlisterader och formelrader till lagret.
 author: johanhoffmann
 ms.date: 10/30/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c9956290ce8f90f04bc144d710ad35b5a0243e3898a8f3e75692b1a9da506149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53e3a943dbd6cf982101f42ed8f94b7e0f46597c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731233"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860621"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frisläpp strukturliste- och formelrader till lagerstället
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver processen för att frisläppa råmaterial för strukturlisterader och formelrader till lagret. När du frisläpper en strukturlista eller formelrad till lagret fastställer systemet först om material redan finns på platsen för produktionsinleverans i fabriken där materialet ska förbrukas i produktionsprocessen.
+Denna artikel beskriver processen för att frisläppa råmaterial för strukturlisterader och formelrader till lagret. När du frisläpper en strukturlista eller formelrad till lagret fastställer systemet först om material redan finns på platsen för produktionsinleverans i fabriken där materialet ska förbrukas i produktionsprocessen.
 
 - Om materialet är tillgängligt på platsen för produktionsinleverans hämtas det från den platsen omedelbart efter att signal ges för frisläppning av material till lagret.
 - Om materialet är inte tillgänglig på platsen för produktionsinleverans indikerar materialfrisläppningen att materialet måste flyttas från platserna i lagerstället till platsen för produktionsinleverans. Materialet flyttas via lagerställearbete för plockning av råmaterial. Därför måste lagerprocesser för råmaterialplockning vara konfigurerad. Mer information finns i [Översikt över lagerpåfyllnad](../warehousing/replenishment.md) och [Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv](../warehousing/control-warehouse-location-directives.md).
@@ -63,20 +63,20 @@ Följande bild visar en produktionsorder som har två jobb, 10 och 20, som täck
 
 ![Exempel på en produktions med två batchjobb.](media/bach-job-setup.PNG)
 
-## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Frsiläppa material per operationsnummer eller i förhållande till mängden färdiga varor
+## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Frsiläppa material per åtgärdsnummer eller i förhållande till mängden färdiga varor
 
 Om du frisläpper material med hjälp av parameterinställningen **Vid frisläppning av produktionsorder**, när du gör en manuell frisläppning har du två alternativ för att styra materialfrisläppningen:
 
-- Frisläpp material per operationsnummer.
+- Frisläpp material per åtgärdsnummer.
 - Frisläpp material i förhållande till mängden färdiga varor.
 
-### <a name="release-material-per-operation-number"></a>Frisläpp material per operationsnummer
+### <a name="release-material-per-operation-number"></a>Frisläpp material per åtgärdsnummer
 
 För att kontrollera de åtgärder som materialet ska frisläppas till, används sidan **Frisläpp till lagerställe**.
 
-- Välj **produktionskontroll**\>**tillverkningsorder**\>**alla produktionsorder**, välj en produktionsorder och klicka sedan på fliken **lagerställe**, välj **frisläpp till lagerställe**. Använd sedan **Från oper.nr.** och fälten **Till oper.nr.** för att ange intervallet av operationsnummer.
+- Välj **produktionskontroll**\>**tillverkningsorder**\>**alla produktionsorder**, välj en produktionsorder och klicka sedan på fliken **lagerställe**, välj **frisläpp till lagerställe**. Använd sedan **Från oper.nr.** och fälten **Till oper.nr.** för att ange intervallet av åtgärdsnummer.
 
-Följande bild visar en produktionsorder som använder två åtgärder 10 och 20. I det här exemplet begränsar du frisläppning till operation 10, endast material M9203 kommer att frisläppas.
+Följande bild visar en produktionsorder som använder två åtgärder 10 och 20. I det här exemplet begränsar du frisläppning till åtgärd 10, endast material M9203 kommer att frisläppas.
 
 ![Exempel på frisläppning av material per åtgärdsnummer.](media/two-operations.PNG)
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurera rollen för frånvarochefen
-description: Det här avsnittet innehåller information om hur du ställer in rollen som frånvaroansvarig för hantering av tjänstledighet för medarbetare.
+description: Den här artikeln innehåller information om hur du ställer in rollen som frånvaroansvarig för hantering av tjänstledighet för medarbetare.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9e7865a0bb33944c803c628f94371a4c75cc38bd
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 40f9607fb6fc16b96373141d8d2610538e3fdec7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693043"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886114"
 ---
 # <a name="configure-the-absence-manager-role"></a>Konfigurera rollen för frånvarochefen
 
 >[!Important]
->Funktionen som anges i det här avsnittet är för närvarande tillgänglig för kunder med fristående Dynamics 365 Human Resources. Vissa eller alla funktionerna kommer att vara tillgängliga i en kommande version av Finance-infrastrukturen efter Finance version 10.0.26.
+>Funktionen som anges i den här artikeln är för närvarande tillgänglig för kunder med fristående Dynamics 365 Human Resources. Vissa eller alla funktionerna kommer att vara tillgängliga i en kommande version av Finance-infrastrukturen efter Finance version 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

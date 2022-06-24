@@ -1,6 +1,6 @@
 ---
 title: Identifiera och lösa konflikter vid ansvarsfördelning
-description: Det här avsnittet förklarar hur du identifierar och löser konflikter vid ansvarsfördelning.
+description: Den här artikeln förklarar hur du identifierar och löser konflikter vid ansvarsfördelning.
 author: peakerbl
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0638699c0e569bbe67024a87d6c55729642557cb085ee899aa98aa0022b12840
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd36db5df2b6871d410bb1feaae825909ec9b3ff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748322"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883489"
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Identifiera och lösa konflikter vid ansvarsfördelning
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet förklarar hur du identifierar och löser konflikter vid ansvarsfördelning. Du kan ställa in regler för att separera uppgifter som måste utföras av andra användare. Detta koncept kallas ansvarsfördelning. När definitionen av en säkerhetsroll eller rolltilldelningarna av en användare bryter mot reglerna loggas konflikten. Alla konflikter måste lösas av administratören. Slutför proceduren nedan för att identifiera och lösa konflikter.
+Den här artikeln förklarar hur du identifierar och löser konflikter vid ansvarsfördelning. Du kan ställa in regler för att separera uppgifter som måste utföras av andra användare. Detta koncept kallas ansvarsfördelning. När definitionen av en säkerhetsroll eller rolltilldelningarna av en användare bryter mot reglerna loggas konflikten. Alla konflikter måste lösas av administratören. Slutför proceduren nedan för att identifiera och lösa konflikter.
 
 När en regel har lagts till kontrollerar du att alla befintliga roller är kompatibla. 
 

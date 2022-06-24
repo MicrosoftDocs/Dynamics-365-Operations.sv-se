@@ -1,6 +1,6 @@
 ---
 title: Underhållsarbetare och arbetargrupper
-description: I det här avsnittet beskrivs hur du ställer in underhållsarbetare och arbetargrupper i tillgångshantering.
+description: I denna artikel förklaras begreppen underhållsarbetare och arbetargrupper inom anläggningstillgångar.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e976a28349a4bc7a371d23eb4df724e0ffd36a0553aec2deeb2ff07d0a63579
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a24c880ee76af1490824aef07976b998d9225d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750134"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860911"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Underhållsarbetare och arbetargrupper
 
@@ -28,14 +28,14 @@ ms.locfileid: "6750134"
 
  
 
-I det här avsnittet beskrivs hur du ställer in underhållsarbetare och arbetargrupper i tillgångshantering. I tillgångshantering kan du ansluta underhållsarbetare till funktionsplatser. (Mer information om funktionsplatser finns i [skapa funktionsplatser](../functional-locations/create-functional-locations.md).) Den här funktionen kan vara användbar om du till exempel schemalägger ett underhållsjobb på en dator som finns i funktionsplats 01 och du vill allokera underhållsarbetare från samma plats för att utföra jobbet.
+I denna artikel förklaras begreppen underhållsarbetare och arbetargrupper inom anläggningstillgångar. I Tillgångshantering kan du ansluta underhållsarbetare till funktionsplatser. (Mer information om funktionsplatser finns i [skapa funktionsplatser](../functional-locations/create-functional-locations.md).) Den här funktionen kan vara användbar om du till exempel schemalägger ett underhållsjobb på en dator som finns i funktionsplats 01 och du vill allokera underhållsarbetare från samma plats för att utföra jobbet.
 
-Du kan också skapa underhållsarbetargrupper och associera underhållsarbetare med dem. Den här funktionen är användbar när du gör enkla arbetsorderplaneringar och du vill planera en grupp av underhållsarbetare på en arbetsorder. Du kan använda underhållsarbetare och underhållsarbetsgrupper för att ställa in önskade underhållsarbetare och ansvariga underhållsarbetare. 
+Du kan också skapa underhållsarbetargrupper och associera underhållsarbetare med dem. Den här funktionen är användbar när du gör enkla arbetsorderplaneringar och du vill planera en grupp av underhållsarbetare på en arbetsorder. Du kan använda underhållsarbetare och underhållsarbetsgrupper för att konfigurera önskade underhållsarbetare och ansvariga underhållsarbetare. 
 
 
 ## <a name="create-workers"></a>Skapa arbetare
 
-1. Välj **tillgångshantering** \> **inställning** \> **arbetare** \> **arbetare**.
+1. Välj **Tillgångshantering** \> **inställning** \> **arbetare** \> **arbetare**.
 2. Välj **Ny** om du vill lägga till en arbetare till listan.
 3. I fältet **arbetare** väljer du arbetaren.
 4. Ange alternativet **aktiva** till **ja** för att schemalägga arbetaren på arbetsorder.
@@ -53,7 +53,7 @@ Du kan också skapa underhållsarbetargrupper och associera underhållsarbetare 
 
 ## <a name="create-worker-groups"></a>Skapa arbetargrupper
 
-1. Välj **tillgångshantering** \> **inställning** \> **arbetare** \> **underhållsarbetargrupper**.
+1. Välj **Tillgångshantering** \> **inställning** \> **arbetare** \> **underhållsarbetargrupper**.
 2. Välj **Ny** om du vill lägga till en arbetargrupp till listan.
 3. I fältet **underhållsarbetargrupp** anger du ett grupp-ID.
 4. Ange sedan ett namn i fältet **Namn**.

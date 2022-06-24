@@ -1,6 +1,6 @@
 ---
-title: Registrera artiklar för en artikel som är aktiverad för avancerad distributionslagerhantering med hjälp av en artikelinförseljournal
-description: Det här ämnet presenterar ett scenario som visar hur du registrerar artiklar via artikelinförseljournalen när du använder avancerade processer för lagerstyrning.
+title: Registrera artiklar för en artikel som är aktiverad för avancerad lagerstyrning med hjälp av en artikelinförseljournal
+description: Denna artikel presenterar ett scenario som visar hur du registrerar artiklar via artikelinförselsjournalen när du använder avancerade processer för lagerstyrning.
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -14,22 +14,22 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e753897d1e21ffebbcbfac48abab4b0549c3553f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ac4a681484f0cd843ccd73633040f0fa0be0475e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565265"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863633"
 ---
-# <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrera artiklar för en artikel som är aktiverad för avancerad distributionslagerhantering med hjälp av en artikelinförseljournal
+# <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrera artiklar för en artikel som är aktiverad för avancerad lagerstyrning med hjälp av en artikelinförseljournal
 
 [!include [banner](../../includes/banner.md)]
 
-Det här ämnet presenterar ett scenario som visar hur du registrerar artiklar via artikelinförseljournalen när du använder avancerade processer för lagerstyrning. Detta görs vanligtvis av en inleveransansvarig.
+Denna artikel presenterar ett scenario som visar hur du registrerar artiklar via artikelinförselsjournalen när du använder avancerade processer för lagerstyrning. Detta görs vanligtvis av en inleveransansvarig.
 
 ## <a name="enable-sample-data"></a>Aktivera exempeldata
 
-Om du vill gå igenom det här scenariot med hjälp av de exempelposter och värden som anges i det här avsnittet måste du använda ett system där standard demodata är installerad och du måste välja den juridiska personen *USMF* innan du börjar.
+Om du vill gå igenom det här scenariot med hjälp av de exempelposter och värden som anges i denna artikel måste du använda ett system där standard-demodata finns installerat, och du måste även välja den juridiska personen *USMF* innan du börjar.
 
 Du kan istället arbeta dig igenom det här scenariot genom att använda värderingsvärden från dina egna data under förutsättning att du har följande tillgängliga data:
 

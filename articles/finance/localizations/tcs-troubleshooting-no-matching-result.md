@@ -1,5 +1,5 @@
 ---
-title: Inga matchande resultat inte hittades
+title: Det gick inte att hitta matchande resultat
 description: I det här ämnet beskriver hur du felsöker felet "Inga matchande resultat inte hittades" i beräkningstjänsten för moms.
 author: hangwan
 ms.date: 03/25/2022
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: c1a343b0b74645d40b0a2582749968cc0a56afd7
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: d3bbc76741fdd018d1b2987538b8de7f6d92ee53
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645441"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845156"
 ---
-# <a name="no-matching-result-could-be-found"></a>Inga matchande resultat inte hittades
+# <a name="no-matching-result-could-be-found"></a>Det gick inte att hitta matchande resultat
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet förklarar de felsökningssteg som du kan vidta om du får en "Inga matchande resultat inte hittades" i beräkningstjänsten för moms.
+Den här artikeln förklarar de felsökningssteg som du kan vidta om du får en "Inga matchande resultat inte hittades" i beräkningstjänsten för moms.
 
 ## <a name="symptom"></a>Symptom
 

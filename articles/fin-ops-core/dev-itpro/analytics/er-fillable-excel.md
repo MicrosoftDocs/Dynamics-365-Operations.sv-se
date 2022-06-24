@@ -1,6 +1,6 @@
 ---
 title: Skapa en konfiguration för att generera dokument i Excel-format
-description: Det här avsnittet beskriver hur du utformar ett elektroniskt rapporteringsformat (ER) för att fylla i en Excel-mall och sedan generera utgående dokument i Excelformat.
+description: Den här artikeln beskriver hur du utformar ett elektroniskt rapporteringsformat (ER) för att fylla i en Excel-mall och sedan generera utgående dokument i Excelformat.
 author: NickSelin
 ms.date: 05/09/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 4660aaf438ee091eed30387d984746ac2c3b4bd7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811432"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854826"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Skapa en konfiguration för att generera dokument i Excel-format
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811432"
 
 Du kan utforma en formatkonfiguration [elektronisk rapportering (ER)](general-electronic-reporting.md) som har en ER-formatkomponent som du kan konfigurera för att generera ett utgående dokument i ett Microsoft Excel arbetsboksformat. Specifika komponenter i ER-format måste användas för detta syfte.
 
-Om du vill veta mer om den här funktionen följer du stegen i avsnittet [utforma en konfiguration för generering av rapporter i OpenXML-format](tasks/er-design-reports-openxml-2016-11.md).
+Om du vill veta mer om den här funktionen följer du stegen i avsnittet [utforma en konfiguration för generering av rapporter i OPENXML-format](tasks/er-design-reports-openxml-2016-11.md).
 
 ## <a name="add-a-new-er-format"></a>Lägg till ett nytt ER-format
 

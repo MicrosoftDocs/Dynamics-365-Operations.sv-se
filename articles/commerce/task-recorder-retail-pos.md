@@ -1,6 +1,6 @@
 ---
 title: Uppgiftsinspelare och hjälp för Retail Modern POS (MPOS) och molnbaserad kassa
-description: Det här avsnittet beskriver hur du använder uppgiftsinspelaren i Retail Modern POS och molnbaserad kassa.
+description: Denna artikel beskriver hur du använder uppgiftsinspelaren i Retail Modern POS och molnbaserad kassa.
 author: mugunthanm
 ms.date: 06/19/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aedf18ef8b3d7266f3e5c7acd676241f9ec8b900f061f5363cd8d581062e83ed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f9f3e17a6c67dc1cc1d4ba423ce258f2ed1d1ec0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730765"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847610"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Uppgiftsinspelare och hjälp för Retail Modern POS (MPOS) och molnbaserad kassa
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver hur du använder uppgiftsinspelaren i Retail Modern POS och molnbaserad kassa.
+Denna artikel beskriver hur du använder uppgiftsinspelaren i Retail Modern POS och molnbaserad kassa.
 
 ## <a name="overview"></a>Översikt
 
@@ -139,7 +139,7 @@ Om du vill visa dina egna anpassade uppgiftsinspelningar i hjälpfönstret för 
 
 [![Knappen Hjälp.](./media/help.jpg)](./media/help.jpg)
 
-När du klickar på en uppgiftsguide i sökresultaten kan du antingen se stegen som ett hjälpavsnitt eller exportera stegen till ett Word-dokument.
+När du klickar på en uppgiftsguide i sökresultaten kan du antingen se stegen som en hjälpartikel eller exportera stegen till ett Word-dokument.
 
 > [!NOTE]
 > Hjälp i Retail Modern POS och Cloud POS visar inte aktivitetsguiderna i enlighet med det formulär du använder eller den åtgärd du utför. Skriv in processnamnet i sökrutan och klicka på **Sök**.

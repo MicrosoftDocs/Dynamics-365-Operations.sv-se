@@ -1,6 +1,6 @@
 ---
 title: Frisläppa produktstrukturer
-description: I det här avsnittet beskrivs hur du kan frigöra kompletta produktstrukturer, förutom att frigöra produkter tillsammans med deras tekniska versioner. På det här sättet kan du se till att teknikerrelevanta produktdata enkelt kan återanvändas i olika juridiska enheter.
+description: I denna artikel beskrivs hur du kan frigöra kompletta produktstrukturer, förutom att frigöra produkter tillsammans med deras tekniska versioner. På det här sättet kan du se till att teknikerrelevanta produktdata enkelt kan återanvändas i olika juridiska enheter.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4dc1b073350044ef8afb765470ed14da88a70fdd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c8359f86e5123ee40e9673971de626e1b327ac95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567497"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875493"
 ---
 # <a name="release-product-structures"></a>Frisläppa produktstrukturer
 
@@ -26,7 +26,7 @@ ms.locfileid: "7567497"
 
 För att säkerställa att de tekniska produktdata lätt kan återanvändas i olika juridiska personer kan du frigöra kompletta produktstrukturer utöver att frigöra produkter tillsammans med deras tekniska versioner. Därför kan du släppa strukturlistor i flera nivåer tillsammans med den överordnade i en enda frisläppningsåtgärd. I det här fallet frigörs även strukturlistan och de lägre produkterna.
 
-Tekniska produkter skapas och underhålls av deras teknikföretag på ett sådant sätt att de uppfyller kvalitets kraven när de har utformats. Varje operationellt företag som tillverkar en produkt behöver samma produkt och underliggande strukturlista. Beroende på produktionsfunktionen kan flödet skapas lokalt. I detta fall frigörs inte en rutt tillsammans med produkten. För juridiska personer som ska sälja produkterna men inte tillverka dem, kanske strukturlistan inte behövs.
+Tekniska produkter skapas och underhålls av deras teknikföretag på ett sådant sätt att de uppfyller kvalitets kraven när de har utformats. Varje åtgärdellt företag som tillverkar en produkt behöver samma produkt och underliggande strukturlista. Beroende på produktionsfunktionen kan flödet skapas lokalt. I detta fall frigörs inte en rutt tillsammans med produkten. För juridiska personer som ska sälja produkterna men inte tillverka dem, kanske strukturlistan inte behövs.
 
 För att processen ska bli mer effektiv kan alla tekniska data frisläppas till andra operationella företag samtidigt. Dessa data inkluderar produktstrukturen. Under frisläppningsprocessen kan du välja vilken del av produktdata som ska frisläppas.
 
@@ -51,7 +51,7 @@ När du aktiverar konstruktionsändringshantering i systemet är produktstruktur
 
 ## <a name="product-acceptance"></a>Produktgodkännande
 
-**Produktgodkännande** är en nyckelparameter som påverkar utgivningsprocessen. Du kan ställa in den här parametern för varje företag genom att gå till **Konstruktionsändringshantering \> Konfiguration \> Parametrar för ändringshantering**. Mer information finns i [parametrar för konstruktionsändringshantering](engineering-parameters.md).
+**Produktgodkännande** är en nyckelparameter som påverkar utgivningsprocessen. Du kan konfigurera den här parametern för varje företag genom att gå till **Konstruktionsändringshantering \> Konfiguration \> Parametrar för ändringshantering**. Mer information finns i [parametrar för konstruktionsändringshantering](engineering-parameters.md).
 
 ### <a name="automatic-product-acceptance"></a>Automatisk produktmottagning
 
@@ -59,7 +59,7 @@ Varje utgåva av tekniska produkter startar när någon från tekniska företage
 
 ### <a name="manual-product-acceptance"></a>Manuell produktmottagning
 
-Varje utgåva av tekniska produkter startar när någon från tekniska företaget väljer en produkt som ska frisläppas. När parametern **produktacceptans** anges till *manuell* bestämmer användaren vid det tekniska företaget automatiskt vilka produktdata som automatiskt ska frisläppas till driftsföretagen. En användare från varje driftsföretag granskar sedan produktdata och bestämmer om du vill acceptera utsättningen. Användaren på operationella företaget kan ställa in följande alternativ när data tas emot:
+Varje utgåva av tekniska produkter startar när någon från tekniska företaget väljer en produkt som ska frisläppas. När parametern **produktacceptans** anges till *manuell* bestämmer användaren vid det tekniska företaget automatiskt vilka produktdata som automatiskt ska frisläppas till driftsföretagen. En användare från varje driftsföretag granskar sedan produktdata och bestämmer om du vill acceptera utsättningen. Användaren på operationella företaget kan konfigurera följande alternativ när data tas emot:
 
 - Om produkterna (uppdateringar) inte är relevanta för det operativa företaget kan användaren välja att inte godkänna frisläppningen.
 - Användaren kan ändra artikelmallen för nya produkter.

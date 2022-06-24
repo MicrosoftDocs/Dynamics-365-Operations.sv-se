@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f7781fcb643d678fed528af947efb01911899f54
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 0162e559f8aaec248cfb9042b0152788536c9fc9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724625"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870290"
 ---
 # <a name="set-up-lease-approval-workflows"></a>Konfigurera arbetsflöden för leasinggodkännande
 

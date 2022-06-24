@@ -1,6 +1,6 @@
 ---
 title: Vanliga frågor om kostnadsredovisning för lager
-description: Detta avsnitt besvarar några vanliga frågor om lagerkostnadsredovisning i Microsoft Dynamics 365 Supply Chain Management.
+description: Denna artikel besvarar några vanliga frågor om lagerkostnadsredovisning i Microsoft Dynamics 365 Supply Chain Management.
 author: rachel-profitt
 ms.date: 05/03/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 45f65bd4a5cfb9bd0c4eb03ceb56eca452f6ec95
-ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
+ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809296"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850856"
 ---
 # <a name="inventory-costing-faq"></a>Vanliga frågor om kostnadsredovisning för lager
 
 [!include [banner](../includes/banner.md)]
 
-Detta avsnitt besvarar några vanliga frågor om lagerkostnadsredovisning i Microsoft Dynamics 365 Supply Chain Management.
+Denna artikel besvarar några vanliga frågor om lagerkostnadsredovisning i Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="inventory-close-adjustments-and-recalculation"></a>Lagerstängning, justeringar och omberäkning
 
@@ -94,7 +94,7 @@ I kostnadsredovisningen kan du skapa indirekta kostnadskoder där fältet **Nodt
 
 ### <a name="can-i-create-an-indirect-cost-that-isnt-related-to-a-specific-item"></a>Kan jag skapa en indirekt kostnad som inte är relaterad till en specifik artikel?
 
-Ja. Du kan skapa en indirekt kostnadskod där fältet **Nodtyp** är inställt på *Utdataenhetsbaserad*. Du kan sedan ställa in fältet **Undertyp** till *Kvantitet*, *Vikt* eller *Volym* om du vill ange kvantitet, vikt eller volym för artikeln som du producerar. Den kurs som du anger på snabbfliken **Avgift** används för den undertyp som du har valt. Du kan till exempel ställa in fälten **Undertyp** till *Kvantitet* och **Avgift** till *1,00 USD* och sedan skapa en tillverknings- eller batchorder för kvantiteten 10. I detta fall läggs den indirekta kostnaden som ska läggas till den färdiga varan 10,00 USD.
+Ja. Du kan skapa en indirekt kostnadskod där fältet **Nodtyp** är inställt på *Utdataenhetsbaserad*. Du kan sedan konfigurera fältet **Undertyp** till *Kvantitet*, *Vikt* eller *Volym* om du vill ange kvantitet, vikt eller volym för artikeln som du producerar. Den kurs som du anger på snabbfliken **Avgift** används för den undertyp som du har valt. Du kan till exempel konfigurera fälten **Undertyp** till *Kvantitet* och **Avgift** till *1,00 USD* och sedan skapa en tillverknings- eller batchorder för kvantiteten 10. I detta fall läggs den indirekta kostnaden som ska läggas till den färdiga varan 10,00 USD.
 
 ### <a name="can-i-use-the-costing-sheet-to-split-my-production-costs-by-hours-and-materials"></a>Kan jag använda kostnadsredovisningen för att dela upp mina produktionskostnader efter timmar och material?
 
@@ -197,7 +197,7 @@ Du bör välja det bästa alternativet utifrån rapporterings-, avstämnings- oc
 
 ### <a name="can-i-capture-resource-details-in-the-bom-or-formula"></a>Kan jag samla in resursinformation i strukturlistan eller formeln?
 
-Resursinformation kan bara fångas in i en flödesoperation. Du kan skapa en serviceartikel som representerar en resurs och tilldela en kostnad för att öka kostnadsberäkningen för en färdig vara, men vi rekommenderar normalt inte det här sättet. I stället rekommenderar vi att du skapar ett enkelt flöde med en rad för att spåra resurskostnader och konfigurera operationen så att den förbrukas automatiskt i antingen början eller slutet av tillverkningsordern.
+Resursinformation kan bara fångas in i en flödesåtgärd. Du kan skapa en serviceartikel som representerar en resurs och tilldela en kostnad för att öka kostnadsberäkningen för en färdig vara, men vi rekommenderar normalt inte det här sättet. I stället rekommenderar vi att du skapar ett enkelt flöde med en rad för att spåra resurskostnader och konfigurera åtgärden så att den förbrukas automatiskt i antingen början eller slutet av tillverkningsordern.
 
 ### <a name="can-i-view-the-calculation-details-if-the-cost-is-manually-entered"></a>Kan jag visa beräkningsdetaljer om kostnaden anges manuellt?
 
@@ -329,7 +329,7 @@ Fliken **Standarduppdatering** på sidan **Huvudplaneringsparametrar** innehåll
 
 ### <a name="when-should-i-allow-physical-negative-inventory"></a>När ska jag tillåta fysiskt negativt lager?
 
-I allmänhet rekommenderar vi inte att du tillåter fysiskt negativt lager, eftersom det inte går att ha mindre än 0 (noll) för en materiella artikel i lagerstället. Affärsprocesserna i vissa branscher och affärsscenarier kan dock begränsa operationer som kräver att lagret tillåts gå fysiskt negativt. En butik kanske inte vill förhindra försäljning av en artikel som tas med i kassan, även om systemet visar att det inte finns några artiklar tillgängliga. Processtillverkare är ett annat exempel. För dessa tillverkare kan beloppet som förbrukas överstiga det som rekommenderas i formeln. Alternativt kan förbrukningen uppskattas istället för exakt så att förbrukningen överstiger beloppet på en viss plats, till exempel en förbrukning.
+I allmänhet rekommenderar vi inte att du tillåter fysiskt negativt lager, eftersom det inte går att ha mindre än 0 (noll) för en materiella artikel i lagerstället. Affärsprocesserna i vissa branscher och affärsscenarier kan dock begränsa åtgärder som kräver att lagret tillåts gå fysiskt negativt. En butik kanske inte vill förhindra försäljning av en artikel som tas med i kassan, även om systemet visar att det inte finns några artiklar tillgängliga. Processtillverkare är ett annat exempel. För dessa tillverkare kan beloppet som förbrukas överstiga det som rekommenderas i formeln. Alternativt kan förbrukningen uppskattas istället för exakt så att förbrukningen överstiger beloppet på en viss plats, till exempel en förbrukning.
 
 När det är möjligt bör du utvärdera affärsprocessen och försöka förbättra den för att se till att lagret inte kan vara negativt. Om du måste tillåta negativt lager bör du ha en tydlig affärsprocess för att korrigera det negativa lagret, eftersom det kan påverka kostnadsredovisningen negativt.
 
@@ -359,7 +359,7 @@ Vi rekommenderar att du ofta övervakar och korrigerar negativt lager när din o
 
 ### <a name="do-i-have-to-create-a-new-item-if-my-inventory-has-gone-negative-and-i-use-moving-average"></a>Måste jag skapa en ny artikel om lagret har blivit negativt och jag använder ett glidande medelvärde?
 
-Nej Om din organisation tillåter att lagret blir fysiskt negativt och du använder glidande medelvärde som din lagermodell, kommer systemet att använda reservkostnadssekvensen som tilldelas på sidan **Parametrar för hantering av lager och lagerstyrning** för att avgöra hur kostnaden kommer att tilldelas dina problem. I allmänhet rekommenderar vi att du inte tillåter att lagret går fysiskt negativt. För mer information, se de andra frågorna i [Negativt lager](#negative-inventory) i det här avsnittet.
+Nej Om din organisation tillåter att lagret blir fysiskt negativt och du använder glidande medelvärde som din lagermodell, kommer systemet att använda reservkostnadssekvensen som tilldelas på sidan **Parametrar för hantering av lager och lagerstyrning** för att avgöra hur kostnaden kommer att tilldelas dina problem. I allmänhet rekommenderar vi att du inte tillåter att lagret går fysiskt negativt. För mer information, se övriga frågor i [Negativt lager](#negative-inventory) i denna artikel.
 
 ## <a name="not-stocked-products"></a>Produkter som inte finns i lager
 
@@ -377,7 +377,7 @@ Valet mellan en produkt som inte finns i lager och en kategori beror på företa
 
 ### <a name="what-is-the-difference-between-a-service-item-and-a-not-stocked-product"></a>Vad är skillnaden mellan en serviceartikel och en produkt som inte finns i lager?
 
-En serviceartikel är en produkttyp. När du skapar en nyligen frisläppt produkt kan du ställa in fältet **Produkttyp** på antingen *Artikel* eller *Tjänst*. *Artikeln* väljs vanligtvis för att visa att artikeln är materiella, medan *Service* normalt väljs för att visa att artikeln är immateriell.
+En serviceartikel är en produkttyp. När du skapar en nyligen frisläppt produkt kan du konfigurera fältet **Produkttyp** på antingen *Artikel* eller *Tjänst*. *Artikeln* väljs vanligtvis för att visa att artikeln är materiella, medan *Service* normalt väljs för att visa att artikeln är immateriell.
 
 En frisläppt produkt, oavsett om den är en artikel eller tjänsteprodukt, kan lagras eller inte. Inställningen för lagrad eller ej lagrad styrs av artikelmodellgruppen som du väljer för den frisläppta produkten. När du väljer en artikelgrupp som inte finns i lager, skapas inga lagertransaktioner för den relaterade försäljnings- eller inköpsordern.
 
@@ -433,9 +433,9 @@ När det finns en prisskillnad mellan bokföring av en fysisk uppdatering och en
 
 ### <a name="when-i-use-moving-average-what-happens-if-there-is-an-issue-before-the-receipt"></a>När jag använder glidande medelvärde, vad händer om det finns en utleverans före inleveransen?
 
-Vanligtvis kan det finnas en utleverans före inleveransen, antingen eftersom du tillåter fysiskt negativt lager för artikelmodellgruppen eller pga. att utleveransen har kvittats. Mer information finns i avsnittet [Negativt lager](#negative-inventory) i det här avsnittet.
+Vanligtvis kan det finnas en utleverans före inleveransen, antingen eftersom du tillåter fysiskt negativt lager för artikelmodellgruppen eller pga. att utleveransen har kvittats. Mer information finns i avsnittet [Negativt lager](#negative-inventory) i denna artikel.
 
-Om du bakåtställer transaktioner bör du noggrant överväga affärsprocessen och operationerna för att ta reda på om det finns ett sätt att undvika det här scenariot. Om du bakåtdatera en transaktion för en artikel som använder ett rörligt medelvärde, tilldelar systemet det aktuella rörliga medelvärdet till transaktionen. Senare utleveranser justeras inte. Mer information om glidande medelvärde med bakåtdaterade transaktioner finns i [glidande medelvärde](moving-average.md).
+Om du bakåtställer transaktioner bör du noggrant överväga affärsprocessen och åtgärderna för att ta reda på om det finns ett sätt att undvika det här scenariot. Om du bakåtdatera en transaktion för en artikel som använder ett rörligt medelvärde, tilldelar systemet det aktuella rörliga medelvärdet till transaktionen. Senare utleveranser justeras inte. Mer information om glidande medelvärde med bakåtdaterade transaktioner finns i [glidande medelvärde](moving-average.md).
 
 ### <a name="standard-costing"></a>Standardkostnadsredovisning
 

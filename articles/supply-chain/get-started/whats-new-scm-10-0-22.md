@@ -1,6 +1,6 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Supply Chain Management (10.0.22 november 2021)
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management 10.0.22.
+description: Denna artikel beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management 10.0.22.
 author: kamaybac
 ms.date: 08/09/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: a795f88aed78582ad4a2faa90ab1c2529017850f
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 53f1670454ef505e61e96b16990d913473b46bf4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778167"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849515"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management (10.0.22 november 2021)
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management version 10.0.22. Den här versionen har ett versionsnummer för 10.0.995 och är tillgänglig enligt följande:
+Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management-version 10.0.22. Den här versionen har ett versionsnummer för 10.0.995 och är tillgänglig enligt följande:
 
 - **Förhandsversion:** september 2021
 - **Allmän tillgänglighet för versionen (självuppdatering):** oktober 2021
@@ -29,11 +29,11 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
-Följande tabeller listar de funktioner som ingår i denna version. Kolumnen *Funktion* innehåller länkar till [versionsplanen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), där du kan se de officiella frisläppningsdatumen för respektive funktion. Kolumnen *Mer information* innehåller mer information och/eller länkar till relaterad dokumentation. Information om hur du aktiverar en funktion finns i kolumnen *Aktiverad av*. Mer information om hur du använder funktionshantering finns i [Översikt över funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Vi kan komma att uppdatera detta ämne i syfte att inkludera funktioner som kommit med i bygget efter det att ämnet publicerades första gången.
+Följande tabeller listar de funktioner som ingår i denna version. Kolumnen *Funktion* innehåller länkar till [versionsplanen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), där du kan se de officiella frisläppningsdatumen för respektive funktion. Kolumnen *Mer information* innehåller mer information och/eller länkar till relaterad dokumentation. Information om hur du aktiverar en funktion finns i kolumnen *Aktiverad av*. Mer information om hur du använder funktionshantering finns i [Översikt över funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Vi kan komma att uppdatera denna artikel i syfte att inkludera funktioner som kommit med i versionen efter det att denna artikel publicerades första gången.
 
-| Funktionsområde | Funktion | Mer information | Har aktiverats av   |
+| Funktionsområde | Funktion | Mer information | Har aktiverats av |
 |---|---|---|---|
-| Planering | [Stöd för planeringsoptimering för kapacitetsbaserad resursallokering](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) | [Tidsplanering med resursurval baserat på kapacitet](../master-planning/planning-optimization/capability-based-scheduling.md) | Funktionshantering (*Planering med obegränsad kapacitet för Planeringsoptimering*) |
+| Planering | [Stöd för Planeringsoptimering för kapacitetsbaserad resursallokering](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) | [Tidsplanering med resursurval baserat på kapacitet](../master-planning/planning-optimization/capability-based-scheduling.md) | Funktionshantering (*Planering med obegränsad kapacitet för Planeringsoptimering*) |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funktionsförbättringar som ingår i den här versionen
 
@@ -47,9 +47,9 @@ Följande tabeller listar de funktionsförbättringar som ingår i denna version
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
 
-Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. Dessa ämnen är inte nödvändigtvis relaterade till de nya funktionerna som lagts till för denna version, enligt vad som beskrivs i det föregående avsnittet. De kan dock hjälpa dig att få ut mer av befintliga funktioner.
+Följande hjälpartiklar har nyligen lagts till eller uppdaterats väsentligt. Dessa artiklar är inte nödvändigtvis relaterade till de nya funktionerna som lagts till för denna version, enligt vad som beskrivs i det föregående avsnittet. De kan dock hjälpa dig att få ut mer av befintliga funktioner.
 
-| Funktionsområde | Nya eller uppdaterade ämnen |
+| Funktionsområde | Nya eller uppdaterade artiklar |
 |---|---|
 | Konstruktionsändringshantering | I [Konstruktionsändringshantering – översikt](../engineering-change-management/product-engineering-overview.md) visas nu alla relaterade, valfria funktioner som är tillgängliga i funktionshantering |
 | Huvudplanering | [Inställning av efterfrågeprognosticering](../master-planning/demand-forecasting-setup.md) |
@@ -58,9 +58,9 @@ Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdateringar för Finance and Operations-appar
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Ekonomi och drift-appar
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.22 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.22 av Finance and Operations-appar (november 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.22 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.22 av Ekonomi och drift-appar (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md).
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 
@@ -74,12 +74,12 @@ Kolla in [Dynamics 365 och branschmoln: Utgivningsvåg 2 plan för 2021](/dynami
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Borttagna och inaktuella funktioner för Supply Chain Management
 
-De [borttagna eller föråldrade funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) i ämnet beskriver funktioner som har schemalagts eller är planerade att tas bort eller inaktuellt för Supply Chain Management.
+Artikeln [Borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver funktioner som har tagits bort eller planeras tas bort eller göras inaktuella för Supply Chain Management.
 
 - En *borttagen* funktion är inte längre tillgänglig i produkten.
 - En *borttagen* funktion är inte i aktiv utveckling och kan tas bort i en kommande uppdatering.
 
-Innan någon funktion tas bort från produkten visas understrykningsmeddelandet i ämnet [borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före avhämtningen.
+Innan någon funktion tas bort från produkten kommer meddelandet om inaktualitet att meddelas i artikeln [Borttagna eller inaktuella funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före borttagning.
 
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
 

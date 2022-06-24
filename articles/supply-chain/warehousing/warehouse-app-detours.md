@@ -1,6 +1,6 @@
 ---
 title: Konfigurera omvägar för steg i menyalternativ för mobila enheter
-description: Det här ämnet beskriver hur man konfigurerar omvägar för menyalternativ så att arbetare kan den aktuella uppgiften, utföra en annan uppgift och sedan gå tillbaka till den ursprungliga uppgiften utan att förlora någon information.
+description: Denna artikel beskriver hur du konfigurerar omvägar för menyalternativ så att arbetare kan parkera den aktuella uppgiften, utföra en annan uppgift och sedan återgå till den ursprungliga uppgiften utan att förlora någon information.
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 874abbdf7c0938a7ad4cc66e23dd01d901a1f0d3
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920358"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863604"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurera omvägar för steg i menyalternativ för mobila enheter
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Funktionerna som beskrivs i detta ämne gäller bara den nya mobilappen Warehouse Management. De påverkar inte den gamla lagerställeappen, som nu har blivit inaktuell.
+> Funktionerna som beskrivs i denna artikel gäller bara den nya mobilappen Warehouse Management. De påverkar inte den gamla lagerställeappen, som nu har blivit inaktuell.
 
-Det här ämnet beskriver hur man konfigurerar omvägar för menyalternativ så att arbetare kan den aktuella uppgiften, utföra en annan uppgift och sedan gå tillbaka till den ursprungliga uppgiften utan att förlora någon information.
+Denna artikel beskriver hur du konfigurerar omvägar för menyalternativ så att arbetare kan "parkera" den aktuella uppgiften, utföra en annan uppgift och sedan återgå till den ursprungliga uppgiften utan att förlora någon information.
 
 En omväg är ett separat menyalternativ som kan öppnas från ett steg i en huvuduppgift. I slutet av omvägen returneras arbetaren till den plats där de lämnade huvuduppgiften. Under konfigurationen anger du det menyalternativ som ska fungera som en omväg. Du väljer också vilka fältvärden från huvuduppgiften som automatiskt ska vidarebefordras (kopieras) till omvägen och anges där. Därför måste du förstå var i uppgiftsflödet du vill att omvägen ska vara tillgänglig för arbetare. Du måste också se till att den information som måste kopieras till omvägen är tillgänglig för det steget i uppgiftsflödet.
 
@@ -46,18 +46,18 @@ Innan du kan konfigurera omvägar för steg i menyalternativ för mobila enheter
     - **Modul:** *Warehouse management*
     - **Funktionsnamn:** *Omvägar för lagerstyrningsapp*
 
-    Den här funktionen är den funktion som beskrivs i det här avsnittet.
+    Den här funktionen är den funktion som beskrivs i denna artikel.
 
 1. Uppdatera fältnamnen i Warehouse Management-mobilappen genom att gå till **Warehouse Management \> Inställningar \> Mobil enhet \> Fältnamn i lagerställeapp** och väljer **Skapa standardinställningar**. - Mer information finns i [Konfigurera fält för mobilappen för distributionslagerhantering](configure-app-field-names-priorities-warehouse.md).
 1. Upprepa föregående steg för varje juridisk person (företag) där du använder mobilappen Warehouse Management.
 
 ## <a name="configure-a-detour-from-a-menu-specific-override"></a>Konfigurera en omväg från en menyspecifik åsidosättning
 
-Gör på följande sätt när du vill ställa in en omväg från en menyspecifik åsidosättning.
+Gör på följande sätt när du vill konfigurera en omväg från en menyspecifik åsidosättning.
 
 1. Skapa en menyspecifik åsidosättning för relevant meny och steg enligt beskrivningen i [Anpassa stegrubriker och instruktioner för Warehouse Management mobilapp](mobile-app-titles-instructions.md).
 1. Hitta kombinationen av värden för **Steg-ID** och **Namn på menyalternativ** som du vill redigera, och välj sedan värdet i kolumnen **Steg-ID**.
-1. På sidan som visas på snabbfliken **Tillgängliga omvägar (menyalternativ)** kan du ange det menyalternativ som ska fungera som en omväg. Du väljer också vilka fältvärden från huvuduppgiften som automatiskt ska kopieras till och från omvägen. Ett exempel på hur du använder de här inställningarna finns i scenariot senare i det här avsnittet.
+1. På sidan som visas på snabbfliken **Tillgängliga omvägar (menyalternativ)** kan du ange det menyalternativ som ska fungera som en omväg. Du väljer också vilka fältvärden från huvuduppgiften som automatiskt ska kopieras till och från omvägen. Ett exempel på hur du använder dessa inställningar finns i scenariot senare i denna artikel.
 
 ## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>Exempelscenario 1: Försäljningsplockning där en platsförfrågan fungerar som en omväg
 

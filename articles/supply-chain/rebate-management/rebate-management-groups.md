@@ -1,6 +1,6 @@
 ---
 title: Rabatthanteringsgrupper
-description: I det här avsnittet beskrivs hur du ställer in Rabatthanteringsgrupper. Rabatthanteringsgrupper kan användas under rabattberäkningar och kan kopplas till en huvudpost.
+description: I denna artikel beskrivs hur du konfigurerar Rabatthanteringsgrupper. Rabatthanteringsgrupper kan användas under rabattberäkningar och kan kopplas till en huvudpost.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e4e0fff3e60647795bda2f192a0421e9098315a5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2b948e994783d6ec6f00b77d12bd2594a29f6512
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693400"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851548"
 ---
 # <a name="rebate-management-groups"></a>Rabatthanteringsgrupper
 
@@ -104,7 +104,7 @@ Följ dessa steg för att visa, lägga till eller ta bort gruppuppdrag för en v
 
 ## <a name="item-rebate-groups"></a>Artikelrabattgrupper
 
-Genom att gruppera artiklar blir du mer flexibel när rabatter och avdrag beräknas. Det här arbetssättet är ofta ett effektivare sätt att ställa in rabatter och avdrag för kunder och leverantörer.
+Genom att gruppera artiklar blir du mer flexibel när rabatter och avdrag beräknas. Det här arbetssättet är ofta ett effektivare sätt att konfigurera rabatter och avdrag för kunder och leverantörer.
 
 ### <a name="set-up-item-groups"></a>Ställ in artikelgrupper
 

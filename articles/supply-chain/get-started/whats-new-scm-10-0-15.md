@@ -1,6 +1,6 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.15 (januari 2021)
-description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.15.
+description: Denna artikel innehåller en beskrivning av nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.15.
 author: kamaybac
 ms.date: 10/13/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 18408e64bd06db2e05038d14f284b799b6c19e68
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 3141cea22b6ab80f36f5562fd450b0cd547d235d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471822"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879146"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.15 (januari 2021)
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management version 10.0.15. Den här versionen har ett versionsnummer för 10.0.644 och är tillgänglig enligt följande:
+Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management version 10.0.15. Den här versionen har ett versionsnummer för 10.0.644 och är tillgänglig enligt följande:
 
 - **Förhandsversion:** oktober 2020
 - **Allmän tillgänglighet för frisläppning (självuppdatering):** 2020 november
@@ -57,9 +57,9 @@ De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fi
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdateringar för Finance and Operations-appar
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdatering för Ekonomi och drift-appar
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.15 inkluderar plattformsuppdateringar. Mer information finns i [plattformsuppdateringar för version 10.0.15 av Finance and Operations appar (oktober 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-15.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.15 inkluderar plattformsuppdateringar. Mer information finns i [Plattformsuppdateringar för version 10.0.15 av Ekonomi och Drift-appar (oktober 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-15.md).
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 
@@ -73,12 +73,12 @@ Se [Dynamics 365: 2020 utgivningsvåg 2 plan](/dynamics365-release-plan/2020wave
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Borttagna och inaktuella funktioner för Supply Chain Management
 
-De [borttagna eller föråldrade funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) i ämnet beskriver funktioner som har schemalagts eller är planerade att tas bort eller inaktuellt för Supply Chain Management.
+Artikeln [Borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver funktioner som har tagits bort eller planeras tas bort eller göras inaktuella för Supply Chain Management.
 
 - En *borttagen* funktion är inte längre tillgänglig i produkten.
 - En *borttagen* funktion är inte i aktiv utveckling och kan tas bort i en kommande uppdatering.
 
-Innan någon funktion tas bort från produkten visas understrykningsmeddelandet i ämnet [borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före avhämtningen.
+Innan någon funktion tas bort från produkten kommer meddelandet om inaktualitet att meddelas i artikeln [Borttagna eller inaktuella funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före borttagning.
 
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
 

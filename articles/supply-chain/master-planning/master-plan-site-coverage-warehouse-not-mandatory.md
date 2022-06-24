@@ -1,6 +1,6 @@
 ---
 title: Huvudplanering för täckning av plats och lagerställe ej obligatoriskt
-description: Det här avsnittet innehåller en beskrivning av hur en artikel som har webbplatsen som disponeringsdimension planeras.
+description: Denna artikel innehåller en beskrivning av hur en artikel som har webbplatsen som disponeringsdimension planeras.
 author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bed2d7d9ad7577c78e3cf14f4b759f1d073ac32f
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 327bb259cc108f1fad068c847441229dcaee7ff1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470385"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859239"
 ---
 # <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Huvudplanering för täckning av plats och lagerställe ej obligatoriskt
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en beskrivning av hur en artikel som har webbplatsen som disponeringsdimension planeras.
+Denna artikel innehåller en beskrivning av hur en artikel som har webbplatsen som disponeringsdimension planeras.
 
 Det här huvudplaneringsscenariot omfattar följande villkor:
 

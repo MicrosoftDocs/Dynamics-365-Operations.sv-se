@@ -1,6 +1,6 @@
 ---
 title: Integrerad redovisning
-description: I det här avsnittet beskrivs integreringen av redovisning mellan Finance and Operations och andra Dynamics 365-appar med Dataverse.
+description: I den här artikeln beskrivs integreringen av redovisning mellan Ekonomi och drift och andra Dynamics 365-appar med Dataverse.
 author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 0deb4198acb59b90bf06e4050889d028df2223e3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e83d66f3f8c8927b9baaf99838a4e242e7e011dc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063657"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847201"
 ---
 # <a name="integrated-ledger"></a>Integrerad redovisning
 
@@ -22,7 +22,7 @@ ms.locfileid: "8063657"
 
 
 
-I ett affärsprogram definierar redovisningsdata den kärna som är inställd för hur ett företag gör affärer. Redovisningsdata beskriver t.ex. räkenskapsåret som företaget följer, de valutor det använder och vilka konton det använder. I det här avsnittet beskrivs integreringen av dessa grundläggande ekonomiska data.
+I ett affärsprogram definierar redovisningsdata den kärna som är inställd för hur ett företag gör affärer. Redovisningsdata beskriver t.ex. räkenskapsåret som företaget följer, de valutor det använder och vilka konton det använder. I den här artikeln beskrivs integreringen av dessa grundläggande ekonomiska data.
 
 ## <a name="templates"></a>Mallar
 

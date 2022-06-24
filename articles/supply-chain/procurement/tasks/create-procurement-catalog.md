@@ -1,6 +1,6 @@
 ---
 title: Skapa en anskaffningskatalog
-description: Det här ämnet förklarar hur du skapar en anskaffningskatalog.
+description: Denna artikel förklarar hur du skapar en anskaffningskatalog.
 author: GalynaFedorova
 ms.date: 07/19/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e94f2ef23a3c4020f46138a10fcdf84552451515
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8e35e8c5b5c93fa9aac914f04e7ea658748cb052
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673878"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869558"
 ---
 # <a name="create-a-procurement-catalog"></a>Skapa en anskaffningskatalog
 
 [!include [banner](../../includes/banner.md)]
 
-Det här ämnet förklarar hur du skapar en anskaffningskatalog. Den här uppgiften utförs vanligtvis av ett anskaffningsproffs. Du kan också lära dig om hur medarbetare kan använda katalogen när de skapar en rekvisition. Innan du kan skapa en katalog måste det finnas en anskaffningskategorihierarki i systemet. Hierarkin ärvs från den nya katalogen, tillsammans med alla produkter som finns i hierarkin. Du kan använda den här handboken i demonstrationdataföretaget USMF, där anskaffningskategorihierarkin är tillgänglig, samt i exemplen som används i procedurstegen.
+Denna artikel förklarar hur du skapar en anskaffningskatalog. Den här uppgiften utförs vanligtvis av ett anskaffningsproffs. Du kan också lära dig om hur medarbetare kan använda katalogen när de skapar en rekvisition. Innan du kan skapa en katalog måste det finnas en anskaffningskategorihierarki i systemet. Hierarkin ärvs från den nya katalogen, tillsammans med alla produkter som finns i hierarkin. Du kan använda den här handboken i demonstrationdataföretaget USMF, där anskaffningskategorihierarkin är tillgänglig, samt i exemplen som används i procedurstegen.
 
 
 ## <a name="ensure-that-a-procurement-category-hierarchy-exists"></a>Se till att en anskaffningskategorihierarki finns
@@ -49,7 +49,7 @@ Det här ämnet förklarar hur du skapar en anskaffningskatalog. Den här uppgif
 
 ## <a name="make-the-catalog-visible"></a>Gör katalogen synlig
 1. Gå till **navigeringsfönster > moduler > anskaffning och källa > inställningar > principer > inköpspolicyer**.
-2. Välj **anskaffningspolicy USMF**. Du måste välja inköpspolicyn för den juridiska person som arbetaren kopplade till din användarprofil, som tillåter att beställa in produkter. I USMF-demonstrationdatan är användaren Admin kopplad till arbetaren som kallas **Julia Funderburk**, och hon beställer produkter i USMF som standard.  
+2. Välj **anskaffningspolicy USMF**. Du måste välja inköpspolicyn för den juridiska person som arbetaren kopplade till din användarprofil, som tillåter att bekonfigurera produkter. I USMF-demonstrationdatan är användaren Admin kopplad till arbetaren som kallas **Julia Funderburk**, och hon beställer produkter i USMF som standard.  
 3. Välj katalogen som du nyss skapat.
 4. Välj **OK**.
 

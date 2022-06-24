@@ -1,5 +1,5 @@
 ---
-title: Momsfunktionens stöd för överföringsorder
+title: Momsfunktionstöd för överföringsorder
 description: Det här ämnet innehåller information om det nya momsfunktionen som stöder överföringsorder genom att använda tjänsten för momsberäkning.
 author: Kai-Cloud
 ms.date: 10/13/2021
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d95ea6795dc5777bfd37f8fbb3ebc47f2db337a0
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 281ee90b7cae2d24d37d0684ad9975118560bb3e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689226"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869993"
 ---
-# <a name="tax-feature-support-for-transfer-orders"></a>Momsfunktionens stöd för överföringsorder
+# <a name="tax-feature-support-for-transfer-orders"></a>Momsfunktionstöd för överföringsorder
 
 [!include [banner](../../includes/banner.md)]
 

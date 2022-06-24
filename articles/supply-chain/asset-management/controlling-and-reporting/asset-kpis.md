@@ -1,6 +1,6 @@
 ---
 title: KPI:er för tillgång
-description: I det här avsnittet beskrivs tillgångs-KPI:er i tillgångshantering.
+description: I denna artikel beskrivs tillgångs-KPI:er i Tillgångshantering.
 author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8bdc60d993a784ffc123d36b5e51cbd6028316f18a2dee6f4ee134a93ffc024e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ef0df92edaa2ee33bd75e01a666086e32c8101af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778758"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870883"
 ---
 # <a name="asset-kpis"></a>KPI:er för tillgång
 
@@ -28,7 +28,7 @@ ms.locfileid: "6778758"
 
  
 
-I tillgångshantering kan du beräkna olika nyckeltal (KPI:er, Key Performance Indicators) för tillgångar och tillgångstyper. Du använder KPI:er för att få en översikt över prestanda för tillgångar i relation till exempelvis driftstid, driftstopp, reparationstid och genomsnittstid mellan misslyckande (MTBF, Mean Time Between Failure).
+I Tillgångshantering kan du beräkna olika nyckeltal (KPI:er, Key Performance Indicators) för tillgångar och tillgångstyper. Du använder KPI:er för att få en översikt över prestanda för tillgångar i relation till exempelvis driftstid, driftstopp, reparationstid och genomsnittstid mellan misslyckande (MTBF, Mean Time Between Failure).
 
 1. Klicka på **Tillgångshantering** > **Förfrågningar** > **Tillgångar** > **KPI:er för tillgång**.
 
@@ -47,7 +47,7 @@ I tabellen nedan finns en beskrivning av fälten på sidan **KPI:er för tillgå
 | Fält                   | Beskrivning                                                                                                                                                                                                                                                                                           |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tillgång                   | Tillgångs-ID.                                                                                                                                                                                                                                                                                             |
-| Total tid              | Total tid som ställts in i kalendern som används i beräkningen. Om tillgången är relaterad till en resurs, används den relaterade resurskalendern. Om tillgången inte är relaterad till en resurs, används den kalender som valts i fältet **Standardkalender** i **Parametrar för tillgångshantering**. |
+| Total tid              | Total tid som ställts in i kalendern som används i beräkningen. Om tillgången är relaterad till en resurs, används den relaterade resurskalendern. Om tillgången inte är relaterad till en resurs, används den kalender som valts i fältet **Standardkalender** i **Parametrar för Tillgångshantering**. |
 | Drifttid                  | Total tid minus avbrott.                                                                                                                                                                                                                                                                            |
 | Driftstopp                | Registreringar av underhållsstopp görs för till gången under den valda perioden.                                                                                                                                                                                                                              |
 | Reparationstid             | Totalt antal arbetstimmar som förbrukas på reparationsarbetsorder.                                                                                                                                                                                                                                            |

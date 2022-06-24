@@ -1,6 +1,6 @@
 ---
 title: Lägg till en adress till en serviceorder
-description: I det här avsnittet beskrivs hur du lägger till en kundadress till en serviceorder.
+description: I denna artikel beskrivs hur du lägger till en kundadress i en serviceorder.
 author: sorenva
 ms.date: 05/02/2018
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 560d0c58aebe652e668cc0ec3ed05d84f004872e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ce58ff7bbb491fd2d250b8986d02fca04bd5fad1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672890"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844747"
 ---
 # <a name="add-an-address-to-a-service-order"></a>Lägg till en adress till en serviceorder    
 
 [!include [banner](../includes/banner.md)]
 
 
-I det här avsnittet beskrivs hur du lägger till en kundadress till en serviceorder. När du skapar en serviceorder förs adressinformationen över från det projekt som serviceordern är kopplad till. Du kan dock välja en alternativ plats från adresser som redan finns i Microsoft Dynamics AX för kunder, leverantörer, platser, lagerställen, serviceorder och projekt.
+I denna artikel beskrivs hur du lägger till en kundadress i en serviceorder. När du skapar en serviceorder förs adressinformationen över från det projekt som serviceordern är kopplad till. Du kan dock välja en alternativ plats från adresser som redan finns i Microsoft Dynamics AX för kunder, leverantörer, platser, lagerställen, serviceorder och projekt.
 
 Du kan också skapa en ny adress. Som standard överförs den nya adressen till projektet. Du kan dock ange att den nya adressen bara är relevant för den här instansen av tjänsten. Om du gör det överförs den nya adressen inte till projektet.
 

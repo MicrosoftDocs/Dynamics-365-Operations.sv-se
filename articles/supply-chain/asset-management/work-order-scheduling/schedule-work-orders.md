@@ -1,6 +1,6 @@
 ---
 title: Schemalägg arbetsorder
-description: Det här avsnittet innehåller förklaringar av hur du tidsplanerar arbetsorder i Tillgångshantering.
+description: Denna artikel innehåller förklaringar av hur du tidsplanerar arbetsorder i Tillgångshantering.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a3fc3e6ef2332a883ef4a612a669142da1794454
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718069"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845066"
 ---
 # <a name="schedule-work-orders"></a>Schemalägg arbetsorder
 
@@ -28,7 +28,7 @@ ms.locfileid: "6718069"
 
  
 
-Det här avsnittet innehåller förklaringar av hur du tidsplanerar arbetsorder i Tillgångshantering. 
+Denna artikel innehåller förklaringar av hur du tidsplanerar arbetsorder i Tillgångshantering. 
 
 Det antal timmar som krävs för en arbetsorder definieras av summan av prognostiserade timmar minus bokförda timmar. Om det krävs mer tid måste prognosen justeras i enlighet med detta. I **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder** kan du visa eller redigera prognoser för en arbetsorder genom att välja arbetsordern och klicka på **Prognos** på fliken **Arbetsorder**. När du har skapat och uppskattat en arbetsorder är nästa steg att fördela de underhållsarbetare och verktyg som krävs för att slutföra arbetsorderna.
 
@@ -43,7 +43,7 @@ Endast arbetsorder med ett livscykeltillstånd för arbetsorder som tillåter pl
 4. I dialogrutan **Schemalägg arbetsorder** kan du lägga till alternativ för förväntat startdatum och servicenivå, om det behövs. Om tids planeringsprocessen ska ta hänsyn till kapacitetsbegränsningar för resurser som redan har schemalagts för andra jobb, kontrollera att växlingsknapparna **Tillgång**, **Verktyg** och **Arbetare** är inställda på "Ja".
 
     [!NOTE]
-    Om du ställer in växlingsknapparna **Tillgång**, **Verktyg** och **Arbetare** till "Nej" kommer befintliga reservationer att ignoreras. I informationsloggen visas en lista över överlappande arbetsorderscheman, och du kan klicka på meddelandena för att öppna en arbetsorder och omplanera om det behövs.
+    Om du konfigurerar växlingsknapparna **Tillgång**, **Verktyg** och **Arbetare** till "Nej" kommer befintliga reservationer att ignoreras. I informationsloggen visas en lista över överlappande arbetsorderscheman, och du kan klicka på meddelandena för att öppna en arbetsorder och omplanera om det behövs.
 
 5. Om du vill visa detaljerad information om tidsplaneringsprocessen väljer du "Ja"på växlingsknappen **Utförligt**. Det innebär att detaljerad information om de beräknade poängen på arbetsorder och underhållsarbetare visas i informationsloggen.
 
@@ -52,17 +52,17 @@ Endast arbetsorder med ett livscykeltillstånd för arbetsorder som tillåter pl
 7. När planeringen är slutförd visar en informationslogg antalet planerade arbetsorder och också mer detaljerad information om växlingsknappen **Utförligt** är inställd på "Ja".
 
 >[!NOTE]
->Arbetsorder planeras i en cykel per arbetsorder, inte per arbetsorderjobb. Du kan också öppna dialogrutan **Tidsplanera arbetsorder** direkt i **Tillgångshantering** > **Periodisk** > **Arbetsorder** > **Tidsplanera arbetsorder**. Gör dina val och klicka på **OK** för att starta tidsplaneringen för arbetsorder. Det går att ställa in arbetsorderplaneringen som ett batchjobb i dialogrutan **Tidsplanera arbetsorder** > snabbfliken **Kör i bakgrunden**.
+>Arbetsorder planeras i en påfyllnad per arbetsorder, inte per arbetsorderjobb. Du kan också öppna dialogrutan **Tidsplanera arbetsorder** direkt i **Tillgångshantering** > **Periodisk** > **Arbetsorder** > **Tidsplanera arbetsorder**. Gör dina val och klicka på **OK** för att starta tidsplaneringen för arbetsorder. Det går att konfigurera arbetsorderplaneringen som ett batchjobb i dialogrutan **Tidsplanera arbetsorder** > snabbfliken **Kör i bakgrunden**.
 
 *Exempel:* På bilden nedan genererar formeln som infogas i fältet **Förväntad start** tidsplanering av arbetsorder för alla arbetsorder med förväntat startdatum en vecka från och med nu och senare. Den här formeln kan vara användbar när du kör tidsplanering av arbetsorder löpande, men du vill vara säker på att de schemalagda arbetsorderna under de kommande 5-6 dagarna inte har tidsplanerats.
 
 ![Figur 1.](media/03-work-order-scheduling.png)
 
-Arbetsordertypen som är relaterad till arbetsorder kan ställa in tidsplanering för en underhållsarbetare (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Arbetsordertyper** >  växlingsknappen **En underhållsarbetare** inställd på "Ja"). Detta innebär att om arbetsordertypen används på en arbetsorder, sätts växlingsknappen **En underhållsarbetare** automatiskt till "Ja" på informationssidan **Alla arbetsorder** > vyn **Sidhuvud** > snabbfliken **Tidsplanera**. Under tidsplaneringen av arbetsordern planeras sedan alla arbetsorderjobb som skapats på arbetsordern till samma underhållsarbetare. Om det behövs kan du redigera valet för växlingsknappen **En underhållsarbetare** i **Alla arbetsorder** för att möjliggöra planering av flera arbetare eller en arbetare för arbetsorderjobben.
+Arbetsordertypen som är relaterad till arbetsorder kan konfigurera tidsplanering för en underhållsarbetare (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Arbetsordertyper** >  växlingsknappen **En underhållsarbetare** inställd på "Ja"). Detta innebär att om arbetsordertypen används på en arbetsorder, sätts växlingsknappen **En underhållsarbetare** automatiskt till "Ja" på informationssidan **Alla arbetsorder** > vyn **Sidhuvud** > snabbfliken **Tidsplanera**. Under tidsplaneringen av arbetsordern planeras sedan alla arbetsorderjobb som skapats på arbetsordern till samma underhållsarbetare. Om det behövs kan du redigera valet för växlingsknappen **En underhållsarbetare** i **Alla arbetsorder** för att möjliggöra planering av flera arbetare eller en arbetare för arbetsorderjobben.
 
 Planeringsprocessen i Tillgångshantering innehåller flera faktorer i planeringsberäkningen:
 
-- Beräkna poängen för både arbetsorder och underhållsarbetare. Resultat för arbetsorder och underhållsarbetare ställs in **Parametrar för tillgångshantering**. 
+- Beräkna poängen för både arbetsorder och underhållsarbetare. Resultat för arbetsorder och underhållsarbetare ställs in **Parametrar för Tillgångshantering**. 
 - Sökning efter matchande kompetenser, dvs. färdigheter och intyg, som krävs för att utföra jobbet. Kompetenser och intyg ställs in på underhållsarbetare i modulen **Personal** (**Personal** > **Arbetare** > **Arbetare** > välj arbetare i listan > fliken **Arbetare** > avsnittet **Kompetenser** > knapparna **Kompetenser** och **Intyg**). Du kan också lägga till kompetenser och intyg i underhållsjobbtyper och yrkesgrenar för underhållsjobb. Läs mer om kompetenser och underhållsjobbtyper i [Kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).  
 
 ## <a name="scores-used-in-work-order-scheduling"></a>Poäng som används i tidsplanering för arbetsorder

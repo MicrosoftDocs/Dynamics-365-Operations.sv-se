@@ -1,6 +1,6 @@
 ---
 title: Aktivera flera leveranssätt genom upphämtning för kundorder
-description: I det här avsnittet beskrivs funktionerna i Microsoft Dynamics 365 Commerce som gör att du kan skapa kundorder för upphämtning i en butik.
+description: I denna artikel beskrivs funktionerna i Microsoft Dynamics 365 Commerce som gör att du kan skapa kundorder för upphämtning i en butik.
 author: hhainesms
 ms.date: 06/07/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: a8fec96eb644cccea3566a32f3eb2ac3c699faa412be2bb9cdb2690d34999542
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 555ae3900bd7f9c66366f19a6eb2f12503898c93
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745366"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858918"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Aktivera flera leveranssätt genom upphämtning för kundorder
 
@@ -28,7 +28,7 @@ I Microsoft Dynamics 365 Commerce version 10.0.16 och senare kan organisationer 
 
 ## <a name="enable-and-configure-pickup-delivery-modes"></a>Aktivera och konfigurera leveranssätt
 
-Om du vill använda den här funktionen ska du aktivera **Stöd för flera upphämtnings-leveranssätt** i arbetsytan **Funktionshantering** i Commerce-administrationen. När du har aktiverat funktionen krävs ytterligare konfiguration.
+Om du vill använda den här funktionen ska du aktivera **Stöd för flera upphämtnings-leveranssätt** i arbetsytan **Funktionshantering** i Commerce headquarters. När du har aktiverat funktionen krävs ytterligare konfiguration.
 
 I Commerce version 10.0.15 och tidigare kan organisationer endast definiera ett enda leveranssätt som det avsedda upphämtnings-leveranssättet. Denna definition görs på sidan **Commerce-parametrar**. I version 10.0.16 och senare, när du aktiverar funktionen **Stöd för flera olika upphämtnings-leveranssätt** kopieras det leveranssätt som tidigare angavs som upphämtnings-leveranssätt på sidan **Commerce-parametrar** automatiskt till den nya konfigurationen för upphämtnings-leveranssättparametrar.
 
@@ -38,7 +38,7 @@ När du har aktiverat funktionen **Stöd för flera leveranssätt genom upphämt
 
 Fälten **Leveranssätt: utlämning** och **Leveranssätt: elektroniskt**, samt alternativet **Visa endast speditörslägesalternativ för leveransorder** har flyttats till denna snabbflik.
 
-Innan du konfigurerar ytterligare lägen för upphämtning måste du definiera leveranssätten. På sidan **Leveranssätt** i Commerce-administrationen lägger du till de leveranssätt som ska betraktas som leveranssätt genom upphämtning. Kontrollera att all konfiguration är slutförd. Om du till exempel erbjuder "curbside pickup" som ett leveransalternativ för dina online-shoppare för vissa butiker måste du skapa ett nytt leveransläge för detta ändamål. Du kan skapa detta leveransläget med "curbside pickup" som beskrivning. Du vill sedan se till att leveranssättet "curbside pickup" mappas till alla Commerce-kanaler som kan erbjuda detta, inklusive onlinebutiker som kan erbjuda detta alternativ och de enskilda butikskanaler som kommer att erbjuda denna distributionsmetod. Leveranssätt måste också vara kopplade till produkterna. Om det finns vissa produkter som inte kan levereras "curbside pickup" måste du i detta exempel se till att dessa artiklar exkluderas. När du är färdig med att lägga till nya leveranssätt kör du jobbet **Bearbeta leveranssätt** för att skapa relationer mellan leveranssätt, kanaler och artiklar. När jobbet är slutfört öppnar du sidan **Distributionsschema** i Commerce-administrationen och kör distributionsjobbet **1120** för att säkerställa att relevanta kanaldatabaser för Commerce uppdateras med din nya leveranssättskonfiguration.
+Innan du konfigurerar ytterligare lägen för upphämtning måste du definiera leveranssätten. På sidan **Leveranssätt** i Commerce headquarters lägger du till de leveranssätt som ska betraktas som leveranssätt genom upphämtning. Kontrollera att all konfiguration är slutförd. Om du till exempel erbjuder "curbside pickup" som ett leveransalternativ för dina online-shoppare för vissa butiker måste du skapa ett nytt leveransläge för detta ändamål. Du kan skapa detta leveransläget med "curbside pickup" som beskrivning. Du vill sedan se till att leveranssättet "curbside pickup" mappas till alla Commerce-kanaler som kan erbjuda detta, inklusive onlinebutiker som kan erbjuda detta alternativ och de enskilda butikskanaler som kommer att erbjuda denna distributionsmetod. Leveranssätt måste också vara kopplade till produkterna. Om det finns vissa produkter som inte kan levereras "curbside pickup" måste du i detta exempel se till att dessa artiklar exkluderas. När du är färdig med att lägga till nya leveranssätt kör du jobbet **Bearbeta leveranssätt** för att skapa relationer mellan leveranssätt, kanaler och artiklar. När jobbet är slutfört öppnar du sidan **Distributionsschema** i Commerce headquarters och kör distributionsjobbet **1120** för att säkerställa att relevanta kanaldatabaser för Commerce uppdateras med din nya leveranssättskonfiguration.
 
 ![Exempel på ett läge med leveranskonfiguration för drive in-upphämtning.](media/pickupmodes.png)
 
@@ -67,7 +67,7 @@ Inga ytterligare steg krävs på näthandelssidorna för att göra leveranssätt
 
 När flera leveranssätt genom upphämtning är tillgängliga för en kanal ges kunderna en förbättrad upplevelse när de köper produkter som ska hämtas. 
 
-- I näthandelskanaler kan konsumenterna välja valfritt leveranssätt som är tillgängligt för upphämtning. En återförsäljare definierar t. ex. två leveranssätt genom upphämtning (i butik och via drive-in), båda konfigureras i rutnätet **Leveranssätt: upphämtning** och båda gäller för den kanal för orderuppfyllelse kanalen och den produkt som en konsument för närvarande köper. I det här fallet kan konsumenten välja önskat leveranssätt genom upphämtning. Det valda leveranssättet för upphämtning blir då det leveranssätt som är kopplat till försäljningsorderraden när ordern skapas i Commerce-administrationen.
+- I näthandelskanaler kan konsumenterna välja valfritt leveranssätt som är tillgängligt för upphämtning. En återförsäljare definierar t. ex. två leveranssätt genom upphämtning (i butik och via drive-in), båda konfigureras i rutnätet **Leveranssätt: upphämtning** och båda gäller för den kanal för orderuppfyllelse kanalen och den produkt som en konsument för närvarande köper. I det här fallet kan konsumenten välja önskat leveranssätt genom upphämtning. Det valda leveranssättet för upphämtning blir då det leveranssätt som är kopplat till försäljningsorderraden när ordern skapas i Commerce headquarters.
 
     ![Välja ett upphämtningsalternativ inom näthandel.](media/pickupecommerce.png)
 

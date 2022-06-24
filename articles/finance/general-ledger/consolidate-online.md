@@ -1,6 +1,6 @@
 ---
 title: Online ekonomisk konsolidering
-description: Det här avsnittet beskriver online ekonomiska konsolideringar i redovisning.
+description: Den här artikeln beskriver online ekonomiska konsolideringar i redovisning.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: d5848960ec5e30c1356a93ca4cb6545cec9e39de
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: f6c489156ca869e02ba6387c3464cc1e1a248d9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716731"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848561"
 ---
 # <a name="online-financial-consolidations"></a>Online ekonomisk konsolidering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver online ekonomiska konsolideringar i redovisning. Innan du läser det här avsnittet bör du läsa avsnittet [finansiell konsolidering och valutaomräkning – översikt](financial-consolidations-currency-translation.md).
+Den här artikeln beskriver online ekonomiska konsolideringar i redovisning. Innan du läser den här artikeln bör du läsa avsnittet [finansiell konsolidering och valutaomräkning – översikt](financial-consolidations-currency-translation.md).
 
 När du har slutfört inställningarna kan du ange detaljerna för konsolideringen på sidan **konsolidera [Online]**. När du är klar kan du klicka på **OK** eller **Batch** för att bearbeta konsolideringen.
 
@@ -90,7 +90,7 @@ På fliken **valutaomräkning** definierar du juridisk person, konto och valutak
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-Mer information om konsolidering och valutaöversättning finns i det överordnade avsnittet i det här avsnittet [Översikt över ekonomisk konsolidering och valutaomräkning](./financial-consolidations-currency-translation.md).
+Mer information om konsolidering och valutaöversättning finns i det överordnade avsnittet i den här artikeln [Översikt över ekonomisk konsolidering och valutaomräkning](./financial-consolidations-currency-translation.md).
 
 För information om scenarier där du kan skapa konsoliderade bokslut, se [skapa konsoliderade bokslut](./generating-consolidated-financial-statements.md).
 

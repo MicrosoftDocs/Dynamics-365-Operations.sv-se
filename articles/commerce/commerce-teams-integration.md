@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce och Microsoft Teams-integrering, översikt
-description: Det här ämnet innehåller en översikt över Microsoft Dynamics 365 Commerce och Microsoft Teams-integration.
+description: Denna artikel innehåller en översikt över Microsoft Dynamics 365 Commerce- och Microsoft Teams-integrering.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: overview
@@ -12,34 +12,34 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7786a527a9aca08f5d9326570e8a2dafc5059dc5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0b674f40b6bb433bc5e2c9216d649a7f15169442
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692548"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887098"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-overview"></a>Dynamics 365 Commerce och Microsoft Teams-integrering, översikt
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet innehåller en översikt över Microsoft Dynamics 365 Commerce och Microsoft Teams-integration.
+Denna artikel innehåller en översikt över Microsoft Dynamics 365 Commerce- och Microsoft Teams-integrering.
 
-Dynamics 365 Commerce integrerar med Teams för att hjälpa kunder och deras medarbetare att förbättra produktiviteten genom att synkronisera uppgiftshantering mellan de två programmen. Den sömlösa uppgiftshantering som Commerce and Teams-integrationen tillhandahåller, gör att butikschefer och medarbetare kan skapa uppgiftslistor, tilldela uppgifter till flera butiker och spåra status för uppgifter mellan butiker, från antingen programmet eller program.
+Dynamics 365 Commerce integrerar med Teams för att hjälpa kunder och deras medarbetare att förbättra produktiviteten genom att synkronisera uppgiftshantering mellan de två programmen. Den sömlösa uppgiftshantering som Commerce and Teams-integreringen tillhandahåller, gör att butikschefer och medarbetare kan skapa uppgiftslistor, tilldela uppgifter till flera butiker och spåra status för uppgifter mellan butiker, från antingen programmet eller program.
 
-Commerce and Teams-integration är tillgänglig i Commerce version 10.0.18 som finns tillgänglig.
+Commerce and Teams-integrering är tillgänglig i Commerce version 10.0.18 som finns tillgänglig.
 
 ## <a name="key-features"></a>Nyckelfunktioner
 
-Här är några av de nyckelfunktioner som finns i Commerce och Microsoft Teams-integration:
+Här är några av de nyckelfunktioner som finns i Commerce och Microsoft Teams-integrering:
 
 - Etablera Teams genom att dra nytta av väldefinierad information från Commerce, till exempel organisationsstrukturen och information om butiker, arbetare, behörigheter och affärssammanhang.
 - Synkronisera enkelt pågående ändringar (till exempel tillägg av nya butiker eller anställning av nya medarbetare) mellan Commerce och Teams, men behåll Commerce som huvudkälla för organisationsstrukturdata.
 - Integrera uppgiftshantering mellan Commerce och Teams om du vill hjälpa butiksarbetare, butikschefer, regionala chefer och kommunikationschefer att hantera uppgiftshantering från antingen program.
 
-## <a name="prerequisites-for-using-integration-features"></a>Förutsättningar för användning av integrationsfunktioner
+## <a name="prerequisites-for-using-integration-features"></a>Förutsättningar för användning av integreringsfunktioner
 
-Följande förutsättningar måste uppfyllas innan du kan börja använda Microsoft Teams integrationsfunktionerna:
+Följande förutsättningar måste uppfyllas innan du kan börja använda Microsoft Teams integreringsfunktionerna:
 
 - Microsoft 365 Business Standard-licens (denna licens inkluderar Teams.)
 - Azure Active Directory ( Azure AD) konton för alla butikschefer och medarbetare
@@ -47,13 +47,13 @@ Följande förutsättningar måste uppfyllas innan du kan börja använda Micros
 
 ## <a name="conceptual-architecture"></a>Konceptuell arkitektur
 
-följande bild visas den konceptuella arkitekturen för Dynamics 365 Commerce och Microsoft Teams-integration, med en San Francisco-butik som exempel. Både Teams och kassaprogrammet Commerce använder Microsoft Planner som en databas så att uppgifter som publiceras från Teams visas i kassaprogrammet och ad hoc-uppgifter som skapas av butikschefer i kassaprogrammet visas i Teams, vilket leder till en sömlös uppgiftshanteringserfarenhet mellan programmen.    
+följande bild visas den konceptuella arkitekturen för Dynamics 365 Commerce och Microsoft Teams-integrering, med en San Francisco-butik som exempel. Både Teams och kassaprogrammet Commerce använder Microsoft Planner som en databas så att uppgifter som publiceras från Teams visas i kassaprogrammet och ad hoc-uppgifter som skapas av butikschefer i kassaprogrammet visas i Teams, vilket leder till en sömlös uppgiftshanteringserfarenhet mellan programmen.    
 
 ![Arkitektur för Commerce- och Teams-integrering.](media/d365-commerce-teams-integration-conceptual-architecture.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Aktivera Dynamics 365 Commerce och Microsoft Teams-integration](enable-teams-integration.md)
+[Aktivera Dynamics 365 Commerce och Microsoft Teams-integrering](enable-teams-integration.md)
 
 [Provision Microsoft Teams från Dynamics 365 Commerce](provision-teams-from-commerce.md)
 
@@ -63,4 +63,4 @@ följande bild visas den konceptuella arkitekturen för Dynamics 365 Commerce oc
 
 [Mappa butiker och team om det finns befintliga team i Microsoft Teams](map-stores-existing-teams.md)
 
-[Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integration](teams-integration-faq.md)
+[Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integrering](teams-integration-faq.md)

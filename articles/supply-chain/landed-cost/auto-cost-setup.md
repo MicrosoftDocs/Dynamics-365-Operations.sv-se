@@ -1,6 +1,6 @@
 ---
 title: Inställning av automatiska kostnader
-description: I det här avsnittet beskrivs hur du ställer in kostnadsregler för olika inkommande färdnivåer. Baserat på dessa regler beräknar systemet kostnaderna och lägger automatiskt till dem. Därför behöver användarna inte lägga till kostnaderna manuellt.
+description: I denna artikel beskrivs hur du konfigurerar kostnadsregler för olika inkommande färdnivåer. Baserat på dessa regler beräknar systemet kostnaderna och lägger automatiskt till dem. Därför behöver användarna inte lägga till kostnaderna manuellt.
 author: Weijiesa
 ms.date: 01/21/2021
 ms.topic: article
@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ea788ea8d21c4cb6511188e937166bc3df3cd45a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 02c78789fc7531c267cee936fa30a395e6d0b62f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695344"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852401"
 ---
 # <a name="auto-costs-setup"></a>Inställning av automatiska kostnader
 
 [!include [banner](../../includes/banner.md)]
 
-Du kan använda sidan **Automatiska kostnader** för att ställa in kostnadsregler för olika kostnadsområden (såsom färder, leveransbehållare, folio, inköpsorder, artiklar eller överföringsorderrader). Baserat på reglerna och de fält som användarna väljer när de skapar poster för ett av kostnadsområdena, beräknar systemet kostnaderna och lägger automatiskt till dem. Därför behöver användarna inte lägga till kostnaderna manuellt.
+Du kan använda sidan **Automatiska kostnader** för att konfigurera kostnadsregler för olika kostnadsområden (såsom färder, leveransbehållare, folio, inköpsorder, artiklar eller överföringsorderrader). Baserat på reglerna och de fält som användarna väljer när de skapar poster för ett av kostnadsområdena, beräknar systemet kostnaderna och lägger automatiskt till dem. Därför behöver användarna inte lägga till kostnaderna manuellt.
 
-Om du vill arbeta med automatiska kostnader, gå till **Hemtagningskostnad \> Inställning av kostnadsredovisning \> Automatiska kostnader**. Ställ sedan in regler för automatiska kostnader på det sätt som beskrivs i resten av det här avsnittet.
+Om du vill arbeta med automatiska kostnader, gå till **Hemtagningskostnad \> Inställning av kostnadsredovisning \> Automatiska kostnader**. Konfigurera sedan regler för automatiska kostnader på det sätt som beskrivs i resten av denna artikel.
 
 ## <a name="work-with-cost-areas"></a>Arbeta med kostnadsområden
 

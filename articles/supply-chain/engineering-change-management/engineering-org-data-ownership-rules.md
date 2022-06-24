@@ -1,6 +1,6 @@
 ---
 title: Regler för teknikföretag och dataägande
-description: I det här avsnittet beskrivs hur du kan använda ett eller flera teknikföretag för att se till att huvuddata för produkter skapas och underhålls centralt. Ett teknikföretag representerar det företag som äger de tekniska produkterna och det är dess tekniska data.
+description: I denna artikel beskrivs hur du kan använda ett eller flera teknikföretag för att se till att huvuddata för produkter skapas och underhålls centralt. Ett teknikföretag representerar det företag som äger de tekniska produkterna och det är dess tekniska data.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1a05ad1a9d24239e2659c1ffecc21e5e186b1e96
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 47662203669d5dd466990be397c9a4aaf1dd9932
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572923"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875551"
 ---
 # <a name="engineering-companies-and-data-ownership-rules"></a>Regler för teknikföretag och dataägande
 
@@ -56,7 +56,7 @@ Eftersom det tekniska företaget äger tekniskrelevanta data, styr den följande
 - **Skapa och underhålla flöden som är anslutna till teknik versionerna:** det ägande tekniska företaget kan direkt ansluta ett flöde till varje teknisk produktversion. När dessa flöden frisläpps till andra juridiska personer begränsas ändringar av flöden på följande sätt:
 
     - De andra juridiska personerna kan inte ta bort tekniska data på flödena.
-    - De andra juridiska personerna kan lägga till operationer i flödet. På så sätt kan de lägga till lokala flödessteg.
+    - De andra juridiska personerna kan lägga till åtgärder i flödet. På så sätt kan de lägga till lokala flödessteg.
     - Operativa företag kan lägga till helt nya, lokala flöden. Denna ändring kan krävas om du till exempel inte har inkluderat flöden under frisläppandet. Det operativa företaget äger och underhåller dessa lokala flöden. Mer information om frisläppningshantering finns i [Frisläpp produktstrukturer](release-product-structure.md).
     - Alla ändringar som görs lokalt bevaras när uppdateringarna från tekniska företaget släpps igen på flödena.
 

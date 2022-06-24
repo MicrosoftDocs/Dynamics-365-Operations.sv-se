@@ -1,6 +1,6 @@
 ---
 title: ER Skapa erforderliga konfigurationer för att importera data från en extern fil
-description: Det här avsnittet beskriver hur du designar ER-konfigurationer för elektronisk rapportering som importerar data till Microsoft Dynamics 365 Finance-appen från en extern fil.
+description: Den här artikeln beskriver hur du designar ER-konfigurationer för elektronisk rapportering som importerar data till Microsoft Dynamics 365 Finance-appen från en extern fil.
 author: NickSelin
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7eaa35baae8e030d8a8b7ce903554c4876c874b48cfd72d6ac278cf4c0e8a6e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa1dc55e8cdee7d61e5ababe92e8a9234788664f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720866"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865905"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Skapa erforderliga konfigurationer för att importera data från en extern fil
 
@@ -241,7 +241,7 @@ Kör denna formatmappning i testsyfte. Använd filen 1099entries.xml som du tidi
 19. Stäng sidan.
 20. Klicka på Redigera.
 
-    Om du har installerat snabbkorrigeringen "KB 4012871 Stöd för TYS modellmappningar i separata konfigurationer med möjlighet att ange olika typer av krav vid tillämpning av dem i olika versioner av Dynamics 365 Finance" ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)) kör då nästa steg "Aktivera flaggan Standard för modellmappning" för angiven formatkonfiguration. Hoppa annars över nästa steg.  
+    Om du har installerat snabbkorrigeringen "KB 4012871 Stöd för TYS modellmappningar i separata konfigurationer med möjlighet att ange olika typer av krav vid tillämpning av dem i olika versioner av Dynamics 365 Finance" ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), kör då nästa steg "Aktivera flaggan 'Standard för modellmappning'" för angiven formatkonfiguration. Hoppa annars över nästa steg.  
 
 21. Välj Ja i fältet Standard för modellmappning.
 22. Välj "Betalningsmodell 1099" i trädet.

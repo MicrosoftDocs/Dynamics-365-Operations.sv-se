@@ -1,6 +1,6 @@
 ---
 title: Koppla TDS-momskoder till TDS-momsgrupper och definiera formeln för att beräkna TDS
-description: I det här avsnittet beskrivs hur du ställer in TDS-momsgrupper (Tax Deducted at Source) och kopplar TDS-momskoder till TDS-momsgrupper. Om du vill beräkna TDS för en TDS-momsgrupp måste du definiera formeln för TDS-momskoder som är kopplade till den.
+description: I den här artikeln beskrivs hur du ställer in TDS-momsgrupper (Tax Deducted at Source) och kopplar TDS-momskoder till TDS-momsgrupper. Om du vill beräkna TDS för en TDS-momsgrupp måste du definiera formeln för TDS-momskoder som är kopplade till den.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f1326f95c297887213ecfb572a2437867d964925
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 3607e44bdcf7a32b156e6b4639ef907aa923cadc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711248"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853326"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>Koppla TDS-momskoder till TDS-momsgrupper och definiera formeln för att beräkna TDS
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in TDS-momsgrupper (Tax Deducted at Source) och kopplar TDS-momskoder till TDS-momsgrupper. Om du vill beräkna TDS för en TDS-momsgrupp måste du definiera formeln för TDS-momskoder som är kopplade till den.
+I den här artikeln beskrivs hur du ställer in TDS-momsgrupper (Tax Deducted at Source) och kopplar TDS-momskoder till TDS-momsgrupper. Om du vill beräkna TDS för en TDS-momsgrupp måste du definiera formeln för TDS-momskoder som är kopplade till den.
 
 Följ dessa steg om du vill ställa in en TDS-momsgrupp, koppla TDS-momskoder till den och definiera formeln för beräkning av TDS.
 

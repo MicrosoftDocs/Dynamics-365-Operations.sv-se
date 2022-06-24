@@ -1,6 +1,6 @@
 ---
 title: Synkronisera konton direkt från Sales till kunder i Supply Chain Management
-description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera kontakter från Dynamics 365 Sales till Supply Chain Management.
+description: Denna artikel beskriver de mallar och underliggande uppgifter som används för att synkronisera konton från Dynamics 365 Sales till Supply Chain Management.
 author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b3257f4582ede6cd1be8e593a5ed99f5ffd0ca6f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8d415174f62c511626852b91f3591f907b4a85ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063095"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851577"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Synkronisera konton direkt från Sales till kunder i Supply Chain Management
 
@@ -32,7 +32,7 @@ ms.locfileid: "8063095"
 > [!NOTE]
 > Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Microsoft Dataverse för appar](/powerapps/administrator/data-integrator).
 
-Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera konton direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
+Denna artikel beskriver de mallar och underliggande uppgifter som används för att synkronisera konton direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflöden i Potentiell kund till kontanter
 
@@ -63,11 +63,11 @@ Konton hanteras i Sales och synkroniseras med Supply Chain Management som kunder
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Lösningen potentiell kund till kontanter för Sales
 
-Kolumnen **kontonummer** är tillgängligt på sidan **konto**. Det har gjorts en fysisk och en unik nyckel för att stödja integreringen. Fysiska nyckeln i CRM-lösningen (Customer Relationship Management) kan påverka kunder som redan använder kolumnen **kontonummer** men som inte använder unika **kontonummer**-värden för varje konto. Integrationslösningen stöder för närvarande inte fallet.
+Kolumnen **kontonummer** är tillgängligt på sidan **konto**. Det har gjorts en fysisk och en unik nyckel för att stödja integreringen. Fysiska nyckeln i CRM-lösningen (Customer Relationship Management) kan påverka kunder som redan använder kolumnen **kontonummer** men som inte använder unika **kontonummer**-värden för varje konto. Integreringslösningen stöder för närvarande inte fallet.
 
 När ett nytt konto skapas om ett **kontonummer**-värde inte finns, skapas det automatiskt med hjälp av en nummerserie. Värdet består av **ACC** följt av en ökande nummerserie och sedan ett suffix på sex tecken. Här är ett exempel: **ACC-01000-BVRCPS**
 
-När integrationslösningen för Sales används kommer ett uppgraderingsskript anges på kolumnen **kontonummer** för befintliga konton i Sales. Om det inte finns några **kontonummer**-värden kommer nummerserien som beskrivits ovan att användas.
+När integreringslösningen för Sales används kommer ett uppgraderingsskript anges på kolumnen **kontonummer** för befintliga konton i Sales. Om det inte finns några **kontonummer**-värden kommer nummerserien som beskrivits ovan att användas.
 
 ## <a name="preconditions-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 
@@ -101,7 +101,7 @@ I följande illustrationer visas ett exempel på en mallmappning i dataintegreri
 
 ![Mallmappning i dataintegrering.](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 
 [Potentiell kund till pengar](prospect-to-cash.md)

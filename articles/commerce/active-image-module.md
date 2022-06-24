@@ -1,6 +1,6 @@
 ---
 title: Aktiv bildmodul
-description: Det här avsnittet omfattar aktiva bildmoduler och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
+description: Denna artikel omfattar aktiva bildmoduler och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 06b9162029de3f5f3fede9583fa8a4a96fefb2f3
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 3d532d21f847a80a16af814eeaf097a616605795
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780295"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853860"
 ---
 # <a name="active-image-module"></a>Aktiv bildmodul
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet omfattar aktiva bildmoduler och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
+Denna artikel omfattar aktiva bildmoduler och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 
 En aktiv bildmodul kan användas för att bädda in produkttaggar i en bild. Användare som använder näthandel kan sedan hovra över taggarna för att förhandsgranska produkter som visas i bilden. Förhandsgranskningarna visas i popup-fönster. Genom att välja ett förhandsgranskningsfönster kan användarna gå direkt till sidan produktinformation (PDP) för motsvarande produkt.
 
@@ -50,11 +50,11 @@ I följande bild visas ett exempel på ett popup-fönster för förhandsgranskni
 | Stycke          | Stycketext | Modulen har stöd för stycketext i RTF-format. Vissa grundläggande RTF-funktioner stöds, t.ex. hyperlänkar samt fetstil, understrykning och kursiv text. Vissa av dessa funktioner kan åsidosättas av det sidtema som används i modulen. |
 | Länka               | Länktext, länk-URL, ARIA-etikett (Accessible Rich Internet Applications) samt väljaren **Öppna länk i ny flik** | Modulen stöder en eller flera "uppmaning till åtgärd"-länkar. Om en länk läggs till, en länktext, en URL-adress och en ARIA-etikett krävs. ARIA-etiketter ska vara beskrivande i syfte att uppfylla tillgänglighetskraven. Länkar kan konfigureras så att de öppnas på en ny flik. |
 | Undertext           | Rubrik, text och länkar | Du kan lägga till ytterligare kontext för bilden, till exempel namnet på författaren eller designern, eller länkar till personliga bloggar.|
-| Texttema         | **Ljus** eller **Mörk** | Med denna egenskap kan en användare ställa in texten som ljus eller mörk baserat på bakgrundsbild. Den finns som ett tematillägg för Adventure Works. |
+| Texttema         | **Ljus** eller **Mörk** | Med denna egenskap kan en användare konfigurera texten som ljus eller mörk baserat på bakgrundsbild. Den finns som ett tematillägg för Adventure Works. |
 
 ## <a name="add-an-active-image-module-to-a-new-page"></a>Lägg till en aktiv bildmodul på en ny sida
 
-Om du vill lägga till en aktiv bildmodul på en ny sida och ställa in erforderliga egenskaper följer du stegen nedan.
+Om du vill lägga till en aktiv bildmodul på en ny sida och konfigurera erforderliga egenskaper följer du stegen nedan.
 
 1. Gå till **Mallar** och öppna marknadsföringsmallen för webbplatsens startsida (eller skapa en ny marknadsföringsmall).
 1. I platsen **Huvud** i standardsida markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.

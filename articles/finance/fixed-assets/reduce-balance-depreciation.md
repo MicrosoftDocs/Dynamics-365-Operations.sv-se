@@ -1,6 +1,6 @@
 ---
-title: Minska balans för avskrivning
-description: Det här ämnet ger en översikt över metoden för degressiv avskrivning.
+title: Degressiv avskrivning
+description: Den här avsnittet ger en översikt över metoden för degressiv avskrivning.
 author: moaamer
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a81a8f926c30ac26d10c8763f43f39504249616f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 52bf9d4e9cbc9cabda5d5ab17c1a00ecea0d0348
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725329"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883283"
 ---
-# <a name="reduce-balance-depreciation"></a>Minska balans för avskrivning
+# <a name="reduce-balance-depreciation"></a>Degressiv avskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet ger en översikt över metoden för degressiv avskrivning.
+Den här avsnittet ger en översikt över metoden för degressiv avskrivning.
 
 När du ställer in en avskrivningsprofil för anläggningstillgångar och väljer Degressiv avskrivning i fältet **Metod** på sidan **Avskrivningsprofiler** skrivs tillgångarna som har tilldelats den här avskrivningsprofilen av med samma procentsats under varje avskrivningsperiod.
 
@@ -41,7 +41,7 @@ Du kan välja **Kalender** eller **Räkenskapsår** i fältet **Avskrivningsår*
 
 ### <a name="calendar"></a>Kalender
 
-Med **alternativet Kalender** uppdaterar du avskrivningsbasen som vanligtvis är bokfört nettovärde minus skrotvärde, den 1 januari varje år. I exemplet på degressiv avskrivning senare i det här avsnittet utgör avskrivningsbasen täljaren i det första uttrycket i beräkningen som görs i kolumnen Beräkning. 
+Med **alternativet Kalender** uppdaterar du avskrivningsbasen som vanligtvis är bokfört nettovärde minus skrotvärde, den 1 januari varje år. I exemplet på degressiv avskrivning senare i den här artikeln utgör avskrivningsbasen täljaren i det första uttrycket i beräkningen som görs i kolumnen Beräkning. 
 
 Om du väljer **Kalender** är följande alternativ tillgängliga i fältet **Periodfrekvens**, som definierar bokföringsdatumen för periodisering av avskrivningen och beloppen under kalenderåret:
 

@@ -1,6 +1,6 @@
 ---
-title: Verifiera konfiguration av dubbelriktad skrivning i Finance and Operations-appar och Dataverse
-description: I det här avsnittet beskrivs hur du kan avgöra om dubbelriktad skrivning är konfigurerad i Ekonomi och Drift-appar och i Dataverse.
+title: Verifiera konfiguration av dubbelriktad skrivning i Ekonomi och drift-appar och Dataverse
+description: I den här artikeln beskrivs hur du kan avgöra om dubbelriktad skrivning är konfigurerad i Ekonomi och Drift-appar och i Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 3fa16a450032464e445ae166f0699fe0dc388071
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 7131e6c2c4ca4d9c6bb84ad74bf425faf28bd92c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062810"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884471"
 ---
-# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Verifiera konfiguration av dubbelriktad skrivning i Finance and Operations-appar och Dataverse
+# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Verifiera konfiguration av dubbelriktad skrivning i Ekonomi och drift-appar och Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "8062810"
 
 
 
-Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Dataverse. Det beskriver särskilt hur du kan avgöra om dubbelriktad skrivning är konfigurerad i Ekonomi och Drift-appar och i Dataverse.
+Den här artikeln innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Dataverse. Det beskriver särskilt hur du kan avgöra om dubbelriktad skrivning är konfigurerad i Ekonomi och Drift-appar och i Dataverse.
 
 ## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a>Verifiera att dubbelriktad skrivning är konfigurerad i en Ekonomi och Drift-app
 

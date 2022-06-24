@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d81d20045c7b06de01a023d1a34ee653dd696ff1
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e92e6aeab949567e65a13ebdd92f0e5b306ccd30
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711332"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861717"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheter och ändringar i Dynamics AX 7.0 (februari 2016)
 
@@ -320,7 +320,7 @@ Den här funktionen fungerar oberoende av kostnadsredovisningsmetoder som tillde
 <td>Komma åt guidad procedurbaserad hjälp (uppgiftsguider) och begreppsbaserade avsnitt genom att klicka på <strong>Hjälp</strong>.</td>
 <td>AX 2012-hjälpsystemet pekar på HTML-avsnitt som lagras på en lokal webbserver. Kunder och partner kan skapa sin egen hjälp.</td>
 <td>Hjälpsystemet i den aktuella versionen av Dynamics AX visar uppgiftsguider som lagras i BPM för Microsoft Dynamics Lifecycle Services (LCS). Hjälpsystemet visar också avsnitt från webbsidan för Microsoft-dokument. Mer information finns i <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">hjälpsystem</a> och <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">nya uppgiftsguider (februari 2016)</a>.</td>
-<td>Uppgiftsguider tillhandahåller en guidad, interaktiv upplevelse som leder dig genom stegen för en uppgifts- eller affärsprocess. Du kan hämta och anpassa uppgiftsguider som Microsoft tillhandahåller. Det här avsnittet låter dig skapa, distribuera och uppdatera produktinformation på ett snabbare och mer flexibelt sätt. Därför garanterar den att du har tillgång till den senaste konstruktionsinformationen.</td>
+<td>Uppgiftsguider tillhandahåller en guidad, interaktiv upplevelse som leder dig genom stegen för en uppgifts- eller affärsprocess. Du kan hämta och anpassa uppgiftsguider som Microsoft tillhandahåller. Den här artikeln låter dig skapa, distribuera och uppdatera produktinformation på ett snabbare och mer flexibelt sätt. Därför garanterar den att du har tillgång till den senaste konstruktionsinformationen.</td>
 </tr>
 </tbody>
 </table>

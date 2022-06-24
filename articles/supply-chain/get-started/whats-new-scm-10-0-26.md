@@ -1,6 +1,6 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.26 (maj 2022)
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management 10.0.26.
+description: Denna artikel beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management 10.0.26.
 author: kamaybac
 ms.date: 03/01/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 0724045824f39f316c8b3dbb06a48eb6ca6dbef3
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 73f2f9a819312d8d6e111b998c68b65ba85e7818
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625263"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850769"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.26 (maj 2022)
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management version 10.0.26. Den här versionen har ett versionsnummer för 10.0.1192 och är tillgänglig enligt följande:
+Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management version 10.0.26. Den här versionen har ett versionsnummer för 10.0.1192 och är tillgänglig enligt följande:
 
 - **Förhandsversion:** mars 2022
 - **Allmän tillgänglighet för frisläppning (självuppdatering):** april 2022
@@ -29,9 +29,9 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
-Följande tabeller listar de funktioner som ingår i denna version. Vi kan komma att uppdatera detta ämne i syfte att inkludera funktioner som kommit med i bygget efter det att ämnet publicerades första gången.
+Följande tabeller listar de funktioner som ingår i denna version. Vi kan komma att uppdatera denna artikel i syfte att inkludera funktioner som kommit med i versionen efter det att denna artikel publicerades första gången.
 
-| Funktionsområde | Funktion | Mer information | Har aktiverats av  |
+| Funktionsområde | Funktion | Mer information | Har aktiverats av |
 |---|---|---|---|
 | Lager och logistik | [Frågor om tillgängligt lager som stöd för avancerade artiklar för lagerstyrning](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Stöd för lagersynlighet för WHS-artiklar](../inventory/inventory-visibility-whs-support.md) | Funktionshantering:<br>*Aktivera lagerartiklar i lagersynlighet* |
 | Lager och logistik | [Framtida kvatiteter för tillägget Lagersynlighet](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova](../inventory/inventory-visibility-available-to-promise.md) | Aktiveras via tjänstekonfiguration |
@@ -52,15 +52,15 @@ Om du vill slå på eller stänga av någon av dessa funktioner måste du göra 
 | Hantering av lager och lagerstyrning | (Ryssland) Förhindra avvikelser vid utfärdande av GTD för inköpsorder som inkluderar WMS-aktiverade artiklar | Denna funktion är bara tillgänglig för Ryssland. Den förhindrar avvikelser som uppstår vid utfärdande av ryska tulldeklarationsnummer (GTDs) för importinköpsorder som omfattar artiklar som har aktiverats för avancerad lagring (WMS). GTD-utfärdandeprocessen ändrar vissa lagerdimensionsvärden på relaterade lagertransaktioner för fakturor som är inkluderade i den anpassade journalen, vilket leder till avvikelser mellan arbetsposterna för inköpsordern och lagertransaktionerna för inköpet. När den här funktionen är aktiverad genererar GTD-utfärdandeprocessen justeringsarbete som eliminerar sådana avvikelser. |
 | Warehouse management | Utökad parser för GS1-streckkoder | Denna funktion lägger till en förbättrad parser för GS1-symboldata. Den nya parsern implementerar GS1 General Specification-algoritmen för parsning av GS1-symboler och ger starkare datavalidering. Mer information finns i [Skanning av GS1-streckkoder](../warehousing/gs1-barcodes.md). |
 | Warehouse management | Nya sidor för lastplaneringsworkbench | Lägger till två nya workbench-sidor för lastplanering: **Workbench för inkommande lastplanering** och **Workbench för utgående lastplanering**. |
-| Warehouse management | Lagerstyrningsprogram – tom GTD | Denna funktion är bara tillgänglig för Ryssland. Medarbetare som använder mobilapplikationen Warehouse Management kan lämna numren för ryska tulldeklarationer (GTD) tomma vid behov. Om GTD-spårningsdimensionen har ställts in för att tillåta tomma värden, accepterar systemet tomma värden för GTD för lageroperationer under förutsättning att lagerbehållning är tillgänglig. |
+| Warehouse management | Lagerstyrningsprogram – tom GTD | Denna funktion är bara tillgänglig för Ryssland. Medarbetare som använder mobilapplikationen Warehouse Management kan lämna numren för ryska tulldeklarationer (GTD) tomma vid behov. Om GTD-spårningsdimensionen har ställts in för att tillåta tomma värden, accepterar systemet tomma värden för GTD för lageråtgärder under förutsättning att lagerbehållning är tillgänglig. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
 
-Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. Dessa ämnen är inte nödvändigtvis relaterade till de nya funktioner som lagts till för denna version, enligt vad som beskrivs i de föregående avsnitten. De kan dock hjälpa dig att få ut mer av befintliga funktioner.
+Följande hjälpartiklar har nyligen lagts till eller uppdaterats väsentligt. Dessa artiklar är inte nödvändigtvis relaterade till de nya funktioner som lagts till för denna version, enligt vad som beskrivs i de föregående avsnitten. De kan dock hjälpa dig att få ut mer av befintliga funktioner.
 
-| Funktionsområde | Nya eller uppdaterade ämnen |
+| Funktionsområde | Nya eller uppdaterade artiklar |
 |---|---|
-| Kostnadshantering | Uppdaterade exempel och diagram har lagts till i följande avsnitt:<ul><li>[FIFO med fysiskt värde och markering](../cost-management/fifo-physical-value-marking.md)</li><li>[LIFO med fysiskt värde och markering](../cost-management/lifo-physical-value-marking.md)</li><li>[LIFO-datum med fysiskt värde och markering](../cost-management/lifo-date-physical-value-marking.md)</li><li>[Löpande genomsnittlig självkostnad](../cost-management/running-average-cost-price.md)</li><li>[Viktat genomsnitt med fysiskt värde och markering](../cost-management/weighted-average-physical-value-marking.md)</li></ul> |
+| Kostnadshantering | Uppdaterade exempel och diagram har lagts till i följande artiklar:<ul><li>[FIFO med fysiskt värde och markering](../cost-management/fifo-physical-value-marking.md)</li><li>[LIFO med fysiskt värde och markering](../cost-management/lifo-physical-value-marking.md)</li><li>[LIFO-datum med fysiskt värde och markering](../cost-management/lifo-date-physical-value-marking.md)</li><li>[Löpande genomsnittlig självkostnad](../cost-management/running-average-cost-price.md)</li><li>[Viktat genomsnitt med fysiskt värde och markering](../cost-management/weighted-average-physical-value-marking.md)</li></ul> |
 | Anskaffning och källa | [Avvikelser mellan inköpsorderraddata](../troubleshooting/procurement/purchase-order-line-data-issues.md) |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
@@ -81,12 +81,12 @@ Kolla in [Dynamics 365 och branschmoln: Utgivningsvåg 1 plan för 2022](/dynami
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Borttagna och inaktuella funktioner för Supply Chain Management
 
-De [borttagna eller föråldrade funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) i ämnet beskriver funktioner som har schemalagts eller är planerade att tas bort eller inaktuellt för Supply Chain Management.
+Artikeln [Borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver funktioner som har tagits bort eller planeras tas bort eller göras inaktuella för Supply Chain Management.
 
 - En *borttagen* funktion är inte längre tillgänglig i produkten.
 - En *borttagen* funktion är inte i aktiv utveckling och kan tas bort i en kommande uppdatering.
 
-Innan någon funktion tas bort från produkten visas understrykningsmeddelandet i ämnet [borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före avhämtningen.
+Innan någon funktion tas bort från produkten kommer meddelandet om inaktualitet att meddelas i artikeln [Borttagna eller inaktuella funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före borttagning.
 
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
 

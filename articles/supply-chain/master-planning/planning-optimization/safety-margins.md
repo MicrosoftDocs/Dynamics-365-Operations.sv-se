@@ -1,6 +1,6 @@
 ---
 title: Säkerhetsmarginaler
-description: I det här avsnittet beskrivs hur säkerhetsmarginaler kan användas med tillägget planeringsoptimering för Microsoft Dynamics 365 Supply Chain Management .
+description: I denna artikel beskrivs hur säkerhetsmarginaler kan användas med tillägget Planeringsoptimering för Microsoft Dynamics 365 Supply Chain Management .
 author: t-benebo
 ms.date: 09/14/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4982e277dab826f546b0cbef8a66a379bb0f4d94
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c792c33edea9a7f4e2973383b1fcce5b4e8ec998
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469629"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854251"
 ---
 # <a name="safety-margins"></a>Säkerhetsmarginaler
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur säkerhetsmarginaler kan användas med tillägget planeringsoptimering för Microsoft Dynamics 365 Supply Chain Management .
+I denna artikel beskrivs hur säkerhetsmarginaler kan användas med tillägget Planeringsoptimering för Microsoft Dynamics 365 Supply Chain Management .
 
 ## <a name="safety-margins-overview"></a>Säkerhetsmarginaler, översikt
 
@@ -43,7 +43,7 @@ Följande bild visar hur dessa säkerhetsmarginaler gäller över tid.
 
 ![Säkerhetsmarginaler.](media/safety-margins-1.png)
 
-Alla marginaler anges i dagar. Standardvärde *0* (noll), indikerar att ingen marginal tillämpas. Om du ställer in flera marginaler läggs de till den totala tiden från leveransens *orderdatum* till efterfrågans *behovsdatum* . Till exempel har en inställning ingen produktionstid och alla tre marginaltyperna är inställda på en dag. I det här fallet kommer det att finnas tre dagar mellan leveransorder datumet och behovsdatumet, så om orderdatumet är den 1 juli blir behovsdatumet den 4 juli.
+Alla marginaler anges i dagar. Standardvärde *0* (noll), indikerar att ingen marginal tillämpas. Om du konfigurerar flera marginaler läggs de till den totala tiden från leveransens *orderdatum* till efterfrågans *behovsdatum* . Till exempel har en inställning ingen produktionstid och alla tre marginaltyperna är inställda på en dag. I det här fallet kommer det att finnas tre dagar mellan leveransorder datumet och behovsdatumet, så om orderdatumet är den 1 juli blir behovsdatumet den 4 juli.
 
 ### <a name="receipt-margin"></a>Inleveransmarginal
 
@@ -84,13 +84,13 @@ Observera att när en utleveransmarginal används matchar inte relaterade levera
 Innan du kan använda den här funktionen med Planeringsoptimering måste den aktiveras i ditt system. Administratörer kan använda arbetsytan [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
 
 - **Modul:** _huvudplanering_
-- **Funktionsnamn:** _marginaler för planeringsoptimering_
+- **Funktionsnamn:** _marginaler för Planeringsoptimerin_
 
 ### <a name="define-safety-margins"></a>Definiera säkerhetsmarginaler
 
 Säkerhetsmarginalerna har en flexibel inställning. De kan ställas in både på *disponeringsgruppen* och i *huvudplanen* . Det är viktigt att du förstår att marginalerna läggs till ovanpå varandra. En kvittomarginal på två dagar i disponeringsgruppen och tre dagar i huvudplanen kommer att skapa en giltig kvittomarginal på fem dagar.
 
-Möjligheten att ställa in marginalen på huvudplanen kan vara användbar när du vill simulera längre produktionstider eller osäkerhet för ett specifikt plan, men utan att påverka den dagliga planeringen.
+Möjligheten att konfigurera marginalen på huvudplanen kan vara användbar när du vill simulera längre produktionstider eller osäkerhet för ett specifikt plan, men utan att påverka den dagliga planeringen.
 
 #### <a name="coverage-group-safety-margins"></a>Disponeringsgrupper med säkerhetsmarginal
 
@@ -118,7 +118,7 @@ Följ de här stegen om du vill tillämpa en säkerhetsmarginal på en huvudplan
 
 ### <a name="define-whether-calculations-are-based-on-calendar-days-or-work-days"></a>Definiera om beräkningar ska baseras på kalenderdagar eller arbetsdagar
 
-Du kan ställa in alla säkerhetsmarginaler så att de beräknas utifrån antingen kalenderdagar eller arbetsdagar.
+Du kan konfigurera alla säkerhetsmarginaler så att de beräknas utifrån antingen kalenderdagar eller arbetsdagar.
 
 1. Gå till **Huvudplanering \> Inställningar \> Huvudplaneringsparametrar**.
 1. På fliken **Allmänt** i avsnittet **Säkerhetsmarginaler i dagar** ange alternativet **Arbetsdagar** till *Ja* om du vill beräkna marginaler baserat på arbetsdagar. Ställ in alternativet på *Nej* om du vill beräkna marginaler baserat på kalenderdagar.
@@ -171,9 +171,9 @@ En artikel har t.ex. produktionstid på en dag och en kvittomarginal på tre dag
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Kom i gång med planeringsoptimering](get-started.md)
+[Kom i gång med Planeringsoptimering](get-started.md)
 
-[Bristanalys för planeringsoptimering](planning-optimization-fit-analysis.md)
+[Bristanalys för Planeringsoptimering](planning-optimization-fit-analysis.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

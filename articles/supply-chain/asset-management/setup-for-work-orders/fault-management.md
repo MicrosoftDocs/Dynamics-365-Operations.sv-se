@@ -1,6 +1,6 @@
 ---
 title: Felhantering
-description: I det här avsnittet beskrivs felhantering i Tillgångshantering.
+description: I denna artikel beskrivs felhantering i Tillgångshantering.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 149d4fc8026a2a1878155d2b708cf3a79dd0e5af966db4e7f9339d8ca582da70
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10a4a209b54aa31c4a2f6970f46ab8b1a2cbef97
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6711963"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874171"
 ---
 # <a name="fault-management"></a>Felhantering
 
@@ -28,7 +28,7 @@ ms.locfileid: "6711963"
 
  
 
-I tillgångshantering kan du använda feldesignern för att ställa in felsymtom, felområden och feltyper för tillgångstyper. På så sätt kan du hantera fel som upptäcks på tillgångar. Dessutom kan felorsaker och förslag om hur du korrigerar fel registreras på en arbetsorder.
+I Tillgångshantering kan du använda feldesignern för att konfigurera felsymtom, felområden och feltyper för tillgångstyper. På så sätt kan du hantera fel som upptäcks på tillgångar. Dessutom kan felorsaker och förslag om hur du korrigerar fel registreras på en arbetsorder.
 
 Processen för felregistrering och felhantering består av dessa steg.
 
@@ -95,7 +95,7 @@ Följ dessa steg för att skapa en lista över feltyper som kan användas i feld
 I feldesignern ställer du in feldata för tillgångstyper.
 
 1. Välj **Tillgångshantering** \> **Inställningar** \> **Fel** \> **Feldesigner**.
-2. I det vänstra fönstret väljer du den typ av tillgång som du vill ställa in en felpost för.
+2. I det vänstra fönstret väljer du den typ av tillgång som du vill konfigurera en felpost för.
 3. På snabbfliken **Felsymptom** väljer du **Lägg till rad** och väljer sedan ett felsymptom i fältet **Felsymptom**.
 4. På snabbfliken **Felområde** väljer du **Lägg till rad** och väljer sedan ett felområde i fältet **Felområde**.
 5. På snabbfliken **Feltyp** väljer du **Lägg till rad** och väljer sedan en feltyp i fältet **Feltyp**.

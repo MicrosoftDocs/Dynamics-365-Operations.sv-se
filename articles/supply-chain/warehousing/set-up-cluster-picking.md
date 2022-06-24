@@ -1,6 +1,6 @@
 ---
 title: Ställa in klusterplockning
-description: Det här avsnittet beskriver hur du konfigurerar klusterplockning och hur du tillämpar artikelbekräftelse med klusterplockning.
+description: Denna artikel beskriver hur du konfigurerar klusterplockning och hur du tillämpar artikelbekräftelse med klusterplockning.
 author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 859dc7e98a3236d2220ac43f9de426bd73679f0756da0aaa14669e563d5bf609
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3094649da2ce9a700a4d1cde236609013f4b9744
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744592"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862320"
 ---
 # <a name="set-up-cluster-picking"></a>Ställa in klusterplockning
 
 [!include[banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du möjliggör för en arbetare att använda sin mobila enhet för att gruppera plockningarbete till kluster, så att de kan plocka artiklar från en enda plats för flera arbetsordrar samtidigt. Detta kallas *klusterplockning*.
+I denna artikel beskrivs hur du möjliggör för en arbetare att använda sin mobila enhet för att gruppera plockningarbete till kluster, så att de kan plocka artiklar från en enda plats för flera arbetsordrar samtidigt. Detta kallas *klusterplockning*.
 
 ## <a name="about-cluster-picking"></a>Om klusterplockning
 
@@ -35,7 +35,7 @@ Om det behövs kan en anställd skicka ett kluster till en annan arbetare. Detta
 
 ## <a name="enable-cluster-picking"></a>Aktivera klusterplockning
 
-Om du vill aktivera klusterplockning måste du ställa in följande:
+Om du vill aktivera klusterplockning måste du konfigurera följande:
 
 - **Klusterprofiler** – Ange om kluster-ID:n ska genereras automatiskt, antalet positioner som ska användas, när kluster ska brytas och plockarbetet ska ordnas och verifieras.
 
@@ -55,7 +55,7 @@ Så här ställer du in en klusterprofil:
 
 1. Klicka på **Ny** om du vill skapa en ny profil.
 
-1. Klicka på **Skapa kluster** och under **Klustersortering**, klickar du på **Ny** för att ställa in sorteringskriterier för klustret. Sorteringskriteriet kontrollerar den följd i vilken arbetaren ska utföra plockningsarbetet. Du kan lägga till så många villkor du vill.
+1. Klicka på **Skapa kluster** och under **Klustersortering**, klickar du på **Ny** för att konfigurera sorteringskriterier för klustret. Sorteringskriteriet kontrollerar den följd i vilken arbetaren ska utföra plockningsarbetet. Du kan lägga till så många villkor du vill.
 
 1. I fältet **Sekvensnummer** anger du ett värde som definierar i vilken ordning sorteringskriterierna ska bearbetas.
 

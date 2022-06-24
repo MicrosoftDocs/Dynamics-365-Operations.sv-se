@@ -1,6 +1,6 @@
 ---
-title: Integrera Customer Voice i näthandelssidor
-description: Det här avsnittet beskriver hur man integrerar Microsoft Dynamics 365 Customer Voice i Dynamics 365 Commerce näthandelssidor.
+title: Integrera Customer Voice med webbplatssidor för näthandel
+description: Denna artikel beskriver hur man integrerar Microsoft Dynamics 365 Customer Voice i Dynamics 365 Commerce-näthandelssidor.
 author: samjarawan
 ms.date: 05/17/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
-ms.openlocfilehash: 272ec1a59ed45b2d2336dcfea16051d27011360f
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: c8c67ecf4950c92fc91c8d119e06e5e8afff0ddf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767967"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850340"
 ---
-# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Integrera Customer Voice i näthandelssidor
+# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Integrera Customer Voice med webbplatssidor för näthandel
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur man integrerar Microsoft Dynamics 365 Customer Voice i Dynamics 365 Commerce näthandelssidor.
+Denna artikel beskriver hur man integrerar Microsoft Dynamics 365 Customer Voice i Dynamics 365 Commerce-näthandelssidor.
 
-Du kan integrera [Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) i din e-handelsplats för att samla in, analysera och spåra återrapportering från kunder i realtid. För att komma igång med integrationen måste du skapa ett konto och välja en Customer Voice-projektmall för den typ av feedback som du vill samla in.
+Du kan integrera [Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) i din näthandelsplats för att samla in, analysera och spåra återrapportering från kunder i realtid. För att komma igång med integreringen måste du skapa ett konto och välja en Customer Voice-projektmall för den typ av feedback som du vill samla in.
 
 ## <a name="integrate-the-customer-voice-service"></a>Integrera Customer Voice-tjänst
 
@@ -37,7 +37,7 @@ Följ dessa steg för att välja en Customer Voice-projektmall.
 1. Välj projektmallen för den typ av feedback som du vill samla in och välj sedan **Nästa**.
 1. På fliken **Skicka**, under **Välj ett inbäddningsformat**, välj ett inbäddningsformat. Fältet **Inbäddad kod** visar koden som måste bäddas in i Commerce-webbplatsbyggaren.
 
-I exemplen i det här avsnittet används projektmallen **Periodisk kundöversikt** och det inbäddade formatet **Knapp**.
+I exemplen i denna artikel används projektmallen **Periodisk kundöversikt** och det inbäddade formatet **Knapp**.
 
 Följande exempelillustration visar sidan för projektmall **Periodisk kundöversikt** där alternativet för inbäddat format för **Knapp** inbäddningsformatet är valt och inbäddningskoden för det alternativet visas i fältet **Inbäddad kod**. Tre separata åtgärder krävs för att den angivna koden ska vara obligatorisk på dina webbplatssidor, enligt beskrivningen i följande avsnitt.
 

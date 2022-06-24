@@ -1,6 +1,6 @@
 ---
 title: Använd sammanfogningsdatakällor i ER-modellmappningar för att hämta data från flera programtabeller
-description: Det här avsnittet beskriver hur du kan använda datakällor av sammanfogningstyp i elektronisk rapportering (ER).
+description: Den här artikeln beskriver hur du kan använda datakällor av sammanfogningstyp i elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 04/26/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: c9a06c048e98676e30a6652cad6634c2e13531d4ebc6d35f325f4c7153cd82ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0994c19ad79a3e73dc787ef8d82716db637f9ab0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723223"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845553"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Använd sammanfogningsdatakällor för att hämta data från flera programtabeller i ER-modellmappningar (elektronisk rapportering)
 
@@ -40,15 +40,15 @@ I den konfigurerade datakällan **Sammanfoga** när alla datakällor är av type
 > [!NOTE]
 > Med funktionen **VALUEIN** i ER-uttryck som anger villkor för sammanfogning av poster i datakällor av sammanfogningstyp som ännu inte stöds. Besök sidan [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md) för mer information om denna funktion.
 
-Om du vill veta mer om den här funktionen fyller du i exemplet i det här avsnittet.
+Om du vill veta mer om den här funktionen fyller du i exemplet i den här artikeln.
 
 ## <a name="example-use-join-data-sources-in-er-model-mappings"></a>Exempel: Använd sammanfogningsdatakällor i ER-modell mappningar
 
-Följande steg beskriver hur systemadministratören eller den elektroniska rapportfunktionen kan konfigurera en ER-modellmappning (elektronisk rapportering) för att hämta data från flera programtabeller samtidigt genom att använda datakällor av typen **sammanfogning** för att förbättra prestanda för dataåtkomst. Dessa steg kan utföras för alla företag med Dynamics 365 Finance eller som RCS (Regulatory Configuration Services).
+Följande steg beskriver hur systemadministratören eller den elektroniska rapportfunktionen kan konfigurera en ER-modellmappning (elektronisk rapportering) för att hämta data från flera programtabeller samtidigt genom att använda datakällor av typen **sammanfogning** för att förbättra prestanda för dataåtkomst. Dessa steg kan utföras i alla företag som Dynamics 365 Finance eller Regulatory Configuration Services (RCS).
 
 ### <a name="prerequisites"></a>Förutsättningar
 
-Om du vill slutföra exemplen i det här avsnittet måste du ha åtkomst till något av följande beroende på vilken service som används för att slutföra dessa steg:
+Om du vill slutföra exemplen i den här artikeln måste du ha åtkomst till något av följande beroende på vilken service som används för att slutföra dessa steg:
 
 **Gå till Finance för någon av följande roller:**
 
@@ -257,7 +257,7 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
 
 ## <a name="limitations"></a>Begränsningar
 
-Som du ser i exemplet i det här avsnittet kan **KOPPLA**-datakällan skapas från flera datakällor som beskriver de enskilda datauppsättningarna för poster som måste kopplas. Du kan konfigurera dessa datakällor med hjälp av inbyggt ER-[FILTER](er-functions-list-filter.md). När du konfigurerar datakällan så att den anropas utanför **KOPPLA**-datakällan kan du använda företagsintervall som en del av villkor för dataurval. Den inledande implementeringen av **KOPPLA**-datakällan stöder inte datakällor av den här typen. Om du till exempel anropar en [FILTER](er-functions-list-filter.md)-baserad datakälla inom körningsintervallet av en **KOPPLA**-datakälla, och den anropade datakällan innehåller företagsintervall som en del av villkor för dataurval, uppstår ett undantag.
+Som du ser i exemplet i den här artikeln kan **KOPPLA**-datakällan skapas från flera datakällor som beskriver de enskilda datauppsättningarna för poster som måste kopplas. Du kan konfigurera dessa datakällor med hjälp av inbyggt ER-[FILTER](er-functions-list-filter.md). När du konfigurerar datakällan så att den anropas utanför **KOPPLA**-datakällan kan du använda företagsintervall som en del av villkor för dataurval. Den inledande implementeringen av **KOPPLA**-datakällan stöder inte datakällor av den här typen. Om du till exempel anropar en [FILTER](er-functions-list-filter.md)-baserad datakälla inom körningsintervallet av en **KOPPLA**-datakälla, och den anropade datakällan innehåller företagsintervall som en del av villkor för dataurval, uppstår ett undantag.
 
 I Microsoft Dynamics 365 Finance version 10.0.12 (augusti 2020) kan du använda företagsintervall inom intervallet för körning av [FILTER](er-functions-list-filter.md)-baserade datakällor som anropas inom körningsintervallet för en **KOPPLA**-datakälla. På grund av begränsningar i programmets [fråge](../dev-ref/xpp-library-objects.md#query-object-model)-verktyg kan företagsintervall endast användas för den första datakällan i en **KOPPLA**-datakälla.
 

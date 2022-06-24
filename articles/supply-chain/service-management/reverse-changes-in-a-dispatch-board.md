@@ -1,6 +1,6 @@
 ---
 title: Återföra ändringar på en utförseltavla
-description: I det här avsnittet beskrivs hur du återför osparade ändringar som du gör på en utförseltavla.
+description: I denna artikel beskrivs hur du återför osparade ändringar som du gör på en utförseltavla.
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d2d801552518ab912ab240398b376017962151d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 08e0e2c2ce01aeb0f9901dc563198562695482f5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676675"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852053"
 ---
 # <a name="reverse-changes-in-a-dispatch-board"></a>Återföra ändringar på en utförseltavla 
 
 [!include [banner](../includes/banner.md)]
 
 
-I det här avsnittet beskrivs hur du återför osparade ändringar som du gör på en utförseltavla. Om du till exempel tilldelar en arbetstagare till en tjänsteaktivitet, sparar informationen och senare bestämmer att du ska tilldela en annan arbetstagare till tjänsteaktiviteten. Du ändrar arbetaren på utförseltavlan och sedan, innan du sparar ändringen, får veta att arbetaren som just tilldelats inte är tillgänglig. Du kan återföra den osparade ändringen, så att den ursprungliga arbetare igen tilldelas till serviceordern.
+I denna artikel beskrivs hur du återför osparade ändringar som du gör på en utförseltavla. Om du till exempel tilldelar en arbetstagare till en tjänsteaktivitet, sparar informationen och senare bestämmer att du ska tilldela en annan arbetstagare till tjänsteaktiviteten. Du ändrar arbetaren på utförseltavlan och sedan, innan du sparar ändringen, får veta att arbetaren som just tilldelats inte är tillgänglig. Du kan återföra den osparade ändringen, så att den ursprungliga arbetare igen tilldelas till serviceordern.
 
 Gör på följande sätt om du vill återföra osparade ändringar på en utförseltavla:
 

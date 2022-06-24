@@ -1,6 +1,6 @@
 ---
 title: Skapande av fraktbehållare
-description: I det här avsnittet beskrivs hur du automatiserar skapandet av behållare för last. Med automatiskt skapande av behållare skapas behållare och plockarbete för leveranser när en påfyllnad bearbetas.
+description: I denna artikel beskrivs hur du automatiserar containerinkapsling av last. Med automatiskt skapande av behållare skapas behållare och plockarbete för leveranser när en påfyllnad bearbetas.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2f738c0404a41ef862d4985a170a0eba991e4dd4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4bdd13d794f01c9971ee1bcbdf206bff6b526afa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686638"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880434"
 ---
 # <a name="containerization"></a>Skapande av fraktbehållare
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du automatiserar skapandet av behållare för last. Med automatiskt skapande av behållare skapas behållare och plockarbete för leveranser när en påfyllnad bearbetas.
+I denna artikel beskrivs hur du automatiserar containerinkapsling av last. Med automatiskt skapande av behållare skapas behållare och plockarbete för leveranser när en påfyllnad bearbetas.
 
-Om du vill ställa in skapande av behållare måste du skapa följande:
+Om du vill konfigurera skapande av behållare måste du skapa följande:
 
 - **Behållartyp** - Definiera fysiska egenskaper för behållarna. Använd behållaretyper för att paketera lagerartiklar i en viss typ och storlek av förpackningsmaterial, till exempel bingar och lastpallar.
 - **Behållargrupper** - Skapa grupper av liknande behållartyper. En behållargrupp kan till exempel inkludera behållartyper som har liknande dimensioner. En behållargrupp anger i vilken ordning behållarna packas och fyllnadsprocenten för varje behållare.
@@ -35,7 +35,7 @@ Om du vill ställa in skapande av behållare måste du skapa följande:
 
 ## <a name="create-wave-templates-for-containerization"></a>Skapa påfyllnadsmallar för skapande av behållare
 
-Du måste ställa in en eller flera påfyllnadsmallar på leverans för skapande av behållare. Påfyllnadsmallar innehåller villkor som fastställer följande:
+Du måste konfigurera en eller flera påfyllnadsmallar på leverans för skapande av behållare. Påfyllnadsmallar innehåller villkor som fastställer följande:
 
 - Hur du bearbetar påfyllnader. Detta kan vara antingen manuellt eller automatiskt.
 - Hur du skapar plockningsarbete. Detta avgörs av påfyllnadsmetoderna. Påfyllnadsmallen måste inkludera metoden för **skapande av behållare** .
@@ -63,7 +63,7 @@ Så här ställer du in en behållartyp:
 
 ## <a name="create-container-groups"></a>Skapa behållargrupper
 
-Du kan ställa in logiska grupper av behållartyper. För varje grupp kan du ange i vilken ordning som behållarna packas och procentsatsen för behållarna som ska fyllas. Artikelns storleksdimensioner avgör om den kommer att passa i en behållare. Den behållare som är närmast artikelns storlek används. Om du har flera behållartyper i en grupp, rekommenderar vi att sekvensen ordnas efter storlek, så att den största, är den första nummer 1 i sekvensen, och den mest minsta behållaren är den sista.
+Du kan konfigurera logiska grupper av behållartyper. För varje grupp kan du ange i vilken ordning som behållarna packas och procentsatsen för behållarna som ska fyllas. Artikelns storleksdimensioner avgör om den kommer att passa i en behållare. Den behållare som är närmast artikelns storlek används. Om du har flera behållartyper i en grupp, rekommenderar vi att sekvensen ordnas efter storlek, så att den största, är den första nummer 1 i sekvensen, och den mest minsta behållaren är den sista.
 
 Så här ställer du in en behållargrupp:
 
@@ -76,7 +76,7 @@ Så här ställer du in en behållargrupp:
 
 ## <a name="create-container-build-templates"></a>Skapa mallar för behållarversion
 
-Du kan ställa in regler för processen att skapa behållare, till exempel blandande regler för kvantiteten och andra emballagestrategier. Du kan till exempel ställa in en regel så att arbetstagare inte kan packa allokeringsrader som representerar försäljningsorder från olika kunder i samma behållare.
+Du kan konfigurera regler för processen att skapa behållare, till exempel blandande regler för kvantiteten och andra emballagestrategier. Du kan till exempel konfigurera en regel så att arbetstagare inte kan packa allokeringsrader som representerar försäljningsorder från olika kunder i samma behållare.
 
 Så här ställer du in en behållarversionsmall:
 
@@ -110,7 +110,7 @@ Så här ställer du in en behållarversionsmall:
 
     Mer information och exempel som visar hur du arbetar med förpackningsstrategier för behållare finns i [Förpackningsstrategier för behållare](container-packing-strategy-overview.md).
 
-1. Välj om du vill ställa in regler för packning av allokeringsrader i behållare **Avbrott för blandningslogik**. Du kan till exempel skapa en regel som låter arbetstagare packa allokeringsrader för två olika artiklar i samma behållare. Om du vill definiera en blandningsregel, följ dessa steg:
+1. Välj om du vill konfigurera regler för packning av allokeringsrader i behållare **Avbrott för blandningslogik**. Du kan till exempel skapa en regel som låter arbetstagare packa allokeringsrader för två olika artiklar i samma behållare. Om du vill definiera en blandningsregel, följ dessa steg:
 
     1. På sidan **Avbrott för blandningslogik**, välj **Ny**.
     1. Välj det register som innehåller fälten som ska användas som ett villkor för det blandande logikavbrottet i fältet **Tabell**.

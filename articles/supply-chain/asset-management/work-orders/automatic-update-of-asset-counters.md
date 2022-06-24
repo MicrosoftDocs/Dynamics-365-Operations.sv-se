@@ -1,6 +1,6 @@
 ---
 title: Automatisk uppdatering av tillgångsräknare
-description: Det här avsnittet beskriver automatisk uppdatering av tillgångsräknare i Tillgångshantering.
+description: Denna artikel beskriver automatisk uppdatering av tillgångsräknare i Tillgångshantering.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9a3814a575fbe4379b59723f269d83379a253ede71962c0c82b5f4cc55d36e6c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c1b04c7cca70ec8b25d40cde86be370bce224388
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738305"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856263"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatisk uppdatering av tillgångsräknare
 
 [!include [banner](../../includes/banner.md)]
 
-Mer information om manuell registrering av tillgångsräknare finns i [Manuell uppdatering av tillgångsräknare](../work-orders/manual-update-of-asset-counters.md). Mer information om hur du ställer in tillgångsräknare finns i [räknare](../setup-for-objects/counters.md).
+Mer information om manuell registrering av tillgångsräknare finns i [Manuell uppdatering av tillgångsräknare](../work-orders/manual-update-of-asset-counters.md). Mer information om hur du konfigurerar tillgångsräknare finns i [räknare](../setup-for-objects/counters.md).
 
 Räknarvärden kan också uppdateras automatiskt från produktionsregistreringar, baserat på produktionstimmar eller produktionskvantitet (det vill säga den kvantitet som produceras). Uppdateringen görs på sidan **uppdatera tillgångsräknare**. Du kan uppdatera en eller flera tillgångar genom att konfigurera en parameter, **Från datum**. Den här parametern anger startdatum för produktionsregistreringar (produktionstimmar eller produktionskvantiteter). Med andra ord anges det datum då räknarens värden ska uppdateras.
 
@@ -45,7 +45,7 @@ Som nämnts ovan kan automatiska räknare uppdateras från produktionsregistreri
 
 3. På snabbfliken **Poster som ska ingå** kan du välja specifika tillgångar, tillgångstyper eller resurser för den automatiska uppdateringen. Välj **filter** och gör relevanta val.
 
-4. På snabbfliken **Kör i bakgrunden** kan du ställa in den automatiska uppdateringen som ett batchjobb, efter behov.
+4. På snabbfliken **Kör i bakgrunden** kan du konfigurera den automatiska uppdateringen som ett batchjobb, efter behov.
 
     Bilden nedan visar ett exempel på dialogrutan **Uppdatera tillgångsräknare**.
 
@@ -65,7 +65,7 @@ Observera följande:
 
 - Du kan fortfarande skapa manuella räknarvärderegistreringar för räknartyper som uppdateras automatiskt. Mer information finns i  [Manuell uppdatering av tillgångsräknare](../work-orders/manual-update-of-asset-counters.md).
 
-- Du kan ställa in räknare som är relaterade till en annan räknare. I detta fall uppdateras relaterade räknare automatiskt samtidigt när en räknare uppdateras. Mer information om hur du ställer in relaterade räknare finns i [räknare](../setup-for-objects/counters.md).
+- Du kan konfigurera räknare som är relaterade till en annan räknare. I detta fall uppdateras relaterade räknare automatiskt samtidigt när en räknare uppdateras. Mer information om hur du konfigurerar relaterade räknare finns i [räknare](../setup-for-objects/counters.md).
 
 
 

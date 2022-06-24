@@ -1,6 +1,6 @@
 ---
 title: Distribuera kantskalenheter på anpassad maskinvara med hjälp av LBD
-description: I det här avsnittet beskrivs hur du provision på lokal kantskalningsenheter genom att använda anpassad maskinvara och distribution som baseras på lokala företagsdata (LBD).
+description: I denna artikel beskrivs hur du tillhandahåller lokala kantskalningsenheter genom att använda anpassad maskinvara och distribution som baseras på lokala affärsdata (LBD).
 author: Mirzaab
 ms.date: 01/24/2022
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 540ac1f6d69d869256f49b8501e18966575903fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 794de8c0d77949789e4046418ac2b55dba1bee02
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674098"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882762"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Distribuera kantskalenheter på anpassad maskinvara med hjälp av LBD
 
 [!include [banner](../includes/banner.md)]
 
-Kantskalningsenheter har en viktig roll i den distribuerade topologin för Supply Chain Management. I hybridtopologin kan du fördela arbetsbelastningar mellan ditt Supply Chain Management molnnav och ytterligare skalningsenheter i molnet eller på kanten.
+Kantskalningsenheter har en viktig roll i den distribuerade topologin för Supply Chain Management. I hybridtopologin kan du fördela arbetsbelastningar mellan din Supply Chain Management-molnhubb och ytterligare skalningsenheter i molnet eller på kanten.
 
-Kantskalningsenheter kan distribueras genom att du skapar en lokal miljö för affärsdata (LBD) [lokal miljö](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) och sedan konfigurerar den till att fungera som skalningsenhet i din distribuerade hybrida topologi för Supply Chain Management. Detta uppnås genom att associera den lokala LBD-miljön med en Supply Chain Management-miljö i molnet, som har konfigurerats för att fungera som ett nav.  
+Kantskalningsenheter kan distribueras genom att du skapar en lokal miljö för affärsdata (LBD) [lokal miljö](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) och sedan konfigurerar den till att fungera som skalningsenhet i din distribuerade hybrida topologi för Supply Chain Management. Detta uppnås genom att associera den lokala LBD-miljön med en Supply Chain Management-miljö i molnet, som har konfigurerats för att fungera somen hubb.  
 
-I det här avsnittet beskrivs hur du ställer in en lokal LBD-miljö som en kantskalningsenhet och kopplar den till ett nav.
+I denna artikel beskrivs hur du konfigurerar en lokal LBD-miljö som en kantskalningsenhet och sedan associerar den med en hubb.
 
 ## <a name="infrastructure-considerations"></a>Att tänka på i infrastruktur
 
@@ -44,21 +44,21 @@ Här finns en översikt av distributionsstegen.
 
 1. **Ställ in och distribuera en LBD-miljö med en *tom* databas.**
 
-    Använd LCS för att distribuera LBD-miljön med den senaste topologin och en tom databas. Mer information finns i avsnittet [Ställ in och distribuera en LBD-miljö med en tom databas](#set-up-deploy) längre fram i det här avsnittet. Du måste använda Supply Chain Management version 10.0.21 eller senare i samtliga hubb- och skalningsenhetsmiljöer.
+    Använd LCS för att distribuera LBD-miljön med den senaste topologin och en tom databas. Mer information finns i avsnittet [Konfigurera och distribuera en LBD-miljö med en tom databas](#set-up-deploy) längre fram i den här artikeln. Du måste använda Supply Chain Management version 10.0.21 eller senare i samtliga hubb- och skalningsenhetsmiljöer.
 
 1. **Ladda upp målpaket till LBD-projekttillgångar i LCS.**
 
-    Förbered program-, plattforms- och anpassningspaket som du använder i hela hubben och vågen och kantskalningsenhet. För mer information, se avsnittet [Ladda upp målpaket till LBD-projekttillgångar i LCS](#upload-packages) senare i det här avsnittet.
+    Förbered program-, plattforms- och anpassningspaket som du använder i hela hubben och vågen och kantskalningsenhet. För mer information, se avsnittet [Ladda upp målpaket till LBD-projekttillgångar i LCS](#upload-packages) senare i den här artikeln.
 
 1. **Service av LBD-miljön med målpaketen.**
 
-    Detta steg säkerställer att samma version och anpassningar distribueras på hubb och eker. Mer information finns i avsnittet [Serva LBD-miljön med målpaket](#service-target-packages) längre fram i det här avsnittet.
+    Detta steg säkerställer att samma version och anpassningar distribueras på hubb och eker. Mer information finns i avsnittet [Serva LBD-miljön med målpaket](#service-target-packages) längre fram i den här artikeln.
 
 1. **Slutför konfigurationen av skalningsenhet och arbetsbelastningstilldelningen.**
 
-    Mer information finns i avsnittet [Tilldela din LBD kantskalningsenhet till en hubb](#assign-edge-to-hub) senare i det här ämnet.
+    Mer information finns i avsnittet [Tilldela din LBD-kantskalningsenhet till en hubb](#assign-edge-to-hub) senare i den här artikeln.
 
-Övriga avsnitt i det här avsnittet innehåller mer information om hur du slutför dessa steg.
+Övriga avsnitt i den här artikeln innehåller mer information om hur du slutför dessa steg.
 
 ## <a name="set-up-and-deploy-an-lbd-environment-with-an-empty-database"></a><a name="set-up-deploy"></a>Ställ in och distribuera en LBD-miljö med en tom databas
 
@@ -67,7 +67,7 @@ Med det här steget skapas en funktionell LBD-miljö. Däremot behöver inte mil
 1. Följ anvisningarna i [Ställa in och distribuera lokala miljöer (plattformsuppdatering 41 och senare)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Du måste använda Supply Chain Management version 10.0.21 eller senare i samtliga hubb- och skalningsenhetsmiljöer. Du måste dessutom använda version 2.12.0 eller senare av infrastrukturskripten. 
 
     > [!IMPORTANT]
-    > Läs resten av det här avsnittet **innan** du går igenom stegen i det avsnittet.
+    > Läs resten av det här avsnittet **innan** du går igenom stegen i artikeln.
 
 1. Innan du beskriver din konfiguration i filen infrastructure\\ConfigTemplate.xml, kör följande skript:
 

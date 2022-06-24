@@ -1,6 +1,6 @@
 ---
 title: Identifiera en hypotes och fastställa mätvärden för ett experiment
-description: I det här avsnittet beskrivs hur du identifierar hypotesen och mätvärden för framgång för ett experiment som du ska köra på en näthandelssajt i Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du identifierar hypotesen och mätvärden för framgång för ett experiment som du ska köra på en näthandelssajt i Dynamics 365 Commerce.
 author: sushma-rao
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: a143f00eedc2ddb3b54f05f2475a616609af8d5a7b8a4d19d0bbcb021290dfd3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b6bdf160522fc93e841ec2f8a4542ff80d8f67f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720942"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852796"
 ---
 # <a name="identify-a-hypothesis-and-determine-success-metrics-for-an-experiment"></a>Identifiera en hypotes och fastställa mätvärden för framgång för ett experiment
-Den första fasen i testcykeln omfattar att identifiera hypotesen för experimentet och fastställa vilka mått du ska spåra för att utvärdera framgång. I bilden nedan visas alla steg som ingår när du [ställer in och kör ett experiment](experimentation-overview.md) på en näthandelssajt i Dynamics 365 Commerce. Ytterligare steg beskrivs i olika avsnitt. 
+Den första fasen i testcykeln omfattar att identifiera hypotesen för experimentet och fastställa vilka mått du ska spåra för att utvärdera framgång. I bilden nedan visas alla steg som ingår när du [konfigurerar och kör ett experiment](experimentation-overview.md) på en näthandelssajt i Dynamics 365 Commerce. Ytterligare steg beskrivs i separata artiklar. 
 
 [ ![Experimentets användarresa – identifiera.](./media/experimentation_identify.svg) ](./media/experimentation_identify.svg#lightbox)
 

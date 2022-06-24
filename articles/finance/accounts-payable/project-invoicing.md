@@ -1,6 +1,6 @@
 ---
 title: Projektfakturering
-description: Det här ämnet ger en översikt över projektfakturering för Tids – och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
+description: Det här avsnittet ger en översikt över projektfakturering för Tids - och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
 author: TaylorVH
 ms.date: 07/10/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: bdb5c9162ab85632c8780a737df0998e4cd34f0c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 4af44127d80c943ed9cebeac21d7e9c8372910f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733860"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861688"
 ---
 # <a name="project-invoicing"></a>Projektfakturering
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet ger en översikt över projektfakturering för Tids – och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
+Det här avsnittet ger en översikt över projektfakturering för Tids - och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
 
 Projekttypen bestämmer vilken faktureringsprocedur som ska användas. Endast de två externa projekttyperna, Tid och material och Fastpris, går att fakturera. Tids- och materialprojekt och fastprisprojekt är alltid kopplade till ett projektkontrakt.
 

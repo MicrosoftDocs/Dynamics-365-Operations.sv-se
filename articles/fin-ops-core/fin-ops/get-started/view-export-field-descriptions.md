@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea52c39ef1c7d7b62f20da9fe4d94103119ccc23
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 75019f3f9bcd081f32d06971b11429bcdd794240
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069283"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847111"
 ---
 # <a name="view-and-export-field-descriptions"></a>Visa och exportera fältbeskrivningar
 
@@ -91,11 +91,11 @@ Det här avsnittet innehåller information som hjälper dig att felsöka problem
 
 ### <a name="i-cant-find-a-field-description"></a>Jag kan inte hitta en fältbeskrivning
 
-Vi håller på att lägga till beskrivningar av de mer komplexa fälten. Om du behöver hjälp med ett visst fält kan du kontakta oss genom att lägga till en kommentar i det här avsnittet.
+Vi håller på att lägga till beskrivningar av de mer komplexa fälten. Om du behöver hjälp med ett visst fält kan du kontakta oss genom att lägga till en kommentar i den här artikeln.
 
 ### <a name="the-field-description-isnt-helpful"></a>Fältbeskrivningen är inte till någon hjälp
 
-Kontakta oss genom att lägga till en kommentar i det här avsnittet. Beskriv gärna vilken ytterligare information du behöver.
+Kontakta oss genom att lägga till en kommentar i den här artikeln. Beskriv gärna vilken ytterligare information du behöver.
 
 ### <a name="i-cant-find-a-field-on-the-field-descriptions-page"></a>Jag kan inte hitta ett fält på sidan Fältbeskrivningar.
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurera SQL Server Reporting Services för lokal distribution
-description: Det här avsnittet innehåller information om hur du konfigurerar SQL Server Reporting Services (SSRS) för en lokal distribution.
+description: Den här artikeln innehåller information om hur du konfigurerar SQL Server Reporting Services (SSRS) för en lokal distribution.
 author: PeterRFriis
 ms.date: 06/23/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 16a35a8dae50cc1bc949f33de87b2beab8b528b3
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: ae1e78a268d6c61cc4ab6afd9e3f6d6b1bd1561a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565929"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876933"
 ---
 # <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a>Konfigurera SQL Server Reporting Services för lokal distribution
 
 [!include [banner](../includes/banner.md)]
 
-Använd stegen i det här avsnittet för att konfigurera SQL Server Reporting Services (SSRS) för din Microsoft Dynamics 365 Finance + Operations (on-premises)-distribution.
+Använd stegen i den här artikeln för att konfigurera SQL Server Reporting Services (SSRS) för din Microsoft Dynamics 365 Finance + Operations (on-premises)-distribution.
 
 1. Öppna Reporting Services Configuration Manager-programmet.
 2. Lämna standardnamnet **servernamn**, som bör vara namnet på den aktuella datorn och **rapportserverinstansen**, **MSSQLSERVER**.

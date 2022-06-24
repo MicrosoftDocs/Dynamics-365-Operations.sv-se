@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 857e9e023aa5648a06ae564936f06c491ea7cefc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ccbb9cf71ff1df7aa336deb5bf9d7dacb8004134
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678106"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862436"
 ---
 # <a name="time-windows"></a>Tidsfönster  
 
 [!include [banner](../includes/banner.md)]
 
-Du kan använda tidsfönster för att optimera planeringen av serviceorderraderna. Du kan ställa in systemet så att serviceorder skapas automatiskt. Du kan ansluta så många serviceorderrader som möjligt till så få serviceorder som möjligt utifrån de kriterier som anges av ett tidsfönster.
+Du kan använda tidsfönster för att optimera planeringen av serviceorderraderna. Du kan konfigurera systemet så att serviceorder skapas automatiskt. Du kan ansluta så många serviceorderrader som möjligt till så få serviceorder som möjligt utifrån de kriterier som anges av ett tidsfönster.
 
 Tidsfönstret specificerar hur långt en serviceorderrad kan flyttas från dess beräkningsdatum. Det beräknade datumet är det datum när serviceorderraden har schemalagts. Datumet baseras på dess intervallinställning och den serviceperiod som du har definierat på sidan för **skapa serviceorder**. Du definierar ett tidsfönster med hjälp av värdena i tabellen som följer.
 
@@ -38,7 +38,7 @@ Tidsfönstret specificerar hur långt en serviceorderrad kan flyttas från dess 
 
 Om inget tidsfönster har angetts för en serviceavtalsrad måste serviceorderraden som hämtas från serviceavtalet köras exakt på det datum då det ursprungligen planerades.
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Skapa tidsfönster](create-time-windows.md)
 

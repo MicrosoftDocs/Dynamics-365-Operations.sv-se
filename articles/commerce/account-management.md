@@ -1,6 +1,6 @@
 ---
 title: Sidor och moduler för kontohantering
-description: Det här ämnet omfattar för kontohantering och moduler i Microsoft Dynamics 365 Commerce.
+description: Denna artikel omfattar sidor för kontohantering och moduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 ms.date: 03/17/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5b26f9f83ad368a7e0fbc0ffe1263a8fec86f99b8a66ee6c4a28d5e061efbc21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c10288aa65d58d1442e742fa8f39b4e380c7b9e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716260"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853886"
 ---
 # <a name="account-management-pages-and-modules"></a>Sidor och moduler för kontohantering
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet omfattar för kontohantering och moduler i Microsoft Dynamics 365 Commerce.
+Denna artikel omfattar sidor för kontohantering och moduler i Microsoft Dynamics 365 Commerce.
 
 Kontohantering refererar till en grupp med sidor som används för att hantera information om användarkonton i Dynamics 365 Commerce. Kontohanteringssidorna omfattar landningssida för kontohantering och sidor för användarprofil, sida för användaradress, sida för orderhistorik, sida för orderinformation, förmånssida och sida för önskelista.
 
@@ -51,7 +51,7 @@ Sidan orderdetaljer innehåller detaljerad information för varje order och du �
 
 ### <a name="my-profile-page"></a>Min profilsida
 
-På min profilsida visas användarens kontoprofilinformation med hjälp av kontoprofilmodulen. På sidan visas den e-postadress som är kopplad till användarens konto, samt vilka inställningar som har ställts in för kontot. Om du ställer in anpassade kundattribut visas även dessa attribut i avsnittet "Ytterligare information". Användarna kan redigera sina namn, inställningar eller ytterligare information (om sådan finns tillgänglig).
+På min profilsida visas användarens kontoprofilinformation med hjälp av kontoprofilmodulen. På sidan visas den e-postadress som är kopplad till användarens konto, samt vilka inställningar som har ställts in för kontot. Om du konfigurerar anpassade kundattribut visas även dessa attribut i avsnittet "Ytterligare information". Användarna kan redigera sina namn, inställningar eller ytterligare information (om sådan finns tillgänglig).
 
 ### <a name="user-address-page"></a>Sidan användaradress
 

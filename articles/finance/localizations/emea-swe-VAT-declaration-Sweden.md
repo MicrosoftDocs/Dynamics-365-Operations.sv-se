@@ -1,6 +1,6 @@
 ---
 title: Momsdeklaration (Sverige)
-description: I detta ämne beskrivs hur du konfigurerar in och genererar en momsdeklaration för Sverige.
+description: I denna artikel beskrivs hur du konfigurerar in och genererar en momsdeklaration för Sverige.
 author: anasyash
 ms.date: 09/20/2021
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Sweden
 ms.author: anasyash
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3f24f810c310ff2ccc2c30c9ca098edb15e2f432
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 4bf94d7155e8e5839c51ab60cd3e4e0b9a430c37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647079"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872362"
 ---
 # <a name="vat-declaration-sweden"></a>Momsdeklaration (Sverige)
 
 [!include [banner](../includes/banner.md)]
 
-I detta ämne beskrivs hur du konfigurerar in och genererar en momsdeklaration för Sverige. Du kan generera en förhandsgranskning av momsdeklarationen i Microsoft Excel. Du kan också generera en momsdeklaration i [dokumenttypsdefinitionsformat (DTD)](https://www.skatteverket.se/omoss/samverkan/forprogramkonstruktorer/dtdfil.4.65fc817e1077c25b83280000.html?q=dtd) och överföra den till [Skatteverkets officiella portal](https://www.skatteverket.se/foretag/moms/deklareramoms.4.7459477810df5bccdd480006935.html).
+I denna artikel beskrivs hur du konfigurerar in och genererar en momsdeklaration för Sverige. Du kan generera en förhandsgranskning av momsdeklarationen i Microsoft Excel. Du kan också generera en momsdeklaration i [dokumenttypsdefinitionsformat (DTD)](https://www.skatteverket.se/omoss/samverkan/forprogramkonstruktorer/dtdfil.4.65fc817e1077c25b83280000.html?q=dtd) och överföra den till [Skatteverkets officiella portal](https://www.skatteverket.se/foretag/moms/deklareramoms.4.7459477810df5bccdd480006935.html).
 
 Om du vill generera rapporten automatiskt måste du först skapa tillräckligt med momskoder för att hålla en separat momsredovisning för respektive ruta i momsdeklarationen. I de programspecifika parametrarna för det elektroniska rapporteringsformatet (ER) för momsdeklarationen måste du dessutom koppla momskoder till sökresultatet för rutorna i momsdeklarationen.
 
-För Sverige måste du konfigurera en (1) sökning: **Sökning i rapportfält**. Mer information om hur du konfigurerar programspecifika parametrar finns i avsnittet [Ställa in programspecifika parametrar för momsdeklarationsfält](#set-up-application-specific-parameters-for-vat-declaration-boxes) längre fram i det här avsnittet.
+För Sverige måste du konfigurera en (1) sökning: **Sökning i rapportfält**. Mer information om hur du konfigurerar programspecifika parametrar finns i avsnittet [Ställa in programspecifika parametrar för momsdeklarationsfält](#set-up-application-specific-parameters-for-vat-declaration-boxes) längre fram i den här artikeln.
 
 I följande tabell visar kolumnen **Sökresultat** det sökresultat som är förkonfigurerat för en viss momsdeklarationsrad i momsdeklarationsformatet. Använd den här informationen för att korrekt koppla momskoder till sökresultatet och sedan till raden i momsdeklarationen.
 

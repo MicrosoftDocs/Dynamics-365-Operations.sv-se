@@ -1,6 +1,6 @@
 ---
 title: Produktionsplanering
-description: Det här ämnet beskriver planering för produktion och förklarar hur du ändrar planerade tillverkningsorder genom att använda Planeringsoptimering.
+description: Denna artikel beskriver planering för produktion och förklarar hur du ändrar planerade tillverkningsorder genom att använda Planeringsoptimering.
 author: t-benebo
 ms.date: 06/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8f23cb62512dfd718fe199867a4b21aaa0eca3fd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 151aa3688c570ea6ec282c297ed18288dd886131
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469070"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873794"
 ---
 # <a name="production-planning"></a>Produktionsplanering
 
@@ -24,11 +24,11 @@ ms.locfileid: "8469070"
 
 Planeringsoptimering stöder flera produktionsscenarier. Om du migrerar från den befintliga, inbyggda huvudplaneringsmotorn är det viktigt att du känner till vissa ändrade beteenden.
 
-Följande video ger en kort introduktion till några av de begrepp som diskuteras i detta ämne: [Dynamics 365 Supply Chain Management: Förbättringar av planeringsoptimering](https://youtu.be/u1pcmZuZBTw).
+Följande video ger en kort introduktion till några av de begrepp som diskuteras i denna artikel: [Dynamics 365 Supply Chain Management: Förbättringar av Planeringsoptimering](https://youtu.be/u1pcmZuZBTw).
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Aktivera funktionen i systemet
 
-Om ditt system inte redan innehåller de funktioner som beskrivs i det här avsnittet, gå till [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktivera funktionen *Planerade produktionsorder för planeringsoptimering*.
+Om ditt system inte redan innehåller de funktioner som beskrivs i denna artikel går du till [Funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen *Planerade produktionsorder för Planeringsoptimering*.
 
 ## <a name="planned-production-orders"></a>Planerade produktionsorder
 
@@ -47,7 +47,7 @@ Planerade tillverkningsorder innehåller det flödes-ID som krävs för produkti
 - **Planerad produktionsorder** – Produktionstiden baseras på den statiska produktionstiden från den frisläppta produkten.
 - **Bekräftad tillverkningsorder** – Produktionstiden baseras på tidsplanering där flödesinformation och relaterade resursbegränsningar används.
 
-Mer information om förväntad tillgänglighet för funktioner finns i [planeringsoptimeringsanalys](planning-optimization-fit-analysis.md).
+Mer information om förväntad tillgänglighet för funktioner finns i [Planeringsoptimerinsanalys](planning-optimization-fit-analysis.md).
 
 Om du är beroende av produktionsfunktionerna som inte är tillgängliga för Planeringsoptimering ännu kan du fortsätta att använda den inbyggda huvudplaneringsmotorn. Inget undantag behövs.
 
@@ -65,7 +65,7 @@ Följ de här stegen om du vill ändra informationen i en planerad order och se 
 2. Godkänna planerade order.
 3. Kör Huvudplanering.
 
-När du kör huvudplanering bör du inte använda filter om planerade tillverkningsorder inkluderas. Mer information finns i avsnittet [Filter](#filters) senare i det här avsnittet.
+När du kör huvudplanering bör du inte använda filter om planerade tillverkningsorder inkluderas. Mer information finns i avsnittet [Filter](#filters) senare i denna artikel.
 
 > [!NOTE]
 > Om leveransdatumet för den planerade ordern ändras till ett senare datum kan efterfrågan pegged mot en ny planerad order. Detta beteende inträffar när det nya leveransdatumet orsakar en fördröjning för den pegged efterfrågan, men enligt inställningarna för ledtid kan förseningen undviks.
@@ -99,7 +99,7 @@ Färdig vara *FG* består av följande komponenter:
 
 Det finns lagerbehållning för råmaterial *R*, medan delprodukt *S1* inte finns i lagret.
 
-När du gör en filtrerad huvudplaneringskörning för färdig vara *FG* får du en planerad produktionsorder för färdig vara *FG*, en planerad inköpsorder för råmaterial *R*, samt en planerade inköpsorder för underprodukt *S1*. Detta är ett oönskat resultat eftersom Planeringsoptimeringen har ignorerat att befintliga lager råmaterial *R* och delprodukt *S1* skulle framställas med hjälp av *S2* snarare än beställas direkt. Detta händer eftersom planeringsoptimering bara har listat komponenter för det färdiga varan *FG* utan relaterad information, till exempel den befintliga tillförseln av komponenter eller dessas standardorderinställningar.
+När du gör en filtrerad huvudplaneringskörning för färdig vara *FG* får du en planerad produktionsorder för färdig vara *FG*, en planerad inköpsorder för råmaterial *R*, samt en planerade inköpsorder för underprodukt *S1*. Detta är ett oönskat resultat eftersom Planeringsoptimeringen har ignorerat att befintliga lager råmaterial *R* och delprodukt *S1* skulle framställas med hjälp av *S2* snarare än beställas direkt. Detta händer eftersom Planeringsoptimering bara har listat komponenter för det färdiga varan *FG* utan relaterad information, till exempel den befintliga tillförseln av komponenter eller dessas standardorderinställningar.
 
 ### <a name="example-2"></a>Exempel 2
 

@@ -1,6 +1,6 @@
 ---
-title: Momsbetalningar och avrundningsregler
-description: Den här avsnittet beskriver hur avrundningsregelinställningar på skattemyndigheter fungerar och avrundning av momssaldot under jobbet Kvitta och bokför moms.
+title: Momsbetalningar och avrundningregler
+description: Den här artikeln beskriver hur avrundningsregelinställningar på skattemyndigheter fungerar och avrundning av momssaldot under jobbet Kvitta och bokför moms.
 author: kailiang
 ms.date: 10/29/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff69afae675b9f8824ac0b29b5611420136b6a57
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 5c24a9850543e9d08ee1726186f433c7cfd26608
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726562"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865695"
 ---
-# <a name="sales-tax-payments-and-rounding-rules"></a>Momsbetalningar och avrundningsregler
+# <a name="sales-tax-payments-and-rounding-rules"></a>Momsbetalningar och avrundningregler
 
 [!include [banner](../includes/banner.md)]
 
-Den här avsnittet beskriver hur avrundningsregelinställningar på skattemyndigheter fungerar och avrundning av momssaldot under jobbet Kvitta och bokför moms.
+Den här artikeln beskriver hur avrundningsregelinställningar på skattemyndigheter fungerar och avrundning av momssaldot under jobbet Kvitta och bokför moms.
 
 Moms måste regelbundet rapporteras och betalas till skattemyndigheten. Den här åtgärden kan slutföras genom att köra processen Reglera och bokför moms på sidan **Moms**. Moms för en period kommer att kvittas mot momskontona och momssaldot kommer att bokföras på momskvittningskontot. Momssaldot som bokförs på momskvittningskontot kan avrundas enligt som krävs av skattemyndigheten genom att ställa in en avrundningsregel på sidan **Moms**. 
 

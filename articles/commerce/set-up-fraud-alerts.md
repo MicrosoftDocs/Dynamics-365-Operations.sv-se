@@ -1,6 +1,6 @@
 ---
 title: Ställa in och arbeta med bedrägerivarningar för kundtjänst
-description: Det här avsnittet innehåller information om hur du ställer in regler för att varna kundtjänstrepresentanter om eventuell falsk information när order bearbetas. Du kan definiera särskilda koder som används automatiskt eller manuellt för att spärra misstänkta order.
+description: Denna artikel innehåller information om hur du konfigurerar regler för att varna kundtjänstrepresentanter om eventuell falsk information när order bearbetas. Du kan definiera särskilda koder som används automatiskt eller manuellt för att spärra misstänkta order.
 author: josaw1
 ms.date: 05/14/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e692d43b8c2648a424ff3b4fdc9d0cf16d0e03702d6a237f71caaf49646c5ec3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 212afd594453d3594fdaef9442a7809e4cafbd07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763678"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885358"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Ställa in och arbeta med bedrägerivarningar för kundtjänst
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver hur du ställer in kriterier och regler för att spärra misstänkt bedrägliga försäljningsorder för vidare undersökning. Funktionen för bedrägerigranskning används för att avgöra informationens giltighet i en försäljningsorder. Om informationen i försäljningsordern verkar vara tveksam utifrån organisationens regler och kriterier för bedrägeri, ordern kan spärras för vidare undersökning. Då kan inte ordern frisläppas till distributionslagret för vidare bearbetning förrän spärren har tagits emot.
+Denna artikel beskriver hur du konfigurerar kriterier och regler för att spärra misstänkt bedrägliga försäljningsorder för vidare undersökning. Funktionen för bedrägerigranskning används för att avgöra informationens giltighet i en försäljningsorder. Om informationen i försäljningsordern verkar vara tveksam utifrån organisationens regler och kriterier för bedrägeri, ordern kan spärras för vidare undersökning. Då kan inte ordern frisläppas till distributionslagret för vidare bearbetning förrän spärren har tagits emot.
 
 > [!NOTE]
 > Funktionen kan endast användas med bearbetning av försäljningsorder för Commerce kundtjänstkanal.

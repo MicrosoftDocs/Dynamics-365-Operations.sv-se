@@ -1,6 +1,6 @@
 ---
 title: Rekrytera jobbkandidater
-description: I detta ämne beskrivs hur du rekryterar kandidater i Dynamics 365 Human Resources.
+description: Den här artikeln beskriver hur du rekryterar kandidater i Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ef2f2c82708fd48055faa7546e7e0c4da51e7b6c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 743c78d3526db2707630229d4cf21531f9641dd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733997"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879262"
 ---
 # <a name="recruit-job-candidates"></a>Rekrytera jobbkandidater
 
@@ -47,11 +47,12 @@ Om du vill skicka rekryteringsförfrågningar i HR-rekrytering måste du först 
 
 När funktionerna har aktiverats ska du välja funktionen med följande steg: 
 1. Gå till **Personal** > **Konfigurera** > **Personalparametrar**.
-2. På fliken  **Rekrytering** , ställ in **Rekrytering har inaktiverats** till **Nej**.
-3. I listan **Rekryteringsupplevelse**, välj **HR-rekrytering**.   
+2. På fliken  **Rekrytering** , ställ in **Rekrytering har aktiverats** till **Ja**.
+3. I listan **Rekryteringsupplevelse**, välj **HR-rekrytering**.  
+4. Klicka på **Spara**. 
 
 > [!Note] 
-> När **HR-rekrytering** har valts blir **Rekryteringsprojekt** (äldre) skrivskyddade. 
+> När **HR-rekrytering** har valts blir **Rekryteringsprojekt** (äldre) inte tillgängliga. 
 
 
 ## <a name="add-a-recruiting-request-location"></a>Lägg till en plats för rekryteringsbegäran

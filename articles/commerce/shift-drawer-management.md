@@ -1,6 +1,6 @@
 ---
 title: Hantering av skift och kassalåda
-description: Det här avsnittet beskriver hur du ställer in och använder shift i Commerces kassor.
+description: Denna artikel beskriver hur du konfigurerar och använder skiften i Commerce-kassan (POS).
 author: jblucher
 ms.date: 05/10/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2ac42c92d38299c20bfcb293ac062aa9e4b1c628
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 9c22f1fce99eaeca7b1081524230742e4709de5c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779754"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877221"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Hantering av skift och kassalåda
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver hur du ställer in och använder shift i Commerces kassor.
+Denna artikel beskriver hur du konfigurerar och använder skiften i Commerce-kassan (POS).
 
 I Dynamics 365 Commerce beskriver termen *skift* kassatransaktionsdata och aktiviteter mellan två tidpunkter. För varje skift jämförs belopp som förväntas mot det belopp som har räknats och deklareras.
 
@@ -66,7 +66,7 @@ För delade skift som ska användas i en butik måste kassalådan ha konfigurera
 
 ## <a name="shift-and-drawer-operations"></a>Åtgärder av kassalåda och skift
 
-Olika åtgärder kan utföras för att ändra status för ett skift eller för att öka eller minska penningbeloppet i kassalådan. Det här avsnittet beskriver dessa skiftoperationer för Modern POS och Cloud POS.
+Olika åtgärder kan utföras för att ändra status för ett skift eller för att öka eller minska penningbeloppet i kassalådan. Det här avsnittet beskriver dessa skiftåtgärder för Modern POS och Cloud POS.
 
 ### <a name="open-shift"></a>Öppna skift
 
@@ -148,7 +148,7 @@ Följande POS-behörigheter påverkar vad vi kan och inte kan göra i olika situ
 
 Det sätt som skift och kassaavstämning används i POS skiljer sig från hur transaktionsdata sammanfattas under utdragsberäkningen. Det är viktigt att du förstår skillnaden. Beroende på konfigurationen och affärsprocesserna kan skiftdata i POS (Z-rapport) och en utdragsberäkning i backoffice ge dig olika resultat. Denna skillnad innebär inte nödvändigtvis att skiftdata eller utdragsberäkningen är fel eller att det finns ett problem med informationen. Det innebär bara att parametrarna som tillhandahålls kan innefatta ytterligare transaktioner eller färre transaktioner eller att transaktionerna har sammanfattats annorlunda.
 
-Även om alla återförsäljare har olika affärsbehov, rekommenderar vi att du ställer in datorn för att undvika situationer där skillnaderna mellan den här typen ska utföras:
+Även om alla återförsäljare har olika affärsbehov, rekommenderar vi att du konfigurerar datorn för att undvika situationer där skillnaderna mellan den här typen ska utföras:
 
 Gå till **Butik och handel \> kanaler \> butiker \> alla butiker \> utdrag/stängning**, och för varje butik anger både **utdragsmetod** och **Stängningsmetod** till **skift**.
 

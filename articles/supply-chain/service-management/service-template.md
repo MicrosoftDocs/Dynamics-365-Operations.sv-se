@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e98884c1c12d40b2b8c0989e2dd5ca4a3738f3f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: f7c99e56751230a7b8881dc55c1d460674cc6f0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670016"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850508"
 ---
 # <a name="service-templates"></a>Servicemallar
 
@@ -32,7 +32,7 @@ Du kan definiera ett serviceavtal som en mall och senare kopiera raderna i malle
 
 En kund som du tillhandahåller en tjänst för har identiska servicehissar på fem olika platser.
 
-Du vill ställa in fem serviceavtal för kunden, en för varje site.
+Du vill konfigurera fem serviceavtal för kunden, en för varje site.
 För att minska inställningsarbetet, och vara säker på att inställningsinformationen i serviceavtalen blir identisk, skapar du ett serviceavtal och anger den som en mall för servicearbetet på hissarna.
 
 Du kan nu kopiera mallraderna till fem nya serviceavtal, så att varje serviceavtal fylls i med raderna från mallen.
@@ -52,7 +52,7 @@ När du kopierar mallrader till dina serviceorder eller serviceavtal visas mallg
 
 Det är enklare att ta reda på vilka mallrader som du bör kopiera om du grupperar mallarna enligt namn som beskriver hur de ska användas.
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Kopiera servicemallsrader](copy-service-template-lines.md)
 

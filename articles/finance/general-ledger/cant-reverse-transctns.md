@@ -1,6 +1,6 @@
 ---
 title: Varför kan jag inte återföra den här transaktionen?
-description: I det här avsnittet beskrivs olika orsaker till varför transaktioner inte kan återföras. Här finns också lösningar på det här problemet.
+description: I den här artikeln beskrivs olika orsaker till varför transaktioner inte kan återföras. Här finns också lösningar på det här problemet.
 author: kweekley
 ms.date: 07/21/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-07-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e18caf1dbdf8191713c17b1793f5da44cf2f182b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9a8b26584b1a9b82440583db693cd14daa580e22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724541"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876194"
 ---
 # <a name="why-cant-i-reverse-this-transaction"></a>Varför kan jag inte återföra den här transaktionen?
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs olika orsaker till varför transaktioner inte kan återföras. Här finns också lösningar på det här problemet.
+I den här artikeln beskrivs olika orsaker till varför transaktioner inte kan återföras. Här finns också lösningar på det här problemet.
 
 ## <a name="symptom"></a>Symptom
 
@@ -35,14 +35,14 @@ Organisationer kan stöta på situationer där de måste återföra en transakti
 
 ## <a name="resolution"></a>Lösning
 
-Transaktioner måste uppfylla specifika kriterier innan de kan återföras. De återstående avsnitten i det här avsnittet tillhandahåller validering för varje modul. Även om det här ämnet fokuserar på transaktioner i Microsoft Dynamics 365 Finance, några av begreppen och validering kan tillämpas på andra appar, t.ex. Dynamics 365 Supply Chain Management.
+Transaktioner måste uppfylla specifika kriterier innan de kan återföras. De återstående avsnitten i den här artikeln tillhandahåller validering för varje modul. Även om det här ämnet fokuserar på transaktioner i Microsoft Dynamics 365 Finance, några av begreppen och validering kan tillämpas på andra appar, t.ex. Dynamics 365 Supply Chain Management.
 
 Ett ställe där en transaktion återförs kan dessutom påverka om den kan återföras. En leverantörsbetalning som bokförs som en check kan till exempel bara återföras från avsnittet **Kontroller** på transaktionssidan för bankkontona. Den kan inte återföras från sidan **Verifikationstransaktioner** i redovisningen.
 
 Om **massåterföringen för flera dokumentfunktion** (eller funktionen massåterföring) är aktiverad i arbetsytan för **funktionshantering** påverkar det hur många transaktioner som kan återföras och var de kan återföras. Den här funktionen ger två fördelar när den aktiveras:
 
 - För vissa transaktionstyper kan mer än en transaktion i taget väljas och återföras från journalen som den bokfördes från, eller från sidan **Verifikationstransaktioner**. De enskilda transaktionerna måste dock ha återförts innan funktionen aktiveras. Innan den här funktionen införas måste transaktioner återföras en i taget.
-- *Vissa* transaktioner för redovisning i redovisningen kan återföras från journalen (allmän journal) eller sidan **Verifikationstransaktioner**. De behöver inte återföras från sidan med underordnade sidor. En leverantörsfakturajournal kan tidigare bara återföras från sidan **Leverantörstransaktioner**. Den kan emellertid nu även återföras från redovisningssidan, från sidan journal eller **Verifikationstransaktioner**. I varje avsnitt i det här avsnittet beskrivs de transaktionstyper som den här förmånen inte gäller för.
+- *Vissa* transaktioner för redovisning i redovisningen kan återföras från journalen (allmän journal) eller sidan **Verifikationstransaktioner**. De behöver inte återföras från sidan med underordnade sidor. En leverantörsfakturajournal kan tidigare bara återföras från sidan **Leverantörstransaktioner**. Den kan emellertid nu även återföras från redovisningssidan, från sidan journal eller **Verifikationstransaktioner**. I varje avsnitt i den här artikeln beskrivs de transaktionstyper som den här förmånen inte gäller för.
 
 Vid massåterföring kan **inte** flera typer av transaktioner återföras. Om en transaktionstyp inte tidigare kunde återföras, kan den inte återföras efter att funktionen har aktiverats. Leverantörsfakturor för inköpsorder kan till exempel inte återföras, oavsett om funktionen Massåterföring är aktiverad eller inte.
 

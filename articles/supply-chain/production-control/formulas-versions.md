@@ -1,6 +1,6 @@
 ---
 title: Formler och formelversioner
-description: Det här avsnittet innehåller information om formler och formelversioner. En formel definierar material, komponenter och resultat för en viss process i processtillverkning. Formler används för att planera och framställa produkter i processtillverkning.
+description: Denna artikel innehåller information om formler och formelversioner. En formel definierar material, komponenter och resultat för en viss process i processtillverkning. Formler används för att planera och framställa produkter i processtillverkning.
 author: johanhoffmann
 ms.date: 09/12/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca7111811d14aaf0f6c8b814877897884e4cd76f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 236a283736078e80506a1ecaab53c013a91c3721
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570283"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844160"
 ---
 # <a name="formulas-and-formula-versions"></a>Formler och formelversioner
 
@@ -43,7 +43,7 @@ När du skapar en formelrad använder du radtypen för att ange hur systemet ska
 | Artikel          | Välj **Vara** när varan är råmaterial eller ett halvfabrikat som plockas från lagret eller när varan är en tjänst. |
 | Fiktiv       | Välj **Fiktiv** när du vill bryta ned formelartiklar på lägre nivåer som finns på formelrader. När du uppskattar batchordern och formelartiklarna bryts, visas komponentartiklarna som formelrader i batchordern. Dessutom läggs motsvarande flöden till i produktionsflödet. Formelartiklar bryts ned genom att använda den aktuella konfigurationen. När du använder radtypen **Fiktiv** kan du hantera produktions och måttkonfigurationer som sker på olika formelnivåer. Om du väljer **Fiktiv** för en produkt på snabbfliken **Tekniker** på sidan **Frisläppt produktinformation** och sedan använder den här produkten i en formel, ändras radtypen för formelraden ändras till **Fiktiv**. Du kan inte välja **Fiktiv** för en faktisk/nominell vikt eller för artiklar vars produktionstyp är **Samprodukt**, **Biprodukt** eller **Planeringsvara**. |
 | Peggad leverans | Välj **Peggad leverans** för att skapa batchorder, tillverkningsorder, kanban, överföringsorder eller inköpsorder för den komponent som finns på receptraden. Tillhörande order skapas baserat på standardinställningarna för order samt ingrediensernas produktionstyp, och skapas när du beräknar batch-ordern. De begärda ingredienskvantiteterna reserveras för batchordern. |
-| Leverantör        | Markera **Leverantör** om tillverkningsprocessen använder en underleverantör och du vill skapa en underproduktions- eller inköpsorder för underleverantören. Den tjänst eller det arbete som underleverantören utför måste skapas genom att använda en formelvara eller en tjänstevara. Du kan koppla varan till den överordnade varan som en formelrad. Flödet måste innehålla en operation som är tilldelad underleverantörens verksamhetsresurs. Denna åtgärd kopplas till formelraden via **Åtg.nr.** . |
+| Leverantör        | Markera **Leverantör** om tillverkningsprocessen använder en underleverantör och du vill skapa en underproduktions- eller inköpsorder för underleverantören. Den tjänst eller det arbete som underleverantören utför måste skapas genom att använda en formelvara eller en tjänstevara. Du kan koppla varan till den överordnade varan som en formelrad. Flödet måste innehålla en åtgärd som är tilldelad underleverantörens verksamhetsresurs. Denna åtgärd kopplas till formelraden via **Åtg.nr.** . |
 
 ## <a name="formula-versions"></a>Formelversioner
 När du skapar en ny formel måste du först skapa en formelversion innan du lägger till artiklar och dessas specifika egenskaper i formelraden. Alla formler måste ha minst en version. Knappen **Godkänd** på en formelversion blir tillgänglig först efter det att en versionspost har sparats. Varje formelversionspost kopplas till en eller flera samprodukter och biprodukter som kan tillverkas när du tillverkar den färdiga produkten. Många produkter kan framställas av samma ingredienser i olika batch-storlekar, i multipler eller genom att använda olika kapaciteter. Du kan skapa så många formelversioner som du behöver.

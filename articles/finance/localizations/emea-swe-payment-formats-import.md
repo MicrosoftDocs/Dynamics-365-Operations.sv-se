@@ -1,6 +1,6 @@
 ---
 title: Importformat för betalning för Sverige
-description: Det här avsnittet innehåller information om BankGirot MAX, importera via BankGirot OCR och BankGirot-returformat för Sverige.
+description: Den här artikeln innehåller information om BankGirot MAX, importera via BankGirot OCR och BankGirot-returformat för Sverige.
 author: anasyash
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Sweden
 ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a2c78a843abe302b681ab715822b9283e9d10635
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: fd27b6d65be3d28f3d7701fc66407dffc16d4e9a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592554"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883060"
 ---
 # <a name="import-payment-formats-for-sweden"></a>Importformat för betalning för Sverige
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller information om BankGirot MAX, importera via BankGirot OCR och BankGirot-returformat för Sverige.
+Den här artikeln innehåller information om BankGirot MAX, importera via BankGirot OCR och BankGirot-returformat för Sverige.
 
 ## <a name="bankgirot-max-bankgirot-ocr"></a>BankGirot MAX, BankGirot OCR
 

@@ -1,6 +1,6 @@
 ---
 title: Bearbetning av varor på väg
-description: Det här avsnittet beskriver hur du arbetar med beställningar av varor på väg. När en order eller ett färd har ställts in för att använda bearbetning av varor på väg, kan varor faktureras innan de har inkommit i lagerstället för förbrukning.
+description: Denna artikel beskriver hur du arbetar med beställningar av varor på väg. När en order eller ett färd har ställts in för att använda bearbetning av varor på väg, kan varor faktureras innan de har inkommit i lagerstället för förbrukning.
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8df07c7c94cf64b0e4cf1def794270e176241b5f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 47e5ef2ef99fcf23af73cfdb6ec57b92ad62f18c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694667"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854396"
 ---
 # <a name="goods-in-transit-processing"></a>Bearbetning av varor på väg
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet beskriver hur du arbetar med beställningar av varor på väg. Den här ordertypen används bara i modulen **Hemtagningskostnad**. När en order eller ett färd har ställts in för att använda bearbetning behöver du inte vänta tills varor tas emot i lagret innan du kan fakturera dem. Istället faktureras varorna när de lämnar leverantörens lagerställe eller ursprungsport och de ekonomiska kostnaderna redovisas när färden börjar. Med den här funktionen kan du ta ansvar för lager på rätt sätt, eftersom varor ofta blir organisationens egendom när de lämnar leveransporten.
+Denna artikel beskriver hur du arbetar med beställningar av varor på väg. Den här ordertypen används bara i modulen **Hemtagningskostnad**. När en order eller ett färd har ställts in för att använda bearbetning behöver du inte vänta tills varor tas emot i lagret innan du kan fakturera dem. Istället faktureras varorna när de lämnar leverantörens lagerställe eller ursprungsport och de ekonomiska kostnaderna redovisas när färden börjar. Med den här funktionen kan du ta ansvar för lager på rätt sätt, eftersom varor ofta blir organisationens egendom när de lämnar leveransporten.
 
 När order för varor på väg används tas de ekonomiskt uppdaterade artiklarna emot i ett interimslagerställe som kallas för ett lager för varor på väg. Varorna stannar sedan i det här lagerstället tills de kan tas emot på det slutliga lagerstället (det lagerställe som har definierats på inköpsraden). De kan inte tas bort manuellt.
 
@@ -104,7 +104,7 @@ Du kan också ta emot varor genom att skapa en införseljournal. Du kan skapa en
 1. I åtgärdsfönstret, på fliken **Hantera** i gruppen **Funktioner** markerar du **Skapa införseljournal**.
 1. I dialogrutan **Skapa inköpsorder** ställ in följande värden:
 
-    - **Initiera kvantitet** – Ange detta alternativ till *Ja* om du vill ställa in kvantiteten från kvantiteten under transport. Om det här alternativet ställs in på *Nej* ges ingen standardkvantitet från varor på väg rader.
+    - **Initiera kvantitet** – Ange detta alternativ till *Ja* om du vill konfigurera kvantiteten från kvantiteten under transport. Om det här alternativet ställs in på *Nej* ges ingen standardkvantitet från varor på väg rader.
     - **Skapa från varor på väg** - Ange det här alternativet till *Ja* för att ta kvantiteter från de valda transitraderna för den markerade färden, behållare eller folio.
     - **Skapa från orderrader** – Ange det här alternativet till *Ja* om du vill ange standardkvantiteten i införseljournalen från inköpsorderraderna. Standardkvantiteten i införseljournalen kan endast anges på det här sättet om kvantiteten på inköpsorderraden matchar kvantiteten på order för varor på väg.
 
@@ -123,7 +123,7 @@ När du aktiverar modulen **Hemtagningskostnad** flera sidor i modulen **Hanteri
 
 Varor kan tas emot med hjälp av en mobil enhet under förutsättning att menyn för den mobila enheten och modulen **Lagerstyrning** har ställts in för att ta emot order för varor på väg. Det här avsnittet beskriver inställningarna som är associerade med inleverans av varor på väg.
 
-För att ställa in mobila enheter för bearbetning av varor på väg, gå till **Lagerstyrning \> Inställningar \> Mobil enhet \> Menyalternativ för mobila enhet**.
+För att konfigurera mobila enheter för bearbetning av varor på väg, gå till **Lagerstyrning \> Inställningar \> Mobil enhet \> Menyalternativ för mobila enhet**.
 
 Hemtagningskostnad lägger till följande arbetsgenereringsprocesser i menyn för mobila enheter som stöd för bearbetning av varor på varor:
 
@@ -151,7 +151,7 @@ Hemtagningskostnad lägger till en ny arbetsordertyp som heter *Varor på väg* 
 Arbetsmallar som har arbetsordertypen *Varor på väg* kan konfigureras att dela arbetsuppgiftsrubriker. På sidan **Arbetsmallar** följer du något av dessa steg:
 
 - Ange max för arbetsuppgiftsrubrik på fliken **Allmänt** för mallen. Dessa max fungerar på samma sätt som de fungerar för arbetsmallar för inköpsorder. (Mer information finns i [arbetsmallar för inköpsorder](/dynamicsax-2012/appuser-itpro/create-a-work-template).)
-- Använd knappen **Arbetsuppgiftshuvudet delas** för att definiera när nya arbetsuppgiftsrubriker ska skapas i systemet baserat på fält som används vid sortering. Om du till exempel vill skapa ett arbetshuvud för varje container-ID, väljer du **Redigera fråga** i åtgärdsrutan och lägger sedan till fältet **Container-ID** på fliken **Sortera** i frågeredigeraren. Fält som läggs till på fliken **Sortering** är tillgängliga för markering som *grupperingsfält*. För att ställa in grupperade fält väljer du **Arbetsuppgiftshuvudet delas** i åtgärdsrutan och markerar kryssrutan i kolumnen **Gruppera efter detta fält** för varje fält som du ska använda som grupperingsfält.
+- Använd knappen **Arbetsuppgiftshuvudet delas** för att definiera när nya arbetsuppgiftsrubriker ska skapas i systemet baserat på fält som används vid sortering. Om du till exempel vill skapa ett arbetshuvud för varje container-ID, väljer du **Redigera fråga** i åtgärdsrutan och lägger sedan till fältet **Container-ID** på fliken **Sortera** i frågeredigeraren. Fält som läggs till på fliken **Sortering** är tillgängliga för markering som *grupperingsfält*. För att konfigurera grupperade fält väljer du **Arbetsuppgiftshuvudet delas** i åtgärdsrutan och markerar kryssrutan i kolumnen **Gruppera efter detta fält** för varje fält som du ska använda som grupperingsfält.
 
 Hemtagningskostnaden [skapar en övertransaktion](over-under-transactions.md) om den registrerade kvantiteten överstiger den ursprungliga orderkvantiteten. När en arbetsuppgiftsrubrik har slutförts uppdaterar systemet status för lagertransaktionerna för den huvudsakliga orderkvantiteten. Den uppdaterar emellertid först den kvantitet som är kopplad till övertransaktionen när det huvudsakliga har köpts in helt.
 

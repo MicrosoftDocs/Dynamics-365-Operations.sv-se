@@ -1,6 +1,6 @@
 ---
 title: Koncernintern huvudplanering
-description: Det här ämnet innehåller information om koncernintern huvudplanering
+description: Denna artikel innehåller information om koncernintern huvudplanering
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,22 +11,22 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 02d1a3675cfe30f2e72237f69509398122d17f05
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4993f981b268127af7c9259aa0e73a8e4a75015a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671882"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851461"
 ---
 # <a name="intercompany-master-scheduling"></a>Koncernintern huvudplanering
 
 [!include [banner](../../includes/banner.md)]
 
-Koncernintern huvudplanering är ett sätt att beräkna behov och generera planerade koncerninterna order mellan flera interna företag. Koncernintern huvudplanering genomförs så många gånger som du anger. Om du vill att Microsoft Dynamics 365 Supply Chain Management ska genomföra koncernintern huvudplanering måste du ställa in huvudplanering i alla koncerninterna företag. Det innefattar ett antal upprepningar då Microsoft Dynamics 365 Supply Chain Management automatiskt skapar en koncernintern inköpsorder, vilket leder till att en koncernintern försäljningsorder skapas, vilket i sin tur leder till nya krav.
+Koncernintern huvudplanering är ett sätt att beräkna behov och generera planerade koncerninterna order mellan flera interna företag. Koncernintern huvudplanering genomförs så många gånger som du anger. Om du vill att Microsoft Dynamics 365 Supply Chain Management ska genomföra koncernintern huvudplanering måste du konfigurera huvudplanering i alla koncerninterna företag. Det innefattar ett antal upprepningar då Microsoft Dynamics 365 Supply Chain Management automatiskt skapar en koncernintern inköpsorder, vilket leder till att en koncernintern försäljningsorder skapas, vilket i sin tur leder till nya krav.
 
-Du ställer in den koncerninterna huvudplanen och den koncerninterna planeringsordningen i parametrarna för **Huvudplanering** i alla koncerninterna företag.
+Du konfigurerar den koncerninterna huvudplanen och den koncerninterna planeringsordningen i parametrarna för **Huvudplanering** i alla koncerninterna företag.
 
-För att sprida kravet genom den koncerninterna kedjan måste du ställa in parametrar för att se till att planerade inköpsorder inköpsorder bekräftas automatiskt, det vill säga tid eller kvantitet i order kan inte ändras. Ställ in den **Bekräfta tidsgräns** i disponeringsgruppen eller **Bekräfta tidsgräns** i huvudplanen. Om ingen **Bekräfta tidsgräns** ställs in skapas inga koncerninterna inköpsorder automatiskt. Endast den första körningen av huvudplaneringen leder till planerade order. Eftersom ingen koncernintern inköpsorder skapas skapas ingen koncernintern försäljningsorder och därmed skapas inga fler koncerninterna inköpsorder, och så vidare.
+För att sprida kravet genom den koncerninterna kedjan måste du konfigurera parametrar för att se till att planerade inköpsorder inköpsorder bekräftas automatiskt, det vill säga tid eller kvantitet i order kan inte ändras. Ställ in den **Bekräfta tidsgräns** i disponeringsgruppen eller **Bekräfta tidsgräns** i huvudplanen. Om ingen **Bekräfta tidsgräns** ställs in skapas inga koncerninterna inköpsorder automatiskt. Endast den första körningen av huvudplaneringen leder till planerade order. Eftersom ingen koncernintern inköpsorder skapas skapas ingen koncernintern försäljningsorder och därmed skapas inga fler koncerninterna inköpsorder, och så vidare.
 
 När du startar den koncerninterna huvudplaneringen utför Microsoft Dynamics 365 Supply Chain Management en huvudplanering i varje koncerninternt företag, och utför sedan en andra huvudplanering i varje koncerninternt företag, och så vidare tills det angivna antalet upprepningar har uppnåtts. Maximalt 30 upprepningar är möjligt men ju fler upprepningar du väljer, desto längre tid tar planeringen.
 

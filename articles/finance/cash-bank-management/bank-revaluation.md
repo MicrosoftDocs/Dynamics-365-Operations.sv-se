@@ -1,6 +1,6 @@
 ---
 title: Bank – omräkning i utländsk valuta
-description: Det här avsnittet innehåller en översikt över processen för bank – omräkning i utländsk valuta. Den innehåller information om inställningar, köra processen, beräkningen för processen och återföring av ombedömningstransaktioner.
+description: Den här artikeln innehåller en översikt över processen för bank – omräkning i utländsk valuta. Den innehåller information om inställningar, köra processen, beräkningen för processen och återföring av ombedömningstransaktioner.
 author: kweekley
 ms.date: 05/16/2019
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a8ce792fdc0c6b441deaead32db04ee0246becc9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: d68232af3e87cef2f86213211e6c87f7d654df33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711215"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863113"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bank – omräkning i utländsk valuta
 
 [!include [banner](../includes/banner.md)]
 
 
-Det här avsnittet innehåller en översikt över processen för bank – omräkning i utländsk valuta. Den förklarar hur du ställer in och kör processen och ger information om beräkningar för processen. Den förklarar också hur du återför ombedömningstransaktionen om återföring krävs.
+Den här artikeln innehåller en översikt över processen för bank – omräkning i utländsk valuta. Den förklarar hur du ställer in och kör processen och ger information om beräkningar för processen. Den förklarar också hur du återför ombedömningstransaktionen om återföring krävs.
 
 Som en del av ett periodslut kräver redovisningspraxis att bankkontosaldon i utländska valutor omvärderas med hjälp av olika valutakurstyper (aktuella, tidigare, genomsnittliga osv.). Funktionen för bank – omräkning i utländsk valuta kan användas för att omräkna en eller flera bankkonton. Den här funktionen är även en global funktion. Därför kan du från en enda sida omvärdera banker över de juridiska personer som du har tillgång till.
 

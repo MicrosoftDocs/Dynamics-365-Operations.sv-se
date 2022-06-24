@@ -1,6 +1,6 @@
 ---
 title: Referenser till ursprungliga fakturor i kreditfakturor
-description: I detta ämne beskrivs hur du ställer in och skriver ut de ursprungliga fakturanumren på relaterade kreditfakturor.
+description: I denna artikel beskrivs hur du ställer in och skriver ut de ursprungliga fakturanumren på relaterade kreditfakturor.
 author: ilkond
 ms.date: 10/26/2021
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c1362bf41416202631dc4b966338e8166b26a67f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ebfeb43aaf137ef336b460f340fbda50f5918d08
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688358"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861543"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Referenser till ursprungliga fakturor i kreditfakturor
 
 [!include [banner](../includes/banner.md)]
 
 
-I vissa länder och regioner finns det ett juridiskt krav på att utskrivna kreditfakturor innehåller referenser till de ursprungliga fakturorna. I detta ämne beskrivs hur du ställer in och skriver ut de ursprungliga fakturanumren på relaterade kreditfakturor.
+I vissa länder och regioner finns det ett juridiskt krav på att utskrivna kreditfakturor innehåller referenser till de ursprungliga fakturorna. I denna artikel beskrivs hur du ställer in och skriver ut de ursprungliga fakturanumren på relaterade kreditfakturor.
 
 ## <a name="prerequisites"></a>Förutsättningar
 

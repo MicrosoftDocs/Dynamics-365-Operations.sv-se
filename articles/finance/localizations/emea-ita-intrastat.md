@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 3b676ba754cded03fdc6d566ffbfbb35c204b03a
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: a4531baf29759607c877c815b849067f718851b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488269"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874375"
 ---
 # <a name="italian-intrastat"></a>Italiensk Intrastat
 
@@ -631,7 +631,7 @@ Följ dessa steg om du vill ställa in italiensk specifika alternativ så att du
 
     Mer information finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-2. I Dynamics 365 Finance, gå till **Moms** > **Inställningar** > **Utländska handelsparametrar**.
+2. I Dynamics 365 Finance går du till **Skatt** > **Inställningar** > **Utländska handelsparametrar**.
 3. På fliken **Intrastat** på snabbfliken **Allmänt** ange följande fält:
 
     - **Region för ursprung/destination**: Välj ditt företags region. Denna region används vid utförsel.
@@ -650,7 +650,7 @@ Följ dessa steg om du vill ställa in italiensk specifika alternativ så att du
 6. På snabbflikarna **Statistiskt värde**, ange alternativet **Skriv ut och exportera statistiska data** till **Ja** om nödvändigt. Den här inställningen aktiverar överföring av statistikavsnittet. Det statistiska avsnittet innehåller data om vikter, ytterligare enheter, statistiska värden, leveransvillkor, leveransscheman, transportlägen och ursprungsområden.
 
     > [!NOTE]
-    > För en kvartalsdeklaration inkluderas inte statistiskt avsnitt i Intrastat-rapporten, eller information om leveransvillkor och transportsätt. Mer information finns i tabellen i avsnittet [Översikt](#overview) i det här avsnittet.
+    > För en kvartalsdeklaration inkluderas inte statistiskt avsnitt i Intrastat-rapporten, eller information om leveransvillkor och transportsätt. Mer information finns i tabellen i avsnittet [Översikt](#overview) i den här artikeln.
 
 7. På fliken **Egenskaper för land/region** ange alla länder eller regioner som din organisation gör affärer med. För varje land eller region anger du följande fält:
 

@@ -1,6 +1,6 @@
 ---
 title: Anpassa webbplatsnavigeringen
-description: I det här avsnittet beskrivs hur du skapar en anpassad onlinemapp för navigering för att ordna dina produkter för bläddring på din Microsoft Dynamics 365 Commerce-webbplats.
+description: I denna artikel beskrivs hur du skapar en anpassad onlinemapp för navigering i syfte att ordna dina produkter för bläddring på din Microsoft Dynamics 365 Commerce-webbplats.
 author: bicyclingfool
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8af68fff17f2f92356ade356da0e75867ed54950d744c6cbe730ad8db4ac3975
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 60aaae397501269be55f5ef75e4314b4e1f0b252
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755892"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863471"
 ---
 # <a name="customize-site-navigation"></a>Anpassa webbplatsnavigeringen
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skapar en anpassad onlinemapp för navigering för att ordna dina produkter för bläddring på din Microsoft Dynamics 365 Commerce-webbplats.
+I denna artikel beskrivs hur du skapar en anpassad onlinemapp för navigering i syfte att ordna dina produkter för bläddring på din Microsoft Dynamics 365 Commerce-webbplats.
 
 Nätbutiker gör vanligtvis att kunderna hittar och bläddrar igenom produkter genom att navigera genom produktkategorier. Den här funktionen tillhandahålls vanligtvis med flikar högst upp på sidan eller genom ett navigeringsfält till vänster. I Dynamics 365 Commerce kan du skapa och hantera den hierarkiska strukturen för kategorinavigeringen och de produkter som ingår i de olika kategorierna.
 

@@ -1,6 +1,6 @@
 ---
 title: Gruppera poster och aggregera beräkningar med hjälp av GROUPBY-datakällor
-description: Det här avsnittet beskriver hur du kan använda datakällor av typen GROUPBY i elektronisk rapportering (ER).
+description: Den här artikeln beskriver hur du kan använda datakällor av typen GROUPBY i elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 03/18/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b79dfe62122a031ae9ed7f51ea7ff578cd47358
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 7b20b5db0794157560f27f15594a84083966642f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462309"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861799"
 ---
 # <a name="group-records-and-aggregate-calculations-by-using-groupby-data-sources"></a>Gruppera poster och aggregera beräkningar med hjälp av GROUPBY-datakällor
 
@@ -69,7 +69,7 @@ Om du vill veta mer om den här funktionen fyller du i det exempel som följer.
 
 I det här exemplet visas hur en användare med rollen Systemadministratör eller Funktionskonsult för elektronisk rapportering kan konfigurera en ER-modellmappning som har datakällan **GROUPBY** som används för att beräkna aggregerade funktioner och grupposter. Modellmappningen används för att skriva ut kontrollrapporten när Intrastat-deklarationen genereras. Den rapporten låter dig granska rapporterade Intrastat-transaktioner.
 
-Procedurerna i detta exempel kan slutföras i **DEMF**-företaget i Microsoft Dynamics 365 Finance. 
+Procedurerna i detta exempel kan slutföras i **DEMF**-företaget DEMF i Microsoft Dynamics 365 Finance. 
 
 ### <a name="prepare-sample-data"></a>Förbered exempeldata
 
@@ -83,7 +83,7 @@ Följ stegen i [Konfigurera ER-ramverket](er-quick-start2-customize-report.md#Co
 
 ### <a name="import-the-standard-er-format-configuration"></a>Importera standardkonfiguration av ER-format
 
-Följ anvisningarna i [Importera standardkonfigurationen för ER -format](er-quick-start2-customize-report.md#ImportERSolution1) för att lägga till standard ER -konfigurationer i din nuvarande instans av Dynamics 365 Finance. Importera version 1 av konfigurationen för **Intrastat-modell** från databasen.
+Följ stegen i [Importera standardkonfiguration för ER-format](er-quick-start2-customize-report.md#ImportERSolution1) för att lägga till ER-standardkonfigurationerna i din nuvarande instans av Dynamics 365 Finance. Importera version 1 av konfigurationen för **Intrastat-modell** från databasen.
 
 ### <a name="create-a-custom-data-model-configuration"></a>Skapa en anpassad konfiguration för datamodell
 

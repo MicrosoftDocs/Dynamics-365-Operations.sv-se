@@ -1,6 +1,6 @@
 ---
-title: Principer för rabattreducering
-description: I det här avsnittet beskrivs hur du ställer in principer för reducering. Principer för reducering styr beteendet när flera rabatter gäller för samma artikel eller transaktion.
+title: Principer för rabattavdrag
+description: I denna artikel beskrivs hur du konfigurerar principer för reducering. Principer för reducering styr beteendet när flera rabatter gäller för samma artikel eller transaktion.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fec7f94aba46f8b1853e0520169dd628fd940a56
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5ccf8dc555862d87e8dc6f5b46e3045c72e88945
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844834"
 ---
 # <a name="rebate-reduction-principles"></a>Principer för rabattreducering
 

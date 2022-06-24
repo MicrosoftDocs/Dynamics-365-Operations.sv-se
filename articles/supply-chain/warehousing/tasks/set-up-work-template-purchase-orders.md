@@ -1,6 +1,6 @@
 ---
-title: Ställ in en arbetsmall för inköpsorder
-description: I det här avsnittet beskrivs hur du ställer in en enkel arbetsmall som ska användas när mottagna artiklar inlagras.
+title: Ställa in en arbetsmall för inköpsorder
+description: I denna artikel beskrivs hur du konfigurerar en enkel arbetsmall som ska användas när mottagna artiklar inlagras.
 author: Mirzaab
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32dbdd8243c6b37cfe0c42d2e7b06adfa32a947a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ee6bc896a979c326001e1596e4a463753005fabf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572299"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877375"
 ---
-# <a name="set-up-a-work-template-for-purchase-orders"></a>Ställ in en arbetsmall för inköpsorder
+# <a name="set-up-a-work-template-for-purchase-orders"></a>Ställa in en arbetsmall för inköpsorder
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in en enkel arbetsmall som ska användas när mottagna artiklar inlagras. Arbetsmallar bestämmer instruktionsuppsättning som visas för lagerställearbetaren på en mobil enhet när artiklar flyttas från inleveransområdet. Du kan använda den här proceduren med uppgifterna i demonstrationsföretaget USMF. Innan du startar guiden skapar du ett arbetspool-id. I det här exemplet används arbetspool-id:t Inkommande. Den här proceduren är avsedd för lagerchefen.
+I denna artikel beskrivs hur du konfigurerar en enkel arbetsmall som ska användas när mottagna artiklar inlagras. Arbetsmallar bestämmer instruktionsuppsättning som visas för lagerställearbetaren på en mobil enhet när artiklar flyttas från inleveransområdet. Du kan använda den här proceduren med uppgifterna i demonstrationsföretaget USMF. Innan du startar guiden skapar du ett arbetspool-id. I det här exemplet används arbetspool-id:t Inkommande. Den här proceduren är avsedd för lagerchefen.
 
 1. I navigeringsfönstret, gå till **Moduler > Lagerstyrning > Inställningar > Arbete > Arbetsmallar**.
 2. Välj **Inköpsorder** i fältet **Typ av arbetsorder**.

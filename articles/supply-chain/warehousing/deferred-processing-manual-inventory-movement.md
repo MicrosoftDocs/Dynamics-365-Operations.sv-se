@@ -1,6 +1,6 @@
 ---
 title: Uppskjuten bearbetning av manuell lagerrörelse
-description: I detta ämne beskrivs hur du använder uppskjuten bearbetning av manuell lagerrörelse i Microsoft Dynamics 365 Supply Chain Management.
+description: I denna artikel bekrivs hur du använder uppskjuten bearbetning av manuell lagerrörelse i Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 04/27/2021
 ms.topic: article
@@ -11,20 +11,20 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c2e7296d77332b665e5d618d39804216f4347ca2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5e5d0a93a4c628d4867161d082b0f0e177ddb95c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670480"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863749"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Uppskjuten bearbetning av manuell lagerrörelse
 
 [!include [banner](../includes/banner.md)]
 
-I detta ämne beskrivs hur du använder uppskjuten bearbetning av manuell lagerrörelse i Microsoft Dynamics 365 Supply Chain Management.
+I denna artikel bekrivs hur du använder uppskjuten bearbetning av manuell lagerrörelse i Microsoft Dynamics 365 Supply Chain Management.
 
-Uppskjuten bearbetning låter lagerarbetare fortsätta att utföra annat arbete medan placeringsoperationen bearbetas i bakgrunden. Uppskjuten bearbetning är användbar när servern får tillfälliga eller oplanerade ökningar i bearbetningstid och den ökade bearbetningstiden kan påverka medarbetarens produktivitet. Arbetstypen *Lagerrörelse* har nu lagts till i den uppsättning arbetstyper som den här funktionen stöder.
+Uppskjuten bearbetning låter lagerarbetare fortsätta att utföra annat arbete medan placeringsåtgärden bearbetas i bakgrunden. Uppskjuten bearbetning är användbar när servern får tillfälliga eller oplanerade ökningar i bearbetningstid och den ökade bearbetningstiden kan påverka medarbetarens produktivitet. Arbetstypen *Lagerrörelse* har nu lagts till i den uppsättning arbetstyper som den här funktionen stöder.
 
 Bakgrundsbearbetning uppnås genom att du använder [funktionen för att bearbeta apphändelser i lagerställe](warehouse-app-events.md).
 
@@ -52,10 +52,10 @@ Följ dessa steg för att konfigurera en policy för arbetsbearbetning:
 1. På snabbfliken **Bearbetningsregler** ställer du in en samling regler som policyn ska gälla för. Använd knappar i verktygsfältet om du vill lägga till och ta bort regler efter behov. För varje regel anger du följande fält:
 
     - **Arbetsordertyp** – Välj den arbetstyp som policyn gäller för.
-    - **Funktion** – Välj den funktion som policyn ska bearbeta. Om du har valt *Lagerrörelse* i fältet **Arbetsordertyp** behöver du inte ställa in detta fälte eftersom både plock- och placeringsfunktioner bearbetas som en enda händelse.
+    - **Funktion** – Välj den funktion som policyn ska bearbeta. Om du har valt *Lagerrörelse* i fältet **Arbetsordertyp** behöver du inte konfigurera detta fälte eftersom både plock- och placeringsfunktioner bearbetas som en enda händelse.
     - **Bearbetningsmetod** – Välj den metod som används för att bearbeta arbetsraden. Om du väljer *Omedelbar* liknar beteendet det beteende när inga policyer för bearbetning av arbetsprocesser används för att bearbeta raden. Om du väljer *Uppskjuten* tillämpar systemet uppskjuten bearbetning som använder batchramverket.
-    - **Uppskjuten bearbetningströskel** – Om du ställer in det här fältet som *0* (noll) finns det inget tröskelvärde. I det här fallet används *uppskjuten* bearbetning om möjligt. Om den specifika beräkningen av tröskelvärde ligger under tröskelvärdet används metoden *Omedelbar*. I annat fall används metoden *Uppskjuten* om möjligt. För försäljnings- och överföringsrelaterat arbete beräknas tröskelvärdet som antalet associerade källbeläggningsrader som bearbetas för arbetet. För lagerpåfyllnadsarbete beräknas tröskelvärdet som antalet arbetsrader som fylls på av arbetet. Genom att ange ett tröskelvärde på till exempel *5* för försäljning säkerställer du att mindre arbeten med färre än fem inledande källbeläggningsrader inte använder uppskjuten bearbetning, men större arbeten kommer att använda den. Tröskelvärdet har endast effekt om fältet **arbetsbearbetningsmetod** har ställts in på *Uppskjuten*.
-    - **Uppskjuten bearbetning av batchgrupp** – Ange batchgruppen som används för bearbetning. Om du har valt *Lagerrörelse* i fältet **Arbetsordertyp** behöver du inte ställa in detta fält, detta eftersom batchgruppen har valts i dialogrutan **Bearbeta händelser i lagerprogram**.
+    - **Uppskjuten bearbetningströskel** – Om du konfigurerar det här fältet som *0* (noll) finns det inget tröskelvärde. I det här fallet används *uppskjuten* bearbetning om möjligt. Om den specifika beräkningen av tröskelvärde ligger under tröskelvärdet används metoden *Omedelbar*. I annat fall används metoden *Uppskjuten* om möjligt. För försäljnings- och överföringsrelaterat arbete beräknas tröskelvärdet som antalet associerade källbeläggningsrader som bearbetas för arbetet. För lagerpåfyllnadsarbete beräknas tröskelvärdet som antalet arbetsrader som fylls på av arbetet. Genom att ange ett tröskelvärde på till exempel *5* för försäljning säkerställer du att mindre arbeten med färre än fem inledande källbeläggningsrader inte använder uppskjuten bearbetning, men större arbeten kommer att använda den. Tröskelvärdet har endast effekt om fältet **arbetsbearbetningsmetod** har ställts in på *Uppskjuten*.
+    - **Uppskjuten bearbetning av batchgrupp** – Ange batchgruppen som används för bearbetning. Om du har valt *Lagerrörelse* i fältet **Arbetsordertyp** behöver du inte konfigurera detta fält, detta eftersom batchgruppen har valts i dialogrutan **Bearbeta händelser i lagerprogram**.
 
 ## <a name="assign-the-work-creation-policy"></a>Tilldela policyn för skapande av arbete
 

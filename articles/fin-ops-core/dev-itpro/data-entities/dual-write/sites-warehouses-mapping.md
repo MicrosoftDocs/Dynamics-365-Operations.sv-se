@@ -1,6 +1,6 @@
 ---
 title: Integrerade platser och lagerställen
-description: I det här avsnittet beskrivs integreringen av plats- och lagerställedata mellan Finance and Operations och Dataverse.
+description: I den här artikeln beskrivs integreringen av plats- och lagerställedata mellan Ekonomi och drift och Dataverse.
 author: t-benebo
 ms.date: 10/09/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: benebotg
 ms.search.validFrom: 2019-08-15
-ms.openlocfilehash: 66c5962933387831bbc3f17b9f29128ceaaf750b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: cd1293094f670c43eb46bc14b8bfe0f2afe43047
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063222"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852610"
 ---
 # <a name="integrated-sites-and-warehouses"></a>Integrerade platser och lagerställen
 
@@ -22,7 +22,7 @@ ms.locfileid: "8063222"
 
 
 
-I det här avsnittet beskrivs integreringen av plats- och lagerställedata mellan Finance and Operations och Dataverse. Driftplatser och driftlagerställen är vanliga koncept i en Supply Chain Management-app. De används för att modellera leveranskedjan för ditt företag.
+I den här artikeln beskrivs integreringen av plats- och lagerställedata mellan Ekonomi och drift och Dataverse. Driftplatser och driftlagerställen är vanliga koncept i en Supply Chain Management-app. De används för att modellera leveranskedjan för ditt företag.
 
 ## <a name="templates"></a>Mallar
 

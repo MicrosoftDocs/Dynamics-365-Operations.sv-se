@@ -1,6 +1,6 @@
 ---
 title: Skapa dynamiska näthandelssidor baserade på URL-parametrar
-description: I detta ämne beskrivs hur du ställer in en Microsoft Dynamics 365 Commerce-näthandelssida som kan använda dynamiskt innehåll baserat på URL-parametrar.
+description: I denna artikel beskrivs hur du konfigurerar en Microsoft Dynamics 365 Commerce-näthandelssida som kan betjäna dynamiskt innehåll baserat på URL-parametrar.
 author: StuHarg
 ms.date: 05/27/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: e2b13403ffb316059476a03857c849b4f9f8cb9c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811041"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884673"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Skapa dynamiska näthandelssidor baserade på URL-parametrar
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-I detta ämne beskrivs hur du ställer in en Microsoft Dynamics 365 Commerce-näthandelssida som kan använda dynamiskt innehåll baserat på URL-parametrar.
+I denna artikel beskrivs hur du konfigurerar en Microsoft Dynamics 365 Commerce-näthandelssida som kan betjäna dynamiskt innehåll baserat på URL-parametrar.
 
 En näthandelssida kan konfigureras till att använda olika typer av innehåll, baserat på ett segment i URL-sökvägen. Därför kallas sidan för en "dynamisk" sida. Segmentet används som en parameter för att hämta sidinnehållet. Till exempel en sida som skapas i webbplatsskaparen och namnges **blogg\_visningsprogram** blir mappade till URL `https://fabrikam.com/blog`. Denna sida kan sedan användas för att visa annat innehåll, baserat på det sista segmentet i URL-sökvägen. Det sista segmentet i webbadressen (URL) `https://fabrikam.com/blog/article-1` är **artikel-1**.
 
@@ -34,7 +34,7 @@ När du väljer namn för parametrarna som ska skickas till den dynamiska sidan,
 
 ## <a name="set-up-a-dynamic-e-commerce-page"></a>Ställa in en dynamisk sida för näthandel
 
-Om du vill konfigurera en dynamisk e-handelssida måste du skapa den dynamiska sidan, skapa bas-webbadressen (URL) och konfigurera flödet till den dynamiska sidan.
+Om du vill konfigurera en dynamisk näthandelssida måste du skapa den dynamiska sidan, skapa bas-webbadressen (URL) och konfigurera flödet till den dynamiska sidan.
 
 ### <a name="create-the-page-that-will-serve-dynamic-content"></a>Skapa sidan som ska användas för dynamiskt innehåll
 

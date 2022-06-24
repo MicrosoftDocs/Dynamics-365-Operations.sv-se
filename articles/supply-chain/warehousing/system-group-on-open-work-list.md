@@ -1,6 +1,6 @@
 ---
-title: Systemgruppering i en öppen arbetslista
-description: Det här avsnittet beskriver hur du filtrerar den öppna arbetslistan på en mobil enhet.
+title: Systemgruppering i en öppen arbetsuppgiftslista
+description: Denna artikel beskriver hur du filtrerar den öppna arbetslistan på en mobil enhet.
 author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 588744ea19f387b57405030618a6ff176161a8a3639bd58232a657bdaf064a04
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 42e5862392cff57886c36bcbe138e13a8ce7ef23
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733310"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849109"
 ---
 # <a name="system-grouping-on-an-open-work-list"></a>Systemgruppering i en öppen arbetslista
 
@@ -29,7 +29,7 @@ Genom att använda ett systemgrupperingsfält kan de filtrera en öppen arbetsli
 Där det går att tillämpa fungerar systemgrupperingen för att filtrera en arbetslista i ett fält för en enskild arbetsrubrik. Du kan inte använda systemgruppering för att filtrera på radnivåfält.
 
 ## <a name="set-up-system-grouping-on-an-open-work-list"></a>Ställa in systemgruppering i en öppen arbetslista
-Använd dessa steg för att ställa in systemgruppering i en öppen arbetslista.
+Använd dessa steg för att konfigurera systemgruppering i en öppen arbetslista.
 
 -   Från ett menyalternativ för en mobil enhet, välj **Läge: indirekt** och **Aktivitetskod: Visa öppna arbetslista**. Följande alternativ blir tillgängliga: Dessa alternativ krävs för systemgruppering av en öppen arbetslista. 
 

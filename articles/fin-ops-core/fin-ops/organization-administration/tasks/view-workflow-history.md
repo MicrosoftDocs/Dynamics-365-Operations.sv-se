@@ -1,6 +1,6 @@
 ---
 title: Visa arbetsflödeshistorik
-description: Det här avsnittet beskriver steg för att visa statusvärdet för ett dokument som har skickats till arbetsflödessystemet för bearbetning och godkännande.
+description: Den här artikeln beskriver steg för att visa statusvärdet för ett dokument som har skickats till arbetsflödessystemet för bearbetning och godkännande.
 author: jasongre
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0ca9a8bff246cc878a0703947a7f8c1c4fc01963
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8a5810eaed5d2ff6cb5c98e1b21c098c70f24485
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069969"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868591"
 ---
 # <a name="view-workflow-history"></a>Visa arbetsflödeshistorik
 
@@ -27,7 +27,7 @@ ms.locfileid: "8069969"
 
 [!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
-Det här avsnittet beskriver steg för att visa statusvärdet för ett dokument som har skickats till arbetsflödessystemet för bearbetning och godkännande. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
+Den här artikeln beskriver steg för att visa statusvärdet för ett dokument som har skickats till arbetsflödessystemet för bearbetning och godkännande. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 
 1. Gå till **Navigeringsfönstret > Moduler > Allmänt > Förfrågningar > Arbetsflöde > Arbetsflödeshistorik**.
     - Använd det här formuläret för att visa statusvärdet för ett dokument som har skickats till arbetsflödessystemet för bearbetning och godkännande.  

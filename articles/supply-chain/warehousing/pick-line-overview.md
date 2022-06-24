@@ -1,6 +1,6 @@
 ---
 title: Konfigurera ett menyalternativ för mobila enheter för att visa en översikt över plockrader
-description: I det här avsnittet beskrivs hur du definierar när en lista med alla arbetsrader ska visas för lagerarbetare som bearbetar lagerarbetet på en mobil enhet. Den här funktionen kan vara användbar för lagerarbetare som ofta kräver en översikt över plockningsraderna i en arbetsorder så att de kan optimera sina plockserier.
+description: I denna artikel beskrivs hur du definierar när en lista med alla arbetsrader ska visas för lagerarbetare som bearbetar lagerarbete på en mobil enhet. Den här funktionen kan vara användbar för lagerarbetare som ofta kräver en översikt över plockningsraderna i en arbetsorder så att de kan optimera sina plockserier.
 author: Mirzaab
 ms.date: 09/03/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 7d3a8972c5d2f4c52dddef458ebd6079118cadfe
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 5b3bf0d94e6975f543361481b73c845ef9c56d05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901932"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885679"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Konfigurera ett menyalternativ för mobila enheter för att visa en översikt över plockrader
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du konfigurerar alternativ som är relaterade till översikten över plockningsraden för menyalternativ för mobila enheter som används för att bearbeta plockningsarbete. Plockningsradens översikt låter oss visa lagerarbetare och välja från en lista med alla arbetsrader som är kopplade till deras aktuella uppgift. Den här funktionen kan hjälpa arbetare att optimera sin plockserie. Funktionen innehåller alternativ som ersätter standardknappen **Hoppa över** som gör att arbetarna går igenom raderna en i taget, i en fast ordning. (Alternativet att använda knappen är dock fortfarande tillgängligt.)
+I denna artikel beskrivs hur du konfigurerar alternativ som är relaterade till översikten över plockningsraden för menyalternativ på mobila enheter som används för att bearbeta plockningsarbete. Plockningsradens översikt låter oss visa lagerarbetare och välja från en lista med alla arbetsrader som är kopplade till deras aktuella uppgift. Den här funktionen kan hjälpa arbetare att optimera sin plockserie. Funktionen innehåller alternativ som ersätter standardknappen **Hoppa över** som gör att arbetarna går igenom raderna en i taget, i en fast ordning. (Alternativet att använda knappen är dock fortfarande tillgängligt.)
 
 Administratörer kan konfigurera varje menyalternativ enskilt för att styra hur, när och var mobilappen för distributionslagerhantering ska visa översikten över plockningsraden.
 
@@ -48,7 +48,7 @@ För att konfigurera ett menyalternativ för mobila enheter för att visa en öv
 
     Mer information om hur du skapar menyalternativ och använder de olika inställningar som finns på sidan **Menyalternativ på mobil enhet** finns i [Ställa in mobila enheter för lagerställe](configure-mobile-devices-warehouse.md).
 
-1. På snabbfliken **Allmänt** konfigurerar du funktionen genom att ställa in fältet **Visa arbetsradlista** på något av följande värden:
+1. På snabbfliken **Allmänt** konfigurerar du funktionen genom att konfigurera fältet **Visa arbetsradlista** på något av följande värden:
 
     - **Visa endast på begäran** – arbetare kan välja att visa listan över plockrader genom att välja knappen **Hoppa till** i mobilappen för distributionslagerhantering.
     - **Visa i början av varje plockning** – arbetare ser listan varje gång de startar eller slutför en plockningsrad. De kan också visa listan igen genom att välja knappen **Hoppa till** i mobilappen för distributionslagerhantering.
@@ -57,7 +57,7 @@ För att konfigurera ett menyalternativ för mobila enheter för att visa en öv
 
 1. Klicka på **Spara** i åtgärdsfönstret.
 
-    Om du ställer in fältet **Visa arbetsradlista** till ett värde utom *Visa aldrig* blir knappen **Fältlista** i åtgärdsfönstret tillgänglig.
+    Om du konfigurerar fältet **Visa arbetsradlista** till ett värde utom *Visa aldrig* blir knappen **Fältlista** i åtgärdsfönstret tillgänglig.
 
 1. Klicka på **Fältlista** i åtgärdsfönstret.
 1. På sidan **Fältlista** konfigurerar du den information som ska visas för varje rad i listan för mobilappen för distributionslagerhantering.

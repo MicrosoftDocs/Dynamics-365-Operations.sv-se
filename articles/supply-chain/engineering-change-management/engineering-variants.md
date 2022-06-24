@@ -1,6 +1,6 @@
 ---
 title: Generera varianter för tekniska produkter
-description: I avsnittet beskrivs hur du genererar varianter för tekniska produkter
+description: I denna artikel beskrivs hur du genererar varianter för tekniska produkter
 author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
@@ -10,22 +10,22 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 7921983a965af5557f54f608418c8ec922256ba6
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 08feb66dedfa79f5a21a7723a22f3bef883431e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103648"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870765"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Generera varianter för tekniska produkter
 
 [!include [banner](../includes/banner.md)]
 
-Avsnittet beskriver hur du genererar varianter för tekniska produkter.
+I denna artikel beskrivs hur du genererar varianter för tekniska produkter.
 
 ## <a name="turn-variant-generation-for-engineering-products-on-or-off"></a>Aktivera eller inaktivera generering av varianter för konstruktionsprodukter
 
-Funktionen som beskrivs i detta ämne kräver att både funktionen *Konstruktionsändringshantering* och *Variantgenerering för tekniska produkter* är aktiverad för systemet. Information om hur du aktiverar och inaktiverar funktionerna finns i [Översikt över hantering av tekniska ändringar](product-engineering-overview.md).
+Funktionen som beskrivs i denna artikel kräver att både funktionen *Konstruktionsändringshantering* och *Variantgenerering för tekniska produkter* är aktiverade för systemet. Information om hur du aktiverar och inaktiverar funktionerna finns i [Översikt över hantering av tekniska ändringar](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Generera en eller flera nya varianter av en teknisk produkt
 
@@ -36,7 +36,7 @@ Följande procedur är ett exempel på hur du skapar flera varianter som innehå
 1. Öppna sidan **Släppta produkter** (gå till exempel till **Konstruktionsändringshantering \> Vanligt \> Släppta produkter**).
 1. I åtgärdsfönstret öppnar du fliken **Produkt** och i gruppen **Ny**, väljer du **Teknisk produkt**.
 1. Dialogrutan **Ny produkt** öppnas. Välj rätt **Teknikkategori**.
-1. Om den valda teknikkategorin innehåller variantdimensioner kan du ställa in värden för dem nu. Om kategorin har dimensionen **Färg** kan du ange den som *Blå* för det här exemplet.
+1. Om den valda teknikkategorin innehåller variantdimensioner kan du konfigurera värden för dem nu. Om kategorin har dimensionen **Färg** kan du ange den som *Blå* för det här exemplet.
 1. Gör andra inställningar som behövs. Skapa produkten genom att välja **OK**.
 1. Produkten och den blå V-1-varianten skapas och den nya produkten öppnas.
 1. Lägg till en strukturlista och flöde till varianten vid behov.
@@ -63,7 +63,7 @@ Följande procedur är ett exempel på hur du skapar en ny variant som innehåll
 1. Öppna sidan **Släppta produkter** (gå till exempel till **Konstruktionsändringshantering \> Vanligt \> Släppta produkter**).
 1. I åtgärdsfönstret öppnar du fliken **Produkt** och i gruppen **Ny**, väljer du **Teknisk produkt**.
 1. Dialogrutan **Ny produkt** öppnas. Välj rätt **Teknikkategori**.
-1. Om den valda teknikkategorin innehåller variantdimensioner kan du ställa in värden för dem nu. Om kategorin har dimensionen **Färg** kan du ange den som *Blå* för det här exemplet.
+1. Om den valda teknikkategorin innehåller variantdimensioner kan du konfigurera värden för dem nu. Om kategorin har dimensionen **Färg** kan du ange den som *Blå* för det här exemplet.
 1. Gör andra inställningar som behövs. Skapa produkten genom att välja **OK**.
 1. Produkten och den blå V-1-varianten skapas och den nya produkten öppnas.
 1. Lägg till strukturlista och flöde till varianten vid behov.

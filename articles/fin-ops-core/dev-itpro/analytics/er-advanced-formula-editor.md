@@ -1,6 +1,6 @@
 ---
 title: Avancerad formelredigerare för elektronisk rapportering
-description: I det här avsnittet beskrivs hur avancerad formelredigerare kan användas för att konfigurera uttryck i ER-modellmappning och formatkomponenter.
+description: I den här artikeln beskrivs hur avancerad formelredigerare kan användas för att konfigurera uttryck i ER-modellmappning och formatkomponenter.
 author: NickSelin
 ms.date: 06/17/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 58d7a936f94e1cd453c904ef6404e0db65083c54235c8420b9cfa561bcde1584
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f54ab248e38d87b0a9fb7a73143f56fa704a3f67
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714669"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869111"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Avancerad formelredigerare för elektronisk rapportering
 
 [!include [banner](../includes/banner.md)]
 
-Förutom [elektronisk rapportering](general-electronic-reporting.md)[formelredigeraren](general-electronic-reporting-formula-designer.md) kan du använda den avancerade elektroniska rapportering formelredigeraren för att förbättra upplevelsen av konfigurering av ER-uttryck. Den avancerade redigeraren är webbläsarbaserad och utrustad med hjälp av [Monaco redigeraren](https://microsoft.github.io/monaco-editor). De mest använda avancerade redigeringsfunktionerna beskrivs i det här avsnittet:
+Förutom [elektronisk rapportering](general-electronic-reporting.md)[formelredigeraren](general-electronic-reporting-formula-designer.md) kan du använda den avancerade elektroniska rapportering formelredigeraren för att förbättra upplevelsen av konfigurering av ER-uttryck. Den avancerade redigeraren är webbläsarbaserad och utrustad med hjälp av [Monaco redigeraren](https://microsoft.github.io/monaco-editor). De mest använda avancerade redigeringsfunktionerna beskrivs i den här artikeln:
 
 - [Automatisk kodformatering](#Autoformatting)
 - [IntelliSense](#IntelliSense)

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: d5aa579394a0e3bd4c27cd44c9ff98951b3bfe1c
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 559ca80976955d6328cb4d6b2020d5662460cef9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103673"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863662"
 ---
 # <a name="putaway-clusters"></a>Kluster för artikelinförsel
 
@@ -27,7 +27,7 @@ Kluster för artikelinförsel erbjuder ett sätt att välja flera ID-nummer samt
 
 ## <a name="turn-the-cluster-putaway-feature-on-or-off"></a>Aktivera eller inaktivera funktionen för kluster för artikelinförsel
 
-De funktioner som beskrivs i det här avsnittet måste funktionen *Funktion för kluster för artikelinförsel* vara inaktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Funktion för kluster för artikelinförsel* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+För att använda de funktioner som beskrivs i denna artikel måste funktionen *Funktion för klusterplats* vara aktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Funktion för kluster för artikelinförsel* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup-for-the-example-scenario"></a>Ställ in exempelscenario
 

@@ -1,6 +1,6 @@
 ---
 title: Produktidentifierare
-description: Det här avsnittet innehåller information om de olika typerna av produktidentifierare och förklarar hur du infogar produktidentifierare i dina produktdata.
+description: Denna artikel innehåller information om de olika typerna av produktidentifierare och förklarar hur du infogar produktidentifierare i dina produktdata.
 author: t-benebo
 ms.date: 03/27/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 638b5c3b0c83f67f3d99331b6456efd1b8f5225a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3fc2d5c01209f15a9cb680e3bb569087f08c08d3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063351"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851722"
 ---
 # <a name="product-identifiers"></a>Produktidentifierare
 
@@ -29,7 +29,7 @@ ms.locfileid: "8063351"
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller information om de olika typerna av produktidentifierare och förklarar hur du infogar produktidentifierare i dina produktdata.
+Denna artikel innehåller information om de olika typerna av produktidentifierare och förklarar hur du infogar produktidentifierare i dina produktdata.
 
 När du arbetar med produkter i fabriken eller på ett lagerställe i Microsoft Dynamics ERP eller Microsoft Dynamics CRM, måste du ha en bra strategi för att identifiera de produkterna och produktvarianterna.
 
@@ -37,7 +37,7 @@ När du arbetar med produkter i fabriken eller på ett lagerställe i Microsoft 
 
 I Dynamics 365 Supply Chain Management är den primära identifieraren för produktnumret (det vill säga unikt produkt-ID). Detta nummer kan genereras automatiskt av en nummerserie eller så kan det associeras manuellt med en produkt. Siffrorna kan definieras genom mallen för produktnomenklatur för produktvarianter.
 
-I många fall skapades inte produktnumret ursprungligen i Dynamics 365 Supply Chain Management. I stället associeras det med en produkt i system för livscykelhantering för produkt (PLM) eller hantering av produktdata (PDM). I det här fallet kan du använda datatabeller för att importera produkterna och produktvarianterna. Supply Chain Management använder sedan numren i alla operationer.
+I många fall skapades inte produktnumret ursprungligen i Dynamics 365 Supply Chain Management. I stället associeras det med en produkt i system för livscykelhantering för produkt (PLM) eller hantering av produktdata (PDM). I det här fallet kan du använda datatabeller för att importera produkterna och produktvarianterna. Supply Chain Management använder sedan numren i alla åtgärder.
 
 När du implementerar Supply Chain Management bör du särskilt beakta din strategi för produktnummer. Ett bra numreringssystem förbättrar logistikflöden och förebygger fel. En bra produktidentifierare bör vanligtvis ha 20 tecken eller mindre, men vi rekommenderar vanligtvis att du använder färre än 10 tecken och inte inkluderar fler än 5 klassificeringstecken. Du kan också använda söknamn för att aktivera snabbsökning. Ett söknamn är ett ytterligare namn som representerar klassificeringen av en produkt.
 
@@ -49,7 +49,7 @@ Artikelnumret är den produktidentifierare som används av en viss juridisk pers
 
 Dessutom kan en produktvariant inte identifieras unikt med ett artikelnummer. Det kräver alltid en kombination av ett artikelnummer och alla produktdimensioner som definieras på produktmallen. Detta krav kan bli svårhanterligt och kan sakta ner identifieringsprocesser. Därför rekommenderar vi att du använder det unika produktnumret i stället för artikelnumret så ofta du kan.
 
-Många sidor har fortfarande artikelnummer och produktdimensioner som primära identifierare. Produktnummer kan dock användas för sökningar. Vid **Försäljning och marknadsföring**&gt;**Inställningar**&gt;**Sök**&gt;**Söka parametrar** kan du ändra sökuppslag så att den använder produktnummer i stället för artikelnummer som primär sökstrategi. Om du ställer in alternativet **Aktivera sökning för produktsökning** till **Ja**, kommer sökningen inte bara att visa produktmallar utan även produktvarianter. Mer information finns i [Sök efter produkter och produktvarianter under orderregistrering](search-products-product-variants.md)
+Många sidor har fortfarande artikelnummer och produktdimensioner som primära identifierare. Produktnummer kan dock användas för sökningar. Vid **Försäljning och marknadsföring**&gt;**Inställningar**&gt;**Sök**&gt;**Söka parametrar** kan du ändra sökuppslag så att den använder produktnummer i stället för artikelnummer som primär sökstrategi. Om du konfigurerar alternativet **Aktivera sökning för produktsökning** till **Ja**, kommer sökningen inte bara att visa produktmallar utan även produktvarianter. Mer information finns i [Sök efter produkter och produktvarianter under orderregistrering](search-products-product-variants.md)
 
 Dessutom kommer du att kunna söka och filtrera på produktnummer, produktnamn och beskrivning och produktdimensionens ID för produktvarianten. När du väljer en variant kommer tillhörande artikelnummer och alla produktdimensioner att väljas. Därför kan du lättare hitta och välja rätt variant. Den här inställningen rekommenderas starkt om du använder produktvarianter och unika produktnummer som primära identifierare för produkter. Det enda undantaget kan vara modebranschen där affärsprocesserna kräver att du väljer originalet innan du väljer en variant. Du bör noggrant utvärdera det här alternativet innan du implementerar numreringssystemet.
 
@@ -70,7 +70,7 @@ Söknamnet kan också innehålla en kund eller produkt-ID för leverantör eller
 
 ## <a name="external-product-identifiers-customer-and-vendor-identifiers"></a>Externa produktidentifierare (kund- och leverantörsidentifierare)
 
-För frisläppta produkter kan du behålla de artikelnummer, artikelnamn och artikelbeskrivningar som kunden eller leverantören använder. Referenserna visas på externa dokument, till exempel försäljningsorder, inköpsorder, följesedlar och fakturor. I den aktuella versionen av Supply Chain Management visas externa referenser inte på sidor för kärnoperationer. Det enda undantaget är leverantörens artikelnummer. Det här numret visas i dialogrutan **Produktinformation** om en standardleverantör har definierats för frisläppt produkt.
+För frisläppta produkter kan du behålla de artikelnummer, artikelnamn och artikelbeskrivningar som kunden eller leverantören använder. Referenserna visas på externa dokument, till exempel försäljningsorder, inköpsorder, följesedlar och fakturor. I den aktuella versionen av Supply Chain Management visas externa referenser inte på sidor för kärnåtgärder. Det enda undantaget är leverantörens artikelnummer. Det här numret visas i dialogrutan **Produktinformation** om en standardleverantör har definierats för frisläppt produkt.
 
 Du kan underhålla externa produktidentifierare av frisläppt produkt, frisläppt produktvariant, kund eller kundgrupp, leverantör eller leverantörsgrupp.
 
@@ -104,11 +104,11 @@ För att underhålla streckkoder, på sidan **Frisläppta produkter** på fliken
 
 ## <a name="gtin-codes"></a>GTIN-koder
 
-Inom e-handel är det viktigt att alla parter talar ett gemensamt språk och hänvisar till produkter med en gemensam uppsättning identifierare. Därför kan vissa branscher vara beroende av [GTIN](https://www.gs1.org/id-keys/gtin), som är ett globalt artikelnummersystem som möjliggörs med hjälp av GS1.
+Inom näthandel är det viktigt att alla parter talar ett gemensamt språk och hänvisar till produkter med en gemensam uppsättning identifierare. Därför kan vissa branscher vara beroende av [GTIN](https://www.gs1.org/id-keys/gtin), som är ett globalt artikelnummersystem som möjliggörs med hjälp av GS1.
 
 Vi rekommenderar att du underhåller GTIN som en streckkod. Men du kan också hantera den på sidan **Artikel - GTIN**. För att öppna denna sida, på **Frisläppta produkter** på fliken **Hantera lager** i gruppen **Lagerställe** markerar du **GTIN-koder**. GTIN hanteras inte som ett globalt nummer. I stället hanteras det av juridisk person.
 
-I Supply Chain Management definierar du förpackningsvarianter i lageroperationer genom att definiera specifika måttenheter. Till exempel kan en artikel lagras i delar, buntar med sex, i fack med 18 eller i fulla lastpallar. En specifik måttenhet ska fastställas för var och en av dessa förpackningsvarianterna. Eftersom GTIN normalt är relaterad till en produkts förpackningsenheten låter sidan **Artikel - GTIN** dig hantera flera GTIN-koder per produkt och måttenheten. Du kan inte använda samma GTIN-kod mer än en gång för olika artiklar eller produktvarianter i en juridisk person.
+I Supply Chain Management definierar du förpackningsvarianter i lageråtgärder genom att definiera specifika måttenheter. Till exempel kan en artikel lagras i delar, buntar med sex, i fack med 18 eller i fulla lastpallar. En specifik måttenhet ska fastställas för var och en av dessa förpackningsvarianterna. Eftersom GTIN normalt är relaterad till en produkts förpackningsenheten låter sidan **Artikel - GTIN** dig hantera flera GTIN-koder per produkt och måttenheten. Du kan inte använda samma GTIN-kod mer än en gång för olika artiklar eller produktvarianter i en juridisk person.
 
 För att hantera **GTIN-koder**, på sidan **Frisläppta produkter**, på fliken **Hantera lager** i gruppen **Lagerställe** väljer du **GTIN**.
 
@@ -125,7 +125,7 @@ Det finns tyvärr ingen standardfunktion där du kan söka efter produkter efter
 | Produker V2 | Produktnummer, produktsökningsnamn, produktnamn, produktbeskrivning | Produktnummer, produktsökningsnamn, produktnamn, produktbeskrivning | Beroende på inställningarna för enheten och nummerserien för produktnumret kan produktnummer skapas automatiskt vid tidpunkten för importen. |
 | Produktvarianter | Produktnummer, produktsökningsnamn, produktnamn, produktbeskrivning | Produktnummer, produktsökningsnamn, produktnamn, produktbeskrivning | Beroende på vilken mall för produktnomenklatur kan produktnummer skapas automatiskt vid tidpunkten för importen. Men du kan importera alla unika produktnummer och det produktnumret behöver inte ha strukturen som mallen för produktnomenklatur. |
 | Produktöversättningar | Produktnamn, produktbeskrivning | Produktnamn, produktbeskrivning | Den här entiteten skriver över alla språk. När det primära språket för namnet eller beskrivningen av en juridisk person skrivs över, ändras namn och beskrivning för produkten. |
-| Frisläppt produktgenerering version2 | Artikelnummer, produktnummer, namn på artikelsökning| Artikelnummer, produktnummer, namn på artikelsökning, namn på produktsökning, produktnamn | Den här entiteten kan vara svår när nummerserier används när du skapar nya frisläppta produkter. Både nummerserien **Artikelnummer** och nummerserien **Produktnummer** påverkar. Men nummerserien **Artikelnummer** är per juridisk person, medan nummerserien **Produktnummer** är global. Därför rekommenderar vi inte att du använder nummerserien **Artikelnummer** när du distribuerar nya frisläppta produkter. Det är självklart att när enheten används för att frisläppa en befintlig produkt måste produktnumret anges i enheten. Mer information finns i avsnittet ”Produkt- och artikelnummerserier” i det här avsnittet. |
+| Frisläppt produktgenerering version2 | Artikelnummer, produktnummer, namn på artikelsökning| Artikelnummer, produktnummer, namn på artikelsökning, namn på produktsökning, produktnamn | Den här entiteten kan vara svår när nummerserier används när du skapar nya frisläppta produkter. Både nummerserien **Artikelnummer** och nummerserien **Produktnummer** påverkar. Men nummerserien **Artikelnummer** är per juridisk person, medan nummerserien **Produktnummer** är global. Därför rekommenderar vi inte att du använder nummerserien **Artikelnummer** när du distribuerar nya frisläppta produkter. Det är självklart att när enheten används för att frisläppa en befintlig produkt måste produktnumret anges i enheten. Mer information finns i avsnittet ”Produkt- och artikelnummerserier” i denna artikel. |
 | Frisläppta produktvarianter | Artikelnummer, produktdimensioner, produktnummer | Produktnummer, produktsökningsnamn, produktnamn, produktbeskrivning, produktdimensioner | Liksom entiteten **Produktvarianter** kan den här entiteten kan användas för att skapa nya produkter som antingen följa mallen för produktnomenklatur eller egna produktnummer för varianten. |
 | Extern artikelbeskrivning för kunder | Kundens artikelnummer, kundens artikelnamn, kundbeskrivning, kundkonto | Kundens artikelnummer, kundens artikelnamn, kundbeskrivning, kundkonto | En grupp med kunder (exempelvis en köparförening) kan samlas i en grupp med hjälp av entiteten **Kundgrupper för extern artikelbeskrivning**. |
 | Extern artikelbeskrivning för säljare | Leverantörens artikelnummer, leverantörens artikelnamn, leverantörsbeskrivning, leverantörskonto | Leverantörens artikelnummer, leverantörens artikelnamn, leverantörsbeskrivning, leverantörskonto | En grupp med leverantörer (exempelvis en säljarförening eller branschorganisation) kan samlas i en grupp med hjälp av entiteten **Leverantörsgrupper för extern artikelbeskrivning**. |
@@ -184,7 +184,7 @@ Gör på följande sätt när du vill konfigurera miljön.
 
 Nu kan du använda dataentiteterna **Entiteten identifierare av common data service**, **ID-kod för produktenhet** och **ID-omfattning för produktenhet** för att exportera identifierarna för ett målsystem.
 
-## <a name="related-topic"></a>Relaterat ämne
+## <a name="related-article"></a>Relaterad artikel
 
 [Sök efter produkter och produktvarianter under orderregistrering](search-products-product-variants.md)
 

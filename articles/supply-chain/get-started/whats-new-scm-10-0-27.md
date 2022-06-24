@@ -1,6 +1,6 @@
 ---
 title: Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.27 (juli 2022)
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management 10.0.27.
+description: Denna artikel beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management 10.0.27.
 author: kamaybac
 ms.date: 04/22/2022
 ms.topic: article
@@ -10,19 +10,19 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 77c79c88b08844bf7e399a762bb9eb9746ffb71a
-ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
+ms.openlocfilehash: a91f2cdae0fed75f07d6cae86d24aeedfca80e94
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8812956"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844508"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10027-july-2022"></a>Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.27 (juli 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Detta ämne anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management, förhandsversion 10.0.27. Den här versionen har ett versionsnummer för 10.0.1227 på följande schema:
+Denna artikel anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management, förhandsversion 10.0.27. Den här versionen har ett versionsnummer för 10.0.1227 på följande schema:
 
 - **Förhandgranskning av version:** april 2022
 - **Allmän tillgänglighet för version (självuppdatering):** juni 2022
@@ -30,7 +30,7 @@ Detta ämne anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply 
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
-Följande tabeller listar de funktioner som ingår i denna version. Vi kan komma att uppdatera detta ämne i syfte att lades till i bygget efter att detta ämne ursprungligen publicerades.
+Följande tabeller listar de funktioner som ingår i denna version. Vi kan komma att uppdatera denna artikel att inkludera funktioner somlades till i versionen efter det att denna artikel ursprungligen publicerades.
 
 | Funktionsområde | Funktion | Mer information | Har aktiverats av |
 |---|---|---|---|
@@ -56,9 +56,9 @@ Om du vill slå på eller stänga av någon av dessa funktioner måste du göra 
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
 
-Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. Dessa ämnen är inte nödvändigtvis relaterade till de nya funktioner som lagts till för denna version, enligt vad som beskrivs i de föregående avsnitten. De kan dock hjälpa dig att få ut mer av befintliga funktioner.
+Följande hjälpartiklar har nyligen lagts till eller uppdaterats väsentligt. Dessa artiklar är inte nödvändigtvis relaterade till de nya funktioner som lagts till för denna version, enligt vad som beskrivs i de föregående avsnitten. De kan dock hjälpa dig att få ut mer av befintliga funktioner.
 
-| Funktionsområde | Nya eller uppdaterade ämnen |
+| Funktionsområde | Nya eller uppdaterade artiklar |
 |---|---|
 | Kostnadshantering | [Viktat genomsnittsdatum med Inkludera fysiskt värde och länkning](../cost-management/weighted-average-date.md) |
 | Distribuerad hybridtopologi | [Prova skalenheter i en distribuerad hybridtopologi](../cloud-edge/cloud-edge-try-out.md) |
@@ -83,12 +83,12 @@ Kolla in [Dynamics 365 och branschmoln: Utgivningsvåg 1 plan för 2022](/dynami
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Borttagna och inaktuella funktioner för Supply Chain Management
 
-De [borttagna eller föråldrade funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) i ämnet beskriver funktioner som har schemalagts eller är planerade att tas bort eller inaktuellt för Supply Chain Management.
+Artikeln [Borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver funktioner som har tagits bort eller planeras tas bort eller göras inaktuella för Supply Chain Management.
 
 - En *borttagen* funktion är inte längre tillgänglig i produkten.
 - En *borttagen* funktion är inte i aktiv utveckling och kan tas bort i en kommande uppdatering.
 
-Innan någon funktion tas bort från produkten visas understrykningsmeddelandet i ämnet [borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före avhämtningen.
+Innan någon funktion tas bort från produkten kommer meddelandet om inaktualitet att meddelas i artikeln [Borttagna eller inaktuella funktioner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före borttagning.
 
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
 

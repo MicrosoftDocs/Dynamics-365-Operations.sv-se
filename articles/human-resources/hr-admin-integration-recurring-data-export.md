@@ -1,6 +1,6 @@
 ---
 title: Skapa ett program för återkommande dataexport
-description: I detta ämne beskrivs hur du skapar en logisk Microsoft Azure-app som exporterar data från Microsoft Dynamics 365 Human Resources i ett återkommande schema.
+description: I denna artikel beskrivs hur du skapar en logisk Microsoft Azure-app som exporterar data från Microsoft Dynamics 365 Human Resources i ett återkommande schema.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c53adc56c19acae05904edcf4109a134566d30b7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9c840dbf4f717da3359640ee5c8231ccd129ebb2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688783"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875841"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Skapa ett program för återkommande dataexport
 
@@ -28,7 +28,7 @@ ms.locfileid: "8688783"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I detta ämne beskrivs hur du skapar en logisk Microsoft Azure-app som exporterar data från Microsoft Dynamics 365 Human Resources i ett återkommande schema. Självstudierna drar fördel av personalens DMF-paket REST API (Application Programming Interface) för att exportera data. När data har exporterats sparar logikprogrammet det exporterade datapaketet i en Microsoft OneDrive för företag-mapp.
+I denna artikel beskrivs hur du skapar en logisk Microsoft Azure-app som exporterar data från Microsoft Dynamics 365 Human Resources i ett återkommande schema. Självstudierna drar fördel av personalens DMF-paket REST API (Application Programming Interface) för att exportera data. När data har exporterats sparar logikprogrammet det exporterade datapaketet i en Microsoft OneDrive för företag-mapp.
 
 ## <a name="business-scenario"></a>Affärsscenario
 

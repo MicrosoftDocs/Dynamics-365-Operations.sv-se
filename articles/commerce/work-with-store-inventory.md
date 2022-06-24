@@ -1,6 +1,6 @@
 ---
-title: Lagerhantering
-description: Den här artikeln beskriver vilka typer av dokument som du kan använda för att hantera lager.
+title: Hantering av butikslager
+description: Denna artikel beskriver vilka typer av dokument som du kan använda för att hantera lager.
 author: BrianShook
 ms.date: 01/12/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a4a8f517ebb6fd4ce291b5d28ae22db62a832251
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 68670426251f539a187e03250d21bf00d1e18acb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779368"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881615"
 ---
 # <a name="commerce-inventory-management"></a>Hantering av Commerce-lager
 
@@ -37,7 +37,7 @@ De Commerce-program som körs på CSU stöder för närvarande inte följande pr
 De Commerce-program som körs på CSU stöder för närvarande inte följande spårningsdimensioner:
 - Ägardimension
 
-- Kassaprogrammet (POS) kan erbjuda begränsat stöd för följande dimensioner. Med andra ord kan POS komma att automatiskt ange vissa av dessa dimensioner i lagertransaktioner, baserat på konfigurationen för lagerställe eller butik. POS stöder emellertid inte dimensionerna fullt ut i den mening att de stöds om en säljtransaktion anges manuellt i Commerce-administrationen. 
+- Kassaprogrammet (POS) kan erbjuda begränsat stöd för följande dimensioner. Med andra ord kan POS komma att automatiskt ange vissa av dessa dimensioner i lagertransaktioner, baserat på konfigurationen för lagerställe eller butik. POS stöder emellertid inte dimensionerna fullt ut i den mening att de stöds om en säljtransaktion anges manuellt i Commerce headquarters. 
 
 - **Plats för lagerställe** – När användarna använder de nya [inkommande](./pos-inbound-inventory-operation.md) och [utgående funktionerna](./pos-outbound-inventory-operation.md) för kassa kan de välja en lagerplats för lagerställe som de vill ta emot artiklar i eller skicka utgående orderartiklar från. Om de använder den föråldrade åtgärden **Välja och ta emot** finns begränsat hanteringsstöd att tillgå på plats för att ta emot och skicka utgående överföringar. Detta stöd är endast tillgängligt om alternativet **Använd hanteringsprocess för lagerställe** har aktiverats för artikeln samt för butikens lagerställe. En lagerplats kan för närvarande inte användas med åtgärderna **Inventering** eller **Lagersökning**.
 
@@ -50,7 +50,7 @@ De Commerce-program som körs på CSU stöder för närvarande inte följande sp
 - **Lagerstatus** – För artiklar som använder lagringshanteringsprocessen och kräver en lagerstatus kan det här statusfältet inte ställas in eller ändras via kassaprogrammet. Standardlagerstatus som definierats i konfigurationen för lagerställe används när artiklar inlevereras till lagret.
 
 > [!NOTE]
-> Alla organisationer måste testa artikelkonfigurationer via Commerce-appar i utvecklings- eller testmiljöer innan man distribuerar konfigurationerna till tillverkningsmiljöer. Testa dina artiklar genom att använda dem för att utföra vanliga kassaförsäljningstransaktioner i POS och skapa kundorder (om tillämpligt) via POS, kundtjänst eller näthandel för att validera att de kan stödjas fullt ut. Du bör även testa POS-uppfyllelse och lagerprocesser (t.ex. åtgärder för lagermottagning och orderuppfyllelse) innan du distribuerar nya artikelkonfigurationer, detta för att se till att kassaprogrammet (POS) har stöd för dem. Testerna måste inkludera en fullständig bokföringsprocess för utdrag/order i testmiljön och verifiera att inga bokföringsproblem uppstår när order för dessa artiklar skapas och bokförs i Commerce-administrationen.
+> Alla organisationer måste testa artikelkonfigurationer via Commerce-appar i utvecklings- eller testmiljöer innan man distribuerar konfigurationerna till tillverkningsmiljöer. Testa dina artiklar genom att använda dem för att utföra vanliga kassaförsäljningstransaktioner i POS och skapa kundorder (om tillämpligt) via POS, kundtjänst eller näthandel för att validera att de kan stödjas fullt ut. Du bör även testa POS-uppfyllelse och lagerprocesser (t.ex. åtgärder för lagermottagning och orderuppfyllelse) innan du distribuerar nya artikelkonfigurationer, detta för att se till att kassaprogrammet (POS) har stöd för dem. Testerna måste inkludera en fullständig bokföringsprocess för utdrag/order i testmiljön och verifiera att inga bokföringsproblem uppstår när order för dessa artiklar skapas och bokförs i Commerce headquarters.
 >
 > Om artiklar konfigureras på ett sätt som inte stöds av Commerce-programmen och passande tester inte utförs, kan datafel uppstå som antingen är svåra att korrigera eller inte kan korrigeras alls.
 

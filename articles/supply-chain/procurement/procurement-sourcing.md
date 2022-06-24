@@ -1,6 +1,6 @@
 ---
 title: Startsidan för Anskaffning och källa
-description: Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser som är tillgängliga för anskaffning och inköp.
+description: Denna artikel innehåller en lista med hjälpartiklar och andra resurser som är tillgängliga för anskaffning och inköp.
 author: GalynaFedorova
 ms.date: 09/27/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdf56084147edcdf8951d4a267611c10dc7eb6dd
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 68409b15a3f4874d05a43931136ce91097c4f904
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673030"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885882"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Startsidan för Anskaffning och källa
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser som är tillgängliga för anskaffning och inköp.
+Denna artikel innehåller en lista med hjälpartiklar och andra resurser som är tillgängliga för anskaffning och inköp.
 
 Anskaffning och källa omfattar alla steg från att identifiera ett behov av produkter och tjänster ,genom anskaffning av produkten, mottagning, fakturering och bearbetning av betalning till leverantörer. Upphandlingar kan konfigureras mot specifika verksamhetsbehov genom att definiera inköpspolicy och arbetsflöden. För mer information, se [Anskaffning och källa](procurement-sourcing-overview.md). Ytterligare resurser beskrivs nedan.
 

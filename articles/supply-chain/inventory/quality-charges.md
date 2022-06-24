@@ -1,6 +1,6 @@
 ---
 title: Avgifter för avvikelsefunktioner
-description: I det här ämnet beskrivs hur du skapar kvalitetsavgifter som kan användas med funktioner för en avvikelse.
+description: I denna artikel beskrivs hur du skapar kvalitetsavgifter som kan användas med åtgärder för en avvikelse.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac3306f3f9215ab03f408b8026f335dcf496515a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 29520afca07adee49846d1be987685a1ece8283c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580970"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850740"
 ---
 # <a name="charges-for-nonconformance-operations"></a>Avgifter för avvikelsefunktioner
 
 [!include [banner](../includes/banner.md)]
 
-I det här ämnet beskrivs hur du skapar kvalitetsavgifter som kan användas med funktioner för en avvikelse.
+I denna artikel beskrivs hur du skapar kvalitetsavgifter som kan användas med åtgärder för en avvikelse.
 
 Du kan använda sidan **Kvalitetsavgifter** för att definiera de avgiftstyper som kan läggas till funktionerna för en avvikelse. Med avgifter kan du spåra detaljer om avgifter som du är skyldig en kund för avvikelseprodukter, eller som en leverantör är skyldig dig för avvikelseprodukter som du har fått. Du kan också använda avgifter för att spåra kostnader som krävs för att externa leverantörer eller tjänster ska utföra en funktion.
 

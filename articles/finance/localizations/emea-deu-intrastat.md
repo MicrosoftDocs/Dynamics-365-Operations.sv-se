@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 50c412fdfd7118843d285cbb70e8e44847c9d4a5
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 9516a4516488282820659da141fe3ad33fbe3a9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487935"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848476"
 ---
 # <a name="german-intrastat"></a>Tysk Intrastat
 
@@ -68,7 +68,7 @@ I följande tabell visas fälten som ingår i den tyska Intrastat-deklarationen.
 
 3. Konfigurera utländska handelsparametrar:
 
-    1. I Dynamics 365 Finance, gå till **Moms** > **Inställningar** > **Utländska handelsparametrar**.
+    1. I Dynamics 365 Finance går du till **Skatt** > **Inställningar** > **Utländska handelsparametrar**.
     2. På fliken **Intrastat** på snabbfliken **Elektronisk rapportering** i fältet **Mappning av filformat**, välj **Intrastat XML (DE)**.
     3. I fältet **Mappning av rapportformat**, välj **Intrastat-rapport**.
     4. På snabbfliken **Artikelkodhierarki** i fältet **Kategorihierarki**, välj **Intrastat**.

@@ -1,6 +1,6 @@
 ---
 title: Arbeta med mallar
-description: I det här avsnittet beskrivs hur du arbetar med mallar i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du arbetar med mallar i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ab6ccfac96249b39cb007d9a9fce10475f0c7149
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: c234ddb0cdc212bead4f722f7881fbf21d608675
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090804"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881589"
 ---
 # <a name="work-with-templates"></a>Arbeta med mallar
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du arbetar med mallar i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du arbetar med mallar i Microsoft Dynamics 365 Commerce.
 
 Som vi har diskuterat i [Översikt över mallar och layouter](templates-layouts-overview.md), mallar definierar vilka alternativ som är tillgängliga för författare av underordnade. Mallar är användbara för företagets webbredigeringsteam av många skäl och välstrukturerade mallar kan hjälpa dig med följande mål:
 

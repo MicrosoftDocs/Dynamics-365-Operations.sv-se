@@ -1,6 +1,6 @@
 ---
 title: Enhet, marknad och områdesbestämning
-description: Det här ämnet beskriver hur du skapar, redigerar och hanterar målgrupper och mål i Microsoft Dynamics 365 Commerce webbplatsskaparen genom att använda information om enhet, marknad och geolokalisering.
+description: Denna artikel beskriver hur du skapar, redigerar och hanterar målgrupper och mål i Microsoft Dynamics 365 Commerce-webbplatsverktyget genom att använda information om enhet, marknad och geolokalisering.
 author: sushma-rao
 ms.date: 02/03/2022
 ms.topic: overview
@@ -15,22 +15,22 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.21
-ms.openlocfilehash: 0c8ceb5e59c801e0d3dbc3a57e54c40fa8d967ac
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 90772fd942db30bbf4f65a87b1dca4b2aaacee1e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090704"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881667"
 ---
 # <a name="device-market-and-geolocation-targeting"></a>Enhet, marknad och områdesbestämning
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet beskriver hur du skapar, redigerar och hanterar målgrupper och mål i Microsoft Dynamics 365 Commerce webbplatsskaparen genom att använda information om enhet, marknad och geolokalisering.
+Denna artikel beskriver hur du skapar, redigerar och hanterar målgrupper och mål i Microsoft Dynamics 365 Commerce-webbplatsverktyget genom att använda information om enhet, marknad och geolokalisering.
 
 Dynamics 365 Commerce med hjälp av anpassade variationer av sidinnehållet (kallas *mål*) för specifika kundgrupper (känd som *målgrupper*) för att öka användarnas engagemang och tillfredsställelse. Du kan skapa antingen en målgrupp eller ett mål först. En lyckad målerfarenhet kräver dock båda dessa komponenter.
 
-Du kan skapa och hantera kunder i Commerce Site Builder, baserat på kunddata som plats, enhetsinformation, inloggningsstatus och annan dynamiskt härledd information från kundwebbförfrågningar. Du kan också skapa och hantera mål i e-handelsmoduler ochfragment i Commerce Site Builder.
+Du kan skapa och hantera kunder i Commerce Site Builder, baserat på kunddata som plats, enhetsinformation, inloggningsstatus och annan dynamiskt härledd information från kundwebbförfrågningar. Du kan också skapa och hantera mål i näthandelsmoduler ochfragment i Commerce Site Builder.
 
 **Ansvarsfriskrivning:** Du är ansvarig för att använda den här funktionen i enlighet med alla tillämpliga lagar och regler, inklusive de som är relaterade till inriktning och profilering. 
 
@@ -128,7 +128,7 @@ För att skapa ett målskal för sidmoduler i Commerce-webbplatsbyggaren genom a
     > [!NOTE]
     > Målgruppstilldelning är ett valfritt steg när ett mål skapas. Innan du publicerar målet måste du dock inkludera minst en målgrupp för att se till att de avsedda användargrupperna ser det avsedda innehållet.
 
-1. Definiera tidsfönstret för visningen av ditt mål genom att välja tidszon samt start- och slutdatum. Du kan ställa in målet så att det visas alltid under fönstret, eller så kan du välja specifika dagar och tider. Välj **Nästa** när du är klar.
+1. Definiera tidsfönstret för visningen av ditt mål genom att välja tidszon samt start- och slutdatum. Du kan konfigurera målet så att det visas alltid under fönstret, eller så kan du välja specifika dagar och tider. Välj **Nästa** när du är klar.
 
     > [!NOTE]
     > De tider och tidszoner som du anger är globala. Om du vill sikta mot olika platser vid olika tider eller i olika tidszoner, måste du skapa olika mål och definiera önskat schema för varje plats.
@@ -156,9 +156,9 @@ Om du vill redigera, duplicera eller ta bort mål går du till standardsidan ell
 1. Välj ett mål som du vill redigera, duplicera eller ta bort.
 1. Om du har flera mål i samma modul eller om flera mål har motstridiga scheman väljer du **Prioritera mål** för att ange ordningen som de ska visas i. Om du lägger till mer än ett mål på en sida eller i ett fragment, kommer **Prioritera mål** knappen visas också i meddelandefältet för att påminna dig om att prioritera målen. Om ingen prioritet har angetts väljs det senaste målet som standard.
 
-### <a name="localize-targets"></a>Lokalisera mål
+### <a name="localize-targets"></a>Lokalanpassa mål
 
-Mål på sidor och i fragment inkluderas automatiskt när XLIFF-filer exporteras och importeras för localization-syfte. Om det inte krävs några nationella språk kan du dock ta bort målen för dem efter att de lokaliserade XLIFF-filerna har importerats.
+Mål på sidor och i fragment inkluderas automatiskt när XLIFF-filer exporteras och importeras för localization-syfte. Om det inte krävs några nationella språk kan du dock ta bort målen för dem efter att de lokalanpassade XLIFF-filerna har importerats.
 
 > [!NOTE]
 > Målen hanteras per kanal och språk. Ändringar som du gör i mål i en kanal eller ett språk förs inte automatiskt vidare till andra kanaler eller språk.

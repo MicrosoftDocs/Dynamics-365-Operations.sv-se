@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e884e96e1275f9162b642bbe48c2d891c6434002
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: d4be32a7158561bdf00a996831dca7395ce6f331
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109978"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879752"
 ---
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Fakturamatchning och koncerninterna inköpsorder
 
@@ -28,7 +28,7 @@ ms.locfileid: "8109978"
 
 Den juridiska personen för inköp som ingår i en koncernintern handelstransaktion kan ställas in för att använda fakturamatchning i leverantörsreskontra. När fältet **Bokför faktura med avvikelser** på sidan **Parametrar för leverantörsreskontra** är inställt på **Kräv godkännande**, kommer fakturamatchningsvalidering att utföras. I det här fallet måste bokföringskraven för både koncernintern handel och fakturamatchning i leverantörsreskontra uppfyllas innan koncerninterna leverantörsfakturor kan bokföras.
 
-I exemplen i det här avsnittet används följande inställningar för koncernintern handel:
+I exemplen i den här artikeln används följande inställningar för koncernintern handel:
 -   Fabrikam Purchase är den juridiska personen som köper.
 -   Fabrikam Sales är det juridiska personen som säljer.
 -   Kund 4020 finns i Fabrikam Sales.

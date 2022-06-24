@@ -1,6 +1,6 @@
 ---
 title: Anpassa konfigurationer av elektronisk rapportering så att ett elektroniskt dokument skapas
-description: Det här avsnittet innehåller information om hur du anpassar konfigurationer av elektronisk rapportering (ER) från Microsoft som används för att generera ett anpassat elektroniskt dokument.
+description: Den här artikeln innehåller information om hur du anpassar konfigurationer av elektronisk rapportering (ER) från Microsoft som används för att generera ett anpassat elektroniskt dokument.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661670"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854710"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Anpassa konfigurationer av elektronisk rapportering så att ett elektroniskt dokument skapas
 
@@ -32,9 +32,9 @@ Med [ramverket för elektronisk rapportering (ER)](general-electronic-reporting.
 
 ## <a name="overview"></a>Översikt
 
-I exemplet i det här avsnittet måste du ange federal tax identification-kod som ett nytt eget attribut för varje kund som du fakturerar elektroniskt. Därför måste du anpassa strukturen för fakturan som för närvarande används genom att lägga till en ny artikel som måste fyllas med skattekoden i alla e-fakturor som genereras.
+I exemplet i den här artikeln måste du ange federal tax identification-kod som ett nytt eget attribut för varje kund som du fakturerar elektroniskt. Därför måste du anpassa strukturen för fakturan som för närvarande används genom att lägga till en ny artikel som måste fyllas med skattekoden i alla e-fakturor som genereras.
 
-Procedurerna i det här avsnittet förklarar hur en användare i rollen systemadministratör, utvecklare av elektronisk rapportering eller funktionell konsult för elektronisk rapportering kan utföra uppgifter i Finance-instansen:
+Procedurerna i den här artikeln förklarar hur en användare i rollen systemadministratör, utvecklare av elektronisk rapportering eller funktionell konsult för elektronisk rapportering kan utföra uppgifter i Finance-instansen:
 
 - [Konfigurera den minimala uppsättningen ER-parametrar som krävs för att börja använda ER-ramverket](#ConfigureER).
 - [Importera de ursprungliga versionerna av standard-ER-konfigurationerna som används för att generera e-fakturor](#ImportERConfigurations1).

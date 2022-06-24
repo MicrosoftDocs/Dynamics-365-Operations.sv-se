@@ -1,6 +1,6 @@
 ---
 title: Bekräfta utgående leveranser från batchjobb
-description: I det här avsnittet beskrivs hur du ställer in ett batchjobb som automatiskt bekräftar utgående överföringsorder leveranser för laster som är redo att skickas.
+description: I denna artikel beskrivs hur du konfigurerar batchjobb som automatiskt bekräftar utgående leveranser av överföringsorder för laster som är redo att skickas.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f68dcfc0c1454ee5b095e186c52faa6c83bf8dc6
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 00749a69b17b0064290d7b41ccb2171386716302
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103925"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875113"
 ---
 # <a name="confirm-outbound-shipments-from-batch-jobs"></a>Bekräfta utgående leveranser från batchjobb
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in ett batchjobb som automatiskt bekräftar utgående överföringsorder leveranser för laster som är redo att skickas. Det batchjobb som beskrivs här gäller bara för överföring av orderleveranser, inte för försäljningsorder.
+I denna artikel beskrivs hur du konfigurerar batchjobb som automatiskt bekräftar utgående leveranser av överföringsorder för laster som är redo att skickas. Det batchjobb som beskrivs här gäller bara för överföring av orderleveranser, inte för försäljningsorder.
 
 ## <a name="turn-the-confirm-outbound-shipments-from-batch-jobs-feature-on-or-off"></a>Aktivera eller inaktivera funktionen Bekräfta utgående leveranser från batchjobb
 
-De funktioner som beskrivs i det här avsnittet måste funktionen *Bekräfta utgående leveranser från batchjobb* vara inaktiverad för ditt system. Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Bekräfta utgående leveranser från batchjobb* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+För att kunna använda de funktioner som beskrivs i denna artikel måste funktionen *Bekräfta utgående leveranser från batchjobb* vara aktiverad för ditt system. Från och med version 10.0.21 av Supply Chain Management är denna funktion aktiverad som standard. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Bekräfta utgående leveranser från batchjobb* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="process-outbound-shipments"></a>Bearbeta utgående leveranser
 

@@ -1,6 +1,6 @@
 ---
 title: Hantera användarroller i Microsoft Teams
-description: Det här avsnittet beskriver hur man hanterar Microsoft Dynamics 365 Commerce användarroller i Microsoft Teams.
+description: Denna artikel beskriver hur man hanterar Microsoft Dynamics 365 Commerce-användarroller i Microsoft Teams.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3bde573456856b6457740587b7e921408285a762
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 478bdc762bbc808b031b3ec160126deb4627b6e8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693345"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881281"
 ---
 # <a name="manage-user-roles-in-microsoft-teams"></a>Hantera användarroller i Microsoft Teams
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver hur man hanterar Microsoft Dynamics 365 Commerce användarroller i Microsoft Teams.
+Denna artikel beskriver hur man hanterar Microsoft Dynamics 365 Commerce-användarroller i Microsoft Teams.
 
 När du skapar ett team för varje butik eller kanal i Teams skapas ett gruppmedlemskap som motsvarar laget (till exempel `HOUSTON_D365@<YourTenantAzureADDomain>.com`). Alla butiksarbetare under grupptillhörighet tilldelas en av två användarroller: **Ägare** eller **Medlem**. Lagra anställda som har användarrollen **Ägare** kan utföra åtgärder som att lägga till en privat kanal och lägga till eller ta bort medlemmar. Vanligtvis har butikschefer användarrollen **Ägare**.
 
@@ -37,7 +37,7 @@ Mer information finns i [Tilldela teamägare och medlemmar i Microsoft Teams](/m
 
 [Dynamics 365 Commerce och Microsoft Teams-integrering, översikt](commerce-teams-integration.md)
 
-[Aktivera Dynamics 365 Commerce och Microsoft Teams-integration](enable-teams-integration.md)
+[Aktivera Dynamics 365 Commerce och Microsoft Teams-integrering](enable-teams-integration.md)
 
 [Provision Microsoft Teams från Dynamics 365 Commerce](provision-teams-from-commerce.md)
 
@@ -45,4 +45,4 @@ Mer information finns i [Tilldela teamägare och medlemmar i Microsoft Teams](/m
 
 [Mappa butiker och team om det finns befintliga team i Microsoft Teams](map-stores-existing-teams.md)
 
-[Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integration](teams-integration-faq.md)
+[Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integrering](teams-integration-faq.md)

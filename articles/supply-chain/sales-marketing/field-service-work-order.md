@@ -1,6 +1,6 @@
 ---
 title: Synkronisera arbetsorder i Field Service till försäljningsorder i Supply Chain Management
-description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera arbetsorder i Field Service till försäljningsorder i Supply Chain Management.
+description: Denna artikel avhandlar de mallar och underliggande uppgifter som används för att synkronisera arbetsorder i Field Service till försäljningsorder i Supply Chain Management.
 author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b7b311701aff12d58392fc036d0f1174678b7dc3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e64c9a954e8f5c4410f8ba370b40b7c6e76e8ae0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061319"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860534"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synkronisera arbetsorder i Field Service till försäljningsorder i Supply Chain Management
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061319"
 
 
 
-Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera arbetsorder i Dynamics 365 Field Service till försäljningsorder Dynamics 365 Supply Chain Management.
+Denna artikel beskriver de mallar och underliggande uppgifter som används för att synkronisera arbetsorder i Dynamics 365 Field Service till försäljningsorder i Dynamics 365 Supply Chain Management.
 
 [![Synkronisering av affärsprocesser mellan Supply Chain Management och Field Service.](./media/field-service-integration.png)](./media/field-service-integration.png)
 
@@ -165,7 +165,7 @@ Om du vill hålla reda på försäljningsorder som kommer från arbetsorder kan 
 
 Som standard väljer mappningen försäljningsursprung för försäljningsursprungstypen **Integrering av arbetsorder** för alla försäljningsorder som skapas från arbetsorder. Detta kan vara användbart när du arbetar med försäljningsorder i Supply Chain Management. Du måste se till att försäljningsorder kommer från arbetsorder inte synkroniseras tillbaka till Field Service som arbetsorder.
 
-Mer information om hur du skapar korrekt inställning av försäljningsursprung i Supply Chain Management finns i avsnittet ”Ställa in mappning och förutsättningar” i det här avsnittet.
+Mer information om hur du skapar korrekt inställning av försäljningsursprung i Supply Chain Management finns i avsnittet ”Ställa in mappning och förutsättningar” i denna artikel.
 
 ### <a name="status"></a>Status
 
@@ -180,7 +180,7 @@ Fältet **extern arbetsorderstatus** kan ha följande värden:
 
 ## <a name="field-service-crm-solution"></a>CRM-lösning för Field Service
 
-För att stödja integrationen mellan Field Service och Supply Chain Management krävs ytterligare funktioner från Field Service CRM-lösning. Lösningen omfattar följande ändringar.
+För att stödja integreringen mellan Field Service och Supply Chain Management krävs ytterligare funktioner från Field Service CRM-lösning. Lösningen omfattar följande ändringar.
 
 ### <a name="work-order-entity"></a>Arbetsorderentitet
 
@@ -189,7 +189,7 @@ Fältet **har endast externt hanterade produkter** har lagts till i entiteten **
 ### <a name="work-order-product-entity"></a>Produktentitet för arbetsorder
 
 - Fältet **Order har endast externt hanterade produkter** har lagts till i entiteten **arbetsorderprodukt** och visas på sidan. Den används för att spåra om arbetsorderprodukt underhålls i Supply Chain Management. Detta fält hjälper till att garantera att användare inte synkroniserar arbetsorderprodukter som är okända för Supply Chain Management.
-- Fältet **Systemststus rubrik** har lagts till i entiteten **arbetsorderprodukt** och visas på sidan. Används för att spåra systemstatus för arbetsordern och hjälper till att säkerställa korrekt filtrering om när arbetsorderprodukter synkroniseras till Supply Chain Management. När filter ställs in på integrationsuppgifter, används också **systemstatusrubrikens** information för att bestämma om uppskattad eller använda värden ska synkroniseras.
+- Fältet **Systemststus rubrik** har lagts till i entiteten **arbetsorderprodukt** och visas på sidan. Används för att spåra systemstatus för arbetsordern och hjälper till att säkerställa korrekt filtrering om när arbetsorderprodukter synkroniseras till Supply Chain Management. När filter ställs in på integreringsuppgifter, används också **systemstatusrubrikens** information för att bestämma om uppskattad eller använda värden ska synkroniseras.
 - Fältet **fakturerat enhetsbelopp** visar det belopp som ska faktureras per faktisk enhet som används. Värdet beräknas som värdet **totalbelopp** delat med värdet **faktiska antalet**. Fältet används för integrering med system som inte stöder olika värden för den använda kvantiteten och den fakturerade kvantiteten. Det här fältet visas inte i användargränssnittet (UI). 
 - Fältet **fakturerat rabattbelopp** beräknas som värdet **rabattbelopp** plus avrundning från beräkningen av värdet **fakturerat enhetsbelopp**. Det här fältet används för integrering och visas inte i användargränssnittet.
 - Fältet **antal decimaler** innehåller värdet från fältet **kvantitet** som ett decimaltal. Det här fältet används för integrering och visas inte i användargränssnittet. 
@@ -198,7 +198,7 @@ Fältet **har endast externt hanterade produkter** har lagts till i entiteten **
 ### <a name="work-order-service-entity"></a>Tjänstentitet för arbetsorder
 
 - Fältet **Order har endast externt hanterade produkter** har lagts till i entiteten **arbetsordertjänst** och visas på sidan. Den används för att spåra om arbetsordertjänst underhålls i Supply Chain Management. Detta fält hjälper till att garantera att användare inte synkroniserar arbetsordertjänster som är okända för Supply Chain Management.
-- Fältet **Systemststus rubrik** har lagts till i entiteten **arbetsordertjänst** och visas på sidan. Används för att spåra systemstatus för arbetsordern och hjälper till att säkerställa korrekt filtrering om när arbetsordertjänster synkroniseras till Supply Chain Management. När filter ställs in på integrationsuppgifter, används också **systemstatusrubrikens** information för att bestämma om uppskattad eller använda värden ska synkroniseras.
+- Fältet **Systemststus rubrik** har lagts till i entiteten **arbetsordertjänst** och visas på sidan. Används för att spåra systemstatus för arbetsordern och hjälper till att säkerställa korrekt filtrering om när arbetsordertjänster synkroniseras till Supply Chain Management. När filter ställs in på integreringsuppgifter, används också **systemstatusrubrikens** information för att bestämma om uppskattad eller använda värden ska synkroniseras.
 - Fältet **varaktighet i timmar** innehåller värdet från fältet **varaktighet** när värdet konverteras från minuter till timmar. Det här fältet används för integrering och visas inte i användargränssnittet.
 - Fältet **Uppskattad varaktighet i timmar** innehåller värdet från fältet **Uppskattad varaktighet** när värdet konverteras från minuter till timmar. Det här fältet används för integrering och visas inte i användargränssnittet.
 - Fältet **fakturerat enhetsbelopp** lagrar det belopp som ska faktureras per faktisk enhet som används. Värdet beräknas som värdet **totalbelopp** delat med värdet **faktiska antalet**. Fältet används för integrering med system som inte stöder olika värden för den använda kvantiteten och den fakturerade kvantiteten. Det här fältet visas inte i användargränssnittet (UI).
@@ -217,21 +217,21 @@ Innan du synkroniserar arbetsorder är det viktigt att du uppdaterar följande i
 
 ### <a name="setup-in-supply-chain-management"></a>Konfigurera i Supply Chain Management
 
-Integrationen av arbetsorder kräver att du ställer in försäljningsursprunget. Försäljningsursprunget används för att särskilja försäljningsorder i Supply Chain Management som skapats från arbetsorder i Field Service. När försäljningsordern har sitt försäljningsursprung av typen **Integrering av arbetsorder** visas fältet **Extern arbetsorderstatus** på försäljningsorderns rubrik. Dessutom hjälper försäljningsursprunget till att garantera att försäljningsorder som har skapats från arbetsorder i Field Service filtreras bort under synkroniseringen från Supply Chain Management till Field Service.
+Integreringen av arbetsorder kräver att du konfigurerar försäljningsursprunget. Försäljningsursprunget används för att särskilja försäljningsorder i Supply Chain Management som skapats från arbetsorder i Field Service. När försäljningsordern har sitt försäljningsursprung av typen **Integrering av arbetsorder** visas fältet **Extern arbetsorderstatus** på försäljningsorderns rubrik. Dessutom hjälper försäljningsursprunget till att garantera att försäljningsorder som har skapats från arbetsorder i Field Service filtreras bort under synkroniseringen från Supply Chain Management till Field Service.
 
 1. Gå till **Försäljning och marknadsföring** \> **Inställningar** \> **Försäljningsorder** \> **Alla försäljningsorder**.
 2. Välj **Ny** för att skapa ett nytt försäljningsursprung.
 3. I fältet **Försäljningsursprung** anger du ett namn för försäljningsursprung som t.ex. **Arbetsorder**.
 4. I fältet **Beskrivning** anger du en beskrivning såsom **Arbetsorder för Field Service**.
 5. Markera kryssrutan **Tilldelning av ursprungstyp**.
-6. Ange fältet **Typ av försäljningsursprung** till **Integration av arbetsorder**.
+6. Ange fältet **Typ av försäljningsursprung** till **Integrering av arbetsorder**.
 7. Välj **Spara**.
 
 
-### <a name="setup-in-data-integration"></a>Konfigurera i dataintegration
+### <a name="setup-in-data-integration"></a>Konfigurera i dataintegrering
 
 Kontrollera att **integreringsnyckel** finns i **msdyn_workorders**
-1. Gå till dataintegration
+1. Gå till dataintegrering
 2. Välj fliken **Anslutningsinställning**
 3. Välj anslutningsinställning som används för arbetsordersynkronisering
 4. Välj fliken **Integreringsnyckel**
@@ -245,31 +245,31 @@ I följande illustrationer visas en mallmappning i dataintegrering.
 
 Filter: (msdyn_systemstatus ne 690970005) och (msdyn_systemstatus ne 690970000) och (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Mallmappning i Dataintegration för arbetsorder till försäljningsorder (Field Service till Supply Chain Management): WorkOrderHeader.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![Mallmappning i Dataintegrering för arbetsorder till försäljningsorder (Field Service till Supply Chain Management): WorkOrderHeader.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Arbetsorder till Sales orders (Field Service till Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och (msdyn_linestatus eq 690970000) och (msdynce_headersystemstatus ne 690970004)
 
-[![Mallmappning i Dataintegration för arbetsorder till försäljningsorder (Field Service till Supply Chain Management): WorkOrderServiceLineEstimate.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![Mallmappning i Dataintegrering för arbetsorder till försäljningsorder (Field Service till Supply Chain Management): WorkOrderServiceLineEstimate.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Arbetsorder till Sales orders (Field Service till Supply Chain Management): WorkOrderServiceLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004))
 
-[![Mallmappning i Dataintegration för arbetsorder till försäljningsorder (Field Service till Supply Chain Management): WorkOrderServiceLineUsed.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![Mallmappning i Dataintegrering för arbetsorder till försäljningsorder (Field Service till Supply Chain Management): WorkOrderServiceLineUsed.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Arbetsorder till Sales orders (Field Service till Supply Chain Management): WorkOrderProductLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och (msdyn_linestatus eq 690970000) och (msdynce_headersystemstatus ne 690970004) och (msdyn_allocated eq true)
 
-[![Mallmappning i Dataintegration för arbetsorder till försäljningsorder (Field Service till Supply Chain Management): WorkOrderProductLineEstimate.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![Mallmappning i Dataintegrering för arbetsorder till försäljningsorder (Field Service till Supply Chain Management): WorkOrderProductLineEstimate.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Arbetsorder till Sales orders (Field Service till Supply Chain Management): WorkOrderProductLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004) eller (msdyn_allocated ne true))
 
-[![Mallmappning i Dataintegration för arbetsorder till försäljningsorder (Field Service till Supply Chain Management): WorkOrderProductLineUsed.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+[![Mallmappning i Dataintegrering för arbetsorder till försäljningsorder (Field Service till Supply Chain Management): WorkOrderProductLineUsed.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

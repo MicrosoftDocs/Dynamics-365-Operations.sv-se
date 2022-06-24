@@ -1,6 +1,6 @@
 ---
 title: Måttenhetskonvertering per produktvariant
-description: Det här avsnittet beskriver hur du konfigurerar måttenhetskonvertering för produktvarianter. Den innehåller ett exempel på inställningarna.
+description: Denna artikel beskriver hur du konfigurerar måttenhetskonvertering för produktvarianter. Den innehåller ett exempel på inställningarna.
 author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c02252abcaf82cb2aab928949827e25ef7cce8c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a605e510ac8faa1f92e105c9fcc30222ef78e05e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579578"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869645"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Måttenhetskonvertering per produktvariant
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du konfigurerar måttenhetskonverteringar för diverse produktvarianter.
+Denna artikel beskriver hur du konfigurerar måttenhetskonverteringar för diverse produktvarianter.
 
 I stället för att skapa flera enskilda produkter som måste underhållas kan du använda produktvarianter för att skapa varianter av en enskild produkt. En produktvariant kan till exempel vara en T-shirt med given storlek och färg.
 
-Tidigare kunde enhetskonverteringar endast ställas in i produktmallen. Därför hade alla produktvarianter samma enhetskonverteringsregler. När funktionen *Måttenhetskonverteringar för produktvarianter* är aktiverad, dina T-shirtar säljs i kartonger och antalet T-shirtar som kan förpackas i en och samma kartong beror på storleken på T-shirtarna, kan du nu ställa in enhetskonverteringar mellan olika tröjstorlekar och de kartonger som används för paketering.
+Tidigare kunde enhetskonverteringar endast ställas in i produktmallen. Därför hade alla produktvarianter samma enhetskonverteringsregler. När funktionen *Måttenhetskonverteringar för produktvarianter* är aktiverad, dina T-shirtar säljs i kartonger och antalet T-shirtar som kan förpackas i en och samma kartong beror på storleken på T-shirtarna, kan du nu konfigurera enhetskonverteringar mellan olika tröjstorlekar och de kartonger som används för paketering.
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Aktivera funktionen i systemet
 
@@ -58,7 +58,7 @@ Så här konfigurerar du en produktmall till stöd för enhetskonvertering per v
 
     ![Lägga till en ny enhetskonvertering.](media/uom-new-conversion.png "Lägga till en ny enhetskonvertering")
 
-1. Använd de andra fälten som tillhandahålls för att ställa in din enhetskonvertering.
+1. Använd de andra fälten som tillhandahålls för att konfigurera din enhetskonvertering.
 1. Klicka på **OK** om du vill spara den nya enhetskonverteringen.
 
 > [!TIP]

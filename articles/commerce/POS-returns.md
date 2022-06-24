@@ -1,6 +1,6 @@
 ---
 title: Skapa returer i kassan (POS)
-description: I detta ämne beskrivs hur du initierar returer för hämtköpstransaktioner eller kundorder i kassaprogrammet för Microsoft Dynamics 365 Commerce (POS).
+description: I denna artikel beskrivs hur du initierar returer för hämtköpstransaktioner eller kundorder i kassaprogrammet för Microsoft Dynamics 365 Commerce (POS).
 author: hhainesms
 ms.date: 04/27/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: c8e06c0d83e3bc2f5efea1e3a8124c700706aa2e
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: a49e9abd0143d480cc1cafb05be5e995fb3cebdd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648998"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857008"
 ---
 # <a name="create-returns-in-pos"></a>Skapa returer i kassan (POS)
 
 [!include [banner](includes/banner.md)]
 
-I detta ämne beskrivs hur du initierar returer för hämtköpstransaktioner eller kundorder i kassaappen för Microsoft Dynamics 365 Commerce (POS).
+I denna artikel beskrivs hur du initierar returer för hämtköpstransaktioner eller kundorder i kassaprogrammet för Microsoft Dynamics 365 Commerce (POS).
 
 > [!NOTE]
 > I Commerce-versionen 10.0.20 och senare finns en ny funktion kallad **Enhetlig returbearbetningserfarenhet i kassan**. Denna funktion ger en mer konsekvent och enhetlig returprocess i kassan, oavsett transaktionstyp (hämtköpstransaktion eller kundorder) eller den ursprungliga kanal som ordern skapades i. Vi rekommenderar att alla organisationer aktiverar denna nya funktion för att förbättra den generella tillförlitligheten hos returbearbetningen via POS.
@@ -64,31 +64,31 @@ Om en återbetalning förfaller i kassan kan organisationer konfigurera [policye
 
 ## <a name="other-return-options-in-pos"></a>Andra returalternativ i kassan (POS)
 
-När funktionen **Enhetlig returbearbetningserfarenhet i kassan** aktiveras kan kunderna också använda funktionen **Visa journal** i kassan (POS) för att initiera en retur för en hämtköptransaktion eller en kundorder. De kan sedan välja en transaktion i journalen och därefter välja funktionen **Retur** i fältet för kassaappen (POS). Denna operation är endast tillgänglig om det finns returnerbara rader på ordern. Den initierar samma användarupplevelse som funktionen **Returnera transaktion**.
+När funktionen **Enhetlig returbearbetningserfarenhet i kassan** aktiveras kan kunderna också använda funktionen **Visa journal** i kassan (POS) för att initiera en retur för en hämtköptransaktion eller en kundorder. De kan sedan välja en transaktion i journalen och därefter välja funktionen **Retur** i fältet för kassaappen (POS). Denna åtgärd är endast tillgänglig om det finns returnerbara rader på ordern. Den initierar samma användarupplevelse som funktionen **Returnera transaktion**.
 
-Användare kan också använda funktionen **Återkalla order** i kassan för att söka efter och återkalla kundorder. (Denna funktion kan inte användas för hämtköptransaktioner). När en kundorder har valts kommer i detta fall funktionen **Retur** i fältet för kassaappen (POS) användas för att initiera en retur för kundordern. Denna operation är endast tillgänglig om det finns returnerbara rader på ordern. Den initierar samma användarupplevelse som funktionen **Returtransaktion** eller **Visa journal**.
+Användare kan också använda funktionen **Återkalla order** i kassan för att söka efter och återkalla kundorder. (Denna funktion kan inte användas för hämtköptransaktioner). När en kundorder har valts kommer i detta fall funktionen **Retur** i fältet för kassaappen (POS) användas för att initiera en retur för kundordern. Denna åtgärd är endast tillgänglig om det finns returnerbara rader på ordern. Den initierar samma användarupplevelse som funktionen **Returtransaktion** eller **Visa journal**.
 
-## <a name="return-orders-are-posted-to-commerce-headquarters-as-sales-orders"></a>Returorder bokförs i Commercea-dministrationen som försäljningsorder 
+## <a name="return-orders-are-posted-to-commerce-headquarters-as-sales-orders"></a>Returorder bokförs i Commerce headquarters. som försäljningsorder 
 
-När funktionen **Enhetlig returbearbetningserfarenhet i kassan (POS)** är aktiverat kommer samtliga returer som skapas i kassan (POS) att skrivas i Commerce-administrationen som säljorder med negativa rader. I versioner före Commerce version 10.0.20 kan användarna välja om returorder ska bokföras som försäljningsorder som har negativa rader eller om de ska vara returorder som skapas via auktoriseringsprocessen för varuretur (Return Merchandise Authorization, RMA). 
+När funktionen **Enhetlig returbearbetningserfarenhet i kassan (POS)** är aktiverat kommer samtliga returer som skapas i kassan (POS) att skrivas i Commerce headquarters som säljorder med negativa rader. I versioner före Commerce version 10.0.20 kan användarna välja om returorder ska bokföras som försäljningsorder som har negativa rader eller om de ska vara returorder som skapas via auktoriseringsprocessen för varuretur (Return Merchandise Authorization, RMA). 
 
 I funktionen **Enhetlig returbearbetningserfarenhet i kassan (POS)** har funktionen för att använda RMA-processen för att skapa returer i POS avskrivits.. När denna funktion har aktiverats skapas alla returer som försäljningsorder med negativa rader.
 
 ## <a name="offline-return-processing-improvements"></a>Förbättringar av returbearbetning offline
 
-När en retur bearbetas i kassan (POS) gör systemet i de flesta fall ett försök att ringa ett tjänsteanrop i realtid (RTS) till Commerce-administrationen i syfte att validera de aktuella kvantiteter som är tillgängliga för retur. Med den här valideringen kan du förhindra bedrägeriscenarier där en kund försöker returnera samma artikel på flera platser.
+När en retur bearbetas i kassan (POS) gör systemet i de flesta fall ett försök att ringa ett tjänsteanrop i realtid (RTS) till Commerce headquarters i syfte att validera de aktuella kvantiteter som är tillgängliga för retur. Med den här valideringen kan du förhindra bedrägeriscenarier där en kund försöker returnera samma artikel på flera platser.
 
-För att hantera situationer där RTS-anropet inte kan göras på grund av nätverks- eller anslutningsproblem har en process implementerats med syfte att regelbundet synkronisera returkvantitetsdata från Commerce-administrationen till en butiks kanaldatabas. Denna returspårning på kanalsidan gör det lättare att se till att de **Tillgängliga för retur**-kvantiteter som visas i kassan (POS) är relativt korrekta, även då kassan (POS) är offline. Det garanterar också att kassan (POS) kan fortsätta att validera informationen på kanalsidan i syfte att förhindra felaktiga returer.
+För att hantera situationer där RTS-anropet inte kan göras på grund av nätverks- eller anslutningsproblem har en process implementerats med syfte att regelbundet synkronisera returkvantitetsdata från Commerce headquarters till en butiks kanaldatabas. Denna returspårning på kanalsidan gör det lättare att se till att de **Tillgängliga för retur**-kvantiteter som visas i kassan (POS) är relativt korrekta, även då kassan (POS) är offline. Det garanterar också att kassan (POS) kan fortsätta att validera informationen på kanalsidan i syfte att förhindra felaktiga returer.
 
-Om du vill använda offline-returprocessen på rätt sätt ska organisationer schemalägga batchjobbet **Uppdatera returkvantiteter** i Commerce-administrationen så att detta körs regelbundet. Vi rekommenderar att det här jobbet körs på samma frekvens som P-jobbet som hämtar nya transaktioner från Commerce-kanaler till Commerce-administrationen.
+Om du vill använda offline-returprocessen på rätt sätt ska organisationer schemalägga batchjobbet **Uppdatera returkvantiteter** i Commerce headquarters så att detta körs regelbundet. Vi rekommenderar att det här jobbet körs på samma frekvens som P-jobbet som hämtar nya transaktioner från Commerce-kanaler till Commerce headquarters.
 
-Jobbet **Uppdatera returkvantiteter** beräknar den kvantitet som är tillgänglig för retur för alla försäljningsorder som finns i Commerce-administrationen. De data som beräknas i jobbet måste sedan skickas till kanaldatabaser så att butikskanalerna kan uppdateras. Distributionsjobbet **Returkvantiteter** (1200) används i detta syfte. Eftersom data som rör den returbara kvantiteten synkroniseras från Commerce-administrationen kan kassan (POS) - om en retur bearbetas i POS, men RTS-anropet inte kan göras - använda returinformationen på kanalsidan för att validera de kvantiteter som är **Tillgängliga för retur** för en given försäljningsrad.
+Jobbet **Uppdatera returkvantiteter** beräknar den kvantitet som är tillgänglig för retur för alla försäljningsorder som finns i Commerce headquarters. De data som beräknas i jobbet måste sedan skickas till kanaldatabaser så att butikskanalerna kan uppdateras. Distributionsjobbet **Returkvantiteter** (1200) används i detta syfte. Eftersom data som rör den returbara kvantiteten synkroniseras från Commerce headquarters kan kassan (POS) - om en retur bearbetas i POS, men RTS-anropet inte kan göras - använda returinformationen på kanalsidan för att validera de kvantiteter som är **Tillgängliga för retur** för en given försäljningsrad.
 
 När RTS-anrop inte kan göras och kassan (POS) använder data på kanalsidan för returvalidering, informerar ett varningsmeddelande användarna om att de skapar en "offline-retur". De är därför medvetna om att den **Tillgängliga för retur**-kvantitet som anges i kassan (POS) kan vara inaktuell och felaktig, beroende på när jobbet **Uppdatera returkvantiteter** senast bearbetades och synkroniserades med kanalen.
 
-En kund bearbetade exempelvis nyligen en retur för en orderrad i en annan kanal, men denna data har ännu inte synkroniserats med kanaldatabaserna via jobbet **Uppdatera returkvantiteter**. Kunden går sedan till en annan butik och försöker returnera samma artikel på nytt. Om butiken i detta fall inte kan utföra RTS-anropet till Commerce-administrationen för att hämta returdata i realtid, tillåter kassan (POS) att artikeln returneras på nytt. Användaren varnas dock för att informationen som används för att validera returen kan vara inaktuell. Meddelandet som användaren får är bara ett varningsmeddelande. Detta hindrar inte användaren från att fortsätta bearbeta returen.
+En kund bearbetade exempelvis nyligen en retur för en orderrad i en annan kanal, men denna data har ännu inte synkroniserats med kanaldatabaserna via jobbet **Uppdatera returkvantiteter**. Kunden går sedan till en annan butik och försöker returnera samma artikel på nytt. Om butiken i detta fall inte kan utföra RTS-anropet till Commerce headquarters för att hämta returdata i realtid, tillåter kassan (POS) att artikeln returneras på nytt. Användaren varnas dock för att informationen som används för att validera returen kan vara inaktuell. Meddelandet som användaren får är bara ett varningsmeddelande. Detta hindrar inte användaren från att fortsätta bearbeta returen.
 
-Om kanalsidans information av någon anledning inte är uppdaterad och en offlineretur bearbetas för en kvantitet som överskrider den faktiska kvantiteten för **Tillgänglig att returnera**, kan ett fel komma att genereras när utdragsbokföringen körs för att skapa transaktionen i Commerce-administrationen.
+Om kanalsidans information av någon anledning inte är uppdaterad och en offlineretur bearbetas för en kvantitet som överskrider den faktiska kvantiteten för **Tillgänglig att returnera**, kan ett fel komma att genereras när utdragsbokföringen körs för att skapa transaktionen i Commerce headquarters.
 
 > [!NOTE]
 > När funktionen **Enhetlig returbearbetningserfarenhet i kassan (POS)** är aktiverad blir nya tillvalsfunktioner tillgängliga som stöder bekräftandet av serialiserade produktreturer. Mer information finns i [Returserienummerkontrollerade produkter i kassan (POS)](POS-serial-returns.md).
@@ -96,7 +96,7 @@ Om kanalsidans information av någon anledning inte är uppdaterad och en offlin
 ## <a name="version-details"></a>Versionsdetaljer
 
 Följande lista innehåller minimiversionskraven för olika komponenter.
-- Commerce-administration: Version 10.0.20
+- Commerce headquarters: Version 10.0.20
 - Commerce Scale Unit (CSU): Version 9.30
 - Kassa (POS): Version 9.30
 
@@ -109,7 +109,7 @@ Med hjälp av den här funktionen kan du se till att momsen blir lika med det mo
 
 ## <a name="set-up-return-locations-for-retail-stores"></a>Ställa in returplatser för butiker
 
-Handel låter dig ställa in returplatser baserat på butiksinfokoder och orsakskoder för försäljning och marknadsföring. När kunder returnerar köp anger kassapersonal ofta orsaken till returen. Du kan ange att returnerade produkter ska tilldelas olika returställen i lagret, baserat på infokoder och orsakskoder som kassapersonal väljer i kassaregistret.
+Handel låter dig konfigurera returplatser baserat på butiksinfokoder och orsakskoder för försäljning och marknadsföring. När kunder returnerar köp anger kassapersonal ofta orsaken till returen. Du kan ange att returnerade produkter ska tilldelas olika returställen i lagret, baserat på infokoder och orsakskoder som kassapersonal väljer i kassaregistret.
 
 En kund returnerar till exempel en defekt produkt, och kassören bearbetar returtransaktionen. När Retail POS visar infokoden för returer väljer kassören delkoden för defekta returer. Den returnerade produkten tilldelas sedan automatiskt till en viss returplats.
 
@@ -117,7 +117,7 @@ En returplats kan vara ett lagerställe, en plats på ett lagerställe eller en 
 
 ### <a name="prerequisites"></a>Förutsättningar
 
-Innan du kan ställa in returplatser måste du ställa in följande element:
+Innan du kan konfigurera returplatser måste du konfigurera följande element:
 
 - **Butiksinfokoder** - promptar i kassan som har ställts in i modulen **Butik**. Mer information finns i [Ställa in informationskoder](/dynamicsax-2012/appuser-itpro/setting-up-info-codes).
 - **Orsakskoder för försäljning och marknadsföring** – promptar i kassan som har ställts in i modulen **Försäljning och marknadsföring**. Mer information finns i [Ställa in orsakskoder](/dynamicsax-2012/appuser-itpro/set-up-return-reason-codes).

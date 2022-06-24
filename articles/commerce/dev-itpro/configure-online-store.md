@@ -1,6 +1,6 @@
 ---
 title: Konfigurera onlinebutiker
-description: Denna artikel innehåller länkar till avsnitt som hjälper dig att centralt konfigurera och hantera en onlinebutik.
+description: Denna artikel innehåller länkar till artiklar som hjälper dig att centralt konfigurera och hantera en onlinebutik.
 author: kfend
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 87607e2c42ee67d62a7ce2e87744e9d9143dcf81
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c8a5b13189eb93d4df81a427a932b81ab8d830be
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861889"
 ---
 # <a name="configure-online-stores"></a>Konfigurera onlinebutiker
 
 [!include [banner](../includes/banner.md)]
 
-Denna artikel innehåller länkar till avsnitt som hjälper dig att centralt konfigurera och hantera en onlinebutik.
+Denna artikel innehåller länkar till artiklar som hjälper dig att centralt konfigurera och hantera en onlinebutik.
 
-Avsnitten nedan hjälper dig att konfigurera handelskomponenter och onlinebutiken i klienten.
+Artiklarna i nadanstående tabell hjälper dig att konfigurera handelskomponenter och onlinebutiken i klienten.
 
 ## <a name="configure-an-online-store"></a>Konfigurera en onlinebutik
 
-| Uppgift                                                | Detaljer                                                                                                                                                                                                                                                                                                                                                   | Ämnen                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Uppgift                                                | Detaljer                                                                                                                                                                                                                                                                                                                                                   | Artiklar                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurera komponenter.                        | Skapa och underhåll information för handelsåtgärder. Denna information omfattar butiker, skatter, produkter, presentkort, kampanjer och rabatter.                                                                                                                                                                                                          | [Skapa och underhålla butik butik](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-retail) (TechNet-innehåll för Microsoft Dynamics AX 2012)                                                                                                                                                                                                                                                                                          |
 | Skapa en navigeringshierarki för kanal.    | Skapa en kategorihierarki för kanalnavigering om du vill skapa en kategoristruktur för produkter som du erbjuder via en nätbutik. Du definierar kategorihierarkin och tilldelar sedan produkter, produktattributgrupper och attributvärden till kategorierna. Tilldela sedan kategorihierarkin till en nätbutik.                            | [Skapa en butikshierarki](/dynamicsax-2012/appuser-itpro/set-up-a-retail-hierarchy)</br> (TechNet-innehåll för AX 2012)</br> [Ställ in attribut och attributtyper](/dynamicsax-2012/appuser-itpro/set-up-attributes-and-attribute-types) (TechNet-innehåll för AX 2012)</br> [Ställ in butiksattributgrupper](/dynamicsax-2012/appuser-itpro/set-up-retail-attribute-groups) (TechNet-innehåll för AX för 2012) |
@@ -41,7 +41,7 @@ Avsnitten nedan hjälper dig att konfigurera handelskomponenter och onlinebutike
 
 ## <a name="configure-online-store-products"></a>Konfigurera produkter för nätbutik
 
-| Uppgift                                 | Detaljer                                                                                                                                           | Ämnen                                                                                                                                                                                                                                                                            |
+| Uppgift                                 | Detaljer                                                                                                                                           | Artiklar                                                                                                                                                                                                                                                                            |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Lägg till sortiment i nätbutiken. | Lägg till de sortiment som innehåller de produkter som du erbjuder i nätbutiken.                                                                  | [Skapa en nätbutik](/dynamicsax-2012/appuser-itpro/set-up-an-online-store) (TechNet-innehåll för AX 2012)                                                                                                                                              |
 | Hantera kataloger.                     | Använd produktkataloger för att identifiera de produkter som du vill erbjuda i dina butiker.                                                              | [Huvuduppgifter: Skapa produktkataloger för butiker](/dynamicsax-2012/appuser-itpro/key-tasks-create-retail-product-catalogs) (TechNet-innehåll för AX 2012)                                                                                                                           |
@@ -52,9 +52,9 @@ Avsnitten nedan hjälper dig att konfigurera handelskomponenter och onlinebutike
 
 ## <a name="set-up-data-exchange-between-commerce-and-the-online-store"></a>Ställ in utbyte av data mellan Commerce och nätbutiken
 
-| Uppgift                                 | Detaljer                                                                                                                               | Ämnen                                                                                                                                                                                                                                                                                  |
+| Uppgift                                 | Detaljer                                                                                                                               | Artiklar                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ställ in profiler för kanalintegration. | Profiler gör att komponenterna kan kommunicera med varandra. Skapa profiler innan du konfigurerar inställningar för utbyte av data. | [Konfigurera en profil fr realtidstjänst](/dynamicsax-2012/appuser-itpro/set-up-a-real-time-service-profile) (TechNet-innehåll för AX 2012)</br> [Konfigurera en kanalprofil](/dynamicsax-2012/appuser-itpro/set-up-a-channel-profile) (TechNet-innehåll för AX 2012) |
+| Ställ in profiler för kanalintegrering. | Profiler gör att komponenterna kan kommunicera med varandra. Skapa profiler innan du konfigurerar inställningar för utbyte av data. | [Konfigurera en profil fr realtidstjänst](/dynamicsax-2012/appuser-itpro/set-up-a-real-time-service-profile) (TechNet-innehåll för AX 2012)</br> [Konfigurera en kanalprofil](/dynamicsax-2012/appuser-itpro/set-up-a-channel-profile) (TechNet-innehåll för AX 2012) |
 
 
 

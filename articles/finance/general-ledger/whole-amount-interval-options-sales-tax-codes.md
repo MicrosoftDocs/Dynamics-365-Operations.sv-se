@@ -1,5 +1,5 @@
 ---
-title: Beräkningsalternativ för hela beloppet och intervall för momskoder
+title: Alternativ för hela belopp och intervallberäkning för momskoder
 description: Den här artikeln beskriver alternativen för fältet Beräkningsmetod för momskoder och hur moms beräknas för intervall och hela belopp.
 author: kailiang
 ms.date: 06/20/2017
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f06c92f2151f54a7d9b684b9687b786d1e4cd7a
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 5b02a0ced8b556cfc5a984d24ceaf982629fd69c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727466"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874473"
 ---
-# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Beräkningsalternativ för hela beloppet och intervall för momskoder
+# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Alternativ för hela belopp och intervallberäkning för momskoder
 
 [!include [banner](../includes/banner.md)]
 

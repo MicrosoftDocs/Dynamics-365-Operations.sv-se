@@ -1,6 +1,6 @@
 ---
 title: Godkännandearbetsflöden för lagerjournal
-description: Det här ämnet ger en beskrivning av hur du kan ställa in och använda arbetsflöden för lagerjournaler för olika typer av fysiska lagertransaktioner. Arbetsflöden för lagerjournal hjälper till att säkerställa att endast godkända lagerjournaler kan bokföras på transaktioner.
+description: Denna artikel ger en beskrivning av hur du kan konfigurera och använda arbetsflöden för lagerjournaler för olika typer av fysiska lagertransaktioner. Arbetsflöden för lagerjournal hjälper till att säkerställa att endast godkända lagerjournaler kan bokföras på transaktioner.
 author: yufeihuang
 ms.date: 07/21/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778315"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873997"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Godkännandearbetsflöden för lagerjournal
 
 [!include [banner](../includes/banner.md)]
 
-I det här ämnet beskrivs hur man ställer in och använder arbetsflöden för godkännande av lagerjournal för olika typer av fysiska inventeringstransaktioner, såsom emissioner och kvitton, lagerrörelser, strukturlistor (BOM) och avstämning av fysisk inventering. Arbetsflöden för lagerjournal hjälper till att säkerställa att endast godkända lagerjournaler kan bokföras på transaktioner.
+I denna artikel beskrivs hur man konfigurerar och använder arbetsflöden för godkännande av lagerjournal för olika typer av fysiska inventeringstransaktioner, såsom emissioner och kvitton, lagerrörelser, strukturlistor (BOM) och avstämning av fysisk inventering. Arbetsflöden för lagerjournal hjälper till att säkerställa att endast godkända lagerjournaler kan bokföras på transaktioner.
 
 > [!NOTE]
 > Arbetsflöden för godkännande av lagerjournal gäller bara för transaktioner som registrerats med modulen lagerhantering. De fungerar inte med lagerjournaler som aktiverats från modulen för lagerstyrning.
@@ -38,7 +38,7 @@ Från och med version 10.0.21 av Supply Chain Management är denna funktion akti
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Skapa ditt godkännandearbetsflöde för lagerjournal
 
-Om du vill ställa in den här funktionen måste du skapa ett arbetsflöde för varje typ av lagerjournal som du vill styra. Eftersom olika typer av lagerjournaler kan ha olika godkännandehierarkier och arbetsflödessteg kan du konfigurera enskilda arbetsflöden för varje lagerjournaltyp.
+Om du vill konfigurera den här funktionen måste du skapa ett arbetsflöde för varje typ av lagerjournal som du vill styra. Eftersom olika typer av lagerjournaler kan ha olika godkännandehierarkier och arbetsflödessteg kan du konfigurera enskilda arbetsflöden för varje lagerjournaltyp.
 
 Arbetsflöden stöder versionskontroll och var och en har ett arbetsflödes-ID och en aktiv version. Du kan välja att aktivera varje ny arbetsflödesversion direkt när du har skapat den eller behålla den inaktiv. Om du behöver olika arbetsflöden för samma journaltyp skapar du flera arbetsflöden för journaltypen och tilldelar sedan var och en av dessa till ett annat journalnamn som använder den typen.
 
@@ -46,7 +46,7 @@ För att skapa ditt godkännandearbetsflöde för lagerjournal:
 
 1. Gå till **Lagerhantering \> Inställningar\> Arbetsflöden för lagerhantering**.
 1. Välj **Ny** i åtgärdsfönstret.
-1. Välj den typ av lagerjournal för vilken du vill ställa in ett arbetsflöde:
+1. Välj den typ av lagerjournal för vilken du vill konfigurera ett arbetsflöde:
     - **Journal för lagermärkesinventering**
     - **Journal för lagerägarskapsändring**
     - **Lagerrörelsejournal**
@@ -65,7 +65,7 @@ För att skapa ditt godkännandearbetsflöde för lagerjournal:
 
 ## <a name="assign-approval-workflows-to-inventory-journal-names"></a>Tilldela godkännandearbetsflöden för lagerjournalnamn
 
-Nästa steg är att tilldela ett arbetsflöde för lagerjournal till varje lagerjournalnamn. För varje lagerjournaltyp kan du ställa in flera namn på lagerjournaler.
+Nästa steg är att tilldela ett arbetsflöde för lagerjournal till varje lagerjournalnamn. För varje lagerjournaltyp kan du konfigurera flera namn på lagerjournaler.
 
 Så här kopplar du ett arbetsflöde för lagerjournal med ett lagerjournalnamn:
 

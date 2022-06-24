@@ -1,6 +1,6 @@
 ---
 title: Generera konsoliderade bokslut
-description: Det här avsnittet beskrivs de olika situationer där du kan skapa konsoliderade bokslut.
+description: Den här artikeln beskrivs de olika situationer där du kan skapa konsoliderade bokslut.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 092123d6f5f74d2ff160f2ebffdc2c049ccc3f65
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: c6a132b742414a3dab635634c7bb5ba0dbea527d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716536"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846811"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generera konsoliderade bokslut
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskrivs de olika situationer där du kan skapa konsoliderade bokslut.
+Den här artikeln beskrivs de olika situationer där du kan skapa konsoliderade bokslut.
 
 ## <a name="single-level-and-multilevel-consolidations-across-legal-entities"></a>Konsolideringar på en nivå och flera nivåer över juridiska personer
 Den enklaste metoden för att konsolidera data med hjälp av ekonomisk rapportering är att använda rapportträd för att samla in data mellan företag som har samma kontoplan och räkenskapsperioder. Nedan följer stegen på hög nivå för att konsolidera hjälp av ett rapporteringsträd.
@@ -153,7 +153,7 @@ I följande illustration visas alternativen i rapportdefinitionen som låter dig
 ![Periodnummer för rapportdefinition för alternativ.](./media/options-report-definition-period-number.png "Periodnummer för alternativrapport")
 
 ## <a name="business-unit-consolidations"></a>Konsolideringar av affärsenhet
-Det här avsnittet har fokuserat på rapportträdsdefinitioner och organisationshierarkier i ekonomisk rapportering för konsolidering. Du kan också använda rapportträdet för att skapa konsolideringsrapporter för affärsenhet såsom rapporter om internationell försäljning eller operationer. Dessa rapporter är obligatoriska. För att skapa dem, markera ett företag och en dimension för varje enhet som du vill konsolidera på. I bilden nedan utförs exempelvis uppföljning av affärsenhet genom att upprepa varje företag i kolumnen **företag** (kolumn A) och identifierar en grupp av avdelningsdimensionsvärden per företag i kolumnen **dimensioner** (kolumn D).
+Den här artikeln har fokuserat på rapportträdsdefinitioner och organisationshierarkier i ekonomisk rapportering för konsolidering. Du kan också använda rapportträdet för att skapa konsolideringsrapporter för affärsenhet såsom rapporter om internationell försäljning eller operationer. Dessa rapporter är obligatoriska. För att skapa dem, markera ett företag och en dimension för varje enhet som du vill konsolidera på. I bilden nedan utförs exempelvis uppföljning av affärsenhet genom att upprepa varje företag i kolumnen **företag** (kolumn A) och identifierar en grupp av avdelningsdimensionsvärden per företag i kolumnen **dimensioner** (kolumn D).
 
 ![Konsolideringsrapporter för affärsenhet.](./media/business-unit-consolidation-reports.png "Konsolideringsrapporter för affärsenhet")
 
@@ -218,7 +218,7 @@ För att få korrekt konverterade belopp när valutor används, använder ekonom
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-Mer information om konsolidering och valutaöversättning finns i det överordnade avsnittet i det här avsnittet [Översikt över ekonomisk konsolidering och valutaomräkning](./financial-consolidations-currency-translation.md).
+Mer information om konsolidering och valutaöversättning finns i det överordnade avsnittet i den här artikeln [Översikt över ekonomisk konsolidering och valutaomräkning](./financial-consolidations-currency-translation.md).
 
 Information om hur du anger information om onlinekonsolideringar finns i [Online ekonomisk konsolidering](./consolidate-online.md).
 

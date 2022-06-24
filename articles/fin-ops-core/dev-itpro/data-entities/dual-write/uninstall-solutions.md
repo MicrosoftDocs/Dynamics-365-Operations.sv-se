@@ -1,6 +1,6 @@
 ---
 title: Avinstallera lösningar för dubbelriktad skrivning för programorkestrering
-description: I detta ämne beskrivs hur du avinstallerar lösningar för dubbelriktad skrivning för programorkestrering.
+description: I denna artikel beskrivs hur du avinstallerar lösningar för dubbelriktad skrivning för programorkestrering.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2022-01-21
-ms.openlocfilehash: 781b2cb19a563d5712fa65718c93bfdc242f0c4a
-ms.sourcegitcommit: abfaef124c8747827d6f297821f01f1f6fbca6b7
+ms.openlocfilehash: 676802ddabac69db4947cf806e9103f67cece3de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "8455329"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870386"
 ---
 # <a name="uninstall-dual-write-application-orchestration-solutions"></a>Avinstallera lösningar för dubbelriktad skrivning för programorkestrering
 
 [!include [banner](../../includes/banner.md)]
 
-I detta ämne beskrivs hur du avinstallerar lösningar för dubbelriktad skrivning för programorkestrering.
+I denna artikel beskrivs hur du avinstallerar lösningar för dubbelriktad skrivning för programorkestrering.
 
 Vissa kunder installerar oavsiktligt det installationspaket för dubbelriktad skrivning för programorkestrering som installerar flera lösningar i Microsoft Dataverse-miljön. Installation av överflödiga lösningar i paketet kan leda till oväntade och oönskade problem.
 

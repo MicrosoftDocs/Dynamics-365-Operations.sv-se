@@ -1,6 +1,6 @@
 ---
 title: Importera uppdaterade versioner av ER-konfigurationer
-description: I det här avsnittet beskrivs hur du importerar uppdaterade versioner av konfigurationer av elektronisk rapportering (ER) från den globala lagringsplatsen för konfigurationstjänsten.
+description: I den här artikeln beskrivs hur du importerar uppdaterade versioner av konfigurationer av elektronisk rapportering (ER) från den globala lagringsplatsen för konfigurationstjänsten.
 author: NickSelin
 ms.date: 06/09/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 712bccbd48775cadc069ef5e8a04f9aae3c9f223137bcd394ff1815a720393b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 69eaa3e2ecfbd1e92f23725d97d7fa9f0abe1cea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734898"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847558"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Importera uppdaterade versioner av ER-konfigurationer
 
@@ -28,7 +28,7 @@ ms.locfileid: "6734898"
 
 Elektronisk rapportering (ER) [databaser](general-electronic-reporting.md#Repository) används för att dela [ER-konfigurationer](general-electronic-reporting.md#Configuration). Du kan [Importera](download-electronic-reporting-configuration-lcs.md) ER-konfigurationer från olika databaser till din instans av Microsoft Dynamics 365 Finance. När du importerar ER-konfigurationer kan [konfigurationsprovidern](general-electronic-reporting.md#Provider) publicera nya databaser för [versioner](general-electronic-reporting.md#component-versioning) så att de kan delas.
 
-I det här avsnittet beskrivs hur du importerar uppdaterade versioner av ER-konfigurationer från den globala lagringsplatsen för konfigurationstjänsten. Mer information finns i [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, konfigurationstjänst](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+I den här artikeln beskrivs hur du importerar uppdaterade versioner av ER-konfigurationer från den globala lagringsplatsen för konfigurationstjänsten. Mer information finns i [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, konfigurationstjänst](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="review-the-available-updated-versions"></a>Granska tillgängliga uppdaterade versioner
 

@@ -1,6 +1,6 @@
 ---
 title: Blandning av produktstorlekar på plats
-description: Det här avsnittet innehåller information om hur du hanterar blandning av produktdimension för plats. Den här platsprofilfunktionen hjälper till att förbättra platshanteringen när produktvarianter eller produkter som har dimensioner används, t.ex. inom modebranschen. Med den kan du bestämma om konfigurationer, färger, utföranden och storlekar kan blandas för en viss platsprofil, eller om bara en av dessa dimensioner eller en kombination av dem kan placeras på samma plats.
+description: Denna artikel innehåller information om hur du hanterar blandning av produktdimension för plats. Den här platsprofilfunktionen hjälper till att förbättra platshanteringen när produktvarianter eller produkter som har dimensioner används, t.ex. inom modebranschen. Med den kan du bestämma om konfigurationer, färger, utföranden och storlekar kan blandas för en viss platsprofil, eller om bara en av dessa dimensioner eller en kombination av dem kan placeras på samma plats.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9daf6061d56ef004753114aaffa8eb580cea1186
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103498"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885737"
 ---
 # <a name="location-product-dimension-mixing"></a>Blandning av produktstorlekar på plats
 
@@ -28,7 +28,7 @@ Blandning av produktdimension för plats är en platsprofilfunktion som hjälper
 
 ## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>Aktivera eller inaktivera funktionen för blandning av produktdimension för plats
 
-De funktioner som beskrivs i det här avsnittet måste funktionen *Blandning av produktstorlekar på plats* vara inaktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Blandning av produktstorlekar på plats* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+För att använda de funktioner som beskrivs i denna artikel måste funktionen *Blandning av produktstorlekar på plats* vara aktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Blandning av produktstorlekar på plats* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup"></a>Inställningar
 
@@ -44,7 +44,7 @@ Varje plats på lagerstället måste ha en platsprofil associerad som beskriver 
     > [!NOTE]
     > Du kan ange det här alternativet till *Ja* endast om alternativet **Tillåt blandade artiklar** är inställt på *Nej*.
 
-1. På snabbfliken **Tillåten blandning av produktdimensioner** ange alternativet **storlek** till *Ja*. I det scenario som beskrivs i det här avsnittet kan blandning endast göras för produkter som har olika dimensioner för **storlek**. Andra alternativ är också tillgängliga.
+1. På snabbfliken **Tillåten blandning av produktdimensioner** ange alternativet **storlek** till *Ja*. I det scenario som beskrivs i denna artikel kan blandning endast göras för produkter som har olika dimensioner för **Storlek**. Andra alternativ är också tillgängliga.
 1. Välj **Spara**.
 
 ### <a name="create-a-new-product-master-and-product-variants"></a>Skapa en ny produktmallar och produktvarianter
@@ -78,7 +78,7 @@ Varje plats på lagerstället måste ha en platsprofil associerad som beskriver 
 1. På sidan **Välj företag att frisläppa till**, välj *USMF* och sedan **Nästa** för att bekräfta valet.
 1. På sidan **Bekräfta val** väljer du **slutför** för att slutföra frisläppandet.
 
-    Du får ett meddelande Operationen är klar.
+    Du får ett meddelande Åtgärden är klar.
 
 ### <a name="update-a-released-product-in-the-usmf-company"></a>Uppdatera en frisläppt produkt i USMF företaget
 
@@ -188,13 +188,13 @@ Du skapar en inköpsorder med tre rader: två rader för samma produktnummer men
     - **Storlek** *L*
     - **Kvantitet:** *2*
 
-1. Välj **Lägg till rad** ovanför rutnätet för att lägga till en andra inköpsorderrad och ställa in följande värden:
+1. Välj **Lägg till rad** ovanför rutnätet för att lägga till en andra inköpsorderrad och konfigurera följande värden:
 
     - **Artikelnummer:** *B0001*
     - **Storlek** *XL*
     - **Kvantitet:** *2*
 
-1. Välj **Lägg till rad** för att lägga till en tredje inköpsorderrad och ställa in följande värden:
+1. Välj **Lägg till rad** för att lägga till en tredje inköpsorderrad och konfigurera följande värden:
 
     - **Artikelnummer:** *A0001*
     - **Kvantitet:** *1*

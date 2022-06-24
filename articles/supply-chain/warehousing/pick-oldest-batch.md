@@ -1,6 +1,6 @@
 ---
 title: Plocka den äldsta batchen på en mobil enhet
-description: Det här avsnittet beskriver hur du ställer in och använder alternativen att plocka den äldsta batchen från en mobil enhet.
+description: Denna artikel beskriver hur du konfigurerar och använder alternativen att plocka den äldsta batchen från en mobil enhet.
 author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d96221ae14610057cceed304efa01261eb01aef134e4bdad10ccd0386bd52cf9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad1f2cfd029d71784d5efcc169178a791f0ae077
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746733"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885650"
 ---
 # <a name="pick-oldest-batch-on-a-mobile-device"></a>Plocka den äldsta batchen på en mobil enhet
 
@@ -30,7 +30,7 @@ Du kan komma åt konfigurationen **Plocka äldsta batchen** via menyn för en mo
 ## <a name="where-it-applies"></a>Tillämpning
 Plocka den äldsta batchen konfigureras på en mobil enhets menyalternativ och påverkar plockningen av batchen under artiklar.
 
-## <a name="how-to-set-up-the-configuration-for-pick-oldest-batch"></a>Hur du ställer in konfigurationen för Plocka äldsta batchen 
+## <a name="how-to-set-up-the-configuration-for-pick-oldest-batch"></a>hur du konfigurerar konfigurationen för Plocka äldsta batchen 
 För artiklar som är inställda på att använda befintligt arbete kan **Plocka äldsta batchen** ställas in på **Ingen**, **Varna** eller **Tvinga** från menyn i en mobil enhet.
 
 **Ingen**: arbetare får inga meddelanden och tillåts plocka valfri batch på sin plats.

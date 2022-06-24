@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fddad1fffd61ef0cf78977721bdf2da51aa4c682
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9bee2d68a2ed2aa339ddf8232bba4541f4fe52b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984656"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871932"
 ---
 # <a name="product-configuration-models-overview"></a>Översikt över produktkonfigurationsmodeller
 
@@ -47,7 +47,7 @@ Modeller för produktkonfiguration skapas för att representera en struktur för
 <li>Delkomponenter</li>
 <li>Användarbehov</li>
 <li>Strukturlisterader</li>
-<li>Flödesoperationer</li>
+<li>Flödesåtgärder</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -58,7 +58,7 @@ Modeller för produktkonfiguration skapas för att representera en struktur för
 <li><strong>Skrivskyddad</strong> – Attributvärdet visas under en konfigurationssession, men kan inte ändras.</li>
 <li><strong>Gömt</strong> – Attributvärdet ingår i begränsningar och kriterier, men visas inte under en konfigurationssession.</li>
 </ul>
-Du kan även ange ett villkor för attribut. Om villkoret uppfylls, måste ett värde angetts för obligatoriska attribut. Villkor är uttryck som måste uppfyllas för att attribut, strukturlisterader och flödesoperationer ska inkluderas i en modell för produktkonfiguration. Alla attribut som refereras i ett villkor, blir obligatorisk. Vi rekommenderar att du väljer attribut som är obligatoriska i fliken <strong>Attribut</strong>. Detta kan göra det enklare att identifiera obligatoriska attribut. Attributvärden är en viktig del av du vill återanvända konfigurationer. Attributvärden används för att fastställer om en konfiguration finns, som matchar val som en användare har gjort under en konfigurationssession.</td>
+Du kan även ange ett villkor för attribut. Om villkoret uppfylls, måste ett värde angetts för obligatoriska attribut. Villkor är uttryck som måste uppfyllas för att attribut, strukturlisterader och flödesåtgärder ska inkluderas i en modell för produktkonfiguration. Alla attribut som refereras i ett villkor, blir obligatorisk. Vi rekommenderar att du väljer attribut som är obligatoriska i fliken <strong>Attribut</strong>. Detta kan göra det enklare att identifiera obligatoriska attribut. Attributvärden är en viktig del av du vill återanvända konfigurationer. Attributvärden används för att fastställer om en konfiguration finns, som matchar val som en användare har gjort under en konfigurationssession.</td>
 </tr>
 <tr class="odd">
 <td>Attributtyper</td>
@@ -75,7 +75,7 @@ Om attributtypen är <strong>Booleskt</strong>, <strong>Heltal</strong> med ett 
 <td>Begränsningar</td>
 <td>Begränsningar beskriver begränsningarna i produktmodellkonfigurationen. Begränsningar används för att garantera att endast giltiga värden väljs när en produkt konfigureras. Det kan antingen vara uttryckbegränsningar eller registret begränsningar:
 <ul>
-<li>Uttryckbegränsningar kan bara användas för komponenten att de är kopplat till. Uttryckbegränsningarna för en komponent kan referera till attribut i komponentens delkomponenter. Produktkonfigurationslösaren används för att lösa begränsningar, och du måste använda lösarens syntax när du skriver begränsningarna. Mer information finns på avsnittslänken om uttrycksbegränsningar och registerbegränsningar.</li>
+<li>Uttryckbegränsningar kan bara användas för komponenten att de är kopplat till. Uttryckbegränsningarna för en komponent kan referera till attribut i komponentens delkomponenter. Produktkonfigurationslösaren används för att lösa begränsningar, och du måste använda lösarens syntax när du skriver begränsningarna. Mer information finns via artikellänken om uttrycksbegränsningar och tabellbegränsningar.</li>
 <li>Registerbegränsningar måste definieras innan de kan användas på en komponent i en produktkonfigurationsmodell. Registerbegränsningar kan vara antingen användardefinierade eller systemdefinierade. En användardefinierad registerbegränsning är en sorts matris som kan användas för att beskriva uppsättningen kombinationer vilka definieras av attributtyper. Om till exempel högtalare tillverkas kan matrisen för en användardefinierad registerbegränsning ha kolumner för högtalarens finish och högtalargallret.</li>
 </ul>
 <strong>Exempel</strong> Högtalarna är tillgängliga i fyra varianter: Svart, Ek, och Rosenträ och Vitt. Högtalarna kan ha ett av tre främre galler: svart, metall eller vitt. Svart finish är tillgänglig för alla galler och andra ytbehandlingar begränsas till vissa galler. Följande tabell visar ett exempel på informationen som visas på fliken <strong>Tillåtna kombinationer</strong> på sidan <strong>Redigera registerbegränsning</strong>.
@@ -121,7 +121,7 @@ En systemdefinierad registerbegränsning representerar en koppling mellan en att
 </tr>
 <tr class="odd">
 <td>Beräkningar</td>
-<td>Beräkningar representerar ett tillägg till begränsningar. Du kan använda en beräkning för att utföra aritmetiska operationer på attribut av typen <strong>Decimal</strong> och <strong>Heltal</strong>, eller logiska operationer som gäller attribut av typen <strong>Text</strong> med en fast lista eller <strong>Booleskt</strong>. En beräkning har ett målattribut som ska innehålla resultatet av beräkningsuttrycket. Du bygger beräkningsuttrycket med hjälp av uttrycksredigeraren.</td>
+<td>Beräkningar representerar ett tillägg till begränsningar. Du kan använda en beräkning för att utföra aritmetiska åtgärder på attribut av typen <strong>Decimal</strong> och <strong>Heltal</strong>, eller logiska åtgärder som gäller attribut av typen <strong>Text</strong> med en fast lista eller <strong>Booleskt</strong>. En beräkning har ett målattribut som ska innehålla resultatet av beräkningsuttrycket. Du bygger beräkningsuttrycket med hjälp av uttrycksredigeraren.</td>
 </tr>
 <tr class="even">
 <td>Delkomponenter</td>
@@ -139,11 +139,11 @@ Du kan visa om en frisläppt produkt kan användas som en komponent eller delkom
 </tr>
 <tr class="even">
 <td>Strukturlisterader</td>
-<td>Strukturlisterader representerar de enskilda materialen av komponenterna i modellen för produktkonfiguration. På sidan <strong>Information för strukturlisterad</strong> är alla artiklar tillgängliga för val. Ett villkor kan läggas till på strukturlisteraden, så att strukturlisteraderna som väljs för en viss produktvariant kan variera, baserat på användarens val när modellen för produktkonfiguration ställs in. Villkor är uttryck som måste uppfyllas för att attribut, strukturlisterader och flödesoperationer ska inkluderas i en modell för produktkonfiguration. På sidan <strong>Information för strukturlisterad</strong> kan du välja ett annat värde. Alternativt kan du koppla ett attribut som värdet väljs för när modellen för produktkonfiguration ställs in.</td>
+<td>Strukturlisterader representerar de enskilda materialen av komponenterna i modellen för produktkonfiguration. På sidan <strong>Information för strukturlisterad</strong> är alla artiklar tillgängliga för val. Ett villkor kan läggas till på strukturlisteraden, så att strukturlisteraderna som väljs för en viss produktvariant kan variera, baserat på användarens val när modellen för produktkonfiguration ställs in. Villkor är uttryck som måste uppfyllas för att attribut, strukturlisterader och flödesåtgärder ska inkluderas i en modell för produktkonfiguration. På sidan <strong>Information för strukturlisterad</strong> kan du välja ett annat värde. Alternativt kan du koppla ett attribut som värdet väljs för när modellen för produktkonfiguration ställs in.</td>
 </tr>
 <tr class="odd">
-<td>Flödesoperationer</td>
-<td>På sidan <strong>Flödesoperationsinformation</strong> kan du välja ett annat värde. Alternativt kan du koppla ett attribut som värdet väljs för när modellen för produktkonfiguration ställs in. Villkor skrivs som uttryckbegränsningar. Villkor är uttryck som måste uppfyllas för att attribut, strukturlisterader och flödesoperationer ska inkluderas i en modell för produktkonfiguration.</td>
+<td>Flödesåtgärder</td>
+<td>På sidan <strong>Flödesåtgärdsinformation</strong> kan du välja ett annat värde. Alternativt kan du koppla ett attribut som värdet väljs för när modellen för produktkonfiguration ställs in. Villkor skrivs som uttryckbegränsningar. Villkor är uttryck som måste uppfyllas för att attribut, strukturlisterader och flödesåtgärder ska inkluderas i en modell för produktkonfiguration.</td>
 </tr>
 </tbody>
 </table>

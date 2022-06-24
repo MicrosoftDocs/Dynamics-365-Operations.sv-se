@@ -1,6 +1,6 @@
 ---
 title: Begränsningar för kostnadsversioner av standardkostnader
-description: Det här avsnittet beskriver de restriktioner som gäller för kostnadsversioner av standardkostnader.
+description: Denna artikel beskriver de restriktioner som gäller för kostnadsversioner av standardkostnader.
 author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11bf14b2926fd4ff053697bef8b7dad781948a2c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8c5c00ae8952e2c80d97d039271a6f5c63e9a72f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672218"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867997"
 ---
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a>Begränsningar för kostnadsversioner av standardkostnader
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver de restriktioner som gäller för kostnadsversioner av standardkostnader. 
+Denna artikel beskriver de restriktioner som gäller för kostnadsversioner av standardkostnader. 
 
 Följande restriktionerna ser till att standardkostnadsprinciperna efterlevs:
 
@@ -37,9 +37,9 @@ Följande restriktionerna ser till att standardkostnadsprinciperna efterlevs:
 
 -  Strukturlisteberäkningar måste utföras i ett läge med en enda nivå.
 
-Artikelkostnadsdata för standardkostnader kan kopieras till en annan kostnadsversion som innehåller standardkostnader eller planerade kostnader. Artikelkostnadsdata för planerade kostnader kan emellertid inte kopieras till en kostnadsversion som innehåller standardkostnader, eftersom restriktionerna som beskrivits tidigare i det här avsnittet inte gäller för planerade kostnader.
+Artikelkostnadsdata för standardkostnader kan kopieras till en annan kostnadsversion som innehåller standardkostnader eller planerade kostnader. Artikelkostnadsdata för planerade kostnader kan emellertid inte kopieras till en kostnadsversion som innehåller standardkostnader, detta eftersom restriktionerna som beskrivits tidigare i denna artikel inte gäller för planerade kostnader.
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Översikt över kostnadsversioner](costing-versions.md)
 

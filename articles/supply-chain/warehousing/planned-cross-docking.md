@@ -1,6 +1,6 @@
 ---
 title: Planerad direktleverans
-description: I det här avsnittet beskrivs avancerad, planerad direktleverans, där lagerkvantiteten som krävs för en order dirigeras direkt från inleverans eller skapande till rätt utlastningsplats eller mellanlagringsområde. Allt återstående lager från den inkommande källan dirigeras till rätt lagringsplats genom den vanliga artikelinförselprocessen.
+description: I denna artikel beskrivs avancerad, planerad direktleverans, där lagerkvantiteten som krävs för en order dirigeras direkt från inleverans eller framställande till rätt utlastningsplats eller mellanlagringsområde. Allt återstående lager från den inkommande källan dirigeras till rätt lagringsplats genom den vanliga artikelinförselprocessen.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c28639a4a575f5f356bf947ba8e0aee6bcd256b4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 28ebf1b4fb966fd6801e75e7b3a6c8741114938d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573043"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863691"
 ---
 # <a name="planned-cross-docking"></a>Planerad direktleverans
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs avancerad, planerad direktleverans. Direktleverans är en lagerställesprocess där lagerkvantiteten som krävs för en order dirigeras direkt från inleverans eller skapande till rätt utlastningsplats eller mellanlagringsområde. Allt återstående lager från den inkommande källan dirigeras till rätt lagringsplats genom den vanliga artikelinförselprocessen.
+I denna artikel beskrivs avancerad, planerad direktleverans. Direktleverans är en lagerställesprocess där lagerkvantiteten som krävs för en order dirigeras direkt från inleverans eller skapande till rätt utlastningsplats eller mellanlagringsområde. Allt återstående lager från den inkommande källan dirigeras till rätt lagringsplats genom den vanliga artikelinförselprocessen.
 
 Direktleverans låter medarbetare hoppa över inkommande artikelinförsel och utgående plockning av lager som redan har markerats för en utgående order. Därför minimeras antalet gånger som lagret vidrörs, om det är möjligt. Eftersom det är mindre interaktion med systemet ökas dessutom tid och utrymmesbesparingar på lagret.
 
@@ -37,12 +37,12 @@ Vid tiden för inleverans av inkommande order identifierar inställningen för d
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>Aktivera funktionen planerad direktleverans
 
-Om systemet inte redan har de funktioner som beskrivs i det här avsnittet går du till [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar följande funktioner i följande ordning:
+Om systemet inte redan har de funktioner som beskrivs i denna artikel går du till [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar följande funktioner i följande ordning:
 
 1. *Planerad direktleverans*
 1. *Mallar för direktleverans med platsdirektiv*
     > [!NOTE]
-    > Med hjälp av denna funktion kan fältet **Direktivkod** anges i direktleveransmallen, på liknande sätt som du ställer in påfyllnadsmallar. Genom att aktivera den här funktionen förhindrar du att du lägger till en kod för direktiv på direktleveransens arbetsmallrader för den slutgiltiga *Placera*-raden. På så sätt ser du till att den slutliga placeringsplatsen kan fastställas under skapandet av arbetet innan arbetsmallar övervägs.
+    > Med hjälp av denna funktion kan fältet **Direktivkod** anges i direktleveransmallen, på liknande sätt som du konfigurerar påfyllnadsmallar. Genom att aktivera den här funktionen förhindrar du att du lägger till en kod för direktiv på direktleveransens arbetsmallrader för den slutgiltiga *Placera*-raden. På så sätt ser du till att den slutliga placeringsplatsen kan fastställas under skapandet av arbetet innan arbetsmallar övervägs.
 
 ## <a name="setup"></a>Ställ in
 
@@ -92,7 +92,7 @@ Planerad direktleverans är implementerad som en lastbokföringsmetod. När du h
 
     - **Direktivkod:** Lämna det här fältet tomt
 
-        Detta alternativ aktiveras med hjälp av funktionen *Mallar för direktutleverans med platsdirektiv*. Systemet använder platsdirektiv för att avgöra vilken som är den bästa platsen att flytta lager för direktleverans till. Du kan ställa in den genom att tilldela en direktivkod till varje relevant direktutleveransmall. Om en direktivkod ställs in kommer systemet att söka efter platsdirektiv med direktivkod när arbete genereras. På detta sätt kan du begränsa platsdirektiv som används för en viss direktleveransmall.
+        Detta alternativ aktiveras med hjälp av funktionen *Mallar för direktutleverans med platsdirektiv*. Systemet använder platsdirektiv för att avgöra vilken som är den bästa platsen att flytta lager för direktleverans till. Du kan konfigurera den genom att tilldela en direktivkod till varje relevant direktutleveransmall. Om en direktivkod ställs in kommer systemet att söka efter platsdirektiv med direktivkod när arbete genereras. På detta sätt kan du begränsa platsdirektiv som används för en viss direktleveransmall.
 
     - **Validera tidsfönster:** *Ja*
 
@@ -118,7 +118,7 @@ Planerad direktleverans är implementerad som en lastbokföringsmetod. När du h
     - **Leveranskälla:** *inköpsorder*
 
 > [!NOTE]
-> Du kan ställa in en frågeställning för att kontrollera när en specifik direktleveransmall används. Frågan för direktleveransmallar har bara *inventTable*-registret (artiklar) och den inre sammanfogade tabellen *WHSInventTable* (WHS-artiklar). Om du vill lägga till andra register i frågan kan du sammanfoga dem genom att bara använda *finns sammankopplingar* eller *finns inte sammankopplingar*. När du filtrerar på de sammanfogade registren hämtas en post från huvudregistret för varje matchande post i det sammanfogade registret. Om sammanfogningstypen är *finns sammanfogning* avslutas sökningen efter att den första matchningen har hittats. Om du till exempel sammanfogar registret för försäljningsorderraden till registret för artiklar validerar och returnerar systemet artiklar för vilka minst en försäljningsorderrad har det definierade villkoret. Data hämtas i praktiken från det överordnade (artikel) registret och inte från det underordnade registret (försäljningsorderraden). Därför går det inte att från början filtrera efter källdokument som försäljningsorderrader eller kunder.
+> Du kan konfigurera en frågeställning för att kontrollera när en specifik direktleveransmall används. Frågan för direktleveransmallar har bara *inventTable*-registret (artiklar) och den inre sammanfogade tabellen *WHSInventTable* (WHS-artiklar). Om du vill lägga till andra register i frågan kan du sammanfoga dem genom att bara använda *finns sammankopplingar* eller *finns inte sammankopplingar*. När du filtrerar på de sammanfogade registren hämtas en post från huvudregistret för varje matchande post i det sammanfogade registret. Om sammanfogningstypen är *finns sammanfogning* avslutas sökningen efter att den första matchningen har hittats. Om du till exempel sammanfogar registret för försäljningsorderraden till registret för artiklar validerar och returnerar systemet artiklar för vilka minst en försäljningsorderrad har det definierade villkoret. Data hämtas i praktiken från det överordnade (artikel) registret och inte från det underordnade registret (försäljningsorderraden). Därför går det inte att från början filtrera efter källdokument som försäljningsorderrader eller kunder.
 
 ### <a name="create-a-work-class"></a>Skapa en arbetsklass
 
@@ -148,15 +148,15 @@ Planerad direktleverans är implementerad som en lastbokföringsmetod. När du h
     - **Arbetstyp:** *plockning*
     - **Arbetsklass-ID:** *CrossDock*
 
-1. Välj **Ny** för att lägga till en till rad och ställa in följande värden på den:
+1. Välj **Ny** för att lägga till en till rad och konfigurera följande värden på den:
 
     - **Arbetstyp:** *Placera*
     - **Arbetsklass-ID:** *CrossDock*
 
 1. Välj **Spara** och bekräfta att kryssrutan **Giltig** är markerad för mallen *51 direktleverans*.
-1. Valfritt: Välj **Redigera fråga** för att ställa in kriterier som ska styra när och var arbetsmallen används.
+1. Valfritt: Välj **Redigera fråga** för att konfigurera kriterier som ska styra när och var arbetsmallen används.
 
-    Du kan ställa in en frågeställning för att kontrollera när en specifik arbetsuppgiftsmall används. Du kan till exempel ange att en mall bara kan användas för arbete på en viss plats. Om du vill att arbetsuppgiftsmallen för direktleveransen ska användas på en viss plats måste du filtrera fältet **Startplats**, inte fältet **Plats**, eftersom skapa arbetsuppgift för inkommande processerna (inköp, direktleverans och lagerpåfyllnad) börjar från placeringsraden. När arbetsuppgift skapas anger platsdirektivet i fältet **Plats** placeringsplats. Plockplatsen lagras dock i fältet **Startplats**.
+    Du kan konfigurera en frågeställning för att kontrollera när en specifik arbetsuppgiftsmall används. Du kan till exempel ange att en mall bara kan användas för arbete på en viss plats. Om du vill att arbetsuppgiftsmallen för direktleveransen ska användas på en viss plats måste du filtrera fältet **Startplats**, inte fältet **Plats**, eftersom skapa arbetsuppgift för inkommande processerna (inköp, direktleverans och lagerpåfyllnad) börjar från placeringsraden. När arbetsuppgift skapas anger platsdirektivet i fältet **Plats** placeringsplats. Plockplatsen lagras dock i fältet **Startplats**.
 
 > [!NOTE]
 > Arbetsklass-ID för arbetstyperna *Plocka* och *Placera* måste vara samma.

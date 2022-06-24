@@ -1,6 +1,6 @@
 ---
-title: Ställ in växlar
-description: Det här avsnittet beskriver hur du ställer in växlar.
+title: Ställa in växlar
+description: Den här artikeln beskriver hur du ställer in växlar.
 author: ShivamPandey-msft
 ms.date: 09/17/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6a9d04500ffe5b93c7a95c5cac9b4270e208dde9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 91821b10afe7cdbabd0a58b61219ce29d686c5c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726821"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874737"
 ---
-# <a name="set-up-bills-of-exchange"></a>Ställ in växlar
+# <a name="set-up-bills-of-exchange"></a>Ställa in växlar
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du ställer in växlar.
+Den här artikeln beskriver hur du ställer in växlar.
 
 En växel är en elektronisk order från en kund som anger att en annan part, vanligen en bank, ska betala ett angivet belopp till företaget. När du använder en växel som betalningsmedel för en försäljningsorderfaktura eller fritextfaktura krediterar du kundkontot. Den krediten säkras med växeln tills kunden betalar växeln till banken. Vanligtvis kvittar du fakturan mot växeln på förfallodatumet. När du får ett meddelande från banken om att växeln har inlösts, kan du stänga den. Du kan ställa ut växlar via banken vid någon av följande tidpunkter:
 

@@ -1,6 +1,6 @@
 ---
 title: Farliga material i produkter, order, leveranser och laster
-description: I det här avsnittet beskrivs hur du anger egenskaper för farligt material för frisläppta produkter, hur du placerar lagergränser för farliga artiklar och hur du inkluderar farligt material i en försäljningsorder, leverans eller last.
+description: I denna artikel beskrivs hur du anger egenskaper för farligt material för frisläppta produkter, hur du inför lagergränser för farliga artiklar, samt hur du inkluderar farligt material i en försäljningsorder, leverans eller last.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,26 +12,26 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 64d31cd86045ff28aa007666a3877271eecf0106
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eaae3ce4916465cd57da65eaa217c40f9c3ea88a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570715"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860708"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Farliga material i produkter, order, leveranser och laster
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du anger egenskaper för farligt material för frisläppta produkter, hur du placerar lagergränser för farliga artiklar och hur du inkluderar farligt material i en försäljningsorder, leverans eller last.
+I denna artikel beskrivs hur du anger egenskaper för farligt material för frisläppta produkter, hur du inför lagergränser för farliga artiklar, samt hur du inkluderar farligt material i en försäljningsorder, leverans eller last.
 
 ## <a name="set-hazardous-material-specifications-for-products"></a>Ange specifikationer för farligt material för produkter
 
-När du har definierat regler för farligt material och ställt in de tillhörande referenskoderna enligt beskrivningen i [ställa in farliga material](hazmat-setup.md) kan du associera den här informationen med frisläppta artiklar. Leveranstexten för leveransdokument hämtas från informationen om farligt material för de utgivna artiklarna.
+När du har definierat regler för farligt material och ställt in de tillhörande referenskoderna enligt beskrivningen i [konfigurera farliga material](hazmat-setup.md) kan du associera den här informationen med frisläppta artiklar. Leveranstexten för leveransdokument hämtas från informationen om farligt material för de utgivna artiklarna.
 
 Som en del av processen att associera en frisläppt artikel med ett farligt material måste du ange regelkoden och materialet. Olika regelkoder kan kopplas till en artikel, beroende på transportsätt och du kan koppla flera regler och material koder till varje artikel.
 
-Om du vill ställa in en frisläppt produkt som ett farligt material följer du stegen nedan.
+Om du vill konfigurera en frisläppt produkt som ett farligt material följer du stegen nedan.
 
 1. Gå till **Produktinformationshantering \> Produkter \> Frisläppta produkter**.
 1. Välj eller skapa en produkt för att öppna dess sida **Information om frisläppt produkt**.
@@ -109,11 +109,11 @@ Här följer en nyckel till formeln:
 - *&lt;UnitConversion&gt;* är en konverteringsfaktor för konvertering mellan enheten som används för laddning av kvantitet och den enhet som har angetts för en produkt i fältet **enhet** på snabbfliken **materialhantering**.
 - *&lt;Multiplier&gt;* är den multiplikator som har angetts för en produkt i fältet **multiplikator** på snabbfliken **materialhantering**.
 
-Det här resultatet rapporteras för varje lastrad som innehåller en produkt där dessa värden anges. Mer information finns i [leveranser som innehåller farligt material](#hazmat-shipments) och [laster som innehåller farliga material](#hazmat-loads) senare i det här avsnittet.
+Det här resultatet rapporteras för varje lastrad som innehåller en produkt där dessa värden anges. Mer information finns i [Leveranser som innehåller farligt material](#hazmat-shipments) och [Laster som innehåller farliga material](#hazmat-loads) senare i denna artikel.
 
 #### <a name="how-the-hazardous-material-weight-is-calculated"></a>Hur det farliga materialets vikt beräknas
 
-Laster och lastrader som innehåller produkter alternativet **begränsad kvantitet** på snabbfliken **material hantering** är inställt på **Ja** visar den totala vikten för farligt material, som beskrivs i [leveranserna som innehåller farliga material](#hazmat-shipments) och avsnittet [laster som innehåller farliga material](#hazmat-loads) senare i det här avsnittet. Hur det farliga materialets vikt beräknas med följande formel:
+Laster och lastrader som innehåller produkter där alternativet **Begränsad kvantitet** på snabbfliken **Materialhantering** är inställt på **Ja** visar den totala vikten för farligt material enligt beskrivet i avsnitten [Leveranser som innehåller farliga material](#hazmat-shipments) och [Laster som innehåller farliga material](#hazmat-loads) senare i denna artikel. Hur det farliga materialets vikt beräknas med följande formel:
 
 Vikt på farligt material = *&lt;LineQty&gt;* × *&lt;ProductWeight&gt;* × *&lt;UnitConversion&gt;*
 
@@ -149,7 +149,7 @@ Följande register beskriver de fält som är tillgängliga i snabbfliken **Milj
 
 ## <a name="set-stock-limits-for-hazardous-products"></a><a name="stock-limits"></a>Ställa in lagergränser för farliga produkter
 
-Av säkerhetsskäl måste du kanske begränsa det totala beloppet för en viss produkt som kan lagras på en och samma plats. Om du vill ställa in lagergränser för en frisläppt produkt, följ dessa steg.
+Av säkerhetsskäl måste du kanske begränsa det totala beloppet för en viss produkt som kan lagras på en och samma plats. Om du vill konfigurera lagergränser för en frisläppt produkt, följ dessa steg.
 
 1. Gå till **Produktinformationshantering \> Produkter \> Frisläppta produkter**.
 1. Välj en produkt för att öppna dess sida **Information om frisläppt produkt**.
@@ -164,7 +164,7 @@ Om du vill inkludera en produkt som klassificeras som ett farligt material på e
 
 Transportföretag är också associerat med leveranssättet. Därför måste du se till att denna information anpassas till regeln för farliga material. Det leveranssätt som anges i förordningen för farligt material måste med andra ord matcha specifikationerna i rubriken i försäljningsordern. På detta sätt kopplas förordningen, transportföretaget och tjänsten till de leveransrader som används på en försäljningsorder.
 
-När en försäljningsorder har slutförts och är klar att levereras, kan den frisläppas till lagerstället för att indikera överföringen mellan försäljnings- och lageroperationer.
+När en försäljningsorder har slutförts och är klar att levereras, kan den frisläppas till lagerstället för att indikera överföringen mellan försäljnings- och lageråtgärder.
 
 ## <a name="shipments-that-include-hazardous-materials"></a><a name="hazmat-shipments"></a>Försändelser som innehåller farliga material
 

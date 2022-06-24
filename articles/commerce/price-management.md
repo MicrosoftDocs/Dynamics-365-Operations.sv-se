@@ -1,6 +1,6 @@
 ---
 title: Hantering av försäljningspris (butik)
-description: Det här avsnittet beskriver begreppen för att skapa och hantera försäljningspriser i Dynamics 365 Commerce.
+description: Denna artikel beskriver begreppen för att skapa och hantera försäljningspriser i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 ms.date: 07/28/2021
 ms.topic: article
@@ -14,29 +14,29 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f78a4f328d6962db373990ea60dc03cec35718dc719aa0b284b319db5bc059ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16c948e6e14309f4e340bf622fac42b14e6ee591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759295"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887020"
 ---
-# <a name="retail-sales-price-management"></a>Prishantering för Retail-försäljning
+# <a name="retail-sales-price-management"></a>Hantering av försäljningspris (butik)
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller information om att skapa och hantera försäljningspriser i Dynamics 365 Commerce. Det fokuserar på begreppen som ingår i den här processen och på effekterna av olika konfigurationsalternativ för försäljningspriser.
+Denna artikel innehåller information om att skapa och hantera försäljningspriser i Dynamics 365 Commerce. Det fokuserar på begreppen som ingår i den här processen och på effekterna av olika konfigurationsalternativ för försäljningspriser.
 
 ## <a name="terminology"></a>Terminologi
 
-Följande termer används i detta avsnitt:
+Följande termer används i denna artikel:
 
 | Villkor | Definition, användning och anteckningar |
 |---|---|
-| Pris | Det enkla enhetsbelopp som en produkt säljs för i en kassaklient eller på en försäljningsorder. I det här avsnittet avser termen *pris* alltid försäljningspriset, inte lagerpris eller självkostnad. |
+| Pris | Det enkla enhetsbelopp som en produkt säljs för i en kassaklient eller på en försäljningsorder. I denna artikel avser termen *pris* alltid försäljningspriset, inte lagerpris eller självkostnad. |
 | Grundpris | Det pris som anges i fältet **Pris** på en frisläppt produkt. |
 | Handelsavtalspris | Priset som anges på en produkt eller variant genom att använda ett handelsavtal av typen **Pris (försäljn.)**. |
-| Bästa pris | När flera priset eller rabatter kan användas för en produkt, ger det minsta prisbeloppet och/eller det största rabattbeloppet det lägsta möjliga nettobeloppet som kunden måste betala. I det här avsnittet avser alltid begreppet bästa pris ”bästa pris”. Det bästa priset skiljer sig från och bör inte förväxlas med uppräkningsvärde **Bästa pris** för en rabatts concurrency-läge. |
+| Bästa pris | När flera priset eller rabatter kan användas för en produkt, ger det minsta prisbeloppet och/eller det största rabattbeloppet det lägsta möjliga nettobeloppet som kunden måste betala. I denna artikel avser alltid begreppet bästa pris ”bästa pris”. Det bästa priset skiljer sig från och bör inte förväxlas med uppräkningsvärde **Bästa pris** för en rabatts concurrency-läge. |
 
 ## <a name="price-groups"></a>Prisgrupper
 
@@ -54,7 +54,7 @@ När en röd streckad linje i bilden visas ger Commerce inte stöd för huvudfun
 
 Observera att om prisgruppen har ställts in för kunden, kommer den här prisgruppen att associeras med försäljningsorderrubriken för de order som skapas för den här kunden. Om användaren ändrar prisgruppen i orderrubriken ersätts den gamla prisgruppen bara med den nya prisgruppen för den aktuella ordern. Den gamla prisgruppen kommer till exempel inte att påverka den aktuella ordern, men den kommer fortfarande att vara kopplad till kunden för framtida order.
 
-Följande avsnitt innehåller mer information om de Commerce-enheter som du kan använda när du vill ställa in olika priser när prisgrupperna används. Konfigurationen av priser och rabatter för dessa enheter är en tvåstegsprocess. Dessa steg kan göras i vilken ordning som helst. Den logiska ordningen är emellertid att först ange prisgrupperna för entiteterna eftersom det här steget är engångsinställningar som görs under genomförandet. Därefter när priser och rabatter skapas kan du ange prisgrupperna för dessa priser och rabatter separat.
+Följande avsnitt innehåller mer information om de Commerce-enheter som du kan använda när du vill konfigurera olika priser när prisgrupperna används. Konfigurationen av priser och rabatter för dessa enheter är en tvåstegsprocess. Dessa steg kan göras i vilken ordning som helst. Den logiska ordningen är emellertid att först ange prisgrupperna för entiteterna eftersom det här steget är engångsinställningar som görs under genomförandet. Därefter när priser och rabatter skapas kan du ange prisgrupperna för dessa priser och rabatter separat.
 
 ### <a name="channels"></a>Kanaler
 
@@ -97,7 +97,7 @@ Om du vill använda prissättningsprioritet för priser måste du tilldela en pr
 
 Funktionen prissättningsprioritet infördes så att den stöder ett scenario där en återförsäljare vill tillämpa högre priser i en viss uppsättning butiker. En återförsäljare har t.ex. definierat nationella priser för ostkusten, men vill ha högre priser för vissa produkter i New York-butiker eftersom det kostar mer sälja vissa produkter på orten och/eller eftersom den lokala marknaden kommer att utgöra ett högre pris.
 
-Som beskrivs i avsnittet ”bästa pris” i det här avsnittet, väljer prissättningsmotorn vanligtvis det lägre av två priser. Därför förhindras återförsäljaren vanligen från att använda det högre av två priser i en butik som har både ostkust och New York-prisgrupper. För att lösa problemet innan funktionen prissättningsprioritet infördes, behövde återförsäljaren definiera priser för varje produkt två gånger och inte tilldela båda prisgrupper. Alternativt kan återförsäljaren var tvungen att skapa extra prisgrupper för att isolera de produkter som har högre priser från produkter som har normala, lägre priser.
+Som beskrivs i avsnittet ”Bästa pris” i denna artikel väljer prissättningsmotorn vanligtvis det lägre av två priser. Därför förhindras återförsäljaren vanligen från att använda det högre av två priser i en butik som har både ostkust och New York-prisgrupper. För att lösa problemet innan funktionen prissättningsprioritet infördes, behövde återförsäljaren definiera priser för varje produkt två gånger och inte tilldela båda prisgrupper. Alternativt kan återförsäljaren var tvungen att skapa extra prisgrupper för att isolera de produkter som har högre priser från produkter som har normala, lägre priser.
 
 Funktionen prissättningsprioritet kan dock skapa prisprioritet för butikspriser som är högre än prisprioritet för nationella priser. Återförsäljaren kan även skapa prisprioritet för butikspriser och lämna nationella priser vid prissättningsprioritet 0 (noll) som standard. Båda inställningar garanterar att butikspriser alltid används innan nationella priser.
 
@@ -105,7 +105,7 @@ Funktionen prissättningsprioritet kan dock skapa prisprioritet för butiksprise
 
 Låt oss titta på ett exempel där butikspriser åsidosätter andra priser.
 
-En nationell återförsäljare anger de flesta priser per region och har fyra områden: Nordöst, Sydöst, Mellanvästern och Väst. Den har identifierat flera höga kostnadsmarknader som stöder högre priser. Dessa marknader är i New York City, Chicago och San Francisco. 
+En nationell återförsäljare anger de flesta priser per region och har fyra områden: Nordöst, Sydöst, Mellanvästern och Väst. Den har identifierat flera höga kostnadsmarknader som stöder högre priser. Dessa marknader är i New York City, Chicago och San Francisco.
 
 I det här exemplet ska vi gå till regionen Nordöst. Butik 1 finns i Boston och butik 2 i Manhattan. För Boston-butiken är två prisgrupper kopplade till kanalen: nordöst och Butik 1. För Manhattan-butiken är tre prisgrupper kopplade till kanalen: nordöst, NYC och Butik 2.
 
@@ -151,7 +151,7 @@ Du kan skapa handelsavtal för varje produkt genom att använda handelsavtalsjou
 
 Ett handelsavtal för försäljningspris **Tabell** är för en kund som anges direkt i handelsavtalet. Detta scenario är inte ett vanligt B2C-scenario. Om detta uppstår kommer prissättningsmotorn att använda handelsavtal **tabell** för att fastställa priset.
 
-Ett handelsavtal för prissättningen **grupp** är den typ som används oftast. Utanför handel är handelsavtal för prissättningen **grupp** för en enkel kundgrupp. Men i Commerce har begreppet kundgrupp utökats så att det är en mer allmän prisgrupp. En prisgrupp kan länkas till en kanal, anknytning, bonusprogram eller katalog. Detaljerad information om grupper finns i avsnittet ”prisgrupper” tidigare i det här avsnittet.
+Ett handelsavtal för prissättningen **grupp** är den typ som används oftast. Utanför handel är handelsavtal för prissättningen **grupp** för en enkel kundgrupp. Men i Commerce har begreppet kundgrupp utökats så att det är en mer allmän prisgrupp. En prisgrupp kan länkas till en kanal, anknytning, bonusprogram eller katalog. Detaljerad information om prisgrupper finns i avsnittet ”Prisgrupper” tidigare i denna artikel.
 
 > [!NOTE]
 > Ett pris för handelsavtalet används alltid före grundpris.
@@ -218,7 +218,7 @@ Om du arbetar med både inkluderad och exkluderad skatt är det viktigt att du h
 
 En enda prissättningsmotor används för att beräkna priserna i alla kanaler: kundtjänst, butiker och onlinebutiker. Detta bidrar till att möjliggöra de enhetliga Commerce-scenarierna.
 
-Prissättning fungerar med Commerce-enheter istället för icke-Commerce-enheter. Särskilt utformad för att ställa in priser per butik, inte per lagerställe.
+Prissättning fungerar med Commerce-enheter istället för icke-Commerce-enheter. Särskilt utformad för att konfigurera priser per butik, inte per lagerställe.
 
 Commerce-prissättningsmotorn **stöder inte** följande prissättningsfunktioner:
 
@@ -226,7 +226,7 @@ Commerce-prissättningsmotorn **stöder inte** följande prissättningsfunktione
 - Attributbaserad prissättning stöds inte.
 - Leverantörsrabattens genomströmning stöds inte.
 - Den generiska valutafunktionen stöds inte, det vill säga även om ett handelsavtal har växeln **Inkludera generisk valuta** kommer detta handelsavtal fortfarande endast att anses giltigt för den valuta som definieras i handelsavtalet.
-- Standard prissättningsmotorn för Supply Chain Management stöder prisberäkningen baserat på "begärt transportdatum" och "begärt inleveransdatum" tillsammans med aktuellt datum. Butikspriset stöder dock för närvarande inte dessa värden. Orsaken till detta är att kunder för B2C-scenario inte förväntar sig begärt leveransdatum för att påverka artikelpriset. I vissa fall har återförsäljare både B2B- och B2C-operationer. För B2B-operationer är det vanligt att ändra priser baserat på leveransdatum. Dessa återförsäljare kan använda Supply Chain Management prissättning för B2B-företag och återförsäljningspris för deras B2C-företag. Självkostnaden aktiveras bara om programanvändaren läggs till som en kundtjänstanvändare, så återförsäljarna kan tilldela vissa användare som kommer att arbeta med Supply Chain Management prissättning och tilldela ett par som fungerar med butikspriset, dvs. dessa användare bör läggas till som en kundtjänstanvändare. Dessutom måste egenskapen **Använd dagens datum för att beräkna priser** i avsnittet **Handelsparametrar > Prissättning och rabatter > Diverse** vara aktiverade. På så sätt kan de behålla det använda kundreskontra parametervärden för begärt transportdatum eller begärt inleveransdatum för Supply Chain Management prissättning, men återförsäljarpriset fortsätter att använda dagens datum för prisberäkning.
+- Standard prissättningsmotorn för Supply Chain Management stöder prisberäkningen baserat på "begärt transportdatum" och "begärt inleveransdatum" tillsammans med aktuellt datum. Butikspriset stöder dock för närvarande inte dessa värden. Orsaken till detta är att kunder för B2C-scenario inte förväntar sig begärt leveransdatum för att påverka artikelpriset. I vissa fall har återförsäljare både B2B- och B2C-åtgärder. För B2B-åtgärder är det vanligt att ändra priser baserat på leveransdatum. Dessa återförsäljare kan använda Supply Chain Management prissättning för B2B-företag och återförsäljningspris för deras B2C-företag. Självkostnaden aktiveras bara om programanvändaren läggs till som en kundtjänstanvändare, så återförsäljarna kan tilldela vissa användare som kommer att arbeta med Supply Chain Management prissättning och tilldela ett par som fungerar med butikspriset, dvs. dessa användare bör läggas till som en kundtjänstanvändare. Dessutom måste egenskapen **Använd dagens datum för att beräkna priser** i avsnittet **Handelsparametrar > Prissättning och rabatter > Diverse** vara aktiverade. På så sätt kan de behålla det använda kundreskontra parametervärden för begärt transportdatum eller begärt inleveransdatum för Supply Chain Management prissättning, men återförsäljarpriset fortsätter att använda dagens datum för prisberäkning.
 
 Dessutom, **endast** Commerce-prissättningsmotorn stöder följande prissättningsfunktioner:
 

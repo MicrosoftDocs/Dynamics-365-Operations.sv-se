@@ -1,6 +1,6 @@
 ---
 title: Ställ in ett menyalternativ för mobila enheter för att utföra arbete av typen Inköpsorder
-description: I det här avsnittet visas hur du ställer in ett menyalternativet för mobila enheter.
+description: I denna artikel visas hur du konfigurerar ett menyalternativet för mobila enheter.
 author: Mirzaab
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d18b0ab1057dbccdd45a52a58f80ef9346e4459f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 09286e8e482780523b61006081205868be487755
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565187"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882298"
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>Ställ in ett menyalternativ för mobila enheter för att utföra arbete av typen Inköpsorder
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet visas hur du ställer in ett menyalternativet för mobila enheter. I det här exemplet används menyalternativet för att utföra arbete av typen Inköpsorder. Arbetsklassen som associeras med menyalternativet bestämmer vilket arbete som är giltigt. Du kan använda den här guiden i demonstrationsföretaget USMF. Vanligtvis utförs den här proceduren av en lagerchef.
+I denna artikel visas hur du konfigurerar ett menyalternativet för mobila enheter. I det här exemplet används menyalternativet för att utföra arbete av typen Inköpsorder. Arbetsklassen som associeras med menyalternativet bestämmer vilket arbete som är giltigt. Du kan använda den här guiden i demonstrationsföretaget USMF. Vanligtvis utförs den här proceduren av en lagerchef.
 
 
 ## <a name="create-a-mobile-device-menu-item"></a>Skapa ett menykommando för mobila enheter

@@ -1,6 +1,6 @@
 ---
 title: Klar att betalas
-description: I det här avsnittet visas hur du markerar en medarbetare som redo att betalas i Dynamics 365 Human Resources.
+description: I den här artikeln visas hur du markerar en medarbetare som redo att betalas i Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 62d86de9c0ad6d6d7ee8375f7664f96e2a30783d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 81c73584e3567d620292227ce4a24c3c0945fa96
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693820"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862871"
 ---
 # <a name="ready-to-pay"></a>Klar att betalas
 

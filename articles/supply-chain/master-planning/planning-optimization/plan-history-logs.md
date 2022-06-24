@@ -1,8 +1,8 @@
 ---
 title: Visa planhistorik och planeringsloggar
-description: I det här avsnittet beskrivs hur du visar historiken för planeringsjobb som löses av funktionen för planeringsoptimering.
+description: I denna artikel beskrivs hur du visar historiken för planeringsjobb som utlöses av funktionen för Planeringsoptimering.
 author: t-benebo
-ms.date: 10/30/2019
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,22 +16,22 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 9b4cba4dd94eb198e770d152d4f759a706065dee
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469769"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863952"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Visa planhistorik och planeringsloggar
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du visar historiken för planeringsjobb som löses av funktionen för planeringsoptimering i Microsoft Dynamics 365 Supply Chain Management.
+I denna artikel beskrivs hur du visar historiken för planeringsjobb som utlöses av funktionen för Planeringsoptimering i Microsoft Dynamics 365 Supply Chain Management.
 
 Om du vill visa historiken för en plan öppnar du planen genom att gå till **huvudplanering** \> **inställningar** \> **planer** \> **huvudplaner** och väljer **historik**. I historiken visas alla jobb för den valda planen. Listan innehåller slutförda och aktiva jobb.
 
-Jobbhistoriken i huvudplaneringskörningarna för planeringsoptimeraren innehåller bara upp till 60 poster per huvudplan. När du kör en ny huvudplaneringsberäkning tas den planens tidigaste historikpost bort.
+Systemet behåller maximalt 60 historikposter per huvudplan och tar bort poster som är äldre än 30 dagar. Varje gång du kör en ny huvudplaneringsberäkning lägger systemet till en ny historikpost och rensar sedan de äldsta posterna efter behov.
 
 Förutom att visa starttid och status för jobb kan du visa loggen för ett specifikt jobb. Loggen innehåller ytterligare information och varningar. Alla jobb har inte en logg. Om du vill visa loggen för ett jobb väljer du **logg**. Loggposter lagras bara i 30 dagar efter det datum då jobbet avslutades, efter det att de raderas automatiskt.
 
@@ -51,7 +51,7 @@ Gör på följande sätt om du vill visa automatiskt bekräftande fel och andra 
 ## <a name="related-resources"></a>Relaterade resurser
 
 - [Planeringsoptimering – översikt](planning-optimization-overview.md)
-- [Kom i gång med planeringsoptimering](get-started.md)
+- [Kom i gång med Planeringsoptimering](get-started.md)
 - [Planera analys av optimeringsanpassning](planning-optimization-fit-analysis.md)
 - [Använda filter på en plan](plan-filters.md)
 - [Annullera ett planeringsjobb](cancel-planning-job.md)

@@ -1,6 +1,6 @@
 ---
 title: Ställa in TDS-grupp, PAN- och TAN-information för leverantörer och kunder
-description: I det här avsnittet beskrivs hur du ställer in information om gruppen Skatteavdrag vid källa (TDS), permanent kontonummer (PAN) och skattekontonummer (TAN) för leverantörer och kunder.
+description: I den här artikeln beskrivs hur du ställer in information om gruppen Skatteavdrag vid källa (TDS), permanent kontonummer (PAN) och skattekontonummer (TAN) för leverantörer och kunder.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 83ec532e95bde553c3a339e2ca103ebaacdb52ae
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1a29f59e380360b6f828dcddbe84cad229b42d17
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726961"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859778"
 ---
 # <a name="tds-group-pan-and-tan-information-setup-for-vendors-and-customers"></a>TDS-grupp, PAN- och TAN-information för leverantörer och kunder
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in information om gruppen Skatteavdrag vid källa (TDS), permanent kontonummer (PAN) och skattekontonummer (TAN) för leverantörer och kunder.
+I den här artikeln beskrivs hur du ställer in information om gruppen Skatteavdrag vid källa (TDS), permanent kontonummer (PAN) och skattekontonummer (TAN) för leverantörer och kunder.
 
 1. Gå till **Leverantörsreskontra \> Leverantörer \> Alla leverantörer** eller **Kundreskontra \> Kunder \> Alla kunder**.
 

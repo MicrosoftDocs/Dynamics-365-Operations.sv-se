@@ -1,6 +1,6 @@
 ---
-title: Ställ in och generera betalningskontrollfiler
-description: Det här ämnet innehåller information om hur du ställer och genererar betalningskontrollfiler.
+title: Ställa in och generera betalningskontrollfiler
+description: Den här artikeln innehåller information om hur du ställer och genererar betalningskontrollfiler.
 author: panolte
 ms.date: 03/06/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: eb5a9595ea1a93a9b15348eb1b291d744f660d40
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6b3cff1029b02aaabef2ea9795ab9912f20f1129
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727774"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871432"
 ---
-# <a name="set-up-and-generate-positive-pay-files"></a>Ställ in och generera betalningskontrollfiler
+# <a name="set-up-and-generate-positive-pay-files"></a>Ställa in och generera betalningskontrollfiler
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet innehåller information om hur du ställer och genererar betalningskontrollfiler. 
+Den här artikeln innehåller information om hur du ställer och genererar betalningskontrollfiler. 
 
 Ställa in betalningskontroll för att generera en elektrisk lista med checkar som ges till banken. När checken sedan visas för banken, jämför banken checken med listan med checkar. Om checken matchar en check i listan behandlar banken checken. Om checken inte matchar en check in listan kvarhåller banken checken för granskning.
 

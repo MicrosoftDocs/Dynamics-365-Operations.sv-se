@@ -1,6 +1,6 @@
 ---
 title: Flytta, ersätt och installera tillgångar
-description: Det här avsnittet förklarar hur du flyttar, ersätter och installerar tillgångar i tillgångshantering.
+description: Denna artikel förklarar hur du flyttar, ersätter och installerar tillgångar i Tillgångshantering.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aad94f17d6efadf7c520c021354963e7135d6d4da1426774925ce877f705e01a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e1454f41bb0b43e22c5278463f63aa4178696eef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769645"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872136"
 ---
 # <a name="move-replace-and-install-assets"></a>Flytta, ersätt och installera tillgångar
 
@@ -28,7 +28,7 @@ ms.locfileid: "6769645"
 
  
 
-Det här avsnittet förklarar hur du flyttar, ersätter och installerar tillgångar i tillgångshantering. Du kan skapa enskilda tillgångar som inte har några relationer till andra tillgångar eller du kan skapa en tillgångsstruktur som innehåller en överordnad tillgång (tillgång på översta nivån) och relaterade underordnade tillgångar (undertillgångar). I tillgångshantering finns tre metoder för att flytta och ändra platsen för en tillgång:
+Denna artikel förklarar hur du flyttar, ersätter och installerar tillgångar i Tillgångshantering. Du kan skapa enskilda tillgångar som inte har några relationer till andra tillgångar eller du kan skapa en tillgångsstruktur som innehåller en överordnad tillgång (tillgång på översta nivån) och relaterade underordnade tillgångar (undertillgångar). I Tillgångshantering finns tre metoder för att flytta och ändra platsen för en tillgång:
 
 - **Flytta** – Flytta en tillgång antingen till en annan tillgångsstruktur eller till en annan plats i samma tillgångsstruktur.
 - **Ersätt** – ta tillfälligt bort en tillgång från en tillgångsstruktur så att den kan repareras eller renoveras och sedan lägga tillbaka den renoverade tillgången i tillgångsstrukturen senare. Du kan också permanent ersätta en begagnad tillgång med en ny tillgång.
@@ -42,7 +42,7 @@ Det här avsnittet förklarar hur du flyttar, ersätter och installerar tillgån
 Använd funktionen **Flytta tillgång** för att flytta en tillgång antingen till en annan tillgångsstruktur eller till en annan plats i samma tillgångsstruktur. Du kan också flytta en tillgång från en tillgångsstruktur så att den blir en fristående tillgång som inte har några strukturrelationer.
 
 > [!NOTE]
-> Använd inte den här funktionen om tillgångarna repareras eller tillfälligt ersätts. Använd i stället funktionen **Ersätt tillgång** som beskrivs senare i det här avsnittet.
+> Använd inte den här funktionen om tillgångarna repareras eller tillfälligt ersätts. Använd i stället funktionen **Ersätt tillgång** som beskrivs senare i denna artikel.
 
 1. Välj **Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillgångar** eller **Aktiva tillgångar**.
 2. Välj tillgången som ska flyttas i listan. Om tillgången har underordnade tillgångar kan du också flytta dessa tillgångar.

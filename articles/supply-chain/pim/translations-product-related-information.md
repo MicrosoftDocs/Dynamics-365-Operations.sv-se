@@ -1,6 +1,6 @@
 ---
 title: Vanliga frågor för produktrelaterade översättningar
-description: I det här avsnittet beskrivs hur du hanterar översättningar för produkter, produktdimensionvärden och produktattribut.
+description: I denna artikel beskrivs hur du hanterar översättningar för produkter, produktdimensionsvärden och produktattribut.
 author: t-benebo
 ms.date: 08/06/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Product information
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 24a341973b8648b1a697c8c07b6ecbc808e0e504
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a2798e25d1f6c293aa71a6c143ded5293f241060
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570510"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850566"
 ---
 # <a name="product-related-translations-faq"></a>Vanliga frågor för produktrelaterade översättningar
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du hanterar översättningar för produkter, produktdimensionvärden och produktattribut. 
+I denna artikel beskrivs hur du hanterar översättningar för produkter, produktdimensionsvärden och produktattribut. 
 
 ## <a name="what-product-related-data-can-be-translated"></a>Vilka produktrelaterade data kan översättas?
 

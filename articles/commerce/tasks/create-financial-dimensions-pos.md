@@ -1,5 +1,5 @@
 ---
-title: " Skapa ekonomiska dimensioner för kassaregister och konfigurera dimensionsvärden för register"
+title: Skapa ekonomiska dimensioner för kassaregister och konfigurera dimensionsvärden för register
 description: Den här proceduren går igenom hur du skapar ekonomiska dimensioner för kassaregister (POS) och visar hur du konfigurerar värden för ekonomiska dimension i kassor.
 author: jashanno
 ms.date: 11/14/2019
@@ -13,18 +13,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12206661c20c3029ca61c75f728fbd915706477be6f6ebf7abe8366ebda8980b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e85756a2b7cdd3627c7a3fffa8dc97e0db13641a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759271"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884800"
 ---
-# <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a> Skapa ekonomiska dimensioner för kassaregister och konfigurera dimensionsvärden för register
+# <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a>Skapa ekonomiska dimensioner för kassaregister och konfigurera dimensionsvärden för register
 
 [!include [banner](../includes/banner.md)]
 
-Den här proceduren går igenom hur du skapar ekonomiska dimensioner för kassaregister (POS) och visar hur du konfigurerar värden för ekonomiska dimension i kassor. Detta förfarande inte omfattar andra åtgärder, såsom att skapa dimensionen ställer och strukturer. Dessa uppgifter hittar du i andra avsnitt. I den här registreringen används demonstrationsföretaget USRT.
+Den här proceduren går igenom hur du skapar ekonomiska dimensioner för kassaregister (POS) och visar hur du konfigurerar värden för ekonomiska dimension i kassor. Detta förfarande inte omfattar andra åtgärder, såsom att skapa dimensionen ställer och strukturer. Dessa uppgifter hittar du i andra artiklar. I den här registreringen används demonstrationsföretaget USRT.
 
 1. Gå till huvudboken > kontoplan > mått > finansiella mått.
 2. Klicka på Ny.

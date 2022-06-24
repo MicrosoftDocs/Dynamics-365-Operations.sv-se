@@ -1,6 +1,6 @@
 ---
 title: Skapa en ny transporthanteringsmotor
-description: I det här avsnittet beskrivs hur du skapar en ny transporthanteringsmotor i Dynamics 365 Supply Chain Management.
+description: I denna artikel beskrivs hur du skapar en ny transporthanteringsmotor i Dynamics 365 Supply Chain Management.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be52c6afb66e88b36f3b2cdf5af14e17b3d3005f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 627972ef6afb7551bb57821ded24183f8f335e9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678134"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857269"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>Skapa en ny transporthanteringsmotor
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skapar en ny transporthanteringsmotor i Dynamics 365 Supply Chain Management. 
+I denna artikel beskrivs hur du skapar en ny transporthanteringsmotor i Dynamics 365 Supply Chain Management. 
 
-Transporthanteringsmotorer (TMS) definierar logiken som används för att generera och bearbeta transporttariffer i Transporthantering. Supply Chain Management innehåller flera olika motortyper som beräknar olika parametrar, till exempel priser, transittider och antalet zoner som ska passeras under transport. I den här artikeln förklaras hur du använder Microsoft Visual Studio utvecklingsmiljö tillsammans med utvecklingsverktyg för Supply Chain Management för att skapa och distribuera en ny TMS-motor, och sedan hur du ställer in motorerna i Operations. Mer information om motorer finns i [Transporthanteringsmotor](transportation-management-engines.md).
+Transporthanteringsmotorer (TMS) definierar logiken som används för att generera och bearbeta transporttariffer i Transporthantering. Supply Chain Management innehåller flera olika motortyper som beräknar olika parametrar, till exempel priser, transittider och antalet zoner som ska passeras under transport. I den här artikeln förklaras hur du använder Microsoft Visual Studio utvecklingsmiljö tillsammans med utvecklingsverktyg för Supply Chain Management för att skapa och distribuera en ny TMS-motor, och sedan hur du konfigurerar motorerna i Operations. Mer information om motorer finns i [Transporthanteringsmotor](transportation-management-engines.md).
 
 ## <a name="create-a-new-tms-engine"></a>Skapa en ny TMS-motor
 
@@ -126,7 +126,7 @@ Ett sätt att distribuera tredjeparts TMS-motorer är genom ett distributionspak
 
 ## <a name="set-up-the-tms-engine-in-supply-chain-management"></a>Ställa in TMS-motor i Supply Chain Management
 
-I det här avsnittet beskrivs hur du ställer in Supply Chain Management till att använda en TMS-motor, och visar hur den nya motor som vi skapar används vid fraktprissökning. Exemplet i det här avsnittet använder demonstrationsföretaget USMF.
+I det här avsnittet beskrivs hur du konfigurerar Supply Chain Management till att använda en TMS-motor, och visar hur den nya motor som vi skapar används vid fraktprissökning. Exemplet i det här avsnittet använder demonstrationsföretaget USMF.
 
 1. Skapa en ny motor enligt beskrivningen i avsnittet "Skapa en ny TMS-motor".
 2. Skapa din lösning.
@@ -147,7 +147,7 @@ I det här avsnittet beskrivs hur du ställer in Supply Chain Management till at
 
 - Om du använder utvecklingsverktyg för Supply Chain Management är det praktiskt att lägga till ett nytt projekt till din lösning. Om du anger projektet som ett startprojekt och startar en felsökningssession, kan du felsöka både X++ och C\# koden i samma felsökningssession.
 - Varje gång du ändrar och kompilera om ditt ThirdPartyTMSEngines-projekt måste du manuellt kopiera den resulterande monteringen till den binära platsen eller distribueras via ett distributionspaket. Annars kan du köra en föråldrad sammansättning.
-- När du har utfört TMS-specifika operationer i Supply Chain Management, kan Internet Information Services (IIS)-arbetsprocessen låsa ThirdPartyTMSEngines-sammansättningen så att sammansättningen inte kan uppdateras. Starta i så fall om processen w3svc.
+- När du har utfört TMS-specifika åtgärder i Supply Chain Management, kan Internet Information Services (IIS)-arbetsprocessen låsa ThirdPartyTMSEngines-sammansättningen så att sammansättningen inte kan uppdateras. Starta i så fall om processen w3svc.
 
 ### <a name="whitepaper"></a>Dokumentation
 

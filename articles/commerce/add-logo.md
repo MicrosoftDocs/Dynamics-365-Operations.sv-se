@@ -1,6 +1,6 @@
 ---
 title: Lägga till en logotyp
-description: I det här avsnittet beskrivs hur du lägger till en logotyp till din webbplats i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du lägger till en logotyp på din webbplats i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 09/15/2020
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 583462755838e51b4c988b8da057dbeeee773e0b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 624cd6f7000f5038b9996eb94caf79719d07f99f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964589"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871790"
 ---
 # <a name="add-a-logo"></a>Lägga till en logotyp
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du lägger till en logotyp till din webbplats i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du lägger till en logotyp på din webbplats i Microsoft Dynamics 365 Commerce.
 
 När du bygger din webbplats, en av de första sakerna som du förmodligen kommer att göra är att lägga ditt företag eller varumärke logotyp till webbplatsens rubrik. Dynamics 365 Commerce online modulbibliotek ger en modul som gör denna uppgift enkel.
 
-Du kan lägga till en logotyp direkt i en mall, layout eller sida. På så sätt kan du enkelt ändra logotypen som visas på specifika sidor eller grupper av sidor. Det här avsnittet beskriver dock de vanligaste scenariot där du lägger till din logotyp i ett sidhuvud fragment som kan återanvändas på alla sidor på din webbplats.
+Du kan lägga till en logotyp direkt i en mall, layout eller sida. På så sätt kan du enkelt ändra logotypen som visas på specifika sidor eller grupper av sidor. Denna artikel beskriver emellertid det vanligaste scenariot, där du lägger till din logotyp i ett sidhuvudfragment som kan återanvändas på alla sidor på din webbplats.
 
 ## <a name="prerequisites"></a>Förutsättningar
 

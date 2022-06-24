@@ -1,6 +1,6 @@
 ---
 title: Tillämpa inställningar för att lägga till produkt i kundvagnen
-description: Detta ämne handlar om inställningar för "Lägg till produkt i kundvagn" och beskriver hur du lägger till dem i Microsoft Dynamics 365 Commerce.
+description: Denna artikel handlar om inställningar för "Lägg till produkt i kundvagn" och beskriver hur du tillämpar dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 07/08/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6299a1c815978ab9f748b6110980e673e1fbae927ed08a5e2e080f89ef063115
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 336bea289b22e4f6f98077f915d7d35f2a48682d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712824"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866040"
 ---
 # <a name="apply-add-product-to-cart-settings"></a>Tillämpa inställningar för att lägga till produkt i kundvagnen
 
 [!include [banner](includes/banner.md)]
 
-Detta ämne handlar om inställningar för **Lägg till produkt i kundvagn** och beskriver hur du lägger till dem i Microsoft Dynamics 365 Commerce.
+Denna artikel handlar om inställningar för **Lägg till produkt i kundvagn** och beskriver hur du tillämpar dem i Microsoft Dynamics 365 Commerce.
 
 Olika arbetsflöden stöds när en produkt läggs till i kundvagnen på en Dynamics 365 Commerce-näthandelsplats. Till exempel kan webbplatsanvändaren vidarebefordras till kundvagnssidan. Alternativt kan användaren vara kvar på den aktuella sidan men få ett meddelande som bekräftar att produkten har lagts till i vagnen.
 

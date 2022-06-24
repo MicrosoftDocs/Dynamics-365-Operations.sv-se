@@ -1,6 +1,6 @@
 ---
-title: Arbetsbelastning för tillverknings körning för moln och kantskalningsenheter
-description: I det här avsnittet beskrivs hur arbetsbelastningar för tillverkningskörning fungerar med moln och kantskalningsenheter.
+title: Arbetsbelastningar för tillverkningskörning för moln- och kantskalenheter
+description: I denna artikel beskrivs hur arbetsbelastningar för tillverkningskörning fungerar med moln- och kantskalningsenheter.
 author: johanhoffmann
 ms.date: 10/06/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: johanho
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b30e16489b0b0169f08e52c70cf4489c9bf4ce1b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c73c2440d8807e965e5d2d89105c2a8a6971c849
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674066"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865336"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för tillverkningskörning för moln- och kantskalenheter
 
@@ -36,12 +36,12 @@ ms.locfileid: "8674066"
 
 Vid tillverkningskörningen har skalningsenheter följande funktioner:
 
-- Maskinoperatörer och arbetsledare kan komma åt den operationella produktionsplanen.
+- Maskinoperatörer och arbetsledare kan komma åt den åtgärdella produktionsplanen.
 - Maskinoperatörer kan hålla planen aktuell genom att köra separata jobb för bearbetning och processtillverkning.
 - Arbetsledaren kan justera driftsplanen.
 - Arbetare kan få åtkomst till tid och närvaro för in- och utstämpling "on the edge" - i utkanten av nätverket istället för som annars centralt - för att säkerställa korrekt löneberäkning för medarbetare.
 
-I det här avsnittet beskrivs hur arbetsbelastningar för tillverkningskörning fungerar med moln och kantskalningsenheter.
+I denna artikel beskrivs hur arbetsbelastningar för tillverkningskörning fungerar med moln- och kantskalningsenheter.
 
 ## <a name="the-manufacturing-lifecycle"></a>Tillverkningslivscykeln
 
@@ -59,9 +59,9 @@ Som följande bild visar, när skalenheter används delas _körningsfasen_ ut so
 
 [![Produktionskörningsfaser när skalenheter används](media/mes-phases-workloads.png "Tillverkningskörningsfaser när skalenheter används.")](media/mes-phases-workloads-large.png)
 
-Modellen hämtas nu från en installation med enkel instans till en modell som baseras på navet och skalenheten. _Planeringsfasen_ och _avslutningsfasen_ körs som backoffice-operationer på navet och arbetsbelastningen för tillverkningskörning körs på skalenheterna. Data överförs asynkront mellan nav och skalenhet.
+Modellen hämtas nu från en installation med enkel instans till en modell som baseras på hubben och skalenheten. _Planeringsfasen_ och _avslutningsfasen_ körs som backoffice-åtgärder på hubben och arbetsbelastningen för tillverkningskörning körs på skalenheterna. Data överförs asynkront mellan hubb och skalenhet.
 
-När en tillverknings order frisläpps på navet överförs alla data som krävs för att bearbeta produktions jobben till skalenheten. Dessa data omfattar produktionsorder, produktionsflöden, strukturlistor och produkter. Data som inte är relaterade till en tillverkningsorder (t.ex. indirekta aktiviteter, frånvarokoder och produktionsparametrar) överförs också från navet till skalenheten. Som regel kan data som kommer från navet och som överförs till skalenheten bara skapas eller uppdateras på navet. En ny frånvarokod eller indirekt aktivitet kan till exempel inte skapas i skalenheten&mdash;de kan bara användas för registrering. Registreringarna som görs på skalenheten under körningen överförs sedan till navet, där godkännande av tid och närvaro, lager och ekonomiska uppdateringar bearbetas.
+När en tillverknings order frisläpps på hubben överförs alla data som krävs för att bearbeta produktions jobben till skalenheten. Dessa data omfattar produktionsorder, produktionsflöden, strukturlistor och produkter. Data som inte är relaterade till en tillverkningsorder (t.ex. indirekta aktiviteter, frånvarokoder och produktionsparametrar) överförs också från hubben till skalenheten. Som regel kan data som kommer från hubben och som överförs till skalenheten bara skapas eller uppdateras på hubben. En ny frånvarokod eller indirekt aktivitet kan till exempel inte skapas i skalenheten&mdash;de kan bara användas för registrering. Registreringarna som görs på skalenheten under körningen överförs sedan till hubben, där godkännande av tid och närvaro, lager och ekonomiska uppdateringar bearbetas.
 
 ## <a name="manufacturing-execution-tasks-that-can-be-run-on-workloads"></a>Tillverkningskörningsuppgifter som kan köras på arbetsbelastningar
 
@@ -76,19 +76,19 @@ Följande uppgifter för tillverkningskörning kan förnärvarande köras på ar
 - Avbrott
 - Rapportera som färdig och artikelinförsel (kräver att du även kör arbetsbelastningen för lagerställekörningen på din skalningsenhet, se även [Rapportera som färdig och artikelinförsel](#RAF))
 
-## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Arbeta med arbetsbelastningar för tillverkningskörning på navet
+## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Arbeta med arbetsbelastningar för tillverkningskörning på hubben
 
-De processer som krävs för att köra arbetsbelastningar i tillverkningsprocessen körs automatiskt för att behålla navet och alla skalenheter synkroniserade efter behov. Om du däremot har problem kan du manuellt utlösa bearbetningen av råregistreringar som tas emot från arbetsbelastningar och/eller kontrollera bearbetningsloggen för registrering.
+De processer som krävs för att köra arbetsbelastningar i tillverkningsprocessen körs automatiskt för att behålla hubben och alla skalenheter synkroniserade efter behov. Om du däremot har problem kan du manuellt utlösa bearbetningen av råregistreringar som tas emot från arbetsbelastningar och/eller kontrollera bearbetningsloggen för registrering.
 
 ### <a name="manually-process-raw-registrations"></a>Bearbeta råregistreringar manuellt
 
 Ett batchjobb i Supply Chain Management körs automatiskt för att bearbeta alla registreringar som har mottagits från arbetsbördan. Det här jobbet skapar de nödvändiga produktionsjournalerna och loggboksposter när en registrering bearbetas för ett slutfört jobb på arbetsbelastningen.
 
-Även om jobbet vanligtvis körs automatiskt kan du när som helst köra det manuellt genom att logga in på navet och gå till **produktionskontrollen \> periodiska uppgifter \> hantering av backoffice-arbetsbelastning \> behandla råregistreringar**.
+Även om jobbet vanligtvis körs automatiskt kan du när som helst köra det manuellt genom att logga in på hubben och gå till **produktionskontrollen \> periodiska uppgifter \> hantering av backoffice-arbetsbelastning \> behandla råregistreringar**.
 
 ### <a name="check-the-raw-registration-processing-log"></a>Kontrollera bearbetningsloggen för råregistreringar
 
-Du kan granska bearbetningsloggen för registrering genom att logga in på navet och gå till **tillverkningskontroll \> periodiska uppgifter \> hantering av backoffice-arbetsbelastning \> bearbetningslogg för råregistrering**. På sidan **bearbetningslogg för råregistrering** visas en lista över bearbetade råregistreringar och status för varje registrering.
+Du kan granska bearbetningsloggen för registrering genom att logga in på hubben och gå till **tillverkningskontroll \> periodiska uppgifter \> hantering av backoffice-arbetsbelastning \> bearbetningslogg för råregistrering**. På sidan **bearbetningslogg för råregistrering** visas en lista över bearbetade råregistreringar och status för varje registrering.
 
 ![Sidan Bearbetningslogg för råregistreringar.](media/mes-processing-log.png "Sidan bearbetningslogg för råregistreringar")
 
@@ -99,7 +99,7 @@ Du kan arbeta med valfri registrering i listan genom att markera den och sedan v
 
 ## <a name="working-with-manufacturing-execution-workloads-on-a-scale-unit"></a>Arbeta med arbetsbelastningar för tillverkningskörning på en skalenhet
 
-De processer som krävs för att köra arbetsbelastningar i tillverkningsprocessen körs automatiskt för att behålla navet och alla skalenheter synkroniserade efter behov. Om du har problem kan du emellertid kontrollera historiken för order som har bearbetats på en skalenhet eller köra jobbet _tillverkningsnav till skalenhet meddelandeprocessor_.
+De processer som krävs för att köra arbetsbelastningar i tillverkningsprocessen körs automatiskt för att behålla hubben och alla skalenheter synkroniserade efter behov. Om du har problem kan du emellertid kontrollera historiken för order som har bearbetats på en skalenhet eller köra jobbet _tillverkningshubb till skalenhet meddelandeprocessor_.
 
 ### <a name="view-the-history-of-manufacturing-jobs-that-have-been-processed-on-a-scale-unit"></a>Visa historiken för tillverkningsjobb som har bearbetats på en skalenhet
 
@@ -108,9 +108,9 @@ För att granska historiken om tillverkningsjobb som har bearbetats på en skale
 - **Process** – bearbeta den valda produktionsorder manuellt.
 - **Avbryt** – Avbryt den valda produktionsordern.
 
-### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Tillverkningsnav till skalenhet meddelande processorjobb
+### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Tillverkningshubb till skalenhet meddelande processorjobb
 
-Jobbet _Tillverkningsnav till skalenhet meddelande processorjobb_ bearbetar data från navet till skalenheten. Det här jobbet startas automatiskt när arbetsbelastning för tillverkningskörningen distribueras. Du kan dock köra den manuellt när som helst genom att gå till **tillverkningskontroll \> periodiska uppgifter \> hantering av backoffice-arbetsbelastning \> Tillverkningsnav till skalenhet meddelande processorjobb**.
+Jobbet _Tillverkningshubb till skalenhet meddelande processorjobb_ bearbetar data från hubben till skalenheten. Det här jobbet startas automatiskt när arbetsbelastning för tillverkningskörningen distribueras. Du kan dock köra den manuellt när som helst genom att gå till **tillverkningskontroll \> periodiska uppgifter \> hantering av backoffice-arbetsbelastning \> Tillverkningshubb till skalenhet meddelande processorjobb**.
 
 <a name="RAF"></a>
 
@@ -134,7 +134,7 @@ I den aktuella versionen stöds funktionerna "rapportera som färdig" och "artik
 
 ## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>Aktivera och använda startåtgärd på en skalningsenhet
 
-I den aktuella versionen stöds startoperationen för produktions- och batchorder av [körningsarbetsbelastningen för lagerställe](cloud-edge-workload-warehousing.md) (inte av körningsarbetsbelastningen för tillverkning). Om du vill använda den här funktionen vid anslutning till en skalningsenhet måste du slutföra dessa uppgifter:
+I den aktuella versionen stöds startåtgärden för produktions- och batchorder av [körningsarbetsbelastningen för lagerställe](cloud-edge-workload-warehousing.md) (inte av körningsarbetsbelastningen för tillverkning). Om du vill använda den här funktionen vid anslutning till en skalningsenhet måste du slutföra dessa uppgifter:
 
 - Installera både körningsarbetsbelastningen för lagerstället och körningsarbetsbelastningen för tillverkning på din skalningsenhet.
 - Aktivera funktionen *Starta produktionsorder på arbetsbelastningen för lagerhantering för moln- och kantskalningsenhet* i [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).

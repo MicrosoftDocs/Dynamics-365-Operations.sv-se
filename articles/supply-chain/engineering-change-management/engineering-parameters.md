@@ -1,6 +1,6 @@
 ---
 title: Parametrar för konstruktionsändringshantering
-description: Det här avsnittet förklarar hur du konfigurerar funktioner för hantering av tekniska förändringar för Microsoft Dynamics 365 Supply Chain Management.
+description: Denna artikel förklarar hur du konfigurerar funktioner för hantering av tekniska förändringar för Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 106c3a79236bcb8112ecbd48e29f3f5f3148a867
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6ef4113077c538ca1a54009aacbdeaf2ccbd0232
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581018"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875522"
 ---
 # <a name="engineering-change-management-parameters"></a>Parametrar för konstruktionsändringshantering
 
@@ -27,7 +27,7 @@ Sidan **Parametrar för konstruktionsändringshantering** innehåller inställni
 
 ## <a name="open-the-engineering-change-management-parameters-page"></a>Öppna sidan Parametrar för konstruktionsändringshantering
 
-Om du vill öppna sidan **Parametrar för konstruktionsändringshantering** gå till **Konstruktionsändringshantering \> Inställningar \> Parametrar för konstruktionsändringshantering**. Du kan sedan ange fälten enligt beskrivningen i de återstående avsnitten i det här avsnittet.
+Om du vill öppna sidan **Parametrar för konstruktionsändringshantering** gå till **Konstruktionsändringshantering \> Inställningar \> Parametrar för konstruktionsändringshantering**. Du kan sedan ange fälten enligt beskrivningen i de återstående avsnitten i denna artikel.
 
 ## <a name="release-control-tab"></a>Fliken frisläppningskontroll
 

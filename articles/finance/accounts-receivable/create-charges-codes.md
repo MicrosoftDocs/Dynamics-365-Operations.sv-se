@@ -1,6 +1,6 @@
 ---
 title: Skapa avgiftskoder
-description: I det här avsnittet beskrivs hur du konfigurerar debiteringskoder för både Leverantörsreskontra och Kundreskontra.
+description: I den här artikeln beskrivs hur du konfigurerar debiteringskoder för både Leverantörsreskontra och Kundreskontra.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8526fa0f3c6e3d1b545703f6e6ef72f558b57bd
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d65952cb989672e4eac2dd6101ee9c7c9424daed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735039"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866095"
 ---
 # <a name="create-charges-codes"></a>Skapa avgiftskoder
 
-I det här avsnittet beskrivs hur du konfigurerar debiteringskoder för både Leverantörsreskontra och Kundreskontra. Om din organisation kräver att försäljningsbelopp eller inköpsbelopp spåras i tillägg till radartiklar på en försäljnings- eller inköpsorder, kan du använda avgiftskoder i det här syftet. Du betalar till exempel frakt och försäkring på en inköpsorder, och dessa belopp specificeras separat på inköpsordern. Du kan ange om dessa belopp ska bokföras på utgiftskonton eller läggas till i kostnaden för artiklarna.
+I den här artikeln beskrivs hur du konfigurerar debiteringskoder för både Leverantörsreskontra och Kundreskontra. Om din organisation kräver att försäljningsbelopp eller inköpsbelopp spåras i tillägg till radartiklar på en försäljnings- eller inköpsorder, kan du använda avgiftskoder i det här syftet. Du betalar till exempel frakt och försäkring på en inköpsorder, och dessa belopp specificeras separat på inköpsordern. Du kan ange om dessa belopp ska bokföras på utgiftskonton eller läggas till i kostnaden för artiklarna.
 
 ## <a name="set-up-charges-codes-for-accounts-receivable"></a>Ställa in avgiftskoder för kundreskontra
 

@@ -1,6 +1,6 @@
 ---
 title: Presentkortsmodul
-description: Det här avsnittet handlar om presentkortsmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+description: Denna artikel handlar om presentkortsmoduler och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5a4aaf8e072f6547fe1dcf6fa156d2e144fd03ed806a2dc809a2cedb991461f7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cc3d51b9891469b8bb0fa38ae2bcd0b27eee56f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728349"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869500"
 ---
 # <a name="gift-card-module"></a>Presentkortsmodul
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om presentkortsmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+Denna artikel handlar om presentkortsmoduler och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 
 Presentkortmoduler är en vanlig typ av betalningsmoduler för att acceptera presentkort, en vanlig betalningsmetod för näthandelstransaktioner. Presentkortsmodulen kan användas med Dynamics 365, SVS, och Givex presentkortskort. SVS och Givex presentkort löses in via Adyen betalningsförmedlaren. Mer information om stöd för externa presentkort, t.ex. SVS och Givex, se [Stöd för externa presentkort](./dev-itpro/gift-card.md).
 
@@ -55,7 +55,7 @@ Följande bild visar ett exempel på en presentkortmodul på en kassasida.
     - PIN och utgångsdatum 
     - None
 
-- **Aktivera för gästanvändare** – När denna egenskap är aktiverad kan gästanvändare lösa in eller kontrollera saldon på presentkort. Denna egenskap kräver att anonym (gäst) åtkomst för presentkort ska aktiveras i Commerce-administration. Mer information finns i [Aktivera presentkortsbetalningar för gästutcheckning](#enable-gift-card-payments-for-guest-checkout).
+- **Aktivera för gästanvändare** – När denna egenskap är aktiverad kan gästanvändare lösa in eller kontrollera saldon på presentkort. Denna egenskap kräver att anonym (gäst) åtkomst för presentkort ska aktiveras i Commerce headquarters. Mer information finns i [Aktivera presentkortsbetalningar för gästkassa](#enable-gift-card-payments-for-guest-checkout).
 
 > [!IMPORTANT]
 > Egenskapen **Aktivera för gästanvändare** är tillfälligt som Commerce version 10.0.21. De kräver att paketversion 9.31 för Commerce-modulens bibliotek är installerad.
@@ -82,7 +82,7 @@ Som standard är interna presentkort inte optimerade för användning i näthand
 
 Som standard aktiveras inte presentkortsbetalningar för gästkassa (anonymt). För att aktivera dem följer du stegen nedan.
 
-1. I Commerce-administrationen går du till **Retail och Commerce \> Kanalinställningar \> Kassainställningar \> Kassa \> Kassafunktioner**.
+1. I Commerce headquarters går du till **Retail och Commerce \> Kanalinställningar \> Kassainställningar \> Kassa \> Kassafunktioner**.
 1. Markera och håll (eller högerklicka) på rutnätets rubrik och välj sedan **Infoga kolumner**.
 1. I dialogrutan **Infoga kolumner** väljer du kryssrutan **AllowAnonymousAccess**.
 1. Välj **Uppdatera**.

@@ -1,6 +1,6 @@
 ---
 title: Använda filter på en plan
-description: I det här avsnittet beskrivs hur använder filter på en plan när funktionerna för planeringsoptimering används.
+description: I denna artikel beskrivs hur använder filter på en plan när funktionen Planeringsoptimering används.
 author: t-benebo
 ms.date: 01/08/2020
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 8679844ea40dd5af74102c37ab1e7d10b0681a0f
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c2df379be0876225bc7b0301d21f4e6660b04eb6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468396"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875316"
 ---
 # <a name="apply-filters-to-a-plan"></a>Använda filter på en plan
 
 [!include [banner](../../includes/banner.md)]
 
-När funktionen för planeringsoptimering används kan du använda ett filter på en plan. **Planfiltret** används alltid vid en huvudplaneringskörning. Ett **planfilter** är användbart när du vill begränsa en plan till en viss grupp av artiklar och se till att inga andra artiklar ingår i den resulterande huvudplaneringen.
+När funktionen för Planeringsoptimering används kan du använda ett filter på en plan. **Planfiltret** används alltid vid en huvudplaneringskörning. Ett **planfilter** är användbart när du vill begränsa en plan till en viss grupp av artiklar och se till att inga andra artiklar ingår i den resulterande huvudplaneringen.
 
 Om ett **planfilter** används och ett körningsfilter också används under huvudplaneringskörningen, inkluderas bara skärningen mellan de två filtren i planeringskörningen.
 
-**Planfiltret** kan nås från **huvudplaner** när planeringsoptimering används.
+**Planfiltret** kan nås från **huvudplaner** när Planeringsoptimering används.
 
 ## <a name="example-scenario"></a>Exempelscenario
 
@@ -49,7 +49,7 @@ Ett planfilter är en inställning som omfattar artiklarna A, B och C. Huvudplan
 
 [Rådgivning om optimering – översikt](planning-optimization-overview.md)
 
-[Kom igång med planeringsoptimering](get-started.md)
+[Kom igång med Planeringsoptimering](get-started.md)
 
 [Planera analys av optimeringsanpassning](planning-optimization-fit-analysis.md)
 

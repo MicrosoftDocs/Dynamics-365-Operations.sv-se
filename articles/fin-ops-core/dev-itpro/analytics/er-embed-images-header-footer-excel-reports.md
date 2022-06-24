@@ -1,6 +1,6 @@
 ---
 title: Designa ett ER-format i syfte att generera en rapport i Excel-format med inbäddade bilder i sidhuvuden eller sidfötter
-description: I detta ämne beskrivs hur du använder Elektronisk rapportering (ER) för att generera affärsdokument som har bilder och figurer inbäddade i sidhuvuden eller sidfötter.
+description: I denna artikel beskrivs hur du använder Elektronisk rapportering (ER) för att generera affärsdokument som har bilder och figurer inbäddade i sidhuvuden eller sidfötter.
 author: NickSelin
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f3f77a9e6104a31995c9ee398504982fe43ac9e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323796"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854855"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>Designa ett ER-format i syfte att generera en rapport i Excel-format med inbäddade bilder i sidhuvuden eller sidfötter
 
@@ -132,7 +132,7 @@ Mer information om ER-konfigurationsleverantörer finns i [Skapa konfigurationsl
 
 ### <a name="import-the-standard-er-configurations"></a><a id="ImportERFormat"></a>Importera ER-standardkonfiguration
 
-Om du vill lägga till ER-standardkonfigurationer i din aktuella instans av Dynamics 365 Finance måste du importera dem från den ER-[lagringsplats](general-electronic-reporting.md#Repository) som har konfigurerats för den instansen.
+Om du vill lägga till standard-ER-konfigurationer i din aktuella Dynamics 365 Finance-instansen måste du importera dem från [databasen](general-electronic-reporting.md#Repository) som har konfigurerats för den instansen.
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. På sidan **Lokaliseringskonfigurationer**, i avsnittet **Konfigurationsleverantörer** väljer du panelen **Microsoft** och sedan **Lagringsplatser** om du vill se en lista över lagringsplatser för leverantören **Microsoft**.

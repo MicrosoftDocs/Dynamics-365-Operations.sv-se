@@ -1,6 +1,6 @@
 ---
 title: Framställ utskrivbara FTI-formulär
-description: I det här avsnittet beskrivs hur du använder ramverket för elektronisk rapportering (ER) för att skapa utskrivbara fritextfakturaformulär (FTI) som Microsoft Office-dokument.
+description: I den här artikeln beskrivs hur du använder ramverket för elektronisk rapportering (ER) för att skapa utskrivbara fritextfakturaformulär (FTI) som Microsoft Office-dokument.
 author: NickSelin
 ms.date: 07/24/2018
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: be5e3ef0f6ecb3d8f911b5be5f8bc9102d201fd299425e847a2df233d9b4edf4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d4efbb46bbba2b139bbcf9b07c480a7e8669fd7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758226"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868841"
 ---
 # <a name="generate-printable-fti-forms"></a>Skapa utskrivbara FTI-formulär
 
 [!include[banner](../includes/banner.md)]
 
-Ramverket för elektronisk rapportering (ER) låter dig skapa utskrivbara fritextfakturaformulär (FTI) som Microsoft Office-dokument. Det här avsnittet innehåller information om hur du skapar egna konfigurationer, samt information om tillgängliga konfigurationsmallar.
+Ramverket för elektronisk rapportering (ER) låter dig skapa utskrivbara fritextfakturaformulär (FTI) som Microsoft Office-dokument. Den här artikeln innehåller information om hur du skapar egna konfigurationer, samt information om tillgängliga konfigurationsmallar.
 
 ## <a name="overview"></a>Översikt
 
 Förutom den redan befintliga möjligheten att skapa utskrivbara formulär genom att använda Microsoft SQL Server Server Reporting Services (SSRS) kan du nu också använda ER-ramverket. Du kan hantera utskrivbara FTI-formulär i Microsoft Office Excel och Word. Du kan också ändra layout, dataflöde och formatering för att uppfylla särskilda krav utan att göra ändringar i koden.
 
 > [!NOTE]
-> Om du vill börja med en översikt över befintliga ER-konfigurationer för det här exemplet på en utskrivbar FTI-formulärslösning, kan du gå direkt till avsnittet **Hämta exempel på ER-konfigurationer i syfte att skapa utskrivbara FTI-formulär** senare i det här avsnittet.
+> Om du vill börja med en översikt över befintliga ER-konfigurationer för det här exemplet på en utskrivbar FTI-formulärslösning, kan du gå direkt till avsnittet **Hämta exempel på ER-konfigurationer i syfte att skapa utskrivbara FTI-formulär** senare i den här artikeln.
 
 ## <a name="create-customized-configurations-for-fti-printable-forms"></a>Skapa anpassade konfigurationer för utskrivbara FTI-formulär
 Som en del av en anpassad lösning för utskrivbara FTI-formulär måste du skapa en uppsättning ER-konfigurationer.

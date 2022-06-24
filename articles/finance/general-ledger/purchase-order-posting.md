@@ -10,12 +10,12 @@ ms.search.form: InventPosting, InventTrans
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: 4b36ab9da22da7d4f3e62bd2d2aba2a2ec80e60f
-ms.sourcegitcommit: 5b55f2913e736d12e40c227bf3ce3a9abec815bd
+ms.openlocfilehash: 0793c58b07d2c0a133e1a5bc0607483f22206b95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8803033"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849943"
 ---
 # <a name="purchase-order-posting"></a>Bokföring av inköpsorder
 
@@ -125,7 +125,7 @@ Inköpsrekvisitioner och inköpsorderbekräftelser kan också konfigureras för 
 
 ## <a name="procurement-category-posting"></a>Bokföring av anskaffningskategori
 
-Ett alternativ till att ställa in lagerbokföring för alla artiklar, en artikelgrupp eller en enskild artikel är att ställa in kategorier och kontrollera redovisningsbokföringen efter anskaffningskategorier. Mer information om hur du ställer in kategorier och tilldelar dem till produkter finns i [Exempel på bokföringsprofilkonfiguration](#sample-posting-profile-configuration) tidigare i det här avsnittet.
+Ett alternativ till att ställa in lagerbokföring för alla artiklar, en artikelgrupp eller en enskild artikel är att ställa in kategorier och kontrollera redovisningsbokföringen efter anskaffningskategorier. Mer information om hur du ställer in kategorier och tilldelar dem till produkter finns i [Exempel på bokföringsprofilkonfiguration](#sample-posting-profile-configuration) tidigare i den här artikeln.
 
 När du använder kategorier med inköpsorder eller leverantörsfakturor måste kategorihierarkin tilldelas till typen **Anskaffningskategorihierarki** på sidan **Rolltilldelningar för kategorihierarki**.
 

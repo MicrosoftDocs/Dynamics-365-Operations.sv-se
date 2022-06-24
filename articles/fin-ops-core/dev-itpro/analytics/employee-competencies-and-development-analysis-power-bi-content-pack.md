@@ -1,6 +1,6 @@
 ---
 title: Medarbetares kompetenser och utveckling Power BI-innehåll
-description: Det här avsnittet beskriver Power BI-innehåll för medarbetarkompetenser och utveckling.
+description: Den här artikeln beskriver Power BI-innehåll för medarbetarkompetenser och utveckling.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 572f6bcfa202995d90080e1a31476122f7ec23d71214d5ff0dd44ed919859c57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8fee4d98a3e20fa268d6c3539db09e09a7861a2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726319"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851028"
 ---
 # <a name="employee-competencies-and-development-power-bi-content"></a>Medarbetares kompetenser och utveckling Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver Power BI-innehåll för medarbetarkompetenser och utveckling. 
+Den här artikeln beskriver Power BI-innehåll för medarbetarkompetenser och utveckling. 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter som ingår i innehållspaketet
 När du har anslutit innehållspaketet till dina data kommer rapporterna att visa din organisations data. Om du aldrig har använt Microsoft Power BI tidigare kan du lära dig mer om det på sidan [Guidad utbildning för Power BI](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). Rapporter som ingår i innehållspaketet har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.

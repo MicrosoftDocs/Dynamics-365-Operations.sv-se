@@ -1,6 +1,6 @@
 ---
 title: Batchbalansering
-description: Det här avsnittet beskriver processen för batchbalansering.
+description: Denna artikel beskriver processen för batchbalansering.
 author: johanhoffmann
 ms.date: 01/04/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: a9e69b4d9213e57e5a920c7adda934ba845d17410c17d9c8a6356d717870ac23
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 50392e8aa0deb568a57e1df59ced70625a4f8a78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780086"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856060"
 ---
 # <a name="batch-balancing"></a>Batchbalansering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur processen för batchbalansering stöds.
+Denna artikel beskriver hur processen för batchbalansering stöds.
 
 Mer information finns i en [video om batch-balansering](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
@@ -108,7 +108,7 @@ En ersättningsbeståndsdel kan antingen kompensera eller komplettera effekten a
 
 Relationen mellan en aktiv beståndsdel och en kompletterande beståndsdel ställs in på sidan **Kompensationsprincipen**.
 
-Följ dessa steg för att ställa in relationer mellan beståndsdelar.
+Följ dessa steg för att konfigurera relationer mellan beståndsdelar.
 
 1. Gå till **Produktinformationshantering \> Strukturlistor och formler \> Formler**.
 1. Öppna en receptrad och välj sedan **Beståndsdelar** för att öppna sidan **Kompenseringsprincipen**.
@@ -149,7 +149,7 @@ Den balanserade kvantiteten för utfyllnadsmedel beräknas som skillnaden mellan
 Batchbalanseringsprocessen utförs från sidan **Batchbalansering**.
 Välj **Kostnadshantering \> Batchorder** och sedan på fliken **Process**, välj **Batchbalansering**. Batchbalansering finns för batchorder som har statusen **startad**.
 
-I allmänhet kan batchbalansering användas för batchorder om formeln har minst en receptrad där **beståndsdeltypen** är *aktiv*. (Undantaget från denna regel, se avsnittet ”Batchorder som inte gäller för batchbalansering” senare i det här avsnittet.)
+I allmänhet kan batchbalansering användas för batchorder om formeln har minst en receptrad där **beståndsdeltypen** är *aktiv*. (Undantaget från denna regel, se avsnittet ”Batchorder som inte gäller för batchbalansering” senare i denna artikel.)
 
 Batchbalanseringsprocessen kan delas in i två delprocesser:
 

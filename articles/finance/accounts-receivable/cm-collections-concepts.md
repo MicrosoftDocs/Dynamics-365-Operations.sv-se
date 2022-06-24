@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 508723752ec7ae5f48e52c728b6ef526ec49e4e2
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: f1e6932740c33ae418ac633623680eda6af7a592
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723035"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858536"
 ---
 # <a name="collections-management-key-concepts"></a>Viktiga begrepp för inkassohantering
 
@@ -34,7 +34,7 @@ Innan du börjar ställa in eller arbeta med kassaavstämningar, ska du förstå
 - Avskrivningstransaktioner kan skapas i ett steg.
 - NSF-transaktioner (otillräckliga medel) kan bearbetas i ett steg.
 
-I det här avsnittet beskrivs varje begrepp.
+I den här artikeln beskrivs varje begrepp.
 
 ## <a name="customer-aging-snapshots"></a>Ögonblicksbild av åldersfördelningen för kunder
 
@@ -86,7 +86,7 @@ Faktaboxar visar åldersfördelade saldon och information om kreditgräns för v
 
 Du kan efterskänka, återinföra eller återföra hela räntefakturor eller avgifter och transaktionränta som är en del av räntefakturor. Du kan göra detta från fliken **Inkasso** i åtgärdsfönstret på listsidan **Alla kunder** genom att klicka på **Räntefaktura**, **Transaktionsränta** eller **Avgift**.
 
-Dessa justeringar påverkar endast räntefakturor, och ränta och avgifter som de innehåller. Mer information om hur du skriver av alla avgifter som en kund är skyldig finns i avsnittet [skapa avskrivningstransaktioner](#creating-write-off-transactions) i det här avsnittet.
+Dessa justeringar påverkar endast räntefakturor, och ränta och avgifter som de innehåller. Mer information om hur du skriver av alla avgifter som en kund är skyldig finns i avsnittet [skapa avskrivningstransaktioner](#creating-write-off-transactions) i den här artikeln.
 
 Mer information finns i Skapa en räntekod med ett intervall och Bearbeta ränta.
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 9fed5f93441bbc29b039bd1562821b999a58e5e1
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 2a87e1aa27085f1b4821d27cece782dffbcd2096
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677602"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851374"
 ---
 # <a name="usmca-certification-of-origin"></a>USMCA-certifiering av ursprung
 
@@ -53,7 +53,7 @@ USMCA-certifiering av ursprungsdokumentet innehåller följande dataelement:
 - Intygarens signatur
 - Antal sidor
 
-Mer information om dessa element och hur deras värden hittas finns i resten av avsnitten i det här avsnittet.
+Mer information om vart och ett av dessa element och hur deras värden hittas finns i resterande avsnitt i denna artikel.
 
 ## <a name="print-a-usmca-certification-of-origin-document"></a>Skriv ut USMCA-certifiering av ursprungsdokument
 
@@ -120,7 +120,7 @@ Dokumentet innehåller flera avsnitt med detaljerad information om artiklar, som
 
 - **Beskrivning**: skriver ut en beskrivning eller ett namn för den frisläppta produkten. Om det finns en beskrivning på användarens språk skrivs det ut. Om det inte finns någon sådan beskrivning skrivs namnet på användarens språk ut. Om det namnet inte finns skrivs artikel namnet ut.
 
-- **Harmoniserad system tariffklassificering (HS)**: skriver ut det harmoniserade tariffschema som är kopplat till produkten. Du kan ställa in dessa scheman genom att gå till **Transporthantering \> Inställningar \> Transportstandard \> Harmoniserade tariffscheman**.
+- **Harmoniserad system tariffklassificering (HS)**: skriver ut det harmoniserade tariffschema som är kopplat till produkten. Du kan konfigurera dessa scheman genom att gå till **Transporthantering \> Inställningar \> Transportstandard \> Harmoniserade tariffscheman**.
 
 - **Ursprungligt kriterium:** du måste ange data manuellt i det här avsnittet första gången du släpper dokumentet.
 

@@ -1,6 +1,6 @@
 ---
 title: Inköpsrekvisitioner
-description: Det här ämnet beskriver hur inköpsrekvisitioner stöds i Planeringsoptimering.
+description: Denna artikel beskriver hur inköpsrekvisitioner stöds i Planeringsoptimering.
 author: t-benebo
 ms.date: 01/04/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 0328342fbe322225a5ecb095d3b0165caa6d18d3
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: b4dcae11e83748da3ec0368e1ddf47fedf5de23c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469657"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867910"
 ---
 # <a name="purchase-requisitions"></a>Inköpsrekvisitioner
 
@@ -40,14 +40,14 @@ Följ de här stegen om du vill ta med rekvisitioner under disponeringsberäknin
 
 ## <a name="approved-requisitions-time-fence"></a>Godkänd rekvisitionstidsgräns
 
-Den *godkända rekvisitionstidsgränsen* anger hur långt tillbaka (i dagar) en huvudplan kommer att omfatta efterfrågan från godkända påfyllnadsrekvisitioner. Du kan ställa in en godkänd rekvisitionstidsgräns på både disponeringsgruppnivå och huvudplansnivå.
+Den *godkända rekvisitionstidsgränsen* anger hur långt tillbaka (i dagar) en huvudplan kommer att omfatta efterfrågan från godkända påfyllnadsrekvisitioner. Du kan konfigurera en godkänd rekvisitionstidsgräns på både disponeringsgruppnivå och huvudplansnivå.
 
 ### <a name="set-the-approved-requisitions-time-fence-for-a-coverage-group"></a>Ställa in tidsgräns för godkända rekvisitioner för en disponeringsgrupp
 
 1. Gå till **huvudplanering** \> **inställningar** \> **täckning** \> **disponeringsgrupper**.
 1. Skapa eller välj en disponeringsgrupp.
 1. På snabbfliken **Annat** anger du **tidsgränsen för godkända rekvisitioner (dagar)** till antalet dagar som ska inkluderas i tidsgränsen.
-1. Upprepa steg 2 och 3 för varje ytterligare disponeringsgrupp där du vill ställa in en godkänd tidsgräns för rekvisitioner.
+1. Upprepa steg 2 och 3 för varje ytterligare disponeringsgrupp där du vill konfigurera en godkänd tidsgräns för rekvisitioner.
 
 ### <a name="set-the-approved-requisitions-time-fence-for-individual-master-plans"></a>Ställa in tidsgräns för godkända rekvisitioner för en individuell huvudplan
 
@@ -56,7 +56,7 @@ När du anger en godkänd rekvisitionstidsgräns för en enskild huvudplan åsid
 1. Gå till **Huvudplanering** \> **Inställningar** \> **Planer** \> **Huvudplaner**.
 1. Skapa eller välj huvudplan.
 1. På snabbfliken **Tidsgräns i dagar** anger du **tidsgränsen för godkända rekvisitioner (dagar)** till antalet dagar som ska inkluderas i tidsgränsen.
-1. Upprepa steg 2 och 3 för varje ytterligare huvudplan där du vill ställa in en godkänd tidsgräns för rekvisitioner.
+1. Upprepa steg 2 och 3 för varje ytterligare huvudplan där du vill konfigurera en godkänd tidsgräns för rekvisitioner.
 
 > [!IMPORTANT]
 > **Kommer snart:** Godkända rekvisitioner tidsgränser stöds ännu inte för Planeringsoptimering. Till dess att de stöds ignoreras alla värden som du anger i fältet **tidsgränsen för godkända rekvisitioner (dagar)**.

@@ -1,6 +1,6 @@
 ---
 title: Arbetsyta för kostnadskontroll
-description: Det här avsnittet innehåller information om arbetsytan för kostnadskontroll. Den här arbetsytan är en central plats där chefer, som ansvarar för kontroll av ett kostnadsobjekt eller en uppsättning kostnadsobjekt i en dimension eller i flera dimensioner har åtkomst till rapporter.
+description: Den här artikeln innehåller information om arbetsytan för kostnadskontroll. Den här arbetsytan är en central plats där chefer, som ansvarar för kontroll av ett kostnadsobjekt eller en uppsättning kostnadsobjekt i en dimension eller i flera dimensioner har åtkomst till rapporter.
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 36e94ff2cd499a827c631d6836a6c976af53dfa1
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f53d5d4daea076cc63308a83292f8f8c1ee1d022
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734616"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853508"
 ---
 # <a name="cost-control-workspace"></a>Arbetsyta för kostnadskontroll 
 

@@ -1,5 +1,5 @@
 ---
-title: Kom i gång med skatteberäkning
+title: Kom i gång med momsberäkning
 description: Detta ämne förklarar hur du ställer in skatteberäkningen.
 author: wangchen
 ms.date: 03/25/2022
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ab9c0cf974114c4fa9b673e5601e138acef534d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c2293102057ac055f0958c1c6b1de2a19cb331d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685923"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855295"
 ---
 # <a name="get-started-with-tax-calculation"></a>Kom i gång med momsberäkning
 

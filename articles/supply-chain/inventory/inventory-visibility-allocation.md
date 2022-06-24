@@ -1,8 +1,8 @@
 ---
-title: Lagerfördelning för Lagersynlighet
-description: I det här avsnittet beskrivs hur du ställer in och använder lagerallokeringsfunktionen, där du kan lägga det dedikerade lagret åt sidan för att säkerställa att du kan uppfylla dina mest vinstgivande kanaler eller kunder.
+title: Lagerallokering med Inventory Visibility
+description: I denna artikel beskrivs hur du konfigurerar och använder funktionen för lagerallokering, där du kan lägga det dedikerade lagret åt sidan i syfte att säkerställa att du kan tillmötesgå dina mest vinstgivande kanaler eller kunder.
 author: yufeihuang
-ms.date: 05/20/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 4293ead4ccfc9ba04e8b9da437134b4e97569026
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786957"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852517"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>Lagerfördelning för Lagersynlighet
 
@@ -26,7 +26,7 @@ ms.locfileid: "8786957"
 
 I många fall måste tillverkare, återförsäljare och andra leverantörer förboka lager för viktiga försäljningskanaler, platser eller kunder eller för särskilda försäljningshändelser. Lagerallokering är ett standardpraxis i planeringen av försäljningsverksamheten och utförs innan de faktiska försäljningsaktiviteterna inträffar och en försäljningsorder skapas.
 
-Till exempel har ett cykelföretag begränsat lager tillgängligt för en mycket populär cykel. Företaget gör både online- och butiksförsäljningar. I varje försäljningskanal har företaget några viktiga partner (marknadsplats och stora återförsäljare) som kräver att en viss del av den tillgängliga lagerbehållningen för dessa ska sparas. Därför måste cykelföretaget kunna balansera lagerfördelningen mellan kanaler och hantera förväntningarna från sina VIP-partners. Det bästa sättet att nå båda målen är att använda lagerallokering, så att varje kanal och återförsäljare kan ta emot specifika allokerade kvantiteter som kan säljas till kunder senare.
+Till exempel har ett cykelföretag begränsat lager tillgängligt för en mycket populär cykel. Företaget gör både online- och butiksförsäljningar. I varje försäljningskanal har företaget några viktiga partners (marknadsplatser och stora återförsäljare) som kräver att en viss del av den tillgängliga lagerbehållningen för cykeln ska sparas åt dem. Därför måste cykelföretaget kunna balansera lagerfördelningen mellan kanaler och hantera förväntningarna från sina VIP-partners. Det bästa sättet att nå båda målen är att använda lagerallokering, så att varje kanal och återförsäljare kan ta emot specifika allokerade kvantiteter som kan säljas till kunder senare.
 
 Lagerallokeringen har två grundläggande affärssyften:
 
@@ -35,7 +35,7 @@ Lagerallokeringen har två grundläggande affärssyften:
 
 ## <a name="allocation-definition-in-inventory-visibility-service"></a>Allokeringsdefinition i lagersynlighetstjänst
 
-Även om allokeringsfunktionen i lagersynlighetstjänst inte innebär att fysiska lagerkvantiteter åsidosätts, refererar den till tillgänglig fysisk lagerkvantitet för att definiera dess initiala *inte tillgängliga för fördelning* för att fördela virtuell poolkvantitet. Lagerallokering i Lagersynlighet är en mjuk allokering. Det görs före faktiska försäljningstransaktioner och beror inte på försäljningsorder. Du kan till exempel tilldela lager till dina viktigaste försäljningskanaler eller stora företagsbutiker innan slutkunder besöker försäljningskanal eller butik för att köpa den.
+Även om allokeringsfunktionen i lagersynlighetstjänst inte innebär att fysiska lagerkvantiteter åsidosätts, refererar den till tillgänglig fysisk lagerkvantitet för att definiera dess initiala *inte tillgängliga för fördelning* för att fördela virtuell poolkvantitet. Lagerallokering i Lagersynlighet är en mjuk allokering. Det görs före faktiska försäljningstransaktioner och beror inte på försäljningsorder. Du kan till exempel tilldela lager till dina viktigaste försäljningskanaler eller stora företagsåterförsäljare innan slutkunder besöker försäljningskanal eller butik för att köpa.
 
 Skillnaden mellan lagerfördelning och [reservation av mjukt lager](inventory-visibility-reservations.md) är att mjuk reservation vanligtvis är kopplad till faktiska försäljningstransaktioner (försäljningsorderrader). Om du vill använda allokerings- och mjukreservationsfunktionerna tillsammans rekommenderar vi därför att du först gör lagerallokering och sedan en mjuk reserv mot de fördelade kvantiteterna. Mer information finns i [Förbruka som en mjuk reservation](#consume-to-soft-reserved).
 
@@ -98,7 +98,7 @@ Här är de första beräknade måtten:
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>Lägg till andra fysiska mått på det beräknade måttet som är tillgängligt att fördela
 
-Om du vill använda allokering måste du ställa in det beräknade måttet som är tillgängligt att fördela (`@iv`.`@available_to_allocate`). Du har till exempel `fno` datakälla och `onordered` mått, kommer `pos` datakälla och `inbound` och du vill göra allokering till hands för summan av `fno.onordered` och `pos.inbound`. I detta fall ska `@iv.@available_to_allocate` innehålla `pos.inbound` och `fno.onordered` i formeln. Här är ett exempel:
+Om du vill använda allokering måste du konfigurera det beräknade måttet som är tillgängligt att allokera (`@iv.@available_to_allocate`). Du har till exempel `fno` datakälla och `onordered` mått, kommer `pos` datakälla och `inbound` och du vill göra allokering till hands för summan av `fno.onordered` och `pos.inbound`. I detta fall ska `@iv.@available_to_allocate` innehålla `pos.inbound` och `fno.onordered` i formeln. Här följer ett exempel:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
@@ -106,15 +106,16 @@ Om du vill använda allokering måste du ställa in det beräknade måttet som �
 
 Maximalt åtta namn på allokeringsgrupp kan ställas in. Grupperna har en hierarki.
 
-Du ställer in gruppnamnen på sidan **Lagersynlighet Power App-konfiguration**. För att öppna den här sidan, i din Microsoft Dataverse miljö, öppna appen Lagersynlighet och välj **Konfiguration \> Allokering**.
+Du konfigurerar gruppnamnen på sidan **Lagersynlighet Power App-konfiguration**. För att öppna den här sidan, i din Microsoft Dataverse miljö, öppna appen Lagersynlighet och välj **Konfiguration \> Allokering**.
 
-Till exempel om du använder fyra gruppnamn och ställer in dem på \[`channel`, `customerGroup`, `region`, `orderType`\], dessa namn kommer att vara giltiga för tilldelningsrelaterade förfrågningar när du anropar API:et för konfigurationsuppdatering.
+Till exempel om du använder fyra gruppnamn och konfigurerar dem på \[`channel`, `customerGroup`, `region`, `orderType`\], dessa namn kommer att vara giltiga för tilldelningsrelaterade förfrågningar när du anropar API:et för konfigurationsuppdatering.
 
-### <a name="allcoation-using-tips"></a>Tilldelning med tips
+### <a name="allocation-using-tips"></a>Allokering med tips
 
-- För varje produkt ska allokeringsfunktionen använda på samma dimensionsnivå enligt den produktgrupphierarki du ställt in i [konfigurationen för produktindexhierarkin](inventory-visibility-configuration.md#index-configuration). Till exempel är indexhierarkin Webbplats, Plats, Färg, Storlek. Om du fördelar en viss kvantitet för en produkt på webbplatsen, plats, färgnivån. Nästa gång du använder för att allokera, bör även på Webbplats, Plats, Färgnivå, om du använder Webbplats, Plats, Färg, Storleksnivå eller Webbplats, Platsnivå, kommer data inte att vara konsekventa.
-- Ändring av allokeringsgrupp påverkar inte data som sparas i tjänsten.
+- För varje produkt ska allokeringsfunktionen använda samma *dimensionsnivå* enligt den produktindexhierarki du angett i [hierarkikonfigurationen för produktindex](inventory-visibility-configuration.md#index-configuration). Låt oss anta att din indexhierarki är \[`Site`, `Location`, `Color`. `Size`\] Om du allokerar viss kvantitet för en produkt på dimensionsnivån \[`Site`, `Location`, `Color`\] bör du nästa gång du vill allokera den här produkten också allokera på samma nivå, \[`Site`, `Location`, `Color`\]. Om du använder nivån \[`Site`, `Location`, `Color`, `Size`\] eller \[`Site`, `Location`\] kommer datan att vara inkonsekvent.
+- Namnändring av allokeringsgrupp påverkar inte data som sparas i tjänsten.
 - Allokering ska ske när produkten har den positiva lagerkvantiteten.
+- Om du vill allokera produkter från en grupp med hög *allokeringsnivå* till en undergrupp använder du `Reallocate`-API:t. Du har till exempel en hierarki för allokeringsgrupp \[`channel`, `customerGroup`, `region`, `orderType`\] och vill allokera en viss produktmängd från allokeringsgruppen \[Online, VIP\] till underallokeringsgruppen \[Online, VIP, EU\] - använd då API:t `Reallocate` för att flytta kvantiteten. Om du använder APIT:t `Allocate` allokeras kvantiteten från den virtuella gemensamma poolen.
 
 ### <a name="using-the-allocation-api"></a><a name="using-allocation-api"></a>Använda allokerings-API:t
 
@@ -128,7 +129,7 @@ För närvarande öppnas fem allokerings-API:er:
 
 #### <a name="allocate"></a>Allokera
 
-Anropa `Allocate` API:t för att allokera en produkt som har särskilda dimensioner. Här är schemat för begärandetext.
+Anropa `Allocate` API:t för att allokera en produkt som har särskilda dimensioner. Här är schemat för begärandetexten.
 
 ```json
 {
@@ -175,11 +176,11 @@ Kvantiteten måste alltid vara mer än 0 (noll).
 
 #### <a name="unallocate"></a>Ej allokerad
 
-Använd `Unallocate` API om du vill återföra `Allocate` operation. Negativ kvantitet som inte är tillåten i en `Allocate` operation. Brödtexten för `Unallocate` är identisk med brödtexten `Allocate`.
+Använd `Unallocate` API om du vill återföra åtgärden `Allocate`. Negativ kvantitet som inte är tillåten i en `Allocate`-åtgärd. Brödtexten för `Unallocate` är identisk med brödtexten `Allocate`.
 
 #### <a name="reallocate"></a>Omallokera
 
-Använd `Reallocate` API om du vill flytta en allokerad kvantitet till en annan gruppkombination. Här är schemat för begärandetext.
+Använd `Reallocate` API om du vill flytta en allokerad kvantitet till en annan gruppkombination. Här är schemat för begärandetexten.
 
 ```json
 {
@@ -234,7 +235,7 @@ Du kan till exempel flytta två cyklar som har måtten \[site=1, location=11, co
 
 #### <a name="consume"></a>Förbruka
 
-Använd `Consume` API när du vill bokföra förbrukningskvantiteten mot allokering. Du kan till exempel använda denna API för att flytta fördelad kvantitet till några verkliga mått. Här är schemat för begärandetext.
+Använd `Consume` API när du vill bokföra förbrukningskvantiteten mot allokering. Du kan till exempel använda denna API för att flytta fördelad kvantitet till några verkliga mått. Här är schemat för begärandetexten.
 
 ```json
 {
@@ -267,7 +268,7 @@ Det finns till exempel åtta allokerade allokeringar som har dimensionerna \[sit
 
 Åtta till antalet allokeras från `pos.inbound` måttet.
 
-Nu säljs tre sålda varor och de tas från allokeringspoolen. För att registrera denna flytt kan du ringa ett samtal som har följande begärandetext.
+Nu säljs tre cyklar, som tas från allokeringspoolen. För att registrera denna flytt kan du ringa ett samtal som har följande begärandetext.
 
 ```json
 {
@@ -295,13 +296,13 @@ Nu säljs tre sålda varor och de tas från allokeringspoolen. För att registre
 
 Efter detta samtal minskas den fördelade kvantiteten för produkten med 3. Dessutom kommer lagersynlighet att generera en ändringshändelse där `pos.inbound` = *-3*. Alternativt kan du behålla värdet för `pos.inbound` som det är och bara förbruka den tilldelade kvantiteten. I detta fall måste du antingen skapa ett annat fysiskt mått för att behålla de förbrukade kvantiteterna eller använda det fördefinierade måttet `@iv.@consumed`.
 
-På denna begäran ska du observera att det fysiska mått du använder i brödtexten för comsume reqlgt ska använda motsatt modifertyp(Addition or Subtraktion), jämfört med modifierartypen som används i det beräknade måttet. Så i denna förbrukade brödtext, `iv.inbound` har värdet `Subtraction`, inte `Addition`.
+I denna begäran ska du observera att det fysiska mått du använder i begärandetexten för förbrukning (consume) ska använda motsatt modifertyp (Addition eller Subtraktion) jämfört med modifierartypen som används i det beräknade måttet. Så i denna förbrukade brödtext, `iv.inbound` har värdet `Subtraction`, inte `Addition`.
 
-`fno` datakällan kan inte användas i konsumtionskroppen eftersom vi alltid hävdade att lagersynlighet inte kan ändra någon data för `fno` datakällan. Dataflödet är enväg, vilket innebär att alla kvantitetsändringar för `fno` datakällan måste komma från din Supply Chain Management-miljö.
+`fno`-datakällan kan inte användas i brödtexten för consume eftersom vi alltid hävdat att Lagersynlighet inte kan ändra någon data för `fno`-datakällan. Dataflödet är enväg, vilket innebär att alla kvantitetsändringar för `fno` datakällan måste komma från din Supply Chain Management-miljö.
 
 #### <a name="consume-as-a-soft-reservation"></a><a name="consume-to-soft-reserved"></a>Förbruka som en mjuk reservation
 
-`Consume` API kan också förbruka den allokerade kvantiteten som en mjuk reservation. I detta fall minskar operationen `Consume` den tilldelade kvantiteten och gör sedan en mjuk reservation för denna kvantitet. För att använda detta tillvägagångssätt måste du också använda funktionen [mjuk reservation](inventory-visibility-reservations.md) för Lagersynlighet.
+`Consume` API kan också förbruka den allokerade kvantiteten som en mjuk reservation. I detta fall minskar åtgärden `Consume` den tilldelade kvantiteten och gör sedan en mjuk reservation för denna kvantitet. För att använda detta tillvägagångssätt måste du också använda funktionen [mjuk reservation](inventory-visibility-reservations.md) för Lagersynlighet.
 
 Du har till exempel ställt in en modifierare för mjuk reservation (mått) som `iv.softreserved`. Följande formel används för det beräknade måttet som är tillgängligt att reservera:
 
@@ -343,7 +344,7 @@ Lägg märke till det i denna begäran `iv.softreserved` har värdet `Addition`,
 
 #### <a name="query"></a>Fråga
 
-Använd `Query` API när du vill hämta allokeringsrelaterad information för vissa produkter. Du kan begränsa resultatet med hjälp av dimensionsfilter och allokeringsgruppsfilter. Dimensionerna måste matcha exakt den som du vill hämta till exempel, \[site=1, location=11\] kommer att ha icke-relaterade resultat jämfört med \[site=1, location=11, color=red\].
+Använd `Query`-API när du vill hämta allokeringsrelaterad information för vissa produkter. Du kan begränsa resultatet med hjälp av dimensionsfilter och allokeringsgruppsfilter. Dimensionerna måste matcha exakt den som du vill hämta. Till exempel kommer \[site=1, location=11\] att ha icke-relaterade resultat jämfört med \[site=1, location=11, color=red\].
 
 ```json
 {

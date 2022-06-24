@@ -1,6 +1,6 @@
 ---
 title: Sortimenthantering
-description: Det här avsnittet beskriver de grundläggande begreppen för sortimenthantering i Dynamics 365 Commerce och ger överväganden för genomförande av projektet.
+description: Denna artikel beskriver de grundläggande begreppen för sortimenthantering i Dynamics 365 Commerce och ger överväganden för genomförande av projektet.
 author: jblucher
 ms.date: 03/12/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: 1ff4929e8789748433f4e9386397431e174a85f81518d2e0a1d8f9ea68211fa6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 038e6fb37e8781222920c572bacf682239bbeffb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717781"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880376"
 ---
 # <a name="assortment-management"></a>Sortimenthantering
 
@@ -103,7 +103,7 @@ Sortiment som har definierats i Commerce måste bearbetas innan de träder i kra
 - **Giltighetsdatum/utgående sortiment** – en av de mest effektiva verktygen för hantering av antalet produkter i kanal- och offline-databaser är sortimentens giltighetsdatum. Om du lämnar öppet (ej utgående) sortiment för säsongsvariationer eller produkter som är i slutet av livscykeln kommer dessa databaser att växa på obestämd tid. Du kan använda olika metoder för att hjälpa hantera denna situation. Du kan till exempel ha separata sortiment för säsongsprodukter och produkter som alltid är tillgängliga.
 - **Försäljning och returer utanför sortiment** – denna kunskap hjälper återförsäljare att effektivt hantera sina sortiment genom att låta dem begränsa antalet produkter till produkter som tillhör butikens grundläggande produktkombination. Den här funktionen hjälper dig också återförsäljare att hantera situationer där en produkt utelämnades av misstag från ett sortiment och om en produkt har returnerats utanför giltighetsdatumen för sortimentet.
 
-Om produktdata inte finns i kanaldatabasen ringer POS huvudkontoret i realtid för att hämta den information som krävs så att produkten kan säljas, returneras eller sättas på en kundorder. Produktinformation som hämtas på det här sättet finns endast under tillämpningsområdet för den aktuella transaktionen. Produkten läggs inte till i sortimentdefinitionen. Därför görs följande samtal i realtid om det behövs.
+Om produktdata inte finns i kanaldatabasen anropar POS administrationen i realtid för att hämta den information som krävs så att produkten kan säljas, returneras eller sättas på en kundorder. Produktinformation som hämtas på det här sättet finns endast under tillämpningsområdet för den aktuella transaktionen. Produkten läggs inte till i sortimentdefinitionen. Därför görs följande samtal i realtid om det behövs.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

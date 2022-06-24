@@ -1,6 +1,6 @@
 ---
 title: Visa och uppdatera enhetsdata i Excel
-description: Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Excel-tillägget.
+description: Den här artikeln beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Excel-tillägget.
 author: jasongre
 ms.date: 05/16/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5090674fc4f7c49c55a8a12aea8c567545d519f
-ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
+ms.openlocfilehash: 8a05c34454e27244bb08bfff84f2ada6ff498f23
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2022
-ms.locfileid: "8762665"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862167"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Visa och uppdatera enhetsdata i Excel 
 
@@ -31,7 +31,7 @@ ms.locfileid: "8762665"
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
-Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Excel-tillägget. För att öppna entitetsdata kan du starta från antingen Excel eller Ekonomi och Drift-appar.
+Den här artikeln beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Excel-tillägget. För att öppna entitetsdata kan du starta från antingen Excel eller Ekonomi och Drift-appar.
 
 Genom att öppna enhetsdata i Excel kan du snabbt och enkelt visa, uppdatera och redigera data med tillägget för Excel. Det här tillägget kräver Microsoft Excel 2016 eller senare.
 

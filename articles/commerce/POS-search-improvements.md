@@ -1,6 +1,6 @@
 ---
 title: Produkt- och kundsökning i POS
-description: Det här avsnittet innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Dynamics 365 Commerce.
+description: Denna artikel innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 ms.date: 05/25/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 460c7d3b00421ba43414f7343887edf9b8adad9c
-ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
+ms.openlocfilehash: 5f2d8162c810f63dc889a03d33fd111de69783de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "8806438"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859010"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- och kundsökning i POS
 
@@ -112,20 +112,20 @@ Det krävs översättningar av genvägar om du vill att genvägar ska återges i
 > [!NOTE]
 > En anpassad egenskap som läggs till enum påverkar inte den standardinställda kundsökalgoritmen. Med andra ord söker inte kundens sökalgoritm i den anpassade egenskapen. Användare kan endast använda en anpassad egenskap för sökningar om den anpassade egenskapen läggs till som en genväg, eller om standardsökalgoritmen åsidosätts.
 
-Återförsäljare kan också ställa in standardsökningsläget för kund i kassan på **Sök alla butiker**. Den här konfigurationen kan vara till hjälp i situationer där kunder som har skapats utanför kund måste sökas igenom direkt (t.ex. till och med innan fördelningsjobbet körs). För att kunna göra det måste återförsäljaren aktivera alternativet **Standardsökningsläge för kund** i funktionsprofilen för kassa. När det anges till **Ja**, varje kunds sökning gör då ett realtidssamtal till huvudkontoret.
+Återförsäljare kan också konfigurera standardsökningsläget för kund i kassan på **Sök alla butiker**. Den här konfigurationen kan vara till hjälp i situationer där kunder som har skapats utanför kund måste sökas igenom direkt (t.ex. till och med innan fördelningsjobbet körs). För att kunna göra det måste återförsäljaren aktivera alternativet **Standardsökningsläge för kund** i funktionsprofilen för kassa. När det anges till **Ja**, varje kunds sökning gör då ett realtidssamtal till huvudkontoret.
 
 För att förhindra att oväntade prestandaproblem döljs den här konfigurationen bakom en förhandsversionsflagga som kallas **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Om du därför vill visa inställningen **standardsökläget för kunder** för kund i användargränssnittet måste återförsäljaren skapa ett acceptanstestet för användare (UAT) och produktionsmiljön. När ärendet har tagits emot arbetar teknikteamet tillsammans med återförsäljaren för att säkerställa att återförsäljaren testar i sina miljöer för icke-produktion för att bedöma prestanda och implementera eventuella optimeringar som krävs.
 
 ## <a name="cloud-powered-customer-search"></a>Molndriven kundsökning
 
-En offentlig förhandsgranskning av kundsökningsfunktionerna med hjälp av tjänsten Azure Cognitive Search har frisläppts som en del av versionen Commerce 10.0.18. Utöver prestandaförbättringar kan tjänsteanvändare också dra nytta av en mängd förbättringar och förbättrad relevans. Prestandaförbättringar är särskilt viktiga när den globala sökfunktionen ("Sök alla butiker") i kassan används. Det beror på att sökresultaten hämtas från Azure sökindex i stället för frågor från data i Commerce-administration. 
+En offentlig förhandsgranskning av kundsökningsfunktionerna med hjälp av tjänsten Azure Cognitive Search har frisläppts som en del av versionen Commerce 10.0.18. Utöver prestandaförbättringar kan tjänsteanvändare också dra nytta av en mängd förbättringar och förbättrad relevans. Prestandaförbättringar är särskilt viktiga när den globala sökfunktionen ("Sök alla butiker") i kassan används. Det beror på att sökresultaten hämtas från Azure sökindex i stället för frågor från data i Commerce headquarters. 
 
 ### <a name="enable-the-cloud-powered-search-feature"></a>Aktivera den molnbaserade sökfunktionen
 
 > [!NOTE]
-> Det krävs att både Commerce-administration och Commerce Scale Unit uppdateras till version 10.0.18. Det är inte obligatoriskt att uppdatera kassa.
+> Det krävs att både Commerce headquarters och Commerce Scale Unit uppdateras till version 10.0.18. Det är inte obligatoriskt att uppdatera kassa.
 
-För att aktivera den molnstyrda sökfunktionen i Commerce-administration, följ dessa steg.
+För att aktivera den molnstyrda sökfunktionen i Commerce headquarters, följ dessa steg.
 
 1. Gå till **Systemadministration \> Arbetsytor \> Funktionshantering**.
 1. Sök efter och välj funktionen **(förhandsversion) Molndriven kundsökning** och välj sedan **Aktivera nu**.
@@ -136,14 +136,14 @@ För att aktivera den molnstyrda sökfunktionen i Commerce-administration, följ
 1. Kör sedan jobbet **1010_CustomerSearch** regelbundet för att skicka kunduppdateringar till sökindexet.
 
 > [!NOTE]
-> För den första indexpubliceringen, jobbet **1010_CustomerSearch** kan ta några timmar att slutföra eftersom det skickar alla kundposter till Azure-sökindexet. Efterföljande uppdateringar bör ta några minuter. Under den tidsperiod då den molnbaserade sökfunktionen är aktiverad men index publiceringen ännu inte slutförts, kommer kundsökningen från kassan att standardvärdet visas som standard i den befintliga SQL-baserade sökningen. På så sätt ser du till att det inte blir fel med butiksoperationer.
+> För den första indexpubliceringen, jobbet **1010_CustomerSearch** kan ta några timmar att slutföra eftersom det skickar alla kundposter till Azure-sökindexet. Efterföljande uppdateringar bör ta några minuter. Under den tidsperiod då den molnbaserade sökfunktionen är aktiverad men index publiceringen ännu inte slutförts, kommer kundsökningen från kassan att standardvärdet visas som standard i den befintliga SQL-baserade sökningen. På så sätt ser du till att det inte blir fel med butiksåtgärder.
 
 ### <a name="functional-differences-from-the-existing-search"></a>Funktionella differenser från den befintliga sökningen
 
 Följande lista visar hur den molnbaserade kundsökningsfunktionen skiljer sig från den befintliga sökfunktionen. 
 
-- Kunder som skapas och redigeras i Commerce-administraion skickas till Azure-sökindexet **1010_CustomerSearch** jobbet körs. Dessa uppdateringar tar minst 15 till 20 minuter att uppdatera index. Kassaanvändare kan söka efter nya kunder (eller söka efter uppdaterad information) ungefär 15 till 20 minuter efter att uppdateringarna har inträffat i Commerce-administration. Om din affärsprocess kräver att kunder som har skapats i Commerce-administration är omedelbart sökbara i kassan, kanske detta inte är rätt tjänst åt dig.
-- Nya kunder som skapas i kassan skickas till Azure-sökindexet från Commerce Scale Unit och kan omedelbart sökas i valfri butik. Men om funktionen för skapande av asynkrona kunder är aktiverad kommer nya kundposter inte att publiceras i Azure-sökindex från Commerce Scale Unit och kommer inte att kunna sökas från kassa förrän kundinformationen synkroniseras med Commerce-administration och kund-ID skapas för asynkrona kunder. Jobbet **1010_CustomerSearch** kan sedan skicka asynkrona kundposterna till Azure-sökindexet. I genomsnitt kommer det att vara ungefär 30 minuter innan nya asynkrona kunder kan sökas i kassa. I uppskattningen förutsätts det att **1010_CustomerSearch**, **P-jobb** och jobbet **Synkronisera kunder och affärspartners från asynkront läge** är planerade att köras var 15:e minut.
+- Kunder som skapas och redigeras i Commerce headquarters skickas till Azure-sökindexet **1010_CustomerSearch** jobbet körs. Dessa uppdateringar tar minst 15 till 20 minuter att uppdatera index. Kassaanvändare kan söka efter nya kunder (eller söka efter uppdaterad information) ungefär 15 till 20 minuter efter att uppdateringarna har inträffat i Commerce headquarters. Om din affärsprocess kräver att kunder som har skapats i Commerce headquarters är omedelbart sökbara i kassan, kanske detta inte är rätt tjänst åt dig.
+- Nya kunder som skapas i kassan skickas till Azure-sökindexet från Commerce Scale Unit och kan omedelbart sökas i valfri butik. Men om funktionen för skapande av asynkrona kunder är aktiverad kommer nya kundposter inte att publiceras i Azure-sökindex från Commerce Scale Unit och kommer inte att kunna sökas från kassa förrän kundinformationen synkroniseras med Commerce headquarters och kund-ID skapas för asynkrona kunder. Jobbet **1010_CustomerSearch** kan sedan skicka asynkrona kundposterna till Azure-sökindexet. I genomsnitt kommer det att vara ungefär 30 minuter innan nya asynkrona kunder kan sökas i kassa. I uppskattningen förutsätts det att **1010_CustomerSearch**, **P-jobb** och jobbet **Synkronisera kunder och affärspartners från asynkront läge** är planerade att köras var 15:e minut.
 - Molnbaserad sökning söker också efter sekundära e-postmeddelanden och telefonnummer till kunder, men för närvarande visar kundsökresultaten bara kundernas primära telefonnummer och primära e-postadress. Vid en första ansökning kan det se ut som om irrelevanta sökresultat har returnerats, men om du kontrollerar den sekundära e-postadressen och det sekundära telefonnumret för en kund i sökresultaten kan det hjälpa till att kontrollera om det eftersökta nyckelordet resulterade i en kundmatch. För att undvika sådan förvirring finns det planer på att förbättra sökresultatsidan för att göra det enkelt för användarna att förstå varför ett sökresultat returnerades.
 - Kravet på att söka med minst fyra tecken i en global sökning ("Sök alla butiker") kan inte tillämpas på denna tjänst.
 

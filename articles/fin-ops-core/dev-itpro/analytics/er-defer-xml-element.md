@@ -1,6 +1,6 @@
 ---
-title: Skjut upp körningen av XML-element i ER-format
-description: I det här avsnittet beskrivs hur du uppskjuta körningen av ett XML-element i ett format för elektronisk rapportering (ER).
+title: Skjuta upp körningen av XML-element i ER-format
+description: I den här artikeln beskrivs hur du uppskjuta körningen av ett XML-element i ett format för elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b804e840b98321ee9e509ea483b360ec42d12880
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 074b14cbb018a8e34b99124b8aaec3a5bdb30be2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323725"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861857"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Skjut upp körningen av XML-element i ER-format
 
@@ -32,7 +32,7 @@ Du kan använda Operations designer för ramverket [Elektronisk rapportering (ER
 
 Genom att aktivera alternativet <a name="DeferredXmlElementExecution"></a>**Uppskjuten körning** körning för ett XML-element i det konfigurerade formatet kan du skjuta upp körningen av det elementet. I det här fallet körs inte elementet förrän alla andra element i dess överordnade har körts.
 
-Om du vill veta mer om den här funktionen fyller du i exemplet i det här avsnittet.
+Om du vill veta mer om den här funktionen fyller du i exemplet i den här artikeln.
 
 ## <a name="limitations"></a>Begränsningar
 

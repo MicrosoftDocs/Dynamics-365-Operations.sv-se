@@ -1,6 +1,6 @@
 ---
 title: Tillhandahålla guider för mixad verklighet för arbetare i produktion
-description: I det här avsnittet beskrivs hur du integrerar modulen för produktionshantering i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides.
+description: I denna artikel beskrivs hur du integrerar modulen för produktionshantering i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides.
 author: johanhoffmann
 ms.date: 11/13/2020
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 703f2cb9a1ea8691420765a8598d59f3e6cc6488
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3f29fad004631e336fad06260d0a0951743525d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062962"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869616"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Tillhandahålla guider för mixad verklighet för arbetare i produktion
 
@@ -49,10 +49,10 @@ Du kan koppla layoutstöd till olika aspekter av produktionsstyrningen inklusive
 - [Strukturlisteversioner](#bom-versions)
 - [Rutter](#routes)
 - [Flödesversioner](#route-versions)
-- [Flödesoperationsrelation](#route-operation-relations)
+- [Flödesåtgärdsrelation](#route-operation-relations)
 
 > [!NOTE]
-> Du kan också koppla guider med tillgångshantering. För mer information om det alternativet, se [Integrera Dynamics 365 Supply Chain Management (tillgångshantering) med Dynamics 365 Guides](../asset-management/asset-management-guides-integration.md).
+> Du kan också koppla guider med Tillgångshantering. För mer information om det alternativet, se [Integrera Dynamics 365 Supply Chain Management (Tillgångshantering) med Dynamics 365 Guides](../asset-management/asset-management-guides-integration.md).
 
 När en medarbetare i första ledet väljer ett jobb på verkstadsgolvet med hjälp av Supply Chain Management kan medarbetaren se [relevanta handböcker](#logic) på jobbkortet. När arbetaren väljer en viss guide visas en QR-kod för denna guide på skärmen. Arbetaren använder sedan sin HoloLens för att skanna QR-koden, som startar guider och visar de instruktioner som krävs.
 
@@ -62,9 +62,9 @@ Följande underavsnitt beskriver några utvalda scenarier där företag över br
 
 ![Använda guider i sammansättningsuppgifter.](media/instruction-guides-hero-assembly.png "Använda guider i serviceuppgifter")
 
-Instruktioner i monteringsoperationer visar arbetare vilka verktyg och delar de behöver och hur de ska användas i realtidssituationer.
+Instruktioner i monteringsåtgärder visar arbetare vilka verktyg och delar de behöver och hur de ska användas i realtidssituationer.
 
-Produktionschefer kan t.ex. skapa och tilldela guider för [produktionsflöden](routes-operations.md), [operationsrelationer](routes-operations.md#operation-relations) eller [strukturlistor](bill-of-material-bom.md). Medarbetarna kommer att hitta de relevanta instruktionerna om respektive operationserfarenhet på verkstadsgolvet.
+Produktionschefer kan t.ex. skapa och tilldela guider för [produktionsflöden](routes-operations.md), [åtgärdsrelationer](routes-operations.md#operation-relations) eller [strukturlistor](bill-of-material-bom.md). Medarbetarna kommer att hitta de relevanta instruktionerna om respektive åtgärdserfarenhet på verkstadsgolvet.
 
 ### <a name="service"></a>Service
 
@@ -94,11 +94,11 @@ Se till att alla medarbetare uppfyller höga standarder genom att snabbt identif
 
 Ge instruktioner för hur du ska gå igenom de farliga procedurerna i stort innan du försöker göra det i den fysiska miljön. Med en blandad verklighet kan medarbetarna uppleva farliga procedurer i princip.
 
-Produktionschefer kan tillhandahålla dedikerade hanteringsinstruktioner för hantering av farliga material och ömtåliga genom att tilldela instruktioner till [produktartiklar](../../commerce/product.md), [flöden](routes-operations.md) och [operationer](routes-operations.md#operation-relations).
+Produktionschefer kan tillhandahålla dedikerade hanteringsinstruktioner för hantering av farliga material och ömtåliga genom att tilldela instruktioner till [produktartiklar](../../commerce/product.md), [flöden](routes-operations.md) och [åtgärder](routes-operations.md#operation-relations).
 
 ## <a name="get-started-with-instructions-and-guides"></a>Komma igång med instruktioner och guider
 
-Om du vill aktivera instruktioner i produktionsprocesser tillhandahåller Supply Chain Management en medföljande integration i Dynamics 365 Guides. En licensierad och installerad appinstans av Guides krävs för att skapa, underhålla och tilldela instruktioner till produktion och arbete i mixad verklighet.
+Om du vill aktivera instruktioner i produktionsprocesser tillhandahåller Supply Chain Management en medföljande integrering i Dynamics 365 Guides. En licensierad och installerad appinstans av Guides krävs för att skapa, underhålla och tilldela instruktioner till produktion och arbete i mixad verklighet.
 
 ### <a name="prerequisites"></a>Förutsättningar
 
@@ -120,7 +120,7 @@ Om du vill göra funktionen tillgänglig i systemet måste du aktivera dess konf
   
 ## <a name="configure-how-guides-appear-on-the-shop-floor"></a>Konfigurera hur guider visas på verkstadsgolvet
 
-Om du vill konfigurera hur guider visas verkstadsgolvet går du till konfiguration **Mixad verklighet \> Dynamics 365 Guides \> Konfigurera integration av guider**.
+Om du vill konfigurera hur guider visas verkstadsgolvet går du till konfiguration **Mixad verklighet \> Dynamics 365 Guides \> Konfigurera integrering av guider**.
 
 ![Konfigurera integrering av guide för tillverkning.](media/instruction-guides-configure-integration.png "Konfigurera integrering av guide för tillverkning")
 
@@ -212,7 +212,7 @@ Du kan lägga till en guide för alla [formel](bill-of-material-bom.md#formulas-
 På formelnivå finns guider som ger verkstadsarbetare guidade hanteringsinstruktioner i samband med en formel eller ett recept. Guider kan också tilldelas till en version av en formel.
 
 > [!NOTE]
-> Du kan tilldela vägledningar som är relevanta för produktionsprocesser baserade på en formel till ett flöde, flödesversion eller flödesoperationsrelationer.  
+> Du kan tilldela vägledningar som är relevanta för produktionsprocesser baserade på en formel till ett flöde, flödesversion eller flödesåtgärdsrelationer.  
 
 > Guider kan för närvarande inte kopplas till enskilda formelrader.
 
@@ -237,7 +237,7 @@ Du kan lägga till en guide för alla [formelversion](bill-of-material-bom.md#bo
 Guider som är kopplade till en enskild version av en formel ger arbetstagare instruktioner som går igenom produktionen av formelreceptet.
 
 > [!TIP]
-> Du kan tilldela vägledningar som är relevanta för produktionsprocesser baserade på en formelversion till ett flöde, flödesversion eller flödesoperationsrelationer.  
+> Du kan tilldela vägledningar som är relevanta för produktionsprocesser baserade på en formelversion till ett flöde, flödesversion eller flödesåtgärdsrelationer.  
 
 > [!NOTE]
 > Guider kan för närvarande inte kopplas till enskilda formelrader.
@@ -349,34 +349,34 @@ Lägg till en guide till en flödesversion:
 1. För den nya raden använder du listrutan i kolumnen **namn** för att välja den guider du vill tilldela.
     ![Lägga till en guide i en flödesversion.](media/instruction-guides-RouteVersionAddGuide.png "Lägg till en guide till en flödesversion")
 
-## <a name="associate-a-guide-to-a-route-operation-relation"></a><a name="route-operation-relations"></a>Associera en guide till en flödesoperationsrelation
+## <a name="associate-a-guide-to-a-route-operation-relation"></a><a name="route-operation-relations"></a>Associera en guide till en flödesåtgärdsrelation
 
-Du kan lägga till en guide för alla [flödesoperationsrelationer](routes-operations.md#operation-relations).
+Du kan lägga till en guide för alla [flödesåtgärdsrelationer](routes-operations.md#operation-relations).
 
-### <a name="typical-scenario-using-route-operation-relations"></a>Vanligt scenario med flödesoperationsrelationer
+### <a name="typical-scenario-using-route-operation-relations"></a>Vanligt scenario med flödesåtgärdsrelationer
 
-Operationsrelationer är det mest specifika sättet att lägga till vägledning för en produktprocess och dess relaterade operationer. Du kan ange vägledning för varje operation i ett flöde och ange olika vägledning för vilken typ av relationskontext som anges för ett flöde, t.ex. för specifika artiklar, konfigurationer med mera. Du kan också ange för vilka faser i operationen som vägledningen gäller (t.ex. inställningar, köhantering, process eller transport).
+Åtgärdsrelationer är det mest specifika sättet att lägga till vägledning för en produktprocess och dess relaterade åtgärder. Du kan ange vägledning för varje åtgärd i ett flöde och ange olika vägledning för vilken typ av relationskontext som anges för ett flöde, t.ex. för specifika artiklar, konfigurationer med mera. Du kan också ange för vilka faser i åtgärden som vägledningen gäller (t.ex. inställningar, köhantering, process eller transport).
 
 > [!NOTE]
-> Om du anger guider för flera operationsrelationer för ett flöde, bland dessa guider, visas bara guiden från den mest specifika relationen i arbetsstyrningen för det genererade jobbet.
+> Om du anger guider för flera åtgärdsrelationer för ett flöde, bland dessa guider, visas bara guiden från den mest specifika relationen i arbetsstyrningen för det genererade jobbet.
 
-### <a name="add-a-guide-to-a-route-operation-relation"></a>Lägg till en guide till en flödesoperationsrelation
+### <a name="add-a-guide-to-a-route-operation-relation"></a>Lägg till en guide till en flödesåtgärdsrelation
 
-Lägg till en guide till en flödesoperationsrelation:
+Lägg till en guide till en flödesåtgärdsrelation:
 
 1. Gå till **produktionskontroll \> alla flöden**.
 1. Öppna det flöde som du vill tilldela en guide till.
 1. I åtgärdsfönstret, öppna fliken **Flöde** och från gruppen **Underhåll** välj **Flödesdetaljer**.
 1. Sidan **Flödesinformation** öppnas för det valda flödet.
-1. Välj den operation som du vill ge vägledning för i det övre rutnätet.
+1. Välj den åtgärd som du vill ge vägledning för i det övre rutnätet.
 1. I det nedre rutnätet väljer du en specifik relation (eller det generiska **Alla** relation).
-    ![Välj en åtgärd och sedan en relation.](media/instruction-guides-RouteOperationRelation.png "Välj en operation och sedan en relation")
+    ![Välj en åtgärd och sedan en relation.](media/instruction-guides-RouteOperationRelation.png "Välj en åtgärd och sedan en relation")
 1. Ovanför det nedre rutnätet öppnar du fliken **Kopplade guider**.  ![Fliken Kopplade guider.](media/instruction-guides-RouteOperationRelation-AddGuide.png "Fliken kopplade guider")
 1. Välj **Lägg till** från verktygsfältet högst upp i det nedre rutnätet för att lägga till en ny rad till rutnätet.
 1. För den nya raden använder du listrutan i kolumnen **namn** för att välja den guider du vill tilldela. Markera kryssrutan för varje kontext där den valda guiden ska vara tillgänglig i resten av raden.
 
 > [!NOTE]
-> Du kan lägga till en eller flera guider för varje steg i varje operation.
+> Du kan lägga till en eller flera guider för varje steg i varje åtgärd.
 
 ## <a name="select-guides-from-the-shop-floor-execution-interface"></a>Välj guider från gränssnittet för arbetsstyrningskörning
 
@@ -401,13 +401,13 @@ Du kan lägga till guider till följande produktionsdata:
 - [Strukturlisteversioner](#bom-versions)
 - [Rutter](#routes)
 - [Flödesversioner](#route-versions)
-- [Flödesoperationsrelation](#route-operation-relations)
+- [Flödesåtgärdsrelation](#route-operation-relations)
 
 När Supply Chain Management genererar jobben för produktionsgolvet, samlar det in relevanta guider från dessa källor. Notera följande viktiga regler.
 
 - Om du kopplar en strukturlisteversion eller en formelversion till ett flöde tillverkningsorder, visas alla guider som är kopplade till den aktuella versionen och även de stödlinjer som är kopplade till den överordnade strukturlistan eller formeln för den versionen, visas i jobbet.
 - Om du kopplar ett flöde till en tillverkningsorder, visas alla guider som är kopplade till den aktuella versionen och även de stödlinjer som är kopplade till det överordnade flödet för den versionen, visas i jobbet.
-- Om du definierar flera flödesoperationsrelationer som omfattar *alla* relationer och tilldelar guider till dem, visas bara guiderna från den mest specifika relationen för jobbet.  
+- Om du definierar flera flödesåtgärdsrelationer som omfattar *alla* relationer och tilldelar guider till dem, visas bara guiderna från den mest specifika relationen för jobbet.  
 
 ![Diagram för att lösa relevanta guider.](media/instruction-guides-Resolve.png "Diagram för att lösa relevanta guider")
 

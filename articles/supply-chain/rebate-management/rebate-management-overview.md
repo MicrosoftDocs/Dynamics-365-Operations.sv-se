@@ -1,6 +1,6 @@
 ---
-title: Modul för rabatthantering – översikt
-description: Det här avsnittet innehåller en översikt över modulen Rabatthantering för Microsoft Dynamics 365 Supply Chain Management.
+title: Rabatthanteringsmodul – översikt
+description: Denna artikel innehåller en översikt över modulen Rabatthantering för Microsoft Dynamics 365 Supply Chain Management.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 13c40566f0842360cd730b0578b665fa3646344d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: cfba391536559ed3a967d0aafe2e352486777dda
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687452"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873649"
 ---
 # <a name="rebate-management-module-overview"></a>Modul för rabatthantering – översikt
 
@@ -29,7 +29,7 @@ Rabatthantering stöder generering, underhåll och bearbetning av *rabatter*. En
 
 Rabatthantering stöder även *avdrag*. Ett avdrag är kompensation, en ersättning eller en avgift som betalas antingen för en licens eller för att använda immateriell egendom såsom märke, upphovsrätt eller patent eller för rättigheten att använda en naturlig resurs i syfte att t.ex. för resursbelöning, rotering eller brytning. Avdrag beräknas vanligtvis som en procentandel av intäkten eller vinsten från realiserad användning. Ju mer immateriell egendom eller naturlig resurs används, desto större är det avdrag som realiseras.
 
-Dessutom har Rabatthantering stöd för kunders *royalties*.  Royalties är betalningar som en part gör till licensinnehavaren eller franchisetagare för rätt att använda en tillgång.
+Dessutom har Rabatthantering stöd för kunders *royalties*. Royalties är betalningar som en part gör till licensinnehavaren eller franchisetagare för rätt att använda en tillgång.
 
 Med rabatthantering kan du definiera bokföringsprofiler för provisionsbokföring, rabatter och avskrivningar. Dessutom kan bokföringar definieras för en viss kund eller leverantör. På det här sättet kan transaktioner som inte gäller för alla kund- eller leverantörsscenarier spåras via bokföringar.
 
@@ -85,7 +85,7 @@ Kombinationen av associerade erbjudanden, frekvensen för beräkningarna, beräk
 
 Bestämmelserna kan hanteras dagligen, varje vecka, varje månad eller enligt en anpassad period. Funktionen kan emellertid allokera eller betala rabatten, eller ta emot betalning av den, vid en definierad frekvens som är lika lång eller längre än reserveringsfrekvensen. För bortskrivning används samma frekvens som rabatten. Användarna kan enkelt justera ett plan- eller betalningsbelopp när som helst under utbetalningen.
 
-Användarna behöver inte längre hantera affärer eller villkor i två steg. Provisions- och avskrivningar bokförs direkt i redovisningen. Dessutom kan kreditnotor skapas automatiskt. Därför finns det fullständig integration med leverantörsreskontra och kundreskontra. Under bearbetningen överväger beräkningarna kvittningsrabatter, betalda fakturor, handelsrabatter och befintliga kreditfakturor för att se till att beloppen och värdena beräknas korrekt.
+Användarna behöver inte längre hantera affärer eller villkor i två steg. Provisions- och avskrivningar bokförs direkt i redovisningen. Dessutom kan kreditnotor skapas automatiskt. Därför finns det fullständig integrering med leverantörsreskontra och kundreskontra. Under bearbetningen överväger beräkningarna kvittningsrabatter, betalda fakturor, handelsrabatter och befintliga kreditfakturor för att se till att beloppen och värdena beräknas korrekt.
 
 När rabatter beräknas skapar processen transaktioner som kan granskas innan bokföringen sker. En separat process bokför rabatthanteringstransaktioner. En journal, kreditfaktura eller debettransaktion kan sedan skapas vid bokföring till föreslagna transaktioner. Rapportutdrag och transaktionslistor kan erhållas för att säkerställa efterföljande, effektivitet och genomskinlighet.
 

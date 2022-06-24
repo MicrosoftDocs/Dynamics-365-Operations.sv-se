@@ -1,6 +1,6 @@
 ---
 title: Tillgångar och arbetsorder
-description: Det här avsnittet beskriver tillgångar och arbetsorder i tillgångshantering.
+description: Denna artikel beskriver tillgångar och arbetsorder i Tillgångshantering.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2872dc84ec11ae7fad9fd5b225b9207f13280db334cc0d010a3d6749a591ee2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df2d0fcc5162900ad2ad67f2629d14015f694bd4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718117"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869703"
 ---
 # <a name="assets-and-work-orders"></a>Tillgångar och arbetsorder
 
@@ -28,7 +28,7 @@ ms.locfileid: "6718117"
 
  
 
-Det här avsnittet beskriver tillgångar och arbetsorder i tillgångshantering. Tillgångar och arbetsorder är de centrala delarna i funktionshanteraren. En *tillgång* är en maskin- eller maskindel som kräver kontinuerlig underhåll och service. Tillgångar kan skapas i en hierarkisk struktur och de kan relateras till funktionsplatser. Underhållsjobb kan planeras på alla nivåer i tillgångsstrukturen.
+Denna artikel beskriver tillgångar och arbetsorder i Tillgångshantering. Tillgångar och arbetsorder är de centrala delarna i funktionshanteraren. En *tillgång* är en maskin- eller maskindel som kräver kontinuerlig underhåll och service. Tillgångar kan skapas i en hierarkisk struktur och de kan relateras till funktionsplatser. Underhållsjobb kan planeras på alla nivåer i tillgångsstrukturen.
 
 Olika data, till exempel produktinformation och tillgångsspecifikation och nödvändiga underhållsplaner ställs in för varje tillgång. Följande illustration visar en översikt över tillgångsdata och anslutning av tillgångar till jobbtyper. Röd text används för exempel som visar arv och beroenden.
 
@@ -51,7 +51,7 @@ Flera steg måste slutföras när du vill schemalägga och köra ett underhålls
 ![Diagram som visar översikt över bearbetning av en arbetsorder.](media/08-overview-image.png)
 
 > [!NOTE]
-> I allmänhet när du arbetar i Dynamics 365 Supply Chain Management och modulen **tillgångshantering** väljer du **Ny** för att skapa en ny post, väljer **redigera** för att uppdatera en befintlig post och väljer **Spara** för att spara nya eller redigerade data.
+> I allmänhet när du arbetar i Dynamics 365 Supply Chain Management och modulen **Tillgångshantering** väljer du **Ny** för att skapa en ny post, väljer **redigera** för att uppdatera en befintlig post och väljer **Spara** för att spara nya eller redigerade data.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1407c6def22b9759723e49fb2fa6d4d68f180891
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644473"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860176"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Översikt över jobb för import och export av data
 
@@ -29,7 +29,7 @@ ms.locfileid: "8644473"
 För att skapa och hantera dataimport- och dataexportjobb kan du använda arbetsytan **Datahantering**. Som standard skapar processen för dataimport och -export ett mellanlagringsregister för varje enhet i måldatabasen. Med tillfälliga register kan du kontrollera, rensa eller konvertera data innan du flyttar den.
 
 > [!NOTE]
-> I det här avsnittet förutsätts att du känner till [datatabeller](data-entities.md).
+> I den här artikeln förutsätts att du känner till [datatabeller](data-entities.md).
 
 ## <a name="data-importexport-process"></a>Process för dataimport och -export
 Här följer stegen för att importera eller exportera data.
@@ -48,7 +48,7 @@ Här följer stegen för att importera eller exportera data.
 5. Validera att jobbet har körts som förväntat genom att granska jobbhistoriken.
 6. Rensa tillfälliga register.
 
-Övriga avsnitt i det här avsnittet innehåller mer information om varje steg i processen.
+Övriga avsnitt i den här artikeln innehåller mer information om varje steg i processen.
 
 > [!NOTE]
 > Använd ikonen Uppdatera formuläret för att uppdatera importera/exportera formuläret och se senaste status. Att uppdatera webbläsaren rekommenderas inte eftersom det avbryter alla import/export-jobb som inte körs i en batch.

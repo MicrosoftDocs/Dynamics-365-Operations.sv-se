@@ -1,6 +1,6 @@
 ---
 title: Visualisering av utgående arbetsbelastning
-description: Den här ämnet innehåller information om visualisering av utgående arbetsbelastning. Med hjälp av den här funktionen kan lagerchefer och administratörer skapa anpassade arbetsbelastningsdiagram som kan användas för att övervaka förloppet för det aktuella arbetet och det belopp som återstår. Lager chefer kan skapa flera vyer och ställa in automatisk uppdatering när de behövs.
+description: Denna artikel innehåller information om visualisering av utgående arbetsbelastning. Med hjälp av den här funktionen kan lagerchefer och administratörer skapa anpassade arbetsbelastningsdiagram som kan användas för att övervaka förloppet för det aktuella arbetet och det belopp som återstår. Lager chefer kan skapa flera vyer och konfigurera automatisk uppdatering när de behövs.
 author: Mirzaab
 ms.date: 08/28/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: db6ceb40279e53e9c4751a7ceb3db895e889a7c0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 0e5a2cd2aa458217ff212d45c0dd13c9d0623bd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102898"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851345"
 ---
 # <a name="outbound-workload-visualization"></a>Visualisering av utgående arbetsbelastning
 
 [!include [banner](../includes/banner.md)]
 
-Avancerade installationsmöjligheter som är tillgängliga från sidan **Visualisering av utgående arbetsbelastning** gör det möjligt för distributionslagerchefer och ansvariga att skapa anpassade arbetsbelastningsdiagram som kan användas för att övervaka förloppet för det aktuella arbetet och det belopp som återstår. Lager chefer kan skapa flera vyer och ställa in automatisk uppdatering när de behövs. Visualiseringar av utgående arbetsbelastning är lämpliga för visning på sidorna för lagerprestanda.
+Avancerade installationsmöjligheter som är tillgängliga från sidan **Visualisering av utgående arbetsbelastning** gör det möjligt för distributionslagerchefer och ansvariga att skapa anpassade arbetsbelastningsdiagram som kan användas för att övervaka förloppet för det aktuella arbetet och det belopp som återstår. Lager chefer kan skapa flera vyer och konfigurera automatisk uppdatering när de behövs. Visualiseringar av utgående arbetsbelastning är lämpliga för visning på sidorna för lagerprestanda.
 
 Den här funktionen kan användas för att spåra förloppet för plocknings arbete. Funktionen är integrerad med arbetsstyrningen, och om arbetshantering är inställt kan avgående visualiseringar visa en beräkning av antalet timmar som återstår för det pågående plockningsarbetet (filtrerat).
 
@@ -33,9 +33,9 @@ Från och med version 10.0.25 av Supply Chain Management är denna funktion akti
 
 ## <a name="set-up-outbound-workload-visualizations"></a>Ställ in visualisering av utgående arbetsbelastning
 
-När du ställer in visualiseringarna skapar du en samling filter (vyer) och utformar varje filter så att det visar en annan typ av analys. Du använder sidan **Konfigurera filter** för att utforma filtren.
+När du konfigurerar visualiseringarna skapar du en samling filter (vyer) och utformar varje filter så att det visar en annan typ av analys. Du använder sidan **Konfigurera filter** för att utforma filtren.
 
-Om du vill ställa in en utgående arbetsbelastningsvisualisering följer du stegen nedan.
+Om du vill konfigurera en utgående arbetsbelastningsvisualisering följer du stegen nedan.
 
 1. Gå till **Hantering av distributionslager \> Lagerövervakningsrapporter \> Visualisering av utgående arbetsbelastning**.
 
@@ -75,7 +75,7 @@ Om du vill ställa in en utgående arbetsbelastningsvisualisering följer du ste
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Exempel: Visualisering av utgående arbetsbelastning för zoner
 
-I det här exemplet vill du skapa en visualisering som visar arbetsrader för varje zon, och status för varje arbetsrad ( _öppen_, _stängd_ eller _annullerad_). I det här fallet kan du ställa in ett filter med följande inställningar:
+I det här exemplet vill du skapa en visualisering som visar arbetsrader för varje zon, och status för varje arbetsrad ( _öppen_, _stängd_ eller _annullerad_). I det här fallet kan du konfigurera ett filter med följande inställningar:
 
 - **Filternamn** – Ange ett namn för filtret (t.ex _Zon kontra arbetsstatus_).
 - **Beskrivning** – Ange en kort beskrivning för filtret (t.ex _Zon kontra arbetsstatus_).

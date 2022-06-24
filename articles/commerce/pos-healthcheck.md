@@ -1,6 +1,6 @@
 ---
-title: Hälsokontroll för kringutrustning och för kassa och tjänster
-description: Det här ämnet ger en översikt över hälsokontrollåtgärden i POS.
+title: Hälsokontroll för kringutrustning och tjänster för kassa
+description: Denna artikel ger en översikt över hälsokontrollåtgärden i kassan (POS).
 author: BrianShook
 ms.date: 03/06/2020
 ms.topic: article
@@ -15,35 +15,35 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: cd4e97b8dbfc4faf336d4ea927342fd4fa3cc7cd
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 44fd4b6246d3d7947527416c2b8b447bd64f179f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779882"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863331"
 ---
-# <a name="health-check-for-pos-peripherals-and-services"></a>Hälsokontroll för kringutrustning och för kassa och tjänster
+# <a name="health-check-for-pos-peripherals-and-services"></a>Hälsokontroll för kringutrustning och tjänster för kassa
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet beskriver hälsokontrollåtgärden i POS.
+Denna artikel beskriver hälsokontrollåtgärden i kassan (POS).
 
 ## <a name="overview"></a>Översikt
 
-Butiker kan vara komplexa miljöer där många program och enheter används. När operationer växer kan det bli svårt att se till att operationer alltid fungerar smidigt, på grund av beroenden, t.ex. kringutrustning som kan gå sönder eller oavsiktligt bli frånkopplad under en dag. Felsökning av problem som rör enheter och tjänster kan vara kostsamt för större handlare och lika frustrerande för mindre operationer.
+Butiker kan vara komplexa miljöer där många program och enheter används. När åtgärder växer kan det bli svårt att se till att åtgärder alltid fungerar smidigt, på grund av beroenden, t.ex. kringutrustning som kan gå sönder eller oavsiktligt bli frånkopplad under en dag. Felsökning av problem som rör enheter och tjänster kan vara kostsamt för större handlare och lika frustrerande för mindre åtgärder.
 
-Microsoft Dynamics 365 Commerce-versionerna 10.0.10 och senare innehåller en hälsokontroll som kan bidra till att undvika en del av denna kostnad och frustration. Den här åtgärden ger en metod för att testa enheter direkt från POS utanför normala operationer. Därför kan det hjälpa återförsäljare att identifiera problem innan de inträffar.
+Microsoft Dynamics 365 Commerce-versionerna 10.0.10 och senare innehåller en hälsokontroll som kan bidra till att undvika en del av denna kostnad och frustration. Den här åtgärden ger en metod för att testa enheter direkt från POS utanför normala åtgärder. Därför kan det hjälpa återförsäljare att identifiera problem innan de inträffar.
 
 ## <a name="key-terms"></a>Nyckeltermer
 
 | Villkor | beskrivning |
 |---|---|
-| Kringutrustning | Alla enheter som kassaprogrammet använder för att underlätta transaktioner och andra operationer i butiken. Det kan till exempel vara kassalådor, streckkodsskannrar och betalningsterminaler. |
-| Service | I det här avsnittet är en tjänst ett hjälpprogram som kassaprogrammet är beroende av för att utföra transaktioner och dagliga operationer. Bland exemplen finns program som bidrar till beräkning av skatt eller leverans. |
+| Kringutrustning | Alla enheter som kassaprogrammet använder för att underlätta transaktioner och andra åtgärder i butiken. Det kan till exempel vara kassalådor, streckkodsskannrar och betalningsterminaler. |
+| Service | I denna artikel är en tjänst ett hjälpprogram som kassaprogrammet är beroende av för att utföra transaktioner och dagliga åtgärder. Bland exemplen finns program som bidrar till beräkning av skatt eller leverans. |
 
 ## <a name="health-check-operation"></a>Hälsokontrollåtgärd
 
-Hälsokontrollåtgärden är operation 717 på sidan **kassaoperationer** i Commerce-administration. Den kan användas när POS är i läget icke-lådan. En maskinvarustation måste dock vara aktiv.
+Hälsokontrollåtgärden är åtgärd 717 på sidan **kassaåtgärder** i Commerce headquarters. Den kan användas när POS är i läget icke-lådan. En maskinvarustation måste dock vara aktiv.
 
 Som standard testar hälsokontrollen bara enheter som är konfigurerade i maskinvaruprofilen för den maskinvarustation som för närvarande är aktiv för en kassa. Om ett register använder flera maskinvarustationer under en dag för att utföra hälsokontroller för alla, måste de ansluta till en maskinvarustation åt gången. Det finns ingen hälsokontroll på butiksnivå. Det är dock möjligt att den här typen av kontroll kan göras med utökning av Commerce Server.
 

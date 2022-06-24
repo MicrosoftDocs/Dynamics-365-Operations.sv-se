@@ -1,6 +1,6 @@
 ---
 title: Användardefinierade certifikatprofiler för butiker
-description: Det här ämnet ger en översikt över hur certifikat används i butiker.
+description: Denna artikel ger en översikt över hur certifikat används i butiker.
 author: josaw
 ms.date: 10/09/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9cb82a6d6336bb69fe818fb33e04ad621382b383055b24a4e79eee5ddff217ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b40c74efa56a6e18af907e000554b9ab269bb31
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719940"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873039"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Användardefinierade certifikatprofiler för butiker
 
@@ -28,7 +28,7 @@ ms.locfileid: "6719940"
 
 ## <a name="overview"></a>Översikt
 
-Det här avsnittet innehåller en översikt över de certifikatprofiler som är tillgängliga i Microsoft Dynamics 365 Commerce. Den här funktionen utökar funktionen [Hantera hemligheter för butikskanaler](../dev-itpro/manage-secrets.md) genom att lägga till stöd för lokala certifikat.
+Denna artikel innehåller en översikt över de certifikatprofiler som är tillgängliga i Microsoft Dynamics 365 Commerce. Den här funktionen utökar funktionen [Hantera hemligheter för butikskanaler](../dev-itpro/manage-secrets.md) genom att lägga till stöd för lokala certifikat.
 
 Medan POS körs i offlineläge kan den inte komma åt certifikaten som lagras i nyckelvalvet. Det lokala certifikatet ska användas i stället. Följande funktioner stöds:
 
@@ -54,7 +54,7 @@ Funktionen för certifikatprofiler stöder följande scenarier i Commerce-kanale
 
 ## <a name="set-up-certificate-profiles"></a>Ställ in certifikatprofiler
 
-I proceduren nedan beskrivs hur du ställer in certifikatprofiler. Innan du använder certifikatprofiler i Commerce-kanalerna följer du stegen nedan för att konfigurera inställningarna.
+I proceduren nedan beskrivs hur du konfigurerar certifikatprofiler. Innan du använder certifikatprofiler i Commerce-kanalerna följer du stegen nedan för att konfigurera inställningarna.
 
 1. I arbetsytan **funktionshantering** aktiverar du funktionen **Användardefinierade certifikatprofiler för butiker**.
 2. Öppna **Systemadministration \> Inställningar \> Certifikatprofiler**.
@@ -76,7 +76,7 @@ När du väljer **inställningar** för certifikatprofilrader visas sidan **Inst
 När du lägger till en ny rad på sidan **Inställningar för certifikatprofil** anger du följande fält:
 
 - **Platstyp** – Välj den plats där certifikatet lagras. Det finns två möjliga värden för det här fältet: **lokalt certifikat** och **nyckelvalv**.
-- **Nyckelvalv certifikat** – det här fältet är obligatoriskt om du ställer in fältet **platstyp** på **nyckelvalv**. Använd den för att ange hemlighet för nyckelvalv certifikat.
+- **Nyckelvalv certifikat** – det här fältet är obligatoriskt om du konfigurerar fältet **platstyp** på **nyckelvalv**. Använd den för att ange hemlighet för nyckelvalv certifikat.
 
     > [!NOTE]
     > Innan du använder ett nyckelvalv i certifikatprofiler måste du ladda upp ett certifikat till nyckelvalvlagret och följa instruktionerna i [Konfigurera Azure Key Vault-klienten](../../finance/localizations/setting-up-azure-key-vault-client.md).

@@ -1,6 +1,6 @@
 ---
 title: Kundtjänstkataloger
-description: Det här avsnittet innehåller en beskrivning av den callcenterspecifika funktionen för kataloger i Dynamics 365 Commerce.
+description: Denna artikel innehåller en beskrivning av den kundtjänstspecifika funktionen för kataloger i Dynamics 365 Commerce.
 author: josaw1
 ms.date: 05/15/2018
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6fae877b04fdbd84e1c2508f91bbf53b5412b350c5d2c8978aafb2d7f49783f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 11af3c889e7e40e13f4aa8b3db97f544fbd20229
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742522"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884066"
 ---
 # <a name="call-center-catalogs"></a>Kundtjänstkataloger
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller en beskrivning av den callcenterspecifika funktionen som är länkad till kataloger i Dynamics 365 Commerce.
+Denna artikel innehåller en beskrivning av den kundtjänstspecifika funktionen som är länkad till kataloger i Dynamics 365 Commerce.
 
-Katalogfunktionerna i Commerce kan användas för flera ändamål. Ursprungligen skapades funktionerna för katalogen för näthandelsintegration för tredje part. Katalogens konfiguration tillät att företag kunde skapa en grupp med produkter och attribut som kunde publiceras externt för förbrukning av en tredje parts näthandelslösning.
+Katalogfunktionerna i Commerce kan användas för flera ändamål. Ursprungligen skapades funktionerna för katalogen för näthandelsintegrering för tredje part. Katalogens konfiguration tillät att företag kunde skapa en grupp med produkter och attribut som kunde publiceras externt för förbrukning av en tredje parts näthandelslösning.
 
 När kundtjänsts supportkanal lades till utökades katalogkonceptet till att lägga till ytterligare funktioner för stöd och hantering relaterade till traditionella marknadsföringskataloger för försäljning direkt till konsument. Ett direkt till konsument-företag ger ofta ut tryckta kataloger som sedan skickas till ett eller flera segment med kunder. Dessa kataloger har vanligtvis särskilda erbjudanden och erbjudanden som bara gäller om kunden anger en katalogidentifieringskod när beställningen görs.
 

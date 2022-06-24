@@ -1,6 +1,6 @@
 ---
 title: Lägga till skriptkod på webbsidor för att stödja telemetri
-description: I det här avsnittet beskrivs hur du lägger till skriptkod på klientsidan på webbplatssidorna för att stödja insamling av telemetri på klientsidan.
+description: I denna artikel beskrivs hur du lägger till skriptkod på klientsidan på webbplatssidorna för att stödja insamling av telemetri på klientsidan.
 author: bicyclingfool
 ms.date: 09/29/2020
 ms.topic: article
@@ -14,23 +14,23 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f796a3e10345da41ff461b656d88affb3adbdf9e
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 262216ee99d52e3d53f5f5dae663104bb79757c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964539"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852851"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Lägga till skriptkod på webbsidor för att stödja telemetri
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du lägger till skriptkod på klientsidan på webbplatssidorna för att stödja insamling av telemetri på klientsidan.
+I denna artikel beskrivs hur du lägger till skriptkod på klientsidan på webbplatssidorna för att stödja insamling av telemetri på klientsidan.
 
 Webbanalys är ett viktigt verktyg när du vill förstå hur dina kunder samverkar med din webbplats och fatta beslut som hjälper dig att optimera upplevelsen för maximal konvertering. Det finns många webbanalyspaket som hjälper dig att uppnå dessa mål, t.ex. Google Analytics, Clicky, Moz Analytics och KISSMetrics. De flesta webbanalyspaketen kräver att du lägger till klientskriptkod i elementet **\<head\>** för HTML på alla sidor på webbplatsen.
 
 > [!NOTE]
-> Instruktionerna i det här avsnittet gäller även andra anpassade klientfunktioner som Microsoft Dynamics 365 Commerce inte erbjuder.
+> Instruktionerna i denna artikel gäller även andra anpassade klientfunktioner som Microsoft Dynamics 365 Commerce inte erbjuder.
 
 ## <a name="create-a-reusable-fragment-for-your-script-code"></a>Skapa ett återanvändbart fragment för skriptkoden
 

@@ -1,6 +1,6 @@
 ---
 title: Inställningar för koncernintern redovisning
-description: Det här avsnittet beskriver hur du ställer in koncernintern redovisning så att du kan använda koncerninterna journaler för redovisningsallokeringar och redovisningsjournaler, till exempel dagboksjournaler, leverantörsfakturajournaler och betalningsjournaler.
+description: Den här artikeln beskriver hur du ställer in koncernintern redovisning så att du kan använda koncerninterna journaler för redovisningsallokeringar och redovisningsjournaler, till exempel dagboksjournaler, leverantörsfakturajournaler och betalningsjournaler.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c9914d9fff3407d8d469fe2ed27a9bfd6b26a50
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 309c121c1ef4b3814d676cad6f3c2b6826b59843
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720377"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871229"
 ---
 # <a name="intercompany-accounting-setup"></a>Inställningar för koncernintern redovisning
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du ställer in koncernintern redovisning så att du kan använda koncerninterna journaler för redovisningsallokeringar och redovisningsjournaler, till exempel dagboksjournaler, leverantörsfakturajournaler och betalningsjournaler.
+Den här artikeln beskriver hur du ställer in koncernintern redovisning så att du kan använda koncerninterna journaler för redovisningsallokeringar och redovisningsjournaler, till exempel dagboksjournaler, leverantörsfakturajournaler och betalningsjournaler.
 
 Koncerninterna journaler kan skapas i olika scenarier, till exempel för dagboksjournaler, leverantörsfakturajournaler, redovisningsallokeringar och centraliserade betalningar. Om du vill aktivera dessa scenarier måste du ställa in koncernintern redovisning.
 

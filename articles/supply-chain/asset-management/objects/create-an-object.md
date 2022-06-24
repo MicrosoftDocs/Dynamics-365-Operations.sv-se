@@ -1,6 +1,6 @@
 ---
 title: Skapa en tillgång
-description: Det här avsnittet beskriver hur du skapar en tillgång i tillgångshantering.
+description: Denna artikel beskriver hur du skapar en tillgång i Tillgångshantering.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e9c2b81e97a7b08dfdb596fbf6822ac94c7358dccd0b92c0677467dbc0c2e26
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 90b41b57dfa6db8b5874bbc2d4bcac7b4c634f20
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721521"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860940"
 ---
 # <a name="create-an-asset"></a>Skapa en tillgång
 
@@ -28,9 +28,9 @@ ms.locfileid: "6721521"
 
  
 
-Det här avsnittet beskriver hur du skapar en tillgång i tillgångshantering.
+Denna artikel beskriver hur du skapar en tillgång i Tillgångshantering.
 
-1. Klicka på **tillgångshantering** > **allmänt** > **tillgångar** > **alla tillgångar** eller **aktiva tillgångar**.
+1. Klicka på **Tillgångshantering** > **allmänt** > **tillgångar** > **alla tillgångar** eller **aktiva tillgångar**.
 2. Klicka på knappen **Nytt**.
 3. I dialogrutan **skapa tillgångar** infogar du data om **tillgången** (tillgångs-ID) och tillgångens namn. Välj datum och tid för tillgången i fältet **Giltighet**. Från och med det datumet kan du installera tillgången på en funktionsplats samt flytta och ersätta tillgången i en tillgångsstruktur.
 4. Välj tillgångstyp för tillgången (obligatoriskt fält) i fältet **tillgångstyp**. Om det behövs väljer du **tillgångstillverkare** och **tillgångsmodell** för tillgången. Om endast en produkt har ställts in, väljs den produkten automatiskt i fältet **tillgångstillverkare**. De val som är tillgängliga **tillgångstillverkare** och **tillgångsmodell** beror på inställningarna i [Tillgångstillverkare och-modeller](../setup-for-objects/product-and-model.md).
@@ -65,7 +65,7 @@ Du kan välja en **resurs** för tillgången. Resursvalet avgör vilken kalender
 I fältet **anläggningstillgångsnummer** kan du välja en anläggningstillgång som ska relateras till tillgången. Detta är relevant om din tillgång är relaterad till ett investeringsprojekt.
 
 - Om tillgången är kopplad till en anläggningstillgång kan du skapa en arbetsordertyp som ska användas för arbetsorder som är relaterade till ett investeringsprojekt. 
-- Information om anläggningstillgångar för en tillgång är relaterad till modulen **anläggningstillgångar** i Dynamics 365 Supply Chain Management. Detta innebär att du **anläggningstillgångar** > **anläggningstillgångar** > **anläggningstillgångar** kan du få en översikt över tillgångshanteringsprojekt som kan relateras till en anläggningstillgång genom att välja tillgången i listan och visa innehållet i fönstret **Relaterad information** avsnittet > **associerade projekt**.
+- Information om anläggningstillgångar för en tillgång är relaterad till modulen **anläggningstillgångar** i Dynamics 365 Supply Chain Management. Detta innebär att du **anläggningstillgångar** > **anläggningstillgångar** > **anläggningstillgångar** kan du få en översikt över Tillgångshanteringsprojekt som kan relateras till en anläggningstillgång genom att välja tillgången i listan och visa innehållet i fönstret **Relaterad information** avsnittet > **associerade projekt**.
 
 
 ## <a name="details"></a>Detaljer
@@ -95,9 +95,9 @@ På snabbfliken **leverantör** väljer du ett leverantörskonto för tillgånge
 
 På snabbfliken **adress** kan du infoga adressen till utrustningen. Om ingen adress infogas på tillgången, använder tillgången adressen till en överordnad tillgång, om den överordnade tillgången har en adress. Om ingen adress är relaterad till tillgången eller några överordnade i tillgångshierarkin, kan adressen till den funktionsplats där tillgången är installerad användas. Om den funktionsplatsen inte har en adress som är relaterad till den, används adressen till den överordnade funktionsplatsen på tillgången.
 
-## <a name="asset-management-plans"></a>Planer för tillgångshantering
+## <a name="asset-management-plans"></a>Planer för Tillgångshantering
 
-Underhållsplaner används för schemaläggning av förebyggande underhållsjobb med jämna mellanrum på tillgången. På den här snabbfliken kan du ställa in underhållsplanrader för den valda tillgången. Underhållsomgångar kan ställas in för olika tillgångar, där du måste utföra en liknande uppgift med jämna mellanrum. På fliken **underhållsplaner för funktionsplats** ser du de underhållsplaner som är relaterade till den funktionsplats där tillgången är installerad.
+Underhållsplaner används för schemaläggning av förebyggande underhållsjobb med jämna mellanrum på tillgången. På den här snabbfliken kan du konfigurera underhållsplanrader för den valda tillgången. Underhållsomgångar kan ställas in för olika tillgångar, där du måste utföra en liknande uppgift med jämna mellanrum. På fliken **underhållsplaner för funktionsplats** ser du de underhållsplaner som är relaterade till den funktionsplats där tillgången är installerad.
 
 >[!NOTE]
 >Om du tar bort en underhållsplanrad eller en underhållsrunda som är relaterad till en tillgång i **alla tillgångar** tar du också automatiskt bort alla underhållsscheman med status "skapad" som har skapats baserat på den underhållsplanen eller underhållsomgången.

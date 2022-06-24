@@ -1,6 +1,6 @@
 ---
 title: Importera leverantörskataloger
-description: Det här ämnet beskriver hur du importerar leverantörskatalogdata.
+description: Denna artikel beskriver hur du importerar leverantörskatalogdata.
 author: GalynaFedorova
 ms.date: 03/20/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gfedorova
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: decf8b487f939ecb7b0ecf8be377fdd85e3947cf
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 19fa26eeb8ea3c0944be199c57eaf4a2d7e76034
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676871"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851635"
 ---
 # <a name="import-vendor-catalogs"></a>Importera leverantörskataloger
 
@@ -40,7 +40,7 @@ Om du vill importera leverantörskatalogdata måste du utföra följande uppgift
 
 1. Ställ in ett projekt i arbetsytan Datahantering när du har definierat dina datamappningsregler. Välj **Datahantering** och markera **Konfigurera roller för dataprojekt**.
 
-2. Ställ in en anskaffningskategorihierarki och tilldela dina leverantörer till anskaffningskategorier. Om du använder artikelkoder, lägg till artikelkoder till anskaffningskategorierna. För information om hur du ställer in en anskaffningskategorihierarki, se [Ställ in en anskaffningskategorihierarki](../procurement/tasks/set-up-procurement-category-hierarchy.md).
+2. Ställ in en anskaffningskategorihierarki och tilldela dina leverantörer till anskaffningskategorier. Om du använder artikelkoder, lägg till artikelkoder till anskaffningskategorierna. För information om hur du konfigurerar en anskaffningskategorihierarki, se [Ställ in en anskaffningskategorihierarki](../procurement/tasks/set-up-procurement-category-hierarchy.md).
 
 3. Konfigurera leverantören för katalogimport Markera en leverantör och välj sedan **Anskaffning** > **Ställ in** > **Konfigurera leverantör för katalogimport**.
 

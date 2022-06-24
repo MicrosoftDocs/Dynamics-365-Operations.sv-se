@@ -1,6 +1,6 @@
 ---
 title: Importera verifikationer med hjälp av enheten Allmän journal
-description: Det här ämnet innehåller tips för import av data till den allmänna journalen med hjälp av enheten Allmän journal.
+description: Den här artikeln innehåller tips för import av data till den allmänna journalen med hjälp av enheten Allmän journal.
 author: rcarlson
 ms.date: 04/20/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42bc804393d050e5ff722c46c9ce50ece54c5a0b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 056bb860e3133bb8389410e29d20f32447799399
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065080"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867623"
 ---
 # <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Importera verifikationer med hjälp av enheten Allmän journal
 
@@ -28,7 +28,7 @@ ms.locfileid: "8065080"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Det här ämnet innehåller tips för import av data till den allmänna journalen med hjälp av enheten Allmän journal.
+Den här artikeln innehåller tips för import av data till den allmänna journalen med hjälp av enheten Allmän journal.
 
 Du kan använda enheten Allmän journal för att importera verifikationer som har motkontotypen **Redovisning**, **Kund**, **Försäljare** eller **Bank**. Verifikationen kan anges som en rad med hjälp av både fältet **Konto** och fältet **Motkonto** eller som en flerradig verifikation där endast fältet **Konto** används (och fältet **Motkonto** är tomt på varje rad). Redovisningsjournalenheten stöder inte varje kontotyp. Det finns i stället andra enheter för scenarier där det krävs olika kombinationer av kontotyper. Om du till exempel vill importera en projekttransaktion använder du projektutgiftsjournalenheten. Varje entitet är utformad för att stödja specifika scenarier. Detta innebär att ytterligare fält kan vara tillgängliga i entiteter för dessa scenarier. Ytterligare fält är emellertid inte tillgängliga i entiteter för olika scenarier.
 

@@ -1,6 +1,6 @@
 ---
-title: Bygg anpassade svarssidor för felstatuskod 4xx/5xx
-description: I det här avsnittet beskrivs hur du skapar anpassade svarssidor för 4xx och 5xx-statuskodfel med hjälp av redigeringsverktygen i Microsoft Dynamics 365 Commerce.
+title: Skapa anpassade svarssidor för felstatuskod 4xx/5xx
+description: I denna artikel beskrivs hur du skapar anpassade svarssidor för 4xx och 5xx-statuskodfel med hjälp av redigeringsverktygen i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 16cd6c3dab5502826119b6a517414d23e168e79708e306897b04c7ba8c80404b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b56d7a58659205ce4483480fd85d1c91ae52a0f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741151"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882269"
 ---
-# <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Bygga anpassade svarssidor för felstatuskod 4xx/5xx
+# <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Skapa anpassade svarssidor för felstatuskod 4xx/5xx
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skapar anpassade svarssidor för 4xx och 5xx-statuskodfel med hjälp av redigeringsverktygen i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du skapar anpassade svarssidor för 4xx och 5xx-statuskodfel med hjälp av redigeringsverktygen i Microsoft Dynamics 365 Commerce.
 
 Om en begäran misslyckas utfärdar servern HTTP statuskodfelsvar. Statuskoden 404 fångas in och returneras om en sida inte hittas och statuskoden 500 fångas in och returneras om ett serverfel uppstår. I Dynamics 365 Commerce kan programanvändare skapa anpassade statuskodsidor för felsvar som visas för användarna för dessa statuskodfelsvar.
 
@@ -61,7 +61,7 @@ Börja skapa en sida med statuskodfelsvar enligt följande instruktioner.
 
 ### <a name="set-up-a-redirect-for-the-status-code-error-response-page"></a>Ställa in en omdirigering för sidan med statuskodfelsvar
 
-För att ställa in omdirigering för sidan med statuskodfelsvar enligt följande instruktioner.
+För att konfigurera omdirigering för sidan med statuskodfelsvar enligt följande instruktioner.
 
 1. Gå till **URL:ar \> Ny \> Ny alias** och välj sidan för statuskodfelsvar som du skapat tidigare.
 1. I fältet **Alias** anger du antingen **standard-4xx** eller **standard-5xx**, beroende på sidan för statuskodfelsvar som du konfigurerar en omdirigering för. Dessa alias måste publiceras. Annars fungerar inte omdirigeringen.

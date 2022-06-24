@@ -1,6 +1,6 @@
 ---
 title: Tidsgräns för disponering
-description: I det här avsnittet beskrivs hur du ställer in stängsel för täckningstid när du använder Planeringsoptimering. En tidsgräns för disponering indikerar din planering horisont och gräns.
+description: I denna artikel beskrivs hur du konfigurerar avgränsningar för täckningstid när du använder Planeringsoptimering. En tidsgräns för disponering indikerar din planering horisont och gräns.
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 12deca22fd6ff3cb4556e0525ab831e1aea0ee33
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: ebd59e05d2ae227f24e7dae6fae3634aab026c5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468928"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847945"
 ---
 # <a name="coverage-time-fences"></a>Tidsgräns för disponering
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in *Tidsgräns för disponering* när du använder Planeringsoptimering. Planerare kan definiera planeringshorisonten (täckningstidens stängsel i dagar) och utesluta tillgång och efterfrågan som faller bortom den horisonten. Därför hjälper tidsgräns för disponering till att förhindra "buller" som orsakas av leverans förslag som du inte behöver reagera på i månader. Exempel är nästa års prognos och kundorder som läggs långt utöver den normala ledtiden.
+I denna artikel beskrivs hur du konfigurerar *avgränsningar för täckningstid* när du använder Planeringsoptimering. Planerare kan definiera planeringshorisonten (täckningstidens stängsel i dagar) och utesluta tillgång och efterfrågan som faller bortom den horisonten. Därför hjälper tidsgräns för disponering till att förhindra "buller" som orsakas av leverans förslag som du inte behöver reagera på i månader. Exempel är nästa års prognos och kundorder som läggs långt utöver den normala ledtiden.
 
 En tidsgräns för disponering är antalet dagar efter dagens datum (eller, mer exakt, det datum då du gör planeringskörningen) som tillgång och efterfrågan exkluderas. För att undvika förseningar måste du se till att tidsgräns för disponering är längre att den totala ledtiden. Systemets standardvärde är 100 dagar.
 
@@ -75,7 +75,7 @@ Gör så här om du vill ange en tidsgräns för disponering för en huvudplan.
 
 ## <a name="considerations-for-coverage-time-fences"></a>Överväganden för tidsgräns för disponering
 
-När du ställer in tidsgräns för disponering bör du överväga följande punkter:
+När du konfigurerar tidsgräns för disponering bör du överväga följande punkter:
 
 - Tidsgräns för disponering påverkar endast indata för huvudplanering. Om förseningar inträffar kan de resulterande planerade orderna ha ett datum som är efter dagens datum plus tidsgräns för disponering.
 - Tidsgräns för disponering anges i kalenderdagar. Kalendrar som använder arbetsdagar påverkar inte beräkningen av tidsgränsen. En vecka betraktas till exempel alltid som sju dagar, även om helger ställs in som stängda dagar i arbetstidskalendern.

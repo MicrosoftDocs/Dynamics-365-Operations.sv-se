@@ -1,6 +1,6 @@
 ---
 title: Serviceobjekt – översikt
-description: Det här ämnet innehåller en översikt över hur du arbetar med serviceobjekt.
+description: Denna artikel innehåller en översikt över hur du arbetar med serviceobjekt.
 author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cef4cf1222c4c66991069da72e3e6f5a7040153
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8150a94677fe38f4caa6f3e0b5fb5d1be5972eaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677686"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862423"
 ---
 # <a name="service-objects-overview"></a>Serviceobjekt – översikt
 
@@ -39,7 +39,7 @@ Serviceobjekt är en kunds tillgångar och produkter som du kan utföra en tjän
 
 Företag A hanterar ekonomiska poster för flera mindre företag. En av företag A:s kunder är det lokala fotbollslaget, för vilket företag A sköter veckobokföringen den årliga granskningen av klubbens konton. Klubbens konton ställs in i formuläret serviceobjekt och specificeras som objektet i serviceavtalet. Det finns två rader för serviceavtal för objektet. Rad 1 är veckobokföring med ett veckointervall som tilldelats raden, och rad 2 är den årliga granskningen med ett årligt intervall som tilldelats den.
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Skapa serviceobjekt](create-service-objects.md)
 

@@ -1,6 +1,6 @@
 ---
-title: Ställ in attributbaserad prissättning för konfigurerbara produkter
-description: I det här avsnittet visas hur du ställer in attributbaserad prissättning.
+title: Ställa in attributbaserad prissättning för konfigurerbara produkter
+description: I denna artikel visas hur du konfigurerar attributbaserad prissättning.
 author: t-benebo
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c4acd7b423396124dd1059602f5aa6460ec5e259
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ec16a0a8078cddd433c99592aa4a7474cf923aec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578162"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849399"
 ---
-# <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Ställ in attributbaserad prissättning för konfigurerbara produkter
+# <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Ställa in attributbaserad prissättning för konfigurerbara produkter
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet visas hur du ställer in attributbaserad prissättning. Som en förutsättning måste du ha en modell för produktkonfiguration som har en eller flera komponenter och attribut. Detta exempel använder produktmodellen High End Speaker i demonstrationsföretaget USMF. Vanligtvis använder en produktchef denna procedur.
+I denna artikel visas hur du konfigurerar attributbaserad prissättning. Som en förutsättning måste du ha en modell för produktkonfiguration som har en eller flera komponenter och attribut. Detta exempel använder produktmodellen High End Speaker i demonstrationsföretaget USMF. Vanligtvis använder en produktchef denna procedur.
 
 
 ## <a name="create-a-new-price-model"></a>Skapa en ny prismodell

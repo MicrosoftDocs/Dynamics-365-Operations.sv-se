@@ -1,6 +1,6 @@
 ---
 title: Användarinställningar för mobil enhet
-description: I det här avsnittet beskrivs hur du hanterar inställningar för mobila enheter för lagerarbetare.
+description: I denna artikel beskrivs hur du hanterar inställningar för mobila enheter för lagerarbetare.
 author: Mirzaab
 ms.date: 02/09/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4ea0fcfa7a165587567968f95549799859edaa60
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 15f9ce1768e1ed9dc6f7e84d245082b46a7f122c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103723"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882356"
 ---
 # <a name="mobile-device-user-settings"></a>Användarinställningar för mobil enhet
 
@@ -41,7 +41,7 @@ Den här funktionen kan hjälpa arbetare att komma igång snabbare när de börj
 
 ## <a name="turn-the-mobile-device-user-settings-feature-on-or-off"></a>Aktivera eller inaktivera funktionen för användarinställningar för mobila enheter
 
-För att använda funktionen som beskrivs i det här avsnittet måste funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* måste vara inaktiverade för systemet. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version äldre än 10.0.25 kan administratörer aktivera eller inaktivera denna funktion genom att söka efter funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+För att använda funktionen som beskrivs i denna artikel måste funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* vara aktiverad för systemet. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version äldre än 10.0.25 kan administratörer aktivera eller inaktivera denna funktion genom att söka efter funktionen *Användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="create-and-manage-user-settings"></a>Skapa och hantera användarinställningar
 

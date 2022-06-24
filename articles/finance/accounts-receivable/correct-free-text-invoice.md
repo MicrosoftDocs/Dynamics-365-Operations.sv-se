@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fb535b14f4c270f914a427d09027c37b3be7b72
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 9fccd6dbb33efd1556c56a6d92ad191ecfd317fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716228"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878201"
 ---
 # <a name="correct-a-free-text-invoice"></a>Korrigera en fritextfaktura
 

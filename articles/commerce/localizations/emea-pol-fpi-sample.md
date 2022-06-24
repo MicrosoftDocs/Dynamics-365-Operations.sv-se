@@ -1,6 +1,6 @@
 ---
 title: Exempel på integrering av kvittoskrivare för Polen
-description: I det här avsnittet finns en översikt över exemplet på räkenskapsintegration för Polen i Microsoft Dynamics 365 Commerce.
+description: I denna artikel finns en översikt över exemplet på räkenskapsintegrering för Polen i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,26 +9,26 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-2-1
-ms.openlocfilehash: 43d9a54334d97a65a1f9a356daf54154f6c069b3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: e71d7b342789e4cf2e7644a46bc847087063fc78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076846"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876959"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Exempel på integrering av kvittoskrivare för Polen
 
 [!include[banner](../includes/banner.md)]
 
-I det här avsnittet finns en översikt över exemplet på räkenskapsintegration för Polen i Microsoft Dynamics 365 Commerce.
+I denna artikel finns en översikt över exemplet på räkenskapsintegrering för Polen i Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce-funktionen för Polen omfattar en exempelintegration av kassan (POS) med en kvittoskrivare. Exemplet utökar funktionen för [skatteintegration](fiscal-integration-for-retail-channel.md) och stöder POSNET THERMAL HD 2.02 protokollet för kvittoskrivare från [Posnet Polska S.A.](https://www.posnet.com.pl) Exemplet möjliggör kommunikation med en kvittoskrivare som är ansluten via en COM-port med hjälp av en inbyggd programvarudrivrutin. Den implementerades och testades med hjälp av en mjukvaruemulator som Posnet tillhandahållit för Posnet Thermal HD FV EJ kvittoskrivare. Exemplet tillhandahålls i form av källkod och är en del av Retail Software Development Kit (SDK).
+Dynamics 365 Commerce-funktionen för Polen omfattar en exempelintegrering av kassan (POS) med en kvittoskrivare. Exemplet utökar funktionen för [skatteintegrering](fiscal-integration-for-retail-channel.md) och stöder POSNET THERMAL HD 2.02 protokollet för kvittoskrivare från [Posnet Polska S.A.](https://www.posnet.com.pl) Exemplet möjliggör kommunikation med en kvittoskrivare som är ansluten via en COM-port med hjälp av en inbyggd programvarudrivrutin. Den implementerades och testades med hjälp av en mjukvaruemulator som Posnet tillhandahållit för Posnet Thermal HD FV EJ kvittoskrivare. Exemplet tillhandahålls i form av källkod och är en del av Retail Software Development Kit (SDK).
 
 Microsoft släpper inte någon maskinvara, programvara eller dokumentation från Posnet. Om du vill ha information om hur du får kvittoskrivaren och använder den kan du kontakta [Posnet Polska S.A.](https://www.posnet.com.pl)
 
 ## <a name="scenarios"></a>Scenarier
 
-Följande scenarier täcks av integrationsexempel för kvittoskrivare för Polen:
+Följande scenarier täcks av integreringsexempel för kvittoskrivare för Polen:
 
 - Försäljningsscenarier:
 
@@ -51,7 +51,7 @@ Följande scenarier täcks av integrationsexempel för kvittoskrivare för Polen
         - Uteslut en utfärdad/omdebiterad presentkortsrad från ett skattekvitto för en försäljning.
         - Skriv ut en betalning där ett presentkort används som vanlig betalningsmetod.
 
-    - Skriv ut räkenskapskvitton för operationer inom kundorder:
+    - Skriv ut räkenskapskvitton för åtgärder inom kundorder:
 
         - Ett skattekvitto skrivs inte ut för en kundorderdeposition.
         - Skriv ut en skattekvitto för leveransrader i en kundorder.
@@ -84,7 +84,7 @@ Exemplet för integrering av kvittoskrivare implementerar följande regler som r
 
 - Skriv inte ut ett skattekvitto om en transaktion är en kundinsättning.
 - Skriv inte ut ett skattekvitto om en transaktion endast innehåller en kundorderinsättning eller en återbetalning av en kundorderinsättning.
-- Skriv ut beloppet för den tidigare betalade insättningen på ett skattekvitto för en upphämtningsoperation för kundorder.
+- Skriv ut beloppet för den tidigare betalade insättningen på ett skattekvitto för en upphämtningsåtgärd för kundorder.
 - Dra av insättningsbeloppet för kundordern från betalningsrader när en kundorder skapas.
 - Spara beräknade justeringar av betalningsrader i kanaldatabasen med en referens för en hybrid kundorder.
 
@@ -95,16 +95,16 @@ Exemplet för integrering av kvittoskrivare implementerar följande regler som r
 - Att skriva ut en streckkod på skattekvitton anses vara en potentiell anpassning, eftersom den här funktionen inte stöds i de inbäddade formaten och endast kan implementeras genom att använda den anpassningsbara rapporten **Super-format**.
 - kvittoskrivaren har inte stöd för blandade transaktioner. Alternativet **Förbjud att blanda försäljning och returer i ett kvitto** bör anges till **Ja** i kassafunktionsprofiler.
 
-## <a name="set-up-fiscal-integration-for-poland"></a>Ställ in räkenskapsintegration för Polen
+## <a name="set-up-fiscal-integration-for-poland"></a>Ställ in räkenskapsintegrering för Polen
 
-Exemplet på integrering av kvittoskrivaren för Polen baseras på [räkenskapsintegrationsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Posnet** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (till exempel [i version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett filnamnstillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [ställa in ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md). 
+Exemplet på integrering av kvittoskrivaren för Polen baseras på [räkenskapsintegreringsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Posnet** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (till exempel [i version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett tillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [konfigurera ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
 > På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare (VM) i Microsoft Dynamics Lifecycle Services (LCS). Mer information finns i [Implementeringsriktlinjer för det skattemässiga skrivarintegreringsexemplet för Polen (äldre)](emea-pol-fpi-sample-sdk.md).
 >
 > Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
 
-Slutför konfigurationsstegen för räkenskapsintegration som beskrivs i [ställa in räkenskapsintegration för Commerce-kanaler](setting-up-fiscal-integration-for-retail-channel.md).
+Slutför konfigurationsstegen för räkenskapsintegrering som beskrivs i [konfigurera räkenskapsintegrering för Commerce-kanaler](setting-up-fiscal-integration-for-retail-channel.md).
 
 1. [Ställa in process för räkenskapsregistrering](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Var noga med att notera inställningarna för den process för räkenskapsregistrering som är [specifika för det här kvittoskrivare integrering av prov](#set-up-the-registration-process).
 1. [Ange inställningar för felhantering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
@@ -114,9 +114,9 @@ Slutför konfigurationsstegen för räkenskapsintegration som beskrivs i [ställ
 
 ### <a name="set-up-the-registration-process"></a>Ställa in registrationsprocessen
 
-Om du vill aktivera registreringsprocessen, följ dessa steg för att ställa in Commerce-administration. Mer information om [Ställ in räkenskapsintegrering för handelskanaler](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+Om du vill aktivera registreringsprocessen, följ dessa steg för att konfigurera Commerce headquarters. Mer information om [Ställ in räkenskapsintegrering för handelskanaler](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-1. Ladda ner konfigurationsfiler för leverantören av skattedokument och skatteanslutningen:
+1. Ladda ner konfigurationsfiler för providern av skattedokument och skatteanslutningen:
 
     1. Öppna [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) databasen.
     1. Välj en korrekt version av frisläppningen enligt din SDK/programversion (till exempel **[frisläppning/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
@@ -125,27 +125,27 @@ Om du vill aktivera registreringsprocessen, följ dessa steg för att ställa in
     1. Ladda ner konfigurationsfilen för räkenskapskoppling på **HardwareStation \> ThermalDeviceSample \> Configuration \> ConnectorPosnetThermalFVEJ.xml** (t.ex. [filen för version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/HardwareStation/ThermalDeviceSample/Configuration/ConnectorPosnetThermalFVEJ.xml)).
 
     > [!WARNING]
-    > På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare i LCS. Konfigurationsfilerna för det här exemplet för skatteintegration finns i följande mappar i Retail SDK på en utvecklar-VM i LCS:
+    > På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare i LCS. Konfigurationsfilerna för det här exemplet för skatteintegrering finns i följande mappar i Retail SDK på en utvecklar-VM i LCS:
     >
     > - **Konfigurationsfilen för räkenskapsdokumentprovidern:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml
     > - **Konfigurationsfil för räkenskapskoppling:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.Posnet.ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml
     > 
     > Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
 
-1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> delade Commerce-parametrar**. På fliken **allmänt** anger du alternativet **Aktivera räkenskapsintegration** till **Ja**.
-1. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Leverantörer av skattedokument** och läs in konfigurationsfilen för skattedokumentleverantören som du laddade ner tidigare.
-1. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Räkenskapskopplingar** och läs in konfigurationsfilen för räkenskapskoppling för skattedokumentleverantören som du laddade ner tidigare.
-1. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegration \> Funktionsprofiler för koppling**. Skapa en ny funktionsprofil för anslutning. Välj dokumentleverantören och den koppling som du läst in tidigare. Uppdatera [datamappningsinställningarna](#default-data-mapping) efter behov.
-1. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegration \> Tekniska profiler för koppling**. Skapa en ny teknisk profil för koppling och välj räkenskapskoppling som du laddade tidigare. Uppdatera [kopplingsinställningarna](#fiscal-connector-settings) efter behov.
-6. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegration \> Grupper för skattekoppling**. Skapa en ny grupp för räkenskapskoppling för den funktionsprofil för koppling som du skapade tidigare.
-7. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegration \> Processer för räkenskapsregistrering**. Skapa en ny räkenskapsregistrering och räkenskapsregistrering och välj den grupp för räkenskapskoppling som du skapade tidigare.
+1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> delade Commerce-parametrar**. På fliken **allmänt** anger du alternativet **Aktivera räkenskapsintegrering** till **Ja**.
+1. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegrering \> Leverantörer av skattedokument** och läs in konfigurationsfilen för skattedokumentprovidern som du laddade ner tidigare.
+1. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegrering \> Räkenskapskopplingar** och läs in konfigurationsfilen för räkenskapskoppling för skattedokumentprovidern som du laddade ner tidigare.
+1. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegrering \> Funktionsprofiler för koppling**. Skapa en ny funktionsprofil för anslutning. Välj dokumentprovidern och den koppling som du läst in tidigare. Uppdatera [datamappningsinställningarna](#default-data-mapping) efter behov.
+1. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegrering \> Tekniska profiler för koppling**. Skapa en ny teknisk profil för koppling och välj räkenskapskoppling som du laddade tidigare. Uppdatera [kopplingsinställningarna](#fiscal-connector-settings) efter behov.
+6. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegrering \> Grupper för skattekoppling**. Skapa en ny grupp för räkenskapskoppling för den funktionsprofil för koppling som du skapade tidigare.
+7. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegrering \> Processer för räkenskapsregistrering**. Skapa en ny räkenskapsregistrering och räkenskapsregistrering och välj den grupp för räkenskapskoppling som du skapade tidigare.
 8. Gå till **Butik och handel \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Funktionsprofiler**. Välj en funktionsprofil som är kopplad till butiken där registreringsprocessen ska aktiveras. På snabbfliken **Process för räkenskapsregistrering**, välj räkenskapsregistreringsprocessen som du skapade tidigare.
 9. Gåt ill **Retail och Commerce \> Kanalinställningar \> Kassainställning \> Kassaprofiler \> Maskinvaruprofiler**. Välj en maskinvaruprofil som är länkad till den Hardware Station som kvittoskrivare ska anslutas till. På snabbfliken **Kringutrustning för räkenskaper**, välj teknisk profil för koppling som du skapade tidigare.
 10. Öppna distributionstidsplanen (**Retail och Commerce \> Retail och Commerce-IT \> Distributionsschema**) och välj jobb **1070** och **1090** för att överföra data till kanaldatabasen.
 
 #### <a name="default-data-mapping"></a>Standarddatamappning
 
-Följande standarddatamappning ingår i konfigurationen av leverantören av skattedokument som tillhandahålls som en del av exemplet på räkenskapsintegration.
+Följande standarddatamappning ingår i konfigurationen av providern av skattedokument som tillhandahålls som en del av exemplet på räkenskapsintegrering.
 
 - **Mappning av momssats (VAT)** – Mappning av procentvärden för moms som har ställts in för momskoderna till kvittoskrivare – specifika momssatser. Här är standardmappningen:
 
@@ -165,7 +165,7 @@ Följande standarddatamappning ingår i konfigurationen av leverantören av skat
 
 #### <a name="fiscal-connector-settings"></a>Inställningar för räkenskapskoppling
 
-Följande inställningar ingår i den skatteanslutningskonfiguration som tillhandahålls som en del av det skattemässiga integrationsexemplet:
+Följande inställningar ingår i den skatteanslutningskonfiguration som tillhandahålls som en del av det skattemässiga integreringsexemplet:
 
 - **Anslutningssträng** – En sträng som beskriver detaljerna för anslutningen till enheten i ett format som stöds av drivrutinen. Mer information finns i dokumentationen för POSNET.
 - **Datum- och tidssynkronisering** – Ett värde som anger om datum och tid för skrivaren måste synkroniseras med den anslutna maskinvaran.
@@ -180,10 +180,10 @@ Följande inställningar ingår i den skatteanslutningskonfiguration som tillhan
 
 #### <a name="set-up-the-development-environment"></a>Konfigurera en utvecklingsmiljö
 
-Följ dessa steg för att ställa in en utvecklingsmiljö för att testa och utöka provet.
+Följ dessa steg för att konfigurera en utvecklingsmiljö för att testa och utöka provet.
 
 1. Eller hämta [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions)-databasen. Välj en korrekt version av frisläppningen enligt din SDK/programversion. För mer information, se [Hämta Retail SDK-exempel och referenspaket från GitHub och NuGet](../dev-itpro/retail-sdk/sdk-github.md).
-1. Öppna integrationslösningen för kvittoskrivaren på **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\Posnet.sln** och skapa den.
+1. Öppna integreringslösningen för kvittoskrivaren på **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\Posnet.sln** och skapa den.
 1. Installera CRT-tillägg:
 
     1. Sök efter CRT installationsprogram:
@@ -216,11 +216,11 @@ Följ dessa steg för att ställa in en utvecklingsmiljö för att testa och ut�
 
 #### <a name="production-environment"></a>Produktionsmiljö
 
-Följ stegen i [Konfigurera en byggpipeline för ett skatteintegrationsprov](fiscal-integration-sample-build-pipeline.md) för att generera och släppa Cloud Scale Unit och självbetjäningsdistributionspaket för skatteintegreringsexemplet. Mall **Posnet build-pipeline.yml** YAML-filen finns i **Pipeline\\YAML_Files** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions).
+Följ stegen i [Konfigurera en byggpipeline för ett skatteintegreringsprov](fiscal-integration-sample-build-pipeline.md) för att generera och släppa Cloud Scale Unit och självbetjäningsdistributionspaket för skatteintegreringsexemplet. Mall **Posnet build-pipeline.yml** YAML-filen finns i **Pipeline\\YAML_Files** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions).
 
 ## <a name="design-of-extensions"></a>Design av tilläggen
 
-Exemplet på integrering av kvittoskrivaren för Polen baseras på [räkenskapsintegrationsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Posnet** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (till exempel [i version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett filnamnstillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [ställa in ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md). 
+Exemplet på integrering av kvittoskrivaren för Polen baseras på [räkenskapsintegreringsfunktionen](fiscal-integration-for-retail-channel.md) och ingår i Retail SDK. Exemplet finns i mappen **src\\FiscalIntegration\\Posnet** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (till exempel [i version/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). Proven [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en leverantör av skattedokument, vilket är ett tillägg för Commerce Runtime (CRT) och en skattekontakt, som är en förlängning av Commerce Hardware Station. Mer information om hur du använder Retail SDK finns i [Retail SDK-arkitekturen](../dev-itpro/retail-sdk/retail-sdk-overview.md) och [konfigurera ett försäljningsförlopp för oberoende förpacknings-SDK](../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
 > På grund av begränsningar i den [nya oberoende förpacknings- och anknytningsmodellen](../dev-itpro/build-pipeline.md), det kan för närvarande inte användas för detta skatteintegreringsprov. Du måste använda föregående version av Retail SDK på en virtuell utvecklare i LCS. Mer information finns i [Implementeringsriktlinjer för det skattemässiga skrivarintegreringsexemplet för Polen (äldre)](emea-pol-fpi-sample-sdk.md). Stöd för den nya oberoende förpacknings- och anknytningsmodellen för skatteintegreringsexempel planeras för senare versioner.
@@ -233,7 +233,7 @@ Syftet med tillägget som är en skattedokument leverantör är att generera uts
 
 **DocumentProviderPosnetProtocol** begäranhanteraren är ingångspunkten för begäran om att generera dokument från skatteskrivaren.
 
-Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på dokumentprovidern för koppling som anges i Commerce-administration.
+Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på dokumentprovidern för koppling som anges i Commerce headquarters.
 
 Kopplingen stöder följande begäranden:
 
@@ -242,7 +242,7 @@ Kopplingen stöder följande begäranden:
 
 #### <a name="configuration"></a>Konfiguration
 
-Konfigurationsfilen för leverantör av skattedokument finns på **src\\FiscalIntegration\\Posnet\\CommerceRuntime\\DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Syftet med den här filen är att aktivera inställningar för skattedokumentprovidern som ska konfigureras från Commerce-administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration.
+Konfigurationsfilen för leverantör av skattedokument finns på **src\\FiscalIntegration\\Posnet\\CommerceRuntime\\DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Syftet med den här filen är att aktivera inställningar för skattedokumentprovidern som ska konfigureras från Commerce headquarters. Filformatet justeras med kraven för konfiguration av räkenskapsintegrering.
 
 ### <a name="hardware-station-extension-design"></a>Tilläggsdesign för Hardware Station
 
@@ -252,7 +252,7 @@ Syftet med tillägget som är en räkenskapskoppling är att kommunicera med kvi
 
 **FiscalPrinterHandler** begäranhanteraren är startpunkten för hantering av begäranden till kringutrustning för räkenskaper.
 
-Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på räkenskapskopplingsnamn som anges i Commerce-administration.
+Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på räkenskapskopplingsnamn som anges i Commerce headquarters.
 
 Kopplingen stöder följande begäranden:
 
@@ -262,6 +262,6 @@ Kopplingen stöder följande begäranden:
 
 #### <a name="configuration"></a>Konfiguration
 
-Konfigurationsfilen för leverantör av anslutningsprogram på **src\\FiscalIntegration\\Posnet\\HardwareStation\\ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Syftet med filen är att aktivera inställningar för räkenskapskoppling som ska konfigureras från Commerce-administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration.
+Konfigurationsfilen för leverantör av anslutningsprogram på **src\\FiscalIntegration\\Posnet\\HardwareStation\\ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml** i databasen [Dynamics 365 Commerce lösningar](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Syftet med filen är att aktivera inställningar för räkenskapskoppling som ska konfigureras från Commerce headquarters. Filformatet justeras med kraven för konfiguration av räkenskapsintegrering.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Varor med dubbla användningsområden
-description: I det här avsnittet beskrivs hur du håller reda på produkter som identifieras som produkter med dubbla användningsområden, lagrar certifikatnummer för varje relevant produkt och målland och skriver ut giltiga certifikatnummer på relevanta fakturor, följe sedlar och/eller försäljningsorder.
+description: I denna artikel beskrivs hur du håller reda på produkter som identifieras som produkter med dubbla användningsområden, lagrar certifikatnummer för varje relevant produkt och målland, samt skriver ut giltiga certifikatnummer på relevanta fakturor, följesedlar och/eller försäljningsorder.
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736045"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878915"
 ---
 # <a name="dual-use-goods"></a>Varor med dubbla användningsområden
 
@@ -42,13 +42,13 @@ Tänk på följande scenario:
 
 6. I ordern ingår produkt X-100, produkten levereras till Frankrike och det finns ett franskt certifikat för produkten. Certifikatet har dock upphört att gälla. Därför visas följande varningsmeddelande: "dubbel användningscertifikat för ett eller flera artiklar med dubbla användningsområden i den här försäljningsordern är inte giltiga. Vill du fortsätta med bekräftelsen?"
 
-I det här avsnittet beskrivs hur du konfigurerar alla inställningar som krävs för att ställa in produkter med dubbla användningsområden och stöd för det här scenariot.
+I denna artikel avsnittet beskrivs hur du konfigurerar alla inställningar som krävs för att konfigurera produkter med dubbla användningsområden och stöd för det här scenariot.
 
 ## <a name="define-dual-use-requirements-for-each-relevant-country"></a>Definiera krav för dubbla användningsområden för varje relevant land
 
 Olika länder har olika krav för produkter med dubbla användningsområden. Du använder sidan **Landsinställning för dubbel användning** för hålla reda på vilka länder som behöver och inte behöver ett certifikat. Den information som du anger här kontrolleras när du skapar försäljningsorder och du får en påminnelse om att ge de nödvändiga certifieringarna.
 
-Om du vill ställa in information om kraven för dubbla användningsområden för olika länder följer du stegen nedan.
+Om du vill konfigurera information om kraven för dubbla användningsområden för olika länder följer du stegen nedan.
 
 1. Gå till **Produktinformationhantering \> Inställningar \> Produktenskompatibilitet \> Produkter med dubbla användningsområden \> Landsinställning för dubbel användning**.
 2. Välj en befintlig landsinställning för att redigera, eller välj **ny** i åtgärdsfönstret för att skapa en ny landsinställning.
@@ -89,7 +89,7 @@ Den här inställningen kontrolleras när du skapar en försäljningsorder.
 
 ## <a name="set-up-dual-use-certificates"></a>Ställa in certifikat med dubbla användningsområden
 
-Använd sidan **Certifikat för dubbel användning** när du vill ställa in och hantera de krävda certifikaten för dubbel användning för varje produkt och land. Du kan spåra varje certifikats detaljer, t.ex. landet och giltighetsdatumet. Du kan också ange alternativ för att ange var den här informationen ska skrivas ut. Informationen kan till exempel skrivas ut på fakturan, följesedeln och/eller försäljningsordern. Den här inställningen kontrolleras när du skapar en försäljningsorder.
+Använd sidan **Certifikat för dubbel användning** när du vill konfigurera och hantera de krävda certifikaten för dubbel användning för varje produkt och land. Du kan spåra varje certifikats detaljer, t.ex. landet och giltighetsdatumet. Du kan också ange alternativ för att ange var den här informationen ska skrivas ut. Informationen kan till exempel skrivas ut på fakturan, följesedeln och/eller försäljningsordern. Den här inställningen kontrolleras när du skapar en försäljningsorder.
 
 1. Gå till **Produktinformationhantering \> Inställningar \> Produktenskompatibilitet \> Produkter med dubbla användningsområden \> Certifikat med dubbla användningsområden**.
 2. Välj ett befintligt certifikat för att redigera, eller välj **ny** i åtgärdsfönstret för att skapa ett nytt certifikat.

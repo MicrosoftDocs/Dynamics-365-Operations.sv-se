@@ -1,6 +1,6 @@
 ---
 title: Funktionsplatser och tillgångar
-description: Det här avsnittet beskriver funktionsplats och tillgångar i tillgångshantering. Tillgångshantering är en avancerad modul för hantering av tillgångar och underhållsjobb i Dynamics 365 Supply Chain Management.
+description: Denna artikel beskriver funktionsplatser och tillgångar i Tillgångshantering. Tillgångshantering är en avancerad modul för hantering av tillgångar och underhållsjobb i Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0bf90d99a8bd093817f9e804e8075e779428f1fadb3128c5a455ca839dece55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 274e80136ee303af9d0fe5fd04095f575a345d19
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750158"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875667"
 ---
 # <a name="functional-locations-and-assets"></a>Funktionsplatser och tillgångar
 
@@ -28,19 +28,19 @@ ms.locfileid: "6750158"
 
  
 
-Det här avsnittet beskriver funktionsplats och tillgångar i tillgångshantering. Tillgångshantering är en avancerad modul för hantering av tillgångar och underhållsjobb i Dynamics 365 Supply Chain Management.
+Denna artikel beskriver funktionsplatser och tillgångar i Tillgångshantering. Tillgångshantering är en avancerad modul för hantering av tillgångar och underhållsjobb i Dynamics 365 Supply Chain Management.
 
 ## <a name="overview"></a>Översikt
 
 Tillgångshantering integreras sömlöst med flera moduler med andra Finance and Operations-appar. Följande illustration visar gränssnitten med andra moduler.
 
-![Diagram som visar hur tillgångshantering samarbetar med andra moduler.](media/01-overview-image.png)
+![Diagram som visar hur Tillgångshantering samarbetar med andra moduler.](media/01-overview-image.png)
 
-Med tillgångshantering kan du effektivt hantera och utföra alla uppgifter som är relaterade till hantering och underhåll av många typer av utrustning i företaget. Denna utrustning omfattar maskiner, produktionsutrustning och fordon. Tillgångshantering stödjer även lösningar inom många branscher.
+Med Tillgångshantering kan du effektivt hantera och utföra alla uppgifter som är relaterade till hantering och underhåll av många typer av utrustning i företaget. Denna utrustning omfattar maskiner, produktionsutrustning och fordon. Tillgångshantering stödjer även lösningar inom många branscher.
 
-Följande illustration visar en översikt över de viktigaste funktionerna som täcks av tillgångshantering.
+Följande illustration visar en översikt över de viktigaste funktionerna som täcks av Tillgångshantering.
 
-![Diagram som visar huvudfunktionerna i tillgångshanteringen.](media/02-overview-image.png)
+![Diagram som visar huvudfunktionerna i Tillgångshanteringen.](media/02-overview-image.png)
 
 ## <a name="functional-locations-and-assets"></a>Funktionsplatser och tillgångar
 

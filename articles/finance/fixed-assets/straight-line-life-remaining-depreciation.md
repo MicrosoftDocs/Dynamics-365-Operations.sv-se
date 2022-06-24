@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92941bc679835d38ba47464452315498a70ce2ee
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 185e1c101ffb6dfbd47348952d6dfc47ab137ffa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726709"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853450"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Linjär avskrivning kvarstående livstid
 

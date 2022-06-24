@@ -1,6 +1,6 @@
 ---
 title: Importera och exportera värderingar och granskningar
-description: I det här avsnittet beskrivs hur du importerar och exporterar produktklassificeringar och -granskningar i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du importerar och exporterar produktklassificeringar och -granskningar i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 3ae85f21f7a78d56621aed60527207badcee9c75
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 97407f62d462c0ae370e9ea0d2799d3f30ecacfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968539"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863411"
 ---
 # <a name="import-and-export-ratings-and-reviews"></a>Importera och exportera värderingar och granskningar
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du importerar och exporterar produktklassificeringar och -granskningar i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du importerar och exporterar produktklassificeringar och -granskningar i Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce erbjuder [klassificeringar och recensioner](ratings-reviews-overview.md) som en flerkanalslösning. När du växlar till lösningen för värderingar och granskningar i Dynamics 365 Commerce kan du flytta dina befintliga värderingar och granska data över till Commerce plattform. Du kanske också vill exportera värderingar och data från Commerce, utifrån dina affärsbehov. Med hjälp av Power Automate anslutningsapp kan du importera omdömen och recensioner till Commerce och exportera dem från Commerce.
 
@@ -31,7 +31,7 @@ Dynamics 365 Commerce erbjuder [klassificeringar och recensioner](ratings-review
 
 Innan du kan importera och exportera värderingar och granskningar måste du uppfylla följande förutsättningar:
 
-- Lösningen för omdömen och recensioner måste vara aktiverad för din e-handelsplats på Commerce-plattformen. Mer information finns i [Välj att använda omdömen och recensioner](opt-in-ratings-reviews.md).
+- Lösningen för omdömen och recensioner måste vara aktiverad för din näthandelsplats på Commerce-plattformen. Mer information finns i [Välj att använda omdömen och recensioner](opt-in-ratings-reviews.md).
 - Dynamics 365 omdömen och recensioner Power App anslutningsapp måste konfigureras för att aktivera åtgärder som "skicka granskningar" eller "exportgranskningar" i Power Automate. Mer information finns i [Dynamics 365 Commerce - omdömen och recensioner (förhandsversion)](/connectors/dynamics365ratingsre/).
 - Service-to-Service (S2S)-autentisering måste konfigureras för att på ett säkert sätt anropa klassificeringar och recensioner Application Programming Interface (API) utanför Commerce. Mer information finns i [Konfigurera Service-to-Service-autentisering](service-to-service-auth.md).
 

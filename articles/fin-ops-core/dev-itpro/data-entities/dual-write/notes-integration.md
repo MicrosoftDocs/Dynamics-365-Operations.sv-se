@@ -1,6 +1,6 @@
 ---
 title: Integrering av anteckning
-description: I det här avsnittet beskrivs integreringen av anteckningsdata i dubbel skrivning.
+description: I den här artikeln beskrivs integreringen av anteckningsdata i dubbel skrivning.
 author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c73da804d724ea75ae6ccd479d1b7f3cf02d48c4
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8e1444aa311bb2dc74705a3791e58c3187ecd8ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062785"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876727"
 ---
 # <a name="note-integration"></a>Integrering av anteckning
 
@@ -22,7 +22,7 @@ ms.locfileid: "8062785"
 
 
 
-Under affärsprocesser samlar Microsoft Dynamics 365 användare ofta in information om sina kunder. Denna information registreras som aktiviteter och anteckningar. I det här avsnittet beskrivs integreringen av anteckningsdata i dubbel skrivning.
+Under affärsprocesser samlar Microsoft Dynamics 365 användare ofta in information om sina kunder. Denna information registreras som aktiviteter och anteckningar. I den här artikeln beskrivs integreringen av anteckningsdata i dubbel skrivning.
 
 Kundinformation kan klassificeras på följande sätt:
 

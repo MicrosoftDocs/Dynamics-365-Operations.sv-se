@@ -1,6 +1,6 @@
 ---
 title: Funktionen SPLITLISTBYLIMIT ER
-description: Det här avsnittet innehåller information om hur funktionen SPLITLISTBYLIMIT elektronisk rapportering (ER) används.
+description: Den här artikeln innehåller information om hur funktionen SPLITLISTBYLIMIT elektronisk rapportering (ER) används.
 author: NickSelin
 ms.date: 12/12/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52351c131480119ce9fb98a75307ebf6026cb12b9977e8b4236d3a24ef6a140e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fddfb04730189eed56b939597a42d9a11dbe254f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744444"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865940"
 ---
 # <a name="splitlistbylimit-er-function"></a>Funktionen SPLITLISTBYLIMIT ER
 

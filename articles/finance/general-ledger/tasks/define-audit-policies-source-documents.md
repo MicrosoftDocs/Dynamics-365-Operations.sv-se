@@ -1,6 +1,6 @@
 ---
-title: Definiera granskningspolicyer för källdokument
-description: I det här avsnittet visar vi hur du ställer in och kör granskningspolicyregler.
+title: Definiera granskningsprinciper för källdokument
+description: I den här artikeln visar vi hur du ställer in och kör granskningspolicyregler.
 author: panolte
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e8698dd2c14321498d23efe1d01be274c56d5721
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: b8aa106cd5a5596f6b9a6663390e03ebc3f91a7b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713795"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872540"
 ---
-# <a name="define-audit-policies-for-source-documents"></a>Definiera granskningspolicyer för källdokument
+# <a name="define-audit-policies-for-source-documents"></a>Definiera granskningsprinciper för källdokument
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet visar vi hur du ställer in och kör granskningspolicyregler. I exemplet används utgiftsrapporter av typen hotellutgift. I den här proceduren används demonstrationsföretaget USMF. Revisorrollen har rätt behörighet för att utföra dessa uppgifter.
+I den här artikeln visar vi hur du ställer in och kör granskningspolicyregler. I exemplet används utgiftsrapporter av typen hotellutgift. I den här proceduren används demonstrationsföretaget USMF. Revisorrollen har rätt behörighet för att utföra dessa uppgifter.
 
 1. I navigeringsfönstret går du till **Moduler > Revision > Inställningar > Policyregeltyp**.
 2. Välj **Ny**.

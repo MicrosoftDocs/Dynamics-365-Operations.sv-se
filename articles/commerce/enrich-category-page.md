@@ -1,6 +1,6 @@
 ---
 title: Utöka en kategorilandningssida
-description: I det här avsnittet beskrivs hur du berikar kategorisidor i Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du berikar kategorisidor i Dynamics 365 Commerce.
 author: v-chgri
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5bb28c3b5fbb1133d32219b9c47dd1477ae2ac982ee035321dafd77c53dc910b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bfee3b09768fa19ab95c880d7f7cbf330a8c58d7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771017"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856974"
 ---
 # <a name="enrich-a-category-landing-page"></a>Utöka en kategorilandningssida
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du berikar kategorisidor i Dynamics 365 Commerce.
+I denna artikel beskrivs hur du berikar kategorisidor i Dynamics 365 Commerce.
 
 näthandel ger en standardsida för kategori landningssidor som används när kategoridata visas. En standardkategorisida innehåller obligatoriska element, t.ex. förfinare, kategoriserad produktplacering, sorteringsalternativ, en alternativ sammanfattning och sidbrytningskontroller. 
 

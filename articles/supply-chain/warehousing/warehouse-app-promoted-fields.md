@@ -1,6 +1,6 @@
 ---
 title: Konfigurera befordrade fält för steg i mobilappen Warehouse Management
-description: Det här ämnet beskriver hur man främjar och lyfter fram specifik information för varje steg i uppgiftsflödena för mobilappen för Warehouse Management.
+description: Denna artikel beskriver hur du främjar och lyfter fram specifik information för varje steg i uppgiftsflödena för mobilappen för Warehouse Management.
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,25 +11,25 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 0ce3fb829d349a35c6c2f29838a2c725f7b61c55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920333"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857066"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Konfigurera befordrade fält för steg i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Funktionerna som beskrivs i detta ämne gäller bara den nya mobilappen Warehouse Management. De påverkar inte den gamla lagerställeappen, som nu har blivit inaktuell.
+> Funktionerna som beskrivs i denna artikel gäller bara den nya mobilappen Warehouse Management. De påverkar inte den gamla lagerställeappen, som nu har blivit inaktuell.
 
-Det här ämnet beskriver hur man främjar och lyfter fram specifik information för varje steg i uppgiftsflödena för mobilappen för Warehouse Management. Den här kapaciteten kan hjälpa medarbetare att fokusera på de viktigaste fälten när de arbetar genom ett flöde. För varje steg i varje process kan admins välja vilka fält som ska höjas upp och vilka fält som ska markeras.
+Denna artikel beskriver hur du främjar och lyfter fram specifik information för varje steg i uppgiftsflödena för mobilappen för Warehouse Management. Den här kapaciteten kan hjälpa medarbetare att fokusera på de viktigaste fälten när de arbetar genom ett flöde. För varje steg i varje process kan admins välja vilka fält som ska höjas upp och vilka fält som ska markeras.
 
 ## <a name="enable-promoted-fields-in-your-system"></a>Aktivera som stöds av fält i systemet
 
-Innan du kan ställa in befordrade fält måste du slutföra följande procedur för att aktivera de nödvändiga funktionerna och generera de obligatoriska fältnamnen i mobilappen Warehouse Management.
+Innan du kan konfigurera befordrade fält måste du slutföra följande procedur för att aktivera de nödvändiga funktionerna och generera de obligatoriska fältnamnen i mobilappen Warehouse Management.
 
 1. Gå till **Systemadministration \> Arbetsytor \> Funktionshantering**.
 1. I arbetsytan [**Funktionshantering**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aktivera funktionen som anges på följande sätt:
@@ -44,19 +44,19 @@ Innan du kan ställa in befordrade fält måste du slutföra följande procedur 
     - **Modul:** *Warehouse management*
     - **Funktionsnamn:** *fält som stöds av lagerställeapp*
 
-    Den här funktionen är den funktion som beskrivs i det här avsnittet.
+    Den här funktionen är den funktion som beskrivs i denna artikel.
 
 1. Uppdatera fältnamnen i Warehouse Management-mobilappen genom att gå till **Warehouse Management \> Inställningar \> Mobil enhet \> Fältnamn i lagerställeapp** och väljer **Skapa standardinställningar**. - Mer information finns i [Konfigurera fält för mobilappen för distributionslagerhantering](configure-app-field-names-priorities-warehouse.md).
 1. Upprepa föregående steg för varje juridisk person (företag) där du använder mobilappen Warehouse Management.
 
 ## <a name="configure-promoted-fields-from-a-menu-specific-override"></a>Konfigurera baserade fält från en menyspecifik åsidosättning
 
-Använd följande procedur för att ställa in befordrade fält.
+Använd följande procedur för att konfigurera befordrade fält.
 
 1. Skapa en menyspecifik åsidosättning för relevant meny och steg enligt beskrivningen i [Anpassa stegrubriker och instruktioner för Warehouse Management mobilapp](mobile-app-titles-instructions.md).
 1. Hitta kombinationen av värden för **Steg-ID** och **Namn på menyalternativ** som du vill redigera, och välj sedan värdet i kolumnen **Steg-ID**.
 1. På sidan som visas på snabbfliken **Välj erbjudna fält**, markera **Välj fältet** i verktygsfältet.
-1. I dialogrutan **Erbjudna fält** välj de fält som du vill marknadsföra. Du kan också markera upp till två av de valda fälten. Markerade fält visas i fetstil i mobilappen Warehouse Management. När du väljer fält bör du tänka på att vissa skärmar kan vara stora nog att bara visa de översta fälten eller två som stöds. Ett exempel på hur du använder de här inställningarna finns i scenariot senare i det här avsnittet.
+1. I dialogrutan **Erbjudna fält** välj de fält som du vill marknadsföra. Du kan också markera upp till två av de valda fälten. Markerade fält visas i fetstil i mobilappen Warehouse Management. När du väljer fält bör du tänka på att vissa skärmar kan vara stora nog att bara visa de översta fälten eller två som stöds. Ett exempel på hur du använder de här inställningarna finns i scenariot senare i denna artikel.
 
     > [!NOTE]
     > Listan **Tillgängliga fält** är begränsad till de fält som kan visas för menyalternativet. Andra faktorer (till exempel artikelsammansättning) avgör om ett fält faktiskt visas i mobilappen Warehouse Management. Om du har konfigurerat fält som stöds visas bara de valda fälten på huvudsidan i mobilappen Warehouse Management. Däremot kan arbetare fortfarande visa de återstående fälten genom att titta på detaljsidan.

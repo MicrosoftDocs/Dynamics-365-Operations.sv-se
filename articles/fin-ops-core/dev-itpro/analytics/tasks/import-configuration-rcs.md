@@ -1,6 +1,6 @@
 ---
 title: (ER) Importera konfigurationer från RCS
-description: I det här avsnittet finns information om hur en användare kan importera en ny version av en återställningskonfiguration från RCS.
+description: I den här artikeln finns information om hur en användare kan importera en ny version av en återställningskonfiguration från RCS.
 author: NickSelin
 ms.date: 07/03/2019
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f5674c418baaac7817c27780e2f0137ce6e7137eb3f1665f768ad843cc5b3114
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5317b1f7c8c0af6cd5c839e065c590c4474c84de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720794"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850155"
 ---
 # <a name="er-import-configurations-from-rcs"></a>(ER) Importera konfigurationer från RCS
 

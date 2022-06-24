@@ -1,6 +1,6 @@
 ---
 title: Registrera betalningar automatiskt för koncerninterna kundfakturor
-description: Detta ämne förklarar hur du registrerar betalningar automatiskt för koncerninterna kundfakturor
+description: Denna artikel förklarar hur du registrerar betalningar automatiskt för koncerninterna kundfakturor
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: dbd06b21d736d1e247cd087e5bb86fbe641352e6
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4e8f784cd310026f0a647a0f509999e11ab26ce5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669444"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878799"
 ---
 # <a name="register-payments-automatically-for-intercompany-customer-invoices"></a>Registrera betalningar automatiskt för koncerninterna kundfakturor
 
@@ -26,8 +26,8 @@ Microsoft Dynamics 365 Supply Chain Management skapar en kundtransaktion när en
 
 1. Gå till **Försäljning och marknadsföring \> Kunder \> Alla kunder**.
 1. Välj **Koncernintern** på fliken **Allmänt** i åtgärdsfönstret.
-1. Om du vill ställa in betalningar för koncerninterna kundreskontra på sidan **Koncernintern** för försäljningsorder väljer du länken **Försäljningsorderpolicyer**.
-1. I fältet **Betalningsjournal** välj den betalningsjournal för kundreskontra som du vill registrera koncerninterna leverantörsbetalningar till. Du kan ställa in detta på sidan **Parametrar för kundreskontra**.
+1. Om du vill konfigurera betalningar för koncerninterna kundreskontra på sidan **Koncernintern** för försäljningsorder väljer du länken **Försäljningsorderpolicyer**.
+1. I fältet **Betalningsjournal** välj den betalningsjournal för kundreskontra som du vill registrera koncerninterna leverantörsbetalningar till. Du kan konfigurera detta på sidan **Parametrar för kundreskontra**.
 1. Om du vill bokföra den här journalen automatiskt markerar du kryssrutan **Bokför journal automatiskt**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

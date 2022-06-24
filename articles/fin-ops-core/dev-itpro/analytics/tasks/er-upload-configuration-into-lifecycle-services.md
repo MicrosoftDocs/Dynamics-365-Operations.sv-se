@@ -1,6 +1,6 @@
 ---
 title: Överför en konfiguration till Lifecycle Services
-description: Detta avsnitt förklarar hur du skapar en ny elektronisk rapportkonfiguration (ER) och laddar upp den till Microsoft Dynamics Lifecycle Services (LCS).
+description: Denna artikel förklarar hur du skapar en ny elektronisk rapportkonfiguration (ER) och laddar upp den till Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 ms.date: 06/17/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b480351875c7d300db790a68d61a402218f8ee36d8247188b912762f21d035b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b2b84fc3167b3edaf6b99fa8bb0efd373c7f57c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720770"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885526"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>Överför en konfiguration till Lifecycle Services
 

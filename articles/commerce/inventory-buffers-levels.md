@@ -1,6 +1,6 @@
 ---
-title: Konfigurera inventeringsbuffertar and lagernivåer
-description: I det här avsnittet beskrivs hur du konfigurerar lagerkvantiteter och lagernivåer som bestämmer hur meddelanden om lager tillgänglighet kan anges på Microsoft Dynamics 365 Commerce-webbplatser.
+title: Konfigurera lagerkvantiteter och lagernivåer
+description: I denna artikel beskrivs hur du konfigurerar lagerkvantiteter och lagernivåer som bestämmer hur meddelanden om lagertillgänglighet kan anges på Microsoft Dynamics 365 Commerce-webbplatser.
 author: boycezhu
 ms.date: 06/01/2020
 ms.topic: article
@@ -12,26 +12,26 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 842389811169f785235de7ac7d9a49ab903f99ddf7d43f139aba0873a2577d72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: acfe71f7fb55f1bc701297bb3949e91d6450d9e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727543"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853803"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurera lagerkvantiteter och lagernivåer
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du konfigurerar lagerkvantiteter och lagernivåer som bestämmer hur meddelanden om lager tillgänglighet kan anges på Microsoft Dynamics 365 Commerce-webbplatser.
+I denna artikel beskrivs hur du konfigurerar lagerkvantiteter och lagernivåer som bestämmer hur meddelanden om lagertillgänglighet kan anges på Microsoft Dynamics 365 Commerce-webbplatser.
 
-Dynamics 365 Commerce huvudkontoret innehåller lagerdata och olika kanaler som kassaapplikationer, näthandelsbutiker och andra anpassade integrerade applikationer som drar och skjuter omkring inventering på ett asynkront sätt. Därför är de tillgängliga lagervärden som hämtas via sidan för lagerbehållning i Commerce-administration via kassaanvändargränssnittet och via näthandelslager. API:er för lagertillgänglighet är inte alltid 100 procent korrekt i realtid.
+Dynamics 365 Commerce huvudkontoret innehåller lagerdata och olika kanaler som kassaapplikationer, näthandelsbutiker och andra anpassade integrerade applikationer som drar och skjuter omkring inventering på ett asynkront sätt. Därför är de tillgängliga lagervärden som hämtas via sidan för lagerbehållning i Commerce headquarters via kassaanvändargränssnittet och via näthandelslager. API:er för lagertillgänglighet är inte alltid 100 procent korrekt i realtid.
 
 I stället för att visa faktiska lagervärden i näthandelsbutiker föredrar många återförsäljare bara att visa meddelanden om lagertillgänglighetsstatus (t.ex. "tillgänglig" eller "på lagret") för att informera kunderna om huruvida en artikel är tillgänglig för inköp eller eventuellt inte kan användas i lager. För den här metoden måste lagerkvantiteter och lagernivåer som fastställer lagertillgänglighet meddelanden göras tillgängliga och konfigurerade.
 
 ## <a name="prerequisite-turn-on-the-inventory-buffers-and-inventory-levels-feature"></a>Förutsättning: aktivera funktionen lagerbuffrar och lagernivåer
 
-Funktionen för lagerbuffrar och lagernivåer styrs via funktionshantering i Commerce-administration. Så här aktiverar du funktionen anpassning.
+Funktionen för lagerbuffrar och lagernivåer styrs via funktionshantering i Commerce headquarters. Så här aktiverar du funktionen anpassning.
 
 1. Gå till **Systemadministration** \> **Arbetsytor** \> **Funktionshantering**.
 1. Sök efter funktionen **Aktivera lagerbuffrar och lagernivåer**, markera raden och välj sedan **Aktivera nu**.
@@ -63,7 +63,7 @@ När en ny profil skapas initieras två lagernivåer automatiskt:
 > [!NOTE]
 > Det får inte finnas luckor eller överlappningar mellan intervall i profildefinitionen.
 
-Du kan använda knappen **översättningar** i åtgärdsfönstret för att konfigurera lokaliserade strängar för etikettmeddelandet. Du måste sedan köra **1110** (**Global konfiguration**) distributionsschema för att synkronisera de lokaliserade strängarna till kanaler.
+Du kan använda knappen **översättningar** i åtgärdsfönstret för att konfigurera lokalanpassade strängar för etikettmeddelandet. Du måste sedan köra **1110** (**Global konfiguration**) distributionsschema för att synkronisera de lokalanpassade strängarna till kanaler.
 
 ### <a name="configure-an-inventory-level-profile"></a>Konfigurera en lagernivåprofil
 
@@ -125,7 +125,7 @@ Om du vill synkronisera konfigurationerna för inventeringsbuffertar till kanale
 
 ## <a name="use-inventory-buffers-and-inventory-levels-in-e-commerce-scenario"></a>Använda lagerkvantiteter och lagernivåer i handelsscenario
 
-I Commerce webbplatsskaparen används funktionerna för lagerkvantitet och lager nivå i Commerce-administration för att fastställa meddelanden om lagertillgänglighet på näthandelssajter. Mer information om [Använd lagerinställningar](inventory-settings.md).
+I Commerce webbplatsskaparen används funktionerna för lagerkvantitet och lager nivå i Commerce headquarters för att fastställa meddelanden om lagertillgänglighet på näthandelssajter. Mer information om [Använd lagerinställningar](inventory-settings.md).
 
 Alternativt, om du integrerar med en tredjeparts näthandelslösning, kan du använda **GetEstimatedAvailability** och **GetEstimatedProductWarehouseAvailability** API:er för att visa lagertillgängligheten för en produkt i ditt näthandelsscenario. Mer information om dessa API:er finns i [Beräkna lagerdisposition för butikskanaler](calculated-inventory-retail-channels.md).
 

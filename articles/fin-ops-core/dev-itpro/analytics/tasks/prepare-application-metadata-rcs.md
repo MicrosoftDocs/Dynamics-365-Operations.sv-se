@@ -1,6 +1,6 @@
 ---
 title: Förbered programdata att användas i RCS
-description: I det här avsnittet beskrivs hur du skapar en ny rapportkonfiguration som innehåller programmetadata.
+description: I den här artikeln beskrivs hur du skapar en ny rapportkonfiguration som innehåller programmetadata.
 author: NickSelin
 ms.date: 06/28/2019
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 71a33a69796b31c456bfcc5abbb3b18bcb1064be65c1c58b36656a9cebfbf47d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b5e7f69653381e16b4a8a8def56845a41bb14b0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750584"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868809"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>Förbered programdata att användas i RCS
 [!include [banner](../../includes/banner.md)]

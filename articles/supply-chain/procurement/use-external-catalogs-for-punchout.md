@@ -1,6 +1,6 @@
 ---
 title: Använd externa kataloger för PunchOut eProcurement
-description: Det här avsnittet beskriver hur du kan använda externa kataloger för att skapa och skicka rekvisitioner.
+description: Denna artikel beskriver hur du kan använda externa kataloger för att skapa och skicka rekvisitioner.
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17c473a93b7451879f1478a8c0c46fe9d8351fc4
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b3ef0a144cd1a893f08c73c3b00fa3cf6ae8f7bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679287"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851693"
 ---
 # <a name="use-external-catalogs-for-punchout-e-procurement"></a>Använd externa kataloger för PunchOut eProcurement
 
@@ -38,7 +38,7 @@ Använd radåtgärden **Externa kataloger** för att öppna en sida som innehål
 
 Beroende på dina behörigheter, ändra beställaren, den juridiska personen för inköp och den mottagande driftenheten. En ändring av dessa värden kan ändra listan över externa kataloger som är tillgängliga för en beställare. Vilka externa kataloger som är tillgängliga beror på de aktuella aktiva inköpspolicyerna för den juridiska personen för inköp och den mottagande driftenheten. Dessa policyer kan tillåta eller neka åtkomst till specifika anskaffningskategorier. Därför kan listan över externa kataloger som är mappade till dessa anskaffningskategorier påverkas.
 
-Mer information om hur du ställer in policyer finns i [Inköpspolicyer - översikt](../procurement/purchase-policies.md).
+Mer information om hur du konfigurerar policyer finns i [Inköpspolicyer - översikt](../procurement/purchase-policies.md).
 
 - Mata in text i katalogens sökfält om du vill söka efter externa kataloger för specifika anskaffningskategorier.
 - Klicka på den externa katalogen om du vill lägga till produkter från en leverantörs extern katalog på leverantörens webbplats. Lägg sedan till produkter i shoppingvagnen och checka ut. Shoppingvagnsraderna överförs till Microsoft Dynamics 365.

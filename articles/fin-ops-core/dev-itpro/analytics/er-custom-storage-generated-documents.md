@@ -1,6 +1,6 @@
 ---
-title: Ange en anpassad lagringsplats för skapade dokument
-description: Det här avsnittet beskriver hur du utökar listan över lagringsplatser för dokument som elektronisk rapporteringsformat (ER) genererar.
+title: Ange anpassad lagringsplats för skapade dokument
+description: Den här artikeln beskriver hur du utökar listan över lagringsplatser för dokument som elektronisk rapporteringsformat (ER) genererar.
 author: NickSelin
 ms.date: 02/22/2019
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 61a1e46497d650e2c063a5fe7537d17cf7aa1828a5a4504bb781e84aeb88f04a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 70d9ccfac18b4cdf1ea19b3def87fc10ba9ddcb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718511"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864758"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Ange en anpassad lagringsplats för skapade dokument
 
 [!include[banner](../includes/banner.md)]
 
-API (application programming interface) för ramverket för elektronisk rapportering (ER) låter dig utöka lagringsplatser för dokument som ER-format genererar. Det här avsnittet innehåller en översikt över de viktigaste åtgärderna som du måste utföra om du vill lägga till en egen lagringsplats.
+API (application programming interface) för ramverket för elektronisk rapportering (ER) låter dig utöka lagringsplatser för dokument som ER-format genererar. Den här artikeln innehåller en översikt över de viktigaste åtgärderna som du måste utföra om du vill lägga till en egen lagringsplats.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -118,7 +118,7 @@ Händelsen **AttachingFile()** utlöses när följande ER-destinationer bearbeta
 ## <a name="configure-an-er-destination"></a>Konfigurera ER-destination
 
 1. Konfigurera arkiverade destinationen för en av de ovan nämnda elementfilerna (fil, mapp, sammanslagning eller bilaga) för ER-formatet som du skapat eller importerat. Instruktioner finns i [ER konfigurera destinationer](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
-2. Använd den dokumenttyp som du lagt till tidigare konfigurerade destinationen. (I exemplet i det här avsnittet är dokumenttypen **FileX**.)
+2. Använd den dokumenttyp som du lagt till tidigare konfigurerade destinationen. (I exemplet i den här artikeln är dokumenttypen **FileX**.)
 
 ![Dialogruta för målinställningar.](media/er-extend-file-storages-destination.png)
 

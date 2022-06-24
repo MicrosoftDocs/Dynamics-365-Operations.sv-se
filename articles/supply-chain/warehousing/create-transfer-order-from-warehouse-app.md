@@ -1,6 +1,6 @@
 ---
 title: Skapa överföringsorder från distributionslagerappen
-description: I det här avsnittet beskrivs hur du skapar och bearbetar överföringsorder från funktionen för mobilappen för distributionslagerhantering
+description: I denna artikel beskrivs hur du skapar och bearbetar överföringsorder från Warehouse Management-mobilappen
 author: perlynne
 ms.date: 09/02/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: cbaeb120032bf2239fd9a5bce39fd7936229b308
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: b9edc2d94aa1f4850d2e7fe2b4bdd1b092be944f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102948"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877462"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Skapa överföringsorder från distributionslagerappen
 
@@ -50,7 +50,7 @@ Här följer allmänna riktlinjer för hur du skapar ett menyalternativ för mob
 1. Använd inställningen **Policy för skapande av överföringsrader** för att styra hur överföringsorderrader skapas av detta menyalternativ. Raderna skapas/uppdateras baserat på den registrerade lagerbehållningen för skannade registreringsskyltar. Välj ett av följande värden:
 
     - **Ingen reservation** – överföringsorderraderna kommer inte att reserveras.
-    - **ID-nummer guidad med radreservation** – överföringsorderraderna kommer att reserveras och använda alternativet för interaktiv strategi för ID-nummer som lagrar relevanta ID-nummer som är kopplade till orderraderna. Värden för "Lokaliserat ID-nummer" kan därför användas som en del av arbetsprocessen för att skapa överföringar för överföringsorderraderna.
+    - **ID-nummer guidad med radreservation** – överföringsorderraderna kommer att reserveras och använda alternativet för interaktiv strategi för ID-nummer som lagrar relevanta ID-nummer som är kopplade till orderraderna. Värden för "Hittat ID-nummer" kan därför användas som en del av arbetsprocessen för att skapa överföringar för överföringsorderraderna.
 
 1. Använd inställningen **utgående leveransprincip** för att lägga till mer automatisering i den utgående leveransprocessen efter behov. När en arbetare väljer **Slutför beställning**-knappen skapar programmet den programhändelse för *Slutför beställning* som kommer att spara värdet som du väljer här i fältet **utgående leveransprincip** för varje rad i den aktuella överföringsordern. Senare, när händelsekön bearbetas av ett batchjobb för att skapa överföringsordern, kan värdet som lagras i det här fältet läsas av batch-jobbet och kan därför styra hur det här jobbet bearbetar varje rad. Välj en av följande:
 
@@ -84,7 +84,7 @@ Om du vill arbeta genom det här scenariot med hjälp av de föreslagna värdena
 
 I det här scenariot förutsätts det att du redan har aktiverat både [skapa och bearbeta överföringsorder från funktionen för distributionslagerappar](#enable-create-transfer-order-from-warehouse-app)och [Händelsebearbetning i distributionslagerappen](warehouse-app-events.md).
 
-Förutom att ställa in skapa överföringsordern i menyalternativen på den mobila enheten måste även ytterligare mallar, plats direktiv och batchjobb ställas in och aktiveras.
+Förutom att konfigurera skapa överföringsordern i menyalternativen på den mobila enheten måste även ytterligare mallar, plats direktiv och batchjobb ställas in och aktiveras.
 
 ### <a name="example-scenario-blueprint"></a>Skiss över exempelscenario
 
@@ -133,16 +133,16 @@ Det här avsnittet innehåller information om hur du aktiverar en arbetsmall fö
 1. På den tillagda raden, i **fält** välj *lagerställe*.
 1. I fältet **Kriterier** välj *51*.
 1. Välj fliken **Sortera**.
-1. Välj **Lägg till** och ställ in **fält** för att *Lokaliserat ID-nummer*. Om du markerar det här fältet aktiveras knappen **Arbetsuppgiftshuvudet delas**.
+1. Välj **Lägg till** och ställ in **fält** för att *Hittat ID-nummer*. Om du markerar det här fältet aktiveras knappen **Arbetsuppgiftshuvudet delas**.
 1. Välj **OK** följt av **Ja** för att återställa grupperingen och återgå till sidan **Arbetsmallar**.
-1. Markera **Arbetsuppgiftshuvudet delas** och aktivera **Gruppera efter detta fält** för **Lokaliserat ID-nummer** och stäng.
+1. Markera **Arbetsuppgiftshuvudet delas** och aktivera **Gruppera efter detta fält** för **Hittat ID-nummer** och stäng.
 
 > [!NOTE]
 > Alla inställningar kan inte bearbetas automatiskt, till exempel artiklar med faktisk/nominell vikt och användning av blandade spårningsdimensioner.
 
 ### <a name="set-up-location-directives-for-the-license-plate-guided-strategy"></a>Ställ in platsdirektiv för den guidade strategin för ID-nummer
 
-Det här avsnittet innehåller information om hur du ställer in en plats för direktiv plockning så att du kan använda strategin **guidad registreringsskylt**.
+Det här avsnittet innehåller information om hur du konfigurerar en plats för direktiv plockning så att du kan använda strategin **guidad registreringsskylt**.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Platsdirektiv**.
 1. Välj **Redigera**.
@@ -162,7 +162,7 @@ Det här avsnittet innehåller information om hur du ställer in en plats för d
 
 ### <a name="set-up-a-batch-job-to-process-warehouse-app-events"></a>Ställ in ett batchjobb för att bearbeta händelser för lagerställeapp
 
-Det här avsnittet innehåller information om hur du ställer in ett schemalagt batchjobb för bearbetning av händelser för lagerställeapp.
+Det här avsnittet innehåller information om hur du konfigurerar ett schemalagt batchjobb för bearbetning av händelser för lagerställeapp.
 
 1. Gå till **lagerstyrning \> periodiska uppgifter \> bearbeta händelser för lagerställeapp**.
 2. I dialogrutan aktiverar du **Batchbearbetning** under avsnittet **Kör i bakgrunden**.
@@ -172,7 +172,7 @@ Det här avsnittet innehåller information om hur du ställer in ett schemalagt 
 
 ### <a name="set-up-a-batch-job-to-release-transfer-orders-automatically"></a>Ställa in ett batchjobb för att automatiskt frisläppa överföringsorder
 
-Det här avsnittet innehåller information om hur du ställer in ett schemalagt batchjobb för att frisläppa överföringsorder som har markerats som "redo att frisläppa".
+Det här avsnittet innehåller information om hur du konfigurerar ett schemalagt batchjobb för att frisläppa överföringsorder som har markerats som "redo att frisläppa".
 
 1. Gå till **Lagerstyrning \> Släpp till lagerställe \> Automatiskt släpp av transferorder**.
 1. I dialogrutan expanderar du avsnitt **poster som ska inkludera**.
@@ -191,7 +191,7 @@ Det här avsnittet innehåller information om hur du ställer in ett schemalagt 
 
 ### <a name="set-up-the-process-outbound-shipment-batch-job"></a>Ställ in batch-jobbet "behandla utgående leverans"
 
-I det här avsnittet beskrivs hur du ställer in ett tidsplanerat batchjobb för att köra bekräftelse av utgående leverans för inläsningar som är relaterade till överföringsorderrader som är "klara att levereras".
+I det här avsnittet beskrivs hur du konfigurerar ett tidsplanerat batchjobb för att köra bekräftelse av utgående leverans för inläsningar som är relaterade till överföringsorderrader som är "klara att levereras".
 
 1. Gå till **lagerstyrning \> periodiska uppgifter \> bearbeta utgående leveranser**.
 1. Expandera avsnittet **Poster som ska ingå**.
@@ -207,7 +207,7 @@ I det här avsnittet beskrivs hur du ställer in ett tidsplanerat batchjobb för
 1. I listan med registerrelationer filtrerar eller söker du i kolumnen **Relation** för *Överför ytterligare fält för uppfinningar (post-ID)*.
 1. Fokusera på register relationen i listan och klicka på knappen **Välj**.
 1. Välj fliken **Intervall**.
-1. I frågetabellen **Intervall** kommer du att ställa in tre kriterier för frågevillkor. Välj knappen **Lägg till** för att lägga till en rad.
+1. I frågetabellen **Intervall** kommer du att konfigurera tre kriterier för frågevillkor. Välj knappen **Lägg till** för att lägga till en rad.
 1. Lägg till ett intervall för registret som **Laster**. Ange **Fält** till *Last status* och ange **Villkor** till *Lastad*.
 1. Lägg till ett annat intervall för tabellen **Överför ytterligare fält för överföring**. Ange **Fält** till *Utgående leveransprincip* och ange **Kriterier** till *Släpp- och levereransbekräftelse*.
 1. Lägg till ett annat intervall för tabellen **Lastinformation**. Ange **Fält** till *Referens* och **Kriterier** till *Överföringsorderförsändelse*.

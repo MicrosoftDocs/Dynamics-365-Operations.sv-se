@@ -1,6 +1,6 @@
 ---
 title: Granska den konfigurerade ER-komponenten för att förhindra körningsproblem
-description: Det här avsnittet innehåller information om hur du granskar de konfigurerade komponenterna för elektroniska rapporter (ER) för att förhindra problem som kan uppstå vid körning.
+description: Den här artikeln innehåller information om hur du granskar de konfigurerade komponenterna för elektroniska rapporter (ER) för att förhindra problem som kan uppstå vid körning.
 author: NickSelin
 ms.date: 01/03/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074801"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864848"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Granska den konfigurerade ER-komponenten för att förhindra körningsproblem
 

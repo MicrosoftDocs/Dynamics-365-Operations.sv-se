@@ -1,6 +1,6 @@
 ---
 title: Källskatterapport för Indonesien
-description: I det här avsnittet beskrivs hur du konfigurerar och genererar rapport för källskattedeklaration för Indonesien.
+description: I den här artikeln beskrivs hur du konfigurerar och genererar rapport för källskattedeklaration för Indonesien.
 author: sndray
 ms.date: 12/15/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2021-12-02
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6cf2f9240ea747054578c52343af34b15c250f38
-ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
+ms.openlocfilehash: 8acd9442ff4f0b7c19e3b4fcf211acce002e43d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7943666"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883193"
 ---
 # <a name="withholding-tax-report-for-indonesia-id-00005"></a>Källskatterapport för Indonesien (ID-00005)
 

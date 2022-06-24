@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e9d937211c049b2ec4ac06ac6eddce7fd9bcb5b0
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f4f06b7916fb2eeed802b2dce95edfce448dcd97
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720011"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880857"
 ---
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Sammanfogning av värdemodell för anläggningstillgångar och avskrivningsregler
 
@@ -27,7 +27,7 @@ ms.locfileid: "8720011"
 
 Det här ämnet beskriver den aktuella bokfunktionen i Anläggningstillgångar. Denna funktionalitet är baserad på den värdemodellfunktion som fanns i tidigare versioner men innehåller även alla funktioner som endast angetts tidigare i avskrivningsregler.
 
-Med bokföringsfunktionen kan du använda en uppsättning sidor, förfrågningar och rapporter för alla dina processer för anläggningstillgångar. Tabellerna i det här avsnittet beskriver de tidigare funktionerna för den avskrivningsregler och värdemodeller, tillsammans med aktuella funktionerna för böcker.
+Med bokföringsfunktionen kan du använda en uppsättning sidor, förfrågningar och rapporter för alla dina processer för anläggningstillgångar. Tabellerna i den här artikeln beskriver de tidigare funktionerna för den avskrivningsregler och värdemodeller, tillsammans med aktuella funktionerna för böcker.
 
 ## <a name="setup"></a>Ställ in
 Som standard bokförs böcker i både huvudboken (GL) och i anläggningstillgångar. Böcker har ett nytt alternativ **Bokför i redovisningen** som låter dig inaktivera bokföring till redovisningen och bara bokföra till anläggningstillgångar. Denna funktion liknar det tidigare bokföringbeteendet för avskrivningsregler. Inställningen av journalnamn har ett nytt bokföringsskikt som kallas Inga. Detta bokföringsskikt lades specifikt till för anläggningstillgångar. Om du vill bokföra transaktioner för böcker som inte bokförs till redovisning måste du använda ett journalnamn som har bokföringsskiktet inställt på **Ingen**.

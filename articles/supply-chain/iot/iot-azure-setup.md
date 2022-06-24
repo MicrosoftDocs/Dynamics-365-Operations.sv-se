@@ -1,6 +1,6 @@
 ---
 title: Konfigurera Azure-resurser för IoT-information
-description: I det här avsnittet beskrivs hur du skapar och konfigurerar de Microsoft Azure-resurser som krävs för IoT-information.
+description: I denna artikel beskrivs hur du skapar och konfigurerar de Microsoft Azure-resurser som krävs för IoT-information.
 author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7099604caa33b2a74252b48ac4eec6bc4c28ef51
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6a0d97004963e04530a2f0e5a407c04642dfd8cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673142"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859297"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>Konfigurera Azure-resurser för IoT-information
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skapar och konfigurerar de Microsoft Azure-resurser som krävs för IoT-information.
+I denna artikel beskrivs hur du skapar och konfigurerar de Microsoft Azure-resurser som krävs för IoT-information.
 
 ## <a name="create-azure-resources"></a>Skapa Azure-resurser
 
-Följ stegen nedan om du vill skapa ett IoT-nav en Redis-cache och ett nyckelvalv som Microsoft Dynamics 365 Supply Chain Management kan få åtkomst till.
+Följ stegen nedan om du vill skapa en IoT-hubb en Redis-cache och ett nyckelvalv som Microsoft Dynamics 365 Supply Chain Management kan få åtkomst till.
 
 ### <a name="verify-that-the-microsoft-dynamics-erp-microservices-first-party-app-id-is-in-your-tenant"></a>Kontrollera att förstaparts app-ID för Microsoft Dynamics ERP Microservices finns i din klientorganisation
 
@@ -76,7 +76,7 @@ Gör så här om du vill skapa en IoT-navresurs.
 5. Granska standardvärdena och välj sedan **Granska + skapa**.
 6. Markera **Skapa**.
 
-IoT-navet skapas i bakgrunden.
+IoT-hubben skapas i bakgrunden.
 
 > [!NOTE]
 > Vi rekommenderar att du endast skapar en enda IoT-navresurs per miljö.
@@ -100,9 +100,9 @@ Alla resurser har nu skapats.
 
 ## <a name="configure-the-azure-resources"></a>Konfigurera Azure-resurserna
 
-### <a name="configure-the-iot-hub"></a>Konfigurera IoT-navet
+### <a name="configure-the-iot-hub"></a>Konfigurera IoT-hubben
 
-Följ dessa steg för att konfigurera IoT-navet:
+Följ dessa steg för att konfigurera IoT-hubben:
 
 1. Markera IoT Hub-resursen bland dina resurser.
 2. I det vänstra navigeringsfönstret väljer du **Inbyggda slutpunkter**.
@@ -127,9 +127,9 @@ Följ dessa steg när du vill konfigurera nyckelvalvet.
 
 Appen har nu åtkomst till hemligheterna i nyckelvalvet.
 
-### <a name="save-the-iot-hub-connection-string-secret"></a>Spara hemligheten för IoT-navets anslutningssträng
+### <a name="save-the-iot-hub-connection-string-secret"></a>Spara hemligheten för IoT-hubbens anslutningssträng
 
-Gör så här om du vill spara hemligheten för IoT-navets anslutningssträng:
+Gör så här om du vill spara hemligheten för IoT-hubbens anslutningssträng:
 
 1. Markera IoT Hub-resursen bland dina resurser.
 2. I det vänstra navigeringsfönstret väljer du **Inbyggda slutpunkter**.

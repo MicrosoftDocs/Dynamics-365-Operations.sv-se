@@ -1,6 +1,6 @@
 ---
 title: Stämma av bankutdrag med hjälp av avancerad bankavstämning
-description: Funktionen för avancerad bankavstämning låter dig importera elektroniska bankutdrag och utföra en automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 Finance. Det här ämnet innehåller en beskrivning av avstämningsprocessen.
+description: Funktionen för avancerad bankavstämning låter dig importera elektroniska bankutdrag och utföra en automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 Finance. Den här artikeln innehåller en beskrivning av avstämningsprocessen.
 author: moaamer
 ms.date: 06/22/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27956cbc4d51c1b907138b49947b57a570d98da1
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6e5b229821fc1ca1caa55b733af293aaef65a171
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727578"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859897"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Stämma av bankutdrag med hjälp av avancerad bankavstämning
 
 [!include [banner](../includes/banner.md)]
 
-Funktionen för avancerad bankavstämning låter dig importera elektroniska bankutdrag och utföra en automatiskt avstämning mot banktransaktioner i Dynamics 365 Finance. Det här ämnet innehåller en beskrivning av avstämningsprocessen.  
+Funktionen för avancerad bankavstämning låter dig importera elektroniska bankutdrag och utföra en automatiskt avstämning mot banktransaktioner i Dynamics 365 Finance. Den här artikeln innehåller en beskrivning av avstämningsprocessen.  
 
 ## <a name="import-an-electronic-bank-statement"></a>Importera ett elektronisk bankutdrag
 

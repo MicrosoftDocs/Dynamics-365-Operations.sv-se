@@ -1,6 +1,6 @@
 ---
 title: Platsdirektiv för plockning i åldersfördelat lager
-description: I det här avsnittet beskrivs hur du använder direktiv strategier för först in, först ut (FIFO) och sist in, först ut (LIFO), plats vid plockning.
+description: I denna artikel beskrivs hur du använder platsdirektivstrategier för först in, först ut (FIFO) och sist in, först ut (LIFO) vid plockning.
 author: Mirzaab
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 229dd0033e3eae4bdd33acca6736b7a9feec8c9b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 34ce119ca70596f0e40797c4b44a8fba4d5b7e0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676284"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885708"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Platsdirektiv för plockning i åldersfördelat lager
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du använder direktiv strategier för först in, först ut (FIFO) och sist in, först ut (LIFO), plats vid plockning. Dessa strategier fungerar tillsammans med åldersdatumen som registreras för platser som ska spåras när lagret först har registrerats i lagerstället. Funktionen *Platsdirektiv för plockning i åldersfördelat lager* använder datumet på platsen för bestämning av ålder. Funktionen *Distributionslagrets platsstatus* uppdaterar datumet på platsen, baserat på datumet från ID-numret.
+I denna artikel beskrivs hur du använder platsdirektivstrategier för först in, först ut (FIFO) och sist in, först ut (LIFO) vid plockning. Dessa strategier fungerar tillsammans med åldersdatumen som registreras för platser som ska spåras när lagret först har registrerats i lagerstället. Funktionen *Platsdirektiv för plockning i åldersfördelat lager* använder datumet på platsen för bestämning av ålder. Funktionen *Distributionslagrets platsstatus* uppdaterar datumet på platsen, baserat på datumet från ID-numret.
 
 Du kan använda FIFO- och LIFO-strategier för att skicka både spårade artiklar och icke-spårade artiklar, baserat på det datum då lagret registrerades i lagerstället. Den här funktionen kan vara särskilt användbar vid icke-spårade lager, där utgångsdatum inte kan användas för sortering.
 
@@ -39,11 +39,11 @@ Om du vill göra den här funktionen tillgänglig aktiverar du följande funktio
 
 ## <a name="feature-requirements"></a>Funktionskrav
 
-Om du vill använda den här funktionen måste du ställa in alternativet **Aktivera platsstatus** till *Ja* för varje [platsprofil](tasks/create-location-profile.md) som används för lagerhantering. Om du vill ange det här alternativet för en platsprofil går du till **lagerstyrning \> inställningar \> lager \> platsprofiler** och väljer platsprofil. Du hittar alternativet på snabbfliken **Allmänt**.
+Om du vill använda den här funktionen måste du konfigurera alternativet **Aktivera platsstatus** till *Ja* för varje [platsprofil](tasks/create-location-profile.md) som används för lagerhantering. Om du vill ange det här alternativet för en platsprofil går du till **lagerstyrning \> inställningar \> lager \> platsprofiler** och väljer platsprofil. Du hittar alternativet på snabbfliken **Allmänt**.
 
 ## <a name="feature-scenarios"></a>Funktionsscenarier
 
-Det här avsnittet innehåller exempel som visar hur du ställer in och använder strategier för FIFO och LIFO.
+Det här avsnittet innehåller exempel som visar hur du konfigurerar och använder strategier för FIFO och LIFO.
 
 > [!TIP]
 > Det här avsnittet innehåller två scenarier, ett för FIFO och ett för LIFO. I de procedurer som tillhandahålls förutsätts det att du ska göra båda scenarierna i ordning. Vi rekommenderar att du gör båda scenarierna så att du kan uppleva skillnaderna mellan de två strategierna.
@@ -69,8 +69,8 @@ Demonstrationsdata kräver inställning och lagerjusteringar för att stödja sc
 1. Välj **Redigera** om du vill placera sidan i redigeringsläge.
 1. På snabbfliken **platsdirektivåtgärder** hittar du raden där fältet **Sekvensnummer** anges till *1* och gör sedan något av följande:
 
-    - Om du ställer in ett FIFO-scenario ändrar du värdet för fältet **strategi** till platsen för *platsåldrande FIFO*.
-    - Om du ställer in ett LIFO-scenario ändrar du värdet för fältet **strategi** till platsen för *platsåldrande LIFO*.
+    - Om du konfigurerar ett FIFO-scenario ändrar du värdet för fältet **strategi** till platsen för *platsåldrande FIFO*.
+    - Om du konfigurerar ett LIFO-scenario ändrar du värdet för fältet **strategi** till platsen för *platsåldrande LIFO*.
 
 1. På snabbfliken **Platsdirektivåtgärder** välj **Redigera fråga**.
 1. I frågerutan på fliken **Intervall** välj **Lägga till** för att lägga till en rad och ange sedan följande värden:

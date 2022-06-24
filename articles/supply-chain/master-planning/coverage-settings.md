@@ -1,6 +1,6 @@
 ---
 title: Disponeringsinställningar
-description: Det här ämnet ger information om de disponeringsinställningar som huvudplaneringen använder för att beräkna artikelbehov.
+description: Denna artikel ger information om de disponeringsinställningar som huvudplaneringen använder för att beräkna artikelbehov.
 author: t-benebo
 ms.date: 09/13/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e98f1ab83e27e36400cd312ef2af8554d22ea505
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 1218c447a18f79f9a44bfa413a0414d6926d7499
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470049"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871961"
 ---
 # <a name="coverage-settings"></a>Disponeringsinställningar
 
@@ -41,7 +41,7 @@ Du kan ange disponeringsinställningar på flera sätt:
 
 - Ange disponeringsinställningar för en produkt med hjälp av en guide.
 
-    Guiden hjälper dig steg för steg genom processen att ställa in de primära parametrarna för artikeldisponering. På åtgärdssidan **Artikeldisponering** klickar du på **Guide** om du vill öppna **Artikeldisponeringsguiden**.
+    Guiden hjälper dig steg för steg genom processen att konfigurera de primära parametrarna för artikeldisponering. På åtgärdssidan **Artikeldisponering** klickar du på **Guide** om du vill öppna **Artikeldisponeringsguiden**.
 
 - Ange disponeringsinställningar för en dimensionsgrupp.
 

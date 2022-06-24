@@ -1,6 +1,6 @@
 ---
-title: Lägg till en favicon
-description: I det här avsnittet beskrivs hur du lägger till en favicon på webbplatsen.
+title: Lägga till en favoritikon
+description: I denna artikel beskrivs hur du lägger till en favoritikon på webbplatsen.
 author: bicyclingfool
 ms.date: 08/31/2020
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 080ef4da7313bd6b9d91e616f576b3ff774509d9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 2047a0c30c9e723c717657475a111181299aaa8d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964742"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855805"
 ---
 # <a name="add-a-favicon"></a>Lägga till en favoritikon
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du lägger till en favicon på webbplatsen.
+I denna artikel beskrivs hur du lägger till en favoritikon på webbplatsen.
 
 En favicon är en liten grafisk fil som visas på en flik i webbläsaren, i adressfältet, i webbhistoriken och i bokmärken eller favoriter, bland annat. Vi rekommenderar att du lägger till en favicon på din webbplats, eftersom den representerar och stärker ditt varumärke och hjälper till att skilja din webbplats från andra webbplatser som dina kunder besöker.
 
-Även om du kan lägga till flera favicons av olika storlekar och filtyper på din webbplats, visar det här avsnittet hur du lägger till en enskild favicon. Samma process och plats används dock för att lägga till fler favicons.
+Även om du kan lägga till flera favoritikoner i olika storlekar och filtyper på din webbplats, visar denna artikel hur du lägger till en enskild favoritikon. Samma process och plats används dock för att lägga till fler favicons.
 
 ## <a name="upload-a-favicon-to-your-sites-asset-collection"></a>Överför en favicon till webbplatsens tillgångssamling
 

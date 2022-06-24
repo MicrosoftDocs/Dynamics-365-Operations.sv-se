@@ -1,6 +1,6 @@
 ---
 title: Skapa en upprepad inköpsorder
-description: I det här avsnittet visas hur du skapar en upprepad inköpsorder (IO) genom att kopiera rader från ett tidigare inköpsorderdokument till en ny IO eller till en befintlig IO.
+description: I denna artikel visas hur du skapar en upprepad inköpsorder (IO) genom att kopiera rader från ett tidigare inköpsorderdokument till en ny IO eller till en befintlig IO.
 author: GalynaFedorova
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be4eca824794b8d45c7a6f40cb68aff7c4a53cd0
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 42bfbc7a10d21a475055ee87e76c89db0ad64165
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671152"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865104"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Skapa en upprepad inköpsorder
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet visas hur du skapar en upprepad inköpsorder (IO) genom att kopiera rader från ett tidigare inköpsorderdokument till en ny IO eller till en befintlig IO. Det finns två sätt att skapa upprepade order. Du kan använda tillgängliga åtgärder på dokumentnivån från åtgärdsfönstret, eller använda raddetaljåtgärderna. Dokumentnivååtgärderna är huvudsakligen avsedda för att skapa en ny inköpsorder, genom att lägga till rader och rubrikinformation från en annan order, medan raddetaljåtgärden är huvudsakligen för att lägga till rader i en befintlig order. De exempel som visas i den här handboken kan användas i demoföretaget USMF. Denna uppgift utförs vanligtvis av en inköpsagent.
+I denna artikel visas hur du skapar en upprepad inköpsorder (IO) genom att kopiera rader från ett tidigare inköpsorderdokument till en ny IO eller till en befintlig IO. Det finns två sätt att skapa upprepade order. Du kan använda tillgängliga åtgärder på dokumentnivån från åtgärdsfönstret, eller använda raddetaljåtgärderna. Dokumentnivååtgärderna är huvudsakligen avsedda för att skapa en ny inköpsorder, genom att lägga till rader och rubrikinformation från en annan order, medan raddetaljåtgärden är huvudsakligen för att lägga till rader i en befintlig order. De exempel som visas i den här handboken kan användas i demoföretaget USMF. Denna uppgift utförs vanligtvis av en inköpsagent.
 
 
 ## <a name="create-a-new-repeat-purchase-order"></a>Skapa en upprepad inköpsreturorder.

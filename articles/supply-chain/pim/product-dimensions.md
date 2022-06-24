@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 46079daafc744421abcbdf0a3539428f2a39f13c
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: acfd9be044818ab0f40171c25a8fc9e760173aa8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920533"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867939"
 ---
 # <a name="product-dimensions"></a>Produktdimensioner
 
@@ -47,7 +47,7 @@ Produktdimensionsvärden för dimensionerna storlek, färg och stil kan skapas p
 
 Produktdimensionsvärden för konfigurationsdimensionen skapas vanligtvis med hjälp av antingen produktkonfigureraren eller med den dimensionsbaserade konfigureraren. 
 
-Produktversioner skapas vanligtvis för specifika versioner medan produkten utvecklas under livscykeln. Produktversioner beskrivs mer detaljerat längre fram i det här avsnittet.
+Produktversioner skapas vanligtvis för specifika versioner medan produkten utvecklas under livscykeln. Produktversioner beskrivs mer detaljerat längre fram i denna artikel.
 
 Produktdimensioner kan också skapas och underhållas på sidan **Produktdimensioner** som du öppnar från följande platser:
 
@@ -104,7 +104,7 @@ När du testar dina lösningar för att få kompatibilitet med versionsdimension
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Kartor:** Om några kartor använder lagerdimensionerna måste motsvarande relationskartläggning till dessa kartor uppdateras så att de inkluderar versionsdimension. I utökade modell- eller registertillägg kan du söka efter register där fälten inkluderar lagerdimensioner.
-1. **Microsoft Dynamics 365 Commerce funktioner:** när den är aktiverad kommer versionsdimensionen att visas i den Commerce-specifika koden i Dynamics 365 Supply Chain Management. Versionsdimensionen stöds dock ännu inte av Commerce-kanaldatabasen eller i kassaprogrammen (POS) eller e-handelsprogram. Dessa Commerce-specifika appar stöder inte användare som säljer/levererar eller returnerar/tar emot lager efter versionsdimension. Sökfunktionerna för lagertillgänglighet kommer inte att urskilja lager per versionsdimension i Commerce-appar. Detta beteende liknar det aktuella beteendet för konfigurationsdimensionen i hela Commerce.
+1. **Microsoft Dynamics 365 Commerce funktioner:** när den är aktiverad kommer versionsdimensionen att visas i den Commerce-specifika koden i Dynamics 365 Supply Chain Management. Versionsdimensionen stöds dock ännu inte av Commerce-kanaldatabasen eller i kassaprogrammen (POS) eller näthandelsprogram. Dessa Commerce-specifika appar stöder inte användare som säljer/levererar eller returnerar/tar emot lager efter versionsdimension. Sökfunktionerna för lagertillgänglighet kommer inte att urskilja lager per versionsdimension i Commerce-appar. Detta beteende liknar det aktuella beteendet för konfigurationsdimensionen i hela Commerce.
 
 #### <a name="turn-on-the-version-dimension"></a>Aktivera versionsdimension
 

@@ -1,6 +1,6 @@
 ---
 title: Migrering av valutatyp för dubbelriktad skrivning
-description: I det här avsnittet beskrivs hur du ändrar antalet decimaler som stöds av dubbelriktad skrivning för valuta.
+description: I den här artikeln beskrivs hur du ändrar antalet decimaler som stöds av dubbelriktad skrivning för valuta.
 author: RamaKrishnamoorthy
 ms.date: 12/08/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: e9dc3e6c5fbec9636370b64a9bbdcf8a5834d332
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 809906c3926b200e7beac84e780314aec1f8c2ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061846"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855599"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering av valutatyp för dubbelriktad skrivning
 

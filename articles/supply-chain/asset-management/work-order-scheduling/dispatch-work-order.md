@@ -1,6 +1,6 @@
 ---
 title: Skicka arbetsorder
-description: Det här avsnittet innehåller förklaringar av hur du skickar arbetsorder i Tillgångshantering.
+description: Denna artikel innehåller förklaringar av hur du skickar en arbetsorder i Tillgångshantering.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 87f67f4db143fabbfae926e30e7e5d97ac6af0f6fa5469218e4ab3605aa44dcb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6b2349d04386a88237ec1cb650890718d41aa5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778734"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864010"
 ---
 # <a name="dispatch-work-order"></a>Skicka arbetsorder
 
@@ -46,7 +46,7 @@ Du kan schemalägga en arbetsorder eller arbetsorderjobb till en arbetare med fu
 
 8. Välj **Ja** på växlingsknappen **Ignorera schema** om du vill ignorera stängda dagar i kalendern (gäller för till gång, arbetare och verktyg). Välj **Ja** på växlingsknappen **Ignorera schemalagt utförande** om du vill ignorera begränsningar som kan ha valts på arbetsordern om planeringen. 
 
-    Information om hur ställer in schemalagt utförande finns i avsnittet [Schemalagt utförande](../setup-for-work-orders/scheduled-execution.md).
+    Information om hur konfigurerar schemalagt utförande finns i avsnittet [Schemalagt utförande](../setup-for-work-orders/scheduled-execution.md).
 
 9. Klicka på **OK**. Livscykeltillståndet för arbetsordern uppdateras automatiskt till tillståndet **Schemalagt** som anges i **Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Livscykelmodeller**.
 

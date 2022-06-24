@@ -1,6 +1,6 @@
 ---
-title: Annonsbanderollmodul
-description: Det här avsnittet handlar om annonsbanderollmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+title: Modul med kampanjbanderoll
+description: Denna artikel handlar om annonsbanderollmoduler och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1b7e7a8324c6460473e52543caf1484f9cf876a9
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: b85465ec0bc96e7e6f413fcae23950c3da2b99cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780668"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862108"
 ---
 # <a name="promo-banner-module"></a>Modul med kampanjbanderoll
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om annonsbanderollmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+Denna artikel handlar om annonsbanderollmoduler och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 
 Annonsbanderollmoduler används för att visa infogade informationsmeddelanden på en sida. De kan användas för att visa erbjudanden på hela webbplatsen som visas på alla sidor på en näthandelssajt. 
 
@@ -59,14 +59,14 @@ Följande bild visar ett exempel på en annonsbanderoll.
 | Visa ikonen karusell     | **Sant** eller **falskt**              | Ett värde som anger om karusell-ikoner ska visas, så att kunder manuellt kan gå igenom flera olika banderollobjekt. |
 | Textjustering            | **Höger**, **Vänster** eller **Centrera** | Textjusteringen i annonsbanderollmodulen. |
 | Länka                      | En URL                              | URL:en för en valfri länk. |
-|Textjustering             | **Höger**, **Vänster** eller **Centrera** | Denna egenskap finns som ett tematillägg för Adventure Works-temat. Med den kan en användare ställa in textjusteringen i kampanjbannern. |
+|Textjustering             | **Höger**, **Vänster** eller **Centrera** | Denna egenskap finns som ett tematillägg för Adventure Works-temat. Med den kan en användare konfigurera textjusteringen i kampanjbannern. |
 
 > [!IMPORTANT]
 > Adventure Works-temat finns tillgängligt från och med Dynamics 365 Commerce-version 10.0.20.
 
 ## <a name="add-a-promo-banner-module-to-a-page"></a>Lägg till annonsbanderollmodul till en sida 
 
-Om du vill lägga till en annonsbanderollmodul på en sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
+Om du vill lägga till en annonsbanderollmodul på en sida och konfigurera de obligatoriska egenskaperna följer du stegen nedan.
 
 1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
 1. I dialogrutan **Ny mall** under **Mallnamn**, ange **annonsbanderollmall** och välj sedan **OK**.

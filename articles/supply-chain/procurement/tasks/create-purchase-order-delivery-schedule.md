@@ -1,6 +1,6 @@
 ---
 title: Skapa en inköpsorder med en leveransplan
-description: Det här avsnittet visar hur du kan skapa en leveransplan för en inköpsorder.
+description: Denna artikel visar hur du kan skapa en leveransplan för en inköpsorder.
 author: GalynaFedorova
 ms.date: 08/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1475115b5c1a475f9a56f0f3eb8bb47267d2b91
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e13103f374be838a5ea0fb5e08c449b419905cab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677462"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875258"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Skapa en inköpsorder med en leveransplan
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet visar hur du kan skapa en leveransplan för en inköpsorder. En leveransplan används när en kvantitet på en order eller en journal begärs för att levereras i flera försändelser. De exempel som visas i den här handboken kan användas i demoföretaget USMF. Denna procedur görs normalt av en inköpsagent.
+Denna artikel visar hur du kan skapa en leveransplan för en inköpsorder. En leveransplan används när en kvantitet på en order eller en journal begärs för att levereras i flera försändelser. De exempel som visas i den här handboken kan användas i demoföretaget USMF. Denna procedur görs normalt av en inköpsagent.
 
 ## <a name="create-a-delivery-schedule"></a>Skapa en leveransplan
 1. I navigeringsfönstret, gå till **Moduler > Anskaffning och källa > Inköpsorder > Alla inköpsorder**.

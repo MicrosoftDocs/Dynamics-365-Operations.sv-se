@@ -1,6 +1,6 @@
 ---
 title: Definiera ER‑konfigurationers beroende av andra komponenter
-description: I det här avsnittet beskrivs hur du utformar en elektronisk rapporteringskonfiguration (ER) och anger sitt beroende från andra programvarukomponenter.
+description: I den här artikeln beskrivs hur du utformar en elektronisk rapporteringskonfiguration (ER) och anger sitt beroende från andra programvarukomponenter.
 author: NickSelin
 ms.date: 07/23/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2901092938dae5ae14480716eeeb2b0386848332e91ad388ce5d34437f8492ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 525e9be1655bdf0c0328ec53509ab1966abd7bde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717604"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883580"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definiera ER‑konfigurationers beroende av andra komponenter
 
@@ -46,7 +46,7 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
 7. Välj Microsoft Dynamics 365 for Operations (1611).
 8. Skriv "[7.1.1541.3036,8)" i fältet Version.
     * [7.1.1541.3036,8)  
-    * När den här konfigurationen har hämtats från en ER-databas utvärderas de beroenden som du anger. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Exempeldatamodell redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Finance and Operations, versionen måste vara 7.1.1541.3036 eller senare och den får inte vara senare än huvudversion 8.   
+    * När den här konfigurationen har hämtats från en ER-databas utvärderas de beroenden som du anger. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Exempeldatamodell redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Ekonomi och drift, versionen måste vara 7.1.1541.3036 eller senare och den får inte vara senare än huvudversion 8.   
 9. Klicka på Spara.
 10. Stäng sidan.
 11. Klicka på Ändra status.
@@ -136,7 +136,7 @@ Vi ska ta bort de skapade konfigurationerna från systemet och hämta tillbaka d
 25. Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.
 26. Expandera Sample data model i trädet.
     * Observera att modellkonfigurationen Exempelmappning har hämtats tillsammans med den valda datamodellkonfigurationen. De två filerna hämtas tillsammans eftersom Exempelmappning har definierats till att implementera den valda datamodellen, och eftersom den gäller för appen. Konfigurationen Exempelmappning (alternative) har inte hämtats eftersom villkoret för programversionen inte är uppfyllt.   
-    * Om du loggar in till Finance and Operations, registrerar samma leverantör, öppnar LCS-projektet och hämtar samma datamodellkonfiguration, hämtas konfigurationen Exempelmappning (alternativ) medan konfigurationen Exempelmappning hoppas över.  
+    * Om du loggar in till Ekonomi och drift, registrerar samma leverantör, öppnar LCS-projektet och hämtar samma datamodellkonfiguration, hämtas konfigurationen Sample mapping (alternative) medan konfigurationen Sample mapping hoppas över.  
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

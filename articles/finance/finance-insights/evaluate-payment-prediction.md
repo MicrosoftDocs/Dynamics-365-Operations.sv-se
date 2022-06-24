@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: c0951c8dcf6205ebbb15baf86b1272af4e95547f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: fcdf276505cf58267a38e9d6174a155ad307653b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677966"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847014"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Utvärdera förutsägelsemodellen för första kundbetalning
 
 [!include [banner](../includes/banner.md)]
 
-I det här ämnet beskrivs hur du utvärderar en förutsägelsemodell när du har aktiverat Finance-insikter och sedan skapat och tränat din första modell. Det här ämnet handlar om modeller för att förutsäga kundbetalningar. Det beskriver de steg du kan vidta för att förstå modellen för kundbetalningsförutsägelse och utvärdera dess effektivitet.
+I det här ämnet beskrivs hur du utvärderar en förutsägelsemodell när du har aktiverat Finance Insights och sedan skapat och tränat din första modell. Det här ämnet handlar om modeller för att förutsäga kundbetalningar. Det beskriver de steg du kan vidta för att förstå modellen för kundbetalningsförutsägelse och utvärdera dess effektivitet.
 
 ## <a name="getting-details-about-the-model"></a>Få information om modellen
 

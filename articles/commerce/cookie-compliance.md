@@ -1,6 +1,6 @@
 ---
 title: Cookie-kompatibilitet
-description: I det här avsnittet beskrivs överväganden för cookie-efterlevnad och standardprinciper som ingår i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs överväganden för cookie-efterlevnad och de standardprinciper som ingår i Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 03/10/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2efb866d513ba90630b0397c1ca144c92d40719c
-ms.sourcegitcommit: 4645278a4b4a38dcb18fdfb49ce2e276eabb59de
+ms.openlocfilehash: 6a96ba21f1872b41156768fb7277933e68a16d90
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "8403157"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863575"
 ---
 # <a name="cookie-compliance"></a>Cookie-kompatibilitet
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs överväganden för cookie-efterlevnad och standardprinciper som ingår i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs överväganden för cookie-efterlevnad och de standardprinciper som ingår i Microsoft Dynamics 365 Commerce.
 
 Sekretess är en viktig faktor när någon spårningsteknik som påverkar näthandelskunder används. På grund av sekretess standarder för efterlevnad, till exempel den allmänna dataskyddsförordningen (GDPR) i Europeiska unionen (EU), måste riktlinjerna för elektronisk sekretess övervägas för alla webbplatser som är aktiva idag. Eftersom många näthandelssajter är globalt tillgängliga som standard är det viktigt att du granskar efterlevnadsstandarderna för din näthandelssajt.
 

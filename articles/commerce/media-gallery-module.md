@@ -1,6 +1,6 @@
 ---
 title: Modul för mediegalleri
-description: Det här avsnittet handlar om modul för mediegalleri och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+description: Denna artikel handlar om moduler för mediegalleri och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 0d05129145c5d6c3967b243cb0855a1c4fd3e84e
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 73eba2c39f9ebf1e4092545565b8cbf2db75cfb5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780878"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881745"
 ---
 # <a name="media-gallery-module"></a>Modul för mediegalleri
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om modul för mediegalleri och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+Denna artikel handlar om moduler för mediegalleri och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 
 I modul för mediegalleri visas en eller flera bilder i en vy i ett galleri. Modul för mediegalleri stöder miniatyrbilderna som antingen ordnas vågrätt (som en rad under bilden) eller lodrätt (som en kolumn bredvid bilden). Moduler för mediagalleri ger också möjligheter som gör att bilder kan zoomas in (förstoras) eller visas i helskärmsläge. För att återges i modulen mediegalleri måste en bild vara tillgänglig i webbplatsskaparen för Commerce mediebibliotek. För närvarande stöder modulen mediegalleri endast bilder.
 
-I standardläget använder modulen mediegalleri det produkt-ID som finns i sidkontexten på en produktinformationssida (PDP) för att återge motsvarande produktbilder. I Commerce-administration måste en mediefilsökväg anges för alla produkter. Bilder ska sedan överföras till webbplatsskaparen för mediebibliotek enligt den filsökväg som definierats för produkterna i Commerce-administration. Dessa bilder omfattar bilder för produkter och alla produktvarianter. Mer information om hur du överför bilder till webbplatsskaparen för mediebibliotek finns i [överför bilder](dam-upload-images.md).
+I standardläget använder modulen mediegalleri det produkt-ID som finns i sidkontexten på en produktinformationssida (PDP) för att återge motsvarande produktbilder. I Commerce headquarters måste en mediefilsökväg anges för alla produkter. Bilder ska sedan överföras till webbplatsskaparen för mediebibliotek enligt den filsökväg som definierats för produkterna i Commerce headquarters. Dessa bilder omfattar bilder för produkter och alla produktvarianter. Mer information om hur du överför bilder till webbplatsskaparen för mediebibliotek finns i [överför bilder](dam-upload-images.md).
 
 Alternativt kan modulen mediegalleri vara värd för en helt granskad uppsättning bilder på en bildgallerisida, där det inte finns några beroenden för produkt-ID eller sidkontext. I det här fallet måste bilder överföras till webbplatsskaparen för mediebibliotek och anges i webbplatsskaparen.
 
@@ -96,7 +96,7 @@ För att lägga till en modul för mediegalleri till en marknadsföringssida, f�
 1. I egenskapsfönstret under **modulen mediegalleri**, välj **Produkt-ID**. I fältet **Produkt-ID** anger du ett produkt-ID.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan. Du bör kunna se bilderna för produkten i en gallerivy.
 1. Om du bara vill använda kuraterade bilder i fastighetsfönstret, under **Bidkälla**, välj **Produkt-ID**. Sedan under **Bilden**, välj **Lägg till en bild** så många gånger som krävs för att lägga till bilder från mediebiblioteket.
-1. Ange eventuella ytterligare egenskaper som du vill ställa in t.ex. **Bildzoom**, **Zoomfaktor** och **Miniatyrorientering**.
+1. Ange eventuella ytterligare egenskaper som du vill konfigurera t.ex. **Bildzoom**, **Zoomfaktor** och **Miniatyrorientering**.
 1. Välj **Spara** när du är klar och välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser

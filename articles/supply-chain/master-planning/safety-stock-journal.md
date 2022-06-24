@@ -1,6 +1,6 @@
 ---
 title: Använd säkerhetslagerjournalen för att uppdatera minimidisponering för artiklar
-description: I detta ämne beskrivs hur du använder säkerhetslagerjournalen för att uppdatera säkerhetslagerkvantitet för artiklar genom att beräkna förslag för minsta disponering baserat på historiska transaktioner.
+description: I denna artikel beskrivs hur du använder säkerhetslagerjournalen för att uppdatera säkerhetslagerkvantitet för artiklar genom att beräkna förslag för minsta disponering baserat på historiska transaktioner.
 author: t-benebo
 ms.date: 10/28/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-28
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 391f741ee08eb0624e80f5c297009c527e50c14c
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 385144738b83fcf6873eae5204b4784d6ecd5b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468564"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851781"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage-for-items"></a>Använd säkerhetslagerjournalen för att uppdatera minimidisponering för artiklar
 
@@ -24,7 +24,7 @@ ms.locfileid: "8468564"
 
 Säkerhetslager anger en ytterligare kvantitet för en artikel som finns i lager i syfte att minska risken för att artikeln tar slut på lagret. Säkerhetslager används som ett buffertlager om försäljningsorder kommer in men leverantören inte kan möta kundens begärda transportdatum.
 
-Detta ämne beskriver hur använder säkerhetslagerjournaler för att beräkna minsta disponeringsförslag baserat på historiska transaktioner och sedan uppdaterar artikeldisponeringen med förslagen.
+Denna artikel beskriver hur använder säkerhetslagerjournaler för att beräkna minsta disponeringsförslag baserat på historiska transaktioner och sedan uppdaterar artikeldisponeringen med förslagen.
 
 ## <a name="overview-of-minimum-coverage-usage"></a>Översikt över minsta disponeringsanvändning
 
@@ -43,7 +43,7 @@ Värdet **Minimum** kan anges på tre sätt:
 
 Säkerhetslagerjournaler används för att beräkna en föreslagen minimikvantitet baserad på en artikels historiska användning, antingen för min-/maxsyften eller för lagerplansändamål. Historisk användning representerar alla utleveranstransaktioner under en angiven period. Dessa utförsäljningstransaktioner inkluderar försäljningsordertransaktioner och lagerjusteringar. Beräkningarna identifierar också vilken inverkan den föreslagna minsta kvantiteten har på lagervärdet och ändringen i lagervärde jämfört med de aktuella minsta kvantiteterna.
 
-Varje journalrad för säkerhetslager representerar en artikel och dess disponeringsdimensioner. Dessa journalrader skapas och visas på sidan **Journalrader för säkerhetslager** (**Huvudplanering \> Huvudplanering \> Körning \> Beräkning av säkerhetslager**). Affärsprocessen för att använda säkerhetslagerjournalerna för beräkning av de föreslagna minsta kvantiteterna beskrivs senare i detta ämne.
+Varje journalrad för säkerhetslager representerar en artikel och dess disponeringsdimensioner. Dessa journalrader skapas och visas på sidan **Journalrader för säkerhetslager** (**Huvudplanering \> Huvudplanering \> Körning \> Beräkning av säkerhetslager**). Affärsprocessen för att använda säkerhetslagerjournalerna för beräkning av de föreslagna minsta kvantiteterna beskrivs senare i denna artikel.
 
 Planeraren använder en säkerhetslagerjournal för att beräkna föreslagna minimikvantiteter för valda artiklar, baserat på historisk användning under valda perioder. De föreslagna minimivärdena kan vid behov ändras manuellt, och du kan granska vilken inverkan de föreslagna minimivärdena kan få på lagervärdet. När journalen bokförs uppdateras de kopplade minimikvantiteterna i artikeldisponeringen automatiskt.
 
@@ -89,7 +89,7 @@ Följ dessa steg om du vill generera journalrader automatiskt.
 
     - **Från datum** – Välj startdatumet för den period som ärenden ska inkluderas i beräkningen för.
     - **Till datum** – Välj slutdatumet för den period som ärenden ska inkluderas i denna beräkning för. Det måste gå minst två månader mellan start- och slutdatumen.
-    - **Beräkna standardavvikelse** – Ange det här alternativet som *Ja* om du vill beräkna standardavvikelsen. Du måste ange detta alternativ som *Ja* om du vill använda alternativet **Använd servicenivå** när du beräknar förslaget (beskrivs längre fram i detta ämne).
+    - **Beräkna standardavvikelse** – Ange det här alternativet som *Ja* om du vill beräkna standardavvikelsen. Du måste ange detta alternativ som *Ja* om du vill använda alternativet **Använd servicenivå** när du beräknar förslaget (beskrivs längre fram i denna artikel).
 
 1. På snabbfliken **Poster som ska ingå** kan du konfigurera filter och begränsningar för att definiera vilka objekt som inkluderas. (Du kan till exempel filtrera efter värde för **disponeringsgrupp**.) Välj **Filter** omdu vill ööpna en standarddialogruta för frågeredigeraren där du kan definiera urvalskriterier, sorteringskriterier och sammankopplingar. Fälten fungerar precis som de gör för andra typer av frågor i Microsoft Dynamics 365 Supply Chain Management.
 1. På snabbfliken **Kör i bakgrunden** väljer du om jobbet ska köras i batchläge och/eller konfigurerar ett återkommande schema. Fälten fungerar precis som de gör för andra typer av [bakgrundsjobb](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) i Supply Chain Management.
@@ -110,7 +110,7 @@ I det här steget beräknas ett föreslaget minimivärde för varje journalrad o
 Beräkningarna som visas kommer inte att påverka de faktiska värdena för minimikvantitet för varje enskild produkt förrän du väljer **Bokför** i åtgärdsfönstret. Vid den tidpunkten kommer värdena för **Ny minimikvantitet** att appliceras på respektive produkt.
 
 1. Gå till **Huvudplanering \> Huvudplanering \> Körning \> Beräkning av säkerhetslager**.
-1. Öppna journalen som du vill beräkna ett förslag för. Du kan även skapa en ny journal enligt beskrivet tidigare i det här ämnet.
+1. Öppna journalen som du vill beräkna ett förslag för. Du kan även skapa en ny journal enligt beskrivet tidigare i denna artikel.
 1. På snabbfliken **Journalrader** väljer du **Beräkna förslag** i verktygsfältet. (Du behöver inte markera några rader.)
 1. I dialogrutan **Skapa försölag för lägsta lagernivå** anger du följande fält:
 
@@ -128,7 +128,7 @@ Du kan markera en valfri rad i en säkerhetslagerjournal och manuellt åsidosät
 
 1. Gå till **Huvudplanering \> Huvudplanering \> Körning \> Beräkning av säkerhetslager**.
 1. Öppna journalen du vill redigera. Du kan även skapa en ny journal enligt beskrivet tidigare.
-1. På snabbfliken **Journalrader** letar du upp den rad som ska justeras och redigerar sedan värdet i kolumnen **Ny minimikvantitet**. Du kan till exempel ställa in värdet **Ny minimikvantitet** så att det matchar värdet för **Beräknad minimikvantitet**. Om värdet för **Beräknad minimikvantitet** är *0* (noll) kan du ange önskat framtida värde.
+1. På snabbfliken **Journalrader** letar du upp den rad som ska justeras och redigerar sedan värdet i kolumnen **Ny minimikvantitet**. Du kan till exempel konfigurera värdet **Ny minimikvantitet** så att det matchar värdet för **Beräknad minimikvantitet**. Om värdet för **Beräknad minimikvantitet** är *0* (noll) kan du ange önskat framtida värde.
 
 ### <a name="post-the-new-minimum-quantity-and-validate-the-result"></a>Bokför den nya minsta kvantiteten och verifiera resultatet
 

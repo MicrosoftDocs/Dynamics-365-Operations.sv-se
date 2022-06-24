@@ -1,6 +1,6 @@
 ---
 title: Ta bort en instans
-description: I det här avsnittet får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
+description: I det här artikel får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 522989298544fa5a2c0812bc57e9ae4ae21fe250
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4256938be70f301d3d7b7663f10addb19725b048
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692378"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859645"
 ---
 # <a name="remove-an-instance"></a>Ta bort en instans
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I detta ämne förklaras hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
+I denna artikel förklaras hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
 
 ## <a name="remove-a-test-drive-environment"></a>Ta bort en testkörningsmiljö
 
@@ -40,7 +40,7 @@ Den befintliga testkörningsmiljön tas bort. Om det tas bort kan du skaffa en n
 
 ## <a name="remove-a-production-environment"></a>Ta bort en produktionsmiljö
 
-Detta ämne förutsätter att du har köpt Personal via en molnbaserad lösningsleverantör (CSP) eller ett arkitekturavtal för företag (EA). 
+Den här artikeln förutsätter att du har köpt Personal via en molnbaserad lösningsleverantör (CSP) eller ett arkitekturavtal för företag (EA). 
 
 Eftersom en enda Personal-miljö ”ingår” i en enda Power Apps-miljö, finns det två alternativ att välja mellan. Det första alternativet innebär att ta bort hela Power Apps-miljön. Det andra alternativet innebär att endast Personal tas bort. Det första alternativet är att föredra när du har skapat en Power Apps-miljö uttryckligen i syfte att etablera Personal och du har precis börjat genomförandet eller du har inte några fastställda integreringer. Det andra alternativet är lämpligt om du har en fastställd Power Apps-miljö fylld med rich-data som utnyttjas i Power Apps och Power Automate.
 

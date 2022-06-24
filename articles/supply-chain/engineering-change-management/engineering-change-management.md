@@ -1,6 +1,6 @@
 ---
 title: Hantera ändringar av konstruktionsprodukter
-description: Det här ämnet innehåller information om konstruktionsändringshantering. Konstruktionsändringshantering innehåller strukturerade processer för att hantera ändringar i konstruktionsprodukter, från att föreslå, begära och göra ändringar, granska och godkänna ändringar, bedöma deras inverkan på befintliga transaktioner och följa upp dem.
+description: Denna artikel innehåller information om konstruktionsändringshantering. Konstruktionsändringshantering innehåller strukturerade processer för att hantera ändringar i konstruktionsprodukter, från att föreslå, begära och göra ändringar, granska och godkänna ändringar, bedöma deras inverkan på befintliga transaktioner och följa upp dem.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9af5184da4f9507e3c06464a223f0debaea4430e
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 71b5ec792013ae80be643b9581e388c291d608dd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384678"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849602"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Hantera ändringar av konstruktionsprodukter
 
@@ -32,7 +32,7 @@ Med processen för begäran om konstruktionsändring kan du registrera en begär
 
 När någon har skickat en begäran om ändring hanteras processen för *granskning och godkännande* av ett arbetsflöde som identifieras vem som måste godkänna ändringen (t.ex. produktägaren).
 
-Om du vill ställa in ett arbetsflöde för konstruktionsändringsorder eller konstruktionsändrings begäran, gå till **Konstruktionsändringshantering \> Konstruktionsarbetssflöden**. Välj **ny**, välj om arbetsflödet ska användas för att granska konstruktionsändringsorder eller konstruktionsändringsbegäran och konfigurera sedan arbetsflödet.
+Om du vill konfigurera ett arbetsflöde för konstruktionsändringsorder eller konstruktionsändrings begäran, gå till **Konstruktionsändringshantering \> Konstruktionsarbetssflöden**. Välj **ny**, välj om arbetsflödet ska användas för att granska konstruktionsändringsorder eller konstruktionsändringsbegäran och konfigurera sedan arbetsflödet.
 
 För mer information om arbetsflöden, se [arbetsflödessystem, översikt](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md). Mer information om produktägare, se [Produktägare](product-owner.md).
 
@@ -154,7 +154,7 @@ Du kan skapa en konstruktionsändringsorder som baseras på en godkänd begäran
 
 När förslaget till ändringar har slutförts hanteras gransknings- och godkännandeprocessen av ett arbetsflöde. Du kan skapa olika arbetsflöden utifrån prioritet och allvarlighetsgrad.
 
-Om du vill ställa in ett arbetsflöde för konstruktionsändringsorder eller konstruktionsändrings begäran, gå till **Konstruktionsändringshantering \> Konstruktionsarbetssflöden**. Välj **ny**, välj om arbetsflödet ska användas för att granska konstruktionsändringsorder eller konstruktionsändringsbegäran och konfigurera sedan arbetsflödet.
+Om du vill konfigurera ett arbetsflöde för konstruktionsändringsorder eller konstruktionsändrings begäran, gå till **Konstruktionsändringshantering \> Konstruktionsarbetssflöden**. Välj **ny**, välj om arbetsflödet ska användas för att granska konstruktionsändringsorder eller konstruktionsändringsbegäran och konfigurera sedan arbetsflödet.
 
 För mer information om arbetsflöden, se [arbetsflödessystem, översikt](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 
@@ -203,7 +203,7 @@ Om du vill visa en rapport för konstruktionsändringsorder öppnar du relevant 
 
 ## <a name="fields-on-an-engineering-change-order"></a>Fält på en konstruktionsändringsorder
 
-De flesta fält på konstruktionsändringsorder är samma fält för frisläppta produkter, konstruktionsversioner, dokument, strukturlistor (rader) och flöden (operationer). Fälten i följande tabell är dock unika för ändringsorder.
+De flesta fält på konstruktionsändringsorder är samma fält för frisläppta produkter, konstruktionsversioner, dokument, strukturlistor (rader) och flöden (åtgärder). Fälten i följande tabell är dock unika för ändringsorder.
 
 | Fält | beskrivning |
 |---|---|

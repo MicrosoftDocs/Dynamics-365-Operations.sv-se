@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 759803767111c27cba76b68430e09a0d9dd6110f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694268"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859707"
 ---
 # <a name="tax-calculation-data-model"></a>Datamodell för momsberäkning
 
@@ -99,7 +99,7 @@ Trettiotvå datamodeller kan inkluderas som fält i ett transaktionshuvud. Alla 
 | Leverera till provins/delstat          | <ul><li>**Försäljningsorder:**<ol><li>Huvud &gt; Leveransadress &gt; Delstat</li></ol></li><li>**Inköpsorder:**<ol><li>Huvud &gt; Leveransadress &gt; Delstat</li></ol></li><li>**Överföringsorder – leverera:**<ol><li>Huvud &gt; Till lagerställe &gt; Primär adress &gt; Delstat</li><li>Huvud &gt; Till plats &gt; Primär adress &gt; Delstat</li></ol></li><li>**Överföringsorder – ta emot:**<ol><li>Huvud &gt; Till lagerställe &gt; Primär adress &gt; Delstat</li><li>Huvud &gt; Till plats &gt; Primär adress &gt; Delstat</li></ol></li><li>**Anbudsförfrågan:**<ol><li>Huvud &gt; Leveransadress &gt; Delstat</li></ol></li><li>**Försäljningsoffert:**<ol><li>Huvud &gt; Leveransadress &gt; Delstat</li></ol></li><li>**Fritextfaktura:**<ol><li>Huvud &gt; Kundkonto &gt; Standardleveransadress &gt; Delstat</li><li>Huvud &gt; Kundkonto &gt; Primär adress &gt; Delstat</li></ol></li><li>**Journal (kund):**<ol><li>Kundkonto &gt; Standardleveransadress &gt; Delstat</li><li>Kundkonto &gt; Primär adress &gt; Delstat</li></ol></li><li>**Journal (leverantör):**<ol><li>Juridisk person &gt; Standardleveransadress &gt; Delstat</li><li>Juridisk person &gt; Primär adress &gt; Delstat</li></ol></li></ul> |
 | Leverera till postnummer                 | <ul><li>**Försäljningsorder:**<ol><li>Huvud &gt; Leveransadress &gt; Postnummer</li></ol></li><li>**Inköpsorder:**<ol><li>Huvud &gt; Leveransadress &gt; Postnummer</li></ol></li><li>**Överföringsorder – leverera:**<ol><li>Huvud &gt; Till lagerställe &gt; Primär adress &gt; Postnummer</li><li>Huvud &gt; Till plats &gt; Primär adress &gt; Postnummer</li></ol></li><li>**Överföringsorder – ta emot:**<ol><li>Huvud &gt; Till lagerställe &gt; Primär adress &gt; Postnummer</li><li>Huvud &gt; Till plats &gt; Primär adress &gt; Postnummer</li></ol></li><li>**Anbudsförfrågan:**<ol><li>Huvud &gt; Leveransadress &gt; Postnummer</li></ol></li><li>**Försäljningsoffert:**<ol><li>Huvud &gt; Leveransadress &gt; Postnummer</li></ol></li><li>**Fritextfaktura:**<ol><li>Huvud &gt; Kundkonto &gt; Standardleveransadress &gt; Postnummer</li><li>Huvud &gt; Kundkonto &gt; Primär adress &gt; Postnummer</li></ol></li><li>**Journal (kund):**<ol><li>Kundkonto &gt; Standardleveransadress &gt; Postnummer</li><li>Kundkonto &gt; Primär adress &gt; Postnummer</li></ol></li><li>**Journal (leverantör):**<ol><li>Juridisk person &gt; Standardleveransadress &gt; Postnummer</li><li>Juridisk person &gt; Primär adress &gt; Postnummer</li></ol></li></ul> |
 | Webbplats                             | <ul><li>**Försäljningsorder:** Plats</li><li>**Inköpsorder:** Plats</li><li>**Överföringsorder – leverera:** Plats för Från lagerställe</li><li>**Överföringsorder – ta emot:** Plats för Till lagerställe</li><li>**Anbudsförfrågan:** Plats</li><li>**Försäljningsoffert:** Plats</li></ul> |
-| Momsriktning                    | <ul><li>**Försäljningsorder:** Utgående</li><li>**Inköpsorder:** Inkommande</li><li>**Överföringsorder – leverera:** Utgående</li><li>**Överföringsorder – ta emot:** Inkommande</li><li>**Inköpsrekvisitioner:** Inkommande</li><li>**Anbudsförfrågan:** Inkommande</li><li>**Försäljningsoffert:** Utgående</li><li>**Fritextfaktura:** Utdata</li></ul> |
+| Momsriktning                    | <ul><li>**Försäljningsorder:** Utgående</li><li>**Inköpsorder:** Inkommande</li><li>**Överföringsorder – leverera:** Utgående</li><li>**Överföringsorder – ta emot:** Inkommande</li><li>**Inköpsrekvisitioner:** Inkommande</li><li>**Anbudsförfrågan:** Inkommande</li><li>**Försäljningsoffert:** Utgående</li><li>**Fritextfaktura:** Utdata</li><li>**Journal:** Utdata</li></ul> |
 | Leverantörskonto                   | <ul><li>**Inköpsorder:** Leverantörskonto</li><li>**Journal (leverantör):** Leverantörskonto</li></ul> |
 | Leverantörsfakturakonto           | <ul><li>**Inköpsorder:** Fakturakonto</li><li>**Journal (leverantör):**<ol><li>Leverantörsmall &gt; fakturakonto</li><li>Leverantörskonto</li></ol></li></ul> |
 | Lagerställe                        | <ul><li>**Försäljningsorder:** Lagerställe</li><li>**Inköpsorder:** Lagerställe</li><li>**Överföringsorder – leverera:** Från lagerställe</li><li>**Överföringsorder – ta emot:** Till lagerställe</li><li>**Anbudsförfrågan:** Lagerställe</li><li>**Försäljningsoffert:** Lagerställe</li></ul> |

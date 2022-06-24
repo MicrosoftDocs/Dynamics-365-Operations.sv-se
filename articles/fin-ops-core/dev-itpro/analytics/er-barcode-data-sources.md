@@ -1,6 +1,6 @@
 ---
 title: Använd streckkodsdatakällor för att generera streckkodsbilder
-description: I det här avsnittet beskrivs hur du använder streckkodsdatakällor för att generera streckkodsbilder.
+description: I den här artikeln beskrivs hur du använder streckkodsdatakällor för att generera streckkodsbilder.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: a5a396080d8b5dd4c2ed9a0eb15c1286e8799ebf
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: c8e755b664656a1a10672a990dc581969f6a7b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323962"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880324"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Använd streckkodsdatakällor för att generera streckkodsbilder
 
@@ -77,7 +77,7 @@ När du konfigurerar en datakällan **streckkod** kan du definiera särskilda å
 >
 > När du binder en **streckkod** datakälla till ett cellelement i ett format och cellelementet representerar antingen en Word-kontroll eller en Excel-bild, visas datakällan i bindningen som en funktion med en parameter av typen **sträng**. Du måste använda den här parametern om du vill ange texten som ska omvandlas till en streckkodsbild och läsas när en genererad streckkod skannas.
 
-Om du vill veta mer om den här funktionen fyller du i exemplet i det här avsnittet.
+Om du vill veta mer om den här funktionen fyller du i exemplet i den här artikeln.
 
 ## <a name="example-generate-a-payment-check-that-contains-a-bar-code-that-encodes-the-payable-amount"></a>Exempel: generera en betalningscheck som innehåller en streckkod som kodar det utgående beloppet
 

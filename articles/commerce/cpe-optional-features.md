@@ -1,6 +1,6 @@
 ---
-title: Konfigurera valfria funktioner för en bedömningsmiljö för Dynamics 365 Commerce
-description: Detta ämne förklarar hur du konfigurerar valfria funktioner för bedömningsmiljö för Microsoft Dynamics 365 Commerce.
+title: Konfigurera valfria funktioner för en Dynamics 365 Commerce utvärderingsmiljö
+description: Denna artikel förklarar hur du konfigurerar valfria funktioner för bedömningsmiljö för Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 07/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2f4e93b7ece7652b72ae2067be4de73f45a8261ada1b0bc731e2bd2147dcccc6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 39d4784e21c4fb42ca218d507616d49eff309ee1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728301"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861924"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera valfria funktioner för en Dynamics 365 Commerce utvärderingsmiljö
 
 [!include [banner](includes/banner.md)]
 
-Detta ämne förklarar hur du konfigurerar valfria funktioner för bedömningsmiljö för Microsoft Dynamics 365 Commerce.
+Denna artikel förklarar hur du konfigurerar valfria funktioner för bedömningsmiljö för Microsoft Dynamics 365 Commerce.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -57,7 +57,7 @@ Följande förutsättningar måste uppfyllas om du vill utvärdera e-postfunktio
 
 ### <a name="update-the-media-base-url"></a>Uppdatera mediebas-URL
 
-1. Logga in på Commerce-administration.
+1. Logga in på Commerce headquarters.
 1. Med hjälp av menyn till vänster, gå till **Moduler \> Retail och Commerce \> Kanalinställning \> Kanalprofiler**.
 1. Välj **Redigera**.
 1. Under **Profilegenskaper**, ersätt värdet för egenskapen **Medieserverbas-URL** med den mediebas-URL du skapade tidigare.
@@ -71,7 +71,7 @@ Följande förutsättningar måste uppfyllas om du vill utvärdera e-postfunktio
 > [!NOTE]
 > SMTP-servern eller e-posttjänsten som du anger här måste vara tillgänglig från den Azure-prenumeration du använder för miljön.
 
-1. Logga in på Commerce-administration.
+1. Logga in på Commerce headquarters.
 1. Använd menyn till vänster, gå till **Moduler \> Retail och Commerce \> Administrationsinställning \> Parametrar \> E-postparametrar**.
 1. På fliken **SMTP-inställningar** i fältet **utgående e-postserver** anger du FQDN- eller IP-adressen för SMTP-servern eller e-posttjänsten.
 1. Ange **SMTP-portnummer** anger du portnumret. (Om du inte använder Secure Sockets Layer \[SSL\], är standardportnumret **25**.)
@@ -86,7 +86,7 @@ Följande förutsättningar måste uppfyllas om du vill utvärdera e-postfunktio
 
 För varje transaktionshändelse som du vill skicka e-post till måste du uppdatera e-postmallen med en giltig e-postadress till avsändaren.
 
-1. Logga in på Commerce-administration.
+1. Logga in på Commerce headquarters.
 1. Använd menyn till vänster, gå till **Moduler \> Retail och Commerce \> Administrationsinställning \> Parametrar \> Organisationens e-postmallar**.
 1. Välj **Visa lista**.
 1. Följ dessa steg i listan för varje mall:
@@ -108,7 +108,7 @@ Du kanske vill anpassa e-postmallarna så att de använder olika bilder. Eller s
     - Förpackningsordermall
     - Hämta förpackningsordermall
 
-1. Anpassa mallarna med hjälp av en text- eller HTML-redigerare. Se listan över [token som stöds](#supported-tokens-in-the-email-template) senare i det här avsnittet.
+1. Anpassa mallarna med hjälp av en text- eller HTML-redigerare. Se listan över [token som stöds](#supported-tokens-in-the-email-template) senare i denna artikel.
 1. Logga in på Commerce.
 1. Med hjälp av menyn till vänster, gå till **Moduler \> Organisationsadministration \> Inställning \> E-postmall för organisation**.
 1. Expandera listan till vänster om du vill se alla mallar.

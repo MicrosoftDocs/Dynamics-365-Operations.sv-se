@@ -1,6 +1,6 @@
 ---
 title: Funktion för att dela upp faktura
-description: I det här avsnittet beskrivs inställning och funktionalitet för uppdelning av fakturor efter leveransadress och skattekontonummer (TAN).
+description: I den här artikeln beskrivs inställning och funktionalitet för uppdelning av fakturor efter leveransadress och skattekontonummer (TAN).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f1dac8d51c24009dcf0c4acbc49f06f32abf0dec
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7bbeb94429c2c69b7b8ea3089390db676a021b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724681"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874444"
 ---
 # <a name="split-invoice-functionality"></a>Funktion för att dela upp faktura
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs inställning och funktionalitet för uppdelning av fakturor efter leveransadress och skattekontonummer (TAN).
+I den här artikeln beskrivs inställning och funktionalitet för uppdelning av fakturor efter leveransadress och skattekontonummer (TAN).
 
 På sidan **Leverantörsreskontraparametrar**, under fliken **Allmänt**, markerar du kryssrutan **Produktkvitto** eller **Faktura** för att bokföra och dela upp ett produktkvitto eller en faktura som har olika leveransadresser och TAN på sidan **Inköpsorder**. Den bokförda fakturan delas sedan upp efter leveransadress och TAN.
 

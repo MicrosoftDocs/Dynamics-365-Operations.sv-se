@@ -1,6 +1,6 @@
 ---
-title: Konfigurera ett lagerställe med hjälp av en konfigurationsmall
-description: Det här avsnittet innehåller information om hur du konfigurera ett lagerställe med hjälp av en konfigurationsmall.
+title: Konfigurera ett lagerställe med hjälp av konfigurationsmall
+description: Denna artikel innehåller information om hur du konfigurerar ett lagerställe med hjälp av en konfigurationsmall.
 author: yufeihuang
 ms.date: 11/16/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 6698d615826a1555426824bb76db654fde539360
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 737b6f2f645ff270e5a49d54ca7542df3c075f94
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571099"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856118"
 ---
-# <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Konfigurera ett lagerställe med hjälp av en konfigurationsmall
+# <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Konfigurera ett lagerställe med hjälp av konfigurationsmall
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller information om hur du konfigurera ett lagerställe med hjälp av en konfigurationsmall. Det finns flera fördefinierade konfigurationsmallar som du kan använda. Information om hur du använder dessa mallar finns i [Konfigurationsdatamallar](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
+Denna artikel innehåller information om hur du konfigurerar ett lagerställe med hjälp av en konfigurationsmall. Det finns flera fördefinierade konfigurationsmallar som du kan använda. Information om hur du använder dessa mallar finns i [Konfigurationsdatamallar](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>Scenarier där konfigurationsmallar kan vara till hjälp
 
@@ -38,14 +38,14 @@ Konfigurationsmallar kan vara användbar i många situationer. Nedan följer nå
 - Du vill snabbt förbereda dig för en demonstration av funktionerna för lagerstället.
 - Du vill att befintliga objekt och lager ska använda funktionerna i lagerstyrning i stället för funktionen i Lagerhantering.
 
-I det här avsnittet gäller det första av dessa scenarier. Det visar hur du kan använda en konfigurationsmall för att kopiera en konfigurationsinställning från en testmiljö till en produktionsmiljö.
+I denna artikel gäller det första av dessa scenarier. Det visar hur du kan använda en konfigurationsmall för att kopiera en konfigurationsinställning från en testmiljö till en produktionsmiljö.
 
 ## <a name="copy-a-configuration-setup-from-a-test-environment-to-a-production-environment"></a>Kopiera en konfigurationsinställning från en testmiljö till en produktionsmiljö
 
 För det här scenariot existerar redan konfigurationsinställningarna för ett lagerställe och vissa transaktionsprocesser finns redan i en testmiljö. Du vill nu kopiera konfigurationsinställningarna för lagerstället från testmiljön till en produktionsmiljö.
 
 > [!NOTE]
-> Det är viktigt att du inkluderar andra inställningsdata när du kopierar en konfigurationsinställning. Du vill till exempel ställa in produkter genom att kopiera inställningarna från en testmiljö. Men du kan inte ställa in en fast plockplats för en produkt innan den produkten skapas. Även om enskilda konfigurationsmallar inte stöder den här typen av beroenden, finns det standarddatamallar som stöder den. Du kan enkelt inkludera dessa standarddatamallar i konfigureringsprocessen.
+> Det är viktigt att du inkluderar andra inställningsdata när du kopierar en konfigurationsinställning. Du vill till exempel konfigurera produkter genom att kopiera inställningarna från en testmiljö. Men du kan inte konfigurera en fast plockplats för en produkt innan den produkten skapas. Även om enskilda konfigurationsmallar inte stöder den här typen av beroenden, finns det standarddatamallar som stöder den. Du kan enkelt inkludera dessa standarddatamallar i konfigureringsprocessen.
 
 ### <a name="export-a-default-warehouse-template"></a>Exportera en standardlagermall 
 
@@ -90,9 +90,9 @@ Du kan hämta en zip-fil för datapaketet. Den här filen innehåller alla data 
 
 Loggen **Visa körning** ger detaljerad information om varje dataenhet som importeras. Du kan använda mellanlagringsdatavyn för att snabbt komma till måldata. På så sätt visas hur de importerade data ser ut på tillhörande sidor i programmet. När du använder standarddatamallar fungerar importsekvensen för varje datatabell på fördefinierade sätt, för att garantera att alla beroende data importeras först. Om anpassade datatabeller ingår i projektet, måste du kontrollera att du angett rätt sekvens. Mer information finns i [Konfigurationsdatamallar](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
-Om du vill veta mer om hur du använder lagermallar för att kopiera konfigurationen för ett lagerställe från ett företag till ett nytt företag inom samma instans kan du titta på den här 3-minuters videon på YouTube: [Använd lagermall för att kopiera konfigurationen i Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
+Om du vill veta mer om hur du använder lagermallar för att kopiera konfigurationen för ett lagerställe från ett företag till ett nytt företag inom samma instans kan du titta på den här 3-minuters videon på YouTube om [Hur du använder lagermall för att kopiera konfigurationen för Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs) i .
 
-## <a name="related-topic"></a>Relaterat ämne
+## <a name="related-article"></a>Relaterad artikel
 
 [Konfigurationsdatamallar](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
 

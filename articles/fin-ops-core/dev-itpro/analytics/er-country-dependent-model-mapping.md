@@ -1,6 +1,6 @@
 ---
-title: Konfigurera ER-modellmappningar som är beroende av landkontext
-description: I det här avsnittet beskrivs hur du kan ställa in ER-modellmappningar så att de är beroende av land/region i den juridiska personen som styr deras användning.
+title: Konfigurera ER-modellmappningar som är beroende av landssammanhang
+description: I den här artikeln beskrivs hur du kan ställa in ER-modellmappningar så att de är beroende av land/region i den juridiska personen som styr deras användning.
 author: NickSelin
 ms.date: 11/11/2019
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 771b14662638838ac1f39d85b19ac58a47352c79
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605381"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883887"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Konfigurera ER-modellmappningar som är beroende av landkontext
 
 [!include[banner](../includes/banner.md)]
 
-Du kan konfigurera ER-modellmappningar (elektronisk rapportering) så att de implementerar en allmän ER-datamodell men är specifik för Dynamics 365 Finance. Det här avsnittet innehåller information om hur du utformar flera ER-modellmappningar för en ER-datamodell som kontrollerar hur de används i motsvarande ER-format som körs från företag med olika lands- eller regionskontexter.
+Du kan konfigurera ER-modellmappningar (elektronisk rapportering) så att de implementerar en allmän ER-datamodell men är specifik för Dynamics 365 Finance. Den här artikeln innehåller information om hur du utformar flera ER-modellmappningar för en ER-datamodell som kontrollerar hur de används i motsvarande ER-format som körs från företag med olika lands- eller regionskontexter.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-För att slutföra exemplet i det här avsnittet måste du ha följande åtkomst:
+För att slutföra exemplet i den här artikeln måste du ha följande åtkomst:
 
 - Gå till Finance för någon av följande roller:
     - Utvecklare för elektronisk rapportering
@@ -42,11 +42,11 @@ För att slutföra exemplet i det här avsnittet måste du ha följande åtkomst
     - Konsult för funktionen för elektronisk rapportering
     - Systemadministratör
 
-Vissa steg i det här avsnittet kräver att du kör ett ER-format. I vissa fall påverkas körningen av ett ER-format av land- eller regionskontexten för det företag som du för närvarande är inloggad på. Du kan köra ett återställningsformat i den aktuella RCS-instansen om företaget som har den obligatoriska lands-/regionskontexten är tillgängligt i RCS. I annat fall måste du överföra en slutförd version av ER-modellmappningen och ER-format som använder ER-datamodellen till din ekonomiinstans och sedan köra ER-formatet i ekonomiinstansen. Mer information om hur du importerar konfigurationer som finns i RCS till en ekonomiinstans finns i [Importera konfigurationer från RCS](rcs-download-configurations.md).
+Vissa steg i den här artikeln kräver att du kör ett ER-format. I vissa fall påverkas körningen av ett ER-format av land- eller regionskontexten för det företag som du för närvarande är inloggad på. Du kan köra ett återställningsformat i den aktuella RCS-instansen om företaget som har den obligatoriska lands-/regionskontexten är tillgängligt i RCS. I annat fall måste du överföra en slutförd version av ER-modellmappningen och ER-format som använder ER-datamodellen till din ekonomiinstans och sedan köra ER-formatet i ekonomiinstansen. Mer information om hur du importerar konfigurationer som finns i RCS till en ekonomiinstans finns i [Importera konfigurationer från RCS](rcs-download-configurations.md).
 
 ## <a name="single-model-mapping-case"></a>Enstaka modellmappningsfall
 
-Följ instruktionerna i [tillägg 1](#appendix1) i det här avsnittet för att designa de nödvändiga ER-komponenterna. Du har nu modellmappningskonfigurationen **Mappning (allmänt)** som innehåller modellmappningen för definitionen **startpunkt 1**.
+Följ instruktionerna i [tillägg 1](#appendix1) i den här artikeln för att designa de nödvändiga ER-komponenterna. Du har nu modellmappningskonfigurationen **Mappning (allmänt)** som innehåller modellmappningen för definitionen **startpunkt 1**.
 
 ![ER-konfigurationssida, Format för inlärning av mappningskonfiguration.](./media/RCS-Context-specific-mapping-Tree.PNG)
 
@@ -59,7 +59,7 @@ Lägg märke till att webbläsaren kan hämta textfilen som genererades i ER-for
 
 ## <a name="multiple-shared-model-mappings-case"></a>Flera delade modellmappningsfall
 
-Följ instruktionerna i [tillägg 2](#appendix2) i det här avsnittet för att designa de nödvändiga ER-komponenterna. Du har nu modellmappningskonfigurationen **Mappning (allmänt)** och **Mappning (allmänt) anpassa** som var och en innehåller modellmappningen för definitionen **startpunkt 1**.
+Följ instruktionerna i [tillägg 2](#appendix2) i den här artikeln för att designa de nödvändiga ER-komponenterna. Du har nu modellmappningskonfigurationen **Mappning (allmänt)** och **Mappning (allmänt) anpassa** som var och en innehåller modellmappningen för definitionen **startpunkt 1**.
 
 ![ER-konfigurationssida, Mappa allmän anpassad konfiguration.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
@@ -97,7 +97,7 @@ Observera att körningen av det valda återställningsformatet lyckas. Webbläsa
 
 ## <a name="multiple-mixed-model-mappings-case"></a>Flera blandade modellmappningsfall
 
-Följ instruktionerna i [tillägg 3](#appendix3) i det här avsnittet för att designa de nödvändiga ER-komponenterna. Du har nu konfigurationen **Mappning (allmänt)**, **Mappning (allmänt) - anpassa** och **Mappning (FR) modellmappning** som innehåller modellmappningen för definitionen **startpunkt 1**.
+Följ instruktionerna i [tillägg 3](#appendix3) i den här artikeln för att designa de nödvändiga ER-komponenterna. Du har nu konfigurationen **Mappning (allmänt)**, **Mappning (allmänt) - anpassa** och **Mappning (FR) modellmappning** som innehåller modellmappningen för definitionen **startpunkt 1**.
 
 Observera att version 1 av konfiguration av modellmappning **Mappning (FR)** är konfigurerad så att den bara gäller för ER-format för modellen **modell för att lära mappningar** som körs i ekonomiföretag med franskt land/region-sammanhang.
 
@@ -138,10 +138,10 @@ Observera att körningen av det valda återställningsformatet lyckas. Webbläsa
 
 Som du har sett fungerar valet av modellmappning för körningen av ett ER-format på följande sätt:
 
-- Definitionen modellmappning som används för ett ER-format anges i (**startpunkt 1** i exemplen i det här avsnittet).
-- Alla mappningskonfigurationer som innehåller en mappning som har den angivna definitionen, och som uppfyller eventuella kontextbegränsningar för land/region som har konfigurerats, kan användas för att köra ER-formatet **Mappning (allmänt)**, **Mappning (allmänt) - anpassa** och **Mappning (FR)** i exemplen i det här avsnittet.
-- Alla standardmodellmappningar som har begränsningar för land/region har högst prioritet för markering (**Mappning (FR)** i exemplen i det här avsnittet).
-- Alla standardmodellmappningar som inte har begränsningar för land/region har nästa högsta prioritet för markering (**Mappning (allmänt) - anpassa** i exemplen i det här avsnittet).
+- Definitionen modellmappning som används för ett ER-format anges i (**startpunkt 1** i exemplen i den här artikeln).
+- Alla mappningskonfigurationer som innehåller en mappning som har den angivna definitionen, och som uppfyller eventuella kontextbegränsningar för land/region som har konfigurerats, kan användas för att köra ER-formatet **Mappning (allmänt)**, **Mappning (allmänt) - anpassa** och **Mappning (FR)** i exemplen i den här artikeln.
+- Alla standardmodellmappningar som har begränsningar för land/region har högst prioritet för markering (**Mappning (FR)** i exemplen i den här artikeln).
+- Alla standardmodellmappningar som inte har begränsningar för land/region har nästa högsta prioritet för markering (**Mappning (allmänt) - anpassa** i exemplen i den här artikeln).
 - Alla modellmappningar som har begränsningar i land/region har högre prioritet än en modellmappning som saknar sammanhangsbegränsningar för land/region.
 
 Följande tabell ger information om resultatet av val av modellmappning i alla möjliga fall av inställningar av modellmappning:

@@ -1,6 +1,6 @@
 ---
 title: Ställ in en extern katalog för PunchOut eProcurement
-description: Det här avsnittet beskriver hur en extern katalog eller PunchOut-katalog används för att samla in offertinformation från en leverantör och lägga till den i en rekvisition.
+description: Denna artikel beskriver hur en extern katalog eller PunchOut-katalog används för att samla in offertinformation från en leverantör och lägga till den i en rekvisition.
 author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f8e46be093a14139c884870b8685d54865fc6953
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5b109ec1db39240e6816d79092763b4686857676
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678811"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882501"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Ställ in en extern katalog för PunchOut eProcurement
 
@@ -30,16 +30,16 @@ Genom att använda den externa katalogen kan du säkerställa att produkt- och p
 
 När den externa katalogen har ställts in och anställd förbereder en rekvisition finns det ett alternativ för att omdirigera till en extern plats, den externa katalogen, och återgå till varukorgen som skapades på den externa platsen. Detta meddelande är baserat på cXML-protokollet och måste ställas in mellan systemen för den köpande och den säljande organisationen
 
-Om du vill ställa in kommunikationen måste din leverantör tillhandahålla uppgifter som du kan använda i konfiguration av den externa katalogen såsom identiteten för köparens företaget, till exempel ”DUNS” och ”DUNS-nummer”, autentiseringsuppgifter och webbadressen för åtkomst till leverantörens katalog.
+Om du vill konfigurera kommunikationen måste din leverantör tillhandahålla uppgifter som du kan använda i konfiguration av den externa katalogen såsom identiteten för köparens företaget, till exempel ”DUNS” och ”DUNS-nummer”, autentiseringsuppgifter och webbadressen för åtkomst till leverantörens katalog.
 
 ## <a name="setting-up-an-external-catalog"></a>Ställa in en extern katalog
 
-Den externa katalogen bör aktivera en medarbetare som registrerar en inköpsrekvisition som ska omdirigeras till en extern webbplats för val av produkter. Produkter som medarbetaren väljer från den externa katalogen returneras med aktuell prisinformation och härifrån kan de läggas till på inköpsrekvisitionen. Syftet är inte att göra det möjligt för medarbetare att göra en beställning på den externa webbplatsen. När du ställer in den externa katalogen måste du kontrollera att syftet med den site det går att komma åt via den externa katalogen är att samla in offertinformation, inte att lägga riktiga order.
+Den externa katalogen bör aktivera en medarbetare som registrerar en inköpsrekvisition som ska omdirigeras till en extern webbplats för val av produkter. Produkter som medarbetaren väljer från den externa katalogen returneras med aktuell prisinformation och härifrån kan de läggas till på inköpsrekvisitionen. Syftet är inte att göra det möjligt för medarbetare att göra en beställning på den externa webbplatsen. När du konfigurerar den externa katalogen måste du kontrollera att syftet med den site det går att komma åt via den externa katalogen är att samla in offertinformation, inte att lägga riktiga order.
 
-### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Om du vill ställa in en extern leverantörskatalog måste du göra följande:
+### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Om du vill konfigurera en extern leverantörskatalog måste du göra följande:
 
 1. Ställa in en kategorihierarki för anskaffning. För mer information, se [Ställ in policyer för anskaffningskategorihierarkier](tasks/set-up-policies-procurement-category-hierarchies.md).
-2. Registrera leverantören i Supply Chain Management. Innan du kan ställa in konfigurationerna för åtkomst till en extern leverantörskatalog måste du ställa in leverantören och leverantörskontakten i Microsoft Dynamics 365. Dessutom måste leverantörens externa katalog läggs till i den valda anskaffningkategorin. Mer information om hur du registrerar leverantörer finns i [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md). Information om hur du tilldelar leverantörer till en anskaffningskategori finns i [Godkänna leverantörer för specifika anskaffningskategorier](tasks/approve-vendors-specific-procurement-categories.md).
+2. Registrera leverantören i Supply Chain Management. Innan du kan konfigurera konfigurationerna för åtkomst till en extern leverantörskatalog måste du konfigurera leverantören och leverantörskontakten i Microsoft Dynamics 365. Dessutom måste leverantörens externa katalog läggs till i den valda anskaffningkategorin. Mer information om hur du registrerar leverantörer finns i [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md). Information om hur du tilldelar leverantörer till en anskaffningskategori finns i [Godkänna leverantörer för specifika anskaffningskategorier](tasks/approve-vendors-specific-procurement-categories.md).
 3. Kontrollera att måttenheterna och valutan som leverantören använder har ställts in. Information om hur du skapar en måttenhet finns i [Hantera måttenheter](../pim/tasks/manage-unit-measure.md).
 4. Konfigurera den externa leverantörskatalogen med hjälp av kraven för webbplatsen för din externa leverantörskatalog. Mer information om den här uppgiften finns i [Konfigurera externa leverantörskatalogen](#configure-the-external-vendor-catalog).
 5. Testa leverantörens externa katalogkonfigurationer för att bekräfta att inställningarna är korrekta och att du kan komma åt leverantörens externa katalog. Använd åtgärden **Validera inställningar** för att validera meddelandet om begäran om inställning som du har definierat. Det här meddelandet ska åstadkomma att leverantörens externa katalogwebbplats öppnas i ett webbläsarfönster. Vid validering kan du inte beställa artiklar och tjänster från leverantören. Om du vill beställa artiklar och tjänster måste du använda leverantörens katalog från en inköpsrekvisition.

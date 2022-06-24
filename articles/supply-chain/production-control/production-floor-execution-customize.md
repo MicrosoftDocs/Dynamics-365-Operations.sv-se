@@ -1,6 +1,6 @@
 ---
 title: Anpassa körningsgränssnittet för produktionsgolvet
-description: I det här ämnet beskrivs hur du utökar aktuella formulär eller skapar nya formulär och knappar för körningsgränssnittet för produktionsgolvet.
+description: I denna artikel beskrivs hur du utökar aktuella formulär eller skapar nya formulär och knappar för körningsgränssnittet för produktionsgolvet.
 author: johanhoffmann
 ms.date: 05/04/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-11-08
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: ad5037442f27a5068b38613655591f1298808eac
-ms.sourcegitcommit: 28537b32dbcdefb1359a90adc6781b73a2fd195e
+ms.openlocfilehash: 13fa6c2f3c30a820585d1b5a758f57ec563664d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712955"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845994"
 ---
 # <a name="customize-the-production-floor-execution-interface"></a>Anpassa körningsgränssnittet för produktionsgolvet
 
@@ -180,7 +180,7 @@ Följande procedur visar ett exempel på hur du lägger till datum- och tidskont
         }
     ```
 
-1. Konfigurera beteendet för varje datetime-kontrollant och koppla varje kontrollant så att den formar en del. I följande exempel visas hur du ställer in data för kontroller för från-datum och tid från. Du kan lägga till liknande kod för datum till- och tid till-kontroller (visas inte).
+1. Konfigurera beteendet för varje datetime-kontrollant och koppla varje kontrollant så att den formar en del. I följande exempel visas hur du konfigurerar data för kontroller för från-datum och tid från. Du kan lägga till liknande kod för datum till- och tid till-kontroller (visas inte).
 
     ```xpp
     /// <summary>
@@ -204,7 +204,7 @@ Följande procedur visar ett exempel på hur du lägger till datum- och tidskont
     }
     ```
 
-    Om allt du behöver är en datumkontroll kan du hoppa över tidskontrollinställningarna och i stället bara ställa in datumkontrollen som visas i följande exempel:
+    Om allt du behöver är en datumkontroll kan du hoppa över tidskontrollinställningarna och i stället bara konfigurera datumkontrollen som visas i följande exempel:
 
     ```xpp
     {

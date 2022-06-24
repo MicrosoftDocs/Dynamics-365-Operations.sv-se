@@ -1,6 +1,6 @@
 ---
 title: Koncerninterna parametrar
-description: Det här ämnet förklarar koncerninterna parametrar
+description: Denna artikel förklarar koncerninterna parametrar
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 78186d466d88f876629ceb81ec99b94c8818c560
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 7a9b921c7db47fe99981438932e5587f9a18f018
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678615"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850537"
 ---
 # <a name="intercompany-parameters"></a>Koncerninterna parametrar
 
 [!include [banner](../../includes/banner.md)]
 
-I en koncernintern organisation kan du ställa in parametrar som bestämmer hur du handlar mellan olika juridiska personer. Parametrarna avgörs av de fält du väljer. Du kan välja olika kombinationer som återspeglar olika handelsscenarion.
+I en koncernintern organisation kan du konfigurera parametrar som bestämmer hur du handlar mellan olika juridiska personer. Parametrarna avgörs av de fält du väljer. Du kan välja olika kombinationer som återspeglar olika handelsscenarion.
 
 Följande två exempel beskriver scenarier för koncerninterna organisationer, en med två nivåer och en med tre nivåer.
 

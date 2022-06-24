@@ -1,6 +1,6 @@
 ---
 title: Arbetsorderpooler
-description: I det här avsnittet beskrivs hur du arbetar med arbetsorderpooler i Tillgångshantering.
+description: I denna artikel beskrivs hur du arbetar med arbetsorderpooler i Tillgångshantering.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dd474451569e123fab811cc3625862d599a07963f3714c72d5a724ffd052983e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6fc97c8a65afe24bfe730e6d13eb178ddcafc2d9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849573"
 ---
 # <a name="work-order-pools"></a>Arbetsorderpooler
 
@@ -81,7 +81,7 @@ På listsidan **Alla arbetsorderpooler** eller **Aktiva arbetsorderpooler** kan 
 >[!NOTE]
 >När en arbetsorderpool inte längre är relevant för din arbetsplanering ställer du in alternativet **Aktiv** för den poolen till **Nej** i listvyn på sidan **Arbetsorderpool**.
 
-Om du vill radera alla arbetsorderrader anger du alternativet **Ta bort arbetsorderrelationer** till **Ja**. Det här alternativet är användbart om du t.ex. vill skapa en tom pool som du kan använda senare för andra arbetsorder. När du är redo att använda arbetsorderpoolen för att skapa nya arbetsordrelationer senare, kom ihåg att ställa in alternativet **Ta bort arbetsorderrelationer** till **Nej**.
+Om du vill radera alla arbetsorderrader anger du alternativet **Ta bort arbetsorderrelationer** till **Ja**. Det här alternativet är användbart om du t.ex. vill skapa en tom pool som du kan använda senare för andra arbetsorder. När du är redo att använda arbetsorderpoolen för att skapa nya arbetsordrelationer senare, kom ihåg att konfigurera alternativet **Ta bort arbetsorderrelationer** till **Nej**.
 
 I bilden nedan visas ett exempel på listsidan **Arbetsorderpool**.
 

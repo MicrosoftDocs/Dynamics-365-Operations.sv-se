@@ -1,6 +1,6 @@
 ---
-title: Integrera Dynamics 365 Supply Chain Management (tillgångshantering) med Dynamics 365 Guides
-description: Det här avsnittet innehåller information om hur du integrerar modulen för tillgångshantering i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides och drar nytta av guiderna för dagligt service- och underhållsarbete.
+title: Integrera Dynamics 365 Supply Chain Management (Tillgångshantering) med Dynamics 365 Guides
+description: Denna artikel innehåller information om hur du integrerar modulen för Tillgångshantering i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides och drar nytta av guiderna med mixad verklighet för dagligt service- och underhållsarbete.
 author: johanhoffmann
 ms.date: 04/28/2020
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4132992eb5f4b42d43d9ff72cada616fe0573c2f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d06978bcbd6205111384f5c7cefdf34fdbdbfbf5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568265"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875696"
 ---
-# <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrera Dynamics 365 Supply Chain Management (tillgångshantering) med Dynamics 365 Guides
+# <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrera Dynamics 365 Supply Chain Management (Tillgångshantering) med Dynamics 365 Guides
 
 [!include [banner](../includes/banner.md)]
 
-Du kan integrera modulen för **tillgångshantering** i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides och dra nytta av guiderna för dagligt service- och underhållsarbete. Om en guide är associerad till en arbetsorder för tillgångshantering kan en arbetare som öppnar arbetsorderns underhållschecklista i mobilappen Supply Chain Management (Dynamics 365) se att en guide är tillgänglig. Arbetaren kan sedan hitta och öppna guiden i appen Dynamics 365 Guides HoloLens.
+Du kan integrera modulen för **Tillgångshantering** i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides och dra nytta av guiderna för dagligt service- och underhållsarbete. Om en guide är associerad till en arbetsorder för Tillgångshantering kan en arbetare som öppnar arbetsorderns underhållschecklista i mobilappen Supply Chain Management (Dynamics 365) se att en guide är tillgänglig. Arbetaren kan sedan hitta och öppna guiden i appen Dynamics 365 Guides HoloLens.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Innan du kan koppla guider till arbetsorder för tillgångshantering måste följande förutsättningar föreligga:
+Innan du kan koppla guider till arbetsorder för Tillgångshantering måste följande förutsättningar föreligga:
 
 - [Ställ in Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) version 10.0.9 eller senare.
 - [Aktivera dubbelriktad skrivning för Supply Chain Management-appar](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
@@ -39,15 +39,15 @@ Innan du kan koppla guider till arbetsorder för tillgångshantering måste föl
 
 - [Ställ in Dynamics 365 Guides](/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 200.0.0.96 eller senare.
 
-## <a name="use-dynamics-365-guides-with-asset-management"></a>Använd Dynamics 365 Guides med tillgångshantering
+## <a name="use-dynamics-365-guides-with-asset-management"></a>Använd Dynamics 365 Guides med Tillgångshantering
 
-Om du vill associera en guide använder du en underhållschecklistrad i tillgångshantering. Du kan skapa associeringen via en mall för checklista för underhåll, en underhållsjobbtyp eller en arbetsorder, eftersom alla tre innehåller underhållschecklistrader. Du kan spara tid genom att använda en mall, eftersom en mall kan associeras till alla typer av underhållsjobb som använder den. En guide som är associerad med en underhållsjobbtyp kopplas till exempel automatiskt till alla arbetsorder som anger den jobbtypen. Å andra sidan finns en guide som är associerad direkt till en arbetsorder enbart för den aktuella arbetsordern.
+Om du vill associera en guide använder du en underhållschecklistrad i Tillgångshantering. Du kan skapa associeringen via en mall för checklista för underhåll, en underhållsjobbtyp eller en arbetsorder, eftersom alla tre innehåller underhållschecklistrader. Du kan spara tid genom att använda en mall, eftersom en mall kan associeras till alla typer av underhållsjobb som använder den. En guide som är associerad med en underhållsjobbtyp kopplas till exempel automatiskt till alla arbetsorder som anger den jobbtypen. Å andra sidan finns en guide som är associerad direkt till en arbetsorder enbart för den aktuella arbetsordern.
 
 ### <a name="associate-a-guide-with-a-maintenance-checklist-template"></a>Associera en guide med en mall för underhållschecklista
 
 För att associera en guide med en mall för underhållschecklista ska du följa dessa steg.
 
-1. Skapa en guide med Dynamics 365 Guides för dator och HoloLens-apparna. För information om hur du skapar en guide, se följande ämnen:
+1. Skapa en guide med Dynamics 365 Guides för dator och HoloLens-apparna. För information om hur du skapar en guide, se följande artiklar:
 
     - [Skapa guiden med hjälp av datorappen](/dynamics365/mixed-reality/guides/pc-app-overview)
     - [Använd HoloLens-appen för att placera dina hologram](/dynamics365/mixed-reality/guides/hololens-app-overview)
@@ -93,7 +93,7 @@ För att associera en guide med en mall för underhållschecklista ska du följa
 
 1. Visa den guide som är associerad till arbetsordern och arbetarna:
 
-    1. Öppna [Arbetsytan för tillgångshantering](asset-management-mobile-workspace.md) för att komma åt arbetsordern.
+    1. Öppna [Arbetsytan för Tillgångshantering](asset-management-mobile-workspace.md) för att komma åt arbetsordern.
     1. [Öppna underhållschecklistan](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job) för arbetsordern.
     1. Välj en checklistrad för att se associerad guide.
 
@@ -112,7 +112,7 @@ För att associera en guide med en mall för underhållschecklista ska du följa
 ## <a name="see-also"></a>Se även
 
 - [Översikt över dubbelriktad skrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
-- [Översikt av tillgångshantering](index.md)
+- [Översikt av Tillgångshantering](index.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

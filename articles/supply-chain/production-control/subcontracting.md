@@ -1,6 +1,6 @@
 ---
 title: Legotillverkning
-description: Det här avsnittet hjälper dig att skapa en genomgång av legotillverkning i produktionen i Dynamics 365 Supply Chain Management.
+description: Denna artikel hjälper dig att skapa en genomgång av legotillverkning i produktionen i Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 09/28/2018
 ms.topic: article
@@ -12,38 +12,38 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4c4ef554406c727cc410f8dca5f41264be01060b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ef8f30e934ece4a148c6f5259d74f8f67799999d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579362"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854189"
 ---
 # <a name="subcontracting"></a>Legotillverkning
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet hjälper dig att skapa en genomgång av legotillverkning i produktionen i Microsoft Dynamics 365 Supply Chain Management. Den första delen av det här avsnittet beskriver inställningen av data. Den andra delen tar dig igenom stegen i genomgången.
+Denna artikel hjälper dig att skapa en genomgång av legotillverkning i produktionen i Microsoft Dynamics 365 Supply Chain Management. Den första delen av denna artikel beskriver konfigureringen av data. Den andra delen tar dig igenom stegen i genomgången.
 
 ## <a name="target-audience"></a>Målgrupp
 
-I det här avsnittet får du lära dig hur du ställer in den legotillverkning i produktionen. Du kommer att använda befintliga data i den juridiska personen HQUS för att göra grundinställningen av ett flöde för legotillverkningsaktiviteten. Demodata hos den juridiska personen HQUS inkluderar inställningsparametrar som har blivit förinställda för att ge stöd till stegen i genomgången. Trots att genomgången behandlar viktiga sårbarheter och utmaningar för olika roller kan den kompletteras av systemadministratören.
+I denna artikel får du lära dig hur du konfigurerar legotillverkning i produktionen. Du kommer att använda befintliga data i den juridiska personen HQUS för att göra grundinställningen av ett flöde för legotillverkningsaktiviteten. Demodata hos den juridiska personen HQUS inkluderar inställningsparametrar som har blivit förinställda för att ge stöd till stegen i genomgången. Trots att genomgången behandlar viktiga sårbarheter och utmaningar för olika roller kan den kompletteras av systemadministratören.
 
 ## <a name="demo-scenario"></a>Demonstrationsscenario
 
 Avancerade högtalare tillverkas i den juridiska personen HQUS. Under tillverkningsprocessen går högtalare igenom följande tre åtgärder.
 
-- **Förmontering** - Högtalarkabinetten monteras. Materialet för kabinetten plockas på lagerstället för material innan operationen startas.
+- **Förmontering** - Högtalarkabinetten monteras. Materialet för kabinetten plockas på lagerstället för material innan åtgärden startas.
 - **Beläggning** – När högtalarkabinetten har monterats måste den beläggas. Åtgärden slutförs av en leverantör (underleverantör). Den förmonterade högtalarkabinetten levereras till underleverantören för beläggning tillsammans med två material.
 - **Ytbehandling** – När den förmonterade högtalarkabinetten är belagd av underleverantören returneras den till den juridiska personen HQUS så att slutmonteringen av högtalaren kan slutföras.
 
-Följande bild visar de tre operationerna och materialet som de använder.
+Följande bild visar de tre åtgärderna och materialet som de använder.
 
 ![Åtgärderna Förmontering, Beläggning, Ytbehandling och materialet som dessa förbrukar.](./media/subcontract01_operations-materials.png)
 
 ## <a name="setup"></a>Ställ in
 
-Innan du påbörjar genomgången måste du ställa in data.
+Innan du påbörjar genomgången måste du konfigurera data.
 
 ### <a name="set-up-the-finished-product"></a>Ställ in den färdiga produkten
 
@@ -56,30 +56,30 @@ Den här proceduren hjälper dig genom inställningarna för frisläppt produkt 
 
 3. I åtgärdsfönstret, på fliken **tekniker**, välj **flöde** för att öppna sidan **flöde**.
 
-    Sidan **Flöde** visar de åtta flödesversioner för frisläppt produkt D8100. Åtta flödesversioner ska delas upp mellan fyra flöden på site 1 och 5. Flöde 000400 används för kostnadsredovisning, flöde 00041 används när beläggningsoperationen är en intern operation, och flöde 00042 används när beläggningsoperationen är en extern operation.
+    Sidan **Flöde** visar de åtta flödesversioner för frisläppt produkt D8100. Åtta flödesversioner ska delas upp mellan fyra flöden på site 1 och 5. Flöde 000400 används för kostnadsredovisning, flöde 00041 används när beläggningsåtgärden är en intern åtgärd, och flöde 00042 används när beläggningsåtgärden är en extern åtgärd.
 
     ![Åtta flödesversioner på sidan Flöde.](./media/subcontract03_route-page.png)
 
 4. I det övre fönstret i rutnätet **versioner**, välj flödesversion **00042** för site **5**.
-5. I det nedre fönstret på fliken **översikt**, välj operation **20** (**Cbnt CtSc**) i rutnätet.
+5. I det nedre fönstret på fliken **översikt**, välj åtgärd **20** (**Cbnt CtSc**) i rutnätet.
 
     ![Åtgärd 20 för flödesversion 00042 för webbplats 5 markerad.](./media/subcontract04_route-version-operation.png)
 
 6. Välj fliken **Allmänt**.
 
-    Lägg märke till att fältet **flödestyp** har tilldelats **leverantör**. Detta värde anger att operation 20 (Cbnt CtSc) är en legotillverkningsoperation.
+    Lägg märke till att fältet **flödestyp** har tilldelats **leverantör**. Detta värde anger att åtgärd 20 (Cbnt CtSc) är en legotillverkningsåtgärd.
 
     ![Fältet Flödestyp angiven som Leverantör på fliken Allmänt.](./media/subcontract05_general-tab.png)
 
 7. Välj fliken **Resurskrav**.
 
-    Funktioner används för att hitta en tillämplig resurs vid produktionsplaneringen. Observera att för operation 20 (Cbnt CtSc) krävs en resurs som har två funktioner **beläggning** och **belagd kabinett**.
+    Funktioner används för att hitta en tillämplig resurs vid produktionsplaneringen. Observera att för åtgärd 20 (Cbnt CtSc) krävs en resurs som har två funktioner **beläggning** och **belagd kabinett**.
 
     ![Kapacitet för beläggning och belagda kabinett på fliken för resursbehov.](./media/subcontract06_resource-requirements-tab.png)
 
 8. Välj **tillämpliga resurser** för att öppna dialogrutan **tillämpliga resurser**.
 
-    Tre resurser hittas som matchar operationens resursbehov. Lägg märke till att 8851 och 8852 är av typen **leverantör**.
+    Tre resurser hittas som matchar åtgärdens resursbehov. Lägg märke till att 8851 och 8852 är av typen **leverantör**.
 
     ![Tre tillämpliga resurser i dialogrutan Tillämpliga resurser.](./media/subcontract07_applicable-resources-dialog.png)
 
@@ -90,7 +90,7 @@ Den här proceduren hjälper dig genom inställningarna för frisläppt produkt 
 
 11. I åtgärdsfönstret, på fliken **tekniker**, välj **strukturlisteversioner** för att öppna sidan **strukturlisteversioner**.
 
-    Sidan **strukturlisteversioner** visar fyra strukturlisteversioner för frisläppt produkt D8100. Strukturlistan 000040 används för kostnadsredovisning och planering, strukturlistan 000041 används om operationen beläggning görs inom företaget, strukturlistan och 000042 och 000043 används om beläggningsoperationen gäller legotillverkning.
+    Sidan **strukturlisteversioner** visar fyra strukturlisteversioner för frisläppt produkt D8100. Strukturlistan 000040 används för kostnadsredovisning och planering, strukturlistan 000041 används om åtgärden beläggning görs inom företaget, strukturlistan och 000042 och 000043 används om beläggningsåtgärden gäller legotillverkning.
 
     Observera att artikel S8050 är en produkt av artikeltypen **Tjänst**. Den här artikeln representerar legotillverkning.
 
@@ -100,7 +100,7 @@ Den här proceduren hjälper dig genom inställningarna för frisläppt produkt 
 
     När en produktionsorder har skapats och uppskattats för frisläppt produkt D8100, genereras en inköpsorder automatiskt för artikel S8050. Denna inköpsorder ska kopplas till produktionsordern. För att inköpsorder ska skapas automatiskt måste fältet **Radtyp** ställas in på **leverantör**, och du måste välja leverantörskontot för underleverantören. I det här fallet är leverantörskontot US-801.
 
-    Observera att strukturlisteraden är ansluten till beläggningsoperationen genom operationsnummer (i vårt exempel 20).
+    Observera att strukturlisteraden är ansluten till beläggningsåtgärden genom åtgärdsnummer (i vårt exempel 20).
 
     ![Redigera dialogrutan Strukturlista.](./media/subcontract10_edit-bom-line-dialog.png)
 
@@ -121,7 +121,7 @@ Du måste definiera ett lösenord för lagerarbetare som använder den bärbara 
 
 **Scenario och bakgrund**
 
-En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabinett”. Beläggning av kabinetter är en legotillverkningsoperation som utförs av leverantör US-801 Perfect Coating Solutions. Tillverkningsordern består av tre operationer. I den första operationen sammansätts kabinetten i förväg som en intern operation. Materialet för förmonteringen har frisläppts för plockning i råmateriallagret. När förmonteringen har slutförts skickas den förmonterade kabinetten till Perfect Coating Solutions tillsammans med två material som krävs för beläggningsoperationen. När den belagda kabinetten tas emot från säljaren går den igenom en slutlig montering på plats innan den rapporteras som färdig.
+En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabinett”. Beläggning av kabinetter är en legotillverkningsåtgärd som utförs av leverantör US-801 Perfect Coating Solutions. Tillverkningsordern består av tre åtgärder. I den första åtgärden sammansätts kabinetten i förväg som en intern åtgärd. Materialet för förmonteringen har frisläppts för plockning i råmateriallagret. När förmonteringen har slutförts skickas den förmonterade kabinetten till Perfect Coating Solutions tillsammans med två material som krävs för beläggningsåtgärden. När den belagda kabinetten tas emot från säljaren går den igenom en slutlig montering på plats innan den rapporteras som färdig.
 
 1. Välj **produktionskontroll \> produktionsorder \> alla produktionsorder** för att öppna sidan **alla produktionsorder**.
 2. I åtgärdsfönstret, välj **ny produktionsorder** för att öppna dialogrutan **skapa produktionsorder**.
@@ -182,7 +182,7 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
 16. Välj **OK** för att stänga dialogrutan **finplanering** och återgå till sidan **alla produktionsorder**.
 17. I åtgärdsfönstret, på fliken **Tidsplan**, välj **Gantt** för att öppna sidan **Gantt-schema - Resursvy**.
 
-    Gantt-schemat ger en visuell översikt av hur produktionsjobben tidplaneras på resurser. Observera att den externa beläggningsoperationen består av tre jobb: ett processjobb, ett transportjobb och ett kötidjobb.
+    Gantt-schemat ger en visuell översikt av hur produktionsjobben tidplaneras på resurser. Observera att den externa beläggningsåtgärden består av tre jobb: ett processjobb, ett transportjobb och ett kötidjobb.
 
     ![Gantt-schema i Gantt-schemat - Sida för resursvy.](./media/subcontract19_gantt-chart.png)
 
@@ -204,11 +204,11 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
 24. Använd fältet för snabbfilter för att välja den tillverkningsorder som du har arbetat med.
 25. I åtgärdsfönstret, på fliken **Lagerställe**, välj **Information om arbete** för att öppna sidan **Arbete**.
 
-    Observera att sidan visar två uppsättningar arbete för råmaterialplockning. Första arbetet är för material M8100 och M8101. Dessa material som förbrukas av operation 10. Det andra arbetet är för material M8202 och M8250. Dessa material förbrukas av operation 20, d.v.s. legotillverkningsoperationen.
+    Observera att sidan visar två uppsättningar arbete för råmaterialplockning. Första arbetet är för material M8100 och M8101. Dessa material som förbrukas av åtgärd 10. Det andra arbetet är för material M8202 och M8250. Dessa material förbrukas av åtgärd 20, d.v.s. legotillverkningsåtgärden.
 
     ![Två uppsättningar arbete för råmaterialplockning på sidan Arbete..](./media/subcontract22_work-page.png)
 
-26. Starta mobilappen för distributionslagerhantering för att bearbeta lagerställearbetet för operation 10.
+26. Starta mobilappen för distributionslagerhantering för att bearbeta lagerställearbetet för åtgärd 10.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -224,9 +224,9 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
 
 31. Välj **OK** för att stänga dialogrutan **Starta** och återgå till sidan **alla produktionsorder**.
 
-    Observera att statusen för produktionsordern nu är **startad**. Materialen för en operation 10 förbrukas av en automatisk bokföring av plocklistejournalen. Tidsförbrukning för operationen 10 redovisas enligt en automatisk bokföring av en flödeskortjournal.
+    Observera att statusen för produktionsordern nu är **startad**. Materialen för en åtgärd 10 förbrukas av en automatisk bokföring av plocklistejournalen. Tidsförbrukning för åtgärden 10 redovisas enligt en automatisk bokföring av en flödeskortjournal.
 
-32. Starta mobilappen för distributionslagerhantering för att bearbeta lagerställearbetet för operation 20.
+32. Starta mobilappen för distributionslagerhantering för att bearbeta lagerställearbetet för åtgärd 20.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -242,7 +242,7 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
 
 35. Välj **OK** för att stänga dialogrutan **Starta** och återgå till sidan **alla produktionsorder**.
 
-    En plocklista har skapats för material som används för beläggningsoperationen och för serviceartikeln. Serviceartikeln motsvarar kostnaden för legotillverkningsoperationen.
+    En plocklista har skapats för material som används för beläggningsåtgärden och för serviceartikeln. Serviceartikeln motsvarar kostnaden för legotillverkningsåtgärden.
 
 36. I åtgärdsfönstret, på fliken **Visa**, välj **Plocklista** för att öppna sidan **Plocklista**.
 37. Välj plocklistan som inte har bokförts och markera journalnumret för att visa journalraderna.
@@ -256,7 +256,7 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
 
 40. Välj **OK** för att generera rapporten **Plocklista**.
 
-    I det här fallet skrivs en leverantörens följesedelsnotering ut för produktionens plocklistejournal. Följesedeln anger det material som levereras till leverantören som ska utföra beläggningsoperationen.
+    I det här fallet skrivs en leverantörens följesedelsnotering ut för produktionens plocklistejournal. Följesedeln anger det material som levereras till leverantören som ska utföra beläggningsåtgärden.
 
     ![Plocklista - rapport.](./media/subcontract27_picking-list-report.png)
 

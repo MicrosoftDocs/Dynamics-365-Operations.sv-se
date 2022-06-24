@@ -1,6 +1,6 @@
 ---
 title: Affärsdokument som stöds av Global Lagerredovisning
-description: Det här ämnet visar en lista med affärsdokument som stöds av Global lagerredovisning. Det ger också ett detaljerat exempel på inköpsorderdokument.
+description: Denna artikel visar en lista med affärsdokument som stöds av Global lagerredovisning. Det ger också ett detaljerat exempel på inköpsorderdokument.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 44081be35c6737aa0d16b6e11a5fc8f94b41e872
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: dc88d095c039b22ac347db949f6b61d5a89dc4b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674461"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875435"
 ---
 # <a name="business-documents-supported-by-global-inventory-accounting"></a>Affärsdokument som stöds av Global Lagerredovisning
 
@@ -32,7 +32,7 @@ Det finns två typer av affärsdokument:
 - **Dokument som har en journal** – Dessa dokument inkluderar produktinleverans, inköpsfaktura, följesedel och försäljningsfakturadokument.
 - **Dokument som inte har någon journal** – Dessa dokument inkluderar inventerings-, förflyttnings- och lagerjusteringsdokument.
 
-Senare i det här avsnittet används inköpsorder som exempel för att illustrera processen.
+Senare i denna artikel används inköpsorder som exempel för att illustrera processen.
 
 I följande tabell visas de dokument som den aktuella versionen stöder.
 
@@ -56,13 +56,13 @@ I följande tabell visas de dokument som den aktuella versionen stöder.
 
 ### <a name="product-receipt"></a>Produktinleverans
 
-Bokför produktinleveranser som vanligt. På sidan **Alla inköpsorder** välj en inköpsorder och sedan i åtgärdsfönstret på fliken **Mottagning** välj **Produktinleverans** för att öppna sidan **Produktinleveransjournal**. En operationshändelse och en global lagerredovisningshändelse skapas för varje rad. Därför väljer du fliken **Rader** och väljer **Lager \> Händelser och mätningar** för att öppna sidan **Händelser och mätningar**.
+Bokför produktinleveranser som vanligt. På sidan **Alla inköpsorder** välj en inköpsorder och sedan i åtgärdsfönstret på fliken **Mottagning** välj **Produktinleverans** för att öppna sidan **Produktinleveransjournal**. En åtgärdshändelse och en global lagerredovisningshändelse skapas för varje rad. Därför väljer du fliken **Rader** och väljer **Lager \> Händelser och mätningar** för att öppna sidan **Händelser och mätningar**.
 
 Global lagerredovisning är ett redovisningssystem som baseras på händelser och mätningar. Måttradrutnätet på sidan **Händelser och mätningar** visar en lista med mått. Varje mått har en lista över dimensioner.
 
-För varje operationshändelse finns två typer av mätningar:
+För varje åtgärdshändelse finns två typer av mätningar:
 
-- **Operationsmått** – Dessa mått beskriver affärsdokument i allmänna termer. Ett mått är produktkvantiteten med hjälp av måttenheten som används i dokumentet. Det finns också mätningar som påverkar lagervärdet, till exempel utökat pris, rabatt, rabattprocent och radavgift.
+- **Åtgärdsmått** – Dessa mått beskriver affärsdokument i allmänna termer. Ett mått är produktkvantiteten med hjälp av måttenheten som används i dokumentet. Det finns också mätningar som påverkar lagervärdet, till exempel utökat pris, rabatt, rabattprocent och radavgift.
 - **Resursredovisningsmått** – Dessa mätningar kommer från lagerregisterperspektiv. De beskriver dokumentets inverkan på lagret i lagermåttet. Om det finns flera lagerregistreringar finns det flera rader med resursredovisningsmått.
 
 Dimensionerna ordnas på följande sätt:
@@ -74,7 +74,7 @@ Dimensionerna ordnas på följande sätt:
 
 ### <a name="global-inventory-accounting-event"></a>Global lagerredovisningshändelse
 
-I Global lagerredovisning sker drifthändelser och mätningar som indata. Därefter gör den lämpliga redovisningen för varje relaterad redovisning, baserad på den kopplade valutan och konventionen. Du kan välja **händelser och mått för global lagerredovisning** om du vill visa händelsen Global lagerredovisning. Händelsen global lagerredovisning följer samma metodik som operationshändelser, men använder olika mått. Det finns tre stora måtttyper: produktkostnadskvantitet, produktkostnad och avvikelse.
+I Global lagerredovisning sker drifthändelser och mätningar som indata. Därefter gör den lämpliga redovisningen för varje relaterad redovisning, baserad på den kopplade valutan och konventionen. Du kan välja **händelser och mått för global lagerredovisning** om du vill visa händelsen Global lagerredovisning. Händelsen global lagerredovisning följer samma metodik som åtgärdshändelser, men använder olika mått. Det finns tre stora måtttyper: produktkostnadskvantitet, produktkostnad och avvikelse.
 
 Delredovisningskonton används för att ytterligare klassificera mätningarna. Det kan finnas flera redovisningar. Dessa redovisningar är länkade till den juridiska person där dokumentet registreras. Du kan visa händelser och mått för varje redovisning genom att ändra värdet i fältet **redovisning**.
 
@@ -88,6 +88,6 @@ På fliken **Översikt** visas information om de kopplade principerna. Kostnadso
 
 ### <a name="purchase-invoice"></a>Inköpsfaktura
 
-Bokför fakturan som vanligt. I åtgärdsfönstret på fliken **Faktura** i gruppen **Journaler** väljer du sedan **Faktura** för att öppna fakturajournalen. En operationshändelse och en global lagerredovisningshändelse skapas för varje rad. Därför väljer du fliken **Rader** och väljer **Lager \> Händelser och mätningar** för att öppna sidan **Händelser och mätningar**. Sidan **Händelser och mått** visar samma måtttyp. Eftersom sidan visar en annan måttroll och måttmodifierare, skiljer sig dock effekten på agenten (den juridiska personen).
+Bokför fakturan som vanligt. I åtgärdsfönstret på fliken **Faktura** i gruppen **Journaler** väljer du sedan **Faktura** för att öppna fakturajournalen. En åtgärdshändelse och en global lagerredovisningshändelse skapas för varje rad. Därför väljer du fliken **Rader** och väljer **Lager \> Händelser och mätningar** för att öppna sidan **Händelser och mätningar**. Sidan **Händelser och mått** visar samma måtttyp. Eftersom sidan visar en annan måttroll och måttmodifierare, skiljer sig dock effekten på agenten (den juridiska personen).
 
 Du kan välja **händelser och mått för global lagerredovisning** om du vill visa händelsen Global lagerredovisning. Lagerkvantiteten och kostnaden kommer nu från redovisningskontot för *mottagna varor som inte fakturerats i lager* och till kontot för *kostnader för inköpta varor* i redovisningskontot.

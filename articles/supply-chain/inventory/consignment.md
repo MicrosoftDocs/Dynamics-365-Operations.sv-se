@@ -1,6 +1,6 @@
 ---
-title: Ställ in försändelse
-description: Det här avsnittet beskriver hur du använder inkommande försändelselagerprocesser.
+title: Ställa in försändelse
+description: Denna artikel beskriver hur du använder lagerprocesser för inkommande försändelse.
 author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4a1b96d18048a1ae6e380374f32d2bfa2270ae24
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 66215811c8c48412fb137967107abca3774f5f0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577730"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872048"
 ---
-# <a name="set-up-consignment"></a>Ställ in försändelse
+# <a name="set-up-consignment"></a>Ställa in försändelse
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du använder inkommande försändelselagerprocesser.
+Denna artikel beskriver hur du använder lagerprocesser för inkommande försändelse.
 
-Försändelselagret är lager som ägs av en leverantör, men som lagras på din site. När du är klar att förbruka eller använda lagret, tar du över ägarskapet för lagret. Det här avsnittet innehåller information om hur du fysiskt tar emot leverantörsägd lagerbehållning utan att skapa redovisningstransaktioner, hur du startar en produktionsprocess där leverantörsägt lager kan reserveras fysiskt. samt hur du ändrar ägarskap för råmaterial för att kunna bearbeta förbrukningen som en del av produktionens orderbehandling. Det finns också en del information om hur leverantörer kan övervaka förbrukning av deras lager genom att använda leverantörsamarbetesgränssnittet.
+Försändelselagret är lager som ägs av en leverantör, men som lagras på din site. När du är klar att förbruka eller använda lagret, tar du över ägarskapet för lagret. Denna artikel innehåller information om hur du fysiskt tar emot leverantörsägd lagerbehållning utan att skapa redovisningstransaktioner samt hur du startar en produktionsprocess där leverantörsägt lager kan reserveras fysiskt. samt hur du ändrar ägarskap för råmaterial för att kunna bearbeta förbrukningen som en del av produktionens orderbehandling. Det finns också en del information om hur leverantörer kan övervaka förbrukning av deras lager genom att använda leverantörsamarbetesgränssnittet.
 
 ## <a name="overview-of-the-consignment-process"></a>Översikt över försändelseprocessen
 
@@ -70,7 +70,7 @@ Journalen **Lagerägarskapsändring** används till att bokföra överföringen 
 De enda lagertransaktioner som skapas är de som relaterar till en bokförd journal. När journalen är bokförd:
 
 - Det leverantörsägda lagret sker med hjälp av **Äganderättändring**-referens med en **Såld**-status.
-- Lagerbehållning tas emot av den juridiska person som förbrukar den genom att använda en lagertransaktion som uppdaterats för produktinleveransen på inköpsordern. Detta ställer in orderns status på **Inlevererat**. Inköpsorder som används för försändelse har fältet **Ursprung** inställt på **Försändelse**.
+- Lagerbehållning tas emot av den juridiska person som förbrukar den genom att använda en lagertransaktion som uppdaterats för produktinleveransen på inköpsordern. Detta konfigurerar orderns status på **Inlevererat**. Inköpsorder som används för försändelse har fältet **Ursprung** inställt på **Försändelse**.
 
 Det går inte att uppdatera kvantiteten på rader för försändelseinköpsorder efter att ordern har skapats.
 

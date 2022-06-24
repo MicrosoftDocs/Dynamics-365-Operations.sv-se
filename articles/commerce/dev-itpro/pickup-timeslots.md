@@ -1,6 +1,6 @@
 ---
 title: Skapa och uppdatera tidpunkt för kundupphämtning
-description: I det här avsnittet beskrivs hur du skapar, konfigurerar och uppdaterar tidpunkt för kundupphämtning i Commerce-administrationen.
+description: I denna artikel beskrivs hur du skapar, konfigurerar och uppdaterar tidpunkt för kundupphämtning i Commerce headquarters.
 author: anupamar-ms
 ms.date: 01/05/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: a9ee1356bfcaeee881c28cf0361b34b2c65acbc7a3b57347fa2581a8a935da42
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a135f592225e4b388b5c9fdaa5fe23e60baf0185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713431"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882243"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Skapa och uppdatera tidpunkt för kundupphämtning
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skapar, konfigurerar och uppdaterar tidpunkt för kundupphämtning i Commerce-administrationen.
+I denna artikel beskrivs hur du skapar, konfigurerar och uppdaterar tidpunkt för kundupphämtning i Commerce headquarters.
 
 Funktionen för tidpunkt ger återförsäljarna ett sätt att definiera en tidpunkt för artiklar som läget för kundupphämtning är aktiverat för. Tidpunkter låter återförsäljare definiera de dagar och tider då order kan hämtas från en butik. Återförsäljare kan även definiera antalet order som kan hämtas under en viss period. På så sätt kan återförsäljare begränsa antalet order som kan hämtas en viss dag och vid en given tidpunkt. Resultatet blir en bättre upplevelse för kunderna.
 
@@ -64,15 +64,15 @@ En tidpunkt definieras med hjälp av följande egenskaper:
 
 Endast en tidpunkt kan konfigureras per kanal. Dessa kanaler är bland annat fysiska butiker, kundtjänster, mobila enheter och näthandelssajter.
 
-## <a name="configure-the-time-slot-feature-in-commerce-headquarters"></a>Konfigurera funktionen för tidpunkt i Commerce-administrationen
+## <a name="configure-the-time-slot-feature-in-commerce-headquarters"></a>Konfigurera funktionen för tidpunkt i Commerce headquarters
 
-Tidpunkter måste anges för respektive upphämtningsläge i Commerce-administrationen så att kassa- (POS) och näthandelskanaler kan referera till dem.
+Tidpunkter måste anges för respektive upphämtningsläge i Commerce headquarters så att kassa- (POS) och näthandelskanaler kan referera till dem.
 
 - Endast en tidpunktsmall kan associeras med respektive butik eller kanal.
 - Varje tidpunkt som skapas ska vara unikt för respektive leveranssätt i respektive mall.
 - När du har konfigurerat funktionen för tidpunkt blir tidpunktskalendern tillgänglig för de valda butikerna eller butiksgrupperna. Den kommer också att vara synlig i POS, som referens.
 
-Följ dessa steg för att konfigurera funktionen för tidpunkt i Commerce-administrationen.
+Följ dessa steg för att konfigurera funktionen för tidpunkt i Commerce headquarters.
 
 1. Gå till **Commerce** \> **Kanalkonfiguration** \> **Tidpunkter för butiksupphämtning**.
 1. Välj **Nytt** för att skapa en ny mall för tidpunkt. Om du vill använda en befintlig mall väljer du mallen i det vänstra fönstret.

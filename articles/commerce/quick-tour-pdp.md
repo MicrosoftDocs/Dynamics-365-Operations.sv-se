@@ -1,6 +1,6 @@
 ---
 title: Översikt över sidor med produktinformation
-description: Det här ämnet innehåller en översikt över sidor för produktdetaljer (PDP) i Microsoft Dynamics 365 Commerce.
+description: Denna artikel innehåller en översikt över sidor för produktdetaljer (PDP) i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 01/23/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 48b4e5d66b86e0b1198bd6ff7ce1e7de33f8fde0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7b7630a15f98da4a1454f7c9b0d3501d4f035649
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986211"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884295"
 ---
 # <a name="product-details-pages-overview"></a>Översikt över sidor med produktinformation
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet innehåller en översikt över sidor för produktdetaljer (PDP) i Microsoft Dynamics 365 Commerce.
+Denna artikel innehåller en översikt över sidor för produktdetaljer (PDP) i Microsoft Dynamics 365 Commerce.
 
 En PDP innehåller detaljerad information om en produkt och kunder kan välja produktalternativ som storlek, stil och färg. En PDP ska visa all produktinformation som en kund behöver för att fatta ett köpbeslut.
 
@@ -35,13 +35,13 @@ Illustrationen nedan visar ett exempel på en PDP.
 
 ## <a name="header-and-footer-modules"></a>Moduler för sidhuvud och sidfot
 
-Den övre delen av PDP har en rubrik som visar alla produktkategorier och andra sidor som återförsäljaren vill att kunderna ska bläddra i. Sidans nedre del har en sidfot som innehåller snabblänkar till olika ämnen som kan vara intressanta för kunderna.
+Den övre delen av PDP har en rubrik som visar alla produktkategorier och andra sidor som återförsäljaren vill att kunderna ska bläddra i. Sidans nedre del har en sidfot som innehåller snabblänkar till olika artiklar som kan vara intressanta för kunderna.
 
 ## <a name="buy-box-module"></a>Modul för inköpsruta
 
 Den viktigaste modulen på ett PDP är modulen för inköpsruta som visas som det första objektet i huvudavsnittet på sidan. En modul för inköpsruta innehåller viktig produktinformation, till exempel produktnamn, produktbeskrivning, produktpris, produktbilder och produktklassificeringar.
 
-Med modulen inköpsruta kan kunden välja produktalternativ (t.ex. storlek, stil och färg) och lägga till produkten i vagnen. Kunden kan också köpa produkten online och välja den i en butik. Modulerna köpa online och hämta i butik använder integration med Bing Maps API:er (Application Programming Interfaces) för att hitta närliggande butiker eller butiker på en annan plats som kunden anger.
+Med modulen inköpsruta kan kunden välja produktalternativ (t.ex. storlek, stil och färg) och lägga till produkten i vagnen. Kunden kan också köpa produkten online och välja den i en butik. Modulerna köpa online och hämta i butik använder integrering med Bing Maps API:er (Application Programming Interfaces) för att hitta närliggande butiker eller butiker på en annan plats som kunden anger.
 
 En modul för inköpsruta kräver ett produkt-ID. Detta ID hämtas från sidans kontext. Om en modul för inköpsruta läggs till på en sida där sidkontexten inte innehåller något produkt-ID, återges informationen inte på rätt sätt.
 

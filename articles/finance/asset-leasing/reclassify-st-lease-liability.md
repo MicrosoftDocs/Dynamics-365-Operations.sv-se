@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3a71b809b4bb16c2b918b7acd4fbb8bc49278ff6
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7c7c3f86aa5d24e9aeed89526a4b7317699e9a78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727746"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886354"
 ---
 # <a name="reclassify-the-short-term-portion-of-lease-liability"></a>Omklassificera den kortfristiga delen av leasingskuld
 

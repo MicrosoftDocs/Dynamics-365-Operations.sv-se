@@ -1,6 +1,6 @@
 ---
 title: Översikt över SEPA-kreditöverföring
-description: Avsnittet innehåller allmän information om ISO 20022 kreditöverföringar, som inkluderar SEPA-kreditöverföringar ( Single Euro Payments Area) och andra elektroniska betalningar för leverantörer.
+description: Artikeln innehåller allmän information om ISO 20022 kreditöverföringar, som inkluderar SEPA-kreditöverföringar ( Single Euro Payments Area) och andra elektroniska betalningar för leverantörer.
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c45aa4f22f5044e7c10329dafa76226970b3d
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f3f0c428d9167e9f1a7fb17a292d474448b2d4df
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734528"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871461"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Översikt över SEPA-kreditöverföring
 
 [!include [banner](../includes/banner.md)]
 
-Avsnittet innehåller allmän information om ISO 20022 kreditöverföringar, som inkluderar SEPA-kreditöverföringar ( Single Euro Payments Area) och andra elektroniska betalningar för leverantörer. En SEPA-kreditöverföring är specifik typ av betalning i euro från ett företag eller en person till ett annat företag eller annan person. Ämnet beskriver även hur du ställer in och överför en fil för betalning med kreditöverföring.
+Artikeln innehåller allmän information om ISO 20022 kreditöverföringar, som inkluderar SEPA-kreditöverföringar ( Single Euro Payments Area) och andra elektroniska betalningar för leverantörer. En SEPA-kreditöverföring är specifik typ av betalning i euro från ett företag eller en person till ett annat företag eller annan person. Ämnet beskriver även hur du ställer in och överför en fil för betalning med kreditöverföring.
 
 ## <a name="what-is-a-credit-transfer-message"></a>Vad är ett kreditöverföringsmeddelande?
 Kreditöverföringsmeddelandet är en begäran som en initierande part (ditt företag) skickar för att flytta medel från eget konto till en fordringshavare. Det finns många lands-/regionspecifika och bankspecifika implementeringar av betalningsmeddelanden. Några av dem används inom ett land/en region och vissa blir standarder. En väl etablerad global standard är ISO 20022 och dess initieringsmeddelandet som t.ex. kreditöverföring. Följande bild visar relationerna och täckning för valda kreditöverföringsmeddelanden. 

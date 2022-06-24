@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cb13124bb086b3240a41278aac067775663c6ac
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 43d74135f8a18cddcb86f719d4c5ecd6a532cc82
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678190"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878770"
 ---
 #  <a name="dispatch-board"></a>Utförseltavla 
 
@@ -30,7 +30,7 @@ En utförseltavla är en central plats från vilken du kan visa status för akti
 
   - Filtrera och visa serviceaktiviteter i ett visst datumintervall.
 
-  - Identifiera prioriteten för en serviceaktivitet och skilj mellan serviceprioritetsnivåer baserat på ett färgschema som du ställer in.
+  - Identifiera prioriteten för en serviceaktivitet och skilj mellan serviceprioritetsnivåer baserat på ett färgschema som du konfigurerar.
 
   - Granska arbetarna som har tilldelats till ett serviceteam.
 
@@ -38,7 +38,7 @@ En utförseltavla är en central plats från vilken du kan visa status för akti
 
   - Granska listan över tjänstaktiviteter som inte har skickats.
 
-Se avsnitten i avsnittet **Se även** för information om hur du utför specifika uppgifter på en utförseltavla.
+Se artiklarna i avsnittet **Se även** för information om hur du utför specifika uppgifter på en utförseltavla.
 
 ## <a name="see-also"></a>Se även
 

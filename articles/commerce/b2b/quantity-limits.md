@@ -1,6 +1,6 @@
 ---
 title: Konfigurera produktkvantitetsgränser på nätandelsplatser för B2B
-description: I detta ämne beskrivs hur du ställer in produktkvantitetsgränser för B2B-näthandelssajter.
+description: I denna artikel beskrivs hur du konfigurerar produktkvantitetsgränser för B2B-näthandelssajter.
 author: josaw1
 ms.date: 01/20/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 18dc138693dc9fb0e8cf8727de77b5f8584cde79
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 034441f8f712c676dbcc89f0009361d0a4a65721
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690206"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877015"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>Konfigurera produktkvantitetsgränser på nätandelsplatser för B2B
 
 [!include [banner](../../includes/banner.md)]
 
-I detta ämne beskrivs hur du ställer in produktkvantitetsgränser för B2B-näthandelssajter.
+I denna artikel beskrivs hur du konfigurerar produktkvantitetsgränser för B2B-näthandelssajter.
 
 De flesta produkter har en måttenhet som definierar deras gruppering. Grupperingen påverkar hur produkterna kan säljas. För en del produkter kan det finnas en ytterligare gruppering för kvantiteter. Denna gruppering fastställer huruvida produkterna kan säljas som enskilda enheter eller multiplar, och om det finns en minsta eller högsta orderkvantitetsgräns som måste innehållas.
 
@@ -37,9 +37,9 @@ Många återförsäljare ger möjlighet till kundorder (även kallade specialord
 - En kund vill hämta produkter från en butik eller en plats som skiljer sig från den butiken eller plats där kunden har köpt produkterna. Förpackningsstandarderna för butikerna skiljer sig dock från förpackningsstandarderna för onlineförsäljningsdistribution.
 - En kund vill köpa en begränsad produkt ("limited edition") som har en maxkvantitetsgräns för artiklar som går att köpa.
 
-## <a name="turn-on-the-default-order-settings-feature-in-commerce-headquarters"></a>Aktivera funktionen för standardinställningar för order i Commerce-administrationen
+## <a name="turn-on-the-default-order-settings-feature-in-commerce-headquarters"></a>Aktivera funktionen för standardinställningar för order i Commerce headquarters
 
-Innan du kan ställa in produktkvantitetsgränser måste funktionen för standardorderinställningar aktiveras i Commerce-administrationen.
+Innan du kan konfigurera produktkvantitetsgränser måste funktionen för standardorderinställningar aktiveras i Commerce headquarters.
 
 Följ de här stegen för att aktivera funktionen för inställningar för standardorder.
 

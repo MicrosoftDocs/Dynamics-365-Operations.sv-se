@@ -1,6 +1,6 @@
 ---
 title: Mekanism för omvänd moms för moms/GST-schema
-description: Det här avsnittet beskriver hur du ställer in omvänd moms (VAT) för europeiska länder, Saudiarabien och Singapore.
+description: Den här artikeln beskriver hur du ställer in omvänd moms (VAT) för europeiska länder, Saudiarabien och Singapore.
 author: epodkolz
 ms.date: 10/05/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 4176f8e853b7d7c2acc1044cab33371202f10c4a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594725"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861268"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mekanism för omvänd moms för moms/GST-schema
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs ett allmänt tillvägagångssätt för att ställa in funktioner för omvänd moms för länder/regioner som har moms- eller GST-scheman.
+I den här artikeln beskrivs ett allmänt tillvägagångssätt för att ställa in funktioner för omvänd moms för länder/regioner som har moms- eller GST-scheman.
                                                                                  
 Land/regiontillgänglighet för funktionen hanteras av följande funktioner på arbetsytan **Funktionshantering**.
 
@@ -33,7 +33,7 @@ Land/regiontillgänglighet för funktionen hanteras av följande funktioner på 
 | Omvänd moms för ytterligare länder            | Bahrain  </br>Kuwait  </br>Oman  </br>Qatar                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Aktivera mekanismen för omvänd moms för moms/GST-schema | Alla andra länder/regioner utom:  </br>Brasilien  </br>Indien  </br>Ryssland                                                                                                                                                                                                                                                                                                                                                                                         |
  
- Mer information finns i [Aktivera mekanismen för omvänd moms för moms/GST-schema](#enable-reverse-charge) senare i det här avsnittet.
+ Mer information finns i [Aktivera mekanismen för omvänd moms för moms/GST-schema](#enable-reverse-charge) senare i den här artikeln.
 
 Omvänd moms är ett skatteschema som har ansvaret för redovisning och rapportering av moms från säljaren till köparen av varor eller tjänster. Därför rapporterar mottagaren av varor eller tjänster både utgående moms (i rollen som säljare) och ingående moms (i rollen som inköpare) i deras momsrapport.
 

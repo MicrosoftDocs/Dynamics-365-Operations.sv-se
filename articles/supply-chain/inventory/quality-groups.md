@@ -1,6 +1,6 @@
 ---
 title: Kvalitetsgrupper för artiklar
-description: I detta ämne beskrivs hur du använder och skapar artikelkvalitetsgrupper för att logiskt gruppera produkter så att dessa kan tilldelas kvalitetsassociationer för automatisk generering av kvalitetsorder.
+description: I denna artikel beskrivs hur du använder och skapar artikelkvalitetsgrupper för att logiskt gruppera produkter så att dessa kan tilldelas kvalitetsassociationer för automatisk generering av kvalitetsorder.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f7a4932c561c052bec1eb0094a390e315b9b1bb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: bf1ce49fa58fd1a8a5aa07636e0b2bd7e2fc10e4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580922"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875377"
 ---
 # <a name="item-quality-groups"></a>Kvalitetsgrupper för artiklar
 
 [!include [banner](../includes/banner.md)]
 
-En kvalitetsgrupp representerar gemensamma testbehov för artiklar. I detta ämne beskrivs hur du använder och skapar artikelkvalitetsgrupper för att logiskt gruppera produkter så att dessa kan tilldelas kvalitetsassociationer för automatisk generering av kvalitetsorder.
+En kvalitetsgrupp representerar gemensamma testbehov för artiklar. I denna artikel beskrivs hur du använder och skapar artikelkvalitetsgrupper för att logiskt gruppera produkter så att dessa kan tilldelas kvalitetsassociationer för automatisk generering av kvalitetsorder.
 
-Gå till **Lagerhantering \> Inställningar \> Kvalitetsgrupper** om du vill ställa in, redigera och visa de artiklar som har tilldelats en kvalitetsgrupp eller de kvalitetsgrupper som är tilldelade en artikel. När du har definierat testkraven på sidan **Testgrupper** kan du definiera reglerna för automatisk generering av kvalitetsorder. För att förenkla processen definierar du inte regler för enskilda artiklar. I stället kan du definiera regler för en kvalitetsgrupp på sidan **Kvalitetsassociationer**.
+Gå till **Lagerhantering \> Inställningar \> Kvalitetsgrupper** om du vill konfigurera, redigera och visa de artiklar som har tilldelats en kvalitetsgrupp eller de kvalitetsgrupper som är tilldelade en artikel. När du har definierat testkraven på sidan **Testgrupper** kan du definiera reglerna för automatisk generering av kvalitetsorder. För att förenkla processen definierar du inte regler för enskilda artiklar. I stället kan du definiera regler för en kvalitetsgrupp på sidan **Kvalitetsassociationer**.
 
 ## <a name="example-of-an-item-quality-group"></a>Exempel på en kvalitetsgrupp för artiklar
 

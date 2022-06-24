@@ -1,6 +1,6 @@
 ---
 title: Synkronisera produkter direkt från Supply Chain Management till produkter i Sales
-description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter från Dynamics 365 Supply Chain Management till Dynamics 365 Sales.
+description: Denna artikel beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter från Dynamics 365 Supply Chain Management till Dynamics 365 Sales.
 author: Henrikan
 ms.date: 06/10/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: dd84f96a5597c480648ae30b6d0274e15d750ff6
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 5195368f3de12c7e361905c3cca442067e39e000
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062473"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856002"
 ---
 # <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>Synkronisera produkter direkt från Supply Chain Management till produkter i Sales
 
@@ -32,7 +32,7 @@ ms.locfileid: "8062473"
 > [!NOTE]
 > Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Microsoft Dataverse för appar](/powerapps/administrator/data-integrator).
 
-Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter direkt från Dynamics 365 Supply Chain Management till Dynamics 365 Sales.
+Denna artikel beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter direkt från Dynamics 365 Supply Chain Management till Dynamics 365 Sales.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflöden i Potentiell kund till kontanter
 
@@ -107,7 +107,7 @@ I följande illustration visas ett exempel på en mallmappning i dataintegrering
 ![Mallmappning i dataintegratorn.](./media/products-direct-template-mapping-data-integrator-1.png)
 
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Potentiell kund till pengar](prospect-to-cash.md)
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 73cb08c880d7b3459201acfc7aeaa8d0dee1674f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 510cf05e7bbc925478f9a1a4ea2ea27fe397c570
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984813"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853204"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Ställ in direkt integration av italiensk FatturaPA med SDI
 
@@ -24,7 +24,7 @@ ms.locfileid: "7984813"
 > [!IMPORTANT]
 > E-fakturering för Italien kanske för närvarande inte stöder alla funktioner som är tillgängliga för elektroniska fakturor i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management.
 
-Det här avsnittet innehåller information som hjälper dig att komma igång med elektronisk fakturering för Italien i Finance och Supply Chain Management. Den guidar dig genom de konfigurationssteg som är beroende av land/region i RCS (Regulatory Configuration Services). De här stegen kompletterar stegen som beskrivs i [Kom igång med elektronisk fakturering](e-invoicing-get-started.md).
+Den här artikeln innehåller information som hjälper dig att komma igång med elektronisk fakturering för Italien i Finance och Supply Chain Management. Den guidar dig genom de konfigurationssteg som är beroende av land/region i RCS (Regulatory Configuration Services). De här stegen kompletterar stegen som beskrivs i [Kom igång med elektronisk fakturering](e-invoicing-get-started.md).
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -38,7 +38,7 @@ Innan du slutför stegen i detta ämne måste följande förutsättningar vara s
 
 Genomför de här procedurerna innan du distribuerar programinställningarna till det anslutna programmet Finance eller Supply Chain Management.
 
-Detta avsnitt kompletterar avsnittet [Landsspecifik konfiguration för programkonfiguration](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) i ämnet "Kom igång med Elektronisk fakturering".
+Denna artikel kompletterar avsnittet [Landsspecifik konfiguration för programkonfiguration](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) i ämnet "Kom igång med Elektronisk fakturering".
 
 ### <a name="create-a-new-feature"></a>Skapa en ny funktion
 

@@ -1,6 +1,6 @@
 ---
 title: Kvalitetsorder
-description: I detta ämne beskrivs hur du manuellt eller automatiskt skapar kvalitetsorder, samt hur du arbetar med dessa för att utföra granskningar och registrera testresultat i Microsoft Dynamics 365 Supply Chain Management.
+description: I denna artikel beskrivs hur du manuellt eller automatiskt skapar kvalitetsorder, samt hur du arbetar med dessa för att utföra granskningar och registrera testresultat i Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 69a4a61a599f1279ec7ad68ebb20c7b4b0f37005
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eb7ab1de0fb4d93ed18f1862630c1af7af7f3095
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571867"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857791"
 ---
 # <a name="quality-orders"></a>Kvalitetsorder
 
 [!include [banner](../includes/banner.md)]
 
-I detta ämne beskrivs hur du manuellt eller automatiskt skapar kvalitetsorder, samt hur du arbetar med dessa för att utföra granskningar och registrera testresultat i Microsoft Dynamics 365 Supply Chain Management.
+I denna artikel beskrivs hur du manuellt eller automatiskt skapar kvalitetsorder, samt hur du arbetar med dessa för att utföra granskningar och registrera testresultat i Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="automatically-created-quality-orders"></a>Automatiskt skapade kvalitetsorder
 
@@ -39,7 +39,7 @@ Gör så här om du vill skapa en kvalitetsorder manuellt:
 
 1. Gå till **Lagerhantering \> Periodiska uppgifter \> Kvalitetshantering \> Kvalitetsorder**.
 1. Välj **Ny**.
-1. I dialogrutan **Kvalitetsorder**, i fältet **Referenstyp**, väljer du den lagerreferens som din kvalitetsorder ska relateras till. En beskrivning av referenstyperna som går att välja finns i avsnittet [Referenstyper för kvalitetsorder](#ref-types) längre fram i detta ämne.
+1. I dialogrutan **Kvalitetsorder**, i fältet **Referenstyp**, väljer du den lagerreferens som din kvalitetsorder ska relateras till. En beskrivning av referenstyperna som går att välja finns i avsnittet [Referenstyper för kvalitetsorder](#ref-types) längre fram i denna artikel.
 
     > [!NOTE]
     > Lager som är relaterat till den valda referensen måste vara tillgängliga. Om inget lager är tillgängligt för kombinationen av referenstyp, kvantitet och lagerdimensioner som du har valt, visas ett felmeddelande.
@@ -88,7 +88,7 @@ På sidan för kvalitetsorder kan du skapa en ny kvalitetsorder manuellt, eller 
 
 ### <a name="from-the-quality-orders-page"></a>Från sidan Kvalitetsorder
 
-Om du vill skapa kvalitetsorder manuellt och visa samtliga befintliga kvalitetsorder går du till **Lagerhantering \> Periodiska uppgifter \> Kvalitetshantering \> Kvalitetsorder**. Återstående avsnitt i detta ämne innehåller mer information om hur du arbetar med sidan **Kvalitetsorder**.
+Om du vill skapa kvalitetsorder manuellt och visa samtliga befintliga kvalitetsorder går du till **Lagerhantering \> Periodiska uppgifter \> Kvalitetshantering \> Kvalitetsorder**. Återstående avsnitt av denna artikel innehåller mer information om hur du arbetar med sidan **Kvalitetsorder**.
 
 ### <a name="from-sales-orders"></a>Från försäljningsorder
 
@@ -114,7 +114,7 @@ Om du vill arbeta med kvalitetsorder som hör till dina produktionsorder går du
 - Öppna en produktionsorder eller markera den i rutnätet. På fliken **Produktionsorder**, i gruppen **Produktionsinformation** i åtgärdsfönstret, väljer du **Flöde** för att öppna sidan **Produktionsflöde**. Om du vill visa kvalitetsorder som hör till en flödesfunktion gör du så här:
 
     - Välj målflödesfunktion i rutnätet. Välj sedan **Förfrågningar \> Kvalitetsorder** i åtgärdsfönstret.
-    - Välj värdet i fältet **Funktionsnr.** om du vill att målflödesfunktionen ska öppna sin informationssida för **Produktionsflöde**. På snabbfliken **Allmänt** anger fältet **Kvalitetsorderstatus** statusen för de kvalitetsorder som hör till flödesoperationen.
+    - Välj värdet i fältet **Funktionsnr.** om du vill att målflödesfunktionen ska öppna sin informationssida för **Produktionsflöde**. På snabbfliken **Allmänt** anger fältet **Kvalitetsorderstatus** statusen för de kvalitetsorder som hör till flödesåtgärden.
 
 - Öppna en produktionsorder och välj snabbfliken **Allmänt**. I fältet **Kvalitetsorderstatus** visas statusen för alla kvalitetsorder som hör till produktionsordern.
 

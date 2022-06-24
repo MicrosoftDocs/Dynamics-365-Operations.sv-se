@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 684b38a4940ff00978201334d1db0cef87b79b35
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: a73e145dd26e930c860e9ea31d7dab4f1593c2a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311964"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845299"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Momsberäkning för allmänna journalrader
 [!include [banner](../includes/banner.md)]

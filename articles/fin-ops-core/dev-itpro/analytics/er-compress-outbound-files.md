@@ -1,6 +1,6 @@
 ---
 title: Komprimera stora dokument som genereras i elektronisk rapportering
-description: Det här avsnittet innehåller information om hur du komprimerar stora dokument som genereras av ett format för elektronisk rapportering (ER).
+description: Den här artikeln innehåller information om hur du komprimerar stora dokument som genereras av ett format för elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 09/11/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7ef8f730f2e207a8fd28c2bf5167d14f57d6c607314bfc48d4358a59d3ef5c43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a4995879717e715f8ebadb6a80e00949df7545c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718609"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864819"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Komprimera stora dokument som genereras i elektronisk rapportering 
 
@@ -33,7 +33,7 @@ När du konfigurerar en lösning kan du justera ditt ER-format i operationsdesig
 > [!NOTE]
 > Filkomprimering tar ytterligare en andel CPU-användning.
 
-Om du vill veta mer om den här metoden slutför du exemplet i det här avsnittet.
+Om du vill veta mer om den här metoden slutför du exemplet i den här artikeln.
 
 ## <a name="example-compress-an-outbound-document"></a>Exempel: komprimera ett utgående dokument
 

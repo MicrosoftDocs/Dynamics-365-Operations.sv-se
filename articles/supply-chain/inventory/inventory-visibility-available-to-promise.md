@@ -1,6 +1,6 @@
 ---
 title: Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova
-description: Det här ämnet beskriver hur du schemalägger framtida beredskapsändringar och beräknar kvantiteter disponibelt att lova (ATP).
+description: Denna artikel beskriver hur du schemalägger framtida beredskapsändringar och beräknar kvantiteter disponibla att lova (ATP).
 author: yufeihuang
 ms.date: 05/11/2022
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 7456f87bede7bd0073223fa4762f96f919799e06
-ms.sourcegitcommit: 38d97efafb66de298c3f504b83a5c9b822f5a62a
+ms.openlocfilehash: 4a0edeedfe42b43ef36c8ca091b01eef815f3632
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "8763265"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856205"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Lagersynlighet- och ändringsplan för lagerbehållning som är disponibel att lova
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in funktionen *schema för ändringsplan* för att kunna tidsplanera framtida ändringar av lagerbehållningen och beräkna kvantiteter som är tillgängliga att lova. ATP är den kvantitet av en artikel som finns tillgänglig och därför kan utlovas en kund i nästa period. Om du använder den här beräkningen kan du öka möjligheten att uppfylla ordern mycket.
+lagerbehållning beskrivs hur du konfigurerar funktionen *Behållningsschema för ändringsplan* för att kunna tidsplanera framtida ändringar av lagerbehållningen och beräkna kvantiteter som är tillgängliga att lova. ATP är den kvantitet av en artikel som finns tillgänglig och därför kan utlovas en kund i nästa period. Om du använder den här beräkningen kan du öka möjligheten att uppfylla ordern mycket.
 
 För många tillverkare, återförsäljare och säljare räcker det inte att veta vad som finns i nuläget. De måste ha fullständig insyn i framtida tillgänglighet. Framtida tillgänglighet ska ta hänsyn till framtida leverans, framtida efterfrågan och tillgängligt att leverera tillgängligt att leverera.
 
-## <a name="enable-and-set-up-the-features"></a><a name="setup"></a>Aktivera och ställa in funktionerna
+## <a name="enable-and-set-up-the-features"></a><a name="setup"></a>Aktivera och konfigurera funktionerna
 
-Innan du kan använda slutet på ett leverantörsantal måste du ställa in en eller flera beräknade mått för att beräkna kvantiteterna för tillgängliga att välja mellan. Du måste även aktivera funktionen och konfigurera inställningar för ATP-inställningar i Microsoft Power Apps.
+Innan du kan använda slutet på ett leverantörsantal måste du konfigurera en eller flera beräknade mått för att beräkna kvantiteterna för tillgängliga att välja mellan. Du måste även aktivera funktionen och konfigurera inställningar för ATP-inställningar i Microsoft Power Apps.
 
 ### <a name="set-up-calculated-measures-for-atp-quantities"></a>Ställ in beräknade mått för ATP-kvantiteter
 

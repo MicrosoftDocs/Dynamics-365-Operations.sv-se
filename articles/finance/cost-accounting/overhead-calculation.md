@@ -1,6 +1,6 @@
 ---
 title: Beräkning av indirekta kostnader
-description: Det här avsnittet beskriver de vanliga processerna för beräkning och allokering av indirekta kostnader.
+description: Den här artikeln beskriver de vanliga processerna för beräkning och allokering av indirekta kostnader.
 author: AndersGirke
 ms.date: 10/04/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 9d704268f481fdf377033740f727e5d581a8c510
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 9322fb5237afdbf73147bb549eb3f70929c46ce2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733946"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882003"
 ---
 # <a name="overhead-calculation"></a>Beräkning av indirekta kostnader
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver de vanliga processerna för beräkning och allokering av indirekta kostnader.
+Den här artikeln beskriver de vanliga processerna för beräkning och allokering av indirekta kostnader.
 
 ## <a name="term-definition"></a>Termdefinition
 
@@ -1333,10 +1333,10 @@ Kostnadselement | Kostnadsobjekt<br>CC099 | Kostnadsobjekt<br>CC001 | Kostnadsob
 10001 Elektricitet | 0,00 | 0,00 | 0,00 | 0,00 |  | 30.00 | 10,00 | 7,770.57 | 2,189.43 | 10,000.00 |
 Oklassificerade | 0,00 |  |  |  |  |  |  |  |  |  |
 Fast kostnad | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |  |  | 776.36 | 223.64 | 1,000.00 |
-Variabel kostnad | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30,00 | 10,00 | 6,994.21 | 1,965.79 | 9,000.00 |
+Variabel kostnad | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30.00 | 10,00 | 6,994.21 | 1,965.79 | 9,000.00 |
 
 > [!NOTE]
-> Det här avsnittet visar hur ett primärt kostnadselement 10001 Elektricitet flödar genom kostnadsobjekten. Därför tilldelas denna indirekta kostnad till den lägsta nivån i organisationen. Med andra ord bär kostnadsobjekten på den lägsta nivån kostnaden. Om du behöver ett visuellt flöde mellan kostnadsobjekten, kan du använda policyregler för kostnadssummeringen för att visualisera flödet av kostnaden. Mer information finns i [Policy för samlade kostnader och omkostnadsberäkning](cost-rollup.md).
+> Den här artikeln visar hur ett primärt kostnadselement 10001 Elektricitet flödar genom kostnadsobjekten. Därför tilldelas denna indirekta kostnad till den lägsta nivån i organisationen. Med andra ord bär kostnadsobjekten på den lägsta nivån kostnaden. Om du behöver ett visuellt flöde mellan kostnadsobjekten, kan du använda policyregler för kostnadssummeringen för att visualisera flödet av kostnaden. Mer information finns i [Policy för samlade kostnader och omkostnadsberäkning](cost-rollup.md).
 
 
 

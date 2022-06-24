@@ -1,6 +1,6 @@
 ---
-title: Ställ in orderuppfyllande för butiker
-description: Det här ämnet ger en översikt över hur du ställer in orderuppfyllelse i butik.
+title: Ställa in orderuppfyllelse för butiker
+description: Denna artikel ger en översikt över hur du konfigurerar orderuppfyllelse i butik.
 author: BrianShook
 ms.date: 10/30/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ed709c2a15a2d9e1675da55fc87284127e64ba39
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 12c60de59f1007256b67a56a5ede0b83857b73bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779607"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855040"
 ---
 # <a name="set-up-order-fulfillment-for-stores"></a>Ställa in orderuppfyllelse för butiker
 
@@ -33,7 +33,7 @@ Utförande av orderuppfyllelse i butiken ger en enskild arbetsyta i POS som kan 
 
 ## <a name="set-up-the-order-fulfillment-operation"></a>Ställa in utförandet av orderuppfyllelse.
 
-Orderuppfyllande [Operations-ID 928](pos-operations.md), kan användas för åtkomst till butikens orderuppfyllelsearbete i POS.
+Orderuppfyllande [Åtgärds-ID 928](pos-operations.md), kan användas för åtkomst till butikens orderuppfyllelsearbete i POS.
 
 Följ instruktionerna i [lägga till åtgärden i en knappsats](pos-screen-layouts.md) för att ange vilken parameter som ska användas vid åberopande av orderuppfyllelse i POS. Som standard när du har angett åtgärden för orderuppfyllelse väljs **alla order**. När de konfigureras med den här parametern kommer åtgärden att lista alla orderrader för uppfyllelse i den aktuella butiken. **order ska levereras** finns också tillgänglig som kan tilldelas till en knapp och användas när användaren bara vill visa order som levereras från lager. Slutligen finns det **order för upphämtning**. När detta anropas i POS listar detta bara order som ska hämtas i butiken. De olika parametrarna kan tilldelas till olika knappar för att ge användaren en mängd olika sätt att visa orderuppfyllelse.
 
@@ -104,15 +104,15 @@ Som standard har ordern statusen **accepterad**. Orderstatus kan visas som en ko
 
 - **Redigera** – Om en orderstatus väntar den redigeras vid POS. Order som redan har delvis plockats, packats eller fakturerats kan inte redigeras från orderuppfyllandevyn.
 - **Godkänn** – Om **Manuellt godkännande** är konfigurerad på kanalnivå måste rader först godkännas innan de kan förflytta genom uppfyllandet av orderprocessen.
-- **Välj** – Alternativet plockning stöder flera åtgärder. Först uppdaterar **plockning** status för orderraden så att andra i butiken inte försöker välja samma rad. Nästa **Skriv ut plocklista** skriver ut en plocklista för den valda raden eller raderna och deras status ska uppdateras även **plockning**. Plocklisteformat styrs som en del av kvittoformat. Mer information om hur du ställer in kvittoformat finns i [Kvittomallar och utskrift](receipt-templates-printing.md). Slutligen indikerar **Markera som plockad** att raden har plockats. **Markera som plockad** initierar motsvarande lagertransaktioner i backoffice. Plockåtgärder kan utföras samtidigt för flera rader på en order och för alla leveranssätt.
+- **Välj** – Alternativet plockning stöder flera åtgärder. Först uppdaterar **plockning** status för orderraden så att andra i butiken inte försöker välja samma rad. Nästa **Skriv ut plocklista** skriver ut en plocklista för den valda raden eller raderna och deras status ska uppdateras även **plockning**. Plocklisteformat styrs som en del av kvittoformat. Mer information om hur du konfigurerar kvittoformat finns i [Kvittomallar och utskrift](receipt-templates-printing.md). Slutligen indikerar **Markera som plockad** att raden har plockats. **Markera som plockad** initierar motsvarande lagertransaktioner i backoffice. Plockåtgärder kan utföras samtidigt för flera rader på en order och för alla leveranssätt.
 - **Avslå** – Rader eller delvisa rader avslås. Detta gör att de kan skickas vidare från backoffice till en annan butik eller lagerställe. Raderna kan bara avvisas om de har ännu inte plockats eller förpackats. Om du vill avvisa en rad som redan har plockats eller förpackats måste den raden upphävas eller packas upp från backoffice.
-- **Packa** – Alternativet packa stöder två åtgärder: **Skriv ut följesedel** skriver ut en följesedel för de valda raderna och **markerad som packad** kommer att markera raderna som du packade och markerar raderna som levereras i backoffice. Endast orderrader som tillhör samma order och har samma leveranssätt kan packas samtidigt. Följesedelformat styrs som en del av kvittoformat. Mer information om hur du ställer in kvittoformat finns i [Kvittomallar och utskrift](receipt-templates-printing.md).
+- **Packa** – Alternativet packa stöder två åtgärder: **Skriv ut följesedel** skriver ut en följesedel för de valda raderna och **markerad som packad** kommer att markera raderna som du packade och markerar raderna som levereras i backoffice. Endast orderrader som tillhör samma order och har samma leveranssätt kan packas samtidigt. Följesedelformat styrs som en del av kvittoformat. Mer information om hur du konfigurerar kvittoformat finns i [Kvittomallar och utskrift](receipt-templates-printing.md).
 - **Leverera** Åtgärden leverera markerar de valda raderna som **levererad** i backoffice. När en rad har levererats visas den inte längre i orderuppfyllelsevyn.
 - **Upphämtning** – Åtgärden för upphämtning lägger till rader i transaktionsvyn för upphämtning. Om det inte finns andra rader för order som för närvarande inte tas upp kommer de att läggas till i transaktionsvyn med kvantiteten noll. När en rad har hämtats helt visas den inte längre i orderuppfyllelsevyn.
 
 ### <a name="order-fulfillment-filtering"></a>Orderuppfyllelsefiltrering
 
-Orderuppfyllelse i POS innehåller filter för att hjälpa användaren att enkelt hitta vad de behöver. Filter kan ändras via åtgärdsfönstret längst ned på skärmen **Kassa**. Som standard tillämpas filtret **leveranstyp** beroende på hur operationen ställs in. Om operationen ställs in med parametern **alla order** och filtret används vid åtkomst av orderuppfyllelse. Detsamma gäller för parametrarna **Butiksupphämtning** och **Leverans från butik**. Andra filter kan tillämpas på orderuppfyllelsen:
+Orderuppfyllelse i POS innehåller filter för att hjälpa användaren att enkelt hitta vad de behöver. Filter kan ändras via åtgärdsfönstret längst ned på skärmen **Kassa**. Som standard tillämpas filtret **leveranstyp** beroende på hur åtgärden ställs in. Om åtgärden ställs in med parametern **alla order** och filtret används vid åtkomst av orderuppfyllelse. Detsamma gäller för parametrarna **Butiksupphämtning** och **Leverans från butik**. Andra filter kan tillämpas på orderuppfyllelsen:
 
 - Kundnummer
 - Kundnamn

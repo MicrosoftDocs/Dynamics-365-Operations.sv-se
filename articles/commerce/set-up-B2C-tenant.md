@@ -1,6 +1,6 @@
 ---
 title: Ställa in en B2C-innehavare i Commerce
-description: I det här avsnittet beskrivs hur du ställer in din Azure Active Directory (Azure AD) B2C-innehavare (Business-to-Consumer) för autentisering av användarplats i Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du konfigurerar din Azure Active Directory (Azure AD) B2C-innehavare (Business-to-Consumer) för autentisering av användarplats i Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 05/05/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 086128091b23ce6ab46dd2dfc0803af38de6bac7
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 4b1ee8999717d70dfe36baef95921962a1b7be65
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714322"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853751"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Ställa in en B2C-innehavare i Commerce
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in din Azure Active Directory (Azure AD) B2C-innehavare (Business-to-Consumer) för autentisering av användarplats i Dynamics 365 Commerce.
+I denna artikel beskrivs hur du konfigurerar din Azure Active Directory (Azure AD) B2C-innehavare (Business-to-Consumer) för autentisering av användarplats i Dynamics 365 Commerce.
 
 Dynamics 365 Commerce använder Azure AD B2C för att stödja autentiseringsuppgifter för användare och verifikationsflöden. En användare kan registrera sig, logga in och återställa sitt lösenord genom dessa flöden. Azure AD B2C lagrar känslig information om användarautentisering, t.ex. användarnamn och lösenord. Användarposten i B2C-innehavaren kommer att lagra antingen en B2C lokal kontopost eller en post för en B2C social identitetsleverantör. Dessa B2C-poster kommer att länkas tillbaka till kundposten i Commerce-miljön.
 
@@ -221,7 +221,7 @@ Om autentisering av sociala identitetsleverantörer läggs till och en användar
 > [!NOTE]
 > Identitetsleverantörens inloggning skapar en post i B2C-innehavaren, men i ett annat format än lokala konton eftersom den ska anropa den externa referensen för social identitetsleverantör för autentisering. Användaren kan använda samma e-postadress för sociala identitetsleverantör, vilket innebär att e-postnamnet som används för autentisering kanske inte är unikt för innehavaren. Azure AD B2C kommer bara att säkerställa att användarna har en unik e-postadress på lokala B2C-konton.
 
-Innan du kan lägga till en social identitetsleverantör för autentisering måste du gå till identitetsleverantörens portal och ställa in ett program för identitetsleverantör enligt anvisningarna i Azure AD B2C-dokumentationen. Nedan finns en lista med länkar till dokumentationen.
+Innan du kan lägga till en social identitetsleverantör för autentisering måste du gå till identitetsleverantörens portal och konfigurera ett program för identitetsleverantör enligt anvisningarna i Azure AD B2C-dokumentationen. Nedan finns en lista med länkar till dokumentationen.
 
 - [Amazon](/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
 - [Azure AD (En innehavare)](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
@@ -233,7 +233,7 @@ Innan du kan lägga till en social identitetsleverantör för autentisering mås
 - [OpenID Connect](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
 - [Twitter](/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
 
-### <a name="add-and-set-up-a-social-identity-provider"></a>Lägga till och ställa in en leverantör av sociala identiteter
+### <a name="add-and-set-up-a-social-identity-provider"></a>Lägga till och konfigurera en leverantör av sociala identiteter
 
 Lägg till och ställ in en leverantör av sociala identiteter enligt följande instruktioner.  
 
@@ -249,7 +249,7 @@ Lägg till och ställ in en leverantör av sociala identiteter enligt följande 
 1. Gå till **Azure AD B2C – användarflöden (principer)\> {din policy för registrering och inloggning} \> identitetsleverantörer**.
 1. Om du vill koppla användarflödespolicyn för inloggning/registrering markerar du varje identitetsleverantör som du har skapat för ditt konto. Om du vill testa dessa väljer du **kör användarflöde** för varje identitetsleverantör. På en ny flik visas inloggningssidan med den nya valrutan för identitetsleverantörer.
 
-Följande bild illustrerar exempel på skärmarna **lägga till identitetsleverantören** och **ställer in social identitetsleverantören** i Azure AD B2C.
+Följande bild illustrerar exempel på skärmarna **lägga till identitetsleverantören** och **konfigurerar social identitetsleverantören** i Azure AD B2C.
 
 ![Lägga till en social identitetsleverantör i ditt program.](./media/B2CImage_14.png)
 
@@ -260,11 +260,11 @@ I följande bild visas ett exempel på hur du väljer identitetsleverantörer p�
 I bilden nedan visas ett exempel på en standard inloggningsskärm med knappen för inloggning med sociala identitetsleverantörer som visas.
 
 > [!NOTE]
-> Om du använder de anpassade sidorna som är inbyggda i Commerce för dina användarflöden måste knapparna för sociala identitetsleverantörer läggas till med hjälp av utökningsfunktionerna i Commerce-modulbiblioteket. När du ställer in program med en viss leverantör av social identitet, kan URL-adressen eller konfigurationssträngen i vissa fall vara ärendekänslig. Mer information finns i anslutningsinstruktioner för din personidentitetsprovider.
+> Om du använder de anpassade sidorna som är inbyggda i Commerce för dina användarflöden måste knapparna för sociala identitetsleverantörer läggas till med hjälp av utökningsfunktionerna i Commerce-modulbiblioteket. När du konfigurerar program med en viss leverantör av social identitet, kan URL-adressen eller konfigurationssträngen i vissa fall vara ärendekänslig. Mer information finns i anslutningsinstruktioner för din personidentitetsprovider.
  
 ![Exempel på standardinloggningsskärm när inloggningsknappen för sociala identitetsleverantörer visas.](./media/B2CImage_17.png)
 
-## <a name="update-commerce-headquarters-with-the-new-azure-ad-b2c-information"></a>Uppdatera Commerce-administration med den nya Azure AD B2C-informationen
+## <a name="update-commerce-headquarters-with-the-new-azure-ad-b2c-information"></a>Uppdatera Commerce headquarters med den nya Azure AD B2C-informationen
 
 När Azure AD B2C etableringsstegen ovan har slutförts måste Azure AD B2C-programmet vara registrerat i din Dynamics 365 Commerce-miljö.
 
@@ -347,13 +347,13 @@ Följ stegen nedan om du vill lägga till din Azure AD B2C-information till Comm
 1. Välj **OK**. Nu ska nu se att namnet på ditt B2C-program visas i listan.
 1. Spara ändringarna genom att klicka på **Spara**.
 
-Det valfria fältet **Anpassad domän för inloggning** ska endast användas om du ställer in en anpassad domän för Azure AD B2C-klientorganisationen. Mer information och beaktanden om hur du använder fältet **Anpassad domän för inloggning** finns i [Ytterligare B2C-information](#additional-b2c-information) nedan.
+Det valfria fältet **Anpassad domän för inloggning** ska endast användas om du konfigurerar en anpassad domän för Azure AD B2C-klientorganisationen. Mer information och beaktanden om hur du använder fältet **Anpassad domän för inloggning** finns i [Ytterligare B2C-information](#additional-b2c-information) nedan.
 
 ### <a name="associate-the-b2c-application-to-your-site-and-channel"></a>Associera B2C program till din webbplats och kanal
 
 > [!WARNING]
 > - Om webbplatsen redan är associerad med ett B2C-program tas aktuella referenser för användare som redan registrerats i den här miljön bort när du byter till ett annat B2C-program. Om det ändras kommer inga autentiseringsuppgifter som associeras med det B2C programmet att vara tillgängliga för användarna. 
-> - Uppdatera endast B2C-programmet om du ställer in kanalens B2C-program för första gången eller om du vill att användarna ska registrera dig igen med nya autentiseringsuppgifter för den här kanalen med det nya B2C-programmet. Var försiktig när du kopplar kanaler till B2C-program och namnge program tydligt. Om en kanal inte är associerad med ett B2C program i stegen nedan, kommer användare som loggar in på den kanalen för din webbplats att anges i B2C-program som visas **standard** i **innehavarinställningar \> B2C-inställningar** för B2C-program.
+> - Uppdatera endast B2C-programmet om du konfigurerar kanalens B2C-program för första gången eller om du vill att användarna ska registrera dig igen med nya autentiseringsuppgifter för den här kanalen med det nya B2C-programmet. Var försiktig när du kopplar kanaler till B2C-program och namnge program tydligt. Om en kanal inte är associerad med ett B2C program i stegen nedan, kommer användare som loggar in på den kanalen för din webbplats att anges i B2C-program som visas **standard** i **innehavarinställningar \> B2C-inställningar** för B2C-program.
 
 För att associera B2C-program till din webbplats och kanal, följ dessa steg.
 
@@ -382,7 +382,7 @@ Ett valfritt, sekundärt administratörskonto kan läggas till i avsnittet **anv
 
 ### <a name="set-up-a-custom-sign-in-domain"></a>Ställa in en anpassad inloggningsdomän
 
-Med Azure AD B2C kan du ställa in en anpassad inloggningsdomän för Azure AD B2C-klientorganisationer. Instruktioner finns i [Aktivera anpassade domäner för Azure Active Directory B2C](/azure/active-directory-b2c/custom-domain). 
+Med Azure AD B2C kan du konfigurera en anpassad inloggningsdomän för Azure AD B2C-klientorganisationer. Instruktioner finns i [Aktivera anpassade domäner för Azure Active Directory B2C](/azure/active-directory-b2c/custom-domain). 
 
 Om du använder en anpassad inloggningsdomän måste domänen anges i Commerce-webbplatsbyggaren.
 

@@ -1,6 +1,6 @@
 ---
-title: Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
-description: Det här avsnittet innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem med dubbelriktad skrivning i Ekonomi och Drift-appar.
+title: Felsöka problem med dubbelriktad skrivning i Ekonomi och drift-appar
+description: Den här artikeln innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem med dubbelriktad skrivning i Ekonomi och Drift-appar.
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 0696d525e985f1cfcac1998d4c0bd8a380ca9551
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 36f7969eb0bdbc64ade14a5bb97b4b708486d226
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613894"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864584"
 ---
-# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Felsöka problem med dubbelriktad skrivning i Ekonomi och drift-appar
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Dataverse. Det ger särskilt information som kan hjälpa dig att åtgärda problem med **dubbelriktad skrivning** i Ekonomi och Drift-appar.
+Den här artikeln innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Ekonomi och Drift-appar och Dataverse. Det ger särskilt information som kan hjälpa dig att åtgärda problem med **dubbelriktad skrivning** i Ekonomi och Drift-appar.
 
 > [!IMPORTANT]
 > Vissa av de problem som det här ämnet behandlar kan kräva antingen systemadministratörsrollen eller Microsoft Azure Active Directory (Azure AD) autentiseringsuppgifter för administratör för klientorganisationen. I avsnittet för varje problem förklaras om en viss roll eller autentiseringsuppgifter krävs.

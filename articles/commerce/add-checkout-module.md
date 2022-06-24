@@ -1,6 +1,6 @@
 ---
 title: Kassamodul
-description: I det här avsnittet beskrivs hur du lägger till en kassamodul på en sida och ställer in de obligatoriska egenskaperna.
+description: I denna artikel beskrivs hur du lägger till en kassamodul på en sida och konfigurerar de obligatoriska egenskaperna.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0d022ad98603b489a133a5b9f2326677e9ebb307
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: a30d56d7edf967a3afab7442338dd9f480ef7fd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780524"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869038"
 ---
 # <a name="checkout-module"></a>Kassamodul
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du lägger till en kassamodul på en sida och ställer in de obligatoriska egenskaperna.
+I denna artikel beskrivs hur du lägger till en kassamodul på en sida och konfigurerar de obligatoriska egenskaperna.
 
 En kassamodul är en särskild behållare som är värd för alla moduler som krävs för att skapa en order. Det visar ett steg-för-steg-flöde som en kund använder för att registrera all relevant information för att göra inköp. Den fångar in leveransadress, leveransmetod och faktureringsinformation. Den innehåller också en ordersammanfattning och annan information som är relaterad till en kundorder.
 
@@ -44,7 +44,7 @@ En betalningsmodul visar en ordersammanfattning och innehåller funktioner för 
 | Rubrik för kassa | Rubriktext och rubriktagg (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En rubrik för kassamodulen. |
 | Rubrik för orderöversikt | Rubriktext | En rubrik för avsnittet för ordersammanfattning i modulen. |
 | Rubrik på vagn radartiklar | Rubriktext | En rubrik för kundvagnsartiklar som visas i modulen för kassa. |
-| Visa leveransavgifter på radartiklar | **Sant** eller **falskt** | Om den här egenskapen har värdet **True** de leveranskostnader som är tillämpliga för rader kommer att visas på kundvagnrader. Om funktionen **Huvudtillägg utan proportionell fördelning** aktiveras i Commerce-administration kommer fraktkostnaden tillämpas på rubriknivå, inte på radnivå. Den här funktionen har lagts till i Commerce version 10.0.13. |
+| Visa leveransavgifter på radartiklar | **Sant** eller **falskt** | Om den här egenskapen har värdet **True** de leveranskostnader som är tillämpliga för rader kommer att visas på kundvagnrader. Om funktionen **Huvudtillägg utan proportionell fördelning** aktiveras i Commerce headquarters kommer fraktkostnaden tillämpas på rubriknivå, inte på radnivå. Den här funktionen har lagts till i Commerce version 10.0.13. |
 
 ## <a name="modules-that-can-be-used-in-the-checkout-module"></a>Moduler kan användas i kassamodulen
 
@@ -86,9 +86,9 @@ En betalningsmodul visar en ordersammanfattning och innehåller funktioner för 
 
 Större delen av kassan, t.ex. leveransadress och leveransmetod, lagras i kundvagnen och bearbetas som en del av ordern. Det enda undantaget är kreditkortsinformationen. Den här informationen bearbetas direkt med hjälp av Adyen betalningsanslutning. Betalningen är auktoriserad men inte debiterad förrän ordern är uppfylld.
 
-## <a name="add-a-checkout-module-to-a-page-and-set-the-required-properties"></a>Lägg till en kassamodul på en sida och ställa in de obligatoriska egenskaperna.
+## <a name="add-a-checkout-module-to-a-page-and-set-the-required-properties"></a>Lägg till en kassamodul på en sida och konfigurera de obligatoriska egenskaperna.
 
-Om du vill lägga till en kassamodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
+Om du vill lägga till en kassamodul på en ny sida och konfigurera de obligatoriska egenskaperna följer du stegen nedan.
 
 1. Gå till **Fragment** och välj **ny** för att skapa ett nytt fragment.
 1. I dialogrutan **Välj fragment**, välj modulen **Kassa**.

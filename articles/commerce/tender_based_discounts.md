@@ -1,6 +1,6 @@
 ---
 title: Betalningsmedelbaserade rabatter
-description: Det här ämnet innehåller en översikt över funktioner som gör att detaljhandlare kan konfigurera rabatter för olika typer av betalningsmedel.
+description: Denna artikel innehåller en översikt över funktioner som gör att detaljhandlare kan konfigurera rabatter för olika typer av betalningsmedel.
 author: bebeale
 ms.date: 10/30/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 52b9510b2c22157aec27b865115273064bb0e803443306ea20468b93a2ea3ca7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d67819fce0fb0002ffd85324cb24aea2d2abdabb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719475"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871591"
 ---
 # <a name="tender-based-discounts"></a>Betalningsmedelbaserade rabatter
 
@@ -51,7 +51,7 @@ Endast betalningsmedelbaserade rabatter kan tillämpas på försäljningsrader d
 
 Om den betalningsmedelbaserade rabatten har ställts in på kontanter och kassören i POS väljer en knapp som är mappad till åtgärden Kontantbetalning, används den betalningsmedelbaserade rabatten automatiskt för transaktionen. Det reducerade beloppet visas sedan som saldot. Om kassören däremot väljer knappen **bakåt** på betalningsskärmen tas rabatten bort och det ursprungliga beloppet visas på transaktionsskärmen. Den betalningsmedelbaserade rabatten tas bort om betalningsraden är annullerad.
 
-För kortbetalningar kan återförsäljare ställa in den betalningsmedelbaserade rabatten på en eller flera typer av kreditkort. Systemet kan dock inte verifiera vilken typ av kreditkort som används om inte kortet är auktoriserat. Om rabatten tillämpas efter auktorisering får betalningsauktoriseringen ett större belopp, men betalningsinsamlingen blir för ett mindre belopp.
+För kortbetalningar kan återförsäljare konfigurera den betalningsmedelbaserade rabatten på en eller flera typer av kreditkort. Systemet kan dock inte verifiera vilken typ av kreditkort som används om inte kortet är auktoriserat. Om rabatten tillämpas efter auktorisering får betalningsauktoriseringen ett större belopp, men betalningsinsamlingen blir för ett mindre belopp.
 
 För att förhindra den här situationen, om en kund betalar med kreditkort, ser kassören en dialogruta med en lista med kreditkort som ger kunden ytterligare besparingar. Kassören kan sedan fråga om kunden vill använda ett av de förvalda korten för att få en ytterligare rabatt. Om kassören använder ett prioriterat kort tillämpas den betalningsmedelbaserade rabatten på transaktionen och det reducerade beloppet visas på betalningsskärmen. Auktoriseringen kommer att vara för reducerat belopp. Om kunden infogar ett kort som skiljer sig från kortet som kassören har valt, visas ett felmeddelande och auktoriseringen annulleras.
 
@@ -65,7 +65,7 @@ När användaren väljer **slutförd** under en kundtjänstorder visas skärmen 
 
 ## <a name="exclude-items-from-discounts"></a>Exkludera artiklar från rabatter
 
-Återförsäljare väljer ofta att exkludera vissa produkter, t.ex. nya artiklar eller artiklar på begäran, från rabatter. De kan dock fortfarande vilja använda betalningsmedelbaserade rabatter. En återförsäljare konfigurerar till exempel Commerce så att artikelbaserade rabatter eller manuella rabatter inte tillåts. Om kunden betalar med hjälp av det prioriterade betalningsmedlet, kommer Commerce fortfarande rabatten att tillämpas på den betalningsmedelbaserade rabatten. Om du vill ställa in Commerce på det här sättet måste du gå till **Produktinformationshantering > Produkter > Frisläppta produkter**, markera artikeln och sedan på snabbfliken **Commerce** ange alternativen **Förhindra alla rabatter** och **Förhindra betalningsmedelbaserade rabatter** till **Nej** och alternativen **Förhindra butiksrabatter** och **Förhindra manuella rabatter** till **Ja**.
+Återförsäljare väljer ofta att exkludera vissa produkter, t.ex. nya artiklar eller artiklar på begäran, från rabatter. De kan dock fortfarande vilja använda betalningsmedelbaserade rabatter. En återförsäljare konfigurerar till exempel Commerce så att artikelbaserade rabatter eller manuella rabatter inte tillåts. Om kunden betalar med hjälp av det prioriterade betalningsmedlet, kommer Commerce fortfarande rabatten att tillämpas på den betalningsmedelbaserade rabatten. Om du vill konfigurera Commerce på det här sättet måste du gå till **Produktinformationshantering > Produkter > Frisläppta produkter**, markera artikeln och sedan på snabbfliken **Commerce** ange alternativen **Förhindra alla rabatter** och **Förhindra betalningsmedelbaserade rabatter** till **Nej** och alternativen **Förhindra butiksrabatter** och **Förhindra manuella rabatter** till **Ja**.
 
 > [!NOTE]
 > När konfigurationen **Förhindra alla rabatter** är inställd på **Ja** tillämpas inga rabatter på produkten. Inte heller betalningsmedelbaserade rabatter kommer att användas.

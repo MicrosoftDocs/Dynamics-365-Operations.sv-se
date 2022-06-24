@@ -1,6 +1,6 @@
 ---
-title: Räkna om ersättningskostnader och försäkrade värden för anläggningstillgångsgrupper
-description: Det här ämnet beskriver processen för att uppdatera ersättningskostnaden och de försäkrade värdena för anläggningstillgångar.
+title: Räkna om ersättningskostnader och försäkrade värden för Anläggningstillgångsgrupper
+description: Den här artikeln beskriver processen för att uppdatera ersättningskostnaden och de försäkrade värdena för anläggningstillgångar.
 author: moaamer
 ms.date: 01/12/2018
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e01e0241117dc69cafb67aeb3f1d10249fe143a0
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 3b461438ca3fef36e69100379e84f4c0d402e53e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726793"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853479"
 ---
-# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Räkna om ersättningskostnader och försäkrade värden för anläggningstillgångsgrupper
+# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Räkna om ersättningskostnader och försäkrade värden för Anläggningstillgångsgrupper
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet beskriver processen för att uppdatera ersättningskostnaden och de försäkrade värdena för anläggningstillgångar.
+Den här artikeln beskriver processen för att uppdatera ersättningskostnaden och de försäkrade värdena för anläggningstillgångar.
 
 Då och då kanske du får information om att kostnaden för att ersätta eller försäkra vissa anläggningstillgångar har ändrats. Din chef kanske till exempel informerar dig om att inflationen var 3 procent högre förra året, så att du måste öka ersättningskostnaden för alla anläggningstillgångar med 3 procent. 
 

@@ -1,6 +1,6 @@
 ---
-title: Ställa in en onlinekanal
-description: I det här avsnittet beskrivs hur du skapar en ny onlinekanal i Microsoft Dynamics 365 Commerce.
+title: Konfigurera en onlinekanal
+description: I denna kanal beskrivs hur du skapar en ny onlinekanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 02/04/2022
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f32872fcc27e2e74300c4f18dfa08d666e4ad8a8
-ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
+ms.openlocfilehash: fe137fe0c69a5b9613086c66366b064194b9b6c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092122"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864939"
 ---
-# <a name="set-up-an-online-channel"></a>Ställa in en onlinekanal
+# <a name="set-up-an-online-channel"></a>Konfigurera en onlinekanal
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skapar en ny onlinekanal i Microsoft Dynamics 365 Commerce.
+I denna kanal beskrivs hur du skapar en ny onlinekanal i Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce stöder flera butikskanaler. Dessa kanaler inkluderar onlinebutiker, kundtjänst och butiker (kallas också fysiska butiker). En onlinebutik ger en kunder alternativet att köpa produkter från återförsäljarens onlinebutik såväl som från deras fysiska butik.
 
-Om du vill skapa en onlinebutik i Commerce måste du först skapa en onlinekanal. Innan du skapar en ny onlinekanal måste du kontrollera att du har slutfört [Förutsättningar för att ställa in kanaler](channels-prerequisites.md).
+Om du vill skapa en onlinebutik i Commerce måste du först skapa en onlinekanal. Innan du skapar en ny onlinekanal måste du kontrollera att du har slutfört [Förutsättningar för att konfigurera kanaler](channels-prerequisites.md).
 
 Innan du kan skapa en ny plats måste minst en onlinebutik skapas i Commerce. Mer information finns i [skapa en handelsschemaläggare](create-ecommerce-site.md).
 
@@ -68,7 +68,7 @@ Om din näthandelssajt ska stödja flera språk expanderar du avsnittet **språk
 
 ## <a name="set-up-payment-account"></a>Ställ in betalningskonto
 
-Från avsnittet **betalningskonto** kan du lägga till en tredje parts betalningsleverantör. Information om hur du ställer in en Adyen betalningskoppling finns i [Dynamics 365 betalningskoppling för Adyen](./dev-itpro/adyen-connector.md).
+Från avsnittet **betalningskonto** kan du lägga till en tredje parts betalningsleverantör. Information om hur du konfigurerar en Adyen betalningskoppling finns i [Dynamics 365 betalningskoppling för Adyen](./dev-itpro/adyen-connector.md).
 
 ## <a name="additional-channel-setup"></a>Konfiguration av ytterligare kanal
 
@@ -80,7 +80,7 @@ I följande bild visas alternativen **leveranssätt**, **betalsätt** och **uppf
 
 ### <a name="set-up-payment-methods"></a>Ange betalsätt
 
-Om du vill ställa in betalsätt följer du dessa steg för varje betalningstyp som stöds på den här kanalen.
+Om du vill konfigurera betalsätt följer du dessa steg för varje betalningstyp som stöds på den här kanalen.
 
 1. I åtgärdsfönstret, välj fliken **Inställningar** och välj sedan **betalningssätt**.
 1. Klicka på **Ny** i åtgärdsfönstret.

@@ -1,6 +1,6 @@
 ---
 title: Avräkningsprinciper
-description: Det här avsnittet beskrivs de fyra avräkningsprinciperna som används för förbrukning av råmaterial.
+description: I denna artikel beskrivs de fyra avräkningsprinciperna som används för förbrukning av råmaterial.
 author: johanhoffmann
 ms.date: 04/04/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7f644f26098bf7ac7d13292d6fbabb09a488d61e29fcd5fbd3cf0d261f0529bc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 953a3bfec70235524067a47b8764f6dbb40d3c7b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768033"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849312"
 ---
 # <a name="flushing-principles"></a>Avräkningsprinciper
 
@@ -53,7 +53,7 @@ Avräkningsprinciperna konfigureras i en hierarki med standardvärden. Hierarkin
 Den manuella avräkningsprincipen anger att registrering av materialförbrukning är en manuell åtgärd. Denna princip gäller om du t.ex. vill kunna spåra tid och antalet förbrukade batchnummer eller serienummer måste redovisas för i spårningssyften. Manuell förbrukning registreras i en produktionsplocklistejournal. För artiklar som aktiveras för avancerade lagerprocesser kan ett handhållet flöde appliceras.
 
 ### <a name="start"></a>Starta
-Startavräkningsprincipen anger att materialet förbrukas automatiskt när tillverkningsordern startas. Mängden material som används är proportionell mot den kvantitet som startas. När startavräkningsprincipen används tillsammans med tillverkningskörningssystemet kan den även användas till att avräkna material när en åtgärd eller ett processjobb startas. Denna princip är relevant om exempelvis avvikelsen i förbrukningen är låg, materialet är lågvärdesmaterial, det inte finns några spårningskrav eller det är kort bearbetningstid i operationer. 
+Startavräkningsprincipen anger att materialet förbrukas automatiskt när tillverkningsordern startas. Mängden material som används är proportionell mot den kvantitet som startas. När startavräkningsprincipen används tillsammans med tillverkningskörningssystemet kan den även användas till att avräkna material när en åtgärd eller ett processjobb startas. Denna princip är relevant om exempelvis avvikelsen i förbrukningen är låg, materialet är lågvärdesmaterial, det inte finns några spårningskrav eller det är kort bearbetningstid i åtgärder. 
 
 ### <a name="finish"></a>Slutför
 Avslutavräkningsprincipen anger att materialet ska förbrukas automatiskt, när produktionsordern rapporteras som färdig eller när en åtgärd som har ställts upp för att använda materialet registreras som slutförd. Mängden material som används är proportionell mot den kvantitet som rapporteras som klar. När avslutaavräkningsprincipen används tillsammans med tillverkningskörningssystemet kan den även användas till att avräkna material när en åtgärd eller ett processjobb slutförts. Denna princip gäller i samma situationer som startprincipen. Emellertid är avslutaprincipen för åtgärder som har en längre körtid där material inte anges till PIA innan åtgärden är slutförd. 

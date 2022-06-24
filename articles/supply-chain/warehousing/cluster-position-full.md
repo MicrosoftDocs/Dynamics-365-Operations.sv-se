@@ -1,6 +1,6 @@
 ---
 title: Klusterposition full
-description: Det här ämnet innehåller information om funktionen klusterposition. Den här funktionen erbjuder ett alternativ till en striktare tillämpning av regler för arbetsavbrott när klusterplockning används, eftersom det möjliggör en större felmarginal i volymetriska begränsningar för behållare eller last.
+description: Denna artikel innehåller information om funktionen för klusterposition. Den här funktionen erbjuder ett alternativ till en striktare tillämpning av regler för arbetsavbrott när klusterplockning används, eftersom det möjliggör en större felmarginal i volymetriska begränsningar för behållare eller last.
 author: Mirzaab
 ms.date: 08/25/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 4d46933b7c60317234b8e39cd6dfd63d383de860
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102848"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857153"
 ---
 # <a name="cluster-position-full"></a>Klusterposition full
 
@@ -30,11 +30,11 @@ Med den här funktionen kan du köra knappen **Full** på en av arbetsenheterna 
 
 ## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>Aktivera eller inaktivera funktionen för klusterposition full
 
-De funktioner som beskrivs i det här avsnittet måste funktionen *Klusterposition full* vara inaktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Klusterposition full* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+För att använda de funktioner som beskrivs i denna artikel måste funktionen *Klusterposition full* vara aktiverad för ditt system. Från och med version 10.0.25 av Supply Chain Management är denna funktion obligatorisk och kan inte inaktiveras. Om du kör en version som är äldre än 10.0.25 kan administratörer aktivera eller inaktivera den här funktionen genom att söka efter funktionen *Klusterposition full* i arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup"></a>Inställningar
 
-Det här avsnittet innehåller riktlinjer och ett exempel som visar hur du ställer in och använder funktion *Klusterposition full*.
+Det här avsnittet innehåller riktlinjer och ett exempel som visar hur du konfigurerar och använder funktion *Klusterposition full*.
 
 ### <a name="make-sample-data-available"></a>Gör exempeldata tillgängliga
 
@@ -220,7 +220,7 @@ Två arbets-ID ska ha skapats, där alla har två plockningsrader. Följ dessa s
 
     Sidan **UPPGIFT: Skapa klusterplockning: plockning** visas och visar *objekt L0101 2 PL*.
 
-Eftersom klusterprofilen ställer in antalet positioner till 2, dirigerar systemet automatiskt till den första konsolideringsplockningen: två lastpallar (PL) för artikel *L0101*.
+Eftersom klusterprofilen konfigurerar antalet positioner till 2, dirigerar systemet automatiskt till den första konsolideringsplockningen: två lastpallar (PL) för artikel *L0101*.
 
 Du kan när som helst under följande steg välja fliken **Detaljer** vill visa ytterligare information om uppgiften, t.ex. plockningsplatsen.
 
@@ -251,7 +251,7 @@ I det här scenariot kan position 1 inte acceptera hela kvantiteten av artiklar 
 1. Bekräfta artikelnumret för att slutföra plockningen av den återstående artikeln på position 2.
 1. Ange fältet **ITEM** till *T0100*.
 1. Välj **OK** (kryssmarkeringssymbol).
-1. Ange det ID-nummer som artikeln plockas från genom att ställa in fältet **LP** på *LPREPL04* .
+1. Ange det ID-nummer som artikeln plockas från genom att konfigurera fältet **LP** på *LPREPL04* .
 1. Välj **OK** (kryssmarkeringssymbol).
 1. Visa de detaljer som visas för artikeln (*T0100*) och kvantiteten (*2* ea) som ska sorteras i position 2 (för försäljningsorder 2).
 1. Ställ in fältet **POSITION NA** till *2*.

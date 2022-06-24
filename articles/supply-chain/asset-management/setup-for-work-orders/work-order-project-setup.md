@@ -1,6 +1,6 @@
 ---
 title: Projektinställningar för arbetsorder
-description: Det här avsnittet innehåller förklaringar av projektinställningar för arbetsorder i Tillgångshantering.
+description: Denna artikel innehåller förklaringar av projektinställningar för arbetsorder i Tillgångshantering.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb897ca0a7e9c45ee55244189bb1b487fbddf0714ad3ea0cac26eb7bac36a07f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 31d8f42eb5753ea2656d502d2670a6cf7683c0f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754093"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874142"
 ---
 # <a name="work-order-project-setup"></a>Projektinställningar för arbetsorder
 
@@ -42,21 +42,21 @@ När du skapar ett arbetsorderjobb på en arbetsorder, kan projektinställningar
 
 - Ekonomiska dimensioner kopieras från till gången och kopplas ihop med det överordnade projektet.
 
-I nästa avsnitt förklaras hur du ställer in överordnade projekt och projektgrupper. Överordnat projekt och överordnade grupper används för att kontrollera arbetsorder. De används också för rapportering om arbetsorder.
+I nästa avsnitt förklaras hur du konfigurerar överordnade projekt och projektgrupper. Överordnat projekt och överordnade grupper används för att kontrollera arbetsorder. De används också för rapportering om arbetsorder.
 
 ## <a name="set-up-work-order-projects"></a>Ställa in arbetsorderprojekt
 
 Innan du börjar skapa arbetsorder måste du skapa arbetsorderprojekt. Sidan **Projektinställningar för arbetsorder** (**Tillgångshantering** \> **Inställningar** \> **Arbetsorder** \> **Projektinställningar**) har två flikar: **Överordnat projekt** och **Projektgrupp**.
 
-På fliken **Överordnat projekt** kan du ställa in projektrelationer som kan användas om inget projekt har ställts in för den tillgång som valts för arbetsorderjobbet. Det är inte obligatoriskt att konfigurera ett överordnat projekt om ditt företag använder tillgångsprojekt. Det är bara relevant om du vill använda arbetsorderprojekt i stället för tillgångsprojekt. I så fall måste du ställa in minst ett överordnat projekt.
+På fliken **Överordnat projekt** kan du konfigurera projektrelationer som kan användas om inget projekt har ställts in för den tillgång som valts för arbetsorderjobbet. Det är inte obligatoriskt att konfigurera ett överordnat projekt om ditt företag använder tillgångsprojekt. Det är bara relevant om du vill använda arbetsorderprojekt i stället för tillgångsprojekt. I så fall måste du konfigurera minst ett överordnat projekt.
 
-På fliken **Projekt grupp** kan du ställa in projektgrupper som kan associeras med arbetsordertyper, tillgångstyper och tillgångar.
+På fliken **Projekt grupp** kan du konfigurera projektgrupper som kan associeras med arbetsordertyper, tillgångstyper och tillgångar.
 
 Projektgrupper kan användas för att skapa specifika kategorier (grupper) som används för kostnadskontroll. Genom att t.ex. skapa projektgrupper för specifika tillgångstyper eller arbetsordertyper kan du utföra detaljerad spårning av underhållskostnader per typ.
 
-Projektgrupper är inte obligatoriska. Om du inte ställer in projektgrupper används det överordnade projektet för att bestämma projektgruppen och ett underordnat projekt skapas från det överordnade projektets projektgrupp.
+Projektgrupper är inte obligatoriska. Om du inte konfigurerar projektgrupper används det överordnade projektet för att bestämma projektgruppen och ett underordnat projekt skapas från det överordnade projektets projektgrupp.
 
-Inställningen möjliggör fullständig integration med modulen **Projekthantering och redovisning**. Därför kan du spåra kostnaderna som är relaterade till arbetsorder i de relaterade projekten. I följande procedur beskrivs inställningarna för arbetsorderprojekt.
+Inställningen möjliggör fullständig integrering med modulen **Projekthantering och redovisning**. Därför kan du spåra kostnaderna som är relaterade till arbetsorder i de relaterade projekten. I följande procedur beskrivs inställningarna för arbetsorderprojekt.
 
 1. Välj **Tillgångshantering** \> **Inställningar** \> **Arbetsorder** \> **Projektinställningar**.
 2. På fliken **Överordnat projekt** väljer du **Lägg till**.
@@ -80,7 +80,7 @@ Inställningen möjliggör fullständig integration med modulen **Projekthanteri
 ![Sidan Projektkonfiguration för arbetsorder, Lägg till arbetsorder.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
-> Varje gång en arbetsorderrad skapas söker Tillgångshantering efter en projektgrupp som ska relateras till jobbprojektet för arbetsordern. Sökningen baseras på inställningarna som beskrivs i det här avsnittet. Varje projektgrupp har en relaterad projekttyp. Projekt grupper som har projekttypen **Tid och material** eller **Fastpris** är endast giltiga för tillgångar som är relaterade till ett kundkonto.
+> Varje gång en arbetsorderrad skapas söker Tillgångshantering efter en projektgrupp som ska relateras till jobbprojektet för arbetsordern. Sökningen baseras på inställningarna som beskrivs i denna artikel. Varje projektgrupp har en relaterad projekttyp. Projekt grupper som har projekttypen **Tid och material** eller **Fastpris** är endast giltiga för tillgångar som är relaterade till ett kundkonto.
 >
 > När det tillgängliga arbetsorderprojektet eller projektgruppen väljs i systemet för överordnade projekt och projekt grupper, baseras valet på de poster som du skapade med hjälp av föregående procedur. Tillgångshantering går igenom poster som är relaterade till arbetsorderprojektet för att söka efter en eventuell matchning. Den kontrollerar alltid den mest specifika kombinationen först. Med andra ord, för arbetsorderns överordnade projekt söker Tillgångshantering först efter en möjlig matchning för fältet **Tillgång**. Om ingen matchning hittas söker den efter en matchning för fältet **Tillgångstyp**. Om ingen matchning hittas söker den efter en matchning för fältet **Funktionsplats** och så vidare. Som du kan se i layouten på sidan **Projektinställningar för arbetsorder** innebär detta att, för att hitta den mest specifika kombinationen, kontrollerar Tillgångshantering varje post från höger till vänster för en matchning. Om det inte finns någon matchning används den standardpost där endast ett projekt-ID har valts. Du hittar den relaterade projektgruppen på samma sätt. Tillgångshantering kontrollerar först en möjlig matchning för fältet **Tillgång**, sedan fältet **Tillgångstyp** och sedan fältet **Arbetsordertyp**. Om det inte finns någon matchning används den standardpost där endast en projektgrupp har valts.
 

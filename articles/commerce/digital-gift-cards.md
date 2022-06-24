@@ -1,6 +1,6 @@
 ---
 title: Digitala presentkort för näthandel
-description: I detta ämne beskrivs hur digitala presentkort fungerar i näthandelsimplementeringar av Microsoft Dynamics 365 Commerce. Det ger också en översikt över viktiga konfigurationssteg.
+description: I denna artikel beskrivs hur digitala presentkort fungerar i näthandelsimplementeringar av Microsoft Dynamics 365 Commerce. Det ger också en översikt över viktiga konfigurationssteg.
 author: anupamar-ms
 ms.date: 05/27/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: de8811b3265bc582a055aaad1f3dea32def552f4
-ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
+ms.openlocfilehash: 60de6988f14a0dcbbb881e84a9e4d8a45ca1289a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809597"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884914"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Digitala presentkort för näthandel
 
 [!include [banner](includes/banner.md)]
 
-I detta ämne beskrivs hur digitala presentkort fungerar i näthandelsimplementeringar av Microsoft Dynamics 365 Commerce. Det ger också en översikt över viktiga konfigurationssteg.
+I denna artikel beskrivs hur digitala presentkort fungerar i näthandelsimplementeringar av Microsoft Dynamics 365 Commerce. Det ger också en översikt över viktiga konfigurationssteg.
 
 I Dynamics 365 Commerce följer köp av digitala presentkort samma flöde som köp av andra produkter i systemet. Inga ytterligare moduler behöver konfigureras. Om flera presentkort läggs till i kundvagnen, samlas inte presentkortsartiklarna på en och samma försäljningsrad. Detta beteende krävs det eftersom varje enskild försäljningsrad faktureras med ett separat presentkortsnummer.
 

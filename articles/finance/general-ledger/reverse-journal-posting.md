@@ -1,6 +1,6 @@
 ---
 title: Återför journalbokföring
-description: I det här avsnittet beskrivs funktioner som gör att du kan återföra verifikationer från en verifikationstransaktionslista eller från ekonomiska journaler.
+description: I den här artikeln beskrivs funktioner som gör att du kan återföra verifikationer från en verifikationstransaktionslista eller från ekonomiska journaler.
 author: kweekley
 ms.date: 10/08/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb1615312e9fd1786a5a0050dda3e9e9b20fe710
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: bec7d5d0dd64a2d89b00e2aa630a4fe670feaa2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753788"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868414"
 ---
 # <a name="reverse-journal-posting"></a>Återför journalbokföring
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs Microsoft Dynamics 365 Finance-funktioner som gör att du kan återföra en hel journal eller återföra en eller flera verifikationer från verifikationstransaktionslistan oavsett ursprung. 
+I den här artikeln beskrivs Microsoft Dynamics 365 Finance-funktioner som gör att du kan återföra en hel journal eller återföra en eller flera verifikationer från verifikationstransaktionslistan oavsett ursprung. 
 
 Innan du kan använda någon av funktionerna som beskrivs i det här ämnet måste den aktiveras i systemet. Administratörer kan använda arbetsytan **funktionshantering** för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
  - Modul: Redovisning
@@ -69,7 +69,7 @@ Om det finns fler än 100 verifikationsrader, kommer återföringsprocessen att 
 
 Om antalet verifikationsrader är 100 rader eller färre, kommer återföringsprocessen att köras omedelbart. Resultaten visas i en dialogruta som visar en verifikation som inte kan återföras och orsaken till varför. Välj **OK** för att stänga dialogrutan.
 
-Transaktioner kan bara återföras om de uppfyller affärsreglerna för att återföra dem. Leverantörsbetalningar kan inte återföras med funktionen som beskrivs i det här avsnittet. Leverantörsbetalningar måste återföras genom att följa stegen i [återför en leverantörsbetalning](../accounts-payable/reverse-vendor-payment.md).
+Transaktioner kan bara återföras om de uppfyller affärsreglerna för att återföra dem. Leverantörsbetalningar kan inte återföras med funktionen som beskrivs i den här artikeln. Leverantörsbetalningar måste återföras genom att följa stegen i [återför en leverantörsbetalning](../accounts-payable/reverse-vendor-payment.md).
 
 
 

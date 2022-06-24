@@ -1,6 +1,6 @@
 ---
 title: Ställa in organisationshierarkier
-description: I det här avsnittet beskrivs hur du ställer in organisationshierarkier i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du konfigurerar organisationshierarkier i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,27 +14,27 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ce0732f32a9a80fc5b0ede7ae9f1c1ab9a68a89b2fb0b1821cb5df123ca5ca4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01ba05566e966eb62a4df0b7b97ee3a442027936
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746026"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847690"
 ---
 # <a name="set-up-organization-hierarchies"></a>Ställa in organisationshierarkier
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in organisationshierarkier i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du konfigurerar organisationshierarkier i Microsoft Dynamics 365 Commerce.
 
 Innan du skapar kanaler måste du se till att du har ställt in dina organisationshierarkier.
 
-Du kan använda organisationshierarkier för att visa och skapa en rapport från olika perspektiv av din verksamhet. Du kan till exempel skapa en hierarki för momsrapportering, juridisk rapportering eller lagstadgad rapportering. Du kan ställa in en annan hierarki om du vill rapportera ekonomisk information som inte krävs lagligen, men som används för intern rapportering.
+Du kan använda organisationshierarkier för att visa och skapa en rapport från olika perspektiv av din verksamhet. Du kan till exempel skapa en hierarki för momsrapportering, juridisk rapportering eller lagstadgad rapportering. Du kan konfigurera en annan hierarki om du vill rapportera ekonomisk information som inte krävs lagligen, men som används för intern rapportering.
 
 Innan du skapar en organisationshierarki måste du skapa organisationer. Mer information finns i [Skapa juridisk personer](channels-legal-entities.md) eller [Skapa driftenheter](../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json).
 
 
-Mer information finns i följande avsnitt.
+Mer information finns i följande artiklar:
 - [Organisationer och organisationshierarkier – översikt](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 - [Planera en organisationshierarki](../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json)
 - [Skapa en organisationshierarki](../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/commerce/toc.json)
@@ -81,7 +81,7 @@ Följande bild visar en juridisk person som lagts till i hierarkistrukturen med 
 
 [Översikt över kanaler](channels-overview.md)
 
-[Förutsättningar för att ställa in kanaler](channels-prerequisites.md)
+[Förutsättningar för att konfigurera kanaler](channels-prerequisites.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

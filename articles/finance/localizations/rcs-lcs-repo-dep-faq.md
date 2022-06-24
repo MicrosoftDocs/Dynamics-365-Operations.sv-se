@@ -1,6 +1,6 @@
 ---
 title: Regulatory Configuration Service (RCS) – Lagringsavskrivning för Lifecycle Services (LCS)
-description: I detta ämne finns information om den avskrivning av Microsoft Dynamics Lifecycle Services (LCS)-lagring som planerats som en del av sammanslagningen av den globala databasen för Regulatory Configuration Service (RCS).
+description: I denna artikel finns information om den avskrivning av Microsoft Dynamics Lifecycle Services (LCS)-lagring som planerats som en del av sammanslagningen av den globala databasen för Regulatory Configuration Service (RCS).
 author: JaneA07
 ms.date: 10/27/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 8862f42f3ceaed7e1413c49cf9b91f0449fab67b
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 4a35941d1521d26f95bacf29213fee42daeb42ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547994"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849743"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – Lagringsavskrivning för Lifecycle Services (LCS)
 
@@ -85,7 +85,7 @@ RCS använder ett koncept med ett *anslutet program*. Ett anslutet program bilda
 
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Finns det några exempel som visar inställningar och hantering?
 
-Det finns inga exempel, men du kan utföra stegen tidigare i det här avsnittet i syfte att flytta dina konfigurationer till den globala RCS-databasen.
+Det finns inga exempel, men du kan utföra stegen tidigare i den här artikeln i syfte att flytta dina konfigurationer till den globala RCS-databasen.
 
 ### <a name="is-rcs-a-prerequisite-to-configure-electronic-reporting"></a>Är RCS en förutsättning för att konfigurera elektronisk rapportering?
 

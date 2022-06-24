@@ -1,6 +1,6 @@
 ---
 title: Ladda upp och hantera statiska filer
-description: I det här avsnittet beskrivs hur du överför en statisk fil till webbplatsskaparen för Microsoft Dynamics 365 Commerce, samt hur du skapar en anpassad URL och ett filnamn som kan användas för att begära den filen.
+description: I denna artikel beskrivs hur du överför en statisk fil till webbplatsskaparen för Microsoft Dynamics 365 Commerce, samt hur du skapar en anpassad URL och ett filnamn som kan användas för att begära den filen.
 author: StuHarg
 ms.date: 11/16/2020
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 389d33189644241dcf98da0c7f3b841e82a4430ac459dc8027284cecc299b4b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a1b14feba1466c3a5efc3b0ea66f20e9e818a8a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714693"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885332"
 ---
 # <a name="upload-and-serve-static-files"></a>Ladda upp och hantera statiska filer
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du överför en statisk fil till webbplatsskaparen för Microsoft Dynamics 365 Commerce, samt hur du skapar en anpassad URL och ett filnamn som kan användas för att begära den filen.
+I denna artikel beskrivs hur du överför en statisk fil till webbplatsskaparen för Microsoft Dynamics 365 Commerce, samt hur du skapar en anpassad URL och ett filnamn som kan användas för att begära den filen.
 
-Vissa anslutningar från tredje part kräver att en fil hanteras och servas från näthandelssajten. Dessa anslutningsprogram förväntar sig att filen ska returneras av begäranden till en viss URL-sökväg och ett visst filnamn för motringning. Därför förklarar det här avsnittet hur du överför och betjänar en statisk fil som har en användardefinierbar URL och ett fil namn på en Dynamics 365 Commerce-näthandelssajt.
+Vissa anslutningar från tredje part kräver att en fil hanteras och servas från näthandelssajten. Dessa anslutningsprogram förväntar sig att filen ska returneras av begäranden till en viss URL-sökväg och ett visst filnamn för motringning. Därför förklarar denna artikel hur du överför och betjänar en statisk fil som har en användardefinierbar URL och ett filnamn på en Dynamics 365 Commerce-näthandelssajt.
 
 ## <a name="create-a-site-url-that-returns-a-static-file"></a>Skapa en webbplats-URL som returnerar en statisk fil
 
@@ -86,13 +86,13 @@ När en URL har skapats kan dess sökväg inte ändras. Om du måste ändra URL-
 
 För att ändra URL-sökväg, följ stegen nedan.
 
-1. Om du vill skapa en ny URL och mappa den till den befintliga filen eller en annan resurs följer du instruktionerna i avsnittet [Skapa en webbplats-URL som returnerar en statisk fil](#create-a-site-url-that-returns-a-static-file) tidigare i det här avsnittet.
+1. Om du vill skapa en ny URL och mappa den till den befintliga filen eller en annan resurs följer du instruktionerna i avsnittet [Skapa en webbplats-URL som returnerar en statisk fil](#create-a-site-url-that-returns-a-static-file) tidigare i denna artikel.
 1. Markera den nya URL:en och välj **Publicera** i kommandofältet. Den nya URL:en publiceras.
 1. Om du vill ta bort den gamla URL:en markerar du den och väljer sedan **Ta bort** i kommandofältet. Du kan nu ta bort den gamla URL:en om du vill.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt av digital tillgångshantering](dam-overview.md)
+[Översikt av digital Tillgångshantering](dam-overview.md)
 
 [Överför bilder](dam-upload-images.md)
 

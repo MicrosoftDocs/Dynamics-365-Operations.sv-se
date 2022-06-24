@@ -1,6 +1,6 @@
 ---
 title: Konfigurera en arbetare med den mobila jobbenheten
-description: I det här avsnittet visas hur du tilldelar de korrekta rollerna till användarkontot för en arbetare och sedan aktiverar arbetaren för att göra arbetsregistreringar.
+description: I denna arikel visas hur du tilldelar de korrekta rollerna till användarkontot för en arbetare och sedan aktiverar arbetaren för att utföra butiksregistreringar.
 author: johanhoffmann
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d9745995752c06385acc31e529de52eefaa6f96
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3f6f51a66d49cafd172ba123bf883fb41cdcb5c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573571"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844344"
 ---
 # <a name="configure-a-worker-using-the-mobile-job-device"></a>Konfigurera en arbetare med den mobila jobbenheten
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet visas hur du tilldelar de korrekta rollerna till användarkontot för en arbetare och sedan aktiverar arbetaren för att göra arbetsregistreringar.
+I denna arikel visas hur du tilldelar de korrekta rollerna till användarkontot för en arbetare och sedan aktiverar arbetaren för att utföra butiksregistreringar.
 
 ## <a name="verify-that-a-worker-is-assigned-a-certain-role"></a>Kontrollera att en arbetstagare har tilldelats en viss roll
 
@@ -62,7 +62,7 @@ I det här exemplet kontrollerar du att användaren "SHANNON" har tilldelats rol
 3. Välj önskad arbetare i listan. Välj **SHANNON** i det här exemplet.
 4. Välj **OK**.
 5. Välj **Redigera**.
-6. I fältet **Produktionsenhet** kan du ställa in standardfiltret för arbetaren. Då säkerställs att endast produktionsjobb för den valda produktionsenheten visas när arbetaren loggar in på enheten. Ange önskat värde.
+6. I fältet **Produktionsenhet** kan du konfigurera standardfiltret för arbetaren. Då säkerställs att endast produktionsjobb för den valda produktionsenheten visas när arbetaren loggar in på enheten. Ange önskat värde.
 7. Stäng sidan.
 
 

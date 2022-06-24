@@ -1,6 +1,6 @@
 ---
 title: Förpackningsstrategier för behållare
-description: I det här avsnittet beskrivs skillnaderna mellan förpackningsstrategier för behållare, samt exempel.
+description: I denna artikel beskrivs skillnaderna mellan förpackningsstrategier för behållare, inklusive exempel.
 author: GalynaFedorova
 ms.date: 06/11/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ab34cee7fd495ec26f6b20da2aa43895f49f677c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 46b4a007dafbd99e5f9b7231c07a148f8101d2a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676395"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862378"
 ---
 # <a name="container-packing-strategies"></a>Förpackningsstrategier för behållare
 
 [!include [banner](../includes/banner.md)]
 
-En *förpackningsstrategi för behållare* är en strategi som du kan använda för att definiera artikelallokeringar mellan behållare. I det här avsnittet beskrivs skillnaderna mellan *förpacka i alla öppna behållare* och *förpacka i enbart aktuella behållare*.
+En *förpackningsstrategi för behållare* är en strategi som du kan använda för att definiera artikelallokeringar mellan behållare. I denna artikel beskrivs skillnaderna mellan *Förpacka i alla öppna behållare* och *Förpacka i enbart aktuella behållare*.
 
 - **Förpacka i alla öppna behållare** – Systemet måste kontrollera alla öppna behållare som redan har skapats under cykeln för skapande av behållare för att säkerställa att artikeln får plats i en av dem. Under förpackning kontrollerar systemet varje artikel för att avgöra om den får plats i någon av de tidigare skapade behållarna. Om artikeln inte får plats i en befintlig behållare skapas en ny behållare automatiskt och fortsätter tills den är färdig med att packa hela ordern.
 
@@ -43,7 +43,7 @@ Du kan konfigurera följande artiklar för skapande av behållare.
 | HDMI-kabel 12' | 2 × 1 × 1 | 1 |
 | HDMI-kabel 18' | 3 × 1 × 1 | 2 |
 
-Du kan även ställa in följande låda som ska användas för förpackning.
+Du kan även konfigurera följande låda som ska användas för förpackning.
 
 | Behållare | Fysiska dimensioner (längd × bredd × höjd) | Vikt | Volym |
 |---|---|---|---|
@@ -81,7 +81,7 @@ I det här scenariot används funktionen *Konsolidera försändelser*. Om den fu
 
 #### <a name="make-demo-data-available"></a>Gör demodata tillgängliga
 
-Scenariot i detta ämne innehåller referensvärden och -poster som ingår i den standarddemodata som finns för Microsoft Dynamics 365 Supply Chain Management. Om du vill använda de värden som finns här på samma sätt som i övningarna måste du arbeta i en miljö där demonstrationsdata har installerats samt ställa in den juridiska personen på **USMF** innan du börjar.
+Scenariot i detta ämne innehåller referensvärden och -poster som ingår i den standarddemodata som finns för Microsoft Dynamics 365 Supply Chain Management. Om du vill använda de värden som finns här på samma sätt som i övningarna måste du arbeta i en miljö där demonstrationsdata har installerats samt konfigurera den juridiska personen på **USMF** innan du börjar.
 
 ### <a name="inspect-or-create-container-types"></a>Inspektera eller skapa behållartyper
 

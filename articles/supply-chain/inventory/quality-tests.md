@@ -1,6 +1,6 @@
 ---
 title: Kvalitetshanteringstester
-description: I det här ämnet beskrivs hur du skapar tester som kan användas med kvalitetsorder i Microsoft Dynamics 365 Supply Chain Management.
+description: I denna artikel beskrivs hur du skapar tester som kan användas med kvalitetsorder i Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c10b67f86fc29b5e8c08081a9b789d4f42c24cf4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ac67ee97a4890c646daefa6b09feae25c4f15d0d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573859"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857617"
 ---
 # <a name="quality-management-tests"></a>Kvalitetshanteringstester
 
 [!include [banner](../includes/banner.md)]
 
-I det här ämnet beskrivs hur du skapar tester som kan användas med kvalitetsorder i Microsoft Dynamics 365 Supply Chain Management.
+I denna artikel beskrivs hur du skapar tester som kan användas med kvalitetsorder i Microsoft Dynamics 365 Supply Chain Management.
 
 Du använder sidan **Tester** när du vill definiera och visa enskilda tester som fastställer huruvida dina produkter uppfyller kvalitetsspecifikationerna. Du kan tilldela en eller flera enskilda tester till en testgrupp. I detta fall anger du också testspecifik information, till exempel godtagbara måttvärden. Mätningsvärden används vid kvantitativa tester. För kvalitativa tester används testvariabler.
 

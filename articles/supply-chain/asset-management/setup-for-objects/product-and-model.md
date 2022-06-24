@@ -1,6 +1,6 @@
 ---
 title: Tillgångstillverkare och-modeller
-description: Det här avsnittet förklarar hur du ställer in tillgångstillverkare och relaterade modeller i Tillgångshantering.
+description: Denna artikel förklarar hur du konfigurerar tillgångstillverkare och relaterade modeller i Tillgångshantering.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 80fcb493d96209d78f842414c198a8275e4818ba365759466034faf5f3405540
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 95d0998bbacef7a4350d0fd0a58259ec35759d28
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739908"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868113"
 ---
 # <a name="asset-manufacturers-and-models"></a>Tillgångstillverkare och-modeller
 
@@ -28,7 +28,7 @@ ms.locfileid: "6739908"
 
  
 
-Det här avsnittet förklarar hur du ställer in tillgångstillverkare och relaterade modeller i Tillgångshantering. Modeller kan relateras till tillgångstyper.
+Denna artikel förklarar hur du konfigurerar tillgångstillverkare och relaterade modeller i Tillgångshantering. Modeller kan relateras till tillgångstyper.
 
 ## <a name="set-up-product-model-relations"></a>Ställ in produktmodellrelationer
 
@@ -42,14 +42,14 @@ Det här avsnittet förklarar hur du ställer in tillgångstillverkare och relat
 8. I fältet **tillgångstyp** väljer du den tillgångstyp som tillverkarmodellen ska relateras till.
 
     > [!NOTE]
-    > Du kan också ställa in relationer för tillgångstyper, tillverkare och modeller i sökningen **tillgångstyper**. Mer information finns i [Tillgångstyper](../setup-for-objects/object-types.md).
+    > Du kan också konfigurera relationer för tillgångstyper, tillverkare och modeller i sökningen **tillgångstyper**. Mer information finns i [Tillgångstyper](../setup-for-objects/object-types.md).
 
     På snabbfliken **Detaljer** visar fältet **Modeller** antalet tillgångsmodeller som har ställts in på den valda tillgångstillverkaren. Fältet **tillgångar** visar antalet tillgångar som använder den valda tillverkaren.
     
     Fältet **tillgångar** visar antalet objekt som använder den valda tillverkarmodellen.
 
 > [!NOTE]
-> En tillgångstyp kan inte ha någon modellrelation för tillgångstillverkare, den kan relateras till en modell för tillgångstillverkare, eller så kan den relateras till flera tillgångstillverkares modeller. Om en tillgångstyp är relaterad till minst en tillverkarmodell, kan endast de kombinationer som har ställts in i sökningen **Tillverkarmodell** väljas på dessa tillgångshanteringssidor där en kombination av en tillgångstyp, tillverkare och modell kan ställas in. Dessa sidor innehåller **Alla tillgångar**, **servicenivåer för tillgång**, **standarder för jobbtyp** och **budgetrader för underhåll**. Om vissa tillgångstyper inte är relaterade till någon tillverkarmodell visas endast de tillgångstyper och tillverkarmodeller som också har någon relation till tillgångstyper på sidorna.
+> En tillgångstyp kan inte ha någon modellrelation för tillgångstillverkare, den kan relateras till en modell för tillgångstillverkare, eller så kan den relateras till flera tillgångstillverkares modeller. Om en tillgångstyp är relaterad till minst en tillverkarmodell, kan endast de kombinationer som har ställts in i sökningen **Tillverkarmodell** väljas på dessa Tillgångshanteringssidor där en kombination av en tillgångstyp, tillverkare och modell kan ställas in. Dessa sidor innehåller **Alla tillgångar**, **servicenivåer för tillgång**, **standarder för jobbtyp** och **budgetrader för underhåll**. Om vissa tillgångstyper inte är relaterade till någon tillverkarmodell visas endast de tillgångstyper och tillverkarmodeller som också har någon relation till tillgångstyper på sidorna.
 
 ## <a name="select-a-manufacturer-and-model-on-an-object"></a>Välja en tillverkare och modell på ett objekt
 

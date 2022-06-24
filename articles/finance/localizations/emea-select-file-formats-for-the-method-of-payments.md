@@ -1,6 +1,6 @@
 ---
 title: Filformat för betalningsmetod
-description: Det här avsnittet beskriver två metoder för att hämta de filformat som du kan använda för betalsätt.
+description: Den här artikeln beskriver två metoder för att hämta de filformat som du kan använda för betalsätt.
 author: anasyash
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
 ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ca396424256660f251d6889afffb3e90bb76fd54
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: c99413c361397c6818be580deb45ba85620ed5db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592562"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871083"
 ---
 # <a name="file-formats-for-methods-of-payment"></a>Filformat för betalningsmetod
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver två metoder för att hämta de filformat som du kan använda för betalsätt.
+Den här artikeln beskriver två metoder för att hämta de filformat som du kan använda för betalsätt.
 
 Det finns två sätt att få filformat som du kan använda med betalsätt, filformat för elektronisk rapportering (ER) eller X++ -filformat. När du anger ett betalsätt för en kund eller leverantör anger du vilka filformat och standarder som ska användas för betalningar och hur betalningar ska bearbetas. Du kan välja mellan följande format:
 

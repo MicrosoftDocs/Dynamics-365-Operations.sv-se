@@ -1,6 +1,6 @@
 ---
 title: Tillgångslån
-description: Det här avsnittet beskriver hur du registrerar lånetillgångar i tillgångshantering.
+description: Denna artikel beskriver hur du registrerar lånetillgångar i Tillgångshantering.
 author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65809d9be39372412d5d6b419f7356fe2c9668a1a01ede32ef52cbd66753e6d7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ced5ec174fe1885273241be5f9fd48b7947129af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752860"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846283"
 ---
 # <a name="asset-loans"></a>Tillgångslån
 
@@ -28,11 +28,11 @@ ms.locfileid: "6752860"
 
  
 
-Om ditt företag tar emot tillgångar för reparations- eller underhållsjobb från antingen interna platser eller kunder, och om du tillfälligt lånar tillgångar till dessa platser eller kunder, kan tillgångshantering spåra tillgångslånen.
+Om ditt företag tar emot tillgångar för reparations- eller underhållsjobb från antingen interna platser eller kunder, och om du tillfälligt lånar tillgångar till dessa platser eller kunder, kan Tillgångshantering spåra tillgångslånen.
 
 ## <a name="register-asset-loans-on-a-maintenance-request"></a>Registrera tillgångslån på en underhållsbegäran
 
-1. Välj **tillgångshantering** \> **allmänt** \> **underhållbegäran** \> **alla underhållbegäran** eller **aktiva underhållbegäran**.
+1. Välj **Tillgångshantering** \> **allmänt** \> **underhållbegäran** \> **alla underhållbegäran** eller **aktiva underhållbegäran**.
 2. Välj underhållbegäran för att registrera ett tillgångslån på och välj sedan **redigera**.
 3. På sidan **begäran** väljer du **skicka lånetillgång**.
 4. Välj tillgången och ange förväntat returdatum.
@@ -42,7 +42,7 @@ Om ditt företag tar emot tillgångar för reparations- eller underhållsjobb fr
 > - Du kan bara skicka en lånetillgång om en tillgång av samma tillgångstyp är tillgänglig.
 > - Den tillgång som du lånar måste ha en tillgångs livscykeltillstånd som gör att den kan användas som en lånetillgång, t.ex. **InStorage**. När tillgångslånet registreras uppdateras tillgångens livscykeltillstånd automatiskt till till exempel **OnLoan**.
 
-Om du vill visa en lista över alla tillgångar som du har lånat till andra platser eller kunder väljer du **tillgångshantering** \> **allmänt** \> **tillgångslån** \> **alla tillgångslån**. Om kryssrutan **avslutad** markeras för en tillgång har tillgången registrerats som returnerad till ditt företag.
+Om du vill visa en lista över alla tillgångar som du har lånat till andra platser eller kunder väljer du **Tillgångshantering** \> **allmänt** \> **tillgångslån** \> **alla tillgångslån**. Om kryssrutan **avslutad** markeras för en tillgång har tillgången registrerats som returnerad till ditt företag.
 
 ![Hantera underhållsbegäranden.](media/06-manage-maintenance-requests.png)
 
@@ -50,7 +50,7 @@ På sidan **aktiva tillgångslån** kan du visa en lista över alla lånetillgå
 
 ## <a name="register-loan-assets-as-returned"></a>Registrera lånetillgångar som returnerade
 
-1. Välj **tillgångshantering** \> **allmänt** \> **tillgångslån** \> **aktiva tillgångslån**
+1. Välj **Tillgångshantering** \> **allmänt** \> **tillgångslån** \> **aktiva tillgångslån**
 2. Välj tillgångslånet som ska registreras som returnerat och välj **returnera tillgångslån**.
 3. I fältet **Returnerad** ställer du in datum och tid.
 4. Välj **OK**.

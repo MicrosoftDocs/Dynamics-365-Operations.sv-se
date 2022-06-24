@@ -1,6 +1,6 @@
 ---
 title: Upprätta ett betalsätt för kund
-description: Det här avsnittet förklarar hur du skapar en metod för betalning av kundbetalningar.
+description: Den här artikeln förklarar hur du skapar en metod för betalning av kundbetalningar.
 author: ShivamPandey-msft
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f9e8974ea20497124e24e95b3761317daf126839
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: f3843ce596d054263b69ccc577f3885970fe49d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713908"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861514"
 ---
 # <a name="establish-customer-method-of-payment"></a>Upprätta ett betalsätt för kund
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet förklarar hur du skapar en metod för betalning av kundbetalningar. I den här uppgiften används demonstrationsföretaget USMF.
+Den här artikeln förklarar hur du skapar en metod för betalning av kundbetalningar. I den här uppgiften används demonstrationsföretaget USMF.
 
 1. I navigeringsfönstret, gå till **Moduler > Kundreskontra > Betalningsinställning > Betalsätt**.
 2. Välj **Ny**.

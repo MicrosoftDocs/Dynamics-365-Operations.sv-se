@@ -1,6 +1,6 @@
 ---
 title: Integrera leverantörer
-description: Det här avsnittet beskriver processen för att integrera nya leverantörer. Det förklarar de åtgärder som krävs av olika roller under denna process.
+description: Denna artikel beskriver processen för att integrera nya leverantörer. Det förklarar de åtgärder som krävs av olika roller under denna process.
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 396b3c4622c612fa082796080aa230a0d693ce4f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8143280e85a670cf9ba672734e07c3d306f63df1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671012"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862610"
 ---
 # <a name="onboard-vendors"></a>Integrera leverantörer
 
@@ -50,7 +50,7 @@ Titta på den här korta YouTube om [Hur du integrerar en ny leverantör i Ekono
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Importera begäran om registrering för potentiell leverantör
 
-Registreringsbegäran för potentiell leverantör är en enhet i Supply Chain Management. Du kan ställa in systemet för att importera data via denna enhet. 
+Registreringsbegäran för potentiell leverantör är en enhet i Supply Chain Management. Du kan konfigurera systemet för att importera data via denna enhet. 
 
 Följande tabell visar den information som denna enhet innehåller och som kan importeras.
 
@@ -119,7 +119,7 @@ En leverantörsförfrågan innehåller den information som den potentiella lever
 
 Begäran låter dig granska information om leverantören och bestämma huruvida leverantören ska få bli en registrerad leverantör.
 
-Leverantörsförfrågan ska skickas till ett arbetsflöde och dirigeras till relevanta granskare och godkännare. Mer grundläggande information om hur du ställer in arbetsflöden finns i [Arbetsflöden för anskaffning och inköp](procurement-sourcing-workflows.md).
+Leverantörsförfrågan ska skickas till ett arbetsflöde och dirigeras till relevanta granskare och godkännare. Mer grundläggande information om hur du konfigurerar arbetsflöden finns i [Arbetsflöden för anskaffning och inköp](procurement-sourcing-workflows.md).
 
 Följande tabell visar den status som en leverantörsförfrågan kan ha.
 

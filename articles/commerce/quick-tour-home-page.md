@@ -1,6 +1,6 @@
 ---
 title: Översikt över startsidan
-description: Det här ämnet innehåller en översikt över startsidan i Microsoft Dynamics 365 Commerce.
+description: Denna artikel innehåller en översikt över startsidan i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4c65d040696a72a42c89934533bad6a69c5923f5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ce94dce081957af620e3ab85e466877c0bcc5bd9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984504"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844683"
 ---
 # <a name="home-page-overview"></a>Översikt över startsidan
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet innehåller en översikt över startsidan i Microsoft Dynamics 365 Commerce.
+Denna artikel innehåller en översikt över startsidan i Microsoft Dynamics 365 Commerce.
 
 Startsidan är den standardsida som köparen går till när han eller hon besöker en näthandelssajt. Den här sidan visar vanligtvis produkter och erbjudanden med hjälp av en kombination av marknadsföringsmoduler. Startsidan ska vara rik med bilder och text för att hålla köparen sysselsatt.
 
@@ -33,7 +33,7 @@ Följande illustration visar ett exempel på en startsida som har skapats med hj
 
 ![Exempel på en startsida.](./media/Homepage2.PNG)
 
-Den övre delen av startsidan har en rubrik som visar alla produktkategorier och andra sidor som återförsäljaren vill att kunderna ska bläddra i. Startsidans nedre del har en sidfot som innehåller snabblänkar till olika ämnen som kan vara intressanta för kunderna.
+Den övre delen av startsidan har en rubrik som visar alla produktkategorier och andra sidor som återförsäljaren vill att kunderna ska bläddra i. Startsidans nedre del har en sidfot som innehåller snabblänkar till olika artiklar som kan vara intressanta för kunderna.
 
 I huvudavsnittet på startsidan kan du markera produkter, kategorier eller kampanjer med hjälp av olika Dynamics 365 Commerce-moduler:
 
@@ -49,8 +49,8 @@ I huvudavsnittet på startsidan kan du markera produkter, kategorier eller kampa
 
     ![Exempel på funktionsmoduler.](./media/Feature.PNG)
 
-- **Panel** – en panellayout för innehållsblockmodul används för att presentera flera produkter eller kategorier med produkter genom att använda en kombination av bilder och text i en layout med flera kolumner. I illustrationen av en startsida som visas tidigare i det här avsnittet används en panellayout med tre kolumner som återger objekten **Handla kvinna**, **Handla man** och **Handla tillbehör**.
-- **Videospelare** – en videospelarmodul kan användas för att presentera videoinnehåll på startsidan. En illustration av en startsida som finns tidigare i det här avsnittet innehåller en videospelarmodul.
+- **Panel** – en panellayout för innehållsblockmodul används för att presentera flera produkter eller kategorier med produkter genom att använda en kombination av bilder och text i en layout med flera kolumner. I illustrationen av en startsida som visas tidigare i denna artikel används en panellayout med tre kolumner som återger objekten **Handla för kvinnor**, **Handla för män** och **Handla accessoarer**.
+- **Videospelare** – en videospelarmodul kan användas för att presentera videoinnehåll på startsidan. En illustration av en startsida som finns tidigare i denna artikel innehåller en videospelarmodul.
 - **Textblock** – en innehållsrik blockmodul kan användas för att visa text innehåll på startsidan i en layout med en kolumn eller flera kolumner.
 - **Produktrekommendationer** – moduler för produktrekommendationer används för att visa listor som **ny**, **trend** och **bästsäljande** på startsidan. Dessa listor visar en demonstration av produkter som bygger på köptrender, och de kan genereras med algoritm eller granskas manuellt. De hjälper kunderna att snabbt upptäcka de populära produkterna och sedan fortsätta att handla.
 

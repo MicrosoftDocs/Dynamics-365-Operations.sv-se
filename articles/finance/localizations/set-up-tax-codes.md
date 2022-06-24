@@ -1,6 +1,6 @@
 ---
 title: Konfigurera momskoder
-description: Det här avsnittet förklarar hur du ställer in momskoder i tjänsten för momsberäkning.
+description: Den här artikeln förklarar hur du ställer in momskoder i tjänsten för momsberäkning.
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 8bdb194e7d8b704d1e58d3c25bf2e1f6bff1ba00
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 1bc250716763ce9d8e25c8850c8a3676bf65fb0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883882"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862940"
 ---
 # <a name="set-up-tax-codes"></a>Konfigurera momskoder
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet förklarar hur du ställer in momskoder i tjänsten för momsberäkning. Den innehåller inställningarna för ett enkelt scenario för att få momskoden att fungera och information om en del avancerad momskodfunktion för komplexa scenarier.
+Den här artikeln förklarar hur du ställer in momskoder i tjänsten för momsberäkning. Den innehåller inställningarna för ett enkelt scenario för att få momskoden att fungera och information om en del avancerad momskodfunktion för komplexa scenarier.
 
 > [!IMPORTANT]
 > Inställning av momskoder i tjänsten för momsberäkning oberoende av begreppet juridiska personer. Du kan bara slutföra den här installationen i RCS (Regulatory Configuration Service) en gång. Momskoder synkroniseras automatiskt till Microsoft Dynamics 365 Finance när du aktiverar det i tjänsten momsberäkning för en utvald juridisk entitet i Finance.

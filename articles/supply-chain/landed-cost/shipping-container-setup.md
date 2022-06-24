@@ -1,6 +1,6 @@
 ---
 title: Fraktcontainrar
-description: I det här avsnittet beskrivs hur du ställer in leveransbehållare för modulen hemtagningskostnad.
+description: I denna artikel beskrivs hur du konfigurerar leveransbehållare för modulen Hemtagningskostnad.
 author: Weijiesa
 ms.date: 12/09/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 96710cf2b5a2e39f9492aadb0ba6f3241f0666f4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 345f815a4f85db30db18aba3f8a4d41835c2e3f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690566"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860854"
 ---
 # <a name="shipping-container-setup"></a>Inställningar för leveransbehållare
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in leveransbehållare för modulen **hemtagningskostnad**.
+I denna artikel beskrivs hur du konfigurerar leveransbehållare för modulen **Hemtagningskostnad**.
 
 ## <a name="set-up-shipping-container-types"></a><a id="shipping-container-types"></a>Ange typer av leveransbehållare
 
@@ -53,7 +53,7 @@ För att arbeta med leveransbehållare, gå till **Hemtagningskostnad \> Instäl
 | Fält | beskrivning |
 |---|---|
 | Fraktcontainer | Ange ett unikt ID-namn/nummer för leveransbehållare. |
-| Typ av fraktcontainer | Välj typ av leveransbehållare. För mer information, se avsnittet [Ställ in typer av leveransbehållare](#shipping-container-types) tidigare i det här avsnittet. |
+| Typ av fraktcontainer | Välj typ av leveransbehållare. För mer information, se avsnittet [Konfigurera typer av leveransbehållare](#shipping-container-types) tidigare i denna artikel. |
 
 > [!NOTE]
 > - Inställningarna för leveransbehållare är valfria. Vanligtvis använder du det bara om ditt företag äger sina egna leveransbehållare eller ofta återanvänder samma leveransbehållare.
@@ -61,7 +61,7 @@ För att arbeta med leveransbehållare, gå till **Hemtagningskostnad \> Instäl
 
 ## <a name="set-up-unit-types"></a><a name="unit-types"></a>Ställa in enhetstyper
 
-Enhetstyper skapar ytterligare grupperingar och identifieringsmetoder för leveransbehållare. Enhetstypen används normalt för att identifiera vilken typ av behållare som gods förpackas i, till exempel lastpallar eller trummor. Du kan välja en enhetstyp när du ställer in en behållare på sidan **Alla leveransbehållare**.
+Enhetstyper skapar ytterligare grupperingar och identifieringsmetoder för leveransbehållare. Enhetstypen används normalt för att identifiera vilken typ av behållare som gods förpackas i, till exempel lastpallar eller trummor. Du kan välja en enhetstyp när du konfigurerar en behållare på sidan **Alla leveransbehållare**.
 
 Enhetstyper används bara för hemtagningskostnad. De är inte tillgängliga i TMS.
 
@@ -74,7 +74,7 @@ För att arbeta med enhetstyper, gå till **Hemtagningskostnad \> Inställning a
 
 ## <a name="set-up-refrigeration-types"></a><a name="refrigeration-types"></a>Ställa in kyltyper
 
-Kyltyper skapar ytterligare grupperingar och identifieringsmetoder för leveransbehållare (vanligtvis kylbehållare). Du kan välja en kyltyp när du ställer in en behållare på sidan **Alla leveransbehållare**.
+Kyltyper skapar ytterligare grupperingar och identifieringsmetoder för leveransbehållare (vanligtvis kylbehållare). Du kan välja en kyltyp när du konfigurerar en behållare på sidan **Alla leveransbehållare**.
 
 För att arbeta med kyltyper, gå till **Hemtagningskostnad \> Inställning av behållare \> Kyltyper**. Där kan du visa, lägga till och ta bort poster för kyltyperna. Följande register beskriver de fält som är tillgängliga för varje post.
 

@@ -1,6 +1,6 @@
 ---
-title: Ställa in en kundtjänstkanal
-description: I det här avsnittet beskrivs hur du skapar en ny kundtjänstkanal i Microsoft Dynamics 365 Commerce.
+title: Konfigurera en kundtjänstkanal
+description: I denna artikel beskrivs hur du skapar en ny kundtjänstkanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 03/13/2020
 ms.topic: article
@@ -14,26 +14,26 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3b21d5e57058fee5bb77beb6731c18967ed11cacc1925e44d2f7d8cdb26d7bcb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 219c84eb9a8c3b53467ed48c13775106c82dac63
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744544"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864965"
 ---
-# <a name="set-up-a-call-center-channel"></a>Ställa in en kundtjänstkanal
+# <a name="set-up-a-call-center-channel"></a>Konfigurera en kundtjänstkanal
 
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skapar en ny kundtjänstkanal i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du skapar en ny kundtjänstkanal i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Översikt
 
 
 I Dynamics 365 Commerce, är kundtjänst en typ av Commerce-kanal som kan definieras i programmet. Om du definierar en kanal för dina kundtjänstenheter kan systemet koppla specifika data och orderbearbetningsstandard till försäljningsorder. Ett företag kan definiera flera kundtjänstkanaler i Commerce, men det är viktigt att tänka på att en enskild användare bara kan länkas till en kundtjänstkanal. 
 
-Innan du skapar en ny kundtjänstkanal måste du kontrollera att du har slutfört [Förutsättningar för att ställa in kanaler](channels-prerequisites.md).
+Innan du skapar en ny kundtjänstkanal måste du kontrollera att du har slutfört [Förutsättningar för att konfigurera kanaler](channels-prerequisites.md).
 
 ## <a name="create-and-configure-a-new-call-center-channel"></a>Skapa och konfigurera en ny kundtjänstkanal
 
@@ -70,7 +70,7 @@ I följande bild visas konfigurationsalternativen **leveranssätt** och **betals
 
 ### <a name="set-up-payment-methods"></a>Ange betalsätt
 
-Om du vill ställa in betalsätt följer du dessa steg för varje betalningstyp som stöds på den här kanalen. Användarna måste välja bland fördefinierade betalsätt för att kunna länka dem till kundtjänstkanalen. Innan du ställer in dina betalsätt för kundtjänst, ställ först in dina betalsätt i **Retail och Commerce \> Kanalinställning \> Betalsätt \> Betalsätt**.
+Om du vill konfigurera betalsätt följer du dessa steg för varje betalningstyp som stöds på den här kanalen. Användarna måste välja bland fördefinierade betalsätt för att kunna länka dem till kundtjänstkanalen. Innan du konfigurerar dina betalsätt för kundtjänst, ställ först in dina betalsätt i **Retail och Commerce \> Kanalinställning \> Betalsätt \> Betalsätt**.
 
 1. I åtgärdsfönstret, välj fliken **Inställningar** och välj sedan **betalningssätt**.
 1. Klicka på **Ny** i åtgärdsfönstret.
@@ -101,20 +101,20 @@ I bilden nedan visas ett exempel på ett leveranssätt.
 
 ### <a name="set-up-channel-users"></a>Ställ in en kanalanvändare
 
-Om du vill skapa en försäljningsorder som är länkad till en kundtjänstkanal från Commerce-administration måste användaren som skapar försäljningsordern vara kopplad till kundtjänstkanalen. Användaren kan inte manuellt länka en försäljningsorder som har skapats i Commerce-administration till kundtjänstkanalen. Länken är systematisk och baseras på användaren och användarens relation till kundtjänstkanalen. En användare kan bara länkas till en kundtjänstkanal.
+Om du vill skapa en försäljningsorder som är länkad till en kundtjänstkanal från Commerce headquarters måste användaren som skapar försäljningsordern vara kopplad till kundtjänstkanalen. Användaren kan inte manuellt länka en försäljningsorder som har skapats i Commerce headquarters till kundtjänstkanalen. Länken är systematisk och baseras på användaren och användarens relation till kundtjänstkanalen. En användare kan bara länkas till en kundtjänstkanal.
 
 1. I åtgärdsfönstret, välj fliken **Kanal** och välj sedan **Kanalanvändare**.
 1. Klicka på **Ny** i åtgärdsfönstret.
 1. Välj ett befintligt **användar-ID** från listrutan urvalslista för att koppla användaren till kundtjänstkanalen
 
-När kanalanvändarinställningen är klar och användaren skapar en ny försäljningsorder i Commerce-administration kommer försäljningsorder att kopplas till deras tillhörande kundtjänstkanal. Alla konfigurationer för den här kanalen kommer att tillämpas systematiskt på försäljningsordern. En användare kan bekräfta vilken kundtjänstkanal som försäljningsordern är kopplad till genom att visa kanalnamnreferensen i försäljningsorderrubriken.
+När kanalanvändarinställningen är klar och användaren skapar en ny försäljningsorder i Commerce headquarters kommer försäljningsorder att kopplas till deras tillhörande kundtjänstkanal. Alla konfigurationer för den här kanalen kommer att tillämpas systematiskt på försäljningsordern. En användare kan bekräfta vilken kundtjänstkanal som försäljningsordern är kopplad till genom att visa kanalnamnreferensen i försäljningsorderrubriken.
 
 
 ### <a name="set-up-price-groups"></a>Ställa in prisgrupper
 
 Prisgrupper är valfria, men om de används kan du kontrollera vilka försäljningspriser som ska erbjudas till kunder som ställer order i den här kundtjänstkanalen. Om en prisgrupp inte har konfigurerats för kunden, eller om katalogprisgrupper inte används på försäljningsordern (med hjälp av fältet **Källkod-ID** i orderrubriken för kundtjänst), används kanalprisgruppen för att hitta artikelpriserna. Om en prisgrupp inte finns på kundtjänstkanalen används standardartikelns huvudpriser. 
 
-Om du vill ställa in en prisgrupp gör du följande.
+Om du vill konfigurera en prisgrupp gör du följande.
 
 1. I åtgärdsfönstret, välj fliken **Kanal** och välj sedan **Prisgrupper**.
 1. Klicka på **Nytt** i Åtgärdsfönstret.

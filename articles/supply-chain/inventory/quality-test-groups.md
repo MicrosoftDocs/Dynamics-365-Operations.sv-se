@@ -1,6 +1,6 @@
 ---
 title: Testgrupper för kvalitetshantering
-description: I det här avsnittet beskrivs hur du skapar testgrupper så att flera tester kan användas med kvalitetsorder i Microsoft Dynamics 365 Supply Chain Management.
+description: I denna artikel beskrivs hur du skapar testgrupper så att flera tester kan användas med kvalitetsorder i Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5619be4a0724556bf0c51dcaa3adcc3725f10706
-ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
+ms.openlocfilehash: e7722bc92d8c2bf52d6a798a93f07af44037d4e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "8789280"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857718"
 ---
 # <a name="quality-management-test-groups"></a>Testgrupper för kvalitetshantering
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skapar testgrupper så att flera tester kan användas med kvalitetsorder i Microsoft Dynamics 365 Supply Chain Management.
+I denna artikel beskrivs hur du skapar testgrupper så att flera tester kan användas med kvalitetsorder i Microsoft Dynamics 365 Supply Chain Management.
 
-Du använder sidan **Testgrupper** för att ställa in, redigera och visa testgrupper och enskilda tester som har tilldelats dem. På sidans övre del visas testgrupperna, och på den nedre visas de tester som har tilldelats en vald testgrupp.
+Du använder sidan **Testgrupper** för att konfigurera, redigera och visa testgrupper och enskilda tester som har tilldelats dem. På sidans övre del visas testgrupperna, och på den nedre visas de tester som har tilldelats en vald testgrupp.
 
 Du kan tilldela flera policyer till en testgrupp, till exempel en samplingsplan, en godtagbar kvalitetsnivå och behovet av destruktiv testning. När du sedan tilldelar ett enskilt test till en testgrupp definierar du ytterligare information, till exempel sekvensen, dokument och giltighetsdatum. För ett kvantitativt test innehåller informationen som du anger även acceptabla mätvärden. För ett kvalitativt test innehåller informationen testvariabeln och standardresultatet.
 
@@ -54,13 +54,13 @@ Gör så här om du vill skapa en testgrupp:
     - **Artikelsampling** – Välj en artikelsampling. Mer information finns i [Artikelsampling för kvalitetshantering](quality-item-sampling.md).
     - **Destruktiv** – Markera den här kryssrutan för att ange att testgruppen ska förstöra de artiklar som testas.
 
-1. När den nya raden fortfarande är markerad väljer du fliken **Allmänt** på den övre delen av sidan. Vissa av inställningarna för testgruppen som valts på fliken **Översikt** upprepas här. Du kan dessutom ställa in följande fält för gruppen:
+1. När den nya raden fortfarande är markerad väljer du fliken **Allmänt** på den övre delen av sidan. Vissa av inställningarna för testgruppen som valts på fliken **Översikt** upprepas här. Du kan dessutom konfigurera följande fält för gruppen:
 
-    - **Uppdatera batchattribut för lager** – När du ställer in alternativet som *Ja* här ställs det automatiskt in på *Ja* för varje nytt test som läggs till i testgruppen på den nedre delen av sidan.
-    - **Uppdatera batchdisposition** – När du ställer in det här alternativet på *Ja* uppdateras batchdispositionen automatiskt med värdet som valts i fältet **Disposition för orderbatch med icke-godkänd kvalitet** eller **Disposition för orderbatch med godkänd kvalitet**, detta om den artikel som testas är batchkontrollerad.
+    - **Uppdatera batchattribut för lager** – När du konfigurerar alternativet som *Ja* här ställs det automatiskt in på *Ja* för varje nytt test som läggs till i testgruppen på den nedre delen av sidan.
+    - **Uppdatera batchdisposition** – När du konfigurerar det här alternativet på *Ja* uppdateras batchdispositionen automatiskt med värdet som valts i fältet **Disposition för orderbatch med icke-godkänd kvalitet** eller **Disposition för orderbatch med godkänd kvalitet**, detta om den artikel som testas är batchkontrollerad.
     - **Disposition för orderbatch med icke-godkänd kvalitet** – Välj den batchdispositionskod som ska tilldelas när en kvalitetsorder som inkluderar den här testgruppen misslyckas eftersom den inte uppfyller den godtagbara kvalitetsnivån.
     - **Disposition för orderbatch med godkänd kvalitet** – Välj den batchdispositionskod som ska tilldelas när en kvalitetsorder som inkluderar den här testgruppen godkänns eftersom den uppfyller den godtagbara kvalitetsnivån.
-    - **Uppdatera lagerstatus** – När du ställer in det här alternativet som *Ja* kommer, om **Lagerstatus** har aktiverats i lagerdimensionsgruppen för den artikel som testas, statusen att uppdateras automatiskt med den status som har valts i fältet **Icke-godkänd kvalitetsstatus** eller **Godkänd kvalitetsstatus**.
+    - **Uppdatera lagerstatus** – När du konfigurerar det här alternativet som *Ja* kommer, om **Lagerstatus** har aktiverats i lagerdimensionsgruppen för den artikel som testas, statusen att uppdateras automatiskt med den status som har valts i fältet **Icke-godkänd kvalitetsstatus** eller **Godkänd kvalitetsstatus**.
     - **Icke-godkänd kvalitetsstatus** – Välj den lagerstatus som ska tilldelas artikeln när en kvalitetsorder som omfattar denna testgrupp misslyckas eftersom den inte uppfyller den godtagbara kvalitetsnivån.
     - **Godkänd kvalitetsstatus** – Välj den lagerstatus som ska tilldelas artikeln när en kvalitetsorder som omfattar denna testgrupp godkänns eftersom den uppfyller den godtagbara kvalitetsnivån.
 
@@ -79,12 +79,12 @@ Gör på följande sätt om du vill lägga till ett kvalitativt test i en testgr
 
     - **Test** – Välj det test du vill utföra. För att få ett kvalitativt test väljer du ett test där fältet **Typ** är inställt på *Alternativ*.
     - **Gäller från** – Välj det första datumet när testet är giltigt. Om detta fält lämnas tomt finns ingen gräns.
-    - **Gäller till** – Välj det sista datumet när testet är giltigt. Om du lämnar detta fältet tomt eller ställer in det på *Aldrig* finns ingen gräns.
+    - **Gäller till** – Välj det sista datumet när testet är giltigt. Om du lämnar detta fältet tomt eller konfigurerar det på *Aldrig* finns ingen gräns.
     - **Bestämning av testvärde** – Välj hur en godtagbar kvalitet bör fastställas när flera resultat registreras för samma test. För ett kvalitativt test kan endast *Manuell* väljas. Om du väljer något av de andra värdena (*Medel*, *Lägsta* eller *Högsta*) visas ett felmeddelande när du sparar testgruppen.
     - **Attribut** – Om du vill registrera testresultat för ett batchattribut väljer du attributet här och markerar kryssrutan **Uppdatera batchattribut för lager**.
     - **Uppdatera attribut för lagerbatch** – Markera denna kryssruta om du vill registrera testresultat för det batchattribut som valts i fältet **Attribut**.
 
-1. Välj fliken **Allmänt** på den nedre delen av sidan. Vissa av inställningarna för testet som valts på fliken **Översikt** upprepas här. Du kan dessutom ställa in följande fält för testet:
+1. Välj fliken **Allmänt** på den nedre delen av sidan. Vissa av inställningarna för testet som valts på fliken **Översikt** upprepas här. Du kan dessutom konfigurera följande fält för testet:
 
     - **Analyscertifikatrapport** – Ange det här alternativet som *Ja* för att ange att testresultatet ska skrivas ut på analyscertifikatet. Rapporten kan genereras från kvalitetsordern.
     - **Åtgärd vid fel** – Välj antingen *Godkänn* eller *Underkänn* för att ange huruvida testet ska godkännas eller inte om dess analyscertifikat ej uppfylls.
@@ -113,12 +113,12 @@ Gör på följande sätt om du vill lägga till ett kvantitativt test i en testg
 
     - **Test** – Välj det test du vill utföra. För att få ett kvantitativt test väljer du ett test där fältet **Typ** är inställt på *Del* eller *Heltal*.
     - **Gäller från** – Välj det första datumet när testet är giltigt. Om detta fält lämnas tomt finns ingen gräns.
-    - **Gäller till** – Välj det sista datumet när testet är giltigt. Om du lämnar detta fältet tomt eller ställer in det på *Aldrig* finns ingen gräns.
+    - **Gäller till** – Välj det sista datumet när testet är giltigt. Om du lämnar detta fältet tomt eller konfigurerar det på *Aldrig* finns ingen gräns.
     - **Bestämning av testvärde** – Välj hur en godtagbar kvalitet bör fastställas när flera resultat registreras för samma test. De tillgängliga alternativen är *Medel*, *Lägst*, *Högst* och *Manuellt*.
     - **Attribut** – Om du vill registrera testresultat för ett batchattribut väljer du attributet här och markerar kryssrutan **Uppdatera batchattribut för lager**.
     - **Uppdatera attribut för lagerbatch** – Markera denna kryssruta om du vill registrera testresultat för det batchattribut som valts i fältet **Attribut**.
 
-1. Välj fliken **Allmänt** på den nedre delen av sidan. Vissa av inställningarna för testet som valts på fliken **Översikt** upprepas här. Du kan dessutom ställa in följande fält för testet:
+1. Välj fliken **Allmänt** på den nedre delen av sidan. Vissa av inställningarna för testet som valts på fliken **Översikt** upprepas här. Du kan dessutom konfigurera följande fält för testet:
 
     - **Analyscertifikatrapport** – Ange det här alternativet som *Ja* för att ange att testresultatet ska skrivas ut på analyscertifikatet. Rapporten kan genereras från kvalitetsordern.
     - **Åtgärd vid fel** – Välj antingen *Godkänn* eller *Underkänn* för att ange huruvida testet ska godkännas eller inte om dess analyscertifikat ej uppfylls.

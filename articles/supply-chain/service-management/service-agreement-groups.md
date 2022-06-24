@@ -1,6 +1,6 @@
 ---
 title: Serviceavtal – översikt
-description: Det här ämnet innehåller en översikt över hur serviceavtal fungerar.
+description: Denna artikel innehåller en översikt över hur serviceavtal fungerar.
 author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc0be99cf492d672f9eaecff25c93b700e7ed230
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5566f559da6340a82ca015fb5dee2dae7887202e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670844"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862465"
 ---
 # <a name="service-agreements-overview"></a>Serviceavtal – översikt
 
@@ -35,7 +35,7 @@ I fältet **serviceavtalsgrupp** på sidan **servicehanteringsparametrar** kan d
 - Anta att du har ställt in tre avtalsgrupper i företaget, och kallat dem för Guld, Silver och Brons.
 - En ny servicekontochef har anställts i företaget. Servicechefen är ansvarig för alla klienter i avtalsgruppen Guld. Du kan filtrera avtalsposter efter avtalsgruppen Guld för att hitta alla avtal där den nya chefen ska anges som ansvarig.
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Skapa serviceavtalsgrupper](create-service-agreement-groups.md)
 

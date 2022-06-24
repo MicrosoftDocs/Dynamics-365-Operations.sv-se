@@ -1,6 +1,6 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources 12 juli 2021
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 12 juli 2021.
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 12 juli 2021.
 author: marcelbf
 ms.date: 07/12/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-12
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c01d00e7ede44c20e64fc4a8cd8646201caa3992
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 259004773c4e5a7d8865d563da9bcfea3a116632
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686811"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870970"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-12-2021"></a>Nyheter och ändringar i Dynamics 365 Human Resources 12 juli 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Det här ämnet beskriver nya, ändrade, kommer snart funktioner i Dynamics 365 Human Resources.
+Den här artikeln beskriver funktioner som är nya, ändrade eller kommer snart i Dynamics 365 Human Resources.
 
 Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
@@ -49,9 +49,9 @@ Följande funktioner är i allmänhet tillgänglig i den här versionen.
 Den här versionen innehåller följande felkorrigeringar.
 
 > [!NOTE]
-> Vårt mål är att få den här informationen så snart som möjligt. Vi kan uppdatera det här avsnittet för att inkludera felkorrigeringar som gjorde det i versionen efter det att ämnet publicerades första gången.
+> Vårt mål är att få den här informationen så snart som möjligt. Vi kan komma att uppdatera detta ämne i syfte att inkludera felkorrigeringar som kommit med i versionen efter det att ämnet publicerades första gången.
 
-| Utfärda nummer | Problem |  beskrivning |
+| Utfärda nummer | Problem |  Beskrivning |
 | --- | --- | --- |
 | 595871 | Om fönstret i Personal har fel Dataverse terminologi | Med ommärkning av Common Data Service till Dataverse, terminologi uppdaterats i informationsfönstret för Microsoft Dynamics 365 Human Resources (**Hjälp och support > Om**). |
 | 598676 | Ett strömlinjeformat inmatningsformulär för medarbetare åsidosätter uppgiften kan skapa ett fel när det används med sparad vy| På sidan **Arbetare** om funktionen "Strömlinjeformad medarbetarpost" är aktiverad på arbetarsidan kanske programmet inte aktiveras om **Alltid öppen för redigering** har ställts in i den sparade vyn. |

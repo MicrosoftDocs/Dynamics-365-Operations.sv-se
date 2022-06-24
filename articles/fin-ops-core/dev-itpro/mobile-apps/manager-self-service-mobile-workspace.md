@@ -1,6 +1,6 @@
 ---
 title: Mobil arbetsyta för mitt team
-description: Detta avsnitt innehåller information om den mobila arbetsytan för mitt team, som låter chefer se sina underställda och utökad personal.
+description: Denna artikel innehåller information om den mobila arbetsytan för mitt team, som låter chefer se sina underställda och utökad personal.
 author: ShielaSogge
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7793bd6bb1c2dfb5f6840430914393e837242fb5
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: f15ac24e5c32a42863cac8a9c9754c95aa4ff734
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811069"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868710"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobil arbetsyta för mitt team
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Det här avsnittet innehåller information om den mobila arbetsytan **Mitt team**. Den här arbetsytan låter chefer visa sina underställda och utökade personal. De kan också skicka beröm till enskilda personer i sin rapporteringskedja.
+Den här artikeln innehåller information om den mobila arbetsytan **Mitt team**. Den här arbetsytan låter chefer visa sina underställda och utökade personal. De kan också skicka beröm till enskilda personer i sin rapporteringskedja.
 
 Denna mobila arbetsyta är avsedd att användas med mobilappen Finance and Operations.
 

@@ -1,6 +1,6 @@
 ---
 title: Integrera med tillverkningsutförandesystem från tredje part
-description: I detta ämne avsnittet beskrivs hur du kan integrera Microsoft Dynamics 365 Supply Chain Management med ett utförandesytem från tredje part ("MES").
+description: I denna artikel beskrivs hur du kan integrera Microsoft Dynamics 365 Supply Chain Management med ett körningssystem från tredje part ("MES").
 author: johanhoffmann
 ms.date: 10/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: c7633ba32f9265aa0fd8f702552f48dbf675375d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 208ed2d6c8b411d12888966d9c175730e828eb44
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678699"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860650"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrera med tillverkningsutförandesystem från tredje part
 
@@ -24,7 +24,7 @@ ms.locfileid: "8678699"
 
 Vissa tillverkningsorganisationer som använder Microsoft Dynamics 365 Supply Chain Management använder de ursprungliga funktionerna i Dynamics 365 för att styra sina tillverkningsaktiviteter för maskiner, utrustning och personal. Andra tillverkningsorganisationer, särskilt de som har avancerade tillverkningskrav, använder emellertid i stället ett utförandesystem från tredje part ("MES"). Organisationer kan välja en MES-lösning för tillverkningsutförande från tredje part eftersom den till exempel är skräddarsydd efter deras vertikalintegrerade bransch.
 
-I den integrerade lösningen är datautbytet helt automatiserat och sker i närapå realtid. Därför hålls data uppdaterad i båda system, och manuell datainmatning krävs inte. När materialförbrukning registreras i MES säkerställer integreringen till exempel att samma förbrukning också registreras i Dynamics 365. Därför är uppdaterade lagerposter tillgängliga för andra viktiga processer, till exempel planering och försäljning.
+I den integrerade lösningen är datautbytet helt automatiserat och sker i närapå realtid. Därför hålls data uppdaterad i båda system, och manuell datainmatning krävs inte. När materialförbrukning registreras i MES säkerkonfigurerartegreringen till exempel att samma förbrukning också registreras i Dynamics 365. Därför är uppdaterade lagerposter tillgängliga för andra viktiga processer, till exempel planering och försäljning.
 
 Lösningen gör det snabbare, enklare och biligare för Supply Chain Management-användarna att integreras med MES från tredje part. Den erbjuder följande funktioner:
 
@@ -70,7 +70,7 @@ Alla meddelanden för en viss tillverkningsorder bearbetas i den ordning de tas 
 
 ## <a name="call-the-api"></a>Anropa API
 
-Om du vill anropa API för MES-integration ska du skicka en `POST`-begäran till följande slutpunkts-URL:
+Om du vill anropa API för MES-integrering ska du skicka en `POST`-begäran till följande slutpunkts-URL:
 
 `/api/services/SysMessageServices/SysMessageService/SendMessage`
 
@@ -88,7 +88,7 @@ Brödtexten i den begäran som du skickar bör se ut ungefär som i följande ex
 
 ## <a name="api-message-types-and-content"></a>Meddelandetyper och innehåll för API
 
-I det här avsnittet beskrivs varje enskild meddelandetyp som kan utbytas via API för MES-integration.
+I det här avsnittet beskrivs varje enskild meddelandetyp som kan utbytas via API för MES-integrering.
 
 ### <a name="start-production-order-message"></a>Meddelandet Starta produktionsorder
 
@@ -238,23 +238,23 @@ För meddelandet *avsluta produktionsorder* är värdet för `_messageType` lika
 
 ## <a name="other-production-information"></a>Annan produktionsinformation
 
-Meddelandena stöder åtgärder eller händelser som inträffar i arbetsgolvet. De bearbetas med hjälp av MES-integrationsramverket som beskrivs i det här avsnittet. Designen förutsätter att annan referensinformation som ska delas med MES (till exempel produktrelaterad information, strukturlista eller flöde (med dess specifika inställnings- och konfigurationstider) som används i en viss tillverkningsorder) hämtas från systemet med hjälp av [dataenheter](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) via filöverföring eller OData.
+Meddelandena stöder åtgärder eller händelser som inträffar i arbetsgolvet. De bearbetas med hjälp av MES-integreringsramverket som beskrivs i denna artikel. Designen förutsätter att annan referensinformation som ska delas med MES (till exempel produktrelaterad information, strukturlista eller flöde (med dess specifika inställnings- och konfigurationstider) som används i en viss tillverkningsorder) hämtas från systemet med hjälp av [dataenheter](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) via filöverföring eller OData.
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>Få feedback om statusen för ett meddelande
 
 När MES har skickat ett meddelande till Supply Chain Management kan det vara relevant för Supply Chain Management att returnera feedback om meddelandets status. Här följer några exempel på situationer där den här metoden kan vara användbar:
 
-- Det finns ingen person som ansvarar för ansvar för konstant övervakning av MES-integrationen.
-- Den person som ansvarar för att övervaka MES-integrationen vill meddelas via e-post när ett meddelande misslyckas, så att han eller hon vet att de måste vidta åtgärder.
+- Det finns ingen person som ansvarar för ansvar för konstant övervakning av MES-integreringen.
+- Den person som ansvarar för att övervaka MES-integreringen vill meddelas via e-post när ett meddelande misslyckas, så att han eller hon vet att de måste vidta åtgärder.
 - MES måste visa ett felmeddelande i syfte att informera operatorn på golvet eller någon på IT-avdelningen om att de måste vidta åtgärder.
 - MES måste omberäkna orderschemat när det har fått ett felmeddelande (till exempel eftersom tillverkningsordern inte kunde starta).
 
 I dessa fall kan du använda standard-notifieringsfunktionen i Supply Chain Management. Mer information om hur standardvarningar fungerar finns i följande resurser:
 
-- Hjälpavsnitt: [Notifieringar – översikt](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
+- Hjälpartikel: [Notifieringar – översikt](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
 - Video: [Alternativ för notifieringsregel i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
-Du kan till exempel ställa in följande notifieringar om du vill ge återkoppling rörande en meddelandestatus:
+Du kan till exempel konfigurera följande notifieringar om du vill ge återkoppling rörande en meddelandestatus:
 
 - Skapa en affärshändelse ("Skicka externt") som används när ett meddelande *misslyckats*.
 - Skicka ett meddelande och e-post till IT-admin eller produktionschefen.

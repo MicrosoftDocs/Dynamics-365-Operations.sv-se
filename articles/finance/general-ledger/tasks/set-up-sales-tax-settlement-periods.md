@@ -1,6 +1,6 @@
 ---
 title: Ställ in momskvittningsperioder
-description: Detta avsnitt innehåller information om hur du ställer in momskvittningsperioder i Dynamics 365 Finance.
+description: Denna artikel innehåller information om hur du ställer in momskvittningsperioder i Dynamics 365 Finance.
 author: twheeloc
 ms.date: 08/05/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 197b85fb88f966b0a13fc061e2e780dd84e74acb
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 3f8514494b5d3534fc236def817df0d58fe80d70
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735826"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846695"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Ställ in momskvittningsperioder
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet innehåller information om hur du ställer in momskvittningsperioder. Momskvittningsperioder innehåller information om periodintervall för rapportering och betalning av moms. En kvittningprocess kan köras för en kvittningsperiod för ett specifikt datumintervall. Alla momskoder som är kopplade till kvittningsperioden kvittas. Beroende på inställningen av den relaterade skattemyndigheten bokförs skatteskulden antingen till en leverantör eller ett redovisningskonto.
+Den här artikeln innehåller information om hur du ställer in momskvittningsperioder. Momskvittningsperioder innehåller information om periodintervall för rapportering och betalning av moms. En kvittningprocess kan köras för en kvittningsperiod för ett specifikt datumintervall. Alla momskoder som är kopplade till kvittningsperioden kvittas. Beroende på inställningen av den relaterade skattemyndigheten bokförs skatteskulden antingen till en leverantör eller ett redovisningskonto.
 
 I den här uppgiften används demonstrationsföretaget USMF.
 

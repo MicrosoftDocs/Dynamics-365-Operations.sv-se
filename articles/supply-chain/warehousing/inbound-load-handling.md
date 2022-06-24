@@ -1,6 +1,6 @@
 ---
-title: Lagerhantering av inkommande laster för inköpsorder
-description: Det här ämnet beskriver lagerhanteringsprocessen för inkommande laster för inköpsorder.
+title: Lagerstyrning av inkommande laster för inköpsorder
+description: Denna artikel beskriver lagerhanteringsprocessen för inkommande laster för inköpsorder.
 author: Mirzaab
 ms.date: 03/21/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 100b1972801f117560a5caf338a1ac640737ccdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778069"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855944"
 ---
-# <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhantering av inkommande laster för inköpsorder
+# <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerstyrning av inkommande laster för inköpsorder
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet beskriver lagerhanteringsprocessen för inkommande laster för inköpsorder.
+Denna artikel beskriver lagerhanteringsprocessen för inkommande laster för inköpsorder.
 
 För varje inkommande last bör systemet redan ha en relaterad försäljningsorder och den kan också innehålla en relaterad lastspecifikation och/eller transportplan. Mer information om hur du skapar och hanterar inkommande laster finns i [Affärsprocess: planera transport för inkommande laster](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
@@ -40,7 +40,7 @@ Följande bild visar det typiska flödet för hantering av inkommande laster som
 
 1. **En inkommande lastpost skapas för att planera införsel och dess innehåll.**
 
-    Den inkommande lastposten representerar en leverantörs leverans av en eller flera inköpsorder. Lasten förväntas anlända till lagerstället som en fysisk transportenhet (t.ex. en lastbilslast). Den inkommande lastposten används i planeringssyfte och gör det möjligt för logistikkoordinatorn att spåra lastens förlopp från leverantören. Den används också för att registrera orderradkvantiteter och hantera status genom lageroperationer, t.ex. införsel- och inlagrat arbete. Laster kan skapas antingen automatiskt eller manuellt och kan antingen baseras på en inköpsorder eller ett avancerat leveransmeddelande (ASN) från leverantören. Mer information finns i [skapa eller ändra en inkommande last](/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
+    Den inkommande lastposten representerar en leverantörs leverans av en eller flera inköpsorder. Lasten förväntas anlända till lagerstället som en fysisk transportenhet (t.ex. en lastbilslast). Den inkommande lastposten används i planeringssyfte och gör det möjligt för logistikkoordinatorn att spåra lastens förlopp från leverantören. Den används också för att registrera orderradkvantiteter och hantera status genom lageråtgärder, t.ex. införsel- och inlagrat arbete. Laster kan skapas antingen automatiskt eller manuellt och kan antingen baseras på en inköpsorder eller ett avancerat leveransmeddelande (ASN) från leverantören. Mer information finns i [skapa eller ändra en inkommande last](/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
 
 1. **Leverantören bekräftar lastavsändaren.**
 
@@ -137,7 +137,7 @@ I följande tabell beskrivs de alternativ som är tillgängliga för fältet **L
 
 ### <a name="put-away-the-registered-quantities"></a>Införa registrerade kvantiteter
 
-När registreringen är slutförd på den mobila enheten uppdaterar åtgärden _inleverans av lastkvantitet_ åtgärden uppdaterar lager- och lagerställeposter för att indikera att kvantiteterna nu finns på den mottagande dockningsplatsen och är tillgängliga för bokning. Ett företags lageroperationer kräver dock vanligtvis att kvantiteterna flyttas från den mottagande dock till det vanliga lagerstället, så att de efterföljande plockningsprocesserna kan utföras. Instruktioner för artikelinförseln förs in i artikelinförsel arbetet som genereras automatiskt när inkommande last registreras som inlevererad.
+När registreringen är slutförd på den mobila enheten uppdaterar åtgärden _inleverans av lastkvantitet_ åtgärden uppdaterar lager- och lagerställeposter för att indikera att kvantiteterna nu finns på den mottagande dockningsplatsen och är tillgängliga för bokning. Ett företags lageråtgärder kräver dock vanligtvis att kvantiteterna flyttas från den mottagande dock till det vanliga lagerstället, så att de efterföljande plockningsprocesserna kan utföras. Instruktioner för artikelinförseln förs in i artikelinförsel arbetet som genereras automatiskt när inkommande last registreras som inlevererad.
 
 När lager arbetaren har slutfört artikel införselarbetet, kommer systemet att registrera och spåra resultatet genom att uppdatera uppdateringar flera enheter, som sammanfattas i följande tabell.
 
@@ -149,7 +149,7 @@ När lager arbetaren har slutfört artikel införselarbetet, kommer systemet att
 
 ## <a name="post-registered-product-quantities-against-purchase-orders"></a><a name="post-registered-quantities"></a>Bokföra registrerade lastkvantiteter mot inköpsorder
 
-När inkommande produktkvantiteter har registrerats i systemet blir de tillgängliga för reservation i samband med försäljning och andra avgående och interna operationer. Systemet uppdaterar dock inte lagerkontona (interim) ännu. Denna uppdatering kan endast uppstå när de registrerade produktinleveranser bokförs i Operations-teamet.
+När inkommande produktkvantiteter har registrerats i systemet blir de tillgängliga för reservation i samband med försäljning och andra avgående och interna åtgärder. Systemet uppdaterar dock inte lagerkontona (interim) ännu. Denna uppdatering kan endast uppstå när de registrerade produktinleveranser bokförs i Operations-teamet.
 
 Om du vill öppna en sida där de kan bokföra en produktinleverans kan medlemmarna i Operations-teamet följa _ett_ av dessa steg:
 
@@ -194,7 +194,7 @@ När användaren väljer **OK** för att bekräfta bokföringen av produktinleve
 | Lagertransaktionen för den inköpsorder för vilken radens kvantiteter har inkluderats i bokföringsomfånget | <p>Följande fält uppdateras (men observera att det också finns flera andra uppdateringar):</p><ul><li>Fältet <b>kvitto</b> ställs in på <i>Inlevererad</i>.</li><li>Fältet <b>fysiskt datum</b> uppdateras med datumet för bokföringen.</li></ul> |
 | Last som användaren har bokfört produktinleveransen från | Uppdateringar av lasten beror på vilken version som används och inställningen av fältet **Tillåt flera produktinleveranser per last**. Reglerna beskrivs i tabellen som visas senare i det här avsnittet. |
 
-Fältet **Tillåt flera produktinleveranser per last** gör att företag väljer en policy för inkommande lastmottagning. Beroende på de operativa flödena kan det hända att företag väljer att tillåta eller inte tillåta att bokföra flera produktinleveranser för samma last. Vi rekommenderar att logistikchefen ställer in fältet **Tillåt flera produktinleveranser per last** till ett av följande värden:
+Fältet **Tillåt flera produktinleveranser per last** gör att företag väljer en policy för inkommande lastmottagning. Beroende på de operativa flödena kan det hända att företag väljer att tillåta eller inte tillåta att bokföra flera produktinleveranser för samma last. Vi rekommenderar att logistikchefen konfigurerar fältet **Tillåt flera produktinleveranser per last** till ett av följande värden:
 
 - **Nej** – Välj detta värde om mottagande av inleveransansvarig på lager alltid ska registrera alla orderkvantiteter som medföljer varje last inom en bestämd tidsram. Om det inte finns några registrerade inleveranser, antar systemet att de inte inkommit eller inte fanns på lasten och därför inte ska betraktas som en del av lasten. Den bokföring av produktinleverans som från en last använder samma antagande. Förutom produktinleverans – uppdatera alla registrerade kvantiteter (dess huvudfunktion), deklarerar programmet lasten som har slutförts och stängts för vidare bearbetning. I det här fallet uppdateras alla lastrader automatiskt till registrerade kvantiteter, lastrader som inte har några registrerade kvantiteter och laststatus ändras till _Inlevererat_.
 - **Ja** – Välj detta värde om mottagande av lagerställen kräver mer tid för att registrera alla kvantiteter av den inlevererade lasten, men under tiden måste du vara produktinleverans – bokför de kvantiteter som redan har registrerats. I det här fallet vill du att logistikchefen ska vara öppen även när bokföringsjobbet för produktinleverans har körts, så att återstående lastkvantiteter kan registreras och produktinleverans uppdateras till redovisningen kontinuerligt.
@@ -205,11 +205,11 @@ I följande tabell sammanfattas effekterna av inställningen **Tillåt flera pro
 | Tillåt flera produktinleveranser per last | Lastkvantitet | Laststatus | Sedel |
 |---|---|---|---|
 | När det här fältet inte är tillgängligt (versioner före 10.0.10) | <p>Lastkvantitet ställs in så att den motsvarar den registrerade kvantiteten.</p><p>Om lastkvantitet uppdateras till 0 (noll), vilket innebär att ingen registrering har gjorts, tas lastraden bort.</p><p>Om det inte finns några lastrader i lasten tas lasten bort.</p> | _Inlevererat_ | Om det finns flera laster för orderradens registrerade kvantitet, uppdateras bara statusen för den last som inleveransen bokfördes från uppdateras till _mottaget_. |
-| Nr | <p>Lastkvantitet ställs in så att den motsvarar den registrerade kvantitet som är associerad med last-ID.</p><p>Om inget last-ID har registrerats för lagertransaktionen, matchar beteendet de som finns i versioner före 10.0.10.</p> | _Inlevererat_ | |
+| Nej | <p>Lastkvantitet ställs in så att den motsvarar den registrerade kvantitet som är associerad med last-ID.</p><p>Om inget last-ID har registrerats för lagertransaktionen, matchar beteendet de som finns i versioner före 10.0.10.</p> | _Inlevererat_ | |
 | Ja | Inga uppdateringar | _Mottaget_, om den totala registrerade lastkvantiteten är lika med eller större än lastkvantiteten | |
 | Ja | Inga uppdateringar | _Levererad_ eller _Pågående_, om den totala registrerade lastkvantiteten är mindre än lastkvantiteten | |
 
-När fältet **Laststatus** är inställt på _Inlevererat_ kan inga fler bokföringar av produktinleverans göras för den lasten. Arbetaren kan dock registrera den återstående orderkvantiteten mot inlevererad last under följande förhållanden. (Mer information finns i avsnitt [Last övermottagning](#load-over-receiving) tidigare i det här avsnittet.)
+När fältet **Laststatus** är inställt på _Inlevererat_ kan inga fler bokföringar av produktinleverans göras för den lasten. Arbetaren kan dock registrera den återstående orderkvantiteten mot inlevererad last under följande förhållanden. (Mer information finns i avsnittet [Lastövermottagning](#load-over-receiving) tidigare i denna artikel.)
 
 - Den version av Supply Chain Management som är äldre än version 10.0.11.
 - Funktionen _Överinleverans av lastkvantiteter_ är aktiverad och fältet **Övermottagning av lastradens kvantitet** på mobilenhetens menyalternativ för åtgärden mottagande av lastartikel anges till _Allow_.
@@ -297,9 +297,9 @@ I det här avsnittet skapar du ett menyalternativ för mobila enheter och lägge
 
     ![Inställningar för menykommando på mobil enhet.](media/inbound-mobile-menu-items.png "Inställning för menykommando på mobil enhet")
 
-    Mer information om hur du konfigurerar menyartiklar för mobila enheter finns i [ställa in mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md).
+    Mer information om hur du konfigurerar menyartiklar för mobila enheter finns i [konfigurera mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md).
 
-2. När du är klar med att ställa in menyalternativet går du till **lagerstyrning \> inställning \> mobil enhet \> meny för mobil enhet** och lägg till den i menystrukturen för dina mobila enheter.
+2. När du är klar med att konfigurera menyalternativet går du till **lagerstyrning \> inställning \> mobil enhet \> meny för mobil enhet** och lägg till den i menystrukturen för dina mobila enheter.
 
 ### <a name="example-scenario-1-register-a-load-where-some-items-are-missing"></a>Exempelscenario 1: registrera en last där vissa artiklar saknas
 
@@ -409,7 +409,7 @@ I den här proceduren ska du aktivera flera produktinleveranser med samma last.
 
 I den här proceduren ska du skapa en inköpsorder och två laster. Därefter ska du uppdatera varje last manuellt för att simulera att den har levererats av leverantören (som uppdaterar laststatus). lagerplanerare kan sedan filtrera lasterna efter **laststatus** för att hitta förväntad inkommande last.
 
-Du får också lära dig att ställa in inköpsorderraden så att du kan ta emot en kvantitet som är 20 procent mer än den kvantitet som är angiven för raden.
+Du får också lära dig att konfigurera inköpsorderraden så att du kan ta emot en kvantitet som är 20 procent mer än den kvantitet som är angiven för raden.
 
 1. Gå till **Anskaffning och källa \> Inköpsorder \> Alla inköpsorder**.
 1. Välj **Ny**.
@@ -448,7 +448,7 @@ Den här proceduren visar hur en inleveransansvarig kommer att registrera lastkv
 
     - **Last**– ange det första last-ID som du skapade under den föregående proceduren.
     - **Artikel** – ange _A0001_, vilket är den artikel som förväntas för lasten.
-    - **Kvantitet** – ange _3_. Observera att kvantiteten är mindre än den förväntade kvantiteten. I det här scenariot ska du anta att du, som inleveransansvarig, inte har tid att registrera alla kvantiteter för den här lasten. Senare i den här proceduren registrerar du de återstående delarna genom att upprepa det här steget och ställa in **kvantitet** på _2_.
+    - **Kvantitet** – ange _3_. Observera att kvantiteten är mindre än den förväntade kvantiteten. I det här scenariot ska du anta att du, som inleveransansvarig, inte har tid att registrera alla kvantiteter för den här lasten. Senare i den här proceduren registrerar du de återstående delarna genom att upprepa det här steget och konfigurera **kvantitet** på _2_.
 
 1. Fortsätt att gå igenom arbetsflödet, lämna alla andra fält tomma eller ange standardvärden tills din enhet informerar att arbetet har slutförts.
 1. I webbklienten, gå till **Lagerstyrning \> Laster \> Alla laster**.

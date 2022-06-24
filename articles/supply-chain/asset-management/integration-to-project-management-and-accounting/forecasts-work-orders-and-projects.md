@@ -1,6 +1,6 @@
 ---
 title: Prognoser, arbetsorder och projekt
-description: Det här avsnittet innehåller information om prognoser och arbetsorderintegration med modulen Projekthantering och redovisning i Tillgångshantering.
+description: Denna artikel förklarar prognoser och arbetsorderintegrering med modulerna Projekthantering och redovisning i Tillgångshantering.
 author: johanhoffmann
 ms.date: 08/29/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b53dcf4e8796f808283b7bd5ea92b869ee0e59aac5359d74bcdc5de37ea7352
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 80f0380d50a0c050242846c0c3e70bc1a0bd6bf5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770346"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880463"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Prognoser, arbetsorder och projekt
 
@@ -41,7 +41,7 @@ Prognoser för underhållsjobbtyp har två funktioner:
 - Du kan spåra kostnader i prognoser för underhållsjobbtyp i modulen **Projekthantering och redovisning**. 
 - Prognoser överförs automatiskt till ett jobbprojekt för arbetsorder när du väljer en underhållsjobbtyp för ett arbetsorderjobb.
 
-Om du vill spåra kostnader för arbetsorderjobb måste du först ställa in arbetsorderprojekt. Mer information finns i [Projektinställningar för arbetsorder](../setup-for-work-orders/work-order-project-setup.md).
+Om du vill spåra kostnader för arbetsorderjobb måste du först konfigurera arbetsorderprojekt. Mer information finns i [Projektinställningar för arbetsorder](../setup-for-work-orders/work-order-project-setup.md).
 
 ## <a name="work-order-job-projects"></a>Jobbprojekt för arbetsorder
 
@@ -60,7 +60,7 @@ Till exempel i följande illustration på grund av det sätt som tillgångstypen
 
 ![Figur 1.](media/01-integration-to-pma.png)
 
-Syftet med projekt-ID på arbetsorderjobbet och det relaterade aktivitetsnumret är att spåra kostnader som är relaterade till arbetsorderjobbet och tillgången som är vald i modulen **Projekthantering och redovisning**. (Om du vill visa projekt-ID och aktivitetsnummer väljer du **tillgångshantering** > **vanliga** > **arbetsorder** > **alla arbetsorder** och väljer sedan arbetsordern. På snabbfliken **Raddetaljer** visar fältet **Projekt-ID** projekt-ID och fältet **aktivitetsnummer** visar aktivitetsnummer.) Mer information om kostnadskontroll i tillgångs hantering finns [Kostnad- och datumkontroll](../controlling-and-reporting/cost-and-date-control.md).
+Syftet med projekt-ID på arbetsorderjobbet och det relaterade aktivitetsnumret är att spåra kostnader som är relaterade till arbetsorderjobbet och tillgången som är vald i modulen **Projekthantering och redovisning**. (Om du vill visa projekt-ID och aktivitetsnummer väljer du **Tillgångshantering** > **vanliga** > **arbetsorder** > **alla arbetsorder** och väljer sedan arbetsordern. På snabbfliken **Raddetaljer** visar fältet **Projekt-ID** projekt-ID och fältet **aktivitetsnummer** visar aktivitetsnummer.) Mer information om kostnadskontroll i tillgångs hantering finns [Kostnad- och datumkontroll](../controlling-and-reporting/cost-and-date-control.md).
 
 Följande bild visar en grafisk översikt över arbetsorderprojekt och relaterade projektaktiviteter.
 
@@ -78,7 +78,7 @@ För att säkerställa korrekt användning av livscykeltillstånd för arbetsord
 
 - I modulen **Projekthantering och redovisning** ställs projektfaser in för projekttyper på sidan **Parametrar för projekthantering och redovisning**.  
 - På sidan **Parametrar för projekthantering och redovisning**, använd kryssrutorna för att markera relevanta projektfaser för alla projekttyper som du kommer att använda. I bilden nedan har fem faser (**Skapat**, **Uppskattat**, **Tidsplanerat**, **Pågår** och **Slutfört**) valts för projekttyperna **Tid och material** och **Internt**. De fem faserna är relevanta för både interna underhållsjobb och serviceunderhållsjobb.
-- I modulen **tillgångshantering** definieras projekt typerna av projektgrupperna som du ställer in på sidan **Projektinställningar för arbetsorder** > fliken **Projektgrupp**(**tillgångshantering** > **inställningar** > **arbetsorder** > **projektinställningar**).  
+- I modulen **Tillgångshantering** definieras projekt typerna av projektgrupperna som du konfigurerar på sidan **Projektinställningar för arbetsorder** > fliken **Projektgrupp**(**Tillgångshantering** > **inställningar** > **arbetsorder** > **projektinställningar**).  
 - Projektgrupperna som ställs in på sidan **Projektinställningar för arbetsorder** används när du skapar arbetsorder. När en arbetsorder skapas, skapas automatiskt ett arbetsorderprojekt för arbetsordern.  
 - Varje arbetsorders livscykeltillstånd måste ha en relaterad projektfas.  
 - Projektfasen som är relaterad till en arbetsorders livscykeltillstånd måste definieras som en aktiv fas för projektgruppen som definieras i arbetsorderprojektet. Arbetsorderprojektet skapas automatiskt på en arbetsorder.
@@ -92,9 +92,9 @@ Följande bild visar kopplingar mellan projektgrupper i arbetsorder, relaterade 
 
 ![Figur 5.](media/05-integration-to-pma.png)
 
-För mer information om hur du ställer in arbetsorderprojekt, se [Inställningar av arbetsorderprojekt](../setup-for-work-orders/work-order-project-setup.md). Mer information om hur du skapar livscykeltillstånd för arbetsorder finns i [Livscykeltillstånd för arbetsorder](../setup-for-work-orders/work-order-lifecycle-states.md).
+För mer information om hur du konfigurerar arbetsorderprojekt, se [Inställningar av arbetsorderprojekt](../setup-for-work-orders/work-order-project-setup.md). Mer information om hur du skapar livscykeltillstånd för arbetsorder finns i [Livscykeltillstånd för arbetsorder](../setup-for-work-orders/work-order-lifecycle-states.md).
 
-Följande illustration visar en grafisk översikt över de olika projekt som skapas i modulen **tillgångshantering** för att aktivera integrering med modulen **Projekthantering och redovisning**. Det visar även de arbetsprocesser som projekten är relaterade till.
+Följande illustration visar en grafisk översikt över de olika projekt som skapas i modulen **Tillgångshantering** för att aktivera integrering med modulen **Projekthantering och redovisning**. Det visar även de arbetsprocesser som projekten är relaterade till.
 
 ![Figur 6.](media/06-integration-to-pma.png)
 

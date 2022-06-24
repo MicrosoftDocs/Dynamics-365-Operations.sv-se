@@ -1,6 +1,6 @@
 ---
 title: Momsdeklaration (Danmark)
-description: I detta ämne beskrivs hur du konfigurerar in och genererar en momsförskottsdeklaration för Danmark.
+description: I denna artikel beskrivs hur du konfigurerar in och genererar en momsförskottsdeklaration för Danmark.
 author: anasyash
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 4d4a1185fa3c3b059744018b6e4e195de07126c9
-ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.openlocfilehash: 666dc96cb169ab28ac3938299a3f245e3b4511ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "8402990"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863011"
 ---
 # <a name="vat-declaration-denmark"></a>Momsdeklaration (Danmark)
 
 [!include [banner](../includes/banner.md)]
 
-I detta ämne beskrivs hur du konfigurerar momsförskottsdeklarationen för Danmark och förhandsvisar den i Microsoft Excel.
+I denna artikel beskrivs hur du konfigurerar momsförskottsdeklarationen för Danmark och förhandsvisar den i Microsoft Excel.
 
 Om du vill generera rapporten automatiskt måste du först skapa tillräckligt med momskoder för att hålla en separat momsredovisning för respektive ruta i momsförskottsdeklarationen. I de programspecifika parametrarna för det elektroniska rapporteringsformatet (ER) för förhandsdeklarationen för moms måste du dessutom koppla momskoder till sökresultatet för rutorna i momsdeklarationen.
 
-För Danmark måste du konfigurera **Sökning i rapportfält**. Mer information om hur du konfigurerar programspecifika parametrar finns i avsnittet [Ställa in programspecifika parametrar för momsdeklarationsfält](#set-up-application-specific-parameters) längre fram i det här avsnittet.
+För Danmark måste du konfigurera **Sökning i rapportfält**. Mer information om hur du konfigurerar programspecifika parametrar finns i avsnittet [Ställa in programspecifika parametrar för momsdeklarationsfält](#set-up-application-specific-parameters) längre fram i den här artikeln.
 
 I följande tabell visar kolumnen Sökresultat det sökresultat som är förkonfigurerat för en viss momsdeklarationsrad i momsdeklarationsformatet. Använd den här informationen för att korrekt koppla momskoder till sökresultatet och sedan till raden i momsdeklarationen.
 
@@ -124,7 +124,7 @@ Följ dessa steg för att definiera vilka momskoder som genererar vilka rutor i 
 
     | Fält                  | Beskrivning                                                                                                                                                                                                                                                                                                          |
     |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Sökningsresultat          | Välj värdet i rapportfältet. Mer information om värdena och deras tilldelning till momsdeklarationsrader finns i [översiktsavsnittet för momsdeklarationen](#vat-declaration-overview) tidigare i det här avsnittet.                                                                                               |
+    | Sökningsresultat          | Välj värdet i rapportfältet. Mer information om värdena och deras tilldelning till momsdeklarationsrader finns i [översiktsavsnittet för momsdeklarationen](#vat-declaration-overview) tidigare i den här artikeln.                                                                                               |
     | Momskod               | Välj den momskod som ska associeras med rapportfältet. Bokförda momstransaktioner med den valda momskoden samlas in i rätt deklarationsruta. Vi rekommenderar att du separerar momskoder på ett sådant sätt att en momskod bara genererar belopp i en deklarationsruta. |
     | Transaktionsklassificerare | Om du har skapat tillräckligt med momskoder för att bestämma en deklarationsruta väljer du **\*Inte tom\***. Om du inte skapat tillräckligt med momskoder så att en momskod bara genererar belopp i en deklarationsruta kan du ställa in en transaktionsklassificerare. Följande transaktionsklassifierare är tillgängliga:</br>-   **Inköp**</br>-   **PurchaseExempt** (momsbefriat inköp)</br>-   **PurchaseReverseCharge** (momsfordran från inköpsåterköpstillägg)</br>-   **Försäljning**</br>-   **SalesExempt** (momsbefriad försäljning)</br>-   **SalesReverseCharge** (skatt som ska betalas från en omvänd skattskyldighet eller en omvänd skattskyldighet)</br>-   **Importavgift**. </br>För varje transaktionsklassificerare finns det också en klassificerare för kreditfakturan. En av dessa klassificerare är till exempel **PurchaseCreditNote** (inköpskreditfaktura).</br>Se till att skapa två rader för varje momskod: en som har transaktionsklassens värde och en som har transaktionsklassen för kreditfakturavärde. |
 

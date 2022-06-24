@@ -1,6 +1,6 @@
 ---
 title: Planera kontoplanen
-description: Det här ämnet innehåller information som hjälper dig att planera kontoplanen för din organisation.
+description: Den här artikeln innehåller information som hjälper dig att planera kontoplanen för din organisation.
 author: aprilolson
 ms.date: 04/02/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0734276a736cfdb91ec3a129c83dae1c0a6d3955
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722476"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853360"
 ---
 # <a name="plan-your-chart-of-accounts"></a>Planera kontoplanen
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet innehåller information som hjälper dig att planera kontoplanen för din organisation.
+Den här artikeln innehåller information som hjälper dig att planera kontoplanen för din organisation.
 
 Följ och underhålla ekonomisk information i en organisation genom att lägga upp en kontoplan. En kontoplan är en samling av konton som definierar ett ekonomisk ramverk. För att ytterligare spåra transaktionerna i kontona, kan du lägga till segment. Dessa segment kallas för ekonomiska dimensioner. Ett utgiftskonto kan till exempel inkludera ekonomiska dimensioner som kallas avdelning, kostnadsställe och syfte. Användardefinierade regler anger sambandet mellan dessa ekonomiska dimensioner och huvudkontona och andra ekonomiska dimensioner, och även hur transaktioner kan registreras. Dessa användardefinierade regler är kallas kontostrukturer och avancerade regler.
 

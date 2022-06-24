@@ -1,6 +1,6 @@
 ---
 title: Prioritetsbaserad planering
-description: I detta ämne beskrivs funktionen för prioritetsbaserad planering i Microsoft Dynamics 365 Supply Chain Management.
+description: I denna artikel beskrivs funktionen för prioritetsbaserad planering i Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: bdca7ef99716cebee5c4eb41d1e51793b9468dd4
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 4997ba123f105f683daaa6b29fe8c5ee72cb47cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468312"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873823"
 ---
 # <a name="priority-based-planning"></a>Prioritetsbaserad planering
 
 [!include [banner](../../includes/banner.md)]
 
-I detta ämne beskrivs funktionen för prioritetsbaserad planering i Microsoft Dynamics 365 Supply Chain Management. Funktionen ger stöd för efterfrågestyrd planering, som är ett steg i DDMRP (Demand Driven Material Requirements Planning). Med prioriterad planering kan Planeringsoptimering generera planerade order som baseras på planeringsprioritet istället för behovsdatum.
+I denna artikel beskrivs funktionen för prioritetsbaserad planering i Microsoft Dynamics 365 Supply Chain Management. Funktionen ger stöd för efterfrågestyrd planering, som är ett steg i DDMRP (Demand Driven Material Requirements Planning). Med prioriterad planering kan Planeringsoptimering generera planerade order som baseras på planeringsprioritet istället för behovsdatum.
 
 Med prioriterad planering kan du prioritera lagerpåfyllnadsorder för att säkerställa att brådskande efterfrågan prioriteras över mindre viktig efterfrågan. En lagerpåfyllnadsorder prioriteras till exempel över en standardpåfyllnadsorder. Systemet kan automatiskt dela större order i separata mindre order där orderrader grupperas efter prioritet. Därefter kan alla order med hög prioritet bearbetas först.
 
@@ -33,7 +33,7 @@ En snabb överblick över funktionen finns i följande video: [Planering av opti
 Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 
 - **Modul:** *huvudplanering*
-- **Funktionsnamn:** *Prioritetsstyrt MRP-stöd för planeringsoptimering*
+- **Funktionsnamn:** *Prioritetsstyrt MRP-stöd för Planeringsoptimering*
 
 ## <a name="where-and-how-planning-priorities-are-assigned"></a>Var och hur planeringsprioriteringar tilldelas
 
@@ -41,10 +41,10 @@ Innan du kan använda den här funktionen den aktiveras i ditt system. Administr
 
 Planeringsprioritet är vanligtvis ett värde mellan 0 (noll) och 100, där 0 har högst betydelse. Detta värde visas och anges i fältet **Planeringsprioritet**. Fältet finns på följande sidor: **Rader för efterfrågeprognos**, **Information om försäljningsorder**, **Information om inköpsorder**, **Information om överförignsorder** samt **Information om planerad order**.
 
-När fältet **Disponeringskod** för relevant artikel eller disponeringsgrupp angetts som *Prioritet* kommer planeringsoptimeringen att balansera tillgång och efterfrågan med hjälp av en behovsdriven metod när den beräknar planeringsprioriteten, samt – för respektive frisläppt produkt – beakta värdena som angetts för fälten **Minimum**, **Punkt för ombeställning** och **Maximum** på sidan **Artikeldisponering**.
+När fältet **Disponeringskod** för relevant artikel eller disponeringsgrupp angetts som *Prioritet* kommer Planeringsoptimeringen att balansera tillgång och efterfrågan med hjälp av en behovsdriven metod när den beräknar planeringsprioriteten, samt – för respektive frisläppt produkt – beakta värdena som angetts för fälten **Minimum**, **Punkt för ombeställning** och **Maximum** på sidan **Artikeldisponering**.
 
 > [!NOTE]
-> Värdet *Prioritet* är endast tillgängligt för fältet **Disponeringskod** när planeringsoptimering har aktiverats.
+> Värdet *Prioritet* är endast tillgängligt för fältet **Disponeringskod** när Planeringsoptimering har aktiverats.
 
 De relaterade *modellerna för planeringsprioritet* styr planeringsprioritet och delar upp planerade order efter prioritetsintervall. De låter dig även ange standardvärden för planeringsprioritet för varje enskild tillgångs- eller efterfrågetyp, samt definiera prioritetsberäkningsmetod.
 
@@ -118,7 +118,7 @@ Ställ in fältet **Disponeringskod** på *Prioritet* om du vill göra fältet *
 
 Kvantiteten för beställningspunkt beräknas ofta som efterfrågan under ledtiden plus ett minimivärde (säkerhetslager). Detta måste vara ett värde mellan värden för **Minimum** och **Maximum**.
 
-Du kan till exempel ställa in fälten på följande sätt:
+Du kan till exempel konfigurera fälten på följande sätt:
 
 - **Minimum:** *10*
 - **Beställningspunkt:** *45*

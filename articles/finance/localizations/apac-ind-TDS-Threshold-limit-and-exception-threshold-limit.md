@@ -1,6 +1,6 @@
 ---
 title: Tröskelvärde och tröskelvärde för undantag
-description: I det här avsnittet beskrivs tröskelvärden och undantagsgränser för skatteavdrag vid källa (TDS).
+description: I den här artikeln beskrivs tröskelvärden och undantagsgränser för skatteavdrag vid källa (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7fa7d871fdf25f29b003a68cacd9fc0d487dce5b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: aceebad08b5454b64059e7ef374b9634bad35c37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726028"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877948"
 ---
 # <a name="threshold-limit-and-exception-threshold-limit"></a>Tröskelvärde och tröskelvärde för undantag
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs tröskelvärden och undantagsgränser för skatteavdrag vid källa (TDS). TDS för fakturor och betalningar beräknas alltid med hänsyn till det tröskelvärde och den undantagströskel som definierats för TDS-skattekomponenterna på sidan **Källskattekomponenter**. TDS-skattekomponenterna kopplas till TDS-skattekoder, som är inkluderade i TDS-skattegrupperna. TDS-skattegrupperna kopplas till leverantörer och kunder för beräkning av TDS på fakturanivå eller betalningsnivå.
+I den här artikeln beskrivs tröskelvärden och undantagsgränser för skatteavdrag vid källa (TDS). TDS för fakturor och betalningar beräknas alltid med hänsyn till det tröskelvärde och den undantagströskel som definierats för TDS-skattekomponenterna på sidan **Källskattekomponenter**. TDS-skattekomponenterna kopplas till TDS-skattekoder, som är inkluderade i TDS-skattegrupperna. TDS-skattegrupperna kopplas till leverantörer och kunder för beräkning av TDS på fakturanivå eller betalningsnivå.
 
 TDS beräknas om beloppet för en transaktion eller de ackumulerade transaktioner som bokförts med en specifik TDS-grupp för en leverantör överskrider den tröskelgräns som anges på sidan **Källskattekomponenter**. TDS beräknas inte förrän det ackumulerade transaktionsbeloppet överskrider den angivna tröskelgränsen.
 

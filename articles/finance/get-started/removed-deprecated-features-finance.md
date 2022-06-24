@@ -1,6 +1,6 @@
 ---
-title: Borttagna och utfasade funktioner i Dynamics 365 Finance
-description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 Finance.
+title: Borttagna eller inaktuella funktioner i Dynamics 365 Finance
+description: I den här artikeln beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 Finance.
 author: kfend
 ms.date: 03/21/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6df84e5c2d530e708560495bceaeb23e2ee0dd4b
-ms.sourcegitcommit: acac5e59be7c8f4e9a7ae9be58c636c70342e784
+ms.openlocfilehash: 0278b57ccfa2da9dba6b5ea77821fdc47ad2d078
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8466846"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846666"
 ---
-# <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Borttagna och utfasade funktioner i Dynamics 365 Finance
+# <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Borttagna eller inaktuella funktioner i Dynamics 365 Finance
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 Finance.
+I den här artikeln beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 Finance.
 
 - En *borttagen* funktion är inte längre tillgänglig i produkten.
 - En *borttagen* funktion är inte i aktiv utveckling och kan tas bort i en kommande uppdatering.

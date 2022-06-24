@@ -1,6 +1,6 @@
 ---
 title: Synkronisera huvuden och rader i försäljningsfakturor direkt från Supply Chain Management till Sales
-description: I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningsfakturahuvud och rader direkt från Dynamics 365 Supply Chain Management till Dynamics 365 Sales.
+description: I denna artikel diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera sidhuvud och rader för försäljningsfaktura direkt från Dynamics 365 Supply Chain Management till Dynamics 365 Sales.
 author: Henrikan
 ms.date: 10/26/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c2f988b4f170c027444ba7cf54a55e0bd846cedf
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: de4bdd07127b65321540543040192eb7811850da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571651"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862552"
 ---
-# <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synkronisera huvuden och rader i försäljningsfakturor direkt från Finance and Operations till Sales
+# <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synkronisera huvuden och rader i försäljningsfakturor direkt från Ekonomi och drift till Sales
 
 [!include [banner](../includes/banner.md)]
 
-I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningsfakturahuvud och rader direkt från Dynamics 365 Supply Chain Management till Dynamics 365 Sales.
+I denna artikel diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera sidhuvud och rader för försäljningsfaktura direkt från Dynamics 365 Supply Chain Management till Dynamics 365 Sales.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflöden i Potentiell kund till kontanter
 
@@ -124,7 +124,7 @@ I följande illustrationer visas ett exempel på en mallmappning i dataintegreri
 
 
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Potentiell kund till pengar](prospect-to-cash.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 069ada071fe6a7d3e22ad6aa45e3c2f06a9f4b31
-ms.sourcegitcommit: 5a4b8ce4a7ae82c0ef22d2223c11c6b55f048cdd
+ms.openlocfilehash: 93d25a260cfc94e898ef50c618b2cbc640c963bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "8756975"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876337"
 ---
 # <a name="create-a-customer-invoice"></a>Skapa en kundfaktura
 
@@ -33,11 +33,8 @@ En **fritextfaktura** har inget samband med en försäljningsorder. Den innehål
 Mer information finns i:
 
 [Skapa fritextfakturor](../accounts-receivable/create-free-text-invoice-new.md)
-
-[Skapa en mall för fritextfaktura](../accounts-receivable/create-free-text-invoice-template-new.md)
-
-[Tilldela en fritextfakturamall till en kund](tasks/assign-free-text-invoice-template-customer.md)
-
+[Skapa en fritextfakturamall](../accounts-receivable/create-free-text-invoice-template-new.md)
+[Tilldela fritextfakturamall till en kund](tasks/assign-free-text-invoice-template-customer.md)
 [Generera och bokför återkommande fritextfakturor](tasks/post-recurring-free-text-invoices.md)
 
 
@@ -91,8 +88,8 @@ Du kan konfigurera uppdelningen av försäljningsorderkundfakturor efter webbpla
  - Välj **Dela upp baserat på fakturaplats** för att skapa en faktura per plats vid bokföring. 
  - Välj **Dela upp baserat på fakturaleveransinformation** för att skapa en faktura per försäljningsorderraders leveransadress vid bokföring. 
 
-## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Bokför på intäktskontot för försäljningsorderrader utan pris
-Du kan uppdatera **intäktskontot** i **redovisningen** för försäljningsorderrader som saknar pris. Om du vill ställa in eller visa denna information går du till parametern **Bokför på intäktskontot för försäljningsorderfakturarader med nollpris** på fliken **Redovisning och moms** på sidan **Parametrar för kundreskontra**. (**Kundreskontra > Inställningar > Parametrar för kundreskontra**). Välj **Ja** om du vill uppdatera **intäktskontot** för försäljningsorderfakturarader som saknar pris. Ett intäktskonto definieras på parametersidan **lagerbokföring**, på fliken kontodefinitionsfliken **Försäljningsorder**. Om detta alternativ inte markeras kommer rader som inte har prisinformation inte att bokföras på **intäktskontot**.
+## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Bokför på intäktskontot för försäljningsorderrader utan pris och kostnad
+Du kan uppdatera **intäktskontot** i **redovisningen** för försäljningsorderrader som saknar pris och kostnad. Om du vill ställa in eller visa denna information går du till parametern **Bokför på intäktskontot för försäljningsorderfakturarader med nollpris och nollkostnad** på fliken **Redovisning och moms** på sidan **Parametrar för kundreskontra**. (**Kundreskontra > Inställningar > Parametrar för kundreskontra**). Välj **Ja** om du vill uppdatera **intäktskontot** för försäljningsorderfakturarader som saknar pris och kostnad. Om det här alternativet är valt kommer verifikationen att innehålla 0,00 poster för bokföringstyperna **Kundsaldo** och **Intäkt**. Ett intäktskonto definieras på parametersidan **lagerbokföring**, på fliken kontodefinitionsfliken **Försäljningsorder**. Om detta alternativ inte markeras kommer rader som inte har pris- eller kostnadsinformation inte att bokföras på **intäktskontot**. Istället kommer verifikationen att innehålla en 0,00-post för bokföringstypen **Kundsaldo**.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Ytterligare inställningar som ändrar bokföringsbeteendet
 Följande fält ändrar beteendet för bokföringsprocessen.

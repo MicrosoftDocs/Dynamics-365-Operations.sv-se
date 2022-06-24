@@ -1,6 +1,6 @@
 ---
 title: Uppgiftshantering i kassan
-description: I det här avsnittet beskrivs uppgiftshantering i Microsoft Dynamics 365 Commerce kassaprogram (POS).
+description: I denna artikel beskrivs uppgiftshantering i Microsoft Dynamics 365 Commerce-kassaprogrammet (POS).
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: article
@@ -13,31 +13,31 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 3fb7d584b634b0a1e43ef6a02a9edcadc0927b36bd2a814fdfe947fb0e2e1917
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e61456b7ae79a2c82c96b5b669e95ad1818f71d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772116"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878441"
 ---
 # <a name="task-management-in-pos"></a>Uppgiftshantering i kassan
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs uppgiftshantering i Microsoft Dynamics 365 Commerce kassaprogram (POS).
+I denna artikel beskrivs uppgiftshantering i Microsoft Dynamics 365 Commerce-kassaprogrammet (POS).
 
 Dynamics 365 Commerce kassaprogrammet har funktioner för uppgiftshantering som tillåter att butikschefer och medarbetare hantera uppgifter och uppdaterar uppgiftsstatus. Butiksarbetare har tillgång till uppgifter antingen genom att välja panelen **Uppgifter** på startsidan för POS eller genom att välja uppgiftsmeddelanden. Butiksarbetare hämtas som standard till fliken **mina uppgifter** där de kan visa de uppgifter som de har tilldelats. De kan dock enkelt växla till flikarna **Förfallna uppgifter**, **Öppna uppgifter** och **Uppgiftslistor**.
 
 ## <a name="task-operations-for-store-managers"></a>Uppgiftsfunktioner för butikschefer
 
-Butikschefer kan utföra följande uppgiftsoperationer i kassaprogrammet med hjälp av knapparna i kommandofältet:
+Butikschefer kan utföra följande uppgiftsåtgärder i kassaprogrammet med hjälp av knapparna i kommandofältet:
 
 - **Tilldela** – tilldela de markerade uppgifterna till en butiksarbetare.
 - **Uppgiftsstatus** – ändra status för markerade uppgifter.
 - **Filter** – som standard visas endast aktiva uppgifter. Med hjälp av filter kan chefer emellertid visa alla uppgifter, även uppgifter som har slutförts eller avbrutits.
 - **Ny uppgift** – skapa en uppgift under en befintlig uppgiftslista eller skapa en uppgift i ett enda syfte.
 
-Butiksarbetare kan utföra följande uppgiftsoperationer i kassaprogrammet med hjälp av knapparna i kommandofältet:
+Butiksarbetare kan utföra följande uppgiftsåtgärder i kassaprogrammet med hjälp av knapparna i kommandofältet:
 
 - **Uppgiftsstatus** – ändra status för markerade uppgifter.
 - **Filter** – som standard visas endast aktiva uppgifter. Med hjälp av filter kan medarbetare emellertid visa alla uppgifter, även uppgifter som har slutförts eller avbrutits.

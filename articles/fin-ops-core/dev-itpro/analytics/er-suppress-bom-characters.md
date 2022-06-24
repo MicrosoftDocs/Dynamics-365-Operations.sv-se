@@ -1,6 +1,6 @@
 ---
 title: Designa ER-konfigurationer för att ignorera strukturlistetecken i genererade filer
-description: I det här avsnittet beskrivs hur du konfigurerar ett ER-format (elektronisk rapportering) för att generera rapporter som ignorerar byteordningsmärke.
+description: I den här artikeln beskrivs hur du konfigurerar ett ER-format (elektronisk rapportering) för att generera rapporter som ignorerar byteordningsmärke.
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b9265578deaff4100eb5987eb6090eaa12876044
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: d54ed105e4ff44ac2c48e2d1a4b8e12fbf6f9591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323803"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847471"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Designa ER-konfigurationer för att ignorera strukturlistetecken i genererade filer
 

@@ -1,6 +1,6 @@
 ---
 title: Elimineringsregler
-description: Det här avsnittet innehåller information om elimineringsregler och de olika alternativen för rapportering om elimineringar.
+description: Den här artikeln innehåller information om elimineringsregler och de olika alternativen för rapportering om elimineringar.
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e062e7541871d77803cbed475d715621b19537f1
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3eb3ea117959dbc51eb5666aad60299210ff3ac5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722645"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864322"
 ---
 # <a name="elimination-rules"></a>Elimineringsregler
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller information om elimineringsregler och de olika alternativen för rapportering om elimineringar.
+Den här artikeln innehåller information om elimineringsregler och de olika alternativen för rapportering om elimineringar.
 
 Elimineringstransaktioner behövs när en överordnad juridisk person gör affärer med en eller flera underordnade juridiska personer och använder konsoliderad ekonomisk rapportering. Konsoliderade bokslut måste innehålla transaktioner som uppstår mellan den konsoliderade organisationen och andra enheter utanför den organisation. Därför måste transaktioner mellan juridiska personer som ingår i samma organisation tas bort eller elimineras från redovisningen så att de inte visas i ekonomiska rapporter. Det finns flera sätt att rapportera om elimineringar:
 
@@ -34,7 +34,7 @@ Elimineringstransaktioner behövs när en överordnad juridisk person gör affä
 -   Den ekonomiska rapporteringen kan användas för att visa elimineringskontona och dimensionerna i en specifik rad eller kolumn.
 -   En separat juridisk person kan användas till att bokföra manuella transaktionsposter för att spåra elimineringar.
 
-Det här avsnittet beskriver elimineringsregler som bearbetas i ett konsolidering- eller elimineringsföretag. Du ställer in elimineringsregler när du vill skapa elimineringstransaktioner i en juridisk person som anges som destination för elimineringar. Den juridiska personen på destinationen kallas för eliminerande juridisk person. Elimineringsjournaler kan skapas antingen under konsolideringen eller med hjälp av ett elimineringsjournalförslag. Innan du ställer in elimineringsregler bör du känna till följande termer:
+Den här artikeln beskriver elimineringsregler som bearbetas i ett konsolidering- eller elimineringsföretag. Du ställer in elimineringsregler när du vill skapa elimineringstransaktioner i en juridisk person som anges som destination för elimineringar. Den juridiska personen på destinationen kallas för eliminerande juridisk person. Elimineringsjournaler kan skapas antingen under konsolideringen eller med hjälp av ett elimineringsjournalförslag. Innan du ställer in elimineringsregler bör du känna till följande termer:
 
 -   **Juridisk person, källa** – Den juridiska person där beloppen som elimineras bokfördes.
 -   **Destinationens juridiska person** – Den juridiska personen där elimineringsreglerna registreras.

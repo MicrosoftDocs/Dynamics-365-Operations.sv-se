@@ -1,6 +1,6 @@
 ---
-title: Utläggshantering Power BI - innehåll
-description: Det här avsnittet beskriver vad som ingår i Power BI-innehållspaketet för utläggshantering.
+title: Utgiftshantering Power BI-innehåll
+description: Den här artikeln beskriver vad som ingår i Power BI-innehållspaketet för utläggshantering.
 author: panolte
 ms.date: 03/18/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 178a65c44abd0c9c068d4da1f2684a60062da595247560de4cb81d97ab7b6521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 78ae444c1c9803ed3708d71da7a359667df0252f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769908"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878325"
 ---
-# <a name="expense-management-power-bi-content"></a>Utläggshantering Power BI - innehåll
+# <a name="expense-management-power-bi-content"></a>Utgiftshantering Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vad som ingår i Power BI-innehållet för utläggshantering. 
+Den här artikeln beskriver vad som ingår i Power BI-innehållet för utläggshantering. 
 
 ## <a name="overview"></a>Översikt
 Två Power BI-innehållspaket är tillgängliga för användning med utgiftshantering i version 8.1 eller senare. 

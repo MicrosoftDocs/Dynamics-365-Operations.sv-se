@@ -1,6 +1,6 @@
 ---
 title: Parametrar för datum och tid som används i Planeringsoptimering
-description: Det här ämnet innehåller information om de datum- och tidsparametrar som planeringsoptimering använder under operationen.
+description: Denna artikel innehåller information om de datum- och tidsparametrar som Planeringsoptimering använder under åtgärden.
 author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
@@ -10,24 +10,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 0708404f286253449e0400fc65680e903f6d1e9b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 807834bf5cd062ed24e5e3f3512d8389717a2d39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468844"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885911"
 ---
 # <a name="date-and-time-parameters-used-by-planning-optimization"></a>Parametrar för datum och tid som används i Planeringsoptimering
 
 [!include [banner](../../includes/banner.md)]
 
-Det här ämnet innehåller information om de datum- och tidsparametrar som planeringsoptimering använder under operationen.
+Denna artikel innehåller information om de datum- och tidsparametrar som Planeringsoptimering använder under åtgärden.
 
 Medan den inbyggda huvudplaneringsmotorn använder transaktionsdatum i alla beräkningar fungerar Planeringsoptimering med datum- och tidsvärden som konverteras till datum. Den här skillnaden i beteende kan leda till situationer där prognostransaktioner som skapas vid midnatt den dagen när huvudplaneringen körs inte inkluderas eftersom Planeringsoptimering tar hänsyn till att de har skapats före aktuellt datum.
 
 ## <a name="parameters-for-issue-and-demand-transactions"></a>Parametrar för ut- och efterfrågetransaktioner
 
-I följande tabell visas de parametrar som planeringsoptimering använder när ut- och efterfrågetransaktioner bearbetas.
+I följande tabell visas de parametrar som Planeringsoptimering använder när ut- och efterfrågetransaktioner bearbetas.
 
 | Parameter | Parameternamn i Planeringsoptimering | Beskrivning | Motsvarande fält i Microsoft Dynamics 365 Supply Chain Management (i registret ReqTrans) |
 |---|---|---|---|
@@ -38,7 +38,7 @@ I följande tabell visas de parametrar som planeringsoptimering använder när u
 
 ## <a name="parameters-for-receipt-and-supply-transactions"></a>Parametrar för inleverans- och leveranstransaktioner
 
-I följande tabell visas de parametrar som planeringsoptimering använder när inleverans- och leveranstransaktioner bearbetas.
+I följande tabell visas de parametrar som Planeringsoptimering använder när inleverans- och leveranstransaktioner bearbetas.
 
 | Parameter | Parameternamn i Planeringsoptimering | Beskrivning | Motsvarande fält i Supply Chain Management (i registret ReqTrans eller ReqPO) |
 |---|---|---|---|
@@ -53,7 +53,7 @@ I följande tabell visas de parametrar som planeringsoptimering använder när i
 
 ## <a name="examples-of-date-parameter-use-by-planning-optimization"></a>Exempel på användning av datumparameter av Planeringsoptimering
 
-Planerna i följande illustrationer finns på dagnivå, men planeringsoptimering körs på en mer detaljerad nivå. Eftersom marginalerna till exempel kan vara i timmar kan planeringsordertiden vara den 22 januari 2021, klockan 11:35 och så vidare.
+Planerna i följande illustrationer finns på dagnivå, men Planeringsoptimering körs på en mer detaljerad nivå. Eftersom marginalerna till exempel kan vara i timmar kan planeringsordertiden vara den 22 januari 2021, klockan 11:35 och så vidare.
 
 ### <a name="example-1-simple-scenario"></a>Exempel 1: Enkelt scenario
 

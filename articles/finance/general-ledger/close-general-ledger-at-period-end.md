@@ -1,6 +1,6 @@
 ---
 title: Stäng redovisningen vid periodslutet
-description: Det här avsnittet beskriver de uppgifter som normalt slutförs vid en periodstängning av redovisningen.
+description: Den här artikeln beskriver de uppgifter som normalt slutförs vid en periodstängning av redovisningen.
 author: aprilolson
 ms.date: 08/01/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 359e177e4ac2218c28ddd7c5ac3b71ee69e652e8
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 42a5df1cd1a73462c93012b26f9b9b5c1631f2ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717542"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878053"
 ---
 # <a name="close-the-general-ledger-at-period-end"></a>Stäng redovisningen vid periodslutet
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver de uppgifter som normalt slutförs vid en periodstängning av redovisningen. 
+Den här artikeln beskriver de uppgifter som normalt slutförs vid en periodstängning av redovisningen. 
 
 I redovisningen kan du slutföra stängningsprocedurerna för en period eller ett år. Stängningsprocesser förbereder systemet för en ny period. För att förbereda för ett nytt år måste du köra processen för årsslutet. Varje organisation har olika processer och steg som utförs i samband med ett periodslut. Här följer några valfria steg för periodslut:
 

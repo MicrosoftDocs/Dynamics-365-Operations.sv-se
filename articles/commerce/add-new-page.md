@@ -1,6 +1,6 @@
 ---
 title: Lägga till en ny webbplatssida
-description: I det här avsnittet beskrivs hur du lägger till en ny webbplatssida i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du lägger till en ny webbplatssida i Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e0c2a73ae9e85cb299e7cb6fc70562659cdfadc5
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 76fc3f52746943d5cbf1cb31e677344a1d14bee3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090729"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871738"
 ---
 # <a name="add-a-new-site-page"></a>Lägga till en ny webbplatssida
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du lägger till en ny webbplatssida i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du lägger till en ny webbplatssida i Microsoft Dynamics 365 Commerce.
 
 När du har skapat mallar och fragment för din webbplats, är nästa steg att börja skapa sidor som använder dem. Du måste välja en mall eller layout, ett sidnamn och en sidadress för att komma igång.
 
@@ -46,7 +46,7 @@ Du kan välja att ange en URL för den nya sidan. När du skapar en sida kan du 
 
 ## <a name="add-a-new-page"></a>Lägga till en ny sida
 
-Gör så här om du vill lägga till en ny webbplatssida till din webbplats:
+Gör så här om du vill lägga till en ny webbplatssida på din webbplats:
 
 1. Under **Webbplatser**, välj **Fabrikam** (eller namnet på webbplatsen).
 1. Välj **Ny sida**.

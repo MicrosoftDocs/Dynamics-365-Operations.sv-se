@@ -1,6 +1,6 @@
 ---
 title: Ställa in parametervärden för kostnadsredovisning
-description: När du ställer in modulen för hemtagningskostnad kan du definiera flera uppsättningar med gemensamma värden som blir tillgängliga när du väljer specifika typer av kostnadsparametervärden i andra delar av programmet. Det här avsnittet beskriver hur du ställer in dessa uppsättningar med värden.
+description: När du konfigurerar modulen för hemtagningskostnad kan du definiera flera uppsättningar med gemensamma värden som blir tillgängliga när du väljer specifika typer av kostnadsparametervärden i andra delar av programmet. Denna artikel beskriver hur du konfigurerar dessa uppsättningar med värden.
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ed20181201a2f3f84c3dc08549f4f107d46a50a2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ca3633cd8a3fb053bda597b968003685aa2326ef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689759"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852343"
 ---
 # <a name="costing-parameter-values-setup"></a>Ställa in parametervärden för kostnadsredovisning
 
 [!include [banner](../../includes/banner.md)]
 
-När du ställer in modulen **Hemtagningskostnad** kan du definiera flera uppsättningar med gemensamma värden och relaterade inställningar per värde. Dessa värden kommer sedan att vara tillgängliga när du väljer specifika typer av kostnadsparametervärden i andra delar av programmet. Det här avsnittet beskriver hur du ställer in dessa uppsättningar med värden.
+När du konfigurerar modulen **Hemtagningskostnad** kan du definiera flera uppsättningar med gemensamma värden och relaterade inställningar per värde. Dessa värden kommer sedan att vara tillgängliga när du väljer specifika typer av kostnadsparametervärden i andra delar av programmet. Denna artikel beskriver hur du konfigurerar dessa uppsättningar med värden.
 
 ## <a name="set-up-cost-type-codes"></a>Ställa in kostnadstypkoder
 
@@ -33,7 +33,7 @@ Kostnadstypkoder avgör vilken typ av kostnad som uppstår när varorna landar p
 > [!NOTE]
 > Om kostnadstypsregistret delas av juridiska personer måste kontoplanen också delas mellan juridiska personer. Annars fungerar inte bokföringstransaktionerna korrekt.
 
-Du ställer in dina kostnadstypkoder genom att gå till **Hemtagningskostnad \> Inställning av kostnadsredovisning \> Kostnadstypkoder**. Med knapparna i åtgärdsfönstret kan du skapa nya kostnadstypkoder, redigera befintliga koder eller ta bort en vald kostnadstyp.
+Du konfigurerar dina kostnadstypkoder genom att gå till **Hemtagningskostnad \> Inställning av kostnadsredovisning \> Kostnadstypkoder**. Med knapparna i åtgärdsfönstret kan du skapa nya kostnadstypkoder, redigera befintliga koder eller ta bort en vald kostnadstyp.
 
 Följande register beskriver de fält som är tillgängliga för varje kostnadstypkod.
 
@@ -126,7 +126,7 @@ Volymdelare används för att beräkna volymvikten. Varje leverans-/fraktföreta
 
 Ett paket som skickas med flyg har till exempel en volym på 3 m³. Företagets avgifter per volymvikt och tillämpar en volymdelare på 6. Denna delare divideras med volymen för att bestämma volymvikten. Därför är volymvikten för det här exemplet 3 ÷ 6 = 0,5 kilo (kg).
 
-För att ställa in volymdelare, gå till **Hemtagningskostnad \> Inställning av kostnadsredovisning \> Volymdelare**. Sidan **Volymdelare** tillhandahåller ett rutnät som listar alla befintliga volymdelare. Du kan använda knapparna i åtgärdsfönstret för att lägga till, ta bort och redigera rader i rutnätet.
+För att konfigurera volymdelare, gå till **Hemtagningskostnad \> Inställning av kostnadsredovisning \> Volymdelare**. Sidan **Volymdelare** tillhandahåller ett rutnät som listar alla befintliga volymdelare. Du kan använda knapparna i åtgärdsfönstret för att lägga till, ta bort och redigera rader i rutnätet.
 
 Följande register beskriver de fält som är tillgängliga för varje rad i rutnätet.
 

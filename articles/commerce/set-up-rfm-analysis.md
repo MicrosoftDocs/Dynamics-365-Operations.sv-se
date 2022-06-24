@@ -1,6 +1,6 @@
 ---
 title: Ställ in aktualitets-, frekvens- och monetär (RFM) analys
-description: Det här avsnittet innehåller information om hur du ställer in recency, frekvens och monetär analys (RFM) för dina kunder.
+description: Denna artikel innehåller information om hur du konfigurerar "recency", frekvens och monetär analys (RFM) för dina kunder.
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d058401541d37dac55d0a500835ce9c357468656e467951f789207452f798d94
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 153759ac6b70235b79c080e934819536c2861371
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765234"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850181"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Ställ in aktualitets-, frekvens- och monetär (RFM) analys
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller information om hur du ställer in recency, frekvens och monetär analys (RFM) för dina kunder.
+Denna artikel innehåller information om hur du konfigurerar "recency", frekvens och monetär analys (RFM) för dina kunder.
 
 Aktualitet, frekvens och monetär (RFM) analys är ett marknadsföringsverktyg som din organisation kan använda för att utvärdera de data som skapas av kundens inköp. När du har ställt in RFM-analys tilldelas kunderna en beräknad RFM-poäng när de gör inköp. RFM-poängen kan vara en tresiffrig klassificering eller ett aggregerat tal, beroende på hur din organisation har konfigurerat RFM-analysen. Så här fungerar värderingen om organisationen använder en tresiffrig klassificering för poängresultat:
 

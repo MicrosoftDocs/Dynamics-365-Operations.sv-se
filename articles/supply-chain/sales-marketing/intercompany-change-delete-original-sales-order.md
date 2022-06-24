@@ -1,6 +1,6 @@
 ---
 title: Ändra eller ta bort en ursprunglig koncernintern försäljningsorder
-description: I det här avsnittet beskrivs hur du ändrar och tar bort en ursprunglig försäljningsorderfunktion.
+description: I denna artikel beskrivs hur du ändrar och tar bort en ursprunglig försäljningsorderfunktion
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cfacd1710aa5812230395409f1dd7c2e882faa9f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6ff7eeb00fec7c1b9fa1dc08fa231669f728ed3c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673758"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859089"
 ---
 # <a name="change-or-delete-an-original-intercompany-sales-order"></a>Ändra eller ta bort en ursprunglig koncernintern försäljningsorder
 
@@ -29,7 +29,7 @@ När du ändrar en försäljningsorder synkroniseras ändringarna automatiskt me
 
 I tabellen nedan sammanfattas de ändringar du kan göra och de förväntade resultaten.
 
-| Operation | Resultat |
+| Åtgärd | Resultat |
 |---|---|
 | Radera&nbsp;en&nbsp;ursprunglig&nbsp;försäljningsorder&nbsp;. | Den relaterade koncerninterna inköpsordern och den koncerninterna försäljningsordern raderas också. Om orderns status är **Plocklista** eller senare i processen går det inte att radera försäljningsordern. |
 | Radera en ursprunglig försäljningsorderrad. | Den relaterade koncerninterna inköpsorderraden och den koncerninterna försäljningsorderraden raderas också. Om orderns status är **Plocklista** eller senare i processen går det inte att radera försäljningsorderraden. |

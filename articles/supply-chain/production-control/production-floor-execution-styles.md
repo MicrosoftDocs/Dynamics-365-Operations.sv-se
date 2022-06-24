@@ -1,6 +1,6 @@
 ---
 title: Välj stil på körningsgränssnittet för produktionsgolvet
-description: I det här avsnittet beskrivs hur du konfigurerar formulärkontroller så att standardformaten för tillverkningsstyrning används på dem.
+description: I denna artikel beskrivs hur du konfigurerar formulärkontroller så att standardformaten för tillverkningsstyrning används på dem.
 author: johanhoffmann
 ms.date: 11/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ef39dc6414f0afdadd4a4b5a41e1fb1fe60e4974
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: ad6ecd591353fe8ddc1a5b9049d65491fb58e98a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790900"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859152"
 ---
 # <a name="style-the-production-floor-execution-interface"></a>Välj stil på körningsgränssnittet för produktionsgolvet
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du konfigurerar formulärkontroller så att standardformaten för tillverkningsstyrning används på dem.
+I denna artikel beskrivs hur du konfigurerar formulärkontroller så att standardformaten för tillverkningsstyrning används på dem.
 
 ## <a name="forms-and-dialogs"></a>Formulär och dialogrutor
 
@@ -31,7 +31,7 @@ Format kan endast användas i ett formulär eller en dialogruta om följande kra
 - Om formuläret ska se ut som det befintliga rapportförloppsformuläret måste namnet på formuläret eller dialogrutan börja med `JmgProductionFloorExecutionCustomInputDialog`.
 - Formuläret eller dialogrutan kan innehålla en detaljformulärdel. Om du vill tillämpa utföranden på det måste namnet på detaljformulärdelen börja med `JmgProductionFloorExecutionCustomDetailsDialog`.
 - Om formuläret eller dialogrutan ska ha en enkel vy måste namnet på den enkla vyn börja med `JmgProductionFloorExecutionCustomDialog`. Exempel på formulär som har en enkel vy inkluderar startformuläret och det indirekta aktivitetsformuläret.
-- Alla kontroller i dialogrutan måste konfigureras enligt beskrivningen i det här ämnet.
+- Alla kontroller i dialogrutan måste konfigureras enligt beskrivningen i denna artikel.
 
 > [!IMPORTANT]
 > Funktionerna som nämns i de första två poängerna i den här listan kräver version 10.0.19 av Supply Chain Management eller senare.

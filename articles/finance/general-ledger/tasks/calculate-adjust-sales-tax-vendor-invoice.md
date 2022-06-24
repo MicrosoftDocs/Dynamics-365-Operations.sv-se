@@ -1,6 +1,6 @@
 ---
 title: Beräkna och justera moms på en leverantörsfaktura
-description: I det här avsnittet beskriver hur du justerar momsen på en leverantörsfaktura Dynamics 365 Finance.
+description: I den här artikeln beskriver hur du justerar momsen på en leverantörsfaktura Dynamics 365 Finance.
 author: twheeloc
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d4d6a23f6f58906730c5ce00c5fe06885aaa6da
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 9a1093631688351d065d6b55bc65055b6f92d256
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734701"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868385"
 ---
 # <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a>Beräkna och justera moms på en leverantörsfaktura
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskriver hur du justerar momsen på en leverantörsfaktura. Om det ursprungliga källdokumentet visar andra momsbelopp än dem som beräknas kan du justera dessa belopp, innan du bokför dem. I den här uppgiften används demonstrationsföretaget DEMF.
+I den här artikeln beskriver hur du justerar momsen på en leverantörsfaktura. Om det ursprungliga källdokumentet visar andra momsbelopp än dem som beräknas kan du justera dessa belopp, innan du bokför dem. I den här uppgiften används demonstrationsföretaget DEMF.
 
 1. Gå till **Leverantörsreskontra > Fakturor > Fakturajournal**.
 2. Välj **Ny**.

@@ -1,6 +1,6 @@
 ---
 title: Skapa en fritextfaktura
-description: Det här avsnittet innehåller information om hur du skapar fritextfakturor.
+description: Den här artikeln innehåller information om hur du skapar fritextfakturor.
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 6e9578d9b2d61f241ab5e92fc9740b88b80969f6
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 87dc6334baa83ace23b77d94da4d1e464cb0b574
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392895"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878172"
 ---
 # <a name="create-a-free-text-invoice"></a>Skapa en fritextfaktura
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller information om hur du skapar fritextfakturor. För den här proceduren använder du demonstrationsföretaget **USMF**.
+Den här artikeln innehåller information om hur du skapar fritextfakturor. För den här proceduren använder du demonstrationsföretaget **USMF**.
 
 ## <a name="create-a-free-text-invoice"></a>Skapa en fritextfaktura
 
@@ -37,7 +37,7 @@ Det här avsnittet innehåller information om hur du skapar fritextfakturor. Fö
     * Om du använder SEPA-debitering (Single Euro Payments Area) fylls autogiromedgivandet i automatiskt när du väljer kundkontot.
 
 4. I fältet **Beskrivning** anger du ett värde.
-5. I fältet **Huvudkonto** anger du ett kontonummer utan dimensioner. Du anger dimensioner längre fram i det här avsnittet.
+5. I fältet **Huvudkonto** anger du ett kontonummer utan dimensioner. Du anger dimensioner längre fram i den här artikeln.
 
     Du kan även ange ett eller flera tecken för huvudkontot och använda sökning för att hitta kontot.
 

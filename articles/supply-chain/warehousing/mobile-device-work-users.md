@@ -1,6 +1,6 @@
 ---
 title: Användarkonton för mobil enhet
-description: I det här avsnittet beskrivs hur du ställer in och hanterar användarkonton där arbetare kan logga in och använda programmet Lagerställe.
+description: I denna artikel beskrivs hur du konfigurerar och hanterar användarkonton där arbetare kan logga in och använda programmet Lagerställe.
 author: Mirzaab
 ms.date: 09/15/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c4cb36160e692cc12140b57037d2c9739f7b2ebd
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: ffb4a9842f454094b41a1765d1438f6a40ae610b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462682"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851316"
 ---
 # <a name="mobile-device-user-accounts"></a>Användarkonton för mobil enhet
 
@@ -26,15 +26,15 @@ Varje gång en arbetare börjar använda lagerställeappen måste han eller hon 
 
 ## <a name="set-up-the-required-worker-and-employee-records"></a>Ställa in de arbets- och medarbetarposter som krävs
 
-Innan du kan ställa in användare av lagerställe-program måste varje arbetare redan finnas som en medarbetare eller anställd i Supply Chain Management i modulen **Personal**.
+Innan du kan konfigurera användare av lagerställe-program måste varje arbetare redan finnas som en medarbetare eller anställd i Supply Chain Management i modulen **Personal**.
 
 ## <a name="set-up-mobile-device-user-accounts"></a><a name="set-wma-users"></a>Ställ in användarkonton för mobil enhet
 
-När de anställda och medarbetarna har ställts in i Personal kan du tilldela appanvändare för lagerställen till var och en av dem och ställa in andra alternativ som påverkar hur de kan använda programmet.
+När de anställda och medarbetarna har ställts in i Personal kan du tilldela appanvändare för lagerställen till var och en av dem och konfigurera andra alternativ som påverkar hur de kan använda programmet.
 
 1. Gå till **Warehouse management \> Inställningar \> Arbetare**.
 1. Om du vill redigera en befintlig arbetare markerar du den i listfönstret. För att lägga till en ny post, välj **Ny** i åtgärdsfönstret.
-1. Om du ställer in en ny arbetare gör du så här:
+1. Om du konfigurerar en ny arbetare gör du så här:
 
     1. I fältet **Arbetare** väljer du målanvändaren i listan med medarbetare.
     1. Välj **Välj**.
@@ -56,7 +56,7 @@ När de anställda och medarbetarna har ställts in i Personal kan du tilldela a
     - **Användar-ID** – Ange ett unikt ID.
     - **Användarnamn** – Ange ett namn på ID.
     - **Standardlagerställe** – Ställ in standardlagerstället där arbetaren vanligtvis arbetar. Du kan använda verktygsfältet om du vill tilldela ytterligare lagerställen, och arbetaren kan växla mellan lagerställen genom att använda den indirekta aktiviteten för **Ändra lagerställe** på menyobjektet på mobil enhet.
-    - **Menynamn** – Välj rotmenyn som ska vara startsidan för arbetaren. Möjligheten att ställa in rotmenyer för varje arbetare är användbart eftersom du kan styra menystrukturen som varje arbetare kan använda. Menyn för arbetare som bara är aktiva i utgående område kan till exempel skräddarsys för uppgifter som är relaterade till utgående operationer för det området.
+    - **Menynamn** – Välj rotmenyn som ska vara startsidan för arbetaren. Möjligheten att konfigurera rotmenyer för varje arbetare är användbart eftersom du kan styra menystrukturen som varje arbetare kan använda. Menyn för arbetare som bara är aktiva i utgående område kan till exempel skräddarsys för uppgifter som är relaterade till utgående åtgärder för det området.
     - **Inaktiv** – En markerad kryssruta anger att användarkontot är inaktivt. Användarkontot inaktiveras automatiskt om en arbetare anger fel lösenord fem gånger i en rad i lagerställeprogrammet. Du kan dock också markera den här kryssrutan manuellt. Avmarkera kryssrutan om du vill göra användaren aktiv igen.
 
 1. På snabbfliken **Arbeta** ange följande fält:
@@ -80,7 +80,7 @@ När de anställda och medarbetarna har ställts in i Personal kan du tilldela a
 När en arbetare loggar in på den Warehouse Management-mobilappen ändras språk, nummerformat och tidszoner så att de matchar arbetarnas inställningar. Kontoinställningarna för arbetaren som väljs i steg 3 i avsnittet [Ställ in användarkonton för mobil enhet](#set-wma-users) avgör vilka inställningar som används. Om du behöver separata inställningar för varje användare använder du olika arbetskonton. Följande procedur visar hur du ändrar språk, nummerformat och tidszon för varje lagerställeapp användare.
 
 1. Gå till **Warehouse management \> Inställningar \> Arbetare**.
-1. Sök efter namnet på arbetaren som du vill ställa in. Se till att arbetaren har alla nödvändiga användarkonton för lagerställeapp som visas på snabbflikarna **Användare**. Skapa ett nytt användarkonton för arbetare och/eller lägg till lagerställeapp efter behov, genom att följa stegen i avsnittet [Ställ in användarkonton för mobil enhet](#set-wma-users).
+1. Sök efter namnet på arbetaren som du vill konfigurera. Se till att arbetaren har alla nödvändiga användarkonton för lagerställeapp som visas på snabbflikarna **Användare**. Skapa ett nytt användarkonton för arbetare och/eller lägg till lagerställeapp efter behov, genom att följa stegen i avsnittet [Ställ in användarkonton för mobil enhet](#set-wma-users).
 1. Gå till **Systemadministration \> Användare \> Användare**.
 1. Välj det användarkonto där kolumnen **person** visar namnet på den arbetare som du hittade i steg 2.
 

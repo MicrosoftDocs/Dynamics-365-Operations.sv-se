@@ -1,6 +1,6 @@
 ---
 title: Synkronisering av försäljningsorder direkt mellan Sales och Supply Chain Management
-description: I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningorder direkt mellan Dynamics 365 Sales och Dynamics 365 Supply Chain Management.
+description: I denna artikel diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningorder direkt mellan Dynamics 365 Sales och Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 05/09/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: eb41a21395a5d115b779e6b1ef71e9eb1176e28e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 63a9be9bedabe1f15ad8db583151aa7fa480473b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061528"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854164"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synkronisering av försäljningsorder direkt mellan Sales och Supply Chain Management
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061528"
 
 
 
-I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningorder direkt mellan Dynamics 365 Sales och Dynamics 365 Supply Chain Management.
+I denna artikel diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningorder direkt mellan Dynamics 365 Sales och Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflöden i Potentiell kund till kontanter
 
@@ -132,7 +132,7 @@ Innan du synkroniserar försäljningsorder är det viktigt att du uppdaterar fö
 
 ### <a name="setup-in-sales"></a>Inställningar i Sales
 
-- Se till att behörigheterna ställs in för teamet som användaren från din Sales-anslutning har tilldelats. Om du använder demodata har användaren vanligtvis administratörsåtkomst, men inte administratöråtkomst. Om gruppen inte har administratörsåtkomst även när du kör projektet från dataintegration, visas ett felmeddelande att primärt team saknas.
+- Se till att behörigheterna ställs in för teamet som användaren från din Sales-anslutning har tilldelats. Om du använder demodata har användaren vanligtvis administratörsåtkomst, men inte administratöråtkomst. Om gruppen inte har administratörsåtkomst även när du kör projektet från dataintegrering, visas ett felmeddelande att primärt team saknas.
 
     Gå till **Inställningar** &gt; **Säkerhet** &gt; **Team**, välj relevant team, klicka på **Hantera rolelr** och välj en roll med önskade behörigheter, t.ex. **systemadministratör**.
 
@@ -146,7 +146,7 @@ Innan du synkroniserar försäljningsorder är det viktigt att du uppdaterar fö
 
 - Gå till **Försäljning och marknadsföring** &gt; **3periodiska uppgifter** &gt; **Beräkna försäljningssummor** och ange att jobbet ska köras som ett batchjobb. Ange alternativet **Beräkna summor för försäljningsorder** till **Ja**. Detta steg är viktigt eftersom endast försäljningsorder med beräknade försäljningstotaler synkroniseras med Sales. Batch-jobbets frekvens ska vara densamma som frekvensen för synkroniseringen av försäljningsordern.
 
-Om du också använder integration av arbetsorder måste du ställa in försäljningsursprung. Försäljningsursprunget används för att särskilja försäljningsorder i Supply Chain Management som skapats från arbetsorder i Field Service. När försäljningsordern har sitt försäljningsursprung av typen **Integrering av arbetsorder** visas fältet **Extern arbetsorderstatus** på försäljningsorderns rubrik. Dessutom hjälper försäljningsursprunget till att garantera att försäljningsorder som har skapats från arbetsorder i Field Service filtreras bort under synkroniseringen från Supply Chain Management till Field Service.
+Om du också använder integrering av arbetsorder måste du konfigurera försäljningsursprung. Försäljningsursprunget används för att särskilja försäljningsorder i Supply Chain Management som skapats från arbetsorder i Field Service. När försäljningsordern har sitt försäljningsursprung av typen **Integrering av arbetsorder** visas fältet **Extern arbetsorderstatus** på försäljningsorderns rubrik. Dessutom hjälper försäljningsursprunget till att garantera att försäljningsorder som har skapats från arbetsorder i Field Service filtreras bort under synkroniseringen från Supply Chain Management till Field Service.
 
 1. Gå till **Försäljning och marknadsföring** \> **Inställningar** \> **Försäljningsorder** \> **Alla försäljningsorder**.
 2. Välj **Ny** för att skapa ett nytt försäljningsursprung.
@@ -203,7 +203,7 @@ I följande illustrationer visas ett exempel på en mallmappning i dataintegreri
 
 [![Mallmappning i dataintegrering, Sales Orders (Sales till Supply Chain Management) - Direkt: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Potentiell kund till pengar](prospect-to-cash.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Importera en konfiguration från Lifecycle Services
-description: I det här avsnittet beskrivs hur du importerar en ny version av konfiguration av elektronisk rapportering (ER) från Microsoft Dynamics Lifecycle Services (LCS).
+description: I den här artikeln beskrivs hur du importerar en ny version av konfiguration av elektronisk rapportering (ER) från Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 ms.date: 06/17/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 05a8ad127df177c54e67ff1f2ddcd8b3a3f51ea12b6e11d087105bd74b6bdb3f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2aae59334828a5636f35051d50cf2ea392074b71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712602"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886684"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>Importera en konfiguration från Lifecycle Services
 
@@ -49,7 +49,7 @@ I det här exemplet ska du välja önskad version av ER-konfigurationen och impo
 
 1. På sidan **konfigurationer** i konfigurationsträdet väljer du artikeln **Konfiguration av exempelmodell**.
 
-    Du skapade den första versionen av en konfigurationsmodell för en datamodell och publicerade den till LCS när du slutförde stegen i [Överför en konfiguration till Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). I den här proceduren kommer du ta bort den här versionen av ER-konfigurationen. Därefter ska du importera den versionen från LCS senare i det här avsnittet.
+    Du skapade den första versionen av en konfigurationsmodell för en datamodell och publicerade den till LCS när du slutförde stegen i [Överför en konfiguration till Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). I den här proceduren kommer du ta bort den här versionen av ER-konfigurationen. Därefter ska du importera den versionen från LCS senare i den här artikeln.
 
 2. Hitta och markera önskad post i listan.
 

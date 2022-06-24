@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: b7dfd92fd9e256298c13dcbde4b6da3f07d250d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323989"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876846"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurera åtgärdsberoende ER-destinationer
 
@@ -28,7 +28,7 @@ ms.locfileid: "8323989"
 
 Du kan konfigurera [destinationer](electronic-reporting-destinations.md) för varje utdatakomponent (mapp eller fil) för ett [elektronisk rapportering (ER)](general-electronic-reporting.md) format [konfiguration](general-electronic-reporting.md#Configuration) som används för att generera ett utgående dokument. Användare som kör ett ER-format av den här typen och som har rätt åtkomstbehörighet kan också ändra de konfigurerade destinationsinställningarna vid körning.
 
-I Microsoft Dynamics 365 Finance **version 10.0.17 och senare**, kan ett ER-format köras genom [etablera](er-apis-app10-0-17.md) en åtgärdskod som användaren utför genom att köra det ER-formatet. Till exempel i modulen **Kundreskontra**, i inställningarna för utskriftshantering kan du välja ett ER-format som genererar ett specifikt affärsdokument, till exempel en fritextfaktura. Du kan sedan välja **Vy** om du vill förhandsgranska fakturan eller **Skriv ut** om du vill skicka den till en skrivare. Om en användaråtgärd överförs för det körande ER-formatet vid körning, kan du konfigurera olika ER-destinationer för olika användaråtgärder. I det här avsnittet beskrivs hur du konfigurerar ER-destinationer för den här typen av ER-format.
+I Microsoft Dynamics 365 Finance **version 10.0.17 och senare**, kan ett ER-format köras genom [etablera](er-apis-app10-0-17.md) en åtgärdskod som användaren utför genom att köra det ER-formatet. Till exempel i modulen **Kundreskontra**, i inställningarna för utskriftshantering kan du välja ett ER-format som genererar ett specifikt affärsdokument, till exempel en fritextfaktura. Du kan sedan välja **Vy** om du vill förhandsgranska fakturan eller **Skriv ut** om du vill skicka den till en skrivare. Om en användaråtgärd överförs för det körande ER-formatet vid körning, kan du konfigurera olika ER-destinationer för olika användaråtgärder. I den här artikeln beskrivs hur du konfigurerar ER-destinationer för den här typen av ER-format.
 
 ## <a name="make-action-dependent-er-destinations-available"></a>Gör åtgärdsberoende ER-destinationer tillgängliga
 

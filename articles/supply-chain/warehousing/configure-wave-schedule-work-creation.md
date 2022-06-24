@@ -1,6 +1,6 @@
 ---
-title: Schemalägga arbetsskapande under cykel
-description: Det här avsnittet beskriver hur du ställer in och använder metoden Schemalägga arbetsskapande under cykel.
+title: Tidsplanera att skapa arbete under påfyllnad
+description: Denna artikel beskriver hur du konfigurerar och använder bearbetningsmetoden Schemalägga arbetsskapande.
 author: Mirzaab
 ms.date: 01/14/2021
 ms.topic: article
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c955e7275c0bdc12dc206dde1d7e390f16270148
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 8b4505d66c37134bc8f672b38d195f4f677df9bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691143"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852082"
 ---
-# <a name="schedule-work-creation-during-wave"></a>Schemalägga arbetsskapande under cykel
+# <a name="schedule-work-creation-during-wave"></a>Schemalägga arbetsskapande under påfyllnad
 
 [!include [banner](../../includes/banner.md)]
 
@@ -30,7 +30,7 @@ När funktionaliteten är aktiverad kommer planerat arbete automatiskt att få s
 
 ## <a name="turn-on-the-scheduled-work-creation-features-in-feature-management"></a>Aktivera funktionerna för att skapa tidsplanerat arbete i funktionshanteringen
 
-De funktioner som beskrivs i det här avsnittet måste vara inaktiverade för ditt system. Använda [utgiftshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiverar du följande funktioner i följande ordning:
+De funktioner som beskrivs i denna artikel måste vara aktiverade för ditt system. Använda [utgiftshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiverar du följande funktioner i följande ordning:
 
 1. **Arbetsspärr för hela organisationen** – Krävs för både manuell och automatisk konfiguration av planerat arbete. (Från och med version 10.0.21 av Supply Chain Management är den här funktionen obligatorisk, varför den är aktiverad som standard och inte kan stängas av igen.)
 1. **Schemalägga arbetsskapande** – Krävs för både manuell och automatisk konfiguration av planerat arbete.

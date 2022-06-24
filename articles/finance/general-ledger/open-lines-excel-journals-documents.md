@@ -1,6 +1,6 @@
 ---
 title: Publicera journalrader och dokument från Excel
-description: I det här avsnittet beskrivs hur du anger och publicerar rader för allmänna journaler från Microsoft Excel. Det innehåller information om de olika mallar som du kan använda beroende på vilken typ av transaktioner som du har angett.
+description: I den här artikeln beskrivs hur du anger och publicerar rader för allmänna journaler från Microsoft Excel. Det innehåller information om de olika mallar som du kan använda beroende på vilken typ av transaktioner som du har angett.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0af478f9dba8dc17791e15017be2720c2aa21a2f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: ccb3e7a420f7f048ba93b6fadf5491e312e7ce33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727045"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872482"
 ---
 # <a name="publish-journal-lines-and-documents-from-excel"></a>Publicera journalrader och dokument från Excel
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du anger och publicerar rader för allmänna journaler från Microsoft Excel. Det innehåller information om de olika mallar som du kan använda beroende på vilken typ av transaktioner som du har angett.
+I den här artikeln beskrivs hur du anger och publicerar rader för allmänna journaler från Microsoft Excel. Det innehåller information om de olika mallar som du kan använda beroende på vilken typ av transaktioner som du har angett.
 
 Användarna kan ange och publicera rader för redovisningsjournaler från Microsoft Excel. När en användare skapar en journal visar knappen **Öppna rader i Excel** de mallar som är tillgängliga. Mallar är utformade för att stödja speciella scenarier, men alla kombinationer av kontotypen i journalen stöds dock inte. Följande tabell visar de mallar som finns tillgängliga och kontotyper som de stöder.
 

@@ -1,6 +1,6 @@
 ---
 title: Använd en (1) betalning för att kvitta flera fakturor som omfattar flera rabattperioder
-description: Det här ämnet visar hur flera fakturor betalas när varje faktura är kvalificerad för en kassarabatt. Scenarierna i den här artikeln visar hur de utnyttjade kassarabatterna varierar beroende på när betalningen görs.
+description: Den här artikeln visar hur flera fakturor betalas när varje faktura är kvalificerad för en kassarabatt. Scenarierna i den här artikeln visar hur de utnyttjade kassarabatterna varierar beroende på när betalningen görs.
 author: ShivamPandey-msft
 ms.date: 10/26/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5187835da33d729e50aad9c813d8753d240fb81
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e6035973abea9dacd4b6d4d8bf2fd3c7d6b10fb0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727634"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872656"
 ---
 # <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Använd en (1) betalning för att kvitta flera fakturor som omfattar flera rabattperioder
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet visar hur flera fakturor betalas när varje faktura är kvalificerad för en kassarabatt. Scenarierna i den här artikeln visar hur de utnyttjade kassarabatterna varierar beroende på när betalningen görs.
+Den här artikeln visar hur flera fakturor betalas när varje faktura är kvalificerad för en kassarabatt. Scenarierna i den här artikeln visar hur de utnyttjade kassarabatterna varierar beroende på när betalningen görs.
 
 Fabrikam säljer varor till kunden 4032. Fabrikam erbjuder en kassarabatt på 1 procent om fakturan betalas inom 14 dagar. Fabrikam erbjuder även kassarabatter på delbetalningar. Kvittningsparametrar finns på sidan **Parametrar för kundreskontra**.
 

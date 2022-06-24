@@ -1,6 +1,6 @@
 ---
 title: Leverantörsinställningar som läggs till för hemtagningskostnad
-description: I det här avsnittet beskrivs de nya fält som läggs till på den befintliga leverantörssidan när du aktiverar modulen hemtagningskostnad. Du använder dessa fält när du vill ställa in de leverantörer som du ska använda tillsammans med funktionerna för hemtagningskostnader.
+description: I denna artikel beskrivs de nya fält som läggs till på den befintliga leverantörssidan när du aktiverar modulen hemtagningskostnad. Du använder dessa fält när du vill konfigurera de leverantörer som du ska använda tillsammans med funktionerna för hemtagningskostnader.
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b4e02397f7a4cdeaa21b451268b16e4fbe773612
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 84d1dee0815b036a3d411eabff49d8a08249bed3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690538"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882588"
 ---
 # <a name="vendor-settings-added-for-landed-cost"></a>Leverantörsinställningar som läggs till för hemtagningskostnad
 
 [!include [banner](../../includes/banner.md)]
 
-När du aktiverar modulen **Hemtagningskostnad** läggs flera nya fält till på den befintliga sidan **Leverantörer**. Du använder dessa fält när du vill ställa in de leverantörer som du ska använda tillsammans med funktionerna för hemtagningskostnader.
+När du aktiverar modulen **Hemtagningskostnad** läggs flera nya fält till på den befintliga sidan **Leverantörer**. Du använder dessa fält när du vill konfigurera de leverantörer som du ska använda tillsammans med funktionerna för hemtagningskostnader.
 
-Om du vill ställa in relevanta fält **Anskaffning och källa \> Leverantörer \> Alla leverantörer**. Öppna en befintlig leverantör eller skapa en ny leverantör och markera sedan snabbflikarna **Diverse information**. Alla nya fält som modulen **Hemtagningskostnad** lägger till visas under rubriken **Färder**. Följande register beskriver fälten.
+Om du vill konfigurera relevanta fält **Anskaffning och källa \> Leverantörer \> Alla leverantörer**. Öppna en befintlig leverantör eller skapa en ny leverantör och markera sedan snabbflikarna **Diverse information**. Alla nya fält som modulen **Hemtagningskostnad** lägger till visas under rubriken **Färder**. Följande register beskriver fälten.
 
 | Fält | beskrivning |
 |---|---|

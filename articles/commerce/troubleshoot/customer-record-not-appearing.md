@@ -1,6 +1,6 @@
 ---
-title: Kundposter visas inte i Commerce-administration
-description: Det här avsnittet innehåller felsökningsvägledning som kan vara till hjälp när kundposter inte visas direkt i Commerce-administration.
+title: Kundposter visas inte i Commerce headquarters
+description: Denna artikel innehåller felsökningsvägledning som kan vara till hjälp när kundposter inte visas direkt i Commerce headquarters.
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -15,31 +15,31 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: f551f94cec71ba7d740756c383b55741e9f8d42e20e63846ea6242383dc3ba32
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5cdc96c9829be4d34e9346b2c99d300c2349bc41
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733903"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876555"
 ---
-# <a name="customer-records-dont-appear-in-commerce-headquarters"></a>Kundposter visas inte i Commerce-administration
+# <a name="customer-records-dont-appear-in-commerce-headquarters"></a>Kundposter visas inte i Commerce headquarters
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet innehåller felsökningsvägledning som kan vara till hjälp när kundposter inte visas direkt i Commerce-administration.
+Denna artikel innehåller felsökningsvägledning som kan vara till hjälp när kundposter inte visas direkt i Commerce headquarters.
 
 ## <a name="description"></a>beskrivning
 
-När du skapar en ny kundpost med hjälp av inloggningsflödet i e-handelsbutiken visas inte motsvarande kundpost direkt i Commerce-administration.
+När du skapar en ny kundpost med hjälp av inloggningsflödet i näthandelsbutiken visas inte motsvarande kundpost direkt i Commerce headquarters.
 
 ## <a name="resolution"></a>Upplösning
 
 ### <a name="disable-customer-creation-in-async-mode"></a>Inaktivera skapande av kunder i asynkront läge
 
 > [!IMPORTANT]
-> Om du inaktiverar asynkrona kundgenereringen kan systemprestanda påverkas eftersom varje post skapas en begäran i realtid till Commerce-administration. Om Commerce-administration dessutom är ned (till exempel under serviceflöden), orsakar eventuella nya kundgenereringsflöden fel.
+> Om du inaktiverar asynkrona kundgenereringen kan systemprestanda påverkas eftersom varje post skapas en begäran i realtid till Commerce headquarters. Om Commerce headquarters dessutom är ned (till exempel under serviceflöden), orsakar eventuella nya kundgenereringsflöden fel.
 
-Om du vill inaktivera skapande av kunder i asynkrona läget i Commerce-administration följer du dessa steg.
+Om du vill inaktivera skapande av kunder i asynkrona läget i Commerce headquarters följer du dessa steg.
 
 1. Gå till **Retail och Commerce \> Kanalinställningar \> Inställningen för onlinebutik \> Funktionsprofiler**.
 1. Om du inte redan använder en funktionsprofil för din onlinekanal skapar du en.

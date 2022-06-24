@@ -1,6 +1,6 @@
 ---
 title: Enhetlig produktupplevelse
-description: I det här avsnittet beskrivs integreringen av produktinformation mellan Finance and Operations-appar och Dataverse.
+description: I den här artikeln beskrivs integreringen av produktinformation mellan appar för ekonomi och drift och Dataverse.
 author: t-benebo
 ms.date: 12/12/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 1b3dc1d16fc34992df0c9478b8b4d163c310b67b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a8071887678f16a0b8ee075d2aa24a07e4df5319
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062608"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885010"
 ---
 # <a name="unified-product-experience"></a>Enhetlig produktupplevelse
 
@@ -128,7 +128,7 @@ Finance and Operations-appar | Kundengagemangsappar |
 
 Standardorderinställningar definierar site och lagerställe som artiklar kommer att anskaffas från eller lagras, och de minimum-, maximum-, multipla- och standardkvantiteter som ska användas för handel eller lagerhantering, ledtider, stoppflagga och orderlöftesmetod. Informationen kommer att vara tillgänglig i Dataverse med hjälp av standardorderinställningarna för orderinställningar och produktspecifika entiteter för standardorderinställningar. Mer information om funktionen finns i avsnittet [standardorderinställningar](../../../../supply-chain/production-control/default-order-settings.md).
 
-Finance and Operations-appar | Kundengagemangsappar |
+appar för ekonomi och drift | Kundengagemangsappar |
 ---|---
 [Standardorderinställningar](mapping-reference.md#172) | msdyn_productdefaultordersettings |
 [Standardorderinställningar för produkt V2](mapping-reference.md#175) | msdyn_productspecificdefaultordersettings |

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e35a6b7da4ead8ab6f007ef8800ed8a05b1c513
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 09a808c91ece25a9a40f662e0aca2c504246fc0a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675359"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854512"
 ---
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Kostnadskategorier som används i produktionskontroll och projekthanteringsredovisning
 
@@ -31,7 +31,7 @@ Vissa typer av produktionsarbete kan gälla för projekttidsuppskattningar och r
 
 Vissa typer av produktionsarbete kan gälla för projekttidsuppskattningar och rapportering. I det här fallet krävs en kostnadskategori för produktions- och projektandamål. Mer projektrelaterad information måste definieras när en kostnadskategori används för produktion och projekt. Timkostnaderna som är kopplade till projekt, skiljer sig t.ex. från timkostnaderna som är kopplade till produktion. På **Kostnadskategorier**-sidan kan du definiera en kostnadskategori som används i redovisningen för produktionskontroll och projekthantering. 
 
-**Obs!** Kostnadsredovisning har en **Projektkategorier**-sida, men den här sidan har ingen koppling till funktionerna som beskrivs i det här avsnittet. När du använder en kostnadskategori i projekt, sidan **Kostnadskategorier** har ytterligare flikar som visar ytterligare projektrelaterad information. Den här informationen omfattar kategorigrupp, en radegenskap och huvudbokskonton som har tilldelats kostnadskategorin.
+**Obs!** Kostnadsredovisning har en **Projektkategorier**-sida, men den här sidan har ingen koppling till funktionerna som beskrivs i denna artikel. När du använder en kostnadskategori i projekt, sidan **Kostnadskategorier** har ytterligare flikar som visar ytterligare projektrelaterad information. Den här informationen omfattar kategorigrupp, en radegenskap och huvudbokskonton som har tilldelats kostnadskategorin.
 
 -   Kostnadskategorin måste tilldelas en kategorigrupp som stöder transaktionstypen **Timmar**.
 -   Radegenskapen anger standardinformation för hur rapporterad tid kan debiteras för ett projekt.

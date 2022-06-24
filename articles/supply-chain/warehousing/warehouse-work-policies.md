@@ -1,6 +1,6 @@
 ---
 title: Arbetspolicyer
-description: Det här avsnittet innehåller information om hur du ställer in arbetspolicyer.
+description: Denna artikel innehåller information om hur du konfigurerar arbetspolicyer.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 1d4ee3f1bffaf00c20758f6a3f399451d3122291
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7637ef908ffa6e79f81e4ecfb8afac4e3e3fed26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571171"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855860"
 ---
 # <a name="work-policies"></a>Arbetspolicyer
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in systemet och mobilappen för distributionslagerhantering så att de stöder arbetspolicyer. Du kan använda den här funktionen för att snabbt registrera lager utan att skapa inlagringsarbete när du tar emot inköps- eller överföringsorder, eller när du avslutar tillverkningsprocesser. Det här avsnittet innehåller allmän information. Detaljerad information som är relaterad till det mottagna ID-numret finns i [Inleverans av ID-nummer som erhålls via mobilappen för distributionslagerhantering](warehousing-mobile-device-app-license-plate-receiving.md).
+I denna artikel beskrivs hur du konfigurerar systemet och mobilappen för Warehouse Management så att de stöder arbetspolicyer. Du kan använda den här funktionen för att snabbt registrera lager utan att skapa inlagringsarbete när du tar emot inköps- eller överföringsorder, eller när du avslutar tillverkningsprocesser. Den här artikeln innehåller allmän information. Detaljerad information som är relaterad till det mottagna ID-numret finns i [Inleverans av ID-nummer som erhålls via mobilappen för distributionslagerhantering](warehousing-mobile-device-app-license-plate-receiving.md).
 
-En arbetspolicy styr om lagerarbete ska skapas när en tillverkad artikel rapporteras som färdig eller när varor tas emot med hjälp av mobilappen för distributionslagerhantering. Du ställer in varje arbetspolicy genom att definiera villkoren där den gäller: arbetsordertyper och processer, lagerstället och (valfritt) produkterna. En inköpsorder för produkt *A0001* måste tas emot på plats *RECV* i lagerstället *24*. Senare förbrukas produkten i en annan process vid platsen *RECV*. I det här fallet kan du ställa in en arbetspolicy för att förhindra att inlagringsarbete skapas när en arbetare rapporterar produkt *A0001* som inlevererad på plats *RECV*.
+En arbetspolicy styr om lagerarbete ska skapas när en tillverkad artikel rapporteras som färdig eller när varor tas emot med hjälp av mobilappen för distributionslagerhantering. Du konfigurerar varje arbetspolicy genom att definiera villkoren där den gäller: arbetsordertyper och processer, lagerstället och (valfritt) produkterna. En inköpsorder för produkt *A0001* måste tas emot på plats *RECV* i lagerstället *24*. Senare förbrukas produkten i en annan process vid platsen *RECV*. I det här fallet kan du konfigurera en arbetspolicy för att förhindra att inlagringsarbete skapas när en arbetare rapporterar produkt *A0001* som inlevererad på plats *RECV*.
 
 > [!NOTE]
 > - Om en arbetspolicy ska vara aktiv måste du definiera minst en plats för den på snabbfliken **lagerplatser** på sidan **Arbetspolicyer**. 
@@ -35,14 +35,14 @@ En arbetspolicy styr om lagerarbete ska skapas när en tillverkad artikel rappor
 
 ## <a name="activate-the-features-in-your-system"></a>Aktivera funktionerna i systemet
 
-Om du vill göra alla funktioner som beskrivs i det här avsnittet tillgängliga i systemet aktiverar du följande två funktioner i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Om du vill göra alla funktioner som beskrivs i denna artikel tillgängliga i systemet aktiverar du följande två funktioner i [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Förbättrad mottagning av registreringsskylt
 - Arbetspolicyförbättringar för inkommande arbete
 
 ## <a name="the-work-policies-page"></a>Sidan arbetspolicyer
 
-Om du vill ställa in arbetspolicyer går du till **Hantering av distributionslager \> inställningar \> arbete \> arbetspolicyer**. Ställ sedan in fälten enligt beskrivningen i följande underavsnitt på varje snabbflik.
+Om du vill konfigurera arbetspolicyer går du till **Hantering av distributionslager \> inställningar \> arbete \> arbetspolicyer**. Ställ sedan in fälten enligt beskrivningen i följande underavsnitt på varje snabbflik.
 
 ### <a name="the-work-order-types-fasttab"></a>Snabbfliken arbetsordertyper
 
@@ -56,7 +56,7 @@ På snabbfliken **arbetsordertyper** kan du lägga till alla arbetsordertyper oc
 | Överföringsinleverans | Plats och mottagning av registreringsskylt |
 | Inköpsorder | <ul><li>Plats och mottagning av registreringsskylt</li><li>Mottagande och inleverans av lastartikel</li><li>Inköpsorderrad har inlevererats och inlagrats</li><li>Inleverans och inlagring av inköpsorderartikel</li></ul> |
 
-Om du vill ställa in en arbetspolicy så att den gäller för flera arbetsprocesser av samma arbetsordertyp, lägger du till en separat rad för varje arbetsprocess i rutnätet.
+Om du vill konfigurera en arbetspolicy så att den gäller för flera arbetsprocesser av samma arbetsordertyp, lägger du till en separat rad för varje arbetsprocess i rutnätet.
 
 För varje rad i rutnätet anger du fältet **Metod för att skapa arbete** till ett av följande värden:
 
@@ -207,14 +207,14 @@ När du planerar att konfigurera en arbetspolicy för detta scenario på lagerst
 - Arbetsuppgifter för förvaring av färdiga varor på lagerställen krävs inte när du rapporterar produkten *SC1* som färdig från produktionsorder *PRD-001* till platsen *001*. Detta eftersom åtgärden *Målar* för produktionsorder *PRD-002* förbrukar produkten *SC1* på samma plats.
 - Lagerställearbete för plockning av råmaterial krävs för att flytta råmaterialet *RM1* från lagerplats *BULK-001* till plats *001*.
 
-Här följer ett exempel på en arbetspolicy som du kan ställa in, baserat på dessa överväganden:
+Här följer ett exempel på en arbetspolicy som du kan konfigurera, baserat på dessa överväganden:
 
 - **Namn på arbetspolicy:** *inget inlagringsarbete*
 - **Arbetsordertyper:** *Plats för slutförda varor* och *Plats för samprodukt och biprodukt*
 - **Lagerställen:** lagerställe *51* och plats *001*
 - **Produkter:** *SC1*
 
-Följande exempelscenario ger steg-för-steg-instruktioner om hur du ställer in arbetspolicyn för lagerstället för detta scenario.
+Följande exempelscenario ger steg-för-steg-instruktioner om hur du konfigurerar arbetspolicyn för lagerstället för detta scenario.
 
 ## <a name="example-scenario-report-as-finished-to-a-location-that-isnt-license-platecontrolled"></a>Exempelscenario: Rapportera en produktionsorder som slutförd till en plats som inte kontrolleras via registreringsskylt
 
@@ -266,7 +266,7 @@ Lagerställeprocesser inkluderar inte alltid lagerarbete. Genom att definiera en
 1. Klicka på **Spara** i åtgärdsfönstret.
 
 > [!NOTE]
-> Plats *001* är en ej ID-nummerstyrd plats. Du kan ställa in en utgående plats som inte är ID-nummerstyrd utleveransplats bara om en lämplig arbetspolicy finns för platsen.
+> Plats *001* är en ej ID-nummerstyrd plats. Du kan konfigurera en utgående plats som inte är ID-nummerstyrd utleveransplats bara om en lämplig arbetspolicy finns för platsen.
 
 ### <a name="create-a-production-order-and-report-it-as-finished"></a>Skapa en produktionsorder och rapportera den som färdig.
 
@@ -293,7 +293,7 @@ När tillverkningsordern rapporterades som färdig, genererades inget arbete fö
 
 ## <a name="more-information"></a>Mer information
 
-Mer information om menyartiklar för mobila enheter finns i [ställa in mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md).
+Mer information om menyartiklar för mobila enheter finns i [konfigurera mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md).
 
 Detaljerad information om det mottagna ID-numret och arbetspolicyer finns i [Inleverans av ID-nummer som erhålls via mobilappen för distributionslagerhantering](warehousing-mobile-device-app-license-plate-receiving.md).
 

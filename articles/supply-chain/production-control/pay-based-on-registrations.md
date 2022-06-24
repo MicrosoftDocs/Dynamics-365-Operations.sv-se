@@ -1,6 +1,6 @@
 ---
 title: Lön baserat på registreringar
-description: Det här avsnittet beskriver hur lön beräknas utifrån arbetarregistreringar.
+description: Denna artikel beskriver hur lön beräknas utifrån arbetarregistreringar.
 author: johanhoffmann
 ms.date: 03/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 58ff2629c2894e85ca5529df5f995ffa5273de67e1c22564f5f9911ea86fbd95
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 729e2f6c7c2dac598154b342244ab3d8eccaf4d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715732"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844392"
 ---
 # <a name="pay-based-on-registrations"></a>Lön baserat på registreringar
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver i detalj hur lön beräknas utifrån arbetarregistreringar. Det innehåller exempel som visar hur resultatet påverkas av de olika kombinationerna av de inställningsalternativ som är tillgängliga för beräkningen. Nedan följer några av de områden som omfattas:
+Denna artikel beskriver i detalj hur lön beräknas utifrån arbetarregistreringar. Det innehåller exempel som visar hur resultatet påverkas av de olika kombinationerna av de inställningsalternativ som är tillgängliga för beräkningen. Nedan följer några av de områden som omfattas:
 
 - Flextid
 - Övertid
@@ -186,7 +186,7 @@ När du har justerat beräkningsparametrarna genereras följande löneposter.
 
 ### <a name="allow-a-deviation-from-the-standard-pay-profiles"></a>Tillåt en avvikelse från standardbetalningsprofilerna
 
-På sidan **Profiler** (**Tid och närvaro**&gt;**Inställningar**&gt;**Tidsprofiler**&gt;**Profiler**) kan du ställa in profiltyper som innehåller växlingskoder och raster.
+På sidan **Profiler** (**Tid och närvaro**&gt;**Inställningar**&gt;**Tidsprofiler**&gt;**Profiler**) kan du konfigurera profiltyper som innehåller växlingskoder och raster.
 
 ### <a name="switch-codes"></a>Växlingskoder
 
@@ -337,7 +337,7 @@ Om den planerade rasten i stället hade betalats av obetald, hade beräkningsres
 
 När du överför registreringar på sidan **Godkänn** genereras löneposter. En separat lönepost genereras för betalda raster.
 
-Lönesatsen för betald rast bestäms av lönetypen som anges i löneavtalet för rasterna. Du kan ställa in självkostnad per timme för rasten för ett bestämt datumintervall istället för att använda en lönetyp.
+Lönesatsen för betald rast bestäms av lönetypen som anges i löneavtalet för rasterna. Du kan konfigurera självkostnad per timme för rasten för ett bestämt datumintervall istället för att använda en lönetyp.
 
 Beakta följande tidsprofil.
 

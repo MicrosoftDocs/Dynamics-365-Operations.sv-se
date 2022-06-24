@@ -1,6 +1,6 @@
 ---
 title: Problemtyper för avvikelser
-description: I detta ämne beskrivs hur du skapar och använder problemtyper för avvikelser.
+description: I denna artikel beskrivs hur du skapar och använder problemtyper för avvikelser.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26705dd12f478f4ca6046c7265d4ae3cb1d08c69
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a73e692257c2a27085d60e75e028445811ee778a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568817"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857762"
 ---
 # <a name="problem-types-for-nonconformances"></a>Problemtyper för avvikelser
 
 [!include [banner](../includes/banner.md)]
 
-I detta ämne beskrivs hur du skapar och använder problemtyper för avvikelser.
+I denna artikel beskrivs hur du skapar och använder problemtyper för avvikelser.
 
-Du använder sidan **Problemtyper** för att definiera en klassificering av de kvalitetsproblem som kan uppstå i de olika avvikelsetyperna. För varje problemtyp som du skapar måste du ange vilka typer av avvikelser som problemtypen kan användas med. Du kan ställa in följande avvikelsetyper:
+Du använder sidan **Problemtyper** för att definiera en klassificering av de kvalitetsproblem som kan uppstå i de olika avvikelsetyperna. För varje problemtyp som du skapar måste du ange vilka typer av avvikelser som problemtypen kan användas med. Du kan konfigurera följande avvikelsetyper:
 
 - **Intern** – Avvikelser av den här typen är relaterade till lagerbehållning (till exempel kvalitetsorder eller karantänorder).
 - **Kund** – Avvikelseer av den här typen är relaterade till försäljningsorder.

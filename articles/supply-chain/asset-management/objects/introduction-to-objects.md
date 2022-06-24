@@ -1,6 +1,6 @@
 ---
 title: Introduktion till tillgångar
-description: Det här avsnittet innehåller en översikt över tillgångar i tillgångshantering.
+description: Denna artikel innehåller en översikt över tillgångar i Tillgångshantering.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43a5646bc4a1301922781d8b083dfa709befe3dca0fad1074b5433c6e02f5c66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767518"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874200"
 ---
 # <a name="introduction-to-assets"></a>Introduktion till tillgångar
 
@@ -30,9 +30,9 @@ ms.locfileid: "6767518"
 
  
 
-Det här avsnittet innehåller en översikt över tillgångar i tillgångshantering. En *tillgång* är någon typ av utrustning, till exempel en maskin eller en maskindel, som kräver underhåll, service eller reparation.
+Denna artikel innehåller en översikt över tillgångar i Tillgångshantering. En *tillgång* är någon typ av utrustning, till exempel en maskin eller en maskindel, som kräver underhåll, service eller reparation.
 
-En tillgång uppdateras automatiskt med relaterad information. Den här relaterade informationen kan till exempel vara om nya eller uppdaterade arbetsorder. Du kan skapa tillgångar genom att använda antingen menyartikeln **alla tillgångar** eller menyartikeln **väntande tillgångar**. I det här avsnittet beskrivs hur du skapar tillgångar med hjälp av menyalternativet **Alla tillgångar**. Information om hur du skapar tillgångar med hjälp av menyalternativet **väntande tillgångar** finns i [skapa tillgångar baserat på inköpsorder](../objects/create-objects-based-on-purchase-orders.md).
+En tillgång uppdateras automatiskt med relaterad information. Den här relaterade informationen kan till exempel vara om nya eller uppdaterade arbetsorder. Du kan skapa tillgångar genom att använda antingen menyartikeln **alla tillgångar** eller menyartikeln **väntande tillgångar**. detta ämne beskrivs hur du skapar tillgångar med hjälp av menyalternativet **Alla tillgångar**. Information om hur du skapar tillgångar med hjälp av menyalternativet **väntande tillgångar** finns i [skapa tillgångar baserat på inköpsorder](../objects/create-objects-based-on-purchase-orders.md).
 
 ## <a name="all-assets"></a>Alla tillgångar
 
@@ -40,7 +40,7 @@ Välj **Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillg
 
 I rutnätsvyn **Alla tillgångar** väljer du en länk i kolumnen **tillgång** för att visa information om den valda posten. Om du vill redigera posten väljer du knappen **redigera**. Detaljvyn visar detaljerad information som är relaterad till tillgången. En ruta för **relaterad informations** till höger innehåller ytterligare tillgångsrelaterad information. Expandera fönstret om du vill visa relaterad information för den valda tillgången.
 
-Knapparna i åtgärdsfönstret är ordnade på flikar. I följande tabell beskrivs kortfattat knappar som är relaterade till tillgångshantering.
+Knapparna i åtgärdsfönstret är ordnade på flikar. I följande tabell beskrivs kortfattat knappar som är relaterade till Tillgångshantering.
 
 | Namn på knapp          | Beskrivning                                                                                                                                                       |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -62,7 +62,7 @@ Knapparna i åtgärdsfönstret är ordnade på flikar. I följande tabell beskri
 | Underhållsschema | Öppna listsidan **öppna underhållsschema** där du kan visa underhållsplaner, underhållsbegäranden och underhållsomgångar som är associerade med tillgången och som har statusen **skapad**. |
 | Uppdatera tillgångens tillstånd   | Uppdatera tillgångens livscykeltillstånd. Du kan välja flera tillgångar på listsidan **alla tillgångar** och sedan uppdatera tillgångens livscykeltillstånd för dem alla på samma gång.              |
 | Logg för livscykeltillstånd  | Öppna en logg som visar livscykeltillstånden för den valda tillgången.                                                                                                                 |
-| Tillgångsdokument      | Visa listan över dokument som är bifogade med en tillgång. Dessa dokument ställs in på **tillgångshantering** \> **inställningar** \> **tillgångsdokument**.                 |
+| Tillgångsdokument      | Visa listan över dokument som är bifogade med en tillgång. Dessa dokument ställs in på **Tillgångshantering** \> **inställningar** \> **tillgångsdokument**.                 |
 | Attribut           | Skapa eller visa tillgångsattribut.                                                                                                                             |
 | Bild                | Välj en bild för tillgången.                                                                                                                                   |
 | Överordnade tillgångar        | Visa överordnad tillgångshistorik för den valda tillgången.                                                                                                                |

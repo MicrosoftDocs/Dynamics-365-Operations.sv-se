@@ -1,6 +1,6 @@
 ---
 title: Kreditspärrar för försäljningsorder
-description: I det här avsnittet beskrivs inställningen av regler som används för att placera en försäljningsorder vid kreditspärr.
+description: I den här artikeln beskrivs inställningen av regler som används för att placera en försäljningsorder vid kreditspärr.
 author: JodiChristiansen
 ms.date: 07/20/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2d8966f993e7ca82b10a2ef5a023256a05682980
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 44560425056ee1726f21a4279f36c2e718956814
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734345"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856840"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Kreditspärrar för försäljningsorder
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-I det här avsnittet beskrivs inställningen av regler som används för att placera en försäljningsorder vid kreditspärr. Spärrningsreglerna för kredithantering kan gälla för en enskild kund eller en grupp med kunder. Spärrningsregler definierar svar vid följande omständigheter:
+I den här artikeln beskrivs inställningen av regler som används för att placera en försäljningsorder vid kreditspärr. Spärrningsreglerna för kredithantering kan gälla för en enskild kund eller en grupp med kunder. Spärrningsregler definierar svar vid följande omständigheter:
 
 1. Antal förfallna dagar
 2. Kontostatus

@@ -1,6 +1,6 @@
 ---
-title: Frågeställningar och svar om publicering
-description: Det här avsnittet innehåller en lista med vanliga frågeställningar om hur du arbetar med ett Dynamics 365 Human Resources implementeringsprojekt.
+title: Vanliga frågor och svar om Go live
+description: Den här artikeln innehåller en lista med vanliga frågeställningar om hur du arbetar med ett Dynamics 365 Human Resources implementeringsprojekt.
 author: rachel-profitt
 ms.date: 10/13/2020
 ms.topic: article
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5b0f58c7ebf03466805d20806316f6f1c32e4a4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: dfb2434b0d0573f2edab228fcca77ee653d751a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695372"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853115"
 ---
-# <a name="go-live-faq"></a>Frågeställningar och svar om publicering 
+# <a name="go-live-faq"></a>Vanliga frågor och svar om Go live 
 
 
 [!INCLUDE [PEAP](../includes/peap-2.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "8695372"
 
 
 
-Det här avsnittet innehåller en lista med vanliga frågeställningar om hur du arbetar med ett Dynamics 365 Human Resources implementeringsprojekt. 
+Den här artikeln innehåller en lista med vanliga frågeställningar om hur du arbetar med ett Dynamics 365 Human Resources implementeringsprojekt. 
 
 ## <a name="when-can-i-configure-and-request-my-production-environment"></a>När kan jag konfigurera och begära produktionsmiljön? 
 

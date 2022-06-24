@@ -1,6 +1,6 @@
 ---
 title: Lagerjournaler.
-description: Det här ämnet ger en beskrivning av hur du kan använda lagerjournaler för att bokföra olika typer av fysiska lagertransaktioner.
+description: Denna artikel ger en beskrivning av hur du kan använda lagerjournaler för att bokföra olika typer av fysiska lagertransaktioner.
 author: yufeihuang
 ms.date: 04/05/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9370e495bf16ed638646843faaf0ff599fe1abc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 182c0ac9146c44b08698f8f9d15a3610bf0b7cea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573979"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849428"
 ---
 # <a name="inventory-journals"></a>Lagerjournaler.
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet ger en beskrivning av hur du kan använda lagerjournaler för att bokföra olika typer av fysiska lagertransaktioner.
+Denna artikel ger en beskrivning av hur du kan använda lagerjournaler för att bokföra olika typer av fysiska lagertransaktioner.
 
 Lagerjournalerna i Supply Chain Management används för att bokföra fysiska lagertransaktioner av olika typer, till exempel bokföringen av inleveranser och utleveranser, lagerrörelser, genereringen av strukturlistor (BOM) och avstämningen av fysiskt lager. Alla dessa lagerjournaler används på liknande sätt, men de delas in i olika typer.
 
@@ -52,7 +52,7 @@ När du använder en lagerjusteringsjournal kan du lägga till kostnaden för en
 
 ### <a name="transfer"></a>Överför
 
-Du kan använda överföringsjournaler för att överföra artiklar mellan lagerplatser, batchar eller produktvarianter utan att associera några kostnadskonsekvenser. Du kan till exempel överföra artiklar från ett lagerställe till ett annat lagerställe inom samma företag. När du använder en överföringsjournal måste du ställa in både ”från”- och ”till”-lagerdimensioner (exempelvis för Plats och Lagerställe). Lagerbehållningen för de definierade lagerdimensionerna ändras efter detta. Lageröverföringar återspeglar den omedelbara flyttningen av material. Lagret spåras inte under transport. Om detta krävs bör du använda en överföringsorder i stället. När du bokför en överföringsjournal skapas två lagertransaktioner för varje journalrad:
+Du kan använda överföringsjournaler för att överföra artiklar mellan lagerplatser, batchar eller produktvarianter utan att associera några kostnadskonsekvenser. Du kan till exempel överföra artiklar från ett lagerställe till ett annat lagerställe inom samma företag. När du använder en överföringsjournal måste du konfigurera både ”från”- och ”till”-lagerdimensioner (exempelvis för Plats och Lagerställe). Lagerbehållningen för de definierade lagerdimensionerna ändras efter detta. Lageröverföringar återspeglar den omedelbara flyttningen av material. Lagret spåras inte under transport. Om detta krävs bör du använda en överföringsorder i stället. När du bokför en överföringsjournal skapas två lagertransaktioner för varje journalrad:
 
 -   En lagerutleverans vid ”från”-platsen
 -   En lagerinleverans vid ”till”-platsen
@@ -71,7 +71,7 @@ Produktionsinförseljournaler fungerar som artikelinförseljournalerna men anvä
 
 ### <a name="counting"></a>Inventering
 
-Med inventeringsjournaler kan du justera den aktuella lagerbehållningen som är registrerad för artiklar eller grupper av artiklar och sedan bokföra det verkliga fysiska antalet så att du kan göra justeringar som krävs för att stämma av skillnaderna. Du kan koppla inventeringspolicyer med inventeringsgrupper som hjälper dig att gruppera artiklar som har olika egenskaper, så att artiklarna kan inkluderas i en inventeringsjournal. Du kan till exempel ställa in inventeringsgrupper för att räkna artiklar som har en specifik frekvens, eller för att räkna artiklar när lagret faller till en viss nivå. I [Definiera inventeringsberäkningsprocesser](tasks/define-inventory-counting-processes.md)hittar du information om hur du definierar inventeringsgrupper.
+Med inventeringsjournaler kan du justera den aktuella lagerbehållningen som är registrerad för artiklar eller grupper av artiklar och sedan bokföra det verkliga fysiska antalet så att du kan göra justeringar som krävs för att stämma av skillnaderna. Du kan koppla inventeringspolicyer med inventeringsgrupper som hjälper dig att gruppera artiklar som har olika egenskaper, så att artiklarna kan inkluderas i en inventeringsjournal. Du kan till exempel konfigurera inventeringsgrupper för att räkna artiklar som har en specifik frekvens, eller för att räkna artiklar när lagret faller till en viss nivå. I [Definiera inventeringsberäkningsprocesser](tasks/define-inventory-counting-processes.md)hittar du information om hur du definierar inventeringsgrupper.
 
 ### <a name="tag-counting"></a>Märkesinventering
 
@@ -91,9 +91,9 @@ Du kan bokföra journalraderna som du skapar när som helst, tills du har låst 
 
 ## <a name="data-entity-support-for-inventory-journals"></a>Dataenhetsstöd för lagerjournaler
 
-Dataenheter stöder följande typer av integrationsscenarier:
+Dataenheter stöder följande typer av integreringsscenarier:
 -    Synkron service (OData)
--  Asynkron integration
+-  Asynkron integrering
 
 Mer information finns i [Dataenheter](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 

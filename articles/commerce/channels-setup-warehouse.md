@@ -1,6 +1,6 @@
 ---
 title: Ställ in ett lagerställen
-description: I det här avsnittet beskrivs hur du ställer in ett lagerställe som ska användas med en ny kanal i Microsoft Dynamics 365 Commerce.
+description: I denna kanal beskrivs hur du konfigurerar ett lagerställe som ska användas med en ny kanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6987263bfa83582f465e3b47c4f7b9d96cf087c814a1e002afd289852346975b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ae091d0b75abfdb001402ea71cc0df36bc1a20c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734029"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885245"
 ---
 # <a name="warehouse-set-up"></a>Inställning av lagerställe
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in ett lagerställe som ska användas med en ny kanal i Microsoft Dynamics 365 Commerce.
+I denna kanal beskrivs hur du konfigurerar ett lagerställe som ska användas med en ny kanal i Microsoft Dynamics 365 Commerce.
 
-Varje handelskanal kräver ett konfigurerat lagerställe för att det ska associeras med det. Följande procedurer ger den minsta konfiguration som krävs för att ställa in ett lager ställe för en handelskanal. Mer information om inställningar för lagerställen finns i [Lagerstyrning – översikt](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
+Varje handelskanal kräver ett konfigurerat lagerställe för att det ska associeras med det. Följande procedurer ger den minsta konfiguration som krävs för att konfigurera ett lager ställe för en handelskanal. Mer information om inställningar för lagerställen finns i [Lagerstyrning – översikt](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="configure-a-warehouse-site"></a>Konfigurera en lagerställeplats
 
-Innan du ställer in ett lagerställe måste du konfigurera en lagerställeplats.
+Innan du konfigurerar ett lagerställe måste du konfigurera en lagerställeplats.
 
 Konfigurera en lagerställeplats enligt följande instruktioner.
 
@@ -57,8 +57,8 @@ Så här ställer du in ett lagerställe.
 1. I fältet **Namn** anger du ett värde.
 1. I listrutan **Plats** väljer du den lagerställeplats som du skapade tidigare.
 1. I fältet **Typ**, välj **Standard**.
-    - Om du vill ställa in ett **Karantänlagerställe** måste du först följa stegen nedan för att skapa ett ytterligare lagerställe där **Typ** ställs in på **Karantän**.
-    - Om du vill ställa in ett **Transitlager** måste du först följa stegen nedan för att skapa ett ytterligare lagerställe där **Typ** ställs in på **Transit**.
+    - Om du vill konfigurera ett **Karantänlagerställe** måste du först följa stegen nedan för att skapa ett ytterligare lagerställe där **Typ** ställs in på **Karantän**.
+    - Om du vill konfigurera ett **Transitlager** måste du först följa stegen nedan för att skapa ett ytterligare lagerställe där **Typ** ställs in på **Transit**.
 1. Klicka på **Spara** i åtgärdsfönstret.
 
 ## <a name="set-up-inventory-aisles"></a>Ställ in lagergångar
@@ -74,7 +74,7 @@ Så här ställer du in lagergångar.
 
 ## <a name="set-up-warehouse-inventory-locations"></a>Konfigurera lagerplatser på lagerställen
 
-Om du vill ställa in lagerplatser för lagerställen för standard, skadat och returnerat lager följer du dessa steg.
+Om du vill konfigurera lagerplatser för lagerställen för standard, skadat och returnerat lager följer du dessa steg.
 
 1. I navigeringsfönstret, gå till **Moduler \> Butik och handel \> Kanalsinställning \> Lagerställen**.
 1. Välj det lagerställe som du skapat tidigare.
@@ -129,7 +129,7 @@ Följande bild visar information om ett konfigurerat lagerställe.
 
 [Översikt över kanaler](channels-overview.md)
 
-[Förutsättningar för att ställa in kanaler](channels-prerequisites.md)
+[Förutsättningar för att konfigurera kanaler](channels-prerequisites.md)
 
 [Ställa in en butikskanal](channel-setup-retail.md)
     

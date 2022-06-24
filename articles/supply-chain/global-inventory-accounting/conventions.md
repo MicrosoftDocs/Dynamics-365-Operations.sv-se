@@ -1,6 +1,6 @@
 ---
 title: Praxis
-description: I det här avsnittet beskrivs hur du ställer in överenskommelser för att upprätta hur kostnader ska redovisas i global lagerredovisning.
+description: I denna artikel beskrivs hur du konfigurerar överenskommelser för att upprätta hur kostnader ska redovisas i global lagerredovisning.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4919d8fcab76741175bad6ea090eea61d4146fa8
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 0055757a0d012896232de58330ee142f702e4ed1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673170"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875406"
 ---
 # <a name="conventions"></a>Praxis
 
@@ -25,7 +25,7 @@ ms.locfileid: "8673170"
 
 En regel är en behållare för en uppsättning principer som påverkar systemets beteende. Baserat på dina affärsbehov måste du definiera konventioner genom att använda en kombination av olika principer som fastställer hur kostnader ska redovisas i global lagerredovisning. Du kan koppla varje konferens till en eller flera redovisningar för att säkerställa överensstämmelse i redovisningsprinciperna som tillämpas i hela redovisningen.
 
-För att ställa in dina konventioner, gå till **Global lagerredovisning \> Inställning \> Konventioner**. För varje konvention anger du följande fält:
+För att konfigurera dina konventioner, gå till **Global lagerredovisning \> Inställning \> Konventioner**. För varje konvention anger du följande fält:
 
 - **Namn** – Ange namnet på konvention.
 - **Beskrivning** – Ange en beskrivning av konvention.
@@ -41,7 +41,7 @@ För att ställa in dina konventioner, gå till **Global lagerredovisning \> Ins
 
     - **Normal historisk** – Alla kostnadskomponenter förs in i lagerkontot.
     - **Standard – Standardkostnadsflöden** till lagerkontona och skillnaden mellan tillämpad kostnad och faktiska kostnader debiteras avvikelsekontona. Om du vill skapa en policy för mätningsunderlag för *standard* indata måste du först skapa en prislista där policyn kan söka efter artikelns standardkostnad.
-    - **Prislistor** – Global lagerredovisning stöder hämtning av artikelpriser från flera juridiska personer. Du kan definiera en prislista som ska användas i policyn för indatamått. På det här sättet vet systemet var artikelpriset ska sökas. Följ dessa steg för att ställa in prislistor:
+    - **Prislistor** – Global lagerredovisning stöder hämtning av artikelpriser från flera juridiska personer. Du kan definiera en prislista som ska användas i policyn för indatamått. På det här sättet vet systemet var artikelpriset ska sökas. Följ dessa steg för att konfigurera prislistor:
 
         1. Ange sedan ett namn i fältet **Namn**.
         1. Ange en beskrivning i fältet **beskrivning**.

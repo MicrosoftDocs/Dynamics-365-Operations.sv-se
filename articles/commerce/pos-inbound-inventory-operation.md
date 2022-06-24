@@ -1,6 +1,6 @@
 ---
-title: Inkommande lageråtgärder i POS
-description: Det här ämnet beskriver möjligheterna i den inkommande lageråtgärden för en kassa (POS).
+title: Inkommande lageråtgärder i kassan
+description: Denna artikel beskriver möjligheterna i den inkommande lageråtgärden för en kassa (POS).
 author: hhaines
 ms.date: 09/17/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 8848c10e9f8f931ee66414075d28b8910a02e5a000525a63bc38ab6851f11276
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741792"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858892"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Inkommande lageråtgärder i kassan
 
@@ -34,9 +34,9 @@ I Microsoft Dynamics 365 Commerce version 10.0.10 och senare ersätter inkommand
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Förutsättning: Konfigurera ett asynkront dokumentramverk
 
-Den inkommande åtgärden omfattar prestandaförbättringar som säkerställer att användare med höga kvantiteter av inleverans kan bokföra över många butiker eller företag och stora lagerdokument, kan bearbeta dessa dokument till Commerce-administration utan att uppleva timeout eller misslyckanden. Dessa förbättringar kräver användning av ett asynkront dokumentramverk.
+Den inkommande åtgärden omfattar prestandaförbättringar som säkerställer att användare med höga kvantiteter av inleverans kan bokföra över många butiker eller företag och stora lagerdokument, kan bearbeta dessa dokument till Commerce headquarters utan att uppleva timeout eller misslyckanden. Dessa förbättringar kräver användning av ett asynkront dokumentramverk.
 
-När ett asynkront dokumentramverk används kan du tilldela ändringar i inkommande dokument från kassa till Commerce-administration och sedan flytta vidare till andra uppgifter medan behandlingen till Commerce-administration sker i bakgrunden. Du kan kontrollera statusen för dokumentet via dokumentlistsidan **inkommande åtgärd** i POS för att säkerställa att bokföringen lyckades. I kassaprogrammet kan du även använda listan aktiva dokument i inkommande åtgärd för att se alla dokument som inte kunde bokföras i Commerce-administration. Om ett dokument misslyckas kan kassaanvändare göra korrigeringar till det och sedan försöka bearbeta det till Commerce-administration.
+När ett asynkront dokumentramverk används kan du tilldela ändringar i inkommande dokument från kassa till Commerce headquarters och sedan flytta vidare till andra uppgifter medan behandlingen till Commerce headquarters sker i bakgrunden. Du kan kontrollera statusen för dokumentet via dokumentlistsidan **inkommande åtgärd** i POS för att säkerställa att bokföringen lyckades. I kassaprogrammet kan du även använda listan aktiva dokument i inkommande åtgärd för att se alla dokument som inte kunde bokföras i Commerce headquarters. Om ett dokument misslyckas kan kassaanvändare göra korrigeringar till det och sedan försöka bearbeta det till Commerce headquarters.
 
 > [!IMPORTANT]
 > Det asynkrona dokumentramverket måste konfigureras innan ett företag försöker använda inkommande åtgärd i POS.
@@ -68,9 +68,9 @@ De batchjobb som du skapar kommer att användas för att bearbeta dokument som m
 
 2. Tidsplanera de nya batchjobben så att de körs återkommande. Ställ t.ex. in schemat så att jobben körs var femte minut.
 
-## <a name="prerequisite-add-inbound-operation-to-the-pos-screen-layout"></a>Förutsättning: Lägg till inkommande operation i kassaskärmlayout
+## <a name="prerequisite-add-inbound-operation-to-the-pos-screen-layout"></a>Förutsättning: Lägg till inkommande åtgärd i kassaskärmlayout
 
-Innan din organisation kan använda funktionen för inkommande åtgärd måste den konfigurera kassaåtgärden **inkommande åtgärd** på en eller flera av dina [kassaskärmlayouter](/dynamics365/unified-operations/retail/pos-screen-layouts). Innan du distribuerar den nya operationen i en produktionsmiljö bör du kontrollera att du testar den och träna dina användare att använda den.
+Innan din organisation kan använda funktionen för inkommande åtgärd måste den konfigurera kassaåtgärden **inkommande åtgärd** på en eller flera av dina [kassaskärmlayouter](/dynamics365/unified-operations/retail/pos-screen-layouts). Innan du distribuerar den nya åtgärden i en produktionsmiljö bör du kontrollera att du testar den och träna dina användare att använda den.
 
 ## <a name="overview"></a>Översikt
 
@@ -85,27 +85,27 @@ När den inkommande åtgärden startas från kassaprogrammet visas en listsida. 
 Den inkommande lagerdokumentlistan har tre flikar:
 
 - **Aktiv** – på den här fliken visas dokument som är helt eller delvis öppna och som innehåller rader eller kvantiteter på rader som fortfarande måste inlevereras.
-- **Utkast** – på den här fliken visas nya inkommande begäran om överföringsorder som butiken har skapat. Dokumenten har dock endast sparats lokalt. De har inte skickats in till Commerce-administration för bearbetning.
+- **Utkast** – på den här fliken visas nya inkommande begäran om överföringsorder som butiken har skapat. Dokumenten har dock endast sparats lokalt. De har inte skickats in till Commerce headquarters för bearbetning.
 - **Slutförd** – på den här fliken visas en lista över inköpsorder och överföringsorderdokument som butiken har inlevererat under de senaste sju dagarna. Denna flik är endast för informationssyften. All information om dokumenten är skrivskyddade data för butiken.
 
 När du visar dokument på någon av flikarna kan fältet **status** hjälpa dig att förstå vilken fas dokumentet finns i.
 
-- **Utkast** – överföringsorderdokumentet har endast sparats lokalt i butikens kanaldatabas. Ingen information om begäran om överföringsorder har ännu skickats till Commerce-administration.
-- **Begärt** – inköpsordern eller överföringsordern har skapats i Commerce-administration och är helt öppen. Inga inleveranser har bearbetats än dokumentet. För dokument av typen inköpsorderdokument kan inleveransen påbörjas när statusen är **begärd**.
-- **Delvis levererad** – i överföringsorderdokumentet finns en eller flera rader eller delrad antal som har bokförts som levererade av det avgående lagerstället. Dessa levererade rader är tillgängliga för inleverans via den inkommande operationen.
-- **Fullständigt levererad** – överföringsordern har fått alla rader och fullständiga rad antal som har bokförts som levererade av det utgående lagerstället. Hela dokumentet är tillgängligt för inleverans via den inkommande operationen.
+- **Utkast** – överföringsorderdokumentet har endast sparats lokalt i butikens kanaldatabas. Ingen information om begäran om överföringsorder har ännu skickats till Commerce headquarters.
+- **Begärt** – inköpsordern eller överföringsordern har skapats i Commerce headquarters och är helt öppen. Inga inleveranser har bearbetats än dokumentet. För dokument av typen inköpsorderdokument kan inleveransen påbörjas när statusen är **begärd**.
+- **Delvis levererad** – i överföringsorderdokumentet finns en eller flera rader eller delrad antal som har bokförts som levererade av det avgående lagerstället. Dessa levererade rader är tillgängliga för inleverans via den inkommande åtgärden.
+- **Fullständigt levererad** – överföringsordern har fått alla rader och fullständiga rad antal som har bokförts som levererade av det utgående lagerstället. Hela dokumentet är tillgängligt för inleverans via den inkommande åtgärden.
 - **Delvis inlevererad** – vissa av raderna eller rad kvantiteterna på inköpsordern eller överföringsorderdokumentet har inlevererats emot av butiken, men vissa rader förblir öppna.
 - **Helt inlevererat** – alla rader och kvantiteter på inköpsordern eller överföringsorderdokumentet har mottagits i sin helhet. Dokumenten är bara tillgängliga på fliken **Slutför** och är skrivskyddade av butiksanvändarna.
 - **Pågår** – denna status används för att informera enhetsanvändare om att dokumentet aktivt bearbetas av en annan användare.
 - **Pausad** – den här statusen visas när **Paus mottagning** har valts för att tillfälligt stoppa mottagningsprocessen.
-- **Bearbetning i HQ** – dokumentet har skickats till Commerce-administration från kassaprogrammet men har ännu inte bokförts i Commerce-administration. Dokumentet går via den asynkrona bokföringsprocessen för dokument. När dokumentet har bokförts till Commerce-administration ska dess status uppdateras till **helt inlevererat** eller **delvis inlevererat**.
-- **Bearbetningen misslyckades** – dokumentet bokfördes i Commerce-administration och avvisades. Fönstret **information** visar orsaken till bokföringsfelet. Dokumentet måste redigeras för att korrigera dataärenden och måste skickas vidare till Commerce-administration för bearbetning.
+- **Bearbetning i HQ** – dokumentet har skickats till Commerce headquarters från kassaprogrammet men har ännu inte bokförts i Commerce headquarters. Dokumentet går via den asynkrona bokföringsprocessen för dokument. När dokumentet har bokförts till Commerce headquarters ska dess status uppdateras till **helt inlevererat** eller **delvis inlevererat**.
+- **Bearbetningen misslyckades** – dokumentet bokfördes i Commerce headquarters och avvisades. Fönstret **information** visar orsaken till bokföringsfelet. Dokumentet måste redigeras för att korrigera dataärenden och måste skickas vidare till Commerce headquarters för bearbetning.
 
-När du väljer en dokumentrad i listan visas ett **detalj**-fönster. I det här fönstret visas ytterligare information om dokumentet, t.ex. information om leverans och datum. En förloppsindikator visar hur många artiklar som fortfarande måste bearbetas. Om dokumentet inte kunde bearbetas utan problem till Commerce-administration, visar fönstret **Detaljer** också felmeddelanden som hör till felet.
+När du väljer en dokumentrad i listan visas ett **detalj**-fönster. I det här fönstret visas ytterligare information om dokumentet, t.ex. information om leverans och datum. En förloppsindikator visar hur många artiklar som fortfarande måste bearbetas. Om dokumentet inte kunde bearbetas utan problem till Commerce headquarters, visar fönstret **Detaljer** också felmeddelanden som hör till felet.
 
 I vyn sida i dokument listan kan du välja **orderdetaljer** i appfältet om du vill visa dokumentinformationen. Du kan också aktivera inleveransbearbetning på kvalificerade dokumentrader.
 
-I vyn sidvisning i dokumentlista kan du också skapa en ny inkommande överföringsorderbegäran för en butik. Dokumentens status är **utkast** och de kan justeras eller raderas tills de skickas till Commerce-administration för bearbetning. När de har skickats till Commerce-administration kan överföringsorderraderna inte längre ändras från kassaprogrammet.
+I vyn sidvisning i dokumentlista kan du också skapa en ny inkommande överföringsorderbegäran för en butik. Dokumentens status är **utkast** och de kan justeras eller raderas tills de skickas till Commerce headquarters för bearbetning. När de har skickats till Commerce headquarters kan överföringsorderraderna inte längre ändras från kassaprogrammet.
 
 ## <a name="receiving-process"></a>Inleveransprocess
 
@@ -135,19 +135,19 @@ Valideringar sker under mottagningsprocessen för dokumentraderna. De inkluderar
 
 Du kan stänga den återstående kvantiteten på en inkommande inköpsorder under inleveransen om speditören har bekräftat att de inte kan leverera den fullständiga kvantitet som har begärts. Om du vill göra det måste företaget konfigureras att tillåta underleverans av inköpsorder. Dessutom måste en undertoleransprocent definieras för inköpsorderraden.
 
-Om du vill konfigurera företaget för att tillåta under leverans av inköpsorder, i Commerce-administration, gå till **Anskaffning och källa** > **Inställningar** > **Anskaffnings- och källparametrar**. På fliken **leverans**, aktivera parametern **acceptera underleverans**. Kör sedan distributionschemajobb **1070** (**kanalkonfiguration**) för att synkronisera ändringarna av inställningar till kanaler.
+Om du vill konfigurera företaget för att tillåta under leverans av inköpsorder, i Commerce headquarters, gå till **Anskaffning och källa** > **Inställningar** > **Anskaffnings- och källparametrar**. På fliken **leverans**, aktivera parametern **acceptera underleverans**. Kör sedan distributionschemajobb **1070** (**kanalkonfiguration**) för att synkronisera ändringarna av inställningar till kanaler.
 
-Toleransprocent för underleverans för en inköpsorderrad kan fördefinieras på produkter som en del av produktkonfigurationerna i Commerce-administration. De kan också ställas in eller skrivas över på en specifik inköpsorder i Commerce-administration.
+Toleransprocent för underleverans för en inköpsorderrad kan fördefinieras på produkter som en del av produktkonfigurationerna i Commerce headquarters. De kan också ställas in eller skrivas över på en specifik inköpsorder i Commerce headquarters.
 
 När en organisation slutför konfigureringen av underleveranser för inköpsorder kommer kassaanvändare att se alternativet **Stäng resterande kvantitet** i fönstret **Information** när de väljer en inkommande inköpsorderrad i åtgärden **Inkommande lager**. Om en användare stänger den återstående kvantiteten utförs en validering i POS i syfte att verifiera att den kvantitet som stängs ligger inom den procentsats för underleverans som har definierats på inköpsorderraden. Om underleveransens tolerans överskrids visas ett felmeddelande och användaren kan inte stänga den återstående kvantiteten förrän den tidigare mottagna kvantiteten plus den inlevererade kvantiteten **Ta emot nu** uppfyller eller överskrider den minsta kvantitet som måste inlevereras baserat på procentsatsen för underleveranstolerans. 
 
-Om alternativet **Stäng resterande kvantitet** option aktiverad för en inköpsorderrad när användaren slutför inleveransen med hjälp av åtgärden **Slutför mottagande** skickas en stängningsbegäran också till Commerce-administration och eventuellt obetalt antal av denna orderrad kommer att annulleras. Vid den punkten betraktas raden som fullständigt inlevererad. 
+Om alternativet **Stäng resterande kvantitet** option aktiverad för en inköpsorderrad när användaren slutför inleveransen med hjälp av åtgärden **Slutför mottagande** skickas en stängningsbegäran också till Commerce headquarters och eventuellt obetalt antal av denna orderrad kommer att annulleras. Vid den punkten betraktas raden som fullständigt inlevererad. 
 
 ### <a name="receiving-location-controlled-items"></a>Inleveransplatskontrollerade artiklar
 
 Om artiklarna som ska inlevereras är platsstyrda kan användarna välja den plats som de vill inleverera artiklar från under inleveransprocessen. Vi rekommenderar att du konfigurerar en standardinleveransplats för butikslagret, så att processen blir mer effektiv. Även om en standardplats har konfigurerats kan användarna åsidosätta inleveransplatsen på valda rader när de behövs.
 
-Operationen respekterar konfigurationen **Tom inleverans tillåten** på lagringsdimensionen **Plats** och kräver inte att en platsdimension anges om en tom inleverans har konfigurerats. Om tomma inleveransplatser inte är tillåtna för en artikel, visar kassaprogrammet ett fel och kräver att en plats registreras innan inleveransen kan bokföras.
+Åtgärden respekterar konfigurationen **Tom inleverans tillåten** på lagringsdimensionen **Plats** och kräver inte att en platsdimension anges om en tom inleverans har konfigurerats. Om tomma inleveransplatser inte är tillåtna för en artikel, visar kassaprogrammet ett fel och kräver att en plats registreras innan inleveransen kan bokföras.
 
 ### <a name="receive-all"></a>Ta emot alla
 
@@ -159,11 +159,11 @@ I Commerce version 10.0.14 och senare kan användare ta emot en produkt som inte
 
 Den här funktionen fungerar bara för inleverans av inköpsorder. Det går inte att ta emot artiklar mot överföringsorder när artiklarna inte tidigare har beställts och levererats från det utgående lagerstället.
 
-Användare kan inte lägga till nya produkter i inköpsordern under kassamottagning om [arbetsflödet för ändringshantering av inköpsorder](../supply-chain/procurement/purchase-order-approval-confirmation.md) är aktiverat i Commerce-administration (HQ). Om du vill aktivera ändringshantering måste alla ändringar av en inköpsorder först godkännas innan mottagning tillåts. Eftersom den här processen tillåter att en mottagare lägger till nya rader i inköpsordern misslyckas inleveransen om arbetsflödet för ändringshantering aktiveras. Om ändringshantering aktiveras för alla inköpsorder eller för den leverantör som är kopplad till inköpsordern aktivt som inlevereras i POS, kan användaren inte lägga till nya produkter i inköpsordern under inleverans i kassa.
+Användare kan inte lägga till nya produkter i inköpsordern under kassamottagning om [arbetsflödet för ändringshantering av inköpsorder](../supply-chain/procurement/purchase-order-approval-confirmation.md) är aktiverat i Commerce headquarters (HQ). Om du vill aktivera ändringshantering måste alla ändringar av en inköpsorder först godkännas innan mottagning tillåts. Eftersom den här processen tillåter att en mottagare lägger till nya rader i inköpsordern misslyckas inleveransen om arbetsflödet för ändringshantering aktiveras. Om ändringshantering aktiveras för alla inköpsorder eller för den leverantör som är kopplad till inköpsordern aktivt som inlevereras i POS, kan användaren inte lägga till nya produkter i inköpsordern under inleverans i kassa.
 
 Funktionen som gör det möjligt att lägga till rader kan inte användas som en lösning för att ta emot ytterligare kvantiteter av produkter som redan finns på inköpsordern. Överleverans hanteras via standardinställningarna för [Överleverans](#over-receiving-validations) för produktraden på inköpsordern.
 
-Om **Lägg till rader i inköpsordern under den tidpunkt då inleveransen** är aktiverad och en användare tar emot den **inkommande operationen** i POS, om användaren läser in eller nycklar för en produktstreckkod eller ett produktnummer som inte är identifierat som en artikel på den aktuella inköpsordern, men som är identifierad som en giltig artikel, får användaren ett meddelande om att artikeln läggs till Om användaren lägger till artikeln på inköpsordern beaktas den kvantitet som angetts i **inleverans nu** den beställda kvantiteten för inköpsorderraden.
+Om **Lägg till rader i inköpsordern under den tidpunkt då inleveransen** är aktiverad och en användare tar emot den **inkommande åtgärden** i POS, om användaren läser in eller nycklar för en produktstreckkod eller ett produktnummer som inte är identifierat som en artikel på den aktuella inköpsordern, men som är identifierad som en giltig artikel, får användaren ett meddelande om att artikeln läggs till Om användaren lägger till artikeln på inköpsordern beaktas den kvantitet som angetts i **inleverans nu** den beställda kvantiteten för inköpsorderraden.
 
 När inleveransen av inköpsordern slutförs och skickas till HQ för bearbetning, skapas de tillagda raderna i inköpsorderns huvuddokument. På inköpsorderraden i HQ kommer en flagga **tillagd av POS** på fliken **Allmänt** inköpsorderraden att läggas till. Flaggan **tillagd av POS** anger att inköpsorderraden lades till av kassa mottagande processen och inte var en rad som fanns på inköpsordern före inleveransen.
 
@@ -179,15 +179,15 @@ När du väljer **Pausa inleverans** ändras dokumentets status till **Pausa**. 
 
 ### <a name="review"></a>Granska
 
-Innan det slutliga åtagandet från kvittot till Commerce-administration (HQ) kan du validera det inkommande dokumentet med hjälp av granskningsfunktionen. Granskningen varnar för data som saknas eller är felaktiga och ger dig möjlighet att rätta till problemen innan du skickar in begäran om kvitto. Om du vill aktivera funktionen **Granska** i programfältet aktiverar du funktionen **Aktivera validering i kassans inkommande och utgående lageråtgärder** via arbetsytan **Funktionshantering** i Commerce-administration (HQ).
+Innan det slutliga åtagandet från kvittot till Commerce headquarters (HQ) kan du validera det inkommande dokumentet med hjälp av granskningsfunktionen. Granskningen varnar för data som saknas eller är felaktiga och ger dig möjlighet att rätta till problemen innan du skickar in begäran om kvitto. Om du vill aktivera funktionen **Granska** i programfältet aktiverar du funktionen **Aktivera validering i kassans inkommande och utgående lageråtgärder** via arbetsytan **Funktionshantering** i Commerce headquarters (HQ).
 
 Funktionen **granska** validerar följande problem i ett inkommande dokument:
 
-- **Överleverans** – den mottagna nu kvantiteten är större än den beställda kvantiteten. Problemets allvar beror på överleveransens konfiguration i Commerce-administration (HQ).
-- **Underleverans** – den mottagna nu kvantiteten är mindre än den beställda kvantiteten. Problemets allvar beror på underleveransens konfiguration i Commerce-administration (HQ).
+- **Överleverans** – den mottagna nu kvantiteten är större än den beställda kvantiteten. Problemets allvar beror på överleveransens konfiguration i Commerce headquarters (HQ).
+- **Underleverans** – den mottagna nu kvantiteten är mindre än den beställda kvantiteten. Problemets allvar beror på underleveransens konfiguration i Commerce headquarters (HQ).
 - **Serienummer** – serienumret har inte angetts eller validerats för en serialiserad artikel som kräver att serienumret registreras i lagret.
 - **Ingen plats angiven** – ingen plats har angetts för en plats kontrollerad artikel där tom plats inte är tillåten.
-- **Borttagna rader** – ordern har rader tagits bort av Commerce-administration (HQ) som inte är känd för kassaprogram.
+- **Borttagna rader** – ordern har rader tagits bort av Commerce headquarters (HQ) som inte är känd för kassaprogram.
 
 Ställ in parametern **Aktivera automatisk validering** till **Ja** i **Commerce-parametrar** > **Lager** > **Lagerhantering** om du vill att valideringen ska utföras automatiskt när **Slutför mottagande** är vald.
 
@@ -195,27 +195,27 @@ Ställ in parametern **Aktivera automatisk validering** till **Ja** i **Commerce
 
 När du har fyllt i alla kvantiteter **Inleverans nu** för produkter måste du välja **slutför inleverans** i appfältet för att behandla inleveransen.
 
-När användarna slutför en inköpsorder, ombeds de ange ett värde i fältet **inleveransnummer** om funktionen har konfigurerats. Vanligtvis är detta värde detsamma som ID:t för leverantörens följesedel. Data för **Inleveransnummer** kommer att lagras i Produktinleveransjournal i Commerce-administration. Inleveransnumren hämtas inte för inleveranser av överföringsorder.
+När användarna slutför en inköpsorder, ombeds de ange ett värde i fältet **inleveransnummer** om funktionen har konfigurerats. Vanligtvis är detta värde detsamma som ID:t för leverantörens följesedel. Data för **Inleveransnummer** kommer att lagras i Produktinleveransjournal i Commerce headquarters. Inleveransnumren hämtas inte för inleveranser av överföringsorder.
 
-När asynkron dokumentbearbetning används skickas kvittot via ett asynkront dokumentramverk. Hur lång tid det tar att bokföra dokumentet beror på dokumentets storlek (antalet rader) och den allmänna bearbetningstrafik som sker på servern. Vanligtvis förekommer denna process på några sekunder. Om dokumentbokföringen misslyckas meddelas användaren via dokument **Ingående operation** där dokumentstatus uppdateras till **bearbetningen misslyckades**. Användaren kan sedan välja det misslyckade dokumentet i POS för att visa felmeddelandena och orsaken till misslyckandet i fönstret **information**. Ett misslyckat dokument förblir oförändrat och kräver att användaren går tillbaka till dokumentraderna genom att välja **orderdetaljer** i POS. Användaren måste sedan uppdatera dokumentet med korrigeringar baserat på felen. När ett dokument har korrigerats kan användaren försöka att bearbeta det genom att välja **Slutför** på appfältet.
+När asynkron dokumentbearbetning används skickas kvittot via ett asynkront dokumentramverk. Hur lång tid det tar att bokföra dokumentet beror på dokumentets storlek (antalet rader) och den allmänna bearbetningstrafik som sker på servern. Vanligtvis förekommer denna process på några sekunder. Om dokumentbokföringen misslyckas meddelas användaren via dokument **Ingående åtgärd** där dokumentstatus uppdateras till **bearbetningen misslyckades**. Användaren kan sedan välja det misslyckade dokumentet i POS för att visa felmeddelandena och orsaken till misslyckandet i fönstret **information**. Ett misslyckat dokument förblir oförändrat och kräver att användaren går tillbaka till dokumentraderna genom att välja **orderdetaljer** i POS. Användaren måste sedan uppdatera dokumentet med korrigeringar baserat på felen. När ett dokument har korrigerats kan användaren försöka att bearbeta det genom att välja **Slutför** på appfältet.
 
 ## <a name="create-an-inbound-transfer-order"></a>Skapa en ingående överföringsorder
 
-Från POS kan användare skapa nya överföringsorderdokument. Starta processen genom att välja **ny** i appfältet medan du är i huvuddokumentlistan för **ingående operation**. Du uppmanas sedan att välja lagerställe eller butik med **överföring från** som ger lager till din butiksplats. Värdena begränsas till det val som har angetts i konfigurationen för butikens uppfyllelsegrupp. I en begäran om ingående överföringar är den aktuella butiken alltid **överföringen till** lagerstället för överföringsordern. Det går inte att ändra värdet.
+Från POS kan användare skapa nya överföringsorderdokument. Starta processen genom att välja **ny** i appfältet medan du är i huvuddokumentlistan för **ingående åtgärd**. Du uppmanas sedan att välja lagerställe eller butik med **överföring från** som ger lager till din butiksplats. Värdena begränsas till det val som har angetts i konfigurationen för butikens uppfyllelsegrupp. I en begäran om ingående överföringar är den aktuella butiken alltid **överföringen till** lagerstället för överföringsordern. Det går inte att ändra värdet.
 
-Du kan ange värden i fälten **Transportdatum**, **Inleveransdatum** och **Leveranssätt** efter behov. Du kan också lägga till en notering som kommer att lagras tillsammans med överföringsorder rubriken, som en bilaga till dokumentet i Commerce-administration.
+Du kan ange värden i fälten **Transportdatum**, **Inleveransdatum** och **Leveranssätt** efter behov. Du kan också lägga till en notering som kommer att lagras tillsammans med överföringsorder rubriken, som en bilaga till dokumentet i Commerce headquarters.
 
 När informationen i huvudet har skapats kan du lägga till produkter på överföringsordern. Om du vill starta processen med att lägga till artiklar och begärda kvantiteter, välj **Lägg till produkt**. I fönstret **information** kan du också lägga till en orderspecifik notering till journalraderna. Dessa anteckningar sparas som bifogade filer i en rad.
 
-När rader har angetts på den ingående överföringsordern måste du välja **Spara** för att spara dokumentändringarna lokalt eller **skicka begäran** för att skicka orderdetaljerna till Commerce-administration för vidare bearbetning. Om du väljer **spara** sparas utkastdokumentet i kanaldatabasen och det avgående lagerstället kan inte köra dokumentet förrän det har bearbetats via **Skicka in begäran**. Du bör bara **Spara** endast om du inte är redo att genomföra begäran till Commerce-administration för bearbetning.
+När rader har angetts på den ingående överföringsordern måste du välja **Spara** för att spara dokumentändringarna lokalt eller **skicka begäran** för att skicka orderdetaljerna till Commerce headquarters för vidare bearbetning. Om du väljer **spara** sparas utkastdokumentet i kanaldatabasen och det avgående lagerstället kan inte köra dokumentet förrän det har bearbetats via **Skicka in begäran**. Du bör bara **Spara** endast om du inte är redo att genomföra begäran till Commerce headquarters för bearbetning.
 
-Om ett dokument sparas lokalt kan du hitta det på fliken **Utkast** på dokumentlistan **inkommande operation**. När dokumentet är i status **utkast** kan du redigera det genom att välja **redigera**. Du kan uppdatera, lägga till eller ta bort rader som du behöver. Du kan också ta bort hela dokumentet när det är i status **utkast** genom att välja **ta bort** på fliken **utkast**.
+Om ett dokument sparas lokalt kan du hitta det på fliken **Utkast** på dokumentlistan **inkommande åtgärd**. När dokumentet är i status **utkast** kan du redigera det genom att välja **redigera**. Du kan uppdatera, lägga till eller ta bort rader som du behöver. Du kan också ta bort hela dokumentet när det är i status **utkast** genom att välja **ta bort** på fliken **utkast**.
 
-När utkastet till dokumentet har skickats till Commerce-administration visas det på fliken **aktiv** och statusvärdet **begärt**. I det här läget kan användare i det inkommande lagret eller lager stället inte längre redigera det begärda inkommande orderdokumentet. Endast användare i det utgående lagerstället kan redigera dokumentet, genom att välja **utgående operation** i kassaprogrammet. Redigeringslåset garanterar att det inte uppstår konflikter eftersom en inkommande begärande ändrar överföringsordern samtidigt som den utgående speditören aktivt plockar och levererar ordern. Om det krävs ändringar från inkommande lager eller lagerställe efter att överföringsordern har skickats, ska den utgående speditören kontaktas och uppmanas att ange ändringarna.
+När utkastet till dokumentet har skickats till Commerce headquarters visas det på fliken **aktiv** och statusvärdet **begärt**. I det här läget kan användare i det inkommande lagret eller lager stället inte längre redigera det begärda inkommande orderdokumentet. Endast användare i det utgående lagerstället kan redigera dokumentet, genom att välja **utgående åtgärd** i kassaprogrammet. Redigeringslåset garanterar att det inte uppstår konflikter eftersom en inkommande begärande ändrar överföringsordern samtidigt som den utgående speditören aktivt plockar och levererar ordern. Om det krävs ändringar från inkommande lager eller lagerställe efter att överföringsordern har skickats, ska den utgående speditören kontaktas och uppmanas att ange ändringarna.
 
-När dokumentet är i status **begärd** visas det på fliken **Aktiv**. Det kan dock inte tas emot av den inkommande butiken eller lagerstället. När det ingående lagerstället har levererat en del av eller hela överföringsordern kan den ankommande butiken eller lagerstället bokföra inleveranser i kassa. När den utgående sidan bearbetar dokumenten för överföringsorder, uppdateras deras status från **Begärd** till **Levererad** eller **Delvis levererad**. Efter att dokumenten är i status **levererad** eller **Delvis levererad** kan inkommande lager eller lagerställe bokföra inleveranser mot dem genom att använda den inkommande operationen för inleverans.
+När dokumentet är i status **begärd** visas det på fliken **Aktiv**. Det kan dock inte tas emot av den inkommande butiken eller lagerstället. När det ingående lagerstället har levererat en del av eller hela överföringsordern kan den ankommande butiken eller lagerstället bokföra inleveranser i kassa. När den utgående sidan bearbetar dokumenten för överföringsorder, uppdateras deras status från **Begärd** till **Levererad** eller **Delvis levererad**. Efter att dokumenten är i status **levererad** eller **Delvis levererad** kan inkommande lager eller lagerställe bokföra inleveranser mot dem genom att använda den inkommande åtgärden för inleverans.
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Utgående lageråtgärder i POS](pos-outbound-inventory-operation.md)
 

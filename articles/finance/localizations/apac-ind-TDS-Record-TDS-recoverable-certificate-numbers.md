@@ -1,6 +1,6 @@
 ---
 title: Registrera återställningsbara certifikatnummer för TDS
-description: I det här avsnittet beskrivs hur du använder sidan Återställningsbara certifikat för att registrera certifikatnummer och datum för TDS-certifikat (skatteavdrag vid källan) som har mottagits för en viss leverantör, kund eller redovisning.
+description: I den här artikeln beskrivs hur du använder sidan Återställningsbara certifikat för att registrera certifikatnummer och datum för TDS-certifikat (skatteavdrag vid källan) som har mottagits för en viss leverantör, kund eller redovisning.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 5d62f560fe58a5fb7bd158bed9bcb111d75c7f00
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 513412e292167795fad9d80b68e6e5e14dbd13c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726502"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853268"
 ---
 # <a name="record-tds-recoverable-certificate-numbers"></a>Registrera återställningsbara certifikatnummer för TDS
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du använder sidan **Återställningsbara certifikat** för att registrera certifikatnummer och datum för TDS-certifikat (skatteavdrag vid källan) som har mottagits för en viss leverantör, kund eller redovisning. Om du vill uppdatera TDS-certifikatnummer och datum som har registrerats för TDS-transaktioner på den här sidan, använder du sidan **Uppdatera certifikat** (**Redovisning \> Periodisk \> Källskatt \> Uppdatera certifikat**). När du är klar med att uppdatera TDS-certifikatnummer stänger du dem.
+I den här artikeln beskrivs hur du använder sidan **Återställningsbara certifikat** för att registrera certifikatnummer och datum för TDS-certifikat (skatteavdrag vid källan) som har mottagits för en viss leverantör, kund eller redovisning. Om du vill uppdatera TDS-certifikatnummer och datum som har registrerats för TDS-transaktioner på den här sidan, använder du sidan **Uppdatera certifikat** (**Redovisning \> Periodisk \> Källskatt \> Uppdatera certifikat**). När du är klar med att uppdatera TDS-certifikatnummer stänger du dem.
 
 Följ dessa steg om du vill registrera nummer och datum för TDS-certifikat.
 

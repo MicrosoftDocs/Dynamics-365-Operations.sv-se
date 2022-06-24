@@ -1,6 +1,6 @@
 ---
 title: Momsdeklaration för (Tyskland)
-description: I det här avsnittet beskrivs hur du ställer in och genererar en förhandsdeklaration för moms (VAT) för Tyskland i det officiella XML-formatet.
+description: I den här artikeln beskrivs hur du ställer in och genererar en förhandsdeklaration för moms (VAT) för Tyskland i det officiella XML-formatet.
 author: anasyash
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: a761a145a876584728098a92b3f3e93ac718a164
-ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.openlocfilehash: ff52963c03ec2eb662eb0c20ef2a960e3b999167
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "8402813"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879544"
 ---
 # <a name="vat-declaration-germany"></a>Momsdeklaration för (Tyskland)
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in och genererar en förhandsdeklaration för moms (VAT) för Tyskland i det officiella XML-formatet. I det här avsnittet beskrivs även hur du förhandsgranskar momsdeklarationen i Microsoft Excel.
+I den här artikeln beskrivs hur du ställer in och genererar en förhandsdeklaration för moms (VAT) för Tyskland i det officiella XML-formatet. I den här artikeln beskrivs även hur du förhandsgranskar momsdeklarationen i Microsoft Excel.
 
 Om du vill generera rapporten automatiskt skapar du tillräckligt med momskoder för att hålla en separat momsredovisning för respektive ruta i förhandsdeklarationen för moms. I de programspecifika parametrarna för det elektroniska rapporteringsformatet (ER) för förhandsdeklarationen för moms måste du dessutom koppla momskoder till sökresultatet för rutorna i momsdeklarationen.
 
-För Tyskland måste du konfigurera **Sökning i rapportfält**. Mer information om hur du konfigurerar programspecifika parametrar finns i avsnittet [Ställa in programspecifika parametrar för momsdeklarationsfält](#set-up-application-specific-parameters-for-vat-declaration-fields) längre fram i det här avsnittet.
+För Tyskland måste du konfigurera **Sökning i rapportfält**. Mer information om hur du konfigurerar programspecifika parametrar finns i avsnittet [Ställa in programspecifika parametrar för momsdeklarationsfält](#set-up-application-specific-parameters-for-vat-declaration-fields) längre fram i den här artikeln.
 
 I följande tabell visar kolumnen Sökresultat det sökresultat som är förkonfigurerat för en viss momsdeklarationsrad i momsdeklarationsformatet. Använd den här informationen för att korrekt koppla momskoder till sökresultatet och sedan till raden i momsdeklarationen.
 
@@ -176,7 +176,7 @@ Följ dessa steg för att definiera vilka momskoder som genererar vilka rutor i 
 
     | Fält                  | Beskrivning                                                                                                                                                                                                                                                                                                          |
     |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Sökningsresultat          | Välj värdet i rapportfältet. Mer information om värdena och deras tilldelning till momsdeklarationsrader finns i [översiktsavsnittet för momsdeklarationen](#vat-declaration-overview) tidigare i det här avsnittet.                                                                                               |
+    | Sökningsresultat          | Välj värdet i rapportfältet. Mer information om värdena och deras tilldelning till momsdeklarationsrader finns i [översiktsavsnittet för momsdeklarationen](#vat-declaration-overview) tidigare i den här artikeln.                                                                                               |
     | Momskod               | Välj den momskod som ska associeras med rapportfältet. Bokförda momstransaktioner med den valda momskoden samlas in i rätt deklarationsruta. Vi rekommenderar att du separerar momskoder på ett sådant sätt att en momskod bara genererar belopp i en deklarationsruta. |
     | Transaktionsklassificerare | Om du har skapat tillräckligt med momskoder för att bestämma en deklarationsruta väljer du **\*Inte tom\***. Om du inte skapat tillräckligt med momskoder så att en momskod bara genererar belopp i en deklarationsruta kan du ställa in en transaktionsklassificerare. Följande transaktionsklassifierare är tillgängliga:</br>-   **Inköp**</br>-   **PurchaseExempt** (momsbefriat inköp)</br>-   **PurchaseReverseCharge** (momsfordran från inköpsåterköpstillägg)</br>-   **Försäljning**</br>-   **SalesExempt** (momsbefriad försäljning)</br>-   **SalesReverseCharge** (skatt som ska betalas från en omvänd skattskyldighet eller en omvänd skattskyldighet)</br>-   **Importavgift**. </br>För varje transaktionsklassificerare finns det också en klassificerare för kreditfakturan. En av dessa klassificerare är till exempel **PurchaseCreditNote** (inköpskreditfaktura).</br>Se till att skapa två rader för varje momskod: en som har transaktionsklassens värde och en som har transaktionsklassen för kreditfakturavärde. |
 
@@ -212,7 +212,7 @@ Om du konfigurerar momsdeklarationen i en juridisk person där det finns [flera 
 Datapaketet innehåller inställningar för elektroniska meddelanden som används för att generera momsdeklarationen i XML-format och sedan kan du förhandsgranska den i Excel. Du kan utöka dessa inställningar eller skapa egna. Mer information om hur du arbetar med elektroniska meddelanden och skapar egna inställningar finns i [Elektroniska meddelanden](../general-ledger/electronic-messaging.md).
 
 1. I biblioteket för delade tillgångar i [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), välj **Datapaket** som tillgångstyp och laddar sedan ned paketet **DE momsdeklaration EM-paket**. Den hämtade filen bär namnet **DE VAT declaration EM package.zip**.
-2. I Dynamics 365 Finance, i arbetsytan **Datahantering** välj **Importera**.
+2. I Dynamics 365 Finance i arbetsytan **Datahantering** väljer du **Importera**.
 3. På snabbfliken **Importera**, i fältet **Gruppnamn**, anger du ett namn för jobbet.
 4. På snabbfliken **Vald entiteter**, välj **Lägg till fil**.
 5. I dialogrutan **Lägg till fil** ser du till att fältet **Källdataformat** anges som **Paket**, väljer **Ladda upp och lägg till** och väljer sedan den zipfil som du tidigare laddade ned.

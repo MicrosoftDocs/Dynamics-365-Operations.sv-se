@@ -1,6 +1,6 @@
 ---
 title: Avancerade automatiska avgifter för flera kanaler
-description: Det här avsnittet beskriver funktionerna för hantering av ytterligare avgifter för beställningar i handelskanal med hjälp av funktioner för avancerade automatiska avgifter.
+description: Denna artikel beskriver funktionerna för hantering av ytterligare avgifter för beställningar i Commerce-kanal med hjälp av funktioner för avancerade automatiska avgifter.
 author: hhaines
 ms.date: 03/24/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 69432e13424b08b75e8ce7c88eaf6be66db59e65
-ms.sourcegitcommit: 94ebdaae6dc996b205ac78ed546e38f91f4f46ed
+ms.openlocfilehash: 412f5befa255d12914444b57918f14ab51243bfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "8489628"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851141"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerade automatiska avgifter för flera kanaler
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller information om konfiguration och distribution av funktionen för avancerade automatiska avgifter som är tillgängliga i Dynamics 365 for Retail version 10.0.
+Denna artikel innehåller information om konfiguration och distribution av funktionen för avancerade automatiska avgifter som är tillgängliga i Dynamics 365 for Retail version 10.0.
 
 När avancerade funktioner för automatiska avgifter är aktiverade stöds order som har skapats i någon handelskanal (kassa, kundtjänst och online), kan utnyttja den [automatisk debitering](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurationer som fastställs i ERP-programmet för både huvud- och relaterade avgifter på radnivå.
 
@@ -45,7 +45,7 @@ På sidan **Butik och handel \> Administrationsinställning \> Parametrar \> Com
 
 ![Avancerade parametrar för automatiska debiteringar.](media/advancedchargesparameter.png)
 
-När avancerad automatiska avgifter aktiveras uppmanas användare inte längre att manuellt ange en fraktkostnad vid kassaterminalen när man skapar en leverera alla eller leverera utvalda kundorder. Kassans orderavgifter beräknas systematiskt och läggs till kassatransaktionen (om det finns en motsvarande tabell för automatiska avgifter som matchar kriteriet om ordern som skapats). Användare kan också lägga till eller underhålla sidhuvud eller radnivå tillägg manuellt via tillagda kassaoperationer som kan läggas till kassaskärmens layout.
+När avancerad automatiska avgifter aktiveras uppmanas användare inte längre att manuellt ange en fraktkostnad vid kassaterminalen när man skapar en leverera alla eller leverera utvalda kundorder. Kassans orderavgifter beräknas systematiskt och läggs till kassatransaktionen (om det finns en motsvarande tabell för automatiska avgifter som matchar kriteriet om ordern som skapats). Användare kan också lägga till eller underhålla sidhuvud eller radnivå tillägg manuellt via tillagda kassaåtgärder som kan läggas till kassaskärmens layout.
 
 När avancerade automatiska tillägg är aktiverade kommer befintliga **handelsparametrar** för **leveransavgiftskod** och **återbetala leveransavgifter** inte längre användas. Dessa parametrar kan endast användas om parametern **Använd avancerade automatiska avgifter** är inställd på **Nej**.
 
@@ -62,9 +62,9 @@ Följande nya åtgärder finns.
 - **140 – Lägg till radavgifter** – Använd denna åtgärd för att ge användaren möjlighet att manuellt lägga till en tilläggsavgift på radnivå till en försäljningstransaktionsrad i POS (och välj avgiftskoden som ska användas).
 - **143 – beräkna om avgifter** – Använd följande åtgärd för att utföra en fullständig ny beräkning av avgifterna för försäljningstransaktionen. Tidigare överskrivna automatiska avgifter för användare beräknas om utifrån den aktuella vagnkonfigurationen.
 
-Som med alla kassaoperationer kan säkerhetskonfigurationen kräva godkännande av chef för att utföra operationen.
+Som med alla kassaåtgärder kan säkerhetskonfigurationen kräva godkännande av chef för att utföra åtgärden.
 
-Det är viktigt att komma ihåg de ovan angivna kassaoperationerna kan också läggas till kassalayout även om parametern **Använd avancerade automatiska avgifter** inaktiveras. I det här scenariot får organisationer fortfarande fördelarna med att kunna visa manuellt tillagda avgifter och redigera dem med hjälp av åtgärden **Hantera avgifter**. Användare kan även använda åtgärderna **Lägg till huvudavgifter** och **Lägg till radavgifter** för kassatransaktioner även om parametern **Använd avancerade automatiska avgifter** är inaktiverad. Åtgärden **beräkna om avgifter** har begränsad funktionalitet om den används med **Använd avancerade automatiska avgifter** inaktiverad. I detta scenario kan inget beräknas om och eventuella avgifter som har lagts till manuellt i transaktionen återställs bara till 0,00 $.
+Det är viktigt att komma ihåg de ovan angivna kassaåtgärderna kan också läggas till kassalayout även om parametern **Använd avancerade automatiska avgifter** inaktiveras. I det här scenariot får organisationer fortfarande fördelarna med att kunna visa manuellt tillagda avgifter och redigera dem med hjälp av åtgärden **Hantera avgifter**. Användare kan även använda åtgärderna **Lägg till huvudavgifter** och **Lägg till radavgifter** för kassatransaktioner även om parametern **Använd avancerade automatiska avgifter** är inaktiverad. Åtgärden **beräkna om avgifter** har begränsad funktionalitet om den används med **Använd avancerade automatiska avgifter** inaktiverad. I detta scenario kan inget beräknas om och eventuella avgifter som har lagts till manuellt i transaktionen återställs bara till 0,00 $.
 
 ## <a name="use-case-examples"></a>Använd fallexempel
 
@@ -176,7 +176,7 @@ Samma tillvägagångssätt kan användas i kundtjänst med funktionen ”Underh�
 
 ### <a name="editing-charges-on-a-pos-sales-transaction"></a>Redigera avgifter i en kassaförsäljningstransaktion
 
-Åtgärden **Hantera tillägg** (142) ska läggas till i [kassaskärmlayout](/dynamics365/unified-operations/retail/pos-screen-layouts) så att en användare kan visa och redigera eller åsidosätta eventuella systemberäknade eller manuellt skapade avgifter på huvud- eller radnivå. Om operationen inte läggs till kommer användaren inte att kunna justera värdet av avgifterna på kassatransaktionen, och inte heller kan de visa information om avgifter såsom typ av avgiftskod kopplad till avgiften.
+Åtgärden **Hantera tillägg** (142) ska läggas till i [kassaskärmlayout](/dynamics365/unified-operations/retail/pos-screen-layouts) så att en användare kan visa och redigera eller åsidosätta eventuella systemberäknade eller manuellt skapade avgifter på huvud- eller radnivå. Om åtgärden inte läggs till kommer användaren inte att kunna justera värdet av avgifterna på kassatransaktionen, och inte heller kan de visa information om avgifter såsom typ av avgiftskod kopplad till avgiften.
 
 På sidan **Hantera avgifter** i POS kan användaren visa information om avgifter på både huvud- och radnivå. Användaren kan använda **redigera** som är tillgänglig på den här sidan för att ändra det belopp som debiteras en specifik avgiftsrad. När en avgiftsrad läggs till manuellt räknas den inte om systematiskt om inte användaren initierar åtgärden **beräkna om avgifter**.
 

@@ -1,6 +1,6 @@
 ---
 title: Registrera inleverans av varor på en inköpsorder
-description: Det häravsnittet visar dig hur du registrerar inleverans av varor direkt i en inköpsorder.
+description: Denna artikel förklarar hur du registrerar inleverans av varor direkt i en inköpsorder.
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 856a588f219879c8ac995faa8a2b17e38d78a933
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 22baf6d0f6db04b3c6ce3c09ee8cb286e9a1e590
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675105"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882472"
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>Registrera inleverans av varor på en inköpsorder
 
 [!include [banner](../../includes/banner.md)]
 
-Det häravsnittet visar dig hur du registrerar inleverans av varor direkt i en inköpsorder. Det går också att registrera produktinleveransen på lagret och bokföra den senare på inköpsordern. Denna uppgift görs vanligtvis av en inköpsagent eller en leverantörsreskontrakoordinator. De exempel som visas i den här handboken kan användas i demoföretaget USMF. Exemplet omfattar steg för att skapa en enda inköpsorder, så att du kan spela upp proceduren som en uppgiftsguide. Om du använder proceduren på dina egna data ska du börja med underuppgiften **Registrera inleverans av varor**.
+Denna artikel förklarar hur du registrerar inleverans av varor direkt i en inköpsorder. Det går också att registrera produktinleveransen på lagret och bokföra den senare på inköpsordern. Denna uppgift görs vanligtvis av en inköpsagent eller en leverantörsreskontrakoordinator. De exempel som visas i den här handboken kan användas i demoföretaget USMF. Exemplet omfattar steg för att skapa en enda inköpsorder, så att du kan spela upp proceduren som en uppgiftsguide. Om du använder proceduren på dina egna data ska du börja med underuppgiften **Registrera inleverans av varor**.
 
 
 ## <a name="prepare-a-new-purchase-order-for-receipt-of-goods"></a>Förbered en ny inköpsorder för inleverans av varor.

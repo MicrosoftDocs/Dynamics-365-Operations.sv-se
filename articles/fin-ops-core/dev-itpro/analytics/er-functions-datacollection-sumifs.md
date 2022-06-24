@@ -1,6 +1,6 @@
 ---
 title: SUMIFS ER-funktion
-description: Det här avsnittet innehåller information om hur funktionen SUMIFS elektronisk rapportering (ER) används.
+description: Den här artikeln innehåller information om hur funktionen SUMIFS elektronisk rapportering (ER) används.
 author: NickSelin
 ms.date: 12/04/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d650509bc534eb3944e1d91d536060c8852bdc9d95ea27f75025e80d6c5f23c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 097c62f5b0f0b929e13354cd46417a194c9f2e0f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749786"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858811"
 ---
 # <a name="sumifs-er-function"></a>SUMIFS ER-funktion
 

@@ -1,6 +1,6 @@
 ---
 title: Uppskatta och hantera hemtagningskostnader
-description: I systemet används dina automatiska kostnadsinställningar för att beräkna en uppskattning av hemtagningskostnaden. I det här avsnittet beskrivs hur du definierar olika scenarier när du vill leverera en mer korrekt uppskattning.
+description: I systemet används dina automatiska kostnadsinställningar för att beräkna en uppskattning av hemtagningskostnaden. I denna artikel beskrivs hur du definierar olika scenarier när du vill leverera en mer korrekt uppskattning.
 author: Weijiesa
 ms.date: 01/26/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-26
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 630fb9dc8e7954fcbc4f54941d81de1caa657676
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2e7cdd7c7439a24ec75a59bcee1e8f42f37bb2cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696219"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854453"
 ---
 # <a name="estimate-and-manage-landed-costs"></a>Uppskatta och hantera hemtagningskostnader
 
@@ -30,9 +30,9 @@ I systemet används dina [automatiska kostnadsinställningar](auto-cost-setup.md
 
 ### <a name="set-up-cost-templates"></a>Ställ in kostnadsmallar
 
-Kostnadsmallar skapar standardinställningar som användare som får uppskattningen inte nödvändigtvis vet. Mallar minskar komplexiteten i uppskattningsprocessen genom att minimera de val som användarna måste ange för att få en korrekt uppskattning. Om du använder standardkostnadsmodellen kan du använda kostnadsmallar medan du ställer in kostnaderna för varor.
+Kostnadsmallar skapar standardinställningar som användare som får uppskattningen inte nödvändigtvis vet. Mallar minskar komplexiteten i uppskattningsprocessen genom att minimera de val som användarna måste ange för att få en korrekt uppskattning. Om du använder standardkostnadsmodellen kan du använda kostnadsmallar medan du konfigurerar kostnaderna för varor.
 
-Du ställer in dina kostnadsmallar genom att gå till **Hemtagningskostnad \> Inställning av kostnadsredovisning \> Kostnadsmallar**. På sidan **Kostnadsmallar** visas alla aktuella kostnadsmallar i listfönstret till vänster. Med knapparna i åtgärdsfönstret kan du skapa, ta bort och redigera mallar.
+Du konfigurerar dina kostnadsmallar genom att gå till **Hemtagningskostnad \> Inställning av kostnadsredovisning \> Kostnadsmallar**. På sidan **Kostnadsmallar** visas alla aktuella kostnadsmallar i listfönstret till vänster. Med knapparna i åtgärdsfönstret kan du skapa, ta bort och redigera mallar.
 
 Följande register beskriver de fält som är tillgängliga för varje mall.
 
@@ -50,7 +50,7 @@ Följande register beskriver de fält som är tillgängliga för varje mall.
 
 Använd dialogrutan **Kostnadsuppskattning** om du vill skapa en ny kostnadsuppskattning som baseras på en vald kostnadsmall, en vald uppsättning artiklar och andra detaljer som kan användas för en kostnadsuppskattning. Dessa inställningar används sedan för att fastställa de uppskattade hemtagningskostnaderna för varor. Dessa kostnadsuppskattningar används främst för att arbeta med standardkostnadsartiklar. Genom att lägga till de uppskattade hemtagningskostnaderna till standardkostnaden för varor i lagret, bör du uppleva mindre avvikelsetransaktioner när varorna läggs till en färd, eftersom standardkostnaden återspeglar uppskattningarna av dessa hemtagningskostnader.
 
-Öppna dialogrutan **Kostnadsuppskattning** genom att gå till **Hemtagningskostnader \> Periodiska kostnader \> Kostnadsuppskattning**. Ställ sedan in fälten enligt beskrivningen i följande underavsnitt på varje snabbflik. Klicka på **OK** för att skapa den nya uppskattningen. Sidan **Kostnadsuppskattning** (**Hemtagningskostnader \> Frågor \> Kostnadsuppskattningar**) visas och visar din nya uppskattning, enligt beskrivningen senare i det här avsnittet.
+Öppna dialogrutan **Kostnadsuppskattning** genom att gå till **Hemtagningskostnader \> Periodiska kostnader \> Kostnadsuppskattning**. Ställ sedan in fälten enligt beskrivningen i följande underavsnitt på varje snabbflik. Klicka på **OK** för att skapa den nya uppskattningen. Sidan **Kostnadsuppskattning** (**Hemtagningskostnader \> Frågor \> Kostnadsuppskattningar**) visas och visar din nya uppskattning, enligt beskrivningen senare i denna artikel.
 
 ### <a name="settings-on-the-parameters-tab"></a>Inställningar på fliken Parametrar
 
@@ -61,7 +61,7 @@ I följande tabell beskrivs fälten som är tillgängliga i dialogrutan **Parame
 |---|---|
 | Kostnadsmall | Välja en kostnadsmall. De inställningar som associeras med den valda mallen används för att bestämma vilka automatiska kostnader som ska användas. |
 | Uppskatta datumet | Som standard är det här fältet inställt på dagens datum, men du kan ändra värdet. Det angivna datumet används för att välja tillämpliga försäljningspriser, inköpspriser, automatiska kostnader och valutakurs om en leveranskurs används. |
-| Mått | Kostnaderna kan bero på en mätning. När till exempel flygfrakt används kan volymprissättning gälla. Om kostnaden beror på en mätning anger du värdet på måttet. Annars rekommenderar vi att du ställer in det här fältet till *1*, om du inte är säker på att ingen fördelning sker genom mätning. Ange ett decimalvärde. Enheten är den som definieras i den tillämpliga posten för automatisk kostnad. |
+| Mått | Kostnaderna kan bero på en mätning. När till exempel flygfrakt används kan volymprissättning gälla. Om kostnaden beror på en mätning anger du värdet på måttet. Annars rekommenderar vi att du konfigurerar det här fältet till *1*, om du inte är säker på att ingen fördelning sker genom mätning. Ange ett decimalvärde. Enheten är den som definieras i den tillämpliga posten för automatisk kostnad. |
 | Resemall | Välj en [färdmall](multi-leg-journey-setup.md). Detta fält används för att fastställa de korrekta automatiska kostnader som ska användas. |
 | Från hamn | Den port som artiklarna ska levereras från. Det här fältet ställs in utifrån den valda färdmallen. |
 | Till hamn | Den port som artiklarna ska levereras till. Det här fältet ställs in utifrån den valda färdmallen. |
@@ -91,7 +91,7 @@ Om du vill visa eller justera volym- och/eller viktdetaljer för en artikel mark
 
 ## <a name="manage-estimated-costs"></a>Hantera uppskattade kostnader
 
-Gå till om du vill visa och redigera de kostnadsberäkningar du har skapat **Hemtagningskostnad \> Frågor \> Kostnadsuppskattningar**. På sidan **Kostnadsuppskattningar** visas alla aktuella kostnadsuppskattningar i listfönstret till vänster. Med knapparna i åtgärdsfönstret kan du skapa, ta bort och arbeta med en vald uppskattning. Observera att du inte kan skapa en ny kostnadsuppskattning från sidan **Kostnadsuppskattning**. Använd istället dialogrutan **Kostnadsuppskattning** (**Hemtagningskostnad \> Periodiska uppgifter \> Kostnadsuppskattning**), enligt beskrivningen tidigare i det här avsnittet.
+Gå till om du vill visa och redigera de kostnadsberäkningar du har skapat **Hemtagningskostnad \> Frågor \> Kostnadsuppskattningar**. På sidan **Kostnadsuppskattningar** visas alla aktuella kostnadsuppskattningar i listfönstret till vänster. Med knapparna i åtgärdsfönstret kan du skapa, ta bort och arbeta med en vald uppskattning. Observera att du inte kan skapa en ny kostnadsuppskattning från sidan **Kostnadsuppskattning**. Använd istället dialogrutan **Kostnadsuppskattning** (**Hemtagningskostnad \> Periodiska uppgifter \> Kostnadsuppskattning**), enligt beskrivningen tidigare i denna artikel.
 
 Sidan **Kostnadsuppskattningar** visar hur varje uppskattad kostnad härleddes. Här visas också den uppskattade hemtagningskostnaden för varje artikel. Du kan ändra en kostnadsuppskattning genom att ändra självkostnaden och/eller valutan som associeras med de olika varorna. Du kan även ändra de associerade färdkostnaderna på både den första och sista nivån i behållaren. När du använder den här sidan för att ändra kostnaderna uppmanas du att beräkna om de uppskattade kostnaderna för artiklarna i kostnadsuppskattningen. När du är klar kan du använda uppskattningarna om du vill uppdatera självkostnaden för artiklarna i kostnadsmallen.
 

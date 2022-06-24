@@ -1,6 +1,6 @@
 ---
 title: Definiera lagerberäkningsprocesser
-description: I det här avsnittet beskrivs konfigurationen av grundläggande lagerinventeringsprocesser genom att skapa en inventeringsgrupp och en inventeringsjournal.
+description: I denna artikel beskrivs konfigurationen av grundläggande lagerinventeringsprocesser genom att skapa en inventeringsgrupp och en inventeringsjournal.
 author: yufeihuang
 ms.date: 07/26/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee47b04ba7ec9f3d74230b7a41b1c295eaea9313
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: bb86c99e74dc8251ed48c0b749c0b0ef1ce75e34
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580850"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879031"
 ---
 # <a name="define-inventory-counting-processes"></a>Definiera lagerberäkningsprocesser
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs konfigurationen av grundläggande lagerinventeringsprocesser genom att skapa en inventeringsgrupp och en inventeringsjournal. Det visar också om hur du aktiverar du vill beräkna principer för ett lagerställe och artikelnivå. Dessa uppgifter utförs vanligtvis av en lagerchef. Det är en förutsättning som har några befintliga frisläppning produkter och lagerställen. Om du använder ett demonstrationsdataföretag kan du köra denna procedur i USMF-företaget med en valfri lagerförd artikel.
+I denna artikel beskrivs konfigurationen av grundläggande lagerinventeringsprocesser genom att skapa en inventeringsgrupp och en inventeringsjournal. Det visar också om hur du aktiverar du vill beräkna principer för ett lagerställe och artikelnivå. Dessa uppgifter utförs vanligtvis av en lagerchef. Det är en förutsättning som har några befintliga frisläppning produkter och lagerställen. Om du använder ett demonstrationsdataföretag kan du köra denna procedur i USMF-företaget med en valfri lagerförd artikel.
 
 
 ## <a name="create-a-counting-group"></a>Skapa en inventeringsgrupp
@@ -68,7 +68,7 @@ I det här avsnittet beskrivs konfigurationen av grundläggande lagerinventering
 
 ## <a name="set-the-counting-policy-for-an-item"></a>Ange inventeringsprincip för en artikel
 1. I navigeringsfönstret, gå till **Moduler > Produktinformationshantering > Produkter > Frisläppta produkter**.
-2. I listan väljer du länken för artikelnumret för produkten som du vill ange för att ställa in inventeringspolicyer på. Du måste välja en artikel som har spårats i lagret. En produkt som inte finns i lager räknas inte. Om du använder USMF-deodata kan du välja artikel A0001.  
+2. I listan väljer du länken för artikelnumret för produkten som du vill ange för att konfigurera inventeringspolicyer på. Du måste välja en artikel som har spårats i lagret. En produkt som inte finns i lager räknas inte. Om du använder USMF-deodata kan du välja artikel A0001.  
 3. Välj **Redigera**.
 4. Växla expansionen av avsnittet **Hantera lager**.
 5. Välj den inventeringsgrupp som du skapat tidigare i fältet **Inventeringsgrupp** på den nedrullningsbara menyn. Den produkt ska inkluderas när lagerinventeringsjournalrader nu, skapas med hjälp av denna beräkningsgrupp.  
@@ -78,7 +78,7 @@ I det här avsnittet beskrivs konfigurationen av grundläggande lagerinventering
 1. I åtgärdsfönstret klicka på **Hantera inventering**.
 2. Välj **Lagerställeartiklar**.
 3. Välj **Ny**.
-4. Välj det lagerställe som du vill ställa in särskilda inventeringspolicyer för på den nedrullningsbara menyn i fältet **Lagerställe**.
+4. Välj det lagerställe som du vill konfigurera särskilda inventeringspolicyer för på den nedrullningsbara menyn i fältet **Lagerställe**.
 5. Välj en inventeringsgrupp på den nedrullningsbara menyn i fältet **Inventeringsgrupp**. Du kan välja en viss inventeringsgrupp som ska användas för artikeln i den angivna lagerstället, som du har valt. När du vill beräkna är den utförs i lagerstället, kommer denna av policy åsidosätta den allmänna principen för av artikeln.  
 6. Välj **Spara**.
 

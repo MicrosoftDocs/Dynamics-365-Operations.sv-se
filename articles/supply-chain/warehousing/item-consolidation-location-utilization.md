@@ -1,6 +1,6 @@
 ---
 title: Artikelkonsolidering – platsutnyttjande
-description: I det här avsnittet finns information om funktioner som gör det enkelt för lagerchefer att visa och filtrera platsens användning över hela lagerstället. Chefer kan välja platser och skapa lagerförflyttningar direkt från sidan artikelkonsolidering för att konsolidera artiklar och därmed bättre utnyttja lagerställets utrymme.
+description: I denna artikel finns information om funktioner som gör det enkelt för lageransvariga att visa och filtrera platsens användning över hela lagerstället. Chefer kan välja platser och skapa lagerförflyttningar direkt från sidan artikelkonsolidering för att konsolidera artiklar och därmed bättre utnyttja lagerställets utrymme.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f858eae57b8b354076f5ed026a4b84ed680866b0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 63fd8b209cb73843aae7324c805c5d0eb83b4ca4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578618"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849196"
 ---
 # <a name="item-consolidation---location-utilization"></a>Artikelkonsolidering – platsutnyttjande
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet finns information om funktioner som gör det enkelt för lagerchefer att visa och filtrera platsens användning över hela lagerstället. Chefer kan välja platser och skapa lagerförflyttningar direkt från sidan **artikelkonsolidering** för att konsolidera artiklar och därmed bättre utnyttja lagerställets utrymme.
+I denna artikel finns information om funktioner som gör det enkelt för lageransvariga att visa och filtrera platsens användning över hela lagerstället. Chefer kan välja platser och skapa lagerförflyttningar direkt från sidan **artikelkonsolidering** för att konsolidera artiklar och därmed bättre utnyttja lagerställets utrymme.
 
 ## <a name="turn-on-the-features"></a>Aktivera en funktioner
 
-Innan du kan använda funktionerna som beskrivs i det här avsnittet måste du aktivera dem i systemet. Administratörer kan använda arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera status för dessa funktioner och aktivera dem om de behövs. Aktivera båda följande funktioner i angiven ordning. (Båda funktionerna gäller för modulen **Lagerstyrning** .)
+Innan du kan använda funktionerna som beskrivs i denna artikel måste du aktivera dem i systemet. Administratörer kan använda arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera status för dessa funktioner och aktivera dem om de behövs. Aktivera båda följande funktioner i angiven ordning. (Båda funktionerna gäller för modulen **Lagerstyrning** .)
 
 1. Distributionslagrets platsstatus
 2. Utnyttjande av artikelns konsolideringsplats
@@ -51,7 +51,7 @@ De här fälten gör det möjligt för lagerställechefer att få en bättre öv
 
 ## <a name="set-up-item-consolidation-and-location-utilization"></a>Ställ in artikelkonsolidering och platsutnyttjande
 
-I det här avsnittet beskrivs hur du förbereder systemet för att använda artikelkonsolidering och platsanvändning. Procedurerna använder exempelvärden från standard demodata. Om du planerar att arbeta genom det exempelscenario som finns senare i det här avsnittet väljer du den **USMF** juridiska personen (som innehåller standard demodata) och skapar varje post som beskrivs i det här avsnittet. Om du inte planerar att arbeta genom exempelscenariot, kan de värden som anges här beaktas som exempel på de typer av inställningar som du måste slutföra för att kunna använda funktionerna.
+I det här avsnittet beskrivs hur du förbereder systemet för att använda artikelkonsolidering och platsanvändning. Procedurerna använder exempelvärden från standard demodata. Om du planerar att gå igenom det exempelscenario som finns senare i denna artikel väljer du den juridiska personen **USMF** (som innehåller standarddemodatan) och skapar respektive post som beskrivs i det här avsnittet. Om du inte planerar att arbeta genom exempelscenariot, kan de värden som anges här beaktas som exempel på de typer av inställningar som du måste slutföra för att kunna använda funktionerna.
 
 ### <a name="released-product"></a>Frisläppt produkt
 
@@ -78,7 +78,7 @@ I det här avsnittet beskrivs hur du förbereder systemet för att använda arti
 1. Välj **Spara**.
 
     > [!IMPORTANT]
-    > Om alternativen **Aktivera artikel på plats** och **Aktivera platsstatus** redan har ställts in på *Ja* går du vidare till anvisningarna för att ställa in snabbfliken **Dimensioner** i steg 10. Om alternativen inte redan har ställts in på *Ja* måste du köra en konsekvenskontroll för modulen **Lagerstyrning** när du har ställt in dem manuellt. Fortsätt i så fall till nästa steg.
+    > Om alternativen **Aktivera artikel på plats** och **Aktivera platsstatus** redan har ställts in på *Ja* går du vidare till anvisningarna för att konfigurera snabbfliken **Dimensioner** i steg 10. Om alternativen inte redan har ställts in på *Ja* måste du köra en konsekvenskontroll för modulen **Lagerstyrning** när du har ställt in dem manuellt. Fortsätt i så fall till nästa steg.
 
 1. Kör konsekvenskontrollen genom att gå till **Systemadministration \> periodiska uppgifter \> databas \> konsekvenskontroll**.
 1. I dialogrutan **konsekvenskontroll** anger du följande värden:

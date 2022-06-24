@@ -1,6 +1,6 @@
 ---
-title: Modul för cookie-samtycke
-description: Det här avsnittet handlar om modul för cookie-samtycke och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+title: Modul för samtycke till cookies
+description: Denna artikel handlar om modul för cookie-samtycke och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 43f18a0963d84d486c8077bde1dad50fdd4fe85beb95dc8b22ae2f3ee724ba0f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 514f54ea6ff05dc3e0885f21af176453dd604848
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750748"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878605"
 ---
 # <a name="cookie-consent-module"></a>Modul för samtycke till cookies
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om modul för cookie-samtycke och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+Denna artikel handlar om modul för cookie-samtycke och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 
 Modul för cookie-samtycke uppmanar webbplatsanvändare att uttryckligen lämna samtycke till att tillåta cookies för alla funktioner eller moduler som spårar webbläsarcookies. Samtycke krävs första gången en webbplatsanvändare bläddrar i en ny webbläsarsession. När samtycke tas emot spåras det och webbplatsens användare kommer inte att tillfrågas om medgivande igen. Mer information finns i [kompatibilitet med cookies](cookie-compliance.md).
 

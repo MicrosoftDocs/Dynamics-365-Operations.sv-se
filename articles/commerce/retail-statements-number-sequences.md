@@ -1,6 +1,6 @@
 ---
-title: Ställ in nummerserie för butiksutdrag
-description: I det här avsnittet beskrivs hur du konfigurerar de nummerserier som krävs för butiksutdrag i Microsoft Dynamics 365 Commerce.
+title: Konfigurera nummerserier för butiksutdrag
+description: I denna artikel beskrivs hur du konfigurerar de nummerserier som krävs för butiksutdrag i Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 04/27/2022
 ms.topic: article
@@ -9,30 +9,30 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2022-04-12
-ms.openlocfilehash: db47ca4ee8bac0d55b9a9c732183d2734bce660f
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 5c4eb872ec2151a9f4ac5462ad43dd03a6705487
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649222"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880013"
 ---
-# <a name="set-up-number-sequences-for-retail-statements"></a>Ställ in nummerserie för butiksutdrag
+# <a name="set-up-number-sequences-for-retail-statements"></a>Konfigurera nummerserier för butiksutdrag
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-I det här avsnittet beskrivs hur du konfigurerar de nummerserier som krävs för butiksutdrag i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du konfigurerar de nummerserier som krävs för butiksutdrag i Microsoft Dynamics 365 Commerce.
 
 Två typer av butiksutdrag används i Dynamics 365 Commerce: 
 
 - **Transaktionsutdrag** är avsedda att skapas och bokföras med hög frekvens. De används för att bokföra alla icke-ekonomiska transaktioner i butiken till Dynamics 365 Commerce-administration. 
-- **Bokslut** är avsedda att skapas och bokföras en gång per arbetsdag. De omfattar bara stängda skift från butikerna som har förts över till Commerce-administration via p-jobbet.
+- **Bokslut** är avsedda att skapas och bokföras en gång per arbetsdag. De omfattar bara stängda skift från butikerna som har förts över till Commerce headquarters via p-jobbet.
 
 ## <a name="configure-a-number-sequence-for-statement-posting"></a>Konfigurera en nummerserie för utdragsbokföringar
 
-När du har slutfört inställningen av en butik måste du i Commerce-adminstration konfigurera en unik nummerserie som används för utdrag under genereringen av utdraget.
+När du har slutfört inställningen av en butik måste du i Commerce headquarters. konfigurera en unik nummerserie som används för utdrag under genereringen av utdraget.
 
-Följ de här stegen om du vill konfigurera en utdragsbokföringar i Commerce-administration.
+Följ de här stegen om du vill konfigurera en utdragsbokföringar i Commerce headquarters.
 
 1. Gå till **Organisationsadministration \> Nummerserier \> Nummerserier**.
 1. Välj **Ny \> nummerserie** för att skapa en ny post.

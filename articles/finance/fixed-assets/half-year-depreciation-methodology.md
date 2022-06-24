@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: fb15a293bb8cec1b4faba7bcbd29eb4df7916786
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: fac20f7a31eca7922ed079f9554437f28448620d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720404"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879607"
 ---
 # <a name="half-year-depreciation-convention-methodology"></a>Metod för halvårs avskrivningspraxis
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-I det här avsnittet beskrivs metoden som används i anläggningstillgångar för att beräkna avskrivning med hjälp av halvårspraxis. Halvårspraxis beräknar sex månader från avskrivningen under en tillgångs första och sista tjänstår. Mer information finns om avskrivningspraxis finns i [Avskrivningsmetoder och avskrivningspraxis](Fixed-asset-depreciation-conventions.md). 
+I den här artikeln beskrivs metoden som används i anläggningstillgångar för att beräkna avskrivning med hjälp av halvårspraxis. Halvårspraxis beräknar sex månader från avskrivningen under en tillgångs första och sista tjänstår. Mer information finns om avskrivningspraxis finns i [Avskrivningsmetoder och avskrivningspraxis](Fixed-asset-depreciation-conventions.md). 
 
 När du använder avskrivningspraxis för sex månader använder systemet anskaffningsåret eller året som tillgången togs i bruk och därefter beräknas fem avskrivningsår från det året och därefter läggs sex månader till. För att illustrera denna process bör du överväga en tillgång som har anskaffats för priset på 50 000 och som var i drift i april 2020. Anta också att tillgången har ett fem års tjänstelivstid.
 

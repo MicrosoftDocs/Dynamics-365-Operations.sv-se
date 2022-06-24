@@ -1,6 +1,6 @@
 ---
 title: Felsöka datakällor i ett kört ER-format för analys av dataflöde och omvandling
-description: I det här avsnittet beskrivs hur du kan felsöka datakällorna i ett exekverat ER-format för att bättre förstå det konfigurerade dataflödet och omvandlingen.
+description: I den här artikeln beskrivs hur du kan felsöka datakällorna i ett exekverat ER-format för att bättre förstå det konfigurerade dataflödet och omvandlingen.
 author: NickSelin
 ms.date: 04/22/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 6fca177093caf42ad27b58eaa97e3f6997289eeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323788"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884240"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Felsöka datakällor i ett kört ER-format för analys av dataflöde och omvandling
 
@@ -34,7 +34,7 @@ Ibland ser data i den genererade utmatningen annorlunda ut än samma data i prog
 
 Om du vill aktivera funktionen för felsökning av datakälla anger du alternativet **Aktivera datafelsökning vid formatkörning** till **Ja** i ER:s användarparametrar. Du kan sedan starta felsökningen av datakällan när du kör ett ER-format för att generera utgående dokument. Du kan också använda alternativet **Starta felsökning** om du vill initiera felsökning av datakällor för ett ER-format som har konfigurerats i [ER-åtgärdsdesigner](./tasks/er-format-configuration-2016-11.md#design-the-format-of-an-electronic-document).
 
-Det här avsnittet innehåller riktlinjer för initiering av felsökning av datakällor för körda ER-format. Det förklarar hur informationen kan hjälpa dig att förstå dataflödet och dataomvandlingar. I exemplen i det här avsnittet används affärsprocessen för bearbetning av leverantörsbetalningar.
+Den här artikeln innehåller riktlinjer för initiering av felsökning av datakällor för körda ER-format. Det förklarar hur informationen kan hjälpa dig att förstå dataflödet och dataomvandlingar. I exemplen i den här artikeln används affärsprocessen för bearbetning av leverantörsbetalningar.
 
 ## <a name="limitations"></a>Begränsningar
 
@@ -49,7 +49,7 @@ Följande inställningar för ER-format är för närvarande inte tillgängliga 
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-- Om du vill slutföra exemplen i det här avsnittet måste du ha tillgång till en av följande [roller](../sysadmin/tasks/assign-users-security-roles.md):
+- Om du vill slutföra exemplen i den här artikeln måste du ha tillgång till en av följande [roller](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Utvecklare för elektronisk rapportering
     - Konsult för funktionen för elektronisk rapportering
@@ -57,12 +57,12 @@ Följande inställningar för ER-format är för närvarande inte tillgängliga 
 
 - Företaget måste vara inställt på **DEMF**.
 
-- Följ instruktionerna i [Bilaga 1](#appendix1) i det här avsnittet för att hämta komponenterna för den Microsoft ER-lösning som krävs för att bearbeta leverantörsbetalningar.
-- Följ instruktionerna i [Bilaga 2](#appendix2) till det här avsnittet för att förbereda leverantörsreskontra för bearbetning av leverantörsbetalningar genom att använda den ER-lösning som du ska hämta.
+- Följ instruktionerna i [Bilaga 1](#appendix1) i den här artikeln för att hämta komponenterna för den Microsoft ER-lösning som krävs för att bearbeta leverantörsbetalningar.
+- Följ instruktionerna i [Bilaga 2](#appendix2) till den här artikeln för att förbereda leverantörsreskontra för bearbetning av leverantörsbetalningar genom att använda den ER-lösning som du ska hämta.
 
 ## <a name="process-a-vendor-payment-to-get-a-payment-file"></a>Bearbeta en leverantörsbetalning för att få en betalningsfil
 
-1. Följ instruktionerna i [Bilaga 3](#appendix3) till det här avsnittet för att bearbeta leverantörsbetalningar.
+1. Följ instruktionerna i [Bilaga 3](#appendix3) till den här artikeln för att bearbeta leverantörsbetalningar.
 
     ![Bearbetning av leverantörsbetalningar pågår.](./media/er-data-debugger-process-payment.png)
 
@@ -89,7 +89,7 @@ Följande inställningar för ER-format är för närvarande inte tillgängliga 
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>Bearbeta en leverantörsbetalning för felsökning
 
-1. Följ instruktionerna i [Bilaga 3](#appendix3) till det här avsnittet för att bearbeta leverantörsbetalningar.
+1. Följ instruktionerna i [Bilaga 3](#appendix3) till den här artikeln för att bearbeta leverantörsbetalningar.
 2. I meddelanderutan väljer du **Ja** för att bekräfta att du vill avbryta bearbetning av leverantörsbetalningar och i stället starta felsökning av datakällor på sidan **Felsökning av datakällor**.
 
     ![Ruta för bekräftelsemeddelande.](./media/er-data-debugger-start-debugging.png)

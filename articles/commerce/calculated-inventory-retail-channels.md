@@ -1,6 +1,6 @@
 ---
 title: Beräkna lagertillgänglighet för butikskanaler
-description: I det här avsnittet beskrivs hur ett företag kan använda Microsoft Dynamics 365 Commerce för att visa uppskattade tillgängliga produkter i online- och butikskanaler.
+description: I denna artikel beskrivs hur ett företag kan använda Microsoft Dynamics 365 Commerce för att visa uppskattade tillgängliga produkter i online- och butikskanaler.
 author: hhainesms
 ms.date: 09/01/2021
 ms.topic: article
@@ -14,28 +14,28 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 1b1e0ea264dd74f6583d3b7fd3ecce551c73fbae
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 952acf4cc26815822436bb7a5117775a5f12200c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674685"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884121"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beräkna lagertillgänglighet för butikskanaler
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur ett företag kan använda Microsoft Dynamics 365 Commerce för att visa uppskattade tillgängliga produkter i online- och butikskanaler.
+I denna artikel beskrivs hur ett företag kan använda Microsoft Dynamics 365 Commerce för att visa uppskattade tillgängliga produkter i online- och butikskanaler.
 
 ## <a name="accuracy-of-inventory-availability"></a>Exakthet för lagertillgänglighet
 
-Commerce använder flera servrar och databaser för att garantera skalbarhet och prestanda. Därför är det viktigt att du förstår att de tillgängliga lagervärden som tillhandahålls via kassaprogrammet (POS), API:er för lagertillgänglighet för näthandel samt lagerbehållningssidorna i Commerce-administration kanske inte är 100 procent korrekta i realtid. Om transaktioner som skapas för produkter i nät- eller butikskanalen ännu inte har synkroniserats med Commerce-administrationen, kanske lagerbehållningssidorna i administrationen inte visar ett korrekt lager värde i realtid för dessa produkter. Om du har konfigurerat ditt företag så att användare i administrationen eller andra integrerade program kan sälja, ta emot, returnera eller på annat sätt justera lagret från en butik eller på ett nätlager, kanske inte kassa- eller nätkanalen har all information som krävs för att visa korrekta värden för artiklar i realtid.
+Commerce använder flera servrar och databaser för att garantera skalbarhet och prestanda. Därför är det viktigt att du förstår att de tillgängliga lagervärden som tillhandahålls via kassaprogrammet (POS), API:er för lagertillgänglighet för näthandel samt lagerbehållningssidorna i Commerce headquarters kanske inte är 100 procent korrekta i realtid. Om transaktioner som skapas för produkter i nät- eller butikskanalen ännu inte har synkroniserats med Commerce headquarters, kanske lagerbehållningssidorna i administrationen inte visar ett korrekt lager värde i realtid för dessa produkter. Om du har konfigurerat ditt företag så att användare i administrationen eller andra integrerade program kan sälja, ta emot, returnera eller på annat sätt justera lagret från en butik eller på ett nätlager, kanske inte kassa- eller nätkanalen har all information som krävs för att visa korrekta värden för artiklar i realtid.
 
 Det är vitalt att du förstår att all tillgänglig data som ges under användningsdagen betraktas som ett uppskattat värde. Om du försöker jämföra den lagerbehållningsinformation som programmet ger med det verkliga fysiska lagret på hyllorna, eller om du försöker jämföra de behållningsvärden som visas i kassan med de faktiska data som du hittar för samma lagerställe i administration, kan värdena därför komma att skilja sig åt. Denna skillnad förväntas under användningsdagen och bör inte betraktas som en utleverans. Om du vill granska data och se till att de värden som finns i kassa, API:er och administration matchar de faktiska fysiska enheterna som finns i butiken eller på lagerhyllorna, är det bäst att göra detta efter att kanalåtgärderna har avslutats för dagen och alla transaktioner har synkroniserats korrekt mellan administration och kanaler.
 
 ## <a name="channel-side-inventory-calculation"></a>Lagerberäkning på kanalsidan
 
-Lagerberäkningen på kanalsidan är en mekanism som tar den senast kända kanallagerdatan i Commerce-administrationen som grund och därefter faktorer i ytterligare lagerändringar som inträffat på kanalsidan som inte inkluderats i denna grund för att beräkna en uppskattad lagerbehållning i närapå realtid. 
+Lagerberäkningen på kanalsidan är en mekanism som tar den senast kända kanallagerdatan i Commerce headquarters som grund och därefter faktorer i ytterligare lagerändringar som inträffat på kanalsidan som inte inkluderats i denna grund för att beräkna en uppskattad lagerbehållning i närapå realtid. 
 
 Följande lagerändringar beaktas för närvarande i lagerberäkningslogiken på kanalsidan:
 
@@ -64,7 +64,7 @@ Om du vill använda lagerberäkningen på kanalsidan måste först en periodisk 
 - Om lagret såldes för en produkt i ett butikslager med hämtköp ("cash-and-carry") eller asynkron försäljning av kundorder i kassaprogrammet, finns det ingen omedelbar information om den relaterade lagerkvantiteten för försäljningen i administrationen. Administrationen kommer att ha information om lagret som säljs för dessa typer av butiksförsäljning först när P-jobbet överför den relaterade transaktionen från butikens kanaldatabas till administrationen och relaterade försäljningsorder skapas genom utdragsbokföring eller av indroppningsbaserad bokföring. När ordern skapas i administration skapas relaterade lagertransaktioner. 
 - För näthandelskanalorder har administrationen information om lagertransaktionerna först när transaktionerna har skickats till administration via P-jobbet och synkroniseringen av ordern har slutförts.
 
-Följ de här stegen om du vill ta en ögonblicksbild av lagret i Commerce-administrationen.
+Följ de här stegen om du vill ta en ögonblicksbild av lagret i Commerce headquarters.
 
 1. Gå till **Retail och Commerce \> Retail och Commerce IT \> Produkter och lager \> Produkttillgänglighet**.
 1. Välj **OK** för att köra jobbet **Produkttillgänglighet**. Du kan även tidsplanera det här jobbet så att det körs i en batch.
@@ -118,7 +118,7 @@ I Commerce version 10.0.9 och tidigare använde funktionen **Lagersökning** i k
 
 När kanalsidans beräkning är korrekt konfigurerad och hanterad kan den ge en mer tillförlitlig uppskattning av den aktuella butiksinventeringen, detta eftersom den använder de transaktionsdata som finns i Commerce-kanaldatabasen men som administrationen kanske ännu inte har information om. Om du till exempel använder det befintliga serviceanropet i realtid för lagersökningar i kassan (POS) har administrationen antagligen ingen information om hämtköpförsäljning som har utförts för en produkt. Det lagerbehållningsvärde som administrationen returnerar för den produkten kommer därför troligen att överskrida butikens faktiska lagerbehållning med en enhet. Om du däremot använder beräkning på kanalsidan kan hämtköpförsäljning delas upp i beräkningen och dras av från behållningsvärdet som visas. Även om de värden som används vid beräkningen av både kanalsidan och servicesamtalet i realtid är enbart uppskattningar av lagerbehållning, är värdet som beräkningen på kanalsidan ger mycket mer exakt för den aktuella butiken.
 
-Om du vill konfigurera funktionen **Lagersökning** i Commerce-administrationen i syfte att använda beräkningslogiken på kanalsidan och stänga av serviceanrop i realtid måste du först aktivera funktionen **Optimerad beräkning för produkttillgänglighet** via arbetsytan **Funktionshantering** i Commerce-administrationen och sedan följa dessa steg.
+Om du vill konfigurera funktionen **Lagersökning** i Commerce headquarters i syfte att använda beräkningslogiken på kanalsidan och stänga av serviceanrop i realtid måste du först aktivera funktionen **Optimerad beräkning för produkttillgänglighet** via arbetsytan **Funktionshantering** i Commerce headquarters och sedan följa dessa steg.
 
 1. Gå till **Retail and Commerce \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Funktionsprofiler**.
 1. Välj en funktionsprofil.
@@ -129,7 +129,7 @@ Du måste sedan synkronisera ändringarna till kanalen genom distributionsschema
 1. Gå till **Retail and Commerce \> Retail and Commerce-IT \> Distributionsschema**.
 1. Kör jobbet **1070** (**jakanlkonfiguration**).
 
-När konfigurationen är klar använder den information som finns om fysiskt tillgängligt lager inte längre ett samtal i realtid när en användare i kassaprogrammet använder operationen **lagersökning** (standard- och matrisvyer). I stället beräknas data om fysiskt tillgängligt lager för den aktuella butiken och alla butiker i uppfyllelsegruppen, baserat på den senaste kända ögonblicksbilden som levererades till kanaldatabasen från Commerce-administration. Värdet för ögonblicksbilden kan finjusteras ytterligare av kanalberäkningen för att justera det fysiskt tillgängliga värdet, baserat på ytterligare försäljnings- eller returtransaktioner för den valda produkten i kanaldatabasen som inte inkluderades i de senaste synkroniserad ögonblicksbilden från 1130-jobbet. Om kanaldatabasen inte innehåller transaktionsdata för något av lagren eller butikerna i uppfyllelsegruppen, innehåller den inga ytterligare transaktioner som kan beaktas vid en omberäkning av värdet. Därför är den bästa uppskattningen av lagerbehållning som kan visas för dessa lagerställen eller butiker, data från den senaste ögonblicksbilden av Commerce-administration.
+När konfigurationen är klar använder den information som finns om fysiskt tillgängligt lager inte längre ett samtal i realtid när en användare i kassaprogrammet använder åtgärden **lagersökning** (standard- och matrisvyer). I stället beräknas data om fysiskt tillgängligt lager för den aktuella butiken och alla butiker i uppfyllelsegruppen, baserat på den senaste kända ögonblicksbilden som levererades till kanaldatabasen från Commerce headquarters. Värdet för ögonblicksbilden kan finjusteras ytterligare av kanalberäkningen för att justera det fysiskt tillgängliga värdet, baserat på ytterligare försäljnings- eller returtransaktioner för den valda produkten i kanaldatabasen som inte inkluderades i de senaste synkroniserad ögonblicksbilden från 1130-jobbet. Om kanaldatabasen inte innehåller transaktionsdata för något av lagren eller butikerna i uppfyllelsegruppen, innehåller den inga ytterligare transaktioner som kan beaktas vid en omberäkning av värdet. Därför är den bästa uppskattningen av lagerbehållning som kan visas för dessa lagerställen eller butiker, data från den senaste ögonblicksbilden av Commerce headquarters.
 
 Skärmen **Orderuppfyllelse** i POS utnyttjar också beräkningen av kanalsidan för att visa inventering för objekt när en rad för orderuppfyllning är vald och en användare visar panelen **Detaljer** för lagerbehållning för den valda artikeln..
 
@@ -137,12 +137,12 @@ Skärmen **Orderuppfyllelse** i POS utnyttjar också beräkningen av kanalsidan 
 
 För att säkerställa bästa möjliga uppskattning av lagret är det viktigt att du använder följande Commerce-batchjobb och kör dem ofta:
 
-- **P-Jobb** – p-jobbet finns på sidan **distributionsplaner** och bör köras ofta. Det här jobbet ger näthandelsorder, asynkrona kundorder som skapats av POS och hämtköporder som skapas från kanaldatabaser till Commerce-administration, så att de kan bearbetas ytterligare. Innan dessa data synkroniseras från kanalen till Commerce-administration har inte Commerce-administration någon information om lagerjusteringar till produkter i de lagerställen som kommer från dessa transaktioner.
-- **Synkronisera order** – i det här jobbet bearbetas råa transaktionsdata i Commerce-administration som P-jobbet innehåller och omvandlar näthandel och asynkrona kundordertransaktioner till försäljningsorder i Commerce-administration. Inga lagertransaktioner skapas förrän jobbet bearbetas och försäljningsorder skapas. Lagerbehållningen i Commerce-administration kan därför inte ta hänsyn till transaktionerna.
-- **Beräkna transaktionsutdrag i batch** – för hämtköpstransaktioner som skapas i butiken, säkerställer indroppningsbaserad bokföringsprocess att lagret som är relaterat till försäljningen uppdateras effektivt. För att få effektiv bearbetning av lagertransaktioner för hämtköpsorder måste du konfigurera systemet för att använda [indroppningsbaserad bokföring](./trickle-feed.md).
-- **Bokför transaktionsutdrag i batch** – det här jobbet krävs även för indroppningsbaserad bokföring. Den följer jobbet **Beräkna transaktionsutdrag i batch**. Det här jobbet bokför de beräknade utdragen, så att försäljningsorder för hämtköpförsäljningen skapas i Commerce-administration och i Commerce-administration på ett mer exakt sätt återspeglar butikens lager.
-- **Produkttillgänglighet** – det här jobbet skapar ögonblicksbilden av lagret från Commerce-administration.
-- **1130 (Produkttillgänglighet)** – det här jobbet finns på sidan **distributionsplaner** och bör köras omedelbart efter jobbet **produkttillgänglighet**. Det här jobbet transporterar data för lagerögonblicksbilden från Commerce-administration till kanaldatabaserna.
+- **P-Jobb** – p-jobbet finns på sidan **distributionsplaner** och bör köras ofta. Det här jobbet ger näthandelsorder, asynkrona kundorder som skapats av POS och hämtköporder som skapas från kanaldatabaser till Commerce headquarters, så att de kan bearbetas ytterligare. Innan dessa data synkroniseras från kanalen till Commerce headquarters har inte Commerce headquarters någon information om lagerjusteringar till produkter i de lagerställen som kommer från dessa transaktioner.
+- **Synkronisera order** – i det här jobbet bearbetas råa transaktionsdata i Commerce headquarters som P-jobbet innehåller och omvandlar näthandel och asynkrona kundordertransaktioner till försäljningsorder i Commerce headquarters. Inga lagertransaktioner skapas förrän jobbet bearbetas och försäljningsorder skapas. Lagerbehållningen i Commerce headquarters kan därför inte ta hänsyn till transaktionerna.
+- **Beräkna transaktionsutdrag i batch** – för hämtköpstransaktioner som skapas i butiken, säkerkonfigurerardroppningsbaserad bokföringsprocess att lagret som är relaterat till försäljningen uppdateras effektivt. För att få effektiv bearbetning av lagertransaktioner för hämtköpsorder måste du konfigurera systemet för att använda [indroppningsbaserad bokföring](./trickle-feed.md).
+- **Bokför transaktionsutdrag i batch** – det här jobbet krävs även för indroppningsbaserad bokföring. Den följer jobbet **Beräkna transaktionsutdrag i batch**. Det här jobbet bokför de beräknade utdragen, så att försäljningsorder för hämtköpförsäljningen skapas i Commerce headquarters och i Commerce headquarters på ett mer exakt sätt återspeglar butikens lager.
+- **Produkttillgänglighet** – det här jobbet skapar ögonblicksbilden av lagret från Commerce headquarters.
+- **1130 (Produkttillgänglighet)** – det här jobbet finns på sidan **distributionsplaner** och bör köras omedelbart efter jobbet **produkttillgänglighet**. Det här jobbet transporterar data för lagerögonblicksbilden från Commerce headquarters till kanaldatabaserna.
 
 > [!NOTE]
 > - Det bästa är att köra jobben **Produkttillgänglighet** och **1130** varje timme, samt att schemalägga P-jobb, synkronisera order och "in-droppa" (trickle feed) bokföringsrelaterade jobb med samma eller högre frekvens.

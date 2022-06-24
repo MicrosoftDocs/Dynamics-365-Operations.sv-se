@@ -1,6 +1,6 @@
 ---
 title: Översikt över kanaler
-description: Det här ämnet innehåller en översikt över kanaler i Microsoft Dynamics 365 Commerce.
+description: Denna artikel innehåller en översikt över kanaler i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: overview
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: cc7f00d69a6fd57efcd9b6eece56ddc0702c6935
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: af5089f0065610873360b2e2883928a43600caa9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985015"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884647"
 ---
 # <a name="channels-overview"></a>Översikt över kanaler
 
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet innehåller en översikt över kanaler i Microsoft Dynamics 365 Commerce. Här finns information om de uppgifter du måste utföra båda före och efter att du ställer in varje kanal.
+Denna artikel innehåller en översikt över kanaler i Microsoft Dynamics 365 Commerce. Här finns information om de uppgifter du måste utföra båda före och efter att du konfigurerar varje kanal.
 
 ## <a name="types-of-channels"></a>Typer av kanaler
 
@@ -47,9 +47,9 @@ Online-kanaler representerar onlinebutiker. När en onlinekanal har skapats mås
 
 Konfigurera kanaler utförs i handelsverktyget. Varje kanal kan ha sina egna betalsätt, prisgrupper, produktvarianter, sortiment och produktuppsättningar. När du har skapat en kanal tilldelar du produkter som du vill ha och sälja i butiken. Varje kanaltyp har en unik uppsättning funktioner som kan behöva konfigureras. Till exempel behöver en butikskanal tilldelade medarbetare, register och kunder. När en ny kanal har skapats måste den tilldelas en organisationshierarki.
 
-## <a name="channel-setup-prerequisites"></a>Förutsättningar för att ställa in kanaler
+## <a name="channel-setup-prerequisites"></a>Förutsättningar för att konfigurera kanaler
 
-Innan du kan ställa in en kanal måste du slutföra några nödvändiga uppgifter baserade på kanaltypen. Mer information finns i [krav för kanalinställning](channels-prerequisites.md).
+Innan du kan konfigurera en kanal måste du slutföra några nödvändiga uppgifter baserade på kanaltypen. Mer information finns i [krav för kanalinställning](channels-prerequisites.md).
 
 ## <a name="set-up-a-channel"></a>Ställ in en kanal
 
@@ -76,7 +76,7 @@ After you create a channel, you may need to complete some of the below tasks:
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Förutsättningar för att ställa in kanaler](channels-prerequisites.md)
+[Förutsättningar för att konfigurera kanaler](channels-prerequisites.md)
 
 [Ställa in en butikskanal](channel-setup-retail.md)
     

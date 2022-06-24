@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: f71ce701adbe60b69b25e41810dda7adeec1d390
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5d1ea1517c75393b1c8d7c95c8aa2405042b4532
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983804"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850653"
 ---
 # <a name="product-lifecycle-state-overview"></a>Produktens livscykeltillstånd – översikt
 
@@ -74,7 +74,7 @@ Produktlivscykeltillstånd stöds av datatabeller och livscykeltillståndet kan 
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Söka efter föråldrade produkter och produktvarianter
 
-Du kan köra en simuleringsanalys om du vill söka efter föråldrade frisläppta produkter eller produktvarianter och sedan uppdatera deras status för produktlivscykeltillstånd. Om du vill hitta föråldrade produkter, se [Sök föråldrade produktvarianter och tilldela ett produktlivscykeltillstånd](tasks/obsolete-product-variants.md). Det här ämnet visar hur du hittar föråldrade frisläppta produkter eller produktvarianter och hur du associerar ett produktlivscykeltillstånd till de föråldrade produkterna. Här visas också hur du visar resultaten för simulering och bedömer hur många produkter och produktvarianter som ska kopplas till ett nytt produktlivscykeltillstånd när du kör uppdateringen utan simulering.  
+Du kan köra en simuleringsanalys om du vill söka efter föråldrade frisläppta produkter eller produktvarianter och sedan uppdatera deras status för produktlivscykeltillstånd. Om du vill hitta föråldrade produkter, se [Sök föråldrade produktvarianter och tilldela ett produktlivscykeltillstånd](tasks/obsolete-product-variants.md). Denna artikel visar hur du hittar föråldrade frisläppta produkter eller produktvarianter och hur du associerar ett produktlivscykeltillstånd till de föråldrade produkterna. Här visas också hur du visar resultaten för simulering och bedömer hur många produkter och produktvarianter som ska kopplas till ett nytt produktlivscykeltillstånd när du kör uppdateringen utan simulering.  
 
 Genom att köra analysen i ett simuleringsläge, identifieras produkterna och produktvarianterna som föråldrade och visas i en specifik form där de enkelt kan granskas. Analysen söker efter transaktioner och specifika huvuddata för att identifiera produkter som inte har några behov inom variabel period och inga huvuddata som kan leda till efterfrågan. Nya frisläppta produkter inom variabelperiod kan uteslutas från analysen. När analysissimuleringen returnerar det förväntade resultatet kan användaren köra analysen och ange ett nytt produktlivscykeltillstånd för alla produkter som identifieras som föråldrade av analysen.  
 
@@ -97,7 +97,7 @@ Använd följande kriterier för att välja och uppdatera frisläppta produkter 
 - Inga aktiva och framtida försäljnings- eller inköpsrader för produkten eller produktvarianten.
 - Produkten eller produktvarianten används inte i en strukturlista som är kopplad till en ej förfallen godkänd strukturlisteversion för en produkt eller variant som är aktiv för planering.
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 - [Skapa ett nytt livscykeltillstånd för produkt](tasks/new-product-lifecycle-state.md)
 - [Skapa ett standardlivscykeltillstånd för produkt](tasks/default-product-lifecycle-state.md)

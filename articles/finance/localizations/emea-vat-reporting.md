@@ -1,6 +1,6 @@
 ---
 title: Momsrapporter för Europa
-description: Det här avsnittet innehåller allmän information om inställning och skapande av mervärdesskattutdrag (skatt) för vissa europeiska länder.
+description: Den här artikeln innehåller allmän information om inställning och skapande av mervärdesskattutdrag (skatt) för vissa europeiska länder.
 author: ShylaThompson
 ms.date: 03/24/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a1f7611dcf713e80f637a4b3f5542763050ac4a6
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: e25b01133bfaa84186faf82c80f24a119b40ac2e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487755"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856543"
 ---
 # <a name="vat-reporting-for-europe"></a>Momsrapporter för Europa
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller allmän information om inställning och skapande av mervärdesskattutdrag (skatt) för vissa europeiska länder.
+Den här artikeln innehåller allmän information om inställning och skapande av mervärdesskattutdrag (skatt) för vissa europeiska länder.
 
-Det här avsnittet innehåller en allmän metod för inställning och skapande av momsrapporten. Den här metoden används ofta av användare i juridiska personer i följande länder/regioner:
+Den här artikeln innehåller en allmän metod för inställning och skapande av momsrapporten. Den här metoden används ofta av användare i juridiska personer i följande länder/regioner:
 
 -   Österrike
 -   Belgien
@@ -41,7 +41,7 @@ Det här avsnittet innehåller en allmän metod för inställning och skapande a
 -   Sverige
 
 > [!IMPORTANT]
-> Funktioner som beskrivs i det här avsnittet för Österrike, Tjeckien, Tyskland, Nederländerna och Sverige avskrivs. Mer information finns i beskrivningen av [borttagna eller gamla funktioner](../get-started/removed-deprecated-features-finance.md).
+> Funktioner som beskrivs i den här artikeln för Österrike, Tjeckien, Tyskland, Nederländerna och Sverige avskrivs. Mer information finns i beskrivningen av [borttagna eller gamla funktioner](../get-started/removed-deprecated-features-finance.md).
 > Med länkarna i följande tabell kan du lära dig mer om den nya utformningen av momsdeklarationer i motsvarande länder.
 > 
 >
@@ -60,7 +60,7 @@ Det här avsnittet innehåller en allmän metod för inställning och skapande a
 > | Storbritannien             | [Förbered för integration med MRD för moms](emea-gbr-mtd-vat-integration.md) |
 
 ## <a name="vat-statement-overview"></a>Översikt över momsrapport
-Skatteutdraget baseras på beloppen i momstransaktionerna. Att skapa ett momsrapport ingår i betalningsprocessen för moms, som implementeras med funktionen Kvitta och bokföra moms. Den här funktionen beräknar momsen som ska betalas för en given period. Kvittningsberäkningen innehåller bokförd moms för den valda kvittningsperioden för momstransaktionen. Processen för att beräkna data för en momsrapport baseras på förhållandet mellan momskoder och momsrapporteringskoder, där momsrapporteringskoderna matchar rutorna för momsrapporter (eller taggar i XML). För varje momskod bör momsrapporteringskoder ställas in för varje transaktionstyp, till exempel skattepliktig försäljning, skattepliktiga inköp och skattepliktig import. Följande typ av transaktioner beskrivs i avsnittet Momskoder för momsrapportering längre fram i det här avsnittet.
+Skatteutdraget baseras på beloppen i momstransaktionerna. Att skapa ett momsrapport ingår i betalningsprocessen för moms, som implementeras med funktionen Kvitta och bokföra moms. Den här funktionen beräknar momsen som ska betalas för en given period. Kvittningsberäkningen innehåller bokförd moms för den valda kvittningsperioden för momstransaktionen. Processen för att beräkna data för en momsrapport baseras på förhållandet mellan momskoder och momsrapporteringskoder, där momsrapporteringskoderna matchar rutorna för momsrapporter (eller taggar i XML). För varje momskod bör momsrapporteringskoder ställas in för varje transaktionstyp, till exempel skattepliktig försäljning, skattepliktiga inköp och skattepliktig import. Följande typ av transaktioner beskrivs i avsnittet Momskoder för momsrapportering längre fram i den här artikeln.
 
 En specifik rapportlayout för varje momsrapporteringskod bör fastställas. Momskoder är samtidigt länkade till en viss momsmyndighet via momskvittningsperioder. En specifik rapportlayout för varje momsmyndighet bör fastställas. Därför kan endast momsrapporteringskoder med samma rapportlayout som har ställts in för en momsmyndighet i momskvittningsperioder för momskoden markeras i rapportinställningarna för momskoden. En momstransaktion skapas vid bokföring av en order eller en journal, innehåller en momskod, momskälla, momsriktning och transaktionsbelopp (momsbasbelopp och momsbelopp i redovisningsvaluta, momsvaluta och transaktionsvaluta). Baserat på kombinationen av momstransaktionsattribut utgör transaktionsbeloppen totalbelopp för momsrapporteringskoder som angetts för momskoder. Illustrationen som följer visar datarelationen.
 

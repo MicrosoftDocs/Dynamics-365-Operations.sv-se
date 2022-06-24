@@ -1,6 +1,6 @@
 ---
 title: Konfigurera och arbeta med orderspärrar för kundtjänst
-description: Det här avsnittet beskriver hur du arbetar med undantag för order med Dynamics 365 Commerce.
+description: Denna artikel beskriver hur du arbetar med undantag för order med Dynamics 365 Commerce.
 author: josaw1
 ms.date: 05/14/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f474b5936f2ae154ad54185becd91865642e8efe3cf10e7dcdbb650c6c833b21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f8c5daecc6aa05cc6a0f5dc4a2bc44a0fbba07d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762606"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860147"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurera och arbeta med orderspärrar för kundtjänst
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver funktionerna för spärrad order med Dynamics 365 Commerce har för kundtjänstorder.
+Denna artikel beskriver de funktioner för spärrad order som Dynamics 365 Commerce har för kundtjänstorder.
 
 ## <a name="configuring-call-center-order-holds"></a>Konfigurera orderspärrar för kundtjänst
 
@@ -53,7 +53,7 @@ När spärrningsinformation registrerats och sparats, kan användaren stänga si
 
 Om flaggan **aktiverar slutförande av order** är aktiverad i kundtjänstkanalen behöver betalningen inte gälla för en order som har spärrats. Däremot för en försäljningsorder som inte är spärrad kan användarna inte lämna startsidan för försäljningsorder förrän betalningen görs. Betalning kommer förstås att krävas innan orderspärren frisläpps.
 
-Kundtjänst kan dessutom lägga en manuell bedrägerispärr för order som av någon anledning är osäkra. Order kan också spärras automatiskt när de matchar aktiva bedrägerikriterier och regler. Mer information om den här typen av orderspärr, se [ställa in bedrägerivarningar](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+Kundtjänst kan dessutom lägga en manuell bedrägerispärr för order som av någon anledning är osäkra. Order kan också spärras automatiskt när de matchar aktiva bedrägerikriterier och regler. Mer information om den här typen av orderspärr, se [konfigurera bedrägerivarningar](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Visa och hantera de order som har spärrats
 

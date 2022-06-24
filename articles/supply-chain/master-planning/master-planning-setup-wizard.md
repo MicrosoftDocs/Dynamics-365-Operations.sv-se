@@ -1,6 +1,6 @@
 ---
 title: Inställningsguide för huvudplanering (innehåller video)
-description: I det här avsnittet beskrivs hur du kör guiden Inställningar för huvudplanering för att ställa in huvudplaneringen.
+description: I denna artikel beskrivs hur du kör installationsguiden för huvudplanering för att konfigurera huvudplaneringen.
 author: t-benebo
 ms.date: 10/21/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: a5914f63de654acd076048240c6e37d5b67f4ffa
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 1c79e1df53dfabc33aeacb56096b113e62b765d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470217"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875345"
 ---
 # <a name="master-planning-setup-wizard"></a>Inställningsguide för huvudplanering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en guide för **Installationsguide för huvudplanering**. Det förklarar hur parameterförslag beräknas och ger också exempel som visar hur olika företag ställer in huvudplanering, baserat på deras affärsbehov.
+Denna artikel innehåller en guide för **Installationsguide för huvudplanering**. Det förklarar hur parameterförslag beräknas och ger också exempel som visar hur olika företag konfigurerar huvudplanering, baserat på deras affärsbehov.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 
@@ -123,7 +123,7 @@ Slutligen, när du väljer **Slutför**, tillämpas den nya konfigurationen. Om 
 
 ## <a name="examples"></a>Exempel
 
-I det här avsnittet beskrivs hur du ställer in två fiktiva företag för att visa hur installationen kan ändras efter varje företags behov.
+I det här avsnittet beskrivs hur du konfigurerar två fiktiva företag för att visa hur installationen kan ändras efter varje företags behov.
 
 ### <a name="example-1-contoso-manufacturer"></a>Exempel 1: Contoso tillverkare
 
@@ -131,7 +131,7 @@ Contoso tillverkare är ett tillverkande företag som producerar högtalare. Det
 
 - De slutgiltiga artiklar som företaget tillverkar har en strukturlistestruktur.
 - Alla slutgiltiga artiklar och komponenter planeras av huvudplaneringen. Manuell planering är inte klar.
-- En flödesoperation definieras för produktionen av varje slutlig artikel.
+- En flödesåtgärd definieras för produktionen av varje slutlig artikel.
 - Tillverkningsanläggningen producerar slutgiltiga produkter. Den har ett definierat antal fräs- och borrmaskiner som används för att bearbeta komponenterna. De olika komponenterna måste bearbetas av dessa maskiner.
 - Det finns många leverantörer. Genomsnittlig ledtid för artiklar är en vecka. En grupp av artiklar från samma leverantör kommer att ha en ledtid på sju veckor.
 
@@ -150,7 +150,7 @@ I guiden anges följande värden för Contoso tillverkare:
 
 - **Tidsplanering:**
 
-    - **Fråga:** "behöver du schemalägga operationer uppdelade i enskilda jobb?"
+    - **Fråga:** "behöver du schemalägga åtgärder uppdelade i enskilda jobb?"
     - **Svar:** "Ja".
 
     Contoso tillverkning måste planera och schemalägga enskilda jobb som ska utföras på verkstadsgolvet. Därför kommer det att använda finplanering.

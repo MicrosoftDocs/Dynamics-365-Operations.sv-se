@@ -1,6 +1,6 @@
 ---
 title: Arbeta med publiceringsgrupper
-description: I det här avsnittet beskrivs funktionen publicera grupper i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs funktionen för att publicera grupper i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 10/09/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d757f34d3e16850e4f5de122f63b2b3342f612e49f07c7cf6585362999f03c02
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76d447a5368cd5e342e8b1b934bb04d45e3378fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717682"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885120"
 ---
 # <a name="work-with-publish-groups"></a>Arbeta med publiceringsgrupper
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs funktionen publicera grupper i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs funktionen för att publicera grupper i Microsoft Dynamics 365 Commerce.
 
 näthandelssajter uppdateras ständigt med nytt innehåll under hela året. Uppdateringar publiceras ofta i omgångar runt upptagna näthandelsevenemang som helgdagar, säsongsbetonade marknadsföringskampanjer eller kampanjlanseringar. Dessa uppdateringar kräver ofta att grupper av webbplatsinnehåll (till exempel sidor, bilder, fragment och mallar) mellanlagras, verifieras och publiceras samtidigt i en enda åtgärd.
 

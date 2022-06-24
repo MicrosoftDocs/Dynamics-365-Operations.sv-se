@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f88dd1c23153d325709e28b056f902b555f05376
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c9e2ccbe613a4aab40a4f519bbb82a9175d46e72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675387"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846225"
 ---
 # <a name="compare-item-prices-storage-report"></a>Rapporten jämföra lager för artikelpriser
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du kör rapporten **Jämföra lager för artikelpriser** och gör utdata tillgänglig digitalt, antingen som en interaktiv sida i Dynamics 365 Supply Chain Management, eller som ett exporterat dokument i ett flertal format.
+I denna artikel beskrivs hur du kör rapporten **Jämföra lager för artikelpriser** och gör utdata tillgänglig digitalt, antingen som en interaktiv sida i Dynamics 365 Supply Chain Management, eller som ett exporterat dokument i ett flertal format.
 
 När du visar rapporten i din webbläsare, justeras kolumner och aggregerade saldon dynamiskt, beroende på vilken layout som har konfigurerats. Du kan sortera resultaten, filtrera dem, öka detaljnivån i data och mycket mer.
 
@@ -51,7 +51,7 @@ Följ dessa steg för att skapa och lagra rapporten **jämföra lager för artik
 1. Välj **Ny** om du vill öppna fönstret **jämför artikelpriser**. Ange följande alternativ för att definiera vilka priser som ska jämföras i rapporten:
 
     - På snabbfliken **parametrar** ger du rapporten ett unikt **namn** och använder fälten i **Väntande priser som ska jämföras** och **Priser som används för jämförelsen** för att definiera vilka priser och datum som ska jämföras.
-    - På snabbfliken **Poster som ska ingå** kan du ställa in filter och begränsningar för att definiera vilka data som ska ingå i rapporten.
+    - På snabbfliken **Poster som ska ingå** kan du konfigurera filter och begränsningar för att definiera vilka data som ska ingå i rapporten.
     - På snabbfliken **kör i bakgrund** ställer du in hur, när och hur ofta du vill generera rapporten.
     > [!NOTE]
     > Den här rapporten körs alltid som en del av ett batchjobb.
@@ -91,16 +91,16 @@ Nedan finns ett exempel på hur du exporterar rapporten **jämföra lager för a
 
 1. Välj knappen **Exportera** i avsnittet **Datahantering**.
 
-1. Sidan **Export** öppnas, som du kommer att använda för att ställa in exportjobbet. Börja med att ge jobbet ett **gruppnamn**.
+1. Sidan **Export** öppnas, som du kommer att använda för att konfigurera exportjobbet. Börja med att ge jobbet ett **gruppnamn**.
 
-1. I avsnittet **valda entiteter** väljer du **Lägg till entitet** för att öppna en dialogruta där du kan ställa in följande alternativ:
+1. I avsnittet **valda entiteter** väljer du **Lägg till entitet** för att öppna en dialogruta där du kan konfigurera följande alternativ:
 
     - **Entitetsnamn** - Välj **jämför artikelpriser**.
     - **Måldataformat** – Välj det format som du vill exportera till.
 
 1. Välj **Lägg till** för att lägga till den nya raden och välj sedan **Stäng** för att stänga dialogrutan.
 
-1. Vanligtvis exporterar du en rapport i taget. Det gör du genom att ställa in **filter** för den rad som du just har lagt till i fönstret **Fråga**. På så sätt kan du definiera vilka rapporter från enheten **jämför artikelpriser** som du vill ta med i exporten. Ställ in följande filteralternativ för att exportera en enskild rapport:
+1. Vanligtvis exporterar du en rapport i taget. Det gör du genom att konfigurera **filter** för den rad som du just har lagt till i fönstret **Fråga**. På så sätt kan du definiera vilka rapporter från enheten **jämför artikelpriser** som du vill ta med i exporten. Ställ in följande filteralternativ för att exportera en enskild rapport:
 
     - På fliken **intervall**, välj **Lägg till** om du vill lägga till en ny rad.
     - Ange **Register** till **Jämför artikelpriser**.

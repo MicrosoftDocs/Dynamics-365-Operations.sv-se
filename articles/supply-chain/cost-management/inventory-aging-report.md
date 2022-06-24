@@ -1,6 +1,6 @@
 ---
 title: Exempel och logik på åldersfördelningsrapport för lager
-description: I det här avsnittet presenteras några exempel som visar hur du tolkar resultaten från en åldersfördelningsrapport för lager.
+description: I denna artikel presenteras några exempel som visar hur du tolkar resultaten från en åldersfördelningsrapport för lager.
 author: JennySong-SH
 ms.date: 5/29/2020
 ms.topic: article
@@ -16,24 +16,24 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4cfffa49f802c601da391617b123134c435fba92
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 40066431ddfb9644c059025eac55d1b36789882e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672358"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848032"
 ---
 # <a name="inventory-aging-report-examples-and-logic"></a>Exempel och logik på åldersfördelningsrapport för lager
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet presenteras några exempel som visar hur du tolkar resultaten från rapporten **åldersfördelning för lager**. I den här rapporten kategoriseras lagerbehållningskvantitet och lagervärden för en vald artikel eller artikelgrupp till flera periodgrupper. I det här avsnittet visas också rapportens interna logik.
+I denna artikel presenteras några exempel som visar hur du tolkar resultaten från en **åldersfördelningsrapport för lager**. I den här rapporten kategoriseras lagerbehållningskvantitet och lagervärden för en vald artikel eller artikelgrupp till flera periodgrupper. I denna artikel visas också rapportens interna logik.
 
-Exemplen i det här avsnittet visar resultat som visas i en standardrapport för **Lagerföråldring**. I allmänhet rekommenderar vi dock att du använder versionen [Lagring av Lagerföråldringsrapport](inventory-aging-report-storage.md) för den här rapporten, särskilt när du har många artiklar och lagerställen som måste bearbetas. Lagring av Lagerföråldringsrapport sparar varje rapport som du skapar, visar resultaten som en interaktiv sida och ett diagram och låter dig exportera alla sparade rapporter.
+Exemplen i denna artikel visar resultat som anges i en standardrapport för **Lagerföråldring**. I allmänhet rekommenderar vi dock att du använder versionen [Lagring av Lagerföråldringsrapport](inventory-aging-report-storage.md) för den här rapporten, särskilt när du har många artiklar och lagerställen som måste bearbetas. Lagring av Lagerföråldringsrapport sparar varje rapport som du skapar, visar resultaten som en interaktiv sida och ett diagram och låter dig exportera alla sparade rapporter.
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>Exempeldata som används i dessa exempel
 
-Exemplen i det här avsnittet är baserade på transaktionsdata för exempellager som beskrivs i det här avsnittet.
+Exemplen i denna artikel är baserade på transaktionsdata för exempellager som beskrivs i det här avsnittet.
 
 ### <a name="storage-dimension-setup"></a>Inställningar av lagringsdimension
 
@@ -262,7 +262,7 @@ Observera dessutom att kvantitetsfördelningen för plats 1 är annorlunda. I de
 
 ## <a name="effects-of-inventory-closing"></a>Effekter av stängning av lager
 
-Om du kör lagerstängningen för maj och sedan kör föregående rapport igen, men ställer in fältet **Från och med** till *31 maj 2020*, kommer du att märka följande resultat:
+Om du kör lagerstängningen för maj och sedan kör föregående rapport igen, men konfigurerar fältet **Från och med** till *31 maj 2020*, kommer du att märka följande resultat:
 
 - **Lagervärdet** och **Genomsnittlig enhetskostnad** uppdateras.
 - Värdet **Behållningsvärde** och värdena **Belopp** i varje periodgrupp uppdateras därefter.

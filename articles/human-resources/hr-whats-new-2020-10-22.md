@@ -1,6 +1,6 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources 22 oktober 2020
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 22 oktober 2020.
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 22 oktober 2020.
 author: jcart1106
 ms.date: 10/22/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b36354b14faf59aacb4a619dfb6f243335e6a297
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d58c8d5eab86779a764cee5a3ee8ca17ade471de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063528"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862813"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources 22 oktober 2020
 
@@ -27,7 +27,7 @@ ms.locfileid: "8063528"
 
 
 
-Det här ämnet beskriver nya, ändrade, kommer snart funktioner i Dynamics 365 Human Resources. Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
+Den här artikeln beskriver funktioner som är nya, ändrade eller kommer snart i Dynamics 365 Human Resources. Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
 Mer information om nya funktioner och deras förväntade allmänna tillgänglighetsdatum finns i [Översikt över Dynamics 365 Human Resources 2020 utgivningscykel 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -50,9 +50,9 @@ Följande funktioner är i allmänhet tillgänglig i den här versionen.
 Den här versionen innehåller följande felkorrigeringar.
 
 > [!NOTE]
-> Vårt mål är att få den här informationen så snart som möjligt. Vi kan uppdatera det här avsnittet för att inkludera felkorrigeringar som gjorde det i versionen efter det att ämnet publicerades första gången.
+> Vårt mål är att få den här informationen så snart som möjligt. Vi kan komma att uppdatera detta ämne i syfte att inkludera felkorrigeringar som kommit med i versionen efter det att ämnet publicerades första gången.
 
-| Utfärda nummer| Utleverans  | beskrivning|
+| Utfärda nummer| Problem  | Beskrivning|
 | --- | --- | --- |
 | 437922 | Import av FMLA timmar med DMF-entiteten resulterar i ett skrivskyddat fel. | Om du använder enheten FMLA timmar för att importera timmar som är kopplade till ett FMLA-ärende misslyckades. Vi har lagt till logik för att se till att de importerade timmarna inte överskrider det antal timmar som återstår för ärendet. |
 | 512019 | Felaktigt belopp för **senaste överföring**. | På sidan **Ledighet** visas ett felaktigt **Från och med** till den första dagen i nästa budgetperiod visas ett felaktigt belopp för **senaste överföring** för typ **Årlig ledighet**. Nu visas rätt belopp. |

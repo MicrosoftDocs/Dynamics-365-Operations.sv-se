@@ -1,6 +1,6 @@
 ---
 title: Visuell tidsplanering för lean manufacturing
-description: Det här avsnittet innehåller information om kanban-schematavlan som produktionsplaneraren kan använda för att styra och optimera produktionsplanen för kanban-jobb.
+description: Denna artikel innehåller information om kanban-schematavlan, som produktionsplaneraren kan använda för att styra och optimera produktionsplanen för kanban-jobb.
 author: johanhoffmann
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5803793a4874ee73f943d0f059047458c37dc48b7d3276dadc8d8803599fb9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a743be96867c1f325e6fe01f23355c27cb4d0cc0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764822"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875200"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Visuell tidsplanering för lean manufacturing
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller information om kanban-schematavlan som produktionsplaneraren kan använda för att styra och optimera produktionsplanen för kanban-jobb.
+Denna artikel innehåller information om kanban-schematavlan, som produktionsplaneraren kan använda för att styra och optimera produktionsplanen för kanban-jobb.
 
-Det här avsnittet innehåller information om kanban-schematavlan som produktionsplaneraren kan använda för att styra och optimera produktionsplanen för kanban-jobb.
+Denna artikel innehåller information om kanban-schematavlan, som produktionsplaneraren kan använda för att styra och optimera produktionsplanen för kanban-jobb.
 
 Kanban-schematavlan tillåter produktionsplaneraren att styra och optimera produktionsplanen för kanban-jobb. Det gör flödet för kanban-jobb transparent och ger produktionsplaneraren ett verktyg som optimerar och justerar produktionsplanen för arbetsgruppen för lean manufacturing.
 

@@ -1,6 +1,6 @@
 ---
-title: Rabatthanteringserbjudanden
-description: Det här avsnittet beskriver hur du skapar rabatthanteringserbjudanden. Erbjudanden används för att kontrollera olika metoder och baser för beräkning av rabatter och royalties. De omfattar regler för inkludering och undantag.
+title: Rabatthanteringsavtal
+description: Denna artikel beskriver hur du skapar rabatthanteringserbjudanden. Erbjudanden används för att kontrollera olika metoder och baser för beräkning av rabatter och royalties. De omfattar regler för inkludering och undantag.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 76cdbf21cfbc0db7b363d0fbf60a1ecd0046efc1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 28cfff69ab4e528c146ccbf6a34548a819c99522
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689703"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851606"
 ---
 # <a name="rebate-management-deals"></a>Rabatthanteringserbjudanden
 
 [!include [banner](../includes/banner.md)]
 
-Rabatthanteringserbjudanden används för att kontrollera olika metoder och baser för beräkning av rabatter och royalties. De omfattar regler för inkludering och undantag. Det finns tre typer av rabatthanteringserbjudanden: kundrabatter, kundroyalties och leverantörsrabatter. Alla tre typerna använder liknande inställningar. I det här avsnittet visas skillnader mellan de länder där de finns.
+Rabatthanteringserbjudanden används för att kontrollera olika metoder och baser för beräkning av rabatter och royalties. De omfattar regler för inkludering och undantag. Det finns tre typer av rabatthanteringserbjudanden: kundrabatter, kundroyalties och leverantörsrabatter. Alla tre typerna använder liknande inställningar. I denna artikel visas skillnader mellan de länder där de finns.
 
 ## <a name="create-a-deal"></a>Skapa ett erbjudande
 
@@ -41,8 +41,8 @@ Rabatthanteringserbjudanden används för att kontrollera olika metoder och base
 
     - **Rabatthanteringserbjudande** – Om du har [ställt in en nummerserie](rebate-management-parameters.md) för rabatterbjudanden sätts detta fält automatiskt till ett unikt systemgenererat ID. Annars måste du ange ett unikt ID.
     - **Beskrivning** – Ange en beskrivning av erbjudandet.
-    - **Modul** – Välj den typ av partner som erbjudandet gäller för (*Kund* eller *Leverantör*). Beroende på vilken sida du startade från kan det här fältet ställas in automatiskt baserat på den valda erbjudandetypen. I det här fallet är fältet skrivskyddat. 
-    - **Typ** – Välj typ av erbjudande (*Rabatt* eller *Royalty*). Beroende på vilken sida du startade från kan det här fältet ställas in automatiskt baserat på den valda erbjudandetypen. I det här fallet är fältet skrivskyddat. 
+    - **Modul** – Välj den typ av partner som erbjudandet gäller för (*Kund* eller *Leverantör*). Beroende på vilken sida du startade från kan det här fältet ställas in automatiskt baserat på den valda erbjudandetypen. I det här fallet är fältet skrivskyddat.
+    - **Typ** – Välj typ av erbjudande (*Rabatt* eller *Royalty*). Beroende på vilken sida du startade från kan det här fältet ställas in automatiskt baserat på den valda erbjudandetypen. I det här fallet är fältet skrivskyddat.
     - **Stäm av efter** – Välj hur erbjudandet ska beräknas och avstämmas:
 
         - *Behandla* – En enda rabatt ska behandlas för alla rabatter och avdrag i erbjudandet.
@@ -90,14 +90,14 @@ När du har skapat ett erbjudande enligt beskrivningen i det föregående avsnit
     - **Kontokod** – Välj omfattningen av kunder eller leverantörer som avtalsraden gäller för:
 
         - *Register* – Den här raden gäller för en viss kund eller leverantör.
-        - *Grupp* – Den här raden gäller för en grupp kunder eller leverantörer. Mer information om hur du ställer in grupper finns i [Rabatthanteringsgrupper](rebate-management-groups.md).
+        - *Grupp* – Den här raden gäller för en grupp kunder eller leverantörer. Mer information om hur du konfigurerar grupper finns i [Rabatthanteringsgrupper](rebate-management-groups.md).
         - *Alla* – Den här raden gäller för alla kunder eller leverantörer.
 
     - **Kontorelation** – Om du har valt fältet *Tabell* i **Kontokod** välj den kund eller leverantör som affären gäller. Om du väljer *Grupp* ska du välja leverantörsgruppen. Om du väljer *Alla* är det här fältet inte tillgängligt.
     - **Artkelkod** – Välj omfattningen av artiklar som erbjudanderaden gäller för:
 
         - *Register* – Den här raden gäller för en viss artikel.
-        - *Grupp* – Den här raden gäller för en grupp artikel. Mer information om hur du ställer in grupper finns i [Rabatthanteringsgrupper](rebate-management-groups.md).
+        - *Grupp* – Den här raden gäller för en grupp artikel. Mer information om hur du konfigurerar grupper finns i [Rabatthanteringsgrupper](rebate-management-groups.md).
         - *Alla* – Erbjudanderaden gäller för alla artiklar.
 
     - **Artikelrelation** – Om du har valt fältet *Tabell* i **Artikelkod** välj den artikel som erbjudanderaden gäller. Om du väljer *Grupp* ska du välja artikelgruppen. Om du väljer *Alla* är det här fältet inte tillgängligt.
@@ -110,15 +110,15 @@ När du har skapat ett erbjudande enligt beskrivningen i det föregående avsnit
 
 ## <a name="add-rebate-management-details-to-a-deal-line"></a>Lägg till rabatt administrationsinformation i ett erbjudanderad
 
-För varje rad i erbjudande måste du ställa in information på snabbfliken **Rabatthanteringsdetaljer**. Först väljer du den hanterade raden snabbfliken på **Rabatthantering** . Ställ sedan in värden för den raden med hjälp av de olika flikarna på snabbflikarna **Rabatthanteringsinformation**. Följande delgrupper beskriver hur du använder varje flik.
+För varje rad i erbjudande måste du konfigurera information på snabbfliken **Rabatthanteringsdetaljer**. Först väljer du den hanterade raden snabbfliken på **Rabatthantering** . Ställ sedan in värden för den raden med hjälp av de olika flikarna på snabbflikarna **Rabatthanteringsinformation**. Följande delgrupper beskriver hur du använder varje flik.
 
 ### <a name="settings-on-the-general-tab"></a>Inställningar på fliken Redovisning
 
-På fliken **Allmänt** på snabbfliken **Rabatthanteringsinformation** kan du ställa in beräkningsmetod och underlag för den valda raden. Den här inställningen styr om ett minsta inköp krävs, bokföringsprofilerna som är kopplade till avtalsraden och detaljerna för beräkningen. Följande register beskriver de fält som är tillgängliga.
+På fliken **Allmänt** på snabbfliken **Rabatthanteringsinformation** kan du konfigurera beräkningsmetod och underlag för den valda raden. Den här inställningen styr om ett minsta inköp krävs, bokföringsprofilerna som är kopplade till avtalsraden och detaljerna för beräkningen. Följande register beskriver de fält som är tillgängliga.
 
 | Fält | beskrivning |
 |---|---|
-| Beräkningsmetod | Välj vilken metod som ska användas när den valda avtalsraden kombineras med andra avtalsrader (*Stegvis*, *Ackumulerad*, *Rullande* eller *Summa*). Värdet i det här fältet kan påverka resultatet av dina rabattberäkningar. En fullständig beskrivning av varje metod och exempel som visar hur den påverkar rabattberäkningen finns i avsnittet [Beräkningsmetoder för erbjudanderader](#calc-methods) längre fram i det här avsnittet. |
+| Beräkningsmetod | Välj vilken metod som ska användas när den valda avtalsraden kombineras med andra avtalsrader (*Stegvis*, *Ackumulerad*, *Rullande* eller *Summa*). Värdet i det här fältet kan påverka resultatet av dina rabattberäkningar. En fullständig beskrivning av respektive metod och exempel som visar hur den påverkar rabattberäkningen finns i avsnittet [Beräkningsmetoder för erbjudanderader](#calc-methods) längre fram i denna artikel. |
 | Bas | Välj om rabatten ska tillämpas på kvantitet (det vill säga det totala antalet enheter som köps eller säljs) eller värde (det vill säga det totala priset för varor som köps eller säljs). |
 | Transaktionstyp | <p>Välj tidpunkt i processen när beräkningen ska ske:</p><ul><li>*Order* – Använd den beställda kvantiteten eller det beställda värdet som grund för beräkningen.</li><li>*Levererad* – Använd den levererade kvantiteten eller det beställda värdet som grund för beräkningen.</li><li>*Faktura* – Använd den fakturerade kvantiteten eller det beställda värdet som grund för beräkningen.</li></ul> |
 | Enhet | Om du har valt *Kvantitet* i fältet **Bas** ska du välja enheten som kvantiteten måste anges i. |
@@ -132,7 +132,7 @@ På fliken **Allmänt** på snabbfliken **Rabatthanteringsinformation** kan du s
 | Bokföringsprofil för garanti | Det här fältet fungerar som fältet **Bokföringsprofil**, men det gäller endast för royalties. |
 | Betalningstyp | Betalningstypen för bokföringsprofilen som valts för erbjudandet. |
 | Moms inklusive | Välj om transaktionen ska inkluderas i moms. Inkluderad moms är endast relevant när fältet **Bas** har värdet *Värde*. Fakturabeloppet används som momsbeloppet. Om rabattberäkningen baseras på en procentsats, multipliceras rabattprocenten med det belopp som inkluderas i momsen. Observera att beräkningen använder momsvärdet från avtalsraden. |
-| Inkludera kreditfakturor | <p>Ange alternativet *Ja* om kreditnotor ska inkluderas i rabattberäkningen.</p><p>Om du ställer in alternativet till *Ja*, varierar effekten, beroende på värdet i fältet **Transaktionstyp**:</p><ul><li>Om fältet **Transaktionstyp** ställs in på *Faktura*, faktorn för beräkningen i kreditfakturor. Denna konfiguration är den vanliga konfigurationen.</li><li>Om fältet **Transaktionstyp** är inställt på *Order*, faktorn för beräkningen både i försäljningsorder som har negativa värden och öppna returnerade order.</li></ul> |
+| Inkludera kreditfakturor | <p>Ange alternativet *Ja* om kreditnotor ska inkluderas i rabattberäkningen.</p><p>Om du konfigurerar alternativet till *Ja*, varierar effekten, beroende på värdet i fältet **Transaktionstyp**:</p><ul><li>Om fältet **Transaktionstyp** ställs in på *Faktura*, faktorn för beräkningen i kreditfakturor. Denna konfiguration är den vanliga konfigurationen.</li><li>Om fältet **Transaktionstyp** är inställt på *Order*, faktorn för beräkningen både i försäljningsorder som har negativa värden och öppna returnerade order.</li></ul> |
 | Rabatterat belopp | Ange alternativet *Ja* om du vill basera beräkningen på det rabatterade beloppet för artikeln eller artiklarna i fall där rabatter ges för rabatter på raden. |
 | Endast betalade fakturor | Ange det här alternativet till *Ja* om beräkningen endast ska beakta fullt betalda fakturor. (Det innebär alltså inte att rabatter beräknas för delvis betalda fakturor.) Det här alternativet är endast tillgängligt om fältet **Transaktionstyp** är inställt på *Faktura*. |
 | Inkludera fritextfaktura | Ange alternativet *Ja* för att inkludera fritextfakturor i beräkningen. Fritextfakturor kan endast inkluderas för erbjudanderader där fältet **Artikelkod** är inställt på *Alla*. |
@@ -154,11 +154,11 @@ Följande register beskriver de fält som är tillgängliga för varje datumrad.
 | Från-datum | Ange det första datumet som datumraden gäller för. Om datumen "från" och "till" anges i sidhuvudet i erbjudandet används de som standardvärden för varje ny datumrad. |
 | Till-datum | Ange det sista datumet som datumraden gäller för. Om datumen "från" och "till" anges i sidhuvudet i erbjudandet används de som standardvärden för varje ny datumrad. |
 | Per | Ange hur ofta erbjudanderaden ska beräknas. Ange ett heltal här och välj sedan en enhet i fältet **Ackumulera efter**. Om du till exempel vill beräkna varannan vecka ställer du in fältet **Per** till *2* och **Ackumulera efter** till *Veckor*. |
-| Ackumulera efter | Välj den enhet som gäller för inställningen **Per**. Välj *Livstid* för att beräkna över hela livslängden för erbjudanderaden. Välj *Anpassad period* för att välja en period som i redovisningen. I detta fall måste du också ställa in fältet **Periodtyp**. |
+| Ackumulera efter | Välj den enhet som gäller för inställningen **Per**. Välj *Livstid* för att beräkna över hela livslängden för erbjudanderaden. Välj *Anpassad period* för att välja en period som i redovisningen. I detta fall måste du också konfigurera fältet **Periodtyp**. |
 | Periodtyp | Det här fältet är endast tillgängligt om fältet **Ackumulera av efter** anges till *Anpassad period*. De värden som är tillgängliga för urval kommer från de periodtyper som är definierade i redovisningen. |
 | Första dagen i veckan | Ange hur veckor identifieras för perioden. Det här fältet är endast tillgängligt om fältet **Ackumulera efter** anges till *Veckor*. |
 | Anspråk per | Ange hur ofta rabattavtal kan begärts för erbjudanderaden. Ange ett heltal här och välj sedan en enhet i fältet **Anspråk efter**. |
-| Anspråk efter | Välj den enhet som gäller för inställningen **Anspråk efter**. Välj *Livstid* om du vill tillåta anspråk bara en gång under hela erbjudanderadens livstid. Välj *Anpassad period* för att välja en period som i redovisningen. I detta fall måste du också ställa in fältet **Typ av anspråksperiod**. |
+| Anspråk efter | Välj den enhet som gäller för inställningen **Anspråk efter**. Välj *Livstid* om du vill tillåta anspråk bara en gång under hela erbjudanderadens livstid. Välj *Anpassad period* för att välja en period som i redovisningen. I detta fall måste du också konfigurera fältet **Typ av anspråksperiod**. |
 | Typ av anspråksperiod | Det här fältet är endast tillgängligt om fältet **Anspråk efter** anges till *Anpassad period*. De värden som är tillgängliga för urval kommer från de periodtyper som är definierade i redovisningen. |
 | Process vid bokföring | Markera den här kryssrutan om anspråksraden ska behandlas vid bokföringstid. Detta alternativ är endast tillgängligt för erbjudanderader där fältet **Transaktionstyp** på fliken **Allmänt** är inställt på *Levererad* eller *Faktura*. För reservering bokförs provisionen när leveransfakturan eller fakturan genereras. |
 | Garanti per | Det här fältet gäller endast royaltyerbjudanden. Ange hur ofta garantin för royaltyn ska beräknas under perioden som definieras i inställningen **Ackumulera efter**. Ange ett heltal här och välj sedan en betalningsenhet i fältet **Garanti betald**. |
@@ -201,7 +201,7 @@ Du kan lägga till fler dimensioner i rutnätet på snabbfliken **Rabatthanterin
 
 ## <a name="calculation-methods-for-deal-lines"></a><a name="calc-methods"></a>Beräkningsmetoder för erbjudanderader
 
-Varje gång du ställer in detaljer för en av raderna, enligt beskrivningen i det föregående avsnittet, måste du välja beräkningsmetod för den raden. I det här avsnittet förklaras de olika beräkningsmetoderna och här ges exempel som visar hur de olika metoderna beräknar det totala rabattbeloppet för order och erbjudanderader. I dessa exempel är order och raderna identiska. Det är bara beräkningsmetoderna som skiljer sig åt.
+Varje gång du konfigurerar detaljer för en av raderna, enligt beskrivningen i det föregående avsnittet, måste du välja beräkningsmetod för den raden. I det här avsnittet förklaras de olika beräkningsmetoderna och här ges exempel som visar hur de olika metoderna beräknar det totala rabattbeloppet för order och erbjudanderader. I dessa exempel är order och raderna identiska. Det är bara beräkningsmetoderna som skiljer sig åt.
 
 ### <a name="stepped-calculation-method"></a>Stegvis beräkningsmetod
 

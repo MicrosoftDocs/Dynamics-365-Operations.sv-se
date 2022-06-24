@@ -1,6 +1,6 @@
 ---
 title: Arkivera lagertransaktioner
-description: I det här avsnittet beskrivs hur du arkiverar data för lagertransaktioner för att förbättra systemets prestanda.
+description: I denna artikel beskrivs hur du arkiverar data för lagertransaktioner för att förbättra systemets prestanda.
 author: yufeihuang
 ms.date: 05/10/2022
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8b766d306f31fc531f33aa29e1f96048bbd90085
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: c63cdee862e2e22649a3eb58ae37597741770e14
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736073"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874113"
 ---
 # <a name="archive-inventory-transactions"></a>Arkivera lagertransaktioner
 
 [!include [banner](../../includes/banner.md)]
 
-Med tiden fortsätter lagertransaktionsregistret (`InventTrans`) att växa och förbruka mer databasutrymme. Därför kommer frågeställningar som görs mot registret att gradvis bli besvarade. Det här ämnet beskriver användning av funktionen *arkiv för lagertransaktioner* för att arkivera data om lagertransaktioner för att förbättra systemets prestanda.
+Med tiden fortsätter lagertransaktionsregistret (`InventTrans`) att växa och förbruka mer databasutrymme. Därför kommer frågeställningar som görs mot registret att gradvis bli besvarade. Denna artikel beskriver användning av funktionen *Arkiv för lagertransaktioner* för att arkivera data om lagertransaktioner för att förbättra systemets prestanda.
 
 > [!NOTE]
 > Endast ekonomiskt uppdaterade lagertransaktioner kan arkiveras i en vald stängd redovisningsperiod. För att kunna arkiveras måste ekonomiskt uppdaterade utgående lagertransaktioner ha utleveransstatus *Såld* och inkommande lagertransaktioner måste ha inleveransstatus *Inköpt* .
@@ -35,11 +35,11 @@ Om en `itemId` och `inventDimId` kombinationen bara innehåller en inleverans- e
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Aktivera funktionen i systemet
 
-Om ditt system inte redan innehåller de funktioner som beskrivs i det här avsnittet, gå till [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktivera funktionen *arkiv för lagertransaktioner*. Observera att denna funktion inte kan inaktiveras när den väl har aktiverats.
+Om ditt system inte redan innehåller de funktioner som beskrivs i denna artikel, gå då till [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktivera funktionen *Arkiv för lagertransaktioner*. Observera att denna funktion inte kan inaktiveras när den väl har aktiverats.
 
 ## <a name="things-to-consider-before-you-archive-inventory-transactions"></a>Saker du bör tänka på innan du arkiverar lagertransaktioner
 
-Innan du arkiverar lagertransaktioner bör du tänka på följande affärsscenarier eftersom de påverkas av operationen:
+Innan du arkiverar lagertransaktioner bör du tänka på följande affärsscenarier eftersom de påverkas av åtgärden:
 
 - När du granskar lagertransaktioner från relaterade dokument, till exempel inköpsorderrader, visas de som arkiverade. För att granska de arkiverade transaktionerna måste du gå till **Lagerhantering \> Periodiska uppgifter \> Rensa \> Arkiv lagertransaktioner**.
 - Lagerstängning kan inte annulleras för arkiverade perioder. Innan du kan annullera en lagerstängning måste du återföra lagertransaktionsarkivet för den relevanta perioden.

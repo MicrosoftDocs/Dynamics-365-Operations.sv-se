@@ -1,6 +1,6 @@
 ---
-title: Översikt över klienteling
-description: Det här avsnittet innehåller en översikt över nya klienteling funktioner som är tillgängliga i butiksappen.
+title: Översikt över kundhantering
+description: Denna artikel innehåller en översikt över nya klientfunktioner som är tillgängliga i butiksprogrammet.
 author: bebeale
 ms.date: 02/01/2021
 ms.topic: overview
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: b1e1b7a67141ffec01d926b7f917ebd4e1f24741
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 3d60004367840208f239d69220b3c181109f83d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984606"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885621"
 ---
 # <a name="clienteling-overview"></a>Översikt över kundhantering
 
@@ -60,7 +60,7 @@ Säljare kan också använda noteringar för att samla in allmän kundinformatio
 > [!NOTE]
 > För närvarande kan alla anteckningar och aktiviteter visas av alla säljare som arbetar med den juridiska personen och som kan visa sidan med kundinformation. Anteckningar och aktiviteter begränsas inte till de som har lagt en kund i kundboken.
 
-## <a name="integration-with-dynamics-365-customer-insights"></a>Integration med Dynamics 365 Customer Insights
+## <a name="integration-with-dynamics-365-customer-insights"></a>Integrering med Dynamics 365 Customer Insights
 
 Med hjälp av Dynamics 365 Customer Insights-programmet kan återförsäljare samla in data från de olika system som kunderna använder för att samverka med återförsäljarens varumärke. De kan sedan använda dessa data för att generera en enskild vy över kunden och härleda insikter. Med integrering av Customer Insights med Commerce kan återförsäljare välja ett eller flera mått som ska visas på kundkortet i kundboken. Återförsäljare kan till exempel använda data i Customer Insights för att beräkna "omsättningssannolikhet" för en kund och definiera nästa bästa åtgärd. Om dessa värden definieras som mått kan de visas på kundkortet och ge viktig information till säljare. Mer information om Customer Insights finns i [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) dokumentation. Mer information om mått finns i [Mått](/dynamics365/ai/customer-insights/pm-measures).
 
@@ -81,7 +81,7 @@ Om du vill aktivera klienteling-funktionen i din miljö följer du stegen nedan.
     - Ange visningsordning för dessa attribut. Den här visningsordningen avgör vilka attribut som ska visas på kundkortet i klientboken. Visningsordningen 1 betraktas som högre än visningsordningen 2. Därför visas attributet som har visningsordningen 1 framför attributet som har visningsordningen 2.
 
     > [!NOTE]
-    > Du kan göra Customer Insights tillgängliga från samma sida. Däremot måste ett Azure program-ID och en hemlighet skapas, i syfte att autentiseras. (Mer information om kraven finns i avsnittet [aktivera integreringen av Customer Insights med Commerce](#turn-on-the-integration-of-customer-insights-with-commerce) senare i det här avsnittet.) Om Customer Insights aktiveras och du väljer en eller flera mått som ska visas på kundkortet visas dessa mått först. Därefter visas attributgrupper för klientbokgrupper baserat på visningsordningen. Om du till exempel väljer två mått från Customer Insights, visas dessa två mått och ett attribut för kundboken på kundkortet. (Attributet för kundboken som visas kommer att vara det attribut som har den högsta visningsordningen.)
+    > Du kan göra Customer Insights tillgängliga från samma sida. Däremot måste ett Azure program-ID och en hemlighet skapas, i syfte att autentiseras. (Mer information om kraven finns i avsnittet [Aktivera integreringen av Customer Insights med Commerce](#turn-on-the-integration-of-customer-insights-with-commerce) senare i denna artikel.) Om Customer Insights aktiveras och du väljer ett eller flera mått som ska visas på kundkortet, visas dessa mått först. Därefter visas attributgrupper för klientbokgrupper baserat på visningsordningen. Om du till exempel väljer två mått från Customer Insights, visas dessa två mått och ett attribut för kundboken på kundkortet. (Attributet för kundboken som visas kommer att vara det attribut som har den högsta visningsordningen.)
 
 6. På sidan **Handelsparametrar** på fliken **klienteling** i fältet **Attributgruppen kundbok** väljer du den attributgrupp som du just skapade.
 
@@ -92,7 +92,7 @@ Om du vill aktivera klienteling-funktionen i din miljö följer du stegen nedan.
     > [!NOTE]
     > Aktivitetstyper hämtas av skalningsenhet för handel när den gör ett realtidssamtal för första gången. När aktiviteterna har hämtats cachelagras de under några timmar. Om du ändrar aktivitets typerna väntar du tills cachen inte längre är giltig. För miljöer utan produktionsmiljöer startar du om skalningsenhet för handel-tjänsten.
 
-8. Lägg till två knappar i den lämpliga layouten för kassaskärmen, så att säljaren kan visa sin egen kundbok och butiks kundbok. (Butikkundböcker böcker omfattar kunder från alla kundböcker för alla som associerar en adressbok med butiken.) Motsvarande operationer kallas **Visa kunder i kundboken** och **Visa kunder från butikkundböcker**. Ytterligare tre operationer som rör kundböcker finns tillgängliga. Dessa operationer avgör vilka intresse företag som kan lägga till, ta bort och tilldela om kunder från kundboken. De namnges **Lägg till kund i kundboken**, **Ta bort kunder från kundboken** och **Tilldela om kunder till en klientbok**.
+8. Lägg till två knappar i den lämpliga layouten för kassaskärmen, så att säljaren kan visa sin egen kundbok och butiks kundbok. (Butikkundböcker böcker omfattar kunder från alla kundböcker för alla som associerar en adressbok med butiken.) Motsvarande åtgärder kallas **Visa kunder i kundboken** och **Visa kunder från butikkundböcker**. Ytterligare tre åtgärder som rör kundböcker finns tillgängliga. Dessa åtgärder avgör vilka intresse företag som kan lägga till, ta bort och tilldela om kunder från kundboken. De namnges **Lägg till kund i kundboken**, **Ta bort kunder från kundboken** och **Tilldela om kunder till en klientbok**.
 9. Kör följande jobb för distributionsschema: 1040, 1150, 1110 och 1090.
 
 När du har slutfört den här proceduren kan säljarna öppna kunddetaljsidan i POS och lägga till kunder i sin kundbok, visa och fånga in aktiviteter och noteringar för kunder och mål kunder genom att använda attribut för kund och klientbok för att filtrera kundboken. Illustrationen nedan visar ett exempel på en kundbok.
@@ -101,21 +101,21 @@ När du har slutfört den här proceduren kan säljarna öppna kunddetaljsidan i
 
 ## <a name="turn-on-the-integration-of-customer-insights-with-commerce"></a>Aktivera integreringen av Customer Insights med Commerce
 
-Om du vill aktivera integrationen av Customer Insights med Commerce måste du se till att du har en aktiv instans av Customer Insights i innehavaren där Commerce har etablerats. Du måste också ha ett Azure Active Directory (Azure AD)-användarkonto med en Azure-prenumeration.
+Om du vill aktivera integreringen av Customer Insights med Commerce måste du se till att du har en aktiv instans av Customer Insights i innehavaren där Commerce har etablerats. Du måste också ha ett Azure Active Directory (Azure AD)-användarkonto med en Azure-prenumeration.
 
-Följ dessa steg för att ställa in integrationen.
+Följ dessa steg för att konfigurera integreringen.
 
 1. Registrera ett nytt program i Azure-portalen och notera programnamn, program-ID och hemlighet. Denna information används för verifiering av tjänst-till-tjänst mellan Commerce och Customer Insights. Notera hemligheten på ett säkert sätt då den krävs för att spara informationen i nyckelvalvet. I följande exempel ska du använda CI_Access_name, CI_Access_AppID, CI_Access_Secret för programnamn, program-ID respektive hemlighet. Mer information [Snabbstart: registrera ett program med Microsoft identitetsplattform](/azure/active-directory/develop/quickstart-register-app).
 
     > [!IMPORTANT]
-    > Vidta åtgärder så att du kommer ihåg att ändra hemligheten innan den upphör att gälla. I annat fall stoppas integrationen oväntat.
+    > Vidta åtgärder så att du kommer ihåg att ändra hemligheten innan den upphör att gälla. I annat fall stoppas integreringen oväntat.
 
 2. Gå till din Customer Insights-instans och sök efter namnet på det program som har skapats ovan (i det här exemplet "CI_Access_name").
 3. Skapa ett Azure KEy Vault och notera namn och webbadress (URL; i detta exempel "KeyVaultName", "KeyVaultURL"). Instruktioner finns i [snabbstart: ställ in och hämta en hemlighet från Azure Key Vault med hjälp av Azure-portalen](/azure/key-vault/quick-create-portal).
 4. Spara hemligheten (i detta exempel "CI_Access_Secret") i valvet. När denna hemlighet lagras i valvet får den ett namn. Notera hemlighetens namn (i detta exempel "SecretName").
 5. Om du vill komma åt hemligheten från Azure Key Vault måste du skapa ett annat program med ett program-ID och en hemlighet (i detta exempel "KeyVault_Access_AppID" och "KeyVault_Access_Secret"). Notera hemligheten säkert eftersom den inte kommer att visas igen.
 6. Du måste sedan ge behörighet till programmet för åtkomst till Key Vault från Commerce med hjälp av API:er. I Azure portal går du till programsidan. I avsnittet **Hantera** väljer du **API-behörigheter**. Lägg till behörigheten till för åtkomst till **Azure Key Vault**. Välj **Åtkomstpolicy** för denna behörighet. Välj mallen som **Hemlighetshantering** och sedan alternativen **Hämta**, **Lista**, **Avkryptera** och **Kryptera**. 
-5. In Commerce-administrationen går du till **Systemadministration \> Inställningar \> Parametrar för Key Vault** och anger den information som krävs för nyckelvalvet. I fältet **Key Vault-klient** anger du det program-ID som du använde i steg 4, så att Commerce kan komma åt hemligheterna i Key Vault.
+5. In Commerce headquarters går du till **Systemadministration \> Inställningar \> Parametrar för Key Vault** och anger den information som krävs för nyckelvalvet. I fältet **Key Vault-klient** anger du det program-ID som du använde i steg 4, så att Commerce kan komma åt hemligheterna i Key Vault.
 6. Om du vill lägga till det program som du skapade i steg 1 i listan över säkra program (kallas ibland för "säker lista"), går du till Customer Insights och väljer **Visa** åtkomst till programmet. För anvisningar, se [Behörigheter](/dynamics365/ai/customer-insights/pm-permissions).
 7. På sidan **Systemadministration > Inställningar > Parametrar för nyckelvalv** i Commerce HQ uppdaterar du fälten enligt nedan: 
 

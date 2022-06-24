@@ -1,6 +1,6 @@
 ---
 title: Utöka en produktsida
-description: I det här avsnittet beskrivs hur du kan berika en produkt i Microsoft Dynamics 365 Commerce.
+description: I denna artikel beskrivs hur du kan berika en produkt i Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0c663498a65832c68b80ea7166da34914ceefb8c70d6a598f3fa648b199ef156
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad58f0324c91c7488e5eb823fa3d0e1758ec63fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777606"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847636"
 ---
 # <a name="enrich-a-product-page"></a>Utöka en produktsida
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du kan berika en produkt i Microsoft Dynamics 365 Commerce.
+I denna artikel beskrivs hur du kan berika en produkt i Microsoft Dynamics 365 Commerce.
 
 Som standard använder webbplatsen en allmän sida för att visa produktdata. Den här sidan innehåller grundläggande information om produkten och de kontroller som krävs för att sälja den. Du kan dock komplettera den information som kommer från skalningsenhet för handel med ytterligare bilder eller text för en viss produkt. Denna process kallas för att hantera produktsidan.
 

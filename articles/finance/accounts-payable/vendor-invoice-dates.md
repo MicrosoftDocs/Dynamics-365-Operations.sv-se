@@ -1,6 +1,6 @@
 ---
 title: Datum för leverantörsfaktura
-description: I det här avsnittet beskrivs de datum som visas på leverantörsfakturor. Det förklarar även hur du ställer in systemet så att bokföringsdatumet justeras automatiskt.
+description: I den här artikeln beskrivs de datum som visas på leverantörsfakturor. Det förklarar även hur du ställer in systemet så att bokföringsdatumet justeras automatiskt.
 author: sunfzam
 ms.date: 2/09/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 943a84407d022c2c05bc534a35a2b5d44a94653e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105474"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876424"
 ---
 # <a name="vendor-invoice-dates"></a>Datum för leverantörsfaktura
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs de datum som visas på leverantörsfakturor. Det förklarar även hur du ställer in systemet så att bokföringsdatumet justeras automatiskt.
+I den här artikeln beskrivs de datum som visas på leverantörsfakturor. Det förklarar även hur du ställer in systemet så att bokföringsdatumet justeras automatiskt.
 
 På sidan **Pågående leverantörsfaktura detaljerad** på fakturahuvudet visar fyra datum: mottagningsdatum för faktura, fakturadatum, bokföringsdatum och förfallodatum. När en leverantörsfaktura skapas anges följande datum som standard:
 
@@ -37,7 +37,7 @@ På sidan **Pågående leverantörsfaktura detaljerad** på fakturahuvudet visar
 
 Ibland kan en leverantörsfaktura vara i pågående läge under en lång tid efter periodslutet. När den är klar för bokföring används fortfarande det gamla bokföringsdatumet för den tidigare bokföringsperioden. Den perioden har nu dock stängts. Därför måste en leverantörsreskontraansvarig (AP) manuellt ändra alla bokföringsdatum till den nya bokföringsperioden för alla pågående fakturor som tidigare har skapats.
 
-Med hjälp av funktionen som beskrivs i det här avsnittet kan du ställa in systemet så att bokföringsdatumet justeras automatiskt enligt verksamhetens krav.
+Med hjälp av funktionen som beskrivs i den här artikeln kan du ställa in systemet så att bokföringsdatumet justeras automatiskt enligt verksamhetens krav.
 
 ## <a name="parameter-for-automatically-adjusting-the-vendor-invoice-posting-date"></a>Parameter för automatisk justering av bokföringsdatum för leverantörsfaktura
 

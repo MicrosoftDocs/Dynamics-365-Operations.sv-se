@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d845179077fc2e04dfb3bd05eaa70b0a2a016121
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 6a8cb8bc61786425c996b976a2914e7b650e3941
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067111"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859616"
 ---
 # <a name="recruiting-request-status"></a>Status för rekryteringsförfrågan
 

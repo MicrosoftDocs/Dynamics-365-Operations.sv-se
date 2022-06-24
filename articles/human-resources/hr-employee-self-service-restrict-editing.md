@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 98cb7c2f1f57dacf303e2e9bc7779ce3ede6733e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c82114f6600345ee5e2eb9c1c0629ae6c8f0b9a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695884"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877697"
 ---
 # <a name="restrict-editing-of-personal-information"></a>Begränsa redigering av personlig information
 
@@ -29,7 +29,7 @@ ms.locfileid: "8695884"
 [!include [applies to](../includes/applies-to-hr.md)]
 [!include [preview feature](./includes/preview-feature.md)]
 
-I det här avsnittet beskrivs hur du begränsar medarbetare från att redigera kontaktinformation i Dynamics 365 Human Resources. Du kanske vill hindra medarbetarna från att redigera vissa kontaktuppgifter, till exempel deras företagsadress eller e-postadress.
+I den här artikeln beskrivs hur du begränsar medarbetare från att redigera kontaktinformation i Dynamics 365 Human Resources. Du kanske vill hindra medarbetarna från att redigera vissa kontaktuppgifter, till exempel deras företagsadress eller e-postadress.
 
 > [!NOTE]
 > Om du vill använda funktionen måste du först aktivera **(förhandsversion) begränsa anställda från att lägga till eller redigera adress- och kontaktinformation för utvalda syften** i Funktionshantering. Mer information om hur du aktiverar förhandsfunktioner finns i [Hantera funktioner](hr-admin-manage-features.md).<br><br>![Aktivera förhandsversion.](./media/hr-employee-self-service-restrict-enable.png)

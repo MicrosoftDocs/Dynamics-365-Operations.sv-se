@@ -1,6 +1,6 @@
 ---
 title: Livscykeltillstånd för arbetsorder
-description: Det här avsnittet innehåller förklaringar av arbetsorderns livscykeltillstånd i Tillgångshantering.
+description: Denna artikel innehåller förklaringar av arbetsorderns livscykeltillstånd i Tillgångshantering.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa0980438ec629ef7ae6bf711d5ae87efca131e6ab86dfcaa1f17d953725147a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 67f857e4bfb828250e632e3ba46af9930cd908a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768676"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860882"
 ---
 # <a name="work-order-lifecycle-states"></a>Livscykeltillstånd för arbetsorder
 
@@ -46,7 +46,7 @@ I följande tabell beskrivs alternativen i avsnitten **Arbetsorder** och **Tidsp
 | Tillåt schemaläggning              | Ställ in det här alternativet på **Ja** om en arbetsorder kan planeras när den är i detta livscykeltillstånd. |
 | Ställ in faktisk starttid              | Ställ in det här alternativet på **Ja** om användaren ska uppmanas att välja ett faktiskt startdatum och starttid för en arbetsorder när den uppdateras till detta livscykeltillstånd. |
 | Ställ in faktiskt slut                | Ställ in det här alternativet på **Ja** om användaren ska uppmanas att välja ett faktiskt slutdatum och sluttid för en arbetsorder när den uppdateras till detta livscykeltillstånd. |
-| Bokför journaler                 | Ställ in det här alternativet på **Ja** om arbetsorderjournaler ska bokföras automatiskt när en arbetsorder uppdateras till det här livscykeltillståndet. Om ett fel inträffar under journalbokföringen visas ett meddelande och uppdateringen av livscykeltillståndet för arbetsordern avbryts. Om du vill visa journalraderna för en arbetsorder väljer du **Tillgångshantering** \> **Allmänt** \> **Arbetsorder** \> **Alla arbetsorder**, **Aktiva arbetsorder** eller **Mina aktiva arbetsorder**, väljer arbetsordern i listan och väljer **Journaler**. Den här inställningen av automatisk bokföring av arbetsorderjournal i ett visst livscykeltillstånd är densamma som du väljer **Bokför journaler** på sidan **Arbetsorderjournaler**.<p>**Obs!** Om du ställer in detta alternativ till **Ja** bokförs journaler automatiskt om inget godkännandearbetsflöde har ställts in. Om ditt företag använder inställningarna för journalgodkännande som har konfigurerats på sidan **Journalgodkännande** (**Projekthantering och redovisning** \> **Inställningar** \> **Journaler** \> **Journalgodkännande**) måste en chef eller ansvarig validera och bokföra förbrukningsregistreringar.</p> |
+| Bokför journaler                 | Ställ in det här alternativet på **Ja** om arbetsorderjournaler ska bokföras automatiskt när en arbetsorder uppdateras till det här livscykeltillståndet. Om ett fel inträffar under journalbokföringen visas ett meddelande och uppdateringen av livscykeltillståndet för arbetsordern avbryts. Om du vill visa journalraderna för en arbetsorder väljer du **Tillgångshantering** \> **Allmänt** \> **Arbetsorder** \> **Alla arbetsorder**, **Aktiva arbetsorder** eller **Mina aktiva arbetsorder**, väljer arbetsordern i listan och väljer **Journaler**. Den här inställningen av automatisk bokföring av arbetsorderjournal i ett visst livscykeltillstånd är densamma som du väljer **Bokför journaler** på sidan **Arbetsorderjournaler**.<p>**Obs!** Om du konfigurerar detta alternativ till **Ja** bokförs journaler automatiskt om inget godkännandearbetsflöde har ställts in. Om ditt företag använder inställningarna för journalgodkännande som har konfigurerats på sidan **Journalgodkännande** (**Projekthantering och redovisning** \> **Inställningar** \> **Journaler** \> **Journalgodkännande**) måste en chef eller ansvarig validera och bokföra förbrukningsregistreringar.</p> |
 | Bearbeta underhållschecklista | Ställ in det här alternativet på **Ja** om alla bifogade underhållschecklistor ska behandlas när en arbetsorder uppdateras till det här livscykeltillståndet. Under bearbetningen bokförs alla räknarregistreringar som gjorts på en underhållschecklista och resultatet av hela underhållschecklistan utvärderas. Rader med underhållschecklistor som har resultaten **Godkänd** och **Underkänd** utvärderas, och om minst en rad underkänns markeras hela underhållschecklistan som **Underkänd** i Tillgångshantering. |
 | Klart                         | Ställ in det här alternativet på **Ja** om planeringsstatus för arbetsorderjobbet för alla arbetsorderjobb som skapas på en arbetsorder automatiskt ska uppdateras till **Klar** när arbetsordern uppdateras till detta livscykeltillstånd. |
 | Startdatum                         | Ställ in det här alternativet på **Ja** om planeringsstatus för arbetsorderjobbet för alla arbetsorderjobb som skapas på en arbetsorder automatiskt ska uppdateras till **Startat** när arbetsordern uppdateras till detta livscykeltillstånd. |
@@ -69,7 +69,7 @@ I följande tabell beskrivs alternativen i avsnitten **Arbetsorder** och **Tidsp
 
     På snabbfliken **Detaljer** visar fältet **Livscykelmodeller** antalet livscykelmodeller för arbetsorder som använder det här livscykeltillståndet.
 
-8. På snabbfliken **Allmänt**, i avsnittet **Arbetsorder**, väljer du de funktioner som ska vara tillgängliga för detta livscykeltillstånd genom att ange de relevanta alternativen till **Ja**. En beskrivning av alternativen finns i tabellen tidigare i det här avsnittet.
+8. På snabbfliken **Allmänt**, i avsnittet **Arbetsorder**, väljer du de funktioner som ska vara tillgängliga för detta livscykeltillstånd genom att ange de relevanta alternativen till **Ja**. Beskrivningar av alternativen finns i tabellen tidigare i denna artikel.
 9. I avsnittet **Projekt**, i fältet **Fas**, väljer du den projektfas som ska vara relaterad till detta livscykeltillstånd.
 10. I avsnittet **Projekt** ställer du in alternativet **Stäng aktiviteter** till **Ja** om projektaktiviteter som är relaterade till varje arbetsorderjobb ska stängas automatiskt när arbetsordern befinner sig i det här livscykeltillståndet.
 
@@ -77,7 +77,7 @@ I följande tabell beskrivs alternativen i avsnitten **Arbetsorder** och **Tidsp
     > Om du vill hitta det numret på projektaktiviteten som är relaterad till ett arbetsorderjobb väljer du **Tillgångshantering** \> **Allmänt** \> **Arbetsorder** \> **Alla arbetsorder**, **Aktiva arbetsorder** eller **Mina aktiva arbetsorder**. Öppna arbetsordern och välj sedan arbetsorderjobbet. Aktivitetsnumret visas i fältet **Aktivitetsnummer** i avsnittet **Projekt** på fliken **Allmänt** på snabbfliken **Radinformation**.
 
 11. I avsnittet **Prognos** ställer du in alternativet **Kopiera timprognos**, **Kopiera artikelprognos** och/eller **Kopiera utgiftsprognos** till **Ja** om projektprognoser för arbetsorder ska automatiskt kopieras till arbetsorderjournaler när arbetsordern är i det här livscykeltillståndet.
-12. Ange ett av alternativen i avsnittet **Tidsplan** till **Ja** om tidsplanstatus för arbetsorderjobb ska uppdateras när arbetsordern befinner sig i det här livscykeltillståndet. Beskrivningar av alternativen **Klart**, **Start**, **Slut** och **Ta bort tidsplansrader** finns i tabellen tidigare i det här avsnittet.
+12. Ange ett av alternativen i avsnittet **Tidsplan** till **Ja** om tidsplanstatus för arbetsorderjobb ska uppdateras när arbetsordern befinner sig i det här livscykeltillståndet. Beskrivningar av alternativen **Klart**, **Start**, **Slut** och **Ta bort tidsplansrader** finns i tabellen tidigare i denna artikel.
 
     > [!NOTE]
     > Om du vill visa tidsplansrader som är relaterade till arbetsorderjobb väljer du **Tillgångshantering** \> **Allmänt** \> **Arbetsorder** \> **Alla arbetsorder**, **Aktiva arbetsorder** eller **Mina aktiva arbetsorder**. Öppna arbetsordern, välj arbetsorderjobbet på snabbfliken **Arbetsorderjobb** och visa relaterad information på snabbfliken **Radinformation**. I fältet **Status** fliken **Tidsplan** visas status för arbetsorderjobbet. Fältet **Status** kan ställas in på följande värden: **Tidsplanerat**, **Klart**, **Startat**, **Stoppat** och **Avslutat**.
@@ -91,20 +91,20 @@ I följande tabell beskrivs alternativen i avsnitten **Arbetsorder** och **Tidsp
     - Om alternativet **Underhållschecklista** har inställningen **Ja** för det livscykeltillstånd som en arbetsorder uppdateras till, utförs valideringen för att verifiera att de rader i underhållschecklistan som är markerade som **Obligatoriskt** har registrerats som **Kontrollerat** eller **Inte aktuellt**. Om ingen av dessa registreringar har gjorts på de obligatoriska raderna visas ett informations-, fel- eller varningsmeddelande när arbetsordern uppdateras till detta livscykeltillstånd.
     - Om alternativet **Utfästa kostnader** är inställt på **Ja** för livscykeltillståndet som en arbetsorder uppdateras till, kan det totala beloppet för utfästa kostnader (dvs. det totala utgiftsbelopp som den juridiska personen har åtagit sig att betala) beräknas för varje arbetsorderjobb. Ett meddelande visas om det utfästa kostnadsbeloppet är större än 0 (noll). Du väljer vilka typer av kostnadsutfästelser som ska ingå på snabbfliken **Kostnadsutfästelser** på fliken **Kostnadskontroll** på sidan **Parametrar för projekthantering och redovisning** (**Projekthantering och redovisning** \> **Inställningar** \> **Parametrar för projekthantering och redovisning**).
     - Om alternativet **Underhållsstopp** är inställt på **Ja** för livscykeltillståndet som en arbetsorder uppdateras till görs en validering av underhållsstopp på tillgången som hör till arbetsordern. Om registrering av ett underhållsstopp har gjorts, men det inte finns någon **Avslutat** registrering, visas ett meddelande när arbetsordern uppdateras till detta livscykeltillstånd.
-    - Om standardprojektsinställningarna inte innehåller alla faser som du behöver för inställningarna för Tillgångshantering kan du ställa in användardefinierade projektfaser på fliken **Projektfas** på sidan **Parametrar för projekthantering och redovisning**. I bilden nedan visas fliken **Projektfas** på sidan **Parametrar för projekthantering och redovisning**.
+    - Om standardprojektsinställningarna inte innehåller alla faser som du behöver för inställningarna för Tillgångshantering kan du konfigurera användardefinierade projektfaser på fliken **Projektfas** på sidan **Parametrar för projekthantering och redovisning**. I bilden nedan visas fliken **Projektfas** på sidan **Parametrar för projekthantering och redovisning**.
 
     ![Sidan Ställ in projektfaser för olika projekttyper.](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
 > Om livscykeltillståndet som du uppdaterar en arbetsorder till är inaktivt, raderas automatiskt journaler som är relaterade till arbetsordern, men som ännu inte har bokförts. Detta är ett sätt att garantera automatisk rensning av oanvända data. (Ett livscykeltillstånd är inaktivt om alternativet **Aktivt** för det har inställningen **Nej** på snabbfliken **Allmänt** på sidan **Livscykeltillstånd för arbetsorder**.)
 >
-> Men om du manuellt ställer in en arbetsorder så att den är inaktiv, raderas **inte** journaler automatiskt som är relaterade till arbetsordern, men som ännu inte har bokförts. (Om du vill inaktivera en arbetsorder manuellt väljer du **Tillgångshantering** \> **Allmänt** \> **Arbetsorder** \> **Alla arbetsorder** eller **Aktiva arbetsorder**. Öppna arbetsordern och växla till vyn **Sidhuvud**. Välj **Redigera** på snabbfliken **Allmänt** och ställ in alternativet **Aktivt** till **Nej**.)
+> Men om du manuellt konfigurerar en arbetsorder så att den är inaktiv, raderas **inte** journaler automatiskt som är relaterade till arbetsordern, men som ännu inte har bokförts. (Om du vill inaktivera en arbetsorder manuellt väljer du **Tillgångshantering** \> **Allmänt** \> **Arbetsorder** \> **Alla arbetsorder** eller **Aktiva arbetsorder**. Öppna arbetsordern och växla till vyn **Sidhuvud**. Välj **Redigera** på snabbfliken **Allmänt** och ställ in alternativet **Aktivt** till **Nej**.)
 
 ## <a name="relations-among-work-order-lifecycle-models-work-order-types-and-work-order-lifecycle-states"></a>Relationer mellan arbetsorders livscykelmodeller, arbetsordertyper och arbetsorders livscykeltillstånd
 
 Livscykelmodeller avser arbetsflöden och livscykeltillstånd väljs i en livscykelmodell i sekventiell ordning. Livscykel modeller ställs in på arbetsordertyper. Arbetsordertyper bestämmer storleken på och omfattningen för arbetsflöden och arbetsprocesser. Exempelvis kan **Underhåll**, som är en standardtyp av arbetsorder, relateras till en livscykelmodell för arbetsorder som har många livscykeltillstånd. Som kontrast kanske du har en **Korrigerande** arbetsordertyp som används för arbetsorder som inte har planerats, eller för arbetsorder där jobbet har slutförts innan arbetsordern görs på grund av en brådskande situation. Denna typ av arbetsorder kan vara relaterad till en livscykelmodell för arbetsorder som bara har ett fåtal livscykeltillstånd.
 
-Anledningen till att använda typer är att när en typ har definierats på till exempel en arbetsorder eller en tillgång, definieras de relaterade arbetsprocesserna (livscykeltillstånd) automatiskt. För mer information om hur du ställer in arbetsordertyper, se [Arbetsordertyper](../setup-for-work-orders/work-order-types.md).
+Anledningen till att använda typer är att när en typ har definierats på till exempel en arbetsorder eller en tillgång, definieras de relaterade arbetsprocesserna (livscykeltillstånd) automatiskt. För mer information om hur du konfigurerar arbetsordertyper, se [Arbetsordertyper](../setup-for-work-orders/work-order-types.md).
 
 > [!NOTE]
 > Livscykeltillstånd, livscykelmodeller och typer gäller för funktionsplatser, tillgångar och underhållsbegäranden, utöver arbetsorder.

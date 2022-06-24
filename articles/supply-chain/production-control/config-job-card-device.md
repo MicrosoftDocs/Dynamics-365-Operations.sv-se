@@ -1,6 +1,6 @@
 ---
 title: Konfigurera jobbkort för enheter
-description: I det här avsnittet beskrivs olika alternativ för att konfigurera jobbkorts enheten.
+description: I denna artikel beskrivs olika alternativ för att konfigurera jobbkortsenheten.
 author: johanhoffmann
 ms.date: 05/29/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4c7a9585d96a1e08790e0f3c972e704971f27dc0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103448"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860737"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurera jobbkort för enheter
 
 [!include [banner](../includes/banner.md)]
 
-Jobb korts enheten används av medarbetarna i butiken för att registrera sitt dagliga arbete, till exempel när jobb startas, rapportering av återrapportering om jobb, registrering av indirekta aktiviteter och frånvarorapportering. Dessa registreringar är grunden för spårning av framsteg och kostnader på tillverkningsorder och för beräkning av grunden för medarbetares lön. I det här avsnittet beskrivs olika alternativ för att konfigurera jobbkorts enheten.
+Jobb korts enheten används av medarbetarna i butiken för att registrera sitt dagliga arbete, till exempel när jobb startas, rapportering av återrapportering om jobb, registrering av indirekta aktiviteter och frånvarorapportering. Dessa registreringar är grunden för spårning av framsteg och kostnader på tillverkningsorder och för beräkning av grunden för medarbetares lön. I denna artikel beskrivs olika alternativ för att konfigurera jobbkortsenheten.
 
 ## <a name="enable-new-features-in-feature-management"></a>Aktivera nya funktioner i funktionshantering
 
-Några av de inställningar som beskrivs i det här avsnittet måste vara aktiverade på ditt system innan de blir tillgängliga för dig. Använd [sidan funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) om du vill aktivera någon av eller alla följande funktioner efter behov.
+Några av de inställningar som beskrivs i denna artikel måste vara aktiverade på ditt system innan de blir tillgängliga för dig. Använd [sidan funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) om du vill aktivera någon av eller alla följande funktioner efter behov.
 
 ### <a name="generate-license-plate"></a>Generera registreringsskylt
 
@@ -50,7 +50,7 @@ Från och med version 10.0.21 av Supply Chain Management är denna funktion akti
 
 ## <a name="manage-your-device-configurations"></a>Hantera en enhetskonfigurationer
 
-Gå till om du vill ställa in dina enhetskonfigurationer **Produktionskontroll > Inställningar > Tillverkningskörning > Konfigurera jobbkort för enheter**. Sidan **Konfigurera jobbkort för enheter** öppnas, som visar en lista med befintliga konfigurationer. Härifrån kan du göra följande: 
+Gå till om du vill konfigurera dina enhetskonfigurationer **Produktionskontroll > Inställningar > Tillverkningskörning > Konfigurera jobbkort för enheter**. Sidan **Konfigurera jobbkort för enheter** öppnas, som visar en lista med befintliga konfigurationer. Härifrån kan du göra följande: 
 
 - Välj en enhetskonfiguration som visas i den vänstra kolumnen om du vill visa och redigera den.
 - Välj **ny** i åtgärdsfönstret om du vill lägga till en ny enhetskonfiguration i listan. Ange sedan ett namn i fältet **Konfiguration** för att identifiera den nya konfigurationen. Värdet som du anger här måste vara unikt bland alla enhetskonfigurationer och du kan inte redigera det senare.
@@ -64,14 +64,14 @@ På snabbfliken **Allmänt** kan du konfigurera var och en av de olika alternati
 - **Rapportera kvantitet vid utstämpling** – Ange detta till **Ja** för att be medarbetare att rapportera återrapportering om pågående jobb när han eller hon stämplar ut. Om det anges till **Nej** kommer medarbetarna inte att uppmanas.
 - **Lås medarbetare** – när det här alternativet är inställt på **Nej** loggas varje medarbetare ut omedelbart efter att de har gjort en registrering (t.ex. ett nytt jobb) och sedan kommer enheten att gå tillbaka till inloggningssidan. När det här alternativet är inställt på **Ja** kommer varje medarbetare att vara inloggad på jobbkortsenheten. Arbetaren kan dock fortfarande logga ut manuellt så att en annan medarbetare kan logga in medan jobbkortsenheten fortfarande körs under samma systemanvändarkonto. Mer information om dessa typer av konton finns i [Tilldela användare](#assigned-users).
 - **Streckkodsskanner** – Ange detta som **Ja** för att ange ett alternativ på jobbkortsenheten som tillåter medarbetare att registrera starten för ett nytt jobb genom att skanna en streckkod.
-- **Använd den faktiska tiden för registrering** – Ställ in detta på **Ja** för att ställa in tiden för varje ny registrering som ska vara lika med den exakta tidpunkten som registreringen lämnades in av en medarbetare. Ställ in på **Nej** om du vill använda inloggningstiden i stället. Du vill vanligtvis ange värdet **Ja** om du har aktiverat alternativen **Lås medarbetare** och/eller **enskild medarbetare**, där arbetstagarna ofta förblir inloggade under längre perioder.
+- **Använd den faktiska tiden för registrering** – Ställ in detta på **Ja** för att konfigurera tiden för varje ny registrering som ska vara lika med den exakta tidpunkten som registreringen lämnades in av en medarbetare. Ställ in på **Nej** om du vill använda inloggningstiden i stället. Du vill vanligtvis ange värdet **Ja** om du har aktiverat alternativen **Lås medarbetare** och/eller **enskild medarbetare**, där arbetstagarna ofta förblir inloggade under längre perioder.
 - **En medarbetare** – Ställ in det här alternativet på **Ja** om bara en av dem använder varje jobbkortsenhet där denna konfiguration är aktiv. När det här alternativet är markerat sätts alternativet **Lås medarbetare** automatiskt till **Ja**. Dessutom tar det här alternativet bort kravet (och möjligheten) för medarbetaren att logga in med hjälp av ID-bricka (eller liknande). Istället loggar medarbetaren in på Supply Chain Management med ett systemanvändarkonto kopplat till *tidsregistrerad medarbetare* (från tabellen *arbetare*) och inloggas på jobbkortsenheten samtidigt som medarbetaren.  Mer information om dessa typer av konton finns i [Tilldela användare](#assigned-users).
-- **Tillåt medarbetare att ställa in personliga filter** – Ange det här alternativet till **Ja** för att låta medarbetarna filtrera de jobb som visas för dem på enheten. Arbetaren kan ändra värden för något av de tre filterkriterierna: **produktionsenhet**, **resursgrupp** och **resurs**. Endast jobb som har planerats på resurser som matchar det valda filterkriteriet visas på enheten. Du kan också tilldela standardvärden för ett eller alla dessa kriterier, och de gäller även om det här alternativet inte är markerat.
+- **Tillåt medarbetare att konfigurera personliga filter** – Ange det här alternativet till **Ja** för att låta medarbetarna filtrera de jobb som visas för dem på enheten. Arbetaren kan ändra värden för något av de tre filterkriterierna: **produktionsenhet**, **resursgrupp** och **resurs**. Endast jobb som har planerats på resurser som matchar det valda filterkriteriet visas på enheten. Du kan också tilldela standardvärden för ett eller alla dessa kriterier, och de gäller även om det här alternativet inte är markerat.
 - **Tillåt låsning av pekskärm** – Ange detta alternativ till **Ja** medarbetare ska kunna låsa jobbkortsenheten pekskärm så att de kan sanera den. När det här alternativet är aktiverat läggs en knapp för **Lås skärm för den omorganisering** till på sidan för enhetsinloggning. När en medarbetare väljer den här knappen, låser sig pekskärmen tillfälligt för att förhindra indata och en nedräkningstimer visas. Arbetaren kan nu rensa enheten och skärmen på ett säkert sätt. När nedräkningen är klar låses pekskärmen om automatiskt.
 - **Tidslängd för skärmlåsning** – När alternativet **Tillåt låsning pekskärm** är aktiverad, använd detta alternativ för att ange antal sekunder som pekskärmen ska vara låst för omorganisering. Längden måste vara mellan 5 och 120 sekunder.
-- **Produktionsenhet** – Välj en produktionsenhet som ska användas som standardfilterkriterium för listan över jobb som visas för varje medarbetare. Endast jobb som har planerats på resurser grupperade under den valda produktionsenheten kommer från början att visas av enheten. Om alternativet **Tillåt medarbetare att ställa in personliga filter** är aktiverat kan arbetarna redigera det här värdet, annars gäller detta filter alltid när enhetskonfigurationen är aktiv.
-- **Resursgrupp** – Välj en resursgrupp som ska användas som standardfilterkriterium för listan över jobb som visas för varje medarbetare. Endast jobb som har planerats på resurser grupperade under den valda resursgruppen kommer från början att visas av enheten. Om alternativet **Tillåt medarbetare att ställa in personliga filter** är aktiverat kan arbetarna redigera det här värdet, annars gäller detta filter alltid när enhetskonfigurationen är aktiv.
-- **Resurs** – Välj en resurs som ska användas som standardfilterkriterium för listan över jobb som visas för varje medarbetare. Endast jobb som har planerats på valda resurser kommer från början att visas av enheten. Om alternativet **Tillåt medarbetare att ställa in personliga filter** är aktiverat kan arbetarna redigera det här värdet, annars gäller detta filter alltid när enhetskonfigurationen är aktiv.
+- **Produktionsenhet** – Välj en produktionsenhet som ska användas som standardfilterkriterium för listan över jobb som visas för varje medarbetare. Endast jobb som har planerats på resurser grupperade under den valda produktionsenheten kommer från början att visas av enheten. Om alternativet **Tillåt medarbetare att konfigurera personliga filter** är aktiverat kan arbetarna redigera det här värdet, annars gäller detta filter alltid när enhetskonfigurationen är aktiv.
+- **Resursgrupp** – Välj en resursgrupp som ska användas som standardfilterkriterium för listan över jobb som visas för varje medarbetare. Endast jobb som har planerats på resurser grupperade under den valda resursgruppen kommer från början att visas av enheten. Om alternativet **Tillåt medarbetare att konfigurera personliga filter** är aktiverat kan arbetarna redigera det här värdet, annars gäller detta filter alltid när enhetskonfigurationen är aktiv.
+- **Resurs** – Välj en resurs som ska användas som standardfilterkriterium för listan över jobb som visas för varje medarbetare. Endast jobb som har planerats på valda resurser kommer från början att visas av enheten. Om alternativet **Tillåt medarbetare att konfigurera personliga filter** är aktiverat kan arbetarna redigera det här värdet, annars gäller detta filter alltid när enhetskonfigurationen är aktiv.
 - **Generera ID-nummer** – Ange det här alternativet **Ja** om du vill generera ett nytt ID-nummer varje gång en medarbetare använder jobbkortsenheten för att rapportera som färdig. ID-numret genereras från en nummerserie som ställs in på sidan **parametrar för lagerstyrning**. Om **Nej** måste medarbetare ange ett befintligt ID-nummer när den rapporteras som färdig.
 - **Skriv ut etikett** – Ställ in det här alternativet på **Ja** om du vill skriva ut ett ID-nummer när en medarbetare använder en jobbkortsenhet för att rapportera som färdig. Konfigurationen av etiketten ställs in i dokumentflödet som beskrivs i [Layout på dokumentflödet för ID-nummeretiketter](../warehousing/document-routing-layout-for-license-plates.md).
 

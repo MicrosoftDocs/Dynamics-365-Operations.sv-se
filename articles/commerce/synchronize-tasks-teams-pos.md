@@ -1,6 +1,6 @@
 ---
 title: Synkronisera uppgiftshantering mellan Microsoft Teams och Dynamics 365 Commerce POS
-description: I det här avsnittet beskrivs hur du synkroniserar uppgiftshantering mellan Microsoft Teams och Dynamics 365 Commerce kassa (POS).
+description: I denna artikel beskrivs hur du synkroniserar uppgiftshantering mellan Microsoft Teams och Dynamics 365 Commerce-kassa (POS).
 author: gvrmohanreddy
 ms.date: 02/17/2021
 ms.topic: article
@@ -12,24 +12,24 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b7bb38a415524290d1636eda1f379f3cdcf7e593
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 23da56f4f6aee906aad261939d1c7ef9feac5922
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688921"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874879"
 ---
 # <a name="synchronize-task-management-between-microsoft-teams-and-dynamics-365-commerce-pos"></a>Synkronisera uppgiftshantering mellan Microsoft Teams och Dynamics 365 Commerce POS
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du synkroniserar uppgiftshantering mellan Microsoft Teams och Dynamics 365 Commerce kassa (POS).
+I denna artikel beskrivs hur du synkroniserar uppgiftshantering mellan Microsoft Teams och Dynamics 365 Commerce-kassa (POS).
 
-Ett av huvudsyftena med Teams-integration är att aktivera synkronisering av uppgiftshantering mellan kassaprogrammet och Teams. På det här sättet kan butiksanställda använda antingen kassaprogrammet eller Teams för att hantera uppgifter och behöver inte byta program.
+Ett av huvudsyftena med Teams-integrering är att aktivera synkronisering av uppgiftshantering mellan kassaprogrammet och Teams. På det här sättet kan butiksanställda använda antingen kassaprogrammet eller Teams för att hantera uppgifter och behöver inte byta program.
 
 Eftersom Planner används som databas för uppgifter i Teams måste det finnas en länk mellan Teams och Dynamics 365 Commerce. Den här länken upprättas genom att ett specifikt plan-ID för ett givet butikteam används.
 
-Följande procedurer visar hur du ställer in synkronisering av uppgiftshantering mellan kassa- och Teams-programmen.
+Följande procedurer visar hur du konfigurerar synkronisering av uppgiftshantering mellan kassa- och Teams-programmen.
 
 ## <a name="publish-a-test-task-list-in-teams"></a>Publicera en testuppgiftslista i Teams
 
@@ -41,7 +41,7 @@ Publicera en testuppgiftslista i Teams genom att följa dessa steg.
 1. I det navigeringsfönstret, välj **Uppgifter av Planner**.
 1. På fliken **Publicerade listor**, välj **Ny lista** längst ned till vänster och namnge den nya listan **Testuppgiftslista**.
 1. Markera **Skapa**. Den nya listan visas under **Utkast**.
-1. Under **Uppgiftsrubrik**, ge den första uppgiften rubriken **Testa Teams-integration**. Välj sedan **Retur**.
+1. Under **Uppgiftsrubrik**, ge den första uppgiften rubriken **Testa Teams-integrering**. Välj sedan **Retur**.
 1. I listan **Utkast**, välj uppgiftslistan. Välj  **Publicera**  i det övre högra hörnet.
 1. I dialogrutan **Välj som ska publiceras till**, välj de team som ska få testuppgiftslistan.
 1. Välj **Nästa** om du vill granska publiceringsplanen. Om du måste göra ändringar väljer du  **Bakåt**. 
@@ -52,14 +52,14 @@ Mer information finns i [Publicera uppgiftslistor om du vill skapa och spåra ar
 
 ## <a name="link-pos-and-teams-for-task-management"></a>Koppla kassa och Teams för uppgiftshantering
 
-Om du vill koppla kassa och Microsoft Teams-program för uppgiftshantering i Commerce-administration följer du dessa steg.
+Om du vill koppla kassa och Microsoft Teams-program för uppgiftshantering i Commerce headquarters följer du dessa steg.
 
 > [!NOTE]
-> Innan du försöker integrera Uppgiftshantering med Microsoft Teams måste du kontrollera att du har aktiverat [Dynamics 365 Commerce och Microsoft Teams integration](enable-teams-integration.md). 
+> Innan du försöker integrera Uppgiftshantering med Microsoft Teams måste du kontrollera att du har aktiverat [Dynamics 365 Commerce och Microsoft Teams integrering](enable-teams-integration.md). 
 
-1. Gå till **Butik och handel \> Uppgiftshantering \> Uppgifter integration med Microsoft Teams**.
+1. Gå till **Butik och handel \> Uppgiftshantering \> Uppgifter integrering med Microsoft Teams**.
 1. I åtgärdsfönstret väljer du **Redigera**.
-1. Ange alternativet **Aktivera integration av uppgiftshantering** till **Ja**.
+1. Ange alternativet **Aktivera integrering av uppgiftshantering** till **Ja**.
 1. Klicka på **Spara** i åtgärdsfönstret.
 1. Klicka på **Uppgiftskonfiguration** i åtgärdsfönstret. Du bör få ett meddelande som anger att ett batchjobb som heter **Teams-etablering** skapas.
 1. Gå till **Systemadministration \> Förfrågningar \> Batch-jobb** och hitta det senaste jobbet som har beskrivningen **Teams-etablering**. Vänta tills körningen är klar för det här jobbet.
@@ -69,7 +69,7 @@ Om du vill koppla kassa och Microsoft Teams-program för uppgiftshantering i Com
 
 [Dynamics 365 Commerce och Microsoft Teams-integrering, översikt](commerce-teams-integration.md)
 
-[Aktivera Dynamics 365 Commerce och Microsoft Teams-integration](enable-teams-integration.md)
+[Aktivera Dynamics 365 Commerce och Microsoft Teams-integrering](enable-teams-integration.md)
 
 [Provision Microsoft Teams från Dynamics 365 Commerce](provision-teams-from-commerce.md)
 
@@ -77,4 +77,4 @@ Om du vill koppla kassa och Microsoft Teams-program för uppgiftshantering i Com
 
 [Mappa butiker och team om det finns befintliga team i Microsoft Teams](map-stores-existing-teams.md)
 
-[Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integration](teams-integration-faq.md)
+[Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integrering](teams-integration-faq.md)

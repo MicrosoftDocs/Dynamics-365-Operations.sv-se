@@ -1,6 +1,6 @@
 ---
 title: Visa ordermeddelanden i POS
-description: Det här avsnittet beskriver hur du aktiverar ordermeddelanden i POS och ramverket för meddelanden.
+description: Denna artikel beskriver hur du aktiverar ordermeddelanden i kassan och ramverket för meddelanden.
 author: ShalabhjainMSFT
 ms.date: 03/12/2021
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7166afdb43c7e835170c5768a0767f2943222b19c00c7d0aaf067263845651f8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9e646d6bf48461e78dc75c8a154f2fbf1443393
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714148"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853990"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Visa ordermeddelanden i POS
 
 [!include [banner](includes/banner.md)]
 
-Butikspersonal kan ha olika uppgifter i butiken, till exempel att uppfylla order eller utföra lagerinleverans eller lagerinventering. Kassaklienten ger en enda applikation där medarbetare kan meddelas om dessa uppgifter. Ramverket för meddelanden i POS hjälper till genom att låta återförsäljarna konfigurera rollbaserade meddelanden. Med start i Dynamics 365 Retail med programuppdatering 5, kan dessa meddelanden konfigureras för kassaoperationer.
+Butikspersonal kan ha olika uppgifter i butiken, till exempel att uppfylla order eller utföra lagerinleverans eller lagerinventering. Kassaklienten ger en enda applikation där medarbetare kan meddelas om dessa uppgifter. Ramverket för meddelanden i POS hjälper till genom att låta återförsäljarna konfigurera rollbaserade meddelanden. Med start i Dynamics 365 Retail med programuppdatering 5, kan dessa meddelanden konfigureras för kassaåtgärder.
 
-Systemet kan visa meddelanden för operationen *orderuppfyllelse* och startar i Commerce-version 10.0.18 meddelanden kan även visas för operationen *orderuppfyllelse*. Men eftersom ramverket är utformat för att vara utdragbart kan utvecklare göra det [skriva en meddelandehanterare](dev-itpro/extend-pos-notification.md) för alla operationer och visa meddelanden för den operationen i kassan.
+Systemet kan visa meddelanden för åtgärden *orderuppfyllelse* och startar i Commerce-version 10.0.18 meddelanden kan även visas för åtgärden *orderuppfyllelse*. Men eftersom ramverket är utformat för att vara utdragbart kan utvecklare göra det [skriva en meddelandehanterare](dev-itpro/extend-pos-notification.md) för alla åtgärder och visa meddelanden för den åtgärden i kassan.
 
-## <a name="enable-notifications-for-order-fulfillment-or-recall-order-operations"></a>Aktivera meddelanden för utförande eller återkalla orderoperationer
+## <a name="enable-notifications-for-order-fulfillment-or-recall-order-operations"></a>Aktivera meddelanden för utförande eller återkalla orderåtgärder
 
-Om du vill aktivera meddelanden för utförande av orderuppfyllelse, eller återkalla orderoperationer, följ dessa steg.
+Om du vill aktivera meddelanden för utförande av orderuppfyllelse, eller återkalla orderåtgärder, följ dessa steg.
 
 1. Gå till **Retail och Commerce \> Kanalinställningar \> Kassainställningar \> Kassa \> Åtgärder**.
 1. Sök antingen efter åtgärden **Orderuppfyllelse** eller åtgärden **Återkalla order** och välj sedan **Aktivera meddelanden** för åtgärden att specificera att anmälningsramen ska lyssna på hanteraren för den här åtgärden. Om hanteraren implementeras visas meddelanden för den här åtgärden i POS.
@@ -65,10 +65,10 @@ För både orderuppfyllelse och återkallande orderaviseringar, eftersom nya ord
 
 ## <a name="enable-live-content-on-pos-buttons"></a>Aktivera levande innehåll på kassaknappar
 
-Kassaknapparna kan nu visa ett antal för att hjälpa medarbetarna att bestämma vilka aktiviteter som kräver deras omedelbara uppmärksamhet. För att visa detta nummer på en kassaknapp måste du slutföra de meddelandeinställningar som beskrivs tidigare i det här avsnittet (det vill säga du måste aktivera meddelanden för en åtgärd, konfigurera intervall för ett meddelande och uppdatera kassabehörighetsgrupp för medarbetaren). Dessutom måste du öppna knappsatsen för designern, visa knappens egenskaper och markera kryssrutan **Aktivera levande innehåll**. I fältet **Innehållsjustering** kan du välja om numret ska visas i det övre högra hörnet på knappen (**Högst upp till höger**) eller i mitten (**Mitten**).
+Kassaknapparna kan nu visa ett antal för att hjälpa medarbetarna att bestämma vilka aktiviteter som kräver deras omedelbara uppmärksamhet. För att visa detta nummer på en kassaknapp måste du slutföra de meddelandeinställningar som beskrivs tidigare i denna artikel (det vill säga du måste aktivera meddelanden för en åtgärd, konfigurera intervall för ett meddelande och uppdatera kassabehörighetsgrupp för medarbetaren). Dessutom måste du öppna knappsatsen för designern, visa knappens egenskaper och markera kryssrutan **Aktivera levande innehåll**. I fältet **Innehållsjustering** kan du välja om numret ska visas i det övre högra hörnet på knappen (**Högst upp till höger**) eller i mitten (**Mitten**).
 
 > [!NOTE]
-> Det levande innehållet kan endast aktiveras för åtgärder om kryssrutan **Aktivera meddelanden** har markerats för dem på sidan **Kassaåtgärder** som beskrivs tidigare i detta avsnitt.
+> Live-innehållet kan endast aktiveras för åtgärder om kryssrutan **Aktivera meddelanden** har markerats för dem på sidan **Kassaåtgärder** som beskrivs tidigare i denna artikel.
 
 Följande bild visar inställningarna för levande innehåll i knappsatsen för designern,
 

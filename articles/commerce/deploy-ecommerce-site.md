@@ -1,6 +1,6 @@
 ---
 title: Distribuera en ny klientorganisation för näthandel
-description: I det här avsnittet beskrivs hur du distribuerar en ny Dynamics 365 Commerce-näthandelssajt med hjälp av Microsoft Dynamics Lifecycle Services (LCS).
+description: I denna artikel beskrivs hur du distribuerar en ny Dynamics 365 Commerce-näthandelssajt med hjälp av Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 ms.date: 07/02/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b4b54e10cb4bd897b4c0706a13eeaf32f8892a05f7a09f3b27dbdd3dcdad1606
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7aee33a6322ada6de142ecf5b70ba81213ffb085
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750724"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884014"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Distribuera en ny klientorganisation för näthandel
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du distribuerar en ny Dynamics 365 Commerce-näthandelssajt med hjälp av Microsoft Dynamics Lifecycle Services (LCS).
+I denna artikel beskrivs hur du distribuerar en ny Dynamics 365 Commerce-näthandelssajt med hjälp av Microsoft Dynamics Lifecycle Services (LCS).
 
 Microsoft Dynamics Lifecycle Services (LCS) är en molnbaserad samarbetsyta som partners och kunder kan använda för att hantera sina projekt och miljöer, visa den senaste informationen om Microsoft Dynamics produkter och funktioner samt skapa, spåra och bläddra i supporthändelser. Administreringsfunktionerna för näthandel integreras i LCS.
 

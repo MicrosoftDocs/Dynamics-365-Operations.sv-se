@@ -1,6 +1,6 @@
 ---
 title: Ställa in avgifter på koncerninterna order
-description: Det här avsnittet innehåller information om hur du ställer in avgifter på koncerninterna order
+description: Denna artikel förklarar hur du konfigurerar avgifter på koncerninterna order
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,22 +11,22 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 27633e09bfcf41fbbe5449b0d3b5f283eaf7ee13
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 7b84c0bac6c31139170a99afc65cd08d70bd018e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673674"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885853"
 ---
 # <a name="set-up-charges-on-intercompany-orders"></a>Ställa in avgifter på koncerninterna order
 
 [!include [banner](../../includes/banner.md)]
 
-Du kan ställa in tillägg kan läggas till för koncerninterna order. När en kostnad läggs till för en koncernintern försäljningsorder, synkroniseras den automatiskt till den koncerninterna inköpsordern. Detta fungerar åt båda håll - från den koncerninterna försäljningsordern till inköpsordern och tvärtom.
+Du kan konfigurera tillägg kan läggas till för koncerninterna order. När en kostnad läggs till för en koncernintern försäljningsorder, synkroniseras den automatiskt till den koncerninterna inköpsordern. Detta fungerar åt båda håll - från den koncerninterna försäljningsordern till inköpsordern och tvärtom.
 
 Du kan också använda tillägg till att lägga till en vinst i en koncernintern order genom att definiera tillägget som en koncernintern procent.
 
-När du ställer in tillägg som ska användas för koncerninterna order, aktiverar du beräkningen av intern vinst för en koncernintern försäljningsorder från nettobeloppet för den ursprungliga försäljningsordern. Du kanske vill göra detta om din koncerninterna leverantör säljer till dig till självkostnad. Följande procedur beskriver hur du gör detta för koncerninterna kunder. Du kan använda samma procedur för leverantörer.
+När du konfigurerar tillägg som ska användas för koncerninterna order, aktiverar du beräkningen av intern vinst för en koncernintern försäljningsorder från nettobeloppet för den ursprungliga försäljningsordern. Du kanske vill göra detta om din koncerninterna leverantör säljer till dig till självkostnad. Följande procedur beskriver hur du gör detta för koncerninterna kunder. Du kan använda samma procedur för leverantörer.
 
 1. Gå till **Kundreskontra \> Ställa in \> Avgifter \> Tilläggsgrupper för kunder**.
 1. Skapa en avgiftsgrupp.

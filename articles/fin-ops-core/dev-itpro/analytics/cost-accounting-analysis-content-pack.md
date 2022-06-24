@@ -1,6 +1,6 @@
 ---
 title: Power BI-innehåll för kostnadsredovisningsanalys
-description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadsredovisning.
+description: Den här artikeln beskriver vad som ingår i Power BI-innehållet för kostnadsredovisning.
 author: AndersGirke
 ms.date: 10/02/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d3b8832e5a5612fd0311811f43454689d5b274c36404b4fb92b710411d45e573
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d5e595c910e237481b8124cb2a0333697344b9ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747379"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876904"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-innehåll för kostnadsredovisningsanalys
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vad som ingår i **Kostnadsredovisningsanalys** Microsoft Power BI-innehållet. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
+Den här artikeln beskriver vad som ingår i **kostnadsredovisning** Microsoft Power BI innehållet. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
 ## <a name="overview"></a>Översikt
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurera elektroniska meddelanden
-description: I detta ämne finns information om hur du konfigurerar in funktioner för elektroniska meddelanden (EM).
+description: I denna artikel finns information om hur du konfigurerar in funktioner för elektroniska meddelanden (EM).
 author: liza-golub
 ms.date: 11/18/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 652d8684473d1c1505a80eb1d860c57a214b9488
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6ac6e4fbc37165a3126de3b1f937a43c980410b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734231"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874592"
 ---
 # <a name="set-up-electronic-messages"></a>Konfigurera elektroniska meddelanden
 

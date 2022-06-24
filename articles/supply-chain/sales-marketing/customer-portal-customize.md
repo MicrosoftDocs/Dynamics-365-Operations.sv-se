@@ -1,6 +1,6 @@
 ---
 title: Anpassa och använda kundportalen
-description: I det här avsnittet beskrivs hur du anpassar kundportalen efter att den har lagts till i systemet.
+description: I denna artikel beskrivs hur du anpassar kundportalen efter att den har lagts till i systemet.
 author: Henrikan
 ms.date: 04/22/2020
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 02ad0470b7886b2e9b259682a7f8c8150d656cfb
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 85ec4beda2efe62ff5076a5ed694efbc47c6d87f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063503"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878886"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Anpassa och använda kundportalen
 
 [!include [banner](../includes/banner.md)]
 
 
-I det här avsnittet beskrivs de olika sidor som medföljer kundportalen. Den förklarar vad sidorna gör och hur du kan anpassa dem.
+I denna artikel beskrivs de olika sidor som medföljer kundportalen. Den förklarar vad sidorna gör och hur du kan anpassa dem.
 
 Kundportalen erbjuder några medföljande webbsidor och åtgärder. I följande webbplatsöversikt finns en översikt över de webbsidor och åtgärder och vilka roller som kan utföra åtgärderna.
 
@@ -32,22 +32,22 @@ Kundportalen erbjuder några medföljande webbsidor och åtgärder. I följande 
 
 ## <a name="typical-customizations"></a>Typiska anpassningar
 
-Följande avsnitt innehåller information om grunderna i Power Apps-portaler och hur du kan anpassa portaler:
+Följande artiklar innehåller information om grunderna i Power Apps-portaler och hur du kan anpassa portaler:
 
-- [Arbeta med mallar](/powerapps/maker/portals/work-with-templates) – i det här avsnittet finns en allmän översikt över hur Power Apps-portaler fungerar och hur du kan göra enkla anpassningar av portaler.
-- [Hantera portalinnehåll](/dynamics365/portals/manage-portal-content) – i det här avsnittet beskrivs hur du kan hantera och anpassa innehållet som ligger på en portal.
-- [Redigera CSS](/powerapps/maker/portals/edit-css) – i det här avsnittet får du hjälp med att göra mer komplexa anpassningar av portalens användargränssnitt.
-- [Skapa ett tema för portalen](/dynamics365/portals/create-theme) – i det här avsnittet får du hjälp med att skapa ett användargränssnittstema för portalen.
-- [Skapa och exponera portalinnehåll enkelt](/dynamics365/portals/create-expose-portal-content) – i det här avsnittet får du hjälp med att hantera underliggande data och tabeller som du använder för portalen.
-- [Konfigurera en kontakt som ska användas på en portal](/powerapps/maker/portals/configure/configure-contacts) – i det här avsnittet beskrivs hur du skapar och anpassar användarroller och hur du arbetar med säkerhet och autentisering i Power Apps-portaler.
-- [Konfigurera noteringar för tabellformulär och webbformulär på portaler](/powerapps/maker/portals/configure-notes) – i det här avsnittet beskrivs hur du lägger till dokument och ytterligare lagringsutrymme på portalen.
-- [Felhantering för portalens webbplats](/powerapps/maker/portals/admin/view-portal-error-log) – i det här avsnittet beskrivs hur du visar portalens felloggar och lagrar dem i Microsoft Azure Blob Storage-kontot.
+- [Arbeta med mallar](/powerapps/maker/portals/work-with-templates) – I denna artikel finns en allmän översikt över hur Power Apps-portaler fungerar och hur du kan göra enkla anpassningar av portaler.
+- [Hantera portalinnehåll](/dynamics365/portals/manage-portal-content) – I denna artikel beskrivs hur du kan hantera och anpassa innehållet som visas på din portal.
+- [Redigera CSS](/powerapps/maker/portals/edit-css) – I denna artikel får du hjälp med att göra mer komplexa anpassningar av portalens användargränssnitt.
+- [Skapa ett tema för portalen](/dynamics365/portals/create-theme) – I den härartikeln får du hjälp med att skapa ett användargränssnittstema för portalen.
+- [Skapa och exponera portalinnehåll enkelt](/dynamics365/portals/create-expose-portal-content) – I denna artikel får du hjälp med att hantera underliggande data och tabeller som du använder för portalen.
+- [Konfigurera en kontakt som ska användas på denna portal](/powerapps/maker/portals/configure/configure-contacts) – I denna artikel beskrivs hur du skapar och anpassar användarroller och hur du arbetar med säkerhet och autentisering i Power Apps-portaler.
+- [Konfigurera anteckningar för tabellformulär och webbformulär på portaler](/powerapps/maker/portals/configure-notes) – I denna artikel beskrivs hur du lägger till dokument och ytterligare lagringsutrymme på portalen.
+- [Felhantering för portalens webbplats](/powerapps/maker/portals/admin/view-portal-error-log) – I denna artikel beskrivs hur du visar portalens felloggar och lagrar dem på ditt Microsoft Azure Blob Storage-konto.
 
 ## <a name="customize-the-order-creation-process"></a>Anpassa processen för att skapa order
 
 När en användare skickar en order med hjälp av kundportalen, synkroniseras ordern automatiskt till motsvarande Dynamics 365 Supply Chain Management-miljö. Eftersom användaren är en extern kund, döljs vissa nödvändiga uppgifter avsiktligt från dem. Denna information fylls i automatiskt när formuläret skickas.
 
-I det här avsnittet visas hur du bör ställa in kontakter för att undvika fel. Den förklarar fält som ställs in automatiskt och hur du kan ändra värdet på dessa fält om du måste.
+I det här avsnittet visas hur du bör konfigurera kontakter för att undvika fel. Den förklarar fält som ställs in automatiskt och hur du kan ändra värdet på dessa fält om du måste.
 
 ### <a name="the-out-of-box-order-creation-process"></a>Den medföljande processen för att skapa order
 
@@ -166,7 +166,7 @@ Gör så här om du vill ändra paneler.
 
 ## <a name="resources"></a>Resurser
 
-Mer information om hur du kan ställa in och anpassa kundportalen finns i följande resurser:
+Mer information om hur du kan konfigurera och anpassa kundportalen finns i följande resurser:
 
 - [Power Apps-portaldokumentation](/powerapps/maker/portals/overview)
 - [Dokumentation för dubbelriktad skrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)

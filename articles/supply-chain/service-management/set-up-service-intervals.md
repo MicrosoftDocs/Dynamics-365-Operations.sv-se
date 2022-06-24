@@ -1,6 +1,6 @@
 ---
 title: Ställ in serviceintervall
-description: I det här avsnittet beskrivs hur du ställer in serviceintervall. Serviceintervallet anger frekvensen med vilken serviceorderrader skapas för serviceavtalsrader när du skapar serviceorder.
+description: I denna artikel beskrivs hur du konfigurerar serviceintervall. Serviceintervallet anger frekvensen med vilken serviceorderrader skapas för serviceavtalsrader när du skapar serviceorder.
 author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 943ed0b8f329b45225b61247998e15a1d82356aa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 56b8a31af061b90aeddfb460f6e86c2c5636b280
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673450"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845965"
 ---
 # <a name="set-up-service-intervals"></a>Ställ in serviceintervall  
 
@@ -48,7 +48,7 @@ Du vill skapa ett serviceintervall på 10 dagar.
 5. Ange 10 i fältet för **frekvens**.
 6. Tryck på **Alt+S** om du vill spara serviceintervallet.
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Serviceintervall](service-intervals.md)  
 

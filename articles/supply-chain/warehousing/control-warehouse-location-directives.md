@@ -1,6 +1,6 @@
 ---
 title: Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv
-description: Detta avsnitt beskriver hur man använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret.
+description: Denna artikel beskriver hur man använder mallar och placeringsdirektiv för att bestämma hur och var arbetet utförs i lagret.
 author: perlynne
 ms.date: 10/20/2020
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7e955fba12e963a443c0304f0a8a0e395c46909dd34de12cd51fa9788491786
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 65675d8a99d023176e3e66e92cd3d634750bdb0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770154"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877433"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv
 
 [!include [banner](../includes/banner.md)]
 
-Detta avsnitt beskriver hur man använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret.
+Denna artikel beskriver hur man använder mallar och placeringsdirektiv för att bestämma hur och var arbetet utförs i lagret.
 
-De instruktioner som lagerarbetare på en mobil enhet bestäms av arbete mallar som du ställer in i Dynamics 365 Supply Chain Management för att definiera de olika lager och uppgifter. Arbetsmallar avgör hur arbetet utförs för varje lager. Genom att koppla en lagerplats direktiv att arbeta mallar, du kan bidra till att garantera att arbetet sker i särskilda fysiska områden i lager.
+De instruktioner som lagerarbetare på en mobil enhet bestäms av arbete mallar som du konfigurerar i Dynamics 365 Supply Chain Management för att definiera de olika lager och uppgifter. Arbetsmallar avgör hur arbetet utförs för varje lager. Genom att koppla en lagerplats direktiv att arbeta mallar, du kan bidra till att garantera att arbetet sker i särskilda fysiska områden i lager.
 
 ## <a name="work-templates"></a>Arbetsmallar
 
@@ -40,9 +40,9 @@ Använd inställningarna i arbetet skärbordets definition för att avgöra när
 
 Använd knappen **Arbetsuppgiftshuvudet delas** för att definiera när nya arbetsrubriker ska skapas i systemet. Om du till exempel vill skapa ett arbetshuvud för varje _ordernummer_, väljer du **Redigera fråga** i åtgärdsfönstret och lägger sedan till fältet **Ordernummer** till fliken **Sortera** i Frågeredigeraren. Fält som läggs till på fliken **Sortering** är tillgängliga för markering som *grupperingsfält*. Om du vill ange grupperade fält väljer du **Arbetsuppgiftshuvudet delas** i åtgärdsfönstret och markera kryssrutan i kolumnen för varje fält som du vill använda som grupperingsfält **Gruppera efter detta fält**.
 
-Arbetet linjerna representerar det fysiska uppgifter som krävs för att bearbeta. För exempelvis ett utgående lager, det kan vara en rad för att plocka upp föremål i lagerstället och en annan rad för dessa poster till en mellanlagringsplats. Det kan alltså vara en extra rad för plockning från mellanlagring och en annan rad för att objekten i en lastbil som en del av laddningen. Du kan ställa in ett *direktiv kod* på arbetsmall linjer. Ett direktiv som är kopplad till en plats och därför hjälper till att säkra att lagerarbetet bearbetas på rätt plats i lagret.
+Arbetet linjerna representerar det fysiska uppgifter som krävs för att bearbeta. För exempelvis ett utgående lager, det kan vara en rad för att plocka upp föremål i lagerstället och en annan rad för dessa poster till en mellanlagringsplats. Det kan alltså vara en extra rad för plockning från mellanlagring och en annan rad för att objekten i en lastbil som en del av laddningen. Du kan konfigurera ett *direktiv kod* på arbetsmall linjer. Ett direktiv som är kopplad till en plats och därför hjälper till att säkra att lagerarbetet bearbetas på rätt plats i lagret.
 
-Du kan ställa in en frågeställning för att kontrollera när en särskild mall används. Du kan till exempel ställa in en begränsning så att en viss mall kan användas för arbete i ett särskilt lager. Alternativt kan du ha flera mallar som används för att skapa arbete för utgående orderhantering, beroende på försäljningen ursprung. Systemet använder fältet **Sekvensnummer** för att avgöra den ordning som de tillgängliga arbetsmallarna värderas i. Därför bör du, om du har en specifik fråga för en specifik arbetsmall, tilldela den ett lågt ordningsnummer. Frågeställningen kommer sedan att utvärderas innan andra, mer allmänna frågeställningar.
+Du kan konfigurera en frågeställning för att kontrollera när en särskild mall används. Du kan till exempel konfigurera en begränsning så att en viss mall kan användas för arbete i ett särskilt lager. Alternativt kan du ha flera mallar som används för att skapa arbete för utgående orderhantering, beroende på försäljningen ursprung. Systemet använder fältet **Sekvensnummer** för att avgöra den ordning som de tillgängliga arbetsmallarna värderas i. Därför bör du, om du har en specifik fråga för en specifik arbetsmall, tilldela den ett lågt ordningsnummer. Frågeställningen kommer sedan att utvärderas innan andra, mer allmänna frågeställningar.
 
 > [!NOTE]
 > Om du vill förhindra att ordningen för mallar för arbetsmallar skrivs över automatiskt *sekvensnummer* efter att en mall har tagits bort, aktivera funktionen *Bevara sekvensnummer för arbetsmallen vid borttagning* i [Funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
@@ -55,7 +55,7 @@ Placering av direktiven är regler som hjälper till att identifiera och sätta 
 
 På huvudet, varje plats direktiv måste vara associerad med en *arbetsorder typ* som anger typ av lagertransaktionen som direktivet kommer att användas för, såsom beställningar, återfyllnad, eller råmaterial plockning. Den *arbetstyp* anger platsen direktiv kommer att användas för plockning eller arbete, eller för vissa andra lagret process, såsom inventering eller lager status ändras. Du måste också ange en *ort* och ett *lager*. Ett *direktiv kod* som du anger på skärbordet kan användas för att länka placering direktiv till en eller flera arbetsmallar. 
 
-För arbete mallar, du kan sätter upp en frågeställning att avgöra när en viss plats direktiv används. Du kan till exempel ange att när e-handeln är ursprunget till en försäljningsorder, lager måste plockas upp från ett särskilt område i lagret. Systemet använder fältet **Löpnummer** för att avgöra den ordning som de tillgängliga platsdirektiven värderas i.
+För arbete mallar, du kan sätter upp en frågeställning att avgöra när en viss plats direktiv används. Du kan till exempel ange att när näthandeln är ursprunget till en försäljningsorder, lager måste plockas upp från ett särskilt område i lagret. Systemet använder fältet **Löpnummer** för att avgöra den ordning som de tillgängliga platsdirektiven värderas i.
 
 Platsdirektivraderna anger ytterligare begränsningar för tillämpningen av reglerna för platssökning. Du kan ange en minsta kvantitet och en maximal kvantitet att direktivet bör gälla, och du kan ange att direktivet bör vara en viss lagerenhet. Till exempel, om enheten är pallar, poster i pallar kan placeras i en specifik placering. Du kan också ange om kvantiteten kan delas upp över flera platser. Precis som platsdirektivrubriken har varje platsdirektivrad ett serienummer som bestämmer den ordning som raderna värderas i.
 
@@ -73,7 +73,7 @@ Platsdirektiv bestämmer *var* artiklar ska plockas och *var* de ska placeras. S
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - Video: [konfiguration för lagerstyrning djupdykning](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Hjälpämne: [Arbeta med platsdirektiv](create-location-directive.md)
+- Hjälpartikel: [Arbeta med platsdirektiv](create-location-directive.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

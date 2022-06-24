@@ -1,6 +1,6 @@
 ---
 title: Skapa en inköpsorder
-description: Det här avsnittet visar hur du skapar en inköpsorder manuellt.
+description: Denna artikel visar hur du skapar en inköpsorder manuellt.
 author: GalynaFedorova
 ms.date: 07/18/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2fd627b9874b3e3f7aad71fb2970ddcc333a608
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 2a04a9f4a512a307efecb19703cd3df638ba5ff5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677406"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856089"
 ---
 # <a name="create-a-purchase-order"></a>Skapa en inköpsorder
 
 [!include [banner](../../includes/banner.md)]
 
-Det här avsnittet visar hur du skapar en inköpsorder manuellt. Den är vanligare att inköpsorder skapas automatiskt som resultat av huvudplaneringen, en direktleverans och andra processer. Inköpsorder används vanligtvis av inköpsagenter. De exempel som visas här, kan användas i demonstrationsföretaget USMF som använder de värden som föreslås i anteckningarna för olika steg.
+Denna artikel visar hur du skapar en inköpsorder manuellt. Den är vanligare att inköpsorder skapas automatiskt som resultat av huvudplaneringen, en direktleverans och andra processer. Inköpsorder används vanligtvis av inköpsagenter. De exempel som visas här, kan användas i demonstrationsföretaget USMF som använder de värden som föreslås i anteckningarna för olika steg.
 
 
 ## <a name="create-the-purchase-order-header"></a>Skapa inköpsorderrubriken

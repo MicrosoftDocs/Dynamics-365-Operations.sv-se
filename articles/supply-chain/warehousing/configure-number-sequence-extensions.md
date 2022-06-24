@@ -1,6 +1,6 @@
 ---
 title: Konfigurera nummerserier för lagerflöden
-description: Det här ämnet innehåller en översikt över de funktioner som ger nummer serie tillägg för registreringsskylt-ID, påfyllnadsetikett-ID, behållar-ID och fraktsedel-ID.
+description: Denna artikel innehåller en översikt över de funktioner som ger nummerserietillägg för registreringsskylts-ID, påfyllnadsetiketts-ID, behållars-ID och fraktsedels-ID.
 author: Mirzaab
 ms.date: 06/10/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 20438ed3e34775a6312508595bcd32b16a37a81d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 62530c8ffc8be8d3bae562708872ba8eb00fa9cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669567"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847800"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Konfigurera nummerserier för lagerflöden
 
@@ -46,7 +46,7 @@ Innan du kan använda den här funktionen den aktiveras i ditt system. Administr
 
 ## <a name="set-up-the-feature"></a>Ställ in funktionen
 
-Om du vill ställa in nummerserietillägg i systemet följer du stegen nedan.
+Om du vill konfigurera nummerserietillägg i systemet följer du stegen nedan.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Parametrar för lagerstyrning**.
 1. På fliken **Allmänt** i **GS1-företagsprefix** och ange ditt företagets GS1-prefix. Det här värdet påverkar alla nummerserier där GS1-prefixet ingår som ett segment.

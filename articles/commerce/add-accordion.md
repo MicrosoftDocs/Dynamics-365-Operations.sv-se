@@ -1,6 +1,6 @@
 ---
-title: Dragspelsmodulen
-description: Det här avsnittet handlar om dragspelsmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+title: Dragspelsmodul
+description: Denna artikel handlar om dragspelsmoduler och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e17476d745da6f498b4f3ed90d55b0d13a0264b6
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 4d5c56ea1a54e105b0c616958a18fd61077bca39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780699"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853834"
 ---
 # <a name="accordion-module"></a>Dragspelsmodul
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om dragspelsmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
+Denna artikel handlar om dragspelsmoduler och beskriver hur du lägger till dem på webbsidorna i Microsoft Dynamics 365 Commerce.
 
 Dragspelsmoduler är sådana moduler som används för att organisera informationen eller modulerna på en sida genom att tillhandahålla en komprimerbar kassalådeliknande funktion. En dragspelsmodul kan användas på valfri sida.
 
@@ -53,7 +53,7 @@ Följande bild visar ett exempel på en dragspelsartikelmodul som används för 
 
 ## <a name="add-an-accordion-module-to-a-faq-page"></a>Lägg till dragspelsartikelmodul till en sida med vanliga frågor
 
-Om du vill lägga till en dragspelsmodul på en sida för vanliga frågor och ställa in egenskaperna i webbplatsskaparen följer du stegen nedan.
+Om du vill lägga till en dragspelsmodul på en sida för vanliga frågor och konfigurera egenskaperna i webbplatsskaparen följer du stegen nedan.
 
 1. Gå till **Sidor** och använd Fabrikam-marknadsföringsmallen (eller en mall utan begränsningar) om du vill skapa en ny sida med namnet **Vanliga frågor om butiken**.
 1. I platsen **Huvud** i **Standardsida** markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.

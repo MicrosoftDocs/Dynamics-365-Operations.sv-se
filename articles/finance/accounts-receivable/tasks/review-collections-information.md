@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4d0cb09eb6ac455d72e9dd051065625475581416
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6a6916690b9571fcfe103506960032e19fe724df
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725049"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876223"
 ---
 # <a name="review-collections-information"></a>Granska inkasseringsinformation
 

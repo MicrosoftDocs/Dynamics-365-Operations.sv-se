@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2deb20646a532509c9e3a3e7a39f646bced2a3fb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 039b4aa3f044cda29944bcd4f5c42fc35818c58b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693127"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868171"
 ---
 # <a name="configure-rates"></a>Konfigurera satser
 
@@ -47,7 +47,7 @@ Använd tariffer för att fastställa hur mycket anställda och arbetsgivare som
    | **Giltighet** | Det datum då tariffen blir mer effektiv. Det aktuella systemdatumet är standardvärdet. Det här datumet bör in ligger på eller före förmånsperioden. Det är praktiskt att ange datumet till förmånsplanens datum. |
    | **Upphörande** | Slutdatum för tariffen. 12/31/2154 (vilket betyder aldrig) är standardvärdet. |
    | **Använd nivåer** |  Använd det här fältet om du har logik som måste användas för att bestämma en sats. Om en sats måste ökas baserat på ålder väljer du till exempel ett värde här. Välj förmånspris i **en nivå** eller en **dubbel nivå** för förmånspris på två nivåer. Ett exempel på en dubbel nivå är en nivå baserad på kön och ålder. När du har valt ett värde väljer du **Åtgärder** och sedan **Nivåpriser**. Om du har ett schablonbelopp som inte ändras lämnar du det här fältet tomt. |
-   | **Lönefrekvens** | Ange hur ofta bonussatsen för förmånen ska betalas till förmånsprovidern. Tarifferna som du anger på sidan som beskrivs senare i det här avsnittet baseras på den betalningsfrekvens som du anger här. Om du till exempel anger **Månatlig** i det här fältet och anger en medarbetarsats på **100 USD**,antas det att förmånen innebär att medarbetaren 100 USD per månad. En medarbetare kanske emellertid betalas två gånger per månad, baserat på den betalningsfrekvens för förmån som har ställts in för medarbetarposten. När medarbetaren loggar in i **Självbetjäning för medarbetare** blir i det belopp som de betalar 50 USD eftersom priset som **Självbetjäning för medarbetare** visar baseras på medarbetarens betalningsfrekvens. |
+   | **Lönefrekvens** | Ange hur ofta bonussatsen för förmånen ska betalas till förmånsprovidern. Tarifferna som du anger på sidan som beskrivs senare i den här artikeln baseras på den betalningsfrekvens som du anger här. Om du till exempel anger **Månatlig** i det här fältet och anger en medarbetarsats på **100 USD**,antas det att förmånen innebär att medarbetaren 100 USD per månad. En medarbetare kanske emellertid betalas två gånger per månad, baserat på den betalningsfrekvens för förmån som har ställts in för medarbetarposten. När medarbetaren loggar in i **Självbetjäning för medarbetare** blir i det belopp som de betalar 50 USD eftersom priset som **Självbetjäning för medarbetare** visar baseras på medarbetarens betalningsfrekvens. |
    | **Avrundning av lönefrekvens** | Metoderna för avrundning av satsen är: Standard, Trunkerad, Normal, Nedåt och Avrundning uppåt. </br></br><ul><li>**Standard** – Avrunda alltid uppåt. Till exempel rundar 10,611 av till 10,62. -10,231 rundar av till -10,23. </li><li>**Trunkerad** – Avrunda alltid nedåt. Till exempel rundar 10,619 av till 10,61. -10,231 rundar av till -10,24. </li><li>**Normal** – Decimalvärden som slutar på eller större än 5 avrundas från noll. Decimalvärden som slutar på eller under 4 avrundas mot noll. Till exempel rundar 10,615 av till 10,62. -10,235 rundar av till -10,24. 10,614 rundar av till 10,61. -10,234 rundar av till -10,23. </li><li>**Nedåt** – Avrunda mot noll. Till exempel rundar 10,619 av till 10,61. -10,231 rundar av till -10,23. </li><li>**Avrundning upp** – Avrunda från noll. Till exempel rundar 10,619 av till 10,62. -10,231 rundar av till -10,24. |
    | **Medarbetarbelopp för ickerökare** | Det belopp som en förmånsleverantör debiteras för en anställd som inte är rökare. Detta är det belopp som arbetsgivaren betalar till den förmånsleverantören och som ska baseras på lönefrekvensen för tariffinställningen. |
    | **Arbetsgivarbelopp för ickerökare** | Det belopp som en förmånsleverantör debiteras för en anställd som inte är rökare. Detta är det belopp som arbetsgivaren betalar till den förmånsleverantören och som ska baseras på lönefrekvensen för tariffinställningen. |

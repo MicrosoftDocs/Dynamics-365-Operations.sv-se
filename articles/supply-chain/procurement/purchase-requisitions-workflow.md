@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3381c752e4f1f723162ad314c29ab477caf635a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6934c1147de79c24eb66127d2e08ae8b627bc744
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675947"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849370"
 ---
 # <a name="purchase-requisition-workflow"></a>Arbetsflöde för inköpsrekvisitioner
 
@@ -46,7 +46,7 @@ I bilden nedan visas hur en inköpsrekvisition kan flöda genom arbetsflödesgra
 
 -   **Beställare** – Den användare som begär artiklarna eller tjänsterna. Beställaren kan förbereda inköpsrekvisitionen, eller en annan anställd kan förbereda inköpsrekvisitionen på uppdrag beställaren. Den medarbetaren kallas för förberedare. Förberedaren ansvarar för att hantera inköpsrekvisitionen genom hela granskningen. Det är bara förberedaren av inköpsrekvisitionen som kan ändra den.
 
-**Obs!** En anställd måste beviljas rätt behörighet för att kunna skapa en inköpsrekvisition för någon annans räkning. Använd sidan **Behörighet för inköpsrekvisition** för att ställa in dessa behörigheter.
+**Obs!** En anställd måste beviljas rätt behörighet för att kunna skapa en inköpsrekvisition för någon annans räkning. Använd sidan **Behörighet för inköpsrekvisition** för att konfigurera dessa behörigheter.
 
 -   **Inköpsagent** – Användaren som genomför en anskaffningsgranskning och kan godkänna dokumentet.
 -   **Beställarens chef** – Användaren som genomför en chefsgranskning och kan godkänna dokumentet.
@@ -67,7 +67,7 @@ Följande roller ingår i arbetsflödesprocessen för det här exemplet:
 
 -   **Beställare** – Den användare som begär artiklarna eller tjänsterna. Beställaren kan förbereda inköpsrekvisitionen, eller en annan anställd kan förbereda inköpsrekvisitionen på uppdrag beställaren. Den medarbetaren kallas för förberedare. Förberedaren ansvarar för att hantera inköpsrekvisitionen genom hela granskningen. Det är bara förberedaren av inköpsrekvisitionen som kan ändra den.
 
-**Obs!** En anställd måste beviljas rätt behörighet för att kunna skapa en inköpsrekvisition för någon annans räkning. Använd sidan **Behörighet för inköpsrekvisition** för att ställa in dessa behörigheter.
+**Obs!** En anställd måste beviljas rätt behörighet för att kunna skapa en inköpsrekvisition för någon annans räkning. Använd sidan **Behörighet för inköpsrekvisition** för att konfigurera dessa behörigheter.
 
 -   **Inköpsagent** – Användaren som genomför en anskaffningsgranskning och kan godkänna dokumentet.
 -   **Beställarens chef** – Användaren som genomför en chefsgranskning och kan godkänna dokumentet.
@@ -89,19 +89,19 @@ I det här exemplet innehåller arbetsflödesprocessen för inköpsrekvisitionsr
 ## <a name="configuring-a-workflow-for-purchase-requisitions"></a>Konfigurera av arbetsflöde för inköpsrekvisitioner
 Om du vill skicka en inköpsrekvisition för granskning måste du konfigurera arbetsflödesprocesser för inköpsrekvisitioner. Arbetsflödesprocessen som du definierar styr samspelet mellan användaren som beställer artiklarna (beställaren) och granskaren och godkännaren i arbetsflödet. Flödet för inköpsrekvisitionen beror på villkoren som anges i arbetsflödeskonfigurationen. Till exempel bestämmer dessa kriterier, när inköpsrekvisitionen ska skickas, användaren eller rollen som den ska flödas till och åtgärder som användarna kan vidta.  
 
-I exemplen i det här avsnittet beskrivs hur en inköpsrekvisition kan skickas via arbetsflöde som ett enda dokument eller som enskilda inköpsrekvisitionsrader. Du kan även konfigurera arbetsflödet för att inköpsrekvisitioner för att återspegla intern kontrollgranskningen av inköpsrekvisitioner som har definierats för din organisation.  
+I exemplen i denna artikel beskrivs hur en inköpsrekvisition kan skickas via arbetsflöde som ett enda dokument eller som enskilda inköpsrekvisitionsrader. Du kan även konfigurera arbetsflödet för att inköpsrekvisitioner för att återspegla intern kontrollgranskningen av inköpsrekvisitioner som har definierats för din organisation.  
 
 Deltagarna eller att granskarna som en uppgift har tilldelats in ett arbetsflöde, kan vara medlemmar i en viss användargrupp, användare som har en viss säkerhetsroll, användare som är kopplade till avsändaren i en ledarskapshierarki, eller namngivna användare eller användare som har specifika omkostnadansvarsområden.
 
 ### <a name="purchase-requisition-expenditure-reviewers"></a>Omkostnadsgranskare för inköpsrekvisition
 
-Du kan ställa in omkostnadgranskarekonfigurationer att dynamiskt skicka utgifter för granskning baserat på den användare som tilldelas en projektroll eller en ekonomisk dimension, där omkostnaden debiteras. Arbetsflödeprocessen använder den angivna ägaren av projektrollen eller ekonomiska dimensionen för att bestämma vem skicka omkostnaden till.  
+Du kan konfigurera omkostnadgranskarekonfigurationer att dynamiskt skicka utgifter för granskning baserat på den användare som tilldelas en projektroll eller en ekonomisk dimension, där omkostnaden debiteras. Arbetsflödeprocessen använder den angivna ägaren av projektrollen eller ekonomiska dimensionen för att bestämma vem skicka omkostnaden till.  
 
 Du kan definiera en eller flera omkostnadgranskarekonfigurationer och välj sedan en konfiguration, när du skapar ett arbetsflöde. Du kan konfigurera omkostnadgranskarevärdena för varje juridisk person i din organisation. När du har definierat omkostnadgranskarekonfigurationerna, tilldelar du konfigurationen i din arbetsflödeuppgift.  
 
-Det är inte nödvändigt att ställa in en omkostnadsgranskarkonfigurationen. Du kan istället tilldela en viss användare eller användargrupp som granskare, när du definierar arbetsflöde. Om du har en komplex organisation, kan angivna omkostnadgranskare öka effektiviteten hos din godkännandeprocess. Dessutom, om du ställer in omkostnadgranskare, behöver du inte uppdatera arbetsflödegranskaretilldelningar varje gång en granskare ändrar jobbroller.  
+Det är inte nödvändigt att konfigurera en omkostnadsgranskarkonfigurationen. Du kan istället tilldela en viss användare eller användargrupp som granskare, när du definierar arbetsflöde. Om du har en komplex organisation, kan angivna omkostnadgranskare öka effektiviteten hos din godkännandeprocess. Dessutom, om du konfigurerar omkostnadgranskare, behöver du inte uppdatera arbetsflödegranskaretilldelningar varje gång en granskare ändrar jobbroller.  
 
-Du kan ställa in omkostnadgranskarna på sidan **Inköpsrekvisitionomkostnadgranskare**. När du skapar en omkostnadgranskarekonfiguration, måste du ange standardvärden för varje juridisk person som angetts för din organisation. För rekvisitioner som tilldelats ett projekt, kan du ange rollen som ansvarar för att granska rekvisitioner: Projektledare,Projektstyrenhet eller Projektförsäljningchef. Expenditures skickas till användaren som tilldelats den angivna roll. Du kan också skicka omkostnaden för den ekonomiska dimensionägaren, genom att välja lämpligt alternativ för ekonomisk dimension på fliken **Organisationsfördelningar**.  
+Du kan konfigurera omkostnadgranskarna på sidan **Inköpsrekvisitionomkostnadgranskare**. När du skapar en omkostnadgranskarekonfiguration, måste du ange standardvärden för varje juridisk person som angetts för din organisation. För rekvisitioner som tilldelats ett projekt, kan du ange rollen som ansvarar för att granska rekvisitioner: Projektledare,Projektstyrenhet eller Projektförsäljningchef. Expenditures skickas till användaren som tilldelats den angivna roll. Du kan också skicka omkostnaden för den ekonomiska dimensionägaren, genom att välja lämpligt alternativ för ekonomisk dimension på fliken **Organisationsfördelningar**.  
 
 Om du vill använda en av omkostnadgranskarna, som ställs in i ett arbetsflöde måste du ange alternativet **Typ av deltagare** till **Deltagare vid omkostnad** i egenskaperna **Tilldelning** för det relevanta arbetsflödeselementet.
 

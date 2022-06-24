@@ -1,6 +1,6 @@
 ---
 title: Personalmätningar Power BI-innehåll
-description: Det här avsnittet beskriver Power BI-innehåll för personalmätningar.
+description: Den här artikeln beskriver Power BI-innehåll för personalmätningar.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9393b4dcc6cb5f65d38c6904bf38def9d50af281671e0e09314148824f3e6891
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e45e4fb58bd535b66b7ad0dad8c4efa37e4336b7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757283"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884500"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Personalmätningar Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver **personalmätningar** Microsoft Power BI innehåll. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
+Den här artikeln beskriver **personalmätningar** Microsoft Power BI-innehåll. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
 **Personalmätningar** Power BI-innehåll visas på arbetsytan **Personalhantering** om du använder någon av följande produkter:

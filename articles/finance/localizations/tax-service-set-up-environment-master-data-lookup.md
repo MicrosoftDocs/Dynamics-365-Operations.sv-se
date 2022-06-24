@@ -1,6 +1,6 @@
 ---
 title: Aktivera huvuddatauppslag för momsberäkningskonfiguration
-description: I det här avsnittet beskrivs hur du konfigurerar och aktiverar sökfunktionen huvuddata för momsberäkning.
+description: I den här artikeln beskrivs hur du konfigurerar och aktiverar sökfunktionen huvuddata för momsberäkning.
 author: kai-cloud
 ms.date: 11/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7640144b1687fc64e55f659d49cdb0817c17294a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d9c234781e55fbf7f29eec14666c939d5d60e2fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686723"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879421"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Aktivera huvuddatauppslag för momsberäkningskonfiguration 
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du konfigurerar och aktiverar sökfunktionen huvuddata för momsberäkning. En listruta är tillgänglig för att välja värden i momsberäkningskonfigurationen för fält såsom **Juridisk person**, **Leverantörskonto**, **Artikelkod** och **Leveransvillkor**. Dessa värden kommer från den anslutna Microsoft Dynamics 365 Finance-miljön med hjälp av Microsoft Dataverse-datakällan.
+I den här artikeln beskrivs hur du konfigurerar och aktiverar sökfunktionen huvuddata för momsberäkning. En listruta är tillgänglig för att välja värden i momsberäkningskonfigurationen för fält såsom **Juridisk person**, **Leverantörskonto**, **Artikelkod** och **Leveransvillkor**. Dessa värden kommer från den anslutna Microsoft Dynamics 365 Finance-miljön med hjälp av Microsoft Dataverse-datakällan.
 
 > [!NOTE] 
 > Funktionen för sökning efter huvuddata för momsberäkning är valfri funktion. Du kan hoppa över följande steg om du inaktiverar funktionen **Momstjänst Dataverse datakälla support** i Regulatory Configuration Service (RCS). I det fallet är dock listrutan inte tillgänglig i momsberäkningskonfigurationen.

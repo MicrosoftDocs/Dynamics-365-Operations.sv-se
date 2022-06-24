@@ -1,6 +1,6 @@
 ---
-title: Skriv ut på nytt och annullera påfyllnadsetiketter
-description: I det här avsnittet beskrivs hur du makulerar och skriver ut om befintliga påfyllnadsetiketter.
+title: Skriva ut på nytt och annullera påfyllnadsetiketter
+description: I denna artikel beskrivs hur du makulerar och skriver ut nya befintliga påfyllnadsetiketter.
 author: perlynne
 ms.date: 07/09/2020
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 052c6632d1c6c6b1f357d4066ca8b419698cae62
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f9f057d9985fb8431ec7c9ced23f2cd3c476570d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572347"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871845"
 ---
-# <a name="reprint-and-void-wave-labels"></a>Skriv ut på nytt och annullera påfyllnadsetiketter
+# <a name="reprint-and-void-wave-labels"></a>Skriva ut på nytt och annullera påfyllnadsetiketter
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du hanterar etiketter som genereras med påfyllnadsbearbetning. (Detaljerad beskrivning och konfigurationsinstruktioner finns i [Konfigurera utskrift av påfyllnadsetikett](../warehousing/configure-wave-label-printing.md) .)
+I denna artikel beskrivs hur du hanterar etiketter som genereras genom påfyllnadsbearbetning. (Detaljerad beskrivning och konfigurationsinstruktioner finns i [Konfigurera utskrift av påfyllnadsetikett](../warehousing/configure-wave-label-printing.md) .)
 
 Du kan när som helst skriva ut påfyllnadsetiketterna igen. Du kan till exempel behöva skriva ut en enstaka etikett om en befintlig etikett har försvunnit eller skadats. Alternativt kan en lagerarbetare eller ansvarig behöva skriva ut en hel rulle med etiketter om antalet och/eller sammansättningen av en hel serie påfyllnadsetiketter har ändrats (t.ex. på grund av lagerbrist eller andra orsaker). Även om bara antalet kartonger har ändrats måste hela rullen skrivas ut igen för att behålla det totala antalet korrekt i avsnittet "kartong X av Y" i varje etikett.
 
@@ -32,10 +32,10 @@ Funktionen skriv ut påfyllnadsetiketter igen stöder följande funktioner:
 - Annullera etiketter och skriv ut dem samtidigt igen. (Till exempel är möjligheten att annullera etiketter inbäddad i korta plockningsscenarier.)
 - Rensa historik för påfyllnadsetikett.
 
-I det här avsnittet finns en samling scenarier som kan visas, till exempel hur du arbetar med funktionen för att skriva ut påfyllnadsetiketter.
+I denna artikel finns en samling scenarier som genom exempel visar hur du arbetar med funktionen för att skriva ut fler påfyllnadsetiketter.
 
 > [!IMPORTANT]
-> Om du vill arbeta i de scenarier som presenteras i det här avsnittet måste du först aktivera och konfigurera de relevanta egenskaperna för påfyllnadsutskrift enligt beskrivningen i [Konfigurera utskrift av påfyllnadsetiketter](../warehousing/configure-wave-label-printing.md). Flera av scenarierna i det här avsnittet kräver också att du först arbetar igenom scenarierna i det avsnittet för att skapa nödvändiga exempeldata.
+> Om du vill arbeta i de scenarier som presenteras i denna artikel måste du först aktivera och konfigurera de relevanta egenskaperna för påfyllnadsutskrift enligt beskrivningen i [Konfigurera utskrift av påfyllnadsetiketter](../warehousing/configure-wave-label-printing.md). Flera av scenarierna i denna artikel kräver också att du först arbetar igenom scenarierna i artikeln i syfte att skapa nödvändiga exempeldata.
 
 ## <a name="scenario-1-reprint-labels-from-the-web-client"></a>Scenario 1: skriva ut etiketter från webbklienten
 
@@ -68,7 +68,7 @@ Detta scenario gäller normalt om en etikettrulle har försvunnit eller skadats.
 
 ### <a name="set-up-the-required-menu-items-and-menu-for-the-mobile-device"></a>Konfigurera de menyalternativ och den meny som krävs för den mobila enheten
 
-Innan arbetarna kan skriva ut etiketter på en mobil enhet måste du ställa in menyalternativ för att kunna använda den här funktionen och sedan lägga till dessa artiklar på menyn för lagerställeappen.
+Innan arbetarna kan skriva ut etiketter på en mobil enhet måste du konfigurera menyalternativ för att kunna använda den här funktionen och sedan lägga till dessa artiklar på menyn för lagerställeappen.
 
 #### <a name="create-new-mobile-device-menu-items"></a>Skapa nya menyalternativ för mobila enheter
 

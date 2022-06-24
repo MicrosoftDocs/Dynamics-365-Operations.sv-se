@@ -1,6 +1,6 @@
 ---
 title: Mobil arbetsyta för inköpsordergodkännande
-description: Det här avsnittet innehåller information om den mobila arbetsytan Godkännande av inköpsorder där du kan visa inköpsorder och reagera på dem genom att utföra åtgärder. Du kan exempelvis godkänna eller avvisa en inköpsorder.
+description: Denna artikel innehåller information om den mobila arbetsytan Godkännande av inköpsorder, där du kan visa inköpsorder och reagera på dem genom att utföra åtgärder. Du kan exempelvis godkänna eller avvisa en inköpsorder.
 author: GalynaFedorova
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b0bdcb2f6db95ae061e786365d22cdf74643d09e
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 224d3ce5c9163e95de817a3446a57f07c85df757
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811824"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863865"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobil arbetsyta för inköpsordergodkännande
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Detta avsnitt innehåller information om den mobila arbetsytan **Godkännande av inköpsorder**. På den här arbetsytan kan du visa inköpsorder och reagera på dem genom att utföra åtgärder. Du kan exempelvis godkänna eller avvisa en inköpsorder.
+Denna artikel innehåller information om den mobila arbetsytan **Godkännande av inköpsorder**. På den här arbetsytan kan du visa inköpsorder och reagera på dem genom att utföra åtgärder. Du kan exempelvis godkänna eller avvisa en inköpsorder.
  
 ## <a name="overview"></a>Översikt 
 Inköpsorder som kräver godkännande genomgår en arbetsflöde för godkännande. Arbetsflödet kan innehålla olika steg som kräver att en eller fler personer utför åtgärder. Exempelvis kanske en person behöva slutföra en aktivitet eller godkänna inköpsordern. 
@@ -58,7 +58,7 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 <ol>
 <li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Hämta snabbkorrigeringar för metadata från Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
 <li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Snabbkorrigering av metadata</a>.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Skapa ett driftfärdigt paket </a> som innehåller modellerna <strong>SCMMobile</strong> och modellen och överför sedan det driftfärdiga paketet till LCS. </li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Skapa ett driftfärdigt paket </a> som innehåller modellerna <strong>SCMMobile</strong> och modellen och överför sedan det driftfärdiga paketet till LCS.</li>
 <li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Tillämpa ett distribuerbart paket</a></li>
 </ol></td>
 </tr>

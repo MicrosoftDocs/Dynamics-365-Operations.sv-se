@@ -1,6 +1,6 @@
 ---
 title: Ursprungsland
-description: Många organisationer utfärdar certifikat till sina leverantörer för att säkerställa att produkterna uppfyller specifika certifieringsstandarder. Dessa certifikat beror ofta på ursprungslandet. Det här avsnittet innehåller information om funktionens ursprungsland där du kan koppla en produkt till dess ursprungsland och hålla reda på produktens certifiering.
+description: Många organisationer utfärdar certifikat till sina leverantörer för att säkerställa att produkterna uppfyller specifika certifieringsstandarder. Dessa certifikat beror ofta på ursprungslandet. Denna artikel innehåller information om funktionens ursprungsland, där du kan koppla en produkt till dess ursprungsland och hålla reda på produktens certifiering.
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: a2740f6b1ccb52073b013e613d8ab779cc088180
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 60d5a2067b8e3d311af89fb09cfa3b5c007db219
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777648"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882530"
 ---
 # <a name="country-of-origin"></a>Ursprungsland
 

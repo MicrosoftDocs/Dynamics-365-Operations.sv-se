@@ -1,6 +1,6 @@
 ---
 title: Lägga till nya fält i en affärsdokumentmall i Microsoft Excel
-description: Det här avsnittet innehåller information om hur du lägger till nya fält i en affärsdokumentmall i Microsoft Excel genom att använda funktionen för hantering av affärsdokument.
+description: Den här artikeln innehåller information om hur du lägger till nya fält i en affärsdokumentmall i Microsoft Excel genom att använda funktionen för hantering av affärsdokument.
 author: NickSelin
 ms.date: 11/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 57eebdc38fb3f74690b92c03fa60e10c7610db1fe413320a6d167f05b0658bf1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8395a87e88ebbd1942c87da0cecebe6d25bdf625
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767252"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869414"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Lägga till nya fält i en affärsdokumentmall i Microsoft Excel
 
@@ -28,7 +28,7 @@ ms.locfileid: "6767252"
 
 Du kan lägga till nya fält i en mall som används för att generera affärsdokument i Microsoft Excel-formatet. Dessa fält kan läggas till som platshållare som används för att fylla genererade dokument med nödvändig information från programmet. För varje fält som du lägger till kan du också ange en bindning till datakällorna, där du anger vilka programdata som ska anges i fältet när mallen används för att generera affärsdokument.
 
-Om du vill veta mer om den här funktionen fyller du i exemplet i det här avsnittet. I det här exemplet visas hur du uppdaterar en mall så att fälten fyller i fritextfakturaformulär som skapas.
+Om du vill veta mer om den här funktionen fyller du i exemplet i den här artikeln. I det här exemplet visas hur du uppdaterar en mall så att fälten fyller i fritextfakturaformulär som skapas.
 
 ## <a name="configure-business-document-management-to-edit-templates"></a>Konfigurera affärsdokumenthantering för att redigera mallar
 
@@ -61,7 +61,7 @@ Mer information om att importera ER-konfigurationer finns i [Hantera livscykeln 
 
 3.  I rutnätet väljer du mallen **fritextfaktura (Excel)**.
 4.  Välj **ny mall** i det högra fönstret om du vill skapa en ny mall som baseras på den valda mallen.
-5.  I fältet **Rubrik** anger du **Fritextfaktura (Excel) Contoso** som rubrik för den nya mallen.
+5.  I fältet **rubrik** anger du **fritextfaktura (Excel) Contoso** som rubrik för den nya mallen.
 6.  Välj **OK** för att bekräfta starten av redigeringsprocessen.
 
 Sidan BDM-mallredigerare visas. Du kan använda Microsoft 365 för att redigera den valda mallen online i den inbäddade kontrollen.
@@ -148,9 +148,9 @@ På arbetsytan **Hantering av affärsdokument** visar fliken **Mall** i det hög
 2.  Välj faktura **FTI-00000002** och välj sedan **Utskriftshantering**.
 3.  I det vänstra fönstret expanderar du **Modul - kundreskontra \> Dokument \> Fritextfaktura**.
 4.  Under **Fritextfaktura**, välj nivån **Originaldokument** för att ange omfånget med fakturor för bearbetning.
-5.  I det högra fönstret, i fältet **Rapportformat**, väljer du mallen **Fritextfaktura (Excel) Contoso** för angiven dokumentnivå.
+5.  I det högra fönstret, i fältet **rapportformat**, väljer du **fritextfaktura (Excel) Contoso**-mallen för angiven dokumentnivå.
 
-    ![Contoso-mallen fritextfaktura (Excel) har valts.](./media/BDM-AddFldExcel-PrintMngtSetting.png)
+    ![Mallen fritextfaktura (Excel) Contoso har valts.](./media/BDM-AddFldExcel-PrintMngtSetting.png)
 
 6.  Tryck på **Esc** för att stänga den aktuella sidan.
 7.  Välj **Skriv ut \> Markerade**.

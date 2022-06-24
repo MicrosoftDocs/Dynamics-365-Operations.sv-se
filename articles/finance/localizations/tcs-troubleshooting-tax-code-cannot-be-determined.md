@@ -1,5 +1,5 @@
 ---
-title: Momskod kan inte fastställas
+title: Det går inte att fastställa momskod
 description: I det här ämnet beskriver hur du felsöker felet "Momskod kan inte bestämmas" i beräkningstjänsten för moms.
 author: hangwan
 ms.date: 03/25/2022
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 3c0914f0013ad2de61cd5a59e3092fef149742e4
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 6a74724de38cf362900277ab9addc8e6894f7689
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645436"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877871"
 ---
-# <a name="tax-code-cannot-be-determined"></a>Momskod kan inte fastställas
+# <a name="tax-code-cannot-be-determined"></a>Det går inte att fastställa momskod
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet förklarar de felsökningssteg som du kan vidta om du får en "Momskod kan inte bestämmas" i beräkningstjänsten för moms.
+Den här artikeln förklarar de felsökningssteg som du kan vidta om du får en "Momskod kan inte bestämmas" i beräkningstjänsten för moms.
 
 ## <a name="symptom"></a>Symptom
 
@@ -121,7 +121,7 @@ Följ stegen nedan för att felsöka problemet.
 
 ## <a name="mitigation"></a>Minskning
 
-1. Gå igenom varje steg i avsnittet [Felsöka](#troubleshoot) i det här avsnittet och korrigera inställningarna efter behov. Om momsgruppen och artikelmomsgruppen inte har fastställts korrekt, finns det [inget matchningsresultat att hitta](tcs-troubleshooting-no-matching-result.md).
+1. Gå igenom varje steg i avsnittet [Felsöka](#troubleshoot) i den här artikeln och korrigera inställningarna efter behov. Om momsgruppen och artikelmomsgruppen inte har fastställts korrekt, finns det [inget matchningsresultat att hitta](tcs-troubleshooting-no-matching-result.md).
 2. Om det inte finns någon skärningspunkt för momsgruppen och artikelmomsgruppen, skapa en ny funktionsversion i RCS och korrigera inställningen.
 
     - Gå till **Momsfunktioner** \> **Momskoder och grupper** > **Artikelmomsgrupp**.

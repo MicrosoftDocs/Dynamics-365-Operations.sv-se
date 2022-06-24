@@ -1,6 +1,6 @@
 ---
 title: Registrerings-ID
-description: Det här avsnittet innehåller information om hur du konfigurerar och använder registrerings-ID.
+description: Den här artikeln innehåller information om hur du konfigurerar och använder registrerings-ID.
 author: ShylaThompson
 ms.date: 11/08/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 544e994a18811995afc64c052a3f97e622529162b8a14b17206c370026b78ac4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 379cf78ece388f738fad8121d5b0adb4434d7905
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782826"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883087"
 ---
 # <a name="registration-ids"></a>Registrerings-ID
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller information om hur du konfigurerar och använder registrerings-ID.
+Den här artikeln innehåller information om hur du konfigurerar och använder registrerings-ID.
 
-Många länder och regioner har olika regler och krav för att registrera registreringsnummer eller -ID. Det här avsnittet ger en översikt en över de inställningar och den bearbetning av stödda registreringstyper som krävs för parter i olika europeiska länder/regioner. Alla länder/regioner har sina krav för att stödja olika landsspecifika funktioner som berör registreringsnummer utfärdade av andra myndigheter. Exempel på registreringsnummer är socialförsäkringsnummer (social security number, SSN), skatteidentifieringsnummer (tax identification number, TIN) samt europeiskt moms-ID (EU moms-ID). Den här funktionen ger en enhetlig ram för alla länder i alla regioner med hänsyn till nationsspecifika krav i vissa europeiska länder. Följande avsnitt beskriver det generella flödet av information som används för att konfigurera och bearbeta registrerings-ID.
+Många länder och regioner har olika regler och krav för att registrera registreringsnummer eller -ID. Den här artikeln ger en översikt en över de inställningar och den bearbetning av stödda registreringstyper som krävs för parter i olika europeiska länder/regioner. Alla länder/regioner har sina krav för att stödja olika landsspecifika funktioner som berör registreringsnummer utfärdade av andra myndigheter. Exempel på registreringsnummer är socialförsäkringsnummer (social security number, SSN), skatteidentifieringsnummer (tax identification number, TIN) samt europeiskt moms-ID (EU moms-ID). Den här funktionen ger en enhetlig ram för alla länder i alla regioner med hänsyn till nationsspecifika krav i vissa europeiska länder. Följande avsnitt beskriver det generella flödet av information som används för att konfigurera och bearbeta registrerings-ID.
 
 ## <a name="registration-type-creation"></a>Skapa registreringstyp
 Innan du kan ange ett registrerings-ID måste du ställa in registreringstyper för de olika typer av registreringsnummer som varje part berörs av. Navigera till sidan **Organisationsadministration** &gt; **Global adressbok** &gt; **Registreringstyper** &gt; **Registreringstyper**  för att skapa och hantera registreringstyper för leverantörer, kunder, personal och juridiska personer i olika länder/regioner.
@@ -51,7 +51,7 @@ Registreringskategori är registreringsidentifierare för land/region som har go
 |-----------------------|----------------|
 | Registreringstyp     | Registreringstypen i ett visst land/en viss region.|
 | Begränsat till         | Begränsningstypen gäller för skatteregistreringstypen: Ingen, Person, Organisation.|
-| Registreringskategori | Den unika registreringsidentifieraren som har godkänts för användning i landet. Den fullständiga listan med kategorier som stöds visas senare i det här avsnittet. |
+| Registreringskategori | Den unika registreringsidentifieraren som har godkänts för användning i landet. Den fullständiga listan med kategorier som stöds visas senare i den här artikeln. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Ange registrerings-ID för globala adressboksposter
 

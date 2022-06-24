@@ -1,6 +1,6 @@
 ---
-title: Skjut upp körningen av serie element i ER-format
-description: I det här avsnittet beskrivs hur du uppskjuta körningen av ett sekvenselement i ett format för elektronisk rapportering (ER).
+title: Skjuta upp körningen av sekvenselement i ER-format
+description: I den här artikeln beskrivs hur du uppskjuta körningen av ett sekvenselement i ett format för elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 19d1cf0aa6e9b40a0e72a3a74acda6e2579d6ee2
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 5d4c5395c87c7bdc874f277a691e84081f68742d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323700"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880256"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Skjut upp körningen av serie element i ER-format
 
@@ -32,7 +32,7 @@ Du kan använda Operations designer för ramverket [Elektronisk rapportering (ER
 
 Genom att aktivera alternativet <a name="DeferredSequenceExecution"></a>**Uppskjuten körning** körning för ett nummerserie formatelement i det konfigurerade formatet kan du skjuta upp körningen av det elementet. I det här fallet körs inte elementet förrän alla andra element i dess överordnade har körts.
 
-Om du vill veta mer om den här funktionen fyller du i exemplet i det här avsnittet.
+Om du vill veta mer om den här funktionen fyller du i exemplet i den här artikeln.
 
 ## <a name="limitations"></a>Begränsningar
 

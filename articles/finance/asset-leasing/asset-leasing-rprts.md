@@ -1,6 +1,6 @@
 ---
 title: Leasing av tillgångar – rapporter
-description: I det här avsnittet beskrivs kortfattat de rapporter som är tillgängliga i Leasing av tillgångar.
+description: I den här artikeln beskrivs kortfattat de rapporter som är tillgängliga i Leasing av tillgångar.
 author: moaamer
 ms.date: 04/05/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cb1c994fee6efff82dd1cba1e71c6af49b384208
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: a6e6eb851b9b2dce7259a5355326dd594a940b8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8550051"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856724"
 ---
 # <a name="asset-leasing-reports"></a>Leasing av tillgångar – rapporter
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs kortfattat de rapporter som är tillgängliga i Leasing av tillgångar. De flesta rapporter visas genom att slutföra de här stegen eller liknande steg. 
+I den här artikeln beskrivs kortfattat de rapporter som är tillgängliga i Leasing av tillgångar. De flesta rapporter visas genom att slutföra de här stegen eller liknande steg. 
 
 - Om du vill visa de flesta Leasing av tillgångar-rapporter går du till **Leasing av tillgångar > Förfrågningar och rapporter > Leasingrapporter** och väljer en rapport som ska visas. För de rapporter som kräver en annan urvalssökväg finns stegen för att öppna rapporten i rapportens beskrivning. 
 - När du väljer en rapport som ska skrivas ut öppnas en parametersida där du kan filtrera den information som finns i rapporten. Ange filtervillkor och klicka sedan på **OK** för att generera rapporten. I den genererade rapporten visas information som ligger inom de filter du har angett.

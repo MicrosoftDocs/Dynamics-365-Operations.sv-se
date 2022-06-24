@@ -1,6 +1,6 @@
 ---
 title: Karantänorder
-description: Detta ämne beskriver hur du använder karantänorder för att blockera lager.
+description: Denna artikel beskriver hur du använder karantänorder för att blockera lager.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cf0ec8f9f4d862724cb8ab72b48771ed68eaf39
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3ee1ba338d90c6ee9cdc37948061f518040ae1a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568793"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869674"
 ---
 # <a name="quarantine-orders"></a>Karantänorder
 
 [!include [banner](../includes/banner.md)]
 
-Detta ämne beskriver hur du använder karantänorder för att blockera lager.
+Denna artikel beskriver hur du använder karantänorder för att blockera lager.
 
 Med karantänorder kan du spärra lager. Du kanske vill sätta artiklar i karantän på grund av kvalitetskontroll. Lager som har varit i karantän överförs till ett karantänlagerställe.
 
@@ -35,9 +35,9 @@ Med karantänorder kan du spärra lager. Du kanske vill sätta artiklar i karant
 
 ## <a name="quarantine-on-hand-inventory-items"></a>Sätta lagerbehållningsartiklar i karantän
 
-När du sätter objekt i karantän kan du antingen skapa karantänorder manuellt eller ställa in systemet för att skapa dem automatiskt under inkommande bearbetning.
+När du sätter objekt i karantän kan du antingen skapa karantänorder manuellt eller konfigurera systemet för att skapa dem automatiskt under inkommande bearbetning.
 
-Om du vill ställa in systemet att automatiskt generera karantänorder följer du dessa steg.
+Om du vill konfigurera systemet att automatiskt generera karantänorder följer du dessa steg.
 
 1. Gå till **Lagerhantering \> Inställningar \> Lager \> Modellgrupper för artiklar**.
 1. Välj en relevant modellgrupp i listfönstret eller skapa en ny modellgrupp.

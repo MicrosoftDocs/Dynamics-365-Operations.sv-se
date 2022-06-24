@@ -1,6 +1,6 @@
 ---
 title: Leverans av små paket
-description: Det här ämnet innehåller information om funktionen leverans av små paket (SPS). Med denna funktion kan Microsoft Dynamics 365 Supply Chain Management skicka uppgifter om en förpackad behållare till transportföretaget och sedan ta emot en leveransetikett, basleveranstariff och spårningsnummer tillbaka från det transportföretaget.
+description: Denna artikel innehåller information om funktionen för leverans av små paket (SPS). Med denna funktion kan Microsoft Dynamics 365 Supply Chain Management skicka uppgifter om en förpackad behållare till transportföretaget och sedan ta emot en leveransetikett, basleveranstariff och spårningsnummer tillbaka från det transportföretaget.
 author: Mirzaab
 ms.date: 01/08/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: e8e2bda39b9de241d17fcf3cb9acce2b8015efd2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7bafd4a5118de5ca6025c6bd74fe436aa6abd1c8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687628"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855915"
 ---
 # <a name="small-parcel-shipping"></a>Leverans av små paket
 
@@ -32,7 +32,7 @@ Leveranskostnaden som returneras läggs till på den associerade försäljningso
 
 ## <a name="prepare-your-system-to-support-sps"></a>Förbereda ditt system för stöd för SPS
 
-Innan du kan börja använda SPS-funktionen måste du aktivera SPS-funktionen i Funktionshantering, lägga till din tariffmotor och ställa in modulerna **Transporthantering** och **Lagerstyrning** för att stödja den.
+Innan du kan börja använda SPS-funktionen måste du aktivera SPS-funktionen i Funktionshantering, lägga till din tariffmotor och konfigurera modulerna **Transporthantering** och **Lagerstyrning** för att stödja den.
 
 ### <a name="turn-on-the-sps-feature"></a>Aktivera SPS-funktion
 
@@ -41,7 +41,7 @@ Innan du kan använda SPS-funktionen måste den aktiveras i ditt system. Adminis
 - **Modul:** *Transporthantering*
 - **Funktionsnamn:** *Leverans av små paket*
 
-### <a name="deploy-and-set-up-rate-engines"></a>Distribuera och ställa in tariffmotor.
+### <a name="deploy-and-set-up-rate-engines"></a>Distribuera och konfigurera tariffmotor.
 
 Supply Chain Management omfattar inte några tariffmotorer. Du måste erhålla eller skapa eventuella tariffmotor som du behöver och sedan lägga till dem i systemet. Microsoft tillhandahåller dock en demotariffmotor som du kan använda för att testa.
 
@@ -54,7 +54,7 @@ Följ dessa steg för att hämta demotariffmotorn.
 
 #### <a name="create-and-deploy-functional-rate-engines"></a>Skapa och distribuera funktionella tariffmotorer.
 
-Mer information om hur du skapar och distribuerar funktionella tariffmotorer så att de kan användas i en tillverknings- eller testmiljö finns i följande ämnen:
+Mer information om hur du skapar och distribuerar funktionella tariffmotorer så att de kan användas i en tillverknings- eller testmiljö finns i följande artiklar:
 
 - [Skapa en ny transporthanteringsmotor](../transportation/create-new-transportation-management-engine.md)
 - [Ställa in motorer för transporthantering](/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
@@ -63,7 +63,7 @@ Mer information om hur du skapar en SPS-tariffmotor finns i följande inlägg: [
 
 #### <a name="set-up-a-rate-engine-in-supply-chain-management"></a>Ställa in en tariffmotor i Supply Chain Management
 
-När du har skapat och distribuerat en tariffmotor för SPS följer du dessa steg och ställer in den.
+När du har skapat och distribuerat en tariffmotor för SPS följer du dessa steg och konfigurerar den.
 
 1. Gå till **Transporthantering \> Inställningar \> Motorer \> Tariffmotor**.
 1. I åtgärdsfönstret, välj **Ny** du vill lägga till en rad i rutnätet.
@@ -77,7 +77,7 @@ När du har skapat och distribuerat en tariffmotor för SPS följer du dessa ste
 
 ## <a name="example-scenario"></a>Exempelscenario
 
-I det här exempelscenariot visas hur du ställer in och använder SPS efter att du har förberett systemet enligt beskrivningen tidigare i det här avsnittet. I det här scenariot används den tidigare nämnda demotariffmotorn.
+I det här exempelscenariot visas hur du konfigurerar och använder SPS efter att du har förberett systemet enligt beskrivningen tidigare i denna artikel. I det här scenariot används den tidigare nämnda demotariffmotorn.
 
 ### <a name="make-demo-data-available"></a>Gör demodata tillgängliga
 
@@ -85,11 +85,11 @@ Om du vill arbeta genom detta scenario med hjälp av de demoposter och värden s
 
 ### <a name="set-up-the-scenario"></a>Ställ in scenario
 
-I det här exemplet måste du ha ett demotransportföretag, en transportföretagsgrupp, en förpackningspolicy och en förpackningsprofil. Följande delgrupper förklarar hur du förbereder posterna som krävs för scenariot. I ett produktionsscenario liknar inställningsprocessen vanligtvis den process som beskrivs här. Du kommer dock att ställa in olika värden.
+I det här exemplet måste du ha ett demotransportföretag, en transportföretagsgrupp, en förpackningspolicy och en förpackningsprofil. Följande delgrupper förklarar hur du förbereder posterna som krävs för scenariot. I ett produktionsscenario liknar inställningsprocessen vanligtvis den process som beskrivs här. Du kommer dock att konfigurera olika värden.
 
 #### <a name="set-up-carriers"></a>Konfigurera transportföretag
 
-Följ dessa steg för att ställa in ett transportföretag.
+Följ dessa steg för att konfigurera ett transportföretag.
 
 1. Gå till **Transporthantering \> Inställningar \> Transportföretag \> Transportföretag**.
 1. I åtgärdsfönstret, välj **Ny** för att lägga till ett transportföretag.
@@ -124,11 +124,11 @@ Följ dessa steg för att ställa in ett transportföretag.
 
 1. Klicka på **Spara** i åtgärdsfönstret.
 
-Mer information om hur du ställer in transportföretag hittar du på [Ställ in transportföretag](../transportation/tasks/set-up-shipping-carriers.md).
+Mer information om hur du konfigurerar transportföretag hittar du på [Ställ in transportföretag](../transportation/tasks/set-up-shipping-carriers.md).
 
 #### <a name="set-up-carrier-service-accounts"></a>Ställa in konton för transportföretag
 
-Följ dessa steg för att ställa in ett konto för transportföretag.
+Följ dessa steg för att konfigurera ett konto för transportföretag.
 
 1. Gå till **Transporthantering \> Inställningar \> Klassificering \> Konto för transportföretag**.
 1. I åtgärdsfönstret, välj **Ny** du vill lägga till ett konto för transportföretag.
@@ -145,9 +145,9 @@ Följ dessa steg för att ställa in ett konto för transportföretag.
 
 #### <a name="set-up-a-container-packing-policy"></a>Ställa in policy för packning av behållare
 
-Följ dessa steg för att ställa in en policy för packning av behållare.
+Följ dessa steg för att konfigurera en policy för packning av behållare.
 
-1. Om du inte redan har ställt in en ZPL-skrivardefinition, ska du använda appen Dokumentflödesagenten för att konfigurera det. Mer information finns i [översikten över utskrift av dokument och relaterade avsnitt](../../fin-ops-core/dev-itpro/analytics/print-documents.md).
+1. Om du inte redan har ställt in en ZPL-skrivardefinition, ska du använda appen Dokumentflödesagenten för att konfigurera det. Mer information finns i [Utskriftsöversikt för dokument](../../fin-ops-core/dev-itpro/analytics/print-documents.md) och relaterade artiklar.
 1. Gå till **Lagerstyrning \> Inställningar \> Behållare \> Policyer för packning av behållare**.
 1. I åtgärdsfönstret, välj **Ny** du vill lägga till en policy för packning av behållare.
 1. Ange följande värden i nya policyns rubrik:
@@ -190,7 +190,7 @@ Följ dessa steg för att skapa en förpackningsprofil.
 
 #### <a name="set-up-a-customer-to-use-the-sps-carrier"></a>Ställ in en kund att använda SPS-transportföretaget
 
-Följ dessa steg om du vill ställa in en kund så att den kan använda det transportföretag som du skapat.
+Följ dessa steg om du vill konfigurera en kund så att den kan använda det transportföretag som du skapat.
 
 1. Gå till **Leverantörsreskontra \> kunder \> Alla kunder**.
 1. I rutnätet hittar och väljer du kund *US-027*.

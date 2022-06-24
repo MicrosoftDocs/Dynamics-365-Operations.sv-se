@@ -1,6 +1,6 @@
 ---
 title: Schemalägg underhållsplaner
-description: I det här avsnittet beskrivs schemaläggning av underhållsplaner i Tillgångshantering.
+description: I denna artikel beskrivs schemaläggning av underhållsplaner i Tillgångshantering.
 author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bd5192f727c83c017148405fb1b3ee587c118542450d46b5822d86cd1676d8fd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fc9212d0945c05af9dbc054a5a1d2bf7b996b93f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731329"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857994"
 ---
 # <a name="schedule-maintenance-plans"></a>Schemalägg underhållsplaner
 
@@ -54,7 +54,7 @@ Vid planering av förebyggande underhåll skapas kalenderposter på tillgångar 
 
 ![Figur 1.](media/09-preventive-maintenance.png)
 
-- I dialogrutan **Schemalägg underhållsplaner** kan du ställa in batchjobb för snabbfliken **Kör i bakgrunden** för att automatiskt generera kalenderposter med jämna mellanrum.  
+- I dialogrutan **Schemalägg underhållsplaner** kan du konfigurera batchjobb för snabbfliken **Kör i bakgrunden** för att automatiskt generera kalenderposter med jämna mellanrum.  
 - När du planerar förebyggande underhåll skapas inte rader för underhållsplanering med förväntat startdatum och starttid före systemdatumet och systemtiden.  
 
 Bilden nedan visar en grafisk illustration av en beräkning av tidsbaserad underhållsplan.  

@@ -1,6 +1,6 @@
 ---
 title: Bädda in tredjepartsprogram
-description: Det här avsnittet förklarar hur du bäddar in tredjepartsappar i syfte att utöka produktens funktionalitet.
+description: Den här artikeln förklarar hur du bäddar in tredjepartsappar i syfte att utöka produktens funktionalitet.
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 89f101bcf33080f6a73664fe7c3fe6719de04a4e
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 3c07befc7150ff0a121fd3aaa0b5233df9f431e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488244"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868620"
 ---
 # <a name="embed-third-party-apps"></a>Bädda in tredjepartsprogram
 
 [!include [banner](../includes/banner.md)]
 
-Många kunder använder en mängd olika program för att driva sin verksamhet. Vissa av programmen är webbprogram från tredje part som fungerar tillsammans med Finance and Operations-program. Om du vill tillhandahålla en mer sömlös användarupplevelse kan du använda funktionen **Helsidesappar** för att bädda in dessa tredjepartsappar direkt i dina Finance and Operations-appar (förutsatt att tredjepartsapparna medger detta). På det här sättet kan användarna komma åt de webbplatser och program som de behöver utan att behöva byta flikar eller fönster.
+Många kunder använder en mängd olika program för att driva sin verksamhet. Vissa av programmen är webbprogram från tredje part som fungerar tillsammans med appar för ekonomi och drift. Om du vill tillhandahålla en mer sömlös användarupplevelse kan du använda funktionen **Helsidesappar** för att bädda in dessa tredjepartsappar direkt i dina appar för ekonomi och drift (förutsatt att tredjepartapparna medger detta). På det här sättet kan användarna komma åt de webbplatser och program som de behöver utan att behöva byta flikar eller fönster.
 
-Innan du kan bädda in tredjepartsappar i produkten måste du aktivera funktionen **Helsidesappar** i funktionshanteringen. Du kan sedan använda någon av följande metoder för att bädda in ett programeller webbplats från tredje part. Dessa metoder överensstämmer med de metoder som används för att bädda in arbetsyteappar från Microsoft Power Apps till Finance and Operations-program.
+Innan du kan bädda in tredjepartsappar i produkten måste du aktivera funktionen **Helsidesappar** i funktionshanteringen. Du kan sedan använda någon av följande metoder för att bädda in ett programeller webbplats från tredje part. Dessa metoder överensstämmer med de metoder som används för att bädda in arbetsyteappar från Microsoft Power Apps till appar för ekonomi och drift.
 
 - Bädda in appen eller webbplatsen på en befintlig sida som en ny fliksida (pivot-flik, snabbflik, blad eller arbetsyta).
 - Skapa en ny helsidesupplevelse för programmet eller webbplatsen från instrumentpanelen.
@@ -60,7 +60,7 @@ Använd denna procedur om du vill göra tillägg till en befintlig sida i system
 
 ## <a name="embed-a-website-as-a-full-page-experience-from-the-dashboard"></a>Bädda in en webbplats som en fullständig användarupplevelse från instrumentpanelen
 
-Använd den här proceduren om programmet som du vill bädda in inte är relaterat till en befintlig sida eller om du bara vill ha en helsidesupplevelse för appen inuti Finance and Operations-programmet.
+Använd den här proceduren om programmet som du vill bädda in inte är relaterat till en befintlig sida eller om du bara vill ha en helsidesupplevelse för appen inuti appar för ekonomi och drift.
 
 1. Öppna instrumentpanelen.
 2. Markera och håll ned (eller högerklicka) på instrumentpanelen, välj **Anpassa** och sedan **Lägg till en sida**.
@@ -89,7 +89,7 @@ När du har bäddat in ett program med en av metoderna som beskrivs i de föreg�
 
 ## <a name="viewing-embedded-apps"></a>Visa inbäddade appar
 
-Om du vill visa en inbäddad app på en sida i Finance and Operations-appar öppnar du sidan där den inbäddad appen finns. Kom ihåg att inbäddade appar kan nås på vissa sidor med hjälp av knappen **Power Apps** i det vanliga åtgärdsfönstret. Alternativt kan de komma att visas direkt på sidan som en ny flik, snabbflik, blad eller ett nytt avsnitt på en arbetsyta.
+Om du vill visa en inbäddad app på en sida i appar för ekonomi och drift öppnar du sidan där den inbäddad appen finns. Kom ihåg att inbäddade appar kan nås på vissa sidor med hjälp av knappen **Power Apps** i det vanliga åtgärdsfönstret. Alternativt kan de komma att visas direkt på sidan som en ny flik, snabbflik, blad eller ett nytt avsnitt på en arbetsyta.
 
 ## <a name="editing-or-removing-embedded-apps"></a>Redigera eller ta bort inbäddade program
 
@@ -126,6 +126,6 @@ Om en webbplats inte återges på rätt sätt efter det att den bäddats in i en
 
 ### <a name="developer-modeling-a-website-on-a-form"></a>[Utvecklare] Basera en webbplats på ett formulär
 
-Även om det här avsnittet är fokuserat på inbäddade tredjepartsprogram eller webbplatser via anpassning kan utvecklare också bädda in dem i ett formulär genom att använda utvecklarupplevelsen Visual Studio. Lägg bara till en **WebsiteHostControl**-kontroll i formuläret. Metadataegenskaperna som finns i kontrollen ger samma funktioner som anpassningsupplevelsen.
+Även om den här artikeln är fokuserat på inbäddade tredjepartsprogram eller webbplatser via anpassning kan utvecklare också bädda in dem i ett formulär genom att använda utvecklarupplevelsen Visual Studio. Lägg bara till en **WebsiteHostControl**-kontroll i formuläret. Metadataegenskaperna som finns i kontrollen ger samma funktioner som anpassningsupplevelsen.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 81fae8d3603677afd7dd4b09b9073805f73582b4
-ms.sourcegitcommit: e6b4844a71fbb9faa826852196197c65c5a0396f
+ms.openlocfilehash: 0fb0a9725d882fdc330d7adbb49bd3dcadf7805f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7751716"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883637"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Skapa ER-uttryck för att anropa programklassmetoder
 
@@ -35,7 +35,7 @@ Procedurerna kan slutföras med hjälp av valfri datauppsättning.
 
 Om du vill slutföra dem måste du ladda ned och spara följande fil: [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
 
-I detta ämne ska du skapa erforderliga ER-konfigurationer för exempelföretaget Litware, Inc. Innan du slutför procedurerna i detta ämne måste du därför följa dessa steg.
+I det här exemplet ska du skapa erforderliga ER-konfigurationer för exempelföretaget Litware, Inc. Innan du slutför procedurerna i detta ämne måste du därför följa dessa steg.
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. På sidan **Lokaliseringskonfigurationer** bekräftar du att konfigurationsleverantören för exempelföretaget **Litware, Inc.** är tillgängligt och har markerats som aktivt. Om du inte kan se denna konfigurationsleverantör måste du först slutföra stegen i [Skapa konfigurationsleverantörer och markera dem som aktiva](er-configuration-provider-mark-it-active-2016-11.md).

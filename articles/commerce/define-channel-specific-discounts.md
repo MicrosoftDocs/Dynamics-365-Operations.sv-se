@@ -1,6 +1,6 @@
 ---
 title: Definiera kanalspecifika rabatter
-description: Återförsäljare ställer ofta in olika rabatter i olika kanaler. Det här avsnittet behandlar de koncept du behöver känna till för att skapa en rabatt för en viss kanal.
+description: Återförsäljare ställer ofta in olika rabatter i olika kanaler. Denna artikel behandlar de koncept du behöver känna till för att skapa en rabatt för en viss kanal.
 author: scott-tucker
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 14b6f8f4a7d344111718fad94418bc3dbb5c9b1e113c0fd613350c49a2511d4f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9ceb5c8e47288e7ffdd3808cd8d60112f81ce314
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759321"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873420"
 ---
 # <a name="define-channel-specific-discounts"></a>Definiera kanalspecifika rabatter
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet behandlar de koncept du behöver känna till för att skapa en rabatt för en viss kanal.
+Denna artikel behandlar de koncept du behöver känna till för att skapa en rabatt för en viss kanal.
 
 ## <a name="channel-specific-discounts"></a>Kanalspecifika rabatter
 
@@ -50,7 +50,7 @@ Diagrammet ovan visar relationen mellan enheter som kan göras för en transakti
 
 Följande exempel illustrerar uppgifterna som ingår i konfigurationen av en kanalrabatt.
 
-1. För det  här exemplet har du en kanal kallad **Houston**, och du ska skapa en ny rabatt kallad **Back-to-School**.
+1. För det här exemplet har du en kanal kallad **Houston**, och du ska skapa en ny rabatt kallad **Back-to-School**.
 2. Eftersom prissättnings- och rabattstrategin inkluderar möjligheten till kanalrabatter skapar du alltid en kanalspecifik prisgrupp när du skapar en kanal.
 3. Du har prisgruppen **Houston-PG** och den är tilldelad kanalen **Houston**.
 4. När du har skapat den nya rabatten **Back-to-School** måste du klicka på **Prisgrupper** längst upp på sidan **Rabatt**. Sidan **Rabattprisgrupper** öppnas. Välj **Nytt** och välj prisgruppen **Houston-PG**.

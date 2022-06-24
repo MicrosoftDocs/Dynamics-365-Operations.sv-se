@@ -1,6 +1,6 @@
 ---
-title: Öppna URL i POS
-description: Det här avsnittet innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Dynamics 365 Commerce.
+title: Öppna URL i kassa
+description: Denna artikel innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Dynamics 365 Commerce.
 author: AamirAllaq
 ms.date: 01/28/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 0e02a08e5afd15fd9622495fd77f4dc01b85786bcffc222b5c979c82a59a6aab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 529908df866c71ea84d90bbb5d46b23311ed74d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714124"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853972"
 ---
 # <a name="open-url-in-pos"></a>Öppna URL i kassa
 
 [!include [banner](includes/banner.md)]
 
-Detta ämne avsnitt beskriver hur du konfigurerar en knapp i kassa (POS) i Dynamics 365 Commerce för att öppna en URL. Den här funktionen kräver inte en kodanpassning och kan konfigureras av en person i en roll som inte är utvecklare. 
+Denna artikel beskriver hur du konfigurerar en knapp i kassa (POS) i Dynamics 365 Commerce för att öppna en URL. Den här funktionen kräver inte en kodanpassning och kan konfigureras av en person i en roll som inte är utvecklare. 
 
 Den här funktionen används för att konfigurera en knapp i POS med hjälp av knappen rutnätsdesigner för att öppna en URL. För närvarande stöds detta följande konfigurationer:
 
@@ -46,7 +46,7 @@ Den här konfigurationen definierar om du vill öppna URL i ett nytt fönster el
 
 Den här funktionen låter dig också ange icke-URL om du vill öppna en inbyggd app. Du kan till exempel ange URL-protokoll såsom MailTo, SIP, IM eller MSTEAMS som sedan kan hanteras av respektive inbyggda appar på värdenheten. Om du vill aktivera detta måste du konfigurera URL med alternativet **Öppna i nytt fönster** markerat.
 
-- Windows-datorer finns i [Exportera eller importera standardassociationer för applikationer](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) för att ange standardassociationer för protokollet om du ställer in datorn med Deployment Image Servicing and Management (DISM).
+- Windows-datorer finns i [Exportera eller importera standardassociationer för applikationer](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) för att ange standardassociationer för protokollet om du konfigurerar datorn med Deployment Image Servicing and Management (DISM).
 - Om du använder Mobile Device Manager, till exempel Intune för att hantera Windows-datorer, se [Policy CSP – ApplicationDefaults](/windows/client-management/mdm/policy-csp-applicationdefaults).
 - Om du utvecklar en egen webbserver, se [Starta standardappen för en URI](/windows/uwp/launch-resume/launch-default-app).
 

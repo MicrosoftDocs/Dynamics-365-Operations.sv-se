@@ -1,6 +1,6 @@
 ---
 title: Visa rabatter i kassan
-description: I det här avsnittet beskrivs hur Microsoft Dynamics 365 Commerce hjälper säljarna att lära sig mer om erbjudanden och hur de kan användas för korsförsäljning och merförsäljning.
+description: I denna artikel beskrivs hur Microsoft Dynamics 365 Commerce hjälper säljarna att lära sig mer om erbjudanden och hur de kan användas för korsförsäljning och merförsäljning.
 author: ShalabhjainMSFT
 ms.date: 07/29/2020
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 9e3fa5030cb684c01153d255ca2bd34d9be7dc9945f0c7ec26985cf74540b73d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3ec16c5051088ed2777309899b26094e8d67743
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731677"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878550"
 ---
 # <a name="show-discounts-in-pos"></a>Visa rabatter i POS
 
 [!include [banner](includes/banner.md)]
 
-Erbjudanden spelar en viktig roll när det gäller att motivera kunder som fattar köp beslut. Helgdagar kan till exempel producera det högsta antalet försäljningar för detaljhandlare, eftersom hela detaljhandels marknaden är översvämmad med lockande kampanjer och rabatter. Om butiksintressena känner till och förstår de erbjudanden som är tillgängliga kan de enkelt utnyttja dessa erbjudanden för att sälja och merförsälja artiklar. I det här avsnittet beskrivs hur Microsoft Dynamics 365 Commerce hjälper säljarna att lära sig mer om erbjudanden och hur de kan användas för korsförsäljning och merförsäljning.
+Erbjudanden spelar en viktig roll när det gäller att motivera kunder som fattar köp beslut. Helgdagar kan till exempel producera det högsta antalet försäljningar för detaljhandlare, eftersom hela detaljhandels marknaden är översvämmad med lockande kampanjer och rabatter. Om butiksintressena känner till och förstår de erbjudanden som är tillgängliga kan de enkelt utnyttja dessa erbjudanden för att sälja och merförsälja artiklar. I denna artikel beskrivs hur Microsoft Dynamics 365 Commerce hjälper säljarna att lära sig mer om erbjudanden och hur de kan användas för korsförsäljning och merförsäljning.
 
 ## <a name="learn-about-store-discounts"></a>Lär dig mer om butiksrabatter
 
-Commerce inkluderar en operation med namnet "Visa alla rabatter". Den här åtgärden visar alla rabatter som för närvarande körs i en butik. Åtgärden "Visa alla rabatter" kan mappas till en knapp i POS, och den knappen kan läggas till på **Välkomstsidan** eller på **transaktionssidan**. Följande illustration visar ett exempel på listsidan **alla rabatter** som är öppna.
+Commerce inkluderar en åtgärd med namnet "Visa alla rabatter". Den här åtgärden visar alla rabatter som för närvarande körs i en butik. Åtgärden "Visa alla rabatter" kan mappas till en knapp i POS, och den knappen kan läggas till på **Välkomstsidan** eller på **transaktionssidan**. Följande illustration visar ett exempel på listsidan **alla rabatter** som är öppna.
 
 ![Sidan Alla rabatter.](./media/View_all_discounts.png "Sidan alla rabatter")
 

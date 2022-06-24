@@ -1,6 +1,6 @@
 ---
 title: Hur arbetare använder körningsgränssnittet för produktionsgolvet
-description: I det här avsnittet beskrivs hur du använder körningsgränssnittet för produktionsgolvet från en arbetares synvinkel.
+description: I denna artikel beskrivs hur du använder körningsgränssnittet för produktionsgolvet ur en arbetares synvinkel.
 author: johanhoffmann
 ms.date: 01/24/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f163b8feb906470f31a648bf09abf5647c5f1bab
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9c0d87dfb4c432f9cff0f1172139dbcda6308275
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860679"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hur arbetare använder körningsgränssnittet för produktionsgolvet
 
@@ -28,13 +28,13 @@ Körningsgränssnittet för produktionsgolvet är optimerat för beröringsinter
 
 ## <a name="sign-in-to-the-production-floor-execution-interface-as-a-worker"></a>Logga in på körningsgränssnittet för produktionsgolvet som en arbetare
 
-Innan arbetarna kan börja använda enheten måste han eller hon förbereda den och öppna rätt sida i Dynamics 365 Supply Chain Management. Mer information om hur du ställer in en enhet finns i [Konfigurera en enhet att köra körningsgränssnittet för produktionsgolvet](production-floor-execution-setup.md).
+Innan arbetarna kan börja använda enheten måste han eller hon förbereda den och öppna rätt sida i Dynamics 365 Supply Chain Management. Mer information om hur du konfigurerar en enhet finns i [Konfigurera en enhet att köra körningsgränssnittet för produktionsgolvet](production-floor-execution-setup.md).
 
 När enheten har förberett visas inloggningssidan på den. På den här sidan visas information om status för jobb för den lokala arbetsgruppen. Denna information uppdateras regelbundet. På sidan använder arbetarna sin ID-bricka för att logga in. Även om arbetarna inte behöver ha ett användarkonto för Supply Chain Management, måste de ha ett konto för *tidsregistrerad arbetare* som de kan använda när de loggar in.
 
 ![Inloggningssida för körningsgränssnittet för produktionsgolv.](media/pfei-sign-in-page.png "Inloggningssida för körningsgränssnittet för produktionsgolvet")
 
-I de återstående avsnitten i det här ämnet beskrivs hur arbetare interagerar med gränssnittet.
+I de återstående avsnitten i denna artikel beskrivs hur arbetare interagerar med gränssnittet.
 
 ## <a name="all-jobs-tab"></a>Fliken alla jobb
 
@@ -48,7 +48,7 @@ Det finns följande kolumner i jobblistan. Siffrorna motsvarar siffrorna i före
 1. **Kolumn för jobbstatus** – i den här kolumnen används symboler för att visa status för varje jobb. Jobb som saknar symbol i den här kolumnen har statusen *inte startad*. En grön triangel anger jobb som har statusen *startat*. Två gula lodräta linjer indikerar jobb som har statusen *stoppad*.
 1. **Kolumnen hög prioritet** – i den här kolumnen används utropstecken för att ange jobb med hög prioritet.
 1. **Order** – i den här kolumnen visas produktionsordernumret för ett jobb.
-1. **Beskrivning** – i den här kolumnen visas en beskrivning av den operation som ett jobb ingår i.
+1. **Beskrivning** – i den här kolumnen visas en beskrivning av den åtgärd som ett jobb ingår i.
 1. **Begärd** – den här kolumnen visar den kvantitet som ett jobb har planerats att producera.
 1. **Startad** – i den här kolumnen visas den kvantitet som redan har startats för ett jobb.
 1. **Slutförd** – i den här kolumnen visas den kvantitet som redan har slutförts för ett jobb.
@@ -65,7 +65,7 @@ Listan med aktiva jobb har följande kolumner:
 
 - **Urvalskolumn** – kolumnen längst till vänster använder en bockmarkering för att visa jobb som har valts av arbetaren. Arbetare kan välja flera jobb i listan samtidigt. Om du vill markera alla jobb i listan markerar du kryssrutan i kolumnrubriken. När ett enstaka jobb väljs visas information om jobbet i den nedre delen av sidan.
 - **Order** – i den här kolumnen visas produktionsordernumret för ett jobb.
-- **Beskrivning** – i den här kolumnen visas en beskrivning av den operation som ett jobb ingår i.
+- **Beskrivning** – i den här kolumnen visas en beskrivning av den åtgärd som ett jobb ingår i.
 - **Begärd** – den här kolumnen visar den kvantitet som ett jobb har planerats att producera.
 - **Startad** – i den här kolumnen visas den kvantitet som redan har startats för ett jobb.
 - **Slutförd** – i den här kolumnen visas den kvantitet som redan har slutförts för ett jobb.
@@ -76,7 +76,7 @@ Listan med aktiva jobb har följande kolumner:
 
 Fliken **Mina jobb** gör det enkelt för medarbetarna att visa alla icke-startade och icke-definierade jobb som har tilldelats enkom för dem. Det är användbart i företag där jobb ibland eller alltid tilldelas till specifika medarbetare (personal) istället för andra typer av resurser (till exempel maskiner).
 
-Planeringssystemet tilldelar automatiskt varje produktionsjobb till en viss resurspost, och varje resurspost har en typ (till exempel maskin eller person). När du ställer in en medarbetare som produktionsmedarbetare kan du koppla medarbetarkontot till en unik personalpost.
+Planeringssystemet tilldelar automatiskt varje produktionsjobb till en viss resurspost, och varje resurspost har en typ (till exempel maskin eller person). När du konfigurerar en medarbetare som produktionsmedarbetare kan du koppla medarbetarkontot till en unik personalpost.
 
 Fliken **Mina jobb** listar alla icke-startade och icke-definierade jobb som har tilldelats personalposten för den inloggade medarbetaren, om någon medarbetare är inloggad. Den listar aldrig jobb som har tilldelats en maskin eller annan typ av resurs, även om den inloggade medarbetaren har börjat arbeta med dessa jobb.
 
@@ -97,7 +97,7 @@ Fliken **Min maskin** har följande kolumner. Siffrorna motsvarar siffrorna i f�
     > [!NOTE]
     > Användare av Supply Chain Management kan tilldela en resurs till varje tillgång efter behov med hjälp av sidan **Alla tillgångar** (på fliken **Anläggningstillgång** med listrutan **Resurs**). Mer information finns i [Skapa en tillgång](../asset-management/objects/create-an-object.md).
 
-1. **Inställningar** - Välj kugghjulsikonen för att öppna en dialogruta där du kan välja vilka räknare som ska visas för den valda maskintillgången. Värden för dessa räknare visas längst upp på fliken **Tillgångshantering**. Menyn **Inställningar** (visas i följande skärmdump) kan du aktivera upp till fyra räknare. För varje räknare som du vill aktivera använder du sökfältet högst upp i panelen för att välja en räknare. Sökfältet listar alla räknare som är kopplade till tillgången som valts högst upp på sidan **Tillgångshantering**. Ställ in varje räknare till att övervaka antingen det **aggregerade** värdet eller det senaste **faktiska** värdet för räknaren. Om du till exempel ställer in en räknare som spårar hur många timmar maskinen har körts ska du ställa in den på **Aggregerat**. Om du ställer in en räknare för att mäta den senaste uppdaterade temperaturen eller försiktighet, bör du ställa in den på **Faktisk**. Välj **OK** om du vill spara inställningarna och stänga dialogrutan.
+1. **Inställningar** - Välj kugghjulsikonen för att öppna en dialogruta där du kan välja vilka räknare som ska visas för den valda maskintillgången. Värden för dessa räknare visas längst upp på fliken **Tillgångshantering**. Menyn **Inställningar** (visas i följande skärmdump) kan du aktivera upp till fyra räknare. För varje räknare som du vill aktivera använder du sökfältet högst upp i panelen för att välja en räknare. Sökfältet listar alla räknare som är kopplade till tillgången som valts högst upp på sidan **Tillgångshantering**. Ställ in varje räknare till att övervaka antingen det **aggregerade** värdet eller det senaste **faktiska** värdet för räknaren. Om du till exempel konfigurerar en räknare som spårar hur många timmar maskinen har körts ska du konfigurera den på **Aggregerat**. Om du konfigurerar en räknare för att mäta den senaste uppdaterade temperaturen eller försiktighet, bör du konfigurera den på **Faktisk**. Välj **OK** om du vill spara inställningarna och stänga dialogrutan.
 
     ![Inställningar för Min maskinflik.](media/pfei-my-machine-tab-settings.png "Inställningar för Min maskinflik")
 
@@ -219,7 +219,7 @@ I dialogrutan **Justera material** kan en arbetare göra och justera materialres
 
 Om material har aktiverats för de avancerade lagerställeprocesserna visar listan bara det fysiskt tillgängliga lagret för platsen för produktionsinleverans för materialet. Platsen för produktionsindata definieras på resursen där produktionsjobbet planeras. Om artikelnumret är batch- eller serienummerkontrollerat visas den fullständiga listan över fysiskt tillgängliga batch- och serienummer. Om du vill ange en kvantitet som ska reserveras kan arbetaren välja **Reservera material**. Om du vill ta bort en befintlig reservation kan arbetaren välja **Ta bort reservation**.
 
-Mer information om hur du ställer in platsen för produktionsindata finns i följande inlägg: [Ställa in platsen för produktionsindata](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
+Mer information om hur du konfigurerar platsen för produktionsindata finns i följande inlägg: [Ställa in platsen för produktionsindata](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 
 > [!NOTE]
 > Reservationer som en arbetare gör dialogrutan **Reservera material** finns kvar när arbetaren väljer **Avbryt** i dialogrutan **Rapportera framsteg** eller **Rapport kassation**.
@@ -228,7 +228,7 @@ Mer information om hur du ställer in platsen för produktionsindata finns i fö
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Slutföra ett jobb och starta ett nytt jobb
 
-Vanligtvis slutför arbetarna ett jobb genom att välja ett eller flera aktuella jobb på fliken **Aktiva jobb** och sedan välja **Rapportera framsteg**. Därefter anger de kvantiteten som producerades (den godkända kvantiteten) och ställer in statusen för att *slutföra*. Om fler än ett jobb har valts använder en arbetare sedan knapparna **Föregående** och **Nästa** för att förflytta sig mellan dem. Om du vill starta ett nytt jobb väljer arbetaren det på fliken **Alla jobb** och väljer sedan **Starta jobb**.
+Vanligtvis slutför arbetarna ett jobb genom att välja ett eller flera aktuella jobb på fliken **Aktiva jobb** och sedan välja **Rapportera framsteg**. Därefter anger de kvantiteten som producerades (den godkända kvantiteten) och konfigurerar statusen för att *slutföra*. Om fler än ett jobb har valts använder en arbetare sedan knapparna **Föregående** och **Nästa** för att förflytta sig mellan dem. Om du vill starta ett nytt jobb väljer arbetaren det på fliken **Alla jobb** och väljer sedan **Starta jobb**.
 
 En arbetare kan också starta ett nytt jobb medan deras tidigare jobb fortfarande är öppet. Återigen väljer arbetaren det nya jobbet på fliken **Alla jobb** och väljer sedan **Starta jobb**. I det här fallet informerar dialogrutan **Starta jobb** arbetaren att de för närvarande arbetar med ett jobb och att de därför måste antingen sluta eller slutföra det jobbet innan de börjar det nya jobbet.
 
@@ -246,7 +246,7 @@ Arbetaren väljer det tredje jobbet på fliken **Alla jobb** och väljer sedan *
 
 ## <a name="working-on-indirect-activities"></a>Arbeta på indirekta aktiviteter
 
-Indirekta aktiviteter är aktiviteter som inte är direkt relaterade till en produktionsorder. Indirekta aktiviteter kan anges på ett flexibelt sätt, enligt beskrivningen i [ställa in indirekta aktiviteter för tid och närvaro](/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
+Indirekta aktiviteter är aktiviteter som inte är direkt relaterade till en produktionsorder. Indirekta aktiviteter kan anges på ett flexibelt sätt, enligt beskrivningen i [konfigurera indirekta aktiviteter för tid och närvaro](/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
 
 Till exempel Shannon, en butiksarbetare i Contoso, vill delta i ett företagsmöte och möten betraktas som en indirekt aktivitet. Ett av följande två scenarier gäller:
 
@@ -270,7 +270,7 @@ I dialogrutan **Mitt dag** får medarbetare en översikt över sina registrering
 
 - Huvudavsnittet listar de registreringar som den aktuella arbetaren har gjort på ett valt datum. Här visas registreringar för den aktuella dagen och ett datumplockningsfält som gör att arbetaren kan visa andra dagar.
 - I avsnittet för **Senast beräknade dagliga saldo** visas arbetarens aktuella saldon för betald tid, betald övertid, frånvaro och betald frånvaro. Värdena baseras på de registreringar som har beräknats under godkännandeprocessen.
-- Avsnittet **Saldon** ger en översikt över saldona inom en angiven period för valda kategorier av registreringar (till exempel semester, standardtid och övertid). De här saldona baseras på de statistiska saldona i **tids- och närvaromodulen**. Mer information om hur du ställer in en konfiguration finns i [Visa semestersaldon i körningsgränssnittet för produktionsgolvet](production-floor-execution-payroll-stats.md).
+- Avsnittet **Saldon** ger en översikt över saldona inom en angiven period för valda kategorier av registreringar (till exempel semester, standardtid och övertid). De här saldona baseras på de statistiska saldona i **tids- och närvaromodulen**. Mer information om hur du konfigurerar en konfiguration finns i [Visa semestersaldon i körningsgränssnittet för produktionsgolvet](production-floor-execution-payroll-stats.md).
 
 Administratörer kan lägga till den här funktionen i gränssnittet genom att trycka på knappen **Min dag** på ett verktygsfält för varje relevant flik som beskrivs i [Designa gränssnittet för utförande av produktionsgolvet](production-floor-execution-tabs.md).
 

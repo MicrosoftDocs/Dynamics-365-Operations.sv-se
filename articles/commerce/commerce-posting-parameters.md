@@ -1,6 +1,6 @@
 ---
-title: Commerce-bokföringsparametrar
-description: I det här avsnittet beskrivs de parametrar som är specifika för bokföringen av ekonomiska och fysiska transaktioner i Microsoft Dynamics 365 Commerce.
+title: Commerce bokföringsparametrar
+description: I denna artikel beskrivs de parametrar som är specifika för bokföringen av ekonomiska och fysiska transaktioner i Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 04/27/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2022-04-12
-ms.openlocfilehash: 1b49c893567d39f05e16cefee47407a424b7e139
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 10ea650b7c5c0cad7e1a3d7556c073aecef06036
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649217"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887124"
 ---
-# <a name="commerce-posting-parameters"></a>Commerce-bokföringsparametrar
+# <a name="commerce-posting-parameters"></a>Commerce bokföringsparametrar
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-I det här avsnittet beskrivs de parametrar som är specifika för bokföringen av ekonomiska och fysiska transaktioner i Microsoft Dynamics 365 Commerce. Commerce-bokföringsparametrar finns i Commerce-administration på **Butik och handel \> Administrationsinställning \> Parametrar \> Commerce-parametrar \> Bokföring**.
+I denna artikel beskrivs de parametrar som är specifika för bokföringen av ekonomiska och fysiska transaktioner i Microsoft Dynamics 365 Commerce. Commerce-bokföringsparametrar finns i Commerce headquarters på **Butik och handel \> Administrationsinställning \> Parametrar \> Commerce-parametrar \> Bokföring**.
 
 ## <a name="periodic-discount-parameters"></a>Parametrar för tidsbegränsad rabatt
 
@@ -30,7 +30,7 @@ Följande tabell listar de periodiska rabattparametrarna som är specifika för 
 | Parameter | Beskrivning |
 |-----------|-------------|
 | Bokför tidsbegränsad rabatt | Det här alternativet styr om periodiska erbjudanden bokförs till redovisningskontona. Tidsbegränsade rabatter kan till exempel vara Mixa och matcha, Kvantitetsrabatt och Rabatterbjudande. När den här parametern är aktiverad kan ytterligare fält ställas in i avsnittet **Periodiska rabatter**. |
-| Typ av redovisningskonto | <p>Välj den typ av konto som används för att lägga ut periodiska rabatter:</p><ul><li>**Standard** – De rabattrelaterade fälten på den här sidan används inte i systemet. Istället använder den kontona som är definierade på sidan **Bokföring** i Commerce-administration (**Lagerhantering \> Inställning \> Bokföring \> Bokföringsformulär**).</li><li>**Periodisk** – Systemet använder de handelsrabattkonton som anges av rabattrelaterade fält på den här sidan. Om du väljer det här alternativet måste du ange redovisningskonto (GL) för varje typ av erbjudande (rabatt, mix och matcha, kvantitet och tröskel). När du ställer in varje rabatt kan du definiera ett konto. När bokföringsfunktionen för rabattkonto används på sidan för rabattinställningar, görs en extra debetpost och kreditpostering för att omklassificera rabattbokningen från handelsrabatter huvudbokskonto till rabatt huvudbokskonto. Mer information finns i [Butiksrabatter](retail-discounts-overview.md).</li></ul> |
+| Typ av redovisningskonto | <p>Välj den typ av konto som används för att lägga ut periodiska rabatter:</p><ul><li>**Standard** – De rabattrelaterade fälten på den här sidan används inte i systemet. Istället använder den kontona som är definierade på sidan **Bokföring** i Commerce headquarters (**Lagerhantering \> Inställning \> Bokföring \> Bokföringsformulär**).</li><li>**Periodisk** – Systemet använder de handelsrabattkonton som anges av rabattrelaterade fält på den här sidan. Om du väljer det här alternativet måste du ange redovisningskonto (GL) för varje typ av erbjudande (rabatt, mix och matcha, kvantitet och tröskel). När du konfigurerar varje rabatt kan du definiera ett konto. När bokföringsfunktionen för rabattkonto används på sidan för rabattinställningar, görs en extra debetpost och kreditpostering för att omklassificera rabattbokningen från handelsrabatter huvudbokskonto till rabatt huvudbokskonto. Mer information finns i [Butiksrabatter](retail-discounts-overview.md).</li></ul> |
 | Bokför infokodsrabatt | Det här alternativet används inte längre i standardhandelslösningen och avaktiveras. |
 | Bokför tidsbegränsad rabatt för order | Det här alternativet avgör huruvida tidsbegränsade butiksrabatter bokförs i redovisningen för kundorder och kundtjänstorder. |
 
@@ -71,8 +71,8 @@ I följande tabell visas de rekommenderade värdena för parametrarna i föregå
 |-----------|-------------------|---------|
 | Maximalt antal parallella utdragsbokföringar | <p>Ange den här parametern till antalet batchuppgifter som är tillgängliga för batchgruppen som kör jobbet **utdrag**.</p><p>**Allmän regel:** Multiplicera antalet virtuella servrar för programobjektservern (AOS) med antalet batchuppgifter som är tillgängliga per AOS-virtuell server.</p> | Den här parametern kan inte tillämpas när funktionen **Butiksutdrag – Indroppning** är aktiverad. |
 | Maximalt antal trådar för orderbehandling per utdrag | Börja på testvärdena vid **4**. Normalt bör värdet inte överstiga **8**. | Den här parametern definierar antalet trådar som används för att skapa och bokföra försäljningsorder. Det representerar antalet trådar som är tillgängliga för bokföring per utdrag. |
-| Max antal transaktionsrader som ingår i en sammansättning | Börja på testvärdena vid **1000**. Beroende på konfiguration av Commerce-administration kan mindre beställningar vara mer fördelaktiga för prestanda. | Den här parametern definierar hur många rader som tas med i varje försäljningsorder när utdraget bokförs. När detta nummer har nåtts delas raderna upp i en ny order. Antalet försäljningsrader blir inte exakt lika med antalet som du anger, eftersom uppdelningen sker på försäljningsordernivå. Ändå kommer antalet att vara nära det nummer som är inställt. Den här parametern används för att generera försäljningsorder för butikstransaktioner som inte har en namngiven kund. |
-| Maximalt antal trådar för att validera butikstransaktioner | Vi rekommenderar att du ställer in den här parametern på **4** och att du bara ökar den om du inte uppnår godtagbara prestanda. Antalet trådar som används i den här processen får inte överstiga antalet processorer som är tillgängliga i batchservern. Om antalet trådar är för högt kan andra batchbearbetningar påverkas. | Den här parametern styr antalet transaktioner som kan valideras samtidigt för en given butik. |
+| Max antal transaktionsrader som ingår i en sammansättning | Börja på testvärdena vid **1000**. Beroende på konfiguration av Commerce headquarters kan mindre beställningar vara mer fördelaktiga för prestanda. | Den här parametern definierar hur många rader som tas med i varje försäljningsorder när utdraget bokförs. När detta nummer har nåtts delas raderna upp i en ny order. Antalet försäljningsrader blir inte exakt lika med antalet som du anger, eftersom uppdelningen sker på försäljningsordernivå. Ändå kommer antalet att vara nära det nummer som är inställt. Den här parametern används för att generera försäljningsorder för butikstransaktioner som inte har en namngiven kund. |
+| Maximalt antal trådar för att validera butikstransaktioner | Vi rekommenderar att du konfigurerar den här parametern på **4** och att du bara ökar den om du inte uppnår godtagbara prestanda. Antalet trådar som används i den här processen får inte överstiga antalet processorer som är tillgängliga i batchservern. Om antalet trådar är för högt kan andra batchbearbetningar påverkas. | Den här parametern styr antalet transaktioner som kan valideras samtidigt för en given butik. |
 
 > [!NOTE]
 > Alla inställningar och parametrar som relateras till bokföring av utdrag och som definieras i butiker och på sidan **Commerce-parametrar**, gäller för den förbättrade funktionen för bokföring av utdrag.
@@ -83,11 +83,11 @@ Följande tabell listar parametrar för fakturaparametrar som är specifika för
 
 | Parameter | Beskrivning |
 |-----------|-------------|
-| Journalnamn | Namnet på betalningsjournalen som används när kundbetalningsjournaler för försäljningsorderbetalningar skapas. Den här inställningen gäller för alla orderbetalningar som bokförs för försäljningsplatsen (POS), kundtjänst och order för e-handel. |
+| Journalnamn | Namnet på betalningsjournalen som används när kundbetalningsjournaler för försäljningsorderbetalningar skapas. Den här inställningen gäller för alla orderbetalningar som bokförs för försäljningsplatsen (POS), kundtjänst och order för näthandel. |
 | Kontonamn | Namn på betalningskonto. |
 | Prioritera dimensioner från betalningsmetod | När den flaggan är aktiverad har betalningsjournalen prioriterade dimensioner från betalningsmetoden i stället för dimensioner från butiken. |
 | Beräkningsbeteende för moms | Den här parametern anger hur beteendet ska visas när försäljningsorder som skapas vid utdragsbokföring faktureras:<ul><li>**Beräkna om** – Beräkna moms igen.</li><li> **Beräkna inte om** – Använd momsbeloppen som beräknas i kassan.</li></ul> |
-| Journalnamn | Journalnamnet som används när en kundbetalningsjournal för återbetalningar skapas. Den här inställningen gäller för alla orderbetalningar som bokförs för kassa, kundtjänst och order för e-handel. |
+| Journalnamn | Journalnamnet som används när en kundbetalningsjournal för återbetalningar skapas. Den här inställningen gäller för alla orderbetalningar som bokförs för kassa, kundtjänst och order för näthandel. |
 
 ## <a name="statement-parameters"></a>Utdragsparametrar
 
@@ -96,7 +96,7 @@ Följande tabell listar parametrar för utdragsparametrar som är specifika för
 | Parameter | Beskrivning |
 |-----------|-------------|
 | Reservera lager vid beräkning | När den här parametern är aktiverad reserverar utdragsberäkningen tillfälligt lager tills utdraget bokförs. Den här parametern inaktiveras som standard för att förbättra prestandan för utdragsberäkningar. Uppdaterad lagerinformation kan beräknas med hjälp av batchjobbet **Bokför lager**. Observera att batchjobbet **Bokför** lager inte längre används när [indroppningsbaserad](trickle-feed.md) order skapas för butikslagertransaktioner aktiveras. |
-| Inaktivera att inventering krävs | Den här flaggan inaktiverar inventering vid bokföring i Commerce-administrationen. |
+| Inaktivera att inventering krävs | Den här flaggan inaktiverar inventering vid bokföring i Commerce headquarters. |
 | Räkna om ekonomisk dimension vid fel | När den här parametern är aktiverad kan finansiella dimensioner omvärderas för efterföljande bokföringar av utdrag när bokföringen misslyckas. |
 | Använd ekonomiska dimensioner från returbutiken | När den här parametern är aktiverad kan kopplade returförsäljningsorder skapas där butikens ekonomiska dimensioner används i stället för de ekonomiska dimensionerna från den ursprungliga transaktionen. |
 | Ta bort länk för returer | När den här parametern är aktiverad kan utdraget skapa returer av icke-bokförd försäljning som blinda returer. Denna parameter är inaktiverad som standard och vi rekommenderar att du håller den inaktiverad. |

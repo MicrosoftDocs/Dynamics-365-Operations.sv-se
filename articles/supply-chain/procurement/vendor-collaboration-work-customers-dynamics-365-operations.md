@@ -1,6 +1,6 @@
 ---
 title: Leverantörssamarbete med kunder
-description: I det här avsnittet beskrivs hur du kan använda leverantörssamarbete för att arbeta med inköpsorder och övervaka försändelselager.
+description: I denna artikel beskrivs hur du kan använda leverantörssamarbete för att arbeta med inköpsorder och övervaka försändelselager.
 author: GalynaFedorova
 ms.date: 09/15/2020
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5690630d4dde947798c925af66c73122c2efad3d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4e5748f2368376ee03f280f1487d1de65250d3a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673786"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859181"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Leverantörssamarbete med kunder
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du kan använda leverantörssamarbete när du arbetar med kunder i Microsoft Dynamics 365 Supply Chain Management. Leverantörer kan utföra en rad olika affärsprocesser från följande arbetsytor:
+I denna artikel beskrivs hur du kan använda leverantörssamarbete när du arbetar med kunder i Microsoft Dynamics 365 Supply Chain Management. Leverantörer kan utföra en rad olika affärsprocesser från följande arbetsytor:
 
 - **Bekräftelse av inköpsorder** – Övervaka och svara på inköpsorder.
 - **Budgivning av leverantör** – Visa anbudsförfrågningar och svara på dem genom att lämna anbud.
 - **Leverantörsinformation** – Visa och uppdatera huvuddata för leverantör.
-- **Fakturera** – Arbeta med fakturor. Det här avsnittet omfattar inte arbetsytan **Fakturering**. Mer information om den här arbetsytan finns i [Arbetsyta för leverantörssamarbetesfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Fakturera** – Arbeta med fakturor. Denna artikel omfattar inte arbetsytan **Fakturering**. Mer information om den här arbetsytan finns i [Arbetsyta för leverantörssamarbetesfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Leverantörer kan också övervaka information om försändelsen.
 
@@ -47,9 +47,9 @@ Det finns tre listor i arbetsytan **Inköpsorderbekräftelse**:
 
 Du kan använda följande sidor när du arbetar med inköpsorder:
 
-- **Inköpsorder för granskning** – Den här sidan innehåller samma information som listan **Inköpsorder för granskning** i arbetsytan. Se beskrivningen tidigare i det här avsnittet.
+- **Inköpsorder för granskning** – Den här sidan innehåller samma information som listan **Inköpsorder för granskning** i arbetsytan. Se beskrivningen tidigare i denna artikel.
 - **Bekräftelsehistorik för inköpsorderleverantör** – Den här sidan innehåller alla inköpsorder och alla versioner av inköpsorder som har skickats till leverantören. Den innehåller även alla svar som har returnerats från leverantören.
-- **Öppna bekräftade inköpsorder** Den här sidan innehåller samma information som listan **Öppna bekräftade inköpsorder** i arbetsytan. Se beskrivningen tidigare i det här avsnittet.
+- **Öppna bekräftade inköpsorder** Den här sidan innehåller samma information som listan **Öppna bekräftade inköpsorder** i arbetsytan. Se beskrivningen tidigare i denna artikel.
 - **Alla bekräftade inköpsorder** – Den här sidan innehåller alla inköpsorder som har bekräftats. Inköpsorder på den här sidan omfattar de inköpsorder där produkter eller tjänster har inlevererats. Via denna lista kan du övervaka inköpsorder som du kan skicka fakturor för.
 
 ### <a name="responding-to-pos"></a>Besvara inköpsorder

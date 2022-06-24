@@ -1,6 +1,6 @@
 ---
 title: Konfigurera betalsätt för kundkonto på B2B-näthandelssajter
-description: I det här avsnittet beskrivs hur du konfigurerar betalningsmetoden för kundkontot i Microsoft Dynamics 365 Commerce. Det beskriver också hur kreditgränser påverkar à conto-betalningar på e-handelsplatser mellan företag (B2B).
+description: I denna artikel beskrivs hur du konfigurerar betalningsmetoden för kundkontot i Microsoft Dynamics 365 Commerce. Det beskriver också hur kreditgränser påverkar à conto-betalningar på näthandelsplatser mellan företag (B2B).
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
@@ -14,29 +14,29 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a55a5d4c9dbf7909af5219843fc4310b6cdd4ed7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 20af517b9a69f4fb490d4d93ada8bc4063e895dd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689647"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878657"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Konfigurera betalsätt för kundkonto på B2B-näthandelssajter
 
 [!include [banner](../../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du konfigurerar betalningsmetoden för kundkontot i Microsoft Dynamics 365 Commerce. Det beskriver också hur kreditgränser påverkar à conto-betalningar på e-handelsplatser mellan företag (B2B).
+I denna artikel beskrivs hur du konfigurerar betalningsmetoden för kundkontot i Microsoft Dynamics 365 Commerce. Det beskriver också hur kreditgränser påverkar à conto-betalningar på näthandelsplatser mellan företag (B2B).
 
 Återförsäljare kan acceptera olika typer av betalning i utbytet mot de produkter och tjänster man säljer i en näthandelskanal. Varje betalningstyp som en återförsäljare godtar, måste konfigureras i Dynamics 365 Commerce när systemet installeras. Kundkontots betalsätt (eller "on account") måste stödjas på B2B-näthandelssajter. 
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-1. Lägg till betalsättet för kundkonto i Commerce-administrationen.
+1. Lägg till betalsättet för kundkonto i Commerce headquarters.
 2. Koppla betalsättet för kundkontot till näthandelskanalen.
-3. Kontrollera att egenskapen **Tillåt a conto** har aktiverats för kunden på **Butik och Handel \> Kunder \> Alla kunder \> Betalningsstandarder** i Commerce-administrationen.
+3. Kontrollera att egenskapen **Tillåt a conto** har aktiverats för kunden på **Butik och Handel \> Kunder \> Alla kunder \> Betalningsstandarder** i Commerce headquarters.
 
     > [!NOTE]
-    > Om alla kunder ska tillåtas ha betalningsmetoden på konto aktiverad kan du ställa in egenskapen **Tillåt a conto** till **Ja** för standardkund för kanalen som är associerad med B2B-webbplatsen. 
+    > Om alla kunder ska tillåtas ha betalningsmetoden på konto aktiverad kan du konfigurera egenskapen **Tillåt a conto** till **Ja** för standardkund för kanalen som är associerad med B2B-webbplatsen. 
 
 ## <a name="enable-the-customer-account-payment-method-in-commerce-site-builder"></a>Aktivera betalsättet för kund i Commerce-webbplatsbyggaren 
 
@@ -68,9 +68,9 @@ För att bekräfta att betalsättet för kundkontot har aktiverats följer du de
 
 ## <a name="work-with-credit-limits"></a>Arbeta med kreditgränser
 
-När funktionerna för kundkontobetalningar har aktiverats på B2B-webbplatsen vill organisationer vanligtvis visa information om kreditgränser och kreditgränssaldon under orderinfångningsprocessen. Kreditgränsen för en kund definieras av egenskapen **Kreditgräns** på snabbfliken **Kredit och inkasso** för kundposten i Commerce-administration. Vid B2B-scenarier ska dock en order som en kund gör ofta ska faktureras kontot för den organisation som kunden tillhör. Därför måste du ställa in egenskapen **Fakturakonto** på snabbfliken **Faktura och leverans** för kundposten till organisationens kundkonto-ID. När kunden sedan beställer en order på B2B-webbplats, faktureras ordern till organisationen. B2B-webbplats använder även organisationens kreditgräns i stället för den kreditgräns som har definierats för kundposten.
+När funktionerna för kundkontobetalningar har aktiverats på B2B-webbplatsen vill organisationer vanligtvis visa information om kreditgränser och kreditgränssaldon under orderinfångningsprocessen. Kreditgränsen för en kund definieras av egenskapen **Kreditgräns** på snabbfliken **Kredit och inkasso** för kundposten i Commerce headquarters. Vid B2B-scenarier ska dock en order som en kund gör ofta ska faktureras kontot för den organisation som kunden tillhör. Därför måste du konfigurera egenskapen **Fakturakonto** på snabbfliken **Faktura och leverans** för kundposten till organisationens kundkonto-ID. När kunden sedan beställer en order på B2B-webbplats, faktureras ordern till organisationen. B2B-webbplats använder även organisationens kreditgräns i stället för den kreditgräns som har definierats för kundposten.
 
-Kreditgränsberäkningen och saldot som visas på B2B-webbplatsen beror på inställningen av egenskapen för **kreditgränstyp** i Commerce-administration. Placeringen av denna fastighet varierar beroende på om **Kredithantering** har aktiverats i arbetsytan **Funktionshantering**:
+Kreditgränsberäkningen och saldot som visas på B2B-webbplatsen beror på inställningen av egenskapen för **kreditgränstyp** i Commerce headquarters. Placeringen av denna fastighet varierar beroende på om **Kredithantering** har aktiverats i arbetsytan **Funktionshantering**:
 
 - Om funktionen **Kredithantering** är aktiverad finns egenskapen på snabbfliken **Kreditgränser** på **Kredit och inkasso \> Inställningar \> Kredit och inkassoparametrarna \> Kredit**. 
 - Om funktionen **Kredithantering** är inaktiverad, finns egenskapen under **Kreditbedömning** på **Kundreskontra \> Inställningar \> Parametrar för kundreskontra \> Kreditbedömning**.
@@ -78,7 +78,7 @@ Kreditgränsberäkningen och saldot som visas på B2B-webbplatsen beror på inst
 Värdena som egenskapen för **kreditgränstyp** stöder är **Ingen**, **Saldo**, **Saldo + följesedel eller produktinleverans** och **Saldo + Alla**. Mer information om dessa värden finns i [värden för kreditgränstyper](/dynamics365/supply-chain/sales-marketing/credit-limits-customers).
 
 > [!NOTE]
-> Vi rekommenderar att du ställer in egenskapen **Kreditgränstyp** till **Saldo + förpackningsföljesedel eller produktföljesedel** så att öppna försäljningsorder inte bidrar till saldoberäkningen. Om dina kunder sedan lägger framtida order behöver de inte se det som att dessa order påverkar deras aktuella saldo.
+> Vi rekommenderar att du konfigurerar egenskapen **Kreditgränstyp** till **Saldo + förpackningsföljesedel eller produktföljesedel** så att öppna försäljningsorder inte bidrar till saldoberäkningen. Om dina kunder sedan lägger framtida order behöver de inte se det som att dessa order påverkar deras aktuella saldo.
 
 En annan egenskap som påverkar kontoordern är egenskapen **Obligatorisk kreditgräns** som finns på snabbfliken **Kreditera och inkasso** för kundposten. Genom att ange egenskapen till **Ja** för vissa kunder kan du tvinga systemet att kontrollera sin kreditgräns, även om egenskapen för **kreditgränstyp** har satts till **Ingen** för att ange att kreditgränsen inte ska kontrolleras för någon kund.
 

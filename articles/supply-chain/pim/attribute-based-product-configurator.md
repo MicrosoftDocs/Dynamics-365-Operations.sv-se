@@ -1,6 +1,6 @@
 ---
 title: Attributbaserade försäljningspriser för begränsningsbaserad produktkonfiguration
-description: I det här avsnittet beskrivs hur du skapar försäljningsprismodeller med försäljningspriser baserade på komponenter och attribut i stället för på den fysiska strukturlistan och flödet.
+description: I denna artikel beskrivs hur du skapar försäljningsprismodeller med försäljningspriser baserade på komponenter och attribut i stället för på den fysiska strukturlistan och flödet.
 author: t-benebo
 ms.date: 10/2/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-08-17
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e50b2d1e9ccf03a58e0ddf6d4ecfb34c6c504161
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 456c7399f981e41ea452f1a6a8e30e9e12e0be54
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577466"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857473"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>Attributbaserade försäljningspriser för begränsningsbaserad produktkonfiguration
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skapar försäljningsprismodeller med försäljningspriser baserade på komponenter och attribut i stället för på den fysiska strukturlistan och flödet. Du kan skapa flera försäljningsprismodeller för varje produktkonfigurationsmodell.
+I denna artikel beskrivs hur du skapar försäljningsprismodeller med försäljningspriser baserade på komponenter och attribut i stället för på den fysiska strukturlistan och flödet. Du kan skapa flera försäljningsprismodeller för varje produktkonfigurationsmodell.
 
 ## <a name="set-relevant-product-information-management-parameters"></a>Ange relevanta parametrar för produktinformationshantering
 
@@ -103,7 +103,7 @@ Det hämtade kalkylbladet visar både det absoluta värdet och bidraget som en p
 
 ## <a name="set-up-selection-criteria-for-price-models"></a>Ställ in urvalskriterier för prismodeller
 
-När prismodellerna är på plats måste du fastställa minst ett urvalskriterium för att kunna plocka upp prismodellen när du konfigurerar till offert eller order. Du ska göra detta genom att ställa in en eller flera frågor. I en kombination med matchande försäljningsprismodeller ger frågorna stor flexibilitet vid mål för försäljningspriser för vissa kunder, regioner, perioder och andra kriterier.
+När prismodellerna är på plats måste du fastställa minst ett urvalskriterium för att kunna plocka upp prismodellen när du konfigurerar till offert eller order. Du ska göra detta genom att konfigurera en eller flera frågor. I en kombination med matchande försäljningsprismodeller ger frågorna stor flexibilitet vid mål för försäljningspriser för vissa kunder, regioner, perioder och andra kriterier.
 
 Ställ in urvalskriterier för prismodeller:
 
